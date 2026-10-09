@@ -1,0 +1,110 @@
+F1 tokens=34 no1=18(0.53) no2=13(0.38) no9=3(0.09)
+  no1: H17 C0 I0 M0
+    {time: 2.30 PM} for Rucker [Washington] [.] I will send tonight the H Livingston [,] weybosset [,] Gen'l Sedgwick [,] Massachusetts [,] Louisa Moore [,] Idaho [,] montauk and Beaufort [.] capacity in all for [6600] [Men]  {tail: [signed] [Colonel] [signed] Geo D Sheldon}
+  no2: H13 C0 I0 M0
+    {time: 2.30 PM} for Rucker [Maj Gen B. F. Butler] [1000] I will send tonight the H Livingston [Cavalry] weybosset [Cavalry] Gen'l Sedgwick [Cavalry] Massachusetts [Cavalry] Louisa Moore [Cavalry] Idaho [Cavalry] montauk and Beaufort unity capacity in all for melody plague publish [Near] [Surrendered] [Cars] [Surrounding] Geo D Sheldon
+  no9: H3 C0 I0 M0
+    {time: 4 PM} for Rucker growl [Movement] I will send tonight the H Livingston pekin weybosset pedlar Gen'l Sedgwick pekin Massachusetts pedlar Louisa Moore pedlar Idaho pekin montauk and Beaufort unity capacity in all for melody plague publish [Transports] walrus paradise Webster Geo D Sheldon
+  no1shuf: H17 C0 I0 M0
+    {time: 2.30 PM} for Rucker [Gen J. M. Palmer] [.] I will send tonight the H Livingston [,] weybosset [,] Gen'l Sedgwick [,] Massachusetts [,] Louisa Moore [,] Idaho [,] montauk and Beaufort [.] capacity in all for [6600] [Ohio]  {tail: [signed] [Transport (-ed, -ing)] [signed] Geo D Sheldon}
+  no2shuf: H13 C0 I0 M0
+    {time: 2.30 PM} for Rucker [Aquia Creek] [1000] I will send tonight the H Livingston [Jasper] weybosset [Ferrero [?] E] Gen'l Sedgwick [Jasper] Massachusetts [Ferrero [?] E] Louisa Moore [Ferrero [?] E] Idaho [Jasper] montauk and Beaufort unity capacity in all for melody plague publish [Surround] [Captain] [Enemy] [Tuckers Station] Geo D Sheldon
+F2 tokens=28 no1=13(0.46) no2=14(0.50) no9=2(0.07)
+  no1: H10 C1 I0 M0
+    I change words [Major] to Orphian [General] to Endless [Major] to [New York] [General] to Sigel Lewis to season [Ram] to [Maj. Gen. Lew Wallace (Baltimore)] and make [Major] and [General] stand for H W Halleck [General-in-Chief] & [General-in-Chief] stand opposite General in chief as before answer R OBrien
+  no2: H13 C0 I0 M0
+    I change words [Our pickets] to Orphian [Helping] to Endless [Our lines] to [Macon] [Harbor] to Sigel [17] to [Supply] [River] to [Progress] and make [Our lines] and [Helping] stand for H W Halleck [Ewell] & [Ewell] stand opposite General in chief as before answer R OBrien
+  no9: H2 C0 I0 M0
+    I change words Tappan to Orphian Shelter to Endless Taunton to [Arkansas (river)] Shelby to Sigel Lewis to season [Advance] to submit and make Taunton and shelter stand for H W Halleck Ireland & Italy stand opposite General in chief as before answer R OBrien
+  no1shuf: H9 C2 I0 M0
+    I change words [Secretary of War] to Orphian [Movement] to Endless [Infantry] to [Meridian] [Danger] to Sigel Lewis to season [H. P. Van Cleve] to [Monroe] and make [Infantry] and [Movement] stand for H W Halleck [Abandon (-ed, -ing)] & [Rail Road] stand opposite General in chief as before answer R OBrien
+  no2shuf: H13 C0 I0 M0
+    I change words [Opelika] to Orphian [Tar R] to Endless [Humboldt] to [Wilcox O B] [Secretary of War] to Sigel [17] to [McPherson J B] [Wounded] to [New Orleans] and make [Humboldt] and [Tar R] stand for H W Halleck [Drove in Enemys Pickets] & [Early] stand opposite General in chief as before answer R OBrien
+F3 tokens=34 no1=11(0.32) no2=7(0.21) no9=1(0.03)
+  no1: H8 C0 I0 M0
+    Geo D Sheldon for [Colonel] Biggs [.] send up all ferry boats immediately to stop at [Fort] how rattan [.] send they lumber to [Fort] how rattan in the quickest possible from and time  {tail: [signed] [Maj Gen B. F. Butler] please hurry up our [Telegraph (-ed, -ing)] party answer R OBrien}
+  no2: H6 C0 I0 M0
+    Geo D Sheldon for [Cars] Biggs unity send up all ferry boats immediately to stop at [Fort] how rattan [1000] send they lumber to [Fort] how rattan in the quickest possible from and time [Surrendered] Knox please hurry up our [Valley] party answer R OBrien
+  no9: H1 C0 I0 M0
+    Geo D Sheldon for paradise Biggs unity send up all ferry boats immediately to stop at saco how rattan [Movement] send they lumber to saco how rattan in the quickest possible from and time walrus Knox please hurry up our wrangle party answer R OBrien
+  no1shuf: H8 C0 I0 M0
+    Geo D Sheldon for [Transport (-ed, -ing)] Biggs [.] send up all ferry boats immediately to stop at [Galveston] how rattan [.] send they lumber to [Galveston] how rattan in the quickest possible from and time  {tail: [signed] [Maj Gen Geo. H. Thomas] please hurry up our [Enemy] party answer R OBrien}
+  no2shuf: H6 C0 I0 M0
+    Geo D Sheldon for [Enemy] Biggs unity send up all ferry boats immediately to stop at [Endanger] how rattan [1000] send they lumber to [Endanger] how rattan in the quickest possible from and time [Captain] Knox please hurry up our [Success] party answer R OBrien
+F4 tokens=30 no1=10(0.33) no2=10(0.33) no9=0(0.00)
+  no1: H10 C0 I0 M0
+    for surgeon [General] Barns [.] The [Command = Er (-ed, -ing)]ing [General] directs me tin form you that he has taken the western metropolis [,] [Chattahoochee] and B. Deford for an urgent milly terry tarquinity  {tail: [signed] Charles McCormick medical Director [Department] of [Virginia] [North Carolina] Geo D Sheldon}
+  no2: H9 C0 I0 M0
+    for surgeon [Harbor] Barns unity The polkaing [Helping] directs me tin form you that he has taken the western metropolis [Cavalry] [Maryland] and B. Deford for an urgent milly terry tarquinity [Surrendered] [McCallum D C] McCormick medical Director [Deserter] of [Clinch] [Ohio] Geo D Sheldon
+  no9: H0 C0 I0 M0
+    for surgeon Shelby Barns unity The polkaing shelter directs me tin form you that he has taken the western metropolis pedlar Baltic and B. Deford for an urgent milly terry tarquinity walrus Charles McCormick medical Director quadrant of Alba Abacus Geo D Sheldon
+  no1shuf: H10 C0 I0 M0
+    for surgeon [Danger] Barns [.] The [Maj Gen W. T. Sherman]ing [Movement] directs me tin form you that he has taken the western metropolis [,] [Pickens] and B. Deford for an urgent milly terry tarquinity  {tail: [signed] Charles McCormick medical Director [Knoxville] of [Arkansas] [Chalmers] Geo D Sheldon}
+  no2shuf: H8 C0 I1 M0
+    for surgeon [Secretary of War] Barns unity The polkaing [Tar R] directs me tin form you that he has taken the western metropolis [Ferrero [?] E] [Overtook (or taking) the Enemy] and B. Deford for an urgent milly terry tarquinity [Captain] [Marine] McCormick medical Director [Knoxville] of [Varnells " [ditto = Station]] [operations] Geo D Sheldon
+F5 tokens=27 no1=9(0.33) no2=12(0.44) no9=3(0.11)
+  no1: H9 C0 I0 M0
+    Geo D Sheldon Captain Farquhar [.] you are ordered to report to [W. F. Smith] who leaves here with a large [Force] to join [Maj Genl U.S. Grant] as chief Engineer [.] you will report to [W. F. Smith] as he passes [Monroe]  {tail: [signed] G Weitzell [Brigadier General] and Engineer R OBrien}
+  no2: H10 C0 I0 M0
+    Geo D Sheldon Captain Farquhar [Sunday] you are ordered to report to [Schenck R C] who leaves here with a large [Force] to join [Lomax] as chief Engineer [Sunday] you will report to [Schenck R C] as he [Fire]es [Tennessee] [Surrendered] G Weitzell [Ammunition] and Engineer R OBrien
+  no9: H3 C0 I0 M0
+    Geo D Sheldon Captain Farquhar [Movement] you are ordered to report to nankin who leaves here with a large salem to join Jupiter as chief Engineer [Movement] you will report to nankin as he passes animal walrus G Weitzell [Yorktown] and Engineer R OBrien
+  no1shuf: H9 C0 I0 M0
+    Geo D Sheldon Captain Farquhar [.] you are ordered to report to [Help] who leaves here with a large [Attack (-ed, -ing)] to join [Division] as chief Engineer [.] you will report to [Help] as he passes [Newbern]  {tail: [signed] G Weitzell [Holly Springs] and Engineer R OBrien}
+  no2shuf: H10 C0 I0 M0
+    Geo D Sheldon Captain Farquhar [Carter S.P.] you are ordered to report to [Selma] who leaves here with a large [Baton Rouge] to join [Raleigh] as chief Engineer [Carter S.P.] you will report to [Selma] as he [Pieces]es [Wheeler] [Captain] G Weitzell [Reverse] and Engineer R OBrien
+F6 tokens=28 no1=16(0.57) no2=17(0.61) no9=6(0.21)
+  no1: H14 C0 I0 M0
+    for Elgin [.] our man [Report]'s [Longstreet] at [Charlottesville] [.] [5000] [Men] from his own [Corps] forwarded him a day [.] Think the number large but believe the [Information]  {tail: [signed] [Maj Genl U.S. Grant] I Davenport {time: 11.30 AM} Pierce Geo D Sheldon}
+  no2: H15 C0 I0 M0
+    for [Oglesby R J] [1000] our man [South]'s [Weldon] at [Cincinnati] [Sunday] [Failure] [Monday] [Near] from his own [Corps] forwarded him a day unity Think the number large but believe the [Join] [100] [Imboden] I [Hobson E.H.] {time: 11.30 AM} Pierce Geo D Sheldon
+  no9: H6 C0 I0 M0
+    for Elgin [Movement] our man [Equipage]'s hoax at brocade [Movement] plaster woodbury [Transports] from his own Pelton forwarded him a day unity Think the number large but believe the Sweden [Troops] John I Davenport {time: 10 AM} Pierce Geo D Sheldon
+  no1shuf: H14 C0 I0 M0
+    for Elgin [.] our man [Telegraph (-ed, -ing)]'s [Available] at [Quartermaster] [.] [5000] [Ohio] from his own [Fortifications] forwarded him a day [.] Think the number large but believe the [Our scouts report]  {tail: [signed] [Diversion] I Davenport {time: 11.30 AM} Pierce Geo D Sheldon}
+  no2shuf: H15 C0 I0 M0
+    for [Tennessee] [1000] our man [Washington]'s [Big Black] at [Reconnoissance] [Carter S.P.] [Evacuation] [Day] [Surround] from his own [Madison] forwarded him a day unity Think the number large but believe the [Willich A] [100] [Communicate (-ed, -ing)] I [Pemberton] {time: 11.30 AM} Pierce Geo D Sheldon
+F7 tokens=29 no1=16(0.55) no2=16(0.55) no9=6(0.21)
+  no1: H13 C0 I0 M0
+    [Report] horse [14] {time: 12.30} for [Captain] Allen [Quartermaster] [7] street [Today] [Washington] [.] send the mail boats to Charles City landing on the [James]  {tail: [signed] H B Blood [Captain] A [Quartermaster] Cloudy windy appearance of rain Geo D Sheldon}
+  no2: H14 C0 I0 M0
+    [South] horse [Coosawattie " [ditto = River]] {time: 12 midnight PM} for [Battled [?]] [1] [Rations] plunder street [Troops] [Maj Gen B. F. Butler] unity send the mail boats to [McCallum D C] City landing on the [Pennsylvania] [100] H B Blood [Battled [?]] A [Rifle Pits] Cloudy windy appearance of [March] Geo D Sheldon
+  no9: H6 C0 I0 M0
+    [Equipage] horse fugitive {time: 12.30 PM} for princess Allen [Quartermaster] plunder street [Subsistence] growl unity send the mail boats to Charles City landing on the Bergen [Troops] H B Blood pilgrim A [Quartermaster] Cloudy windy appearance of rain Geo D Sheldon
+  no1shuf: H13 C0 I0 M0
+    [Camp] horse [14] {time: 12.30} for [Drove in Enemys pickets] Allen [North] [7] street [Reinforce (-ed, -ing)] [Gen J. M. Palmer] [.] send the mail boats to Charles City landing on the [Volunteering]  {tail: [signed] H B Blood [Tullahoma] A [Chickamauga] Cloudy windy appearance of rain Geo D Sheldon}
+  no2shuf: H13 C1 I0 M0
+    [Lieut Gen U.S. Grant] horse [Reynolds J J] {time: 12 midnight PM} for [Yazoo] [1] [Steele Fdk] plunder street [Chalmers] [Aquia Creek] unity send the mail boats to [Marine] City landing on the [Nashville] [100] H B Blood [Marietta] A [Fredericksburg] Cloudy windy appearance of [Subsist (-ed, -ing)] Geo D Sheldon
+F8 tokens=28 no1=18(0.64) no2=14(0.50) no9=8(0.29)
+  no1: H18 C0 I0 M0
+    [Monroe] November [6] {time: 7.30 PM} for [Captain] D Stinson [Quartermaster] [New York] [150] [Men] ninth [Vermont] will leave here at {time: 8 PM} on Weasler Perit to [Join (-ed, -ing)] their [Regiment]  {tail: [signed] [100] L James [Captain] and [Quartermaster] Geo D Sheldon}
+  no2: H14 C0 I0 M0
+    [Tennessee] November plague {time: 7 PM} for [Battled [?]] D Stinson [Rations] [Macon] plug publish mandate [Near] ninth [Aquia Creek] will leave here at {time: 8 PM} on Weasler Perit to [Move (-ed, -ing)] their [Skirmish (-ed, -ing)] [Saturday] William L [14] [Battled [?]] and [Rations] Geo D Sheldon
+  no9: H8 C0 I0 M0
+    Animal November plague {time: 2.30 PM} for princess D Stinson [Quartermaster] [Arkansas (river)] plug publish mandate [Transports] ninth [Sec. of State] will leave here at {time: 3.30 PM} on Weasler Perit to swindle their wharton [Troops] William L James pilgrim and [Quartermaster] Geo D Sheldon
+  no1shuf: H18 C0 I0 M0
+    [Newbern] November [6] {time: 7.30 PM} for [Drove in Enemys pickets] D Stinson [North] [Meridian] [150] [Ohio] ninth [Earthworks] will leave here at {time: 8 PM} on Weasler Perit to [Defeat (-ed, -ing)] their [Gordonsville]  {tail: [signed] [100] L James [Tullahoma] and [North] Geo D Sheldon}
+  no2shuf: H14 C0 I0 M0
+    [Wheeler] November plague {time: 7 PM} for [Yazoo] D Stinson [Steele Fdk] [Wilcox O B] plug publish mandate [Surround] ninth [McCallum D C] will leave here at {time: 8 PM} on Weasler Perit to [Battery] their [West Point] [Hardee] William L [14] [Marietta] and [Steele Fdk] Geo D Sheldon
+F9 tokens=25 no1=9(0.36) no2=7(0.28) no9=2(0.08)
+  no1: H7 C0 I0 M0
+    for wise chief of Bureau of Ord [Washington] [.] are the torpid does here the same as those invented by Mister Woods [?] If not please send me [10] of the latter  {tail: [signed] [D. D. Porter] {time: 11.30 AM} lovely Geo D Sheldon}
+  no2: H6 C0 I0 M0
+    for wise chief of Bureau of Ord [Maj Gen B. F. Butler] unity are the torpid does here the same as those invented by Mister Woods [Infantry] If not please send me [Conasauga River] of the latter [Saturday] [Slocum H W] {time: 11.30 AM} lovely Geo D Sheldon
+  no9: H2 C0 I0 M0
+    for wise chief of Bureau of Ord growl unity are the torpid does here the same as those invented by Mister Woods sugar If not please send me federal of the latter [Troops] Niagara {time: 10 AM} lovely Geo D Sheldon
+  no1shuf: H7 C0 I0 M0
+    for wise chief of Bureau of Ord [Gen J. M. Palmer] [.] are the torpid does here the same as those invented by Mister Woods [?] If not please send me [10] of the latter  {tail: [signed] [Government] {time: 11.30 AM} lovely Geo D Sheldon}
+  no2shuf: H6 C0 I0 M0
+    for wise chief of Bureau of Ord [Aquia Creek] unity are the torpid does here the same as those invented by Mister Woods [City Point] If not please send me [Winchester] of the latter [Hardee] [Alexandria] {time: 11.30 AM} lovely Geo D Sheldon
+F10 tokens=26 no1=12(0.46) no2=11(0.42) no9=3(0.12)
+  no1: H11 C0 I0 M0
+    Wash'n The Press Despatch in [New York] [Ewell] of [13] about [Maj Gen J. G. Foster] is wrong up tooth [10] [Maj Gen J. G. Foster] had not [Communicate (-ed, -ing)]d with [Maj Gen W. T. Sherman] nor has Pocotaligo [Bridge (-ed, -ing)] been [Destroy (-ed, -ing)]ed  {tail: [signed] L F Shell done cloudy this morning Geo. D. Sheldon}
+  no2: H10 C0 I0 M0
+    Wash'n The Press [McLamores Cove] in [Macon] [Trenton] of fever about [Granger R S] is wrong up tooth feeble [Gillmore Q A] had not [Capture (-ed, -ing) [#]]d with [Rhodes] nor has Pocotaligo [Advance (-ed, -ing)] been [Defend (-ed, -ing) [#]]ed [Surrounding] L F Shell done cloudy this morning Geo. D. Sheldon
+  no9: H3 C0 I0 M0
+    Wash'n The Press Despatch in [Arkansas (river)] Herald of fever about [Mobile] is wrong up tooth feeble [Mobile] had not plated with Kidnap nor has Pocotaligo patron been questioned Webster L F Shell done cloudy this morning Geo. D. Sheldon
+  no1shuf: H11 C0 I0 M0
+    Wash'n The Press Despatch in [Meridian] [Charleston] of [13] about [Opelika] is wrong up tooth [10] [Rome] had not [Fort Valley]d with [Brigadier General] nor has Pocotaligo [Lafayette] been [Over the]ed  {tail: [signed] L F Shell done cloudy this morning Geo. D. Sheldon}
+  no2shuf: H10 C0 I0 M0
+    Wash'n The Press [Field] in [Wilcox O B] [Rappahannock] of fever about [Rail-road] is wrong up tooth feeble [Major] had not [Joining]d with [Orange C.H] nor has Pocotaligo [Volunteer] been [Move (-ed, -ing)]ed [Tuckers Station] L F Shell done cloudy this morning Geo. D. Sheldon

@@ -1085,5 +1085,59 @@ Code-word tokens: H 18.
 
 Code-word tokens: H 16.
 
-Totals over the 159 entries: H 2567, C 23, I 4, M 3.
+**E220 | Page 267 | 5811 | mssEC 25 (obj 5952, pointer 5811), 29 Nov 1864 Ft Monroe, Sheldon to Maj. Eckert, for Rucker: the steamers he will send that night, answering Eckert's call of the same day on the page (FM-R3b; row 5811/2; image-read at 2400 px)**
+
+{time: 2.30 PM} for Rucker [Washington] [.] I will send tonight the H Livingston [,] weybosset [,] Gen'l Sedgwick [,] Massachusetts [,] Louisa Moore [,] Idaho [,] montauk and Beaufort [.] capacity in all for [6600] [Men]  {tail: [signed] [Colonel] [signed] Geo D Sheldon}
+
+Code-word tokens: H 17.
+
+**E222 | Page 203 | 5747 | mssEC 25 (obj 5952, pointer 5747), 13 June 1864 3.30 PM, R. O'Brien (Gen. Butler's Hd Qrs) to Sheldon, for Biggs: ferry boats and lumber to Fort Powhatan (FM-R3b; row 5747/1; image-read at 2400 px)**
+
+Geo D Sheldon for [Colonel] Biggs [.] send up all ferry boats immediately to stop at [Fort] how rattan [.] send they lumber to [Fort] how rattan in the quickest possible from and time  {tail: [signed] [Maj Gen B. F. Butler] please hurry up our [Telegraph (-ed, -ing)] party answer R OBrien}
+
+Code-word tokens: H 8.
+
+**E223 | Page 279 | 5823 | mssEC 25 (obj 5952, pointer 5823), 9 Dec 1864 Ft Monroe, Sheldon to Maj. Eckert, for Surgeon Barns, from Charles McCormick, Medical Director (FM-R3b; row 5823/2; image-read at 2400 px)**
+
+for surgeon [General] Barns [.] The [Command = Er (-ed, -ing)]ing [General] directs me tin form you that he has taken the western metropolis [,] [Chattahoochee] and B. Deford for an urgent milly terry tarquinity  {tail: [signed] Charles McCormick medical Director [Department] of [Virginia] [North Carolina] Geo D Sheldon}
+
+Code-word tokens: H 10.
+
+**E224 | Page 157 | 5701 | mssEC 25 (obj 5952, pointer 5701), 27 May 1864 10.30 AM, R. O'Brien (Gen. Butler's Hd Qrs) to Sheldon: Captain Farquhar ordered to report to W. F. Smith as chief engineer (FM-R3b; row 5701/1; image-read at 2400 px)**
+
+Geo D Sheldon Captain Farquhar [.] you are ordered to report to [W. F. Smith] who leaves here with a large [Force] to join [Maj Genl U.S. Grant] as chief Engineer [.] you will report to [W. F. Smith] as he passes [Monroe]  {tail: [signed] G Weitzell [Brigadier General] and Engineer R OBrien}
+
+Code-word tokens: H 9.
+
+**E225 | Page 82 | 5626 | mssEC 25 (obj 5952, pointer 5626), 23 Apr 1864 Ft Monroe, Sheldon to S. H. Beckwith, Culpeper, for Grant: a scout's report of Longstreet at Charlottesville, signed John I. Davenport (FM-R3b; row 5626/0; image-read at 2400 px)**
+
+for Elgin [.] our man [Report]'s [Longstreet] at [Charlottesville] [.] [5000] [Men] from his own [Corps] forwarded him a day [.] Think the number large but believe the [Information]  {tail: [signed] [Maj Genl U.S. Grant] I Davenport {time: 11.30 AM} Pierce Geo D Sheldon}
+
+Code-word tokens: H 14.
+
+**E226 | Page 204 | 5748 | mssEC 25 (obj 5952, pointer 5748), 14 June 1864 Ft Monroe, Sheldon to Maj. Eckert, for Allen: mail boats to Charles City Landing, H. B. Blood (FM-R3b; row 5748/0; image-read at 2400 px)**
+
+[Report] horse [14] {time: 12.30} for [Captain] Allen [Quartermaster] [7] street [Today] [Washington] [.] send the mail boats to Charles City landing on the [James]  {tail: [signed] H B Blood [Captain] A [Quartermaster] Cloudy windy appearance of rain Geo D Sheldon}
+
+Code-word tokens: H 13.
+
+**E227 | Page 264 | 5808 | mssEC 25 (obj 5952, pointer 5808), 6 Nov 1864 Ft Monroe, Sheldon to John Horner, New York, for Capt. D. Stinson: Ninth Vermont draft (FM-R3b; row 5808/1; image-read at 2400 px)**
+
+[Monroe] November [6] {time: 7.30 PM} for [Captain] D Stinson [Quartermaster] [New York] [150] [Men] ninth [Vermont] will leave here at {time: 8 PM} on Weasler Perit to [Join (-ed, -ing)] their [Regiment]  {tail: [signed] [100] L James [Captain] and [Quartermaster] Geo D Sheldon}
+
+Code-word tokens: H 18.
+
+**E228 | Page 270 | 5814 | mssEC 25 (obj 5952, pointer 5814), 1 Dec 1864 Ft Monroe, Sheldon to Maj. Eckert, for the Chief of the Bureau of Ordnance: torpedoes invented by Mr Woods (FM-R3b; row 5814/1; image-read at 2400 px)**
+
+for wise chief of Bureau of Ord [Washington] [.] are the torpid does here the same as those invented by Mister Woods [?] If not please send me [10] of the latter  {tail: [signed] [D. D. Porter] {time: 11.30 AM} lovely Geo D Sheldon}
+
+Code-word tokens: H 7.
+
+**E229 | Page 289 | 5833 | mssEC 25 (obj 5952, pointer 5833), 14 Dec 1864 Ft Monroe, Sheldon to Maj. Eckert, Washington: the press despatch on Foster and Pocotaligo bridge (FM-R3b; row 5833/0; image-read at 2400 px)**
+
+Wash'n The Press Despatch in [New York] [Ewell] of [13] about [Maj Gen J. G. Foster] is wrong up tooth [10] [Maj Gen J. G. Foster] had not [Communicate (-ed, -ing)]d with [Maj Gen W. T. Sherman] nor has Pocotaligo [Bridge (-ed, -ing)] been [Destroy (-ed, -ing)]ed  {tail: [signed] L F Shell done cloudy this morning Geo. D. Sheldon}
+
+Code-word tokens: H 11.
+
+Totals over the 168 entries: H 2674, C 23, I 4, M 3.
 <!-- decode.py: derived block ends -->
