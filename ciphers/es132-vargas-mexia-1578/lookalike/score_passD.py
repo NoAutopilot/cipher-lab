@@ -44,8 +44,9 @@ def run(page):
         ok = r['passA']['gate_b'] and r['passB']['gate_b'] and ctl['reconciled']['gate_b']
         kq = sum(k == 'key' and t.endswith('?') for t, k in zip(toks, kinds)); nk = sum(k == 'key' for k in kinds)
         res[f'grades_{name}'] = dict(H=0, C=0, S=(nk - kq) if ok else 0, M=kq if ok else nk, I=0, U=sum(k in ('code', 'bad') for k in kinds))
-    changed = sum(a != b for ln in lines for a, b in zip(R0.get(ln, []), D0.get(ln, [])))
-    res['passD_vs_reconciled_tokens_differing'] = changed
+    changed = sum(a.rstrip('?') != b.rstrip('?') for ln in lines for a, b in zip(R0.get(ln, []), D0.get(ln, [])))
+    res['passD_vs_reconciled_labels_differing'] = changed
+    res['passD_vs_reconciled_flag_only_differing'] = sum(a != b for ln in lines for a, b in zip(R0.get(ln, []), D0.get(ln, []))) - changed
     outs = {f'lookalike/{page}/c3_test1_{page}_passD_result.json': json.dumps(res, indent=1) + '\n',
             f'lookalike/{page}/reading_{page}_passD.txt': reading(D0, key, sorted(set(D0) & set(lines)))}
     if '--check' in sys.argv:

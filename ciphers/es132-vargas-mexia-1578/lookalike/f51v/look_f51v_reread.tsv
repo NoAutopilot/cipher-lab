@@ -1,0 +1,106 @@
+passage	pos	label	conf	second	note
+L11	1	7ρ	M	77ρ	two-stroke 7 with looped tail
+L11	2	231+@s	M	23+@s	bar above, 3 with hook
+L11	3	y	M	{y}	long-tailed y
+L11	4	68+	M	68	small cross above 6
+L11	7	23+	H		cross after 23
+L11	9	r.	M	x.	r-shape with dot
+L11	15	25.	M	25.@r	dot after 25
+L11	16	r	M	25.@r	small r
+L12	4	231	M	23+	hook after 23
+L12	9	35+	M	5+	3 then 5 with cross
+L12	11	24+@n	M	24+	hat above
+L12	12	6ρ	H	6σ	looped tail
+L12	13	7σ@n	M	7σ	hat above
+L12	14	231@s	H		bar above
+L13	3	24+	H		cross after 24
+L13	6	231@s	H		bar above
+L13	8	23σ	M	23ρ	hook like 6
+L13	11	28ρ	M	28σ	looped tail
+L13	14	281	H		28 then 1
+L13	16	r	M	6	small r
+L13	17	610	H	10	6 before 10
+L14	1	71	M	6	7 with 1
+L14	2	6σ	M	6ρ	hook
+L14	3	r	M	6.@r	small r
+L14	4	610	H	10	6 before 10
+L14	5	77ρ	M	7ρ	double 7 with loop
+L14	6	mρ	H	nρ	m-like with loop
+L14	10	10	H	610	plain 10
+L14	12	24+@l	H	24+	slanted acute above
+L14	14	16ρ@n	M	6ρ@n	hat above
+L14	17	7618	M	1	long group
+L15	4	231	M	23+	hook after 23
+L15	6	24	H	24.	plain 24
+L15	13	6ρ	H	6σ	looped tail
+L16	1	11.@s	M	11	bar above
+L16	2	21.	H	11.	2 then 1 dot
+L16	5	1	M	1+	single 1
+L16	6	1+	H	1	cross after 1
+L16	7	r	M	6.@r	small r
+L16	8	610	H	10	6 before 10
+L16	9	21.	H	11.	21 dot
+L16	11	6σ	M	6ρ	hook
+L16	12	7+	M	7.	cross-like
+L16	13	r.	M	x.	r with dot
+L16	14	y	H	{y}	y letter
+L16	17	6σ	M	6ρ	hook
+L17	2	15+	H	15+@n	cross
+L17	5	23σ	M	23ρ	hook
+L17	8	15+	H	15+@n	cross
+L17	10	r	M	6.@r	small r
+L17	11	24+	H	24	cross
+L17	18	3	M	183	single 3
+L18	3	21.	H	11.	21 dot
+L18	5	r+	M	x+	r with cross
+L18	6	231	H	23+	hook after 23
+L18	16	21.	H	11.	21 dot
+L19	11	15+@n	H		hat above
+L19	12	24.	M	24	dot after
+L19	15	24.	M	24	dot after
+L19	18	7	M	7ρ	plain 7 at crop edge
+L20	1	y	M	{y}	y shape
+L20	11	6σ	M	6ρ	6 with 6-like hook
+L20	12	77ρ	M	7ρ	double 7 stroke
+L20	17	7ρ	M	77ρ	single 7 with loop
+L20	19	24+	H		cross
+L21	1	23+	H		cross
+L21	2	24σ	M	24ρ	hook like 6
+L21	5	7ρ	M	77ρ	7 with loop
+L21	7	15+	H	15+@n	no mark above
+L21	8	x.	M	r.	x-like with dot
+L21	10	201	H		
+L21	12	24+	H		cross
+L21	17	6ρ	H		loop tail
+L22	1	29.@r	M	29σ@r	dot, v-mark above
+L22	2	161	M	16	trailing 1
+L22	4	814	M	4	
+L22	8	7618@s	H		bar above
+L22	10	231	M	23⊣	
+L22	11	101	H		
+L22	12	6ρ	H		
+L22	13	102	H		
+L22	14	362	H		
+L22	15	368	H		
+L23	2	6ρ	H		
+L23	7	21.	H		
+L23	10	29σ	M	29	6-like hook after 29
+L23	14	6ρ	H		
+L23	15	77ρ	M	7ρ	
+L23	16	7ρ	M	nρ	
+L24	1	21.	H		
+L24	3	15+	H		
+L24	6	23σ	M	6	
+L24	11	m.@n	L	7ρ@n	hat over m.; 7ρ may be separate group
+L24	15	36+	H		
+L25	1	21.	H		
+L25	2	15+	H		
+L25	4	16σ	M	6σ	
+L25	6	24+	H		
+L25	8	21.	H		
+L25	10	35ρ	H		
+L25	11	201	H		
+L25	12	23ρ	M	23σ	
+L25	15	36+@s	H		bar above
+L25	16	6	M	6.	
+L25	17	6	M	6σ	

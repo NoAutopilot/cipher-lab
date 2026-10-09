@@ -1,0 +1,409 @@
+passage	pos	sign_id	conf	note
+L01	1	20ρ@r	H	passC
+L01	2	24+@n	H	passC
+L01	3	14@l	M	lookalike 2-of-3
+L01	4	20+	H	lookalike 2-of-3
+L01	5	24+@n	H	passC
+L01	6	24.	H	lookalike confirms
+L01	7	28	H	passC
+L01	8	7ρ@n	H	passC
+L01	9	29.	H	passC
+L01	10	26	H	passC
+L01	11	6	M	lookalike 2-of-3
+L01	12	4@n	H	passC
+L01	13	24.	H	lookalike confirms
+L01	14	20+	H	passC
+L01	15	x+	M	lookalike UNSETTLED
+L01	16	4@l	H	passC
+L01	17	8.	H	passC
+L01	18	26.	M	lookalike 2-of-3
+L02	1	26	H	passC
+L02	2	7σ	H	passC
+L02	3	18	H	passC
+L02	4	6.	H	passC
+L02	5	16σ	H	passC
+L02	6	23	H	passC
+L02	7	7ρ	M	lookalike confirms
+L02	8	23+@s	H	passC
+L02	9	28	H	passC
+L02	10	6.	H	passC
+L02	11	15+@s	H	lookalike UNSETTLED
+L02	12	73	H	passC
+L02	13	6.	H	passC
+L02	14	23+	H	lookalike UNSETTLED
+L02	15	7ρ	M	lookalike confirms
+L02	16	26+	M	lookalike 2-of-3
+L02	17	(.	H	lookalike 2-of-3
+L03	1	12.	H	passC
+L03	2	21.	H	lookalike confirms
+L03	3	26	H	passC
+L03	4	6ρ	M	lookalike confirms
+L03	5	10	H	passC
+L03	6	25	H	passC
+L03	7	6	H	passC
+L03	8	23+@r	H	passC
+L03	9	18@s	H	passC
+L03	10	6.	H	passC
+L03	11	15ρ	M	lookalike confirms
+L03	12	21.	H	lookalike confirms
+L03	13	4@n	H	passC
+L03	14	4@s	H	passC
+L03	15	24ρ	H	passC
+L03	16	12+	H	passC
+L03	17	20+	H	passC
+L03	18	23+	H	lookalike confirms
+L03	19	6ρ	H	lookalike confirms
+L04	1	7ρ@n	H	passC
+L04	2	4@l	H	passC
+L04	3	7ρ	M	lookalike 2-of-3
+L04	4	26.	H	passC
+L04	5	18	H	passC
+L04	6	21.	H	lookalike confirms
+L04	7	12+	H	passC
+L04	8	6σ	M	lookalike confirms
+L04	9	7ρ	M	lookalike confirms
+L04	10	6.	H	passC
+L04	11	23	H	lookalike 2-of-3
+L04	12	23	M	passC
+L04	13	20+	H	passC
+L04	14	7+	H	passC
+L04	15	15+	M	lookalike confirms
+L04	16	4	H	passC
+L04	17	1+	M	lookalike 2-of-3
+L04	18	7ρ@n	H	passC
+L04	19	15+	M	lookalike confirms
+L04	20	26.	M	lookalike 2-of-3
+L04	21	23	H	passC
+L05	1	201	M	lookalike 2-of-3
+L05	2	4@s	H	passC
+L05	3	24+	H	lookalike confirms
+L05	4	6.	H	passC
+L05	5	24ρ	H	passC
+L05	6	6ρ	H	lookalike confirms
+L05	7	4@s	H	passC
+L05	8	24ρ	H	passC
+L05	9	20+	H	passC
+L05	10	x+	M	lookalike UNSETTLED
+L05	11	21.	H	lookalike confirms
+L05	12	4@s	H	passC
+L05	13	24.	H	lookalike confirms
+L05	14	28@s	H	passC
+L05	15	35.	H	passC
+L05	16	25.	H	passC
+L05	17	26	H	passC
+L05	18	6ρ	H	lookalike confirms
+L06	1	28	H	passC
+L06	2	20+	H	passC
+L06	3	x+	M	lookalike UNSETTLED
+L06	4	21.	H	lookalike confirms
+L06	5	23σ	M	lookalike confirms
+L06	6	36+	H	passC
+L06	7	24+	H	lookalike confirms
+L06	8	r.	H	lookalike 2-of-3
+L06	9	26	M	lookalike 2-of-3
+L06	10	7ρ@n	H	passC
+L06	11	25ρ@s	H	passC
+L06	12	23ρ	H	lookalike confirms
+L06	13	30.	H	passC
+L06	14	15+	H	lookalike confirms
+L06	15	16+	H	passC
+L06	16	24	M	lookalike 2-of-3
+L06	17	6	M	lookalike UNSETTLED
+L06	18	10	H	passC
+L07	1	23.	H	passC
+L07	2	20+	H	passC
+L07	3	28	H	passC
+L07	4	23	H	passC
+L07	5	77ρ	H	lookalike UNSETTLED
+L07	6	10	H	passC
+L07	7	25.	H	passC
+L07	8	y	M	lookalike 2-of-3
+L07	9	23	H	passC
+L07	10	6.	H	passC
+L07	11	35+	H	passC
+L07	12	7.	H	passC
+L07	13	6.	H	passC
+L07	14	r	M	lookalike 2-of-3
+L07	15	21.	H	lookalike confirms
+L07	16	12+	H	passC
+L07	17	6.	H	passC
+L07	18	23@r	H	passC
+L07	19	4@n	H	passC
+L07	20	15+	H	lookalike confirms
+L08	1	16	M	lookalike 2-of-3
+L08	2	6	M	lookalike 2-of-3
+L08	3	23	H	passC
+L08	4	16+	H	passC
+L08	5	2ρ	H	passC
+L08	6	26+	M	lookalike 2-of-3
+L08	7	(.	H	lookalike 2-of-3
+L09	1	25	H	passC
+L09	2	26+	M	lookalike 2-of-3
+L09	3	7ρ	M	lookalike confirms
+L09	4	23+	H	lookalike confirms
+L09	5	23.	H	passC
+L09	6	24	M	lookalike confirms
+L09	7	8σ	H	passC
+L09	8	4@l	H	passC
+L09	9	12.	H	passC
+L09	10	10	H	lookalike 2-of-3
+L09	11	10	M	passC
+L09	12	6	H	passC
+L09	13	25	H	passC
+L09	14	6@r	M	lookalike 2-of-3
+L09	15	24+	H	lookalike confirms
+L09	16	y@s	H	lookalike 2-of-3
+L09	17	21.	H	lookalike confirms
+L09	18	4@n	H	passC
+L09	19	4@l	H	passC
+L09	20	6σ	M	lookalike confirms
+L09	21	23	H	passC
+L09	22	7@r	H	passC
+L09	23	23ρ	H	lookalike confirms
+L10	1	6.	H	passC
+L10	2	15+@s	H	lookalike confirms
+L10	3	35+	H	passC
+L10	4	24	M	lookalike 2-of-3
+L10	5	6	H	lookalike 2-of-3
+L10	6	7+	H	passC
+L10	7	23	H	passC
+L10	8	21	H	passC
+L10	9	24	M	lookalike 2-of-3
+L10	10	25	M	lookalike 2-of-3
+L10	11	6	M	lookalike 2-of-3
+L10	12	4	H	passC
+L10	13	r.	H	lookalike 2-of-3
+L10	14	6.	H	passC
+L10	15	23	H	passC
+L10	16	23ρ	H	lookalike confirms
+L10	17	30.	H	passC
+L10	18	4@s	H	passC
+L10	19	24+	H	lookalike confirms
+L10	20	16+	H	passC
+L10	21	24.	H	lookalike confirms
+L11	1	x	M	lookalike UNSETTLED
+L11	2	6	M	lookalike 2-of-3
+L11	3	10@s	H	passC
+L11	4	7ρ@n	H	passC
+L11	5	15+	H	lookalike confirms
+L11	6	26.	M	lookalike 2-of-3
+L11	7	y	M	lookalike 2-of-3
+L11	8	26+	M	lookalike 2-of-3
+L11	9	16+	H	passC
+L11	10	6	M	lookalike 2-of-3
+L11	11	/	H	lookalike 2-of-3
+L11	12	26.	M	lookalike 2-of-3
+L11	13	18	H	passC
+L11	14	7ρ@n	H	passC
+L11	15	10@l	M	lookalike 2-of-3
+L11	16	14@n	H	passC
+L11	17	18	H	lookalike 2-of-3
+L11	18	3	H	lookalike 2-of-3
+L11	19	6ρ	H	lookalike confirms
+L11	20	16	M	lookalike 2-of-3
+L11	21	6	H	lookalike 2-of-3
+L11	22	24	M	lookalike 2-of-3
+L11	23	6	H	lookalike 2-of-3
+L12	1	3	H	lookalike 2-of-3
+L12	2	6ρ	M	lookalike 2-of-3
+L12	3	23.	H	passC
+L12	4	24+	M	lookalike confirms
+L12	5	8σ	H	passC
+L12	6	4@n	H	lookalike 2-of-3
+L12	7	21.	H	lookalike confirms
+L12	8	7ρ	M	lookalike confirms
+L12	9	6	M	lookalike UNSETTLED
+L12	10	6.	H	passC
+L12	11	14+	H	passC
+L12	12	6σ	M	lookalike confirms
+L12	13	4@s	H	passC
+L12	14	3	H	lookalike 2-of-3
+L12	15	6+	M	lookalike 2-of-3
+L12	16	16.	H	passC
+L12	17	24	M	lookalike UNSETTLED
+L12	18	24.	M	lookalike confirms
+L12	19	15.	H	passC
+L12	20	10@n	H	passC
+L12	21	24.	H	lookalike confirms
+L13	1	2	H	lookalike 2-of-3
+L13	2	0ρ@n	M	lookalike 2-of-3
+L13	3	14+	H	passC
+L13	4	28@s	H	passC
+L13	5	4@l	H	passC
+L13	6	4@s	H	passC
+L13	7	24+	H	lookalike confirms
+L13	8	6ρ	H	lookalike confirms
+L13	9	6.	H	passC
+L13	10	23@s	H	passC
+L13	11	23+@s	M	lookalike 2-of-3
+L13	12	7ρ	M	lookalike confirms
+L13	13	23+@s	H	passC
+L13	14	28	H	passC
+L13	15	15+	H	lookalike confirms
+L13	16	7ρ@n	H	passC
+L13	17	21	H	passC
+L13	18	23σ	M	lookalike confirms
+L13	19	18@n	H	passC
+L14	1	4@n	H	passC
+L14	2	21.	H	lookalike confirms
+L14	3	23.	H	passC
+L14	4	20	M	lookalike 2-of-3
+L14	5	4	M	lookalike 2-of-3
+L14	6	6.@n	M	lookalike 2-of-3
+L14	7	16.	H	passC
+L14	8	24.	M	lookalike confirms
+L14	9	r	H	lookalike 2-of-3
+L14	10	23σ	M	lookalike confirms
+L14	11	4@s	H	passC
+L14	12	24ρ	H	passC
+L14	13	6.	H	passC
+L14	14	15	H	passC
+L14	15	6.	H	passC
+L14	16	10	H	passC
+L14	17	15+@n	H	passC
+L14	18	23ρ	M	lookalike confirms
+L14	19	24	M	lookalike 2-of-3
+L15	1	20+	H	passC
+L15	2	23+	H	lookalike confirms
+L15	3	10	H	passC
+L15	4	6.	H	passC
+L15	5	15+@n	M	lookalike UNSETTLED
+L15	6	24.	H	lookalike confirms
+L15	7	28	H	passC
+L15	8	21.	H	lookalike confirms
+L15	9	6	M	lookalike 2-of-3
+L15	10	7	H	lookalike 2-of-3
+L15	11	15+	H	lookalike confirms
+L15	12	23	H	passC
+L15	13	7ρ	M	lookalike confirms
+L15	14	23+@s	H	passC
+L15	15	6.	H	passC
+L15	16	x	M	lookalike UNSETTLED
+L15	17	6@s	H	lookalike 2-of-3
+L15	18	6ρ	M	lookalike 2-of-3
+L15	19	8+	H	passC
+L16	1	27ρ@s	H	passC
+L16	2	20+	H	passC
+L16	3	6.	H	passC
+L16	4	29	H	passC
+L16	5	7+@n	H	passC
+L16	6	42	H	passC
+L16	7	28ρ	H	passC
+L16	8	2	M	lookalike 2-of-3
+L16	9	4@n	H	lookalike 2-of-3
+L16	10	24.	M	lookalike 2-of-3
+L16	11	14ρ	M	lookalike 2-of-3
+L16	12	18	H	passC
+L16	13	3	H	passC
+L16	14	6ρ@s	H	passC
+L16	15	x.	H	lookalike 2-of-3
+L16	16	28	H	passC
+L16	17	24ρ	M	lookalike 2-of-3
+L16	18	23	H	passC
+L17	1	28	H	passC
+L17	2	6ρ	M	lookalike 2-of-3
+L17	3	23	H	passC
+L17	4	7ρ@n	H	passC
+L17	5	21.	H	lookalike confirms
+L17	6	20ρ	H	passC
+L17	7	6.	H	passC
+L17	8	r	H	lookalike 2-of-3
+L17	9	10	H	passC
+L17	10	7	M	lookalike 2-of-3
+L17	11	24	M	lookalike 2-of-3
+L17	12	6	M	lookalike 2-of-3
+L17	13	6	M	lookalike 2-of-3
+L17	14	r	H	lookalike 2-of-3
+L17	15	10	H	passC
+L17	16	x.	H	lookalike 2-of-3
+L17	17	16.	H	passC
+L17	18	6	M	lookalike UNSETTLED
+L17	19	6	M	lookalike 2-of-3
+L17	20	6_σ	M	lookalike 2-of-3
+L17	21	18	H	passC
+L17	22	6.	H	passC
+L17	23	10	H	passC
+L17	24	21.	H	lookalike confirms
+L18	1	15ρ@2	H	lookalike 2-of-3
+L18	2	28	H	passC
+L18	3	4	H	passC
+L18	4	15ρ@2	M	lookalike 2-of-3
+L18	5	23ρ	M	lookalike confirms
+L18	6	15ρ	H	lookalike confirms
+L18	7	4	H	passC
+L18	8	23.	H	passC
+L18	9	22	M	lookalike 2-of-3
+L18	10	22.	H	passC
+L18	11	28	H	passC
+L18	12	24ρ	M	lookalike 2-of-3
+L18	13	21.	H	lookalike confirms
+L18	14	23σ	M	lookalike confirms
+L18	15	7ρ	M	lookalike confirms
+L18	16	4@n	H	passC
+L18	17	7+@n	H	passC
+L19	1	26+	M	lookalike 2-of-3
+L19	2	4	H	passC
+L19	3	25ρ@s	H	passC
+L19	4	36+	H	passC
+L19	5	8+	H	passC
+L19	6	14ρ@s	H	passC
+L19	7	4@n	H	passC
+L19	8	4@l	H	passC
+L19	9	23.	H	passC
+L19	10	20.	H	passC
+L19	11	4	H	passC
+L19	12	6.@n	M	lookalike 2-of-3
+L19	13	25.@r	H	lookalike 2-of-3
+L19	14	4@n	H	passC
+L19	15	16	M	lookalike 2-of-3
+L19	16	1	M	lookalike 2-of-3
+L19	17	7ρ	M	lookalike confirms
+L19	18	20.	H	passC
+L20	1	15σ	M	lookalike confirms
+L20	2	34ρ	H	passC
+L20	3	23σ	M	lookalike confirms
+L20	4	21.	H	lookalike confirms
+L20	5	6+	H	passC
+L20	6	r	H	lookalike 2-of-3
+L20	7	15.@s	H	passC
+L20	8	18	H	lookalike 2-of-3
+L20	9	3	H	lookalike 2-of-3
+L20	10	6ρ	H	lookalike confirms
+L20	11	x.	H	lookalike 2-of-3
+L20	12	y	M	lookalike 2-of-3
+L20	13	17ρ@s	H	passC
+L20	14	6ρ@n	H	passC
+L20	15	6.	H	passC
+L20	16	8ρ@l	H	lookalike 2-of-3
+L20	17	25.@r	M	lookalike 2-of-3
+L20	18	23	H	passC
+L20	19	/	H	passC
+L20	20	21.	H	lookalike confirms
+L20	21	y+	H	lookalike 2-of-3
+L21	1	55.	H	passC
+L21	2	23.	H	passC
+L21	3	15.	H	passC
+L21	4	12+	H	passC
+L21	5	12.	H	passC
+L21	6	7+	H	passC
+L21	7	6ρ	H	lookalike confirms
+L21	8	4@n	H	passC
+L21	9	15+	M	lookalike confirms
+L21	10	18	H	passC
+L21	11	x.	H	lookalike 2-of-3
+L21	12	14+	H	passC
+L21	13	10	H	passC
+L21	14	{bul}	H	passC
+L21	15	4@s	H	passC
+L21	16	24+	H	lookalike confirms
+L21	17	x+	H	lookalike 2-of-3
+L21	18	29ρ	H	passC
+L21	19	/.	M	lookalike 2-of-3
+L22	1	B	H	passC
+L22	2	dρ	H	passC
+L22	3	sρ	H	passC
+L22	4	±	M	passC
+L22	5	v	H	passC
+L22	6	dρ	H	passC
+L22	7	j	H	passC
+L22	8	1578.	M	passC

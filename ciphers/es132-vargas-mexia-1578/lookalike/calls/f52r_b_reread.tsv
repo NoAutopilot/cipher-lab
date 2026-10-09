@@ -1,0 +1,95 @@
+passage	pos	label	conf	second	note
+L12	1	3	H		plain 3 no tail
+L12	2	6ρ	M	6σ	looped tail
+L12	4	24+	M	x+	overstruck 4 with cross
+L12	6	4@n	H		hat above 4
+L12	7	21.	H		dot after 21
+L12	8	7ρ	M	77ρ	overstruck 7 with loop tail
+L12	9	7ρ	L	6	looped tail
+L12	12	6σ	M	6ρ	hook after 6
+L12	14	3	H		plain 3
+L12	15	6+	M		cross after 6
+L12	17	24	L	26	fast n-like
+L12	18	24.	M	24	dot
+L12	21	24.	H		dot
+L13	1	2	H		plain 2
+L13	2	0ρ@n	M	20ρ@n	hat above
+L13	7	24+	H	x+	overstruck
+L13	8	6ρ	H		loop tail
+L13	11	23+@s	M	231@s	bar above
+L13	12	7ρ	M	77ρ	overstruck
+L13	15	15+	H		no mark above
+L13	18	23σ	M	6	hook
+L14	2	21.	H		dot
+L14	4	20	M	201	zero then stroke
+L14	5	4	M	201	sideways 4 shape
+L14	6	6.@n	M	6@n	hat above, dot after
+L14	8	24.	M	24	dot
+L14	9	r	H		r shape
+L14	10	23σ	M	6	hook
+L14	18	23ρ	M	23σ	loop tail
+L14	19	24	M	26	long tail
+L15	2	23+	H		cross
+L15	5	15+@n	M	15+@r	hat above
+L15	6	24.	H		dot
+L15	8	21.	H		dot
+L15	9	6	M	6.	plain 6
+L15	10	7	H	67	plain 7
+L15	11	15+	H		no mark above
+L15	13	7ρ	M	77ρ	loop tail
+L15	16	x	M	26	dark x blob
+L15	17	6@s	H		bar above
+L15	18	6ρ	M	?ρ	loop below
+L16	8	2	M	7	plain 2
+L16	9	4@n	H		hat
+L16	10	24.	M	24	dot; 2 4^. may be one group
+L16	11	14ρ	M	14+	overstruck
+L16	15	x.	H		x with dot
+L16	17	24ρ	M	26ρ	n-like with loop
+L17	2	6ρ	M	?ρ	loop tail
+L17	5	21.	H		dot
+L17	8	r	H		r shape
+L17	10	7	M	7ρ	plain 7
+L17	11	24	M	24.	no dot
+L17	12	6	M	24σ	large 6
+L17	13	6	M	6σ	small 6 after
+L17	14	r	H		r shape
+L17	16	x.	H		x with dot
+L17	18	6	M	6.	no dot
+L17	19	6	M	6.	underlined 6
+L17	20	6_σ	M	6	underline
+L17	24	21.	H		dot
+L18	1	15ρ@2	H		two dots above
+L18	4	15ρ@2	M	15ρ@s	dots and bar above
+L18	5	23ρ	M	23σ	loop tail
+L18	6	15ρ	H		loop tail
+L18	9	22	M	22+	no dot
+L18	12	24ρ	M	26ρ	n-like with loop
+L18	13	21.	H		dot
+L18	14	23σ	M	6	hook
+L18	15	7ρ	M	77ρ	loop tail
+L19	1	26+	M	24	cross
+L19	12	6.@n	M	6.	hat
+L19	13	25.@r	H		hooked mark above
+L19	15	16	M	161	
+L19	16	1	M	161	
+L19	17	7ρ	M	77ρ	loop tail
+L20	1	15σ	M	18σ	hook
+L20	3	23σ	M	6	hook
+L20	4	21.	H		dot
+L20	6	r	H		r shape
+L20	8	18	H		plain 18
+L20	9	3	H		plain 3
+L20	10	6ρ	H		loop
+L20	11	x.	H		x with dot
+L20	12	y	M	{y}	letter y
+L20	16	8ρ@l	H		slanted stroke above
+L20	17	25.@r	M	25.	small mark above
+L20	20	21.	H		dot
+L20	21	y+	H		y with cross
+L21	7	6ρ	H		loop
+L21	9	15+	M	15+@n	no mark above
+L21	11	x.	H		x dot
+L21	16	24+	H		cross
+L21	17	x+	H		x cross
+L21	19	/.	M	/	dot after slash
