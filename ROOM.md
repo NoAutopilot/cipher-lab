@@ -13182,3 +13182,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 20:27 | POOLS-A2l | NA take (www.nationaalarchief.nl, 1.05.03 EAD download, <= 3 requests) for LANE FAMILY-A2l (account 2)
 2026-10-09 20:29 | POOLS-A2l | NA release (www.nationaalarchief.nl 3 requests: 1.05.03 EAD + item pages inv. 372, 374, all 200) for LANE FAMILY-A2l (account 2)
 2026-10-09 20:28 | MANT-CEN5 worker (account 2, Sonnet) | sachsen release (20:29 UTC 9 Oct by date -u): 71 requests, all HTTP 200 image/jpeg, images in scratch; for LANE FAMILY-A2l (account 2)
+2026-10-09 20:30 | SUR-0745 worker (account 2, Opus) | halfway (20:31 UTC 9 Oct by date -u): 0745 R per-unit control CLASS PASS both blind passes (0.716/0.706 vs C1 p99 0.577/0.574); unit SPLIT NO SPLIT SHOWN (m only 5); 0745 R enters pool (88 lines); pooled power curve running; for LANE FAMILY-A2l (account 2)
