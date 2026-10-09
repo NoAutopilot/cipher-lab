@@ -9,11 +9,12 @@ THE ITEM
   A31-1148), transcribed on DECODE as record R1953 (https://de-crypt.org/decrypt-web/RecordsView/1953).
 - Key: a period key sheet, "Hellen avec le Roy de Prusse" (1751), British Library Add MS 32276 f.44, on DECODE as R4369.
   It carries codes 801-1796 only.
-- Our partial reading assigns a value to 456 of the letter's 846 code groups (54%). Codes 1-800 are unread. The fragments
+- Our partial reading assigns a value to 460 of the letter's 847 code groups (54%), as the groups read on the page images
+  (DECODE's transcription has 846; 14 groups corrected on the image, 9 Oct 2026). Codes 1-800 are unread. The fragments
   include "si feu prince d'Orange", "a rejetté ... la proposition d'une nouvelle", "de renouveller le ... traité",
   "des troupes", "le commerce ... d'Ostende", "princesse d'Orange", "le prince Lou[is]".
 - Full files: https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/hellen-frederick-1752 (AUDIT.md,
-  key_r4369/reading_R1953.txt, NOTES.md).
+  key_r4369/reading_R1953_img.txt, NOTES.md).
 
 QUESTIONS
 1. Is Hellen's despatch of 4 January 1752 printed anywhere, in French or in German summary? Check especially the

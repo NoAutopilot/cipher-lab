@@ -430,3 +430,35 @@ shuffled key also decodes into words and segments easily, while the real reading
 pre-registered item control suited to the design (e.g. the mean 5-gram score of every keyed window against the same 200
 shuffles), then re-rule 863/1257 under the code clause; about $2, a verifier session.
 Not changed: SO-HEL-R1953 (no count or depth changed).
+
+## Reading revision (UNA-HELLEN, 9 Oct 2026) -- rule 10 propagation; not a verifier's ruling
+
+Solver-side worker UNA-HELLEN (owner-account dispatch of the account-4 orchestrator's brief
+`.claude/briefs/runs/2026-10-09-account4-orch-unassigned-jobs.md`), 9 Oct 2026 06:1x UTC by date -u. The counted reading in
+`key_r4369/` now decodes DECODE's transcription with the image corrections adopted (R7A-HEL53 high + medium, R8-HEL 0/8 high;
+`key_r4369/build_input.py` -> `R1953_pipe_img.txt` -> `reading_R1953_img.txt`). `ciphertext_R1953.txt` and the key are unchanged;
+`reading_R1953.txt` (DECODE's transcription) is kept as the second decode job so the retired tests that read it stay reproducible.
+
+| version | tokens | H | S | M | U |
+|---|---|---|---|---|---|
+| audited above (DECODE transcription, key_r4369/reading_R1953.txt) | 846 | 152 | 304 | 16 | 374 |
+| counted from 9 Oct 2026 (key_r4369/reading_R1953_img.txt) | 847 | 154 | 306 | 15 | 372 |
+
+Rule 7: `python3 tools/decode_key.py ciphers/hellen-frederick-1752/key_r4369 --check` exit 0, "reading up to date" (both jobs);
+`python3 ciphers/hellen-frederick-1752/key_r4369/build_input.py --check` exit 0. Judge on the counted reading: FAIL, score -0.978 vs
+real_p05 -0.968 (was -0.976 vs -0.954 on the transcription), the judge cannot decide at this coverage. Grade note: 14 tokens change
+(per-token list in HYPOTHESES.md "UNA-HELLEN"); one recurring value used by DEPTH-MH changes occurrences: 898 "quel" loses pos 549
+(now 838 "que"). No fragment named in the safe sentence or the SO prompt changes.
+
+**Safe sentence, re-checked with the counted numbers** (supersedes the counts in section 1's safe sentence, wording otherwise as
+there): "Using a period key sheet in the British Library (Add MS 32276 f.44, catalogued on DECODE as R4369), we assigned values to
+460 of the 847 code groups (54%) of Hellen's 4 January 1752 despatch to Frederick II (DECODE R1953), as the groups read on the page
+images. 154 of them come straight from the sheet; for 306 we decided which code each sheet entry belongs to with a controlled
+statistical test. Codes 1-800 are not on that sheet and remain unread. In the editions, catalogues and decipherment volumes we
+searched (log in AUDIT.md) we found no printed plaintext or period decipherment of this despatch; the recipient's archive in Berlin
+has not been searched."
+
+N-class N3 and depth D1 are not re-ruled here (a solver does not classify). depth_pct in status.json is updated arithmetically
+(53.9 -> 54.3). SECOND-OPINIONS-QUEUE row SO-HEL-R1953 (queued, not yet posted): its prompt now carries 460 of 847 and the
+reading_R1953_img.txt path. **VERIFIER WANTED:** a rule-7 fresh re-derivation of `reading_R1953_img.txt` from the spec, the key
+and the two corrections files (READ2-HELRD's three conventions, key_r4369/README.md).

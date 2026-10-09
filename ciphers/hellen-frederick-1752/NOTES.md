@@ -1739,3 +1739,78 @@ SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing 
 - R1049 (7 Sept 1756) Hellen letter [same-sender; unread] -- transcribe R4376 (f.56, 1754 table) and test on R1049; ~$8; p 0.1; evidence: hellen-frederick-1752/ciphertext_R1049.txt; NOTES.md:878 (next: transcribe R4376 P3)
 - 1763 cluster R1045-R1048, R1060, R1061 (pooled_1763.txt) [same-sender; unread] -- open post-1756 Add MS 32276 records R4381-R4408 for a 1763 table; or pooled solver with matched control; ~$4; p 0.1; evidence: hellen-frederick-1752/pooled_1763.txt, pool_1763.py; NOTES.md:879 (no 1763 table)
 - Michell to Frederick letters R1050 (5 Sept 1752), R1051 (12 Nov 1751) and kin, KHA inv.198 [same-design; unread] -- none until a Michell key surfaces; keys tested negative FT4/FT4b; p 0.03; evidence: hellen-frederick-1752/sibling_michell/DOC_R1050_D1938_1938.txt; NOTES.md:805 (Michell keys negative)
+
+## UNA-HELLEN (9 Oct 2026): image-check + 0/8 corrections adopted into key_r4369/ (account-4 orchestrator's brief, owner-account dispatch)
+
+Step run: the R8-HEL Verdict's second option, "adopting the image-check + 0/8 corrections into key_r4369/", on the orchestrator's go
+(brief `.claude/briefs/runs/2026-10-09-account4-orch-unassigned-jobs.md` "### UNA-HELLEN"). Disk only, no network beyond git, no
+subagent, no image read.
+
+**Prior work.** `python3 tools/prior_work.py hellen-frederick-1752 --item-spec 'shelfmark=DECODE R1953;date=1752' --step-type
+decode --fetch` stopped on the date format; with `date=1752-01-04` and no R-id it gave exit 4 (LOOK 2-leaf, UNCHECKED tomokiyo and
+solver: the unit had no R-id). With `decode=1953;sender=Hellen;recipient=Frederick II` added it gave **exit 3, step DONE**, on one row
+(adhoc-b3fbcc:1-own:4683f5 = NOTES.md:1047 "[x] clear-pages: Fagel 5177's clear copies ... looked at (N4-HEL5)"). That row is the
+clear-pages escalation item, a different step; key_r4369/reading_R1953.txt still read DECODE's transcription (846 tokens, H 152 S 304)
+at that moment, so the adoption was not done. Recorded `CLEAR` on that row with that reason; the tool still reports a step DONE row
+as DONE (a --record cannot answer a DONE row, by design), so this is logged here as a gate false positive (clear-pages marker matched
+as a decode step), flagged in ROOM. `--step-type propagate-revision` (the step this job actually is): exit 4 on 12 LEAD rows, all
+"[x]" escalation markers for other steps (known-keys, clear-pages, image-check, retry); each recorded `CONTEXT` (they are the
+R7A-HEL53 / R8-HEL passes this job adopts); re-run: **exit 0**, "proceed on the residue", generic UNCHECKED-NET 2 (aaymeloglu
+solver repository has no cache; no prior_editions.tsv row: the check-solved sections above name the editions read). Hand check 1
+(own work): the adoption was not in key_r4369/ (decode.json as committed before this job, cdc5a22d, had one job reading R1953_pipe.txt, DECODE's transcription); checks 2-4
+(leaf gloss, solver caches, editions): unchanged from R7A-HEL53 / AUDIT.md, not re-run (this step changes no reading from outside).
+
+**What was done.** `key_r4369/build_input.py` (input layer; `--check` exit 0) applies `image_check_r1953/corrections.tsv` (high +
+medium, 12 rows, including the 1426903 -> 1426 903 split) and then `zero_eight/corrections.tsv` (high, 2 rows; pos 272 ambiguous,
+not applied) to `key_r4369/R1953_pipe.txt` and writes `R1953_pipe_img.txt`, asserted equal to `zero_eight/R1953_pipe_08.txt`.
+`key_r4369/decode.json` now has two jobs: the counted reading `reading_R1953_img.txt` from that input, then the unchanged DECODE-
+transcription reading `reading_R1953.txt` (kept because key_r4372/diag.py, key_r4386/*, key_r4388/blank_test.py and key_rebuild/*
+read its tokens file). `ciphertext_R1953.txt` and `key_decode.tsv` unchanged.
+
+`python3 tools/decode_key.py ciphers/hellen-frederick-1752/key_r4369`, then `--check`: exit 0, "reading up to date".
+
+| version | tokens | H | C | S | M | I | U |
+|---|---|---|---|---|---|---|---|
+| before: DECODE transcription (key_r4369/reading_R1953.txt, unchanged) | 846 | 152 | 0 | 304 | 16 | 0 | 374 |
+| after: counted reading (key_r4369/reading_R1953_img.txt) | 847 | 154 | 0 | 306 | 15 | 0 | 372 |
+| zero_eight's figure the brief required to reproduce | 847 | 154 | 0 | 306 | 15 | 0 | 372 |
+
+Reproduced exactly; reading body identical to `zero_eight/reading_R1953_08.txt`. 14 tokens change (list in HYPOTHESES.md
+"UNA-HELLEN"): value changes "soin" -> "suis" (828), M "le" -> H "d" (998), H "re" -> U (752), "mi" -> "di" (1058), "avance" ->
+"prince de" (886), U -> "et" + "qu'" (1426 903), "quel" -> "que" (838), U -> "obten" (1283), U -> H "son" (809). Note: R7A-HEL53's
+table lists pos 829 (8?09 -> 809) as "no grade change"; under the R4369 key 809 reads H "son", so it is one of the two U -> H changes
+that make the H count rise by 2 (the table's own totals, H 153 for high + medium, already included it).
+
+**Judge** (`python3 tools/judge_plaintext.py specs/hellen-frederick-1752.json --file ciphers/hellen-frederick-1752/key_r4369/reading_R1953_img.txt`):
+```
+ok   length: got=1332, min=200, max=1000000000
+FAIL language: score=-0.978, null_p99=-1.739, real_p05=-0.968, real_median=-0.826, mode=both, N=1332
+FAIL - hellen-frederick-1752 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+(the transcription reading, re-run the same minute: -0.976 vs real_p05 -0.954, N=1322). A FAIL near the gate, as expected by the
+brief; the judge cannot decide at this coverage (judge_calib.py).
+
+**Control:** none run, none needed for an adoption. Every correction was made on the image under R8-HEL's PREREG
+(zero_eight/PREREG.md) and R7A-HEL53's reconciliation, with readers blind to the key; no new gate is introduced here.
+
+**Rule 10 propagation.** AUDIT.md: section "Reading revision (UNA-HELLEN, 9 Oct 2026)" with the counts, the grade note and the safe
+sentence re-checked at 460 of 847; N3 and D1 not re-ruled (verifier's). SECOND-OPINIONS-QUEUE SO-HEL-R1953 (queued, not posted): the
+prompt file now says 460 of 847 and points at reading_R1953_img.txt. status.json: grade, line, depth_pct 53.9 -> 54.3, depth_unread,
+depth_note. NEAR.md row: next step updated. **VERIFIER WANTED:** a rule-7 fresh re-derivation of reading_R1953_img.txt.
+
+## Remaining gaps (UNA-HELLEN, 9 Oct 2026)
+Read so far: 460 of 847 R1953 tokens carry a key value (H 154, S 306) plus M 15, U 372, in the counted reading key_r4369/reading_R1953_img.txt (image corrections adopted); 456 of 846 on DECODE's transcription
+- codes 1-800 of the Hellen key (354 R1953 tokens) - blocker: no-key-material; the image check confirms the U tokens as transcribed (R7A-HEL53), period tables R4370/R4372 retired (rule 3), no other Hellen sheet in Add MS 32276 (NEAR3-HEL3, N6-HEL81); context-fit anneal untestable at this N (N5-HEL7); phrase-crib placement untestable at 8 Fagel pages (D2-HELFAGEL); the full-scans 5-93 rebuild is HELD (campaign, orchestrator decision)
+- empty cells inside 801-1796, the 15 M tokens and one 0/8-ambiguous token (pos 272) - blocker: open-codes; the 0/8 pass is done and adopted (R8-HEL, UNA-HELLEN); the empty cells are blank in R4369 itself
+- the 1756 letter (R1049) - blocker: no-key-material; R4369, R4372 and R4376 do not read it (N6-HEL76), no 1756 Hellen sheet in R4377-R4408 (N6-HEL81)
+- the 1763 letters (R1045-R1048, R1060, R1061) - blocker: no-key-material; both positional candidates retired by pre-registered tests with passed controls (N7-HELBC, D2-HELR); reopens only with new material
+
+## Escalation (UNA-HELLEN, 9 Oct 2026)
+- [x] siblings: Michell keys tested negative (FT4, FT4b); R4370 (f.46) and R4372 (f.48) tested negative as the first half; all Add MS 32276 records looked at (NEAR3-HEL3, N6-HEL81, N7-HELDK)
+- [x] clear-pages: Fagel 5177's clear Hellen copies looked at (N4-HEL5) and 8 pages of Dec 1751 transcribed as a phrase corpus (D2-HELFAGEL); context only
+- [x] known-keys: R4369 reads R1953; R4370/R4372 retired for 1-800; R4376 fails on R1049; R4388 and R4386 fail on 1763
+- [x] print: Politische Correspondenz vols. 9-10 searched for the letter (check-solved sections above)
+- [ ] key-rebuild: fr18-bigram anneal untestable (N5-HEL7); phrase-crib placement untestable at 8 pages (D2-HELFAGEL); untried: the same instrument on the full scans 5-93 corpus, ~$30-35, low prior, HELD by the orchestrator (campaign-sized), or a further R4369-code letter if one is found
+- [x] image-check: R4369, R4370, R4372, R4376, R4386, R4388 read from full-size images; R1953 checked against DECODE's transcription (R7A-HEL53) and its keyed 0/8 twins read masked (R8-HEL); both adopted into the counted reading (UNA-HELLEN)
+- [x] retry: the R1953 image check (R7A-HEL53) and the 0/8 pass (R8-HEL)
+Verdict: keep going: 1 internal gap; cheapest next: the 1-800 key-rebuild on the full Fagel scans 5-93 corpus, ~$30-35, low prior (a campaign, HELD: orchestrator decision); a verifier's rule-7 re-derivation of reading_R1953_img.txt is wanted

@@ -23,3 +23,12 @@ trial-matched choices come from conventions that were only in `build_keys.py`'s 
 3. A trailing `?` on a ciphertext token (e.g. `990?`) is read as usual but graded M; an inner `?` (a doubtful digit, e.g. `128?3`) is unkeyed (U).
 With these three rules a spec-plus-key reader reproduces the committed reading 846/846 (READ2-HELRD's own statement). The reading
 itself is unchanged; `tools/decode_key.py ciphers/hellen-frederick-1752/key_r4369 --check` still passes.
+
+## Counted reading (UNA-HELLEN, 9 Oct 2026)
+
+`decode.json` now has two jobs. The first, `R1953_pipe_img.txt` -> `reading_R1953_img.txt` / `reading_R1953_img_tokens.tsv`, is the
+counted reading: DECODE's transcription with the image corrections adopted by `build_input.py [--check]` (R7A-HEL53
+`../image_check_r1953/corrections.tsv` high + medium, then R8-HEL `../zero_eight/corrections.tsv` high; equal to
+`../zero_eight/R1953_pipe_08.txt`, asserted). H 154 / S 306 / M 15 / U 372 of 847. The second job, `R1953_pipe.txt` ->
+`reading_R1953.txt`, is DECODE's transcription unchanged (H 152 / S 304 / M 16 / U 374 of 846); the retired tests in key_r4372,
+key_r4386, key_r4388 and key_rebuild read its tokens file and stay reproducible. `ciphertext_R1953.txt` is not modified.

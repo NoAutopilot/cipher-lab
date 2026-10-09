@@ -3521,18 +3521,18 @@
       "fields_source": "hellen-frederick-1752/AUDIT.md: VHEL (N3, LANE-NEAR3) and A3V-VHEL2 second adversarial audit (N3 confirmed, LANE-A3V)",
       "document_id": "DECODE R1953 (KHA Prins Willem V inv. 196, now A31-1148): W. B. von der Hellen to Frederick II, The Hague, 4 Jan 1752; key BL Add MS 32276 f.44 (DECODE R4369)",
       "title": "Hellen to Frederick II, The Hague, 4 Jan 1752: intercepted despatch read in part with a 1751 period key sheet (BL Add MS 32276 f.44)",
-      "grade": "N3 (two audits), key period. 846 tokens: H 152, S 304, M 16, U 374; codes 1-800 not on the sheet (two candidate sheets R4370, R4372 fail as rival series). Value-shuffle and order-shuffle nulls p 0/200; rule-7 re-derivation 845/846.",
-      "line": "Class without a reading (D1, fragments read; not counted as a unique solve). Using a period key sheet in the British Library (Add MS 32276 f.44, DECODE R4369), values assigned to 456 of 846 code groups of Hellen's 4 Jan 1752 despatch; no printed plaintext or period decipherment located in the searched editions; the Berlin file GStA PK I. HA Rep. 96 Nr. 38 G-H was not read.",
+      "grade": "N3 (two audits), key period. 847 tokens after the image corrections adopted 9 Oct 2026 (UNA-HELLEN; 846 on DECODE's transcription: H 152, S 304, M 16, U 374): H 154, S 306, M 15, U 372; codes 1-800 not on the sheet (two candidate sheets R4370, R4372 fail as rival series). Value-shuffle and order-shuffle nulls p 0/200; rule-7 re-derivation 845/846.",
+      "line": "Class without a reading (D1, fragments read; not counted as a unique solve). Using a period key sheet in the British Library (Add MS 32276 f.44, DECODE R4369), values assigned to 460 of 847 code groups (as read on the image) of Hellen's 4 Jan 1752 despatch; no printed plaintext or period decipherment located in the searched editions; the Berlin file GStA PK I. HA Rep. 96 Nr. 38 G-H was not read.",
       "text": "unknown",
       "claim_scope_was": "partial reading (codes 801-1796)",
       "depth": "D1",
-      "depth_pct": 53.9,
+      "depth_pct": 54.3,
       "depth_unread": {
-        "names_codes": "360 codes 1-800 not on the sheet, 14 blank cells",
-        "other": "16 M"
+        "names_codes": "354 codes 1-800 not on the sheet (counted 9 Oct 2026 from reading_R1953_img_tokens.tsv), 18 other U: blank cells in 801-1796, the crossed-out 1023, doubtful digits",
+        "other": "15 M"
       },
       "depth_check": "period key sheet R4369 (152 H) + control-backed attribution (304 S); AUDIT 1: 'No continuous sentence of the letter can be given'; DEPTH-MH 8 Oct 2026 re-check: D1 held -- cipher clause fails (run 13 vs AD 3175), item control (i) fails (48 vs 200-shuffle p95 67); 863 province and 1257 nouvelle 2/2 windows above p95 but not licensed while (i) fails, (i) is weak for a word-valued syllabary (AUDIT.md)",
-      "depth_note": "H 152 + S 304 of 846",
+      "depth_note": "H 154 + S 306 of 847 (image corrections adopted 9 Oct 2026, UNA-HELLEN; was H 152 + S 304 of 846); depth level D1 not re-ruled, VERIFIER WANTED for a rule-7 fresh re-derivation",
       "depth_by": "session_01LMs2EyN5RhSA1321cqQrnZ",
       "depth_date": "8 Oct 2026",
       "decode_status": "Non-decrypted"

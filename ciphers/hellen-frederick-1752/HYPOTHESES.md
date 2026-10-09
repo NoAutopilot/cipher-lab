@@ -148,3 +148,9 @@ nulls ("zero") dropped from gated keys. Pass = uni value-shuffle p and bi order-
 | family | statistic | control R4369 on R1953 (power, gate >= 0.80) | wrong key (gate <= 0.05) | target S / null median / p99 | P(null >= S) | verdict |
 |---|---|---|---|---|---|---|
 | period sheet R4386, words-level frequency fit (fr18) | token-weighted mean log10 freq | 1.000 PASS | 0.005 PASS | -4.788 / -4.678 / -4.226 | 0.736 | FAIL: R4386 retired for the 1763 1201-2000 band |
+
+## UNA-HELLEN (9 Oct 2026): image corrections adopted into the counted R4369 reading (no new hypothesis, no new gate)
+Key values unchanged; what changes is which code a token carries on the image (R7A-HEL53, R8-HEL). Token readings that change value:
+pos 2 820 -> 828 H "soin" -> H "suis"; pos 133 990? -> 998 M "le" -> H "d"; pos 65 952 -> 752 H "re" -> U; pos 89 1050 -> 1058 S "mi" -> S "di";
+pos 136 806 -> 886 H "avance" -> H "prince de"; pos 386 1426903 -> 1426 903 U -> S "et" + H "qu'"; pos 549 898 -> 838 H "quel" -> H "que";
+pos 682 128?3 -> 1283 U -> S "obten"; pos 829 8?09 -> 809 U -> H "son". Counts: H 152 / S 304 / M 16 / U 374 of 846 -> H 154 / S 306 / M 15 / U 372 of 847.
