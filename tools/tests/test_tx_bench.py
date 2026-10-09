@@ -79,5 +79,34 @@ def test_repo_bench_parses():
         assert item['split'] in ('dev', 'eval')
 
 
+
+
+def test_exclude_flagged():
+    with tempfile.TemporaryDirectory() as d:
+        # pos 3 flagged (excluded under the switch), pos 4 corrected (stays scored), pos 6 excluded already
+        _w(d, 't.truth.tsv', '# x\nline\tpos\tref_sign\ttruth\tplain\tstatus\tflag\n'
+           'L1\t1\tA\tA\ta\tscored\t\nL1\t2\tB\tB\tb\tscored\t\nL1\t3\tD\tD\td\tscored\talignment-doubtful\n'
+           'L1\t4\tE\tE|Q\te\tscored\tcorrected:key-doubtful\nL1\t5\tF\tF\tf\tscored\t\nL1\t6\tX\t\t\texcluded:off-sheet\t\n')
+        bench = _w(d, 'B.tsv', 'item\ttruth\tsplit\nit1\tt.truth.tsv\teval\n')
+        # wrong at 3 (flagged) and 5 (not flagged); Q at 4 is right after correction
+        o = _w(d, 'o.tsv', 'line\tpos\tsign\n' + ''.join('L1\t%d\t%s\n' % (i + 1, s) for i, s in enumerate('ABZQZX')))
+        rc, out = _run([o, '--bench', bench, '--json'])
+        r = json.loads(out)['items'][0]
+        assert (r['errors'], r['scored']) == (2, 5) and 'flagged_excluded' not in r, r
+        rc, out = _run([o, '--bench', bench, '--json', '--exclude-flagged'])
+        r = json.loads(out)['items'][0]
+        f = r['flagged_excluded']
+        assert (r['errors'], r['scored']) == (2, 5), r  # as measured unchanged by the switch
+        assert (f['errors'], f['scored'], f['flagged']) == (1, 4, 1), f
+        rc, out = _run([o, '--bench', bench, '--exclude-flagged'])
+        assert 'as measured 0.400 (2/5) | flagged excluded 0.250 (1/4)' in out, out
+        # a truth file with no flag column: both figures equal
+        _w(d, 't.truth.tsv', '# x\nline\tpos\tref_sign\ttruth\tplain\tstatus\nL1\t1\tA\tA\ta\tscored\n')
+        o = _w(d, 'o3.tsv', 'line\tpos\tsign\nL1\t1\tA\n')
+        rc, out = _run([o, '--bench', bench, '--json', '--exclude-flagged'])
+        f = json.loads(out)['items'][0]['flagged_excluded']
+        assert (f['errors'], f['scored'], f['flagged']) == (0, 1, 0), f
+
+
 if __name__ == '__main__':
-    test_scoring(); test_label_map(); test_wilson(); test_repo_bench_parses(); print('ok')
+    test_scoring(); test_label_map(); test_wilson(); test_repo_bench_parses(); test_exclude_flagged(); print('ok')

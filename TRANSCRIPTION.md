@@ -15,7 +15,7 @@ The look-alike pass showed that agreement can rise while accuracy does not (LESS
 
 | # | Property | Target | Today (3 Oct 2026) |
 |---|---|---|---|
-| 1 | True per-sign error, measured against a known answer | <= 5% on symbol ciphers, <= 1% on digits | BENCHMARK-TX.tsv + `tools/tx_bench.py` (TX-BENCH, 3 Oct 2026). Held-out (eval) Birago no.87, 803 scored signs: single blind pass A 0.069 (0.053-0.088), pass B 0.100 (0.081-0.122), reconciled 0.053 (0.040-0.071), reconciled + NO87-LABELS relabels 0.045 (0.033-0.061); per leaf the reconciled read is 0.083 f.178r, 0.055 f.178v, 0.013 f.179r. Dev: f.36v gloss line 0.31-0.44 on 16 signs; Ceppo f.21v/f.87 single passes 0.04-0.13 on S spans. Value-level lower bounds (see Benchmark); TXB2 (3 Oct 2026), dev item dint-f128-print (fr.3621 f.128r, Dinteville 1592 hand, 85 scored / 98 excluded, truth = 1882 print through key_print agree==n>=2; reconciled read is the reference, not scored): blind Sonnet pass A 0.353 (0.260-0.459) raw / 0.247 (0.168-0.348) with --label-map; pass B 0.306 (0.218-0.410) raw / 0.188 (0.119-0.284) mapped -- a symbol hand far above the 5% target; the raw-vs-mapped gap is label inventory (D/al/zh split after the passes), not glyph error; fr3416 f.38, fr4715 f.38v, fr3993 ff.71-72 not built (one raw pass or no raw passes on disk); TX-VIEWS (4 Oct 2026, f.178r+f.179r of no.87, 164 signs, pre-registered pilot): three blind Sonnet view reads (pad 0.165, s125 0.159, warp 0.140) + A + B voted 5 ways = 0.085, identical to pass A; vs the current reconcile (passC 0.049) paired fixed 0 / broken 6, p = 0.031 -- FAIL, not adopted; 7 of the 6+8 errors are an f.178r L03 tail the fixed-band crop cuts off for every reader, and the views repeat 13-14 of A's 14 errors (phi with A 0.71-0.76), benchmark-tx/tx-views-2026-10-04.md |
+| 1 | True per-sign error, measured against a known answer | <= 5% on symbol ciphers, <= 1% on digits | BENCHMARK-TX.tsv + `tools/tx_bench.py` (TX-BENCH, 3 Oct 2026). Held-out (eval) Birago no.87, 803 scored signs: single blind pass A 0.069 (0.053-0.088), pass B 0.100 (0.081-0.122), reconciled 0.053 (0.040-0.071), reconciled + NO87-LABELS relabels 0.045 (0.033-0.061); per leaf the reconciled read is 0.083 f.178r, 0.055 f.178v, 0.013 f.179r. Dev: f.36v gloss line 0.31-0.44 on 16 signs; Ceppo f.21v/f.87 single passes 0.04-0.13 on S spans. Value-level lower bounds (see Benchmark); TXB2 (3 Oct 2026), dev item dint-f128-print (fr.3621 f.128r, Dinteville 1592 hand, 85 scored / 98 excluded, truth = 1882 print through key_print agree==n>=2; reconciled read is the reference, not scored): blind Sonnet pass A 0.353 (0.260-0.459) raw / 0.247 (0.168-0.348) with --label-map; pass B 0.306 (0.218-0.410) raw / 0.188 (0.119-0.284) mapped -- a symbol hand far above the 5% target; the raw-vs-mapped gap is label inventory (D/al/zh split after the passes), not glyph error; fr3416 f.38, fr4715 f.38v, fr3993 ff.71-72 not built (one raw pass or no raw passes on disk); TX-VIEWS (4 Oct 2026, f.178r+f.179r of no.87, 164 signs, pre-registered pilot): three blind Sonnet view reads (pad 0.165, s125 0.159, warp 0.140) + A + B voted 5 ways = 0.085, identical to pass A; vs the current reconcile (passC 0.049) paired fixed 0 / broken 6, p = 0.031 -- FAIL, not adopted; 7 of the 6+8 errors are an f.178r L03 tail the fixed-band crop cuts off for every reader, and the views repeat 13-14 of A's 14 errors (phi with A 0.71-0.76), benchmark-tx/tx-views-2026-10-04.md **Today (9 Oct 2026, TX-TRUTH-VERIFY): no.87 pass L as measured 0.042 (34/803, after 2 image-backed truth corrections), flagged excluded 0.029 (23/792); floor 18/803 as measured, 7/792 flagged excluded; table below the targets.** |
 | 2 | Every transcription reports its error with the method named | always: `err_true` (benchmark-calibrated) or `err_2reader`, never "agreement" alone | mixed |
 | 3 | Signs are image tiles in one atlas per key family, not strings typed per letter | every symbol cipher | Birago 1572 family atlas built (TX-ATLAS-B72, 3 Oct 2026: 18 pages, 4,209 tiles, ciphers/nevers-birago-fr3251-1572/atlas/); on no.87 held-out the atlas top-1 reads err_true 0.162 (tx_bench, 61/376) vs line reads 0.040 on the same lines -- an atlas of connected components does not yet replace line reads on this hand |
 | 4 | Each sign carries top-k candidates with confidences | k=3 | `glyph_atlas.py classify --topk 3` (TX-ATLAS-B72): per-letter k1-k3 with distance and vote share in ciphers/nevers-birago-fr3251-1572/atlas/topk/; truth outside the atlas top-3 on 0.261 of no.87 held-out signs |
@@ -23,6 +23,65 @@ The look-alike pass showed that agreement can rise while accuracy does not (LESS
 | 6 | A person's decision on one tile propagates to every tile of that cluster in every letter of the key family | always | built 3 Oct (TX-SORTER): one move offers "apply to all N in this cluster"; `sign_sorter_apply.py --atlas-labels` writes it to the family atlas labels.json; waits on TX-ATLAS-B72's atlas for a real (not provisional) cluster run |
 | 7 | The sorter asks the person only the tiles whose answer moves the reading most, about 10-20 per session | ranked by expected change in key rank / judge score | built 3 Oct (TX-SORTER): `--rank-lattice` scores each tile as reader weight on the runner-up x decode letters changed when forced (key_decode_lattice.py); Birago 1572 demo: 20 of 211 tiles ranked, on the family atlas (no.73, no.85, f.117: 458 tiles, 100 atlas clusters) the 20 ranked tiles reach 71 tiles through their clusters; 18 of the 20 are positions where the lattice decode overrode the top-1 label -- and TX-DECODE found the lam=1 decode raises err_true on no.87, so those overrides are questions for the person, not likely corrections |
 | 8 | Cost per 100 signs known and falling | reported per job | one figure on file: HARVEST-D2 (Ceppo f.21v + f.35 + f.87, 547 signs, two blind passes + reconcile + decode + controls, USD 35.90 on Fable) = about USD 6.6 per 100 signs, an upper bound since it includes decoding; no other transcription job ledgers its sign count (TX-BENCH, 3 Oct 2026); TXB2 (3 Oct 2026): A2-DIN (fr.3621 f.128r, 183 signs, two blind passes + reconcile + gloss alignment, USD 5.01 on Opus 5.5) = about USD 2.7 per 100 signs, job-level upper bound (per-pass cost not ledgered) |
+
+### No.87 truth verification (TX-TRUTH-VERIFY, 9 Oct 2026)
+
+A verifier session (not LANE TX-ENGINEER) decided TXE-T's 13 proposed truth-doubtful positions one by one from the clerk
+clear-sheet image (canvas 182, `harvest/f179r_sheet/dec_L??_s?.jpg`), the printed 1572 key and NEVBIR-87ALIGN: 11 FLAG (8
+alignment-doubtful: three "et" the clerk writes as one ampersand, "questo", "catholici", "hugonotti", "malta contentezza"; 3
+clerk-doubtful: "guase", "lamossi", "de rauelli"), 2 CORRECT (f178v L02.8: clerk g + printed T42 = g, T42 accepted for g
+there; f178v L11.17: the clerk wrote "eio", the shape of his "io" in L14, not "ero" -- truth r -> i), 0 KEEP. Verdicts and
+reasons: `benchmark-tx/birago1572-no87.flags.tsv`; flag column in the truth file; `tools/tx_bench.py --exclude-flagged`.
+As measured now includes the two corrections; the pre-verify column is BENCHMARK-TX as committed before this pass.
+Never quote the flagged-excluded figure alone.
+
+| output | pre-verify | as measured | flagged excluded (95%) | flagged |
+|---|---|---|---|---|
+| reconciled + NO87-LABELS (L) | 0.045 (36/803) | 0.042 (34/803) | 0.029 (23/792) 0.019-0.043 | 11 |
+| pass A | 0.069 (55/803) | 0.066 (53/803) | 0.053 (42/792) 0.040-0.071 | 11 |
+| pass B | 0.100 (80/803) | 0.097 (78/803) | 0.085 (67/792) 0.067-0.106 | 11 |
+| reconciled (C, committed) | 0.053 (43/803) | 0.051 (41/803) | 0.038 (30/792) 0.027-0.054 | 11 |
+| E (TX-SHEET) | 0.077 (62/803) | 0.075 (60/803) | 0.062 (49/792) 0.047-0.081 | 11 |
+| F (TX-FABLE) | 0.093 (75/803) | 0.091 (73/803) | 0.078 (62/792) 0.061-0.099 | 11 |
+| floor (wrong in all six of A B C L E F) | 20/803 | 18/803 | 7/792 | 11 |
+
+TXE instruments' committed outputs (dev_tune lines, 343 scored, 5 flagged; others as named):
+
+| output | as measured (95%) | flagged excluded (95%) | flagged |
+|---|---|---|---|
+| passD | 0.049 (8/164) 0.025-0.093 | 0.043 (7/163) 0.021-0.086 | 1 |
+| passG2_library_dev_tune | 0.067 (23/343) 0.045-0.099 | 0.053 (18/338) 0.034-0.083 | 5 |
+| passG2_library_dev_tune_r1 | 0.064 (22/343) 0.043-0.095 | 0.050 (17/338) 0.032-0.079 | 5 |
+| passG2_library_dev_tune_r2 | 0.070 (24/343) 0.048-0.102 | 0.056 (19/338) 0.036-0.086 | 5 |
+| passG_compare_dev_tune | 0.087 (30/343) 0.062-0.122 | 0.074 (25/338) 0.051-0.107 | 5 |
+| passG_compare_dev_tune_m1b_H_all | 0.079 (27/343) 0.055-0.112 | 0.065 (22/338) 0.043-0.097 | 5 |
+| passG_compare_dev_tune_m1b_H_top1 | 0.079 (27/343) 0.055-0.112 | 0.065 (22/338) 0.043-0.097 | 5 |
+| passG_compare_dev_tune_m1b_any_top1 | 0.082 (28/343) 0.057-0.116 | 0.068 (23/338) 0.046-0.100 | 5 |
+| passH2_geo | 0.077 (13/169) 0.045-0.127 | 0.049 (8/164) 0.025-0.093 | 5 |
+| passH_geo | 0.089 (15/169) 0.054-0.141 | 0.061 (10/164) 0.034-0.109 | 5 |
+| passJ_pair_dev_tune | 0.035 (12/343) 0.020-0.060 | 0.021 (7/338) 0.010-0.042 | 5 |
+| passK2_sr4_dev_tune | 0.061 (21/343) 0.040-0.092 | 0.047 (16/338) 0.029-0.075 | 5 |
+| passL_lattice_dev_tune_lam1 | 0.082 (28/343) 0.057-0.116 | 0.068 (23/338) 0.046-0.100 | 5 |
+| passL_lattice_dev_tune_lam4 | 0.050 (17/343) 0.031-0.078 | 0.035 (12/338) 0.020-0.061 | 5 |
+| passM_conf_dev_tune | 0.050 (17/343) 0.031-0.078 | 0.035 (12/338) 0.020-0.061 | 5 |
+| passM_conf_dev_tune_lam1 | 0.079 (27/343) 0.055-0.112 | 0.065 (22/338) 0.043-0.097 | 5 |
+| passM_confshuf_dev_tune | 0.050 (17/343) 0.031-0.078 | 0.035 (12/338) 0.020-0.061 | 5 |
+| passM_confshuf_dev_tune_lam1 | 0.079 (27/343) 0.055-0.112 | 0.065 (22/338) 0.043-0.097 | 5 |
+| passP_hints_dev_tune | 0.041 (14/343) 0.025-0.067 | 0.027 (9/338) 0.014-0.050 | 5 |
+| passR_stab_dev_tune | 0.044 (15/343) 0.027-0.071 | 0.030 (10/338) 0.016-0.054 | 5 |
+| passR_stabshuf1_dev_tune | 0.047 (16/343) 0.029-0.074 | 0.033 (11/338) 0.018-0.057 | 5 |
+| passR_stabshuf2_dev_tune | 0.044 (15/343) 0.027-0.071 | 0.030 (10/338) 0.016-0.054 | 5 |
+| passR_stabshuf3_dev_tune | 0.044 (15/343) 0.027-0.071 | 0.030 (10/338) 0.016-0.054 | 5 |
+| passR_stabshuf4_dev_tune | 0.044 (15/343) 0.027-0.071 | 0.030 (10/338) 0.016-0.054 | 5 |
+| passR_stabshuf5_dev_tune | 0.044 (15/343) 0.027-0.071 | 0.030 (10/338) 0.016-0.054 | 5 |
+| passS_adj_fable_dev_tune | 0.044 (15/343) 0.027-0.071 | 0.030 (10/338) 0.016-0.054 | 5 |
+| passS_adj_opus_dev_tune | 0.038 (13/343) 0.022-0.064 | 0.024 (8/338) 0.012-0.046 | 5 |
+| passT_ordered_dev | 0.130 (15/115) 0.081-0.204 | 0.123 (14/114) 0.075-0.196 | 1 |
+| passT_shuffled_dev | 0.104 (12/115) 0.061-0.174 | 0.097 (11/114) 0.055-0.165 | 1 |
+| passU_feature_dev_tune | 0.055 (19/343) 0.036-0.085 | 0.041 (14/338) 0.025-0.068 | 5 |
+| passV_s0_dev_tune | 0.064 (22/343) 0.043-0.095 | 0.050 (17/338) 0.032-0.079 | 5 |
+| passV_s1_dev_tune | 0.050 (17/343) 0.031-0.078 | 0.035 (12/338) 0.020-0.061 | 5 |
+| passV_shift_dev_tune | 0.050 (17/343) 0.031-0.078 | 0.035 (12/338) 0.020-0.061 | 5 |
 
 ## The pipeline (target state; each step names its tool)
 

@@ -59,6 +59,12 @@ def main():
                 if 'X_CE' in r.get('reason', ''):
                     xce.add(('%s_%s' % (r['folio'], r['line']), int(r['pos'])))
 
+    # TX-TRUTH-VERIFY (9 Oct 2026): verifier verdicts per position; FLAG -> flag column only, CORRECT -> truth changed
+    flags = {}
+    fp = os.path.join(OUT, 'birago1572-no87.flags.tsv')
+    if os.path.exists(fp):
+        for r in rd(fp):
+            flags[(r['line'], int(r['pos']))] = r
     rows, nsc, nex = [], 0, {}
     for (line, pos, sign), a in zip(committed, align):
         assert a['cipher_line'] == line.split('_')[0]
@@ -84,14 +90,25 @@ def main():
                 truth = '|'.join(ws)
             else:
                 st = 'excluded:multi-letter-chunk'
+        flag = ''
+        fr = flags.get((line, pos))
+        if fr and st == 'scored':
+            if fr['verdict'] == 'CORRECT':
+                if fr['correct_plain']:
+                    chunk = fr['correct_plain']
+                ts = set(by_val.get(chunk, set())) | set(filter(None, fr['add_signs'].split('|')))
+                truth = '|'.join(sorted(ts))
+                flag = 'corrected:' + fr['class']
+            elif fr['verdict'] == 'FLAG':
+                flag = fr['class']
         if st == 'scored':
             nsc += 1
         else:
             nex[st] = nex.get(st, 0) + 1
-        rows.append((line, pos, ref, truth, chunk, st))
+        rows.append((line, pos, ref, truth, chunk, st, flag))
     with open(os.path.join(OUT, 'birago1572-no87.truth.tsv'), 'w') as f:
         f.write('# Birago 1572 no.87 (BnF fr.3251 f.178r-179r) known answer: clerk clear sheet under the key; built by '
-                'benchmark-tx/build_birago87.py\nline\tpos\tref_sign\ttruth\tplain\tstatus\n')
+                'benchmark-tx/build_birago87.py; flag column from birago1572-no87.flags.tsv (TX-TRUTH-VERIFY)\nline\tpos\tref_sign\ttruth\tplain\tstatus\tflag\n')
         for r in rows:
             f.write('\t'.join(map(str, r)) + '\n')
 

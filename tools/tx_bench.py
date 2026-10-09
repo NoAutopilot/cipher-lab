@@ -31,6 +31,10 @@ sign test p on fixed vs broken (insertions are not position-level and are left o
 err_true). A change is adopted on the paired count, never on two overlapping Wilson intervals
 (research/TRANSCRIPTION-PRACTICE-2026-10-04.md, Top 5 preamble). position_errors() is the shared per-position scorer
 (tools/reconcile_passes.py --err-truth uses it for pairwise error correlation).
+--exclude-flagged (TX-TRUTH-VERIFY, 9 Oct 2026): a truth TSV may carry a `flag` column set by a verifier (a truth-doubtful
+position: alignment-, clerk- or key-doubtful; `corrected:<class>` means the truth was corrected and stays scored). With the
+switch each item prints both figures side by side, as measured first and flagged excluded second (flagged rows are counted
+as excluded, never dropped silently); without it the flag column is ignored. Never report the second figure alone.
 Exit 0 always on a clean score; exit 2 on bad input.
 """
 import argparse, csv, json, math, os, sys
@@ -141,6 +145,20 @@ def score_item(truth_rows, out_lines):
     return res
 
 
+def is_flagged(r):
+    f = (r.get('flag') or '').strip()
+    return bool(f) and not f.startswith('corrected')
+
+
+def drop_flagged(rows):
+    out = []
+    for r in rows:
+        if r['status'] == 'scored' and is_flagged(r):
+            r = dict(r); r['status'] = 'excluded:flagged'
+        out.append(r)
+    return out
+
+
 def position_errors(truth_rows, out_lines):
     """{(line, pos): True if wrong or deleted} over the scored truth positions of lines the output covers."""
     by_line = defaultdict(list)
@@ -194,6 +212,8 @@ def main(argv=None):
     ap.add_argument('--top', type=int, default=8)
     ap.add_argument('--json', action='store_true')
     ap.add_argument('--label-map', help='TSV from/to: rename labels in output, reference and truth before scoring')
+    ap.add_argument('--exclude-flagged', action='store_true',
+                    help='also score with verifier-flagged truth rows excluded; prints both figures side by side')
     ap.add_argument('--paired', metavar='BASE.tsv', help='paired fixed/broken count of each OUTPUT against BASE (sign test)')
     a = ap.parse_args(argv)
     if a.paired:
@@ -246,6 +266,11 @@ def main(argv=None):
                        'excluded': res['excluded'], 'lines_missing': len(res['lines_missing']),
                        'per_value': {v: c for v, c in sorted(res['per_value'].items(), key=lambda t: -t[1][0]) if c[0]},
                        'top_confusions': ['%s<-%s x%d' % (t, s, c) for (t, s), c in res['confusions'].most_common(a.top)]})
+        if a.exclude_flagged:
+            fres = score_item(drop_flagged(truth), out_lines)
+            fk, fn, fe, flo, fhi = summarise(fres)
+            report[-1]['flagged_excluded'] = {'err_true': round(fe, 4), 'wilson95': [round(flo, 4), round(fhi, 4)],
+                                              'errors': fk, 'scored': fn, 'flagged': n - fn}
     if not report:
         print('tx_bench: the output covers no benchmark line', file=sys.stderr); return 2
     split_rows = {}
@@ -260,6 +285,11 @@ def main(argv=None):
         print('%s [%s] err_true %.3f (%d/%d) 95%% %.3f-%.3f | wrong %d deleted %d inserted %d | excluded %d | lines missing %d'
               % (r['item'], r['split'], r['err_true'], r['errors'], r['scored'], r['wilson95'][0], r['wilson95'][1],
                  r['wrong'], r['deleted'], r['inserted'], r['excluded'], r['lines_missing']))
+        if 'flagged_excluded' in r:
+            f = r['flagged_excluded']
+            print('  as measured %.3f (%d/%d) | flagged excluded %.3f (%d/%d) 95%% %.3f-%.3f [%d flagged]'
+                  % (r['err_true'], r['errors'], r['scored'], f['err_true'], f['errors'], f['scored'],
+                     f['wilson95'][0], f['wilson95'][1], f['flagged']))
         if r['top_confusions']:
             print('  top confusions (truth value <- read):', ', '.join(r['top_confusions']))
     for s, r in sorted(split_rows.items()):
