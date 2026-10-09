@@ -5925,6 +5925,47 @@ Left (next lane): eckert-1864 No 2 entries pp.86-182 of no2-candidates.tsv (~37 
 by D12-E2/E3 rates; N2-AI/N2-AJ/N2-R N4 needs RG 92/393/107 or the OR Supplement (owner-side or LOCAL-QUEUE); eckert-1862 `ec18_align.py --rows`
 still stale, cause untested (~1); 9877 Hurlbut token stays M.
 
+## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261009-0209, session_01S9QsmhcdrX6TVitHucfaiQ, account 2), 9 October 2026 (closed 03:4x UTC: three waves worked, lane ~53.3 of 60)
+
+Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-09-ytbiz-family-0209-jobs.md. Started from the
+0009 handoff next list items 1-6. Gate 0a: SESSION-SWEEP-account-2 stale-claimed since 5 Oct, proceeded. Workers 15 in 3 waves (02:15-03:36
+UTC; all Opus; all ledgered): 49.40 by get_session; orchestrator 3.9; five_hour `allowed` throughout. Over cap >10%: SUR-0745 1.13x,
+LAG-MARKS 1.23x, CLIN-EYE 1.29x, SUR-SPLITPC 1.22x. Known-text share ~35% (MANT-0056/0063 gloss key checks, Brandt glossed leaves used as
+known answers, V-SUR0745/V-BRANDT audits) -- above the one-fifth guardrail; all of it tests or builds a key for unglossed siblings.
+
+Results:
+- hessen-daenemark-1672 Brandt pool (Dänemark 131): BRANDT-GATE held-out 0049 letter test 34/48 vs p99 12 PASS (holds on both blind gloss
+  passes, V-BRANDT); its 0020 agrees test is a re-score of BRANDT-TX's exploratory number, not independent. BRANDT-UP (0020 head 44 + 0021 top
+  8 groups) LCS gate passed only on the worker-settled gloss and FAILs on both blind gloss passes (V-BRANDT) -> its 23 C tokens are M. BRANDT-062:
+  only 0062 carries cipher (0050/0063/0064 are show-through), 62 groups, fully glossed, LCS 20 vs p99 14 on the worker gloss (not yet re-scored
+  blind). V-BRANDT: 15 C / 9 M values (46=d to M), depth D1, N-class not assigned. **values_gate.tsv NOT yet edited** (V-BRANDT left it frozen
+  because BRANDT-062 read it).
+- sachsstaatsarchiv-manteuffel-1712: 694/09 0056 (69/77 vs p99 20) and 0063 (24/36 vs p99 9) known-answer gates PASS; key.tsv unchanged, no
+  qualifying key additions. MANT-0056's PREREG was committed after scoring (room.py message + --push paths dropped the paths), disclosed.
+  MANT-EYE63 not run: MANT-0063's crops were never committed.
+- na-suriname-map-1781: 0745 left CLASS (dot dropped) PASS 0.898/0.883, holds on fresh seeds (V-SUR0745); SPLIT "no split" is a non-test at
+  this N (SUR-SPLITPC positive control detects a planted split only ~50-57%).
+- la-garde-1577: prior-work rows recorded (Gachard t.5 p.423 summarises the clear part only); marks-kept error 0.071 central / 0.125 upper;
+  syllabary control at 0.13 meets its gate but the target does not fall below p05 -> the syllabary negative stays conditional on error <= ~0.11.
+- wvo-11106-bergh-1572: BERGH-ALL1/ALL2 -- all 875 boxes double-read with the group instrument (A/B 0.822 each half; flagged boxes listed).
+- pro3055-clinton-1779: CLIN-EYE errata (underlines c5:18 and c6:18, c6:1 x23-20 M); gates not re-scored (design retired).
+
+**next** (for the next LANE FAMILY incarnation):
+1. hessen-daenemark-1672 Brandt: apply V-BRANDT's regrades to dk131_brandt/values_gate.tsv (46=d -> M) and to BRANDT-UP's tokens, then
+   re-score BRANDT-062's 0062 LCS gate on two BLIND gloss passes (the V-BRANDT method), regenerate --check outputs; ~2.5. Rule for every later
+   Brandt job: a gloss used as known answer is read blind (two passes), never settled by the worker before scoring. Then decide whether a
+   separate folder for the Brandt pool is warranted (pool now 0020/0021/0049/0062, ~420 groups, all glossed -> N0 text; value is a key test).
+2. sachsstaatsarchiv-manteuffel-1712: MANT-EYE63 redo with one sachsen GET of 694/09 0063, crops COMMITTED, eye check of code 84 and six slots
+   (~1.5); then the unglossed 694/09 frames 0103/0046/0233 under key.tsv with a matched control (~4-5 each).
+3. wvo-11106-bergh-1572: sorter rebuild from atlas/group_sign.tsv (all 875 boxes) for the owner's sorter, then the syllabary/multi-sign family
+   once the inventory is settled.
+4. la-garde-1577: revise v2 marks with LAG-MARKS's 7 sure settles and run lag_syl13 --check (~1); settle the 16 doubt cells at a higher
+   resolution if one exists; wordcode control at the measured error (~2).
+5. na-suriname-map-1781: SPLIT needs a larger pooled unit (power ~0.5 at 0745L) -- pool 0744R + 0745L + 0745 right before any further SPLIT run.
+6. Blocked/retired as in the 0009 handoff (pro3055 alignment design retired; only p.124 material reopens it; wvo-11008 needs a sharper image).
+Excluded this incarnation (other lanes): eckert-*, lodewijk-van-nassau-1573-74, baluze167, huntington-blathwayt, ceppo-nevers.
+Tooling flag: `tools/room.py "msg" --push <paths>` commits ROOM.md only (third report in two incarnations); commit other files with git directly.
+
 ## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261009-0009, session_01PeUeA4FVwJ7Jiq5Y34XqKk, account 2), 9 October 2026 (closed 01:4x UTC: three waves worked, lane ~52.4 of 60)
 
 Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-09-ytbiz-family-0009-jobs.md. Started from the
