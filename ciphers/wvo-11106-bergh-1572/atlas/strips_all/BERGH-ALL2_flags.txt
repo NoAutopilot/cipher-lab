@@ -1,0 +1,142 @@
+L11_01_003 L11_h1/3 B: 5?
+L11_01_005 L11_h1/5 A: i E (box also holds ink of line above)
+L11_01_005 L11_h1/5 B: i E?
+L11_01_010 L11_h1/10 A: OTHERLINE (A from line below)
+L11_01_012 L11_h1/12 A: q? (includes top ink from line above)
+L11_01_014 L11_h1/14 A: yx (includes g of line above)
+L11_01_015 L11_h1/15 A: d?
+L11_01_015 L11_h1/15 B: d?
+L11_01_024 L11_h2/9 B: g?
+L11_01_030 L11_h2/15 A: g e yx? (big box, includes ink of line above)
+L12_01_004 L12_h1/4 B: G?
+L12_01_005 L12_h1/5 A: 9?
+L12_01_007 L12_h1/7 A: q?
+L12_01_007 L12_h1/7 B: g?
+L12_01_013 L12_h1/13 A: FRAG?
+L12_01_013 L12_h1/13 B: q?
+L12_01_023 L12_h1/24 A: o2?
+L12_01_038 L12_h2/13 A: g?
+L12_01_042 L12_h2/17 B: g?
+L13_01_001 L13_h1/1 A: f? (tail of f only)
+L13_01_001 L13_h1/1 B: S?
+L13_01_017 L13_h1/17 A: 2 (includes c ink from line below)
+L13_01_018 L13_h1/18 A: q?
+L13_01_018 L13_h1/18 B: g?
+L13_01_022 L13_h1/22 B: dd yx?
+L13_01_023 L13_h1/23 A: yx (arch at top is other line)
+L13_01_023 L13_h1/23 B: dd yx?
+L13_01_030 L13_h2/7 A: 2 g?
+L13_01_031 L13_h2/8 B: g?
+L13_01_036 L13_h2/13 A: 3 g?
+L13_01_042 L13_h2/19 A: t?
+L13_01_042 L13_h2/19 B: t?
+L14_01_002 L14_h1/2 A: E?
+L14_01_003 L14_h1/3 A: E?
+L14_01_004 L14_h1/4 A: E?
+L14_01_005 L14_h1/5 A: y?
+L14_01_006 L14_h1/6 A: q?
+L14_01_007 L14_h1/7 A: q?
+L14_01_017 L14_h1/17 A: B (includes g of line above)
+L14_01_021 L14_h1/21 B: G?
+L14_01_022 L14_h2/1 A: o2?
+L14_01_022 L14_h2/1 B: o2?
+L14_01_024 L14_h2/3 A: dd?
+L14_01_025 L14_h2/4 A: dd?
+L14_01_026 L14_h2/5 A: yx (includes arch of dd)
+L14_01_029 L14_h2/8 A: s S?
+L14_01_029 L14_h2/8 B: s S?
+L14_01_039 L14_h2/18 A: FRAG?
+L15_01_003 L15_h1/3 A: OTHERLINE (B from line below)
+L15_01_006 L15_h1/6 A: sz? (tail of sz)
+L15_01_021 L15_h1/21 A: q (includes G of line above)
+L15_01_021 L15_h1/21 B: 9?
+L15_01_023 L15_h2/1 A: d?
+L15_01_037 L15_h2/15 A: G?
+L15_01_039 L15_h2/17 A: dd?
+L15_01_039 L15_h2/17 B: dd?
+L15_01_041 L15_h2/19 A: FRAG (page edge)
+L16_01_002 L16_h1/2 B: r?
+L16_01_006 L16_h1/6 A: q?
+L16_01_006 L16_h1/6 B: g?
+L16_01_008 L16_h1/8 A: q?
+L16_01_008 L16_h1/8 B: g?
+L16_01_011 L16_h1/11 B: o2?
+L16_01_019 L16_h1/19 A: q g?
+L16_01_019 L16_h1/19 B: 9 g?
+L16_01_029 L16_h2/9 A: dd (includes ink from line below)
+L16_01_031 L16_h2/11 B: dd? u g
+L17_01_002 L17_h1/2 A: 9?
+L17_01_002 L17_h1/2 B: g?
+L17_01_003 L17_h1/3 A: p?
+L17_01_005 L17_h1/5 A: 9? (includes ink of line below)
+L17_01_007 L17_h1/7 A: m?
+L17_01_012 L17_h1/12 B: dd s (upper stroke other line)
+L17_01_013 L17_h1/13 A: m?
+L17_01_014 L17_h1/14 A: m?
+L17_01_014 L17_h1/14 B: u?
+L17_01_016 L17_h2/1 B: yx?
+L17_01_017 L17_h2/2 A: m?
+L17_01_018 L17_h2/3 A: m?
+L17_01_019 L17_h2/4 A: m?
+L17_01_025 L17_h2/10 A: r?
+L17_01_031 L17_h2/16 A: 3 g (top ink is line above)
+L18_01_001 L18_h1/1 A: yx?
+L18_01_010 L18_h1/10 B: r?
+L18_01_022 L18_h2/12 A: 9?
+L18_01_027 L18_h2/17 A: dd (also tail of g from line above)
+L19_01_001 L19_h1/1 A: FRAG (flourish stroke)
+L19_01_007 L19_h1/7 A: 9?
+L19_01_007 L19_h1/7 B: 9?
+L19_01_011 L19_h1/11 A: p G?
+L19_01_011 L19_h1/11 B: p g?
+L19_01_012 L19_h1/12 A: m (box 12 includes line-above ink)
+L19_01_012 L19_h1/12 B: m (upper y other line)
+L19_01_014 L19_h1/13 A: m (box 12 includes line-above ink)
+L19_01_019 L19_h2/2 A: u c?
+L19_01_023 L19_h2/6 A: s 9? (includes g tail from line above)
+L19_01_023 L19_h2/6 B: s g (upper ink other line)
+L19_01_024 L19_h2/7 A: o (includes S flourish from line below)
+L19_01_029 L19_h2/12 A: q? n? (includes y from line above)
+L19_01_029 L19_h2/12 B: g n?
+L19_01_030 L19_h2/13 A: u?
+L19_01_030 L19_h2/13 B: n?
+L19_01_031 L19_h2/14 A: u?
+L19_01_031 L19_h2/14 B: n?
+L19_01_034 L19_h2/17 A: n?
+L19_01_035 L19_h2/18 A: n?
+L20_01_012 L20_h1/12 A: o? (includes S from line below)
+L20_01_012 L20_h1/12 B: o (S below is other line)
+L20_01_017 L20_h1/17 A: 9?
+L20_01_022 L20_h2/1 A: 9? (C below is line below)
+L20_01_022 L20_h2/1 B: g? (edge)
+L20_01_023 L20_h2/2 A: 9?
+L20_01_024 L20_h2/3 B: n?
+L20_01_029 L20_h2/8 A: 9? (S above is other line)
+L20_01_029 L20_h2/8 B: g (upper S other line)
+L20_01_031 L20_h2/10 B: S s?
+L20_01_038 L20_h2/17 A: g?
+L21_01_001 L21_h1/1 B: A u?
+L21_01_003 L21_h1/3 A: y?
+L21_01_008 L21_h1/8 A: 9?
+L21_01_008 L21_h1/8 B: g?
+L21_01_016 L21_h1/16 A: d 9?
+L21_01_017 L21_h1/17 A: OTHERLINE?
+L21_01_018 L21_h2/1 A: E (includes line-above ink)
+L21_01_022 L21_h2/5 A: dd yx (includes line-above ink)
+L21_01_022 L21_h2/5 B: dd yx (upper ink other line)
+L21_01_031 L21_h2/14 B: yx?
+L21_01_033 L21_h2/16 A: o s (includes S from line above)
+L21_01_033 L21_h2/16 B: o s (upper S other line)
+L22_01_015 L22_h1/15 B: dd? (partial)
+L22_01_016 L22_h1/16 B: yx?
+L22_01_017 L22_h1/17 A: NEW1 (digit 1 with overbar, as in 19)
+L22_01_017 L22_h1/17 B: NEW1 (digit 1 of date)
+L22_01_020 L22_h1/20 B: e?
+L22_01_021 L22_h1/21 B: p?
+L22_01_022 L22_h2/1 A: m? (plain-hand letters of (Sept)embris)
+L22_01_023 L22_h2/2 A: m? (plain-hand letters of (Sept)embris)
+L22_01_024 L22_h2/3 A: m? (plain-hand letters of (Sept)embris)
+L22_01_025 L22_h2/4 A: m? (plain-hand letters of (Sept)embris)
+L22_01_028 L22_h2/7 A: i?
+L22_01_029 L22_h2/9 B: yx?
+L22_01_033 L22_h2/12 B: yx?

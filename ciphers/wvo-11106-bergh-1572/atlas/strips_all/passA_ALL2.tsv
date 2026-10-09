@@ -1,0 +1,415 @@
+strip	boxes	labels	note
+L11_h1	1	OTHERLINE	
+L11_h1	2	p	
+L11_h1	3	s	
+L11_h1	4	m	
+L11_h1	5	i E	box also holds ink of line above
+L11_h1	6	OTHERLINE	
+L11_h1	7	r	
+L11_h1	8	4	
+L11_h1	9	dd 8	
+L11_h1	10	OTHERLINE	A from line below
+L11_h1	11	s	
+L11_h1	12	q?	includes top ink from line above
+L11_h1	13	G	
+L11_h1	14	yx	includes g of line above
+L11_h1	15	d?	
+L11_h2	1	OTHERLINE	
+L11_h2	2+3	b	
+L11_h2	4+5+6	m	
+L11_h2	7	OTHERLINE	
+L11_h2	8	2	
+L11_h2	9	FRAG	
+L11_h2	10	yx	
+L11_h2	11	B	
+L11_h2	12	u	
+L11_h2	13	e	
+L11_h2	14	o q	
+L11_h2	15	g e yx?	big box, includes ink of line above
+L11_h2	16	c	
+L11_h2	17	S	
+L11_h2	18	r	
+L11_h2	19	r	
+L11_h2	20	g	
+L11_h2	21	s	
+L11_h2	22	t	
+L12_h1	1	e	
+L12_h1	2	OTHERLINE	
+L12_h1	3	u	
+L12_h1	4	G	
+L12_h1	5	9?	
+L12_h1	6	FRAG	
+L12_h1	7	q?	
+L12_h1	8	b p	
+L12_h1	9	b	
+L12_h1	10	OTHERLINE	
+L12_h1	11	FRAG	
+L12_h1	12	h	
+L12_h1	13	FRAG?	
+L12_h1	14	A	
+L12_h1	15	yx	
+L12_h1	16	OTHERLINE	
+L12_h1	17	OTHERLINE	
+L12_h1	18+20	m	
+L12_h1	19	FRAG	
+L12_h1	21	g	
+L12_h1	22	G	
+L12_h1	23	OTHERLINE	
+L12_h1	24	o2?	
+L12_h1	25	s	
+L12_h2	1	n	
+L12_h2	2	b	
+L12_h2	3+4	m	
+L12_h2	5	s	
+L12_h2	6	B	
+L12_h2	7	e	
+L12_h2	8	u	
+L12_h2	9	s	
+L12_h2	10	t	
+L12_h2	11	OTHERLINE	
+L12_h2	12	OTHERLINE	
+L12_h2	13	g?	
+L12_h2	14	r	
+L12_h2	15	4	
+L12_h2	16	FRAG	
+L12_h2	17	OTHERLINE	
+L12_h2	18	OTHERLINE	
+L12_h2	19	r f	
+L12_h2	20	2	
+L12_h2	21	OTHERLINE	
+L12_h2	22	OTHERLINE	
+L12_h2	23	g	
+L12_h2	24	u	
+L13_h1	1	f?	tail of f only
+L13_h1	2	s	
+L13_h1	3	e	
+L13_h1	4	u	
+L13_h1	5	s	
+L13_h1	6	t	
+L13_h1	7	o2 s	
+L13_h1	8+9	n	
+L13_h1	10	OTHERLINE	
+L13_h1	11	B	
+L13_h1	12	OTHERLINE	
+L13_h1	13	b	
+L13_h1	14	h	
+L13_h1	15	b	
+L13_h1	16	m	
+L13_h1	17	2	includes c ink from line below
+L13_h1	18	q?	
+L13_h1	19	OTHERLINE	
+L13_h1	20	3	
+L13_h1	21	OTHERLINE	
+L13_h1	22	o	
+L13_h1	23	yx	arch at top is other line
+L13_h2	1	o2 s	
+L13_h2	2	E	
+L13_h2	3	s	
+L13_h2	4	FRAG	
+L13_h2	5	OTHERLINE	
+L13_h2	6	4	
+L13_h2	7	2 g?	
+L13_h2	8	G	
+L13_h2	9	OTHERLINE	
+L13_h2	10	u	
+L13_h2	11	s	
+L13_h2	12	FRAG	
+L13_h2	13	3 g?	
+L13_h2	14	s	
+L13_h2	15	q	
+L13_h2	16	m	
+L13_h2	17	OTHERLINE	
+L13_h2	18	s	
+L13_h2	19	t?	
+L14_h1	1	FRAG	
+L14_h1	2+3+4	E?	
+L14_h1	5	y?	
+L14_h1	6+7	q?	
+L14_h1	8	4	
+L14_h1	9	o2 s	
+L14_h1	10	dd	
+L14_h1	11	yx	
+L14_h1	12	h	
+L14_h1	13	z	
+L14_h1	14	b	
+L14_h1	15	r	
+L14_h1	16	d g	
+L14_h1	17	B	includes g of line above
+L14_h1	18	e	
+L14_h1	19	OTHERLINE	
+L14_h1	20	u	
+L14_h1	21	G	
+L14_h2	1	o2?	
+L14_h2	2	h	
+L14_h2	3+4	dd?	
+L14_h2	5	yx	includes arch of dd
+L14_h2	6	E	
+L14_h2	7	b	
+L14_h2	8	s S?	
+L14_h2	9	OTHERLINE	
+L14_h2	10	r	
+L14_h2	11	3	
+L14_h2	12	B	
+L14_h2	13+16	y	
+L14_h2	14	a	
+L14_h2	15	OTHERLINE	
+L14_h2	17	n	
+L14_h2	18	FRAG?	
+L14_h2	19	b	
+L14_h2	20	s	
+L14_h2	21	t	
+L15_h1	1	OTHERLINE	
+L15_h1	2	s	
+L15_h1	3	OTHERLINE	B from line below
+L15_h1	4	t	
+L15_h1	5	e	
+L15_h1	6	sz?	tail of sz
+L15_h1	7	4	
+L15_h1	8	OTHERLINE	
+L15_h1	9	2	
+L15_h1	10	m	
+L15_h1	11	3	
+L15_h1	12	4	
+L15_h1	13	3	
+L15_h1	14	E	
+L15_h1	15	u	
+L15_h1	16	OTHERLINE	
+L15_h1	17	s	
+L15_h1	18	t	
+L15_h1	19	FRAG	
+L15_h1	20	g	
+L15_h1	21	q	includes G of line above
+L15_h1	22	s	
+L15_h2	1	d?	
+L15_h2	2	OTHERLINE	
+L15_h2	3	s	
+L15_h2	4	n	
+L15_h2	5	B	
+L15_h2	6	y	
+L15_h2	7	s t	
+L15_h2	8	OTHERLINE	
+L15_h2	9	3	
+L15_h2	10	OTHERLINE	
+L15_h2	11+13	m	
+L15_h2	12	FRAG	
+L15_h2	14	OTHERLINE	
+L15_h2	15	G?	
+L15_h2	16	d s	
+L15_h2	17	dd?	
+L15_h2	18	yx	
+L15_h2	19	FRAG	page edge
+L16_h1	1	B	
+L16_h1	2	r	
+L16_h1	3	3	
+L16_h1	4+5+7	m	
+L16_h1	6+8	q?	
+L16_h1	9	5	
+L16_h1	10	2	
+L16_h1	11	o2	
+L16_h1	12	s	
+L16_h1	13	OTHERLINE	
+L16_h1	14	s	
+L16_h1	15	FRAG	
+L16_h1	16	OTHERLINE	
+L16_h1	17	FRAG	
+L16_h1	18	q	
+L16_h1	19	q g?	
+L16_h1	20	B	
+L16_h2	1	s	
+L16_h2	2	q	
+L16_h2	3	u	
+L16_h2	4	E	
+L16_h2	5	h	
+L16_h2	6	b	
+L16_h2	7	m	
+L16_h2	8	OTHERLINE	
+L16_h2	9	dd	includes ink from line below
+L16_h2	10	4	
+L16_h2	11	dd u G	
+L17_h1	1	s	
+L17_h1	2	9?	
+L17_h1	3	p?	
+L17_h1	4	s	
+L17_h1	5	9?	includes ink of line below
+L17_h1	6	o2	
+L17_h1	7	m?	
+L17_h1	8	s	
+L17_h1	9	3	
+L17_h1	10	s	
+L17_h1	11	r	
+L17_h1	12	S s	
+L17_h1	13+14	m?	
+L17_h1	15	s	
+L17_h2	1	k	
+L17_h2	2+3+4	m?	
+L17_h2	5+6	g	
+L17_h2	7	n	
+L17_h2	8	s	
+L17_h2	9	B	
+L17_h2	10	r?	
+L17_h2	11	u	
+L17_h2	12	OTHERLINE	
+L17_h2	13	b	
+L17_h2	14+15	g	
+L17_h2	16	3 g	top ink is line above
+L17_h2	17	2	
+L18_h1	1	yx?	
+L18_h1	2	s	
+L18_h1	3	B	
+L18_h1	4	8	
+L18_h1	5	s	
+L18_h1	6+7	n	
+L18_h1	8	n	
+L18_h1	9	s	
+L18_h1	10	r g	
+L18_h2	1	B	
+L18_h2	2	f	
+L18_h2	3	s	
+L18_h2	4	n	
+L18_h2	5	yx	
+L18_h2	6	OTHERLINE	
+L18_h2	7	k g	
+L18_h2	8	r	
+L18_h2	9	3	
+L18_h2	10	B	
+L18_h2	11	k	
+L18_h2	12	9?	
+L18_h2	13	m	
+L18_h2	14	yx	
+L18_h2	15	OTHERLINE	
+L18_h2	16	OTHERLINE	
+L18_h2	17	dd	also tail of g from line above
+L18_h2	18	OTHERLINE	
+L19_h1	1	FRAG	flourish stroke
+L19_h1	2	OTHERLINE	
+L19_h1	3	4	
+L19_h1	4	2	
+L19_h1	5	OTHERLINE	
+L19_h1	6	2	
+L19_h1	7	9?	
+L19_h1	8	u	
+L19_h1	9	OTHERLINE	
+L19_h1	10	s	
+L19_h1	11	p G?	
+L19_h1	12+13	m	box 12 includes line-above ink
+L19_h1	14	OTHERLINE	
+L19_h1	15	4	
+L19_h1	16	B	
+L19_h1	17	h g	
+L19_h2	1	dd	
+L19_h2	2	u c?	
+L19_h2	3	s	
+L19_h2	4	t	
+L19_h2	5	X	
+L19_h2	6	s 9?	includes g tail from line above
+L19_h2	7	o	includes S flourish from line below
+L19_h2	8	r	
+L19_h2	9	u	
+L19_h2	10	B	
+L19_h2	11	d s	
+L19_h2	12	q? n?	includes y from line above
+L19_h2	13+14	u?	
+L19_h2	15	b	
+L19_h2	16	h g	
+L19_h2	17+18	n?	
+L20_h1	1	FRAG	
+L20_h1	2	OTHERLINE	
+L20_h1	3	9 9	
+L20_h1	4	FRAG	
+L20_h1	5	2	
+L20_h1	6	4	
+L20_h1	7	B	
+L20_h1	8	OTHERLINE	
+L20_h1	9	OTHERLINE	
+L20_h1	10	OTHERLINE	
+L20_h1	11	OTHERLINE	
+L20_h1	12	o?	includes S from line below
+L20_h1	13	u	
+L20_h1	14	dd yx	
+L20_h1	15	o	
+L20_h1	16	FRAG	
+L20_h1	17	9?	
+L20_h1	18	OTHERLINE	
+L20_h1	19	FRAG	
+L20_h1	20	OTHERLINE	
+L20_h1	21	s	
+L20_h2	1	9?	C below is line below
+L20_h2	2	9?	
+L20_h2	3	n	
+L20_h2	4	s t	
+L20_h2	5	yx	
+L20_h2	6	OTHERLINE	
+L20_h2	7	2	
+L20_h2	8	9?	S above is other line
+L20_h2	9	4	
+L20_h2	10	S s	
+L20_h2	11	2	
+L20_h2	12	r	
+L20_h2	13	g	
+L20_h2	14	2	
+L20_h2	15	b	
+L20_h2	16	B	
+L20_h2	17	g?	
+L20_h2	18	OTHERLINE	
+L21_h1	1	A u	
+L21_h1	2	OTHERLINE	
+L21_h1	3	y?	
+L21_h1	4	s	
+L21_h1	5	t	
+L21_h1	6	8	
+L21_h1	7	s	
+L21_h1	8	9?	
+L21_h1	9	dd 4	
+L21_h1	10	OTHERLINE	
+L21_h1	11	OTHERLINE	
+L21_h1	12	3	
+L21_h1	13	4	
+L21_h1	14	o2	
+L21_h1	15	s	
+L21_h1	16	d 9?	
+L21_h1	17	OTHERLINE?	
+L21_h2	1	E	includes line-above ink
+L21_h2	2	FRAG	
+L21_h2	3	OTHERLINE	
+L21_h2	4	r	
+L21_h2	5	dd yx	includes line-above ink
+L21_h2	6	7	
+L21_h2	7	OTHERLINE	
+L21_h2	8	9	
+L21_h2	9	k	
+L21_h2	10+11	s g	
+L21_h2	12	OTHERLINE	
+L21_h2	13	B	
+L21_h2	14	yx	
+L21_h2	15	A	
+L21_h2	16	o s	includes S from line above
+L21_h2	17	t	
+L22_h1	1	s t	
+L22_h1	2	u	
+L22_h1	3	FRAG	
+L22_h1	4	y	
+L22_h1	5	FRAG	
+L22_h1	6	sz	
+L22_h1	7	B	
+L22_h1	8	s	
+L22_h1	9	OTHERLINE	
+L22_h1	10	t	
+L22_h1	11	u	
+L22_h1	12	FRAG	
+L22_h1	13	y sz	
+L22_h1	14	OTHERLINE	
+L22_h1	15+16	dd yx	
+L22_h1	17	NEW1	digit 1 with overbar, as in 19
+L22_h1	18	9	
+L22_h1	19	S	
+L22_h1	20	r	
+L22_h1	21	p	
+L22_h2	1+2+3+4	m?	plain-hand letters of (Sept)embris
+L22_h2	5	b	
+L22_h2	6	r	
+L22_h2	7	i?	
+L22_h2	8	s	
+L22_h2	9	OTHERLINE	
+L22_h2	10	OTHERLINE	
+L22_h2	11	OTHERLINE	
+L22_h2	12	OTHERLINE	
