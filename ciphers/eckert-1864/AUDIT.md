@@ -10576,3 +10576,121 @@ agrees with FV-FM9a.** 2400 + 86 = 2,486 head, 12 x 100 = 1,200 head.
 ## FIX-FM10 propagation note (9 Oct 2026, account 1; rule 10)
 
 The reading corrections of "AUDIT (FV-FM9a)" s.5 (E291, E292, E299), "(FV-FM9b)" s.5 (E300-E303), "(FV-FM9c)" s.5 (E304-E306) and "(FV-FM9d)" s.5 (E307-E309) are now in ciphertext.txt as note lines/headers and in reading.md (decode.py output), described in NOTES.md "## FIX-FM10". Classes and depths are unchanged (verifiers' calls). Key rows Tulip = Period and Whiskey = Troops were added at grade S (NOTES "## KEY-TW"); items whose completeness line named "tulip M" or "whiskey M/H" now read S in status.json, and SO prompts E262, E289, E307 carry the corrected words. E300's "3.50" is a time read by hand (left as written, uncounted).
+
+## AUDIT (FV-FM9e)
+
+Verifier FV-FM9e (account 1, for LANE LEDGER), 9 Oct 2026, 15:01-15:1x UTC by `date -u`; a separate session from the reader FM-R7a (account 1),
+not protecting its conclusions. Scope: **E310, E311, E312, E313** (NOTES "## FM-R7a"); ciphertext.txt, Cipher No. 1, Fort Monroe ledger mssEC 25 =
+Huntington object 5952. Nothing decoded beyond key look-ups in key.md. Key source for all four: `period`. Depth under
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Intake gate re-run 15:0x
+UTC: "eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines".
+Scripts: `fortmonroe/fv_fm9e_hdl.py` (+ `.out`: CONTENTdm full text across all pointers, 13 queries; four page images at 2400 px to scratch),
+`fortmonroe/fv_fm9e_print.py` (+ `.out`: letters-only phrase grep and name KWIC over the 164 cached print-check volumes plus Plum, *The Military
+Telegraph* vols 1-2 and OR I/40 pt 2 (`warofrebellion402unit`) fetched to scratch), `fortmonroe/fv_fm9e_beapi.py` (+ `.out`: IA be-api full text,
+7 queries, 2 answered 502 and were not retried; positive control answered).
+
+### 1. Duplicates, prior work, image
+- **Duplicate diff:** pointers 5644, 5581, 5746, 5660 against every `###` header in ciphertext*.txt and status.json: each occurs only in its own
+  header. **No duplicate.** Same-day siblings already filed, not copies: E164 (5664, O'Brien to Sheldon 10 May, "Cant translate your sifer"),
+  E216 (5743) and E306 (5744) of 13 June (E306 is the message E312 answers, below).
+- **Prior work:** `tools/prior_work.py` has no first-audit step type and was not run per item; by hand (civil-war adapter): own work (pointers
+  grepped in ciphertext*, NOTES, AUDIT, status.json: only FM-R7a's own filing); no AUDIT.md/status.json class on any of the four before this
+  section; Tomokiyo and cached solver files have no Eckert ledger items; aaymeloglu not cloned (UNCHECKED-NET, as FV-FM9a/9d). Sent-book copies on
+  disk (`entries-mssEC19.tsv`, `ms18/entries-ms18.tsv`): "punctuat", "Jamestown" 0.
+- **Image eye check this session, every graded line** (autocontrasted crops of the 2400 px pages, scratch only; `iiif_lines.py` finds no lines
+  on the ruled grid, as FM-R6c/FM-R7a found): 5644 entry 2 (header + 6 grid rows), 5581 entry 2 (header + 6 rows), 5746 entry 2 (header + 4 rows),
+  5660 entry 3 (header + 6 rows). **The transcription matches the image on every code word of the four entries.** One plain-word note: in E312
+  line 2 the word transcribed "live" can be read "line" (the dot is doubtful); either way it is plain and means line.
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; under the hdl token 15:03-15:0x UTC; 13
+queries + 4 IIIF pages = 17 requests). FM-R7a's 19 queries were on whole ledger phrases and reported no clear copy; it listed hits by pointer
+only and did not read the other hits' text. Read this time:
+- **E310 -> pointer 10291 ("Page 149" of the Washington clear telegram book that holds 10239 and 10485), period clear copy:** "1115 PM JW Sampson
+  Balto - Ft Monroe May 1" 1864 For Gen Liu Wallace Correspondant of the N. Y. World at Baltimore & also from Ft Monroe is WW Shore whom I sent
+  away from this Dept ---- Please arrest him and send him to me ---- I have found in the Richmond papers that his articles are giving aid and
+  comfort to the Enemy sig BF Butler". **Same telegram**, clause for clause. Query "aid comfort Shore" 2 hits (5644 own, 10291); "W W Shore" 16
+  hits (others other matter, 5656 the sibling); "correspondent of the world" 2 hits: 5656 and **10299 (Page 157, same book), the clear copy of
+  the sibling 5656** (5 May, Lt. Jno. I. Davenport, Bureau of Information, to Gen. Wallace: Shore "is in Baltimore somewhere ... I want him
+  caught and arrested"). Not image-read: 10291 and 10299 rest on the holder's transcription.
+- **E311 -> pointer 10193 ("Page 51", same book), period clear copy:** "1044 PM Maj Eckert Ft. Monroe Mch 9 1864 Our outpost near Suffolk was
+  evacuated in a hurry today and retreated to Bowers Hill Hornans left his key behind and I sent him another period It is not thought the enemy
+  will attack the present position have not heard Hornans yet Sheldon". **Same telegram**, word for word ("Hornans" is the holder's reading of
+  the clear book; the ledger image reads Homans, an operator named with Collings in 12150). Queries "outpost Suffolk", "Bowers Hill evacuated",
+  "Bowers hill", "Homans": no other copy.
+- **E312 -> no clear copy located.** "kept open Jamestown" 1 hit (5746 own); "building party" 14 hits, none of 13 June; "white house kept open"
+  0. Context in the holder's own text: E306 (5744, the same day, Sheldon to Eckert: "Abercrombie wishes [White] House office kept open till
+  [Sheridan] and [Hunter] arrive there"), E216 (5743, the same day, Eckert's own clerk writing "while horse" for White House), 12476 (15 June,
+  Grant orders a line from opposite Jamestown Island to Butler's headquarters), 12527 (19 June, Perkins' building party left White House on the
+  18th for Bermuda Hundred).
+- **E313 -> no clear copy located.** "punctuation" 19 hits (18 are "Page 4" of key books, 5660 own); "arbitrary words" 7 hits (5660 own; 5701/8972
+  "you must use the arbitrary words", Eckert, late May; 5757; 4182, 9027, 10092 other matter); "untimed" 0.
+
+**Print** (`fv_fm9e_print.out`, 167 volumes): 20 phrases from the clear copies and the plain ledger text, 0 hits (OR I/33, I/36 pts 1-2, I/37 pt 2,
+I/40 pts 2-3, ORN I/9-10, Butler IV-V, Lew Wallace's *Autobiography*, Bates, Plum 1-2 among them). Name KWIC: Homans only as Acting Ensign C. A.
+Homans, USN (ORN I/9), another man; Butler IV index "O'Brien, Richard, orders from B. to, 166" (not these). IA be-api (`fv_fm9e_beapi.out`):
+`"W. W. Shore" World` 10 docs, two of which are context for E310: **H. B. Smith, *Between the Lines: Secret Service Stories Told Fifty Years
+After* (1911; IA `betweenlinessecr00smit`, djvu text read, pp.99-101)**, File XII, Smith's report of 8 May 1864 from Headquarters Middle
+Department, Baltimore: "Officer Horner arrested William W. Shore, who is, or has been the correspondent of the New York World and News. He says
+he left Fort Monroe on Feb. 14, and used to forward Rebel papers to New York, until he was ordered away by General Butler. Enclosed herewith is
+the telegram on which he was arrested" (the telegram itself is not printed); and the *Alexandria Gazette*, 24 Sept 1864, a later arrest of
+"W. W. Shore ... the New York World". `"Bowers Hill" Suffolk evacuated 1864` 10 docs (regimental histories, not this report); `"careful in
+punctuation" cipher` 5 (other matter); `"building party" Jamestown "White House" 1864` 10 (Plum, the June 1864 White House line, below);
+`"Shore" "aid and comfort" Butler Wallace` and `"arbitrary words should be used"` 502, not retried (search results of no power). Control
+`"Chief Operator Fortress Monroe"` in Plum vol. 2: 1 hit (answered).
+Context for E312: Plum vol. 2 pp.136-137: the White House office opened 3 June; "when the office at the White House was being removed later,
+owing to a new base being established, General Fitz Hugh Lee hurried operations greatly by shelling its locality until driven off by Sheridan's
+force"; OR I/40 pt 2 (Meade to Grant, 19 June 1864, 9 p.m.): the line "from Fort Powhatan to Swan Point, opposite Jamestown Island" built. Plum
+vol. 2 also lists "George W. Baldwin, War Department" and "George D. Sheldon, Chief Operator Fortress Monroe" (E310's operators).
+Not searched: Google Books (not probed), the New York World of May 1864, NARA RG 107, the Grant Papers vol. 11.
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+- **E310 (clear copy 10291):** **season = Maj. Gen. Lew Wallace** (the 17 Mar 1864 key supplement of E168, "Season [and] Submit for [Maj Gen]
+  Lewis Wallace"; the clear copy "For Gen Liu Wallace"): the reader's U is lifted, C. **"correspond aunt" = correspondent** (phonetic split,
+  plain, C). unity = stop, torch = of the, France = New York, world = World (plain, as FM-R7a), Baptism = Baltimore, appian = Fort Monroe,
+  quadroon = Department, oakum = arrest, pedlar = stop, Stephen garden = in the Richmond, Rome = enemy, Youth Knave = sig B. F. Butler: all C.
+  **The first Webster (line 4, "this quadroon Webster please") stands where the clear copy has "----": a stop, not [signed].** The decoder reads
+  it as [signed] and opens the `{tail:` there, so reading.md cuts the body at "Department"; a FIX job should mark it a stop. **C 15 of 15 code
+  groups** (with season and the stop Webster); no H left, no M. Read: "For [Maj. Gen. Lew Wallace]. The correspondent of the New York World at
+  Baltimore and also from Fort Monroe is W. W. Shore, whom I sent away from this Department. Please arrest him and send him to me. I have found
+  in the Richmond papers that his articles are giving aid and comfort to the enemy. [Signed] [Maj. Gen. B. F. Butler]." Header correction: the
+  telegram is **Butler's to Maj. Gen. Lew Wallace**, Baltimore, sent by Sheldon through G. W. Baldwin at Hd Qrs Baltimore, 1 May 1864 (passed
+  at Washington 11.15 PM per 10291); not Sheldon's own.
+- **E311 (clear copy 10193):** Turtle = outpost, **Georgia = Suffolk (C; the reader's M lifted)**, relayed = evacuated, wedge = today,
+  warwicked = retreated, unity = period, ridge = enemy, oats = attack, Venus = position: **C 9 of 9**. "Di" is the address blind word, as
+  elsewhere. No reading change; header: received Washington 10.44 PM.
+- **E312 (no clear copy):** **"while horse wilby" is phonetic plain, "White House will be"** (the same clerk's "while horse" in E216 the same
+  day, and "wilby" = will be in E190, E270, E309 audits); sum = some, live = line, paws = stop word (plain, no key row, as E307). The reader's U
+  is lifted. waxend = South, windpipe = River: **H 2 of 2**. Read: "Office at White House will be kept open for some days yet, and the line
+  can not be taken down till then. Hold the building party ready to go to Jamestown for work on [south] side of [river]. End. Thos. T.
+  Eckert." It answers E306 (Abercrombie wants the White House office kept open until Sheridan and Hunter arrive).
+- **E313 (no clear copy):** penfields = Ciphers (H; the same word in 5700, Page 156, Eckert to O'Brien, "you must use all the arbitraries in your penfields"), Unity,
+  Zebra = stops: **H 3 of 3**. No reading change. Header as filed is right.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E310 | **N1** (text known) | period | **D3** (C 15 of 15 code groups; external non-statistical: holder clear copy 10291; Smith 1911 pp.99-101, Shore arrested 8 May on "the telegram") | plaintext already published by the holder: Huntington transcription of the Washington clear telegram book, pointer 10291 |
+| E311 | **N1** (text known) | period | **D3** (C 9 of 9; external: holder clear copy 10193) | plaintext already published by the holder, pointer 10193 |
+| E312 | **N1** (text known) | period | **D1** (H 2 of 2; two code words only, the text is clear) | the holder's own transcription of pointer 5746 shows the whole text in clear but "south" and "river" (E74 precedent, AUDIT line "E74 ... N1 (lowered from N3)") |
+| E313 | **N1** (text known) | period | **D1** (H 3 of 3; one code word and two stops, the text is clear) | the holder's own transcription of pointer 5660 shows the text in clear but "ciphers" (E74 precedent) |
+
+- E312/E313 depth: under the depth bar windpipe = River and penfield = Cipher do read in two contexts (a code clause), which could admit D2; held
+  at D1 to keep the E74 ruling for clear-text entries signed or salted with two or three code words. A second audit may rule otherwise.
+- **Safe sentences.** E310: "A clear copy is in the Huntington's own transcription (pointer 10291): Butler to Lew Wallace, 1 May 1864, ordering
+  the arrest of W. W. Shore of the New York World; our reading of the cipher entry agrees with it clause for clause." E311: "A clear copy is in
+  the Huntington's own transcription (pointer 10193); our reading agrees with it word for word." E312: "Clear text with two Cipher No. 1 code
+  words (south, river), read at grade H; the Huntington's transcription already shows the rest." E313: "Clear text with one Cipher No. 1 code
+  word (ciphers), read at grade H; the Huntington's transcription already shows the rest."
+- **Unsafe:** any novelty at all for these four; "Sheldon to Baldwin" as the content of E310.
+- No status.json, SO or WORK-QUEUE rows: no entry is N3 or better (brief: N3+ only; no AUD2-LEDGER-26 queued).
+
+### 5. Fixes for the next FIX job (not applied here; reading.md is decode.py output)
+E310: header -> "1 May 1864 Ft Monroe, Maj. Gen. B. F. Butler (by Sheldon) to Maj. Gen. Lew Wallace via G. W. Baldwin, Hd Qrs Baltimore: arrest
+W. W. Shore ... (clear copy pointer 10291)"; mark the first Webster (line 4) a stop, not [signed], so the body is not cut at "Department"; note:
+season = Maj Gen Lew Wallace C (E168 supplement + 10291), correspond aunt = correspondent plain C, all code groups C from 10291. E311: note:
+code groups C from clear copy 10193 (Georgia = Suffolk M -> C). E312: note: "while horse wilby" = White House will be (phonetic plain), first
+clause U lifted; live = line; answers E306. E313: none. FM-R7a NOTES "Remaining gaps" E310 and E312 first clauses: closed by s.3.
+Lesson for readers: an all-pointer query must print each hit's text; FM-R7a's "W W Shore" query listed 16 pointers, one of them a reachable
+sibling clear copy (10299), but the clear copy 10291 surfaced only on a phrase from the second half ("aid comfort Shore").
+Requests: hdl.huntington.org 17 (13 CONTENTdm queries, 4 IIIF pages); archive.org 4 downloads; be-api 7 (5 answered, 2 x 502).
