@@ -1,0 +1,2 @@
+{"jobs": [{"ciphertext": "ciphertext.tsv", "key": "../key.tsv", "reading": "reading.txt", "tokens": "reading_tokens.tsv",
+  "style": "words", "uncertain_conf": ["low"]}]}

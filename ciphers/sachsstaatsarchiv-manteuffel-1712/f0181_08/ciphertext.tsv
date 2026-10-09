@@ -1,0 +1,55 @@
+# MANT-0181 (9 Oct 2026): HStA Dresden 10026 Loc. 694/08 files 0181 (film label 0182, right page, stamp 138, 'A Mr le B. de Manteuffel a Dresden le 6 juillet 1712', Flemming to Manteuffel) + 0182 (film label 0183, left page, continuation and end).
+# Two blind Sonnet passes (passA_0181.tsv crop order, passB_0181.tsv reversed) + worker reconciliation on native 2.5-3x zooms (one unit). No interlinear letters over any group (both passes + worker): gate (a) n/a.
+# Settled: r06.5 A 12 / B 11 (both low) -> 12 low (worker zoom: '28.12et', the 2 runs into 'et'); r07.5 A/B '0' low -> 6 low (worker zoom: same b-shaped 6 as r07.2's 16). Conf = the lower of the two passes elsewhere (all digits agree).
+line	pos	sign	conf	page	context	note
+694-08_0181_r01	1	12	high	R	irresolution. [struck word] | : nous avons assez bien conduit l'affaire	passes agree
+694-08_0181_r01	2	16	medium	R	irresolution. [struck word] | : nous avons assez bien conduit l'affaire	passes agree
+694-08_0181_r01	3	44	high	R	irresolution. [struck word] | : nous avons assez bien conduit l'affaire	passes agree
+694-08_0181_r02	1	90	medium	R	dont il faut parler avec le gr. | : mais on ne l'a pas renvoye	passes agree
+694-08_0181_r02	2	25	high	R	dont il faut parler avec le gr. | : mais on ne l'a pas renvoye	passes agree
+694-08_0181_r02	3	14	high	R	dont il faut parler avec le gr. | : mais on ne l'a pas renvoye	passes agree
+694-08_0181_r02	4	15	medium	R	dont il faut parler avec le gr. | : mais on ne l'a pas renvoye	passes agree
+694-08_0181_r03	1	15	high	R	on rejette | : entier et on veut seulement laisser	passes agree
+694-08_0181_r03	2	26	medium	R	on rejette | : entier et on veut seulement laisser	passes agree
+694-08_0181_r04	1	5	high	R	veut seulement laisser | (line end; continues as r05)	passes agree
+694-08_0181_r04	2	9	high	R	veut seulement laisser | (line end; continues as r05)	passes agree
+694-08_0181_r04	3	25	high	R	veut seulement laisser | (line end; continues as r05)	passes agree
+694-08_0181_r04	4	13	high	R	veut seulement laisser | (line end; continues as r05)	passes agree
+694-08_0181_r05	1	27	high	R	(r04 continued) | . on rejette aussi	passes agree
+694-08_0181_r05	2	35	medium	R	(r04 continued) | . on rejette aussi	passes agree
+694-08_0181_r05	3	7	medium	R	(r04 continued) | . on rejette aussi	passes agree
+694-08_0181_r05	4	9	high	R	(r04 continued) | . on rejette aussi	passes agree
+694-08_0181_r05	5	25	high	R	(r04 continued) | . on rejette aussi	passes agree
+694-08_0181_r05	6	13	high	R	(r04 continued) | . on rejette aussi	passes agree
+694-08_0181_r06	1	17	medium	R	on rejette aussi | et	passes agree
+694-08_0181_r06	2	35	medium	R	on rejette aussi | et	passes agree
+694-08_0181_r06	3	9	high	R	on rejette aussi | et	passes agree
+694-08_0181_r06	4	28	high	R	on rejette aussi | et	passes agree
+694-08_0181_r06	5	12	low	R	on rejette aussi | et	A 12 low / B 11 low; worker zoom 12
+694-08_0181_r07	1	15	high	R	et | . et de notre cote nous avons	passes agree
+694-08_0181_r07	2	16	medium	R	et | . et de notre cote nous avons	passes agree
+694-08_0181_r07	3	28	high	R	et | . et de notre cote nous avons	passes agree
+694-08_0181_r07	4	40	medium	R	et | . et de notre cote nous avons	passes agree
+694-08_0181_r07	5	6	low	R	et | . et de notre cote nous avons	A 0 low / B 0 low; worker zoom 6 (b-shaped)
+694-08_0181_r07	6	29	medium	R	et | . et de notre cote nous avons	passes agree
+694-08_0181_r08	1	13	high	L182	rejette aussi | : c'est donc a eux de nous proposer autre chose	passes agree
+694-08_0181_r08	2	25	high	L182	rejette aussi | : c'est donc a eux de nous proposer autre chose	passes agree
+694-08_0181_r08	3	14	high	L182	rejette aussi | : c'est donc a eux de nous proposer autre chose	passes agree
+694-08_0181_r08	4	29	medium	L182	rejette aussi | : c'est donc a eux de nous proposer autre chose	passes agree
+694-08_0181_r08	5	1	medium	L182	rejette aussi | : c'est donc a eux de nous proposer autre chose	passes agree
+694-08_0181_r09	1	25	high	L182	d'ajouter aux preuves qu'ils nous ont | autre fois	passes agree
+694-08_0181_r09	2	90	medium	L182	d'ajouter aux preuves qu'ils nous ont | autre fois	passes agree
+694-08_0181_r09	3	2	high	L182	d'ajouter aux preuves qu'ils nous ont | autre fois	passes agree
+694-08_0181_r09	4	17	high	L182	d'ajouter aux preuves qu'ils nous ont | autre fois	passes agree
+694-08_0181_r09	5	28	high	L182	d'ajouter aux preuves qu'ils nous ont | autre fois	passes agree
+694-08_0181_r09	6	10	low	L182	d'ajouter aux preuves qu'ils nous ont | autre fois	passes agree
+694-08_0181_r09	7	35	medium	L182	d'ajouter aux preuves qu'ils nous ont | autre fois	passes agree
+694-08_0181_r09	8	29	medium	L182	d'ajouter aux preuves qu'ils nous ont | autre fois	passes agree
+694-08_0181_r10	1	5	high	L182	et a cette | (line end; continues as r11)	passes agree
+694-08_0181_r10	2	9	high	L182	et a cette | (line end; continues as r11)	passes agree
+694-08_0181_r10	3	25	high	L182	et a cette | (line end; continues as r11)	passes agree
+694-08_0181_r10	4	27	medium	L182	et a cette | (line end; continues as r11)	passes agree
+694-08_0181_r10	5	35	medium	L182	et a cette | (line end; continues as r11)	passes agree
+694-08_0181_r10	6	7	low	L182	et a cette | (line end; continues as r11)	passes agree
+694-08_0181_r11	1	39	low	L182	(r10 continued) | . il ne faut pas tarder	passes agree
+694-08_0181_r11	2	66	medium	L182	(r10 continued) | . il ne faut pas tarder	passes agree

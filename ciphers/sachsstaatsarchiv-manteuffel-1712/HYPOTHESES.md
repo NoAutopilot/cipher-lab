@@ -340,3 +340,18 @@ PREREG-MANTCUC.md (4c5930db8, pushed before scoring); scorer mant0608/cuc/cuc_sc
 | 254 | -- | -- | not a separate code: 0136 R10/R13 passes read 259 = key Ilgen (M); the 254 settlement rests on y = 4; second witness for 259 under y = 9, open until the y-glyph census |
 | 199 | none with a value | 0502 F2-13 '1y1y' vs copy f.409v 99 | held, no value, M |
 | 42 | Krauske l; contexts 'plus contre' (0494 L07, f.410 L06), 'mais lu[i]' (0494 L17, f.410 M4) | 0314 R11 n slot in 'la couronne' (both gloss passes) | **conflict, open**: key l C stands, 0314 R11 M; not settled by majority |
+
+## MANT-0181 (9 Oct 2026, LANE FAMILY-A2l account 2): rule-4 slots from 694/08 0181+0182 (f0181_08/), Flemming to Manteuffel 6 July 1712, no key.tsv change
+Gate (b) VOID under PREREG-MANT0181 (the shuffled-target decode beat the key-permuted p95 on 13 of 100 orders), so every slot below is M by the key
+alone (worker's eye, not a gate). The decode is read under Krauske's table for Manteuffel's reports; this leaf is the OTHER direction (Flemming to
+Manteuffel) -- that the same table reads it is itself a hypothesis these slots support but do not test.
+- r04+r05 '5.9.25.13 | 27.35.7.9.25.13' = 'viam regiam' and r10+r11 '5.9.25.27.35.7 | 39.66' = 'via reg ia': the Latin via regia (royal highway),
+  twice ('on veut seulement laisser [viam regiam]'; 'aux preuves qu'ils nous ont [acceptees] autre fois et a cette [via regia]'). Two spellings of
+  the same phrase with the same codes = a two-context reading (rule 4a's D1/D2 criterion), still M without a gate. r11.1 39 is blotted (low).
+- r06 '17.35.9.28.12' = 'p e i t l' and r07 '15.16.28.40.6.29' = 'c o t b u s': Peitz and Cottbus, the Prussian enclave in Lower Lusatia; r06.5 12
+  is low (passes 12/11, the 2 runs into 'et'); 'Peitz' needs a z, not in the leaf's reading of 12 = l -- open (a misread digit, or a z-sign Krauske
+  did not list). 'on rejette aussi [Peitz] et [Cottbus]' (M/I).
+- r08 '13.25.14.29.1' = 'mansf': Mansfeld (most likely the county; M/I), 'rejette aussi [Mansf.]'.
+- r09 '25.90.2.17.28.10.35.29' = 'a c|ch e p t e e s' -> 'acceptees' ('aux preuves qu'ils nous ont [acceptees] autre fois'). 90 = c|ch (key M).
+- r02 'gr. 90.25.14.15' = 'gr. c a n c' -> 'le gr[and] canc[elier]' ('dont il faut parler avec le gr. canc.'): the grand chancellor (of Prussia?
+  Saxony?) unidentified. r03 '15.26' = 'c r' (a name abbreviation, unidentified). r01 '12.16.44' = 'l o|ou|ous l' unread (follows a struck word).

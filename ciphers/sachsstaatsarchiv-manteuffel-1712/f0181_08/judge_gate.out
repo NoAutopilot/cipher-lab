@@ -1,0 +1,17 @@
+power	at 51 letters: 12/12 = 1.00	TEST
+block_1	letters 1-51	real -1.575	permuted mean -2.040 p95 -1.689 p99 -1.531 max -1.361	permuted>=real 16/1000	VOID	lolcanccrviamregiampeitlcotbusmansfacepteesviaregia
+# block_1 shuffled-target (ii): mean -1.830 p95(95th of 100) -1.620 max -1.468; shuffled-target > (i) p95: 13/100 -> VOID (judge cannot decide); shuffled-target >= real 2/100
+leaf_0181	letters 51	blocks 1	VOID	lolcanccrviamregiampeitlcotbusmansfacepteesviaregia
+# whole leaf (reported, no power behind it if L > 62): real -1.575 permuted mean -2.038 p95 -1.704 p99 -1.552 permuted>=real 15/1000
+# per run (reported, not gates): run, letters, score, decoded letters
+694-08_0181_r01	3	nan	lol
+694-08_0181_r02	4	-1.428	canc
+694-08_0181_r03	2	nan	cr
+694-08_0181_r04	4	-1.329	viam
+694-08_0181_r05	6	-1.925	regiam
+694-08_0181_r06	5	-1.833	peitl
+694-08_0181_r07	6	-2.959	cotbus
+694-08_0181_r08	5	-1.533	mansf
+694-08_0181_r09	8	-0.861	aceptees
+694-08_0181_r10	6	-1.142	viareg
+694-08_0181_r11	2	nan	ia
