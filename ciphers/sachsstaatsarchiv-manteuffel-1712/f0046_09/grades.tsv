@@ -1,0 +1,11 @@
+# leaf 0046 gate (b): too-short (power 0.49 < 0.80; own score not above p95); no gloss on the leaf (gate (a) n/a)
+# tokens 8: H 0, C 0, S 0, M 8, I 0, U 0
+tokid	code	key_value	conf	grade	why
+694-09_0046_r01.1	103	le|la	high	M	leaf gate (b): too-short (power 0.49 < 0.80; own score not above p95)
+694-09_0046_r01.2	30	c	high	M	leaf gate (b): too-short (power 0.49 < 0.80; own score not above p95)
+694-09_0046_r01.3	120	d	high	M	leaf gate (b): too-short (power 0.49 < 0.80; own score not above p95)
+694-09_0046_r01.4	55	b|[a]	high	M	leaf gate (b): too-short (power 0.49 < 0.80; own score not above p95)
+694-09_0046_r01.5	1000	et	high	M	leaf gate (b): too-short (power 0.49 < 0.80; own score not above p95)
+694-09_0046_r01.6	55	b|[a]	high	M	leaf gate (b): too-short (power 0.49 < 0.80; own score not above p95)
+694-09_0046_r01.7	44	l	high	M	leaf gate (b): too-short (power 0.49 < 0.80; own score not above p95)
+694-09_0046_r02.1	11	k	high	M	leaf gate (b): too-short (power 0.49 < 0.80; own score not above p95)

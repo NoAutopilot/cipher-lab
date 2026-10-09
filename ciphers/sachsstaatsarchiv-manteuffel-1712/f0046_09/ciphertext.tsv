@@ -1,0 +1,10 @@
+# MANT-UNGL (9 Oct 2026): Loc. 694/09 file 0046 (letter end, left page). Two blind Sonnet passes (ungl09/passA_0046_0233.tsv, passB_0046_0233.tsv) agree on every token; r01 after 'que jamais.', r02 'a coup plante par 11'. The 'V.' on L06 is an abbreviation (both passes), not a code. No interlinear letters (both passes, worker look).
+line	pos	sign	conf
+694-09_0046_r01	1	103	high
+694-09_0046_r01	2	30	high
+694-09_0046_r01	3	120	high
+694-09_0046_r01	4	55	high
+694-09_0046_r01	5	1000	high
+694-09_0046_r01	6	55	high
+694-09_0046_r01	7	44	high
+694-09_0046_r02	1	11	high

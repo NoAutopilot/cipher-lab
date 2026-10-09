@@ -229,3 +229,14 @@ Rule-4 slots from both blind passes (M, not key.tsv changes): 20 glossed e (key 
 'Po[r]te') -- both readers also saw the numeral as 68 there, so the slot may be a transcription question first; 120 glossed with an
 unreadable curl (key d); 31 glossed n (key m) and 55 glossed h (key b|[a]) in r08 ('[c]omme [b]ien' expected; gloss 'o n m e h i e n');
 229 glossed 'e s' (a struck 2 + 29 = s). Earlier candidates 6 = r / 29 = i (r09) untouched by this job.
+
+## MANT-UNGL rule-4 slots (9 Oct 2026, 694/09 0103/0046/0233; M, not key.tsv changes)
+- 0103 r02 '51.28.35.28.59' reads s t e t t under key.tsv only with 59 (= t); both blind passes 59 (alt 39), MANT-0609Y's eye 57 (= s);
+  conf low. With r01 '110.17.33.13.31' = la p o m m, the pair reads as name stems 'la Pomm[erie]' / 'Stett[in]' (M, I for the
+  identification). Not scored by gate (b): the fr18 4-gram gate FAILed on 0103 (power 0.92 at N=21), and its positive control is prose,
+  not name stems -- a design mismatch logged, not a reason to re-run.
+- 0103 r04 '44.33.12.8' = l o l h repeats 0136 r01's start '44.16.12.8...' = l o l h (o v e l): same unread name stem on two leaves (M).
+- 0233 isolated codes 83 (key sch), 93 (key f|ff, x2), 59 (key t), 75 (not in key.tsv) and the run 4.10.11.2 (x e k e) do not read as
+  letter values in context ('couronne de Suede. 83 donc a donne', 'on promet a 93 le gouvernement perpetuel du duche de Sleswig, et a
+  4.10.11.2 20 m risdales', 'chez Gyque 59 a intercepte une lettre', 'de 93 a 75'): they behave as person/name codes; Krauske's table
+  gives them letter values only. Open-codes for this clerk hand (the hand of 0136's "chiffre ... celui du proces").

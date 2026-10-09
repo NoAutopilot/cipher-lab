@@ -1,0 +1,12 @@
+# leaf 0233 gate (b): too-short (power 0.49 < 0.80; own score not above p95); no gloss on the leaf (gate (a) n/a)
+# tokens 9: H 0, C 0, S 0, M 8, I 0, U 1
+tokid	code	key_value	conf	grade	why
+694-09_0233_r01.1	83	sch	high	M	leaf gate (b): too-short (power 0.49 < 0.80; own score not above p95)
+694-09_0233_r02.1	93	f|ff	high	M	leaf gate (b): too-short (power 0.49 < 0.80; own score not above p95)
+694-09_0233_r03.1	4	x	high	M	leaf gate (b): too-short (power 0.49 < 0.80; own score not above p95)
+694-09_0233_r03.2	10	e	high	M	leaf gate (b): too-short (power 0.49 < 0.80; own score not above p95)
+694-09_0233_r03.3	11	k	high	M	leaf gate (b): too-short (power 0.49 < 0.80; own score not above p95)
+694-09_0233_r03.4	2	e	high	M	leaf gate (b): too-short (power 0.49 < 0.80; own score not above p95)
+694-09_0233_r04.1	59	t	high	M	leaf gate (b): too-short (power 0.49 < 0.80; own score not above p95)
+694-09_0233_r05.1	93	f|ff	high	M	leaf gate (b): too-short (power 0.49 < 0.80; own score not above p95)
+694-09_0233_r06.1	75		high	U	not in key.tsv
