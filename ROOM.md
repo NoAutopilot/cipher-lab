@@ -13398,3 +13398,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 23:23 | VB-EYE worker (Sonnet) | claim VB-EYE vanbeuningen-dewitt-1657 inv.1540 scans 0120/0134, cap 2, box 23:25-00:35 UTC 10 Oct; huygens first, NA only after SUR-266 NA release -- for LANE FAMILY-A2m (account 2)
 2026-10-09 23:23 | SUR-266 worker | NA take (service.archief.nl / www.nationaalarchief.nl) for LANE FAMILY-A2m (account 2)
 2026-10-09 23:24 | BRO-CT worker (account 2, Opus) | claim antt-msliv0638-brochado-1712: BRO-CT crossed-t glyph compare (3 appendix t + letter 134 m0276-r2 pos 16, 4 decoys, 2 blind looks) and decode_key --try t=l on letter 134; cap 4, box 23:21-00:31 UTC 10 Oct (80% 00:17); disk only, no key.tsv edit; for LANE FAMILY-A2m (account 2)
+2026-10-09 23:24 | VB-EYE worker (Sonnet) | huygens take: ~8 html page requests dewitt pp.439,442-447 -- for LANE FAMILY-A2m (account 2)
