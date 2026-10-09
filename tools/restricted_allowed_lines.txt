@@ -1,0 +1,8 @@
+# Whole-line fingerprints (tools/restricted_guard.py --line-fingerprint) of lines the owner chose to leave in place.
+# Set 1: three ROOM.md lines of 8 Oct 2026 (ASKS 156, option (a), applied 9 Oct 2026 23:2x UTC by the orchestrator (account-4)); never add the line text here.
+cda55e989aad2ad5
+43dc8dfb5e04b9dc
+144ccefa5440042b
+# Set 1b: two dispatcher ROOM.md lines of 8 Oct 2026 (04:41, 04:46) found by the first set-2 scan to repeat one figure; same option (a), ASKS 156 row amended.
+bde82854515de517
+6d189237b65f9972

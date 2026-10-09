@@ -18,6 +18,12 @@ Checks:
   2. any path inside a directory named `restricted/` (git-ignored for local working copies);
   3. any image under ciphers/debosnys-1883/ that is not one of the published images listed, with its sha1,
      in ciphers/debosnys-1883/images/manifest.json.
+Allowed lines (ASKS 156, owner's option (a), 9 Oct 2026): tools/restricted_allowed_lines.txt holds the
+fingerprint of a whole line (normalised tokens joined by one space) that the owner chose to leave in place
+in an append-only file (three ROOM.md lines of 8 Oct 2026 with figures from a private run). Check 1 skips a
+line whose whole-line fingerprint is listed, so the fingerprints of those figures still catch a REPEAT
+anywhere else. Must catch: the same figure phrase in any other file or a new line. Must not block: the
+listed lines themselves. Offline test: tools/tests/test_restricted_guard.py.
 
 Usage:
   python3 tools/restricted_guard.py              scan every tracked file (what CI runs)
@@ -98,9 +104,25 @@ def published_debosnys_images():
     return allowed
 
 
+def allowed_lines():
+    out = set()
+    try:
+        for l in open(os.path.join(ROOT, "tools", "restricted_allowed_lines.txt")):
+            if l.strip() and not l.startswith("#"):
+                out.add(l.split()[0])
+    except FileNotFoundError:
+        pass
+    return out
+
+
+def line_fp(line):
+    return fp("LINE:" + " ".join(norm_tokens(line)))
+
+
 def scan(files, fps):
     findings = []
     allowed = published_debosnys_images()
+    skip_lines = allowed_lines()
     for f in files:
         if f in SKIP:
             continue
@@ -124,6 +146,8 @@ def scan(files, fps):
             continue
         lines = text.splitlines()
         for n, line in enumerate(lines, 1):
+            if skip_lines and line_fp(line) in skip_lines:
+                continue
             for u in units(norm_tokens(line)):
                 if fp(u) in fps:
                     findings.append((f, n, "matches a restricted fingerprint"))
@@ -148,6 +172,9 @@ def scan(files, fps):
 
 
 def main(argv):
+    if argv[:1] == ["--line-fingerprint"]:
+        print(line_fp(" ".join(argv[1:])))
+        return 0
     if argv[:1] == ["--fingerprint"]:
         phrase = " ".join(argv[1:])
         if phrase.startswith("SIGNS:"):

@@ -61,7 +61,7 @@ Scope, unit count and pooled-run design held per RESTRICTED.md (private reposito
 debosnys/HELD-FROM-PUBLIC-2026-10-08.md; moved 8 Oct 2026 because they describe what the museum scans cover).
 
 ### DEB-PRIV1D2 -- letter-form habits, instrument first (cap USD 5, box 40 min; Sonnet calls)
-PRIV1D's prompt never answered yes even on its positive control (0/4). Reword as a 0-5 similarity score per sign;
+PRIV1D's prompt never answered yes even on its positive control: figure held per RESTRICTED.md (9 Oct 2026 cleanup, ASKS 156)). Reword as a 0-5 similarity score per sign;
 validate on the PUBLIC positive control first (cipher-line strips containing the reference signs: gate >= 6 of 8 signs
 found at score >= 3, decoy hands <= 1 false find). Control fails -> log non-test, stop (second attempt at this instrument;
 a third needs a different instrument, CLAUDE.md rule 3). Control passes -> run on the clear-hand crops; private only.

@@ -7789,6 +7789,23 @@ desk/near/wait-only/NO-NEXT ok. ASKS 156 default (a) still to apply; ASKS 160 wa
 TX programme table 22:4x UTC: slot 1 orchestrator | slot 2 lane inc. 3 session_01P46fwsU5VTc1oJiV1sayg5, check-in 22:50 | slot 3 TX-RED
 inc. 2 session_019mC2iYWnDXZQipquND2vZE 9.4, pass 9 at 22:51; open F38-F42 | slots 4-10: round 11 (BASE-GUN2 done, S2NOTE done, VIV102 done)
 | eval looks 0; S2 look 1 (TAKEN: 0.150-0.296 bracket, product baseline on an unseen hand).
+Check-in 6 (23:2x UTC 9 Oct by date -u, clock 23:22-23:3x; orchestrator (account-4) session_012sGNgiddCpz4QUhQsMyoPU, 41.5 at 23:22, context 765k of 1M --
+successor hand-over due before about 850k): five_hour allowed; seven_day allowed_warning on account-4 workers (spawning continues, owner's word
+22:47). Owner 23:1x forwarded a desk agent's WVO family priorities (PR 70, second-opinions/chatgpt-2026-10-09-WVO-family-priorities.md, "do not
+merge", left unmerged): 1127 = our willem-van-hessen-1567 (parked on ASKS 31, the KHA scan); 1068 found 7 Oct (KH1-D/KH4-C), key never built ->
+WORK-QUEUE WVO-1068-KEY (cap 10) and WVO-153-KEY (cap 8) queued for the account-4 dispatcher (brief .claude/briefs/runs/2026-10-09-account4-wvo-1068-
+key.md; key sources, rule 10: no reading claim); geheimschrift term gap logged in sources/wvo/NOTES.md. EXHIBIT-2 done 23:12 (5.62 D, ledgered,
+archived; https://claude.ai/artifact/Fg81wyU36NyAyzt99ytVCp, SELECTION.md top five, Gramont dropped; portraits via L73), link given to the owner.
+SCOUT-BOURDEAU-WEB done 22:55 on account 1 (row marked done). TX-POOL-LEAF-2 still claimed on account 1 (21:40). DV1b dev baseline landed 23:10
+(TXE2-VIV102-BASE, 267f941f0): f.102r passZ 0.199 flagged-excluded / 0.431 as measured, segmentation 48 of 80 -- same shape as the S2 look
+(0.150/0.296), so the segmentation instrument's PREREG is the lane's next step (lane check-in 23:26). ASKS 156 option (a) APPLIED: tools/
+restricted_guard.py gains a whole-line allowlist (tools/restricted_allowed_lines.txt, the three 8 Oct ROOM lines by fingerprint) and set 2 of 13
+figure-phrase fingerprints, offline test tools/tests/test_restricted_guard.py 3/3; full scan pasted in the ROOM line. Orphan check: the 27 stale
+sessions are TX-ENGINEER-2's own round 3-7 workers (the lane ledgers and archives them) and 2 orphan triggers are DEB-RUN's daily re-check
+(account 3's lane, not taken) and the account-4 dispatcher's persistent session (not in a 60-row list); 124 dropped requests are historical.
+TX programme table 23:2x UTC: slot 1 orchestrator | slot 2 lane inc. 3 session_01P46fwsU5VTc1oJiV1sayg5 15.6 at 23:22, context 410k, check-in 23:26
+| slot 3 TX-RED inc. 2 session_019mC2iYWnDXZQipquND2vZE 12.9, pass 9 at 22:59 (F43-F46), pass 10 at 23:37; open F38-F46 | slots 4-10: DV1b done
+(VIV102-BASE); TX-POOL-LEAF-2 (account 1) live | eval looks 0; S2 look 1 (TAKEN).
 
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:

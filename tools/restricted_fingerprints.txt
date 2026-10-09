@@ -47,3 +47,17 @@ f66d44d53d00163b
 fa3654808ebc4746
 fcfca399418314a2
 ff3f4da5049332bb
+# Set 2: figure phrases from a private Debosnys run that reached three ROOM.md lines of 8 Oct 2026 (ASKS 156 option (a)); the lines themselves are allowed in tools/restricted_allowed_lines.txt, a repeat anywhere else is caught. 13 entries.
+3f1d93c1f50b060f
+2d9cb119b3fca915
+2853003f47c8ecf1
+37e007ec46beddaf
+28ec3829146db6b8
+adcda946ce5a0b7f
+b6abeadbb176a134
+0e531174edf91020
+77d2f2a67a7ef8dc
+995b83dc452469f2
+ca4de47a1a3912e6
+57251b37a76097ad
+731da4fcd4225556

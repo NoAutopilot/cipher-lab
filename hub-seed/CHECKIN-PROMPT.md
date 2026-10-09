@@ -137,3 +137,9 @@ session_01TKVSDAd9vYmihZgUsgL9ch. Accounts 1 and 2 lanes closed 22:3x, refilling
 OWNER 22:4x UTC 9 Oct (clock 22:47): "I'm not that worried about the caps" -- the seven_day allowed_warning on account 4 is not a reason to hold
 work (it resets Mon 12 Oct 20:00 UTC, not tomorrow; told him); spend on the transcription programme and his mock-ups continues at the normal
 cadence; BUDGETS' five_hour rule unchanged (a five-hour `rejected` still stops spawning until its reset).
+STATE DELTA 23:2x UTC 9 Oct: check-in 6 done (trigger check-in 7 trig_0162zoBhWPEChtTi68ohz75N fires 00:03 UTC 10 Oct). Owner forwarded a desk
+agent's WVO priorities (PR 70, unmerged, stays so): WVO-1068-KEY and WVO-153-KEY queued for the account-4 dispatcher (:34); spawn from this session
+if unclaimed at check-in 7. EXHIBIT-2 done and given (https://claude.ai/artifact/Fg81wyU36NyAyzt99ytVCp). DV1b dev baseline 0.199/0.431 landed;
+the segmentation PREREG is the lane's next step -- tell the owner when its first dev result lands. ASKS 156 (a) APPLIED (restricted_guard allowed
+lines + set 2); ASKS 160 waits on the owner. Orchestrator context 765k at 23:22: write hub-seed/SUCCESSOR-PROMPT.md's TAKEN line for a successor
+and hand over before ~850k (next check-in if past 820k).
