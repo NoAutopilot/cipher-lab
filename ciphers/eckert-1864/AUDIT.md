@@ -10323,3 +10323,79 @@ withdrawn), 5778 tail eye-checked by FV-FM9d. E308: ciphertext.txt line 1 "first
 = Philadelphia H, clear copy blank. E309: `plain-at: webster#3` (R. C. Webster); header "Chief Quartermaster Vinton" -> "Col. R. C. Webster,
 chief quartermaster, Fort Monroe" and the 5.30 PM reply is Webster's. Lead, not decoded: row 5786/1 (Butler's Hd Qrs reply, same page).
 Requests: hdl.huntington.org 22 (16 CONTENTdm queries, 1 dmGetItemInfo, 5 IIIF pages); archive.org 3 downloads; be-api 7 (6 answered; the control timed out).
+
+## AUDIT 2 (AUD2-LEDGER-23)
+
+Second verifier AUD2-LEDGER-23 (account 4, for the orchestrator (account-4) and LANE LEDGER (account 1)), 9 Oct 2026, 14:50-15:0x UTC by
+`date -u`; a separate session and account from the reader FM-R6a and the first auditor FV-FM9b (both account 1); this session had not read or
+audited this entry before. Scope: **E302** only (WORK-QUEUE AUD2-LEDGER-23; E300, E301, E303 are N1, no second audit owed). Nothing decoded
+beyond key look-ups in key.md. FV-FM9b's 13 CONTENTdm full-text queries and its image eye check of page 5697 were not redone. Key source:
+`period`. Committed: this section, `fortmonroe/aud2_ledger23_keys.py` + `.out` (key look-up), `fortmonroe/aud2_ledger23_print.py` + `.out`
+(three IA djvu texts fetched once to scratch, not committed: OR I/36 pt 3 `warofrebellion363unit`, Plum 1882 vols 1-2
+`militarytelegraph01plumrich`, `militarytelegraph02plumrich`), `fortmonroe/aud2_ledger23_gb.py` + `.out` (Google Books API), one prior-work.tsv
+record, the status.json propagation below.
+
+### 1. Prior-work checks
+`prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=pointer 5697;date=1864-05-27;sender=Sheldon;recipient=Eckert'
+--step-type second-audit --offline`: LEAD 1-own = FIX-FM7's target-level claim (10:49; names no unit, does not cover this item: CLEAR);
+3-tomokiyo UNCHECKED (unit has no folio; Tomokiyo has no Eckert ledger items, as FV-FM9b); 3-solver UNCHECKED-NET (unsolved-ciphers not cloned);
+4-editions CLEAR on the cached OR volumes, UNCHECKED-NET for OR I/36 pt 3 (not on disk) -- covered by this session's own grep in s.3.
+Duplicate diff: FV-FM9b's diff stands (pointer 5697 occurs in no other `###` header; re-grepped this session, only E302).
+
+### 2. Key look-ups (independent)
+Every word of the body matched against key.md rows by script (`aud2_ledger23_keys.out`): 59 exact hits, of which 14 (office x2,
+line x3, all, must x4, think x2, little x2) are line-indicator/route words of pages 3-8 that stand as plain words in the running text, as the
+decoder treats them; the other 45 plus 5 matched by stem by hand (Spoons x2 = Spoon, Johns = John, questioned = Question, saddled = Saddle) give
+the **50 code-word tokens**, the decoder's H 50: White x3 = Report, Hagar x2 / Homer x2 = West Point, queenly = Depot, unity x2 / zebra x2 /
+zodiac x2 = Period, pedlar x3 / pekin x4 = Comma, Hebrew / Hindoo = Williamsburg, peasant x2 = By the way of, torch x2 = Of the, Chicken =
+Huntsville, plum / pocket = Cross, Hastings = Yorktown, vernon x4 = Point, wiley / windham = Road, pony x2 = 9, sugar = Interrogation, lamp = 30,
+Spoon(s) x2 = Mile, weldon / welch = Rail Road, forbid = 12, John(s) = Maj Genl U.S. Grant, venus = Position, question(ed) = Destroy, saddle(d) =
+Guard (all H). **FV-FM9b's six plain slips
+hold:** "White House" x3 (a place: "made the base of supplies", "to White House direct", "from West Point to White House on railroad"; Report
+reads nothing), "Chicken hominy" (Chickahominy; Huntsville is 600 miles off), "Mattie pony" x2 (Mattapony; "the Mattie 9" reads nothing).
+**H 44 of 44 code groups: no disagreement with FV-FM9b.** The second "torch" ("most [Of the] on the [Rail Road] are standing") lacks its noun;
+"poles", supplied by the next clause ("they are fine large chestnut poles"), is an inference (I) for a word the writer left out, not a code token.
+
+### 3. New searches (the first audit's named gaps)
+- **OR I/36 pt 3, by index** (`warofrebellion363unit`, djvu text): the volume index lists "Sheldon, George D. Correspondence with Butler 262, 281,
+  417, 756; Eckert, Thomas T 281, 321, 322, 424" (p.973) and "Eckert ... Correspondence with ... O'Brien, Richard 262; Sheldon, George D 281, 321,
+  322, 424" (p.932). Every Sheldon item read: p.262 (Eckert to O'Brien 27 May; Butler to Sheldon 28 May), p.281 (Sheldon to Butler x2, to Eckert,
+  28 May), pp.321-322 (Sheldon to Eckert 29 May: "Butler favors crossing at Yorktown and the north [side] ... material is landed on Gloucester
+  side"), p.417 (31 May, "We hope to reach White House and beyond in two days more"), p.424, p.597 (4 June, the West Point operator to Sheldon:
+  "There are 38 miles line from here to Gloucester Point"), p.720, p.756. **No Sheldon-to-Eckert item of 27 May is printed in the volume;** the
+  phrase grep (14 phrases of E302) found none. The 29 May item shows Butler's and Sheldon's choice followed E302's proposal.
+- **W. R. Plum, *The Military Telegraph during the Civil War* (1882), vols 1-2:** E302's phrases 0. **Vol. 2 pp.136-137:** "The offices at Belle
+  Plain, Fredericksburg, Port Royal and Maryland Point were closed about May 30, the base of supplies having been changed to White House.
+  Consequently the line from Fortress Monroe to Yorktown was extended along the north bank of the York from Gloucester Point to West Point,
+  submarine cables being used to cross the York and Mattapony Rivers. From West Point a line was built on the north bank of the Pamunkey to White
+  House. The office at West Point was opened June 2, and at White House on the third." **The line was built on the route E302 proposes** (cross
+  the York at Gloucester Point, cross the Mattapony to West Point, on to White House): a second, independent, non-statistical external check of
+  the content, beside FV-FM9b's OR pp.262, 280-281. Plum names Sheldon elsewhere only on other fronts and in operator lists, not for this telegram.
+- **Google Books API** (country=US, keyed; `aud2_ledger23_gb.out`): "chestnut poles" "Gloucester Point" 2 hits (Railway Review 1916, other
+  matter); "base of supplies" "chestnut poles", "have not rotted down" poles, "very little wire on hand": no Civil War volume among the returns.
+  Keyword control "Sheldon" "Gloucester Point" "Mattapony" 1864 telegraph (one 503, one retry): 4 hits, all the OR serial set (Butler to Sheldon
+  28 May, p.262; Eckert's 27 May dispatch) -- the route reaches the printed exchange and nothing else; the bare phrase control "telegraph route
+  most easily protected" did not surface the OR in its top 10, so the phrase queries are weak negatives.
+- **Not searched (unreachable or out of proportion):** NARA RG 107 telegrams (no NARA key; catalogue noise, host table); the Grant Papers vol. 11
+  beyond FV-FM9b's be-api snippets (lending-only, djvu 403); the press of the day (an internal line-construction telegram between telegraph
+  managers, not a press dispatch -- no route by which it would be printed); Butler's Correspondence vol. IV was in FV-FM9b's 166-volume grep.
+
+### 4. Class and depth
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E302 | **N3 (held)** | period | **D3 (held)**: H 44 of 44 code groups, I 1 (the omitted "poles"); external non-statistical: OR I/36 pt 3 pp.262, 280-281, 321-322 and Plum 1882 vol. 2 pp.136-137 (the line built Gloucester Point - Mattapony - West Point - White House, offices opened 2-3 June) | no prior plaintext or decipherment of this telegram located after FV-FM9b's search and this one; the OR index lists no Sheldon-Eckert item of 27 May |
+
+- Not N4: NARA RG 107 and the Grant Papers vol. 11 full text not reached; the Huntington catalogue covers the ledger only at volume level.
+- **Safe sentence** (FV-FM9b's, kept, one clause added): "Read at grade H with War Department Cipher No. 1: on 27 May 1864 Sheldon at Fort
+  Monroe answered Eckert's question on a telegraph line to White House, proposing to cross at Yorktown to Gloucester Point and run by road to the
+  Mattapony and West Point -- the route on which the line was built in the next week (Plum 1882, vol. 2 pp.136-137); the next days' exchanges are
+  printed in the Official Records (ser. I vol. 36 pt 3), this telegram was not located there, in Plum, in Grant's or Butler's papers or in the
+  Huntington's full-text search (searched 9 Oct 2026)."
+- **Unsafe:** any "first", "new", "unpublished", "unread" for E302.
+
+### 5. Postmortem and fixes
+No over-claim found in E302's files: the reading.md header's "no print of this reply found in the volumes searched" is a search result, and
+status.json row 295 carries N3/D3 with the gap named. FV-FM9b's s.5 fixes for E302 (White x3, Chicken, pony x2 plain) stand for FIX-FM10. **A
+lead outside this scope, for LANE LEDGER / FIX-FM10, not checked here:** E305 (Eckert to Sheldon, 12 June) reads "[Report] house and Wilson
+point" -- the same White = plain slip (White House) FV-FM9a/9b found in E291 and E302; FV-FM9c owns E305.
+Requests: archive.org 4 (3 djvu downloads, 1 advancedsearch); www.googleapis.com 7 (one 503, one retry); hdl.huntington.org 0.

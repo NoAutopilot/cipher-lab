@@ -11000,9 +11000,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM9b)'"
+        "AUDIT.md '## AUDIT (FV-FM9b)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-23)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM9b verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -11022,8 +11023,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Sheldon, Fort Monroe, to Maj. Eckert, 27 May 1864: a telegraph line to White House by Gloucester Point, the Mattapony and West Point (E302)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 27 May 1864 Sheldon at Fort Monroe answered Eckert's question on a telegraph line to White House, proposing to cross at Yorktown to Gloucester Point and run by road to the Mattapony and West Point; the next day's exchanges on the same route are printed in the Official Records (ser. I vol. 36 pt 3), this telegram was not located there, in Grant's or Butler's papers or in the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3 one audit (FV-FM9b); not N4: Grant Papers vol. 11 by be-api snippets only, NARA RG 107 and Google Books not searched",
+      "line": "Read at grade H with War Department Cipher No. 1: on 27 May 1864 Sheldon at Fort Monroe answered Eckert's question on a telegraph line to White House, proposing to cross at Yorktown to Gloucester Point and run by road to the Mattapony and West Point -- the route on which the line was built in the next week (Plum 1882, vol. 2 pp.136-137); the next days' exchanges are printed in the Official Records (ser. I vol. 36 pt 3), this telegram was not located there, in Plum, in Grant's or Butler's papers or in the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "N3 two audits (FV-FM9b; AUD2-LEDGER-23 held N3 D3); not N4: NARA RG 107 and Grant Papers vol. 11 full text not reached",
       "depth": "D3",
       "completeness": "44 H of 44 code-word groups ('White' x3, 'Chicken', 'pony' x2 plain)",
       "phrases": [
@@ -11034,7 +11035,7 @@
         "Huntington mssEC 25 (obj 5952) p.153, pointer 5697, E302"
       ],
       "depth_sentence": "On 27 May 1864 Sheldon, the telegraph manager at Fort Monroe, proposed building the line to White House by crossing at Yorktown to Gloucester Point and running by road to the Mattapony and West Point, noting that the old chestnut poles on the railroad were still standing and that he had very little wire.",
-      "depth_check": "code clause: Hagar/Homer = West Point, Hastings = Yorktown, Hebrew/Hindoo = Williamsburg, vernon = Point, lamp spoons = 30 miles; external (non-statistical): OR I/36 pt 3 p.262 Butler to Sheldon 28 May (Gloucester Point, West Point, Mattapony) and Eckert to O'Brien 27 May ('Confer with Sheldon'), pp.280-281 Sheldon to Butler and to Eckert 28 May (Williamsburg, Yorktown, West Point routes)",
+      "depth_check": "code clause: Hagar/Homer = West Point, Hastings = Yorktown, Hebrew/Hindoo = Williamsburg, vernon = Point, lamp spoons = 30 miles; external (non-statistical): OR I/36 pt 3 p.262 Butler to Sheldon 28 May (Gloucester Point, West Point, Mattapony) and Eckert to O'Brien 27 May ('Confer with Sheldon'), pp.280-281 Sheldon to Butler and to Eckert 28 May (Williamsburg, Yorktown, West Point routes); second audit AUD2-LEDGER-23: OR I/36 pt 3 index (no Sheldon-Eckert item of 27 May), pp.321-322 (29 May, Butler favours crossing at Yorktown), Plum 1882 vol. 2 pp.136-137 (line built Gloucester Point - Mattapony - West Point - White House, offices opened 2-3 June)",
       "depth_note": "44 H of 44 code-word groups ('White' x3, 'Chicken', 'pony' x2 plain)"
     },
     {
