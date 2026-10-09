@@ -3056,3 +3056,52 @@ Read so far: E250, E255, E257 confirmed N1 (AUDIT CONF-FM); E254 class open; Cip
 - [x] image-check: 5820, 5821 line crops; E250/E254/E257 pages not viewed (transcription-only).
 - [x] retry: none needed.
 Verdict: keep going: 4 internal gaps, cheapest next: GetParent for 10490/4823, ~$0.1
+
+## FM-R5b (9 Oct 2026, account 1, for LANE LEDGER)
+
+Ten 1864 rows of the Fort Monroe ledger (Huntington object 5952 = mssEC 25): 5785/0 5706/0 5630/0 5819/1 5804/1 5798/2 5605/2 5788/2 5724/0 5814/2, all No. 1 rows, filed as E280-E289 (`ciphertext.txt`; `decode.py --write`, `--check` exit 0). Scripts and outputs in `fortmonroe/`: `fm_r5b_extract.py` (entries from the FM-PRE builder at HEAD), `fm_r5b.py` + `fm_r5b_controls.txt` (three books and shuffled No. 1/No. 2, seed 7), `fm_r5b_hdl.py`, `fm_r5b_hdl2.py` (CONTENTdm), `fm_r5b_printcheck.py/.out`, `fm_r5b_beapi.py/.out`, `fm_r5b_file.py` (its headers say "image-read"; five were then corrected by hand to "transcription only" in ciphertext.txt, see below).
+
+Prior-work checks (hand run plus `tools/prior_work.py eckert-1864 --item-spec ... --step-type read --offline` on 5788, exit 4: LEAD = another worker's target-level live claim naming the slug, LOOK for the leaf answered by the image pass, UNCHECKED for solver caches by unit, UNCHECKED-NET for aaymeloglu and unfetched OR volumes; same result as FM-R4b): (1) own work: ten pointers grepped in ciphertext*.txt/status.json/NOTES/AUDIT: only 5814 appears (E228, pointer 5814 entry 1, a different telegram); (2) mssEC 19 / 18 on disk: rare names (Vanderhoef, Gloster, Tallapoosa, Yantic, Maumee, Kautz-Harrison of 7 Oct) grepped, no sender's copy found; (3) holder transcription, all pointers (CISOSEARCHALL, suppressfulltext=1): see below; (4) Grant Papers vols. 10-12 by be-api, Butler Private and Official Correspondence IV-V and OR I/33, 36, 42 by phrase, ORN I/9-11.
+
+FM-PRE share scorer re-run from HEAD (`fm_entries.build()`), s1/s2/s9: 5785/0 0.352/0.220/0.077; 5706/0 0.411/0.384/0.151; 5630/0 0.475/0.404/0.121; 5819/1 0.347/0.333/0.097; 5804/1 0.226/0.208/0.075; 5798/2 0.333/0.233/0.117; 5605/2 0.517/0.448/0.069; 5788/2 0.390/0.268/0.049; 5724/0 0.462/0.333/0.154; 5814/2 0.344/0.375/0.125 (best_book 1 on all ten; share_book 2 on 5814/2).
+
+| ID | row | what the reading says | book / clause check | where found |
+|---|---|---|---|---|
+| E280 | 5785/0 | 30 Sept 1864 Ft Monroe, Sheldon to Maj. Eckert, relaying a Newbern message signed Gilmore: yellow fever prevailing to an alarming extent, sick at Newport Barracks, Vanderhoef to be relieved, men wanted to keep the offices open | No. 1; shares 0.35/0.22/0.08; No.1 28 H, shuffled books give other words at every code slot | not located (see gaps); same page carries a second fever telegram of 1 Oct (not this row) |
+| E281 | 5706/0 | 27 May 1864 Washington, T. T. Eckert to Sheldon: detail to cut poles, line Gloster to West Point, Bickford leaving Port Royal, cables | No. 1, 25 H | not located; holder pointer 10408 (a Sheldon telegram of 13 May on the same West Point/Gloster line) is a different message |
+| E282 | 5630/0 | 24 Apr 1864 5 PM Ft Monroe: steamers and tugs reported, 15 barges 6 lighters, signed Herman Biggs, for Qr Mr Gen Meigs | No. 1, 47 H decoded | **period clear copy at holder pointers 10267-10268 (pp.125-126)**, Biggs to Meigs, word for word (see below) |
+| E283 | 5819/1 | 7 Dec 1864, for Commander Parker, Onondaga, from Porter: two gunboats down to White Shoal light and Point of Shoals, stop boats at night | No. 1, 27 H, 1 M (paulding) | not located (ORN I/10-11, OR I/42 pt 3, Butler V searched) |
+| E284 | 5804/1 | 4 Nov 1864 Ft Monroe to S. H. Beckwith, City Point: whether men are to be transferred without authority; Lizzie Baker only boat reported | No. 1, 12 H | not located |
+| E285 | 5798/2 | 27 Oct 1864 for the Secretary of the Navy, from Porter: Tallapoosa, Yantic, Maumee steering for Halifax before the Tallahassee | No. 1, 21 H | not located (ORN I/10, I/11 grepped for Montauk / Yantic / Maumee) |
+| E286 | 5605/2 | 14 Apr 1864: can the 5th New Jersey Battery be spared from the defences of Washington | No. 1, 15 H | not located (OR I/33 grepped) |
+| E287 | 5788/2 | 7 Oct 1864 9 AM, Butler's Head Quarters to Lieut. Gen. Grant: enemy attacked and driven Kautz back, now opened fire on Fort Harrison | No. 1, 19 H | **in print**: OR I/42 pt 3, Butler to Grant, "Headquarters, October 7, 1864 - 9 a. m.", pp.106-107 (page from the OCR page headers, not fixed to the page); Butler's Private and Official Correspondence V p.231, word for word apart from "drove"/"driven" |
+| E288 | 5724/0 | 31 May 1864 for Gen. Taylor, Commissary General: two millions of rations and 1000 head of cattle to White House, signed M. P. Small | No. 1, 15 H | not located |
+| E289 | 5814/2 | 1 Dec 1864 for the Secretary of the Navy, from Porter: orders for Captain Taylor and Lieut. Commander Dewey to appear before a court martial | No. 1 (share_book 2), 10 H | not located |
+
+Clear copy test, E282 (grade C, a check on the key): of the 47 H-graded tokens the decoder produced, 45 agree with the holder's clear copy; 2 do not: "Rockland" and "Wyoming" are plain steamer names in both the ledger and the clear copy, and the key reads them as [Enemy] and [Subsistence] (key rows rockland and wyoming misfire on plain names; entry notes `plain: rockland wyoming` applied, key.md untouched). The ledger's "Her man begs Lieutenant paradise Vinton" is the clear copy's "Herman Biggs Lt Col & QrMr". Same-date neighbours at the holder (10267: E261; 10268: Lee, Smith) are other telegrams.
+
+Key conflicts met (a key row read where the page is plain English): 'fever' (page has "fever prevailing" and "The fever is") read as [13]; 'white' (White House, White Shoal) read as [Report]; 'shoal/shoals' read as [Gun]; 'watch' read as [Surrender]; 'Taylor' (Gen. Taylor, Capt. Taylor) read as [Mountain]; 'prospect' read as [Demoralize]; 'nursing' read as [Abandon]+ing. Handled with entry `plain:` notes, not key edits; 'paulding' graded M. Candidate rows for the key owner, not written: none supported by print.
+
+Controls: for all ten rows the chosen book (No. 1) reads a coherent clause; No. 2, No. 9 and the shuffled No. 1 and No. 2 (seed 7) fail on the code words, as in FM-R1 to FM-R4. This is a consistency check, not a test (the controls fail on code words, not on plain frames).
+
+Image check: pages 5785, 5706, 5819, 5804, 5798 read whole at 2400 px (resized to 1500 for viewing) against the transcription: no difference in the entries' text. Pages 5630, 5605, 5788, 5724, 5814 fetched but not read (5630: clear copy gives the text; 5788: printed text agrees with the transcription); those five entries carry "transcription only" in their headers. `tools/iiif_lines.py --image` found 0 lines on the full-page image (pencil on ruled paper, pitch auto-detection failed), so no crops were cut.
+
+Grades: decoder H 218 over ten entries (25+23+45+22+12+21+15+19+13+8 as printed in reading.md, E282 45 H after the two plain notes), M 1; by hand C 45 for E282 (clear copy), unread U about 8 (Newbern header block, 'togoto more head', 'furry wag', 'Mary John', 'Lieutenant pandora' tail), I 0. `python3 decode.py --check` exit 0. Requests: hdl.huntington.org 34 (10 IIIF pages, 16+5 CISOSEARCHALL queries, 3 dmGetItemInfo; 3.3 s apart, under the LANE LEDGER token, take 10:50 UTC, releases 10:54 and 10:5x); archive.org 7 downloads (OR I/42 pts 1-3, I/36 pt 3, ORN I/3, I/11, I/12 which answered 500) plus 8 be-api. Google Books 0.
+
+## Remaining gaps (FM-R5b, 9 Oct 2026)
+Read so far: ten of ten rows filed (E280-E289). In print or clear: E282 (holder clear copy, pointers 10267-10268), E287 (OR I/42 pt 3; Butler V). Not located in what was searched: E280 E281 E283 E284 E285 E286 E288 E289.
+- E280 (30 Sept, Newbern fever) - blocker: not-attempted; OR I/42 pt 2 searched by phrase only; next: OR I/42 pt 2 page-by-page for 30 Sept-2 Oct, Newbern/Gilmore/Vanderhoef, and Official Army Register for Surgeon Vanderhoef, ~$0.4
+- E283 E285 E289 (Porter, Dec/Oct 1864) - blocker: not-attempted; ORN I/11 is in hand but only grepped by phrase; next: ORN I/11 page-by-page for 7 Dec, 27 Oct and 1 Dec 1864 (Porter to Welles/Fox, Parker, Dewey) and Welles' index, ~$0.5
+- E281 E286 E288 (Apr-May 1864) - blocker: not-attempted; Butler III by snippet, OR I/33 and I/36 pts 1-3 searched by phrase; next: OR I/33 and I/36 pt 3 page-by-page by date + sender, ~$0.5
+- E284 (4 Nov) - blocker: not-attempted; OR I/42 pt 3 searched by phrase only; next: OR I/42 pt 3 pp. for 4 Nov Beckwith/Sheldon, ~$0.2
+- E286 E288 E289 (image) - blocker: not-attempted; pages 5605 5724 5814 not read in the image (5788 and 5630 are in print or have a clear copy); next: one eye pass over the three pages, ~$0.5
+
+## Escalation (FM-R5b, 9 Oct 2026)
+- [x] siblings: same-page neighbours seen, not filed (5785 second fever telegram of 1 Oct signed McClellan; 5706 next entry of 28 May; 5804 Nov 3 and New York Nov 4 entries; 5819 Dec 6 entry; 5798 earlier entries).
+- [n/a] clear-pages: no clear page in this pass.
+- [x] known-keys: each entry decoded under all three books and shuffled No. 1/No. 2.
+- [x] print: cached/fetched OR, ORN, Butler IV-V, Grant Papers vols. 10-12 by be-api; Google Books not called.
+- [n/a] key-rebuild: not needed for these ten.
+- [ ] image-check: five of ten pages not read in the image (see gaps), cheapest next step ~$0.5.
+- [x] retry: none needed.
+Verdict: keep going: 5 internal gaps, cheapest next: OR I/42 pt 3 pp. for 4 Nov, ~$0.2
