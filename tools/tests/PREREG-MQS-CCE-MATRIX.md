@@ -58,4 +58,21 @@ on the same code set. Any miss: the option ships `weak` with both numbers, is no
 target from it. Birago 1572 and Matignon stay closed to this design without new material (M26). No target's key,
 reading, status or AUDIT.md changes in this job. A report: a flag is a candidate for an image check, never a key edit.
 
+## Amendment 1 (08:43 UTC by date -u, pushed before any control row is scored)
+
+Disclosure: the offline fixture (tools/tests/test_decode_key_cce.py, seed 1 sibling, 6% planted with seed 2, 52 tokens;
+not a control seed) was run while writing the tests. Under the registered rule (rule A, `gain`) the true sibling
+flagged 37/52 planted spots and 38/349 others (rate 0.187), but 20 permuted siblings gave 0.13-0.20: a permuted key's
+arbitrary letter also "improves" a planted wrong letter (the --lookalike shuffled-pair lesson, PREREG-MQS-LOOKALIKE-SLIPS
+N = 0.40). Rule A and its five gates stay exactly as registered above and are run and reported first; its gates decide
+rule A's grade.
+
+Rule B (`--cce-rule best`), registered now, same material, seeds, draws, gates K3/K2/D0/DATE/POS and outcome rule:
+a position is flagged when gain >= 3.0 bits AND the sibling value scores at least as high as every other letter of
+the model's alphabet (and the null value '') read at that one position (top-1, ties counted as top). Everything else
+(examined positions, rate, permuted-sibling null, p95, p, dating by p) is unchanged. Why the null can differ more here:
+a permuted key supplies the best letter at a planted spot only when its random value happens to be the true letter.
+Rule B is the option's default; rule A stays selectable (`--cce-rule gain`). The shelf row reports both rules'
+results; each rule's grade follows its own gates.
+
 ## Results (appended after the run)
