@@ -1517,7 +1517,7 @@ SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing 
 
 ## LIN-SIB (9 Oct 2026)
 
-LIN-SIB (LANE FAMILY-A2d, account 2, 9 Oct 2026, 00:16-00:4x UTC by date -u). Thumbnail sweep of maço 86 /02 and /09 for
+LIN-SIB (LANE FAMILY-A2d, account 2, 9 Oct 2026, 00:16-00:35 UTC by date -u). Thumbnail sweep of maço 86 /02 and /09 for
 cipher, SIBLINGS-2026-10-08.tsv row 1. No decoding.
 
 Prior-work checks (before the first request): `tools/prior_work.py antt-linhares-chave --item-spec shelfmark=PT/TT/CLNH/0086/02`
