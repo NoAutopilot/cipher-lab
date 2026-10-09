@@ -5925,6 +5925,49 @@ Left (next lane): eckert-1864 No 2 entries pp.86-182 of no2-candidates.tsv (~37 
 by D12-E2/E3 rates; N2-AI/N2-AJ/N2-R N4 needs RG 92/393/107 or the OR Supplement (owner-side or LOCAL-QUEUE); eckert-1862 `ec18_align.py --rows`
 still stale, cause untested (~1); 9877 Hurlbut token stays M.
 
+## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261009-0409, session_01Cnc5YUqc7JgCV9R2aq8L2f, account 2), 9 October 2026 (closed 05:5x UTC: four waves worked, lane ~57.4 of 60)
+
+Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-09-ytbiz-family-0409-jobs.md. Started from the
+0209 handoff next list items 1-5. Gate 0a: SESSION-SWEEP-account-2 stale-claimed since 5 Oct, proceeded. Workers 16 in 4 waves (04:16-05:46 UTC;
+all Opus; all ledgered): 49.88 by get_session; orchestrator ~7.5; five_hour `allowed` throughout. Over cap >10%: MANT-EYE63R 1.26x, LAG-V2
+1.35x, BRANDT-MARGIN 1.32x, MANT-0136 1.15x, MANT-INV08 1.20x, MANT-R07 1.25x. Known-text share ~25% (Brandt glossed leaves, 0063/0136 gloss
+known answers), all of it tests a key for unglossed siblings.
+
+Results:
+- sachsstaatsarchiv-manteuffel-1712: 694/09 0136 read (MANT-0136 + MANT-R07): known-answer gate on blind gloss passes PASS (widened A1 22/32,
+  21/32 vs p99 8), unglossed fr18 permuted-key gate PASS; grades C 21 S 33 M 20 U 1. First verifier V-MANT0136: **N2, D1** (glossed run is N0
+  by the period gloss on the leaf; longest H/C/S stretch 11 letters vs AD ~127-138; r01/r02/r09 alone FAIL the gate, so 17 of 33 S tokens are S
+  only by aggregation; Droysen IV.2 p.43 prints the news, not the sentence; press of the day unchecked, Google Books 429). PREREG-MANT-0136's
+  commit order is not provable in git (its commits were folded into a room.py rebase commit); A1's order is. No SO or AUD2 row.
+  694/08 inventory (MANT-INV08): 94 more frames at stride 4 (310/592 seen); 22 code-bearing, 9 unglossed. 694/08 **0454** (MANT-0454): no gloss,
+  gate (b) PASS narrowly at N=52 (real -1.659 vs p95 -1.693), S46 M16, stretches round Stanislas (rebelle, Rozrasewsky x2, abdiquer) -- not yet
+  verified. 694/09 0103 / 0046 / 0233 (MANT-UNGL): 0103 FAIL at power 0.92, 0046/0233 too-short (power 0.49), all M. MANT-EYE63R: 0063 slots
+  re-read at native, no token changed, crops committed.
+- hessen-daenemark-1672 Brandt: V-BRANDT regrades applied (46 C->M; 15 C / 9 M values); 0062 re-scored on two blind gloss passes PASS (19, 18 vs
+  p99 14) -> 0062 C 17 M 45; BRANDT-UP stays M 52 (0020 margin blind re-read FAILs both passes, BRANDT-MARGIN); 0062 gloss phrase search not run
+  (Google Books 429).
+- wvo-11106-bergh-1572: sorter inputs rebuilt from group_sign.tsv (674 group tiles + 156 split tiles + NEW1), preflight PASS, sorter/bergh_sorter.html
+  **flagged for account-3 publication** (ROOM 04:22), not published.
+- na-suriname-map-1781: pooled SPLIT power 1.000 at 65 lines; real pooled SPLIT no split on both passes = control-backed negative vs a full n-only
+  y-family (partial split unmeasured).
+- la-garde-1577: v2 carries the 7 sure mark settles (marks-kept error 0.000/0.067 vs settles); syllabary negative now holds up to err 0.071;
+  wordcode score-gap negative and the wordcode family retired under rule 3's third-attempt clause; the --check re-runs of LAG-RESCORE's scripts
+  were not done (~0.7).
+
+**next** (for the next LANE FAMILY incarnation):
+1. sachsstaatsarchiv-manteuffel-1712 0454: a separate first verifier (V-MANT0454, CLAUDE.md template + depth bar), ~3.5; MANT-0454's own next is
+   0452-0453 for the letter's date (2 sachsen GETs, ~1.5) -- run the date lookup before or inside the verifier's check 4.
+2. Manteuffel 694/08: the other 8 unglossed frames in mant0608/rank_unglossed_08.tsv by rank, one leaf per job, method of MANT-0454 (power control
+   at each leaf's N), ~5 each; 282 of 592 frames still unseen (stride-4 offset 2, ~6).
+3. Manteuffel 0136: the press-of-the-day check (Mercure historique / Europäische Fama Apr 1713) once Google Books answers; the r01/r02/r09 runs are
+   likely names -- `tools/name_candidates.py` then `decode_key.py --try`, ~2.
+4. la-garde-1577: the --check re-runs LAG-RESCORE left (~0.7); then nothing cheap on the base-code text (syllabary negative to 0.071, wordcode retired).
+5. hessen-daenemark-1672: 0062 gloss phrase search when Google Books answers (~0.3); a separate Brandt folder is the orchestrator's call.
+6. wvo-11106-bergh-1572: waits on the account-3 publication of sorter/bergh_sorter.html and the owner's sort.
+7. Lesson for every PREREG: push it in its own commit with `git push` and check `git log origin/main -1 -- <PREREG>` shows it BEFORE scoring; a
+   room.py rebase can fold the commit away (V-MANT0136).
+Excluded this incarnation (other lanes): eckert-*, lodewijk-van-nassau-1573-74, baluze167, huntington-blathwayt, ceppo-nevers.
+
 ## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261009-0209, session_01S9QsmhcdrX6TVitHucfaiQ, account 2), 9 October 2026 (closed 03:4x UTC: three waves worked, lane ~53.3 of 60)
 
 Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-09-ytbiz-family-0209-jobs.md. Started from the
