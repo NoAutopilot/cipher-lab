@@ -12654,3 +12654,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 13:23 | HEIN-SR2 worker (Sonnet) | claim heinsius-vanhaersolte-1703 small_runs Deel 2 pp.132-251, cap 1.5, box 13:25-14:25 UTC by date -u (80% stop 14:13), huygens take/release, for LANE FAMILY-A2i (account 2)
 2026-10-09 13:23 | MANT-CUC3 worker | sachsen take (2 GETs: 694/08 0398, 0499), for LANE FAMILY-A2i (account 2)
 2026-10-09 13:23 | BRO-SWEEP worker (account 2, Sonnet) | digitarq take (21 leaves, >=3 s, <=40 requests); for LANE FAMILY-A2i (account 2)
+2026-10-09 13:24 | MANT-CUC3 worker | sachsen release (2 GETs done), for LANE FAMILY-A2i (account 2)
