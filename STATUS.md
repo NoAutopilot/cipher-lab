@@ -7582,6 +7582,26 @@ TX programme table 19:5x UTC: slot 1 orchestrator -> successor | slot 2 lane inc
 19:50) | slot 3 TX-RED session_01WCmiKQwgGMzjVaBrAgxLiY 13.9, pass 4 running, pass 5 at 20:28; open F16-F19 + whatever pass 4 says on Amendment
 4 | slots 4-10: round 6 (4 workers; B1 next) | programme spend: lanes 42 + workers ~200 + reviewer 14 on the account-4 window; eval looks 0.
 
+Successor check-in 1, 19:46-20:0x UTC 9 Oct (12:46 pm PT; session_012sGNgiddCpz4QUhQsMyoPU, Fable, depth 5, trigger
+trig_01XrbA7EBqJ6rKfbWiwX9RZz armed 20:30): five_hour allowed; predecessor session_01VQDEedJCaaN7fFPGcNPUUD retitled ARCHIVED, archived
+(verified SESSION_STATUS_ARCHIVED), ledgered 30.87 D. TX programme: lane inc. 2 (12.3, context 355k) running its check-in 3 from 19:54
+(round 6 workers X21b/A1/SC1/R3b all done 19:15-19:24; B1 next); TX-RED pass 4 (16.3, context 526k -- its own successor near 600k): no
+blocking finding, F15-F19 closed; new F20 (per-unit prior-scores line owed in units/README and Amendment 5; "eval looks 0" reads
+"this campaign"), F21 (after B1 the pool may fall under 24 and the 1572 hand is exhausted: a second confirm-grade leaf for the POOL
+built outside the lane -> TX-POOL-LEAF queued for account 1, cap 8, brief .claude/briefs/runs/2026-10-09-account4-tx-pool-leaf.md; the
+declared split of confirm2 only as the fallback), F22 (R3b's gate incomplete as declared: register "untestable by image means", not
+FAIL), F23 (the typed overlap sentence wrong on both dev items: a read-free audit of baseline indels against the manifest's overlap
+zones, then the manifest note in every baseline brief). Eval looks 0, S2 look 0. Unassigned progress rows (duty 0a): UNA3-PISA, V-PISA-T32,
+UNA3-BAL, UNA3-BIR-VERDICT queued (.claude/briefs/runs/2026-10-09-account4-orch-unassigned-3.md); fr3416 NV-02 stays an owner card
+(a person reads the f.27r L09 gloss); lodewijk-van-nassau-1573-74 (gap-1 band, three instruments at gate FAIL, cost M) left to a
+DEFAULT lane from NEXT-STEPS, not queued blind. Checks: keys 6 working, system map ok, desk ok, near ok, wait-only 0, retired --check 0,
+no_cracks NO-NEXT 0 (119 MISSING = the card half, waits for an account that reads the desk board); orphan check only the known false
+positives; open_asks only the answered 09:42 S6 line. Account 1 LEDGER-7 wave 4 (blast 2 of 2 lanes); account 2 lane closed 19:34,
+refill at its 20:10 dispatcher; account 3 silent since 02:03. ASKS 160 (post the Bourdeau reply) waits on the owner.
+TX programme table 20:0x UTC: slot 1 orchestrator session_012sGNgiddCpz4QUhQsMyoPU (successor) | slot 2 lane inc. 2
+session_011EV9AKeJ4YuU9jjghdUy6F 12.3, check-in 3 running 19:54 | slot 3 TX-RED session_01WCmiKQwgGMzjVaBrAgxLiY 16.3, pass 5 at 20:28;
+open F20-F23 (none blocking) | slots 4-10: round 6 closed (4 workers), B1 next; TX-POOL-LEAF queued on account 1 | eval looks 0.
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;

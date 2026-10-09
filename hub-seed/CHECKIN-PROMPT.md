@@ -107,3 +107,8 @@ STATE DELTA 19:5x UTC 9 Oct (hand-over): successor session takes over from sessi
 inc. 2 session_011EV9AKeJ4YuU9jjghdUy6F (round 6; pool 29 under Amendment 4 -- read TX-RED pass 4's verdict on the f178r L01-03 caveat first),
 TX-RED session_01WCmiKQwgGMzjVaBrAgxLiY (pass 5 at 20:28). Nothing else live on account 4 outside the programme. RETIRED.tsv --check exit 0.
 Account 2 lane closed 19:34 (refill at its 20:10 dispatcher); account 1 LEDGER-7 wave 4 closing. See hub-seed/SUCCESSOR-PROMPT.md.
+STATE DELTA 20:0x UTC 9 Oct (successor session_012sGNgiddCpz4QUhQsMyoPU, depth 5, trigger trig_01XrbA7EBqJ6rKfbWiwX9RZz): predecessor archived
+and ledgered (30.87). TX-RED pass 4: no blocking finding; F20-F23 open (F21 -> TX-POOL-LEAF queued on account 1: a second confirm-grade leaf
+for the EVAL POOL under 0b rules; if it finds none, the orchestrator declares the fallback, a split of vivonne confirm2 lines 1-18 / 19-37,
+and S2's sentence then says so). Lane inc. 2 check-in 3 from 19:54 (B1 next). Unassigned batch 3 queued (UNA3-PISA, V-PISA-T32 on
+accounts 2/1, UNA3-BAL account 1, UNA3-BIR-VERDICT account 2). Nothing else live on account 4 outside the programme.
