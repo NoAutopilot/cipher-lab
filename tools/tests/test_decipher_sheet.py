@@ -14,6 +14,14 @@ GRA = os.path.join(ROOT, 'ciphers', 'fr2980-gramont')
 DAN = os.path.join(ROOT, 'ciphers', 'fr20140-danzay-1557')
 BIR = os.path.join(ROOT, 'ciphers', 'nevers-birago-fr3251-1572')
 TMP = tempfile.mkdtemp()
+# the live register refuses Birago 1572 sheets while ASKS 118 is open (MQS-SHEET-REFUSAL); these regressions run against a temp
+# copy with the open sorts emptied, written only to TMP (the refusal itself: test_decipher_sheet_refusal.py)
+NOBIR = os.path.join(TMP, 'families_nobir.tsv')
+with open(ds.FAMILIES, encoding='utf-8') as _f, open(NOBIR, 'w', encoding='utf-8') as _g:
+    for _i, _l in enumerate(_f):
+        _p = _l.rstrip('\n').split('\t')
+        if _i and len(_p) > 1: _p[1] = ''
+        _g.write('\t'.join(_p) + '\n')
 fails = 0
 def t(ok, msg):
     global fails
@@ -131,7 +139,7 @@ rows = open(rep).read().split('\n')[1:]
 t(any('\tFalse\t' in r and r.startswith('line') for r in rows if r), '--tile-report flags the blank line crop (nonempty False)')
 bs = ds.tile_stats(white)
 t(not bs['nonempty'] and not bs['ink_ok'], 'tile_stats: blank crop is empty and fails the ink floor')
-rc, doc = render('reading', BIR, 'f178r.html', '--job', 'f178r', '--lines', 'L01-L02')
+rc, doc = render('reading', BIR, 'f178r.html', '--job', 'f178r', '--lines', 'L01-L02', '--families', NOBIR)
 t('not aligned to the image' in doc, 'Birago f.178r (no boxes in the map): "not aligned" notice present')
 
 # 8. no brace is drawn from a key_conflicts-style count file
@@ -202,7 +210,7 @@ for job in ('f178v', 'f179r'):
         ok_cut += bool((np.array(bx.cut([b[0][0]])) == ref).all()) and b[0][0] == next(
             m_['sid'] for m_ in bx.rows if m_['line'] == f"{r['folio']}_{r['line']}" and int(m_['pos']) == r['pos'] and m_.get('op', '1:1') == '1:1')
 t(n11 > 600 and ok_cut == n11, f'R-K1 (regression): every 1:1 tile cut at the box the map assigns ({ok_cut}/{n11})')
-rc, doc = render('reading', BIR, 'rk1.html', '--job', 'f178v', '--tile-report', os.path.join(TMP, 'rk1.tsv'))
+rc, doc = render('reading', BIR, 'rk1.html', '--job', 'f178v', '--tile-report', os.path.join(TMP, 'rk1.tsv'), '--families', NOBIR)
 ns = types.SimpleNamespace(config=None, ciphertext=None, key=None, exceptions=None, style=None, reading=None, tokens=None)
 jb = ds.select_job(decode_key.load_config(BIR, ns), 'f178v')
 recs, key, ct = ds.graded(BIR, jb)

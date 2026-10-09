@@ -36,7 +36,10 @@ Output: one self-contained HTML (tiles as JPEG data URIs, quality 70, at most 3 
 tools/browser_fetch.js. Each HTML embeds a sha256 of every input; --check re-renders and exits 1 when stale (rule 7); the render
 time and commit in the footer are volatile and ignored by --check. --tile-report TSV: per tile, crop non-empty, ink share inside
 [INK_LO, INK_HI] (pre-registered in tools/tests/PREREG-MQS-SHEETS.md G4), and label/value agreement; used by A2's K3.
-Refuses a folder carrying RESTRICTED.md and any path under restricted/.
+Refuses a folder carrying RESTRICTED.md and any path under restricted/, and any target whose key family has an open blind sort
+in tools/data/sorter_families.tsv (open_blind_sorts non-empty; TRANSCRIPTION.md blind first, MQS-SHEET-REFUSAL 9 Oct 2026): the
+family is --key-family, else KEY_FAMILY_TARGETS by folder, else the folder holding a key path the job uses. --families TSV reads
+another register (tests). Must catch: the Birago 1572 family (ASKS 118). Must NOT block: Gramont, Danzay (no open sort).
 
 Scope (Usage 8a). Meant to catch: a sheet built from a tile map that places an image at the wrong box (R-K1/KM tests), a stale
 sheet after a key edit (--check), a blank crop (--tile-report). Must NOT flag: a sheet with no swap record (no "or vice versa"
@@ -82,6 +85,10 @@ FOOTERS = {  # whose key, per target (brief, Unit 3 Footer)
                         img='Thomas T. Eckert Papers, mssEC 19, The Huntington Library, San Marino, California; '
                             'rights statement: ciphers/eckert-1864/images/README.md "Rights"'),
 }
+FAMILIES = os.path.join(ROOT, 'tools', 'data', 'sorter_families.tsv')
+KEY_FAMILY_TARGETS = {  # sorter family -> target folders keyed in it (birago-nevers-1571 is the Nov 1571 numerical key: not here)
+    'nevers-birago-1572': ('nevers-birago-fr3251-1572', 'birago-fr3252-1571-72'),
+}
 FUNCTION_WORDS = set('de la le les et que qui du des en un une a au aux ne se ce il elle sa son ses par pour sur avec the and of to in is that'.split())
 TITLE_WORDS = set('roy roi reyne reine monsieur madame seigneur duc comte cardinal pape prince king queen lord duke earl'.split())
 
@@ -93,6 +100,23 @@ def refuse_restricted(target):
     if os.path.exists(os.path.join(t, 'RESTRICTED.md')) or 'restricted' in t.split(os.sep):
         raise SystemExit(f'decipher_sheet: {target} is restricted material (RESTRICTED.md or a restricted/ path); refused')
 
+
+def key_family(target, key_paths=(), explicit=None):
+    if explicit:
+        return explicit
+    dirs = {os.path.basename(os.path.abspath(target))} | {os.path.basename(os.path.dirname(os.path.abspath(k))) for k in key_paths}
+    return next((f for f, ts in KEY_FAMILY_TARGETS.items() if dirs & set(ts)), None)
+
+def refuse_open_sort(target, key_paths=(), explicit=None, fam_path=None):
+    fam = key_family(target, key_paths, explicit)
+    if not fam:
+        return
+    with open(fam_path or FAMILIES, encoding='utf-8') as f:
+        for r in csv.DictReader(f, delimiter='\t'):
+            if r.get('family') == fam and (r.get('open_blind_sorts') or '').strip():
+                raise SystemExit(f'decipher_sheet: key family {fam!r} has open blind sorts ({r["open_blind_sorts"].strip()}) in '
+                                 f'tools/data/sorter_families.tsv; no key or reading sheet until they are landed (TRANSCRIPTION.md, '
+                                 f'blind first); refused')
 
 def select_job(jobs, name):
     if not name:
@@ -635,11 +659,13 @@ def header_html(ctx, kind):
 
 def build(a):
     refuse_restricted(a.target)
+    refuse_open_sort(a.target, explicit=a.key_family, fam_path=a.families)
     os.chdir(ROOT)
     inputs = []
     note = lambda p: inputs.append((os.path.relpath(p, ROOT) if os.path.isabs(p) else p, sha(p)))
     target = os.path.abspath(a.target)
     if a.tokens_tsv:
+        refuse_open_sort(target, [a.key_tsv] if a.key_tsv else [], a.key_family, a.families)
         recs, key = tokens_from_tsv(a.tokens_tsv, a.key_tsv); job = {}
         note(a.tokens_tsv)
         if a.key_tsv:
@@ -656,6 +682,8 @@ def build(a):
             note(os.path.join(target, 'decode.json'))
         note(os.path.join(target, ct))
         ks = job.get('key', 'key.tsv')
+        refuse_open_sort(target, [os.path.normpath(os.path.join(target, k)) for k in ([ks] if isinstance(ks, str) else ks)],
+                         a.key_family, a.families)
         for k in ([ks] if isinstance(ks, str) else ks):
             note(os.path.join(target, k))
         ex = os.path.join(target, job.get('exceptions', 'exceptions.tsv'))
@@ -737,6 +765,8 @@ def main(argv=None):
     ap.add_argument('--title'); ap.add_argument('--meta', action='append'); ap.add_argument('--leaf-url')
     ap.add_argument('--key-credit'); ap.add_argument('--image-credit'); ap.add_argument('--allow-d0', action='store_true')
     ap.add_argument('--out', required=True); ap.add_argument('--png', action='store_true'); ap.add_argument('--pdf', action='store_true')
+    ap.add_argument('--key-family', help='sorter key family of this target (default: KEY_FAMILY_TARGETS, then key paths)')
+    ap.add_argument('--families', help='sorter family register (default tools/data/sorter_families.tsv; tests)')
     ap.add_argument('--check', action='store_true'); ap.add_argument('--tile-report')
     a = ap.parse_args(argv)
     if a.config:
