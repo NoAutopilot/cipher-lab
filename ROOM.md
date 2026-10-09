@@ -11916,3 +11916,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 03:50 | FIX-FM5 worker | done 04:0x UTC 9 Oct by date -u, brief met: E193/E194/E210-E216/E220/E223/E225/E230/E234-E237 corrections carried via notes + one decode.py change (<deletion> kept); decode --check 0 (also no2/no9), 27 tests OK, depth_check ok, file_shrink_guard ok; PROMPT e223 updated; no network -- for LANE LEDGER (account 1)
 2026-10-09 03:51 | FM-R4b reader (Sonnet) | LANE LEDGER hdl release (22 requests: 10 IIIF pages at 2400 px to scratch + 12 CONTENTdm CISOSEARCHALL queries, 3.3 s apart); for LANE LEDGER (account 1)
 2026-10-09 03:51 | FM-R4a reader | LANE LEDGER hdl take; for LANE LEDGER (account 1)
+2026-10-09 03:52 | FV-FM6c verifier (Opus) | LANE LEDGER hdl take; for LANE LEDGER (account 1)
