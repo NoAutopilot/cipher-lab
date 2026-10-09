@@ -1349,5 +1349,65 @@ Maj. Eckert Wash'n. Hill ton head August [26] [By the way of] [Monroe] {time: 4 
 
 Code-word tokens: H 33.
 
-Totals over the 203 entries: H 3486, C 30, I 19, M 27, U 10.
+**E260 | Page 243 | 5787 | mssEC 25 (obj 5952, pointer 5787), 5 Oct 1864 Ft Monroe, Sheldon to R. O'Brien at Butler's Hd Qrs: Gen. Ingalls's claim on the steamer City of Hudson, water short; signed R. C. Webster (FM-R4b; row 5787/1; image-read at 2400 px)**
+
+{time: 9.30 AM} [5] for [Maj Gen B. F. Butler] [.] [General] In galls [Telegraph (-ed, -ing)]'s that the City of Hudson was ordered to [Report] to him perm repaired [.] No such orders were received and I have answered him to this effect [.] If [General] In galls orders her toby sent to [City Point] shall I comply [?] we are almost destitute of water [Transportation] [At the] present time  {tail: [signed] Are See Webster [Colonel] and [Quartermaster] Cloudy here . Geo. D. Sheldon}
+
+Code-word tokens: H 16, M 1.
+
+**E261 | Page 85 | 5629 | mssEC 25 (obj 5952, pointer 5629), 24 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert for the Quartermaster General: requisition of 12 Apr, mules for Capt. Farquhar's pontoon train, 200 wagons; signed Herman Biggs (FM-R4b; row 5629/1; image-read at 2400 px)**
+
+for [Qr Master Genl U.S.] [.] on [12] April I made requisition for [100] [Guard (-ed, -ing)] [Horse]'s for [Quartermaster] use [.] [Captain] Farquhor requires [140] mules for [Pontoon] train [,] when can they be furnished [?] in course of [2] or [3] weeks we shall probably need [200] additional wagons & teams complete [,] would suggest the be in readiness  {tail: [signed] Her man Bugs Lieutenant [Colonel] & [Quartermaster] {time: 1.30 PM} Cloudy Geo D Sheldon}
+
+Code-word tokens: H 25.
+
+**E262 | Page 197 | 5741 | mssEC 25 (obj 5952, pointer 5741), 12 June 1864 Gen. Butler's Hd Qrs, R. O'Brien to Maj. Eckert: rebels(?) arriving, cable for the James and for Appomattox (FM-R4b; row 5741/0; image-read at 2400 px)**
+
+Whiskey arriving here in considerable numbers [.] every thing indicates work for as this side of [James] [.] would it not be well to have [Men] & material ready for short notice [.] we will need I think sooner or later cable for [James] [Maj Gen B. F. Butler] has asked again for one for apple mattox but I have told him there is none on hand at present please send hoe man here R OBrien
+
+Code-word tokens: H 7.
+
+**E263 | Page 268 | 5812 | mssEC 25 (obj 5952, pointer 5812), 29 Nov 1864 Ft Monroe, Sheldon to the Cipher Agent City Point, for Capt. William T. Howell, Grant's Hd Qrs: empty steamers to Washington, signed Rufus Ingalls, Chief Quartermaster (FM-R4b; row 5812/0; image-read at 2400 px)**
+
+[Monroe] {time: 3.30 PM} for [Captain] William T. Howell [Maj Genl U.S. Grant]'s [Head Quarters] [City Point] [.] tell [Colonel] Bradley to send all Empty [Steam]ers to [Washington] to bring down [Troops] [.] Let them be sent as fast as they arrive and become [Light] [.] See that estimates are prepared of material still required for buildings already in process of Erection  {tail: [signed] rough us in galls [Brigadier General] Chief [Quartermaster] Geo D Sheldon}
+
+Code-word tokens: H 17.
+
+**E264 | Page 66 | 5610 | mssEC 25 (obj 5952, pointer 5610), 19 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert for the General-in-Chief, Washington: Truman Seymour's application to leave the Department of the South (FM-R4b; row 5610/1; image-read at 2400 px)**
+
+for [General-in-Chief] [Washington] [.] I am ordered to [New York] to await decision upon an application to leave the [Department] [Of the] [South] [.] If there are orders for me I should be glad to be notified by [Telegraph (-ed, -ing)] at once [,] if not I request permission to visit [Washington] that I may appear before the investigating Committee  {tail: [signed] Tr Seymour [Brigadier General] {time: 10 AM} Cloudy Windy Geo D Sheldon}
+
+Code-word tokens: H 14.
+
+**E265 | Page 278 | 5822 | mssEC 25 (obj 5952, pointer 5822), 8 Dec 1864 Hd Qrs A. of J., R. O'Brien to G. D. Sheldon Ft Monroe, for Porter: the monitors and the vessels at Aiken's Landing below Dutch Gap, from Wm A. Parker (FM-R4b; row 5822/1; image-read at 2400 px)**
+
+{time: 5 PM} for [D. D. Porter] [.] the mendota and Miami are now at [City Point] [,] also the [3] manitous [.] have ordered the cannon cus and Mahopac to hemp done [Road] [.] I shall proceed down the [River] as you [Command = Er (-ed, -ing)] [.] I have moved all the vassals to ache hens landing below german gape  {tail: [signed] William aye parker you fustah german R. O'Brien}
+
+Code-word tokens: H 12, M 1.
+
+**E266 | Page 65 | 5609 | mssEC 25 (obj 5952, pointer 5609), 18 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert for the Quartermaster General: shelter tents and 500 artillery horses; signed Herman Biggs (FM-R4b; row 5609/2; image-read at 2400 px)**
+
+for [Qr Master Genl U.S.] [.] [10000] additional shelter tents are needed here instead of [20000] as requested by client Webster [.] [500] [Artillery] [Horse]'s are also needed at once [.] please let me know if I can count on the amount of water [Transportation] I asked for and how Iron  {tail: [signed] Her man Biggs lent [Colonel] & Chief [Quartermaster] Geo D Sheldon}
+
+Code-word tokens: H 16.
+
+**E267 | Page 246 | 5790 | mssEC 25 (obj 5952, pointer 5790), 10 Oct 1864 Washington, T. T. Eckert to W. J. Dealy: meet the Secretary of War, who left Washington on the Keyport (FM-R4b; row 5790/0; image-read at 2400 px)**
+
+[Secretary of War] [Left] here at {time: 1 PM} on the Keypost for [City Point] [.] I wish you to meat him [At the] wharf on arrival at [Monroe] sea him in person and tell him that I directed you to do so [.] deliver any telegrams that may B sent you for him and get any thing he may have T. T. Eckert
+
+Code-word tokens: H 8.
+
+**E268 | Page 198 | 5742 | mssEC 25 (obj 5952, pointer 5742), 12 June 1864 7.30 PM Gen. Butler's Hd Qrs, R. O'Brien to Sheldon for Col. Biggs: plank afloat, no scantling, an operator wanted (FM-R4b; row 5742/1; image-read at 2400 px)**
+
+Geo D Sheldon Ft. Monroe [Head Quarters] {time: 7.30 PM} [12] for [Colonel] Biggs [.] put afloat all the [3] and [2] inch you can & [100000] feet [1] inch dont want scantling [.] dont start vessel up until you get further orders  {tail: [signed] [Colonel] shaffer chief of staff please hurry me an operator R OBrien}
+
+Code-word tokens: H 14.
+
+**E269 | Page 231 | 5775 | mssEC 25 (obj 5952, pointer 5775), 30 July 1864 Baltimore, J. W. Sampson to Sheldon for Col. Biggs: removal of the York River light vessel (FM-R4b; row 5775/1; image-read at 2400 px)**
+
+[Baltimore] [30] {time: 10 AM} for Biggs [Quartermaster] [Monroe] [.] authority is received to remove York [River] [Light] vessel [.] if you have the means take her to hamp tun [Road]'s let me know if the service can be done by you  {tail: [signed] I Mc Garvey for [Light] house inspector J. W. Sampson}
+
+Code-word tokens: H 12.
+
+Totals over the 213 entries: H 3627, C 30, I 19, M 29, U 10.
 <!-- decode.py: derived block ends -->

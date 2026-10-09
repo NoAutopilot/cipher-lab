@@ -1,0 +1,110 @@
+F1 tokens=45 no1=20(0.44) no2=17(0.38) no9=5(0.11)
+  no1: H17 C0 I0 M0
+    {time: 9.30 AM} [5] for [Maj Gen B. F. Butler] [.] [General] In galls [Telegraph (-ed, -ing)]'s that the City of Hudson was ordered to [Report] to him perm repaired [.] No such orders were received and I have answered him to this effect [.] If [General] In galls orders her toby sent to [City Point] shall I comply [?] we are almost destitute of water [Transportation] [At the] present time  {tail: [signed] Are See [signed] [Colonel] and winton Cloudy here . Geo. D. Sheldon}
+  no2: H16 C0 I0 M0
+    {time: 9.30 AM} [Failure] for Knox unity [Harbor] In galls [Valley]'s that the City of [13] was ordered to [South] to him perm repaired [Sunday] No such orders were received and I have answered him to this effect [1000] If [Helping] In galls orders her toby sent to [Cairo] shall I comply [Infantry] we are almost destitute of water [Train] [Available] present time [Surrounding] Are See [Surrounding] [Cars] and winton Cloudy here . Geo. D. Sheldon
+  no9: H5 C0 I0 M0
+    {time: 6 AM} plaster for Knox unity Shelby In galls wrangles that the City of Hudson was ordered to [Equipage] to him perm repaired [Movement] No such orders were received and I have answered him to this effect [Movement] If Shelter In galls orders her toby sent to [W. S. Sherman] shall I comply sugar we are almost destitute of water whig optic present time webster Are See Webster paradise and winton Cloudy here . Geo. D. Sheldon
+  no1shuf: H17 C0 I0 M0
+    {time: 9.30 AM} [5] for [Maj Gen Geo. H. Thomas] [.] [Danger] In galls [Enemy]'s that the City of Hudson was ordered to [Camp] to him perm repaired [.] No such orders were received and I have answered him to this effect [.] If [Movement] In galls orders her toby sent to [Gunboat] shall I comply [?] we are almost destitute of water [Telegraph (-ed, -ing)] [Maj Gen J. G. Parke] present time  {tail: [signed] Are See [signed] [Transport (-ed, -ing)] and winton Cloudy here . Geo. D. Sheldon}
+  no2shuf: H15 C1 I0 M0
+    {time: 9.30 AM} [Evacuation] for Knox unity [Secretary of War] In galls [Success]'s that the City of [13] was ordered to [Lieut Gen U.S. Grant] to him perm repaired [Carter S.P.] No such orders were received and I have answered him to this effect [1000] If [Tar R] In galls orders her toby sent to [Hatch J P] shall I comply [City Point] we are almost destitute of water [Philadelphia] [Maj Gen E R S Canby] present time [Tuckers Station] Are See [Tuckers Station] [Enemy] and winton Cloudy here . Geo. D. Sheldon
+F2 tokens=51 no1=27(0.53) no2=17(0.33) no9=6(0.12)
+  no1: H25 C0 I0 M0
+    for [Qr Master Genl U.S.] [.] on [12] April I made requisition for [100] [Guard (-ed, -ing)] [Horse]'s for [Quartermaster] use [.] [Captain] Farquhor requires [140] mules for [Pontoon] train [,] when can they be furnished [?] in course of [2] or [3] weeks we shall probably need [200] additional wagons & teams complete [,] would suggest the be in readiness  {tail: [signed] Her man Bugs Lieutenant [Colonel] & [Quartermaster] {time: 1.30 PM} Cloudy Geo D Sheldon}
+  no2: H16 C0 I0 M0
+    for [Secretary of Treasury] unity on [Duck Creek] April I made requisition for plug publish [Guard (-ed, -ing)] [Impregnable]'s for [Rations] use [Sunday] [Battled [?]] Farquhor requires plunge prolong lampoon mules for [Rebel] train [Cavalry] when can they be furnished [Infantry] in course of plank or [Concentrate (-ed, -ing) [#]] weeks we shall probably need peach wine additional wagons & teams complete [Cavalry] would suggest the be in readiness [Surrounding] Her man Bugs Lieutenant [Casualties] & [Rifle Pits] {
+  no9: H6 C0 I0 M0
+    for Bender unity on flood April I made requisition for plug publish saddle [River]'s for [Quartermaster] use [Movement] princess Farquhor requires plunge prolong lampoon mules for [Major] train pedlar when can they be furnished star in course of plank or perfume weeks we shall probably need peach wine additional wagons & teams complete Pekin would suggest the be in readiness Webster Her man Bugs Lieutenant pandora & [Quartermaster] {time: 2 PM} Cloudy Geo D Sheldon
+  no1shuf: H24 C1 I0 M0
+    for [telegraphed] [.] on [12] April I made requisition for [100] [Orange C.H.] [Lafayette]'s for [North] use [.] [Drove in Enemys pickets] Farquhor requires [140] mules for [Parole] train [,] when can they be furnished [?] in course of [2] or [3] weeks we shall probably need [200] additional wagons & teams complete [,] would suggest the be in readiness  {tail: [signed] Her man Bugs Lieutenant [Cleveland] & [Chickamauga] {time: 1.30 PM} Cloudy Geo D Sheldon}
+  no2shuf: H16 C0 I0 M0
+    for [Ammunition] unity on [Weldon] April I made requisition for plug publish [Transportation] [Steam]'s for [Steele Fdk] use [Carter S.P.] [Yazoo] Farquhor requires plunge prolong lampoon mules for [Marmaduke] train [Ferrero [?] E] when can they be furnished [Sheridan P H] in course of plank or [Encounter] weeks we shall probably need peach wine additional wagons & teams complete [Jasper] would suggest the be in readiness [Tuckers Station] Her man Bugs Lieutenant [Banks N P] & [Fredericksburg] {time: 1 PM} Cloudy G
+F3 tokens=42 no1=11(0.26) no2=6(0.14) no9=3(0.07)
+  no1: H8 C0 I0 M0
+    Whiskey arriving here in considerable numbers [.] every thing indicates work for as this side of [James] [.] would it not be well to have [Men] & material ready for short notice [.] we will need I think sooner or later cable for [James] [Maj Gen B. F. Butler] has asked again for one for [Sumter] mattox but I have told him there is none on hand at present please send hoe man here R OBrien
+  no2: H6 C0 I0 M0
+    Whiskey arriving here in considerable numbers [Sunday] every thing indicates work for as this side of [Pennsylvania] unity would it not be well to have [Near] & material ready for short notice [1000] we will need I think sooner or later cable for [Pennsylvania] Knox has asked again for one for [Tennessee] mattox but I have told him there is none on hand at present please send hoe man here R OBrien
+  no9: H3 C0 I0 M0
+    Whiskey arriving here in considerable numbers [Movement] every thing indicates work for as this side of Bergen unity would it not be well to have [Transports] & material ready for short notice [Movement] we will need I think sooner or later cable for Bergen Knox has asked again for one for apple mattox but I have told him there is none on hand at present please send hoe man here R OBrien
+  no1shuf: H8 C0 I0 M0
+    Whiskey arriving here in considerable numbers [.] every thing indicates work for as this side of [Volunteering] [.] would it not be well to have [Ohio] & material ready for short notice [.] we will need I think sooner or later cable for [Volunteering] [Maj Gen Geo. H. Thomas] has asked again for one for [Transportation] mattox but I have told him there is none on hand at present please send hoe man here R OBrien
+  no2shuf: H6 C0 I0 M0
+    Whiskey arriving here in considerable numbers [Carter S.P.] every thing indicates work for as this side of [Nashville] unity would it not be well to have [Surround] & material ready for short notice [1000] we will need I think sooner or later cable for [Nashville] Knox has asked again for one for [Brigade] mattox but I have told him there is none on hand at present please send hoe man here R OBrien
+F4 tokens=47 no1=19(0.40) no2=16(0.34) no9=7(0.15)
+  no1: H18 C0 I0 M0
+    [Monroe] {time: 3.30 PM} for [Captain] [100] T. Howell [Maj Genl U.S. Grant]'s [Head Quarters] [City Point] [.] tell [Colonel] Bradley to send all Empty [Steam]ers to [Washington] to bring down [Troops] [.] Let them be sent as fast as they arrive and become [Light] [.] See that estimates are prepared of material still required for buildings already in process of Erection  {tail: [signed] rough us in galls [Brigadier General] Chief [Quartermaster] Geo D Sheldon}
+  no2: H16 C0 I0 M0
+    [Tennessee] {time: 3 PM} for [Battled [?]] William T. Howell [Imboden]'s [Head Quarters] [Cairo] unity tell [Casualties] Bradley to send all Empty [Transportation]ers to [Maj Gen B. F. Butler] to bring down [Unite (-ed, -ing)] [Sunday] Let them be sent as fast as they arrive and become [Menace (-ed, -ing)] [1000] See that estimates are prepared of material still required for buildings already in process of Erection [Surrendered] rough us in galls [Ammunition] Chief [Rifle Pits] Geo D Sheldon
+  no9: H7 C0 I0 M0
+    Animal {time: 6 PM} for princess William T. Howell Johns snake [W. S. Sherman] unity tell pandora Bradley to send all Empty Weaselers to grapes to bring down Whist [Movement] Let them be sent as fast as they arrive and become [Transportation] [Movement] See that estimates are prepared of material still required for buildings already in process of Erection Walrus rough us in galls [Yorktown] Chief [Quartermaster] Geo D Sheldon
+  no1shuf: H18 C0 I0 M0
+    [Newbern] {time: 3.30 PM} for [Drove in Enemys pickets] [100] T. Howell [Diversion]'s [Potomac] [Red River] [.] tell [Cleveland] Bradley to send all Empty [Bragg]ers to [Colonel] to bring down [Effective] [.] Let them be sent as fast as they arrive and become [Raleigh] [.] See that estimates are prepared of material still required for buildings already in process of Erection  {tail: [signed] rough us in galls [Holly Springs] Chief [Chickamauga] Geo D Sheldon}
+  no2shuf: H16 C0 I0 M0
+    [Wheeler] {time: 3 PM} for [Yazoo] William T. Howell [Communicate (-ed, -ing)]'s [Arizona] [Saturday] unity tell [Banks N P] Bradley to send all Empty [Front]ers to [Follow (-ed, -ing) [#]] to bring down [Pursue (-ed, -ing)] [Carter S.P.] Let them be sent as fast as they arrive and become [Confederate] [1000] See that estimates are prepared of material still required for buildings already in process of Erection [Captain] rough us in galls [Reverse] Chief [Fredericksburg] Geo D Sheldon
+F5 tokens=39 no1=18(0.46) no2=15(0.38) no9=6(0.15)
+  no1: H15 C0 I0 M0
+    for [General-in-Chief] [Washington] [.] I am ordered to [New York] to await decision upon an application to leave the [Department] [Of the] [South] [.] If there are orders for me I should be glad to be notified by [Telegraph (-ed, -ing)] at once [,] if not I request permission to visit [Washington] that I may appear before the investigating Committee  {tail: [signed] Tr [Fortifications] [Brigadier General] {time: 10 AM} Cloudy Windy Geo D Sheldon}
+  no2: H13 C0 I0 M0
+    for [Ewell] [Maj Gen B. F. Butler] unity I am ordered to [Macon] to await decision upon an application to leave the [Deserter] [Pursue (-ed, -ing)] Waxy [1000] If there are orders for me I should be glad to be notified by [Valley] at once [Cavalry] if not I request permission to visit [Maj Gen B. F. Butler] that I may appear before the investigating Committee [Saturday] Tr [Found] [Ammunition] {time: 10 AM} Cloudy Windy Geo D Sheldon
+  no9: H6 C0 I0 M0
+    for Italy growl unity I am ordered to [Arkansas (river)] to await decision upon an application to leave the quadrant Torch Waxy [Movement] If there are orders for me I should be glad to be notified by wrangle at once Pekin if not I request permission to visit grapes that I may appear before the investigating Committee [Troops] Tr [Infantry] [Yorktown] {time: 7 AM} Cloudy Windy Geo D Sheldon
+  no1shuf: H15 C0 I0 M0
+    for [Rail Road] [Gen J. M. Palmer] [.] I am ordered to [Meridian] to await decision upon an application to leave the [Knoxville] [Goldsboro] [Valley] [.] If there are orders for me I should be glad to be notified by [Enemy] at once [,] if not I request permission to visit [Colonel] that I may appear before the investigating Committee  {tail: [signed] Tr [Junction] [Holly Springs] {time: 10 AM} Cloudy Windy Geo D Sheldon}
+  no2shuf: H13 C0 I0 M0
+    for [Early] [Aquia Creek] unity I am ordered to [Wilcox O B] to await decision upon an application to leave the [Knoxville] [Unite (-ed, -ing)] Waxy [1000] If there are orders for me I should be glad to be notified by [Success] at once [Jasper] if not I request permission to visit [Follow (-ed, -ing) [#]] that I may appear before the investigating Committee [Hardee] Tr [Harass (-ed, -ing)] [Reverse] {time: 10 AM} Cloudy Windy Geo D Sheldon
+F6 tokens=41 no1=15(0.37) no2=11(0.27) no9=5(0.12)
+  no1: H14 C0 I0 M0
+    {time: 5 PM} for [D. D. Porter] [.] the mendota and Miami are now at [City Point] [,] also the [3] manitous [.] have ordered the cannon cus and Mahopac to [Breckenridge] done wylies [.] I shall proceed down the [River] as you [Command = Er (-ed, -ing)] [.] I have moved all the vassals to ache hens landing below german gape  {tail: [signed] [100] aye parker you fustah german R. O'Brien}
+  no2: H10 C0 I0 M0
+    {time: 5.30 PM} for [Slocum H W] [Sunday] the mendota and Miami are now at [Cairo] [Cavalry] also the pebble manitous [1000] have ordered the cannon cus and Mahopac to [Summerville] done wylies [Sunday] I shall proceed down the [Subsistence] as you polka unity I have moved all the vassals to ache hens landing below german gape [Surrounding] William aye parker you fustah german R. O'Brien
+  no9: H5 C0 I0 M0
+    {time: 9 PM} for Niagara [Movement] the mendota and Miami are now at [W. S. Sherman] pedlar also the pebble manitous [Movement] have ordered the cannon cus and Mahopac to hemp done wylies [Movement] I shall proceed down the windpipe as you polka unity I have moved all the vassals to ache hens landing below german gape webster William aye parker you fustah german R. O'Brien
+  no1shuf: H14 C0 I0 M0
+    {time: 5 PM} for [Government] [.] the mendota and Miami are now at [Red River] [,] also the [3] manitous [.] have ordered the cannon cus and Mahopac to [Bellefonte] done wylies [.] I shall proceed down the [Trenton] as you [Maj Gen W. T. Sherman] [.] I have moved all the vassals to ache hens landing below german gape  {tail: [signed] [100] aye parker you fustah german R. O'Brien}
+  no2shuf: H10 C0 I0 M0
+    {time: 5.30 PM} for [Alexandria] [Carter S.P.] the mendota and Miami are now at [Saturday] [Ferrero [?] E] also the pebble manitous [1000] have ordered the cannon cus and Mahopac to [Shenandoah] done wylies [Carter S.P.] I shall proceed down the [Fork] as you polka unity I have moved all the vassals to ache hens landing below german gape [Tuckers Station] William aye parker you fustah german R. O'Brien
+F7 tokens=44 no1=20(0.45) no2=14(0.32) no9=5(0.11)
+  no1: H18 C0 I0 M0
+    for [Qr Master Genl U.S.] [.] [10000] additional [General] tents are needed here instead of [20000] as requested by client  {tail: [signed] [.] [500] [Artillery] [Horse]'s are also needed at once [.] please let me know if I can count on the amount of water [Transportation] I asked for and how Iron [signed] Her man Biggs lent [Colonel] & Chief [Quartermaster] Geo D Sheldon}
+  no2: H13 C0 I0 M0
+    for [Secretary of Treasury] [Sunday] [Conasauga River] promise additional [Helping] tents are needed here instead of harrow purple as requested by client [Surrounding] unity [Failure] prolong [Smith] [Impregnable]'s are also needed at once [1000] please let me know if I can count on the amount of water [Train] I asked for and how Iron [100] Her man Biggs lent [Casualties] & Chief [Rations] Geo D Sheldon
+  no9: H5 C0 I0 M0
+    for Bender [Movement] federal promise additional shelter tents are needed here instead of harrow purple as requested by client Webster unity plaster prolong nuptial [River]'s are also needed at once [Movement] please let me know if I can count on the amount of water Whig I asked for and how Iron [Troops] Her man Biggs lent pandora & Chief [Quartermaster] Geo D Sheldon
+  no1shuf: H17 C1 I0 M0
+    for [telegraphed] [.] [10000] additional [Movement] tents are needed here instead of [20000] as requested by client  {tail: [signed] [.] [500] [Department] [Lafayette]'s are also needed at once [.] please let me know if I can count on the amount of water [Telegraph (-ed, -ing)] I asked for and how Iron [signed] Her man Biggs lent [Cleveland] & Chief [North] Geo D Sheldon}
+  no2shuf: H13 C0 I0 M0
+    for [Ammunition] [Carter S.P.] [Winchester] promise additional [Tar R] tents are needed here instead of harrow purple as requested by client [Tuckers Station] unity [Evacuation] prolong [Kelly B F] [Steam]'s are also needed at once [1000] please let me know if I can count on the amount of water [Philadelphia] I asked for and how Iron [100] Her man Biggs lent [Banks N P] & Chief [Steele Fdk] Geo D Sheldon
+F8 tokens=27 no1=11(0.41) no2=10(0.37) no9=5(0.19)
+  no1: H10 C0 I0 M0
+    [Secretary of War] [Left] here at {time: 1 PM} on the Key post for [City Point] [.] I wish you to meat him [At the] [Today] on arrival at [Monroe] sea him in [5] and tell him that I directed you to do so [.] deliver any telegrams that may B sent you for him and get any thing he may have T. T. Eckert
+  no2: H8 C1 I0 M0
+    [Delaware] [Necessary] here at {time: 1.30 PM} on the Key post for [Cairo] [1000] I wish you to meat him [Available] [Troops] on arrival at [Tennessee] sea him in person and tell him that I directed you to do so unity deliver any [Withdrawn]'s that may B sent you for him and get any thing he may have T. T. Eckert
+  no9: H5 C0 I0 M0
+    Brutus [Transportation] here at {time: 1 PM} on the Key post for [W. S. Sherman] [Movement] I wish you to meat him optic [Subsistence] on arrival at appian sea him in person and tell him that I directed you to do so unity deliver any telegrams that may B sent you for him and get any thing he may have T. T. Eckert
+  no1shuf: H10 C0 I0 M0
+    [Movement] [Selma] here at {time: 1 PM} on the Key post for [Gunboat] [.] I wish you to meat him [Maj Gen J. G. Parke] [Reinforce (-ed, -ing)] on arrival at [Fortify (-ed, -ing)] sea him in [5] and tell him that I directed you to do so [.] deliver any telegrams that may B sent you for him and get any thing he may have T. T. Eckert
+  no2shuf: H8 C1 I0 M0
+    [Drove in our Pickets] [Williamsburg] here at {time: 1.30 PM} on the Key post for [Hatch J P] [1000] I wish you to meat him [Maj Gen E R S Canby] [Chalmers] on arrival at [Charleston] sea him in person and tell him that I directed you to do so unity deliver any [to-day]s that may B sent you for him and get any thing he may have T. T. Eckert
+F9 tokens=44 no1=16(0.36) no2=10(0.23) no9=3(0.07)
+  no1: H14 C0 I0 M0
+    Geo D Sheldon Ft. Monroe [Head Quarters] {time: 7.30 PM} [12] for [Colonel] Biggs [.] put afloat all the [3] and [2] inch you can & [100000] feet [1] inch dont want scantling [.] dont start vessel up until you get further orders  {tail: [signed] [Colonel] shaffer chief of staff please hurry me an operator R OBrien}
+  no2: H9 C0 I0 M0
+    Geo D Sheldon Ft. Monroe [Head Quarters] {time: 7 PM} forbid for [Cars] Biggs [Sunday] put afloat all the [Concentrate (-ed, -ing) [#]] and plank inch you can & plug prolong promise feet plug inch dont want scantling [Sunday] dont start vessel up until you get further orders [Surrendered] [Cars] shaffer chief of [Station] please hurry me an operator R OBrien
+  no9: H3 C0 I0 M0
+    Geo D Sheldon Ft. Monroe snake {time: 2.30 PM} forbid for paradise Biggs [Movement] put afloat all the perfume and plank inch you can & plug prolong promise feet plug inch dont want scantling [Movement] dont start vessel up until you get further orders walrus paradise shaffer chief of staff please hurry me an operator R OBrien
+  no1shuf: H14 C0 I0 M0
+    Geo D Sheldon Ft. Monroe [Potomac] {time: 7.30 PM} [12] for [Transport (-ed, -ing)] Biggs [.] put afloat all the [3] and [2] inch you can & [100000] feet [1] inch dont want scantling [.] dont start vessel up until you get further orders  {tail: [signed] [Transport (-ed, -ing)] shaffer chief of staff please hurry me an operator R OBrien}
+  no2shuf: H9 C0 I0 M0
+    Geo D Sheldon Ft. Monroe [Arizona] {time: 7 PM} forbid for [Enemy] Biggs [Carter S.P.] put afloat all the [Encounter] and plank inch you can & plug prolong promise feet plug inch dont want scantling [Carter S.P.] dont start vessel up until you get further orders [Captain] [Enemy] shaffer chief of [West] please hurry me an operator R OBrien
+F10 tokens=32 no1=13(0.41) no2=14(0.44) no9=8(0.25)
+  no1: H13 C0 I0 M0
+    [Baltimore] [30] {time: 10 AM} for Biggs [Quartermaster] [Monroe] [.] authority is received to remove York [River] [Light] vessel [.] if you have the means take her to hamp tun [Road]'s let me know if the service can be done by you  {tail: [signed] I Mc Garvey for [Light] house inspector J. W. [Ferry]}
+  no2: H13 C0 I0 M0
+    [Baton Rouge] [Column] {time: 10 AM} for Biggs [Rations] [Tennessee] [1000] authority is received to remove York [Subsistence] [Menace (-ed, -ing)] vessel [Sunday] if you have the means take her to hamp tun  {tail: [signed] let me know if the service can be done by you [100] I Mc Garvey for [Menace (-ed, -ing)] house inspector J. W. [Ferry]}
+  no9: H8 C0 I0 M0
+    Banditti laugh {time: 7 AM} for Biggs [Quartermaster] animal [Movement] authority is received to remove York windsor [Transportation] vessel [Movement] if you have the means take her to hamp tun [Enemy]'s let me know if the service can be done by you [Troops] I Mc Garvey for [Transportation] house inspector J. W. Sampson
+  no1shuf: H12 C1 I0 M0
+    [" " Treasury] [30] {time: 10 AM} for Biggs [North] [Newbern] [.] authority is received to remove York [Gen J. T. Boyle] [Raleigh] vessel [.] if you have the means take her to hamp tun [south]s let me know if the service can be done by you  {tail: [signed] I Mc Garvey for [Raleigh] house inspector J. W. [After the]}
+  no2shuf: H13 C0 I0 M0
+    [Maj Gen J G Foster] [Movement] {time: 10 AM} for Biggs [Steele Fdk] [Wheeler] [1000] authority is received to remove York [Presence] [Confederate] vessel [Carter S.P.] if you have the means take her to hamp tun  {tail: [signed] let me know if the service can be done by you [100] I Mc Garvey for [Confederate] house inspector J. W. [Casualties]}
