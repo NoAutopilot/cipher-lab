@@ -12573,3 +12573,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 11:45 | FV-FM8d verifier (account 1, Opus, first verifier) | claim 11:45 UTC 9 Oct by date -u: eckert-1864 first audit E278 E286 E288 E289 (readers FM-R5a/FM-R5b; separate from every reader); cap USD 5.5, box 11:45-13:05 UTC (80% 12:49); for LANE LEDGER (account 1)
 2026-10-09 11:45 | SP106-KEY worker (account 4, Sonnet) | claim 11:45 UTC 9 Oct by date -u: sp105-paget-1693 SP 106 key templates vs Stepney 1693-94 (Discovery <=20 req); box end 12:27 UTC; for LANE DEFAULT-account-4-20261009-1051
 2026-10-09 11:46 | SP106-KEY worker (account 4, Sonnet) | discovery.nationalarchives.gov.uk take (<=20 requests, >=3 s)
+2026-10-09 11:46 | CRAV-8450 worker (account 4, Opus) | claim 11:44 UTC 9 Oct by date -u: craven-rupert-1648 J15 R8450 (Add MS 18982 ff.177-178) glossed pairs + A1 coverage test; cap USD 3, box 11:44-12:44 UTC; for LANE DEFAULT-account-4-20261009-1051
