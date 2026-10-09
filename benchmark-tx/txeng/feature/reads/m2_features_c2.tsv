@@ -1,0 +1,189 @@
+passage	pos	desc	asc	bars	loops	dots	lean	tail	conf	note
+L07	1	none	long	1	1	0	upright	none	H	o with cross on stem above
+L07	2	none	none	2	0	0	right	none	H	two slanted verticals two bars
+L07	3	none	none	2	0	0	right	none	H	hash, bars longer
+L07	4	long	short	0	1	0	upright	none	H	loop on vertical stem
+L07	5	none	none	2	0	0	right	none	H	two slanted verticals two bars
+L07	6	none	none	2	0	0	right	none	H	hash, bars longer
+L07	7	none	none	0	0	0	upright	none	H	v shape
+L07	8	none	none	1	0	0	upright	none	H	two legs under flat bar
+L07	9	none	long	1	1	0	upright	none	H	o with cross on stem above
+L07	10	none	none	1	0	0	upright	none	H	two linked bows with mid bar
+L07	11	none	none	0	1	0	upright	none	H	closed D bowl with left flourish
+L07	12	short	none	0	1	0	right	left	H	loop with curved tail down-left
+L07	13	long	none	0	1	0	upright	none	H	small loop over stem
+L07	14	none	long	0	1	0	right	right	H	looped tall stroke, foot to right
+L07	15	none	long	1	1	0	upright	none	H	o with cross on stem above
+L07	16	none	none	1	1	0	upright	none	H	loop crossed by long bar
+L07	17	none	none	0	2	0	upright	none	H	two-bowl B
+L07	18	none	none	0	1	0	right	right	H	bowl with leg to right
+L07	19	none	none	2	0	0	right	none	H	two slanted verticals two bars
+L07	20	none	none	2	0	0	right	none	H	hash, bars longer
+L07	21	none	none	0	2	0	upright	none	H	two joined loops
+L07	22	none	none	2	0	0	right	none	H	two slanted verticals two bars
+L07	23	long	short	0	1	0	upright	none	H	loop on vertical stem
+L07	24	none	none	1	0	0	upright	none	H	cross
+L07	25	none	none	0	0	2+	upright	none	M	m with small a above and dot
+L07	26	none	none	1	1	0	upright	none	H	loop crossed by long bar
+L07	27	long	none	0	1	0	upright	none	H	small loop over stem
+L07	28	none	none	1	0	0	upright	none	H	cross
+L07	29	none	none	0	1	0	upright	none	M	c-curl joined to w-like bowl
+L07	30	none	none	1	1	0	upright	none	H	loop crossed by long bar
+L08	1	none	none	0	0	0	upright	none	H	v shape
+L08	2	none	none	2	0	0	right	none	H	two slanted verticals two bars
+L08	3	none	short	1	0	0	upright	right	H	t with short crossbar
+L08	4	none	long	0	1	0	upright	none	H	o with stem rising above
+L08	5	none	short	1	0	0	upright	right	H	t with short crossbar
+L08	6	none	none	1	0	0	upright	none	H	two legs under flat bar
+L08	7	none	none	1	0	0	upright	none	H	two linked bows with mid bar
+L08	8	none	none	1	0	0	upright	none	H	cross
+L08	9	none	none	2	0	0	right	none	H	hash, bars longer
+L08	10	none	none	0	1	0	upright	none	M	c-curl joined to w-like bowl
+L08	11	none	none	0	1	0	upright	none	H	closed D bowl with left flourish
+L08	12	none	none	0	0	0	upright	none	H	m-shape three arches
+L08	13	none	none	1	1	0	upright	none	H	loop crossed by long bar
+L08	14	none	none	1	0	0	upright	none	H	two short uprights on long base bar
+L08	15	none	long	0	1	0	upright	none	H	o with stem rising above
+L08	16	none	none	2	0	0	right	none	H	hash, bars longer
+L08	17	long	short	0	1	0	upright	none	H	loop on vertical stem
+L08	18	none	none	1	0	0	upright	none	H	two legs under flat bar
+L08	19	none	none	0	0	0	left	right	H	lambda shape
+L08	20	long	short	1	1	0	right	left	H	looped f with crossbar on descender
+L08	21	long	none	0	1	0	upright	none	H	small loop over stem
+L08	22	none	none	1	0	0	upright	none	H	cross
+L08	23	long	long	0	1	0	upright	none	H	tall stem through loop
+L08	24	long	none	1	1	0	upright	none	M	loop over stem with crossbar
+L08	25	none	long	0	1	0	upright	none	H	o with stem rising above
+L08	26	none	none	0	0	2+	upright	none	M	m with small a above and dot
+L08	27	none	none	2	0	0	upright	none	H	upright with two bars to right
+L08	28	long	short	0	1	0	upright	none	H	loop on vertical stem
+L08	29	none	long	0	1	1	right	right	M	looped tall stroke with tick
+L08	30	none	none	0	2	0	upright	none	H	8 shape
+L08	31	none	short	0	0	0	upright	none	L	small upright stroke at edge
+L09	1	none	none	0	0	0	upright	none	H	epsilon shape
+L09	2	none	none	0	1	0	upright	none	H	plain o
+L09	3	none	long	1	1	0	upright	none	H	down triangle with cross above
+L09	4	long	short	0	1	0	upright	none	H	loop on vertical stem
+L09	5	none	long	0	1	1	right	right	M	looped tall stroke with tick
+L09	6	none	none	1	0	0	upright	none	H	two linked bows with mid bar
+L09	7	none	none	1	1	0	upright	none	H	loop crossed by long bar
+L09	8	none	none	1	0	0	upright	none	H	two short uprights on long base bar
+L09	9	none	none	2	0	0	right	none	H	two slanted verticals two bars
+L09	10	none	none	0	0	2+	upright	none	M	m with small a above and dot
+L09	11	long	none	0	0	0	upright	right	M	n with z-shaped descender
+L09	12	none	none	2	0	0	right	none	H	hash, bars longer
+L09	13	none	long	0	1	0	upright	none	H	o with stem rising above
+L09	14	none	none	0	0	2+	upright	none	M	m with small a above and dot
+L09	15	none	none	2	0	0	right	none	H	two slanted verticals two bars
+L09	16	none	none	0	1	0	right	right	H	bowl with leg to right
+L09	17	none	none	1	1	0	upright	none	H	loop crossed by long bar
+L09	18	none	none	2	0	0	right	none	H	hash, bars longer
+L09	19	none	none	0	1	0	upright	none	H	closed D bowl with left flourish
+L09	20	none	none	1	0	0	upright	none	H	two legs under flat bar
+L09	21	short	none	1	0	0	upright	left	M	pi-like with descending tail
+L09	22	none	none	2	0	0	right	none	H	two slanted verticals two bars
+L09	23	none	none	0	2	0	upright	none	H	two-bowl B
+L09	24	none	none	1	0	0	upright	none	H	cross
+L09	25	none	long	1	1	0	upright	none	H	o with cross on stem above
+L09	26	none	none	0	0	0	left	right	H	lambda shape
+L09	27	none	none	1	0	0	upright	none	H	two short uprights on long base bar
+L09	28	none	long	1	1	0	upright	none	H	o with cross on stem above
+L09	29	none	none	1	1	0	upright	none	H	loop crossed by long bar
+L09	30	none	none	0	2	0	upright	none	H	8 shape
+L10	1	none	none	0	2	0	upright	none	H	two joined loops
+L10	2	none	none	2	0	0	right	none	H	two slanted verticals two bars
+L10	3	long	short	0	1	0	upright	none	H	loop on vertical stem
+L10	4	short	none	0	1	0	right	left	H	loop with curved tail down-left
+L10	5	none	none	0	1	0	upright	none	M	c-curl joined to w-like bowl
+L10	6	none	none	1	0	0	upright	none	H	two legs under flat bar
+L10	7	none	none	0	2	0	upright	none	H	two-bowl B
+L10	8	long	short	0	1	0	upright	none	H	loop on vertical stem
+L10	9	none	none	1	0	0	upright	none	H	cross
+L10	10	none	none	0	2	0	upright	none	H	two joined loops
+L10	11	none	long	0	1	1	right	right	M	looped tall stroke with tick
+L10	12	long	long	0	1	0	upright	none	H	tall stem through loop
+L10	13	none	none	2	0	0	upright	none	H	upright with two bars to right
+L10	14	none	none	2	0	0	right	none	H	hash, bars longer
+L10	15	none	none	2	0	0	upright	none	H	upright with two bars to right
+L10	16	none	none	0	2	0	upright	none	H	8 shape
+L10	17	long	none	0	1	0	right	left	H	loop, long curling tail
+L10	18	none	none	2	0	0	right	none	H	two slanted verticals two bars
+L10	19	none	none	1	1	0	upright	none	H	triangle
+L10	20	none	none	0	2	0	upright	none	H	two-bowl B
+L10	21	none	long	0	1	0	right	right	H	looped tall stroke, foot to right
+L10	22	none	none	2	0	0	right	none	H	hash, bars longer
+L10	23	none	long	0	1	0	upright	none	M	o with doubled stem above
+L10	24	none	long	1	1	0	upright	none	H	o with cross on stem above
+L10	25	none	none	1	0	0	upright	none	H	two short uprights on long base bar
+L10	26	none	none	1	0	0	upright	none	H	two legs under flat bar
+L10	27	none	none	0	0	0	upright	none	H	epsilon shape
+L10	28	none	none	1	1	0	upright	none	H	loop crossed by long bar
+L10	29	none	none	1	0	0	upright	none	H	two linked bows with mid bar
+L10	30	none	long	0	1	0	upright	none	H	o with stem rising above
+L10	31	long	short	0	1	0	upright	none	H	loop on vertical stem
+L10	32	none	long	0	1	1	right	right	M	looped tall stroke with tick
+L11	1	short	none	0	1	0	upright	right	M	loop with hooked foot
+L11	2	none	none	1	0	0	upright	none	H	two short uprights on long base bar
+L11	3	none	none	1	0	0	upright	none	H	two legs under flat bar
+L11	4	long	short	1	1	0	right	left	H	looped f with crossbar on descender
+L11	5	short	none	0	1	0	right	left	H	loop with curved tail down-left
+L11	6	none	none	0	1	0	upright	none	M	c-curl joined to w-like bowl
+L11	7	none	long	0	1	0	upright	none	H	o with stem rising above
+L11	8	none	none	2	0	0	right	none	H	hash, bars longer
+L11	9	none	none	0	1	0	upright	none	H	plain o
+L11	10	none	none	1	1	0	upright	none	M	o with bar to left
+L11	11	none	none	1	0	0	upright	none	H	cross
+L11	12	short	none	0	1	0	right	left	M	looped gamma-like with tail
+L11	13	none	none	1	1	0	upright	none	H	loop crossed by long bar
+L11	14	none	none	1	0	0	upright	none	H	two short uprights on long base bar
+L11	15	none	long	0	1	0	upright	none	H	o with stem rising above
+L11	16	none	none	1	0	0	upright	none	H	two linked bows with mid bar
+L11	17	none	none	2	0	0	right	none	H	two slanted verticals two bars
+L11	18	none	none	0	1	0	upright	none	H	closed D bowl with left flourish
+L11	19	none	none	1	0	0	upright	none	H	two legs under flat bar
+L11	20	none	none	0	0	0	upright	none	H	epsilon shape
+L11	21	none	none	1	0	0	upright	none	H	two legs under flat bar
+L11	22	none	none	1	0	0	upright	none	H	two linked bows with mid bar
+L11	23	none	short	1	0	0	upright	right	H	t with short crossbar
+L11	24	none	none	1	1	0	upright	none	H	loop crossed by long bar
+L11	25	none	none	0	0	0	upright	none	H	v shape
+L11	26	none	none	0	1	0	upright	none	H	closed D bowl with left flourish
+L11	27	none	long	1	1	0	upright	none	H	o with cross on stem above
+L11	28	none	none	2	0	0	upright	none	H	upright with two bars to right
+L11	29	none	none	0	2	0	upright	none	H	two joined loops
+L11	30	none	none	2	0	0	right	none	H	two slanted verticals two bars
+L11	31	none	none	1	0	0	upright	none	H	two linked bows with mid bar
+L11	32	long	short	1	1	0	right	left	H	looped f with crossbar on descender
+L11	33	none	short	0	0	0	upright	none	L	small upright stroke at edge
+L12	1	none	none	0	2	0	upright	none	M	open 8-like curl
+L12	2	none	long	0	1	0	right	right	H	looped tall stroke, foot to right
+L12	3	none	none	0	1	0	right	right	H	bowl with leg to right
+L12	4	none	long	0	1	0	upright	none	H	o with stem rising above
+L12	5	none	none	0	0	0	upright	none	H	v shape
+L12	6	none	long	0	1	0	right	right	H	looped tall stroke, foot to right
+L12	7	none	none	1	1	0	upright	none	H	loop crossed by long bar
+L12	8	none	none	0	2	0	upright	none	M	open 8-like curl
+L12	9	none	none	2	0	0	right	none	H	two slanted verticals two bars
+L12	10	long	none	0	1	1	right	left	M	9-shape with dot, long tail
+L12	11	none	none	1	0	0	upright	none	H	two legs under flat bar
+L12	12	none	none	2	0	0	right	none	H	two slanted verticals two bars
+L12	13	none	none	2	0	0	right	none	H	hash, bars longer
+L12	14	none	none	2	0	0	right	none	H	two slanted verticals two bars
+L12	15	long	none	0	1	0	upright	none	H	small loop over stem
+L12	16	none	long	0	1	0	upright	none	H	o with stem rising above
+L12	17	long	none	0	1	0	upright	left	H	small diamond with curved descender
+L12	18	none	none	1	1	0	upright	none	H	loop crossed by long bar
+L12	19	none	none	1	0	0	upright	none	H	two linked bows with mid bar
+L12	20	none	none	0	1	0	upright	none	H	closed D bowl with left flourish
+L12	21	none	none	1	0	0	upright	none	H	two legs under flat bar
+L12	22	none	none	0	2	0	right	none	M	percent-like two curls
+L12	23	none	none	1	1	1	right	none	M	A with crossbar and tick
+L12	24	long	long	0	1	0	upright	none	H	tall stem through loop
+L12	25	none	long	0	1	0	upright	none	H	o with stem rising above
+L12	26	none	none	1	0	0	upright	none	H	two short uprights on long base bar
+L12	27	none	none	1	0	0	upright	none	H	two legs under flat bar
+L12	28	long	short	1	1	0	right	left	H	looped f with crossbar on descender
+L12	29	none	long	0	1	0	upright	none	H	o with stem rising above
+L12	30	none	none	1	1	0	upright	none	H	loop crossed by long bar
+L12	31	long	none	0	1	0	upright	left	H	small diamond with curved descender
+L12	32	none	short	0	0	0	upright	none	L	small upright stroke at edge
