@@ -654,6 +654,9 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    twice before it was caught: `ciphers/jan-van-nassau-1572-75/align/em_align.py`, then
    `ciphers/lodewijk-van-nassau-1573-74/align/em_align_5799.py`, both kept in place since their output is
    already cited, both now pointing at this tool in their own header).
+   [USE.8.h] `tools/holder_export.py LIST.tsv --out DIR/STEM [--meta META.tsv]` (9 Oct 2026) writes a delivery for a holding library, one
+   row per telegram or item keyed by the holder's own pointer (.csv/.tsv, .xlsx with a README sheet when openpyxl is present);
+   `--select-*` reports drift against status.json; nothing it writes is sent without a gate-7 check.
    Tomokiyo's ciphertext-only instruments (TOOLS-TOMO, 8 Oct 2026; LESSONS-TOMOKIYO.md practices 1, 3-7, 11, 16): `freq.py --split-at auto`, `--contacts K [--vowels]`, `--kwic`, `--repeats N [--maximal]`, `interlinear_align.py --cipher-pair A B`, `key_design.py --matrix`, `running_key.py --drag MINLEN`, `decode_key.py <t> --consistency`; grades and use-when in `tools/data/tool_shelf.tsv` (most are `weak`: read the evidence first).
 
 ## Access playbook

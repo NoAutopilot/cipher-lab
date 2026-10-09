@@ -1,0 +1,19 @@
+{"results": [
+ {"document_id": "Demo vol 1 p.1, T1 (Alpha to Beta, 1 Jan 1864)",
+  "documents": ["Demo vol 1 p.1, T1 (Alpha to Beta, 1 Jan 1864)", "Demo vol 1 p.1, T2 (Gamma to Beta, 2 Jan 1864)"],
+  "title": "Demo: two telegrams, Alpha to Beta and Gamma to Beta, 1-2 Jan 1864", "grade": "N4 (no prior decipherment located)",
+  "audit_status": "two audits", "claim_scope": "completed-reading", "superseded_by": "",
+  "line": "Read with the demo book; no prior decipherment or printed text located in the Demo Records (vols 1-2) or Demo Papers (searched 1 Oct 2026).",
+  "gap": "N4 (weak): much of the body is clear in the public transcription",
+  "contact": "someone@example.org", "sign_off": "[SIGN-OFF]",
+  "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/demo-ledger"},
+ {"document_id": "Demo vol 1 p.2, pointer 102, T3", "documents": ["Demo vol 1 p.2, pointer 102, T3"],
+  "title": "Demo: Delta to Epsilon (and to Zeta), 3 Jan 1864, two orders (T3)", "grade": "N3",
+  "audit_status": "two audits", "claim_scope": "completed-reading", "superseded_by": "",
+  "line": "Read with the demo book; not located in the Demo Records (searched 1 Oct 2026); its reply is printed in Demo Records vol. 2 p.7.",
+  "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/demo-ledger"},
+ {"document_id": "Demo mssDN 7 (Rome, 5 May 1700, two cipher lines)", "documents": ["Demo mssDN 7 (Rome, 5 May 1700, two cipher lines)"],
+  "title": "Demo number cipher", "grade": "N3", "audit_status": "one audit", "claim_scope": "recovered-passages", "superseded_by": "",
+  "line": "Key rebuilt from period decipherments. No prior decipherment located in the Demo calendar (2 Oct 2026).",
+  "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/demo-numbers"}
+]}

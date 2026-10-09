@@ -1,0 +1,15 @@
+# Fixture ledger (tools/tests/test_holder_export.py).
+### T1 | Page 1 | 101 | 1 Jan 1864 9 AM, to Beta, Fort Demo (operator Omega)
+Omega Washn Jan 1st 1864 9 AM
+For Apple Pear Send the boats to Plum
+at once Fig Lime
+note: fixture
+
+### T2 | Page 1 | 101 | 2 Jan 1864 10 AM, to Beta, Fort Demo (operator Omega)
+Omega Washn Jan 2nd 1864 10 AM
+For Apple Pear Hold the boats Fig Gamma
+
+### T3 | Page 2-3 | 102-103 | 3 Jan 1864, to Epsilon and Zeta (operator Omega)
+Omega Washn Jan 3d 1864
+For Epsilon Pear Move at dawn Fig Delta another
+to Zeta Pear Move at dawn Quill Fig Delta

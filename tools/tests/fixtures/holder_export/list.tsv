@@ -1,0 +1,5 @@
+# Fixture for tools/tests/test_holder_export.py: three list rows (one names two telegrams the reading keeps apart, one holds two telegrams in one ledger entry, one is a number cipher read with tools/decode_key.py).
+document	title	class (verifier, rule 10)	depth (rule 4a)	depth_pct	completeness	unresolved	weak (audit flag)	key used	documents	folder
+Demo vol 1 p.1, T1 (Alpha to Beta, 1 Jan 1864)	Demo: two telegrams, Alpha to Beta and Gamma to Beta, 1-2 Jan 1864	N4	D4	100.0	4/4	none	yes	demo book	2	https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/demo-ledger
+Demo vol 1 p.2, pointer 102, T3	Demo: Delta to Epsilon (and to Zeta), 3 Jan 1864, two orders (T3)	N3	D3	90.0	2/2	'Quill' unread		demo book	2	https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/demo-ledger
+Demo mssDN 7 (Rome, 5 May 1700, two cipher lines)	Demo number cipher	N3	D2	75.0	3/4	DN 7's group 12 unread		rebuilt key	1	https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/demo-numbers
