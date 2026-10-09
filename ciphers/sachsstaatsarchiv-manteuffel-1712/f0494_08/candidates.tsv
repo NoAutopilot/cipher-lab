@@ -1,0 +1,14 @@
+# MANT-0494 (9 Oct 2026): codes on 694/08 0494 outside key.tsv (or conflicting with it) with the leaf's period gloss. Grade C from the gloss at most; NEVER entered in key.tsv.
+# status: candidate = PREREG rule met on the PASSing left-page gloss pass; held = right-page gloss pass too short (7 keyed tokens < 10), position only; conflict = keyed code whose slot reads otherwise (rule 4, both witnesses kept)
+code	gloss_slot	n_on_leaf	tokids	span	status	note
+146	our	1	T169	G12	candidate	bracketed by matched 32(n) and 12(l); G12's gloss runs on over C13-C14 (see NOTES), so the slot is positional only; both code passes split struck/doubtful on this token
+715	deux	1	T242	G19	held	single code under a whole note ('des 715' with 'deux' above); key.tsv 356 = deux (Krauske) -- a second code or a higher nomenclator (codes 403-715 on this page)
+295	envoye	1	T232	G17	held	single code under a whole note ('a 295')
+340 475 410	nostre lettre	1	T224-T226	G15	held	three codes under one note; 340 also once on C14 (T204 read 390 by eye, 340 by pass A)
+403 431 384 499 419 375 583 548 408	l ont moins menté	1	T233-T241	G18	held	nine codes under one note; 384 agreed by both passes though the glyph is 38y (the hand's 9)
+231 583	court	1	T243-T244	G20	held	231 read 234 by both passes (worker eye 231 after a blot); 583 also in G18
+357 581 561 40 540	ira a Spandow	1	T227-T231	G16	held	the gloss pass placed the note over no numbers; worker placed it by position over this run; key.tsv 357 = Ilgen (Krauske) and 40 = b do not fit
+44 33 12 8	Colhowl	1	T219-T222	G13	held/conflict	33=o 12=l 8=h match the gloss; 44 (key l) sits at 'c' -- conflict if the note reads C...; right-page pass too short
+34	Hyen	1	T223	G14	held/conflict	key.tsv 34 = p; gloss 'Hyen' (Ilgen? the hand's name note) over the lone 34 -- conflict, position only
+54	et	1	T036	G04	conflict	key 54 = u; in 'Détaché' 120(d) and 66(a) match and 54 sits at 'et'; possibly a misread 59 (t) -- image check before any use
+227	dan	1	T033	G03	note	key 227 = le roi de Danemark|Danemark vs gloss 'le Roy de Dan.' (abbreviated): a scoring normalisation miss, not a conflict

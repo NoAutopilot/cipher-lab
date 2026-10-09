@@ -1,0 +1,21 @@
+span_id	page	crop	gloss	tokids	codes	note
+G01	L	g0494L_L01	breton	T001 T002 T003 T004 T005 T006	55 60 35 28 16 32	over C1 run 55..32 (pass: over text; by eye over 55.60)
+G02	L	g0494L_L02	le Danois mancheroient à notre service	T007 T008 T009 T010 T011 T012 T013 T014 T015 T016 T017 T018 T019 T020 T021	103 51 120 66 21 13 50 27 72 35 26 33 4 21 59	pass x 115-770: 103 .. 59; 66..30 right of the gloss unglossed
+G03	L	g0494L_L03	le Roy de Dan.	T033	227	over 227 (crojons 227)
+G04	L	g0494L_L04	Détaché	T034 T035 T036	120 54 66	over 54.66 at line start; 120 at the end of the line above opens the run
+G05	L	g0494L_L04	il ne le declarera pas	T037 T038 T039 T041 T042 T044	81 35 19 21 10 100	pass: starts ~81, ends ~100; struck ~44 ~103 left out
+G06	L	g0494L_L05	3?? sa magesté plus	T056 T057 T058 T059 T060	180 48 59 99 35	pass: starts over 66 (read 180 by both code passes), ends 34/44 -> 35
+G07	L	g0494L_L06	contre les Suedois	T061 T062 T063 T064 T065	23 42 54 51 15	pass: starts over 23, ends over 51/15
+G08	L	g0494L_L07	Savoir quelque chose à la Reine d'Angleterre	T084 T085 T086 T087 T088 T089 T090 T091 T092 T093 T094 T095 T096 T097 T098 T099 T100	33 39 60 24 67 10 44 19 5 4 35 90 16 29 2 66 217	pass x 200-860; by eye 33/39 .. 217
+G09	L	g0494L_L08	en chaque Witwort	T105 T106 T107 T108 T109 T110 T111 T112	34 14 72 25 26 7 10 60	pass: starts over 14/72, ends 26/7; by eye to 60
+G10	L	g0494L_L09	le Roy ne donne confidemment	T119 T120 T121 T122 T123 T124 T125 T126 T127 T128 T129 T130 T131 T132 T133	170 349 4 31 14 35 580 120 33 21 32 35 30 22 14	over C10 170 .. 14
+G11	L	g0494L_L10	la Reine d'Angleterre touchant	T146 T147 T148 T149 T150 T151 T152 T153 T154 T155	97 217 611 54 33 54 72 25 14 52	pass x 720-1160: 97 .. 52
+G12	L	g0494L_L11	le Prince son fils la Reine ne fera rien pour luy mais luy fera nonhane	T156 T157 T158 T159 T160 T161 T162 T163 T164 T165 T166 T167 T168 T169 T170 T171 T172 T173 T174	103 34 27 46 21 30 35 273 481 388 58 10 32 146 12 51 613 217 388	whole C12 103 .. 388
+G13	R	g0494R_L01	Colhowl	T219 T220 T221 T222	44 33 12 8	over 44.33.12.8
+G14	R	g0494R_L02	Hyen	T223	34	over 34
+G15	R	g0494R_L02	nostre lettre	T224 T225 T226	340 475 410	over 340.475.410
+G16	R	g0494R_L03	ira a Spandow	T227 T228 T229 T230 T231	357 581 561 40 540	pass: over no numbers; by position the note sits above 357..540
+G17	R	g0494R_L04	envoye	T232	295	over 295
+G18	R	g0494R_L05	l ont moins menté	T233 T234 T235 T236 T237 T238 T239 T240 T241	403 431 384 499 419 375 583 548 408	over 403 .. 408
+G19	R	g0494R_L06	deux	T242	715	over 715
+G20	R	g0494R_L07	court	T243 T244	231 583	over 231.583

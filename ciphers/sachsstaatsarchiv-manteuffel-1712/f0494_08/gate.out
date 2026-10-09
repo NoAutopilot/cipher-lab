@@ -1,0 +1,36 @@
+key: key.tsv; spans 20
+== L (gloss pass left page): spans 12; code tokens 110; keyed 99
+S = 74/99 keyed (0.747); control (1000 permutations, seed 494): mean 16.49, p95 23, p99 27, max 30; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+== R (gloss pass right page): spans 8; code tokens 26; keyed 7
+S = 3/7 keyed (0.429); control (1000 permutations, seed 494): mean 0.65, p95 2, p99 3, max 4; control >= real 17/1000
+GATE (S > p99 and S >= 0.5 x keyed): too short (< 10 keyed code tokens): neither PASS nor FAIL
+== pooled (reported): spans 20; code tokens 136; keyed 106
+S = 77/106 keyed (0.726); control (1000 permutations, seed 494): mean 17.14, p95 24, p99 27, max 30; control >= real 0/1000
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+
+per span (code:op:gloss-letters):
+G01	L	breton	6/6	55:match:b 60:match:r 35:match:e 28:match:t 16:match:o 32:match:n
+G02	L	le Danois mancheroient à notre service	12/15	103:match:le 51:null: 120:match:d 66:match:a 21:match:n 13:match:m 50:match:a 27:miss:n 72:match:ch 35:match:e 26:match:r 33:match:o 4:miss:nta 21:match:n 59:match:t
+G03	L	le Roy de Dan.	0/1	227:miss:dan
+G04	L	Détaché	2/3	120:match:d 54:miss:et 66:match:a
+G05	L	il ne le declarera pas	2/6	81:miss:nel 35:match:e 19:miss:dec 21:miss:lar 10:match:e 100:miss:pas
+G06	L	3?? sa magesté plus	3/5	180:miss:ama 48:match:g 59:miss:e 99:match:s 35:match:e
+G07	L	contre les Suedois	2/5	23:miss:tre 42:match:l 54:match:u 51:miss:ed 15:miss:ois
+G08	L	Savoir quelque chose à la Reine d'Angleterre	14/17	33:match:o 39:match:i 60:match:r 24:match:q 67:match:u 10:match:e 44:match:l 19:null: 5:miss:q 4:miss:u 35:match:e 90:match:ch 16:match:o 29:match:s 2:match:e 66:match:a 217:match:lareinedangleterre
+G09	L	en chaque Witwort	4/8	34:miss:e 14:match:n 72:match:ch 25:match:a 26:miss:qu 7:miss:ewi 10:miss:two 60:match:r
+G10	L	le Roy ne donne confidemment	11/15	170:match:le 349:miss:r 4:miss:o 31:miss:i 14:match:n 35:match:e 580:null: 120:match:d 33:match:o 21:match:n 32:match:n 35:match:e 30:match:c 22:match:o 14:match:n
+G11	L	la Reine d'Angleterre touchant	7/10	97:null: 217:match:lareinedangleterre 611:null: 54:miss:t 33:match:o 54:match:u 72:match:ch 25:match:a 14:match:n 52:match:t
+G12	L	le Prince son fils la Reine ne fera rien pour luy mais luy fera nonhane	11/19	103:match:le 34:match:p 27:match:r 46:match:i 21:match:n 30:match:c 35:match:e 273:miss:ein 481:miss:ene 388:miss:fer 58:miss:ari 10:match:e 32:match:n 146:miss:our 12:match:l 51:match:s 613:miss:ran 217:miss:onh 388:miss:ane
+G13	R	Colhowl	3/4	44:miss:c 33:match:o 12:match:l 8:match:h
+G14	R	Hyen	0/1	34:miss:yen
+G15	R	nostre lettre	0/3	340:miss:tre 475:miss:let 410:miss:tre
+G16	R	ira a Spandow	0/5	357:miss:i 581:miss:r 561:miss:aas 40:miss:pan 540:miss:dow
+G17	R	envoye	0/1	295:miss:oye
+G18	R	l ont moins menté	0/9	403:miss:l 431:miss:o 384:miss:n 499:miss:t 419:miss:m 375:miss:o 583:miss:in 548:miss:sme 408:miss:nte
+G19	R	deux	0/1	715:miss:eux
+G20	R	court	0/2	231:miss:co 583:miss:urt
+
+distinct codes: 82; matched on every instance: 31
+unkeyed codes and their slots: 19=dec,0; 146=our; 231=co; 273=ein; 295=oye; 340=tre; 349=r; 375=o; 384=n; 388=fer,ane; 403=l; 408=nte; 410=tre; 419=m; 431=o; 475=let; 481=ene; 499=t; 540=dow; 548=sme; 561=aas; 580=0; 581=r; 583=in,urt; 611=0; 613=ran; 715=eux
+keyed codes with a non-match slot: 4(x)=miss:nta,miss:u,miss:o; 5(v)=miss:q; 7(g)=miss:ewi; 10(e)=miss:two; 15(c)=miss:ois; 21(n)=miss:lar; 23(p)=miss:tre; 26(r)=miss:qu; 27(r)=miss:n; 31(m)=miss:i; 34(p)=miss:e,miss:yen; 40(b)=miss:pan; 44(l)=miss:c; 51(s|sa)=null:,miss:ed; 54(u)=miss:et,miss:t; 58(s)=miss:ari; 59(t)=miss:e; 81(k)=miss:nel; 97(la)=null:; 100(d)=miss:pas; 180(Golowkin)=miss:ama; 217(la reine d'Angleterre)=miss:onh; 227(le roi de Danemark|Danemark)=miss:dan; 357(Ilgen)=miss:i

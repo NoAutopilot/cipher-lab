@@ -1,0 +1,9 @@
+power	at 52 letters: 11/11 = 1.00	TEST
+block_1	letters 1-52	real -1.162	permuted mean -2.029 p95 -1.739 p99 -1.627 max -1.451	permuted>=real 0/1000	PASS	ontrelesschvpdoisneferarienpourluimaisluysoacontrair
+tail	letters 53-55	reported only, not gated	evc
+leaf_0494	letters 55	blocks 1	PASS	ontrelesschvpdoisneferarienpourluimaisluysoacontrairevc
+# whole leaf (reported, no power behind it if L > 62): real -1.172 permuted mean -2.027 p95 -1.784 p99 -1.701 permuted>=real 0/1000
+# per run (reported, not gates): run, letters, score, decoded letters
+r07tail	17	-1.474	ontrelesschvpdois
+r13	23	-0.822	neferarienpourluimaislu
+r14	15	-1.153	ysoacontrairevc
