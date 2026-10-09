@@ -12106,3 +12106,135 @@ rows (N1, per the brief).
 ### 6. Requests
 hdl.huntington.org 8 (5 CISOSEARCHALL, 3 dmGetItemInfo; all 200); archive.org 9 (3 `_page_numbers.json`, 6 page images; all 200, to scratch, 1.6
 s apart); googleapis 4; be-api 2. Subagents 0.
+
+## AUDIT (FV-MS18g)
+
+Verifier FV-MS18g (account 1, for LANE LEDGER), 9 Oct 2026, 21:17-21:4x UTC by `date -u`; a separate session from the reader MS18-R4, not protecting its
+conclusions. Scope: **E347, E349, E350** (NOTES "## MS18-R4", rows 9811/2, 9843/1, 9895/2); ciphertext.txt, Cipher No. 1, Washington sent ledger mssEC 18 =
+Huntington object 10074. Nothing decoded beyond key look-ups in key.md. Key source: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not
+run. Intake gate (21:1x): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Prior work, by hand (as FV-MS18d):
+own work = `git grep` of 9811/9843/9895 in AUDIT/NOTES/status.json: only NOTES "## MS18-R4" and the three ciphertext.txt headers; editions, holder and solver
+rows as s.2; aaymeloglu/unsolved-ciphers not cloned (unchecked). Scripts (`ms18/`): `fv_ms18g_hdl.py` (+ `.out`, `fv_ms18g_info.out`: 16 CONTENTdm
+full-text queries across all pointers, 8 item records, 3 page images at 2400 px to scratch), `fv_ms18g_print.py` (letters-only phrase grep, 169 texts: the
+168 cached plus OR djvu texts fetched to scratch by the or_volumes.tsv ids: I/39 pt 2 `warofrebellion392unit`, I/41 pt 4 `warofrebellion414unit`, I/42 pt 2
+`warofrebellion422unit`, I/43 pt 1 `warofrebellion431unit_0`, I/45 pt 1 `warofrebellion451unit`; note the cached `warofrebellion431unit_djvu.txt.gz` is not
+OR I/43 pt 1 -- its flyleaf reads "V.47 .2" -- so the scratch copy was used), `fv_ms18g_beapi.py` (+ `.out`: IA be-api full-text on Grant Papers vols 11
+and 12, OR ser. III vol. 4), `fv_ms18g_gb.py` (+ `.out`: Google Books API, `country=US`, 8 queries).
+
+### 1. Duplicates and image (every graded line eye-checked on 2400 px crops; `iiif_lines.py --image` not used, these ruled pages give 0 lines, as before)
+- **Duplicate diff:** the three pointers occur only in their own headers. CONTENTdm full text (all pointers): "profound secret" 1 (9811), "Smith Relay car"
+  1 (9811), "Wood Monocacy" 2 (9811; **6157** = 12 Sept 1862, Miles at Harper's Ferry, other), "Frederick train" 14 (9811 and 13 others of 1862-65 not
+  read beyond 9811's own hit), "Monocacy refreshments" 0; "Crane disbursing", "disbursing Inspector", "Donaldson Crane" 1 each (9843); "long dispatch Meade"
+  1 (**10378** = 1-2 June 1864, Dana from Bethesda Church, other); "Meade Baltimore arrival" 0; "Brackett" 1 (9895), "Planters House" 1 (9895), "Burnet
+  House" 2 (3282, 3283; not opened: 1862-63 pointers by number, outside Nov 1864), "Redwood Price" 4 (8792 Sheridan to Price, New Orleans 2 Aug 1865; 8036,
+  8040, 8042 Sheridan to Forsyth care of Price, 1866: other), "serviceable horses" 4 (7931 Thomas, 24 May 1865; 7834 Hancock, 1865; 8298, 6029 not opened),
+  "Pleasonton Grierson" 0. **No duplicate, no clear period copy** of any of the three.
+- **E347 (9811, printed p.145; third entry on the leaf):** the transcription matches the image line by line. The entry is a nine-row route block (eight
+  words a row, read across); "Side" in the tail is the key's 9-line indicator (p.7) and the block has nine rows, so the tail "Side Viola Growl Aug plaster"
+  is indicator, time (12.30), place (Washington) and date (Aug 5). **"Relay" is plain** -- "the General leaves here on [3 PM] train for Relay where he will
+  meet your car" is the Relay House station of the Baltimore and Ohio -- not the key's Relay = Evacuate (decoder error). The entry above it (C. B. Comstock
+  via McCaine to Monocacy Junction, 5 Aug 1864 10.40 AM, "Jupiter will leave here for ... Imogene ...") is a sibling on Grant's same movement; not filed.
+- **E349 (9843, printed p.177):** the transcription matches; the header "Cipher Clerk Nashville" and the date line are faint pencil, as MS18-R4 says. The
+  lines from "John a long pembroke dispatch" are **a second message with no header of its own**, written after Meigs's signature; its date is not on the
+  page (16 or 17 Sept 1864 by position and print, s.2). "sugar" = Interrogation is the question mark after "disbursing officer" (H).
+- **E350 (9895, printed p.229):** two transcription errors: **"Tomama" reads "Panama"** (the same capital P as "Planters" two words on; Panama = Cavalry,
+  p.19 l.1 R), so the line is "Especial Inspect or [Cavalry]" = Special Inspector of Cavalry -- the title OR prints for the Cavalry Bureau's special
+  inspectors (s.2); and **"Pleasant on" is Pleasonton** (plain, written in two parts: Maj. Gen. Alfred Pleasonton's cavalry, then in Missouri), not
+  Sheridan as the header says. **"Planters House" is plain** (the St Louis hotel), not the key's Planter- = Concentrate (decoder error).
+
+### 2. Holder's full text, editions and print
+**Print** (letters-only phrase grep over 169 texts, `fv_ms18g_print.py`; then by date and addressee by hand in the scratch volumes):
+- **E347 -> not located.** OR I/43 pt 1 (`warofrebellion431unit_0`), Union correspondence of 5 Aug 1864: the datelines of all 38 items scanned and
+  pp.695-696 read: Grant at Monocacy, 5 Aug 1864 8 p.m. and 11.30 p.m., to Halleck (p.695); Halleck to Sheridan, Washington 5 Aug, "General
+  Grant directs that you will move ... to the Monocacy" (p.696). No message to W. P. Smith, Sampson or the railroad; no "profound secret", "refreshments",
+  "Frederick train" in any of the 169 texts near Monocacy (the only "profound secret" hits are other matter in OR II/7 and I/45 pt 2 and four
+  non-war texts). Grant Papers vol. 11 (June 1-Aug 15 1864; IA `papersofulyssess0011gran`, be-api, no login): "profound secret" 0, refreshments 0, "W. P.
+  Smith" 0, "Relay Monocacy" 0, Relay 0 (positive control: Monocacy returns the volume's July 1864 items). Google Books: "profound secret" Grant Monocacy
+  Relay 1864: 0; "Frederick train" Grant Monocacy 1864 Smith: 54, the first five (Abbott diary, Grant Papers vol. 11 on July 1864, a chronology) not this
+  message. Grant's visit is printed; this telegram arranging his car was not located.
+- **E349, second message ("John ...") -> printed: The Papers of Ulysses S. Grant, vol. 12 (Aug 16-Nov 15, 1864), in the editors' notes** (IA
+  `papersofulyssess0012gran`, be-api snippets; page not established -- be-api gives no page locator -- and not read on a page image): "... Secretary of War
+  Edwin M. Stanton telegraphed to USG, Eutaw House. 'A long cipher despatch is coming through from General Meade to you. Shall it be forwarded to you at
+  Baltimore or wait your arrival here' ALS (telegram sent), DNA, RG 107, Telegrams ...". Word for word the decode: **John = Grant, Pembroke = Cipher, Jolly
+  = Meade, Baptism = Baltimore, Brutus = Secretary of War, all C by print**. The long dispatch is printed OR I/42 pt 2 p.852: Meade to Grant, 16 Sept 1864
+  10 a.m., addressed "Harper's Ferry, or Washington, or Baltimore" (Hampton's raid on the cattle herd at Coggins' Point); Halleck telegraphed Grant at
+  Baltimore on 17 Sept 1.30 p.m. (OR I/43 pt 2, `warofrebellion432unit`, Sept 17 items). MS18-R4's header ("a note to John (Eckert's office)", "[Meade, M]")
+  is wrong on both counts.
+- **E349, first message (Meigs to Donaldson) -> the telegram not located; its substance is printed as orders.** Google Books (Army and Navy Official Gazette,
+  1864-65, ids `9b1OAQAAMAAJ`, `ePkVZ9RSsacC`, `dQpJAQAAIAAJ`; snippets only, dates and pages not established): memoranda of Quartermaster General's orders
+  "[DONALDSON.] [Directed to relieve Col. J. C. Crane.] Will detail an officer temporarily to immediately relieve Colonel J. C. Crane, Inspector
+  Quartermaster's Department, in his duties at Nashville, Tennessee" and "... relieve Colonel J. C. Crane, Inspector Quartermaster's Department, of the duties
+  of Disbursing Officer of the United States Military Railroads of the West ... Colonel J. C. CRANE. [To Quartermaster General.] On being relieved, will
+  proceed to ...". OR I/39 pt 2 (`warofrebellion392unit`, Nashville, 10 May 1864): Capt. John C. Crane, assistant quartermaster, U.S. Military Railroad,
+  referring to "Col. J. L. Donaldson, senior and supervising quartermaster"; OR I/45 pt 1 p.1167: "Col. J. C. Crane, Major Wentz, and Others", Nashville, 30
+  Nov 1864 (the railroad department); an OR volume (Google Books `635ZAAAAYAAJ`, snippet, volume not identified), a roster of Quartermaster's Department regiments: "J. C. Crane, inspector quartermaster's department, colonel". The
+  Gazette orders follow from Meigs's question (who can relieve Crane) but are not the telegram's text: the telegram itself is not printed in the 169 texts
+  (letters-only "Inspector and of disbursing officer", "relieve Colonel Crane": 0), OR ser. III vol. 4 (`warofrebellion0304rootrich`: djvu download 403,
+  be-api "Crane disbursing" 0, a second query 502 -- not retried; no positive control, so a weak negative), Grant Papers vol. 12 ("Crane": one hit, Edward
+  A. Crane, other).
+- **E350 -> not located.** OR I/41 pt 4 (Missouri, Nov 1864): Brackett only as Maj. Alfred B. Brackett's Minnesota battalion; "Planters' House" once (4 Dec
+  1864, Sanborn, other); no Price. OR I/45 pt 1 (Nov 1864, Tennessee): no Brackett or Price correspondence of 10-12 Nov; the context is printed:
+  **p.898**, W. P. Chambliss, "Major and Special Inspector Cavalry, Mil. Div. of the Mississippi", Louisville 16 Nov 1864, to Wilson: "Major Price
+  telegraphed me he would be here on the 14th" (E350: Cincinnati 12th, Nashville 15th); **p.952**, Beaumont to Woodward, Nashville 19 Nov 1864: "I am
+  informed by Major Brackett, of the Cavalry Bureau, that you contemplate ordering the men of Grierson's division now at Saint Louis to Memphis ... order all
+  detachments of Grierson's division coming to Saint Louis to be remounted" (index: Brackett, Albert G., 952); **p.1001**, "Major Price, assistant
+  inspector general of the Cavalry Bureau", Nashville 24 Nov; I/45 pt 2: "WM. REDWOOD PRICE, Major and Assistant Inspector-General, Cavalry Bureau"
+  (Louisville/Nashville, Jan 1865, on serviceable horses). Google Books "Burnet House" Brackett Price 1864 horses: 9, none this; "Redwood Price" Brackett 1864
+  "Planters House": 3, none.
+- Not searched: Grant Papers vol. 11 by page (be-api only); W. P. Smith / B&O papers (Maryland Center for History and Culture); Meigs letter books (NARA RG
+  92); Cavalry Bureau records (NARA RG 94/107); OR ser. III vol. 4 by reading (download refused); Baltimore and St Louis press; HathiTrust; JSTOR.
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+- **E347 (not located):** decoder H 9 includes **"Relay" read as Relay = Evacuate: wrong** (plain station name): H 8; add **Side = 9-line indicator H**
+  (the block has nine rows): **H 9**. Reading: "Sampson, Baltimore, [12.30] Washington, Aug 5 1864: For W. P. Smith, [Baltimore]. [Maj Gen U. S. Grant]
+  with one of his staff wishes to go to Monocacy this afternoon. Have your car put on Frederick train and have Joe to go along with it. The [General] leaves
+  here on [3 PM] train for Relay, where he will meet your car. Have some refreshments. The departure of the [General] must be kept a profound secret. Sig W
+  G Wood." W. P. Smith as the Baltimore and Ohio's master of transportation is an inference (I), not read; W. G. Wood and Joe unidentified.
+- **E349 first message:** H 7 of 7 (Grapes, Gas, Nancy, Pandora, Vinton, Paradise, Sugar). Reading: "[Washington] [16] [8 PM] for [Colonel] Donaldson,
+  Chief [Quartermaster], [Nashville]: Who can relieve [Colonel] Crane as disbursing officer[?] The duties of Inspector and of disbursing officer are
+  incompatible. Having been appointed Inspector he must be relieved of his present duties. M C Meigs." **Second message:** C 6 by print (John, Pembroke,
+  Jolly, Baptism, Webster, Brutus): "[Maj Gen U. S. Grant]: A long [cipher] dispatch is coming through from [Maj Gen G. G. Meade] to you; shall it be
+  forwarded to you at [Baltimore] or wait your arrival here? [Signature] [Secretary of War]. Ans[wer] quick." No gap.
+- **E350 (not located):** decoder H 22 includes **"Planters" read as Planter- = Concentrate: wrong** (plain hotel): -1; transcription **"Tomama" ->
+  "Panama" = Cavalry H**: +1: **H 22**. Reading: "[Washington] Nov [10] [9 PM] for [Colonel] A G Brackett, Special Inspector [Cavalry], Planters House,
+  [St Louis]. [General-in-Chief] countermands the orders. Inform me Burnet House, [Cincinnati], Nov [12], when [General] Pleasonton's and Grierson's
+  [commands] will be in [St Louis] and number of serviceable [horses] there for issue. Await orders. Will be in [Nashville] [15th] instant and [communicate].
+  [Signed] Wm Redwood Price, [Major] and so forth." Which orders the General-in-Chief countermanded is not on the page.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E347 | **N3** | period | **D3** (H 9 of 9 code groups after the Relay fix; external non-statistical: OR I/43 pt 1 pp.695-696, Grant at Monocacy 5 Aug 1864 8 p.m.) | not located after the search in s.2 |
+| E349 msg 1 (Meigs to Donaldson) | **N3** (weak, bordering N2: the resulting orders to relieve Col. J. C. Crane are printed as Gazette memoranda, the telegram is not) | period | **D3** (H 7 of 7; external non-statistical: the Gazette orders, OR I/45 pt 1 p.1167 Col. J. C. Crane at Nashville) | not located after the search in s.2 |
+| E349 msg 2 (Stanton to Grant) | **N1** (text known) | period | D3 (C 6 by print) | Grant Papers vol. 12, editors' note (page not established) |
+| E350 | **N3** | period | **D3** (H 22 of 22 after the Planters/Panama fixes; external non-statistical: OR I/45 pt 1 pp.898, 952, 1001 for Price's itinerary, Brackett of the Cavalry Bureau and Grierson's men at St Louis) | not located after the search in s.2 |
+
+- Not N4: Smith/B&O papers, Meigs letter books, Cavalry Bureau records, OR ser. III vol. 4 by reading, the press, HathiTrust and JSTOR were not searched.
+- **Safe sentences.** E347: "Read at grade H with War Department Cipher No. 1: on 5 August 1864 W. G. Wood telegraphed W. P. Smith at Baltimore through
+  Sampson that General Grant and one of his staff would go to Monocacy that afternoon, leaving Washington on the 3 p.m. train for the Relay House, where
+  Smith's car was to meet him, and that the General's departure must be kept a profound secret; Grant's visit to Monocacy is in the Official Records, this
+  telegram was not located in print or in the Huntington's full-text search (searched 9 Oct 2026)." Depth sentence (D3): "On 5 August 1864 the telegraph
+  office arranged in secret for a Baltimore and Ohio car to carry General Grant from the Relay House to Monocacy." E349: "The second message on the page,
+  Stanton to Grant ('a long cipher despatch is coming through from General Meade ...'), is printed in The Papers of Ulysses S. Grant vol. 12; the first, read
+  at grade H with War Department Cipher No. 1, is Quartermaster General Meigs asking Col. Donaldson at Nashville on 16 September 1864 who could relieve Col.
+  Crane as disbursing officer, since Crane had been appointed Inspector; the resulting orders are printed in the Army and Navy Official Gazette, the telegram
+  itself was not located (searched 9 Oct 2026)." Depth sentence (D3): "On 16 September 1864 Meigs told the chief quartermaster at Nashville that Col. Crane,
+  newly appointed Inspector, must be relieved of his duties as disbursing officer." E350: "Read at grade H with War Department Cipher No. 1: on 10 November
+  1864 Maj. Wm. Redwood Price of the Cavalry Bureau told Col. A. G. Brackett, special inspector of cavalry, at the Planters House in St Louis that the
+  General-in-Chief had countermanded the orders, and asked to be told at the Burnet House, Cincinnati, on 12 November when Pleasonton's and Grierson's
+  commands would reach St Louis and how many serviceable horses there were for issue; not located in print (searched 9 Oct 2026)." Depth sentence (D3):
+  "On 10 November 1864 the Cavalry Bureau's Major Price asked Col. Brackett at St Louis when Pleasonton's and Grierson's cavalry would arrive there and how
+  many serviceable horses were on hand for them."
+- **Unsafe:** any novelty for E349's second message; "first", "new", "unpublished" for any; "a note to John in Eckert's office" (E349); "Sheridan's"
+  commands (E350); "evacuate" for Relay (E347); "Tomama" (E350).
+
+### 5. Fixes for the next FIX job (not applied here; reading.md is decode.py output)
+- **ciphertext.txt E347:** `plain-at: Relay#1` (station); note Side = 9-line indicator (nine rows); header: W. P. Smith "(B&O master of transportation, I)";
+  print note: not located, OR I/43 pt 1 pp.695-696 for Grant at Monocacy 5 Aug.
+- **ciphertext.txt E349:** header: split into msg 1 (Meigs to Donaldson, 16 Sept 1864 8 PM) and msg 2 (Stanton to Grant, Eutaw House, Baltimore, no header
+  on the page, 16 or 17 Sept 1864): "a note to John (Eckert's office)" -> "Stanton to Grant (John = Grant)"; "[Meade, M]" -> "Meade (Jolly, H; C by print)";
+  "Chief Quartermaster (Vinton)" -> "Chief [Quartermaster] (Vinton = Quartermaster)"; print: msg 2 = Grant Papers vol. 12 (page to fix), msg 1 orders =
+  Army and Navy Official Gazette (Crane, Inspector QMD).
+- **ciphertext.txt E350:** "Tomama" -> "Panama" (image); `plain-at: Planters#1`; header: "Sheridan's" -> "Pleasonton's" ("Pleasant on" plain), "Special
+  Inspector of Cavalry"; print note: OR I/45 pt 1 pp.898, 952, 1001 context.
+- **key.md:** none.

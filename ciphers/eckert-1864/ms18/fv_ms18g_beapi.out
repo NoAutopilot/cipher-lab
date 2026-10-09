@@ -1,0 +1,19 @@
+papersofulyssess0011gran "profound secret" hits 0
+papersofulyssess0011gran refreshments hits 0
+papersofulyssess0011gran "W. P. Smith" hits 0
+papersofulyssess0011gran Relay Monocacy hits 0
+papersofulyssess0012gran "long cipher" hits 1
+    {'text': ['Stanton telegraphed to USG, Eutaw House. “A {{{long cipher}}} despatch is coming through from General Meade', 'I will ride down to meet you. I am sending a {{{long Cipher}}} dispatch to the Genl which I think it important']}
+papersofulyssess0012gran Meade Baltimore arrival hits 0
+papersofulyssess0012gran "your arrival here" hits 1
+    {'text': ['be forwarded to you at Baltimore or wait {{{your arrival here}}}” ALS (tele- gram sent), DNA, RG 107, Telegrams']}
+#control/context papersofulyssess0012gran "Eutaw House" hits 1
+    {'text': ['of War Edwin M. Stanton telegraphed to USG, {{{Eutaw House}}}. “A long cipher despatch is coming through from']}
+#control/context papersofulyssess0011gran Monocacy hits 1
+    {'text': ['Lewis Wallace defeated by Early in the battle of {{{Monocacy}}}, Md., but delayed the C.S.A. advance on Wash-', 'succeeded in driving them back. The line from the {{{Monocacy}}} to to Harpers Ferry has been cut & the rein- forcements', 'forcements sent from here fell back to the {{{Monocacy}}}. Genl Howe has been sent there with about twenty-eight', 'division arrived at Baltimore & sent forward to the {{{Monocacy}}}. Dismounted cavalry oreded here for remounts,', 'state that heavy column of enemy have crossed the {{{Monocacy}}} & is moving on Urbana. Sigel & Couch say that']}
+#control/context papersofulyssess0011gran Relay hits 0
+#control/context papersofulyssess0012gran Crane hits 1
+    {'text': ['Sept. 5-9, spending much time with USG. Edward A. {{{Crane}}}, ed., Memoirs of Dr. Thomas W. Evans: The Second']}
+#ctx "Eutaw House" Stanton 1864 {'text': ['AucusT 21, {{{1864}}} 55\nTo Edwin M. {{{Stanton}}}\n(Cipher ) City Point Va. Aug. 21st {{{1864}}} Hon. E. M. {{{Stanton}}}, Sec. oF', 'January 1—May 31, {{{1864}}}.—v. 11. June 1—August 15, {{{1864}}}.—v. 12. August 16—November 15, {{{1864}}}.\n1. Grant, Ulysses', '15, {{{1864}}}\nAucustT 16, {{{1864}}} 53\nTo Maj. Gen. Henry W. Halleck\n(Cipher ) City Point Va. Aug. 16th {{{1864}}}. [6:30', 'DLC-USG.\nTo Edwin M. {{{Stanton}}}\nCity Point Va. Aug. 26th {{{1864}}}. Hon. E. M. {{{STANTON}}} Sec. oF War, WASHINGTON', 'of Shiloh.\nTo Edwin M. {{{Stanton}}}\nCity Point, Va. Aug 29. {{{1864}}} Hon. E. M. {{{STANTON}}} SECRETARY OF WAR WASHINGTON']}
+#ctx "cipher despatch is coming" {'text': ['telegraphed to USG, Eutaw House. “A long {{{cipher despatch is coming}}} through from General Meade to you. Shall']}
+#OR-III-4 (djvu download 403) Crane disbursing hits 0
