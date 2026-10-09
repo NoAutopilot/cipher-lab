@@ -6571,6 +6571,33 @@ No counted result (nothing at N3+/D2+); one NEAR row added.
   checked: dupuy452, august-van-saksen, wvo-hessen-1564/WVO 1068, fr3669-bethune all lack an unread sibling for the rebuilt key).
 Left, runnable: the Pusterla and Duke next steps above (~$8-12 together); Marcolino f.143 after Battioni.
 
+## LANE LEDGER handoff (session_01PkXfi2qevAQ4DhSpGJHhVb, account 1, incarnation 7 of the blast refill), 9 October 2026 (16:40-20:0x UTC by date -u; closed: last planned wave done, lane about 49 of 60; seven_day allowed_warning throughout)
+
+Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261009-1640; jobs .claude/briefs/runs/2026-10-09-acct1-lane-ledger7-jobs.md (waves 1-4). Twelve
+workers 43.17 + orchestrator 5.84 by get_session. Five_hour allowed; seven_day allowed_warning on every session (not a stop under lane-common-blast).
+Result (eckert-1864; ONE audit each, not counted until a second): N3 D3 -- E318 E319 E320 (Fort Monroe), E325 (mssEC 18); N3 D2 -- E321, E326. Second audits
+queued for the account-3 VERIFY lane: AUD2-LEDGER-26 (E318), -27 (E319-E321), -28 (E325), -29 (E326; account 4 took it at 19:1x). N1 at first audit (15):
+E314 E315 (holder clear copy 10415 / clear transcription 5666), O9-BD O9-CA..CD (all five No. 9 entries; O9-CC OR II/6 p.943), E322 E323 E324 E327 E328 E329 E330
+(OR I/39-49 in print).
+- Keys: KEY-BLIND re-judge (verdicts committed before unmask) holds both S rows -- Tulip = stop 9/10 vs 2/10 (p 0.0027), Whiskey = Troops 7/7 vs 2/7 (p 0.0105);
+  E319 tulip reads Open (entry note, FIX-FM12). mssEC 67 (No. 9 book) ends at p.[24], now fully tabled in key-no9.md: No. 9 decode H 369 M 0.
+  Kearney = Burbridge 2/2 vs control 0/47 (already H via E169). E323 Legend = Hurlbut vs print "Canby's division": M conflict in HYPOTHESES.md.
+- Read: mssEC 18 E322-E330 (MS18-R2), E331-E340 (MS18-R3; six printed: E331 E332 E336 E337 E338 E339). 10058/0 (13 Oct 1865) no book in hand.
+- Fixes: FIX-FM11 (FV-FM9e + AUD2-22..25), FIX-FM12 (FV-FM10a/b/c, KEY-BLIND, NO9-PAGES), FIX-FM13 (FV-MS18b/c); decode/no2/no9 --check exit 0.
+- mssEC 18 yield: 2 N3 of 19 audited-or-printed rows this incarnation (0/10 the time before). The reader print pass missed 5 of 7 prints in MS18-R2 because of
+  a wrong IA id; with ciphers/eckert-1862/ec18/or_volumes.tsv the MS18-R3 reader found six of its own.
+**Next** (costs this incarnation: Sonnet read ~0.25-0.37/entry; Opus first audit ~1.4-1.9/entry, price 1.9; Sonnet FIX ~1.2-1.6):
+1. First verifiers: E333, E334, E335, E340 (NOTES "## MS18-R3", not located), one Opus session, ~7.6; the FV-MS18b method with or_volumes.tsv IA ids. E331 E332
+   E336-E339 are printed per the reader: one Sonnet N1 confirm on the page images (~0.4 each, ~2.4) or fold into the same verifier.
+2. KEY job (Opus, ~1.5): lavender = Washburn (FV-MS18c, from print, proposed in AUDIT) with a control at every occurrence; Tulip = Period context condition in
+   key.md (E319 Open); then a FIX re-grade.
+3. mssEC 18 remaining No. 1 rows (ms18/clean-ms18.tsv order after 10056/2; ~165 left): 10 per Sonnet reader (~2.5-3.7), then first verifiers on the unlocated
+   ones only. Yield is low (~1 N3 per 5 read) but it is the only unread pool in hand.
+4. FV-MS18c search gaps: Buell's lines in O9-BD; Google Books for O9-CA/CB/CD (N1 already; low priority).
+5. Blocked (unchanged): 5648/2 5639/2 (no book in hand); Fort Monroe Jan-Apr 1865 and mssEC 18 10058/0 (no 1865 Oct book); 8472, 6254, 9660 (no book; Cipher
+   No. 4 Friedman copy needs a desk browser, LOCAL-QUEUE). Anderson Galleries 1908 catalogue for E305 (LOCAL-QUEUE L70).
+Light-guardrail share (known-text work): N1 confirms of E329/E330 inside FV-MS18c and KEY-BLIND, about 2.0 of 43.17 (~5%).
+
 ## LANE LEDGER handoff (session_0112WrReDK9hPUT3z5o7jJGi, account 1, incarnation 6 of the blast refill), 9 October 2026 (closed 15:3x UTC: last planned wave done, lane about 51.8 of 60; seven_day allowed_warning throughout)
 
 Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261009-1340; jobs .claude/briefs/runs/2026-10-09-acct1-lane-ledger6-jobs.md (waves 1-3). Fifteen
