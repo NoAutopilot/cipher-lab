@@ -1,4 +1,4 @@
-# PREREG-BRANDT-062 (9 Oct 2026, written 03:3x UTC by date -u, before any decode or score below is computed)
+# PREREG-BRANDT-062 (9 Oct 2026, written 03:2x UTC by date -u, before any decode or score below is computed)
 
 Target: Friedrich von Brandt to Hedwig Sophie, HStAM 4 f Staaten D Dänemark 131. Job BRANDT-062, LANE FAMILY-A2e (account 2).
 
