@@ -8379,9 +8379,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM5a)'"
+        "AUDIT.md '## AUDIT (FV-FM5a)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-9)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM5a verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -8413,16 +8414,17 @@
         "Huntington mssEC 25 (obj 5952) p.93, pointer 5637, E210"
       ],
       "depth_sentence": "A week before the Army of the James sailed up the river, its chief signal officer was sending to Washington for the Engineer Department's best maps of the Peninsula and the south side of the James.",
-      "depth_check": "code clause: Grapes = Washington, Waxy = South, Bergen = James passim; external, non-statistical: Brown, Signal Corps U.S.A. (1896): Signal Office at 158 F Street (= plug publish mandate platina), Capt. Henry S. Tafft on duty there, Sgt. W. Harry Royer act. QM sergeant for Capt. Norton, Norton Capt. and Chief Signal Officer, Dept. of Va. and N.C.; image read whole by FM-R3a; matched clause control FM-R3a",
+      "depth_check": "code clause: Grapes = Washington, Waxy = South, Bergen = James passim; external, non-statistical: Brown, Signal Corps U.S.A. (1896): Signal Office at 158 F Street (= plug publish mandate platina), Capt. Henry S. Tafft on duty there, Sgt. W. Harry Royer act. QM sergeant for Capt. Norton, Norton Capt. and Chief Signal Officer, Dept. of Va. and N.C.; image read whole by FM-R3a; matched clause control FM-R3a; AUD2-LEDGER-9 (9 Oct 2026): Norton's own report, OR I/36 pt 2 pp.20-21 (chief signal officer from 19 Apr 1864, supplies by telegraphic requisition on Washington); D3 kept",
       "depth_note": "18 H of 18 code-word groups ('Tafft', 'Royer', 'Norton' plain)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM5a)'"
+        "AUDIT.md '## AUDIT (FV-FM5a)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-9)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM5a verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -8454,16 +8456,17 @@
         "Huntington mssEC 25 (obj 5952) p.223, pointer 5767, E212"
       ],
       "depth_sentence": "On 7 July 1864, with Early in Maryland, Fort Monroe's quartermaster was ordered to send every available transport to City Point to carry troops to Washington.",
-      "depth_check": "code clause: Judah = Grant, Blubber = City Point, Whig = Transportation passim; the mssEC 18 sent copy (9778/1) header 11.30 AM confirms Florence = 11.30 AM; OR I/37 pt 2 and I/40 pt 3 print only the situation (Grant and Halleck 5 July on transportation; Biggs at Fort Monroe 6 July), not the order: D3 withheld",
+      "depth_check": "code clause: Judah = Grant, Blubber = City Point, Whig = Transportation passim; the mssEC 18 sent copy (9778/1) header 11.30 AM confirms Florence = 11.30 AM; OR I/37 pt 2 and I/40 pt 3 print only the situation (Grant and Halleck 5 July on transportation; Biggs at Fort Monroe 6 July), not the order: D3 withheld; AUD2-LEDGER-9 (9 Oct 2026): 6-8 July City Point troop shipments printed (OR I/37 pt 2, I/40 pt 3), the order itself not; D2 kept",
       "depth_note": "14 H of 15 code-word groups ('united states of America' after the signature M; 'Biggs' plain)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM5a)'"
+        "AUDIT.md '## AUDIT (FV-FM5a)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-9)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM5a verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -8494,17 +8497,18 @@
       "documents": [
         "Huntington mssEC 25 (obj 5952) p.63, pointer 5607, E213"
       ],
-      "depth_sentence": "As the Tenth Corps moved from South Carolina to Fort Monroe in April 1864, its telegraph superintendent asked Eckert to let him and his surplus line material go with the corps.",
-      "depth_check": "code clause: Shelby/Shelter = General passim, Federal Pelham = 10 Corps; external, non-statistical: Plum (Capt. Lemuel F. Sheldon, Dept. of the South), OR I/35 pt 2 (Tenth Corps regiments ordered from Hilton Head to Fortress Monroe 14-19 Apr 1864; Brig. Gen. J. W. Turner Gillmore's chief of staff), OR I/33 (engineering materials to come with Gillmore); image read by FM-R3a",
+      "depth_sentence": "As the Tenth Corps moved from South Carolina to Fort Monroe in April 1864, the Department of the South's telegraph superintendent came to Fort Monroe for Eckert's instructions on the line material the move made surplus, passing on the General's wish that he and the material go with the corps.",
+      "depth_check": "code clause: Shelby/Shelter = General passim, Federal Pelham = 10 Corps; external, non-statistical: Plum (Capt. Lemuel F. Sheldon, Dept. of the South), OR I/35 pt 2 (Tenth Corps regiments ordered from Hilton Head to Fortress Monroe 14-19 Apr 1864; Brig. Gen. J. W. Turner Gillmore's chief of staff), OR I/33 (engineering materials to come with Gillmore); image read by FM-R3a; AUD2-LEDGER-9 (9 Oct 2026): OR I/35 pt 2 GO 58 (3 May 1864) and pp.121-122 (June): L. F. Sheldon superintendent of telegraphs, Dept. of the South; depth sentence reworded (the General's wish, not the sender's request); D3 kept",
       "depth_note": "6 H of 6 code-word groups (the body is clear; signer 'Ell F.' = L. F. [Sheldon], identification I)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM5a)'"
+        "AUDIT.md '## AUDIT (FV-FM5a)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-9)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM5a verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -8536,7 +8540,7 @@
         "Huntington mssEC 25 (obj 5952) p.159, pointer 5703, E214"
       ],
       "depth_sentence": "On 27 May 1864 Eckert sent the operator Bickford's line party to West Point with material for twenty miles of telegraph toward Grant's new base.",
-      "depth_check": "code clause: Harrow/Feeble/Pebble/Gradual numerals passim; external, non-statistical: OR I/36 pt 3 pp.321-322, Sheldon to Eckert 29 May ('Bickford and party arrived ... a steamer to take them direct to West Point ... material to make 20 miles with what they had') and Caldwell to Eckert ('your dispatch of 27th ... Bickford'): confirms Wilson = West, Harrow = 20, Spoon = Mile; image read by FM-R3a",
+      "depth_check": "code clause: Harrow/Feeble/Pebble/Gradual numerals passim; external, non-statistical: OR I/36 pt 3 pp.321-322, Sheldon to Eckert 29 May ('Bickford and party arrived ... a steamer to take them direct to West Point ... material to make 20 miles with what they had') and Caldwell to Eckert ('your dispatch of 27th ... Bickford'): confirms Wilson = West, Harrow = 20, Spoon = Mile; image read by FM-R3a; AUD2-LEDGER-9 (9 Oct 2026): OR I/36 pt 3 pp.321-322 re-read, p.262 Eckert to O'Brien 27 May (same day, other recipient); D3 kept",
       "depth_note": "9 H of 9 code-word groups ('spoons' = Spoon = Mile, key.md p.21 l.26; 'Bickford' plain)"
     },
     {
