@@ -7080,3 +7080,16 @@ problem. Owner ideas: O1 white space, O2 darkening, O3 cut gate, O5 recovery met
 all tested FAIL on dev; O4 colour untestable (sources greyscale, Gallica 403); O7 symbol library ordered now; O8 covered by O7's
 layout (full-pass form already FAIL as TX-SHEET 4 Oct). Ordered too: a read-free audit of the 20 all-pass-wrong positions against the
 truth alignment. Round 3: register report, doubt detector (sorter feed), confirm item once, f.117r live letter. Lane cost ~93 of 150.
+
+Check-in 6, 08:40-08:4x UTC 9 Oct: five_hour allowed; orchestrator context ~650k, cost 42.2 (hand-over to a successor at the
+next check-in if above 700k; SUCCESSOR-PROMPT.md current). TX-ENGINEER (lane at 737k context, cost 58.3; its own successor
+incarnation due): 21 instruments scored, none clears dev; O7+O8 library compare FAIL (0/7 wrong way); M20 shifted crops 13/7 p 0.26;
+doubt detector 0.43 recall at 10.5% (gate 0.7). Two real results: (1) TXE-T floor audit -- of the 20 positions every reader gets
+wrong, 13 are truth-doubtful (alignment 8, key 1, clerk 4); if a verifier upholds them the measured error on no.87 is 0.029, not 0.045,
+and the reader floor 7, not 20 -> TX-TRUTH-VERIFY queued on account 1 (separate session, flag column, tx_bench --exclude-flagged, both
+figures always printed). (2) TXE-Q confirmation item (spinelli-c1519-confirm, built by TX-CONFIRM-SET): today's pipeline read once,
+err_true 0.088 (17/193, 95% 0.056-0.137); 8 of 14 errors are a sheet-inventory gap (two signs absent from the reference sheet that
+pass A flagged NEW) -- the honest headline on an unseen item. TXE-R (f.117r live letter) running. LANE MQS-2 closed 08:06 (self-
+ledgered; archived by the orchestrator); the account-4 dispatcher drains the last MQS rows (BNF-S4, KEY-COMPARE live; 6 queued).
+Account 2 FAMILY-A2g: Manteuffel 0109 = Berlin 4 June 1712 letter printed in clear in Acta Borussica (N0); 0453 head found (No. 88,
+29 Oct 1712). Accounts 1 and 2 queues empty (blast auto-fill). Account 3 silent. Desk clean, NEAR clean.

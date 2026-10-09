@@ -89,3 +89,15 @@ tools/data/tool_shelf.tsv (commit a7fdb795 added them without rows; SYSTEM-MAP r
 and the HYPOTHESES.md rows that cite it, write the three shelf rows with the grade the evidence on file supports (untested unless a
 control result is cited), a SYSTEM.md row each if system_map_check.py asks, and make `tool_shelf.py --check` and
 `system_map_check.py` both exit 0. No other change.
+
+### TX-TRUTH-VERIFY (account-1; Opus 5.5; cap 6; box 90 min) -- verifier, never LANE TX-ENGINEER or its workers
+TXE-T (9 Oct 08:35 UTC, commit 09e0324bb) audited the 20 Birago no.87 positions that every reader on disk gets wrong and proposes
+that 13 are truth-doubtful (alignment 8, key 1, clerk 4; proposal in benchmark-tx/.../truth_flags_proposed.tsv), which would move
+the measured error from 0.045 to 0.029 and the floor from 20 to 7. A separate session decides, one position at a time, from the
+clerk clear-sheet image (canvas 182) and the printed 1572 key, with NEVBIR-87ALIGN's alignment rows: for each flagged position
+write the truth value the image supports, the reason class, and KEEP / FLAG / CORRECT. A `flag` column is added to
+benchmark-tx/birago1572-no87.truth.tsv (the truth value itself changes only on CORRECT, with the image reason, and a BENCHMARK-TX.tsv
+note line); `tools/tx_bench.py` gains a `--exclude-flagged` switch with an offline test so both figures (as measured, flagged
+excluded) print side by side. Then rescore pass A, pass B, the reconciled read and the TXE instruments' committed outputs with
+both switches and paste the table into TRANSCRIPTION.md's Today column (as measured first, flagged-excluded second, never one
+alone). No reading of cipher text, no key edits.
