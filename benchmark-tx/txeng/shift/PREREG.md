@@ -1,6 +1,6 @@
 # PREREG TXE-N (M20): a second crop set shifted half a line and half a segment, read only where the two sets disagree
 
-Written 9 Oct 2026, 08:2x UTC by date -u, by TXE-N (LANE TX-ENGINEER, account 4, Opus 5.5), pushed BEFORE any read.
+Written 9 Oct 2026, 08:0x UTC by date -u, by TXE-N (LANE TX-ENGINEER, account 4, Opus 5.5), pushed BEFORE any read.
 Binds with `benchmark-tx/PREREG-txeng-2.md` (units, blindness, Amendment: single-instrument gate p < 0.01, one eval look).
 Brief `.claude/briefs/runs/2026-10-09-account4-txe-n.md`.
 
