@@ -8589,9 +8589,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM5c)'"
+        "AUDIT.md '## AUDIT (FV-FM5c)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-11)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM5c verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -8611,8 +8612,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Sheldon (Fort Monroe) to Maj. Eckert, 14 Dec 1864, Foster's reconnaissance to the Charleston and Savannah railroad at Tullifinny and 990 exchanged prisoners from Charleston (E235)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 14 Dec 1864 the Fort Monroe operator told Major Eckert in Washington that on the previous Friday Foster's force, landed between Tullifinny Creek and the Coosawatchie below Pocotaligo, had reconnoitred in force to within 150 yards of the Charleston and Savannah railroad, held its ground at a loss of about 150 killed and wounded, and was breaking the railroad with 30-pound Parrotts, and that the steamer United States had brought 990 exchanged prisoners from Charleston on their way to Annapolis. The telegram was not located in the Official Records (ser. I vol. 44, ser. II vol. 7), the Navy Official Records (ser. I vol. 16), 174 cached volumes or the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3 (one audit): New York and Baltimore press of 15-17 Dec 1864, Google Books (429), Chronicling America (unvalidated), Grant Papers vol. 13 unread; page 5832 (last three lines) not image-checked; 'plank' M",
+      "line": "Read at grade H with War Department Cipher No. 1: on 14 Dec 1864 the Fort Monroe operator told Major Eckert in Washington that on the previous Friday Foster's force, landed between Tullifinny Creek and the Coosawatchie below Pocotaligo, had reconnoitred in force to within 150 yards of the Charleston and Savannah railroad, held its ground at a loss of about 150 killed and wounded, and was breaking the railroad with 30-pound Parrotts, and that the steamer United States had brought 990 exchanged prisoners from Charleston on their way to Annapolis. The telegram was not located in the Official Records (ser. I vol. 44, ser. II vol. 7), the Navy Official Records (ser. I vol. 16), 174 cached volumes or the Huntington's full-text search (searched 9 Oct 2026); the same-day Associated Press despatch from Fortress Monroe printed the arrival of the steamer United States with exchanged prisoners (estimated at 700-800) and the sound of Sherman's guns, in other words and without the Tullifinny report (Cleveland Morning Leader, 16 Dec 1864).",
+      "gap": "N3 (two audits): Grant Papers vol. 13 and Google Books (429) unread; NY Herald/Baltimore American of 15 Dec not read page by page; 'plank' M; image now checked on 5831 and 5832",
       "depth": "D3",
       "completeness": "44 H of 45 code-word groups ('plank' M)",
       "phrases": [
@@ -8623,7 +8624,7 @@
         "Huntington mssEC 25 (obj 5952) p.287, pointer 5831, E235"
       ],
       "depth_sentence": "On 14 Dec 1864 Fort Monroe reported that Foster's troops between the Tullifinny and the Coosawatchie had come within 150 yards of the Charleston and Savannah railroad, lost about 150 men, and were shelling the line with Parrott guns, cutting communication between Charleston and Savannah, while 990 exchanged prisoners passed through for Annapolis.",
-      "depth_check": "code clause: Weldon/welch = Rail Road (x4 here; passim), Lonesome = Foster (5833), brandy/Bravo = Charleston, oiled = attacked (C in E234/E236 clear copies); external (non-statistical): OR I/44 pp.665-666, 708, 749-750 (Foster's force between Coosawhatchie and Tullifinny commanding the railroad with batteries; 30-pounder Parrotts to break the road); image checked by FV-FM5c (5831; 5832 not); matched control FM-R3c",
+      "depth_check": "code clause: Weldon/welch = Rail Road (x4 here; passim), Lonesome = Foster (5833), brandy/Bravo = Charleston, oiled = attacked (C in E234/E236 clear copies); external (non-statistical): OR I/44 pp.665-666, 708, 749-750 (Foster's force between Coosawhatchie and Tullifinny commanding the railroad with batteries; 30-pounder Parrotts to break the road); image checked by FV-FM5c (5831) and AUD2-LEDGER-11 (5832); matched control FM-R3c",
       "depth_note": "44 H of 45 code-word groups ('plank' M)"
     },
     {

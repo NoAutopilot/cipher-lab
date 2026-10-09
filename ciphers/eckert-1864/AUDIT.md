@@ -7097,3 +7097,57 @@ All four first-audit classes and depths hold. One over-reading in a depth senten
 request), corrected in status.json. New evidence is context, not the telegrams: Norton's own report for E210, GO 58 and the June
 indorsements for E213, Eckert's same-day O'Brien telegram for E214. SECOND-OPINIONS-QUEUE.tsv rows SO-ECKERT-E210/E212/E213/E214 are
 unchanged (no class or count moved). Requests: archive.org 2 (djvu), be-api 12 (5 x 502), googleapis 1 (429), Huntington 9.
+
+## AUDIT 2 (AUD2-LEDGER-11)
+
+Second verifier AUD2-LEDGER-11 (account 3, for LANE-VERIFY-4), 9 Oct 2026, 00:55-01:2x UTC by `date -u`; a separate session and account
+from the reader FM-R3c and the first auditor FV-FM5c (both account 1); account 3 had not read or audited E235 before. Scope: **E235** only
+(E230, E234, E236, E237 are N1 on holder clear copies and were not second-audited, per the brief). Nothing decoded; key look-ups in
+FV-FM5c section 3 were checked against the image and the transcription only. Key source: `period`.
+
+### Prior-work checks 3-5
+- `prior_work.py eckert-1864 --item-spec 'shelfmark=mssEC 25;folio=p.287 pointer 5831;date=1864-12-14;sender=Sheldon;recipient=Eckert'
+  --step-type second-audit --fetch` (E235 has no items.tsv row): exit 4; LEAD 1-own = the ECK-PAGEFIX claim (mssEC 19 page column, a
+  different volume; does not cover this item); 3-tomokiyo / 3-solver UNCHECKED (no folio/R-id keys for an ad-hoc unit; unsolved-ciphers
+  not cloned); 4-editions CLEAR on the cached OR volumes (date +-1 day, both correspondents, control hit).
+- Same with `--reading <decoded body> --network` (G3): 6 decoded phrases, no hit in OR ser. I vols 43/45 pts (`warofrebellion432unit`,
+  `warofrebellion452unit`), ORN I/9-10, Butler IV; the tool's per-item request budget ran out before OR I/44-49 djvu, ia-global and gbooks
+  (UNCHECKED-NET; OR I/44 and ORN I/16 had been grepped by FV-FM5c, 0 hits).
+- **Press of the day (Chronicling America, www.loc.gov collection JSON + tile.loc.gov full text; 15 requests, >=1.6 s apart, one 503
+  retried once after a pause; chroniclingamerica.loc.gov `ocr.txt` answered 403 x4, host left).** Date filter validated this session by
+  positive controls (the rebel Tullifinny reports of 13-14 Dec found in the Portland Daily Press and Chicago Tribune, 16-17 Dec, inside the
+  window) -- so FV-FM5c's "unvalidated" caveat is lifted for these queries. Queries: `"exchanged prisoners" annapolis "united states"`,
+  `tullifinny`, `"Fortress Monroe" Pocotaligo`, `"Fortress Monroe" "exchanged prisoners" Charleston` (14-20 Dec 1864).
+  - **Related, printed:** the Associated Press despatch "Fortress Monroe, Dec. 14", Cleveland Morning Leader 16 Dec 1864 p.1
+    (sn83035143/1864-12-16/ed-1/seq-1): "The steamer United States arrived this morning from Port Royal, with a large number of exchanged
+    prisoners, estimated at 7[0]0 or 800 ... the firing of his [Sherman's] guns in the direction of the Savannah River was distinctly heard
+    for several days prior to her sailing from Port Royal." Same day, same office, the same two facts as the telegram's second half (the
+    steamer United States, Sherman's guns toward the Savannah River) -- but different words, a different count (700-800 vs 990) and a
+    different port (Port Royal vs Charleston), and nothing of the Foster/Tullifinny/150 yards/Parrotts paragraph. Evening Star (Washington)
+    17 Dec p.2: 3,600 exchanged prisoners at Annapolis since Wednesday, "1,[OCR illegible] of whom reached there last evening from Charleston" (context). Cleveland
+    Morning Leader 17 Dec p.1: "Fortress Monroe, Dec. 15. The steamer Crescent ... with 730 released prisoners" (a different boat).
+  - **Not located:** the telegram's text ("knock fits", "within 150 yards", "990"/"nine hundred and ninety", "break of communication"); no
+    Northern paper in the window printed Foster's reconnaissance in these terms (the Tullifinny items found are the rebel Savannah/
+    Charleston reports reprinted).
+- Google Books (`"exchanged prisoners" "steamer United States" Annapolis 1864`, &country=US, key): one probe, HTTP 429; host stopped,
+  unreachable. Grant Papers vol. 13: not searched (be-api not tried this session; budget). Holder full text: FV-FM5c's CONTENTdm queries
+  (tallifinny/tulifinny/coosawatchie/knock fits) stand; not repeated.
+
+### Image of p.288 (pointer 5832)
+Fetched once at native size (6024x7200) under an hdl take/release (2 IIIF requests, the first a 502 on a region URL), cropped locally.
+The three closing lines read, word for word as the transcription: "william and modest exchanged prisoners left Bravo Monday / morning
+arrived herat plunder this morning and left / immediately for Annapolis youth L. F. Shell done", then "Geo. D. Sheldon", then the next
+entry "City Point Dec. 14 - 1864". The second initial of the signature could be read G as easily as F (a fact for the decoder, not a
+change to any code value). With FV-FM5c's crops of 5831, the whole of E235 is now image-checked.
+
+### Verdict
+- **E235: N3 holds** (no prior plaintext or decipherment located; the same-day AP despatch prints two of its facts in other words, which
+  is context, not the plaintext). Depth **D3 kept** (H 44 of 45, 'plank' M; the image check of 5832 completes the transcription check; no
+  reason to lower). Key `period`. Safe sentence: FV-FM5c's, with the added clause "; the same-day Associated Press despatch from Fortress
+  Monroe printed the arrival of the steamer United States with exchanged prisoners (estimated at 700-800) and the sound of Sherman's guns,
+  in other words and without the Tullifinny report (Cleveland Morning Leader, 16 Dec 1864)". Unsafe: any novelty word; "the press did not
+  report it".
+- Corrections propagated: status.json E235 row (audit_status two audits, gap, line); SO-ECKERT-E235 prompt's context paragraph (the AP
+  despatch added, so the second opinion does not "find" it as prior print).
+- Postmortem: none against FV-FM5c's reading; its two open items (press unvalidated, 5832 not imaged) are closed above. Still open:
+  Grant Papers vol. 13 and Google Books (429), and NY Herald/Baltimore American of 15 Dec read page by page.
