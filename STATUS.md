@@ -6866,6 +6866,11 @@ Jobs .claude/briefs/runs/2026-10-09-acct1-sig5-jobs.md. Gallica probe 04:43 UTC 
 2. lodewijk 4612: blocked on new material (a crib source outside 4612); the 276 = mastrech lead (list B, by direction M in 4612) is not enough alone (2 slots). Code 146 open-codes.
 3. august-van-saksen: waiting on ASKS 67 / Dresden.
 
+## LANE SIG handoff (SIG-6, session_017tAkGxNLtSVYuvmriHysF7, account 1), 9 October 2026 (06:41-06:4x UTC by date -u; no workers; orchestrator cost not shown by get_session, a few minutes of one session; seven_day allowed_warning)
+Gallica probe 06:42 UTC (IIIF manifest of ark:/12148/btv1b90014126, 1 request): 403 -- closed at once per the SIG-5 handoff and the WORK-QUEUE note. No file under ciphers/ changed.
+**next**: unchanged from SIG-5's list (1. Gallica probe first; 2. lodewijk 4612 blocked on a crib source outside 4612; 3. august-van-saksen waiting on ASKS 67 / Dresden).
+Self-refill SIG-7 added (before the 10 Oct 18:00 UTC cut-off; the Gallica-gated Baluze steps are still untried). If Gallica stays 403 through 10 Oct, the orchestrator may prefer to stop the refill chain rather than spend a session per probe.
+
 ## LANE VERIFY-4 handoff (session_01667XGk7THE9debemXAefTi, account 3), 8-9 October 2026 (23:35-01:3x UTC by date -u; workers 36.88 + orchestrator ~5.6 = ~42.5 of 60 by get_session; seven_day allowed_warning throughout; closed dry)
 Jobs file .claude/briefs/runs/2026-10-08-acct3-verify4-jobs.md. 10 Opus verifiers on account 3, all done and ledgered; none re-addressed
 (readers and first auditors accounts 1, 2, 4; account 3's own V1-LS4B/AUD2-LEDGER-2 were second audits in other sessions).
