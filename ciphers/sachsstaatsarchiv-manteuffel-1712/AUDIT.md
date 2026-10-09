@@ -1648,3 +1648,95 @@ have no value to hold, 254 collapses into 259, 191 and 259 are already M, 42's c
 ciphers/sachsstaatsarchiv-manteuffel-1712 --check` re-run after this section (nothing regenerated). The single thing that would move 191, 199,
 254/259 together is the y-glyph (4|9) census per hand named by MANT-EYE63R and MANT-XTR (~$2, disk crops); recommended before any further name
 code is held or keyed in this folder. No novelty class assigned or changed; no reading claimed.
+
+## AUDIT (V-MANT16S)
+
+Verifier V-MANT16S (Opus, account 2, LANE FAMILY-A2k), 9 Oct 2026, 18:44-19:0x UTC by `date -u`; a separate session from the solvers MANT-XTR
+(0312/0314, LANE FAMILY-A2j) and MANT-0309 (session_01BJv3LLv5CgyEAymkFzuH5U); I had read none of these leaves before this job. Brief:
+.claude/briefs/runs/2026-10-09-ytbiz-family-1815-jobs.md "### V-MANT16S". Claim under audit (NOTES "MANT-XTR" and "MANT-0309"): Loc. 694/08
+frames 0309 (covering dispatch, stamp 240, Berlin 16 Sept 1712, 48 code tokens: C 35, M 13) and 0312 + 0314 (the "Extrait" pair it encloses,
+91 code tokens: C 63, M 28) carry a period interlinear gloss; Krauske's table agrees with it past a key-shuffle p99 on every deciding row; "none
+printed in Acta Borussica BO I". Both jobs are key tests, not readings: every scored span is the gloss's own text. Nothing decoded here;
+key.tsv, ciphertexts and gate files untouched.
+
+**1. Items.** SHStA Dresden 10026 Geheimes Kabinett Loc. 694/08, Manteuffel to Flemming, Berlin. 0309: covering letter (clear text per the
+solver's eye: "Je joins ici les extraits de la resolution de [198 Stan:] et de la relation de [arnhold]"; four letters "de la main de [198]",
+one to [Jablonski] "qui est du secret", one to [9 Ilgen]; [Razrozewski] named). 0314: the extract of Stanislas's resolution (cipher spans:
+Stanislas, roi de Prusse, Pologne, roi de Suede, 'la Couronne', 'la Republique', Roy). 0312: the extract of Arnold's relation (Stanislas,
+roi de Prusse/Suede, Czar, Stockholm, 'le Senat', 'le Comte Horn', Steinbock, 'Arnh:'). The cipher on all three leaves is names and short noun
+phrases inside clear French; the sense is carried by the clear text.
+
+**2. Re-derivation (rule 7).** `cd f0309_08 && python3 gloss_gate.py --check` "gate.out up to date" exit 0; `cd f0314_08 && python3
+gloss_gate.py --check` (pooled 0312+0314) "gate.out up to date" exit 0. No reading.txt or decode.json exists for these leaves (no reading is
+claimed); `tools/decode_key.py f0309_08|f0312_08|f0314_08 --check` stops on the leaf ciphertext.tsv layout (ValueError on the header 'pos') --
+a format mismatch (these are pass/settle tables, not decode inputs), not a stale file. The gate outputs are the reproducible artefact.
+
+**3. Design audit (rule 3).**
+- *PREREG order.* PREREG-MANT0309.md: 5efeff79e (18:32:38 UTC, PREREG alone) precedes 3cc96f7b1 (18:35:38, passes, glosses, gate.out):
+  verifiable. **PREREG-MANTXTR.md: not verifiable from git** -- the solver's 9a9ed332f is not an object on origin/main; PREREG, gloss passes and
+  gate.out all first appear together in a768bc651 (18:23:07, "ROOM: check-in ...", a room.py rebase fold, CLAUDE.md rule 6's known flag). The
+  order rests on the solver's NOTES only; the numbers re-derive exactly. Not evidence of a breach.
+- *Gate.* The gloss is a period decipherment written on the leaf; key.tsv was not edited from it, so agreement tests Krauske's table against
+  an independent period reading. The control (key values permuted over codes) changes the letters each code yields, so it CAN differ from the
+  target on the statistic (not an orthogonal non-test). Deciding rows PASS on both blind gloss passes (0309 (a) 35/40 and 36/40 vs p99 12;
+  pack (a) 38/49 and 39/49 vs p99 12-13, (n) 25/34 and 24/34 vs p99 4-6). Sound. Independence caveat carried from AUDIT (V-MANTH): Krauske
+  may have compiled the table from such glosses, so agreement is a consistency check, not two independent decipherments.
+- *0309 row (n)* (5/8 keyed, 3 slots of code 9 scored 0 by construction, value 'i' vs gloss 'Ilgen') is correctly reported "neither".
+- *Spot check (rule 2), committed crops, my eye:* 0309 R08 c-strip reads 60.25.73.26.33.73.35.3.2y.11.71 (= ciphertext.tsv, the 2y being the
+  folder's y-glyph read 29) under the gloss "Razrozewski" (I read "Razrolewski"; z/l is the gloss hand's z); 0312 A14 reads 103.284.47.16.60.21
+  under "le Conte Horn" (= ciphertext.tsv). 17 tokens, 0 disagreements.
+
+**4. Novelty search log (rule 10; families (a)-(g)).**
+- (leaf) Every cipher run on the three leaves carries the period interlinear decipherment except 0309 R05b (11 80, the tail of the glossed
+  'Jablonski' run), 0314 R14 (292, the Pologne code glossed elsewhere on the leaf) and 0312's title run 66.60.21.16.12.120 (its first three
+  codes glossed 'Arnh:' twice on the same leaf). The plaintext of the cipher spans was written on the leaves in 1712: **KNOWN (N0)**.
+- (a) **Acta Borussica, Behördenorganisation I** (1894): IA djvu (diebehrdenorgan01posngoog, 1 GET) grep Arnold 0, Stanislaus 0, Rozrazewski 0,
+  Stenbock 0, Jablonski 1 (the Feb 1713 funeral sermon); Google Books search-inside ESf8fHFG9ngC: Manteuffel 20 (positive control; p.256 Nr. 72
+  heading "Manteuffel an ... Flemming. Berlin 19. September, 4., 7. und 23. October 1712"), Arnold 3 (all Arnold Westenberg, Lingen),
+  Stanislaus 0, Rozrazewski 0, Jablonski 1 (p.312 note, another matter). **0309/0312/0314 are not printed in BO I** (confirms the solvers).
+  BO II (Akten from mid-1714) is out of date range; not searched.
+- (b) **Droysen, Geschichte der preußischen Politik IV.1** (IA droysen-geschichte-der-preussischen-politik-v-4-no-1, djvu, 1 GET): p.267 and
+  Anm. 511-512 print the substance -- a confidential envoy sent from Berlin to King Stanislas in Sweden in July 1712, Stanislas ready to
+  abdicate, then after talking with the Swedish statesmen adding conditions; "Arnolds Schlußbericht über seine Sendung ist d. d. Berlin,
+  6. September 1712"; Stanislas wanting Courland and the Silesian duchies as compensation. Manteuffel's 16 Sept letter and the extracts are not
+  quoted.
+- (b) **Bonnesen, Studier över August II:s utrikespolitik 1712-1715 I** (Lund 1918; Google Books GS3SAAAAMAAJ search-inside, 18 requests):
+  pp.65-73 narrate the Arnold mission in detail (Benjamin Arnold, burgomaster of Lissa; Jablonski's role; Stanislas's own-hand letter to
+  Arvid Horn on his negotiations with Arnold; Rozrazewski sent to Stockholm to consult the council (rådet = 'le Senat'); Horn's answer that
+  Stenbock would bring the Senate's view; Arnold back in Berlin 4 Sept; "Jablonski till Ilgen, Berlin 14 sept. 1712"). The notes for these
+  pages cite G.S.A. Rep. XI (Berlin); Bonnesen cites Manteuffel to Flemming from H.S.A. Loc. 3303 (13 Apr 1712) and Loc. 694 vol. 146 (23 Apr
+  1713), but no snippet ties a 16 Sept 1712 Manteuffel letter or Loc. 694 vol. 145 to these pages. **SUBSTANCE printed; the leaves themselves
+  unchecked beyond snippets** (page read owed: LOCAL-QUEUE L69, already open).
+- (b) Berner 1901: not re-tried (djvu 500 on 9 Oct, MANT-UNG). Klopp, Sbornik RIO, the Prussian Staatsschriften: not searched.
+- (e) Google Books API (country=US, key; 7 queries): "extraits de la resolution" 57 (all 20th-century, unrelated); "de la main du Roy
+  Stanislas" 352 (loose, Poniatowski/Lorraine, unrelated); "qui est du secret" Jablonski 233 (loose, unrelated); Manteuffel Flemming "16
+  septembre 1712" 0; Manteuffel Flemming 1712 Arnold Stanislas 0; "Rozrazewski" Manteuffel 2 (church lexica); a 7-term subject query 0.
+  IA full text (be-api): "extraits de la resolution" Stanislas 10 (all 20th-century press); then HTTP 502 twice -- host stopped, the other 3
+  phrase queries **unchecked**.
+- (f) Solver repositories: dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers not cloned this session (prior-work UNCHECKED-NET as in the
+  solvers' runs); no Manteuffel row is recorded for either in this folder's prior-work.tsv.
+- (g) OpenAlex (key): "Arnold Stanislaus Leszczynski 1712 Prussia" 2 (Russian Baltic expansion 2022; Saxon-Polish union 2004 -- titles only,
+  not read); "Manteuffel Flemming cipher 1712" 1 (Geheime Netzwerke im Militär 2016, unrelated). JSTOR: three rows appended to JSTOR-QUEUE.tsv,
+  family (i) sender/subject AND cipher keyword, family (ii) the printed wording "Arnolds Schlußbericht" and the plaintext phrase "extraits de la
+  resolution de Stanislas", no cipher keyword. Not blocking (below N3).
+
+**5. Classification.**
+| item | class | key | text | depth | safe sentence |
+|---|---|---|---|---|---|
+| 0309 (48 code tokens) | **N0** | `period` (the leaf's own interlinear gloss), Krauske's `published` table agreeing (gate PASS) | known (the gloss; substance printed in Droysen IV.1 p.267/Anm. 511 and Bonnesen 1918 pp.65-73) | **D1** (depth_pct 72.9, C 35 of 48) | "Manteuffel's covering letter of 16 Sept 1712 (Loc. 694/08 frame 0309) already carries a period decipherment between the lines; Krauske's 1893 table agrees with it far better than a shuffled key." |
+| 0312 + 0314 (91 code tokens) | **N0** | as 0309 | known (as 0309) | **D1** (depth_pct 69.2, C 63 of 91) | "The two extracts Manteuffel enclosed on 16 Sept 1712 (Stanislas's resolution and Arnold's relation, frames 0314 and 0312) carry their own period interlinear decipherment, and Krauske's table reproduces it; the Arnold mission they concern is narrated in Droysen IV.1 and Bonnesen 1918." |
+Depth reason: the cipher spans are names and short noun phrases ('la Couronne', 10 letters, the longest letter run), far below the
+authentication distance (~127-138 letters, FAM-MANTV); 198 = Stanislas reads in many contexts, but only as the period gloss supplies it --
+reading a period decipherment is not a code value read by us, so the code clause is not used to lift the depth. N0 is not counted either way.
+Unsafe: "Manteuffel's report on the Arnold-Stanislas negotiation deciphered"; "unprinted extracts of Stanislas's resolution"; "Krauske's key
+verified on the 16 Sept pack" (it agrees with the gloss; the table may derive from such glosses); any count of C tokens presented as our
+reading. No SECOND-OPINIONS-QUEUE row: N0/D1 is below the N3+ D2+ trigger.
+
+**6. Postmortem and corrections.** No over-claiming sentence found in MANT-XTR or MANT-0309 (both say "a key test, not a reading", "search
+results, not novelty verdicts"); status.json carries no result for these frames. Corrections: (a) MANT-XTR's PREREG commit 9a9ed332f is not on
+origin/main (folded into a768bc651) -- its pre-score order is the solver's statement only; (b) both solvers' BO I-only premise check missed the
+two places the matter is printed (Droysen IV.1 p.267/Anm. 511, which V-MANTR8 had already found for 0375, and Bonnesen 1918 pp.65-73);
+recorded here. (c) The leaf ciphertext.tsv files are not decode_key.py inputs; a future reading on these leaves needs a decode.json.
+Requests this audit: archive.org 5 (metadata 3, djvu 2; the ROOM release line's '3' undercounts), be-api.us.archive.org 3 (200, 502, 502:
+stopped), books.google.com 24 (search-inside, 2.2 s apart, all 200), www.googleapis.com 7 (200), api.openalex.org 2 (200). Vision: none (2 committed
+crop pairs eyed). No 403, 429 or challenge.

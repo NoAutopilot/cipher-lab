@@ -3960,3 +3960,10 @@ job); key.tsv and readings unchanged, so no --check re-run was needed. Slots whe
 check: 0494 T019 (4 -> 9 = i), 0136 T060/T064 (254 -> 259 = Ilgen, M), 0063 slot01/03/04 (7/24/34 -> 9/29/39). Grades unchanged.
 Next (suggestion): eye check of those six slots on committed crops plus a look at the 0398/0410 code-19 strokes against the y-slots, and a
 hand attribution per leaf (~$1.5).
+
+## V-MANT16S (9 Oct 2026, verifier, LANE FAMILY-A2k account 2): 694/08 0309 + 0312/0314, the 16 Sept 1712 pack -- see AUDIT.md "AUDIT (V-MANT16S)"
+
+All three leaves N0 (the cipher spans carry their own period interlinear decipherment), D1, key `period` with Krauske's table agreeing; gates
+re-derive (`--check` up to date, 0309 and pooled 0314). Not in Acta Borussica BO I (confirmed); the Arnold-Stanislas matter the pack concerns
+is printed in Droysen IV.1 p.267 / Anm. 511 and Bonnesen 1918 pp.65-73 (page read still owed, LOCAL-QUEUE L69). MANT-XTR's PREREG order is not
+verifiable from git (folded commit). No SO row (below N3). Three JSTOR-QUEUE rows added (families i and ii).
