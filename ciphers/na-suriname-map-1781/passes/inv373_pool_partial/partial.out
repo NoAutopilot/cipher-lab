@@ -1,0 +1,11 @@
+# SUR-PARTIAL: poolpc.py scaffolds (pooled lines 65), K=300 C1 per unit, 200 units per level per pass, master seed 20261010
+  f 0.25 A: units 200; planted share 0.247; y on m mean 36.1, on n mean 128.8; S mean 0.781; p99.5 mean 0.865; verdicts {'NO SPLIT SHOWN': 200}; LEANS n rate 0.000
+  f 0.25 B: units 200; planted share 0.244; y on m mean 36.1, on n mean 132.5; S mean 0.786; p99.5 mean 0.871; verdicts {'NO SPLIT SHOWN': 200}; LEANS n rate 0.000
+  f 0.50 A: units 200; planted share 0.507; y on m mean 24.5, on n mean 128.6; S mean 0.840; p99.5 mean 0.870; verdicts {'LEANS n': 19, 'NO SPLIT SHOWN': 181}; LEANS n rate 0.095
+  f 0.50 B: units 200; planted share 0.498; y on m mean 24.6, on n mean 130.2; S mean 0.841; p99.5 mean 0.875; verdicts {'NO SPLIT SHOWN': 188, 'LEANS n': 12}; LEANS n rate 0.060
+  f 0.75 A: units 200; planted share 0.743; y on m mean 13.9, on n mean 128.3; S mean 0.903; p99.5 mean 0.877; verdicts {'LEANS n': 172, 'NO SPLIT SHOWN': 28}; LEANS n rate 0.860
+  f 0.75 B: units 200; planted share 0.746; y on m mean 14.1, on n mean 131.0; S mean 0.903; p99.5 mean 0.877; verdicts {'LEANS n': 174, 'NO SPLIT SHOWN': 26}; LEANS n rate 0.870
+DETECTION f 0.25: A 0.000 B 0.000
+DETECTION f 0.50: A 0.095 B 0.060
+DETECTION f 0.75: A 0.860 B 0.870 -> power >= 0.80 both
+SMALLEST f with power >= 0.80 on both scaffolds: 0.75
