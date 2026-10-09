@@ -2645,3 +2645,19 @@ Read so far: six of six rows filed (E240-E245); E244 located in print (OR I/39 p
 - [x] image-check: all six pages read whole at 2400 px.
 - [x] retry: one be-api retry (timeout), one Google Books probe (429, not retried).
 Verdict: keep going: 4 internal gaps, cheapest next: E245 telegram in ORN I/10 pp.246-252 and ORN I/16, ~$0.2
+
+## FIX-FM4 (9 Oct 2026, account 1, for LANE LEDGER)
+
+Worker FIX-FM4, 00:28-00:4x UTC by `date -u`, offline. Carries AUDIT "FV-FM4" s.3 into the readings through per-entry lines in ciphertext.txt (transcription lines untouched; no key.md row edited; reading.md only by `decode.py --write`). No decoder change.
+
+| Entry | Token | Before | After (note) | Grade before -> after | Source |
+|---|---|---|---|---|---|
+| E193 | tail "Are see webster vinton" | `[signed] Are see [signed] [Quartermaster]` | `[signed] Are see webster [Quartermaster]` (`plain-at: webster#1`; R. C. Webster, Chief QM, Fort Monroe) | H -> not counted (decoder H 18 -> 17; the audit's 17 H of 17 counts code groups only) | FV-FM4 s.3 |
+| E193 | "Toby" | as written | as written (`plain: toby`; = to be) | none | FV-FM4 s.3 |
+| E193 | "harsh second" | `[20] second` | unchanged: the decoder has no ordinal-join for a clear "second" after a tens word; the note line records 20 + second = the 22nd (twenty-second); status.json/SO prompt already say 22nd | H (harsh) | FV-FM4 s.3 |
+| E194 | "Hawley" | `[General] [Roddy]` | `[General] Hawley` (`plain: hawley`) | H -> not counted (decoder H 16 -> 15, matching the audit's 15 H of 15) | FV-FM4 s.3 |
+| E194 | "pro", signature "Barry" | as written | unchanged, M by the audit (no per-token grade for words outside the key) | -- | FV-FM4 s.3 |
+
+`python3 ciphers/eckert-1864/decode.py --write` then `--check` -> `reading.md is current`, exit 0; `decode_no2.py --check` and `decode_no9.py --check` current; `python3 -m unittest tools.tests.test_eckert_decode` OK.
+Propagation (rule 10): status.json rows E193/E194 and second-opinions/PROMPT-chatgpt-e193.md / -e194.md already carry R. C. Webster, twenty-second, 5,700 and Hawley (checked); no SO row withdrawn (both N3 weak). No class or depth changed.
+Not done: an ordinal-join for "[20] second" in the rendered reading (decoder feature, not named by the audit).

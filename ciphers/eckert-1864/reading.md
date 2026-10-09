@@ -1075,15 +1075,15 @@ Code-word tokens: H 18.
 
 **E193 | Page 240 | 5784 | mssEC 25 (obj 5952, pointer 5784), 19 Sept 1864 Fortress Monroe, Sheldon to Maj. Eckert, Wash'n, for Rucker (FM-R2b; row 5784/0; transcription only)**
 
-Wash'n. [Monroe] {time: 1 PM} [19] for [Brigadier General] Rucker [Washington] [.] My orders were from [Maj Gen B. F. Butler] to provide [Transportation] by the [20] second for about [5700] sick prisoners Toby exchanged at some point [South] [.] exact point and destination unknown to me at present  {tail: [signed] Are see [signed] [Quartermaster] Geo. D. Sheldon}
+Wash'n. [Monroe] {time: 1 PM} [19] for [Brigadier General] Rucker [Washington] [.] My orders were from [Maj Gen B. F. Butler] to provide [Transportation] by the [20] second for about [5700] sick prisoners Toby exchanged at some point [South] [.] exact point and destination unknown to me at present  {tail: [signed] Are see webster [Quartermaster] Geo. D. Sheldon}
 
-Code-word tokens: H 18.
+Code-word tokens: H 17.
 
 **E194 | Page 261 | 5805 | mssEC 25 (obj 5952, pointer 5805), 4 Nov 1864 Butler's Hd Qrs, R. O'Brien to Sheldon, Ft Monroe (FM-R2b; row 5805/2; image-read at 2400 px)**
 
-{time: 2.30 PM} {date: Nov 4} for [Captain] Langdon [1] united states [Artillery] pro [,] [New York] [Monroe] [.] if [General] [Roddy] is gone when you reach [Monroe] open your own letter of instructions & give Corresponding order to the vassals which have no letters [.] use all possible despatch  {tail: [signed] [Major] [General] Barry R OBrien}
+{time: 2.30 PM} {date: Nov 4} for [Captain] Langdon [1] united states [Artillery] pro [,] [New York] [Monroe] [.] if [General] Hawley is gone when you reach [Monroe] open your own letter of instructions & give Corresponding order to the vassals which have no letters [.] use all possible despatch  {tail: [signed] [Major] [General] Barry R OBrien}
 
-Code-word tokens: H 16.
+Code-word tokens: H 15.
 
 **E220 | Page 267 | 5811 | mssEC 25 (obj 5952, pointer 5811), 29 Nov 1864 Ft Monroe, Sheldon to Maj. Eckert, for Rucker: the steamers he will send that night, answering Eckert's call of the same day on the page (FM-R3b; row 5811/2; image-read at 2400 px)**
 
@@ -1295,5 +1295,5 @@ Maj. Eckert Washington Flag ship Malvern Hampton Roads {time: 9.30 AM} [By the w
 
 Code-word tokens: H 24.
 
-Totals over the 194 entries: H 3305, C 28, I 6, M 3.
+Totals over the 194 entries: H 3303, C 28, I 6, M 3.
 <!-- decode.py: derived block ends -->

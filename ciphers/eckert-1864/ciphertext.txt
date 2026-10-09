@@ -1829,6 +1829,9 @@ Toby exchanged at some point waxy unity
 exact point and destination unknown to me
 at present walrus Are see webster vinton
 Geo. D.  Sheldon
+plain-at: webster#1
+plain: toby
+note: FIX-FM4 (AUDIT FV-FM4 s.3): signer "Are see Webster" = R. C. Webster, Chief Quartermaster at Fort Monroe (Butler Corr. V), plain (Webster is a surname here, not the Signature code word; vinton = Quartermaster stays code); "Toby" = to be, plain; "harsh second" = twenty + second = the 22nd (harsh = 20 H, ordinal clear).
 
 ### E194 | Page 261 | 5805 | mssEC 25 (obj 5952, pointer 5805), 4 Nov 1864 Butler's Hd Qrs, R. O'Brien to Sheldon, Ft Monroe (FM-R2b; row 5805/2; image-read at 2400 px)
 Geo D Sheldon Ft. Monroe
@@ -1838,6 +1841,8 @@ when you reach animal open your own letter of instructions
 & give Corresponding order to the vassals which have no
 letters zebra use all possible despatch walrus Taunton Shelby Barry
 R OBrien
+plain: hawley
+note: FIX-FM4 (AUDIT FV-FM4 s.3): Hawley is plain = Brig. Gen. Joseph R. Hawley (5805/1 and 5807 confirm; the decoder's Roddy was wrong); "pro" and signature "Barry" stay M, unexplained.
 
 ### E220 | Page 267 | 5811 | mssEC 25 (obj 5952, pointer 5811), 29 Nov 1864 Ft Monroe, Sheldon to Maj. Eckert, for Rucker: the steamers he will send that night, answering Eckert's call of the same day on the page (FM-R3b; row 5811/2; image-read at 2400 px)
 Maj Eckert Di
