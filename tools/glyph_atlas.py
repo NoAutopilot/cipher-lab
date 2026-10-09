@@ -6,6 +6,7 @@
   python3 tools/glyph_atlas.py atlas --out DIR --labels labels.json [--per 10] [--prefer PAGE]
   python3 tools/glyph_atlas.py atlas --out DIR --from-truth TOKENS.tsv --per 6 --spread --exclude-leaf PAGE [--canonical SHEET.png]
   python3 tools/glyph_atlas.py classify --out DIR --labels labels.json --page PAGE --tsv boxes.tsv [--exclude-page] [--strips DIR2]
+        [--jitter 5 --jitter-px 2 --jitter-scale 0.05]   (per-box stability under crop perturbation, TXE-J)
   python3 tools/glyph_atlas.py crop --image PAGE.jpg --box x0,y0,x1,y1[:label] [--box ...] --dest DIR [--scale 4]
   python3 tools/glyph_atlas.py crop --out DIR --sid ID [--sid ...] --dest DIR2 [--scale 4]
 
@@ -419,18 +420,68 @@ def read(out, fn):
     return list(csv.DictReader(open(os.path.join(out, fn)), delimiter='\t'))
 
 
-def feats(bm, rows, size_w=3.0, pca_scale='unit'):
-    H = np.array([hog(b.astype(float) / 255, orientations=9, pixels_per_cell=(8, 8), cells_per_block=(2, 2))
-                  for b in bm])
+def _hog(bm):
+    return np.array([hog(b.astype(float) / 255, orientations=9, pixels_per_cell=(8, 8), cells_per_block=(2, 2))
+                     for b in bm])
+
+
+def feats(bm, rows, size_w=3.0, pca_scale='unit', project=False):
+    """Feature matrix of the atlas bitmaps. project=True also returns proj(bitmaps, rh, rw) -> rows in the SAME
+    fitted space (scalers and PCA fitted on the atlas only), for query tiles that are not in the atlas (--jitter)."""
+    H = _hog(bm)
     ncomp = min(40, len(bm) - 1, H.shape[1])
-    Z = PCA(n_components=ncomp, random_state=SEED).fit_transform(StandardScaler().fit_transform(H))
+    s1 = StandardScaler().fit(H)
+    pca = PCA(n_components=ncomp, random_state=SEED)
+    Z = pca.fit_transform(s1.transform(H))
     # 'unit' (carpi cluster.py, and the fr.2933 run): every component to unit variance. 'shared': one scale for all,
     # keeping the variance ratios -- needed for small samples, where 'unit' blows the noise components up.
-    Z = StandardScaler().fit_transform(Z) if pca_scale == 'unit' else Z / (Z[:, 0].std() or 1)
+    s2 = StandardScaler().fit(Z) if pca_scale == 'unit' else None
+    z0 = Z[:, 0].std() or 1
+    Z = s2.transform(Z) if s2 else Z / z0
     E = np.stack([np.log(np.array([float(r['rh']) for r in rows])),
                   np.log(np.array([float(r['rw']) for r in rows]))], axis=1)
-    E = StandardScaler().fit_transform(E) if pca_scale == 'unit' else E   # log ratios are already scale-free
-    return np.hstack([Z, E * size_w])
+    s3 = StandardScaler().fit(E) if pca_scale == 'unit' else None
+    E = s3.transform(E) if s3 else E   # log ratios are already scale-free
+    X = np.hstack([Z, E * size_w])
+    if not project:
+        return X
+
+    def proj(bms, rh, rw):
+        z = pca.transform(s1.transform(_hog(bms)))
+        z = s2.transform(z) if s2 else z / z0
+        e = np.stack([np.log(np.asarray(rh, float)), np.log(np.asarray(rw, float))], axis=1)
+        e = s3.transform(e) if s3 else e
+        return np.hstack([z, e * size_w])
+    return X, proj
+
+
+def jitter_tiles(ink, r, mh, n, px, scale, rnd):
+    """--jitter (TXE-J, 9 Oct 2026; LANE TX-ENGINEER idea M11): n perturbed re-cuts of box r from the page's binarised
+    ink -- the window shifted by an integer dx, dy in [-px, px] and scaled about the box centre by s in
+    [1 - scale, 1 + scale], seeded. Inside the window only the components touching its central half are kept (a
+    neighbour's stroke clipped in at the edge is not the sign). Returns [(48x48 bitmap, rh, rw)], the first entry
+    being the unjittered re-cut (dx = dy = 0, s = 1), used to check that the re-cut reproduces the stored top-1."""
+    x, y, w, h = (int(r[k]) for k in 'xywh')
+    cx, cy = x + w / 2, y + h / 2
+    H, W = ink.shape
+    specs = [(0, 0, 1.0)] + [(int(rnd.integers(-px, px + 1)), int(rnd.integers(-px, px + 1)),
+                              float(rnd.uniform(1 - scale, 1 + scale))) for _ in range(n)]
+    out = []
+    for dx, dy, s in specs:
+        ww, hh = max(1, w * s), max(1, h * s)
+        x0 = int(round(cx - ww / 2 + dx)); y0 = int(round(cy - hh / 2 + dy))
+        x1 = int(round(cx + ww / 2 + dx)); y1 = int(round(cy + hh / 2 + dy))
+        x0c, y0c, x1c, y1c = max(0, x0), max(0, y0), min(W, x1), min(H, y1)
+        sub = np.zeros((max(1, y1 - y0), max(1, x1 - x0)), np.uint8)
+        if x1c > x0c and y1c > y0c:
+            sub[y0c - y0:y1c - y0, x0c - x0:x1c - x0] = ink[y0c:y1c, x0c:x1c]
+        n_, lab, st, _ = cv2.connectedComponentsWithStats(sub, connectivity=8)
+        qh, qw = sub.shape[0] / 4, sub.shape[1] / 4
+        keep = [i for i in range(1, n_) if st[i, 0] < 3 * qw and st[i, 0] + st[i, 2] > qw
+                and st[i, 1] < 3 * qh and st[i, 1] + st[i, 3] > qh]
+        m = np.isin(lab, keep).astype(np.uint8) if keep else sub
+        out.append((bitmap(m), hh / mh, ww / mh))
+    return out
 
 
 def sheet(bm, lab, dist, path, per=24, cell=56, rows_per=20):
@@ -717,7 +768,11 @@ def cmd_classify(a):
     mrows = {r['mid']: r for r in read(a.out, 'marks.tsv')}
     cl = {(r['kind'], r['id']): r['cluster'] for r in read(a.out, 'clusters.tsv')}
     bm = np.load(os.path.join(a.out, 'bitmaps.npz'))['signs']
-    X = feats(bm, rows, pca_scale=a.pca_scale)
+    jit = getattr(a, 'jitter', 0) or 0
+    if jit:
+        X, proj = feats(bm, rows, pca_scale=a.pca_scale, project=True)
+    else:
+        X = feats(bm, rows, pca_scale=a.pca_scale)
     lab = np.array([over.get(r['sid'], L['signs'].get(cl.get(('sign', r['sid'])), '_')) for r in rows], dtype=object)
     mlab = {m: over.get(m, L['marks'].get(cl.get(('mark', m)), '_')) for m in mrows}
     hold = tuple(a.holdout or ())
@@ -740,13 +795,40 @@ def cmd_classify(a):
     nn = NearestNeighbors(n_neighbors=pool).fit(X[cand])
     d, ix = nn.kneighbors(X[tgt])
     ix = cand[ix]
+    def vote(dist, idx, i):
+        pairs = [(x, j) for x, j in zip(dist, idx) if j != i]
+        votes = collections.Counter()
+        for x, j in pairs[:a.knn]:
+            votes[lab[j]] += 1 / (x + 1e-6)
+        return pairs, votes
+
+    jres = {}
+    if jit:
+        # --jitter: every target box re-cut n times from the binarised page; one kNN query per re-cut in the SAME
+        # fitted feature space; stab = share of re-cuts whose top-1 equals the box's unjittered top-1.
+        pages = json.load(open(os.path.join(a.out, 'pages.json')))
+        cache, inks, rnd = {}, {}, np.random.default_rng(a.jitter_seed)
+        tiles, owner = [], []
+        for n, i in enumerate(tgt):
+            r = rows[i]
+            if r['page'] not in inks:
+                g = _page_grey(a.out, r['page'], cache)
+                k = binarise(g, a.jitter_rel)
+                inks[r['page']] = cv2.morphologyEx(k, cv2.MORPH_OPEN, np.ones((2, 2), np.uint8)) \
+                    if min(g.shape) > 2500 else k
+            mh = float(pages.get(r['page'], {}).get('median_h') or float(r['h']) / float(r['rh']))
+            for t in jitter_tiles(inks[r['page']], r, mh, jit, a.jitter_px, a.jitter_scale, rnd):
+                tiles.append(t); owner.append(n)
+        Q = proj(np.array([t[0] for t in tiles]), [t[1] for t in tiles], [t[2] for t in tiles])
+        dq, iq = nn.kneighbors(Q, n_neighbors=min(len(cand), a.knn + 1))
+        iq = cand[iq]
+        for q, n in enumerate(owner):
+            _, v = vote(dq[q], iq[q], tgt[n])
+            jres.setdefault(n, []).append(max(v, key=v.get))
     out = []
     for n, i in enumerate(tgt):
-        pairs = [(x, j) for x, j in zip(d[n], ix[n]) if j != i]
-        dd, ii = zip(*pairs[:a.knn])
-        votes = collections.Counter()
-        for x, j in zip(dd, ii):
-            votes[lab[j]] += 1 / (x + 1e-6)
+        pairs, votes = vote(d[n], ix[n], i)
+        dd = [x for x, _ in pairs[:a.knn]]
         best = max(votes, key=votes.get)
         r = rows[i]
         mk = '|'.join(('?' if mlab.get(m, '_') == '_' else mlab[m]) for m in r['marks'].split('|') if m)
@@ -764,12 +846,19 @@ def cmd_classify(a):
                 row[f'k{k + 1}'] = c
                 row[f'd{k + 1}'] = f'{near[c]:.3f}' if c else ''
                 row[f's{k + 1}'] = f'{votes.get(c, 0) / tot:.2f}' if c else ''
+        if jit:
+            j0, js = jres[n][0], jres[n][1:]
+            row['stab'] = f'{sum(c == best for c in js) / len(js):.2f}'
+            row['k1_j'] = collections.Counter(js).most_common(1)[0][0]
+            row['k1_0'] = j0
         out.append(row)
     out.sort(key=lambda r: (r['page'], r['line'], r['pos']))
     cols = (['page'] if allp else []) + ['line', 'box', 'pos', 'x', 'y', 'w', 'h', 'code', 'dist', 'share',
                                         'cluster_code', 'marks']
     if a.topk > 1:
         cols += [f'{v}{k + 1}' for k in range(a.topk) for v in 'kds']
+    if jit:
+        cols += ['stab', 'k1_j', 'k1_0']
     with open(a.tsv, 'w') as f:
         f.write('\t'.join(cols) + '\n')
         for r in out:
@@ -777,6 +866,11 @@ def cmd_classify(a):
     agree = sum(r['code'] == r['cluster_code'] for r in out)
     print(f'{a.page}: {len(out)} boxes classified; kNN code = cluster code for {agree}; '
           f'{sum(r["code"] != "_" for r in out)} cipher codes')
+    if jit:
+        st = np.array([float(r['stab']) for r in out])
+        print(f'--jitter {jit}: stab mean {st.mean():.3f}, share stab=1 {np.mean(st == 1):.3f}, share < 0.6 '
+              f'{np.mean(st < 0.6):.3f}; unjittered re-cut top-1 = stored top-1 for '
+              f'{sum(r["k1_0"] == r["code"] for r in out)}/{len(out)} (re-cut fidelity)')
     if a.strips and not allp:
         strips(a, out, [m for m in mrows.values() if m['page'] == a.page])
 
@@ -993,6 +1087,15 @@ def main(argv=None):
     k.add_argument('--topk', type=int, default=1, help='also write the k best codes with distance and vote share (3)')
     k.add_argument('--pool', type=int, default=40, help='neighbour pool for codes outside the --knn voters (40)')
     k.add_argument('--holdout', action='append', help='box-id prefix that never votes (repeatable)')
+    k.add_argument('--jitter', type=int, default=0,
+                   help='TXE-J (9 Oct 2026, idea M11): classify each target box N more times (5) under seeded crop '
+                        'perturbations (shift, scale) and add columns stab (share of jitters whose top-1 = the '
+                        'unjittered top-1), k1_j (majority jittered top-1), k1_0 (the unjittered re-cut\'s top-1). '
+                        'Answers: the lattice had no per-position measure of how sure the IMAGE is')
+    k.add_argument('--jitter-px', type=int, default=2, help='--jitter: max shift in page px, each axis (2)')
+    k.add_argument('--jitter-scale', type=float, default=0.05, help='--jitter: max relative rescale of the window (0.05)')
+    k.add_argument('--jitter-seed', type=int, default=1, help='--jitter: RNG seed (1)')
+    k.add_argument('--jitter-rel', type=float, default=0.78, help="--jitter: binarisation rel, as segment's --rel (0.78)")
     k.add_argument('--max-w', type=int, default=1800, help='cut a line strip into parts under this width (px)')
     m = sp.add_parser('match')
     m.add_argument('--out', required=True, help='the atlas directory (signs.tsv, bitmaps.npz)')

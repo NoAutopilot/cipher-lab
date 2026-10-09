@@ -1,5 +1,7 @@
 """Offline test for tools/key_decode_lattice.py (no network, small synthetic language model)."""
+import os
 import random
+import tempfile
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -122,6 +124,30 @@ def test_learn_confusion_counts_and_shuffle():
     assert open(out).readline().startswith("# learnt from lines: p_L01")
     M = K.read_matrix(out)
     assert abs(M[""]["A"]["B"] - P[("B", "A")]) < 1e-9
+
+
+def test_stability_prior():
+    """--stability (TXE-J): a box whose top-1 flips under jitter (stab 0.4) keeps the readers' candidates; a stable box
+    (1.0) has its top-1 sharpened; boxes map to positions via box_pos (min over a 2:1 position); the shuffle control
+    permutes the values only."""
+    d = tempfile.mkdtemp()
+    stab = os.path.join(d, "stab.tsv"); bp = os.path.join(d, "box_pos.tsv")
+    with open(stab, "w") as f:
+        f.write("line\tbox\tpos\tstab\n1\tb1\t1\t0.40\n1\tb2\t2\t1.00\n1\tb3\t3\t1.00\n1\tb4\t4\t0.20\n")
+    with open(bp, "w") as f:
+        f.write("sid\tline\tpos\top\nb1\tp_L01\t1\t1:1\nb2\tp_L01\t2\t1:1\nb3\tp_L01\t3\t2:1\nb4\tp_L01\t3\t2:1\n")
+    st = K.read_stability(stab, bp)
+    assert st == {("p_L01", 1): 0.4, ("p_L01", 2): 1.0, ("p_L01", 3): 0.2}
+    rows = [("p_L01", 1, "A", 0.6), ("p_L01", 1, "B", 0.4), ("p_L01", 2, "C", 0.6), ("p_L01", 2, "D", 0.4),
+            ("p_L01", 3, "E", 0.5), ("p_L01", 3, "F", 0.5), ("p_L01", 4, "G", 0.7), ("p_L01", 4, "H", 0.3)]
+    out, n = K.apply_stability(rows, st, 0.6, 0.9)
+    P = {(pos, c): p for _, pos, c, p in out}
+    assert n == 1
+    assert P[(1, "A")] == 0.6 and P[(1, "B")] == 0.4                 # doubtful tile: unchanged
+    assert abs(P[(2, "C")] - 0.96) < 1e-9 and abs(P[(2, "D")] - 0.04) < 1e-9   # stable: sharpened, sums to 1
+    assert P[(3, "E")] == 0.5 and P[(4, "G")] == 0.7                 # min over 2:1 is doubtful; unmapped unchanged
+    sh = K.shuffle_stability(st, 1)
+    assert sorted(sh.values()) == sorted(st.values()) and set(sh) == set(st)
 
 
 if __name__ == "__main__":

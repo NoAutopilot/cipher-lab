@@ -41,6 +41,15 @@ Subcommands
                --matrix-only drops the confusion_1572 spread (a disagreement count, not an error rate) and keeps the flip.
                Lesson it answers: half of pass A's errors on Birago no.87 are the same wrong sign in both readers, and only
                27 of 97 errors had the truth anywhere in the two-pass lattice (TX-DECODE).
+               --stability STAB.tsv [--box-pos BOX_POS.tsv] [--stab-floor 0.6] [--stab-gain 0.9] [--stab-shuffle SEED]
+               (TXE-J, 9 Oct 2026; TX-IDEAS M11): a per-position prior from the IMAGE. STAB.tsv is `glyph_atlas.py classify
+               --jitter` output (box, stab) mapped to positions by --box-pos (`tools/tx_compare.py map`, label-blind; a
+               position under several boxes takes their minimum stab), or a TSV line, pos, stab. At a position with
+               stab < floor the readers' candidates stay as they are (the doubtful tile); at stab >= floor the top-1
+               candidate's weight p becomes p + (1 - p) x gain and the others are scaled by (1 - gain) (the image is sure;
+               the lattice must not override the readers there). Unmapped positions are unchanged. --stab-shuffle SEED
+               permutes the stab values over the mapped positions: the rule-3 control. Lesson it answers: the lattice
+               had only the readers' stated confidence, and a blanket lattice override raises error (TX-DECODE).
   learn-confusion PASS.tsv [PASS2.tsv ...] --truth TRUTH.tsv --lines L... --out M.tsv [--key KEY.tsv] [--line-prefix P]
                [--per-pass] [--shuffle-offdiag SEED]
                estimates P(read | true) over the named lines only, from tools/tx_bench.py's per-position alignment of each
@@ -251,6 +260,48 @@ def from_passes(pa, pb, ref, nb, keep_alts=False, matrix=None, spread=0.3):
             for c, p in finish(ms, keep[i]).items():
                 rows.append((ln, i + 1, c, p))
     return rows, stats
+
+
+def read_stability(path, box_pos=None):
+    """{(line, pos): stab}. With box_pos (sid, line, pos, op), STAB rows are keyed by box; several boxes on one
+    position -> the minimum; one box over two positions -> both."""
+    rows = read_tsv(path)
+    st = {}
+    if box_pos:
+        by_box = {r["box"]: float(r["stab"]) for r in rows if r.get("stab", "") != ""}
+        for r in read_tsv(box_pos):
+            if r["sid"] in by_box:
+                k = (r["line"], int(r["pos"]))
+                st[k] = min(st.get(k, 1.0), by_box[r["sid"]])
+    else:
+        for r in rows:
+            st[(r["line"], int(r["pos"]))] = float(r["stab"])
+    return st
+
+
+def shuffle_stability(st, seed):
+    keys = sorted(st); vals = [st[k] for k in keys]
+    random.Random(seed).shuffle(vals)
+    return dict(zip(keys, vals))
+
+
+def apply_stability(rows, st, floor=0.6, gain=0.9):
+    """rows (line, pos, cand, p) -> rows with the top-1 sharpened where stab >= floor (see --stability)."""
+    by = defaultdict(list)
+    order = []
+    for ln, pos, c, p in rows:
+        if (ln, pos) not in by:
+            order.append((ln, pos))
+        by[(ln, pos)].append((c, p))
+    out, n = [], 0
+    for k in order:
+        cs = by[k]
+        if k in st and st[k] >= floor and len(cs) > 1:
+            top = max(cs, key=lambda cp: cp[1])[0]
+            cs = [(c, p + (1 - p) * gain if c == top else p * (1 - gain)) for c, p in cs]
+            n += 1
+        out += [(k[0], k[1], c, p) for c, p in cs]
+    return out, n
 
 
 def write_topk(rows, out):
@@ -556,6 +607,12 @@ def cmd_from_passes(args):
     nb = {} if args.matrix_only else read_confusion(args.confusion)
     rows, stats = from_passes(args.passA, args.passB, args.ref, nb, args.keep_alts,
                               read_matrix(args.confusion_matrix), args.spread)
+    if args.stability:
+        st = read_stability(args.stability, args.box_pos)
+        if args.stab_shuffle is not None:
+            st = shuffle_stability(st, args.stab_shuffle)
+        rows, n = apply_stability(rows, st, args.stab_floor, args.stab_gain)
+        stats.update(stab_mapped=len(st), stab_sharpened=n, stab_doubtful=sum(v < args.stab_floor for v in st.values()))
     write_topk(rows, args.out)
     print(json.dumps(stats))
 
@@ -572,6 +629,11 @@ def main(argv=None):
     f.add_argument("--confusion-matrix", help="learn-confusion M.tsv: add the Bayes-flip candidates (TXE-E)")
     f.add_argument("--spread", type=float, default=0.3, help="flip weight S (default 0.3)")
     f.add_argument("--matrix-only", action="store_true", help="replace the confusion_1572 spread with the flip")
+    f.add_argument("--stability", help="TXE-J: glyph_atlas classify --jitter TSV (with --box-pos) or line,pos,stab TSV")
+    f.add_argument("--box-pos", help="tx_compare.py map box_pos.tsv (sid, line, pos, op): maps --stability boxes to positions")
+    f.add_argument("--stab-floor", type=float, default=0.6, help="stab below this: readers' candidates kept as they are (0.6)")
+    f.add_argument("--stab-gain", type=float, default=0.9, help="stab >= floor: top-1 p -> p + (1-p) x gain (0.9)")
+    f.add_argument("--stab-shuffle", type=int, default=None, help="control: permute stab over mapped positions (seed)")
     lc = sub.add_parser("learn-confusion", help="P(read | true) from passes + truth on named (tune) lines")
     lc.add_argument("passes", nargs="+"); lc.add_argument("--truth", required=True)
     lc.add_argument("--lines", nargs="+", required=True); lc.add_argument("--out", required=True)
