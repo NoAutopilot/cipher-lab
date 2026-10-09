@@ -144,6 +144,60 @@ try:
     check(all(sa[i]["value"] == key_rows[i]["value"] for i in (5, 6)),
           "shuffled_key_rows: word/name rows (5, 6) are never shuffled")
 
+    # --label-diffs (MQS-WITNESS-LABELS, 9 Oct 2026)
+    W = dw.witness_words("Le Roy veut qu'il aille avec les Princes, et sans faute.")
+    def labs(dec_text, names=None):
+        items, _ = dw.label_diffs(dw.decode_chars(dec_text), W, names)
+        return {(it["kind"], it["w"]): it["label"] for it in items}
+    L = labs("L01\tle roy veut qu il aille avec les princes et sans faute")
+    check(all(v == "equal" for v in L.values()), "label-diffs: identical text (word division ignored) is all equal")
+    L = labs("le roi veut qu il aile auec les princes et sans faute")
+    check(L[("word", 1)] == "spelling-only" and L[("word", 5)] == "spelling-only" and L[("word", 6)] == "spelling-only",
+          "label-diffs: roy/roi, aille/aile, avec/auec are spelling-only (must catch)")
+    L = labs("le loy veut qu il aille avec les princes et pas faute")
+    check(L[("word", 1)] == "substitution" and L[("word", 10)] == "substitution",
+          "label-diffs: one-letter roy/loy and sans/pas stay substitution (normalisation must NOT hide them)")
+    L = labs("le roy veut qu il aille avec princes et sans faute")
+    check(L[("word", 7)] == "omission", "label-diffs: a dropped word is an omission")
+    L = labs("le roy veut qu il aille avec les princes et sans grande faute")
+    check(("gap", 10) in L and L[("gap", 10)] == "addition", "label-diffs: an inserted word is an addition")
+    L = labs("le roy veut qu il aille avec les [?[x]] et sans faute")
+    check(L[("word", 8)] == "name/code", "label-diffs: an unread sign or code group against a word is name/code")
+    L = labs("le roy veut qu il aille avec les prinses et sans faute", names={dw.full("Princes")})
+    check(L[("word", 8)] == "name/code", "label-diffs: a --names word rendered otherwise is name/code")
+    check(dw.decode_chars("L1\ta [/] b <null> 12 c") == ["a", "b", dw.CODE, "c"],
+          "decode_chars: [/] and <..> dropped, numerals become one code mark")
+    ab = os.path.join(tmp, "ab.tsv")
+    with open(ab, "w") as f:
+        f.write("abbrev\texpansion\nS.M.\tsa maieste\n")
+    W2 = dw.witness_words("S.M. le veut", dw.load_abbrev(ab))
+    check([lt for _, lt in W2] == ["sa", "maieste", "le", "veut"],
+          "load_abbrev: 'S.M.' in the witness is expanded before word splitting (PX-BRODEC)")
+    check(dw.load_abbrev(ab).get("sm") == "sa maieste", "load_abbrev: key compared after light()")
+
+    # planted control: label accuracy above the label-shuffled null, one-letter substitutions never hidden
+    text = ("le ruinant de reputation et de credit tant avec les huguenots du royaume qu avec les princes "
+            "protestans et autres avec lesquels il a ses principales intelligences et de telle sorte")
+    Wp = dw.witness_words(text)
+    base = [ch for _, lt in Wp for ch in lt]
+    r = dw.plant_control(base, Wp, seeds=3, per_class=2, shuffles=200, seed0=1)
+    check(r["n"] > 0 and r["accuracy"] > r["null_p95"], "plant_control: accuracy above label-shuffled null p95")
+    check(r["one_letter_hidden"] == 0, "plant_control: no one-letter substitution labelled spelling-only")
+    check(all(dw.full(dw._spelling_variant(w, random.Random(3)) or w) == dw.full(w) for w in ("royaume", "princes")),
+          "_spelling_variant: always undone by full()")
+
+    # --criteria-scan: a lead, never a verdict; must not flag a plain courtesy sentence
+    cr = dw.load_criteria(dw.CRITERIA_DEFAULT, "fr")
+    hits = dw.criteria_scan("Je vous escris en chiffre ce qui suit. Je baise les mains de Vostre Majeste. "
+                            "Il y a grand soupcon de trahison.", cr)
+    ids = {k: h for k, _, h in hits}
+    check(0 in ids and any(h.startswith("C1") for h in ids[0]), "criteria-scan: 'en chiffre' flags C1 (must catch)")
+    check(1 not in ids, "criteria-scan: a courtesy sentence is not flagged (must NOT flag)")
+    check(2 in ids and any(h.startswith("C3") for h in ids[2]), "criteria-scan: 'soupcon de trahison' flags C3")
+    rc = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "decode_witness.py"), "--label-diffs"],
+                        capture_output=True, text=True)
+    check(rc.returncode == 2, "CLI: --label-diffs without --witness exits 2")
+
 finally:
     shutil.rmtree(tmp)
 

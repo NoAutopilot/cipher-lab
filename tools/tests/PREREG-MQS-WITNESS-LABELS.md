@@ -45,3 +45,17 @@ deterministic, no restarts), so the rule-3 headroom clause does not apply; Arm B
   from it, not re-briefed.
 - Criteria scan (`--criteria-scan`): no known answer of its own -> `weak` whatever it prints; it is run once on
   the kp86 copy for description only.
+
+## Result (9 Oct 2026, after the prereg push dad0ba711)
+
+| Arm | sites | accuracy | null mean / p95 | per class (omission, addition, substitution, name/code, spelling-only) | one-letter subs hidden | gate |
+|---|---|---|---|---|---|---|
+| A clean base, 20 seeds x 4 | 397 | 0.786 | 0.194 / 0.224 | 37/80, 48/80, 77/77, 79/80, 71/80 | 0 of 45 | FAIL (< 0.90; omission, addition < 0.80) |
+| B real f.244r decode, 40 seeds x 1 | 200 | 0.610 | 0.189 / 0.235 | 10/40, 17/40, 35/40, 31/40, 29/40 | 0 of 22 | FAIL (< 0.70) |
+
+Both arms are far above their label-shuffled nulls, and normalisation hid no planted substitution. The gates are missed
+on omission and addition: arm A's errors are omission->substitution 43, addition->substitution 30, spelling-only->equal 9,
+addition->omission 2, name/code->substitution 1. The letter-level edit alignment spreads a dropped or inserted word's
+letters onto the neighbouring words (the unplanted kp86 run shows the same: "credit tant" -> "credi" + "t").
+Shelf: **weak** for `--label-diffs` and `--criteria-scan`; nothing run on a target; not re-briefed. Suggested next
+instrument (a different one, not a re-tune): word-boundary-aware alignment (affine gaps that open at witness word edges).

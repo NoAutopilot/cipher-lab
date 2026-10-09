@@ -1,0 +1,20 @@
+# 'Sent in cipher' criteria as a checklist (MQS-WITNESS-LABELS, 9 Oct 2026), after Lasry, Biermann and Tomokiyo 2023,
+# Cryptologia 47:2, p.131 n.70-71: a clear copy whose passage refers to the cipher channel, to other cipher letters, or
+# makes hostile statements about the host or a third party was likely sent in cipher. Read by
+# tools/decode_witness.py --criteria-scan; patterns are Python regexes on the accent-stripped lower-case sentence.
+# A hit is a LEAD that the passage may have been in cipher, never a verdict (shelf grade weak: no known answer of its own).
+# Patterns are ours, written for this checklist; the three criteria are the paper's.
+id	criterion	lang	pattern	note
+C1-fr	channel reference	fr	\b(en |par )?(chiffre|chifre|chiffres|zifre|cifre)\b|dechiffr|contrechiffr|\bpar (homme expres|courrier expres|voie seure|voye seure)	the cipher, deciphering or a trusted carrier named in the passage
+C1-it	channel reference	it	\b(in |per )?(cifra|cifre|ziffra|zifra|ziffera)\b|decifr|diciferat	
+C1-es	channel reference	es	\b(en |por )?(cifra|cifras|cifrado)\b|descifr|\bpor (correo|mensajero) (propio|seguro)	
+C1-en	channel reference	en	\b(in )?(cipher|cypher|ciphers|cyphers)\b|decipher|decypher|\bby (a )?(sure|safe|trusty) (hand|bearer|messenger)	
+C1-la	channel reference	la	\b(notis|cifris|ziferis|characteribus)\b|occult(e|is) (literis|notis)	
+C2-fr	reference to other cipher letters	fr	\b(ma|mes|vostre|vos|la|les) (derniere|dernieres|precedente|precedentes|depesche|depesches|lettre|lettres) (en |de )?(chiffre|chifre)|\bmon (dernier|precedent) (chiffre|pacquet)	another letter, dispatch or packet in cipher referred to
+C2-it	reference to other cipher letters	it	\b(mia|mie|ultima|ultime|precedente|precedenti|lettera|lettere) (in |di )?(cifra|ziffra)	
+C2-es	reference to other cipher letters	es	\b(mi|mis|ultima|ultimas|carta|cartas|despacho|despachos) (en |de )?cifra	
+C2-en	reference to other cipher letters	en	\b(my|your|the|last|former|previous) (letter|letters|dispatch|dispatches|packet) (in |of )?(cipher|cypher)	
+C3-fr	hostile statement	fr	\b(mauvaise volonte|mauvais desseing|mauvais dessein|mauvaises intentions|trahison|traistre|perfidie|ruiner|ruine|ennemy|ennemi|ennemis|haine|mesfier|se defier|se mefier|soupcon|tromper|trompe)	hostile to the host, the recipient's rivals or a third party named in the passage
+C3-it	hostile statement	it	\b(mala volonta|mal animo|tradimento|traditore|perfidia|rovinare|rovina|nemico|nemici|odio|diffidare|sospetto|ingannare|inganno)	
+C3-es	hostile statement	es	\b(mala voluntad|mal animo|traicion|traidor|perfidia|arruinar|ruina|enemigo|enemigos|odio|desconfiar|sospecha|enganar|engano)	
+C3-en	hostile statement	en	\b(ill will|ill intent|treason|traitor|perfid|ruin|enemy|enemies|hatred|distrust|suspicion|deceive|deceit)	
