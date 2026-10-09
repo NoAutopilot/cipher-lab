@@ -1,0 +1,25 @@
+sign	meaning	n	agree	agree_share	key_print	kept
+#	d	9	6	0.67	c	no
++	l	1	1	1.00	l	no
+-:-	b	2	2	1.00	b	yes
+.	e	13	11	0.85	e	yes
+0	e	13	12	0.92	e	yes
+1	e	11	4	0.36	e	no
+3	d	2	2	1.00	d	yes
+4	l	6	5	0.83	l	yes
+9	g	1	1	1.00	g	no
+L	i	7	7	1.00	i	yes
+NEW:d-shape	auu	9	1	0.11		no
+T	r	1	1	1.00	h	no
+c	r	5	4	0.80	r	yes
+f	n	4	4	1.00	n	yes
+m	u	5	4	0.80	u	yes
+p	i	1	1	1.00	i	no
+sq	s	8	7	0.88	s	yes
+t	m	1	1	1.00		no
+v	a	9	7	0.78	a	yes
+v'	a	6	1	0.17		no
+w	r	8	8	1.00	r	yes
+x	r	1	1	1.00		no
+y	o	5	4	0.80	o	yes
+z	m	4	4	1.00	m	yes

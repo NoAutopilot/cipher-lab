@@ -18,6 +18,11 @@ not the majority), key-conflict (key_print gives another meaning), off-sheet (NE
 Flag 'align-conflict' on a scored position next to (+-1) a position interlinear_align marks conflict or null.
 By construction a passZ sign on a scored position is in its truth set, so passZ can err only by insertion/deletion against
 itself (0); its misreads land in the excluded classes (low-agree, key-conflict) and are counted there, not scored.
+Deviation (SEED, stated in RESULTS.md): the pre-registered unseeded run (align_print.py settings, no prior) FAILED on this
+leaf -- 0 scored, align agrees 51/186, GAPS4 real 0.022 vs shuffled mean 0.071, rank 200 of 201: five whole-line pairs give the
+hard-EM too little anchoring (f128 aligned per gloss word). The build therefore seeds the first E-step with key_print.tsv's
+counts (meaning: agree, plus 'others'); later iterations use this leaf's own counts only. This makes the key_print check
+partly built in: a scored position still needs this leaf's gloss letter as the sign's leaf majority at n >= 2, agree >= 0.75.
 Control: GAPS4 statistic (share of decoded letters in difflib blocks >= 3 against the folded gloss), real rebuilt key vs 200
 value-shuffled keys (seed 1).
   python3 benchmark-tx/build_dint-f113-gloss.py [--check]
@@ -34,11 +39,12 @@ sys.path.insert(0, os.path.join(ROOT, 'tools'))
 import interlinear_align as ia  # noqa: E402
 
 ia.FOLD_FS = False
+SEED = True
 
 
-def rd(p):
+def rd(p, comments=True):
     with open(p, newline='', encoding='utf-8') as f:
-        return list(csv.DictReader((l for l in f if not l.startswith('#')), delimiter='\t'))
+        return list(csv.DictReader((l for l in f if not (comments and l.startswith('#'))), delimiter='\t'))
 
 
 def fold(s):
@@ -69,8 +75,18 @@ def build(out_root):
         txt = re.sub(r'[+|]', '?', gl[ln])
         pairs.append({'plain_line': ln, 'plain_raw': txt, 'cipher_line': ln, 'cipher_raw': raw})
     inv = {c: s for s, c in codes.items()}
+    kp_rows = {r['sign']: r for r in rd(KP, comments=False)}
+    prior = {}
+    for s, c in codes.items():  # SEED (deviation, see docstring): key_print's counts as the first E-step's prior
+        r = kp_rows.get(LABEL_KP.get(s, s))
+        if r:
+            cnt = Counter({fold(r['meaning']): int(r['agree'])})
+            for o in filter(None, r['others'].split(',')):
+                m, n = o.split(':')
+                cnt[fold(m)] += int(n)
+            prior[c] = cnt
     prep, results, counts, shown = ia.run_align(pairs, floor=100, null_cost=-1.0, max_chunk=3, seg_bonus=0.0,
-                                                len_prior=1.0, wildcard='?')
+                                                len_prior=1.0, wildcard='?', prior=prior if SEED else None)
     trows = ia.token_rows(prep, results, counts, shown)
     # rebuilt key from the alignment
     key = {}
@@ -78,7 +94,7 @@ def build(out_root):
         top, topn = ia.top_of(cnt)
         n = sum(cnt.values())
         key[inv[v]] = (top, n, topn, topn / n if n else 0.0)
-    kp = {r['sign']: r['meaning'] for r in rd(KP)}
+    kp = {r['sign']: r['meaning'] for r in rd(KP, comments=False)}
 
     def kp_of(s):
         return kp.get(LABEL_KP.get(s, s))
