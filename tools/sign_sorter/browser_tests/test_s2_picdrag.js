@@ -1,5 +1,7 @@
 // Step 2: drag a small picture from one pile card onto another moves that tile, and the sign being placed stays put
-// (owner, 4 Oct 2026). Mouse on a desktop; touch on a phone (press 1/4 s, then drag).
+// (owner, 4 Oct 2026), with a mouse on a desktop. On a phone (template 2026-10-09.1; owner, 9 Oct 2026, "If I hold on this I can
+// move the piece", and his gesture rule R05: a hold opens the sign large) a hold on a small picture opens that tile large and
+// moves nothing, and a drag that starts on a picture moves nothing either (the finger scrolls).
 // Run: PW_EXE=/opt/pw-browsers/chromium NODE_PATH=$(npm root -g) node test_s2_picdrag.js PAGE.html SHOT.png
 const { chromium } = require('playwright'); const mock = require('./mock_db');
 (async () => {
@@ -18,7 +20,19 @@ const { chromium } = require('playwright'); const mock = require('./mock_db');
     const pb = await pic.boundingBox(); const tb = await page.locator('.card[data-pile="' + info.to + '"] .cid').boundingBox();
     const x0 = pb.x + pb.width / 2, y0 = pb.y + pb.height / 2, x1 = tb.x + tb.width / 2, y1 = tb.y + tb.height / 2;
     const before = await page.evaluate(f => membersOf(f).length, info.from);
-    await mock.gesture(page, 'down', x0, y0); await page.waitForTimeout(tag === 'phone' ? 350 : 30);
+    if (tag === 'phone'){
+      await mock.gesture(page, 'down', x0, y0); await page.waitForTimeout(700); await mock.gesture(page, 'up', x0, y0); await page.waitForTimeout(400);
+      const held = await page.evaluate(([f]) => [membersOf(f).length, s2Cur, $('ctx').hidden, $('ctxT').textContent], [info.from]);
+      await page.evaluate(() => $('ctxClose').click()); await page.waitForTimeout(200);
+      await mock.gesture(page, 'down', x0, y0); await page.waitForTimeout(30);
+      for (let i = 1; i <= 12; i++){ await mock.gesture(page, 'move', x0 + (x1 - x0) * i / 12, y0 + (y1 - y0) * i / 12); await page.waitForTimeout(16); }
+      await mock.gesture(page, 'up', x1, y1); await page.waitForTimeout(400);
+      const after = await page.evaluate(([f]) => [membersOf(f).length, s2Cur, Object.keys(moves).filter(s => moves[s] !== 'OUT').length], [info.from]);
+      res[tag] = held[0] === before && held[1] === cur && held[2] === false && /^Tile /.test(held[3]) && after[0] === before && after[1] === cur && after[2] === 0;
+      console.log(tag, info, before, held, after);
+      await ctx.close(); continue;
+    }
+    await mock.gesture(page, 'down', x0, y0); await page.waitForTimeout(30);
     for (let i = 1; i <= 12; i++){ await mock.gesture(page, 'move', x0 + (x1 - x0) * i / 12, y0 + (y1 - y0) * i / 12); await page.waitForTimeout(16); }
     await mock.gesture(page, 'up', x1, y1); await page.waitForTimeout(400);
     const after = await page.evaluate(([f, t]) => [membersOf(f).length, membersOf(t).length, s2Cur, $('ctx').hidden], [info.from, info.to]);

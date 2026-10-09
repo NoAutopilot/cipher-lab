@@ -11,10 +11,12 @@ const { chromium } = require('playwright'); const mock = require('./mock_db');
     await page.evaluate(() => { const L = document.querySelectorAll('#list .t'); for (let i = 0; i < Math.min(12, L.length); i++) L[i].click(); });
     await page.click('#trayGo'); await page.waitForTimeout(600);
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight)); await page.waitForTimeout(300);
-    const r = await page.evaluate(() => { const s = document.getElementById('s2Stick').getBoundingClientRect(), b = document.querySelector('.bar').getBoundingClientRect();
-      const btn = document.getElementById('s2New').getBoundingClientRect(); const st = document.getElementById('s2Stick'); st.style.position = 'static'; const nat = st.getBoundingClientRect().top + scrollY; st.style.position = '';
-      return { top: s.top, bottom: s.bottom, bar: b.bottom, btnTop: btn.top, vh: innerHeight, sy: scrollY, engaged: scrollY > nat - b.bottom }; });
-    res[tag] = (r.engaged ? (r.top >= r.bar - 2 && r.top <= r.bar + 30) : true) && r.btnTop > r.top && r.bottom - r.top < r.vh * 0.5;
+    // phone (template 2026-10-08.4, then 2026-10-09.1): only the sign and one line stay pinned (#s2Top; #s2Stick is display:contents
+    // there), the strip and the buttons scroll with the cards; desktop: the whole #s2Stick (sign, strip, buttons) is pinned
+    const r = await page.evaluate(ph => { const id = ph ? 's2Top' : 's2Stick', st = document.getElementById(id), s = st.getBoundingClientRect(), b = document.querySelector('.bar').getBoundingClientRect();
+      const btn = document.getElementById('s2New').getBoundingClientRect(); st.style.position = 'static'; const nat = st.getBoundingClientRect().top + scrollY; st.style.position = '';
+      return { id, top: s.top, bottom: s.bottom, bar: b.bottom, btnTop: btn.top, vh: innerHeight, sy: scrollY, engaged: scrollY > nat - b.bottom }; }, tag === 'phone');
+    res[tag] = (r.engaged ? (r.top >= r.bar - 2 && r.top <= r.bar + 30) : true) && (tag === 'phone' || r.btnTop > r.top) && r.bottom - r.top < r.vh * (tag === 'phone' ? 0.25 : 0.5);
     console.log(tag, r);
     if (tag === 'phone') await page.screenshot({ path: process.argv[3] });
     await ctx.close();

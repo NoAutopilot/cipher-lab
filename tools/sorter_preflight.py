@@ -265,19 +265,30 @@ def find_cipher_lines(*dirs):
 
 
 # ---------- checks ----------
+def template_placeholders():
+    """The `__NAME__` placeholders tools/sign_sorter.py fills in the template (__TITLE__, __LEDE__, __DATA__, __OPTS__, ...)."""
+    return sorted(set(re.findall(r'__[A-Z]+__', open(TEMPLATE).read())))
+
+
 def check_template(html):
+    """Fix the cut present, the current template marker, and no template placeholder left unfilled. The last catches a page
+    rendered by an older sign_sorter.render on a newer template (2026-10-09.1: `const OPTS = __OPTS__;` left in the page throws
+    on load -- no focus tiles, no storage, saved choices never load -- while the marker alone still read current)."""
     if html is None:
         return None, 'template: n/a (text inputs, no page)'
     cur = current_marker()
     has_fix = 'id="ctxFix"' in html
     m = MARKER_RE.search(html)
     got = m.group(1) if m else None
-    ok = has_fix and got is not None and got == cur
+    left = [p for p in template_placeholders() if p in html]
+    ok = has_fix and got is not None and got == cur and not left
     why = []
     if not has_fix:
         why.append('no "Fix the cut" (ctxFix)')
     if got != cur:
         why.append(f'template marker {got or "missing"} != current {cur}')
+    if left:
+        why.append('placeholder ' + ', '.join(left) + ' never filled (rendered by an older tools/sign_sorter.py)')
     return ok, 'template: ' + ('ok, Fix the cut present, marker ' + str(cur) if ok else
                                '; '.join(why) + ' -- re-render with tools/sorter_rerender.py')
 

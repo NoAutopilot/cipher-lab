@@ -103,6 +103,11 @@ with tempfile.TemporaryDirectory() as d:
     check('page without the template marker: FAIL', not ok and 'marker missing' in line(ls, 'template'))
     nofix = d / 'nofix.html'; nofix.write_text(old.replace('id="ctxFix"', 'id="ctxX"'))
     check('page without Fix the cut: FAIL', 'no "Fix the cut"' in line(run(str(nofix), str(cl))[1], 'template'))
+    # template 2026-10-09.1: a page rendered by an older sign_sorter.render (no __OPTS__ replace) throws on load; the marker alone reads current
+    noopts = d / 'noopts.html'; noopts.write_text(re.sub(r'^const OPTS = \{.*?\};', 'const OPTS = __OPTS__;', old, count=1, flags=re.M))
+    ok, ls = run(str(noopts), str(cl))
+    check('page with an unfilled __OPTS__ placeholder: FAIL, says which', '__OPTS__' in noopts.read_text() and not ok and '__OPTS__' in line(ls, 'template'))
+    check('template placeholders read from the template (OPTS among them)', '__OPTS__' in pf.template_placeholders() and '__DATA__' in pf.template_placeholders())
 
     # must NOT block
     onefam = page(d, sg, lab, [(f'L01_{i}', f'L1 sign {i}: tt or a single crossed t? Split the t piles: tt / tb')

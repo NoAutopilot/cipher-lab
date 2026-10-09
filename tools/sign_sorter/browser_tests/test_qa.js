@@ -180,9 +180,11 @@ const workPile = page => page.evaluate(() => basePiles.map(p => p.id).filter(id 
     const fam0 = await page.evaluate(() => { const c = document.querySelector('.card'); return [byBase[c.dataset.pile] && byBase[c.dataset.pile].family, itemBySid[s2Cur].fam]; });
     ok(tag + ': closest piles first (top card from the same family)', fam0[0] === fam0[1] || (await page.evaluate(() => new Set(basePiles.map(p => p.family)).size)) > 3, JSON.stringify(fam0));
     const c0 = await page.locator('.card').nth(1).getAttribute('data-pile'), w0 = waiting[0];
-    const peek = page.locator('.card').nth(1).locator('.smp img').first();
+    // a small picture: with a mouse a click opens that pile and places nothing; on a finger it is part of the card (template
+    // 2026-10-09.1), so "View pile" is the control that opens the pile there (and places nothing)
+    const peek = tag === 'phone' ? page.locator('.card').nth(1).locator('.vw') : page.locator('.card').nth(1).locator('.smp img').first();
     if (await peek.count()){ await peek.click(); await page.waitForTimeout(150);
-      ok(tag + ': tapping a small picture opens that pile and places nothing', !(await page.locator('#ctx').isHidden()) && (await page.evaluate(() => s2Cur)) === w0 && (await page.evaluate(s => moves[s], w0)) === 'OUT');   // still waiting to be placed (its home pile can be the card itself)
+      ok(tag + ': ' + (tag === 'phone' ? '"View pile"' : 'clicking a small picture') + ' opens that pile and places nothing', !(await page.locator('#ctx').isHidden()) && (await page.evaluate(() => s2Cur)) === w0 && (await page.evaluate(s => moves[s], w0)) === 'OUT');   // still waiting to be placed (its home pile can be the card itself)
       await page.click('#ctxX'); await page.waitForTimeout(100); }
     await page.locator('.card').nth(1).locator('.cid').click(); await page.waitForTimeout(100);
     ok(tag + ': tapping a pile card places the sign there', await page.evaluate(s => pileOf(s), w0) === c0 && (await page.evaluate(() => s2Cur)) === waiting[1]);

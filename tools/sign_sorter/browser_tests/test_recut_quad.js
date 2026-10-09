@@ -102,7 +102,9 @@ const moved = (q0, q1) => q0.map((p, i) => same(p, q1[i]) ? -1 : i).filter(i => 
     const store = await mock.install(ctx); const page = await ctx.newPage();
     page.on('pageerror', e => errs.push(e.message)); await page.goto('file://' + process.argv[2]); await page.waitForTimeout(1200);
     const t = page.locator('#pile__88_ .tiles .t').nth(0); const sid = await t.getAttribute('data-sid');
-    await mock.hold(page, t); await page.tap('#ctxFix'); await page.waitForTimeout(200);
+    // Fix the cut smooth-scrolls the strip to the top of the dialog on a phone (60 ms later); with 44 px controls (template 2026-10-09.1)
+    // that is a real scroll, so let it finish before measuring, or the test reads the end of that scroll as the drag's
+    await mock.hold(page, t); await page.tap('#ctxFix'); await page.waitForTimeout(900);
     await page.evaluate(() => document.getElementById('ctxC').scrollIntoView({ block: 'center' }));
     const sc0 = await page.evaluate(() => [document.querySelector('#ctx .box').scrollTop, window.scrollY]);
     const q0 = await quad(page); await dragBy(page, await pointAt(page, ...q0[2]), 12, 10); const q1 = await quad(page);

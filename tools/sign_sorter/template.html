@@ -1,5 +1,5 @@
 <!doctype html>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-09.2"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-09.3"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
 <title>__TITLE__</title>
 <style>
 /* Layout: a sorting bench in two steps (owner, 3 Oct 2026). Step 1: clean each pile -- tap a sign that does not belong
@@ -137,7 +137,8 @@ canvas{display:block;max-width:none;height:auto}
 .t.done{opacity:.45}
 #focusTiles > div{width:max(var(--sz),76px);justify-items:center}
 #focusTiles .fcap{max-width:100%;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-#focusTiles .fdone{font-size:.72rem;color:var(--ok);font-weight:600;text-align:center;max-width:100%}
+#focusTiles .fdone,#rankTiles .fdone{font-size:.72rem;color:var(--ok);font-weight:600;text-align:center;max-width:100%}
+#focusTiles .fdone.wait,#rankTiles .fdone.wait{color:var(--ink);font-weight:400}   /* waiting, not answered: told apart by the arrow and the weight, not by colour */
 .save button{font-size:.78rem;padding:1px 8px;margin-left:6px}
 /* the "Taken out" tray (step 1), fixed at the bottom while it holds anything */
 #tray[hidden]{display:none}
@@ -147,6 +148,12 @@ canvas{display:block;max-width:none;height:auto}
 #tray .lab b{font-size:1.1rem}
 #trayTiles{display:flex;gap:4px;overflow-x:auto;flex:1 1 auto;min-width:0;margin:0;flex-wrap:nowrap}
 #trayTiles .t{--sz:52px;flex:0 0 auto}
+#trayTiles .tgrp{flex:0 0 auto;align-self:center;font-size:.7rem;line-height:1.1;color:var(--muted);writing-mode:vertical-rl;transform:rotate(180deg);padding:0 2px}
+/* a question tile waiting in step 2, shown in its own pile in step 1 (template 2026-10-09.1): dimmed, dotted, badge "2" -- shape and
+   text, not colour -- so a pile verdict is given with it in view; a tap answers it in step 2 */
+.t.wait{border:2px dotted var(--ink)}
+.t.wait img{opacity:.4}
+.t.wait .badge{background:var(--surface);color:var(--ink);border:1px solid var(--ink);line-height:16px}
 #trayGo{font-weight:600;padding:8px 10px;flex:0 0 auto;background:var(--accent);color:var(--bg);border-color:var(--accent)}
 .fly{position:fixed;z-index:40;pointer-events:none;background:var(--tile);border-radius:4px;transition:transform .32s ease-in,opacity .32s ease-in;object-fit:contain}
 /* step 2 */
@@ -154,7 +161,7 @@ canvas{display:block;max-width:none;height:auto}
 .s2stick{position:sticky;top:var(--bar0,60px);z-index:4;background:var(--bg);padding-bottom:8px;border-bottom:1px solid var(--line);box-shadow:0 6px 10px -8px rgba(0,0,0,.35)}
 .s2top{display:flex;gap:12px;align-items:flex-start;padding:8px 0}
 .s2stick .cv{max-height:22vh;overflow:auto}
-@media (max-width:640px){.s2stick .row button{padding:4px 7px;font-size:.8rem}.s2stick .hint{margin:2px 0}}
+@media (max-width:640px){.s2stick .row button{padding:4px 7px;font-size:.8rem}#s2Work .hint{margin:2px 0}}
 .bigt{width:104px;height:104px;flex:0 0 auto;background:var(--tile);border:2px solid var(--accent);border-radius:6px;display:grid;place-items:center;
   touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;cursor:grab}
 .bigt img{max-width:96px;max-height:96px;pointer-events:none;-webkit-user-drag:none}
@@ -174,6 +181,30 @@ canvas{display:block;max-width:none;height:auto}
 .card .cid.grab::after{content:' \2725';color:var(--muted);font-weight:400}
 .pileghost{width:auto;height:auto;padding:6px 10px;font-family:var(--f-mono);font-weight:600;color:var(--ink);background:var(--accent-soft)}
 .card.home{border-style:dashed}
+/* a "Check these first" tile waiting in step 2 (template 2026-10-09.1): its own pile is the first card, framed in ink (shape and
+   weight, never colour alone: the owner is red-green colour-blind), so "it was right" is one tap */
+.card.cur{border:3px solid var(--ink)}
+.card.cur .cnt{color:var(--ink);font-weight:600}
+.card.cur .put{color:var(--ink)}
+#focusNote .go,#rankNote .go{font:inherit;font-weight:600;padding:1px 8px;margin:0 2px;vertical-align:baseline}
+.card .chead{display:flex;gap:8px;align-items:center;justify-content:space-between}
+.card .chead .cid{flex:1 1 auto;min-width:0}   /* the name row is the merge handle (mouse: a drag leaves a narrow name at once) */
+.card .vw{font-size:.75rem;color:var(--ink);border:1px solid var(--line);border-radius:5px;padding:2px 8px;background:var(--bg);flex:0 0 auto;cursor:pointer;display:inline-flex;align-items:center}
+#s2Line,#s2Sub{display:none}
+body.s2pin #s2Line{display:block;font-size:.95rem}
+body.s2pin #s2Sub{display:block;margin:2px 0 0}
+body.s2pin #s2Head{padding:8px 0 0}
+#s2QMore[hidden],#s2Load[hidden],#s2CardsHint:empty{display:none}
+#s2QMore{font-size:.8rem;padding:2px 10px;margin-top:2px}
+#s2CardsHint{margin:10px 0 0}
+#s2Msg:empty{display:none}
+#s2Note > *{margin-top:8px}
+#s2Note #s2Msg{margin-bottom:0}
+#offer .t.subj{--sz:36px;display:inline-grid;vertical-align:middle;margin:0 4px}
+#focusTap{margin:2px 0 6px}
+/* phone, step 2: a long question would pin half the screen above the cards; three lines, tap to read it all */
+#s2Q[hidden]{display:none}
+@media (max-width:640px){#s2Q{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;font-size:.88rem;cursor:pointer}#s2Q.open{display:block}}
 .card.over{border-color:var(--accent);background:var(--accent-soft);outline:3px solid var(--accent)}
 .ghost{position:fixed;z-index:50;pointer-events:none;width:72px;height:72px;object-fit:contain;background:var(--tile);border:2px solid var(--accent);border-radius:6px;opacity:.9;box-shadow:0 6px 18px rgba(0,0,0,.3)}
 .donebox{background:var(--ok-soft);border-radius:6px;padding:14px;margin-top:12px}
@@ -184,6 +215,7 @@ body.traypad #offer{bottom:100px}
 #offer .tiles{margin:0}
 #offer.inbox{position:static;max-width:none;margin:0;box-shadow:none}
 #offer .t{--sz:40px}
+@media (max-width:640px){#offer .tiles{flex-wrap:nowrap;overflow:hidden;flex:1 1 100%}#offer .t{--sz:34px;flex:0 0 auto}}   /* phone: one row of look-alikes, the offer stays short */
 @media (max-width:640px), (max-height:500px){#ctx{padding:6px;place-items:start center}#ctx .box{padding:10px;max-height:calc(100dvh - 12px)}
   .pile{scroll-margin-top:var(--barh,70px)} .bigt{width:88px;height:88px} .bigt img{max-width:80px;max-height:80px} #trayGo{padding:8px 8px}}
 /* Fix the cut (owner, 4 Oct 2026): the larger view's bracket box becomes editable */
@@ -235,6 +267,7 @@ button,select,summary{touch-action:manipulation}   /* no double-tap zoom on repe
   .s2stick .cv{max-height:none;overflow:visible}
   .card{--csz:46px}
   .card .cid.grab{touch-action:manipulation;justify-self:start}
+  .card .chead .cid{flex:0 1 auto}   /* phone: only the name itself is the (press-and-hold) merge handle */
   #cards{min-height:100vh}   /* the page is long enough at once for the scroll to the sign, while the piles are still being sorted */
 }
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
@@ -246,6 +279,18 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 @media (pointer:coarse){.t .badge.ok{pointer-events:none}.mouse-only{display:none}} .touch-only{display:none} @media (pointer:coarse){.touch-only{display:inline}}
 .pval{font-family:'IBM Plex Mono',monospace;font-weight:600;border:1px solid var(--ink);border-radius:4px;padding:0 5px;margin-right:6px}
 .banner{margin:6px 0;padding:6px 10px;border:2px solid var(--ink);border-radius:6px;font-weight:600}
+/* phone tap targets (template 2026-10-09.1, iPhone check: step-2 buttons were 29 px tall, the card's put line 17 px): 44 px on a
+   finger, in the question flow (bar, step 2, the larger view, the cluster offer, the tray) */
+@media (pointer:coarse){
+  .tabs button,#undo,#trayGo,#focusNote .go,#rankNote .go,.tapmode .seg button,#s2Work .row button,#s2Empty button,#s2QMore,#offer button,#ctx .row button,#ctx .row select,#ctxX{min-height:44px}
+  #s2Work .row button{padding:6px 10px}
+  #ctx input[type=range]{height:44px}
+  .card .vw{min-height:44px;padding:0 12px}
+  .card .put{display:flex;align-items:center;min-height:44px;margin:2px -8px -8px;padding:0 10px;border-top:1px solid var(--line);border-radius:0 0 4px 4px;background:var(--bg)}
+  .card.cur .put{border-top:2px solid var(--ink)}
+  .card .smp img{cursor:default}
+}
+@media (max-width:400px){.tabs .wide{display:none}.tabs button{padding-inline:4px}.tabs .cntb{margin-left:2px;padding:0 4px;min-width:16px}.bar{column-gap:8px}}   /* 320 px: the two tabs stay on one line */
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
 <div class="wrap">
@@ -258,12 +303,12 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
     <div><b>Step 2 · Place the taken-out signs</b>Each taken-out sign is shown large with every other pile below it, closest-looking first. Drag it onto its pile, or just tap the pile. "None of these: new sign" starts a new pile; nothing to type.</div>
   </div>
   <div class="bar">
-    <div class="tabs" role="tablist" aria-label="Steps"><button type="button" role="tab" id="tab1" aria-selected="true">1 · Clean piles</button><button type="button" role="tab" id="tab2" aria-selected="false">2 · Place <span class="cntb zero" id="outN">0</span></button></div>
+    <div class="tabs" role="tablist" aria-label="Steps"><button type="button" role="tab" id="tab1" aria-selected="true">1 · Clean<span class="wide"> piles</span></button><button type="button" role="tab" id="tab2" aria-selected="false">2 · Place <span class="cntb zero" id="outN">0</span></button></div>
     <button type="button" id="undo" disabled>Undo</button>
     <span class="save" id="save">Connecting to storage…</span>
   </div>
   <section id="s1">
-    <p class="hint1" id="hint1"><b>Tap</b> a sign that doesn’t belong to take it out. <b>Hold</b> a sign: lift your finger to see it larger, or drag it onto a pile (or onto the bar at the bottom: doesn’t belong / trash). <span class="mouse-only">Click the <b>?</b> badge on a questioned sign to approve it.</span><span class="touch-only">To approve a questioned sign (<b>?</b>), hold it, lift, and press “Right pile: keep it”.</span> <b>Drag</b> a sign onto another pile (mouse: straight away; phone: hold first). The <b>✕</b> on a sign (mouse: hover) trashes it: a page edge, shadow or stain, not a sign.</p>
+    <p class="hint1" id="hint1"><b>Tap</b> a sign that doesn’t belong to take it out. <b>Hold</b> a sign: lift your finger to see it larger, or drag it onto a pile (or onto the bar at the bottom: doesn’t belong / trash). <span id="hintQ"><span class="mouse-only">Click the <b>?</b> badge on a questioned sign to approve it.</span><span class="touch-only">To approve a questioned sign (<b>?</b>), hold it, lift, and press “Right pile: keep it”.</span></span> <b>Drag</b> a sign onto another pile (mouse: straight away; phone: hold first).<span class="mouse-only"> The <b>✕</b> on a sign (shown on hover) trashes it: a page edge, shadow or stain, not a sign.</span></p>
     <div class="tapmode"><span class="hint">A tap on a sign:</span><span class="seg" role="group" aria-label="What a tap does"><button type="button" id="modeOut" class="on">Takes it out</button><button type="button" id="modeLook">Shows it large</button></span></div>
     <div class="meter"><div class="track"><div class="fill" id="fill"></div></div><span id="prog">0 of 0 piles done</span></div>
     <details class="opts"><summary>Display options</summary><div class="row">
@@ -276,35 +321,38 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
     </div><p class="hint" id="psortHelp">Tip from the CTTS transcription tool (Lasry, Apache-2.0): segment about 500 symbols, then classify in bulk, category by category. Sorting the piles by size or by mark category does the same here.</p></details>
     <section id="rank" hidden><h2 class="ftitle">Most useful first</h2><p class="sub" id="rankNote"></p><div class="tiles" id="rankTiles"></div></section>
     <details id="refBox" class="opts" hidden><summary id="refCap"></summary><div style="overflow:auto;max-height:70vh;background:var(--tile);border-radius:6px;margin-top:6px"><img id="refImg" alt="Reference sheet" style="max-width:none;display:block"></div><p class="hint">Scroll the sheet sideways if it is wide; it stays open while you sort.</p></details>
-    <section id="focus" hidden><h2 class="ftitle">Check these first</h2><p class="sub" id="focusNote"></p><div class="tiles" id="focusTiles"></div></section>
+    <section id="focus" hidden><h2 class="ftitle">Check these first</h2><p class="sub" id="focusNote"></p><p class="hint" id="focusTap" hidden></p><div class="tiles" id="focusTiles"></div></section>
     <div id="list"></div>
     <p class="hint" id="foot"></p>
   </section>
-  <section id="s2" hidden aria-label="Step 2: place the taken-out signs">
-    <h2 class="ftitle">Put each taken-out sign where it belongs</h2>
-    <p class="hint1">Drag the sign onto the pile it matches, or <b>tap the pile's name</b>. The closest-looking piles come first. <b>Tap a small picture</b> inside a pile to open that pile and look at it larger. <b>Drag a small picture</b> onto another pile to move that tile; <b>drag a pile's name</b> (✥) onto another pile to merge the whole pile (on a phone: press a moment, then drag).</p>
-    <div id="s2Empty" class="donebox" hidden><strong>Nothing waiting to be placed.</strong> <span id="s2EmptyT"></span> <button type="button" id="s2Back">Back to step 1</button></div>
+  <section id="s2" hidden aria-label="Step 2: place each sign">
+    <h2 class="ftitle">Place each sign</h2>
+    <p class="hint1" id="hint2">Tap the pile the sign belongs to (anywhere on its card), or drag the sign onto it. The closest-looking piles come first; for a question, its own pile is first. <b>View pile</b> on a card opens that pile larger and places nothing. <span class="mouse-only"><b>Click a small picture</b> to open that pile too; <b>drag a small picture</b> onto another pile to move that one tile. </span><span class="touch-only">A tap on a small picture is a tap on its pile; <b>hold a small picture</b> to see that one tile larger. </span><b>Drag a pile's name</b> (✥) onto another pile to merge the whole pile (on a phone: press a moment, then drag).</p>
+    <div id="s2Note"><p class="hint" id="s2Msg" aria-live="polite"></p></div>
+    <div id="s2Load" class="donebox" hidden><strong>Loading your earlier answers…</strong> <span id="s2LoadT"></span></div>
+    <div id="s2Empty" class="donebox" hidden><strong id="s2EmptyH">Nothing waiting to be placed.</strong> <span id="s2EmptyT"></span> <button type="button" id="s2Back">Back to step 1</button></div>
     <div id="s2Work" hidden>
       <div class="s2stick" id="s2Stick">
-      <div class="s2top">
+      <div class="s2top" id="s2Top">
         <div class="bigt" id="s2Tile" role="img" aria-label="The sign to place"><img id="s2Img" alt=""></div>
-        <div class="s2info"><strong id="s2T"></strong><p class="hint" id="s2Pos"></p><p id="s2Q" hidden></p>
-          <div class="row"><button type="button" id="s2Prev">&larr; Previous</button><button type="button" id="s2Next">Skip &rarr;</button></div></div>
+        <div class="s2info"><strong id="s2Line"></strong><p class="hint" id="s2Sub"></p>
+          <div id="s2Head"><strong id="s2T"></strong><p class="hint" id="s2Pos"></p><p id="s2Q" hidden></p><button type="button" id="s2QMore" hidden aria-expanded="false">more ▾</button>
+          <div class="row" id="s2Nav"><button type="button" id="s2Prev">&larr; Previous</button><button type="button" id="s2Next">Skip &rarr;</button></div></div></div>
       </div>
       <div class="cv"><canvas id="s2C"></canvas></div>
-      <div class="row" style="margin-top:10px"><button type="button" id="s2New">None of these: new sign</button><button type="button" id="s2Mark">Not a letter</button>
-        <button type="button" id="s2Aside">Set aside</button><button type="button" id="s2Bad">Bad cut</button><button type="button" id="s2Home">Put back where it was</button></div>
+      <div class="row" id="s2Acts" style="margin-top:10px"><button type="button" id="s2Home">Put back where it was</button><button type="button" id="s2New">None of these: new sign</button>
+        <button type="button" id="s2Mark">Not a letter</button><button type="button" id="s2Aside">Set aside</button><button type="button" id="s2Bad">Bad cut</button></div>
       </div>
-      <p class="hint" id="s2Msg" aria-live="polite"></p>
+      <p class="hint" id="s2CardsHint"></p>
       <div class="cards" id="cards" aria-label="Piles: tap one to put the sign there"></div>
     </div>
   </section>
-  <div id="tray" hidden role="region" aria-label="Taken out"><span class="lab">Taken out<br><b id="trayN">0</b></span>
-    <div class="tiles" id="trayTiles" title="Tap a sign to put it back"></div><button type="button" id="trayGo">Place them &rarr;</button></div>
+  <div id="tray" hidden role="region" aria-label="Taken out"><span class="lab"><span id="trayW">Taken out</span><br><b id="trayN">0</b></span>
+    <div class="tiles" id="trayTiles" title="Taken out: tap a sign to put it back. Questions: tap one to answer it in step 2."></div><button type="button" id="trayGo">Place them &rarr;</button></div>
   <div id="dropBar" hidden aria-hidden="true"><div data-drop="OUT">Doesn’t belong<br><small>take it out</small></div><div data-drop="NOT-LETTER">Trash<br><small>not a sign</small></div></div>
   <div id="offer" hidden role="region" aria-live="polite" aria-label="Apply to the whole cluster">
     <span id="offerT"></span><div class="tiles" id="offerTiles"></div>
-    <button type="button" id="offerYes">Apply to all</button><button type="button" id="offerNo">Just this tile</button></div>
+    <button type="button" id="offerYes">Yes, move them too</button><button type="button" id="offerNo">No, only that one</button></div>
   <div id="ctx" hidden><div class="box" role="dialog" aria-modal="true" aria-labelledby="ctxT">
     <div class="row top"><strong id="ctxT"></strong><button type="button" id="ctxX" class="x" aria-label="Close">&times; Close</button></div>
     <p id="ctxQ" hidden></p>
@@ -344,6 +392,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 </div>
 <script>
 const DATA = __DATA__;
+const OPTS = __OPTS__;   // page options baked at build time (tools/sign_sorter.py / tools/sorter_rerender.py): focusToTray
 const basePiles = DATA.piles;
 const itemBySid = {}, homeOf = {};
 basePiles.forEach(p => p.items.forEach(it => { itemBySid[it.sid] = it; homeOf[it.sid] = p.id; it.fam = p.family; }));
@@ -366,6 +415,44 @@ const recutImg = {};     // sid -> data URL of the tile redrawn from its line at
 const checked = {};      // sid -> pile the person confirmed it belongs to ("Right pile: keep it"; db collection 'checked')
 let col = null, mcol = null, ncol = null, kcol = null, rcol = null;
 const SPECIAL = new Set(['BAD-CUT', 'NOT-LETTER']);   // page-made piles that are not signs
+// Questions start in the tray (template 2026-10-09.1; owner, 9 Oct 2026, Harley 287: "Idk what to do with this pile. If they were
+// already taken out I could put them in piles"). With OPTS.focusToTray the "Check these first" tiles (and "Most useful first")
+// open in the "Taken out" tray, so step 2 shows them one at a time over the pile cards, their own pile first ("it was right"
+// = one tap, saved as a keep). Nothing is written to the db for this: a waiting tile has no move until the person acts, and a
+// tile with a saved decision (a move, a keep, a legacy set-aside) or one of the person's earlier picks (--refs) never waits.
+const TRAY_ON = !!(OPTS && OPTS.focusToTray);
+const trayOrder = {};    // sid -> 1, 2, ...: the question tiles, in the focus box's order, then the rank box's
+if (TRAY_ON) (DATA.focus || []).concat(DATA.rank || []).forEach(f => { const s = f && f.sid;
+  if (s && itemBySid[s] && !itemBySid[s].r && !trayOrder[s]) trayOrder[s] = Object.keys(trayOrder).length + 1; });
+// The person's earlier answers arrive after the page has drawn (the store answers late; reopen with tiles 1-2 answered showed tile
+// 1 as "1 of 12 waiting", then switched to tile 3 under the finger, and a tap in that window saved a keep beside the old move:
+// iPhone check, 9 Oct 2026). So no tile waits, and step 2 takes no answer, until the first snapshots of piles, moves and checked
+// are in (or the browser copy is read): `ready`. Until then step 2 says "Loading your earlier answers…".
+let ready = false, loadErr = '';
+const preTrayed = sid => ready && !!trayOrder[sid] && !moves[sid] && !checked[sid] && !(state[homeOf[sid]] && state[homeOf[sid]].outliers.includes(sid));
+const where = sid => moves[sid] || (preTrayed(sid) ? 'OUT' : homeOf[sid]);   // where a tile is now; 'OUT' = in the tray
+const waitingOf = pid => Object.keys(trayOrder).filter(s => homeOf[s] === pid && preTrayed(s));   // question tiles of pile pid in the tray
+// "It was right" / "Right pile: keep it": a keep (db 'checked') in `pile`, one Undo step. A keep in the tile's own pile also clears
+// any move of it in the same step, so a keep and a move are never both saved (while the saved answers are still loading the page
+// cannot know there is none, so it sends the delete anyway). Only the explicit keep controls come here: the framed "its pile now"
+// card and "It was right" in step 2, "Right pile: keep it" in the larger view, the "?" approve in step 1 (data-safety check, 9 Oct
+// 2026: putting a tile back, a cluster move or "Put it back" after a recut wrote a keep the person never gave).
+function keepAt(sid, pile){
+  const e = []; if (pile === homeOf[sid] && (moves[sid] || !ready)){ e.push([sid, moves[sid] || null]); delete moves[sid]; saveMove(sid); }
+  e.checks = [[sid, checked[sid] || null]]; history.push(e); if (history.length > 200) history.shift(); updateUndo();
+  checked[sid] = pile; saveCheck(sid); hideOffer(); }
+// put a tile in pile `to` from the step-2 answer screen (or a drag out of the tray): a question tile put in its own pile is answered
+// "it was right" (a keep, its move cleared), anything else is a move
+function settle(sid, to){ if (to === homeOf[sid] && trayOrder[sid] && (preTrayed(sid) || moves[sid] === 'OUT')){ keepAt(sid, to); return 'kept'; }
+  remember([sid]); setDest(sid, to); return 'moved'; }
+const outFrom = {};   // sid -> the pile it was taken out of (this visit): a tap in the tray puts it back there, else in its own pile
+// short form of a question: [the clause ending in its first '?', the rest] (Harley 287's "Odd one out of shape pile k05 (20 tiles):
+// same sign as the rest of the pile, or another pile? The two blind readers ..." -> "Same sign as the rest of the pile, or another pile?")
+function qParts(q){ q = String(q || ''); const m = /[^\s?]\?(\s|$)/.exec(q); if (!m) return [q, ''];
+  const end = m.index + 2, head = q.slice(0, end);
+  const cuts = [[': ', 2], ['; ', 2], ['. ', 2], [' -- ', 4]].map(([t, n]) => [head.lastIndexOf(t), n]).sort((a, b) => b[0] - a[0]);
+  const [cut, n] = cuts[0], ask = (cut < 0 ? head : head.slice(cut + n)).trim(), before = cut < 0 ? '' : head.slice(0, cut).trim();
+  return [ask.charAt(0).toUpperCase() + ask.slice(1), [before, q.slice(end).trim()].filter(Boolean).join(' · ')]; }
 // Fixed display order: families and piles keep the order they had when the page was built (a move never reshuffles the
 // page); families and piles holding a "Check these first" tile come first.
 const baseCount = Object.fromEntries(basePiles.map(p => [p.id, p.items.length]));
@@ -407,7 +494,7 @@ function membersOf(id){
   const m = [];
   Object.keys(itemBySid).forEach(sid => {
     if (!moves[sid] && state[homeOf[sid]] && state[homeOf[sid]].outliers.includes(sid)) return; // legacy set-aside
-    const dest = moves[sid] || homeOf[sid]; if (dest === id) m.push(sid); });
+    if (where(sid) === id) m.push(sid); });
   if ($('order').value === 'odd') m.sort((a, b) => (itemBySid[b].d || 0) - (itemBySid[a].d || 0));
   else m.sort();
   return m;
@@ -417,7 +504,10 @@ function asideOf(id){ // set aside from this home pile: legacy outliers or moves
   Object.keys(moves).forEach(sid => { if (moves[sid] === 'ASIDE' && homeOf[sid] === id) s.add(sid); });
   return [...s].filter(sid => !moves[sid] || moves[sid] === 'ASIDE');
 }
-function outList(){ return Object.keys(moves).filter(s => moves[s] === 'OUT' && itemBySid[s]).sort((a, b) => (outAt[a] || 0) - (outAt[b] || 0) || a.localeCompare(b)); }
+function outList(){   // the tray: taken-out tiles in the order taken out, the waiting question tiles first (in their own order)
+  const L = Object.keys(moves).filter(s => moves[s] === 'OUT' && itemBySid[s]); Object.keys(trayOrder).forEach(s => { if (preTrayed(s)) L.push(s); });
+  const k = s => preTrayed(s) ? trayOrder[s] - 1e9 : (outAt[s] || 0);
+  return L.sort((a, b) => k(a) - k(b) || a.localeCompare(b)); }
 function statusOf(id){ const s = state[id]; if(!s) return null; if (s.merge_into) return 'merge'; return s.verdict; }
 const answered = sid => !!moves[sid] || !!checked[sid];
 
@@ -449,15 +539,21 @@ function pileCmp(a, b){
   if (m === 'value') return base || ((VAL[a.id] || {}).g || '~').localeCompare((VAL[b.id] || {}).g || '~') || a.id.localeCompare(b.id);
   return base || (baseCount[b.id] || 0) - (baseCount[a.id] || 0) || a.id.localeCompare(b.id);
 }
+// the pinned bar's bottom once stuck (its sticky top plus its height): --bar0 pins the step-2 sign right under it, --barh is a pile's
+// scroll margin. Re-measured whenever the bar changes size (a web font arriving, the save line wrapping): measured once, before the
+// font loaded, the sign header pinned 18 px too low and covered the top of the line strip (iPhone check, 9 Oct 2026).
+function barStuck(){ const b = document.querySelector('.bar'); return Math.round((parseFloat(getComputedStyle(b).top) || 0) + b.offsetHeight); }
+function setBarVars(){ const h = barStuck(); document.documentElement.style.setProperty('--barh', (h + 8) + 'px'); document.documentElement.style.setProperty('--bar0', h + 'px'); }
+try { new ResizeObserver(() => setBarVars()).observe(document.querySelector('.bar')); } catch (e) {}
 function render(){
   const show = $('show').value;
   const piles = allPiles();
   const famTotals = {};
-  piles.forEach(p => { famTotals[p.family] = (famTotals[p.family] || 0) + membersOf(p.id).length; });
+  piles.forEach(p => { famTotals[p.family] = (famTotals[p.family] || 0) + membersOf(p.id).length + waitingOf(p.id).length; });
   let fams = famOrder.concat(Object.keys(famTotals).filter(f => !(f in baseFam)).sort());
   const gbv = DATA.nonblind && $('gbv').checked, groupOf = p => gbv ? ((VAL[p.id] || {}).g || '?') : p.family;
   if (gbv){ fams = [...new Set(piles.map(groupOf))].sort(); Object.keys(famTotals).forEach(k => delete famTotals[k]);
-    piles.forEach(p => { famTotals[groupOf(p)] = (famTotals[groupOf(p)] || 0) + membersOf(p.id).length; }); }
+    piles.forEach(p => { famTotals[groupOf(p)] = (famTotals[groupOf(p)] || 0) + membersOf(p.id).length + waitingOf(p.id).length; }); }
   const list = $('list');
   // Keep the person's place: the first pile on screen stays where it was, and a half-typed note survives.
   const ae = document.activeElement;
@@ -470,7 +566,7 @@ function render(){
     if (!(f in famTotals)) continue;
     const ps = piles.filter(p => groupOf(p) === f)
       .map(p => ({...p, members: membersOf(p.id)}))
-      .filter(p => p.members.length || asideOf(p.id).length || (p.isNew && !SPECIAL.has(p.id)))
+      .filter(p => p.members.length || asideOf(p.id).length || (p.isNew && !SPECIAL.has(p.id)) || waitingOf(p.id).length)
       .sort(pileCmp)
       .filter(p => show === 'all' || (show === 'todo' ? !statusOf(p.id) : !!statusOf(p.id)));
     if (!ps.length) continue;
@@ -483,13 +579,12 @@ function render(){
   }
   openMore.forEach(id => { const d = id && document.getElementById(id); const m = d && d.querySelector('details'); if (m) m.open = true; });
   // Count only piles that still hold tiles (or were settled); the page-made bad-cut and not-a-letter piles are no signs.
-  const live = piles.filter(p => !SPECIAL.has(p.id) && (statusOf(p.id) || membersOf(p.id).length || asideOf(p.id).length));
+  const live = piles.filter(p => !SPECIAL.has(p.id) && (statusOf(p.id) || membersOf(p.id).length || asideOf(p.id).length || waitingOf(p.id).length));
   const done = live.filter(p => statusOf(p.id)).length;
   $('prog').textContent = done + ' of ' + live.length + ' piles done';
   $('fill').style.width = (live.length ? 100 * done / live.length : 0) + '%';
   renderTray();
-  const bh = document.querySelector('.bar').offsetHeight;
-  document.documentElement.style.setProperty('--barh', (bh + 8) + 'px'); document.documentElement.style.setProperty('--bar0', bh + 'px');
+  setBarVars();
   if (anchor){ const el = document.getElementById(anchor.id); if (el){ const dy = el.getBoundingClientRect().top - anchor.y; if (Math.abs(dy) > 1) window.scrollBy(0, dy); } }
   if (keep){ const el = document.getElementById(keep.id); if (el && el !== document.activeElement){ el.value = keep.v; el.focus({preventScroll: true});
     try { el.setSelectionRange(keep.a, keep.b); } catch(e){} } }
@@ -592,7 +687,9 @@ function pileEl(p, piles){
   const nm = document.createElement('span'); nm.className = 'pid'; nm.textContent = p.id;
   const ct = document.createElement('span'); ct.className = 'cnt';
   const nref = p.members.filter(x => itemBySid[x] && itemBySid[x].r).length;
-  ct.textContent = p.members.length + ' tiles' + (nref ? ' (' + nref + ' sorted by you before, ✓)' : '') + (aside.length ? ', ' + aside.length + ' set aside' : '') + (p.isNew ? ', new pile' : '');
+  const wait = waitingOf(p.id).length;
+  ct.textContent = p.members.length + ' tiles' + (nref ? ' (' + nref + ' sorted by you before, ✓)' : '') + (aside.length ? ', ' + aside.length + ' set aside' : '') +
+    (wait ? ', ' + wait + ' waiting in step 2' : '') + (p.isNew ? ', new pile' : '');
   const chip = document.createElement('span'); chip.className = 'chip' + (status ? ' ' + status : '');
   chip.textContent = status === 'same' ? 'done' : status === 'mark' ? 'not a letter' : status === 'merge' ? 'same as ' + s.merge_into : 'to do';
   const big = btn('View larger', false, () => { const m = p.members.concat(aside); if (m.length) showCtx(m[0], p.id); });
@@ -606,6 +703,9 @@ function pileEl(p, piles){
   const tiles = document.createElement('div'); tiles.className = 'tiles';
   p.members.forEach(sid => tiles.append(tileEl(sid, p.id, homeOf[sid] !== p.id ? ' in' : '')));
   aside.forEach(sid => tiles.append(tileEl(sid, p.id, ' out')));
+  // its question tiles waiting in step 2 stay in view here, dimmed (data-safety check, 9 Oct 2026: "This pile is done", "Not a
+  // letter" and "Same sign as..." decide them in the export, so the verdict is given with them on screen, as on the old layout)
+  waitingOf(p.id).forEach(sid => tiles.append(waitTileEl(sid)));
   el.append(tiles);
   const acts = document.createElement('div'); acts.className = 'acts';
   const bSame = btn(s.verdict === 'same' && !s.merge_into ? '✓ This pile is done' : 'This pile is done', s.verdict === 'same' && !s.merge_into, () => {
@@ -627,9 +727,22 @@ function pileEl(p, piles){
   el.append(acts);
   return el;
 }
+// a question tile waiting in step 2, shown dimmed in its own pile (step 1). The owner's gesture rule (R05, 9 Oct 2026: a tap takes
+// a sign out into the tray, a hold opens it large): it is in the tray already, so a tap only shows it going there; a hold opens it.
+function waitTileEl(sid){
+  const b = document.createElement('button'); b.type = 'button'; b.dataset.sid = sid; b.className = 't wait';
+  b.title = sid + ': a question, already in the tray, waiting in step 2 · Place (' + (focusQ[sid] || 'is this its pile?') + '). Hold: see it larger and answer it.';
+  b.setAttribute('aria-label', sid + ': question already in the tray, waiting in step 2; hold to see it larger');
+  const im = document.createElement('img'); im.alt = sid; im.src = imgSrc(sid); im.loading = 'lazy'; im.draggable = false; b.append(im);
+  const g = document.createElement('span'); g.className = 'badge'; g.textContent = '2'; g.setAttribute('aria-hidden', 'true'); b.append(g);
+  attachPress(b, () => { note_(sid + ' is already in the tray: it waits in step 2 · Place (nothing moved).'); fly(sid, b.getBoundingClientRect()); },
+    () => showCtx(sid, homeOf[sid], false, outList(), 'waiting to be placed'));
+  return b;
+}
+function answerIn2(sid){ s2Cur = sid; if (step === 2) renderS2(); else setStep(2); }   // open step 2 on this sign
 function approveTile(sid, pid, undoIt){
-  const e = []; e.checks = [[sid, checked[sid] || null]]; history.push(e); updateUndo();
-  if (undoIt) delete checked[sid]; else checked[sid] = pid; saveCheck(sid); hideOffer();
+  if (undoIt){ const e = []; e.checks = [[sid, checked[sid] || null]]; history.push(e); updateUndo(); delete checked[sid]; saveCheck(sid); hideOffer(); }
+  else keepAt(sid, pid);
   note_(undoIt ? 'Took back the approval of ' + sid + '.' : 'Approved ' + sid + ' in pile ' + pid + '.'); renderSome([pid]);
 }
 let tapMode = 'out'; try { if (localStorage.getItem('sorterTapMode') === 'look') tapMode = 'look'; } catch (e) {}
@@ -638,7 +751,10 @@ function setTapMode(m){ tapMode = m; try { localStorage.setItem('sorterTapMode',
 function btn(t, on, fn){ const b = document.createElement('button'); b.type = 'button'; b.textContent = t; if (on) b.classList.add('on'); b.setAttribute('aria-pressed', !!on); b.onclick = fn; return b; }
 
 // ---- step 1: take out / put back
+// A move writes no keep: a question tile put back in its own pile without an answer (moved away and back, a cluster move, "Put it
+// back" after a recut) waits in step 2 again rather than being confirmed (data-safety check, 9 Oct 2026).
 function setDest(sid, to){
+  if (to === 'OUT' && moves[sid] !== 'OUT') outFrom[sid] = pileOf(sid);
   if (to === homeOf[sid]) delete moves[sid]; else moves[sid] = to;
   if (to === 'OUT') outAt[sid] = Date.now();
   const hs = state[homeOf[sid]];
@@ -648,11 +764,14 @@ function setDest(sid, to){
 function takeOut(sid, el){
   const from = el ? el.getBoundingClientRect() : null, was = pileOf(sid);
   remember([sid]); setDest(sid, 'OUT'); hideOffer();
-  note_('Took ' + sid + ' out of pile ' + homeOf[sid] + '. Tap it in the tray to put it back.');
+  note_('Took ' + sid + ' out of pile ' + was + '. Tap it in the tray to put it back.');
   renderSome([was]); if (from) fly(sid, from);
 }
-function putBack(sid){
-  remember([sid]); setDest(sid, homeOf[sid]); note_('Put ' + sid + ' back in pile ' + homeOf[sid] + '.'); renderSome([homeOf[sid]]);
+function putBack(sid){   // a tray tap: back in the pile it was taken out of (else its own pile); a waiting question opens step 2 instead
+  if (preTrayed(sid)){ answerIn2(sid); return; }
+  const f = outFrom[sid], to = f && f !== 'OUT' && f !== 'ASIDE' && (baseIds.has(f) || newPiles[f]) ? f : homeOf[sid];
+  remember([sid]); setDest(sid, to);
+  note_('Put ' + sid + ' back in pile ' + to + '.' + (preTrayed(sid) ? ' It is a question again: it waits in step 2.' : '')); renderSome([to]);
 }
 // Large letters (Noailles, 9,865 tiles; owner 4 Oct 2026: a noticeable delay on every tap): a step-1 tap re-draws only the
 // piles it touched, the meter and the tray, instead of the whole list. Anything it cannot place (a pile not on screen, a pile
@@ -671,7 +790,7 @@ function renderSome(ids){
   updateMeter(piles); renderTray();
 }
 function updateMeter(piles){
-  const live = piles.filter(p => !SPECIAL.has(p.id) && (statusOf(p.id) || membersOf(p.id).length || asideOf(p.id).length));
+  const live = piles.filter(p => !SPECIAL.has(p.id) && (statusOf(p.id) || membersOf(p.id).length || asideOf(p.id).length || waitingOf(p.id).length));
   const done = live.filter(p => statusOf(p.id)).length;
   $('prog').textContent = done + ' of ' + live.length + ' piles done';
   $('fill').style.width = (live.length ? 100 * done / live.length : 0) + '%';
@@ -688,12 +807,26 @@ function renderTray(){
   const L = outList(), tray = $('tray');
   $('outN').textContent = L.length; $('outN').classList.toggle('zero', !L.length);
   tray.hidden = !L.length || step !== 1; document.body.classList.toggle('traypad', !tray.hidden);
-  $('trayN').textContent = L.length;
+  // taken-out tiles first, the latest at the left; then the questions waiting in step 2, in their own order (1, 2, ...), under
+  // their own label: a tap on a question opens step 2 on it, never a one-tap "keep" (iPhone and data-safety checks, 9 Oct 2026)
+  const outs = L.filter(s => !preTrayed(s)).reverse(), qs = L.filter(preTrayed);
+  $('trayN').textContent = L.length; $('trayW').textContent = qs.length ? (outs.length ? 'Waiting' : 'Questions') : 'Taken out';
   const w = $('trayTiles'); w.textContent = '';
-  L.slice().reverse().forEach(sid => { const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.dataset.sid = sid;
-    b.title = sid + ' (from ' + homeOf[sid] + '): tap to put it back'; b.setAttribute('aria-label', 'Put ' + sid + ' back in pile ' + homeOf[sid]);
+  const grp = t => { const g = document.createElement('span'); g.className = 'tgrp'; g.textContent = t; g.setAttribute('aria-hidden', 'true'); w.append(g); };
+  if (outs.length && qs.length) grp('Taken out ' + outs.length);
+  outs.forEach(sid => { const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.dataset.sid = sid;
+    const f = outFrom[sid] && outFrom[sid] !== homeOf[sid] ? outFrom[sid] : homeOf[sid];
+    b.title = sid + ' (from ' + f + '): tap to put it back'; b.setAttribute('aria-label', 'Put ' + sid + ' back in pile ' + f);
     const im = document.createElement('img'); im.alt = sid; im.src = imgSrc(sid); im.draggable = false; b.append(im);
     attachPress(b, () => putBack(sid), () => showCtx(sid, homeOf[sid], false, outList(), 'taken out'));
+    trayDrag(b, sid);
+    w.append(b); });
+  if (outs.length && qs.length) grp('Questions ' + qs.length);
+  qs.forEach(sid => { const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.dataset.sid = sid;
+    b.title = sid + ' (question ' + trayOrder[sid] + ', now in pile ' + homeOf[sid] + '): waiting, tap to answer it in step 2';
+    b.setAttribute('aria-label', 'Question ' + trayOrder[sid] + ': ' + sid + ', now in pile ' + homeOf[sid] + '; tap to answer it in step 2');
+    const im = document.createElement('img'); im.alt = sid; im.src = imgSrc(sid); im.draggable = false; b.append(im);
+    attachPress(b, () => answerIn2(sid), () => showCtx(sid, homeOf[sid], false, outList(), 'waiting to be placed'));
     trayDrag(b, sid);
     w.append(b); });
 }
@@ -714,7 +847,7 @@ function trayDrag(b, sid){
   const end = (e, drop) => { if (!d) return; const dd = d; d = null; if (!dd.on) return; cancelAnimationFrame(dd.raf); swallowClick = true;
     if (dd.ghost) dd.ghost.remove(); if (dd.over) dd.over.classList.remove('dropover');
     const p = drop && pileAt(e.clientX, e.clientY); if (!p) return; const to = p.dataset.pile;
-    remember([sid]); setDest(sid, to); note_('Put ' + sid + ' in pile ' + to + '.'); renderSome([to]); offerCluster([sid], to); };
+    const how = settle(sid, to); note_((how === 'kept' ? 'Kept ' : 'Put ') + sid + ' in pile ' + to + '.'); renderSome([to]); offerCluster([sid], to); };
   b.addEventListener('pointerup', e => end(e, true)); b.addEventListener('pointercancel', e => end(e, false));
 }
 
@@ -729,8 +862,13 @@ function setStep(n){
   hideOffer(); renderTray();
   if (n === 2){ ensureVecs().then(() => { if (step === 2) renderS2(); }); renderS2(); }
   if (n === 1) window.scrollTo(0, s1Scroll);
-  else { const t = PHONE && !$('s2Work').hidden ? $('s2Work') : $('s2'); window.scrollTo(0, Math.max(0, t.getBoundingClientRect().top + scrollY - document.querySelector('.bar').offsetHeight - 6)); }
+  else s2Top();
 }
+// scroll step 2 to its start, exactly under the stuck bar (no gap for the text behind to show through). Phone: the message about the
+// sign just placed (and its cluster offer) first when there is one, else the next sign; desktop: the step's heading.
+function s2Top(){ const note = !!$('s2Note').textContent.trim() || $('s2Note').contains($('offer'));
+  const t = !PHONE ? $('s2') : note ? $('s2Note') : !$('s2Work').hidden ? $('s2Work') : !$('s2Load').hidden ? $('s2Load') : $('s2');
+  window.scrollTo(0, Math.max(0, t.getBoundingClientRect().top + scrollY - barStuck())); }
 $('modeOut').onclick = () => setTapMode('out'); $('modeLook').onclick = () => setTapMode('look'); setTapMode(tapMode);
 $('tab1').onclick = () => setStep(1); $('tab2').onclick = () => setStep(2); $('trayGo').onclick = () => setStep(2); $('s2Back').onclick = () => setStep(1);
 // tile likeness: a 16x16 ink vector per tile (computed in the browser once), pile = mean of its tiles; cosine similarity
@@ -756,37 +894,79 @@ function likeness(sid, members){
   if (!c) return -1; let dot = 0, nn = 0; for (let j = 0; j < c.length; j++){ dot += c[j] * v[j]; nn += c[j] * c[j]; } return dot / (Math.sqrt(nn) || 1);
 }
 function renderS2(){
+  // the saved answers not in yet: no sign, no cards (a tap could answer a sign already answered, or the wrong one)
+  const loading = TRAY_ON && !ready && Object.keys(trayOrder).length > 0;
+  $('s2Load').hidden = !loading;
+  if (loading){ $('s2Empty').hidden = true; $('s2Work').hidden = true;
+    $('s2LoadT').textContent = loadErr ? 'They could not be loaded (' + loadErr + '). Reload the page; step 1 still works.' :
+      'The questions are shown as soon as they are in, so nothing is asked or answered twice.'; return; }
   const L = outList();
   if (!L.includes(s2Cur)) s2Cur = L[0] || null;
   $('s2Empty').hidden = !!s2Cur; $('s2Work').hidden = !s2Cur;
-  if (!s2Cur){ $('s2EmptyT').textContent = 'Take signs out in step 1 and they will wait here.'; return; }
-  const sid = s2Cur, it = itemBySid[sid], i = L.indexOf(sid);
+  if (!s2Cur){ const N = Object.keys(trayOrder).length;   // every question answered: say so (not "nothing waiting")
+    $('s2EmptyH').textContent = N ? 'All ' + N + ' question' + (N > 1 ? 's' : '') + ' answered.' : 'Nothing waiting to be placed.';
+    $('s2EmptyT').textContent = N ? 'Step 1 shows each one in the pile you chose. Signs you take out in step 1 will wait here.' : 'Take signs out in step 1 and they will wait here.'; return; }
+  const sid = s2Cur, it = itemBySid[sid], i = L.indexOf(sid), pre = preTrayed(sid), home = homeOf[sid];
   $('s2Img').src = imgSrc(sid); $('s2Img').alt = sid;
-  $('s2T').textContent = 'Sign ' + sid + ', taken out of pile ' + homeOf[sid];
+  $('s2T').textContent = pre ? 'Sign ' + sid + ', now in pile ' + home + '. Is that its pile?' : 'Sign ' + sid + ', taken out of pile ' + home;
   $('s2Pos').textContent = (i + 1) + ' of ' + L.length + ' waiting. Page ' + it.p + '; brackets mark it on its line below.';
-  $('s2Q').hidden = !focusQ[sid]; $('s2Q').textContent = focusQ[sid] ? 'Question: ' + focusQ[sid] : '';
+  // phone: only the sign and this one line stay pinned; the title, the question and Previous / Skip scroll away with the strip
+  $('s2Line').textContent = (i + 1) + ' of ' + L.length + ' · ' + (pre ? home + '?' : 'from ' + home);
+  $('s2Sub').textContent = pre ? 'Tap the pile it belongs to; its own pile is first.' : 'Tap the pile it belongs to.';
+  const q = $('s2Q');
+  if (q.dataset.sid !== sid){ q.classList.remove('open'); q.dataset.sid = sid; }   // a new sign starts with its question folded (phone)
+  // the question part first, its background after (a three-line fold on a phone cut the question itself: iPhone check, 9 Oct 2026)
+  const qp = focusQ[sid] ? qParts(focusQ[sid]) : null;
+  q.hidden = !qp; q.textContent = qp ? qp[0] + (qp[1] ? ' ' + qp[1] : '') : '';
+  q.title = PHONE ? 'Tap to read the whole question' : '';
+  qMore();
   $('s2Prev').disabled = i <= 0; $('s2Next').disabled = i >= L.length - 1;
-  $('s2Home').textContent = 'Put back in ' + homeOf[sid];
+  $('s2Home').textContent = pre ? 'It was right: keep in ' + home : 'Put back in ' + home;
+  $('s2CardsHint').textContent = pre ? 'Tap the pile it belongs to (anywhere on the card). Its own pile, ' + home + ', is first: tap it if it was right.' :
+    'Tap the pile it belongs to (anywhere on the card); the closest-looking piles come first.';
   drawLine(sid, $('s2C'), PHONE && innerWidth <= 640 ? 5 : 3, () => s2Cur === sid && step === 2);
   const cards = $('cards'); cards.textContent = '';
   if (!vecDone){ cards.textContent = 'Sorting the piles by likeness…'; return; }
-  const ps = allPiles().filter(p => !SPECIAL.has(p.id)).map(p => ({...p, members: membersOf(p.id)}))
-    .filter(p => (p.members.length || p.isNew || p.id === homeOf[sid]) && !(state[p.id] && state[p.id].merge_into))
-    .map(p => ({...p, score: likeness(sid, p.members) + (p.family === it.fam ? 0.08 : 0)}))
-    .sort((a, b) => b.score - a.score || a.id.localeCompare(b.id));
-  ps.forEach(p => { const c = document.createElement('button'); c.type = 'button'; c.className = 'card' + (p.id === homeOf[sid] ? ' home' : ''); c.dataset.pile = p.id;
+  // a pile whose only tiles are question tiles waiting here is still a place to put a sign: its waiting tiles stand in as samples
+  const ps = allPiles().filter(p => !SPECIAL.has(p.id)).map(p => ({...p, members: membersOf(p.id), wait: waitingOf(p.id).filter(s => s !== sid)}))
+    .filter(p => (p.members.length || p.isNew || p.id === home || p.wait.length) && !(state[p.id] && state[p.id].merge_into))
+    .map(p => ({...p, score: likeness(sid, p.members.length ? p.members : p.wait) + (p.family === it.fam ? 0.08 : 0)}))
+    .sort((a, b) => (pre ? (b.id === home) - (a.id === home) : 0) || b.score - a.score || a.id.localeCompare(b.id));   // a question tile: its own pile first
+  // A tap anywhere on a card places the sign (owner, 9 Oct 2026: "If I click on it once I'm taken into it" -- a tap on the pictures,
+  // most of the card, opened a DIFFERENT tile of that pile with its own "keep" button). On a finger the pictures are part of the card:
+  // a tap places the sign, a long hold lifts that one picture to move it. "View pile" is the one control that opens the pile; with a
+  // mouse a click on a picture still opens it too.
+  ps.forEach(p => { const own = p.id === home, c = document.createElement('button'); c.type = 'button'; c.className = 'card' + (own ? (pre ? ' cur' : ' home') : ''); c.dataset.pile = p.id;
+    const hd = document.createElement('span'); hd.className = 'chead';
     const h = document.createElement('span'); h.className = 'cid'; h.textContent = p.id;
-    const n = document.createElement('span'); n.className = 'cnt'; n.textContent = p.members.length + ' tiles' + (p.id === homeOf[sid] ? ' · where it came from' : p.isNew ? ' · new pile' : '');
+    const smpl = p.members.length ? p.members : p.wait;
+    const vw = document.createElement('span'); vw.className = 'vw'; vw.textContent = 'View pile'; vw.setAttribute('role', 'button'); vw.tabIndex = 0;
+    vw.title = 'Look at pile ' + p.id + ' larger, one tile at a time (places nothing)'; vw.setAttribute('aria-label', 'View pile ' + p.id + ' (places nothing)');
+    const view = e => { e.preventDefault(); e.stopPropagation(); if (smpl.length) showCtx(smpl[0], p.id, false, p.members.length ? undefined : p.wait.slice()); };
+    vw.addEventListener('click', view); vw.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') view(e); });
+    vw.addEventListener('pointerdown', e => e.stopPropagation());
+    hd.append(h); if (smpl.length) hd.append(vw);
+    const n = document.createElement('span'); n.className = 'cnt'; n.textContent = p.members.length + ' tiles' + (p.wait.length ? ' (+' + p.wait.length + ' waiting here)' : '') +
+      (own ? (pre ? ' · its pile now' : ' · where it came from') : p.isNew ? ' · new pile' : '');
     const smp = document.createElement('span'); smp.className = 'smp';
-    p.members.slice().sort((a, b) => (itemBySid[b].r ? 1 : 0) - (itemBySid[a].r ? 1 : 0) || (itemBySid[a].d || 0) - (itemBySid[b].d || 0)).slice(0, 6).forEach(m => { const im = document.createElement('img'); im.alt = 'Look at pile ' + p.id; im.title = 'Open pile ' + p.id + ' to look at it'; im.src = imgSrc(m); im.draggable = false;
-      im.onclick = e => { e.preventDefault(); e.stopPropagation(); showCtx(m, p.id); }; picDrag(im, m); smp.append(im); });
-    const put = document.createElement('span'); put.className = 'put'; put.textContent = 'Tap here to put the sign in ' + p.id;
+    smpl.slice().sort((a, b) => (itemBySid[b].r ? 1 : 0) - (itemBySid[a].r ? 1 : 0) || (itemBySid[a].d || 0) - (itemBySid[b].d || 0)).slice(0, 6).forEach(m => { const im = document.createElement('img'); im.src = imgSrc(m); im.draggable = false;
+      if (COARSE){ im.alt = ''; }   // part of the card: the tap goes on to the card and places the sign
+      else { im.alt = 'Look at pile ' + p.id; im.title = 'Open pile ' + p.id + ' to look at it'; im.onclick = e => { e.preventDefault(); e.stopPropagation(); showCtx(m, p.id); }; }
+      picDrag(im, m); smp.append(im); });
+    const put = document.createElement('span'); put.className = 'put'; put.textContent = own && pre ? 'It was right: tap here to keep it in ' + p.id : 'Tap here to put the sign in ' + p.id;
     h.title = 'Drag this name onto another pile to merge the whole pile into it'; h.classList.add('grab'); cardDrag(h, p.id);
-    c.append(h, n, smp, put); c.setAttribute('aria-label', 'Put the sign in pile ' + p.id + ' (' + p.members.length + ' tiles)');
+    c.append(hd, n, smp, put); c.setAttribute('aria-label', (own && pre ? 'It was right: keep the sign in pile ' : 'Put the sign in pile ') + p.id + ' (' + p.members.length + ' tiles)');
     c.onclick = () => place(p.id);
     cards.append(c); });
 }
-// drag a small picture from one pile card onto another: moves that tile (mouse: just drag; touch: press 1/4 s, then drag)
+// phone: "more ▾" under a question folded to three lines, so it is plain that the rest is there
+function qMore(){ const q = $('s2Q'), b = $('s2QMore'); if (!PHONE || q.hidden){ b.hidden = true; return; }
+  const open = q.classList.contains('open'); b.hidden = !open && q.scrollHeight <= q.clientHeight + 1;
+  b.textContent = open ? 'less ▴' : 'more ▾'; b.setAttribute('aria-expanded', open); }
+// a small picture on a step-2 pile card. Mouse: drag it onto another card to move that one tile; a click opens the pile. Finger
+// (template 2026-10-09.1; owner, 9 Oct 2026, "If I hold on this I can move the piece. If I click on it once I'm taken into it",
+// and his gesture rule R05, a hold opens the sign large): a tap is a tap on the card (it places the sign), a hold opens that tile
+// large in its pile; a finger never drags a sample tile away by mistake.
 // drag a pile card by its name onto another card: the whole pile is the same sign (state.merge_into, the same record as
 // step 1's 'Same sign as...'); owner, 4 Oct 2026. Mouse: just drag; touch: press 1/4 s, then drag. One Undo in the message line.
 function cardDrag(h, pid){
@@ -820,33 +1000,41 @@ function mergePile(from, to){
 function picDrag(im, sid){
   let d = null;
   const cardAt = (x, y) => { const e = document.elementFromPoint(x, y); return e && e.closest ? e.closest('.card') : null; };
-  const start = () => { d.on = true; clearTimeout(d.t); try { im.setPointerCapture(d.id); } catch (er) {}
+  const start = () => { d.on = true; try { im.setPointerCapture(d.id); } catch (er) {}
     const g = document.createElement('img'); g.className = 'ghost'; g.src = imgSrc(sid); document.body.append(g); d.ghost = g; move(); d.raf = requestAnimationFrame(loop); };
   const move = () => { if (d.ghost){ d.ghost.style.left = (d.x - 36) + 'px'; d.ghost.style.top = (d.y - 36) + 'px'; }
     const c = cardAt(d.x, d.y); if (c !== d.over){ if (d.over) d.over.classList.remove('over'); if (c && c.dataset.pile !== pileOf(sid)) c.classList.add('over'); d.over = c; } };
   const loop = () => { if (!d) return; const top = barBottom() + 24, bot = window.innerHeight - 40;
     if (d.y < top) window.scrollBy(0, -edgeStep(top - d.y, 24)); else if (d.y > bot) window.scrollBy(0, edgeStep(d.y - bot, 24)); move(); d.raf = requestAnimationFrame(loop); };
-  im.addEventListener('pointerdown', e => { if (e.button > 0) return; d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, id: e.pointerId, over: null, ghost: null, raf: 0, mouse: e.pointerType === 'mouse', t: 0};
-    if (!d.mouse){ const dd = d; d.t = setTimeout(() => { if (d === dd && !d.on) start(); }, 250); } });
-  im.addEventListener('pointermove', e => { if (!d) return; d.x = e.clientX; d.y = e.clientY;
-    if (!d.on){ const far = Math.hypot(d.x - d.sx, d.y - d.sy) > 8; if (far){ if (d.mouse) start(); else { clearTimeout(d.t); d = null; } } return; } e.preventDefault(); });
-  im.addEventListener('touchmove', e => { if (d && d.on) e.preventDefault(); }, {passive: false});
-  const end = (e, drop) => { if (!d) return; const dd = d; d = null; clearTimeout(dd.t); if (!dd.on) return; cancelAnimationFrame(dd.raf); swallowClick = true;
+  let held = null;   // finger: the hold timer
+  const unhold = () => { if (held){ clearTimeout(held); held = null; } };
+  im.addEventListener('pointerdown', e => { if (e.button > 0) return;
+    if (e.pointerType !== 'mouse'){ unhold(); const x0 = e.clientX, y0 = e.clientY; im._p0 = [x0, y0];
+      held = setTimeout(() => { held = null; swallowClick = true; showCtx(sid, pileOf(sid)); }, 500); return; }   // the lifted finger presses nothing
+    d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, id: e.pointerId, over: null, ghost: null, raf: 0}; });
+  im.addEventListener('pointermove', e => { if (held && im._p0 && Math.hypot(e.clientX - im._p0[0], e.clientY - im._p0[1]) > 10) unhold();   // a scroll, not a hold
+    if (!d) return; d.x = e.clientX; d.y = e.clientY;
+    if (!d.on){ if (Math.hypot(d.x - d.sx, d.y - d.sy) > 8) start(); return; } e.preventDefault(); });
+  const end = (e, drop) => { unhold(); if (!d) return; const dd = d; d = null; if (!dd.on) return; cancelAnimationFrame(dd.raf); swallowClick = true;
     if (dd.ghost) dd.ghost.remove(); if (dd.over) dd.over.classList.remove('over');
     const c = drop && cardAt(e.clientX, e.clientY); if (!c || c.dataset.pile === pileOf(sid)) return; const to = c.dataset.pile;
     remember([sid]); setDest(sid, to); $('s2Msg').textContent = 'Moved ' + sid + ' to pile ' + to + '.'; render(); offerCluster([sid], to); };
-  im.addEventListener('pointerup', e => end(e, true)); im.addEventListener('pointercancel', e => end(e, false));
+  im.addEventListener('pointerup', e => end(e, true)); im.addEventListener('pointercancel', e => end(e, false)); im.addEventListener('pointerleave', () => unhold());
   im.addEventListener('contextmenu', e => e.preventDefault());
 }
 function place(to){
   const sid = s2Cur; if (!sid) return;
   const L = outList(), i = L.indexOf(sid);
-  remember([sid]); setDest(sid, to);
+  const how = settle(sid, to);
   const L2 = outList(); s2Cur = L2[Math.min(i, L2.length - 1)] || null;
-  $('s2Msg').textContent = 'Put ' + sid + (to === 'ASIDE' ? ' aside' : to === 'BAD-CUT' ? ' with the bad cuts' : to === 'NOT-LETTER' ? ' with the not-letters' : ' in pile ' + to) + '.' + (s2Cur ? ' Next one:' : '');
+  $('s2Msg').textContent = (how === 'kept' ? 'Kept ' + sid + ' in pile ' + to + ' (it was right)' :
+    'Put ' + sid + (to === 'ASIDE' ? ' aside' : to === 'BAD-CUT' ? ' with the bad cuts' : to === 'NOT-LETTER' ? ' with the not-letters' : ' in pile ' + to)) + '.';
   render(); offerCluster([sid], to);
+  // the message (and any cluster offer, which names this sign) sits above the next sign, never between the next sign and its cards
+  if (PHONE && step === 2) s2Top();   // phone: the message and the next sign with its line in view again, not the card just tapped
 }
 $('s2New').onclick = () => { if (s2Cur) place(makePile(homeOf[s2Cur])); };
+$('s2Q').onclick = $('s2QMore').onclick = () => { $('s2Q').classList.toggle('open'); qMore(); };
 $('s2Mark').onclick = () => { ensureSpecial('NOT-LETTER'); place('NOT-LETTER'); };
 $('s2Bad').onclick = () => { ensureSpecial('BAD-CUT'); place('BAD-CUT'); };
 $('s2Aside').onclick = () => place('ASIDE');
@@ -870,7 +1058,7 @@ $('s2Next').onclick = () => { const L = outList(), i = L.indexOf(s2Cur); if (i <
     if (drag.ghost){ drag.ghost.style.left = (drag.x - 36) + 'px'; drag.ghost.style.top = (drag.y - 36) + 'px'; } });
   const end = (e, drop) => { if (!drag) return; const d = drag; drag = null; cancelAnimationFrame(d.raf);
     if (d.ghost) d.ghost.remove(); if (d.over) d.over.classList.remove('over');
-    if (!d.moved){ if (drop && s2Cur){ swallowClick = true; } if (drop && s2Cur) showCtx(s2Cur, homeOf[s2Cur], false, outList(), 'taken out'); return; }   // a tap on the big sign: the larger view
+    if (!d.moved){ if (drop && s2Cur){ swallowClick = true; } if (drop && s2Cur) showCtx(s2Cur, homeOf[s2Cur], false, outList(), 'waiting to be placed'); return; }   // a tap on the big sign: the larger view
     const c = drop && cardAt(e.clientX, e.clientY); if (c) place(c.dataset.pile); };
   tile.addEventListener('pointerup', e => end(e, true)); tile.addEventListener('pointercancel', e => end(e, false));
   tile.addEventListener('contextmenu', e => e.preventDefault());
@@ -887,7 +1075,8 @@ function undo(){
   if (last.cluster){ if (last.prevDec) clusterDec[last.cluster] = last.prevDec; else delete clusterDec[last.cluster]; saveCluster(last.cluster); }
   (last.checks || []).forEach(([sid, prev]) => { if (prev) checked[sid] = prev; else delete checked[sid]; saveCheck(sid); });
   if (last.recut){ const [sid, prev] = last.recut; setRecut(sid, prev); saveRecut(sid); }
-  if (last.length === 1 && moves[last[0][0]] === 'OUT') s2Cur = last[0][0];   // step 2: the undone sign is shown again
+  if (last.length === 1 && where(last[0][0]) === 'OUT') s2Cur = last[0][0];   // step 2: the undone sign is shown again
+  if (last.checks && last.checks.length === 1 && where(last.checks[0][0]) === 'OUT') s2Cur = last.checks[0][0];   // an undone keep of a question tile: back in the tray
   updateUndo();
   note_(last.recut ? 'Undid the fixed cut of ' + last.recut[0] + '.' : last.checks ? 'Undid "keep" for ' + last.checks[0][0] : 'Undid the last step (' + last.length + (last.length === 1 ? ' tile)' : ' tiles)'));
   if (step === 2) $('s2Msg').textContent = 'Undid the last step.';
@@ -902,7 +1091,7 @@ let offerState = null;
 function hideOffer(){ const o = $('offer'); o.hidden = true; offerState = null; o.classList.remove('inbox'); document.querySelector('.wrap').append(o); }
 // inside the open dialog or the step-2 panel the offer sits in the flow (as a fixed bar it covered buttons, Close included: Din f.23r)
 function placeOffer(){ const o = $('offer');
-  if (!$('ctx').hidden){ o.classList.add('inbox'); $('ctxMsg').after(o); } else if (step === 2){ o.classList.add('inbox'); $('s2Msg').after(o); } }
+  if (!$('ctx').hidden){ o.classList.add('inbox'); $('ctxMsg').after(o); } else if (step === 2){ o.classList.add('inbox'); $('s2Note').append(o); } }
 function offerCluster(sids, to){
   hideOffer();
   if (to === 'ASIDE' || to === 'OUT' || SPECIAL.has(to) || !sids.length) return;
@@ -913,8 +1102,13 @@ function offerCluster(sids, to){
   if (!rest.length) return;
   offerState = {c, to, sids, rest};
   const prov = DATA.clusterSource === 'provisional';
-  $('offerT').textContent = 'Apply to all ' + (clusterMembers[c].length) + ' in this ' + (prov ? 'provisional shape group' : 'atlas cluster') +
-    ' (' + c + ')? ' + rest.length + ' more tile' + (rest.length > 1 ? 's' : '') + ' would move to ' + to + '.';
+  // the offer names the sign it is about and shows it: after a step-2 placement the page has already moved on to the next sign, and
+  // "Apply to all ... Just this tile" read as being about the sign on screen (iPhone check, 9 Oct 2026)
+  const ot = $('offerT'), one = sids.length === 1, n = rest.length; ot.textContent = '';
+  const subj = document.createElement('span'); subj.className = 't subj'; subj.title = sids[0]; const sim = document.createElement('img'); sim.alt = sids[0]; sim.src = imgSrc(sids[0]); subj.append(sim);
+  ot.append((one ? 'The sign you just put in ' + to + ' ' : 'The ' + sids.length + ' tiles you just put in ' + to + ' '), subj,
+    ' has ' + n + ' look-alike' + (n > 1 ? 's' : '') + ' in its ' + (prov ? 'shape group' : 'atlas cluster') + ' ' + c + '. Move ' + (n > 1 ? 'them' : 'it') + ' to ' + to + ' too?');
+  $('offerYes').textContent = 'Yes, move ' + (n > 1 ? n + ' more' : 'it too'); $('offerNo').textContent = one ? 'No, only that one' : 'No, only those';
   const w = $('offerTiles'); w.textContent = '';
   rest.slice(0, 12).forEach(s => { const b = document.createElement('span'); b.className = 't'; const im = document.createElement('img'); im.alt = s; im.src = imgSrc(s); b.append(im); w.append(b); });
   if (rest.length > 12) w.append('+' + (rest.length - 12));
@@ -930,8 +1124,10 @@ function applyCluster(){
   render();
   if (!$('ctx').hidden) showCtx(ctxSid, pileOf(ctxSid), true);
 }
-$('offerYes').onclick = applyCluster;
-$('offerNo').onclick = hideOffer;
+// phone, step 2: once the offer about the sign just placed is answered, the next sign and its line come back into view
+const offerDone = () => { if (PHONE && step === 2 && $('ctx').hidden) s2Top(); };
+$('offerYes').onclick = () => { applyCluster(); offerDone(); };
+$('offerNo').onclick = () => { hideOffer(); offerDone(); };
 
 // Saving. Each document path ('m/<sid>', 'p/<pile>', ...) has one writer that reads the CURRENT state when it runs, and
 // at most one write per path is in flight (the db contract: one write at a time per document). Writes made before
@@ -1065,6 +1261,13 @@ function drawLine(sid, c, z, alive){
 }
 // phone (owner, 8 Oct 2026, Armstrong on a phone: the line under the tile was a sliver): start the larger view closer in
 var PHONE = window.matchMedia && matchMedia('(max-width:640px), (max-height:500px)').matches, COARSE = window.matchMedia && matchMedia('(pointer:coarse)').matches;
+// phone, step 2 (iPhone check, 9 Oct 2026: on a 320 x 568 screen the pinned bar and sign header took 61% of the height, 79% with the
+// question open, and no whole pile card ever fitted below them): only the sign and one line ("1 of 12 · k05?") stay pinned; the
+// title, the position, the question and Previous / Skip move out of the pinned header, below the line strip and the answer buttons
+// (between them they pushed the next sign's strip, and "It was right", below the fold after each answer), and scroll away
+if (PHONE){ document.body.classList.add('s2pin'); $('s2Acts').after($('s2Head')); }
+// with the questions in the tray no sign in a pile carries a "?" any more: the step-1 line says where they are
+if (TRAY_ON && Object.keys(trayOrder).length) $('hintQ').textContent = 'Questions wait in step 2 · Place.';
 if (PHONE){ $('ctxZ').value = innerWidth > 640 ? 3 : 5; $('fixHelp').open = false; }
 function drawCtx(){ const sid = ctxSid, f = usePage(sid) ? drawRegion : drawLine; f(sid, $('ctxC'), +$('ctxZ').value, () => sid === ctxSid && !$('ctx').hidden); }
 
@@ -1296,7 +1499,8 @@ $('fixSave').onclick = () => {
   setRecut(sid, same(q, rectQuad(o)) && !mk.length ? null : {x: b[0], y: b[1], w: b[2], h: b[3], quad: q, mask: mk, old: o.slice(), at: stamp()}); saveRecut(sid);
   const m = $('ctxMsg'); m.textContent = (recuts[sid] ? 'Saved the new cut of ' + sid + '.' : 'Back to the first cut of ' + sid + '.') + ' It stays in its pile; Undo takes it back. ';
   if (moves[sid] === 'BAD-CUT'){ const u = document.createElement('button'); u.type = 'button'; u.id = 'ctxPutBack'; u.textContent = 'Put it back in ' + homeOf[sid];
-    u.onclick = () => { remember([sid]); setDest(sid, homeOf[sid]); render(); showCtx(sid, homeOf[sid], true); $('ctxMsg').textContent = 'Put ' + sid + ' back in pile ' + homeOf[sid] + '.'; };
+    u.onclick = () => { remember([sid]); setDest(sid, homeOf[sid]); render(); showCtx(sid, homeOf[sid], true);   // a move, not an answer: a question tile waits again
+      $('ctxMsg').textContent = 'Put ' + sid + ' back in pile ' + homeOf[sid] + '.' + (preTrayed(sid) ? ' Its question is still open: it waits in step 2.' : ''); };
     m.append(u); }
   showCtx(sid, pileOf(sid), true);
 };
@@ -1353,17 +1557,17 @@ function showCtx(sid, pid, keepList, list, listName){
   const i = ctxList.indexOf(sid);
   $('ctxPos').textContent = (i + 1) + ' of ' + ctxList.length + ' ' + ctxListName;
   $('ctxPrev').disabled = i <= 0; $('ctxNext').disabled = i >= ctxList.length - 1;
-  const cur = moves[sid] || homeOf[sid];
+  const cur = moves[sid] || homeOf[sid], pre = preTrayed(sid);   // pre: a question tile waiting in step 2 (no move yet; it is in its own pile)
   const dest = $('ctxDest'); dest.length = 1;
   allPiles().filter(q => q.id !== cur).sort((a, b) => ((b.isNew && !SPECIAL.has(b.id)) - (a.isNew && !SPECIAL.has(a.id))) || (a.family === it.fam ? 0 : 1) - (b.family === it.fam ? 0 : 1) || a.id.localeCompare(b.id))
     .forEach(q => { const o = document.createElement('option'); o.value = q.id; o.textContent = q.id + (q.isNew && !SPECIAL.has(q.id) ? '  (new pile)' : '  (' + q.family + ')'); dest.append(o); });
   $('ctxNewB').title = 'Start a new sign for this tile (named ' + nextPileName(pileOf(sid)) + ')';
-  $('ctxT').textContent = 'Tile ' + sid + (cur === 'ASIDE' ? ' (set aside from pile ' + homeOf[sid] + ')' : cur === 'OUT' ? ' (taken out of pile ' + homeOf[sid] + ')' :
+  $('ctxT').textContent = 'Tile ' + sid + (pre ? ' in pile ' + homeOf[sid] + ' (waiting in step 2 · Place)' : cur === 'ASIDE' ? ' (set aside from pile ' + homeOf[sid] + ')' : cur === 'OUT' ? ' (taken out of pile ' + homeOf[sid] + ')' :
     cur === 'BAD-CUT' ? ' (marked bad cut)' : ' in pile ' + pid);
   const q = $('ctxQ'); q.hidden = !focusQ[sid]; q.textContent = focusQ[sid] ? 'Question: ' + focusQ[sid] : '';
   const kb = $('ctxKeep'); kb.hidden = cur === 'ASIDE' || cur === 'OUT' || SPECIAL.has(cur);
   kb.textContent = checked[sid] && checked[sid] === cur ? '✓ Kept in ' + cur : 'Right pile: keep it in ' + cur;
-  $('ctxOut').hidden = cur === 'OUT';
+  $('ctxOut').hidden = cur === 'OUT' || pre;
   ['ctxDest', 'ctxAside', 'ctxBad', 'ctxNewB'].forEach(k => { $(k).hidden = false; });   // the person's earlier picks (--refs) can be corrected too (owner, 4 Oct 2026)
   $('ctxS').textContent = 'Cryptogram page ' + it.p + (it.c ? ', cluster ' + it.c + ' (' + clusterMembers[it.c].length + ' tiles)' : '') + (usePage(sid) ? '. The brackets mark this tile on the page as written, with the lines above and below; Zoom shows more or fewer lines.' : '. The brackets mark this tile; its neighbours on the line are shown either side.') + (it.r ? ' You sorted this one earlier: it is an example of the pile and stays where it is.' : '');
   updateUndo(); fixUi(!!fix); viewUi(); setTimeout(ctxDiag, 400);
@@ -1390,8 +1594,7 @@ function ctxMove(to){
 }
 function ctxKeep(){
   const sid = ctxSid, cur = moves[sid] || homeOf[sid];
-  const e = []; e.checks = [[sid, checked[sid] || null]]; history.push(e); updateUndo();
-  checked[sid] = cur; saveCheck(sid); hideOffer();
+  keepAt(sid, cur);
   $('ctxMsg').textContent = 'Kept ' + sid + ' in ' + cur + '. Showing the next tile.';
   render(); ctxAdvance(sid);
 }
@@ -1442,48 +1645,94 @@ $('foot').textContent = Object.keys(itemBySid).length + ' tiles, ' + (DATA.blind
   (DATA.skipped ? DATA.skipped + ' tiles from a line outside the page crops are not shown.' : '');
 (function(){ const F = DATA.focus || []; if (!F.length) return;
   const box = $('focus'); box.hidden = false;
-  $('focusNote').textContent = (DATA.focusNote || '') + (DATA.focusNote ? ' ' : '') + 'Tap one to see it on its line. In the piles below these signs have a double frame and a "?".';
+  // owner, 9 Oct 2026 ("If I click on it once I'm taken into it"): a tap here only shows the sign large; the hint says so plainly.
+  // With the questions in the tray, the instructions above the tiles are one line pointing at step 2 (waitLine) and this hint.
+  const tap = TRAY_ON ? $('focusTap') : $('focusNote');
+  if (TRAY_ON) tap.hidden = false;
+  tap.textContent = (DATA.focusNote || '') + (DATA.focusNote ? ' ' : '') + (TRAY_ON ? 'Tap a sign here to see it large on its line; nothing moves.' :
+    'Tap one to see it on its line. In the piles below these signs have a double frame and a "?".');
   const wrap = $('focusTiles');
   const missing = F.filter(f => !itemBySid[f.sid]).map(f => f.sid);
-  if (missing.length) $('focusNote').textContent += ' ' + missing.length +
+  if (missing.length) tap.textContent += ' ' + missing.length +
     (missing.length === 1 ? ' listed sign has' : ' listed signs have') + ' no tile on this page and is not shown: ' + missing.join(', ') + '.';
   const ids = [...new Set(F.map(x => x.sid).filter(x => itemBySid[x]))];
   F.forEach(f => { const it = itemBySid[f.sid]; if (!it || wrap.querySelector('[data-sid="' + CSS.escape(f.sid) + '"]')) return;
     const d = document.createElement('div'); d.style.display = 'grid'; d.style.gap = '2px'; d.dataset.sid = f.sid;
-    const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.title = f.sid + ': ' + f.q;
+    const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.title = f.sid + ': ' + f.q + ' (tap: see it large on its line)';
+    b.setAttribute('aria-label', f.sid + ': tap to see it large on its line');
     const im = document.createElement('img'); im.alt = f.sid; im.src = imgSrc(f.sid); im.draggable = false; b.append(im);
     b.onclick = () => showCtx(f.sid, pileOf(f.sid), false, ids, 'in "Check these first"');
     b.addEventListener('contextmenu', e => e.preventDefault());
-    // short caption: the question itself (the part after the last ';', without a [bracketed note]); the full text is in the dialog
-    const short = f.q.replace(/\s*\[[^\]]*\]/g, '').split('; ').pop().trim() || f.q;
+    // short caption: the question itself (the part after the last ';', without a [bracketed note]); the full text is in the dialog.
+    // Too long for three lines under a tile (Harley 287: twelve captions all read "Odd one out of shape pile kNN (NN tiles…"):
+    // the question clause if it is short, else the pile it is in now with a "?" ("k05?"), as the "Most useful first" box does
+    const bare = f.q.replace(/\s*\[[^\]]*\]/g, ''); let short = bare.split('; ').pop().trim() || f.q;
+    if (short.length > 40){ const a = qParts(bare)[0]; short = a.length <= 40 && /\?$/.test(a) ? a : homeOf[f.sid] + '?'; }
     const c = document.createElement('span'); c.className = 'fcap'; c.textContent = short;
     const ok = document.createElement('span'); ok.className = 'fdone';
     d.append(b, c, ok); wrap.append(d); });
 })();
-function markFocusDone(){ document.querySelectorAll('#focusTiles > div').forEach(d => { const sid = d.dataset.sid, to = moves[sid];
-  const msg = to === 'ASIDE' ? 'set aside' : to === 'OUT' ? 'taken out' : to === 'BAD-CUT' ? 'bad cut' : to === 'NOT-LETTER' ? 'not a letter' : to ? 'now ' + to : checked[sid] ? 'kept in ' + checked[sid] : '';
-  d.querySelector('.t').classList.toggle('done', !!msg && to !== 'OUT'); d.querySelector('.fdone').textContent = msg ? (to === 'OUT' ? '→ ' : '✓ ') + msg : ''; }); }
+// what became of a question tile, under it in the "Check these first" and "Most useful first" boxes (arrow: waiting; tick: answered)
+function doneMsg(sid){ const to = moves[sid];
+  return preTrayed(sid) ? 'waiting in step 2' : to === 'ASIDE' ? 'set aside' : to === 'OUT' ? 'taken out' : to === 'BAD-CUT' ? 'bad cut' : to === 'NOT-LETTER' ? 'not a letter' :
+    to ? 'now ' + to : checked[sid] ? 'kept in ' + checked[sid] : ''; }
+function markDone(d){ const sid = d.dataset.sid, to = moves[sid], pre = preTrayed(sid), msg = doneMsg(sid), fd = d.querySelector('.fdone');
+  fd.classList.toggle('wait', to === 'OUT' || pre); fd.textContent = msg ? (to === 'OUT' || pre ? '→ ' : '✓ ') + msg : ''; return msg; }
+function markFocusDone(){ document.querySelectorAll('#focusTiles > div').forEach(d => { const msg = markDone(d), sid = d.dataset.sid;
+  d.querySelector('.t').classList.toggle('done', !!msg && moves[sid] !== 'OUT' && !preTrayed(sid)); });
+  waitLine(); }
+// Step 1, with the questions in the tray: each box's instructions are one line pointing at step 2 (owner, 9 Oct 2026), counting its
+// own tiles; until the saved answers are in it says so instead of a count that is about to change
+function waitLine(){ if (!TRAY_ON) return;
+  [['focus', 'focusNote', 'focusTiles', 'waitGo'], ['rank', 'rankNote', 'rankTiles', 'waitGoR']].forEach(([box, noteId, tilesId, goId]) => { if ($(box).hidden) return;
+    const sids = [...document.querySelectorAll('#' + tilesId + ' > div')].map(d => d.dataset.sid).filter(s => trayOrder[s]);
+    const n = sids.filter(preTrayed).length, N = sids.length, el = $(noteId);
+    const key = n + '/' + N + '/' + ready; if (el.dataset.wait === key) return; el.dataset.wait = key; el.textContent = '';
+    if (!ready) el.append('Loading your earlier answers…');
+    else if (n){ const go = document.createElement('button'); go.type = 'button'; go.className = 'go'; go.id = goId; go.textContent = 'step 2 · Place'; go.onclick = () => setStep(2);
+      el.append('These ' + n + ' sign' + (n > 1 ? 's are' : ' is') + ' waiting in ', go, ' — open it to answer them one by one.'); }
+    else el.append('All ' + N + ' of these sign' + (N > 1 ? 's are' : ' is') + ' answered: each one below says where it went.');
+    if (box === 'rank' && DATA.rankNote) el.append(' (' + DATA.rankNote + '.)'); }); }
 (function(){ const R = DATA.rank || []; if (!R.length) return;
+  // with the questions in the tray, a "Most useful first" box holding only tiles that are also in "Check these first" would show the
+  // same signs a third time (Harley 287: the same 12 in the rank box, the focus box and the tray): one box is enough
+  const fs = new Set((DATA.focus || []).map(f => f.sid).filter(x => itemBySid[x]));
+  if (TRAY_ON && fs.size && R.every(f => !itemBySid[f.sid] || fs.has(f.sid))) return;
   const box = $('rank'); box.hidden = false;
   $('rankNote').textContent = (DATA.rankNote || '') + '. Answer these and most of the reading is settled; each one may offer to move its whole cluster.';
   const wrap = $('rankTiles');
   R.forEach((f, n) => { const it = itemBySid[f.sid]; if (!it) return;
     const d = document.createElement('div'); d.style.display = 'grid'; d.style.gap = '2px'; d.dataset.sid = f.sid;
-    const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.title = f.sid + ': ' + (f.why || '') + (f.detail ? ' ' + f.detail : '');
+    const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.title = f.sid + ': ' + (f.why || '') + (f.detail ? ' ' + f.detail : '') + ' (tap: see it large on its line)';
     const im = document.createElement('img'); im.alt = f.sid; im.src = imgSrc(f.sid); im.draggable = false; b.append(im);
     b.onclick = () => showCtx(f.sid, pileOf(f.sid), false, R.map(x => x.sid).filter(x => itemBySid[x]), 'in "Most useful first"');
     const k = document.createElement('span'); k.className = 'rk'; k.textContent = '#' + (n + 1) + (DATA.blind ? '' : ' · ' + (+f.score).toFixed(1));
     const c = document.createElement('span'); c.className = 'fcap'; c.textContent = f.why || (f.alt ? homeOf[f.sid] + ' or ' + f.alt + '?' : '');
-    d.append(b, k, c); wrap.append(d); });
+    const ok = document.createElement('span'); ok.className = 'fdone';
+    d.append(b, k, c, ok); wrap.append(d); });
 })();
-function markRankDone(){ document.querySelectorAll('#rankTiles > div').forEach(d => { const sid = d.dataset.sid;
-  const done = (!!moves[sid] && moves[sid] !== 'OUT') || !!checked[sid] || !!statusOf(homeOf[sid]); d.querySelector('.t').classList.toggle('done', done); }); }
+function markRankDone(){ document.querySelectorAll('#rankTiles > div').forEach(d => { const sid = d.dataset.sid; if (TRAY_ON) markDone(d);
+  const done = !preTrayed(sid) && ((!!moves[sid] && moves[sid] !== 'OUT') || !!checked[sid] || !!statusOf(homeOf[sid])); d.querySelector('.t').classList.toggle('done', done); }); }
 const render0 = render; render = function(){ render0(); markRankDone(); markFocusDone(); };
 if (DATA.refImg){ $('refBox').hidden = false; $('refImg').src = DATA.refImg; $('refCap').textContent = DATA.refCaption || 'Reference sheet'; }
 render();
 try { const y = +localStorage.getItem('sorterY'); if (y > 0) window.scrollTo(0, y); } catch (e) {}   // reopen where the person left off (per browser)
 const keepY = () => { try { if (step === 1 && $('ctx').hidden) localStorage.setItem('sorterY', String(Math.round(scrollY))); } catch (e) {} };
 window.addEventListener('pagehide', keepY); document.addEventListener('visibilitychange', () => { if (document.hidden) keepY(); });
+// Landing (template 2026-10-09.1): with question tiles on the page it opens on step 2 at once, saying "Loading your earlier
+// answers…" until they are in (`ready`), then tile 1 of what still waits. If nothing waits and the person has not touched the page
+// yet, it goes back to step 1. After the first touch the page never changes step on its own.
+let autoLanded = false, userTouched = false;
+['pointerdown', 'keydown'].forEach(t => document.addEventListener(t, () => { userTouched = true; }, true));
+function landOnTray(){ if (!TRAY_ON || userTouched || !Object.keys(trayOrder).length) return;
+  const waiting = !ready || outList().some(s => trayOrder[s]);
+  if (waiting && step === 1){ setStep(2); autoLanded = true; }
+  else if (!waiting && autoLanded && step === 2){ setStep(1); autoLanded = false; }
+  else if (waiting && step === 2 && ready && PHONE) s2Top(); }   // the sign, now shown, right under the bar
+// the saved answers are in: questions start waiting, step 2 shows the first one still open
+function setReady(){ if (ready) return; ready = true; render(); if (!$('ctx').hidden && ctxSid) showCtx(ctxSid, pileOf(ctxSid), true); landOnTray(); }
+landOnTray();
+try { document.fonts && document.fonts.ready.then(() => { setBarVars(); if (step === 2 && !userTouched && PHONE) s2Top(); }); } catch (e) {}
 (function(){ const v = (document.querySelector('meta[name="sign-sorter-template"]') || {}).content || '?';
   const p = document.createElement('p'); p.className = 'hint'; p.style.margin = '2px 0 0'; p.textContent = 'Page build ' + v; document.querySelector('h1').after(p); })();
 
@@ -1500,25 +1749,28 @@ updateUndo();
     touched.forEach(p => { const [k, id] = [p.slice(0, 1), p.slice(2)];
       const pair = {m: [moves, mine.moves], p: [state, mine.state], n: [newPiles, mine.newPiles], c: [clusterDec, mine.clusterDec], k: [checked, mine.checked], r: [recuts, mine.recuts]}[k];
       if (!pair) return; if (id in pair[1]) pair[0][id] = pair[1][id]; else delete pair[0][id]; });
-    dbMode = 'local'; touched.forEach(p => { delete writers[p]; delete inflight[p]; }); persistLocal(); status(); render();
+    dbMode = 'local'; touched.forEach(p => { delete writers[p]; delete inflight[p]; }); persistLocal(); status(); setReady();
     Object.keys(recuts).forEach(s => { const r = itemBySid[s] && recutFromDoc({...recuts[s], sid: s}); if (r){ recuts[s] = r; makeRecutImg(s); } else delete recuts[s]; }); return; }
   col = db.collection('piles'); mcol = db.collection('moves'); ncol = db.collection('newpiles'); ccol = db.collection('clusters'); kcol = db.collection('checked'); rcol = db.collection('recuts');
   dbMode = 'db';
   const held = Object.keys(writers);
   el.textContent = 'Connected. Choices save as you go.'; el.className = 'save';
   held.forEach(pump);   // choices made while storage was still connecting
-  const fail = err => { el.textContent = 'Could not load saved choices: ' + (err && err.message || 'unknown error') + '. Reload the page.'; el.className = 'save err'; };
+  const fail = err => { el.textContent = 'Could not load saved choices: ' + (err && err.message || 'unknown error') + '. Reload the page.'; el.className = 'save err';
+    loadErr = (err && err.message) || 'unknown error'; if (step === 2) renderS2(); };
   // A snapshot re-renders only when it changed something, and never overwrites a local change not yet confirmed.
-  const listen = (c, path, apply) => c.onSnapshot(snap => { let changed = false;
+  const first = {};   // the first snapshot of piles, moves and checked: every saved decision is in (`ready`), so the landing step is re-checked
+  const listen = (c, path, apply, name) => c.onSnapshot(snap => { let changed = false;
     snap.docChanges().forEach(ch => { const d = ch.doc.data(); const id = d && path(d); if (!id || inflight[id]) return; if (apply(ch.type, d) !== false) changed = true; });
-    if (changed){ render(); if (!$('ctx').hidden) showCtx(ctxSid, pileOf(ctxSid), true); } }, fail);
+    if (changed){ render(); if (!$('ctx').hidden) showCtx(ctxSid, pileOf(ctxSid), true); }
+    if (name && !first[name]){ first[name] = 1; if (first.piles && first.moves && first.checked) setReady(); } }, fail);
   listen(col, d => d.pile && 'p/' + d.pile, (t, d) => { if (t === 'removed') delete state[d.pile];
-    else state[d.pile] = {verdict: d.verdict || null, merge_into: d.merge_into || null, outliers: Array.isArray(d.outliers) ? d.outliers.slice() : [], note: d.note || ''}; });
+    else state[d.pile] = {verdict: d.verdict || null, merge_into: d.merge_into || null, outliers: Array.isArray(d.outliers) ? d.outliers.slice() : [], note: d.note || ''}; }, 'piles');
   listen(mcol, d => d.sid && itemBySid[d.sid] && 'm/' + d.sid, (t, d) => { if (t === 'removed') delete moves[d.sid];
-    else { moves[d.sid] = d.to; if (d.to === 'OUT') outAt[d.sid] = Date.parse(d.updated) || outAt[d.sid] || 0; } });
+    else { moves[d.sid] = d.to; if (d.to === 'OUT') outAt[d.sid] = Date.parse(d.updated) || outAt[d.sid] || 0; } }, 'moves');
   listen(ncol, d => d.id && 'n/' + d.id, (t, d) => { if (t === 'removed') delete newPiles[d.id]; else newPiles[d.id] = {family: d.family, from: d.from}; });
   listen(ccol, d => d.cluster && 'c/' + d.cluster, (t, d) => { if (t === 'removed') delete clusterDec[d.cluster]; else clusterDec[d.cluster] = {to: d.to, from_sid: d.from_sid, n: d.n}; return false; });
-  listen(kcol, d => d.sid && itemBySid[d.sid] && 'k/' + d.sid, (t, d) => { if (t === 'removed') delete checked[d.sid]; else checked[d.sid] = d.pile; });
+  listen(kcol, d => d.sid && itemBySid[d.sid] && 'k/' + d.sid, (t, d) => { if (t === 'removed') delete checked[d.sid]; else checked[d.sid] = d.pile; }, 'checked');
   listen(rcol, d => d.sid && itemBySid[d.sid] && 'r/' + d.sid, (t, d) => setRecut(d.sid, t === 'removed' ? null : recutFromDoc(d))); 
 })();
 </script>

@@ -5,7 +5,7 @@ const { chromium } = require('playwright'); const mock = require('./mock_db');
   const ctx = await b.newContext({ viewport: { width: 1200, height: 900 } }); await mock.install(ctx); const page = await ctx.newPage();
   const errs = []; page.on('pageerror', e => errs.push(e.message));
   await page.goto('file://' + process.argv[2]); await page.waitForTimeout(1000);
-  await page.locator('.opts summary').click(); await page.click('#ink2');
+  await page.getByText('Display options').click();   // '.opts summary' also matched the reference-sheet box (details.opts) once it existed await page.click('#ink2');
   const x = page.locator('#pile__88_'); const sid = await x.locator('.tiles .t').nth(5).getAttribute('data-sid');
   await mock.hold(page, x.locator('.tiles .t').nth(5));
   const t = await page.textContent('#ctxT'); console.log('ctx open:', await page.isVisible('#ctx'), t);

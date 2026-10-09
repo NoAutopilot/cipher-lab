@@ -32,6 +32,18 @@ with tempfile.TemporaryDirectory() as d:
     check('data carried over unchanged', got and got[0] == {k: v for k, v in data.items() if not k.startswith('_')})
     check('title and lede unescaped once, re-escaped once', got and got[1] == 'Old & Sorter' and got[2] == 'Lede <x>')
     check('new page has Fix the cut', 'Fix the cut' in new)
+    # template 2026-10-09.1: --focus-to-tray is a page option outside DATA, on by default
+    check('default re-render: focus-to-tray on', 'const OPTS = {"focusToTray": true};' in new)
+    rc = rr.main([str(d / 'old.html'), '--out', str(d / 'off.html'), '--no-focus-to-tray'])
+    off = (d / 'off.html').read_text(); got_off = rr.extract(off)
+    check('--no-focus-to-tray: option off, DATA still carried over unchanged', rc == 0 and 'const OPTS = {"focusToTray": false};' in off
+          and got_off and got_off[0] == got[0])
+    rc = rr.main([str(d / 'off.html'), '--out', str(d / 'keep.html')])   # a new-template page re-renders too (its OPTS line is not DATA)
+    check('re-rendering a new-template page with no flag: DATA unchanged, its own option carried over (off stays off)',
+          rc == 0 and rr.extract((d / 'keep.html').read_text())[0] == got[0] and 'const OPTS = {"focusToTray": false};' in (d / 'keep.html').read_text())
+    rc = rr.main([str(d / 'off.html'), '--out', str(d / 'on.html'), '--focus-to-tray'])
+    check('...and the flag still overrides it', rc == 0 and 'const OPTS = {"focusToTray": true};' in (d / 'on.html').read_text())
+    check('page_opts: reads the OPTS line, None for a page without one', rr.page_opts(off) == {'focusToTray': False} and rr.page_opts('<html>') is None)
     (d / 'bad.html').write_text('<html>no data</html>')
     check('page with no DATA line refused (exit 2)', rr.main([str(d / 'bad.html'), '--out', str(d / 'x.html')]) == 2)
 print('ALL PASS' if not fails else f'{fails} FAILED'); sys.exit(1 if fails else 0)
