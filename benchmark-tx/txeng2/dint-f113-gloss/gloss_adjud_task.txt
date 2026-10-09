@@ -1,0 +1,9 @@
+You settle the disagreements between two readers of a period decipherment (small cursive French, 1591) written between the lines of BnF fr.3619 f.113. Use ONLY the files named here; open no other file.
+
+Reading rules and which writing is the gloss of which line: /home/user/cipher-lab/benchmark-tx/txeng2/dint-f113-gloss/gloss_pass_brief_f113.md (ignore its Output section).
+Crops: /home/user/cipher-lab/benchmark-tx/txeng2/dint-f113-gloss/gloss_crops/f113ge_L02.jpg, f113g_L03.jpg, f113g_L05.jpg, f113g_L07.jpg, f113g_L09.jpg. Enlarged copies (PIL 3x LANCZOS) only in /tmp/glossZ/.
+The two readings: /home/user/cipher-lab/benchmark-tx/txeng2/dint-f113-gloss/glossA.tsv and glossB.tsv. Their word-level splits: gloss_splits.tsv in the same folder (line, word_from, A, B).
+
+For each split, look at the writing in the crop and choose A, B, or your own reading if neither fits the ink. Read letter by letter what is written; do not improve the French. Keep "+" for a cipher symbol copied into the gloss or a gap the decipherer left, "?" for each letter that cannot be read. Words separated by single spaces as written.
+
+Write /home/user/cipher-lab/benchmark-tx/txeng2/dint-f113-gloss/gloss.tsv with header line<TAB>text<TAB>conf<TAB>note: one row per line in the order f113e_L02, f113_L03, f113_L05, f113_L07, f113_L09 (conf H/M/L for the line; note = which splits you settled and how). Write no other file, run no git. Reply only with the five lines' text.
