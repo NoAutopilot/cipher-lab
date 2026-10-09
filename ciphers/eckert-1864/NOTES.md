@@ -4108,6 +4108,31 @@ Read so far: E343, E345, E346 audited (E343, E345 N1 by print; E346 N3 D3); all 
 - [x] retry: none needed (one IA 403 on a restricted OR III/4 id, not retried).
 Verdict: keep going: 2 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18f) s.5, ~$1
 
+## FIX-FM16 (9 Oct 2026, account 1, for LANE LEDGER)
+
+Worker FIX-FM16, 21:52-22:0x UTC by `date -u`, offline (git only). Carries AUDIT s.5 of FV-MS18f, FV-MS18g, FV-MS18h into ciphertext.txt through decode.py's existing mechanisms (`plain-at:`, `gloss:`, `<del>/<ins>`, header edits). No key.md row touched; no Leghorn / Legend / Leopard token touched (KEY-CANBY's; its E345 row in HYPOTHESES.md already exists, so none added here).
+
+| Entry | Change | Decoder before -> after |
+|---|---|---|
+| E341 | Stanley plain x3 (`plain-at: stanley#1-3`); header: print page eye-checked (IA leaf 709) | H 19 -> H 16 |
+| E342 | duke plain (`plain-at: duke#1`, Paducah); header: leaf 349 | H 14 -> H 13 |
+| E343 | Laughter = Snicker's, Corkscrew = C. C. Augur as `gloss` C; header: sender Augur, 3 p.m., Sixteenth New York, 300 for the field, Snicker's Gap, printed OR I/43 pt 1 p.918 | H 33 -> H 33, C 2 |
+| E344 | Platations / platation = communications / communication (`gloss` C); note's "ledger omits 'communications'" struck; header: leaf 280 | H 26 -> H 26, C 2 |
+| E345 | hudson = Hood (`gloss` C); header: Sherman at Atlanta (operator Sholes), Hurlbut-row groups M against print Canby (conflict, KEY-CANBY / HYPOTHESES.md), re-enforcing Hood, Mobile, Canby, signer Halleck, printed OR I/39 pt 2 pp.269-270 | H 24 -> H 24, C 1 |
+| E346 | `<del>Hanliff</del><ins>Hauliff</ins>` (image) | H 8 (no change) |
+| E347 | Relay plain (`plain-at: relay#1`); header: W. P. Smith B&O master of transportation (I); Side = nine-row indicator; not located OR I/43 pt 1 pp.695-696 | H 9 -> H 8 |
+| E348 | Wallace plain (`plain-at: wallace#1`); header and note: OR I/37 pt 2 p.133, leaf 139 | H 30 -> H 29 |
+| E349 | header: msg 1 Meigs to Donaldson (Gazette), msg 2 Stanton to Grant (John = Grant, Jolly = Meade C by print; Grant Papers vol. 12, page to fix); Chief [Quartermaster] (Vinton = Quartermaster) | none (header only) |
+| E350 | `<del>Tomama</del><ins>Panama</ins>` (= Cavalry H); Planters plain; header Pleasonton's, Special Inspector of Cavalry | H 22 -> H 22 (Cavalry +1, Concentrate+ers -1) |
+
+Totals over 302 entries: H 5256, C 65, I 25, M 36, S 17, U 10 -> **H 5250, C 70, I 25, M 36, S 17, U 10**.
+
+Decode: `decode.py --write` then `--check` -> "reading.md is current"; `decode_no2.py --check`, `decode_no9.py --check` current, exit 0.
+
+IA-id mapping: `ciphers/eckert-1862/ec18/or_volumes.tsv` is already right (43.1 = `warofrebellion431unit_0`; I/47 pt 2 is the id without `_0`); the wrong label lives only in the cache file name `sources/ia-fulltext/print-check/warofrebellion431unit_djvu.txt.gz` (I/47 pt 2 text), noted in `sources/ia-fulltext/NOTES.md` (9 Oct 2026). MS18-R4's "OR I/43 pt 1-2 cached" is wrong: E343 and E345 are printed (OR I/43 pt 1 p.918; I/39 pt 2 pp.269-270).
+
+Propagation (rule 10): status.json rows for E346, E347, E349, E350 already carried the audits' corrected lines; only E347's completeness/depth_note count was recounted (9 H of 9 -> 8 H of 8, Relay plain). SO prompts PROMPT-chatgpt-e346/e347/e349/e350 already state the corrected readings (Hauliff, Relay House, Panama). E343, E345 have no status row or SO prompt (not N3). E341, E342, E344, E348 are N1: no row.
+
 ## KEY-CANBY (9 Oct 2026, account 1, for LANE LEDGER)
 One key question: does the No. 1 slot p.17 l.5-6 (Leghorn, Legend, Lehigh, Leopard = Maj Gen S. A. Hurlbut, key.md H) mean Hurlbut in the traffic?
 - Page re-read (disk 1600 px + one hdl region at native 2295 px): l.5 "Maj Gen S. A. Hurlbut", l.6 "-do - do - do", one ink hand, no strike, no second

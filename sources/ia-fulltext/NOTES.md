@@ -276,3 +276,7 @@ ciphertext (detector round 4, LANE S, 24 September 2026)" section; summary here.
   for grep (not needed — no survivor passage required it — and not committed).
 
 `editions4.tsv`, `runs4.tsv`, `editions4_passages.tsv` and `editions4_dropped_examples.tsv` committed.
+
+## 11. Cache-name warning (9 Oct 2026, FIX-FM16, from AUDIT FV-MS18f)
+
+`print-check/warofrebellion431unit_djvu.txt.gz` carries the id of the OR I/43 pt 1 sibling but the text of **OR I/47 pt 2** (Jan-Mar 1865). The real I/43 pt 1 id is `warofrebellion431unit_0` (ciphers/eckert-1862/ec18/or_volumes.tsv row 43.1). Any script mapping that file to "43.1" by name returns false negatives.

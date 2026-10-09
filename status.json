@@ -11575,7 +11575,7 @@
       "line": "Read at grade H with War Department Cipher No. 1: on 5 August 1864 W. G. Wood telegraphed W. P. Smith at Baltimore through Sampson that General Grant and one of his staff would go to Monocacy that afternoon, leaving Washington on the 3 p.m. train for the Relay House, where Smith's car was to meet him, and that the General's departure must be kept a profound secret; Grant's visit to Monocacy is in the Official Records, this telegram was not located in print or in the Huntington's full-text search (searched 9 Oct 2026).",
       "gap": "N3 one audit (FV-MS18g); not N4: W. P. Smith / B&O papers, Grant Papers vol. 11 by page (be-api only), Baltimore press, HathiTrust, JSTOR not searched",
       "depth": "D3",
-      "completeness": "9 H of 9 code-word groups (Relay plain; names plain)",
+      "completeness": "8 H of 8 code-word groups (Relay plain; names plain; FIX-FM16 recount from decode.py)",
       "phrases": [
         "Huntington mssEC 18 (obj 10074) p.145, pointer 9811, E347"
       ],
@@ -11585,7 +11585,7 @@
       ],
       "depth_sentence": "On 5 August 1864 the telegraph office arranged in secret for a Baltimore and Ohio car to carry General Grant from the Relay House to Monocacy.",
       "depth_check": "code clause: Juno = Maj Gen U. S. Grant, Shelby/Shelter = General, Imogene = 3 PM, Baptism = Baltimore; external (non-statistical): OR ser. I vol. 43 pt 1 pp.695-696, Grant at Monocacy 5 Aug 1864 8 p.m. and 11.30 p.m.",
-      "depth_note": "9 H of 9 code-word groups (Relay plain; names plain)"
+      "depth_note": "8 H of 8 code-word groups (Relay plain; names plain; FIX-FM16 recount from decode.py)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
