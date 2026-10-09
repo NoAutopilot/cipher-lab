@@ -3934,3 +3934,29 @@ Key extension: none; key.tsv unchanged. Requests: www.archiv.sachsen.de 1 (200);
 reconciliation. No novelty class; status unchanged (partial).
 Next: 0310/0311 (if the dispatch continues; film order 0309 -> 0312) image look for the rest of the 16 Sept letter (~$1.5); 259 = Ilgen still
 wants a second blind or printed witness; the y-glyph (4|9) census also covers 0309's four settled slots (~$2).
+
+## MANT-YCEN (9 Oct 2026, 18:45-18:5x UTC by date -u, LANE FAMILY-A2k account 2): y-glyph 4|9 census, disk only
+
+Brief: .claude/briefs/runs/2026-10-09-ytbiz-family-1815-jobs.md "MANT-YCEN". Prior work: check 1 by hand (grep y-shaped/y-glyph/y-tail in
+this folder): the census was named as a next step by MANT-EYE63R, V-MANTC, MANT-FIX, MANT-UNG, MANT-XTR, V-MANTH and MANT-0490 and never run;
+no network, 0 requests to any host; no vision call. Rule pre-registered first: PREREG-MANT-YCEN.md (commit 27d8725e6, on origin/main before
+any score). Script: `python3 ycen/ycen.py [--check]` writes ycen/census.tsv (54 y-noted tokens on 21 leaves of 694/08-09, each with the
+code and key value as 4 and as 9), ycen/known.tsv and ycen/score.txt.
+
+Result (ycen/score.txt): the rule "a y-shaped digit is 9" (R9) **PASSes** on the primary known-answer slots (print P, blind gloss G with
+keyed anchors on both sides, known word K): **20/21 (0.952) vs letter-base-rate null mean 2.95, p99 7**; R4 ("is 4") 0/21. By volume:
+694/08 17/17 PASS; 694/09 3/4 (too few for the gate; the miss is 0063 slot02 under 'Barth', where neither 84 nor 89 gives th). With the weak
+tier W (worker-eye or one-pass glosses: 0007 b2, 0136 T060/T064, 0309 T010) 24/25. Known-answer exemplars include the printed Ilgen slots
+of 0383 (BO I pp.257-258: r02, r06 lone 9; r21, r22 39), 0309's three lone 9s glossed Ilgen/Ilg. on both blind passes, 0490 'paix' (17 66 y
+4: the y beside a 4 = x in the same word), 0494 T019 'mancheroient' (settled 4, the gloss wants i = 9), Bullinbroug (0391) and Ferdinand
+(0395). Hand: no file on disk attributes these leaves to a clerk or to Manteuffel's own hand, so no per-hand rule could be reported; volume
+is the only split (blocker for the per-hand split: an eye pass on the hands, not done here).
+Counter-evidence kept apart (tier D, not y by two blind reads): 0398 s02 and 0410 s02 code 19 at an 'n' ('Polonois', 'Han.'), where 14 = n
+fits; R4 2/2 there. If those strokes are the same y-glyph, the hand(s) are not uniform; the census does not settle that.
+Caveats: the G-tier anchors were assembled by this worker from the leaf jobs' committed spans, not re-read blind; earlier workers may have
+called a glyph y-shaped partly because they settled it as 9 (selection bias toward R9), which the null cannot measure.
+Consequence: **no transcription edit** (the brief allows one only where the rule and this worker's eye agree; no eye check was made in this
+job); key.tsv and readings unchanged, so no --check re-run was needed. Slots where the rule disagrees with the settled reading, for an eye
+check: 0494 T019 (4 -> 9 = i), 0136 T060/T064 (254 -> 259 = Ilgen, M), 0063 slot01/03/04 (7/24/34 -> 9/29/39). Grades unchanged.
+Next (suggestion): eye check of those six slots on committed crops plus a look at the 0398/0410 code-19 strokes against the y-slots, and a
+hand attribution per leaf (~$1.5).

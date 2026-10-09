@@ -1,0 +1,55 @@
+leaf	vol	tok	settled	as4	key4	as9	key9	hand	tier	answer	R4hit	R9hit	src
+0383	694/08	r02	9	4	x	9	i/Ilgen	unrecorded	P	Ilgen	0	1	f0383_08 print_spans P02 (BO I pp.257-258)
+0383	694/08	r06	9	4	x	9	i/Ilgen	unrecorded	P	Ilgen	0	1	print_spans P06
+0383	694/08	r21	39	34	p	39	i/Ilgen	unrecorded	P	Ilgen	0	1	print_spans P08; NOTES MANT-UNG r21/r22 39|34 low
+0383	694/08	r22	39	34	p	39	i/Ilgen	unrecorded	P	Ilgen	0	1	print_spans P09
+0309	694/08	T020	9	4	x	9	i/Ilgen	unrecorded	G	Ilgen	0	1	spans_G1/G2 R06 Ilgen/Ilyen, both blind passes
+0309	694/08	T035	9	4	x	9	i/Ilgen	unrecorded	G	Ilgen	0	1	R09 Ilg./Ilg.
+0309	694/08	T048	9	4	x	9	i/Ilgen	unrecorded	G	Ilgen	0	1	R16 Ilg./Ily.
+0490	694/08	T003	9	4	x	9	i/Ilgen	unrecorded	G	i	0	1	G01 la p-a-[i]-x: 17 66 _ 4(x)
+0490	694/08	T048	9	4	x	9	i/Ilgen	unrecorded	G	i	0	1	G05 Blacksche-[i]-ffen: 74 35 _ 77
+0490	694/08	T083	9	4	x	9	i/Ilgen	unrecorded	G	i	0	1	G12a vouloi[s]: 12 33 _ 28 -- o _ t, gloss voulois/voulut i
+0490	694/08	T087	9	4	x	9	i/Ilgen	unrecorded	G	i	0	1	G12a fa-[i]-re: 11 66 _ 60
+0490	694/08	T138	39	34	p	39	i/Ilgen	unrecorded	G	i	0	1	G17 mouvro-[i]-t: 27 33 _ 28
+0494	694/08	T019	4	4	x	9	i/Ilgen	unrecorded	G	i	0	1	L02 mancheroient: 72 35 26 33 _ 21 59 (ch e r o _ n t)
+0494	694/08	T021	59	54	u	59	t	unrecorded	G	t	0	1	L02 mancheroien-[t]: 21 _ 66
+0494	694/08	T072	29	24	q	29	s	unrecorded	G	s	0	1	L06/L07 contre le-[s]: 96 _ 74
+0063	694/09	slot01	7	4	x	9	i/Ilgen	unrecorded	G	i	0	1	eye63 A1 tok2, gloss Si
+0063	694/09	slot02	84	84	sch	89	tz|z|s	unrecorded	G	th	0	0	eye63 B2, gloss Barth (neither value is th)
+0063	694/09	slot03	24	24	q	29	s	unrecorded	G	s	0	1	eye63 C1 tok6, gloss was hast
+0063	694/09	slot04	34	34	p	39	i/Ilgen	unrecorded	G	i	0	1	eye63 C1 tok11, gloss dich
+0391	694/08	r4t5	39	34	p	39	i/Ilgen	unrecorded	K	i	0	1	f0390_08 runs: B-u-l-l-[i]-n-b-r-o-u-g
+0395	694/08	r2t5	9	4	x	9	i/Ilgen	unrecorded	K	i	0	1	f0390_08 runs: f-e-r-d-[i]-n-a-n-d (100 = d)
+0007	694/09	b2	39	34	p	39	i/Ilgen	unrecorded	W	Ilgen	0	1	gloss blind passes Hy, worker Ilg
+0136	694/08	T060	254	254	(absent)	259	Ilgen	unrecorded	W	Ilgen	0	1	gloss blind Flyn, worker eye Ilgen; key 259 Ilgen M
+0136	694/08	T064	254	254	(absent)	259	Ilgen	unrecorded	W	Ilgen	0	1	gloss blind Haer, worker eye Ilgen
+0309	694/08	T010	259	254	(absent)	259	Ilgen	unrecorded	W	Ilgen	0	1	G2 Ilyen one pass, G1 Ryga
+0398	694/08	s02	19	14	n	19	(null)	unrecorded	D	n	1	0	cuc_candidates: Polo-[n]-ois; shape disputed (two blind reads 19)
+0410	694/08	s02	19	14	n	19	(null)	unrecorded	D	n	1	0	cuc_candidates: Ha-[n].; shape disputed
+0007	694/09	b5	39	34	p	39	i/Ilgen	unrecorded	-				no gloss
+0007	694/09	b7	39	34	p	39	i/Ilgen	unrecorded	-				si 39 y avoit, no gloss
+0052	694/09	tok?	344	344	(absent)	399	(absent)	unrecorded	-				3yy, U either way
+0089	694/08	T020	84	84	sch	89	tz|z|s	unrecorded	-				under Keuk gloss; final letter not fixed
+0136	694/08	T037	199	194	(absent)	199	(absent)	unrecorded	-				held, no value
+0176	694/08	r02t3	9	4	x	9	i/Ilgen	unrecorded	-				m'a assure que 9 enverroit
+0290	694/08	r03	447	447	(absent)	449	(absent)	unrecorded	-				unkeyed
+0290	694/08	r12	259	254	(absent)	259	Ilgen	unrecorded	-				no gloss at slot
+0314	694/08	T039	190	150	le Roi de Pologne	190	Stanislas	unrecorded	-				5 vs 9, not a 4|9 question
+0383	694/08	r07	9	4	x	9	i/Ilgen	unrecorded	-				no print span
+0383	694/08	r10	9	4	x	9	i/Ilgen	unrecorded	-				no print span
+0383	694/08	r11	9	4	x	9	i/Ilgen	unrecorded	-				no print span
+0383	694/08	r13	9	4	x	9	i/Ilgen	unrecorded	-				no print span
+0383	694/08	r17	9	4	x	9	i/Ilgen	unrecorded	-				no print span
+0474	694/08	T072	39	34	p	39	i/Ilgen	unrecorded	-				alt 37
+0490	694/08	T052	29	24	q	29	s	unrecorded	-				gloss end -en: neither
+0490	694/08	T069	9	4	x	9	i/Ilgen	unrecorded	-				gloss postining, not anchored
+0494	694/08	T058	59	54	u	59	t	unrecorded	-				unanchored
+0494	694/08	T059	99	44	l	99	s|ss|sa	unrecorded	-				unanchored
+0494	694/08	T071	96	46	i/Ilgen	96	le	unrecorded	-				2y note ambiguous
+0494	694/08	T236	499	444	(absent)	499	(absent)	unrecorded	-				unkeyed
+0494	694/08	T237	419	414	(absent)	419	(absent)	unrecorded	-				unkeyed
+0390	694/08	r9t3	9	4	x	9	i/Ilgen	unrecorded	-				FRIB[A]END, word not fixed
+0395	694/08	r3t2	9	4	x	9	i/Ilgen	unrecorded	-				not fixed
+0214	694/08	r3	9	4	x	9	i/Ilgen	unrecorded	-				not fixed
+0241	694/08	r1	99	44	l	99	s|ss|sa	unrecorded	-				two y-glyphs
+0070	694/09	r3	19	14	n	19	(null)	unrecorded	-				ingenium de 7.16.19.120

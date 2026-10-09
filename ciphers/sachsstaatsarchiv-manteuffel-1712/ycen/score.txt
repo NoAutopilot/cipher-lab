@@ -1,0 +1,7 @@
+primary P+G+K pooled: N=21 R9 hits 20 (0.952) vs null mean 2.95 p99 7 -> R9 PASS; R4 hits 0 (0.000) vs null p99 2 -> R4 FAIL
+primary 694/08: N=17 R9 hits 17 (1.000) vs null mean 2.48 p99 6 -> R9 PASS; R4 hits 0 (0.000) vs null p99 2 -> R4 FAIL
+primary 694/09: N=4 R9 hits 3 (0.750) vs null mean 0.46 p99 2 -> R9 FAIL; R4 hits 0 (0.000) vs null p99 1 -> R4 FAIL
+secondary P+G+K+W pooled: N=25 R9 hits 24 (0.960) vs null mean 3.28 p99 8 -> R9 PASS; R4 hits 0 (0.000) vs null p99 2 -> R4 FAIL
+disputed-shape D (code 19): N=2 R9 hits 0 (0.000) vs null mean 0.00 p99 0 -> R9 FAIL; R4 hits 2 (1.000) vs null p99 1 -> R4 PASS
+pool: 115 labels (108 letters + 7 Ilgen); seed 1712; 10000 draws
+per-hand: no hand attribution recorded on disk for any scored leaf (hand column 'unrecorded'); volume used as the only split
