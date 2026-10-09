@@ -1,0 +1,489 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000058166">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000058166">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Français > Français > Français 1-6170 [Ancien fonds] > Français 4925-5232</div>
+					<h1>Français 5176
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000058166_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058166">Français 5176 • Anc. 9778(2) • Registre des dépêches écrites durant les négociations de l'archevêque de Lyon, DENIS SIMON DE MARQUEMONT, auprès du saint-siège, du 13 février 1624 au 31 août 1625, tant par ledit archevêque, dont les lettres sont datées de Rome, que par RAIMOND DE PHELIPEAUX, Sr D'HERBAULT, secrétaire d'État, dont les lettres sont datées de Paris, Compiègne, Saint-Germain-en-Laye, Fontainebleau. Plusieurs de ces lettres ont des parties chiffrées ; une seule est entièrement en chiffre.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058166_d0e107">Fol. 3-4, 34, 37, 44-7, 52-3, 54, 68, 101-2, 148-9, 149 • Les lettres de LOUIS XIII sont datées de Paris, 23 février 1624, 22 mars 1624 ; Compiègne, 3 avril 1624, 15 avril 1624, 16 avril 1624, 20 avril 1624, 26 avril 1624, 6 juin 1624 ; St-Germain-en-Laye, 31 juillet 1624, 1er août 1624.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058166_d0e119">Fol. 114 v°-115, 158-9, 173-4, 219, 224, 232, 244, 246, 263-4, 297, 309-310, 359-360 • Les lettres du cardinal DE RICHELIEU sont datées de Compiègne, 9 juin 1624 ; Saint-Germain-en-Laye, 22 août 1624, 12 septembre 1624, 23 octobre 1624 ; Paris, 8 novembre 1624, 26 novembre 1624, 19 décembre 1624, 3 janvier 1625, 27 janvier 1625, 13 mars 1625, 11 avril 1625 ; Fontainebleau, 21 juin 1625.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058166_d0e125">Fol. 6, 152, 270, 316 • Il y a quelques lettres de MARIE DE MEDICIS sans réponses, datées de Paris, 8 mars 1624 ; Rueil, 9 août 1624; Paris, 31 janvier 1625, 25 avril 1625.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058166_d0e131">Fol. 243 et 328-9 • On y voit deux lettres de la reine ANNE D'AUTRICHE, datées de Paris, 18 décembre 1624 et 1er mai 1625. Elles sont également sans réponses.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058166_d0e152">Fol. 7 • Dudit archevêque de Lyon. Rome, 7 mars 1624.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058166_d0e158">Fol. 8 • De Phélipeaux. Paris, 14 mars 1624.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058166_d0e164">Fol. 38-9 • Du même. Compiègne, 4 avril 1624.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058166_d0e170">Fol. 40-1 • Dudit archevêque de Lyon. Rome, 12 avril 1624.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058166_d0e176">Fol. 64-65, 83-84, 102-104, 134-135, 140-143 • De Phélipeaux. Compiègne, 23 avril 1624, 10 mai 1624, 6 juin 1624, 4 juillet 1624, 17 juillet 1624.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058166_d0e182">Fol. 160-163 • Dudit Phélipeaux. St-Germain-en-Laye, 26 août 1624.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058166_d0e191">Fol. 179-180 et 222-224 • Dudit archevêque de Lyon. Rome, 23 septembre 1624 et 6 novembre 1624.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058166_d0e197">Fol. 271-272 et 325-327 • De Phélipeaux. Paris, 31 janvier 1625 et 25 avril 1625.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058166_d0e203">Fol. 361 et 363-364 • Dudit Phélipeaux. Fontainebleau, 3 et 31 août 1625.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000058166_d0e209">Fol. 197-200, 239-240, 285-288 • Lettres dudit archevêque au cardinal de Richelieu, avec parties chiffrées.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Français 5176 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc58166m&Cote=Français 5176&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Français 5176 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Anc. 9778(2)</div>
+<div class="did-unitid">Ancienne cote : Bigot 211</div>
+<div class="did-label">
+<div class="did-unittitle">Registre des dépêches écrites durant les négociations de l'archevêque de Lyon, DENIS SIMON DE MARQUEMONT, auprès du saint-siège, du 13 février 1624 au 31 août 1625, tant par ledit archevêque, dont les lettres sont datées de Rome, que par RAIMOND DE PHELIPEAUX, S<emph render="super">r</emph> D'HERBAULT, secrétaire d'État, dont les lettres sont datées de Paris, Compiègne, Saint-Germain-en-Laye, Fontainebleau. Plusieurs de ces lettres ont des parties chiffrées ; une seule est entièrement en chiffre.</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.364 feuillets cotés, plus, en tête, 7 feuillets non cotés, desquels le premier porte les anciens numéros du ms. et les autres sont blancs ; à la fin sont également 3 feuillets non cotés et non écrits. Le feuillet 119 est blanc.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des manuscrits</div>
+</div><div class="scopecontent-class">
+<div class="label-part">
+<p class="scopecontent-label">Présentation du contenu</p>
+</div>
+<div class="description-part">
+<span>
+<p>Ce registre contient aussi un certain nombre de lettres échangées entre ledit archevêque et le roi Louis XIII, le cardinal de Richelieu.</p>
+</span>
+</div>
+</div><div class="custodhist-class">
+<div class="label-part">
+<p class="custodhist-label">Historique de la conservation</p>
+</div>
+<div class="description-part">
+<span>
+<p>D'une note placée en marge de la première page, il résulte que ce registre a été « coppié l'an 1630 sur les originaulx ».</p>
+</span>
+</div>
+</div><div class="controlaccess-class">
+<p>Anne d'Autriche, reine de France. • Actes et lettres.</p>
+<p>Louis XIII, roi de France. • Relations extérieures et traités, avec le Saint-Siège.</p>
+<p>Marie de Médicis, reine de France. • Actes et lettres.</p>
+<p>Marquemont, Denis-Simon de, archevêque de Lyon. • Ambassade à Rome.</p>
+<p>Phélypeaux d'Herbaut, Raymond. • Lettres.</p>
+<p>Reraduo, Prospero. • Lettre.</p>
+<p>Richelieu, Armand-Jean du Plessis de, cardinal. • Saint-Siège, négociations.</p>
+<p>Urbain VIII, pape. • Traité avec Louis XIII.</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000058166_d0e107');">Les lettres de LOUIS XIII sont datées de Paris, 23 février 1624, 22 mars 1624 ; Compiègne, 3 avril 1624, 15 avril 1624, 16 avril 1624, 20 avril 1624, 26 avril 1624, 6 juin 1624 ; St-Germain-en-Laye, 31 juillet 1624, 1er août 1624.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058166_d0e119');">Les lettres du cardinal DE RICHELIEU sont datées de Compiègne, 9 juin 1624 ; Saint-Germain-en-Laye, 22 août 1624, 12 septembre 1624, 23 octobre 1624 ; Paris, 8 novembre 1624, 26 novembre 1624, 19 décembre 1624, 3 janvier 1625, 27 janvier 1625, 13 mars 1625, 11 avril 1625 ; Fontainebleau, 21 juin 1625.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058166_d0e125');">Il y a quelques lettres de MARIE DE MEDICIS sans réponses, datées de Paris, 8 mars 1624 ; Rueil, 9 août 1624; Paris, 31 janvier 1625, 25 avril 1625.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058166_d0e131');">On y voit deux lettres de la reine ANNE D'AUTRICHE, datées de Paris, 18 décembre 1624 et 1er mai 1625. Elles sont également sans réponses.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058166_d0e152');">Dudit archevêque de Lyon. Rome, 7 mars 1624.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058166_d0e158');">De Phélipeaux. Paris, 14 mars 1624.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058166_d0e164');">Du même. Compiègne, 4 avril 1624.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058166_d0e170');">Dudit archevêque de Lyon. Rome, 12 avril 1624.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058166_d0e176');">De Phélipeaux. Compiègne, 23 avril 1624, 10 mai 1624, 6 juin 1624, 4 juillet 1624, 17 juillet 1624.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058166_d0e182');">Dudit Phélipeaux. St-Germain-en-Laye, 26 août 1624.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058166_d0e191');">Dudit archevêque de Lyon. Rome, 23 septembre 1624 et 6 novembre 1624.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058166_d0e197');">De Phélipeaux. Paris, 31 janvier 1625 et 25 avril 1625.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058166_d0e203');">Dudit Phélipeaux. Fontainebleau, 3 et 31 août 1625.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000058166_d0e209');">Lettres dudit archevêque au cardinal de Richelieu, avec parties chiffrées.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,548 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000088431">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000088431">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Erudits et bibliophiles > Dupuy</div>
+					<h1>Dupuy 265
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000088431_info">Informations bibliographiques</a></div><div class="niv0"><div class="withoutChild"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088431">Dupuy 265 • « Originaux de lettres de plusieurs AMBASSADEURS du règne de roy FRANÇOIS Ier. »</a></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Dupuy 265 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc88431m&Cote=Dupuy 265&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b52515673w">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 17466 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc88431m&Cote=MF 17466&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Dupuy 265 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-label">
+<div class="did-unittitle">« Originaux de lettres de plusieurs AMBASSADEURS du règne de roy FRANÇOIS I<emph render="super">er</emph>. »</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">361 feuillets.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document original : Dupuy 265.</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b52515673w" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="http://gallica.bnf.fr/ark:/12148/btv1b52515673w.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;http://gallica.bnf.fr/ark:/12148/btv1b52515673w.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 17466. Cote de la matrice (pour commander une reproduction) : R 167491.</p>
+</span>
+</div>
+</div><div class="scopecontent-class">
+<div class="label-part">
+<p class="scopecontent-label">Présentation du contenu</p>
+</div>
+<div class="description-part">
+<span>
+<p>Ces lettres, presque toutes originales ou autographes, sont adressées aux personnages suivants :</p>
+<p>[A François II de Dinteville], évêque d'Auxerre, ambassadeur à Rome, par Lazare de Baïf, ambassadeur à Venise, 21 lettres datées de Venise, du 25 janv. [1531] au 6 fév. 1533 (5-44) ;</p>
+<p>[A Charles Hémard de Denonville], évêque de Mâcon, par Claude Dodieu, Naples, 1<emph render="super">er</emph> janv. 1535 (46) ;</p>
+<p>Au cardinal Jean Du Bellay, par Claude Dodieu, sieur de Vély, ambassadeur près l'Empereur, Naples, Cosenza et Casalnovo, 4 fév.-5 déc. 1535, six lettres (47-54) ; — G[eorges] de Selve, évêque de Lavaur, ambassadeur de France, Venise, 19 janv.-24 déc. 1535 (65-86), et 13 juillet 1536, dix lettres (85) ; — [Jean de Langeac], évêque de Limoges, ambassadeur à Ferrare, Ferrare, 19 nov. et 1<emph render="super">er</emph> sept. [1535] (96-99) ; — C[harles de] Marillac, ambassadeur en Allemagne, Augsbourg, 18 nov. 1550 (101) ; — J[ean de] Monluc, envoyé à Rome, Rome, 7 juillet 1540 (103) ; et 10 déc. 1538 (106) ; — [Antoine] de Castelnau, évêque de Tarbes, ambassadeur en Angleterre, Londres, 4 août 1536 (108) ; — Charles [Hémard de Denonville], cardinal-évêque de Mâcon, ambassadeur à Rome, Rome, du 21 fév. 1534 au 22 oct. 1537 env., trente cinq lettres (139-218) ; — [Anne de] Montmorency, Chambord, 1<emph render="super">er</emph> janv. ; Paris, 12 mars ; Rodez, 22 juillet ; Bar-le-Duc, 22 août ; au camp près Avignon, 31 août ; Éclaron, 31 août (235) ; Villers-Cotterets, 26 juillet ; Corps, 16 oct ; Fontaine-Française, 28 sept. s. a., huit lettres (228-238) ; — François I<emph render="super">er</emph>, Villers-Cotterets, Louppyle Château et Chaumont-en-Bassigny, 6 juillet-15 août 1535 (250-253) ; Valence et Saint-Vallier, 6 27 août 1536 (254-259) ; Montpellier, 16 janv. 137, copie, et Grenoble, 25 oct. 1537 (261 et 262) ; — J[ean] Breton, secrétaire du Roi, seize lettres, Éclaron, 31 août 1535 (281) ; Mézieu près Lyon, 28 janv. 1536 (283) ; Lyon, 31 juillet 1536 (284) ; Valence, 16 août-1<emph render="super">er</emph> sept. 1536 (285-292) ; au pont de Sorgues, 12 sept. 1536 (293) ; au camp près Avignon, 15 et 16 sept. 1536 (295 et 296) ; Arles, 20 sept. 1536 (297) ; Montpellier, 1<emph render="super">er</emph> janv. 1537 (282) ; Manosque, 10 déc. 1537 (299) ; Arles, 16 déc. 1537 (300) ; Corbeil, 26 janv. 1538 (301) ; — Nicolas Raince, résident à Rome, dix-huit lettres, Rome, 1<emph render="super">er</emph> juillet et 23 oct. 1534 (306 et 308) ; 21 mai-6 juin 1535 (311-316) ; 9 mars-27 juillet 1536 (316-332) ; 21 janv. et 3 oct. 1537 (334 et 335) ; 16 sept. 1538 (339) ; 25 oct. et 5 nov., incomplète 1550 (336 et 340) ;</p>
+<p>Au roi [François I<emph render="super">er</emph>], par [Charles Hémard de Denonville], cardinal-évêque de Mâcon, et [Claude Dodieu], s<emph render="super">r</emph> de Vély, Rome, 19 avril 1536, duplicata (55) ; (Charles Hémard seul), Rome, 11 et 19 janv. 1534, 27 janv. 1535, copies (111-122) ; 29 mai 1535, orig. (132) ; — G[eorges] de Selve, évêque de Lavaur, ambassadeur, Venise, 18 juin 1534 (89), avec déchiffrement (93) ; — Nicolas Raince, [Rome]. 20 nov. [1534], copie (310) ; — Georges d'Armagnac, évêque de Rodez, Venise, 31 juillet 1536 (348) ; Rome, 6 et 7 déc. 1540 (346 et 349) ; — [Alberto Pio] de Carpi, Rome, 15 sept. 1526 (351), et 29 nov. 1524, copie (353) ; — G[uillaume Pélicier], évêque de Montpellier, Venise, 29 nov. 1540 (357) ; — Robert de Lenoncourt, cardinal, Rome, 30 juillet 1540 (360) ;</p>
+<p>A. M. de Mâcon [Charles Hémard de Denonville], par François I<emph render="super">er</emph>, Saint-Germain-en-Laye, 22 fév. 1534, minute (128) ;</p>
+<p>A [Charles], duc d'Orléans, fils de François I<emph render="super">er</emph>, par [Anne de] Montmorency, du camp de La Loge, 12 nov. s. a. (220) ; Montpellier, 15 déc. (224) ; du camp de Carmagnola, 24 nov. (226) ; — le roi François I<emph render="super">er</emph>, Corps, 27 oct. 1537 (243) ; « Merueys en Provence », 8 déc. 1537 (244) ; Carmagnola, 24 nov. 1537 (246) ; Arles, 16 déc. 1537 (248) ; Manosque, 10 déc. 1537 (249) ; — J[ean] Breton, neuf lettres, Montpellier, 1<emph render="super">er</emph>-14 janv. 1537 (264-269), 21 et 24 déc. 1537 (278) ; Briançon, 9 nov. et 2 déc. 1537 (272 et 274) ; Carignan, 16 nov. 1537 (273) ; etc.</p>
+<p>On remarque en outre, dans ce volume, le « double des lettres envoyées par le cappitaine Rocque, solliciteur du sieur Hercules Fregose, à l'évesque de Mascon », chiffre (152), et déchiffrement (155) ; — une lettre [de Ch. Hémard de Denonville] à [Claude Dodieu], sieur de Vély, Rome, 2 janv. s. a., copie (163) ; — deux lettres [d'Anne de Montmorency] au duc d'Orléans, La Mûre, 16 oct. s. a., copie (221), et au roi [François I<emph render="super">er</emph>], Lombez, 1<emph render="super">er</emph> août 1526, copie (227) ; — Instruction relative à des négociations concernant Venise et Ferrare, Venise, 22 août [vers 1535] (343), etc.</p>
+</span>
+</div>
+</div><div class="custodhist-class">
+<div class="label-part">
+<p class="custodhist-label">Historique de la conservation</p>
+</div>
+<div class="description-part">
+<span>
+<p>Volume constitué en 1627.</p>
+</span>
+</div>
+</div><div class="controlaccess-class">
+<p>ARMAGNAC (Georges D'), évêque de Rodez, cardinal • Lettres</p>
+<p>BAÏF (Lazare DE), ambassadeur à Venise • Lettres</p>
+<p>BRETON (Jean), sieur de Villandry, secrétaire du roi • Lettres</p>
+<p>CASTELNAU (Antoine DE), évêque de Tarbes, ambassadeur • Lettres</p>
+<p>CASTELNAU (François-Guillaume DE) dit le cardinal de Clermont, archevêque d'Auch • Lettres</p>
+<p>CHARLES V, roi de France • Généralités</p>
+<p>DINTEVILLE (François II DE), évêque d'Auxerre, ambassadeur à Rome • Lettres à lui adressées</p>
+<p>DODIEU (Claude), sieur de Vély • Lettres</p>
+<p>DODIEU (Claude), sieur de Vély • Lettres à lui adressées</p>
+<p>DU BELLAY (Jean), cardinal • Lettres à lui adressées</p>
+<p>FERRARE • Duché et ducs</p>
+<p>FRANÇOIS Ier, roi de France • Lettres</p>
+<p>FRANÇOIS Ier, roi de France • Lettres à lui adressées</p>
+<p>HEMARD DE DENONVILLE (Charles), évêque de Mâcon, cardinal, ambassadeur • Lettres</p>
+<p>HEMARD DE DENONVILLE (Charles), évêque de Mâcon, cardinal, ambassadeur • Lettres à lui adressées</p>
+<p>LANGEAC (Jean DE), évêque d'Avranches, puis de Limoges, ambassadeur • Lettres</p>
+<p>LENONCOURT (Robert DE), cardinal • Lettres</p>
+<p>MARILLAC (Charles DE), abbé de Saint-Pierre de Melun, archevêque de Vienne, ambassadeur • Lettres</p>
+<p>MONLUC (Jean DE), évêque de Valence, ambassadeur, frère de Blaise • Lettres</p>
+<p>MONTMORENCY (Anne DE), connétable et grand-maître de France • Lettres</p>
+<p>ORLEANS (Charles, duc D'), fils de François Ier • Lettres à lui adressées</p>
+<p>PELLICIER (Guillaume), évêque de Montpellier, ambassadeur • Lettres</p>
+<p>PIO (Alberto), prince de Carpi, ambassadeur • Lettres</p>
+<p>RAINCE (Nicolas) • Lettres</p>
+<p>ROCQUE (Le capitaine) • Lettre</p>
+<p>SELVE (Georges DE), évêque de Lavaur, ambassadeur • Lettres</p>
+<p>VENISE • Négociations</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<br/>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

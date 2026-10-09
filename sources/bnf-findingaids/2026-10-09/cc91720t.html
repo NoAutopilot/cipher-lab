@@ -1,0 +1,600 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000091720">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000091720">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Erudits et bibliophiles > Cinq cents de Colbert</div>
+					<h1>Cinq cents de Colbert 338
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000091720_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720">Cinq cents de Colbert 338 • Recueil de lettres et mémoires concernant les relations de la France avec la Pologne (1572-1578), l'Italie (1569-1586 et 1612-1639) et l'Espagne (1570-1587).</a><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e378">Pologne</a><div class="nivX closed"><div class="childInfo closed" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e382">Lettres originales, pour la plupart adressées à Henri, duc d'Anjou, roi de Pologne, plus tard Henri III, et signées.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e386">« Albertus a Lasko » ou Laski, palatin de Siradie (p. 33, 65) et « Jehan de Crasosqui, » Conin, 1572 (p. 35)</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e390">p. 39 • « Charles de Mansfeld, » Luxembourg</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e396">p. 43, 47, 121, etc. • Henri, roi de Pologne [23 minutes] (La page 169 porte des essais de plume de la signature du nouveau roi « Henricus »)</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e402">p. 49, 53 • Jean de « Monluc, é[vêque de] Valance, » ambassadeur en Pologne</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e408">p. 59, 133 • « Gilles de Noailles, » abbé de L'Isle, Conin, 1573</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e414">p. 61 • Catherine de Médicis. (Lettres de Catherine de Médicis, t. IV, p. 169).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e423">p. 97 • « Anna, infans Polonie, » Varsovie</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e429">p. 99, 227, 233, 237, 239, 243 • « Maximilianus », « Maximilian » ou « Maximiliano » II, empereur [6 lettres en latin, en allemand ou en espagnol]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e435">p. 105 • « Joannis, conte di Tenchin, » Nice</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e441">p. 115 • « Joannes Herborth de Fulstin, » Eisenach</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e447">p. 117 • « Oratores ordinum regni Poloniae et magni ducatus Lituaniae »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e453">p. 137 • « Jehan de Luxembourg, » Metz</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e459">p. 139 • Charles « D'Escars, é[vêque] de Langres »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e465">p. 141, 189, 191 • « Johannes Bazinus » ou « Bazin » [3 lettres en partie chiffrées]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e471">p. 145 • « Jacobus [d'Elz], archiepiscopus Treverensis, princeps Elector »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e477">p. 147, 187 • « Consules ac senatores imperialis civitatis Lubecq »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e483">p. 199 • Jean Georges, marquis de Brandebourg</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e489">p. 203, 247 • « Augustus, dux Saxoniae »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e495">p. 225 • « Daniel [Brendel d'Homburg], archiepiscopus Moguntinus »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e501">p. 251 • « Friderich, marq. Brandeburg »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e507">p. 253 • « Balthasar, abbas Fuld. »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e513">p. 259, 261 • Nicolas d'Angennes, sieur de « Rambouillet »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e519">p. 263 • « Studiosissimi Consules civitatis imperialis Francofurti »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e525">p. 269 • « Jehan, conte palatin du Rhin »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e531">p. 271 • « Nuntii regni Polonie : Joannes Krotoski a Krotoschin, Palatinides Innowladislawiensis, Joannes Demetrius Solikowski a Solki »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e537">p. 327, 347 • « D[esiderio] Labbe, » Vienne, 1575</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e543">p. 341 • « Franciscus Pesthii, » 1576</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e549">p. 343 • « Des Traos, » à M. de Piennes, gouverneur de Metz, Cassel, 1576</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e555">p. 357 • Battori</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e561">p. 367 • « Pierre Costea, evesque de Culme »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e567">p. 371 • « Joannes Costka, palatinus Sendomirensis, Cristoferus Kostka, palatinus Pomeranie, » Lypno, 1578</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e573">« Avis de Versovie, » 15 mai 1572 (p. 7), 9 avril 1573 (p. 83), « d'un lieu près de Versovie, » 31 juillet 1573 (p. 123, 221), 1578 (p. 363).</a></div></div></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e577">p. 15 • Instructions données à Jean de Monluc, évêque de Valence, et au sieur de Malloc, envoyés comme ambassadeurs en Pologne</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e583">p. 37 • Projet de confédération entre les deux royaumes</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e589">p. 67 • « Illustriss. et reverendiss. domini D. Jo. Francisci Commendoni, S. R. E. cardinalis, apostolicae sedis per Germaniam et Poloniam de latere legati, oratio ad senatum equitesque Polonos, in castris habita apud Warszaviam, viii aprilis anno 1573, » in-4°, impr.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e598">p. 215 • « Roolle des princes, seigneurs et gentilshommes qui ont esté choisiz et ezleuz... pour aller au devant des ambassadeurs de Pollonne »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e604">p. 255 • « Articulorum summa, quos duo majores Poloniae, palatinatus Posnaniensis et Calissiensis, secunda die septembris in comitiis horum palatinatuum in Sroda decreverunt nunciis a se creatis dati et commissi pro comitiis publicis coronationis »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e610">p. 265 • « Articoli che si proponeranno nella prossima dietta, che ha da esser in campagna dove si deve trovar la nobilta Polacca in armi »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e616">« Instructions et pouvoir bailléz à Mr le maal de Bellegarde et au sr de Pibrac allans en Poloigne, » 13 avril 1575 (p. 283, 317), et au « sr d'Espesse, » Jacques de Faye, allant à Ferrare (p. 293, 299).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e632">p. 305 • « Actum in curia regia, Varsoviae, sabato ante festum sancti Mathei apostol. » 1575</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e638">p. 321, 331 • « Relation d'un courrier de l'ambassadeur de Monsr le duc de Ferrare, party de Varsove, le samedy xe décembre, et arrivé à Vienne, le dimanche xviiie »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e653">p. 335 • Adresse à l'Empereur « ex commissione omnium regni Poloniae ordinum in conventu Andreoviensi congregatorum, » 11 février 1576</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e659">p. 351 • Légation d'Ivan III Basilievitch près de l'empereur Maximilien II</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e665">Italie</a><div class="nivX closed"><div class="childInfo closed" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e669">Lettres originales, pour la plupart adressées à Catherine de Médicis, Charles IX, Henri III, etc., et signées.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e676">p. 377, 381, 385 • « T. Aldobrandinus, » contresignant trois brefs de Pie V pour Catherine de Médicis, 1569</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e682">p. 389 • « Jo. Bap. Weber » et « M. Guerstman », contresignant un décret de l'empereur Maximilien II, 1572</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e688">p. 391, 393 • Charles IX, 1572 [minutes]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e694">p. 403 • Filippo Buoncompagni, « car1 S. Sisto, » 1574</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e703">p. 407 • « Il carle di Como, » Tolomeo Galli</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e712">p. 411 • « Il cardinale di Sermoneta, » Niccolo Caetani</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e718">p. 413 • « Il cardle San Giorgio, » Marco d'Altemps</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e727">p. 421 • François Rougier, baron de « Ferralz, » ambassadeur de France à Rome</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e733">p. 423 • Arnaud « Du Ferrier, » ambassadeur de France à Venise</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e739">p. 427 • « N[icolas], caral de Pellevé »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e748">p. 429 • « le conte de Villeclaire », Turin, 1577</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e754">p. 431 • « el gran duca di Toscana », François de Médicis, 1584</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e760">p. 433, 459, 491, 503, 511 et suiv. • « Luigi, carle d'Este » [9 lettres en partie chiffrées]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e769">p. 443 • Henri III [une minute]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e775">p. 447, 459, 463, 465 • le duc de Ferrare, « Alfonso d'Este »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e781">p. 449, 467, 469, 475 et suiv. • « A. d'Ossat » [10 lettres]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e787">p. 493 • « Jullain, » Turin</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e793">p. 501 • « Il caral Savello, » Giacopo</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e802">p. 525 • « C[harles] Emanuel » le Grand, duc de Savoie, 1585</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e808">p. 529 et suiv., 539, 541 • Antoine Le Fèvre de « La Boderie, » [5 lettres]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e814">p. 535 • « Il duca di M[antou]a, » Guillaume de Gonzague, 1586</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:45px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e820">« Avviso di Palermo, » 1573 (p. 395), « di Roma » (p. 397), « di Napoli, » 1574 (p. 415).</a></div></div></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e824">p. 543 • Lettre de Louis XIII aux Vénitiens, 1612 [minute]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e830">p. 545 • « Relatione dell' eccellentiss. Sig. Pier Francesco Salce, ambasciator della città di Feltre, al sereniss. M. Antonio Memmo, prencipe di Venetia. Venetia, 1613, » in-4°, impr.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e839">p. 561 • « Descorso sopra l'assalto del Monferrato fatto al principio di maggio 1613 »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e845">Lettres signées : « di Leone, » Venise, 1617 (p. 565), et « ducis Sabaudiae oratores Deschallant, Carolus Chaharanus, Philibertus à Lofencito » (p. 611).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e849">p. 615, 639 • « Mémoires dressés par le sieur Comman de Virville sur le faict de l'assassinat commis à Rome de l'escuyer de Monsieur le mareschal d'Estrée, ambassadeur du Roy l'an 1639 »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e855">p. 647-1133 • Mémoire sur « tutto quello che ha acquistato Santa Chiesa in beni temporali da San Pietro in qua »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e861">p. 1135 • « Relation des choses de la cour du Grand Seigneur de présent nommé sultan Hamet »</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e867">Espagne</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e871">p. 1145 • Mémoire présenté au roi d'Espagne par l'ambassadeur de France, 1570</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e877">p. 1153 • « Encomium in sacrum conjugium... Philippi, Hispaniarum regis,... et..., principisse Ungarie et Boemie, archiducisse Austrie, Anne..., recitatum a Rmo D. domino archiepiscopo Pragensi, » Antonio Brus, 1570</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e886">p. 1157 • Réponses faites par le Conseil du roi et signées de Henri III à diverses demandes de l'ambassadeur d'Espagne, concernant le Portugal, l'Artois, la Flandre, 1587</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e892">p. 1165, 1171, 1175, 1179, 1183 • Lettres, en partie chiffrées, de La Motte- « Longlée, » ambassadeur en Espagne, 1584</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091720_d0e898">p. 1173 • « Jacobus Desmonie de Geraldis, » Lisbonne, 1577</a></div></div></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Cinq cents de Colbert 338 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc91720t&Cote=Cinq cents de Colbert 338&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b10033937d">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 35504 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc91720t&Cote=MF 35504&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Cinq cents de Colbert 338 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de lettres et mémoires concernant les relations de la France avec la Pologne (1572-1578), l'Italie (1569-1586 et 1612-1639) et l'Espagne (1570-1587).</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph>-XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.xxiv et 1189 pages.350 × 240 mm.Reliure maroquin rouge, aux armes de Colbert, entourées des collier des Ordres.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 35504. Cote de la matrice (pour commander une reproduction) : R 18974.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b10033937d" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="http://gallica.bnf.fr/ark:/12148/btv1b10033937d.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;http://gallica.bnf.fr/ark:/12148/btv1b10033937d.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="scopecontent-class">
+<div class="label-part">
+<p class="scopecontent-label">Présentation du contenu</p>
+</div>
+<div class="description-part">
+<span>
+<p>Table des matières en tête du volume.</p>
+</span>
+</div>
+</div><div class="controlaccess-class">
+<p>ACHMET, ou AHMED Ier, sultan ottoman</p>
+<p>ALDOBRANDINI, T.</p>
+<p>ALTEMPS, Marco d', cardinal de Saint-Georges</p>
+<p>ARTOIS</p>
+<p>AUTRICHE, Anne, archiduchesse d'</p>
+<p>BATTOR</p>
+<p>BAZIN, Jean, envoyé en Pologne</p>
+<p>BELLEGARDE, Roger de Saint-Lary, duc de, grand-écuyer, maréchal de France • mission en Pologne</p>
+<p>BRANDEBOURG, Frédéric, marquis de</p>
+<p>BRANDEBOURG, Jean-Georges, marquis de</p>
+<p>BRENDEL VON HOMBURG, Daniel, archevêque de Mayence</p>
+<p>BRUS, Antoine, archevêque de Prague</p>
+<p>BUONCOMPAGNI, Filippo, cardinal de Saint-Sixte</p>
+<p>CAETANI, Niccolo, évêque de Sermoneta, cardinal-légat</p>
+<p>
+<a alt="Lien vers une fiche d'autorité" title="Cliquer pour consulter la fiche d'autorité correspondante" target="_blank" href="http://catalogue.bnf.fr/ark:/12148/cb123351707" class="hrefLink ext">Catherine de Médicis</a>
+</p>
+<p>CHAHARANUS, Carolus</p>
+<p>CHARLES IX</p>
+<p>COLBERT, Jean-Baptiste • reliures à ses armes</p>
+<p>COMMAN DE VIRVILLE</p>
+<p>COMMENDON, Jean-François, cardinal légat en Allemagne</p>
+<p>CONIN</p>
+<p>COSTEA, Pierre, évêque de Culm</p>
+<p>CRASOSQUI, Jean de</p>
+<p>DESCHALLANT</p>
+<p>DES TRAOS</p>
+<p>DU FERRIER, Arnaud, ambassadeur à Venise</p>
+<p>ÉGLISE ROMAINE • patrimoine de Saint-Pierre</p>
+<p>ELZ, Jacques d', archevêque de Trèves</p>
+<p>ESPAGNE • ambassadeurs de France</p>
+<p>ESPESSES, Jacques de Faye d', ambassadeur à Ferrare</p>
+<p>ESTE, Louis d', cardinal • lettres</p>
+<p>ESTREES, François d', maréchal, ambassadeur à Rome</p>
+<p>FELTRE, ambassadeur</p>
+<p>FERRALZ, ou FERRALS, François Rougier, baron de, ambassadeur à Rome</p>
+<p>FERRARE</p>
+<p>FERRARE, Alphonse d'Este, duc de</p>
+<p>FLANDRE</p>
+<p>FRANCFORT-SUR-LE-MEIN • consuls</p>
+<p>FULDA, Balthasar, abbé de</p>
+<p>FULSTIN, Joannes Herborth de</p>
+<p>GALLI, Tolomeo, cardinal de Côme</p>
+<p>GERALDIS, Jacobus Desmonie de</p>
+<p>GUERSMAN, M.</p>
+<p>HENRI III • lettres</p>
+<p>HENRI III • roi de Pologne</p>
+<p>IVAN III BASILIEVITCH, ou BASILIDES, tsar de Russie</p>
+<p>JULLAIN</p>
+<p>KOTSKA, Christophe, palatin de Poméranie</p>
+<p>KOTSKA, Jean, palatin de Sandomir</p>
+<p>KROTOSKI A KROTOSCHIN, Jean</p>
+<p>LABBE, Desiderio</p>
+<p>LA BODERIE, Antoine Lefèvre de, ambassadeur en Angleterre</p>
+<p>LA MOTTE-LONGLEE, De, ambassadeur en Espagne • lettres</p>
+<p>LASKI, Albert, palatin de Siradie</p>
+<p>LEONE, Di</p>
+<p>LITHUANIE</p>
+<p>LOFENCITO, Philibert a</p>
+<p>LOUIS XIII • lettres</p>
+<p>LÜBECK • sénat</p>
+<p>MALLOC, De, ambassadeur en Pologne</p>
+<p>MANTOUE, Guillaume de Gonzague, duc de</p>
+<p>MAXIMILIEN II, empereur</p>
+<p>MAXIMILIEN II, empereur • lettres</p>
+<p>MEDICIS, François de, grand duc de Toscane</p>
+<p>MONLUC, Jean de, évêque de Valence, ambassadeur en Pologne</p>
+<p>MONTFERRAT</p>
+<p>NAPLES • avis</p>
+<p>NOAILLES, Gilles de, abbé de L'Isle ambassadeur en Angleterre</p>
+<p>OSSAT, Arnaud d', cardinal • lettres</p>
+<p>PALATIN DU RHIN, Jean, comte</p>
+<p>PALERME • avis</p>
+<p>PELLEVE, Nicolas de, cardinal</p>
+<p>PESTHIT, Franciscus</p>
+<p>PHILIPPE II D'ESPAGNE</p>
+<p>PIBRAC, Guy du Faur de, ambassadeur en Pologne</p>
+<p>PIE V, Michiele Ghislieri, dit d'abord le cardinal Alexandrin</p>
+<p>PIENNES, De, gouverneur de Metz</p>
+<p>POLOGNE</p>
+<p>POLOGNE • ambassadeurs</p>
+<p>POLOGNE • noblesse</p>
+<p>POLOGNE, Anne, infante de</p>
+<p>PORTUGAL</p>
+<p>POSEN</p>
+<p>RAMBOUILLET, Nicolas d'Angennes de</p>
+<p>ROME • avis</p>
+<p>SALCE, Pier-Francesco, ambassadeur de Feltre à Venise</p>
+<p>SAVELLI, Giacopo, cardinal</p>
+<p>SAVOIE, Charles-Emmanuel Ier le Grand, duc de</p>
+<p>SAXE, Auguste, duc de</p>
+<p>SOLIKOWSKI A SOLKI, Jean Démétrius, ambassadeur de Pologne</p>
+<p>TENCHIN, Jean, comte de</p>
+<p>VARSOVIE</p>
+<p>WEBER, Jean-Baptiste</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000091720_d0e378');">Pologne</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091720_d0e665');">Italie</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091720_d0e867');">Espagne</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

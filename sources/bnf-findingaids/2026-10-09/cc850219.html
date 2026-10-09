@@ -1,0 +1,504 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000085021">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000085021">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Bibliothèque de l'Arsenal > Anciens fonds : manuscrits français 2000 à 7465 > Manuscrits français 4501 à 4900</div>
+					<h1>Ms-4738. Recueil de 47 pièces relatives aux relations de la France avec la Suède, le Danemark et les Électeurs. 1634-1680</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000085021_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021">Ms-4738 • 636 H. F • Recueil de 47 pièces relatives aux relations de la France avec la Suède, le Danemark et les Électeurs. 1634-1680</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e122">1o (Fol. 2) • « Articuli neutralitatis initæ ex parte principis Electoris Treverensis cum rege Sueciæ, per interpositionem regis Christianissimi Galliarum. 1634 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e139">2o (Fol. 4) • Lettre d'Oxenstiern, ministre de Suède, au maréchal de Brézé. 20 mars 1635. Original signé. Cachet</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e166">3o (Fol. 6) • Imprimé. « Traité de paix d'entre les roys de Suède et de Dannemarc. » 27 février 1658</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e206">4o (Fol. 12) • « Traitté entre la France et la Suède, en 1661. Copié sur l'exemplaire du comte Tot »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e231">5o (Fol. 27) • Lettre du chevalier de Terlon au comte Magnus de la Gardie, grand chancelier de Suède. 6 décembre 1662</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e261">6o (Fol. 31) • Déclaration de la reine de Suède à l'ambassadeur de l'Empire, comte de Windischgrætz. 26 février 1664</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e291">7o (Fol. 37) • Projet d'accord entre le roi de Suède et les Provinces-Unies des Pays-Bas. 1666</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e318">8o (Fol. 53) • « Projet de traité entre la Suède et l'Électeur de Saxe. 1666 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e358">9o (Fol. 55) • « Fœdus initum inter coronam Sueciæ et Electorem Saxoniæ. »1666</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e370">10o (Fol. 61) • « Traité de paix entre le roy des Suédois et la ville de Bremen. 1666 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e382">11o (Fol. 67) • « Traitté entre la Suède et l'Empereur. 1668 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e404">12o (Fol. 69) • Imprimé. « Fœdus Cæsareo-Suecicum. 1668 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e421">13o (Fol. 73) • « Articles secretz » entre le roi de France et le roi de Suède. 3 décembre 1671</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e443">14o (Fol. 79) • « Articuli secreti »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e458">15o (Fol. 85) • Projet de traité entre la France et la Suède. 1671</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e493">16o (Fol. 93) • « Articles secrets du traitté entre le Roy et le roy de Suède, signé à Stokolm le 14 avril 1672 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e525">17o (Fol. 120) • « Mémoire pour servir d'instruction au sr marquis de Feuquière, s'en allant ambassadeur extraordinaire de Sa Majesté en Suède. Versailles, 7 octobre 1672 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e565">18o (Fol. 136) • « Projet de traitté entre la Suède et le Dannemark. 1672 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e597">19o (Fol. 140) • Lettre (brouillon) de Louis XIV au roi de Suède. Saint-Germain en Laye, 10 février 1673</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e634">20o (Fol. 142) • « Mémoire pour servir d'instruction au sr marquis de Vitry, allant de la part du Roy dans l'armée de Suède. Octobre 1674 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e669">21o (Fol. 148) • « Traité d'entre la Suède et l'Électeur de Bavière. 9 mars 1675 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e709">22o et 23o (Fol. 161) • « Traité de commerce d'entre le roy de Suède et les Estats généraux. 26 novembre 1675 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e747">24o (Fol. 167) • « Extrait des articles d'un traité de commerce entre la Suède et la Hollande. 9 novembre 1675 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e789">25o (Fol. 169) • « Mémoire pour servir d'instruction au sr comte de Rebenac, envoyé extraordinaire de Sa Majesté dans la Basse-Allemagne et dans l'armée de Suède en Poméranie. Fait au camp devant Valenciennes, 19 mars 1677 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e829">26o (Fol. 173) • « Renouvellement du traitté avec la Suède. 25 avril 1675 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e861">27o (Fol. 179) • « Articles destachés des Mémoires du chevalier de Terlon »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e881">28o et 29o (Fol. 187) • Imprimé. « Traité pour l'assemblée de Lunden entre le roy de Suède et le roy de Dannemark. » Paris, 1679, in-4o</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e926">30o (Fol. 195) • Imprimé. « Traité de paix entre le Roy, le roy de Suède et le roy de Dannemark. 2 septembre 1679. » Paris 1679, in-4o</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e965">31o (Fol. 209) • Traité entre le Danemark et l'Empire. Copenhague, 16 janvier 1674. (Texte allemand)</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e995">32o (Fol. 212) • Note sur la délimitation de la Poméranie suédoise et de la Poméranie électorale</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e1012">33o (Fol. 214) • « Mémoire touchant la ville et évesché de Camin. 20 janvier 1680 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e1029">34o (Fol. 216) • « Liste des sénateurs de Suède »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e1061">35o (Fol. 218) • « Estat présent de la Suède, extrait de la depesche de M. le marquis de Feuquières, du 7 février 1680 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e1093">36o (Fol. 222) • « Mémoire concernant les traittez d'Elbing et autres faits entre la Suède et les Estatz généraux »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e1123">37o-42o (Fol. 226) • « Traitté de commerce entre la Suède et les Estatz généraux. 12 octobre 1679 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e1153">43o (Fol. 246) • « Traittez d'alliance entre la France et la Suède. » 1631-1641</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e1180">44o (Fol. 259) • Imprimé. « A gl'amici del ben publico d'Europa. » — Placard contre la France</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e1202">45o (Fol. 260) • Imprimé. Projet pour abattre promptement la France et délivrer l'Europe. Villa-Franca. 1679</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e1225">46o (Fol. 265) • « Tractatus inter regem Daniæ et ducem Slesvici Holsatiæ Gottorpiensem. » 22 mai 1658</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000085021_d0e1247">47o (Fol. 267) • « Mémoire sur la manière dont les Électeurs escrivent au Roy »</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Ms-4738 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc850219&Cote=Ms-4738&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MICROFILM ARS R-4760 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc850219&Cote=MICROFILM ARS R-4760&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Ms-4738 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : 636 H. F</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de 47 pièces relatives aux relations de la France avec la Suède, le Danemark et les Électeurs. 1634-1680</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">français, latin, allemand, italien</div>
+<div class="divdid">Papier268 feuilletsÉcriture du XVII<emph render="super">e</emph> siècle390 × 250 mmDemi-reliure en peau blanche</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Bibliothèque de l'Arsenal</div>
+</div><div class="userestrict-class">
+<div class="label-part">
+<p class="userestrict-label">Conditions d’utilisation</p>
+</div>
+<div class="description-part">
+<span>
+<p>Toute publication de documents inédits doit être notifiée à l'établissement.</p>
+</span>
+</div>
+</div><div class="prefercite-class">
+<div class="label-part">
+<p class="prefercite-label">Mention conseillée</p>
+</div>
+<div class="description-part">
+<span>
+<p>Bibliothèque nationale de France. Bibliothèque de l'Arsenal, Ms-X, fol. Y.</p>
+</span>
+</div>
+</div><div class="custodhist-class">
+<div class="label-part">
+<p class="custodhist-label">Historique de la conservation</p>
+</div>
+<div class="description-part">
+<span>
+<p>De la bibliothèque de M. de Paulmy. — Antérieurement, de la bibliothèque de Simon Arnauld, marquis de Pomponne.</p>
+</span>
+</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm noir et blanc. Cote de consultation en salle de lecture : MICROFILM ARS R-4760. Cote de la matrice (pour commander une reproduction) : MICROFILM ARS R-4760.</p>
+</span>
+</div>
+</div><div class="controlaccess-class">
+<p>Paulmy (Antoine-René d'Argenson, marquis de) • Manuscrits lui ayant appartenu</p>
+<p>Pomponne (Simon Arnauld, marquis de) • Manuscrit lui ayant appartenu</p>
+<p>Danemark • Recueil de pièces relatives aux relations de la France avec le Danemark (1634-1680)</p>
+<p>Suède • Projet de traité et traité avec Louis XIV (1671, 1672)</p>
+<p>Suède • Recueil de pièces relatives aux relations de la France avec la Suède (1634-1680)</p>
+<p>Suède • Traité de paix avec le Danemark (1658)</p>
+<p>Électeurs de l'Empire • Recueil de pièces relatives aux relations de la France avec les électeurs (1634-1680)</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e122');">« Articuli neutralitatis initæ ex parte principis Electoris Treverensis cum rege Sueciæ, per interpositionem regis Christianissimi Galliarum. 1634 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e139');">Lettre d'Oxenstiern, ministre de Suède, au maréchal de Brézé. 20 mars 1635. Original signé. Cachet</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e166');">Imprimé. « Traité de paix d'entre les roys de Suède et de Dannemarc. » 27 février 1658</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e206');">« Traitté entre la France et la Suède, en 1661. Copié sur l'exemplaire du comte Tot »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e231');">Lettre du chevalier de Terlon au comte Magnus de la Gardie, grand chancelier de Suède. 6 décembre 1662</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e261');">Déclaration de la reine de Suède à l'ambassadeur de l'Empire, comte de Windischgrætz. 26 février 1664</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e291');">Projet d'accord entre le roi de Suède et les Provinces-Unies des Pays-Bas. 1666</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e318');">« Projet de traité entre la Suède et l'Électeur de Saxe. 1666 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e358');">« Fœdus initum inter coronam Sueciæ et Electorem Saxoniæ. »1666</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e370');">« Traité de paix entre le roy des Suédois et la ville de Bremen. 1666 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e382');">« Traitté entre la Suède et l'Empereur. 1668 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e404');">Imprimé. « Fœdus Cæsareo-Suecicum. 1668 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e421');">« Articles secretz » entre le roi de France et le roi de Suède. 3 décembre 1671</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e443');">« Articuli secreti »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e458');">Projet de traité entre la France et la Suède. 1671</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e493');">« Articles secrets du traitté entre le Roy et le roy de Suède, signé à Stokolm le 14 avril 1672 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e525');">« Mémoire pour servir d'instruction au sr marquis de Feuquière, s'en allant ambassadeur extraordinaire de Sa Majesté en Suède. Versailles, 7 octobre 1672 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e565');">« Projet de traitté entre la Suède et le Dannemark. 1672 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e597');">Lettre (brouillon) de Louis XIV au roi de Suède. Saint-Germain en Laye, 10 février 1673</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e634');">« Mémoire pour servir d'instruction au sr marquis de Vitry, allant de la part du Roy dans l'armée de Suède. Octobre 1674 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e669');">« Traité d'entre la Suède et l'Électeur de Bavière. 9 mars 1675 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e709');">« Traité de commerce d'entre le roy de Suède et les Estats généraux. 26 novembre 1675 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e747');">« Extrait des articles d'un traité de commerce entre la Suède et la Hollande. 9 novembre 1675 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e789');">« Mémoire pour servir d'instruction au sr comte de Rebenac, envoyé extraordinaire de Sa Majesté dans la Basse-Allemagne et dans l'armée de Suède en Poméranie. Fait au camp devant Valenciennes, 19 mars 1677 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e829');">« Renouvellement du traitté avec la Suède. 25 avril 1675 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e861');">« Articles destachés des Mémoires du chevalier de Terlon »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e881');">Imprimé. « Traité pour l'assemblée de Lunden entre le roy de Suède et le roy de Dannemark. » Paris, 1679, in-4o</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e926');">Imprimé. « Traité de paix entre le Roy, le roy de Suède et le roy de Dannemark. 2 septembre 1679. » Paris 1679, in-4o</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e965');">Traité entre le Danemark et l'Empire. Copenhague, 16 janvier 1674. (Texte allemand)</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e995');">Note sur la délimitation de la Poméranie suédoise et de la Poméranie électorale</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e1012');">« Mémoire touchant la ville et évesché de Camin. 20 janvier 1680 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e1029');">« Liste des sénateurs de Suède »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e1061');">« Estat présent de la Suède, extrait de la depesche de M. le marquis de Feuquières, du 7 février 1680 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e1093');">« Mémoire concernant les traittez d'Elbing et autres faits entre la Suède et les Estatz généraux »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e1123');">« Traitté de commerce entre la Suède et les Estatz généraux. 12 octobre 1679 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e1153');">« Traittez d'alliance entre la France et la Suède. » 1631-1641</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e1180');">Imprimé. « A gl'amici del ben publico d'Europa. » — Placard contre la France</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e1202');">Imprimé. Projet pour abattre promptement la France et délivrer l'Europe. Villa-Franca. 1679</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e1225');">« Tractatus inter regem Daniæ et ducem Slesvici Holsatiæ Gottorpiensem. » 22 mai 1658</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000085021_d0e1247');">« Mémoire sur la manière dont les Électeurs escrivent au Roy »</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

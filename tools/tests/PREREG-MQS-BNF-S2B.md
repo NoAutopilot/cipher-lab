@@ -1,4 +1,4 @@
-# PREREG-MQS-BNF-S2B (written 9 Oct 2026, 07:2x UTC by date -u, before any notice was fetched or scored)
+# PREREG-MQS-BNF-S2B (written 9 Oct 2026, 07:10 UTC by date -u (corrected from "07:2x"), before any notice was fetched or scored)
 
 Job: MQS-BNF-S2B (LANE MQS-2, account 4), the second half of S2 of MQS-BNFPILE's "Later sessions": score with
 `tools/bnf_findingaid.py --pile` (scorer unchanged, PILE_MIN 5) the non-Français finding aids (NAF, Clairambault,
@@ -61,3 +61,30 @@ Both numbers for every gate; every notice with open_bare >= 1 listed with digiti
 digitised goes into ONE batched REQUEST.md (ASKS 38 pattern) covering S2A and S2B together (S2A handed over none);
 if none clears, no REQUEST.md is written and that is said. A notice with no item list is `image-triage`, never a
 negative. Requests per host reported.
+
+## Results (9 Oct 2026, 07:26-07:3x UTC by date -u; written after the runs, gates unchanged)
+Requests: 72 to archivesetmanuscrits.bnf.fr (ceiling 190), all answered, no 403/429/challenge; Gallica 0.
+Log: `sources/bnf-findingaids/2026-10-09/s2b-fetch-log.json`; table: `sources/bnf-findingaids/2026-10-09/s2b-pile.tsv`
+(33 S2B notices + fr.2988, portals on). Fetched 33 new notices (25 census arks + 8 from cote searches); Clairambault
+325, 328, 348, 349, 351, 357, 360, 361 resolve to components of the group notice 312-452 (cc13826w), Clairambault 1108
+to 1058-1110 (cc137820), NAF 1643 to NAF 1565-1660 (cc39195x). No exact-title match (not a negative, not looked up
+further): Dupuy 44, 63, 111; Clairambault 296, 1111, 1225; NAF 1619, 1660, 6972, 13349.
+- K1: fr.2988 bare 26, open_bare 0, rank 1 of 34 by bare -> PASS.
+- K2: base drawn = cc850219 (Arsenal Ms-4738). 10-item plant open_bare 10, class pile, rank 1 of 35; 5-item plant
+  open_bare 5, class pile, rank 1 of 35 -> PASS.
+- N1 (i): S2B + fr.2988, 8 volumes with items, 254 items: real max bare 26 vs null p50 10, p95 13, max 17 -> PASS.
+  (ii): S2B + 10-item plant, fr.2988 removed: real 10 vs null p50 5, p95 8, max 10 -> PASS (the null max ties it once).
+  Descriptive: S2B alone, real 0 vs null 0.
+Target set: **no bare item in any S2B notice**; no volume reaches class pile or few-bare. Seven notices carry an item
+list the scorer reads: Espagnol 132 (35 cipher items, all named, digitised), Espagnol 336 (9 named, digitised),
+Arsenal Ms-6334 (4 named, digitised unknown), fr.5160 (1 item, deciphered), Ms-4738, Espagnol 174, NAF 28930 (no
+cipher items). **26 notices are image-triage** (volume-level: an index of names with "Lettres", no "Fol. N • no."
+item list), never a negative: all Clairambault, Dupuy, Lorraine, Cinq cents de Colbert, Baluze 178, italien 2242,
+NAF 23094/1565-1660/4206, fr.5176, Ms-6516. This is a scope limit of --pile on these fonds (stated in its docstring),
+not evidence about the volumes. Two of them name cipher in the notice text, read off the saved HTML without scoring:
+Clairambault 460 (title "Correspondance diplomatique, lettres chiffrées ... 1650 à 1653", digitised yes) and Cinq cents
+de Colbert 483 ("f. 46, 50, 52, etc. ... Césy, ambassadeur à Constantinople, 1624-1625 [70 lettres chiffrées, avec la
+traduction interlinéaire]" -- deciphered on the leaf by that description); NAF 23094 says "Avec déchiffrement des
+dépêches chiffrées". All three are digitised or decipherment-bearing, so none is a reproduction-request item.
+REQUEST.md: none written -- neither S2A nor S2B found an undigitised notice at class pile.
+Excluded by title (not fetched), per the list above: 55 census arks.

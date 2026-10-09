@@ -1,0 +1,603 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000091811">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000091811">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Erudits et bibliophiles > Cinq cents de Colbert</div>
+					<h1>Cinq cents de Colbert 483
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000091811_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811">Cinq cents de Colbert 483 • Dupuy 475 • Recueil de pièces diplomatiques et relations de voyages, concernant les rapports de la France avec la Turquie, l'Asie-Mineure, l'Égypte, l'Éthiopie, les pays Barbaresques, le Portugal, la Georgie, la Perse, l'Inde, le Canada, les Antilles et le Bresil. Correspondance originale de Harlay de Cesy et de nos consuls en pays ottoman, etc. (1535, 1559 et 1601-1664.)</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e391">f. 1 • Mémoire, en italien, sur l'Empire ottoman</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e397">f. 10 • Lettre du grand vizir à Henri IV sur la prise de Canisé, 1601 ; traduction de « François de La Croix Paitis, interprète du Roy en langue turquesque, qui a l'original entre ses mains »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e403">f. 16 • Lettre de Mahomet III à Henri IV, 1603</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e409">f. 19 • Capitulations ou « Articles du traicté, faict en l'année mil six cens quatre, entre Henri le Grand et Sultan Amat, empereur des Turcs, par l'entremise de Messire François Savary, seigneur de Brèves. A Paris, de l'imprimerie des langues orientales, arabique, turquesque, persique, etc., 1615, » in-4°, impr., en français et en turc</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e418">f. 43 • Traité original, en arménien, grec, italien, passé à Jérusalem en 1623 entre le patriarche grec, l'évêque arménien et le président latin de Terre-Sainte, qui ont apposé leurs sceaux et envoyé l'acte à Harlay de Césy, ambassadeur de France à Constantinople, 1624</a></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e427">Dépêches originales adressées à Louis XIII</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e434">f. 44, 103, 145 • Brulart de Puysieulx, Antoine de Loménie, sieur de la Ville-aux-Clercs, par « Bourdin, » consul de France à Raguse, 1623-1624</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e440">f. 46, 50, 52, etc. • Philippe de Harlay de « Césy, » ambassadeur à Constantinople, 1624-1625 [70 lettres chiffrées, avec la traduction interlinéaire]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e446">f. 58, 68, 79, etc. • Louis « Gedoyn, » sieur de Bellan, consul en Syrie, Chypre et Caramanie, 1624-1625 [12 lettres]</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e452">f. 71 • « A. Du Rier, » consul de France au Caire, 1624</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e458">f. 73, 219 • « F. Lombard, pauvre récollé » à Jérusalem, 1624</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e464">f. 89, 127 • brefs d'Urbain VIII pour Louis XIII, 1624</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e470">f. 90 • « Olivier Olivier, » interprète à Péra, 1624</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e476">f. 101 et 100 • « Théophan. », patriarche grec de Terre-Sainte, original en grec, avec traduction en italien, 1624</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e485">f. 111 • Mehemet Pacha, traduction en italien</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e491">f. 113 • le P. « Martin, en la Sainte Cité » de Jérusalem, 1624</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e497">f. 115 • Amet aga, trésorier du vizir Mustafa Pacha</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e503">f. 125, 137, 184, 229 • de « La Picardière, » envoyé à Constantinople, 1624 : lettres datées de Venise, Bosna Serrail, Péra, Naples</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e509">f. 158 • Antoine Séguier, président « de Villiers, » ambassadeur à Venise, 1624</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e515">f. 171 • « Sigismundus, rex » Poloniae, 1624</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e521">f. 177, 181 • « J. Lempereur, » consul à Jérusalem, 1624</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e527">f. 199 • « de Bermond, » Marseille, 1624</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e533">f. 201 • Jean II « Ceberet, » Venise, 1624</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e539">f. 266, 267 • Étienne III « d'Aligre, » ambassadeur à Venise, 1625</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e545">f. 282 • Louis XIII au Sultan Amurat, au Mufty, au Caymacan, au Bacha de la mer, 1628, copies</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e551">f. 285 • sieur de Monthoulieu, Constantinople, 1635</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e557">f. 288-294 • « F. Jacinto d'Arezzo, arcivescovo di Smirne, » à Mazarin, 1652-1653 [5 lettres]</a></div></div></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e563">f. 152 • « Estat des présens faictz par le sieur Gédoyn pour s'establir consul d'Alep »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e569">f. 268 • « Articles proposés au prince de Transsilvanie par les commissaires de l'Empereur, » 1625</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e575">f. 295 • « Relation du landgrave Ernest de Hessen, envoyée de Vienne, » 1663</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e581">f. 300 • « Propositio comitis Nicolai Zerini sacrae Caesareae Majestati... super desertione obsidionis Canisiae et expugnatione arcis Zerinae, » 1664, in-4°, impr.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e590">f. 306 • « Relation de M. le chevalier de Béthune envoyée à M. Colbert de Vandières, du camp de Raab, proche Kermen en Hongrie, le 6 aoust 1664 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e596">f. 309, 314, 332 • Relations diverses de la campagne de Hongrie en 1664, dont l'une adressée à Colbert</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e602">« Extraict d'un traité fait par M. de La Haye, cy devant ambassadeur du Roy à Constantinople, de la religion des Turcs, » 1664 (f. 364), avec deux relations dudit Jean « de La Haye » sur les événements advenus durant les vingt-deux années de son ambassade à Constantinople (f. 379), et les trois guerres engagées entre les Turcs et les Chrétiens à la date du 12 octobre 1664 (f. 391).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e606">f. 397 • « Relation du sr... contenant les particularités de son voyage d'Hongrie et de l'audiance qu'il eut du grand vizir à Bellegrade, » 1665</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e615">f. 405 • Lettre originale de « J[ean] Nicot, » ambassadeur de France en Portugal, à François II, 1559</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e624">f. 409 • « Relation briefve et succinte de l'acheminement des Cappucins au royaume de Perse,... par F[rère] Pacifique de Provins »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e630">f. 431 • Lettre de « F[rère] Gabriel de Paris » au P. Pacifique de Provins, Ispahan en Perse, 1629</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e636">Copie de lettres du joaillier bordelais Augustin Hiriart. Lahore, 1620 et 1625, copie de J. Dupuy (f. 436-439), publiées par M. Ch. de La Roncière, dans la Revue hebdomadaire (mars 1905), de Peduka Sirie, sultan de Sumatra, au roi Jacques Ier d'Angleterre (f. 440), — du P. Emmanuel Diaz. Macao, 1625 (f. 441).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e646">f. 443 • Places fortes de la Compagnie hollandaise des Indes Orientales</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e652">Copie d'une lettre de « Virginius Orsinus Anguillara » ou Orsini, comte de l'Anguillara, sur la prise de La Goulette par Charles-Quint, 1535 (f. 446), suivie du traité passé par Charles-Quint avec Mouley Hassan, bey de Tunis (f. 448).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e656">f. 450 • Lettre originale de « A[rnoult] Delisle, » agent français au Maroc, 1608</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e665">f. 452 • « Rellation du royaume de Marroque et des villes qui en despendent, » 1633</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e671">f. 459 • Plan de conquête des royaumes d'Alger et Tunis, proposé au Roi et signé « Blaize Réimond Mérigon, de Marseille » ; publié par M. H. Stein dans la Revue de géographie (1883), t. I, p. 39.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e680">f. 466 • Supplique adressée à Louis XIII par deux mille Français, esclaves à Alger, et signée « Garnier »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e686">f. 467 • Traité de paix entre la France et Alger, 1628</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e692">f. 471 • Trêve conclue entre le commandeur de Razilly, chef d'escadre de Bretagne, et le gouverneur de Salé, 1631</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e698">f. 476 • « Articles de paix accordéz entre les roys de France et de Marrocq. Paris, 1636, » in-4°, impr.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e707">f. 492 • « Relation envoyée au Roy par le sieur de Castelan, contenant ce qui s'est passé à la retraite des troupes de Sa Majesté, commandées par Mrs de Gadaigne et de La Guillotière, en l'absence de Monsieur le duc de Beaufort, » 22-30 octobre 1664</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e716">f. 519 • Traité de Tunis, 1665</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e722">f. 534 • « Mémoire de tous les noms des [258] François qui se trouvent prensentement esclaves dans les bagnes et les maisons des principaux Turcs de la ville de Tunis, 1665 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e728">f. 537 • « Lettres du secrétaire ou controoleur du divan d'Alger, » traduites par Pétis de La Croix, secrétaire interprète du Roy en langue turque, 1665</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e734">f. 541 • Convention avec Alger, signée par le commissaire général des armées navales François Trubert, 1666</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e740">f. 550 • « Observations sur les traictés faits par M. de Beaufort, au nom du Roy, avec le bacha, divan et milice du royaume d'Alger ; » mémoire autographe de Colbert</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e749">f. 551 • « Estat du nombre des esclaves de la nation françoise qui sont destenus icy en Alger, » signé de « Dubourdieu, consul », 1665</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e755">f. 554 • « Mémoire de l'estat de l'Egipte en 1634 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e761">f. 565 • « Viaggio degl' Etiopi, » 1635</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e767">f. 567 • « Informatione della Georgia, data alla Sta di Nostro Signore papa Urbano VIII da Pietro della Valle, il Pellegrino, l'anno 1627 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e776">f. 581 • Lettre du P. Denis Jemes, récollet. Québec, 1615</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e782">f. 583 • Confirmation faite par Louis XIV d'une concession de l'île Saint-Christophe à l'Ordre des Hospitaliers, 1653</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000091811_d0e788">f. 587 • « Relation du Brésil »</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Cinq cents de Colbert 483 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc918111&Cote=Cinq cents de Colbert 483&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b10034038s">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 35156 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc918111&Cote=MF 35156&typecote=sub" onclick="return xitiResa()">Réserver</a></li><li><span class="libelle">Document de substitution : MF 35157 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc918111&Cote=MF 35157&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Cinq cents de Colbert 483 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Dupuy 475</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de pièces diplomatiques et relations de voyages, concernant les rapports de la France avec la Turquie, l'Asie-Mineure, l'Égypte, l'Éthiopie, les pays Barbaresques, le Portugal, la Georgie, la Perse, l'Inde, le Canada, les Antilles et le Bresil. Correspondance <emph render="italic">originale</emph> de Harlay de Cesy et de nos consuls en pays ottoman, etc. (1535, 1559 et 1601-1664.)</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.589 feuillets.360 × 250 mm.Reliure maromaroquin rouge, aux armes de Colbert.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc (début à f. 222). Cote de consultation en salle de lecture : MF 35156. Cote de la matrice (pour commander une reproduction) : R 31609.</p>
+</span>
+</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc (f. 223 à fin). Cote de consultation en salle de lecture : MF 35157. Cote de la matrice (pour commander une reproduction) : R 31609.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution : R 31609 (manuscrit entier).</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b10034038s" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="http://gallica.bnf.fr/ark:/12148/btv1b10034038s.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;http://gallica.bnf.fr/ark:/12148/btv1b10034038s.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="scopecontent-class">
+<div class="label-part">
+<p class="scopecontent-label">Présentation du contenu</p>
+</div>
+<div class="description-part">
+<span>
+<p>La dernière partie de ce manuscrit (f. 405-589 et fol. 285) n'est autre chose que le <a title="Consulter ce document" target="_blank" href="http://archivesetmanuscrits.bnf.fr/ark:/12148/cc886131" class="hrefLink ext">manuscrit 475 de la collection Dupuy</a>, qui était à tort considéré jusqu'ici comme en déficit.</p>
+</span>
+</div>
+</div><div class="controlaccess-class">
+<p>ABYSSINIE • Voyage de l'année 1635</p>
+<p>ACHMET, ou AHMED Ier, sultan ottoman</p>
+<p>ALIP • consulat français</p>
+<p>ALGER • esclaves français</p>
+<p>ALGER • plan de conquête</p>
+<p>ALGER • traités avec la France</p>
+<p>ALIGRE, Étienne III d', ambassadeur à Venise</p>
+<p>AMURAT, sultan</p>
+<p>BEAUFORT, François de Vendôme, duc de</p>
+<p>BELGRADE</p>
+<p>BERMOND, De</p>
+<p>BETHUNE, Chevalier de, relation de la campagne de Hongrie</p>
+<p>BOSNA SERAÏ</p>
+<p>BRESIL • relation</p>
+<p>BREVES, François Savary de • ambassadeur à Constantinople</p>
+<p>CANISE, siège et prise</p>
+<p>CASTELAN, De</p>
+<p>CEBERET, Jean II, chargé d'affaires en Allemagne</p>
+<p>CHARLES-QUINT • prise de la Goulette</p>
+<p>COLBERT, Jean-Baptiste • reliures à ses armes</p>
+<p>COLBERT DE VANDIERES, Nicolas, commissaire envoyé en Lorraine</p>
+<p>COMPAGNIE HOLLANDAISE DES INDES ORIENTALES • places fortes</p>
+<p>CZERNETS, Nicolas, comte de</p>
+<p>DIAZ, le P. Emmanuel, missionnaire à Macao</p>
+<p>DUBOURDIEU, consul de France à Alger</p>
+<p>DUPUY, Jacques</p>
+<p>DU RIER, A., consul de France au Caire</p>
+<p>ÉGYPTE • consuls français</p>
+<p>ÉGYPTE • état en 1634</p>
+<p>FRANÇOIS II • traités</p>
+<p>GABRIEL DE PARIS, le P., capucin, missionnaire à Ispahan</p>
+<p>GADAIGNE, De</p>
+<p>GEDOYN, Louis, sieur de Bellan, consul en Syrie, Chypre et Caramanie • lettres</p>
+<p>GEORGIE</p>
+<p>HARLAY DE CESY, Philippe de, ambassadeur à Constantinople</p>
+<p>HENRI IV</p>
+<p>HENRI IV • traités avec la Turquie</p>
+<p>HESSE, Ernest, landgrave de, relation envoyée de Vienne</p>
+<p>HIRIART, Augustin, joaillier, voyageur dans l'Inde</p>
+<p>HONGRIE • campagne de 1664</p>
+<p>JACINTO D'AREZZO, archevêque de Symrne</p>
+<p>JEMES, Le P. Denis, récollet, missionnaire à Québec</p>
+<p>JERUSALEM, consul de France</p>
+<p>JERUSALEM, consul de France • traité entre le patriarche grec, l'évêque arménien et le président latin</p>
+<p>LA GOULETTE • prise par Charles-Quint</p>
+<p>LA GUILLOTIERE, De</p>
+<p>LA HAYE, Jean de, ambassadeur à Constantinople, relation de son ambassade</p>
+<p>LA PICARDIERE, De, envoyé à Constantinople</p>
+<p>LEMPEREUR, J., consul à Jérusalem</p>
+<p>LOMBARD, F., récollet à Jérusalem</p>
+<p>LOMENIE, Antoine de, secrétaire d'État</p>
+<p>LOUIS XIII • lettres</p>
+<p>MACAO</p>
+<p>MAHOMET III • lettre</p>
+<p>MAROC • consuls de France</p>
+<p>MAROC • relation du royaume (1608)</p>
+<p>MAROC • traité avec la France</p>
+<p>MARTIN, Le P., résidant à Jérusalem</p>
+<p>MEHEMET-PACHA</p>
+<p>MONTHOULIEU, De</p>
+<p>MOULEY-HASSAN, bey de Tunis</p>
+<p>MUFTI</p>
+<p>MUSTAPHA-PACHA, grand vizir</p>
+<p>NICOT, Jean, ambassadeur en Portugal • lettres</p>
+<p>OLIVIER, Olivier, interprète à Péra</p>
+<p>ORSINI DELL' ANGHILLARA, ou DE L'ANGUILLARA, Virginio, général des galères de Malte, du Saint-Siège et de France</p>
+<p>PACIFIQUE DE PROVINS, Le P., capucin, voyage en Perse</p>
+<p>PERSE</p>
+<p>PETIS DE LA CROIX, François, ou DE LA CROIX-PAITIS, secrétaire interprète du roi en langue turque</p>
+<p>PORTUGAL • ambassadeurs de France</p>
+<p>PUYSIEULX ou PUYSIEUX, Pierre Brûlart, vicomte de</p>
+<p>RAAB, Camp du</p>
+<p>RAZILLY, Isaac de, chef d'escadre de Bretagne • expédition au Maroc</p>
+<p>SAINT-CHRISTOPHE, Ile, concédée à l'Ordre de Malte</p>
+<p>SALE • traité avec la France</p>
+<p>SIGISMOND III, roi de Pologne</p>
+<p>SUMATRA, Peduka-Sirie, sultan</p>
+<p>THEOPHANE, patriarche grec de Terre-Sainte</p>
+<p>TRUBERT, François, commissaire général des armées navales</p>
+<p>TUNIS</p>
+<p>TUNIS • bey</p>
+<p>TUNIS • plan de conquête</p>
+<p>TUNIS • traité avec la France</p>
+<p>TURCS, en Hongrie • religion</p>
+<p>TURQUIE • ambassadeurs français</p>
+<p>TURQUIE • mémoire sur l'empire ottoman</p>
+<p>URBAIN III, pape</p>
+<p>VILLIERS, Antoine Séguier, dit le président de</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e391');">Mémoire, en italien, sur l'Empire ottoman</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e397');">Lettre du grand vizir à Henri IV sur la prise de Canisé, 1601 ; traduction de « François de La Croix Paitis, interprète du Roy en langue turquesque, qui a l'original entre ses mains »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e403');">Lettre de Mahomet III à Henri IV, 1603</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e409');">Capitulations ou « Articles du traicté, faict en l'année mil six cens quatre, entre Henri le Grand et Sultan Amat, empereur des Turcs, par l'entremise de Messire François Savary, seigneur de Brèves. A Paris, de l'imprimerie des langues orientales, arabique, turquesque, persique, etc., 1615, » in-4°, impr., en français et en turc</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e418');">Traité original, en arménien, grec, italien, passé à Jérusalem en 1623 entre le patriarche grec, l'évêque arménien et le président latin de Terre-Sainte, qui ont apposé leurs sceaux et envoyé l'acte à Harlay de Césy, ambassadeur de France à Constantinople, 1624</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e427');">Dépêches originales adressées à Louis XIII</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e563');">« Estat des présens faictz par le sieur Gédoyn pour s'establir consul d'Alep »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e569');">« Articles proposés au prince de Transsilvanie par les commissaires de l'Empereur, » 1625</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e575');">« Relation du landgrave Ernest de Hessen, envoyée de Vienne, » 1663</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e581');">« Propositio comitis Nicolai Zerini sacrae Caesareae Majestati... super desertione obsidionis Canisiae et expugnatione arcis Zerinae, » 1664, in-4°, impr.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e590');">« Relation de M. le chevalier de Béthune envoyée à M. Colbert de Vandières, du camp de Raab, proche Kermen en Hongrie, le 6 aoust 1664 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e596');">Relations diverses de la campagne de Hongrie en 1664, dont l'une adressée à Colbert</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e602');">« Extraict d'un traité fait par M. de La Haye, cy devant ambassadeur du Roy à Constantinople, de la religion des Turcs, » 1664 (f. 364), avec deux relations dudit Jean « de La Haye » sur les événements advenus durant les vingt-deux années de son ambassade à Constantinople (f. 379), et les trois guerres engagées entre les Turcs et les Chrétiens à la date du 12 octobre 1664 (f. 391).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e606');">« Relation du sr... contenant les particularités de son voyage d'Hongrie et de l'audiance qu'il eut du grand vizir à Bellegrade, » 1665</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e615');">Lettre originale de « J[ean] Nicot, » ambassadeur de France en Portugal, à François II, 1559</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e624');">« Relation briefve et succinte de l'acheminement des Cappucins au royaume de Perse,... par F[rère] Pacifique de Provins »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e630');">Lettre de « F[rère] Gabriel de Paris » au P. Pacifique de Provins, Ispahan en Perse, 1629</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e636');">Copie de lettres du joaillier bordelais Augustin Hiriart. Lahore, 1620 et 1625, copie de J. Dupuy (f. 436-439), publiées par M. Ch. de La Roncière, dans la Revue hebdomadaire (mars 1905), de Peduka Sirie, sultan de Sumatra, au roi Jacques Ier d'Angleterre (f. 440), — du P. Emmanuel Diaz. Macao, 1625 (f. 441).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e646');">Places fortes de la Compagnie hollandaise des Indes Orientales</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e652');">Copie d'une lettre de « Virginius Orsinus Anguillara » ou Orsini, comte de l'Anguillara, sur la prise de La Goulette par Charles-Quint, 1535 (f. 446), suivie du traité passé par Charles-Quint avec Mouley Hassan, bey de Tunis (f. 448).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e656');">Lettre originale de « A[rnoult] Delisle, » agent français au Maroc, 1608</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e665');">« Rellation du royaume de Marroque et des villes qui en despendent, » 1633</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e671');">Plan de conquête des royaumes d'Alger et Tunis, proposé au Roi et signé « Blaize Réimond Mérigon, de Marseille » ; publié par M. H. Stein dans la Revue de géographie (1883), t. I, p. 39.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e680');">Supplique adressée à Louis XIII par deux mille Français, esclaves à Alger, et signée « Garnier »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e686');">Traité de paix entre la France et Alger, 1628</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e692');">Trêve conclue entre le commandeur de Razilly, chef d'escadre de Bretagne, et le gouverneur de Salé, 1631</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e698');">« Articles de paix accordéz entre les roys de France et de Marrocq. Paris, 1636, » in-4°, impr.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e707');">« Relation envoyée au Roy par le sieur de Castelan, contenant ce qui s'est passé à la retraite des troupes de Sa Majesté, commandées par Mrs de Gadaigne et de La Guillotière, en l'absence de Monsieur le duc de Beaufort, » 22-30 octobre 1664</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e716');">Traité de Tunis, 1665</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e722');">« Mémoire de tous les noms des [258] François qui se trouvent prensentement esclaves dans les bagnes et les maisons des principaux Turcs de la ville de Tunis, 1665 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e728');">« Lettres du secrétaire ou controoleur du divan d'Alger, » traduites par Pétis de La Croix, secrétaire interprète du Roy en langue turque, 1665</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e734');">Convention avec Alger, signée par le commissaire général des armées navales François Trubert, 1666</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e740');">« Observations sur les traictés faits par M. de Beaufort, au nom du Roy, avec le bacha, divan et milice du royaume d'Alger ; » mémoire autographe de Colbert</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e749');">« Estat du nombre des esclaves de la nation françoise qui sont destenus icy en Alger, » signé de « Dubourdieu, consul », 1665</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e755');">« Mémoire de l'estat de l'Egipte en 1634 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e761');">« Viaggio degl' Etiopi, » 1635</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e767');">« Informatione della Georgia, data alla Sta di Nostro Signore papa Urbano VIII da Pietro della Valle, il Pellegrino, l'anno 1627 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e776');">Lettre du P. Denis Jemes, récollet. Québec, 1615</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e782');">Confirmation faite par Louis XIV d'une concession de l'île Saint-Christophe à l'Ordre des Hospitaliers, 1653</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000091811_d0e788');">« Relation du Brésil »</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

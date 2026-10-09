@@ -1,0 +1,303 @@
+{
+"requests_counted": 72,
+"log": [
+[
+"census",
+"cc120521",
+"ok",
+0
+],
+[
+"census",
+"cc918111",
+"ok",
+0
+],
+[
+"census",
+"cc91720t",
+"ok",
+0
+],
+[
+"census",
+"cc13829m",
+"ok",
+0
+],
+[
+"census",
+"cc138775",
+"ok",
+0
+],
+[
+"census",
+"cc138146",
+"ok",
+0
+],
+[
+"census",
+"cc13826w",
+"ok",
+0
+],
+[
+"census",
+"cc139674",
+"ok",
+0
+],
+[
+"census",
+"cc137837",
+"ok",
+0
+],
+[
+"census",
+"cc88429b",
+"ok",
+0
+],
+[
+"census",
+"cc88435k",
+"ok",
+0
+],
+[
+"census",
+"cc58150z",
+"ok",
+2
+],
+[
+"census",
+"cc58166m",
+"ok",
+0
+],
+[
+"census",
+"cc34105c",
+"ok",
+0
+],
+[
+"census",
+"cc95609z",
+"ok",
+0
+],
+[
+"census",
+"cc95625d",
+"ok",
+0
+],
+[
+"census",
+"cc34620f",
+"ok",
+0
+],
+[
+"census",
+"cc340362",
+"ok",
+0
+],
+[
+"census",
+"cc34747q",
+"ok",
+75
+],
+[
+"census",
+"cc34782b",
+"ok",
+5
+],
+[
+"census",
+"cc34944b",
+"ok",
+88
+],
+[
+"census",
+"cc11190d",
+"ok",
+0
+],
+[
+"census",
+"cc850219",
+"ok",
+10
+],
+[
+"census",
+"cc86298x",
+"ok",
+23
+],
+[
+"census",
+"cc86455q",
+"ok",
+0
+],
+[
+"Dupuy 44",
+"",
+"no-exact-title"
+],
+[
+"Dupuy 63",
+"",
+"no-exact-title"
+],
+[
+"Dupuy 111",
+"",
+"no-exact-title"
+],
+[
+"Dupuy 155",
+"cc88344c",
+"ok",
+0
+],
+[
+"Dupuy 265",
+"cc88431m",
+"ok",
+0
+],
+[
+"Dupuy 869",
+"cc88957b",
+"ok",
+0
+],
+[
+"Clairambault 296",
+"",
+"no-exact-title"
+],
+[
+"Clairambault 325",
+"cc13826w",
+"cached"
+],
+[
+"Clairambault 328",
+"cc13826w",
+"cached"
+],
+[
+"Clairambault 348",
+"cc13826w",
+"cached"
+],
+[
+"Clairambault 349",
+"cc13826w",
+"cached"
+],
+[
+"Clairambault 351",
+"cc13826w",
+"cached"
+],
+[
+"Clairambault 357",
+"cc13826w",
+"cached"
+],
+[
+"Clairambault 360",
+"cc13826w",
+"cached"
+],
+[
+"Clairambault 361",
+"cc13826w",
+"cached"
+],
+[
+"Clairambault 813",
+"cc139329",
+"ok",
+0
+],
+[
+"Clairambault 1067",
+"cc137820",
+"ok",
+0
+],
+[
+"Clairambault 1108",
+"cc137820",
+"cached"
+],
+[
+"Clairambault 1111",
+"",
+"no-exact-title"
+],
+[
+"Clairambault 1225",
+"",
+"no-exact-title"
+],
+[
+"NAF 1619",
+"",
+"no-exact-title"
+],
+[
+"NAF 1628",
+"cc39195x",
+"ok",
+0
+],
+[
+"NAF 1643",
+"cc39195x",
+"cached"
+],
+[
+"NAF 1660",
+"",
+"no-exact-title"
+],
+[
+"NAF 4206",
+"cc40202c",
+"ok",
+0
+],
+[
+"NAF 6972",
+"",
+"no-exact-title"
+],
+[
+"NAF 13349",
+"",
+"no-exact-title"
+],
+[
+"NAF 28930",
+"cc1032404",
+"ok",
+1
+]
+]
+}

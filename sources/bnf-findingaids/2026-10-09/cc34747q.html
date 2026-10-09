@@ -1,0 +1,521 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000034747">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000034747">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Espagnol</div>
+					<h1>Espagnol 132
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000034747_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747">Espagnol 132 • Regius 9999</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e64">1 Lettre de Philippe II "al marques de Ayamonte," D. Antonio de Guzman y Zuñiga, gouverneur du Milanais. Ordonne de payer les fournitures faites par le duc de Savoie au duc d'Albe en 1573. S. Lorenzo, 19 octobre 1577.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e82">F. 3 • 2 Lettre de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris. Madrid, 16 décembre 1577. En chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e96">F. 5 et 6 • 3 et 4 Deux lettres de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris. Madrid, 18 décembre 1577 et 16 janvier 1578.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e110">F. 7 • 5 Lettre de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris. Ordre d'empêcher les rebelles des Pays-Bas d'être reçus et de trouver des secours à la cour de France. Madrid, 18 janvier 1578.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e127">F. 9 • 6 Lettre de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris, sur la politique des Pays-Bas, les intrigues des Anglais et l'emprisonnement d'Antonio de Guaras. Même date.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e150">F. 11 • 7 Lettre de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris, sur les affaires de France et les missions de MM. de Selles et de Vaus. Madrid, 24 janvier 1578. En partie chiffrée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e170">F. 14 • 8 Lettre de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris. Annonce l'arrivée à Paris de Bernardino de Mendoza qui va en Angleterre, et ordonne à Vargas de présenter cet ambassadeur à la cour de France. S. Lorenzo, 31 janvier 1578.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e187">F. 15 • 9 Lettre de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris, au sujet de Diego Fernandez de Soto, qui se rend en France pour réclamer le navire N ra S ra de Esperança, pris par les Français en 1577 près de Saint-Domingue. Madrid, 19 février 1578.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e213">F. 17, 22, 26, 28, 30, 32, 34 • 10 à 16 Sept lettres de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris. Madrid, 8 et 16 mars, et S. Lorenzo, 16 et 17 mars 1578. En partie chiffrées. Les articles 11 et 13 sont des duplicata des articles 10 et 12.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e227">F. 36 • 17 Lettre de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris. Annonce l'arrivée de Juan Ruiz de Herrera avec des dépêches et l'envoi d'un crédit de 3,000 écus au nom d'Alonso de Salinas. Madrid, 17 avril 1578.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e247">F. 37 et 39 • 18 et 19 Deux lettres de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris. Madrid, 15 et 16 avril 1578. L'article 18 est en partie chiffré.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e261">F. 40 • 20 Lettre de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris, au sujet du licencié Çalva, chanoine du monastère de Roncesvalles, commandeur de Saint-Mathan, qui avait passé en France avec de l'argent dudit monastère. Madrid, 17 avril 1578.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e283">F. 41, 44 et 46 • 21 à 23 Trois lettres de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris. Madrid, 29 avril 1578. En chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e297">F. 48 • 24 Lettre de "Hernando de Escobar" à "Juan de Vargas Mexia". Madrid, 31 mai 1578.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e317">F. 50, 54, 58, 60, 62 • 25 à 29 Cinq lettres de Philippe II à "Juan de Vargas Mexia". Bosque de Segovia, 7 et 14 juin 1578. En chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e336">F. 66 • 30 Lettre d'"Ant[onio] Perez" à "Juan de Vargas Mexia". Remet à Vargas une dépêche pour D. Juan d'Autriche et prie l'ambassadeur de la lui faire remettre en disant qu'il l'a reçue par la voie ordinaire des courriers du 12 mai. Segovia, 15 juin 1578.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e353">F. 68 • 31 Lettre de "Hernando de Escobar" à "Juan de Vargas Mexia". "Cobos, junto á Parraçes," 18 juin 1578.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e373">F. 70 • 32 Lettre de "Caterine" de Médicis à "Juan de Vargas Mexia". Chantilly, 9 juin 1578. En français.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e387">F. 71, 73, 75 • 33 à 35 Trois lettres de Philippe II à "Juan de Vargas Mexia". Madrid, 19 et 31 juillet 1578. En chiffre. L'art. 35 est un duplicata de l'art. 34.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e401">F. 77 • 36 Lettre de Philippe II à "Alonso de Curiel." Madrid, 31 juillet 1578.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e415">F. 79, 81, 83, 85 • 37 à 40 Quatre lettres de Philippe II à Juan de Vargas Mexia. El Pardo, 4 août ; Madrid, 18 août et 10 septembre 1578. En chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e429">F. 87 • 41 Lettre d'"Ant[onio] Perez" à Juan de Vargas Mexia. Madrid, 13 septembre 1578. En partie chiffrée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e443">F. 89 et 93 • 42 et 43 Deux lettres de Philippe II à Juan de Vargas Mexia. Madrid, 19 septembre 1578. En chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e457">F. 97 • 44 Lettre de l'"arcivescovo di Nazarett," Fabio Miro Frangipani, à Philippe II, sur sa mission à la cour de France au sujet de l'entreprise du duc d'Alençon en Flandre. Paris, 25 septembre 1578. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e474">F. 99 • 45 Lettre de Philippe II à Juan de Vargas Mexia, au sujet de la maladie de Juan d'Autriche. Madrid, 13 octobre 1578.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e491">F. 101 • 46 Duplicata de la lettre de Philippe II à Juan de Vargas Mexia, au sujet de la maladie de Juan d'Autriche. Madrid, 13 octobre 1578.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e508">F. 103 et 105 • 47 et 48 Deux lettres de Philippe II à Juan de Vargas Mexia. Même date. En chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e522">F. 107 • 49 Lettre de Philippe II à M. "de la Mote, gouverneur et capitaine... de Gravelinghes." Même date. En français.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e536">F. 109 • 50 Lettre de Philippe II à "Alonso de Curiel." Même date.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e550">F. 111 • 51 Lettre de Philippe II à "M. de la Mota." Même date.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e564">F. 113 • 52 Lettre de Philippe II à Juan de Vargas Mexia. Même date. En chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e578">F. 115 • 53 Lettre de Philippe II à Juan de Vargas Mexia, au sujet de la maladie de Juan d'Autriche, qui oblige le roi à le remplacer dans le gouvernement des Pays-Bas par le prince de Parme. Madrid, 14 octobre 1578.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e598">F. 117 • 54 Duplicata de la lettre de Philippe II à Juan de Vargas Mexia, au sujet de la maladie de Juan d'Autriche, qui oblige le roi à le remplacer dans le gouvernement des Pays-Bas par le prince de Parme. Madrid, 14 octobre 1578.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e612">F. 119 • 55 Lettre de Philippe II à Juan de Vargas Mexia. Madrid, 15 octobre 1578. En chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e626">F. 121 • 56 Lettre de Philippe II "al duque de Sessa." Ordonne de remettre au duc de Savoie les quatre pièces d'artillerie qu'il réclame. S. Lorenço, 19 octobre 1577.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e643">F. 123 • 57 Lettre de Philippe II à Juan de Vargas Mexia. Madrid, 20 octobre 1578. En chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e657">F. 125 • 58 Lettre de Philippe II à Juan de Vargas Mexia. Sur la mort de Juan d'Autriche et la nomination du prince de Parme à sa place. Madrid, 21 octobre 1578.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e671">F. 127 • 59 Lettre de Philippe II à Juan de Vargas Mexia. Ordonne de remercier le roi de France de la permission qu'il a accordée de tirer du blé de son royaume pour l'approvisionnement des Pays-Bas. Madrid, 26 octobre 1578.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e693">F. 129, 132, 134 • 60 à 62 Trois lettres de Philippe II à Juan de Vargas Mexia. Madrid, 1 er et 2 novembre 1578. En chiffre. L'art. 61 est un duplicata de l'art. 60.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e710">F. 136 • 63 Lettre d'"Ant[onio] Perez" à Juan de Vargas Mexia. Annonce un envoi d'argent en Flandre. Madrid, 5 novembre 1578.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e724">F. 138, 140, 142, 144, 146 • 64 à 68 Cinq lettres de Philippe II à Juan de Vargas Mexia. Madrid, 12 et 20 novembre 1578. En chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e738">F. 148 • 69 Lettre d'"Ant[onio] Perez" à Juan de Vargas Mexia, au sujet d'envois d'argent. Madrid, 21 novembre 1578.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e752">F. 150 • 70 Lettre de Philippe II à Juan de Vargas Mexia. Madrid, 30 novembre 1578. En chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e766">F. 152 • 71 Lettre de Philippe II à Juan de Vargas Mexia. Veut obtenir un sauf-conduit pour le transport du corps de Juan d'Autriche, qui doit être embarqué à Nantes. Même date.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e780">F. 154 • 72 Lettre de Philippe II à Juan de Vargas Mexia. El Pardo, 4 décembre 1578. En chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e794">F. 157 • 73 Lettre d'"Ant[onio] Perez" à Juan de Vargas Mexia. Madrid, 8 décembre 1578. En partie chiffrée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e808">F. 161 • 74 Lettre de Philippe II à Juan de Vargas Mexia. El Pardo, 12 décembre 1578. En chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e822">F. 163 • 75 Lettre de Philippe II à Juan de Vargas Mexia. El Pardo, 18 décembre 1578.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e836">F. 165, 167 • 76 et 77 Deux lettres de Philippe II à Juan de Vargas Mexia. S. Lorenço, 10 janvier 1579. En chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e850">F. 169 • 78 Lettre de Philippe II à Juan de Vargas Mexia. Déchiffrement. El Pardo, 22 janvier 1579.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e864">F. 171, 174 • 79 et 80 Deux lettres de Philippe II à Juan de Vargas Mexia. El Pardo, 23 janvier 1579. En chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e878">F. 177 • 81 Lettre du prince de Parme, Alexandre Farnèse, à Juan de Vargas Mexia. Nouvelles de Flandre. 25 janvier 1579. Déchiffrement.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e892">F. 179 • 82 Lettre d'"Ant[onio] Perez" à Juan de Vargas Mexia. Madrid, 26 janvier 1579. En partie chiffrée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e906">F. 181 • 83 Lettre de Philippe II à Juan de Vargas Mexia. El Pardo, 7 février 1579. En chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e920">F. 183 • 84 Lettre de "Leonor de Montmorency," comtesse de Hooghstraeten, à Philippe II.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e937">F. 185 • 85 Lettre de Philippe II à Juan de Vargas Mexia. Madrid, 18 mars 1579. En chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e951">F. 191 • 86 Lettre de Philippe II à Éléonore de Montmorency, "condesa de Ocstrata" (Hooghstraeten).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e973">F. 193 • 87 Lettre de Philippe II à "Pedro de Arcauti," au sujet du règlement de divers comptes. Même date. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e987">F. 195 • 88 Lettre de Philippe II à Juan de Vargas Mexia, au sujet du capitaine Alberto, de Robertino de Pontestura et de Claudio Bergieri, prisonniers à Milan. Passage chiffré. Même date.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e1001">F. 198 • 89 Lettre d'"Ant[onio] Perez" à Juan de Vargas Mexia. Madrid, 15 avril 1579. En chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e1015">F. 200, 202 • 90 et 91 Deux lettres de Philippe II à Juan de Vargas Mexia. S. Lorenço, 21 avril, et Aranxuez, 17 mai 1579. En partie chiffrées.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e1029">F. 204 • 92 Lettre de "Francoys" de Valois, duc d'Alençon, à "Messieurs Estatz generaulx des Pays-Bas." Paris, 13 juin 1579. En français. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e1045">F. 206, 208, 211, 213, 215 • 93 à 97 Cinq lettres de Philippe II à Juan de Vargas Mexia. Tolède, 8 juin ; Açeca, 4 juin ; S. Lorenço, 3 juillet, 7 juillet ; El Pardo, 13 juillet 1579. En chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e1059">F. 217 • 98 Lettre de Philippe II à M. "de Lansac," au sujet d'une entreprise que le roi juge à propos de renvoyer à l'année suivante. S. Lorenço, 22 août 1579. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e1073">F. 218, 220, 222, 224, 226, 228, 231 • 99 à 105 Sept lettres de Philippe II à Juan de Vargas Mexia. S. Lorenço, 24 août, 13 septembre, 13 octobre 1579. Les six dernières en chiffre. L'art. 102 est un duplicata de l'art. 100 ; l'art. 103 un duplicata de l'art. 101 ; l'art. 105 un duplicata de l'art. 104.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e1087">F. 233 • 106 Lettre d'"Alessandro Farnese," prince de Parme, à Juan de Vargas Mexia. En chiffre. Mastricht, 1er novembre 1579.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e1104">F. 235, 237, 239, 241 • 107 à 110 Quatre lettres de Philippe II à Juan de Vargas Mexia. El Pardo, 3 novembre, 13 novembre 1579. En chiffre. L'art. 108 est un duplicata de l'art. 107, et l'art. 110 un duplicata de l'art. 109.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e1115">F. 243 • 111 Lettre d'"El conde [Pedro-Ernesto] de Mansfelt" à Juan de Vargas Mexia. Valenciennes, 19 novembre 1579.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e1126">F. 245 • 112 Lettre de Philippe II à Juan de Vargas Mexia. El Pardo, 29 novembre 1579. En partie chiffrée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e1137">F. 247 • 113 Duplicata de la lettre de Philippe II à Juan de Vargas Mexia. El Pardo, 29 novembre 1579. En partie chiffrée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e1148">F. 249 • 114 Lettre de "Don Juan de Acuña" à Juan de Vargas Mexia. Mastricht, 8 décembre 1579.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e1159">F. 251, 253, 255, 257, 261, 263, 267, 269, 271 • 115 à 123 Neuf lettres de Philippe II à Juan de Vargas Mexia. Madrid, 16 janvier ; Guadalupe, 28 mars ; Merida, 16 mai 1580. L'art. 120 est un duplicata de l'art. 118.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e1170">F. 273 et 275 • 124 et 125 Deux chiffres de Philippe II pour Juan de Vargas Mexia.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e1181">F. 277 • 126 "Dichiaratione di Monsigre il duca [Francesco] d'Alónsa (Alençon) sopra la sua partita de la corte di Francia." Dreux, 17 septembre 1575. Copie en italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e1195">F. 279 • 127 "Relacion del movimiento de Françeses a la parte de Fuenterravia. Para embiar a Juan de Vargas." Août 1579.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e1206">F. 281 • 128 Mémoire relatif à la prise d'un navire espagnol par des marins dieppois. En français.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034747_d0e1217">F. 283-290 • 129 Articles et discours relatifs "al tratado que se avia de esecutar quando se tuvieron stados a Bles (Blois) y la cabeça de la confederaçion era Mos de Guisa." En français.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Espagnol 132 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc34747q&Cote=Espagnol 132&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b10032556x">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 8506 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc34747q&Cote=MF 8506&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Espagnol 132 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Regius 9999 </div>
+<div class="did-unitid">Ancienne cote : Mazarin 498</div>
+<div class="did-date">XVI<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.290 feuillets.345 × 215 mm.</div>
+<div class="divdid">Manuscrit en espagnol</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="accessrestrict-class">
+<div class="label-part">
+<p class="commonBam-label">Conditions d'accès</p>
+</div>
+<div class="description-part">
+<span>
+<p>En raison de son état de conservation, la consultation de ce document est soumise à autorisation, sur demande motivée.</p>
+</span>
+</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 8506. Cote de la matrice (pour commander une reproduction) : R 22368.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b10032556x" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="http://gallica.bnf.fr/ark:/12148/btv1b10032556x.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;http://gallica.bnf.fr/ark:/12148/btv1b10032556x.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="bibliography-class">
+<div class="label-part">
+<p class="commonBam-label">Bibliographie</p>
+</div>
+<div class="description-part">
+<span>
+<p>Catalogue des manuscrits espagnols et des manuscrits portugais, par Alfred Morel-Fatio. Paris : Imprimerie nationale, 1892. Notice 184</p>
+</span>
+</div>
+</div><div class="bibliography-class">
+<div class="label-part">
+<p class="commonBam-label">Bibliographie</p>
+</div>
+<div class="description-part">
+<span>
+<p>M. Gachard a publié et analysé plusieurs lettres de ce recueil ; voyez <emph render="italic">La Bibliothèque Nationale à Paris</emph>, t. I, p. 415 à 424.</p>
+</span>
+</div>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e64');">1 Lettre de Philippe II "al marques de Ayamonte," D. Antonio de Guzman y Zuñiga, gouverneur du Milanais. Ordonne de payer les fournitures faites par le duc de Savoie au duc d'Albe en 1573. S. Lorenzo, 19 octobre 1577.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e82');">2 Lettre de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris. Madrid, 16 décembre 1577. En chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e96');">3 et 4 Deux lettres de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris. Madrid, 18 décembre 1577 et 16 janvier 1578.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e110');">5 Lettre de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris. Ordre d'empêcher les rebelles des Pays-Bas d'être reçus et de trouver des secours à la cour de France. Madrid, 18 janvier 1578.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e127');">6 Lettre de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris, sur la politique des Pays-Bas, les intrigues des Anglais et l'emprisonnement d'Antonio de Guaras. Même date.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e150');">7 Lettre de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris, sur les affaires de France et les missions de MM. de Selles et de Vaus. Madrid, 24 janvier 1578. En partie chiffrée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e170');">8 Lettre de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris. Annonce l'arrivée à Paris de Bernardino de Mendoza qui va en Angleterre, et ordonne à Vargas de présenter cet ambassadeur à la cour de France. S. Lorenzo, 31 janvier 1578.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e187');">9 Lettre de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris, au sujet de Diego Fernandez de Soto, qui se rend en France pour réclamer le navire N ra S ra de Esperança, pris par les Français en 1577 près de Saint-Domingue. Madrid, 19 février 1578.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e213');">10 à 16 Sept lettres de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris. Madrid, 8 et 16 mars, et S. Lorenzo, 16 et 17 mars 1578. En partie chiffrées. Les articles 11 et 13 sont des duplicata des articles 10 et 12.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e227');">17 Lettre de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris. Annonce l'arrivée de Juan Ruiz de Herrera avec des dépêches et l'envoi d'un crédit de 3,000 écus au nom d'Alonso de Salinas. Madrid, 17 avril 1578.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e247');">18 et 19 Deux lettres de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris. Madrid, 15 et 16 avril 1578. L'article 18 est en partie chiffré.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e261');">20 Lettre de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris, au sujet du licencié Çalva, chanoine du monastère de Roncesvalles, commandeur de Saint-Mathan, qui avait passé en France avec de l'argent dudit monastère. Madrid, 17 avril 1578.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e283');">21 à 23 Trois lettres de Philippe II à "Juan de Vargas Mexia," son ambassadeur à Paris. Madrid, 29 avril 1578. En chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e297');">24 Lettre de "Hernando de Escobar" à "Juan de Vargas Mexia". Madrid, 31 mai 1578.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e317');">25 à 29 Cinq lettres de Philippe II à "Juan de Vargas Mexia". Bosque de Segovia, 7 et 14 juin 1578. En chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e336');">30 Lettre d'"Ant[onio] Perez" à "Juan de Vargas Mexia". Remet à Vargas une dépêche pour D. Juan d'Autriche et prie l'ambassadeur de la lui faire remettre en disant qu'il l'a reçue par la voie ordinaire des courriers du 12 mai. Segovia, 15 juin 1578.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e353');">31 Lettre de "Hernando de Escobar" à "Juan de Vargas Mexia". "Cobos, junto á Parraçes," 18 juin 1578.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e373');">32 Lettre de "Caterine" de Médicis à "Juan de Vargas Mexia". Chantilly, 9 juin 1578. En français.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e387');">33 à 35 Trois lettres de Philippe II à "Juan de Vargas Mexia". Madrid, 19 et 31 juillet 1578. En chiffre. L'art. 35 est un duplicata de l'art. 34.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e401');">36 Lettre de Philippe II à "Alonso de Curiel." Madrid, 31 juillet 1578.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e415');">37 à 40 Quatre lettres de Philippe II à Juan de Vargas Mexia. El Pardo, 4 août ; Madrid, 18 août et 10 septembre 1578. En chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e429');">41 Lettre d'"Ant[onio] Perez" à Juan de Vargas Mexia. Madrid, 13 septembre 1578. En partie chiffrée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e443');">42 et 43 Deux lettres de Philippe II à Juan de Vargas Mexia. Madrid, 19 septembre 1578. En chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e457');">44 Lettre de l'"arcivescovo di Nazarett," Fabio Miro Frangipani, à Philippe II, sur sa mission à la cour de France au sujet de l'entreprise du duc d'Alençon en Flandre. Paris, 25 septembre 1578. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e474');">45 Lettre de Philippe II à Juan de Vargas Mexia, au sujet de la maladie de Juan d'Autriche. Madrid, 13 octobre 1578.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e491');">46 Duplicata de la lettre de Philippe II à Juan de Vargas Mexia, au sujet de la maladie de Juan d'Autriche. Madrid, 13 octobre 1578.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e508');">47 et 48 Deux lettres de Philippe II à Juan de Vargas Mexia. Même date. En chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e522');">49 Lettre de Philippe II à M. "de la Mote, gouverneur et capitaine... de Gravelinghes." Même date. En français.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e536');">50 Lettre de Philippe II à "Alonso de Curiel." Même date.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e550');">51 Lettre de Philippe II à "M. de la Mota." Même date.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e564');">52 Lettre de Philippe II à Juan de Vargas Mexia. Même date. En chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e578');">53 Lettre de Philippe II à Juan de Vargas Mexia, au sujet de la maladie de Juan d'Autriche, qui oblige le roi à le remplacer dans le gouvernement des Pays-Bas par le prince de Parme. Madrid, 14 octobre 1578.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e598');">54 Duplicata de la lettre de Philippe II à Juan de Vargas Mexia, au sujet de la maladie de Juan d'Autriche, qui oblige le roi à le remplacer dans le gouvernement des Pays-Bas par le prince de Parme. Madrid, 14 octobre 1578.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e612');">55 Lettre de Philippe II à Juan de Vargas Mexia. Madrid, 15 octobre 1578. En chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e626');">56 Lettre de Philippe II "al duque de Sessa." Ordonne de remettre au duc de Savoie les quatre pièces d'artillerie qu'il réclame. S. Lorenço, 19 octobre 1577.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e643');">57 Lettre de Philippe II à Juan de Vargas Mexia. Madrid, 20 octobre 1578. En chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e657');">58 Lettre de Philippe II à Juan de Vargas Mexia. Sur la mort de Juan d'Autriche et la nomination du prince de Parme à sa place. Madrid, 21 octobre 1578.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e671');">59 Lettre de Philippe II à Juan de Vargas Mexia. Ordonne de remercier le roi de France de la permission qu'il a accordée de tirer du blé de son royaume pour l'approvisionnement des Pays-Bas. Madrid, 26 octobre 1578.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e693');">60 à 62 Trois lettres de Philippe II à Juan de Vargas Mexia. Madrid, 1 er et 2 novembre 1578. En chiffre. L'art. 61 est un duplicata de l'art. 60.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e710');">63 Lettre d'"Ant[onio] Perez" à Juan de Vargas Mexia. Annonce un envoi d'argent en Flandre. Madrid, 5 novembre 1578.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e724');">64 à 68 Cinq lettres de Philippe II à Juan de Vargas Mexia. Madrid, 12 et 20 novembre 1578. En chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e738');">69 Lettre d'"Ant[onio] Perez" à Juan de Vargas Mexia, au sujet d'envois d'argent. Madrid, 21 novembre 1578.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e752');">70 Lettre de Philippe II à Juan de Vargas Mexia. Madrid, 30 novembre 1578. En chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e766');">71 Lettre de Philippe II à Juan de Vargas Mexia. Veut obtenir un sauf-conduit pour le transport du corps de Juan d'Autriche, qui doit être embarqué à Nantes. Même date.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e780');">72 Lettre de Philippe II à Juan de Vargas Mexia. El Pardo, 4 décembre 1578. En chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e794');">73 Lettre d'"Ant[onio] Perez" à Juan de Vargas Mexia. Madrid, 8 décembre 1578. En partie chiffrée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e808');">74 Lettre de Philippe II à Juan de Vargas Mexia. El Pardo, 12 décembre 1578. En chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e822');">75 Lettre de Philippe II à Juan de Vargas Mexia. El Pardo, 18 décembre 1578.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e836');">76 et 77 Deux lettres de Philippe II à Juan de Vargas Mexia. S. Lorenço, 10 janvier 1579. En chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e850');">78 Lettre de Philippe II à Juan de Vargas Mexia. Déchiffrement. El Pardo, 22 janvier 1579.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e864');">79 et 80 Deux lettres de Philippe II à Juan de Vargas Mexia. El Pardo, 23 janvier 1579. En chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e878');">81 Lettre du prince de Parme, Alexandre Farnèse, à Juan de Vargas Mexia. Nouvelles de Flandre. 25 janvier 1579. Déchiffrement.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e892');">82 Lettre d'"Ant[onio] Perez" à Juan de Vargas Mexia. Madrid, 26 janvier 1579. En partie chiffrée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e906');">83 Lettre de Philippe II à Juan de Vargas Mexia. El Pardo, 7 février 1579. En chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e920');">84 Lettre de "Leonor de Montmorency," comtesse de Hooghstraeten, à Philippe II.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e937');">85 Lettre de Philippe II à Juan de Vargas Mexia. Madrid, 18 mars 1579. En chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e951');">86 Lettre de Philippe II à Éléonore de Montmorency, "condesa de Ocstrata" (Hooghstraeten).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e973');">87 Lettre de Philippe II à "Pedro de Arcauti," au sujet du règlement de divers comptes. Même date. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e987');">88 Lettre de Philippe II à Juan de Vargas Mexia, au sujet du capitaine Alberto, de Robertino de Pontestura et de Claudio Bergieri, prisonniers à Milan. Passage chiffré. Même date.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e1001');">89 Lettre d'"Ant[onio] Perez" à Juan de Vargas Mexia. Madrid, 15 avril 1579. En chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e1015');">90 et 91 Deux lettres de Philippe II à Juan de Vargas Mexia. S. Lorenço, 21 avril, et Aranxuez, 17 mai 1579. En partie chiffrées.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e1029');">92 Lettre de "Francoys" de Valois, duc d'Alençon, à "Messieurs Estatz generaulx des Pays-Bas." Paris, 13 juin 1579. En français. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e1045');">93 à 97 Cinq lettres de Philippe II à Juan de Vargas Mexia. Tolède, 8 juin ; Açeca, 4 juin ; S. Lorenço, 3 juillet, 7 juillet ; El Pardo, 13 juillet 1579. En chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e1059');">98 Lettre de Philippe II à M. "de Lansac," au sujet d'une entreprise que le roi juge à propos de renvoyer à l'année suivante. S. Lorenço, 22 août 1579. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e1073');">99 à 105 Sept lettres de Philippe II à Juan de Vargas Mexia. S. Lorenço, 24 août, 13 septembre, 13 octobre 1579. Les six dernières en chiffre. L'art. 102 est un duplicata de l'art. 100 ; l'art. 103 un duplicata de l'art. 101 ; l'art. 105 un duplicata de l'art. 104.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e1087');">106 Lettre d'"Alessandro Farnese," prince de Parme, à Juan de Vargas Mexia. En chiffre. Mastricht, 1er novembre 1579.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e1104');">107 à 110 Quatre lettres de Philippe II à Juan de Vargas Mexia. El Pardo, 3 novembre, 13 novembre 1579. En chiffre. L'art. 108 est un duplicata de l'art. 107, et l'art. 110 un duplicata de l'art. 109.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e1115');">111 Lettre d'"El conde [Pedro-Ernesto] de Mansfelt" à Juan de Vargas Mexia. Valenciennes, 19 novembre 1579.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e1126');">112 Lettre de Philippe II à Juan de Vargas Mexia. El Pardo, 29 novembre 1579. En partie chiffrée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e1137');">113 Duplicata de la lettre de Philippe II à Juan de Vargas Mexia. El Pardo, 29 novembre 1579. En partie chiffrée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e1148');">114 Lettre de "Don Juan de Acuña" à Juan de Vargas Mexia. Mastricht, 8 décembre 1579.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e1159');">115 à 123 Neuf lettres de Philippe II à Juan de Vargas Mexia. Madrid, 16 janvier ; Guadalupe, 28 mars ; Merida, 16 mai 1580. L'art. 120 est un duplicata de l'art. 118.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e1170');">124 et 125 Deux chiffres de Philippe II pour Juan de Vargas Mexia.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e1181');">126 "Dichiaratione di Monsigre il duca [Francesco] d'Alónsa (Alençon) sopra la sua partita de la corte di Francia." Dreux, 17 septembre 1575. Copie en italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e1195');">127 "Relacion del movimiento de Françeses a la parte de Fuenterravia. Para embiar a Juan de Vargas." Août 1579.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e1206');">128 Mémoire relatif à la prise d'un navire espagnol par des marins dieppois. En français.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034747_d0e1217');">129 Articles et discours relatifs "al tratado que se avia de esecutar quando se tuvieron stados a Bles (Blois) y la cabeça de la confederaçion era Mos de Guisa." En français.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,573 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000013814">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000013814">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Erudits et bibliophiles > Clairambault</div>
+					<h1>Clairambault 296-299</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000013814_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814">Clairambault 296-299 • Pièces historiques diverses, dont plusieurs imprimées (1572-1742), et correspondance diplomatique de Pontchartrain (1713).</a><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e505">Clairambault 296 • I Années 1572-1713. — Lettres patentes du roi Charles IX, au sujet d'un emprunt sur les plus riches habitants de la généralité de Tours pour payer le siège de La Rochelle, et constitution de dix livres tournois de rente au profit de Pierre Jaille et Jacques Basmette, demeurant à Sainte-Maure, débiteurs de cent vingt livres tournois envers Julien Challopin, receveur des tailles à Tours (2 et 13 décembre 1572, 27 avril 1573). Impr. S. l. n. d., placard parchemin.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e727">P. 3 • « Justification de la naissance légitime de Bernard, roy d'Italie, petit-fils de Charlemagne. » Impr. S. l. n. d., in-8°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e736">P. 29 • « Tables contenant les chapitres, qualitez, noms, surnoms et armes de tous les chevaliers de l'Ordre du Saint-Esprit, depuis le jour de sa première institution jusqu'à présent. » Impr. S. l. n. d., in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e745">P. 49 • « La gloire du Val-de-Grâce. » Impr. 1669, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e754">P. 85 • Arrêt du Conseil d'État relatif à l'usurpation de la noblesse (26 juillet 1634). Impr. S. l. n. d., in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e763">P. 89 • « Observations pour... Pierre-Louis de Reich de Pennautier, receveur général du Clergé de France, sur deux requestes présentées contre luy par la dame de Saint-Laurens. » Impr. S. l. n. d., in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e772">P. 141 • Factum pour la dame de Saint-Laurens, contre le sieur de Pennautier. Impr. Paris, 1677, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e781">P. 217 • Factum pour dame Marie Vosser, veuve de... Pierre de Hannyvel, sieur de Saint-Laurens,... contre maistre Pierre-Louys de Reich de Pennautier. Impr. Paris, 1677, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e790">P. 247 • Panégyrique de sainte Thérèse prononcé devant la reine... Impr. Paris, 1678, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e799">P. 339 • Déclaration royale « portant que les bâtards de la Religion... Réformée seront élevés en la Religion Catholique... » (13 avril 1682).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e805">P. 341 • Déclaration royale portant défense aux « gens de mer et de métier de la Religion... Réformée » d'aller s'établir en pays étranger (3 juin 1682).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e811">P. 343 • Oraison funèbre de Marie-Thérèse d'Autriche, reine de France..., par... Jules de Bollogne... Impr. Paris, 1683, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e820">P. 377 • Oraison funèbre de Marie-Thérèse d'Autriche..., par M. A. Anselme. Impr. Paris, 1684, in-4°. (Avec envoi autogr. à Mlle de Scudéry.)</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e832">P. 423 • Oraison funèbre de... Marie-Anne Christine de Bavière, dauphine de France..., par... Pierre de La Broue... Impr. Paris, 1690, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e841">P. 480 • Épitaphe, en latin et français, de François de Harlay (1695), par L. Le Gendre. Impr. S. l. n. d., in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e850">P. 483 • Oraison funèbre de... François de Harlay, archevêque de Paris..., par le Père Gaillard... Impr. Paris, 1696, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e859">P. 531 • « Excelso et praepotenti viro, D. Ludovico Boucherat, Galliarum cancellario, mausoleum. » Impr. Paris, 1700, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e868">P. 539 • « Projet pour la correction du Dictionnaire historique de M. Morery. » Impr. Paris, 1701, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e877">P. 551 • « Plainte de la Vertu contre les moeurs du siècle, par M. de Poissy... » Impr. Paris, 1703, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e886">P. 555 • « Explication... des cérémonies de la bénédiction d'une abbesse, tirées du Pontifical romain, présentée à... l'évêque d'Amiens, à l'occasion de la bénédiction de... l'abbesse de Willencour... à Abbeville. » Impr. 1708, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e895">P. 563 • Jugement concernant la noblesse des officiers du bailliage de Foretz et de l'élection de Montbrison (25 février 1706).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e901">P. 569 • « Le tombeau de Mgr. le Dauphin, » poëme par Mlle de ***. » Impr. 1712, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e913">P. 573 • « Oraison funèbre de... Mgr. Louis, dauphin, et de... Marie-Adélaïde de Savoye, son épouse..., par Jacques Maboul... » Impr. Paris, 1712, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e922">P. 613 • Lettre autographe de M. de Lespinay à M. de Pontchartrain, au sujet du marquisat de Fougeray en Bretagne (18 avril 1713).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e928">P. 617 • Lettre autographe de Du Dézert à M. de Pontchartrain, sur les réjouissances de la paix faites à Bordeaux, etc. (8 juillet 1713).</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e934">Clairambault 297 • IIAnnées 1595-1742.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1332">P. 1 • Mémoire historique des droits du Roi à lever tous impôts sur les trois Ordres et exiger le « don gratuit » du Clergé sans l'intervention du pape (XVe s.).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1341">P. 21 • Remontrances au Roi par le Tiers-état en faveur de la liberté de conscience et la répression du vagabondage.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1347">P. 25 • Remontrances des députés de Rouergue à ceux du Languedoc, tendant à l'exemption de la crue du sel, en vue de l'assemblée de Pézenas (XVIe s.).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1356">P. 29 • Arrêt du Parlement de Toulouse, reconnaissant Henri IV comme légitime roi de France (7 janvier 1595).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1362">P. 33 et 65 • Lettre écrite au roi de France par les trois électeurs ecclésiastiques [de Mayence, Trèves et Cologne], au sujet de l'affaire de Clèves et Juliers (28 août et 2 octobre 1609).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1368">P. 35 • Réponse du Roi aux trois Électeurs (15 octobre 1609).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1374">P. 37 • Extraits de titres sur diverses familles de Gascogne.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1380">P. 57 • Catalogue des terres de Provence, érigées en marquisats ou comtés, de 1691 à 1731.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1386">P. 69 • Composition des Conseils de l'Empire (XVIIe s.).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1395">P. 73 • Brevet royal accordant aux Protestants des articles secrets à ajouter à la paix du 20 octobre 1622.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1401">P. 77-141 et 149 • Lettres de Nointel [à Colbert] sur les affaires d'Orient (10 août 1674 et 12 septembre 1679).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1407">P. 153-223 • Notes géographiques sur les terres australes, tirées de divers ouvrages imprimés.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1413">P. 235 • Proposition au sujet du port des armes (janvier 1713)</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1419">P. 239 • Proposition au sujet de l'octroi de la noblesse aux marchands et commerçants en gros (décembre 1712).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1425">P. 249 • Lettre en partie chiffrée de Paget (14 janvier 1713) ; orig.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1431">P. 261 et suiv., 313, 355, 359, 371, 381, 391, 397, 413 et 419 • Lettres orig. ou autogr. adressées à Pontchartrain, signées.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1440">P. 309, 365 et 379 • Lettres orig. de Castries et pièce sur le mariage de sa nièce avec le marquis Chigi (1713)</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1446">P. 321 • « Relazione distinta di quanto sucesse e fû operato nella morte del P. Paolo Segneri..., della Compania di Giesu, seguita in Senigaglia a 15 giugno 1713. » Impr. lesi, 1713, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1455">P. 333 • « Sanctissimi D. N. Domini Clementis... papae XI declaratio nullitatis, damnatio, abolitio et reprobatio edicti promulgati a quodam delegato asserti tribunalis monarchiae Siculae nuncupati super abrogatione ecclesiastici interdicti, cui R. P. D. Andreas, episcopus Cataniensis, civitatem et dioecesim Catanien. in actu suae ab eis expulsionis... subjacerat. » Impr. Rome, 1713, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1464">P. 345 • « Sanctissimi D. N. Domini Clementis... papae XI declaratio nullitatis... cujusdam edicti a laicali potestate editi super censuris ecclesiasticis a R. P. D. Petro secundo, episcopo Casalen., adversus comitem Jacobum Nemours promulgatis... » Impr. Rome, 1713, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1473">P. 353 • Lettre autogr. du [marquis Raymond-Balthazar] de Phélypeaux au Roi (1713).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1479">P. 369 • Mandement du cardinal Gaspar Carpegna, évêque de Sabine (13 août 1713). Placard impr., 1713.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1488">P. 401 • Mandement de Mgr. Nicolas Spinola, archevêque de Thèbes, au sujet des excès commis contre Andreas Riggio, évêque de Catane, par Joseph La Rosa. Impr. S. l., 1713 in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1497">P. 421 • Arrêt du Conseil d'État, du 21 mars 1723, au profit de Marie-Élisabeth Heuslin, femme Boizot.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1503">P. 429 • « Testament de... Jean-Baptiste Goy..., curé de... Sainte-Marguerite... à Paris (1726). » Impr. S. l. n. d., in-12.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1512">P. 441 • Factum pour le duc d'Orléans contre de Beyne, Pion, Bouquet, etc., marchands de bois (1729). Impr. 1729, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1521">P. 453 et 513 • Factums de l'affaire de Catherine Cadière et du P. Jean-Baptiste Girard. Impr. S. l. n. d., in-folio.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1530">P. 573 • « Décret de Son Altesse Éminentissime et Sacré Conseil, du 16 octobre 1731, concernant les améliorissemens » [Ordre de Saint-Jean de Jérusalem et de l'Hôpital]. » Impr. Paris, 1732, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1539">P. 579 • « Réflexions... pour Monseigneur le duc d'Orléans contre la veuve Jacques de Beyac... » Impr. Paris 1731, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1548">P. 587 • « Mémoire... fourni au conseil de Mgr le duc d'Orléans par M. de Régemorte contre M. Lemaître, que M. Lemaître remet au même conseil... » Impr. S. l., 1731, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1557">P. 591 • Requête au Roi, au nom des sieurs de La Chauverie et de Claude-Pierre Testu, associés avec les sieurs Valet, père et fils, pour la fourniture des sels et gabelles. Impr. Paris, 1732, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1566">P. 603 • « Mémoire et table alphabétique des terres défrichées de la forêt de Lande-Pourie, concédées par les ducs et duchesses de Montpensier sous des redevances annuelles au comté de Mortain [par de Gomboust de Beaulieu] (30 octobre 1731). » Impr. S. l. n. d., in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1575">P. 615 • Mémoires au Conseil sur les terres de Lande-Pourie. Impr. Paris, [1731], in-folio.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1584">P. 619 • Placet pour Alexis Robert, seigneur de la Motte et Baurevoire,... contre le Procureur général... et... Lacailles, Charles Le Prado, etc. Impr. S. l., 1732, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1593">P. 621 • Observations... sur le procez criminel du sieur Alexis Robert... contre le Procureur général... La Roche..., Lacailles, Charles Le Prado, etc... Impr. S. l., 1732, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1602">P. 627 • Requête au duc d'Orléans pour Claude-Charles Alleaume, collecteur des amendes et garde-général de la forêt d'Orléans. Impr. S. l., 1732, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1611">P. 631 • Mémoire adressé au duc d'Orléans par Benjamin Guinebaut, seigneur du fief Millière, contre Daviceau, Joussemet, etc.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1617">P. 635 • « Absalon, tragédie, sera représentée au collège des Barnabites de Montargis... » Impr. Paris, 1732, in-4° [Programme].</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1626">P. 643 • « L'Ambition, ballet, pour la tragédie d'Absalon... » [Programme]. Impr. Paris, 1732, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1635">P. 651 • Mémoire pour François Girardin, « bosseman du vaisseau le Solide », contre Lambrosse, Delaye et autres armateurs dudit vaisseau, etc. Impr. S. l., 1732, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1644">P. 669 • « Pensées [latines] choisies pour mettre dans des lettres. »</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e1650">Clairambault 298 • III Années 1735-1737.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2039">P. 1 • « Voeux [en vers] pour Monseigneur le Dauphin. » Impr. S. l. n. d., in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2048">P. 5 • Requête de Julien Hubert au Roi, au sujet de la cure de la Magdelaine de la Ville-Lévêque. Impr. Paris, 1738, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2057">P. 13 • « Mémoire signifié pour dame Marie-Magdeléne de Vassé, épouse de... Louis-Joseph de Fesques..., seigneur de la Rochebousseau..., contre le sieur André-François de Cosne, seigneur de Bullou... Impr. S. l., 1739, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2066">P. 41 • « Mémoire signifié pour... Louis-Joseph de Fesques... contre le sieur André-François de Cosne. » Impr. S. l. n. d., in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2075">P. 61 • « Mémoire pour... Jean-Baptiste de Sailly,... seigneur de Bouglainval,... contre maistre Gueau de Reverseaux... » Impr. S. l. n. d., in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2084">P. 65 • Mémoire signifié par Pierre Grandjan de La Croix..., Robert-François Grandjan de La Croix... et Robert-Jean-François de Launay... contre Anne Gombault, veuve d'Antoine Sellier,... [concernant la succession des propres paternels et des meubles et acquêts de Marie Fouquet-Milon, veuve d'Alexandre Tronçon, seigneur de Maintenon], Impr. S. l., 1737, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2093">P. 111 • « Faits et articles des interrogatoires subis par les sieurs de La Haye et Randon, par devant M. Amiot d'Inville..., avec leurs réponses et les observations des héritiers Monmerqué... » Impr. S. l., 1735, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2102">P. 127 et suiv. • Factums pour « les héritiers de Cyr Monmerqué... contre les sieurs de La Haye, Chalmette, Masson et consors ». Impr. 1735-1739, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2111">P. 199 • « Mémoire pour l'Université, où l'on montre qu'elle ne peut ni révoquer son appel ni recevoir la constitution Unigenitus. » Impr. S. l., 1739, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2120">P. 215 • « Jugement prévôtal rendu... contre le nommé Jacques Genty... » Impr. S. l., 1739, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2129">P. 217 • Arrêt du Grand Conseil du Roy, portant condamnation à mort contre un suborneur de témoins, peines de galères, bannissement et autres contre différents faux témoins..., contre Pierre Bracquet,... Jacques Le Coindre,... François Desgréalles... » Impr. Paris, 1739, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2138">P. 221 • Lettre autogr. de Jourdain à Clairambault, concernant la médaille frappée en 1732 pour l'acquisition des manuscrits de Colbert (12 février 1739).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2144">P. 231 • Sentence de M. le lieutenant criminel condamnant Felize, boulanger du Châtelet, « pour avoir altéré la qualité et la quantité du pain des prisonniers ». Impr. Paris, s. d., in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2153">P. 235 • « Sentence rendue par M. le lieutenant criminel du Châtelet de Paris, le 20 février 1739,... contre Louis-Edme Desnoyers, curateur au cadavre de Germain Ferret..., qui condamne le cadavre du nommé G. F... a être traîné sur la claye, s'étant le dit Ferret empoisonné lui-même. » Impr. S. l., 1739, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2162">P. 237 • « A nosseigneurs de Parlement, en la Grand-Chambre et Tournelle assemblées. » Impr. S. l., 1739, in-fol. [Requête de Gabriel-Madeleine de Courbon, marquis de Blénac, contre les termes d'une requête du sieur Peyrene et du marquis de Crèvecoeur, jugés injurieux pour sa famille, suivie d'une généalogie de Courbon].</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2171">P. 243 • Arrêt du Parlement ordonnant la radiation des termes injurieux mentionnés ci-dessus (14 février 1739). Impr. S. l., 1739, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2180">P. 247 et 261 • Deux lettres orig. de Ressayre à Clairambault (28 février et 14 avril 1739), suivies de la liste des vignettes de l'Histoire de Bourgogne de Dom Plancher.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2189">P. 251 • « Sentence rendue par M. le prévôt de Villepreux... [dans l'affaire] entre le procureur fiscal, demandeur et accusateur, et Marie Seguin... » Impr. Paris, 1739, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2198">P. 257 • « L'ordre et la marche de l'archiconfrairie royale des Chevaliers, des Voyageurs et des Palmiers ou Confrères et Soeurs de Dévotion du Saint-Sépulchre de Jérusalem... 5 avril 1739. » Impr. Paris, 1739, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2207">P. 265 • « Arrest de la cour du Parlement, portant condamnation à mort contre Pierre Le Sueur..., préalablement appliqué à la question... et sursis à faire droit à l'égard d'Étienne Guitton, jusqu'après l'exécution du présent arrêt. » Impr. Paris, 1739, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2216">P. 269 • « Mandement de Mgr, l'archevêque de Paris [Charles-Gaspard-Guillaume de Vintimille des comtes de Marseille du Luc], qui ordonne de chanter le Te Deum dans toutes les églises de son diocèse, en actions de grâces du rétablissement de la paix (29 mai 1739). » Impr. Paris, 1739, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2228">P. 273 et 277 • « L'ordre de la marche pour la publication de la paix. » Deux plaquettes impr. Paris, 1713 et 1739 in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2237">P. 285 • « Mémoires de Condé... cinq volumes in-4°. » [Projet de souscription]. Impr. Londres 1739, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2246">P. 297 • Lettre autogr. de Poulletier à Clairambault (1739), suivie d'une note sur le procès-verbal des Enclaves d'Artois, fait par J.-J. de Mesmes, seigneur de Roissy.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2252">P. 305 et 309 • « Deux lettres d'un bourgeois d'Auxerre à un avocat du Parlement de Paris, au sujet de la mort du P. Alphonse de Chartres, capucin (1739). » Impr. S. l., 1739, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2261">P. 313 • « Avis au public » relatif aux Eaux minérales et épurées de Passy. Impr., Paris, 1739, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2270">P. 315 • Minute d'une lettre de Clairambault au comte de Maurepas, au sujet du triage des papiers concernant la marine, trouvés chez feu le maréchal d'Estrées (1739).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2276">P. 323 • « Sentence de mort, rendue par M. le lieutenant criminel du Châtelet de Paris, du 30 juillet 1739..., qui déclare Nicolas Houdelette... convaincu de vol avec effraction... » Impr. S. l., 1739, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2285">P. 325 et 333 • Requête au Parlement et Mémoire de Marie-Anne-Giraud, veuve de Jean-Auguste, comte de Rouvroy, contre le marquis de Rouvroy, son beau-père. Impr. S. l., 1739, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2294">P. 361 • Mémoire pour le même et pour Alex.- Ph.-François Mérigot, seigneur de Sainte-Fère, ainsi que Nicolas-Augustin Chuppin, son curateur,... légataires universels de... Philippe Millieu... contre Joseph Baudoin .. Impr. Paris, 1739, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2303">P. 369 • « Consultation de MM. les Avocats du Parlement, au sujet du mandement de M. l'archevesque de Sens, du 6 avril 1739, qui ordonne... d'enseigner le nouveau catéchisme que ce prélat a donné à son diocèse. » Impr. S. l., 1739, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2312">P. 405 • Ordonnance des trésoriers de France, du 13 août 1739, défendant les échoppes dans Paris. Impr. Paris, 1739, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2321">P. 409 • Arrêt de la Cour des Monnaies condamnant « Étienne Chabin... à être pendu... pour avoir fabriqué des fausses espèces, et le nommé Jean Chabin à être attaché au carcan l'espace de deux heures... et à être enfermé pendant toute sa vie. » Impr. Paris, 1739, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2330">P. 415 • « Mémoire pour le sieur Decombes... contre S. A. S. M. le comte de Charolois..., » suivi d'une carte de l'Epte à Gisors. Impr. S. l., 1739, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2339">P. 437 • « Précis de l'instance pendante au Conseil, entre le sieur de Combes..., seigneur de Tierceville..., et S. A. S. M. le comte de Charolois..., seigneur d'Éragny... » Impr. S. l., 1739, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2348">P. 453 • « Carte [gravée] de l'Océan méridional, compris entre l'Afrique et l'Amérique méridionale..., dressée par ordre de Mgr le comte de Maurepas. » (1739).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2354">P. 455 • « Observations sur la construction de la carte de l'Océan méridional... » Impr. Paris, 1739, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2363">P. 473 • Requête de François Berthelot de Bellebat contre le sieur Pelée de Varennes. Impr., Paris, 1739, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2372">P. 505 • Requête de Paul-Pierre Guimont contre le sieur Pelée de Varennes. Impr. Paris, 1739, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2381">P. 519 • Mémoires impr. relatifs aux États d'Artois et prérogatives qu'y réclamait l'évêque d'Arras (1738-1739), suivis d'extraits des registres des États d'Artois depuis 1571. Impr. Paris, 1739, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2393">P. 695 • « Plaintes de la France à l'Espagne, au sujet du mariage de Mme Première avec l'enfant Dom Philippe, » et « Réponse de l'Espagne à la France sur ses plaintes. » Impr. Paris, 1739, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2405">P. 699 • « Sentence de mort rendue par le lieutenant criminel du Châtelet de Paris, le 2 octobre 1739..., qui déclare François Sormant... convaincu de l'assassinat par luy commis en la personne de Catherine Neveu, sa femme... » Impr. Paris, 1739, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2414">P. 701 et suiv. • Notes sur le mot Amen, à l'occasion d'un logogriphe, dont l'auteur était M. de Fréville, avec une lettre autogr. signée : Dernier.</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2423">Clairambault 299 • IV Années 1738-1742.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2789">P. 1 • Arrêt de la Cour souveraine de Lorraine et Barrois, supprimant certaines qualités attribuées à l'abbesse de Remiremont dans les « Nouvelles publiques » du 19 avril 1738. Impr. Nancy, s. d., in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2798">P. 3 • Lettre autogr. de [Jean de] Clairambault (Modon, 17 nov. 1738).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2804">P. 9 • « Moyen d'observer la longitude en mer, par une montre portative..., par [Jean de] Clairambault, consul de France en Morée. » Impr. Marseille, 1738, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2813">P. 21 et 53 • « Mémoire pour Jeanne-Marguerite Deschamps... contre Balthasard-Alexandre Deschamps... et Alexandre Tavenot, ses frère et beau-père. » Impr. 1738, in-4° (en trois parties)</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2822">P. 91 • Circulaire relative aux contrôleurs-ambulants des receveurs des droits de foraine (Nancy, 4 juillet 1739). Impr. in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2831">P. 95 et suiv. • Lettres autogr. de d'Achey de Serquigny (1739).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2837">P. 107 • « Traité de M. Anstis, touchant l'autorité du comte-maréchal d'Angleterre et la juridiction de la cour militaire. »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2843">P. 253, 293 et 307 • Mémoire pour le marquis de Lambertye... contre l'abbaye de Saint-Hubert-en-Ardenne, et pièces annexes. Impr. Nancy, 1739, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2852">P. 343 • « Mémoire pour le curateur à la litte établi aux enfants... substitués par le testament du sieur de Morizot de Vallois... » Impr. Nancy, 1739, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2861">P. 351 • Mémoire pour les chanoines de Saint-Antoine de Pont-à-Mousson, en réponse au factum du sieur de Champel, concernant les réparations de l'église de Létricourt. Impr. Nancy, 1739, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2870">P. 399 • Oraison funèbre de René-François de Beauvau, archevêque et primat de Narbonne, par l'abbé Guerguil. Impr. 2e éd. Paris, 1740, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2882">P. 429 • Liste des vaisseaux armés à Brest et à Toulon (1740).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2888">P. 431 • « Capitulations renouvellées entre le Roy et le Grand-Seigneur » (28 mars 1740). Impr. Paris, 1741, in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2897">P. 453 • Mémoire concernant les droits du duc de Lorraine sur le duché de Montferrat, à l'exclusion de la princesse de Condé. Impr. S. l. n. d., in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2906">P. 479 • « L'homme d'humeur, comédie... jouée au collège Louis-le-Grand » [Programme]. Impr. Paris, 1741, in-12.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2915">P. 483 • « Isac, tragédie... id. » Impr. Paris, 1740, in-12.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2927">P. 491 • Mémoire pour Pierre Frémy, secrétaire du Roi en la chancellerie près la Chambre des comptes et Cour des aides de Dole, contre Joseph Jacquinot, son collègue. Impr. Paris, 1740, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2936">P. 535 • Mémoire pour les consuls de Blanzac, etc. contre le duc d'Uzès. Impr. 1740, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2945">P. 549 • Projet de l'Histoire d'Auvergne. Impr. S. l. n. d., in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2954">P. 565 • Requête du sieur Decombes, seigneur de Tierceville, au sujet des droits de sa terre, contre le sieur Ratel et le comte de Charolais. Impr. 1741, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2963">P. 573 • Mémoire pour les Donnet, héritiers de M. Antoine-Joseph Thiery, avocat au Parlement, contre M. Louis Cimard, dame Gillette Racquet et Marie-Thérèse Cimard. Impr. Paris, 1741, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2972">P. 605 • Prospectus d'une nouvelle édition du Dictionnaire de Trévoux. Impr. Paris, 1741, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2981">P. 609 • Prospectus du « Catalogue des rolles gascons, normands et françois... » de Thomas Carte. Impr. S. l. n. d., in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2990">P. 613 • Lettre de Boucher de L'Estang, recommandant M. de Sigogne comme médecin pour milord comte de Waldegrave. Impr. S. l. n. d., in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e2999">P. 623 • « Mémoire... pour les... habitans de... Nicey, élection de Tonnerre, contre le marquis de Courtanvaux et le comte d'Estrées. » Impr. Paris, 1741, in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e3008">P. 649 • État des troupes anglaises embarquées pour l'expédition de Carthagène, et statistique des tués (1741).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e3014">P. 651 • Relation d'un combat livré à l'entrée du détroit de Gibraltar (5-6 août 1741) entre les vaissaux français revenant de la Martinique, dirigés par le chevalier de Caylus, et des vaissaux anglais.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e3020">P. 655, 675 et 681 • Lettres orig. de [Charles-Alexis] de Clairambault à son frère [Nicolas-Pascal] de Clairambault, généalogiste des Ordres du Roi (1741).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e3026">P. 659 et 689 • Lettres orig. de M. d'Achey de Serquigny au même (1740 et 1741).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e3032">P. 663 et 685 • Lettres orig. de M. Nogerée de La Fillière au même (1740, 1741).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e3038">P. 667 • Relation du combat livré du 18 au 19 janvier 1741, entre vaisseaux français et anglais, près du cap Tiberon et de la pointe à Gravois, sur la côte de Saint-Domingue.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e3044">P. 677 • Officiers du vaisseau « le Bourbon ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e3050">P. 693 • Promotions et remplacements dans la marine en 1741-1742.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013814_d0e3056">P. 709 • Officiers de marine promus chevaliers de Saint-Louis, le 1er janvier 1742.</a></div></div></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Clairambault 296-299<br/>Cette cote ne correspond pas à une unité matérielle communicable. Veuillez sélectionner un document réservable parmi les niveaux inférieurs.</span></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Clairambault 296-299 
+							</div>
+<div class="did-label">
+<div class="did-unittitle">Pièces historiques diverses, dont plusieurs imprimées (1572-1742), et correspondance diplomatique de Pontchartrain (1713).</div>
+</div>
+<div class="divdid">4 volumes.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="controlaccess-class">
+<p>ABBEVILLE</p>
+<p>ACHEY (D') DE SERQUIGNY • Lettres</p>
+<p>AMIENS • Évêques</p>
+<p>ANGLETERRE • Comte-maréchal, dignité</p>
+<p>ANSELME (Le P. Antoine), abbé de Saint-Sever, prédicateur</p>
+<p>ANSTIS GARTER (John), héraut d'armes de l'Ordre de la Jarretière</p>
+<p>AUVERGNE</p>
+<p>BAVIERE (Marie-Anne-Christine-Victoire DE), femme du Grand Dauphin</p>
+<p>BEAUVAU (René-François DE), archevêque de Narbonne</p>
+<p>BLANZAC (Languedoc) • Consuls</p>
+<p>BORDEAUX</p>
+<p>BOUCHER DE L'ESTANG • Lettre</p>
+<p>BOUCHERAT (Louis), comte de Compans, chancelier de France • Tombeau</p>
+<p>BOURBON (LE), vaisseau • Officiers</p>
+<p>BOURBON (Anne DE), princesse de Condé</p>
+<p>BREST</p>
+<p>CAPITULATIONS (1740)</p>
+<p>CARTE (Thomas) • Catalogue des rôles gascons, normands et français conservés à Londres</p>
+<p>CARTHAGENE (Amérique) • Expédition (1741)</p>
+<p>CHAMPEL (Le sieur DE)</p>
+<p>CHAROLAIS (Charles de Bourbon-Condé, comte DE)</p>
+<p>CIMARD (Louis)</p>
+<p>CIMARD (Marie-Thérèse)</p>
+<p>CLAIRAMBAULT (Charles-Alexis DE) • Lettres</p>
+<p>CLAIRAMBAULT (Jean DE), consul en Morée • Lettre</p>
+<p>CLAIRAMBAULT (Nicolas-Pascal DE), généalogiste des Ordres du Roi, neveu de Pierre Clairambault</p>
+<p>CONDE (Anne de Bourbon, princesse de)</p>
+<p>COURTANVAUX (François-César Le Tellier, marquis DE)</p>
+<p>CRUSSOL-SAINT-SULPICE (Charles-Emmanuel), duc d'Uzès</p>
+<p>DAUPHINE (Marie-Anne-Christine-Victoire de Bavière, dite Madame la)</p>
+<p>DECOMBES, sieur de Tierceville, officier de marine</p>
+<p>DESCHAMPS (Balthasar-Alexandre)</p>
+<p>DESCHAMPS (Jeanne-Marguerite)</p>
+<p>DICTIONNAIRE de Trévoux</p>
+<p>DOLE • Chambre des Comptes et Cour des Aides</p>
+<p>DONNET, Famille</p>
+<p>DU DEZERT • Lettre à Pontchartrain</p>
+<p>ESTREES (Louis-Charles-César Le Tellier, comte D'), maréchal de France</p>
+<p>FORAINE • Droit</p>
+<p>FOREZ • Noblesse</p>
+<p>FOUGERAY (Ille-et-Vilaine) • Marquisat</p>
+<p>FREMY (Pierre)</p>
+<p>FURETIERE • Dictionnaire dit de Trévoux</p>
+<p>GAILLARD (Le P. Honoré), jésuite • Oraison funèbre de François Harlay</p>
+<p>GARTER (John Anstis), héraut d'armes de l'Ordre de la Jarretière</p>
+<p>GIBRALTAR • Combat naval (1741)</p>
+<p>GIOU (Joseph DE), chevalier de Caylus</p>
+<p>GUERGUIL (Abbé)</p>
+<p>HARLAY DE CHANVALON (François DE), archevêque de Rouen et de Paris • Épitaphe</p>
+<p>ISAC • Tragédie</p>
+<p>JACQUINOT (Joseph), secrétaire du Roi</p>
+<p>LA BROUE (Pierre DE) • Oraison funèbre de Marie-Anne-Christine de Bavière, dauphine de France</p>
+<p>LA FILLIERE (Nogerée DE) • Lettres</p>
+<p>LAMBERTYE (Emmanuel-François, marquis DE)</p>
+<p>LE GENDRE (L.) • Épitaphe de François de Harlay</p>
+<p>LESPINAY (Jacques DE) • Lettre à Pontchartrain (1713)</p>
+<p>LE TELLIER (François-César), marquis de Courtanvaux</p>
+<p>LE TELLIER (Louis-Charles-César), cte d'Estrées, maréchal</p>
+<p>LETRICOURT (Meurthe-et-Moselle) • Église</p>
+<p>LONDRES • Rôles gascons, normands et français</p>
+<p>LORRAINE • Ducs, généalogie</p>
+<p>LORRAINE (Léopold duc DE) • Droits sur le Montferrat</p>
+<p>LOUIS XV, roi de France</p>
+<p>LOUIS DE FRANCE, fils de Louis XIV, dit le Grand-Dauphin</p>
+<p>MABOUL (Jacques), évêque d'Alet • Oraisons funèbres de Marie-Adélaïde de Savoie et de Louis XIV</p>
+<p>MAHMOUD Ier, sultan</p>
+<p>MARIE-ADELAÏDE DE SAVOIE, femme du Grand-Dauphin</p>
+<p>MARIE-THERESE D'AUTRICHE-ESPAGNE, reine de France • Mort, cérémonial</p>
+<p>MARINE • Officiers</p>
+<p>MARTINIQUE (LA)</p>
+<p>MONTBRISON • Élection</p>
+<p>MONTFERRAT (Italie) • Duché</p>
+<p>MOREE</p>
+<p>MORERI (Abbé Louis) • Dictionnaire historique</p>
+<p>MORIZOT DE VALLOIS</p>
+<p>NANCY</p>
+<p>NICEY (Élection de Tonnerre) • Habitants</p>
+<p>NOBLESSE • Forez</p>
+<p>NOGEREE DE LA FILLIERE • Lettres</p>
+<p>NOUVELLES PUBLIQUES</p>
+<p>OFFICIERS de marine</p>
+<p>PARIS</p>
+<p>PARIS • Collège Louis le Grand</p>
+<p>PLAINTE DE LA VERTU, etc • , par M. de Poissy</p>
+<p>POISSY (M. DE) • Plainte de la Vertu, etc</p>
+<p>PONT-A-MOUSSON • Saint-Antoine</p>
+<p>PONTCHARTRAIN (Louis Phélypeaux, comte DE), chancelier de France</p>
+<p>PONTCHARTRAIN (Louis Phélypeaux, comte DE), chancelier de France • Correspondance diplomatique et lettres diverses</p>
+<p>PONTIFICAL ROMAIN</p>
+<p>PROTESTANTS</p>
+<p>RACQUET (Gillette)</p>
+<p>RATEL (Le sieur)</p>
+<p>REMIREMONT (Vosges) • Abbesse</p>
+<p>ROLES gascons, normands et français, conservés à Londres</p>
+<p>SABATHIER (Pierre II DE), évêque d'Amiens</p>
+<p>SAINT-DOMINGUE ou HAÏTI (Antilles) • Combat naval (1741)</p>
+<p>SAINT-HUBERT-EN-ARDENNE (Belgique) • Abbaye</p>
+<p>SAINT-LOUIS (Ordre militaire DE)</p>
+<p>SAVOIE (Marie-Adélaïde DE), femme du Grand-Dauphin</p>
+<p>SCUDERY (Madeleine DE)</p>
+<p>SERQUIGNY (D'Achey DE) • Lettres</p>
+<p>SIGOGNE (DE), médecin</p>
+<p>TAVENOT (Alexandre)</p>
+<p>THERESE (Sainte) • Panégyrique</p>
+<p>THIERY (Antoine-Joseph), avocat au Parlement</p>
+<p>TIBERON (Cap), dans l'île de Saint-Domingue</p>
+<p>TIERCEVILLE (Decombes, sieur DE)</p>
+<p>TONNERRE • Élection</p>
+<p>TOULON</p>
+<p>TREVOUX • Dictionnaire</p>
+<p>UZES (Charles-Emmanuel de Crussol-Saint-Sulpice, duc D')</p>
+<p>VAISSEAUX du roi aux XVIIe et XVIIIe siècles • Dans les ports de Brest et Toulon</p>
+<p>VALLOIS (Morizot DE)</p>
+<p>WALDEGRAVE (Comte DE)</p>
+<p>WILLENCOURT (Somme) • Abbaye</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000013814_d0e505');">Clairambault 296 (cote) • I Années 1572-1713. — Lettres patentes du roi Charles IX, au sujet d'un emprunt sur les plus riches habitants de la généralité de Tours pour payer le siège de La Rochelle, et constitution de dix livres tournois de rente au profit de Pierre Jaille et Jacques Basmette, demeurant à Sainte-Maure, débiteurs de cent vingt livres tournois envers Julien Challopin, receveur des tailles à Tours (2 et 13 décembre 1572, 27 avril 1573). Impr. S. l. n. d., placard parchemin.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000013814_d0e934');">Clairambault 297 (cote) • IIAnnées 1595-1742.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000013814_d0e1650');">Clairambault 298 (cote) • III Années 1735-1737.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000013814_d0e2423');">Clairambault 299 (cote) • IV Années 1738-1742.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

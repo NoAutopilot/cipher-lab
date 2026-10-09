@@ -1,0 +1,677 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000088957">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000088957">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Erudits et bibliophiles > Dupuy</div>
+					<h1>Dupuy 869
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000088957_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957">Dupuy 869 • Recueil de mémoires, lettres, etc., relatives à l'histoire de de FRANCE, de 1615 à 1648 environ.</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e915">f. 4 • « Discours de l'authorité des Papes et des Roys », par l'évêque de Mende [Charles de Rousseau], 1615</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e921">f. 23 • « A l'immortelle mémoire de Henry IIIIe, roy de France et de Navarre »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e930">f. 25 • « Harangue funèbre prononcée en l'église Nostre-Dame de Paris, en l'année 1637, par Mr [Jean] de Lingendes, prédicateur du Roy [Louis XIII], sur la mort de M. le duc de Savoie [Victor-Amédée Ier], beau-frère du Roy »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e942">f. 33 • « Oraison funèbre sur la mort de Madame Nicole Du Plessis de Richelieu, femme de messire [Urbain de Maillé], marquis de Brézé, maréchal de France, récitée en l'église des Augustins de Paris, par Mr [Anthime-Denis] Cohon, évesque de Nismes, au service faict aux despens du Clergé lors assemblé dans Paris », [1635]</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e951">f. 37 • Note de l'évêque de Langres [Sébastien Zamet] sur l'abbé de Saint-Cyran, 1638</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e957">f. 41 • Lettre du Roi [Louis XIII] à la noblesse de Guyenne, Saint-Germain-en-Laye, 5 oct. 1638</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e963">f. 41 v° • « Relation de ce qui s'est passé à Bordeaux à l'arrivée et pendant le séjour de Mgr l'archevesque [Henri d'Escoubleau de Sourdis] audit Bordeaux », 1633</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e969">f. 53 • « De la qualité et dignité des premiers princes du sang de France »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e975">f. 54 • Avis de [Jacques] Lescot, docteur de Sorbonne, sur le mariage de Gaston d'Orléans et de Marguerite de Lorraine</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e981">f. 56 v° • « Advis de l'Assemblée générale du Clergé de France, tenue à Paris l'an 1635, sur les mariages des princes du sang », 7 juillet</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e987">f. 58 • Actes relatifs à la cession faite au Roi [Louis XIII] par Louise-Marguerite de Lorraine, princesse de Conti, des terres souveraines de Château-Renault, Linchamp, Mohon et autres pays « d'oultre et deçà la rivière de Meuze », 1629-1630</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e993">f. 62 • Traité conclu entre le cardinal de Richelieu, au nom de Louis XIII, et le duc Charles III de Lorraine, mars-avril 1641</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e999">f. 69 • Procès-verbal dressé par les conseillers Courtin et Le Pelletier, députés par le Parlement vers Guillaume Du Vair, ancien garde des sceaux, afin de le consulter sur l'enregistrement des lettres de provision de Claude Mangot pour la même charge, nov. 1616</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1005">f. 70 • « Sommaire des droictz de Son Altesse Sérénissime [le duc de Savoie] sur la ville de Genève »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1011">f. 73 • Discours de [Benjamin Aubery, sieur] Du Maurier, à Sully</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1017">f. 75 • « Discours sur le gouvernement de la Royne Mère [Marie de Médicis], faict en l'an 1617 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1023">f. 77 • Manifeste du duc de Rohan, lors de sa retraite de la Valteline</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1029">f. 79 • « Relation véritable et particulière » de l'affaire de la Valteline</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1035">f. 83 • Requête des États de Dauphiné au Roi [Louis XIII] contre [Omer] Talon, conseiller d'État</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1041">f. 87 • Discours du prince de Condé aux États de la province de Guyenne, après le départ du duc d'Épernon, 1638</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1047">f. 92 • « Discours faict à Cologne par le secrétaire du cardinal [Marzio] Ginetti, touchant l'assemblée pour la paix générale », 1639</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1053">f. 93 v° • Sentence d'excommunication, lancée par Charles de Montchal, archevêque de Toulouse, contre quelques officiers du Parlement de cette ville, avril 1639</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1059">f. 96, 96 v° et suiv. • « Déclaration ou manifeste de Madame la duchesse de Lorraine contre le second mariage du duc Charles, son mary, avec la marquise de Cantecroix », Paris, 7 janv. 1640 (96) ; et autres pièces relatives à cette affaire</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1065">f. 100 • Lettre du cardinal de Richelieu à la duchesse de Savoie, s. d.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1071">f. 101 • Harangue de [Claude] Mallier, ambassadeur de France, aux doge et sénat de Venise</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1077">f. 105 • Harangue prononcée par [Jérôme Ier] Bignon, avocat général, devant le Roi [Louis XIII], sur la création d'offices nouveaux, janv. 1636</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1086">f. 106 v° • Harangue du cardinal de Richelieu au Roi [Louis XIII] séant en son lit de justice, 18 janv. 1634</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1092">f. 111 • Édit de février 1641, interdisant au Parlement de s'immiscer sans commission dans les affaires de l'État</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1098">f. 114 • Décret de prise de corps contre [César,] duc de Vendôme, Saint-Germain-en-Laye, 22 mars 1641</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1104">f. 115 • Contrat de mariage entre Nicole de Lorraine et Charles de Lorraine, prince de Vaudemont, 22 mai 1621</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1110">f. 117 • Nouvelles de Londres, mai 1641</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1116">f. 118 v° • Harangue de Brûlart de Léon à l'Assemblée du Clergé, à Mantes</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1122">f. 119 v° • Ordre de départ donné par [Michel Particelli, sieur] d'Émery, intendant des finances, aux archevêques et évêques assemblés à Mantes</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1128">f. 120 • Arrêt portant prise de corps contre les ducs de Guise et de Bouillon, etc., 5 juillet 1641</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1134">f. 121 • Abandon fait à la duchesse de Guise, Henriette-Catherine de Joyeuse, du revenu des comté d'Eu et principauté de Joinville, comme intérêt des sommes par elle avancées pour les affaires de feu son mari, 7 juillet 1640</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1140">f. 123 • Arrêt de mort contre [Henri de Lorraine], duc de Guise, 6 sept. 1641</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1146">f. 127 • Bulles d'Urbain VIII, portant excommunication contre le duc [Charles III] de Lorraine et Béatrix de Cusance, comtesse de Cantecroix, Rome, 23 avril 1642, traduction française</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1152">f. 129, 131 v° • Manifeste du duc [Charles III] de Lorraine (129), et autres pièces relatives à la même affaire, 1642</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1158">f. 138 • Testament de Marie de Médicis, Cologne, 3 juillet 1642</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1164">f. 146 • Articles accordés entre Louis XIII, la princesse de Savoie [Chrestienne], le cardinal [Maurice] de Savoie et le prince Thomas, Turin et Pierrelatte, 14 juin-1er juillet 1642</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1173">f. 148 • Articles accordés entre le comte-duc de San-Lucar, pour le roi d'Espagne [Philippe IV], et [Louis d'Astarac, vicomte] de Fontrailles, pour Gaston d'Orléans, Madrid, 13 mars 1642</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1179">f. 150 v° • Arrêt de mort contre Henri d'Effiat de Cinq-Mars et François-Auguste de Thou, Lyon, 12 sept. 1642</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1185">f. 151 et 153 • « Discours sur la mort desdits sieurs de Cinq-Mars et de Thou »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1191">f. 164 v° • Lettre de Cinq-Mars à sa mère [Marie de Fourcy]</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1197">f. 165 • Lettre du Roi [Louis XIII] au Parlement, sur l'emprisonnement de Cinq-Mars, Fontainebleau, 6 août 1642</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1203">f. 167 • Requête en vers, présentée au cardinal de Richelieu, pour le rétablissement de Paul Scarron en sa charge de conseiller, supprimée par l'édit de fév. 1641</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1209">f. 168 • « Requête présentée au Roy par Scaron filz »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1215">f. 169 • Déclaration du Roi contre le duc d'Orléans, Saint-Germain, 1er déc. 1642</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1224">f. 171 • Mandement du Roi au procureur général du Parlement, sur l'entrée de Mazarin aux affaires, Paris, 6 déc. 1642</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1230">f. 172 • « Procès de MM. le Grand [écuyer, Cinq-Mars], et [F.-A.] de Thou »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1236">f. 179 • Lettre de F.-A. de Thou à [Pierre] Dupuy, 12 sept. 1642</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1242">f. 181 • Lettre de Pierre de Marca, sur la condamnation de Cinq-Mars et de Thou, Lyon, 16 sept. 1642</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1248">f. 183 • Testament du cardinal de Richelieu, 23 mai 1642</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1254">f. 195 • « Consultation sur la difficulté faicte par le sieur Du Pont de Courlay père, d'accepter le legs à luy faict par ledit sieur cardinal [de Richelieu], afin d'impugner son testament et recueillir sa succession ab intestat », par Chappellier, Paris, janv. 1643</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1260">f. 197 • Sonnets et rondeaux sur la mort de Richelieu</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1266">f. 198 • Épitaphes de Richelieu</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1272">f. 200 • Actes relatifs à la régence d'Anne d'Autriche, 1643</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1278">f. 204 v° • Lettres d'abolition en faveur de [Robert IV de La Mark], duc de Bouillon, Noisy, 23 sept. 1642</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1284">f. 206 • Lit de justice du 18 mai 1643</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1290">f. 210 v° • Accord signé entre le cardinal de Richelieu, au nom du Roi [Louis XIII], et le duc de Bouillon, après la mort de [Louis II de Bourbon], comte de Soissons, Mézières et Sedan, 5 août 1641</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1296">f. 211 v° • Mandement du Roi [Louis XIV] au Parlement, sur la détention de [François de Vendôme], duc de Beaufort, Paris, 22 sept. 1643</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1302">f. 211 v° et 213 v° • Pouvoirs remis par Louis XIV au comte d'Avaux et à Abel Servien, et par Philippe IV, roi d'Espagne, à don Diego de Saavedra Faxardo, députés au congrès de Munster, 1643</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1308">f. 219 • « Privata monita Societatis Jesu »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1314">f. 224 v° • Lettre du Roi [Louis XIV] à [Melchior Mitte de Miolans, marquis de] Saint-Cha(u)mont, ambassadeur à Rome, sur le rôle joué par les cardinaux Barberini dans l'élection du pape Innocent X, Fontainebleau, 11 oct. 1644</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1320">f. 225 • « Discours sur l'attentat en la personne de l'agent du roy de Portugal résident à Rome »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1326">f. 226 v° • Remonstrances de [Nicolas Bretel], sieur de Gremonville, ambassadeur de France, au pape Innocent X</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1332">f. 227 • Harangue de Scarron, prévôt des marchands de Paris, aux membres de l'Assemblée du Clergé, 1645</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1338">f. 228 • « Vers burlesques sur le mariage de Mlle [Marguerite] de Rohan avec [Henry] Chabot », 1645</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1347">f. 228 v° • Liste des conseillers d'État, s. d.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1353">f. 229, 236 v° • Réponse de M. des Yveteaux [Nicolas Vauquelin] à la lettre de M. de La Fresnaye, son frère, 1645 (229), suivie d'une pièce de vers latins</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1359">f. 237 • Contrat de mariage entre le roi de Pologne Ladislas VII et Louise-Marie de Gonzague-Mantoue, Fontainebleau, 26 sept. 1645</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1365">f. 240 v° • Testament du maréchal [Michel] de Marillac, Sainte-Menehould, 25 juin 1631</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1371">f. 249 • « Discours tenu par M. [Pierre Séguier], chancelier de France, au nonce du pape Innocent X, sur les mescontentemens de Sa Majesté à cause du mauvais traitement de Sa Sainteté vers les François et le cardinal Barberini, nepveu du pape Urbain VIII »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1377">f. 252 v° • «...Innocentii... papae X constitutio super recessu S. R. E. cardinalium a statu ecclesiastico sine licentia summi Pontificis, et reditu eorum, qui sine licentia hujusmodi recesserunt, ad Romanam curiam », 19 fév. 1646</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1383">f. 257 • « Compliment de [Antoine II] Nicolaï, premier président de la Chambre des comptes de Paris, à la reine de Pologne [Louise-Marie de Gonzague], avant son départ », 1645</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1389">f. 257 v° • Accord conclu entre les plénipotentiaires français et hollandais, La Haye, 1er mars 1644</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1398">f. 25 • « Requeste des Dictionaires à MM. de l'Académie », en vers</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1404">f. 261 • Requête de Catherine de La Mark, veuve de Jacques de Harlay, sieur de Champvallon, au Roi, minute incomplète de la fin, s. a.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1410">f. 261 v° • Lettres du roi Jean, portant érection du comté de Vertus en faveur d'Isabelle [de France], femme de Jean-Galéas Visconti, et dudit Jean-Galéas, Paris, avril 1361</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1416">f. 262 • Harangue d'Omer Talon, avocat général, au Parlement, sur la résidence des cardinaux, 20 avril 1646</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1422">f. 266 • Lettre de Rome, sur les Barberini, 15 mars 1645</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1428">f. 270 v°, 272 et suiv. • « Decretum... Innocentii... papae X adversus propositionem istam : S. Petrus et S. Paulus sunt duo Ecclesiae principes, qui unum efficiunt, et libros in quibus illa propositio asseritur et defenditur », 24 janv 1647 (270 v°), et documents français relatifs à ce décret</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1437">f. 276 • Testament d'Hercule de Rohan, comte de Montbazon, Paris, 1642</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1443">f. 278 • Satire en vers français, commençant ainsi : « Escoute, Malefas, il fault que je te die... »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1449">f. 280 v° • Harangue d'Omer Talon au Parlement de Paris, dans le lit de justice tenu par Louis XIV, le 15 janv. 1648</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1455">f. 284 v° • Lettres du duc de Guise à la Reine [Anne d'Autriche] et à un grand personnage de la cour de France, Naples, 28 fév. 1648</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1461">f. 288 • Lettre d'un astrologue à Madame de Vendôme [Françoise de Lorraine, duchesse de Mercoeur], sur la prochaine mise en liberté de son fils le duc de Beaufort, juin 1647</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1467">f. 289 v° et 290 • Arrêts du Parlement, relatifs aux rentes de l'Hôtel-de-ville, 1648</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000088957_d0e1473">f. 324 • Extrait du procès-verbal d'enquête, dressé par Vignier, président au Parlement de Metz, sur la fuite de la duchesse de Chevreuse [Marie de Rohan] en Espagne, s. a.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Dupuy 869 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc88957b&Cote=Dupuy 869&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b10034810d">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 7986 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc88957b&Cote=MF 7986&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Dupuy 869 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-label">
+<div class="did-unittitle">Recueil de mémoires, lettres, etc., relatives à l'histoire de de FRANCE, de 1615 à 1648 environ.</div>
+</div>
+<div class="did-date">XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">335 feuillets.Reliure en vélin blanc.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 7986. Cote de la matrice (pour commander une reproduction) : R 110744.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b10034810d" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="http://gallica.bnf.fr/ark:/12148/btv1b10034810d.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;http://gallica.bnf.fr/ark:/12148/btv1b10034810d.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="scopecontent-class">
+<div class="label-part">
+<p class="scopecontent-label">Présentation du contenu</p>
+</div>
+<div class="description-part">
+<span>
+<p>Copies.</p>
+</span>
+</div>
+</div><div class="controlaccess-class">
+<p>ACADEMIES • Académie française</p>
+<p>ANNE D'AUTRICHE, reine de France • Lettres à elle adressées</p>
+<p>ANNE D'AUTRICHE, reine de France • Régence</p>
+<p>AVAUX (Claude de Mesmes, comte D') • Négociations pour la paix générale, traités</p>
+<p>BAR, BARROIS • Droits sur lui du roi</p>
+<p>BARBERINI (Antonio), cardinal, légat en France • Lettres le concernant</p>
+<p>BARBERINI (Antonio), cardinal, légat en France • Rôle dans l'élection d'Innocent X</p>
+<p>BARBERINI (Antonio ou Francesco), cardinal • Traitement infligé à l'un d'eux</p>
+<p>BARBERINI (Francesco), cardinal, légat en France • Lettres le concernant</p>
+<p>BARBERINI (Francesco), cardinal, légat en France • Rôle dans l'élection d'Innocent X</p>
+<p>BEAUFORT (François de Vendôme, duc DE) • Délivrance</p>
+<p>BEAUFORT (François de Vendôme, duc DE) • Détention</p>
+<p>BIGNON (Jérôme), avocat général au Parlement de Paris • Harangues</p>
+<p>BOUILLON (Frédéric-Maurice de La Tour, duc DE), prince de Sedan • Décret de prise de corps le concernant</p>
+<p>BOUILLON (Henri-Robert de La Marck [non Robert IV], duc DE) • Accord</p>
+<p>BOUILLON (Henri-Robert de La Marck [non Robert IV], duc DE) • Lettres d'abolition en sa faveur (1643)</p>
+<p>BREVAL (Catherine de La Marck, dame DE)</p>
+<p>BREZE (Nicole Du Plessis de Richelieu, femme du maréchal DE)</p>
+<p>BRULART (Charles), abbé de Joyenval, prieur de Léon • Discours par lui prononcés</p>
+<p>CARDINAUX • Résidence</p>
+<p>CHABOT (Henri), marquis de Sainte-Aulaye, puis duc de Rohan • Mariage</p>
+<p>CHAPPELLIER • Consultation par lui donnée sur le testament de Richelieu</p>
+<p>CHARRON (Jean-Jacques), marquis de Ménars • Manuscrits lui ayant appartenu</p>
+<p>CHATEAU-REGNAULT (Ardennes) • Pièces concernant cette terre</p>
+<p>CHEVREUSE (Marie de Rohan, duchesse DE) • Enquête sur sa fuite en Espagne</p>
+<p>CINQ-MARS (Henri Coiffier de Ruzé, marquis DE) • Lettre</p>
+<p>CINQ-MARS (Henri Coiffier de Ruzé, marquis DE) • Procès et exécution</p>
+<p>CLERGE DE FRANCE • Assemblée du Clergé de France (1635)</p>
+<p>CLERGE DE FRANCE • Assemblée du Clergé de France (1645)</p>
+<p>COHON (Anthime-Denis), évêque de Nîmes • Oraison funèbre par lui faite</p>
+<p>CONDE (Henri II de Bourbon, prince DE) • Discours</p>
+<p>CONSEIL D'ÉTAT • Liste des conseillers vers le commencement du règne de Louis XIV</p>
+<p>CONTI (Louise-Marguerite de Lorraine-Guise, princesse DE) • Vente par elle faite</p>
+<p>COURTIN (Achille ?), conseiller au Parlement • Procès-verbal de son entrevue avec G. Du Vair</p>
+<p>CUSANCE (Béatrix DE) • Pièces concernant son mariage avec le duc Charles de Lorraine</p>
+<p>DAUPHINE • États de Dauphiné</p>
+<p>DES YVETEAUX (Nicolas Vauquelin, sieur) • Lettres</p>
+<p>DES YVETEAUX (Nicolas Vauquelin, sieur) • Satire, vers</p>
+<p>DICTIONNAIRES • Leur requête à l'Académie</p>
+<p>DU HOUSSAY (Claude Mallier, sieur), ambassadeur à Venise • Harangue</p>
+<p>DU MAURIER (Benjamin Aubery, sieur), ambassadeur en Hollande • Discours par lui faits</p>
+<p>DU PONT-COURLAY (François II de Vignerot, marquis) • Consultation sur son intention d'attaquer la validité du testament de Richelieu</p>
+<p>DUPUY (Pierre) • Lettres à lui adressées par. F.-A. de Thou</p>
+<p>DU VAIR (Guillaume), conseiller au Parlement de Paris, premier président au Parlement d'Aix, garde des sceaux, évêque de Lisieux • Députation à lui envoyée</p>
+<p>DU VERGIER DE HAURANNE (Jean), abbé de Saint-Cyran, dit Aurelius (Petrus) • Note le concernant</p>
+<p>ÉPERNON (Jean-Louis de Nogaret, duc D') • Départ</p>
+<p>EU. Comtes et comté</p>
+<p>FONTRAILLES (Louis d'Astarac, vicomte DE), sénéchal d'Armagnac • Traités</p>
+<p>FOURCY (Marie DE) • Lettre à elle adressée par son fils Cinq-Mars</p>
+<p>FRANCE • Maison de France : rois, reines, princes du sang, etc</p>
+<p>FRANCE (Isabelle DE), duchesse de Milan</p>
+<p>GENEVE • Prétentions des ducs de Savoie sur Genève</p>
+<p>GINETTI (Marzio), cardinal</p>
+<p>GREMONVILLE (Nicolas Bretel, sieur DE), ambassadeur • Remontrances par lui faites</p>
+<p>GUISE (Henri II de Lorraine, duc DE) • Son arrêt de mort</p>
+<p>GUISE (Henri II de Lorraine, duc DE) • Décret de prise de corps lancé contre lui</p>
+<p>GUISE (Henri II de Lorraine, duc DE) • Lettres</p>
+<p>GUYENNE • États</p>
+<p>GUYENNE • Noblesse</p>
+<p>HARLAY (Jacques DE), sieur de Champvallon et de Bréval</p>
+<p>HENRI IV, roi de France • Pièces diverses</p>
+<p>INNOCENT X, pape • Décret</p>
+<p>INNOCENT X, pape • Élection</p>
+<p>INNOCENT X, pape • Lettres</p>
+<p>INNOCENT X, pape • Remontrances à lui adressées</p>
+<p>ISABELLE DE FRANCE, duchesse de Milan, femme de Jean-Galéas Visconti • Érection du comté de Vertus en sa faveur, par Jean le Bon</p>
+<p>JEAN II LE BON, roi de France • Généralités</p>
+<p>JEAN-GALEAS VISCONTI, duc de Milan • Érection du comté de Vertus en faveur de sa femme, Isabelle de France</p>
+<p>JESUITES • « Monita privata Societatis »</p>
+<p>JOINVILLE (Baronnie, puis principauté de) • Abandon du revenu de la principauté à la duchesse de Guise</p>
+<p>JOYEUSE (Henriette-Catherine DE), souveraine de Dombes, dame de Beaujolais, duchesse de Montpensier puis de Guise • Abandon à elle fait du revenu des comté d'Eu et principauté de Joinville</p>
+<p>LADISLAS VII [non IV], roi de Pologne • Mariage</p>
+<p>LA FRESNAYE (Guillaume Vauquelin, sieur DE) • Lettre à lui adressée</p>
+<p>LA MARCK (Catherine DE), veuve de Jacques de Harlay-Champvallon • Requête du roi</p>
+<p>LAMOIGNON (Guillaume DE), premier président au Parlement de Paris • Arrêtés</p>
+<p>LE PELETIER (Louis), conseiller au Parlement • Procès-verbal de son entrevue avec G. Du Vair (1616)</p>
+<p>LESCOT (Jacques), docteur de Sorbonne • Avis par lui donné sur le mariage de Gaston d'Orléans avec Marguerite de Lorraine</p>
+<p>LINCHAMPS (Ardennes) • Cession de cette terre à Louis XIII par la princesse de Conti</p>
+<p>LINGENDES (Jean DE) • Oraison funèbre de Victor-Amédée de Savoie</p>
+<p>LITS DE JUSTICE • Louis XIV</p>
+<p>LORRAINE (Charles III ou IV, duc DE) • Démêlés, procès avec la duchesse Nicole, sa femme</p>
+<p>LORRAINE (Charles III ou IV, duc DE) • Mariages avec Nicole de Lorraine</p>
+<p>LORRAINE (Charles III ou IV, duc DE) • Mariage avec Béatrix de Cusance, marquise de Cantecroix</p>
+<p>LORRAINE (Charles III ou IV, duc DE) • Traités par lui conclus</p>
+<p>LORRAINE (Marguerite DE), duchesse d'Orléans • Mariage</p>
+<p>LORRAINE (Nicole, duchesse DE) • Mariage</p>
+<p>LORRAINE (Nicole, duchesse DE) • Procès, démêlés avec son mari et négociations pour la réconcilier avec lui</p>
+<p>LOUIS XIII, roi de France • Cession parlui faite à la princesse de Conti</p>
+<p>LOUIS XIII, roi de France • Déclarations</p>
+<p>LOUIS XIII, roi de France • Discours et harangues à lui adressés</p>
+<p>LOUIS XIII, roi de France • Lettres</p>
+<p>LOUIS XIII, roi de France • Mandements</p>
+<p>LOUIS XIII, roi de France • Requêtes et suppliques à lui adressées</p>
+<p>LOUIS XIII, roi de France • Traités, contrats, etc</p>
+<p>LOUIS XIV, roi de France • Lettres</p>
+<p>LOUIS XIV, roi de France • Lits de justice par luitenus</p>
+<p>LOUIS XIV, roi de France • Mandements</p>
+<p>LOUIS XIV, roi de France • Pouvoirs par lui donnés</p>
+<p>LOUIS XIV, roi de France • Traités, alliances, etc</p>
+<p>MAILLE (Urbain DE), marquis de Brézé, maréchal de France • Mort de sa femme</p>
+<p>« MALEFAS » • Satire à lui adressée</p>
+<p>MALLIER (Claude), sieur Du Houssay, ambassadeur • Harangue</p>
+<p>MANGOT (Claude), sieur de Villarceau, garde des sceaux • Documents divers ; lettres de provision à lui accordées</p>
+<p>MANTES (Seine-et-Oise) • Pièces diverses</p>
+<p>MARCA (Pierre DE) • Lettres</p>
+<p>MARIE DE MEDICIS, reine de France • Gouvernement</p>
+<p>MARIE DE MEDICIS, reine de France • Testament</p>
+<p>MARIE-LOUISE DE GONZAGUE, reine de Pologne • Compliment à elle adressé</p>
+<p>MARIE-LOUISE DE GONZAGUE, reine de Pologne • Contrat de mariage</p>
+<p>MARILLAC (Michel DE), conseiller d'État, garde des sceaux • Testament</p>
+<p>MILAN (Isabelle de France, duchesse DE)</p>
+<p>MOHON (Ardennes) • Cession de cette terre à Louis XIII</p>
+<p>MONTBAZON (Hercule de Rohan, duc DE) • Testament</p>
+<p>MONTCHAL (Charles DE), archevêque de Toulouse • Excommunication par lui prononcée</p>
+<p>NICOLAÏ (Antoine II), premier président de la Chambre des Comptes • Compliment par lui fait</p>
+<p>OLIVARES (Gaspar-Felipe de Guzman, duc de San-Lucar, comte D') • Traité par lui conclu</p>
+<p>ORLEANS (Gaston, duc d'Anjou, puis D'), frère de Louis XIII • Convention et traités par lui faits</p>
+<p>ORLEANS (Gaston, duc d'Anjou, puis D'), frère de Louis XIII • Déclarations contre lui</p>
+<p>ORLEANS (Gaston, duc d'Anjou, puis D'), frère de Louis XIII • Mariage avec Marguerite de Lorraine</p>
+<p>PARLEMENT DE PARIS • Arrêts divers</p>
+<p>PARLEMENT DE PARIS • Défenses à lui faites</p>
+<p>PARLEMENT DE PARIS • Harangues diverses prononcées en Parlement</p>
+<p>PARLEMENT DE PARIS • Lettres à lui adressées</p>
+<p>PARLEMENT DE PARIS • Mandements à lui adressés</p>
+<p>PARTICELLI (Michel), sieur d'Émery ou d'Hémery • Ordre de départ par lui signifié</p>
+<p>PAYS-BAS HOLLANDAIS • Traités</p>
+<p>PHILIPPE IV, roi d'Espagne • Pouvoirs par lui remis</p>
+<p>PHILIPPE IV, roi d'Espagne • Traités</p>
+<p>PORTUGAL • Documents divers concernant ce pays</p>
+<p>RICHELIEU (Armand Du Plessis, cardinal-duc DE) • Accord entre lui et le duc de Bouillon</p>
+<p>RICHELIEU (Armand Du Plessis, cardinal-duc DE) • Discours et harangues</p>
+<p>RICHELIEU (Armand Du Plessis, cardinal-duc DE) • Lettres</p>
+<p>RICHELIEU (Armand Du Plessis, cardinal-duc DE) • Requête à lui présentée</p>
+<p>RICHELIEU (Armand Du Plessis, cardinal-duc DE) • Testament</p>
+<p>RICHELIEU (Armand Du Plessis, cardinal-duc DE) • Traité</p>
+<p>RICHELIEU (Nicole Du Plessis DE), femme du maréchal de Brézé • Oraison funèbre, par A.-D. Cohon</p>
+<p>ROHAN (Henri II, duc DE) • Expédition</p>
+<p>ROHAN (Henri Chabot, marquis de Sainte-Aulaye, duc DE) • Mariage avec Marguerite de Rohan</p>
+<p>ROHAN (Marguerite DE) • Mariage avec Henri Chabot, marquis de Sainte-Aulaye</p>
+<p>ROHAN (Marie DE), duchesse de Chevreuse • Enquête sur sa fuite en Espagne</p>
+<p>ROME • Ambassades, ambassadeurs, etc</p>
+<p>ROUSSEAU (Charles DE), évêque de Mende • De l'authorité des Papes et des Roys</p>
+<p>SAAVEDRA FAXARDO (Diego DE) • Pouvoirs à lui remis pour le congrès de Münster</p>
+<p>SAINT-CHAMOND (Melchior Mitte, comte de Miolans, marquis DE), ambassadeur • Lettres à lui adressées</p>
+<p>SAVOIE • Maison de Savoie</p>
+<p>SAVOIE (Chrétienne ou Christine de France, duchesse DE) • Différends et négociations avec les princes de Savoie</p>
+<p>SAVOIE (Chrétienne ou Christine de France, duchesse DE) • Lettres à elle adressées</p>
+<p>SAVOIE (Chrétienne ou Christine de France, duchesse DE) • Traités par elle conclus</p>
+<p>SAVOIE (Thomas-François, prince DE) • Accord (1642)</p>
+<p>SAVOIE (Victor-Amédée Ier, prince de Piémont, puis duc DE) • Oraison funèbre</p>
+<p>SCARRON (Jean), prévôt des marchands de Paris • Harangue à l'Assemblée du Clergé de 1645</p>
+<p>SCARRON (Paul) • Requêtes en vers en faveur de son père</p>
+<p>SEGUIER (Pierre III), chancelier • Discours</p>
+<p>SERVIEN (Abel), intendant de Guyenne, plénipotentiaire à Münster • Pouvoirs à lui remis</p>
+<p>SOISSONS (Louis II de Bourbon, comte DE) • Mort</p>
+<p>SOURDIS (Henri d'Escoubleau DE), évêque de Maillezais, archevêque de Bordeaux, chef de l'armée navale de Levant • Arrivée et séjour à Bordeaux (1633)</p>
+<p>SULLY (Maximilien de Béthune, marquis de Rosny, duc DE) • Discours à lui adressés</p>
+<p>TALON (Omer II), avocat général au Parlement de Paris • Harangues</p>
+<p>TALON (Omer II), avocat général au Parlement de Paris • Requêtes contre lui</p>
+<p>THOU (François-Auguste DE) • Arrestation, procès et exécution (1642)</p>
+<p>THOU (François-Auguste DE) • Lettres</p>
+<p>TOULOUSE (Haute-Garonne) • Parlement. Démêlés avec l'archevêque Charles de Montchal</p>
+<p>TOULOUSE (Haute-Garonne) • Parlement. Officiers</p>
+<p>URBAIN VIII, pape • Excommunications par lui prononcées</p>
+<p>VALTELINE (LA) • Pièces diverses concernant son histoire (1605-1637)</p>
+<p>VENDOME (César, duc de Beaufort, puis duc DE), fils de Henri IV et de la belle Gabrielle • Décret de prise de corps rendu contre lui</p>
+<p>VENDOME (Françoise de Lorraine, duchesse de Mercoeur et DE) • Lettres à elle adressées</p>
+<p>VENISE • Sénat</p>
+<p>VERTUS (Comté de) • Érection par le roi Jean en faveur d'Isabelle de France, duchesse de Milan</p>
+<p>VIGNIER (Nicolas), président au Parlement de Metz • Enquête sur la fuite de Madame de Chevreuse</p>
+<p>VISCONTI (Jean-Galéas), duc de Milan</p>
+<p>ZAMET (Sébastien), fils de Sébastien Zamet, évêque de Langres • Note sur l'abbé de Saint-Cyran</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e915');">« Discours de l'authorité des Papes et des Roys », par l'évêque de Mende [Charles de Rousseau], 1615</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e921');">« A l'immortelle mémoire de Henry IIIIe, roy de France et de Navarre »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e930');">« Harangue funèbre prononcée en l'église Nostre-Dame de Paris, en l'année 1637, par Mr [Jean] de Lingendes, prédicateur du Roy [Louis XIII], sur la mort de M. le duc de Savoie [Victor-Amédée Ier], beau-frère du Roy »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e942');">« Oraison funèbre sur la mort de Madame Nicole Du Plessis de Richelieu, femme de messire [Urbain de Maillé], marquis de Brézé, maréchal de France, récitée en l'église des Augustins de Paris, par Mr [Anthime-Denis] Cohon, évesque de Nismes, au service faict aux despens du Clergé lors assemblé dans Paris », [1635]</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e951');">Note de l'évêque de Langres [Sébastien Zamet] sur l'abbé de Saint-Cyran, 1638</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e957');">Lettre du Roi [Louis XIII] à la noblesse de Guyenne, Saint-Germain-en-Laye, 5 oct. 1638</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e963');">« Relation de ce qui s'est passé à Bordeaux à l'arrivée et pendant le séjour de Mgr l'archevesque [Henri d'Escoubleau de Sourdis] audit Bordeaux », 1633</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e969');">« De la qualité et dignité des premiers princes du sang de France »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e975');">Avis de [Jacques] Lescot, docteur de Sorbonne, sur le mariage de Gaston d'Orléans et de Marguerite de Lorraine</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e981');">« Advis de l'Assemblée générale du Clergé de France, tenue à Paris l'an 1635, sur les mariages des princes du sang », 7 juillet</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e987');">Actes relatifs à la cession faite au Roi [Louis XIII] par Louise-Marguerite de Lorraine, princesse de Conti, des terres souveraines de Château-Renault, Linchamp, Mohon et autres pays « d'oultre et deçà la rivière de Meuze », 1629-1630</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e993');">Traité conclu entre le cardinal de Richelieu, au nom de Louis XIII, et le duc Charles III de Lorraine, mars-avril 1641</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e999');">Procès-verbal dressé par les conseillers Courtin et Le Pelletier, députés par le Parlement vers Guillaume Du Vair, ancien garde des sceaux, afin de le consulter sur l'enregistrement des lettres de provision de Claude Mangot pour la même charge, nov. 1616</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1005');">« Sommaire des droictz de Son Altesse Sérénissime [le duc de Savoie] sur la ville de Genève »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1011');">Discours de [Benjamin Aubery, sieur] Du Maurier, à Sully</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1017');">« Discours sur le gouvernement de la Royne Mère [Marie de Médicis], faict en l'an 1617 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1023');">Manifeste du duc de Rohan, lors de sa retraite de la Valteline</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1029');">« Relation véritable et particulière » de l'affaire de la Valteline</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1035');">Requête des États de Dauphiné au Roi [Louis XIII] contre [Omer] Talon, conseiller d'État</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1041');">Discours du prince de Condé aux États de la province de Guyenne, après le départ du duc d'Épernon, 1638</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1047');">« Discours faict à Cologne par le secrétaire du cardinal [Marzio] Ginetti, touchant l'assemblée pour la paix générale », 1639</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1053');">Sentence d'excommunication, lancée par Charles de Montchal, archevêque de Toulouse, contre quelques officiers du Parlement de cette ville, avril 1639</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1059');">« Déclaration ou manifeste de Madame la duchesse de Lorraine contre le second mariage du duc Charles, son mary, avec la marquise de Cantecroix », Paris, 7 janv. 1640 (96) ; et autres pièces relatives à cette affaire</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1065');">Lettre du cardinal de Richelieu à la duchesse de Savoie, s. d.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1071');">Harangue de [Claude] Mallier, ambassadeur de France, aux doge et sénat de Venise</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1077');">Harangue prononcée par [Jérôme Ier] Bignon, avocat général, devant le Roi [Louis XIII], sur la création d'offices nouveaux, janv. 1636</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1086');">Harangue du cardinal de Richelieu au Roi [Louis XIII] séant en son lit de justice, 18 janv. 1634</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1092');">Édit de février 1641, interdisant au Parlement de s'immiscer sans commission dans les affaires de l'État</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1098');">Décret de prise de corps contre [César,] duc de Vendôme, Saint-Germain-en-Laye, 22 mars 1641</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1104');">Contrat de mariage entre Nicole de Lorraine et Charles de Lorraine, prince de Vaudemont, 22 mai 1621</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1110');">Nouvelles de Londres, mai 1641</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1116');">Harangue de Brûlart de Léon à l'Assemblée du Clergé, à Mantes</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1122');">Ordre de départ donné par [Michel Particelli, sieur] d'Émery, intendant des finances, aux archevêques et évêques assemblés à Mantes</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1128');">Arrêt portant prise de corps contre les ducs de Guise et de Bouillon, etc., 5 juillet 1641</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1134');">Abandon fait à la duchesse de Guise, Henriette-Catherine de Joyeuse, du revenu des comté d'Eu et principauté de Joinville, comme intérêt des sommes par elle avancées pour les affaires de feu son mari, 7 juillet 1640</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1140');">Arrêt de mort contre [Henri de Lorraine], duc de Guise, 6 sept. 1641</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1146');">Bulles d'Urbain VIII, portant excommunication contre le duc [Charles III] de Lorraine et Béatrix de Cusance, comtesse de Cantecroix, Rome, 23 avril 1642, traduction française</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1152');">Manifeste du duc [Charles III] de Lorraine (129), et autres pièces relatives à la même affaire, 1642</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1158');">Testament de Marie de Médicis, Cologne, 3 juillet 1642</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1164');">Articles accordés entre Louis XIII, la princesse de Savoie [Chrestienne], le cardinal [Maurice] de Savoie et le prince Thomas, Turin et Pierrelatte, 14 juin-1er juillet 1642</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1173');">Articles accordés entre le comte-duc de San-Lucar, pour le roi d'Espagne [Philippe IV], et [Louis d'Astarac, vicomte] de Fontrailles, pour Gaston d'Orléans, Madrid, 13 mars 1642</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1179');">Arrêt de mort contre Henri d'Effiat de Cinq-Mars et François-Auguste de Thou, Lyon, 12 sept. 1642</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1185');">« Discours sur la mort desdits sieurs de Cinq-Mars et de Thou »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1191');">Lettre de Cinq-Mars à sa mère [Marie de Fourcy]</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1197');">Lettre du Roi [Louis XIII] au Parlement, sur l'emprisonnement de Cinq-Mars, Fontainebleau, 6 août 1642</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1203');">Requête en vers, présentée au cardinal de Richelieu, pour le rétablissement de Paul Scarron en sa charge de conseiller, supprimée par l'édit de fév. 1641</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1209');">« Requête présentée au Roy par Scaron filz »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1215');">Déclaration du Roi contre le duc d'Orléans, Saint-Germain, 1er déc. 1642</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1224');">Mandement du Roi au procureur général du Parlement, sur l'entrée de Mazarin aux affaires, Paris, 6 déc. 1642</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1230');">« Procès de MM. le Grand [écuyer, Cinq-Mars], et [F.-A.] de Thou »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1236');">Lettre de F.-A. de Thou à [Pierre] Dupuy, 12 sept. 1642</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1242');">Lettre de Pierre de Marca, sur la condamnation de Cinq-Mars et de Thou, Lyon, 16 sept. 1642</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1248');">Testament du cardinal de Richelieu, 23 mai 1642</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1254');">« Consultation sur la difficulté faicte par le sieur Du Pont de Courlay père, d'accepter le legs à luy faict par ledit sieur cardinal [de Richelieu], afin d'impugner son testament et recueillir sa succession ab intestat », par Chappellier, Paris, janv. 1643</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1260');">Sonnets et rondeaux sur la mort de Richelieu</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1266');">Épitaphes de Richelieu</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1272');">Actes relatifs à la régence d'Anne d'Autriche, 1643</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1278');">Lettres d'abolition en faveur de [Robert IV de La Mark], duc de Bouillon, Noisy, 23 sept. 1642</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1284');">Lit de justice du 18 mai 1643</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1290');">Accord signé entre le cardinal de Richelieu, au nom du Roi [Louis XIII], et le duc de Bouillon, après la mort de [Louis II de Bourbon], comte de Soissons, Mézières et Sedan, 5 août 1641</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1296');">Mandement du Roi [Louis XIV] au Parlement, sur la détention de [François de Vendôme], duc de Beaufort, Paris, 22 sept. 1643</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1302');">Pouvoirs remis par Louis XIV au comte d'Avaux et à Abel Servien, et par Philippe IV, roi d'Espagne, à don Diego de Saavedra Faxardo, députés au congrès de Munster, 1643</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1308');">« Privata monita Societatis Jesu »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1314');">Lettre du Roi [Louis XIV] à [Melchior Mitte de Miolans, marquis de] Saint-Cha(u)mont, ambassadeur à Rome, sur le rôle joué par les cardinaux Barberini dans l'élection du pape Innocent X, Fontainebleau, 11 oct. 1644</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1320');">« Discours sur l'attentat en la personne de l'agent du roy de Portugal résident à Rome »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1326');">Remonstrances de [Nicolas Bretel], sieur de Gremonville, ambassadeur de France, au pape Innocent X</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1332');">Harangue de Scarron, prévôt des marchands de Paris, aux membres de l'Assemblée du Clergé, 1645</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1338');">« Vers burlesques sur le mariage de Mlle [Marguerite] de Rohan avec [Henry] Chabot », 1645</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1347');">Liste des conseillers d'État, s. d.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1353');">Réponse de M. des Yveteaux [Nicolas Vauquelin] à la lettre de M. de La Fresnaye, son frère, 1645 (229), suivie d'une pièce de vers latins</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1359');">Contrat de mariage entre le roi de Pologne Ladislas VII et Louise-Marie de Gonzague-Mantoue, Fontainebleau, 26 sept. 1645</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1365');">Testament du maréchal [Michel] de Marillac, Sainte-Menehould, 25 juin 1631</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1371');">« Discours tenu par M. [Pierre Séguier], chancelier de France, au nonce du pape Innocent X, sur les mescontentemens de Sa Majesté à cause du mauvais traitement de Sa Sainteté vers les François et le cardinal Barberini, nepveu du pape Urbain VIII »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1377');">«...Innocentii... papae X constitutio super recessu S. R. E. cardinalium a statu ecclesiastico sine licentia summi Pontificis, et reditu eorum, qui sine licentia hujusmodi recesserunt, ad Romanam curiam », 19 fév. 1646</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1383');">« Compliment de [Antoine II] Nicolaï, premier président de la Chambre des comptes de Paris, à la reine de Pologne [Louise-Marie de Gonzague], avant son départ », 1645</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1389');">Accord conclu entre les plénipotentiaires français et hollandais, La Haye, 1er mars 1644</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1398');">« Requeste des Dictionaires à MM. de l'Académie », en vers</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1404');">Requête de Catherine de La Mark, veuve de Jacques de Harlay, sieur de Champvallon, au Roi, minute incomplète de la fin, s. a.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1410');">Lettres du roi Jean, portant érection du comté de Vertus en faveur d'Isabelle [de France], femme de Jean-Galéas Visconti, et dudit Jean-Galéas, Paris, avril 1361</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1416');">Harangue d'Omer Talon, avocat général, au Parlement, sur la résidence des cardinaux, 20 avril 1646</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1422');">Lettre de Rome, sur les Barberini, 15 mars 1645</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1428');">« Decretum... Innocentii... papae X adversus propositionem istam : S. Petrus et S. Paulus sunt duo Ecclesiae principes, qui unum efficiunt, et libros in quibus illa propositio asseritur et defenditur », 24 janv 1647 (270 v°), et documents français relatifs à ce décret</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1437');">Testament d'Hercule de Rohan, comte de Montbazon, Paris, 1642</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1443');">Satire en vers français, commençant ainsi : « Escoute, Malefas, il fault que je te die... »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1449');">Harangue d'Omer Talon au Parlement de Paris, dans le lit de justice tenu par Louis XIV, le 15 janv. 1648</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1455');">Lettres du duc de Guise à la Reine [Anne d'Autriche] et à un grand personnage de la cour de France, Naples, 28 fév. 1648</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1461');">Lettre d'un astrologue à Madame de Vendôme [Françoise de Lorraine, duchesse de Mercoeur], sur la prochaine mise en liberté de son fils le duc de Beaufort, juin 1647</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1467');">Arrêts du Parlement, relatifs aux rentes de l'Hôtel-de-ville, 1648</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000088957_d0e1473');">Extrait du procès-verbal d'enquête, dressé par Vignier, président au Parlement de Metz, sur la fuite de la duchesse de Chevreuse [Marie de Rohan] en Espagne, s. a.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

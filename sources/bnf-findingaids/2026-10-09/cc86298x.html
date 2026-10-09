@@ -1,0 +1,481 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000086298">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000086298">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Bibliothèque de l'Arsenal > Anciens fonds : manuscrits français 2000 à 7465 > Manuscrits français 6021 à 6420</div>
+					<h1>Ms-6334. Archives des ducs de Longueville, et autres papiers</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000086298_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298">Ms-6334 • 191 quinquiès. H. F • Archives des ducs de Longueville, et autres papiers</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e100">1o (Fol. 1) • Lettre de M. de Piennes au duc de Longueville. 24 février 1570. Autographe</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e122">2o (Fol. 2) • Sauf-conduit de Louis XIII pour M. de Bernieulles, chargé de lever une compagnie de chevau-légers pour aller au secours du duc de Savoie, du 2 octobre 1625, contresigné par Abel Servien</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e153">3o (Fol. 3) • Deux lettres du Roi au duc de Longueville, des 19, 20 décembre 1628, contresignées par Bouthillier</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e173">4o (Fol. 5) • Lettre de Ledué à de la Fontaine, secrétaire du duc de Longueville. 23 avril 1632</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e198">5o (Fol. 7) • Deux lettres du Roi au duc de Longueville, des 19 mai, 31 décembre 1635, contresignées par Phelypeaux</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e220">6o (Fol. 9) • Lettre des conseillers échevins de Rouen au duc de Longueville. 7 juillet 1635</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e242">7o (Fol. 10 et 15) • Trois lettres autographes de d'Erlach au duc de Longueville. 9 et 24 avril, 13 juin 1641</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e264">8o (Fol. 13) • Deux lettres de J. Mallet. 7 mai 1641</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e281">9o (Fol. 17) • Lettre autographe de M. de Noyers au duc de Longueville. 22 août 1642</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e313">10o (Fol. 18) • Lettre chiffrée. 7 janvier 1650</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e335">11o (Fol. 20) • Deux lettres de M. de La Vrillière à M. de Comminges, 9 et 14 juin 1652. Signatures autographes</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e367">12o (Fol. 22) • Lettre du Roi à M. de Comminges, du 8 juillet 1652, contresignée par Phelypeaux</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e394">13o (Fol. 23) • Lettre du Roi au marquis de Praslin, du 25 juillet 1652, contresignée par Loménie</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e414">14o (Fol. 24) • Lettre du Roi à M. de Vaubecourt, du 25 juillet 1652, contresignée par Loménie</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e434">15o (Fol. 25) • Deux lettres du Roi à M. de Comminges, des 12 et 16 décembre 1652, contresignées par Phelypeaux</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e461">16o (Fol. 27) • Ordre du Roi au trésorier de l'épargne de payer à la duchesse de La Trémoille 6,000 liv., du 30 novembre 1652, contresigné par Loménie</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e481">17o (Fol. 28) • Lettre non signée, au duc de Longueville. 28 février 1654</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e508">18o (Fol. 29) • Lettre du Roi au duc de Longueville, du 10 avril 1659, contresignée par Le Tellier</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e538">19o (Fol. 30) • Deux lettres chiffrées, non signées, adressées « à M. d'Alemont, prez de S. A. la duchesse de Longueville », l'une sans date, l'autre datée du 30 août 1659</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e568">20o (Fol. 34) • Lettre de M. de La Vrillière au duc de Longueville (réjouissances pour le mariage de Louis XIV). 12 juin 1660. Signat. autogr</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e600">21o (Fol. 35) • Lettre non signée, adressée au duc de Longueville, datée de Paris, 2 avril 1658</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e627">22o (Fol. 36) • Lettre au duc de Longueville</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e651">23o (Fol. 38) • Lettre chiffrée, non signée, adressée au duc de Longueville. 3 novembre 1659</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e683">24o (Fol. 40) • Trois lettres du Roi au duc de Longueville, contre-signées par Le Tellier, et une de Le Tellier. 25 mars, 10, 14 avril 1659, 20 novembre 1661</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e718">25o (Fol. 44) • « Relation de la naissance, vie, mœurs et actes de guerre faits par Jean, bastard d'Orléans, fils naturel de Louys, duc d'Orléans, fils puisné de Charles V », dont sont issus les ducs de Longueville</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e745">26o (Fol. 47) • « Bail d'une maison à Constantinople pour trois ans à M. de Marcheville, ambassadeur, par Ismaël Cheleby. 24 avril 1633 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e778">27o (Fol. 48) • « Attestation de M. Foscarini, bayle de Venise à Constantinople, de ce qui se passa pour un vaisseau de Marseille qu'avoit pris le capitaine de la mer, qui fust rendu à M. de Marcheville par le commandement du Grand-visir, ce qui fascha tellement ce capitaine qu'il commanda à Usun Pialé, lieutenant de l'Arsenal, d'abattre une petite chapelle qui estoit chez ledt sieur de Marcheville et de faire tuer Balthazar, arménien, son interprète, et contribua beaucoup à la sortie dudt sieur de Marcheville. 16 mars 1641 »</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e809">28o (Fol. 50) • Billet non signé, adressé à M. d'Alemont</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000086298_d0e824">29o (Fol. 51) • Lettre chiffrée, datée de Livourne, 26 septembre</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><div class="libelle infoIntroMsg">La consultation des manuscrits de la Bibliothèque de l'Arsenal doit être motivée</div><span class="libelle">Document original : Ms-6334 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc86298x&Cote=Ms-6334&typecote=orig" onclick="return xitiResa()">Réserver</a></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Ms-6334 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : 191 <emph render="italic">quinquiès</emph>. H. F</div>
+<div class="did-label">
+<div class="did-unittitle">Archives des ducs de Longueville, et autres papiers</div>
+</div>
+<div class="did-date">XVI<emph render="super">e</emph>-XVII<emph render="super">e</emph> siècles</div>
+<div class="divdid">français, turc, italien</div>
+<div class="divdid">Papier51 feuillets, plus les feuillets 1bis, 9bis, 10bis, 13bis, 28bis, 35bis, 47bisÉcriture des XVI<emph render="super">e</emph> et XVII<emph render="super">e</emph> siècles380 × 250 mmDemi-reliure en parchemin vert</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Bibliothèque de l'Arsenal</div>
+</div><div class="userestrict-class">
+<div class="label-part">
+<p class="userestrict-label">Conditions d’utilisation</p>
+</div>
+<div class="description-part">
+<span>
+<p>Toute publication de documents inédits doit être notifiée à l'établissement.</p>
+</span>
+</div>
+</div><div class="prefercite-class">
+<div class="label-part">
+<p class="prefercite-label">Mention conseillée</p>
+</div>
+<div class="description-part">
+<span>
+<p>Bibliothèque nationale de France. Bibliothèque de l'Arsenal, Ms-X, fol. Y.</p>
+</span>
+</div>
+</div><div class="controlaccess-class">
+<p>Longueville (Maison d'Orléans-) • Archives des ducs de Longueville</p>
+<p>Longueville (Maison d'Orléans-) • Lettres adressées aux ducs de Longueville (1570-1661)</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e100');">Lettre de M. de Piennes au duc de Longueville. 24 février 1570. Autographe</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e122');">Sauf-conduit de Louis XIII pour M. de Bernieulles, chargé de lever une compagnie de chevau-légers pour aller au secours du duc de Savoie, du 2 octobre 1625, contresigné par Abel Servien</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e153');">Deux lettres du Roi au duc de Longueville, des 19, 20 décembre 1628, contresignées par Bouthillier</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e173');">Lettre de Ledué à de la Fontaine, secrétaire du duc de Longueville. 23 avril 1632</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e198');">Deux lettres du Roi au duc de Longueville, des 19 mai, 31 décembre 1635, contresignées par Phelypeaux</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e220');">Lettre des conseillers échevins de Rouen au duc de Longueville. 7 juillet 1635</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e242');">Trois lettres autographes de d'Erlach au duc de Longueville. 9 et 24 avril, 13 juin 1641</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e264');">Deux lettres de J. Mallet. 7 mai 1641</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e281');">Lettre autographe de M. de Noyers au duc de Longueville. 22 août 1642</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e313');">Lettre chiffrée. 7 janvier 1650</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e335');">Deux lettres de M. de La Vrillière à M. de Comminges, 9 et 14 juin 1652. Signatures autographes</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e367');">Lettre du Roi à M. de Comminges, du 8 juillet 1652, contresignée par Phelypeaux</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e394');">Lettre du Roi au marquis de Praslin, du 25 juillet 1652, contresignée par Loménie</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e414');">Lettre du Roi à M. de Vaubecourt, du 25 juillet 1652, contresignée par Loménie</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e434');">Deux lettres du Roi à M. de Comminges, des 12 et 16 décembre 1652, contresignées par Phelypeaux</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e461');">Ordre du Roi au trésorier de l'épargne de payer à la duchesse de La Trémoille 6,000 liv., du 30 novembre 1652, contresigné par Loménie</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e481');">Lettre non signée, au duc de Longueville. 28 février 1654</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e508');">Lettre du Roi au duc de Longueville, du 10 avril 1659, contresignée par Le Tellier</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e538');">Deux lettres chiffrées, non signées, adressées « à M. d'Alemont, prez de S. A. la duchesse de Longueville », l'une sans date, l'autre datée du 30 août 1659</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e568');">Lettre de M. de La Vrillière au duc de Longueville (réjouissances pour le mariage de Louis XIV). 12 juin 1660. Signat. autogr</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e600');">Lettre non signée, adressée au duc de Longueville, datée de Paris, 2 avril 1658</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e627');">Lettre au duc de Longueville</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e651');">Lettre chiffrée, non signée, adressée au duc de Longueville. 3 novembre 1659</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e683');">Trois lettres du Roi au duc de Longueville, contre-signées par Le Tellier, et une de Le Tellier. 25 mars, 10, 14 avril 1659, 20 novembre 1661</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e718');">« Relation de la naissance, vie, mœurs et actes de guerre faits par Jean, bastard d'Orléans, fils naturel de Louys, duc d'Orléans, fils puisné de Charles V », dont sont issus les ducs de Longueville</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e745');">« Bail d'une maison à Constantinople pour trois ans à M. de Marcheville, ambassadeur, par Ismaël Cheleby. 24 avril 1633 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e778');">« Attestation de M. Foscarini, bayle de Venise à Constantinople, de ce qui se passa pour un vaisseau de Marseille qu'avoit pris le capitaine de la mer, qui fust rendu à M. de Marcheville par le commandement du Grand-visir, ce qui fascha tellement ce capitaine qu'il commanda à Usun Pialé, lieutenant de l'Arsenal, d'abattre une petite chapelle qui estoit chez ledt sieur de Marcheville et de faire tuer Balthazar, arménien, son interprète, et contribua beaucoup à la sortie dudt sieur de Marcheville. 16 mars 1641 »</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e809');">Billet non signé, adressé à M. d'Alemont</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000086298_d0e824');">Lettre chiffrée, datée de Livourne, 26 septembre</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

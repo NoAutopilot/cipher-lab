@@ -1,0 +1,459 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000013967">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000013967">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Erudits et bibliophiles > Clairambault</div>
+					<h1>Clairambault 873-890</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000013967_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967">Clairambault 873-890 • Lettres originales et autographes, requêtes, mémoires et pièces relatives à la Marine et aux Galères (affaires personnelles principalement) classées par ordre alphabétique.</a><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e47">Clairambault 873 • I A-B.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e364">Fol. 60 • Permis pour le capitaine Gabriel d'Ailly, commandant la « Petite Marie » de sortir de la citadelle de Bayonne. Placard impr.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e373">Fol. 103 • « Description de la feste que M. Arnoul, intendant des galères et du commerce à Marseille, donna à la reine d'Espagne, le lundi 29 octobre 1714, à l'occasion de la Sale d'armes de l'arcenal des Galères, que S. M. voulut bien venir voir, et d'une espèce de triomphe qui y avoit été préparé pour Elle. » Impr. Marseille, P. Mesnier, s. d., in-4° de 27 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e382">Fol. 184 • Anciennes fortifications de Paris possédées par les Jacobins (1607-1643).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e388">Fol. 200 • Note sur la prise du vaisseau vénitien l' « Europe » par les pirates barbaresques (1676).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e394">Fol. 204 • Intérêts de la Reine-mère dans la Cie des Indes Orientales.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e403">Fol. 210 • Mémoire de Billon de Canserilles sur ses voyages en Perse et offres de services au Roi.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e409">Fol. 228 • État des voyages faits par le sieur de Blainville, commissaire de la Marine, pour le service des vaisseaux et galères du Roi (jusqu'au 30 septembre 1696).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e415">Fol. 245 • Extraits de la Chambre des Comptes de Navarre (1415-1580).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e421">Fol. 256 • « Instructions au sieur de Boisise, s'en allant aux Pas-Bas en 1618. »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e427">Fol. 266 • « Mémoire des évasions que Marie Bonnaud et son mary ont découvertes, en considération desquelles elle demande un employ pour luy dans la Marine. »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e433">Fol. 275 • Supplique de Bourbon, procureur du séminaire Saint-Sulpice de Montréal (1689).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e439">Fol. 290 • « Factum pour Mathurin Le Breton, escuyer, sieur des Renardières, héritier de defunct Samuel de La Lande,... contre Robert de La Lande, aussi escuyer, sieur de La Vau, qui fut fils et héritier de feu François de La Lande, vivant sieur de La Vau, et damoiselle Anne de Poix, ses père et mère, intimez. » Impr. S. l. n. d., in-4° de 4 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e448">Fol. 315 et 319 • Contrat de mariage de Louis de Valory, écuyer, et de Catherine de Brisay (17 mars 1446), et pièce concernant Abel de Brizay (1475 ; copie contemporaine).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e454">Fol. 356 et suiv. • Pièces sur le Canada.</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e460">Clairambault 874 • II CA.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e705">Fol. 98 et 99 • Supplique du prisonnier grec Georges Caron réclamant la liberté (1671).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e711">Fol. 157 • Requête adressée au Roi par Georges-Christophe Cast, de Strasbourg, secrétaire interprète, commissaire de la Marine et directeur du commerce auprès du duc d'Albemarle, vice-roi des Indes occidentales anglaises (1698).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e717">Fol. 159 • Mémoire sur les Antilles, d'après Castaigne.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e723">Fol. 187 • Congés de Pierre Castaigne (1686).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e729">Fol. 394 • « Extrait du livre-journal de recepte de l'Extraordinaire des guerres et cavalerie légère de l'année 1677. »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e735">Fol. 398 • Lettre du Roi au marquis de La Coste, ordonnant que la garde sera continuée dans l'île d'Ouessant après la paix (20 novembre 1666).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e741">Fol. 407 • Capitulation de Casal (11 juillet 1695).</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e747">Clairambault 875 • III CE-CO.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e938">Fol. 8 et 33 • États de services des capitaines de vaisseau Chabert et Charles de la Blandinière.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e944">Fol. 18 • Lettre du grand maître de l'Ordre de Malte à Seignelay, au sujet du chevalier de Champignelles (23 octobre 1686).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e950">Fol. 46 et suiv. • Pièces concernant le sieur Charleville, marchand à Brest (1684-1694).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e956">Fol. 84 • Relation du pillage de La Hougue par le sieur de Chavagnac.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e962">Fol. 230 • Procès-verbal de la découverte et de l'enterrement de trois français assassinés sur la plage d'Orsier (1688).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e968">Fol. 245 • Mémoire de Costebelle, lieutenant du Roi à Terre-Neuve (1688).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e974">Fol. 249 • « Ordre de marche et de bataille, au plus près du vent [d'une escadre]..., à bord de l'Orgueilleux, le 1er de may 1694. » (Signé : le comte de Châteaurenault.) Placard impr. in-fol.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e986">Fol. 264 et suiv. • Pièces concernant les de Couhé-Lusignan (1697).</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e992">Clairambault 876 • IV CO-CU. — Lettres des chevalier, marquis et vicomte de Coëtlogon, 1676-1731 (fol. 21 et suiv.), du sieur de Croisi, de Dieppe, 1691 (fol. 335), de Mlle et du sieur de Cumont (fol. 341).</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1163">Fol. 3 et suiv. • Pièces concernant Cochart de Boisy, garde de la marine (1685-1709).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1169">Fol. 213 • « Mémoire pour le partage des prises des deux vaisseaux « la Catherine » et « le Lyon d'Or », de Londres, adjugées aux sieurs Yvon Collet, sieur du Portail, capitaine de la frégate « l'Intrépide », et à François le Fer, sieur Dupin, capitaine de la petite frégatte « l'Yrondelle. » Impr. S. l. n. d., in-4° , 3 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1178">Fol. 315 • « Mémoire pour le sieur Dupin, capitaine de la frégatte « l'Hirondelle », contre le sieur Duportail, capitaine de la frégatte « l'Intrépide. » Impr. S. l. n. d., in-fol., 2 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1187">Fol. 216 et suiv., 333 et suiv. • Pièces concernant Courbon de Blénac (1670-1739) et Crésolles, capitaine de la milice de Servel et Brélevenez (1692).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1193">Fol. 307 et 329 • Arrêt du Parlement « qui ordonne la radiation des termes injurieux à la noblesse du comte de Courbon et à sa maison... (14 février 1739). » Impr. Paris, André Knapen, s. d., in-fol. de 2 pages, suivi d'un « Tableau généalogique de MM. de Courbon, seigneurs de Saint-Léger, de Romette, de Romegou, de Briaigne. » Placard impr. S. l. n. d.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1205">Fol. 318 et 328 • Supplique de « Gabriel-Madelaine de Courbon,... sénéchal de Saintonge, » adressée au Parlement, contre les sieurs Peyren et marquis de Crèvecoeur. Impr. Paris, André Knapen, 1739, in-fol. de 4 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1214">Fol. 320 • « Factum pour Messire Jacques de Courbon,... capitaine lieutenant sur les vaisseaux du Roy, prisonnier, dans les prisons de la Conciergerie, deffendeur et accusé, contre dame Elizabeth de Ponts, veufve de Messire François d'Albret, comte de Miossans, accusatrice et deffenderesse. » Impr. S. l. n. d., in fol. de 16 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1223">Fol. 336 • Note de Crusino Coronello, consul de France dans l'île de Naxos (Archipel).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1229">Fol. 358 • Pièces sur le sieur de Cussy, gouverneur des îles de la Tortue et de Saint-Domingue.</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1235">Clairambault 877 • V DA-DU.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1529">Fol. 47 • Incorporation de Guillaume, André, Benoît, Jean, Charles et Georges Damiain au nombre des nobles citoyens de la ville d'Ast (13 décembre 1460) par Charles, duc d'Orléans.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1535">Fol. 63 • Quittance de Jean de Dampierre (1302).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1541">Fol. 77 et suiv. • Supplique au Roi de Jacques Danguy, lieutenant particulier, assesseur civil et criminel de l'amirauté dans l'évêché de Nantes, contre Raoul-Philippe Fouguer de Kersolio, lieutenant-général (1700). Impr. S. l. n. d., in-fol. de 4 pages, et pièces relatives à cette affaire.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1550">Fol. 86 • Séparation de corps et de biens de Claude-Daniel de Boisdemets et de Magdeleine de Framez L'Évesque, sa femme.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1556">Fol. 90 et 139 • Supplique au Roi de Jean Daniel, de la Seyne, contre la République de Venise. Impr. S. l. n. d., in-4° de 3 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1565">Fol. 103 • Lettre de Daniel du Sarday, neveu de Duguay-Trouin, à Chérin, demandant l'autorisation d'ajouter à son nom celui de son oncle.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1571">Fol. 268 • État des chaloupes et des équipages de la Marine à Dunkerque.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1577">Fol. 269, 270 • Nouvelles maritimes de Paris et de Lyon (1682).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1583">Fol. 271 • Sentence pour Pierre du Cauroy, marchand de la Martinique, contre Robert Traillet (15 novembre 1682).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1589">Fol. 280 • Rapport de Du Demainne-Le Breton, capitaine de la « Marie », de Saint-Malo, revenant de la course.</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1595">Clairambault 878 • VI DU.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1701">Fol. 11 et suiv. • Pièces sur. J.-B. Ducasse, gouverneur de la Martinique.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1707">Fol. 101 • Billet d'enterrement du Ducasse.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1713">Fol. 144 • « Factum pour maistre Nicolas Du Chesne, prestre, chanoine de l'église de Nevers, intimé, contre maistre Eustache Berthier, appellant, et maistre Pierre Clément, aussi intimé. » Impr. S. l. n. d., in-4° de 4 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1722">Fol. 146 et suiv. • Pièces sur Pierre Dufourcq, sieur de Labadie et François Dufourcq.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1728">Fol. 149 • « Table contenant les noms des intéressés en la ferme de Martin Dufresnoy, pour M. de Ragareu, maistre des requestes, demandeur, contre les sieurs Laugeois, héritiers, etc. » Placard impr. S. l. n. d.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1737">Fol. 159 et 230 • Pièces concernant les familles Dumesnil-Roland, La Chaise, Bérard, de Chamblay.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1743">Fol. 194 • « Relation de deux campagnes que le sieur Dumont, enseigne des vaisseaux du Roy, a faites en course pour des particuliers de Bayonne, ès annés 1711 et 1712. » Impr. in-4° de 4 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1752">Fol. 274 et suiv. • Mémoires du sieur Dupuis, garde de la marine.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1758">Fol. 282 • Portrait gravé d'Imbert Dupuis, cardinal camerlingue de l'Église romaine.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1764">Fol. 287 • Pièces sur Dutast, garde de la Marine du département de Rochefort (1690 et suiv.)</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e1770">Clairambault 879 • VII E-F.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2113">Fol. 1bis • Requête du forçat Pierre Émery au duc d'Orléans (1717) ; avec dessin colorié.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2119">Fol. 23 • Mémoire pour Pierre Ernaud contre le procureur général de la Marine et la duchesse de Brachiame.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2125">Fol. 33 • Mémoire de Guitaud et Dumaitz sur les Antilles (1691).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2131">Fol. 120 • Mémoire sur la détention de l'équipage du vaisseau français le « Saint-Vincent » (1692).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2137">Fol. 132 • Relation de la prise de Cayenne et de l'attaque de Tabago contre les Hollandais (1677).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2143">Fol. 140 • « Mémoire pour M. le maréchal d'Estrées, vice-amiral de France, défendeur, contre Mme la duchesse d'Estrées, demanderesse en requeste du 7 février 1705. » Impr. S. l. n. d., in-fol. de 12 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2155">Fol. 146 • Lettres de provisions de maréchal de France, en faveur du comte d'Estrées (24 mars 1681).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2161">Fol. 151 • « Mémoire touchant la campagne que les vaisseaux du Roy ont faite avec l'armée d'Angleterre en l'année 1672. »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2167">Fol. 163 • Note sur l'Éthiopie (1633).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2173">Fol. 218 • Certificats de Fézeret, blessé dans une rencontre avec les Anglais et les Iroquois (1693).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2179">Fol. 224 • « Instruction sommaire du procez pendant par devers le Roy en son Conseil de Marine, par le capitaine Figuière » Impr. S. l. n. d., in-fol. de 3 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2188">Fol. 226 • « Sentence rendue par M. le lieutenant criminel du Châtelet de Paris, confirmée par arrest de la Cour du 20 octobre 1735... contre François Roussel, curateur au cadavre de Jean-Fréderic Finx. » Placard impr. in-4°.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2197">Fol. 230 • Relation du voyage du sieur de Feuquières en Allemagne.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2203">Fol. 231 • « Mémoire pour le sieur Mathurin-Florent Ffos, lieutenant civil et criminel du siège royal de Léogane, côte Saint-Domingue. » Impr. Paris, Mesnier, 1726, in-fol. de 7 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2212">Fol. 239 • Vers adressés au Roi par le forçat Floriot de Boisfey.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2218">Fol. 243 • Jugement contre Fouasseau, débiteur du Roi pour la somme de 76 782 livres.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2224">Fol. 254 • Requête au Roi du duc de Fornary [Ferdinand Fornary Colonne], demandant renvoi au Conseil privé de son procès avec M. de Vintimille. Impr. S. l. n. d., in-fol. de 7 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2233">Fol. 276 • Quittances, dessins de sceaux et pierres tombales (avec épitaphes) concernant la famille Fraisnoi ou Fresnoi (1261-1352).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2239">Fol. 278 • Mémoire de J.-B.-Louis Franquelin, hydrographe à Québec, adressé à Pontchartrain.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2245">Fol. 312 • Mémoire concernant la concession de terres accordée à Denis de Fronsac au Canada.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2251">Fol. 320 et suiv. • Mémoires de Frontenac sur le Canada.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2257">Fol. 366 • « Factum pour dame Marie Fyot, vefve de M. Baillet, président en la Chambre des Comptes de Dijon, et à présent femme de Messire Robert de Barvile, chevalier, baron du Coudray, etc., contre Maistre Pierre Saumaise, sieur de Chasans, conseiller du Roy au Parlement de Bourgogne, et dame Jeanne Burgat, vefve de maistre Jacques Baillet, aussi conseiller audit Parlement, deffendeurs. » Impr. S. l. n. d., in-4° de 12 pages.</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2266">Clairambault 880 • VIII G.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2511">Fol. 65 • « Relation de ce qui s'est passé au bombardement de Saint-Malo jusques à ce jour 15 juillet, à 6 heures du matin. »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2517">Fol. 86 • « Mémoire pour le sieur de La Gatinais, capitaine de vaisseau dans les Indes. » Impr. S. l. n. d., in-4° de 8 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2526">Fol. 111 et suiv. • Mémoires de Gémosat sur l'île de Grenade.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2532">Fol. 128 et suiv. • Notes sur la République de Genève.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2538">Fol. 131 • Mémoire sur les finances de la République de Gênes.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2544">Fol. 143 • Relation de l'entreprise de Gigery (1664).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2550">Fol. 301 • Mémoire du sieur de Goutin sur l'Acadie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2556">Fol. 404 • Note sur le comte de Guldenleu, colonel du régiment royal danois.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2562">Fol. 389 • Rapport du sieur Grosbois, sur son voyage aux Indes (1697).</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2568">Clairambault 881 • IX H-K.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2756">Fol. 1 • Portrait gravé de Marie Hacqueteau, dame d'Orvilliers.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2762">Fol. 103 • « Bail des ports et hâvres de Bretagne (25 janvier 1672). »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2768">Fol. 112bis • Quittance de Christofle Guillaume, sieur de Marsangy (30 septembre 1572 ; copie).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2774">Fol. 132 • Note sur le voyage des vaisseaux « Notre-Dame de Lorette » et « Sainte-Catherine » (1670).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2780">Fol. 133, 134 • Requêtes des Jésuites d'Orient au Roi.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2786">Fol. 135 • Mémoire d'Iberville sur ses voyages au Canada.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2792">Fol. 187 • « Extrait d'un opuscule manuscrit de M. le vicomte de Tn.-Rg., sur quelques grands hommes oubliés dans les dictionnaires historiques. Michel Jacobs, Jacobsen ou Jacobson, habile et brave marin... » Impr., S. l., 1785, in-4° de 4 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2801">Fol. 193 et suiv. • Lettres et mémoires pour les Jésuites d'Amérique, adressés à Pontchartrain (1696).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2807">Fol. 199 • Requête d'Étienne Joubert, forçat, au comte de Maurepas (avec peintures).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2813">Fol. 200 • « Factum pour Samuel Kirkpatrick, anglois, maître du navire « la Faveur de Witthaven », et pour Guillaume Anderson, Thomas Clarck, Jean Sturck, Jean Stirling et Guillaume Tamoch, marchands de Glascow, affréteurs de ce navire et propriétaires du chargement, appelans et réclamateurs, contre le capitaine Dobiola, commandant la frégate « le Duc de Vendôme », de Bayonne. » Impr. Paris, Laurent Rondet, s. d., in-fol. de 3 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2822">Fol. 202 • Mémoire des services de bailli de Kerbuzec, enseigne des vaisseaux du Roi.</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e2828">Clairambault 882 • X LA-LE.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3217">Fol. 3 • Mémoire de Lagny, adressé à Seignelay, sur les consuls en Amérique.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3223">Fol. 13 • « Bref recueil des services renduz par ceux de la noble et ancienne famille de La Broye dois l'an 1281, aux filz des roys de France, ducq de Bourgogne... »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3229">Fol. 14, 18 • Déposition du sieur de La Brouste, capitaine d'une frégate désarmée (29 décembre 1696).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3235">Fol. 28 • Mémoire des services de La Chapelle, enseigne de vaisseau.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3241">Fol. 54 et 64 • Mémoire d'André Clavereau, sieur de la Douve, au aujet de sa barque « l'Hirondelle » prise par deux corsaires espagnols.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3247">Fol. 68 • Procès-verbal des commis de Calais, portant saisie de plusieurs diamants et pierres précieuses.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3253">Fol. 70 et 73 • Requête adressée au Roi par François de La Fosse, lieutenant de l'amirauté de Caen, et procès-verbal de l'arrestation de neuf religionnaires à Estrehan.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3259">Fol. 72 • Reçu de Bernard de La Fosse (24 novembre 1503).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3265">Fol. 77 et 197 • Rapports du sieur de La Vallée, capitaine de frégate (1694 et 1697).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3271">Fol. 103 • Certificat de service pour le sieur Lajard de Saint-Oyen (1718).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3277">Fol. 123 et 125 • Mémoire des services du sieur La Marre, de Caen, et portrait gravé d'Antoine La Marre.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3283">Fol. 133 • Dépenses pour le vaisseau « Notre-Dame de Lumière » (1675-1679).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3289">Fol. 147 • Rapport de La Reynie sur le sieur de La Motte (28 février 1693).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3295">Fol. 188 • Factum de Louis de La Rivière, peintre de la marine, adressé à Pontchartrain.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3301">Fol. 193 • Déclaration du vice-consul de Lisbonne, Julien de La Roze, au sujet de la détention du vaisseau français « le Saint-Vincent » (25 octobre 1692).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3307">Fol. 199 • Rapport des sieurs de La Vigne-Buisson et Desormes, commandants du « Comte de Tessé » et du « Nicolas » de Saint-Malo, armés en course (26 juin 1697).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3313">Fol. 218 • « Avertissement pour Claude Baret, banquier de la ville de Marseille, demandeur en exécution d'arrêt du 26 juin 1690..., contre J.-B. Lavigne, marchand de ladite ville de Marseille, défendeur et demandeur. » Impr. S. l. n. d., in-4° de 16 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3322">Fol. 230 et 234 • Factum des Jacobins de la Martinique contre Lebègue, lieutenant royal, et réponse de ce dernier (1696).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3328">Fol. 248 • Pièces sur l'incarcération de Claude Le Borgne de Vigneu à Saint-Lazare (1687).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3334">Fol. 274 • État des prises faites par les frégates « le Namur » de Nantes et « le Vaillant » de Saint-Malo (13 octobre 1693).</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3340">Clairambault 883 • XI LE-LU.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3587">Fol. 19 et suiv. • Pièces sur les familles Le Febvre ou Lefebvre (billets d'enterrement impr., etc.).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3596">Fol. 21 • « Sommaire du procez criminel instruit en la Cour à la requeste de damoiselle Marguerite Turlin, veuve de feu Eustache de Faverolles, dame Anne Yvelin, veuve de Messire Jacques Morin..., dame Marguerite du Puy-Montbrun,... marquis de Sommerdicq, messire Jean comte d'Estrée, vice-admiral de France, messire Philippe de Courcillon, marquis Danjau, gouverneur de Touraine, messire Jean Largentier..., maistre Guillaume Faverolles et maistre Jean de La Porte, intimez et accusateurs, contre Simon Le Febvre, appellant et accusé de banqueroute frauduleuse. » Impr. S. l. n. d., in-fol de 130 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3605">Fol. 128 • Arrêt du Parlement déclarant François Le Febvre, sieur des Grassières, lieutenant général criminel de la ville de Saumur, noble et exempt de tailles (1610). Impr. S. l., 1621, in-4° de 28 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3614">Fol. 163 • Éloge de Mme Dacier [née Anne Le Fèvre, † 17 août 1720]. » Impr. Paris, Pierre Witte, s. d., in-4° de 15 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3626">Fol. 191 • « Factum pour maistre Claude Coquely, prestre, prieur de Saint-Beroing et de Chenevanes, demandeur aux fins de l'exploit du dernier décembre 1671, et en resqueste par luy présentée à la Cour le 20 février, lettres obtenues, etc..., contre Maistre Charles Le Febvre, chanoine en l'église de Paris, défendeur et demandeur en requeste du 30 dudit mois de mars 1672, d'autre part. » Impr. S. l. n. d., in-4° de 16 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3635">Fol. 229 • Mémoire de tout ce qui a été perdu dans le démâtement du vaisseau du Roy « le Fleuron » (21 mai 1699).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3641">Fol. 233 • Requête de Louis Le Gouz, sieur de Torozée, et François Le Gouz, sieur du Portail, faisant opposition au rôle les déclarant usurpateurs de noblesse (1699).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3647">Fol. 238 • Tombeau de Constance de Cirey, femme de Charles Le Gouz, à Dijon. Gravure de S. Thomassin.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3653">Fol. 248 • Pierre tombale de Pierre Le Goux à la cathédrale de Langres.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3659">Fol. 292 • Supplique de Louis Levasseur, sieur de Gatineau. Impr. S. l. n. d., in-fol. de 12 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3668">Fol. 298 • Relation de la tentative d'assassinat contre Le Vasseur, près de Jardy. Placard impr. Paris, L. Coignard, 1727.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3677">Fol. 299 • « Ad amicum excusat se Santolius ab epitaphio Vavassori inscribendo. » Placard impr. S. l. n. d.</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e3686">Clairambault 884 • XII M.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4110">Fol. 1 • Affaire Macharis-Bègue, de la Martinique (1696).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4116">Fol. 92 et suiv., 137, 306 • Pièces sur Barthélemy Mathieu, patron de la barque « Saint-Joseph » (1676-1678).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4122">Fol. 119 • Requête des forçats Dumant et Barrière (avec peintures).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4128">Fol. 121 • Affaire Estienne Macé des Valons (1693).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4134">Fol. 131 • « Jugement des commissaires établis pour la vérification des droits maritimes, qui supprime seize bouchots ou pêcheries construits sur les vases de la mer, dans l'étendue de la seigneurie de Charon, comme nuisibles à la navigation (22 avril 1641). » Impr. Paris, Impr. roy., 1742, in-4° de 11 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4143">Fol. 138 • Liste des gardes de la marine du port de Rochefort (1683-1738).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4149">Fol. 176 et suiv. • Gardes de la marine du port de Brest (1695).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4155">Fol. 189 • Voyage de la Rochelle en Acadie (1688).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4161">Fol. 207 • « Factum pour Joseph Marchant, demandeur, contre M. Maistre Joachim Marchant, cy-devant conseiller au Parlement de Mets, son frère, défendeur. » Impr. S. l. n. d., in-4° de 17 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4170">Fol. 217 • « Extrait du contrat du 14 aoust 1635 [entre Marie Rebours et le nociviat de la Compagnie de Jésus, à cause de Joachim Marchant, fils]. Impr. S. l. n. d., in-4° de 3 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4179">Fol. 218 • Extrait des registres du Parlement concernant les sieurs du Mée, Joachim, Joseph. Placard impr. S. l. n. d.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4188">Fol. 236 • « Précis pour le sieur Marchant contre le sieur Reynaud et consorts. » Impr. S. l. n. d., in-fol., 4 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4197">Fol. 238 • « Précis pour sieur François Marchand, deffendeur, contre les sieurs Amé, Renaud et Dijon, demandeurs. » Impr. Paris, Jean François Knapen, in-fol. de 7 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4206">Fol. 242 • « Mémoire pour sieur François Marchant, interressé pour quatre sols en dix-neuf, dans le marché des voitures de Dauphiné de l'année 1708, passé sous le nom de Marc Gerlat, contre les sieurs Amé, Reynaud et Dijon, croupiers du sieur Marchant en cette entreprise. » Impr. S. l. n. d., in-fol., 8 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4215">Fol. 270 • Ordonnance d'information, rendue sur l'avis de l'évêque de Québec contre le sieur de Mareuil (1er février 1694).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4224">Fol. 273 • Certificat de service du sieur de Marle d'Andigny, signé Tourville.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4230">Fol. 277 • Mémoire de Nicolas Massenot, conseiller et contrôleur royal au grenier à sel de Saulx-le-Duc et Is-sur-Tille, adressé à Pontchartrain.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4236">Fol. 297 • Placet adressé par Pierre Lemasuyer, forçat, à Pontchartrain. Placard impr. S. l. n. d.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4245">Fol. 321 et 323 et suiv. • « Usages du compas de variation et du planisphère que M. Meynier, ingénieur de la marine, a inventé pour la marine, » avec approbation de l'Académie des sciences (13 juin 1731).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4251">Fol. 361 • Revue des compagnies franches de la marine à Toulon (30 nov. 1696).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4257">Fol. 362 • « Copie de l'ordre du Mogol escritte à Amanet Kan, geuverneur de Suratte. »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4263">Fol. 364 • Journal du voyage de Maurepas à Brest (1727).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4269">Fol. 428 • Nouvelles à la main relatives aux Protestants (Montbourcher, etc.) 1686.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4275">Fol. 433 • « Addition au mémoire pour le marquis d'O, intimé, contre M. l'archevêque de Cambray, appelant, servant de contredits à la production nouvelle faite par requête du 4 mars. » Impr. Paris, veuve Knapen, 1744, in-fol. de 6 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4284">Fol. 440 • « Factum pour François de Montagne, escuyer, seigneur de Bussaguet, héritier de défuncte dame Marie de Brian, sa tante, femme de défunct Me Guy de Lestonac, conseiller au Parlement de Bourdeaux, contre Me Pierre de Lestonac, conseiller audit Parlement, héritier de damoiselle Françoise de Lestonac, sa mère, qui avoit esté héritiere universelle dudit défunct sieur de Lestonac, son frère. » Impr. S. l. n. d., in-4° de 4 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4299">Fol. 452 • « Relacion de servicios del capitan de mar y guerra Don Juan de Monsegur. » Impr. S. l. n. d., in-8° de 4 pages (en espagnol).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4308">Fol. 462 • « Factum pour Jean-Baptiste de Monthoulieu, escuyer, de la ville de Marseille, lieutenant d'une galère commandée pour le service du Roy, seul fils et unique héritier de feu Guillaume de Monthoulieu, son père, ayant repris le procez en son lieu, demandeur, contre les consuls et gouverneurs de la ville de Marseille, deffendeurs. » Impr. S. l. n. d., in-4° de 12 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4317">Fol. 490 • Procèsverbal de la capture d'un vaisseau guernesois par Jean Monier.</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4323">Clairambault 885 • XIII N.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4475">Fol. 1 • Mémoire des services de Nadau Dutreil, capitaine d'une Compagnie de marine à la Martinique.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4481">Fol. 41 • Mémoire sur l'armement des galères (1692).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4487">Fol. 164 et suiv. • Journal de la Compagnie des vingt-cinq galères commandées par le bailli de Noailles (1696).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4493">Fol. 289 • Note sur la charge de La Noüe, valet de chambre du Roi.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4499">Fol. 290 • Passeport délivré à Melle de La Noüe par le connétable Anne de Montmorency (2 janvier 1562 ; orig.).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4508">Fol. 297 • Requête adressée au duc d'Orléans par Jean Nouguès, forçat. Placard impr. S. l. n. d.</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4517">Clairambault 886 • XIV O-Q.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4805">Fol. 68 • « Estat des marchandises qui sont dans la prise de l'arcenal de Dantzig, vallant plus d'un milion d'achapt à Smirne, le tout ayant esté suputé à 346.721 piastres. »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4811">Fol. 82 • Transaction entre l'église d'Auch et la maison du Temple de Bordères (1244, copie).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4817">Fol. 84 • « Arrest de la Cour de Parlement, contre Jacques Pélissier, matelot... condamné... pour vols aux galères à perpétuité, d'où il s'est sauvé en 1719, portant condamnation d'être pendu, préalablement appliqué à la question... » Impr. Paris, Louis-Denis Delatour et Pierre Simon, 1722, in-4° de 4 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4826">Fol. 86 et suiv. • Affaire de Simon Pellissier, marchand de Marseille, contre Jean Pegourier, patron de la ville d'Agde, et les officiers de l'Amirauté de Marseille.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4832">Fol. 186 • Copies d'un acte des archives de la ville de Brignole, concernant la famille Pontevez (1213).</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e4838">Clairambault 887 • XV R.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5048">Fol. 9 • Relation de ce qui s'est passé au Canada en 1693.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5054">Fol. 41 • Rapport de Renault sur la campagne du « Bon » 1699).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5060">Fol. 92 • « Factum pour Me Charles-François Ricard, sieur du Rozel, conseiller du Roy, prévôt royal du Beauvoisis à Amiens, et consors, enfans et héritiers de défunt Me Vincent Ricard, vivant avocat au Parlement, ... contre Jean-Batiste Groulle, tant en son nom que comme tuteur de ses frères et soeurs... » Impr. S. l. n. d., in-fol. de 7 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5075">Fol. 137 • « Arrest portant règlement entre les greffiers de la Grande Chambre (26 juin 1601). Extr. des registres du Parlement. » Impr. S. l. n. d., in-4° de 3 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5084">Fol. 230 et suiv. • Pièces sur la succession de Jean-Jacques de Romé, seigneur de Vernouillet, La Fontaine, etc. (1653).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5090">Fol. 249bis • « Sentence de mort rendue contre les nommez Louis Le Roy, dit Marche-à-Terre, Jacques Parent, Thomas Le Coq et Nicolas Gaucher (12 décembre 1733). » Placard impr. S. l. n. d.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5099">Fol. 250 • « Factum pour Jeanne Cabat, femme de Jacques Le Boy, marchand fripier, Nicolas Bardou, bourgeois de Paris, et Marie Le Roy, sa femme... appellans de la sentence rendue par le lieutenant criminel de l'ancien Chastelet, contre ledit Le Roy le 6 avril 1683, contre Pierre Joron, aussi marchand fripier et Maddelaine Soyer, sa femme. » Impr. S. l. n. d., in-4°. de 6 pages. Cf. Corda, Factums, VII, 434.</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5111">Clairambault 888 • XII S-T.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5430">Fol. 163 • « Placet du sieur Le Normand. Réponse du sieur de Sainte-Marie d'Agneaux. » Impr. Paris, Jean-François Knapen, 1727, in-fol. de 3 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5439">Fol. 165 • « Assaut des Hollandais repoussés du fort royal de la Martinique par M. le chevalier de Sainte-Marthe. » Gravure de P. Brissart.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5445">Fol. 166 • Ordre de Saint-Michel Gourville, commandant de Niagara (1er juillet 1741).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5454">Fol. 177 • Certificat attestant que le navire appelé « l'Irondelle » a été coulé à la Martinique par ordre du gouverneur.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5460">Fol. 178 • Information contre la dame de Sérignan.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5466">Fol. 184 • Requête du chevalier de Noailles, lieutenant général des galères du Roi.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5472">Fol. 186 • États de services de Sainte-Marthe, lieutenant de vaisseau († 1690).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5478">Fol. 193 et suiv. • États de services de Sourisseau, lieutenant d'artillerie.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5484">Fol. 208 • Pièces sur l'administration de Tarin de Cussy, gouverneur de Saint-Domingue.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5490">Fol. 232 • Rapport de Tibierge sur les événements survenus à la Nouvelle-France (1696).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5496">Fol. 240 • Médaille à l'effigie d'Émeric Teckly (gravure de Dolivar).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5502">Fol. 265 • Lettres patentes de Louis XII, accordant à Jean de Torcy, seigneur du Deffend, l'office de bailli des Montagnes d'Auvergne, à la place de Rigault d'Oreille, sénéchal d'Agenois, démissionnaire (28 octobre 1513, orig. scellé).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5508">Fol. 266 • Épitaphe de Philippe de Torcy, seigneur de La Tour († 1652). Placard impr. S. l. n. d.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5517">Fol. 267bis • Gravure de J. Mariette, représentant la tombe de Marie-Françoise-Eléonore de l'Hospital-Vitry, marquise de Torcy.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5523">Fol. 284bis • Sceau gravé d'Aimeri de Thouars (1214).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5529">Fol. 370 et suiv. • « Journal de campagne [de Tourville, au siège de Palamos], de l'année 1694, commencé le 19 may. »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5535">Fol. 394 • « Projet pour le débarquement des troupes des vaisseaux, lorsqu'on jugera à propos de les faire descendre à terre. »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5541">Fol. 403 • Signaux de reconnaissance pour les vaisseaux (signé : Chasteaurenault).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5547">Fol. 428 • « Sommaire parallèle des enquêtes du sieur de Costentin, intimé, et du sieur de Tourville, appelant. » Impr. S. l. n. d., in-fol. de 7 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5556">Fol. 432 • « Factum pour Abraham Cohade, sieur de Fonteilles, damoiselle Marie Esparnier, femme de maistre Jean Bouchet, et maistre Antoine Cohade, avocat en Parlement, Jean et Marie Cohade, enfans de défunts maistre Gilbert Cohade, receveur du Taillon, et de damoiselle Antoinette Cheverlanges, appelans de la sentence rendue par le seneschal d'Auvergne ou son lieutenant général à Riom, d'une part, contre damoiselle Marie Fleurand, veuve du sieur de La Roche, intimée, d'autre part. » Impr. S. l. n. d., in-fol. de 8 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5565">Fol. 437 • « Mémoire pour maistre François Dupuy, avocat en la Cour, et consors, créanciers et directeurs des autres créanciers de défunt messire Louis Alexandre de Cottentin, comte de Tourville, opposans aux criées, vente et adjudication par décret des biens saisis réellement sur le sieur Laugeois d'Imbercourt, contre dame Françoise de Cottentin de Tourville, femme séparée de biens de Messire Guillaume-Alexandre Degallard de Béarn, chevalier, marquis de Brassac, autorisée par justice procédante sous l'autorité du sieur Boulé, son curateur. » Impr. Paris, Imbert de Bats, s. d., in-fol. de 14 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5574">Fol. 446 • Supplique de Julien Tréhouart au cardinal Fleury. Impr. Paris, Montalant, s. d., in-fol. de 6 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5583">Fol. 467 et suiv. • Pièces concernant Benoist Truc, « remolat des galères ».</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5589">Clairambault 889 • XVII US-VE.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5727">Fol. 1 et suiv., 59 et suiv. • Pièces concernant Jean-Louis d'Usson, marquis de Bonnac et le sieur d'Usson de Bonrepaus, ambassadeur en Danemark.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5733">Fol. 125 • États de services de Vachier des Moulins, enseigne de vaisseau.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5739">Fol. 178 • Demande de mise en liberté du sieur de Vallego, gentilhomme espagnol, prisonnier à Amiens.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5745">Fol. 214 • « Factum pour damoiselle Marie-Jeanne Varlet de La Grange, procédant sous l'autorité de maistre Jean Fontaine l'aisné, son curateur, demanderesse en séparation de corps et d'habitation, contre le sieur Meusnier, défendeur. » Impr. S. l. n. d., in-fol. de 8 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5754">Fol. 245 • Requête du forçat Antoine Vernange, adressée à la duchesse de Ventadour.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5760">Fol. 251 • État des vivres et marchandises du vaisseau « la Sultane », commandé par Jean Du Vernay, sieur de Beaulieu.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5766">Fol. 268 • Procès-verbal des déserteurs fait à Lisbonne (1670).</a></div></div></div></div><div class="nivX"><div class="childInfo closed" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5772">Clairambault 890 • XVIII VI-W.</a><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5992">Fol. 277 • Rapport de Claude Vihel, du Hâvre, capitaine de « la Joyeuse », de Roscoff.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e5998">Fol. 304-304 D • Actes de Godefroy et de Martin Villain, des 25 février 1453 et 31 mai 1480, impr. S. l. n. d., avec sceaux gravés.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e6007">Fol. 308 • Portrait gravé de Jean François Villain, sieur de Dumpel.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e6013">Fol. 308 • Projet pour détruire tout ce qu'il y a d'établissements anglais audelà du cap Cod.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e6019">Fol. 357 • « Mémoire d'un port à Colleville (Calvados) par le sieur de Villons. »</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e6025">Fol. 375 • « Journal de la campagne des 25 galères commandées par M. le bailli de Noailles, lieutenant général des galères de France, en l'année 1696, fait par M. le chevalier de Vintimille, lieutenant de la galère « Fleur-de-Lys ».</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e6031">Fol. 385 et suiv. • Lettres concernant M. de Vintimille et la principauté de Monaco.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e6037">Fol. 466 • Supplique de Pierre Vivier, sieur de Haute-Brosse, adressée au Parlement. Impr. S. d., in-fol. de 8 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e6046">Fol. 494 • Discours du capitaine Richard Walch, exécuté à Kilmanchant, le 15 avril 1696.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e6052">Fol. 507 • Édit royal pour la délivrance des matelots prisonniers (26 février 1691).</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e6058">Fol. 509 • « Édit du Roy portant création d'augmentation de gages aux commissaires de marine et aux classes (juin 1709). » Impr. S. l. n. d., in-4° de 6 pages.</a></div></div><div class="nivX closed"><div class="withoutChild" style="margin-left:30px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000013967_d0e6067">Fol. 513 • « Édit du Roy portant création d'offices de conseillers commissaires de marine et galères, pour servir dans tous les ports et havres, où ils seront distribuez (mars 1702). » Impr. Rennes, 1704, in-4° de 7 pages.</a></div></div></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Clairambault 873-890<br/>Cette cote ne correspond pas à une unité matérielle communicable. Veuillez sélectionner un document réservable parmi les niveaux inférieurs.</span></li></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Clairambault 873-890 
+							</div>
+<div class="did-label">
+<div class="did-unittitle">Lettres originales et autographes, requêtes, mémoires et pièces relatives à la Marine et aux Galères (affaires personnelles principalement) classées par ordre alphabétique.</div>
+</div>
+<div class="divdid">18 volumes.</div>
+<div class="divdid">Manuscrit en français</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="controlaccess-class">
+<p>GALERES</p>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000013967_d0e47');">Clairambault 873 (cote) • I A-B.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000013967_d0e460');">Clairambault 874 (cote) • II CA.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000013967_d0e747');">Clairambault 875 (cote) • III CE-CO.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000013967_d0e992');">Clairambault 876 (cote) • IV CO-CU. — Lettres des chevalier, marquis et vicomte de Coëtlogon, 1676-1731 (fol. 21 et suiv.), du sieur de Croisi, de Dieppe, 1691 (fol. 335), de Mlle et du sieur de Cumont (fol. 341).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000013967_d0e1235');">Clairambault 877 (cote) • V DA-DU.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000013967_d0e1595');">Clairambault 878 (cote) • VI DU.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000013967_d0e1770');">Clairambault 879 (cote) • VII E-F.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000013967_d0e2266');">Clairambault 880 (cote) • VIII G.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000013967_d0e2568');">Clairambault 881 (cote) • IX H-K.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000013967_d0e2828');">Clairambault 882 (cote) • X LA-LE.</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000013967_d0e3340');">Clairambault 883 (cote) • XI LE-LU.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000013967_d0e3686');">Clairambault 884 (cote) • XII M.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000013967_d0e4323');">Clairambault 885 (cote) • XIII N.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000013967_d0e4517');">Clairambault 886 (cote) • XIV O-Q.</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000013967_d0e4838');">Clairambault 887 (cote) • XV R.</a></li><li><div data-original-title="Consultable sur gallica" data-toggle="tooltip" data-placement="right" title="Consultable sur gallica" class="avecDaoGal"> </div><a href="javascript:refreshCompInfo('FRBNFEAD000013967_d0e5111');">Clairambault 888 (cote) • XII S-T.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000013967_d0e5589');">Clairambault 889 (cote) • XVII US-VE.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000013967_d0e5772');">Clairambault 890 (cote) • XVIII VI-W.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>

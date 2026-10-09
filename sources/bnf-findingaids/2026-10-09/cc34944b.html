@@ -1,0 +1,511 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta charset="UTF-8">
+
+<title>Consultation</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+
+<link type="text/css" rel="stylesheet"	href="/bootstrap-3.2.0/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/pictos/pictos.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/common.css"/>
+<link type="text/css" rel="stylesheet"	href="/css/displayComponent.css"/>
+
+
+<script type="text/javascript" language="javascript" src="/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript"	src="/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/common.js"></script>
+<script	type="text/javascript"	src="/js/pagePresentationIr.js"></script>
+
+
+
+<style type="text/css">
+.avecDaoGal {}
+.avecDaoGal:before {margin-right:-20px;content:url(/img/pictoGallicaDark2.gif);width:20px;height:20px;float:left;background-size:20px;position:relative;left:-35px;top:2px;}
+#body h1 {margin-top:4px}
+#body #idDossiersAncetres {font-size: 1em;margin: 17px 0 1px;}
+</style>
+
+</head>
+
+<body>
+	<input type="hidden" id="idCurrentCompId" name="currentCompId" value="FRBNFEAD000034944">
+	<input type="hidden" id="idCurrentIdIr" name="currentIdIr" value="FRBNFEAD000034944">
+	
+	<div id="header" class="HeaderHome">
+		
+
+
+
+<div class="topbar">
+	<div class="container-fluid"
+	
+	>
+		<div class="row">
+			
+			<div class="col-md-6">
+				<a target="_blank" href="https://www.bnf.fr" class="logo"
+					onclick="return xt_click(this,'C','14','CommunBam::clickLogoBnf','N')"><img src="/img/logoBnf.gif" alt="BnF"/></a>
+				<a href="https://archivesetmanuscrits.bnf.fr/" class="titreSite"
+				
+					onclick="return xt_click(this,'C','14','CommunBam::clickArchivesEtManuscrits','N')">Archives et manuscrits</a>
+				
+			</div>
+			
+			<div class="col-md-6 text-right">
+
+				
+				<div class="menuGeneral">
+					
+					<a href="/pageAccueil.html#idActualites" class="actus btn btn-default"
+						onclick="return xt_click(this,'C','14','CommunBam::clickActus','N')"><b></b>Actualités</a></b>
+					
+					<a href="https://www.bnf.fr/fr/outils/a.ecrire.html" class="question" target="_blank"
+						onclick="return xt_click(this,'C','14','CommunBam::clickUneQuestion','N')">Une question ?</a>
+					
+				</div>
+				
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="bamModal">
+
+	<!-- Modal HTML -->
+	<div id="BamWaitModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h3 class="modal-title">Recherche en cours</h3>
+				</div>
+				<div class="modal-body">
+					<p>Vous avez lancé une recherche. Le résultat s'affichera dans un instant.</p>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		
+		<div class="ariane">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="float:left;"><a href="/pageAccueil.html">Accueil</a>
+					<div style="padding-left: 2px;line-height: 23px;height: 37px;border-bottom: 3px solid #FFF;padding: 7px 18px 0px;display: inline-block;color: #6C6C6C;">Présentation de l'IR</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="body">
+		<div class="container">
+		
+			<div id="navigationId" style="text-align: center;font-size: 1.1em;">
+			
+			</div>
+
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="idDossiersAncetres">Département des Manuscrits > Espagnol</div>
+					<h1>Espagnol 336
+</h1>
+				</div>
+			</div>
+			
+			<!-- Interface de recherche -->
+			<div class="blocBlanc interfaceRecherch">
+				<div class="menuConsultation">
+					<ul class="menu">
+					
+					
+					<li class="sep">
+					
+
+
+<a href="#layerLoupe" class="pictos" role="tab" id="menuLoupe"><i class="icon-loupe" title="Rechercher" data-icon="&#xe609;"></i></a>
+<div id="layerLoupe" class="layer" role="tabpanel" aria-labelledby="menuLoupe">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Rechercher dans l'IR</h2>
+	<div class="forRech">
+		<form>
+		<input type="text" id="idInputContenuRecherche">
+		<button type="submit" id="idButtonContenuRecherche" class="btn btn-primary pictos"><i class="icon-search" title="Lancer la recherche" data-icon="&#xe609;"></i></button>
+		</form>
+	</div>
+</div>
+
+					</li>
+ 					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+#layerPlan {
+	margin-left:1px;
+}
+
+#layerPlan .lien.closed,
+#layerPlan .lien .treeCollapser.closed {
+	display: inline-block;
+}
+
+#layerPlan .lien,
+#layerPlan .lien .treeCollapser {
+	display: inline-block;
+}
+
+#layerPlan .childInfo {
+	background-image: url("/img/arrowListDown.png");
+	width: 12px;
+	height: 7px;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+	margin-top: 8px;
+}
+
+.ttt {
+	margin-top:2px;
+	margin-bottom:1px;
+}
+
+.lk::before {
+	content: "* ";
+}
+
+.lk {
+	display: table-cell;
+	padding-left: 1px;
+	font-size:0.9em;
+}
+
+#layerPlan .childInfo.closed {
+	background-image: url("/img/arrowListUp.png");
+}
+
+#layerPlan .withoutChild {
+	width: 7px;
+	height: 5px;
+	margin-right: 7px;
+	float: left;
+	clear: none;
+	margin-top: 8px;
+}
+
+#layerPlan .ttt.closed,
+#layerPlan .nivX.closed
+{
+    height: 0px;
+    float: left;
+    width: 0px;
+    visibility: hidden;
+}
+</style>
+
+<a href="#layerPlan" role="tab" id="menuPlan"><i class="plan" title="Plan"></i></a>
+<div id="layerPlan" class="layer" role="tabpanel" aria-labelledby="menuPlan">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>Sommaire</h2>
+	<div class="niv0"><div class="withoutChild"> </div><a class="lk" title="Informations bibliographiques" href="FRBNFEAD000034944_info">Informations bibliographiques</a></div><div class="niv0"><div class="childInfo"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944">Espagnol 336 • Harlay 252</a><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e67">F. 3 • 1 Lettre de Philippe II au duc d'Albe. Madrid, octobre 1568. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e81">F. 4 • 2 Lettre de Philippe II au duc d'Albe. Escurial, 4 juillet 1569. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e95">F. 6 • 3 Lettre de la duchesse d'Albe, Maria Henriquez, camarera mayor de la reine Élisabeth de Valois, à la reine mère de France. 2 (?) février 1568.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e112">F. 8 • 4 Lettre de la duchesse d'Albe, Maria Henriquez, camarera mayor de la reine Élisabeth de Valois, à la reine mère de France. Madrid, 17 août 1568.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e129">F. 10 • 5 Lettre de la duchesse d'Albe, Maria Henriquez, camarera mayor de la reine Élisabeth de Valois, à la reine mère de France. Madrid, 20 mars 1569.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e146">F. 12 • 6 Lettre de la duchesse d'Albe, Maria Henriquez, camarera mayor de la reine Élisabeth de Valois, à la reine mère de France. Madrid, 7 janvier 1570.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e163">F. 14 • 7 Lettre de la duchesse d'Albe, Maria Henriquez, camarera mayor de la reine Élisabeth de Valois, à la reine mère de France. Madrid, 1er août 1570.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e183">F. 16 • 8 Lettre de la duchesse d'Albe, Maria Henriquez, camarera mayor de la reine Élisabeth de Valois, à la reine mère de France. Madrid, 12 novembre 1567.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e200">F. 18 • 9 Lettre de la duchesse d'Albe, Maria Henriquez, camarera mayor de la reine Élisabeth de Valois, à la reine mère de France. Madrid, 1er décembre 1567.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e220">F. 19 • 10 Lettre de la duchesse d'Albe, Maria Henriquez, camarera mayor de la reine Élisabeth de Valois, à la reine mère de France. Madrid, 26 décembre 1567.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e237">F. 21 • 11 Lettre de Pedro Rondela au roi de France. Avis sur des mouvements de troupes du Roi Catholique. Madrid, 5 février 1563.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e251">F. 23 • 12 Lettre d'Antonio Perez à Gil de Mesa. Paris, 30...</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e277">F. 25 • 13 Lettre de Don Frances de Alava, ambassadeur d'Espagne à la cour de France, à la reine mère, Paris, 8 août 1567.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e291">F. 27 • 14 Lettre de Don Frances de Alava, ambassadeur d'Espagne à la cour de France, à la reine mère. Paris, 20 août 1567.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e305">F. 29 • 15 Lettre de Don Frances de Alava, ambassadeur d'Espagne à la cour de France, à la reine mère. Paris, 27 août 1567.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e319">F. 31 • 16 Lettre de la duchesse d'Albe à la reine mère. Madrid, 4 septembre 1567.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e333">F. 33 • 17 Lettre de Frances de Alava à la reine mère. Paris, juillet 1568.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e347">F. 34 • 18 et 19 Deux lettres de Philippe II à Gomez Suarez de Figueroa, ambassadeur à Gênes, et à Jean André Doria, pour faire mettre en liberté des sujets français prisonniers sur les galères commandées par ce dernier. Madrid, 14 décembre 1567. Copies.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e364">F. 36 • 20 Lettre de Frances de Alava à la reine mère de France. Paris, 5 juillet 1568.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e378">F. 38 • 21 Lettre de Frances de Alava à la reine mère de France. Paris, 3 août 1568.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e392">F. 42 • 22 Lettre de Frances de Alava à la reine mère de France. Paris, 22 septembre 1568.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e406">F. 44 • 23 Lettre de Frances de Alava à la reine mère de France. Paris, 10 novembre 1568.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e420">F. 46 • 24 Lettre de Frances de Alava à la reine mère de France. Paris, 9 novembre 1568.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e434">F. 48 • 25 Lettre de la duchesse d'Albe à la reine mère de France. Madrid, 23 septembre 1568.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e448">F. 50 • 26 Lettre d'une dame ou demoiselle "Chasincourt" à la reine mère de France. N. D. de Guadalupe. Donne des nouvelles des deux infantes Catherine et Isabelle. Sans date. En français.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e470">F. 52 • 27 Lettre de la duchesse d'Albe à la reine mère de France. Madrid, 8 mai 1568.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e484">F. 54 • 28 Lettre de Frances de Alava à la reine mère de France. Félicitations sur l'affaire de Saint-Valeri. Paris, 10... 1568.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e498">F. 56 • 29 Lettre de Catalina de Vera à la reine mère de France, sur la santé des infantes. Sans date.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e518">F. 59 • 30 Lettre de D. Carlos de Aragon, duc de Terranova, gouverneur de Milan, à Scipio di Castro, à Rome. Milan, 25 novembre 1585. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e532">F. 60 • 31 Lettre de la duchesse d'Albe à la reine mère de France. Madrid, 4 mai 1569.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e546">F. 62 • 32 Extrait d'une lettre d'un agent espagnol résidant en Italie. 11 novembre 15...</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e554">F. 64 • 33 Lettre de Frances de Alava à la reine mère de France. Tours, 30 décembre 1569.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e568">F. 66-67 • 34 et 35 Deux lettres de Frances de Alava au roi et à la reine mère de France. Paris, 1er novembre 1571.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e588">F. 69 • 36 Lettre de Juan de Çuñiga à Frances de Alava. Rome, 5 novembre 1571.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e602">F. 72 • 37 Lettre d'Antonio de Castro à M. de St-Goard, ambassadeur de France près le Roi Catholique. Cascais, 25 novembre 1579. En portugais.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e619">F. 74 • 38 Traduction française de la lettre précédente.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e627">F. 76 • 39 Lettre de Claudia de Toriñy à la reine mère de France. Madrid, 6 décembre 1568 (?).</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e641">F. 78 • 40 Lettre d'Antonio de Castro au roi de France. Cascays, 25 novembre 1579. Copie. En français.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e655">F. 79 • 41 Note remise par l'ambassadeur d'Espagne au roi de France pour obtenir qu'aucun secours ne soit accordé aux rebelles de Flandre. Sans date. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e666">F. 81 • 42 Lettre d'"El duque de Sessa," D. Antonio Fernandez de Cordova, à Philippe II. Roma, 29... 1596.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e680">F. 85 • 43 Note de réclamations remise par l'ambassadeur Frances de Alava. Sans date.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e691">F. 86 • 44 Lettre d'Alonso Pimentell, gouverneur de la Goulette, au roi de France. La Goleta, 17 août 1568.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e705">F. 88 • 45 Lettre de Joan Battista de Tassis au roi de France. Paris, 3 juillet 1583. En français.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e719">F. 90 • 46 Lettre d'Alvaro Ossorio à l'archiduc Albert, gouverneur des Pays-Bas. La Fère, 5 avril 1596.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e739">F. 91 • 47 Lettre d'Antonio Perez à l'ambassadeur de France à Londres. 1594. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e762">F. 93 • 48 Lettre d'Antonio Perez à M. de Neufville de Villeroy. Londres, 11 janvier 1595.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e788">F. 95 • 49 Lettre de Diego Pimentel au comte de Fuentes, gouverneur des Pays-Bas. Madrid, 17 juin et 4 juillet 1595. En partie chiffrée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e802">F. 97 • 50 Lettre de Diego Pimentel au comte de Fuentes, gouverneur des Pays-Bas. Madrid, 4 juillet 1595. En partie chiffrée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e816">F. 100 • 51 Lettre de D. Pedro Enriquez de Guzman, comte de Fuentes, à M. de Ponsenacq, gouverneur de Soissons. Du camp près de Dourlens, 5 août 1595. En français.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e830">F. 101 • 52 Lettre d'"El conde de Benasco," Pedro de Mendoça, à Philippe II. Gênes, 10 avril 1597.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e844">F. 103 • 53 Lettre de Juan Venegas de Cordova à M. de Villeroy. Blavet, 23 août 1598.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e858">F. 105 • 54 Lettre d'"El marques de Guadaleste," D. Francisco de Mendoza, almirante d'Aragon, au roi de France. Valence, 28 septembre 1603.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e875">F. 107 • 55 Lettre de Joan Battista de Tassis à M. de Villeroy. Paris, 28 octobre 1603. En français.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e889">F. 109 • 56 Projet de traité entre la France et l'Espagne, remis le 31 août 1604 à M. Émery de Barrault, ambassadeur de France à Madrid, et copié de sa main.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e910">F. 111 • 57 Lettre de Juan Vivas au capitaine Simon Dançer. Gênes, 14 juillet 1609. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e924">F. 113, 116 et 118 • 58 à 60 Trois lettres de Juan Vivas à D. Luis Sanchez de Calatayud, comte del Real, vice-roi de Sardaigne, à Don Juan de Villaragut et à D. Luis Carrillo de Toledo, marquis de Carazena, viceroi de Valence. Gênes, 15 juillet 1609.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e944">F. 120 • 61 Lettre d'Iñigo de Cardenas, ambassadeur en France, à M. de Villeroy. Paris, 27 octobre 1611. En français.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e958">F. 122 • 62 Lettre d'"El principe de Melito, duque de Pastrana y Francavila, conde de Çifuentes," Ruy Gomez de Silva, à M. de Villeroy. Fontainebleau, 13 septembre 1612.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e972">F. 124 • 63 Lettre de Fernando de Çuñiga y Leiva au roi de France. Madrid, 15 novembre 1612.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e986">F. 126 • 64 Lettre d'"El marques de la Ynojosa," D. Juan de Mendoza, à la reine régente de France. Palestre, 28 juin 1613.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1000">F. 128 • 65 Lettre de Hernando Gyron, marquis de Sofraga, ambassadeur en France, à M. de Villeroy. Paris, 1er décembre 1619.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1017">F. 130 • 66 Lettre d'"El duque de Monteleon," Hector Piñatelo, à M. de Puisieux. Madrid, 22 (?) février 1619.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1031">F. 132 • 67 Lettre d'"El duque de Albuquerque," D. Francisco Fernandez de la Cueva, au marquis de Mirabel. Rome, 13 février 1621.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1045">F. 134 • 68 Lettre d'"El marques de Myrabel," Antonio Davila y Zuñiga, à M. de Puisieux. Arles, 13 septembre 1622.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1059">F. 136 • 69 Lettre d'"El marques de Myrabel," Antonio Davila y Zuñiga, à M. de Puisieux. Agen, 12 juin 1622.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1073">F. 138 • 70 Pétition présentée par Vincenzo Tuttavilla, prisonnier de guerre à Carcassonne, pour être échangé contre M. de Vé, lieutenant-colonel du régiment de Lionnois, prisonnier en Espagne. 1652. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1087">F. 140, 142 et 146 • 71 à 73 Trois lettres de Pedro de Castilla à François II de Dinteville, évêque d'Auxerre. Rome, 21 août et 18 juillet 1533.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1101">F. 148 • 74 Lettre d'Antonio Descovar à Diego de Ibarra, à Paris. Madrid, 15 novembre 1593.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1115">F. 150 • 75 Lettre d'"El duque de Medina" Sidonia, D. Alonso Perez de Guzman, au duc de Mercoeur, gouverneur de Bretagne. S. Lucar, 9 avril 1583.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1129">F. 152 • 76 Lettre de Myguel de Loaisa au licencié Alonso Lozano, à Rome. Paris, 16 mars 1593.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1143">F. 154 • 77 Lettre de Jacobo de Bustinça à Agustin Forneli. Paris, 12 janvier 1594.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1157">F. 156 • 78 Lettre de Juan de Tassis au roi de France. Madrid, 1er janvier 1584.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1174">F. 158, 159 et 160 • 79 à 81 Trois lettres de l'ambassadeur de Savoie à son souverain. 2 mars, 4 juillet et 18 mai 1593. Duplicata en partie chiffrés. En français.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1190">F. 163 • 82 Lettre d'Antonio Descovar à Diego de Ibarra. Madrid, 4 décembre 1593.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1204">F. 164 et 166 • 83 et 84 Deux lettres de Diego de Ibarra au duc de Feria et au prince Doria. Paris, 4 novembre 1592 et 9 janvier 1594. En partie chiffrées.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1221">F. 170 et 171 • 85 et 86 Deux lettres de Joan Battista de Tassis à Josephe de Acuña, ambassadeur d'Espagne à Turin, et au comte de Vinasco, ambassadeur à Gênes. Paris, 11 janvier 1594.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1238">F. 173 • 87 Lettre de Diego de Ibarra à Juan de Idiaquez. Paris, 15 novembre 1593. En partie chiffrée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1252">F. 175, 177 et 179 • 88 à 90 Trois lettres d'" El duque de Feria," Lorenzo Suarez de Figueroa, à Juan de Idiaquez, à Martin de Ydiaquez et à Christoval de Mora. Paris, 4 janvier 1594. En partie chiffrées.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1272">F. 181 et 183 • 91 et 92 Deux lettres de Diego de Ibarra au prince Doria et à D. Juan Fernandez de Velasco, connétable de Castille, gouverneur de Milan. Paris, 15 novembre 1593. En partie chiffrées.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1289">F. 185 • 93 Lettre du duc de Feria à Philippe II. Paris, 30 décembre 1593. Chiffrée.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1303">F. 187 • 94 Lettre d'"El marques de Aure" (Havré), Charles-Philippe de Croy, et de "don Guillen de S. Clemente" à Philippe II. Nouvelles sur les négociations entamées, au nom du roi, avec Frédéric Guillaume, administrateur de Saxe, et son agent le colonel Witleben. Ratisbonne, 21 août 1594. Copie.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1326">F. 189 • 95 Lettre de Guillen de S. Clemente à Martin de Idiaquez. Prague, 12 janvier 1595.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1340">F. 191 • 96 Lettre d'Estevan de Ybarra à Martin de Idiaquez. Bruxelles, 6 janvier 1595.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1354">F. 193 • 97 Sommaire d'une lettre adressée par le duc de Sessa, ambassadeur à Rome, à Philippe II. En français.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1368">F. 194 • 98 Lettre de Gaston (?) Espinola (?) à Pedro Espindola, à Madrid. Saint-Omer, 19 juin 1596.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1394">F. 196 • 99 Lettre de Matheo de Segura au connétable de Castille. Madrid, 8 août 1596. Passages en chiffre.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1408">F. 200 • 100 Lettre de Juan de Tassis à l'almirante d'Aragon. Madrid, 8 août 1596.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1425">F. 202 • 101 Lettre de Lorenzo de Bolonia à Philippe II. Nice, 12 août 1596.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1439">F. 206 • 102 Lettre de Blasio de Aragon à Antonio de Herrera. Milan, 28 août 1596.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1453">F. 208 • 103 Lettre de Blasio de Aragon au duc de Terranova. Milan, 28 août 1596. En italien.</a></div></div><div class="nivX"><div class="withoutChild" style="margin-left:15px;"> </div><div class="ttt"><a class="lk" title="Afficher ce composant" href="FRBNFEAD000034944_d0e1467">F. 211 • 104 Lettre du marquis de Warambon au grand lieutenant général au bailliage d'Auxonne. Villersexel, 8 février 1619. En français.</a></div></div></div></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+<a href="#layerIndex" role="tab" id="menuIndex" style="color:black;font-size:10px;padding: 10px 0 10px 0;">
+	Index<br/>
+	<i class="index" title="Index"></i>
+</a>
+<div id="layerIndex" class="layer" role="tabpanel" aria-labelledby="menuIndex">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png" alt="Fermer ce panneau"></button>
+	<h2>index</h2>
+	<div id="idIndexContent"></div>
+</div>
+
+					</li>
+					
+					<li class="sep">
+					
+
+
+
+<a href="#layerPdf" role="tab" id="menuPdf"><i class="pdf" title="Pdf"></i></a>
+<div id="layerPdf" class="layer" role="tabpanel" aria-labelledby="menuPdf">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Contenu Pdf</h2>
+	<div class="nbRes">Il vous est possible de télécharger le(s) document(s) associé(s) à ce composant.</div>
+	<ul class="listeLiens">
+		<li><span class="libelle">Obtenir le contenu de cette unité de description au format PDF</span>
+			<a href="javascript:pdfComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdf','N')">Télécharger</a>
+		</li>
+		<li><span class="libelle">Obtenir le contenu de cette unité de description et ses sous-unités au format PDF</span>
+			<a href="javascript:pdfAllComp();" class="btn btn-default"
+			onclick="return xt_click(this,'C','14','PresentationBam::clickPdfArbo','N')">Télécharger</a>
+		</li>
+	</ul>
+</div>
+
+					</li>
+					
+					
+					<li>
+					
+
+
+
+
+
+
+
+
+<style type="text/css">
+.interfaceRecherch .menuConsultation .menu > li .layer .listeLiens li .libelle.infoIntroMsg {
+	margin-bottom: 12px;
+}
+</style>
+
+
+<a href="#layerResa" role="tab" id="menuResa" style="color:black;font-size:10px;">
+	Réservation
+	<i class="resa" title="Réservation"></i>
+</a>
+
+<div id="layerResa" class="layer" role="tabpanel" aria-labelledby="menuResa">
+	<button class="closeLayer" aria-controls="layerLoupe"><img src="/img/closeLayer.png"
+		alt="Fermer ce panneau"></button>
+	<h2>Réservation</h2>
+	<div id="menuResaContent">
+	<ul class="listeLiens"><li><span class="libelle">Document original : Espagnol 336 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc34944b&Cote=Espagnol 336&typecote=orig" onclick="return xitiResa()">Réserver</a></li><ul class="listeLiens"><li>Veuillez réserver/consulter en priorité un exemplaire de substitution.<br>La consultation du document original doit être motivée et est soumise à validation.</li></ul><ul class="listeLiens"><li>Version numérisée :</li><li><a class="ext" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b100325613">Consulter le document numérisé</a></li></ul><ul class="listeLiens"><li><span class="libelle">Document de substitution : MF 13071 </span><a class="btn btn-default" target="_blank" href="https://reservationrao.bnf.fr/submitCote?urlReferer=/ark:/12148/cc34944b&Cote=MF 13071&typecote=sub" onclick="return xitiResa()">Réserver</a></li></ul></ul>
+</div>
+</div>
+
+					</li>
+					
+					</ul>
+				</div>
+				
+				<div id="barreDeRetaillage"></div>
+
+				<div class="panneauWrapper" id="idPanneauWrapper">
+					<ascendants>
+					
+					</ascendants>
+					<contenu>
+					<?xml version="1.0" encoding="UTF-8"?><div class="did-class">
+<div class="did-unitid">Cote : Espagnol 336 
+							<a title="Réserver" class="btn btn-primary" id="dispplayMenuResa" href="#layerResa">Réserver</a>
+</div>
+<div class="did-unitid">Ancienne cote : Harlay 252</div>
+<div class="did-date">XVI<emph render="super">e</emph>-XVII<emph render="super">e</emph> siècle</div>
+<div class="divdid">Papier.212 feuillets.335 × 250 mm.</div>
+<div class="divdid">Manuscrit en espagnol</div>
+<div style="margin-top:1em;margin-bottom: 1em;" class="did-repository">Bibliothèque nationale de France. Département des Manuscrits</div>
+</div><div class="altformavail-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p>Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 13071. Cote de la matrice (pour commander une reproduction) : R 22291.</p>
+</span>
+</div>
+</div><div class="p-class">
+<div class="label-part">
+<p class="altformavail-label">Documents de substitution</p>
+</div>
+<div class="description-part">
+<span>
+<p style="line-height: 80%;">Il existe une version numérisée de ce document.</p>
+<p style="line-height: 80%;">Numérisation effectuée à partir d'un document de substitution</p>
+</span>
+</div>
+<div style="line-height: 80%;" class="dao-class">
+<a title="Voir le document numérisé" target="_blank" href="http://gallica.bnf.fr/ark:/12148/btv1b100325613" class="hrefLink ext">Voir le document numérisé</a>
+<div style="padding:1em 0 1em 0;" class="visuels visuels_simple">
+<div class="visuellarge visuellarge_simple">
+<img alt="vignette simple" class="vignette simple" style="vertical-align: middle;" src="http://gallica.bnf.fr/ark:/12148/btv1b100325613.thumbnail"/>
+<button data-content="&lt;img style=&quot;width:480px;height:780px;&quot; class=\&quot;consultationVignetteGrand\&quot; src=&quot;http://gallica.bnf.fr/ark:/12148/btv1b100325613.thumbnail.highres&quot; &gt;" title="Zoom Image de la notice" data-toggle="popover" data-trigger="focus" style="border:none;background:none">
+<img src="/img/zoom-in.png"/>
+</button>
+</div>
+</div>
+<script>
+			$('[data-toggle="popover"]').popover({
+				html:true
+			});
+		</script>
+</div>
+</div><div class="bibliography-class">
+<div class="label-part">
+<p class="commonBam-label">Bibliographie</p>
+</div>
+<div class="description-part">
+<span>
+<p>Catalogue des manuscrits espagnols et des manuscrits portugais, par Alfred Morel-Fatio. Paris : Imprimerie nationale, 1892. Notice 183</p>
+</span>
+</div>
+</div><div class="bibliography-class">
+<div class="label-part">
+<p class="commonBam-label">Bibliographie</p>
+</div>
+<div class="description-part">
+<span>
+<p>M. Gachard (<emph render="italic">La Bibliothèque Nationale à Paris</emph>, t. I, p. 394-400) a publié et analysé plusieurs lettres de ce manuscrit.</p>
+</span>
+</div>
+</div>
+
+					</contenu>
+					<br>
+					<descendants>
+					<div><p class="chapter1">Sous-unités de description</p><ul><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e67');">1 Lettre de Philippe II au duc d'Albe. Madrid, octobre 1568. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e81');">2 Lettre de Philippe II au duc d'Albe. Escurial, 4 juillet 1569. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e95');">3 Lettre de la duchesse d'Albe, Maria Henriquez, camarera mayor de la reine Élisabeth de Valois, à la reine mère de France. 2 (?) février 1568.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e112');">4 Lettre de la duchesse d'Albe, Maria Henriquez, camarera mayor de la reine Élisabeth de Valois, à la reine mère de France. Madrid, 17 août 1568.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e129');">5 Lettre de la duchesse d'Albe, Maria Henriquez, camarera mayor de la reine Élisabeth de Valois, à la reine mère de France. Madrid, 20 mars 1569.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e146');">6 Lettre de la duchesse d'Albe, Maria Henriquez, camarera mayor de la reine Élisabeth de Valois, à la reine mère de France. Madrid, 7 janvier 1570.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e163');">7 Lettre de la duchesse d'Albe, Maria Henriquez, camarera mayor de la reine Élisabeth de Valois, à la reine mère de France. Madrid, 1er août 1570.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e183');">8 Lettre de la duchesse d'Albe, Maria Henriquez, camarera mayor de la reine Élisabeth de Valois, à la reine mère de France. Madrid, 12 novembre 1567.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e200');">9 Lettre de la duchesse d'Albe, Maria Henriquez, camarera mayor de la reine Élisabeth de Valois, à la reine mère de France. Madrid, 1er décembre 1567.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e220');">10 Lettre de la duchesse d'Albe, Maria Henriquez, camarera mayor de la reine Élisabeth de Valois, à la reine mère de France. Madrid, 26 décembre 1567.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e237');">11 Lettre de Pedro Rondela au roi de France. Avis sur des mouvements de troupes du Roi Catholique. Madrid, 5 février 1563.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e251');">12 Lettre d'Antonio Perez à Gil de Mesa. Paris, 30...</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e277');">13 Lettre de Don Frances de Alava, ambassadeur d'Espagne à la cour de France, à la reine mère, Paris, 8 août 1567.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e291');">14 Lettre de Don Frances de Alava, ambassadeur d'Espagne à la cour de France, à la reine mère. Paris, 20 août 1567.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e305');">15 Lettre de Don Frances de Alava, ambassadeur d'Espagne à la cour de France, à la reine mère. Paris, 27 août 1567.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e319');">16 Lettre de la duchesse d'Albe à la reine mère. Madrid, 4 septembre 1567.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e333');">17 Lettre de Frances de Alava à la reine mère. Paris, juillet 1568.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e347');">18 et 19 Deux lettres de Philippe II à Gomez Suarez de Figueroa, ambassadeur à Gênes, et à Jean André Doria, pour faire mettre en liberté des sujets français prisonniers sur les galères commandées par ce dernier. Madrid, 14 décembre 1567. Copies.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e364');">20 Lettre de Frances de Alava à la reine mère de France. Paris, 5 juillet 1568.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e378');">21 Lettre de Frances de Alava à la reine mère de France. Paris, 3 août 1568.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e392');">22 Lettre de Frances de Alava à la reine mère de France. Paris, 22 septembre 1568.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e406');">23 Lettre de Frances de Alava à la reine mère de France. Paris, 10 novembre 1568.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e420');">24 Lettre de Frances de Alava à la reine mère de France. Paris, 9 novembre 1568.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e434');">25 Lettre de la duchesse d'Albe à la reine mère de France. Madrid, 23 septembre 1568.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e448');">26 Lettre d'une dame ou demoiselle "Chasincourt" à la reine mère de France. N. D. de Guadalupe. Donne des nouvelles des deux infantes Catherine et Isabelle. Sans date. En français.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e470');">27 Lettre de la duchesse d'Albe à la reine mère de France. Madrid, 8 mai 1568.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e484');">28 Lettre de Frances de Alava à la reine mère de France. Félicitations sur l'affaire de Saint-Valeri. Paris, 10... 1568.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e498');">29 Lettre de Catalina de Vera à la reine mère de France, sur la santé des infantes. Sans date.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e518');">30 Lettre de D. Carlos de Aragon, duc de Terranova, gouverneur de Milan, à Scipio di Castro, à Rome. Milan, 25 novembre 1585. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e532');">31 Lettre de la duchesse d'Albe à la reine mère de France. Madrid, 4 mai 1569.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e546');">32 Extrait d'une lettre d'un agent espagnol résidant en Italie. 11 novembre 15...</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e554');">33 Lettre de Frances de Alava à la reine mère de France. Tours, 30 décembre 1569.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e568');">34 et 35 Deux lettres de Frances de Alava au roi et à la reine mère de France. Paris, 1er novembre 1571.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e588');">36 Lettre de Juan de Çuñiga à Frances de Alava. Rome, 5 novembre 1571.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e602');">37 Lettre d'Antonio de Castro à M. de St-Goard, ambassadeur de France près le Roi Catholique. Cascais, 25 novembre 1579. En portugais.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e619');">38 Traduction française de la lettre précédente.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e627');">39 Lettre de Claudia de Toriñy à la reine mère de France. Madrid, 6 décembre 1568 (?).</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e641');">40 Lettre d'Antonio de Castro au roi de France. Cascays, 25 novembre 1579. Copie. En français.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e655');">41 Note remise par l'ambassadeur d'Espagne au roi de France pour obtenir qu'aucun secours ne soit accordé aux rebelles de Flandre. Sans date. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e666');">42 Lettre d'"El duque de Sessa," D. Antonio Fernandez de Cordova, à Philippe II. Roma, 29... 1596.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e680');">43 Note de réclamations remise par l'ambassadeur Frances de Alava. Sans date.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e691');">44 Lettre d'Alonso Pimentell, gouverneur de la Goulette, au roi de France. La Goleta, 17 août 1568.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e705');">45 Lettre de Joan Battista de Tassis au roi de France. Paris, 3 juillet 1583. En français.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e719');">46 Lettre d'Alvaro Ossorio à l'archiduc Albert, gouverneur des Pays-Bas. La Fère, 5 avril 1596.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e739');">47 Lettre d'Antonio Perez à l'ambassadeur de France à Londres. 1594. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e762');">48 Lettre d'Antonio Perez à M. de Neufville de Villeroy. Londres, 11 janvier 1595.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e788');">49 Lettre de Diego Pimentel au comte de Fuentes, gouverneur des Pays-Bas. Madrid, 17 juin et 4 juillet 1595. En partie chiffrée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e802');">50 Lettre de Diego Pimentel au comte de Fuentes, gouverneur des Pays-Bas. Madrid, 4 juillet 1595. En partie chiffrée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e816');">51 Lettre de D. Pedro Enriquez de Guzman, comte de Fuentes, à M. de Ponsenacq, gouverneur de Soissons. Du camp près de Dourlens, 5 août 1595. En français.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e830');">52 Lettre d'"El conde de Benasco," Pedro de Mendoça, à Philippe II. Gênes, 10 avril 1597.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e844');">53 Lettre de Juan Venegas de Cordova à M. de Villeroy. Blavet, 23 août 1598.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e858');">54 Lettre d'"El marques de Guadaleste," D. Francisco de Mendoza, almirante d'Aragon, au roi de France. Valence, 28 septembre 1603.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e875');">55 Lettre de Joan Battista de Tassis à M. de Villeroy. Paris, 28 octobre 1603. En français.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e889');">56 Projet de traité entre la France et l'Espagne, remis le 31 août 1604 à M. Émery de Barrault, ambassadeur de France à Madrid, et copié de sa main.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e910');">57 Lettre de Juan Vivas au capitaine Simon Dançer. Gênes, 14 juillet 1609. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e924');">58 à 60 Trois lettres de Juan Vivas à D. Luis Sanchez de Calatayud, comte del Real, vice-roi de Sardaigne, à Don Juan de Villaragut et à D. Luis Carrillo de Toledo, marquis de Carazena, viceroi de Valence. Gênes, 15 juillet 1609.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e944');">61 Lettre d'Iñigo de Cardenas, ambassadeur en France, à M. de Villeroy. Paris, 27 octobre 1611. En français.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e958');">62 Lettre d'"El principe de Melito, duque de Pastrana y Francavila, conde de Çifuentes," Ruy Gomez de Silva, à M. de Villeroy. Fontainebleau, 13 septembre 1612.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e972');">63 Lettre de Fernando de Çuñiga y Leiva au roi de France. Madrid, 15 novembre 1612.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e986');">64 Lettre d'"El marques de la Ynojosa," D. Juan de Mendoza, à la reine régente de France. Palestre, 28 juin 1613.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1000');">65 Lettre de Hernando Gyron, marquis de Sofraga, ambassadeur en France, à M. de Villeroy. Paris, 1er décembre 1619.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1017');">66 Lettre d'"El duque de Monteleon," Hector Piñatelo, à M. de Puisieux. Madrid, 22 (?) février 1619.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1031');">67 Lettre d'"El duque de Albuquerque," D. Francisco Fernandez de la Cueva, au marquis de Mirabel. Rome, 13 février 1621.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1045');">68 Lettre d'"El marques de Myrabel," Antonio Davila y Zuñiga, à M. de Puisieux. Arles, 13 septembre 1622.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1059');">69 Lettre d'"El marques de Myrabel," Antonio Davila y Zuñiga, à M. de Puisieux. Agen, 12 juin 1622.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1073');">70 Pétition présentée par Vincenzo Tuttavilla, prisonnier de guerre à Carcassonne, pour être échangé contre M. de Vé, lieutenant-colonel du régiment de Lionnois, prisonnier en Espagne. 1652. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1087');">71 à 73 Trois lettres de Pedro de Castilla à François II de Dinteville, évêque d'Auxerre. Rome, 21 août et 18 juillet 1533.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1101');">74 Lettre d'Antonio Descovar à Diego de Ibarra, à Paris. Madrid, 15 novembre 1593.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1115');">75 Lettre d'"El duque de Medina" Sidonia, D. Alonso Perez de Guzman, au duc de Mercoeur, gouverneur de Bretagne. S. Lucar, 9 avril 1583.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1129');">76 Lettre de Myguel de Loaisa au licencié Alonso Lozano, à Rome. Paris, 16 mars 1593.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1143');">77 Lettre de Jacobo de Bustinça à Agustin Forneli. Paris, 12 janvier 1594.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1157');">78 Lettre de Juan de Tassis au roi de France. Madrid, 1er janvier 1584.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1174');">79 à 81 Trois lettres de l'ambassadeur de Savoie à son souverain. 2 mars, 4 juillet et 18 mai 1593. Duplicata en partie chiffrés. En français.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1190');">82 Lettre d'Antonio Descovar à Diego de Ibarra. Madrid, 4 décembre 1593.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1204');">83 et 84 Deux lettres de Diego de Ibarra au duc de Feria et au prince Doria. Paris, 4 novembre 1592 et 9 janvier 1594. En partie chiffrées.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1221');">85 et 86 Deux lettres de Joan Battista de Tassis à Josephe de Acuña, ambassadeur d'Espagne à Turin, et au comte de Vinasco, ambassadeur à Gênes. Paris, 11 janvier 1594.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1238');">87 Lettre de Diego de Ibarra à Juan de Idiaquez. Paris, 15 novembre 1593. En partie chiffrée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1252');">88 à 90 Trois lettres d'" El duque de Feria," Lorenzo Suarez de Figueroa, à Juan de Idiaquez, à Martin de Ydiaquez et à Christoval de Mora. Paris, 4 janvier 1594. En partie chiffrées.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1272');">91 et 92 Deux lettres de Diego de Ibarra au prince Doria et à D. Juan Fernandez de Velasco, connétable de Castille, gouverneur de Milan. Paris, 15 novembre 1593. En partie chiffrées.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1289');">93 Lettre du duc de Feria à Philippe II. Paris, 30 décembre 1593. Chiffrée.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1303');">94 Lettre d'"El marques de Aure" (Havré), Charles-Philippe de Croy, et de "don Guillen de S. Clemente" à Philippe II. Nouvelles sur les négociations entamées, au nom du roi, avec Frédéric Guillaume, administrateur de Saxe, et son agent le colonel Witleben. Ratisbonne, 21 août 1594. Copie.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1326');">95 Lettre de Guillen de S. Clemente à Martin de Idiaquez. Prague, 12 janvier 1595.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1340');">96 Lettre d'Estevan de Ybarra à Martin de Idiaquez. Bruxelles, 6 janvier 1595.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1354');">97 Sommaire d'une lettre adressée par le duc de Sessa, ambassadeur à Rome, à Philippe II. En français.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1368');">98 Lettre de Gaston (?) Espinola (?) à Pedro Espindola, à Madrid. Saint-Omer, 19 juin 1596.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1394');">99 Lettre de Matheo de Segura au connétable de Castille. Madrid, 8 août 1596. Passages en chiffre.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1408');">100 Lettre de Juan de Tassis à l'almirante d'Aragon. Madrid, 8 août 1596.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1425');">101 Lettre de Lorenzo de Bolonia à Philippe II. Nice, 12 août 1596.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1439');">102 Lettre de Blasio de Aragon à Antonio de Herrera. Milan, 28 août 1596.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1453');">103 Lettre de Blasio de Aragon au duc de Terranova. Milan, 28 août 1596. En italien.</a></li><li><a href="javascript:refreshCompInfo('FRBNFEAD000034944_d0e1467');">104 Lettre du marquis de Warambon au grand lieutenant général au bailliage d'Auxonne. Villersexel, 8 février 1619. En français.</a></li></ul></div>
+					</descendants>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footerHome">
+		<div class="container">
+			<div class="topOfPage">
+				<a href="#header"><i class="icon-caret" data-icon="&#xe60f;" title="Haut de page"></i></a>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+<div class="menuFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+				<a href="/conditionsUtilisation.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickContionsUtilisation','N')">Conditions d'utilisation</a>
+				
+					
+				| <a href="/aPropos.html"
+					onclick="return xt_click(this,'C','14','CommunBam::clickAPropos','N')">À propos</a>
+				| <a class="ext" href="http://www.bnf.fr/fr/outils/a.ecrire.html" target="_blank"
+					onclick="return xt_click(this,'C','14','CommunBam::clickEcrireALaBnf','N')">Écrire à la BnF</a>
+				|
+
+				 <span>v 11.1.0</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+
+	
+	
+
+
+
+
+
+
+
+
+    <script async type="text/javascript" src="https://tarteaucitron.io/load.js?domain=archivesetmanuscrits.bnf.fr&uuid=91ba7c974c752a888f0a2765181efcbea3a33ef9"></script>
+
+<!-- Initialisation de XITI et tarte au citron	-->
+    <script defer>
+        function whenAvailable(name, callback) {
+            const interval = 10; // ms
+            window.setTimeout(function() {
+                if (window[name]) {
+                    callback(window[name]);
+                }else{
+                    whenAvailable(name, callback);
+                }
+            }, interval);
+        }
+
+        whenAvailable("tarteaucitron", function(t) {
+            let title = "PresentationBam::PagePresentationIr";
+            const lv2 = "14"; // level 2 site 
+            tarteaucitron.user.atLibUrl= "https://tag.aticdn.net/18798/smarttag.js" ;
+            tarteaucitron.user.atinternetSendData=false;
+            tarteaucitron.user.atMore = function () {
+                const tag = new ATInternet.Tracker.Tag();
+                tag.page.set({
+                    name: title,
+                    level2:lv2,
+                });
+                tag.dispatch();
+            };
+            (tarteaucitron.job = tarteaucitron.job ||[]).push('atinternet');
+        });
+    </script>
+
+
+
+<script type="text/javascript">
+var contextPath='';
+
+/**
+ * Redirection des appels par appui sur lien.
+ */
+function lIdC(ob){
+	var b = $(ob);
+	var b1 = b.attr('v');
+	if(b1 != null){
+		afficheCompResFromIndex(b1);
+	}
+}
+
+function xitiResa(){
+	return xt_click(this,'C','14','PresentationBam::clickComRao','N')
+}
+</script>
+
+</body>
+</html>
