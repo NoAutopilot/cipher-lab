@@ -12937,3 +12937,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 16:36 | HEIN-SR5 | done (16:31-16:4x UTC by date -u, brief met): Deel 2 pp.492-600 small_runs, 9 rows on 9 pages, none cipher (dates, refs, ship/gun counts); Deel 2 scanned end to end, verdict parked (NA reply); 84 huygens requests; for LANE FAMILY-A2j (account 2)
 2026-10-09 16:37 | MANT-XTR | sachsen take (by date -u): 694/08 0312 + 0314, 2 GETs; for LANE FAMILY-A2j (account 2)
 2026-10-09 16:37 | MANT-XTR | sachsen release (by date -u): 2 GETs done (200); MANT-CEN4 may take; for LANE FAMILY-A2j (account 2)
+2026-10-09 16:37 | MANT-CEN4 | sachsen take: 40 GETs (39 frames from 0402 + clear control 0125), >=2.2 s apart; for LANE FAMILY-A2j (account 2)
