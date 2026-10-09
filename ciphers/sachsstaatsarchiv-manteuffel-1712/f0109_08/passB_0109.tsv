@@ -1,0 +1,36 @@
+# MANT-0109 blind Sonnet code pass B (reversed crop order L15..L01, ~1.6x enlargements of crops/, one call per page), 9 Oct 2026; verbatim as returned (left page call, then right page call). Both calls warned their crop labels may be off by one; groups are located by their clear words.
+crop	line	numbers	words_before	words_after	confidence	alternatives	interlinear_letters_seen
+f0109L_L01	top	11.60.66.6.28	"ment avec"	", a 55.44 pour qu'il voulut le revoir"	medium	"11 could be 7 or 11; 66 could be 56/bb; 6.28 could be 6.26"	no
+f0109L_L01	top	55.44	", a"	"pour qu'il voulut le revoir"	high	none	no
+f0109L_L01	bottom	11.26	"qu'on ne sauroit faire d'etat avant que Mr"	"(end of line)"	medium	"26 could be 28"	no
+f0109L_L02	bottom	55.44	"sura fait"	"ne manquera pas de faire des etats de reste"	high	none	no
+f0109L_L02	top	3	"qu'il y a"	"ans qu'il n'en a pas rendu"	high	"ordinary number 3 (years)"	no
+f0109L_L03	top	7.60	(line starts)	". en prit la peine, qu'il reverroit cependant"	high	"60 could be 6o; small mark over the 6/0 (flourish)"	no
+f0109L_L04	bottom	7.60	"moment, Mr"	". ayant encore une proposition a faire, et il ordonna"	high	"small flourish above 60"	no
+f0109L_L05	none	none (no numbers)	-	-	-	-	-
+f0109L_L06	top	7.60	"Sur quoi"	". deploye d'abord sa marchandise et y ajouta qu'il"	high	none	no
+f0109L_L06	bottom	55.44	"avoit deja communique l'etat en question a"	", qui n'y avoit"	high	none	no
+f0109L_L07	top	55.44	"L'on dit que le bon"	". fut pris cette fois la sans verd"	high	none	no
+f0109L_L09	bottom	11.27	"que le Roy devoit, soit a l'armee soit a"	". pres de 400 (fraction-like, n over 400)"	medium	"11 could be 7/ll; 27 could be 21"	no
+f0109L_L09	bottom	400	"pres de (small n above, bar)"	"(small flourished word after)"	medium	"400 written as fraction with small letters above the bar"	yes (small letters above 400)
+f0109L_L10	bottom	55.44	"administration de"	". Cependant le Roy se met a louer"	high	none	no
+f0109L_L12	top	7.60	"le Zele de"	". et le prie en presence de tous ses ministres"	high	none	no
+f0109L_L13	top	55.44	(line starts)	"de son cote se retire tout camus ches luy"	high	none	no
+f0109L_L14	top	7.60	"l'etat de"	". apres l'avoir examine fort defectueux"	high	none	no
+# TOTAL groups 15
+# --- right page call ---
+f0109R_L14	top	55.44.	hautement que	avoit raison	high	55 could be 5S; none	no
+f0109R_L14	bottom	7.60.	de mauvaise consequence que	eut osé	high	60 could be 6o; none	no
+f0109R_L13	top	55.44.	vivement la cause de	et de l'autre Mess: (next line)	high	none	no
+f0109R_L12	top	103.7.60.	en trouver. d'un coté	(next line)	medium	103 could be 163 or 105; 7 could be 1	no
+f0109R_L12	bottom	66.21.120.31.50.9.28.26.10.	(line start, after 'd'un coté ... 60.')	qui sortant de son naturel entre	medium	66 could be 6b/bb; 26 could be 2b/28; 9 could be 8; 31 could be 34; 50 could be 30	no
+f0109R_L08	bottom	55.44.	Et cela pensa ruiner	sans resource: Mais ayant montré	high	none	no
+f0109R_L07	bottom	55.44.	fait trouverent entre autres fautes que	avoit conté plus	high	none	no
+f0109R_L06	top	10.3.1.35.44.120.13.96.284.100.33.21.66.34.60.	nommé sur le champ	(next line)	medium	35 could be 55; 13 could be 15; 96 could be 98; 284 could be 289; 100.33 could be 100.55; 66 could be 6b; 34 could be 54; 60 end uncertain	no
+f0109R_L06	bottom	39.14.89.1000.260.259.	(line start)	ayant adroitement decliné d'en etre et	medium	14 could be 11; 89 could be 80; 260 could be 2bo; 259 could be 289	no
+f0109R_L05	top	7.60.	parlé avec hauteur contre celuy de	et demande des	high	none	no
+f0109R_L04	top	100 (small, under a small superscript m, 'm/100 liv.')	avoir au dela de	liv: de reste. 55.44.	medium	read as fraction-like m over 100; not a cipher code probably	no (the m is a small mark above 100)
+f0109R_L04	top	55.44.	liv: de reste.	tout joyeux de cette de-	high	none	no
+f0109R_L02	top	(none; small 'm' superscript with 'liv' possibly before 'devoit' in bottom line, and a faint '100'-like mark below the line)	bien loin de devoir	liv: devoit	low	faint mark under line at right in L03 bottom may be a number such as 100; not legible	no
+f0109R_L02	top	55.44.	autres refuse de le faire a moins que	ne luy en donne l'ordre par ecrit	high	none	no
+# TOTAL groups 12

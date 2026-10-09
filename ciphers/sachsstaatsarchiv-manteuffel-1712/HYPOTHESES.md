@@ -256,3 +256,15 @@ unreadable curl (key d); 31 glossed n (key m) and 55 glossed h (key b|[a]) in r0
 | 9 Oct 2026 MANT-NAMES136 | 0103 r04 '44.33.12.8' = Lolh[ovel] abbreviated | same | gate met | too short for the rule (max fit 4 < 6); best 'lol' | **M**, same stem as 0136 r01 |
 | 9 Oct 2026 MANT-NAMES136 | 0136 r02 '39.12.7' = Ilg[en] abbreviated | same | gate met | too short (max fit 3 < 6); best 'ilg' (f.468's 'Ilg.') | **M** |
 | 9 Oct 2026 MANT-NAMES136 | 0136 r09 '50.15.10.17.6.29.14.30.35' = a phrase/name | same | gate met | no candidate; 'aceprince' 6-way tie at fit 3 | open, untested-by-this-tool beyond the fr18 list |
+
+## MANT-0109 (9 Oct 2026, LANE FAMILY-A2g account 2): rule-4 slots from 694/08 0109 (f0109_08/), no key.tsv change
+- r01 '11.60.66.6.28' = k r a u t ('entrevenu avec Kraut'); r03 '11.26' and r10 '11.27' = 'Kr.' abbreviations ('avant que Mr Kr.', 'soit a Kr.'):
+  identification with the Prussian minister Johann Andreas Kraut (accounts, 'etats') is I.
+- Name-abbreviation groups (PREREG rule): 55.44 x12 = 'bl' under key.tsv (55 = b|[a]; 'al' if [a]) and 7.60 x7 = 'gr' (60 = r|re|ro: 'gr'/'gre'/'gro'),
+  two parties to the dispute over the accounts ('55.44 se retire tout camus chez luy'; 'Mr 7.60 ... une proposition a faire'). Who they are is
+  open (I at best); candidates are not named here because no test was run on them.
+- r18 '10.3.1.35.44.120.13.96.284.100.33.21.66.34.60.39.14.89.1000.260.259' = 'e w | f e l d m | le comte | d o n a | p r i n tz | et Kameke Ilgen',
+  the commissioners named 'sur le champ' (Feldm[arschall] le comte Dohna, Printz[en], Kameke, Ilgen: identifications I; key 260 Kameke is itself M in
+  key.tsv). The leading '10.3' ('ew') is unexplained (M; not a key change). 35 (e) and 33 (o) are low on the image (alt 55 each).
+- r21 '103.7.60.66.21.120.31.50.9.28.26.10' = 'le grand maitre' ('d'un cote le grand maitre, qui sortant de son naturel ...'): which office-holder is
+  meant is I.

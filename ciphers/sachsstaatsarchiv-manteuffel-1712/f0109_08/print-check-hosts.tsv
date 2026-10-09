@@ -1,0 +1,6 @@
+host	requests	status
+api.openalex.org	7	ok
+api.semanticscholar.org	4	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Kraut%20disgrace%201712%20grand%20maitre%20etats%22
+archive.org	1	ok (some errors)
+be-api.us.archive.org	12	ok
+www.googleapis.com	6	ok (some errors)

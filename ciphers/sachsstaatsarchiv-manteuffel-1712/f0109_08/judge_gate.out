@@ -1,0 +1,31 @@
+# name-abbreviation group 55.44 = 'bl' x12: 694-08_0109_r02 694-08_0109_r04 694-08_0109_r08 694-08_0109_r09 694-08_0109_r11 694-08_0109_r13 694-08_0109_r15 694-08_0109_r16 694-08_0109_r19 694-08_0109_r20 694-08_0109_r22 694-08_0109_r23
+# name-abbreviation group 7.60 = 'gr' x7: 694-08_0109_r05 694-08_0109_r06 694-08_0109_r07 694-08_0109_r12 694-08_0109_r14 694-08_0109_r17 694-08_0109_r24
+power	at 43 letters: 18/18 = 1.00	TEST
+block_1	letters 1-43	real -1.392	permuted mean -2.024 p95 -1.687 p99 -1.539 max -1.415	permuted>=real 0/1000	PASS	krautkrkrewfeldmledonaprintzetlegrandmaitre
+leaf_0109	letters 43	blocks 1	PASS	krautkrkrewfeldmledonaprintzetlegrandmaitre
+# whole leaf (reported, no power behind it if L > 62): real -1.392 permuted mean -2.026 p95 -1.715 p99 -1.568 permuted>=real 0/1000
+# per run (reported, not gates): run, letters, score, decoded letters
+694-08_0109_r01	5	-1.017	kraut
+694-08_0109_r02	2	nan	bl
+694-08_0109_r03	2	nan	kr
+694-08_0109_r04	2	nan	bl
+694-08_0109_r05	2	nan	gr
+694-08_0109_r06	2	nan	gr
+694-08_0109_r07	2	nan	gr
+694-08_0109_r08	2	nan	bl
+694-08_0109_r09	2	nan	bl
+694-08_0109_r10	2	nan	kr
+694-08_0109_r11	2	nan	bl
+694-08_0109_r12	2	nan	gr
+694-08_0109_r13	2	nan	bl
+694-08_0109_r14	2	nan	gr
+694-08_0109_r15	2	nan	bl
+694-08_0109_r16	2	nan	bl
+694-08_0109_r17	2	nan	gr
+694-08_0109_r18	21	-1.363	ewfeldmledonaprintzet
+694-08_0109_r19	2	nan	bl
+694-08_0109_r20	2	nan	bl
+694-08_0109_r21	13	-0.614	legrandmaitre
+694-08_0109_r22	2	nan	bl
+694-08_0109_r23	2	nan	bl
+694-08_0109_r24	2	nan	gr

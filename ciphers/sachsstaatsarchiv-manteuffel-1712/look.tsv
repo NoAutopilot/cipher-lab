@@ -21,3 +21,10 @@ utc	item_id	look_row_id	role	folio	canvas	image	source	status
 2026-10-09 04:59	adhoc-3f0c0e	adhoc-3f0c0e:2-leaf:41bf63	unit			no folio, canvas or pointer in items.tsv: name the leaf to narrow the look	none	owed
 2026-10-09 05:00	adhoc-56b291	adhoc-56b291:2-leaf:41bf63	unit			no folio, canvas or pointer in items.tsv: name the leaf to narrow the look	none	answered KNOWN-PART (recorded)
 2026-10-09 05:19	adhoc-24cbcc	adhoc-24cbcc:2-leaf:1c5b98	unit			no folio, canvas or pointer in items.tsv: name the leaf to narrow the look	none	owed
+2026-10-09 07:44	adhoc-390992	adhoc-390992:2-leaf:b99335	cipher-page	80r			folio arithmetic	owed
+2026-10-09 07:44	adhoc-390992	adhoc-390992:2-leaf:b99335	facing	79v			folio arithmetic	owed
+2026-10-09 07:44	adhoc-390992	adhoc-390992:2-leaf:b99335	before-2	79r			folio arithmetic	owed
+2026-10-09 07:44	adhoc-390992	adhoc-390992:2-leaf:b99335	after-1	80v			folio arithmetic	owed
+2026-10-09 07:44	adhoc-390992	adhoc-390992:2-leaf:b99335	after-2	81r			folio arithmetic	owed
+2026-10-09 07:44	adhoc-390992	adhoc-390992:2-leaf:b99335	after-3	81v			folio arithmetic	owed
+2026-10-09 07:44	adhoc-390992	adhoc-390992:2-leaf:b99335	after-4	82r			folio arithmetic	owed

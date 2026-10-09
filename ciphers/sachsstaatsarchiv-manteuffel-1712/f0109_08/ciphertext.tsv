@@ -1,0 +1,86 @@
+# MANT-0109 (9 Oct 2026): HStA Dresden 10026 Loc. 694/08 file 0109 (f.80, beschaedigt), left page (L) and right page (R, folio 80).
+# Two blind Sonnet passes per page (passA_0109.tsv crop order, passB_0109.tsv reversed) + worker reconciliation on native 2x zooms of the crops.
+# The passes agree on every code group (24 groups, 80 tokens); runs split by the passes at a line break are joined (R r18, R r21).
+# Not codes (both passes + worker look): '3 ans' (L), 'm/400' (L, sum), 'm/100 vc' and 'm/400 vc' (R, sums written with m over the number).
+# No interlinear or sub-linear letters over or under any code (both passes + worker look): gate (a) n/a. Note in col 'note'.
+line	pos	sign	conf	page	context	note
+694-08_0109_r01	1	11	medium	L	avec | , a	11: pass B alt 7
+694-08_0109_r01	2	60	high	L		
+694-08_0109_r01	3	66	high	L		
+694-08_0109_r01	4	6	high	L		
+694-08_0109_r01	5	28	high	L		
+694-08_0109_r02	1	55	high	L	, a | pour qu'il voulut le revoir	
+694-08_0109_r02	2	44	high	L		
+694-08_0109_r03	1	11	high	L	avant que Mr | (line end)	
+694-08_0109_r03	2	26	high	L		
+694-08_0109_r04	1	55	high	L	sura fait | ne manquera	
+694-08_0109_r04	2	44	high	L		
+694-08_0109_r05	1	7	high	L	(line start) | en prit la peine	
+694-08_0109_r05	2	60	high	L		
+694-08_0109_r06	1	7	high	L	moment, Mr | (qui attendoit dans l'antichambre)	
+694-08_0109_r06	2	60	high	L		
+694-08_0109_r07	1	7	high	L	Sur quoi | deploye d'abord	
+694-08_0109_r07	2	60	high	L		
+694-08_0109_r08	1	55	high	L	l'etat en question a | qui n'y avoit	
+694-08_0109_r08	2	44	high	L		
+694-08_0109_r09	1	55	high	L	le bon | fut pris	
+694-08_0109_r09	2	44	high	L		
+694-08_0109_r10	1	11	high	L	soit a | pres de m/400	
+694-08_0109_r10	2	27	high	L		
+694-08_0109_r11	1	55	high	L	administration de | Cependant le Roy	
+694-08_0109_r11	2	44	high	L		
+694-08_0109_r12	1	7	high	L	le zele de | et le prie	
+694-08_0109_r12	2	60	high	L		
+694-08_0109_r13	1	55	high	L	(line start) | de son cote se retire	
+694-08_0109_r13	2	44	high	L		
+694-08_0109_r14	1	7	high	L	l'etat de | apres l'avoir examine	
+694-08_0109_r14	2	60	high	L		
+694-08_0109_r15	1	55	high	R	a moins que | ne luy en donne	
+694-08_0109_r15	2	44	high	R		
+694-08_0109_r16	1	55	high	R	m/100 vc de reste | tout joyeux	
+694-08_0109_r16	2	44	high	R		
+694-08_0109_r17	1	7	high	R	contre celuy de | et demande des	
+694-08_0109_r17	2	60	high	R		
+694-08_0109_r18	1	10	high	R	nomme sur le champ | aiant adroitement decline	
+694-08_0109_r18	2	3	high	R		
+694-08_0109_r18	3	1	high	R		
+694-08_0109_r18	4	35	low	R		35: a flourish from the line above crosses the 3; both passes 35, alt 55
+694-08_0109_r18	5	44	high	R		
+694-08_0109_r18	6	120	high	R		
+694-08_0109_r18	7	13	high	R		
+694-08_0109_r18	8	96	high	R		
+694-08_0109_r18	9	284	high	R		
+694-08_0109_r18	10	100	high	R		
+694-08_0109_r18	11	33	low	R		33: ink stroke over the pair; both passes 33, alt 55
+694-08_0109_r18	12	21	high	R		
+694-08_0109_r18	13	66	high	R		
+694-08_0109_r18	14	34	high	R		
+694-08_0109_r18	15	60	high	R		
+694-08_0109_r18	16	39	high	R		
+694-08_0109_r18	17	14	high	R		
+694-08_0109_r18	18	89	high	R		
+694-08_0109_r18	19	1000	high	R		
+694-08_0109_r18	20	260	high	R		
+694-08_0109_r18	21	259	medium	R		259: both passes 259; alt 289/239
+694-08_0109_r19	1	55	high	R	autres fautes que | avoit conte	
+694-08_0109_r19	2	44	high	R		
+694-08_0109_r20	1	55	high	R	pensa ruiner | sans resource	
+694-08_0109_r20	2	44	high	R		
+694-08_0109_r21	1	103	high	R	d'un cote | qui sortant de son naturel	
+694-08_0109_r21	2	7	high	R		
+694-08_0109_r21	3	60	high	R		
+694-08_0109_r21	4	66	high	R		
+694-08_0109_r21	5	21	high	R		
+694-08_0109_r21	6	120	high	R		
+694-08_0109_r21	7	31	high	R		
+694-08_0109_r21	8	50	high	R		
+694-08_0109_r21	9	9	high	R		
+694-08_0109_r21	10	28	high	R		
+694-08_0109_r21	11	26	high	R		
+694-08_0109_r21	12	10	high	R		
+694-08_0109_r22	1	55	high	R	la cause de | et de l'autre	
+694-08_0109_r22	2	44	high	R		
+694-08_0109_r23	1	55	high	R	hautement que | avoit raison	
+694-08_0109_r23	2	44	high	R		
+694-08_0109_r24	1	7	high	R	consequence que | eut ose	
+694-08_0109_r24	2	60	high	R		
