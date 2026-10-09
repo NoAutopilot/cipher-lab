@@ -162,3 +162,16 @@ NOTES "MANT-CUC" and PREREG-MANTCUC.md (reuse it unchanged; state that in the se
 same per-leaf protocol (pass A, pass B, blind clear; reconcile); score per leaf and re-pool with 0323/0348/0282. Eye check on the f0282/f0323 crops of the
 runs over "Prince" and "Czar" (codes 173/144 absent from key.tsv) and of 0282's two missed underlines: one look each, recorded in cuc_candidates.tsv's note
 column. key.tsv unchanged. Units: 2 GETs + 6 calls + 1 reconciliation, ~$2.5.
+
+## Wave 4 (11:5x UTC 9 Oct)
+Wave 3 results: LIN-COUNT calibration FAIL (5/7), instrument retired at 1897 px; MANT-CUC2 re-pooled 141/207 PASS; MANT-0176 gate (b) PASS, S26 M4 U1.
+
+### V-MANT0176 (Opus, cap 5, box 80 min; first verifier, a session that has not read 0176): sachsstaatsarchiv-manteuffel-1712, 694/08 0176
+Claim under audit (NOTES "MANT-0176"): "694/08 0176 (Berl. 2 Juil 1712), 31 code tokens, gate (b) PASS real -1.288 vs p95 -1.670; S26 M4 U1; reads Maier
+x2, deux colonels (Sp)ald et Horn jusqu'a Bernau". Use the CLAUDE.md "Verifier brief (template)" steps 1-5 in full, depth per
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md (copy the bar into your section before ruling). Search by date (+-2 days) and names (Maier's library,
+Horn, Spald/Spalding, Bernau) in Acta Borussica BO I (IA text, MANT-ABBO's route), Droysen IV.1/IV.2, the Europäische Fama / Mercure historique of July
+1712, Google Books (country=US, key), OpenAlex/S2; positive control per edition. Ground truth: re-run f0176_08's --check scripts; spot-check three tokens
+against the committed crops; the worker's own native-zoom settlement of r04 pos 3-7 gets one blind look. Key source `period` (Krauske table from period
+glosses). Write "## AUDIT (V-MANT0176)" in AUDIT.md, status.json row, NOTES pointer. If N3+ D2+: SECOND-OPINIONS-QUEUE row and WORK-QUEUE row
+`AUD2-FAMILY-A2h-1` for account 3, named in ROOM. Do not decode beyond re-running the committed scripts. Units: searches + 1 vision look + ruling, ~$4.
