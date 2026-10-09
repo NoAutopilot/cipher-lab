@@ -4081,3 +4081,29 @@ Read so far: E347, E349 (both messages), E350 audited; all three pages eye-check
 - [x] image-check: all three entries eye-checked.
 - [x] retry: one hdl disconnect retried once; OR III/4 403 and one be-api 502 not retried (good-citizen rule).
 Verdict: keep going: 2 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18g) s.5, ~$0.8
+
+## FV-MS18f (9 Oct 2026, account 1, for LANE LEDGER)
+First verifier of E343, E345, E346 (AUDIT.md "## AUDIT (FV-MS18f)"). **E343 is printed** OR I/43 pt 1 p.918 (C. C. Augur to Sheridan, 26 Aug 1864,
+3 p.m.; clause for clause; "Cork = screw" is Augur's signature, "Laughter Sheffield" = Snicker's Gap): N1. **E345 is printed** OR I/39 pt 2 pp.269-270
+(Halleck to Sherman, 19 Aug 1864, 3 p.m.; word for word, but the print's "Canby" stands three times where the key's Leopard, Leghorn and Legend =
+Hurlbut: M, a rule-4 conflict, third witness after E323 and E334): N1. Both pages read on IA page images. MS18-R4 missed E343 because the cached
+`warofrebellion431unit` file is OR I/47 pt 2, not I/43 pt 1 (right id `warofrebellion431unit_0`). **E346 N3 D3**: book No. 1 established (8/8 groups
+in sense, Forlorn = 13 = the header date; No. 2 and No. 9 read none); not located in print; "Hanliff" reads "Hauliff" (image; holder 9819, a sibling
+of the same hour on the same affair). The parenthesised words on E343 settle no token. `AUD2-LEDGER-31` queued (E346); SO-ECKERT-E346 queued. Fixes
+in AUDIT s.5, not applied here.
+
+## Remaining gaps (FV-MS18f, 9 Oct 2026)
+Read so far: E343, E345, E346 audited (E343, E345 N1 by print; E346 N3 D3); all three ledger pages eye-checked at 2400 px; both print pages read on images.
+- E346 second audit and the unsearched families (NARA RG 107/60, Stanton papers, NY press Aug 1864, HathiTrust, JSTOR) - blocker: waiting-on the answer of the VERIFY lane to WORK-QUEUE.tsv row AUD2-LEDGER-31; a second audit is a separate session (rule 10)
+- the header and reading fixes of AUDIT (FV-MS18f) s.5 (Augur, Snicker's, Corkscrew, Hood, Canby, Hauliff) - blocker: not-attempted; a verifier does not edit ciphertext.txt or reading.md; next: a FIX job, ~$1
+- Leopard/Leghorn/Legend = Hurlbut vs print Canby (E323, E334, E345) and Viola = 12.30 AM vs 9819's "1230 pm" as HYPOTHESES.md rows - blocker: not-attempted; key questions belong to the KEY lane; next: a KEY job like KEY-LAV, ~$1.5
+
+## Escalation (FV-MS18f, 9 Oct 2026)
+- [x] siblings: 9819 (13 Aug 1864, Wakeman, Hauliff), E38-E40 (mssEC 19), the 9825 Beckwith entry and 9820's 14/16 Aug Horner entries seen.
+- [x] clear-pages: all-pointer CISOSEARCHALL on 8 queries + 2 item reads, no clear copy.
+- [x] known-keys: No. 1, No. 2, No. 9 tested on E346 (No. 1 only).
+- [x] print: E343 and E345 found and read on page images; E346 not located.
+- [n/a] key-rebuild: key rows proposed in AUDIT s.5, not edited (a FIX or KEY job edits key.md).
+- [x] image-check: all three entries eye-checked.
+- [x] retry: none needed (one IA 403 on a restricted OR III/4 id, not retried).
+Verdict: keep going: 2 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18f) s.5, ~$1

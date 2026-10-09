@@ -12238,3 +12238,144 @@ and 12, OR ser. III vol. 4), `fv_ms18g_gb.py` (+ `.out`: Google Books API, `coun
 - **ciphertext.txt E350:** "Tomama" -> "Panama" (image); `plain-at: Planters#1`; header: "Sheridan's" -> "Pleasonton's" ("Pleasant on" plain), "Special
   Inspector of Cavalry"; print note: OR I/45 pt 1 pp.898, 952, 1001 context.
 - **key.md:** none.
+
+## AUDIT (FV-MS18f)
+
+Verifier FV-MS18f (account 1, for LANE LEDGER), 9 Oct 2026, 21:18-21:4x UTC by `date -u`; a separate session from the reader MS18-R4, not protecting its
+conclusions. Scope: **E343, E345, E346** (NOTES "## MS18-R4"; ciphertext.txt, Cipher No. 1, Washington sent ledger mssEC 18 = Huntington object 10074).
+Nothing decoded beyond key look-ups in key.md, key-no2.md and key-no9.md. Key source for all three: `period`. No spec exists for eckert-1864, so
+`judge_plaintext.py` was not run. Intake gate (21:1x): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+Scripts: `ms18/fv_ms18f_hdl.py` (+ `.out`: 8 CONTENTdm full-text queries across all pointers, 2 item records, 3 page images at 2400 px to scratch).
+Prior work: `tools/prior_work.py eckert-1864 --item-spec 'item_id=E346;...' --step-type audit --offline` -> plaintext UNCHECKED-NET (aaymeloglu not
+cloned; OR volumes not on disk, then fetched by hand below), step LEAD only for target-level ROOM claims none of which names E343/E345/E346; own work
+(`git grep` 9820/9825/9827): ciphertext/reading headers only, plus AUDIT "## AUDIT (LS-V3)" and its second audit, which cite **9820 as context** for
+E38-E40 (the Keith affair; see E346).
+
+### 0. The reader's print miss: a wrong cached id
+MS18-R4 wrote "OR I/43 pt 1-2 cached" for E343. The cached file `sources/ia-fulltext/print-check/warofrebellion431unit_djvu.txt.gz` is **OR ser. I
+vol. 47 pt 2** (its title page: "SERIES I -- VOLUME XLVII ... PART II"), not vol. 43 pt 1; the right id is `warofrebellion431unit_0`
+(ciphers/eckert-1862/ec18/or_volumes.tsv). Any earlier "not in OR I/43 pt 1" drawn from that cache is a non-test. E345's volume (OR I/39 pt 2) was
+not cached at all ("not individually searched by date", as the reader said). The phrase grep found both prints at once on the right texts.
+
+### 1. Duplicates, book and image (all three pages eye-checked at 2400 px, whole page, own entry)
+- **Duplicate diff:** the three pointers occur only in their own headers. mssEC 19 (`entries-mssEC19.tsv`) for 13, 19 and 26 Aug 1864: 9046 (E40,
+  Horner N.Y. 13 Aug 3 PM, the schooner Princess: a different telegram), 9057 (Bruch, 26 Aug): no copy of any of the three. **No duplicate.**
+- **E343 (9827, printed p.161):** transcription matches the image ("tower" is written over a struck word, as filed). The small parenthesised words
+  -- (rec'd) above "battalion", (the) above "Pacific", (for) above "Belonging", (on) under "Aldie", (Not), (letter), (corner) near "pick up", (use?) under
+  "about" -- and the pencil line "Draw off your water out of town" **settle no token**: "Pacific" is Cavalry (key and print), not "the"; the others
+  fall on plain words. Same shape as E333's labels (AUDIT (FV-MS18d) s.1): a later annotator's, graded nothing.
+- **E345 (9825, printed p.159):** matches the image; "nutmeg" is written above the line between "everything" and "to" (an insertion, filed in place);
+  "Dram" on the page = the key's Drum = Memphis (filed "Drum").
+- **E346 (9820, printed p.154):** matches the image **except "Hanliff", which reads "Hauliff"** (u, not n; the holder's transcription of the sibling 9819
+  also reads "Gordon Bruce & Hauliff"). "machinery" is twice an inserted word (caret insertions: "supplying machinery of", "what the machinery is"),
+  not a gloss; it is already in the reading.
+- **Book test, E346 (the brief: "the book share did not establish No. 1 -- test it first").** All eight code groups read in sense in No. 1 and in
+  none of the others: Viola 12.30 / Forlorn 13 (the ledger's own header date "Aug 13") / Frog New York ("marshal [New York]") / Walnut Rebel ("the
+  [rebel] agent at Halifax") / White Report / Pekin comma / Webster Signature / Brutus Secretary of War. **No. 2** gives Macon, Rail-road agent,
+  South to me, Cavalry, Surrounding Delaware; Forlorn absent. **No. 9** gives Arkansas, "the Army agent", Equipage to me, Killed; Forlorn, Pekin,
+  Brutus absent. Independent of the share: the date check (Forlorn = 13 = header) and the sibling witnesses (s.2: Keith Jr. "the rebel agent" in
+  E38 and Bates; 9819) agree with No. 1 only. **No. 1 is established for E346; no other book reads it better.**
+
+### 2. Holder's full text, siblings and print
+**Huntington CONTENTdm** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; hdl take 21:3x UTC after AUD2-LEDGER-30's release, 13
+requests, all 200): Gordon Bruce 3 (9045 = E38/E39's page, **9819**, 9820), Hanliff 1 (9820), Kennuer 1 (9820), Keith machinery 1 (9820), Canby both
+banks 0, Kirby Smith Hood 0, Waite forges 1 (9827), Aldie rumors 1 (9827). **No clear period copy of any of the three.**
+- **9819** (mssEC 18 p.153), third entry: "No 1 1230 pm / Horner N. Y. Wash DC Aug 13 1864 / Viola for Abm. Wakeman P M Frog ---- The remittance by
+  Alex Keith at Halifax to Gordon Bruce & Co. France mentioned in Mr Bunyan's wreathe may have been addressed to Gordon Bruce & Hauliff ---- It was
+  mailed at Halifax yesty forenoon walrus Brutus Deliver mesg to Gordon Bruce & Hauliff of wharf & continue your watchfulness". A sibling sent at
+  the same hour on the same affair (to the postmaster, not the marshal): context and a witness for "Hauliff", Keith at Halifax and Brutus = signer;
+  not a copy of E346. It also writes "1230 pm" over **Viola**, where key.md's TIME note reads Viola = 12.30 AM (s.5).
+- E39 (mssEC 19, 12 Aug 1864, filed, N3 kept by its second audit) names "Gordon Bruce & Co [New York] ... to Mitchell Kenner & Co Montreal" and Keith
+  Jr.; E346's "Mitchell Kennuer & Co" is the same firm. 9820 itself continues with the 14 Aug (Prince) and 16 Aug (Princess) Horner messages, as the
+  reader noted.
+
+**Print** (archive.org djvu texts to scratch, ids from or_volumes.tsv: OR ser. I vol. 43 pt 1 `warofrebellion431unit_0`, vol. 38 pt 5
+`warofrebellion385unit`, vol. 39 pt 2 `warofrebellion392unit`, vol. 41 pt 2 `warofrebellion412unit`; ORN ser. I vol. 3 `officialrecordso0003honh`;
+Plum, *The Military Telegraph* vols 1-2 `cu31924092908742`, `cu31924092908759`; OR ser. III vol. 4 `warofrebellion0304rootrich` answered 403 (restricted
+id, not retried); plus the cached OR ser. II vol. 7 and the 168 cached texts; page images read for the two prints):
+- **E343 -> printed OR ser. I vol. 43 pt 1 p.918** (IA `warofrebellion431unit_0` page image n935, head 918; read on the image): "HDQRS. DEPT. OF
+  WASHINGTON, 22D ARMY CORPS, Washington, August 26, 1864 -- 3 p.m. Major-General SHERIDAN, Commanding Middle Military Division, Harper's Ferry: The
+  provisional battalion of cavalry belonging to Gregg's division, which is now on the upper Potomac guarding the river while the Eighth Illinois is
+  absent, has been ordered to City Point. This will leave me without means of guarding the river while the Eighth Illinois is absent. Major Waite
+  reports to-day that he cannot get his regiment ready to move before Monday. The forges, coal, &c., had to be sent from here. I think he will get
+  ready as soon as possible. If you think it advisable I will send out the Sixteenth New York in the direction of Aldie. They cannot raise more than
+  300 for the field, and they cannot go to Snicker's Gap. They may scout about Aldie and pick up rumors. C. C. AUGUR, Major-General, Commanding."
+  Clause for clause the decode. The sender the reader could not see is **Augur** (signature group "Cork = screw"); the next page (919) prints
+  Sheridan's staff's answer "Your dispatch of 3 p.m. received".
+- **E345 -> printed OR ser. I vol. 39 pt 2 pp.269-270** (IA `warofrebellion392unit` page images n274-n275, heads 269, 270; read on the images):
+  "WASHINGTON, August 19, 1864 -- 3 p.m. Major-General SHERMAN, Atlanta: It seems absolutely necessary that General **Canby** should command the troops
+  on both banks of the Mississippi River. He cannot otherwise protect the navigation or prevent Kirby Smith from re-enforcing Hood. The conflict of
+  orders at Memphis probably results from the fact that General Grant first directed troops in West Tennessee to be sent to you, but a few days after
+  directed that General **Canby** should send everything available to Mobile. I think that you will find General **Canby** is giving you all the
+  assistance in his power. H. W. HALLECK, Chief of Staff. (Copies sent by General Sherman to Generals Howard and Washburn August 19.)" Word for word
+  with the decode, except that all three name groups the key gives as Hurlbut print as **Canby** (s.3).
+- **E346 -> not located.** Letters-only grep for Gordon Bruce, Keith, Kennuer/Kenner, Hanliff/Hauliff, Robert Murray: 0 in OR I/38 pt 5, 39 pt 2, 41
+  pt 2, 43 pt 1, ser. II vol. 7 (Keith only as other men), ORN I/3 (Halifax 174, Keith 0), Plum 1-2 (Keith only as the Dec 1863 cipher letter and an
+  operator J. S. Keith), Bates (the Dec 1863 Keith cipher letter only). Google Books (`country=US`, key): "Gordon, Bruce" Halifax Keith (26, modern
+  directories), "Gordon, Bruce & Co" machinery (modern), "Alexander Keith" Halifax machinery Montreal 1864 (3: Harper's 1898 = Bates's serial, Ohio
+  Society history -- the Dec 1863-Jan 1864 bank-note machinery and dies telegrams of Murray, not this one), "Robert Murray" marshal Halifax machinery
+  Stanton (10, the same Dec 1863-Jan 1864 telegrams). IA full text all items (be-api fts): "Gordon Bruce & Co" 73 (a Pittsburgh provisions firm in
+  market reports 1863-66; not shown to be this firm), "Mitchell, Kenner" (the later publisher Mitchell Kennerley), "Hanliff" (other people), Keith
+  machinery Halifax 1864 Murray (noise). LS-V3 and its second audit had already searched the affair (Larabee's Keith biography, Seward vol. 3, OR ser.
+  II vols 7-8, ser. III vol. 4, IA full text "Alexander Keith" "rebel agent") with no hit on any August telegram.
+- Not searched: NARA RG 107 (Stanton's telegrams sent), RG 60 (marshals' correspondence), the Stanton papers (LC), the New York press of 13-20 Aug
+  1864 page by page, HathiTrust full text, JSTOR. Not searched for the N1 items: Grant Papers, Halleck's and Augur's letter books (unneeded: print found).
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+- **E343 (OR I/43 pt 1 p.918):** decoder H 33 stands (C by print for the whole text). Two groups the decoder left plain read by the print: **Laughter
+  = Snicker's** (in "Laughter Sheffield" = "Snicker's Gap"; not in key.md; a pun of the sender's, C by print) and **Cork = screw (Corkscrew) =
+  signature C. C. Augur** (not in key.md; C by print, one occurrence). "Tower" = Over the (key, H) where the print reads "on the": a wording variant of
+  the received copy, graded H as keyed. "Platina Andover Panama" = [8] [Illinois] [Cavalry] where the print has "Eighth Illinois": H as keyed.
+  **H 33 + C 2**, no gap. The header's "sender not on the leaf", "[scouts]", "[horses]" and "go to [?]" are corrected by the print (s.5).
+- **E345 (OR I/39 pt 2 pp.269-270):** decoder H 24 includes three name groups **Leopard, Leghorn and Legend = Maj Gen S. A. Hurlbut** (key.md p.17
+  ll.5-6, all H) **where the print reads "General Canby" three times**. Rule 4: a data conflict, recorded, not settled by majority; graded **M** here
+  (Canby C by print). This is the third print-checked witness after E323 (FV-MS18b, May 1865) and E334 (FV-MS18d, 27 May 1864), and the first for
+  **Leopard and Leghorn**; the context agrees with the print (the item above it on p.269 is Canby's own letter to Washburn on Mobile and Kirby
+  Smith, and Sherman sent copies to Howard and Washburn). **"hudson" = Hood** (not in key.md; C by print). Waylay = Reinforce (H; print
+  "re-enforcing"), Europe = Mobile (H; print "Mobile"), Nutmeg = Available (H), Jonah = General-in-Chief where the print signs "H. W. HALLECK, Chief of
+  Staff" (title as keyed; signer C, as E334's Yoke Jacob). **H 21 + M 3 + C 1**, no gap.
+- **E346 (not located):** the eight code groups are H as filed (**H 8**, no M); transcription "Hanliff" -> **"Hauliff"** (image, 9819). Reading:
+  "[12.30] Aug [13] for Robt Murray U S marshal [New York] ---- Gordon Bruce & Co or Gordon Bruce & Hauliff are supplying machinery of some
+  description for Alex Keith Jr the [rebel] agent at Halifax which is to be shipped to Mitchell Kennuer & Co Montreal ---- Please find out what the
+  machinery is & [report] to me immediately[,] also what kind of business Gordon Bruce & Co carry on ---- James Bruce of that firm is in Halifax or was
+  yesterday. [Signature] [Secretary of War]." **H 8**, no gap.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | class | key | depth | % code groups H/C/S | basis | safe sentence |
+|---|---|---|---|---|---|---|
+| E343 Augur to Sheridan, 26 Aug 1864 | **N1** (text known) | period | D3 | 100 (33 H + 2 C) | printed OR I/43 pt 1 p.918, clause for clause, read on the IA page image | "An independent re-decipherment, read with War Department Cipher No. 1, of Augur's telegram to Sheridan of 26 Aug 1864, whose text is printed in OR ser. I vol. 43 pt 1 p.918." |
+| E345 Halleck to Sherman, 19 Aug 1864 | **N1** (text known) | period | D3 | 100 (21 H + 3 M + 1 C; the M are the three Canby groups, read by the print) | printed OR I/39 pt 2 pp.269-270, word for word except Canby = the key's Hurlbut (x3) | "An independent re-decipherment of Halleck's telegram to Sherman of 19 Aug 1864, printed in OR ser. I vol. 39 pt 2 pp.269-270; the print's 'Canby' stands where the 1864 key lists Hurlbut." |
+| E346 Stanton to Marshal Murray, 13 Aug 1864 | **N3** | period | D3 | 100 (8/8 H; rest plain) | not located: OR I/38-43 (by date), ser. II vol. 7, ORN I/3, Plum, Bates, Google Books, IA full text, the holder's full text; the same affair's sibling telegrams (9819, E38-E40) agree with it | "Read at grade H with War Department Cipher No. 1: on 13 Aug 1864 Stanton asked U.S. Marshal Robert Murray in New York to find out what machinery Gordon Bruce & Co (or Gordon Bruce & Hauliff) were supplying for Alex Keith Jr., the rebel agent at Halifax, for shipment to Mitchell Kennuer & Co, Montreal; not located in print (searched 9 Oct 2026)." |
+
+Not N4 for E346: NARA RG 107/60, the Stanton papers, the New York press page by page, HathiTrust, JSTOR unsearched. Unsafe for E346: "first",
+"new", "unpublished", "never printed". Depth checks: E343 -- code clause "Laughter Sheffield" = Snicker's Gap and Cork = screw = Augur, external check
+the print (D3; D4 would need a fresh rule-7 re-derivation). E345 -- external check the print; three groups M by a key conflict (D3). E346 -- code clause
+Forlorn = 13 = the header's own date, Walnut = Rebel ("the rebel agent at Halifax"), Brutus with Webster = signed Secretary of War; external,
+non-statistical: the holder's own transcription of 9819 (same hour, same affair, "Gordon Bruce & Hauliff", Keith at Halifax, Brutus) and E39
+("Gordon Bruce & Co ... Mitchell Kenner & Co Montreal") (D3). Depth sentences (my own): E343 -- "On 26 Aug 1864 Augur told Sheridan that Gregg's
+provisional cavalry battalion guarding the upper Potomac had been ordered to City Point and offered to send the 16th New York, 300 men at most,
+to scout about Aldie." E345 -- "On 19 Aug 1864 Halleck told Sherman that one general must command on both banks of the Mississippi, and blamed the
+conflict of orders at Memphis on Grant's two successive directions." E346 -- "On 13 Aug 1864 Stanton asked the U.S. Marshal at New York to find out
+what machinery a New York firm was supplying, by way of Montreal, for the Confederate agent Alexander Keith Jr. at Halifax."
+
+### 5. Postmortem and fixes for a FIX job (not applied here)
+Failure: MS18-R4 called E343 and E345 "not located" on a cached file with the wrong id (s.0) and an unsearched volume; both are printed, and E343's
+"unseen sender" is in the print. Corrections (a verifier does not edit ciphertext.txt or reading.md):
+- E343 header: sender **C. C. Augur** (Corkscrew), composed 3 p.m. (print; ledger 4.30 PM); "[scouts]" -> the Sixteenth New York; "[horses]" -> "more
+  than 300 for the field"; "go to [?]" -> Snicker's Gap; add "printed OR I/43 pt 1 p.918". Reading: Laughter = Snicker's and Corkscrew = Augur as
+  entry-level notes (C by print) through decode.py's existing per-entry mechanism; no key.md row.
+- E345 header: addressee Sherman, Atlanta (operator Sholes); "[Hurlbut, M]" -> Canby by print (key Hurlbut, conflict); "waylaying [the river
+  transports]" -> "re-enforcing Hood" (Waylay = Reinforce, hudson = Hood); "Europe [sic, M]" -> Mobile; "[Halleck?] is giving" -> Canby; signer H. W.
+  Halleck, Chief of Staff (Jonah); add "printed OR I/39 pt 2 pp.269-270". Reading: hudson = Hood (C, entry note); the three Hurlbut groups M with the
+  print's Canby noted.
+- **HYPOTHESES.md (rule 4):** add E345 to the Legend = Hurlbut/Canby conflict row (FIX-FM13 opened it for E323; FIX-FM15 adds E334) as a third witness,
+  and extend it to **Leopard and Leghorn** (19 Aug 1864, Halleck to Sherman, print Canby x3). Never settled by majority; a KEY job decides whether the
+  three p.17 ll.5-6 rows were reassigned to Canby in the book as used.
+- key.md TIME note "Viola = 12.30 AM": 9819 (13 Aug 1864, No. 1) writes "1230 pm" over Viola; one witness for a KEY job, not an edit.
+- E346 transcription "Hanliff" -> "Hauliff" (image; 9819).
+- NOTES "## MS18-R4": the line "OR I/43 pt 1-2 cached" is wrong (the cached `warofrebellion431unit` is OR I/47 pt 2); E343, E345 printed (above).
+- Lesson for the print tools: `sources/ia-fulltext/print-check/warofrebellion431unit_djvu.txt.gz` carries the id of OR I/43 pt 1's sibling but the
+  text of I/47 pt 2; any script mapping that file to "43.1" by name returns false negatives (the same shape as MS18-R2's wrong-id miss in the brief).
+
+Requests: hdl.huntington.org 13 (8 CISOSEARCHALL, 2 item info, 3 IIIF), all 200; archive.org 15 (8 djvu texts, one 403; 2 page_numbers; 5 page
+images); googleapis.com 6; be-api.us.archive.org 5. Queued: WORK-QUEUE `AUD2-LEDGER-31` (E346), SO-ECKERT-E346.
