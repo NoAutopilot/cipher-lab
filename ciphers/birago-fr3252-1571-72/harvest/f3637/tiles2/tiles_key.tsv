@@ -1,0 +1,14 @@
+tile	id	line	pos	x	y	role	cands	src
+1	r36_L04.4	r36_L04	4	293	428	T	S23|S97	c37_f36r_cipher.jpg
+2	r36_L02.37	r36_L02	37	2480	262	T	S80|S65	c37_f36r_cipher.jpg
+3	K5	v36top_L03	2	1110	457	K	S88|S24	c38_f36v_top.jpg
+4	v36top_L05.16	v36top_L05	16	2240	672	T	S24|S88	c38_f36v_top.jpg
+5	K3	v36top_L01	18	2310	234	K	S69|X_THETA2	c38_f36v_top.jpg
+6	v36top_L05.26	v36top_L05	26	2878	670	T	S74|S54	c38_f36v_top.jpg
+7	K4	v36top_L02	2	1130	336	K	S88|S24	c38_f36v_top.jpg
+8	r36_L08.8	r36_L08	8	555	1070	T	S80|S65	c37_f36r_cipher.jpg
+9	K2	v36top_L01	5	1410	197	K	S80|S65	c38_f36v_top.jpg
+10	r36_L01.1	r36_L01	1	1988	150	T	S54|S74	c37_f36r_cipher.jpg
+11	K6	v36top_L03	18	2290	458	K	S65|S80	c38_f36v_top.jpg
+12	v36top_L02.37	v36top_L02	37	3785	372	T	S24|S88	c38_f36v_top.jpg
+13	K1	v36top_L01	3	1230	209	K	X_THETA2|S69	c38_f36v_top.jpg
