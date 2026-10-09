@@ -85,6 +85,12 @@ classify Every box of one page against the labelled boxes of ALL pages (the atla
          key-constrained decode reads. --holdout PREFIX (repeatable): boxes whose id starts with PREFIX never vote and
          their cluster code is not used for them (a held-out known-answer line scored against an atlas named without it).
          --page all classifies every page into one TSV (a 'page' column is added).
+         --train-labels TSV [--round R] (MQS-CLASSIFY-ROUNDS, 9 Oct 2026; Lasry 2026 HistoCrypt, "Location Matters",
+         train-correct-retrain): a person's sorted piles (box, code [, round]) override the box labels before the vote;
+         --round R keeps rows with round <= R so err_true can be read per round (tx_bench.py). Catches: boxes a person
+         labelled now vote with their sorted code, and a later round's correction of a box wins. Must NOT: change
+         anything when the file is empty or --round 0 (output identical to no flag), nor accept a box id that is not
+         in signs.tsv (exit). Measured on Birago no.87: tools/tests/PREREG-MQS-CLASSIFY-ROUNDS.md, shelf row.
 Test: python3 tools/tests/test_glyph_atlas.py (offline: a synthetic page with two sign shapes, one carrying a mark).
 """
 import argparse, collections, csv, json, os, sys
@@ -687,8 +693,12 @@ def cmd_crop(a):
 def cmd_classify(a):
     from sklearn.neighbors import NearestNeighbors
     L = json.load(open(a.labels))
-    over = L.get('override', {})
+    over = dict(L.get('override', {}))
     rows = read(a.out, 'signs.tsv')
+    if a.train_labels:
+        tl = train_labels(a.train_labels, a.round, {r['sid'] for r in rows})
+        over.update(tl)
+        print(f'--train-labels: {len(tl)} box labels applied (round <= {a.round})')
     mrows = {r['mid']: r for r in read(a.out, 'marks.tsv')}
     cl = {(r['kind'], r['id']): r['cluster'] for r in read(a.out, 'clusters.tsv')}
     bm = np.load(os.path.join(a.out, 'bitmaps.npz'))['signs']
@@ -754,6 +764,28 @@ def cmd_classify(a):
           f'{sum(r["code"] != "_" for r in out)} cipher codes')
     if a.strips and not allp:
         strips(a, out, [m for m in mrows.values() if m['page'] == a.page])
+
+
+def train_labels(path, rnd=None, known=None):
+    """--train-labels TSV (MQS-CLASSIFY-ROUNDS, 9 Oct 2026; Lasry 2026 HistoCrypt "train, correct, retrain"): columns
+    box (or sid), code [, round]. Returns {box: code} for rows with round <= rnd (no round column: every row is round 1;
+    rnd None: all rows; rnd 0: none). Empty codes are skipped; a later row for the same box wins (a correction in a
+    later round overrides an earlier one). Boxes absent from signs.tsv are an error, not a silent no-op."""
+    out = {}
+    with open(path) as f:
+        rd = csv.DictReader((ln for ln in f if not ln.startswith('#')), delimiter='\t')
+        key = 'box' if 'box' in rd.fieldnames else 'sid'
+        if key not in rd.fieldnames or 'code' not in rd.fieldnames:
+            sys.exit(f'--train-labels {path}: needs columns box (or sid) and code')
+        rows = sorted(((int(r.get('round') or 1), n, r) for n, r in enumerate(rd)), key=lambda t: t[:2])
+        for rr, _, r in rows:                   # round order, then file order: the latest correction wins
+            if (rnd is not None and rr > rnd) or not (r['code'] or '').strip():
+                continue
+            out[r[key]] = r['code'].strip()
+    bad = sorted(set(out) - known) if known is not None else []
+    if bad:
+        sys.exit(f'--train-labels: {len(bad)} boxes not in signs.tsv, e.g. {bad[:3]}')
+    return out
 
 
 def strips(a, out, marks):
@@ -861,6 +893,9 @@ def main(argv=None):
                    help="never let the target page's own boxes vote (kNN over other pages' boxes only); use it when the "
                         "page is new and unlabelled, otherwise its boxes vote '_' for each other (debosnys c4, 25 Sept 2026)")
     k.add_argument('--strips', help='directory for per-line strips with box numbers')
+    k.add_argument('--train-labels', help='TSV box (or sid), code [, round]: a person\'s sorted piles applied as per-box '
+                   'overrides on top of labels.json before the kNN vote (human-in-the-loop retrain)')
+    k.add_argument('--round', type=int, help='--train-labels: use rows with round <= this (0 = none; default all)')
     k.add_argument('--topk', type=int, default=1, help='also write the k best codes with distance and vote share (3)')
     k.add_argument('--pool', type=int, default=40, help='neighbour pool for codes outside the --knn voters (40)')
     k.add_argument('--holdout', action='append', help='box-id prefix that never votes (repeatable)')

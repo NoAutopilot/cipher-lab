@@ -71,6 +71,29 @@ def main():
     assert len(held) == 12 and all(r['cluster_code'] == '_held' for r in held)
     assert all(r['cluster_code'] != '_held' for r in K if r not in held)
 
+    # --train-labels / --round (MQS-CLASSIFY-ROUNDS, 9 Oct 2026): round 1 relabels every X box 'Z' (all X now vote Z);
+    # round 2 corrects them back to X (a later round wins); --round 0 and an empty-code row change nothing (must NOT);
+    # a box id not in signs.tsv exits non-zero (must NOT pass silently).
+    tl = os.path.join(d, 'train.tsv')
+    with open(tl, 'w') as f:
+        f.write('box\tcode\tround\n')
+        f.write(''.join(f'{b}\tZ\t1\n' for b in sorted(marked)))
+        f.write(''.join(f'{b}\tX\t2\n' for b in sorted(marked)))
+        f.write('p1_01_001\t\t1\n')
+    cl = lambda *x: list(csv.DictReader(open(run('classify', '--out', d, '--labels', os.path.join(d, 'labels.json'),
+                                                 '--page', 'p1', '--tsv', bx, '--knn', '3', '--pca-scale', 'shared',
+                                                 *x) and bx), delimiter='\t'))
+    base = cl()
+    assert cl('--train-labels', tl, '--round', '0') == base
+    R1 = cl('--train-labels', tl, '--round', '1')
+    assert all(r['code'] == ('Z' if r['box'] in marked else 'B') for r in R1), R1
+    assert cl('--train-labels', tl, '--round', '2') == base == cl('--train-labels', tl)
+    with open(tl, 'a') as f:
+        f.write('nope_99_001\tX\t1\n')
+    bad = subprocess.run([sys.executable, TOOL, 'classify', '--out', d, '--labels', os.path.join(d, 'labels.json'),
+                          '--page', 'p1', '--tsv', bx, '--train-labels', tl], capture_output=True, text=True)
+    assert bad.returncode != 0 and 'not in signs.tsv' in bad.stderr, bad
+
     # atlas --from-truth (TX-SHEET, 4 Oct 2026): 10 secure X tiles + 1 B tile + one unknown sid; --per 4 --spread.
     # X gets a 4-tile hand row drawn only from the truth rows; B (1 < --min-secure 2) and Z (none) are print-only;
     # --exclude-leaf p1 empties every row; the canonical grid is cut in sorted code order.
