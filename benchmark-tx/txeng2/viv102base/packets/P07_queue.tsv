@@ -1,0 +1,17 @@
+line	col	kind	candidates	left_neighbours	right_neighbours
+f102r_L18	28	disagree	S | s	d y z	# tz d
+f102r_L18	37	disagree	p | (no sign)	tz m y	o o z
+f102r_L18	42	disagree	{swash} | {curl}	o z m	S o o
+f102r_L18	43	disagree	S | s	z m {swash}	o o d
+f102r_L18	49	disagree	e | g	d tz x	S tz o
+f102r_L18	52	disagree	o | (no sign)	e S tz	:
+f102r_L19	8	disagree	S | s	a m g	p # S
+f102r_L19	18	disagree	p | (no sign)	tz m y	o o z
+f102r_L19	23	disagree	{swash} | {curl}	o z m	3 tz d
+f102r_L19	35	disagree	R | P	d o o	m x :
+f102r_L19	50	disagree	S | s	g m o	g d
+f102r_L20	5	disagree	S | s	m p #	S d p
+f102r_L20	13	disagree	S | s	y m z	tz p m
+f102r_L20	19	disagree	S | s	m # Z	o o d
+f102r_L20	35	disagree	b | 6	x z S	tz 3 S
+f102r_L20	38	disagree	S | s	b tz 3	o o d

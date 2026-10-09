@@ -1,0 +1,258 @@
+line	col	A	B	flagged	crop
+f102r_L01	3	2	3	A	
+f102r_L01	18	{u}	n	AB	
+f102r_L01	30	2	z	B	
+f102r_L02	8	-	y		
+f102r_L02	10	8	t	B	
+f102r_L02	11	tz	y		
+f102r_L02	15	t	p		
+f102r_L02	21	2	r	B	
+f102r_L02	31	{q}	p	AB	
+f102r_L02	38	2	r	B	
+f102r_L02	55	2	z	B	
+f102r_L03	11	-	p	B	
+f102r_L03	12	P	p	AB	
+f102r_L03	27	h	k	B	
+f102r_L04	33	t	-	A	
+f102r_L04	34	p	#	B	
+f102r_L04	38	S	s		
+f102r_L04	39	t	p		
+f102r_L05	8	2	z	AB	
+f102r_L05	30	-	i	B	
+f102r_L05	49	3	z		
+f102r_L05	51	2	r		
+f102r_L06	9	t	4	B	
+f102r_L06	22	#	P	A	
+f102r_L06	27	6	b	B	
+f102r_L06	32	e	g		
+f102r_L06	46	6	b	B	
+f102r_L07	3	-	d		
+f102r_L07	15	-	i	B	
+f102r_L07	16	a	c	AB	
+f102r_L07	17	s	S		
+f102r_L07	41	-	z	B	
+f102r_L07	42	Z	z	B	
+f102r_L07	51	a	n	B	
+f102r_L08	24	o	y	A	
+f102r_L08	36	y	g		
+f102r_L09	8	tz	Z	B	
+f102r_L09	27	c	{c}	AB	
+f102r_L09	40	V	-	A	
+f102r_L09	43	z	3		
+f102r_L09	49	V	d	AB	
+f102r_L10	1	-	V		
+f102r_L10	3	-	o		
+f102r_L10	14	-	V		
+f102r_L10	26	n	m	A	
+f102r_L10	30	S	s		
+f102r_L10	33	H	#	A	
+f102r_L10	44	S	s		
+f102r_L10	46	p	V		
+f102r_L11	3	tz	Z	B	
+f102r_L11	32	-	V		
+f102r_L11	47	-	V		
+f102r_L11	49	o	-		
+f102r_L12	12	-	s		
+f102r_L12	13	S	{curl}	B	
+f102r_L12	15	r	2		
+f102r_L12	27	-	V		
+f102r_L12	29	o	-		
+f102r_L12	38	-	2	B	
+f102r_L13	5	S	s		
+f102r_L13	13	S	s		
+f102r_L13	25	p	4	AB	
+f102r_L13	49	S	s		
+f102r_L13	51	-	V		
+f102r_L15	12	f	4	AB	
+f102r_L15	19	x	z		
+f102r_L15	21	-	{curl}	B	
+f102r_L15	23	r	2		
+f102r_L15	28	-	V		
+f102r_L15	34	S	s		
+f102r_L15	46	-	V		
+f102r_L16	2	-	V		
+f102r_L16	4	o	-		
+f102r_L16	8	-	V		
+f102r_L16	10	o	-		
+f102r_L16	16	tz	Z	B	
+f102r_L16	30	b	6	A	
+f102r_L16	51	f	4	AB	
+f102r_L16	55	d	V		
+f102r_L17	9	g	3	A	
+f102r_L17	11	-	s		
+f102r_L17	13	p	-	A	
+f102r_L17	16	tz	3		
+f102r_L17	19	{curl}	V	AB	
+f102r_L17	23	3	z	A	
+f102r_L17	29	-	s		
+f102r_L17	30	S	p		
+f102r_L17	32	S	s		
+f102r_L17	38	b	6	AB	
+f102r_L17	41	3	z	A	
+f102r_L17	50	-	z		
+f102r_L18	8	S	s		
+f102r_L18	12	3	z	A	
+f102r_L18	15	S	s		
+f102r_L18	24	g	-	A	
+f102r_L18	26	y	g	A	
+f102r_L18	28	S	s		
+f102r_L18	37	p	-	A	
+f102r_L18	42	{swash}	{curl}	AB	
+f102r_L18	43	S	s		
+f102r_L18	49	e	g	A	
+f102r_L18	52	o	-		
+f102r_L19	8	S	s		
+f102r_L19	18	p	-	A	
+f102r_L19	23	{swash}	{curl}	AB	
+f102r_L19	35	R	P	AB	
+f102r_L19	50	S	s		
+f102r_L20	5	S	s		
+f102r_L20	13	S	s		
+f102r_L20	19	S	s		
+f102r_L20	35	b	6	AB	
+f102r_L20	38	S	s		
+f102r_L20	45	{swash}	{curl}	AB	
+f102r_L20	52	tz	-		
+f102r_L21	1	a	n	AB	
+f102r_L21	3	p	-	A	
+f102r_L21	5	3	z	A	
+f102r_L21	11	g	z	A	
+f102r_L21	36	r	z	A	
+f102r_L21	40	p	-	A	
+f102r_L21	44	3	z	A	
+f102r_L21	46	e	z	A	
+f102r_L21	47	S	s		
+f102r_L21	50	S	s		
+f102r_L22	2	3	z	A	
+f102r_L22	8	r	z	A	
+f102r_L22	14	{curl}	-	A	
+f102r_L22	17	S	s		
+f102r_L22	34	b	6	AB	
+f102r_L22	35	{swash}	{curl}	AB	
+f102r_L22	37	S	s		
+f102r_L22	44	S	s		
+f102r_L22	48	{swash}	{curl}	AB	
+f102r_L23	8	{swash}	{curl}	AB	
+f102r_L23	12	{curl}	-	A	
+f102r_L23	20	p	-	A	
+f102r_L23	38	S	s		
+f102r_L23	45	{swash}	{curl}	AB	
+f102r_L23	53	3	-	A	
+f102r_L24	8	p	S	A	
+f102r_L24	17	p	-	A	
+f102r_L24	21	p	-	A	
+f102r_L24	29	3	z	A	
+f102r_L24	34	S	s		
+f102r_L24	40	{swash}	V	AB	
+f102r_L25	3	y	V	B	
+f102r_L25	13	-	@	B	
+f102r_L25	14	{curled m}	m	A	
+f102r_L25	17	{dot}	:	A	
+f102r_L25	22	-	o		
+f102r_L25	26	3	g		
+f102r_L25	36	-	@	B	
+f102r_L25	37	{curled m}	m	A	
+f102r_L25	45	S	s	A	
+f102r_L25	47	a	c	A	
+f102r_L25	48	S	s	A	
+f102r_L25	52	-	@	B	
+f102r_L25	53	{curled m}	m	A	
+f102r_L25	55	{hook}	3	AB	
+f102r_L26	2	y	j	AB	
+f102r_L26	10	c	:	AB	
+f102r_L26	17	-	@	B	
+f102r_L26	18	{curled m}	m	A	
+f102r_L26	21	y	-	A	
+f102r_L26	22	{tilde}	j	A	
+f102r_L26	37	3	g	A	
+f102r_L26	39	y	g	A	
+f102r_L26	42	y	-	A	
+f102r_L26	43	{tilde}	j	A	
+f102r_L26	45	{dot}	:	AB	
+f102r_L26	48	x	r	A	
+f102r_L26	56	{fragment}	p	AB	
+f102r_L27	1	3	Z	AB	
+f102r_L27	5	a	{u}	AB	
+f102r_L27	32	-	V		
+f102r_L27	41	y	g		
+f102r_L27	50	:	-		
+f102r_L28	3	{dot}	:	A	
+f102r_L28	7	3	z	B	
+f102r_L28	8	c	:	A	
+f102r_L28	21	a	:	A	
+f102r_L28	25	3	z	B	
+f102r_L28	27	3	-		
+f102r_L28	30	-	@	B	
+f102r_L28	31	{curled m}	m	A	
+f102r_L28	34	y	-	A	
+f102r_L28	35	{tilde}	j	A	
+f102r_L28	38	y	-	A	
+f102r_L28	39	{tilde}	j	A	
+f102r_L29	8	3	z	B	
+f102r_L29	18	3	z	B	
+f102r_L29	22	-	@	B	
+f102r_L29	23	{curled m}	m	A	
+f102r_L29	30	-	@	B	
+f102r_L29	31	{curled m}	m	A	
+f102r_L29	42	y	V		
+f102r_L30	1	-	@	B	
+f102r_L30	2	{curled m}	m	A	
+f102r_L30	5	y	-	A	
+f102r_L30	6	{tilde}	j	A	
+f102r_L30	16	c	:	A	
+f102r_L30	23	a	:	A	
+f102r_L30	27	-	@	B	
+f102r_L30	28	{curled m}	m	A	
+f102r_L30	31	{dot}	-	A	
+f102r_L30	44	3	z	B	
+f102r_L30	51	6	-	A	
+f102r_L30	53	{dot}	-	A	
+f102r_L31	9	y	V		
+f102r_L31	16	y	V		
+f102r_L31	24	a	c	A	
+f102r_L31	26	y	g		
+f102r_L31	34	y	V		
+f102r_L31	42	y	V		
+f102r_L31	45	e	g	AB	
+f102r_L32	3	a	c	A	
+f102r_L32	8	-	:		
+f102r_L32	9	{dot}	@	AB	
+f102r_L32	10	{curled m}	m	A	
+f102r_L32	15	y	V		
+f102r_L32	18	3	z	B	
+f102r_L32	42	a	:	A	
+f102r_L32	47	d	o	A	
+f102r_L33	1	v	V	AB	
+f102r_L33	19	{swash}	{tilde curl}	B	
+f102r_L33	35	3	Z	B	
+f102r_L33	49	6	b	B	
+f102r_L34	27	c	-	A	
+f102r_L34	30	R	-		
+f102r_L34	35	y	-		
+f102r_L34	36	f	g	A	
+f102r_L34	37	f	#	AB	
+f102r_L34	43	{ampersand}	-	A	
+f102r_L35	1	S	{beta}	AB	
+f102r_L35	3	y	-	A	
+f102r_L35	21	-	{dot}	B	
+f102r_L35	23	6	b	AB	
+f102r_L35	24	{swash}	{tilde curl}	B	
+f102r_L35	29	t	p	A	
+f102r_L35	39	-	{dot}	B	
+f102r_L35	52	{ds	{G loop}	B	
+f102r_L35	53	ligature}	:	AB	
+f102r_L36	1	g	-	A	
+f102r_L36	2	y	{q}	AB	
+f102r_L36	35	{swash}	{curl}	AB	
+f102r_L36	39	y	-		
+f102r_L37	4	R	{q}	AB	
+f102r_L37	8	{box	-		
+f102r_L37	9	loop}	{boxed sign}	AB	
+f102r_L37	14	-	k	B	
+f102r_L37	15	f	e	AB	
+f102r_L37	16	f	{beta}	AB	
+f102r_L37	18	s	-		
+f102r_L37	19	y	-	A	
+f102r_L37	27	y	-		
+f102r_L37	34	-	o	B	
+f102r_L37	45	s	S		

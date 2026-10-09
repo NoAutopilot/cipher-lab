@@ -1,0 +1,17 @@
+line	col	kind	candidates	left_neighbours	right_neighbours
+f102r_L35	52	disagree	{ds | {G loop}	s tz x	ligature}
+f102r_L35	53	disagree	ligature} | :	tz x {ds	
+f102r_L36	1	disagree	g | (no sign)		y y m
+f102r_L36	2	disagree	y | {q}	g	y m P
+f102r_L36	35	disagree	{swash} | {curl}	p h tz	m d m
+f102r_L36	39	disagree	y | (no sign)	m d m	y d p
+f102r_L37	4	disagree	R | {q}	m x :	tz a #
+f102r_L37	8	disagree	{box | (no sign)	tz a #	loop} 2 d
+f102r_L37	9	disagree	loop} | {boxed sign}	a # {box	2 d i
+f102r_L37	14	disagree	(no sign) | k	d i p	f f S
+f102r_L37	15	disagree	f | e	i p k	f S s
+f102r_L37	16	disagree	f | {beta}	p k f	S s y
+f102r_L37	18	disagree	s | (no sign)	f f S	y y s
+f102r_L37	19	disagree	y | (no sign)	f S s	y s c
+f102r_L37	27	disagree	y | (no sign)	tz to a	y d p
+f102r_L37	34	disagree	(no sign) | o	3 tz :	# to 2
