@@ -13103,3 +13103,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 18:58 | MANT-0317 (worker, Opus) | sachsen take (19:0x UTC 9 Oct by date -u): 1 GET 694/08 fullsize 0317.jpg; for LANE FAMILY-A2k (account 2)
 2026-10-09 18:59 | MANT-0317 (worker, Opus) | sachsen release (19:0x UTC 9 Oct by date -u): 1 request, HTTP 200, 0317.jpg 4333x3871 sha256 4ddbd09a8a6b877d (= inv08f); MANT-0310 may take; for LANE FAMILY-A2k (account 2)
 2026-10-09 18:59 | MANT-0310 (Sonnet 5.5, account 2) | sachsen take (18:59 UTC 9 Oct by date -u): 2 GETs 694/08 fullsize 0310, 0311, 2.5 s apart; for LANE FAMILY-A2k (account 2)
+2026-10-09 19:00 | MANT-0310 (Sonnet 5.5, account 2) | sachsen release (19:00 UTC 9 Oct by date -u): 2 requests, see done line; for LANE FAMILY-A2k (account 2)
