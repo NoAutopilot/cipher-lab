@@ -57,3 +57,14 @@ Pipeline on eval_heldout: 2 passes x 2 calls + reconciliation 1-2 calls = about 
 The crop-geometry pass is mostly one line's tail. The single eval look is spent only after an instrument clears its dev gate
 on more than one unit: TXE-N's S0 (band-extent + mask on all of dev_tune, paired vs pass A) is that test for the crop step;
 until it, or another instrument, clears dev on a second unit, eval looks stay at zero and round 3 reports the register.
+
+## Decision (lane, 9 Oct 2026 08:2x UTC by date -u, after TXE-N)
+TXE-N read the crop step (S0 = `--band-extent 0.1 --mask-neighbours`) on all of dev_tune: vs pass A fixed 9 / broken 8, p 1.0.
+The crop step does not clear a second unit. Per the gate above, the single eval_heldout look is NOT spent; eval looks stay
+at 0. The sloped-tail fix (`--follow-slope`/`--deskew` on a line the debug overlay shows sloping) is adopted as a crop RULE
+(it reads pixels the fixed band cut), not as a transcription gain, and TRANSCRIPTION.md's "Today" column does not move.
+Round 3 is therefore: (1) the register report (research/TX-ENGINEER-2026-10-09.md); (2) the doubt detector (TXE-O) as the
+sorter feed, if it meets its gate; (3) the confirm item read ONCE with today's pipeline (two blind passes + reconcile +
+follow-slope where a line slopes) -- Amendment 2 guard 2 asks for the final pipeline's score on it whatever that pipeline
+is; (4) the live letter f.117r under the folder's own PREREG and power control (guard 3). This section freezes (1)-(4);
+the commit hash of this file at the first round-3 read is named in the ROOM line that starts it.
