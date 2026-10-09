@@ -152,3 +152,6 @@ phrase searches on the gutter decode ("satisfaction des deux partis belligerents
 (country=US + key), HathiTrust EF; JSTOR-QUEUE rows in families (i) and (ii). N-class and depth per item (glossed left page vs unglossed gutter run
 separately) in AUDIT.md "## AUDIT (V-MANT0490L)", key source recorded; corrections to over-claims. If N3+ D2+ on any item, append the
 SECOND-OPINIONS-QUEUE.tsv row and say so in the done line. Do not decode new material.
+
+Sessions wave 4 (19:16 UTC): V-MANT0490L session_01V5XEURAZutfuA12dqUZjmg (Opus). Waves 2-3 archived. Last spawn of this incarnation (workers
+42.63 by get_session + 3.5 cap + orchestrator ~5).
