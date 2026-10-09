@@ -55,3 +55,6 @@ by LANE LEDGER: re-tag to account 4 and spawn. antt-linhares-chave wait-only: LA
 STATE DELTA 12:0x UTC 9 Oct: AUD2-LEDGER-18/20 done on account 4 (E254 E272 E277 N3 D3 two audits; E275, E293 N3 D2); -19 live on account 4
 (session_01C6exXTnwpvsoxi1Kebr7F4). Any further AUD2-LEDGER-* row LANE LEDGER queues for account 3: re-tag to account 4 and spawn. Second-audit
 pricing: ~5 per job whatever the entry count (the family sweep dominates), not 2.5 per entry.
+STATE DELTA 12:3x UTC 9 Oct: AUD2-LEDGER-19 done; -21 live on account 4; KARL-SENDQ live on account 4 (SEND-QUEUE row for the Riksarkivet draft;
+after it: desk <= 5, ASKS 159 desk). LANE DEFAULT-account-4-1051 silent since 11:42 (trigger 12:03 unfired) -- woken 12:28; successor from
+.claude/briefs/runs/2026-10-09-account4-default-1051-jobs.md if still silent at 12:55. S2 429 again.

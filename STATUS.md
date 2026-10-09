@@ -7175,6 +7175,18 @@ While-waiting section added by the lane (no WAIT-PASS-6); V-MANT0176 its last jo
 LANE LEDGER-5 ~40 of 60: FV-FM8b E280-E285 N3 D3 (E284 sender corrected to Babcock), FV-FM8d live. Board rebuilt after the second audits.
 Account 3 silent since 02:03. Next check-in 12:25.
 
+Check-in 7, 12:27-12:3x UTC 9 Oct (5:27 am PT): five_hour allowed; orchestrator context ~560k, cost 20.2. AUD2-LEDGER-19 done 12:21 (5.43 Q):
+E280 N3 weak D3, E281 E283 E284 E285 N3 D3 at two audits (E283 95.5 Sharpes = [Gap] H from key.md, image-checked; first audit had I);
+owed: Grant Papers vol. 12 page read (HTRC down, HathiTrust from the desk later), Google Books E284/E285 (503 twice). AUD2-LEDGER-21 (E278
+E289, FV-FM8d's) re-tagged from account 3 and spawned (session_01MJ9uXXwzng6ns8E7pM3e91). OUT-CHECK-KARL (account 2) PASSED gate 7 on the
+Riksarkivet draft 12:16 (scan count 27 -> 28 corrected, the 1676 print re-described, fee row added; recipient reconfirmed live) -> KARL-SENDQ
+spawned here (session_<see ROOM>) to write the mailbox json, the SEND-QUEUE row and move ASKS 159 to the desk; the owner's send runner sends.
+Account 1 LANE LEDGER-5: FV-FM8d E286 E288 N1 (holder clear copies), FIX-FM8 done (25 entries corrected by notes), lane closing; AUD2-LEDGER-21
+was its last account-3 row. Account 2: V-MANT0176 N3 D1 (key published), FAMILY-A2h closing. Account 4 LANE DEFAULT-1051: its 12:03 check-in
+trigger shows no run and no ROOM line since 11:42 while its wave-3 workers finished 11:49-11:53 -- woken by send_message 12:28 (ledger, refill
+or close, re-arm); if silent at 12:55, a successor lane is briefed from its jobs file. Keys: Semantic Scholar 429 again (5 of 9 working).
+Account 3 silent since 02:03. Next check-in 12:55.
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;
