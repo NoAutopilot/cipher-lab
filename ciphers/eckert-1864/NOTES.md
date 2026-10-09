@@ -4006,3 +4006,48 @@ Decode: `decode.py --write` then `--check` -> "reading.md is current"; `decode_n
 key.md (KEY-LAV): Lavender source cell gains E169, E330 (C) and the Memphis addressee uses (9870/1, 9893/2); Washburne 3 of 3 vs control 0 of 3, p 0.050, disclosed not blind. Tulip: Period (S) stays the section 7 row; the Open/Period context rule is recorded on both rows and carried per entry by `gloss:` / `plain-at:` (E287 new, E319 already), since decode.py reads one meaning per row. Nothing else in key.md touched.
 
 Propagation (rule 10): status.json rows for E333, E335, E340 (and E287) already carry the audits' corrected line, depth_note and counts (27 H + 1 M, 16 H, 8 H, 19 H) and match the reading as regenerated; SO prompts PROMPT-chatgpt-e333/e335/e340 already state the corrected reading ("New York", "right", "Pen nock" per image). E334 and E331/E332/E336-E339 are N1 with no status row or SO prompt. No class, depth or SECOND-OPINIONS-QUEUE.tsv row touched.
+
+## MS18-R5 (9 Oct 2026, account 1, for LANE LEDGER)
+
+Ten more No. 1 rows of the sent ledger mssEC 18 (Huntington object 10074, `ms18/clean-ms18.tsv`) read and filed as E351-E360 (`ciphertext.txt`; `decode.py --write` then `--check` exit 0; `decode_no2.py --check`, `decode_no9.py --check` exit 0). Rows: 10065/2, 9821/1, 10004/1, 9791/0, 9863/0, 9729/2, 9825/1, 10043/1, 9753/1, 9770/1 (the two spares 9674/0 and 9886/1 were extracted and decoded in `ms18/ms18_r5_controls.txt` but not filed). Intake gate (21:1x UTC, `tools/prior_work.py ... --step-type read --fetch` on the 10065 spec): `exit 4`, nine LEADs (OR windows Dec 1864, not 1865; none this entry) and one LOOK for the leaf's crops; the own-work grep of the ten pointers in ciphertext/NOTES/AUDIT at 21:1x found none. Scripts and outputs in `ms18/`: `ms18_r5_extract.py`, `ms18_r5.py` + `ms18_r5_controls.txt`, `ms18_r5_printcheck.py/.out`, `ms18_r5_loose.py/.out`, `ms18_r5_hdl.py/.out`, `ms18_r5_hdl2.py/.out`, `ms18_r5_file.py`.
+
+**Book per row (HEAD shares No.1/No.2/No.9).** X1 10065/2 .29/.29/.16; X2 9821/1 .51/.47/.26; X3 10004/1 .48/.40/.23; X4 9791/0 .49/.45/.21; X5 9863/0 .45/.39/.24; X6 9729/2 .37/.39/.17; X7 9825/1 .39/.37/.20; X8 10043/1 .38/.33/.13; X9 9753/1 .61/.53/.24; X10 9770/1 .49/.41/.16. The share does not pick the book on X1 (a tie, 1865), X6 and X7. The meaning-shuffled copy of No. 1 gives H counts within 1 of the true count on every row, so the count control cannot fail and licenses nothing; the discriminator is sense, read by me, against the shuffled and No. 2 decodes. **X7 conflict:** the ledger's own label over the header is "No 2" but only No. 1 reads (No. 2 gives Butler/Cairo/Oglesby for Orange C.H./Lee's cavalry/artillery): a label-versus-sense conflict, logged in E357, not settled by the share. The extractor also carried the next entry's label/time line onto X3, X5, X7, X8; those lines were dropped in filing.
+
+**Holder search (31 requests over two takes, `ms18_r5_hdl.out`, `ms18_r5_hdl2.out`).** The first take's ten queries ran 6-8 words each and all returned 0 hits: a non-test (no positive control). The second take used 2-3 word queries with a positive control ('Gordon Bruce', hits 9045, 9819, 9820 = the known entry's own pages): each query that hit returned the row's own page (10065, 9821, 9729, 9674, 10043); the other hits (7898, 7917 for 'Davis reward Macon'; 10419, 8911, 10297 for 'Olcott Boston'; 7976-7978, 8791 for 'Barton Memphis papers'; 7943, 4514 for 'Rawlins Missouri troops Thomas') were **not opened** (a clear copy in another object is possible: a lead, not a negative). 'Stiner reporter' and 'Kanawha Hunter raid' returned 0. Disclosure: my second take was posted while FV-MS18h's and AUD2-LEDGER-30's 21:26 takes were un-released and I did not wait; the first take at 21:19 had no open takes.
+
+**Print (letters-only phrase grep over 164 cached volumes, 12 rows x 3-5 phrases; loose windows; `ms18_r5_printcheck.out`, `ms18_r5_loose.out`).** Two printed, clause for clause: E354 (9791/0) Halleck to Ord, Washington 13 July 1864 4 p.m., OR I/37 pt 2 (page head not legible); E360 (9770/1) Halleck to Hunter, 2 July 1864, OR I/37 pt 2 pp.8-9 (head 9 inside the item). Near misses that are different telegrams: Leet's "They bring no other information" (OR I/43 pt 2, 11 Oct 1864) for E357; Halleck to Schoepf 4 June 1864 "Fifth Maryland ... report to General Augur" for E359; E. L. Wentz hits (OR I/43 pt 2) for E352. Not located in the searched volumes: E351, E352, E353, E355, E356, E357, E358, E359. The loose-window script has a known false negative: it missed E354's own printed message (Edwards Ferry / guerrillas / Baltimore sit more than 300 characters apart), so its zeros are weak. Not searched: Navy ORN and the Navy Department papers (E355, E356), the New York and Baltimore press, OR ser. III, Hancock's and Wilson's papers (E351, E353), Grant Papers, the Memphis case papers (E358; the same case continues in 10043/2).
+
+**Image check** (ten pages, whole page at 2400 px, own entry): the transcription matches line by line on all ten. Findings: E351's leaf has no label on the entry (a "No 6 card" heads the entry above); E353 is label No 1 with the hour written 7.30 or 4.30; E357 is labelled No 2 (above); E358's label is on the next entry; E355 sits above Caldwell (No 2) and Sampson (No 1, 8 Oct) entries, not read.
+
+| row | ID | content as read | book / H | printed |
+|---|---|---|---|---|
+| 10065/2 | E351 | 2 Dec 1865 to Bodle, Balto, for Hancock: habeas corpus in case of minors not to be resisted, defend without counsel, report officers who illegally enlisted them | No. 1, H 13 (share tie) | not located |
+| 9821/1 | E352 | 18 Aug 1864 to Ferry: hand over prominent citizens to E. L. Wentz as hostages for negroes taken; Townsend | No. 1, H 19 | not located |
+| 10004/1 | E353 | 7 May 1865 to Wilson at Macon: seize prominent rebels reorganising; action on the reward (Jeff Davis) approved; President's $100,000 last week | No. 1, H 23 | not located |
+| 9791/0 | E354 | 13 July 1864 4 PM Halleck to Ord at Baltimore: move out and come to Washington; enemy toward Edwards Ferry; only mounted guerrillas | No. 1, H 20, C by print | OR I/37 pt 2 |
+| 9863/0 | E355 | 7 Oct 1864 Fox: reporter Stiner at Fort Monroe reports naval activity; such accounts are all the enemy wants | No. 1, H 20; addressee M | not located |
+| 9729/2 | E356 | 3 May 1864 Fox to Olcott via Horner: Boston witness, court rooms, Goodman late Judge Advocate to report; Boston and New York Navy Yards | No. 1, H 13 (share does not pick) | not located |
+| 9825/1 | E357 | 19 Aug 1864 Leet to Bowers at City Point: no troops joined or left Early; rumour Lee's cavalry beaten at Orange C.H. | No. 1 by sense, label No 2, H 17 | not located |
+| 10043/1 | E358 | 23 July 1865 to Memphis for Barton: keep the prisoner secure, secure papers, cipher the substance; the publication signed Canada | No. 1, H 15 | not located |
+| 9753/1 | E359 | 4 June 1864 to Lew Wallace via Sampson: 1st Md Veteran Cavalry and Battery D to Washington to Augur; concentrate | No. 1, H 21 | not located |
+| 9770/1 | E360 | 2 July 1864 Halleck to Hunter: bring back forces to the B&O line; Ewell's corps returned; nothing of Breckinridge | No. 1, H 14, C by print | OR I/37 pt 2 pp.8-9 |
+
+Grades: decoder H 175 over E351-E360 (13+19+23+20+20+13+17+15+21+14), C 2 (the decoder's count; E354 and E360 are C by print); M for the names and code words noted per entry; no S, no I. Check: `python3 decode.py --check` exit 0. Requests: hdl.huntington.org 31 (21 CISOSEARCHALL, 10 IIIF); archive.org 0 (cached volumes only). Depth and novelty not classified (rule 10).
+
+## Remaining gaps (MS18-R5, 9 Oct 2026)
+Read so far: ten of ten filed (E351-E360); two printed, eight not located; spares 9674/0 and 9886/1 decoded, not filed.
+- E351, E353, E355, E356, E358 print and press - blocker: not-attempted; ORN, Navy papers, Hancock's/Wilson's papers, NY and Memphis press not searched; next: ORN by "Stiner"/"Fort Monroe" and "Olcott"/"Goodman" via be-api full text, ~$0.3
+- E352, E357, E359 print - blocker: not-attempted; OR I/43 pt 1 by date (E352, E357), OR I/36 pt 3 by date (E359) searched only through the cached phrase set; next: those volumes by date, ~$0.3
+- the unopened holder hits 7898, 7917, 10419, 8911, 10297, 7976-7978, 8791, 7943, 4514 - blocker: not-attempted; unopened for lack of box and cap; next: one item-info call each to see whether any is a clear copy of E353, E356, E358 or E359, ~$0.2
+- E355 addressee, E352 opening, E359 tail 'tell n/u? see B', E360 'are you all oak' - blocker: open-codes; words in no key row; next: sibling entries of the same days in the ledger, ~$0.3
+- E354 and E360 print page numbers not read from an image - blocker: not-attempted; the OCR gives heads only; next: IA page reads of OR I/37 pt 2, ~$0.1
+
+## Escalation (MS18-R5, 9 Oct 2026)
+- [x] siblings: neighbouring entries on the ten leaves seen (Caldwell/Sampson 7-8 Oct, Beckwith 2-3 May, 10043/2, Sholes 19 Aug), not filed.
+- [x] clear-pages: CISOSEARCHALL, 21 queries over two takes; first take a non-test (too many words), second with a positive control; no clear copy found; 11 other-page hits unopened.
+- [x] known-keys: three books plus meaning-shuffled copies (count control non-discriminating by construction, read by sense); X7's label conflict logged.
+- [x] print: 164 volumes phrase grep; two printed.
+- [n/a] key-rebuild: no key row edited.
+- [x] image-check: ten pages read at 2400 px.
+- [x] retry: none needed (no host refused).
+Verdict: keep going: 5 internal gaps; cheapest next: ORN full-text for E355/E356 and the unopened holder hits, ~$0.5

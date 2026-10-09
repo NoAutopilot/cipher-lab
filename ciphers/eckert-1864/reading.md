@@ -1883,5 +1883,65 @@ Code-word tokens: H 13.
 
 Code-word tokens: H 22.
 
-Totals over the 292 entries: H 5081, C 63, I 25, M 36, S 16, U 10.
+**E351 | Page 405 | 10065 | mssEC 18 (obj 10074, pointer 10065; printed page 399), 2 Dec 1865 Washington, to Bodle at Baltimore for Maj. Gen. Hancock, signed Ed. Townsend, Asst Adjt Genl: yours of this date received; the Secretary of War says the habeas corpus in case of minors is not to be resisted; defend the case as well as possible without counsel unless there is some peculiar point; report the names of the officers by whom the minors discharged were illegally enlisted; acknowledge receipt (MS18-R5; row 10065/2; image-read at 2400 px)**
+
+[Washington] Dec flank {time: 2 PM} for [General] Hand cock [.] Yours of this date recd [.] The [Secretary of War] says the hay be us corpus in case of minors is not to be resisted [.] [Defense (-ed, -ing)] the case as well as possible without counsel unless there is some peculiar point [.] [Report] the names of officers by whom minors discharged were ill legally enlisted [.] acknowledge receipt  {tail: [signed] Ed Town send asst [Adjt Genl. U.S.] end}
+
+Code-word tokens: H 13.
+
+**E352 | Page 161 | 9821 | mssEC 18 (obj 10074, pointer 9821; printed page 155), 18 Aug 1864 12.30 PM Washington, to Lawrence H. Ferry (Harpers Ferry, M), signed E. D. Townsend, A.A.Gen: the Secretary of War directs that you take and hand over to E. L. Wentz [prominent citizens (M) at Harpers Ferry (M)] who guided the raiders in their late raid; they are to be held as hostages for negroes taken by [the rebels] from the railroad [force, M]; report receipt and execution of this order (MS18-R5; row 9821/1; image-read at 2400 px)**
+
+[Washington] {time: 12.30} for polking [General] [Harpers Ferry] [.] The [Secretary of War] directs that you take & hand over to E. L. Wentz [6] [Of the] prominent City zens [Rebel]'s at [Harpers Ferry] who guided the raiders in their late rape's [.] They are to be held as hostages for [6] [Artillery]es taken by the Walpole's [From the] [Rail Road] [Force] [.] [Report] rect & execution of this order  {tail: [signed] E. D. Town Send A A Gen ---- ----}
+
+Code-word tokens: H 19.
+
+**E353 | Page 344 | 10004 | mssEC 18 (obj 10074, pointer 10004; printed page 338), 7 May 1865 Washington (ledger label No 1), to Macon, Ga, for Maj. Gen. Wilson (plain 'Will son'), signed Secretary of War: instructions have been sent you in regard to [Brown, M]; any other prominent rebel who may take any steps towards reorganizing rebels should be seized immediately and sent to Washington under guard; your action in respect to the reward for [Jeff Davis] is approved; the President offered a reward of $100,000 for his arrest last week (MS18-R5; row 10004/1; image-read at 2400 px)**
+
+{time: 8 AM} {date: May 7} for Will son [Macon] [.] Instructions have been sent you in regard to brown [.] Any other prominent [Rebel] who may take any steps [Towards] re [Organize (-ed, -ing)]ing [Rebel]'s shld be seized immedy & sent to [Washington] under [Guard (-ed, -ing)] [.] Yr action in respect tooth [Fall (ing Fell) back] for [Jeff Davis] is approved [.] The [President of the U.S.] offered a [Fall (ing Fell) back] of [100000] dolls for his [Arrest (-ed, -ing)] last week  {tail: [signed] [Secretary of War]}
+
+Code-word tokens: H 23.
+
+**E354 | Page 131 | 9791 | mssEC 18 (obj 10074, pointer 9791; printed page 125), 13 July 1864 4 PM Washington, to Sampson (Baltimore) for Maj. Gen. Ord, signed H. W. Halleck, Chief of Staff: the enemy left here last night and seems to be moving toward Edwards Ferry; General Grant directs that you move out of Baltimore as soon as it becomes evident that the enemy has left your front; your troops should come by railroad as far as possible and then march to Washington; the evidence is that the rebels have no troops in the direction of Baltimore except mounted guerrillas; printed OR I/37 pt 2 (Halleck to Ord, Washington 13 July 1864, 4 p.m.; page head not legible in the OCR) (MS18-R5; row 9791/0; image-read at 2400 px)**
+
+{time: 4 PM} [13] for [Maj Gen E. O. C. Ord] [.] The [Enemy] left here last night & seems toby moving toward Edwards [Ferry] [.] [Maj Genl U.S. Grant] directs that you move out of [Baltimore] [As soon as] it becomes evident that the [Enemy] has left your [Front] [.] Your [Troops] should come by [Rail Road] as far as possible & then march to [Washington] [.] The evidence is that the [Rebel]'s have no [Troops] eligo direction of [Baltimore] except mounted guerrillas [General-in-Chief]
+
+Code-word tokens: H 20, S 1.
+
+**E355 | Page 203 | 9863 | mssEC 18 (obj 10074, pointer 9863; printed page 197), 7 Oct 1864 8 PM Washington, to O'Brien (operator) for [addressee not read, M]: [the addressee's] Wm H. Stiner, reporter at [Fort] Monroe, commences to report activity in the navy, arrival of vessels and so forth; [we] understand very readily that these written accounts of such a character are about all the information the enemy wants; of what use is it to [the] northern reader; signed G. V. Fox, Asst [Secretary of the Navy] (MS18-R5; row 9863/0; image-read at 2400 px)**
+
+{time: 9 PM} [7] [Maj Gen B. F. Butler] [.] [In the] [New York] [Ewell] [Of the] [6] Wm H Stiner [Report]er at [Monroe] commences to [Report] activity [In the] navy arrival of vessels and so forth [.] Ewell under stand very readily that these written accounts of such a character are about all the [Information] the [Enemy] wants stop of what use is it to [North] ern reader  {tail: [signed] G V [Philadelphia] asst [Secretary of Navy]}
+
+Code-word tokens: H 20.
+
+**E356 | Page 69 | 9729 | mssEC 18 (obj 10074, pointer 9729; printed page 63), 3 May 1864 10.25 PM Washington, to Jno Horner (N.Y.) for Olcott, signed Fox, Asst [Secretary of the Navy]: the commandant at Boston ordered to bring back any witness discharged; the President of the Court ordered to get new rooms if he wishes it; Mr Goodman, late Judge Advocate, ordered to report to you and Wilson so you can go forward at once on the cases in Boston and [New York] Navy Yards (MS18-R5; row 9729/2; image-read at 2400 px)**
+
+[Washington] {date: May 3} {time: 10.30 PM} for [Colonel] Olcott [New York] [.] Command ant at Boston bring back any witness discharged [.] President of Court ordered to get new rooms if he wishes it [.] Mr Good man late Judge Advocate ordered to report to you and [West] so you can go forward at once on the cases in Boston and [New York] Navy Yards  {tail: [signed] [Philadelphia] Asst [Secretary of Navy] boy}
+
+Code-word tokens: H 13.
+
+**E357 | Page 165 | 9825 | mssEC 18 (obj 10074, pointer 9825; printed page 159), 19 Aug 1864 2 PM Washington (ledger label No 2), to Beckwith at City Point for Colonel Bowers, signed Geo. K. Leet [Asst Adjt Genl]: [scouts] report that up to Wednesday last no other troops than those already reported had joined Early and none had left him; it was rumored at Orange C.H. Wednesday that Lee's cavalry had been badly beaten, losing all his artillery and many prisoners; they bring no other information (MS18-R5; row 9825/1; image-read at 2400 px)**
+
+[Washington] {time: 2 PM} [19] for [Colonel] Bowers [City Point] [.] Elgins [Men] [Report] that upto to Wednesday last no other [Troops] than those already [Report]ed had [Join (-ed, -ing)]d Early & none had [Left] him ---- It was rum- ored at [Orange C.H.] Wednesday that fit shoe [Lee]'s [Cavalry] had been badly be Eating losing all his [Artillery] many prisoners They bring no other [Information] Geo K Leet
+
+Code-word tokens: H 17.
+
+**E358 | Page 383 | 10043 | mssEC 18 (obj 10074, pointer 10043; printed page 377), 23 July 1865 8.30 PM Washington, to the Cipher Clerk at Memphis, Tenn, for Brig. Gen. Barton (plain 'Barton'), signed Secretary of War: your telegram has been received; instructions will be sent you Monday; in the meantime keep the prisoner in close and secure custody and secure his papers; telegraph in cipher briefly the substance or purport of the papers you found on him; the publication signed 'Canada' referred to I have not seen (MS18-R5; row 10043/1; image-read at 2400 px)**
+
+Memphis Tenn [Washington] [23] {time: 8.30 PM} for [Brigadier General] bar ton [Memphis] [.] your telegm has been recd Instructions will be sent you Monday [.] [In the] meantime Keep the pris in close & secure cus toddy & secure his papers [.] [Telegraph (-ed, -ing)] in [Cipher] briefly the substance or purport [Of the] papers you found on him [.] the publication signed Canada referred to I have not seen [Secretary of War]
+
+Code-word tokens: H 15.
+
+**E359 | Page 93 | 9753 | mssEC 18 (obj 10074, pointer 9753; printed page 87), 4 June 1864 3.30 PM Washington, to Sampson (Baltimore) for Maj. Gen. [Lew Wallace, M], signed [General-in-Chief, M]: the 1st Maryland Veteran Cavalry [and] Battery D, 1st Maryland [Light] Artillery will be sent to Washington to report to General Augur; as the force in your department is much weakened it will be necessary to concentrate it as much as possible by occupying only the more important points; tail 'tell n/u? see B as directed' (M) (MS18-R5; row 9753/1; image-read at 2400 px)**
+
+{time: 3.30 PM} [4] for [Maj. Gen. Lew Wallace (Baltimore)] The [1] [Maryland] veteran [Volunteer] [Cavalry] & [Battery] D [1] ditto [Light] [Artillery] will be sent to [Washington] to [Report] to [General] Augur [.] as the [Force] in your [Department] is much week ended it will be [Necessary] to [Concentrate (-ed, -ing)] it as much as possible by occupying only the more important [Point]'s  {tail: [signed] [General-in-Chief] tell n/u? see B as directed}
+
+Code-word tokens: H 21, C 1.
+
+**E360 | Page 110 | 9770 | mssEC 18 (obj 10074, pointer 9770; printed page 104), 2 July 1864 Washington, to R. R. McCaine for Maj. Gen. Hunter, signed [General-in-Chief, M]: General Grant says that such of your forces as are not required to hold the Kanawha Valley should be brought back to the line of the Baltimore and Ohio Railroad so that by operating from that base they can prevent any raid into Maryland; he says that Ewell's corps has returned to his front but he hears nothing of Breckinridge; are you all ready (M); printed OR I/37 pt 2 pp.8-9 (Halleck to Hunter, 2 July 1864; the page head 9 falls inside the item) (MS18-R5; row 9770/1; image-read at 2400 px)**
+
+[Maj. Gen. David Hunter] [.] [Maj Genl U.S. Grant] says that such of your [Force]'s as are not required to hold the [Kanawha] [Valley] should be brought back tooth line [Of the] Harlem so that by opera rating from that base they can prevent any raid into [Maryland] [.] He says that [Ewell]'s [Corps] has returned to his [Front] but he hears nothing of [Breckenridge]  {tail: [signed] [General-in-Chief] are you all oak}
+
+Code-word tokens: H 14, C 1.
+
+Totals over the 302 entries: H 5256, C 65, I 25, M 36, S 17, U 10.
 <!-- decode.py: derived block ends -->
