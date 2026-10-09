@@ -1,65 +1,158 @@
 sid	question
-L01_01_004	L01:4: A read s, B read -: which sign?
-L01_01_006	L01:7: A read dd, B read d: which sign?
-L01_01_009	L01:9: A read g, B read -: which sign?
-L01_01_013	L01:13: A read z, B read 2: which sign? (box holds two signs: cut it first)
-L01_01_015	L01:15: A read dd, B read d: which sign?
-L01_01_022	L01:21: A read n, B read -: which sign?
-L02_01_015	L02:14: A read -, B read y~: which sign? (box holds two signs: cut it first)
-L02_01_019	L02:20: A read -, B read l: which sign? (box holds two signs: cut it first)
-L03_01_016	L03:11: A read s, B read 5: which sign? (box holds two signs: cut it first)
-L03_01_021	L03:17: A read s, B read S: which sign?
-L03_01_043	L03:40: A read n, B read u: which sign? (box holds two signs: cut it first)
-L04_01_007	L04:5: A read s, B read S: which sign?
-L04_01_013	L04:11: A read s, B read l: which sign?
-L04_01_016	L04:14: A read G, B read g: which sign?
-L04_01_030	L04:29: A read s, B read S: which sign?
-L04_01_032	L04:31: A read d, B read -: which sign?
-L04_01_037	L04:35: A read n, B read u: which sign?
-L05_01_039	L05:30: A read yx, B read y: which sign?
-L06_01_006	L06:3: A read yx, B read y: which sign? (box holds two signs: cut it first)
-L06_01_034	L06:25: A read d, B read dd: which sign?
-L06_01_039	L06:32: A read G, B read g: which sign?
-L08_01_037	L08:28: A read -, B read k~: which sign?
-L08_01_043	L08:37: A read g, B read 9: which sign?
-L09_01_004	L09:4: A read d, B read dd: which sign?
-L09_01_020	L09:19: A read g, B read e: which sign?
-L09_01_024	L09:25: A read y, B read -: which sign? (box holds two signs: cut it first)
-L09_01_034	L09:34: A read y, B read yx: which sign?
-L10_01_001	L10:1: A read sz, B read S: which sign?
-L10_01_007	L10:5: A read G, B read g: which sign?
-L10_01_010	L10:7: A read s, B read S: which sign?
-L10_01_025	L10:20: A read y, B read yx: which sign? (box holds two signs: cut it first)
-L11_01_005	L11:6: A read y, B read yx: which sign? (box holds two signs: cut it first)
-L11_01_006	L11:7: A read s, B read S: which sign? (box holds two signs: cut it first)
-L11_01_015	L11:19: A read -, B read d: which sign? (box holds two signs: cut it first)
-L11_01_031	L11:35: A read s, B read S: which sign?
-L13_01_007	L13:7: A read o2, B read o: which sign? (box holds two signs: cut it first)
-L13_01_023	L13:20: A read d, B read dd: which sign?
-L13_01_024	L13:23: A read 5, B read s: which sign? (box holds two signs: cut it first)
-L14_01_003	L14:2: A read yx, B read y: which sign?
-L14_01_009	L14:8: A read d, B read dd: which sign? (box holds two signs: cut it first)
-L14_01_024	L14:24: A read d, B read dd: which sign?
-L14_01_037	L14:33: A read yx, B read y: which sign?
-L15_01_023	L15:19: A read -, B read q: which sign?
-L16_01_022	L16:21: A read g, B read q: which sign?
-L16_01_024	L16:25: A read yx, B read y: which sign? (box holds two signs: cut it first)
-L17_01_002	L17:2: A read g, B read q: which sign?
-L17_01_008	L17:9: A read yx, B read y: which sign?
-L17_01_011	L17:13: A read d, B read dd: which sign? (box holds two signs: cut it first)
-L17_01_012	L17:15: A read g, B read q: which sign? (box holds two signs: cut it first)
-L17_01_022	L17:26: A read -, B read r: which sign? (box holds two signs: cut it first)
-L18_01_001	L18:1: A read g, B read q: which sign?
-L18_01_002	L18:3: A read yx, B read f: which sign?
-L18_01_006	L18:8: A read d, B read dd: which sign?
-L18_01_028	L18:35: A read d, B read dd: which sign?
-L19_01_006	L19:5: A read -, B read q: which sign?
-L19_01_007	L19:6: A read g, B read y: which sign?
-L19_01_009	L19:9: A read d, B read dd: which sign?
-L19_01_011	L19:12: A read g, B read G: which sign? (box holds two signs: cut it first)
-L19_01_012	L19:15: A read d, B read a: which sign? (box holds two signs: cut it first)
-L20_01_004	L20:6: A read s, B read S: which sign?
-L21_01_003	L21:3: A read yx, B read y: which sign?
-L21_01_009	L21:10: A read d, B read dd: which sign? (box holds two signs: cut it first)
-L21_01_022	L21:23: A read d, B read dd: which sign? (box holds two signs: cut it first)
-L21_01_025	L21:26: A read g, B read 9: which sign?
+L01_01_004	L01_01_004 (BERGH-ALL1, strip L01_h1 box 4): A read S s?, B read s: which sign, and does it belong with its neighbours?
+L01_01_006	L01_01_006 (BERGH-ALL1, strip L01_h1 box 6): A read d, B read dd?: which sign, and does it belong with its neighbours?
+L01_01_008	L01_01_008 (BERGH-ALL1, strip L01_h1 box 7): A read S?, B read g (with boxes 7+9+10): which sign, and does it belong with its neighbours?
+L01_01_009	L01_01_009 (BERGH-ALL1, strip L01_h1 box 9): A read g (with boxes 9+10), B read g (with boxes 7+9+10): which sign, and does it belong with its neighbours?
+L01_01_010	L01_01_010 (BERGH-ALL1, strip L01_h1 box 10): A read g (with boxes 9+10), B read g (with boxes 7+9+10): which sign, and does it belong with its neighbours?
+L01_01_020	L01_01_020 (BERGH-ALL1, strip L01_h1 box 20): A read b m (with boxes 20+21), B read b: which sign, and does it belong with its neighbours?
+L01_01_021	L01_01_021 (BERGH-ALL1, strip L01_h1 box 21): A read b m (with boxes 20+21), B read m: which sign, and does it belong with its neighbours?
+L01_01_030	L01_01_030 (BERGH-ALL1, strip L01_h2 box 4): A read y (with boxes 4+6), B read y (with boxes 4+6+7): which sign, and does it belong with its neighbours?
+L01_01_032	L01_01_032 (BERGH-ALL1, strip L01_h2 box 6): A read y (with boxes 4+6), B read y (with boxes 4+6+7): which sign, and does it belong with its neighbours?
+L01_01_033	L01_01_033 (BERGH-ALL1, strip L01_h2 box 7): A read g (with boxes 7+8), B read y (with boxes 4+6+7): which sign, and does it belong with its neighbours?
+L01_01_034	L01_01_034 (BERGH-ALL1, strip L01_h2 box 8): A read g (with boxes 7+8), B read g?: which sign, and does it belong with its neighbours?
+L01_01_044	L01_01_044 (BERGH-ALL1, strip L01_h2 box 18): A read 2, B read z?: which sign, and does it belong with its neighbours?
+L01_01_048	L01_01_048 (BERGH-ALL1, strip L01_h2 box 22): A read g (with boxes 22+24), B read g (with boxes 22+23+24): which sign, and does it belong with its neighbours?
+L01_01_049	L01_01_049 (BERGH-ALL1, strip L01_h2 box 24): A read g (with boxes 22+24), B read g (with boxes 22+23+24): which sign, and does it belong with its neighbours?
+L01_01_050	L01_01_050 (BERGH-ALL1, strip L01_h2 box 23): A read FRAG, B read g (with boxes 22+23+24): which sign, and does it belong with its neighbours?
+L02_01_003	L02_01_003 (BERGH-ALL1, strip L02_h1 box 3): A read t 9?, B read t g?: which sign, and does it belong with its neighbours?
+L02_01_005	L02_01_005 (BERGH-ALL1, strip L02_h1 box 5): A read 9, B read g?: which sign, and does it belong with its neighbours?
+L02_01_021	L02_01_021 (BERGH-ALL1, strip L02_h1 box 21): A read s, B read s S: which sign, and does it belong with its neighbours?
+L02_01_022	L02_01_022 (BERGH-ALL1, strip L02_h2 box 1): A read dd, B read dd (with boxes 1+2): which sign, and does it belong with its neighbours?
+L02_01_023	L02_01_023 (BERGH-ALL1, strip L02_h2 box 2): A read o2 (with boxes 2+3), B read dd (with boxes 1+2): which sign, and does it belong with its neighbours?
+L02_01_024	L02_01_024 (BERGH-ALL1, strip L02_h2 box 3): A read o2 (with boxes 2+3), B read o2: which sign, and does it belong with its neighbours?
+L02_01_037	L02_01_037 (BERGH-ALL1, strip L02_h2 box 16): A read 5, B read h?: which sign, and does it belong with its neighbours?
+L02_01_040	L02_01_040 (BERGH-ALL1, strip L02_h2 box 19): A read s t, B read s f: which sign, and does it belong with its neighbours?
+L03_01_001	L03_01_001 (BERGH-ALL1, strip L03_h1 box 1): A read m (with boxes 1+2), B read m: which sign, and does it belong with its neighbours?
+L03_01_002	L03_01_002 (BERGH-ALL1, strip L03_h1 box 2): A read m (with boxes 1+2), B read FRAG: which sign, and does it belong with its neighbours?
+L03_01_004	L03_01_004 (BERGH-ALL1, strip L03_h1 box 4): A read p (with boxes 4+5), B read p: which sign, and does it belong with its neighbours?
+L03_01_005	L03_01_005 (BERGH-ALL1, strip L03_h1 box 5): A read p (with boxes 4+5), B read g? (with boxes 5+6): which sign, and does it belong with its neighbours?
+L03_01_006	L03_01_006 (BERGH-ALL1, strip L03_h1 box 6): A read g, B read g? (with boxes 5+6): which sign, and does it belong with its neighbours?
+L03_01_016	L03_01_016 (BERGH-ALL1, strip L03_h1 box 16): A read 9 9, B read 9: which sign, and does it belong with its neighbours?
+L03_01_028	L03_01_028 (BERGH-ALL1, strip L03_h2 box 4): A read S, B read dd?: which sign, and does it belong with its neighbours?
+L03_01_038	L03_01_038 (BERGH-ALL1, strip L03_h2 box 14): A read 3, B read 3 (with boxes 14+15): which sign, and does it belong with its neighbours?
+L03_01_039	L03_01_039 (BERGH-ALL1, strip L03_h2 box 15): A read FRAG, B read 3 (with boxes 14+15): which sign, and does it belong with its neighbours?
+L03_01_041	L03_01_041 (BERGH-ALL1, strip L03_h2 box 17): A read o2 s, B read o s: which sign, and does it belong with its neighbours?
+L04_01_025	L04_01_025 (BERGH-ALL1, strip L04_h2 box 2): A read b o2 g, B read b o g: which sign, and does it belong with its neighbours?
+L04_01_029	L04_01_029 (BERGH-ALL1, strip L04_h2 box 6): A read S?, B read OTHERLINE: which sign, and does it belong with its neighbours?
+L04_01_032	L04_01_032 (BERGH-ALL1, strip L04_h2 box 9): A read d, B read d l?: which sign, and does it belong with its neighbours?
+L04_01_033	L04_01_033 (BERGH-ALL1, strip L04_h2 box 10): A read l, B read dd s (with boxes 10+11+12): which sign, and does it belong with its neighbours?
+L04_01_034	L04_01_034 (BERGH-ALL1, strip L04_h2 box 11): A read dd s (with boxes 11+12), B read dd s (with boxes 10+11+12): which sign, and does it belong with its neighbours?
+L04_01_035	L04_01_035 (BERGH-ALL1, strip L04_h2 box 12): A read dd s (with boxes 11+12), B read dd s (with boxes 10+11+12): which sign, and does it belong with its neighbours?
+L05_01_002	L05_01_002 (BERGH-ALL1, strip L05_h1 box 2): A read o2 s g, B read o s g?: which sign, and does it belong with its neighbours?
+L05_01_003	L05_01_003 (BERGH-ALL1, strip L05_h1 box 3): A read g (with boxes 3+5), B read s: which sign, and does it belong with its neighbours?
+L05_01_004	L05_01_004 (BERGH-ALL1, strip L05_h1 box 4): A read s, B read OTHERLINE: which sign, and does it belong with its neighbours?
+L05_01_005	L05_01_005 (BERGH-ALL1, strip L05_h1 box 5): A read g (with boxes 3+5), B read g: which sign, and does it belong with its neighbours?
+L05_01_011	L05_01_011 (BERGH-ALL1, strip L05_h1 box 11): A read G?, B read OTHERLINE: which sign, and does it belong with its neighbours?
+L05_01_017	L05_01_017 (BERGH-ALL1, strip L05_h1 box 17): A read g (with boxes 17+19), B read FRAG: which sign, and does it belong with its neighbours?
+L05_01_019	L05_01_019 (BERGH-ALL1, strip L05_h1 box 19): A read g (with boxes 17+19), B read g: which sign, and does it belong with its neighbours?
+L05_01_027	L05_01_027 (BERGH-ALL1, strip L05_h2 box 4): A read o2 s, B read o s: which sign, and does it belong with its neighbours?
+L05_01_036	L05_01_036 (BERGH-ALL1, strip L05_h2 box 13): A read l (with boxes 13+14), B read FRAG: which sign, and does it belong with its neighbours?
+L05_01_037	L05_01_037 (BERGH-ALL1, strip L05_h2 box 14): A read l (with boxes 13+14), B read FRAG: which sign, and does it belong with its neighbours?
+L06_01_003	L06_01_003 (BERGH-ALL1, strip L06_h1 box 2): A read i, B read l?: which sign, and does it belong with its neighbours?
+L06_01_010	L06_01_010 (BERGH-ALL1, strip L06_h1 box 10): A read g (with boxes 10+11), B read OTHERLINE: which sign, and does it belong with its neighbours?
+L06_01_011	L06_01_011 (BERGH-ALL1, strip L06_h1 box 11): A read g (with boxes 10+11), B read g: which sign, and does it belong with its neighbours?
+L06_01_013	L06_01_013 (BERGH-ALL1, strip L06_h1 box 13): A read dd, B read dd (with boxes 13+14): which sign, and does it belong with its neighbours?
+L06_01_014	L06_01_014 (BERGH-ALL1, strip L06_h1 box 14): A read l?, B read dd (with boxes 13+14): which sign, and does it belong with its neighbours?
+L06_01_023	L06_01_023 (BERGH-ALL1, strip L06_h1 box 23): A read G?, B read e?: which sign, and does it belong with its neighbours?
+L07_01_008	L07_01_008 (BERGH-ALL1, strip L07_h1 box 8): A read 9?, B read 3?: which sign, and does it belong with its neighbours?
+L07_01_012	L07_01_012 (BERGH-ALL1, strip L07_h1 box 12): A read FRAG, B read p?: which sign, and does it belong with its neighbours?
+L07_01_015	L07_01_015 (BERGH-ALL1, strip L07_h1 box 16): A read g (with boxes 16+17), B read OTHERLINE: which sign, and does it belong with its neighbours?
+L07_01_017	L07_01_017 (BERGH-ALL1, strip L07_h1 box 17): A read g (with boxes 16+17), B read g: which sign, and does it belong with its neighbours?
+L07_01_023	L07_01_023 (BERGH-ALL1, strip L07_h1 box 23): A read yx? (with boxes 23+24), B read y (with boxes 23+24): which sign, and does it belong with its neighbours?
+L07_01_024	L07_01_024 (BERGH-ALL1, strip L07_h1 box 24): A read yx? (with boxes 23+24), B read y (with boxes 23+24): which sign, and does it belong with its neighbours?
+L07_01_025	L07_01_025 (BERGH-ALL1, strip L07_h1 box 25): A read 3 g?, B read 3: which sign, and does it belong with its neighbours?
+L07_01_041	L07_01_041 (BERGH-ALL1, strip L07_h2 box 14): A read dd, B read dd u (with boxes 14+15): which sign, and does it belong with its neighbours?
+L07_01_042	L07_01_042 (BERGH-ALL1, strip L07_h2 box 15): A read u, B read dd u (with boxes 14+15): which sign, and does it belong with its neighbours?
+L08_01_001	L08_01_001 (BERGH-ALL1, strip L08_h1 box 1): A read S (with boxes 1+2), B read FRAG: which sign, and does it belong with its neighbours?
+L08_01_002	L08_01_002 (BERGH-ALL1, strip L08_h1 box 2): A read S (with boxes 1+2), B read S: which sign, and does it belong with its neighbours?
+L08_01_023	L08_01_023 (BERGH-ALL1, strip L08_h1 box 22): A read A (with boxes 22+24), B read FRAG: which sign, and does it belong with its neighbours?
+L08_01_024	L08_01_024 (BERGH-ALL1, strip L08_h1 box 24): A read A (with boxes 22+24), B read A: which sign, and does it belong with its neighbours?
+L08_01_036	L08_01_036 (BERGH-ALL1, strip L08_h2 box 9): A read dd, B read dd (with boxes 9+10): which sign, and does it belong with its neighbours?
+L08_01_037	L08_01_037 (BERGH-ALL1, strip L08_h2 box 10): A read FRAG, B read dd (with boxes 9+10): which sign, and does it belong with its neighbours?
+L09_01_021	L09_01_021 (BERGH-ALL1, strip L09_h2 box 1): A read yx, B read y: which sign, and does it belong with its neighbours?
+L09_01_022	L09_01_022 (BERGH-ALL1, strip L09_h2 box 2): A read X, B read x: which sign, and does it belong with its neighbours?
+L09_01_029	L09_01_029 (BERGH-ALL1, strip L09_h2 box 9): A read yx, B read y: which sign, and does it belong with its neighbours?
+L09_01_037	L09_01_037 (BERGH-ALL1, strip L09_h2 box 17): A read OTHERLINE, B read b?: which sign, and does it belong with its neighbours?
+L10_01_006	L10_01_006 (BERGH-ALL1, strip L10_h1 box 6): A read dd, B read d: which sign, and does it belong with its neighbours?
+L10_01_011	L10_01_011 (BERGH-ALL1, strip L10_h1 box 11): A read q?, B read g: which sign, and does it belong with its neighbours?
+L10_01_013	L10_01_013 (BERGH-ALL1, strip L10_h1 box 13): A read h?, B read b: which sign, and does it belong with its neighbours?
+L11_01_003	L11_01_003 (BERGH-ALL2, strip L11_h1 box 3): A read s, B read 5?: which sign, and does it belong with its neighbours?
+L11_01_024	L11_01_024 (BERGH-ALL2, strip L11_h2 box 9): A read FRAG, B read g?: which sign, and does it belong with its neighbours?
+L12_01_007	L12_01_007 (BERGH-ALL2, strip L12_h1 box 7): A read q?, B read g?: which sign, and does it belong with its neighbours?
+L12_01_013	L12_01_013 (BERGH-ALL2, strip L12_h1 box 13): A read FRAG?, B read q?: which sign, and does it belong with its neighbours?
+L12_01_019	L12_01_019 (BERGH-ALL2, strip L12_h1 box 19): A read FRAG, B read g (with boxes 19+21): which sign, and does it belong with its neighbours?
+L12_01_021	L12_01_021 (BERGH-ALL2, strip L12_h1 box 21): A read g, B read g (with boxes 19+21): which sign, and does it belong with its neighbours?
+L12_01_031	L12_01_031 (BERGH-ALL2, strip L12_h2 box 6): A read B, B read sz: which sign, and does it belong with its neighbours?
+L12_01_036	L12_01_036 (BERGH-ALL2, strip L12_h2 box 11): A read OTHERLINE, B read g (with boxes 11+12+13): which sign, and does it belong with its neighbours?
+L12_01_037	L12_01_037 (BERGH-ALL2, strip L12_h2 box 12): A read OTHERLINE, B read g (with boxes 11+12+13): which sign, and does it belong with its neighbours?
+L12_01_038	L12_01_038 (BERGH-ALL2, strip L12_h2 box 13): A read g?, B read g (with boxes 11+12+13): which sign, and does it belong with its neighbours?
+L12_01_042	L12_01_042 (BERGH-ALL2, strip L12_h2 box 17): A read OTHERLINE, B read g?: which sign, and does it belong with its neighbours?
+L12_01_044	L12_01_044 (BERGH-ALL2, strip L12_h2 box 19): A read r f, B read r: which sign, and does it belong with its neighbours?
+L12_01_045	L12_01_045 (BERGH-ALL2, strip L12_h2 box 20): A read 2, B read z: which sign, and does it belong with its neighbours?
+L12_01_046	L12_01_046 (BERGH-ALL2, strip L12_h2 box 21): A read OTHERLINE, B read g (with boxes 21+22+23): which sign, and does it belong with its neighbours?
+L12_01_047	L12_01_047 (BERGH-ALL2, strip L12_h2 box 23): A read g, B read g (with boxes 21+22+23): which sign, and does it belong with its neighbours?
+L12_01_048	L12_01_048 (BERGH-ALL2, strip L12_h2 box 22): A read OTHERLINE, B read g (with boxes 21+22+23): which sign, and does it belong with its neighbours?
+L13_01_001	L13_01_001 (BERGH-ALL2, strip L13_h1 box 1): A read f?, B read S?: which sign, and does it belong with its neighbours?
+L13_01_010	L13_01_010 (BERGH-ALL2, strip L13_h1 box 10): A read OTHERLINE, B read OTHERLINE (with boxes 10+12): which sign, and does it belong with its neighbours?
+L13_01_012	L13_01_012 (BERGH-ALL2, strip L13_h1 box 12): A read OTHERLINE, B read OTHERLINE (with boxes 10+12): which sign, and does it belong with its neighbours?
+L13_01_018	L13_01_018 (BERGH-ALL2, strip L13_h1 box 18): A read q?, B read g?: which sign, and does it belong with its neighbours?
+L13_01_022	L13_01_022 (BERGH-ALL2, strip L13_h1 box 22): A read o, B read dd yx? (with boxes 22+23): which sign, and does it belong with its neighbours?
+L13_01_023	L13_01_023 (BERGH-ALL2, strip L13_h1 box 23): A read yx, B read dd yx? (with boxes 22+23): which sign, and does it belong with its neighbours?
+L13_01_027	L13_01_027 (BERGH-ALL2, strip L13_h2 box 4): A read FRAG, B read S (with boxes 4+5): which sign, and does it belong with its neighbours?
+L13_01_028	L13_01_028 (BERGH-ALL2, strip L13_h2 box 5): A read OTHERLINE, B read S (with boxes 4+5): which sign, and does it belong with its neighbours?
+L13_01_031	L13_01_031 (BERGH-ALL2, strip L13_h2 box 8): A read G, B read g?: which sign, and does it belong with its neighbours?
+L14_01_002	L14_01_002 (BERGH-ALL2, strip L14_h1 box 2): A read E? (with boxes 2+3+4), B read E (with boxes 2+3): which sign, and does it belong with its neighbours?
+L14_01_003	L14_01_003 (BERGH-ALL2, strip L14_h1 box 3): A read E? (with boxes 2+3+4), B read E (with boxes 2+3): which sign, and does it belong with its neighbours?
+L14_01_004	L14_01_004 (BERGH-ALL2, strip L14_h1 box 4): A read E? (with boxes 2+3+4), B read FRAG: which sign, and does it belong with its neighbours?
+L14_01_006	L14_01_006 (BERGH-ALL2, strip L14_h1 box 6): A read q? (with boxes 6+7), B read g (with boxes 6+7): which sign, and does it belong with its neighbours?
+L14_01_007	L14_01_007 (BERGH-ALL2, strip L14_h1 box 7): A read q? (with boxes 6+7), B read g (with boxes 6+7): which sign, and does it belong with its neighbours?
+L15_01_005	L15_01_005 (BERGH-ALL2, strip L15_h1 box 5): A read e, B read FRAG: which sign, and does it belong with its neighbours?
+L15_01_006	L15_01_006 (BERGH-ALL2, strip L15_h1 box 6): A read sz?, B read e: which sign, and does it belong with its neighbours?
+L15_01_021	L15_01_021 (BERGH-ALL2, strip L15_h1 box 21): A read q, B read 9?: which sign, and does it belong with its neighbours?
+L15_01_026	L15_01_026 (BERGH-ALL2, strip L15_h2 box 4): A read n, B read u: which sign, and does it belong with its neighbours?
+L15_01_037	L15_01_037 (BERGH-ALL2, strip L15_h2 box 15): A read G?, B read g: which sign, and does it belong with its neighbours?
+L16_01_006	L16_01_006 (BERGH-ALL2, strip L16_h1 box 6): A read q? (with boxes 6+8), B read g? (with boxes 6+8): which sign, and does it belong with its neighbours?
+L16_01_008	L16_01_008 (BERGH-ALL2, strip L16_h1 box 8): A read q? (with boxes 6+8), B read g? (with boxes 6+8): which sign, and does it belong with its neighbours?
+L16_01_017	L16_01_017 (BERGH-ALL2, strip L16_h1 box 18): A read q, B read 9: which sign, and does it belong with its neighbours?
+L16_01_019	L16_01_019 (BERGH-ALL2, strip L16_h1 box 19): A read q g?, B read 9 g?: which sign, and does it belong with its neighbours?
+L16_01_029	L16_01_029 (BERGH-ALL2, strip L16_h2 box 9): A read dd, B read d: which sign, and does it belong with its neighbours?
+L16_01_031	L16_01_031 (BERGH-ALL2, strip L16_h2 box 11): A read dd u G, B read dd? u g: which sign, and does it belong with its neighbours?
+L17_01_002	L17_01_002 (BERGH-ALL2, strip L17_h1 box 2): A read 9?, B read g?: which sign, and does it belong with its neighbours?
+L17_01_005	L17_01_005 (BERGH-ALL2, strip L17_h1 box 5): A read 9?, B read g: which sign, and does it belong with its neighbours?
+L17_01_007	L17_01_007 (BERGH-ALL2, strip L17_h1 box 7): A read m?, B read m u: which sign, and does it belong with its neighbours?
+L17_01_012	L17_01_012 (BERGH-ALL2, strip L17_h1 box 12): A read S s, B read dd s: which sign, and does it belong with its neighbours?
+L17_01_013	L17_01_013 (BERGH-ALL2, strip L17_h1 box 13): A read m? (with boxes 13+14), B read m: which sign, and does it belong with its neighbours?
+L17_01_014	L17_01_014 (BERGH-ALL2, strip L17_h1 box 14): A read m? (with boxes 13+14), B read u?: which sign, and does it belong with its neighbours?
+L19_01_011	L19_01_011 (BERGH-ALL2, strip L19_h1 box 11): A read p G?, B read p g?: which sign, and does it belong with its neighbours?
+L19_01_012	L19_01_012 (BERGH-ALL2, strip L19_h1 box 12): A read m (with boxes 12+13), B read m: which sign, and does it belong with its neighbours?
+L19_01_014	L19_01_014 (BERGH-ALL2, strip L19_h1 box 13): A read m (with boxes 12+13), B read FRAG: which sign, and does it belong with its neighbours?
+L19_01_019	L19_01_019 (BERGH-ALL2, strip L19_h2 box 2): A read u c?, B read c: which sign, and does it belong with its neighbours?
+L19_01_023	L19_01_023 (BERGH-ALL2, strip L19_h2 box 6): A read s 9?, B read s g: which sign, and does it belong with its neighbours?
+L19_01_029	L19_01_029 (BERGH-ALL2, strip L19_h2 box 12): A read q? n?, B read g n?: which sign, and does it belong with its neighbours?
+L19_01_030	L19_01_030 (BERGH-ALL2, strip L19_h2 box 13): A read u? (with boxes 13+14), B read n? (with boxes 13+14): which sign, and does it belong with its neighbours?
+L19_01_031	L19_01_031 (BERGH-ALL2, strip L19_h2 box 14): A read u? (with boxes 13+14), B read n? (with boxes 13+14): which sign, and does it belong with its neighbours?
+L19_01_033	L19_01_033 (BERGH-ALL2, strip L19_h2 box 16): A read h g, B read b g: which sign, and does it belong with its neighbours?
+L20_01_008	L20_01_008 (BERGH-ALL2, strip L20_h1 box 9): A read OTHERLINE, B read OTHERLINE (with boxes 8+9): which sign, and does it belong with its neighbours?
+L20_01_009	L20_01_009 (BERGH-ALL2, strip L20_h1 box 8): A read OTHERLINE, B read OTHERLINE (with boxes 8+9): which sign, and does it belong with its neighbours?
+L20_01_015	L20_01_015 (BERGH-ALL2, strip L20_h1 box 15): A read o, B read o2: which sign, and does it belong with its neighbours?
+L20_01_022	L20_01_022 (BERGH-ALL2, strip L20_h2 box 1): A read 9?, B read g?: which sign, and does it belong with its neighbours?
+L20_01_023	L20_01_023 (BERGH-ALL2, strip L20_h2 box 2): A read 9?, B read g: which sign, and does it belong with its neighbours?
+L20_01_029	L20_01_029 (BERGH-ALL2, strip L20_h2 box 8): A read 9?, B read g: which sign, and does it belong with its neighbours?
+L20_01_038	L20_01_038 (BERGH-ALL2, strip L20_h2 box 17): A read g?, B read 9: which sign, and does it belong with its neighbours?
+L21_01_008	L21_01_008 (BERGH-ALL2, strip L21_h1 box 8): A read 9?, B read g?: which sign, and does it belong with its neighbours?
+L22_01_015	L22_01_015 (BERGH-ALL2, strip L22_h1 box 15): A read dd yx (with boxes 15+16), B read dd?: which sign, and does it belong with its neighbours?
+L22_01_016	L22_01_016 (BERGH-ALL2, strip L22_h1 box 16): A read dd yx (with boxes 15+16), B read yx?: which sign, and does it belong with its neighbours?
+L22_01_017	L22_01_017: both passes NEW1, a digit 1 with an overbar (not on tx/signlist.md): which sign?
+L22_01_020	L22_01_020 (BERGH-ALL2, strip L22_h1 box 20): A read r, B read e?: which sign, and does it belong with its neighbours?
+L22_01_022	L22_01_022 (BERGH-ALL2, strip L22_h2 box 1): A read m? (with boxes 1+2+3+4), B read OTHERLINE (with boxes 1+2+3+4+5+6+7+8): which sign, and does it belong with its neighbours?
+L22_01_023	L22_01_023 (BERGH-ALL2, strip L22_h2 box 2): A read m? (with boxes 1+2+3+4), B read OTHERLINE (with boxes 1+2+3+4+5+6+7+8): which sign, and does it belong with its neighbours?
+L22_01_024	L22_01_024 (BERGH-ALL2, strip L22_h2 box 3): A read m? (with boxes 1+2+3+4), B read OTHERLINE (with boxes 1+2+3+4+5+6+7+8): which sign, and does it belong with its neighbours?
+L22_01_025	L22_01_025 (BERGH-ALL2, strip L22_h2 box 4): A read m? (with boxes 1+2+3+4), B read OTHERLINE (with boxes 1+2+3+4+5+6+7+8): which sign, and does it belong with its neighbours?
+L22_01_026	L22_01_026 (BERGH-ALL2, strip L22_h2 box 5): A read b, B read OTHERLINE (with boxes 1+2+3+4+5+6+7+8): which sign, and does it belong with its neighbours?
+L22_01_027	L22_01_027 (BERGH-ALL2, strip L22_h2 box 6): A read r, B read OTHERLINE (with boxes 1+2+3+4+5+6+7+8): which sign, and does it belong with its neighbours?
+L22_01_028	L22_01_028 (BERGH-ALL2, strip L22_h2 box 7): A read i?, B read OTHERLINE (with boxes 1+2+3+4+5+6+7+8): which sign, and does it belong with its neighbours?
+L22_01_029	L22_01_029 (BERGH-ALL2, strip L22_h2 box 9): A read OTHERLINE, B read yx?: which sign, and does it belong with its neighbours?
+L22_01_030	L22_01_030 (BERGH-ALL2, strip L22_h2 box 8): A read s, B read OTHERLINE (with boxes 1+2+3+4+5+6+7+8): which sign, and does it belong with its neighbours?
+L22_01_031	L22_01_031 (BERGH-ALL2, strip L22_h2 box 10): A read OTHERLINE, B read g (with boxes 10+11): which sign, and does it belong with its neighbours?
+L22_01_032	L22_01_032 (BERGH-ALL2, strip L22_h2 box 11): A read OTHERLINE, B read g (with boxes 10+11): which sign, and does it belong with its neighbours?
+L22_01_033	L22_01_033 (BERGH-ALL2, strip L22_h2 box 12): A read OTHERLINE, B read yx?: which sign, and does it belong with its neighbours?

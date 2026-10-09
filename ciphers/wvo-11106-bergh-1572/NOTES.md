@@ -68,7 +68,7 @@ exit=0
 ## Remaining gaps
 
 Read so far: 0 of 820 cipher signs read (transcription done by FAM-11106T, 8 Oct 2026: K=41 provisional, err_2reader 0.10, err_true not measurable).
-- Whole letter, inventory - blocker: not-attempted; 71 look-alike positions (d/dd, y/yx, s/S, g/G/q/9, z/2, s/5, n/u) in tx/focus.tsv; glyph atlas built (GLY-11106: atlas/, 875 boxes); alignment labels 5/19, box-numbered strip reads (BERGH-STRIP) 16/19 FAIL, sign-group reads on a de-stacked layout (BERGH-GRP, 9 Oct 2026) **18/19 PASS** against the pre-registered 17 (A/B 0.811), atlas/group_sign.tsv for the 19 gate windows (285 boxes) and, BERGH-ALL1 (9 Oct 2026), whole lines L01-L10 (432 boxes, A/B 0.822, `atlas/strips_grp.py --line`), and BERGH-ALL2 (9 Oct 2026), lines L11-L22 (443 boxes, A/B 0.822), so all 875 boxes now have two group reads (158 split boxes); sorter page not built; next: sorter/build_inputs.py from the agreed group labels, with the split boxes as the focus, then the owner's sorter, ~$8
+- Whole letter, inventory - blocker: not-attempted; 71 look-alike positions (d/dd, y/yx, s/S, g/G/q/9, z/2, s/5, n/u) in tx/focus.tsv; glyph atlas built (GLY-11106: atlas/, 875 boxes); alignment labels 5/19, box-numbered strip reads (BERGH-STRIP) 16/19 FAIL, sign-group reads on a de-stacked layout (BERGH-GRP, 9 Oct 2026) **18/19 PASS** against the pre-registered 17 (A/B 0.811), atlas/group_sign.tsv for the 19 gate windows (285 boxes) and, BERGH-ALL1 (9 Oct 2026), whole lines L01-L10 (432 boxes, A/B 0.822, `atlas/strips_grp.py --line`), and BERGH-ALL2 (9 Oct 2026), lines L11-L22 (443 boxes, A/B 0.822), so all 875 boxes now have two group reads (156 split boxes: 77 + 79); sorter page built from the agreed group labels (BERGH-SORT, 9 Oct 2026: 830 tiles, 84 piles, 157 focus questions, sorter_preflight PASS, contact sheet 13/13 labelled tiles plausible by eye), not yet published; next: publication by the account-3 orchestrator (ROOM flag 'BERGH sorter ready for publication'), then the owner's sort and tools/sign_sorter_apply.py, ~$1
 - Whole letter, language - blocker: not-attempted; homophonic K41 now control-backed FAIL in French (fr16, 6-seed control 0.718), German (de1600, 0.777), Latin (la17, 0.611) and Dutch (nl16, 0.681, NL16-11106) and at a merged K38 in French (FAM-11106L); Bergh's six WVO sibling letters 1574-77 are in French (2) and German (4), none Dutch; single-letter homophonic is now negative in all four candidate languages, so the open question is the design, not the language; next: the multi-sign family (below)
 - Whole letter, design - blocker: not-attempted; multi-sign (syllable/code) is the design prior's nearest class, untested; next: `family_run.py --family syllabary` with its control after the inventory is settled, ~$1
 - Year - blocker: not-attempted; the year 1572 is editorial; next: only once something reads, ~$0.3
@@ -80,9 +80,9 @@ Read so far: 0 of 820 cipher signs read (transcription done by FAM-11106T, 8 Oct
 - [x] known-keys: the Nassau keys key_1572.tsv and key_nepveu.tsv were dropped as a design mismatch by KH2-D; no Bergh key on file.
 - [x] print: Groen 1re serie, Gachard III-IV, Kervyn full text, Japikse out of range (FAM-CS11106); Waanders 2022 still unchecked.
 - [ ] key-rebuild: homophonic K41 FAIL with control at gate in fr16, de1600, la17, nl16 (NL16-11106) and merged-K38 fr16 (FAM-11106L); merged-K38 de1600 control below gate (non-test); the syllabary/multi-sign family is untried.
-- [ ] image-check: tx/focus.tsv's 71 look-alike positions: atlas built (GLY-11106); alignment labels 5/19, box-strip reads 16/19 (BERGH-STRIP, FAIL), sign-group reads on a de-stacked layout 18/19 (BERGH-GRP, PASS, 19 gate windows), then lines L01-L10 (BERGH-ALL1, 432 boxes, A/B 0.822) and L11-L22 (BERGH-ALL2, 443 boxes, A/B 0.822): all 875 boxes read; next the sorter rebuild from group labels, then the owner's sorter.
+- [ ] image-check: tx/focus.tsv's 71 look-alike positions: atlas built (GLY-11106); alignment labels 5/19, box-strip reads 16/19 (BERGH-STRIP, FAIL), sign-group reads on a de-stacked layout 18/19 (BERGH-GRP, PASS, 19 gate windows), then lines L01-L10 (BERGH-ALL1, 432 boxes, A/B 0.822) and L11-L22 (BERGH-ALL2, 443 boxes, A/B 0.822): all 875 boxes read; sorter rebuilt from group labels (BERGH-SORT: sorter/bergh_sorter.html, preflight PASS); next publication by the account-3 orchestrator, then the owner's sorter.
 - [ ] retry: the syllabary/multi-sign family after the inventory is settled.
-Verdict: keep going: 4 internal gaps; cheapest next: the sorter rebuild from the group labels (all 875 boxes read by BERGH-GRP/ALL1/ALL2, A/B 0.822 on each half), ~$8, then the syllabary/multi-sign family once the inventory is settled, ~$1
+Verdict: keep going: 4 internal gaps; cheapest next: publish the group-label sorter built by BERGH-SORT (sorter/bergh_sorter.html, account-3 orchestrator) and apply the owner's sort, ~$1, then the syllabary/multi-sign family once the inventory is settled, ~$1
 
 ## While waiting
 
@@ -570,4 +570,59 @@ per agreed group), with the 158 split boxes from BERGH-ALL1 and BERGH-ALL2 (77 +
 
 Calls: 4 Sonnet vision calls (about 1.5 each at the brief's rate) plus 1 short resumed call to the same B reader (the L17_h2 completion,
 which surfaced the swap). This worker's own eye checked 1 strip (layout). Requests: 0 network.
+Report what was found and where it was not found; novelty is not classified here (rule 10).
+
+## BERGH-SORT (9 Oct 2026): sorter inputs rebuilt from atlas/group_sign.tsv (LANE FAMILY-A2f, account 2, 04:19-04:3x UTC by `date -u`)
+
+Brief `.claude/briefs/runs/2026-10-09-ytbiz-family-0409-jobs.md` "### BERGH-SORT". Disk only, 0 network requests, no vision subagent call
+(the one look at the preflight sheet was this worker's own).
+
+Prior work: `tools/prior_work.py wvo-11106-bergh-1572 --item-spec 'shelfmark=WVO 11106;date=1572-09-19' --step-type crop --offline` exit 4
+(LEAD 1: this job's own claim; LOOK 1 2-leaf; UNCHECKED 3 tomokiyo/solver/editions; UNCHECKED-NET 1 aaymeloglu clone); each answered with
+`--record` CLEAR from FAM-CS11106's hand checks above; re-run exit 0 ("proceed on the residue: whole item"). (`--fetch` not used: the brief is
+disk only.) Check 1 by hand: sorter/ held only GLY-11106's alignment-mode inputs (labels from the DP map the eye check showed wrong); no
+group-label sorter before this job. Shapes only, so check 5 does not apply.
+
+**What changed.** `sorter/build_inputs.py --groups` (the default mode is unchanged) reads the BERGH-ALL1 + BERGH-ALL2 rows of
+atlas/group_sign.tsv (one per atlas box, 875; the 285 BERGH-GRP window rows are not used, they repeat boxes already in the whole-line jobs).
+An agreed group (same strip, same group and labels in both passes) becomes one tile: sorter/signs_grp.tsv holds its union box under a group
+sid (member sids joined by '+', e.g. L01_01_001+002) and sorter/marks_grp.tsv re-keys the members' marks to it. Pile = the agreed label;
+FRAG (incl. FRAG-OTHERLINE) -> 'fragment'; a two-sign label such as "p g" -> pile "p+g", family 'multi'. Each split box is its own tile in
+pile 'split' and a "Check these first" question quoting both passes' labels and groups; the NEW1 box (L22_01_017) is one more question.
+GLY-11106's alignment-mode tx/focus.tsv questions are not carried (their boxes came from the map shown wrong); sorter/focus_unplaced.tsv is
+header-only in this mode.
+
+```
+python3 sorter/build_inputs.py --groups
+875 boxes: 719 agreed in 674 group tiles, 156 split boxes as single tiles; 830 tiles, 84 piles, 157 focus questions (156 split + NEW1)
+
+python3 tools/sign_sorter.py --signs sorter/signs_grp.tsv --labels sorter/labels.tsv --marks sorter/marks_grp.tsv --pages <dir: L01.jpg..L22.jpg
+  -> images/crops/p2_L01..22.jpg> --clusters atlas/clusters.tsv --focus sorter/focus.tsv --cipher-lines sorter/cipher_lines.tsv
+  --title "WVO 11106 p.2 signs (group reads)" --out sorter/bergh_sorter.html
+84 piles, 830 tiles, 0 skipped, 60 clusters (atlas), 0 ranked, 4953 KB
+PASS template: ok, Fix the cut present, marker 2026-10-09.3
+PASS answerable: 157 focus tiles, 84 named piles of 84, 0 unanswerable
+PASS right line: 830 tiles; 0 tile(s) off the cipher lines, 22 of 22 listed lines have tiles; shape: 6 wide (>2.5x median 40 px), 0 strip-height boxes, 12 ink outside 3-60% of 830 measured; 18 = 2.2% (limit 5%)
+PASS contact sheet: 24 tiles beside their line strips (seed 20261006; eye it before publishing)
+PASS colour: tokens, tints, box colours and person-facing text pass tools/cvd_check.py
+preflight: PASS
+```
+(atlas/pages.json's relative paths do not resolve from tools/, so --pages was a scratch folder of symlinks L01.jpg..L22.jpg to
+images/crops/p2_L01..22.jpg; same pixels.)
+
+**Offline count check** (`build_inputs.py --groups` asserts every atlas box sits in one whole-line row and every group's members agree; a
+separate count script, not committed, asserted the rest): group_sign.tsv whole-line rows BERGH-ALL1 355 agreed + 77 split,
+BERGH-ALL2 364 agreed + 79 split = 875 boxes, each in exactly one tile; 830 tiles = 674 group tiles (39 of them span 2-3 boxes) + 156 split
+tiles; labels.tsv and signs_grp.tsv carry the same 830 sids; every focus sid is a tile. The brief and the Remaining-gaps line said "158 split
+boxes (77 + 79)": 77 + 79 = 156; corrected above. Largest piles: split 156, fragment 142, s 67, m 30, g 27, B 25, u 24, r 22, t 21, b 21; 26
+multi-sign piles (s+t 5, s+g 5, d+g 4, o2+s 3, ...).
+
+**Eye check of the contact sheet** (sorter/sorter.preflight.jpg, 24 random tiles, seed 20261006, read by this worker): 13 tiles carry a sign
+label and all 13 look right (E, l, o2, h, g, d, t, d+g, e, B, g, o+s, y); two of the g tiles are the q/9-like g-shape the readers call g,
+the known look-alike family. 7 'fragment' tiles are descender pieces, specks or a sign from the neighbouring line (FRAG-OTHERLINE), as
+labelled; 4 'split' tiles are a real g/9 question, a y, and two small pieces. GLY-11106's alignment-mode sheet had 5/19 right.
+
+**Not done, per the brief:** no publication (ROOM flag for the account-3 orchestrator, which publishes owner sorters), no ASKS row, no
+decoding. The page is committed as sorter/bergh_sorter.html (4.9 MB, folder 20 MB) so the publisher need not rebuild it; it regenerates
+from the two commands above (byte identity not tested).
 Report what was found and where it was not found; novelty is not classified here (rule 10).
