@@ -1,6 +1,6 @@
 # PREREG MQS-SOLVER: homophonic solver settings from the Mary Stuart paper and CTTS, one matched and one mismatched control
 
-Written 9 Oct 2026, 04:05 UTC by date -u, by MQS-SOLVER (LANE MQS, account 4), before any control cell below is run.
+Written 9 Oct 2026, 04:02 UTC by date -u, by MQS-SOLVER (LANE MQS, account 4), before any control cell below is run.
 Brief: `.claude/briefs/runs/2026-10-09-acct3-mqs-solver.md`. Options: commit 0aa8fd5ae (`tools/homophonic_anneal.py`,
 `tools/families/homophonic.py`, offline test `tools/tests/test_homophonic_mqs.py`). Results go to
 `tools/tests/MQS-SOLVER-controls.tsv`, one row per cell (mean, SD, per-seed values, processed share). No target is run.
@@ -84,3 +84,14 @@ and move set): it changes only the search budget. Each option changes the move s
 (cap), the stream scored (min3, unknown, wild, nomen: gaps, deleted neighbours, per-position letters change which
 n-grams exist), or the objective (nc2, nc2paper); each can therefore move accuracy up or down independently of the
 restarts bar, and the marked-sign cells change the n-gram statistic itself, so they can fail differently from --skip.
+
+## Amendment 1 (9 Oct 2026, 04:06 UTC by date -u, after the N-rule baselines and before any option cell)
+
+N-rule result, baseline (defaults, 8 restarts, marked by --skip), seeds 1-3: N=800 0.9640/0.9624/0.9687, mean 0.965
+(SD 0.0033); N=1500 0.9421/0.9460/0.9640, mean 0.951 (SD 0.0117); N=2600 0.9460/0.9508/0.9451, mean 0.947 (SD 0.0031).
+**No N qualifies (all above 85%, and all at or near the 95% ceiling): "no headroom at these N".** Per the rule above, no
+gain claim is made for any option on the matched design. The cells are still run and reported, at N=800 (the cheapest;
+all three N are at ceiling). Grades: every option ships `weak` on this evidence (no gate can pass at ceiling), with
+its numbers. The mismatched design (mis_*) is read against its own gate only if mis_base's mean is between 20% and 85%;
+otherwise it too is "no headroom". The grid of N is not extended in this job (the brief fixes {800, 1500, 2600}); a
+lower-N or harder-design grid is a follow-up suggestion, not done here.
