@@ -55,6 +55,15 @@ earliest `updated` stamp in the db documents). A `keyed` row is never used as BE
 (tools/tx_bench.py and the adjudication scripts must drop it). Must NOT mark `keyed`: a blind page, or a family whose
 nonblind_shown date is after the sort's start, or blank, or no --page and no --key-family given (mode `blind`, as every export was
 before this column existed).
+Icons and CTTS (MQS-CTTS-EXPORT, 9 Oct 2026; research/MARY-STUART-TALK-2026-10-09.tsv M35). --icons DIR (with --signs signs.tsv
+--pages DIR|pages.json) writes one PNG per settled sign, the crop of its first 'kept' tile (else its first tile), and DIR/icons.tsv
+(sign, file, sid, n_tiles). --ctts-out DIR writes the settled transcription as a CTTS working directory (CrypTool Transcriber and
+Solver, G. Lasry / CrypTool project, Apache-2.0; format read from its own save/load code, sources/ctts/2026-10-09/FORMAT.md, no code
+copied): page images, colors.txt, positions/<page>_positions.txt (each with its _SECOND_COPY) and icons/<colour>.png; one symbol
+type per sign, the unsettled tiles under reserved types ~not-letter ~aside ~bad-cut ~taken-out; read_ctts() parses it back.
+Catches: a settled sorter result reaching CTTS with every box and sign intact (round-trip test, PREREG-MQS-CTTS-EXPORT.md).
+Must NOT: give an unsettled tile a sign, write a value CTTS would mis-split (';', newline), a page name CTTS would cut ('.'), or
+more types than CTTS's 431 colours (all refused). Not shown: that CTTS itself opens the folder (owner's desktop only).
 Must NOT be used to write a cluster label the person did not choose: nothing here infers a code from shape."""
 import argparse, csv, glob, json, os, sys
 
@@ -256,6 +265,149 @@ def export_mode(page_mode=None, family=None, sort_start=None, fam_path=None):
     return 'blind'
 
 
+UNSETTLED = ('not-letter', 'aside', 'bad-cut', 'taken-out')
+ICON_COLS = ['sign', 'file', 'sid', 'n_tiles']
+
+
+def page_path(pages, page):
+    """--pages lookup as tools/sign_sorter.py does it: a folder of <page>.png/.jpg or a glyph_atlas pages.json."""
+    if pages.endswith('.json') and os.path.isfile(pages):
+        v = json.load(open(pages)).get(page) or {}
+        p = v.get('image')
+        if not p or v.get('box'):
+            return None
+        p = p if os.path.isabs(p) else os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), p)
+        return p if os.path.exists(p) else None
+    return next((os.path.join(pages, page + e) for e in ('.png', '.jpg', '.jpeg') if os.path.exists(os.path.join(pages, page + e))), None)
+
+
+def icon_exemplars(rows):
+    """sign -> (exemplar sid, tile count) over settled rows: the first 'kept' tile of the sign, else its first tile."""
+    first, kept, n = {}, {}, {}
+    for sid, _old, new, status in rows:
+        if not new or status in UNSETTLED:
+            continue
+        first.setdefault(new, sid); n[new] = n.get(new, 0) + 1
+        if status == 'kept':
+            kept.setdefault(new, sid)
+    return {s: (kept.get(s, first[s]), n[s]) for s in first}
+
+
+def safe_name(sign):
+    return ''.join(c if c.isalnum() or c in '-_' else '_%02x' % ord(c) if ord(c) < 256 else '_u%04x' % ord(c) for c in sign) or '_empty'
+
+
+def write_icons(rows, signs, pages, out_dir):
+    """--icons DIR (MQS-CTTS-EXPORT, 9 Oct 2026; research M35): one PNG per settled sign, the crop of its exemplar box
+    from the page image, and DIR/icons.tsv. Returns {sign: file name}. A sign whose exemplar's page image is missing gets
+    no icon (listed with an empty file cell), never another tile's crop."""
+    from PIL import Image
+    os.makedirs(out_dir, exist_ok=True)
+    ex, out, cache, tab = icon_exemplars(rows), {}, {}, []
+    for sign in sorted(ex):
+        sid, n = ex[sign]
+        s = signs.get(sid)
+        path = page_path(pages, s['page']) if s else None
+        fn = ''
+        if path:
+            if path not in cache:
+                cache[path] = Image.open(path).convert('RGB')
+            x, y, w, h = (int(float(s[k])) for k in ('x', 'y', 'w', 'h'))
+            fn = safe_name(sign) + '.png'
+            cache[path].crop((x, y, x + w, y + h)).save(os.path.join(out_dir, fn))
+            out[sign] = fn
+        tab.append((sign, fn, sid, n))
+    with open(os.path.join(out_dir, 'icons.tsv'), 'w', newline='') as f:
+        w = csv.writer(f, delimiter='\t'); w.writerow(ICON_COLS); w.writerows(tab)
+    return out
+
+
+def ctts_colors():
+    """CTTS's fixed symbol-type colour list, in its own order (sources/ctts/2026-10-09/FORMAT.md; Colors.colorSet())."""
+    base = [0, 85, 127, 170, 212, 255]
+    out = []
+    for bs in (base, [42], [51, 102, 153, 204, 243]):
+        for r in base:
+            for g in base:
+                for b in bs:
+                    if r + g + b:
+                        out.append('0x%02x%02x%02x%02x' % (r, g, b, 255))
+    return out
+
+
+# Reserved CTTS transcription values for tiles the person did not settle into a sign (never a sign the person did not give).
+CTTS_STATUS = {'not-letter': '~not-letter', 'aside': '~aside', 'bad-cut': '~bad-cut', 'taken-out': '~taken-out'}
+
+
+def write_ctts(rows, signs, pages, out_dir, icons=None, icons_dir=None):
+    """--ctts-out DIR (MQS-CTTS-EXPORT, 9 Oct 2026; research M35; format in sources/ctts/2026-10-09/FORMAT.md, read from
+    CTTS, G. Lasry / CrypTool project, Apache-2.0, no code copied): a CTTS working directory -- the page images, colors.txt
+    (+ _SECOND_COPY), positions/<page>_positions.txt (+ positions_SECOND_COPY/) and icons/<colour>.png from --icons.
+    One CTTS symbol type per settled sign; unsettled tiles go to the reserved CTTS_STATUS types. Refuses (ValueError) more
+    types than CTTS's 431 colours, a value with ';' or a newline, and a page name with '.'. Returns {value: colour}."""
+    import shutil
+    cols = ctts_colors()
+    vals = []
+    for _sid, _old, new, status in rows:
+        v = CTTS_STATUS.get(status) or new
+        if v and v not in vals:
+            vals.append(v)
+    if len(vals) > len(cols):
+        raise ValueError('%d symbol types, CTTS has %d colours' % (len(vals), len(cols)))
+    bad = [v for v in vals if ';' in v or '\n' in v or '\r' in v]
+    if bad:
+        raise ValueError('CTTS values cannot hold ; or a newline: %r' % bad[:3])
+    colour = {v: cols[i] for i, v in enumerate(vals)}
+    for d in ('positions', 'positions_SECOND_COPY', 'icons'):
+        os.makedirs(os.path.join(out_dir, d), exist_ok=True)
+    text = ''.join('%s;%s;%d\n' % (c, next((v for v, cc in colour.items() if cc == c), ''), i) for i, c in enumerate(cols))
+    for fn in ('colors.txt', 'colors_SECOND_COPY.txt'):
+        open(os.path.join(out_dir, fn), 'w').write(text)
+    by_page = {}
+    for sid, _old, new, status in rows:
+        s = signs.get(sid)
+        v = CTTS_STATUS.get(status) or new
+        if s and v:
+            by_page.setdefault(s['page'], []).append((s, cols.index(colour[v])))
+    for page, items in by_page.items():
+        if '.' in page:
+            raise ValueError('CTTS cuts file names at the first ".": page %r' % page)
+        src = page_path(pages, page)
+        if src:
+            ext = os.path.splitext(src)[1].lower()
+            shutil.copyfile(src, os.path.join(out_dir, page + ('.jpg' if ext == '.jpeg' else ext)))
+        body = ''.join('%f %f %f %f %3d\n' % (float(s['x']), float(s['y']), float(s['w']), float(s['h']), ci) for s, ci in items)
+        for d in ('positions', 'positions_SECOND_COPY'):
+            open(os.path.join(out_dir, d, page + '_positions.txt'), 'w').write(body)
+    if icons:
+        for sign, fn in icons.items():
+            if sign in colour and fn:
+                shutil.copyfile(os.path.join(icons_dir, fn), os.path.join(out_dir, 'icons', colour[sign] + '.png'))
+    return colour
+
+
+def read_ctts(dirp):
+    """Parse a CTTS working directory back (the reading rules of FORMAT.md): [(page, x, y, w, h, value)] and {colour: value}."""
+    cols = ctts_colors()
+    val = {}
+    for line in open(os.path.join(dirp, 'colors.txt')).read().split('\n'):
+        p = line.split(';')
+        if len(p) == 3:
+            val[p[0]] = p[1]
+    out = []
+    for f in sorted(glob.glob(os.path.join(dirp, 'positions', '*_positions.txt'))):
+        page = os.path.basename(f)[:-len('_positions.txt')]
+        for line in open(f).read().replace(',', '.').splitlines():
+            p = line.split()
+            if len(p) != 5:
+                continue
+            ci = int(p[4])
+            if ci >= len(cols):
+                return [], val  # CTTS drops the whole file
+            out.append((page, float(p[0]), float(p[1]), float(p[2]), float(p[3]), val.get(cols[ci], '')))
+    return out, val
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     ap.add_argument('--labels'); ap.add_argument('--db', required=True)
@@ -269,6 +421,10 @@ def main(argv=None):
     ap.add_argument('--added-out', help='where to write the added boxes (default: added.tsv beside --out; only when any were saved)')
     ap.add_argument('--page', help='the sorter page HTML: its embedded mode (blind/keyed) goes into the mode column')
     ap.add_argument('--key-family', help='key family (tools/data/sorter_families.tsv) for the mode column')
+    ap.add_argument('--signs', help='signs.tsv (sid, page, x, y, w, h): needed by --icons and --ctts-out')
+    ap.add_argument('--pages', help='folder of <page>.png/.jpg or a glyph_atlas pages.json (as tools/sign_sorter.py --pages)')
+    ap.add_argument('--icons', help='write one exemplar PNG per settled sign + icons.tsv here (needs --signs --pages)')
+    ap.add_argument('--ctts-out', help='write a CTTS working directory here (needs --signs --pages; icons from --icons)')
     ap.add_argument('--sort-start', help='YYYY-MM-DD the sort began (default: earliest `updated` stamp in the db documents)')
     a = ap.parse_args(argv)
     if a.atlas_labels and not a.clusters:
@@ -299,6 +455,18 @@ def main(argv=None):
     summary['mode'] = mode
     with open(a.out, 'w', newline='') as f:
         w = csv.writer(f, delimiter='\t'); w.writerow(['sid', 'old_sign', 'new_sign', 'status', 'mode']); w.writerows(r + (mode,) for r in rows)
+    if a.icons or a.ctts_out:
+        if not (a.signs and a.pages):
+            ap.error('--icons and --ctts-out need --signs and --pages')
+        sg = {r['sid']: r for r in csv.DictReader(open(a.signs, newline=''), delimiter='\t')}
+        ic = write_icons(rows, sg, a.pages, a.icons) if a.icons else None
+        if ic is not None:
+            summary['icons'] = len(ic)
+        if a.ctts_out:
+            try:
+                summary['ctts_types'] = len(write_ctts(rows, sg, a.pages, a.ctts_out, ic, a.icons))
+            except ValueError as e:
+                ap.error('--ctts-out: %s' % e)
     rc = recut_rows(load(a.db, 'recuts'))
     if rc:
         rp = a.recuts_out or os.path.join(os.path.dirname(os.path.abspath(a.out)), 'recuts.tsv')
@@ -315,7 +483,7 @@ def main(argv=None):
         summary['added_dropped'] = adrop
     if a.summary:
         json.dump(summary, open(a.summary, 'w'), indent=1)
-    print(json.dumps({k: summary[k] for k in ('tiles', 'mode', 'by_status', 'signs_before', 'signs_after', 'atlas', 'recuts', 'added', 'added_dropped') if k in summary}))
+    print(json.dumps({k: summary[k] for k in ('tiles', 'mode', 'by_status', 'signs_before', 'signs_after', 'atlas', 'recuts', 'added', 'added_dropped', 'icons', 'ctts_types') if k in summary}))
 
 
 if __name__ == '__main__':

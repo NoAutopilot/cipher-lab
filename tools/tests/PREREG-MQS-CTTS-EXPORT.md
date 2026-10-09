@@ -46,4 +46,16 @@ reports the box and sign counts; `--icons` can be `controlled-only` on S2 alone.
 
 ## Result
 
-(appended after the run; the text above is unchanged once pushed)
+(appended after the run, 9 Oct 2026, ~07:00 UTC by date -u; the text above is unchanged since 0ef431bb5)
+
+The lane allowed one shallow clone of github.com/CrypToolProject/CTTS (ROOM.md 06:53 UTC); `--ctts-out` was built from its
+save/load code (format note `sources/ctts/2026-10-09/FORMAT.md`, commit d8b7d77b, clone deleted, no code copied).
+
+`python3 tools/tests/test_sign_sorter_ctts.py --write` -> `RESULTS-MQS-CTTS-EXPORT.tsv` (20 seeds):
+- S1 round-trip known **1.0000 on 20/20**; label-permuted null mean **0.0783** (range 0.053-0.110), below my pre-registered
+  0.10-0.20 expectation (the squared-share estimate ignored the reserved status types and merges; still far below gate);
+  box-convention null **0.0000** on 20/20.
+- S2 icon fidelity known **1.0000 on 20/20**; icon-offset null **0.0000** on 20/20.
+- Gate **PASS**. Must-not tests pass: unsettled tiles only under reserved types, no icon for a reserved type, refusals for ';'
+  in a value, '.' in a page name, more than 431 types; the reader drops a file with a colour index past the set (CTTS's rule).
+Grades: `--icons` controlled-only; `--ctts-out` weak (our reader, not CTTS; not opened in CTTS yet). Nothing run on a target.
