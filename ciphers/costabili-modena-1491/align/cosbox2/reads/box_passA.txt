@@ -1,0 +1,55 @@
+CIPHER
+c63_L01_b1.jpg	<De> <le> <cose>
+c63_L01_b2.jpg	T o | W
+c63_L01_b3.jpg	<non> <m> <posso> <significand> <altro> <al> <pre> ?
+c63_L02_b1.jpg	z*
+c63_L02_b2.jpg	z b | ?
+c63_L02_b3.jpg	T b* ? | TT a z + | ? W c o q z + y q o | g + | q a z b d y + z +
+c63_L03_b1.jpg	TT T | x | g*
+c63_L03_b2.jpg	? <sch> <h> <ofobscm>
+c63_L03_b3.jpg	TT y z b | TT o | g a | L o | c d b 8 q o b o
+c63_L04_b1.jpg	<mn> <p> <no> <ceu> <mchoen>
+c63_L04_b2.jpg	c q + g a q + z q | g q | q b b q | TT | TT q o
+c63_L05_b1.jpg	8 q <bme> q
+c63_L05_b2.jpg	T q | g a | o 8 q g a
+c63_L05_b3.jpg	<non> <ref>
+c63_L05_b4.jpg	<hw> | TT q y q a + | TT q TT c a z a
+c63_L06_b1.jpg	<by> <o> <tempo> <pm> <gro> <ch> <h>
+c63_L06_b2.jpg	L | g | 8 T T + | g 8 | T o + | y b y | q o y
+c63_L07_b1.jpg	y b | 8 q 7 g z b | TT c o b b | y b q o | T c | y q + c b g a | + y q z o | q y o y
+c63_L08_b1.jpg	<recpa>
+c63_L08_b2.jpg	TT + z a d > + q z +
+c63_L08_b3.jpg	<pe> <la> <ca> <cristian> <la> <bama> <frodo>
+c63_L09_b1.jpg	<bon> <ch> <pud>
+c63_L09_b2.jpg	TT q | g a | T a + | TT c o d + y z a + | T q | TT + o q z o | q b b +
+c65_L05_b1.jpg	<amod> <suo> <st> <storci> <th>
+c65_L05_b2.jpg	<nc> q y + | o g z d + | g a z q d +
+c65_L05_b3.jpg	q*
+c65_L06_b1.jpg	<ma> <pcle> <de> <quelle>
+c65_L06_b2.jpg	<th> <pfaso> <2>
+c65_L06_b3.jpg	c + b o z
+c65_L06_b4.jpg	<b> <a> <la> g <fm>
+c65_L06_b5.jpg	<tw>
+c65_L07_b1.jpg	T + q o | d a + y q z + | T q | q + y o a g o d z
+c65_L07_b2.jpg	<de> <gue>
+c65_L07_b3.jpg	g a | TT q d a g a +
+c65_L08_b1.jpg	y + y z a | q L o | g b | q c a TT q b c b | q + d + T a y b | g + | TT c b TT + b q
+c65_L09_b1.jpg	a y | y b 8 o | TT q b | c q d | q o d q + | T o | c d o TT o y T a
+c65_L09_b2.jpg	?
+c65_L10_b1.jpg	<una> <et> <qu>
+c65_L10_b2.jpg	g a | TT q d a b q | T + | c b a
+c65_L10_b3.jpg	<g> <tuti> <dui> <in> <fiomi>
+CLEAR
+k63_L02.jpg	De le cose de la Regina no m posso significare altro a urã ex.ᵗᵃ seno ch sua
+k63_L03.jpg	mᵗᵃ sta expectante la ritornata del Re de hungaria [?] ch se li observi
+k63_L04.jpg	quanto se li ha promesso, ma p non essere anchora publicate le cose
+k63_L05.jpg	sue [?] p havere sua mᵗᵃ. de li emuli no resta senza suspitione
+k63_L06.jpg	tanto piu quanto dal Re de hungaria li Baroni, de sua mᵗᵃ no
+k63_L07.jpg	Venono multo spesso nove: Da napoli anch sua mᵗᵃ nd resta
+k63_L08.jpg	Satisfacta p la requiesta li havena facto: bench pur se li dia
+k63_L09.jpg	de qualche cosa. [?] speranza
+k65_L01.jpg	una altra lra p dieta ma pur de quello del pro. 25. passato ala pro
+k65_L02.jpg	Madama bianca de Cancellero de quello li scrivia nanti ch lo epo
+k65_L03.jpg	varardino la sposasse i nome suo per verba de presenti in vao
+k65_L04.jpg	de quelle li scripse dapoi et nin due ilume qrlo mand p uno
+k65_L05.jpg	suo Cavallaro.

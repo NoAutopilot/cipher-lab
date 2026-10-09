@@ -1,0 +1,55 @@
+CIPHER
+c65_L10_b3.jpg	<et> <tutt> <dui> <ni> <siomt>
+c65_L10_b2.jpg	g a | TT q d a b q | T + | c b a
+c65_L10_b1.jpg	<una> <d> <qu>
+c65_L09_b2.jpg	W u
+c65_L09_b1.jpg	a y | y b 8 o | TT q b | c o q d | q o d d q + | T o | c d o TT o y T a
+c65_L08_b1.jpg	y + y Z a | q L o | g b | q c a TT q b c b | q + d + T a y b | g + | TT c b TT + b q
+c65_L07_b3.jpg	g a | TT q d a g a +
+c65_L07_b2.jpg	<de> <gll>
+c65_L07_b1.jpg	T + q ? | d a + y q z + | T o | q + y o a g o d z
+c65_L06_b5.jpg	t w
+c65_L06_b4.jpg	<b> <a> <ln> g <fn>
+c65_L06_b3.jpg	c + b o Z
+c65_L06_b2.jpg	<tl> <gfaso> ? <2>
+c65_L06_b1.jpg	<uni> <pred> <de> <quelle>
+c65_L05_b3.jpg	?
+c65_L05_b2.jpg	<ne> | q y + | o g z d + | g a Z q d +
+c65_L05_b1.jpg	<amod> <suo> <st> <sfoca> <dh>
+c63_L09_b2.jpg	TT q | g a | T a + | TT c o d + y Z a + | T q | TT + o q z o | q b b T
+c63_L09_b1.jpg	<ton> <d> <pud>
+c63_L08_b3.jpg	<pete> <ca> <ntsttn> <la> <bania> <fudto>
+c63_L08_b2.jpg	TT + Z | a H 7 + q Z +
+c63_L08_b1.jpg	<ucsta>
+c63_L07_b1.jpg	y b | 8 q 7 g Z b | TT c o b b | y b q o | T o | y q + c b g a | + y q z o | g | y o y
+c63_L06_b2.jpg	L | q | g T T + | g 3 | T o g | y b y | q o y
+c63_L06_b1.jpg	<by> o <tomo> <pm> <gro> <ch>
+c63_L05_b4.jpg	<aw> | TT q y q a + | TT q TT c a Z a
+c63_L05_b3.jpg	<non> <ng>
+c63_L05_b2.jpg	T q | g a | o 8 q g a
+c63_L05_b1.jpg	<g> g <bme> q
+c63_L04_b2.jpg	c q + g a q + Z q | g q | q b b q | TT TT | TT q o
+c63_L04_b1.jpg	<mn> g <no> <ceu> <mcsoen>
+c63_L03_b3.jpg	TT o y Z b | TT o | g a | L o | c d b 8 q b o
+c63_L03_b2.jpg	<et> <sch> <h> <ofobsern>
+c63_L03_b1.jpg	TT q | x | g
+c63_L02_b3.jpg	g | TT Z + | z H c o q Z + y q o | g + | q a Z b d y + Z +
+c63_L02_b2.jpg	<st> <nbl>
+c63_L02_b1.jpg	?
+c63_L01_b3.jpg	<non> <m> <posso> <significand> <alno> <al> <pnr> ?
+c63_L01_b2.jpg	T o | Z
+c63_L01_b1.jpg	<Dole> <coff>
+CLEAR
+k65_L05.jpg	suo Cavallaro .
+k65_L04.jpg	de quelle li scripse dapoi et min [?] dui [?] ne p vno
+k65_L03.jpg	vararino la sposasse i nome suo per verba de presenti in vno
+k65_L02.jpg	Madama biancha de Cancelluro de quelle li scrivia nanti ch lo epo
+k65_L01.jpg	una altra lra p dieta ma pur de quelle dol pto . 25 . passato ala pto
+k63_L09.jpg	de qualche cosa .
+k63_L08.jpg	Satiffacta p la recheista li haueua facto bench pur se li dia
+k63_L07.jpg	Venono multo spesso nouë : Da napoli anch soa mta nd resta
+k63_L06.jpg	tanto piu quanto dil Re de hungaria li Baroni de sua mta no
+k63_L05.jpg	suo et p hauere sua mta de li emuli no resta senza suspitione
+k63_L04.jpg	quanto se li ha promesso ma p non essere anchora publicate le cose
+k63_L03.jpg	mta sta expectante la ritornata del Re de hungaria nch se li observ
+k63_L02.jpg	De le cose dela Regina no m posso significare altro a vra ex. senò ch sua

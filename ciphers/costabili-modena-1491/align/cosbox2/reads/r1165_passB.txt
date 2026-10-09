@@ -1,0 +1,14 @@
+# COS-BOX2 passB, assembled from box reads by cosbox2_assemble.py
+CIPHER
+c65_L05.jpg	<amod> <suo> <st> <sfoca> <dh> | <ne> | q y + | o g z d + | g a Z q d + | ?
+c65_L06.jpg	<uni> <pred> <de> <quelle> | <tl> <gfaso> ? <2> | c + b o Z | <b> <a> <ln> g <fn> | t w
+c65_L07.jpg	T + q ? | d a + y q z + | T o | q + y o a g o d z | <de> <gll> | g a | TT q d a g a +
+c65_L08.jpg	y + y Z a | q L o | g b | q c a TT q b c b | q + d + T a y b | g + | TT c b TT + b q
+c65_L09.jpg	a y | y b 8 o | TT q b | c o q d | q o d d q + | T o | c d o TT o y T a | W u
+c65_L10.jpg	<una> <d> <qu> | g a | TT q d a b q | T + | c b a | <et> <tutt> <dui> <ni> <siomt>
+CLEAR
+k65_L01.jpg	una altra lra p dieta ma pur de quelle dol pto . 25 . passato ala pto
+k65_L02.jpg	Madama biancha de Cancelluro de quelle li scrivia nanti ch lo epo
+k65_L03.jpg	vararino la sposasse i nome suo per verba de presenti in vno
+k65_L04.jpg	de quelle li scripse dapoi et min [?] dui [?] ne p vno
+k65_L05.jpg	suo Cavallaro .

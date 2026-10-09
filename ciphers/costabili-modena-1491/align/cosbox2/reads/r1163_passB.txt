@@ -1,0 +1,20 @@
+# COS-BOX2 passB, assembled from box reads by cosbox2_assemble.py
+CIPHER
+c63_L01.jpg	<Dole> <coff> | T o | Z | <non> <m> <posso> <significand> <alno> <al> <pnr> ?
+c63_L02.jpg	? | <st> <nbl> | g | TT Z + | z H c o q Z + y q o | g + | q a Z b d y + Z +
+c63_L03.jpg	TT q | x | g | <et> <sch> <h> <ofobsern> | TT o y Z b | TT o | g a | L o | c d b 8 q b o
+c63_L04.jpg	<mn> g <no> <ceu> <mcsoen> | c q + g a q + Z q | g q | q b b q | TT TT | TT q o
+c63_L05.jpg	<g> g <bme> q | T q | g a | o 8 q g a | <non> <ng> | <aw> | TT q y q a + | TT q TT c a Z a
+c63_L06.jpg	<by> o <tomo> <pm> <gro> <ch> | L | q | g T T + | g 3 | T o g | y b y | q o y
+c63_L07.jpg	y b | 8 q 7 g Z b | TT c o b b | y b q o | T o | y q + c b g a | + y q z o | g | y o y
+c63_L08.jpg	<ucsta> | TT + Z | a H 7 + q Z + | <pete> <ca> <ntsttn> <la> <bania> <fudto>
+c63_L09.jpg	<ton> <d> <pud> | TT q | g a | T a + | TT c o d + y Z a + | T q | TT + o q z o | q b b T
+CLEAR
+k63_L02.jpg	De le cose dela Regina no m posso significare altro a vra ex. senò ch sua
+k63_L03.jpg	mta sta expectante la ritornata del Re de hungaria nch se li observ
+k63_L04.jpg	quanto se li ha promesso ma p non essere anchora publicate le cose
+k63_L05.jpg	suo et p hauere sua mta de li emuli no resta senza suspitione
+k63_L06.jpg	tanto piu quanto dil Re de hungaria li Baroni de sua mta no
+k63_L07.jpg	Venono multo spesso nouë : Da napoli anch soa mta nd resta
+k63_L08.jpg	Satiffacta p la recheista li haueua facto bench pur se li dia
+k63_L09.jpg	de qualche cosa .

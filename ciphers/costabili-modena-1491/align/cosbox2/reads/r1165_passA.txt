@@ -1,0 +1,14 @@
+# COS-BOX2 passA, assembled from box reads by cosbox2_assemble.py
+CIPHER
+c65_L05.jpg	<amod> <suo> <st> <storci> <th> | <nc> q y + | o g z d + | g a z q d + | q*
+c65_L06.jpg	<ma> <pcle> <de> <quelle> | <th> <pfaso> <2> | c + b o z | <b> <a> <la> g <fm> | <tw>
+c65_L07.jpg	T + q o | d a + y q z + | T q | q + y o a g o d z | <de> <gue> | g a | TT q d a g a +
+c65_L08.jpg	y + y z a | q L o | g b | q c a TT q b c b | q + d + T a y b | g + | TT c b TT + b q
+c65_L09.jpg	a y | y b 8 o | TT q b | c q d | q o d q + | T o | c d o TT o y T a | ?
+c65_L10.jpg	<una> <et> <qu> | g a | TT q d a b q | T + | c b a | <g> <tuti> <dui> <in> <fiomi>
+CLEAR
+k65_L01.jpg	una altra lra p dieta ma pur de quello del pro. 25. passato ala pro
+k65_L02.jpg	Madama bianca de Cancellero de quello li scrivia nanti ch lo epo
+k65_L03.jpg	varardino la sposasse i nome suo per verba de presenti in vao
+k65_L04.jpg	de quelle li scripse dapoi et nin due ilume qrlo mand p uno
+k65_L05.jpg	suo Cavallaro.
