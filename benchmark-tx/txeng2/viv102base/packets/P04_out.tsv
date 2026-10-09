@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L10	46	p	M	yes	descender p-like after g, no long stroke
+f102r_L11	3	Z	H	yes	capital Z with bar
+f102r_L11	32	V	M	yes	slash stroke before y
+f102r_L11	47	V	M	yes	slash stroke before y
+f102r_L11	49	NONE	L	yes	no clear o before final s
+f102r_L12	12	s	M	yes	small s after m
+f102r_L12	13	{curl}	M	yes	large loop before m r
+f102r_L12	15	r	L	yes	small r-like with loop
+f102r_L12	27	V	M	yes	slash before y
+f102r_L12	29	NONE	M	yes	no o between V y and s
+f102r_L12	38	2	L	yes	digit-like loop after tilde
+f102r_L13	5	S	L	yes	tall stroke below line
+f102r_L13	13	s	L	yes	short s shape
+f102r_L13	25	4	M	yes	digit 4 before m m
+f102r_L13	49	S	L	yes	tall stroke before g
+f102r_L13	51	V	M	yes	slash before y
