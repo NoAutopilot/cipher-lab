@@ -48,7 +48,7 @@ leaf	date_sender	cipher	glossed	source	note
 0047		none	n	HDK-131 sheet pass (9 per sheet, 1000 px)	
 0048		none	n	HDK-131 sheet pass (9 per sheet, 1000 px)	
 0049	Friedrich von Brandt, Copenhagen 22 June 1672 (M)	heavy	y	HDK-131 sheet pass (9 per sheet, 1000 px), native crop	crop look: inserted slip, 4 lines of groups (42 73 144 35 94 67 56 120 ...) each with a letter gloss above ("chwanger wirt", "zmeist", "ihre ... "); left page foot ~4 more lines of groups
-0050	Brandt, 1672 (M)	light?	n	HDK-131 sheet pass (9 per sheet, 1000 px)	sheet only: inserted slip with a few numerals at its head, possibly a date/count, not checked
+0050	Brandt, 1672 (M)	none (show-through)	n	HDK-131 sheet pass (9 per sheet, 1000 px)	sheet only: inserted slip with a few numerals at its head, possibly a date/count, not checked | BRANDT-062 9 Oct 2026: native view shows mirror-image show-through (0049 slip), not cipher on this leaf
 0051		none	n	HDK-131 sheet pass (9 per sheet, 1000 px)	
 0052		none	n	HDK-131 sheet pass (9 per sheet, 1000 px)	
 0053		none	n	HDK-131 sheet pass (9 per sheet, 1000 px)	
@@ -60,9 +60,9 @@ leaf	date_sender	cipher	glossed	source	note
 0059		none	n	HDK-131 sheet pass (9 per sheet, 1000 px)	
 0060		none	n	HDK-131 sheet pass (9 per sheet, 1000 px)	
 0061		none	n	HDK-131 sheet pass (9 per sheet, 1000 px)	
-0062	Friedrich von Brandt, Copenhagen 9 Aug(?) 1672 (M)	heavy	?	HDK-131 sheet pass (9 per sheet, 1000 px)	sheet only: ~9 lines of numeral groups at the head of the right page
-0063	Brandt, 1672 (M)	light	?	HDK-131 sheet pass (9 per sheet, 1000 px)	sheet only: ~6 lines of numeral groups at the head of the left page
-0064	Brandt, 1672 (M)	heavy	?	HDK-131 sheet pass (9 per sheet, 1000 px)	sheet only: ~8 lines of numeral groups at the head of the left page, small marks above some groups
+0062	Friedrich von Brandt, Koppenhagen 3 Aug 1672	heavy	y	HDK-131 sheet pass (9 per sheet, 1000 px)	sheet only: ~9 lines of numeral groups at the head of the right page | BRANDT-062 9 Oct 2026: 6 lines, 62 groups, full interlinear gloss (ciphertext_0062.tsv)
+0063	Brandt, 1672 (M)	none (show-through)	?	HDK-131 sheet pass (9 per sheet, 1000 px)	sheet only: ~6 lines of numeral groups at the head of the left page | BRANDT-062 9 Oct 2026: native view shows mirror-image show-through (0062 cipher block and gloss), not cipher on this leaf
+0064	Brandt, 1672 (M)	none (show-through)	?	HDK-131 sheet pass (9 per sheet, 1000 px)	sheet only: ~8 lines of numeral groups at the head of the left page, small marks above some groups | BRANDT-062 9 Oct 2026: native view shows mirror-image show-through (0062 cipher block and gloss), not cipher on this leaf
 0065		none	n	HDK-131 sheet pass (9 per sheet, 1000 px)	
 0066		none	n	HDK-131 sheet pass (9 per sheet, 1000 px)	
 0067		none	n	HDK-131 sheet pass (9 per sheet, 1000 px)	

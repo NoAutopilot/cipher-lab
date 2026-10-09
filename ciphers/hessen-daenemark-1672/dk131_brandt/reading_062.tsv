@@ -1,0 +1,63 @@
+line	pos	token	C_letter	gloss_cover	grade
+L01	1	46	d	glossed	C
+L01	2	100		glossed	M
+L01	3	43		glossed	M
+L01	4	131	t	glossed	C
+L01	5	102		glossed	M
+L01	6	117	r	glossed	C
+L01	7	90		glossed	M
+L01	8	102		glossed	M
+L01	9	132		glossed	M
+L01	10	129		glossed	M
+L01	11	139		unglossed	M
+L02	1	103		glossed	M
+L02	2	43		glossed	M
+L02	3	73	h	glossed	C
+L02	4	136		glossed	M
+L02	5	56	e	glossed	C
+L02	6	122		unglossed	M
+L02	9	78		glossed	M
+L02	10	143		glossed	M
+L02	11	94	n	glossed	C
+L03	1	63		unglossed	M
+L03	2	52	e	unglossed	M
+L03	3	99		unglossed	M
+L03	4	262		unglossed	M
+L03	5	63		glossed	M
+L03	6	52	e	glossed	M
+L03	7	36		glossed	M
+L03	8	100		glossed	M
+L03	9	103		glossed	M
+L03	10	117	r	glossed	C
+L03	11	52	e	glossed	C
+L03	12	94	n	glossed	C
+L04	2	167		glossed	M
+L04	4	74		glossed	M
+L04	5	69		glossed	M
+L04	6	117	r	glossed	C
+L04	7	156		glossed	M
+L04	8	52	e	glossed	C
+L04	9	73	h	glossed	C
+L04	10	52	e	glossed	C
+L04	11	94	n	glossed	C
+L05	1	130		glossed	M
+L05	2	32		glossed	M
+L05	3	138		glossed	M
+L05	4	124	s	glossed	C
+L05	5	53	e	glossed	C
+L05	6	96		glossed	M
+L05	7	134		glossed	M
+L05	8	135		glossed	M
+L05	9	69		glossed	M
+L05	10	31		glossed	M
+L05	11	69		glossed	M
+L06	1	52	e	unglossed	M
+L06	2	122		unglossed	M
+L06	3	138		glossed	M
+L06	4	56	e	glossed	C
+L06	5	123		glossed	M
+L06	6	54		glossed	M
+L06	7	73	h	glossed	C
+L06	8	122		glossed	M
+L06	9	52	e	glossed	M
+L06	10	134		glossed	M

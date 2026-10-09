@@ -1,0 +1,72 @@
+# Brandt to Hedwig Sophie, Koppenhagen 3 Aug 1672, HStAM 4 f Staaten D Daenemark 131 image 0062 right page, 6 cipher lines.
+# BRANDT-062 9 Oct 2026: crops62/ (tools/iiif_lines.py), two blind Sonnet passes (passA62 top-down, passB62 bottom-up), rec62/: 66/66 signs agree.
+# gloss = interlinear second-hand gloss over the group ('^' = the word above the previous group continues), placement settled by the worker on
+# 1x/2x native views (passes agreed on the words, split on placement). L04 'König' over 167 (passes 'stang?'/'Dany?'), L02 'gulden[?]' (word
+# partly unread, beside 94; passes put it over 143 or 94) and line placement of 'thaler' (its last letters may be L06 52 122) are worker readings, M.
+line	pos	token	conf	gloss
+L01	1	46	H	d
+L01	2	100	H	o
+L01	3	43	H	c
+L01	4	131	H	tor
+L01	5	102	H	^
+L01	6	117	H	^
+L01	7	90	H	mots
+L01	8	102	H	^
+L01	9	132	H	^
+L01	10	129	H	^
+L01	11	139	H	
+L02	1	103	H	to
+L02	2	43	H	c
+L02	3	73	H	h
+L02	4	136	H	t
+L02	5	56	H	er
+L02	6	122	H	
+L02	7	w:Jat		
+L02	8	w:einen		
+L02	9	78	H	iungen
+L02	10	143	H	^
+L02	11	94	H	gulden[?]
+L03	1	63	H	
+L03	2	52	H	
+L03	3	99	H	
+L03	4	262	H	
+L03	5	63	H	geboren
+L03	6	52	H	^
+L03	7	36	H	^
+L03	8	100	H	^
+L03	9	103	H	^
+L03	10	117	H	^
+L03	11	52	H	^
+L03	12	94	H	^
+L04	1	w:Der		
+L04	2	167	H	König
+L04	3	w:Jat		
+L04	4	74	H	ihr
+L04	5	69	H	^
+L04	6	117	H	^
+L04	7	156	H	zehen
+L04	8	52	H	^
+L04	9	73	H	^
+L04	10	52	H	^
+L04	11	94	H	^
+L05	1	130	H	tausente
+L05	2	32	H	^
+L05	3	138	H	^
+L05	4	124	H	^
+L05	5	53	H	^
+L05	6	96	H	^
+L05	7	134	H	^
+L05	8	135	H	thaler
+L05	9	69	H	^
+L05	10	31	H	^
+L05	11	69	H	^
+L06	1	52	H	
+L06	2	122	H	
+L06	3	138	H	verehrt
+L06	4	56	H	^
+L06	5	123	H	^
+L06	6	54	H	^
+L06	7	73	H	^
+L06	8	122	H	^
+L06	9	52	H	^
+L06	10	134	H	^
