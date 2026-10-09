@@ -1,0 +1,8 @@
+control	set	statistic	value	gate	verdict	note
+K1	birago-atlas	round_trip	1.0000	1.000	PASS	n=4209 marked=348
+N1	birago-atlas-permuted-sid	round_trip	0.9228	<=0.95	PASS	n=4209 seed=1
+K2	fr16-synthetic-before-edit	accuracy	0.8272	(baseline)		seeds=20 min=0.8093 max=0.8500
+K2	fr16-synthetic-after-edit	accuracy	1.0000	>=0.99	PASS	seeds=20 min=1.0000
+N2	fr16-permuted-marks-after-edit	accuracy	0.8487	<=0.95	PASS	seeds=20 max=0.8707
+K3	collapse-guard	seeds_all_6_named	20/20	20/20	PASS	merge dot
+K3	collapse-guard-false-alarm	seeds_flagged	0/20	0/20	PASS	merge flourish

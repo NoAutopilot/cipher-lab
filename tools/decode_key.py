@@ -78,6 +78,18 @@ an ordinary occurrence of either code (offline fixture and D-control in tools/te
 pairs come from the person or a glyph atlas, never from this scan. A report: a flag is a candidate for an image check,
 never a key, exception or reading edit. Controls and grade: tools/tests/PREREG-MQS-LOOKALIKE-SLIPS.md.
 
+Base and mark (MQS-BASE-MARK, 9 Oct 2026; research/MARY-STUART-TALK-2026-10-09.tsv M11; Lasry, Biermann and Tomokiyo 2023
+p.112 n.48, Figs 3-4 p.113: diacritic variants as separate types). A tsv ciphertext with `base` and `mark` columns and no sign
+column (tools/sign_sorter_apply.py --split-marks writes them) reads each sign as 'B' (no mark) or 'B:X'. --merge-mark SPEC
+(decode.json 'merge_marks', a string or list) reclassifies marks for the whole text in one edit, on any sign of the form
+'B:X' (split on the last ':'; marks joined by '+' are treated one by one): 'X' = mark X carries no meaning (dropped),
+'X=Y' = mark X is mark Y, '*' = every mark dropped; comma-separated. Applied before the key lookup; the raw sign column of the
+token file keeps what was transcribed. Catches: a mark misread page-wide (tick for dot) fixed by one edit instead of every token
+relabelled (control K2, tools/tests/PREREG-MQS-BASE-MARK.md). Must NOT: change any sign when no merge is given, or touch a sign
+with no ':'. Guard: a merge that makes two keyed codes with different values read as one ('B' and 'B:X', or 'B:X' and 'B:Y')
+prints 'merge-mark collapses B:X -> B (value a vs b)' on stderr for each, every run (the merged code then reads the key row
+of its new form, as written).
+
 decode.json: {"jobs": [{...}, ...]} or one job object. Job keys (all optional):
   ciphertext, key, exceptions, reading, tokens   file names relative to TARGET_DIR
   format        pipe | tsv | rows (default: detected)
@@ -285,6 +297,7 @@ def load_tsv(path, job):
         header, rows = rows[0], rows[1:]
     ci = col(header, lc); pi = col(header, 'pos', 'position', 'index', 'idx')
     si = col(header, 'sign', 'token', 'group', 'code')
+    bi, mi = (col(header, 'base'), col(header, 'mark')) if si is None else (None, None)
     ki = col(header, *([job['conf_column']] if job.get('conf_column') else ['conf', 'confidence']))
     kc = col(header, job['kind_column']) if job.get('kind_column') else None
     sign_kinds = set(job.get('sign_kinds', []))
@@ -301,7 +314,12 @@ def load_tsv(path, job):
         seen_key = (fo, ln)
         if seen_key not in seen:
             seen.add(seen_key); recs.append(dict(folio=fo, line=l2, label=label, pos=None, kind='line'))
-        t = r[si]; conf = r[ki] if ki is not None and ki < len(r) else ''
+        if si is None and bi is not None:  # base/mark columns (MQS-BASE-MARK)
+            mk = r[mi] if mi is not None and mi < len(r) else ''
+            t = r[bi] + (':' + mk if mk else '')
+        else:
+            t = r[si]
+        conf = r[ki] if ki is not None and ki < len(r) else ''
         cp = job.get('clear_prefix')
         if cp and t.startswith(cp) and len(t) > len(cp):
             t = 'w:' + t[len(cp):]
@@ -439,7 +457,55 @@ def same_word(gloss, value, job):
 
 # ---------------------------------------------------------------- grading
 
+def parse_merge(spec):
+    """'tick=dot,flourish' / ['*'] -> {mark: new mark ('' = dropped)}; '*' key drops every mark."""
+    if not spec:
+        return {}
+    parts = spec if isinstance(spec, list) else str(spec).split(',')
+    out = {}
+    for p in parts:
+        p = p.strip()
+        if p:
+            x, _, y = p.partition('=')
+            out[x.strip()] = y.strip()
+    return out
+
+
+def merge_sign(sign, mm):
+    """'B:X+Y' under a merge map -> the reclassified sign; a sign with no ':' is returned unchanged."""
+    if not mm or ':' not in sign:
+        return sign
+    base, marks = sign.rsplit(':', 1)
+    if '*' in mm:
+        return base
+    out = []
+    for m in marks.split('+'):
+        m = mm.get(m, m) if m in mm else m
+        if m and m not in out:
+            out.append(m)
+    return base + (':' + '+'.join(out) if out else '')
+
+
+def merge_marks(recs, key, job):
+    """Apply job['merge_marks'] to every sign record before the key lookup (MQS-BASE-MARK); warn on collapsed key codes."""
+    mm = parse_merge(job.get('merge_marks'))
+    if not mm:
+        return 0
+    for c, row in key.items():
+        new = merge_sign(c, mm)
+        if new != c and new in key and key[new]['value'] != row['value']:
+            print(f"merge-mark collapses {c} -> {new} (value {row['value']} vs {key[new]['value']})", file=sys.stderr)
+    n = 0
+    for r in recs:
+        if r.get('kind') == 'sign':
+            new = merge_sign(r['sign'], mm)
+            if new != r['sign']:
+                r['sign'] = new; n += 1
+    return n
+
+
 def grade_tokens(recs, key, exc, votes, job):
+    merge_marks(recs, key, job)
     null_values = set(job.get('null_values', ['NULL', 'null']))
     unknown_values = set(job.get('unknown_values', ['', '?']))
     if job.get('empty_is_null'):
@@ -1608,11 +1674,19 @@ def alias_main(a):
 def load_config(target, a):
     if a.config or (os.path.exists(os.path.join(target, 'decode.json')) and not a.ciphertext):
         cfg = json.load(open(a.config or os.path.join(target, 'decode.json'), encoding='utf-8'))
-        return [dict(cfg.get('defaults', {}), **j) for j in cfg.get('jobs', [cfg])]
+        return with_merge([dict(cfg.get('defaults', {}), **j) for j in cfg.get('jobs', [cfg])], a)
     key = a.key.split(',') if a.key and ',' in a.key else a.key
     job = {k: v for k, v in (('ciphertext', a.ciphertext), ('key', key), ('exceptions', a.exceptions),
                              ('style', a.style), ('reading', a.reading), ('tokens', a.tokens)) if v}
-    return [job]
+    return with_merge([job], a)
+
+
+def with_merge(jobs, a):
+    """--merge-mark on the command line overrides each job's merge_marks (MQS-BASE-MARK)."""
+    if getattr(a, 'merge_mark', None):
+        for j in jobs:
+            j['merge_marks'] = a.merge_mark
+    return jobs
 
 
 def crossword_main(a):
@@ -1727,6 +1801,8 @@ def main(argv=None):
                     '(and of B as A), one position at a time; flag gain >= --lookalike-min bits (MQS-LOOKALIKE-SLIPS; '
                     'a report, never a key edit)')
     ap.add_argument('--lookalike-min', type=float, default=3.0, help='with --lookalike: flag threshold in bits (3.0)')
+    ap.add_argument('--merge-mark', metavar='X[=Y][,..]|*', help='reclassify marks text-wide on B:X signs: X dropped, '
+                    'X=Y renamed, * all dropped; warns when two keyed codes collapse (MQS-BASE-MARK)')
     ap.add_argument('--lookalike-tsv', help='with --lookalike: write every examined occurrence to this TSV')
     a = ap.parse_args(argv)
     if a.aliases or a.alias_scan:

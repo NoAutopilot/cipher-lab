@@ -3,6 +3,7 @@
 
   python3 tools/sign_sorter_apply.py (--labels labels.tsv | --atlas-topk T.tsv ...) --db DIR --out settled_labels.tsv [--summary summary.json]
       [--clusters clusters.tsv --atlas-labels ATLAS/labels.json [--atlas-out labels.json] [--source TEXT]]
+      [--split-marks marks.tsv [--mark-labels F]]   base and mark columns (MQS-BASE-MARK)
 
 --db is the folder the ArtifactData tool writes with out_dir (DIR/piles/*.json, DIR/moves/*.json,
 DIR/newpiles/*.json; each file is one document as saved by tools/sign_sorter/template.html). The output has one
@@ -64,6 +65,16 @@ type per sign, the unsettled tiles under reserved types ~not-letter ~aside ~bad-
 Catches: a settled sorter result reaching CTTS with every box and sign intact (round-trip test, PREREG-MQS-CTTS-EXPORT.md).
 Must NOT: give an unsettled tile a sign, write a value CTTS would mis-split (';', newline), a page name CTTS would cut ('.'), or
 more types than CTTS's 431 colours (all refused). Not shown: that CTTS itself opens the folder (owner's desktop only).
+Base and mark (MQS-BASE-MARK, 9 Oct 2026; research/MARY-STUART-TALK-2026-10-09.tsv M11; Lasry, Biermann and Tomokiyo 2023
+p.112 n.48, Figs 3-4 p.113: diacritic variants as separate types). --split-marks MARKS.tsv (glyph_atlas marks.tsv: mid, sid, x;
+optional mark/kind column) adds two columns to --out: `base`, the settled sign before any ':' it already carries, and `mark`,
+the tile's attached marks left to right joined by '+' ('' for a plain tile). A mark's label comes from --mark-labels (TSV: mid
+or cluster, then mark|label), else the marks.tsv mark/kind cell, else m<cluster> from --clusters' kind=mark rows, else 'm'. A
+settled sign 'B:X' already compound splits on its last ':' and keeps X. tools/decode_key.py reads base/mark columns as
+'B' or 'B:X' and reclassifies a mark text-wide with one --merge-mark edit, so a mark is never relabelled token by token.
+Catches: every mark a box carries reaching the export beside its base (round trip on the Birago 1572 atlas, 348 marked of
+4209, PREREG-MQS-BASE-MARK.md). Must NOT: put a mark on a tile it is not attached to (marks.tsv sid), drop a mark already in
+a compound settled label, or change new_sign (the existing columns stay as they were).
 Must NOT be used to write a cluster label the person did not choose: nothing here infers a code from shape."""
 import argparse, csv, glob, json, os, sys
 
@@ -408,6 +419,37 @@ def read_ctts(dirp):
     return out, val
 
 
+def mark_table(marks_p, clusters_p=None, labels_p=None):
+    """sid -> [mark label, ...] left to right, from a glyph_atlas marks.tsv (MQS-BASE-MARK)."""
+    mcl, lab = {}, {}
+    if clusters_p:
+        for r in csv.DictReader(open(clusters_p, newline=''), delimiter='\t'):
+            if r.get('kind') == 'mark' and r.get('cluster'):
+                mcl[r.get('id') or r.get('mid')] = r['cluster']
+    if labels_p:
+        for r in csv.DictReader(open(labels_p, newline=''), delimiter='\t'):
+            k = r.get('mid') or r.get('cluster') or ''
+            v = r.get('mark') or r.get('label') or ''
+            if k and v:
+                lab[k] = v
+    out = {}
+    for r in csv.DictReader(open(marks_p, newline=''), delimiter='\t'):
+        if not r.get('sid'):
+            continue
+        mid = r.get('mid', '')
+        c = mcl.get(mid)
+        v = lab.get(mid) or (lab.get(c) if c else None) or r.get('mark') or r.get('kind') or ('m' + c if c else 'm')
+        out.setdefault(r['sid'], []).append((float(r.get('x') or 0), mid, v))
+    return {k: [v for _, _, v in sorted(m)] for k, m in out.items()}
+
+
+def split_base_mark(sign, marks):
+    """('B:X' or 'B', [mark, ...]) -> (base, mark): a compound sign keeps its own mark, then the attached ones."""
+    base, own = (sign.rsplit(':', 1) + [''])[:2] if ':' in (sign or '') else (sign or '', '')
+    ms = [m for m in own.split('+') if m] + [m for m in marks if m not in own.split('+')]
+    return base, '+'.join(ms)
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     ap.add_argument('--labels'); ap.add_argument('--db', required=True)
@@ -425,6 +467,8 @@ def main(argv=None):
     ap.add_argument('--pages', help='folder of <page>.png/.jpg or a glyph_atlas pages.json (as tools/sign_sorter.py --pages)')
     ap.add_argument('--icons', help='write one exemplar PNG per settled sign + icons.tsv here (needs --signs --pages)')
     ap.add_argument('--ctts-out', help='write a CTTS working directory here (needs --signs --pages; icons from --icons)')
+    ap.add_argument('--split-marks', metavar='MARKS.tsv', help='add base and mark columns from a glyph_atlas marks.tsv (MQS-BASE-MARK)')
+    ap.add_argument('--mark-labels', help='with --split-marks: TSV mid|cluster -> mark|label naming each mark')
     ap.add_argument('--sort-start', help='YYYY-MM-DD the sort began (default: earliest `updated` stamp in the db documents)')
     a = ap.parse_args(argv)
     if a.atlas_labels and not a.clusters:
@@ -454,7 +498,14 @@ def main(argv=None):
     mode = export_mode(pd.get('mode'), a.key_family or pd.get('keyFamily'), start)
     summary['mode'] = mode
     with open(a.out, 'w', newline='') as f:
-        w = csv.writer(f, delimiter='\t'); w.writerow(['sid', 'old_sign', 'new_sign', 'status', 'mode']); w.writerows(r + (mode,) for r in rows)
+        w = csv.writer(f, delimiter='\t')
+        if a.split_marks:
+            mt = mark_table(a.split_marks, a.clusters, a.mark_labels)
+            w.writerow(['sid', 'old_sign', 'new_sign', 'status', 'mode', 'base', 'mark'])
+            w.writerows(r + (mode,) + split_base_mark(r[2], mt.get(r[0], [])) for r in rows)
+            summary['marked'] = sum(1 for r in rows if split_base_mark(r[2], mt.get(r[0], []))[1])
+        else:
+            w.writerow(['sid', 'old_sign', 'new_sign', 'status', 'mode']); w.writerows(r + (mode,) for r in rows)
     if a.icons or a.ctts_out:
         if not (a.signs and a.pages):
             ap.error('--icons and --ctts-out need --signs and --pages')
@@ -483,7 +534,7 @@ def main(argv=None):
         summary['added_dropped'] = adrop
     if a.summary:
         json.dump(summary, open(a.summary, 'w'), indent=1)
-    print(json.dumps({k: summary[k] for k in ('tiles', 'mode', 'by_status', 'signs_before', 'signs_after', 'atlas', 'recuts', 'added', 'added_dropped', 'icons', 'ctts_types') if k in summary}))
+    print(json.dumps({k: summary[k] for k in ('tiles', 'mode', 'by_status', 'signs_before', 'signs_after', 'atlas', 'recuts', 'added', 'added_dropped', 'icons', 'ctts_types', 'marked') if k in summary}))
 
 
 if __name__ == '__main__':
