@@ -1,0 +1,10 @@
+strip	kind	x_frac	text	under_or_over	confidence
+R_L08	code	0.88	319.	main line	medium
+R_L08	code	0.83	237.	main line	medium
+R_L08	code	0.77	560.	main line	medium
+R_L08	code	0.72	644.	main line	medium
+R_L08	gloss	0.69	mourt.s fain (ink uncertain; possibly "mour?t.s ?ain")	over 207.644. (spans the two groups)	low
+R_L08	code	0.66	207.	main line	medium
+m207_0490L01	code	0.82	207.	main line	high
+m207_0490L01	gloss	0.74	le gr. Tess. (small, with dots beneath; letters doubtful)	over main-line text "fue", not a number group	low
+# notes (pass B, Sonnet, blind, read right to left): in m207_0490L01 the gloss sits over text rather than a number group; R_L08's gloss is a tiny smear.

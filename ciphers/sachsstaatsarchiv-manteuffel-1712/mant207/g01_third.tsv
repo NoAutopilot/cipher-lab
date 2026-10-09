@@ -1,0 +1,40 @@
+# MANT-207 blind third read of f0490_08/crops/m207_G01_x2.jpg (2x of committed c0490G01_L01.jpg), one Sonnet call, no digits shown. Reader pos numbering is its own; it omitted U063 (25) and read the leading 7 as pos 0.
+row	pos	reading	alternatives	confidence	glyph_note	maps_to
+1	0	7	flourish	low	stray stroke left of 1000; may be a mark	U053
+1	1	1000		high		U054
+1	2	50		high		U055
+1	3	100		high		U056
+1	4	28	29	medium	2 + y-shape; closed loop vs open tail unclear	U057
+1	5	66		medium		U058
+1	6	28	29	medium	y-shape lower loop, small tail	U059
+1	7	9	8	low	isolated y-shape before 51	U060
+1	8	51		medium		U061
+1	9	42	41|47	low	4 crossed or cramped	U062
+1	10	15		medium		U064
+1	11	54		medium		U065
+1	12	39	38	medium	y-shape after 3, tail open	U066
+1	13	33		high		U067
+1	14	21		high		U068
+1	15	120		high		U069
+1	16	35		medium		U070
+1	17	29	28	medium	y-shape	U071
+1	18	356		high		U072
+2	1	17		high		U073
+2	2	68	66|69	medium	second digit closed loop	U074
+2	3	26		medium		U075
+2	4	28	29	medium	y-shape	U076
+2	5	39	38	medium		U077
+2	6	29	28	medium		U078
+2	7	55		medium		U079
+2	8	10		high		U080
+2	9	44		medium		U081
+2	10	12		high		U082
+2	11	39	38	medium		U083
+2	12	7		medium		U084
+2	13	2		medium		U085
+2	14	60		medium		U086
+2	15	66		medium		U087
+2	16	21		high		U088
+2	17	59	58	medium	y-shape with tail	U089
+2	18	55		medium		U090
+# reader note: strip low resolution; 8 and 9 shapes mostly indistinguishable here, y-shaped digits doubtful throughout.

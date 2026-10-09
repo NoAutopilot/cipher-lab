@@ -1,0 +1,11 @@
+image	kind	x_frac	text	sits_over	confidence
+m207_0490L01	code	0.43	207 (trailing dot, "207.")	n/a	medium (207|209 low-risk; 2-0-7 fairly clear)
+m207_0490L01	code	0.45-0.51	NONE other: line is mostly words ("Luis ils et jette hu(is)? ... en huj atti?")	n/a	low
+m207_0490L01	gloss	0.82-0.86	"Ley? Gr? Tref."/"begr. tref." with dotted marks beneath (approx "beG.r Tref" with overbar; letters partly unclear: b?e?G?r? T?e?f?)	over words "huy"/"la" at ~0.80-0.87 (no number group beneath)	low
+R_L08	code	0.64	209|207|202 (written "207."/"209." before dotted run; first digit group "2o7|2o9")	n/a	medium
+R_L08	code	0.68-0.72	644	n/a	medium
+R_L08	code	0.73-0.78	566|560 (written "560."/"566.")	n/a	medium
+R_L08	code	0.79-0.85	237	n/a	medium
+R_L08	code	0.86-0.89	319|314|319 ("319.")	n/a	low-medium
+R_L08	gloss	0.58-0.66	"mu?ard?d? fain" / "unvardi? faim" (two small words: "un?ar?d? fain?"; ink approx "m?ard?s faim")	above 207/209 and 644 (straddles the first group and 644)	low
+# notes (pass A, Sonnet, blind): image 1 has one number group (207), upper band mostly a different prose line except the small abbreviation at x 0.82-0.86; image 2 one small gloss over the 207/644 junction, largely illegible.

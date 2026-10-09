@@ -74,7 +74,7 @@ U072	c0490G01	1	356	high
 U073	c0490G01	2	17	high	
 U074	c0490G01	2	65	low	A 65, B 65; eye 68?
 U075	c0490G01	2	26	high	
-U076	c0490G01	2	29	med	2 + y-shaped 9 (A 29, B 28)
+U076	c0490G01	2	28	med	2 + y-shaped 9 (A 29, B 28); set 28 by MANT-207 9 Oct (blind third read 28, alt 29; FIX-YEYE eye 28)
 U077	c0490G01	2	39	med	3 + y-shaped 9 (A 39, B 39)
 U078	c0490G01	2	29	high	
 U079	c0490G01	2	55	high	
