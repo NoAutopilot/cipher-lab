@@ -14,7 +14,7 @@ Inputs for the tool: codes.tsv (line, position, sign: 0136 + 0103 + f468 g13), k
 key.tsv value that is one letter keeps it, anything else '_').
   python3 ciphers/sachsstaatsarchiv-manteuffel-1712/names136/build_pool.py [--check]
 """
-import csv, glob, gzip, hashlib, os, re, sys, unicodedata
+import csv, glob, gzip, hashlib, os, re, subprocess, sys, unicodedata
 from collections import Counter
 D = os.path.dirname(os.path.abspath(__file__)); T = os.path.dirname(D); ROOT = os.path.dirname(os.path.dirname(T))
 
@@ -22,11 +22,16 @@ def fold(w):
     w = unicodedata.normalize('NFKD', w.lower()); w = ''.join(c for c in w if not unicodedata.combining(c))
     return re.sub('[^a-z]', '', w.replace('ß', 'ss'))
 
+REV = '814f666d3'   # the PREREG commit: folder sources are read as they stood there, so later NOTES/HYPOTHESES edits never change the lists
+def src(f):
+    rel = os.path.relpath(os.path.join(T, f), ROOT)
+    return subprocess.run(['git', '-C', ROOT, 'show', REV + '^:' + rel], capture_output=True, check=True).stdout.decode('utf-8', 'replace')
+
 CAP = re.compile(r"\b([A-ZÄÖÜÉ][a-zäöüéèêàâôûç]{2,13})\b")
 def names():
     c = Counter()
     for f in ['key.tsv', 'frame_inventory.tsv', 'mant0609/seen_before.tsv', 'HYPOTHESES.md', 'AUDIT.md']:
-        for m in CAP.findall(open(os.path.join(T, f), encoding='utf-8', errors='replace').read()):
+        for m in CAP.findall(src(f)):
             c[fold(m)] += 2
     for f in sorted(glob.glob(os.path.join(ROOT, 'tools/data/fr18/*.txt.gz'))):
         for m in CAP.findall(gzip.open(f, 'rt', encoding='utf-8', errors='replace').read()):
@@ -54,7 +59,7 @@ def phrases():
 def codes():
     rows = []
     for f in ['f0136_09/ciphertext.tsv', 'f0103_09/ciphertext.tsv']:
-        for r in csv.DictReader((l for l in open(os.path.join(T, f)) if not l.startswith('#')), delimiter='\t'):
+        for r in csv.DictReader((l for l in src(f).splitlines() if not l.startswith('#')), delimiter='\t'):
             rows.append((r['line'], r['pos'], r['sign']))
     for i, s in enumerate('3.35.44.12.34.21.7'.split('.'), 1):   # f468/passes.tsv g13, gloss 'Welling' (control)
         rows.append(('f468_g13', str(i), s))
@@ -62,7 +67,7 @@ def codes():
 
 def keycl():
     out = []
-    for r in csv.DictReader(open(os.path.join(T, 'key.tsv')), delimiter='\t'):
+    for r in csv.DictReader(src('key.tsv').splitlines(), delimiter='\t'):
         v = r['value'].strip().lower()
         out.append((r['code'], v if re.fullmatch('[a-z]', v) else '_', r['grade']))
     return out
