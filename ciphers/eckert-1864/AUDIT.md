@@ -8147,3 +8147,77 @@ the plain words that survive encipherment (here "Channing Clapp", "send material
 for a FIX job (decode.py entry notes, rule 7): E251 "Stephen"/"Barton" x3 -> plain; E252 "sylvan" -> plain, tail cut at "Geo. D. Sheldon"
 (the struck 1 Sept entry is not E252); E253 address "Washington" -> plain, "fever" -> plain; E256 "White" -> plain, address
 "Washington" -> plain, "insanity's" -> [C. A. Dana]'s; E258 none. No "new" or "first" wording found in FM-R4a's NOTES table.
+
+## AUDIT 2 (AUD2-LEDGER-12)
+
+Second verifier AUD2-LEDGER-12 (account 4, for the account-4 orchestrator; row moved from account 3), 9 Oct 2026, 05:11-05:3x UTC by
+`date -u`; a separate session and account from the readers FM-R3a/FM-R3b and the first auditor FV-FM6a (all account 1). Scope: **E219**
+and **E227** only (E217 and E226 are N1 on holder clear copies 10487 and 4711, not second-audited, per the row). Nothing decoded; the
+current reading.md (after FIX-FM6; `decode.py --check` exit 0 at 05:3x) was read against FV-FM6a section 4. Key source: `period`.
+Scripts and outputs: `fortmonroe/aud2_ledger12_net.py` + `.out` (IA be-api; its loc.gov half is void, see below),
+`fortmonroe/aud2_ledger12_loc.py` + `.out` (Chronicling America, dated), `fortmonroe/aud2_ledger12_pages.py` (page OCR, to scratch).
+
+### Prior-work
+- `prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;canvas=<5780|5808>;date=...;sender=...;recipient=...'
+  --step-type second-audit --offline` (05:1x UTC): exit 4 for both, the single LEAD being LANE LEDGER's incarnation-4 target-level claim
+  (03:42), whose done line is in ROOM.md at 04:55 and which does not cover a second audit: CLEAR. 3-tomokiyo, 3-solver (cached) CLEAR;
+  4-editions CLEAR on the cached OR volumes (date +-1 day, both correspondents, control hit); unsolved-ciphers UNCHECKED-NET (not cloned).
+- Holder full text: FV-FM6a's CONTENTdm all-pointer queries (greyhound, meet his family, webster greyhound; perit, stinson, horner stinson,
+  ninth vermont) stand; not repeated (no new distinctive clear word to add).
+
+### Print and press
+- **IA be-api (snippet only), 8 requests, all answered.** Grant Papers vol. 12 (`papersofulyssess0012gran`): "Greyhound" -- Butler's
+  17 Aug offer, USG "I have ordered the Greyhound to report to you", a visitors' note, index "Greyhound (steamboat), 21n, 253n, 461";
+  "Ingalls Webster" -- index "Webster, Ralph C. (U.S. Army), 378n" and Ingalls notes (29 Aug Bowers to Ingalls on the City Point railroad;
+  "Ingalls starts for Washington this evening on a special ..."); '"Fort Monroe" Julia' -- the chronology lines "27. USG left for a visit
+  with Julia Dent Grant at Fort Monroe, Va., bringing her to City Point" and "31. USG escorted Julia Grant to Fort Monroe on her way to
+  Burlington, N.J.", and USG's letters to Julia of 23 and 25 Aug; '"Ninth Vt."' 0. None prints E219's text. Julia Dent Grant, *Personal
+  Memoirs* (1975, `personalmemoirso1975gran`, lending-only, be-api): "Greyhound" 0; "Fortress Monroe" 1 (general: the General "would ...
+  meet us at Fortress Monroe, and taking the party on his boat, we would arrive at City Point the next morning"); "City Point" 1 (same
+  passages). Not E219's text.
+- **Benedict, *Vermont in the Civil War* vol. II (1888, `vermontincivilwa02bene`, djvu text read whole by grep), "The Ninth Regiment",
+  pp.253-255:** on 2 Nov 1864 the Ninth took transports from Deep Bottom for Fortress Monroe, transferred there to a steamer for New York;
+  "**One hundred and forty men who were out on picket, under command of Lieutenant T. S. Peck, were also left behind, and followed the
+  regiment on another steamer.**" The regiment rejoined at New York (election 8 Nov), re-embarked on the John E. Rice 15 Nov. This is
+  E227's event from the regiment's side (a detachment left behind, following on another steamer to join the regiment) -- **context, not
+  the telegram**: no steamer name, no date, and 140 against E227's 150 (E227's "plug publish mandate" = 150, as FV-FM6a; the history's
+  figure is a later round count or excludes the stragglers who came by City Point, pp.254-255 -- not a reason to change the reading).
+  Porter, *Campaigning with Grant* (`cu31924030927010`, djvu grep): nothing on 27 Aug or the Greyhound.
+- **Chronicling America (www.loc.gov).** The plain `q=...&dates=` form in `aud2_ledger12_net.py` does **not** honour a day window (its
+  hits span 1864) and is void; the advanced form (`dl=page&start_date&end_date&qs&searchType=advanced`, `aud2_ledger12_loc.py`) does --
+  every returned date fell inside its window, the validation. 4 windowed queries answered, the fifth cut by my box timeout; then 6 page
+  OCR fetches (2 requests each), the 6th page answering **429 -- host left** (15 requests to www.loc.gov/tile.loc.gov in all).
+  - **E219, related, printed:** *Worcester Daily Spy* 30 Aug 1864 p.2 (sn83021205), "Fortress Monroe, Aug. 28 ... **Mrs. Gen. Grant
+    arrived on the Baltimore mail steamer. She left immediately on the steamer Greyhound for City Point.**" *Cleveland Morning Leader*
+    2 Sept 1864 p.1, "Fortress Monroe, Sept. 1. Lieutenant General Grant arrived [at] Old Point, at 3:30 P.M., from City [Point] on the
+    steamer Greyhound" (the 31 Aug/1 Sept escort trip of the chronology, a later voyage); *Evening Star* 3 Sept p.2 (Assistant
+    Secretaries Fox and Watson on the Greyhound, 2 Sept; context). The Greyhound did carry the Grants between City Point and Fort Monroe
+    in these days, as E219 orders -- in other words; the telegram's text is not printed in these pages.
+  - **E227, related, printed:** *New-York Daily Tribune* 9 Nov 1864 p.8, "Latest Ship News", ARRIVED: "U. S. stea[m] transport **Perit,
+    Delano, Fortress Monroe**, [hours illegible in the OCR]" -- the Perit's arrival at New York from Fortress Monroe, consistent with E227's
+    departure at 8 p.m. on 6 Nov. Context; no passenger or regiment named in the OCR line. '"Ninth Vermont" Monroe' (5-14 Nov) 0 hits.
+- **Google Books:** one probe (`"Ninth Vermont" "Perit"`, &country=US, key) HTTP 429 "Queries per day" -- host stopped, unreachable.
+- Not reached: NARA RG 92 vessel files (no online route), the Vermont Adjutant General's 1865 report (not located on IA by title search),
+  OR I/42 pt 2 p.447 re-read (FV-FM6a's citation taken as logged).
+
+### Reading check
+- **E219:** reading.md now carries "are see webster Chief" in the body (FIX-FM6), but still closes `{tail: [signed] roof us Ingalls
+  [Brigadier General] S. H. Beckwith}` -- the signature is the tail by design, the body is out of it; FV-FM6a's correction is in. The key
+  renders japan as "[Maj Genl U.S. Grant]" (the key's own gloss); Grant was Lieutenant General from March 1864, so the safe sentence's
+  "General Grant" is right and no change is owed. H 11 of 11 confirmed against key.md for paradise, vincent, japan, appian, weasel, palate.
+- **E227:** reading.md carries "William L James" plain and "[Steamer] Perit" (FIX-FM6), H 18. Benedict's 140 vs 150 noted above; the
+  figure is the cipher's, no change.
+
+### Verdict
+- **E219: N3 holds**, depth **D3 kept** (H 11 of 11; image read whole by FV-FM6a). Key `period`. Safe sentence: FV-FM6a's, with the
+  added clause "; the press of 30 Aug 1864 reported from Fortress Monroe that Mrs. Grant had left there on the steamer Greyhound for City
+  Point (Worcester Daily Spy, 30 Aug 1864), in other words". Unsafe: any novelty word; "the press did not report the trip".
+- **E227: N3 holds**, depth **D3 kept** (H 18 of 18). Key `period`. Safe sentence: FV-FM6a's, with the added clause "; the Ninth
+  Vermont's regimental history records that 140 men left behind on picket followed the regiment to New York on another steamer
+  (Benedict, Vermont in the Civil War II, 1888, p.255), and the New-York Daily Tribune's ship news of 9 Nov 1864 lists the transport Perit
+  arrived from Fortress Monroe". Unsafe: any novelty word; "150" stated as Benedict's figure.
+- Propagated: status.json E219 and E227 rows (audit_status two audits, audit_refs, line, gap); SO prompts PROMPT-chatgpt-e219.md and
+  -e227.md context paragraphs (so the second opinion does not "find" these as prior print).
+- Postmortem: none against FV-FM6a's readings or classes. Its open items closed here: Grant Papers vol. 12 (be-api, snippet-level),
+  Julia Grant's memoirs (be-api), press of 28 Aug-3 Sept and 5-14 Nov 1864 (dated, validated), the Ninth Vermont history. Still open:
+  Google Books (429), Grant Papers vol. 12 p.461 and 253n read as pages, NARA RG 92, the Vermont AG report 1865.

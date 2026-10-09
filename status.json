@@ -9264,9 +9264,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM6a)'"
+        "AUDIT.md '## AUDIT (FV-FM6a)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-12)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM6a verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -9286,8 +9287,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Brig. Gen. Rufus Ingalls (City Point) to Col. R. C. Webster, chief quartermaster, Fort Monroe, 27 Aug 1864, Grant to meet his family at Monroe, steamer Greyhound at his disposal (E219)",
-      "line": "Read at grade H with War Department Cipher No. 1: at 6.30 p.m. on 27 Aug 1864 Brig. Gen. Rufus Ingalls at City Point told Col. R. C. Webster, chief quartermaster at Fort Monroe, that General Grant was leaving at 7 p.m. to meet his family at Fort Monroe and that the steamer Greyhound was to be placed at his disposal on arrival. The telegram was not located in the Official Records (ser. I vol. 42 pts 2-3), Butler's Private and Official Correspondence vol. V, the Grant Papers vol. 12 (full-text search) or the Huntington's full-text search (searched 9 Oct 2026); the Grant Papers' chronology records the trip.",
-      "gap": "N3: Grant Papers vol. 12 page read (snippet only), Google Books (429 on 8-9 Oct), press of 28-30 Aug 1864, Julia Grant's Personal Memoirs unread. Depth D3.",
+      "line": "Read at grade H with War Department Cipher No. 1: at 6.30 p.m. on 27 Aug 1864 Brig. Gen. Rufus Ingalls at City Point told Col. R. C. Webster, chief quartermaster at Fort Monroe, that General Grant was leaving at 7 p.m. to meet his family at Fort Monroe and that the steamer Greyhound was to be placed at his disposal on arrival. The telegram was not located in the Official Records (ser. I vol. 42 pts 2-3), Butler's Private and Official Correspondence vol. V, the Grant Papers vol. 12 (full-text search) or the Huntington's full-text search (searched 9 Oct 2026); the Grant Papers' chronology records the trip; the press of 30 Aug 1864 reported from Fortress Monroe that Mrs. Grant had left there on the steamer Greyhound for City Point (Worcester Daily Spy, 30 Aug 1864), in other words.",
+      "gap": "N3 (two audits): Google Books (429 on 8-9 Oct), Grant Papers vol. 12 pp.253n and 461 read as pages, NARA RG 92 unread. Depth D3.",
       "depth": "D3",
       "completeness": "11 H of 11 code-word groups ('R. C. Webster' as 'are see Webster', 'Greyhound', 'Rufus Ingalls' plain)",
       "phrases": [
@@ -9305,9 +9306,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM6a)'"
+        "AUDIT.md '## AUDIT (FV-FM6a)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-12)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM6a verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -9327,8 +9329,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Capt. William L. James (quartermaster, Fort Monroe) via John Horner to Capt. D. Stinson, assistant quartermaster, New York, 6 Nov 1864, 150 men of the Ninth Vermont on the steamer Perit (E227)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 6 Nov 1864 Capt. William L. James, quartermaster at Fort Monroe, told Capt. D. Stinson, assistant quartermaster in New York, that 150 men of the Ninth Vermont would leave Fort Monroe at 8 p.m. on the steamer Perit to join their regiment. The telegram was not located in the Official Records (ser. I vols. 42 pt 3, 43 pt 2), Butler's Private and Official Correspondence vol. V or the Huntington's full-text search (searched 9 Oct 2026); OR I/43 pt 2 prints the regiment's move to New York and Stinson's transports.",
-      "gap": "N3: Quartermaster General's vessel records (NARA RG 92), New York press of 7-9 Nov 1864, Vermont regimental history, Google Books (429) unread. Depth D3.",
+      "line": "Read at grade H with War Department Cipher No. 1: on 6 Nov 1864 Capt. William L. James, quartermaster at Fort Monroe, told Capt. D. Stinson, assistant quartermaster in New York, that 150 men of the Ninth Vermont would leave Fort Monroe at 8 p.m. on the steamer Perit to join their regiment. The telegram was not located in the Official Records (ser. I vols. 42 pt 3, 43 pt 2), Butler's Private and Official Correspondence vol. V or the Huntington's full-text search (searched 9 Oct 2026); OR I/43 pt 2 prints the regiment's move to New York and Stinson's transports; the Ninth Vermont's regimental history records that 140 men left behind on picket followed the regiment to New York on another steamer (Benedict, Vermont in the Civil War II, 1888, p.255), and the New-York Daily Tribune's ship news of 9 Nov 1864 lists the transport Perit arrived from Fortress Monroe.",
+      "gap": "N3 (two audits): Quartermaster General's vessel records (NARA RG 92), Vermont Adjutant General's 1865 report, Google Books (429) unread. Depth D3.",
       "depth": "D3",
       "completeness": "18 H of 18 code-word groups ('D Stinson', 'ninth', 'Perit', 'William L James' plain)",
       "phrases": [
