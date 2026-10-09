@@ -6649,3 +6649,4 @@ already known: ~0 (SIG-AVS's 74 re-look, a sibling with a period decipherment, ~
 3. Gramont f.30 worst lines: next instrument is the owner's sign sorter (TRANSCRIPTION.md), not more machine passes -- owner-side.
 4. 4612: new material or a different instrument only. Code 146 (5797): band tests retired; open-codes.
 5. august-van-saksen: Qf label-split hypothesis (~$1, low value); otherwise waiting on ASKS 67 / the Dresden reply.
+SIG-2 (session_01SYyVT7bpRYp2Fzxc8BoxdG, 9 Oct 00:39-00:4x UTC): one Gallica IIIF manifest probe (Baluze 170, btv1b90015040) -> 403 at 00:42; closed at once, no workers; items 1-2 still Gallica-blocked, 3-5 unchanged; SIG-3 queued with the same probe-first note.
