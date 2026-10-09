@@ -1,0 +1,8 @@
+row	line	pos	cands	why
+1	f179r_L03	21	T60,T17,T76	top1
+2	f179r_L03	22	T80,T53	top1+share
+3	f179r_L03	23	T80,T38,T53	top1+share
+4	f179r_L03	24	T86,X_NEW,T37	top1+share+conf
+5	f179r_L03	25	T37,X_NEW	top1+share+conf
+6	f179r_L03	26	T25,X_NEW,T37	top1+share+conf
+7	f179r_L03	27	T54,T13	top1+conf

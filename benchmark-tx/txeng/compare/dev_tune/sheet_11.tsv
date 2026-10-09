@@ -1,0 +1,6 @@
+row	line	pos	cands	why
+1	f178v_L12	23	T85,T60,X_A	top1
+2	f178v_L12	27	T19,T83	share
+3	f178v_L12	28	T26,T95	conf
+4	f178v_L12	31	T86,T57,T18	share
+5	f178v_L12	32	T24,T96	top1

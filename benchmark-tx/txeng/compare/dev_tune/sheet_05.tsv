@@ -1,0 +1,17 @@
+row	line	pos	cands	why
+1	f178v_L06	27	T95,T76	conf
+2	f178v_L07	1	T90,T17	conf
+3	f178v_L07	2	T86,T37,T60	conf
+4	f178v_L07	3	T85,T86,T60	conf
+5	f178v_L07	4	T36,T26,T18	conf
+6	f178v_L07	5	T86,T60	conf
+7	f178v_L07	6	T85,T83,T60	conf
+8	f178v_L07	8	T19,T83	share
+9	f178v_L07	9	T42,T90	conf
+10	f178v_L07	12	T76,T27	conf
+11	f178v_L07	15	T90,T45	conf
+12	f178v_L07	19	T60,T85,T86	conf
+13	f178v_L07	20	T60,T86,T85	conf
+14	f178v_L07	21	T53,T26,T86,T65	top1+share
+15	f178v_L07	22	T85,T60,T86	conf
+16	f178v_L07	23	T18,T36,T26	conf
