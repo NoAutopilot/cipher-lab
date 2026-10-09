@@ -7283,3 +7283,133 @@ Local JSTOR runner (in-app browser, owner's JSTOR login; page viewer only, no do
 - Riegel, "Federal Operation of Southern Railroads during the Civil War", The Mississippi Valley Historical Review 9(2) (1922) 126-138, https://www.jstor.org/stable/1895670 (row: "Louisville and Nashville" AND (Meigs OR Donaldson) ...). Searched within for "Louisville": pp. 129, 130, 136; p. 129 names J. B. Anderson, formerly of the Louisville and Nashville, as railroad director in the Department of the Ohio (Nov. 1861). No 1864 seizure or possession telegram. Clauss, "Sherman's Rail Support In The Atlanta Campaign", The Georgia Historical Quarterly 50(4) (1966) 413-420, https://www.jstor.org/stable/40578791: no "Meigs" in the text.
 
 No N-class or depth change.
+
+## AUDIT (FV-FM6c)
+
+Verifier FV-FM6c (account 1, for LANE LEDGER), 9 Oct 2026, 03:47-04:1x UTC by `date -u`; a separate session from the reader FM-R3d
+(account 1), not protecting its conclusions. Scope: **E242, E243, E245** (ciphertext.txt, Cipher No. 1, Fort Monroe ledger mssEC 25 =
+Huntington object 5952; NOTES "## FM-R3d"). E244's key conflicts (HYPOTHESES.md) are context only, not settled here. Nothing decoded beyond
+key look-ups in key.md and a token-by-token comparison with the period clear copy below. Key source for all three: `period`. Depth under
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Script:
+`fortmonroe/fv_fm6c_hdl.py` (CONTENTdm full text, page images to scratch).
+
+### 1. Duplicates, prior work, holder's full text, image
+- **Duplicate diff:** pointers 5682, 5826, 5769 occur in ciphertext*.txt only in E242/E243/E245's own headers. Other filed headers for the
+  same dates are different telegrams: E185 (5824, 10 Dec 1864, Sheldon to O'Brien and Beckwith: Porter's Saugus/Onondaga orders), E217 (5770,
+  10 July 1864, Sheldon for the Quartermaster General), E91/E126 (mssEC 19, 21 May). mssEC 19 (`entries-mssEC19.tsv`) and mssEC 18
+  (`ms18/entries-ms18.tsv`) rows for 20-21 May, 9-11 July and 10 Dec 1864 are Washington's outgoing telegrams, none of these three.
+  **No duplicate in our files.**
+- **Prior-work tool:** `tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<ptr>;date=<d>;...' --step-type audit
+  --offline` for each (items.tsv has no E-rows): exit 4, LEAD only on two target-level ROOM claims (this lane's own claim and ECK-PAGEFIX's
+  mssEC 19 page-column claim), neither covering these items; editions CLEAR on the cached OR volumes (date +-1 day, both correspondents,
+  control hit); plaintext UNCHECKED-NET (aaymeloglu repository not cloned). Rows recorded in prior-work.tsv.
+- **Holder's full text (CONTENTdm p16003coll11, `CISOSEARCHALL`, all pointers, under the LANE LEDGER hdl token 03:56-03:59 UTC, 15 queries):**
+  - **E245 -> pointer 10485, clear copy, word for word** (Page 343, a Washington clear telegram book): "4.35 P. M Ft Monroe VA July 10th 1864 /
+    Flag. Ship "Malvern" Hampton Roads, 9.30 AM via Ft Monroe 11 a. m July 10th For Secy Navy Wash. at time of telegraphing about
+    depredations of "Florida" I telegraphed commandants at Phila N. Y. and Boston. Have dispatched "Ino" to be towed to an offing by tug
+    America. Have sent "Monticello" and "Mount Vernon" under Lieut Comdr Adams to cruise together this side "Nantucket". have required
+    "Shenandoah" from Commd Livingston but fear she will not be ready for a day or two. "state - of - Georgia" here broken down. Shall
+    dispatch the intelligence to Beaufort and blockades off Wilmington (sig) Yours &c S. P. Lee". Queries: nantucket 7 hits, depredations 13,
+    monticello 6, ino 2 -- 10485 and 5769 (the cipher copy itself) in each relevant set.
+  - **E242: no clear copy.** huyck 4 (5682 itself; 7763 = O'Brien, Fort Fisher, 9 Feb 1865: "Snow and Huyck would like to come"; 13889/13908
+    later books), collings 22, homan 24, "field cord" 1 (5682 only), "woody country" 3 (5682; 4626 = Sherman near Resaca, other words; 11453),
+    "hurried operations" 4 (5682; others not this telegram). **4666** (Page 225): O'Brien to Eckert, Butler's Hd Qrs, 28 May 1864: "Mac and
+    party will report to Mr Sheldon at Jamestown this evening. I send Homan and Collings with two of best large relays ..." -- a different
+    telegram one week later naming the same operators.
+  - **E243: no clear copy.** matilda 27 hits (5826 itself; the rest other telegrams: 4546 lists a side-wheel boat "matilda" for Meigs, April
+    1864; 1866-67 cipher books), brady 13 (5826; others not this), "steamer cloud" 1 (8530, not this), "go to sea" 26 (none this telegram),
+    "bradley quartermaster" 0. E243 went to Beckwith at City Point, not to Washington, so a Washington clear book is not where its copy would be.
+- **Image (this session):** pages 5826 and 5682 at 2400 px to scratch. 5826 (E243): all 14 lines read on the overview; the transcription
+  matches ("Nancy for pandora G. W. Bradley chief vincent Black / zodiac Plunder harsh plaster P. M wranglams relative to / weaseler Brady
+  ... penny gallant and went on to growl zebra ... Burr muddy wines yoke William L James pilgrim a / vinton ... S Cloud ..."). 5682 (E242):
+  all 16 lines read on the overview, lines 1-4 also on a crop: matches, including "private Huyck Camp pebble / amos", "Nichols at / maxims
+  Collings at Nankins & Homan have Zodiac". 5769 (E245) not re-imaged (FM-R3d read it at 2400 px; the clear copy checks every word).
+
+### 2. Print
+Cached texts (168 volumes, sources/ia-fulltext/print-check) plus, fetched to scratch: ORN I/3 (`officialrecordso0003unse`), OR I/36 pt 3
+(`warofrebellion363unit`), OR I/40 pt 2 (`warofrebellion402unit`), OR I/42 pt 3 (`warofrebellion423unit`), ORN I/11 (`officialrecordso0011unse`),
+Butler's Private and Official Correspondence III (`privateofficialc03butl`); 6 archive.org downloads, 2 s apart. Phrase/rare-name grep:
+Huyck, Collings, "field cord", "woody country", "Jamestown impracticable", "incessant artillery"; steamer Brady, Matilda, Cloud, "W. L. James",
+"go to sea with horses", "loading with cavalry"; Toby/Ino, "tug America", "this side Nantucket", "depredations", Shenandoah, "State of Georgia",
+Livingston.
+- **E242:** 0 for the telegram's words in all 174 volumes (`Huyck` hits only a French volume). Context printed: OR I/36 pt 2 p.471, Sheldon to
+  Eckert, 6 May 1864: "Major-General Butler thinks it unsafe to [run] line south side river from Jamestown yet; can't protect it" -- the same
+  Jamestown line, fifteen days earlier, other words.
+- **E243:** 0 for the telegram's words. Context: OR I/42 pt 3, Special Orders No. 120, City Point, 5 Nov 1864: Lt. Col. George W. Bradley,
+  relieved as chief quartermaster Tenth Army Corps, to report to Brig. Gen. Rufus Ingalls, chief quartermaster -- consistent with the
+  addressee, not the telegram.
+- **E245:** the telegram is not printed in ORN I/10 (cached) or ORN I/3; ORN I/10 prints Lee's other 10 July telegrams to Welles (pp.248-249,
+  252) but not this one. **Same-day orders printed, ORN I/10 pp.249-251**: Lee to Cushing (Monticello) and to Lt. Cdr. H. A. Adams (Mount
+  Vernon) to "cruise together" after the Florida, with the postscript "you will not ... go to the northward and eastward of Nantucket"; to
+  Acting Vol. Lt. G. A. French, U.S.S. **Ino**: "proceed to sea immediately in tow of the tug America, sent with this, which will give you a
+  good offing"; to Capt. Ridgely, Shenandoah; to Commander Dove, Beaufort: "Communicate this intelligence to all the blockaders". The
+  clear copy (10485) supersedes these as the telegram's text.
+- Not searched: Grant Papers (no row to or from Grant; E243's addressee is at City Point, but the telegram is a quartermaster's); Basler (no
+  Lincoln row); press of the day (not run; Google Books not probed, the readers saw 429 this hour); OR I/36 pt 2 page-by-page for 21 May beyond
+  the phrase grep; *The Military Telegraph during the Civil War* (Plum; not cached).
+
+### 3. Grade and reading corrections (FM-R3d's table, reading.md)
+- **E245 (clear copy 10485):** every code word agrees with the clear copy: Eugenia = 9.30 AM, peasant animal = via Ft Monroe, fanny = 11 AM,
+  federal = 10 (July 10th), Burton = Secy Navy, grapes = Wash., wrangling/wreathed = telegraphing/telegraphed, polka ants = commandants,
+  fool = Phila, france = N. Y., polkaer = Comdr, peach = two, Bible = Beaufort, Hamlet = Wilmington, webster = (sig), Neptune = S. P. Lee, and
+  the periods: **C 24 of 24**, M 0. Reading corrections (for a FIX worker; rule 7 is the decoder's): **"Jno toby" = "Ino" to be** (the
+  U.S.S. Ino, plain; clear copy and ORN I/10 p.250) -- FM-R3d's "[Jno?] Toby [?]" is wrong; "Living stone" = Commodore **Livingston** (plain);
+  "block aids" = "blockades" (clear copy; "blockaders" in Lee's order to Dove). Header: received at Fort Monroe and repeated to Washington
+  4.35 p.m. 10 July (clear copy). Reading: "Flagship Malvern, Hampton Roads, 9.30 a.m., via Fort Monroe 11 a.m., July 10. For the Secretary
+  of the Navy, Washington: At time of telegraphing about depredations of the Florida I telegraphed commandants at Philadelphia, New York and
+  Boston. Have dispatched Ino to be towed to an offing by tug America. Have sent Monticello and Mount Vernon under Lieut. Commander Adams to
+  cruise together this side Nantucket. Have required Shenandoah from Commodore Livingston, but fear she will not be ready for a day or two.
+  State of Georgia here broken down. Shall dispatch the intelligence to Beaufort and blockaders off Wilmington. S. P. Lee."
+- **E242 (no clear copy):** all 18 code values are key rows (H): pebble = 3, amos = New York, Rodney = Entrench, maxim = Gillmore, Nankin =
+  W. F. Smith, negro = Artillery, ravish = Fighting, walpole = Rebel, Bender = Qr Master Genl, growl = Washington, plank = 2, mansion = 50,
+  and periods. "Bermuda" in "Bermuda landing" is **plain** (Bermuda Landing; as in E234/E236, FV-FM5c), not a gloss at I: the `gloss:
+  bermuda=Bermuda:I` line should become `plain: bermuda`. "Camp" before "pebble amos" is a plain word of unclear sense (perhaps "Comp[any]";
+  M, not a code word). "Homan have [period]" is what the page says (crop checked): an unfinished clause, M. **H 18**, code-word M 0; plain M 2
+  (Camp, "Homan have"). Reading as FM-R3d's, with "Bermuda Landing" plain.
+- **E243 (no clear copy):** the key gives **Penny = 4, Gallant = 15** (numerals p.25), so "She arrived here at penny gallant" is **4.15**
+  (a time); the decoder's "[19]" (summed) and FM-R3d's "10 9 or 19" are wrong. Both values are H; reading them as the time 4.15 (not 4 15
+  or 19) is mine, M for the composition. "plunder harsh plaster" = 7, 20, 5 = 7.25 (FM-R3d's split, agreed). "wranglams" is left plain by the
+  decoder and read "telegram" by FM-R3d (stem Wrangle = Telegraph, H by stem). Vincent and Vinton = Quartermaster (key p.22 l.24, both sides).
+  **H 26, M 1** (penny gallant as 4.15) of 27 code-word groups. Reading: "8 p.m. For Col. G. W. Bradley, chief quartermaster, City Point:
+  7.25 p.m. telegram relative to steamer Brady just received. She arrived here at 4.15 and went on to Washington. The Matilda is loading with
+  cavalry at Portsmouth for Bermuda Hundred. William L. James, Captain and Assistant Quartermaster. Another to same: If you have a [vessel?]
+  suitable to go to sea with horses, please order her here at once. Would like her to report as early tomorrow morning as possible. If the
+  S[teamer] Cloud is there she would suit. Please answer. William L. James, Captain and Assistant Quartermaster." ("way" before "suit able"
+  is what the page says; perhaps a slip for a vessel word, M, plain.)
+
+### 4. Classification (key `period`)
+`depth_pct` = H+C / code-word groups (plain words the decoder mapped are excluded).
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E242** O'Brien (Butler's Hd Qrs) to Eckert, 21 May 1864, operators at the Bermuda Hundred front | **N3** | unknown | **D3** | 100 (H 18 of 18) | code clause: Nankin = W. F. Smith and Maxim = Gillmore (the two corps commanders at Bermuda Hundred, May 1864; Nankin passim), Growl = Washington passim, Walpole = Rebel passim; external non-statistical: the holder's clear copies 4666 (O'Brien, 28 May 1864: "I send Homan and Collings ...") and 7763 (O'Brien, 1865: "Snow and Huyck") confirm the operators as O'Brien's men; OR I/36 pt 2 p.471 (Jamestown line unsafe, 6 May); image checked here |
+| **E243** Sheldon to Beckwith, City Point, for Col. G. W. Bradley, 10 Dec 1864, two messages of Capt. W. L. James, asst. quartermaster | **N3** | unknown | **D2** | 96.3 (H 26 of 27) | code clause: Vincent/Vinton = Quartermaster (three contexts here: "chief [QM]", "[Captain] and Assistant [QM]" twice; passim), Pacific = Cavalry, Spartan = Horse, Black = City Point passim; external: OR I/42 pt 3 S.O. 120 (Bradley to Ingalls's office) checks the addressee only, not the content -- so D2, not D3; image checked here |
+| **E245** S. P. Lee (flagship Malvern) via Monroe to the Secretary of the Navy, 10 July 1864, pursuit of the Florida | **N1** (plain text in the holder's public transcription of the clear copy, pointer 10485) | yes (holder's transcription) | **D3** | 100 (C 24 of 24) | code clause: Bible = Beaufort, Hamlet = Wilmington, Neptune = S. P. Lee (passim); external non-statistical: the period clear copy 10485 and ORN I/10 pp.249-251 (same-day orders); image FM-R3d |
+
+- **E242: N3.** Safe sentence: "Read at grade H with War Department Cipher No. 1: on 21 May 1864 R. O'Brien, telegraph operator at Butler's
+  headquarters, told Major Eckert in Washington which operators were posted at Bermuda Landing and at Gillmore's and W. F. Smith's
+  headquarters, that the line to Jamestown was impracticable for the present, and asked for a few miles of signal field cord. The telegram
+  was not located in the Official Records (ser. I vols. 36 pts 1-3), Butler's Private and Official Correspondence (vols. III-V), 174 cached
+  volumes or the Huntington's full-text search (searched 9 Oct 2026)." Unsafe: "first decipherment", "previously unread", "unpublished".
+  Depth sentence (mine, from the reading): "On 21 May 1864 Butler's chief operator reported his operators spread across the Bermuda Hundred
+  front -- Snow at Bermuda Landing, Nichols at Gillmore's, Collings at W. F. Smith's -- working nights under incessant artillery fire, and
+  said the line to Jamestown could not be run for now."
+- **E243: N3.** Safe sentence: "Read at grade H with War Department Cipher No. 1: on 10 Dec 1864 Fort Monroe passed to City Point, for
+  Col. G. W. Bradley, chief quartermaster, two messages of Capt. William L. James, assistant quartermaster: the steamer Brady had arrived at
+  4.15 and gone on to Washington, the Matilda was loading cavalry at Portsmouth for Bermuda Hundred, and a sea-going vessel for horses was
+  wanted at once, the Cloud if she was there. The telegram was not located in the Official Records (ser. I vol. 42 pt 3), the Navy Official
+  Records (ser. I vol. 11), 174 cached volumes or the Huntington's full-text search (searched 9 Oct 2026)." Unsafe as above. Depth sentence
+  (mine): "On 10 Dec 1864 the quartermaster at Fort Monroe told City Point that the Matilda was loading cavalry at Portsmouth for Bermuda
+  Hundred and asked for a vessel able to carry horses to sea the next morning."
+- **E245: N1.** Safe sentence: "Read at grade C with War Department Cipher No. 1 against the period clear copy in the Eckert Papers
+  (Huntington pointer 10485), whose plain text is in the Huntington's public transcription; our reading is an independent re-decipherment of
+  the Fort Monroe cipher copy." Unsafe: any novelty word; "not located in print" without naming the clear copy. No status.json or SO row
+  (N3+ only). Depth sentence: "On 10 July 1864 Admiral Lee told Welles he had sent the Ino, the Monticello and the Mount Vernon after the
+  Florida, could not have the Shenandoah ready for a day or two, and would warn the blockaders off Wilmington."
+
+### 5. Postmortem
+FM-R3d read all three soundly in substance. Its "not located" for E245 is the FV-FM5c pattern again: the holder's full-text search finds the
+Washington clear copy (10485) in one query ("nantucket"), and that copy also settles FM-R3d's one doubtful phrase ("Jno toby" = "Ino" to be).
+Decoder slips for a FIX worker (not applied here): E245 "Jno toby" -> Ino (plain) to be, Livingston, blockades/blockaders; E243 "penny gallant"
+read as [19] instead of 4.15 (Penny = 4, Gallant = 15); E242 `gloss: bermuda=Bermuda:I` -> `plain: bermuda`. FM-R3d's table cell for E243
+("penny gallant = 10 9 or 19") misread the key.
