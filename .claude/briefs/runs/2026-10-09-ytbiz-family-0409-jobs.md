@@ -94,3 +94,25 @@ Handoff next 5; NOTES "SUR-SPLITPC" (detection 0.570/0.510 at 0745L N). Steps: (
 gate detection >= 0.80; (3) only if the gate PASSES, run the pooled SPLIT statistic on the real pooled tokens under its derangement control and
 report it; if it FAILS, report the N at which detection would reach 0.80 (extrapolate from >= 3 N values) and stop. HYPOTHESES row, NOTES
 "SUR-POOLPC (9 Oct 2026)", gaps_check. CPU, ~$2.
+
+## Wave 2 (04:4x UTC 9 Oct)
+Hosts: archiv.sachsen.de ("sachsen") MANT-INV08 only (MANT-0136 has already released it); BRANDT-MARGIN disk + Google Books API only.
+
+### MANT-INV08 (Opus worker, Sonnet sheet subagents, cap 5, box 110 min): sachsstaatsarchiv-manteuffel-1712, Loc. 694/08 frame inventory for UNGLOSSED cipher frames
+SIBLINGS "Next sibling round" item 6 / NOTES Remaining gaps row "Loc. 694/08 and /09 ciphered reports ... not inventoried". 694/08 has 592 frames
+(images/loc694-08-09/frames.tsv); about 50 are in frame_inventory.tsv / frame_rank_gaps189.tsv / frame_classify_gaps207.tsv / frame_batch_gaps201.tsv.
+Goal: the method of MANT-0609X and MANT-0609Y (NOTES sections; mant0609/ scripts: sheets of downscaled frames, film header cropped, order shuffled,
+two controls of known class planted per batch) on the not-yet-seen 694/08 frames at stride 4 (about 135 frames), to list cipher frames and mark
+each glossed / unglossed, est. tokens. Request budget: <= 150 GETs to sachsen at >= 1.5 s, "sachsen take"/"sachsen release" lines, fetch to scratch
+at a reduced size if the host serves one, else full and downscale locally; keep only the sheets and a manifest committed (folder < 30 MB). Sonnet
+sheet calls ~1 each (state count x rate in your ROOM claim), eye-check every non-"none" flag yourself at ~1000-1600 px. Prior-work check 1 first
+(grep each frame in the inventories so no frame is fetched twice). Write mant0608/inventory_stride4.tsv, rank_unglossed_08.tsv, rank_glossed_08.tsv,
+NOTES "MANT-INV08 (9 Oct 2026)" with the request count, Remaining gaps / Escalation image-check row updated, gaps_check. No transcription.
+
+### BRANDT-MARGIN (Opus, cap 2, box 50 min): hessen-daenemark-1672, 0020 margin lines 1-2 blind re-read + 0062 gloss phrase search
+NOTES "V-BRANDT" / "BRANDT-REGRADE" next: (1) blind re-read of the 0020 margin lines 1-2 from committed crops (dk131_brandt/cropsU or crops; no
+new fetch), two blind Sonnet passes not shown values_gate.tsv or any prior pass/gloss file; compare with the worker-settled reading BRANDT-UP used;
+if they differ, re-run score_up.py unchanged on each blind pass and report the numbers beside the old (no grade upgrade from this job: BRANDT-UP's
+tokens stay M unless a pre-registered gate run on blind inputs passes -- write PREREG-BRANDT-MARGIN.md before scoring if you score). (2) Prior-work
+check 5 on the 0062 gloss: tools/print_check.py (Google Books with country=US and the key; one try, no loop on 429) on 3-4 distinctive gloss phrases
+plus one positive control; paste results. NOTES "BRANDT-MARGIN (9 Oct 2026)", gaps_check. 2 vision passes + CPU, ~$1.8.
