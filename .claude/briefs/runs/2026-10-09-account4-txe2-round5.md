@@ -1,0 +1,18 @@
+# TXE2 round-5 jobs (LANE TX-ENGINEER-2 incarnation 2; Opus 5.5; one job per worker; PREREG benchmark-tx/PREREG-txeng2-5.md is binding)
+For LANE TX-ENGINEER-2 (account 4, incarnation 2, session_011EV9AKeJ4YuU9jjghdUy6F). Written 9 Oct 2026 18:3x UTC by date -u.
+Same preamble and rules as `.claude/briefs/runs/2026-10-09-account4-txe2-round2.md` (fetch + checkout main, CIPHERLAB_ACCOUNT=account-4,
+room.py --start, ROOM.md last 30 lines, claim line, read your PREREG section + PREREG-txeng2-0.md with Amendments 1-3, TRANSCRIPTION.md,
+CLAUDE.md Usage 6 and rule 3; tools with --help, offline test, SYSTEM.md and tool_shelf rows; commit every output BEFORE any score;
+never score an eval item for an experiment; never edit a *.truth.tsv by hand (a verifier writes through the build script's flag column);
+readers see crops and the blind sheet/brief only; never AskUserQuestion; stage by path; never force-push; stop before a unit that would
+cross 80% of cap or box; done line "for LANE TX-ENGINEER-2" with every number and "cost: the orchestrator get_session reading").
+Added this round (PREREG-txeng2-0 Amendment 3): RESULTS.md names the sha256 of every file it claims was committed before a score,
+beside the commit hash; RESULTS.md ends with "Openings of eval truth: N" (read-free uses of any eval item's truth; 0 for these jobs
+except V2, which is a verifier). Any "native" reader arm says "do not resize" in the reader brief (TX-RED F14). + `.claude/briefs/README.md` common tail.
+| job | PREREG section | cap | box | inputs to read first |
+|---|---|---|---|---|
+| TXV-SPIN | V2 | 3 | 50 min | benchmark-tx/build_spinelli_confirm.py (add a flag column as build_birago152.py has; the script regenerates truth + sha256), benchmark-tx/birago1572-f152r.flags.tsv + birago1572-no87.flags.tsv (format), benchmark-tx/txeng2/errormap/spinelli-c1519-confirm_positions.tsv (the six positions), ciphers/spinelli-beinecke-c1515/verify2/{cipherbrain_2017-03-24_tommaso.txt,align_2017_signs.tsv}, key.tsv, images/ (native page images + p1c/p2c line crops), benchmark-tx/txeng/confirm/ (crops the passes saw, collapse_map.tsv) |
+| TXE2-MODEL | X21 | 12 | 100 min | benchmark-tx/txeng/units/README.md + labels_dev_tune.tsv, ciphers/nevers-birago-fr3251-1572/harvest/f178v/ (s1/s2/s3 crops, blind_pass_brief_1572.md, adjudicate_in/out.tsv = the folder protocol), benchmark-tx/outputs/{birago1572-no87,dint-f128-print,ceppo-f87-S}/passA.tsv passB.tsv, benchmark-tx/txeng2/cost/ and cost2/ (the Opus arm-a reads and their crop provenance; regen_crops.sh), ciphers/fr3621-dinteville-1592/f128/pass_instructions.md, ciphers/ceppo-nevers-fr3251-1570s/harvest/f87/, tools/reconcile_passes.py, tools/tx_bench.py |
+| TXE2-PAIR3 | X2c | 4 | 50 min | tools/tx_pair_clf.py (+ its test), benchmark-tx/txeng2/pair2/RESULTS.md, ciphers/nevers-birago-fr3251-1572/atlas/no87_box_token.tsv (the box recipe, f178v/f179r only), benchmark-tx/txeng/units/labels_geo.tsv, benchmark-tx/birago1572-no87.truth.tsv (f178r lines, read only by the training step), ciphers/nevers-birago-fr3251-1572/harvest/f178r/ crops |
+| TXE2-BOXES | P1 | 3 | 40 min | benchmark-tx/txeng2/feed/RESULTS.md + focus files, ciphers/nevers-birago-fr3251-1572/sorter/no87/ (input format), ciphers/nevers-birago-fr3251-1572/atlas/ (the f152r boxes), benchmark-tx/txeng2/f152r/crops/, ciphers/spinelli-beinecke-c1515/images/p1c,p2c crops, tools/sign_sorter.py --help |
+| TXE2-RECUT | R3 | 6 | 60 min | benchmark-tx/txeng2/bir1591-f23r-gloss/ (RESULTS.md, the native region file, crops/, the reader brief), benchmark-tx/outputs/bir1591-f23r-gloss/passA.tsv passB.tsv passZ_pipeline.tsv, tools/iiif_lines.py --help (--image, --mask-neighbours, --debug), tools/reconcile_passes.py |

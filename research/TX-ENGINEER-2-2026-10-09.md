@@ -14,7 +14,7 @@ than today's, by a paired count (signs fixed minus signs broken) that clears a p
 30% gain, plus one look at a fresh leaf (the confirm2 item) built by someone outside the lane. The first thing we checked was the
 measurement itself: the first campaign's units carried 12-15 errors, which gives a genuine 30%-better instrument about a 1-5% chance
 of passing, so its twenty-three "nothing works" results were mostly non-tests. We rebuilt the pool (a second Birago leaf from its
-decipherment slip; the Spinelli leaf reused) to 26 doubt-free errors, chose the test from a power table, and ran the controls
+decipherment slip; the Spinelli leaf reused) to 25 unflagged errors (Spinelli's 14 still await a verifier pass, now running), chose the test from a power table, and ran the controls
 (a planted 30% fixer passes 85% of the time; a no-op, a random change and a worse instrument pass 0%).
 
 Fifteen experiments then ran, each pre-registered, each scored on development lines before any held-out look. None earned a
@@ -25,8 +25,9 @@ the right sign at 10 of 12 errors but neither a word-level language model nor a 
 reader took the wrong alternative 14 times in 19); showing the hand's own page beside a doubtful sign removed the pull that
 printed exemplars caused but gained nothing. Two things did move. First, the sorter feed: a read-free rule now finds 10 of 12
 development errors at 14% of positions flagged, and in an oracle-bounded simulation (the truth standing in for you; real owner decisions on file moved 0 of 3) it takes the held-out lines to 2% in about 22 decisions per tile instead of 32 (propagating a decision to a whole atlas cluster is destructive on this atlas, so each decision counts for
-one tile, or one pile within a cluster at most). Second, cost: one call per page read a Dinteville leaf better and at a third of
-the tokens of one call per line at 2x, a lead being replicated now.
+one tile, or one pile within a cluster at most). Second, cost: one call per page read a Dinteville leaf at about a third of the tokens of one call per line at 2x, at an accuracy
+within one reader's spread of the per-line call (replicated on a second reader and a second hand); neither Opus arm beat the best
+Sonnet single pass on either leaf, which is now its own experiment (the reader model, X21).
 
 The known-answer material for hands that read at 10-25% is the real bottleneck. Three glossed Dinteville leaves and one Birago
 1591 leaf were fetched from DECODE and built, but a key rebuilt from a gloss cannot score the reads it was built from, and the
@@ -38,11 +39,11 @@ What you should do at the sorter: the feed (TXE2-FEED, being written) lists the 
 ## Headline numbers (S1-S5)
 | what | figure | source |
 |---|---|---|
-| S1 held-out gain | no instrument earned an eval look; eval looks spent 0; the pool is 26 doubt-free errors (tuned-leaf lines 10 + held-out leaves 16), gate p < 0.05 (Amendment 2) | PREREG-txeng2-0 |
+| S1 held-out gain | no instrument earned an eval look; eval looks spent 0; the pool is 25 unflagged errors (tuned-leaf lines 10 + held-out leaves 15; Spinelli's 14 unverified, V2 running), gate p < 0.05 at >= 24 (Amendments 2-3; clean 30% fixer 0.797) | PREREG-txeng2-0 |
 | S2 confirm2 | not looked at (vivonne1573-f103r-confirm2 built by account 1, 1,068 scored; look held until C1 and TX-RED's review of Amendment 2) | PREREG-txeng2-S2 draft |
 | S3 live letter | TXE-R (first campaign, same pipeline): f.117r err_2reader 0.134, S 207 vs 190 committed, judge 0.010 worse, no licensed change | ciphers/birago-fr3252-1571-72/harvest/f117/RESULTS-TXE-R.md |
 | S4 sorter | feed: dev 10/12 at 14.0% flagged; eval read-free 9/15 at 2.9% (substitute rule); decisions-to-2% per tile: eval 22 (was 32); whole-cluster propagation destructive (77% purity) | benchmark-tx/txeng2/doubt/, sorter/ |
-| S5 cost | one per-page Opus call: 0.235 err at 332k input tokens per 100 signs vs per-line 2x calls 0.318 at 1,096k (N=1; X8b replicating) | benchmark-tx/txeng2/cost/ |
+| S5 cost | one per-page Opus call at 0.29-0.30x the input tokens of per-line 2x calls, accuracy within reader spread (dint 0.235/0.318 vs 0.318/0.388; Ceppo 0.122 vs 0.166; N=2 readers x 2 hands); both Opus arms worse than the best Sonnet single pass (dint B 0.188, Ceppo A 0.043) | benchmark-tx/txeng2/cost/, cost2/ |
 
 ## The experiment table (gate per PREREG-txeng2-0 + Amendment 2; dev = dev_tune unless stated)
 | id | instrument | dev (paired, p) | eval (looks) | verdict | cost |
@@ -75,4 +76,4 @@ Open: X2b with more labelled tiles of the same hand (new material); the colour m
 gloss leaves from a native image; the grown-sheet read on Spinelli only if X1b's recall table licenses it (then the first eval look).
 
 ## Costs and looks
-21 workers ledgered 125.51 + round 4 (caps 18) ; lane orchestrator incarnation 1 about 23 by get_session. Eval looks 0, S2 looks 0.
+26 workers ledgered 148.71 (round 4: 21.22 + TXP-KP2C 1.98) + round 5 (caps 28); lane orchestrator incarnation 1 about 23 by get_session, incarnation 2 from 18:23 UTC. Eval looks 0, S2 looks 0; read-free eval openings: 0d 1, X9 1, X1b 3.

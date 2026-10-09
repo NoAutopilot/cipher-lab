@@ -52,7 +52,7 @@ f152r or spinelli (it would open their truth, a look the lane has not spent).
 > belong to and, where we know it, what to look at (the descender, a closed loop, a tail; whether the line band may have
 > cut the sign; whether the ink is a hairline). The computer does not say which pile it thinks is right, and each answer
 > moves that one tile only. On no.87 the simulation says the 11 tiles should take about half of the remaining errors out
-> of that stretch; on f.152r and Spinelli the queues are shorter than the errors they hold, so they are a first pass, not
+> of that stretch if every answer is right (an oracle bound; the three real decisions on file fixed none of the three signs they moved); on f.152r and Spinelli the queues are shorter than the errors they hold, so they are a first pass, not
 > a finish -- the readers agree on several wrong signs there, and nothing we have flags those yet.
 
 ## Gaps (one line each, not started)

@@ -156,3 +156,38 @@ with --help, an offline test, a tool_shelf.tsv row and a SYSTEM.md row.
   every eval paired count is reported split: held-out lines of the tuned leaf (eval_heldout, 10 flagged-excluded) and
   held-out leaves (spinelli 14 + f152r 2 = 16), with the pool total; a result that holds only on the tuned leaf's lines is said
   so.
+
+## Amendment 3 (lane incarnation 2, session_011EV9AKeJ4YuU9jjghdUy6F, 9 Oct 2026 18:3x UTC by date -u; after TXV-152 (V1) and TX-RED pass 2 F9/F11; written BEFORE any eval look, none spent)
+- **Eval pool recount (F9 adopted).** After V1's verdicts (benchmark-tx/birago1572-f152r.flags.tsv: L03.32 CORRECT, L04.16 and
+  L04.18 FLAG, L03.8 as built), `tx_bench.py ... --item birago1572-f152r --exclude-flagged` re-run this incarnation: as measured
+  0.069 (5/73: 4 wrong + 1 inserted); flagged excluded 0.029 (2/70: 1 wrong + 1 inserted; 3 flagged). Position errors
+  flagged-excluded = **1**. Eval pool, flagged excluded = eval_heldout 10 + spinelli 14 + f152r 1 = **25** (tuned-leaf lines 10,
+  held-out leaves 15). `tx_power.py --errors 25 --n 630 --fix 0.3 --alpha 0.05` (1,000 draws): clean 30% fixer passes **0.797**
+  (E 24: 0.774; E 23: 0.706); at p 0.01 0.221; no-op, random-3%, 30%-worse 0.000. The branch in force stays **p < 0.05 at
+  >= 24 errors** as Amendment 2 declared; the 0.797 figure is reported as it is (three thousandths under the 80% bar at this
+  draw) and the gate is not moved on it. Growing the pool is the remedy, never the threshold.
+- **Under 24 (declared now, F9 ii).** If any later verifier verdict or truth correction takes the flagged-excluded pool under
+  24, no eval look is spent until an eval item built under 0b's rules (an independent key and a known text) restores >= 24;
+  the branch does not move in either direction.
+- **Spinelli verification before the first look (F9 iii).** No eval look is spent before a verifier session (never a lane
+  solver) has decided Spinelli's 6 all-same-wrong positions (the 2 deleted h, i <- EIGHT, e <- SIX, p <- THREE, n <- PHI;
+  benchmark-tx/txeng2/errormap/spinelli-c1519-confirm_positions.tsv) from the Beinecke image and the 2017 plaintext through
+  build_spinelli_confirm.py's flag column (TX-TRUTH-VERIFY's shape; PREREG-txeng2-5 V2), and the pool is recounted here as
+  Amendment 4. A look taken on a pool a later verifier shrinks cannot be un-taken.
+- **kp2 items (F11 adopted).** C1 (TXP-KP2C) FAILed its declared gate (31/59 = 0.525 set equality; the equal-or-contains
+  59/59 figure is reported beside and is not a gate). Register verdict for dint-f89/f98v/f113-gloss-kp2: **truth-unknown;
+  usable for err_2reader and read-free agreement work only**, not "pending a gate". No alternative gate on f.128 is
+  pre-registered: on the one leaf with an independent truth kp2 scores 52 positions the print recipe excludes, where its
+  truth is unverifiable by construction. A second independent witness (a print, a clerk sheet) is the only thing that makes
+  those leaves a known answer.
+- **Read-free eval openings (F6 adopted).** From this amendment every results-log row in research/TX-IDEAS-2-2026-10-09.md
+  carries, in its eval cell, the count of read-free openings of eval truth the experiment made ("openings: N"), and the
+  register's eval_result column inherits it; the campaign line "Eval looks taken so far" names both totals.
+- **Audit trail (F7 adopted).** Every RESULTS.md written from this amendment carries the sha256 of each file it claims was
+  committed before a score, beside the commit hash (lane brief Amendment 2); the round-5 worker brief states it; a RESULTS
+  without it is entered in the register as "committed-before-score unverified".
+- **Reader model (F13).** The campaign's "today's pipeline" mixes a Sonnet reconcile pipeline (no.87 L) with Opus pipelines
+  (f152r, the gloss items, S2's planned passes). PREREG-txeng2-5 X21 tests the reader model as an instrument on the dev pool;
+  if the Sonnet arm wins at p < 0.05 the baseline of every pool item is re-run as Sonnet before any instrument is scored on it
+  and the "never below" rule is amended for the reader role; until then no eval look is spent on an item whose baseline model
+  differs from the instrument's reader (declared here, before any look).
