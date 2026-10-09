@@ -111,3 +111,7 @@ decode_configs reproductions, update SYSTEM.md if its description of --check cha
 
 ### HEIN-SR4 (Sonnet, cap 1.3, box 50 min, huygens take/release): heinsius-vanhaersolte-1703, small_runs Deel 2 pp.372-491
 As HEIN-SR3.
+
+Sessions wave 2 (15:51 UTC): MANT-0136B session_01Nvaqy73ZhkM6KLDwMYVn8v (Opus); MANT-CEN3 session_017xoW4Esk2vaZC9iHg4YMDF (Sonnet); MANT-FIX
+session_015V5DDMXtz5HfyxHWqCmaDa (Opus); SUR-KB session_0154RpSj3UHX8Kd3eB3G3P1V (Opus); TOOL-CHK session_013uKUj3z41pHiKNkmCBQLWQ (Sonnet);
+HEIN-SR4 session_01GS7TwbuDkriXWK7sK59qub (Sonnet).
