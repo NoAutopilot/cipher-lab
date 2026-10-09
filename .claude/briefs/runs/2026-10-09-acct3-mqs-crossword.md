@@ -1,10 +1,10 @@
 # MQS-CROSSWORD: test a guessed value at every occurrence, then follow what it opens (job D of LANE MQS)
 
 Written 9 Oct 2026 (clock read 00:58 UTC) by the account-3 orchestrator's reconciling session, for one worker on
-**account 4**. Lane brief: `.claude/briefs/runs/2026-10-09-acct3-mqs-lane.md`. Background: matrix row M20 (and M33) of
+**account 4**; revised 9 Oct 2026 (clock read 01:26 UTC) by the check-and-fix pass. Lane brief: `.claude/briefs/runs/2026-10-09-acct3-mqs-lane.md`. Background: matrix row M20 (and M33) of
 `research/MARY-STUART-TALK-2026-10-09.tsv`.
 
-- **Model:** Opus 5.5. **Cap:** USD 6.5. **Box:** 120 min.
+- **Model:** Opus 5.5. **Cap:** USD 7. **Box:** 130 min.
 - **Goal:** the paper's nomenclature phase as a shared, declared non-blind option: one symbol after L'ARRIVEE
   PROCHAINE is guessed as DE and checked at every other occurrence; each confirmed value opens more words (the
   "avalanche effect"); a guess that fails anywhere is dropped (talk [00:19:20]-[00:23:49]; paper p.115 n.51,
@@ -31,11 +31,27 @@ The method already exists, with controls, in target folders:
   value without editing key.tsv), `freq.py --kwic` (untested display). The closed TOOLS-TOMO lane built `--consistency`;
   do not change it.
 
+## What failed and why (read before porting; cite in the docstring)
+
+- **The same instrument's later runs on Gramont accepted nothing.** A2-GRA3 (round 2) and A2-GRA4 (round 3), 3 Oct 2026,
+  re-ran `test_f30r_top.py` on f.30r with only the base key changed between runs (Gramont NOTES.md lines ~920-1026):
+  no hypothesis on L01, L02, L11, L12 was accepted. HASH and B8 sat at shuffled-position p 0.61-1.00 (B8 NULL 79.8 bits,
+  p 0.614; HASH EMPEREVR 3.3 bits, p 1.000), i.e. not separated from random positions; E's I (61.5 bits, p 0.010) was
+  rejected by the breakage rule (8 of 26 outside occurrences lose more than 3 bits); CROSS/CROSSp "never passed its
+  control; the instrument is retired for it (rule 3, third attempt)", with only 5, 2 and 1 occurrences per shape. Lesson
+  for the shared option: at low n, and on lines that are not in the model's language, the shuffled-position null cannot
+  separate, so `--try` says "undecided" there rather than ranking.
+- **The 24 Sept control's own limitation** (NOTES.md ~575): "only 25 distinct keyed signs could fill the pool, so the
+  draws repeat signs, and the 103 accepted control proposals are not 103 independent trials." K1 below reproduces that
+  pool, so 50/53 overstates the power any grade-S licence would rest on; quote the sentence beside K1 in the PREREG and
+  the docstring.
+
 ## Files
 
 `tools/decode_key.py` (the `--try`, `--avalanche`, `--try-log` options and their functions only),
 `tools/french16_ngram.py` (an optional corpus-directory argument to `load()` that reads every `*.txt` and
-`*.txt.gz` in that directory, one cache file per corpus, folding unchanged, the default fr16 behaviour identical), `tools/tests/test_decode_key_try.py`, `tools/tests/PREREG-MQS-CROSSWORD.md`,
+`*.txt.gz` in that directory, one cache file per corpus, folding unchanged, the default fr16 behaviour identical),
+`tools/tests/test_decode_key_try.py`, `tools/tests/PREREG-MQS-CROSSWORD.md`,
 one header line each in `ciphers/fr2980-gramont/infer_unkeyed.py` and `test_f30r_top.py`, rows in
 `tools/data/tool_shelf.tsv` and `SYSTEM.md`. **Wait for the ROOM line "MQS-SHEETS ... step 1 pushed" before editing
 decode_key.py** (MQS-SHEETS adds `--style case` there first); spend that time on unit 1. If the line has not appeared
@@ -43,14 +59,17 @@ decode_key.py** (MQS-SHEETS adds `--style case` there first); spend that time on
 
 ## Units (stop before a unit that would cross 80% of cap or box)
 
-| # | Unit | Estimate |
-|---|---|---|
-| 1 | Read the Gramont scripts; write PREREG and the offline tests | USD 0.8 |
-| 2 | Promote into `decode_key.py --try/--avalanche/--try-log`; corpus argument in french16_ngram | 2.2 |
-| 3 | K1: reproduce Gramont through the shared tool | 0.8 |
-| 4 | K2 Blathwayt and K3 Danzay, gated per value class | 1.4 |
-| 5 | Registration | 0.4 |
-| | Total 5.6; cap 6.5 | |
+Minutes are planning estimates, about 80% of the box split by each unit's dollar share (nearest measured rows: the
+TOOLS-TOMO single-option Opus jobs of 8 Oct 2026, 11-18 min and USD 3.75-5.11 each, LEDGER.md lines 3548-3552).
+
+| # | Unit | USD | Min |
+|---|---|---|---|
+| 1 | Read the Gramont scripts and their later failed runs; write PREREG and the offline tests | 0.8 | 14 |
+| 2 | Promote into `decode_key.py --try/--avalanche/--try-log`; corpus argument in french16_ngram | 2.2 | 38 |
+| 3 | K1: reproduce Gramont through the shared tool | 0.8 | 14 |
+| 4 | K2 Blathwayt and K3 Danzay, gated per value class, each with its unigram baseline | 1.6 | 28 |
+| 5 | Registration | 0.4 | 7 |
+| | Total 5.8 of cap 7; 101 of box 130 | | |
 
 ## Behaviour
 
@@ -70,7 +89,9 @@ python3 tools/decode_key.py ciphers/<t> [--config C] --avalanche [--lm ...] [--a
 5. Undivided readings work (the statistic needs no word segmentation), which also covers the targets where
    `--consistency` prints "skipped" (Danzay, Blathwayt).
 6. `--try-log` appends: time, hypothesis, occurrences, statistic, both null p95s, verdict (accept / reject / undecided;
-   n = 1 is always undecided, never rejected), the flag `non-blind`.
+   n = 1 is always undecided, never rejected), the flag `non-blind`. The default path `ciphers/<t>/crossword_log.tsv`
+   is for real use after the controls pass; **every control run in this job sends `--try-log` to `tools/tests/` or your
+   scratchpad**, never into the Gramont, Blathwayt or Danzay folders (this lane changes no target file).
 7. Grading, in the docstring: a value accepted by `--try` is entered by a person or a later job as **M**, and as S only
    when `--try`'s own known-answer control below passed for that value class and design; never H or C.
 
@@ -87,21 +108,33 @@ the current key value returns a zero statistic, not an error. The existing `test
 - **K1, Gramont reproduction** (`ciphers/fr2980-gramont`, f.29r + f.30r-v, fr16): the infer_unkeyed hidden-sign
   protocol through the shared tool, same seeds, same draws. Expected: 155/200 proposals right (+-5) and 50/53 under the
   acceptance rule on draws 5-9 (+-2). Gate: both within tolerance; otherwise the promotion changed something, and you
-  find what before anything else.
+  find what before anything else. K1 is a **reproduction** (it shows the port is faithful), not a power measure: only 25
+  distinct keyed signs filled its pool, so its proposals are not independent trials (quote the NOTES sentence).
 - **K2, Blathwayt** (`ciphers/huntington-blathwayt-madrid-1728`, French 1728, `--lm` built on `tools/data/fr18`; key.tsv
   has 388 C-grade gloss rows, 119 with n >= 3): leave one out over the n >= 3 word values; each hidden code is offered
-  its true value plus 9 distractors of the same class and length band from the key's own word list. Gate for the
-  **word** class: the true value ranks first for at least 70% of hidden codes AND the false-accept rate under the
-  acceptance rule is at most 10%. The **title and name** class (roy, reine, empereur, princesse, france, cour; small n)
+  its true value plus 9 distractors of the same class and length band from the key's own word list. **Every rate is
+  counted per distinct code, never per draw.** Gate for the **word** class: the true value ranks first for at least 70%
+  of hidden codes AND the false-accept rate under the acceptance rule is at most 10%, **computed only over hidden codes
+  with n >= 5** (the acceptance rule needs n >= 5, so codes with n 3-4 can never be accepted and would pull the rate
+  toward 0 by construction); report how many n >= 5 codes there are. The **title and name** class (roy, reine, empereur, princesse, france, cour; small n)
   is reported only: a name cannot be expected to fit a period lexicon (rule 3, AX-NAMES: gate per class). Also report a
   unigram-frequency-only baseline beside the word class: if it already ranks first at about 95%, the control has no
   headroom to show the context model adds anything, and you say so.
 - **K3, Danzay** (`fr20140-danzay-1557`, fr16, Tomokiyo's 2026 reconstruction via the test config): hide each
-  H-graded letter code with n >= 5 in turn; gate: the true letter ranks first for at least 70%.
-- TX-CROSSWORD (the transcription variant on Birago no.87) is **not** in this job. It is its own Opus session later,
-  only after K1-K3: gate err_true below 0.045 on no.87 (the best measured read, TRANSCRIPTION.md row 1, not TX-DECODE's
-  0.081), paired fixed > broken at p < 0.05, an eye check of every changed sign, a second held-out item, and a stated
-  reason why it differs from TX-DECODE and TX-ALTS (rule 3's third-attempt clause).
+  H-graded letter code with n >= 5 in turn (counted per distinct code); gate: the true letter ranks first for at least
+  70%. Report the unigram-frequency-only baseline beside it, as in K2: if that baseline already ranks first at about
+  95%, K3 has no headroom to show the context model adds anything, and you say so.
+- TX-CROSSWORD (the transcription variant on Birago no.87) is **not** in this job. It would be the **fourth** attempt at
+  "the decipherment corrects the transcription" on the same item, after three that failed for named reasons
+  (TRANSCRIPTION.md line 22; tool_shelf `key_decode_lattice.py` row): **TX-DECODE** (3 Oct; lam 1 raised err_true 0.081
+  to 0.100; only 27/97 errors have the truth anywhere in the reader lattice), **TXD-HOLDOUT** (3 Oct; lam re-chosen on
+  held-out lines, 36 vs 37 wrong of 521, too thin; its wrong-key gate also passed 9/15 shuffled lattices) and **TX-ALTS**
+  (4 Oct; a/b? alternatives put the truth in the lattice 12/35 against a 50% gate; 0 fixed / 0 broken). A crossword that
+  only re-picks among the readers' candidates is capped by truth-in-lattice. Its own Opus session later, only after
+  K1-K3, must therefore say how it reaches a value the readers never proposed (a re-read of the image for the flagged
+  signs, not a lattice re-pick) or use new material, per rule 3's third-attempt clause; gate err_true below 0.045 on
+  no.87 (the best measured read, TRANSCRIPTION.md row 1, not TX-DECODE's 0.081), paired fixed > broken at p < 0.05, an
+  eye check of every changed sign, a second held-out item.
 
 ## Registration
 
