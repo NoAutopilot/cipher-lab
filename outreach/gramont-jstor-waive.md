@@ -1,4 +1,4 @@
-status: ready (26 Sept 2026 16:48 UTC; date of the commit that set it, added by parent 7i for desk_check rule 6)
+status: ready (9 Oct 2026 05:1x UTC, re-dated by orchestrator (account-4) at the takeover check-in: JSTOR-QUEUE.tsv still holds 12 queued rows for this draft -- fr2980-gramont 4, lodewijk-van-nassau-1573-74 4, thurloe-printed 4; the danzay and blathwayt rows are all done, so those two paragraphs are satisfied; the choice -- run with the local runner or set each row `waived <date>` -- stands for the 12. Was: ready 26 Sept 2026 16:48 UTC, added by parent 7i for desk_check rule 6)
 subject: Seven readings are at N4; run or waive their JSTOR rows so the outreach can go out (Gramont x2, Danzay, Thurloe P4, Lodewijk van Nassau x3)
 to: you (no email; JSTOR-QUEUE.tsv or the local JSTOR runner)
 
