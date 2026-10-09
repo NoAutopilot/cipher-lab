@@ -1,0 +1,13 @@
+# KEY-LAV (9 Oct 2026, account 1, for LANE LEDGER): verdicts on key_lav.py --blind (seed 20261009, 6 windows), written before --unmask.
+# R = the given person reads in context (date, place, role), N = does not, U = unclear. Scored: R counts as read; N and U do not.
+# Disclosure: NOT blind to the candidate. This reader had read AUDIT "## AUDIT (FV-MS18c)" s.3 and key.md's Lavender row, and the cached
+# transcriptions of 9870/9893, before the windows were drawn; the candidate value is visibly the one key.md already gives. The verdicts
+# are judged on context, but a reader who knows the answer cannot be blind to it; the control's value is that it shows how often a random
+# key.md person fits the same slot.
+n	mark	note
+00	N	Secretary of State asked to assist Paducah/Columbus with forces he 'sent up the Tennessee': not a field commander
+01	N	General-in-Chief addressed by a message signed General-in-Chief, 'assist you at Memphis': does not fit
+02	R	a general whose help with Burbridge's could drive Forrest south from Paducah/Memphis, Oct 1864: a West Tennessee commander fits
+03	R	addressee 'assist you at Memphis', Nov 1864: commander at Memphis fits
+04	R	addressee asked to assist Paducah/Columbus with forces sent up the Tennessee, Oct 1864: commander at Memphis fits
+05	N	Grant (at City Point) helping Thomas and Burbridge drive Forrest from Paducah: does not fit
