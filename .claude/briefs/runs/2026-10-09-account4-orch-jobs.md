@@ -72,3 +72,13 @@ transcription), re-run `decode.py --check` (exit 0), propagate to status.json (d
 second-opinions/PROMPT-chatgpt-e262.md if it exists, the same shape as the ledger4 jobs file's FIX-FM6 section
 (.claude/briefs/runs/2026-10-09-acct1-lane-ledger4-jobs.md). NOTES "## FIX-E262 (9 Oct 2026, account 1, for orchestrator (account-4))":
 each change, grade before/after, decode --check output; file_shrink_guard on every touched file. No new reading beyond the two fixes.
+
+### VERIFY-HELLEN (account-1; Opus 5.5; cap 5; box 75 min) -- rule 7 / rule 10 after UNA-HELLEN (9 Oct 06:18 UTC)
+hellen-frederick-1752: UNA-HELLEN adopted the R7A-HEL53 image-check and R8-HEL 0/8 corrections into key_r4369 as the counted reading
+through an input layer (build_input.py; ciphertext_R1953.txt untouched). A session that has seen only the spec, the key and the input
+layer re-derives the reading with the folder's decode script and `--check` (exit 0, rule 7), diffs it against the committed reading (a
+difference beyond the M-graded tokens sends it back), re-runs `tools/judge_plaintext.py specs/hellen-frederick-1752.json --file <reading>`
+and pastes the output, then audits the revision under rule 10 step 4: AUDIT.md's grade counts and safe sentence, the
+SECOND-OPINIONS-QUEUE.tsv row for this target, status.json depth fields (`tools/depth_check.py` exit 0) and NEAR.md's row all carry the
+revised counts (UNA-HELLEN's before/after table in NOTES "UNA-HELLEN (9 Oct 2026)"). Write AUDIT.md "## AUDIT (VERIFY-HELLEN)" with the
+N-class and depth re-stated (lowered on revision if the bar says so) and one true sentence about the content. Do not decode further.
