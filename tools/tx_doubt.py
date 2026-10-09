@@ -39,6 +39,19 @@ Usage (repo root, Birago no.87 defaults):
   python3 tools/tx_doubt.py signals --unit dev_tune --latt benchmark-tx/outputs/birago1572-no87/passL_lattice_dev_tune_lam4.tsv
   python3 tools/tx_doubt.py measure --unit dev_tune --base benchmark-tx/txeng/units/passA_dev_tune.tsv
   python3 tools/tx_doubt.py list --unit eval_heldout --combo show+bandcut
+  extend   --unit U (X9 + X17, TXE2-DOUBT, LANE TX-ENGINEER-2, 9 Oct 2026; PREREG-txeng2-2.md X9): adds read-free
+           columns to OUT/<unit>_signals.tsv -> OUT/<unit>_signals2.tsv (n_signals recomputed over every column).
+           Every other read is aligned to the unit's line read L per line (tx_bench.align, L as the reference; a sign
+           the other read drops at an L position counts as differing). Specs (repeatable):
+             --differ NAME=F1,F2..      1 where any Fi's aligned sign != L's (pairclf = tx_pair_clf output, whose
+                                        sign moves only where its margin passes the threshold; vote = X5 weighted
+                                        or uniform vote)
+             --differ-ref NAME=R:F1,..  1 where any Fi's aligned sign != R's aligned sign (selfcons, X17: the
+                                        K2 / V_s0 / V_s1 presentations vs pass A; H vs H2 on geo)
+             --below NAME=F:COL:T       1 where F's aligned COL < T (conf = X4's p1 < 0.7)
+             --line-flag NAME=F         1 on every position of a line whose `flag` is 1 (countchk = X19)
+           A spec whose files do not cover the unit's lines writes 0 there; the coverage per signal is printed.
+           `measure` then searches every signal column of the table it is given (--table).
 Offline test: tools/tests/test_tx_doubt.py (synthetic 20-position unit with planted signals and errors; no network).
 """
 import argparse, csv, itertools, json, math, os, re, sys
@@ -249,13 +262,124 @@ def errors_for(truth_path, read_path):
     return {(ln, ipos(p)): bool(v) for (ln, p), v in e.items()}
 
 
-def cmd_measure(a):
+def signal_cols(row):
+    return [c for c in row if c not in ('line', 'pos', 'sign', 'n_signals')]
+
+
+def align_to_L(L_by_line, other):
+    """{(line, L pos): other row or None} -- other's rows aligned to L per line (tx_bench.align, L as reference)."""
+    import tx_bench
+    by = defaultdict(list)
+    for r in other:
+        ln = r.get('line') or r.get('passage')
+        by[ln].append(r)
+    out = {}
+    for ln, Lr in L_by_line.items():
+        if ln not in by:
+            continue
+        orows = sorted(by[ln], key=lambda r: float(r['pos']))
+        osg = [(r.get('sign') if r.get('sign') is not None else r.get('sign_id')).strip() for r in orows]
+        ref = [r['sign'] for r in Lr]
+        j = 0
+        for ri, sg in tx_bench.align(ref, [{x} for x in ref], osg):
+            if sg is not None:
+                while osg[j] != sg:
+                    j += 1
+                o = orows[j]; j += 1
+            else:
+                o = None
+            if ri is not None:
+                out[(ln, ipos(Lr[ri]['pos']))] = o
+    return out
+
+
+def osign(o):
+    return None if o is None else (o.get('sign') if o.get('sign') is not None else o.get('sign_id')).strip()
+
+
+def extend_rows(rows, L_unit, specs):
+    """specs: list of (name, kind, args) with loaded rows; -> (rows with new columns, coverage {name: covered})."""
+    L_by_line = defaultdict(list)
+    for r in L_unit:
+        L_by_line[r['line']].append(r)
+    for ln in L_by_line:
+        L_by_line[ln].sort(key=lambda r: float(r['pos']))
+    Lsign = {(r['line'], ipos(r['pos'])): r['sign'] for r in L_unit}
+    cov = {}
+    cols = {}
+    for name, kind, args in specs:
+        col = {}
+        if kind == 'differ':
+            maps = [align_to_L(L_by_line, f) for f in args]
+            for k in Lsign:
+                hit = [m for m in maps if any(kk[0] == k[0] for kk in m)]
+                col[k] = (int(any(osign(m.get(k)) != Lsign[k] for m in hit)), bool(hit))
+        elif kind == 'differ-ref':
+            ref, fs = args
+            rm, maps = align_to_L(L_by_line, ref), [align_to_L(L_by_line, f) for f in fs]
+            for k in Lsign:
+                hit = [m for m in maps if any(kk[0] == k[0] for kk in m)]
+                on = bool(hit) and any(kk[0] == k[0] for kk in rm)
+                col[k] = (int(on and any(osign(m.get(k)) != osign(rm.get(k)) for m in hit)), on)
+        elif kind == 'below':
+            f, c, t = args
+            m = align_to_L(L_by_line, f)
+            for k in Lsign:
+                o = m.get(k)
+                on = any(kk[0] == k[0] for kk in m)
+                col[k] = (int(o is not None and o.get(c) not in (None, '', '-') and float(o[c]) < t), on)
+        elif kind == 'line-flag':
+            fl = {r['line']: int(r.get('flag') or 0) for r in args}
+            for k in Lsign:
+                col[k] = (fl.get(k[0], 0), k[0] in fl)
+        cols[name] = col
+        cov[name] = sum(1 for v in col.values() if v[1])
+    out = []
+    for r in rows:
+        r = dict(r)
+        k = (r['line'], ipos(r['pos']))
+        for name in cols:
+            r[name] = cols[name].get(k, (0, False))[0]
+        r['n_signals'] = sum(int(r[c]) for c in signal_cols(r))
+        out.append(r)
+    return out, cov
+
+
+def cmd_extend(a):
+    from tx_compare import unit_lines
+    lines = unit_lines(path(a.units), a.unit)
+    L_unit = [r for r in rd(a.line_read) if r['line'] in lines]
     rows = rd(os.path.join(a.out, f'{a.unit}_signals.tsv'))
+    specs = []
+    for sp in a.differ or []:
+        n, fs = sp.split('=', 1); specs.append((n, 'differ', [rd(f) for f in fs.split(',')]))
+    for sp in a.differ_ref or []:
+        n, rest = sp.split('=', 1); r, fs = rest.split(':', 1)
+        specs.append((n, 'differ-ref', (rd(r), [rd(f) for f in fs.split(',')])))
+    for sp in a.below or []:
+        n, rest = sp.split('=', 1); f, c, t = rest.rsplit(':', 2); specs.append((n, 'below', (rd(f), c, float(t))))
+    for sp in a.line_flag or []:
+        n, f = sp.split('=', 1); specs.append((n, 'line-flag', rd(f)))
+    rows, cov = extend_rows(rows, L_unit, specs)
+    out = os.path.join(path(a.out), f'{a.unit}_signals2.tsv')
+    cols = ['line', 'pos', 'sign'] + signal_cols(rows[0]) + ['n_signals']
+    with open(out, 'w', newline='') as f:
+        w = csv.writer(f, delimiter='\t', lineterminator='\n'); w.writerow(cols)
+        for r in rows:
+            w.writerow([r[c] for c in cols])
+    print(f'{a.unit}: {len(rows)} positions -> {out}')
+    for n in cov:
+        print(f'  {n}: flagged {sum(int(r[n]) for r in rows)}, positions covered {cov[n]} of {len(rows)}')
+    return rows, cov
+
+
+def cmd_measure(a):
+    rows = rd(a.table or os.path.join(a.out, f'{a.unit}_signals.tsv'))
     reads = [('L', os.path.join('benchmark-tx/txeng/units', f'labels_{a.unit}.tsv') if a.read is None else a.read)]
     if a.base:
         reads.append(('A', a.base))
     caps = [float(c) for c in a.cap.split(',')]
-    sigs = [s for s in SIGNALS if s in rows[0]] if not a.signals else a.signals.split('+')
+    sigs = signal_cols(rows[0]) if not a.signals else a.signals.split('+')
     report = {}
     hdr = '| signal / combination | wrong flagged | recall | flagged | share |\n|---|---|---|---|---|'
     for name, rp in reads:
@@ -284,14 +408,14 @@ def cmd_measure(a):
 
 
 def cmd_list(a):
-    rows = rd(os.path.join(a.out, f'{a.unit}_signals.tsv'))
+    rows = rd(a.table or os.path.join(a.out, f'{a.unit}_signals.tsv'))
     combo = a.combo.split('+')
     fl = [r for r in rows if any(int(r[s]) for s in combo)]
     print(f'{a.unit} combo {a.combo}: {len(fl)} of {len(rows)} positions flagged ({len(fl) / len(rows):.1%})')
     for n in a.per_session:
         print(f'  sorter sessions of {n} tiles: {math.ceil(len(fl) / n)}')
     for r in fl:
-        print(f"{r['line']}\t{r['pos']}\t{r['sign']}\t" + ','.join(s for s in SIGNALS if int(r[s])))
+        print(f"{r['line']}\t{r['pos']}\t{r['sign']}\t" + ','.join(s for s in signal_cols(r) if int(r[s])))
     return fl
 
 
@@ -316,11 +440,15 @@ def main(argv=None):
     m.add_argument('--signals', help='a+b+c: restrict the search to these signals')
     m.add_argument('--combo', help='a+b: report this fixed combination'); m.add_argument('--no-search', action='store_true')
     m.add_argument('--nmin', default='2,3,4', help='report n_signals >= each of these (default 2,3,4)')
-    m.add_argument('--json')
+    m.add_argument('--json'); m.add_argument('--table', help='signal table (default OUT/<unit>_signals.tsv)')
+    e = sp.add_parser('extend'); common(e)
+    e.add_argument('--line-read', default=D['line_read']); e.add_argument('--units', default=D['units'])
+    e.add_argument('--differ', action='append'); e.add_argument('--differ-ref', action='append')
+    e.add_argument('--below', action='append'); e.add_argument('--line-flag', action='append')
     li = sp.add_parser('list'); common(li)
-    li.add_argument('--combo', required=True); li.add_argument('--per-session', type=int, nargs='+', default=[10, 20])
+    li.add_argument('--table'); li.add_argument('--combo', required=True); li.add_argument('--per-session', type=int, nargs='+', default=[10, 20])
     a = ap.parse_args(argv)
-    return {'signals': cmd_signals, 'measure': cmd_measure, 'list': cmd_list}[a.cmd](a)
+    return {'signals': cmd_signals, 'measure': cmd_measure, 'list': cmd_list, 'extend': cmd_extend}[a.cmd](a)
 
 
 if __name__ == '__main__':

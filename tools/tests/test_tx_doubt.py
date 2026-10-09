@@ -65,6 +65,26 @@ def test_measure_end_to_end():
     assert [int(r['pos']) for r in fl] == [3, 7, 11, 15]
 
 
+def test_extend():
+    L = [dict(line='u_L01', pos=str(p), sign=x) for p, x in enumerate(['T1', 'T2', 'T3', 'T4', 'T5'], 1)]
+    rs = [dict(line=r['line'], pos=r['pos'], sign=r['sign'], show='0', n_signals='0') for r in L]
+    other = [dict(line='u_L01', pos=str(p), sign=x) for p, x in enumerate(['T1', 'T9', 'T3', 'T5'], 1)]  # T2->T9, T4 dropped
+    ref = [dict(line='u_L01', pos=str(p), sign=x) for p, x in enumerate(['T1', 'T9', 'T3', 'T4', 'T7'], 1)]
+    conf = [dict(passage='u_L01', pos=str(p), sign_id=x, p1=v) for p, (x, v) in
+            enumerate([('T1', '0.9'), ('T2', '0.5'), ('T3', '0.95'), ('T4', '0.6'), ('T5', '0.8')], 1)]
+    out, cov = TD.extend_rows(rs, L, [('vote', 'differ', [other]), ('selfcons', 'differ-ref', (ref, [other])),
+                                      ('conf', 'below', (conf, 'p1', 0.7)),
+                                      ('countchk', 'line-flag', [dict(line='u_L01', flag='1'), dict(line='u_L02', flag='0')])])
+    col = lambda n: [int(r[n]) for r in out]
+    assert col('vote') == [0, 1, 0, 1, 0], col('vote')          # substitution and deletion both differ from L
+    assert col('selfcons') == [0, 0, 0, 1, 1], col('selfcons')  # vs ref: T9=T9 agrees; dropped T4; T5 vs T7
+    assert col('conf') == [0, 1, 0, 1, 0], col('conf')
+    assert col('countchk') == [1] * 5 and cov['vote'] == 5
+    assert [r['n_signals'] for r in out] == [1, 3, 1, 4, 2], [r['n_signals'] for r in out]
+    out2, cov2 = TD.extend_rows(rs, L, [('vote', 'differ', [[dict(line='u_L09', pos='1', sign='T1')]])])
+    assert cov2['vote'] == 0 and col('vote') and all(int(r['vote']) == 0 for r in out2)   # uncovered line writes 0
+
+
 if __name__ == '__main__':
-    test_tables(); test_freq_flags(); test_measure_end_to_end()
+    test_tables(); test_freq_flags(); test_measure_end_to_end(); test_extend()
     print('ok')
