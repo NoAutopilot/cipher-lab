@@ -72,7 +72,7 @@ No. 9 entries N1), FIX-FM11 1.26, KEY-BLIND 1.30 (Tulip = stop 9/10 vs 2/10, Whi
 Exactly the FIX-FM11 method above. Sources: AUDIT.md s.5 of "## AUDIT (FV-FM10a)", "(FV-FM10b)" (E319 tulip = Open H as a per-entry note -- KEY-BLIND agrees;
 pony plain; E321 = the FM-R4a "second text on 5781" gap, received copy 12319), "(FV-FM10c)" (O9-BD C 7 H 5 with OR I/37 pt 2 p.293, FM-R7a M 2 withdrawn;
 O9-CC C 3 OR II/6 p.943; decode_no9.py notes through its own mechanism); NOTES "## KEY-BLIND" (E319 note); NOTES "## NO9-PAGES" (propagate the new No. 9
-H counts into AUDIT "LS3-V18a" and NOTES "## NO9-RI" count lines for O9-BA O9-BB O9-CA as a dated correction note, never rewriting the old text). Propagate
+H counts into AUDIT "LS3-V18a" and NOTES "## NO9-R1" count lines for O9-BA O9-BB O9-CA as a dated correction note, never rewriting the old text). Propagate
 to status.json rows and SO prompts (rule 10). decode.py / decode_no2.py / decode_no9.py --check exit 0; depth_check; file_shrink_guard; NOTES "## FIX-FM12".
 
 ## MS18-R2 (Sonnet 5.5, reader; cap $5, box 120 min): mssEC 18 (obj 10074), 10 more No. 1 rows of ms18/clean-ms18.tsv
