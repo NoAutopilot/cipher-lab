@@ -8377,7 +8377,7 @@ apart); loc.gov about 46 (searches + page JSON + OCR, 2-2.5 s apart; one 503, no
 
 ## AUDIT 2 (AUD2-LEDGER-16)
 
-Second verifier AUD2-LEDGER-16 (account 4, for orchestrator (account-4); the row moved from account 3), 9 Oct 2026, 05:09-05:4x UTC by
+Second verifier AUD2-LEDGER-16 (account 4, for orchestrator (account-4); the row moved from account 3), 9 Oct 2026, 05:09-05:39 UTC by
 `date -u`; a separate session from the reader FM-R4b and the first auditor FV-FM7b (both account 1), not protecting either's conclusions.
 This session read and audited none of these items before. Scope: **E260, E262, E263** (E261 and E266 are N1, not for second audit).
 Nothing decoded; key values looked up in key.md only. Key source for all three: `period`. Depth keep-or-lower
@@ -8492,4 +8492,4 @@ OR citation named vol. 40 pt 2, which starts on 13 June; 12 June is in vol. 36 p
 the unfiled second entry on 5812 is N1 if ever filed (OR I/42 pt 3 p. 739). status.json E260/E262/E263 rows: audit_status "two audits",
 safe lines and gaps updated; E263 grade "N3 (weak)". SO rows E260/E262/E263 already queued; their prompts updated (E263: the p. 739 companion; E260, E262: the windows read).
 Requests: hdl.huntington.org 26; archive.org 4 (3 djvu, 1 metadata) + advancedsearch 2 + be-api 4; scholarsjunction.msstate.edu 8 (listing,
-2 volume-page URLs, PDF by curl 1, browser tool 2, browser context 2: all PDF attempts 403); loc.gov 2; Google Books 0. Time 05:09-05:4x UTC.
+2 volume-page URLs, PDF by curl 1, browser tool 2, browser context 2: all PDF attempts 403); loc.gov 2; Google Books 0. Time 05:09-05:39 UTC.
