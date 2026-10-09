@@ -7472,6 +7472,23 @@ Mercy 1648 (the owner relayed D. Bourdeau's issue-16 comment at 17:1x): that is 
 is drafted at outreach/bourdeau-issue-mercy-reply.md, gate-7 checked 5 Oct 16:00 UTC, not posted -- now ASKS 160 on the desk (ASKS 8, on the
 desk since 21 Sept with no action, demoted to backlog to keep the cap).
 
+Check-in 5, 17:38-17:5x UTC 9 Oct (10:38 am PT): five_hour allowed; orchestrator context ~465k, cost 17.1. TX programme: TX-RED pass 1
+(8.33 for the first, full-reading pass; later passes should be incremental -- watched) found three BLOCKING findings and five material: F1 the
+dev gate is run on dev_tune (12 errors, 11% power for a clean 30% fix) although declared on the dev pool, so the right-way nulls X3 X5 X7
+X2b are non-tests, not fails (the first campaign's flaw one stage down); F2 the eval pool's 34 includes 8 verifier-flagged positions and no
+amendment names which count binds the paired test (flagged-excluded 26, power 0.55 at p 0.01); F3 the kp2 gloss item entered the dev pool
+while gloss-visible and its recipe's known-answer control (same recipe on the Dinteville f.128 print item) is unrun; F4 S1 says leaves never
+tuned on but eval_heldout is lines of the tuned leaf; F5 the S4 '2% in 22 decisions' is an oracle bound, the registered rule fails eval;
+F6 eval truth has been opened read-free by four analyses and the error map is on every worker's reading list; F7 room.py's rebase folded
+rounds 0-2 into one commit so 13 of 16 'committed before score' hashes do not exist (UPDATES.md line; sha256 rule); F8 f152r really adds 2
+unflagged errors. Sent to the lane for its 17:45 check-in with: no eval look and no S2 look while F1-F3 are open; answer each; the lane does
+not close (standing programme). TX-REGISTER done (2.12 D): 92 rows, --check gate. X2b pair classifier trained on the hand's own ink: 3 fixed
+0 broken (right way, no power at 12). AUD2-LEDGER-26/27 (E318; E319-E321) queued by LANE LEDGER-7 for account 3: re-tagged and spawned on
+account 4. Checks ok; keys 6; queue: SORTER-RERENDER-A3 only. Next check-in 18:19.
+TX programme table 17:5x UTC: slot 1 orchestrator 17.1 | slot 2 lane session_01NmaB9fhuaMSMYexV4NaVsR 22.9 (+workers; context 567k, hand-over
+soon), round 3 + X2b, check-in 17:45 | slot 3 TX-RED session_01WCmiKQwgGMzjVaBrAgxLiY 8.3, pass 2 at 18:06; open blocking F1 F2 F3 |
+slots 4-10: six lane workers live | outside the programme on account 4: AUD2-LEDGER-26, -27.
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;

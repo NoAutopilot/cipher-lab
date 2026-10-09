@@ -92,3 +92,7 @@ at ~600k), workers. At every check-in: get_session on the lane and TX-RED (ping 
 min silent), read research/TX-REGISTER.tsv's new rows and research/TX-RED-2026-10-09.md's new entry, keep the STATUS 'TX programme table' current,
 hold the gate (no Today move without S1/S2, no eval look without a dev pass, Nearest-prior line on every PREREG). ASKS 160 = the owner posts the
 checked Bourdeau reply (Mercy, issue 16); when he says posted, log the date in CONTRIBUTIONS.md row 59 and the draft header.
+STATE DELTA 17:5x UTC 9 Oct: TX-RED pass 1 = three blocking findings (F1 dev gate on an under-powered unit, F2 eval-pool flag convention undeclared,
+F3 gloss-visible item pooled, recipe control unrun); the lane must answer at 17:45 and take no eval/S2 look until F1-F3 close; the orchestrator
+reports open blocking findings to the owner. TX-RED cost 8.3 on pass 1 -- if pass 2 is above 5, lengthen its cadence to 60-90 min. AUD2-LEDGER-26/27
+live on account 4 (ledger + archive on their done lines).
