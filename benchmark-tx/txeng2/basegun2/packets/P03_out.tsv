@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+L13	11	ob	H	yes	bar above, tick
+L13	12	b	H	yes	looped b
+L14	12	Ib	M	yes	I with bars
+L14	14	rf	H	yes	small t joined to f
+L15	12	th	H	yes	crossed o
+L16	2	ob	M	yes	o with bars above and below
+L16	4	b	H	yes	looped b
+L17	10	ut	M	yes	u t with dot
+L18	1	ob	H	yes	o with bar
+L18	2	b	H	yes	looped b
+L18	5	b	H	yes	looped b
+L18	9	t	M	yes	small t, gap before f
+L18	10	f	M	yes	separate f after t
+L19	13	dd	H	yes	two d with bar
+L20	13	67	H	yes	6o7 shape
+L20	14	tb	M	yes	stem with top cross and b loop below

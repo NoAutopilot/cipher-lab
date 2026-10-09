@@ -1,0 +1,59 @@
+line	col	sign	conf	viewed	note
+L01	1	x+	M	yes	asterisk-like x with a hook at left
+L01	5	53	H	yes	
+L01	15	th	H	yes	
+L02	12	x_	H	yes	underlined x
+L03	8	Ib	H	yes	
+L04	4	60	H	yes	
+L04	5	NEW:f-with-bars	M	yes	f with extra bar near top
+L04	11	ps	H	yes	
+L04	14	]	L	yes	I-like with bars; Ib look-alike
+L04	15	Ib	L	yes	small I with serifs
+L05	4	01	H	yes	
+L05	5	6	M	yes	
+L05	8	L	M	yes	bracket open right
+L05	14	ps	L	yes	struck by horizontal strokes
+L06	13	th	H	yes	
+L07	6	NEW:d-crossed	M	yes	stem with crossbar and bowl
+L08	10	vi	M	yes	v with short stroke
+L08	16	]	H	yes	open left bracket
+L08	17	Ib	M	yes	small I with bars
+L09	8	th	H	yes	crossed o
+L09	12	o	L	yes	plain circle, no bar seen
+L10	3	b	M	yes	looped sign
+L10	14	th	M	yes	crossed o
+L10	16	or	M	yes	o with r
+L11	1	x	L	yes	x with curl, no clear vertical stroke
+L11	2	BLOT	M	yes	blot over small o
+L11	9	6	M	yes	small o with tail
+L11	14	Ib+	M	yes	I with extra stroke
+L11	15	f	H	yes	f above the line end
+L12	2	x	L	yes	x with small tick above, not a full bar
+L12	5	d6	M	yes	b-like with curl
+L12	6	x_	M	yes	x underlined
+L13	11	ob	H	yes	bar above, tick
+L13	12	b	H	yes	looped b
+L14	12	Ib	M	yes	I with bars
+L14	14	rf	H	yes	small t joined to f
+L15	12	th	H	yes	crossed o
+L16	2	ob	M	yes	o with bars above and below
+L16	4	b	H	yes	looped b
+L17	10	ut	M	yes	u t with dot
+L18	1	ob	H	yes	o with bar
+L18	2	b	H	yes	looped b
+L18	5	b	H	yes	looped b
+L18	9	t	M	yes	small t, gap before f
+L18	10	f	M	yes	separate f after t
+L19	13	dd	H	yes	two d with bar
+L20	13	67	H	yes	6o7 shape
+L20	14	tb	M	yes	stem with top cross and b loop below
+L21	1	th	H	yes	circle crossed by bar, stroke runs beyond
+L21	7	+	M	yes	small cross, short tick; t look-alike
+L21	11	o	H	yes	plain small o
+L21	15	Ol	M	yes	large looped scribble with struck/blot-like overwrite
+L22	3	o	H	yes	plain small o
+L22	6	q	H	yes	circle on descending stem
+L22	8	BLOT	H	yes	ink blot over sign
+L22	11	d6	M	yes	large bowl with stem curving right; b look-alike
+L23	15	q	H	yes	circle on descending stem
+L24	17	8	L	yes	cut by crop edge, 8-like

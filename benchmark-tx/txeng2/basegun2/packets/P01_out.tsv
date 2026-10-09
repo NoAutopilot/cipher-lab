@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+L01	1	x+	M	yes	asterisk-like x with a hook at left
+L01	5	53	H	yes	
+L01	15	th	H	yes	
+L02	12	x_	H	yes	underlined x
+L03	8	Ib	H	yes	
+L04	4	60	H	yes	
+L04	5	NEW:f-with-bars	M	yes	f with extra bar near top
+L04	11	ps	H	yes	
+L04	14	]	L	yes	I-like with bars; Ib look-alike
+L04	15	Ib	L	yes	small I with serifs
+L05	4	01	H	yes	
+L05	5	6	M	yes	
+L05	8	L	M	yes	bracket open right
+L05	14	ps	L	yes	struck by horizontal strokes
+L06	13	th	H	yes	
+L07	6	NEW:d-crossed	M	yes	stem with crossbar and bowl

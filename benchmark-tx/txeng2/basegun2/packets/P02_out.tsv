@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+L08	10	vi	M	yes	v with short stroke
+L08	16	]	H	yes	open left bracket
+L08	17	Ib	M	yes	small I with bars
+L09	8	th	H	yes	crossed o
+L09	12	o	L	yes	plain circle, no bar seen
+L10	3	b	M	yes	looped sign
+L10	14	th	M	yes	crossed o
+L10	16	or	M	yes	o with r
+L11	1	x	L	yes	x with curl, no clear vertical stroke
+L11	2	BLOT	M	yes	blot over small o
+L11	9	6	M	yes	small o with tail
+L11	14	Ib+	M	yes	I with extra stroke
+L11	15	f	H	yes	f above the line end
+L12	2	x	L	yes	x with small tick above, not a full bar
+L12	5	d6	M	yes	b-like with curl
+L12	6	x_	M	yes	x underlined
