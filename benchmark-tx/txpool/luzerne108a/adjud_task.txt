@@ -1,0 +1,6 @@
+Adjudication, Huntington mssDE 108(A) (TX-POOL-LEAF-2). Read benchmark-tx/txpool/luzerne108a/blind_pass_brief.md (the figure-shape
+guide and the rules) and benchmark-tx/txpool/luzerne108a/adjud_queue.tsv. For each queue row, open the named line's crop
+benchmark-tx/txpool/luzerne108a/crops/<line>.jpg, find the group at that column (the neighbour groups locate it), enlarge it
+(scratch dir only) and decide what the figures are. Candidates are two readers' readings ('-' = that reader saw no group there);
+you may choose either or a third reading, write NONE if there is no group there, or two groups separated by a space if the column
+holds two. Open no other file in the repository (no pass*, rec/, ciphers/). Write adjud_out.tsv with header `line	col	sign	note`.

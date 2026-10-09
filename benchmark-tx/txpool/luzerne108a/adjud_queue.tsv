@@ -1,0 +1,20 @@
+line	col	kind	candidates	left_neighbours	right_neighbours
+p1_L01	2	uncertain	895 | 895	436	880 86
+p1_L01	7	uncertain	947 | 947	1188 6	443 961
+p1_L07	6	disagree	- | 4	527 997	44 1068
+p1_L07	7	disagree	44 | 4	997 4	1068 587
+p1_L11	9	uncertain	941 | 941	991 460	1185
+p2_L01	2	uncertain	34 | 34	608	1153 1074
+p2_L10	8	disagree	947 | 967	1032 487	1151 381
+p3_L01	3	uncertain	1151 | 1151	830 912	32 555
+p3_L02	6	uncertain	595 | 595	10 232	888 351
+p3_L04	6	disagree	947 | 967	1199 389	555 1074
+p3_L05	2	disagree	947 | 967	1125	682 587
+p3_L12	2	disagree	741 | 761	414	542 884
+p4_L08	1	disagree	843 | 853		961 579
+p5_L02	5	disagree	474 | 174	36 6	713 486
+p5_L08	11	disagree	113 | 1113	482 387	
+p6_L02	6	disagree	143 | 145	832 80	878 141
+p6_L04	11	disagree	826 | 824	149 122	
+p6_L06	4	uncertain	1143 | 1143	381 830	880 202
+p6_L06	7	uncertain	540 | 540	880 202	993 890

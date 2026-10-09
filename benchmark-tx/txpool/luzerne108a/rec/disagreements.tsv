@@ -1,0 +1,12 @@
+line	col	A	B	flagged	crop
+p1_L07	6	-	4	B	benchmark-tx/txpool/luzerne108a/crops/p1_L07.jpg
+p1_L07	7	44	4	AB	benchmark-tx/txpool/luzerne108a/crops/p1_L07.jpg
+p2_L10	8	947	967	AB	benchmark-tx/txpool/luzerne108a/crops/p2_L10.jpg
+p3_L04	6	947	967	AB	benchmark-tx/txpool/luzerne108a/crops/p3_L04.jpg
+p3_L05	2	947	967	AB	benchmark-tx/txpool/luzerne108a/crops/p3_L05.jpg
+p3_L12	2	741	761	AB	benchmark-tx/txpool/luzerne108a/crops/p3_L12.jpg
+p4_L08	1	843	853	AB	benchmark-tx/txpool/luzerne108a/crops/p4_L08.jpg
+p5_L02	5	474	174	A	benchmark-tx/txpool/luzerne108a/crops/p5_L02.jpg
+p5_L08	11	113	1113	AB	benchmark-tx/txpool/luzerne108a/crops/p5_L08.jpg
+p6_L02	6	143	145	A	benchmark-tx/txpool/luzerne108a/crops/p6_L02.jpg
+p6_L04	11	826	824	A	benchmark-tx/txpool/luzerne108a/crops/p6_L04.jpg
