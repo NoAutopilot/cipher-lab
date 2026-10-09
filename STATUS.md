@@ -7315,8 +7315,8 @@ look-alike pass, its planted control 7/9 non-test). Account 3 silent since 02:03
 empty; queue holds only SORTER-RERENDER-A3. Next check-in 14:45.
 
 Check-in 11 and hand-over, 14:45-14:5x UTC 9 Oct (7:45 am PT): five_hour allowed; orchestrator context ~700k, cost ~28 by get_session --
-hands the role to a fresh account-4 session created via create_session (depth 4; successor prompt hub-seed/SUCCESSOR-PROMPT.md, "State at
-hand-over"). This check-in: AUD2-LEDGER-22/23/24 (queued by the account-1 verifiers FV-FM9a/b/c for the silent account 3) re-tagged to
+hands the role to session_01VQDEedJCaaN7fFPGcNPUUD, created via create_session at 14:48 UTC (depth 4; successor prompt
+hub-seed/SUCCESSOR-PROMPT.md, "State at hand-over"). This check-in: AUD2-LEDGER-22/23/24 (queued by the account-1 verifiers FV-FM9a/b/c for the silent account 3) re-tagged to
 account 4 and spawned (session_01TaJELb79NhYF8ZTQVL7qUt, session_01AVihkRiS2YD2WNauEvB2ke, session_01JewjCMFEfnsd8PTx1Uckgn; the successor
 ledgers and archives them). Account 1 LEDGER-6 wave 1 done 20.26 (E300-E309 filed; FV-FM9a: E299 N1 D3, E291 N3 D2, E292 N3 D3; FV-FM9b:
 E300 E301 E303 N1 D3 with holder clear copies the readers missed; FV-FM9c: E304 N1 D3, E305 E306 N3 D3), wave 2 live. Account 2 FAMILY-A2i
