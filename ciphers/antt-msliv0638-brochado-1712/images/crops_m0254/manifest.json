@@ -1,0 +1,130 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "full_PT-TT-MSLIV-0638_m0254.jpg_L01.jpg",
+   "source_url": "",
+   "source_file": "full_PT-TT-MSLIV-0638_m0254.jpg.jpg",
+   "box": [
+    0,
+    242,
+    1286,
+    504
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 252,
+    "distance": 176,
+    "prominence": 192.9
+   },
+   "date": "09 Oct 2026"
+  },
+  {
+   "crop": "full_PT-TT-MSLIV-0638_m0254.jpg_L02.jpg",
+   "source_url": "",
+   "source_file": "full_PT-TT-MSLIV-0638_m0254.jpg.jpg",
+   "box": [
+    0,
+    504,
+    1286,
+    750
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 252,
+    "distance": 176,
+    "prominence": 192.9
+   },
+   "date": "09 Oct 2026"
+  },
+  {
+   "crop": "full_PT-TT-MSLIV-0638_m0254.jpg_L03.jpg",
+   "source_url": "",
+   "source_file": "full_PT-TT-MSLIV-0638_m0254.jpg.jpg",
+   "box": [
+    0,
+    750,
+    1286,
+    936
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 252,
+    "distance": 176,
+    "prominence": 192.9
+   },
+   "date": "09 Oct 2026"
+  },
+  {
+   "crop": "full_PT-TT-MSLIV-0638_m0254.jpg_L04.jpg",
+   "source_url": "",
+   "source_file": "full_PT-TT-MSLIV-0638_m0254.jpg.jpg",
+   "box": [
+    0,
+    936,
+    1286,
+    1238
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 252,
+    "distance": 176,
+    "prominence": 192.9
+   },
+   "date": "09 Oct 2026"
+  },
+  {
+   "crop": "full_PT-TT-MSLIV-0638_m0254.jpg_L05.jpg",
+   "source_url": "",
+   "source_file": "full_PT-TT-MSLIV-0638_m0254.jpg.jpg",
+   "box": [
+    0,
+    1238,
+    1286,
+    1553
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 252,
+    "distance": 176,
+    "prominence": 192.9
+   },
+   "date": "09 Oct 2026"
+  },
+  {
+   "crop": "full_PT-TT-MSLIV-0638_m0254.jpg_L06.jpg",
+   "source_url": "",
+   "source_file": "full_PT-TT-MSLIV-0638_m0254.jpg.jpg",
+   "box": [
+    0,
+    1553,
+    1286,
+    1767
+   ],
+   "lines_in_crop": 1,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 252,
+    "distance": 176,
+    "prominence": 192.9
+   },
+   "date": "09 Oct 2026"
+  }
+ ]
+}
