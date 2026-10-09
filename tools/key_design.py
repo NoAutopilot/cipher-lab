@@ -11,6 +11,8 @@ key_crossmatch's own-text pairing finds one. Files that are not code->value tabl
   python3 tools/key_design.py            rewrite KEY-DESIGN.tsv
   python3 tools/key_design.py --check    exit 1 if KEY-DESIGN.tsv is stale (rule 7 shape)
   python3 tools/key_design.py --stdout   print instead of writing
+  python3 tools/key_design.py --compare KEY_A KEY_B   two keys' shared vocabulary/design (MQS-KEY-COMPARE; see
+                                         the KEY-COMPARE block above main() for scope)
 
 Value classes (first alternative of 'a|b'; '=' and bracket decoration stripped; accents folded):
   null     the value names a null ('null', 'nulle', 'nulles', 'nul', ...)
@@ -699,6 +701,156 @@ def matrix_sweep(out_path):
 
 
 
+# ---- KEY-COMPARE (MQS-KEY-COMPARE, 9 Oct 2026; Lasry, Biermann and Tomokiyo 2023, Cryptologia 47:2, pp.128-130,
+# nn.64-66, Figs 15-16; research/MARY-STUART-TALK-2026-10-09.tsv row M27; PREREG-MQS-KEY-COMPARE.md) ----
+# Meant to catch: two keys of one office that share nomenclature vocabulary and design (a sibling or clerk variant),
+# even when their sign labels share no namespace (a printed glyph table vs a T-labelled clerk sheet).
+# Must NOT flag: two keys with disjoint vocabulary and a different design (offline test: S < 0.5); a key never
+# scores itself below 1.000. A score is a lead for a person to compare the two tables, never a key or reading edit.
+
+def _value_profile(key):
+    vals = list(key.values())
+    alpha_vals = [fold(v) for v in vals if re.search(r'[A-Za-z]', fold(v))]
+    all_caps = bool(alpha_vals) and sum(v.upper() == v for v in alpha_vals) / len(alpha_vals) > 0.8
+    words, per_letter, nulls = set(), Counter(), 0
+    for v in vals:
+        c, norm = classify_value(v, all_caps)
+        if c == 'letter':
+            per_letter[norm] += 1
+        elif c in ('short', 'word', 'name'):
+            words.add(norm)
+        elif c == 'null':
+            nulls += 1
+    numeric = sum(bool(re.fullmatch(r'\d+', c)) for c in key) > len(key) / 2
+    return dict(words=words, per_letter=per_letter, nulls=nulls, numeric=numeric)
+
+
+def _ratio(a, b):
+    a, b = float(a), float(b)
+    if a == b:
+        return 1.0
+    return min(a, b) / max(a, b) if max(a, b) > 0 else 1.0
+
+
+def compare_keys(ka, kb, pa=None, pb=None):
+    """{V, L, D, S, shared_codes, code_agree} for two {code: value} tables (see PREREG-MQS-KEY-COMPARE.md)."""
+    pa = pa or _value_profile(ka)
+    pb = pb or _value_profile(kb)
+    wa, wb = pa['words'], pb['words']
+    V = len(wa & wb) / len(wa | wb) if (wa | wb) else 0.0
+    la, lb = pa['per_letter'], pb['per_letter']
+    dot = sum(la[x] * lb[x] for x in la)
+    na = math.sqrt(sum(n * n for n in la.values()))
+    nb = math.sqrt(sum(n * n for n in lb.values()))
+    L = dot / (na * nb) if na and nb else 0.0
+
+    def dfeat(p):
+        nl = sum(p['per_letter'].values())
+        valued = nl + len(p['words'])
+        hom = nl / len(p['per_letter']) if p['per_letter'] else 0.0
+        return valued, len(p['per_letter']), hom, (len(p['words']) / valued if valued else 0.0), p['nulls'] + 1
+    fa, fb = dfeat(pa), dfeat(pb)
+    parts = [_ratio(x, y) for x, y in zip(fa, fb)] + [1.0 if pa['numeric'] == pb['numeric'] else 0.0]
+    D = sum(parts) / len(parts)
+    shared = set(ka) & set(kb)
+    agree = None
+    if len(shared) >= 5:
+        agree = sum(fold(ka[c]).strip().lower() == fold(kb[c]).strip().lower() for c in shared) / len(shared)
+    return dict(V=V, L=L, D=D, S=(V + L + D) / 3, shared_codes=len(shared), code_agree=agree)
+
+
+def compare_report(path_a, path_b, as_json=False):
+    ka, wa = load_table(path_a)
+    kb, wb = load_table(path_b)
+    for p, k, w in ((path_a, ka, wa), (path_b, kb, wb)):
+        if k is None:
+            print(f'{p}: not a code->value table ({w})', file=sys.stderr)
+            return 2
+    r = compare_keys(ka, kb)
+    pa, pb = _value_profile(ka), _value_profile(kb)
+    r.update(shared_words=len(pa['words'] & pb['words']), words_a=len(pa['words']), words_b=len(pb['words']),
+             family_a=signature(ka)['design_family'], family_b=signature(kb)['design_family'])
+    if as_json:
+        import json
+        print(json.dumps(r, indent=1, sort_keys=True))
+        return 0
+    print(f'A {path_a}: {len(ka)} codes, family {r["family_a"]}, {r["words_a"]} word-like values')
+    print(f'B {path_b}: {len(kb)} codes, family {r["family_b"]}, {r["words_b"]} word-like values')
+    print(f'V vocabulary Jaccard {r["V"]:.3f} ({r["shared_words"]} shared word-like values; values not printed)')
+    print(f'L letter-profile cosine {r["L"]:.3f}   D design similarity {r["D"]:.3f}')
+    print(f'S composite {r["S"]:.3f}  (grade weak/controlled-only per tools/data/tool_shelf.tsv: a lead, never a key edit)')
+    if r['code_agree'] is not None:
+        print(f'code labels shared {r["shared_codes"]}: same value at {r["code_agree"]:.3f} (labels may be transcriber-assigned)')
+    return 0
+
+
+SIB_A = 'ciphers/nevers-birago-fr3251-1572/keys/key_nevers_birago_1572.tsv'
+SIB_B = 'ciphers/nevers-birago-fr3251-1572/keys/key_1572_clerk.tsv'
+
+
+def compare_pool(design_path=OUT, word='nevers'):
+    rows = []
+    lines = [l for l in Path(design_path).read_text(encoding='utf-8').splitlines() if l and not l.startswith('#')]
+    hdr = lines[0].split('\t')
+    for l in lines[1:]:
+        d = dict(zip(hdr, l.split('\t')))
+        if d.get('usable') == 'yes' and not d.get('duplicate_of') and \
+                word in (d.get('office', '') + ' ' + d.get('correspondents', '')).lower():
+            rows.append(d['key_path'])
+    return rows
+
+
+def compare_control(n_pairs=20, n_perm=200, seed=0, pair=(SIB_A, SIB_B), pool=None):
+    """PREREG-MQS-KEY-COMPARE.md: the sibling pair vs 20 random same-office pairs (R) and a vocabulary-permuted
+    null (P). Prints scores only (no sign values). Exit 0 both gates met, 1 otherwise."""
+    import random
+    pool = pool if pool is not None else compare_pool()
+    keys = {}
+    for p in set(pool) | set(pair):
+        k, _ = load_table(ROOT / p)
+        if k:
+            keys[p] = k
+    folder = lambda p: str(Path(p).parts[:2]) if p.startswith('ciphers/') else p
+    sib = compare_keys(keys[pair[0]], keys[pair[1]])
+    print(f'known answer K: S {sib["S"]:.3f} (V {sib["V"]:.3f}, L {sib["L"]:.3f}, D {sib["D"]:.3f})')
+    rng = random.Random(seed)
+    names = sorted(p for p in keys if p in pool)
+    pairs, tries = [], 0
+    while len(pairs) < n_pairs and tries < 10000:
+        tries += 1
+        a, b = rng.sample(names, 2)
+        if folder(a) == folder(b) or {a, b} in [set(x) for x in pairs] or {a, b} == set(pair):
+            continue
+        pairs.append((a, b))
+    rs = []
+    for a, b in pairs:
+        r = compare_keys(keys[a], keys[b])
+        rs.append(r['S'])
+        print(f'  R {r["S"]:.3f} (V {r["V"]:.3f} L {r["L"]:.3f} D {r["D"]:.3f})  {a}  x  {b}')
+    rmax = max(rs)
+    rank = 1 + sum(s >= sib['S'] for s in rs)
+    void = rmax >= 0.95
+    gate_r = sib['S'] > rmax and not void
+    print(f'R null: {len(rs)} pairs from a pool of {len(names)} keys; max {rmax:.3f}, mean {sum(rs)/len(rs):.3f}; '
+          f'K rank {rank} of {len(rs)+1} -> {"VOID (ceiling)" if void else ("PASS" if gate_r else "FAIL")}')
+    vocab = sorted({w for p in names if folder(p) != folder(pair[0]) for w in _value_profile(keys[p])['words']})
+    pa = _value_profile(keys[pair[0]])
+    pb = _value_profile(keys[pair[1]])
+    nw = len(pb['words'])
+    ps = []
+    for _ in range(n_perm):
+        pb2 = dict(pb, words=set(rng.sample(vocab, nw)) if nw <= len(vocab) else set(vocab))
+        ps.append(compare_keys(keys[pair[0]], keys[pair[1]], pa, pb2)['S'])
+    ps.sort()
+    p95 = ps[int(0.95 * len(ps)) - 1]
+    gate_p = sib['S'] > p95
+    print(f'P null (vocabulary-permuted, {n_perm} draws from {len(vocab)} pool words): mean {sum(ps)/len(ps):.3f}, '
+          f'p95 {p95:.3f} -> {"PASS" if gate_p else "FAIL"}')
+    ident = compare_keys(keys[pair[0]], keys[pair[0]])['S']
+    print(f'identity check: S(A, A) = {ident:.3f}')
+    return 0 if (gate_r and gate_p) else 1
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     ap.add_argument('--check', action='store_true', help='exit 1 if KEY-DESIGN.tsv differs from a rebuild')
@@ -720,7 +872,18 @@ def main(argv=None):
     ap.add_argument('--json', action='store_true', help='with --matrix: JSON output')
     ap.add_argument('--matrix-control', metavar='DIR', nargs='?', const=str(TOOLS / 'tests' / 'fixtures' / 'matrix'),
                     help='TT-MATRIX known-answer control on Tomokiyo\'s keys (PREREG-TT-MATRIX.md); exit 1 below a line')
+    ap.add_argument('--compare', nargs=2, metavar=('KEY_A', 'KEY_B'),
+                    help='MQS-KEY-COMPARE (Lasry, Biermann and Tomokiyo 2023 pp.128-130): score two key tables by shared '
+                         'nomenclature vocabulary (V), letter profile (L) and design (D); value-space only, so a printed '
+                         'glyph table and a T-labelled clerk sheet compare; prints scores, never sign values')
+    ap.add_argument('--compare-control', action='store_true',
+                    help='MQS-KEY-COMPARE known-answer control (PREREG-MQS-KEY-COMPARE.md): Nevers-Birago 1572 vs its '
+                         'clerk sheet against 20 random same-office pairs and a vocabulary-permuted null; exit 1 on a miss')
     a = ap.parse_args(argv)
+    if a.compare:
+        return compare_report(a.compare[0], a.compare[1], a.json)
+    if a.compare_control:
+        return compare_control()
     if a.matrix:
         anc = None
         if a.anchors:

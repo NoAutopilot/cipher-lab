@@ -52,3 +52,19 @@ Both gates met: shelf grade `controlled-only` for comparing two keys of one offi
 pair cannot support `proven`). Any miss: the option ships `weak` with both numbers, is not re-briefed, and nothing is
 run on a target from it. No key, status, reading or AUDIT.md changes in any case; the tool reads and prints only
 scores (no sign values are printed by the control; the Birago 1572 family has an open blind sort, ASKS 118).
+
+## Result (appended after scoring, 9 Oct 2026 08:42 UTC by date -u; `python3 tools/key_design.py --compare-control`, exit 1)
+
+- K (Nevers-Birago 1572 printed table vs the clerk sheet): S 0.750 (V 0.667, L 0.880, D 0.705).
+- R null: 20 pairs from a pool of 27 Nevers-office keys; max 0.917, mean 0.435; K rank 2 of 21 -> **FAIL** (not void:
+  the max is below the 0.95 ceiling line).
+- P null (vocabulary-permuted, 200 draws from 665 pool words): mean 0.529, p95 0.528 -> PASS.
+- Identity S(A, A) = 1.000.
+- The one R pair above K is fr3416 key_no25 x fr3993 key_no70 (S 0.917: V 1.000, L 0.974, D 0.777). Tomokiyo
+  (nevers.htm, no.70, quoted in ciphers/fr3993-gonzague-nevers-1595/NOTES.md) describes no.70 as "a superset of no.25",
+  so the random draw happened to contain a second, period-documented sibling pair. Read after scoring, this does not
+  change the gate: the registered rule (K above all 20) is missed, and the option ships `weak`. Note also that its
+  V = 1.000 rests on one word-like value in each key; a small-vocabulary shrinkage is a suggestion for a later brief,
+  not a re-tune here. Post hoc and not gated: K ranks above the other 19 pairs.
+
+Outcome: `weak` on tools/data/tool_shelf.tsv with both numbers; not re-briefed; nothing run on a target from it.
