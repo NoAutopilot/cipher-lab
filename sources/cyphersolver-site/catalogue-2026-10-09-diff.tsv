@@ -1,0 +1,63 @@
+bourdeau_no	bourdeau_score	title	our_match_or_dash	bourdeau_image_status	image_online_confirmed
+20	7.5	Papal-side letters: Sega, Baudouin-Desportes, Mauclerc	fr3984-sega-1593 + fr3984-sega-memoirs-1593 (fr.3985 no.7 found-solved)	img	img
+342	7.5	David Ungnad, imperial ambassador at Constantinople, to Maximilian II: a despatch wholly in cipher	QUEUE.md	cat-only	no (despatch not online; R392 is the key record only)
+343	6.9	Johann Joachim von Sinzendorff, Constantinople, to Rudolf II: despatch wholly in cipher	QUEUE.md:105-106 (HHStA Vienna pair, no image online, noted not entered)	cat-only	no (despatch not online; R1384 is the key record only)
+335	6.0	Florence, letters to the Signoria in the cipher of 1414 (Gabbrielli's partial key, letters never read)	florence1414/ (QUEUE.md B4 row)	cat-only	no (ASF filza not digitised, no DECODE record)
+336	6.0	"Siena, ""Lettere in cifra"" of the Concistoro: the unread pieces (no. 1 of 1421 unphotographed; two long systems, nos. 6/24 and 20/23; short pieces)"	ciphers/siena-concistoro-2308	cat-only	cat-only
+207	5.9	Riksarkivet key-box and Oxenstierna ciphers, 12 records (Bremen 1631 read and removed)	ciphers/decode-4333-rusdorff-oxenstierna-1628,hamilton-1650,harley-287-1587,oxenstierna-gustav-adolf-1632,riksarkivet-r4282-1628; QUEUE.md	cat-only	cat-only
+30	5.5	Laurière to Nevers, Châlons, 9 Jul 1593	fr3625-lauriere-1593	cat-only	cat-only
+87	5.0	Henry Percy to Secretary Cecil	ciphers/beinecke-mellon29-elia,fr2988-ranzo-1520s,harley-287-1587,moray-wood-1568,sp77-nicholas-1659,sp99-wotton-1622,throckmorton-add4136-1559; QUEUE.md; CATALOG.md	cat-only	cat-only
+151	5.0	Rodrigo Niño (Naples) to Charles I	-	img	yes (DECODE R1182, 3 thumbnail pages, no login)
+157	5.0	Giuliano Caprile (Eger) to Bonaventura Pistofilo, 9 March 1519	QUEUE.md	cat-only	cat-only
+158	5.0	Alfonso Cistarelli (Eger) to Ippolito I d'Este	QUEUE.md	cat-only	cat-only
+226	5.0	Gerard Carel baron van Spaen tot Voorstonden, envoy of the King of Holland (Düsseldorf), to Maarten van der Goes, minister of foreign affairs, 14 and 15 Jan 1808	ciphers/vanspaen-vandergoes-1808	img	img
+296	5.0	Walsingham's 1581 enclosure to Somers	-	cat-only	yes (DECODE R3839/R3840, thumbnails, no login)
+298	5.0	Nuncio Bagno, Paris, to the Secretariat, 1652	ciphers/bagno-francia104-1652; QUEUE.md	img	img
+337	5.0	Averardo de' Medici and Piero Guicciardini, Faenza, to the Dieci di Balìa: the letter Albizzi's office could not read	QUEUE.md:105 (#337 cited, ASF image server unreachable)	cat-only	no (ASF image server unreachable per QUEUE.md)
+347	5.0	"States General: ""diverse briefjes in cijferschrift"" from the Spanish invasion of the Veluwe"	ciphers/breda-statengeneraal-1624-25,oldenbarnevelt-brederode-1605; QUEUE.md	cat-only	cat-only
+78	5.0	Paris 1719 and Carré 1742–45 code letters, 5 ciphertexts	ciphers/sp87-newcastle-1743; QUEUE.md	cat-only	cat-only
+74	4.9	Palm (London) to Starhemberg, German letter with ciphered passages, 1727	ciphers/huntington-blathwayt-madrid-1728,sp87-brunswick-1759,willem-van-hessen-1567; QUEUE.md	cat-only	cat-only
+279	4.9	Transylvanian cipher letters, Keresdi Bethlen and Kemény collections	-	cat-only	yes (DECODE R4933-R4942, thumbnails, no login)
+97	4.9	Throckmorton leaf 1559: marginal word-sign code, and John Wood to Cecil 1568	ciphers/beinecke-mellon29-elia,decode-4450-bnf-fr20506-1525,fr2988-ranzo-1520s,fr3022-garbino-1528,harley-287-1587,moray-wood-1568,sp77-nicholas-1659,sp99-wotton-1622,throckmorton-add4136-1559; QUEUE.md; CATALOG.md	cat-only	cat-only
+214	4.8	W.B. von der Hellen (The Hague) to Frederick II of Prussia, 7 ciphertexts	ciphers/hellen-frederick-1752; QUEUE.md	cat-only	cat-only
+277	4.5	Nevers to Villeroy, Saint-Quentin	fr3993-villeroy-1595	cat-only	cat-only
+280	4.5	Mniszech to Jakub Dunin, Crown regent	ciphers/sanguszkow-mniszech-dunin-1714; QUEUE.md	img	yes (DECODE R7524, 3 thumbnail pages, already tracked QUEUE row 3 / CS2-27)
+218	4.4	Willem Frederik, the Hereditary Prince (Berlin) to Prince William V, Dutch ciphered copies (R2236)	QUEUE.md	cat-only	cat-only
+344	4.4	Esterházy papers, box 636: six cipher letters with no plaintext, one from Maria Theresa	QUEUE.md:106-107 (#344 cited, scans may not be online)	cat-only	no (Slovak National Archives, no DECODE record, scans may not be online)
+53	4.0	Heinrich Anton von Zeschau (Dresden) to Albin Leo von Seebach, 4 ciphertexts	ciphers/arsenal-dallion-lanmary-1744,bl-sacchetti-nunzio-1623,zeschau-seebach-1841; QUEUE.md	cat-only	cat-only
+92	4.0	Catherine de' Medici to Paul de Foix, French ambassador in London, intercepted letter	ciphers/beinecke-mellon29-elia,fr2988-ranzo-1520s,harley-287-1587,moray-wood-1568,sp77-nicholas-1659,sp99-wotton-1622,throckmorton-add4136-1559; QUEUE.md; CATALOG.md	img	img
+156	4.0	Benedetto Fantini (DECODE 'Jantini'), Buda and Eger, to the Este court, 2 ciphertexts	QUEUE.md	cat-only	cat-only
+58	4.0	English royalist letter in numerical code, September 1645 (SP 106/10 f. 251)	QUEUE.md	cat-only	cat-only
+7	3.9	Hieronimo Ranzo (?) to 'Garbino', intercepted imperial letter	fr3022-garbino-1528	img	img
+345	3.9	"""Letters not deciphered"": Swedish and Spanish intercepts in the State Papers, 1748-55"	ciphers/sp87-brunswick-1759,sp87-further-1712,sp87-newcastle-1743	cat-only	cat-only
+25	3.5	Marie de Médicis to Savary de Brèves	fr3789-mariedemedicis-savary-1610	cat-only	cat-only
+123	3.5	Walsingham to Burghley (letter-book copy)	ciphers/harley-287-1587,orange-nassau-1572; QUEUE.md	cat-only	cat-only
+184	3.5	Louis Gonzaga, duke of Nevers to Robert de La Vieuville	ciphers/fr3975-vieuville-1587	cat-only	cat-only
+128	3.4	Lord Burghley (Audley End) to Francis Walsingham, ambassador in France	ciphers/harley-287-1587,orange-nassau-1572; QUEUE.md	cat-only	cat-only
+169	3.4	Elia da Cortona (1180-1253) (Venice?) to unknown recipient	ciphers/beinecke-mellon29-elia,dupuy452-carpi-1520,harley-287-1587,salvago-caraffa-1691; QUEUE.md	cat-only	cat-only
+125	3.4	Walsingham letter-book, Nov 1572 (Burghley, Leicester, Walsingham): name codes	ciphers/harley-287-1587,orange-nassau-1572; QUEUE.md	cat-only	cat-only
+76	3.1	... to unknown recipient	QUEUE.md	cat-only	cat-only
+320	3.0	Rohan papers and Louis XIII's Franco-Dutch correspondence, 1635–36	QUEUE.md:4676 CS2-30 (Rohan/Louis XIII)	img	img
+77	3.0	Unknown sender to unknown recipient	QUEUE.md	cat-only	cat-only
+161	3.0	Bavarian key volume: dot grille (1583) and letter to Duke Wilhelm V (1583), unread	QUEUE.md	cat-only	cat-only
+219	2.9	Robert Fagel (1771-1856) (The Hague) to Prince William V, (1746-1805)	QUEUE.md:4675/5987 CS2-19 (Fagel-William V office, different inv.nr)	cat-only	cat-only
+223	2.9	W.B. von der Hellen (The Hague) to Frederick II of Prussia, 15 April 1763	ciphers/hellen-frederick-1752; QUEUE.md	cat-only	cat-only
+339	2.9	Military news for Prince Carl August Friedrich of Waldeck, in a three-digit code	ciphers/sp87-chesterfield-1747	cat-only	cat-only
+225	2.7	Frederik Gijsbert van Dedem tot de Gelder (Constantinople) to Van de Spiegel and Van der Goes, 3 unread ciphertexts (1789, 1793, 1799)	ciphers/roell-vandedem-1809; QUEUE.md	cat-only	cat-only
+233	2.7	Willem Frederik Roell (1767-1829), minister of Foreign Affairs (Amsterdam) to Frederik Gijsbertvan Dedem tot de Gelder (1743-1820), 2 ciphertexts	ciphers/roell-vandedem-1809,vanspaen-vandergoes-1808; QUEUE.md	cat-only	cat-only
+10	2.5	Seure (Lisbon) to de Fresne and Henri II, six letters	fr3151-seure-1558	cat-only	cat-only
+13	2.5	Anonymous to the Duke of Mercœur	fr15564-mercoeur-1586	cat-only	cat-only
+127	2.5	Burghley to Walsingham (letter-book copy)	ciphers/harley-287-1587,orange-nassau-1572; QUEUE.md	cat-only	cat-only
+129	2.5	Walsingham to Burghley, 25 June 1571 (letter-book; with Elizabeth to Walsingham, clear)	ciphers/harley-287-1587,orange-nassau-1572; QUEUE.md	cat-only	cat-only
+262	2.4	Farnese chancery cipher, Spagna 1A (IA-1, DECODE R91), companion of Vatican Challenge Part 5	ciphers/bl-farnese-cipher,bl-sacchetti-nunzio-1623,charles-rupert-1645,fr2933-salviati-1525,harley-287-1587,maurice-rupert-1645,moray-wood-1568,sp78-yorke-1749,sp81-roe-1638,throckmorton-add4136-1559; QUEUE.md	img	img
+152	2.1	Pandolfo Malatesta, archbishop of Patras, to Gianfrancesco Gonzaga	QUEUE.md	cat-only	cat-only
+36	2.0	King Frederick II (the Great) of Prussia (1712-1786) (London) to Louis Michell (1712-1786), Prussian resident in London	ciphers/hellen-frederick-1752; QUEUE.md	cat-only	cat-only
+230	2.0	Lodewijk van Toulon (1767-1840) (The Hague) to Dirk van Hogendorp (1761-1822), ambassador of the Batavian Re[ublic in Russia	ciphers/na-raad-azie-1800,vanspaen-vandergoes-1808; QUEUE.md	cat-only	cat-only
+137	1.9	Abraham Cowley's hand ('Mr. Conleys Hand'), Paris, to a royalist in Holland, 2 letters	QUEUE.md	img	img
+170	1.9	Hieronimo Ranzo (Venice) to unknown recipient	ciphers/decode-4450-bnf-fr20506-1525,fr2988-ranzo-1520s; QUEUE.md	cat-only	cat-only
+189	1.6	Hieronimo Ranzo (Italy?) to unknown recipient	ciphers/decode-4450-bnf-fr20506-1525; QUEUE.md	cat-only	cat-only
+193	1.6	Bayard to Montmorency	ciphers/clair331-rangone-montmorency-1530,clairambault351-paliano; QUEUE.md	cat-only	cat-only
+206	1.6	Murberg, Johan, Görtz, Georg Heinrich von to unknown recipient	ciphers/hellen-frederick-1752; QUEUE.md	cat-only	cat-only
+75	1.2	Trigram code fragment 'Suite du No 13 / No 24'	QUEUE.md	img	img
+135	1.0	Charles I to Prince Charles, 1 Aug 1648 (cipher passage)	QUEUE.md	img	img
+190	0.6	Sforza side to Zorzo (Giorgio) del Maino, reply of 4 May 1446	ciphers/sforza-maino-1446; QUEUE.md	cat-only	cat-only

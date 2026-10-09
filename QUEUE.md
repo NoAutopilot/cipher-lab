@@ -7500,3 +7500,63 @@ are estimates, not measured. Ranked by EV = p_move x value / cost. Not promoted;
 residue; Lansac read by Bourdeau), to NEWT-A. NC-CROI colbert-croissy-london-1668-74: found-solved (DECODE 25/72; residue sample glossed).
 NC-BAUG clair369-baugy-castille-maurier-1616: found-solved (cabinet-noir). NC-SANC, NC-BETH, NC-ENGA: blocked (per-folder NOTES.md "While
 waiting"). Rows 8-11 not yet sent.
+
+## SCOUT-BOURDEAU-WEB: Bourdeau's scored web catalogue vs our queue, 9 Oct 2026
+
+Worker SCOUT-BOURDEAU-WEB (Sonnet), brief `.claude/briefs/runs/2026-10-09-account4-scout-bourdeau-web.md`, for the
+orchestrator (account-4). Snapshot `sources/cyphersolver-site/catalogue-2026-10-09.html`
+(dbourdeau.github.io/cyphersolver/catalogue.html, fetched 9 Oct 2026 21:4x UTC; CC BY 4.0, cite, never copy into a
+target folder) — his *scored web view*, 62 rows, distinct from the on-disk CATALOGUE.md (194 rows) the 26 Sept
+2026 scout already read (QUEUE.md lines ~95-110, 4674-4706, 5211-5223, 5987 above). Full row-by-row match table:
+`sources/cyphersolver-site/catalogue-2026-10-09-diff.tsv` (his no., his score, title, our match or "-", his own
+"seen" status, image-online status confirmed this pass). Matched by DECODE record id (`RNNNN`) and shelfmark
+token (BnF `fr. NNNN`, HHStA `Kt./Konv.`, etc.) against QUEUE.md, CATALOG.md, UNSOLVED-SURVEY.md and every
+`ciphers/*/NOTES.md`+`AUDIT.md`; borderline matches (BnF fr. numbers resolved to our folder names, catalogue-number
+cross-references already in QUEUE.md's own prose) confirmed by hand. Scout rules followed: never promoted, never
+solved.
+
+**Result: 59 of 62 already on file, not 38 of 60** — the orchestrator's own quick skim (message of 22:41 UTC)
+undercounted; a token-level check finds only 3 rows genuinely new. The other 59 are already `ciphers/` folders
+(e.g. his no.7 "Hieronimo Ranzo to Garbino" = `fr3022-garbino-1528`; no.10 "Seure to de Fresne" = `fr3151-seure-1558`;
+no.13 "Anonymous to the Duke of Mercœur" = `fr15564-mercoeur-1586`; no.25 "Marie de Médicis to Savary de Brèves" =
+`fr3789-mariedemedicis-savary-1610`; no.30 "Laurière to Nevers, Châlons" = `fr3625-lauriere-1593`; no.277 "Nevers to
+Villeroy, Saint-Quentin" = `fr3993-villeroy-1595`; no.20's five pieces split across `fr3984-sega-1593`,
+`fr3984-sega-memoirs-1593` and a found-solved fr.3985 no.7), already named in QUEUE.md's own prose by his catalogue
+number (no.337, 342, 343, 344 at lines ~105-107; no.219 Fagel and no.320 Rohan at lines 4675-4677), or scored rows
+already in this file (no.298 Bagno = row 8 of the pre-spec table above; no.87 Percy = row 7 of the GitHub-held
+table, `R9256`).
+
+**3 rows never queued, all with DECODE images online (thumbnails, no login) — checked this pass, correcting the
+brief's own naming:**
+
+| # | Target | Source row | Kind | Est. signs | Lang. + corpus | Scout rubric (`tools/scout_rubric.py`) | Named first cheap test + matched control | Est. cost |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Walsingham's 1581 enclosure to Somers (Portugal intercept) | Bourdeau web no.296, score 5.0; TNA SP 53/11, DECODE R3839 (3pp) + R3840 (4pp) | cryptanalysis/recovery | ~7 pages, unmeasured | fr (we read it) | language_fit 3, material 3 (DECODE thumbnails confirmed online, checked 9 Oct), key_lead 2 (R3837, same volume no.35, is Somers' own deciphering worksheet — a sibling deciphered at the time, per Tomokiyo mary.htm), size 2, competition 1 (tracked on Bourdeau's site, open), weight 2, unread 2, pile 0 — **total 41, tier A** | Fetch R3839/R3840 thumbnails, transcribe, compare the cipher design against Somers' own worksheet system (R3837/mary.htm) as the key-design lead; control: the same comparison against a scrambled-order copy of the same transcription | $3, Sonnet |
+| 2 | Rodrigo Niño (Naples) to Charles I, 19 Mar 1522 | Bourdeau web no.151, score 5.0; BNE MSS/20213/27, DECODE R1182 (3pp) | cryptanalysis | one 8-line ciphered paragraph inside a clear letter | es; no 16th-c. Spanish corpus on disk (same era gap CLAUDE.md rule 3 already flags for es17/es17c) | language_fit 3, material 3 (thumbnails online, already eye-transcribed per Bourdeau's own detail text), key_lead 1 (design known — Kolosova's "Cifra 15", simple substitution + syllable nulls — but her key text is paywalled, not in hand), size 0 (below unicity without the key), competition 1, weight 2, unread 2 — **total 34, tier B** | Fetch R1182, re-transcribe the 8-line paragraph, and check whether `sources/cryptiana/keys/AlonsoSanchez_1.tsv`/`_2.tsv` (Charles V's other 1522 ambassadors, Alonso Sanchez/Juan Manuel — same correspondence year, different sender, no exact design match found in KEY-OFFICES.tsv/KEY-DESIGN.tsv) share any code values before a blind anneal; control: the anneal already tried (closed, per Bourdeau's own note) needs a synthetic-Spanish control at the same N if repeated | $3, Sonnet |
+| 3 | Transylvanian cipher letters, Keresdi Bethlen 14-15 and Kemény XIX | Bourdeau web no.279, score 4.9; Romanian National Archives, Cluj, DECODE R4933-R4942 (10 records) | cryptanalysis | 10 records, unmeasured | hu (not one of this project's read languages; no Hungarian corpus on disk) | language_fit 1, material 3 (thumbnails online), key_lead 0, size 2 (10 records), competition 1, weight 2 (Romanian National Archives, Transylvania under George I Rákóczi, peace-of-Linz era), unread 3 — **total 32, tier B** | Sample 3-5 of the 10 DECODE records for sign count, system and copy-free status before any spec (pre-spec, per the breadth-lane rule — no key family on file in KEY-OFFICES.tsv/KEY-DESIGN.tsv for this office; language itself unconfirmed by us) | $3, Sonnet |
+
+No key family in KEY-OFFICES.tsv/KEY-DESIGN.tsv matches the Transylvanian office; the nearest to Niño's office is
+the two other 1522 Charles V ambassador keys above (different senders, not confirmed shared); the nearest to
+Somers/Walsingham is `bowes-walsingham-1583` and `harley-287-1587` (same decade and principal, different
+correspondent and country, not confirmed shared).
+
+**Reproduction-order candidates ("no image online"), for the owner's desk — not an ASKS row, per the brief:**
+Checked DECODE directly this pass (curl, browser UA, 5 records, ~2s apart, all HTTP 200) rather than trust the
+brief's naming by eye. Two of the five names the orchestrator pre-identified turn out to have images online
+already (correcting the brief): **Transylvanian/Cluj (no.279)** and **Mniszech–Dunin (no.280, DECODE R7524)**
+both have DECODE thumbnails (checked above); Mniszech is additionally already tracked (QUEUE.md row 3 of the
+pre-spec table above, and `CS2-27`/`ciphers/sanguszkow-mniszech-dunin-1714/`) with 232 cipher tokens already
+transcribed from those same images. The three genuinely image-less targets, all already named in this file's own
+prose (lines ~104-107) rather than new findings:
+- **HHStA Vienna pair** — Ungnad 1576 (no.342) and Sinzendorff 1578 (no.343): despatches themselves not online;
+  ÖStA Archivinformationssystem has no item-level scan; DECODE's R392/R1384 are the *key* records, not the
+  despatches. Reproduction target: HHStA Wien, Türkei I Kt. 32 Konv. 3 ff.199-203 (Ungnad) and Kt. 37 Konv. 2
+  ff.1-8 (Sinzendorff).
+- **Florence 1414/1425** — Gabbrielli cipher letters (no.335, `florence1414/`, blocked) and the Medici/Guicciardini
+  1425 letter Albizzi's office could not read (no.337): ASF's own image server is unreachable from this
+  environment; Yale's Ilardi microfilm project holds only Gabbrielli's *key* volume (reel 58), not the letters.
+  Reproduction target: ASF Signori Responsive originali filza 1 (no.335) and ASF Dieci di Balìa Responsive 1425
+  (no.337).
+- **Esterházy papers box 636** (no.344): Slovak National Archives, Esterházy family archive; "scans may not be
+  online yet" per the catalogue note; no DECODE record found. Reproduction target: box 636, six cipher letters
+  (one from Maria Theresa).
