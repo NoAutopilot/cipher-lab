@@ -3980,3 +3980,29 @@ Read so far: E333, E334, E335, E340 audited (E334 N1 by print; E333, E335, E340 
 - [x] image-check: all four entries eye-checked.
 - [x] retry: none needed (one IA 500 on a duplicate ORN id, the volume fetched under another id).
 Verdict: keep going: 3 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18d) s.5, ~$1
+
+## FIX-FM15 (9 Oct 2026, account 1, for LANE LEDGER)
+
+Worker FIX-FM15, 21:17-21:2x UTC by `date -u`, offline (git only). Carries AUDIT s.5 of FV-MS18d (E333-E335, E340) and FV-MS18e (E331, E332, E336-E339) into ciphertext.txt through decode.py's existing mechanisms (del/ins for image reads, `plain-at:`, `gloss:`, header text); reading.md is `decode.py --write` output. key.md: only KEY-LAV's two proposals (Lavender source cell; Tulip context rule as a note on the section 4 Open row and the section 7 Period row; no meaning or grade changed). Classes and depths are the verifiers'.
+
+| Entry | Change | Decoder before -> after |
+|---|---|---|
+| E331 | header: print page eye-checked (FV-MS18e, IA leaf 568); hour note (2 p.m. print vs 7 PM ledger, Helen = 2 PM) | no change (H 7) |
+| E332 | `plain-at: comb#1` (Comb her land = Cumberland); Friend = Kelley, Dovers = Averell's, Warrick = retreat as `gloss` C | H 15, C 1 -> H 14, C 4 |
+| E333 | `<del>sulton</del><ins>Sutton</ins>` (= Information, H); `plain-at: black#1`; Aurorian = Kentuck-ian (H gloss); pause = period (M); header: New York not France, men not spies, right hand, ages 40/45, ORN I/21 pp.302-303 | H 26 -> H 27, M 1 |
+| E334 | `plain-at: colored#1`; Legend = Hurlbut (key) vs Canby (print OR I/34 pt 4 p.64) glossed M, second witness added to HYPOTHESES.md "Legend"; header: Canby [key: Hurlbut], signer Halleck | H 47 -> H 45, M 1 |
+| E335 | `<del>rock</del><ins>nock</ins>` (Pennock); `plain-at: ordnance#1`; header: Mason for Capt. Pennock, sent 12.10 PM Tinker, answers holder 4505 | H 17 -> H 16 |
+| E336 | `plain-at: clifton#1`; Hudson = Hood (C); header: IA leaf 398, sibling 9882 | H 30, S 1 -> H 29, C 1, S 1 |
+| E337 | offal = of all (C), fractions = portions (C); header: IA leaf 428, Curtis at Newtonia | H 30 -> H 28, C 2 |
+| E338 | `plain-at: madrid#1` (New Madrid); header: IA leaf 446 | H 21 -> H 20 |
+| E339 | plug = won (C, leaf gloss + print), `plain-at: gallant#1`, andes = and is (C); header: IA leaf 82 | H 25 -> H 22, C 2 |
+| E340 | `<del>Frances</del><ins>Francis</ins>` (time word 12, H; the decoder had split it as France + s); header: Capt. M. H. Alberger, A.Q.M., holder 10055/8004/8825 | H 8 (value now {time: 12}, was [New York]'s) |
+| E287 | `gloss: tuliped=Open_(-ed):H` (KEY-LAV context rule: inflected Tulip = Open); "[.]ed fire" -> "[Open (-ed)] fire" | H 18, S 1 -> H 19 |
+
+Totals over 292 entries: H 5090, C 55, I 25, M 34, S 17, U 10 -> **H 5081, C 63, I 25, M 36, S 16, U 10** (the C and M tokens are print-derived glosses, not key reads; the key rows stay H for their other uses). The legacy `<insertion>(won)</insertion>` in E339 is left as transcribed, so the reading shows "[won] <insertion>(won)</insertion>".
+
+Decode: `decode.py --write` then `--check` -> "reading.md is current"; `decode_no2.py --check` and `decode_no9.py --check` current, exit 0.
+
+key.md (KEY-LAV): Lavender source cell gains E169, E330 (C) and the Memphis addressee uses (9870/1, 9893/2); Washburne 3 of 3 vs control 0 of 3, p 0.050, disclosed not blind. Tulip: Period (S) stays the section 7 row; the Open/Period context rule is recorded on both rows and carried per entry by `gloss:` / `plain-at:` (E287 new, E319 already), since decode.py reads one meaning per row. Nothing else in key.md touched.
+
+Propagation (rule 10): status.json rows for E333, E335, E340 (and E287) already carry the audits' corrected line, depth_note and counts (27 H + 1 M, 16 H, 8 H, 19 H) and match the reading as regenerated; SO prompts PROMPT-chatgpt-e333/e335/e340 already state the corrected reading ("New York", "right", "Pen nock" per image). E334 and E331/E332/E336-E339 are N1 with no status row or SO prompt. No class, depth or SECOND-OPINIONS-QUEUE.tsv row touched.

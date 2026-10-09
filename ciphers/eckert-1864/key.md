@@ -766,7 +766,7 @@ and the following tables; keep the column order.
 | Trenton | Our scouts report | H | p.22 l.12 (339) R |
 | Triangle | Our pickets | H | p.22 l.13 (339) L |
 | Trinity | Our lines | H | p.22 l.13 (339) R |
-| Tulip | Open (-ed, -ing) | H | p.22 l.14 (339) L; # in margin |
+| Tulip | Open (-ed, -ing) | H | p.22 l.14 (339) L; # in margin. Context rule (KEY-LAV, 9 Oct 2026, with the section 7 row Tulip = Period): in No. 1 entries Open when the token is inflected (tuliped, tuliping) or follows a verb taking "open" (remain, keep, be/is/are/was/were, left, hold, stand, lie); read at E287 "tuliped fire" and E319 "remain open" |
 | Turtle | Out post | H | p.22 l.14 (339) R; # in margin |
 | Udder | Projectile | H | p.22 l.15 (339) L |
 | Umber | Parole | H | p.22 l.15 (339) R |
@@ -1287,7 +1287,7 @@ printed in mssEC 41, with the grade the evidence allows.
 | Macbeth | Gen A. J. Smith | H | mssEC 43 p.[17] foot, red ink, "Maynard / Gen A. J. Smith / Macbeth" (pointer 413); OR I/41 pt 3 p.140 agrees (E15) |
 | Maynard | Gen A. J. Smith | H | mssEC 43 p.[17] foot (413); OR I/41 pt 3 p.141 agrees (E16) |
 | Loadstone | Gen C. C. Washburne | H | mssEC 43 p.[17] head, "Lavender = Gen C. C. Washburne = Loadstone" (413); E16 tail "that word is Loadstone" |
-| Lavender | Gen C. C. Washburne | H | mssEC 43 p.[17] head (413) |
+| Lavender | Gen C. C. Washburne | H | mssEC 43 p.[17] head (413); E169 (5782/1, 9 Sept 1864, period instruction); C at E330 (OR I/39 pt 3 p.379); addressee at Memphis in mssEC 18 9870/1 and 9893/2 (KEY-LAV, 9 Oct 2026; Washburne 3 of 3 against 0 of 3 for a random person, Fisher one-sided p 0.050, not blind) |
 | Hedge | to-day | C | OR I/34 pt 4 p.267: Lincoln to Rosecrans, 8 June 1864, "Yours of to-day received" = E11 (the book gives Wedge/Wharf = Today) |
 | Nansy | south | C | OR I/41 pt 4 p.294, "driven south of Fort Scott" = E17; written "Nansy", probably the clerk's slip for Waxy = South |
 | mangled | telegraphed | C | OR I/37 pt 1 p.525 = E9, "General Grant telegraphed last evening"; both passes read "mangled", a slip for "wrangled" |
@@ -1295,5 +1295,5 @@ printed in mssEC 41, with the grade the evidence allows.
 | Handle | Maj Gen J. B. Hood (Confederate) | C | A3V3-ECKC, 4 Oct 2026: mssEC 18 entry 9864.317 (13 Oct 1864, to Schofield) "meet any forces that Handle may send North" = OR I/39 pt 3 p.249 (OCR running head) "any forces that Hood may send north"; one witness, conditional on the volunteer transcription |
 | Squase | Infantry | C | written "Squase"; OR I/37 pt 2 p.501: Halleck to Wallace, 29 July 1864 12.20 PM, "your cavalry, a battery, and some infantry" = E25 (LS-R1, 7 Oct 2026) |
 | Samson | Ferry | C | clerk's spelling of Sampson; OR I/37 pt 2 p.501 = E25, "Edwards and Conrad's Ferries"; the book has Sampson = Ferry (p.20 l.22), used so in E21 (LS-R1, 7 Oct 2026) |
-| Tulip | Period | S | In No. 1 entries. KEY-TW 9 Oct 2026 (NOTES.md): reads at 9 of 9 filed occurrences (E9 E106 E141 E170 E175 E230 E283 E284 E289) vs 1 of 9 for a random key word (Fisher one-sided p 0.0002); C at E170 (print "without fail. One steamer", FV-FM3a) and unfiled 5821/1-2; No. 2's Tulip = Period (key-no2.md p.23 l.14, H). Conflicts with the H row Tulip = Open (p.22 l.14), which never reads in the ledger: logged in HYPOTHESES.md, row kept |
+| Tulip | Period | S | In No. 1 entries. KEY-TW 9 Oct 2026 (NOTES.md): reads at 9 of 9 filed occurrences (E9 E106 E141 E170 E175 E230 E283 E284 E289) vs 1 of 9 for a random key word (Fisher one-sided p 0.0002); C at E170 (print "without fail. One steamer", FV-FM3a) and unfiled 5821/1-2; No. 2's Tulip = Period (key-no2.md p.23 l.14, H). Conflicts with the H row Tulip = Open (p.22 l.14), which never reads in the ledger: logged in HYPOTHESES.md, row kept. Context rule (KEY-LAV, 9 Oct 2026): Period except Open (H, p.22 l.14) when the token is inflected (-ed, -ing) or follows a verb taking "open" (remain, keep, be/is/are/was/were, left, hold, stand, lie): reads 11 of 11 filed No. 1 occurrences (Open at E287, E319; Period at the other 9) and 108 of 108 No. 2 tokens; null trigger rate 0.008; S, not blind; applied per entry by gloss:/plain-at: lines (E287, E319) because decode.py reads one meaning per row |
 | Whiskey | Troops | S | KEY-TW 9 Oct 2026 (NOTES.md): the clerk's spelling of Whisky (p.24 l.7, H) = Troops; reads at 7 of 7 filed occurrences vs 1 of 7 for a random key word (Fisher p 0.0023); C at E290 (OR I/40 pt 2 p.85 "ferrying troops and trains") and unfiled 5768 vs clear copy 4788 (FV-FM8a) |
