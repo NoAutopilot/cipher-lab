@@ -123,3 +123,29 @@ The Verdict's cheapest next: be-api full-text sweep of the 33 unchecked British 
 the print rung for which volumes are checked and which phrases/names to use; run a positive control per query family on a volume known to
 carry the term). Log every volume searched with hit/no-hit; any hit -> the surrounding sentence quoted, nothing more. A search result for the
 log, never a novelty verdict. gaps_check.py after.
+
+## Wave 3 (21:5x UTC 9 Oct)
+Wave 2: MANT-0181 and MANT-0491 both "judge cannot decide / FAIL" at 37-51 tokens (all M, key unchanged) -- unglossed Manteuffel leaves under
+~60 tokens are not worth further Opus reads; VB-1540 no unprinted cipher letter in 5 read; LIN-BFSP 31/32 zero. SUR-GOV found the one live
+lead: NA 1.05.03 inv. 372 scans 0184-0194+, an 11+-scan enciphered letter (Jul-Oct 1780, Latin letters + digits, clear paragraph heads), unread.
+Lane spend at this point ~42 of 60 (workers 38.4 + orchestrator ~4).
+
+### SUR-372 (Opus, cap 7, box 110 min; NA take/release, <= 40 requests, >= 1.9 s): na-suriname-map-1781 inv. 372 enciphered letter, premise + first test
+Read NOTES "## SUR-GOV" (its "next steps" list), the key files (key_period.tsv Oud, key_period_nieuw.tsv + key_period_codes_nieuw.tsv Nieuw,
+inv. 86 key sheet) and how 373_0693 and the 2077/2039 legends were decoded. In order, stopping where a step says stop:
+(1) Close the run: fetch 0183 and 0195 (and further out until clear text on both sides, <= 8 scans), at 600 px; then 0189 and the first and
+last cipher scans at >= 1500 px (manifest entries; commit only the crops later steps need, folder under 30 MB).
+(2) Prior-work step in full (checks 1-4), pasted before any transcription: own work; the leaf and neighbours -- is there an interlinear gloss
+at 1500 px, a decipherment slip, or a clear copy/"vertaling" anywhere in inv. 372 after the run, or in the Sociëteit's outgoing letter-books
+(1.05.03 inv. for 1780 minutes) -- check the EAD on disk (sources/na-1.05.03/2026-10-09/) for the 1780 outgoing/register items and look at
+most 10 scans of the obvious one; holder EAD note; editions/scholarship (de Leeuw 1997 TvZ 16 -- what does it cover? Google Books
+country=US, OpenAlex keyed). A gloss or clear copy makes it N0: then it is a key test, say so and score it as one.
+(3) If not stopped: crop one page (the best-legible, ~20 lines; `tools/iiif_lines.py --image ... --out ... --debug` pasted), two blind
+Sonnet passes + one reconciliation, ciphertext tsv. Write PREREG-SUR372.md (own commit, checked on origin) BEFORE decoding: decode under
+each of the two period keys (Oud / Nieuw); gate = Dutch judge (tools/judge_plaintext.py, an 18th-c. Dutch corpus if tools/data has one --
+say which and whether era-matched) on each decode vs key-shuffled decodes p95 AND the shuffled-target decode (rule 3: a judge PASS on the
+shuffled-target decode voids it), plus a word-hit count against a Dutch lexicon vs the same nulls. A key whose decode does not beat its nulls
+is a negative for that key on this page only (state the transcription agreement rate beside it).
+(4) Grades per token (rule 4): H only where the period key is H and the gate passed; else M. G3 print-check on decoded phrases if anything reads.
+Write NOTES "## SUR-372", update Remaining gaps/Escalation, gaps_check.py. Report what was found and where it was not found; do not classify
+novelty. If a key reads, the orchestrator sends it to a separate first verifier.
