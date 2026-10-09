@@ -66,3 +66,41 @@ Stop at the cap, at 80% of the box, or when three consecutive instruments move e
 table instrument | dev err_true | eval err_true | paired fixed/broken p | verdict; RESULTS in research/TX-ENGINEER-2026-10-09.md;
 one plain-language paragraph for the owner (what moved the needle, what did not, what he should do at the sorter). Ledger every
 worker (cost from get_session), archive each; never AskUserQuestion; never print credentials.
+
+## Amendment 1 (owner, 9 Oct 2026 06:5x UTC): test everything that could give an edge; list twenty ideas and go after them
+The owner widened the mandate: every idea that seems possible gets a pre-registered test; the lane may use the whole of account
+4's usage window on this (cap raised to 150; the only stop is the window itself -- five_hour `allowed_warning` past one check-in
+or `rejected` pauses spawning until the reset, BUDGETS.md). Round 1 now ends with an IDEAS register,
+research/TX-IDEAS-2026-10-09.md: at least twenty ideas, each with the mechanism it attacks (from the taxonomy), the cheapest test
+(dev item, cost, gate), and an order by expected gain per cost; the lane works down the list, one PREREG per idea, and marks each
+tested / moved eval / did not move / retired. The owner's own ideas go on the list first, each as a tool with a flag and a test:
+1. Delete white space: tight per-sign and per-line crops with margins measured in ink, not pixels (tools/iiif_lines.py or
+   tools/tx_prep.py flag), scored against today's crops.
+2. Darkening: gamma / contrast / stroke thickening on faint ink, measured per setting, never assumed.
+3. Cut symbols, then a quality gate per cut: a classifier (ink mass, aspect, component count, edge contact) that labels a tile
+   good / bad crop / two signs joined / blot or noise before any reader sees it; the joined and bad-crop tiles are re-cut, the
+   blots dropped with the decision logged; gate measured on the benchmark truth (which tiles it flags are in fact wrong reads).
+4. Alter the colours: per-channel and false-colour renderings (red channel to drop iron-gall bleed-through, ink-paper
+   separation, inverted), each scored as its own reading arm.
+5. What expert document-recovery teams do: a short literature pass (forensic document examination, digital palaeography and
+   document image analysis practice -- binarisation families, multispectral and pseudo-multispectral tricks on RGB scans,
+   super-resolution, bleed-through removal, HTR pipelines such as Transkribus and eScriptorium, ICDAR competition methods);
+   write research/TX-RECOVERY-PRACTICE-2026-10-09.md naming the three methods applicable to an RGB scan in Claude Code, then
+   test them; sources cited, nothing copied from an unlicensed repository.
+6. Contrast sweep before cutting: for an uncertain sign, render the tile at five contrast levels and let a reader (or a script
+   on component stability) watch which strokes persist and which appear, cut and label from the stable strokes, and log the
+   sweep as the evidence for the cut.
+7. Symbol library across targets: an atlas of clean exemplars of every sign from every target in the same key family and from
+   published sign tables (Tomokiyo's and the period keys on disk), so a poor tile is matched to a clean high-resolution
+   exemplar of the same sign and the reader sees the pair ("compare, don't recall" generalised across targets).
+8. High-resolution alternatives from the time: for a damaged or low-resolution leaf, find another leaf in the same hand and key
+   with a better image (siblings, the same scribe's other letters, a contemporary copy) and use its exemplars as the reference
+   sheet, or read the sibling where it carries the same word; prior_work.py and the folder's SIBLINGS rows first.
+Add your own to reach twenty and beyond (examples the lane may take or discard: stroke-width normalisation, deskew and
+line-straightening, super-resolution 2x/4x, reading at two scales and reconciling, sign-level majority over small crop
+perturbations, a confusion matrix learnt from the benchmark that re-weights the lattice, per-scribe fatigue and call-position
+caps, a second reader that sees only the first reader's doubtful tiles, reading the line backwards, a "same sign elsewhere on the
+page" retrieval that shows every other occurrence of the candidate sign, ink-density profiles to split glued pairs, page-level
+deskew from ruling lines). Every result, including every negative, goes in the IDEAS register with its numbers; TRANSCRIPTION.md's
+"Today" column moves only on a held-out gain. The lane's other duty: tell the orchestrator at each check-in which idea is
+running, which moved eval, and the running cost against the window.
