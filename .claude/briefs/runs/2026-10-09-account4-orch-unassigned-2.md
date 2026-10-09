@@ -45,3 +45,25 @@ folder's images/manifest.json names the pointers. If a larger size exists, fetch
 `tools/iiif_lines.py --image` (paste the command), and run the D3-BLA2 known-answer gate on L12's 9 held tokens plus the 5 known-answer
 columns of that page at the new resolution (one blind Sonnet call for the strip, one reconciliation, PREREG amendment pushed first); if
 the host serves nothing larger, say so with the record URL and stop at (1). Grades move only if the pre-registered gate passes.
+
+## UNA3-BLA (account 1, Opus 5.5, cap USD 2.5, box 60 min) -- added 09:5x UTC after UNA2-BLA
+Folder ciphers/huntington-blathwayt-madrid-1728. UNA2-BLA (09:48 UTC, commit 6784ae952) found the Huntington IIIF info.json serves
+BLA191 p5 at 8708 px native and read L12 at 4354 px: 8 M -> C (C 138, M 14 of 172), KA 14/14. Its named next step: the same IIIF size
+for the remaining 14 M-sign columns (every page that carries one; images/manifest.json lists the pointers; at most one fetch per page,
+1.5 s apart, browser UA, <= 8 requests). Same protocol as UNA2-BLA: PREREG amendment pushed first (universe = the 14 M columns + the
+page's known-answer columns), `tools/iiif_lines.py --image` crops (paste the command), one blind Sonnet read per page, one
+reconciliation, the D3-BLA2 known-answer gate (KA must pass on each page before any M moves). key.tsv unchanged; decode_key --check 0;
+gaps_check; Verdict + NEXT-STEPS + AUDIT propagation. Then, in the done line, state H/C/S % and whether `tools/depth_check.py` would
+now read D3 -- do NOT change depth or status.json: a separate verifier (DV-BLA, queued by the orchestrator after this job) decides.
+
+## KARL-REQ (account 2, Opus 5.5, cap USD 2.5, box 60 min) -- from WAIT-PASS-4's finding
+Folder ciphers/ra-karlxi-fullmakt-1677. REQUEST.md still says "Gated -- do not send ... blocked on the edition search", but NOTES.md
+records that NX-UNBLOCK (26 Sept 2026) settled the edition question, and no ASKS.md, SEND-QUEUE.tsv or outreach/ row exists for the
+Riksarkivet copy order the folder's Verdict waits on. Job: (1) read NOTES.md (NX-UNBLOCK, R8-KARL3, R9-KARL4, the 9 Oct While-waiting
+section) and REQUEST.md; (2) rewrite REQUEST.md's gate line to the current state (cleared or not, citing the NOTES section); (3) if
+cleared, draft the copy order as outreach/riksarkivet-karlxi-1677.md following outreach/README.md (rule 1 AI-disclosure sentence, rule 1a
+voice, subject/recipient/sign-off placeholders, the recipient address read from Riksarkivet's own contact page with the date, the
+reference code SE/RA/25.3/4/II/7/B and the exact document, `status: drafted`, no `checked:` line -- the gate-7 check is a separate
+session); add the CONTRIBUTIONS.md row and a `backlog` ASKS.md row (self-contained: one link, one action, what comes back); (4) if not
+cleared, say in REQUEST.md and NOTES.md exactly which edition page would settle it and queue that as the next step. Never send; never
+name the owner; no personal data.
