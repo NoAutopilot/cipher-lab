@@ -315,3 +315,4 @@ utc	origin_main_commit	item_id	scope	check	route	query	control	hits	evidence	ver
 2026-10-09 00:44	5674c29125e2	adhoc-82ce2f	step	record	adhoc-82ce2f:1-own:798efa				this job	CLEAR			adhoc-82ce2f:record:817cd0	
 2026-10-09 00:44	5674c29125e2	adhoc-82ce2f	plaintext	record	adhoc-82ce2f:3-tomokiyo:80d907				Tomokiyo pages cover no Manteuffel 1713 letter (GAPS158 web/blog check; cryptiana list has no Manteuffel row)	CLEAR			adhoc-82ce2f:record:6fa603	
 2026-10-09 00:44	5674c29125e2	adhoc-82ce2f	plaintext	record	adhoc-82ce2f:3-solver:a7793a				inventory and a known-answer gloss check of 0007; no solver repo item for Loc. 694/09 (check-solved, GAPS158)	CLEAR			adhoc-82ce2f:record:c03f38	
+2026-10-09 00:52	902e25f5424a	adhoc-82ce2f	plaintext	record	adhoc-82ce2f:2-leaf:3ca102				694/09 file 0007 gloss read on native crops by this job (f0007_09/gloss.tsv); 0008 verso glossed (f0008_09); 0009 no code (MANT-EYE)	CLEAR			adhoc-82ce2f:record:bb42c7	
