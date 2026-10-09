@@ -4403,3 +4403,25 @@ No key or reading changed (rule 7): `python3 tools/decode_key.py ciphers/lodewij
 No judge run (no reading). 4612 v3 stays unread in its cipher body.
 
 Not found: no 4612 reassignment was derived; nothing was searched in print by this job. Novelty not classified (rule 10).
+
+## SIG5-58-270 (9 Oct 2026, account 1, for LANE SIG-5)
+
+Worker SIG5-58-270 (Opus), brief `.claude/briefs/runs/2026-10-09-acct1-sig5-jobs.md` "## SIG5-58-270", claim 04:49 UTC by date -u,
+box end 05:49 UTC, cap USD 3.
+
+**Prior work (step 0).** `tools/prior_work.py ... --item-spec 'item_id=WVO 5811;wvo=5811;...' --step-type align --known-answer
+gate:code58-key-check` exit 4 and `... 'item_id=WVO 7208;wvo=7208;...' --step-type crop --known-answer gate:sign270-key-conflict` exit 4;
+plaintext KNOWN for both (5811 = Groen IV CDLXXXIII; 7208 = its own f.223r decipherment), which is this job's input, not a stop (key check).
+Every owed row is a 1-own LEAD: target-level live claims by SIG-4612B/C/D (4612 crib/anneal, not 5811 or 7208 p1_L11), LANE FAMILY-A2f
+(account 2; its list names Brandt, Manteuffel, Bergh, La Garde, Suriname -- not this target), SIG5-4612E (4612) and this claim; the two
+done-candidate markers (NOTES:3729 print searched, NOTES:3731 image-check) are print/image passes, not a code-58 or a 7208 pos9 check.
+Grep of NOTES/HYPOTHESES/key_conflicts for code 58: no earlier check of 58 against the 5811 print; seen before scoring (so stated here):
+(i) A2P4/5797 control table (NOTES ~809): `58.85.38.95.82.35` = "zeuget", printed by Groen p.224 -- one observed 58 = z in a German
+passage of 5797 against the print; (ii) AX2-4612S/S2 objectives preferred 58 z -> u (scoring artefacts, NOTES ~2802/2937); (iii) per-letter
+aligner keys: key_7208 58 = b, key_7205 NULL, key_5801 m, key_5799 n, key_4614 x (all M/H-by-count from noisy aligners, not key_full).
+
+**Pre-registered bar (written before any 5811 slot was aligned).** Each of the 7 occurrences of 58 in ciphertext_5811.tsv is aligned
+against groen/groen_IV_CDLXXXIII.txt using the key_full decode of the neighbouring tokens; each slot is called z / v-u / other letter /
+null / unclear. 58 -> v is supported only if >= 5 of the 7 5811 slots need v/u under the print AND none needs z. key_full.tsv is changed
+only if that bar is met AND `decode_key.py --check` regenerates cleanly; otherwise 58 = z stands (grade unchanged unless a slot table
+gives an observed z, in which case the proposal is I -> C as z). The 5797 "zeuget" slot is reported beside the table, not counted in it.
