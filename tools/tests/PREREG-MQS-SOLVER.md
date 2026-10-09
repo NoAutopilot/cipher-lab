@@ -95,3 +95,15 @@ all three N are at ceiling). Grades: every option ships `weak` on this evidence 
 its numbers. The mismatched design (mis_*) is read against its own gate only if mis_base's mean is between 20% and 85%;
 otherwise it too is "no headroom". The grid of N is not extended in this job (the brief fixes {800, 1500, 2600}); a
 lower-N or harder-design grid is a follow-up suggestion, not done here.
+
+## Amendment 2 (9 Oct 2026, 04:15 UTC by date -u, after the cells; nothing here changes a gate)
+
+- mis_cap2 could not run: the pre-registered mismatched design has K = 52 letter signs and `--max-homophones 2` allows
+  at most 48 over 24 letters, so the tool refuses it (ValueError) on all three seeds. This is a design error in this
+  PREREG, not a result. `--max-homophones` is not graded on a mismatched design in this job; mis_base (0.965) is at
+  ceiling as well, so that design has no headroom either.
+- Post-hoc diagnostic, not pre-registered, grades nothing: cap2 (reassign moves only) read 0.113 with best scores far
+  below the true key's (seed 1: -2382 vs base -1398), although the true key satisfies the cap: a reassign-only search
+  under a cap jams (a full letter blocks every move into it). subst_hillclimb, where the cap came from, always mixes
+  in swaps; the same cap with `--moves both` read 1.000/1.000/0.986 (diag_cap2both). On this matched design the cap is
+  an oracle bound, so this licenses only one usage note: use `--max-homophones` with `--moves both`, never alone.
