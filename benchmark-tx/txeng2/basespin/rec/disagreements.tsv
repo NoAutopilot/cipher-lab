@@ -1,0 +1,15 @@
+line	col	A	B	flagged	crop
+p1c_L01	3	HOOK	SIX	AB	benchmark-tx/txeng/confirm/crops/p1c_L01_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L01_s2.jpg
+p1c_L01	19	NINE	HOOK	AB	benchmark-tx/txeng/confirm/crops/p1c_L01_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L01_s2.jpg
+p1c_L02	8	HOOK	-	A	benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg
+p1c_L02	20	XCURL	NEW:crossed-gamma	AB	benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg
+p1c_L02	27	PHI	NEW:circle-on-stem	AB	benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg
+p1c_L02	28	JHOOK	NEW:long-s-crossbar	AB	benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg
+p1c_L03	21	HOOK	PHI	AB	benchmark-tx/txeng/confirm/crops/p1c_L03_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L03_s2.jpg
+p1c_L04	2	PHI	HOOK	AB	benchmark-tx/txeng/confirm/crops/p1c_L04_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L04_s2.jpg
+p1c_L06	21	JHOOK	NEW:long-s-crossbar	AB	benchmark-tx/txeng/confirm/crops/p1c_L06_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L06_s2.jpg
+p1c_L08	1	SEVEN	-	A	benchmark-tx/txeng/confirm/crops/p1c_L08_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L08_s2.jpg
+p1c_L08	4	NEW:epsilon-with-ring-above	HOOK	AB	benchmark-tx/txeng/confirm/crops/p1c_L08_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L08_s2.jpg
+p2c_L01	17	PHI	NEW:circle-on-stem	AB	benchmark-tx/txeng/confirm/crops/p2c_L01_s1.jpg,benchmark-tx/txeng/confirm/crops/p2c_L01_s2.jpg
+p2c_L02	1	NEW:large-looped-H-flourish	JHOOK	AB	benchmark-tx/txeng/confirm/crops/p2c_L02_s1.jpg,benchmark-tx/txeng/confirm/crops/p2c_L02_s2.jpg
+p2c_L02	11	PHI	HOOK	AB	benchmark-tx/txeng/confirm/crops/p2c_L02_s1.jpg,benchmark-tx/txeng/confirm/crops/p2c_L02_s2.jpg
