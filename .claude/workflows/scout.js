@@ -82,19 +82,20 @@ const SCORE = {
   type: 'object',
   properties: {
     name: { type: 'string' },
-    language_fit: { type: 'integer', minimum: 0, maximum: 3, description: `3 = plaintext in one of ${langs.join('/')}; 1 = other language readable with AI help; 0 = unknown script or language` },
+    language_fit: { type: 'integer', minimum: 0, maximum: 3, description: `3 = plaintext in one of ${langs.join('/')}; 1 = other language readable with AI help; 2 = pending trial (all-cipher, language unknown, but the holder's era and series are in our languages); 0 = unknown script or language with no holder context` },
     material: { type: 'integer', minimum: 0, maximum: 3, description: '3 = images or full transcription online free; 2 = printed figures; 1 = login needed; 0 = nothing online' },
     key_lead: { type: 'integer', minimum: 0, maximum: 3, description: '3 = key or decipherment located; 2 = sibling with decipherment; 1 = design known; 0 = nothing' },
     size: { type: 'integer', minimum: 0, maximum: 3, description: '3 = enough text or a key so a reading is checkable; 0 = below unicity with no key lead' },
     competition: { type: 'integer', minimum: 0, maximum: 3, description: '3 = nobody has it on a tracker; 1 = on a solver repo tracker as open; 0 = someone reports active work' },
-    weight: { type: 'integer', minimum: 0, maximum: 3, description: 'historical interest of the content, 3 = decision of state or changes a known account' },
+    weight: { type: 'integer', minimum: 0, maximum: 3, description: 'historical interest of the content, 3 = decision of state or changes a known account; unknown for an unread pile = the holder/era prior (2 for a diplomatic series of a state archive or national library, 1 otherwise), not 0' },
+    pile: { type: 'integer', minimum: 0, maximum: 3, description: 'estimated signs in one key (pools rule): 0 = under 2,000 or unknown; 1 = to 10,000; 2 = to 50,000; 3 = above 50,000' },
     unread: { type: 'integer', minimum: 0, maximum: 3, description: '3 = the text has never been read and no key survives with it (cryptanalysis); 2 = unread, but a key or a deciphered sibling survives in another box (recovery); 1 = the plaintext is in print but the cipher-to-key mapping is not (contribution: key recovery, catalogue correction); 0 = readable today with a key held in the same collection (an edition, not a target)' },
     kind: { type: 'string', enum: ['cryptanalysis', 'recovery', 'contribution', 'edition'], description: 'the kind of result this target can give, matching the unread axis' },
     next_step: { type: 'string', enum: ['archive-request', 'transcription', 'cryptanalysis', 'search-print', 'blocked'] },
     next_step_detail: { type: 'string', description: 'the single concrete action, with the shelfmark or URL' },
     rationale: { type: 'string' },
   },
-  required: ['name', 'language_fit', 'material', 'key_lead', 'size', 'competition', 'weight', 'unread', 'kind', 'next_step', 'next_step_detail', 'rationale'],
+  required: ['name', 'language_fit', 'material', 'key_lead', 'size', 'competition', 'weight', 'unread', 'pile', 'kind', 'next_step', 'next_step_detail', 'rationale'],
 }
 const scored = await pipeline(
   toScore,
@@ -105,13 +106,13 @@ const scored = await pipeline(
 )
 const ranked = scored.filter(Boolean).map(s => ({
   ...s,
-  total: s.language_fit * 3 + s.material * 4 + s.key_lead * 3 + s.size * 2 + s.competition * 2 + s.weight + s.unread * 3,
+  total: s.language_fit * 3 + s.material * 4 + s.key_lead * 3 + s.size * 2 + s.competition * 2 + s.weight + s.unread * 3 + s.pile * 2,
 })).sort((a, b) => b.total - a.total)
 log(`${ranked.length} candidates scored; top: ${ranked.slice(0, 3).map(r => `${r.name} (${r.total})`).join('; ')}`)
 
 phase('File')
 const filed = await agent(
-  `Date: ${date}. Write QUEUE.md at the repository root from this ranked list (JSON):\n${JSON.stringify(ranked, null, 1)}\n\nAnd this list of drops with reasons:\n${JSON.stringify(filtered.dropped, null, 1)}\n\nFormat: a short header stating the date, the scoring formula (language_fit x3 + material x4 + key_lead x3 + size x2 + competition x2 + weight + unread x3, max 54) and the kind column (cryptanalysis, recovery, contribution; editions are listed under Dropped) and the reader profile (${langs.join('/')} only, no archive access, copy requests possible). Then three tiers by total: A (38 and up), B (28 to 37), C (below 28), each a table with columns Rank, Target, Year, Lang, Kind, Next step, Detail, Total, Sources. Then a "Dropped this sweep" table with name and reason. Then a "Sources unreachable" line if any harvester reported a blocked source: ${JSON.stringify(raw.filter(r => r.blocked).map(r => r.source + ': ' + r.blocked))}. Keep existing entries' folder links if ciphers/<name> already exists (check with ls ciphers). Commit as "scout: refresh QUEUE.md, ${date}" without pushing. Return the counts per tier.`,
+  `Date: ${date}. Write QUEUE.md at the repository root from this ranked list (JSON):\n${JSON.stringify(ranked, null, 1)}\n\nAnd this list of drops with reasons:\n${JSON.stringify(filtered.dropped, null, 1)}\n\nFormat: a short header stating the date, the scoring formula (language_fit x3 + material x4 + key_lead x3 + size x2 + competition x2 + weight + unread x3 + pile x2, max 60) and the kind column (cryptanalysis, recovery, contribution; editions are listed under Dropped) and the reader profile (${langs.join('/')} only, no archive access, copy requests possible). Then three tiers by total: A (38 and up), B (28 to 37), C (below 28), each a table with columns Rank, Target, Year, Lang, Kind, Next step, Detail, Total, Sources. Then a "Dropped this sweep" table with name and reason. Then a "Sources unreachable" line if any harvester reported a blocked source: ${JSON.stringify(raw.filter(r => r.blocked).map(r => r.source + ': ' + r.blocked))}. Keep existing entries' folder links if ciphers/<name> already exists (check with ls ciphers). Commit as "scout: refresh QUEUE.md, ${date}" without pushing. Return the counts per tier.`,
   { label: 'file', phase: 'File', schema: { type: 'object', properties: { tierA: { type: 'integer' }, tierB: { type: 'integer' }, tierC: { type: 'integer' } }, required: ['tierA', 'tierB', 'tierC'] } },
 )
 return { ...filed, scored: ranked.length, dropped: filtered.dropped.length }
