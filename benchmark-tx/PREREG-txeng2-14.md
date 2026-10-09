@@ -22,3 +22,11 @@ grows by passZ_dv1's flagged-excluded count (recorded in a dated Amendment 9 lin
 packets (f.103r's queue was 375 rows for 37 lines; f.102r has 20 lines) + 1 reconciliation unit. Openings of eval truth: 0.
 
 Costs this round: 12. Eval looks this round: 0. Openings: 0.
+
+## DV1b re-priced (lane, 9 Oct 2026 22:5x UTC by date -u; on the worker's pricing flag BEFORE any read; the lane's own error)
+The lane priced f.102r at 20 lines; the BENCHMARK-TX row is f102r_L01-L37 (74 crops, 37 lines), the same size as f.103r. Re-priced per
+unit from the nearest ledger rows (S2-READ 12.70 for 10 Opus calls + overlap check; S2-ADJ 5.40 for 13 packets): 5 calls per pass x 2 =
+10 Opus reads, packets from the DISAGREE rows only (the S2-ADJ shape, which is the frozen step 3 as actually executed on f.103r; the
+agreed-uncertain rows are kept as agreed), about 13 packets, plus 1 reconciliation unit. **Cap 22, box 120 min**; nothing else in the
+section changes. The pipeline on the dev leaf is thereby identical to the S2 pipeline as run (steps 1-4 + the packet-shape repair).
+Workers' stop rule unchanged (80% of either figure).
