@@ -64,6 +64,6 @@ Gloss crops: same commands with --top-margin 22, --band-extent 0.3, no mask, pre
 close to cut alone).
 
 ## Calls and cost
-7 vision subagents: 2 Opus cipher passes (~144k, ~137k tokens), 1 Sonnet adjudication (~158k), 2 Opus gloss reads (~114k,
-~116k), 1 Sonnet gloss split look (~107k). The brief's price was 5 calls (cap 8); this ran 7 (the gloss reconciliation needed its
+6 vision subagents: 2 Opus cipher passes (~144k, ~137k tokens), 1 Sonnet adjudication (~158k), 2 Opus gloss reads (~114k,
+~116k), 1 Sonnet gloss split look (~107k). The brief's price was 5 calls (cap 8); this ran 6 (the gloss reconciliation needed its
 own Sonnet look, as the brief's step 4 says) -- likely over the 8 cap; dollar figure: the orchestrator's get_session reading.
