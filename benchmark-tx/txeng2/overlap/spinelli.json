@@ -1,0 +1,247 @@
+{
+ "lines": {
+  "p1c_L01": {
+   "position_model": "ink-mass quantile",
+   "segments": 2,
+   "zones": [
+    [
+     1400.0,
+     1600.0
+    ]
+   ],
+   "overlap_box_native": [
+    200.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 200.0,
+     "ncc": 1.0
+    }
+   ],
+   "ink_extent": [
+    57.0,
+    2823.0
+   ]
+  },
+  "p1c_L02": {
+   "position_model": "ink-mass quantile",
+   "segments": 2,
+   "zones": [
+    [
+     1400.0,
+     1600.0
+    ]
+   ],
+   "overlap_box_native": [
+    200.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 200.0,
+     "ncc": 1.0
+    }
+   ],
+   "ink_extent": [
+    130.0,
+    2965.0
+   ]
+  },
+  "p1c_L03": {
+   "position_model": "ink-mass quantile",
+   "segments": 2,
+   "zones": [
+    [
+     1400.0,
+     1600.0
+    ]
+   ],
+   "overlap_box_native": [
+    200.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 200.0,
+     "ncc": 1.0
+    }
+   ],
+   "ink_extent": [
+    128.0,
+    2968.0
+   ]
+  },
+  "p1c_L04": {
+   "position_model": "ink-mass quantile",
+   "segments": 2,
+   "zones": [
+    [
+     1400.0,
+     1600.0
+    ]
+   ],
+   "overlap_box_native": [
+    200.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 200.0,
+     "ncc": 1.0
+    }
+   ],
+   "ink_extent": [
+    128.0,
+    2932.0
+   ]
+  },
+  "p1c_L05": {
+   "position_model": "ink-mass quantile",
+   "segments": 2,
+   "zones": [
+    [
+     1400.0,
+     1600.0
+    ]
+   ],
+   "overlap_box_native": [
+    200.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 200.0,
+     "ncc": 1.0
+    }
+   ],
+   "ink_extent": [
+    123.0,
+    2894.0
+   ]
+  },
+  "p1c_L06": {
+   "position_model": "ink-mass quantile",
+   "segments": 2,
+   "zones": [
+    [
+     1400.0,
+     1600.0
+    ]
+   ],
+   "overlap_box_native": [
+    200.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 200.0,
+     "ncc": 1.0
+    }
+   ],
+   "ink_extent": [
+    105.0,
+    2928.0
+   ]
+  },
+  "p1c_L07": {
+   "position_model": "ink-mass quantile",
+   "segments": 2,
+   "zones": [
+    [
+     1400.0,
+     1600.0
+    ]
+   ],
+   "overlap_box_native": [
+    200.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 200.0,
+     "ncc": 1.0
+    }
+   ],
+   "ink_extent": [
+    188.0,
+    2933.0
+   ]
+  },
+  "p1c_L08": {
+   "position_model": "ink-mass quantile",
+   "segments": 2,
+   "zones": [
+    [
+     1400.0,
+     1600.0
+    ]
+   ],
+   "overlap_box_native": [
+    200.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 200.0,
+     "ncc": 1.0
+    }
+   ],
+   "ink_extent": [
+    72.0,
+    2576.0
+   ]
+  },
+  "p2c_L01": {
+   "position_model": "ink-mass quantile",
+   "segments": 2,
+   "zones": [
+    [
+     1455.0,
+     1600.0
+    ]
+   ],
+   "overlap_box_native": [
+    145.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 145.0,
+     "ncc": 0.997
+    }
+   ],
+   "ink_extent": [
+    72.0,
+    3023.0
+   ]
+  },
+  "p2c_L02": {
+   "position_model": "ink-mass quantile",
+   "segments": 2,
+   "zones": [
+    [
+     1455.0,
+     1600.0
+    ]
+   ],
+   "overlap_box_native": [
+    145.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 145.0,
+     "ncc": 0.996
+    }
+   ],
+   "ink_extent": [
+    90.0,
+    2457.0
+   ]
+  }
+ },
+ "passes": {
+  "Z": {
+   "indels": [],
+   "counts": {
+    "inside": 1,
+    "seam": 1,
+    "outside": 3
+   },
+   "total": 5,
+   "share_in_or_seam": 0.4
+  }
+ },
+ "chance_in_or_seam": 0.124
+}

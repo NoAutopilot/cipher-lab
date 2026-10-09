@@ -1,0 +1,6 @@
+f152r_L01: 5 segs; overlap boxes [612.0, 613.0, 613.0, 612.0] native px; pixel match 612.0 (ncc 0.996), 613.0 (ncc 0.99), 613.0 (ncc 0.955), 612.0 (ncc 0.997); ink [546.0, 3786.0]
+f152r_L02: 5 segs; overlap boxes [612.0, 613.0, 613.0, 612.0] native px; pixel match 612.0 (ncc 0.997), 613.0 (ncc 0.998), 613.0 (ncc 0.998), 612.0 (ncc 0.998); ink [499.0, 3786.0]
+f152r_L03: 5 segs; overlap boxes [612.0, 613.0, 613.0, 612.0] native px; pixel match 612.0 (ncc 0.998), 613.0 (ncc 0.997), 613.0 (ncc 0.999), 612.0 (ncc 0.999); ink [500.0, 3786.0]
+f152r_L04: 5 segs; overlap boxes [612.0, 613.0, 613.0, 612.0] native px; pixel match 612.0 (ncc 0.995), 613.0 (ncc 0.991), 613.0 (ncc 0.998), 612.0 (ncc 0.999); ink [488.0, 3786.0]
+Z: indels 1 -- inside 0, seam 0, outside 1; in-or-seam share 0.0
+chance in-or-seam share (uniform indel): 0.515

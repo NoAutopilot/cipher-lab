@@ -1,0 +1,40 @@
+## no87_dev_tune (birago1572-no87): 12 lines; box overlaps [425.0]; pixel match ncc>=0.95 on 24/24 pairs, values [425.0]; pitch 83.3 px
+  L: 0 indels, in 0 seam 0 out 0
+  A: 2 indels, in 0 seam 0 out 2
+  B: 4 indels, in 1 seam 0 out 3
+  declared pooled: in 1 seam 0 out 5 of 6 -> share 0.167; chance 0.379; below half: sentence corrected for future briefs only
+  sentence f178v: segments of a line overlap by 425 native px (the images you read are at native resolution, so 425 px in each image), about 5 signs (median sign width 83 px, sign pitch, ink extent / truth signs per line); a sign at the right edge of s1 and the left edge of s2 is ONE sign: the last 425 px of s1 and the first 425 px of s2 show the same ink, read it once.
+## no87_eval_heldout (birago1572-no87): 14 lines; box overlaps [375.0, 425.0]; pixel match ncc>=0.95 on 28/28 pairs, values [375.0, 425.0]; pitch 88.9 px
+  L: 0 indels, in 0 seam 0 out 0
+  A: 0 indels, in 0 seam 0 out 0
+  B: 1 indels, in 0 seam 1 out 0
+  declared pooled: in 0 seam 1 out 0 of 1 -> share 1.0; chance 0.373; overlap-sentence-suspect
+  sentence f178v: segments of a line overlap by 425 native px (the images you read are at native resolution, so 425 px in each image), about 5 signs (median sign width 85 px, sign pitch, ink extent / truth signs per line); a sign at the right edge of s1 and the left edge of s2 is ONE sign: the last 425 px of s1 and the first 425 px of s2 show the same ink, read it once.
+  sentence f179r: segments of a line overlap by 375 native px (the images you read are at native resolution, so 375 px in each image), about 4 signs (median sign width 94 px, sign pitch, ink extent / truth signs per line); a sign at the right edge of s1 and the left edge of s2 is ONE sign: the last 375 px of s1 and the first 375 px of s2 show the same ink, read it once.
+## no87_f178r (birago1572-no87): 3 lines; box overlaps [350.0]; pixel match ncc>=0.95 on 6/6 pairs, values [350.0]; pitch 74.4 px
+  L: 0 indels, in 0 seam 0 out 0
+  A: 8 indels, in 1 seam 1 out 6
+  B: 9 indels, in 1 seam 1 out 7
+  declared pooled: in 2 seam 2 out 13 of 17 -> share 0.235; chance 0.33; below half: sentence corrected for future briefs only
+  sentence f178r: segments of a line overlap by 350 native px (the images you read are at native resolution, so 350 px in each image), about 5 signs (median sign width 74 px, sign pitch, ink extent / truth signs per line); a sign at the right edge of s1 and the left edge of s2 is ONE sign: the last 350 px of s1 and the first 350 px of s2 show the same ink, read it once.
+## dint_f128 (dint-f128-print): 4 lines; box overlaps [1100.0]; pixel match ncc>=0.95 on 4/4 pairs, values [1100.0]; pitch 55.7 px
+  A: 9 indels, in 4 seam 0 out 5
+  B: 5 indels, in 1 seam 0 out 4
+  X21_sonnet_pipeline: 7 indels, in 2 seam 0 out 5
+  declared pooled: in 7 seam 0 out 14 of 21 -> share 0.333; chance 0.372; below half: sentence corrected for future briefs only
+  sentence f128: segments of a line overlap by 1100 native px (the images you read are at native resolution, so 1100 px in each image), about 20 signs (median sign width 56 px, sign pitch, ink extent / truth signs per line); a sign at the right edge of s1 and the left edge of s2 is ONE sign: the last 1100 px of s1 and the first 1100 px of s2 show the same ink, read it once.
+## f152r (birago1572-f152r): 4 lines; box overlaps [612.0, 613.0]; pixel match ncc>=0.95 on 16/16 pairs, values [612.0, 613.0]; pitch 116.4 px
+  Z: 1 indels, in 0 seam 0 out 1
+  declared pooled: in 0 seam 0 out 1 of 1 -> share 0.0; chance 0.515; below half: sentence corrected for future briefs only
+  sentence f152r: segments of a line overlap by 612 native px (the images you read are at native resolution, so 612 px in each image), about 5 signs (median sign width 116 px, sign pitch, ink extent / truth signs per line); a sign at the right edge of s1 and the left edge of s2 is ONE sign: the last 612 px of s1 and the first 612 px of s2 show the same ink, read it once.
+## spinelli (spinelli-c1519-confirm): 10 lines; box overlaps [145.0, 200.0]; pixel match ncc>=0.95 on 10/10 pairs, values [145.0, 200.0]; pitch 105.0 px
+  Z: 5 indels, in 1 seam 1 out 3
+  declared pooled: in 1 seam 1 out 3 of 5 -> share 0.4; chance 0.124; below half: sentence corrected for future briefs only
+  sentence p1c: segments of a line overlap by 200 native px (the images you read are at native resolution, so 200 px in each image), about 2 signs (median sign width 105 px, sign pitch, ink extent / truth signs per line); a sign at the right edge of s1 and the left edge of s2 is ONE sign: the last 200 px of s1 and the first 200 px of s2 show the same ink, read it once.
+  sentence p2c: segments of a line overlap by 145 native px (the images you read are at native resolution, so 145 px in each image), about 1 signs (median sign width 108 px, sign pitch, ink extent / truth signs per line); a sign at the right edge of s1 and the left edge of s2 is ONE sign: the last 145 px of s1 and the first 145 px of s2 show the same ink, read it once.
+## f87 (ceppo-f87-S): 5 lines; box overlaps [0]; pixel match ncc>=0.95 on 0/13 pairs, values []; pitch 80.1 px
+  C: 0 indels, in 0 seam 0 out 0
+  A (suppl.): 3 indels, in 0 seam 0 out 3
+  B (suppl.): 10 indels, in 0 seam 1 out 9
+  declared pooled: in 0 seam 0 out 0 of 0 -> share None; chance 0.118; no indels: rule not applicable
+  sentence f87: segments of a line do not overlap (cut at the column-ink minimum; 0 native px from the boxes, no pixel match at ncc >= 0.95); continue the sign count across them and check the sign at each cut once.

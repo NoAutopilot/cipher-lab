@@ -1,0 +1,279 @@
+{
+ "lines": {
+  "f128_L02": {
+   "position_model": "ink-mass quantile",
+   "segments": 2,
+   "zones": [
+    [
+     1500.0,
+     2600.0
+    ]
+   ],
+   "overlap_box_native": [
+    1100.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 1100.0,
+     "ncc": 0.997
+    }
+   ],
+   "ink_extent": [
+    326.0,
+    3528.0
+   ]
+  },
+  "f128_L03": {
+   "position_model": "ink-mass quantile",
+   "segments": 2,
+   "zones": [
+    [
+     1500.0,
+     2600.0
+    ]
+   ],
+   "overlap_box_native": [
+    1100.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 1100.0,
+     "ncc": 0.997
+    }
+   ],
+   "ink_extent": [
+    346.0,
+    3485.0
+   ]
+  },
+  "f128_L04": {
+   "position_model": "ink-mass quantile",
+   "segments": 2,
+   "zones": [
+    [
+     1500.0,
+     2600.0
+    ]
+   ],
+   "overlap_box_native": [
+    1100.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 1100.0,
+     "ncc": 0.997
+    }
+   ],
+   "ink_extent": [
+    368.0,
+    3511.0
+   ]
+  },
+  "f128_L05": {
+   "position_model": "ink-mass quantile",
+   "segments": 2,
+   "zones": [
+    [
+     1500.0,
+     2600.0
+    ]
+   ],
+   "overlap_box_native": [
+    1100.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 1100.0,
+     "ncc": 0.997
+    }
+   ],
+   "ink_extent": [
+    342.0,
+    3522.0
+   ]
+  }
+ },
+ "passes": {
+  "A": {
+   "indels": [
+    {
+     "line": "f128_L02",
+     "pos": 3.5,
+     "kind": "inserted",
+     "x_native": 1620.0,
+     "zone": "inside"
+    },
+    {
+     "line": "f128_L03",
+     "pos": 1.5,
+     "kind": "inserted",
+     "x_native": 391.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f128_L03",
+     "pos": 20.0,
+     "kind": "deleted",
+     "x_native": 1402.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f128_L03",
+     "pos": 25.5,
+     "kind": "inserted",
+     "x_native": 1720.0,
+     "zone": "inside"
+    },
+    {
+     "line": "f128_L03",
+     "pos": 27.5,
+     "kind": "inserted",
+     "x_native": 1828.0,
+     "zone": "inside"
+    },
+    {
+     "line": "f128_L04",
+     "pos": 7.5,
+     "kind": "inserted",
+     "x_native": 655.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f128_L04",
+     "pos": 13.0,
+     "kind": "deleted",
+     "x_native": 967.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f128_L04",
+     "pos": 57.5,
+     "kind": "inserted",
+     "x_native": 3383.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f128_L05",
+     "pos": 27.5,
+     "kind": "inserted",
+     "x_native": 1629.0,
+     "zone": "inside"
+    }
+   ],
+   "counts": {
+    "inside": 4,
+    "seam": 0,
+    "outside": 5
+   },
+   "total": 9,
+   "share_in_or_seam": 0.444
+  },
+  "B": {
+   "indels": [
+    {
+     "line": "f128_L03",
+     "pos": 1.5,
+     "kind": "inserted",
+     "x_native": 391.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f128_L03",
+     "pos": 25.5,
+     "kind": "inserted",
+     "x_native": 1720.0,
+     "zone": "inside"
+    },
+    {
+     "line": "f128_L04",
+     "pos": 7.5,
+     "kind": "inserted",
+     "x_native": 655.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f128_L04",
+     "pos": 43.5,
+     "kind": "inserted",
+     "x_native": 2657.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f128_L04",
+     "pos": 57.5,
+     "kind": "inserted",
+     "x_native": 3383.0,
+     "zone": "outside"
+    }
+   ],
+   "counts": {
+    "inside": 1,
+    "seam": 0,
+    "outside": 4
+   },
+   "total": 5,
+   "share_in_or_seam": 0.2
+  },
+  "X21_sonnet_pipeline": {
+   "indels": [
+    {
+     "line": "f128_L03",
+     "pos": 1.5,
+     "kind": "inserted",
+     "x_native": 391.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f128_L03",
+     "pos": 27.5,
+     "kind": "inserted",
+     "x_native": 1828.0,
+     "zone": "inside"
+    },
+    {
+     "line": "f128_L04",
+     "pos": 7.5,
+     "kind": "inserted",
+     "x_native": 655.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f128_L04",
+     "pos": 43.5,
+     "kind": "inserted",
+     "x_native": 2657.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f128_L04",
+     "pos": 51.5,
+     "kind": "inserted",
+     "x_native": 3105.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f128_L04",
+     "pos": 57.5,
+     "kind": "inserted",
+     "x_native": 3383.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f128_L05",
+     "pos": 35.0,
+     "kind": "deleted",
+     "x_native": 2030.0,
+     "zone": "inside"
+    }
+   ],
+   "counts": {
+    "inside": 2,
+    "seam": 0,
+    "outside": 5
+   },
+   "total": 7,
+   "share_in_or_seam": 0.286
+  }
+ },
+ "chance_in_or_seam": 0.372
+}

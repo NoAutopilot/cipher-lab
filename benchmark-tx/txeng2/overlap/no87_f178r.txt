@@ -1,0 +1,7 @@
+f178r_L01: 3 segs; overlap boxes [350.0, 350.0] native px; pixel match 350.0 (ncc 0.998), 350.0 (ncc 0.997); ink [4997.0, 7302.0]
+f178r_L02: 3 segs; overlap boxes [350.0, 350.0] native px; pixel match 350.0 (ncc 0.998), 350.0 (ncc 0.999); ink [4986.0, 7459.0]
+f178r_L03: 3 segs; overlap boxes [350.0, 350.0] native px; pixel match 350.0 (ncc 0.999), 350.0 (ncc 0.996); ink [4989.0, 7426.0]
+L: indels 0 -- inside 0, seam 0, outside 0; in-or-seam share None
+A: indels 8 -- inside 1, seam 1, outside 6; in-or-seam share 0.25
+B: indels 9 -- inside 1, seam 1, outside 7; in-or-seam share 0.222
+chance in-or-seam share (uniform indel): 0.33

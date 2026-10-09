@@ -1,0 +1,12 @@
+p1c_L01: 2 segs; overlap boxes [200.0] native px; pixel match 200.0 (ncc 1.0); ink [57.0, 2823.0]
+p1c_L02: 2 segs; overlap boxes [200.0] native px; pixel match 200.0 (ncc 1.0); ink [130.0, 2965.0]
+p1c_L03: 2 segs; overlap boxes [200.0] native px; pixel match 200.0 (ncc 1.0); ink [128.0, 2968.0]
+p1c_L04: 2 segs; overlap boxes [200.0] native px; pixel match 200.0 (ncc 1.0); ink [128.0, 2932.0]
+p1c_L05: 2 segs; overlap boxes [200.0] native px; pixel match 200.0 (ncc 1.0); ink [123.0, 2894.0]
+p1c_L06: 2 segs; overlap boxes [200.0] native px; pixel match 200.0 (ncc 1.0); ink [105.0, 2928.0]
+p1c_L07: 2 segs; overlap boxes [200.0] native px; pixel match 200.0 (ncc 1.0); ink [188.0, 2933.0]
+p1c_L08: 2 segs; overlap boxes [200.0] native px; pixel match 200.0 (ncc 1.0); ink [72.0, 2576.0]
+p2c_L01: 2 segs; overlap boxes [145.0] native px; pixel match 145.0 (ncc 0.997); ink [72.0, 3023.0]
+p2c_L02: 2 segs; overlap boxes [145.0] native px; pixel match 145.0 (ncc 0.996); ink [90.0, 2457.0]
+Z: indels 5 -- inside 1, seam 1, outside 3; in-or-seam share 0.4
+chance in-or-seam share (uniform indel): 0.147

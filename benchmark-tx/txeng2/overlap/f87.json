@@ -1,0 +1,317 @@
+{
+ "lines": {
+  "f87_L01": {
+   "position_model": "ink-mass quantile",
+   "segments": 4,
+   "zones": [
+    [
+     1092.0,
+     1092.0
+    ],
+    [
+     2230.0,
+     2230.0
+    ],
+    [
+     3377.0,
+     3377.0
+    ]
+   ],
+   "overlap_box_native": [
+    0,
+    0,
+    0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 427.5,
+     "ncc": 0.726
+    },
+    {
+     "native_px": 78.5,
+     "ncc": 0.458
+    },
+    {
+     "native_px": 198.5,
+     "ncc": 0.829
+    }
+   ],
+   "ink_extent": [
+    13.0,
+    3617.0
+   ]
+  },
+  "f87_L02": {
+   "position_model": "ink-mass quantile",
+   "segments": 4,
+   "zones": [
+    [
+     1094.0,
+     1094.0
+    ],
+    [
+     2222.0,
+     2222.0
+    ],
+    [
+     3282.0,
+     3282.0
+    ]
+   ],
+   "overlap_box_native": [
+    0,
+    0,
+    0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 901.0,
+     "ncc": 0.614
+    },
+    {
+     "native_px": 444.0,
+     "ncc": 0.655
+    },
+    {
+     "native_px": 76.0,
+     "ncc": 0.823
+    }
+   ],
+   "ink_extent": [
+    12.0,
+    3616.0
+   ]
+  },
+  "f87_L03": {
+   "position_model": "ink-mass quantile",
+   "segments": 3,
+   "zones": [
+    [
+     1083.0,
+     1083.0
+    ],
+    [
+     2285.0,
+     2285.0
+    ]
+   ],
+   "overlap_box_native": [
+    0,
+    0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 376.0,
+     "ncc": 0.369
+    },
+    {
+     "native_px": 623.0,
+     "ncc": 0.632
+    }
+   ],
+   "ink_extent": [
+    12.0,
+    3606.0
+   ]
+  },
+  "f87_L04": {
+   "position_model": "ink-mass quantile",
+   "segments": 3,
+   "zones": [
+    [
+     1202.0,
+     1202.0
+    ],
+    [
+     2317.0,
+     2317.0
+    ]
+   ],
+   "overlap_box_native": [
+    0,
+    0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 352.0,
+     "ncc": 0.661
+    },
+    {
+     "native_px": 592.0,
+     "ncc": 0.706
+    }
+   ],
+   "ink_extent": [
+    199.0,
+    3605.0
+   ]
+  },
+  "f87_L05": {
+   "position_model": "ink-mass quantile",
+   "segments": 4,
+   "zones": [
+    [
+     1077.0,
+     1077.0
+    ],
+    [
+     2172.0,
+     2172.0
+    ],
+    [
+     3237.0,
+     3237.0
+    ]
+   ],
+   "overlap_box_native": [
+    0,
+    0,
+    0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 401.0,
+     "ncc": 0.887
+    },
+    {
+     "native_px": 154.0,
+     "ncc": 0.597
+    },
+    {
+     "native_px": 356.0,
+     "ncc": 0.834
+    }
+   ],
+   "ink_extent": [
+    13.0,
+    3615.0
+   ]
+  }
+ },
+ "passes": {
+  "C": {
+   "indels": [],
+   "counts": {
+    "inside": 0,
+    "seam": 0,
+    "outside": 0
+   },
+   "total": 0,
+   "share_in_or_seam": null
+  },
+  "A": {
+   "indels": [
+    {
+     "line": "f87_L01",
+     "pos": 8.5,
+     "kind": "inserted",
+     "x_native": 1496.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f87_L05",
+     "pos": 25.5,
+     "kind": "inserted",
+     "x_native": 2312.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f87_L05",
+     "pos": 39.0,
+     "kind": "deleted",
+     "x_native": 3381.0,
+     "zone": "outside"
+    }
+   ],
+   "counts": {
+    "inside": 0,
+    "seam": 0,
+    "outside": 3
+   },
+   "total": 3,
+   "share_in_or_seam": 0.0
+  },
+  "B": {
+   "indels": [
+    {
+     "line": "f87_L01",
+     "pos": 20.5,
+     "kind": "inserted",
+     "x_native": 3055.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f87_L02",
+     "pos": 10.5,
+     "kind": "inserted",
+     "x_native": 1307.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f87_L02",
+     "pos": 15.5,
+     "kind": "inserted",
+     "x_native": 1602.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f87_L03",
+     "pos": 14.5,
+     "kind": "inserted",
+     "x_native": 1308.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f87_L03",
+     "pos": 44.5,
+     "kind": "inserted",
+     "x_native": 3584.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f87_L04",
+     "pos": 2.5,
+     "kind": "inserted",
+     "x_native": 311.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f87_L04",
+     "pos": 15.5,
+     "kind": "inserted",
+     "x_native": 1255.0,
+     "zone": "seam"
+    },
+    {
+     "line": "f87_L04",
+     "pos": 41.5,
+     "kind": "inserted",
+     "x_native": 3431.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f87_L05",
+     "pos": 12.5,
+     "kind": "inserted",
+     "x_native": 1271.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f87_L05",
+     "pos": 22.5,
+     "kind": "inserted",
+     "x_native": 2033.0,
+     "zone": "outside"
+    }
+   ],
+   "counts": {
+    "inside": 0,
+    "seam": 1,
+    "outside": 9
+   },
+   "total": 10,
+   "share_in_or_seam": 0.1
+  }
+ },
+ "chance_in_or_seam": 0.118
+}

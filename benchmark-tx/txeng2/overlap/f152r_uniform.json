@@ -1,0 +1,217 @@
+{
+ "lines": {
+  "f152r_L01": {
+   "position_model": "uniform over ink extent",
+   "segments": 5,
+   "zones": [
+    [
+     638.0,
+     1250.0
+    ],
+    [
+     1275.0,
+     1888.0
+    ],
+    [
+     1912.0,
+     2525.0
+    ],
+    [
+     2550.0,
+     3162.0
+    ]
+   ],
+   "overlap_box_native": [
+    612.0,
+    613.0,
+    613.0,
+    612.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 612.0,
+     "ncc": 0.996
+    },
+    {
+     "native_px": 613.0,
+     "ncc": 0.99
+    },
+    {
+     "native_px": 613.0,
+     "ncc": 0.955
+    },
+    {
+     "native_px": 612.0,
+     "ncc": 0.997
+    }
+   ],
+   "ink_extent": [
+    546.0,
+    3786.0
+   ]
+  },
+  "f152r_L02": {
+   "position_model": "uniform over ink extent",
+   "segments": 5,
+   "zones": [
+    [
+     638.0,
+     1250.0
+    ],
+    [
+     1275.0,
+     1888.0
+    ],
+    [
+     1912.0,
+     2525.0
+    ],
+    [
+     2550.0,
+     3162.0
+    ]
+   ],
+   "overlap_box_native": [
+    612.0,
+    613.0,
+    613.0,
+    612.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 612.0,
+     "ncc": 0.997
+    },
+    {
+     "native_px": 613.0,
+     "ncc": 0.998
+    },
+    {
+     "native_px": 613.0,
+     "ncc": 0.998
+    },
+    {
+     "native_px": 612.0,
+     "ncc": 0.998
+    }
+   ],
+   "ink_extent": [
+    499.0,
+    3786.0
+   ]
+  },
+  "f152r_L03": {
+   "position_model": "uniform over ink extent",
+   "segments": 5,
+   "zones": [
+    [
+     638.0,
+     1250.0
+    ],
+    [
+     1275.0,
+     1888.0
+    ],
+    [
+     1912.0,
+     2525.0
+    ],
+    [
+     2550.0,
+     3162.0
+    ]
+   ],
+   "overlap_box_native": [
+    612.0,
+    613.0,
+    613.0,
+    612.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 612.0,
+     "ncc": 0.998
+    },
+    {
+     "native_px": 613.0,
+     "ncc": 0.997
+    },
+    {
+     "native_px": 613.0,
+     "ncc": 0.999
+    },
+    {
+     "native_px": 612.0,
+     "ncc": 0.999
+    }
+   ],
+   "ink_extent": [
+    500.0,
+    3786.0
+   ]
+  },
+  "f152r_L04": {
+   "position_model": "uniform over ink extent",
+   "segments": 5,
+   "zones": [
+    [
+     638.0,
+     1250.0
+    ],
+    [
+     1275.0,
+     1888.0
+    ],
+    [
+     1912.0,
+     2525.0
+    ],
+    [
+     2550.0,
+     3162.0
+    ]
+   ],
+   "overlap_box_native": [
+    612.0,
+    613.0,
+    613.0,
+    612.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 612.0,
+     "ncc": 0.995
+    },
+    {
+     "native_px": 613.0,
+     "ncc": 0.991
+    },
+    {
+     "native_px": 613.0,
+     "ncc": 0.998
+    },
+    {
+     "native_px": 612.0,
+     "ncc": 0.999
+    }
+   ],
+   "ink_extent": [
+    488.0,
+    3786.0
+   ]
+  }
+ },
+ "passes": {
+  "Z": {
+   "indels": [],
+   "counts": {
+    "inside": 0,
+    "seam": 1,
+    "outside": 0
+   },
+   "total": 1,
+   "share_in_or_seam": 1.0
+  }
+ },
+ "chance_in_or_seam": 0.856
+}

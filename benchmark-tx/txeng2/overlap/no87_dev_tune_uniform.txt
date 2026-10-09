@@ -1,0 +1,16 @@
+f178v_L01: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 0.999), 425.0 (ncc 0.999); ink [1902.0, 4414.0]
+f178v_L02: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 0.999), 425.0 (ncc 0.999); ink [1915.0, 4423.0]
+f178v_L03: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 0.999), 425.0 (ncc 0.998); ink [1904.0, 4409.0]
+f178v_L04: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 0.999), 425.0 (ncc 0.999); ink [1899.0, 4404.0]
+f178v_L05: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 0.999), 425.0 (ncc 0.999); ink [1904.0, 4405.0]
+f178v_L06: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 0.999), 425.0 (ncc 0.999); ink [1913.0, 4405.0]
+f178v_L07: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 0.999), 425.0 (ncc 0.999); ink [1918.0, 4411.0]
+f178v_L08: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 1.0), 425.0 (ncc 0.999); ink [1914.0, 4417.0]
+f178v_L09: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 0.999), 425.0 (ncc 0.999); ink [1917.0, 4413.0]
+f178v_L10: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 0.999), 425.0 (ncc 0.999); ink [1924.0, 4408.0]
+f178v_L11: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 0.999), 425.0 (ncc 0.999); ink [1906.0, 4407.0]
+f178v_L12: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 0.999), 425.0 (ncc 0.999); ink [1926.0, 4405.0]
+L: indels 0 -- inside 0, seam 0, outside 0; in-or-seam share None
+A: indels 2 -- inside 0, seam 0, outside 2; in-or-seam share 0.0
+B: indels 4 -- inside 0, seam 1, outside 3; in-or-seam share 0.25
+chance in-or-seam share (uniform indel): 0.472

@@ -1,0 +1,8 @@
+f128_L02: 2 segs; overlap boxes [1100.0] native px; pixel match 1100.0 (ncc 0.997); ink [326.0, 3528.0]
+f128_L03: 2 segs; overlap boxes [1100.0] native px; pixel match 1100.0 (ncc 0.997); ink [346.0, 3485.0]
+f128_L04: 2 segs; overlap boxes [1100.0] native px; pixel match 1100.0 (ncc 0.997); ink [368.0, 3511.0]
+f128_L05: 2 segs; overlap boxes [1100.0] native px; pixel match 1100.0 (ncc 0.997); ink [342.0, 3522.0]
+A: indels 9 -- inside 4, seam 0, outside 5; in-or-seam share 0.444
+B: indels 5 -- inside 1, seam 0, outside 4; in-or-seam share 0.2
+X21_sonnet_pipeline: indels 7 -- inside 2, seam 0, outside 5; in-or-seam share 0.286
+chance in-or-seam share (uniform indel): 0.372

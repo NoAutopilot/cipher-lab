@@ -1,0 +1,18 @@
+f178v_L13: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 0.999), 425.0 (ncc 0.999); ink [1927.0, 4402.0]
+f178v_L14: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 0.999), 425.0 (ncc 0.999); ink [1927.0, 4404.0]
+f178v_L15: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 1.0), 425.0 (ncc 0.999); ink [1937.0, 4412.0]
+f178v_L16: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 0.998), 425.0 (ncc 0.999); ink [1929.0, 4417.0]
+f178v_L17: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 0.996), 425.0 (ncc 0.999); ink [1934.0, 4404.0]
+f178v_L18: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 0.999), 425.0 (ncc 0.999); ink [1932.0, 4396.0]
+f178v_L19: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 0.999), 425.0 (ncc 0.998); ink [1943.0, 4391.0]
+f178v_L20: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 0.998), 425.0 (ncc 0.999); ink [1930.0, 4388.0]
+f178v_L21: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 0.998), 425.0 (ncc 0.999); ink [1939.0, 4386.0]
+f178v_L22: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 0.997), 425.0 (ncc 0.998); ink [1945.0, 4384.0]
+f178v_L23: 3 segs; overlap boxes [425.0, 425.0] native px; pixel match 425.0 (ncc 0.999), 425.0 (ncc 0.997); ink [1941.0, 4386.0]
+f179r_L01: 3 segs; overlap boxes [375.0, 375.0] native px; pixel match 375.0 (ncc 0.999), 375.0 (ncc 0.999); ink [4833.0, 7750.0]
+f179r_L02: 3 segs; overlap boxes [375.0, 375.0] native px; pixel match 375.0 (ncc 0.999), 375.0 (ncc 0.998); ink [4835.0, 7747.0]
+f179r_L03: 3 segs; overlap boxes [375.0, 375.0] native px; pixel match 375.0 (ncc 0.999), 375.0 (ncc 0.997); ink [4844.0, 7747.0]
+L: indels 0 -- inside 0, seam 0, outside 0; in-or-seam share None
+A: indels 0 -- inside 0, seam 0, outside 0; in-or-seam share None
+B: indels 1 -- inside 0, seam 1, outside 0; in-or-seam share 1.0
+chance in-or-seam share (uniform indel): 0.453

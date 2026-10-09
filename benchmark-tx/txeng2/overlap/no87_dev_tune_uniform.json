@@ -1,0 +1,465 @@
+{
+ "lines": {
+  "f178v_L01": {
+   "position_model": "uniform over ink extent",
+   "segments": 3,
+   "zones": [
+    [
+     2528.0,
+     2953.0
+    ],
+    [
+     3353.0,
+     3778.0
+    ]
+   ],
+   "overlap_box_native": [
+    425.0,
+    425.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    },
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    }
+   ],
+   "ink_extent": [
+    1902.0,
+    4414.0
+   ]
+  },
+  "f178v_L02": {
+   "position_model": "uniform over ink extent",
+   "segments": 3,
+   "zones": [
+    [
+     2528.0,
+     2953.0
+    ],
+    [
+     3353.0,
+     3778.0
+    ]
+   ],
+   "overlap_box_native": [
+    425.0,
+    425.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    },
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    }
+   ],
+   "ink_extent": [
+    1915.0,
+    4423.0
+   ]
+  },
+  "f178v_L03": {
+   "position_model": "uniform over ink extent",
+   "segments": 3,
+   "zones": [
+    [
+     2528.0,
+     2953.0
+    ],
+    [
+     3353.0,
+     3778.0
+    ]
+   ],
+   "overlap_box_native": [
+    425.0,
+    425.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    },
+    {
+     "native_px": 425.0,
+     "ncc": 0.998
+    }
+   ],
+   "ink_extent": [
+    1904.0,
+    4409.0
+   ]
+  },
+  "f178v_L04": {
+   "position_model": "uniform over ink extent",
+   "segments": 3,
+   "zones": [
+    [
+     2528.0,
+     2953.0
+    ],
+    [
+     3353.0,
+     3778.0
+    ]
+   ],
+   "overlap_box_native": [
+    425.0,
+    425.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    },
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    }
+   ],
+   "ink_extent": [
+    1899.0,
+    4404.0
+   ]
+  },
+  "f178v_L05": {
+   "position_model": "uniform over ink extent",
+   "segments": 3,
+   "zones": [
+    [
+     2528.0,
+     2953.0
+    ],
+    [
+     3353.0,
+     3778.0
+    ]
+   ],
+   "overlap_box_native": [
+    425.0,
+    425.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    },
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    }
+   ],
+   "ink_extent": [
+    1904.0,
+    4405.0
+   ]
+  },
+  "f178v_L06": {
+   "position_model": "uniform over ink extent",
+   "segments": 3,
+   "zones": [
+    [
+     2528.0,
+     2953.0
+    ],
+    [
+     3353.0,
+     3778.0
+    ]
+   ],
+   "overlap_box_native": [
+    425.0,
+    425.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    },
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    }
+   ],
+   "ink_extent": [
+    1913.0,
+    4405.0
+   ]
+  },
+  "f178v_L07": {
+   "position_model": "uniform over ink extent",
+   "segments": 3,
+   "zones": [
+    [
+     2528.0,
+     2953.0
+    ],
+    [
+     3353.0,
+     3778.0
+    ]
+   ],
+   "overlap_box_native": [
+    425.0,
+    425.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    },
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    }
+   ],
+   "ink_extent": [
+    1918.0,
+    4411.0
+   ]
+  },
+  "f178v_L08": {
+   "position_model": "uniform over ink extent",
+   "segments": 3,
+   "zones": [
+    [
+     2528.0,
+     2953.0
+    ],
+    [
+     3353.0,
+     3778.0
+    ]
+   ],
+   "overlap_box_native": [
+    425.0,
+    425.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 425.0,
+     "ncc": 1.0
+    },
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    }
+   ],
+   "ink_extent": [
+    1914.0,
+    4417.0
+   ]
+  },
+  "f178v_L09": {
+   "position_model": "uniform over ink extent",
+   "segments": 3,
+   "zones": [
+    [
+     2528.0,
+     2953.0
+    ],
+    [
+     3353.0,
+     3778.0
+    ]
+   ],
+   "overlap_box_native": [
+    425.0,
+    425.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    },
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    }
+   ],
+   "ink_extent": [
+    1917.0,
+    4413.0
+   ]
+  },
+  "f178v_L10": {
+   "position_model": "uniform over ink extent",
+   "segments": 3,
+   "zones": [
+    [
+     2528.0,
+     2953.0
+    ],
+    [
+     3353.0,
+     3778.0
+    ]
+   ],
+   "overlap_box_native": [
+    425.0,
+    425.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    },
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    }
+   ],
+   "ink_extent": [
+    1924.0,
+    4408.0
+   ]
+  },
+  "f178v_L11": {
+   "position_model": "uniform over ink extent",
+   "segments": 3,
+   "zones": [
+    [
+     2528.0,
+     2953.0
+    ],
+    [
+     3353.0,
+     3778.0
+    ]
+   ],
+   "overlap_box_native": [
+    425.0,
+    425.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    },
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    }
+   ],
+   "ink_extent": [
+    1906.0,
+    4407.0
+   ]
+  },
+  "f178v_L12": {
+   "position_model": "uniform over ink extent",
+   "segments": 3,
+   "zones": [
+    [
+     2528.0,
+     2953.0
+    ],
+    [
+     3353.0,
+     3778.0
+    ]
+   ],
+   "overlap_box_native": [
+    425.0,
+    425.0
+   ],
+   "overlap_pixel": [
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    },
+    {
+     "native_px": 425.0,
+     "ncc": 0.999
+    }
+   ],
+   "ink_extent": [
+    1926.0,
+    4405.0
+   ]
+  }
+ },
+ "passes": {
+  "L": {
+   "indels": [],
+   "counts": {
+    "inside": 0,
+    "seam": 0,
+    "outside": 0
+   },
+   "total": 0,
+   "share_in_or_seam": null
+  },
+  "A": {
+   "indels": [
+    {
+     "line": "f178v_L11",
+     "pos": 30.5,
+     "kind": "inserted",
+     "x_native": 4250.7,
+     "zone": "outside"
+    },
+    {
+     "line": "f178v_L11",
+     "pos": 32.0,
+     "kind": "deleted",
+     "x_native": 4367.9,
+     "zone": "outside"
+    }
+   ],
+   "counts": {
+    "inside": 0,
+    "seam": 0,
+    "outside": 2
+   },
+   "total": 2,
+   "share_in_or_seam": 0.0
+  },
+  "B": {
+   "indels": [
+    {
+     "line": "f178v_L03",
+     "pos": 23.5,
+     "kind": "inserted",
+     "x_native": 4120.0,
+     "zone": "outside"
+    },
+    {
+     "line": "f178v_L06",
+     "pos": 7.5,
+     "kind": "inserted",
+     "x_native": 2494.5,
+     "zone": "seam"
+    },
+    {
+     "line": "f178v_L06",
+     "pos": 27.5,
+     "kind": "inserted",
+     "x_native": 4155.8,
+     "zone": "outside"
+    },
+    {
+     "line": "f178v_L09",
+     "pos": 0.5,
+     "kind": "inserted",
+     "x_native": 1917.0,
+     "zone": "outside"
+    }
+   ],
+   "counts": {
+    "inside": 0,
+    "seam": 1,
+    "outside": 3
+   },
+   "total": 4,
+   "share_in_or_seam": 0.25
+  }
+ },
+ "chance_in_or_seam": 0.472
+}
