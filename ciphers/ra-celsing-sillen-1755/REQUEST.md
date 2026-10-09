@@ -22,3 +22,8 @@ Kanslikollegium 1746-1760, among them a letter from Sillén 1759; and Sillén's 
 the Biby volume above, whose shelfmark is unchanged. Digitisation status of these siblings not yet checked.
 
 **Status:** waiting on you. Stage 2 (verified unsolved) — see NOTES.md's check-solved sweep, 24 Sept 2026.
+
+Status (9 Oct 2026, KARL-FOLD): drafted as item 2 of the one Riksarkivet message, `outreach/riksarkivet-karlxi-1677.md`
+(with ciphers/ra-karlxi-fullmakt-1677 as item 1; outreach rule 1c, one message per recipient); waiting on the gate-7 check, then
+the person's send (ASKS 132 and 159). Asks first for the key and the cipher drafts, else the whole volume with a leaf count.
+The Diplomatica Turcica siblings above are not in the draft (digitisation flags still unread, LOCAL-QUEUE L60).

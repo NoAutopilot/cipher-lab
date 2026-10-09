@@ -155,3 +155,17 @@ order as siblings if not digitised; if digitised, they are a free image check fo
 
 ## While waiting (R9-LQROWS, 6 Oct 2026)
 LOCAL-QUEUE row L60 (Riksarkivet digitisation flags: Diplomatica Turcica Celsing dispatches, Sillen dag- och brefbocker, SE/RA/721512) queued 6 Oct 2026; data.riksarkivet.se HTTP 000 from the cloud again.
+
+## Copy order folded into the Riksarkivet draft (KARL-FOLD, 9 Oct 2026)
+
+Gate read before folding: no section of this file says the item may be in print; the check-solved sweep (24 Sept), the A2P4-CELS
+print search with a positive control (3 Oct) and the R8-CELS inventory read (6 Oct) found no printed text, key or decipherment, and
+R8-CELS names the undigitised volume as the only blocker. So the copy order (ASKS 132, never drafted) is now item 2 of
+`outreach/riksarkivet-karlxi-1677.md`, one message to Riksarkivet with ciphers/ra-karlxi-fullmakt-1677 as item 1 (outreach rule 1c).
+It asks for the cipher key and the cipher drafts first, else the whole volume with a leaf count and a quotation. Status drafted, no
+`checked:` line (the gate-7 check is a separate session); not sent. Not added: the Diplomatica Turcica siblings (digitisation flags
+unread, LOCAL-QUEUE L60) and ciphers/ra-celsing-dohsson-1779 (same fonds, own REQUEST.md, no ASKS row; flagged to the parent: fold
+as item 3 before the gate-7 check, or hold until Riksarkivet answers).
+
+Verdict (update): blocked, unchanged (needs a copy of the undigitised Biby volume); the copy order is drafted, waiting on the gate-7
+check and the person's send (ASKS 132/159).
