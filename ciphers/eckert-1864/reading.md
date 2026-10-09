@@ -783,7 +783,7 @@ Code-word tokens: H 11.
 
 {time: 3 PM} for [Major] S Van Vliet [New York] [.] all the [Steam]ers now in service fit to bring [Troops] from [New Orleans] and which can possibly be spared for that service should be dispatched as they become available [.] It is not [Necessary] to take up ocean [Steam]ers not already in service [.] I am not advised [Of the] number of [Troops] but am to prepare for a large number  {tail: [signed] [Qr Master Genl U.S.] amo amas amat}
 
-Code-word tokens: H 14, M 1.
+Code-word tokens: H 15.
 
 **E144 | Page 141 | 9034 | 4 Aug 1864, copy to Sherman, from City Point (operator F. S. Van Valkenburg; LS5-R1e, row 9034/0; image-read)**
 
@@ -1303,21 +1303,21 @@ Code-word tokens: H 30.
 
 **E251 | Page 272 | 5816 | mssEC 25 (obj 5952, pointer 5816), 4 Dec 1864 12.50 PM Hd Qrs Army of the James, R. O'Brien (Butler's office) to Sheldon at Ft Monroe, for Maj. Carney: Col. Saunders's report on property of Stephen Barton (FM-R4a; row 5816/0; image-read)**
 
-1250 PM Geo D Sheldon Ft Monroe {time: 1 PM} for [Major] Carney [Norfolk] [.] Tell [Colonel] Saunders make a [Report] Tobey sent me tomorrows boat of property round him by any officers [,] captured at the time or take from [In the] [Adjt Genl. U.S.] of [Adjt Genl. U.S.]'s ville [North Carolina] [.] say toothing about this [Telegraph (-ed, -ing)] [.] if [Colonel] sanders is not able to make the [Report] himself [,] get the facts and make the [Report] yourself [,] also send me all the books and papers taken from [Adjt Genl. U.S.] [.] make and send these [Report]'s without attracting any observation  {tail: [signed] [Maj Gen B. F. Butler] funny R OBrien}
+1250 PM Geo D Sheldon Ft Monroe {time: 1 PM} for [Major] Carney [Norfolk] [.] Tell [Colonel] Saunders make a [Report] Tobey sent me tomorrows boat of property round him by any officers [,] captured at the time or take from Stephen Barton of Bartons ville [North Carolina] [.] say toothing about this [Telegraph (-ed, -ing)] [.] if [Colonel] sanders is not able to make the [Report] himself [,] get the facts and make the [Report] yourself [,] also send me all the books and papers taken from Barton [.] make and send these [Report]'s without attracting any observation  {tail: [signed] [Maj Gen B. F. Butler] funny R OBrien}
 
-Code-word tokens: H 24.
+Code-word tokens: H 20.
 
-**E252 | Page 237 | 5781 | mssEC 25 (obj 5952, pointer 5781), 28 Aug 1864 Ft Monroe, Sheldon to the General-in-Chief, Washington, from Lt. Col. T. D. Hart on the arrival of the 104th Pa. Vols from Hilton Head; trailing second text unread (FM-R4a; row 5781/1; transcription-only)**
+**E252 | Page 237 | 5781 | mssEC 25 (obj 5952, pointer 5781), 28 Aug 1864 Ft Monroe, Sheldon to the General-in-Chief, Washington, from Lt. Col. T. D. Hart on the arrival of the 104th Pa. Vols from Hilton Head; the trailing 1 Sept entry on the leaf is struck through and not part of this telegram (FIX-FM7; FM-R4a; row 5781/1; transcription-only)**
 
-{time: 4 PM} for [General-in-Chief] [Washington] [.] I have the honor to [Report] the air rival [Of the] [100] and forth [Regiment] Penn [Junction] I a [Volunteer]'s at this port from Hill ton head  {tail: [signed] Tea D Hart Lieut. [Colonel] [Command = Er (-ed, -ing)]ing [1] ought [4] Penn [Volunteer]'s Geo. D. Sheldon Head Qrs. A. P. 1 / 64 Maj. Eckert "D. I." Sheldon F less is wren be [South] do [North] fairy [Donelson]'s can way will and of think bell nearest D up on danger dragged they of Pierce most will I less and should Labb shore being it up side as [River] of}
+{time: 4 PM} for [General-in-Chief] [Washington] [.] I have the honor to [Report] the air rival [Of the] [100] and forth [Regiment] Penn sylvan I a [Volunteer]'s at this port from Hill ton head  {tail: [signed] Tea D Hart Lieut. [Colonel] [Command = Er (-ed, -ing)]ing [1] ought [4] Penn [Volunteer]'s Geo. D. Sheldon}
 
-Code-word tokens: H 21.
+Code-word tokens: H 16.
 
 **E253 | Page 245 | 5789 | mssEC 25 (obj 5952, pointer 5789), 8 Oct 1864 Ft Monroe, Sheldon to Maj. Eckert, fever at Morehead City, signed Gilmore (FM-R4a; row 5789/1; transcription-only)**
 
-Maj. Eckert [Volunteer] . More head city [5] [By the way of] [Monroe] [8] to [Major] Eckert [.] your dispatch of [1] received [.] offices all closed Kent is dead water house very ill in hospital here [.] [13] increasing [.] No operators needed here for some weeks as the business now doing isn't of sufficient importance to warrant us in risking the health much less the life of any more men [.] Think I will go [North] by next [Steam]er [.] [Troops] generally are escaping though several prominent off I sirs have died Gilmore Geo. D. Sheldon
+Maj. Eckert Washington . More head city [5] [By the way of] [Monroe] [8] to [Major] Eckert [.] your dispatch of [1] received [.] offices all closed Kent is dead water house very ill in hospital here [.] fever increasing [.] No operators needed here for some weeks as the business now doing isn't of sufficient importance to warrant us in risking the health much less the life of any more men [.] Think I will go [North] by next [Steam]er [.] [Troops] generally are escaping though several prominent off I sirs have died Gilmore Geo. D. Sheldon
 
-Code-word tokens: H 17.
+Code-word tokens: H 15, I 1.
 
 **E254 | Page 285 | 5829 | mssEC 25 (obj 5952, pointer 5829), 12 Dec 1864 Washington, B. W. Brice (Acting Paymaster General) to Sheldon at Ft Monroe, pay of officers via Maj. Binney; the sent copy with partly clear text is mssEC 18 pointer 9913 Page 247 (FM-R4a; row 5829/0; transcription-only)**
 
@@ -1333,9 +1333,9 @@ Code-word tokens: H 20, C 1.
 
 **E256 | Page 208 | 5752 | mssEC 25 (obj 5952, pointer 5752), 16 and 17 June 1864 Ft Monroe, Sheldon to Maj. Eckert: material for Col. Pettus (signed Channing Clapp) and a boat report on the crossing of the James (FM-R4a; row 5752/1; transcription-only)**
 
-Maj. Eckert [Volunteer] [Head Quarters] [Engineer] [Brigade] [Monroe] {time: 12} [16] for [Colonel] W. H. Pettus [Command = Er (-ed, -ing)] [Engineer] [Depot] navy yard [Washington] [Report] Hows is [Abandon (-ed, -ing)]d [.] send material here  {tail: [signed] Channing Clapp A. A [General] All well nothing new Geo. D. Sheldon 1 P. M. Fortress Monroe June 17 / 64 Maj. Eckert [Volunteer] [Captain] of boat that brought down to James town [Inland [sic: Island]] insanity's dispatch says that all the whiskey have [Cross (-ed, -ing)]ed and that [Pontoon] [Bridge (-ed, -ing)] is probably by this time taken up [signed] Day lea nothing later Geo. D. Sheldon}
+Maj. Eckert Washington [Head Quarters] [Engineer] [Brigade] [Monroe] {time: 12} [16] for [Colonel] W. H. Pettus [Command = Er (-ed, -ing)] [Engineer] [Depot] navy yard [Washington] White Hows is [Abandon (-ed, -ing)]d [.] send material here  {tail: [signed] Channing Clapp A. A [General] All well nothing new Geo. D. Sheldon 1 P. M. Fortress Monroe June 17 / 64 Maj. Eckert Washington [Captain] of boat that brought down to James town [Inland [sic: Island]] [C. A. Dana's] dispatch says that all the whiskey have [Cross (-ed, -ing)]ed and that [Pontoon] [Bridge (-ed, -ing)] is probably by this time taken up [signed] Day lea nothing later Geo. D. Sheldon}
 
-Code-word tokens: H 24.
+Code-word tokens: H 21, M 2.
 
 **E257 | Page 230 | 5774 | mssEC 25 (obj 5952, pointer 5774), 25 July 1864 2 PM Ft Monroe, Sheldon to J. W. Sampson, Baltimore, for Com. Purviance, light-house inspector: light-ship moved to the Elizabeth River obstructions; a clear copy stands at pointer 4823, Page 382 (FM-R4a; row 5774/0; transcription-only)**
 
@@ -1357,15 +1357,15 @@ Code-word tokens: H 16, M 1.
 
 **E261 | Page 85 | 5629 | mssEC 25 (obj 5952, pointer 5629), 24 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert for the Quartermaster General: requisition of 12 Apr, mules for Capt. Farquhar's pontoon train, 200 wagons; signed Herman Biggs (FM-R4b; row 5629/1; image-read at 2400 px)**
 
-for [Qr Master Genl U.S.] [.] on [12] April I made requisition for [100] [Guard (-ed, -ing)] [Horse]'s for [Quartermaster] use [.] [Captain] Farquhor requires [140] mules for [Pontoon] train [,] when can they be furnished [?] in course of [2] or [3] weeks we shall probably need [200] additional wagons & teams complete [,] would suggest the be in readiness  {tail: [signed] Her man Bugs Lieutenant [Colonel] & [Quartermaster] {time: 1.30 PM} Cloudy Geo D Sheldon}
+for [Qr Master Genl U.S.] [.] on [12] April I made requisition for [100] saddle [Horse]'s for [Quartermaster] use [.] [Captain] Farquhor requires [140] mules for [Pontoon] train [,] when can they be furnished [?] in course of [2] or [3] weeks we shall probably need [200] additional wagons & teams complete [,] would suggest the be in readiness  {tail: [signed] Her man Bugs Lieutenant [Colonel] & [Quartermaster] {time: 1.30 PM} Cloudy Geo D Sheldon}
 
-Code-word tokens: H 25.
+Code-word tokens: H 24.
 
-**E262 | Page 197 | 5741 | mssEC 25 (obj 5952, pointer 5741), 12 June 1864 Gen. Butler's Hd Qrs, R. O'Brien to Maj. Eckert: rebels(?) arriving, cable for the James and for Appomattox (FM-R4b; row 5741/0; image-read at 2400 px)**
+**E262 | Page 197 | 5741 | mssEC 25 (obj 5952, pointer 5741), 12 June 1864 Gen. Butler's Hd Qrs, R. O'Brien to Maj. Eckert: troops arriving, cable for the James and for Appomattox (FM-R4b; row 5741/0; image-read at 2400 px)**
 
 [Troops] arriving here in considerable numbers [.] every thing indicates work for as this side of [James] [.] would it not be well to have [Men] & material ready for short notice [.] we will need I think sooner or later cable for [James] [Maj Gen B. F. Butler] has asked again for one for apple mattox but I have told him there is none on hand at present please send [Homan] here R OBrien
 
-Code-word tokens: H 7, I 1, M 1.
+Code-word tokens: H 8, I 1.
 
 **E263 | Page 268 | 5812 | mssEC 25 (obj 5952, pointer 5812), 29 Nov 1864 Ft Monroe, Sheldon to the Cipher Agent City Point, for Capt. William T. Howell, Grant's Hd Qrs: empty steamers to Washington, signed Rufus Ingalls, Chief Quartermaster (FM-R4b; row 5812/0; image-read at 2400 px)**
 
@@ -1385,13 +1385,13 @@ Code-word tokens: H 14.
 
 Code-word tokens: H 12, M 1.
 
-**E266 | Page 65 | 5609 | mssEC 25 (obj 5952, pointer 5609), 18 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert for the Quartermaster General: shelter tents and 500 artillery horses; signed Herman Biggs (FM-R4b; row 5609/2; image-read at 2400 px)**
+**E266 | Page 65 | 5609 | mssEC 25 (obj 5952, pointer 5609), 18 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert for the Quartermaster General: shelter tents and 500 horses (artillery M: absent from the clear copy); signed Herman Biggs (FM-R4b; row 5609/2; image-read at 2400 px)**
 
-for [Qr Master Genl U.S.] [.] [10000] additional shelter tents are needed here instead of [20000] as requested by client Webster [.] [500] [Artillery] [Horse]'s are also needed at once [.] please let me know if I can count on the amount of water [Transportation] I asked for and how Iron  {tail: [signed] Her man Biggs lent [Colonel] & Chief [Quartermaster] Geo D Sheldon}
+for [Qr Master Genl U.S.] [.] [10000] additional shelter tents are needed here instead of [20000] as requested by client Webster [.] [500] [Artillery] [Horse]'s are also needed at once [.] please let me know if I can count on the amount of water [Transportation] I asked for and how [soon]  {tail: [signed] Her man Biggs lent [Colonel] & Chief [Quartermaster] Geo D Sheldon}
 
-Code-word tokens: H 16.
+Code-word tokens: H 15, C 1, M 1.
 
-**E267 | Page 246 | 5790 | mssEC 25 (obj 5952, pointer 5790), 10 Oct 1864 Washington, T. T. Eckert to W. J. Dealy: meet the Secretary of War, who left Washington on the Keyport (FM-R4b; row 5790/0; image-read at 2400 px)**
+**E267 | Page 246 | 5790 | mssEC 25 (obj 5952, pointer 5790), 15 Oct 1864 Washington (ledger header transcribed Oct 10; image reads Oct 15, AUD2-LEDGER-17), T. T. Eckert to W. J. Dealy: meet the Secretary of War, who left Washington on the Keyport (FM-R4b; row 5790/0; image-read at 2400 px)**
 
 [Secretary of War] [Left] here at {time: 1 PM} on the Keypost for [City Point] [.] I wish you to meat him [At the] wharf on arrival at [Monroe] sea him in person and tell him that I directed you to do so [.] deliver any telegrams that may B sent you for him and get any thing he may have T. T. Eckert
 
@@ -1409,5 +1409,5 @@ Code-word tokens: H 14.
 
 Code-word tokens: H 12.
 
-Totals over the 213 entries: H 3620, C 31, I 23, M 31, U 10.
+Totals over the 213 entries: H 3606, C 32, I 24, M 32, U 10.
 <!-- decode.py: derived block ends -->

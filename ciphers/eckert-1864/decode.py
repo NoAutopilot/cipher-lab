@@ -115,8 +115,13 @@ def entry_text(lines):
     "merge: a+b[+c]" joins consecutive tokens written apart into one token before it is looked up (a code word the clerk
     split across a space or a line, "pan - a. / ma" = Panama); "graded: word[:G]" leaves the token as written (no key row
     is applied) but counts it as a code-word token of grade G (default M): a plain sound-alike standing where a code word
-    was expected (I), a token whose status the audit leaves uncertain (M), or a group nobody has read (U)."""
+    was expected (I), a token whose status the audit leaves uncertain (M), or a group nobody has read (U).
+
+    One more (FIX-FM7, 9 Oct 2026): "cut-after: word#n" drops every token after the n-th occurrence of that word (1-based,
+    reading order): a struck or cancelled entry that follows the real text on the same leaf (E252's 1 Sept entry),
+    recorded in NOTES.md instead of the reading."""
     plain = set()
+    cut_after = None
     variant = {}
     split = set()
     plain_at = {}
@@ -147,6 +152,9 @@ def entry_text(lines):
             join.update(w.lower() for w in l[5:].split())
         elif l.startswith("merge:"):
             merge.extend([p.lower() for p in t.split("+")] for t in l[6:].split())
+        elif l.startswith("cut-after:"):
+            wd, n = l[10:].split()[0].rsplit("#", 1)
+            cut_after = (wd.lower(), int(n))
         elif l.startswith("graded:"):
             for t in l[7:].split():
                 wd, g = t.rsplit(":", 1) if ":" in t else (t, "M")
@@ -160,6 +168,14 @@ def entry_text(lines):
     text = re.sub(r"\s+=\s+", "", text)  # "Lock = wood" -> "Lockwood"
     text = re.sub(r"\s+-\s+", "", text)  # "dis - missed" -> "dismissed"
     text = re.sub(r"\s+", " ", text).strip()
+    if cut_after:
+        ws, seen = text.split(" "), 0
+        for k, w in enumerate(ws):
+            if w.strip(" .,;:'\"()").lower() == cut_after[0]:
+                seen += 1
+                if seen == cut_after[1]:
+                    text = " ".join(ws[:k + 1])
+                    break
     for parts in merge:
         ws, out, i = text.split(" "), [], 0
         while i < len(ws):

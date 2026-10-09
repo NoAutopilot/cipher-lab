@@ -1233,7 +1233,7 @@ tartar to take up ocean wayworners not already
 in service unity I am not advised torch 
 number of whist but am to prepare for
 a large number Webster Bender amo amas amat
-variant: whiskey=Whisky:M
+variant: whiskey=Whisky
 
 ### E144 | Page 141 | 9034 | 4 Aug 1864, copy to Sherman, from City Point (operator F. S. Van Valkenburg; LS5-R1e, row 9034/0; image-read)
 F. S. Van Valkenburg  Washington Aug 4th 1864
@@ -2440,8 +2440,9 @@ and make the wick yourself pedlar also send me all
 the books and papers taken from Barton zodiac make and
 send these wicks without attracting any observation walrus Knox funny
 R OBrien
+plain: stephen barton bartons
 
-### E252 | Page 237 | 5781 | mssEC 25 (obj 5952, pointer 5781), 28 Aug 1864 Ft Monroe, Sheldon to the General-in-Chief, Washington, from Lt. Col. T. D. Hart on the arrival of the 104th Pa. Vols from Hilton Head; trailing second text unread (FM-R4a; row 5781/1; transcription-only)
+### E252 | Page 237 | 5781 | mssEC 25 (obj 5952, pointer 5781), 28 Aug 1864 Ft Monroe, Sheldon to the General-in-Chief, Washington, from Lt. Col. T. D. Hart on the arrival of the 104th Pa. Vols from Hilton Head; the trailing 1 Sept entry on the leaf is struck through and not part of this telegram (FIX-FM7; FM-R4a; row 5781/1; transcription-only)
 Ft Monroe Aug 28 / 64
 Julia for Indian growl zodiac I have the honor
 to wick the air rival torch plunge publish and
@@ -2456,6 +2457,8 @@ anchors can way will  and of think bell
 nearest D up on  danger dragged they of
 Pierce most will I  less and should Labb
 shore being it up  side as windsor of
+cut-after: sheldon#1
+plain: sylvan
 
 ### E253 | Page 245 | 5789 | mssEC 25 (obj 5952, pointer 5789), 8 Oct 1864 Ft Monroe, Sheldon to Maj. Eckert, fever at Morehead City, signed Gilmore (FM-R4a; row 5789/1; transcription-only)
 Ft Monroe Oct 8 / 64
@@ -2472,6 +2475,8 @@ men unity Think I will go tremble by
 next weaseler zodiac whiff generally are escaping though
 several prominent off I sirs have died Gilmore
 Geo. D. Sheldon
+plain: washington
+graded: fever:I
 
 ### E254 | Page 285 | 5829 | mssEC 25 (obj 5952, pointer 5829), 12 Dec 1864 Washington, B. W. Brice (Acting Paymaster General) to Sheldon at Ft Monroe, pay of officers via Maj. Binney; the sent copy with partly clear text is mssEC 18 pointer 9913 Page 247 (FM-R4a; row 5829/0; transcription-only)
 Washington Dec 12th 1864
@@ -2521,6 +2526,10 @@ all the whiskey have plumed and that
 village patron is probably by this time
 taken up yoke Day lea nothing later
 Geo. D. Sheldon
+plain: white washington
+variant: queenly=Queenly:M
+graded: whiskey:M
+gloss: insanity's=C._A._Dana's:H
 
 ### E257 | Page 230 | 5774 | mssEC 25 (obj 5952, pointer 5774), 25 July 1864 2 PM Ft Monroe, Sheldon to J. W. Sampson, Baltimore, for Com. Purviance, light-house inspector: light-ship moved to the Elizabeth River obstructions; a clear copy stands at pointer 4823, Page 382 (FM-R4a; row 5774/0; transcription-only)
 Ft Monroe July 25 / 64
@@ -2576,8 +2585,9 @@ perfume weeks we shall probably need peach wine additional wagons
 & teams complete Pekin would suggest the be in readiness
 Webster Her man Bugs Lieutenant pandora & Vincent Hannah Cloudy
 Geo D Sheldon
+plain: saddle
 
-### E262 | Page 197 | 5741 | mssEC 25 (obj 5952, pointer 5741), 12 June 1864 Gen. Butler's Hd Qrs, R. O'Brien to Maj. Eckert: rebels(?) arriving, cable for the James and for Appomattox (FM-R4b; row 5741/0; image-read at 2400 px)
+### E262 | Page 197 | 5741 | mssEC 25 (obj 5952, pointer 5741), 12 June 1864 Gen. Butler's Hd Qrs, R. O'Brien to Maj. Eckert: troops arriving, cable for the James and for Appomattox (FM-R4b; row 5741/0; image-read at 2400 px)
 Maj Eckert Di
 Whiskey arriving here in considerable numbers zodiac every thing indicates
 work for as this side of Bergen unity would it
@@ -2588,7 +2598,7 @@ for apple mattox but I have told him there is
 none on hand at present please send hoe man here
 R OBrien
 plain: apple mattox
-variant: whiskey=Whisky:M
+variant: whiskey=Whisky
 merge: hoe+man
 gloss: hoeman=Homan:I
 
@@ -2630,7 +2640,7 @@ R. O'Brien
 plain: hemp william
 variant: wylies=Wiley:M
 
-### E266 | Page 65 | 5609 | mssEC 25 (obj 5952, pointer 5609), 18 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert for the Quartermaster General: shelter tents and 500 artillery horses; signed Herman Biggs (FM-R4b; row 5609/2; image-read at 2400 px)
+### E266 | Page 65 | 5609 | mssEC 25 (obj 5952, pointer 5609), 18 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert for the Quartermaster General: shelter tents and 500 horses (artillery M: absent from the clear copy); signed Herman Biggs (FM-R4b; row 5609/2; image-read at 2400 px)
 Maj Eckert Di
 for Bender zodiac federal promise additional shelter tents are needed
 here instead of harrow purple as requested by client Webster
@@ -2640,8 +2650,10 @@ the amount of water Whig I asked for and how
 Iron Yoke Her man Biggs lent pandora & Chief Vinton
 Geo D Sheldon
 plain: shelter webster
+gloss: iron=soon:C
+variant: nuptial=Nuptial:M
 
-### E267 | Page 246 | 5790 | mssEC 25 (obj 5952, pointer 5790), 10 Oct 1864 Washington, T. T. Eckert to W. J. Dealy: meet the Secretary of War, who left Washington on the Keyport (FM-R4b; row 5790/0; image-read at 2400 px)
+### E267 | Page 246 | 5790 | mssEC 25 (obj 5952, pointer 5790), 15 Oct 1864 Washington (ledger header transcribed Oct 10; image reads Oct 15, AUD2-LEDGER-17), T. T. Eckert to W. J. Dealy: meet the Secretary of War, who left Washington on the Keyport (FM-R4b; row 5790/0; image-read at 2400 px)
 W. J. Dealy F
 Brutus stomach here at harriet on the Key
 post for black zebra I wish you to

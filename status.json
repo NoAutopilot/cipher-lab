@@ -8685,7 +8685,7 @@
       "kind": "reading",
       "claim_scope": "completed-reading",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM7c)' section 4",
-      "reading_version": "FM-R4b 9 Oct 2026 (reading.md); header date doubted in AUDIT (FV-FM7c) section 3",
+      "reading_version": "FM-R4b 9 Oct 2026 (reading.md); header date doubted in AUDIT (FV-FM7c) section 3; header date corrected to 15 Oct by FIX-FM7 (9 Oct 2026, account 1)",
       "unresolved_spans": "header date: transcription 'Oct 10', image 10 or 15, printed context 14-17 Oct",
       "depth_unread": {
         "names_codes": "0",
@@ -8697,7 +8697,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): T. T. Eckert (Washington) to W. J. Dealy, Fort Monroe, 15 Oct 1864 (header \"Oct 15\"; transcribed \"Oct 10\"): meet the Secretary of War off the steamer Keyport on his way to City Point (E267)",
       "line": "Read at grade H with War Department Cipher No. 1: on 15 Oct 1864 Major Eckert told W. J. Dealy, operator at Fort Monroe, that the Secretary of War had left Washington at 1 p.m. on the Keyport for City Point, and asked him to meet him at the wharf at Monroe, deliver his telegrams and take anything he had to send. The Washington Evening Star of 15 Oct 1864 (p.2) reports the Keyport's sailing for City Point that morning with Stanton, Meigs and Barnes; the telegram itself was not located there, in the Official Records (ser. I vols. 42 pts 2-3, 43 pt 2), Gorham's Life of Stanton, the Grant Papers vol. 12, 174 cached volumes, Chronicling America for 8-22 Oct 1864 (term searches) or the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3 (two audits): Google Books unreachable (429); the telegram not printed in the press pages read; sailing hour differs (paper: this morning; telegram: 1 p.m.); ciphertext.txt header and reading.md still carry 10 Oct (for a FIX worker)",
+      "gap": "N3 (two audits): Google Books unreachable (429); the telegram not printed in the press pages read; sailing hour differs (paper: this morning; telegram: 1 p.m.); ciphertext.txt header corrected to 15 Oct by FIX-FM7 (9 Oct 2026, account 1) (reading.md regenerated)",
       "depth": "D3",
       "completeness": "8 H of 8 code-word groups; header date read 15 Oct (image, same digit form as the leaf's next header; press of the day)",
       "phrases": [
@@ -9410,21 +9410,21 @@
       "kind": "reading",
       "claim_scope": "completed-reading",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM7b)' section 4",
-      "reading_version": "FM-R4b 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM7b) section 3 and AUDIT 2 (AUD2-LEDGER-16), applied by FIX-E262 9 Oct 2026",
+      "reading_version": "FM-R4b 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM7b) section 3 and AUDIT 2 (AUD2-LEDGER-16), applied by FIX-E262 9 Oct 2026; Whiskey regraded H and header gloss \"rebels(?)\" -> troops by FIX-FM7 (9 Oct 2026, account 1)",
       "unresolved_spans": "none",
       "depth_unread": {
         "names_codes": "0",
         "other": "0"
       },
-      "depth_pct": 77.8,
+      "depth_pct": 88.9,
       "grade": "N3",
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): R. O'Brien (Butler's Hd Qrs) to Maj. Eckert, 12 June 1864, troops arriving in numbers, cable wanted for the James and the Appomattox (E262)",
       "line": "Read at grade H with Cipher No. 1: on 12 June 1864 R. O'Brien at General Butler's headquarters told Major Eckert that troops were arriving in considerable numbers, that everything pointed to work on this side of the James, and asked for men and material at short notice, cable for the James (Butler also wanting one for the Appomattox) and the operator Homan. Not located in the Official Records (ser. I vol. 36 pt 3, read for 11-12 June 1864; vol. 40 pt 2 by phrase), Butler's correspondence or the Huntington's full-text search (searched 9 Oct 2026); most words are plain in the Huntington's public transcription.",
-      "gap": "N3 (weak): most words are plain in the holder's public transcription; second audit AUD2-LEDGER-16 (account 4) 9 Oct 2026 held N3 (weak) D2 (no clear copy; OR I/36 pt 3, the volume that holds 12 June, read for 11-12 June: context only); FIX-E262 (9 Oct 2026, account 1) applied 'Whiskey' = [Troops] (variant note, graded M as a spelling variant, the E143 precedent) and 'hoe man' = [Homan] (merge+gloss, graded I) through ciphertext.txt note lines; decode.py --check exit 0; the ciphertext header's 'rebels(?)' gloss is left for the lane (not in this fix's scope)",
+      "gap": "N3 (weak): most words are plain in the holder's public transcription; second audit AUD2-LEDGER-16 (account 4) 9 Oct 2026 held N3 (weak) D2 (no clear copy; OR I/36 pt 3, the volume that holds 12 June, read for 11-12 June: context only); FIX-E262 (9 Oct 2026, account 1) applied 'Whiskey' = [Troops] (variant note, graded M as a spelling variant, the E143 precedent) and 'hoe man' = [Homan] (merge+gloss, graded I) through ciphertext.txt note lines; decode.py --check exit 0; the ciphertext header's 'rebels(?)' gloss corrected to troops by FIX-FM7 (9 Oct 2026, account 1)",
       "depth": "D2",
-      "completeness": "7 H, 1 M of 8 code-word groups (Whiskey = Whisky = Troops, M: spelling variant) plus Homan I (sound-alike 'hoe man'); decoder H 7, M 1, I 1 (FIX-E262)",
+      "completeness": "8 H, 1 I of 9 code-word groups (Whiskey = Whisky = Troops, H: key row Whisky p.24 l.7, spelling variant; FIX-FM7 regraded it from M, FV-FM7b and AUD2-LEDGER-16) plus Homan I (sound-alike 'hoe man'); decoder H 8, I 1 (FIX-FM7)",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.197, pointer 5741, E262"
       ],
@@ -9434,7 +9434,7 @@
       ],
       "depth_sentence": "On 12 June 1864 Butler's telegraph chief saw troops pouring in and asked Eckert for men, material and cable for the James and the Appomattox.",
       "depth_check": "code clause: Bergen = James twice here and passim, Knox = Butler passim; context only: holder 5707 (cable to City Point), 5712/5713 (Homan with the construction party)",
-      "depth_note": "7 H, 1 M of 8 code-word groups (Whiskey = Whisky = Troops, M: spelling variant) plus Homan I (sound-alike 'hoe man'); decoder H 7, M 1, I 1 (FIX-E262)"
+      "depth_note": "8 H, 1 I of 9 code-word groups (Whiskey = Whisky = Troops, H: key row Whisky p.24 l.7, spelling variant; FIX-FM7 regraded it from M, FV-FM7b and AUD2-LEDGER-16) plus Homan I (sound-alike 'hoe man'); decoder H 8, I 1 (FIX-FM7)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
@@ -9494,7 +9494,7 @@
       "kind": "reading",
       "claim_scope": "completed-reading",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM7a)' section 5",
-      "reading_version": "FM-R4a 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM7a) section 4",
+      "reading_version": "FM-R4a 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM7a) section 4; decoder slips of FV-FM7a s.4 applied by FIX-FM7 (9 Oct 2026, account 1)",
       "unresolved_spans": "",
       "depth_unread": {
         "names_codes": "0",
@@ -9536,7 +9536,7 @@
       "kind": "reading",
       "claim_scope": "key-to-known-text",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM7a)' section 5",
-      "reading_version": "FM-R4a 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM7a) section 4",
+      "reading_version": "FM-R4a 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM7a) section 4; decoder slips of FV-FM7a s.4 applied by FIX-FM7 (9 Oct 2026, account 1)",
       "unresolved_spans": "",
       "depth_unread": {
         "names_codes": "0",
@@ -9548,7 +9548,7 @@
       "mapping_novelty": "N1",
       "title": "Eckert 1864 (Fort Monroe ledger): Lt. Col. T. D. Hart, 104th Pennsylvania, Fort Monroe, to the General-in-Chief, 28 Aug 1864, arrival of the 104th Pa. Vols. from Hilton Head (E252)",
       "line": "The Cipher No. 1 ledger copy reads, with the period key, to the text printed in OR ser. I vol. 43 pt 1 p.944 (Lt. Col. T. D. Hart to Halleck, Fort Monroe, 28 Aug 1864: the 104th Pennsylvania Volunteers arrived from Hilton Head).",
-      "gap": "printed text exists (OR I/43 pt 1 p.944, found by AUD2-LEDGER-15); no novelty. Depth D3 (FV-FM7a s.4 decoder fixes pending).",
+      "gap": "printed text exists (OR I/43 pt 1 p.944, found by AUD2-LEDGER-15); no novelty. Depth D3 (FV-FM7a s.4 decoder fixes applied by FIX-FM7 (9 Oct 2026, account 1); D4 would still need a fresh rule-7 re-derivation).",
       "depth": "D3",
       "completeness": "16 H of 16 code-word groups ('Hart', 'Pennsylvania', 'Hilton Head' plain)",
       "phrases": [
@@ -9579,7 +9579,7 @@
       "kind": "reading",
       "claim_scope": "completed-reading",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM7a)' section 5",
-      "reading_version": "FM-R4a 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM7a) section 4",
+      "reading_version": "FM-R4a 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM7a) section 4; decoder slips of FV-FM7a s.4 applied by FIX-FM7 (9 Oct 2026, account 1)",
       "unresolved_spans": "",
       "depth_unread": {
         "names_codes": "0",
@@ -9621,7 +9621,7 @@
       "kind": "reading",
       "claim_scope": "completed-reading",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM7a)' section 5",
-      "reading_version": "FM-R4a 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM7a) section 4",
+      "reading_version": "FM-R4a 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM7a) section 4; decoder slips of FV-FM7a s.4 applied by FIX-FM7 (9 Oct 2026, account 1)",
       "unresolved_spans": "",
       "depth_unread": {
         "names_codes": "0",

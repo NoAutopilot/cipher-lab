@@ -2941,3 +2941,29 @@ troops) and the safe sentence's "Read at grade H" wording, which now rests on 7 
 
 `python3 ciphers/eckert-1864/decode.py --check` before the edit: "reading.md is current" (exit 0); after the note lines, stale (exit 1);
 after `--write`: "reading.md is current" (exit 0). `python3 tools/depth_check.py`: exit 0 (106 unique solves, unchanged).
+
+## FIX-FM7 (9 Oct 2026, account 1, for LANE LEDGER)
+
+Worker FIX-FM7, 10:49-11:0x UTC by `date -u`, offline. Carries the reading corrections of AUDIT "FV-FM7a" s.4 and s.6, "FV-FM7b" s.3, "FV-FM7c" s.3 and "AUD2-LEDGER-12 .. -17" into the readings through per-entry
+note lines in ciphertext.txt (transcription lines untouched; no key.md row edited; reading.md only by `decode.py --write`). Prior-work line (`tools/prior_work.py eckert-1864 --item-spec ... --step-type propagate-revision --offline`): exit 4, the one LEAD is the target-level live claim already named in FV-FM7a s.1 (ECK-PAGEFIX / the lane's own claim), not covering these units: CLEAR. One decoder addition: `cut-after: word#n` (drops every token after the n-th occurrence of that word; used once, E252). AUD2-LEDGER-12, -14, -16: no reading correction outstanding (their postmortems name none beyond FV-FM7b's E262 items; classes are theirs).
+
+| Entry | Token | Before | After (note) | Grade before -> after (decoder) | Source |
+|---|---|---|---|---|---|
+| E251 | "Stephen Barton of Bartons ville", "Barton" x2 | `[In the] [Adjt Genl. U.S.] of [Adjt Genl. U.S.]'s ville`, `[Adjt Genl. U.S.]` x2 | plain (`plain: stephen barton bartons`) | H 24 -> 20 | FV-FM7a s.4 |
+| E252 | "sylvan"; tail | `[Junction]`; tail ran on into the struck 1 Sept entry | plain; `cut-after: sheldon#1` (reading ends at "Geo. D. Sheldon") | H 21 -> 16 | FV-FM7a s.1, s.4, s.6 |
+| E253 | address "Washington", "fever" | `[Volunteer]`, `[13]` | plain; `graded: fever:I` (kept as written, counted I) | H 17 -> H 15, I 1 | FV-FM7a s.4 |
+| E256 | "White", address "Washington" x2, "insanity's", "queenly", "whiskey" | `[Report]`, `[Volunteer]`, as written, `[Depot]` H, as written | plain, plain, `[C. A. Dana's]` (`gloss`, H), `[Depot]` M (`variant`), M (`graded`) | H 24 -> H 21, M 2 | FV-FM7a s.4 |
+| E258 | none | -- | -- | H 33 | FV-FM7a s.4 |
+| E261 | "saddle" | `[Guard (-ed, -ing)]` | plain | H 25 -> 24 | FV-FM7b s.3 |
+| E262 | "Whiskey"; header "rebels(?)" | graded M (FIX-E262: spelling variant); header "rebels(?)" | graded H (key row Whisky, p.24 l.7; FV-FM7b s.3 "H 8 of 8", AUD2-LEDGER-13/-16 agree); header "troops arriving" | H 7, I 1, M 1 -> H 8, I 1 | FV-FM7b s.3, AUD2-LEDGER-16 postmortem |
+| E266 | "Iron"; "nuptial"; header "500 artillery horses" | unread; `[Artillery]` H | `[soon]` (`gloss`, C); `[Artillery]` M (`variant`); header "500 horses (artillery M: absent from the clear copy)" | H 16 -> H 15, C 1, M 1 | FV-FM7b s.3 |
+| E267 | header date | "10 Oct 1864" | "15 Oct 1864 Washington (ledger header transcribed Oct 10; image reads Oct 15, AUD2-LEDGER-17)"; the transcribed line "Oct 10 / 64" is untouched | H 8 | FV-FM7c s.5, AUD2-LEDGER-17 |
+| E268, E269 | -- | already as corrected (FIX-FM6: "[3] and [2] inch", signed Shaffer; E269 sound) | none | H 14, H 12 | FV-FM7c s.3, AUD2-LEDGER-17 |
+
+Totals line: H 3620, C 31, I 23, M 31, U 10 -> H 3606, C 32, I 24, M 32, U 10. Grade counts are the decoder's; the audits' counts differ where they count clear-copy C (E256 16 June, E261, E266 as C).
+
+Struck entry recorded here, not in the reading (E252's leaf, image-read by FV-FM7a: dated "Sept. 1/64", struck through with large crosses, a cancelled 1 Sept entry): `Head Qrs. A. P. 1 / 64 | Maj. Eckert "D. I." Sheldon F | less is wren be [South] do [North] fairy [Donelson]'s can way will and of think bell nearest D up on danger dragged they of Pierce most will I less and should Labb shore being it up side as [River] of` (the transcription's own words; the bracketed values are the decoder's old reading of that tail, unread and not part of E252).
+
+Not applied (no decoder note supplies them without adding a counted code word; the transcription stays as written, FV-FM7b/FV-FM7a say so themselves): E261 "the be" = they be and "Farquhor"; E266 "requested by client Webster" = "required by Lieut Webster" (clear copy + image); E256 "Pettus" = Pettes (the clear copy 4717 spells "Petters"); E252 "forth" = fourth (already plain, a spelling); E251 "funny" stays unread (U); E256 "whiskey" stays M (not in key.md). E267's "Keypost" = Keyport (`merge: key+post`, FM-R4b) shows as written.
+
+Checks: `python3 ciphers/eckert-1864/decode.py --check` -> "reading.md is current", exit 0 after `--write`; `decode_no2.py --check` and `decode_no9.py --check` exit 0; `tools/depth_check.py` exit 0 (no eckert-1864 FAIL line). status.json rows (E251, E252, E253, E256 17 June, E262, E267): reading_version / gap / completeness text updated, E262 depth_pct 77.8 -> 88.9 (H 8 of 9, depth D2 and class N3 (weak) unchanged: class and depth are the verifiers'); E262's second-opinion prompt now says Whiskey is graded H. The other prompts already carry the corrected words (E251 Stephen Barton plain, E253 fever plain, E267 15 Oct, E268 numeral 2 / Shaffer). Gaps: none new; D4 for E252/E258 still needs a fresh rule-7 re-derivation by a session that has seen only the spec and key.
