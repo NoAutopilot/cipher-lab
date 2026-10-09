@@ -1,0 +1,7 @@
+power	at 38 letters: 26/26 = 1.00	TEST
+block_1	letters 1-38	real -1.554	permuted mean -2.033 p95 -1.659 p99 -1.474 max -1.329	permuted>=real 20/1000	PASS	getadsasisxactiondespbrsisbelligerantd
+leaf_0490G	letters 38	blocks 1	PASS	getadsasisxactiondespbrsisbelligerantd
+# whole leaf (reported, no power behind it if L > 62): real -1.554 permuted mean -2.031 p95 -1.712 p99 -1.586 permuted>=real 6/1000
+# per run (reported, not gates): run, letters, score, decoded letters
+g1	20	-1.643	getadsasisxactiondes
+g2	18	-1.310	pbrsisbelligerantd

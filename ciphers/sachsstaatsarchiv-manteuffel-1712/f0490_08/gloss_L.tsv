@@ -1,0 +1,15 @@
+crop	note_no	x_start	x_end	gloss	sits_over
+c0490L01	1	0	0	NONE	only a small word (read ?ber net.?, x~490-545) sits above "Luis" at line start, not above numbers; 207 (x~955-985) has nothing above
+c0490L02	1	765	1005	une treve à tre?padorff	over 59.60.5.10.66.1 of 6.21.35.59.60.5.10.66.1.27.9.51.2.14, above the numbers
+c0490L03	1	0	0	NONE	12.33.36.36 (x~85-270) has no note above
+c0490L04	1	385	640	veillant et attentif	top edge, over 55.44.12.9.32 of 3.55.44.12.9.32.7.1000.25.41.35.9.55.16.11 (reading of first word uncertain)
+c0490L05	1	65	335	le f.m. en une bien vive	over 103.1.31 at line start and following prose
+c0490L05	2	1095	1165	du nord	above 103.6.14.53 at line end
+c0490L06	1	440	1070	mettre ?a discerner certaines choses qu'on luy cachoit	above 160 and following prose; numbers 60.120 (x~85-170) have nothing above
+c0490L07	1	120	260	le Roy de Prusse	over 257 (x~95-155) and "et celui"
+c0490L07	2	380	415	S.M.	over 150 (x~400-445)
+c0490L07	3	750	850	le Roy ?oyal	over 96.34.26 (x~740-900)
+c0490L08	1	630	770	le Roy de Prusse	over 257 (x~640-690)
+c0490L09	1	0	0	NONE	110 at line end has no note above
+c0490G01	1	0	0	NONE	no small note above or beside either number line (7.1000.50.100... / 17.65.26.29...)
+c0490G01	2	750	1180	et à la satisfaction des deux parti / belligerant?	words after numbers, ordinary main-text writing size, two lines, not a small note

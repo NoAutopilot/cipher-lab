@@ -1,0 +1,91 @@
+tokid	crop	run	token	conf	note
+U001	c0490L01	1	207	high	
+U002	c0490L02	1	6	high	
+U003	c0490L02	1	21	high	
+U004	c0490L02	1	35	high	
+U005	c0490L02	1	59	high	
+U006	c0490L02	1	60	high	
+U007	c0490L02	1	5	high	
+U008	c0490L02	1	10	high	
+U009	c0490L02	1	66	high	
+U010	c0490L02	1	1	high	
+U011	c0490L02	1	27	high	
+U012	c0490L02	1	9	high	
+U013	c0490L02	1	51	high	
+U014	c0490L02	1	2	high	
+U015	c0490L02	1	14	high	caret above
+U016	c0490L03	1	12	high	
+U017	c0490L03	1	33	high	
+U018	c0490L03	1	26	med	eye 2 (shape unlike the two 3s before it); A 36, B 36
+U019	c0490L03	1	36	med	crop cuts the last digit; eye 36 on the page
+U020	c0490L04	1	3	high	
+U021	c0490L04	1	55	high	
+U022	c0490L04	1	44	med	struck or overwritten (A 44?, B 44?)
+U023	c0490L04	1	12	high	
+U024	c0490L04	1	9	med	y-shaped 9
+U025	c0490L04	1	32	high	
+U026	c0490L04	1	7	high	
+U027	c0490L04	1	1000	high	
+U028	c0490L04	1	25	high	
+U029	c0490L04	1	91	med	y-shaped 9 + 1 (A 41, B 41)
+U030	c0490L04	1	35	high	
+U031	c0490L04	1	9	med	y-shaped 9
+U032	c0490L04	1	55	high	
+U033	c0490L04	1	16	high	
+U034	c0490L04	1	11	high	
+U035	c0490L05	1	103	high	
+U036	c0490L05	1	1	high	
+U037	c0490L05	1	31	high	
+U038	c0490L05	2	108	low	A 108?, B 106; gloss ink over it
+U039	c0490L05	2	6	high	
+U040	c0490L05	2	14	high	
+U041	c0490L05	2	33	med	eye 33 (A 53, B 53; cf. MANT-0490 R15 33/53)
+U042	c0490L06	1	60	high	
+U043	c0490L06	1	120	high	
+U044	c0490L06	2	160	high	
+U045	c0490L07	1	257	high	
+U046	c0490L07	2	150	high	
+U047	c0490L07	3	96	high	
+U048	c0490L07	3	34	high	
+U049	c0490L07	3	26	high	
+U050	c0490L07	4	60	low	after a blot; a digit may be hidden under it (160?); A 60? + ?, B 60?
+U051	c0490L08	1	257	high	
+U052	c0490L09	1	110	high	
+U053	c0490G01	1	7	low	A 7, B 7?; may be an insertion mark ("7" with slash) tying the margin run to the text, not a code
+U054	c0490G01	1	1000	high	
+U055	c0490G01	1	50	high	
+U056	c0490G01	1	100	high	
+U057	c0490G01	1	29	med	y-shaped 9 (A 29?, B 29?)
+U058	c0490G01	1	66	high	
+U059	c0490G01	1	29	med	eye 2+y-shaped 9 with descender (A 28, B 28)
+U060	c0490G01	1	9	med	y-shaped 9 (A 9, B 9)
+U061	c0490G01	1	51	high	
+U062	c0490G01	1	4	low	A 42?, B 4?; eye 4 then dot
+U063	c0490G01	1	25	low	A 25, B 22; second digit crossed by a stroke
+U064	c0490G01	1	15	high	
+U065	c0490G01	1	59	med	5 + y-shaped 9 (A 54, B 54)
+U066	c0490G01	1	39	med	3 + y-shaped 9 (A 37, B 37)
+U067	c0490G01	1	33	high	
+U068	c0490G01	1	21	high	
+U069	c0490G01	1	120	high	
+U070	c0490G01	1	35	high	
+U071	c0490G01	1	29	med	2 + y-shaped 9 (A 29, B 29)
+U072	c0490G01	1	356	high	
+U073	c0490G01	2	17	high	
+U074	c0490G01	2	65	low	A 65, B 65; eye 68?
+U075	c0490G01	2	26	high	
+U076	c0490G01	2	29	med	2 + y-shaped 9 (A 29, B 28)
+U077	c0490G01	2	39	med	3 + y-shaped 9 (A 39, B 39)
+U078	c0490G01	2	29	high	
+U079	c0490G01	2	55	high	
+U080	c0490G01	2	10	high	
+U081	c0490G01	2	44	high	
+U082	c0490G01	2	12	high	
+U083	c0490G01	2	39	med	3 + y-shaped 9 (A 39, B 39)
+U084	c0490G01	2	7	high	
+U085	c0490G01	2	2	high	
+U086	c0490G01	2	60	high	
+U087	c0490G01	2	66	high	
+U088	c0490G01	2	21	high	
+U089	c0490G01	2	59	med	5 + y-shaped 9 (A 59, B 59)
+U090	c0490G01	2	53	low	A 55, B 53; second digit with flourish

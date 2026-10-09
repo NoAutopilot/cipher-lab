@@ -1,0 +1,12 @@
+code	where	key_value	slot_seen	source_of_slot	note (descriptive, MANT-0490L; never key.tsv)
+108	L05 run 2 pos1 (low: A 108?, B 106)	(not in key)	d	gloss 'du nord' over 108.6.14.33, continued by L06 60.120 (r, d) -> d u n o r d	single witness; digit doubtful
+207	L01	le grand chancelier	'le Gr Tres.' (eye only)	note directly above 207, missed by the blind gloss pass	not scored (no blind gloss); possible conflict chancelier vs tresorier: hold for a second witness
+42	G01 run 1 pos10 (A 42?, B 4?; settled 4 low)	l (held code)	f	clear words beside the run: 'satisfaction'	held-code witness only if the digit is 42; if 4 (key x) the slot f is a rule-4 conflict either way
+100	G01 run 1 pos4	d	la	clear words beside the run: 'et a la satisfaction'	rule-4 slot conflict (d vs la); one witness
+65	G01 run 2 pos2 (A 65, B 65; eye 68?)	b (M)	a	'partis' in the clear words	rule-4 slot conflict; 68 = v would not fit either
+53	G01 run 2 pos18 (low: A 55, B 53)	d	s	'belligerants' / 'belligerents'	slot s fits neither 53 (d) nor 55 (b); digit doubtful
+28/29	G01 run 1 pos7, run 2 pos4 (worker settled 29; passes 28, 28/29)	28 = t, 29 = s	t	'satisfaction', 'partis'	the passes' 28 fits; this worker's y-shape override to 29 is wrong at both; not changed after scoring (PREREG); fix owed in a later transcription pass
+7	G01 run 1 pos1 (low)	g	(none)	the run's first glyph	extraneous g in the decode: an insertion mark '7' tying the margin run to the text, not a code
+12	L03 pos1	l	d?	L02 note 'une treve a Fri?adorff' ends '-dorff'; L02 decodes 'une treve a frisen', L03 12.33.26.36 = l o r f	if L03 continues the name (Friesendorff?), 12 sits at d: conflict, eye-only gloss, not scored
+55	L04 pos2	b|[a]	e	eye 'Welling et a Stenbock' (blind pass read 'veillant et attentif')	eye-only; the scored pass words are the blind pass's
+1000	L04 pos8	et	et	gloss pass and eye both: ...et...	agrees; another witness for 1000=et
