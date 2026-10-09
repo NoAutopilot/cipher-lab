@@ -26,3 +26,11 @@ User-Agent "cipher-lab research script (contact via repository)", 2 s apart, sto
 Gallica not before 10 Oct 00:00 UTC. Output: research/mockups/exhibit-2026-10-09b.html (single file) + per-display pages; the old
 exhibit file untouched. Done line "for orchestrator (account-4)": SELECTION.md's top five with scores, the three built, portraits
 fetched, what is left; stage by path; never force-push; never AskUserQuestion; never print credentials; no ciphers/ edit.
+
+## Addition (orchestrator, clock 22:59 UTC 9 Oct): portraits are a desk job, not a cloud fetch
+The orchestrator's own test at 22:59 UTC: commons.wikimedia.org answers 429 to a compliant User-Agent at two requests two seconds apart --
+the shared cloud egress address is throttled. Do NOT call Wikimedia at all. Instead write research/mockups/exhibit/portraits/manifest.tsv
+for the three selected displays (person, role in five words, the Commons file title or a search phrase, why that painting, expected
+licence PD-Art/PD-old, output filename) and leave labelled placeholders; LOCAL-QUEUE row L73 has the owner's desk runner fetch the files
+from the manifest and commit them. Build the pages so that dropping the files into portraits/ with the manifest's filenames fills every
+face without a rebuild (the <img> src points at the manifest filename; the placeholder is the CSS fallback).
