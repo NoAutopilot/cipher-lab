@@ -45,3 +45,7 @@ Content rules unchanged: rule-10 wording, nothing restricted, no internal job na
 licence, owner never named. Colours pass tools/cvd_check.py; phone width works. Done line "for orchestrator (account-4)": the single-file
 path first, portraits fetched (count, any missing), requests to commons.wikimedia.org, what is left if the cap stopped you; stage by
 path (research/mockups/exhibit/**, the single file); never force-push; never AskUserQuestion; never print credentials; no ciphers/ edit.
+
+## Addition (orchestrator, clock 22:38 UTC 9 Oct; the owner): three layers per reading line
+Cipher crop; the plain text as read in its own language, aligned to the signs with the grade marks; an English rendering underneath labelled
+"English (translation, interpretation)" so anyone can read it. The audited line carries the grades; the English never does.

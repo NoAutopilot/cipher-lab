@@ -78,3 +78,7 @@ strip, not prose -- who/whom/where/date, the two or three dated events of that w
 with five words of identity each, all within what the audit and the letter's known context license; (3) prose cut to the safe sentence
 and the gist; everything else a number, a badge, a date or a link; no paragraph over two sentences; (4) index one line per item with a
 thumbnail crop. Embedded crops carry a source and licence line; holders without a recorded PD/CC licence are marked for a public version.
+
+## Addition (orchestrator, clock 22:38 UTC 9 Oct; the owner): three layers per reading line
+Cipher crop; the plain text as read in its own language, aligned to the signs with the grade marks; an English rendering underneath labelled
+"English (translation, interpretation)" so anyone can read it. The audited line carries the grades; the English never does.
