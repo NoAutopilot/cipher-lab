@@ -4112,3 +4112,9 @@ read these leaves; no key grade raised; key.tsv unchanged; token grades as recor
   also writes a looped 9 (ref02 '29'), and the 694/09 R9 support in ycen/score.txt (3/4) is exactly these slots, so an edit on R9 there
   would be circular. `ycen/ycen.py --check` up to date (score.txt unchanged).
 Next: a blind third read of 0490 G01 r2 pos4 (~$0.3); a per-hand attribution of 694/09 0063 before any edit there (~$1.5).
+
+## V-MANT0490L (9 Oct 2026, verifier, LANE FAMILY-A2k account 2): 0490 left page + gutter run -- see AUDIT.md "AUDIT (V-MANT0490L)"
+Both items N0 D1, key `period`. Gate (b) VOID at N=38 (shuffled-target decodes PASS 19/200 > 10/200, PREREG-V-MANT0490L f5051c38f); the
+gutter run is followed on the leaf by its own clear rendering ('et a la satisfaction des deux partis belligerents'), so it is not
+unglossed. Grades for the 90 tokens corrected to C 23, S 0, M 67 (gutter S 36 -> M; L05 33 C -> M, settled against both blind passes).
+Next: gate (a) on the gutter with the clear rendering as a span, PREREG first (~$0.3).

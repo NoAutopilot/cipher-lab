@@ -1823,3 +1823,96 @@ the C 61 depend on reconciler-settled digits (mostly the y-glyph 4|9 convention)
 15-20 Nov report is printed; this audit adds that Nr. 82 (23 Nov), which also names Dohna, is a different passage, checked against crop
 R10. Requests this audit: archive.org 3 (BO I djvu, Droysen IV.1 metadata + djvu), be-api.us.archive.org 9 (two 502s on one query, host
 stopped), www.googleapis.com 3. No 403, 429 or challenge.
+
+## AUDIT (V-MANT0490L)
+
+Verifier V-MANT0490L (account 2, LANE FAMILY-A2k, session_01V5XEURAZutfuA12dqUZjmg), 9 Oct 2026, 19:19-19:3x UTC by `date -u`. A separate
+session from the solver MANT-0490L, from FIX-YEYE and from V-MANT0490 (right page). Brief: .claude/briefs/runs/2026-10-09-ytbiz-family-1815-jobs.md
+"### V-MANT0490L". Claim under audit (NOTES "## MANT-0490L", c035f5bff; FIX-YEYE d2356c289): the 0490 left page is a key test whose gloss
+gate PASSes at S 24/42 keyed (p99 12), grades C 24 / S 36 / M 30 of 90; the 38-letter gutter run is "UNGLOSSED" and grades S under the fr18
+judge gate (b) PASS (-1.477 vs p95 -1.681 after FIX-YEYE). Nothing decoded here; no file of the solver's edited.
+
+**1. Items.** SHStA Dresden 10026 Loc. 694/08, film frame 0490, LEFT page (paragraphs 3-5; 52 code tokens in 9 code lines) and the
+vertical two-line run in the gutter margin (38 tokens). Manteuffel to Flemming, Berlin, mid-November 1712 (between 0489, 15 Nov, and 0496,
+20 Nov; inferred). Interlinear period notes over most left-page runs ('une treve a ...dorff', 'le f.m.', 'du nord', 'le Roy de Prusse',
+'S.M.', 'le Pr Royal'); eye reads of two notes differ from the blind gloss pass ('Welling et a Stenbock' for 'veillant et attentif';
+'le Gr Tres.' over 207, missed by the pass), as the solver already recorded.
+
+**2. Re-derivation (rule 7).** From the repository root at origin/main after d2356c289: `f0490_08/gloss_gate_L.py --check` -> "gate.out up to
+date" (exit 0; the message is a copy leftover -- the script checks gate_L.out, line 69); `f0490_08/judge_gate_L.py --check` ->
+"judge_gate.out/token_blocks.tsv up to date" (exit 0). Run from inside f0490_08/ it fails (ModuleNotFoundError judge_plaintext): the
+docstring's "run from the repository root" is required. Numbers reproduce: gate (a) S 24/42, mean 6.33, p99 12, 0/1000, PASS; gate (b)
+real -1.477, p95 -1.681, p99 -1.515, 8/1000, power 26/26.
+
+**3. Design audit (rule 3).**
+- *Gate (a), left page: holds.* PREREG-MANT0490L 4fc97c879 precedes the passes (solver's log; not re-dated here). The control permutes key
+  values over codes and can differ from the target. Blind-digit sensitivity (this audit, difflib of passA_L/passB_L against
+  ciphertext_L on the nine left crops): the reconciler departed from BOTH blind passes at four left-page tokens -- L03 26 (passes 36;
+  unglossed, M), L04 91 (passes 41; a span miss, M), L05 108 (B 106; a miss, M) and **L05 33 (passes 53), which is one of the 24 C matches
+  ('o' of 'du nord')**. That token is C only on a digit no blind pass read, settled by a reconciler who had seen key.tsv and the glosses:
+  **regraded here C -> M (conditional; C-if-33)**. Removing it (S 23/42) leaves gate (a) far above p99 12: PASS stands. Left page: C 23,
+  M 29 of 52.
+- *Gate (b), gutter run: VOID as a gate at N=38.* PREREG-V-MANT0490L.md (f5051c38f, pushed before scoring) registered a rule-3 shuffle
+  check: judge_gate_L.py's block test on 200 order-shuffles of the 37 keyed gutter tokens. `f0490_08/vmant0490L_shuffle.py` ->
+  `vmant0490L_shuffle.out` (`--check` up to date): **shuffled decodes PASS 19/200 against the registered limit 10/200 -> VOID**; median
+  shuffled real -1.925, max -1.464. Reported only, not a gate: the target's -1.477 beats 199/200 shuffles. Reason: a permuted key also
+  destroys the decode's letter frequencies, so the real key's unigram fit alone clears p95 in ~10% of shuffles; the gate measures letter
+  frequency as much as order at this length. Gate (b)'s PASS licenses nothing; **the 36 S grades on the gutter fall to M.**
+- *The gutter run is not unglossed (eye check of committed f0490_08/gutter_rot.jpg, this audit, after scoring).* Immediately after the
+  code on the same two margin lines, after a stroke, the same hand writes 'et a la satisfaction des deux parti / belligerents' -- the blind
+  gloss pass saw it (gloss_L.tsv c0490G01 note 2) and the PREREG classed it as main text. Under key.tsv the codes give
+  '[g] et a d satisfaction des [356] p b r s i s belligerant d', i.e. the same phrase: the clear words are a clear rendering of this very
+  run on the leaf (whether the writer's or a decipherer's is not settled here). So (i) the gutter plaintext is on the item; (ii) the
+  solver's eye notes, FIX-YEYE's 29 -> 28 fix (r1 pos7) and the conflict list (100 la/d, 4 f/x, 65 a/b, 53 s/d, r2 pos4 t/s) were made
+  with that rendering in view, so gate (b) was not blind in practice even before the shuffle result. Descriptive, not a gate: 31 of the
+  37 keyed letter tokens agree with the clear rendering letter for letter (misses: '7' insertion mark, 100, 4, 65, 29 at r2 pos4, 53);
+  356 = deux agrees with the rendering. The proper instrument is gate (a) with the rendering as a span (next step below).
+- *Spans and names:* as V-MANT0490 found on the right page, spans were placed by a key-aware worker; per-span misses on name codes (150,
+  160) and the LG04 misread argue against tuning, but it cannot be excluded from the files.
+
+**4. Novelty search log (rule 10), 9 Oct 2026.**
+- (a) Acta Borussica BO I (IA `diebehrdenorgan01posngoog` _djvu.txt, fetched here, 1 GET + 1 redirect): grep 'satisfaction',
+  'belligeran', 'Friesendorf', 'Wellingk', 'Stenbock/Steenbock/Steinbock', 'treve' -> 0 lines. V-MANT0490's finding stands: the only
+  November 1712 Manteuffel report printed is Nr. 82 (23 Nov), a different passage. BO II: not fetched (unchecked).
+- (b)/(c) Droysen, Geschichte der preussischen Politik IV.1 (IA djvu, fetched here): pp.269-270 print the CONTEXT of this left page --
+  Steenbock's November moves, **Flemming's armistice offer to Steenbock, a personal meeting, "Waffenruhe" to 15 Dec**, the Tsar's
+  displeasure, Gadebusch 20 Dec; Graf Wellingk in Berlin June 1712 (pp.265ff., Anm. 507). The left page's 'une treve', 'Welling et a
+  Stenbock' and the gutter's 'satisfaction des deux partis belligerents' sit inside that printed story: **substance printed, wording not**.
+  Google Books snippets (key, country=US) put Friesendorff with Vellingk in "Svenska freder och stillestånd 1249-1814" (1997) and the 1712
+  armistice in Swedish document series (KVHAA Handlingar 1867): the armistice negotiation is printed history; not this letter.
+  Bonnesen 1918 (GS3SAAAAMAAJ): snippet queries 'Friesendorff Manteuffel', 'Wellingk Manteuffel november' found no snippet in it (loose
+  index; pages unread, as BONNESEN logged). Berner 1901, Klopp, Sbornik RIO: not searched.
+- (d) Holding archive: frame in the folder's fetch manifest; no edition noted for 0490 in the folder (re-grepped).
+- (e) IA full text (be-api): "satisfaction des deux partis belligerants" 0; "...belligerents" 0; "des deux partis belligerans" 16 (Bolivar
+  histories, Revue des deux mondes 1870s; unrelated); "qu on luy cachoit", "Manteuffel" "Friesendorff" 1712, "Paix sans tiers": HTTP 502
+  (one retry on one query, host stopped): **unchecked**. Google Books API (5 phrase/name queries): the phrase queries return only loose
+  modern matches (Schiller translation 1860, Vancouver 1799, neutrality law 1894); "Manteuffel Flemming Steenbock treve novembre 1712" 0;
+  '"Wellingk" "Steenbock" Manteuffel 1712 Waffenstillstand' 0. HathiTrust EF: not run (no target volume to place; unchecked).
+- (f) Solver repositories: not cloned (unchecked, as the solver).
+- (g) OpenAlex (key): "Manteuffel Flemming 1712 Steenbock armistice" 0 works. Semantic Scholar, CORE: not run. JSTOR-QUEUE.tsv: two rows
+  appended -- (i) "Manteuffel" AND "Flemming" AND "Steenbock" AND 1712 AND a cipher keyword; (ii) the bare phrase "satisfaction des deux
+  partis belligerants". Not blocking (N0).
+
+**5. Classification.**
+| item | class | key | text | depth | safe sentence |
+|---|---|---|---|---|---|
+| 0490 left page (52 code tokens, glossed) | **N0** | `period` (the leaf's own interlinear decipherment; Krauske's `published` 1893 table agrees, gate PASS) | known (the period gloss; context printed in Droysen IV.1 pp.269-270) | **D1** (depth_pct 44.2: C 23 of 52; 1 C-if-33) | "On the left page of Manteuffel's mid-November 1712 report (SHStA Dresden Loc. 694/08, frame 0490), the project's key agrees with the leaf's own period interlinear decipherment at 23 of 42 glossed keyed code tokens (permuted-key p99 12); the plaintext is the period gloss, and the context -- Flemming's armistice offer to Steenbock -- is printed in Droysen IV.1 pp.269-270." |
+| 0490 gutter run (38 tokens) | **N0** | `period` | known (a clear rendering of the run is written beside it on the leaf) | **D1** (depth_pct 0: no H/C/S after the void judge; 31 of 37 letter tokens agree with the leaf's own clear rendering, descriptive) | "A coded phrase in the gutter of the same leaf is followed by its own clear rendering, 'et a la satisfaction des deux partis belligerents'; the project's key gives the same phrase at 31 of 37 letter tokens." |
+
+Depth reason: every left-page C token is a gloss match, so the reading is the period decipherment; the longest matched stretch (LG02, 9 of
+14) is far below the authentication distance (~127-138 letters, FAM-MANTV). D1 "fragments read" for both items. depth_check: not run
+here (tools/depth_check.py reads status.json's per-target fields; the orchestrator sets them).
+Unsafe: "the gutter run read without a gloss"; "the unglossed gutter run passes the language judge"; "S 36"; "the 0490 report
+deciphered"; "an unprinted report on the Flemming-Steenbock armistice"; any C count presented as our reading.
+No SECOND-OPINIONS-QUEUE row: N0/D1 is below the N3+ D2+ trigger.
+
+**6. Postmortem and corrections.** Failure: a clear rendering written on the same margin lines as the code, seen by the blind gloss pass,
+was classed as main text under the PREREG's wording, and the run was then gated as unglossed through a judge whose shuffled-target control
+(not run by the solver; the brief owed it to this verifier) passes 9.5% of the time at N=38. Corrections (recorded here and in a NOTES
+pointer; the solver's files not edited): (a) gutter grades S 36 -> M 36 (judge void, and the plaintext is on the leaf); (b) left page
+C 24 -> C 23 + M 1 (L05 33, reconciler against both blind passes); totals for the 90 tokens: **C 23, S 0, M 67**, H 0, I 0; (c) NOTES
+"UNGLOSSED gutter run" should read "gutter run with a clear rendering beside it"; (d) gloss_gate_L.py's --check message names gate.out
+(cosmetic). The solver made no novelty claim and called both items a key test; no over-claiming sentence in its section beyond (a)-(c).
+Next (not done here): gate (a) on the gutter with the clear rendering as one span, PREREG first (~$0.3; would put the matching gutter
+tokens at C if it PASSes); 207 'le Gr Tres.' second witness. Requests this audit: archive.org 4 (BO I djvu 302 + 200, Droysen IV.1 metadata
++ djvu), be-api.us.archive.org 8 (3 x HTTP 502, one retry, stopped), www.googleapis.com 8, api.openalex.org 1. No 403, 429 or challenge.
