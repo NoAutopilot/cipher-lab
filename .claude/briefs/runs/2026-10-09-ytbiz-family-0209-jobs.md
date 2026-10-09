@@ -147,3 +147,41 @@ NOTES lines about CLIN-RG and D4-CLIN: the alignment design is retired (rule 3 t
 not a re-gate. On the existing p.123 crops (p123_full_reconciled.tsv and the crops it cites), look at c5:18 (is there an underline?) and every c6
 cell at native zoom; two Sonnet looks on doubt. Record each cell: as transcribed / corrected (with the image evidence) in the reconciled TSV's
 notes column or an errata TSV, NOTES section "CLIN-EYE (9 Oct 2026)". Do not re-score either gate. gaps_check. ~$1.5.
+
+## Wave 3 (03:1x UTC 9 Oct)
+Same common rules + wave 2 addition. Hosts: arcinsys (BRANDT-062 only); the rest disk/CPU.
+
+### BRANDT-062 (Opus, cap 5.5, box 100 min): hessen-daenemark-1672, Brandt leaves 0062-0064 (and 0050's head) under the gate-passed values
+NOTES "BRANDT-GATE" and "BRANDT-UP" (values_gate.tsv: C values passed two pre-registered gates plus BRANDT-UP's LCS gate; dk131_inventory.tsv:
+0062 ~9 lines, 0063 ~6, 0064 ~8 with small marks above some groups; 0050 a few numerals at a slip head, doubtful). Steps: (1) arcinsys take,
+one GET per leaf at the largest size, scratchpad only; prior-work check 2 on each leaf: is there a gloss (0064's "small marks above")? A gloss
+makes those tokens known-answer, scored as BRANDT-UP did. (2) PREREG-BRANDT-062.md committed with git BEFORE any decode: for UNGLOSSED tokens,
+the statistic (e.g. de17 word/n-gram score of the C-value decode vs value-permutation decodes, n >= 1000, gate real > p99; or tools/
+judge_plaintext.py with a de17 spec, shuffled-target control first per rule 3), and what PASS licenses (S grades on covered tokens). Check the
+control can differ from the target. (3) Crop (pasted iiif_lines.py command; shear if needed), two blind Sonnet passes per leaf, reconcile,
+settle splits. (4) Decode with values_gate.tsv C values only; score; report coverage and any readable stretches as M/S per the gate. Check 5
+(print_check on decoded phrases) after decode. NOTES section "BRANDT-062 (9 Oct 2026)", Remaining gaps/Escalation, gaps_check. Do 0062 and 0064
+(heavy) first; 0063/0050 only if under 80% of cap. Units: 2 passes + 1 reconciliation per leaf (~1.5 each). Report what was found and where it
+was not found; do not classify novelty.
+
+### V-BRANDT (Opus verifier, cap 3, box 70 min, disk only): hessen-daenemark-1672, audit of BRANDT-GATE and BRANDT-UP
+Separate session from both solvers; do not protect their conclusions. Read NOTES "BRANDT-TX", "BRANDT-GATE", "BRANDT-UP", the PREREG files, and
+dk131_brandt/. Check: each PREREG committed before its score (git log order); the agrees statistic in BRANDT-GATE test 1 is the same statistic
+BRANDT-TX computed exploratorily on the SAME pairs -- say plainly whether test 1 is therefore a confirmation of an already-seen number rather than
+an independent test, and weigh test 2 (held-out 0049) and BRANDT-UP's LCS gate as the independent evidence; each control can differ from its
+target (rule 3); rerun the scoring scripts with --check / fresh seeds; whether the 16 C values are gloss-derived (C) or cryptanalytic (S) by
+the rule 4 definitions; whether 0049's two-pass agreement (84.8%) is enough for the held-out letters. Write AUDIT.md section "V-BRANDT (9 Oct
+2026)": per gate holds / does not hold with numbers, correct any over-claim in NOTES/HYPOTHESES. Depth per rule 4a for the Brandt pool if it
+can be set; N-class only if the brief's verifier template steps are all run (otherwise say "N-class not assigned: design audit only").
+
+### SUR-SPLITPC (Opus, cap 2, box 50 min, CPU): na-suriname-map-1781, positive control for the SPLIT statistic
+V-SUR0745 (AUDIT.md "V-SUR0745") found SPLIT's "no split shown" has unmeasured power (n-only control sign h has 0 tokens; unsteered C1 p99.5
+1.000). Build a positive control: a synthetic unit of 0745L's size where the [y-fam] class does carry a planted m-vs-n split of the size the
+hypothesis predicts, run the same SPLIT statistic and control, and report the detection rate over >= 200 synthetic draws. PREREG-SUR-SPLITPC.md
+committed with git before running. Outcome: SPLIT on 0745L is a negative with measured power (if detection >= 0.8) or a non-test at this N.
+HYPOTHESES.md row with both numbers, NOTES section, gaps_check. No transcription.
+
+### MANT-EYE63 (Opus, cap 2, box 50 min, disk only): sachsstaatsarchiv-manteuffel-1712, eye re-check of 0063's flagged slots
+MANT-0063 flagged code 84 (sch vs th conflict) and six slots for eye re-check (HYPOTHESES.md / NOTES "MANT-0063"). On the crops MANT-0063 cut
+(on disk), one Opus look per slot at native zoom plus one blind Sonnet look on doubt; record each as confirmed / corrected with evidence; if a
+token changes, rerun the 0063 gate script with the same seeds and give both numbers. Do not merge into key.tsv. NOTES section, gaps_check.
