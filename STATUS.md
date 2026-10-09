@@ -7693,6 +7693,11 @@ file: flagged to LANE FAMILY-A2l) and retired --check 1 missing (TX-REGISTER row
 TX programme table 22:0x UTC: slot 1 orchestrator | slot 2 lane inc. 2 session_011EV9AKeJ4YuU9jjghdUy6F 23.7, check-in 6 22:12 (S2 score;
 hand-over to inc. 3 due) | slot 3 TX-RED session_01WCmiKQwgGMzjVaBrAgxLiY 21.2, context 634k, pass 7 22:02 (successor asked) | slots 4-10:
 round 9 four of five done (S2READ, VIV, GUN, GUNSHEET, BASE-SPIN2 all done); pool 30 | eval looks 0; S2 look 0 (score at 22:12).
+Addendum 22:0x UTC: TX-RED incarnation 1 handed over (ledgered 21.24 D, archived) to incarnation 2 session_019mC2iYWnDXZQipquND2vZE (passes
+from 8, findings from F38; a dead first attempt session_01Brp99kTdyveXxLWp14QCYL is archived, ignore it). Pass 7 on file: BLOCKING F33 on
+the S2 score (the frozen step-3 adjudication was not executed: passZ_S2 is pass A at the disagreements) -- the lane told by send_message at
+22:0x to run the adjudication as frozen before the score (or report "pass A with 9 adjudications", never the frozen pipeline); F34 (TXV-VIV
+flags decided without the clerk image), F35 (gunther sheet 6 mislabelled exemplars: B3 before a look), F36 (B2's leak: check v5 labels).
 
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
