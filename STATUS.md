@@ -7327,6 +7327,18 @@ PASS p 0.0086; PISA-T32 f.275r re-score running; COS-CREM: no Costabili key in C
 worker and lane of this session ledgered and archived except the three AUD2 verifiers just spawned and the live DEFAULT-1340 lane (both
 listed for the successor); the account-4 dispatcher and DEB-RUN standing sessions stay; this session's check-in trigger is deleted.
 
+Successor check-in 1, 14:50-15:0x UTC 9 Oct (7:50 am PT): session_01VQDEedJCaaN7fFPGcNPUUD (Fable, depth 4) holds the role; five_hour allowed; own
+trigger armed (send_later 15:31). Predecessor session_01PkUoxUSDziiDv1wCDtqDo4 retitled ARCHIVED, archived (SESSION_STATUS_ARCHIVED verified), ledgered 31.25
+by get_session. Live on account 4: DEFAULT-1340 lane (wave 4: MONLUC-K38, COS-BOX2, HAR-GLOSS, SAV-BOUCHER, D1162-F19 + PISA-T32; lane check-in 15:07), AUD2-LEDGER-22/23/24
+(14:47, running) and AUD2-LEDGER-25 (queued 14:51 by FV-FM9d for account 3; re-tagged to account 4 and spawned 14:56, session_01XeXspN1GAqj3QembhYB2cF, cap 5, box 80:
+E307 and E309 second audits) -- all four are the orchestrator's to ledger and archive on their done lines. Account 1 LEDGER-6 wave 2 live (FV-FM9b/c/d done: E300 E301
+E303 E304 N1 D3 with holder clear copies, E302 E305 E306 N3 D3; FM-R7a E310-E315 + O9-BD filed; FM-R7b E318-E321 filed; NO9-R1 O9-CA..CD filed); account 2 refill at
+15:10; account 3 silent since 02:03. Checks: open_asks only the stale 09:42 MQS-BNF-S6 line (answered); keys 5 of 9 (S2 429, no change); system_map ok; work_queue
+queued 2 (SORTER-RERENDER-A3 for account 3; AUD2-LEDGER-25 now claimed), 8 malformed rows all pre-existing (lines 264-481); desk ok (83 drafts); near ok (14 rows);
+wait-only 0 missing; no_cracks NO-NEXT 0 (119 MISSING card rows wait for an account that reads the desk board); orphan_check: the two known trigger false
+positives, the Sept 23-24 stale-claim tail, no new (h) dropped request since 13:00; ledger_check duplicates pre-existing (lines 426-461). CLOSEST: Blathwayt
+(D2 kept) and the eckert Fort Monroe second audits (a class change there rebuilds the board). Next check-in 15:31.
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;

@@ -68,3 +68,7 @@ SORTER-RERENDER-A3; nothing owed by the orchestrator except check-ins. Hand-over
 STATE DELTA 14:5x UTC 9 Oct (hand-over): successor session takes over from session_01PkUoxUSDziiDv1wCDtqDo4 (depth 4). Live on account 4:
 DEFAULT-1340 lane + AUD2-LEDGER-22/23/24 verifiers (the orchestrator ledgers/archives those three). Account 2 refill at 15:10. See
 hub-seed/SUCCESSOR-PROMPT.md "State at hand-over".
+STATE DELTA 15:0x UTC 9 Oct (successor session_01VQDEedJCaaN7fFPGcNPUUD, depth 4, trigger trig_01SCnUgknBPH6yxovnXKQkZY): predecessor archived and
+ledgered (31.25). Account 4 live: DEFAULT-1340 lane (wave 4, its check-in 15:07) + AUD2-LEDGER-22/23/24 (14:47) + AUD2-LEDGER-25 (re-tagged from account 3,
+spawned 14:56, session_01XeXspN1GAqj3QembhYB2cF): the orchestrator ledgers and archives those four on their done lines. Any further AUD2-LEDGER-* row LANE LEDGER
+queues as account-3: re-tag and spawn the same way. Account 2 refill 15:10. Nothing else queued for the orchestrator but SORTER-RERENDER-A3 (account 3 only).
