@@ -1,7 +1,7 @@
 # EXHIBIT-1: three museum-style displays for our three most interesting readings, as a private mock-up (account 4, Opus 5.5, cap USD 12, box 100 min)
 
-Written 9 Oct 2026 22:5x UTC by date -u by the orchestrator (account-4), session_012sGNgiddCpz4QUhQsMyoPU, on the owner's direction at
-22:4x-22:5x UTC: "think about it as if you went to a museum and they set up a display to talk about whatever our cipher is about ... for our
+Written 9 Oct 2026 22:37 UTC by date -u by the orchestrator (account-4), session_012sGNgiddCpz4QUhQsMyoPU, on the owner's direction at
+22:3x UTC (clock-checked 22:37 UTC; earlier drafts wrote 22:4x-22:5x by estimate, wrong): "think about it as if you went to a museum and they set up a display to talk about whatever our cipher is about ... for our
 three most interesting solves ... think like the people who make the displays: what are they trying to convey, what are they concerned
 about, what are they excited about; for the people who view it: why are they viewing it, what are they hoping to get out of it, why do
 they find it interesting, how would it become more interesting for them -- arrangement, assets. Show portraits of the key people."
