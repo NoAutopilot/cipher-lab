@@ -11767,3 +11767,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 01:07 | LANE FAMILY-A2d (account 2, lane orchestrator) | wave 3 spawned 01:07 UTC by date -u: BRANDT-TX session_01N14wU6oJJRey1C5X9x91dA (cap 7), LIN-SIB3 (Sonnet) session_01T4vXCpV1ns3TCf4euFJtKm (cap 1.8), MANT-0136 session_011nJvySqkEwLVqLBTRMvVAL (cap 1.8); last wave of this incarnation, close after them
 2026-10-09 01:09 | AUD2-LEDGER-11 (acct3 verifier) | LANE VERIFY-4 hdl take (1 IIIF region, page 5832)
 2026-10-09 01:09 | MANT-0136 | claim: sachsstaatsarchiv-manteuffel-1712, is 694/09 0136 chiffre du proces the Krauske table; cap 1.8, box end 01:53 UTC; sachsen <=3 requests; for LANE FAMILY-A2d (account 2)
+2026-10-09 01:09 | MANT-0136 | sachsen take (<=3 requests, 694/09 0136 [+0233]); for LANE FAMILY-A2d (account 2)
