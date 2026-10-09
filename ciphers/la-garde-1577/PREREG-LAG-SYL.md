@@ -91,3 +91,33 @@ token). The v2 transcription is not edited.
      the named next step only in that branch). Power FAIL -> "untested-by-this-gate at 0.13", target result not read.
    - Status stays `open` in every branch. No reading is claimed. Scores to `families/lag_syl13.tsv`; `--report` re-prints;
      `--check` re-solves and diffs (rule 7).
+
+## Amendment 3 (LAG-RESCORE, 9 Oct 2026 05:1x UTC; written and pushed before any score on the revised spec is computed)
+
+Why: LAG-V2 (9 Oct) revised v2 with LAG-MARKS' 7 sure mark settles and rebuilt `specs/la-garde-1577.json` (still 239 tokens,
+48 types; marks 196 bare / 40 overline / 3 loop). Amendment 1's T, shuffles and controls were computed on the pre-LAG-V2 spec
+(46227558d). Revised measured error: v2 against the settles 0.000 central / 0.067 upper; one reader 0.071 central / 0.125 upper.
+Nothing else changes: family, solver (restarts 8, defaults), corpora, statistic (solver score per cipher token), shuffle
+convention, order statistic (ceil(q n)-th).
+
+1. **Control calibration on the revised spec** (Amendment 1's family_run invocation verbatim, `--control-only --seeds 3
+   --gate 0.6`), err **0** (descriptive), **0.067**, **0.071**; rows to HYPOTHESES.md. Read-out: a mean < 0.60 at 0.067 or 0.071
+   -> "control below gate at the revised error", stop before step 2.
+2. **Re-score** (`families/lag_sylv2.py`, 4 processes, revised spec): T (solver seed 1); (b) 40 shuffled targets, k = 1-40;
+   (a) Amendment 1's pool remade on the revised spec: err 0.084 and 0.107, seeds 1-20 each; (a71) err 0.071 (one-reader
+   central), seeds 1-20; power: 10 held-out controls at err 0.107, seeds 101-110, each against **10** own shuffles (shuffle
+   seeds 1-10, solver seed k; reduced from 20 to fit the box, so the own-shuffle p95 = ceil(9.5) = the 10th = the maximum,
+   a stricter bar than Amendment 1's 19th of 20).
+3. **Read-out (fixed now):**
+   - Power: PASS iff >= 80% of held-out controls with recovery >= 0.60 pass (T-style rule against own-shuffle p95 and p05(a)),
+     with at least 5 such controls; else "untested-by-this-gate on the revised spec", target not read.
+   - Primary (Amendment 1's rule on the revised spec): **PASS iff T > p95(b) and T >= p05(a)**. Power PASS and FAIL -> the
+     syllabary (regular) control-backed negative holds on the revised spec for error up to 0.107; power PASS and PASS -> the
+     LAG-SYL negative does **not** survive the revision; "worth a verifier" at most, next step a decode + judge with the ARM-C1
+     shuffle check; no reading claimed in this job.
+   - Secondary, reported beside it: T vs p05(a71). T < p05(a71) says the negative also holds against controls at the one-reader
+     central error alone.
+   - Coverage is unchanged by this re-score: LAG-SYL13 showed the negative does not extend to 0.13, so it stays conditional on
+     a true one-reader error <= ~0.11 (central 0.071 inside, upper 0.125 outside).
+   - This is a re-score after an input change, not an err tuning: rule 3's third-attempt clause is not engaged by it.
+   Status stays `open`. Scores to `families/lag_sylv2.tsv`; `--report` re-prints; `--check` re-solves and diffs (rule 7).
