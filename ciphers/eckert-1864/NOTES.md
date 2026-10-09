@@ -3338,3 +3338,39 @@ Read so far: four of four filed (E300-E303). Printed: E300, E301 (volumes matche
 - [x] image-check: 3 of 4 in bands (E301 not).
 - [x] retry: be-api 502 twice, one retry script.
 Verdict: keep going: 4 internal gaps, cheapest next: OR I/39 pt 3 djvu grep for E303, ~$0.3
+
+## KEY-TW (9 Oct 2026, account 1, for LANE LEDGER)
+
+Worker KEY-TW, 13:53-14:0x UTC by `date -u`, offline (no requests). Known-plaintext and context test of the two candidate rows named by
+CONF-FM and FV-FM8a, at every filed Cipher No. 1 occurrence in `ciphertext.txt` (No. 2 and No. 9 ledgers checked: "tulip" there is the
+No. 2 book's own row, Tulip = Period, H, key-no2.md p.23 l.14, about 40 uses; neither file has "whiskey"; eckert-1862's ec18 alignment
+reads the spelling "whisky" = Troops AGREE 3 of 3 against clear copies, the key.md H row, not the candidate spelling). `decode_key.py --try`
+does not apply here (no decode.json; decode.py's layout), so `fortmonroe/key_tw.py` does the same job: each entry decoded as filed, the
+candidate shown with and without its value, a mechanical boundary statistic and a blind context read against a random-word control.
+Output `fortmonroe/key_tw.out`, judgements `fortmonroe/key_tw_judgements.tsv`.
+
+| candidate | filed occurrences | value reads | key.md value / as written reads | control | known plaintext |
+|---|---|---|---|---|---|
+| Tulip = stop | 9 (E9 E106 E141 E170 E175 E230 E283 E284 E289) | **9 of 9** | Open 0 of 9 (every audit since FV-LS5-A graded these M for that reason) | blind read: stop given to 9 random key-word occurrences reads 1 of 9 (Fisher one-sided p 0.0002); boundary share (next word starts a clause) tulip 0.778 = No. 1 period words 0.778 (n 522), random key words mean 0.476, p95 0.778, P(null >= tulip) 0.068 | E170: print has "without fail. One steamer" with tulip at the full stop (FV-FM3a); unfiled 5821/1, 5821/2: ORN I/11 full stop at both (CONF-FM). E230's clear copy 8479 has no counterpart (consistent with a stop, not a test) |
+| whiskey = Troops | 7 (E50 E100 E143 E256 E262 E290 E293) | **7 of 7** | as written (liquor) does not read in E100 "colored whiskey", E262 "arriving in considerable numbers", E290 (print "troops") | blind read: Troops given to 7 random key-word occurrences reads 1 of 7 (Fisher one-sided p 0.0023) | E290: OR I/40 pt 2 p.85 "ferrying troops and trains" (C); unfiled 5768 vs clear copy 4788 (FV-FM8a, C) |
+
+Disclosure: the blind read is only partly blind. The 32 windows (16 candidate, 16 control, `key_tw.py --blind`, seed 20261009) were
+shuffled and judged with ids hidden, but the reader had seen the candidate windows a minute before; a control window was judged R
+twice (14 "any such [Troops] as may be enroute", 20 "assistant [stop] end"). A fresh session re-judging `--blind` before reading this
+section would settle that. The mechanical boundary statistic is not significant at n 9 on its own (0.068); it says only that tulip sits
+where the true period words sit, at their rate.
+
+Period key source: none for No. 1 (mssEC 41 p.22 l.14 gives Tulip = Open, H). The sibling book Cipher No. 2 (key-no2.md p.23 l.14)
+gives Tulip = Period, H, and the No. 2 ledger uses it as such; the likeliest account is the clerks carrying the No. 2 punctuation word into
+No. 1 messages, not an error in key.md's row. For whiskey, key.md's own rows Whisky (p.24 l.7 R) = Troops, H, are the source; the candidate is
+only the clerk's spelling.
+
+**Proposal for the next FIX job (not applied; key.md untouched):**
+- Add to key.md section 7 (words the book does not give): `| Tulip (in No. 1 entries) | Period | S | KEY-TW 9 Oct 2026: reads at 9 of 9 filed
+  occurrences vs 1 of 9 random-word control; C at E170 and unfiled 5821/1-2; No. 2's Tulip = Period (key-no2.md p.23 l.14) |`, and resolve the
+  conflict with the H row Tulip = Open by a rule-4 entry in HYPOTHESES.md "Key conflicts" (Open never reads in the ledger; Period reads
+  everywhere) rather than by deleting the H row. E9 E106 E141 E170 E175 E230 E283 E284 E289 then move from M/plain to S [stop].
+- Add `| Whiskey | Troops | S | KEY-TW: spelling of Whisky (p.24 l.7, H); 7 of 7 vs 1 of 7 control; C at E290 |`, after which the seven
+  `variant: whiskey=Whisky` notes can go (E290's `:C` stays as the grade there).
+
+Found: both candidates read at every filed occurrence and beat their controls. Not found: a period No. 1 source giving Tulip = Period.

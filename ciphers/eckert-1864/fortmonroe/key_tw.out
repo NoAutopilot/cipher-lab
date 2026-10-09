@@ -1,0 +1,25 @@
+## tulip = stop (key.md: Open (-ed, -ing)); 9 occurrences
+E9 | Page 78 | 8970 | 23 May 1864 10.30 AM, to 'Mackerel' at	... Elizabeth Harsh perfume for Mackerel [stop] Energetic and efficient Palsys are Scarce ...	key: [Open (-ed, -ing)]
+E141 | Page 141 | 9034 | 4 Aug 1864 11.30 AM, to Hunter via 	... Growl Aug Pension Florence For Mackerel [stop] I have seen Masks dispatch to ...	key: [Open (-ed, -ing)]
+E106 | Page 77 | 8969 | 22 May 1864 10.30 PM, R. R. McCaine,	... Narrow peach to Mutton Cedar Creek [stop] your mangle to Beach asking for ...	key: [Open (-ed, -ing)]
+E170 | Page 262 | 5806 | mssEC 25 (obj 5952, pointer 5806), 	... will all leave tonight without fail [stop] plunge weaseler with perfume publish mansion ...	key: [Open (-ed, -ing)]
+E175 | Page 294 | 5838 | mssEC 25 (obj 5952, pointer 5838), 	... Pontoosuc most anxious to swindle niagara [stop] the money tower Saugus at farmer ...	key: [Open (-ed, -ing)]
+E230 | Page 295 | 5839 | mssEC 25 (obj 5952, pointer 5839), 	... go on in the Dick rater [stop] I go now Sligo Cuyler Webster ...	key: [Open (-ed, -ing)]
+E283 | Page 275 | 5819 | mssEC 25 (obj 5952, pointer 5819), 	... weasel up & chain ready tuslip [stop] give paulding to vassals walrus Niagara ...	key: [Open (-ed, -ing)]
+E284 | Page 260 | 5804 | mssEC 25 (obj 5952, pointer 5804), 	... Nelly for Bourse [stop] I do not think the whinny ...	key: [Open (-ed, -ing)]
+E289 | Page 270 | 5814 | mssEC 25 (obj 5952, pointer 5814), 	... this squad run leaving here immediately [stop] shall the Witnesses leave at such ...	key: [Open (-ed, -ing)]
+## whiskey = Troops (key.md: Troops); 7 occurrences
+E50 | Page 149 | 9042 | 11 Aug 1864 11.30 AM, to Col. Biggs 	... and water the Continental to bring [Troops] Saxon Quadroon Torch Waxy and Persia ...	key: [Troops]
+E100 | Page 29 | 8921 | 5 Apr 1864 3.30 PM, operator Baldwin	... coaled & watered to whimper colored [Troops] to Hilton Head & thence to ...	key: [Troops]
+E143 | Page 100 | 8992 | 30 June 1864 3 PM, to Maj. S. Van V	... now in service fit to bring [Troops] from Eddy and which can possibly ...	key: [Troops]
+E256 | Page 208 | 5752 | mssEC 25 (obj 5952, pointer 5752), 	... insanity's dispatch says that all the [Troops] have plumed and that village patron ...	key: [Troops]
+E262 | Page 197 | 5741 | mssEC 25 (obj 5952, pointer 5741), 	...  [Troops] arriving here in considerable numbers zodiac ...	key: [Troops]
+E290 | Page 207 | 5751 | mssEC 25 (obj 5952, pointer 5751), 	... can be use full in salmoning [Troops] and trains yoke bender this would ...	key: [Troops]
+E293 | Page 278 | 5822 | mssEC 25 (obj 5952, pointer 5822), 	... snake boat I am quarreling the [Troops] with all possible dispatch if the ...	key: [Troops]
+
+boundary share: tulip 0.778 (n=9); period words 0.778 (n=522); null mean 0.476, p95 0.778 (n=9, 2000 draws, pool 2258); P(null >= tulip) 0.068
+whiskey boundary share (for comparison): 0.286 (n=7)
+tulip=stop	cand	reads 9 of 9	ids 1R,2R,5R,9R,11R,12R,16R,22R,26R
+tulip=stop	ctl	reads 1 of 9	ids 3N,10N,13N,15N,20R,24N,25N,29N,30N
+whiskey=Troops	cand	reads 7 of 7	ids 6R,7R,8R,18R,19R,27R,31R
+whiskey=Troops	ctl	reads 1 of 7	ids 0N,4N,14R,17N,21N,23N,28N
