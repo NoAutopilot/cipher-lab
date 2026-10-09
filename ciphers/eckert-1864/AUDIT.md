@@ -11352,3 +11352,114 @@ the key book. KEY lane: the Tulip S row (Period) is an inference that E319 contr
 Requests: hdl.huntington.org 20 (12 CISOSEARCHALL, 2 dmGetItemInfo, 6 IIIF of which 1 x 501; key page read from the committed local image);
 archive.org 1 djvu download (OR I/36 pt 3, 200) + 4 metadata; print_check.py: archive.org 5, be-api 56 (x 502 as above), www.googleapis.com 14,
 api.openalex.org 14; follow-up www.googleapis.com 6; api.semanticscholar.org 4 (2 x 429), api.core.ac.uk 4, www.loc.gov 3.
+
+## AUDIT (FV-MS18c)
+
+Verifier FV-MS18c (account 1, for LANE LEDGER), 9 Oct 2026, 18:15-18:3x UTC by `date -u`; a separate session from the reader MS18-R2, not
+protecting its conclusions. Scope: **E326, E327, E328** (NOTES "## MS18-R2"), confirm **E329, E330** as N1 on the print page image, and test the
+print-derived values **Kearney = Burbridge, Lavender = Washburn**. Sent ledger mssEC 18 = Huntington object 10074, Cipher No. 1. Nothing decoded
+beyond key look-ups in key.md. Key source for all five: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Intake gate
+(18:2x UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Scripts: `ms18/fv_ms18c_hdl.py`
+(+ `.out`: 13 CONTENTdm full-text queries across all pointers, 22 item-info reads, 5 page images at 2400 px to scratch), `ms18/fv_ms18c_try.py`
+(the Kearney/Lavender test, exit 0). Print: djvu text of OR I/39 pt 2, I/39 pt 3, I/43 pt 1, I/45 pt 1, I/48 pt 2 downloaded to scratch; OR I/45
+pt 2, ser. II vol. 7 and the rest of the 164 cached print-check volumes read from `sources/ia-fulltext/print-check/`.
+
+### 1. Duplicates, image, identifiers
+- **Duplicate diff:** pointers 9889, 9813, 10016, 9864, 9873 occur only in their own `###` headers (and E325's for 9889). E326 is the third copy
+  of one Dana telegram of 5 Nov 1864: 9889/0 = E325 (to Clowry for Rosecrans), **9889/1 (unfiled: to Capt. Bruch, Louisville, "Jennie plaster
+  Kearney zodiac The Infant directs the oakum ... walnut agents ... Pilgrim M J Garrett Dragon youth Image Asst Boutw[ell?]")**, 9889/2 = E326
+  (to Van Duzer for J. F. Miller), and **9890 row 0 (unfiled: to Sampson, Baltimore, "Julia plaster for Submit zodiac ... walnut agent ...
+  Paradise Wm Hamilton")**. Four copies to four commands with the same code words; they are not independent encipherments and check the
+  transcription, not the key.
+- **Image eye check this session, every graded line** (2400 px pages; entry crops at native resolution and 0.6-0.7 scale): E326 (header + 6
+  lines), E327 (header + 6 lines, "Pledge Francis For Makent unity The Panama Bureau"), E328 (header + 6 lines), E329 (header + 5 lines), E330
+  (header + 6 lines). **The transcription matches the image on all five**, with two notes: E326 line 2 ends with a faint struck "Emp" (the clerk
+  began "Empress" and carried it to line 3); **E328 line 2 has a faint, partly erased word between "a" and "Co."** ("a[cc...] Co."): the print
+  shows it is "accompany" (below).
+- **IA identifiers (a finding for later workers):** `warofrebellion431unit` is OR ser. I **vol. 47 pt 2** (IA metadata `volume` "v.47:2"), not
+  43 pt 1; OR I/43 pt 1 is `warofrebellion431unit_0`. The reader's `warofrebellion473unit` (OR I/47 pt 3, "503 twice") is not an IA identifier in
+  the `warofrebellion*` listing at all; OR I/47 pt 3 is `warofrebellion014703rootrich` and I/49 pt 2 `warofrebellion492unit` (advancedsearch,
+  18:2x UTC). The 503s were very likely the missing item, not the host.
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, all pointers; hdl take 18:1x-18:2x UTC, 40 requests): Miller Tunstall 1 (own
+9889); rebel agent seizure papers 0; Monday morning next 13 (9889, 9890 = the Baltimore copy above; others other dates); Gallipolis 14 (9813 own;
+9057-9060 = late Aug 1864 Gallipolis traffic to Bruch and McCaine; others 1862-63); Cavalry Bureau 15 and unserviceable cavalry horses 5 and mount
+your cavalry 6 (item info read for 10 of them: 1863-65 traffic, none 6 Aug 1864); McCaine 221 (the Harpers Ferry operator, e.g. 9060 "McCaine
+Harpers Fy"); 2700 horses 0; Reynolds Pope horses 1 (8713, other); spared from Kentucky 4 (1863-64 others); Forrest Paducah Memphis 5 and Burbridge
+Washburn 3 (5782 = E169, others other dates). The reader's own "replaced in that state" hit 3555 is 12 June [1864?] Ingalls on Mosby (unrelated).
+**No period clear copy of any of the five at any pointer.**
+- **E327 -> printed, OR ser. I vol. 43 pt 1 p.709** (`warofrebellion431unit_0`, djvu text, running head "Chap. LV.] UNION. 709 CORRESPONDENCE,
+  ETC."; IA page_numbers leaf 727 = p.709): "Washington, August 6, 1864. Major-General Hunter, Monocacy, Md., or Harper's Ferry, W. Va.: The Cavalry
+  Bureau has requested that all unserviceable cavalry horses in your department be sent to the depots at Gallipolis, Ohio, and Giesborough, D. C.
+  I have directed that every possible effort be made to mount your cavalry. H. W. Halleck, Major-General and Chief of Staff." **Word for word**;
+  "Makent" = Maj. Gen. Hunter by the print (Hunter's other filed codes are Mackerel and Mutton, key.md C rows, the latter from OR I/43 pt 1 p.698,
+  the day before). The reader's print grep missed it because the cached `warofrebellion431unit` it searched as I/43 pt 1 is I/47 pt 2.
+- **E328 -> printed, OR ser. I vol. 48 pt 2 p.540** (`warofrebellion482unit`, djvu text, running head "540 LOUISIANA AND THE TRANS-MISSISSIPPI.
+  [Chap. LX." directly above; IA leaf 546 = p.540): "Washington, D. C., May 22, 1865 -- 7 p. m. Major-General Pope, Saint Louis, Mo.: General
+  Reynolds need not accompany the troops from Arkansas. He cannot probably be well replaced in that State. The quartermaster will send you 2,700
+  horses as fast as possible. U. S. Grant, Lieutenant-General." **Word for word**; it settles the reader's two U spans: "a[cc...] Co." = accompany
+  (plain, partly erased on the page) and **"whisile" = Whistle = Troops** (key.md H, p.24 l.8; the clerk's spelling, now C).
+- **E329 -> OR I/39 pt 3 p.253, confirmed on the page image** (IA `warofrebellion393unit` leaf n258, page head "Chap. LI.] CORRESPONDENCE,
+  ETC.--UNION. 253", first item): Halleck to Schofield, Washington, 13 Oct 1864, 11.30 a.m., "(Same to General Burbridge.)" -- as the reader quoted.
+- **E330 -> OR I/39 pt 3 p.379, confirmed on the page image** (leaf n384, page head "... 379", third item): Halleck to Thomas, Washington, 20 Oct
+  1864, 3 p.m. -- as the reader quoted; the page also prints, directly below, Thomas's reply ("If you can spare me one of my corps ...").
+- **E326 -> not located.** Phrase and name grep ("Tunstall", "seizure of his/their papers", "Monday morning next", "rebel agent(s)") in OR I/39
+  pt 3 (Kentucky-Tennessee correspondence to 13 Nov 1864, all 5 Nov items read by heading), I/45 pts 1-2, ser. II vol. 7 and the 164 cached
+  volumes: 0 relevant. Google Books (keyed, `country=US`, 3 queries): "Thomas T. Tunstall" is in OR ser. II vol. 2 ("Arrests for Disloyalty":
+  Henry Myers and Thomas T. Tunstall arrested about 19 Feb 1862, the Sumter affair at Tangier) and other prints name T. T. Tunstall as a former U.S.
+  consul and Confederate citizen -- **context for the man, not a print of this telegram**. Not searched: OR ser. II vol. 8 (1865), the Nashville
+  press of 7-9 Nov 1864, NARA RG 107/110, Dana's own papers, JSTOR.
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+- **E327 (OR I/43 pt 1 p.709):** Pledge = 6, Francis = 12 (time), Panama = Cavalry x2, waggish = Unserviceable, Pacific = Cavalry, Spartans =
+  Horses, Quadroon = Department, Quotients = Depots, Abner = Ohio, yoke, Italy = General-in-Chief: H 13 as decoded, now also **C 11** (every
+  meaning-bearing code word matches the print); Makent = Maj. Gen. Hunter **C** (unkeyed, by the print). C 12 + H 2 (unity, yoke) of 14.
+- **E328 (OR I/48 pt 2 p.540):** H 16 as decoded, now C on all body words; **whisile = Whistle = Troops C** (was U); "a[cc...] Co." = accompany
+  (plain, I by the print on the erased letters); "wall" = well (plain). No U left. Martha = 22, Gaul = St Louis, Harsh = 7 PM agree with the
+  print's dateline and time.
+- **E326 (no print):** The Infant = Secretary of War, oakum = Arrest, Emily = 10 AM, torch = Of the, rambling = Following, walpole = Rebel, Palate
+  = Brigadier General, Empress / Embrace = Nashville, Paradise = Colonel, Jennie = 5, plaster = 3.30 PM, Insanity = C. A. Dana, unity, zebra, yoke:
+  **H 16 of 16**; "Thos T Tunstall" plain (image), "stop Tun stall" the clerk's check-word. Reading: "The Secretary of War directs the arrest at 10
+  a.m. on Monday morning next of the following named rebel agent and the seizure of his papers: Colonel Thos. T. Tunstall, Nashville. C. A. Dana."
+- **E329, E330:** no change; C by print stands (pages now eye-checked).
+- **Kearney / Lavender (`ms18/fv_ms18c_try.py`, exit 0):** Kearney = Maj. Gen. S. G. Burbridge reads at **2 of 2** print occurrences (E329 p.253
+  "(Same to General Burbridge.)", E330 p.379 "Burbridge and Washburn"); control: 0 of the 47 distinct person meanings in key.md reads 2/2 (mean
+  0.000). Lavender = Gen. C. C. Washburne reads 1/1 (E330); control 1 of 47 (itself; key.md already carries Lavender = Washburne at H from mssEC
+  43 p.[17]). Both agree with E169 (9 Sept 1864, Eckert: "for Maj. Gen. Burbridge use Kent and Kearney"; "C. Washburn lavender and loadstone",
+  period, H) and the dated split in "## AUDIT (FV-FM2)" s.3 above (Kearney valid from 9 Sept 1864; all three occurrences are later). A fourth,
+  unscored occurrence, 9889/1 (5 Nov 1864, to Bruch at Louisville, addressee "Kearney"), fits Burbridge commanding in Kentucky. The test is weak
+  as a control (a name-slot test can only be won by the printed name) and adds C to an H already given by the period instruction.
+  **Proposed for key.md (not edited here):** `| Kearney | Maj Gen S. G. Burbridge | H | E169 (5782/1, 9 Sept 1864, period instruction; from that
+  date); mssEC 43 left margin; C at E329 (OR I/39 pt 3 p.253) and E330 (p.379) |` and `| Makent | Maj. Gen. David Hunter | C | OR I/43 pt 1 p.709:
+  Halleck to Hunter, 6 Aug 1864 = E327 |`; Lavender needs no change (a C note at E330 may be added).
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E327 | **N1** (text known) | period | D3 (H 13 + C by print, no gap; external: OR I/43 pt 1 p.709) | printed word for word, OR ser. I vol. 43 pt 1 p.709 (Halleck to Hunter, 6 Aug 1864) |
+| E328 | **N1** (text known) | period | D3 (H 16, whisile C, no gap; external: OR I/48 pt 2 p.540) | printed word for word, OR ser. I vol. 48 pt 2 p.540 (Grant to Pope, 22 May 1865, 7 p.m.) |
+| E329 | **N1** (text known) | period | D3 (H 13 + C 1; print page eye-checked) | OR ser. I vol. 39 pt 3 p.253, confirmed on the page image (IA leaf n258) |
+| E330 | **N1** (text known) | period | D3 (H 11; print page eye-checked) | OR ser. I vol. 39 pt 3 p.379, confirmed on the page image (IA leaf n384) |
+| E326 | **N3** | period | **D2** (H 16 of 16 code groups, no unread gap; no external check of the content located; the three sibling copies share the code words and check the transcription only) | no prior plaintext or decipherment located in OR I/39 pt 3, I/45 pts 1-2, ser. II vol. 7, the cached volumes, Google Books or the Huntington's full-text search |
+
+- Not N4 for E326: OR ser. II vol. 8, the Nashville press, NARA RG 107/110, Dana papers and JSTOR not searched.
+- **Safe sentence, E326:** "Read at grade H with War Department Cipher No. 1: on 5 Nov 1864 C. A. Dana, for the Secretary of War, ordered the arrest
+  at Nashville at 10 a.m. on Monday 7 Nov of Col. Thomas T. Tunstall as a rebel agent and the seizure of his papers -- one of four copies of the
+  order sent the same day to St Louis, Louisville, Nashville and Baltimore, each naming that command's men; not located in the Official Records
+  (ser. I vols. 39 pt 3, 45; ser. II vol. 7), Google Books or the Huntington's full-text search (searched 9 Oct 2026)." Depth sentence (D2): "On 5
+  Nov 1864 the War Department ordered the arrest at Nashville of Col. Thomas T. Tunstall as a rebel agent, with the seizure of his papers, timed
+  for 10 a.m. on Monday 7 Nov." E327/E328/E329/E330: "The telegram is printed in the Official Records (ser. I vol. N pt N p.N); our reading of the
+  cipher entry agrees with it word for word."
+- **Unsafe:** any "first", "new", "unpublished" for E326; any novelty for E327-E330; "Kearney = Burbridge" as a new identification (it is the
+  period instruction of E169); that the four copies corroborate the key (they share code words).
+
+### 5. Fixes for the next FIX job (not applied here; reading.md is decode.py output)
+E327: header and note: printed OR I/43 pt 1 p.709, addressee Hunter ('Makent' = Hunter, C); add the key row. E328: header and note: printed OR
+I/48 pt 2 p.540; 'whisile' = Whistle = Troops (C), 'a[cc] Co.' = accompany (plain, partly erased); drop "need not a Co.[?], the [whistle]" from the
+header gist. E329, E330: headers: "page not eye-checked" -> confirmed on IA leaves n258/n384 by FV-MS18c; add the Kearney row (H, E169; C here) so
+"Kearney" decodes. E326: none. NOTES "## MS18-R2" print lines: E327 and E328 move from "not located" to printed; the "OR I/47 pt 3 unreachable"
+line names a non-existent identifier (use `warofrebellion014703rootrich`). Any earlier note that cites `warofrebellion431unit` as OR I/43 pt 1 is
+OR I/47 pt 2.
+Requests: hdl.huntington.org 40 (13 CONTENTdm queries, 22 item info, 5 IIIF, all 200); archive.org 13 (2 advancedsearch, 5 djvu text, 4
+page_numbers, 2 page images, all 200); Google Books API 3.
