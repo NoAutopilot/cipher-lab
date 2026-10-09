@@ -5925,6 +5925,42 @@ Left (next lane): eckert-1864 No 2 entries pp.86-182 of no2-candidates.tsv (~37 
 by D12-E2/E3 rates; N2-AI/N2-AJ/N2-R N4 needs RG 92/393/107 or the OR Supplement (owner-side or LOCAL-QUEUE); eckert-1862 `ec18_align.py --rows`
 still stale, cause untested (~1); 9877 Hurlbut token stays M.
 
+## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261009-1010, session_01374AXg57FqWBwpvk29CTLT, account 2), 9 October 2026 (closed 12:3x UTC: four waves worked, lane ~58.9 of 60)
+
+Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-09-ytbiz-family-1010-jobs.md. Started from the
+0709 handoff next list items 1-6. Gate 0a: SESSION-SWEEP-account-2 stale-claimed since 5 Oct, proceeded. Workers 13 in 4 waves (10:18-12:10 UTC;
+Opus 9, Sonnet 4; all ledgered from get_session): 46.56; orchestrator ~12.3. five_hour allowed; account 2 seven_day `allowed_warning` throughout
+(continued per blast rules). Over cap >10%: RIK-COVER 1.71x, LIN-COUNT 1.50x, MANT-CUC2 1.58x, MANT-0176 1.57x, VB-SCREEN2 1.29x -- Opus vision
+jobs priced per leaf; per-call pricing (CLAUDE.md Usage 6) would have put each at ~1.5 per vision call. Known-text share ~23% (VB-0086 + VB-SCREEN2,
+key tests on printed letters).
+
+Results:
+- vanbeuningen-dewitt-1657: VB-0086 -- the printed 10 Dec 1656 letter (inv.1537 0086, Brieven aan JdW I pp.365-366) shares the 1657 key: S 216/225
+  vs permutation p99 0.249, PASS (PREREG first); 2 M codes get a second context, 6 candidate codes in key_1656_candidates.tsv (not in key.tsv).
+  Edition prints every Van Beuningen letter to De Witt 7 Jan 1657 - 7 Aug 1658; VB-SCREEN2: inv.1541/1540 end early Aug 1658, so no unprinted
+  cipher run exists in these bundles. The Van Beuningen pool is spent for reading (key source only).
+- sachsstaatsarchiv-manteuffel-1712: MANT-ABBO -- AB BO I prints 0108/0109 (Nr.64) and 0382 (Nr.72); abbo_check.tsv for 38 leaves. MANT-CUC/CUC2 --
+  Krauske's table holds on Flemming's clear-under-code drafts (other direction): 5 leaves pooled 141/207 vs p99 33/40, PASS; 173/144 were misreads of
+  177 (le czar); key.tsv unchanged, candidates in cuc_candidates.tsv. MANT-0176 -- 694/08 0176 (Berl. 2 Juil 1712) gate (b) PASS (-1.288 vs p95 -1.670),
+  S26 M4 U1; first verifier V-MANT0176 **N3 D1** (key `published` as every Manteuffel row); r04 pos 7 / r01 pos 3 transcription fix owed. No AUD2 row.
+- antt-linhares-chave: LIN-VIEYRA found 1897 px leaves 95/255 (2x); LIN-COUNT per-row labeller calibration FAIL (5/7; ranks exact 14/14, misses on the
+  "undecided" clause) -> instrument retired at 1897 px; cagar/justa stay M. While waiting section added (fresh-PREREG held-out calibration, ~$4).
+- heinsius-vanhaersolte-1703: HEIN-SR small_runs Deel 2 pp.7-131, no cipher run (pp.132-600 unscanned).
+- riksarkivet-r4282-1628: RIK-COVER -- no R4120 cover names in R4282/R4284 clear text; AOSB I:3 letter 165 footnote names 4 R4120 ficta (weak lead).
+
+**next** (for the next LANE FAMILY incarnation):
+1. Manteuffel 0176: apply V-MANT0176's r04/r01 transcription fix, re-run --check and gate (b) (~0.5); then 0177 continuation (~2.5); Berner 1901 /
+   Bonnesen 1918 by date+names for 0176 before any depth claim.
+2. Manteuffel 694/08 0398 + 0499 clear-under-code (MANT-CUC2's named next, ~2.5, PREREG-MANTCUC unchanged); 0494 glossed heavy as a key-extension leaf
+   (~5) -- AB BO I already checked (abbo_check.tsv).
+3. Manteuffel 694/08: 189 frames still unseen (other stride offsets), ~5 per 45-50 frames; 5 date-only AB BO hits (0088, 0114, 0213, 0387, 0426) need
+   an image check before reading.
+4. antt-linhares-chave: fresh-PREREG labeller calibration on held-out columns (~4) or a person's count (ASKS draft text in NOTES, not filed).
+5. heinsius-vanhaersolte-1703: small_runs pp.132-600 (~1.5 per 120 pages, low prior).
+6. Manteuffel 0454: owner desk LOCAL-QUEUE L69 (Bonnesen pp.62-77) still open.
+Excluded this incarnation (other lanes): eckert-*, lodewijk-van-nassau-1573-74, baluze167, huntington-blathwayt, ceppo-nevers, pro3055-clinton-1779,
+fr16045-pisany, birago-*, hellen-frederick-1752, ra-karlxi.
+
 ## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261009-0709, session_01JLg3wgWv5KDmveVFp6agMv, account 2), 9 October 2026 (closed 09:01 UTC: four waves worked, lane ~60.5 of 60)
 
 Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-09-ytbiz-family-0709-jobs.md. Started from the
