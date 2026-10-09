@@ -1,0 +1,41 @@
+passage	merged_pos	posA	idA	confA	posB	idB	confB	status	noteA	noteB
+L01	2	2	S77	M	2	S54	M	split	6/b with stroke at top	b with stroke over top
+L01	6	6	S77	M	6	S54	M	split	6/b with top stroke	b with tick above
+L01	21	21	S55	M	21	S75	L	split	large circle over long cross	plain +; large loop above may belong to line above
+L01		24	X_NEW	L				gapB	lone vertical stroke before 3	
+L02	5	5	S62	L	5	S32	L	split	small loop with curl descending below line	loop with descending curl
+L02	7	7	S65	M	7	S80	H	split_H_B	8 with dot above, bar from previous touches	8 crossed
+L02	11	11	S84	M	11	S76	M	split	looped x2 shape	e-loop plus j/y tail
+L02		12	X_NEW	L				gapB	j-like stroke with descender	
+L02	13	14	S74	M	13	S54	L	split	b/6 shape	plain b
+L02	15	16	S42	M	15	S16	M	split	triangle/X with tick	triangle
+L02	16	17	S56	H	16	S52	M	split_H_A	t3	3 with vertical stroke
+L02	18	19	S84	M	18	S76	M	split	looped x2 shape	e-loop plus dotted y
+L02		20	S91	L				gapB	y/ij-like with diaeresis	
+L02	20	22	S77	L	20	S74	L	split	b with dot below	b/delta with dot below
+L02	26	28	S31	M	26	S87	L	split	looped l	rho-like loop
+L02	29	31	S88	M	29	S24	M	split	double-barred slash with dot	crossed bar with dot
+L03	5	5	S74	M	5	S54	M	split	tall 6 with top stroke	b with bar
+L03	8	8	S30	M	8	S49	M	split	slanted slash between dots	slash between dots
+L03	10	10	S77	M	10	S54	M	split	6/b with stroke over top	b with bar on top
+L03	12	12	S88	M	12	S24	M	split	crossed double bar	crossed bar
+L03	18	18	S40	L	18	S32	L	split	g/xi-like loop descending	loop with descending curl
+L03	25	25	S24	M	25	S88	H	split_H_B	vertical crossed by two bars	double bar crossed
+L03	26	26	S30	M	26	S49	M	split	slash between dots	slash between dots
+L03	33	33	S74	M	33	S77	M	split	6 with tick at top	6 with tick
+L03	35	35	S65	L	35	S37	L	split	8 with flourish over top	8-like with flourish
+L03	38	38	S42	L	38	S16	H	split_H_B	x over triangle base	triangle
+L04	3	3	S56	H	3	S52	M	split_H_A	t3	3 with vertical stroke
+L04	6	6	S69	M	6	S60	M	split	theta crossed by long bar	oval crossed by double bar
+L04	15	15	S56	H	15	S52	M	split_H_A	t3	3 with vertical stroke
+L04	26	26	X_THETA2	M	26	S60	M	split	theta with two bars	oval crossed by double bar
+L04	38	38	S65	M	38	S80	H	split_H_B	8 with dot	8 crossed
+L04	39	39	S73	L	39	S49	M	split	slash with dots / lambda-like	slash between dots
+L04	41	41	S91	M	41	S76	M	split	t-y looped	e-loop plus dotted y
+L04	43	43	S74	H	43	S77	M	split_H_A	b with blob	6 with tick
+L05	11	11	X_THETA2	M	11	S69	H	split_H_B	oval crossed by two horizontal bars (end of s1)	oval with bar
+L05	15	15	S74	M	15	S54	M	split	b/6 with blot above	b with blob top
+L05	17	17	S30	M	17	S49	M	split	slash between two dots	slash between dots
+L05					26	S37	L	gapA		partial at crop join (s2/s3)
+L05	31	31	S30	M	32	S49	M	split	slash between dots	slash between dots
+L05	38	38	S84	L	39	S42	L	split	small x-like loop	small x

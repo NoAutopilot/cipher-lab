@@ -1,0 +1,203 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	S40		M	x with g-like tail; after prose "particolari"
+L01	2	S54	S77	M	b with stroke over top
+L01	3	S65		M	8 with dot
+L01	4	S93		H	w with S
+L01	5	S84		H	looped x
+L01	6	S54	S74	M	b with tick above
+L01	7	S84		H	looped x, dot after
+L01	8	S13		H	small o with dot inside
+L01	9	S23		H	A with dot
+L01	10	S62		H	beta
+L01	11	X_THETA2	S69	M	oval crossed by long double bar
+L01	12	S73	S30	H	cross with dots
+L01	13	S89		H	=
+L01	14	S47		H	epsilon with dot
+L01	15	S54		M	b crossed horizontally
+L01	16	S80		H	8 crossed by bar
+L01	17	S94	S55	H	circle over cross
+L01	18	S93		H	w with S
+L01	19	S40		M	x with tail
+L01	20	S69		H	theta with single bar
+L01	21	S75	S94	L	plain +; large loop above may belong to line above
+L01	22	S42		M	x with dot above
+L01	23	S80		H	8 crossed
+L01	24	S52		M	3 preceded by vertical stroke
+L01	25	S97		H	lambda
+L01	26	S73	S30	M	cross with dots; line end
+L02	1	S87	X_NEW	L	P-shape with bar at foot; line start
+L02	2	S45		M	c with dot
+L02	3	S94		H	circle over cross
+L02	4	S93		H	w with S
+L02	5	S32	S31	L	loop with descending curl
+L02	6	S69		H	oval with one bar
+L02	7	S80		H	8 crossed
+L02	8	S49	S30	M	slash between dots
+L02	9	S89		H	=
+L02	10	S93		H	w with S
+L02	11	S76	S58	M	e-loop plus j/y tail
+L02	12	S93		M	w with S
+L02	13	S54	S77	L	plain b
+L02	14	S35		H	m with tick
+L02	15	S16	S42	M	triangle
+L02	16	S52		M	3 with vertical stroke
+L02	17	S80		H	8 crossed
+L02	18	S76	S58	M	e-loop plus dotted y
+L02	19	S17		H	Z
+L02	20	S74	S37	L	b/delta with dot below
+L02	21	S61		H	q
+L02	22	S52		H	3
+L02	23	S22		M	wavy nu
+L02	24	S75	S24	M	+
+L02	25	S23		H	A with dot
+L02	26	S87	S45	L	rho-like loop
+L02	27	S70		H	V crossed
+L02	28	S84		H	looped x
+L02	29	S24	S88	M	crossed bar with dot
+L02	30	S93		H	w with S
+L02	31	S40		M	x with tail
+L02	32	S57		H	reversed c with dot
+L02	33	S60	S69	M	oval crossed by double bar
+L02	34	S93		H	w with S
+L02	35	S23		H	A with dot
+L02	36	S37		H	delta
+L02	37	S34		H	ls
+L02	38	S57		H	reversed c
+L02	39	S17		H	Z
+L02	40	S73		H	cross with dots
+L02	41	S89		H	=
+L02	42	S80		H	8 crossed
+L02	43	S74	S77	H	6 with dot; line end
+L03	1	S97		H	lambda; line start
+L03	2	S80		H	8 crossed
+L03	3	S84		H	looped x
+L03	4	S75		H	+
+L03	5	S54		M	b with bar
+L03	6	S80		H	8 crossed
+L03	7	S13		H	o with dot inside
+L03	8	S49	S30	M	slash between dots
+L03	9	S45		H	c with dot
+L03	10	S54	S77	M	b with bar on top
+L03	11	S52		H	3
+L03	12	S24	S88	M	crossed bar
+L03	13	S65		M	8
+L03	14	S17		H	Z with tick
+L03	15	S84		H	looped x
+L03	16	S26		H	2 with dot, underline
+L03	17	S93		H	w with S
+L03	18	S32	S31	L	loop with descending curl
+L03	19	S23		H	A with dot
+L03	20	S62		H	beta
+L03	21	S69		H	oval with bar
+L03	22	S75		H	+
+L03	23	S73		H	cross with dots
+L03	24	S94		H	circle over cross
+L03	25	S88		H	double bar crossed
+L03	26	S49		M	slash between dots
+L03	27	S67		M	long f
+L03	28	S80		H	8 crossed
+L03	29	S84		H	looped x
+L03	30	S69		H	oval with bar
+L03	31	S70		H	V crossed
+L03	32	S23		H	A with dot
+L03	33	S77	S74	M	6 with tick
+L03	34	S62		H	beta
+L03	35	S37	S65	L	8-like with flourish
+L03	36	S61		H	q
+L03	37	S80		H	8 crossed
+L03	38	S16		H	triangle
+L03	39	S52		H	3
+L03	40	S23		H	A with dot
+L03	41	S89		H	=
+L03	42	S62		H	beta
+L03	43	S47		H	epsilon
+L03	44	S80		H	8 crossed
+L03	45	S76	S58	M	e-loop plus dotted y
+L03	46	S88		H	double bar crossed; line end
+L04	1	S16	S42	M	bold triangle; line start
+L04	2	S45		H	c with dot
+L04	3	S52		M	3 with vertical stroke
+L04	4	S53		M	phi-like loop
+L04	5	S93		H	w with S
+L04	6	S60		M	oval crossed by double bar
+L04	7	S35		H	m with tick
+L04	8	S84		H	looped x
+L04	9	S80		H	8 crossed
+L04	10	S26		H	2 with dot, underline
+L04	11	S32		M	vz with loop
+L04	12	S45		H	c with dot
+L04	13	S37		H	delta
+L04	14	S80		H	8 crossed
+L04	15	S52		M	3 with vertical stroke
+L04	16	S70		H	V crossed
+L04	17	S66		H	z with dot
+L04	18	S87	X_NEW	L	P-shape with underline
+L04	19	S93		H	w with S
+L04	20	S80		M	8 crossed, flourish
+L04	21	S47		H	epsilon with dot
+L04	22	S23		H	A with dot
+L04	23	S13		H	o with dot
+L04	24	S93		H	w with S
+L04	25	S62		H	beta
+L04	26	S60	S69	M	oval crossed by double bar
+L04	27	S23		H	A with dot
+L04	28	S88	S24	M	double bar crossed
+L04	29	S45		H	c with dot
+L04	30	S47		H	epsilon
+L04	31	S80		H	8 crossed
+L04	32	S23		H	A with dot, tilde above
+L04	33	S88	S24	M	crossed bars
+L04	34	S93		H	w with S
+L04	35	S75		H	+
+L04	36	S17		H	Z
+L04	37	S84		H	looped x
+L04	38	S80		H	8 crossed
+L04	39	S49		M	slash between dots
+L04	40	S88		M	double bar crossed, tilde above
+L04	41	S76	S58	M	e-loop plus dotted y
+L04	42	S52		H	3
+L04	43	S77	S74	M	6 with tick
+L04	44	S75		H	+; line end
+L05	1	S23		H	A with dot; line start
+L05	2	S35		H	m with tick
+L05	3	S97	S23	M	lambda with dot
+L05	4	S23		H	A with dot
+L05	5	S89		H	=
+L05	6	S62		H	beta
+L05	7	S73		H	cross with dots
+L05	8	S26		H	2 with dot, underline
+L05	9	S35		H	m with tick
+L05	10	S37		H	delta
+L05	11	S69		H	oval with bar
+L05	12	S75		H	+
+L05	13	S76	S58	M	e-loop plus dotted y
+L05	14	S80		H	8 crossed
+L05	15	S54	S74	M	b with blob top
+L05	16	S52		H	3
+L05	17	S49		M	slash between dots
+L05	18	S53		M	phi-like
+L05	19	S75		H	+
+L05	20	S37		H	delta
+L05	21	S70		H	V crossed
+L05	22	S23		H	A with dot
+L05	23	S88		H	double bar crossed
+L05	24	S76	S58	M	e-loop plus dotted y
+L05	25	S62		H	beta
+L05	26	S37		L	partial at crop join (s2/s3)
+L05	27	S62		H	beta
+L05	28	S69		H	oval with bar
+L05	29	S88	S24	M	crossed bars
+L05	30	S75		H	+
+L05	31	S88		H	double bar crossed
+L05	32	S49		M	slash between dots
+L05	33	S89		H	=
+L05	34	S75		H	+
+L05	35	S22	S70	L	ru-like wave
+L05	36	S93		H	w with S
+L05	37	S80		H	8 crossed
+L05	38	S77	S74	M	6 with tick
+L05	39	S42	S84	L	small x
+L05	40	S61		H	q
+L05	41	S47		M	epsilon with tail
+L05	42	S23		H	A with dot
+L05	43	S88		H	double bar crossed; line end

@@ -1,0 +1,37 @@
+passage	pos	context_before	context_after	candA	confA	candB	confB	noteA	noteB
+L01	2	S40	S65 S93 S84 ?	S77	M	S54	M	6/b with stroke at top	b with stroke over top
+L01	6	? S65 S93 S84	S84 S13 S23 S62	S77	M	S54	M	6/b with top stroke	b with tick above
+L01	21	S94 S93 S40 S69	S42 S80 S52 S97	S55	M	S75	L	large circle over long cross	plain +; large loop above may belong to line above
+L02	5	S87 S45 S94 S93	S69 S80 S49 S89	S62	L	S32	L	small loop with curl descending below line	loop with descending curl
+L02	7	S94 S93 ? S69	S49 S89 S93 ?	S65	M	S80	H	8 with dot above, bar from previous touches	8 crossed
+L02	11	S80 S49 S89 S93	S93 ? S35 ?	S84	M	S76	M	looped x2 shape	e-loop plus j/y tail
+L02	13	S89 S93 ? S93	S35 ? S56 S80	S74	M	S54	L	b/6 shape	plain b
+L02	15	? S93 ? S35	S56 S80 ? S17	S42	M	S16	M	triangle/X with tick	triangle
+L02	16	S93 ? S35 ?	S80 ? S17 ?	S56	H	S52	M	t3	3 with vertical stroke
+L02	18	S35 ? S56 S80	S17 ? S61 S52	S84	M	S76	M	looped x2 shape	e-loop plus dotted y
+L02	20	S56 S80 ? S17	S61 S52 S22 S75	S77	L	S74	L	b with dot below	b/delta with dot below
+L02	26	S52 S22 S75 S23	S70 S84 ? S93	S31	M	S87	L	looped l	rho-like loop
+L02	29	S23 ? S70 S84	S93 S40 S57 S60	S88	M	S24	M	double-barred slash with dot	crossed bar with dot
+L03	5	S97 S80 S84 S75	S80 S13 ? S45	S74	M	S54	M	tall 6 with top stroke	b with bar
+L03	8	S75 ? S80 S13	S45 ? S52 ?	S30	M	S49	M	slanted slash between dots	slash between dots
+L03	10	S80 S13 ? S45	S52 ? S65 S17	S77	M	S54	M	6/b with stroke over top	b with bar on top
+L03	12	? S45 ? S52	S65 S17 S84 S26	S88	M	S24	M	crossed double bar	crossed bar
+L03	18	S17 S84 S26 S93	S23 S62 S69 S75	S40	L	S32	L	g/xi-like loop descending	loop with descending curl
+L03	25	S69 S75 S73 S94	? S67 S80 S84	S24	M	S88	H	vertical crossed by two bars	double bar crossed
+L03	26	S75 S73 S94 S88	S67 S80 S84 S69	S30	M	S49	M	slash between dots	slash between dots
+L03	33	S84 S69 S70 S23	S62 ? S61 S80	S74	M	S77	M	6 with tick at top	6 with tick
+L03	35	S70 S23 ? S62	S61 S80 S16 S52	S65	L	S37	L	8 with flourish over top	8-like with flourish
+L03	38	S62 ? S61 S80	S52 S23 S89 S62	S42	L	S16	H	x over triangle base	triangle
+L04	3	S16 S45	S53 S93 ? S35	S56	H	S52	M	t3	3 with vertical stroke
+L04	6	S45 S56 S53 S93	S35 S84 S80 S26	S69	M	S60	M	theta crossed by long bar	oval crossed by double bar
+L04	15	S32 S45 S37 S80	S70 S66 S87 S93	S56	H	S52	M	t3	3 with vertical stroke
+L04	26	S23 S13 S93 S62	S23 S88 S45 S47	X_THETA2	M	S60	M	theta with two bars	oval crossed by double bar
+L04	38	S93 S75 S17 S84	? S88 ? S52	S65	M	S80	H	8 with dot	8 crossed
+L04	39	S75 S17 S84 S80	S88 ? S52 S74	S73	L	S49	M	slash with dots / lambda-like	slash between dots
+L04	41	S84 S80 ? S88	S52 S74 S75	S91	M	S76	M	t-y looped	e-loop plus dotted y
+L04	43	? S88 ? S52	S75	S74	H	S77	M	b with blob	6 with tick
+L05	11	S73 S26 S35 S37	S75 S76 S80 ?	X_THETA2	M	S69	H	oval crossed by two horizontal bars (end of s1)	oval with bar
+L05	15	S69 S75 S76 S80	S52 ? S53 S75	S74	M	S54	M	b/6 with blot above	b with blob top
+L05	17	S76 S80 ? S52	S53 S75 S37 S70	S30	M	S49	M	slash between two dots	slash between dots
+L05	31	S69 S88 S75 S88	S89 S75 S22 S93	S30	M	S49	M	slash between dots	slash between dots
+L05	38	S22 S93 S80 S77	S61 S47 S23 S88	S84	L	S42	L	small x-like loop	small x
