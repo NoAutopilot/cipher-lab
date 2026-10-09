@@ -1,0 +1,19 @@
+# MQS-GLYPH-MATCH secondary (descriptive, registered, no gate): leave-one-leaf-out per Birago atlas leaf, real labels, query = the leaf own stored atlas rows, vs the same 10 negatives; 9 Oct 2026
+held_out	n_signs	ir	rank_of_11	margin
+f117r	291	0.4948	10	-0.2807
+f139v	168	0.8571	1	+0.1130
+f144r	261	0.7586	1	+0.0609
+f152r	218	0.7844	3	-0.0196
+f162r	329	0.8298	2	-0.0111
+f168r	173	0.7341	1	+0.0144
+f168v	150	0.4800	9	-0.2595
+f174r	141	0.8014	2	-0.0002
+f174v	327	0.8654	1	+0.0623
+f175r	44	0.8864	1	+0.0538
+f175v	108	0.8611	1	+0.1509
+f178r	110	0.8636	1	+0.0525
+f178v	675	0.8622	1	+0.1413
+f179r	144	0.8472	1	+0.0705
+f184r	420	0.8667	1	+0.0306
+f184v	111	0.8739	1	+0.1436
+f185r	200	0.8250	1	+0.1134
