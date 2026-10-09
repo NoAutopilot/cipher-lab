@@ -1107,3 +1107,99 @@ googleapis.com 11 (all 429); library.oapen.org 1 + 3 browser (403/403/429); bril
 one retry.
 
 9 Oct 2026 (MANT-EYE, LANE FAMILY-A2d account 2): eye check on crops done (NOTES "MANT-EYE"). 0214: every token matches ciphertext.tsv (blind Sonnet pass + eye), 110.297 stays U. 0375 r3 token 3 read 51 (low; was 57): Eosand run 35.16.51.66.14.100, letter s C -> s|sa M, first-alternative string unchanged; --check exit 0; pooled gate rerun with the same seeds 7/1000 -> 5/1000, PASS unchanged; frame 0375 223 -> 219/1000. N-classes and depth above not re-assessed by this worker.
+
+## AUDIT (V-MANT0136)
+
+Verifier V-MANT0136 (account 2, LANE FAMILY-A2f), 9 Oct 2026, 05:17-05:4x UTC by `date -u`; a separate session from the solvers MANT-0136
+(identity look 01:08 and reading 04:17) and MANT-R07 (session_01E2qn7rVxaef1e54UV2oTGb) and from every earlier verifier. Brief:
+.claude/briefs/runs/2026-10-09-ytbiz-family-0409-jobs.md "### V-MANT0136". Claim under audit (NOTES "MANT-0136 (9 Oct 2026, 04:17...)"
+and "MANT-R07"): Loc. 694/09 file 0136 (p.102, P.S. in a clerk hand, "le chiffre que nous appellons celuy du procès"), 75 code tokens in
+11 runs read with Krauske's table; gates (a) and (b) PASS; grades C 21 S 33 M 20 U 1 (A1); reads "faire obtenir a 170 la Livonie", "le czar
+n'avoit plus la Po[r]te a craindr[e] ... [c]omme bien d'autr[es]". Nothing decoded here; key.tsv, ciphertexts and readings untouched.
+
+**1. Item.** SHStA Dresden 10026 Loc. 694/09, URL file 0136 (film 0137), Manteuffel to Flemming, Berlin; date not on the crops read --
+April 1713 by the neighbours (0135 a copy of a letter of 1 Apr 1713, 0137 Hamburg Apr 1713; I). Clear context carries most of the
+sense: "que 257 pourroit contribuer a faire obtenir a 170 [la Livonie] pour luy & pour ses descendens"; "avec 150 contre tous ceux qui
+pourroint vouloir faire les dictateurs dans le Nord". Cipher spans that read: r04 "la Livonie" (unglossed, S), r06 "n'avoit pl[us]"
+(unglossed, S) running into r07-r08 "la Po[r]te a craindr[e] [le c]omme bien d'autr[es]" (period interlinear gloss under it, C/M).
+Prior-work tool (`--step-type audit --fetch`): exit 4, the one LEAD being this audit's own claim (recorded CLEAR); 4-editions recorded
+KNOWN-PART (below); 3-solver aaymeloglu/unsolved-ciphers not cloned: UNCHECKED-NET.
+
+**2. Re-derivation (rule 7), every --check from the repository root:** `tools/decode_key.py .../f0136_09 --check` "tokens 75: C 56, M 18,
+U 1 / reading up to date" exit 0; `f0136_09/gloss_gate.py --gloss gloss_{A,B,A1A,A1B}.tsv --check` (run from f0136_09/, as the script
+expects) four times "up to date"; `judge_gate.py --check` "up to date"; `grade_0136.py --check` and `--a1 --check` "up to date". All exit 0.
+(gloss_gate.py resolves --gloss relative to f0136_09/; judge_gate.py and grade_0136.py must run from the root -- a usage note, not a defect.)
+
+**3. Design audit (rule 3).**
+- *PREREG order.* PREREG-MANT-0136-A1 is verifiable: 978bf33fc (05:01:52 UTC, PREREG-A1 + crops_a1 + prior-work rows, no gate output)
+  precedes bbbe276ca (05:04:43, passes, gate_A1A/B.out, grades_A1). **PREREG-MANT-0136 is NOT verifiable from git**: the commits the
+  solver names (d339fbe20 "before scoring", 6215d7a60 final) are not objects in origin/main; every f0136_09 file, PREREG, passes, gate
+  outputs and grades alike, first appears in c53d82cb9 (04:56:00, titled "ROOM: check-in ...", a `room.py --push` rebase fold). The
+  order rests on the solver's ROOM done line (04:35) and NOTES only -- CLAUDE.md rule 6's known flag (the fold erases per-commit order).
+  Not evidence of a breach; the gate (a)/(b) numbers re-derive exactly, and the A1 gate, whose order is provable, reproduces (a).
+- *Gate (a), known answer.* The gloss is a period decipherment of this leaf; key.tsv (Krauske 1893) was not edited from it, so agreement
+  is a real test of the table against an independent period reading. The control (key values permuted over codes) can differ on S.
+  PASS in all four blind passes (A 9/13, B 8/13 vs p99 4; A1A 22/32, A1B 21/32 vs p99 8). Sound. Known caveats carried: the DP shifts one
+  slot where a code has no gloss (r07 20/170); grade_0136.py grades every token in a span as glossed (r07 6 51 79 34 -> M, conservative).
+- *Gate (b), unglossed tokens.* The permuted-letter-value control changes the letters scored, so it CAN differ from the target (not a
+  coverage-type non-test). Power control 0085 r9+r10 at N=40 letters, below the target's 62: power shown at a smaller N than the target,
+  so adequate (rule 3 last paragraph). Real -1.401 vs p95 -1.759, 0/1000: PASS. The judge's own real_p05 (-1.028) is not met -- the gate is
+  the permuted control, as registered.
+- *Gate (b) after A1 (not re-run by MANT-R07; audit sensitivity, `f0136_09/vmant0136_sens.py` -> `vmant0136_sens.out`, same scorer, key,
+  seed 136, 1000 draws, not a registered gate):* unglossed set after the A1 spans, 41 letters: -1.416 vs p95 -1.696, 1/1000 -> PASS (holds).
+  Runs that read (r04, r06), 19 letters: non-test (< 20). **Runs that do not read (r01, r02, r09), 20 letters: -1.984 vs p95 -1.601,
+  441/1000 -> FAIL** -- indistinguishable from a permuted key.
+- *What the S grade means.* S is the PREREG's mechanical grade for every unglossed letter token once (a) and (b) pass; it is not a
+  per-token certification. Of the 33 S tokens under grades_A1.tsv, **16 (48%) sit in stretches that read** (r04 97-10 "la livonie", 8;
+  r06 21-44 "n'avoit pl", 8); **17 do not** (r01 6, r02 2, r09 8 -- the three runs whose own permuted control fails at 441/1000 -- and 170
+  in r04, whose value 'le' gives no sense where a person is wanted). Read the S count as "16 S supported, 17 S by aggregation only".
+
+**4. Novelty search log (rule 10; prior-work checks 3-5, G3).**
+- Own work: only MANT-0609Y, the identity look, MANT-0136 and MANT-R07 touch 0136. CLEAR.
+- Leaf: the r07-r08 run carries a **period interlinear decipherment** (both blind gloss passes in both jobs): the plaintext of those 33
+  tokens was written on the leaf in 1713. KNOWN (N0) for those spans.
+- **Acta Borussica, Behördenorganisation I** (1894, ed. Schmoller and Krauske; Google Books full view ESf8fHFG9ngC, search-inside JSON,
+  20 requests 2.5 s apart): positive control Manteuffel 20 hits (pp. 177-396, incl. reports of 26 Feb, 4 and 11 Mar 1713), Chiffre 4,
+  Nachschrift 4; target terms Livonie, Liefland, descendans, descendens, dictateurs, dictateur, Czaar, czar, Moscovie, Russie, Pologne,
+  gardes 0; craindre 1 (p. 320, another passage), Porte 5 (none the Ottoman Porte), procès 1 (p. 304, a lawsuit). 0136 is not printed
+  there: the volume quotes Manteuffel on court and administration, not on the North. (An earlier batch of the same queries returned 0 for
+  the control too -- a transient; the rerun with the control at both ends is the one logged.)
+- **Droysen, Geschichte der preußischen Politik IV.1** (IA djvu): ends with Friedrich I's death (Feb 1713); Manteuffel quoted to 19 Feb
+  1713 (Anm. 519-520). Not 0136.
+- **Droysen IV.2** (IA `droysen-geschichte-der-preussischen-politik-v-4-no-2`, djvu, 2 requests): quotes Manteuffel 9 Apr 1713 (p. 25 n. 2,
+  the departments), 18 Apr (p. 37 n. 1, Hanover and the troops), 16 and 20 May; none is 0136. **p. 43 and nn. 1-2 print the substance of
+  0136's r04-r07 context**: the czar in Berlin 8-12 March 1713 pressing Friedrich Wilhelm I into the northern alliance, a Russian project
+  answered by Dohna to Golovkin on 1 April 1713, the czar holding Livonia ("Er hatte Liefland inne") and not returning it to Poland, Charles
+  XII in conflict with the Porte, and Flemming to Manteuffel 10 March offering Prussia part of Pomerania. Two rare entities (czar,
+  Livonia) with Prussia and Poland within days of the letter: SUBSTANCE under check 5. Diff: Droysen does not print 0136's sentence
+  (Prussia helping the czar to Livonia "pour luy & pour ses descendens"; the czar "n'avoit plus la Porte a craindre"); the news context is
+  printed, the wording is not.
+- Press of the day (Mercure historique et politique, Europäische Fama, Apr 1713): **unchecked** -- IA advancedsearch found no 1713
+  Mercure item by title; Google Books API answered 429 twice (host stopped). IA full-text (be-api) phrase search: "dictateurs dans le
+  Nord" 0, "pour ses descendens" 0, "celuy du proces" 15 (all a 16th-century divorce suit, unrelated; serves as a control that the
+  endpoint answers).
+- Not searched: Saxon scholarship on the 1713 Prussian-Russian talks (Haake, NASG beyond VERIFY-MANT's grep), Sbornik RIO (Golovkin's
+  side), JSTOR (no row queued: below N3, nothing goes outward), aaymeloglu/unsolved-ciphers.
+
+**5. Classification.** Key: **published** (Dr. O. Krauske's 1893 manuscript table, Loc. 694/10, credited), corroborated on this leaf by
+the period gloss (period). Item (0136, its cipher spans): **N2**, with the glossed run r07-r08 **N0** (decipherment on the leaf, 1713).
+text: partly known (the glossed run). The unglossed fragments that read ("la Livonie", "n'avoit pl[us]") carry news printed in Droysen
+IV.2 p. 43; no prior mapping of this ciphertext located. Confidence medium (press of the day unchecked).
+**Depth (rule 4a, depth bar 2026-10-08):** cipher clause -- longest contiguous H/C/S stretch r04 (9 tokens, 11 letters) or r08 9-27 (8
+tokens) against AD ~127-138 letters (FAM-MANTV): fails. Code clause -- 257, 150, 177 occur once each here; 170 ('le') occurs twice and reads
+in neither context: fails. **D1** ("fragments read"). depth_pct 72.0 (C 21 + S 33 of 75 tokens; percentage keyed, not sense read --
+16 of the 33 S read in sense).
+Safe sentence: "Krauske's 1893 table applied to a P.S. of Manteuffel's (Loc. 694/09 file 0136, about April 1713) reads 'la Livonie' and
+'le czar n'avoit plus la Porte a craindre' in cipher; part of that run already carries a period interlinear decipherment, and the news
+(the czar holding Livonia, Russia courting Prussia in March-April 1713) is printed in Droysen IV.2 p. 43."
+Unsafe: "a previously unread passage on Prussian support for the czar's claim to Livonia"; "51 tokens deciphered (S)"; any wording that
+the cipher named "celuy du procès" was identified by us as a separate system.
+No SECOND-OPINIONS-QUEUE row and no AUD2 WORK-QUEUE row: N2 / D1 is below the brief's N3+ and D2+ trigger.
+
+**6. Postmortem and corrections.** (a) MANT-0136's check 4 left Acta Borussica BO I and Droysen IV.2 unsearched (Google Books 429; IV.1 ends
+before April 1713) although V-MANTR8's lesson names BO I as the first search for this pool; done here. (b) The S count 51 (MANT-0136) / 33
+(A1) overstates what reads: 17 of the 33 are carried by the aggregate gate only, and their own runs fail the same control. (c) The
+PREREG-MANT-0136 order cannot be shown from git; the A1 order can. (d) MANT-0136's "the gloss reads 'comme bien d'autres'" -- the blind
+gloss letters are 'o n m e h i e n d a u t r e s' (A1A/A1B); 'comme bien' is the solver's sense, 31=n and 55=h are rule-4 slots (MANT-R07).
+Requests this audit: books.google.com 39 (search-inside, 2-2.5 s apart; no error), www.googleapis.com 2 (429, stopped), archive.org 7
+(advancedsearch 3, metadata 2, djvu 2), be-api.us.archive.org 3. No 403 or challenge.

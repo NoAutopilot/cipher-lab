@@ -485,6 +485,13 @@ Vision: 1 Sonnet call plus this worker's own looks; host requests: www.archiv.sa
 Next (suggestion only): a y-glyph census across the committed 694/08-09 transcriptions, testing 4 vs 9 at y-glyph slots on leaves whose gloss
 is NOT the scoring target (e.g. 0008/0056), pre-registered, with neutral-named crops and two blind reads (~$2).
 
+## V-MANT0136 (verifier, 9 Oct 2026, account 2, LANE FAMILY-A2f) -- see AUDIT.md "AUDIT (V-MANT0136)"
+694/09 0136: N2 (glossed run r07-r08 N0, period interlinear decipherment), D1, key published (Krauske 1893). Corrections: 17 of the 33 S
+tokens (r01, r02, r09, 170) are carried by the aggregate gate only -- their runs alone fail the permuted control 441/1000
+(f0136_09/vmant0136_sens.out); PREREG-MANT-0136's commit order is not provable in git (folded into c53d82cb9), A1's is. Acta Borussica BO I
+has none of 0136's terms; Droysen IV.2 p.43 prints the news (czar holds Livonia; Russian alliance project 1 Apr 1713), not the sentence.
+Next (suggestion): press of the day (Mercure historique et politique, Europäische Fama, Apr 1713) unchecked -- Google Books 429.
+
 ## Remaining gaps"/"## Escalation"; it did not (status `blocked`,
 which gaps_check skips). The sections are written below for the first time, from this step.
 

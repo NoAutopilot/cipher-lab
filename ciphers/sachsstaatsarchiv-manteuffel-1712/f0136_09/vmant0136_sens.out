@@ -1,0 +1,3 @@
+unglossed_after_A1	letters 41	real -1.416	permuted mean -2.016 p95 -1.696 p99 -1.592 max -1.407	permuted>=real 1/1000	PASS (real > p95)	real_p05 -1.063 null_p99 -1.414	lolhovelilglelalivonienavoitplacepusnceli
+reading_runs_r04_r06	letters 19	NON-TEST (under 20 letters)	lelalivonienavoitpl
+nonreading_runs_r01_r02_r09	letters 20	real -1.984	permuted mean -2.015 p95 -1.601 p99 -1.451 max -1.318	permuted>=real 441/1000	FAIL (real > p95)	real_p05 -1.114 null_p99 -1.145	lolhovelilgacepusnce

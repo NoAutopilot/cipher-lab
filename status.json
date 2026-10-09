@@ -9673,6 +9673,38 @@
       "depth_sentence": "Foster sent the 104th Pennsylvania, 900 men, north on the Fulton with orders to march from Alexandria to Washington.",
       "depth_check": "code clause: Banjo = Alexandria, Spit = Men, Lester = Foster; external, non-statistical: OR I/35 pt 2 pp.258-259 (Foster to Halleck, 26 Aug 1864: the 104th Pa., 900 men, sent on the Fulton); image read by FV-FM7a",
       "depth_note": "33 H of 33 code-word groups ('Fulton', 'Hilton Head' plain; Lester = Foster H)"
+    },
+    {
+      "date": "9 Oct 2026",
+      "kind": "recovery",
+      "key": "published",
+      "claim_scope": "recovered-passages",
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sachsstaatsarchiv-manteuffel-1712",
+      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, \"AUDIT (V-MANT0136)\" (first audit, 9 Oct 2026)",
+      "audit_refs": [
+        "AUDIT.md \"AUDIT (V-MANT0136)\""
+      ],
+      "completeness": "cipher spans of one frame",
+      "novelty": "N2",
+      "plaintext_novelty": "N2",
+      "mapping_novelty": "N2",
+      "text": "partly known",
+      "document_id": "SHStA Dresden, 10026 Geheimes Kabinett, Loc. 694/09 (URL file 0136, p.102 P.S.), Manteuffel to Flemming, about April 1713",
+      "title": "SHStA Dresden Loc. 694/09 frame 0136 (about Apr 1713, 'celuy du procès' P.S.): cipher spans read with Dr. Krauske's 1893 manuscript key table",
+      "grade": "N2 (V-MANT0136), glossed run r07-r08 N0 (period interlinear decipherment on the leaf); key published (Krauske 1893 manuscript table, credited), corroborated by the period gloss. 75 tokens C 21 S 33 M 20 U 1 (MANT-R07 grades_A1); gate (a) PASS in 4 blind gloss passes, gate (b) PASS (post-A1 sensitivity 1/1000); 16 of 33 S tokens read in sense, the other 17 sit in runs whose own permuted control fails (441/1000).",
+      "line": "Fragments read (D1, V-MANT0136 9 Oct 2026). Krauske's 1893 table applied to a P.S. of Manteuffel's (Loc. 694/09 file 0136, about April 1713) reads 'la Livonie' and 'le czar n'avoit plus la Porte a craindre' in cipher; part of that run already carries a period interlinear decipherment, and the news (the czar holding Livonia, Russia courting Prussia in March-April 1713) is printed in Droysen IV.2 p. 43.",
+      "unresolved_spans": "r01 (44 16 12 8 33 5 35 42), r02 (39 12 7), r09 (50 15 10 17 6 29 14 30 35), 170 x2, 229",
+      "depth": "D1",
+      "depth_pct": 72.0,
+      "depth_unread": {
+        "names_codes": "257 150 177 170 229",
+        "other": "r01 r02 r09 do not read"
+      },
+      "depth_sentence": "",
+      "depth_check": "V-MANT0136: cipher clause fails (longest H/C/S stretch 9 tokens / 11 letters vs AD ~127-138); code clause fails (170 reads in neither of 2 contexts; 257/150/177 once each)",
+      "decode_status": "Non-decrypted"
     }
   ],
   "lanes": [
