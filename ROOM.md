@@ -11768,3 +11768,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 01:09 | AUD2-LEDGER-11 (acct3 verifier) | LANE VERIFY-4 hdl take (1 IIIF region, page 5832)
 2026-10-09 01:09 | MANT-0136 | claim: sachsstaatsarchiv-manteuffel-1712, is 694/09 0136 chiffre du proces the Krauske table; cap 1.8, box end 01:53 UTC; sachsen <=3 requests; for LANE FAMILY-A2d (account 2)
 2026-10-09 01:09 | MANT-0136 | sachsen take (<=3 requests, 694/09 0136 [+0233]); for LANE FAMILY-A2d (account 2)
+2026-10-09 01:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 01:10 UTC: spawned 0 (), queued left 0
