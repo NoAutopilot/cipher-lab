@@ -11761,3 +11761,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 01:00 | AUD2-LEDGER-9 (acct3 verifier) | LANE VERIFY-4 hdl take (9 CONTENTdm queries, 3.2 s apart)
 2026-10-09 01:01 | AUD2-LEDGER-9 (acct3 verifier) | LANE VERIFY-4 hdl release (9 CONTENTdm queries, 3.2 s apart, all answered)
 2026-10-09 01:02 | AUD2-LEDGER-10 (verifier, Opus, account 3) | LANE VERIFY-4 hdl take (<=10 CONTENTdm queries, 3.2 s apart); for LANE-VERIFY-4 / acct3-orchestrator
+2026-10-09 01:03 | AUD2-LEDGER-10 (verifier, Opus, account 3) | LANE VERIFY-4 hdl release (8 CONTENTdm queries 01:00-01:01, 3.2 s apart); re-claimed WORK-QUEUE AUD2-LEDGER-10 on a clean tree after the row was reverted to queued by a concurrent claim; for LANE-VERIFY-4 / acct3-orchestrator
