@@ -1,0 +1,464 @@
+{
+ "source": "H-1649 Image 1206 (B.148 p.124) full/max, columns cut by cut_2380_p121_122.py (box 1206)",
+ "key": "title1778_reading.txt variant (b)",
+ "cells_letter_and_word": 170,
+ "cell_grades": {
+  "H": 163,
+  "M": 7
+ },
+ "B2_R0_GATED": {
+  "runs_ge3": 14,
+  "hits": 9,
+  "share": 0.643,
+  "can_differ": 1.0,
+  "control_page_permuted": {
+   "seeds": 1000,
+   "seed": 123,
+   "mean": 0.17,
+   "p95": 1,
+   "max": 2
+  },
+  "gate": "PASS",
+  "decoded_runs": [
+   {
+    "start": "1:10",
+    "cells": "26-10 26-9 26-20 26-8 26-12 26-15 26-10 26-12 26-28 26-15",
+    "decoded": "incuosions",
+    "hit": false,
+    "at_letter": null
+   },
+   {
+    "start": "2:27",
+    "cells": "21-4 21-9 21-10 21-13 21-5",
+    "decoded": "pines",
+    "hit": false,
+    "at_letter": null
+   },
+   {
+    "start": "3:9",
+    "cells": "24-6 24-13 24-10 24-6",
+    "decoded": "erie",
+    "hit": true,
+    "at_letter": 474
+   },
+   {
+    "start": "3:15",
+    "cells": "24-2 24-3 24-4 24-42 24-41 24-1 24-16 24-15",
+    "decoded": "llt??ano",
+    "hit": false,
+    "at_letter": null
+   },
+   {
+    "start": "3:23",
+    "cells": "23-22 23-20 23-5 23-15 23-41 23-29",
+    "decoded": "obiect",
+    "hit": false,
+    "at_letter": null
+   },
+   {
+    "start": "3:30",
+    "cells": "18-13 18-17 18-27 18-27 18-14",
+    "decoded": "suppo",
+    "hit": true,
+    "at_letter": 498
+   },
+   {
+    "start": "4:2",
+    "cells": "15-18 15-19 15-5 15-9 15-17 15-15 15-10 15-11",
+    "decoded": "expediti",
+    "hit": true,
+    "at_letter": 635
+   },
+   {
+    "start": "4:16",
+    "cells": "9-2 9-1 9-7 9-5 9-6",
+    "decoded": "force",
+    "hit": true,
+    "at_letter": 660
+   },
+   {
+    "start": "4:21",
+    "cells": "9-10 9-1 9-16 9-19",
+    "decoded": "nova",
+    "hit": true,
+    "at_letter": 667
+   },
+   {
+    "start": "4:25",
+    "cells": "9-8 9-5 9-1 9-11",
+    "decoded": "scot",
+    "hit": true,
+    "at_letter": 671
+   },
+   {
+    "start": "5:7",
+    "cells": "23-9 23-15 23-14 23-20 23-35 23-15 23-24",
+    "decoded": "sembled",
+    "hit": true,
+    "at_letter": 821
+   },
+   {
+    "start": "5:15",
+    "cells": "22-6 22-7 22-8",
+    "decoded": "ver",
+    "hit": true,
+    "at_letter": 393
+   },
+   {
+    "start": "5:25",
+    "cells": "22-2 22-9 22-10 22-11",
+    "decoded": "hnor",
+    "hit": false,
+    "at_letter": null
+   },
+   {
+    "start": "5:30",
+    "cells": "18-16 18-18 18-6 18-6 18-4",
+    "decoded": "fleet",
+    "hit": true,
+    "at_letter": 847
+   }
+  ]
+ },
+ "B2_R1_reported_not_gated": {
+  "runs_ge3": 12,
+  "hits": 6,
+  "share": 0.5,
+  "can_differ": 1.0,
+  "control_page_permuted": {
+   "seeds": 1000,
+   "seed": 123,
+   "mean": 0.04,
+   "p95": 0,
+   "max": 2
+  },
+  "gate": "FAIL"
+ },
+ "word_codes": [
+  {
+   "at": "1:7",
+   "code": "4-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "1:8",
+   "code": "29-12",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "1:9",
+   "code": "41-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "1:20",
+   "code": "29-9",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "1:21",
+   "code": "5-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "1:22",
+   "code": "41-9",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "1:23",
+   "code": "11-3",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "1:24",
+   "code": "5-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "1:34",
+   "code": "4-14",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "2:1",
+   "code": "3-14",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "2:14",
+   "code": "5-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "2:15",
+   "code": "57-5",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "2:16",
+   "code": "3-14",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "2:17",
+   "code": "1-14",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "2:18",
+   "code": "10-1",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "2:19",
+   "code": "4-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "2:20",
+   "code": "2-12",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "2:21",
+   "code": "5-6",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "2:22",
+   "code": "22-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "2:23",
+   "code": "4-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "2:24",
+   "code": "5-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "2:25",
+   "code": "29-14",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "2:26",
+   "code": "3-14",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "2:32",
+   "code": "48-3",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "2:33",
+   "code": "4-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "3:1",
+   "code": "6-6",
+   "gloss": "t",
+   "grade": "H"
+  },
+  {
+   "at": "3:2",
+   "code": "16-15",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "3:3",
+   "code": "20-5",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "3:4",
+   "code": "1-14",
+   "gloss": "in",
+   "grade": "H"
+  },
+  {
+   "at": "3:5",
+   "code": "10-1",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "3:6",
+   "code": "2-12",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "3:7",
+   "code": "27-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "3:8",
+   "code": "16-11",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "3:13",
+   "code": "5-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "3:14",
+   "code": "x29-1",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "3:29",
+   "code": "33-9",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "4:1",
+   "code": "1-15",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "4:10",
+   "code": "14-11",
+   "gloss": "",
+   "grade": "M"
+  },
+  {
+   "at": "4:12",
+   "code": "15-1",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "4:13",
+   "code": "33-9",
+   "gloss": "there",
+   "grade": "H"
+  },
+  {
+   "at": "4:14",
+   "code": "9-1",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "4:15",
+   "code": "19-11",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "4:29",
+   "code": "1-24",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "4:31",
+   "code": "30-9",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "4:32",
+   "code": "22-4",
+   "gloss": "have",
+   "grade": "M"
+  },
+  {
+   "at": "5:1",
+   "code": "4-35",
+   "gloss": "",
+   "grade": "M"
+  },
+  {
+   "at": "5:2",
+   "code": "2-7",
+   "gloss": "under",
+   "grade": "H"
+  },
+  {
+   "at": "5:3",
+   "code": "21-22",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "5:4",
+   "code": "18-1",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "5:14",
+   "code": "17-1",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "5:18",
+   "code": "29-1",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "5:22",
+   "code": "20-36",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "5:24",
+   "code": "21-4",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "5:29",
+   "code": "34-14",
+   "gloss": "",
+   "grade": "H"
+  }
+ ],
+ "p102_letters": 1004
+}

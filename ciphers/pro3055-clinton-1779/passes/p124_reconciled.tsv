@@ -1,0 +1,176 @@
+# UNA-CLIN (9 Oct 2026): B.148 p.124 (H-1649 Image 1206) cipher cells, columns 1-5 (column 6 holds only the clear words
+# "the / Delaware / Guy Carleton" at its head, read by both passes, not cells). passA/passB = two blind Sonnet passes on
+# images/h1649/p124_cols (pass B labelled c2-c5 top/bot swapped; normalised); top/bottom overlap rows removed (1-2 per column,
+# identical in both passes). entry = after the worker settled every A/B split and every low-confidence cell on the full frame.
+# kind from the page only (PREREG-UNA-CLIN.md, rule R0): x/+ L-P or -P = letter; full pair without x/+ = word. M = not settled.
+col	idx	kind	entry	underline	gloss	grade	passA	passB	note
+1	1	letter	-15	n		H	-15	-15	
+1	2	letter	-18	n		H	-18	-18	
+1	3	letter	-20	n		H	-20	-20	
+1	4	letter	-25	n		H	-25	-25	
+1	5	letter	-31	n		M	-31	-31	31 or 81 (first figure)
+1	6	letter	-4	y		H	-4_	-4_	
+1	7	word	4-19	n		H	4-19	4-19	
+1	8	word	29-12	n		H	29-12	29-12	
+1	9	word	41-19	n		H	41-19	41-19	
+1	10	letter	x26-10	n		H	x26-1	x26-1	both passes x26-1 (the 0 sits at the crop edge); worker on the full frame: x26-10, final 0 clear
+1	11	letter	-9	n		H	-9	-9	
+1	12	letter	-20	n		H	-20	-20	
+1	13	letter	-8	n		H	-8	-8	
+1	14	letter	-12	n		H	-12	-12	
+1	15	letter	-15	n		H	-15	-15	
+1	16	letter	-10	n		H	-10	-10	
+1	17	letter	-12	n		H	-12	-12	
+1	18	letter	-28	n		H	-28	-28	
+1	19	letter	-15	y		H	-15_	-15_	
+1	20	word	29-9	n		H	29-9	29-9	
+1	21	word	5-19	n		H	5-19	5-19	
+1	22	word	41-9	n		H	41-9	41-9	
+1	23	word	11-3	n		H	11-3	11-3	
+1	24	word	5-19	n		H	5-19	5-19	
+1	25	letter	x29-1	n		H	x29-1	x29-1	
+1	26	letter	-2	n		H	-2	-2	
+1	27	letter	-3	n		H	-3	-3	
+1	28	letter	-4	n		H	-4	-4	
+1	29	letter	-42	n		H	-42	-42	
+1	30	letter	-41	n		M	-41	-41	41 or 44: second figure has the open 4 shape of this hand, a tick after it
+1	31	letter	-1	n		H	-1	-1	
+1	32	letter	-16	n		H	-16	-16	
+1	33	letter	-15	y		H	-15_	-15_	
+1	34	word	4-14	n		H	4-14	4-14	
+2	1	word	3-14	n		H	3-14	3-14	
+2	2	letter	x26-15	n		H	26-15	-15	A 26-15 (l), B -15; worker: x26-15, the x sits left of 26 (in the c1 crop edge), 26 clear
+2	3	letter	-8	n		H	-8	-8	
+2	4	letter	-15	n		H	-15	-15	
+2	5	letter	-9	n		M	-9	-9	8 or 9: a looped S-like figure; both passes -9 (l)
+2	6	letter	-8	n		H	-8	-8	
+2	7	letter	-7	n		H	-7	-7	
+2	8	letter	-4	n		H	-4	-4	
+2	9	letter	-19	n		H	-19	-19	
+2	10	letter	-28	n		H	-28	-28	
+2	11	letter	-28	n		H	-28	-2?	B -2? (l); worker: -28, clear on the frame
+2	12	letter	-19	n		H	-19	-19	
+2	13	letter	-4	y		H	-4_	-4_	
+2	14	word	5-19	n		H	5-19	5-19	
+2	15	word	57-5	n		H	57-5	57-5	
+2	16	word	3-14	n		H	3-14	3-14	
+2	17	word	1-14	n		H	1-14	1-14	
+2	18	word	10-1	n		H	10-1	10-1	
+2	19	word	4-19	n		H	4-19	4-19	
+2	20	word	2-12	n		H	2-12	2-12	
+2	21	word	5-6	n		H	5-6	5-6	
+2	22	word	22-19	n		H	22-19	22-19	
+2	23	word	4-19	n		H	4-19	4-19	
+2	24	word	5-19	n		H	5-19	5-19	
+2	25	word	29-14	n		H	29-14	29-14	
+2	26	word	3-14	n		H	3-14	3-14	
+2	27	letter	x21-4	n		H	x21-4	x21-4	
+2	28	letter	-9	n		H	-9	-9	
+2	29	letter	-10	n		H	-10	-10	
+2	30	letter	-13	n		H	-13	-13	
+2	31	letter	-5	y		H	-5_	-5_	
+2	32	word	48-3	n		H	48-3	48-3	
+2	33	word	4-19	n		H	4-19	4-19	
+2	34	letter	x21-4	n		H	x21-4	x21-4	
+3	1	word	6-6	n	t	H	6-6	6-6	raised t after the pair (gloss)
+3	2	word	16-15	n		H	16-15	16-15	
+3	3	word	20-5	n		H	20-5	20-5	
+3	4	word	1-14	n	in	H	1-14	1-14	
+3	5	word	10-1	n		H	10-1	10-1	
+3	6	word	2-12	n		H	2-12	2-12	
+3	7	word	27-19	n		H	27-19	27-19	
+3	8	word	16-11	n		H	16-11	16-11	
+3	9	letter	+24-6	n		H	+24-6	+24-6	
+3	10	letter	-13	n		H	-13	-13	bare figure, no dash visible on the frame; both passes read -P; classed letter on the current line
+3	11	letter	-10	n		H	-10	-10	bare figure, no dash visible on the frame; both passes read -P; classed letter on the current line
+3	12	letter	-6	y		H	-6_	-6_	bare figure, no dash visible on the frame; both passes read -P; classed letter on the current line
+3	13	word	5-19	n		H	5-19	5-19	
+3	14	word	x29-1	n		H	29-1	x29-1	A 29-1 (l), B x29-1; worker: x visible left of 29
+3	15	letter	-2	n		H	-2	-2	
+3	16	letter	-3	n		H	-3	-3	
+3	17	letter	-4	n		H	-4	-4	
+3	18	letter	-42	n		H	-42	-42	
+3	19	letter	-41	n		H	-41	-41	
+3	20	letter	-1	n		H	-1	-1	
+3	21	letter	-16	n		H	-16	-16	
+3	22	letter	-15	y		H	-15_	-15_	
+3	23	letter	x23-22	n		H	x23-22	x23-22	
+3	24	letter	-20	n		H	-20	-20	
+3	25	letter	-5	n		H	-5	-5	
+3	26	letter	-15	n		H	-15	-15	
+3	27	letter	-41	n		H	-41	-41	
+3	28	letter	-29	y		H	-29_	-29_	
+3	29	word	33-9	n		H	33-9	33-9	
+3	30	letter	x18-13	n		H	x18-13	x18-13	
+3	31	letter	-17	n		H	-17	-17	
+3	32	letter	-27	n		H	-27	-27	
+3	33	letter	-27	n		H	-27	-27	
+3	34	letter	-14	n		H	-14	-14	
+4	1	word	1-15	n		H	1-15	1-15	
+4	2	letter	x15-18	n		H	x15-18	x15-18	
+4	3	letter	-19	n		H	-19	-19	
+4	4	letter	-5	n		H	-5	-5	
+4	5	letter	-9	n		H	-9	-9	
+4	6	letter	-17	n		H	-17	-17	
+4	7	letter	-15	n		H	-15	-15	
+4	8	letter	-10	n		H	-10	-10	
+4	9	letter	-11	n		H	-11	-11	
+4	10	word	14-11	n		M	14-11	14-11	the 14 is small and raised (a correction or a gloss over the c3 13?); pair or -11 not settled
+4	11	letter	-10	y		H	-10_	-10_	
+4	12	word	15-1	n		H	15-1	15-1	
+4	13	word	33-9	n	there	H	33-9	33-9	
+4	14	word	9-1	n		H	9-1	9-1	
+4	15	word	19-11	n		H	19-11	19-11	
+4	16	letter	x9-2	n		H	x9-2	x9-2	
+4	17	letter	-1	n		H	-1	-1	
+4	18	letter	-7	n		H	-7	-7	
+4	19	letter	-5	n		H	-5	-5	
+4	20	letter	-6	y		H	-6_	-6_	
+4	21	letter	x9-10	n	in	H	x9-10	x9-10	
+4	22	letter	-1	n		H	-1	-1	
+4	23	letter	-16	n		H	-16	-16	
+4	24	letter	-19	y		H	-19_	-19_	
+4	25	letter	x9-8	n		H	x9-8	x9-8	
+4	26	letter	-5	n		H	-5	-5	
+4	27	letter	-1	n		H	-1	-1	
+4	28	letter	-11	n		H	-11	-11	
+4	29	word	1-24	n		H	1-24	-24	A 1-24 (l), B -24 (l); worker: a dot before the dash, not a 1
+4	30	letter	-19	y		H	-19_	-19_	
+4	31	word	30-9	n		H	30-9	30-9	
+4	32	word	22-4	n	have	M	22-4	22-4	a tick before 22 (x or not) under the gloss "have"; class not settled
+4	33	letter	-14	n		H	-14	-14	
+4	34	letter	-6	n		H	-6	-6	
+5	1	word	4-35	n		M	4-35	4-35	4-35 or 4-38: last figure a small s-like stroke
+5	2	word	2-7	n	under	H	2-7	2-7	
+5	3	word	21-22	n		H	21-22	21-22	
+5	4	word	18-1	n		H	18-1	18-1	
+5	5	letter	x23-2	n		H	x23-2	x23-2	
+5	6	letter	-9	y		H	-9_	-9_	
+5	7	letter	-9	n		H	-9	-9	
+5	8	letter	-15	n		H	-15	-15	
+5	9	letter	-14	n		H	-14	-14	
+5	10	letter	-20	n		H	-20	-20	
+5	11	letter	-35	n		H	-35	-35	
+5	12	letter	-15	n		H	-15	-15	
+5	13	letter	-24	y		H	-24_	-24_	
+5	14	word	17-1	n		H	17-1	17-1	
+5	15	letter	x22-6	n		H	x22-6	x22-6	
+5	16	letter	-7	n		H	-7	-7	
+5	17	letter	-8	n		H	-8	-8	
+5	18	word	29-1	n		H	29-1	29-1	
+5	19	letter	-15	n		H	-15	-15	
+5	20	letter	-16	n		H	-16	-16	
+5	21	letter	-17	n		M	-17	-17	-17 or -7: the 1 merges with the dash
+5	22	word	20-36	n		H	20-36	20-36	
+5	23	letter	-26	y		H	-26_	-26_	
+5	24	word	21-4	n		H	21-4	21-4	
+5	25	letter	-2	n		H	-2	-2	
+5	26	letter	-9	n		H	-9	-9	
+5	27	letter	-10	n		H	-10	-10	
+5	28	letter	-11	y		H	-11_	-11_	
+5	29	word	34-14	n		H	34-14	34-14	
+5	30	letter	x18-16	n		H	x18-16	x18-16	
+5	31	letter	-18	n		H	-18	-18	
+5	32	letter	-6	n		H	-6	-6	
+5	33	letter	-6	n		H	-6	-6	
+5	34	letter	-4	y		H	-4_	-4_	

@@ -110,6 +110,12 @@ if want('h1649'):
     subprocess.run(['python3', os.path.join(HERE, 'passes', 'cut_2380_crops.py')], check=True,
                    env=dict(os.environ, CLINTON_H1649_DIR=d, OUT_DIR=d))
 
+    # B.148 p.124 (UNA-CLIN, 9 Oct 2026): Image 1206 full/max, columns cut by passes/cut_2380_p121_122.py (box 1206, own shear 0)
+    fetch('https://image-uab.canadiana.ca/iiif/2/69429%2Fc0b27pp7jj22/full/max/0/default.jpg', os.path.join(d, 'img1206.jpg'),
+          viewer.format(1206))
+    subprocess.run(['python3', os.path.join(HERE, 'passes', 'cut_2380_p121_122.py'), d, os.path.join(d, 'p124_cols'), '1206'],
+                   check=True, env=dict(os.environ, SHEAR='0.012', PAD='0'))
+
     # items 3050/3077 (GAPS12, 2 Oct 2026): Images 886, 889, 890, 891 at 1600 px; crops cut by tools/iiif_lines.py --image,
     # re-cut here from the manifest boxes (greyscale frame, RGB crop, q85: the tool's own save), byte-identical (tested)
     for sub in ('p242_cols', 'p245_lines', 'p246_lines', 'p247_cols'):
