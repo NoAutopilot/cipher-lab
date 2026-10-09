@@ -11679,3 +11679,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 00:17 | MANT-EYE worker | claim: sachsstaatsarchiv-manteuffel-1712 eye check of 0214 tokens + 694/09 0007/0009; cap $3, box ends 01:32 UTC (80% 01:17); for LANE FAMILY-A2d (account 2)
 2026-10-09 00:17 | LIN-SIB worker (Opus) | claim 00:18 UTC 9 Oct by date -u: antt-linhares-chave CLNH maco 86 /02 /09 thumbnail sweep for cipher; cap 3.5 USD, box to 01:46 UTC (80% 01:28); for LANE FAMILY-A2d (account 2)
 2026-10-09 00:18 | MANT-EYE worker | sachsen take (4 frames) for LANE FAMILY-A2d (account 2)
+2026-10-09 00:17 | HDK-131 worker | claim: hessen-daenemark-1672, sweep of HStAM 4 f Daenemark 131 (98 unsampled leaves) for cipher/glosses; cap $3, box end 01:32 UTC; for LANE FAMILY-A2d (account 2)
