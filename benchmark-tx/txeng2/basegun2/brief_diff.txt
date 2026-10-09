@@ -1,7 +1,16 @@
+# brief diff: blind_pass_brief_p2.md (TX-POOL-LEAF) -> blind_pass_brief_p2_gv2.md (TXE2-BASE-GUN2)
+# change 1: label p added (the sheet's new label at p1cal_L09.14); change 2: 'do not resize' per PREREG-txeng2-11 B3b (TX-RED F14), replacing the original 'enlarge 2-3x'
+16,17c16,17
+< The crops are about 1050 px wide with signs about 25-40 px tall: enlarge them (e.g. 2-3x with PIL into your own scratch
+< directory, never into the repository) and read in short stretches, left to right. Signs are separated by spaces; a label can
+---
+> The crops are about 1050 px wide with signs about 25-40 px tall: do not resize them (no enlarging, no re-cutting,
+> no image processing): view each crop as it is, and read in short stretches, left to right. Signs are separated by spaces; a label can
 36c36
 <   `ps` (a long descending p joined to s), `hs` (h joined to s), `xr` (x joined to r; may look like "xv"), `rf` (a small t or r
 ---
 >   `p` (a long descending looped p alone, no s joined), `ps` (a long descending p joined to s), `hs` (h joined to s), `xr` (x joined to r; may look like "xv"), `rf` (a small t or r
+# sheet diff (commit 00577705c)
 diff --git a/benchmark-tx/txpool/gunther8246-p2/sheet/calibration.tsv b/benchmark-tx/txpool/gunther8246-p2/sheet/calibration.tsv
 index 6cf610f67..95403f993 100644
 --- a/benchmark-tx/txpool/gunther8246-p2/sheet/calibration.tsv

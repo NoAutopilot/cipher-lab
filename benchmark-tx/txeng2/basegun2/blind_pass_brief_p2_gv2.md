@@ -13,8 +13,8 @@ other image of this letter, no build script); the pass is void if you do.
 
 25 crops, one per cipher line, top to bottom of the page (L01 = top line). Each crop is the whole line. Pieces of the line
 above or below may show at the crop's edge (a descender, an ascender); they belong to the neighbouring line: ignore them.
-The crops are about 1050 px wide with signs about 25-40 px tall: enlarge them (e.g. 2-3x with PIL into your own scratch
-directory, never into the repository) and read in short stretches, left to right. Signs are separated by spaces; a label can
+The crops are about 1050 px wide with signs about 25-40 px tall: do not resize them (no enlarging, no re-cutting,
+no image processing): view each crop as it is, and read in short stretches, left to right. Signs are separated by spaces; a label can
 cover several letter-like strokes written together (cc, ps, aaa, 88): one label = one space-separated sign group.
 
 Crop note (written by tools/iiif_lines.py --overlap-note):
