@@ -138,3 +138,17 @@ found; do not classify novelty.
 
 Sessions wave 3 (18:57 UTC): FIX-YEYE session_01AWL8VfLbJrUDE8CU3Erybd (Opus); MANT-0503 session_01J3MN194KgtMmcuKtNWCFwt (Opus). MANT-YCEN,
 V-MANT16S, MANT-0490L archived. Still running from wave 2: V-MANT0490, MANT-0317, MANT-0310.
+
+Wave 2-3 results (18:57-19:13): V-MANT0490 right page N0 D1, key period; MANT-0317 separate 17 Sept dispatch, gate PASS 28/31, C28 M9; MANT-0310 0310
+heavy glossed (continues 0309), 0311 clear; FIX-YEYE fixes applied, gates still PASS; MANT-0503 = 0502 (already read). 14.78 by get_session.
+
+## Wave 4 (19:1x UTC 9 Oct)
+
+### V-MANT0490L (Opus first verifier, cap 3.5, box 80 min; a session that did not solve the leaf): 694/08 0490 left page + gutter run
+CLAUDE.md "Verifier brief (template)" on the 0490 left page (52 tokens, gloss gate) and the UNGLOSSED gutter run (38 letters, fr18 judge gate (b),
+after FIX-YEYE's r1.7 fix at d2356c289), MANT-0490L's NOTES section and PREREG-MANT0490L. Rule-7 re-derivation (--check); score the shuffled-target
+decode through the same judge (rule 3: a PASS on the shuffle voids the judge for this family at N=38); independent search families (a)-(g) with
+phrase searches on the gutter decode ("satisfaction des deux partis belligerents" etc.) in BO I/II, Droysen IV.1, Bonnesen 1918, IA, Google Books
+(country=US + key), HathiTrust EF; JSTOR-QUEUE rows in families (i) and (ii). N-class and depth per item (glossed left page vs unglossed gutter run
+separately) in AUDIT.md "## AUDIT (V-MANT0490L)", key source recorded; corrections to over-claims. If N3+ D2+ on any item, append the
+SECOND-OPINIONS-QUEUE.tsv row and say so in the done line. Do not decode new material.
