@@ -1802,3 +1802,69 @@ Read so far: 0 of 229 base-code / 239 marks-kept tokens graded H/C/S (no reading
 - [x] image-check: WC-LAGARDE settled 9 cells; LAG-MARKS settled 41 of the 57 split cells from the 150 dpi renders, 16 left doubt (resolution-limited)
 - [ ] retry: syllabary at err 0.13; wordcode never run at the measured error
 Verdict: keep going: 3 internal gaps; cheapest next: v2 marks revision then the syllabary control at err 0.13, ~$1
+
+## LAG-SYL13: `syllabary` control and score-gap gate at err 0.13 (9 Oct 2026, account 2, LANE FAMILY-A2e, Opus, CPU only)
+
+**Job:** LAG-MARKS' named next step (one-reader marks-kept error 0.071 central / 0.125 upper vs LAG-SYL's covered band <= 0.107).
+No network beyond git, no vision, no subagents. v2 transcription not edited.
+
+**Prior work** (`tools/prior_work.py la-garde-1577 --item-spec 'shelfmark=KHA A 11/XIV C/M-12;date=1577-11-28;sender=La Garde;recipient=Willem van Oranje' --step-type decode --fetch`):
+**exit 4**, owed only LEAD 1-own (this job's own 02:45 claim). Check 1 by hand: HYPOTHESES.md had no syllabary row at err 0.13,
+so the step was not done -> `--record`ed CLEAR; re-run `--offline`: **exit 0** ("proceed on the residue: whole item"). Checks 2-4
+were settled by LAG-MARKS a few minutes earlier (CONTEXT / CLEAR / CLEAR / KNOWN-PART clear part only, rows in prior-work.tsv);
+check 5 not applicable (no decode read).
+
+**Pre-registration:** `PREREG-LAG-SYL.md` Amendment 2, commit 51fc0fae, pushed 02:47 UTC (its header says "02:5x"; the clock
+read 02:47) before any err-0.13 score.
+
+**Control calibration** (LAG-SYL invocation verbatim, `--measured-error 0.13 --param err=0.13`, seeds 1-3): recovery
+0.854 / 0.632 / 0.745, **mean 0.743, gate 0.60 met** (HYPOTHESES.md row 02:47). So the score-gap gate was run.
+
+**Gate** (`families/lag_syl13.py`, 250 solves, 4 processes, 02:48-03:1x UTC; scores in `families/lag_syl13.tsv`; `--report`
+re-prints). T and the 40 shuffled targets are Amendment 1's committed values in `lag_syl.tsv`.
+
+| Set | n | Per-token score |
+|---|---|---|
+| Target T (from lag_syl.tsv) | 1 | **-2.9171** |
+| (b) shuffled targets (from lag_syl.tsv) | 40 | p95 -2.9370, max -2.9180 (T above all 40) |
+| (a13) controls err 0.13, seeds 1-40 | 40 | -2.9597 .. -2.7038; **p05 -2.9445**; T at the 12.5th percentile |
+| (a13) recovery | 40 | mean **0.570**, min 0.000, max 0.854; 23 of 40 >= 0.60 |
+| Power: held-out controls err 0.13 (rec >= 0.60) | 8 | **8 of 8 pass** -> power PASS |
+| Power: held-out (rec < 0.60) | 2 | seed 104 (0.494) fails, 108 (0.452) passes; not counted |
+
+**Read-out (fixed in Amendment 2):** power PASS and T >= p05(a13) -> the syllabary (regular) control-backed negative **does
+not extend to err 0.13**. T sits inside the spread of syllabary controls read at 0.13 (5 of 40 score lower), though below
+the controls at <= 0.107 (LAG-SYL). The negative therefore stays **conditional on a true one-reader marks-kept error of
+about 0.11 or less**; LAG-MARKS' central estimate (0.071) is inside that band, its upper (0.125) is not, so coverage of the
+target is still undecided. This is **not** a positive: no decode was read, judged or graded. Descriptive, outside the
+prereg statistic: on 40 seeds the err-0.13 control's mean recovery is 0.570, below 0.60 (the 3-seed calibration's 0.743 was
+the lucky end), so 0.13 is at the control's own crossover (0.833 at 0.107, 0.264 at 0.183); part of the (a13) low tail
+is failed reads, which is why it reaches below T. Read together: between about 0.11 and 0.13 this tool loses the power
+to separate syllabary from the target's score, so a lower measured error, not a further control level, is what would settle
+coverage.
+
+**Rule 7:** `lag_syl13.py --check` (re-solves all 250, about 30 min on 4 processes) was **not run** inside the box; the TSV
+is deterministic by seed as `lag_syl.py`'s was (its --check exit 0, 01:20 UTC). Named below as a gap.
+
+Grades: 0 cipher tokens read (H 0, C 0, S 0, M 0, I 0); no reading. Status unchanged (`open`). Requests: none (git only).
+Files: PREREG-LAG-SYL.md Amendment 2, `families/lag_syl13.py/.tsv`, HYPOTHESES.md two rows, prior-work.tsv, this section.
+Suggestion (not acted on): revise v2 with LAG-MARKS' 7 sure settles before any further error measure.
+
+## Remaining gaps (LAG-SYL13, 9 Oct 2026)
+Read so far: 0 of 229 base-code / 239 marks-kept tokens graded H/C/S (no reading exists; homophonic/masc excluded by LAG-GAP; syllabary (regular) excluded at error <= 0.107 by LAG-SYL, not extended to 0.13 by LAG-SYL13; coverage of the target undecided: one-reader marks-kept error 0.071 central, 0.125 upper)
+- marks-kept transcription error between 0.107 and 0.125 - blocker: illegible; LAG-MARKS' 16 doubt cells are resolution-limited at 150 dpi and LAG-SYL13 shows a further control level cannot settle coverage (the control crosses its gate between 0.11 and 0.13); next: a higher-resolution image of 6179 (KHA original or the WVO PDF at native resolution), then re-settle the doubt cells
+- v2 marks revision - blocker: not-attempted; 7 v2 cells differ from sure image settles (`lag_marks_look.tsv`); next: revise v2 and rebuild the spec, then re-run lag_err/lag_marks, ~$1
+- lag_syl13 rule-7 check - blocker: not-attempted; the 250-solve re-run did not fit the 60-min box; next: `python3 ciphers/la-garde-1577/families/lag_syl13.py --check` (CPU, ~30 min), ~$0.5
+- wordcode at the measured error - blocker: not-attempted; its only row (WC-LAGARDE2) ran the control at err 0.23; next: `family_run.py --family wordcode --param codes=marked --param err=0.107` (then 0.055/0.084), control-only first, LAG-SYL-style gate if it gates, ~$2
+- running-key / code-layer designs at N=229 - blocker: too-short; LAG-NEXT: the running_key control reads 27% with no noise on the target's 15 message lengths; reopens only with more same-system ciphertext (pooling) or a different instrument
+- two `10`/`18` cells (6179 p2L26.6, p2L27.13) - blocker: illegible; LAG-MARKS looked both at 150 dpi, both doubt; a higher-resolution image is the only route
+
+## Escalation (LAG-SYL13, 9 Oct 2026)
+- [ ] siblings: Gachard / WVO sibling sweep done in ZX2-LAG2; same-system pooling for N is still the route to power for running key, no new sibling found
+- [n/a] clear-pages: no clear page of this cipher identified; margin words placed in A2-LAG
+- [n/a] known-keys: no period key for this correspondent located
+- [x] print: Groen VI pp. 249-251 omits the cipher (footnote read); GSME/LMSAC read in OX-LAG; Gachard t.5 p.423 calendar summarises the clear part only (LAG-MARKS)
+- [n/a] key-rebuild: needs a family whose verdict statistic passes on its control decodes first
+- [x] image-check: WC-LAGARDE settled 9 cells; LAG-MARKS settled 41 of the 57 split cells from the 150 dpi renders, 16 left doubt (resolution-limited)
+- [ ] retry: syllabary at err 0.13 run (LAG-SYL13: negative does not extend); wordcode never run at the measured error
+Verdict: keep going: 3 internal gaps; cheapest next: lag_syl13 --check plus the v2 marks revision, ~$1.5
