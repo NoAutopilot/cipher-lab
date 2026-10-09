@@ -59,7 +59,7 @@ What you should do at the sorter: the feed (TXE2-FEED, being written) lists the 
 | what | figure | source |
 |---|---|---|
 | S1 held-out gain | no instrument earned an eval look; eval looks spent 0; the pool is 28 unflagged errors (tuned-letter lines: eval_heldout 10 + f178r 6; held-out leaves: Spinelli 6 under the corrected sheet + f152r 1 + gunther 5), gate p < 0.05 at >= 24 (Amendment 7); nothing is past dev to spend a look on | PREREG-txeng2-0 |
-| S2 confirm2 | FROZEN 21:3x (the orchestrator's decision: the product baseline on an unseen hand); reads running, verifier running, the lane scores once after both; not yet looked at | PREREG-txeng2-S2 FROZEN |
+| S2 confirm2 | FROZEN 21:3x; reads on file but the frozen adjudication step was not executed (TX-RED F33), so no score yet: the step is being re-run as a dated protocol repair, then the lane scores once (F34 clause: flags from the blind clerk reads, 500 of 1,068 bind) | PREREG-txeng2-S2 FROZEN + Protocol repair |
 | S3 live letter | TXE-R (first campaign, same pipeline): f.117r err_2reader 0.134, S 207 vs 190 committed, judge 0.010 worse, no licensed change | ciphers/birago-fr3252-1571-72/harvest/f117/RESULTS-TXE-R.md |
 | S4 sorter | feed: dev 10/12 at 14.0% flagged; eval read-free 9/15 at 2.9% (substitute rule); decisions-to-2% per tile: eval 22 (was 32); whole-cluster propagation destructive (77% purity) | benchmark-tx/txeng2/doubt/, sorter/ |
 | S5 cost | one per-page Opus call at 0.29-0.30x the input tokens of per-line 2x calls, accuracy within reader spread (dint 0.235/0.318 vs 0.318/0.388; Ceppo 0.122 vs 0.166; N=2 readers x 2 hands); both Opus arms worse than the best Sonnet single pass (dint B 0.188, Ceppo A 0.043) | benchmark-tx/txeng2/cost/, cost2/ |
@@ -95,4 +95,4 @@ Open: X2b with more labelled tiles of the same hand (new material); the colour m
 gloss leaves from a native image; the grown-sheet read on Spinelli only if X1b's recall table licenses it (then the first eval look).
 
 ## Costs and looks
-41 workers ledgered 211.02 (round 8: TXE2-SHEET3 1.49, TXE2-SHEETS-ALL 3.42, TXE2-REGFIX 1.99) + round 9 (caps 33); lane orchestrator incarnation 1 about 23 by get_session, incarnation 2 19.1 at 21:24. Eval looks 0, S2 looks 0; read-free eval openings: 0d 1, X9 1, X1b 3, V2 1, f178r baseline 1.
+46 workers ledgered 236.22 (round 9: TXE2-S2READ 12.70, TXV-VIV 2.12, TXV-GUN 2.70, TXE2-GUNSHEET 1.28, TXE2-BASE-SPIN2 6.40) + round 10 (caps 16); lane orchestrator incarnation 1 about 23 by get_session, incarnation 2 23.7 at 22:04. Eval looks 0, S2 looks 0; read-free eval openings: 0d 1, X9 1, X1b 3, V2 1, f178r baseline 1.

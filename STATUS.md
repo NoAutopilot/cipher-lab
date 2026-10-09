@@ -7942,7 +7942,13 @@ column + the error map of both pools, read-free, cap 4). Ideas register v2: rese
 | REGFIX (TXE2-REGFIX) | tools/tx_register.py: 21 -> 3 unparsed; --check gate | n/a | tool fixed (F25 closed) | 1.99 |
 | E gunther8246-p2 (TX-POOL-LEAF, account 1) | n/a | 317 scored, 15 flags; passZ 18 as measured / 5 flagged-excluded; pooled at 5 -> pool 28 (Amendment 7) | pool restored; V3 + GS1 before the first look | account 1 ledgers |
 | TX-RED pass 6 F29-F32 | | | all adopted 21:3x (Amendment 7; X1c retired; S2 FROZEN) | lane |
-| round 9 live 21:3x (PREREG-txeng2-9; PREREG-txeng2-S2 FROZEN): S2-READ confirm2 reads, no score (TXE2-S2READ, cap 18), V-VIV confirm2 flags verifier (TXV-VIV, 4), V3 gunther flags verifier (TXV-GUN, 3), GS1 gunther sheet cross (TXE2-GUNSHEET, 2), B2 Spinelli sheet v5 + baseline (TXE2-BASE-SPIN2, 6) | | the lane's S2 look after S2-READ + V-VIV; first pool look after V3 + GS1 (nothing past dev to spend it on) | running | caps 18/4/3/2/6 |
+| S2-READ (TXE2-S2READ) | n/a | passA_S2/passB_S2/passZ_S2 on file; step 3 NOT executed as frozen (TX-RED F33) | no score; S2-ADJ protocol repair running | 12.70 |
+| V-VIV (TXV-VIV) | n/a | 256 flags from the blind clerk reads (no image): FLAG 236 / KEEP 20; 500 of 1,068 bind | F34 clause on the S2 line | 2.12 |
+| V3 (TXV-GUN) | n/a | FLAG 12 / CORRECT 3; recount 5/305 | verified | 2.70 |
+| GS1 (TXE2-GUNSHEET) | n/a | 6 of 173 exemplars mislabelled | B3 before any look (F35) | 1.28 |
+| B2 (TXE2-BASE-SPIN2) | n/a | passZ_v5 8 position errors flagged-excluded (3 notation, fold declared -> 5); v4 -> v5 2/4 | baseline change | 6.40 |
+| TX-RED pass 7 F33-F37 | | | F33 adopted (a), F34-F36 adopted, F37 noted (Amendment 8) | lane |
+| round 10 live 22:1x (PREREG-txeng2-10): S2-ADJ the frozen step-3 adjudication as a protocol repair (TXE2-S2ADJ, cap 8), B3 gunther sheet correction + baseline (TXE2-BASE-GUN, cap 8) | | the S2 score (incarnation 3) after S2-ADJ; no look on gunther before B3 | running | caps 8/8 |
 
 ### Hand-over to incarnation 2 (lane, 9 Oct 2026 17:5x UTC by date -u; at ~60% context, per the brief's ~700k line)
 State for the successor: the programme is standing (research/TX-PROGRAM.md; brief Amendment 1). Gate in force: PREREG-txeng2-0

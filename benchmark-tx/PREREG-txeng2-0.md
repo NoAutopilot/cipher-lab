@@ -342,3 +342,38 @@ with --help, an offline test, a tool_shelf.tsv row and a SYSTEM.md row.
   1,107 tiles) and 2 with a truth uncrossable at box grain (fr5761, clair349). Nothing corrected.
 - **Register (F25 closed).** tools/tx_register.py now parses the lane's row shapes and `--check` fails on any unparsed txeng2
   row; the one row it flagged at this check-in (txeng2/sheets-all, no Verdict line) is covered by its results-log row below.
+
+## Amendment 8 (lane incarnation 2, 9 Oct 2026 22:1x UTC by date -u; after round 9 (S2-READ, V-VIV, V3, GS1, B2) and TX-RED pass 7 F33-F37; written BEFORE any eval look and BEFORE the S2 score, neither taken)
+- **S2 (F33, BLOCKING, the orchestrator's choice (a)).** The FROZEN step 3 was not executed on the S2 reads: the adjudicator's
+  first hand-back settled all 375 queued rows by rule, the one resume settled 9 of 208 disagree rows from the image, so
+  passZ_S2 is pass A at 199 of 208 splits. **No score is taken on passZ_S2.** Protocol repair, dated here under the FROZEN
+  section's authority and made BEFORE the score: a fresh Sonnet adjudicator in TXE-Q's packet shape (<= 16 rows per call, each
+  row's crop viewed, viewed recorded per row; the 208 disagree rows, about 13 calls; the 167 agreed-uncertain rows kept as
+  agreed) produces passZ_S2b.tsv (PREREG-txeng2-10 S2-ADJ; a step of the pipeline, not a read of the truth; openings 0). The
+  lane's single score then runs on passZ_S2b, --exclude-flagged, both figures, and the S2 line says (F34): "flags decided from
+  the two blind clerk reads, not the clerk image (TXV-VIV: 236 FLAG / 0 CORRECT / 20 KEEP; 568 of 1,068 flagged, 500 bind)";
+  the as-measured figure on all 1,068 beside it; the item's next step is a verifier pass with the clerk page images after the
+  10 Oct 00:00 UTC Gallica probe, never a re-score. passA_S2 / passB_S2 single-pass figures are reported beside.
+- **Gunther (F35; V3).** TXV-GUN: FLAG 12 (key-gap 10, slip 1, alignment 1), CORRECT 3 (34 -> u x2, 88x -> r); recount under the
+  new flags: passZ_pipeline 15/317 as measured (0.047), **5/305 flagged-excluded** (12 flagged). GS1: the readers' p.1
+  calibration sheet carries 6 mislabelled exemplars (d6 -> c x2, Ib -> s, 34 -> e, xb -> a, ps -> f), the same label families
+  as most of the baseline's errors -- the Spinelli shape. **B3** (PREREG-txeng2-10): the sheet is corrected from the p.1 print
+  alignment (p.1 is outside the scored p.2: no opening) and a fresh two-pass baseline is read and scored once (a baseline
+  change, never a gain; one opening); until B3 is on file gunther's 5 is a count under a sheet with six wrong exemplars and
+  no look is spent on it.
+- **Spinelli (B2; F36).** passZ_v5 (atlas_v5 = v4 + KEY_G1, KEY_U_V2, KEY_SS from Domnina 2016 Ill.1 by a blind lookup): 13/193
+  as measured, 11/191 flagged-excluded; position errors 10 / **8** (v4: 8 / 6); v4 -> v5 fixed 2 / broken 4 (p 0.69), accepted as a
+  baseline change whichever way it moves. F36's check: of the 8, three are the new cell names the collapse map does not fold
+  (u <- KEY_U_V2 x2, s <- KEY_SS x1) -- notation under PX-BRODEC, not reads: the published cells are the u/v sign 2 and the ss
+  sign. Declared: the collapse map folds KEY_U_V2 and KEY_SS to the published cells' key codes (from key.tsv's Domnina rows,
+  never from the truth) and the v5 score is re-run read-free; expected Spinelli count **5** flagged-excluded after the fold
+  (8 before). The worker's grep leak (truth letters beside the three shapes, disclosed before any read, lookup delegated to a
+  blind subagent) is on record; the outcome went the wrong way, so it did not help.
+- **Pool after this amendment:** eval_heldout 10 + f178r 6 + spinelli 8 (5 after the fold) + f152r 1 + gunther 5 (pending B3)
+  = **30 (27 after the fold)**; the under-24 rule stays lifted either way; gate p < 0.05; no instrument past dev; no look is
+  spent on gunther before B3.
+- **Outside the frame (F37).** TX-POOL-LEAF-2 (account 1): 5 pool-grade candidates, all Gallica-held (probe after 10 Oct 00:00
+  UTC); Huntington 108(A) p.1 built (luzerne108a-p1: 0/58 flagged-excluded, no headroom, not pooled). The cheapest untried
+  step is that Gallica probe.
+- **Hand-over.** This incarnation hands over to incarnation 3 at this check-in (context about 560k); incarnation 3 runs the
+  S2 score after S2-ADJ, the notation fold and the Amendment 9 recount after B3.

@@ -53,3 +53,11 @@ align-conflict flags from the clerk decipherment images and the published key th
 the LANE then runs the single score (`tx_bench ... --paired committed.tsv --exclude-flagged`, both figures, the builder's
 passA/passB beside) ONCE, as the campaign's S2 look (1), and reports it as "product baseline on an unseen hand", never as an
 instrument result or a gain. Prior openings of this item: 0 (the lane has not read its truth, outputs or crops).
+
+## Protocol repair (lane incarnation 2, 9 Oct 2026 22:1x UTC by date -u; TX-RED F33; the orchestrator's choice (a) of 22:0x; BEFORE the score, none taken)
+Step 3 as frozen was not executed on passA_S2/passB_S2 (txeng2/s2read/RESULTS.md: first hand-back settled 375 rows by rule; the
+resume viewed 9 of 208 disagree rows). Repair: a fresh Sonnet adjudicator runs step 3 as frozen in TXE-Q's packet shape (<= 16
+rows per call, each row's crop viewed and recorded; the 208 disagree rows; the 167 agreed-uncertain rows kept as agreed), from
+the same queue (txeng2/s2read/adjud_queue.tsv) and the same crops, writing benchmark-tx/outputs/vivonne1573-f103r-confirm2/
+passZ_S2b.tsv with its sha256 before any score. passZ_S2 stays on disk, unscored. The single score runs on passZ_S2b; its line
+carries F34's clause (flags from the two blind clerk reads, 500 of 1,068 bind) and the as-measured figure beside.
