@@ -218,3 +218,10 @@ Result: no accepted decipherment or plaintext found on the open web or in these 
 ## Next step (LANE-RUN15-account-2 orchestrator, 6 Oct 2026, 17:2x UTC; NEXT-STEPS.tsv read this folder as `runnable` from an older line)
 
 next: no cheap agent step is listed. The follow-ups named in the "What was NOT done" section need a closer photo of altar 2 (no image better than Moustier-212.jpg is online) or a site visit. The premise check (GF-A2-12, 3 Oct 2026) found no decipherment to test. Who acts: owner or a local contact. Blocker class: needs-image.
+
+## While waiting (9 Oct 2026, WAIT-PASS-4)
+
+Waits on: a closer photograph of altar 2 or a site visit (needs-image, LANE-RUN15 Next step 6 Oct 2026; no REQUEST.md or ASKS row names one). The two close shots already on disk carry all 20 lines, so the tests below need nothing new.
+- Run test 2, never run: `tools/family_run.py specs/moustier-altars.json --family masc` then `--family homophonic`, matched Latin/French control at N=158, K=26 first (rule 3); S
+- Trithemius Polygraphia hypothesis (Huylebrouck/Connart, EOS 2022; Bourdeau top50 "testable", not run): decode ciphertext.txt and shuffled-line controls with the Polygraphia tables, judge both with `tools/judge_plaintext.py` at la; the EOS text itself warns any sequence yields religious Latin, so only the target-minus-shuffle margin counts; M
+- Fetch the six Schmeh post photos not yet on disk (Moustier-020, -030, -050, -060, -069, -210; images/manifest.json lists only 130/212/220), 6 scienceblogs.de requests, to look for a closer altar-2 frame before anyone asks for a site visit; then settle the 15 M positions in disagreements.tsv by eye; S

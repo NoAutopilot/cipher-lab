@@ -982,3 +982,10 @@ Vision: 3 looks (two 6-tile sheets, one check sheet).
 ## Next step (LANE-RUN15-account-2 orchestrator, 6 Oct 2026, 17:2x UTC; NEXT-STEPS.tsv read this folder as `runnable` from an older line)
 
 next: none runnable. The Verdict above is `parked` (every escalation step done or retired; N=370 is too short). It reopens only with new material: a second cipher letter of this correspondence, for which no image exists in any NA finding aid swept so far. Who acts: nobody until new material appears. Blocker class: needs-image.
+
+## While waiting (9 Oct 2026, WAIT-PASS-4)
+
+Waits on: new material, a second cipher letter of this correspondence (Verdict parked, 3 Oct 2026; LANE-RUN15 Next step 6 Oct 2026); no copy order is outstanding, so the search for that material is itself the parallel action.
+- Grep the NA 2.21.xxx family-collection finding aids of Smissaert, Prediger, Elout and Van Grasveld for cijfer/geheimschrift (A2-RAA11's PDF route; line 899 lists them "not swept"); S
+- Open the physical neighbours inv. 208 and 210 of 2.01.27.02 (Premise check (c): "not opened"), item-page `drupal-settings-json` route of RUN1-RAA, for an enclosure, key slip or decipherment of 209; S
+- Record the invnr 317 "Nebawo" reciprocal-table key in KEY-DESIGN.tsv with `tools/key_design.py` (absent there and from KEY-OFFICES.tsv, checked 9 Oct 2026), so design_prior.py can match any later Batavian-era cipher to it; S

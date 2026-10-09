@@ -472,3 +472,9 @@ queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
 ## Next step (LANE-RUN15-account-2 orchestrator, 6 Oct 2026, 17:2x UTC; NEXT-STEPS.tsv read this folder as `runnable` from an older line)
 
 next: no agent step is left. Status stays `blocked`: items 2 and 4 need a page image (no image online; bibliotecadigital.rah.es has no record, tested by NX2-GATE2), so REQUEST.md is the route; items 1, 3 and 5 are text-known (AUDIT.md, A2P4-VRAHSAL). Who acts: owner. Blocker class: needs-image.
+
+## While waiting (9 Oct 2026, WAIT-PASS-4)
+
+Waits on: the batched RAH copy order (REQUEST.md, ASKS 68, 26 Sept 2026, held under the orders-on-hold rule) for items 2 and 4 and the group (i) rows; items 1, 3, 5 are text-known (AUDIT.md, A2P4-VRAHSAL 3 Oct 2026).
+- Locate pages in BRAH t.98 (1931) Soria catalogue, osu.32435013919725, via the HTRC EF API (`tools/htrc_ef_headwords.py`: cifra, Salazar, Sánchez), which serves search-only volumes from the cloud; S
+- Build a key.tsv for the Alonso Sánchez cipher from Tomokiyo's reconstruction (sources/cryptiana/web/AlonsoSanchez.htm, on disk; Soria's two-cipher caveat in spanish2C.htm kept), checked against the CSP-printed items 1/3 as crib, so items 2 and 4 decode on arrival; M

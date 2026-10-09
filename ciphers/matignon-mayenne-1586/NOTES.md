@@ -1546,3 +1546,10 @@ Reconciliation was the script, `f110crops/score.py` -> `f110crops/score.json`.
 - Next (per TRANSCRIPTION.md, a split > 10% between two passes goes to a person, not a third machine pass): f.110's BOX / z / T / U /
   w / 4 glyphs go to the owner's sign sorter (`tools/sign_sorter.py`), seeded with these crops, to settle whether they are distinct
   signs. Without that, a re-crop at higher effective resolution (taller bands, `--follow-slope`) is the only machine instrument left.
+
+## While waiting (9 Oct 2026, WAIT-PASS-4)
+
+Waits on: the owner's pass on the re-cut f.110 sign sorter (ASKS 146, filed 6 Oct 2026; R7-MATSORT, R8-MATCUT). Nothing below touches f.110 or its labels.
+- Cipher-3 f.179: fetch Tomokiyo's henryiii_Matignon3.png (1 cryptiana request), crop images/f179_gallica_native.jpg with tools/iiif_lines.py --image, two passes + decode; M
+- Nomenclature: test Tomokiyo's 76/82/84/98 (roi de Navarre, Condé, Turenne, Montauban; henryiii.htm, on disk) at every occurrence with `tools/decode_key.py . --try 76=...`, accepted values M, never a direct key.tsv edit (MQS-CROSSWORD rule); S
+- Siblings: locate and crop the f.91-92 Cipher-1 letter with its margin decipherment (Tomokiyo l.638; Escalation "siblings" and "clear-pages", planned, not run) as a fresh crib independent of f.110, `tools/gallica_folio.py --anchor` then `tools/iiif_lines.py`, when Gallica answers (403 on 9 Oct); M

@@ -463,3 +463,10 @@ Read so far: unmeasured, the Nääs 6 May 1677 Swedish full power itself has not
 - [x] image-check: title page and page read via A2P4-KARL, Hathi H4
 - [x] retry: be-api retried 4 Oct 2026 (RUN1-KARL, RUN3-KARL); dk.upce.cz 401 not retried (auth gate, not a transient)
 Verdict: parked: every remaining gap is outside-blocked (Bakeš texts needs-physical-access; Riksarkivet copy waiting-on REQUEST.md reply); the printed 1676 sibling (document a) is a possible crib once an image of (b) arrives
+
+## While waiting (9 Oct 2026, WAIT-PASS-4)
+
+Waits on: an image of document (b), Nääs 6 May 1677, from Riksarkivet (Verdict, R8-KARL3/R9-KARL4, 6 Oct 2026). Found this pass: REQUEST.md still reads "Gated -- do not send" and "blocked on the edition search", though NX-UNBLOCK settled that question on 26 Sept 2026, and no ASKS.md, SEND-QUEUE.tsv or outreach/ row for this copy order exists (grep, 9 Oct 2026); so the request the Verdict waits on may never have been made.
+- Refresh REQUEST.md's gate line and draft the Riksarkivet copy order in outreach/ (gate 7 check, then an ASKS row), since nothing shows it was ever sent; S
+- Transcribe the 12 Apr 1676 Vollmacht (document a) from IA bub_gb_mUtFAAAAcAAJ pp. 102-104 (leaves n137-n139, image-checked by R9-KARL4) into a crib file aligned clause by clause, ready for (b)'s clear parts; S
+- Search Riksarkivet's data.riksarkivet.se API for Karl XI-era chancery cipher keys (chifferklaver, Kanslikollegium 1675-1680) so a key is on disk when (b)'s cipher passage arrives; S
