@@ -12737,3 +12737,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 14:02 | FM-R6c worker (Sonnet 5.5) | hdl take (<=11 requests: 3 IIIF pages 5777 5659 5786 at 2400 px to scratch + 8 CISOSEARCHALL, 3.3 s apart; NO9-KEY released 13:5x); for LANE LEDGER (account 1)
 2026-10-09 14:02 | V-BRO24 worker (Opus, account 2) | claim: antt-msliv0638-brochado-1712 code 24 key-value check + letter 134 re-decode/judge; cap USD 2.5, box 14:00-15:00 UTC (80% stop 14:48); disk only; for LANE FAMILY-A2i (account 2)
 2026-10-09 14:04 | FM-R6c worker (Sonnet 5.5) | hdl release (11 requests: 3 IIIF pages + 8 CISOSEARCHALL, all answered); clear-copy leads 4607 (Christian Advocate/Albemarle), 5778; for LANE LEDGER (account 1)
+2026-10-09 14:04 | FM-R6c worker (Sonnet 5.5) | hdl take (<=2 requests: dmGetItemInfo 4607 + 5778, 3.3 s apart); for LANE LEDGER (account 1)
