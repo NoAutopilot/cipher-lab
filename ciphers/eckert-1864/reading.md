@@ -1649,5 +1649,29 @@ Code-word tokens: H 31.
 
 Code-word tokens: H 21.
 
-Totals over the 253 entries: H 4446, C 39, I 25, M 35, U 10.
+**E318 | Page 165 | 5709 | mssEC 25 (obj 5952, pointer 5709), 28 May 1864 Washington, Eckert to Sheldon: the Gloucester route is best, 100 men can guard that line, Mackintosh's building party, Bickford's operators (FM-R7b; row 5709/1; image-read at 2400 px)**
+
+[General-in-Chief] opinion is that the Gloucester route is the best [100] [Men] can [Guard (-ed, -ing)] that line where a [Regiment] could not the other pause unless u know of some very good reason why it should not be Dunn let the work be commenced first [As soon as] Mackintosh arrives with his party & push through fast as Can send Logue & Embree to Jamestown and hold blissfull & Glazier ready for white house send Collings to [Yorktown] & Homan to Gloucester if office is needed there [.] Bickford has some operators with him who will be stationed at [West Point] send Cowans with Mackintoshs building party let him come in circuit twice a day & [Report] progress and inform me all blank T. T. Eckert
+
+Code-word tokens: H 11.
+
+**E319 | Page 151 | 5695 | mssEC 25 (obj 5952, pointer 5695), 27 May 1864 Ft Monroe, Sheldon to Eckert: distances across York River at Yorktown and Mattapony at West Point, cannot string wire, navigation must remain open, country as favourable as the route up the peninsula (FM-R7b; row 5695/2; page fetched at 2400 px, entry not eye-checked)**
+
+Distance [Cross (-ed, -ing)] York [River] at [Yorktown] a little over half a [Mile] [,] [Cross (-ed, -ing)] Mattie [9] at [West Point] three quarters of a [Mile] [,] can not string wire a [Cross (-ed, -ing)] at Either [Point] as navigation must remain [Open (-ed, -ing)] for vessels [,] some of which have high masts [.] from what I can learn [Of the] country it is fully as favorable for bill ding line as the route up peninsula will inquire further Geo D Sheldon
+
+Code-word tokens: H 16.
+
+**E320 | Page 158 | 5702 | mssEC 25 (obj 5952, pointer 5702), 27 May 1864 Washington, Eckert to Sheldon: O'Brien to stay at Bermuda Hundred in charge of cipher work, Caldwell to take it when the White House line is done, Mackintosh to bring builders (FM-R7b; row 5702/0; image-read at 2400 px)**
+
+I regret having ordered OBrien away from Bermuda hundreds he must remain there in charge attend to [Cipher] work etc which will be important and require careful working he is also better posted with that command than any one who can be sent there [.] when new line via White house is completed Caldwell will attend to all [Cipher] work and Doren the repairs [.] direct OBrien to send all operators that can be spared Nichols can remain with him direct Mackintosh to bring with him all builders and building material except sufficient for repairs to report to you where ever you may think proper to direct send copy this to OBrien as quick as possible get answer soon Thos T Eckert
+
+Code-word tokens: H 4.
+
+**E321 | Page 238 | 5782 | mssEC 25 (obj 5952, pointer 5782), 1 Sept 1864 Head Qrs A. P., Caldwell to Eckert: cable to be laid on the north side of the river, less danger from anchors, channel nearest the south shore (FM-R7b; row 5782/0; image-read at 2400 px)**
+
+I think cab bell should be laid on [North] side of [River] as it will take less cab bell and will be less danger of being dragged up by anchors and channel most of way is nearest [South] shore D do wren Caldwell
+
+Code-word tokens: H 3.
+
+Totals over the 257 entries: H 4480, C 39, I 25, M 35, U 10.
 <!-- decode.py: derived block ends -->

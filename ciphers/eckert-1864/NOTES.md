@@ -3498,3 +3498,40 @@ Requests: hdl.huntington.org 2 (IIIF 5570, 5576, 3.3 s apart, 200); be-api.us.ar
 
 ### Escalation
 Siblings: 5570/0 and the two Baltimore replies on the same leaf read together. Clear pages: none found. Known keys: No. 9 reads all four; No. 1 and No. 2 give nonsense (NO9-KEY). Print: OR ser. II vol. 6 corroborates names, not the text. Image check: done for the words, not the margin notes. Verdict: keep going.
+
+## FM-R7b (9 Oct 2026, account 1, for LANE LEDGER)
+
+Six 1864 rows of the Fort Monroe ledger (obj 5952 = mssEC 25): 5639/2, 5709/1, 5648/2, 5695/2, 5702/0, 5782/0. Four read as Cipher No. 1 and filed E318-E321 (`fortmonroe/fm_r7b_file.py`; `decode.py --write`, `--check` exit 0). Two not filed: **no book in hand** (5648/2, and 5639/2 in its cipher words). No row went to No. 2 or No. 9 (no N2- ID used). Scripts/outputs in `fortmonroe/`: `fm_r7b_extract.py`, `fm_r7b.py` + `fm_r7b_controls.txt` (shares, three books, shuffled No. 1/No. 2), `fm_r7b_printcheck.py/.out`, `fm_r7b_hdl.py/.out`.
+
+Shares s1/s2/s9 (FM-PRE scorer at HEAD): 5639/2 .226/.265/.032; 5709/1 .260/.233/.068; 5648/2 .163/.224/.041; 5695/2 .426/.383/.106; 5702/0 .167/.139/.028; 5782/0 .172/.138/.000. Shares do not pick the book; sense does. The No. 2 label on 5648/2, 5695/2, 5702/0, 5782/0 and the No. 9 label on 5639/2, 5709/1 did not hold: 5695/2 and 5782/0 read in No. 1 and not in No. 2 (No. 2 gives Subsistence, Shelbyville, Cavalry); the shuffled No. 1 gives nonsense with the same H count (e.g. 5695/2 "Pieces York Gen J. T. Boyle").
+
+| row | ID | content as read | book / H / M |
+|---|---|---|---|
+| 5709/1 | E318 | 28 May 1864 Eckert to Sheldon: the Gloucester route is best, 100 men can guard that line where a regiment could not; when Mackintosh arrives push through, Logue and Embree to Jamestown, Collings to Yorktown (Haven), Homan to Gloucester, Bickford's operators, Cowans with Mackintosh's party | No. 1, H 11, M 2 (Ivory, Yorktown-for-Haven order) |
+| 5695/2 | E319 | 27 May 1864 Sheldon to Eckert: distance across York River at Yorktown a little over half a mile, Mattapony at West Point three quarters; cannot string wire across at either point (navigation open, high masts); country as favourable as the peninsula route | No. 1, H 16, M 1 (pony) |
+| 5702/0 | E320 | 27 May 1864 Eckert to Sheldon: O'Brien to stay at Bermuda Hundred in charge of cipher work; Caldwell does cipher work and Doren repairs once the White House line is done; Mackintosh brings builders | No. 1, H 4, M 2 (Bermuda, white are plain; key gives White River, Report) |
+| 5782/0 | E321 | 1 Sept 1864 Caldwell to Eckert: cable on the north side of the river, less danger from anchors, channel nearest the south shore | No. 1, H 3, M 1 |
+
+**No book in hand.** 5648/2 (H. N. Snow, Yorktown 3 May, report from Col. B. G. Onderdonk of torpedoes planted by enemy cavalry from Charles City Court House): the cipher words (mentor, orchard, planted, nutmeg, negus, nuptial, Nuggett) read under neither No. 1 (Ord, Advance, Dahlgren) nor No. 2 (Howard, Arrest, Sheridan) nor No. 9; the clear skeleton (Onderdonk, Friday, torpedo, Charles City Court House) is a content lead only. 5639/2 (Yorktown 29 Apr, Snow/Sheldon): a strength return, clear numerals plus code words princess, pilgrim, parma, nuptial, unity; No. 1 gives "Captain", "Maj Genl U.S. Grant" (nonsense), No. 9 reads nothing. Internal check on the numerals as transcribed: 2439+2392+1970+143+121 = 7065; 2645+1820+138+187 = 4790; 3308+2705+82+146 = 6241; total 18096 = "eighteen thousand and [ninety] six", so the numeral skeleton is internally consistent (princess = division, pilgrim = brigade inferred from structure, grade I, not in key). Signed "official Adrian Terry assistant adjutant general". The tail (Snow's message "vernon is blubber ... Saco") not decoded or filed.
+
+**Holder search first** (CISOSEARCHALL, 9 queries, all pointers of p16003coll11): no clear period copy of any of the six; hits were the row's own pointer or neighbours (Gloucester route: 5709, 5713 Butler's 11.30 PM message of 28 May, different text; Onderdonk 5648; Adrian Terry 5640 = continuation; Mackintosh 72 hits across the collection, none a copy).
+
+**Prior print** (phrase grep, letters only, 164 cached volumes incl. OR I/33, 36, 40, 42, 43, 45, ORN I/9-10, Butler III-V): phrase hits for the readings: none for E318-E321 or the Onderdonk text. For 5639/2 the context hits are other uses of "Adrian Terry" and unit names (OR I/35 pt 2, 36 pt 2, 40 pt 3), not this return. A miss is a search result (rule 10).
+
+**Image check** (7 pages at 2400 px, strips): 5639 whole return and 5640 top (transcription matches: princess, pilgrim, parma, Jersey clear); 5709 head to "Cowans"; 5782 first 7 lines; 5702 first 7 lines. Not eye-checked: 5648, 5695 (entry strip not viewed), tails of 5709, 5702, 5782. Grades: E318-E321 decoder H 34, no I; M as listed; no H/C from a period gloss, so cryptanalytic/decoder reading only; no C. Requests: hdl.huntington.org 16 (7 IIIF pages, 9 CISOSEARCHALL, 3.3 s apart, all 200).
+
+## Remaining gaps (FM-R7b, 9 Oct 2026)
+Read so far: four of six filed (E318-E321).
+- 5648/2 cipher words - blocker: no-key-material; no book in hand reads mentor/orchard/nutmeg/negus; next: try the book of 1864 April-May rows other than Nos. 1/2/9 if one is in key-design, ~$0.5
+- 5639/2 division/brigade words and tail - blocker: no-key-material; princess/pilgrim/parma are in no key; next: same, plus pointer 5640 tail strip, ~$0.4
+- E319 and E320 tails and E318 last lines - blocker: not-attempted; entry strips not viewed; next: eye-check three strips, ~$0.3
+
+## Escalation (FM-R7b, 9 Oct 2026)
+- [x] siblings: same-page neighbours seen, not filed.
+- [x] clear-pages: CISOSEARCHALL, none.
+- [x] known-keys: No. 1, 2, 9 plus shuffled No. 1/No. 2.
+- [x] print: cached OR/ORN/Butler volumes grepped.
+- [n/a] key-rebuild: no key row is missing for the four filed rows.
+- [x] image-check: partial.
+- [x] retry: none.
+Verdict: keep going: 1 internal gap, cheapest next: eye-check the three strips, ~$0.3
