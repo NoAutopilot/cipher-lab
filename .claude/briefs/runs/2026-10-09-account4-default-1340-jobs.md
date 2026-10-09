@@ -93,3 +93,28 @@ an open copy exists (OpenAlex, Semantic Scholar, CORE, Google Books with country
 (ASMo site, Archivi di Stato portals, DECODE records by holding "Modena" and date 1480-1500 via tools/decode_list.py); (c) whether any DECODE
 record already holds a Costabili/Este 1490s key. Write a "## Key lead ASMo B.4 (COS-ASMO)" section in costabili-modena-1491/NOTES.md with every
 host searched and the result; if an owner-side request is needed, name it in one line (do not file ASKS). Good-citizen rule on every host.
+
+## Wave 3 (added ~14:2x UTC by date -u; the named next steps of wave 1/2). J8 COS-SPAN above is spawned with this wave.
+Intake gates re-run 14:2x: costabili-modena-1491 partial (line 1), fr16045-pisany-rome-1585 partial (line 1), fr4735-monluc-lansac-poland-1573
+partial (line 1), fr5160-letellier-1653 open (line 3): all pass.
+
+### J10 PISA-T32 -- fr16045-pisany-rome-1585, Opus, cap USD 2, box 45 min
+PISA-275R (ba567ff57) settled 4 f.275r T57 tokens as T32 candidates. Run the UNA2-PISA re-score shape on f.275r for those 4 (pre-registered
+before any score, same gates G1-G3 and controls as una2_pisa; key86 unchanged). Commit the relabel only on a PASS, keeping pre-edit files
+byte-identical as *_preT32; grades per rule 4; carry any reading change into AUDIT.md as a facts-only carry-over (rule 10 propagation). Disk only.
+
+### J11 MONLUC-CURL -- fr4735-monluc-lansac-poland-1573, Opus, cap USD 2.5, box 50 min
+MONLUC-F86's named next (bcab4a936): a binary curl-present / curl-absent blind sort of the 17 f.86 K07 tokens on wider crops (from images on
+disk; if wider crops need Gallica, stop and say so), value-blind, pre-registered gate, one Sonnet call plus reconciliation. Relabel only on a
+gate PASS plus a `decode_key.py --try` with its control; otherwise log. This is the second blind sort of f.86 K07: a fail is logged under rule 3.
+
+### J12 F5160-WORD -- fr5160-letellier-1653, Opus, cap USD 5, box 100 min
+The Verdict's cheapest next (F5160-POOL): a word-level (dictionary-constrained) solver for the 1653 syllabic table, a different instrument
+from nomenclator_anneal.py. Use a shared tool if one fits (`tools/family_run.py` families, `tools/segmenter.py`, `--param lock=`); a private
+script only if none does, and say why in NOTES. Matched control first on control_pool.txt (same N 972, K, design, fr17 language); pre-register
+the bar and push it before any score; run the four real letters only if the control meets it. Both numbers in HYPOTHESES.md.
+
+### J13 COS-CREM -- costabili-modena-1491 key lead, Sonnet, cap USD 1.5, box 40 min
+COS-ASMO (da488a051) named Cremonini 2017 (RSU 16, pp.117-145, EPA pdf) as the next read. Fetch it once (EPA / epa.oszk.hu; good-citizen rule),
+grep it for b.4-7, Ungheria/Hungary, Costabili, cifra/cifrario, 1490-1492, and record what it says about a surviving Este-Hungary cipher key of
+the 1480s-90s (page cited, quote <= 2 lines). Do not commit the pdf. If it is unreachable, log it and stop. Section "## COS-CREM" in NOTES.md.
