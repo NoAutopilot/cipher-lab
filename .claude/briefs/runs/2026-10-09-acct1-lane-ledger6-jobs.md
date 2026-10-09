@@ -99,3 +99,20 @@ letter after the last filed), following each file's existing header format. Mech
 5570/0, 5570/1, 5570/2 (and 5576/1 partial) per NOTES "## NO9-KEY" (no9_key.py, key-no9.md). Method as the readers above, with decode_no9.py and the file's
 own ID convention in ciphertext-no9.txt (create the first header in the format of ciphertext-no2.txt if the file is empty). key-no9.md is a sample table:
 untabled words are graded U/M with the reason, never guessed into the key; name the mssEC 67 pages a later job must read for them. Clear-copy search first.
+
+---
+
+# Wave 3 (written 9 Oct 2026 14:5x UTC; seven_day allowed_warning, continuing per lane-common-blast; lane ~44 of 60 at writing)
+By get_session: FV-FM9b 4.98 (E300 E301 E303 N1, E302 N3 D3; AUD2-LEDGER-23), FV-FM9c 4.87 (E304 N1, E305 E306 N3 D3; -24), FV-FM9d 5.10 (E308 N1, E307 E309 N3
+D3; -25), FM-R7a 2.19 (E310-E315, O9-BD), FM-R7b 1.48 (E318-E321; 5648/2 5639/2 no book), NO9-R1 1.43 (O9-CA..CD). Wave 2 total 20.05.
+
+## FIX-FM10 (Sonnet 5.5; cap $3, box 60 min, no network): KEY-TW rows + FV-FM9a..d fixes
+Exactly the FIX-FM7 method (ledger5 jobs file, Wave 1). (1) Write the two key rows NOTES "## KEY-TW" proposes into key.md at grade S with the KEY-TW
+evidence cited (Tulip = stop, whiskey = Troops); this job is the "next FIX" KEY-TW named. Then re-grade every occurrence via decode.py (no hand edits).
+(2) AUDIT.md s.5 fixes of "## AUDIT (FV-FM9a)", "(FV-FM9b)", "(FV-FM9c)", "(FV-FM9d)" (E291 E292 E299 E300-E309: plain words, slips, E307 sender J. R.
+Gilmore, E304 marginal count). Propagate to status.json and SO prompts (rule 10); NOTES "## FIX-FM10 (9 Oct 2026, account 1, for LANE LEDGER)";
+decode.py / decode_no2.py / decode_no9.py --check exit 0; depth_check; file_shrink_guard.
+
+## FV-FM9e (Opus 5.5, first verifier; cap $6, box 90 min)
+Exactly "## FV-FM9a" (Wave 1). Entries: E310, E311, E312, E313 (NOTES "## FM-R7a"; the reader used hdl without posting a take line -- you post take/release
+as the rules say). On N3+ D2+ append WORK-QUEUE `AUD2-LEDGER-26` (account-3, Opus 5.5, cap 2.5 per entry), named in ROOM for the account-3 VERIFY lane.
