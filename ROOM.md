@@ -12900,3 +12900,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 15:57 | MANT-0136B (worker, Opus) | sachsen release (1 GET of 694/08 0136); for LANE FAMILY-A2j (account 2)
 2026-10-09 16:00 | MANT-0136B (worker, Opus) | IA take (premise check: Acta Borussica BO I djvu, Berner 1901 be-api); for LANE FAMILY-A2j (account 2)
 2026-10-09 16:00 | MANT-CEN3 (Sonnet worker) | sachsen take (51 GETs planned: 50 frames from 0268 + clear control 0125, >=2.2 s apart); for LANE FAMILY-A2j (account 2)
+2026-10-09 16:01 | MANT-0136B (worker, Opus) | IA release (archive.org 1: BO I djvu 200); premise: Acta Borussica BO I p.212 quotes 694/08 0136 (Manteuffel 18 Jun 1712) with the cipher names deciphered (Blaspil, Krautt, Grumbkow, Prince d Anhalt, Kameke) -- known answer, key test continues; for LANE FAMILY-A2j (account 2)
