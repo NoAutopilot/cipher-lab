@@ -11592,9 +11592,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-MS18g)'"
+        "AUDIT.md '## AUDIT (FV-MS18g)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-32)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-MS18g verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -11614,8 +11615,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Washington sent ledger): W. G. Wood to W. P. Smith, Baltimore, 5 Aug 1864: Grant's secret car from the Relay House to Monocacy (E347)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 5 August 1864 W. G. Wood telegraphed W. P. Smith at Baltimore through Sampson that General Grant and one of his staff would go to Monocacy that afternoon, leaving Washington on the 3 p.m. train for the Relay House, where Smith's car was to meet him, and that the General's departure must be kept a profound secret; Grant's visit to Monocacy is in the Official Records, this telegram was not located in print or in the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3 one audit (FV-MS18g); not N4: W. P. Smith / B&O papers, Grant Papers vol. 11 by page (be-api only), Baltimore press, HathiTrust, JSTOR not searched",
+      "line": "Read at grade H with War Department Cipher No. 1: on 5 August 1864 W. G. Wood telegraphed W. P. Smith, the Baltimore and Ohio's master of transportation, at Baltimore through Sampson that General Grant and one of his staff would go to Monocacy that afternoon, leaving Washington on the 3 p.m. train for the Relay House, where Smith's car was to meet him, and that the General's departure must be kept a profound secret. The trip itself is reported in the New York Herald and the New-York Daily Tribune of 10 August 1864 (the 3 p.m. train, the special car from Baltimore at the Relay House); this telegram was not located in print or in the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "N3 two audits (FV-MS18g, AUD2-LEDGER-32); not N4: W. P. Smith / B&O papers, Grant Papers vol. 11 by page (be-api only), Baltimore press page by page (New York press read), HathiTrust, JSTOR not searched; second audit (AUD2-LEDGER-32): the trip printed, New York Herald 10 Aug 1864 p.5 and New-York Daily Tribune 10 Aug 1864 p.1 (Washington 3 p.m. train, special car from Baltimore at the Relay House, visit kept secret); W. P. Smith's B&O office printed (Summers 1951)",
       "depth": "D3",
       "completeness": "8 H of 8 code-word groups (Relay plain; names plain; FIX-FM16 recount from decode.py)",
       "phrases": [
@@ -11626,16 +11627,17 @@
         "Huntington mssEC 18 (obj 10074) p.145, pointer 9811, E347"
       ],
       "depth_sentence": "On 5 August 1864 the telegraph office arranged in secret for a Baltimore and Ohio car to carry General Grant from the Relay House to Monocacy.",
-      "depth_check": "code clause: Juno = Maj Gen U. S. Grant, Shelby/Shelter = General, Imogene = 3 PM, Baptism = Baltimore; external (non-statistical): OR ser. I vol. 43 pt 1 pp.695-696, Grant at Monocacy 5 Aug 1864 8 p.m. and 11.30 p.m.",
+      "depth_check": "code clause: Juno = Maj Gen U. S. Grant, Shelby/Shelter = General, Imogene = 3 PM, Baptism = Baltimore; external (non-statistical): OR ser. I vol. 43 pt 1 pp.695-696, Grant at Monocacy 5 Aug 1864 8 p.m. and 11.30 p.m.; second audit (AUD2-LEDGER-32): the trip printed, New York Herald 10 Aug 1864 p.5 and New-York Daily Tribune 10 Aug 1864 p.1 (Washington 3 p.m. train, special car from Baltimore at the Relay House, visit kept secret); W. P. Smith's B&O office printed (Summers 1951)",
       "depth_note": "8 H of 8 code-word groups (Relay plain; names plain; FIX-FM16 recount from decode.py)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-MS18g)'"
+        "AUDIT.md '## AUDIT (FV-MS18g)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-32)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-MS18g verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -11656,7 +11658,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Washington sent ledger): Q.M. Gen. Meigs to Col. Donaldson, Nashville, 16 Sept 1864: relieve Col. Crane as disbursing officer (E349, first message)",
       "line": "The second message on the page, Stanton to Grant ('a long cipher despatch is coming through from General Meade ...'), is printed in The Papers of Ulysses S. Grant vol. 12; the first, read at grade H with War Department Cipher No. 1, is Quartermaster General Meigs asking Col. Donaldson at Nashville on 16 September 1864 who could relieve Col. Crane as disbursing officer, since Crane had been appointed Inspector; the resulting orders are printed in the Army and Navy Official Gazette, the telegram itself was not located (searched 9 Oct 2026).",
-      "gap": "N3 (weak, bordering N2) one audit (FV-MS18g) for message 1; message 2 N1 (Grant Papers vol. 12); not N4: Meigs letter books (NARA RG 92), OR ser. III vol. 4 by reading, HathiTrust, JSTOR not searched",
+      "gap": "N3 (weak, bordering N2) two audits (FV-MS18g, AUD2-LEDGER-32) for message 1; message 2 N1 (Grant Papers vol. 12); not N4: Meigs letter books (NARA RG 92), OR ser. III vol. 4 by reading, HathiTrust, JSTOR not searched; second audit (AUD2-LEDGER-32): Gazette/Army and Navy Journal orders dated about 23-27 Sept 1864, other wording; Nashville Daily Union 3 Dec 1864 p.4 shows Crane as Inspector with a separate disbursing officer",
       "depth": "D3",
       "completeness": "message 1: 7 H of 7 code-word groups; message 2: 6 C by print",
       "phrases": [
@@ -11667,16 +11669,17 @@
         "Huntington mssEC 18 (obj 10074) p.177, pointer 9843, E349"
       ],
       "depth_sentence": "On 16 September 1864 Meigs told the chief quartermaster at Nashville that Col. Crane, newly appointed Inspector, must be relieved of his duties as disbursing officer.",
-      "depth_check": "code clause: Pandora/Paradise = Colonel, Vinton = Quartermaster, Sugar = Interrogation; external (non-statistical): Army and Navy Official Gazette memoranda directing Donaldson to relieve Col. J. C. Crane, Inspector Quartermaster's Department, at Nashville; OR ser. I vol. 45 pt 1 p.1167 (Col. J. C. Crane, Nashville); message 2 word for word in Grant Papers vol. 12",
+      "depth_check": "code clause: Pandora/Paradise = Colonel, Vinton = Quartermaster, Sugar = Interrogation; external (non-statistical): Army and Navy Official Gazette memoranda directing Donaldson to relieve Col. J. C. Crane, Inspector Quartermaster's Department, at Nashville; OR ser. I vol. 45 pt 1 p.1167 (Col. J. C. Crane, Nashville); message 2 word for word in Grant Papers vol. 12; second audit (AUD2-LEDGER-32): Gazette/Army and Navy Journal orders dated about 23-27 Sept 1864, other wording; Nashville Daily Union 3 Dec 1864 p.4 shows Crane as Inspector with a separate disbursing officer",
       "depth_note": "message 1: 7 H of 7 code-word groups; message 2: 6 C by print"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-MS18g)'"
+        "AUDIT.md '## AUDIT (FV-MS18g)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-32)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-MS18g verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -11697,7 +11700,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Washington sent ledger): Maj. Wm. Redwood Price, Cavalry Bureau, to Col. A. G. Brackett, St Louis, 10 Nov 1864: Pleasonton's and Grierson's commands and horses (E350)",
       "line": "Read at grade H with War Department Cipher No. 1: on 10 November 1864 Maj. Wm. Redwood Price of the Cavalry Bureau told Col. A. G. Brackett, special inspector of cavalry, at the Planters House in St Louis that the General-in-Chief had countermanded the orders, and asked to be told at the Burnet House, Cincinnati, on 12 November when Pleasonton's and Grierson's commands would reach St Louis and how many serviceable horses there were for issue; not located in print (searched 9 Oct 2026).",
-      "gap": "N3 one audit (FV-MS18g); not N4: Cavalry Bureau records (NARA), St Louis press, HathiTrust, JSTOR not searched; OR I/41 pt 4 and I/45 pt 1 grepped, context only",
+      "gap": "N3 two audits (FV-MS18g, AUD2-LEDGER-32); not N4: Cavalry Bureau records (NARA), St Louis press, HathiTrust, JSTOR not searched; OR I/41 pt 4 and I/45 pt 1 grepped, context only; second audit (AUD2-LEDGER-32): Brackett's title Special Inspector of Cavalry printed (Army of the Cumberland, July 1864-Feb 1865)",
       "depth": "D3",
       "completeness": "22 H of 22 code-word groups (Tomama read Panama = Cavalry; Planters, Pleasonton plain)",
       "phrases": [
@@ -11708,7 +11711,7 @@
         "Huntington mssEC 18 (obj 10074) p.229, pointer 9895, E350"
       ],
       "depth_sentence": "On 10 November 1864 the Cavalry Bureau's Major Price asked Col. Brackett at St Louis when Pleasonton's and Grierson's cavalry would arrive there and how many serviceable horses were on hand for them.",
-      "depth_check": "code clause: Panama = Cavalry, Gaul/Geneva = St Louis, Booby = Cincinnati, Spartan = Horse, Polka = Command, Empress = Nashville; external (non-statistical): OR ser. I vol. 45 pt 1 p.898 (Price expected at Louisville 14 Nov; 'Special Inspector Cavalry'), p.952 (Major Brackett of the Cavalry Bureau; Grierson's men at Saint Louis), p.1001 (Price, assistant inspector general of the Cavalry Bureau)",
+      "depth_check": "code clause: Panama = Cavalry, Gaul/Geneva = St Louis, Booby = Cincinnati, Spartan = Horse, Polka = Command, Empress = Nashville; external (non-statistical): OR ser. I vol. 45 pt 1 p.898 (Price expected at Louisville 14 Nov; 'Special Inspector Cavalry'), p.952 (Major Brackett of the Cavalry Bureau; Grierson's men at Saint Louis), p.1001 (Price, assistant inspector general of the Cavalry Bureau); second audit (AUD2-LEDGER-32): Brackett's title Special Inspector of Cavalry printed (Army of the Cumberland, July 1864-Feb 1865)",
       "depth_note": "22 H of 22 code-word groups (Tomama read Panama = Cavalry; Planters, Pleasonton plain)"
     }
   ],

@@ -12674,3 +12674,78 @@ JSTOR-QUEUE.tsv rows.
 Requests: hdl.huntington.org 12 (8 CISOSEARCHALL, 4 item info; 11 x 200, 1 RemoteDisconnected retried once after a pause); be-api.us.archive.org 20
 (4 x 502; Murray retried once, answered); www.googleapis.com 6; api.openalex.org 2; api.core.ac.uk 2; www.loc.gov 3 search (2 more cut off by the session timeout) + 10
 page/full-text.
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER-32)
+
+Second verifier AUD2-LEDGER-32 (account 4, for the orchestrator (account-4); row queued by LANE LEDGER (account 1)), 9 Oct 2026, 22:01-22:2x UTC by
+`date -u`; a separate session and account from the reader MS18-R4 and the first auditor FV-MS18g (account 1); this session had not read or audited these
+entries before. Scope: **E347, E349 message 1, E350** (WORK-QUEUE AUD2-LEDGER-32; E349 message 2 is N1 and was not re-audited). Nothing decoded beyond key
+look-ups. Key source: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Re-derivation: `python3 ciphers/eckert-1864/decode.py
+--check` -> "reading.md is current" (after FIX-FM16 carried FV-MS18g s.5: E347 Relay plain, H 8; E350 Panama/Planters/Pleasonton, H 22). Image: not
+re-checked (FV-MS18g eye-checked every graded line at 2400 px; no token below turns on the image). Committed (`ms18/`): `aud2_ledger32_hdl.py` + `.out`,
+`aud2_ledger32_info.out` (13 CONTENTdm queries FV-MS18g did not run, 10 item infos); `aud2_ledger32_search.py` + `.out` (Google Books, Chronicling America
+by date window, IA advancedsearch and be-api, S2, CORE, OpenAlex); `aud2_ledger32_gb2.py` + `.out` (Google Books snippet follow-ups);
+`aud2_ledger32_ca_pages.py` (named Chronicling America page OCRs; texts in scratch, passages quoted below); three JSTOR-QUEUE.tsv rows.
+
+### 1. Families FV-MS18g did not cover, and what this pass did
+| Family | FV-MS18g | This pass |
+|---|---|---|
+| Huntington CONTENTdm, new queries (all pointers) | 16 queries | 13 more: Crane 2 (9843 own; 2555 = Crane Creek, 1863, other); Donaldson Meigs 3 (9843 own; **10351** = Donaldson to Meigs, Nashville 23 May 1864, other; 7824 = 1865, other); "Inspector Quartermaster" 0; **Smith car 4** (9811 own; **9111** = 1 Nov 1864, "to Sampson ... to W. P. Smith: Please let me have your special car for self & staff ... strictly confidential", Hardie/Knox, other; 4764, 4572 not opened); Grant Relay 11 (9685 = Sherman via "Relay", Mar 1864, other; rest not opened); Monocacy car 2 (9811 own; 2988 not opened, a 1862-63 pointer); Comstock Monocacy 0; Brackett Price 1 (9895 own); Grierson 16 (9907 = 5 Dec 1864 remount figures, other; 10231 Apr 1864, other); Pleasonton horses 2 (3545, 7270 not opened); countermands 1 (7201 not opened); Cavalry Bureau 15 (10163, 10227, 10285 = Feb-Apr 1864, other); Redwood 4 (= FV-MS18g's 8792/8036/8040/8042). **No duplicate or clear copy of the three** |
+| Press of the day, E347 (Chronicling America, 5-12 Aug 1864) | not searched | 3 queries (18, 14, 5 pages); 5 pages read: **New York Herald 10 Aug 1864 p.5** and **New-York Daily Tribune 10 Aug 1864 p.1** print the same correspondent's letter ("Monocacy, August 8"): "Friday afternoon, at a little before five o'clock, the loungers at the Relay House were somewhat astonished to see a small man wearing three stars ... descend from a car of the Washington 3 P.M. train ... when a special car from Baltimore hauled up at the Relay House, and in a moment after the Lieutenant General was on his way to hold a conference with General Hunter ... at Monocacy Junction"; the Tribune's own correspondent (7 Aug): "his arrival was quite unexpected; not half a dozen people being aware of his intended visit until long after he had arrived. The special train which brought him from Baltimore ...". Evening Star 9 and 10 Aug p.1, 5 Aug p.2: nothing on the trip |
+| Press, E349 (Nashville, Sept-Dec 1864) | not searched | 2 queries (4, 24 pages); 2 pages of the **Nashville Daily Union** read: its Quartermaster's Department directory, 12 Oct 1864 p.4 ("Assistant to Capt. J. C. Crane, A. Q. M.") and **3 Dec 1864 p.4**: "COL. J. C. CRANE, Inspector Q M Dep't, Receipting and Distributing Quartermaster U. S. Military Railroads" with a separate "General Disbursing Officer" listed below him (OCR of the name unreadable): the change E349 asks for, in effect by December |
+| Press, E350 (St Louis, Cincinnati, Nov-Dec 1864) | not searched | 3 queries (6, 387 noise, 3 pages): titles only (Chicago Tribune 18 and 28 Nov, Nashville Daily Union 11/24/26 Nov); no St Louis or Cincinnati daily of Nov 1864 among the hits; pages not read |
+| Army and Navy Official Gazette, N2 test for E349 msg 1 | snippets, dates not established | Google Books snippets again (`dQpJAQAAIAAJ`, `9b1OAQAAMAAJ`, `ePkVZ9RSsacC`): the Crane orders sit in the memoranda next to entries dated **23 and 27 September 1864**; the *Army and Navy Journal* 1864 (`vmxFAQAAMAAJ`) prints the first order ("relieve Colonel J. C. Crane, Inspector Quartermaster's Department, in his duties at Nashville, Tennessee"). Wording of both orders as FV-MS18g quoted; neither says who should relieve him or that the two duties are incompatible. Not on IA (advancedsearch title 0) |
+| Grant Papers vols. 11-13 (IA be-api, no login) | vol. 11 4 terms, vol. 12 Crane | vol. 11 "Relay House" 0, "special car" 0; "Smith Baltimore" and "Garrett" 502 (not retried); vol. 12 Donaldson 1 hit (snippet not shown in the response; not opened), Brackett 0; "Grierson horses" 502; vol. 13 Brackett 0. No positive control this pass (FV-MS18g's Monocacy control on vol. 11 stands) |
+| Google Books (targeted) | 8 queries | 17 more: Summers, *The Baltimore and Ohio in the Civil War* (1951, `lfBKT1EOzsEC`): "Master of Transportation W. P. Smith had the B & O line in operation ..." -- **Smith's office is printed**, so FV-MS18g's "(B&O master of transportation, I)" can rise to C-grade context; no snippet of this trip. *The Last Battle of Winchester* (2013, `eaRwEAAAQBAJ`): "at the Relay House, Maryland, Grant stepped onto the wooden platform ..." (the Herald account retold; telegram not quoted in the snippet). Brackett: "Special Inspector of Cavalry, Army of the Cumberland, July 1864 - Feb. 1865" (*Colonels in Blue*, 2019) and his own title page (*History of the United States Cavalry*, 1865); OR (Google `nB5RAQAAIAAJ`): "Brackett, First U. S. Cavalry, is temporarily announced as special inspector of cavalry, for the Cavalry Bureau, in the Department of Kentucky" (Palmer). "Redwood Price" Brackett 0; "incompatible" Meigs Crane 0 |
+| S2, CORE, OpenAlex | not searched | S2 3, CORE 2, OpenAlex 2: nothing on the three telegrams |
+| JSTOR | not queued | 3 rows queued (E347 family i; E349 family ii on the Gazette's own wording; E350 family i); never blocking |
+| Unreachable / not searched | -- | W. P. Smith / B&O papers (Maryland Center for History and Culture; B&O Railroad Museum); Meigs letter books (NARA RG 92); Cavalry Bureau letters sent (NARA RG 94/107); Brackett papers; OR ser. III vol. 4 by reading (IA advancedsearch found no id this pass); St Louis and Cincinnati dailies page by page (not among the Chronicling America hits); Grant Papers pages (be-api only, two 502s); HathiTrust (Cloudflare); NARA catalog (no key) |
+
+### 2. Findings
+- **E347.** The telegram itself is still not located. The trip it arranged is now printed, from the press of 10 August 1864, in every particular the
+  decode gives: the Washington 3 p.m. train (the decoded `{time: 3 PM}`), the Relay House (confirms "Relay" plain, FV-MS18g's fix), a special car from
+  Baltimore (Smith's car), Monocacy Junction, and the secrecy ("not half a dozen people being aware of his intended visit"). One difference: the Herald has
+  Grant with "four staff officers", the telegram "one of his staff" (plan vs event; not a decode question). The holder's 9111 (1 Nov 1864, Smith's
+  "special car ... strictly confidential", through Sampson) is a sibling of the same arrangement, not a copy. The press account is a print of the event,
+  not of this telegram's text, so it does not make N2. **N3 stands; D3 stands with a stronger, non-statistical external check** (two newspapers, one of
+  which times the train). Smith's office (B&O master of transportation) is printed in Summers 1951: context C, no longer I.
+- **E349 message 1.** N2 test, as the row asked: the Gazette and the *Army and Navy Journal* print two Quartermaster General's orders of about 23-27
+  September 1864 relieving Crane, first "in his duties at Nashville", then "of the duties of Disbursing Officer of the United States Military Railroads of
+  the West". They are the action that followed the telegram, a week later and in other words; the telegram's own plaintext (the question who can relieve
+  him, and the reason, that the duties of Inspector and of disbursing officer are incompatible) is not in them or anywhere searched. N2 needs this
+  plaintext known elsewhere; it is not. **N3 stands, weak, bordering N2**, as FV-MS18g set it. The Nashville Daily Union directory of 3 Dec 1864 (Crane
+  "Inspector Q M Dep't, Receipting and Distributing Quartermaster", with a separate General Disbursing Officer) shows the change in effect: a further
+  external check for D3.
+- **E350.** Not located. Brackett's title "Special Inspector of Cavalry" (Army of the Cumberland, July 1864 - Feb 1865, and for the Cavalry Bureau) is
+  printed, confirming the Panama = Cavalry fix. No new print of the telegram or its countermanded orders. **N3 stands; D3 stands.**
+
+### 3. Class (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E347 | **N3** (kept) | period | **D3** (kept: H 8 of 8 code groups after FIX-FM16, Side as indicator; external non-statistical, strengthened: New York Herald 10 Aug 1864 p.5 and New-York Daily Tribune 10 Aug 1864 p.1 on Grant's 3 p.m. train, the Relay House and the special car from Baltimore; OR I/43 pt 1 pp.695-696) | not located after FV-MS18g's search and s.1 |
+| E349 msg 1 | **N3** (kept; weak, bordering N2: the resulting orders of about 23-27 Sept 1864 are printed in the Army and Navy Official Gazette and the Army and Navy Journal, the telegram is not) | period | **D3** (kept: H 7 of 7; external: the Gazette orders, the Nashville Daily Union directory of 3 Dec 1864) | not located after FV-MS18g's search and s.1 |
+| E350 | **N3** (kept) | period | **D3** (kept: H 22 of 22; external: OR I/45 pt 1 pp.898, 952, 1001; Brackett's printed title) | not located after FV-MS18g's search and s.1 |
+
+- Not N4 for any: the B&O/Smith papers, Meigs letter books, Cavalry Bureau records, OR ser. III vol. 4 by reading, the St Louis and Cincinnati press,
+  HathiTrust not searched; JSTOR rows open. Not D4: no fresh rule-7 re-derivation session.
+- **Safe sentences.** E349 and E350: FV-MS18g's, unchanged (E349 may say "the resulting orders, of about 23-27 September, are printed in the Army and
+  Navy Official Gazette"). E347: "Read at grade H with War Department Cipher No. 1: on 5 August 1864 W. G. Wood telegraphed W. P. Smith, the Baltimore
+  and Ohio's master of transportation, at Baltimore through Sampson that General Grant and one of his staff would go to Monocacy that afternoon, leaving
+  Washington on the 3 p.m. train for the Relay House, where Smith's car was to meet him, and that the General's departure must be kept a profound secret.
+  The trip itself is reported in the New York Herald and the New-York Daily Tribune of 10 August 1864 (the 3 p.m. train, the special car from Baltimore
+  at the Relay House); this telegram was not located in print or in the Huntington's full-text search (searched 9 Oct 2026)." Depth sentence (D3):
+  FV-MS18g's, unchanged.
+- **Unsafe:** "first", "new", "unpublished" or "previously unread" for any; E347 "the press did not know of the trip" (it reported it five days later);
+  E349 "the Gazette prints this telegram" (it prints the later orders); E347 "Grant took one staff officer" as fact (the Herald says four).
+
+### 4. Postmortem and fixes (for the next FIX job; reading.md not edited here)
+- No over-claim found in FV-MS18g's classes or counts; FIX-FM16 carried its s.5. status.json for E347, E349, E350: `audit_status` "two audits", this
+  section added to `audit_refs`, `gap` updated; E347 `line` takes the safe sentence above.
+- **ciphertext.txt E347 header/note:** "(B&O master of transportation, I)" -> "(B&O master of transportation; Summers 1951, C context)"; print note: "trip
+  reported, New York Herald 10 Aug 1864 p.5, New-York Daily Tribune 10 Aug 1864 p.1 (3 p.m. train, special car from Baltimore at the Relay House)".
+- **ciphertext.txt E349 note:** "Gazette orders dated about 23-27 Sept 1864 (adjacent memoranda); Nashville Daily Union 3 Dec 1864 p.4 lists Crane as
+  Inspector and receipting quartermaster, a separate disbursing officer".
+- SECOND-OPINIONS-QUEUE rows SO-ECKERT-E347/E349/E350: no count or class changed, rows left as filed; the E347 prompt should carry the Herald/Tribune lines
+  before it is answered.
+Requests: hdl.huntington.org 23 (13 CISOSEARCHALL, 10 item info; all 200); www.googleapis.com 17; www.loc.gov 8 search + 14 page/full-text (all 200);
+archive.org 3 (advancedsearch); be-api.us.archive.org 8 (3 x 502, not retried); api.semanticscholar.org 3; api.core.ac.uk 2; api.openalex.org 2.
