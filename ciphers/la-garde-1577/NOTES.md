@@ -1565,3 +1565,68 @@ Read so far: 0 of 229 cipher tokens graded H/C/S (no reading exists; homophonic/
 - [x] image-check: 9 cells settled from the image in WC-LAGARDE; two 10/18 cells remain
 - [ ] retry: homophonic/masc closed by the LAG-GAP score-gap gate (power PASS, target FAIL); next is a different family (running key), not another homophonic run
 Verdict: keep going: 3 internal gaps; cheapest next: running_key family_run with matched control at 0.055/0.084 plus the LAG-GAP score-gap gate, ~$2
+
+## LAG-NEXT: the next family on the base codes at N=229 -- `running_key`, matched control first (9 Oct 2026, account 2, LANE FAMILY-A2d, Opus, CPU only)
+
+**Job:** LAG-GAP's named next step. No network beyond git, no vision, no subagents. Intake gate: lane orchestrator 00:2x UTC,
+exit 0. Prior work: `tools/prior_work.py la-garde-1577 --item-spec 'shelfmark=KHA A 11/XIV C/M-12;date=1577-11-28;sender=La
+Garde;recipient=Willem van Oranje' --step-type decode --fetch` -> **exit 4**: LEAD 1-own (this job's own 00:17 ROOM claim;
+recorded CLEAR in `prior-work.tsv`), LOOK 2-leaf (3 crops owed), UNCHECKED 3-tomokiyo, 3-solver, 4-editions, UNCHECKED-NET
+3-solver. Check 1 by hand: HYPOTHESES.md had no running_key row, so the step had not been done. Checks 2-4 concern a plaintext
+prior reading and stay **unchecked** (this job claims no reading; same position as LAG-HOM/LAG-GAP; gap below).
+
+**design_prior** (`python3 tools/design_prior.py --no-write ciphers/la-garde-1577/families/basecode_cipher.txt`, verbatim):
+```
+229 tokens, 26 distinct, inventory digits; relabel-invariant statistics: True; references at this N: 209
+multi-sign (homophonic/nomenclator/syllabary) d=0.11 envelope=0.3 null_p05=0.11 -> plausible
+letter-for-letter      d=0.25 envelope=1.07 null_p05=0.36 -> plausible
+mixed (partial table)  d=0.97 envelope=1.7 null_p05=0.97 -> plausible
+code                   d=1.75 envelope=1.99 null_p05=1.79 -> plausible
+shuffled-input false-positive rate: 0.095
+fine family ranking (advisory, not calibrated): homophonic=0.11; alphabet substitution=0.25; nomenclator=0.27; syllabary=0.56; mixed=0.97; code numbers=1.75
+```
+Homophonic and alphabet substitution (masc) are closed by LAG-GAP; syllabary and wordcode have rows. Nomenclator, the highest
+fine-tier family without a row, was not taken (reasons in `PREREG-LAG-NEXT.md`: the fine tier is advisory by the tool's own
+docstring, and the repository's `nomenclator` family is a numeric word code with a family book >= 100 that cannot match a
+1-29 code set). Per the brief, **running_key**.
+
+**Pre-registration:** `PREREG-LAG-NEXT.md` (commit 6cd771aa, pushed 00:20 UTC before any run). The family had no error
+parameter, so a `noise` param was added to `tools/families/running_key.py` (a share p of control cipher letters redrawn at the
+control's own letter frequencies; offline test `tools/tests/test_running_key_noise.py`, ok; `test_running_key.py` still ok).
+
+**Runs** (`tools/family_run.py specs/la-garde-1577.json --family running_key --cipher .../families/basecode_cipher.txt --tokens
+space --seeds 3 --gate 0.6 --control-only --measured-error p --param noise=p --corpus tools/data/fr16`; control laid on the
+target's 15 message lengths, N=229; rows verbatim in HYPOTHESES.md):
+
+| Control noise | Recovery, seeds 1-3 | Mean | Gate 0.60 |
+|---|---|---|---|
+| 0.055 (measured, prereg) | 0.192 / 0.214 / 0.114 | **0.173** | not met |
+| 0.084 (bracket, prereg) | 0.218 / 0.240 / 0.223 | **0.227** | not met |
+| 0 (descriptive upper bound, not a gate) | 0.314 / 0.284 / 0.218 | 0.272 | not met |
+
+**Read-out (fixed in the prereg):** control below gate at both error levels, so **running_key is untestable by this tool
+(`running_key.py` beam decoder, order 6, beam 3000) at N=229 with these message lengths** -- "untested-by-this-tool", not a
+negative. The target was not run, no code-to-tableau map was chosen, and the LAG-GAP score-gap gate was not reached (it needs a
+gated control first). Even a noiseless control reads only 27%: the limit is the length of the messages (4-28 letters each,
+which a two-stream book-key decoder must split into plain and key with no context), not the transcription error. Grades: 0
+cipher tokens read (H 0, C 0, S 0, M 0, I 0); no reading. Status unchanged (`open`). Nothing for a verifier.
+
+Requests: none (git only). Vision: 0. Files: `PREREG-LAG-NEXT.md`, three HYPOTHESES.md rows, `prior-work.tsv`,
+`tools/families/running_key.py` (noise param), `tools/tests/test_running_key_noise.py`, this section.
+
+## Remaining gaps (LAG-NEXT, 9 Oct 2026)
+Read so far: 0 of 229 cipher tokens graded H/C/S (no reading exists; homophonic/masc excluded by LAG-GAP; running_key untestable by running_key.py at N=229, control 0.173/0.227 vs gate 0.60)
+- syllabary and wordcode at the measured error - blocker: not-attempted; their only rows (WC-LAGARDE2) ran the control at err 0.23, far above the 0.055 LAG-ERR measured, so CONTROL BELOW GATE there was not a test at the target's real error; next: `family_run.py --family syllabary --param err=0.055` (then 0.084), control-only first, then LAG-GAP-style gate if it gates, ~$2
+- running-key / code-layer designs at N=229 - blocker: too-short; LAG-NEXT: the running_key control reads 27% even with no noise on the target's 15 message lengths (4-28 letters), so the design cannot be tested by this instrument on this text; reopens only with more same-system ciphertext (pooling) or a different instrument
+- two M-grade, not image-settled `10`/`18` cells (6179 p2L26.6, p2L27.13) - blocker: not-attempted; witness reads 18, committed 10; next: crop check from images/06179_p2.png, ~$1.5
+- plaintext prior-work rows (leaf gloss LOOK, Tomokiyo, solver caches, Gachard window) - blocker: not-attempted; prior_work.py exit 4 again on 9 Oct 2026 (LAG-NEXT), owed before any decode is called a reading; next: `prior_work.py --fetch` then `--record`, ~$1
+
+## Escalation (LAG-NEXT, 9 Oct 2026)
+- [ ] siblings: Gachard / WVO sibling sweep done in ZX2-LAG2; same-system pooling for N is still the route to power for running key, no new sibling found
+- [n/a] clear-pages: no clear page of this cipher identified; margin words placed in A2-LAG
+- [n/a] known-keys: no period key for this correspondent located
+- [x] print: Groen VI pp. 249-251 omits the cipher (footnote read); GSME/LMSAC read in OX-LAG
+- [n/a] key-rebuild: needs a family whose verdict statistic passes on its control decodes first
+- [x] image-check: 9 cells settled from the image in WC-LAGARDE; two 10/18 cells remain
+- [ ] retry: homophonic/masc closed (LAG-GAP); running_key untestable by running_key.py at this N (LAG-NEXT); syllabary/wordcode never run at the measured error 0.055
+Verdict: keep going: 3 internal gaps; cheapest next: syllabary family_run control at the measured error 0.055/0.084, ~$2
