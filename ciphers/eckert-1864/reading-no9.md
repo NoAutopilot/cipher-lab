@@ -356,7 +356,7 @@ Code-word tokens: H 10.
 
 Code-word tokens: H 4.
 
-**O9-CA | mssEC 25 (obj 5952) p.26, pointer 5570 | 10 Feb 1864, Sheldon at Fort Monroe to G. W. Baldwin at Baltimore (old vocabulary, "Vienna ... Clara"; signed John I Davenport, private secretary)**
+**O9-CA | mssEC 25 (obj 5952) p.26, pointer 5570 | 10 Feb 1864, Sheldon at Fort Monroe to G. W. Baldwin at Baltimore (old vocabulary, "Vienna ... Clara"; Davenport, private secretary, for Maj. Gen. Butler, by Sheldon, to G. W. Baldwin, Baltimore, and Major Mulford, steamer New York; FIX-FM12, AUDIT FV-FM10c s.5)**
 
 Geo W Baldwin Balto [Major] mulford [Steam Boats] [New York] [Baltimore] period the [Maj. Gen.] desires to know where A F Brengle has gone whom you brought down on flag of truce boat answer immed'y to me signed John I Davenport private secretary to [B. F. Butler] {time: 10.30 AM} Clear and Cool Geo D Sheldon
 
@@ -368,7 +368,7 @@ Geo D Sheldon Ft. M. [B. F. Butler] [(Fort) Monroe] period Brengle is in this Ci
 
 Code-word tokens: H 5.
 
-**O9-CC | mssEC 25 (obj 5952) p.26, pointer 5570 | 11 Feb 1864, G. W. Baldwin at Baltimore to Sheldon at Fort Monroe (old vocabulary, "abbey ... Cora"; signed John E Mulford)**
+**O9-CC | mssEC 25 (obj 5952) p.26, pointer 5570 | 11 Feb 1864, G. W. Baldwin at Baltimore to Sheldon at Fort Monroe (old vocabulary, "abbey ... Cora"; signed John E Mulford; printed OR ser. II vol. 6 p.943, Mulford to Butler, Baltimore 11 Feb 1864 9.30 a.m.; FIX-FM12, AUDIT FV-FM10c s.5)**
 
 Geo D Sheldon Ft. M [B. F. Butler] have just found Brengle will send him down tonight prisoners not yet arrived John E Mulford [Major] &c {time: 9.30 AM} GW Baldwin
 
@@ -380,7 +380,7 @@ John Horner New York for William Lee Chief detective [Brig. Gen.] Hays office [N
 
 Code-word tokens: H 4.
 
-**O9-BD | Page 227 | 5771 | mssEC 25 (obj 5952, pointer 5771), 13 July 1864 New Castle, M. V. B. Buell to Maj. Eckert, copy to Sheldon: Ord (Baltimore) to Grant, rebel cavalry crossed the railroad to Washington between Laurel and Beltsville; read in No. 9 (No. 1 and No. 2 give nonsense); printed OR I/37 pt 2, Ord to Grant, Baltimore 13 July (FM-R7a; row 5771/1; image-read at 2400 px)**
+**O9-BD | Page 227 | 5771 | mssEC 25 (obj 5952, pointer 5771), 13 July 1864 New Castle, M. V. B. Buell to Maj. Eckert, copy to Sheldon: Ord (Baltimore) to Grant, rebel cavalry crossed the railroad to Washington between Laurel and Beltsville; read in No. 9 (No. 1 and No. 2 give nonsense); printed OR I/37 pt 2 p.293, Ord to Grant, Baltimore 13 July (FM-R7a; FIX-FM12, AUDIT FV-FM10c s.5; row 5771/1; image-read at 2400 px)**
 
 Maj. Eckert "D. I." Copy to Sheldon following message passed here to [U. S. Grant] [Baltimore] July thirteen one off the staff here has received information which he deems reliable that a force off rebel [Cavalry] crossed the [Rail Road] two [Washington] between Laurel and Beltsville with instructions two go to point look out and release the rebels confined there precaution would no harm a rebel force is reported south of the [Rail Road] near the places named signed [Maj. Gen.] ord period [Telegraphs] Communication is all right to [Baltimore] but [Rail Road] not they run steamers from have D grass to [Baltimore] painful rumors here regard to [Washington] MVB Buell
 

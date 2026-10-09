@@ -11153,7 +11153,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): G. D. Sheldon, Fort Monroe, to T. T. Eckert, 27 May 1864: the York at Yorktown and the Mattapony at West Point too wide to string wire across (E319)",
       "line": "Read at grade H with War Department Cipher No. 1: on 27 May 1864 Sheldon at Fort Monroe reported to Eckert that the York at Yorktown was a little over half a mile across and the Mattapony at West Point three quarters, too wide to string wire over because tall-masted vessels must pass; not located in the Official Records (ser. I vol. 36 pt 3 prints the next days' telegrams on the same line), Plum's Military Telegraph or the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3 one audit (FV-FM10b); 'pony' plain (Mattapony, M); tulip = Open at this occurrence (reading.md still prints the KEY-TW Period value, FIX job); not N4: Grant Papers vols. 11-12 by be-api snippets only (two queries 502), RG 107 and the press not searched, Google Books weak",
+      "gap": "N3 one audit (FV-FM10b); 'pony' plain (Mattapony, M); tulip = Open at this occurrence (FIX-FM12, 9 Oct 2026: set by a per-entry gloss, reading.md now prints Open); not N4: Grant Papers vols. 11-12 by be-api snippets only (two queries 502), RG 107 and the press not searched, Google Books weak",
       "depth": "D3",
       "completeness": "15 H + 1 M of 16 code-word tokens ('pony' plain-phonetic, Mattapony)",
       "phrases": [

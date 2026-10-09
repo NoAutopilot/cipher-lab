@@ -1649,25 +1649,25 @@ Code-word tokens: H 31.
 
 Code-word tokens: H 20.
 
-**E318 | Page 165 | 5709 | mssEC 25 (obj 5952, pointer 5709), 28 May 1864 Washington, Eckert to Sheldon: the Gloucester route is best, 100 men can guard that line, Mackintosh's building party, Bickford's operators (FM-R7b; row 5709/1; image-read at 2400 px)**
+**E318 | Page 165 | 5709 | mssEC 25 (obj 5952, pointer 5709), 28 May 1864 Washington, Eckert to Sheldon: the Gloucester route is best, 100 men can guard that line, Mackintosh's building party, Bickford's operators (FM-R7b; FIX-FM12, AUDIT FV-FM10a s.5; row 5709/1; image-read at 2400 px; whole entry image-read by FV-FM10a)**
 
 [General-in-Chief] opinion is that the Gloucester route is the best [100] [Men] can [Guard (-ed, -ing)] that line where a [Regiment] could not the other pause unless u know of some very good reason why it should not be Dunn let the work be commenced first [As soon as] Mackintosh arrives with his party & push through fast as Can send Logue & Embree to Jamestown and hold blissfull & Glazier ready for white house send Collings to [Yorktown] & Homan to Gloucester if office is needed there [.] Bickford has some operators with him who will be stationed at [West Point] send Cowans with Mackintoshs building party let him come in circuit twice a day & [Report] progress and inform me all blank T. T. Eckert
 
 Code-word tokens: H 11.
 
-**E319 | Page 151 | 5695 | mssEC 25 (obj 5952, pointer 5695), 27 May 1864 Ft Monroe, Sheldon to Eckert: distances across York River at Yorktown and Mattapony at West Point, cannot string wire, navigation must remain open, country as favourable as the route up the peninsula (FM-R7b; row 5695/2; page fetched at 2400 px, entry not eye-checked)**
+**E319 | Page 151 | 5695 | mssEC 25 (obj 5952, pointer 5695), 27 May 1864 Ft Monroe, Sheldon to Eckert: distances across York River at Yorktown and Mattapony at West Point, cannot string wire, navigation must remain open, country as favourable as the route up the peninsula (FM-R7b; FIX-FM12, AUDIT FV-FM10b s.5; row 5695/2; page fetched at 2400 px; eye-checked by FV-FM10b)**
 
-Distance [Cross (-ed, -ing)] York [River] at [Yorktown] a little over half a [Mile] [,] [Cross (-ed, -ing)] Mattie [9] at [West Point] three quarters of a [Mile] [,] can not string wire a [Cross (-ed, -ing)] at Either [Point] as navigation must remain [.] for vessels [,] some of which have high masts [.] from what I can learn [Of the] country it is fully as favorable for bill ding line as the route up peninsula will inquire further Geo D Sheldon
+Distance [Cross (-ed, -ing)] York [River] at [Yorktown] a little over half a [Mile] [,] [Cross (-ed, -ing)] Mattie pony at [West Point] three quarters of a [Mile] [,] can not string wire a [Cross (-ed, -ing)] at Either [Point] as navigation must remain [Open] for vessels [,] some of which have high masts [.] from what I can learn [Of the] country it is fully as favorable for bill ding line as the route up peninsula will inquire further Geo D Sheldon
 
-Code-word tokens: H 15, S 1.
+Code-word tokens: H 15.
 
-**E320 | Page 158 | 5702 | mssEC 25 (obj 5952, pointer 5702), 27 May 1864 Washington, Eckert to Sheldon: O'Brien to stay at Bermuda Hundred in charge of cipher work, Caldwell to take it when the White House line is done, Mackintosh to bring builders (FM-R7b; row 5702/0; image-read at 2400 px)**
+**E320 | Page 158 | 5702 | mssEC 25 (obj 5952, pointer 5702), 27 May 1864 Washington, Eckert to Sheldon: O'Brien to stay at Bermuda Hundred in charge of cipher work, Caldwell to take it when the White House line is done, Mackintosh to bring builders (FM-R7b; FIX-FM12, AUDIT FV-FM10b s.5; row 5702/0; image-read at 2400 px; whole entry eye-checked by FV-FM10b)**
 
 I regret having ordered OBrien away from Bermuda hundreds he must remain there in charge attend to [Cipher] work etc which will be important and require careful working he is also better posted with that command than any one who can be sent there [.] when new line via White house is completed Caldwell will attend to all [Cipher] work and Doren the repairs [.] direct OBrien to send all operators that can be spared Nichols can remain with him direct Mackintosh to bring with him all builders and building material except sufficient for repairs to report to you where ever you may think proper to direct send copy this to OBrien as quick as possible get answer soon Thos T Eckert
 
 Code-word tokens: H 4.
 
-**E321 | Page 238 | 5782 | mssEC 25 (obj 5952, pointer 5782), 1 Sept 1864 Head Qrs A. P., Caldwell to Eckert: cable to be laid on the north side of the river, less danger from anchors, channel nearest the south shore (FM-R7b; row 5782/0; image-read at 2400 px)**
+**E321 | Page 238 | 5782 | mssEC 25 (obj 5952, pointer 5782), 1 Sept 1864 Head Qrs A. P., Caldwell to Eckert: cable to be laid on the north side of the river, less danger from anchors, channel nearest the south shore (FM-R7b; FIX-FM12, AUDIT FV-FM10b s.5; row 5782/0; image-read at 2400 px; two cipher copies: 5781 foot in wire order, 12319 received copy)**
 
 I think cab bell should be laid on [North] side of [River] as it will take less cab bell and will be less danger of being dragged up by anchors and channel most of way is nearest [South] shore D do wren Caldwell
 
@@ -1703,11 +1703,11 @@ Code-word tokens: H 3.
 
 Code-word tokens: H 3.
 
-**E315 | Page 206 | 5750 | mssEC 25 (obj 5952, pointer 5750), 14 June 1864 Ft Monroe, Sheldon to Maj. Eckert: S. P. Lee's telegram from flag ship Agawam, Farrar's Island, 13 June 10 PM via Ft Monroe 14th 9 PM, for Welles (printed ORN I/10, Lee to Welles) (FM-R7a; row 5750/1; image-read at 2400 px)**
+**E315 | Page 206 | 5750 | mssEC 25 (obj 5952, pointer 5750), 14 June 1864 Ft Monroe, Sheldon to Maj. Eckert: S. P. Lee's telegram from flag ship Agawam, Farrar's Island, 13 June 10 PM via Ft Monroe 14th 9 PM, for Welles (printed ORN I/10 p.146, Lee to Welles; clear copy in the holder's transcription, pointer 10415; received Washington 2.35 AM 15th) (FM-R7a; FIX-FM12, AUDIT FV-FM10a s.5; row 5750/1; image-read at 2400 px)**
 
 Maj Eckert Di flag ship agawam Farrars [Inland [sic: Island]] {date: June 13} {time: 10 PM} [By the way of] [Monroe] [14] {time: 9 PM} for [Secretary of Navy] [.] [Deserter]'s from [Rebel] Ironic lads confirm previous [Information] [.] [Rebel] tug from bend above fired a shot or two in this direction this after noon  {tail: [signed] [S. P. Lee] sprinkle of rain Geo D Sheldon}
 
 Code-word tokens: H 16.
 
-Totals over the 263 entries: H 4500, C 42, I 25, M 33, S 17, U 10.
+Totals over the 263 entries: H 4500, C 42, I 25, M 33, S 16, U 10.
 <!-- decode.py: derived block ends -->

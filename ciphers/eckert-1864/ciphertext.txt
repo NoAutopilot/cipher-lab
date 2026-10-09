@@ -3324,7 +3324,7 @@ plain-at: webster#1
 plain-at: webster#3
 note: FIX-FM10 (9 Oct 2026, AUDIT FV-FM9d s.5): the third Webster is the plain name (Col. R. C. Webster, chief quartermaster, Fort Monroe); the 5.30 PM reply is Webster's. Lead, not decoded: row 5786/1 (Butler's Hd Qrs reply, same page).
 
-### E318 | Page 165 | 5709 | mssEC 25 (obj 5952, pointer 5709), 28 May 1864 Washington, Eckert to Sheldon: the Gloucester route is best, 100 men can guard that line, Mackintosh's building party, Bickford's operators (FM-R7b; row 5709/1; image-read at 2400 px)
+### E318 | Page 165 | 5709 | mssEC 25 (obj 5952, pointer 5709), 28 May 1864 Washington, Eckert to Sheldon: the Gloucester route is best, 100 men can guard that line, Mackintosh's building party, Bickford's operators (FM-R7b; FIX-FM12, AUDIT FV-FM10a s.5; row 5709/1; image-read at 2400 px; whole entry image-read by FV-FM10a)
 Geo D Sheldon
 Ivory opinion is that the Gloucester route is the best
 plunge prolong spit can saddle that line where a whip
@@ -3340,9 +3340,9 @@ with Mackintoshs building party let him come in circuit twice
 a day & white progress and inform me all blank
 T. T. Eckert
 plain-at: white#1
-note: FM-R7b: Ivory (read General-in-Chief by the key) is probably 'my'; M. Image-read only down to 'Cowans'; the last lines are transcription only.
+note: FM-R7b: Image-read only down to 'Cowans'; the last lines were transcription only. FIX-FM12 (9 Oct 2026, AUDIT FV-FM10a s.5): the earlier note 'Ivory is probably my; M' is withdrawn: Ivory = General-in-Chief, H (key), identity open (sibling 5709/2; reply 5713/1); '[100] [Men]' may be rendered 'one hundred men'; whole entry image-read by FV-FM10a.
 
-### E319 | Page 151 | 5695 | mssEC 25 (obj 5952, pointer 5695), 27 May 1864 Ft Monroe, Sheldon to Eckert: distances across York River at Yorktown and Mattapony at West Point, cannot string wire, navigation must remain open, country as favourable as the route up the peninsula (FM-R7b; row 5695/2; page fetched at 2400 px, entry not eye-checked)
+### E319 | Page 151 | 5695 | mssEC 25 (obj 5952, pointer 5695), 27 May 1864 Ft Monroe, Sheldon to Eckert: distances across York River at Yorktown and Mattapony at West Point, cannot string wire, navigation must remain open, country as favourable as the route up the peninsula (FM-R7b; FIX-FM12, AUDIT FV-FM10b s.5; row 5695/2; page fetched at 2400 px; eye-checked by FV-FM10b)
 Maj Eckert Di
 Distance plum York Windsor at Hastings a little over
 half a spoon pekin pocket Mattie pony at Homer
@@ -3353,9 +3353,11 @@ high masts zodiac from what I can learn torch
 country it is fully as favorable for bill ding
 line as the route up peninsula will inquire further
 Geo D Sheldon
-note: FM-R7b: pony after Mattie reads [9] in the key, plainly 'River' (Mattapony); M. Transcription only, not eye-checked.
+plain: pony
+gloss: tulip=Open:H
+note: FM-R7b: pony after Mattie reads [9] in the key, plainly 'River' (Mattapony); M. FIX-FM12 (9 Oct 2026, AUDIT FV-FM10b s.5; KEY-BLIND): pony is plain (Mattie pony = Mattapony), M; tulip here = Open (H, key.md p.22 l.14, 'navigation must remain open for vessels'), not the section 7 KEY-TW row Tulip = Period (S), which E319 contradicts (counter-example to the 9/9 stop reads); entry eye-checked by FV-FM10b.
 
-### E320 | Page 158 | 5702 | mssEC 25 (obj 5952, pointer 5702), 27 May 1864 Washington, Eckert to Sheldon: O'Brien to stay at Bermuda Hundred in charge of cipher work, Caldwell to take it when the White House line is done, Mackintosh to bring builders (FM-R7b; row 5702/0; image-read at 2400 px)
+### E320 | Page 158 | 5702 | mssEC 25 (obj 5952, pointer 5702), 27 May 1864 Washington, Eckert to Sheldon: O'Brien to stay at Bermuda Hundred in charge of cipher work, Caldwell to take it when the White House line is done, Mackintosh to bring builders (FM-R7b; FIX-FM12, AUDIT FV-FM10b s.5; row 5702/0; image-read at 2400 px; whole entry eye-checked by FV-FM10b)
 Geo D Sheldon Ft Monroe
 I regret having ordered OBrien away from
 Bermuda hundreds he must remain there in
@@ -3379,7 +3381,7 @@ plain: bermuda
 plain-at: white#1
 note: FM-R7b: Bermuda and white (White House) are plain English where the key gives White River and Report; first lines image-read, the rest transcription only.
 
-### E321 | Page 238 | 5782 | mssEC 25 (obj 5952, pointer 5782), 1 Sept 1864 Head Qrs A. P., Caldwell to Eckert: cable to be laid on the north side of the river, less danger from anchors, channel nearest the south shore (FM-R7b; row 5782/0; image-read at 2400 px)
+### E321 | Page 238 | 5782 | mssEC 25 (obj 5952, pointer 5782), 1 Sept 1864 Head Qrs A. P., Caldwell to Eckert: cable to be laid on the north side of the river, less danger from anchors, channel nearest the south shore (FM-R7b; FIX-FM12, AUDIT FV-FM10b s.5; row 5782/0; image-read at 2400 px; two cipher copies: 5781 foot in wire order, 12319 received copy)
 Maj. Eckert Di - Sheldon F
 I think cab bell should be laid
 on tremble side of windsor as it
@@ -3389,7 +3391,7 @@ by anchors and channel most of way
 is nearest waxy shore D do wren
 Caldwell
 plain: anchors
-note: FM-R7b: anchors is plain English where the key gives Donelson; signature Caldwell plain; first 7 lines image-read.
+note: FM-R7b: anchors is plain English where the key gives Donelson; signature Caldwell plain; first 7 lines image-read. FIX-FM12 (9 Oct 2026, AUDIT FV-FM10b s.5): 'D do wren' = D. Doren (plain phonetic), M; two cipher copies of this text: the 5781 foot (wire order; the FM-R4a gap 'E252 second text on 5781' is this entry, no new telegram) and the received copy 12319 ('terrible' for tremble).
 
 ### E310 | Page 100 | 5644 | mssEC 25 (obj 5952, pointer 5644), 1 May 1864 Ft Monroe, Maj. Gen. B. F. Butler (by Sheldon) to Maj. Gen. Lew Wallace via G. W. Baldwin, Hd Qrs Baltimore (passed Washington 11.15 PM): W. W. Shore, correspondent of the World at Baltimore and from Monroe, sent away from the Department, to be arrested (clear copy pointer 10291; sibling of pointer 5656, 5 May) (FM-R7a; FIX-FM11, AUDIT FV-FM9e s.3/s.5; row 5644/1; image-read at 2400 px)
 Ft Monroe May 1 . 1864
@@ -3462,7 +3464,7 @@ plain-at: relay#2
 plain-at: relay#3
 note: FM-R7a: relay is the telegraph relay, plain English, read in context (image-read); No. 1's key row relay = Evacuate does not apply here (it reads in E311). Maxims = Gillmore is M.
 
-### E315 | Page 206 | 5750 | mssEC 25 (obj 5952, pointer 5750), 14 June 1864 Ft Monroe, Sheldon to Maj. Eckert: S. P. Lee's telegram from flag ship Agawam, Farrar's Island, 13 June 10 PM via Ft Monroe 14th 9 PM, for Welles (printed ORN I/10, Lee to Welles) (FM-R7a; row 5750/1; image-read at 2400 px)
+### E315 | Page 206 | 5750 | mssEC 25 (obj 5952, pointer 5750), 14 June 1864 Ft Monroe, Sheldon to Maj. Eckert: S. P. Lee's telegram from flag ship Agawam, Farrar's Island, 13 June 10 PM via Ft Monroe 14th 9 PM, for Welles (printed ORN I/10 p.146, Lee to Welles; clear copy in the holder's transcription, pointer 10415; received Washington 2.35 AM 15th) (FM-R7a; FIX-FM12, AUDIT FV-FM10a s.5; row 5750/1; image-read at 2400 px)
 Ft Monroe June 14 1864
 Maj Eckert Di
 flag ship agawam Farrars Smyrna June fever Rebecca peasant

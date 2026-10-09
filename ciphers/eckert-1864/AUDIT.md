@@ -3456,6 +3456,8 @@ Phrases taken verbatim from the decoded lines. Context found on the way is conte
 - Rows: status.json one result row per N3 entry (E78, N2-BQ, O9-BA, O9-BB, O9-AK, E76), audit_status "one audit"; SECOND-OPINIONS-QUEUE.tsv rows
   SO-ECKERT-E78, -N2BQ, -O9BA, -O9BB, -O9AK, -E76 with prompts in second-opinions/; JSTOR-QUEUE.tsv 12 rows. Requests: in the ROOM done line.
 
+**Correction note (FIX-FM12, 9 Oct 2026, not a rewrite of the text above):** NO9-PAGES (9 Oct 2026) tabled Randolph = Arms, Wedlock = Rifle Pits and Swindle/Surgery = Steam Boats from mssEC 67 pp.[20] [21] [24]; the counts above for O9-BA (H 5 M 2), O9-BB (H 9 M 1) now read H 7, H 10 (decoder: No. 9 totals H 369, M 0). The classes and depths are unchanged.
+
 ## AUDIT 2 (second adversarial, AUD2-LS3-A)
 
 Verifier AUD2-LS3-A (account 4, WORK-QUEUE row AUD2-LS3-A, session_01AhqJo1JX9kaR6YedNXxkLQ), 8 Oct 2026, 11:36-12:1x UTC by `date -u`; a

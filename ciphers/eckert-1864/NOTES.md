@@ -3685,3 +3685,27 @@ no status/SO/WORK-QUEUE rows. Reading and header fixes listed in AUDIT s.5 for t
 - [n/a] key-rebuild: no key error found.
 - [x] retry: 502s not retried (search results of no power).
 Verdict: keep going: 2 internal gaps, cheapest next: O9-BD tail by be-api, ~$0.2
+
+## FIX-FM12 (9 Oct 2026, account 1, for LANE LEDGER)
+
+Worker FIX-FM12, 17:2x-17:4x UTC by `date -u`, offline (git only). Carries AUDIT s.5 of FV-FM10a, FV-FM10b and FV-FM10c into ciphertext.txt / ciphertext-no9.txt as headers and note lines through decode.py's existing mechanisms; reading.md and reading-no9.md are `--write` output. No key row touched or deleted; classes and depths untouched (the verifiers').
+
+| Entry | Change | Decoder before -> after |
+|---|---|---|
+| E314 | none to the reading (audit s.5: none); the "done" = Doren lead is a NOTES line only: the ledger's "I left done at landing" may be Doren, M, not applied | H as before |
+| E315 | header: ORN I/10 p.146, clear copy in the holder's transcription (pointer 10415), received Washington 2.35 AM 15th | H as before |
+| E318 | note: "Ivory is probably my; M" withdrawn (Ivory = General-in-Chief H, identity open; sibling 5709/2, reply 5713/1); header: whole entry image-read by FV-FM10a | H as before |
+| E319 | `gloss: tulip=Open:H` (per-entry; the section 7 KEY-TW row Tulip = Period S is a counter-example here, KEY-BLIND); `plain: pony` (Mattapony, M); header eye-checked by FV-FM10b | S 1 -> 0, H 15; "Mattie [9]" -> "Mattie pony", "remain [.]" -> "remain [Open]" |
+| E320 | header: whole entry eye-checked by FV-FM10b | as before |
+| E321 | header and note: two cipher copies (5781 foot in wire order; 12319 received copy, "terrible" for tremble); "D do wren" = D. Doren, plain phonetic, M (note only) | as before |
+| O9-CC | header and note: printed OR ser. II vol. 6 p.943 (Mulford to Butler, Baltimore 11 Feb 1864 9.30 a.m.); abbey, Vienna, Cora C from the print (note; the decoder grades unchanged, no gloss) | H as before |
+| O9-BD | header "OR I/37 pt 2 p.293"; note: Ord-clause code words C 7, tail H 5, FM-R7a's "M 2" withdrawn, the ledger omits "do" in "precaution would [do] no harm" | H as before |
+| O9-CA | header: Davenport for Butler, by Sheldon, to Baldwin and Major Mulford, steamer New York; stale "swindle ... M" note marked superseded by the NO9-PAGES line (Swindle = Steam Boats, H) | H as before |
+
+Totals: decode.py "H 4499, C 39, I 25, M 33, S 17, U 10" at FIX-FM10 (and H 4500, C 42, S 17 when this job started) -> **H 4500, C 42, I 25, M 33, S 16, U 10** (263 entries): the one S token lost is E319's tulip. decode_no9.py totals unchanged (H 369, M 0).
+
+Dated correction notes (old text not rewritten): NOTES "## FM-R7b" table row E319 "H 16, M 1" now reads H 15, M 1 (pony plain; the decoder counts only code tokens: H 15). NOTES "## FM-R4a" Remaining gaps line "E252 second text on 5781 ... not read" is resolved: that text is E321 in wire order (5781 foot), whose other cipher copy is 12319; no new telegram. NOTES "## NO9-R1": the O9-CC "print: none" is superseded by OR II/6 p.943 (FV-FM10c); O9-CA "M 1" -> H 7; NO9-R1's four entries H 18, M 1 -> H 19, M 0 (NO9-PAGES + FV-FM10c). AUDIT.md "LS3-V18a": O9-BA H 5 M 2 -> H 7, O9-BB H 9 M 1 -> H 10 (correction note added there). For the KEY lane: the Tulip = Period S row needs a context condition (E319 reads Open, H) - key.md untouched here.
+
+Propagation (rule 10): status.json row E319: the `gap` clause "reading.md still prints the KEY-TW Period value, FIX job" replaced; its depth/class/text untouched. second-opinions PROMPT-chatgpt-e318/e319/e320/e321 already carry the corrected words (General-in-Chief, [open], D. Doren, Mattapony); no status row or SO prompt exists for O9-* or E314/E315 (N1).
+
+Checks: `decode.py --write` then `--check` -> "reading.md is current", exit 0; `decode_no2.py --check` exit 0; `decode_no9.py --write`/`--check` -> "reading-no9.md is current", exit 0; `tools/depth_check.py`, `tools/file_shrink_guard.py` and `tools/gaps_check.py` below.
