@@ -3869,3 +3869,16 @@ Where it was not found: no clear copy or minute of a reply (no 1780 outgoing reg
   d/flagged-delta, and run the D1A-SURV held-out class tests ([ij], g|l) on them with the unit's own control; ~$4.
 - [ ] Ask the verifier: AUDIT note that inv. 372 0183-0195 is a glossed (N0) letter and the Nieuw sheet is the 1780 key; ~$1.
 Verdict: keep going.
+
+## LOCAL-QUEUE L41 part (2) landed: Temminck Groll 1973 read (orchestrator (account-4), 9 Oct 2026, 22:1x UTC by date -u)
+The owner's ILL scan of C. L. Temminck Groll, *De architektuur van Suriname 1667-1930* (Zutphen 1973), Fort Zeelandia section pp.15-39
+(JHU ILL TN 2308722, requested 6 Oct 2026; the PDF stays off this repository: 1973 copyright), read in full. Result for AUDIT item 4's
+edition step: the book does **not** quote, transcribe or decipher the NA 4.VEL 2077 legend. It lists the drawing among its sources
+(p.17: "A.R.A., Inv. Leupe nr 2077, tekening met geheimschrift uit 1781, ZZW 197" -- "a drawing with secret writing from 1781" -- and
+describes it in three sentences: the fort's land bastions gone, lines of fire drawn, a proposal to strengthen the outworks), quotes
+Wollant's *plain* defence memorie of July 1782 (p.24) and Hurter's 1783 report, and reproduces no plate of 2077 (its plates are Hurter
+1775, the 1790 tower, Böhm 1789, the 1835 garden). "Bastion V was behoudens een aanzet afgebroken in 1781" (p.30) agrees with the
+plan. So the "no printed transcription of the 2077 legend located" sentence (AUDIT item 4) now also covers this edition. Part (1) is
+sharpened, not answered: the "1972 Suriname en zijn historie" item is Jos Fontaine, *Zeelandia, de geschiedenis van een fort* (1972),
+deel I of the same series, which Temminck Groll says reproduces many sources in full -- queued as LOCAL-QUEUE L71 for the owner's next
+ILL. No reading, key or class changed here; the next verifier pass (VERIFY5 per the 2 Oct note) cites L41/L71.
