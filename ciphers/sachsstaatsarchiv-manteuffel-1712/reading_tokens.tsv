@@ -105,7 +105,7 @@ line	pos	sign	conf	value	grade
 694-08_0511_f410_L06	6	35	med	e	C
 694-08_0511_f410_L06	7	27	low	r	M
 694-08_0511_f410_L06	8	42	med	l	C
-694-08_0511_f410_L06	9	54	med	u	C
+694-08_0511_f410_L06	9	54	med	u	M
 694-08_0511_f410_L06	10	51	med	s|sa	M
 694-08_0511_f410_L06	11	10	med	e	C
 694-08_0511_f410_L06	12	16	med	o|ou|ous	M
@@ -190,7 +190,7 @@ line	pos	sign	conf	value	grade
 694-08_0511_f410_L13	6	611	med	?	U
 694-08_0511_f410_L13	7	59	med	t	C
 694-08_0511_f410_L13	8	33	med	o	C
-694-08_0511_f410_L13	9	54	med	u	C
+694-08_0511_f410_L13	9	54	med	u	M
 694-08_0511_f410_L13	10	72	med	ch	C
 694-08_0511_f410_L13	11	25	med	a	C
 694-08_0511_f410_L13	12	14	med	n	C
@@ -238,7 +238,7 @@ line	pos	sign	conf	value	grade
 694-08_0511_f410_M4	16	39	med	i	C
 694-08_0511_f410_M4	17	29	low	s	M
 694-08_0511_f410_M4	18	42	med	l	C
-694-08_0511_f410_M4	19	54	med	u	C
+694-08_0511_f410_M4	19	54	med	u	M
 694-08_0511_f410_M4	20	92	low	y	M
 694-08_0511_f410_L16	1	58	low	s	M
 694-08_0511_f410_L16	2	402	med	la	M

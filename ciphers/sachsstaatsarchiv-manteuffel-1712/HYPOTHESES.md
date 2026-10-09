@@ -315,3 +315,10 @@ PREREG-MANTCUC.md (4c5930db8, pushed before scoring); scorer mant0608/cuc/cuc_sc
   name's first sign). M; who it is stays open (V-MANT0176's Meyerfeldt hypothesis neither supported nor weakened by 0177).
 
 - MANT-0474 (9 Oct 2026): code 63 -- key.tsv null (Krauske 1893 f.3, brace 61-63 'non valeurs?', M) vs 694/08 0474 (stamp 379, Manteuffel to Flemming, ~Nov 1712) period gloss 'galere', where 63 sits at 'a' between matched 7 (g) and 103 (le); one instance, token low (A 76? / B 7.63?). Rule-4 conflict logged, both witnesses kept, key.tsv unchanged (f0474_08/candidates.tsv).
+
+### V-MANTC (9 Oct 2026, verifier, account 2, LANE FAMILY-A2j): rule-4 conflicts 19, 63, 54 (AUDIT.md "## V-MANTC (9 Oct 2026)")
+| code | key.tsv | witnesses (leaf, slot, dir/date) | V-MANTC finding | status |
+|---|---|---|---|---|
+| 19 | null (M) | 0398 s02 'Polonois' n; 0410 s02 'Han.' n and after 'l'E' (F->M, Oct 1712); 0494 T039/T091 dec/null (M->F) | the 0398/0410 second digits are the y-shaped 4 (as '44' on the same strip); 14 = n fits both n slots | not established as a conflict; probable 14 misreads; native re-read owed; key unchanged |
+| 63 | null (M) | 0474 T032 'galere' a (M->F, Nov 1712); 0008 G05 'offici' ff (M->F, Jan 1713) | 0474's second digit is crossed by gloss ink, not a legible 3; 66 = a fits | 0474 withdrawn; 0008 single instance stands, unsettled; key unchanged |
+| 54 | u (C -> **M**) | u: Krauske; 0474 T052/T103/T107; 0494 T063, T151; 0008 G04, G10. t: 0494 T149 ('touchant', eye 54), T035 ('Détaché'); 0007 G01; 0008 G01; 0056 G06 -- all M->F, Nov 1712 - Jan 1713 | same direction and dates for both values, same word on 0494; 0494 T134 is a 59 misread (eye), not a witness | data conflict, not settled by count; key.tsv grade lowered C -> M (V-MANTC) |

@@ -1543,3 +1543,85 @@ eyes), then re-run the --check scripts and the gate. The gate result would be ex
 for the letter's end. The 0177 reading may identify 'le vieux'.
 Requests this audit: archive.org 4 (djvu 1, advancedsearch 3); be-api.us.archive.org 7 by hand + 5 print_check; api.openalex.org 6 (print_check);
 www.googleapis.com 12 (5 x 503, host stopped); www.archiv.sachsen.de 0. Vision: 1 Sonnet call (stacked L10/L11 strip) + my own eye on L09, L12 and the stack.
+
+## V-MANTC (9 Oct 2026)
+
+Verifier V-MANTC (Opus, account 2, LANE FAMILY-A2j; a session that solved none of these leaves), 15:21-15:3x UTC 9 Oct 2026 by date -u. Disk
+only: no fetch, every look on committed crops (upscaled 2-5x with PIL in scratch). Scope: the three rule-4 code conflicts named in the
+handoff (19, 63, 54) and the 0176 r01 eye check. No novelty class is assigned or changed here.
+
+Directions and dates of the witness leaves (from NOTES.md, mant0608/abbo_check.tsv, mant0609/rank_glossed.tsv): 694/08 0398 Flemming to
+Manteuffel, Greifswald 15 Oct 1712 (clear-under-code draft); 0410 Flemming to Manteuffel, Greifswald 20 Oct 1712 (same kind); 0474 (stamp 379,
+~Nov 1712) and 0494 (stamp 395, ~Nov-Dec 1712) Manteuffel to Flemming, period interlinear gloss; 694/09 0007/0008 Manteuffel's report, Berlin
+7 Jan 1713, gloss; 0056 694/09, 1713, gloss. Krauske 1893 (Loc. 694/10 ff.1-5): the table's own direction is not recorded on disk.
+
+### Code 19 (key.tsv: null, M, Krauske brace 18-19 "wahrscheinlich non-valeurs")
+| leaf | line/token | read | slot | dir / date | source file |
+|---|---|---|---|---|---|
+| 0398 | s02, ...17.33.[44].16.**19**.16.9.51 | 19 (both passes) | 'n' of 'Polonois' | F->M, 15 Oct 1712 | mant0608/cuc/cuc3_agreed.tsv, cuc_candidates.tsv |
+| 0410 | s02, 12.2.**19**: | 19 | after 'l'E' of 'l'Electeur' (abbreviation point, colon after the group) | F->M, 20 Oct 1712 | mant0608/cuc/agreed.tsv |
+| 0410 | s02, 8.?.**19**: | 19 | end of 'Han.' ('n', colon after the group) | F->M, 20 Oct 1712 | same |
+| 0494 | T039 (L05) '19?' | 19? | G05 'declarera', DP miss 'dec' | M->F, ~Nov-Dec 1712 | f0494_08/ciphertext.tsv, gate.out |
+| 0494 | T091 (L09) A 14 / B 19, med | 19 | G08 'quelque', DP null | M->F | same |
+
+Eye (c0398_s02_L01, c0410_s02_L01): the second digit of each '19' on 0398/0410 is the open-topped, q-like y-shape that the same strips' '44'
+and '24' carry, not the closed-loop 9 of '169' on the same 0398 strip. MANT-0494 records that its reconciliation settled y-shapes as 9 by
+convention ("19" among them), and MANT-EYE63R leaves the 4/9 y-glyph open on this hand. Read as **14 (= n, C)**, 0398 gives p.o.l.o.n.o.i.s
+fully keyed and 0410's second instance h.?.n under 'Han.'; 0410's first instance (after 'l.e', clear 'l'Electeur') fits neither n nor a letter
+and reads best as a non-valeur at an abbreviation point. 0494 T091 is itself an A 14 / B 19 split, and its slot (inside 'quelque') wants
+neither n nor a letter. **Verdict: not established as a key conflict.** The two 19 = n witnesses are most likely the y-shaped 4 transcribed
+as 9 (14 = n); this is an eye judgement at strip resolution, low-medium, not settled. key.tsv 19 unchanged (null, M). Owed: a native re-read
+of 0398 s02 pos 17 and 0410 s02 pos 3/8 (one sachsen GET each, or the y-glyph census MANT-EYE63R named) before 19 is cited either way; the
+transcription files are left as read (rule 2).
+
+### Code 63 (key.tsv: null, M, Krauske brace 61-63 "non valeurs?")
+| leaf | token | read | slot | dir / date | source |
+|---|---|---|---|---|---|
+| 0474 | T032 (c0474R_L01) | A '76?' / B '7.63?', settled 63, low | 'a' of 'galere', between 7 (g) and 103 (le) | M->F, ~Nov 1712 | f0474_08/ciphertext.tsv, candidates.tsv, gate.out |
+| 694/09 0008 | G05 '33.63.46.30' | 63 | 'ff' of 'offici' | M->F, Jan 1713 | HYPOTHESES.md MANT-0008 table |
+
+Eye (c0474R_L01 at 5x): '7.6?' -- the second digit is crossed by the descender of the gloss 'g' above it and is not a legible 3 (this hand's
+3, in '103' two places to the right, has two clear bowls). 66 (= a, C) fits the gloss slot exactly. **Verdict: 0474 is not a witness for 63**
+(illegible second digit, most likely 66); the conflict rests on 0008's single instance (63 at 'ff'), which still stands as logged (rule 4, one
+instance, not settled). key.tsv 63 unchanged (null, M). Correction to f0474_08/candidates.tsv's 63 row: recorded in HYPOTHESES.md, file left as is.
+
+### Code 54 (key.tsv before this audit: u, **C**, Krauske f.3)
+| leaf | token | slot (gloss) | value the slot needs | reader note | dir / date |
+|---|---|---|---|---|---|
+| 0474 | T052, T103, T107 | 'embarques', 'docteur luther' (gate (b) runs on the gloss text) | u x3 | all high | M->F, ~Nov 1712 |
+| 0494 | T063 (L07) | G07 decode 'plus' (23.42.54.51) | u | high | M->F, ~Nov-Dec 1712 |
+| 0494 | T151 (L15) | G11 'touchant', 2nd group | u | high | M->F |
+| 694/09 0008 | G04 'veut', G10 'troupes' | gloss | u x2 | -- | M->F, Jan 1713 |
+| 0494 | T149 (L15) | G11 'touchant', 1st group: [54].33.54.72.25.14.52 = t.o.u.ch.a.n.t | **t** | high; V-MANTC eye: same '54' shape as T151 two groups on | M->F |
+| 0494 | T035 (L05) | G04 'Détaché': 120.[54].66 | **t** (or 'ét') | high | M->F |
+| 694/09 0007 | G01 'cette': 30.10.[54].28.35 | **t** | low, alt 59 | M->F, Jan 1713 |
+| 694/09 0008 | G01 'la Battaille': 110.55.66.[54].28 | **t** | -- | M->F, Jan 1713 |
+| 694/09 0056 | G06 'futur': 36.6.[54].67.27 | **t** | A '54?', B '54' | M->F, 1713 |
+
+Not a witness: 0494 **T134** (L15 line start), read 54 high by both passes and decoded by the key as '[54].e.n.t.e.m.e.n.t' after G10's
+'...c.o.n': eye (c0494L_L15 at 2x) reads **59** (closed-loop 9, as MANT-INV08C's inventory '59.40.21...'), giving 'contentement' with 59 = t.
+A transcription fix is owed in f0494_08/ciphertext.tsv T134 (54 -> 59), not made here (verifier; rule 2). Also: f0494_08/candidates.tsv and
+the MANT-0474 section cite the 'Détaché' 54 as T036; in f0494_08/ciphertext.tsv and gloss.tsv it is **T035** (T036 is 66).
+
+**Verdict: a real data conflict (rule 4).** 54 reads u in 7 slots on 3 leaves and t in 5 slots on 4 leaves, every one of them in Manteuffel's
+letters to Flemming of Nov 1712 - Jan 1713 -- the same direction and date range, and on 0494 the same word ('touchant' has 54 = t and 54 = u two
+groups apart, eye-checked). No direction or date separates the two values, so neither can be preferred by witness; 59 (= t) read as 54 is
+possible on 0007 (low) and is what happened on 0494 T134, but T149 and 0008/0056 do not look like misreads at strip scale. Not settled by count.
+**key.tsv change (the only one): row `54  u  C  Krauske 1893, Loc. 694/10 f.3  passes agree` -> grade M** (value, source and note unchanged;
+grade lowered only), because a 54 token in any letter of this correspondence now has conflicting period support (u: Krauske and glosses on
+0008/0474/0494; t: glosses on 0007/0008/0056/0494). Readings regenerated with `tools/decode_key.py` (rule 7): main reading.txt C 202 -> 199,
+M 98 -> 101 (3 tokens of 54 on 0511/f410); f0052_09 C 29 -> 28, M 11 -> 12. No other committed reading carries 54. `--check` exits 0 on all 14
+configs after regeneration.
+Tool flag: before regeneration, with key.tsv already changed, `tools/decode_key.py <dir> --check` exited 0 on the main folder although a fresh
+regeneration's header and token grades differed (C 202 vs 199) -- `--check` did not see a grade-only drift. Flagged in ROOM.md; not fixed here.
+
+### 0176 r01: '171' vs '17.1'
+Crop f0176R_L09 (the r01 line: 'Le vieux 171.35.26 est revenu voir'), 4x: '1', '7', then a short stroke from the 7's foot ending in a mid-height
+tick before the next '1', then '-35'. The tick is the height of the run's separators ('13·66·9·10·26·36' on the next line) but sits joined to
+the 7's stroke. **Not settled by eye; leans 17.1 (p.f), low.** ciphertext.tsv r01 pos 1 stays '171' at medium, both readings open; key.tsv 171
+(le, note "Vicechancelier" written beside it on Krauske f.4) vs 17.1 is a question a native re-read (one sachsen GET) can settle; this crop cannot.
+
+### Summary
+key.tsv: 54 C -> M (grade only). 19: not established (probable 14 misreads), unchanged. 63: 0474 withdrawn as a witness (illegible), 0008 single
+instance stands, unchanged. 0176 r01: open, lean 17.1. Transcription fixes owed (not made): f0494_08 T134 54 -> 59; native re-reads of 0398 s02
+pos 17, 0410 s02 pos 3/8, 0176 r01 pos 1. Requests: none (disk only).
