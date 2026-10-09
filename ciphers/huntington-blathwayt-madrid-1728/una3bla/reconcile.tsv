@@ -1,0 +1,9 @@
+line	pos	committed	blind	compete	note
+BLA191_p5_L01	9	941	941	0	final stroke a plain 1, not the hand's ')' 7
+BLA191_p5_L01	11	386	386	1	first figure overwritten (bold 3 over another figure); reader also flags it
+BLA191_p5_L05	10	1099	1099	1	second figure small 0 with a tick above; reads plausibly as 6 (reader alt 1699)
+BLA191_p5_L06	1	214	214	0	middle stroke straight with a top hook, as 162's 1; not the ')' 7 of 275
+BLA191_p5_L07	9	937	937	0	93 then ')' = 7 by the hand's rule; middle 3 clear
+BLA191_p5_L11	3	385	385	0	clear 3, looped 8, s-shaped 5
+BLA191_p5_L12	5	1185	1185	0	final s-shaped 5, unlike this hand's 3 (as in 823)
+BLA186_p1_L01	8	778	778	0	both leading glyphs the ')' 7 form
