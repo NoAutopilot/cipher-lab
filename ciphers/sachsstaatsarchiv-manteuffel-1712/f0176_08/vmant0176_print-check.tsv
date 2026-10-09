@@ -1,0 +1,13 @@
+# tools/print_check.py, 09 Oct 2026. A search result, not a novelty verdict (CLAUDE.md rule 10).
+phrase	source	result	detail	url
+Meyerfeldt Bernau	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22Meyerfeldt%20Bernau%22
+bibliotheque de Mayer Custrin	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22bibliotheque%20de%20Mayer%20Custrin%22
+Mayer Bibliothek Custrin	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22Mayer%20Bibliothek%20Custrin%22
+deux colonels Spalding Horn	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22deux%20colonels%20Spalding%20Horn%22
+Menzikof bibliotheque Mayer	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22Menzikof%20bibliotheque%20Mayer%22
+Meyerfeldt Bernau	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22Meyerfeldt%20Bernau%22
+bibliotheque de Mayer Custrin	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22bibliotheque%20de%20Mayer%20Custrin%22
+Mayer Bibliothek Custrin	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22Mayer%20Bibliothek%20Custrin%22
+deux colonels Spalding Horn	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22deux%20colonels%20Spalding%20Horn%22
+Menzikof bibliotheque Mayer	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22Menzikof%20bibliotheque%20Mayer%22
+(keywords) Manteuffel Flemming 1712	openalex	11 work(s)	Ahnentafel Peters: Generationen 1-17, Tafeln 1-3073. Band 1: (2017) https://openalex.org/W2808750991; Der Weinkeller als Schlachtfeld. Die »Société des antisobres (2016) https://doi.org/10.30965/9783657777815_004; Multiple Loyalitäten und Transterritorialität (2024) https://doi.org/10.13109/9783666302473;  (2021) https://doi.org/10.4467/25440500rbn.19; Anna von Cosel – Eine falsche Gräfin? (2020) https://doi.org/10.52411/nasg.bd.91.2020.s.277-286	https://api.openalex.org/works?per-page=5&search=Manteuffel%20Flemming%201712

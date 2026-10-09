@@ -3239,3 +3239,10 @@ be-api.us.archive.org 12, www.googleapis.com 6, api.openalex.org 5. Vision: 2 So
 Not found / not done: no gloss, clear copy or decipherment on the leaf; the letter's continuation (0177) not seen; Maier, the two colonels and 'le
 vieux' not identified; the r01 run and the struck stretch in r03 unread.
 Next: fetch 0177 for the letter's end (1 GET + 2 passes, ~$2.5); eye recheck of r02/r05 third digit (9 vs 4) and r01's last code at native (~$0.5).
+
+## V-MANT0176 pointer (9 Oct 2026, verifier, account 2)
+AUDIT.md "AUDIT (V-MANT0176)": 694/08 0176 **N3 D1** (key published, Krauske 1893; text unknown). No prior decipherment located in Acta Borussica BO I,
+Droysen IV.1, Google Books, IA full text or OpenAlex (Berner 1901, Bonnesen 1918, Fama/Mercure July 1712 not read). Rule-7 scripts exit 0. A blind look at r04
+agrees with positions 1-6 and reads position 7 as a comma ('bernau'). The verifier reads r01 pos 3 as 26. Corrections: cipher 'Maier(f)' is probably not
+the library's Mayer (verifier's M hypothesis: Meyerfeldt, HYPOTHESES.md). No SO or AUD2 row (below the N3+ D2+ trigger). Next: apply r04/r01
+transcription fixes and re-run --check + gate (~$0.5); Berner/Bonnesen by date and names; 0177.

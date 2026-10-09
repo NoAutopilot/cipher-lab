@@ -1434,3 +1434,111 @@ Grumbkow could enter compounds.tsv as C (print + 0085 gloss); not done here (ver
 Requests this audit: www.archiv.sachsen.de 1 (200); archive.org 5 (metadata 1, djvu 2, advancedsearch 2); be-api.us.archive.org 2 (the same phrase query twice);
 books.google.com 2 batches of search-within (second batch partly 'blocked', host stopped); www.googleapis.com 6 (two 503). Vision: 1 Sonnet call (0108
 crops) + my own eye on two crops and the reduced frame.
+
+## AUDIT (V-MANT0176)
+
+Verifier V-MANT0176 (account 2, LANE FAMILY-A2h), 9 Oct 2026, 12:00-12:1x UTC by `date -u`. I am a separate session from the solver MANT-0176
+(11:23-11:40 UTC) and from every earlier verifier, and I had not read 0176 before this job. Brief: .claude/briefs/runs/2026-10-09-ytbiz-family-1010-jobs.md
+"### V-MANT0176". Claim under audit (NOTES "MANT-0176"): "694/08 0176 (Berl. 2 Juil 1712), 31 code tokens, gate (b) PASS real -1.288 vs p95 -1.670;
+S26 M4 U1; reads Maier x2, deux colonels (Sp)ald et Horn jusqu'a Bernau". Nothing was decoded here. key.tsv, the ciphertext and the reading are untouched.
+
+**Depth bar, copied before ruling** (.claude/briefs/runs/2026-10-08-acct3-depth-bar.md): CLAUDE.md 4a governs. Cipher clause = a contiguous H/C/S
+stretch longer than AD (~1.5 x unicity, every liberty counted; an unfitted external key does not shrink H(K)). External check = a D3/D4 element,
+never a substitute for the clause at D2. Code clause = a code value that reads sensibly in >= 2 independent contexts; an H/C grade on the value does
+not satisfy it on its own; a verbatim repeated phrase counts once. D2 = one clause plus the verifier's own true, specific sentence about the content,
+written from the reading (an edition may confirm it, never supply it). Otherwise D1.
+
+**1. Item.** SHStA Dresden 10026 Geheimes Kabinett Loc. 694/08, URL file 0176, right page (stamp/letter no. 135), "a Berl. le 2 Juil. 1712",
+Manteuffel to Flemming (sender and recipient by the folder's series, not by a signature on this page). The letter runs past the foot of the page (0177
+not seen). Ciphertext f0176_08/ciphertext.tsv: 31 tokens in 5 runs, no gloss. Solver's search log: prior_work.py exit 4 (all LEAD rows recorded),
+MANT-ABBO's grep of Acta Borussica BO I (mant0608/abbo_check.tsv row 0176 'n'), Droysen IV.1/IV.2 djvu grep, and print_check on 6 paraphrase phrases.
+prior_work.py `--step-type audit --fetch` (this audit): one LEAD (MANT-CUC2's live claim). I recorded it CLEAR because CUC2 was done at 11:35 and its
+work was 0410/0284. tomokiyo and solver-cache are UNCHECKED (no folio key), aaymeloglu and 4-editions are UNCHECKED-NET, and I did the editions by hand below.
+
+**2. Re-derivation (rule 7), from the repository root:** `tools/decode_key.py .../f0176_08 --check` gave "tokens 31: C 24, M 6, U 1 / reading up to
+date"; `f0176_08/judge_gate.py --check` gave "up to date"; `f0176_08/grade_0176.py --check` gave "grades.tsv: up to date". All three exit 0. Key rows the
+reading leans on: 13 m, 66 a, 9 i, 10 e, 2 e, 26 r, 36 f, 17 p, 50 a, 44 l, 120 d, 1000 et, 8 h, 33 o, 21 n, 27 r, 14 n, 25 a, 6 u, all C
+(Krauske 1893). 51 s|sa, 60 r|re|ro and 55 b|[a] are M, and 62 is the null. **'bernau' rests on 55 = b, an M row**, and 'spald' on 51 = s, an M row.
+
+**3. Transcription check.**
+- *One blind look at r04 positions 3-7* (the solver's native-zoom settlement, the line the crop band cut). I stacked crops f0176R_L10 and L11, which
+  have contiguous boxes and so give the original pixels, enlarged the strip 2x and gave it to one blind Sonnet call. The call saw only the image and
+  had no values. It read "a 55.2.27.14.25.6, [blot] ou je pourrois": 55 medium, 2 medium-high, 27 medium, 14 medium, 25 medium, 6 medium-low. **It
+  agrees with the solver on positions 1-6.** On **position 7 it reads a comma, not a digit** ("a short hooked tick level with the base of the
+  digits"). I see the same thing. So r04 pos 7 '7' (= g, already M low) is most likely punctuation, and the run reads 'bernau', not 'bernaug'. The
+  call could not read r03's head under the strike and called the whole stretch struck. The solver also left that stretch (51.17.50 [struck] 44) at low.
+- *Three tokens spot-checked by me on the committed crops (2x):*
+  (i) r02 pos 3 (L09) and (ii) r05 pos 3 (L12): both are the y-shaped glyph, 9 or 4. The crops cannot settle it, the same open question as
+  MANT-EYE63R's y-glyph. Under 4 (= x) the name would read 'maxer'. 'maier' is therefore conditional on 9, and the solver's 'medium' is fair.
+  (iii) r01 pos 3 (L09): I read "171.35.26" (a 2 followed by a 6). This agrees with the worker's native look and MANT-INV08B's eye ('26'), not with
+  the two passes' '62'. Under the key that gives 'le e r', which still does not read. The token stays U/unsettled, and the 'r01 unread' finding stands.
+- r05 is followed by "(." or "C." on L12. I read it as clear punctuation, as the solver did.
+
+**4. Design audit (rule 3).** PREREG-MANT-0176.md was pushed in its own commit (6d0a0ff8b, 11:29 UTC), before the fetch, according to the solver's
+NOTES. I did not re-verify it commit by commit (the room.py fold caveat applies). Gate (b) permutes letter values over letter codes, which changes the
+letters scored, so the control can differ from the target on the statistic. Power was measured at L = 32 (37/38). The PASS stands as a statistic. It
+says the 32 decoded letters look more like French/names than permuted-key decodes do. It does not say what the names refer to.
+
+**5. Novelty search log (rule 10), by date (+-2 days) and names.** Each edition was checked with a positive control first.
+- **Acta Borussica, Behoerdenorganisation I (1894)**: IA `diebehrdenorgan01posngoog` _djvu.txt, fetched once. Positive control: 'Blaspil' gives 39 hits,
+  and be-api's phrase '"Blaspil etait un ignorant"' returns this item. Stems tried: Manteuff 0 / 'teuff' 30 (Fraktur OCR), Meyerf/Mayerf/Meierf 0,
+  Custrin/ftrin 6 (none 1712 diplomatic), Golowkin/lowk 0, Menschikoff 0, Spald 0, Horn 0, Bibliothe 1 (Lipenius, unrelated), Bernau 2 (a town list
+  and an index entry on brewing). **The letter of 2 July 1712 is not found.** This agrees with MANT-ABBO's row 'n'.
+- **Droysen, Geschichte der preussischen Politik IV.1**: on disk, sources/ia-fulltext/print-check/p1geschichtederpre04droyuoft_djvu.txt.gz. Positive
+  control: note 505 cites "des saechsischen Gesandten Manteufel Bericht, Berlin, 21. Juni" (found). Pp. 265-267, "Menschikoff und Wellingk in Berlin,
+  Juni 1712", show Menschikoff's audience demanding guns. They cite nothing of 2 July, and Maier/Meyerfeldt, Custrin, the library, Bernau and the
+  colonels are absent. IV.2 starts in 1713 (solver's grep, not repeated).
+- **Europaeische Fama / Mercure historique et politique, July 1712**: IA advancedsearch found Fama volumes, but their metadata is undated ('1702' on
+  all of them), so the 1712 part was not identified. Mercure historique 1712 found nothing by title. Both are **unchecked** at the volume level. They
+  are covered only by the IA-global phrase searches below.
+- **Google Books API** (key, country=US, 12 calls). Positive control: 'Meyerfeldt Stettin 1713' gives 109 hits, among them Dumont's Corps universel
+  diplomatique, "der Herr General Gouverneur von Meyerfeldt" at Stettin, and Droysen IV.2 p. 56, "mit Menschikoff und Meyerfeldt". Found nothing:
+  '"Meyerfeld" Bernau 1712', 'Meyerfeldt Manteuffel 1712 Berlin', 'Mayer Bibliothek Menschikoff 1712 Custrin', and 'Spalding Horn Meyerfeldt 1712
+  Obristen'. Noise only: '"Mayerfeld" Bernau'. 'Manteuffel Flemming "2 juillet 1712"' returned one hit, a 2026 book citing Acta Borussica's 4 June
+  letter and Berner, *Aus dem Briefwechsel Koenig Friedrichs I.* (p. 265, 1712). Berner is a lead, **not searched**. Five queries got HTTP 503, and I
+  stopped the host after the retry.
+- **IA full text (be-api, global) and OpenAlex**: `tools/print_check.py --phrases f0176_08/vmant0176_phrases.txt --only ia-global,openalex`, output
+  f0176_08/vmant0176_print-check.tsv. The phrases were 5 name phrases (Meyerfeldt Bernau; bibliotheque de Mayer Custrin; Mayer Bibliothek Custrin;
+  deux colonels Spalding Horn; Menzikof bibliotheque Mayer). No hits in IA-global or OpenAlex. The OpenAlex keyword search 'Manteuffel Flemming 1712'
+  gave 11 unrelated works. Further be-api phrases on the *clear-text* library: '"Mayers Bibliothec"' gave 17 hits, among them "des Hamburgischen Herrn
+  D. Mayers Bibliothec, welche A. 1716 zu Berlin verauctioniret" (IA 10123080bsb). This is the library of the theologian Johann Friedrich Mayer
+  (d. 1712), and it confirms the clear-text context only. It does not print this letter.
+- Not searched: Bonnesen (1918), Berner (1901), Haake, and the Saxon-side Flemming papers in print. aaymeloglu is not cloned. JSTOR has no row
+  queued (N3 is not blocked by a JSTOR row).
+
+**6. Identification note (verifier's, grade M, not a key edit).** The solver writes "'Maier' x2 (also in the leaf's clear text)", which ties the
+cipher name to the library's owner. I think they are two people. The clear text's "bibliotheque de Maier" is the library of the late Dr J. F.
+Mayer, which was auctioned at Berlin in 1716. The cipher 'maierf' (r02), the one who "enverroit deux colonels ... jusqu'a Bernau", and 'maier' (r05),
+whose "certificat" is asked for, read best as **Meyerfeldt**, the Swedish general and governor-general at Stettin in 1712-13 (Google Books control
+above). On that reading r02's trailing 36 'f' is the start of the name, and is not a stray letter as the solver flagged it. Two Swedish colonels sent
+toward Berlin fit the clear text's secret contact ("par quelque homme de confiance"). This is an M-grade hypothesis from context. No print located
+confirms the contact. It is logged in HYPOTHESES.md.
+
+**7. Classification.** Key: **published** (Krauske's 1893 table, credited). The brief says `period`. I keep `published` to match every earlier
+Manteuffel row in status.json and V-MANT0109's ruling, and I flag the mismatch to the lane. Text: **unknown**.
+Item (694/08 0176, 31 tokens): **N3**: no prior plaintext or decipherment located after the logged search. It is not N4, because Berner (1901),
+Bonnesen (1918), the Fama/Mercure volumes for July 1712 and the Flemming-side editions were not read, so the principal editions are not covered.
+Evidence quality: medium (OCR Fraktur greps with positive controls; Google Books partly 503). Confidence in "not in Acta Borussica BO I / Droysen
+IV.1" is high. Confidence that it is in no print is low-moderate.
+**Depth (rule 4a, the bar above).** Cipher clause: the longest contiguous run is 11 letters (r03 'spaldethorn', and it contains M tokens 51/17/44).
+The other runs are 5-7 letters. The AD for this key is about 127-138 letters (FAM-MANTV), so the clause **fails**. Code clause: the leaf has no
+nomenclator code value. Every token is a letter-cipher sign. The name spelled twice (13.66.9.10.26.36 and 13.66.9.2.26) is two letter-cipher
+stretches, not one code value, and its third sign is the open y-glyph (9 or 4). Clause **not met**. No external check exists (no gloss, no print).
+**D1** ("fragments read"). depth_pct 83.9 (S 26 of 31 by the PREREG grade). That share is reported only, because no clause is met.
+Safe sentence: "Manteuffel's letter of 2 July 1712 to Flemming (SHStA Dresden Loc. 694/08, frame 0176): fragments read in its five short cipher runs
+with Krauske's 1893 table (statistical gate passed at 32 letters). They give a name read 'Maier(f)' twice, two colonels '(Sp)ald' and 'Horn', and
+'Bernau'. No prior decipherment was located in Acta Borussica BO I, Droysen IV.1, Google Books, Internet Archive full text or OpenAlex (searched 9 Oct
+2026)."
+Unsafe: "deciphered", "partially deciphered", any first/new/unpublished wording; "Maier is the owner of the library" (unproven, probably wrong);
+"Meyerfeldt" stated as read (it is a verifier's M hypothesis); 'bernaug' (the final '7' is most likely a comma).
+**No SECOND-OPINIONS-QUEUE row and no AUD2 WORK-QUEUE row**, because N3 with D1 is below the brief's N3+ D2+ trigger.
+
+**8. Postmortem and corrections.** (a) No over-claim of novelty was found. The solver kept to rule 10. (b) Two sentence-level corrections. First,
+"reads 'Maier' x2 (also in the leaf's clear text)" conflates a cipher name with the clear-text library owner (section 6). Second, r04 is 'bernau'
+with a probable comma, not 'bernau' plus a seventh code. The solver had it at M low, so the grades do not change. (c) The transcription stays as
+committed. A verifier does not edit it. Owed by the lane (one job, about $0.5): r04 pos 7 to punctuation and r01 pos 3 to 26 (agreeing with three
+eyes), then re-run the --check scripts and the gate. The gate result would be expected to hold at 31 letters, but that is not computed here.
+(d) Next print checks before any further reading of this letter: Berner (1901) and Bonnesen (1918) by date and the names Meyerfeldt/Bernau, and 0177
+for the letter's end. The 0177 reading may identify 'le vieux'.
+Requests this audit: archive.org 4 (djvu 1, advancedsearch 3); be-api.us.archive.org 7 by hand + 5 print_check; api.openalex.org 6 (print_check);
+www.googleapis.com 12 (5 x 503, host stopped); www.archiv.sachsen.de 0. Vision: 1 Sonnet call (stacked L10/L11 strip) + my own eye on L09, L12 and the stack.

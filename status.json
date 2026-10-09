@@ -10790,6 +10790,40 @@
       "depth_sentence": "On 27 Oct 1864 Porter told Welles that three gunboats were racing up the coast to reach Halifax before the Tallahassee.",
       "depth_check": "external (non-statistical): ORN I/10 pp.603-604, Porter's orders of 26 Oct 1864 to Maumee, Tallapoosa and Yantic (Tallahassee, Halifax, 40 miles off the coast); code clause: Spoons = Miles four times, Stephen/Sligo = In the",
       "depth_note": "21 H of 21 code-word groups"
+    },
+    {
+      "date": "9 Oct 2026",
+      "kind": "cryptanalysis",
+      "key": "published",
+      "claim_scope": "recovered-passages",
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sachsstaatsarchiv-manteuffel-1712",
+      "fields_source": "sachsstaatsarchiv-manteuffel-1712/AUDIT.md, \"AUDIT (V-MANT0176)\" (first audit, 9 Oct 2026)",
+      "audit_refs": [
+        "AUDIT.md \"AUDIT (V-MANT0176)\""
+      ],
+      "completeness": "five cipher runs of one page (frame 0176, right page); the letter continues on 0177 (not seen)",
+      "novelty": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "text": "unknown",
+      "document_id": "SHStA Dresden, 10026 Geheimes Kabinett, Loc. 694/08 (URL file 0176, stamp 135), Manteuffel to Flemming, Berlin 2 July 1712",
+      "title": "SHStA Dresden Loc. 694/08 frame 0176 (letter of 2 July 1712): fragments read in five cipher runs with Krauske's 1893 table",
+      "grade": "N3 (V-MANT0176): no prior plaintext or decipherment located (Acta Borussica BO I, Droysen IV.1, Google Books, IA full text, OpenAlex; Berner 1901, Bonnesen 1918 and the July 1712 Fama/Mercure not read). Key published (Krauske 1893, credited). 31 tokens: H0 C0 S26 M4 U1 (solver's PREREG grade); gate (b) PASS at 32 letters.",
+      "line": "Fragments read (N3, D1, V-MANT0176 9 Oct 2026). Krauske's 1893 table on the cipher runs of Manteuffel's letter of 2 July 1712 (Loc. 694/08 frame 0176) gives a name read 'Maier(f)' twice, two colonels '(Sp)ald' and 'Horn' and 'Bernau'; no prior decipherment located in the sources searched.",
+      "unresolved_spans": "r01 (171.35.62/26 after 'le vieux'); the struck stretch in r03; y-glyph (9 or 4) at r02/r05 pos 3",
+      "depth": "D1",
+      "depth_pct": 83.9,
+      "depth_unread": {
+        "names_codes": "none keyed; 'Maier(f)' identity open (verifier's M hypothesis: Meyerfeldt, Swedish governor-general at Stettin)",
+        "other": "r01 run; r03 struck stretch"
+      },
+      "depth_sentence": "",
+      "depth_check": "V-MANT0176: cipher clause fails (longest run 11 letters, with M tokens, vs AD ~127-138); code clause not met (no nomenclator code value on the leaf; the twice-spelled name is two letter-cipher stretches with an open y-glyph); no external check; D1",
+      "decode_status": "Non-decrypted",
+      "depth_by": "session V-MANT0176 (account 2), 9 Oct 2026",
+      "depth_date": "9 Oct 2026"
     }
   ],
   "lanes": [
