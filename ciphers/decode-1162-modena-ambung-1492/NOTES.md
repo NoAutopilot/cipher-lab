@@ -1,13 +1,13 @@
 # decode-1162-modena-ambung-1492
 
 Status: partial
+Berzeviczy 1914, *Aragóniai Beatrix magyar királyné életére vonatkozó okiratok* (IA `aragoniaibeatrix00berz`), read by this worker (GF4-BATCH19, 3 Oct 2026) by full-text search of the whole IA OCR and by reading the 1492 table of contents (nos. CLI-CLXXXIII, pp. XXX-XXXI) and nos. CLIV-CLV (pp. 214-219): no Costabili letter of 27 Feb 1492 is printed, letter absent.
 (VERIFY-MOD1162, 3 Oct 2026: AUDIT.md -- plaintext of the cipher runs N0, period gloss on the leaf and DECODE doc 3593; the 1168-key finding re-derives and its control holds.)
 (MOD1162, 3 Oct 2026: decode-1168's key read on this letter's cipher groups, gate PASS against a band-shuffled key; the letter's own period gloss gives the plaintext of most groups. See "## MOD1162" below.)
 (DEC1162-ENHANCE, 7 Oct 2026: 22 word crops enhanced, `clear/enhance/`; blind-read known-answer control 2/5 per read against a 4/5 gate, so untested-by-this-tool, no word changed, F19 month still open.)
 (D1-DEC1162F, 6 Oct 2026: focus sheet of the 22 unsettled clear-text words for a person's read built, `clear/focus/`, not published; no reading changed.)
 (R10-DEC1162, 6 Oct 2026: clear text of both pages transcribed from native crops, `clear/clear_text.tsv`, 42 lines, 41 doubtful words; no cipher reading changed.)
 (MOD1162B, 3 Oct 2026: 8 of 19 uncertain signs settled at native resolution, G unchanged, fresh-seed control PASS; tokens C 33, S 12, M 24, I 5, U 3; g/q/sigma split still open.)
-Berzeviczy 1914, *Aragóniai Beatrix magyar királyné életére vonatkozó okiratok* (IA `aragoniaibeatrix00berz`), read by this worker (GF4-BATCH19, 3 Oct 2026) by full-text search of the whole IA OCR and by reading the 1492 table of contents (nos. CLI-CLXXXIII, pp. XXX-XXXI) and nos. CLIV-CLV (pp. 214-219): no Costabili letter of 27 Feb 1492 is printed, letter absent.
 
 ## What this is
 
@@ -689,3 +689,10 @@ a re-tune of this one: a reader of 15th-century Italian chancery hands, or a key
 
 Waits on a person's read of the 22 doubtful clear-text words (clear/focus/, 6 Oct 2026) and the g/q split (ASKS 144).
 - Key-constrained check of the F19 month (febr~?, p.2 l.6) against the docket '27 febb^o' (p.1 l.2) and the dating evidence in this file (DEC1162-ENHANCE's named next). S, ~$0.5, disk only
+
+## Check-solved refresh (CS-1162, account-4 worker, 9 Oct 2026)
+
+Intake gate FAILed at the start (exit 1) only because later parenthetical notes pushed the Berzeviczy citation out of the 6-line window; the 3 Oct sweeps above (edition, web and blog, premise check) were not redone. The citation sentence now sits directly under the status word; re-run: `decode-1162-modena-ambung-1492: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0. Output before: `partial (line 3) with no standard-edition citation ... within 6 lines`, exit 1.
+Freshness pass, 3 web searches (standard mode), 9 Oct 2026: (1) `Beltrame Costabili Esztergom 1492 cifra lettera Eleonora d'Aragona decifrata`; (2) `Modena Archivio di Stato "Ambasciatori Ungheria" busta 2 Costabili 1492 cipher solves Claude OR GPT` (model-solve family); (3) `"Costabili" 1492 Hungary Este envoy cipher letter decipherment Cryptiana OR Cipherbrain OR "Cipher Mysteries"`. No source about a decipherment or plaintext of this letter or any Costabili cipher letter, and no model-solve announcement; hits were the PPKE/Verbum articles and Szakács (already read 24 Sept/3 Oct), Láng *Real Life Cryptology* (2018, not opened, no Costabili in the snippet), MNL page on Caprili's cipher (a different envoy). Not opened this pass: Domokos, Quaderni Estensi 6 (2014), asmo.cultura.gov.it QE6_lavori_domokos.pdf, and Láng's text, as leads for a Costabili/Modena-cipher mention. No decipherment or plaintext of this item located by these queries on 9 Oct 2026.
+prior_work.py (lookup, item-spec): exit 4, the only owed row is this worker's own live claim; tomokiyo/solver-repo rows UNCHECKED for lack of a folio/R-id (not cleared).
+`tools/next_steps.py --wait-only | grep decode-1162`: no line.
