@@ -191,3 +191,9 @@ Next step: the TNA copy order in REQUEST.md for SP 99/24 f.251 (the target) and 
 by D4-SP99) -- needs the owner (REQUEST.md "waiting on you"; this item is not yet in the consolidated `outreach/tna-page-copy-batch.md`, ASKS
 row 73, and the lane orchestrator may fold it in). The two catalogue steps are done (D2B-WOTT 5 Oct, D4-SP99 6 Oct); no online step is left
 that depends on nobody: the leaves are `digitised: false` and no print names the item. Housekeeping line, R13-STALE (account 4): no work run.
+
+## While waiting (9 Oct 2026, WAIT-PASS-4)
+
+Waits on: the TNA copy order for SP 99/24 ff. 251, 159 and 239 (REQUEST.md, "waiting on you", 24 Sept 2026; D4-SP99 6 Oct 2026). A grep of `outreach/tna-page-copy-batch.md` (ASKS 73) for "SP 99"/"Wotton" on 9 Oct 2026 finds nothing: the R13-STALE fold-in has not happened.
+- Add SP 99/24 ff. 251, 239, 159 to outreach/tna-page-copy-batch.md (ASKS 73), with a fresh gate-7 check of the draft; S
+- From discovery_sp99_24_items.tsv, list the 1621-22 items whose notes cite Pearsall Smith pages printed from deciphered despatches, and add the best one to the order as a crib for Wotton's reissued 1621-22 numeral cipher; S

@@ -84,3 +84,9 @@ Where it was not found: the printed Latin letters to Rudolf II cover 1582-85 onl
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
 next: search the Austrian side: HHStA Staatskanzlei Frankreich finding aids and any printed edition of Busbecq's 1586-87 reports to Rudolf II, plus the Speyer code in F&D vol. 2 Letter XIV as a possible sibling key, ~$1. Who acts: agent. Source: this file's premise check (d) ("Austrian archive editions ... were not searched"); written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+
+## While waiting (9 Oct 2026, WAIT-PASS-4)
+
+Waits on: a copy of ZB Zürich Ms F 42.5 (REQUEST.md, `gesuchspflichtig`, "waiting on you", 24 Sept 2026). The 5 Oct Next step is itself agent work and has not been run.
+- Search HHStA (archivinformationssystem.at) Staatenabteilung Frankreich Berichte 1586-87 for Busbecq reports, a Dechiffrat or a Chiffre of this letter; ~$1, NO-CRACKS 5 Oct step, not run; S
+- Read F&D vol. 2 Letter XIV (lifelettbusbecq02forsuoft, IA djvu) for the "code drawn up at Speyer", whether it is printed or described, and date it; with DECODE R1220/R1221 (his 1559 key, login-free listing) as a design prior via `tools/design_prior.py`; S

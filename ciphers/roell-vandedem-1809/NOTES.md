@@ -871,3 +871,9 @@ it is in 4-digit groups and whether it matches R1469/R1470's 13 pages; (2) the D
 
 **Requests:** www.nationaalarchief.nl 3 (item pages 7009, 6994; EAD XML download 1), all HTTP 200, >= 2 s apart, one at a time;
 service.archief.nl 0. Subagent calls: 0.
+
+## While waiting (9 Oct 2026, WAIT-PASS-4)
+
+Waits on: an NA scan-on-request or reading-room look at NA 1.01.02 inv. 6994 / 7009 (PHYSICAL, 0 scans; R11-ROELL13, 6 Oct 2026); the parent was to decide on an ASKS/REQUEST row.
+- DECODE R1469/R1470 full-size: one browser login, `tools/decode_browser_login.js` with `--guess-fullsize` (served 4692 full size, A2-HDK 2 Oct), to read the archive stamp/folio; S
+- Transcribe the inv. 804 clear Dutch copy of the 9 Feb 1793 despatch (scans 150R-152R, service.archief.nl IIIF, on R10-ROELL11's route) and compare its length and paragraphing with R1469's 1,297 groups (R10-ROELL11 option 3, weak alone; a matched shuffle control on group counts); S-M

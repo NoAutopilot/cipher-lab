@@ -204,3 +204,9 @@ Next step: the copy order in REQUEST.md ("waiting on you", owner-side) for SE/UL
 the Chifferklaver card catalogue SE/RA/202/20 and SE/RA/721502/3/1 (all `onlyDigitisedMaterials: false`) -- needs the owner. The 3 Oct
 while-waiting step is done (D2B-ULA, 6 Oct: the digitised 1133.08 volume's De Geer material is all in clear), and no online step is left that
 depends on nobody. Status stays `blocked` (needs-physical-access). Housekeeping line, R13-STALE (account 4): no work run.
+
+## While waiting (9 Oct 2026, WAIT-PASS-4)
+
+Waits on: the copy order in REQUEST.md for SE/ULA/13506/1/I/45 with E 584, SE/RA/202/20 and SE/RA/721502/3/1 (needs-physical-access; R13-STALE 6 Oct 2026). The 3 Oct while-waiting step ran (D2B-ULA, 6 Oct: clear text only).
+- Open Bijdragen en mededelingen HG (1908), "No. 48. Louis De Geer aan Johan Axelsson Oxenstierna" (A2-ULA: found, not opened); IA full text, grep for 3-digit code groups like 171=Haag; S
+- Grep AOSB second-series volumes holding Johan Axelsson Oxenstierna's 1644-46 letters (IA djvu, A2-ULA route) for De Geer and other non-year 3-digit numerals, to gather more code groups of the 171 (=Haag) system for a key match on arrival; S

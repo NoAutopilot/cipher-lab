@@ -99,3 +99,9 @@ Google Books API (key, country=US), 1 query, `"Waldegrave" Delafaye "21 July 173
 ## Next step (NO-CRACKS, 5 Oct 2026)
 
 next: the TNA page check of SP 78/205 f.146 (REQUEST.md; not yet in outreach/tna-page-copy-batch.md as of 5 Oct 2026 -- add it to that basket, board card tna-batch) to see whether the folio holds cipher or only describes Newcastle's, ~$0 agent cost; nothing cloud-side remains. Who acts: owner. Source: this file's "## Re-check (CS-BATCH3)" ("a page check is still the first step"); written by NO-CRACKS (account 3) because tools/next_steps.py found no next-step line in this file.
+
+## While waiting (9 Oct 2026, WAIT-PASS-4)
+
+Waits on: a TNA page check of SP 78/205 f.146 (REQUEST.md, "waiting on you", 24 Sept 2026). Found this pass: the 5 Oct Next step asked for it to be added to `outreach/tna-page-copy-batch.md` (ASKS 73), and a grep of that draft for "SP 78/205"/"Waldegrave" on 9 Oct 2026 finds nothing, so it is still not in the basket.
+- Add SP 78/205 f.146 (page check first) to outreach/tna-page-copy-batch.md, ASKS 73, with a fresh gate-7 check of the draft; S
+- Find Newcastle's own cipher letter to "Comte de Marsay" (the letter Waldegrave saw copied): `tools/discovery_items.py` for Marsay across SP 78, SP 104 (entry books) and SP 36, 1733-34; an entry-book clear copy beside a cipher original would make a real target with a crib; S
