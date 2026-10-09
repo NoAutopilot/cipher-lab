@@ -69,6 +69,15 @@ name spans. Meant to catch a whole-word alias and a cue phrase in order; must NO
 letter run, or a cue with its words reordered (tools/tests/test_decode_key_alias.py). Controls
 tools/tests/PREREG-MQS-ALIAS.md: --aliases controlled-only, --alias-scan weak (finds only phrasings its cue file carries).
 
+--lookalike A~B[,C~D...] [--lookalike-min 3.0] [--lookalike-tsv F] (9 Oct 2026, MQS-LOOKALIKE-SLIPS; Lasry, Biermann and
+Tomokiyo 2023 pp.123-124 Fig. 11, p.136 n.95, App. B pp.198-200: enciphering errors, a sign written for its look-alike
+twin). For each declared pair, every occurrence of A is read as B's value and every occurrence of B as A's, ONE position
+at a time (the --try window score, +-W tokens, the other occurrences unchanged); gain = twin minus own, in bits; flagged
+when gain >= --lookalike-min. Meant to catch a single slip of a twin sign inside otherwise good prose; must NOT flag
+an ordinary occurrence of either code (offline fixture and D-control in tools/tests/test_decode_key_lookalike.py). The
+pairs come from the person or a glyph atlas, never from this scan. A report: a flag is a candidate for an image check,
+never a key, exception or reading edit. Controls and grade: tools/tests/PREREG-MQS-LOOKALIKE-SLIPS.md.
+
 decode.json: {"jobs": [{...}, ...]} or one job object. Job keys (all optional):
   ciphertext, key, exceptions, reading, tokens   file names relative to TARGET_DIR
   format        pipe | tsv | rows (default: detected)
@@ -1316,6 +1325,76 @@ def special_main(a):
     return 0
 
 
+# ---------------------------------------------------------------- look-alike slips (MQS-LOOKALIKE-SLIPS, 9 Oct 2026)
+
+def parse_pairs(spec):
+    """'A~B,C~D' -> [('A', 'B'), ('C', 'D')]."""
+    out = []
+    for part in (spec or '').split(','):
+        part = part.strip()
+        if not part:
+            continue
+        if '~' not in part:
+            raise SystemExit(f'--lookalike: expected A~B, got {part!r}')
+        a, b = (x.strip() for x in part.split('~', 1))
+        if not a or not b or a == b:
+            raise SystemExit(f'--lookalike: a pair needs two different codes, got {part!r}')
+        out.append((a, b))
+    return out
+
+
+def lookalike_gain(cw, k, i, val):
+    """Window score with only position (k, i) read as val (a folded value) minus with its own value; None if either
+    is missing. A word value pays wpen as in occ_scores."""
+    own = cw.S[k][i][1]
+    if own is None or val is None:
+        return None
+    lo = max(0, i - cw.W)
+    seg = ['?' if v is None else v for _, v in cw.S[k][lo:i + cw.W + 1]]
+    pen = lambda v: cw.wpen if len(v) > 1 else 0.0
+    base = cw.seg_score(''.join(seg)) - pen(own)
+    seg[i - lo] = val
+    return cw.seg_score(''.join(seg)) - pen(val) - base
+
+
+def lookalike_scan(cw, pairs, minimum=3.0):
+    """One row per examined occurrence: code, twin, stream, index, own, twin value, gain, flag, context."""
+    rows = []
+    for a, b in pairs:
+        for code, twin in ((a, b), (b, a)):
+            tv = cw.current(twin)
+            ftv = None if tv is None else cw.fold(tv)
+            for k, i in cw.occ(code):
+                g = lookalike_gain(cw, k, i, ftv)
+                if g is None:
+                    continue
+                s = cw.S[k]
+                ctx = ''.join(('?' if v is None else v.lower()) for _, v in s[max(0, i - 6):i]) + '[' + \
+                    (s[i][1] or '-') + '>' + (ftv or '-') + ']' + \
+                    ''.join(('?' if v is None else v.lower()) for _, v in s[i + 1:i + 7])
+                rows.append(dict(code=code, twin=twin, stream=k, index=i, own=s[i][1], twin_value=ftv, gain=g,
+                                 flag=g >= minimum, context=ctx))
+    return rows
+
+
+def lookalike_main(a):
+    """--lookalike: prints the flagged occurrences (all with --show all); writes no key or reading."""
+    jobs = load_config(a.target, a)
+    cw = Crossword(a.target, jobs, lm_load(a.lm), window=a.window)
+    rows = lookalike_scan(cw, parse_pairs(a.lookalike), a.lookalike_min)
+    head = 'code\ttwin\tstream\tindex\town\ttwin_value\tgain\tflag\tcontext'
+    lines = [head] + ['\t'.join([r['code'], r['twin'], str(r['stream']), str(r['index']), r['own'], r['twin_value'],
+                                  f"{r['gain']:.1f}", 'slip?' if r['flag'] else '', r['context']]) for r in rows]
+    shown = [lines[0]] + [l for l, r in zip(lines[1:], rows) if a.show == 'all' or r['flag']]
+    print(f"# lookalike: {len(rows)} occurrences examined; flagged {sum(r['flag'] for r in rows)} at gain >= "
+          f"{a.lookalike_min} bits; lm {a.lm or 'fr16'}; window {a.window} (candidates for an image check, never a key "
+          f"or reading edit; shelf: tools/data/tool_shelf.tsv)")
+    print('\n'.join(shown))
+    if a.lookalike_tsv:
+        open(a.lookalike_tsv, 'w', encoding='utf-8').write('\n'.join(lines) + '\n')
+    return 0
+
+
 # ---------------------------------------------------------------- aliases (MQS-ALIAS, 9 Oct 2026)
 
 ALIAS_GRADE = re.compile(r'(?<![A-Za-z])([HCSMIU])(?![A-Za-z])')
@@ -1644,9 +1723,16 @@ def main(argv=None):
                     'unbounded letter run (default 5)')
     ap.add_argument('--alias-unbounded', action='store_true', help='treat every line as one letter run (no word '
                     'divisions) even when the job has word_sep or the text has spaces')
+    ap.add_argument('--lookalike', metavar='A~B[,C~D...]', help='look-alike slips: read each occurrence of A as B '
+                    '(and of B as A), one position at a time; flag gain >= --lookalike-min bits (MQS-LOOKALIKE-SLIPS; '
+                    'a report, never a key edit)')
+    ap.add_argument('--lookalike-min', type=float, default=3.0, help='with --lookalike: flag threshold in bits (3.0)')
+    ap.add_argument('--lookalike-tsv', help='with --lookalike: write every examined occurrence to this TSV')
     a = ap.parse_args(argv)
     if a.aliases or a.alias_scan:
         return alias_main(a)
+    if a.lookalike:
+        return lookalike_main(a)
     if a.special_scan:
         if a.nulls == 100:
             a.nulls = 50

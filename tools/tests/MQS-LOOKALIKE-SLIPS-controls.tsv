@@ -1,0 +1,32 @@
+seed	control	pair	planted	flagged	examined	false_flags
+0	R/F	mu~x	6	6	75	7
+0	N	x~s9	6	1		
+0	D	mu~x	0		81	6
+1	R/F	H~dia	6	5	61	8
+1	N	dia~xb	6	2		
+1	D	H~dia	0		67	8
+2	R/F	pib~s9	6	5	13	3
+2	N	s9~b6	6	2		
+2	D	pib~s9	0		19	3
+3	R/F	pi~q4	6	6	20	1
+3	N	q4~mc	6	6		
+3	D	pi~q4	0		26	1
+4	R/F	mu~ae	6	3	50	7
+4	N	ae~lam	6	1		
+4	D	mu~ae	0		56	8
+5	R/F	pi~mc	6	6	18	1
+5	N	mc~dia	6	5		
+5	D	pi~mc	0		24	1
+6	R/F	lam~H	6	3	48	7
+6	N	H~B	6	0		
+6	D	lam~H	0		54	7
+7	R/F	b6~fd	6	5	32	1
+7	N	fd~sha	6	2		
+7	D	b6~fd	0		38	1
+8	R/F	pib~pd	6	3	27	1
+8	N	pd~x	6	4		
+8	D	pib~pd	0		33	4
+9	R/F	pi~a1	6	3	26	4
+9	N	a1~ae	6	1		
+9	D	pi~a1	0		32	6
+# R 45/60 = 0.750 (gate >= 0.50); F 40/370 = 0.108 (gate <= 0.10); N 24/60 = 0.400, R - N = 0.350 (gate >= 0.30); D 45/430 = 0.105 (gate <= 0.10); k 6, seeds 10
