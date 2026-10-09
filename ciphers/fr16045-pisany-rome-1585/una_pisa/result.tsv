@@ -1,0 +1,7 @@
+stage	qid	id	role	answer_or_label	best_cell	second_cell	conf	verdict
+controls	Q01	K-T17	control	T17	T17	T38	medium	HIT
+controls	Q02	K-T46	control	T46	T46	T13	medium	HIT
+controls	Q03	K-T36a	control	T36	T36	T31	high	HIT
+controls	Q04	K-T16	control	T16	T16	T17	high	HIT
+controls	Q05	K-T36b	control	T36	T31	T36	medium	MISS
+# controls: GK 4/5 PASS

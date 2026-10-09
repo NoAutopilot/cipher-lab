@@ -1,0 +1,5 @@
+Q01	best=H	second=M	confidence=medium	n-shaped sign with right leg running down and curling back left into a loop (like ŋ); matches H (circled in table)
+Q02	best=C	second=K	confidence=medium	y-shaped sign: short left arm, long right stroke descending into a loop curling left at the bottom; matches C (not circled)
+Q03	best=O	second=U	confidence=high	long heavy diagonal falling left to right, crossed by a short stroke, with a closed o-loop at lower right; matches O (not circled)
+Q04	best=P	second=H	confidence=high	m-shaped sign whose final leg drops below the line; matches P (circled in table)
+Q05	best=U	second=O	confidence=medium	x-shaped cross of two strokes; the lower-right arm ends in an open hook or curl, not a closed loop; matches U, with O close (neither circled)

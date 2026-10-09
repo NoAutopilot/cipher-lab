@@ -1,0 +1,26 @@
+page	line	pos	ord	label	x_centre_strip	located	note
+f302v	L02	11	10	T57	658	eye	ctx: T05 [T57] / T12 T26; re-centred on the ruler montage
+f302v	L03	35	33	T57	1880	eye	ctx: three signs then slash after; re-centred on the ruler montage
+f302v	L05	7	7	T57	-	not-located	two adjacent similar signs, order not settled by context
+f302v	L05	29	27	T57	1575	eye	ctx: five signs then slash after; re-centred on the ruler montage
+f302v	L07	21	21	T47	1154	eye	ctx: first sign after T46 (y); re-centred on the ruler montage
+f302v	L07	29	29	T47	1650	eye	ctx: third sign before the slash; re-centred on the ruler montage
+f302v	L09	9	8	T47	499	eye	ctx: sign before T09; re-centred on the ruler montage
+f302v	L09	16	14	T47	-	not-located	neighbours not separable by context
+f302v	L10	28	26	T57	1657	eye	ctx: last sign before slash; re-centred on the ruler montage
+f302v	L10	32	29	T57	1920	eye	ctx: after T43 T10; re-centred on the ruler montage
+f301v	L02	11	10	T45	685	eye	ctx: third sign after slash; re-centred on the ruler montage
+f301v	L02	23	20	T57	1224	eye	ctx: three signs then slash after; re-centred on the ruler montage
+f301v	L02	48	41	T57	2408	eye	ctx: last sign, after T16 T41; re-centred on the ruler montage
+f301v	L04	35	29	T57	2122	eye	ctx: first after slash; re-centred on the ruler montage
+f301v	L05	10	8	T57	497	eye	ctx: second after slash; re-centred on the ruler montage
+f301v	L06	1	1	T57	145	eye	ctx: first sign, four then slash; re-centred on the ruler montage
+f301v	L06	26	21	T57	1407	eye	ctx: between slashes with one sign after; re-centred on the ruler montage
+f301v	L06	41	34	T57	2208	eye	ctx: fifth after slash; re-centred on the ruler montage
+f301v	L07	1	1	T47	138	eye	ctx: first sign, five then slash; re-centred on the ruler montage
+f301v	L07	22	19	T45	-	not-located	third-after-slash sign and the shape sequence disagree
+f301v	L07	43	39	T57	2355	eye	ctx: last sign before gutter; re-centred on the ruler montage
+f301v	L08	16	15	T57	1061	eye	ctx: third sign before slash; re-centred on the ruler montage
+f301v	L08	21	19	T47	1372	eye	ctx: second after slash; re-centred on the ruler montage
+f301v	L08	37	33	T57	2341	eye	ctx: first after the last slash; re-centred on the ruler montage
+f301v	L09	8	7	T45	518	eye	ctx: fourth after slash; re-centred on the ruler montage

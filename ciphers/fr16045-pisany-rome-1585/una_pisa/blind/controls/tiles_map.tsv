@@ -1,0 +1,6 @@
+qid	id	crop	answer_or_label	role
+Q01	K-T17	ciphers/fr16045-pisany-rome-1585/pissd/tok/f302v_L02_i16.jpg	T17	control
+Q02	K-T46	ciphers/fr16045-pisany-rome-1585/pissd/tok/f302v_L03_i6.jpg	T46	control
+Q03	K-T36a	ciphers/fr16045-pisany-rome-1585/pis2/tok/f275r_L09_i3.jpg	T36	control
+Q04	K-T16	ciphers/fr16045-pisany-rome-1585/pissd/tok/f302v_L02_i15.jpg	T16	control
+Q05	K-T36b	ciphers/fr16045-pisany-rome-1585/pis2/tok/f275r_L14_i28.jpg	T36	control
