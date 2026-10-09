@@ -1630,3 +1630,82 @@ Read so far: 0 of 229 cipher tokens graded H/C/S (no reading exists; homophonic/
 - [x] image-check: 9 cells settled from the image in WC-LAGARDE; two 10/18 cells remain
 - [ ] retry: homophonic/masc closed (LAG-GAP); running_key untestable by running_key.py at this N (LAG-NEXT); syllabary/wordcode never run at the measured error 0.055
 Verdict: keep going: 3 internal gaps; cheapest next: syllabary family_run control at the measured error 0.055/0.084, ~$2
+
+## LAG-SYL: `syllabary` at the measured error, matched control first, then the LAG-GAP score-gap gate (9 Oct 2026, account 2, LANE FAMILY-A2d, Opus, CPU only)
+
+**Job:** LAG-NEXT's named next step. No network beyond git, no vision, no subagents. Intake gate: lane orchestrator 00:2x UTC,
+exit 0. Prior work: `tools/prior_work.py la-garde-1577 --item-spec 'shelfmark=KHA A 11/XIV C/M-12;date=1577-11-28;sender=La
+Garde;recipient=Willem van Oranje' --step-type decode --fetch` -> **exit 4**: LEAD 1-own (this job's own 00:42 ROOM claim;
+recorded CLEAR in `prior-work.tsv`), LOOK 2-leaf (3 crops owed), UNCHECKED 3-tomokiyo, 3-solver, 4-editions, UNCHECKED-NET
+3-solver. Check 1 by hand: HYPOTHESES.md's only syllabary row was WC-LAGARDE2's at err 0.23, so the step had not been done.
+Checks 2-4 concern a plaintext prior reading and stay **unchecked** (this job claims no reading; gap below).
+
+**Tool.** `tools/families/syllabary.py` exists and already carries an error parameter (`err`, the CM3 token-level
+del:ins:code mix), so no `noise` param was added. Input: the spec's marks-kept code^mark ciphertext (N=239, K=48, 18.4%
+marked), as WC-LAGARDE2; the marks-stripped base codes would make the design degenerate to homophonic (closed by LAG-GAP).
+
+**Pre-registration:** `PREREG-LAG-SYL.md` (commit 0b4cc7865, pushed 00:43 UTC before any score), Amendment 1 (3098bc855,
+00:45 UTC, after the control calibration and before any target or gate score). The prereg adds two levels to the brief's
+0.055/0.084: a syllabary reads code AND mark, and LAG-ERR's marks-kept pairwise disagreement is 0.107 (A-vs-B) / 0.183
+(pooled), so the licensing level is 0.107 (SALV-DIAG: the control's error must bracket the error on what the design reads).
+
+**Control calibration** (`tools/family_run.py specs/la-garde-1577.json --family syllabary --seeds 3 --gate 0.6 --control-only
+--measured-error p --param err=p`; rows verbatim in HYPOTHESES.md):
+
+| Control err | Recovery, seeds 1-3 | Mean | Gate 0.60 |
+|---|---|---|---|
+| 0 (descriptive) | 0.921 / 0.845 / 0.967 | 0.911 | met |
+| 0.055 (base-code measured, brief) | 0.887 / 0.824 / 0.870 | **0.861** | met |
+| 0.084 (bracket, brief) | 0.908 / 0.858 / 0.824 | **0.863** | met |
+| 0.107 (marks-kept A-vs-B, licensing level) | 0.895 / 0.820 / 0.782 | **0.833** | met |
+| 0.183 (marks-kept pooled) | 0.230 / 0.251 / 0.310 | **0.264** | not met |
+
+One extra row (00:45, 0.859) ran at the family's default err 0.05 under a label saying err=0: the `pkill` meant to stop it
+did not match (the label's parentheses read as a regex group), and it finished. Its label cell in HYPOTHESES.md now says so.
+
+**Score-gap gate** (Amendment 1; `families/lag_syl.py`, 291 solves, 4 processes, 00:45-01:03 UTC; every score in
+`families/lag_syl.tsv`; `--report` re-prints; `--check` re-runs and diffs). Statistic: solver score per cipher token, because
+the error mix changes control N.
+
+| Set | n | Per-token score |
+|---|---|---|
+| Target T (solver seed 1) | 1 | **-2.9171** |
+| (a) controls, err 0.084 | 20 | -2.9003 .. -2.6098 |
+| (a) controls, err 0.107 | 20 | -2.9212 .. -2.6314 |
+| (a) pooled | 40 | p05 **-2.9003**; T at the 2.5th percentile |
+| (b) shuffled targets | 40 | -3.0242 .. -2.9180; p95 **-2.9370**; T above all 40 |
+| Power: held-out controls at err 0.107 (rec >= 0.60) | 7 | **7 of 7 pass** |
+| Power: held-out controls (rec < 0.60) | 3 | seeds 103 (0.536) and 104 (0.364) pass, 108 (0.536) fails; not counted |
+| Gate false-positive on shuffled targets (leave-one-out) | 40 | 0 of 40 |
+
+**Read-out (fixed in Amendment 1):** power **PASS** (7/7), target **FAIL** (T clears the shuffle leg, above every shuffled
+target, but is below the control p05 -2.9003; one control of 40 scores lower). This is a **control-backed negative for
+`syllabary` (regular assignment: one vowel per mark on every base) on the 239 marks-kept tokens, for transcription error up
+to 0.107**. It is **not** a negative over the 0.107-0.183 band: the control itself fails there (0.264), and a correct syllabary
+read through a noisier transcription would also score below these controls. So the row is conditional on the true marks-kept
+error being about 0.11 or less (pairwise disagreement 0.183 is an upper estimate of one reader's error). T above every
+shuffle says only that the token order carries structure under this decoder, which any language-bearing design would show.
+The shuffle leg cannot separate designs; the control leg does that. Not run: the irregular-assignment variant (`assign=irregular`),
+the `marks=mixed` class variant. Grades: 0 cipher tokens read (H 0, C 0, S 0, M 0, I 0); no reading. Status unchanged
+(`open`). Nothing for a verifier.
+
+Requests: none (git only). Vision: 0. Files: `PREREG-LAG-SYL.md`, `families/lag_syl.py`, `families/lag_syl.tsv`, six
+HYPOTHESES.md rows (five family_run, one gate) plus one label correction, `prior-work.tsv`, this section.
+
+## Remaining gaps (LAG-SYL, 9 Oct 2026)
+Read so far: 0 of 229 base-code / 239 marks-kept tokens graded H/C/S (no reading exists; homophonic/masc excluded by LAG-GAP; syllabary (regular) excluded at error <= 0.107 by LAG-SYL; running_key untestable by running_key.py at N=229)
+- marks-kept transcription error (the 0.107-0.183 band the syllabary negative does not cover) - blocker: not-attempted; LAG-SYL's negative holds only if one reader's marks-kept error is <= ~0.11; next: settle the overline/loop cells pass A and L1 split on (lag_err_cells.tsv) from the images, re-measure, and if the error stays above 0.11 re-gate at that level, ~$3
+- wordcode at the measured error - blocker: not-attempted; its only row (WC-LAGARDE2) ran the control at err 0.23; next: `family_run.py --family wordcode --param codes=marked --param err=0.107` (then 0.055/0.084), control-only first, LAG-SYL-style gate if it gates, ~$2
+- running-key / code-layer designs at N=229 - blocker: too-short; LAG-NEXT: the running_key control reads 27% with no noise on the target's 15 message lengths; reopens only with more same-system ciphertext (pooling) or a different instrument
+- two M-grade, not image-settled `10`/`18` cells (6179 p2L26.6, p2L27.13) - blocker: not-attempted; witness reads 18, committed 10; next: crop check from images/06179_p2.png, ~$1.5
+- plaintext prior-work rows (leaf gloss LOOK, Tomokiyo, solver caches, Gachard window) - blocker: not-attempted; prior_work.py exit 4 again on 9 Oct 2026 (LAG-SYL), owed before any decode is called a reading; next: `prior_work.py --fetch` then `--record`, ~$1
+
+## Escalation (LAG-SYL, 9 Oct 2026)
+- [ ] siblings: Gachard / WVO sibling sweep done in ZX2-LAG2; same-system pooling for N is still the route to power for running key, no new sibling found
+- [n/a] clear-pages: no clear page of this cipher identified; margin words placed in A2-LAG
+- [n/a] known-keys: no period key for this correspondent located
+- [x] print: Groen VI pp. 249-251 omits the cipher (footnote read); GSME/LMSAC read in OX-LAG
+- [n/a] key-rebuild: needs a family whose verdict statistic passes on its control decodes first
+- [ ] image-check: 9 cells settled from the image in WC-LAGARDE; two 10/18 cells and the marks-kept split cells remain (they decide whether LAG-SYL's negative covers the target's real error)
+- [ ] retry: homophonic/masc closed (LAG-GAP); syllabary (regular) closed at error <= 0.107 (LAG-SYL); running_key untestable by running_key.py at this N (LAG-NEXT); wordcode never run at the measured error
+Verdict: keep going: 4 internal gaps; cheapest next: wordcode family_run control at err 0.107 (then 0.055/0.084) plus the LAG-SYL gate, ~$2
