@@ -452,7 +452,7 @@ grepped for the Swedish full power, then read the page images (archive.org `page
 Read so far: unmeasured, the Nääs 6 May 1677 Swedish full power itself has not been located in any print or image (0 of 1 target document found)
 - Bakeš 2014 thesis full text - blocker: needs-physical-access; theses.cz "Soubory jsou nedostupné" and dk.upce.cz 10195/58052 PDF and text answer 401 without a Pardubice login (D2B-KARL section above); a person can use the repository's own request route or a Pardubice reader
 - Bakeš 2015/2016 ČČH articles (dk.upce.cz 10195/66550, 67724) - blocker: needs-physical-access; "Pouze v rámci univerzity", text bitstreams HTTP 401, no open copy via OpenAlex or Google Books (R8-KARL2 section above); the 2018 dissertation (10195/72172, open, 465 pp.) was grepped in full with 0 hits for the 1677 Nääs full power
-- Riksarkivet owner/copy route - blocker: waiting-on ASKS 159 (copy order drafted 9 Oct 2026 as outreach/riksarkivet-karlxi-1677.md; gate-7 check, then the person's send, then Riksarkivet's quotation); before 9 Oct no request had been drafted or sent (WAIT-PASS-4)
+- Riksarkivet owner/copy route - blocker: waiting-on ASKS 159 (copy order drafted 9 Oct 2026 as outreach/riksarkivet-karlxi-1677.md; gate-7 checked 9 Oct 2026 (OUT-CHECK-KARL), then the person's send, then Riksarkivet's quotation); before 9 Oct no request had been drafted or sent (WAIT-PASS-4)
 
 ## Escalation (R8-KARL3, 6 Oct 2026; updated R9-KARL4)
 - [x] siblings: Emperor-Sweden sibling instruments checked (A2P4-KARL page read)
@@ -462,7 +462,7 @@ Read so far: unmeasured, the Nääs 6 May 1677 Swedish full power itself has not
 - [n/a] key-rebuild: no cipher key involved
 - [x] image-check: title page and page read via A2P4-KARL, Hathi H4
 - [x] retry: be-api retried 4 Oct 2026 (RUN1-KARL, RUN3-KARL); dk.upce.cz 401 not retried (auth gate, not a transient)
-Verdict: parked: every remaining gap is outside-blocked (Bakeš texts needs-physical-access; Riksarkivet copy waiting-on ASKS 159, draft outreach/riksarkivet-karlxi-1677.md, gate-7 check pending); the printed 1676 sibling (document a) is a possible crib once an image of (b) arrives
+Verdict: parked: every remaining gap is outside-blocked (Bakeš texts needs-physical-access; Riksarkivet copy waiting-on ASKS 159, draft outreach/riksarkivet-karlxi-1677.md, gate-7 checked 9 Oct 2026 12:16 UTC, status ready, awaiting the SEND-QUEUE row and the send); the printed 1676 sibling (document a) is a possible crib once an image of (b) arrives
 
 ## While waiting (9 Oct 2026, WAIT-PASS-4)
 
@@ -484,3 +484,8 @@ Waits on: an image of document (b), Nääs 6 May 1677, from Riksarkivet (Verdict
 - Rows: ASKS 159 (backlog), CONTRIBUTIONS.md (drafted, not sent). Nothing sent. Requests: riksarkivet.se 5 (2 curl, 3 browser_fetch; one 404-style
   page at /bestall-kopior), Gmail search 1.
 
+
+## Gate-7 check of the copy order (OUT-CHECK-KARL, account-2 worker for orchestrator account-4, 9 Oct 2026, 12:11-12:2x UTC by date -u)
+- outreach/riksarkivet-karlxi-1677.md passed gate 7 (`checked:` line, status ready; not queued, not sent). Count correction carried here: the
+  scan lists above give 2 (RUN1-KARL) + 12 (RUN3-KARL, newly searched) + 14 (R8-KARL3) = 28 scans, not the "27" in R8-KARL3's Reading line, and a
+  control term answered in 2 + 5 + 12 = 19 of them (R8-KARL3's "12 controlled" is its own pass only). REQUEST.md and CONTRIBUTIONS.md now say 28.
