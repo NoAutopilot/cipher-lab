@@ -2332,3 +2332,71 @@ Read so far: f.86+f.88 169 of 539 cipher tokens C (AUDIT.md Audit 2, D1); f.67 C
 - [ ] image-check: f.1-2, f.9, f.67, f.86, f.88 reconciled from native crops; canvas 11-12 and canvas 32 reconciled at text level only (Gallica 503, 8 Oct); next: image arbitration of their 26 split positions, ~$3
 - [x] retry: every failed fetch has been retried and closed (canvases 45, 55, 58, 74, 679; canvas 11 HTTP 500 and canvas 32 resets recovered 24 Sept); the 8 Oct 503 is the image-check step above, to be retried in a later session, not looped here
 Verdict: keep going: 2 internal gaps; cheapest next: image arbitration of canvas 11-12 and canvas 32 when Gallica answers (~$3), or the pooled control_1653 rerun with all four letters (~$4, does not need the images)
+
+## F5160-POOL: pooled 1653-band control, second attempt of nomenclator_anneal.py (9 Oct 2026, 13:50-14:1x UTC by date -u)
+
+Worker F5160-POOL (solver, account 4, Opus), LANE DEFAULT-account-4-20261009-1340 job J1. Disk only, no network, no
+subagent. Pre-registered in `PREREG-F5160-POOL.md`, pushed (352cb6678) before any score.
+
+**Prior-work step (run late, after the control and before any target step; the control is synthetic and on disk).**
+`tools/prior_work.py fr5160-letellier-1653 --item-spec 'shelfmark=BnF fr.5160;folio=1r;sender=Brienne;recipient=Servien'
+--step-type key --offline` (origin/main c1f48e801, 14:01): **exit 4**, verdict LEAD. Owed: (1) `1-own:151360` is this
+worker's own live claim; (2) `1-own:4341b9` is the known-keys row (all four office keys already trialled, none reads), a
+different step from a cryptanalytic key rebuild; (3) five `4-editions` LEADs are period-span leads (Le Clerc, Negociations
+secretes t.2-4; Cheruel, Lettres de Mazarin t.2 1644-47 and t.9 1658-61), none spans 1653 by its own label; (4)
+aaymeloglu/unsolved-ciphers UNCHECKED-NET (no local clone). No lead names a 1653 key or decipherment of these letters. The
+target step was not run (control below gate), so nothing hangs on these leads in this job.
+
+**Inputs** (`pool_inputs.py`, `--check` exits 1 if stale): the 24 Sept pipeline extended to all four 1653 pieces.
+`real_pool.txt` = f1 + f9 + c11 + c32, **972 cipher tokens, 134 types**, 40 singletons, top-8 shares 7.8 5.9 4.9 4.7 3.9
+3.7 3.5 3.5 %. Control `control_pool.txt` (seed 1653, the 24 Sept design `control_1653_design.json` unchanged, enciphered
+on the real pooled run pattern): **972 tokens, 120 types**, 21 singletons, top-8 7.7 5.5 4.6 3.7 3.3 3.1 3.0 3.0 %. The
+control plaintext is the 24 Sept one unchanged, then the f.68r clear text (this volume) and Marguerite de Valois letter
+XIX (25 Apr 1581) to reach the pooled length. The fr16 order-5 model was rebuilt without any paragraph that holds a
+control sentence (not committed). Check on the settings: the same Problem scores the 24 Sept 752-token control's true key
+at **-2309.7**, the figure on file, so the words, syllables and model are the 24 Sept ones.
+
+**Run** (the 24 Sept best schedule t5, nothing else changed): `solve --context clear --syl cv --extra-syl
+control_1653_syl.txt --words <design's 16 words> --max-syl 100 --max-word 16 --max-null 3 --max-homo 4 --p-syl 0.45 --T0 2
+--T1 0.02 --iters 10000000 --restarts 4 --seed 7`, fixes S8=de S91=ques S32=le S43=se. Per-restart rows in
+`control_pool_runs.tsv`; best key and reading in `control_pool_best.json`.
+
+| control | N | best-score restart: token / letter acc | max token acc | best score | true-key score | gap (nats) |
+|---|---|---|---|---|---|---|
+| 24 Sept t5 (f1+f9) | 752 | 25.7% / 21.0% | 25.7% | -3013.0 | -2309.7 | 703 |
+| **9 Oct pool_t5 (f1+f9+c11+c32)** | **972** | **26.0% / 13.8%** | 26.0% | -4030.3 | -2978.9 | **1051** |
+
+**Gate: token accuracy of the best-scoring restart >= 0.60. Result 0.260: FAIL.** As pre-registered, the target
+`real_pool.txt` was **not run**. Pooling 29% more text left token accuracy flat (25.7 -> 26.0%), letter accuracy fell
+(21.0 -> 13.8%) and the gap between the best key found and the true key widened (703 -> 1051 nats): the numbers did not
+move together toward the bar. The language model still prefers the true key by a wide margin, so the failure is again in
+the search, not the scoring. The best reading has no French beyond scattered syllables between the clear frames.
+
+**Result.** Second control-backed failure of tools/nomenclator_anneal.py on this table's design, now at the pooled
+N. Logged in HYPOTHESES.md as the second attempt. Under rule 3's third-attempt clause, a re-run that changed only the one
+knob the re-brief bet on (N) and failed without every number moving together is already evidence that the instrument,
+not the setting, is the limit; per this brief, one more failure retires it for this hypothesis. **Grades: H 0, C 0, S 0,
+M 0, I 0 of 972 cipher tokens: no token read** (cryptanalytic method-limit negative, not evidence about the letters).
+
+What was found, and where it was not found: no reading of f1, f9, c11 or c32; the control shows the annealer does not
+recover a key_1659-like syllabic nomenclator at 972 tokens. Requests: none (disk only).
+
+Suggestion (Usage 7, not attempted): the next instrument is a word-level, dictionary-constrained solver over the cipher
+runs between clear frames (moves act on whole French words drawn from an fr17 word list, scored by the same order-5
+model), with its own matched control on `control_pool.txt` (truth on file) before any target run.
+
+## Remaining gaps (F5160-POOL, 9 Oct 2026)
+Read so far: f.86+f.88 169 of 539 cipher tokens C (AUDIT.md Audit 2, D1); f.67 C 435 / M 111 of 546 (align_f67.py); 1653 band f.1-2+f.9 0 of 752; canvas 11-12 block 0 of 113 and canvas 32 0 of 107 (ciphertext_c11/c32.tsv, text-level reconciled, trial_1653_c11c32.tsv)
+- Français 20661-20662 (Brienne 1653 despatch minutes, R11A-F5160 (3)), no Gallica link - blocker: waiting-on ASKS 154; REQUEST.md written and ASKS row 154 filed 8 Oct 2026 (D4-ASKS): BnF enquiry whether the volumes hold minutes to Servien for the 1653 letters, then a reproduction quote
+- canvas 11-12 and canvas 32 image arbitration (26 split positions, 8 of them db/tt) - blocker: not-attempted; Gallica HTTP 503 on 8 Oct 2026 09:2x UTC and 403 on 9 Oct 13:47 UTC (lane probe), crops not on disk; next: one region fetch per canvas when Gallica answers, iiif_lines crops, one reconciliation unit each, ~$3
+- 1653 band f.1-2 + f.9 + c11 + c32 (972 tokens, a key_1659-like syllabic table) - blocker: not-attempted; nomenclator_anneal.py control below gate twice (25.7% at 752 tokens, 24 Sept; 26.0% at 972 tokens, F5160-POOL 9 Oct; bar 60%), one more failure retires it; next: word-level (dictionary-constrained) solver between the clear frames with its own matched control on control_pool.txt, ~$4
+
+## Escalation (F5160-POOL, 9 Oct 2026)
+- [x] siblings: canvas walks 4-367 complete (walk_37_159.tsv, walk_160_367.tsv; canvas 45 D1A-CAN 8 Oct); sibling volumes and Colbert 26 part III read whole (375/375, AM-LOOK 7 Oct); KH2-A keyhunt 7 Oct: 0 unread fetchable siblings for key_1659/1647/1651
+- [x] clear-pages: f.68r clear text aligned to f.67 and tested (D1A-F68, PASS 0.801 vs p99 0.518); f.87 decipherment is the key source for f.86/f.88; the 1653 band has no interlinear or clear copy on any canvas 4-36 (Premise check, 2 Oct 2026)
+- [x] known-keys: all four keys of the office (key_1646, Tomokiyo 1647, Tomokiyo 1651, key_1659) trialled under matched controls on all four 1653 pieces (trial_1653.tsv f1/f9; trial_1653_c11c32.tsv c11/c32/pooled, D4-F5160B 8 Oct): none reads; key_1659 character signal only; KEY-OFFICES.tsv holds no other key of this office for 1650-1655
+- [x] print: the read items were print-checked (print-check.tsv 115 rows for f.86/f.88, print-check-f67.tsv 132 rows for f.67) and searched by two verifier audits (AUDIT.md 1, F67, Audit 2); the 1653 band has nothing read to search
+- [ ] key-rebuild: key_1659 rebuilt from f.87 (79 groups, period) and confirmed on a second letter (D1A-F68); for the 1653 table nomenclator_anneal.py has failed its matched control twice (25.7% at 752 tokens; 26.0% at 972 tokens, F5160-POOL, PREREG-F5160-POOL.md; numbers did not move together), so that instrument is spent for this table save one last attempt; a different instrument is untried; next: word-level dictionary-constrained solver with its own control on control_pool.txt, ~$4
+- [ ] image-check: f.1-2, f.9, f.67, f.86, f.88 reconciled from native crops; canvas 11-12 and canvas 32 reconciled at text level only (Gallica 503 8 Oct, 403 9 Oct); next: image arbitration of their 26 split positions, ~$3
+- [x] retry: every failed fetch has been retried and closed (canvases 45, 55, 58, 74, 679; canvas 11 HTTP 500 and canvas 32 resets recovered 24 Sept); the 8 Oct 503 is the image-check step above, to be retried in a later session, not looped here
+Verdict: keep going: 2 internal gaps; cheapest next: the word-level dictionary-constrained solver with its own matched control on control_pool.txt (~$4, disk only), or image arbitration of canvas 11-12 and canvas 32 when Gallica answers (~$3)

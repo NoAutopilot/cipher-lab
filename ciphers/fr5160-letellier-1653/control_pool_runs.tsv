@@ -1,0 +1,6 @@
+run	config	restart	score	lm	prior	token_acc	letter_acc	sign_acc
+pool_t5	iters 10M, T0 2, T1 0.02, p-syl 0.45, seed 7, 972 tokens (F5160-POOL 9 Oct 2026)	1	-4030.3	-3239.4	-790.9	0.260	0.138	0.075
+pool_t5	iters 10M, T0 2, T1 0.02, p-syl 0.45, seed 7, 972 tokens (F5160-POOL 9 Oct 2026)	2	-4188.5	-3078.1	-1110.5	0.107	0.108	0.042
+pool_t5	iters 10M, T0 2, T1 0.02, p-syl 0.45, seed 7, 972 tokens (F5160-POOL 9 Oct 2026)	3	-4223.9	-3159.1	-1064.9	0.060	0.131	0.050
+pool_t5	iters 10M, T0 2, T1 0.02, p-syl 0.45, seed 7, 972 tokens (F5160-POOL 9 Oct 2026)	4	-4227.4	-3170.8	-1056.6	0.109	0.101	0.050
+truth	true key scored by the same Problem (pool_inputs model)	-	-2978.9	-2870.8	-108.1	1.000	1.000	1.000
