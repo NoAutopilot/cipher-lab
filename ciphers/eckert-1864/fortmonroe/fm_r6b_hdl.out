@@ -1,0 +1,43 @@
+img 5662
+img 5740
+img 5744
+'wilkeson': 2 hits: 4610 5662
+'heckman': 9 hits: 5163 4610 4612 5598 5603 5604 5251 4364 4384
+'brewster': 2 hits: 13964 4611
+'guerillas': 32 hits: 10324 7498 7511 5807 12598 7923 5466 5583 12606 10382 6968 9771 11402 5254 10171 4302 12225 3423 14093 5667 13681 9868 8912 4379 4531 3068 5740 4539 8965 8966 8980 8997
+'orderlies': 18 hits: 11756 4199 7211 11561 12172 12175 11845 11590 13628 11605 11612 2085 11632 9439 11666 5744 11311 4817
+'abercrombie': 22 hits: 11768 9749 9362 10395 10396 6144 10407 6691 11589 11846 8292 2067 2076 4733 4735 4736 3664 5744 11716 11717 11719 7146
+'wicoff': 21 hits: 9975 9027 9038 10010 9053 9612 10030 5854 9623 10062 9828 9162 5706 8959 5740 5741 5744 8968 9936 9247 9955
+'swift creek': 3 hits: 4610 5662 5088
+'white house west point wire': 2 hits: 11859 11877
+Traceback (most recent call last):
+  File "/home/user/cipher-lab/ciphers/eckert-1864/fortmonroe/fm_r6b_hdl.py", line 24, in <module>
+    d = json.load(urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60)); n += 1
+                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.13/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/usr/lib/python3.13/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.13/urllib/request.py", line 1379, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 1335, in do_open
+    r = h.getresponse()
+  File "/usr/lib/python3.13/http/client.py", line 1478, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/client.py", line 343, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/client.py", line 312, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+http.client.RemoteDisconnected: Remote end closed connection without response
