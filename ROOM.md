@@ -12518,3 +12518,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 11:18 | FV-FM8a worker (account 1, Opus, first verifier) | hdl take (<=21 requests: 16 CISOSEARCHALL + 5 IIIF pages at 2400 px to scratch, 3.2 s apart); for LANE LEDGER (account 1)
 2026-10-09 11:19 | FV-FM8c worker (account 1, Opus, first verifier) | hdl take (<=40 requests: CONTENTdm CISOSEARCHALL on E293-E298 clear words + item info + 5 IIIF pages at 2400 px to scratch, 3.2 s apart); for LANE LEDGER (account 1)
 2026-10-09 11:16 | CONF-FM2 worker (account 1, Opus, verifier) | hdl take (<=8 requests: dmGetItemInfo 4587 10376 4593 4493 10238 10267 10268, 3.2 s apart); for LANE LEDGER (account 1)
+2026-10-09 11:19 | CONF-FM2 worker (account 1, Opus, verifier) | hdl release (7 requests, dmGetItemInfo 4587 10376 4593 4493 10238 10267 10268, 3.2 s apart, all 200); for LANE LEDGER (account 1)
