@@ -311,3 +311,25 @@ was logged back in at 23:38 UTC on 8 Oct (ASKS 76, answered). The Chavigny lette
 Huntington list gained two more for E146. Your waiver already clears both notes; the queued searches run first on the
 runner, and if any of them prints text a note mentions, we tell the recipient (the gate-2 lines in both drafts say so).
 The Huntington reply goes in through Ask a Librarian ticket #1926; the Tomokiyo note is an email.
+
+## Proposal for the parent: anonymous-pile intake (MQS-SCOUT, 9 Oct 2026, not applied)
+
+Why: the paper says such letters "cannot be attributed unless they are first deciphered" (p.101); attribution came from the
+partial decipherment (p.110; talk [00:22:32]-[00:22:40]), and a partly clear letter in the same glyph set (F57) anchored it
+(p.190 n.345). Our intake gate (`tools/intake_gate_check.py`) wants a check-solved verdict that names the standard edition and
+the pages read. An anonymous pile has no sender, so no edition, and the class the BnF sweep exists to find stalls at `blocked`.
+
+Exact CLAUDE.md pipeline-2 wording proposed (an owner-level rule; the parent puts it to the owner; CLAUDE.md and
+`tools/intake_gate_check.py` are not edited here):
+
+> **Anonymous piles (unattributed, undated, mostly cipher).** Check-solved runs by holder, shelfmark, folio and glyph set
+> instead of by sender: DECODE, Cryptiana (GL.htm and the unsolved lists), both solver repositories, and the holder's notice
+> (Présentation and Bibliographie). The edition step is deferred until a sender is named. After that, and after a search
+> for a partly clear sibling in the same glyph set, one capped, declared, attribution-only partial decode may run: first-person
+> gender agreement, kinship terms, named persons and places, the addressee. Its output is an attribution lead (graded M, rule
+> 4), never a reading. The normal gate (the edition, the intake check, the premise check) applies as soon as a sender is
+> proposed. A pile flagged `active-edition` by `tools/prior_work.py` (check 3a) goes to its project's contact route before any
+> of this.
+
+What it does not change: rule 3 (every attribution decode has a matched control), rule 10 (no novelty wording), the cap
+on a worker's brief, and the status vocabulary.
