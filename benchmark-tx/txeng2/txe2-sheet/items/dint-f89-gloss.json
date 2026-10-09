@@ -1,0 +1,59 @@
+{
+ "item": "dint-f89-gloss",
+ "truth_for_ref": "benchmark-tx/dint-f89-gloss.truth.tsv",
+ "lines": {
+  "f89_L01": [
+   "benchmark-tx/txeng2/dint-f89-gloss/crops/f89_L01.jpg"
+  ],
+  "f89_L02": [
+   "benchmark-tx/txeng2/dint-f89-gloss/crops/f89_L02.jpg"
+  ],
+  "f89_L03": [
+   "benchmark-tx/txeng2/dint-f89-gloss/crops/f89_L03.jpg"
+  ],
+  "f89_L04": [
+   "benchmark-tx/txeng2/dint-f89-gloss/crops/f89_L04.jpg"
+  ],
+  "f89_L05": [
+   "benchmark-tx/txeng2/dint-f89-gloss/crops/f89_L05.jpg"
+  ],
+  "f89_L06": [
+   "benchmark-tx/txeng2/dint-f89-gloss/crops/f89_L06.jpg"
+  ],
+  "f89_L07": [
+   "benchmark-tx/txeng2/dint-f89-gloss/crops/f89_L07.jpg"
+  ],
+  "f89_L08": [
+   "benchmark-tx/txeng2/dint-f89-gloss/crops/f89_L08.jpg"
+  ],
+  "f89_L09": [
+   "benchmark-tx/txeng2/dint-f89-gloss/crops/f89_L09.jpg"
+  ],
+  "f89_L10": [
+   "benchmark-tx/txeng2/dint-f89-gloss/crops/f89_L10.jpg"
+  ],
+  "f89_L11": [
+   "benchmark-tx/txeng2/dint-f89-gloss/crops/f89_L11.jpg"
+  ],
+  "f89_L12": [
+   "benchmark-tx/txeng2/dint-f89-gloss/crops/f89_L12.jpg"
+  ],
+  "f89_L13": [
+   "benchmark-tx/txeng2/dint-f89-gloss/crops/f89_L13.jpg"
+  ],
+  "f89_L14": [
+   "benchmark-tx/txeng2/dint-f89-gloss/crops/f89_L14.jpg"
+  ]
+ },
+ "skeleton_pass": "benchmark-tx/txeng2/dint-f89-gloss/passA.tsv",
+ "passes": [
+  "benchmark-tx/txeng2/dint-f89-gloss/passA.tsv",
+  "benchmark-tx/txeng2/dint-f89-gloss/passB.tsv"
+ ],
+ "line_prefix": "f89",
+ "label_map": null,
+ "band": [
+  0.0,
+  1.0
+ ]
+}
