@@ -2436,3 +2436,39 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%); the 9660 an
 - [ ] image-check: volunteer text only; next: 3 page images of 9660 if a book is found
 - [n/a] retry: no failed attempt
 Verdict: keep going: 2 internal gaps; cheapest next: rerun residue_decode.py --check alone to explain the stale report, ~$0.3 (books for 9660, 8472 and 6254 wait on no-key-material)
+
+## E62-STALE (9 Oct 2026, account 4, for LANE DEFAULT-account-4-20261009-1051)
+Worker E62-STALE, 11:03 UTC by date -u, cap USD 2.5. Status of this target unchanged (partial). Rule 10: found / not found only, no novelty class.
+Prior-work lines (by hand; `tools/prior_work.py` could not run: eckert-1862 has no items.tsv row for pointer 5021): own work -- E62-ALN's Merlin pair and
+HYPOTHESES.md; no other ROOM claim on 5021; "unchecked" for editions beyond OR 51 pt 1.
+(a) Stale `residue_decode.py --check`: NOT rerun and NOT explained. It needs all 58 page texts re-fetched from hdl.huntington.org (58 requests); the brief
+caps this job at 15 hdl requests, so it stopped there rather than exceed it. What is established: (1) page 5021's text fetched today has the sha256 in
+pages_manifest.tsv (fd4663cc...), so the Huntington text has not changed for at least that page; (2) E62-9660's stale report was made with the script as it stood
+before FIX-DEC (9e576d1d, 8 Oct 21:3x UTC), which read every `*.json` >= 4956 in the pages dir, and E62-9660 shared that dir with other fetches
+(the 9660 pages are pointers 9303-9659), which changes the page set and the carried date; FIX-DEC now reads only manifest pointers. That is the leading candidate,
+untested on the real 58 pages. Next: one job with a 58-request hdl budget (about 4 minutes at 3.3 s) into a clean directory: `residue_decode.py DIR --check`; if
+it exits 0 the cause is the shared dir; if 1, diff pages.tsv vs `--write` output into scratch. ~USD 0.3.
+(b) Merlin: image read, ledger word is Merlin; both witnesses logged in HYPOTHESES.md (Virginia OR 7 p.584 and June pages; Maryland OR 51 pt 1 p.537). Not resolved,
+key.md unchanged. Requests: hdl.huntington.org 2 (item 5021 text, one IIIF image at 2583 px), archive.org 1 (`_djvu.txt` of warofrebellion511unit) + 1 advancedsearch
++ 3 be-api phrase searches (no useful hit: unrestricted phrase search returns unrelated books).
+(c) Printed entries for Myrtle, Mary, Ingress, Camden, Humboldt in other OR volumes: not run. The residue entries carrying them are in readings.md (Feb 14 Halleck
+with Cumberland/Tennessee River, 16 and 19 Feb Scott, 14 Feb Buell with Thomas, 18 Feb Camden, Humboldt = Lander entries); candidate volumes beyond vols. 5, 7-12, 51, 53
+(OR ser. I vol. 52 pt 1, ORN) need their IA identifiers fixed first, and unrestricted be-api phrase search is noise, so a volume-restricted search is the
+next step, ~USD 1.
+
+## Remaining gaps (E62-STALE, 9 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%); this job adds no reading.
+- residue_decode.py --check reports stale on unchanged inputs - blocker: open-codes; leading cause the shared pages dir before FIX-DEC, untested; next: one 58-request clean-dir rerun, ~$0.3
+- Merlin = Maryland (25 Feb, image-confirmed, OR 51 pt 1 p.537) vs Virginia (OR 7 p.584, OR 12) - blocker: open-codes; a second Maryland or Potomac-line occurrence would split by line or date; next: grep the Feb ledger pages for Merlin in other lines, ~$0.5
+- Myrtle, Mary, Ingress, Camden, Humboldt single-day rows - blocker: no-key-material; no printed text for these entries in the volumes searched so far; next: volume-restricted phrase search in OR ser. I vol. 52 pt 1 and ORN for the readings.md entries carrying them, ~$1
+- object 9660, 8472 and 6254 entries - blocker: no-key-material; as E62-9660
+
+## Escalation (E62-STALE)
+- [x] siblings: no new sibling; Merlin's pages 5079, 5083 (June, Virginia) set beside 5021
+- [x] clear-pages: none
+- [ ] known-keys: Cipher No. 4 copy in the Friedman Collection; next: owner's desk runner, ~$1
+- [ ] print: vol. 52 pt 1 and ORN for the five single-day rows, ~$1
+- [n/a] key-rebuild: Merlin logged, key.md unchanged
+- [x] image-check: 5021 read 9 Oct 2026 (Merlin)
+- [ ] retry: --check rerun in a clean dir, ~$0.3
+Verdict: keep going: 2 internal gaps; cheapest next: clean-directory `residue_decode.py --check` with 58 hdl requests, ~$0.3

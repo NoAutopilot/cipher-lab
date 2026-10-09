@@ -29,3 +29,15 @@ E62-ALN (8 Oct 2026, account 1): Merlin conflict from the print, not folded into
 print/or_align.py): Merlin <-> "Maryland". Witness A (Virginia): OR 7 p.584, Western Virginia telegram, Feb. Witness B (Maryland):
 OR 51 pt 1 p.537, the ledger's 25 Feb entry 1 (single occurrence, one telegram; one-word replace block, no held-out test possible).
 Unresolved: could be a date/line split (Feb Western Virginia vs 25 Feb Maryland) or an OCR/alignment slip; the page image is not read.
+
+E62-STALE (9 Oct 2026, account 4, Sonnet): Merlin conflict, page image read (rule 4: both witnesses logged, not settled by count).
+Image: Huntington mssEC 15 item 5021 (IIIF full/2583, fetched 9 Oct 2026, scratch only, not committed), 25 Feb 1862 entry, line "...on the
+Merlin side before tomorrow": the ledger word is Merlin, so the volunteer text is right and the 3 Oct E62-ALN pair is not a transcription slip.
+Witness A (Virginia): OR ser. I vol. 7 p.584, Western Virginia telegram, Feb (key.md row, C). Witness B (Maryland): the 25 Feb entry itself against
+OR ser. I vol. 51 pt 1 p.537, Marcy to Lander at Paw Paw, Washington, 25 Feb 1862, "will not probably be on the Maryland side before
+to-morrow" (IA warofrebellion511unit `_djvu.txt`, read 9 Oct 2026), a Potomac crossing at Harper's Ferry. Pages 5079 and 5083 (OR 12 pt 1 pp.34,
+662-663, June) read Merlin = Virginia. One Maryland occurrence, one telegram, no held-out test possible. Not folded into key.md. Handling: Merlin
+is graded M in any entry about the Potomac / Harper's Ferry line (25 Feb on); key.md's Virginia row stands for the Western Virginia witnesses.
+Side finds on the same page, not acted on: Humboldt addressee = Lander (paw paw; print "Brig. Gen. F. W. Lander") fits key.md's Humboldt = Lander (M);
+Opal = "Winchester" (print "toward Winchester") fits Opal = Winchester (M); "no whistle was discovered" = print "no enemy was discovered", while
+key.md has Whistle = wounded -- a candidate conflict for a future job, one occurrence.
