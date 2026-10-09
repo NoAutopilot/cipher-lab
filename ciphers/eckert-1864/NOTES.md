@@ -3176,3 +3176,38 @@ Read so far: E271 E273 E274 E276 E279 E282 E287 E290 E296 confirmed N1 (AUDIT CO
 - [x] image-check: OR pages on the page image; ledger images not viewed (transcription-only; the witnesses agree).
 - [x] retry: none needed.
 Verdict: keep going: 2 internal gaps, cheapest next: E271 tail search, ~$0.3
+
+## FV-FM8a (9 Oct 2026, account 1, for LANE LEDGER)
+
+First verifier (separate session from FM-R4a, FM-R5a and CONF-FM), 11:16-11:3x UTC by `date -u`. Full record: AUDIT.md "## AUDIT
+(FV-FM8a)". Prior-work lines (pasted): prior_work.py audit per entry, exit 4 each, the only owed LEAD a target-level claim (FIX-FM7,
+done) not covering these units -> CLEAR; edition-hit LEADs for 5801 (OR I/43 pt 2, unrelated window) and 5768 (OR I/40 pt 3 p.142, read:
+the sibling telegram) recorded; holder: 16 CONTENTdm CISOSEARCHALL queries + 1 item record (4788); print: cached OR/Butler grep, OR I/42
+pt 3 fetched, Grant Papers vols. 11-13 be-api (8), Google Books 1 probe (200, unrelated). Images: all lines of the five entries read on
+2400 px crops (scratch).
+
+| ID | class | depth | note |
+|---|---|---|---|
+| E254 | N3 | D3 (12 of 12 H) | 9913 is the sent cipher copy (CONF-FM), not a clear copy; page reads "contrive" (transcription "continue") |
+| E270 | **N1** | D3 | **printed, OR ser. I vol. 42 pt 3 p.481** (Butler to Terry, 1 Nov 1864); print "headquarters" vs cipher growl = Washington |
+| E272 | N3 | D3 (14 of 14 H) | sibling to Halleck same hour printed OR I/40 pt 3 p.142, clear copy at holder 4788; E272 itself not located |
+| E275 | N3 | D2 (14 of 14 H) | whimper = Transport (key H); page writes "boots" twice, sense boats: meaning M |
+| E277 | N3 | D3 (11 of 12 H) | context OR I/42 pt 3 p.489; reply E160; "pause" unread |
+
+By-products: candidate key row whiskey = troops (C, the unfiled 5768 sibling against clear copy 4788; not written to key.md); the 5768
+sibling (Shaffer to Halleck, 10 July 1864 10.15 AM) is unfiled and is N1-shaped (clear copy 4788, print OR I/40 pt 3 p.142). status.json
+rows E254 E272 E275 E277 (audit_status "one audit"); SECOND-OPINIONS-QUEUE rows SO-ECKERT-E254/E272/E275/E277; WORK-QUEUE AUD2-LEDGER-18.
+Rule-10 note: "not located" lines are search results, dated 9 Oct 2026.
+
+### Remaining gaps
+- [ ] Reading corrections for a FIX job (AUDIT (FV-FM8a) s.4 and s.6): E254 continue -> contrive, Knocks -> [Butler]; E270 Wilby -> will
+  be, quadrantal -> [Department]al; E275 whimper -> [Transport]; next: FIX job through decode.py entry notes, ~$0.5.
+- [ ] E270 status.json row (N1, text: known) not written (brief: status rows for N3+ only); next: the lane orchestrator's call, ~$0.1.
+- [ ] Candidate key row whiskey = troops (C) and the unfiled 5768 sibling entry; next: the key owner's decision and a reader to file the
+  sibling against 4788, ~$0.5.
+- [ ] E275 "boots" vs boats and E277 "pause": not settled by key or print; next: the second audit (AUD2-LEDGER-18), Quartermaster
+  correspondence, ~$0.5.
+
+### Escalation
+Siblings: 9913 (E254 sent copy) and 4788 (E272's sibling) read; clear pages: none for the four N3 entries. Known keys: No. 1 reads all
+five. Print: E270 found; the other four not located in the volumes named. Image check: all five done. Verdict: keep going.
