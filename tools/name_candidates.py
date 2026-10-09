@@ -160,14 +160,15 @@ def letter_of(name):
     return m.group(1) if m else os.path.splitext(os.path.basename(name))[0]
 
 
-def render(r, code):
-    """One decoded token as context text; the tested code is always <CODE> and its key value is never read."""
+def render(r, code, hide=()):
+    """One decoded token as context text; the tested code is always <CODE> and its key value is never read; codes in
+    `hide` (the code under test, when rendering other codes' contexts for the null) are shown as <code> too."""
     if r['kind'] == 'clear':
         return ' ' + r['value'] + ' '
     if r['kind'] != 'sign':
         return ''
-    if r['sign'] == code:
-        return f' <{code}> '
+    if r['sign'] == code or r['sign'] in hide:
+        return f' <{r["sign"]}> '
     v = r.get('value')
     if r.get('null'):
         return ''
@@ -177,7 +178,7 @@ def render(r, code):
     return (' ' + v + ' ') if len(v) >= 2 else v
 
 
-def contexts_from_config(target, cfg_path, code, width=8, all_codes=False):
+def contexts_from_config(target, cfg_path, code, width=8, all_codes=False, hide=(), same_line=False):
     """Occurrences of `code` (or of every code, all_codes=True: {code: [ctx]}) in each job of a decode config."""
     import decode_key
     cfg = json.load(open(cfg_path))
@@ -197,8 +198,11 @@ def contexts_from_config(target, cfg_path, code, width=8, all_codes=False):
             if r['kind'] != 'sign' or (not all_codes and r['sign'] != code):
                 continue
             c = r['sign']
-            left = ''.join(render(x, c) for x in signs[max(0, i - width):i])
-            right = ''.join(render(x, c) for x in signs[i + 1:i + 1 + width])
+            hd = set(hide) | {code}
+            lw = [x for x in signs[max(0, i - width):i] if not same_line or x['line'] == r['line']]
+            rw = [x for x in signs[i + 1:i + 1 + width] if not same_line or x['line'] == r['line']]
+            left = ''.join(render(x, c, hd) for x in lw)
+            right = ''.join(render(x, c, hd) for x in rw)
             out[c].append(dict(letter=letter, date=job.get('date', ''), line=r['line'], pos=r['pos'],
                                left=re.sub(r'\s+', ' ', left).strip(), right=re.sub(r'\s+', ' ', right).strip(),
                                source=os.path.relpath(os.path.join(tdir, ct), ROOT)))
@@ -216,7 +220,7 @@ def contexts_from_tsv(path, code=None):
     return rows
 
 
-def contexts_from_mdblocks(folder, all_codes=True, width=8, items=None):
+def contexts_from_mdblocks(folder, all_codes=True, width=8, items=None, hide=()):
     """Contexts of every code word in an md-blocks folder (tools/holder_export.py's MdBlocks loader, read-only):
     neighbours rendered by their meanings (H/C/S/M), unread ones as <word>; {code word: [ctx]}."""
     import importlib.util
@@ -234,7 +238,7 @@ def contexts_from_mdblocks(folder, all_codes=True, width=8, items=None):
             if kind != 'word':
                 continue
             def rd(t):
-                if t[1] == w:
+                if t[1] == w or t[1] in (hide or ()):
                     return f'<{w}>'
                 return t[2] if t[3] in ('H', 'C', 'S', 'M') and t[2] else f'<{t[1]}>'
             left = ' '.join(rd(t) for t in toks[max(0, i - width):i])
@@ -666,12 +670,18 @@ def score_pool(pool, ctxs, cues, d, comention, assigned, nocue_flag=True):
     return out, any_cue
 
 
+def truth_match(name, alias):
+    """Known-answer match (controls only): equal folds, or the alias fold (>= 5 letters) inside the candidate's name."""
+    fn, fa = fold(name), fold(alias)
+    return bool(fa) and (fn == fa or (len(fa) >= 5 and fa in fn))
+
+
 def truth_rank(ranked, truth):
     if not truth:
         return None
     al = [t for t in truth.split('|') if t]
     for i, r in enumerate(ranked):
-        if any(alias_match(n, t) for n in cand_names(r) for t in al):
+        if any(truth_match(n, t) for n in cand_names(r) for t in al):
             return i + 1, r
     return None
 
@@ -808,13 +818,14 @@ def run(a):
     # contexts (all codes, for the context null)
     by_code = defaultdict(list)
     for cfg in a.config or []:
-        for c, xs in contexts_from_config(target, cfg, code, a.width, all_codes=True).items():
+        for c, xs in contexts_from_config(target, cfg, code, a.width, all_codes=True, hide={code},
+                                          same_line=a.same_line).items():
             by_code[c] += xs
     for p in a.contexts or []:
         for x in contexts_from_tsv(p):
             by_code[x.get('code') or code].append(x)
     if a.mdblocks:
-        for c, xs in contexts_from_mdblocks(target, width=a.width).items():
+        for c, xs in contexts_from_mdblocks(target, width=a.width, hide={code}).items():
             by_code[c] += xs
     ctxs = by_code.get(code, [])
     if a.subsample:
@@ -845,7 +856,7 @@ def run(a):
     coverage = None
     if a.truth:
         al = [t for t in a.truth.split('|') if t]
-        coverage = any(alias_match(n, t) for c in pool for n in cand_names(c) for t in al)
+        coverage = any(truth_match(n, t) for c in pool for n in cand_names(c) for t in al)
     ref = tr[1]['score'] if tr else (ranked[0]['score'] if ranked else None)
     cnull = context_null(pool, by_code, code, len(ctxs), cues, d, comention, assigned, a.truth, a.nulls, a.seed) \
         if a.nulls else None
@@ -896,6 +907,8 @@ def parser():
     ap.add_argument('--truth', help="known-answer aliases 'a|b' (controls only): report coverage and rank")
     ap.add_argument('--subsample', type=int, help='use only N random contexts (power check at the target count)')
     ap.add_argument('--width', type=int, default=8)
+    ap.add_argument('--same-line', action='store_true', help='context windows never cross a transcription line '
+                    '(spot-type transcriptions whose lines are separate passages)')
     ap.add_argument('--top', type=int, default=10)
     ap.add_argument('--nulls', type=int, default=200)
     ap.add_argument('--seed', type=int, default=1)
