@@ -1,0 +1,12 @@
+passage	pos	sign_id	conf	note
+L01	3	T95	M	p with bar through stem, not T51 cross-k
+L01	8	T95	M	same crossed-stem p; rejected T51
+L01	23	T29	M	c-lead plus looped e joined; rejected T92 plain omega
+L03	4	T29	M	c-lead looped joined shape; rejected T92
+L04	4	T29	M	c-lead looped joined shape; rejected T92
+L04	5	T86	M	one-bar hash with tall verticals, differs from clear two-bar T60 on same line
+L04	8	T86	M	one-bar hash; rejected T60
+L05	25	T29	M	c-lead looped joined shape; rejected T92
+L06	9	T24	M	single mirrored-3/epsilon with flick; rejected X_NEW
+L09	29	NONE	L	small cut-off stroke at margin edge, not a full sign
+L12	32	T96	L	slanted l-like stroke after diamond sign at edge; rejected none

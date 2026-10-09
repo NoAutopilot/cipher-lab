@@ -1,12 +1,12 @@
 passage	pos	sign_id	conf	note
 L01	1	T18	H	
 L01	2	T37	H	
-L01	3	?	L	split
+L01	3	T95	M	split+adj
 L01	4	T19	H	
 L01	5	T83	H	
 L01	6	T52	H	
 L01	7	T85	H	
-L01	8	?	L	split
+L01	8	T95	M	split+adj
 L01	9	T53	H	
 L01	10	T45	H	
 L01	11	T38	H	
@@ -21,7 +21,7 @@ L01	19	T80	H
 L01	20	T60	H	
 L01	21	T37	H	
 L01	22	T83	H	
-L01	23	?	L	split
+L01	23	T29	M	split+adj
 L01	24	T25	H	
 L01	25	T85	H	
 L01	26	T13	H	
@@ -56,7 +56,7 @@ L02	27	T19	H
 L03	1	T88	H	
 L03	2	T33	H	
 L03	3	T86	M	
-L03	4	?	L	split
+L03	4	T29	M	split+adj
 L03	5	T53	H	
 L03	6	T37	H	
 L03	7	T76	H	
@@ -82,11 +82,11 @@ L03	26	T86	M
 L04	1	T90	H	
 L04	2	T25	H	
 L04	3	T33	H	
-L04	4	T92	M	split_H_A
-L04	5	?	L	split
+L04	4	T29	M	split_H_A+adj
+L04	5	T86	M	split+adj
 L04	6	T76	H	
 L04	7	T45	H	
-L04	8	?	L	split
+L04	8	T86	M	split+adj
 L04	9	T90	H	
 L04	10	T37	H	
 L04	11	T97	H	
@@ -131,7 +131,7 @@ L05	21	T19	M
 L05	22	T60	H	
 L05	23	T86	M	
 L05	24	T89	H	
-L05	25	T92	M	split_H_A
+L05	25	T29	M	split_H_A+adj
 L05	26	T19	H	
 L05	27	T76	H	
 L05	28	T52	H	
@@ -146,7 +146,7 @@ L06	5	T76	H
 L06	6	T63	H	
 L06	7	T19	H	
 L06	8	T29	H	
-L06	9	?	L	split
+L06	9	T24	M	split+adj
 L06	10	T37	H	
 L06	11	T33	H	
 L06	12	T19	H	
@@ -255,7 +255,6 @@ L09	25	T25	H
 L09	26	T33	H	
 L09	27	T90	H	
 L09	28	T37	H	
-L09	29	?	L	split
 L10	1	T53	H	
 L10	2	T86	H	
 L10	3	T18	H	
@@ -350,4 +349,4 @@ L12	28	T95	M
 L12	29	T45	H	
 L12	30	T37	H	
 L12	31	T57	H	
-L12	32	?	L	split
+L12	32	T96	L	split+adj

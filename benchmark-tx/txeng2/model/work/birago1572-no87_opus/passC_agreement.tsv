@@ -1,12 +1,12 @@
 passage	posA	idA	confA	posB	idB	confB	status	merged	merged_conf
 L01	1	T18	H	1	T18	H	agree	T18	H
 L01	2	T37	H	2	T37	H	agree	T37	H
-L01	3	T51	M	3	T95	M	split	?	L
+L01	3	T51	M	3	T95	M	split+adj	T95	M
 L01	4	T19	H	4	T19	H	agree	T19	H
 L01	5	T83	H	5	T83	H	agree	T83	H
 L01	6	T52	H	6	T52	H	agree	T52	H
 L01	7	T85	H	7	T85	H	agree	T85	H
-L01	8	T51	M	8	T95	M	split	?	L
+L01	8	T51	M	8	T95	M	split+adj	T95	M
 L01	9	T53	H	9	T53	H	agree	T53	H
 L01	10	T45	M	10	T45	H	agree	T45	H
 L01	11	T38	H	11	T38	H	agree	T38	H
@@ -21,7 +21,7 @@ L01	19	T80	H	19	T80	H	agree	T80	H
 L01	20	T60	H	20	T60	M	agree	T60	H
 L01	21	T37	H	21	T37	H	agree	T37	H
 L01	22	T83	H	22	T83	M	agree	T83	H
-L01	23	T92	M	23	T29	L	split	?	L
+L01	23	T92	M	23	T29	L	split+adj	T29	M
 L01	24	T25	H	24	T25	H	agree	T25	H
 L01	25	T85	H	25	T85	H	agree	T85	H
 L01	26	T13	M	26	T13	H	agree	T13	H
@@ -56,7 +56,7 @@ L02	27	T19	H	27	T19	H	agree	T19	H
 L03	1	T88	H	1	T88	H	agree	T88	H
 L03	2	T33	H	2	T33	H	agree	T33	H
 L03	3	T86	M	3	T86	M	agree	T86	M
-L03	4	T92	M	4	T29	L	split	?	L
+L03	4	T92	M	4	T29	L	split+adj	T29	M
 L03	5	T53	H	5	T53	H	agree	T53	H
 L03	6	T37	H	6	T37	H	agree	T37	H
 L03	7	T76	H	7	T76	H	agree	T76	H
@@ -82,11 +82,11 @@ L03	26	T86	M	26	T86	M	agree	T86	M
 L04	1	T90	M	1	T90	H	agree	T90	H
 L04	2	T25	H	2	T25	H	agree	T25	H
 L04	3	T33	H	3	T33	H	agree	T33	H
-L04	4	T92	H	4	T29	L	split_H_A	T92	M
-L04	5	T86	M	5	T60	M	split	?	L
+L04	4	T92	H	4	T29	L	split_H_A+adj	T29	M
+L04	5	T86	M	5	T60	M	split+adj	T86	M
 L04	6	T76	H	6	T76	H	agree	T76	H
 L04	7	T45	H	7	T45	H	agree	T45	H
-L04	8	T86	M	8	T60	M	split	?	L
+L04	8	T86	M	8	T60	M	split+adj	T86	M
 L04	9	T90	M	9	T90	H	agree	T90	H
 L04	10	T37	H	10	T37	H	agree	T37	H
 L04	11	T97	H	11	T97	H	agree	T97	H
@@ -131,7 +131,7 @@ L05	21	T19	M	21	T19	M	agree	T19	M
 L05	22	T60	H	22	T60	H	agree	T60	H
 L05	23	T86	M	23	T86	M	agree	T86	M
 L05	24	T89	H	24	T89	H	agree	T89	H
-L05	25	T92	H	25	T29	L	split_H_A	T92	M
+L05	25	T92	H	25	T29	L	split_H_A+adj	T29	M
 L05	26	T19	H	26	T19	H	agree	T19	H
 L05	27	T76	H	27	T76	H	agree	T76	H
 L05	28	T52	H	28	T52	H	agree	T52	H
@@ -146,7 +146,7 @@ L06	5	T76	H	5	T76	H	agree	T76	H
 L06	6	T63	H	6	T63	H	agree	T63	H
 L06	7	T19	H	7	T19	H	agree	T19	H
 L06	8	T29	H	8	T29	H	agree	T29	H
-L06	9	X_NEW	L	9	T24	M	split	?	L
+L06	9	X_NEW	L	9	T24	M	split+adj	T24	M
 L06	10	T37	H	10	T37	H	agree	T37	H
 L06	11	T33	H	11	T33	H	agree	T33	H
 L06	12	T19	H	12	T19	H	agree	T19	H
@@ -255,7 +255,7 @@ L09	25	T25	H	25	T25	H	agree	T25	H
 L09	26	T33	H	26	T33	H	agree	T33	H
 L09	27	T90	H	27	T90	H	agree	T90	H
 L09	28	T37	H	28	T37	H	agree	T37	H
-L09	29	?	L	29	X_NEW	L	split	?	L
+L09	29	?	L	29	X_NEW	L	split+adj	NONE	L
 L10	1	T53	H	1	T53	H	agree	T53	H
 L10	2	T86	M	2	T86	H	agree	T86	H
 L10	3	T18	H	3	T18	H	agree	T18	H
@@ -351,4 +351,4 @@ L12	28	T95	M	28	T95	M	agree	T95	M
 L12	29	T45	M	29	T45	H	agree	T45	H
 L12	30	T37	H	30	T37	H	agree	T37	H
 L12	31	T57	H	31	T57	H	agree	T57	H
-L12	32	?	L	32	T96	L	split	?	L
+L12	32	?	L	32	T96	L	split+adj	T96	L

@@ -1,13 +1,2 @@
 passage	merged_pos	posA	idA	confA	posB	idB	confB	status	noteA	noteB
-L01	3	3	T51	M	3	T95	M	split	crossed p	p with crossed stem
-L01	8	8	T51	M	8	T95	M	split	crossed p	p with crossed stem
-L01	23	23	T92	M	23	T29	L	split	omega with c-lead	c-e loop joined
-L03	4	4	T92	M	4	T29	L	split	omega with c-lead	c-e loop joined
-L04	4	4	T92	H	4	T29	L	split_H_A		c-e loop joined
-L04	5	5	T86	M	5	T60	M	split	hash, one bar	
-L04	8	8	T86	M	8	T60	M	split	hash, one bar	
-L05	25	25	T92	H	25	T29	L	split_H_A		c-e loop joined
-L06	9	9	X_NEW	L	9	T24	M	split	3 shape, mirrored epsilon	3-shape
-L09	29	29	?	L	29	X_NEW	L	split	small mark at right crop edge, cut off; after: line end	small 8/s-like stroke after theta at line end; line end
 L10					32	T19	L	gapA		small pi-like bar with two verticals at line end; line end
-L12	32	32	?	L	32	T96	L	split	small mark at right crop edge, cut off; after: line end	faint l-shape; line end
