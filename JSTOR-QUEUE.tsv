@@ -301,19 +301,19 @@ ciphers/wvo-hessen-1564	"die adern zweimahl"	2026-10-06	queued
 ciphers/decode-2678-bnf-colbert127-gravel-1665	"Gravel" AND (Ratisbon OR Regensburg OR Ratisbonne) AND 1665 AND (pension OR Pension) AND (chiffre OR cipher OR Chiffre)	2026-10-06	queued	
 ciphers/decode-2678-bnf-colbert127-gravel-1665	"demye année de leur pension"	2026-10-06	queued	
 ciphers/decode-2678-bnf-colbert127-gravel-1665	"Frischmann" AND "Gravel" AND 1665 AND (Domkapitel OR chanoines OR canons)	2026-10-06	queued	
-ciphers/eckert-1864	"French officers" AND (Stanton OR Dana) AND Grant AND 1864	2026-10-07	queued	
-ciphers/eckert-1864	"to observe the military operations" AND French AND 1864	2026-10-07	queued	
-ciphers/eckert-1864	"whether I shall let them go to the front"	2026-10-07	queued	
-ciphers/eckert-1864	"he will be glad to have them" AND French	2026-10-07	queued	
-ciphers/eckert-1864	"Meigs" AND "Canby" AND "Shreveport" AND 1864 AND (gauge OR railroad) AND (telegram OR cipher)	2026-10-07	queued	
-ciphers/eckert-1864	"find the gauge of the Vicksburg"	2026-10-07	queued	
-ciphers/eckert-1864	"Augur" AND "Meade" AND "Point of Rocks" AND 1864 AND (telegram OR cipher OR dispatch)	2026-10-07	queued	
-ciphers/eckert-1864	"co-operation from Warrenton"	2026-10-07	queued	
-ciphers/eckert-1864	"Howell" AND "Ingalls" AND "Yorktown" AND 1864 AND (telegram OR cipher OR dispatch OR transportation)	2026-10-07	queued	
-ciphers/eckert-1864	"sufficient transportation at Yorktown"	2026-10-07	queued	
-ciphers/eckert-1864	"Augur" AND "Ingalls" AND "March 9, 1864" AND Grant AND (telegram OR cipher OR dispatch)	2026-10-07	queued	
-ciphers/eckert-1864	"will be down to the Army of the Potomac"	2026-10-07	queued	
-ciphers/eckert-1864	"Rucker informs me that he has sent"	2026-10-07	queued	
+ciphers/eckert-1864	"French officers" AND (Stanton OR Dana) AND Grant AND 1864	2026-10-07	done 2026-10-08	no relevant hit (56 results, none about the letter; nearest: context: French Warships on the Mexican West Coast, 1861-1866 | Benjamin Franklin Gilbert | Pacific Historical Review | 1955 | 24(1) pp. 25-37 | https://www.jstor.org/stable/3635229)
+ciphers/eckert-1864	"to observe the military operations" AND French AND 1864	2026-10-07	done 2026-10-08	no relevant hit (2 results, none about the letter: two Nancy N. Barker articles on French policy in Mexico, stable/1877749 and stable/30238173)
+ciphers/eckert-1864	"whether I shall let them go to the front"	2026-10-07	done 2026-10-08	no hits
+ciphers/eckert-1864	"he will be glad to have them" AND French	2026-10-07	done 2026-10-08	no relevant hit (2 results, none about the letter: The Trinity Ivy 1922 and 1923 yearbooks)
+ciphers/eckert-1864	"Meigs" AND "Canby" AND "Shreveport" AND 1864 AND (gauge OR railroad) AND (telegram OR cipher)	2026-10-07	done 2026-10-08	no relevant hit (9 results, none about the letter: indexes, Appletons cyclopaedia volumes, alumni news)
+ciphers/eckert-1864	"find the gauge of the Vicksburg"	2026-10-07	done 2026-10-08	no hits
+ciphers/eckert-1864	"Augur" AND "Meade" AND "Point of Rocks" AND 1864 AND (telegram OR cipher OR dispatch)	2026-10-07	done 2026-10-08	no relevant hit (2 results, none about the letter: Proc. Mass. Hist. Soc. May Meeting with war letters, stable/25080159; Calif. Hist. Soc. Quarterly index)
+ciphers/eckert-1864	"co-operation from Warrenton"	2026-10-07	done 2026-10-08	no hits
+ciphers/eckert-1864	"Howell" AND "Ingalls" AND "Yorktown" AND 1864 AND (telegram OR cipher OR dispatch OR transportation)	2026-10-07	done 2026-10-08	no relevant hit (67 results, none about the letter: indexes, Appletons cyclopaedia, Scott on Union balloon aeronautics)
+ciphers/eckert-1864	"sufficient transportation at Yorktown"	2026-10-07	done 2026-10-08	no hits
+ciphers/eckert-1864	"Augur" AND "Ingalls" AND "March 9, 1864" AND Grant AND (telegram OR cipher OR dispatch)	2026-10-07	done 2026-10-08	no hits
+ciphers/eckert-1864	"will be down to the Army of the Potomac"	2026-10-07	done 2026-10-08	no hits
+ciphers/eckert-1864	"Rucker informs me that he has sent"	2026-10-07	done 2026-10-08	no hits
 ciphers/colbert26-lathuillerie-1644	"La Thuillerie" AND "Servien" AND (chiffre OR cipher OR déchiffrement)	2026-10-07	queued	
 ciphers/colbert26-lathuillerie-1644	"Thuillerie" AND "Colbert 26"	2026-10-07	queued	
 ciphers/colbert26-lathuillerie-1644	"un peu mieux cette charge"	2026-10-07	queued	
@@ -324,121 +324,121 @@ ciphers/wvo-11008-certain-1572	"J'ay recheu ce jourduy les deux vostres"	2026-10
 ciphers/wvo-11008-certain-1572	"Lambert Certain" "Tournay"	2026-10-07	queued	
 ciphers/erving-monroe-1806	Erving AND Monroe AND 1806 AND (cipher OR code) AND Randolph	2026-10-07	queued	
 ciphers/erving-monroe-1806	"not until his successor arrives"	2026-10-07	queued	
-ciphers/eckert-1864	Meigs AND Biggs AND "Van Vliet" AND 1864 AND (telegram OR cipher OR chartered)	2026-10-08	queued	
-ciphers/eckert-1864	"double decked steam barges"	2026-10-08	queued	
-ciphers/eckert-1864	Fox AND Olcott AND "navy yard" AND 1864 AND (telegram OR investigate)	2026-10-08	queued	
-ciphers/eckert-1864	"to investigate only, not to prosecute"	2026-10-08	queued	
-ciphers/eckert-1864	Stanton AND Dix AND "Walker Street" AND 1864 AND (arms OR revolvers OR telegram)	2026-10-08	queued	
-ciphers/eckert-1864	"42 Walker Street"	2026-10-08	queued	
-ciphers/eckert-1864	Turner AND Gemmell AND "Old Capitol" AND 1864	2026-10-08	queued	
-ciphers/eckert-1864	"Jewett and Siebert"	2026-10-08	queued	
-ciphers/eckert-1864	Seward AND "Thurlow Weed" AND Pennock AND 1864 AND (sailors OR vote OR telegram)	2026-10-08	queued	
-ciphers/eckert-1864	"proxy of the sailors"	2026-10-08	queued	
-ciphers/eckert-1864	"gather votes in the Mississippi Squadron"	2026-10-08	queued	
-ciphers/eckert-1864	"James Gemmell"	2026-10-08	queued	
-ciphers/eckert-1864	"Manierre" AND "Dodge" AND provost AND 1864	2026-10-08	queued	
-ciphers/eckert-1864	"withdraw as a candidate for Congress or resign"	2026-10-08	queued	
-ciphers/eckert-1864	"Alexander Keith" AND Halifax AND remittance AND 1864	2026-10-08	queued	
-ciphers/eckert-1864	"No. 10 North Market"	2026-10-08	queued	
-ciphers/eckert-1864	"schooner Princess" AND 1864 AND detain	2026-10-08	queued	
-ciphers/eckert-1864	"Tassara" AND "Savage" AND Havana AND 1864	2026-10-08	queued	
-ciphers/eckert-1864	"winds and waves control"	2026-10-08	queued	
-ciphers/eckert-1864	"chief conspirator" AND "burning of New York" AND "Old Capitol"	2026-10-08	queued	
-ciphers/eckert-1864	"Adna Anderson" AND Whiton AND (cipher OR telegram) AND 1864	2026-10-08	queued	
-ciphers/eckert-1864	"accept promptly without question the proposed"	2026-10-08	queued	
-ciphers/eckert-1864	"calling himself Dr. Hamilton" AND Elmira	2026-10-08	queued	
-ciphers/eckert-1864	"Hamilton" AND "rebel agent" AND Baltimore AND 1864 AND (cipher OR telegram)	2026-10-08	queued	
-ciphers/eckert-1864	"hold these supplies on board" AND "Hilton Head"	2026-10-08	queued	
+ciphers/eckert-1864	Meigs AND Biggs AND "Van Vliet" AND 1864 AND (telegram OR cipher OR chartered)	2026-10-08	done 2026-10-08	no relevant hit (1 result, none about the letter: Journal of the Illinois State Historical Society cumulative index)
+ciphers/eckert-1864	"double decked steam barges"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Fox AND Olcott AND "navy yard" AND 1864 AND (telegram OR investigate)	2026-10-08	done 2026-10-08	no relevant hit (13 results, none about the letter: indexes, ALA handbook, Appletons cyclopaedia, newspaper)
+ciphers/eckert-1864	"to investigate only, not to prosecute"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Stanton AND Dix AND "Walker Street" AND 1864 AND (arms OR revolvers OR telegram)	2026-10-08	done 2026-10-08	no relevant hit (84 results, none about the letter: British trade directories)
+ciphers/eckert-1864	"42 Walker Street"	2026-10-08	done 2026-10-08	no relevant hit (1 result, none about the letter: Wright's Directory of Nottingham 1915-16)
+ciphers/eckert-1864	Turner AND Gemmell AND "Old Capitol" AND 1864	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"Jewett and Siebert"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Seward AND "Thurlow Weed" AND Pennock AND 1864 AND (sailors OR vote OR telegram)	2026-10-08	done 2026-10-08	no relevant hit (4 results, none about the letter: Appletons cyclopaedia volumes, Office of Education report)
+ciphers/eckert-1864	"proxy of the sailors"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"gather votes in the Mississippi Squadron"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"James Gemmell"	2026-10-08	done 2026-10-08	no relevant hit (39 results, none about the letter: other James Gemmells -- an economist, a violinist, a 1599 heir; nothing on the 1864 Old Capitol detective)
+ciphers/eckert-1864	"Manierre" AND "Dodge" AND provost AND 1864	2026-10-08	done 2026-10-08	no relevant hit (10 results, none about the letter: PMLA directories and MLA bibliographies)
+ciphers/eckert-1864	"withdraw as a candidate for Congress or resign"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"Alexander Keith" AND Halifax AND remittance AND 1864	2026-10-08	done 2026-10-08	no relevant hit (3 results, none about the letter: MVHR index, WPCF directory, Appletons cyclopaedia)
+ciphers/eckert-1864	"No. 10 North Market"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"schooner Princess" AND 1864 AND detain	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"Tassara" AND "Savage" AND Havana AND 1864	2026-10-08	done 2026-10-08	context: Florida's Relations with Cuba during the Civil War | James W. Cortada | The Florida Historical Quarterly 59(1) | 1980 | pp. 42-52 | https://www.jstor.org/stable/30146073; context: Political Change in the Spanish Caribbean during the United States Civil War and Its Aftermath, 1861-1878 | Luis Martinez-Fernandez | Caribbean Studies 27(1/2) | 1994 | pp. 37-64 | https://www.jstor.org/stable/25613235 (7 results; both read in the page viewer: neither discusses the letter -- see ciphers/eckert-1864/AUDIT.md)
+ciphers/eckert-1864	"winds and waves control"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"chief conspirator" AND "burning of New York" AND "Old Capitol"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"Adna Anderson" AND Whiton AND (cipher OR telegram) AND 1864	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"accept promptly without question the proposed"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"calling himself Dr. Hamilton" AND Elmira	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"Hamilton" AND "rebel agent" AND Baltimore AND 1864 AND (cipher OR telegram)	2026-10-08	done 2026-10-08	no relevant hit (3 results, none about the letter: Proc. Mass. Hist. Soc. December Meeting, Recollections of the Rebellion; Stuart on Dahlgren and the Richmond Union underground, VMHB stable/4247015; New National Era 1871)
+ciphers/eckert-1864	"hold these supplies on board" AND "Hilton Head"	2026-10-08	done 2026-10-08	no hits
 ciphers/wvo-11008-certain-1572	"le duc de Holstein lequel a faict charge"	2026-10-08	queued	
 ciphers/na-oldenbarnevelt-2442-1605	("Senisteros" OR "Sinisteros" OR "Cisneros") AND "Peña" AND (1605 OR Alcalá) AND (cifra OR cipher OR Oldenbarnevelt)	2026-10-08	queued	
 ciphers/na-oldenbarnevelt-2442-1605	"obispo de Sigüenza" AND 1605 AND "Juan de la Peña"	2026-10-08	queued	
 ciphers/na-oldenbarnevelt-2442-1605	"todos tienen sus pretensiones"	2026-10-08	queued	
 ciphers/na-oldenbarnevelt-2442-1605	"sus mismos hijos muchas veces no se atreven"	2026-10-08	queued	
-ciphers/eckert-1864	Meigs AND Biggs AND "Cavalry Bureau" AND 1864 AND (telegram OR cipher OR horses)	2026-10-08	queued	
-ciphers/eckert-1864	Rucker AND Biggs AND "City of Albany" AND 1864 AND (telegram OR cipher OR Pamunkey)	2026-10-08	queued	
-ciphers/eckert-1864	"move cattle and horses up the Pamunkey"	2026-10-08	queued	
-ciphers/eckert-1864	Rucker AND Newport AND Baltimore AND 1864 AND (steamers OR propellers) AND (telegram OR cipher)	2026-10-08	queued	
-ciphers/eckert-1864	"every available steamer and propeller"	2026-10-08	queued	
-ciphers/eckert-1864	"send on a man to identify him"	2026-10-08	queued	
-ciphers/eckert-1864	Meigs AND Biggs AND Salvor AND 1864 AND (coal OR "Hilton Head" OR telegram)	2026-10-08	queued	
-ciphers/eckert-1864	"Send Salvor to Annapolis"	2026-10-08	queued	
-ciphers/eckert-1864	"Manierre" AND "Fry" AND (withdraw OR withdrawal) AND 1864	2026-10-08	queued	
-ciphers/eckert-1864	"Detain the Princess and her cargo"	2026-10-08	queued	
-ciphers/eckert-1864	"Mitchell, Kenner"	2026-10-08	queued	
-ciphers/eckert-1864	"See Mr. Evarts and ask"	2026-10-08	queued	
-ciphers/eckert-1864	Meigs AND Biggs AND "White House" AND 1864 AND (telegram OR transports OR Pitkin)	2026-10-08	queued	
-ciphers/eckert-1864	"sixteen thousand strong is to embark"	2026-10-08	queued	
-ciphers/eckert-1864	Meigs AND Biggs AND Continental AND "Hilton Head" AND 1864	2026-10-08	queued	
-ciphers/eckert-1864	"provision and water the Continental"	2026-10-08	queued	
-ciphers/eckert-1864	Dyer AND Edson AND "Hilton Head" AND 1864 AND (ordnance OR telegram OR Sherman)	2026-10-08	queued	
-ciphers/eckert-1864	McCaine AND "Harper's Ferry" AND "Twenty-fifth New York Cavalry" AND 1864 AND (telegram OR cipher OR forges)	2026-10-08	queued	
-ciphers/eckert-1864	"small train of forges"	2026-10-08	queued	
-ciphers/eckert-1864	Meigs AND Thomas AND "Relief" AND Annapolis AND "colored troops" AND 1864	2026-10-08	queued	
-ciphers/eckert-1864	"good staunch steamer" AND Annapolis	2026-10-08	queued	
-ciphers/eckert-1864	Halleck AND Sherman AND "Eleventh Michigan Cavalry" AND Lexington AND 1864	2026-10-08	queued	
-ciphers/eckert-1864	"of no use at Lexington"	2026-10-08	queued	
-ciphers/eckert-1864	Meigs AND Biggs AND Montauk AND Spaulding AND 1864	2026-10-08	queued	
-ciphers/eckert-1864	"plenty of coal as it is probably scarce"	2026-10-08	queued	
-ciphers/eckert-1864	Meigs AND Ingalls AND "cavalry horses" AND 1864 AND (vouchers OR telegram)	2026-10-08	queued	
-ciphers/eckert-1864	"depreciation of vouchers and certificates"	2026-10-08	queued	
-ciphers/eckert-1864	Wade AND Sheridan AND Dana AND staff AND 1864	2026-10-08	queued	
-ciphers/eckert-1864	"pluck and gallantry" Wade	2026-10-08	queued	
-ciphers/eckert-1864	Meigs AND Sheridan AND "chief quartermaster" AND December AND 1864	2026-10-08	queued	
-ciphers/eckert-1864	"most capable and most worthy" Sheridan	2026-10-08	queued	
-ciphers/eckert-1864	Meigs AND Holabird AND Pensacola AND forage AND 1864	2026-10-08	queued	
-ciphers/eckert-1864	"make sure of a supply there"	2026-10-08	queued	
-ciphers/eckert-1864	Meigs AND Ingalls AND mules AND July AND 1864	2026-10-08	queued	
-ciphers/eckert-1864	"obliged to stop shipments of horses"	2026-10-08	queued	
-ciphers/eckert-1864	"Van Vliet" AND Wise AND Butler AND transports AND April AND 1864	2026-10-08	queued	
-ciphers/eckert-1864	"fully coaled by the twenty fifth" OR "fresh for their morning's work"	2026-10-08	queued	
-ciphers/eckert-1864	Van Vliet AND steamers AND Baltimore AND Savannah AND "construction corps" AND 1865 AND cipher	2026-10-08	queued	
-ciphers/eckert-1864	"coal and water for fifteen days"	2026-10-08	queued	
-ciphers/eckert-1864	Burbridge AND Bruch AND Stanton AND surgeon AND August AND 1864 AND telegram	2026-10-08	queued	
-ciphers/eckert-1864	"send him here under adequate guard"	2026-10-08	queued	
-ciphers/eckert-1864	Carrington AND Indianapolis AND howitzers AND Callender AND June AND 1864 AND cipher	2026-10-08	queued	
-ciphers/eckert-1864	"four hundred rounds assorted ammunition"	2026-10-08	queued	
-ciphers/eckert-1864	Stanton AND Sanders AND despatch AND Tycoon AND September AND 1864 AND cipher	2026-10-08	queued	
-ciphers/eckert-1864	"was an enormous blunder" AND Stanton	2026-10-08	queued	
-ciphers/eckert-1864	Benham AND Humphreys AND "canvas pontoons" AND March AND 1864 AND cipher	2026-10-08	queued	
-ciphers/eckert-1864	"advance bridge train"	2026-10-08	queued	
-ciphers/eckert-1864	Armond AND Halifax AND 1864 AND (Eckert OR telegraph OR Sanders)	2026-10-08	queued	
+ciphers/eckert-1864	Meigs AND Biggs AND "Cavalry Bureau" AND 1864 AND (telegram OR cipher OR horses)	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Rucker AND Biggs AND "City of Albany" AND 1864 AND (telegram OR cipher OR Pamunkey)	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"move cattle and horses up the Pamunkey"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Rucker AND Newport AND Baltimore AND 1864 AND (steamers OR propellers) AND (telegram OR cipher)	2026-10-08	done 2026-10-08	no relevant hit (30 results, none about the letter: indexes, directories, Appletons cyclopaedia)
+ciphers/eckert-1864	"every available steamer and propeller"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"send on a man to identify him"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Meigs AND Biggs AND Salvor AND 1864 AND (coal OR "Hilton Head" OR telegram)	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"Send Salvor to Annapolis"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"Manierre" AND "Fry" AND (withdraw OR withdrawal) AND 1864	2026-10-08	done 2026-10-08	no relevant hit (4 results, none about the letter: MLA bibliography, Stevens Life of Stephen Arnold Douglas, two indexes)
+ciphers/eckert-1864	"Detain the Princess and her cargo"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"Mitchell, Kenner"	2026-10-08	done 2026-10-08	no relevant hit (7 results, none about the letter: all the publisher Mitchell Kennerley, 20th c.)
+ciphers/eckert-1864	"See Mr. Evarts and ask"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Meigs AND Biggs AND "White House" AND 1864 AND (telegram OR transports OR Pitkin)	2026-10-08	done 2026-10-08	no relevant hit (20 results, none about the letter: society indexes)
+ciphers/eckert-1864	"sixteen thousand strong is to embark"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Meigs AND Biggs AND Continental AND "Hilton Head" AND 1864	2026-10-08	done 2026-10-08	no relevant hit (11 results, none about the letter: indexes, directories)
+ciphers/eckert-1864	"provision and water the Continental"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Dyer AND Edson AND "Hilton Head" AND 1864 AND (ordnance OR telegram OR Sherman)	2026-10-08	done 2026-10-08	no relevant hit (31 results, none about the letter: Appletons cyclopaedia, indexes, alumni magazines)
+ciphers/eckert-1864	McCaine AND "Harper's Ferry" AND "Twenty-fifth New York Cavalry" AND 1864 AND (telegram OR cipher OR forges)	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"small train of forges"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Meigs AND Thomas AND "Relief" AND Annapolis AND "colored troops" AND 1864	2026-10-08	done 2026-10-08	no relevant hit (15 results, none about the letter: Bollet on scurvy in Civil War troops, Fleming on the U.S. Army Signal Office 1861-1891, indexes)
+ciphers/eckert-1864	"good staunch steamer" AND Annapolis	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Halleck AND Sherman AND "Eleventh Michigan Cavalry" AND Lexington AND 1864	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"of no use at Lexington"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Meigs AND Biggs AND Montauk AND Spaulding AND 1864	2026-10-08	done 2026-10-08	no relevant hit (14 results, none about the letter: directories, PMLA front matter, index)
+ciphers/eckert-1864	"plenty of coal as it is probably scarce"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Meigs AND Ingalls AND "cavalry horses" AND 1864 AND (vouchers OR telegram)	2026-10-08	done 2026-10-08	no relevant hit (2 results, none about the letter: History of Wyoming vol. I 1918, Appletons cyclopaedia)
+ciphers/eckert-1864	"depreciation of vouchers and certificates"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Wade AND Sheridan AND Dana AND staff AND 1864	2026-10-08	done 2026-10-08	no relevant hit (563 results, none about the letter: society indexes; Pratt on J. H. Wilson stable/44556053; a chapter [1864] of a soldier-letters edition, stable 10.5325/jj.28064002.5; newspapers)
+ciphers/eckert-1864	"pluck and gallantry" Wade	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Meigs AND Sheridan AND "chief quartermaster" AND December AND 1864	2026-10-08	done 2026-10-08	no relevant hit (13 results, none about the letter: Burt Sherman's Logistics and Andrew Johnson stable/42621293; Swantner Military Railroads stable/44573286; Smith on the Army and the Alamo; others)
+ciphers/eckert-1864	"most capable and most worthy" Sheridan	2026-10-08	done 2026-10-08	no relevant hit (1 result, none about the letter: Indiana Methodist ministers appointments 1960-68)
+ciphers/eckert-1864	Meigs AND Holabird AND Pensacola AND forage AND 1864	2026-10-08	done 2026-10-08	no relevant hit (1 result, none about the letter: Appletons cyclopaedia vol. III)
+ciphers/eckert-1864	"make sure of a supply there"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Meigs AND Ingalls AND mules AND July AND 1864	2026-10-08	done 2026-10-08	no relevant hit (19 results, none about the letter: Essin Army Mule stable/4519673, indexes, Proc. Mass. Hist. Soc. June Meeting)
+ciphers/eckert-1864	"obliged to stop shipments of horses"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"Van Vliet" AND Wise AND Butler AND transports AND April AND 1864	2026-10-08	done 2026-10-08	no relevant hit (8 results, none about the letter: Pryor on Lincoln as commander in chief stable/26980027, bibliographies, directories)
+ciphers/eckert-1864	"fully coaled by the twenty fifth" OR "fresh for their morning's work"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Van Vliet AND steamers AND Baltimore AND Savannah AND "construction corps" AND 1865 AND cipher	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"coal and water for fifteen days"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Burbridge AND Bruch AND Stanton AND surgeon AND August AND 1864 AND telegram	2026-10-08	done 2026-10-08	no relevant hit (3 results, none about the letter: British trade directories)
+ciphers/eckert-1864	"send him here under adequate guard"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Carrington AND Indianapolis AND howitzers AND Callender AND June AND 1864 AND cipher	2026-10-08	done 2026-10-08	no relevant hit (1 result, none about the letter: Appletons cyclopaedia vol. III)
+ciphers/eckert-1864	"four hundred rounds assorted ammunition"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Stanton AND Sanders AND despatch AND Tycoon AND September AND 1864 AND cipher	2026-10-08	done 2026-10-08	no relevant hit (2 results, none about the letter: Appletons cyclopaedia vols. V-VI)
+ciphers/eckert-1864	"was an enormous blunder" AND Stanton	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Benham AND Humphreys AND "canvas pontoons" AND March AND 1864 AND cipher	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"advance bridge train"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Armond AND Halifax AND 1864 AND (Eckert OR telegraph OR Sanders)	2026-10-08	done 2026-10-08	no relevant hit (66 results, none about the letter: bibliographies, indexes, PMLA directories)
 ciphers/eckert-1862	"inform me as soon as possible" AND Halleck AND (Cumberland OR Tennessee) AND February 1862 AND (cipher OR telegram)	2026-10-08	queued	
 ciphers/eckert-1862	"what from Buell's command in Kentucky"	2026-10-08	queued	
-ciphers/eckert-1864	Rucker AND Webster AND "Fort Monroe" AND (cipher OR telegram) AND 1864	2026-10-08	queued	
-ciphers/eckert-1864	"every available steamer and propeller"	2026-10-08	queued	
-ciphers/eckert-1864	Ingalls AND Webster AND Baltimore AND (cipher OR telegram) AND 1865	2026-10-08	queued	
-ciphers/eckert-1864	"surplus vessels fit for sea"	2026-10-08	queued	
-ciphers/eckert-1864	Biggs AND Meigs AND "April 1864" AND (telegram OR cipher OR transportation)	2026-10-08	queued	
-ciphers/eckert-1864	"stop everything coming up the Potomac"	2026-10-08	queued	
-ciphers/eckert-1864	Benham AND Humphreys AND "April 21, 1864" AND (cipher OR telegram)	2026-10-08	queued	
-ciphers/eckert-1864	"not being aware that that would ensure a cipher"	2026-10-08	queued	
-ciphers/eckert-1864	Halleck AND Canby AND "Fourteenth New York" AND 1864 AND (artillery OR telegram)	2026-10-08	queued	
-ciphers/eckert-1864	"drilled as infantry so that it can go into the field"	2026-10-08	queued	
-ciphers/eckert-1864	Meigs AND "Van Vliet" AND "April 22, 1864" AND (tugs OR transports OR telegram)	2026-10-08	queued	
-ciphers/eckert-1864	"devote yourself to expediting the arrival of vessels"	2026-10-08	queued	
-ciphers/eckert-1864	Heintzelman AND "Johnson's Island" AND militia AND "April 1864" AND (Halleck OR telegram)	2026-10-08	queued	
-ciphers/eckert-1864	"by Friday next he will have a regiment of militia"	2026-10-08	queued	
-ciphers/eckert-1864	Butler AND "W. P. Smith" AND "November 1864" AND ("special car" OR train)	2026-10-08	queued	
-ciphers/eckert-1864	"special car for self and staff"	2026-10-08	queued	
-ciphers/baluze167-davaux-1637	Chavigny AND Avaux AND 1640 AND (Longueville OR Landgrave OR Eberstein) AND (chiffre OR déchiffrement OR cipher)	2026-10-08	queued	
-ciphers/baluze167-davaux-1637	"gratifiera le comte d'Eberstein"	2026-10-08	queued	
-ciphers/eckert-1864	Biggs AND Sheridan AND forage AND "May 20, 1864" AND (Meigs OR "Quartermaster General") AND (cipher OR telegram)	2026-10-08	queued	
-ciphers/eckert-1864	"Has Sheridan left the James"	2026-10-08	queued	
-ciphers/eckert-1864	Ricketts AND "City Point" AND Baltimore AND transports AND "July 7, 1864" AND (Meigs OR "Quartermaster General") AND (cipher OR telegram)	2026-10-08	queued	
-ciphers/eckert-1864	"vessels bringing up Ricketts"	2026-10-08	queued	
-ciphers/eckert-1864	Leet AND Bowers AND Sharpe AND Gordonsville AND "August 14, 1864" AND (cipher OR telegram OR scout)	2026-10-08	queued	
-ciphers/eckert-1864	"formerly employed by Colonel Sharpe"	2026-10-08	queued	
-ciphers/eckert-1864	Grant AND Rawlins AND "November 22, 1864" AND ("City Point" OR telegram OR cipher)	2026-10-08	queued	
-ciphers/eckert-1864	"not be at City Point until Thursday"	2026-10-08	queued	
-ciphers/eckert-1864	Dana AND "William Hamilton" AND Baltimore AND ("rebel agent" OR spy OR telegram) AND 1864	2026-10-08	queued	
-ciphers/eckert-1864	"seems trustworthy evidence"	2026-10-08	queued	
-ciphers/eckert-1864	Dana AND Rosecrans AND "November 7, 1864" AND ("rebel agent" OR telegram OR cipher)	2026-10-08	queued	
-ciphers/eckert-1864	"furnishes no personal description"	2026-10-08	queued	
-ciphers/eckert-1864	Meigs AND Vinton AND "Nelly Pentz" AND ("Hilton Head" OR telegram OR cipher)	2026-10-08	queued	
-ciphers/eckert-1864	"fully coaled and watered" AND Annapolis	2026-10-08	queued	
-ciphers/baluze167-davaux-1637	Eberstein AND Melander AND 1640 AND (Chavigny OR Avaux OR "La Boderie") AND (Hesse OR Landgrave OR Amalie)	2026-10-08	queued	
-ciphers/baluze167-davaux-1637	"mieux faire que son predecesseur" OR "une marque du gré que je vous en"	2026-10-08	queued	
-ciphers/eckert-1864	"Louisville and Nashville" AND (Meigs OR Donaldson) AND ("military railroads" OR seizure) AND 1864	2026-10-09	queued	
-ciphers/eckert-1864	"possession of the Louisville and Nashville"	2026-10-09	queued	
-ciphers/baluze167-davaux-1637	Chavigny AND (Landgrave OR Landgravine) AND (Lunebourg OR Lüneburg) AND 1640 AND (chiffre OR cipher OR déchiffrement)	2026-10-08	queued	
-ciphers/baluze167-davaux-1637	"le traitté qu'elle a fait depuis peu avec le Roy"	2026-10-08	queued	
+ciphers/eckert-1864	Rucker AND Webster AND "Fort Monroe" AND (cipher OR telegram) AND 1864	2026-10-08	done 2026-10-08	no relevant hit (8 results, none about the letter: indexes, Appletons cyclopaedia, Office of Education reports)
+ciphers/eckert-1864	"every available steamer and propeller"	2026-10-08	done 2026-10-08	no hits (same query as row 361, run in this sitting)
+ciphers/eckert-1864	Ingalls AND Webster AND Baltimore AND (cipher OR telegram) AND 1865	2026-10-08	done 2026-10-08	no relevant hit (105 results, none about the letter: indexes, bibliographies, unrelated articles)
+ciphers/eckert-1864	"surplus vessels fit for sea"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Biggs AND Meigs AND "April 1864" AND (telegram OR cipher OR transportation)	2026-10-08	done 2026-10-08	no relevant hit (2 results, none about the letter: Appletons cyclopaedia vol. I, History of Pittsford Vt.)
+ciphers/eckert-1864	"stop everything coming up the Potomac"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Benham AND Humphreys AND "April 21, 1864" AND (cipher OR telegram)	2026-10-08	done 2026-10-08	no relevant hit (1 result, none about the letter: 1920 DePauw University Alumnal Record)
+ciphers/eckert-1864	"not being aware that that would ensure a cipher"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Halleck AND Canby AND "Fourteenth New York" AND 1864 AND (artillery OR telegram)	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"drilled as infantry so that it can go into the field"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Meigs AND "Van Vliet" AND "April 22, 1864" AND (tugs OR transports OR telegram)	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"devote yourself to expediting the arrival of vessels"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Heintzelman AND "Johnson's Island" AND militia AND "April 1864" AND (Halleck OR telegram)	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"by Friday next he will have a regiment of militia"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Butler AND "W. P. Smith" AND "November 1864" AND ("special car" OR train)	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"special car for self and staff"	2026-10-08	done 2026-10-08	no hits
+ciphers/baluze167-davaux-1637	Chavigny AND Avaux AND 1640 AND (Longueville OR Landgrave OR Eberstein) AND (chiffre OR déchiffrement OR cipher)	2026-10-08	done 2026-10-08	no relevant hit (4 results, none about the letter: two Bulletin SHPF index volumes, an Annuaire-Bulletin SHF front matter, Koch/Schoell Histoire abregee des traites de paix t. II)
+ciphers/baluze167-davaux-1637	"gratifiera le comte d'Eberstein"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Biggs AND Sheridan AND forage AND "May 20, 1864" AND (Meigs OR "Quartermaster General") AND (cipher OR telegram)	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"Has Sheridan left the James"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Ricketts AND "City Point" AND Baltimore AND transports AND "July 7, 1864" AND (Meigs OR "Quartermaster General") AND (cipher OR telegram)	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"vessels bringing up Ricketts"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Leet AND Bowers AND Sharpe AND Gordonsville AND "August 14, 1864" AND (cipher OR telegram OR scout)	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"formerly employed by Colonel Sharpe"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Grant AND Rawlins AND "November 22, 1864" AND ("City Point" OR telegram OR cipher)	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"not be at City Point until Thursday"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Dana AND "William Hamilton" AND Baltimore AND ("rebel agent" OR spy OR telegram) AND 1864	2026-10-08	done 2026-10-08	no relevant hit (37 results, none about the letter: Appletons cyclopaedia, bibliographies, society back matter and indexes)
+ciphers/eckert-1864	"seems trustworthy evidence"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Dana AND Rosecrans AND "November 7, 1864" AND ("rebel agent" OR telegram OR cipher)	2026-10-08	done 2026-10-08	no relevant hit (1 result, none about the letter: MVHR fifty-year index)
+ciphers/eckert-1864	"furnishes no personal description"	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	Meigs AND Vinton AND "Nelly Pentz" AND ("Hilton Head" OR telegram OR cipher)	2026-10-08	done 2026-10-08	no hits
+ciphers/eckert-1864	"fully coaled and watered" AND Annapolis	2026-10-08	done 2026-10-08	no hits
+ciphers/baluze167-davaux-1637	Eberstein AND Melander AND 1640 AND (Chavigny OR Avaux OR "La Boderie") AND (Hesse OR Landgrave OR Amalie)	2026-10-08	done 2026-10-08	no hits
+ciphers/baluze167-davaux-1637	"mieux faire que son predecesseur" OR "une marque du gré que je vous en"	2026-10-08	done 2026-10-08	no relevant hit (2 results, none about the letter: Gardeil, Philosophie moderne review; an article on EMU budget policy)
+ciphers/eckert-1864	"Louisville and Nashville" AND (Meigs OR Donaldson) AND ("military railroads" OR seizure) AND 1864	2026-10-09	done 2026-10-08	no relevant hit (19 results, none about the letter); context: Federal Operation of Southern Railroads during the Civil War | R. E. Riegel | The Mississippi Valley Historical Review 9(2) | 1922 | pp. 126-138 | https://www.jstor.org/stable/1895670 (searched within: 'Louisville' on pp. 129, 130, 136; p. 129 names J. B. Anderson of the L&N as railroad director, Dept. of the Ohio, 1861; no 1864 seizure telegram); context: Sherman's Rail Support In The Atlanta Campaign | Errol MacGregor Clauss | The Georgia Historical Quarterly 50(4) | 1966 | pp. 413-420 | https://www.jstor.org/stable/40578791 (no 'Meigs' in text)
+ciphers/eckert-1864	"possession of the Louisville and Nashville"	2026-10-09	done 2026-10-08	no relevant hit (1 result, none about the letter: a 2026-dated community upload of a L&N Railway Co. legal case file)
+ciphers/baluze167-davaux-1637	Chavigny AND (Landgrave OR Landgravine) AND (Lunebourg OR Lüneburg) AND 1640 AND (chiffre OR cipher OR déchiffrement)	2026-10-08	done 2026-10-08	no relevant hit (1 result, none about the letter: Koch/Schoell Histoire abregee des traites de paix t. II)
+ciphers/baluze167-davaux-1637	"le traitté qu'elle a fait depuis peu avec le Roy"	2026-10-08	done 2026-10-08	no hits
