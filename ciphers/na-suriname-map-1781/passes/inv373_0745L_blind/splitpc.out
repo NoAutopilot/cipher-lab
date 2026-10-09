@@ -1,0 +1,9 @@
+# SUR-SPLITPC: K=300 C1 draws per synthetic unit, master seed 20261009; synthetic units bootstrapped per pass scaffold
+# scaffold A: lines 22, gloss letters 757, p_del 0.086, p_ins 0.144; face m {'[y-fam]': 15, '4': 1}; face n {'[y-fam]': 38, 'l': 13, '4': 5, '7': 2}
+  A H1: draws 200; synth A mean 0.868; y on m mean 0.7, on n mean 36.5; S mean 0.981; p99.5 mean 0.960; verdicts {'NO SPLIT SHOWN': 86, 'LEANS n': 114}; LEANS n rate 0.570
+  A H0: draws 50; synth A mean 0.876; y on m mean 15.3, on n mean 35.6; S mean 0.700; p99.5 mean 0.923; verdicts {'NO SPLIT SHOWN': 50}; LEANS n rate 0.000
+# scaffold B: lines 22, gloss letters 763, p_del 0.093, p_ins 0.131; face m {'[y-fam]': 14, '4': 1, '8': 1}; face n {'[y-fam]': 39, 'l': 14, '4': 5, 'h': 1}
+  B H1: draws 200; synth A mean 0.836; y on m mean 0.8, on n mean 36.9; S mean 0.979; p99.5 mean 0.961; verdicts {'NO SPLIT SHOWN': 98, 'LEANS n': 102}; LEANS n rate 0.510
+  B H0: draws 50; synth A mean 0.838; y on m mean 13.8, on n mean 36.5; S mean 0.728; p99.5 mean 0.937; verdicts {'NO SPLIT SHOWN': 50}; LEANS n rate 0.000
+DETECTION A (H1, LEANS n): 0.570 -> power < 0.8
+DETECTION B (H1, LEANS n): 0.510 -> power < 0.8
