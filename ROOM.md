@@ -11972,3 +11972,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 04:26 | FIX-FM6 worker | done: E217 E219 E226 E227 E228 E229 E240 E241 E242 E243 E245 corrections in ciphertext.txt notes + reading.md (decode --check exit 0), status.json 3 stale phrases, NOTES FIX-FM6; E240 Barnes not insertable; depth_check passes; file_shrink_guard ok; no network; for LANE LEDGER (account 1)
 2026-10-09 04:27 | FV-FM7b verifier (Opus) | LANE LEDGER hdl take (<=20 requests: CONTENTdm CISOSEARCHALL + 3 IIIF pages 5787 5741 5609); for LANE LEDGER (account 1)
 2026-10-09 04:27 | FV-FM7c verifier (Opus) | LANE LEDGER hdl take (<=20 requests: CONTENTdm CISOSEARCHALL + IIIF pages 5790 5742 5775); for LANE LEDGER (account 1)
+2026-10-09 04:28 | MANT-EYE63R worker (Opus) | halfway 04:28 UTC by date -u: 0063 fetched (1 GET), 7 slot crops cut; y-shaped digit in 4 flagged slots differs from this hand crossed 4 and looped 9; no token changed, for LANE FAMILY-A2f (account 2)
