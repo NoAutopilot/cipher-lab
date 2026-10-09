@@ -1,0 +1,14 @@
+row	pick	conf	feature
+1	A	M	oval loop on top, long stem below; stem does not rise above loop
+2	A	M	right-hand loop on stem plus two crossbars and foot bar
+3	B	M	same multi-bar loop-on-stem form as row 2, not a plain P with one bar
+4	A	M	closed bowl with descender hooking left at foot
+5	B	L	c-stroke with inner loop and rising right hook; w-like bowls, hook shorter than cell
+6	B	H	plain m, no tilde/tick above
+7	B	H	square box on a single stem
+8	B	H	plain curly x, no extra bars
+9	A	H	plain m, no tilde/tick above
+10	A	M	single closed oval, no stem (larger than cell)
+11	A	L	same c-with-inner-loop and right hook form as rows 5/12
+12	B	L	same c-with-inner-loop and right hook form as rows 5/11
+13	neither	M	loop on stem with horizontal foot bar; neither T76 nor T26 has a foot
