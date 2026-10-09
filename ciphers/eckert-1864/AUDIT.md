@@ -6680,3 +6680,166 @@ word. E225's ledger header "J. H." for "S. H." Beckwith is a volunteer-transcrip
 (N1). Corrections are carried by a FIX job (decode.py entry notes; reading.md is the decoder's, rule 7); this section records them.
 Requests: hdl.huntington.org 12 (one token block, 00:38-00:40 UTC); archive.org 4 (djvu downloads, 2 s apart); be-api 18 (1.6 s apart, no 502);
 Google Books 1 (429, stopped).
+
+## AUDIT (FV-FM5a)
+
+Verifier FV-FM5a (account 1, for LANE LEDGER), 9 Oct 2026, 00:28-00:5x UTC by `date -u`; a separate session from the reader FM-R3a
+(account 1), not protecting its conclusions. Scope: **E210, E212, E213, E214, E216** (ciphertext.txt, Cipher No. 1, Fort Monroe ledger
+mssEC 25 = Huntington object 5952; NOTES "## FM-R3a"). E211 (plaintext on the leaf) not audited; E215, E218 in print (reader); E217,
+E219 handed on. Nothing decoded beyond key look-ups in key.md. Key source for all five: `period`. Depth under
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Scripts:
+`fortmonroe/fv_fm5a_print.py` (cached + scratch OR/Plum/Brown grep), `fortmonroe/fv_fm5a_hdl.py` (CONTENTdm full text),
+`fortmonroe/fv_fm5a_beapi.py` (IA full text, Grant Papers).
+
+### 1. Prior-work, duplicates, sender's copies, image
+- **prior_work.py** (`--item-spec 'shelfmark=Huntington mssEC 25;canvas=<ptr>;date=...;sender=...;recipient=...' --step-type audit
+  --offline`, one per entry): exit 4 for all five, owing one target-level LEAD (ECK-PAGEFIX live claim, the mssEC 19 page column) that
+  does not cover these units: CLEAR. Tomokiyo mirror CLEAR; cached solver files CLEAR; aaymeloglu repository UNCHECKED-NET (no clone);
+  editions: date window CLEAR on the cached OR volumes; OR I/36 pt 3, I/40 pt 2 fetched this session (below).
+- **Duplicate diff:** pointers 5637, 5767, 5607, 5703, 5743 occur in ciphertext*.txt only in their own E-headers; no other filed header
+  for the five exact date + addressee pairs; **but E216 = E49** (Biggs, sent copy dated one day earlier; found through the holder's full
+  text, section 2). E210, E212, E213, E214: no filed duplicate.
+- **Sender's copy on disk (mssEC 18, `ms18/entries-ms18.tsv`):** **E212 = mssEC 18 row 9778/1** (Washington sent copy, "GD Sheldon Ft
+  Monroe 11.30 AM Washn July 7th 1864 / Lieut Pandora Biggs Chf Vincent Appian zebra ... Webster Belcher Florence united states of
+  America"), the same text; already flagged `mssEC25-dup` by MS18-PRE (`ms18/prefilter-ms18-final.tsv`), not filed, so recorded here and
+  not decoded. Its header time **11.30 AM** = the key's Florence = 11.30 AM (TIME page): the tail word "frorence" is the time word,
+  not filler. mssEC 18 has no 27 May (Bickford), 13 June (Biggs) or 28 Apr / 16 Apr rows of these telegrams (9747/1, 27 May, is another
+  Sheldon-for-Biggs telegram; 9704/3, 16 Apr, another to Sheldon). mssEC 19 (`entries-mssEC19.tsv`): no row.
+- **Image:** FM-R3a read all five pages whole at 2400 px (NOTES "## FM-R3a", prior-work check 2); the brief's eye-check is owed only
+  for lines the reader did not image-check, so no image was re-fetched.
+
+### 2. Holder's full text
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, `fv_fm5a_hdl.py`; under the LANE LEDGER hdl token 00:42-00:44 UTC,
+14 requests): "royer" 1 (5637 only), "tafft" 1 (5637), "best maps" 3 (5637; 6660, 9795 unrelated), "surplus" 35 and "superintendent" 8
+(5607 the only one on this matter), "insulators" 128 and "bickford" 139 (field-line traffic; the only 27 May 1864 insulator/Bickford text
+is 5703 itself), "new base" 14, "removing stores" 5, "available transportation" 7, "suited service" 2 (5767 and **9778**), "embark white
+house" 2 (10407, Dana's 12 June 1864 report "18th Corps moves to White house ... to embark for City Point"; 2173, 1862). Item info read
+for 8983 and 10407.
+- **E216 is a duplicate of E49.** "removing stores" and "new base" both hit **8983** = mssEC 19 p.91, entry 2: "410 p. m Sheldon Ft.
+  Monroe Wash. D. C. June 12. 1864. for Biggs Chf qm ---- An Expedition sixteen thousand strong is to quorum at White House Whelp Send to
+  that place immedy Every vessel fitted to aid in this movement & in removing stores & wounded to a new base or hospital signed Belcher
+  Julia" -- the Washington sent copy, **already filed as E49** (ciphertext.txt l.493; AUDIT LS-V4 and its second audit: N2, D3, status
+  row "Meigs to Biggs ... (E49)"). The reader's duplicate diff missed it because the two headers carry different dates (Monroe ledger "June
+  13 ... 4.20 P. M", sent copy "June 12. 1864", "410 p. m"). Recorded, not re-decoded. The pair is a key test: the sent copy writes in
+  clear what the Monroe copy codes -- "Expedition sixteen thousand" for **rape gas woodbury** (Rape = Expedition, Gas = 16, Woodbury =
+  1000: grade C on three groups), and "quorum" (key: Quorum = Embark, p.19 l.26 L) where the Monroe copy has its homophone "quarrel" (p.19
+  l.26 R). Date: Pitkin's request reached Meigs 12 June 2.15 p.m. (OR I/36 pt 3 p.769), so 12 June 4.10 PM (sent copy) is the date; the
+  Monroe header's "13" is the clerk's (or the receipt) and is logged, not corrected.
+- **E212** has its sent copy in mssEC 18 (9778/1, above). No clear or received copy of E210, E213 or E214 in the holder's full text.
+
+### 3. Print
+Cached texts plus six volumes fetched to scratch this session (archive.org, 2 s apart): Plum, *The Military Telegraph during the Civil
+War* I-II (1882; `cu31924092908742`, `cu31924092908759`), Brown, *The Signal Corps, U.S.A., in the War of the Rebellion* (1896;
+`signalcorpsusain00brow`), OR I/36 pt 3 (`warofrebellion363unit`), OR I/40 pt 2 (`warofrebellion402unit`); OR I/40 pt 1
+(`warofrebellion401unit`) answered 500, not retried. 170 volumes, letters-only phrase grep (`fv_fm5a_print.py`): **0 hits for every
+decoded phrase of all five entries** (e.g. "maps of the Peninsula", "Sergeant Royer", "become surplus by the new arrangements", "Bickford
+has", "miles insulators", "advise me often about the work", "all available transportation be sent to City Point", "suited for this
+service", "16,000 strong is to embark", "new base or hospital", "removing stores and wounded"). Positive control: the same grep finds
+"Norton, chief signal" in 7 volumes and "158 F Street" in Brown. Then read by date and name:
+- **E210 (Norton to Tafft, 28 Apr 1864):** Brown 1896 prints: the Signal Office in Washington "was located at 158 F Street" (opened
+  Nov. 1861 "at No. 158 F Street (now No. 1905), N. W."); Capt. Henry S. Tafft on duty at that office from 4 June 1863 as adjutant;
+  roster: "ROYER, WILLIAM HARRY, Sergt. ... 1862, clerk at signal office, Washington, D. C.; March, Army of Potomac; Dept. of Va. and
+  N. C.; act. Q. M. sergt. for Capt. Norton, and clerk for Capt. Cushing ... disch. July, 1864"; "L. B. Norton, Capt. and Chief Signal
+  Officer" (Dept. of Va. and N. C., June 1864). **The telegram is not printed there; the address and the three people are.**
+- **E212 (QMG via Eckert to Biggs, 7 July 1864):** OR I/37 pt 2 and I/40 pt 3 print Grant 5 July ("If required, direct the
+  quartermaster to send transportation"), Halleck 5 July ("All available water transportation is now at Fort Monroe and in James River.
+  General Meigs recommends that it all be placed under General Ingalls"), Pitkin 6 July (transports used for troops to Baltimore), and
+  Butler 6 July (Biggs too sick to leave Fort Monroe). The 7 July telegram itself: **not located.**
+- **E213 (L. F. Sheldon at Fort Monroe to Eckert, 16 Apr 1864):** Plum I (list of telegraph captains/AQMs): "Captain Lemuel F. Sheldon,
+  Department of the South, October 31, 1863"; Plum II: "In the Department of the South, Captain Sheldon" (miles of line, 30 June 1864).
+  OR I/35 pt 2: Gillmore, Hilton Head, 19 Apr 1864: "Brig. Gen. J. W. Turner, my chief of staff and of artillery"; Special Orders 14-19
+  Apr sending regiments "of the Tenth Army Corps ... to Fortress Monroe"; OR I/33: Butler's HQ to Gillmore, 18 Apr, "bring with you the
+  engineering materials". **Not located** as a telegram.
+- **E214 (Eckert to Sheldon, 27 May 1864):** **OR I/36 pt 3 pp.321-322**, "Fort Monroe, Va., May 29, 1864. Major Eckert: Bickford and
+  party arrived this morning. Have got their six teams complete and a steamer to take them direct to West Point. Have furnished them
+  everything they wanted and material to make 20 miles with what they had. ... G. D. SHELDON" -- Sheldon's reply carrying out E214;
+  also p.321, Caldwell to Eckert 29 May: "Your dispatch of 27th has been shown to General Grant ... cannot tell now where we will meet
+  Bickford"; index: "Bickford, Frederick T." (Plum II: F. T. Bickford, operator). **E214 itself is not printed** (the volume's Sheldon
+  pages 262, 281, 321-322, 417, 424, 756 read).
+- **E216 (QMG via Eckert to Biggs, 13 June 1864, 4.20 PM):** **OR I/36 pt 3 pp.769-770**, "White House, June 12, 1864. (Received 2.15
+  p. m.) Gen. M. C. Meigs, Quartermaster-General: Transportation by water for 16,000 troops will be required from this place to-morrow.
+  The movement is very important, and it is necessary that all vessels suitable for transporting troops ... be returned at once ...
+  P. P. PITKIN, Captain, Assistant Quartermaster"; p.724-725, Ingalls (10 June) recommends that "Lieut. Col. H. Biggs, chief quartermaster
+  at Fort Monroe ... be ordered to assemble suitable transports" for Smith's corps; OR I/40 pt 2 (13-15 June): Biggs's and Meigs's
+  ferry/vessel orders for Fort Powhatan. The Meigs order itself is **not located** in print (OR I/36 pt 3, I/40 pt 2, Grant Papers vol. 11),
+  as E49's audits already logged; E216 is E49's received copy (section 2).
+- **IA be-api, Grant Papers (snippet only, `fv_fm5a_beapi.py`, 6 requests, all answered):** vol. 11 "Biggs" 1 (Grant to Biggs, Cold
+  Harbor 12 June, and Ingalls's 10 June recommendation in the notes: context for E216), "suited for this service" 0, "16,000" 0, "all
+  available transportation" 0; vol. 10 "Bickford" 0, "Tenth Corps" 0. Google Books not called (429 to two readers this hour). Chronicling
+  America and Basler not searched (no entry is to or from Lincoln; press of the day not reached).
+
+### 4. Grade and reading corrections (FM-R3a's table, reading.md)
+- **E214: "spoons" is in key.md** (`| Spoon | Mile | H | p.21 l.26 (338) L |`): the three "spoons" = miles are **H**, not I/M as FM-R3a
+  wrote ("'spoons' is not in key.md"); OR I/36 pt 3 p.322 ("material to make 20 miles") confirms "harrow spoons" = 20 miles.
+  "Bickford" (not "Pickford") is plain: Frederick T. Bickford, military telegraph operator (OR I/36 pt 3 index; Plum II). Code
+  groups feeble, spoons, pebble, gradual, spoons, Wilson, harrow, spoons, unity = **9 H of 9**, 0 M (FM-R3a 9/9/4 with I 1).
+- **E212:** "frorence" = **Florence = 11.30 AM** (time word, H; the mssEC 18 sent copy's header reads 11.30 AM), not filler; "united
+  state(s) of America" stands in both copies after the signature and is unexplained (decoder's America = Delaware does not read): **M**.
+  Reading: "[11.30 AM.] Lieut. [Colonel] Biggs, chief [Quartermaster], [Monroe]. [Lt. Gen. Grant] directs that all available
+  [transportation] be sent to [City Point] to move [troops] thence to [Washington]. Send up such [steam]ers as you have suited for this
+  service. [Signed] [Quartermaster General] [united states of America ?]." Code groups pandora, vincent, appian, zebra, Judah, Whig,
+  blubber, whistle, growl, unity, weasel(ers), webster, Belcher, frorence = **14 H**, America **M** (14 of 15).
+- **E213:** the signer "yoke Ell F." = [signed] **L. F. [Sheldon]** = Capt. Lemuel F. Sheldon, superintendent of military telegraph,
+  Department of the South (Plum), not G. D. Sheldon: "Ell F." is the clerk's spelling of the initials (grade I for the identification,
+  plain). "Turner" = Brig. Gen. J. W. Turner, Gillmore's chief of staff (OR I/35 pt 2). "The superintendent" is the sender himself.
+  Reading: "I came here by [General] Turner's directions to receive your instructions concerning material which will become surplus by the
+  new arrangements. The [General] wishes to have the material and the superintendent go with the [10th] [Corps] if possible. [Signed]
+  L. F. [Sheldon]." Code groups Shelter, zodiac, Shelby, Federal, Pelham, yoke = **6 H of 6**.
+- **E216:** "strong" and "bass" are plain ("16,000 strong", "new base"), "begs sheaf" the clerk's "Biggs chief", "on" = "an", "while
+  horse" = White House: none is an unread code word, so FM-R3a's "M 4" drops to **0 M**. Julia = 4 PM (H) against the header's 4.20
+  PM. Reading: "For Biggs, chief [Quartermaster]. An [expedition] [16,000] strong is to [embark] at White House [tomorrow]. Send to that
+  place immediately every vessel fitted to aid in this [movement] and in removing stores and [wounded] to a new base or hospital.
+  [Signed] [Quartermaster General], [4 PM]." Code groups vinton, unity, rape, gas, woodbury, quarrel, whelp, tanner, wilkes, Webster,
+  Bender, Julia = **12 H of 12**.
+- **E210:** reading confirmed: "number [1] [100] [50] [8] F street [Washington]" = No. 158 F Street, the Signal Office (Brown), so the
+  four numeral groups are checked by print; "Sergeant Royer" = Sgt. W. Harry Royer (Brown roster), plain. Code groups princess, plug,
+  publish, mandate, platina, grapes, unity, saxon, randolph, quadrant, forbid, torch, torch, waxy, bergen, unity, walrus, pilgrim =
+  **18 H of 18**.
+
+### 5. Classification (key `period`)
+`depth_pct` = H / code-word groups (plain words and names excluded), as FV-FM4.
+
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E210** Capt. L. B. Norton (chief signal officer, Dept. of Va. and N. C.) via Sheldon to Capt. H. S. Tafft, Signal Office, Washington, 28 Apr 1864 | **N3** (weak: the body is mostly clear in the holder's public transcription; the key supplies Captain x2, 158, Washington, from the Engineer Department, 12, South, James) | unknown | **D3** | 100 (18 of 18) | code clause: Grapes = Washington, Waxy = South, Bergen = James passim; external, non-statistical: Brown 1896 (Signal Office at 158 F Street; Capt. Tafft at that office; Sgt. Royer act. QM sergeant for Capt. Norton; Norton Capt. and Chief Signal Officer); image read whole by FM-R3a; matched control FM-R3a |
+| **E212** QMG (via Eckert) to Lt. Col. H. Biggs, Fort Monroe, 7 July 1864 11.30 AM | **N3** (weak; mssEC 18 9778/1 is the sent copy of the same cipher text, not a plaintext) | unknown | **D2** | 93.3 (14 of 15) | code clause: Judah = Grant, Blubber = City Point, Whig = Transportation passim; the sent copy's header confirms Florence = 11.30 AM; OR I/37 pt 2 and I/40 pt 3 print only the situation (Grant and Halleck 5 July on transportation, troops shipped from City Point 6 July, Biggs at Fort Monroe 6 July), not the order: D3 withheld (no external check of this telegram's content); image read by FM-R3a |
+| **E213** Capt. L. F. Sheldon at Fort Monroe to Maj. Eckert, 16 Apr 1864 | **N3** (weak: almost all clear; the key supplies General x2, 10th Corps) | unknown | **D3** | 100 (6 of 6) | code clause: Shelby/Shelter = General passim, Federal Pelham = 10 Corps; external: Plum (Capt. Lemuel F. Sheldon, Dept. of the South telegraph), OR I/35 pt 2 (X Corps ordered from Hilton Head to Fortress Monroe 14-19 Apr; J. W. Turner Gillmore's chief of staff), OR I/33 (engineering materials to come with Gillmore); image read by FM-R3a |
+| **E214** Maj. T. T. Eckert to G. D. Sheldon, Fort Monroe, 27 May 1864 | **N3** (weak: the key supplies the four quantities, miles, West) | unknown | **D3** | 100 (9 of 9) | code clause: harrow/feeble/pebble/gradual numerals passim; external, non-statistical: OR I/36 pt 3 pp.321-322 Sheldon's 29 May reply (Bickford's party to West Point, "material to make 20 miles") and Caldwell's ("your dispatch of 27th ... Bickford"); image read by FM-R3a |
+| **E216** QMG (via Eckert) to Lt. Col. H. Biggs, Fort Monroe, [12] June 1864 (header 13 June 4.20 PM) | **no separate class: duplicate of E49** (the Monroe received copy of the telegram filed and twice audited as E49, N2 D3); no status.json or SO row | E49's | (E49: D3) | 100 (12 of 12; 3 C against the sent copy) | code clause: Woodbury = 1000, Gas = 16 and Whelp = Tomorrow passim; external, non-statistical: OR I/36 pt 3 pp.769-770 Pitkin at White House to Meigs, 12 June (transportation by water for 16,000 troops, all suitable vessels returned at once; "the movement is very important") and Ingalls's 10 June recommendation that Biggs assemble transports; image read by FM-R3a |
+
+- **E210: N3 (weak).** Safe sentence: "Read at grade H with War Department Cipher No. 1: on 28 Apr 1864 Capt. L. B. Norton, chief signal
+  officer at Fort Monroe, asked Capt. H. S. Tafft at the Signal Office, 158 F Street, Washington, to get twelve of the best maps of the
+  Peninsula and the south side of the James from the Engineer Department and to hurry Sergeant Royer down with his desk. The telegram was
+  not located in the Official Records (ser. I vols. 33, 36), Brown's Signal Corps history (1896), Plum's Military Telegraph (1882) or the
+  Huntington's full-text search (searched 9 Oct 2026)." Unsafe: "first decipherment", "previously unread", "unpublished". Depth sentence
+  (mine, from the reading): "A week before the Army of the James sailed up the river, its chief signal officer was sending to Washington for
+  the Engineer Department's best maps of the Peninsula and the south side of the James."
+- **E212: N3 (weak), D2.** Safe sentence: "Read at grade H with War Department Cipher No. 1: at 11.30 a.m. on 7 July 1864 the Quartermaster
+  General, through Eckert's office, told Lt. Col. Herman Biggs at Fort Monroe that General Grant directed all available transportation
+  be sent to City Point to move troops from there to Washington, and to send up such steamers as were suited. The order was not located
+  in the Official Records (ser. I vols. 37 pt 2, 40 pts 2-3) or the Grant Papers (vol. 11, full-text search), searched 9 Oct 2026; the
+  Washington sent copy is in the same ledger series (mssEC 18)." Unsafe: "first decipherment", "previously unread". Depth sentence (mine):
+  "On 7 July 1864, with Early in Maryland, Fort Monroe's quartermaster was ordered to send every available transport to City Point to carry
+  troops to Washington."
+- **E213: N3 (weak).** Safe sentence: "Read at grade H with War Department Cipher No. 1: on 16 Apr 1864 Capt. L. F. Sheldon, the military
+  telegraph's officer in the Department of the South, reported from Fort Monroe that he had come by General Turner's directions for
+  Eckert's instructions on material made surplus by the new arrangements, and that the General wanted the material and the
+  superintendent to go with the Tenth Corps. The telegram was not located in the Official Records (ser. I vols. 33, 35 pt 2) or Plum's
+  Military Telegraph (searched 9 Oct 2026)." Unsafe: "first decipherment", "previously unread". Depth sentence (mine): "As the Tenth Corps
+  moved from South Carolina to Fort Monroe in April 1864, its telegraph superintendent asked Eckert to let him and his surplus line material
+  go with the corps."
+- **E214: N3 (weak).** Safe sentence: "Read at grade H with War Department Cipher No. 1: on 27 May 1864 Eckert told G. D. Sheldon at Fort
+  Monroe that Bickford had 10 miles of wire, 3 miles of insulators and 18 miles of spikes, to send him to West Point with enough material
+  to make 20 miles, and that operators were ordered to report. Sheldon's reply of 29 May is printed in the Official Records (ser. I vol.
+  36 pt 3 pp.321-322); this telegram was not located there or in Plum's Military Telegraph (searched 9 Oct 2026)." Unsafe: "first
+  decipherment", "previously unread". Depth sentence (mine): "On 27 May 1864 Eckert sent the operator Bickford's line party to West Point
+  with material for twenty miles of telegraph toward Grant's new base."
+- **E216: duplicate of E49** (no separate class; E49's audits govern). The Monroe copy adds a known-plaintext check of Rape, Gas and
+  Woodbury (C) and the Quorum/Quarrel homophone pair; its header date (13 June) disagrees with the sent copy (12 June).
+
+### 6. Postmortem
+FM-R3a's five readings were sound in substance. The structural miss: E216 duplicates the filed E49 (mssEC 19 sent copy; the headers differ by a day). Four slips in grading: E214's "spoons" called not-in-key (key.md has Spoon = Mile;
+an I that is H), E216's plain "strong"/"bass" counted as unread M, E212's time word Florence treated as filler (the mssEC 18 sent copy's
+header settles it), and E213's signer left as G. D. Sheldon's office where the initials are L. F. Sheldon's. The reader's check of the
+sender's copies grepped mssEC 19 only; the Washington-sent telegrams of 1864 (E212, E214, E216) also need the mssEC 18 diff, where E212's
+copy sat already flagged `mssEC25-dup`, and a diff by addressee + date +-1 day, which would have caught E216 = E49. Corrections are for a FIX job (reading.md is the decoder's, rule 7); this section records them.
