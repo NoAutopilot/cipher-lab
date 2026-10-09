@@ -11760,3 +11760,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 00:55 | AUD2-LEDGER-11 (acct3 verifier) | claim eckert-1864 E235 second audit, cap $2.5, box to 01:55 UTC, for LANE-VERIFY-4
 2026-10-09 01:00 | AUD2-LEDGER-9 (acct3 verifier) | LANE VERIFY-4 hdl take (9 CONTENTdm queries, 3.2 s apart)
 2026-10-09 01:01 | AUD2-LEDGER-9 (acct3 verifier) | LANE VERIFY-4 hdl release (9 CONTENTdm queries, 3.2 s apart, all answered)
+2026-10-09 01:02 | AUD2-LEDGER-10 (verifier, Opus, account 3) | LANE VERIFY-4 hdl take (<=10 CONTENTdm queries, 3.2 s apart); for LANE-VERIFY-4 / acct3-orchestrator
