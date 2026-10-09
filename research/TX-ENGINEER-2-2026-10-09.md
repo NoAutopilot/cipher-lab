@@ -14,7 +14,7 @@ than today's, by a paired count (signs fixed minus signs broken) that clears a p
 30% gain, plus one look at a fresh leaf (the confirm2 item) built by someone outside the lane. The first thing we checked was the
 measurement itself: the first campaign's units carried 12-15 errors, which gives a genuine 30%-better instrument about a 1-5% chance
 of passing, so its twenty-three "nothing works" results were mostly non-tests. We rebuilt the pool (a second Birago leaf from its
-decipherment slip; the Spinelli leaf reused) to 25 unflagged errors (Spinelli's 14 still await a verifier pass, now running), chose the test from a power table, and ran the controls
+decipherment slip; the Spinelli leaf reused) to 29 unflagged errors (a verifier has now checked the Spinelli positions every reader got wrong the same way, flagging 2; the three lines of no.87's recto, which had sat outside both halves, were added as a held-out unit), chose the test from a power table, and ran the controls
 (a planted 30% fixer passes 85% of the time; a no-op, a random change and a worse instrument pass 0%).
 
 Fifteen experiments then ran, each pre-registered, each scored on development lines before any held-out look. None earned a
@@ -27,7 +27,16 @@ printed exemplars caused but gained nothing. Two things did move. First, the sor
 development errors at 14% of positions flagged, and in an oracle-bounded simulation (the truth standing in for you; real owner decisions on file moved 0 of 3) it takes the held-out lines to 2% in about 22 decisions per tile instead of 32 (propagating a decision to a whole atlas cluster is destructive on this atlas, so each decision counts for
 one tile, or one pile within a cluster at most). Second, cost: one call per page read a Dinteville leaf at about a third of the tokens of one call per line at 2x, at an accuracy
 within one reader's spread of the per-line call (replicated on a second reader and a second hand); neither Opus arm beat the best
-Sonnet single pass on either leaf, which is now its own experiment (the reader model, X21).
+Sonnet single pass on either leaf, which became its own experiment (the reader model, X21): the full two-reader pipeline run with
+Sonnet readers and again with Opus readers on the same crops came out even on the two leaves whose truth is independent of
+both (12 fixed, 14 broken), and the one leaf where Sonnet looked far better turned out to be scored against its own Sonnet
+reading, so that result is set aside and the question is being re-run on independent truths only (X21b).
+
+The most useful finding of the last hour came from the verifier, not from an instrument: the sign sheet the readers are
+given for the Spinelli letter shows one of the letter's own h signs as an example of the SIX cell, so three of that leaf's
+twelve remaining errors are the sheet's fault, not the reader's. Because that was found by looking at the answer key, fixing
+the sheet counts as a change to the baseline, never as an instrument's gain; the sheet is being corrected from the published
+key and the baseline re-read under it, and every other machine-built sheet is being checked the same way.
 
 The known-answer material for hands that read at 10-25% is the real bottleneck. Three glossed Dinteville leaves and one Birago
 1591 leaf were fetched from DECODE and built, but a key rebuilt from a gloss cannot score the reads it was built from, and the
@@ -39,7 +48,7 @@ What you should do at the sorter: the feed (TXE2-FEED, being written) lists the 
 ## Headline numbers (S1-S5)
 | what | figure | source |
 |---|---|---|
-| S1 held-out gain | no instrument earned an eval look; eval looks spent 0; the pool is 25 unflagged errors (tuned-leaf lines 10 + held-out leaves 15; Spinelli's 14 unverified, V2 running), gate p < 0.05 at >= 24 (Amendments 2-3; clean 30% fixer 0.797) | PREREG-txeng2-0 |
+| S1 held-out gain | no instrument earned an eval look; eval looks spent 0; the pool is 29 unflagged errors (tuned-letter lines: eval_heldout 10 + f178r 6; held-out leaves: Spinelli 12 verified + f152r 1), gate p < 0.05 at >= 24 (Amendments 2-4; clean 30% fixer 0.908) | PREREG-txeng2-0 |
 | S2 confirm2 | not looked at (vivonne1573-f103r-confirm2 built by account 1, 1,068 scored; look held until C1 and TX-RED's review of Amendment 2) | PREREG-txeng2-S2 draft |
 | S3 live letter | TXE-R (first campaign, same pipeline): f.117r err_2reader 0.134, S 207 vs 190 committed, judge 0.010 worse, no licensed change | ciphers/birago-fr3252-1571-72/harvest/f117/RESULTS-TXE-R.md |
 | S4 sorter | feed: dev 10/12 at 14.0% flagged; eval read-free 9/15 at 2.9% (substitute rule); decisions-to-2% per tile: eval 22 (was 32); whole-cluster propagation destructive (77% purity) | benchmark-tx/txeng2/doubt/, sorter/ |
@@ -76,4 +85,4 @@ Open: X2b with more labelled tiles of the same hand (new material); the colour m
 gloss leaves from a native image; the grown-sheet read on Spinelli only if X1b's recall table licenses it (then the first eval look).
 
 ## Costs and looks
-26 workers ledgered 148.71 (round 4: 21.22 + TXP-KP2C 1.98) + round 5 (caps 28); lane orchestrator incarnation 1 about 23 by get_session, incarnation 2 from 18:23 UTC. Eval looks 0, S2 looks 0; read-free eval openings: 0d 1, X9 1, X1b 3.
+31 workers ledgered 173.57 (round 5: TXV-SPIN 4.47, TXE2-MODEL 13.43, TXE2-BOXES 4.19, TXE2-RECUT 2.57, TXE2-PAIR3 0.20 x2) + round 6 (caps 18); lane orchestrator incarnation 1 about 23 by get_session, incarnation 2 7.3 at 19:03. Eval looks 0, S2 looks 0; read-free eval openings: 0d 1, X9 1, X1b 3, V2 1, f178r baseline 1.

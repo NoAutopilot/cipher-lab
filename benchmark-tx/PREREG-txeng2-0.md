@@ -191,3 +191,38 @@ with --help, an offline test, a tool_shelf.tsv row and a SYSTEM.md row.
   if the Sonnet arm wins at p < 0.05 the baseline of every pool item is re-run as Sonnet before any instrument is scored on it
   and the "never below" rule is amended for the reader role; until then no eval look is spent on an item whose baseline model
   differs from the instrument's reader (declared here, before any look).
+
+## Amendment 4 (lane incarnation 2, 9 Oct 2026 19:1x UTC by date -u; after V2 (TXV-SPIN), X21 (TXE2-MODEL) and TX-RED pass 3 F15-F19; written BEFORE any eval look, none spent)
+- **Pool after V2 (F16).** TXV-SPIN: 2 FLAG (p1c_L01.5 i <- EIGHT reading-doubtful; p1c_L03.16 p <- THREE label-doubtful), 4 KEEP;
+  the 2 "deleted h" are h <- SIX substitutions inside the band every pass saw (ERRORMAP's crop class was wrong). Spinelli
+  flagged-excluded position errors 14 -> 12 (0.079, 15/191). Pool = 10 + 12 + 1 = **23 < 24**: Amendment 3's under-24 rule fired
+  by its own words -- no eval look until an 0b-rule item restores >= 24.
+- **f178r L01-03 declared an eval unit (the 0b-rule item).** Truth: no.87's clerk clear sheet through the printed 1572 key
+  (build_birago87.py, C/H), already on file for these lines; in neither split until now (the geo unit, kept out because its
+  f178v lines overlap dev/eval and because the sloped tail was a crop rule). Unit `f178r` = f178r_L01-03 only
+  (benchmark-tx/txeng/units/labels_f178r.tsv, sha256 5a6477b4306f6af9...; passA_f178r.tsv beside it): baseline L 7/84 as
+  measured, **6/83 flagged-excluded** (f178r_L03.23 flagged, the ampersand split). Caveat declared: these lines tuned the
+  follow-slope crop rule (TXE-D), now part of the baseline both arms share; so they are "tuned-letter lines" and are reported
+  in the split with eval_heldout, never with the held-out leaves. **Eval pool, flagged excluded = eval_heldout 10 + f178r 6 +
+  spinelli 12 + f152r 1 = 29** (tuned-letter lines 16; held-out leaves 13). `tx_power.py --errors 29 --n 715 --fix 0.3
+  --alpha 0.05`: clean 30% fixer **0.908**; no-op, random-3%, 30%-worse 0.000. The branch stays p < 0.05 at >= 24.
+  Consequence: f178r L01-03 is never training ink; **X2c (TXE2-PAIR3, PREREG-txeng2-5) is cancelled** before any training
+  (the first session never ran, the re-spawn was interrupted at its first turn); X2b's named next step now needs labelled
+  no.87-hand ink that will never be pooled, which does not exist on disk -- logged "blocked: no non-pool labelled ink".
+- **X21 (F15 adopted).** Pooled Sonnet 33/14 p 0.0079 is carried by ceppo-f87-S (19/2), whose truth derives from the
+  committed passC = the Sonnet A/B reconcile the fresh Sonnet arm reproduces exactly; on the two Sonnet-independent items
+  (dev_tune clerk sheet, dint 1882 print) it is 12/14, null. Register verdict: **pooled non-test; Sonnet-independent items
+  12/14 null**. Amendment 3's re-baselining rule does NOT fire. Its sentence "no eval look on an item whose baseline model
+  differs from the instrument's reader" is restated as a declared caution (every eval result names the baseline's reader
+  model beside the instrument's), not a consequence of X21. Rule added: the Ceppo S items (truth = the committed Sonnet
+  reconcile) never score a comparison between reader models or pipelines; they serve instrument-vs-L tests only, said so in
+  every table. X21b (PREREG-txeng2-6) re-asks the question on independent truths only.
+- **Sheet defect (F18 adopted; F17 d).** Spinelli's readers' sheet (ciphers/spinelli-beinecke-c1515/glyphs/atlas.png) shows
+  this item's own h token (p1_01_025) as a SIX exemplar; 3 of Spinelli's 12 errors (the 2 h <- SIX, the SEVEN_E deletion at
+  p1c_L01.15) are the sheet's. Because the defect was found through the eval truth, its fix is a **baseline change, never an
+  instrument's gain**: the sheet is corrected read-free from the published key's cell shapes (never from the truth file), a
+  fresh two-pass Spinelli baseline is read under the corrected sheet and scored once as the new baseline (an opening, counted;
+  not a look), and until then every Spinelli instrument's paired count excludes p1c_L01.14, p1c_L01.15 and p1c_L03.25. X1c
+  (the grown-sheet READ) is held on three counts: this baseline re-run, X21b, and TX-RED's review of the corrected section.
+- **Audit (F19).** The register row for X21 carries the circularity caveat; the band-extent lesson is in iiif_lines.py's
+  docstring. ERRORMAP's eval class counts are stale after V1/V2 and are re-run read-free (1 opening, counted) by A1.

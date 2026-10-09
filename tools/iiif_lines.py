@@ -63,7 +63,9 @@ Steps:
      stayed as ghost outlines a reader could take for signs), and the fill is the local paper shade (mean of the
      non-ink pixels within 20 px), not one flat colour that left white silhouettes on shaded paper; ink of a kept
      component is never whitened.
-  --band-extent [FRAC] (TXE-B, 9 Oct 2026; research/TX-TAXONOMY-2026-10-09.md class 2): after the centres are found,
+  --band-extent [FRAC] (TXE-B, 9 Oct 2026; research/TX-TAXONOMY-2026-10-09.md class 2; do NOT use on a leaf with tight
+     interlinear gloss rows: on fr.3623 f.23r the profile minimum sat out at the gloss rows, so the bands grew to hold the
+     whole gloss line and --mask-neighbours kept it -- TXE2-RECUT, 9 Oct 2026; use midpoint bands there): after the centres are found,
      each band edge is moved from the midpoint between two centres to the row-profile minimum between them when that
      lies farther out, then grown FRAC x pitch further (default 0.1, never past the neighbouring centre), so this line's
      descenders and ascenders stay inside. Bands of neighbours then overlap; give --mask-neighbours with it so a grown
