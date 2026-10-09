@@ -170,3 +170,9 @@ NOTES Verdict (CRAV-8450): the clear-context crib test on the five cipher runs (
 candidate cribs from the clear text around each run (names in the letter's own clear text, its known correspondents), test each against the
 run's code pattern (repeats, lengths) with a shuffled-crib control, and report which cribs survive. No key exists; a survivor is a lead
 graded M at most. Disk only.
+
+### J19 MONLUC-RELABEL -- fr4735-monluc-lansac-poland-1573, Opus, cap USD 1.2, box 30 min (written ~12:4x UTC)
+MONLUC-BLIND's named next: in `ciphertext_c268.tsv`, relabel the 10 blind-sorted form-A 'Z' tokens (filed K63/K19) to the table's K38 (= t)
+as a transcription correction backed by the blind sort (cite the MONLUC-BLIND section and the --try result), keep the old labels in a
+comment/column, rerun the c268 decode and its score script with `--check` regenerated, and report token grades before/after (the relabelled
+tokens M unless a rule names a higher grade). Do not touch c172 or f.86. key.tsv unchanged. Disk only.
