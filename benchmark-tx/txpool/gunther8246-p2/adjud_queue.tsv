@@ -1,0 +1,53 @@
+line	col	kind	candidates	left_neighbours	right_neighbours
+L01	1	uncertain	x+ | x+		34 f
+L02	4	uncertain	aa | aa	hs xr	tau hs
+L02	7	uncertain	r | r	tau hs	01 m
+L03	2	uncertain	ob | ob	rr	oo 
+L03	4	disagree	- | -	ob oo	58 34
+L03	9	uncertain	Ib+ | Ib+	60 m	zz xb
+L04	1	disagree	ro | b		f cc
+L04	5	uncertain	f | f	cc 60	88 cc
+L04	14	uncertain	] | ]	m x	L
+L04	15	disagree	L | Ib	x ]	
+L05	8	uncertain	L | L	f aaa	phi m
+L05	9	uncertain	phi | phi	aaa L	m of
+L05	14	uncertain	th | th	f oo	
+L06	1	uncertain	Ol | Ol		34 Ib
+L06	3	uncertain	Ib | Ib	Ol 34	ps d
+L06	10	uncertain	60 | 60	4000 34	44 88x
+L07	6	uncertain	th | th	48 60	f or
+L08	10	uncertain	vi | vi	x_ x	f oo
+L08	17	disagree	L | Ib	f ]	
+L09	9	disagree	d6 | 6	x th	aa 44
+L09	10	uncertain	aa | aa	th d6	44 th
+L09	11	uncertain	44 | 44	d6 aa	th ps
+L09	12	uncertain	th | th	aa 44	ps 34
+L10	16	uncertain	or | or	th f	
+L11	1	disagree	NEW:x-dotted | NEW:x-with-curled-left-arm-and-dots		of 88
+L11	2	disagree	of | or	NEW:x-dotted	88 d6
+L11	4	uncertain	d6 | d6	of 88	53 34
+L11	14	uncertain	Ib+ | Ib+	or Ib	f
+L11	15	disagree	f | -	Ib Ib+	
+L12	2	uncertain	x | x	aa	q ob
+L12	5	uncertain	d6 | d6	q ob	x_ x
+L12	6	uncertain	x_ | x_	ob d6	x 44
+L12	12	uncertain	od | od	aab 34	ps
+L14	12	disagree	Ib+ | Ib	88x ps	33 rf
+L15	12	uncertain	th | th	33 m	6 101
+L16	11	uncertain	L | L	f ]	f ps
+L17	10	uncertain	ut | ut	x+ aaa	aab f
+L17	13	uncertain	x | x	aab f	z
+L18	7	uncertain	m | m	b f	f t
+L18	9	uncertain	t | t	m f	f ps
+L20	14	uncertain	Ib+ | Ib+	b 67	
+L21	1	uncertain	th | th		f 88x
+L21	6	uncertain	g | g	60 34	t f
+L21	7	uncertain	t | t	34 g	f oo
+L21	11	disagree	od | th	oo rf	b f
+L22	3	uncertain	th | th	34 60	m of
+L22	8	uncertain	BLOT | BLOT	q f	88 x+
+L22	11	uncertain	d6 | d6	88 x+	aab 7
+L24	11	uncertain	th | th	101 zz	ob f
+L24	12	uncertain	ob | ob	zz th	f ]
+L24	17	uncertain	8 | 8	L g	
+L25	13	uncertain	th | th	hs ps	x+ cc

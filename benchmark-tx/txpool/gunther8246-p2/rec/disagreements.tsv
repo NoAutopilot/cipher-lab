@@ -1,0 +1,11 @@
+line	col	A	B	flagged	crop
+L03	4	-		B	
+L04	1	ro	b	A	
+L04	15	L	Ib	B	
+L08	17	L	Ib	B	
+L09	9	d6	6	A	
+L11	1	NEW:x-dotted	NEW:x-with-curled-left-arm-and-dots	AB	
+L11	2	of	or	AB	
+L11	15	f	-	A	
+L14	12	Ib+	Ib	A	
+L21	11	od	th	AB	
