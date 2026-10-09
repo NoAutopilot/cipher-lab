@@ -1,0 +1,24 @@
+leaf	strip	x	y	w	h	clear_under_by_worker_eye	note
+0323	s01	1935	990	100	48	la Cour de Prusse	single code over underlined phrase (left p. line 1)
+0323	s02a	1170	1203	400	40	Alliance	first half of the run over underlined Alliance Deffensive (cut at the gap between the two words)
+0323	s02b	1570	1177	330	40	Deffensive	second half of the same run
+0323	s03	1395	1288	70	40	la	small code over underlined 'la' (left p.)
+0323	s04	1640	2072	440	50	conclure le	run over underlined 'conclure le' (left p.)
+0323	s05	1310	2172	310	44	Traite	run over underlined 'Traite' (left p.)
+0323	s06	1790	2452	350	48	l'alliance	run over underlined 'l'alliance' (left p.)
+0323	s07	1235	2568	410	48	Deffensive	run over underlined 'Deffensive' (left p.)
+0323	s08	1480	2662	110	44	la Cour de Prusse	single code over underlined phrase (left p.)
+0323	s09	3125	1170	335	46	la Treve	run over underlined 'la Treve' (right p.)
+0323	s10	3505	1838	100	42	Czar	code in line after 'du', clear 'Czar' written ABOVE it (gloss-over-code, not under)
+0323	s11	3415	1888	100	46	Prince	code over underlined 'Prince' (right p.)
+0323	s12	3195	2318	285	44	Stettin	run over underlined 'Stettin' (right p.)
+0323	s13	3405	2810	95	44	Czar	code over underlined 'Czar' (right p.)
+0323	s14	2860	3030	780	46	l'alliance deffensive	run over underlined 'l'alliance deffensive' (right p.)
+0348	s01	1310	1112	800	38	(unaligned: struck marginal clear phrase above, 'voyant que la Brunette ne vaut rien pour la ...')	run BELOW a clear phrase, no underlined word under it; excluded from the gate
+0348	s02	1315	1350	415	46	Secretaire	run over underlined 'Secretaire'
+0348	s03	1740	1440	420	46	Ministre	run over underlined 'Ministre'
+0348	s04	1575	1554	345	44	Ministre	run over underlined 'Ministre'
+0348	s05	1850	1638	480	46	Secretaire	run over underlined 'Secretaire'
+0348	s06	1285	2385	65	48	K.	code over underlined 'K.'
+0348	s07	1465	2385	95	48	I.	code over underlined 'I.'
+0348	s08	1365	3085	90	40	vous	code over underlined 'vous'
