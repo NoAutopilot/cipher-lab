@@ -27,6 +27,15 @@ Subcommands
            sharing the rest; 'none' gives the line-read sign 0.6; an unshown position is its line-read sign at 1.0) for
            tools/key_decode_lattice.py decode.
   lattice-out  P.decode.tsv from key_decode_lattice.py -> line, pos, sign (its `chosen` column) for tools/tx_bench.py.
+  tiles    (TXE-L, idea M7, 9 Oct 2026) --lines ... --order ordered|shuffled: every mapped position (1:1 or 2:1 in
+           box_pos.tsv) as its own tile -- the box plus its attached marks, grown --grow (0.25) per side, every other
+           sign/mark box blanked (no neighbour ink), autocontrast, scaled so the sign is --tile-h (90) px tall --
+           --per-sheet to a sheet. ordered: line order, each tile labelled #n and its line/position. shuffled: a
+           seeded shuffle (--seed) across all the lines, each tile labelled #n only; the #n -> (line, pos) key goes to
+           --key-out and is NEVER given to the reader. Lesson it answers: a line read carries a sequence prior (the
+           reader has seen the neighbours); the same tiles read with no order isolate the glyph.
+  tiles-resolve  reads_NN.tsv (tile, sign_id, conf) + the key -> line, pos, sign; X_NEW / ? / missing and unmapped
+           positions take the line read's sign and are listed (--fallback-out).
 
 Inputs (defaults are the Birago no.87 files; every one is a flag): the atlas folder (signs.tsv, clusters.tsv,
 labels.json -- its "signs" cluster->code map only, never its "override" per-tile known answers --, pages.json or
@@ -433,6 +442,142 @@ def cmd_lattice_out(a):
     print(f'{len(rows)} positions -> {a.pass_out}')
 
 
+# ---------------------------------------------------------------- tiles (TXE-L, M7: read the signs out of order)
+def sign_tile(pages, page_rows, marks_by_sid, sid_spec, tile_h, grow):
+    """One position's box(es) plus attached marks, region grown `grow` of its size on each side; every other sign or
+    mark box in the region is blanked to paper (no neighbour ink); scaled so the sign is about tile_h px tall;
+    autocontrast."""
+    from PIL import Image, ImageDraw, ImageOps
+    sids = sid_spec.split('+')
+    tg = [page_rows[s] for s in sids]
+    page = tg[0]['page']
+    g = pages.get(page)
+    own = [xywh(r) for r in tg] + [xywh(m) for s in sids for m in marks_by_sid.get(s, [])]
+    sb = union([xywh(r) for r in tg])
+    x, y, w, h = union(own)
+    gx, gy = int(grow * w), int(grow * h)
+    X0, Y0, X1, Y1 = max(0, x - gx), max(0, y - gy), min(g.width, x + w + gx), min(g.height, y + h + gy)
+    sub = g.crop((X0, Y0, X1, Y1)).copy()
+    d = ImageDraw.Draw(sub)
+    own_set = set(own)
+    others = [xywh(r) for r in page_rows.values() if r['page'] == page and r['sid'] not in sids]
+    others += [xywh(m) for ss, ms in marks_by_sid.items() if ss not in sids for m in ms if m['page'] == page]
+    for bx, by, bw, bh in others:
+        if (bx, by, bw, bh) in own_set or bx > X1 or by > Y1 or bx + bw < X0 or by + bh < Y0:
+            continue
+        # blank the part of a neighbour box that lies outside every own box (own ink is never erased)
+        rx0, ry0, rx1, ry1 = bx - X0, by - Y0, bx + bw - X0, by + bh - Y0
+        for ox, oy, ow, oh in own:
+            if ox < bx + bw and bx < ox + ow and oy < by + bh and by < oy + oh:
+                break
+        else:
+            d.rectangle((rx0, ry0, rx1, ry1), fill=255)
+    sub = ImageOps.autocontrast(sub, cutoff=1)
+    sc = tile_h / max(1, sb[3])
+    return sub.resize((max(1, int(sub.width * sc)), max(1, int(sub.height * sc))), Image.BICUBIC)
+
+
+def tile_positions(box_rows, lines):
+    """Positions of `lines` with a box of their own (1:1 or 2:1), in line order; others are 'unmapped'."""
+    order = {ln: i for i, ln in enumerate(lines)}
+    rows = [r for r in box_rows if r['line'] in order]
+    rows.sort(key=lambda r: (order[r['line']], int(r['pos'])))
+    mapped = [r for r in rows if r['sid'] and r['op'] in ('1:1', '2:1')]
+    unmapped = [r for r in rows if not (r['sid'] and r['op'] in ('1:1', '2:1'))]
+    return mapped, unmapped
+
+
+def cmd_tiles(a):
+    from PIL import Image, ImageDraw
+    signs = rd(os.path.join(path(a.atlas), 'signs.tsv'))
+    page_rows = {s['sid']: s for s in signs}
+    marks_by_sid = defaultdict(list)
+    mp = os.path.join(path(a.atlas), 'marks.tsv')
+    if os.path.exists(mp):
+        for m in rd(mp):
+            if m.get('sid'):
+                marks_by_sid[m['sid']].append(m)
+    box_rows = rd(path(a.box_pos))
+    mapped, unmapped = tile_positions(box_rows, a.lines)
+    if a.order == 'shuffled':
+        random.Random(a.seed).shuffle(mapped)
+    pages = Pages(a.atlas)
+    od = path(a.out_dir) if os.path.exists(a.out_dir) else a.out_dir
+    os.makedirs(od, exist_ok=True)
+    tiles = []
+    for r in mapped:
+        t = sign_tile(pages, page_rows, marks_by_sid, r['sid'], a.tile_h, a.grow)
+        sc = min(1.0, a.max_w / t.width, a.max_h / t.height)
+        tiles.append(t if sc >= 1.0 else t.resize((max(1, int(t.width * sc)), max(1, int(t.height * sc)))))
+    cw = max(t.width for t in tiles) + 16 if tiles else 100
+    lab = 26 if a.order == 'shuffled' else 44
+    chh = max(t.height for t in tiles) + lab + 12 if tiles else 100
+    n_sheets = math.ceil(len(tiles) / a.per_sheet) if tiles else 0
+    key = []
+    for si in range(n_sheets):
+        chunk = list(range(si * a.per_sheet, min(len(tiles), (si + 1) * a.per_sheet)))
+        rows_n = math.ceil(len(chunk) / a.cols)
+        sheet = Image.new('RGB', (a.cols * cw, rows_n * chh), 'white')
+        d = ImageDraw.Draw(sheet)
+        for k, ti in enumerate(chunk):
+            t = tiles[ti]
+            cx, cy = (k % a.cols) * cw, (k // a.cols) * chh
+            sheet.paste(t.convert('RGB'), (cx + (cw - t.width) // 2, cy + 4 + (chh - lab - 8 - t.height) // 2))
+            d.rectangle((cx + 2, cy + 2, cx + cw - 3, cy + chh - 3), outline=(170, 170, 170), width=1)
+            num = ti + 1
+            r = mapped[ti]
+            txt = f'#{num}' if a.order == 'shuffled' else f"#{num}\n{r['line'].replace('_', ' ')} p{r['pos']}"
+            d.multiline_text((cx + 8, cy + chh - lab - 2), txt, fill=(0, 0, 0), font=font(18 if a.order == 'shuffled' else 15))
+            key.append(dict(tile=num, sheet=si + 1, line=r['line'], pos=r['pos'], sid=r['sid']))
+        sheet.save(os.path.join(od, f'sheet_{si + 1:02d}.png'))
+    wr(a.key_out or os.path.join(od, 'key.tsv'), ['tile', 'sheet', 'line', 'pos', 'sid'], key)
+    wr(os.path.join(od, 'unmapped.tsv'), ['line', 'pos', 'op'], unmapped)
+    print(f'tiles {a.order}: {len(tiles)} tiles on {n_sheets} sheets ({a.per_sheet}/sheet), {len(unmapped)} unmapped -> {od}')
+    return key
+
+
+def tile_reads(reads_dir):
+    """{tile: sign_id} from every reads_NN.tsv (tile, sign_id, conf); '#12' / '12' both accepted."""
+    out = {}
+    for fn in sorted(os.listdir(reads_dir)):
+        if re.match(r'reads_\d+\.tsv$', fn):
+            with open(os.path.join(reads_dir, fn), encoding='utf-8') as f:   # no '#' comment filter: tiles are '#12'
+                rows = list(csv.DictReader(f, delimiter='\t'))
+            for r in rows:
+                t = re.sub(r'\D', '', str(r.get('tile', '')))
+                if t:
+                    out[int(t)] = ((r.get('sign_id') or '').strip(), (r.get('conf') or '').strip().upper())
+    return out
+
+
+def cmd_tiles_resolve(a):
+    """Pass from tile reads: a T## read -> that sign; X_NEW / ? / missing / unmapped -> the line read's sign (listed)."""
+    L = rd(path(a.line_read))
+    key = {(r['line'], r['pos']): int(r['tile']) for r in rd(path(a.key))}
+    reads = tile_reads(path(a.reads_dir))
+    out, ch, fallback = [], Counter(), []
+    for r in L:
+        if r['line'] not in a.lines:
+            continue
+        sign, k = r['sign'], (r['line'], r['pos'])
+        if k not in key:
+            ch['unmapped'] += 1; fallback.append(dict(line=r['line'], pos=r['pos'], why='unmapped'))
+        else:
+            got = reads.get(key[k])
+            if got and re.fullmatch(r'T\d+', got[0]):
+                ch['read_same' if got[0] == sign else 'read_diff'] += 1
+                sign = got[0]
+            else:
+                why = 'missing' if not got else (got[0] or '?')
+                ch['fallback_' + why] += 1; fallback.append(dict(line=r['line'], pos=r['pos'], why=why))
+        out.append(dict(line=r['line'], pos=r['pos'], sign=sign))
+    wr(a.pass_out, ['line', 'pos', 'sign'], out)
+    if a.fallback_out:
+        wr(a.fallback_out, ['line', 'pos', 'why'], fallback)
+    print(f'tiles-resolve: {len(out)} positions; {dict(ch)} -> {a.pass_out}')
+    return out
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sp = ap.add_subparsers(dest='cmd', required=True)
@@ -458,12 +603,26 @@ def main(argv=None):
     r.add_argument('--only-conf', help='apply picks at these confidences only, e.g. H or H,M (PREREG-txeng-2 M1b); others keep the line read')
     r.add_argument('--only-reason', help="apply picks only on rows whose show reason contains this word, e.g. top1 (M1b)")
     lo = sp.add_parser('lattice-out'); lo.add_argument('decode'); lo.add_argument('--pass-out', required=True)
+    t = sp.add_parser('tiles', help='per-sign tile sheets in line order or a seeded shuffled order (TXE-L, M7)')
+    t.add_argument('--atlas', default=D['atlas']); t.add_argument('--lines', nargs='+', required=True)
+    t.add_argument('--order', choices=['ordered', 'shuffled'], required=True)
+    t.add_argument('--box-pos', default=os.path.join(D['out'], 'box_pos.tsv'))
+    t.add_argument('--out-dir', required=True); t.add_argument('--key-out', help='key TSV (default OUT_DIR/key.tsv)')
+    t.add_argument('--seed', default='txe-l'); t.add_argument('--per-sheet', type=int, default=24)
+    t.add_argument('--cols', type=int, default=6); t.add_argument('--tile-h', type=int, default=90)
+    t.add_argument('--grow', type=float, default=0.25); t.add_argument('--max-w', type=int, default=220)
+    t.add_argument('--max-h', type=int, default=150, help='tile height cap, px (a tall tile is shrunk, never cropped)')
+    tr = sp.add_parser('tiles-resolve', help='tile reads -> line, pos, sign (fallback: the line read)')
+    tr.add_argument('--line-read', default=D['line_read']); tr.add_argument('--lines', nargs='+', required=True)
+    tr.add_argument('--key', required=True); tr.add_argument('--reads-dir', required=True)
+    tr.add_argument('--pass-out', required=True); tr.add_argument('--fallback-out')
     a = ap.parse_args(argv)
     if a.cmd == 'build':
         a.conf = a.conf or D['conf']; a.exclude_page = a.exclude_page or D['exclude']
         if a.box_pos is None and os.path.exists(path(os.path.join(a.out, 'box_pos.tsv'))):
             a.box_pos = os.path.join(a.out, 'box_pos.tsv')
-    return {'map': cmd_map, 'build': cmd_build, 'resolve': cmd_resolve, 'lattice-out': cmd_lattice_out}[a.cmd](a)
+    return {'map': cmd_map, 'build': cmd_build, 'resolve': cmd_resolve, 'lattice-out': cmd_lattice_out,
+            'tiles': cmd_tiles, 'tiles-resolve': cmd_tiles_resolve}[a.cmd](a)
 
 
 if __name__ == '__main__':
