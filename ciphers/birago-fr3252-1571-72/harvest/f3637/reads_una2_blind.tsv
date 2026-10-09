@@ -1,0 +1,14 @@
+tile	feature_seen	label_if_R-8	label_if_R-hash	label_if_R-6	label_if_R-bar	label_if_R-dot	note
+1	caret/lambda with a curled hook at the top of the left stroke, no dot inside or beside	-	-	-	-	S97	moderate: a hat stroke sits above the tile (gloss line), not a dot
+2	8 with a horizontal bar through the waist running well past both sides; the bar continues from the left neighbour's bar	S80	-	-	-	-	the bar is one stroke with the neighbour's bar
+3	hash: stem UPRIGHT across two horizontals	-	S24	-	-	-
+4	hash: stem SLANTED across two horizontals	-	S88	-	-	-
+5	oval/8 crossed by two bars	S80	-	-	X_THETA2	-
+6	6 with a tall curved rising stroke at the top, no flat crossbar	-	-	S74	-	-
+7	hash: stem SLANTED across two horizontals	-	S88	-	-	-
+8	8 with a horizontal bar through the waist past both sides; the bar continues from the left neighbour's bar	S80	-	-	-	-	the bar is one stroke with the neighbour's bar
+9	8 with a bar through the waist past both sides (joined to the left loop)	S80	-	-	-	-
+10	6 with a plain thin ascender at the top, no flat crossbar, no blob	-	-	S74	-	-	moderate (ascender, not a teardrop)
+11	plain 8, no bar	S65	-	-	-	-
+12	hash at the vellum edge: stem SLANTED across two horizontals, right ends cut by the edge	-	S88	-	-	-	stem fully visible
+13	oval/8 crossed by two bars	S80	-	-	X_THETA2	-
