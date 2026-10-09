@@ -1,0 +1,34 @@
+[
+ {
+  "file": "0452.jpg",
+  "url": "https://www.archiv.sachsen.de/digitalisate/3a83f921-9a43-485f-874b-34653ed59b68/fullsize/0452.jpg",
+  "fetched": "2026-10-09 07:25 UTC",
+  "by": "V-MANT0454",
+  "http": 200,
+  "size": [
+   4346,
+   3860
+  ],
+  "sha256": "cf44da910f30da9b848515d33c5049336f7efd9bf4e3b673a194a7c0be2b8238",
+  "film_card_label": "Aufnahme Einheit 0453",
+  "folio": "f.359 (right page stamp)",
+  "committed_copy": "0452_1600.jpg",
+  "note": "full-size not committed (folder over 30 MB); sha256/size are of the full-size fetch; re-fetch from url"
+ },
+ {
+  "file": "0453.jpg",
+  "url": "https://www.archiv.sachsen.de/digitalisate/3a83f921-9a43-485f-874b-34653ed59b68/fullsize/0453.jpg",
+  "fetched": "2026-10-09 07:25 UTC",
+  "by": "V-MANT0454",
+  "http": 200,
+  "size": [
+   4339,
+   3865
+  ],
+  "sha256": "aa6766c203dbbdd7901b85c9fb317cdb124e2fe31109714b1d660b2b04d674e4",
+  "film_card_label": "Aufnahme Einheit 0454",
+  "folio": "f.360 (right page stamp)",
+  "committed_copy": "0453_1600.jpg",
+  "note": "full-size not committed (folder over 30 MB); sha256/size are of the full-size fetch; re-fetch from url"
+ }
+]

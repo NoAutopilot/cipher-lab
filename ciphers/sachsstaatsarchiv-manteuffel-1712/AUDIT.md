@@ -1203,3 +1203,131 @@ PREREG-MANT-0136 order cannot be shown from git; the A1 order can. (d) MANT-0136
 gloss letters are 'o n m e h i e n d a u t r e s' (A1A/A1B); 'comme bien' is the solver's sense, 31=n and 55=h are rule-4 slots (MANT-R07).
 Requests this audit: books.google.com 39 (search-inside, 2-2.5 s apart; no error), www.googleapis.com 2 (429, stopped), archive.org 7
 (advancedsearch 3, metadata 2, djvu 2), be-api.us.archive.org 3. No 403 or challenge.
+
+## AUDIT (V-MANT0454)
+
+Verifier V-MANT0454 (account 2, LANE FAMILY-A2g), 9 Oct 2026, 07:23-07:4x UTC by `date -u`; a separate session from the solver MANT-0454
+(05:18-05:28 UTC) and from every earlier verifier; I had not read 0454 before this job. Brief: .claude/briefs/runs/2026-10-09-ytbiz-family-0709-jobs.md
+"### V-MANT0454". Claim under audit (NOTES "MANT-0454"): "694/08 0454 read under Krauske's table: 62 tokens S46 M16, gate (b) PASS at N=52 (real
+-1.659 vs p95 -1.693); stretches 'rebelle', 'Rozrasewsky' x2, 'renonce a', '[a]rnold', 'abdiquer'". Nothing decoded here; key.tsv, ciphertext and
+reading untouched.
+
+**Depth bar copied before ruling** (.claude/briefs/runs/2026-10-08-acct3-depth-bar.md): CLAUDE.md 4a governs. Cipher clause = a contiguous H/C/S
+stretch longer than AD (~1.5 x unicity, every liberty counted; an unfitted external key does not shrink H(K)). External check = a D3/D4 element,
+never a substitute for the clause at D2. Code clause = a code value that reads sensibly in >= 2 independent contexts; an H/C grade on the value does
+not satisfy it on its own; a verbatim repeated phrase counts once. D2 = one clause plus the verifier's own true, specific sentence about the content,
+written from the reading (an edition may confirm it, never supply it). Otherwise D1.
+
+**0. Step 0 (the solver's owed lookup).** "sachsen take" 07:23, 2 GETs (URL files 0452, 0453; HTTP 200 image/jpeg, 4346x3860 and 4339x3865),
+"sachsen release" 07:25. Reduced copies and manifest (full-size sha256) in f0454_08/neighbours/ (folder already over 30 MB, full size not committed).
+The film card on URL file 0452 reads "Aufnahme Einheit 0453" and on 0453 "0454" -- the folder's known one-frame URL/card offset; numbers here are URL
+numbers. Read by eye at reduced size: **neither frame carries a date line, place, address or signature**; both are mid-letter (0452 right page stamp
+f.359, 0453 right page f.360; 0454 is ff.360v-361). The letter therefore begins on or before f.358 (URL 0451 or earlier; 0449 is f.356). Its date is
+**not on the leaves seen (unchecked)**; by position in the volume it lies between URL 0396 ("Copie d'une lettre de Copenh. du 9 Oct." enclosure after
+the P.S. of 13 Oct 1712) and 0487 (enclosure "a la lettre de Mant. du 12 Nov 1712"), i.e. **mid-October to early November 1712 (I)**. Content of
+0452-0453 in clear: the Elbing affair ("l'affaire d'Elb[ing]"), the next Diet, Kettler grand marshal of Hesse-Cassel and the Duke of Courland's
+marriage to a prince of Hesse (0453 right, paras 2-3). **Code groups on 0453** (right page para 3, eye at reduced size, not zoomed, not decoded):
+"Il m'a dit de [struck] meme, que 198 a ecrit depuis peu a 257, qu'il est toujours dispose a 60.35.21.33.14.15.10.26 ... convenir avec 170 des
+conditions ...", then 257 and 170 again in the next lines. These are unread cipher on the same letter (next step below); one Sonnet call was not
+needed because no date or code had to be settled for this audit.
+
+**1. Item.** SHStA Dresden 10026 Geheimes Kabinett Loc. 694/08, URL file 0454 (card 0455), ff.360v-361, Manteuffel to Flemming, Berlin (place by the
+series; I), mid-Oct to early Nov 1712 (I, above). Ciphertext f0454_08/ciphertext.tsv, 62 tokens in 18 groups, no gloss. Prior-work tool
+(`--step-type audit --fetch`) exit 4: five LEADs, all other jobs' claims (V-MANT0136, MANT-INV08B, MANT-NAMES136, GB-PHRASE) or this audit's own --
+recorded CLEAR; 3-solver aaymeloglu/unsolved-ciphers and 4-editions UNCHECKED-NET (not cloned; editions by hand below).
+
+**2. Re-derivation (rule 7), from the repository root:** `tools/decode_key.py .../f0454_08 --check` "tokens 62: C 42, M 20 / reading up to date";
+`f0454_08/judge_gate.py --check` "judge_gate.out up to date"; `f0454_08/grade_0454.py --check` "grades.tsv: up to date". All exit 0.
+Key values checked against key.tsv for every letter code in the six runs (60 r|re|ro M, 35 e, 55 b|[a] M, 10 e, 44 l, 103 le|la M, 26 r, 33 o, 82 z,
+66 a, 73 s|z M, 69 w, 51 s|sa M, 11 k, 92 y, 14 n, 16 o|ou|ous M, 21 n, 30 c M, 50 a, 27 r, 12 l, 120 d, 25 a, 100 d, 9 i, 24 q, 6 u; names 198
+Stanislas, 150 le Roi de Pologne, 187 Roi de Suede, 257 Le roi de Prusse, all C in key.tsv): the six letter strings follow.
+
+**3. Transcription spot check (three runs, my own eye on the committed crops, 2x):** L01 "...gociation avec 198. qu'il" / "comme un
+60.35.55.10.44.103." -- agrees (the 55 is two separated 5s, as the passes say); L06 "66.27.21.33.12.120., sur quoi" -- agrees (66 with a gap between the
+digits; 68 not excluded, as the solver's low flag says); L08 "presse de 25.55.100.9.24.6.10.60." -- agrees (fourth group the looped-descender 9).
+3/3 agree. I also read the clear text of crops L02-L09 myself and confirm the solver's context words for every code group from r03 to r16 (L02 "qui est
+icy de la part de 198, mais qu'en attendant il seroit bon de savoir ce que 150 voudroit accorder a 198, en cas qu'il 60.35.14.16.21.30.35.50. et que 187
+y consentit. Il m'a pria en meme temps d'en ecrire a V.E. et de luy demander ses sentiments. Il a aussi voulu savoir, qui je voudrois que 257 envoyat a
+198 en cas que 150 s'expliqua ... le plus seur de continuer d'y employer le Sr. 66.27.21.33.12.120., sur quoi il me dit que c'etoit aussi son sentiment,
+mais que 198 avoit temoigne etre malcontent de luy parcequ'il l'avoit peut etre un peu trop presse de 25.55... Ce que je sai d'assure de tout cela c'est
+que 60.33.82... a pris, il y a 3 jours, une audience, et a dit au Roi de Prusse tout ce que 198 doit avoir ecrit"). "au Roi de Prusse" is in clear there,
+which fits 257 = le roi de Prusse two lines earlier.
+
+**4. Design audit (rule 3).** PREREG-MANT-0454 is in ae6a8b18f, before the fetch (solver's statement; not re-verified commit by commit -- the
+folder's room.py fold caveat, V-MANT0136 item 3, applies). Gate (a) n/a (no gloss; I saw none on the crops either). Gate (b): the permuted-letter-value
+control changes the letters scored, so it can differ from the target (not a coverage non-test); power measured at the target's own L=52 (11/11, a small
+power sample of 11 windows, as the solver says). Real -1.659 vs p95 -1.693, 29/1000: PASS above p95, not above p99 -- a thin margin. The S grade is the
+PREREG's mechanical grade; unlike 0136, here **every** S-graded run reads in sense (rebelle, Rozrasewsky x2, renoncea, arnold, abdiquer) and the two
+witnesses of the 11-code run agree 11/11 by letter -- the strongest internal evidence on this leaf is that repeat, not the 4-gram margin.
+"renoncea": the clear context is "en cas qu'il ___ et que [le Roi de Suede] y consentit" (imperfect subjunctive wanted), so the letters 'renoncea' sit
+as "renonçât" without the t (or a doubtful final token); the sense is right, the form is M.
+
+**5. Novelty search log (rule 10; checks 4-5).**
+- Own work: only MANT-INV08 (inventory) and MANT-0454 touch 0454. CLEAR.
+- Leaf: no gloss, clear copy or decipherment heading on 0454 (both solver passes and my crop reading); 0452-0453 carry none either.
+- **Droysen, Geschichte der preussischen Politik IV.1** (IA `droysen-geschichte-der-preussischen-politik-v-4-no-1`, djvu text, 2 requests): p. 267 and
+  Anm. 511-512 print that in July 1712 Berlin sent a confidant to King Stanislaus with the Swedes ("nach Schweden"), that Stanislaus at once declared himself ready to
+  abdicate and then added conditions; the agent is Arnold ("Instruction fur den Burgermeister Arnold ... 8. Juli 1712. Arnolds Schlussbericht uber seine
+  Sendung ist d. d. Berlin, 6. September 1712", Stanislaus wishing Courland as compensation); Eosander then sent to Charles XII at Bender; later in the same chapter (Nov
+  1712) Stanislaus leaving the Swedish headquarters for Bender to obtain Charles XII's consent to his abdication. **SUBSTANCE**: Arnold's mission to
+  press Stanislas to abdicate and the abdication negotiation are printed. Not printed there: Rozrazewski, his audience, Stanislas's displeasure with Arnold,
+  the 'rebelle' remark, or what Augustus might grant Stanislas. 'Rozra-' 0 hits in IV.1 and IV.2 (OCR-quality caveat: Fraktur; 'Manteuffel' appears
+  in IV.1 OCR as 'Mantenfel').
+- **Droysen IV.2** (same route): starts 1713; 'Rozra-' 0, 'Arnold' 0. Not this letter.
+- **Acta Borussica, Behordenorganisation I** (Google Books ESf8fHFG9ngC, search-within, tools/gbooks_search_within.py): positive control 'Manteuffel'
+  20 hits (incl. pp. 256-258, reports of 4 and 7 Oct 1712); 'Rozrazewski' 0, 'Stanislaus' 0, 'abdiquer' 0, 'Arnold' 3 (Arnold Westenberg, unrelated).
+  0454 is not printed there.
+- **Sten Bonnesen, Studier over August II:s utrikespolitik 1712-1715, del I (Lund 1918)** (Google Books GS3SAAAAMAAJ, snippet view only; found by the
+  Books API query '"Rozrazewski" Berlin 1712', 1 hit): pp. 68-70 "Rozrazewski ... till Stockholm", "Rozrazewski sandes till Berlin for att vid behov
+  kunna ...", pp. 62-71 Stanislas's abdication ('abdikation'), p. 77 a French quotation dated October ("qu'il souhaitait fort de prendre mesures a ...");
+  the front matter cites "Manteuffel in Berlin. 1711 Sept.-Nov." among its Dresden sources. **SUBSTANCE, and a real risk of prior print**: a 1918
+  monograph on exactly this negotiation, written from the Dresden Manteuffel reports, treats Rozrazewski's mission to Berlin. Whether it quotes or
+  paraphrases 0454 (or prints its cipher passages in clear from a period decipherment) cannot be told from snippets: **unchecked beyond snippets**.
+  'Arnold' 0 and 'missnojd' unreachable (one search-within answered blocked; host stopped).
+- Check 5 / G3 (`tools/print_check.py ... --phrases f0454_08/vmant0454_phrases.txt --only gbooks,ia-global --max-requests 25 --delay 2 --out
+  f0454_08/vmant0454_print-check.tsv`; the solver's 6 phrases where its Google Books was 429, plus 3 clear-context phrases): IA global full text 0 hits
+  for all 9; Google Books: 2 no hits, 1 HTTP 503 ('Rozrazewski qui est ici de la part de Stanislas'), 6 loose-AND noise (276-339 volumes, top hits
+  unrelated: Charles-Quint, Vies des Saints, Codes et lois). IA be-api '"Rozrazewski" Stanislaus 1712' 336 (16th-century Rozrazewskis, unrelated),
+  '"Rozrazewski" Stanislas Berlin' 0.
+- Not searched: Mercure historique et politique / Europaische Fama Oct-Nov 1712 (no time-boxed route found this session; GB-PHRASE covers only Apr-May
+  1713 for 0136); Lamberty's Memoires VII; Polish scholarship on the Rozrazewski mission (Feldman, Polska w dobie wielkiej wojny polnocnej); JSTOR (no
+  row: below N3); aaymeloglu/unsolved-ciphers.
+
+**6. Classification.** Key: **published** -- Dr. O. Krauske's 1893 manuscript table (Loc. 694/10), someone else's modern key, credited. Not `period`:
+the brief invites the argument that the table was rebuilt from period glosses (it agrees 17/17 with the f.468 glosses), but `period` means a key we
+rebuilt from a document of the time; here we used Krauske's finished table as given, so the key is his, as every earlier audit of this folder ruled.
+Item (0454, its cipher spans): **N2**, confidence medium-low. No prior plaintext or decipherment of this leaf located; but its news -- Arnold's mission
+to bring Stanislas to abdicate (Droysen IV.1 p. 267, Anm. 511) and Rozrazewski sent by Stanislas to Berlin (Bonnesen 1918 pp. 68-70) -- is printed,
+which in this folder's practice (0375 Arnold/Eosander, 0395 duc Ferdinand) is N2, not N3. Bonnesen, written from these very reports and not readable
+here beyond snippets, could lower it to N1. text: unknown (news known).
+**Depth (rule 4a, the bar above).** Cipher clause: longest contiguous H/C/S stretch 11 letters (r03/r15 'rozrasewsky'), against an AD of about
+127-138 letters for this key (FAM-MANTV): **fails**. Code clause, tested as V-MANT08 did on 0391 (>= 2 non-verbatim clear-context sentences, a coarse
+class check, consistency with a letter-spelled run of the same item): **198 Stanislas** reads in at least five independent sentences read from the
+image ("...negociation avec 198 qu'il regarderoit toujours comme un rebelle"; "qui est icy de la part de 198"; "ce que 150 voudroit accorder a 198, en
+cas qu'il [renonc-]"; "qui je voudrois que 257 envoyat a 198"; "198 avoit temoigne etre malcontent de luy parcequ'il l'avoit ... trop presse de
+[abdiquer]"; "tout ce que 198 doit avoir ecrit"); class person, a ruler who can renounce and send envoys; and the same item's letter-spelled runs
+'abdiquer', 'renonc-' and 'rebelle' fit Stanislas's position in 1712 -- **met**. (150 le Roi de Pologne also reads in two sentences.) The C grade of 198
+is not what meets it. **D2.** D3 out: S 46 of 62 = 74.2% by the PREREG grade (C 42 of 62 = 67.7% by key.tsv row), under 80%, and no non-statistical
+check that the letter runs are right beyond the clear-text fit.
+**My D2 sentence (written from the reading and the clear text on the crops, Droysen used only to confirm):** "In this letter of autumn 1712 Manteuffel
+reports that Stanislas's envoy Rozrazewski, then at Berlin, had had an audience of the King of Prussia three days earlier and passed on all that
+Stanislas had written, that the question was what the King of Poland would grant Stanislas if he renounced with the King of Sweden's consent, and that
+Stanislas was said to be displeased with the Prussian agent Arnold for having pressed him somewhat too hard to abdicate."
+depth_pct 74.2 (S 46 of 62; all six S runs read in sense).
+Safe sentence: "Krauske's 1893 table applied to Manteuffel's letter of autumn 1712 (Loc. 694/08 ff.360v-361) reads 'rebelle', 'abdiquer', the name
+Rozrazewski and the agent Arnold in cipher; the abdication negotiation and Arnold's mission are printed in Droysen IV.1 p. 267, and Rozrazewski's
+mission to Berlin is treated in Bonnesen (1918), not read here beyond snippets."
+Unsafe: "a previously unread report of Rozrazewski's audience"; "Stanislas's displeasure with Arnold, not known before"; "46 tokens deciphered (S)";
+any date for the letter stated as read.
+No SECOND-OPINIONS-QUEUE row and no AUD2 WORK-QUEUE row: N2 is below the brief's N3+ and D2+ trigger (D2 alone does not meet it).
+
+**7. Postmortem and corrections.** (a) MANT-0454's check 4 was not run by date; Droysen IV.1 p. 267 / Anm. 511 (the Arnold mission) was already cited in
+this folder (V-MANTR8 on 0375) and is the first place to look for any Stanislas/Arnold cipher -- done here. (b) The reading's "J., qu'il avoit dit" --
+"J." is uncertain on the crop (a struck or abbreviated mark); not a cipher token, no grade change. (c) 'Rozrasewsky' stays I as an identification, now
+corroborated (Bonnesen: Rozrazewski sent by Stanislas to Berlin); spelling as decoded, the modern form is Rozrazewski/Rozrażewski. (d) The solver's
+letter-date cell "unseen" is now "not on 0452-0454; mid-Oct to early Nov 1712 by position (I)". No over-claim found in the solver's files.
+Requests this audit: www.archiv.sachsen.de 2 (200); archive.org 4 (metadata 2, djvu 2); be-api.us.archive.org 11; www.googleapis.com 15 (two 503);
+books.google.com 22 (search-within; one blocked answer, host stopped). Vision: none delegated (my own eye on committed crops and reduced frames).
+Next: (1) read Bonnesen 1918 pp. 62-77 (JSTOR/LOCAL-QUEUE or a library scan) -- the decisive prior-print check for 0454; (2) transcribe 0453's cipher
+groups (two blind passes on line crops, ~$3) -- 60.35.21.33.14.15.10.26 after "toujours dispose a" is a second context for the 'renonc-' run;
+(3) fetch URL 0450-0451 for the letter's date line (2 GETs).
