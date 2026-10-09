@@ -87,3 +87,90 @@ loc	frame	sheet_label	sheet_read	sheet_conf	code	glossed	note	http	sha256_16
 694/09	0294	S1-07	light	low	n	-	clear (f.226), letter end and signature	200 image/jpeg	b760bcd0f6a5a2e3
 694/09	0298	S1-06	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	d16f34173936de95
 694/09	0301	S7-06	none	low	n	-	sheet none; not eye-checked	200 image/jpeg	03bc5909c8f9b288
+# MANT-0609Y (9 Oct 2026, LANE FAMILY-A2d account 2): the other 84 of the 169 frames (offset 1 of the every-second list) + 0015/0052 blind positive controls. 86 requests, >=2.1 s apart, all 200. Sheets of 9 (3x3, 800 px tiles, header strip cropped, seed 6091), one Sonnet call per 2-3 sheets (4 calls, 10 sheets); every non-none flag eye-checked by this worker at ~1000-1600 px. Grade M.
+694/09	0003	S9-09	none	high	n	-	sheet none (archive cover sheet Loc. 694/9); not eye-checked	200 image/jpeg	6716226fa2646cab
+694/09	0006	S3-06	none	high	n	-	sheet none (clear); not eye-checked	200 image/jpeg	b6dfa5aa9914155a
+694/09	0013	S2-06	none	high	n	-	sheet none (short clear text); not eye-checked	200 image/jpeg	92f3acbac665a38f
+694/09	0015	S9-05	moderate	high	y	n	positive control (R13-MANTSCR, 51 tokens): sheet moderate/high -- FOUND	200 image/jpeg	97842410c5f08d10
+694/09	0019	S1-01	light	low	n	-	EYE: clear. p.10, Berl. ce 17 janv. 1713; numerals are sums (20 ..) and list numbers	200 image/jpeg	54d0b79b9364e10d
+694/09	0023	S7-07	none	high	n	-	sheet none (open book p.14, zoomed, prose only); not eye-checked	200 image/jpeg	7d83bc645ab47baa
+694/09	0026	S2-09	none	low	n	-	sheet none (clear; struck marginal words); not eye-checked	200 image/jpeg	67f356523376f995
+694/09	0029	S6-05	none	high	n	-	sheet none (German extract p.18); not eye-checked	200 image/jpeg	bfa40a2444b65c7d
+694/09	0033	S5-08	none	high	n	-	sheet none (plain order text, signed); not eye-checked	200 image/jpeg	cd2c5449fdde68b6
+694/09	0036	S8-02	none	low	n	-	sheet none (left page prose, right blank); not eye-checked	200 image/jpeg	e19b651358be309b
+694/09	0043	S6-03	none	high	n	-	sheet none (p.29 plain); not eye-checked	200 image/jpeg	6388d596a2ffcc00
+694/09	0046	S5-05	light	high	y	n	EYE: LIGHT, unglossed. Left page end of a letter; one run 103.30.120.55.1000.55.44 and "par 11"; est. ~8 tokens	200 image/jpeg	08cbe80206b76b83
+694/09	0049	S6-04	none	high	n	-	sheet none (f.34, 11 Feb 1713, plain); not eye-checked	200 image/jpeg	c1dedd61799a97a1
+694/09	0052	S4-07	moderate	high	y	n	positive control (MANT-0609, 44 tokens): sheet moderate/high -- FOUND	200 image/jpeg	1ba248b1826bed46
+694/09	0053	S3-02	none	high	n	-	sheet none (clear); not eye-checked	200 image/jpeg	984f55deca66484f
+694/09	0056	S1-07	heavy	high	y	y	EYE: HEAVY, glossed. "No 14?", p.42, Berl. ce 18 Fevr 1713 ("Le Roi de Prusse commence a se remettre"); ~5 lines of dotted runs at the top (110.13.66.110.120.37.35 ..., 1.33.60.28.10.14.50 ...) plus a run mid-page (43.66.9.28.10.35.36 ...), interlinear period gloss over most runs; est. 90-110 tokens; P.S. "le C. de Fl."	200 image/jpeg	4501d307142ab24d
+694/09	0059	S3-03	light	low	y	?	EYE: LIGHT. "No 15?", p.40, Berl. ce 15 Fevr 1713 (the King of Prussia ill); short runs in the last 3 lines (a 55.28 ...; a 55.35.21.28 ...), gloss not settled at this scale; est. 10-15 tokens	200 image/jpeg	0f07446538135bfd
+694/09	0063	S10-03	moderate	high	y	y	EYE: MODERATE, glossed. "No 16", p.44, Berl. ce 15 Fevr 1713; runs at 24.7.103.60.5.39/10.21.27.66.31.50.14.27.6.35.27.103.18.26 and two lines near the foot (3.68.51.8.51.29.28.6.51.120.39 ...; 73.54.40.10.11.6.31.43.35.27.21) with glosses above ("Si le Roy prend...", "le Pr. Royal", "Barth...", "avec beaucoup...", German-looking words over the last run); est. 55-70 tokens	200 image/jpeg	b58656a6e157f2df
+694/09	0066	S8-06	none	low	n	-	sheet none (German page); not eye-checked	200 image/jpeg	3d017c4eb2a5b0e8
+694/09	0073	S1-02	none	high	n	-	sheet none (clear, left page blank); not eye-checked	200 image/jpeg	d2a4fdfa4e1bc2c1
+694/09	0083	S9-01	none	high	n	-	sheet none (28 Feb 1713, prose); not eye-checked	200 image/jpeg	3569a779858e4f4d
+694/09	0086	S10-02	none	high	n	-	sheet none (prose spread); not eye-checked	200 image/jpeg	9ef6520fe879e2e3
+694/09	0089	S10-05	none	high	n	-	sheet none (p.66, dense prose, marginal additions); not eye-checked	200 image/jpeg	f065b5e577e89815
+694/09	0093	S8-05	none	low	n	-	sheet none (p.69, Nov 1713, prose, signed); not eye-checked	200 image/jpeg	cadd0e127068230e
+694/09	0096	S3-08	none	high	n	-	sheet none (numbered paragraphs only); not eye-checked	200 image/jpeg	13decb9b11408c5c
+694/09	0099	S1-04	none	high	n	-	sheet none (clear; letter-number lists, marginal notes); not eye-checked	200 image/jpeg	565838f4a01a6d63
+694/09	0103	S7-04	light	high	y	n	EYE: LIGHT, unglossed. Spread, right page p.107; four short runs on the left page (110.17.33.13.31; 51.28.35.28.57; 11.15.16.26.12; 44.33.12.8); est. ~20 tokens	200 image/jpeg	3f555655ecd29fc7
+694/09	0106	S2-01	none	low	n	-	sheet none (clear); not eye-checked	200 image/jpeg	e0f0bb198ab03efa
+694/09	0109	S8-04	none	low	n	-	sheet none (p.827?, prose, signed); not eye-checked	200 image/jpeg	2125ad500967699c
+694/09	0113	S5-06	none	high	n	-	sheet none (p.86 with PS; 172 tonnes = quantity); not eye-checked	200 image/jpeg	ffd289fe3f95b237
+694/09	0116	S1-09	none	high	n	-	sheet none (clear); not eye-checked	200 image/jpeg	4444f9247be9dc6e
+694/09	0119	S7-09	none	low	n	-	sheet none (p.91, letter of the King of Prussia, 1723?, prose); not eye-checked	200 image/jpeg	6b5843b657088e6a
+694/09	0123	S5-09	none	high	n	-	sheet none (25 Mar 1713 p.93, plain); not eye-checked	200 image/jpeg	cbd574475cff40fa
+694/09	0126	S2-05	none	low	n	-	sheet none (copy, dense, no runs); not eye-checked	200 image/jpeg	0e8f11922e01219f
+694/09	0129	S9-03	none	high	n	-	sheet none (faint, few lines prose); not eye-checked	200 image/jpeg	5a070f1d78fc6d8f
+694/09	0133	S4-08	none	high	n	-	sheet none (p.100, plain); not eye-checked	200 image/jpeg	cedd13b9f06a7b24
+694/09	0136	S6-01	heavy	high	y	n	EYE: MODERATE, unglossed. P.S. on p.102, a clerk hand (not the 0007/0008 hand); text says "je me servirai du chiffre que nous appelons celui du proces" -- a named second cipher; runs 44.16.12.8.33.5.35.47; 39.12.7; 257; 170.97.44.39.5.22.21.9.10; 150; 177.21.66.5.16.9.28.17.44 ... 229; 50.15.10.17.6.39.14.30.35; a.12; est. 70-80 tokens. Codes look Krauske-range but the named cipher may be another table: check before reading with key.tsv	200 image/jpeg	ff5e898d384dbfbb
+694/09	0139	S4-04	none	high	n	-	sheet none (f.104, plain); not eye-checked	200 image/jpeg	c125e4ef43eb4c7e
+694/09	0143	S3-04	none	high	n	-	sheet none (short clear letter); not eye-checked	200 image/jpeg	209f5fcb62b5d746
+694/09	0146	S6-06	none	high	n	-	sheet none (p.109 to Manteuffel, 'a la lettre ... du 9 Avril 1713'); not eye-checked	200 image/jpeg	5465b8492f1fe27e
+694/09	0149	S7-01	none	low	n	-	sheet none (single left page French prose, no runs at sheet res); not eye-checked	200 image/jpeg	830847f732a89bce
+694/09	0153	S9-02	none	high	n	-	sheet none (prose spread (f.174?)); not eye-checked	200 image/jpeg	8662136233536b4f
+694/09	0156	S5-04	none	high	n	-	sheet none (short plain letter); not eye-checked	200 image/jpeg	7221b7f5fe84cfda
+694/09	0159	S4-01	none	high	n	-	sheet none (Relation to the King 18 Apr 1713, plain); not eye-checked	200 image/jpeg	b88837ae1cd30307
+694/09	0163	S3-09	none	high	n	-	sheet none (clear, struck marginal notes); not eye-checked	200 image/jpeg	bc8676364d0c1b16
+694/09	0166	S10-01	none	high	n	-	sheet none (p.125, 26 Feb 1713, prose); not eye-checked	200 image/jpeg	dfa1df8ff9989d5e
+694/09	0169	S1-05	none	high	n	-	sheet none (clear, marginal annotation); not eye-checked	200 image/jpeg	cc2bc2cdb82c2fe0
+694/09	0173	S10-04	none	high	n	-	sheet none (single prose page); not eye-checked	200 image/jpeg	ccaa01b71f785c61
+694/09	0176	S3-07	light	low	n	-	EYE: clear. p.132, Berl. ce 3 Mai 1713; one interlinear clear word, no runs	200 image/jpeg	c48f5e47fe71f411
+694/09	0179	S7-05	none	low	n	-	sheet none (p.135?, French prose); not eye-checked	200 image/jpeg	0faf6a722d5998f0
+694/09	0183	S4-03	none	high	n	-	sheet none (p.139, 10 May 1713, plain); not eye-checked	200 image/jpeg	2f3a1e3c9559ba21
+694/09	0186	S5-03	none	high	n	-	sheet none (plain); not eye-checked	200 image/jpeg	ff0617772a7b4f01
+694/09	0189	S5-02	none	high	n	-	sheet none (Berlin 20 May 1713, plain); not eye-checked	200 image/jpeg	8f13dae4c8e6ccf0
+694/09	0193	S2-03	none	low	n	-	sheet none (dense two pages, no runs); not eye-checked	200 image/jpeg	5ce1e98c75bd1c0d
+694/09	0196	S7-06	none	low	n	-	sheet none (French prose); not eye-checked	200 image/jpeg	1d59556c164a1eaa
+694/09	0199	S8-09	none	low	n	-	sheet none (p.152, 1713?, prose); not eye-checked	200 image/jpeg	8a41b09b144e81b7
+694/09	0203	S6-08	none	high	n	-	sheet none (p.155, 10 May); not eye-checked	200 image/jpeg	427833698b6525ea
+694/09	0206	S3-01	none	high	n	-	sheet none (clear, mostly blank); not eye-checked	200 image/jpeg	adfed343c73e0624
+694/09	0209	S8-01	none	low	n	-	sheet none (open book, prose, signed); not eye-checked	200 image/jpeg	b5dffb12d9675ffa
+694/09	0213	S2-04	none	high	n	-	sheet none (clear); not eye-checked	200 image/jpeg	7ca41fc2a2b3a81e
+694/09	0216	S9-04	none	high	n	-	sheet none (p.166, note 'a la lettre ... du 30 May 1713'); not eye-checked	200 image/jpeg	bde403d4d107c229
+694/09	0219	S4-09	none	high	n	-	sheet none (German accounts table, sums); not eye-checked	200 image/jpeg	98ac1be93e20168e
+694/09	0223	S2-02	none	high	n	-	sheet none (numbered paragraphs only); not eye-checked	200 image/jpeg	f95fe5f6d1e2abac
+694/09	0226	S2-08	none	high	n	-	sheet none (clear dated letter); not eye-checked	200 image/jpeg	ec0734e59db7fa4a
+694/09	0229	S9-07	none	high	n	-	sheet none (mostly blank); not eye-checked	200 image/jpeg	34d7850e1b5d8064
+694/09	0233	S6-09	light	low	y	n	EYE: LIGHT, unglossed. p.176-177, the same clerk hand as 0136; isolated code numbers 83, 93 (x2), 75?, 9.10.11.2, 59 among clear text on the Schleswig/Sweden negotiation; est. ~8 tokens	200 image/jpeg	80e6985913047878
+694/09	0236	S1-08	none	high	n	-	sheet none (clear, right page blank); not eye-checked	200 image/jpeg	ed8a594ef4032e04
+694/09	0239	S3-05	none	high	n	-	sheet none (marginal annotation only); not eye-checked	200 image/jpeg	e0d90eca0a73820c
+694/09	0243	S1-06	none	low	n	-	sheet none (dense cursive, no runs seen); not eye-checked	200 image/jpeg	1974d2e448381bed
+694/09	0246	S5-07	none	high	n	-	sheet none (Berlin 27 Aug 1713 p.187, plain); not eye-checked	200 image/jpeg	e1c1eaa25d11263f
+694/09	0249	S2-07	none	low	n	-	sheet none (dense, no runs); not eye-checked	200 image/jpeg	d4c769234acaf8b6
+694/09	0253	S8-03	none	low	n	-	sheet none (dense two-page prose); not eye-checked	200 image/jpeg	eec260232127aa3a
+694/09	0256	S1-03	none	low	n	-	sheet none (clear, small marginal notes); not eye-checked	200 image/jpeg	c779861544839097
+694/09	0259	S7-02	none	low	n	-	sheet none (German hand, p.198, Aug 1703?, no runs); not eye-checked	200 image/jpeg	5c48c7ff2a4ecbc7
+694/09	0263	S7-03	none	low	n	-	sheet none (Dresden 20 Sept 1703?, p.200, French prose); not eye-checked	200 image/jpeg	bf5afebf97e4a240
+694/09	0266	S8-07	none	low	n	-	sheet none (p.203, prose); not eye-checked	200 image/jpeg	ba96b8d955e39954
+694/09	0269	S4-02	none	high	n	-	sheet none (p.206, interlinear words above text, no numbers); not eye-checked	200 image/jpeg	3f521744a3a3caec
+694/09	0273	S5-01	none	high	n	-	sheet none (Dresden 22 Sept 1713, plain); not eye-checked	200 image/jpeg	d4e5071368d41a6f
+694/09	0276	S9-08	none	high	n	-	sheet none (numbered articles 1-8 (1714)); not eye-checked	200 image/jpeg	b1c265e75a38bac5
+694/09	0279	S4-05	none	high	n	-	sheet none (p.219, plain); not eye-checked	200 image/jpeg	7770905ca9e4a774
+694/09	0283	S6-07	none	high	n	-	sheet none (large-hand fragment); not eye-checked	200 image/jpeg	7f4b4b5f4acfc738
+694/09	0286	S4-06	none	high	n	-	sheet none (letter to Manteuffel, Berlin 1713, plain); not eye-checked	200 image/jpeg	41770798aae0703b
+694/09	0289	S8-08	none	low	n	-	sheet none (single prose page, smudge); not eye-checked	200 image/jpeg	9bbf3ba29e8777d8
+694/09	0293	S7-08	none	low	n	-	sheet none (p.67, Bernstadt/Bunzlau 22 Nov 1727?, prose); not eye-checked	200 image/jpeg	0fbe0b814692907a
+694/09	0296	S6-02	none	high	n	-	sheet none (p.228 plain); not eye-checked	200 image/jpeg	e580fe719238e4de
+694/09	0299	S9-06	none	high	n	-	sheet none (p.231 prose, strike-throughs); not eye-checked	200 image/jpeg	0249e38a6a0cd0e5
