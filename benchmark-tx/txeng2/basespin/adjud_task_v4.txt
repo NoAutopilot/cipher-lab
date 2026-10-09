@@ -1,0 +1,10 @@
+You settle doubtful signs in a transcription of a 16th-century symbol cipher. Use ONLY the files named here.
+
+Sheet (sign inventory with exemplars): /home/user/cipher-lab/ciphers/spinelli-beinecke-c1515/glyphs/atlas_v4.png
+Extra code not on the sheet: JHOOK = a bold vertical stroke turning left at the foot (like a J).
+Line crops: /home/user/cipher-lab/benchmark-tx/txeng/confirm/crops/<line>_s1.jpg and <line>_s2.jpg (the two halves of a line overlap by ~200 px; each crop holds one full-width line along its middle -- ignore fragments of other lines at the edges; plain Latin-script words at the start of p1c_L01 are not cipher). View every crop named by a queue row at its own size; do not resize, downscale or crop any image.
+Queue: /home/user/cipher-lab/benchmark-tx/txeng2/basespin/adjud_queue.tsv -- one row per doubtful position: line, col (the sign's position counting cipher signs from the left of the line, from 1), kind, candidates (readings two earlier readers gave), left_neighbours and right_neighbours (the agreed signs just before and after it, as landmarks to find the position).
+
+For each row, find the sign in the crops using the neighbours, look at its shape against the sheet, and choose: one of the candidates, any other sheet code (or JHOOK) if the shape plainly fits it better, NEW:<short description> if no sheet row fits, or NONE if there is no sign there.
+
+Write /home/user/cipher-lab/benchmark-tx/txeng2/basespin/adjud_out.tsv with header line<TAB>col<TAB>sign<TAB>conf (H/M/L), one row per queue row, same order. Reply only with the row count.
