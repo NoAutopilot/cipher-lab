@@ -3661,3 +3661,27 @@ not committed). No other host. No credentials used.
 
 ### Escalation
 Siblings: all four tokens sat in three entries on two leaves, now read. Clear pages: n/a. Known keys: mssEC 67 (H). Print: n/a for key rows. Image check: done for the four rows at 2000 px. Retry: n/a. Verdict: keep going.
+
+## FV-FM10c (9 Oct 2026, account 1, for LANE LEDGER; verifier, separate from every reader)
+
+First audit of O9-BD, O9-CA, O9-CB, O9-CC, O9-CD: AUDIT.md "## AUDIT (FV-FM10c)". All 31 code tokens re-derived on the mssEC 67 page images (pp.[A],
+[10], [12], [15]-[18], [20]-[22]) and every line eye-checked on the ledger pages: no key or transcription error. **O9-CC is printed** (OR ser. II
+vol. 6 p.943, Mulford to Butler, 11 Feb 1864, 9.30 a.m., word for word): its three code words are C. O9-BD's Ord clause is OR I/37 pt 2 p.293 (C 7,
+H 5; FM-R7a's "M 2" withdrawn). O9-CA's header is "Major Mulford, steamer New York, Baltimore" (OR II/6 pp.129, 592). Classes: all five N1 (text
+known: O9-CC and O9-BD by print, O9-CA/CB/CD by the holder's clear transcription, E74 precedent), key period; depth O9-BD D3, the rest D1. No N3+, so
+no status/SO/WORK-QUEUE rows. Reading and header fixes listed in AUDIT s.5 for the next FIX job. Scripts `fortmonroe/fv_fm10c_{hdl,print,beapi}.py`.
+
+### Remaining gaps
+- [ ] O9-BD Buell tail (Havre de Grace steamers, railroad not open) - blocker: not-attempted; next: Grant Papers vol. 11 and the Baltimore press of 14 July 1864 by be-api, ~$0.2
+- [ ] O9-CA, O9-CB, O9-CD print - blocker: not-attempted; next: Google Books (keyed, country=US) phrase search "Brengle" Feb 1864 and the New York detective William Lee, ~$0.2
+- [ ] AUDIT s.5 fixes into ciphertext-no9.txt notes and headers - blocker: waiting-on the lane's next FIX job (named in ROOM)
+
+### Escalation
+- [x] siblings: 10494 (Ord's other 13 July telegram), 10490 seen, not copies.
+- [x] clear-pages: all-pointer CISOSEARCHALL, 13 queries, no clear copy.
+- [x] known-keys: mssEC 67 page images, every token.
+- [x] print: 166 cached volumes + OR II/6 + Butler III; two prints found (O9-CC, O9-BD).
+- [x] image-check: all five entries, every line.
+- [n/a] key-rebuild: no key error found.
+- [x] retry: 502s not retried (search results of no power).
+Verdict: keep going: 2 internal gaps, cheapest next: O9-BD tail by be-api, ~$0.2

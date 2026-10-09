@@ -11013,3 +11013,123 @@ E318: drop FM-R7b's note "Ivory ... is probably 'my'; M" (Ivory = General-in-Chi
 p.146 and the receipt 2.35 AM 15th. E314: none (the "done" = Doren lead goes in NOTES only).
 Requests: hdl.huntington.org 19 (16 CONTENTdm queries, 3 IIIF pages, all 200); archive.org 4 (1 advancedsearch; OR I/36 pt 3 download 500, its one
 retry 500; Plum vol. 2 download reset); be-api 17 (15 answered, 2 x 502).
+
+## AUDIT (FV-FM10c)
+
+Verifier FV-FM10c (account 1, for LANE LEDGER), 9 Oct 2026, 16:46-17:2x UTC by `date -u`; a separate session from the readers NO9-KEY, NO9-R1
+and FM-R7a (account 1), not protecting their conclusions. Scope: the five Cipher No. 9 entries **O9-BD** (FM-R7a), **O9-CA, O9-CB, O9-CC, O9-CD**
+(NO9-R1); `ciphertext-no9.txt`, `reading-no9.md`, `decode_no9.py`; Fort Monroe ledger mssEC 25 = Huntington object 5952. Nothing decoded beyond
+key look-ups. Key source for all five: `period` (handwritten meanings of the Huntington copy mssEC 67, object 1750). Depth under
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Intake gate (lane
+orchestrator, 16:4x UTC): "eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines". `decode_no9.py
+--check` at 17:1x UTC: "reading-no9.md is current" (after NO9-PAGES e5830912b, which tabled Swindle/Surgery = Steam Boats).
+Scripts: `fortmonroe/fv_fm10c_hdl.py` (+ `.out`: CONTENTdm full text across all pointers, 13 queries; three ledger pages at 2400 px to scratch),
+`fortmonroe/fv_fm10c_print.py` (+ `.out`: letters-only phrase grep and name KWIC over the 164 cached print-check volumes plus OR ser. II vol. 6
+(`warofrebellion0206rootrich`) and Butler, *Private and Official Correspondence* vol. 3 (`privateoffice03butlrich`), both fetched to scratch),
+`fortmonroe/fv_fm10c_beapi.py` (+ `.out`: IA be-api, 9 queries, 3 answered 502 and were not retried; positive control answered).
+
+### 1. Duplicates, prior work, key, image
+- **Duplicate diff:** pointers 5570, 5576, 5771 against every `###` header in ciphertext*.txt and status.json: each occurs only in its own
+  header(s). **No duplicate.** None of the five is in status.json.
+- **Prior work** (`tools/prior_work.py --item-spec ... --step-type audit`, one run per item, 17:0x UTC): exit 4 on each; the LEAD rows are the
+  readers' own filings (NOTES.md:3541, the FM-R7a claim) and target-level live claims of FIX-FM11, KEY-BLIND, NO9-PAGES and this session, none of
+  which covers these five items (NO9-PAGES edited key-no9.md only); 4-editions CLEAR on the cached OR ser. I volumes, UNCHECKED-NET on seven OR
+  ser. I volumes not on disk; 3-tomokiyo UNCHECKED (no folio). The tool's edition window does not include OR ser. II vol. 6, where O9-CC is printed
+  (below): a gap in the tool's edition table, not in its logic. G3 (`--reading --network`, decoded clear phrases): O9-CA 'The Major General desires to'
+  0 exact in eight OR ser. I volumes (near hits only, none within +-3 days); O9-CB 4 phrases, 0 exact but the generic 'B F Butler Fort Monroe';
+  O9-CD timed out at 200 s (not rerun; unchecked by G3, covered by the grep and be-api below).
+- **Key, every H token re-derived on the key page image itself** (not from key-no9.md): committed ciphers/eckert-1862/images mssEC67_p1730,
+  p1736, p1742 and seven pages fetched this session at 1400 px (scratch; the 2400 px request answered 501, larger than native): p.[A] 1720 TIME:
+  Cora 9.30, Clara 10.30 (the clerk's "10" is written like "/11", as Laura = 10 P.M. on the same page), Gertrude "12 M", Rosetta 6.30 P.M.; p.[10]
+  1730 l.7 Abbey/Audit = B. F. Butler, l.11 Bangor/Bengal = U. S. Grant; p.[12] 1732 l.10 Camargo/Census = Maryland; p.[15] 1735 l.16 Hammock/
+  Hammer = Monroe (Forts); p.[16] 1736 l.6 Image/Insanity = Baltimore; p.[17] 1737 l.17 Merlin/Midas = New York; p.[18] 1738 l.20 Pagan/Pagoda =
+  Washington; p.[20] 1740 l.7 Relay/Roanoke = Cavalry; p.[21] 1741 l.9 Soap/Somers = Rail Road, l.22 Swindle/Surgery = Steam Boats, l.23
+  Supper/Superb = Telegraphs; p.[22] 1742 l.18 Valley/Vermont = "Brig Genls", l.19 Vernon/Vermin = "Maj [Genls]" (ditto), l.21 Vienna/Village =
+  Major. **All 31 code tokens of the five entries agree with the page; no key row of these entries is wrong.**
+- **Image eye check this session, every line of the five entries** (autocontrasted strips of the 2400 px pages, scratch only; the ledger is a
+  six-column grid read row by row): **the transcription matches the image on every word, code words included.** O9-CA row 5 has six words ending
+  "to me" (NO9-R1's removal of the volunteer text's "one" confirmed). O9-BD: the page has "precaution would no harm" (the print's "would do no
+  harm": the clerk's omission, not a transcription slip) and "painful rumors here regard to pagan" (the last cell reads "to" over a struck word).
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, all pointers; hdl token 16:57-17:0x UTC, after FV-FM10b's release): "Brengle"
+1 hit (5570 own); "free derrick" 1 (own); "get a description" 1 (own); "painful rumors" 1 (own); "Davenport private secretary" 5, "flag of truce
+boat" 28, "wait orders" 37, "William Lee" 10, "expecting it" 26, "run steamers" 9: no hit other than the own pointers carries these telegrams;
+"Laurel Beltsville" 2 (5771 own; 10490, Page 348, Wallace's report of the railroad torn up between Laurel and Beltsville, another telegram);
+"Point Lookout release" 3 (5771; **10494, Page 352: Ord's other telegram of 13 July, "rebels reported crossing the RR near Beltsville to go and
+release Prisoners at Point Lookout do not rely on the report"**, the sibling printed in OR I/37 pt 2 beside the one O9-BD carries, not a copy of
+it); "Buell New Castle" 189 (Buell's routine line reports, none of 13 July 1864). **No holder clear copy of any of the five located.**
+
+**Print** (`fv_fm10c_print.out`, 166 volumes; be-api `fv_fm10c_beapi.out`):
+- **O9-CC is printed.** OR ser. II vol. 6 (IA `warofrebellion0206rootrich`), **p.943**: "BALTIMORE, February 11, 1864 -- 9.30 a. m. [OCR "0.30"]
+  Major-General BUTLER, Commanding: Have just found Brengle. Will send him down to-night. Prisoners not yet arrived. JOHN E. MULFORD, Major, &c."
+  The decode reads it word for word, its three code words included: abbey = [Butler] (the printed address), Vienna = Major (the printed
+  signature), Cora = 9.30 AM (the printed time). NO9-R1's "none" for this entry is wrong; its be-api search of the lending-only copy
+  `warofrebellionco0006unit` for "Brengle" returned the 1863 letters only, and no phrase from the reading was searched.
+- **O9-BD (Ord clause) is printed**, as FM-R7a found: OR I/37 pt 2 (`warofrebellion372unit`), **p.293** (FM-R7a's "OCR footer 94" is the running
+  head of p.294 that follows): "Baltimore, July 13, 1864. (Received 14th.) Lieut. Gen. U. S. Grant, City Point: One of the staff here has received
+  information, which he deems reliable, that a force of rebel cavalry crossed the railroad to Washington between Laurel and Beltsville, with
+  instructions to go to Point Lookout and release the rebels confined there. Precautions would do no harm. A rebel force is reported south of the
+  railroad near the places named. E. O. C. Ord, Major-General." Clause for clause with the decode; Bangor = Grant, Image = Baltimore, Roanoke =
+  cavalry, somers and soap = railroad, pagoda = Washington, vermin = Maj. Gen. are C. Buell's tail (communication all right to Baltimore, railroad
+  not, steamers from Havre de Grace to Baltimore, painful rumors in regard to Washington): no print found (phrase grep 0; be-api '"painful rumors"
+  Havre de Grace 1864' 0, the Buell/New Castle query 502). Plum, *Military Telegraph* vol. 2 (be-api control): "M. V. B. Buell, Chief ..." beside
+  Sheldon, the operator named in the header.
+- **O9-CA, O9-CB, O9-CD: no print of the text located.** OR II/6's Brengle index (166, 339, 513, 514, 750, 943) has nothing on 10 Feb 1864; Butler
+  III has no "Brengle"; 0 hits for every distinctive phrase (`fv_fm10c_print.out`). be-api: "Brengle" inside the lending-only OR II/6 copy 1 doc
+  (1863); 'Brengle "flag of truce" Mulford 1864' 10 docs (OR II/6 copies: Mulford with the flag-of-truce boat New York, 1863); '"Brengle" Frederick
+  Butler Davenport' 10 docs (Maryland genealogies: Capt. John Brengle of Frederick); '"William Lee" detective Horner 1864' 502, not retried.
+  Not searched: Google Books, the press of Feb-Mar 1864, NARA RG 107, Grant Papers vol. 11 for O9-BD.
+
+**NO9-R1's sense checks, weighed as independent print only where the print says the same thing:**
+- Vienna/Village = Major: OR II/6 p.943 prints "JOHN E. MULFORD, Major, &c." exactly as O9-CC decodes it (same thing, independent print: yes).
+- O9-CA's header "[Major] Mulford [Steam Boats] [New York] [Baltimore]" (Swindle now tabled): OR II/6 p.129 "The steamer New York, under charge of
+  Major Mulford", p.592 "The flag-of-truce boat New York ... Major Mulford", p.347 Butler sends "the steamer New York ... to Fort McHenry": the
+  print says the same thing as the decode (Mulford in charge of the steamer New York, plying to Baltimore), so the header reads "Major Mulford,
+  steamer New York, Baltimore", a second addressee beside Baldwin. Yes, as independent context for the code words; not a copy of the telegram.
+- Camargo = Maryland after "free derrick" (Frederick): OR II/6 p.513 (index 513-514) "Mr. Alfred Brengle, of Frederick, Md." (same thing: yes).
+- O9-CD "[Brig. Gen.] Hays office [New York]": no print checked for a Brig. Gen. Hays at New York in March 1864; sense only, no print weight.
+
+### 3. Grade and reading corrections (reading-no9.md as of this audit)
+- **O9-CC:** abbey, Vienna, Cora **C 3 of 3** (print p.943). Read: "Baltimore, 11 Feb 1864, 9.30 a.m. [Maj. Gen. B. F. Butler]: Have just found
+  Brengle; will send him down to-night. Prisoners not yet arrived. John E. Mulford, [Major], &c." (by G. W. Baldwin to Sheldon). Header: printed OR
+  ser. II vol. 6 p.943; addressee Butler.
+- **O9-BD:** **C 7** (Bangor, Image (dateline), Roanoke, somers, pagoda, soap, vermin against p.293) **+ H 5** (supper, insanity, somers, image,
+  pagan in Buell's tail). FM-R7a's table cell "H 12, M 2 (Image/Insanity = Baltimore as address)" counts 14 for 12 tokens and the decoder grades
+  no M: Image/Insanity are H on p.[16] l.6 and Image is C against the printed dateline; the "M 2" is withdrawn. Header: print page p.293, not "94".
+- **O9-CA:** H 7 of 7 (Vienna, swindle, midas, insanity, Vernon, audit, Clara), no change; header: "Major Mulford, steamer New York, Baltimore"
+  (second addressee, OR II/6 pp.129, 592); the telegram is signed by John I. Davenport, private secretary to Butler, for "the [Maj. Gen.]". The
+  ciphertext note line "NO9-R1 'swindle' ... has no row in key-no9.md ... M" is stale since NO9-PAGES (e5830912b); the reading already shows
+  [Steam Boats] H.
+- **O9-CB:** H 5 of 5, no change. **O9-CD:** H 4 of 4, no change.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| O9-CC | **N1** (text known) | period | **D1** (C 3 of 3; three code words, the text is clear) | plaintext printed: OR ser. II vol. 6 p.943, word for word with time and signature |
+| O9-BD | **N1** (text known) | period | **D3** (12 of 12 code tokens H/C: C 7, H 5; code clause: somers/soap = railroad in two contexts, Image/insanity = Baltimore in three; external non-statistical: OR I/37 pt 2 p.293) | the Ord clause is printed OR I/37 pt 2 p.293; Buell's tail is in clear in the holder's transcription of 5771 but four code words (E74 precedent) |
+| O9-CA | **N1** (text known) | period | **D1** (H 7 of 7; address and signature code words, the message is clear) | the holder's own transcription of pointer 5570 shows the message in clear but the address/signature/time words (E74 precedent) |
+| O9-CB | **N1** (text known) | period | **D1** (H 5 of 5) | the holder's transcription of 5570 shows the text in clear but Butler, Fort Monroe, Maryland, Major and the time (E74 precedent) |
+| O9-CD | **N1** (text known) | period | **D1** (H 4 of 4) | the holder's transcription of 5576 shows the text in clear but Brig. Gen., New York, Butler and the time (E74 precedent) |
+
+- Depth: O9-CA..CD hold D1 under the E312/E313 ruling for clear text salted with a few code words, although Vienna/Village = Major and Abbey/Audit =
+  Butler read in three or four contexts across the leaf (a code clause under the depth bar). O9-BD is the E310 shape (a dense code-word message
+  with a printed counterpart). A second audit may rule otherwise on either side.
+- **Safe sentences.** O9-CC: "Printed in the Official Records (ser. II vol. 6, p.943); our reading of the ledger entry under Cipher No. 9 agrees
+  with it word for word." O9-BD: "Ord's telegram to Grant in it is printed in the Official Records (ser. I vol. 37 pt 2, p.293); our No. 9 reading
+  agrees clause for clause; Buell's covering lines are clear text with four code words." O9-CA/CB/CD: "Clear text with N Cipher No. 9 code words,
+  read at grade H from the handwritten meanings of the Huntington's key book mssEC 67; the Huntington's transcription already shows the rest."
+- **Unsafe:** any novelty for any of the five; "not printed" for O9-CC; "Sheldon to Baldwin" as the content of O9-CA (it is Davenport for Butler).
+- No status.json, SO or WORK-QUEUE rows: no entry is N3 or better (brief: N3+ only; AUD2-LEDGER-28 not queued).
+
+### 5. Fixes for the next FIX job (not applied here; reading-no9.md is decode_no9.py output)
+O9-CC: header -> add "printed OR ser. II vol. 6 p.943 (Mulford to Butler, Baltimore 11 Feb 1864, 9.30 a.m.)"; note: abbey, Vienna, Cora C from
+p.943. O9-BD: header "OR I/37 pt 2" -> "OR I/37 pt 2 p.293"; note: Ord-clause code words C 7, tail H 5; FM-R7a's "M 2" withdrawn; the ledger omits
+"do" in "precaution would [do] no harm". O9-CA: drop or supersede the stale note "swindle ... no row ... M" (NO9-PAGES tabled it, p.[21] l.22);
+header -> "Davenport (private secretary) for Maj. Gen. Butler, by Sheldon, to G. W. Baldwin, Baltimore, and Major Mulford, steamer New York";
+NOTES NO9-R1 table: O9-CC "none" -> OR II/6 p.943; O9-CA "M 1" -> H 7. Propagate NO9-R1's counts (H 18, M 1 -> H 19, M 0 for its four entries).
+tools/data/prior_editions.tsv (or the civil-war adapter): OR ser. II vol. 6 (`warofrebellion0206rootrich`) is downloadable and covers the Fort
+Monroe exchange traffic of 1863-64; the tool's edition window should include it (it would have caught O9-CC before NO9-R1 read it).
+Requests: hdl.huntington.org 30 (13 CONTENTdm queries, 3 ledger IIIF at 2400 px, 7 key IIIF at 2400 px answered 501, 7 re-fetched at 1400 px);
+archive.org 5 (OR II/6 lending copy 401, Butler III 1 reset + 1 x 502 + 1 x 200 on the alternative id, OR II/6 `warofrebellion0206rootrich` 200),
+1 advancedsearch, 1 metadata (reset); be-api 9 (6 answered, 3 x 502); G3 network calls through prior_work.py (its own count, not logged here).
