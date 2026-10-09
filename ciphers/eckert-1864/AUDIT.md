@@ -9763,3 +9763,81 @@ Gap"). Graded **H as a spelling variant** (the Knocks = Knox precedent), not I. 
   E283's Dutch Gap is H, not I. Still open: Grant Papers vol. 12 page read for 3-5 Nov (E284; HathiTrust search from the owner's desk or a
   borrow read by a person); Google Books for E284 and E285 (host 503); *Letters from a North Carolina Unionist* pp.155-165 (E280 context lead);
   the press of the day (not searched; none is a press telegram).
+
+## AUDIT 2 (AUD2-LEDGER-21)
+
+Second verifier AUD2-LEDGER-21 (account 4, for the orchestrator (account-4) and LANE LEDGER (account 1)), 9 Oct 2026, 12:30-12:4x UTC by
+`date -u`; a separate session and account from the readers FM-R5a and FM-R5b and the first auditor FV-FM8d (all account 1); this session had
+not read or audited these entries before. Scope: **E278, E289** (WORK-QUEUE AUD2-LEDGER-21). Nothing decoded beyond key look-ups in key.md.
+FV-FM8d's 32 CONTENTdm full-text queries, its image eye check of pages 5829 and 5814 and its OR I/42 pt 3 / ORN I/11 / Butler V greps were not
+redone. Key source: `period`. Committed: this section, `fortmonroe/aud2_ledger21_print.py` + `.out` (three IA djvu texts fetched once to
+scratch: OR I/42 pt 1 `warofrebellion421unit`, Welles's diary vol. 2 `diaryofgideonwel02welluoft`, *Autobiography of George Dewey* (1913)
+`cu31924020416180`), `fortmonroe/aud2_ledger21_gb.py` + `.out` (Google Books API), one prior-work.tsv record, the propagation below.
+
+### 1. Prior-work checks
+`prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=pointer <ptr>;date=...;sender=...;recipient=...' --step-type
+second-audit --offline` for 5829 (E278) and 5814 (E289): both LEAD 1-own = FIX-FM7's target-level claim (10:49; names no unit, does not cover
+these items: CLEAR); 3-solver UNCHECKED-NET (unsolved-ciphers not cloned); 4-editions CLEAR on the cached OR volumes. 5814 also LEAD 4-editions in
+`warofrebellion361unit` (OR I/36 pt 1): opened; the window is **Grant's general report on the Wilmington expedition** ("it was thought all would
+be ready by the 6th of December, if not before. Learning on the 30th of November that Bragg had gone to Georgia ...") -- context for "a prospect
+of this squadron leaving here immediately", not the telegram; recorded CLEAR (`adhoc-903d40:4-editions:779d52`).
+
+### 2. Key look-ups (independent)
+Every word of both entries matched against key.md rows by script: E278 Harriet = 1 PM, zodiac = Period, torch = Of the, stomach = Left, youth =
+Signature, paradise = Colonel, vincent = Quartermaster (all H); webster is also a key row (= Signature, p.23 l.18) but stands after youth (=
+Signature) and before paradise (= Colonel) as the name, so FV-FM8d's "webster plain" holds; "mast" is no key row (Most, phonetic, I). E289
+Francis = 12, Burton = Secretary of Navy, princess = Captain, Polka(er) = Command(er), zebra = Period, tulip = Open, Niagara = D. D. Porter (all
+H); Taylor (= Mountain), prospect (= Demoralize), appear (line indicator) and run (route blind word) are key rows that read as plain words in
+context ("Captain Taylor", "a prospect of", "to appear before", "squad run"), as the decoder's `plain:` notes already say. **No disagreement with
+FV-FM8d's counts** (E278 H 7 of 7; E289 H 7, M 1 of 8).
+
+### 3. New searches (the queue row's named gaps)
+- **E278, OR I/42 pt 1** (reports, Fort Fisher expedition): **Brig. Gen. Adelbert Ames's report (No. 2, 28 Dec 1864), p.981: "At 3 o'clock on
+  the morning of the 13th the transport fleet sailed from Fortress Monroe for Mathias Point. Arriving at this point about dark, it turned about
+  and directed its course for Cape Henry ... It remained here till about midday, when it got under way and went to sea."** Butler's report (No. 1,
+  off Beaufort, 20 Dec 1864), p.964: the troops "left Fortress Monroe ... on Wednesday, the 14th, and got off Cape Henry at 4 p.m."; he "sent the
+  transport fleet up the Potomac as far as Mathias Point ... in the daytime ... and then during the night retraced their course"; "Admiral Porter
+  left with the naval squadron the day previously". Ames dates the fleet's departure from Fortress Monroe to the small hours of 13 Dec, which is
+  what E278 says at 1 PM that day ("Most [of the] fleet [left] during last night"); Butler's "14th" is the day the transports went to sea from
+  Cape Henry. An independent, non-statistical external check of the content, and it confirms FV-FM8d's "Most" against FM-R5a's "The last of the
+  fleet". Not located in OR I/42 pt 1: "few remaining", R. C. Webster (only the steamer Daniel Webster), Ingalls on 13 Dec (index: pp.196, 217,
+  other). Ingalls's own reports and letter-books: not reached this session (not printed in OR I/42 pt 1 for December by the index).
+- **E289, Welles's diary vol. 2:** entries 30 Nov (annual report sent to the printer), then 3 Dec (the President's message); **no entry for
+  1 or 2 Dec**; "Dewey" 0 in the volume; "Captain Taylor" 0; "court martial" 25 hits, none in Nov-Dec 1864 (Wilkes, Scofield, Downes, and later
+  cases). Nothing for E289.
+- **E289, *Autobiography of George Dewey* (1913):** no court martial in 1864 (the three hits are a seniority question in 1862 and Montojo in
+  1898); Porter had Fox assign him executive officer of the Colorado (pp.120ff), and **he was "only about to receive my promotion as
+  lieutenant-commander" after Fort Fisher (p.137; index "promoted to rank of lieutenant-commander, 137")**. So on 1 Dec 1864 George Dewey was a
+  lieutenant, while the telegram reads "Lieutenant [Command]er Dewey". FV-FM8d's identification of the telegram's Dewey with Lt. George Dewey is
+  therefore an inference (a rank given loosely, or another officer of the name), not a check; the reading itself is unaffected (Polka =
+  Command, H; "Lieutenant Polkaer" is written as one title).
+- **E289, NARA RG 125** (Navy general courts-martial and courts of inquiry): **unreachable** -- catalog.archives.gov needs an `x-api-key`
+  (NARA_API_KEY unset on this account, key_probe 12:27 UTC) and the records are not known to be digitised; not searched.
+- **Google Books API** (key, `country=US`; 16 requests, one retry pass after a 20 s pause): E289 `"Dewey" "court martial" 1864 "Taylor"
+  witnesses Porter squadron` 0; `"Taylor and Lieutenant Commander Dewey"` 322, none relevant (later Navy registers, Naval Institute list);
+  `"Captain Taylor" "Dewey" "court-martial" 1864` 62, none relevant (Iowa adjutant-general lists, Army and Navy Journal 1868); `"prospect of this
+  squadron leaving"` noise only; **`"shall the witnesses leave"` 503 twice, not run** (host stopped, good-citizen rule). E278 `"few remaining will
+  get away"` noise only; `"most of the fleet left" 1864 Fortress Monroe` -> ORN (27 Dec telegram, other) and *The Union Army* (1989, NO_PAGES,
+  Ames's division embarked for Fort Monroe, other); `"Webster" "Ingalls" "fleet" December 1864 "Fort Monroe" quartermaster` -> *Assault and
+  Logistics* (1995, NO_PAGES, Ingalls chief quartermaster, steamer Daniel Webster; other) on the first pass, 503 on the retry.
+- Requests by host: archive.org 5 (2 advancedsearch, 3 djvu text); Google Books 16 (four 503). No hdl.huntington.org request.
+
+### 4. Verdict (key `period` for both)
+- **E278: N3 holds. D3 kept** (H 7 of 7). External check strengthened: OR I/42 pt 1 p.981 (Ames) puts the transport fleet's departure from
+  Fortress Monroe at 3 a.m. on 13 Dec 1864, matching the telegram's "during last night". Safe sentence: FV-FM8d's, with the not-located clause
+  read "It was not located in the Official Records (ser. I vol. 42 pts 1 and 3), Butler's Private and Official Correspondence vol. V, Google Books
+  or the Huntington's full-text search (searched 9 Oct 2026); the Army reports of the Fort Fisher expedition date the transport fleet's
+  departure from Fortress Monroe to the early morning of 13 Dec (OR I/42 pt 1, p.981)." Unsafe: any novelty word; "Webster reported the
+  departure of Porter's squadron" (the telegram says "the fleet"; Ames and Butler name the transport fleet).
+- **E289: N3 holds. D3 kept** (H 7, M 1 of 8). Strengthened negative: Welles's diary has no entry for 1-2 Dec 1864 and names neither officer;
+  Dewey's autobiography records no court martial in 1864; Google Books 3 relevant phrase sets 0 (one not run). **One correction:** George Dewey
+  was a lieutenant until after Fort Fisher (*Autobiography* p.137), so "Lt. Cdr. Dewey" = George Dewey is an inference with a rank mismatch, and
+  the status.json `depth_check` clause "Lt. George Dewey both with the squadron" is context, not a check of the telegram (the depth check stands
+  on ORN I/11's 1 Dec traffic and the code clause). Safe sentence: FV-FM8d's, with "Welles's diary or Google Books" added among the places not
+  located. Unsafe: "George Dewey was summoned to a court martial" (identity inferred, rank does not match); "Dewey court-martialled"; any
+  novelty word.
+- Propagated: status.json rows E278 and E289 (audit_refs, audit_status "two audits", gap, line, E289 depth_check qualifier); SO-ECKERT-E278 and
+  -E289 prompts (a note so a second opinion neither "finds" Ames p.981 as prior print of E278 nor takes Dewey's identity as established).
+- Postmortem: FV-FM8d's readings, classes and depths hold; no reading correction. One over-reach: E289's Dewey was identified as Lt. George
+  Dewey without checking his rank on 1 Dec 1864. Still open: NARA RG 125 (whose court martial; from a person or a NARA key), Ingalls's and
+  Webster's letter-books (E278), Google Books `"shall the witnesses leave"` (host 503), the press of the day (neither is a press telegram).
