@@ -1,4 +1,12 @@
 {"jobs": [
+ {"ciphertext": "R1953_pipe_img.txt", "key": "key_decode.tsv", "format": "pipe", "style": "spaced",
+  "reading": "reading_R1953_img.txt", "tokens": "reading_R1953_img_tokens.tsv",
+  "header": [
+   "# hellen-frederick-1752 R1953 (4 Jan 1752) decoded with DECODE R4369 (BL Add MS 32276 f.44, 'Hellen avec le Roy de Prusse', 1751). COUNTED READING from UNA-HELLEN, 9 Oct 2026.",
+   "# Key: key_r4369/key_decode.tsv unchanged (READ2-HEL; left entries H/M, right entries code+100, S). Covers codes 801-1796 only; codes 1-800 are not on this sheet (U).",
+   "# Input: R1953_pipe_img.txt = DECODE's transcription with the image corrections adopted (R7A-HEL53 high + medium, R8-HEL 0/8 high; build_input.py). ciphertext_R1953.txt is not modified.",
+   "# tokens {total}: {HCSMIU}"
+  ]},
  {"ciphertext": "R1953_pipe.txt", "key": "key_decode.tsv", "format": "pipe", "style": "spaced",
   "reading": "reading_R1953.txt", "tokens": "reading_R1953_tokens.tsv",
   "header": [
