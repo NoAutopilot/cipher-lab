@@ -23,8 +23,15 @@ A row whose signs.tsv box is neither the recut's old box nor already its new box
 re-cut since the page was built, e.g. recut.py run again) unless --force; a row already at its new box is re-cropped but
 counts as already applied, so the tool can be run again after a rebuild that re-ran recut.py. Exit 0 when every row
 applied or was already applied, 2 when any was skipped (stale or missing tile/page), 1 on bad input.
-Only boxes move: a recut tile keeps its sign label and pile (labels.tsv untouched). One tile = one box; the page has no
-"split here". Offline. Test: tools/tests/test_sorter_apply_recuts.py.
+Only boxes move: a recut tile keeps its sign label and pile (labels.tsv untouched). Offline. Test: tools/tests/test_sorter_apply_recuts.py.
+Added boxes (--added added.tsv, MQS-SORTER-BOX 9 Oct 2026; written by tools/sign_sorter_apply.py from the page's "Add as a missed
+sign" and "Split: keep this part, add the rest"): each row (id, from, kind, page, x y w h, at, quad, mask) is cut into TILES_DIR/<id>.jpg
+the same way as a recut (quad warped, mask painted) and appended to signs.tsv as a new row: sid = id, x y w h = the box, every other
+column (page, line, ...) copied from its `from` tile, pos left as the from tile's (the added sign sits beside it; order the line by x).
+Run --added after the recuts, so a split's kept part is already in place. A row whose id is already in signs.tsv at the same box
+counts as already applied; at another box it is skipped and reported (unless --force, which moves it); a `from` tile not in
+signs.tsv is skipped. No label is written: the added tile has no sign until the next page build piles it (labels.tsv untouched).
+Must NOT: overwrite an existing tile other than an earlier copy of the same added id, or run without --recuts' old-box check.
 """
 import argparse, csv, json, os, sys
 
@@ -115,8 +122,8 @@ def find_page(pages, page):
     return None
 
 
-def run(recuts, signs, pages, tiles, signs_out=None, force=False, dry=False):
-    rows = list(csv.DictReader(open(recuts, newline=''), delimiter='\t'))
+def run(recuts, signs, pages, tiles, signs_out=None, force=False, dry=False, added=None):
+    rows = list(csv.DictReader(open(recuts, newline=''), delimiter='\t')) if recuts else []
     with open(signs, newline='') as f:
         rd = csv.DictReader(f, delimiter='\t'); cols = rd.fieldnames; srows = list(rd)
     if not cols or not {'sid', 'page', 'x', 'y', 'w', 'h'} <= set(cols):
@@ -154,7 +161,32 @@ def run(recuts, signs, pages, tiles, signs_out=None, force=False, dry=False):
             (crop_quad(src, quad) if quad else crop_box(src, *new)).save(t, 'JPEG', quality=90)
             s.update({'x': str(new[0]), 'y': str(new[1]), 'w': str(new[2]), 'h': str(new[3])})
         rep[state].append(sid)
-    if not dry and (rep['applied'] or rep['already']):
+    rep['added'], rep['added_already'] = [], []
+    for r in (list(csv.DictReader(open(added, newline=''), delimiter='\t')) if added else []):
+        aid, src = r.get('id', ''), by.get(r.get('from', ''))
+        try:
+            new = [int(r[k]) for k in ('x', 'y', 'w', 'h')]
+            quad, mask = parse_quad(r.get('quad')), parse_mask(r.get('mask'))
+        except (KeyError, ValueError, TypeError):
+            rep['skipped'].append((aid, 'bad added box')); continue
+        if not aid or not src:
+            rep['skipped'].append((aid, 'added box: from tile %s not in signs.tsv' % r.get('from'))); continue
+        cur = by.get(aid)
+        if cur and [int(cur[k]) for k in ('x', 'y', 'w', 'h')] != new and not force:
+            rep['skipped'].append((aid, 'added id already in signs.tsv at another box')); continue
+        pp = find_page(pages, src['page'])
+        if not pp:
+            rep['skipped'].append((aid, 'no page image ' + src['page'])); continue
+        if not dry:
+            im = ims.get(pp) or ims.setdefault(pp, Image.open(pp).convert('L'))
+            sm = paint_mask(im, mask)
+            (crop_quad(sm, quad) if quad else crop_box(sm, *new)).save(os.path.join(tiles, aid + '.jpg'), 'JPEG', quality=90)
+            row = cur if cur else dict(src)
+            row.update({'sid': aid, 'x': str(new[0]), 'y': str(new[1]), 'w': str(new[2]), 'h': str(new[3])})
+            if not cur:
+                srows.append(row); by[aid] = row
+        rep['added_already' if cur and [int(cur[k]) for k in ('x', 'y', 'w', 'h')] == new and not force else 'added'].append(aid)
+    if not dry and (rep['applied'] or rep['already'] or rep['added'] or rep['added_already']):
         with open(signs_out or signs, 'w', newline='') as f:
             w = csv.DictWriter(f, fieldnames=cols, delimiter='\t', lineterminator='\n'); w.writeheader(); w.writerows(srows)
     return rep
@@ -162,15 +194,19 @@ def run(recuts, signs, pages, tiles, signs_out=None, force=False, dry=False):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0], epilog=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('--recuts', required=True); ap.add_argument('--signs', required=True)
+    ap.add_argument('--recuts', help='recuts.tsv (optional when only --added is given)'); ap.add_argument('--signs', required=True)
+    ap.add_argument('--added', help="added.tsv from sign_sorter_apply.py: missed signs and split-off parts, cut and appended to signs.tsv")
     ap.add_argument('--pages', required=True, help='the line/page images signs.tsv x y refer to')
     ap.add_argument('--tiles', required=True, help='folder of per-tile crops (<tile>.jpg; the old crop kept as <tile>.orig.jpg)')
     ap.add_argument('--signs-out', help='write the updated signs.tsv here instead of in place')
     ap.add_argument('--force', action='store_true', help='apply even when signs.tsv no longer holds the old box')
     ap.add_argument('--dry-run', action='store_true')
     a = ap.parse_args(argv)
-    rep = run(a.recuts, a.signs, a.pages, a.tiles, a.signs_out, a.force, a.dry_run)
-    print('applied %d, already applied %d, skipped %d' % (len(rep['applied']), len(rep['already']), len(rep['skipped'])))
+    if not a.recuts and not a.added:
+        ap.error('give --recuts and/or --added')
+    rep = run(a.recuts, a.signs, a.pages, a.tiles, a.signs_out, a.force, a.dry_run, a.added)
+    print('applied %d, already applied %d, skipped %d' % (len(rep['applied']), len(rep['already']), len(rep['skipped']))
+          + (', added %d, added already %d' % (len(rep['added']), len(rep['added_already'])) if a.added else ''))
     for sid, why in rep['skipped']:
         print('SKIP %s: %s' % (sid, why))
     return 2 if rep['skipped'] else 0

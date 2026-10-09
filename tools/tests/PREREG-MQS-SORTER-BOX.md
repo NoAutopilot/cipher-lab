@@ -34,3 +34,11 @@ signs.tsv). Shelf grade for the person-facing feature is therefore at most `weak
 recall of missed signs by a person. A person-run known answer exists for later: Birago no.87 has 8 boxes aligned `1:2` to
 BENCHMARK-TX truth (one box, two clerk letters; `ciphers/nevers-birago-fr3251-1572/atlas/no87_box_token.tsv`), i.e. real merged
 boxes; and 26 `2:1` (one sign cut as two boxes). Named, not run here.
+
+## Result (appended after the run, 9 Oct 2026; the text above is unchanged since a49219a1)
+
+`python3 tools/tests/mqs_sorter_box_control.py` -> `RESULTS-MQS-SORTER-BOX.tsv`: coverage known 0.998 (min 0.958, seed 10: one
+split-off rest, which spans the inter-sign gap by the page's rule, fell under IoU 0.5), off null 0.833 (every seed), misplaced null
+0.837 (0.833-0.875); above both nulls 20/20; gate PASS. Apply exit 0 on every seed, 24 final boxes. One detail of the simulation
+not spelled out above: on a split the person drags only the right edge, so the kept part's left edge stays the merged box's own
+when the jitter would put it within 3 px of it. Shelf grade `weak` as pre-registered (no person measured).

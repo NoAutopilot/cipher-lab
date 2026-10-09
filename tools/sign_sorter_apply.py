@@ -42,6 +42,12 @@ corners moved one by one) and mask [{r, pts}] (brush strokes over a neighbour's 
 JSON, and new_x .. new_h are then the quad's bounding box. An old {x, y, w, h} doc leaves both cells empty. A recut tile
 keeps its pile and status here; tools/sorter_apply_recuts.py re-crops it and updates signs.tsv. No recuts saved: no file
 is written.
+Added boxes (MQS-SORTER-BOX, 9 Oct 2026): DIR/added/*.json ({id, from, kind, page, x, y, w, h, quad, mask, at}; kind 'missed' = a sign
+the machine boxing left out, 'split' = the rest of a box that held two signs; id = <from tile>+<n>) are written to added.tsv
+beside --out (or --added-out): id, from, kind, page, x y w h, at, quad, mask (same pixels and JSON as recuts.tsv). They carry no
+label and are not rows of --out: tools/sorter_apply_recuts.py --added cuts them and appends them to signs.tsv, and the next page
+build piles them. Catches: a person's added or split-off box reaching signs.tsv. Must NOT: give an added box a sign, or list a doc
+whose `from` tile is not in --labels (an added box from another page's save) -- it is dropped and counted in summary added_dropped.
 Mode column (MQS-SORTER, 9 Oct 2026; TRANSCRIPTION.md blind first). Every exported row carries `mode`, `blind` or `keyed`. `keyed` when
 the page was built non-blind (--page PAGE.html: its embedded DATA.mode) or when the key family's `nonblind_shown` date in
 tools/data/sorter_families.tsv (--key-family NAME) is on or before the sort's start (--sort-start YYYY-MM-DD, default the
@@ -206,6 +212,27 @@ def recut_rows(docs):
     return sorted(out)
 
 
+ADDED_COLS = ['id', 'from', 'kind', 'page', 'x', 'y', 'w', 'h', 'at', 'quad', 'mask']
+
+
+def added_rows(docs, known=None):
+    """db 'added' documents -> (added.tsv rows sorted by id, dropped count). A doc needs id, from (a known tile when `known` is
+    given) and a quad or a full {x, y, w, h}; kind is 'split' or 'missed' (anything else reads 'missed')."""
+    out, drop = [], 0
+    for d in docs:
+        q, b = doc_quad(d), [d.get(k) for k in ('x', 'y', 'w', 'h')]
+        if q:
+            xs, ys = [p[0] for p in q], [p[1] for p in q]
+            l, t = int(round(min(xs))), int(round(min(ys)))
+            b = [l, t, int(round(max(xs))) - l, int(round(max(ys))) - t]
+        if not d.get('id') or not d.get('from') or (known is not None and d['from'] not in known) or not all(num(v) for v in b):
+            drop += 1; continue
+        m = doc_mask(d)
+        out.append([d['id'], d['from'], 'split' if d.get('kind') == 'split' else 'missed', d.get('page', '')] + [int(round(v)) for v in b]
+                   + [d.get('at', ''), json.dumps(q, separators=(',', ':')) if q else '', json.dumps(m, separators=(',', ':')) if m else ''])
+    return sorted(out), drop
+
+
 def page_data(path):
     """The DATA object embedded in a sign_sorter page (JSON after `const DATA = `), or {} when it cannot be read."""
     try:
@@ -239,6 +266,7 @@ def main(argv=None):
     ap.add_argument('--atlas-out', help='write the updated atlas labels here instead of in place')
     ap.add_argument('--source', default='', help='one line for the atlas sorter_log (which page, which letter)')
     ap.add_argument('--recuts-out', help='where to write the fixed cuts (default: recuts.tsv beside --out; only when any were saved)')
+    ap.add_argument('--added-out', help='where to write the added boxes (default: added.tsv beside --out; only when any were saved)')
     ap.add_argument('--page', help='the sorter page HTML: its embedded mode (blind/keyed) goes into the mode column')
     ap.add_argument('--key-family', help='key family (tools/data/sorter_families.tsv) for the mode column')
     ap.add_argument('--sort-start', help='YYYY-MM-DD the sort began (default: earliest `updated` stamp in the db documents)')
@@ -277,9 +305,17 @@ def main(argv=None):
         with open(rp, 'w', newline='') as f:
             w = csv.writer(f, delimiter='\t'); w.writerow(RECUT_COLS); w.writerows(rc)
         summary['recuts'] = len(rc)
+    ad, adrop = added_rows(load(a.db, 'added'), {r['sid'] for r in labels})
+    if ad:
+        ap_ = a.added_out or os.path.join(os.path.dirname(os.path.abspath(a.out)), 'added.tsv')
+        with open(ap_, 'w', newline='') as f:
+            w = csv.writer(f, delimiter='\t'); w.writerow(ADDED_COLS); w.writerows(ad)
+        summary['added'] = len(ad)
+    if adrop:
+        summary['added_dropped'] = adrop
     if a.summary:
         json.dump(summary, open(a.summary, 'w'), indent=1)
-    print(json.dumps({k: summary[k] for k in ('tiles', 'mode', 'by_status', 'signs_before', 'signs_after', 'atlas', 'recuts') if k in summary}))
+    print(json.dumps({k: summary[k] for k in ('tiles', 'mode', 'by_status', 'signs_before', 'signs_after', 'atlas', 'recuts', 'added', 'added_dropped') if k in summary}))
 
 
 if __name__ == '__main__':

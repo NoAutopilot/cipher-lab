@@ -1,5 +1,5 @@
 <!doctype html>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-09.3"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-09.4"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
 <title>__TITLE__</title>
 <style>
 /* Layout: a sorting bench in two steps (owner, 3 Oct 2026). Step 1: clean each pile -- tap a sign that does not belong
@@ -362,10 +362,13 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
     <div class="row" id="ctxFixRow"><button type="button" id="ctxFix" aria-pressed="false">Fix the cut</button><span class="hint" id="fixState"></span></div>
     <div id="fixBox" hidden role="group" aria-label="Fix the cut">
       <div class="row"><button type="button" id="fixSave">Save cut (Enter)</button><button type="button" id="fixCancel">Cancel</button><button type="button" id="fixReset" hidden>Back to the first cut</button></div>
+      <div class="row"><button type="button" id="fixAdd">Add as a missed sign</button><button type="button" id="fixSplit">Split: keep this part, add the rest</button><span class="hint" id="fixAddN"></span></div>
       <details id="fixHelp" open><summary class="hint">How to fix a cut</summary><p class="hint" style="margin:0">Drag an edge of the box, or drag inside it to move the whole box. Drag a round corner handle to move that corner alone
         (a slanted or uneven box for a wide looped sign). On a phone, the arrows move one edge or the chosen corner 2 pixels a tap.
         "Erase stray ink": paint over a neighbour's ink inside the box and it is left out of the tile (shown as paper); "Undo stroke" takes back the last stroke.
-        One tile is one box (no "split here"): if the box holds two signs, fit it to the first sign and mark the second with "Bad cut" as now.</p></details>
+        A sign with no tile of its own: move the box onto it and press "Add as a missed sign" (this tile's cut stays as it was).
+        A box that holds two signs: fit it to one of them and press "Split: keep this part, add the rest"; the rest of the box becomes a sign of its own.
+        Added signs get a pile on the next page build; Undo takes one back.</p></details>
       <div class="nudges">
         <span>Left edge <button type="button" id="fixLm" aria-label="Left edge further left">&#9664;</button><button type="button" id="fixLp" aria-label="Left edge further right">&#9654;</button></span>
         <span>Right edge <button type="button" id="fixRm" aria-label="Right edge further left">&#9664;</button><button type="button" id="fixRp" aria-label="Right edge further right">&#9654;</button></span>
@@ -411,9 +414,11 @@ const recuts = {};       // sid -> {x, y, w, h, quad?, mask?, old: [x, y, w, h],
                          // 'recuts'); quad = four corners TL TR BR BL, mask = brush strokes [{r, pts}] (SORTER-QUAD), x y w h then the quad's bounds
 let fix = null;          // while "Fix the cut" is on: {sid, box: the quad's bounds [x, y, w, h], quad: [[x, y]] x 4 being edited, mask: strokes,
                          // brush: "Erase stray ink" on, anchor: the box the view is centred on}
+const added = {};        // id -> {id, from: sid, kind: 'missed'|'split', page, x, y, w, h, quad, mask, at}: a box the person added (MQS-SORTER-BOX,
+                         // 9 Oct 2026; db collection 'added'): a missed sign, or the rest of a split box; it gets a tile on the next page build
 const recutImg = {};     // sid -> data URL of the tile redrawn from its line at the fixed box
 const checked = {};      // sid -> pile the person confirmed it belongs to ("Right pile: keep it"; db collection 'checked')
-let col = null, mcol = null, ncol = null, kcol = null, rcol = null;
+let col = null, mcol = null, ncol = null, kcol = null, rcol = null, acol = null;
 const SPECIAL = new Set(['BAD-CUT', 'NOT-LETTER']);   // page-made piles that are not signs
 // Questions start in the tray (template 2026-10-09.1; owner, 9 Oct 2026, Harley 287: "Idk what to do with this pile. If they were
 // already taken out I could put them in piles"). With OPTS.focusToTray the "Check these first" tiles (and "Most useful first")
@@ -1075,10 +1080,11 @@ function undo(){
   if (last.cluster){ if (last.prevDec) clusterDec[last.cluster] = last.prevDec; else delete clusterDec[last.cluster]; saveCluster(last.cluster); }
   (last.checks || []).forEach(([sid, prev]) => { if (prev) checked[sid] = prev; else delete checked[sid]; saveCheck(sid); });
   if (last.recut){ const [sid, prev] = last.recut; setRecut(sid, prev); saveRecut(sid); }
+  if (last.added){ delete added[last.added]; saveAdded(last.added); addedUi(); }
   if (last.length === 1 && where(last[0][0]) === 'OUT') s2Cur = last[0][0];   // step 2: the undone sign is shown again
   if (last.checks && last.checks.length === 1 && where(last.checks[0][0]) === 'OUT') s2Cur = last.checks[0][0];   // an undone keep of a question tile: back in the tray
   updateUndo();
-  note_(last.recut ? 'Undid the fixed cut of ' + last.recut[0] + '.' : last.checks ? 'Undid "keep" for ' + last.checks[0][0] : 'Undid the last step (' + last.length + (last.length === 1 ? ' tile)' : ' tiles)'));
+  note_(last.added ? 'Undid the added sign ' + last.added + '.' : last.recut ? 'Undid the fixed cut of ' + last.recut[0] + '.' : last.checks ? 'Undid "keep" for ' + last.checks[0][0] : 'Undid the last step (' + last.length + (last.length === 1 ? ' tile)' : ' tiles)'));
   if (step === 2) $('s2Msg').textContent = 'Undid the last step.';
   render();
   return last;
@@ -1193,7 +1199,11 @@ function saveRecut(sid){
     const body = {sid, page: itemBySid[sid].p, x: r.x, y: r.y, w: r.w, h: r.h, old: r.old.slice(), at: r.at};   // x y w h kept: older pages and tools read them
     if (r.quad){ body.quad = r.quad.map(p => p.slice()); body.mask = (r.mask || []).map(st => ({r: st.r, pts: st.pts.map(p => p.slice())})); }
     return rcol.doc(key(sid)).set(body); }); }
-function persistLocal(){ try { localStorage.setItem('sorter:all', JSON.stringify({state, moves, newPiles, clusterDec, checked, outAt, recuts})); } catch(e){} }
+function saveAdded(id){
+  track('a/' + id, () => { const a = added[id]; if (!a) return acol.doc(key(id)).delete();
+    return acol.doc(key(id)).set({id, from: a.from, kind: a.kind, page: a.page, x: a.x, y: a.y, w: a.w, h: a.h, quad: a.quad.map(p => p.slice()),
+      mask: (a.mask || []).map(st => ({r: st.r, pts: st.pts.map(p => p.slice())})), at: a.at}); }); }
+function persistLocal(){ try { localStorage.setItem('sorter:all', JSON.stringify({state, moves, newPiles, clusterDec, checked, outAt, recuts, added})); } catch(e){} }
 
 // ---- the larger view: a tile on its line
 let ctxSid = null, ctxPid = null;
@@ -1337,7 +1347,8 @@ function drawRegion(sid, c, z, alive){
 // ---- Fix the cut (owner, 4 Oct 2026, on Longlee tile f101v_L03_04: "I can nudge the 'bad cut' to be good cuts"). In the larger
 // view the bracket box becomes a box to drag (an edge, or the whole box; mouse and touch) or to nudge 2 source pixels a tap.
 // Saved in db collection 'recuts' (doc id = tile id) in the source line-image pixels of it.b; the tile keeps its pile, gets a
-// "recut" badge, and its thumbnail is redrawn from the line at the new box. One tile = one box: no "split here".
+// "recut" badge, and its thumbnail is redrawn from the line at the new box. A box holding two signs is split, and a sign with no box
+// is added, from the same editor (MQS-SORTER-BOX, below).
 const NUDGE = 2, MINB = 3;
 // Free corners and stray ink (SORTER-QUAD, owner 5 Oct 2026: on a wide looped sign the sheared box could not cover the sign
 // without a neighbour's ink). The box being edited is a quadrilateral, corners TL TR BR BL in strip pixels: an edge drag or nudge
@@ -1450,7 +1461,7 @@ function fixUi(on){
   $('ctxCv').classList.toggle('editing', on); if (on){ $('ctxPrev').disabled = true; $('ctxNext').disabled = true; }
   $('fixReset').hidden = !(on && recuts[ctxSid]); fixInfo(); brushUi();
 }
-function fixInfo(){ const sid = ctxSid; if (!sid) return; const b = fix ? fix.box : boxOf(sid), o = itemBySid[sid].b;
+function fixInfo(){ const sid = ctxSid; if (!sid) return; addedUi(); const b = fix ? fix.box : boxOf(sid), o = itemBySid[sid].b;
   $('fixState').textContent = fix ? 'Box ' + b[2] + ' × ' + b[3] + ' px at ' + b[0] + ', ' + b[1] + (isRect(fix.quad) ? '' : ', corners moved')
       + (recuts[sid] || b.join() !== o.join() ? ' (first cut ' + o[2] + ' × ' + o[3] + ' at ' + o[0] + ', ' + o[1] + ')' : '')
     : recuts[sid] ? 'This tile’s cut was fixed by hand.' : ''; }
@@ -1504,6 +1515,35 @@ $('fixSave').onclick = () => {
     m.append(u); }
   showCtx(sid, pileOf(sid), true);
 };
+// ---- Add a missed sign / split a merged box (MQS-SORTER-BOX, 9 Oct 2026; research/MARY-STUART-TALK-2026-10-09.tsv M07, the CTTS
+// transcriber's "box each symbol"). Both reuse the Fix-the-cut box. "Add as a missed sign": the box as edited is saved as an added
+// box (db collection 'added', doc id = <tile>+<n>), the tile's own cut unchanged. "Split": the edited box is saved as the tile's cut
+// (as "Save cut" does) and the part of the box the edit started from beyond the edited box -- right of its right edge, or left of its
+// left edge, whichever is wider -- is saved as an added box of kind 'split'. Boxes are in the tile's strip pixels, as recuts.
+// tools/sign_sorter_apply.py writes them to added.tsv and tools/sorter_apply_recuts.py --added cuts them and adds them to signs.tsv.
+function addedFromDoc(d){
+  const q = Array.isArray(d.quad) && d.quad.length === 4 && d.quad.every(p => Array.isArray(p) && p.length === 2 && p.every(isNum)) ? d.quad.map(p => p.slice()) : null;
+  const b = q ? quadBox(q) : [d.x, d.y, d.w, d.h]; if (!b.every(isNum) || !d.id || !d.from) return null;
+  return {id: d.id, from: d.from, kind: d.kind === 'split' ? 'split' : 'missed', page: d.page || (itemBySid[d.from] || {}).p || '', x: b[0], y: b[1], w: b[2], h: b[3],
+    quad: q || rectQuad(b), mask: Array.isArray(d.mask) ? d.mask : [], at: d.at || ''}; }
+function addedUi(){ const el = $('fixAddN'); if (!el) return; const sid = ctxSid, mine = Object.values(added).filter(a => a.from === sid);
+  el.textContent = mine.length ? (mine.length === 1 ? '1 sign' : mine.length + ' signs') + ' added from this tile: ' + mine.map(a => a.id + (a.kind === 'split' ? ' (split)' : '')).join(', ') : ''; }
+function addBox(sid, q, mk, kind){ let n = 1; while (added[sid + '+' + n]) n++; const id = sid + '+' + n, b = quadBox(q);
+  added[id] = {id, from: sid, kind, page: itemBySid[sid].p, x: b[0], y: b[1], w: b[2], h: b[3], quad: q.map(p => p.slice()), mask: mk, at: stamp()};
+  saveAdded(id); addedUi(); return id; }
+function splitRest(anchor, q){ const [x0, y0, w0, h0] = anchor, [l, , r] = edgesOf(q), right = x0 + w0 - r, left = l - x0;
+  if (Math.max(right, left) < MINB) return null;
+  return right >= left ? rectQuad([r, y0, right, h0]) : rectQuad([x0, y0, left, h0]); }
+$('fixAdd').onclick = () => {
+  if (!fix) return; const sid = fix.sid, q = fix.quad.map(p => p.slice()), mk = fix.mask.map(st => ({r: st.r, pts: st.pts.map(p => p.slice())})); fixStop();
+  const id = addBox(sid, q, mk, 'missed'), e = []; e.added = id; history.push(e); if (history.length > 200) history.shift(); updateUndo();
+  showCtx(sid, pileOf(sid), true); $('ctxMsg').textContent = 'Added ' + id + ' as a missed sign beside ' + sid + ' (its cut is unchanged). It gets a pile on the next page build; Undo takes it back.'; };
+$('fixSplit').onclick = () => {
+  if (!fix) return; const sid = fix.sid, q = fix.quad.map(p => p.slice()), rest = splitRest(fix.anchor, q);
+  if (!rest){ $('fixState').textContent += ' (nothing left to split off: make the box narrower first)'; return; }
+  $('fixSave').onclick();   // the kept part: saved as the tile's cut, with its own Undo step
+  const id = addBox(sid, rest, [], 'split'), e = []; e.added = id; history.push(e); if (history.length > 200) history.shift(); updateUndo();
+  $('ctxMsg').textContent = 'Split ' + sid + ': kept the part you fitted, added the rest as ' + id + '. Undo twice takes both back.'; };
 (function(){   // drag an edge, a corner or the whole box, or paint stray ink, on the line canvas (pointer events: mouse, pen and touch; no page scroll while editing)
   const c = $('ctxC'); let d = null;
   const at = e => { const m = c._map, r = c.getBoundingClientRect(); const px = (e.clientX - r.left) * m.k, py = (e.clientY - r.top) * m.k;
@@ -1743,15 +1783,15 @@ updateUndo();
   const el = saveEl();
   if (!db){
     // no store: keep choices in this browser; what the person did before this answer wins over the stored copy
-    const mine = {moves: {...moves}, state: {...state}, newPiles: {...newPiles}, clusterDec: {...clusterDec}, checked: {...checked}, recuts: {...recuts}};
+    const mine = {moves: {...moves}, state: {...state}, newPiles: {...newPiles}, clusterDec: {...clusterDec}, checked: {...checked}, recuts: {...recuts}, added: {...added}};
     const touched = Object.keys(writers);
-    try { const v = JSON.parse(localStorage.getItem('sorter:all') || 'null'); if (v){ Object.assign(state, v.state || {}); Object.assign(moves, v.moves || {}); Object.assign(newPiles, v.newPiles || {}); Object.assign(clusterDec, v.clusterDec || {}); Object.assign(checked, v.checked || {}); Object.assign(outAt, v.outAt || {}); Object.assign(recuts, v.recuts || {}); } } catch(e){}
+    try { const v = JSON.parse(localStorage.getItem('sorter:all') || 'null'); if (v){ Object.assign(state, v.state || {}); Object.assign(moves, v.moves || {}); Object.assign(newPiles, v.newPiles || {}); Object.assign(clusterDec, v.clusterDec || {}); Object.assign(checked, v.checked || {}); Object.assign(outAt, v.outAt || {}); Object.assign(recuts, v.recuts || {}); Object.assign(added, v.added || {}); } } catch(e){}
     touched.forEach(p => { const [k, id] = [p.slice(0, 1), p.slice(2)];
-      const pair = {m: [moves, mine.moves], p: [state, mine.state], n: [newPiles, mine.newPiles], c: [clusterDec, mine.clusterDec], k: [checked, mine.checked], r: [recuts, mine.recuts]}[k];
+      const pair = {m: [moves, mine.moves], p: [state, mine.state], n: [newPiles, mine.newPiles], c: [clusterDec, mine.clusterDec], k: [checked, mine.checked], r: [recuts, mine.recuts], a: [added, mine.added]}[k];
       if (!pair) return; if (id in pair[1]) pair[0][id] = pair[1][id]; else delete pair[0][id]; });
     dbMode = 'local'; touched.forEach(p => { delete writers[p]; delete inflight[p]; }); persistLocal(); status(); setReady();
     Object.keys(recuts).forEach(s => { const r = itemBySid[s] && recutFromDoc({...recuts[s], sid: s}); if (r){ recuts[s] = r; makeRecutImg(s); } else delete recuts[s]; }); return; }
-  col = db.collection('piles'); mcol = db.collection('moves'); ncol = db.collection('newpiles'); ccol = db.collection('clusters'); kcol = db.collection('checked'); rcol = db.collection('recuts');
+  col = db.collection('piles'); mcol = db.collection('moves'); ncol = db.collection('newpiles'); ccol = db.collection('clusters'); kcol = db.collection('checked'); rcol = db.collection('recuts'); acol = db.collection('added');
   dbMode = 'db';
   const held = Object.keys(writers);
   el.textContent = 'Connected. Choices save as you go.'; el.className = 'save';
@@ -1772,5 +1812,6 @@ updateUndo();
   listen(ccol, d => d.cluster && 'c/' + d.cluster, (t, d) => { if (t === 'removed') delete clusterDec[d.cluster]; else clusterDec[d.cluster] = {to: d.to, from_sid: d.from_sid, n: d.n}; return false; });
   listen(kcol, d => d.sid && itemBySid[d.sid] && 'k/' + d.sid, (t, d) => { if (t === 'removed') delete checked[d.sid]; else checked[d.sid] = d.pile; }, 'checked');
   listen(rcol, d => d.sid && itemBySid[d.sid] && 'r/' + d.sid, (t, d) => setRecut(d.sid, t === 'removed' ? null : recutFromDoc(d))); 
+  listen(acol, d => d.id && d.from && itemBySid[d.from] && 'a/' + d.id, (t, d) => { if (t === 'removed') delete added[d.id]; else { const a = addedFromDoc(d); if (a) added[d.id] = a; } addedUi(); return false; });
 })();
 </script>
