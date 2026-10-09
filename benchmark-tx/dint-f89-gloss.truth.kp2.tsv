@@ -1,0 +1,576 @@
+# align agrees 349/573 = 0.609; GAPS4 control: rebuilt key matched 0.525 vs 200 value-shuffled keys mean 0.047 max 0.105, rank 1 of 201; leaf key 38 signs (13 pass count>=2 agree>=0.75 single letter), key_print overlap 25, agree 21
+# variant kp2 (benchmark-tx/truth_variant.py, PREREG-txeng2-3 R2): 573 positions, 249 scored, excluded {'excluded:align-uncertain': 174, 'excluded:letter-no-keyprint-sign': 10, 'excluded:gloss-unread': 110, 'excluded:multi-letter': 3, 'excluded:unaligned': 27}
+line	pos	ref_sign	truth	plain	status	flag	align_status
+f89_L01	1	sq	sq	s	scored		agrees
+f89_L01	2	0	.|0|1|o	e	scored		agrees
+f89_L01	3	z		m	excluded:align-uncertain		agrees
+f89_L01	4	m		b	excluded:letter-no-keyprint-sign		conflict:u
+f89_L01	5	4		l	excluded:align-uncertain		agrees
+f89_L01	6	1		e	excluded:align-uncertain		agrees
+f89_L01	7	a		?	excluded:gloss-unread		conflict:q
+f89_L01	8	a		?	excluded:gloss-unread		conflict:q
+f89_L01	9	c		?	excluded:gloss-unread		conflict:r
+f89_L01	10	0		?	excluded:gloss-unread		conflict:e
+f89_L01	11	4		?	excluded:gloss-unread		conflict:l
+f89_L01	12	1		par	excluded:multi-letter		conflict:e
+f89_L01	13	sq		s	excluded:align-uncertain		agrees
+f89_L01	14	X_DELTA	sq	s	scored		agrees
+f89_L01	15	v	4|v	a	scored		agrees
+f89_L01	16	w			excluded:unaligned		null-or-unaligned
+f89_L01	17	X_VSTEM		?	excluded:gloss-unread		conflict:t
+f89_L01	18	1		?	excluded:gloss-unread		conflict:e
+f89_L01	19	X_DELTA		a	excluded:align-uncertain		conflict:s
+f89_L01	20	4			excluded:unaligned		null-or-unaligned
+f89_L01	21	f			excluded:unaligned		null-or-unaligned
+f89_L01	22	sq		?	excluded:gloss-unread		conflict:s
+f89_L01	23	3		d	excluded:align-uncertain		agrees
+f89_L01	24	0'	.|0|1|o	e	scored		agrees
+f89_L01	25	+	4	l	scored		agrees
+f89_L01	26	v	4|v	a	scored		agrees
+f89_L01	27	4		l	excluded:align-uncertain		agrees
+f89_L01	28	1	1|L|p	i	scored		conflict:e
+f89_L01	29	9		g	excluded:align-uncertain		single
+f89_L01	30	m	a|m	u	scored		agrees
+f89_L01	31	0	.|0|1|o	e	scored		agrees
+f89_L01	32	sq	sq	s	scored		agrees
+f89_L01	33	x		f	excluded:letter-no-keyprint-sign		single
+f89_L01	34	4			excluded:unaligned		null-or-unaligned
+f89_L01	35	y	y	o	scored		agrees
+f89_L01	36	c		r	excluded:align-uncertain		agrees
+f89_L01	37	m		t	excluded:align-uncertain		conflict:u
+f89_L01	38	1		?	excluded:gloss-unread		conflict:e
+f89_L01	39	4		f	excluded:letter-no-keyprint-sign		conflict:l
+f89_L01	40	p		i	excluded:align-uncertain		agrees
+f89_L01	41	0'	.|0|1|o	e	scored		agrees
+f89_L01	42	X_4BAR	f|r	n	scored		agrees
+f89_L01	43	X_VSTEM	m|v	t	scored		agrees
+f89_L01	44	3	#|3	d	scored		agrees
+f89_L01	45	0		e	excluded:align-uncertain		agrees
+f89_L01	46	1	1|L|p	i	scored		conflict:e
+f89_L01	47	y		o	excluded:align-uncertain		agrees
+f89_L01	48	m'	a|m	u	scored		single
+f89_L01	49	w'	c|w	r	scored		single
+f89_L01	50	v		a	excluded:align-uncertain		agrees
+f89_L01	51	4	4|v	a	scored		conflict:l
+f89_L01	52	m		u	excluded:align-uncertain		agrees
+f89_L01	53	z	m|v	t	scored		conflict:m
+f89_L01	54	c		r	excluded:align-uncertain		agrees
+f89_L01	55	0	.|0|1|o	e	scored		agrees
+f89_L02	1	1	1|L|p	i	scored		conflict:e
+f89_L02	2	X_4BAR		n	excluded:align-uncertain		agrees
+f89_L02	3	sq	sq	s	scored		agrees
+f89_L02	4	y	y	o	scored		agrees
+f89_L02	5	c		r	excluded:align-uncertain		agrees
+f89_L02	6	m	m|v	t	scored		conflict:u
+f89_L02	7	1		e	excluded:align-uncertain		agrees
+f89_L02	8	a	a	q	scored		agrees
+f89_L02	9	m		u	excluded:align-uncertain		agrees
+f89_L02	10	X_8		?	excluded:gloss-unread		conflict:
+f89_L02	11	X_DELTA		?	excluded:gloss-unread		conflict:s
+f89_L02	12	p		?	excluded:gloss-unread		conflict:i
+f89_L02	13	4		?	excluded:gloss-unread		conflict:l
+f89_L02	14	p		?	excluded:gloss-unread		conflict:i
+f89_L02	15	X_DELTA		?	excluded:gloss-unread		conflict:s
+f89_L02	16	y		o	excluded:align-uncertain		agrees
+f89_L02	17	m	a|m	u	scored		agrees
+f89_L02	18	c	c|w	r	scored		agrees
+f89_L02	19	a'			excluded:unaligned		null-or-unaligned
+f89_L02	20	X_4BAR		vo	excluded:multi-letter		conflict:n
+f89_L02	21	1		i	excluded:align-uncertain		conflict:e
+f89_L02	22	w		r	excluded:align-uncertain		agrees
+f89_L02	23	X_DELTA		?	excluded:gloss-unread		conflict:s
+f89_L02	24	c		r	excluded:align-uncertain		agrees
+f89_L02	25	y	y	o	scored		agrees
+f89_L02	26	z		m	excluded:align-uncertain		agrees
+f89_L02	27	m		?	excluded:gloss-unread		conflict:u
+f89_L02	28	0		?	excluded:gloss-unread		conflict:e
+f89_L02	29	z		?	excluded:gloss-unread		conflict:m
+f89_L02	30	1		?	excluded:gloss-unread		conflict:e
+f89_L02	31	f		?	excluded:gloss-unread		conflict:n
+f89_L02	32	m		?	excluded:gloss-unread		conflict:u
+f89_L02	33	p		i	excluded:align-uncertain		agrees
+f89_L02	34	4		l	excluded:align-uncertain		agrees
+f89_L02	35	L	1|L|p	y	scored		conflict:i
+f89_L02	36	v		a	excluded:align-uncertain		agrees
+f89_L02	37	v	9	g	scored		conflict:a
+f89_L02	38	L			excluded:unaligned		null-or-unaligned
+f89_L02	39	c		r	excluded:align-uncertain		agrees
+f89_L02	40	4	4|v	a	scored		conflict:l
+f89_L02	41	f		n	excluded:align-uncertain		agrees
+f89_L02	42	m		?	excluded:gloss-unread		conflict:u
+f89_L02	43	#		d	excluded:align-uncertain		conflict:c
+f89_L02	44	v		?	excluded:gloss-unread		conflict:a
+f89_L02	45	X_4BAR		?	excluded:gloss-unread		conflict:n
+f89_L02	46	9		?	excluded:gloss-unread		conflict:g
+f89_L02	47	1		?	excluded:gloss-unread		conflict:e
+f89_L02	48	w		?	excluded:gloss-unread		conflict:r
+f89_L03	1	a	a	q	scored		agrees
+f89_L03	2	m	a|m	u	scored		agrees
+f89_L03	3	L	1|L|p	i	scored		agrees
+f89_L03	4	4		l	excluded:align-uncertain		agrees
+f89_L03	5	X_4BAR		?	excluded:gloss-unread		conflict:n
+f89_L03	6	0'		n	excluded:align-uncertain		conflict:e
+f89_L03	7	z'		ene	excluded:multi-letter		single
+f89_L03	8	sq		s	excluded:align-uncertain		agrees
+f89_L03	9	4	4|v	a	scored		conflict:l
+f89_L03	10	3		d	excluded:align-uncertain		agrees
+f89_L03	11	m	a|m	u	scored		agrees
+f89_L03	12	p	1|L|p	i	scored		agrees
+f89_L03	13	0	.|0|1|o	e	scored		agrees
+f89_L03	14	f	f|r	n	scored		agrees
+f89_L03	15	X_4BAR	f|r	n	scored		agrees
+f89_L03	16	1	.|0|1|o	e	scored		agrees
+f89_L03	17	3	#|3	d	scored		agrees
+f89_L03	18	0		e	excluded:align-uncertain		agrees
+f89_L03	19	#		?	excluded:gloss-unread		conflict:c
+f89_L03	20	1		e	excluded:align-uncertain		agrees
+f89_L03	21	sq		s	excluded:align-uncertain		agrees
+f89_L03	22	m	m|v	t	scored		conflict:u
+f89_L03	23	1		e	excluded:align-uncertain		agrees
+f89_L03	24	X_DELTA		?	excluded:gloss-unread		conflict:s
+f89_L03	25	4		l	excluded:align-uncertain		agrees
+f89_L03	26	v	4|v	a	scored		agrees
+f89_L03	27	#	#	c	scored		agrees
+f89_L03	28	0			excluded:unaligned		null-or-unaligned
+f89_L03	29	X_COMMA	.|0|1|o	e	scored		single
+f89_L03	30	4	4	l	scored		agrees
+f89_L03	31	1	.|0|1|o	e	scored		agrees
+f89_L03	32	sq	sq	s	scored		agrees
+f89_L03	33	L	1|L|p	i	scored		agrees
+f89_L03	34	0		e	excluded:align-uncertain		agrees
+f89_L03	35	a	a|m	u	scored		conflict:q
+f89_L03	36	w		r	excluded:align-uncertain		agrees
+f89_L03	37	4	4	l	scored		agrees
+f89_L03	38	0	.|0|1|o	e	scored		agrees
+f89_L03	39	#	#	c	scored		agrees
+f89_L03	40	T	4|v	a	scored		agrees
+f89_L03	41	v'	sq	s	scored		single
+f89_L03	42	sq			excluded:unaligned		null-or-unaligned
+f89_L03	43	m	m|v	t	scored		conflict:u
+f89_L03	44	0		e	excluded:align-uncertain		agrees
+f89_L03	45	4			excluded:unaligned		null-or-unaligned
+f89_L03	46	+	4	l	scored		agrees
+f89_L03	47	0	.|0|1|o	e	scored		agrees
+f89_L03	48	X_VSTEM		t	excluded:align-uncertain		agrees
+f89_L03	49	0		?	excluded:gloss-unread		conflict:e
+f89_L03	50	X_4BAR		n	excluded:align-uncertain		agrees
+f89_L03	51	X_DELTA		?	excluded:gloss-unread		conflict:s
+f89_L03	52	v		a	excluded:align-uncertain		agrees
+f89_L03	53	c		r	excluded:align-uncertain		agrees
+f89_L03	54	v	m|v	t	scored		conflict:a
+f89_L03	55	L		i	excluded:align-uncertain		agrees
+f89_L03	56	m	m|v	t	scored		conflict:u
+f89_L04	1	#	#	c	scored		agrees
+f89_L04	2	y	y	o	scored		agrees
+f89_L04	3	m	a|m	u	scored		agrees
+f89_L04	4	w		r	excluded:align-uncertain		agrees
+f89_L04	5	+	1|L|p	i	scored		conflict:l
+f89_L04	6	c		r	excluded:align-uncertain		agrees
+f89_L04	7	4	4	l	scored		agrees
+f89_L04	8	0	.|0|1|o	e	scored		agrees
+f89_L04	9	X_MBASE		b	excluded:letter-no-keyprint-sign		single
+f89_L04	10	c	c|w	r	scored		agrees
+f89_L04	11	m	a|m	u	scored		agrees
+f89_L04	12	L	1|L|p	i	scored		agrees
+f89_L04	13	#		c	excluded:align-uncertain		agrees
+f89_L04	14	m	m|v	t	scored		conflict:u
+f89_L04	15	a		q	excluded:align-uncertain		agrees
+f89_L04	16	m	a|m	u	scored		agrees
+f89_L04	17	L	1|L|p	i	scored		agrees
+f89_L04	18	+	4	l	scored		agrees
+f89_L04	19	v	4|v	a	scored		agrees
+f89_L04	20	4	4	l	scored		agrees
+f89_L04	21	+	4	l	scored		agrees
+f89_L04	22	y		o	excluded:align-uncertain		agrees
+f89_L04	23	1		i	excluded:align-uncertain		conflict:e
+f89_L04	24	m		t	excluded:align-uncertain		conflict:u
+f89_L04	25	X_VSTEM		t	excluded:align-uncertain		agrees
+f89_L04	26	c	c|w	r	scored		agrees
+f89_L04	27	y	y	o	scored		agrees
+f89_L04	28	m		u	excluded:align-uncertain		agrees
+f89_L04	29	a	a|m	u	scored		conflict:q
+f89_L04	30	0		e	excluded:align-uncertain		agrees
+f89_L04	31	w	c|w	r	scored		agrees
+f89_L04	32	4	4	l	scored		agrees
+f89_L04	33	1	.|0|1|o	e	scored		agrees
+f89_L04	34	c	c|w	r	scored		agrees
+f89_L04	35	y		o	excluded:align-uncertain		agrees
+f89_L04	36	p	1|L|p	y	scored		conflict:i
+f89_L05	1	sq	sq	s	scored		agrees
+f89_L05	2	X_OCROSS		e	excluded:align-uncertain		agrees
+f89_L05	3	y		?	excluded:gloss-unread		conflict:o
+f89_L05	4	L		?	excluded:gloss-unread		conflict:i
+f89_L05	5	X_OCROSS		e	excluded:align-uncertain		agrees
+f89_L05	6	sq			excluded:unaligned		null-or-unaligned
+f89_L05	7	0		?	excluded:gloss-unread		conflict:e
+f89_L05	8	X_OCROSS		?	excluded:gloss-unread		conflict:e
+f89_L05	9	1		?	excluded:gloss-unread		conflict:e
+f89_L05	10	sq		s	excluded:align-uncertain		agrees
+f89_L05	11	m	m|v	t	scored		conflict:u
+f89_L05	12	y		o	excluded:align-uncertain		agrees
+f89_L05	13	p		?	excluded:gloss-unread		conflict:i
+f89_L05	14	X_VSTEM		t	excluded:align-uncertain		agrees
+f89_L05	15	a	a	q	scored		agrees
+f89_L05	16	m	a|m	u	scored		agrees
+f89_L05	17	0	.|0|1|o	e	scored		agrees
+f89_L05	18	sq		s	excluded:align-uncertain		agrees
+f89_L05	19	1	1|L|p	i	scored		conflict:e
+f89_L05	20	4		l	excluded:align-uncertain		agrees
+f89_L05	21	1	.|0|1|o	e	scored		agrees
+f89_L05	22	w	c|w	r	scored		agrees
+f89_L05	23	y		o	excluded:align-uncertain		agrees
+f89_L05	24	L	1|L|p	y	scored		conflict:i
+f89_L05	25	0		e	excluded:align-uncertain		agrees
+f89_L05	26	m	a|m	u	scored		agrees
+f89_L05	27	sq		s	excluded:align-uncertain		agrees
+f89_L05	28	m		t	excluded:align-uncertain		conflict:u
+f89_L05	29	a		v	excluded:align-uncertain		conflict:q
+f89_L05	30	y		o	excluded:align-uncertain		agrees
+f89_L05	31	+		l	excluded:align-uncertain		agrees
+f89_L05	32	a		u	excluded:align-uncertain		conflict:q
+f89_L05	33	1		?	excluded:gloss-unread		conflict:e
+f89_L05	34	sq		s	excluded:align-uncertain		agrees
+f89_L05	35	X_VSTEM		t	excluded:align-uncertain		agrees
+f89_L05	36	9		?	excluded:gloss-unread		conflict:g
+f89_L05	37	X_HBAR		p	excluded:letter-no-keyprint-sign		agrees
+f89_L05	38	4	4	l	scored		agrees
+f89_L05	39	v	4|v	a	scored		agrees
+f89_L05	40	sq	sq	s	scored		agrees
+f89_L05	41	X_OCROSS			excluded:unaligned		null-or-unaligned
+f89_L05	42	1			excluded:unaligned		null-or-unaligned
+f89_L05	43	sq		s	excluded:align-uncertain		agrees
+f89_L05	44	1		?	excluded:gloss-unread		conflict:e
+f89_L05	45	#		?	excluded:gloss-unread		conflict:c
+f89_L05	46	p		?	excluded:gloss-unread		conflict:i
+f89_L06	1	f			excluded:unaligned		null-or-unaligned
+f89_L06	2	T	4|v	a	scored		agrees
+f89_L06	3	w	c|w	r	scored		agrees
+f89_L06	4	0			excluded:unaligned		null-or-unaligned
+f89_L06	5	X_DELTA	c|w	r	scored		conflict:s
+f89_L06	6	v		a	excluded:align-uncertain		agrees
+f89_L06	7	sq	sq	s	scored		agrees
+f89_L06	8	X_DELTA			excluded:unaligned		null-or-unaligned
+f89_L06	9	v		?	excluded:gloss-unread		conflict:a
+f89_L06	10	4		f	excluded:letter-no-keyprint-sign		conflict:l
+f89_L06	11	y		o	excluded:align-uncertain		agrees
+f89_L06	12	w		r	excluded:align-uncertain		agrees
+f89_L06	13	m	m|v	t	scored		conflict:u
+f89_L06	14	X_HBAR		p	excluded:letter-no-keyprint-sign		agrees
+f89_L06	15	c	c|w	r	scored		agrees
+f89_L06	16	X_CTAIL		o	excluded:align-uncertain		single
+f89_L06	17	#		?	excluded:gloss-unread		conflict:c
+f89_L06	18	T		?	excluded:gloss-unread		conflict:a
+f89_L06	19	1		e	excluded:align-uncertain		agrees
+f89_L06	20	3	#|3	d	scored		agrees
+f89_L06	21	0	.|0|1|o	e	scored		agrees
+f89_L06	22	4		l	excluded:align-uncertain		agrees
+f89_L06	23	4	4|v	a	scored		conflict:l
+f89_L06	24	m		v	excluded:align-uncertain		agrees
+f89_L06	25	L	1|L|p	i	scored		agrees
+f89_L06	26	4	4	l	scored		agrees
+f89_L06	27	+	4	l	scored		agrees
+f89_L06	28	0	.|0|1|o	e	scored		agrees
+f89_L07	1	w	c|w	r	scored		agrees
+f89_L07	2	1		e	excluded:align-uncertain		agrees
+f89_L07	3	m	m|v	t	scored		conflict:u
+f89_L07	4	y		o	excluded:align-uncertain		agrees
+f89_L07	5	m	a|m	u	scored		agrees
+f89_L07	6	f	f|r	n	scored		agrees
+f89_L07	7	v	4|v	a	scored		agrees
+f89_L07	8	X_4BAR		n	excluded:align-uncertain		agrees
+f89_L07	9	m	m|v	t	scored		conflict:u
+f89_L07	10	0		e	excluded:align-uncertain		agrees
+f89_L07	11	f	f|r	n	scored		agrees
+f89_L07	12	4	4	l	scored		agrees
+f89_L07	13	y	y	o	scored		agrees
+f89_L07	14	c			excluded:unaligned		null-or-unaligned
+f89_L07	15	w	c|w	r	scored		agrees
+f89_L07	16	v	4|v	a	scored		agrees
+f89_L07	17	p	1|L|p	i	scored		agrees
+f89_L07	18	X_4BAR	f|r	n	scored		agrees
+f89_L07	19	0			excluded:unaligned		null-or-unaligned
+f89_L07	20	y	y	o	scored		agrees
+f89_L07	21	m	a|m	u	scored		agrees
+f89_L07	22	p	1|L|p	i	scored		agrees
+f89_L07	23	4	4	l	scored		agrees
+f89_L07	24	1	.|0|1|o	e	scored		agrees
+f89_L07	25	sq		s	excluded:align-uncertain		agrees
+f89_L07	26	m	m|v	t	scored		conflict:u
+f89_L07	27	L		i	excluded:align-uncertain		agrees
+f89_L07	28	4	4	l	scored		agrees
+f89_L07	29	v		a	excluded:align-uncertain		agrees
+f89_L07	30	0		?	excluded:gloss-unread		conflict:e
+f89_L07	31	f		n	excluded:align-uncertain		agrees
+f89_L07	32	m	a|m	u	scored		agrees
+f89_L07	33	y	y	o	scored		agrees
+f89_L07	34	L		i	excluded:align-uncertain		agrees
+f89_L07	35	0		?	excluded:gloss-unread		conflict:e
+f89_L07	36	v		a	excluded:align-uncertain		agrees
+f89_L07	37	X_DELTA		s	excluded:align-uncertain		agrees
+f89_L07	38	4	4|v	a	scored		conflict:l
+f89_L07	39	Z		m	excluded:align-uncertain		agrees
+f89_L07	40	v	4|v	a	scored		agrees
+f89_L07	41	L	1|L|p	i	scored		agrees
+f89_L07	42	0			excluded:unaligned		null-or-unaligned
+f89_L07	43	sq		?	excluded:gloss-unread		conflict:s
+f89_L07	44	m		?	excluded:gloss-unread		conflict:u
+f89_L07	45	1		e	excluded:align-uncertain		agrees
+f89_L07	46	X_DELTA		?	excluded:gloss-unread		conflict:s
+f89_L07	47	y		?	excluded:gloss-unread		conflict:o
+f89_L08	1	m		?	excluded:gloss-unread		conflict:u
+f89_L08	2	c		?	excluded:gloss-unread		conflict:r
+f89_L08	3	v		a	excluded:align-uncertain		agrees
+f89_L08	4	m	a|m	u	scored		agrees
+f89_L08	5	y	y	o	scored		agrees
+f89_L08	6	L	1|L|p	i	scored		agrees
+f89_L08	7	c	c|w	r	scored		agrees
+f89_L08	8	4	4	l	scored		agrees
+f89_L08	9	0	.|0|1|o	e	scored		agrees
+f89_L08	10	#	#	c	scored		agrees
+f89_L08	11	y	y	o	scored		agrees
+f89_L08	12	Z		m	excluded:align-uncertain		agrees
+f89_L08	13	p		?	excluded:gloss-unread		conflict:i
+f89_L08	14	v		a	excluded:align-uncertain		agrees
+f89_L08	15	4	f|r	n	scored		conflict:l
+f89_L08	16	3		d	excluded:align-uncertain		agrees
+f89_L08	17	1		e	excluded:align-uncertain		agrees
+f89_L08	18	z		?	excluded:gloss-unread		conflict:m
+f89_L08	19	v		?	excluded:gloss-unread		conflict:a
+f89_L08	20	f		?	excluded:gloss-unread		conflict:n
+f89_L08	21	m		?	excluded:gloss-unread		conflict:u
+f89_L08	22	sq		s	excluded:align-uncertain		agrees
+f89_L08	23	m		u	excluded:align-uncertain		agrees
+f89_L08	24	0'		?	excluded:gloss-unread		conflict:e
+f89_L08	25	#		?	excluded:gloss-unread		conflict:c
+f89_L08	26	1		r	excluded:align-uncertain		conflict:e
+f89_L08	27	f		?	excluded:gloss-unread		conflict:n
+f89_L08	28	m		?	excluded:gloss-unread		conflict:u
+f89_L08	29	#		e	excluded:align-uncertain		conflict:c
+f89_L08	30	a'		n	excluded:align-uncertain		single
+f89_L08	31	L	m|v	t	scored		conflict:i
+f89_L08	32	w		r	excluded:align-uncertain		agrees
+f89_L08	33	v		?	excluded:gloss-unread		conflict:a
+f89_L08	34	sq		?	excluded:gloss-unread		conflict:s
+f89_L08	35	0'		?	excluded:gloss-unread		conflict:e
+f89_L08	36	0		?	excluded:gloss-unread		conflict:e
+f89_L08	37	sq		?	excluded:gloss-unread		conflict:s
+f89_L09	1	y	y	o	scored		agrees
+f89_L09	2	w	c|w	r	scored		agrees
+f89_L09	3	3	#|3	d	scored		agrees
+f89_L09	4	y		o	excluded:align-uncertain		agrees
+f89_L09	5	4	f|r	n	scored		conflict:l
+f89_L09	6	f		n	excluded:align-uncertain		agrees
+f89_L09	7	0	.|0|1|o	e	scored		agrees
+f89_L09	8	1			excluded:unaligned		null-or-unaligned
+f89_L09	9	sq	sq	s	scored		agrees
+f89_L09	10	L		i	excluded:align-uncertain		agrees
+f89_L09	11	#		?	excluded:gloss-unread		conflict:c
+f89_L09	12	p		?	excluded:gloss-unread		conflict:i
+f89_L09	13	X_FBAR		?	excluded:gloss-unread		conflict:
+f89_L09	14	y		?	excluded:gloss-unread		conflict:o
+f89_L09	15	v		a	excluded:align-uncertain		agrees
+f89_L09	16	a	a	q	scored		agrees
+f89_L09	17	m	a|m	u	scored		agrees
+f89_L09	18	y	y	o	scored		agrees
+f89_L09	19	L		i	excluded:align-uncertain		agrees
+f89_L09	20	#		?	excluded:gloss-unread		conflict:c
+f89_L09	21	0		i	excluded:align-uncertain		conflict:e
+f89_L09	22	4		l	excluded:align-uncertain		agrees
+f89_L09	23	4		a	excluded:align-uncertain		conflict:l
+f89_L09	24	m		t	excluded:align-uncertain		conflict:u
+f89_L09	25	1		e	excluded:align-uncertain		agrees
+f89_L09	26	f		n	excluded:align-uncertain		agrees
+f89_L09	27	v		?	excluded:gloss-unread		conflict:a
+f89_L09	28	4		l	excluded:align-uncertain		agrees
+f89_L09	29	0	.|0|1|o	e	scored		agrees
+f89_L09	30	c	c|w	r	scored		agrees
+f89_L09	31	1	.|0|1|o	e	scored		agrees
+f89_L09	32	z	z	m	scored		agrees
+f89_L09	33	0	.|0|1|o	e	scored		agrees
+f89_L09	34	X_ZBAR	#|3	d	scored		single
+f89_L09	35	1	.|0|1|o	e	scored		agrees
+f89_L10	1	0			excluded:unaligned		null-or-unaligned
+f89_L10	2	sq		?	excluded:gloss-unread		conflict:s
+f89_L10	3	m		?	excluded:gloss-unread		conflict:u
+f89_L10	4	3		?	excluded:gloss-unread		conflict:d
+f89_L10	5	1		?	excluded:gloss-unread		conflict:e
+f89_L10	6	o		?	excluded:gloss-unread		conflict:
+f89_L10	7	#		?	excluded:gloss-unread		conflict:c
+f89_L10	8	w		r	excluded:align-uncertain		agrees
+f89_L10	9	L	1|L|p	i	scored		agrees
+f89_L10	10	w	c|w	r	scored		agrees
+f89_L10	11	0	.|0|1|o	e	scored		agrees
+f89_L10	12	v	4|v	a	scored		agrees
+f89_L10	13	#	#	c	scored		agrees
+f89_L10	14	0	.|0|1|o	e	scored		agrees
+f89_L10	15	m		u	excluded:align-uncertain		agrees
+f89_L10	16	sq		x	excluded:letter-no-keyprint-sign		conflict:s
+f89_L10	17	3		d	excluded:align-uncertain		agrees
+f89_L10	18	0	.|0|1|o	e	scored		agrees
+f89_L10	19	#	#	c	scored		agrees
+f89_L10	20	1	.|0|1|o	e	scored		agrees
+f89_L10	21	sq		s	excluded:align-uncertain		agrees
+f89_L10	22	m		t	excluded:align-uncertain		conflict:u
+f89_L10	23	0		?	excluded:gloss-unread		conflict:e
+f89_L10	24	m		v	excluded:align-uncertain		agrees
+f89_L10	25	p	1|L|p	i	scored		agrees
+f89_L10	26	4	4	l	scored		agrees
+f89_L10	27	+	4	l	scored		agrees
+f89_L10	28	0	.|0|1|o	e	scored		agrees
+f89_L10	29	3	#|3	d	scored		agrees
+f89_L10	30	1	.|0|1|o	e	scored		agrees
+f89_L10	31	f	f|r	n	scored		agrees
+f89_L10	32	0	.|0|1|o	e	scored		agrees
+f89_L10	33	w	c|w	r	scored		agrees
+f89_L10	34	0		e	excluded:align-uncertain		agrees
+f89_L10	35	#		?	excluded:gloss-unread		conflict:c
+f89_L10	36	1		e	excluded:align-uncertain		agrees
+f89_L10	37	m	a|m	u	scored		agrees
+f89_L10	38	y	y	o	scored		agrees
+f89_L10	39	L	1|L|p	i	scored		agrees
+f89_L10	40	w	c|w	r	scored		agrees
+f89_L10	41	v	4|v	a	scored		agrees
+f89_L10	42	m	a|m	u	scored		agrees
+f89_L10	43	4		l	excluded:align-uncertain		agrees
+f89_L10	44	m	m|v	t	scored		conflict:u
+f89_L10	45	c		r	excluded:align-uncertain		agrees
+f89_L10	46	0	.|0|1|o	e	scored		agrees
+f89_L10	47	a			excluded:unaligned		null-or-unaligned
+f89_L10	48	m			excluded:unaligned		null-or-unaligned
+f89_L10	49	1			excluded:unaligned		null-or-unaligned
+f89_L11	1	Z		?	excluded:gloss-unread		conflict:m
+f89_L11	2	y		?	excluded:gloss-unread		conflict:o
+f89_L11	3	L		?	excluded:gloss-unread		conflict:i
+f89_L11	4	0'		p	excluded:letter-no-keyprint-sign		conflict:e
+f89_L11	5	y		o	excluded:align-uncertain		agrees
+f89_L11	6	m	a|m	u	scored		agrees
+f89_L11	7	c	c|w	r	scored		agrees
+f89_L11	8	#	#	c	scored		agrees
+f89_L11	9	y	y	o	scored		agrees
+f89_L11	10	z	z	m	scored		agrees
+f89_L11	11	v	4|v	a	scored		agrees
+f89_L11	12	f	f|r	n	scored		agrees
+f89_L11	13	3	#|3	d	scored		agrees
+f89_L11	14	0	.|0|1|o	e	scored		agrees
+f89_L11	15	w	c|w	r	scored		agrees
+f89_L11	16	4	4	l	scored		agrees
+f89_L11	17	1	.|0|1|o	e	scored		agrees
+f89_L11	18	sq	sq	s	scored		agrees
+f89_L11	19	#	#	c	scored		agrees
+f89_L11	20	m	a|m	u	scored		agrees
+f89_L11	21	p	1|L|p	i	scored		agrees
+f89_L11	22	w	c|w	r	scored		agrees
+f89_L11	23	v	4|v	a	scored		agrees
+f89_L11	24	sq		s	excluded:align-uncertain		agrees
+f89_L11	25	0'	sq	s	scored		conflict:e
+f89_L11	26	1		e	excluded:align-uncertain		agrees
+f89_L11	27	sq	sq	s	scored		agrees
+f89_L11	28	0	.|0|1|o	e	scored		agrees
+f89_L11	29	f		n	excluded:align-uncertain		agrees
+f89_L11	30	#		?	excluded:gloss-unread		conflict:c
+f89_L11	31	y		o	excluded:align-uncertain		agrees
+f89_L11	32	w		?	excluded:gloss-unread		conflict:r
+f89_L11	33	a		q	excluded:align-uncertain		agrees
+f89_L11	34	m	a|m	u	scored		agrees
+f89_L11	35	1	.|0|1|o	e	scored		agrees
+f89_L11	36	4	4	l	scored		agrees
+f89_L11	37	X_8			excluded:unaligned		null-or-unaligned
+f89_L12	1	0		?	excluded:gloss-unread		conflict:e
+f89_L12	2	f		?	excluded:gloss-unread		conflict:n
+f89_L12	3	v		a	excluded:align-uncertain		agrees
+f89_L12	4	L		?	excluded:gloss-unread		conflict:i
+f89_L12	5	0		e	excluded:align-uncertain		agrees
+f89_L12	6	f		n	excluded:align-uncertain		agrees
+f89_L12	7	v	m|v	t	scored		conflict:a
+f89_L12	8	4		l	excluded:align-uncertain		agrees
+f89_L12	9	0		e	excluded:align-uncertain		agrees
+f89_L12	10	m		?	excluded:gloss-unread		conflict:u
+f89_L12	11	v		t	excluded:align-uncertain		conflict:a
+f89_L12	12	c		r	excluded:align-uncertain		agrees
+f89_L12	13	1		e	excluded:align-uncertain		agrees
+f89_L12	14	sq		?	excluded:gloss-unread		conflict:s
+f89_L13	1	4	4	l	scored		agrees
+f89_L13	2	v	4|v	a	scored		agrees
+f89_L13	3	3	#|3	d	scored		agrees
+f89_L13	4	p	1|L|p	i	scored		agrees
+f89_L13	5	+	4	l	scored		agrees
+f89_L13	6	L		i	excluded:align-uncertain		agrees
+f89_L13	7	y	9	g	scored		conflict:o
+f89_L13	8	0		e	excluded:align-uncertain		agrees
+f89_L13	9	f	f|r	n	scored		agrees
+f89_L13	10	#		c	excluded:align-uncertain		agrees
+f89_L13	11	L	1|L|p	y	scored		conflict:i
+f89_L13	12	0		e	excluded:align-uncertain		agrees
+f89_L13	13	sq		s	excluded:align-uncertain		agrees
+f89_L13	14	m		t	excluded:align-uncertain		conflict:u
+f89_L13	15	w		?	excluded:gloss-unread		conflict:r
+f89_L13	16	0		?	excluded:gloss-unread		conflict:e
+f89_L13	17	a		?	excluded:gloss-unread		conflict:q
+f89_L13	18	m		?	excluded:gloss-unread		conflict:u
+f89_L13	19	p		?	excluded:gloss-unread		conflict:i
+f89_L13	20	sq		?	excluded:gloss-unread		conflict:s
+f89_L13	21	0		?	excluded:gloss-unread		conflict:e
+f89_L13	22	3		?	excluded:gloss-unread		conflict:d
+f89_L13	23	v		?	excluded:gloss-unread		conflict:a
+f89_L13	24	m		?	excluded:gloss-unread		conflict:u
+f89_L13	25	z		?	excluded:gloss-unread		conflict:m
+f89_L13	26	v		?	excluded:gloss-unread		conflict:a
+f89_L13	27	f		?	excluded:gloss-unread		conflict:n
+f89_L13	28	v		?	excluded:gloss-unread		conflict:a
+f89_L13	29	a		q	excluded:align-uncertain		agrees
+f89_L13	30	m		u	excluded:align-uncertain		agrees
+f89_L13	31	4		i	excluded:align-uncertain		conflict:l
+f89_L13	32	p		l	excluded:align-uncertain		conflict:i
+f89_L13	33	v		y	excluded:align-uncertain		conflict:a
+f89_L13	34	X_EB		a	excluded:align-uncertain		single
+f89_L13	35	X_DDAG	1|L|p	i	scored		single
+f89_L13	36	L			excluded:unaligned		null-or-unaligned
+f89_L13	37	y	y	o	scored		agrees
+f89_L13	38	m	a|m	u	scored		agrees
+f89_L13	39	w	c|w	r	scored		agrees
+f89_L13	40	sq	sq	s	scored		agrees
+f89_L13	41	a	a	q	scored		agrees
+f89_L13	42	m	a|m	u	scored		agrees
+f89_L13	43	0	.|0|1|o	e	scored		agrees
+f89_L13	44	#	#	c	scored		agrees
+f89_L13	45	1		e	excluded:align-uncertain		agrees
+f89_L13	46	4		?	excluded:gloss-unread		conflict:l
+f89_L13	47	+		?	excluded:gloss-unread		conflict:l
+f89_L13	48	a		u	excluded:align-uncertain		conflict:q
+f89_L13	49	L		y	excluded:align-uncertain		conflict:i
+f89_L13	50	a		q	excluded:align-uncertain		agrees
+f89_L13	51	m		u	excluded:align-uncertain		agrees
+f89_L13	52	1	1|L|p	i	scored		conflict:e
+f89_L13	53	+		l	excluded:align-uncertain		agrees
+f89_L14	1	0	.|0|1|o	e	scored		agrees
+f89_L14	2	f	f|r	n	scored		agrees
+f89_L14	3	m	a|m	u	scored		agrees
+f89_L14	4	y	y	o	scored		agrees
+f89_L14	5	L	1|L|p	i	scored		agrees
+f89_L14	6	1	.|0|1|o	e	scored		agrees
+f89_L14	7	v	4|v	a	scored		agrees
+f89_L14	8	X_DELTA		s	excluded:align-uncertain		agrees
+f89_L14	9	4	4|v	a	scored		conflict:l
+f89_L14	10	Z		m	excluded:align-uncertain		agrees
+f89_L14	11	v	4|v	a	scored		agrees
+f89_L14	12	L	1|L|p	i	scored		agrees
+f89_L14	13	0	.|0|1|o	e	scored		agrees
+f89_L14	14	sq		s	excluded:align-uncertain		agrees
+f89_L14	15	m	m|v	t	scored		conflict:u
+f89_L14	16	1		e	excluded:align-uncertain		agrees
+f89_L14	17	0	.|0|1|o	e	scored		agrees
+f89_L14	18	sq		s	excluded:align-uncertain		agrees
+f89_L14	19	m		t	excluded:align-uncertain		conflict:u
+f89_L14	20	0'		p	excluded:letter-no-keyprint-sign		conflict:e
+f89_L14	21	v		a	excluded:align-uncertain		agrees
+f89_L14	22	c		r	excluded:align-uncertain		agrees
+f89_L14	23	4		t	excluded:align-uncertain		conflict:l
+f89_L14	24	L		y	excluded:align-uncertain		conflict:i
+f89_L14	25	a		q	excluded:align-uncertain		agrees
+f89_L14	26	m	a|m	u	scored		agrees
+f89_L14	27	0	.|0|1|o	e	scored		agrees
+f89_L14	28	3	#|3	d	scored		agrees
+f89_L14	29	X_VSTEM			excluded:unaligned		null-or-unaligned
+f89_L14	30	L		?	excluded:gloss-unread		conflict:i
+f89_L14	31	0		e	excluded:align-uncertain		agrees
+f89_L14	32	w			excluded:unaligned		null-or-unaligned

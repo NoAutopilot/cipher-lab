@@ -1,5 +1,5 @@
 """Offline test for benchmark-tx/truth_variant.py (TXP-REBUILD, PREREG-txeng2-2 R): key_print inverse with merged reader
-labels, the keyprint/jackknife classes, and the four build scripts' --variant --check (rule 7)."""
+labels, the keyprint/kp2/jackknife classes (kp2: PREREG-txeng2-3 R2, TXP-KP2), and the four build scripts' --variant --check (rule 7)."""
 import os, subprocess, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, os.path.join(ROOT, 'benchmark-tx'))
@@ -18,6 +18,19 @@ def test_kp_inverse_merged_labels():
     assert 'B' not in S.get('a', set())             # n 1 < 3
 
 
+def test_kp2_inverse_homophone_complete():
+    S = tv.kp2_inverse(fold)                        # R2: share >= 0.3 of n, n >= 2, majority and others
+    assert '0' in S['e'] and '1' in S['e'] and '1' in S['i']   # 0: e 11/18; 1: e 3/7, i 3/7
+    assert '#' in S['c'] and '#' in S['d']          # multi-valued: c 7/13, d 6/13
+    assert 'v' in S['a'] and 'v' in S['t']          # v: a 8/13, t 5/13
+    assert '0' not in S.get('s', set())             # s 4/18 < 0.3
+    assert '+' not in S.get('l', set()) and 'B' not in S.get('a', set())   # n 1 < 2
+    assert 'm' in S['t'] and '4' in S['a']          # zh -> m (t 2/2), D -> 4 merged
+    tr = [('L1', 0, '1', 'code', '1', '', 'e', 'agrees')]
+    assert tv.keyprint_rows(tr, [('L1', 1, '0')], lambda c: '?' in c, fold, 'kp2')[0][3].split('|').count('0') == 1
+    assert '0' not in tv.keyprint_rows(tr, [('L1', 1, '0')], lambda c: '?' in c, fold)[0][3].split('|')
+
+
 def test_rows_classes():
     tr = [('L1', 0, '1', 'code', '1', '', 'e', 'agrees'), ('L1', 1, '2', 'code', '2', '', 'e', 'agrees'),
           ('L1', 2, '3', 'code', '3', '', 'z', 'conflict:x'), ('L1', 3, '4', 'code', '4', '', '?', 'agrees'),
@@ -34,11 +47,12 @@ def test_rows_classes():
 
 def test_builds_check():
     for f, v in (('build_dint-f89-gloss.py', 'keyprint'), ('build_dint-f98v-gloss.py', 'keyprint'),
-                 ('build_dint-f113-gloss.py', 'keyprint'), ('build_bir1591-f23r-gloss.py', 'jackknife')):
+                 ('build_dint-f113-gloss.py', 'keyprint'), ('build_bir1591-f23r-gloss.py', 'jackknife'),
+                 ('build_dint-f89-gloss.py', 'kp2'), ('build_dint-f98v-gloss.py', 'kp2'), ('build_dint-f113-gloss.py', 'kp2')):
         p = subprocess.run([sys.executable, os.path.join(ROOT, 'benchmark-tx', f), '--variant', v, '--check'],
                            capture_output=True, text=True)
         assert p.returncode == 0, (f, p.stdout, p.stderr)
 
 
 if __name__ == '__main__':
-    test_kp_inverse_merged_labels(); test_rows_classes(); test_builds_check(); print('ok')
+    test_kp_inverse_merged_labels(); test_kp2_inverse_homophone_complete(); test_rows_classes(); test_builds_check(); print('ok')

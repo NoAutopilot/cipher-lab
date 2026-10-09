@@ -1,0 +1,249 @@
+# align agrees 100/246 = 0.407; GAPS4 control: rebuilt key matched 0.207 vs 200 value-shuffled keys mean 0.041 max 0.104, rank 1 of 201
+# variant kp2 (benchmark-tx/truth_variant.py, PREREG-txeng2-3 R2): 246 positions, 76 scored, excluded {'excluded:unaligned': 70, 'excluded:align-uncertain': 64, 'excluded:multi-letter': 15, 'excluded:letter-no-keyprint-sign': 10, 'excluded:gloss-unread': 11}
+line	pos	ref_sign	truth	plain	status	flag	align_status
+f98v_L01	1	T			excluded:unaligned		null-or-unaligned
+f98v_L01	2	NEW:tt	#|3	d	scored		conflict:c
+f98v_L01	3	o		e	excluded:align-uncertain		agrees
+f98v_L01	4	m		gor	excluded:multi-letter		conflict:u
+f98v_L01	5	sq		s	excluded:align-uncertain		agrees
+f98v_L01	6	#	m|v	t	scored		conflict:d
+f98v_L01	7	1			excluded:unaligned		null-or-unaligned
+f98v_L01	8	z			excluded:unaligned		null-or-unaligned
+f98v_L01	9	0		e	excluded:align-uncertain		agrees
+f98v_L01	10	0'		b	excluded:letter-no-keyprint-sign		conflict:p
+f98v_L01	11	m			excluded:unaligned		null-or-unaligned
+f98v_L01	12	1	.|0|1|o	e	scored		agrees
+f98v_L01	13	a			excluded:unaligned		null-or-unaligned
+f98v_L01	14	L			excluded:unaligned		null-or-unaligned
+f98v_L01	15	4	4	l	scored		conflict:a
+f98v_L01	16	+		l	excluded:align-uncertain		agrees
+f98v_L01	17	0			excluded:unaligned		null-or-unaligned
+f98v_L01	18	a			excluded:unaligned		null-or-unaligned
+f98v_L01	19	m			excluded:unaligned		null-or-unaligned
+f98v_L01	20	NEW:brace		.	excluded:gloss-unread		conflict:
+f98v_L02	1	a			excluded:unaligned		null-or-unaligned
+f98v_L02	2	m	a|m	u	scored		agrees
+f98v_L02	3	o			excluded:unaligned		null-or-unaligned
+f98v_L02	4	Z	c|w	r	scored		conflict:t
+f98v_L02	5	1			excluded:unaligned		null-or-unaligned
+f98v_L02	6	f			excluded:unaligned		null-or-unaligned
+f98v_L02	7	1			excluded:unaligned		null-or-unaligned
+f98v_L02	8	a		q	excluded:align-uncertain		agrees
+f98v_L02	9	a	a|m	u	scored		conflict:q
+f98v_L02	10	p		i	excluded:align-uncertain		agrees
+f98v_L02	11	4		l	excluded:align-uncertain		conflict:a
+f98v_L02	12	sq		z	excluded:letter-no-keyprint-sign		conflict:s
+f98v_L02	13	v		a	excluded:align-uncertain		agrees
+f98v_L02	14	L			excluded:unaligned		null-or-unaligned
+f98v_L02	15	o		u	excluded:align-uncertain		conflict:e
+f98v_L02	16	f		oyf	excluded:multi-letter		conflict:n
+f98v_L02	17	v		a	excluded:align-uncertain		agrees
+f98v_L02	18	4			excluded:unaligned		null-or-unaligned
+f98v_L02	19	4			excluded:unaligned		null-or-unaligned
+f98v_L02	20	0			excluded:unaligned		null-or-unaligned
+f98v_L02	21	NEW:tt		ic	excluded:multi-letter		conflict:c
+f98v_L02	22	v		t	excluded:align-uncertain		conflict:a
+f98v_L02	23	#		d	excluded:align-uncertain		agrees
+f98v_L02	24	0	.|0|1|o	e	scored		agrees
+f98v_L02	25	sq		s	excluded:align-uncertain		agrees
+f98v_L02	26	NEW:tt		.	excluded:gloss-unread		conflict:c
+f98v_L02	27	m		u	excluded:align-uncertain		agrees
+f98v_L02	28	1	1|L|p	i	scored		conflict:e
+f98v_L02	29	w		r	excluded:align-uncertain		agrees
+f98v_L02	30	v		a	excluded:align-uncertain		agrees
+f98v_L02	31	0'	sq	s	scored		conflict:p
+f98v_L02	32	sq		s	excluded:align-uncertain		agrees
+f98v_L02	33	0			excluded:unaligned		null-or-unaligned
+f98v_L02	34	y			excluded:unaligned		null-or-unaligned
+f98v_L02	35	4		.	excluded:gloss-unread		conflict:a
+f98v_L02	36	a		q	excluded:align-uncertain		agrees
+f98v_L02	37	m		u	excluded:align-uncertain		agrees
+f98v_L02	38	1	1|L|p	i	scored		conflict:e
+f98v_L02	39	4			excluded:unaligned		null-or-unaligned
+f98v_L02	40	0'			excluded:unaligned		null-or-unaligned
+f98v_L02	41	+	4	l	scored		agrees
+f98v_L02	42	1			excluded:unaligned		null-or-unaligned
+f98v_L03	1	m'	m|v	t	scored		single
+f98v_L03	2	1			excluded:unaligned		null-or-unaligned
+f98v_L03	3	p	1|L|p	i	scored		agrees
+f98v_L03	4	4	4|v	a	scored		agrees
+f98v_L03	5	+			excluded:unaligned		null-or-unaligned
+f98v_L03	6	f		n	excluded:align-uncertain		agrees
+f98v_L03	7	v	m|v	t	scored		conflict:a
+f98v_L03	8	0		e	excluded:align-uncertain		agrees
+f98v_L03	9	sq			excluded:unaligned		null-or-unaligned
+f98v_L03	10	m			excluded:unaligned		null-or-unaligned
+f98v_L03	11	L			excluded:unaligned		null-or-unaligned
+f98v_L03	12	Z	m|v	t	scored		agrees
+f98v_L03	13	v			excluded:unaligned		null-or-unaligned
+f98v_L03	14	y		o	excluded:align-uncertain		agrees
+f98v_L03	15	0'		rll	excluded:multi-letter		conflict:p
+f98v_L03	16	NEW:A		agl	excluded:multi-letter		single
+f98v_L03	17	m			excluded:unaligned		null-or-unaligned
+f98v_L03	18	1		.	excluded:gloss-unread		conflict:e
+f98v_L03	19	NEW:tt		rtr	excluded:multi-letter		conflict:c
+f98v_L03	20	0		e	excluded:align-uncertain		agrees
+f98v_L03	21	4			excluded:unaligned		null-or-unaligned
+f98v_L03	22	v			excluded:unaligned		null-or-unaligned
+f98v_L03	23	1			excluded:unaligned		null-or-unaligned
+f98v_L03	24	sq	sq	s	scored		agrees
+f98v_L03	25	m			excluded:unaligned		null-or-unaligned
+f98v_L03	26	p	#|3	d	scored		conflict:i
+f98v_L03	27	0		e	excluded:align-uncertain		agrees
+f98v_L03	28	y			excluded:unaligned		null-or-unaligned
+f98v_L03	29	#	a|m	u	scored		conflict:d
+f98v_L03	30	w			excluded:unaligned		null-or-unaligned
+f98v_L03	31	y	y	o	scored		agrees
+f98v_L03	32	1			excluded:unaligned		null-or-unaligned
+f98v_L03	33	v	m|v	t	scored		conflict:a
+f98v_L03	34	0'		p	excluded:letter-no-keyprint-sign		agrees
+f98v_L03	35	4	4	l	scored		conflict:a
+f98v_L03	36	m			excluded:unaligned		null-or-unaligned
+f98v_L03	37	sq			excluded:unaligned		null-or-unaligned
+f98v_L03	38	o	.|0|1|o	e	scored		agrees
+f98v_L03	39	f	f|r	n	scored		agrees
+f98v_L03	40	t		chl	excluded:multi-letter		single
+f98v_L03	41	1	.|0|1|o	e	scored		agrees
+f98v_L03	42	m	a|m	u	scored		agrees
+f98v_L03	43	c	c|w	r	scored		agrees
+f98v_L03	44	3	#|3	d	scored		single
+f98v_L03	45	NEW:theta	4|v	a	scored		single
+f98v_L03	46	a'	a|m	u	scored		single
+f98v_L03	47	y	y	o	scored		agrees
+f98v_L03	48	p	1|L|p	i	scored		agrees
+f98v_L03	49	w	c|w	r	scored		agrees
+f98v_L03	50	o			excluded:unaligned		null-or-unaligned
+f98v_L03	51	m			excluded:unaligned		null-or-unaligned
+f98v_L03	52	1	.|0|1|o	e	scored		agrees
+f98v_L03	53	Z	m|v	t	scored		agrees
+f98v_L03	54	0'			excluded:unaligned		null-or-unaligned
+f98v_L04	1	1		e	excluded:align-uncertain		agrees
+f98v_L04	2	sq		.	excluded:gloss-unread		conflict:s
+f98v_L04	3	#		y	excluded:letter-no-keyprint-sign		conflict:d
+f98v_L04	4	T		h	excluded:align-uncertain		single
+f98v_L04	5	0'			excluded:unaligned		null-or-unaligned
+f98v_L04	6	c	c|w	r	scored		agrees
+f98v_L04	7	y			excluded:unaligned		null-or-unaligned
+f98v_L04	8	p			excluded:unaligned		null-or-unaligned
+f98v_L04	9	m			excluded:unaligned		null-or-unaligned
+f98v_L04	10	NEW:tt			excluded:unaligned		null-or-unaligned
+f98v_L04	11	a	a	q	scored		agrees
+f98v_L04	12	m			excluded:unaligned		null-or-unaligned
+f98v_L04	13	4			excluded:unaligned		null-or-unaligned
+f98v_L04	14	v			excluded:unaligned		null-or-unaligned
+f98v_L04	15	NEW:brace			excluded:unaligned		null-or-unaligned
+f98v_L04	16	sq			excluded:unaligned		null-or-unaligned
+f98v_L04	17	m	a|m	u	scored		agrees
+f98v_L04	18	w			excluded:unaligned		null-or-unaligned
+f98v_L04	19	1	.|0|1|o	e	scored		agrees
+f98v_L04	20	a	a	q	scored		agrees
+f98v_L04	21	m	a|m	u	scored		agrees
+f98v_L04	22	4			excluded:unaligned		null-or-unaligned
+f98v_L04	23	m	a|m	u	scored		agrees
+f98v_L04	24	o			excluded:unaligned		null-or-unaligned
+f98v_L04	25	Z		rm	excluded:multi-letter		conflict:t
+f98v_L04	26	v		a	excluded:align-uncertain		agrees
+f98v_L04	27	m		u	excluded:align-uncertain		agrees
+f98v_L04	28	a	a|m	u	scored		conflict:q
+f98v_L04	29	4		a	excluded:align-uncertain		agrees
+f98v_L04	30	1	1|L|p	i	scored		conflict:e
+f98v_L04	31	sq		s	excluded:align-uncertain		agrees
+f98v_L04	32	#	#|3	d	scored		agrees
+f98v_L04	33	0		e	excluded:align-uncertain		agrees
+f98v_L04	34	0'	sq	s	scored		conflict:p
+f98v_L04	35	sq		s	excluded:align-uncertain		agrees
+f98v_L04	36	1	4|v	a	scored		conflict:e
+f98v_L04	37	L		i	excluded:align-uncertain		single
+f98v_L04	38	f		.	excluded:gloss-unread		conflict:n
+f98v_L04	39	a		q	excluded:align-uncertain		agrees
+f98v_L04	40	m		u	excluded:align-uncertain		agrees
+f98v_L04	41	0		il	excluded:multi-letter		conflict:e
+f98v_L04	42	4		a	excluded:align-uncertain		agrees
+f98v_L04	43	a			excluded:unaligned		null-or-unaligned
+f98v_L04	44	m	a|m	u	scored		agrees
+f98v_L04	45	1			excluded:unaligned		null-or-unaligned
+f98v_L04	46	sq'		z	excluded:letter-no-keyprint-sign		single
+f98v_L04	47	0'		p	excluded:letter-no-keyprint-sign		agrees
+f98v_L04	48	v	4|v	a	scored		agrees
+f98v_L04	49	w	c|w	r	scored		agrees
+f98v_L05	1	m			excluded:unaligned		null-or-unaligned
+f98v_L05	2	p		.	excluded:gloss-unread		conflict:i
+f98v_L05	3	NEW:tt		m	excluded:align-uncertain		conflict:c
+f98v_L05	4	m			excluded:unaligned		null-or-unaligned
+f98v_L05	5	4			excluded:unaligned		null-or-unaligned
+f98v_L05	6	L			excluded:unaligned		null-or-unaligned
+f98v_L05	7	0		e	excluded:align-uncertain		agrees
+f98v_L05	8	w		nt	excluded:multi-letter		conflict:r
+f98v_L05	9	sq		.	excluded:gloss-unread		conflict:s
+f98v_L05	10	0'		p	excluded:letter-no-keyprint-sign		agrees
+f98v_L05	11	w	c|w	r	scored		agrees
+f98v_L05	12	y		o	excluded:align-uncertain		agrees
+f98v_L05	13	NEW:tt		po	excluded:multi-letter		conflict:c
+f98v_L05	14	sq		.	excluded:gloss-unread		conflict:s
+f98v_L05	15	1		im	excluded:multi-letter		conflict:e
+f98v_L05	16	m		.	excluded:gloss-unread		conflict:u
+f98v_L05	17	0'		f	excluded:letter-no-keyprint-sign		conflict:p
+f98v_L05	18	NEW:Gamma		a	excluded:align-uncertain		single
+f98v_L05	19	t		i	excluded:align-uncertain		conflict:chl
+f98v_L05	20	y		n	excluded:align-uncertain		conflict:o
+f98v_L05	21	NEW:tt			excluded:unaligned		null-or-unaligned
+f98v_L05	22	m			excluded:unaligned		null-or-unaligned
+f98v_L05	23	NEW:tt	#	c	scored		single
+f98v_L05	24	NEW:u		tch	excluded:multi-letter		single
+f98v_L05	25	1	.|0|1|o	e	scored		agrees
+f98v_L05	26	c	c|w	r	scored		agrees
+f98v_L05	27	y	y	o	scored		agrees
+f98v_L05	28	f		n	excluded:align-uncertain		agrees
+f98v_L05	29	4		l	excluded:align-uncertain		conflict:a
+f98v_L05	30	L		y	excluded:letter-no-keyprint-sign		conflict:i
+f98v_L05	31	0		e	excluded:align-uncertain		agrees
+f98v_L05	32	m		u	excluded:align-uncertain		agrees
+f98v_L05	33	v	m|v	t	scored		conflict:a
+f98v_L05	34	1		e	excluded:align-uncertain		agrees
+f98v_L05	35	y	f|r	n	scored		conflict:o
+f98v_L05	36	v		a	excluded:align-uncertain		agrees
+f98v_L05	37	f		n	excluded:align-uncertain		agrees
+f98v_L05	38	m	m|v	t	scored		conflict:u
+f98v_L05	39	#		d	excluded:align-uncertain		agrees
+f98v_L05	40	1		e	excluded:align-uncertain		agrees
+f98v_L05	41	Z	z	m	scored		conflict:t
+f98v_L05	42	y		o	excluded:align-uncertain		agrees
+f98v_L05	43	y	f|r	n	scored		conflict:o
+f98v_L05	44	sq		s	excluded:align-uncertain		agrees
+f98v_L05	45	L			excluded:unaligned		null-or-unaligned
+f98v_L05	46	0			excluded:unaligned		null-or-unaligned
+f98v_L05	47	m			excluded:unaligned		null-or-unaligned
+f98v_L05	48	w		r	excluded:align-uncertain		agrees
+f98v_L05	49	#	4	l	scored		conflict:d
+f98v_L05	50	1		e	excluded:align-uncertain		agrees
+f98v_L06	1	NEW:v-over-long-baseline	9	g	scored		single
+f98v_L06	2	m	a|m	u	scored		agrees
+f98v_L06	3	p		i	excluded:align-uncertain		agrees
+f98v_L06	4	m		hy	excluded:multi-letter		conflict:u
+f98v_L06	5	w		r	excluded:align-uncertain		agrees
+f98v_L06	6	L			excluded:unaligned		null-or-unaligned
+f98v_L06	7	NEW:tt			excluded:unaligned		null-or-unaligned
+f98v_L06	8	0	.|0|1|o	e	scored		agrees
+f98v_L06	9	4		a	excluded:align-uncertain		agrees
+f98v_L06	10	v		.	excluded:gloss-unread		conflict:a
+f98v_L06	11	f		n	excluded:align-uncertain		agrees
+f98v_L06	12	y	y	o	scored		agrees
+f98v_L06	13	sq		s	excluded:align-uncertain		agrees
+f98v_L06	14	m	m|v	t	scored		conflict:u
+f98v_L06	15	4		a	excluded:align-uncertain		agrees
+f98v_L06	16	NEW:q		gui	excluded:multi-letter		conflict:g
+f98v_L06	17	w			excluded:unaligned		null-or-unaligned
+f98v_L06	18	0			excluded:unaligned		null-or-unaligned
+f98v_L06	19	v	4|v	a	scored		agrees
+f98v_L06	20	-:-		b	excluded:letter-no-keyprint-sign		single
+f98v_L06	21	4	4	l	scored		conflict:a
+f98v_L06	22	1		e	excluded:align-uncertain		agrees
+f98v_L06	23	v	4|v	a	scored		agrees
+f98v_L06	24	m	a|m	u	scored		agrees
+f98v_L06	25	NEW:q	9	g	scored		single
+f98v_L06	26	0		e	excluded:align-uncertain		agrees
+f98v_L06	27	y	f|r	n	scored		conflict:o
+f98v_L06	28	1		e	excluded:align-uncertain		agrees
+f98v_L06	29	c	c|w	r	scored		agrees
+f98v_L06	30	v	4|v	a	scored		agrees
+f98v_L06	31	+	4	l	scored		agrees

@@ -170,8 +170,8 @@ def build(out_root, variant=None):
             % (agrees, len(trows), agrees / len(trows), real, sum(sh) / len(sh), max(sh), rank, len(key),
                sum(1 for s in key if good(s)), len(nkp), nkp_ok))
     if variant:  # PREREG-txeng2-2 R (TXP-REBUILD): second truth from a key independent of the reads
-        assert variant == 'keyprint', 'this item builds --variant keyprint only'
-        return tv.write_variant(out_root, ITEM, variant, tv.keyprint_rows(trows, [(r[0], r[1], r[2]) for r in rows], lambda c: '?' in c, fold), ctrl)
+        assert variant in ('keyprint', 'kp2'), 'this item builds --variant keyprint|kp2 only'
+        return tv.write_variant(out_root, ITEM, variant, tv.keyprint_rows(trows, [(r[0], r[1], r[2]) for r in rows], lambda c: '?' in c, fold, variant), ctrl)
     os.makedirs(os.path.join(out_root, 'benchmark-tx'), exist_ok=True)
     tp = os.path.join(out_root, 'benchmark-tx', ITEM + '.truth.tsv')
     with open(tp, 'w') as f:
@@ -213,7 +213,7 @@ OUTS = ['benchmark-tx/%s.truth.tsv' % ITEM, 'benchmark-tx/%s.truth.tsv.sha256' %
 
 
 def main():
-    if tv.variant_main(build, ITEM):  # --variant keyprint|jackknife [--check] (PREREG-txeng2-2 R)
+    if tv.variant_main(build, ITEM):  # --variant keyprint|kp2|jackknife [--check] (PREREG-txeng2-2 R, -3 R2)
         return
     if '--check' in sys.argv:
         tmp = tempfile.mkdtemp()

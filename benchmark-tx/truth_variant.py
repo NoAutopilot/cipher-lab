@@ -13,6 +13,11 @@ conf not '?'), S(L) is non-empty and the alignment is not flagged uncertain; tru
 conflict:* (f89's declared align-conflict rule). The position's OWN status is not used: 'conflict'/'single' there compares
 the chunk with passZ's own sign's leaf majority, which would exclude passZ's misreads by construction (the round-0b flaw).
 
+kp2 (dint-f89/f98v/f113-gloss; PREREG-txeng2-3 R2, TXP-KP2, declared before scoring): homophone-complete S(L) = every
+key_print sign with value L at share >= 0.3 of its n and n >= 2, counting the majority value AND the `others` column, so a
+multi-valued sign belongs to every such L ('#' c 7/13 and d 6/13 sits in S(c) and S(d)); label-map merged as keyprint;
+scored positions and exclusion classes exactly as keyprint otherwise.
+
 jackknife (bir1591-f23r-gloss, no outside key): line i is scored with the key rebuilt from all OTHER lines of the leaf's
 alignment (per sign: wildcard-free non-empty chunks, majority one letter, n >= 2, agree >= 0.75, on-sheet); truth =
 S_-i(L); same exclusion classes and neighbour rule. Grade C- (the same readers' errors on other lines still shape the key).
@@ -46,6 +51,25 @@ def kp_inverse(fold, kp_path=KP, min_n=3, min_agree=0.75):
     return dict(S)
 
 
+def kp2_inverse(fold, kp_path=KP, min_n=2, min_share=0.3):
+    """letter -> set of reader labels holding L at share >= min_share of n (majority and `others`), n >= min_n (R2)."""
+    lm = reader_label_map()
+    S = defaultdict(set)
+    with open(kp_path, newline='') as f:
+        for r in csv.DictReader(f, delimiter='\t'):
+            n = int(r['n'])
+            if n < min_n:
+                continue
+            cnt = Counter({fold(r['meaning']): int(r['agree'])})
+            for kv in filter(None, (r.get('others') or '').split(',')):
+                v, c = kv.rsplit(':', 1)
+                cnt[fold(v)] += int(c)
+            for L, c in cnt.items():
+                if L and c / n >= min_share:
+                    S[L].add(lm.get(r['sign'], r['sign']))
+    return dict(S)
+
+
 def _neighbour_uncertain(trows, i):
     ln = trows[i][0]
     return any(0 <= j < len(trows) and trows[j][0] == ln and str(trows[j][7]).startswith('conflict') for j in (i - 1, i + 1))
@@ -61,9 +85,10 @@ def _base_class(chunk, status, unread, fold):
     return None
 
 
-def keyprint_rows(trows, keys, unread, fold):
-    """trows: interlinear_align.token_rows; keys: [(line, pos, passZ sign)] in the same order (the default build's rows)."""
-    S = kp_inverse(fold)
+def keyprint_rows(trows, keys, unread, fold, variant='keyprint'):
+    """trows: interlinear_align.token_rows; keys: [(line, pos, passZ sign)] in the same order (the default build's rows).
+    variant 'keyprint' (R: 0.75 / n >= 3) or 'kp2' (R2: share >= 0.3, n >= 2, multi-valued)."""
+    S = kp2_inverse(fold) if variant == 'kp2' else kp_inverse(fold)
     out = []
     for i, (t, (ln, pos, sign)) in enumerate(zip(trows, keys)):
         chunk, status = t[6], t[7]
@@ -126,8 +151,9 @@ def write_variant(out_root, item, variant, rows, header):
     sc = sum(1 for r in rows if r[5] == 'scored')
     ex = Counter(r[5] for r in rows if r[5] != 'scored')
     with open(tp, 'w') as f:
-        f.write('# %s\n# variant %s (benchmark-tx/truth_variant.py, PREREG-txeng2-2 R): %d positions, %d scored, excluded %s\n'
-                'line\tpos\tref_sign\ttruth\tplain\tstatus\tflag\talign_status\n' % (header, variant, len(rows), sc, dict(ex)))
+        pre = '3 R2' if variant == 'kp2' else '2 R'
+        f.write('# %s\n# variant %s (benchmark-tx/truth_variant.py, PREREG-txeng2-%s): %d positions, %d scored, excluded %s\n'
+                'line\tpos\tref_sign\ttruth\tplain\tstatus\tflag\talign_status\n' % (header, variant, pre, len(rows), sc, dict(ex)))
         for r in rows:
             f.write('\t'.join(map(str, r)) + '\n')
     with open(tp + '.sha256', 'w') as f:
