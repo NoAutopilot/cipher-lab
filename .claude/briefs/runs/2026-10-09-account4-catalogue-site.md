@@ -57,3 +57,14 @@ shape for a reader). Each mock-up item page carries "The letter", "The cipher", 
 single-file mock-up adds a "Hall of Fame" page of 5-8 favourites as one-paragraph stories (Gramont 1530, Manteuffel 1712, the Lodewijk
 blanks, Birago 1572, the Suriname fort map, Mercy 1648 if its safe sentence allows). Where Bourdeau or Tomokiyo read an item first, the
 page says so and links theirs. Cap unchanged: index and three item pages first, the Hall of Fame next if the cap allows.
+
+## Amendment 3 (orchestrator, 22:3x UTC 9 Oct by date -u; the owner at 22:3x UTC: not a copy of Bourdeau; discoverable, clear, with the rigour behind it)
+Amendment 2's "in his shape" is withdrawn: Bourdeau's pages are examples of a working public page, not a template; no mirrored sections,
+names or layout. Ours is built around one idea -- a plain claim on top, its proof directly underneath, every link verifiable from a
+reader's desk. Per item: the safe sentence as the claim with the gist marked interpretation; a proof panel with the per-token grade counts
+(rule 4) and a one-line key to the letters, how the reading regenerates (decode script and --check, transcription and key files, linked),
+the matched control where one was run (both numbers), the two independent audits with dates, the search families logged as searched and
+as unreachable, the N-class and depth with their definitions one click away, whose key with the credit, the primary image at the leaf and
+the printed edition at the page. Progressive disclosure: plain language first, the evidence expandable, nothing hidden. Index: one row per
+item a search engine and a historian can both read, filterable by century, archive and outcome. The favourites page is "Readings worth a
+historian's attention", each story limited to what its audit licenses.
