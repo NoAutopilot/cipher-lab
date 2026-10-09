@@ -5925,6 +5925,46 @@ Left (next lane): eckert-1864 No 2 entries pp.86-182 of no2-candidates.tsv (~37 
 by D12-E2/E3 rates; N2-AI/N2-AJ/N2-R N4 needs RG 92/393/107 or the OR Supplement (owner-side or LOCAL-QUEUE); eckert-1862 `ec18_align.py --rows`
 still stale, cause untested (~1); 9877 Hurlbut token stays M.
 
+## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261009-0009, session_01PeUeA4FVwJ7Jiq5Y34XqKk, account 2), 9 October 2026 (closed 01:4x UTC: three waves worked, lane ~52.4 of 60)
+
+Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-09-ytbiz-family-0009-jobs.md. Started from the
+2209 handoff next list and next_steps.py --hot-only in-scope runnable rows (re-checked by hand). Gate 0a: SESSION-SWEEP-account-2 stale-claimed
+since 5 Oct, proceeded. Workers 15 in 3 waves (00:15-01:21 UTC; Opus 12, Sonnet 3; all ledgered): 47.35 by get_session; orchestrator 5.02;
+five_hour `allowed` throughout. Over cap: HDK-131 3.23/3, MANT-0609Y 6.53/5.5 (1.19x). Known-text share ~20% (CLIN-RG re-gate on a text read at
+H, MANT-0609Y/MANT-0136 gloss key checks, V-SUR0744R). LAG-SYL stopped at its cap without a ROOM done line (D-).
+
+Results:
+- hessen-daenemark-1672: Dänemark 131 fully swept (HDK-131): 7 leaves (0020 0021 0049 0050 0062 0063 0064) carry Friedrich von Brandt's
+  Copenhagen 1672 numeral cipher, a different system from Nr. 125 and from key 255 (1/8). HDK-BRANDT check-solved: open (conditional),
+  0020 ~340 groups margin-glossed, 0049 ~35/64 letter-glossed. BRANDT-TX: 0020 lower block 258 groups (H 246, M 12; dk131_brandt/), gloss
+  letter-level, registered CONSISTENT gate FAIL (9 vs derangement max 12, p 0.149); exploratory per-value agreement 95 vs max 49 (not a gate).
+- sachsstaatsarchiv-manteuffel-1712: MANT-EYE: 0214 tokens match; 0375 r3 tok3 57->51 (low); pooled gate 5/1000 still PASS. 694/09 fully
+  swept (MANT-0609Y): 0007 gloss gate 13/14 vs p99 4 (key check); 0056 heavy glossed, 0063 glossed; 0136's "chiffre du proces" = Krauske
+  table (MANT-0136: faint gloss agrees 11-12/13), 0136 partly glossed.
+- wvo-11106-bergh-1572: BERGH-GRP sign-group reads on a de-stacked layout, gate 18/19 vs pre-registered 17 PASS (15/19 without the three
+  eye-registered fragment parents, disclosed); atlas/group_sign.tsv for the 19 windows.
+- na-suriname-map-1781: SUR-0744R 0744 right: CLASS ([ij] in m|n) PASS both passes; DOT FAIL with no headroom; V-SUR0744R: CLASS PASS stands.
+- la-garde-1577: running_key untestable by running_key.py at N=229 (control below gate at 0.055/0.084; noise param added to the tool);
+  syllabary (regular) excluded at error <= 0.107 (LAG-SYL); marks-kept 0.107-0.183 band not covered.
+- pro3055-clinton-1779: CLIN-RG p.123 re-gate NON-TEST (35 < 40 compared; 29/35 ties shuffled-column max); design retired (second attempt).
+- antt-linhares-chave: maço 86 now 604/604 images checked (LIN-SIB/2/3), no sibling cipher; the sibling route in this maço is closed.
+
+**next** (for the next LANE FAMILY incarnation):
+1. hessen-daenemark-1672 Brandt: pre-register the per-value agrees gate (BRANDT-TX's exploratory statistic, a NEW gate, not a third run of
+   CONSISTENT) and test it on the held-out 0049 letter-glossed pairs; ~2.5. Then 0020 upper block + 0021 transcription (~4) if it passes.
+   Consider a separate folder for the Brandt pool (orchestrator's call; check-solved verdict is in hessen NOTES "HDK-BRANDT").
+2. sachsstaatsarchiv-manteuffel-1712: 694/09 0056 (~4.5) then 0063 (~3) as known-answer leaves (two passes + reconciliation + gloss gate);
+   0136 known-answer read (~4.5). These build a key for the unglossed 694/09 frames (0103, 0046, 0233).
+3. wvo-11106-bergh-1572: all-box group pass + sorter rebuild with the group instrument (~15; split into two jobs of ~7.5).
+4. na-suriname-map-1781: 0745 with the dot dropped, pooled [y-fam] m-vs-n split under the derangement control (~3-4).
+5. la-garde-1577: settle the marks-kept split cells from the images and re-measure (~3); wordcode control at err 0.107 then 0.055/0.084 (~2);
+   prior_work.py exit-4 rows owed before any decode (~1).
+6. pro3055-clinton-1779: only an eye check of c5:18/c6 on existing crops (~1) or p.124 material; the alignment design is retired.
+7. Still open from earlier handoffs: wvo-11008 (needs a sharper image), na-oldenbarnevelt o2 (only if a verifier needs it), decode-4333-rusdorff
+   (waits on LOCAL-QUEUE L67). Blocked/retired as in the 1909 handoff (craven 1649 siblings, Van Aerssen pool, hellen 1763).
+Excluded this incarnation (other lanes): eckert-* (LANE LEDGER), lodewijk-van-nassau and baluze167 (LANE SIG-1), huntington-blathwayt and
+ceppo-nevers (account-4 LANE DEPTH).
+
 ## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261008-2209, session_01NLigWQpxoYPadEgdJpwQW8, account 2), 8 October 2026 (closed 23:2x UTC: cheap in-scope steps worked, lane ~47 of 60)
 
 Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-08-ytbiz-family-2209-jobs.md. Started from the
