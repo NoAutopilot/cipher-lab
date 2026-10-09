@@ -36,3 +36,7 @@ leaf	strip	x	y	w	h	clear_under_by_worker_eye	note
 0282	s11	3310	1503	310	38	Mr. Britton	run over underlined 'Britton' (right p.)
 0282	s12	3510	2030	80	60	le Roy de Suede	single code over underlined 'le Roy de Suede' (right p.)
 0282	s13	2810	2290	230	40	abime?	run over an underlined word (right p.)
+0410	s01	3060	2772	350	48	C. de Konigsmarck (Konigsmarck underlined)	MANT-CUC2: run over underlined Konigsmarck (f.326, Flemming to Manteuffel, Greifswald 20 Oct 1712)
+0410	s02	2905	2868	365	44	l'Electeur de Han.	MANT-CUC2: run over underlined l'Electeur de Han.
+0284	s01	1395	1060	475	54	underlined word after "me" (inventory MANT-INV08 read laisser; not settled by the worker)	MANT-CUC2: run over underlined word after me (Flemming-hand draft)
+0284	s02	1550	1186	315	36	Devoir	MANT-CUC2: run over underlined Devoir

@@ -4,21 +4,21 @@ leaf	strip	code	key_value	clear_substring_aligned	clear_word	status
 0282	s01	10	e		laforce	candidate; image check owed
 0282	s01	20	b	for	laforce	candidate; image check owed
 0282	s01	?	(absent)	e	laforce	candidate; image check owed
-0282	s02	17	p			candidate; image check owed
-0282	s02	26	r			candidate; image check owed
-0282	s02	9	i			candidate; image check owed
-0282	s02	14	n			candidate; image check owed
-0282	s02	15	c			candidate; image check owed
-0282	s02	10	e			candidate; image check owed
+0282	s02	17	p			candidate; image check owed; MANT-CUC2 eye (one look, k0282_s02): the clear word is 'Prince', underlined (faint stroke under 'rince'); the blind clear pass missed it; under key.tsv 17.26.9.14.15.10 = p.r.i.n.c.e 6/6 (descriptive, not rescored)
+0282	s02	26	r			candidate; image check owed; MANT-CUC2 eye (one look, k0282_s02): the clear word is 'Prince', underlined (faint stroke under 'rince'); the blind clear pass missed it; under key.tsv 17.26.9.14.15.10 = p.r.i.n.c.e 6/6 (descriptive, not rescored)
+0282	s02	9	i			candidate; image check owed; MANT-CUC2 eye (one look, k0282_s02): the clear word is 'Prince', underlined (faint stroke under 'rince'); the blind clear pass missed it; under key.tsv 17.26.9.14.15.10 = p.r.i.n.c.e 6/6 (descriptive, not rescored)
+0282	s02	14	n			candidate; image check owed; MANT-CUC2 eye (one look, k0282_s02): the clear word is 'Prince', underlined (faint stroke under 'rince'); the blind clear pass missed it; under key.tsv 17.26.9.14.15.10 = p.r.i.n.c.e 6/6 (descriptive, not rescored)
+0282	s02	15	c			candidate; image check owed; MANT-CUC2 eye (one look, k0282_s02): the clear word is 'Prince', underlined (faint stroke under 'rince'); the blind clear pass missed it; under key.tsv 17.26.9.14.15.10 = p.r.i.n.c.e 6/6 (descriptive, not rescored)
+0282	s02	10	e			candidate; image check owed; MANT-CUC2 eye (one look, k0282_s02): the clear word is 'Prince', underlined (faint stroke under 'rince'); the blind clear pass missed it; under key.tsv 17.26.9.14.15.10 = p.r.i.n.c.e 6/6 (descriptive, not rescored)
 0282	s03ab	60	r|re|ro		negociation	candidate; image check owed
 0282	s03ab	?	(absent)	eg	negociation	candidate; image check owed
 0282	s03ab	?	(absent)	ia	negociation	candidate; image check owed
 0282	s03ab	?	(absent)		negociation	candidate; image check owed
 0282	s03ab	18	(absent)	io	negociation	candidate; image check owed
-0282	s06	17	p			candidate; image check owed
-0282	s06	25	a			candidate; image check owed
-0282	s06	?	(absent)			candidate; image check owed
-0282	s06	4	x			candidate; image check owed
+0282	s06	17	p			candidate; image check owed; MANT-CUC2 eye (one look, k0282_s06/c0282_s06): the clear word is 'Paix' (no underline visible in the crop, which explains the blind miss); third code a 4/9 y-shaped glyph (A 96, B 46): 46 = i gives p.a.i.x 4/4, 96 = le does not; open, M
+0282	s06	25	a			candidate; image check owed; MANT-CUC2 eye (one look, k0282_s06/c0282_s06): the clear word is 'Paix' (no underline visible in the crop, which explains the blind miss); third code a 4/9 y-shaped glyph (A 96, B 46): 46 = i gives p.a.i.x 4/4, 96 = le does not; open, M
+0282	s06	?	(absent)			candidate; image check owed; MANT-CUC2 eye (one look, k0282_s06/c0282_s06): the clear word is 'Paix' (no underline visible in the crop, which explains the blind miss); third code a 4/9 y-shaped glyph (A 96, B 46): 46 = i gives p.a.i.x 4/4, 96 = le does not; open, M
+0282	s06	4	x			candidate; image check owed; MANT-CUC2 eye (one look, k0282_s06/c0282_s06): the clear word is 'Paix' (no underline visible in the crop, which explains the blind miss); third code a 4/9 y-shaped glyph (A 96, B 46): 46 = i gives p.a.i.x 4/4, 96 = le does not; open, M
 0282	s07	?	(absent)	ss	puissances	candidate; image check owed
 0282	s09	25	a		son	candidate; image check owed
 0282	s09	26	r	so	son	candidate; image check owed
@@ -57,6 +57,21 @@ leaf	strip	code	key_value	clear_substring_aligned	clear_word	status
 0282	s12	?	(absent)	royde	name-class	candidate; image check owed
 0323	s01	257	leroideprusse	la	name-class	candidate; image check owed
 0323	s08	257	leroideprusse		name-class	candidate; image check owed
-0323	s11	173	(absent)	penne	name-class	candidate; image check owed
-0323	s13	144	(absent)	cron	name-class	candidate; image check owed
+0323	s11	173	(absent)	penne	name-class	candidate; image check owed; MANT-CUC2 eye (one look, committed crop c0323_s11): the code reads 177 with barred 7s (both blind passes read 173; MANT-INV08C read 177); 177 = le czar, clear 'ce Prince' under it (the Czar referred to as 'ce Prince'); semantic agreement, M, key.tsv unchanged
+0323	s13	144	(absent)	cron	name-class	candidate; image check owed; MANT-CUC2 eye (one look, committed crop c0323_s13): the code reads 177 with barred 7s (both blind passes read 144); clear is 'Czar' (blind read 'Cron'); 177 = le czar, semantic agreement, M, key.tsv unchanged
 0348	s08	160	manteuffel	vous	name-class	candidate; image check owed
+0410	s01	?	(absent)	rc	konigmarck	candidate; MANT-CUC2 0410; 80 (pass A) = i where the clear 'Konigsmarck' has 'rc': the encoder's spelling or a slip; B unread
+0410	s02	12	l			candidate; MANT-CUC2 0410; blind clear pass returned NONE (missed underline); worker eye: clear 'l'Electeur de Han.' underlined; under key.tsv 12.2.19 120.2 8.?.19 = l.e.[null] d.e h.?.[null] (abbreviation-shaped, 19 a Krauske non-valeur), descriptive only
+0410	s02	2	e			candidate; MANT-CUC2 0410; blind clear pass returned NONE (missed underline); worker eye: clear 'l'Electeur de Han.' underlined; under key.tsv 12.2.19 120.2 8.?.19 = l.e.[null] d.e h.?.[null] (abbreviation-shaped, 19 a Krauske non-valeur), descriptive only
+0410	s02	19	(absent)			candidate; MANT-CUC2 0410; blind clear pass returned NONE (missed underline); worker eye: clear 'l'Electeur de Han.' underlined; under key.tsv 12.2.19 120.2 8.?.19 = l.e.[null] d.e h.?.[null] (abbreviation-shaped, 19 a Krauske non-valeur), descriptive only
+0410	s02	120	d			candidate; MANT-CUC2 0410; blind clear pass returned NONE (missed underline); worker eye: clear 'l'Electeur de Han.' underlined; under key.tsv 12.2.19 120.2 8.?.19 = l.e.[null] d.e h.?.[null] (abbreviation-shaped, 19 a Krauske non-valeur), descriptive only
+0410	s02	2	e			candidate; MANT-CUC2 0410; blind clear pass returned NONE (missed underline); worker eye: clear 'l'Electeur de Han.' underlined; under key.tsv 12.2.19 120.2 8.?.19 = l.e.[null] d.e h.?.[null] (abbreviation-shaped, 19 a Krauske non-valeur), descriptive only
+0410	s02	8	h			candidate; MANT-CUC2 0410; blind clear pass returned NONE (missed underline); worker eye: clear 'l'Electeur de Han.' underlined; under key.tsv 12.2.19 120.2 8.?.19 = l.e.[null] d.e h.?.[null] (abbreviation-shaped, 19 a Krauske non-valeur), descriptive only
+0410	s02	?	(absent)			candidate; MANT-CUC2 0410; blind clear pass returned NONE (missed underline); worker eye: clear 'l'Electeur de Han.' underlined; under key.tsv 12.2.19 120.2 8.?.19 = l.e.[null] d.e h.?.[null] (abbreviation-shaped, 19 a Krauske non-valeur), descriptive only
+0410	s02	19	(absent)			candidate; MANT-CUC2 0410; blind clear pass returned NONE (missed underline); worker eye: clear 'l'Electeur de Han.' underlined; under key.tsv 12.2.19 120.2 8.?.19 = l.e.[null] d.e h.?.[null] (abbreviation-shaped, 19 a Krauske non-valeur), descriptive only
+0284	s01	29	s	j	jaunfier	candidate; MANT-CUC2 0284; under key.tsv pass B reads s.a.c.r.i.f.i.e.r = 'sacrifier'; the blind clear read 'Jaunfier' and MANT-INV08's inventory 'laisser'; worker eye: consistent with long-s 'sacrifier'; not rescored (PREREG scores the blind clear read)
+0284	s01	?	(absent)		jaunfier	candidate; MANT-CUC2 0284; under key.tsv pass B reads s.a.c.r.i.f.i.e.r = 'sacrifier'; the blind clear read 'Jaunfier' and MANT-INV08's inventory 'laisser'; worker eye: consistent with long-s 'sacrifier'; not rescored (PREREG scores the blind clear read)
+0284	s01	60	r|re|ro		jaunfier	candidate; MANT-CUC2 0284; under key.tsv pass B reads s.a.c.r.i.f.i.e.r = 'sacrifier'; the blind clear read 'Jaunfier' and MANT-INV08's inventory 'laisser'; worker eye: consistent with long-s 'sacrifier'; not rescored (PREREG scores the blind clear read)
+0284	s01	9	i	un	jaunfier	candidate; MANT-CUC2 0284; under key.tsv pass B reads s.a.c.r.i.f.i.e.r = 'sacrifier'; the blind clear read 'Jaunfier' and MANT-INV08's inventory 'laisser'; worker eye: consistent with long-s 'sacrifier'; not rescored (PREREG scores the blind clear read)
+0284	s02	?	(absent)	o	devoir	candidate; MANT-CUC2 0284; 100 = d where 'Devoir' ends in r; 26/16 split at 'o' (A 16 = o fits)
+0284	s02	100	d	r	devoir	candidate; MANT-CUC2 0284; 100 = d where 'Devoir' ends in r; 26/16 split at 'o' (A 16 = o fits)
