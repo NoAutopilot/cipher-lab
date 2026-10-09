@@ -13436,3 +13436,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 23:54 | MS18-R6 worker (Sonnet) | hdl take: <=30 CONTENTdm requests (12 CISOSEARCHALL, 10 page images) at 3.3 s; for LANE LEDGER (account 1)
 2026-10-09 23:56 | MANT-0151 worker | claim (23:57 UTC 9 Oct by date -u): sachsstaatsarchiv-manteuffel-1712 694/08 frame 0151, code 207 witness; cap 3, box end 00:57 UTC 10 Oct (80% 00:45) -- for LANE FAMILY-A2m (account 2)
 2026-10-09 23:57 | MANT-0151 worker | sachsen take (www.archiv.sachsen.de): 694/08 0151 fullsize, <= 6 GETs -- for LANE FAMILY-A2m (account 2)
+2026-10-09 23:58 | MANT-0151 worker | sachsen release: 1 GET (694/08 0151, HTTP 200, sha256 5d23bd211f07ceed = GAPS207 copy) -- for LANE FAMILY-A2m (account 2)
