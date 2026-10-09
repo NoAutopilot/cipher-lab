@@ -1,0 +1,148 @@
+line	col	kind	candidates	left_neighbours	right_neighbours
+L01	1	disagree	PSI | ALPHA		TRIS HASH
+L01	2	disagree	TRIS | TRIX	PSI	HASH Q
+L01	4	disagree	Q | PSI	TRIS HASH	OS NEW:single-arch-tail
+L01	6	disagree	NEW:single-arch-tail | NEW:h-shaped hook	Q OS	Q NEW:loop-x-tail
+L01	8	disagree	NEW:loop-x-tail | X	NEW:single-arch-tail Q	TRIS THREE
+L01	15	disagree	Z | XI	OS DTRI	HASH CUP
+L01	16	uncertain	HASH	DTRI Z	CUP INVT
+L01	19	disagree	Q | CENT	CUP INVT	TRI DTRI
+L01	24	uncertain	TRIS	DTRIS PSI	INVT CUP
+L01	27	disagree	NEW:loop-x-tail | X	INVT CUP	OS OMEGA
+L01	28	disagree	OS | O	CUP NEW:loop-x-tail	OMEGA INVT
+L01	32	uncertain	PSI	INVT CUP	Z C
+L01	33	disagree	Z | XI	CUP PSI	C INVT
+L01	36	uncertain	HASH	C INVT	O M
+L02	4	disagree	M | XI	O DTRIS	DOT I
+L02	11	disagree	NEW:loop-x-tail | X	O HASH	Z PSI
+L02	12	uncertain	Z	HASH NEW:loop-x-tail	PSI NEQ
+L02	13	uncertain	PSI	NEW:loop-x-tail Z	NEQ SQ
+L02	16	uncertain	INVT	NEQ SQ	M C
+L02	19	disagree	NEW:cross-over-o | OS	M C	INVT TRIS
+L02	21	uncertain	TRIS	NEW:cross-over-o INVT	PLUS O
+L02	22	uncertain	PLUS	INVT TRIS	O C
+L02	23	uncertain	O	TRIS PLUS	C INVT
+L02	25	disagree	INVT | -	O C	HASH ALPHA
+L02	26	uncertain	HASH	C INVT	ALPHA Q
+L02	28	disagree	Q | X	HASH ALPHA	ALPHA ALPHA
+L02	33	disagree	NEW:loop-x-tail | X	DTRI TRIS	PLUS NEW:loop-x-tail
+L02	34	uncertain	PLUS	TRIS NEW:loop-x-tail	NEW:loop-x-tail Z
+L02	35	disagree	NEW:loop-x-tail | X	NEW:loop-x-tail PLUS	Z DTRI
+L02	36	uncertain	Z	PLUS NEW:loop-x-tail	DTRI NEQ
+L02	40	uncertain	PSI	NEQ THREE	HASH CUP
+L02	41	uncertain	HASH	THREE PSI	CUP O
+L02	45	uncertain	DTRIS	O TRIS	PLUS O
+L02	46	uncertain	PLUS	TRIS DTRIS	O M
+L02	49	disagree	DTRI | DTRIS	O M	M TRIX
+L02	50	uncertain	M	M DTRI	TRIX
+L02	51	uncertain	TRIX	DTRI M	
+L03	1	uncertain	PSI		XI OS
+L03	2	uncertain	XI	PSI	OS SQ
+L03	3	uncertain	OS	PSI XI	SQ M
+L03	6	disagree	- | X	SQ M	NEW:loop-x-tail NEW:barred-o
+L03	7	disagree	NEW:loop-x-tail | O	M X	NEW:barred-o NEW:phi
+L03	8	disagree	NEW:barred-o | O	X NEW:loop-x-tail	NEW:phi O
+L03	9	disagree	NEW:phi | NEW:o with vertical stroke through	NEW:loop-x-tail NEW:barred-o	O OMEGA
+L03	10	uncertain	O	NEW:barred-o NEW:phi	OMEGA NEW:loop-x-tail
+L03	12	disagree	NEW:loop-x-tail | X	O OMEGA	NEQ PSI
+L03	14	disagree	- | PSI	NEW:loop-x-tail NEQ	PSI NEW:hook-crossed-tail
+L03	15	uncertain	PSI	NEQ PSI	NEW:hook-crossed-tail O
+L03	16	disagree	NEW:hook-crossed-tail | TRIS	PSI PSI	O OS
+L03	20	uncertain	PSI	OS C	DTRIS TRIX
+L03	22	uncertain	TRIX	PSI DTRIS	XI CUP
+L03	23	uncertain	XI	DTRIS TRIX	CUP O
+L03	26	uncertain	Z	CUP O	INVT TRI
+L03	29	uncertain	DTRI	INVT TRI	PSI OMEGA
+L03	30	uncertain	PSI	TRI DTRI	OMEGA O
+L03	31	uncertain	OMEGA	DTRI PSI	O NEW:loop-x-tail
+L03	32	disagree	O | -	PSI OMEGA	NEW:loop-x-tail SQ
+L03	33	disagree	NEW:loop-x-tail | X	OMEGA O	SQ PSI
+L03	35	uncertain	PSI	NEW:loop-x-tail SQ	TRIS ALPHA
+L03	36	uncertain	TRIS	SQ PSI	ALPHA M
+L03	37	disagree	ALPHA | -	PSI TRIS	M O
+L03	42	disagree	DTRI | DTRIS	C OS	C DTRIS
+L03	45	disagree	NEW:loop-x-tail | X	C DTRIS	C SQ
+L03	47	uncertain	SQ	NEW:loop-x-tail C	DTRI DIV
+L03	50	uncertain	TRIX	DTRI DIV	
+L04	1	uncertain	ALPHA		Q DTRIS
+L04	2	disagree	Q | -	ALPHA	DTRIS Q
+L04	4	uncertain	Q	Q DTRIS	OS C
+L04	7	uncertain	PSI	OS C	SQ NEW:cross-over-o
+L04	9	disagree	NEW:cross-over-o | OS	PSI SQ	INVT Z
+L04	11	uncertain	Z	NEW:cross-over-o INVT	Q HASH
+L04	12	uncertain	Q	INVT Z	HASH CUP
+L04	13	uncertain	HASH	Z Q	CUP NEQ
+L04	29	uncertain	O	ALPHA ALPHA	TRIS PLUS
+L04	30	uncertain	TRIS	ALPHA O	PLUS Q
+L04	31	uncertain	PLUS	O TRIS	Q HASH
+L04	32	disagree	Q | CENT	TRIS PLUS	HASH CUP
+L04	33	uncertain	HASH	PLUS Q	CUP O
+L04	37	disagree	Q | X	O X	NEW:loop-x-tail C
+L04	38	disagree	NEW:loop-x-tail | X	X Q	C O
+L04	41	uncertain	Z	C O	O SQ
+L04	43	uncertain	SQ	Z O	NEW:loop-x-tail NEW:cross-over-o
+L04	44	disagree	NEW:loop-x-tail | X	O SQ	NEW:cross-over-o PSI
+L04	45	disagree	NEW:cross-over-o | OS	SQ NEW:loop-x-tail	PSI NEQ
+L04	46	uncertain	PSI	NEW:loop-x-tail NEW:cross-over-o	NEQ Q
+L04	48	uncertain	Q	PSI NEQ	
+L05	1	uncertain	SQ		M PSI
+L05	3	uncertain	PSI	SQ M	NEW:loop-x-tail I
+L05	4	disagree	NEW:loop-x-tail | X	M PSI	I I
+L05	5	uncertain	I	PSI NEW:loop-x-tail	I O
+L05	6	uncertain	I	NEW:loop-x-tail I	O DTRIS
+L05	10	disagree	Q | X	DTRIS ALPHA	HASH DTRI
+L05	15	disagree	Q | X	NEQ ALPHA	TRIX TRIS
+L05	17	uncertain	TRIS	Q TRIX	OMEGA NEW:loop-x-tail
+L05	19	disagree	NEW:loop-x-tail | Q	TRIS OMEGA	SQ NEW:loop-x-tail
+L05	21	disagree	NEW:loop-x-tail | X	NEW:loop-x-tail SQ	HASH CUP
+L05	22	uncertain	HASH	SQ NEW:loop-x-tail	CUP O
+L05	24	uncertain	O	HASH CUP	TRIS DTRI
+L05	28	uncertain	X	DTRI SQ	M OS
+L05	30	uncertain	OS	X M	PLUS INVT
+L05	32	uncertain	INVT	OS PLUS	HASH Q
+L05	34	uncertain	Q	INVT HASH	X Q
+L05	36	disagree	Q | X	Q X	DTRI NEQ
+L05	43	disagree	Q | PSI	C DIV	NEQ DTRI
+L05	46	uncertain	SQ	NEQ DTRI	XI PSI
+L05	47	uncertain	XI	DTRI SQ	PSI C
+L05	48	uncertain	PSI	SQ XI	C DTRIS
+L06	4	uncertain	DTRI	M TRIS	SQ DTRIS
+L06	12	disagree	Q | X	TRIX ALPHA	DTRIS TRIS
+L06	14	uncertain	TRIS	Q DTRIS	OMEGA TRIX
+L06	17	uncertain	XI	OMEGA TRIX	CUP DTRI
+L06	22	uncertain	PLUS	TRIX TRIS	PSI NEQ
+L06	23	uncertain	PSI	TRIS PLUS	NEQ DOT
+L06	28	disagree	NEW:single-arch-tail | NEW:h-shaped hook	I DOT	PSI M
+L06	29	uncertain	PSI	DOT NEW:single-arch-tail	M NEW:o with vertical stroke through
+L06	31	disagree	- | NEW:o with vertical stroke through	PSI M	NEW:loop-x-tail HASH
+L06	32	disagree	NEW:loop-x-tail | X	M NEW:o with vertical stroke through	HASH CUP
+L06	33	uncertain	HASH	NEW:o with vertical stroke through NEW:loop-x-tail	CUP O
+L06	36	uncertain	Z	CUP O	NEW:loop-x-tail DTRIS
+L06	37	disagree	NEW:loop-x-tail | X	O Z	DTRIS C
+L06	40	uncertain	PSI	DTRIS C	ALPHA Q
+L06	42	disagree	Q | X	PSI ALPHA	M DOT
+L06	44	disagree	DOT | -	Q M	I DOT
+L06	45	uncertain	I	M DOT	DOT C
+L06	48	disagree	DTRIS | DTRI	DOT C	NEQ NEW:hook-crossed-tail
+L06	50	disagree	NEW:hook-crossed-tail | TRIS	DTRIS NEQ	Q NEW:loop-x-tail
+L06	51	uncertain	Q	NEQ NEW:hook-crossed-tail	NEW:loop-x-tail NEQ
+L06	52	disagree	NEW:loop-x-tail | X	NEW:hook-crossed-tail Q	NEQ
+L07	1	uncertain	TRIS		M NEW:loop-x-tail
+L07	3	disagree	NEW:loop-x-tail | X	TRIS M	DTRI PSI
+L07	5	uncertain	PSI	NEW:loop-x-tail DTRI	NEW:T-bar NEW:loop-x-tail
+L07	6	disagree	NEW:T-bar | -	DTRI PSI	NEW:loop-x-tail C
+L07	7	disagree	NEW:loop-x-tail | X	PSI NEW:T-bar	C Q
+L07	8	disagree	C | ALPHA	NEW:T-bar NEW:loop-x-tail	Q
+L07	9	disagree	Q | X	NEW:loop-x-tail C	
+L08	4	disagree	Q | X	O ALPHA	PLUS TRIS
+L08	6	uncertain	TRIS	Q PLUS	NEQ INVT
+L08	8	uncertain	INVT	TRIS NEQ	OMEGA DOT
+L08	13	uncertain	PSI	I DOT	TRIS NEW:loop-x-tail
+L08	15	disagree	NEW:loop-x-tail | X	PSI TRIS	TWO NEW:small-s
+L08	16	uncertain	TWO	TRIS NEW:loop-x-tail	NEW:small-s PSI
+L08	17	disagree	NEW:small-s | NEW:s-shape	NEW:loop-x-tail TWO	PSI DTRIS
+L08	18	uncertain	PSI	TWO NEW:small-s	DTRIS M
+L08	21	uncertain	PSI	DTRIS M	PSI OMEGA
+L08	22	uncertain	PSI	M PSI	OMEGA C
+L08	23	disagree	OMEGA | ALPHA	PSI PSI	C O
+L08	27	disagree	Q | X	O ALPHA	

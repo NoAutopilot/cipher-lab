@@ -1,0 +1,331 @@
+line	position	sign	confidence	alt	why
+L01	1	PSI	M	B:ALPHA	differ
+L01	2	TRIS	M	B:TRIX	differ
+L01	3	HASH	H		agree
+L01	4	Q	M	B:PSI	differ
+L01	5	OS	H		agree
+L01	6	NEW:single-arch-tail	M	B:NEW:h-shaped hook	differ
+L01	7	Q	H		agree
+L01	8	NEW:loop-x-tail	M	B:X	differ
+L01	9	TRIS	H		agree
+L01	10	THREE	H		agree
+L01	11	INVT	H		agree
+L01	12	SQ	H		agree
+L01	13	OS	H		agree
+L01	14	DTRI	H		agree
+L01	15	Z	M	B:XI	differ
+L01	16	HASH	M		agree-flagged
+L01	17	CUP	H		agree
+L01	18	INVT	H		agree
+L01	19	Q	M	B:CENT	differ
+L01	20	TRI	H		agree
+L01	21	DTRI	H		agree
+L01	22	DTRIS	H		agree
+L01	23	PSI	H		agree
+L01	24	TRIS	M		agree-flagged
+L01	25	INVT	H		agree
+L01	26	CUP	H		agree
+L01	27	NEW:loop-x-tail	M	B:X	differ
+L01	28	OS	M	B:O	differ
+L01	29	OMEGA	H		agree
+L01	30	INVT	H		agree
+L01	31	CUP	H		agree
+L01	32	PSI	M		agree-flagged
+L01	33	Z	M	B:XI	differ
+L01	34	C	H		agree
+L01	35	INVT	H		agree
+L01	36	HASH	M		agree-flagged
+L01	37	O	H		agree
+L01	38	M	H		agree
+L01	39	ALPHA	H		agree
+L01	40	DTRIS	H		agree
+L01	41	Q	H		agree
+L02	1	TRIS	H		agree
+L02	2	O	H		agree
+L02	3	DTRIS	H		agree
+L02	4	M	M	B:XI	differ
+L02	5	DOT	H		agree
+L02	6	I	H		agree
+L02	7	DOT	H		agree
+L02	8	C	H		agree
+L02	9	O	H		agree
+L02	10	HASH	H		agree
+L02	11	NEW:loop-x-tail	M	B:X	differ
+L02	12	Z	M		agree-flagged
+L02	13	PSI	M		agree-flagged
+L02	14	NEQ	H		agree
+L02	15	SQ	H		agree
+L02	16	INVT	M		agree-flagged
+L02	17	M	H		agree
+L02	18	C	H		agree
+L02	19	NEW:cross-over-o	M	B:OS	differ
+L02	20	INVT	H		agree
+L02	21	TRIS	M		agree-flagged
+L02	22	PLUS	M		agree-flagged
+L02	23	O	M		agree-flagged
+L02	24	C	H		agree
+L02	25	INVT	M	B:-	gap
+L02	26	HASH	M		agree-flagged
+L02	27	ALPHA	H		agree
+L02	28	Q	M	B:X	differ
+L02	29	ALPHA	H		agree
+L02	30	ALPHA	H		agree
+L02	31	DTRI	H		agree
+L02	32	TRIS	H		agree
+L02	33	NEW:loop-x-tail	M	B:X	differ
+L02	34	PLUS	M		agree-flagged
+L02	35	NEW:loop-x-tail	M	B:X	differ
+L02	36	Z	M		agree-flagged
+L02	37	DTRI	H		agree
+L02	38	NEQ	H		agree
+L02	39	THREE	H		agree
+L02	40	PSI	M		agree-flagged
+L02	41	HASH	M		agree-flagged
+L02	42	CUP	H		agree
+L02	43	O	H		agree
+L02	44	TRIS	H		agree
+L02	45	DTRIS	M		agree-flagged
+L02	46	PLUS	M		agree-flagged
+L02	47	O	H		agree
+L02	48	M	H		agree
+L02	49	DTRI	M	B:DTRIS	differ
+L02	50	M	M		agree-flagged
+L02	51	TRIX	M		agree-flagged
+L03	1	PSI	M		agree-flagged
+L03	2	XI	L		agree-flagged
+L03	3	OS	M		agree-flagged
+L03	4	SQ	H		agree
+L03	5	M	H		agree
+L03	6	X	M	A:-	gap
+L03	7	NEW:loop-x-tail	M	B:O	differ
+L03	8	NEW:barred-o	M	B:O	differ
+L03	9	NEW:phi	M	B:NEW:o with vertical stroke through	differ
+L03	10	O	M		agree-flagged
+L03	11	OMEGA	H		agree
+L03	12	NEW:loop-x-tail	M	B:X	differ
+L03	13	NEQ	H		agree
+L03	14	PSI	M	A:-	gap
+L03	15	PSI	M		agree-flagged
+L03	16	NEW:hook-crossed-tail	M	B:TRIS	differ
+L03	17	O	H		agree
+L03	18	OS	H		agree
+L03	19	C	H		agree
+L03	20	PSI	M		agree-flagged
+L03	21	DTRIS	H		agree
+L03	22	TRIX	M		agree-flagged
+L03	23	XI	M		agree-flagged
+L03	24	CUP	H		agree
+L03	25	O	H		agree
+L03	26	Z	M		agree-flagged
+L03	27	INVT	H		agree
+L03	28	TRI	H		agree
+L03	29	DTRI	M		agree-flagged
+L03	30	PSI	M		agree-flagged
+L03	31	OMEGA	M		agree-flagged
+L03	32	O	M	B:-	gap
+L03	33	NEW:loop-x-tail	M	B:X	differ
+L03	34	SQ	H		agree
+L03	35	PSI	M		agree-flagged
+L03	36	TRIS	M		agree-flagged
+L03	37	ALPHA	M	B:-	gap
+L03	38	M	H		agree
+L03	39	O	H		agree
+L03	40	C	H		agree
+L03	41	OS	H		agree
+L03	42	DTRI	M	B:DTRIS	differ
+L03	43	C	H		agree
+L03	44	DTRIS	H		agree
+L03	45	NEW:loop-x-tail	M	B:X	differ
+L03	46	C	H		agree
+L03	47	SQ	M		agree-flagged
+L03	48	DTRI	H		agree
+L03	49	DIV	H		agree
+L03	50	TRIX	M		agree-flagged
+L04	1	ALPHA	L		agree-flagged
+L04	2	Q	M	B:-	gap
+L04	3	DTRIS	H		agree
+L04	4	Q	M		agree-flagged
+L04	5	OS	H		agree
+L04	6	C	H		agree
+L04	7	PSI	M		agree-flagged
+L04	8	SQ	H		agree
+L04	9	NEW:cross-over-o	M	B:OS	differ
+L04	10	INVT	H		agree
+L04	11	Z	M		agree-flagged
+L04	12	Q	M		agree-flagged
+L04	13	HASH	M		agree-flagged
+L04	14	CUP	H		agree
+L04	15	NEQ	H		agree
+L04	16	ALPHA	H		agree
+L04	17	ALPHA	H		agree
+L04	18	DTRI	H		agree
+L04	19	NEQ	H		agree
+L04	20	DTRIS	H		agree
+L04	21	Q	H		agree
+L04	22	CUP	H		agree
+L04	23	O	H		agree
+L04	24	ALPHA	H		agree
+L04	25	ALPHA	H		agree
+L04	26	DTRI	H		agree
+L04	27	ALPHA	H		agree
+L04	28	ALPHA	H		agree
+L04	29	O	M		agree-flagged
+L04	30	TRIS	M		agree-flagged
+L04	31	PLUS	M		agree-flagged
+L04	32	Q	M	B:CENT	differ
+L04	33	HASH	M		agree-flagged
+L04	34	CUP	H		agree
+L04	35	O	H		agree
+L04	36	X	H		agree
+L04	37	Q	M	B:X	differ
+L04	38	NEW:loop-x-tail	M	B:X	differ
+L04	39	C	H		agree
+L04	40	O	H		agree
+L04	41	Z	M		agree-flagged
+L04	42	O	H		agree
+L04	43	SQ	M		agree-flagged
+L04	44	NEW:loop-x-tail	M	B:X	differ
+L04	45	NEW:cross-over-o	M	B:OS	differ
+L04	46	PSI	M		agree-flagged
+L04	47	NEQ	H		agree
+L04	48	Q	M		agree-flagged
+L05	1	SQ	M		agree-flagged
+L05	2	M	H		agree
+L05	3	PSI	M		agree-flagged
+L05	4	NEW:loop-x-tail	M	B:X	differ
+L05	5	I	M		agree-flagged
+L05	6	I	M		agree-flagged
+L05	7	O	H		agree
+L05	8	DTRIS	H		agree
+L05	9	ALPHA	H		agree
+L05	10	Q	M	B:X	differ
+L05	11	HASH	H		agree
+L05	12	DTRI	H		agree
+L05	13	NEQ	H		agree
+L05	14	ALPHA	H		agree
+L05	15	Q	M	B:X	differ
+L05	16	TRIX	H		agree
+L05	17	TRIS	M		agree-flagged
+L05	18	OMEGA	H		agree
+L05	19	NEW:loop-x-tail	M	B:Q	differ
+L05	20	SQ	H		agree
+L05	21	NEW:loop-x-tail	M	B:X	differ
+L05	22	HASH	M		agree-flagged
+L05	23	CUP	H		agree
+L05	24	O	M		agree-flagged
+L05	25	TRIS	H		agree
+L05	26	DTRI	H		agree
+L05	27	SQ	H		agree
+L05	28	X	L		agree-flagged
+L05	29	M	H		agree
+L05	30	OS	M		agree-flagged
+L05	31	PLUS	H		agree
+L05	32	INVT	M		agree-flagged
+L05	33	HASH	H		agree
+L05	34	Q	M		agree-flagged
+L05	35	X	H		agree
+L05	36	Q	M	B:X	differ
+L05	37	DTRI	H		agree
+L05	38	NEQ	H		agree
+L05	39	THREE	H		agree
+L05	40	DTRI	H		agree
+L05	41	C	H		agree
+L05	42	DIV	H		agree
+L05	43	Q	M	B:PSI	differ
+L05	44	NEQ	H		agree
+L05	45	DTRI	H		agree
+L05	46	SQ	M		agree-flagged
+L05	47	XI	M		agree-flagged
+L05	48	PSI	M		agree-flagged
+L05	49	C	H		agree
+L05	50	DTRIS	H		agree
+L05	51	TRIX	H		agree
+L06	1	SQ	H		agree
+L06	2	M	H		agree
+L06	3	TRIS	H		agree
+L06	4	DTRI	M		agree-flagged
+L06	5	SQ	H		agree
+L06	6	DTRIS	H		agree
+L06	7	C	H		agree
+L06	8	TRIX	H		agree
+L06	9	THREE	H		agree
+L06	10	TRIX	H		agree
+L06	11	ALPHA	H		agree
+L06	12	Q	M	B:X	differ
+L06	13	DTRIS	H		agree
+L06	14	TRIS	M		agree-flagged
+L06	15	OMEGA	H		agree
+L06	16	TRIX	H		agree
+L06	17	XI	M		agree-flagged
+L06	18	CUP	H		agree
+L06	19	DTRI	H		agree
+L06	20	TRIX	H		agree
+L06	21	TRIS	H		agree
+L06	22	PLUS	M		agree-flagged
+L06	23	PSI	M		agree-flagged
+L06	24	NEQ	H		agree
+L06	25	DOT	H		agree
+L06	26	I	H		agree
+L06	27	DOT	H		agree
+L06	28	NEW:single-arch-tail	M	B:NEW:h-shaped hook	differ
+L06	29	PSI	M		agree-flagged
+L06	30	M	H		agree
+L06	31	NEW:o with vertical stroke through	M	A:-	gap
+L06	32	NEW:loop-x-tail	M	B:X	differ
+L06	33	HASH	M		agree-flagged
+L06	34	CUP	H		agree
+L06	35	O	H		agree
+L06	36	Z	M		agree-flagged
+L06	37	NEW:loop-x-tail	M	B:X	differ
+L06	38	DTRIS	H		agree
+L06	39	C	H		agree
+L06	40	PSI	M		agree-flagged
+L06	41	ALPHA	H		agree
+L06	42	Q	M	B:X	differ
+L06	43	M	H		agree
+L06	44	DOT	M	B:-	gap
+L06	45	I	M		agree-flagged
+L06	46	DOT	H		agree
+L06	47	C	H		agree
+L06	48	DTRIS	M	B:DTRI	differ
+L06	49	NEQ	H		agree
+L06	50	NEW:hook-crossed-tail	M	B:TRIS	differ
+L06	51	Q	M		agree-flagged
+L06	52	NEW:loop-x-tail	M	B:X	differ
+L06	53	NEQ	H		agree
+L07	1	TRIS	M		agree-flagged
+L07	2	M	H		agree
+L07	3	NEW:loop-x-tail	M	B:X	differ
+L07	4	DTRI	H		agree
+L07	5	PSI	M		agree-flagged
+L07	6	NEW:T-bar	M	B:-	gap
+L07	7	NEW:loop-x-tail	M	B:X	differ
+L07	8	C	M	B:ALPHA	differ
+L07	9	Q	M	B:X	differ
+L08	1	HASH	H		agree
+L08	2	O	H		agree
+L08	3	ALPHA	H		agree
+L08	4	Q	M	B:X	differ
+L08	5	PLUS	H		agree
+L08	6	TRIS	M		agree-flagged
+L08	7	NEQ	H		agree
+L08	8	INVT	M		agree-flagged
+L08	9	OMEGA	H		agree
+L08	10	DOT	H		agree
+L08	11	I	H		agree
+L08	12	DOT	H		agree
+L08	13	PSI	M		agree-flagged
+L08	14	TRIS	H		agree
+L08	15	NEW:loop-x-tail	M	B:X	differ
+L08	16	TWO	M		agree-flagged
+L08	17	NEW:small-s	M	B:NEW:s-shape	differ
+L08	18	PSI	M		agree-flagged
+L08	19	DTRIS	H		agree
+L08	20	M	H		agree
+L08	21	PSI	M		agree-flagged
+L08	22	PSI	M		agree-flagged
+L08	23	OMEGA	M	B:ALPHA	differ
+L08	24	C	H		agree
+L08	25	O	H		agree
+L08	26	ALPHA	H		agree
+L08	27	Q	M	B:X	differ

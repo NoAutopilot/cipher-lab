@@ -1,0 +1,65 @@
+line	col	A	B	flagged	crop
+L01	1	PSI	ALPHA	AB	
+L01	2	TRIS	TRIX	AB	
+L01	4	Q	PSI	B	
+L01	6	NEW:single-arch-tail	NEW:h-shaped hook	AB	
+L01	8	NEW:loop-x-tail	X	B	
+L01	15	Z	XI	A	
+L01	19	Q	CENT	B	
+L01	27	NEW:loop-x-tail	X	B	
+L01	28	OS	O	A	
+L01	33	Z	XI	AB	
+L02	4	M	XI	B	
+L02	11	NEW:loop-x-tail	X	B	
+L02	19	NEW:cross-over-o	OS	AB	
+L02	25	INVT	-	A	
+L02	28	Q	X	AB	
+L02	33	NEW:loop-x-tail	X	B	
+L02	35	NEW:loop-x-tail	X	B	
+L02	49	DTRI	DTRIS	B	
+L03	6	-	X	B	
+L03	7	NEW:loop-x-tail	O	B	
+L03	8	NEW:barred-o	O	AB	
+L03	9	NEW:phi	NEW:o with vertical stroke through	AB	
+L03	12	NEW:loop-x-tail	X	B	
+L03	14	-	PSI	B	
+L03	16	NEW:hook-crossed-tail	TRIS	AB	
+L03	32	O	-	A	
+L03	33	NEW:loop-x-tail	X	AB	
+L03	37	ALPHA	-	A	
+L03	42	DTRI	DTRIS	B	
+L03	45	NEW:loop-x-tail	X	B	
+L04	2	Q	-	A	
+L04	9	NEW:cross-over-o	OS	AB	
+L04	32	Q	CENT	B	
+L04	37	Q	X	AB	
+L04	38	NEW:loop-x-tail	X	B	
+L04	44	NEW:loop-x-tail	X	B	
+L04	45	NEW:cross-over-o	OS	B	
+L05	4	NEW:loop-x-tail	X	B	
+L05	10	Q	X	AB	
+L05	15	Q	X	AB	
+L05	19	NEW:loop-x-tail	Q	B	
+L05	21	NEW:loop-x-tail	X	B	
+L05	36	Q	X	AB	
+L05	43	Q	PSI	B	
+L06	12	Q	X	AB	
+L06	28	NEW:single-arch-tail	NEW:h-shaped hook	AB	
+L06	31	-	NEW:o with vertical stroke through	B	
+L06	32	NEW:loop-x-tail	X	AB	
+L06	37	NEW:loop-x-tail	X	B	
+L06	42	Q	X	AB	
+L06	44	DOT	-		
+L06	48	DTRIS	DTRI	A	
+L06	50	NEW:hook-crossed-tail	TRIS	AB	
+L06	52	NEW:loop-x-tail	X	B	
+L07	3	NEW:loop-x-tail	X	B	
+L07	6	NEW:T-bar	-	A	
+L07	7	NEW:loop-x-tail	X	AB	
+L07	8	C	ALPHA		
+L07	9	Q	X	AB	
+L08	4	Q	X	AB	
+L08	15	NEW:loop-x-tail	X	B	
+L08	17	NEW:small-s	NEW:s-shape	AB	
+L08	23	OMEGA	ALPHA	A	
+L08	27	Q	X	AB	
