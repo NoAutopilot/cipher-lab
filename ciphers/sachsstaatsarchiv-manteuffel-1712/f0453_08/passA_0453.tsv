@@ -1,0 +1,14 @@
+# MANT-0453 blind pass A (Sonnet, crop order L01 L02 R01..R06), verbatim TSV as returned, 9 Oct 2026
+crop	group_index	codes	conf_per_code	alternatives	words_before	words_after	interlinear(yes/no)	note
+f0453L_L02 (also seen in L01/L02 overlap only for L02 line 1)	1	15.60.33.51.29.35	15:low, 60:high, 33:high, 51:low, 29:high (9 looped), 35:high	15 -> 45 or 16; 51 -> 31	"l'article de"	"etoit ajusté"	no	small raised mark after "ajusté" at line end (probably an abbreviation or the start of the next word, not a code letter)
+f0453R_L01	2	198	198: low (first digit clear 1, last digit 8 looks like 9/8)	198 -> 190 or 198 with 9 looped (197)	"que"	"a écrit depuis peu"	no	followed by a dot
+f0453R_L01	3	257	high for 2 and 5, low for 7	257 -> 251 or 259	"a" (line start)	"qu'il est toujours disposé"	no	followed by a dot
+f0453R_L01	4	60.35.21.33.14.15.10.26	60:high, 35:high, 21:high, 33:high, 14:low, 15:low, 10:high, 26:high	14 -> 11 or 44; 15 -> 45	"disposé à"	"; et qui" (a deleted or blotted word precedes "qui")	no	run of 8 codes; a blot after 26
+f0453R_L01	5	3.	ordinary	-	(line start)	"Il m'a dit de"	no	paragraph number "3." at left margin
+f0453R_L02	6	150	1:high, 5:high, 0:low (small)	150 -> 130 or 190	"convenir avec"	"des conditions de"	no	followed by a dot
+f0453R_L02	7	257	2:high, 5:high, 7:low	257 -> 259	"que"	"lui feroit plaisir d'envoyer"	no	same value as group 3
+f0453R_L03	8	170	1:high, 7:low (could be 1 or 9), 0:low	170 -> 190 or 110	"l'intention de"	"et ajuster ainsi l'af[faire]"	no	followed by a dot; the 7 is a 1/7 risk
+f0453R_L04 (and R_L03 line 2? no, L04 line 1)	9	187	1:high, 8:low, 7:low (looped 9 possible)	187 -> 189 or 197	"consentir"	"[line ends]; M. m'a demandé ce qui me sembloit de cette proposition"	no	end of line 1, followed by a dot; line 2 begins with a blotted-looking "M."/"S." abbreviation
+f0453R_L05	10	150	1:high, 5:high, 0:low	150 -> 130 or 190	"et si"	"voudroit entrer en pareille négociation"	no	small, same shape as group 6
+f0453R_L06	11	150	1:high, 5:low, 0:low	150 -> 130	"que"	"n'entreroit jamais en aucune ne[gociation]"	no	line 2 of the strip; the digits are small and written together
+# Total code groups found: 11 (plus 1 ordinary numeral) [the pass's own count; its rows list 10 code groups + the ordinary '3.']

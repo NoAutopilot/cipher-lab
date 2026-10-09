@@ -1,0 +1,15 @@
+# MANT-0453 blind pass B (Sonnet, reversed crop order R06..R01 L02 L01), verbatim TSV as returned, 9 Oct 2026
+crop	group_index	codes	conf_per_code	alternatives	words_before	words_after	interlinear(yes/no)	note
+f0453R_L06.jpg	1	150	high	none	"je croyois pouvoir l'assurer, que"	"n'entreroit jamais en aucune"	no	line 2 of the strip. Digits read "150" with a small 0.
+f0453R_L05.jpg	2	150	high	none	"Et si"	"voudroit entrer en pareille négociation"	no	line 1 of the strip.
+f0453R_L04.jpg	3	187	187 low-medium (the 7 is the doubtful digit)	197 (second digit); 7 could be a looped 9 (so 189)	"d'y faire consentir"	(end of line; next line begins "S. m'a demandé")	no	line 1 of the strip. A stray tick or quote mark follows the number. The "S." that opens line 2 is the abbreviation for Sa Majesté, not a number.
+f0453R_L03.jpg	4	170	high for 1 and 0; medium for 7	179 or 190 (7 vs 9)	"en passant de l'intention de"	"et ajuster ainsi l'af-"	no	line 2 of the strip. Trailing dot. A small raised mark sits above "l'" in "de l'intention" (a superscript like 2). I read it as a flourish or marginal tick, not a code.
+f0453R_L02.jpg	5	150	high	none	"convenir avec"	"des conditions de"	no	line 1 of the strip. Trailing dot.
+f0453R_L02.jpg	6	257	high for 2 and 5; medium for 7	259 (7 vs 9)	"cette démarche; que"	"lui feroit plaisir d'envoyer"	no	line 2 of the strip. Trailing dot.
+f0453R_L01.jpg	7	3	n/a (ordinary)	none	(start of line)	"Il m'a dit de"	no	ORDINARY paragraph number "3." at the left margin. Not a code.
+f0453R_L01.jpg	8	198	high for 1 and 8; medium for 9	197, 178 (9 may be a 7)	"même, que"	"a écrit depuis peu"	no	line 1 of the strip. Trailing dot. A struck-out word appears just before "même".
+f0453R_L01.jpg	9	257	high for 2 and 5; medium for 7	259	"peu à"	"qu'il est toujours disposé à"	no	line 2 of the strip. Trailing dot, then a comma.
+f0453R_L01.jpg	10	60.35.21.33.14.15.10.26	60 high; 35 medium (35/55); 21 high; 33 medium (33/53); 14 low; 15 low; 10 medium; 26 high	35 -> 55; 33 -> 53; 14.15 may be one cramped group 1415, so the 14/15 split is uncertain; 21 -> 27; 10 -> 16	"toujours disposé à"	"; [struck word] qu'"	no	line 2 of the strip, one run of 8 codes joined by dots and ending in ";". A struck-out word with a blot follows the run.
+f0453L_L02.jpg	11	15.60.33.51.29.35	15 medium; 60 high; 33 medium; 51 low (51/57/31); 29 low (the 9 is looped, so 29/27); 35 medium	15 -> 13 or 18; 33 -> 53; 51 -> 57 or 31; 29 -> 27; 35 -> 55	"me tems si l'article de"	"étoit ajusté"	no	line 1 of the strip, one run of 6 codes. Small raised marks follow "ajusté" at the right edge. They sit on a word, not on a code.
+f0453L_L01.jpg	-	none	-	-	-	-	no	No numbers. Text reads "feroit un plaisir singulier de facilité l'affa-re au gré de S.M. Je lui ai demandé en". "S.M." is an abbreviation, not a number.
+# Total code groups found: 10 (plus 1 ordinary numeral)

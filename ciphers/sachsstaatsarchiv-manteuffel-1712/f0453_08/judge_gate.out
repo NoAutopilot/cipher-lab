@@ -1,0 +1,15 @@
+leaf_0453	letters 16	power at L: 46/69 = 0.67	real -1.065	permuted mean -1.994 p95 -1.488 p99 -1.301 max -1.118	permuted>=real 0/1000	too-short (power 0.67 < 0.80; own score above p95)	crosserenoncerle
+pooled_no88	letters 68	power at L: 0/0 = 0.00	real -1.528	permuted mean -2.017 p95 -1.702 p99 -1.579 max -1.463	permuted>=real 5/1000	too-short (power 0.00 < 0.80; own score above p95)	crosserenoncerlerebellerozrasewskyrenonceaarnoldabdiquerrozrasewskyr
+# per run (reported, not gates): run, letters, score, decoded letters
+694-08_0453_r01	6	-1.660	crosse
+694-08_0453_r02	0	nan	
+694-08_0453_r03	0	nan	
+694-08_0453_r04	8	-0.904	renoncer
+694-08_0453_r05	0	nan	
+694-08_0453_r06	0	nan	
+694-08_0453_r07	2	nan	le
+694-08_0453_r08	0	nan	
+694-08_0453_r09	0	nan	
+694-08_0453_r10	0	nan	
+# two-context check (reported): 0453 run vs 0454 run sharing a 5-letter stem, codes side by side
+694-08_0453_r04 'renoncer' 60.35.21.33.14.15.10.26 | 694-08_0454_r07 'renoncea' 60.35.14.16.21.30.35.50

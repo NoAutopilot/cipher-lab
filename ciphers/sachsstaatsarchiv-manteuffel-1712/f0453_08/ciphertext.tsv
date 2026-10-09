@@ -1,0 +1,31 @@
+# MANT-0453 (9 Oct 2026): HStA Dresden 10026 Loc. 694/08 URL file 0453 (film card 0454), ff.359v-360; letter No. 88, Berlin 29 Oct 1712
+# (head on URL 0451 f.358). Every code group on the frame: left page foot (r01) and right page para 3 (r02-r10); no codes elsewhere on the
+# frame (worker's look at 0.6x native on both pages' upper parts). Two blind Sonnet passes (passA_0453.tsv crop order, passB_0453.tsv
+# reversed) agree on every group and code (10 groups, 22 tokens) + worker reconciliation on native zooms (one unit). Ordinary numeral
+# '3.' (paragraph) and '4 semaines' are not codes. No interlinear letters on any code (both passes + worker): gate (a) n/a.
+# Low: r01 tok4 51 (both passes low; zoom reads 51, alt 57/31; 51 and 57 both s); r02 198 (A low, B medium; alt 197/178); r04 tok5 14
+# (the 4 is crossed by a stroke, '14' or a struck digit before 15; both passes low); r04 tok6 15 (both low; zoom clear); r08 187 (both
+# low-medium, alt 189/197). r07 170 settled on zoom (clear 1-7-0, not 150; both passes 170).
+line	pos	sign	conf
+694-08_0453_r01	1	15	high
+694-08_0453_r01	2	60	high
+694-08_0453_r01	3	33	high
+694-08_0453_r01	4	51	low
+694-08_0453_r01	5	29	high
+694-08_0453_r01	6	35	high
+694-08_0453_r02	1	198	low
+694-08_0453_r03	1	257	high
+694-08_0453_r04	1	60	high
+694-08_0453_r04	2	35	high
+694-08_0453_r04	3	21	high
+694-08_0453_r04	4	33	high
+694-08_0453_r04	5	14	low
+694-08_0453_r04	6	15	low
+694-08_0453_r04	7	10	high
+694-08_0453_r04	8	26	high
+694-08_0453_r05	1	150	high
+694-08_0453_r06	1	257	high
+694-08_0453_r07	1	170	high
+694-08_0453_r08	1	187	low
+694-08_0453_r09	1	150	high
+694-08_0453_r10	1	150	high

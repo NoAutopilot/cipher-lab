@@ -1,0 +1,23 @@
+line	pos	sign	conf	value	grade
+694-08_0453_r01	1	15	high	c	M
+694-08_0453_r01	2	60	high	r|re|ro	M
+694-08_0453_r01	3	33	high	o	C
+694-08_0453_r01	4	51	low	s|sa	M
+694-08_0453_r01	5	29	high	s	C
+694-08_0453_r01	6	35	high	e	C
+694-08_0453_r02	1	198	low	Stanislas	M
+694-08_0453_r03	1	257	high	Le roi de Prusse	C
+694-08_0453_r04	1	60	high	r|re|ro	M
+694-08_0453_r04	2	35	high	e	C
+694-08_0453_r04	3	21	high	n	C
+694-08_0453_r04	4	33	high	o	C
+694-08_0453_r04	5	14	low	n	M
+694-08_0453_r04	6	15	low	c	M
+694-08_0453_r04	7	10	high	e	C
+694-08_0453_r04	8	26	high	r	C
+694-08_0453_r05	1	150	high	le Roi de Pologne	C
+694-08_0453_r06	1	257	high	Le roi de Prusse	C
+694-08_0453_r07	1	170	high	le	C
+694-08_0453_r08	1	187	low	Roi de Suède	M
+694-08_0453_r09	1	150	high	le Roi de Pologne	C
+694-08_0453_r10	1	150	high	le Roi de Pologne	C

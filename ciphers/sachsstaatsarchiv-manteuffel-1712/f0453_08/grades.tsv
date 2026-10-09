@@ -1,0 +1,25 @@
+# frame 0453 gates: b1 too-short (power 0.67 < 0.80; own score above p95); b2 too-short (power 0.00 < 0.80; own score above p95); no gloss (gate (a) n/a)
+# tokens 22: H 0, C 0, S 0, M 22, I 0, U 0
+tokid	code	key_value	conf	grade	why
+694-08_0453_r01.1	15	c	high	M	gate (b) not a test at this N (PREREG grade rule)
+694-08_0453_r01.2	60	r|re|ro	high	M	gate (b) not a test at this N (PREREG grade rule)
+694-08_0453_r01.3	33	o	high	M	gate (b) not a test at this N (PREREG grade rule)
+694-08_0453_r01.4	51	s|sa	low	M	low-conf transcription
+694-08_0453_r01.5	29	s	high	M	gate (b) not a test at this N (PREREG grade rule)
+694-08_0453_r01.6	35	e	high	M	gate (b) not a test at this N (PREREG grade rule)
+694-08_0453_r02.1	198	Stanislas	low	M	name/word code (key value shown, identification I)
+694-08_0453_r03.1	257	Le roi de Prusse	high	M	name/word code (key value shown, identification I)
+694-08_0453_r04.1	60	r|re|ro	high	M	gate (b) not a test at this N (PREREG grade rule)
+694-08_0453_r04.2	35	e	high	M	gate (b) not a test at this N (PREREG grade rule)
+694-08_0453_r04.3	21	n	high	M	gate (b) not a test at this N (PREREG grade rule)
+694-08_0453_r04.4	33	o	high	M	gate (b) not a test at this N (PREREG grade rule)
+694-08_0453_r04.5	14	n	low	M	low-conf transcription
+694-08_0453_r04.6	15	c	low	M	low-conf transcription
+694-08_0453_r04.7	10	e	high	M	gate (b) not a test at this N (PREREG grade rule)
+694-08_0453_r04.8	26	r	high	M	gate (b) not a test at this N (PREREG grade rule)
+694-08_0453_r05.1	150	le Roi de Pologne	high	M	name/word code (key value shown, identification I)
+694-08_0453_r06.1	257	Le roi de Prusse	high	M	name/word code (key value shown, identification I)
+694-08_0453_r07.1	170	le	high	M	gate (b) not a test at this N (PREREG grade rule)
+694-08_0453_r08.1	187	Roi de Suède	low	M	name/word code (key value shown, identification I)
+694-08_0453_r09.1	150	le Roi de Pologne	high	M	name/word code (key value shown, identification I)
+694-08_0453_r10.1	150	le Roi de Pologne	high	M	name/word code (key value shown, identification I)

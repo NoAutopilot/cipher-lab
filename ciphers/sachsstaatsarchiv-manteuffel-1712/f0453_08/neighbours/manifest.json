@@ -1,0 +1,42 @@
+[
+ {
+  "file": "0450.jpg",
+  "url": "https://www.archiv.sachsen.de/digitalisate/3a83f921-9a43-485f-874b-34653ed59b68/fullsize/0450.jpg",
+  "fetched": "2026-10-09 08:03 UTC",
+  "by": "MANT-0453",
+  "http": 200,
+  "sha256": "847927d89129ab90a4eada50b6dc2ac00df46e12387e67fb625af774d6d2c58a",
+  "film_card_label": "Aufnahme Einheit 0451",
+  "folio": "f.357 (right page stamp)",
+  "committed_copy": "0450_1600.jpg",
+  "note": "full-size not committed (folder over 30 MB); re-fetch from url"
+ },
+ {
+  "file": "0451.jpg",
+  "url": "https://www.archiv.sachsen.de/digitalisate/3a83f921-9a43-485f-874b-34653ed59b68/fullsize/0451.jpg",
+  "fetched": "2026-10-09 08:03 UTC",
+  "by": "MANT-0453",
+  "http": 200,
+  "sha256": "d4f8066e04bdf53fe97efd3f9929e1d20f1ec56bd247ab98f9399752f9b3706f",
+  "film_card_label": "Aufnahme Einheit 0452",
+  "folio": "f.358 (right page stamp)",
+  "committed_copy": "0451_1600.jpg",
+  "note": "full-size not committed (folder over 30 MB); re-fetch from url"
+ },
+ {
+  "file": "0453.jpg",
+  "url": "https://www.archiv.sachsen.de/digitalisate/3a83f921-9a43-485f-874b-34653ed59b68/fullsize/0453.jpg",
+  "fetched": "2026-10-09 08:03 UTC",
+  "by": "MANT-0453",
+  "http": 200,
+  "sha256": "aa6766c203dbbdd7901b85c9fb317cdb124e2fe31109714b1d660b2b04d674e4",
+  "film_card_label": "Aufnahme Einheit 0454",
+  "folio": "f.360 (right page stamp)",
+  "committed_copy": "crops only (f0453_08/crops/); 1600 px copy in f0454_08/neighbours/",
+  "note": "full-size not committed (folder over 30 MB); re-fetch from url"
+ },
+ {
+  "file": "0451_head.jpg / 0451_foot.jpg",
+  "note": "native-resolution crops of URL 0451's head line ('Berl. d. 29 oct. 1712.', number 88) and foot ('a Mons. le C. de Fl.') cut by the worker with PIL"
+ }
+]
