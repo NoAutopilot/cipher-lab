@@ -10399,3 +10399,95 @@ status.json row 295 carries N3/D3 with the gap named. FV-FM9b's s.5 fixes for E3
 lead outside this scope, for LANE LEDGER / FIX-FM10, not checked here:** E305 (Eckert to Sheldon, 12 June) reads "[Report] house and Wilson
 point" -- the same White = plain slip (White House) FV-FM9a/9b found in E291 and E302; FV-FM9c owns E305.
 Requests: archive.org 4 (3 djvu downloads, 1 advancedsearch); www.googleapis.com 7 (one 503, one retry); hdl.huntington.org 0.
+
+## AUDIT 2 (AUD2-LEDGER-24)
+
+Second verifier AUD2-LEDGER-24 (account 4, for the orchestrator (account-4) and LANE LEDGER (account 1)), 9 Oct 2026, 14:52-15:1x UTC by
+`date -u`; a separate session and account from the reader FM-R6b and the first auditor FV-FM9c (both account 1); this session had not read or
+audited these entries before. Scope: **E305, E306** (WORK-QUEUE AUD2-LEDGER-24; E304 is N1, no second audit owed). Nothing decoded beyond key
+look-ups in key.md. FV-FM9c's CONTENTdm full-text queries and image eye check were not redone. Key source: `period`. Committed: this section,
+`fortmonroe/aud2_ledger24_print.py` + `.out` (letters-only phrase grep and KWIC over five IA djvu texts fetched once to scratch: Plum, *The
+Military Telegraph during the Civil War* vols 1-2 `militarytelegraph01plumrich`/`02plumrich`; Bates, *Lincoln in the Telegraph Office*
+`lincolnintelegra00bates`; OR I/36 pt 3 `warofrebellion363unit`; OR I/40 pt 2 `warofrebellion402unit`), `fortmonroe/aud2_ledger24_gb.py` +
+`.out` and `aud2_ledger24_gb_retry.out` (Google Books API), the propagation below.
+
+### 1. Prior-work checks
+No items.tsv row for pointers 5740/5744, so by hand (civil-war adapter), as FV-FM9c: (1) own work: pointers 5740, 5744 occur only in their own
+`###` headers and FM-R6b/FV-FM9c's sections -- **no duplicate**; (2) holder: FV-FM9c's CONTENTdm full-text pass (15 queries, all pointers) taken
+as read, not redone; FM-R6b's holder hits 11845/11859/11877 (Perkins stringing wire White House-West Point, 3-6 June) are context; (3) solver
+repositories: UNCHECKED-NET (unsolved-ciphers not cloned); (4) editions: below; (5) G3: the decoded phrases below.
+
+### 2. Key look-ups (independent) and one reading correction
+Every word of both entries matched against key.md rows by hand. **E305: "Wilson" is a key word, not the place name.** key.md p.24 l.17 gives
+Wicoff (L) and **Wilson (R) = West** (H). Both of E305's "Wilson"s stand where "West Point" belongs:
+- "wilson vernon" (line 11): Wilson + Vernon (= Point) = **West Point** -- the same two-word group as "wicoff Vernon" two lines up, with the
+  other homophone of the same key line. FV-FM9c read "Wilson Point" (wilson plain).
+- "Wilson point" (line 2), point in clear: **West Point**, on the exact precedent of **E214** (same sender and recipient, Eckert to Sheldon,
+  27 May 1864: "better send to Wilson point with him", read West Point by key and held through FV-FM5a and AUD2-LEDGER-9).
+- External, non-statistical check that this is the line's geography: **Plum, *Military Telegraph* vol. 2, p.136**: "the line from Fortress
+  Monroe to Yorktown was extended along the north bank of the York from Gloucester Point to West Point, submarine cables being used to cross the
+  York and Mattapony Rivers. From West Point a line was built on the north bank of the Pamunkey to White House. The office at West Point was
+  opened June 2, and at White House on the third." **OR I/36 pt 3 p.262**, Butler to Sheldon, 28 May 1864: the route "across the York at
+  Gloucester Point, thence up to West Point, thence across the Mattapony"; **pp.321-322**, Sheldon to Eckert, 29 May: "Bickford and party
+  arrived this morning ... a steamer to take them direct to West Point ... material to make 20 miles". Grant Papers vol. 11 (be-api snippet,
+  Abercrombie at White House to Rawlins, early June): "The telegraph wire between this place and West Point and beyond has been tampered with."
+  No "Wilson's Point" occurs in OR I/36 pt 3, I/40 pt 2 or Plum (0 hits); Wilson's Wharf is on the James, not on this line.
+- So E305 reads: "impossible to save all the wire between White House and **West Point** ... The cable at West Point should be taken up and
+  the line from there to Gloucester saved, unless it is decided that **West Point** is to be held." The sentence is now internally coherent
+  (holding West Point is the condition for keeping its cable), which "Wilson Point" was not.
+- E305 code groups: **H 21 of 21** (FV-FM9c's 19 plus Wilson x2 = West). No M.
+
+**E306:** every code group agrees with FV-FM9c (Knox, Blubber, Saco, Vernon, Wick, Peach, Shelby, Nabob, Mackerel (C), Perfume as the numeral 3
+before "days", Whelp, Hastings, Wicoff Vernon, Plug Spoon, Tarquin, John(s) Snake, Plank, Publish = 100, punctuation). One divergence of grade,
+not of sense: **"whites" is the key word White (= Report, H, p.23 l.12 L) + s = "reports"** ("Bickford reports that Grant's headquarters are
+removed"), as the decoder had it; the same message codes "report" as "wick" (Wick, the R homophone of the same key line) two lines earlier.
+FV-FM9c's "plain, writes" gives the same meaning but needs a misspelling; I keep the key reading. "white horse" (White House) stays plain, as
+FV-FM9c. E306 code groups: **H 31 + C 1 of 32**. "Mack" (no key row) is a man's name: E307 (5777, 9 Aug 1864) names "Mack Gaughey" as
+Sheldon's stand-in, and Plum vol. 2 has Gaughey 10 times.
+
+### 3. New searches (FV-FM9c's named gaps)
+- **Plum, *Military Telegraph* vols 1-2** (djvu text, whole volumes; phrase grep, 28 phrases, and KWIC Bickford, Sheldon, Perkins,
+  Abercrombie, Gloucester, Wilson, Powhatan, Jamestown, Gaughey): neither telegram. Context only: vol. 2 p.136 (above); vol. 2 p.260: Bickford
+  at Grant's, City Point, later in 1864, "Telegrams for the North ... relayed at City Point ... via Fort Powhatan, Jamestown Island, Yorktown,
+  Fort Monroe" -- the route E306 says Butler could only partly protect on 13 June. The one phrase hit ("act upon your own judgment", vol. 2) is
+  another telegram's ordinary wording.
+- **Bates, *Lincoln in the Telegraph Office*** (whole text): 0 for every phrase; Bickford, Sheldon, Perkins, Abercrombie 0.
+- **Grant Papers vol. 11** (`papersofulyssess0011gran`, be-api, 5 queries): Bickford 0; Sheldon 0 (a board list only); Abercrombie at White
+  House 1-7 June (other letters); "West Point" the wire-tampering letter above; Eckert in notes to other telegrams. Neither telegram.
+- **OR I/36 pt 3 and I/40 pt 2** re-grepped with the corrected phrases ("between White House and West Point", "cable at West Point"): 0.
+- **Google Books API** (key, `country=US`; see the request count below; one retry pass after a 20 s pause, stopped at the next 503s): "impossible to save all
+  the wire" 0; "cable at West Point" "Gloucester" 1864 Eckert -> OR I/36 pt 3 (the 28 May Butler-Sheldon telegram, context); "Perkins and party"
+  Bermuda Hundred, "Grant's headquarters are removed", "with axes or otherwise" Bickford: noise only; "Abercrombie wishes" "White House" office
+  -> Grant Papers (other wording). **Open lead: `"no trouble from guerillas"` matches exactly one volume, an Anderson Galleries bound
+  run of 1908 sale catalogues (Google Books id qaARAAAAYAAJ, 1380 pp., NO_PAGES), and the same volume is the single hit for that phrase AND
+  "telegram".** No snippet is served, so whether it lists a telegram of this text (an autograph-sale lot of Eckert's or Sheldon's papers) or
+  another telegram using the same common phrase is unknown. Recorded as a lead, not a prior print; it bears on E305 only.
+- Not searched (unchanged): NARA RG 107 telegram books (no NARA key; catalogue-level only in any case); the press of 12-14 June 1864 (neither is
+  a press telegram).
+- Requests by host: archive.org 14 (2 OR djvu, 3 Plum/Bates djvu, 3 advancedsearch, 6 be-api fts); www.googleapis.com 21 (one volume
+  record, 20 searches, six of them 503; stopped after the second 503 pass). No hdl.huntington.org request.
+
+### 4. Verdict (key `period` for both)
+- **E305: N3 holds, with an open lead. D3 kept** (H 21 of 21 after the correction). The Anderson Galleries 1908 catalogue hit is the one thing
+  that could move it to N1 (if it prints the telegram) and keeps it from N4 on any later pass until someone reads that page (a HathiTrust or
+  library copy from the owner's machine). **Correction carried:** "Wilson Point" -> **West Point** in the title, line, depth sentence and safe
+  sentence. Safe sentence: "Read at grade H with War Department Cipher No. 1: on 12 June 1864 Eckert told Sheldon at Fort Monroe to have
+  Bickford destroy the White House-West Point wire he could not save, take up the West Point cable and save the line to Gloucester unless West
+  Point was to be held; not located in the Official Records (ser. I vols. 36 pt 3 and 40 pt 2 print the surrounding telegraph traffic), Plum's
+  Military Telegraph, Bates, Grant's or Butler's papers or the Huntington's full-text search (searched 9 Oct 2026); one 1908 sale catalogue
+  matching a phrase of it could not be opened." Depth sentence: "On 12 June 1864 Eckert told Sheldon at Fort Monroe that the wire between White
+  House and West Point could not all be saved and that Bickford should cut up what he could not save, take up the West Point cable and keep the
+  line to Gloucester unless West Point was to be held." External check strengthened: Plum vol. 2 p.136 and OR I/36 pt 3 pp.262, 321-322 name
+  exactly this line (Gloucester Point - West Point by cable - White House). Unsafe: any novelty word; "Wilson's Point" or "Wilson's Wharf".
+- **E306: N3 holds. D3 kept** (H 31 + C 1 of 32 with "whites" = reports). Safe sentence: FV-FM9c's, with "Plum's Military Telegraph, Bates,
+  Grant's papers" added among the places not located. Unsafe: any novelty word; "Perkins was sent to close out the White House line" (Perkins
+  goes to Bermuda Hundred; Bickford closes out the line with Mack's party).
+- **Fixes for FIX-FM10 (add to FV-FM9c s.5; not applied here):** E305 `wilson` is a key word (= West), not plain: drop the `plain: wilson`
+  note so line 11 decodes "[West] [Point]", and read line 2 "Wilson point" as West Point (key + clear "point", E214's pattern); E306 keep
+  `whites` coded (= Report + s), contrary to FV-FM9c's s.5.
+- Propagated: status.json rows E305 and E306 (title/line/depth sentence for E305, completeness, gap, audit_refs, audit_status "two audits");
+  SO-ECKERT-E305 prompt (reading and title corrected: West Point; a note on the open catalogue lead) and SO-ECKERT-E306 prompt (a note on
+  "whites").
+- Postmortem: FV-FM9c's classes and depths hold. One over-reach in E305: "Wilson" was taken as the place name without checking it against
+  the key's own row for West and the earlier E214 telegram from the same desk, which produced a place ("Wilson Point") that the line never
+  touched. Still open: the Anderson Galleries 1908 catalogue (E305), NARA RG 107.

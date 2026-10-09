@@ -1,0 +1,18 @@
+retry/inspect "no trouble from guerillas" | total 1
+    qaARAAAAYAAJ Sale None ['Anderson Galleries, Inc'] 1908 NO_PAGES | 
+retry/inspect "impossible to save all the wire" | total 0
+retry/inspect "Abercrombie wishes" "White House" office | total 341
+    7DAAxfRuXKoC The Papers of Ulysses S. Grant None ['Ulysses S. Grant'] None PARTIAL | ... <b>wishes</b> . &quot; &quot; Nothing will leave here for Port Royal after 12 o&#39;clock to - morrow . It is expected that everything ... <b>Abercrombie</b> has been directed to break up the depot &amp; transfer it to the Pamunkey . It is pre- sumed that Genl&nbsp;...
+    bV-GAAAAMAAJ Congressional Yellow Book None None 2002 NO_PAGES | ... <b>Office</b> of Mayor Charles J. Luken , Cincinnati , OH ; Legislative Assistant ... <b>Abercrombie</b> ( 1994-1996 ) ; Managing Director , Project Partners ... <b>House</b> Committee on <b>House</b> Administration - Accounts Subcommittee ( 1993-1995 )&nbsp;...
+    _z8a0tzBD_4C Congressional Record Proceedings and Debates of the ... Congress ['United States. Congress'] 1976 ALL_PAGES | ... <b>office</b> , and my staff and I had an op- portunity to benefit from their experi- ence as they learned something of the ... <b>Abercrombie</b> , 75 , a mem- ber of the board of directors of the Spartanburg Council on Aging , an active member&nbsp;...
+    LAvbAAAAMAAJ Winning at Any Cost Doping in Olympic Sports ['Joseph A. Califano (Jr.)'] 2000 NO_PAGES | ... <b>White House Office</b> of National Drug Control Policy , the <b>Abercrombie</b> ... <b>wish</b> to thank General Barry R. McCaffrey for his commitment to reducing ... <b>Office</b> of National Drug Control Policy and consultants Dr. J. Michael Walsh and Scott H&nbsp;...
+    JPFSoCkzRrEC London Magazine None ['John Lehmann', 'Alan Ross'] 1975 NO_PAGES | John Lehmann, Alan Ross. Mrs <b>Abercrombie&#39;s Wishes</b> In the neighbourhood Mrs <b>Abercrombie</b> was a talking point . Strangers who asked at Miss Dobbs &#39; Post <b>Office</b> ... <b>house</b> had to be seen to be believed . The staircase alone , in <b>white</b> rose -&nbsp;...
+probe "no trouble from guerillas" Eckert | total 26 [('X-QwluQlwecC', 'The Guerilla Dynasty', '1999'), ('UuA3AQAAIAAJ', 'Guerilla: Krieg ohne Fronten', '1968'), ('6o_uEAAAQBAJ', '41st Infantry Division', '1997-01-01'), ('6-4EAAAAMAAJ', 'Der moderne Kleinkrieg als wehrpolitisches und militärisches Phänomen', '1972'), ('MWdjCwAAQBAJ', 'Lincoln in the Telegraph Office (Abridged, Annotated)', '1939-01-01')]
+probe "no trouble from guerillas" Sheldon | total 106 [('NGLlAAAAMAAJ', 'After Pretoria: the Guerilla War', '1902'), ('6dYvAQAAIAAJ', 'Artists & Illustrators of the Anglo-Boer War', '1992'), ('jcE6AQAAMAAJ', 'Telephony', '1910'), ('-343AQAAMAAJ', 'Telegraph Age', '1908'), ('xnMwAAAAIAAJ', 'The Medical Department of the United States Army in World War II.', '1964')]
+probe "no trouble from guerillas" telegram | total 1 [('qaARAAAAYAAJ', 'Sale', '1908')]
+probe "trouble from guerillas after the army" | error HTTPError 503
+volprobe Bickford inpublisher:"Anderson Galleries" | total 0 | qaARAAAAYAAJ in results: False []
+volprobe Eckert telegram inpublisher:"Anderson Galleries" | error HTTPError 503
+volprobe "West Point" cable inpublisher:"Anderson Galleries" | total 0 | qaARAAAAYAAJ in results: False []
+volprobe guerillas Sheldon inpublisher:"Anderson Galleries" | error HTTPError 503
+volprobe "Fort Powhatan" inpublisher:"Anderson Galleries" | total 0 | qaARAAAAYAAJ in results: False []

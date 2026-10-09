@@ -10918,9 +10918,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM9c)'"
+        "AUDIT.md '## AUDIT (FV-FM9c)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-24)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM9c verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -10929,7 +10930,7 @@
       "kind": "reading",
       "claim_scope": "completed-reading",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM9c)' section 4",
-      "reading_version": "FM-R6b 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM9c) section 3",
+      "reading_version": "FM-R6b 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM9c) section 3; 'Wilson' = West (West Point) per AUDIT 2 (AUD2-LEDGER-24) s.2",
       "unresolved_spans": "",
       "depth_unread": {
         "names_codes": "0",
@@ -10939,11 +10940,11 @@
       "grade": "N3",
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
-      "title": "Eckert 1864 (Fort Monroe ledger): T. T. Eckert, Washington, to G. D. Sheldon, Fort Monroe, 12 June 1864: cut up the White House-Wilson Point wire, take up the West Point cable (E305)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 12 June 1864 Eckert told Sheldon at Fort Monroe to have Bickford destroy the White House-Wilson Point wire he could not save, take up the West Point cable and save the line to Gloucester; not located in the Official Records (ser. I vols. 36 pt 3 and 40 pt 2 print the surrounding telegraph traffic), Butler's correspondence or the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3 one audit (FV-FM9c); 'white' plain (White House) is a decoder slip for FIX-FM10; not N4: Plum and Bates page by page, Grant Papers vol. 11, press of 12-14 June and NARA RG 107 not searched",
+      "title": "Eckert 1864 (Fort Monroe ledger): T. T. Eckert, Washington, to G. D. Sheldon, Fort Monroe, 12 June 1864: cut up the White House-West Point wire, take up the West Point cable (E305)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 12 June 1864 Eckert told Sheldon at Fort Monroe to have Bickford destroy the White House-West Point wire he could not save, take up the West Point cable and save the line to Gloucester unless West Point was to be held; not located in the Official Records (ser. I vols. 36 pt 3 and 40 pt 2 print the surrounding telegraph traffic), Plum's Military Telegraph, Bates, Grant's or Butler's papers or the Huntington's full-text search (searched 9 Oct 2026); one 1908 sale catalogue matching a phrase of it could not be opened.",
+      "gap": "N3 two audits (FV-FM9c, AUD2-LEDGER-24); open lead: Anderson Galleries 1908 sale catalogues (Google Books qaARAAAAYAAJ, NO_PAGES) is the only hit for 'no trouble from guerillas' (+ 'telegram'), unread; 'white' plain (White House) and 'wilson' = West by key (both 'Wilson's read West Point, AUD2-LEDGER-24) are decoder fixes for FIX-FM10; not N4: the 1908 catalogue and NARA RG 107 not read",
       "depth": "D3",
-      "completeness": "19 H of 19 code-word groups ('white' is plain, White House)",
+      "completeness": "21 H of 21 code-word groups ('white' is plain, White House; 'Wilson' x2 = West by key, AUD2-LEDGER-24)",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.196, pointer 5740, E305"
       ],
@@ -10951,17 +10952,18 @@
       "documents": [
         "Huntington mssEC 25 (obj 5952) p.196, pointer 5740, E305"
       ],
-      "depth_sentence": "On 12 June 1864 Eckert told Sheldon at Fort Monroe that the wire between White House and Wilson Point could not all be saved and that Bickford should cut up what he could not save, take up the West Point cable and keep the line to Gloucester.",
-      "depth_check": "code clause: Wicoff Vernon = West Point, Salem = Force, Blubber = City Point read passim; every graded line eye-checked on the page image; external (non-statistical): OR I/36 pt 3 Sheldon to Shepley 4 June 1864 (West Point cable guards, 38 miles of line to Gloucester Point) and OR I/40 pt 2 p.372 Sheldon to Bates 23 June 1864 (Perkins and the cable at Jamestown)",
-      "depth_note": "19 H of 19 code-word groups"
+      "depth_sentence": "On 12 June 1864 Eckert told Sheldon at Fort Monroe that the wire between White House and West Point could not all be saved and that Bickford should cut up what he could not save, take up the West Point cable and keep the line to Gloucester unless West Point was to be held.",
+      "depth_check": "code clause: Wicoff Vernon = West Point, Salem = Force, Blubber = City Point read passim; every graded line eye-checked on the page image; external (non-statistical): OR I/36 pt 3 Sheldon to Shepley 4 June 1864 (West Point cable guards, 38 miles of line to Gloucester Point) and OR I/40 pt 2 p.372 Sheldon to Bates 23 June 1864 (Perkins and the cable at Jamestown); second audit: Plum, Military Telegraph vol. 2 p.136 (Gloucester Point-West Point by submarine cable, West Point-White House line, offices opened 2-3 June 1864) and OR I/36 pt 3 pp.262, 321-322 (Butler to Sheldon 28 May; Sheldon to Eckert 29 May, Bickford's party to West Point)",
+      "depth_note": "21 H of 21 code-word groups"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM9c)'"
+        "AUDIT.md '## AUDIT (FV-FM9c)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-24)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM9c verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -10970,7 +10972,7 @@
       "kind": "reading",
       "claim_scope": "completed-reading",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM9c)' section 4",
-      "reading_version": "FM-R6b 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM9c) section 3",
+      "reading_version": "FM-R6b 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM9c) section 3; 'whites' = reports per AUDIT 2 (AUD2-LEDGER-24) s.2",
       "unresolved_spans": "",
       "depth_unread": {
         "names_codes": "0",
@@ -10981,10 +10983,10 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): G. D. Sheldon, Fort Monroe, to T. T. Eckert, 13 June 1864: Butler protects the line only from City Point to Fort Powhatan; Bickford to close out the White House line (E306)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 13 June 1864 Sheldon reported from Fort Monroe that Butler could protect the line only from City Point to Fort Powhatan, that Perkins's party was sent to Bermuda Hundred and Bickford would close out the White House line, and that Grant's headquarters had moved; not located in the Official Records (ser. I vol. 40 pt 2 prints the line's later traffic), Butler's correspondence or the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3 one audit (FV-FM9c); 'white' (White House) and 'whites' (writes) plain and the closing marginal '16' are decoder/transcription slips for FIX-FM10; not N4: Plum and Bates page by page, Grant Papers vol. 11, press of 12-14 June and NARA RG 107 not searched",
+      "line": "Read at grade H with War Department Cipher No. 1: on 13 June 1864 Sheldon reported from Fort Monroe that Butler could protect the line only from City Point to Fort Powhatan, that Perkins's party was sent to Bermuda Hundred and Bickford would close out the White House line, and that Grant's headquarters had moved; not located in the Official Records (ser. I vol. 40 pt 2 prints the line's later traffic), Plum's Military Telegraph, Bates, Grant's papers, Butler's correspondence or the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "N3 two audits (FV-FM9c, AUD2-LEDGER-24); 'white' (White House) plain and the closing marginal '16' are decoder/transcription slips for FIX-FM10 ('whites' stays coded = reports, AUD2-LEDGER-24); not N4: NARA RG 107 not searched",
       "depth": "D3",
-      "completeness": "30 H + 1 C of 31 code-word groups ('white', 'whites' plain)",
+      "completeness": "31 H + 1 C of 32 code-word groups ('white' plain; 'whites' = White (Report) + s, AUD2-LEDGER-24)",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.200, pointer 5744, E306"
       ],
@@ -10994,7 +10996,7 @@
       ],
       "depth_sentence": "On 13 June 1864 Sheldon told Eckert that Butler could protect the line only from City Point to Fort Powhatan, that Bickford would close out the White House line, and that Grant's headquarters had moved.",
       "depth_check": "code clause: Blubber = City Point, Wicoff Vernon = West Point, Knox = Butler read passim; every graded line eye-checked on the page image; external (non-statistical): OR I/40 pt 2 p.372 Eckert to Caldwell 23 June 1864 (Bickford's party left White House; one operator to remain at Fort Powhatan), p.378 Caldwell 24 June, and Humphreys 21 June (Abercrombie at White House, Sheridan near)",
-      "depth_note": "30 H + 1 C of 31 code-word groups"
+      "depth_note": "31 H + 1 C of 32 code-word groups"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
