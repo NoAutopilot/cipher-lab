@@ -12659,3 +12659,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 13:23 | worker ES132-LOOK | claim: es132-vargas-mexia-1578 look-alike pass f.51v L11-L25 + f.52r (Cipher 3), disk only, cap 4.5, box 13:22-14:52 UTC (80% 14:34), for LANE FAMILY-A2i (account 2)
 2026-10-09 13:26 | BRO-SWEEP worker (account 2, Sonnet) | digitarq release (21 requests + 0 other, 13:24-13:25 UTC by date -u); screening next, for LANE FAMILY-A2i (account 2)
 2026-10-09 13:26 | MANT-0177 (Opus, worker) | halfway (13:2x UTC): 0176 fix applied, gate (b) PASS holds; 0177 passes+decode done, gate too-short; IA take for Berner/Bonnesen print check, for LANE FAMILY-A2i (account 2)
+2026-10-09 13:26 | MANT-0177 (Opus, worker) | IA take (Berner 1901 lookup, be-api), for LANE FAMILY-A2i (account 2)
