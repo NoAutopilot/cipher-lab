@@ -7,6 +7,11 @@
 - Conflict: N2-CD (mssEC 19 p.94-95, pointers 8986/8987, 17 June 1864, "cars run from Harry to Bravo and Stanton") is printed in OR I/40 pt 2 (`warofrebellion402unit`, Washington, June 17, 1864 -- 3 p.m., Halleck to Grant) as "cars run from Richmond to Charlottesville ..."; there Harry reads Richmond. (Richmond is already Horace, p.16 l.2.)
 - Status: graded M in N2-CD (H -> M); in any letter whose context is not the 9902.402 one, "Harry" is M. Unresolved: two senses (Washington / Richmond) from two letters of different direction and date.
 
+### Tulip (key.md, key-no2.md) -- 9 Oct 2026, FIX-FM10 (from NOTES "## KEY-TW")
+- Key rows: Tulip = Open (-ed, -ing), H (key.md p.22 l.14, mssEC 41, No. 1); Tulip = Period, H (key-no2.md p.23 l.14, No. 2).
+- Conflict: in the Cipher No. 1 ledger entries "tulip" never reads as Open and reads as a full stop at 9 of 9 filed occurrences (E9 E106 E141 E170 E175 E230 E283 E284 E289), against 1 of 9 for a random key word given the same value; C at E170 (print "without fail. One steamer") and unfiled 5821/1-2. No period No. 1 source giving Period was found.
+- Status: the H row Tulip = Open is kept in key.md section 4; a later section 7 row Tulip = Period, S (decode.py reads the later row) applies to every No. 1 entry; most likely the clerks carried No. 2's punctuation word into No. 1 messages. Any letter where Period does not read stays M there.
+
 ### Pickets / Picket (key-no2.md, key.md) -- 8 Oct 2026, LS4-R2b
 - Key rows: Picket = Demoralize (-ed, -ing) (key-no2.md p.20 l.18, H), Picket = Defeat (-ed, -ing) (key.md p.19 l.18, H); "Pickets" decodes by the stem+ending rule to the verb.
 - Conflict: N2-CD "Pickets queen about Clarke Dwight Sugar ..." is printed (same OR page) as "Pickett's division about 6000 infantry"; the clerk wrote the general's name as the plain word, which collides with a keyed verb.

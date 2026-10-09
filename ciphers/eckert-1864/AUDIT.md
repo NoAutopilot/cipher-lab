@@ -10572,3 +10572,7 @@ agrees with FV-FM9a.** 2400 + 86 = 2,486 head, 12 x 100 = 1,200 head.
   correction (E292 sent from Fort Monroe, page header "Fort Monroe Sept 16/64") and its section 5 fixes stay with the FIX job. Still open: Grant
   Papers vol. 12 index pages for Morgan (a person with the loan, or HathiTrust from the owner's machine), NARA RG 192 commissary letters (E292),
   the press of the day (neither is a press telegram).
+
+## FIX-FM10 propagation note (9 Oct 2026, account 1; rule 10)
+
+The reading corrections of "AUDIT (FV-FM9a)" s.5 (E291, E292, E299), "(FV-FM9b)" s.5 (E300-E303), "(FV-FM9c)" s.5 (E304-E306) and "(FV-FM9d)" s.5 (E307-E309) are now in ciphertext.txt as note lines/headers and in reading.md (decode.py output), described in NOTES.md "## FIX-FM10". Classes and depths are unchanged (verifiers' calls). Key rows Tulip = Period and Whiskey = Troops were added at grade S (NOTES "## KEY-TW"); items whose completeness line named "tulip M" or "whiskey M/H" now read S in status.json, and SO prompts E262, E289, E307 carry the corrected words. E300's "3.50" is a time read by hand (left as written, uncounted).

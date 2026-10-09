@@ -3579,3 +3579,29 @@ Read so far: seven of seven filed (E310-E315, O9-BD).
 - [x] image-check: all seven pages read at 2400 px.
 - [x] retry: none needed.
 Verdict: keep going: 4 internal gaps, cheapest next: print page numbers, ~$0.1
+
+## FIX-FM10 (9 Oct 2026, account 1, for LANE LEDGER)
+
+Worker FIX-FM10, 15:0x UTC by `date -u`, offline. (1) Writes the two rows "## KEY-TW" proposed into key.md section 7 at grade S (Tulip = Period; Whiskey = Troops, evidence cited in the rows; the H row Tulip = Open stays in section 4, conflict logged in HYPOTHESES.md "Tulip"); the later row is the one decode.py reads. The notes that held these tokens at M or plain were removed (`plain: tulip` E170, `graded: tulip:M` E230 E283 E284 E289, `variant: tulip=Tulip:M` E175 and in E106's variant line, the seven `variant: whiskey=Whisky` lines; E290 keeps its grade as `variant: whiskey=Whiskey:C`). No key row deleted; reading.md only by `decode.py --write`. (2) AUDIT.md section 5 of FV-FM9a/b/c/d through note lines in ciphertext.txt and header edits (headers are the repository's metadata, not transcription); transcription lines changed only as marked `<del>/<ins>` from the audits' image reads (E304 three lines, E306 closing marginal 16, E308 "first" -> "just").
+
+| Entry | Change | Decoder H/C/M/S before -> after |
+|---|---|---|
+| E291 | `white` plain (White House); America, Denmark, Austria plain, graded M | H 23 -> H 19, M 3 |
+| E292 | `Wilson` plain x2; "a Pea" = A. P. M; `join: marriage` -> [2486] head; header: sent from Fort Monroe to Harpers Ferry (operator G. J. Lawrence) | H 27 -> H 25, M 1 |
+| E299 | none to the reading; hour 2.30 PM into the header | H 14 |
+| E300 | "perfume Mandate" = the time 3.50, left as written, not [53]; header: clear copy at pointer 4582 p.141 | H 18 -> H 16 |
+| E301 | address Washington and Flag plain | H 21 -> H 19 |
+| E302 | White x3, Chicken, pony x2 plain | H 50 -> H 44 |
+| E303 | `snake` plain; header: printed OR I/39 pt 3 pp.311, 332 | H 46, C 1 -> H 45, C 1 |
+| E304 | Wadge = Wedge = Today (variant); marginal 14 -> "and"; "zodiac our Whist" restored (Whist = Troops); clear copy received 4.55 PM | H 100 -> H 103 |
+| E305 | `white` plain | H 20 -> H 19 |
+| E306 | `white`, `whites` plain; closing marginal 16 struck | H 32, C 1 -> H 30, C 1 |
+| E307 | header sender J. R. Gilmore, Newbern 6 Aug 4 PM, sent on from Fort Monroe 9 Aug by Sheldon; famish = Norfolk H (the reader's M withdrawn) | H 23 |
+| E308 | "first" -> "just" (image 5659, clear copy 4607); fool = Philadelphia H | H 31 |
+| E309 | `plain-at: webster#3`; header Col. R. C. Webster, chief quartermaster, Fort Monroe | H 21 -> H 20 |
+
+Key-row effect on the totals line: H 4527, C 39, I 25, M 35, U 10 -> H 4499, C 39, I 25, M 33, S 17, U 10 (decoder, 263 entries; the audits' C/H split differs where they count clear-copy C, not regraded here). Grade S rests on KEY-TW's blind read, which its own disclosure calls only partly blind: a fresh session re-judging `key_tw.py --blind` is still owed before S is treated as more than "worth a verifier".
+
+Propagated (rule 10): status.json rows (E100 E143 E256 E262 E290 E293, tulip rows E9 E170 E175 E230 E283 E284 E289: completeness / depth_note / unresolved_spans text now S, depth and class untouched: they are the verifiers'); second-opinions PROMPT-chatgpt-e262, -e289 (grade words) and -e307 (sender); AUDIT.md closing note. The FV-FM9 status rows and prompts for E291 E292 E299-E306 E308 E309 already carried the corrected words. Not decoded: leads row 5783/0 (E292's page) and row 5786/1 (E309's page).
+
+Checks: `python3 ciphers/eckert-1864/decode.py --check` -> "reading.md is current", exit 0 after `--write`; `decode_no2.py --check` and `decode_no9.py --check` exit 0; `tools/depth_check.py` exit 0 (no eckert-1864 line); `tools/file_shrink_guard.py` below.

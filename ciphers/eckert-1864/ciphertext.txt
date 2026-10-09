@@ -520,7 +520,6 @@ Saxon Quadroon Torch Waxy and Persia a dispatch
 preparing by Ivory amirs send her with it
 to Hit on Head zodiac Wick ham of
 sailing youth Meigs Belcher[?] Italys dispatch gone forward
-variant: whiskey=Whisky
 graded: amirs:U ham:U
 note: HOLDER-EXPORT fix 9 Oct 2026: 'amirs', 'ham' unread (17 H of 19).
 
@@ -1103,7 +1102,6 @@ her whiting to Him Zodiac She should leave
 persia the Storm is over & the Sea
 moderates So as to make the voyage safe
 yoke Belcher Growl Jennie & such is life
-variant: whiskey=Whisky
 
 ### E101 | Page 30 | 8922 | 6 Apr 1864, operator F. S. Van Valkenburg, Nashville (LS4-R1b, row 8922/0)
 F. S. Van Valkenburg Nashville  Washn Apl 6th 1864
@@ -1235,7 +1233,6 @@ tartar to take up ocean wayworners not already
 in service unity I am not advised torch 
 number of whist but am to prepare for
 a large number Webster Bender amo amas amat
-variant: whiskey=Whisky
 
 ### E144 | Page 141 | 9034 | 4 Aug 1864, copy to Sherman, from City Point (operator F. S. Van Valkenburg; LS5-R1e, row 9034/0; image-read)
 F. S. Van Valkenburg  Washington Aug 4th 1864
@@ -1336,7 +1333,7 @@ that all your operations are to be based on
 the whisky you now have zebra all available whist
 have been ordered elsewhere by Jupiter Zodiac none can
 go to you webster Jonah how you like Mackerel
-variant: cedar=Cedar:M tulip=Tulip:M narrow=Harrow:I
+variant: cedar=Cedar:M narrow=Harrow:I
 graded: mangle:U
 note: HOLDER-EXPORT fix 9 Oct 2026: 'Cedar', 'tulip' M; 'Narrow' = Harrow = 20 from the header (22d), I; 'mangle' unread (AUDIT.md FV-LS5-A s.3: H 15, C 2, M 2, I 1 of 21).
 
@@ -1517,7 +1514,6 @@ came back pekin her spit have been transferred and
 will leave on boat with Knaves spartans in plug
 hour unity I go to Banditti on Weaseler Babcock
 Geo D Sheldon
-plain: tulip
 join: mansion
 note: FIX-FM3: tulip plain (M; AUDIT FV-FM3a s.3: print has "without fail. One steamer", tulip = stop/null or [?]); Babcock is the signature (plain); perfume publish and mansion = 350 by key.md, print (snippet OCR) 360, unresolved, M.
 
@@ -1599,7 +1595,6 @@ Pauline open shally send Pontoosuc or Nereus
 with her walrus John Rodgers quite foggy
 Geo D. Sheldon
 plain: journal temple tower john
-variant: tulip=Tulip:M
 note: HOLDER-EXPORT fix 9 Oct 2026: 'tulip' M (status.json E175: 15 H of 16).
 
 ### E176 | Page 276 | 5820 | mssEC 25 (obj 5952, pointer 5820), 8 Dec 1864 Bermuda Hundreds, S. H. Beckwith to Sheldon, embarkation list by steamer (FM-R2a; row 5820/0; image-read)
@@ -2126,7 +2121,6 @@ we can not go on in the Dick rater
 tulip I go now Sligo Cuyler Webster John Rodgers
 Geo D Sheldon
 plain: forks john
-graded: tulip:M
 note: FIX-FM5 (AUDIT FV-FM5c s.3): Forks = Fox (plain, phonetic; the decoder's Pensacola is wrong); John (Rodgers) plain; tulip has no counterpart in the clear copy 8479: M; Dick potatoe / Dick rater = Dictator, plain.
 
 ### E231 | Page 190 | 5734 | mssEC 25 (obj 5952, pointer 5734), 9 June 1864 Ft Monroe, Sheldon to Maj. Eckert, for the Secretary of the Navy: S. P. Lee, Agawam, Farrar's Island (FM-R3c; row 5734/2; transcription only)
@@ -2533,7 +2527,6 @@ taken up yoke Day lea nothing later
 Geo. D. Sheldon
 plain: white washington
 variant: queenly=Queenly:M
-variant: whiskey=Whisky
 gloss: insanity's=C._A._Dana's:H
 
 ### E257 | Page 230 | 5774 | mssEC 25 (obj 5952, pointer 5774), 25 July 1864 2 PM Ft Monroe, Sheldon to J. W. Sampson, Baltimore, for Com. Purviance, light-house inspector: light-ship moved to the Elizabeth River obstructions; a clear copy stands at pointer 4823, Page 382 (FM-R4a; row 5774/0; transcription-only)
@@ -2604,7 +2597,6 @@ for apple mattox but I have told him there is
 none on hand at present please send hoe man here
 R OBrien
 plain: apple mattox
-variant: whiskey=Whisky
 merge: hoe+man
 gloss: hoeman=Homan:I
 
@@ -2886,7 +2878,6 @@ give paulding to vassals walrus Niagara how is it now
 plain: white shoal shoals watch
 plain: anchor persons
 variant: sharpes=Sharper
-graded: tulip:M
 
 ### E284 | Page 260 | 5804 | mssEC 25 (obj 5952, pointer 5804), 4 Nov 1864 Ft Monroe, Lt. Col. O. E. Babcock to Lt. Col. T. S. Bowers at City Point, via Sheldon and S. H. Beckwith (FV-FM8b; the time word Nelly = 8.30 PM conflicts with the ledger order against 5805, unsettled): whether the men are to be transferred here without authority, Lizzie Baker the only boat reported; Babcock here (FM-R5b; row 5804/1; image-read at 2400 px)
 SH Beckwith City Point
@@ -2899,7 +2890,6 @@ arrive unity Lizzie Baker is the only boat that has
 yet wicked please wreathe me at once whether I shall
 take the boots youth Babcock Lew is here sends respects
 Geo D Sheldon
-graded: tulip:M
 
 ### E285 | Page 254 | 5798 | mssEC 25 (obj 5952, pointer 5798), 27 Oct 1864 Ft Monroe, Sheldon to Maj. Eckert, Washington, for the Secretary of the Navy, from Porter: Tallapoosa, Yantic and Maumee off Montauk Point and steering for Halifax before the Tallahassee (FM-R5b; row 5798/2; image-read at 2400 px)
 Maj. Eckert Washington
@@ -2955,7 +2945,6 @@ this squad run leaving here immediately tulip shall the
 <del>witness</del> <ins>Witnesses</ins> leave at such a time as this Niagara
 Geo D Sheldon
 plain: taylor prospect
-graded: tulip:M
 
 ### E290 | Page 207 | 5751 | mssEC 25 (obj 5952, pointer 5751), 15 June 1864 Washington, T. T. Eckert to G. D. Sheldon Ft Monroe, for Lt Col Biggs: vessels to Fort Powhatan for ferrying troops and trains (signed Meigs in print) (FM-R5c; row 5751/2; image-read at 2400 px)
 Geo D. Sheldon
@@ -2966,7 +2955,7 @@ to saco poe hat ann immed'y every vessel
 which can be use full in salmoning whiskey
 and trains yoke bender this would then another
 T. T. Eckert
-variant: whiskey=Whisky:C
+variant: whiskey=Whiskey:C
 plain: ann
 
 ### E291 | Page 178 | 5722 | mssEC 25 (obj 5952, pointer 5722), 31 May 1864 Washington, T. T. Eckert to G. D. Sheldon Ft Monroe: tell Bickford not to build farther than White House; a card cipher for the wire (FM-R5c; row 5722/0; image-read at 2400 px)
@@ -2985,9 +2974,11 @@ Denmark penny Austria plaster Dacotah pledge &
 so to Crimea which is Hunkey &
 turkey which is harsh do you understand
 Thos T Eckert
+plain: white
+graded: america:M denmark:M austria:M
+note: FIX-FM10 (9 Oct 2026, AUDIT FV-FM9a s.5): white plain (White House); America, Denmark, Austria are the card's own plain words, kept as written and counted M.
 
-
-### E292 | Page 239 | 5783 | mssEC 25 (obj 5952, pointer 5783), 16 Sept 1864 Harpers Ferry, G. J. Lawrence for Lt Col Morgan: raid on the cattle herd near Coggins Point, from Lt Col Wilson, signed Sheldon (FM-R5c; row 5783/1; transcription only, page image not eye-checked)
+### E292 | Page 239 | 5783 | mssEC 25 (obj 5952, pointer 5783), 16 Sept 1864 Fort Monroe to Harpers Ferry (operator G. J. Lawrence), for Lt Col Morgan: raid on the cattle herd near Coggins Point, from Lt Col Wilson, signed Sheldon (FM-R5c; row 5783/1; transcription only, page image not eye-checked)
 G. J. Lawrence Harpers Ferry
 Silver a Pea gift for Lieut. pandora Morgan cancer zebra
 The rome made a raid on the cattle herd near
@@ -2999,6 +2990,10 @@ Appian Libby unity The above telegram was received from Lieut
 paradise Wilson zebra I will send forbid wine head tomorrow
 yoke M. P. small Lieut Kernel and C. S. finis .
 Geo. D. Sheldon
+plain: wilson
+graded: pea:M
+join: marriage
+note: FIX-FM10 (9 Oct 2026, AUDIT FV-FM9a s.5): Wilson plain x2 (Lt Col Thomas Wilson, chief commissary); "a Pea" = A. P. (phonetic plain, M); "harsh pension william and marriage plague head" = 2,486 head (join across "and"); sent from Fort Monroe (page header "Fort Monroe Sept 16/64") to the operator G. J. Lawrence at Harpers Ferry. Lead, not decoded: row 5783/0 (Wilson's own telegram to Washington, same page).
 
 ### E293 | Page 278 | 5822 | mssEC 25 (obj 5952, pointer 5822), 8 Dec 1864 Ft Monroe, G. D. Sheldon: Colonel Webster, the Rice Dupont and Sedgwick, signed S. H. Beckwith (FM-R5c; row 5822/0; transcription only, page image not eye-checked)
 Geo D Sheldon Ft Monroe
@@ -3013,7 +3008,6 @@ boats and transfer them tooth see going weaslers now
 laying there youth George S Dodge pandora Chief Vinton
 SH Beckwith
 plain: webster dodge apple
-variant: whiskey=Whisky
 gloss: weaslers=Steamers:H
 graded: actor:M
 
@@ -3076,7 +3070,7 @@ to reach black at Emma Please let me
 have your answer walrus Brutus just about leaving
 Dealy.
 
-### E299 | Page 65 | 5609 | mssEC 25 (obj 5952, pointer 5609), 18 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert for the Secretary of War: J. H. Maddox seized with tobacco, signed Butler (FM-R5c; row 5609/1; transcription only, page image not eye-checked)
+### E299 | Page 65 | 5609 | mssEC 25 (obj 5952, pointer 5609), 18 Apr 1864 2.30 PM Ft Monroe, Sheldon to Maj. Eckert for the Secretary of War: J. H. Maddox seized with tobacco, signed Butler (FM-R5c; row 5609/1; transcription only, page image not eye-checked)
 Maj Eckert Di
 for Bruno unity I have piloted J
 H Maddox on the Alba shore together
@@ -3087,8 +3081,9 @@ to be a confidential agent of the
 War quadroon and the tobacco zodiac what
 shall I do with him Walrus Knave
 Geo D Sheldon
+note: FIX-FM10 (9 Oct 2026, AUDIT FV-FM9a s.5): no reading change. Hour 2.30 PM from the clear copy 10239 (header).
 
-### E300 | Page 95 | 5639 | mssEC 25 (obj 5952, pointer 5639), 29 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert for the Secretary of the Navy: Butler informs that Plymouth is evacuated and the rebels are leaving North Carolina, signed S. P. Lee, 2 PM via Monroe, with a second message for Eckert to say what to do; the same words are in print (ORN I/9, OR I/33 and Butler IV, volumes matched by phrase, pages not located); no clear copy found at another pointer (FM-R6a, 9 Oct 2026; row 5639/1; image-read at the tail, transcription agrees)
+### E300 | Page 95 | 5639 | mssEC 25 (obj 5952, pointer 5639), 29 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert for the Secretary of the Navy: Butler informs that Plymouth is evacuated and the rebels are leaving North Carolina, signed S. P. Lee, 2 PM via Monroe, with a second message for Eckert to say what to do; the same words are in print (ORN I/9, OR I/33 and Butler IV, volumes matched by phrase, pages not located); clear copy at pointer 4582, page 141 (FM-R6a, 9 Oct 2026; row 5639/1; image-read at the tail, transcription agrees)
 Ft. Monroe Apr 29 1864
 Maj Eckert Di
 for Burton unity I am just informed by Knave
@@ -3098,6 +3093,8 @@ perfume mandate Zodiac Another for Tappan Eckert Zebra please
 let me know what I am to do in
 this Talbot if any thing no time to spare
 Geo D Sheldon
+plain: perfume mandate
+note: FIX-FM10 (9 Oct 2026, AUDIT FV-FM9b s.5): "perfume Mandate" is the time 3.50 (three fifty), not [53]: left as written, not counted. Clear copy at pointer 4582, page 141.
 
 ### E301 | Page 220 | 5764 | mssEC 25 (obj 5952, pointer 5764), 21 June 1864 Ft Monroe, Sheldon to Maj. Eckert for the Secretary of the Navy: flag-ship Malvern, Farrars Island 10.30 PM 20th, no change in the naval situation, look out that the rebel ironclads are taking on board sand in bags, signed S. P. Lee; a clear period copy stands at pointer 10435, Page 293, and ORN I/10 prints it (FM-R6a; row 5764/0; transcription-only, the image strip read was another entry on a shared page)
 Ft Monroe June 21 / 64
@@ -3110,6 +3107,8 @@ unity wick saxon oyster look out that
 the walnut ironic lads are taking on
 board sand in bags walrus Neptune end
 Geo D Sheldon
+plain: washington flag
+note: FIX-FM10 (9 Oct 2026, AUDIT FV-FM9b s.5): address "Washington" and "Flag" are plain (not Volunteer / 11).
 
 ### E302 | Page 153 | 5697 | mssEC 25 (obj 5952, pointer 5697), 27 May 1864 Ft Monroe, Sheldon to Maj. Eckert: reply on the telegraph line if White House is made the base of supplies, West Point depot, route from Gloucester Point by Yorktown to West Point, chestnut poles on the railroad, little wire on hand; the question it answers stands clear at pointer 5696, Page 152; no print of this reply found in the volumes searched (FM-R6a; row 5697/1; image-read at its middle lines, transcription agrees)
 Ft. Monroe May 27 1864
@@ -3135,8 +3134,10 @@ secure pekin office at G. Vernon will also be convenience
 zebra have asked obrien about material think he must have
 considerable pedlar I have very little wire on hand now
 Geo D Sheldon
+plain: white chicken pony
+note: FIX-FM10 (9 Oct 2026, AUDIT FV-FM9b s.5): White (House) x3, Chicken (Chickahominy), pony (Mattapony) x2 are plain.
 
-### E303 | Page 253 | 5797 | mssEC 25 (obj 5952, pointer 5797), 17 Oct 1864 Nashville, B. B. Glass to S. H. Beckwith at City Point for the General-in-Chief: Sherman from Ship's Gap 16 Oct (Hood, Snake Creek pass, railroad repair) and Thomas (Roddy moved from Tuscumbia), continues at pointer 5798; no print found in the volumes searched (FM-R6a; row 5797/1; image-read at the head lines, transcription agrees)
+### E303 | Page 253 | 5797 | mssEC 25 (obj 5952, pointer 5797), 17 Oct 1864 Nashville, B. B. Glass to S. H. Beckwith at City Point for the General-in-Chief: Sherman from Ship's Gap 16 Oct (Hood, Snake Creek pass, railroad repair) and Thomas (Roddy moved from Tuscumbia), continues at pointer 5798; printed OR I/39 pt 3 pp.311, 332 (AUDIT FV-FM9b; earlier: no print found in the volumes searched (FM-R6a; row 5797/1; image-read at the head lines, transcription agrees)
 Nashville Oct 17 / 64
 S H. Beckwith City Point
 Embrace glory Julia for Ivory growl unity the following dispatch
@@ -3159,12 +3160,14 @@ panama salem not known pause no additional move from the
 bethel windpipe except that roddys salem moved from gregory yester
 day walrus Lady send copy to Judah weather very pleasant
 B. B. Glass
+plain: snake
+note: FIX-FM10 (9 Oct 2026, AUDIT FV-FM9b s.5): snake = Snake Creek Pass, plain. Printed OR I/39 pt 3 pp.311, 332.
 
 ### E304 | Page 118 | 5662 | mssEC 25 (obj 5952, pointer 5662), 9 May 1864 Butler's Hd Qrs via Ft Monroe 10 May 3 PM, Sheldon to Maj. Eckert for Samuel Wilkeson, Tribune rooms: Swift Creek, Heckman's charge, the Brewster blown up; signed Kent, by order Butler, J. W. Shaffer (clear copy at holder pointers 4610-4611; NY Daily Tribune 11 May 1864 p.1) (FM-R6b; row 5662/0; page image checked on 3 of 9 line strips at 2400 px)
 Maj Eckert Di
 from Knaves silver may padlock peasant appian may feeble
 Imogene for Samuel Wilkeson tribune rooms grapes zodiac Knaves
-saints owled badge upon the Rome pocketed the Gideon
+saints owled <del>badge</del><ins>Wadge</ins> upon the Rome pocketed the Gideon
 and Galway Welch and owled to Swift Creek within
 peach spoons of Gabriel zebra Shelby Heckmans panther made
 a splendid charge driving the Rose from their Walden
@@ -3186,10 +3189,10 @@ up the apple Mattocks windpipe to protect the orcharding
 columns Pekin they encountered an platina smoky pagan above
 port Walthall a shot from which struck the Brewsters
 magazine blowing the boat up pedlar loss penny superb
-14 spunky unity a wreathe Saxon war quadroon announcing
+<del>14</del><ins>and</ins> spunky unity a wreathe Saxon war quadroon announcing
 the success of Jupiter was received tonight and created the
 greatest enthusiasm pekin it will be promulgated to the Whisky
-whelp morning our in are in line of pardon
+whelp morning <ins>zodiac</ins> our <del>in</del><ins>Whist</ins> are in line of pardon
 optic venus to which they owled wharf pedlar all are
 Sligo best of spirits unity a Garden extra announces the
 serious Winston of hoax and the death of Shelby Jenkins
@@ -3197,6 +3200,8 @@ yoke Kent zebra Let this go over wires from animal
 by order Knox Webster J. W. Shaffer Borgia very warm
 Geo D Sheldon
 plain: black darling apple person
+variant: wadge=Wedge
+note: FIX-FM10 (9 Oct 2026, AUDIT FV-FM9c s.5): three lines corrected from the page image (Wadge = Wedge, Today; "and" for the marginal count 14; "zodiac ... Whist" restored); the marginal 14 is a count, not text. Clear copy received 4.55 PM.
 
 ### E305 | Page 196 | 5740 | mssEC 25 (obj 5952, pointer 5740), 12 June 1864 Washington, T. T. Eckert to G. D. Sheldon Ft Monroe: cannot save all the wire between White House and Wilson's Point, cut it up, cable at West Point to be taken up (FM-R6b; row 5740/0; page image checked on the first strip (8 lines) at 2400 px)
 Geo D Sheldon
@@ -3221,6 +3226,8 @@ found shorter & more direct rout peasant Blubber zebra
 sorry whether has prevented your getting cable OK K
 T. T. Eckert
 plain: wilson
+plain: white
+note: FIX-FM10 (9 Oct 2026, AUDIT FV-FM9c s.5): white (House) plain.
 
 ### E306 | Page 200 | 5744 | mssEC 25 (obj 5952, pointer 5744), 13 June 1864 Ft Monroe, Sheldon to Maj. Eckert: Butler can only protect the line from City Point to Fort Powhatan; Bickford to close out the White House line; Abercrombie wants the office kept open (FM-R6b; row 5744/1; page image checked on one strip (8 lines) at 2400 px)
 Maj Eckert Di
@@ -3239,9 +3246,12 @@ right as circumstances will allow pedlar teams and a good
 saddle left Hastings this morning for wicoff vernon a cabal
 about plug spoon long is tarquin at blubber zebra Bickford
 whites that Johns snake are removed and his last plank
-orderlies have been unable to find them and come back 16
+orderlies have been unable to find them and come back <del>16</del>
 Geo D Sheldon
-### E307 | Page 233 | 5777 | mssEC 25 (obj 5952, pointer 5777), 9 Aug 1864 Ft Monroe, Sheldon to Maj. Eckert, from Newbern 6 Aug: news of the Chambersburg burning, asks leave of about a week or two, Mack Gaughey to take charge (continues on pointer 5778) (FM-R6c; row 5777/2; image-read at 2400 px)
+plain: white whites
+note: FIX-FM10 (9 Oct 2026, AUDIT FV-FM9c s.5): white plain (White House, written "horse" after it); whites plain (writes); closing 16 is a marginal count, struck from the reading.
+
+### E307 | Page 233 | 5777 | mssEC 25 (obj 5952, pointer 5777), 9 Aug 1864 Ft Monroe, J. R. Gilmore (Newbern, 6 Aug 1864 4 PM) to Maj. Eckert, sent on from Fort Monroe 9 Aug by Sheldon: news of the Chambersburg burning, asks leave of about a week or two, Mack Gaughey to take charge (continues on pointer 5778) (FM-R6c; row 5777/2; image-read at 2400 px)
 Maj. Eckert Washington
 Flora August pledge peasant appian Julia August
 pony for tappan Eckert growl unity News
@@ -3267,10 +3277,11 @@ Jay are Gilmore quite warm this afternoon
 Geo D Sheldon
 plain: mother hope
 note: FM-R6c: mother and hope are plain English (image-read); the tail after Webster (Jay are Gilmore) is on pointer 5778, not eye-checked, M.
+note: FIX-FM10 (9 Oct 2026, AUDIT FV-FM9d s.5): famish = Norfolk (H; the reader's M withdrawn); the 5778 tail eye-checked by FV-FM9d. Sender J. R. Gilmore, Newbern, 6 Aug 1864 4 PM, sent on from Fort Monroe 9 Aug by Sheldon.
 
 ### E308 | Page 115 | 5659 | mssEC 25 (obj 5952, pointer 5659), 9 May 1864 Ft Monroe, Sheldon to Maj. Eckert, Newbern 7 May for Carlton and Porter, Daily Christian Advocate: the Albemarle fight in Albemarle Sound; clear copy at pointer 4607 (object 4849, p.166) (FM-R6c; row 5659/0; image-read at 2400 px)
 Maj Eckert Di
-The following is first handed in here it is news
+The following is <del>first</del><ins>just</ins> handed in here it is news
 to me unity from fortune May plunder for Carlton and
 Porter Daily Christian advocate fool zebra a terrific naval Engage
 meant in Albemarle sound is wicked zodiac the Shannon bombshell
@@ -3287,8 +3298,9 @@ Geo D Sheldon
 plain-at: white#1
 plain-at: plant#1
 note: FM-R6c: clear copy at holder pointer 4607 reads Chaplain White and cotton planter (Cotton Plant); fool before zebra reads Philadelphia in the key, the clear copy has a stop there, M.
+note: FIX-FM10 (9 Oct 2026, AUDIT FV-FM9d s.5): line 1 "first" -> "just" (image 5659 + clear copy 4607); fool = Philadelphia, H; the clear copy is blank there.
 
-### E309 | Page 242 | 5786 | mssEC 25 (obj 5952, pointer 5786), 4 Oct 1864 Washington 3 PM, Eckert to Sheldon for Col Webster, Chief Quartermaster Vinton, steamers wanted, signed D H Rucker; with Sheldon's reply of 5.30 PM, no spare boats but the Illinois (FM-R6c; row 5786/0; image-read at 2400 px)
+### E309 | Page 242 | 5786 | mssEC 25 (obj 5952, pointer 5786), 4 Oct 1864 Washington 3 PM, Eckert to Sheldon for Col. R. C. Webster, chief quartermaster, Fort Monroe (the 4 Oct address), steamers wanted, signed D H Rucker; with Sheldon's reply of 5.30 PM, no spare boats but the Illinois (FM-R6c; row 5786/0; image-read at 2400 px)
 Sheldon F
 Pension to paradise Webster sheaf vinton stop
 please send here immediately all the weaselers
@@ -3310,6 +3322,8 @@ discharged and wilby sent to you at once
 walrus are see webster pandora and vinton end
 Geo. D. Sheldon
 plain-at: webster#1
+plain-at: webster#3
+note: FIX-FM10 (9 Oct 2026, AUDIT FV-FM9d s.5): the third Webster is the plain name (Col. R. C. Webster, chief quartermaster, Fort Monroe); the 5.30 PM reply is Webster's. Lead, not decoded: row 5786/1 (Butler's Hd Qrs reply, same page).
 
 ### E318 | Page 165 | 5709 | mssEC 25 (obj 5952, pointer 5709), 28 May 1864 Washington, Eckert to Sheldon: the Gloucester route is best, 100 men can guard that line, Mackintosh's building party, Bickford's operators (FM-R7b; row 5709/1; image-read at 2400 px)
 Geo D Sheldon
