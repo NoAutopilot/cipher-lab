@@ -108,3 +108,24 @@ reconciliation a priced unit. No experiment re-runs a family the first campaign 
 feature-first vocabulary, plain re-passes at scale or under rendering, the lattice as a blanket fixer) unless its PREREG says what
 is different. Three fails of one experiment with real fixes between retire it (rule 3). Every instrument is a tool in tools/
 with --help, an offline test, a tool_shelf.tsv row and a SYSTEM.md row.
+
+## Amendment 1 (lane, 9 Oct 2026 15:5x UTC by date -u; written after round 0 reports, BEFORE any experiment's eval look)
+- 0b: `birago1572-f152r` built (TXP-152, 73 scored, baseline passZ 5 position errors + 1 insertion). Eval pool = eval_heldout 15 +
+  spinelli 14 + f152r 5 = **34 baseline errors >= 32**: the **p < 0.01 branch is in force for every experiment** of this campaign.
+- 0c on that pool (tx_power, 1,000 draws): (i) clean 30% fixer passes p < 0.01 in 0.863 (>= 0.80: PASS); (ii) no-op 0.000, random-3%
+  0.000 (PASS); (iii) 30%-worse 0.000 (PASS). The gate stands and is not moved again.
+- 0b continues for the OWNER's headroom (hands at 8-25%), with the split of every new item declared here before its build: the
+  three glossed Dinteville leaves of fr.3619 (f.89, f.98v, f.113; DECODE 9440/9441/9443; same scribe as f.128 by the scout's eye)
+  are the Dinteville hand and therefore **dev** (the rule "an item's hand sits in one split only"); the Birago-style 1590s symbol
+  hand (fr.3623 f.23r, DECODE 9452; the short fr.3619 f.73 / fr.3621 ff.42-49 / fr.3623 f.41 runs if pooled) is a hand in no
+  split today and goes to **eval**. Truth for all: the leaf's own period interlinear decipherment read by two blind Opus passes
+  and reconciled, aligned by interlinear_align, forced through a key rebuilt from the alignment at agree >= 2 (the dint-f128-print
+  recipe), checked against key_print where the Dinteville sign is in it; grade C with the note; reference sequence = the
+  pipeline's own passZ (home advantage on segmentation, stated in the row, as dint-f128-print). Blind cipher readers must not
+  see the gloss: crops are cut with the gloss rows masked (`--mask-neighbours`), checked on the overlay; an item whose crops
+  still show gloss letters is marked `gloss-visible` in its BENCHMARK-TX notes and its baseline is reported as an upper bound
+  on reader accuracy, never pooled with the others for a gate.
+- 0d (TXP-AGREE): eval pool all-same-wrong 8 of 29 (28%), split 11, majority 7, minority 3; dev 6 of 37 (16%). The 8 all-same-wrong
+  eval errors (Spinelli's two deleted h, no.87's o<-T70 and z<-T60 among them) are not attacked by presentation changes.
+- Round 1 results (dev only, no eval look): X2 FAIL (1/11 wrong way); X20 FAIL (0/3); X6 is a measurement: whole-cluster
+  propagation is destructive (77% cluster purity), per-tile the doubt feed removes a third to two thirds of what an oracle would.
