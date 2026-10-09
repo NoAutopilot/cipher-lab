@@ -27,17 +27,17 @@ confirm (PREREG-txeng2-0 section 0b).
 
 | file | sha256 |
 |---|---|
-| benchmark-tx/build_vivonne_f102r.py (75abf1278) | 3ddc0c31c333a8739c15efeb0225ccd2f9c961f4ebe01536bcfc08cdbe231d67 |
-| benchmark-tx/vivonne1573-f102r-dev.truth.tsv (75abf1278) | 04bb775fab2ceb74a9093508ecefdea56d0104f7e0a5104f409580dd33f19527 |
-| benchmark-tx/outputs/vivonne1573-f102r-dev/committed.tsv (75abf1278) | 47604e4cba994cca05d99fe07d8d421e335092fa7b2d100bc75dde98a0abe2db |
-| benchmark-tx/outputs/vivonne1573-f102r-dev/passA.tsv (75abf1278) | f02463fb3963a6aa0331413ff203273ff42425238f7d1b6b3b691ef7f8b86e77 |
-| benchmark-tx/outputs/vivonne1573-f102r-dev/passB.tsv (75abf1278) | 8e16cc3c9aedebf78d494b53c0d7ecc41e44dd4f04a1ff598d89867caa635a34 |
+| benchmark-tx/build_vivonne_f102r.py (3003e324a) | 3ddc0c31c333a8739c15efeb0225ccd2f9c961f4ebe01536bcfc08cdbe231d67 |
+| benchmark-tx/vivonne1573-f102r-dev.truth.tsv (3003e324a) | 04bb775fab2ceb74a9093508ecefdea56d0104f7e0a5104f409580dd33f19527 |
+| benchmark-tx/outputs/vivonne1573-f102r-dev/committed.tsv (3003e324a) | 47604e4cba994cca05d99fe07d8d421e335092fa7b2d100bc75dde98a0abe2db |
+| benchmark-tx/outputs/vivonne1573-f102r-dev/passA.tsv (3003e324a) | f02463fb3963a6aa0331413ff203273ff42425238f7d1b6b3b691ef7f8b86e77 |
+| benchmark-tx/outputs/vivonne1573-f102r-dev/passB.tsv (3003e324a) | 8e16cc3c9aedebf78d494b53c0d7ecc41e44dd4f04a1ff598d89867caa635a34 |
 | ciphers/fr16104-vivonne-spain-1572/tx/f102r_rec.tsv (f0f817f8e, input) | 2cbc1f6551f0f4396dc01ae8fd505ce5cc6e5b0b35aef638a3db718d461ea22c |
 | ciphers/fr16104-vivonne-spain-1572/tx/f102r_passA.tsv (f0f817f8e, input) | 526759ea7ec56f8a92010fcb641b7887b786d1cf51f91d5ceb8fc8a15dda3621 |
 | ciphers/fr16104-vivonne-spain-1572/tx/f102r_passB.tsv (input) | 3cd1b6363d2fcad2256dc444e4157573dbe6e9ed847cce6b7735a792e906823f |
 | benchmark-tx/build_vivonne_confirm2.py (f0f817f8e, the recipe copied) | df585f0e74ead75aac2083df7f24627d2963936dcd6d4f5cc2e1448094266a76 |
 
-BENCHMARK-TX.tsv row appended in 75abf1278.
+BENCHMARK-TX.tsv row appended in 3003e324a.
 
 ## Figures (err_true, 1008 scored; flagged excluded on 403)
 
