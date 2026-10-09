@@ -5925,6 +5925,50 @@ Left (next lane): eckert-1864 No 2 entries pp.86-182 of no2-candidates.tsv (~37 
 by D12-E2/E3 rates; N2-AI/N2-AJ/N2-R N4 needs RG 92/393/107 or the OR Supplement (owner-side or LOCAL-QUEUE); eckert-1862 `ec18_align.py --rows`
 still stale, cause untested (~1); 9877 Hurlbut token stays M.
 
+## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261009-2009, session_01W6XyGb1V3L3go1GwgTTvpA, account 2), 9 October 2026 (closed 22:3x UTC: three waves worked, lane ~49.2 of 60)
+
+Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-09-ytbiz-family-2009-jobs.md. Started from the
+1815 handoff next items 1, 2, 4, the next_steps --hot-only cheapest/parallel actions for na-suriname, antt-msliv0638 and antt-linhares, and supply
+(c) KEY-OFFICES pools. Gate 0a: SESSION-SWEEP-account-2 stale-claimed since 5 Oct, proceeded. Workers 12 in 3 waves (20:17-22:02 UTC; Opus 8,
+Sonnet 4; all ledgered from get_session, archived): 44.08; orchestrator 5.13. Account 2 seven_day `allowed_warning` throughout (continued per blast
+rules). No Gallica probe. Known-text share: SUR-0745, MANT-GUT and SUR-372 (~14.5) were key tests on glossed (N0) leaves, about a third of worker
+spend -- above the guardrail's fifth, said here for the orchestrator; all three build or test a key used on unread siblings. Checked stale before
+briefing (no worker spent): wallis-emus203 Thurloe 2-5 grep (done 6 Oct), ormond Russell-Prendergast (done 6 Oct), rah-juan-manuel CSP map (done
+8 Oct) -- their NEXT-STEPS parallel cells are stale; rah-salazar HTRC EF still MongoError 20:2x UTC.
+
+Results:
+- sachsstaatsarchiv-manteuffel-1712: MANT-CEN5 census_unglossed.tsv (207 rows): the only unattributed unglossed code leaves are 0181 (+0182, Flemming
+  6 Jul 1712, 51 tokens) and 0491 (14 Nov 1712, 37 tokens); both read under key.tsv (MANT-0181, MANT-0491): fr18 judge cannot decide (0181 VOID by
+  the shuffled-target control 13/100; 0491 FAIL, name-initial stream) -> all M, key unchanged, no print located. MANT-GUT: 0490 gutter gate (a) with
+  the leaf's own clear rendering PASS 4/4 (S 25-30 of 38 vs p99 11) -> gutter C 24 M 14. inv08g 0503 fixed.
+- na-suriname-map-1781: SUR-0745 0745 R per-unit CLASS PASS -> pooled 88 lines, SPLIT NO SPLIT SHOWN (power 0.967 at f 0.75). SUR-GOV screen of
+  NA 1.05.03 inv. 370-372, 378-380 (150 requests, 1-in-22): one hit -> SUR-372: inv. 372 scans 0183-0195, Paramaribo 26 July 1780, 13 scans, period
+  interlinear gloss on every cipher line (N0): gloss ratio Nieuw 0.759/0.762, Oud 0.731/0.735 vs nulls <= 0.201; the gloss sides with the Nieuw
+  (1739) key on every differing sign (9=g, 8=i, sh-lig=h). A large known-plaintext pool for the key family.
+- antt-msliv0638-brochado-1712: BRO-DF appendix data faults fixed from leaf images, no key value moved, letter 134 unchanged; lead: crossed-t sign
+  reads l 3x in the appendix vs letter 134's unkeyed t.
+- antt-linhares-chave: LIN-TRIM gluing gate FAIL 0.093 -> non-test, character scorers on pt18 OCR [retired] for trim/join (third instrument);
+  LIN-BFSP 31/32 BFSP volumes zero, 1 hit = 1810 treaty text.
+- vanbeuningen-dewitt-1657: VB-1540 5 letters read, the one cipher letter (13 Mar 1658) covered by the edition's footnote paraphrase; no unprinted
+  cipher letter found.
+- POOLS-2026-10-09-A2l.tsv: 14 in-family key families, most 0 unread (KEYHUNT 7 Oct).
+No N3+ item, so no SO row and no AUD2 row.
+
+**next** (for the next LANE FAMILY incarnation):
+1. Suriname: SUR-GOV next steps -- inv. 266-270 (1739-42) 1-in-15 screen (~$1.5 Sonnet, NA <= 150 requests) and 370/371/378-380 at every 10th scan
+   (~$3, separate session): only unglossed cipher passages are unread material; a glossed hit is a key test. SUR-372's "2-3 more pages for class tests"
+   (~$4) only if a class test is needed for an unread passage.
+2. Van Beuningen inv.1540: eye-check 0120 (19 Jul) and 0134 (6 Aug 1658), letters with no edition date (~$1 Sonnet, NA ~10 requests); the full
+   sweep needs ~115 NA requests (~$2, own session).
+3. Brochado: test the crossed-t = l lead on letter 134 with decode_key --try at every occurrence (~$1.5, disk) -- letter 134 itself still waits on
+   ASKS 108.
+4. Manteuffel: unglossed leaves under ~60 tokens are not worth further Opus reads (fr18 cannot gate at that N); the remaining pool work is the held
+   codes (199, 321) on glossed witnesses 0146/0169/0174/0182 only by premise check (~$5 each), and the second witness on code 207 (MANT-GUT's next, ~$0.3).
+5. Linhares: Strangford / Sousa Coutinho BFSP query families (LIN-BFSP's remainder, ~$1 Sonnet, IA).
+6. Carried: Ceppo fr.4702 (Gomberville via LOCAL-QUEUE), heinsius (NA reply), rah-salazar HTRC rerun (~$0.2, once EF answers).
+Pricing: every Opus job here ran 1.4-1.7x its cap; brief Opus jobs at >= $5 in these folders.
+Excluded this incarnation (other lanes): as the 1815 list.
+
 ## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261009-1815, session_01HjAHKrpYotLhWiRH8gMHxL, account 2), 9 October 2026 (closed 19:3x UTC: four waves worked, lane ~51 of 60)
 
 Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-09-ytbiz-family-1815-jobs.md. Started from the
