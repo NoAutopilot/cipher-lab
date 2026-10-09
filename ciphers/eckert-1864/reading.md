@@ -385,9 +385,9 @@ Code-word tokens: H 4.
 
 **E50 | Page 149 | 9042 | 11 Aug 1864 11.30 AM, to Col. Biggs at Fort Monroe (operator Geo. D. Sheldon)**
 
-[Washington] [11] {time: 11.30 AM} For [Colonel] Biggs [Quartermaster] [.] Provision and water the Continental to bring whiskey [From the] [Department] [Of the] [South] and [As soon as] a dispatch preparing by [General-in-Chief] amirs send her with it to Hit on Head [.] [Report] ham of sailing  {tail: [signed] Meigs [Qr Master Genl U.S.][?] [General-in-Chief]'s dispatch gone forward}
+[Washington] [11] {time: 11.30 AM} For [Colonel] Biggs [Quartermaster] [.] Provision and water the Continental to bring [Troops] [From the] [Department] [Of the] [South] and [As soon as] a dispatch preparing by [General-in-Chief] amirs send her with it to Hit on Head [.] [Report] ham of sailing  {tail: [signed] Meigs [Qr Master Genl U.S.][?] [General-in-Chief]'s dispatch gone forward}
 
-Code-word tokens: H 17, U 2.
+Code-word tokens: H 18, U 2.
 
 **E51 | Page 204 | 9098 | 21 Oct 1864 11 AM, to Adna Anderson (operator J. C. Van Duzer, Nashville)**
 
@@ -703,9 +703,9 @@ Code-word tokens: H 10.
 
 **E100 | Page 29 | 8921 | 5 Apr 1864 3.30 PM, operator Baldwin, Baltimore (LS4-R1b, row 8921/1)**
 
-for [Captain] Thomas [Quartermaster] [Baltimore] [.] Confidential Send the {time: 8.30 PM} Pantz if in [Baltimore] to Annapolis fully coaled & watered to [Transport (-ed, -ing)] [Jasper]ed whiskey to Hilton Head & thence to such point as [Gen Q. A. Gillmore] may order on her [Report]ing to Him [.] She should leave [As soon as] the Storm is over & the Sea moderates So as to make the voyage safe  {tail: [signed] [Qr Master Genl U.S.] [Washington] {time: 3.30 PM} & such is life}
+for [Captain] Thomas [Quartermaster] [Baltimore] [.] Confidential Send the {time: 8.30 PM} Pantz if in [Baltimore] to Annapolis fully coaled & watered to [Transport (-ed, -ing)] [Jasper]ed [Troops] to Hilton Head & thence to such point as [Gen Q. A. Gillmore] may order on her [Report]ing to Him [.] She should leave [As soon as] the Storm is over & the Sea moderates So as to make the voyage safe  {tail: [signed] [Qr Master Genl U.S.] [Washington] {time: 3.30 PM} & such is life}
 
-Code-word tokens: H 16.
+Code-word tokens: H 17.
 
 **E101 | Page 30 | 8922 | 6 Apr 1864, operator F. S. Van Valkenburg, Nashville (LS4-R1b, row 8922/0)**
 
@@ -1321,7 +1321,7 @@ Code-word tokens: H 15, I 1.
 
 **E254 | Page 285 | 5829 | mssEC 25 (obj 5952, pointer 5829), 12 Dec 1864 Washington, B. W. Brice (Acting Paymaster General) to Sheldon at Ft Monroe, pay of officers via Maj. Binney; the sent copy with partly clear text is mssEC 18 pointer 9913 Page 247 (FM-R4a; row 5829/0; transcription-only)**
 
-Geo D Sheldon Ft. Monroe {time: 5 PM} [Maj Gen B. F. Butler] I have directed [Major] Binney toupee [1] months pa to such officers as Yuma designate being those referred to bayou inure telegram of this date [.] money is difficult butty will contrive immed'y to Reese supply [Major] Binney for this out lay  {tail: [signed] B or Brice another to [Major] Binney sheaf pay Mr [Norfolk] pa [1] months pay to officers designated by authority of [Maj Gen B. F. Butler] [.] I will make you hole immedy for this outlay B W Brice Acting Pay Mastr Genl}
+Geo D Sheldon Ft. Monroe {time: 5 PM} [Maj Gen B. F. Butler] I have directed [Major] Binney toupee [1] months pa to such officers as Yuma designate being those referred to bayou inure telegram of this date [.] money is difficult butty will contrive immed'y to Reese supply [Major] Binney for this out lay  {tail: [signed] B W. Brice another to [Major] Binney sheaf pay Mr [Norfolk] pa [1] months pay to officers designated by authority of [Maj Gen B. F. Butler] [.] I will make you hole immedy for this outlay B W Brice Acting Pay Mastr Genl}
 
 Code-word tokens: H 12.
 
@@ -1333,9 +1333,9 @@ Code-word tokens: H 16, C 1.
 
 **E256 | Page 208 | 5752 | mssEC 25 (obj 5952, pointer 5752), 16 and 17 June 1864 Ft Monroe, Sheldon to Maj. Eckert: material for Col. Pettus (signed Channing Clapp) and a boat report on the crossing of the James (FM-R4a; row 5752/1; transcription-only)**
 
-Maj. Eckert Washington [Head Quarters] [Engineer] [Brigade] [Monroe] {time: 12} [16] for [Colonel] W. H. Pettus [Command = Er (-ed, -ing)] [Engineer] [Depot] navy yard [Washington] White Hows is [Abandon (-ed, -ing)]d [.] send material here  {tail: [signed] Channing Clapp A. A [General] All well nothing new Geo. D. Sheldon 1 P. M. Fortress Monroe June 17 / 64 Maj. Eckert Washington [Captain] of boat that brought down to James town [Inland [sic: Island]] [C. A. Dana's] dispatch says that all the whiskey have [Cross (-ed, -ing)]ed and that [Pontoon] [Bridge (-ed, -ing)] is probably by this time taken up [signed] Day lea nothing later Geo. D. Sheldon}
+Maj. Eckert Washington [Head Quarters] [Engineer] [Brigade] [Monroe] {time: 12} [16] for [Colonel] W. H. Pettus [Command = Er (-ed, -ing)] [Engineer] [Depot] navy yard [Washington] White Hows is [Abandon (-ed, -ing)]d [.] send material here  {tail: [signed] Channing Clapp A. A [General] All well nothing new Geo. D. Sheldon 1 P. M. Fortress Monroe June 17 / 64 Maj. Eckert Washington [Captain] of boat that brought down to James town [Inland [sic: Island]] [C. A. Dana's] dispatch says that all the [Troops] have [Cross (-ed, -ing)]ed and that [Pontoon] [Bridge (-ed, -ing)] is probably by this time taken up [signed] Day lea nothing later Geo. D. Sheldon}
 
-Code-word tokens: H 21, M 2.
+Code-word tokens: H 22, M 1.
 
 **E257 | Page 230 | 5774 | mssEC 25 (obj 5952, pointer 5774), 25 July 1864 2 PM Ft Monroe, Sheldon to J. W. Sampson, Baltimore, for Com. Purviance, light-house inspector: light-ship moved to the Elizabeth River obstructions; a clear copy stands at pointer 4823, Page 382 (FM-R4a; row 5774/0; transcription-only)**
 
@@ -1489,9 +1489,9 @@ Code-word tokens: H 45, C 1.
 
 **E283 | Page 275 | 5819 | mssEC 25 (obj 5952, pointer 5819), 7 Dec 1864 Ft Monroe, to R. O'Brien Hd Qrs A. of J., for Commander Parker, Onondaga, from Porter: two gunboats down to White Shoal light and Point of Shoals, stop boats at night (FM-R5b; row 5819/1; image-read at 2400 px)**
 
-Ports mouth {time: 6 PM} for [Command = Er (-ed, -ing)]er Parker onondaga Dutch [Gap?] [James] [.] send at once [2] [Gunboat]'s down to white shoal [Light] house & to crews between there & [Point] of shoals night & day until further orders & keep a good look out for [Rebel] boots [,] they will not permit vassals to anchor [Near] shore & when they are obliged to do so will tow them off [Capture (-ed, -ing)] all boots found [In the] [River] by night orday and hold the persons in them as prisoners [.] Keep a good watch ready furry [Surprise (-ed, -ing)] [Steam] up & chain ready tuslip tulip give [Convoy] to vassals  {tail: [signed] [D. D. Porter] how is it now}
+Ports mouth {time: 6 PM} for [Command = Er (-ed, -ing)]er Parker onondaga Dutch [Gap] [James] [.] send at once [2] [Gunboat]'s down to white shoal [Light] house & to crews between there & [Point] of shoals night & day until further orders & keep a good look out for [Rebel] boots [,] they will not permit vassals to anchor [Near] shore & when they are obliged to do so will tow them off [Capture (-ed, -ing)] all boots found [In the] [River] by night orday and hold the persons in them as prisoners [.] Keep a good watch ready furry [Surprise (-ed, -ing)] [Steam] up & chain ready tuslip tulip give [Convoy] to vassals  {tail: [signed] [D. D. Porter] how is it now}
 
-Code-word tokens: H 20, I 1, M 1.
+Code-word tokens: H 21, M 1.
 
 **E284 | Page 260 | 5804 | mssEC 25 (obj 5952, pointer 5804), 4 Nov 1864 Ft Monroe, Lt. Col. O. E. Babcock to Lt. Col. T. S. Bowers at City Point, via Sheldon and S. H. Beckwith (FV-FM8b; the time word Nelly = 8.30 PM conflicts with the ledger order against 5805, unsettled): whether the men are to be transferred here without authority, Lizzie Baker the only boat reported; Babcock here (FM-R5b; row 5804/1; image-read at 2400 px)**
 
@@ -1589,5 +1589,5 @@ for [Secretary of War] [.] I have [Capture (-ed, -ing)]ed J H Maddox on the [Vir
 
 Code-word tokens: H 14.
 
-Totals over the 243 entries: H 4080, C 37, I 26, M 36, U 10.
+Totals over the 243 entries: H 4084, C 37, I 25, M 35, U 10.
 <!-- decode.py: derived block ends -->

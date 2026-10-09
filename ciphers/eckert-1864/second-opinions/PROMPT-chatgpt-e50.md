@@ -7,7 +7,7 @@ reading. Be adversarial: we would rather learn now that it is in print than clai
 THE ITEM
 - Source: Thomas T. Eckert's telegraph ledger, Huntington Library, San Marino, mssEC 19 p.149 (digital pointer 9042),
   https://hdl.huntington.org/digital/collection/p16003coll11/id/9042, entry E50, headed "Geo. D. Sheldon, Washington 11 Aug 1864 11.30 AM, to Col. Biggs, Fort Monroe". Read with War Department Cipher No. 1 (the book is in the same collection, mssEC 41).
-- Reading: Meigs, Quartermaster General, to Col. Biggs: provision and water the Continental to bring [whiskey, in clear] from the Department of the South, and as soon as a dispatch preparing by the General-in-Chief arrives send her with it to Hilton Head; report hour of sailing. Tail: the General-in-Chief's dispatch gone forward. Two code words ("amirs", "ham") are not in the key.
+- Reading: Meigs, Quartermaster General, to Col. Biggs: provision and water the Continental to bring [troops] from the Department of the South, and as soon as a dispatch preparing by the General-in-Chief arrives send her with it to Hilton Head; report hour of sailing. Tail: the General-in-Chief's dispatch gone forward. Two code words ("amirs", "ham") are not in the key.
 - Context we already know: OR ser. I vol. 42 pt 2 prints a related order sending the Continental to Fort Monroe through Colonel Biggs; not this telegram.
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/reading.md,
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key.md, search log

@@ -3288,3 +3288,21 @@ Not applied (no existing mechanism supplies it without adding a counted token; t
 Propagation (rule 10): status.json rows E250, E271, E273, E274, E276, E282, E287 had "pending a FIX worker" in `gap` and decoder-slip wording in `completeness`/`depth_note`: updated to "carried into the reading by FIX-FM8" and the corrected H counts; the other rows and second-opinions/PROMPT-chatgpt-e254, -e275, -e278, -e280, -e281, -e283, -e284, -e289, -e293 already carried the audited words (checked by grep: contrive, [transport], Most, Dutch [Gap], Babcock to Bowers), so none edited; no SECOND-OPINIONS-QUEUE.tsv row changes.
 
 Checks: `python3 ciphers/eckert-1864/decode.py --check` -> "reading.md is current" exit 0 after `--write`; `decode_no2.py --check` and `decode_no9.py --check` exit 0; `tools/tests/test_eckert_decode.py` OK; `tools/depth_check.py` no eckert-1864 FAIL line; `tools/file_shrink_guard.py` on ciphertext.txt, decode.py, reading.md, status.json: ok, none shrank; `tools/gaps_check.py eckert-1864` keep-going, 0 FAIL.
+
+## FIX-FM9 (9 Oct 2026, account 1, for LANE LEDGER)
+
+Worker FIX-FM9, 13:52-14:0x UTC by `date -u`, offline. Carries the reading corrections of AUDIT.md "AUDIT 2 (AUD2-LEDGER-18)", "-19", "-20" and "-21" into the readings through per-entry note lines in `ciphertext.txt` (no key.md row edited; reading.md only by `decode.py --write`; no decoder change). Classes and depths are the verifiers'; not re-set. AUD2-LEDGER-20 (E293) and -21 (E278, E289) name no reading correction beyond FIX-FM8's (E293 "actor" stays `graded: actor:M`, Acton = Maryland is a candidate the image cannot settle, r vs n, not taken; E289 Dewey identity is a status.json qualifier, already propagated by the audit).
+
+| Entry | Token | Before | After (note) | Grade before -> after | Source |
+|---|---|---|---|---|---|
+| E283 | "sharpes" | `gloss: sharpes=Gap?:I` -> "Dutch [Gap?]" | `variant: sharpes=Sharper` -> "Dutch [Gap]" (key row Sharper = Gap, final s) | H 20, I 1, M 1 -> H 21, M 1 | AUD2-LEDGER-19 s.3, s.4 |
+| E256 (17 June) | "whiskey" | `graded: whiskey:M` | `variant: whiskey=Whisky` -> [Troops] (key row Whisky p.24 l.7, confirmed by the 5768/4788 sibling) | H 21, M 2 -> H 22, M 1 | AUD2-LEDGER-18 s.3, s.4 |
+| E254 | signature | "B or Brice" | `<del>or</del> <ins>W.</ins>` -> "B W. Brice" (image, AUD2-LEDGER-18 s.2); plain word, no grade change | H 12 | AUD2-LEDGER-18 s.4 |
+| E50 | "whiskey" | as written (not counted) | `variant: whiskey=Whisky` -> [Troops]: "bring [Troops] from the Department of the South" | H 17 -> 18 (U 2) | AUD2-LEDGER-18 s.4 (same spelling miss) |
+| E100 | "whiskey" | as written | `variant: whiskey=Whisky` -> "[Transport]ed [Troops] to Hilton Head" (checked in context) | H 16 -> 17 | AUD2-LEDGER-18 s.4 |
+
+The audit lists E50, E100, E256, E293 as the other places the same miss leaves "whiskey" undecoded; E293 was done by FIX-FM8, E262 by FIX-E262, E290 (FIX-FM8, C) and E143 already carry the variant. Read in context each is troops/to-be-carried (E50 Continental from the Department of the South to Hilton Head; E100 colored troops to Hilton Head, OR I/35 pt 2 pp.36-37; E256 "all the troops have crossed"). Totals line: H 4080, C 37, I 26, M 36, U 10 -> H 4084, C 37, I 25, M 35, U 10.
+
+Propagated (rule 10): status.json rows E283 (unresolved_spans "1 (tulip M)", gap), E256 17 June (gap, completeness, depth_note, depth_pct 87.5 -> 100.0; D3 and N3 unchanged, verifiers'), E100 and E50 (completeness, depth_note); SO prompts PROMPT-chatgpt-e256 ("[troops]"), -e100 ("whiskey" = troops by the key row), -e50 ("[troops]"). PROMPT-chatgpt-e283 (Dutch [Gap]) and -e254 (B. W. Brice) already carried the corrected words. Not applied: E277 "pause" stays U; E275 "boots" stays M.
+
+Checks: `python3 ciphers/eckert-1864/decode.py --write` then `--check` -> "reading.md is current", exit 0; `decode_no2.py --check` and `decode_no9.py --check` exit 0; `tools/depth_check.py` exit 0.

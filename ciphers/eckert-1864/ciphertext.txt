@@ -520,6 +520,7 @@ Saxon Quadroon Torch Waxy and Persia a dispatch
 preparing by Ivory amirs send her with it
 to Hit on Head zodiac Wick ham of
 sailing youth Meigs Belcher[?] Italys dispatch gone forward
+variant: whiskey=Whisky
 graded: amirs:U ham:U
 note: HOLDER-EXPORT fix 9 Oct 2026: 'amirs', 'ham' unread (17 H of 19).
 
@@ -1102,6 +1103,7 @@ her whiting to Him Zodiac She should leave
 persia the Storm is over & the Sea
 moderates So as to make the voyage safe
 yoke Belcher Growl Jennie & such is life
+variant: whiskey=Whisky
 
 ### E101 | Page 30 | 8922 | 6 Apr 1864, operator F. S. Van Valkenburg, Nashville (LS4-R1b, row 8922/0)
 F. S. Van Valkenburg Nashville  Washn Apl 6th 1864
@@ -2487,7 +2489,7 @@ plug months pa to such officers as Yuma
 designate being those referred to bayou inure telegram
 of this date unity money is difficult butty
 will <del>continue</del> <ins>contrive</ins> immed'y to Reese supply Taunton Binney
-for this out lay walrus B or Brice
+for this out lay walrus B <del>or</del> <ins>W.</ins> Brice
 another to Tappan Binney sheaf pay Mr famish
 pa plunge months pay to officers designated by
 authority of Knave Zebra I will make you
@@ -2531,7 +2533,7 @@ taken up yoke Day lea nothing later
 Geo. D. Sheldon
 plain: white washington
 variant: queenly=Queenly:M
-graded: whiskey:M
+variant: whiskey=Whisky
 gloss: insanity's=C._A._Dana's:H
 
 ### E257 | Page 230 | 5774 | mssEC 25 (obj 5952, pointer 5774), 25 July 1864 2 PM Ft Monroe, Sheldon to J. W. Sampson, Baltimore, for Com. Purviance, light-house inspector: light-ship moved to the Elizabeth River obstructions; a clear copy stands at pointer 4823, Page 382 (FM-R4a; row 5774/0; transcription-only)
@@ -2883,7 +2885,7 @@ ready furry wag weasel up & chain ready tuslip tulip
 give paulding to vassals walrus Niagara how is it now
 plain: white shoal shoals watch
 plain: anchor persons
-gloss: sharpes=Gap?:I
+variant: sharpes=Sharper
 graded: tulip:M
 
 ### E284 | Page 260 | 5804 | mssEC 25 (obj 5952, pointer 5804), 4 Nov 1864 Ft Monroe, Lt. Col. O. E. Babcock to Lt. Col. T. S. Bowers at City Point, via Sheldon and S. H. Beckwith (FV-FM8b; the time word Nelly = 8.30 PM conflicts with the ledger order against 5805, unsettled): whether the men are to be transferred here without authority, Lizzie Baker the only boat reported; Babcock here (FM-R5b; row 5804/1; image-read at 2400 px)

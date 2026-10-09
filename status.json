@@ -5551,13 +5551,13 @@
       "claim_scope": "completed-reading",
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
-      "completeness": "17/19 code words H; amirs, ham unread",
+      "completeness": "18/20 code words H; amirs, ham unread (whiskey = Troops H, key row Whisky, FIX-FM9 9 Oct 2026)",
       "unresolved_spans": "amirs, ham unread",
       "reading_version": "LS-R4 8 Oct 2026 (reading.md)",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (LS-V4)' section 4",
       "depth_sentence": "Meigs tells Biggs to provision and water the Continental, bring her from the Department of the South, and send her to Hilton Head with a dispatch the General-in-Chief is preparing, reporting her hour of sailing.",
       "depth_check": "fresh rule-7 re-derivation (LS-V4); OR I/42 pt 2 prints the related order sending the Continental to Fort Monroe through Biggs; image crop checked word for word (AUD2-LS-E)",
-      "depth_note": "17/19 code words H; amirs, ham unread"
+      "depth_note": "18/20 code words H; amirs, ham unread (whiskey = Troops H, key row Whisky, FIX-FM9 9 Oct 2026)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
@@ -7018,13 +7018,13 @@
       "claim_scope": "completed-reading",
       "plaintext_novelty": "N2",
       "mapping_novelty": "N3",
-      "completeness": "14 H of 16 code words (Nelly, colored/whiskey M)",
+      "completeness": "15 H of 16 code words (Nelly, colored M; whiskey = Troops H, key row Whisky, FIX-FM9 9 Oct 2026)",
       "unresolved_spans": "none",
       "reading_version": "LS4-R1b 8 Oct 2026 (reading.md), grades as checked in AUDIT (FV-LS4-R1b) section 4",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-LS4-R1b)' section 4",
       "depth_sentence": "At 3.30 PM on 5 Apr 1864 the Quartermaster General orders Captain Thomas, Quartermaster at Baltimore, to send the steamer Nelly Pentz, fully coaled and watered, to Annapolis to carry colored troops to Hilton Head and on to wherever General Gillmore directs, leaving as soon as the storm is over.",
       "depth_check": "fresh rule-7 re-derivation (decode.py --check, FV-LS4-R1b); image checked, all 10 lines, the longest (FV-LS4-R1b); code clause: Whimper = Transport reads in E7 and E100, Banditti = Baltimore in E92 and E100; external (V1-LS4B): Meigs's parallel orders of the same afternoon (OR I/35 pt 2 pp.36-37) and the Nelly Pentz's voyage with the 1st Michigan Colored (Supplement to the OR; Hepburn 2023) -- depth kept D2, raise not ruled",
-      "depth_note": "14 H of 16 code words (Nelly, colored/whiskey M)",
+      "depth_note": "15 H of 16 code words (Nelly, colored M; whiskey = Troops H, key row Whisky, FIX-FM9 9 Oct 2026)",
       "text": "known"
     },
     {
@@ -9795,15 +9795,15 @@
         "names_codes": "0",
         "other": "1"
       },
-      "depth_pct": 87.5,
+      "depth_pct": 100.0,
       "grade": "N3",
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): W. J. Dealy, Fort Monroe, to Maj. Eckert, 17 June 1864 1 PM, a boat captain's report that the army had crossed the James and the pontoon bridge was being taken up (E256, 17 June part; the 16 June part is N1)",
       "line": "Read at grade H with War Department Cipher No. 1: at 1 p.m. on 17 June 1864 W. J. Dealy at Fort Monroe told Maj. Eckert that the captain of the boat that brought Dana's dispatch down to Jamestown Island reported that all the [one word unread] had crossed and that the pontoon bridge was probably by then taken up. Not located in the Official Records (ser. I vol. 40 pts 1-2) or the Huntington's full-text search (searched 9 Oct 2026); OR I/40 pt 1 prints Dana's dispatches of 16-17 June sent via Jamestown Island. The 16 June part of the entry (Clapp to Pettes) stands in clear in the Huntington's transcription, pointer 4717.",
-      "gap": "N3 (17 June part only; 16 June part N1, clear copy 4717): 'whiskey' unread; Google Books (429). Depth D3.; AUD2-LEDGER-15: OR I/40 pts 1-2 read page by page over 16-18 June, not located (context: Dana 18 June, I/40 pt 1 p.24)",
+      "gap": "N3 (17 June part only; 16 June part N1, clear copy 4717): 'whiskey' = [Troops] H (key row Whisky, AUD2-LEDGER-18, carried into the reading by FIX-FM9 9 Oct 2026); Google Books (429). Depth D3.; AUD2-LEDGER-15: OR I/40 pts 1-2 read page by page over 16-18 June, not located (context: Dana 18 June, I/40 pt 1 p.24)",
       "depth": "D3",
-      "completeness": "7 H + 1 M of 8 code-word groups in the 17 June part ('whiskey' not in key.md; 'Dealy' plain as 'Day lea')",
+      "completeness": "8 H of 8 code-word groups in the 17 June part (whiskey = Whisky = Troops H, key row p.24 l.7, FIX-FM9; 'Dealy' plain as 'Day lea')",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.208, pointer 5752, E256"
       ],
@@ -9813,7 +9813,7 @@
       ],
       "depth_sentence": "On 17 June 1864 a boat captain reported at Fort Monroe that the army had crossed the James and the pontoon bridge was probably being taken up.",
       "depth_check": "code clause: Village = Pontoon, Patron = Bridge, Insanity = Dana passim; external: OR I/40 pt 1 pp.20-22 (Dana's 16-17 June dispatches via Jamestown Island; pontoon bridge, army south of the James by noon 17 June); Plum vol. II p.261 (Dealy at Fort Monroe); image read by FV-FM7a",
-      "depth_note": "7 H + 1 M of 8 code-word groups in the 17 June part ('whiskey' not in key.md; 'Dealy' plain as 'Day lea')"
+      "depth_note": "8 H of 8 code-word groups in the 17 June part (whiskey = Whisky = Troops H, key row p.24 l.7, FIX-FM9; 'Dealy' plain as 'Day lea')"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
@@ -10609,7 +10609,7 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "depth": "D3",
-      "unresolved_spans": "2 (tulip M; sharpes I = Gap?)",
+      "unresolved_spans": "1 (tulip M)",
       "depth_unread": {
         "names_codes": "0",
         "other": "1"
@@ -10617,7 +10617,7 @@
       "depth_pct": 95.5,
       "title": "Eckert 1864 (Fort Monroe ledger): D. D. Porter, Portsmouth, via Fort Monroe to Cdr. W. A. Parker, Onondaga, 7 Dec 1864: two gunboats between White Shoal light and Point of Shoals (E283)",
       "line": "Read at grade H with Cipher No. 1: on 7 Dec 1864 Admiral Porter, at Portsmouth, told Commander Parker of the Onondaga, at Dutch Gap, to send two gunboats at once to cruise between White Shoal light-house and Point of Shoals night and day, to keep rebel boats off, tow off vessels anchored near shore and hold the men in any boat found in the river as prisoners. Porter's written instructions of the same day (Official Records of the Union and Confederate Navies, ser. I vol. 11, pp.153-154: 'I telegraphed you to send two vessels there at once') and Parker's report of 11 Dec (p.188) refer to this telegram; its text was not located there or in the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3, second audit concurs (AUD2-LEDGER-19, N2 rejected): ORN I/11 pp.153-154, p.188 refer to this telegram and paraphrase its order but do not print it; Sharpes = [Gap] H (key row Sharper), FIX-FM8 note owed",
+      "gap": "N3, second audit concurs (AUD2-LEDGER-19, N2 rejected): ORN I/11 pp.153-154, p.188 refer to this telegram and paraphrase its order but do not print it; Sharpes = [Gap] H (key row Sharper, spelling variant), carried into the reading by FIX-FM9 9 Oct 2026",
       "completeness": "21 H of 22 code-word groups (tulip M; Sharpes = Gap H, AUD2-LEDGER-19)",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.275, pointer 5819, E283"
