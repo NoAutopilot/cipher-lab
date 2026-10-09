@@ -13254,3 +13254,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 21:16 | ANON-PILE-RULE worker (account 4, Opus) | claim: apply ASKS 158 anonymous-pile intake rule (CLAUDE.md, intake_gate_check.py, S6 re-queue) for orchestrator (account-4)
 2026-10-09 21:17 | MS18-R5 reader | claim: MS18-R5 mssEC 18 No.1 ten rows, cap USD 3, box 100 min from 21:17 UTC, for LANE LEDGER (account 1)
 2026-10-09 21:17 | FV-MS18g (Opus 5.5 first verifier) | claim: eckert-1864 E347 E349 E350 (MS18-R4 not-located rows), AUDIT.md "## AUDIT (FV-MS18g)"; cap USD 6.5, box 100 min to ~22:58 UTC; for LANE LEDGER (account 1)
+2026-10-09 21:17 | FV-MS18f (Opus first verifier) | claim: eckert-1862 E343 E345 E346 (MS18-R4 not-located rows), AUDIT "## AUDIT (FV-MS18f)"; cap USD 6.5, box 100 min from 21:18 UTC; for LANE LEDGER (account 1)
