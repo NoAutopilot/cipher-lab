@@ -1,0 +1,78 @@
+== dint-f89-gloss-kp
+dint-f89-gloss-kp [dev] err_true 0.390 (87/223) 95% 0.329-0.456 | wrong 87 deleted 0 inserted 0 | excluded 350 | lines missing 0
+  top confusions (truth value <- read): e<-0 x27, a<-v x15, e<-1 x12, l<-+ x7, i<-1 x5, n<-X_4BAR x3, e<-0' x2, a<-T x2
+split dev: err_true 0.390 (87/223) 95% 0.329-0.456
+paired passZ_pipeline.tsv vs passZ_pipeline.tsv on dint-f89-gloss-kp: 223 common scored signs; base wrong 87, output wrong 87; fixed 0, broken 0; sign test p = 1.0000
+dint-f89-gloss-kp [dev] err_true 0.421 (94/223) 95% 0.359-0.487 | wrong 86 deleted 0 inserted 8 | excluded 350 | lines missing 0
+  top confusions (truth value <- read): e<-0 x27, a<-v x15, e<-1 x12, l<-+ x6, i<-1 x4, n<-X_4BAR x3, e<-0' x2, n<-4 x2
+split dev: err_true 0.421 (94/223) 95% 0.359-0.487
+paired passA.tsv vs passZ_pipeline.tsv on dint-f89-gloss-kp: 223 common scored signs; base wrong 87, output wrong 86; fixed 2, broken 1; sign test p = 1.0000
+dint-f89-gloss-kp [dev] err_true 0.444 (99/223) 95% 0.380-0.510 | wrong 92 deleted 1 inserted 6 | excluded 350 | lines missing 0
+  top confusions (truth value <- read): e<-0 x27, a<-v x15, e<-1 x12, i<-1 x11, l<-+ x5, n<-X_4BAR x3, e<-0' x2, a<-T x2
+split dev: err_true 0.444 (99/223) 95% 0.380-0.510
+paired passB.tsv vs passZ_pipeline.tsv on dint-f89-gloss-kp: 223 common scored signs; base wrong 87, output wrong 93; fixed 1, broken 7; sign test p = 0.0703
+== dint-f89-gloss-kp2
+dint-f89-gloss-kp2 [dev] err_true 0.124 (31/249) 95% 0.089-0.171 | wrong 31 deleted 0 inserted 0 | excluded 324 | lines missing 0
+  top confusions (truth value <- read): l<-+ x7, n<-X_4BAR x3, e<-0' x2, a<-T x2, n<-4 x2, s<-X_DELTA x1, t<-X_VSTEM x1, u<-m' x1
+split dev: err_true 0.124 (31/249) 95% 0.089-0.171
+paired passZ_pipeline.tsv vs passZ_pipeline.tsv on dint-f89-gloss-kp2: 249 common scored signs; base wrong 31, output wrong 31; fixed 0, broken 0; sign test p = 1.0000
+dint-f89-gloss-kp2 [dev] err_true 0.157 (39/249) 95% 0.117-0.207 | wrong 31 deleted 0 inserted 8 | excluded 324 | lines missing 0
+  top confusions (truth value <- read): l<-+ x6, n<-X_4BAR x3, e<-0' x2, n<-4 x2, s<-X_DELTA x1, t<-X_VSTEM x1, u<-m' x1, t<-3 x1
+split dev: err_true 0.157 (39/249) 95% 0.117-0.207
+paired passA.tsv vs passZ_pipeline.tsv on dint-f89-gloss-kp2: 249 common scored signs; base wrong 31, output wrong 31; fixed 2, broken 2; sign test p = 1.0000
+dint-f89-gloss-kp2 [dev] err_true 0.137 (34/249) 95% 0.099-0.185 | wrong 28 deleted 0 inserted 6 | excluded 324 | lines missing 0
+  top confusions (truth value <- read): l<-+ x5, n<-X_4BAR x3, e<-0' x2, a<-T x2, n<-4 x2, l<-t x2, s<-X_DELTA x1, u<-m' x1
+split dev: err_true 0.137 (34/249) 95% 0.099-0.185
+paired passB.tsv vs passZ_pipeline.tsv on dint-f89-gloss-kp2: 249 common scored signs; base wrong 31, output wrong 28; fixed 3, broken 0; sign test p = 0.2500
+== dint-f98v-gloss-kp
+dint-f98v-gloss-kp [dev] err_true 0.515 (34/66) 95% 0.397-0.631 | wrong 34 deleted 0 inserted 0 | excluded 180 | lines missing 0
+  top confusions (truth value <- read): e<-1 x5, a<-v x4, i<-1 x3, n<-y x3, e<-0 x2, s<-0' x2, l<-+ x2, d<-NEW:tt x1
+split dev: err_true 0.515 (34/66) 95% 0.397-0.631
+paired passZ_pipeline.tsv vs passZ_pipeline.tsv on dint-f98v-gloss-kp: 66 common scored signs; base wrong 34, output wrong 34; fixed 0, broken 0; sign test p = 1.0000
+dint-f98v-gloss-kp [dev] err_true 0.561 (37/66) 95% 0.441-0.674 | wrong 35 deleted 0 inserted 2 | excluded 180 | lines missing 0
+  top confusions (truth value <- read): e<-1 x5, a<-v x4, e<-0 x3, i<-1 x3, n<-y x3, s<-0' x2, l<-+ x2, d<-NEW:tt (two verticals, one crossbar) x1
+split dev: err_true 0.561 (37/66) 95% 0.441-0.674
+paired passA.tsv vs passZ_pipeline.tsv on dint-f98v-gloss-kp: 66 common scored signs; base wrong 34, output wrong 35; fixed 0, broken 1; sign test p = 1.0000
+dint-f98v-gloss-kp [dev] err_true 0.500 (33/66) 95% 0.383-0.617 | wrong 32 deleted 0 inserted 1 | excluded 180 | lines missing 0
+  top confusions (truth value <- read): e<-1 x5, a<-v x4, n<-y x3, e<-0 x2, i<-1 x2, s<-0' x2, l<-+ x2, d<-II x1
+split dev: err_true 0.500 (33/66) 95% 0.383-0.617
+paired passB.tsv vs passZ_pipeline.tsv on dint-f98v-gloss-kp: 66 common scored signs; base wrong 34, output wrong 32; fixed 2, broken 0; sign test p = 0.5000
+== dint-f98v-gloss-kp2
+dint-f98v-gloss-kp2 [dev] err_true 0.303 (23/76) 95% 0.211-0.413 | wrong 23 deleted 0 inserted 0 | excluded 170 | lines missing 0
+  top confusions (truth value <- read): n<-y x3, s<-0' x2, l<-+ x2, t<-Z x2, d<-NEW:tt x1, t<-# x1, r<-Z x1, t<-m' x1
+split dev: err_true 0.303 (23/76) 95% 0.211-0.413
+paired passZ_pipeline.tsv vs passZ_pipeline.tsv on dint-f98v-gloss-kp2: 76 common scored signs; base wrong 23, output wrong 23; fixed 0, broken 0; sign test p = 1.0000
+dint-f98v-gloss-kp2 [dev] err_true 0.382 (29/76) 95% 0.281-0.494 | wrong 27 deleted 0 inserted 2 | excluded 170 | lines missing 0
+  top confusions (truth value <- read): t<-v' x3, n<-y x3, s<-0' x2, l<-+ x2, t<-Z x2, d<-NEW:tt (two verticals, one crossbar) x1, t<-# x1, r<-Z x1
+split dev: err_true 0.382 (29/76) 95% 0.281-0.494
+paired passA.tsv vs passZ_pipeline.tsv on dint-f98v-gloss-kp2: 76 common scored signs; base wrong 23, output wrong 27; fixed 0, broken 4; sign test p = 0.1250
+dint-f98v-gloss-kp2 [dev] err_true 0.289 (22/76) 95% 0.200-0.400 | wrong 21 deleted 0 inserted 1 | excluded 170 | lines missing 0
+  top confusions (truth value <- read): n<-y x3, s<-0' x2, l<-+ x2, t<-Z x2, d<-II x1, t<-# x1, r<-Z x1, d<-p x1
+split dev: err_true 0.289 (22/76) 95% 0.200-0.400
+paired passB.tsv vs passZ_pipeline.tsv on dint-f98v-gloss-kp2: 76 common scored signs; base wrong 23, output wrong 21; fixed 2, broken 0; sign test p = 0.5000
+== dint-f113-gloss-kp
+dint-f113-gloss-kp [dev] err_true 0.465 (33/71) 95% 0.354-0.580 | wrong 33 deleted 0 inserted 0 | excluded 115 | lines missing 0
+  top confusions (truth value <- read): e<-0 x9, d<-# x5, a<-v x3, e<-1 x3, a<-1 x2, s<-NEW:d-shape x1, l<-+ x1, u<-c x1
+split dev: err_true 0.465 (33/71) 95% 0.354-0.580
+paired passZ_pipeline.tsv vs passZ_pipeline.tsv on dint-f113-gloss-kp: 71 common scored signs; base wrong 33, output wrong 33; fixed 0, broken 0; sign test p = 1.0000
+dint-f113-gloss-kp [dev] err_true 0.465 (33/71) 95% 0.354-0.580 | wrong 33 deleted 0 inserted 0 | excluded 115 | lines missing 0
+  top confusions (truth value <- read): e<-0 x9, d<-# x5, a<-v x3, e<-1 x3, a<-1 x2, s<-NEW:d-shape x1, l<-+ x1, u<-c x1
+split dev: err_true 0.465 (33/71) 95% 0.354-0.580
+paired passA.tsv vs passZ_pipeline.tsv on dint-f113-gloss-kp: 71 common scored signs; base wrong 33, output wrong 33; fixed 0, broken 0; sign test p = 1.0000
+dint-f113-gloss-kp [dev] err_true 0.465 (33/71) 95% 0.354-0.580 | wrong 33 deleted 0 inserted 0 | excluded 115 | lines missing 0
+  top confusions (truth value <- read): e<-0 x9, d<-# x5, a<-v x4, e<-1 x3, a<-1 x2, s<-0' x1, l<-+ x1, u<-c x1
+split dev: err_true 0.465 (33/71) 95% 0.354-0.580
+paired passB.tsv vs passZ_pipeline.tsv on dint-f113-gloss-kp: 71 common scored signs; base wrong 33, output wrong 33; fixed 0, broken 0; sign test p = 1.0000
+== dint-f113-gloss-kp2
+dint-f113-gloss-kp2 [dev] err_true 0.187 (14/75) 95% 0.115-0.289 | wrong 14 deleted 0 inserted 0 | excluded 111 | lines missing 0
+  top confusions (truth value <- read): a<-1 x2, s<-NEW:d-shape x1, l<-+ x1, u<-c x1, g<-v' x1, r<-x x1, s<-# x1, d<-1 x1
+split dev: err_true 0.187 (14/75) 95% 0.115-0.289
+paired passZ_pipeline.tsv vs passZ_pipeline.tsv on dint-f113-gloss-kp2: 75 common scored signs; base wrong 14, output wrong 14; fixed 0, broken 0; sign test p = 1.0000
+dint-f113-gloss-kp2 [dev] err_true 0.200 (15/75) 95% 0.125-0.304 | wrong 15 deleted 0 inserted 0 | excluded 111 | lines missing 0
+  top confusions (truth value <- read): a<-1 x2, s<-NEW:d-shape x1, l<-+ x1, u<-c x1, g<-v' x1, r<-x x1, s<-# x1, d<-1 x1
+split dev: err_true 0.200 (15/75) 95% 0.125-0.304
+paired passA.tsv vs passZ_pipeline.tsv on dint-f113-gloss-kp2: 75 common scored signs; base wrong 14, output wrong 15; fixed 0, broken 1; sign test p = 1.0000
+dint-f113-gloss-kp2 [dev] err_true 0.173 (13/75) 95% 0.104-0.274 | wrong 13 deleted 0 inserted 0 | excluded 111 | lines missing 0
+  top confusions (truth value <- read): a<-1 x2, s<-0' x1, l<-+ x1, u<-c x1, g<-v' x1, r<-NEW:v on a baseline bar x1, s<-# x1, d<-1 x1
+split dev: err_true 0.173 (13/75) 95% 0.104-0.274
+paired passB.tsv vs passZ_pipeline.tsv on dint-f113-gloss-kp2: 75 common scored signs; base wrong 14, output wrong 13; fixed 1, broken 0; sign test p = 1.0000
