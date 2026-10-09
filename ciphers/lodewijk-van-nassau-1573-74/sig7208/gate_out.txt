@@ -1,0 +1,5 @@
+page	agree	aligned	share	null_mean	null_p99	null_max	gate(>=0.80 and >p99)
+p1	470	546	0.861	0.217	0.284	0.287	PASS
+p2	279	346	0.806	0.360	0.486	0.490	PASS
+p3	113	136	0.831	0.295	0.667	0.750	PASS
+overall: PASS

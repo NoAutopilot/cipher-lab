@@ -1,0 +1,15 @@
+crib	source_in_7208	why_it_may_recur_in_4612	strength
+mastrech	f.223r l.2 "lentreprinse de mastrech" (cipher in f.221r)	4612 (6 Mar 1574, Lodewijk to Orange, "J'e receu hier vostre lettre du xxime de febvrier") answers 7208, whose first matter is the Maastricht enterprise	topic: strong; exact spelling in Lodewijk's hand unknown (Mastrecht/Maestricht)
+entreprinse	l.2, l.3, l.17 "lentreprinse de mastrech", "ceste vostre entreprinse", "lentreprinse de [224]"	the reply would report on the enterprise	word: medium
+stockem	l.8 "la maison et ville de Stockem" (Stokkem near Maastricht; WVO summary "Stokhem (bij Gulpen)")	Orange's fallback if Maastricht failed; a reply may say whether it was taken	topic: medium
+riviere / bateaulx	l.9 "mener tous les bateaulx qui seront sur la riviere"	boats on the Maas	word: weak
+chemin / bommel	l.10, l.16 "prendre tel chemin", "le chemin de bommel"	route choice is the core advice; 4612 may answer which road (Bommel) Lodewijk will take	topic: strong for "chemin"; name code for Bommel unknown in list A
+[212] [213] [214]	l.11 "soit que vous allez vers 212 ou 213 ou que tirez droict sur 214"	three destinations left as bare name codes by the decipherer: the same list-B codes, NOT necessarily list A (4612 is Lodewijk to Orange); a 4612 occurrence of 212-214 is a lead, not a value	codes: lead only (direction rule, AX2-172)
+[224]	l.17 "lentreprinse de 224 ... jamais en ceste saison vostre cavallerie ny scauroit aprocher"	a second planned enterprise Orange advises against	code: lead only (direction rule)
+intelligences	l.12 "quelques intelligences secretes par dedans"	secret contacts inside the target towns	word: weak
+hollande / lennemy / venue	l.13-15 "lennemy ayant entendu vostre venue se gouvernera en hollande ... demeurer ferme en lad hollande"	the Spanish response to Lodewijk's advance	topic: medium
+cavallerie / rivieres	l.18-19 "vostre cavallerie ny scauroit aprocher ni passer les rivieres"	a reply about crossing the Maas/Rhine	word: medium
+commission	l.21 "Quant a la commission que vous demandez" (the &c. leaves its content out)	Lodewijk asked for a commission; the reply may thank or re-ask	word: medium
+nouveau gouverneur / levee de gens de guerre / princes	l.22-23 "tenir la main envers les princes en cas que le nouveau gouverneur voulsist faire quelque levee de gens de guerre"	Requesens's levies in Germany; 4612's clear words already mention "gens de guerre" twice and "Wesel"	topic: strong ("gens de guerre" is clear in 4612, so the crib sits beside it)
+lestat de voz affaires / intention	l.24-25 "me mander le plus souvent que pourrez tout lestat de voz affaires et vostre intention"	4612's clear "me mander laduis sur toutes choses" echoes it	phrase: medium
+[276]	cipher f.221r p1_L11 pos9, read 270 by both passes, final glyph 5/6/0 ambiguous; aligned to "mastrech" (f.223r l.2)	4612 (ciphertext_4612_v3.tsv) has 276 at p1_r05 and p1_r21 and no 270; if the 7208 sign is 276, 4612's two 276s are candidate "Mastrecht" slots -- 4612 is Lodewijk to Orange (list A), so a list-B value is a lead only (AX2-172 direction rule)	code: lead only; strongest positional crib this job found

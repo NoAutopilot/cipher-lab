@@ -168,3 +168,9 @@ for m in ('images/manifest.json','images_wv2/manifest.json'):
     exit 1
     ;;
 esac
+# SIG-7208 (9 Oct 2026): 7208 pages and crops are not committed (folder over 30 MB). Regenerate:
+#   sh regen_images.sh page300 07208 N   (N = 1..5; or: pdftoppm -png -r 300 07208.pdf p, PDF sha1 31aa506d73904d9034f99e4b263bcf48efeccc4e)
+#   python3 ../../tools/iiif_lines.py --image p-1.png --out CROPS --region 150,330,2300,2790 --prefix 07208_p1 --debug
+#   python3 ../../tools/iiif_lines.py --image p-2.png --out CROPS --region 190,360,2290,2650 --prefix 07208_p2 --debug
+#   python3 ../../tools/iiif_lines.py --image p-3.png --out CROPS --region 150,370,2300,720 --prefix 07208_p3 --debug
+#   python3 ../../tools/iiif_lines.py --image p-5.png --out CROPS --region 180,740,2300,1820 --prefix 07208_p5 --lines-per-crop 3

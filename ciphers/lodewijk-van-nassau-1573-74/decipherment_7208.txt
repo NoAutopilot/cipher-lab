@@ -1,0 +1,34 @@
+# 7208 (Willem van Oranje to Lodewijk van Nassau, Vlissingen, 21 February 1574, "Duplicata"): the period decipherment,
+# WVO PDF p5 = ARAB Audientie 90 f.223r (WVO Opmerkingen: "De contemporaine oplossing is bijgevoegd op f. 223 r"),
+# transcribed by eye by SIG-7208 (Opus), 9 Oct 2026, from 300 dpi renders of
+# resources.huygens.knaw.nl/media/wvo/images/07000-07999/07208.pdf (sha1 31aa506d73904d9034f99e4b263bcf48efeccc4e).
+# It opens "Monsieur mon frere &c." and gives the ciphered text plus the clear words between runs. The decipherer left
+# four names as bare numbers: 212, 213, 214, 224 (kept as [212] etc.). Words cut at the right page edge of the render are
+# completed from the line context and marked [?]; period spelling kept; a struck word (after "voulldrez") omitted.
+Monsieur mon frere &c.
+Ce que vous verrez quant a lentreprinse de mastrech priant dieu vous y donner bonne et heureuse[?]
+yssue, auquel cas et venant a prosperer ceste vostre entreprinse, vous ferez bien de mettre peyne[?]
+toutte oeuvre a bien pourveoir lad ville de vivres, gens, munition, et touttes aultres necessitez de[?]
+aussi ordre quelle soit en toute diligence fortiffiee le mieulx que faire se pourra pour plus grande[?]
+asseurance de la ville et de ceulx que vous y vouldrez laisser dedans, et la ou il ne plaira[?]
+au seigneur vous donner lentree de ceste ville, je treuve fort bon que vous emparez de la maison[?]
+et ville de Stockem, les faisant de mesmes bien fortiffier et pourveoir de toutes choses requises[?]
+y faisant aussi mener tous les bateaulx qui seront sur la riviere pour nous en servir en temps
+lieu ou besoing sera, et cela faict, et ayant laisse quelcun dauthorite et de commandement en la place[?]
+je remectz entierement a vous de prendre tel chemin que verrez estre le plus propre a voz desseins[?]
+soit que vous allez vers [212] ou [213] ou que tirez droict sur [214] moyennant que vous y
+eussiez quelques intelligences secretes par dedans, car aultrement et vous voyant peu fort de fant[erie][?]
+je crains que nexecuteriez grandes choses, je verray comment lennemy ayant entendu vostre venue se
+gouvernera en hollande, et selon cela je vous advertiray, car sil faict son compte de demeurer
+ferme en lad hollande, le meilleur seroit que prinsiez le chemin de bommel, pour les raisons
+que par aulcunes mes precedentes vous ay escript. Quant a lentreprinse de [224] je ny treuve[?]
+aulcune apparence veu que jamais en ceste saison vostre cavallerie ny scauroit aprocher ni[?]
+passer les rivieres, et en peu de temps vous trouveriez environne des ennemis sans que par ung[?]
+ou aultres vous peussiez estre secouru, parquoy je ne le treuve aulcunement conseillable.
+Quant a la commission que vous demandez &c.
+Vous ferez bien de tenir la main envers les princes en cas que le nouveau gouverneur[?]
+voulsist faire quelque levee de gens de guerre quil fust empesche le plus que faire
+se pourra. Je vous prie me mander le plus souvent que pourrez tout lestat de voz affaires[?]
+et vostre intention affin que selon cela je me puisse reigler et vous assister selon le moyen[?]
+que nous avons. Je vous envoye joinctement ceste le double &c. de Vlissinghe
+le xxie de febvrier 1574
