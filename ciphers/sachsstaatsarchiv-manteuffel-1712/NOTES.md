@@ -4023,3 +4023,9 @@ low), at slot f. Codes > 401: 1000 = et at L04 (agrees). Key extension: none; ke
 Requests: www.archiv.sachsen.de 1 (200). Vision: 3 Sonnet calls + worker reconciliation. No novelty class; status unchanged (partial).
 Next: the G01 28/29 transcription fix with --check and both gates re-run (~$0.3); 207 'le Gr Tres.' second witness; with 0490 now read on both
 pages, a verifier (V-MANT0490 covers the right page only) for the left page.
+
+## MANT-0310 (9 Oct 2026, 18:43-19:0x UTC by date -u, LANE FAMILY-A2k account 2): 694/08 0310/0311 look, no transcription
+Named next of MANT-0309. 2 GETs from www.archiv.sachsen.de (0310, 0311, HTTP 200 image/jpeg, 2.5 s apart; sha256_16 b9b4c753ce99118e, 8f7977bba670f305; images in scratch, re-fetch from images/loc694-08-09/frames.tsv). Read by eye at 1500 px; rows appended to mant0608/inv08f.tsv; grade M, nothing enters key.tsv or a reading.
+- **0310** (stamp 241, directly after 0309's 240): numbered paragraphs 3) and 4), code runs on both pages (left heavy, ~45-65 tokens est., small words above some groups; right page one short run), closing formula and "verte". Belongs to the same dispatch **by stamp order and hand only**; the date is not read on this frame, so "16 Sept pack" is a lead, not a finding. Codes seen include 170, 187, 257, 260; none of the held 321/191/254/199/42. No second Extrait and no decipherment on it. A glossed, heavy leaf: a read of it is a ~$5 job on the MANT-0309 procedure (count tokens first; one page if >120).
+- **0311**: a short clear-text note (opens "Mr J. m'ayant dit que ... a mandé que vous envoyiez un détachement de cavalerie"), no code run seen, rest is verso show-through; not part of the pack.
+Not found: the date of 0310 (not on the frame read), any covering/Extrait structure. Requests: sachsen 2. Next: 0310 read as a glossed key-test leaf (~$5), after MANT-0317/0490L.
