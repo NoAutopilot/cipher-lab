@@ -12699,3 +12699,5 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 13:49 | MANT-CENSUS | sachsen release (56 GETs: 5 AB BO frames + clear control 0125 + 50 unseen 694/08 frames 0003-0130, all 200 image/jpeg, ~2.2 s apart) -- for LANE FAMILY-A2i (account 2)
 2026-10-09 13:50 | MANT-CENSUS | sachsen release (56 GETs: 5 AB BO frames + clear control 0125 + 50 unseen 694/08 frames 0003-0130, all 200, ~2.2 s apart) -- for LANE FAMILY-A2i (account 2)
 2026-10-09 13:53 | BLA-TRY worker (account 4, Opus) | claim 13:55 UTC by date -u: huntington-blathwayt-madrid-1728 decode_key --try on 7 key-tie tokens, disk only, cap USD 1.5, box 13:55-14:40 UTC (80% 14:31); for LANE DEFAULT-account-4-20261009-1340
+2026-10-09 13:52 | SFZ-LOOK worker (account 4, Opus) | claim: sforza-pusterla-1447-f13 gap 2 lookalike pass (T=/b-, d/g, q/V), disk only, cap USD 3, box 13:53-15:08 UTC by date -u (80% 14:53), for LANE DEFAULT-account-4-20261009-1340
+2026-10-09 13:53 | SFZ-LOOK worker (account 4, Opus) | claim: sforza-pusterla-1447-f13 gap 2 lookalike pass (T=/b-, d/g, q/V), disk only, cap USD 3, box 13:53-15:08 UTC by date -u (80% 14:53), for LANE DEFAULT-account-4-20261009-1340
