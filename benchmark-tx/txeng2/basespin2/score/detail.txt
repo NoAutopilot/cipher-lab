@@ -1,0 +1,13 @@
+passZ_v4      position errors (wrong+deleted): as measured 8/193 | flagged-excluded 6/191
+passZ_v5      position errors (wrong+deleted): as measured 10/193 | flagged-excluded 8/191
+passA_v5      position errors (wrong+deleted): as measured 16/193 | flagged-excluded 14/191
+passB_v5      position errors (wrong+deleted): as measured 9/193 | flagged-excluded 7/191
+broken p1c_L01.3
+fixed  p1c_L02.26
+broken p1c_L04.2
+broken p1c_L04.11
+fixed  p2c_L01.17
+broken p2c_L02.13
+sheet-defect p1c_L01.14: in scored set True; old err False, new err False
+sheet-defect p1c_L01.15: in scored set True; old err False, new err False
+sheet-defect p1c_L03.25: in scored set True; old err False, new err False

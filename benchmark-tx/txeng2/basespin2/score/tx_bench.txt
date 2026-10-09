@@ -1,0 +1,15 @@
+spinelli-c1519-confirm [confirm] err_true 0.067 (13/193) 95% 0.040-0.112 | wrong 10 deleted 0 inserted 3 | excluded 66 | lines missing 0
+  as measured 0.067 (13/193) | flagged excluded 0.058 (11/191) 95% 0.033-0.100 [2 flagged]
+  top confusions (truth value <- read): i<-HOOK x3, u<-KEY_U_V2 x2, t<-TEE x1, i<-EIGHT x1, p<-THREE x1, s<-KEY_SS x1, n<-EIGHT x1
+split confirm: err_true 0.067 (13/193) 95% 0.040-0.112
+paired passZ_v5.tsv vs passZ_v4.tsv on spinelli-c1519-confirm: 193 common scored signs; base wrong 8, output wrong 10; fixed 2, broken 4; sign test p = 0.6875
+===A
+spinelli-c1519-confirm [confirm] err_true 0.098 (19/193) 95% 0.064-0.149 | wrong 16 deleted 0 inserted 3 | excluded 66 | lines missing 0
+  as measured 0.098 (19/193) | flagged excluded 0.089 (17/191) 95% 0.056-0.138 [2 flagged]
+  top confusions (truth value <- read): u<-KEY_U_V2 x2, r<-EIGHT/HOOK? x2, i<-HOOK x2, i<-PHI/HOOK? x2, t<-SIX/HOOK? x1, i<-EIGHT x1, p<-THREE x1, t<-PHI x1
+split confirm: err_true 0.098 (19/193) 95% 0.064-0.149
+===B
+spinelli-c1519-confirm [confirm] err_true 0.057 (11/193) 95% 0.032-0.099 | wrong 9 deleted 0 inserted 2 | excluded 66 | lines missing 0
+  as measured 0.057 (11/193) | flagged excluded 0.047 (9/191) 95% 0.025-0.087 [2 flagged]
+  top confusions (truth value <- read): u<-KEY_U_V2 x2, t<-TEE x1, i<-PHI/EIGHT? x1, p<-THREE x1, i<-HOOK x1, i<-PHI/HOOK? x1, s<-KEY_SS x1, n<-EIGHT/DIAMOND? x1
+split confirm: err_true 0.057 (11/193) 95% 0.032-0.099
