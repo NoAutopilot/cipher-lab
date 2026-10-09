@@ -2710,7 +2710,7 @@ Next: 0233's person codes (83, 93, 75, 59, 4.10.11.2) in the 0136 clerk hand nee
 it among the mant0609/0608 glossed ranks before any further unglossed light leaf (~$1 grep + eye); the light unglossed ranks below 26 are
 not worth a reading job under gate (b) at these N (power 0.49 at N=10).
 
-## DEPTH-STATS-CLEAR (9 Oct 2026, 05:37-05:5x UTC by date -u, account 4 worker): 694/09 0015-16 code 198, both windows side by side
+## DEPTH-STATS-CLEAR (9 Oct 2026, 05:37-05:41 UTC by date -u, account 4 worker): 694/09 0015-16 code 198, both windows side by side
 FAM-MANTV's flag (ROOM 8 Oct 17:03): `tools/depth_stats.py` cut control (ii)'s 8+value+8 window from cipher tokens only, so on this
 island leaf 198's windows spliced letters of the neighbouring runs. The tool now takes `--clear-aware STREAM.tsv` (format in its
 docstring); f0015_09/clear_stream.tsv gives the clear French around each run in reading order, from passA_0015.tsv's before/after
