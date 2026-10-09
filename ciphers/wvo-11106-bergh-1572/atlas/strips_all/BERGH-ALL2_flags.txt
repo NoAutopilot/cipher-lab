@@ -74,14 +74,15 @@ L17_01_012 L17_h1/12 B: dd s (upper stroke other line)
 L17_01_013 L17_h1/13 A: m?
 L17_01_014 L17_h1/14 A: m?
 L17_01_014 L17_h1/14 B: u?
-L17_01_016 L17_h2/1 B: yx?
 L17_01_017 L17_h2/2 A: m?
 L17_01_018 L17_h2/3 A: m?
 L17_01_019 L17_h2/4 A: m?
 L17_01_025 L17_h2/10 A: r?
+L17_01_025 L17_h2/10 B: r?
 L17_01_031 L17_h2/16 A: 3 g (top ink is line above)
+L17_01_031 L17_h2/16 B: 3 g (upper ink other line)
 L18_01_001 L18_h1/1 A: yx?
-L18_01_010 L18_h1/10 B: r?
+L18_01_001 L18_h1/1 B: yx?
 L18_01_022 L18_h2/12 A: 9?
 L18_01_027 L18_h2/17 A: dd (also tail of g from line above)
 L19_01_001 L19_h1/1 A: FRAG (flourish stroke)

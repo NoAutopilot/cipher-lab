@@ -68,7 +68,7 @@ exit=0
 ## Remaining gaps
 
 Read so far: 0 of 820 cipher signs read (transcription done by FAM-11106T, 8 Oct 2026: K=41 provisional, err_2reader 0.10, err_true not measurable).
-- Whole letter, inventory - blocker: not-attempted; 71 look-alike positions (d/dd, y/yx, s/S, g/G/q/9, z/2, s/5, n/u) in tx/focus.tsv; glyph atlas built (GLY-11106: atlas/, 875 boxes); alignment labels 5/19, box-numbered strip reads (BERGH-STRIP) 16/19 FAIL, sign-group reads on a de-stacked layout (BERGH-GRP, 9 Oct 2026) **18/19 PASS** against the pre-registered 17 (A/B 0.811), atlas/group_sign.tsv for the 19 gate windows (285 boxes) and, BERGH-ALL1 (9 Oct 2026), whole lines L01-L10 (432 boxes, A/B 0.822, `atlas/strips_grp.py --line`); sorter page not built; next: BERGH-ALL2, the same instrument on lines L11-L22 (443 boxes, 24 half-line strips, 4 calls), then sorter/build_inputs.py from group labels, ~$12
+- Whole letter, inventory - blocker: not-attempted; 71 look-alike positions (d/dd, y/yx, s/S, g/G/q/9, z/2, s/5, n/u) in tx/focus.tsv; glyph atlas built (GLY-11106: atlas/, 875 boxes); alignment labels 5/19, box-numbered strip reads (BERGH-STRIP) 16/19 FAIL, sign-group reads on a de-stacked layout (BERGH-GRP, 9 Oct 2026) **18/19 PASS** against the pre-registered 17 (A/B 0.811), atlas/group_sign.tsv for the 19 gate windows (285 boxes) and, BERGH-ALL1 (9 Oct 2026), whole lines L01-L10 (432 boxes, A/B 0.822, `atlas/strips_grp.py --line`), and BERGH-ALL2 (9 Oct 2026), lines L11-L22 (443 boxes, A/B 0.822), so all 875 boxes now have two group reads (158 split boxes); sorter page not built; next: sorter/build_inputs.py from the agreed group labels, with the split boxes as the focus, then the owner's sorter, ~$8
 - Whole letter, language - blocker: not-attempted; homophonic K41 now control-backed FAIL in French (fr16, 6-seed control 0.718), German (de1600, 0.777), Latin (la17, 0.611) and Dutch (nl16, 0.681, NL16-11106) and at a merged K38 in French (FAM-11106L); Bergh's six WVO sibling letters 1574-77 are in French (2) and German (4), none Dutch; single-letter homophonic is now negative in all four candidate languages, so the open question is the design, not the language; next: the multi-sign family (below)
 - Whole letter, design - blocker: not-attempted; multi-sign (syllable/code) is the design prior's nearest class, untested; next: `family_run.py --family syllabary` with its control after the inventory is settled, ~$1
 - Year - blocker: not-attempted; the year 1572 is editorial; next: only once something reads, ~$0.3
@@ -80,9 +80,9 @@ Read so far: 0 of 820 cipher signs read (transcription done by FAM-11106T, 8 Oct
 - [x] known-keys: the Nassau keys key_1572.tsv and key_nepveu.tsv were dropped as a design mismatch by KH2-D; no Bergh key on file.
 - [x] print: Groen 1re serie, Gachard III-IV, Kervyn full text, Japikse out of range (FAM-CS11106); Waanders 2022 still unchecked.
 - [ ] key-rebuild: homophonic K41 FAIL with control at gate in fr16, de1600, la17, nl16 (NL16-11106) and merged-K38 fr16 (FAM-11106L); merged-K38 de1600 control below gate (non-test); the syllabary/multi-sign family is untried.
-- [ ] image-check: tx/focus.tsv's 71 look-alike positions: atlas built (GLY-11106); alignment labels 5/19, box-strip reads 16/19 (BERGH-STRIP, FAIL), sign-group reads on a de-stacked layout 18/19 (BERGH-GRP, PASS, 19 gate windows), then lines L01-L10 (BERGH-ALL1, 432 boxes, A/B 0.822); next lines L11-L22 (BERGH-ALL2), then the owner's sorter.
+- [ ] image-check: tx/focus.tsv's 71 look-alike positions: atlas built (GLY-11106); alignment labels 5/19, box-strip reads 16/19 (BERGH-STRIP, FAIL), sign-group reads on a de-stacked layout 18/19 (BERGH-GRP, PASS, 19 gate windows), then lines L01-L10 (BERGH-ALL1, 432 boxes, A/B 0.822) and L11-L22 (BERGH-ALL2, 443 boxes, A/B 0.822): all 875 boxes read; next the sorter rebuild from group labels, then the owner's sorter.
 - [ ] retry: the syllabary/multi-sign family after the inventory is settled.
-Verdict: keep going: 4 internal gaps; cheapest next: the BERGH-GRP sign-group instrument on lines L11-L22 (BERGH-ALL2; L01-L10 done by BERGH-ALL1, A/B 0.822), then the sorter rebuild from group labels, ~$12, then the syllabary/multi-sign family once the inventory is settled, ~$1
+Verdict: keep going: 4 internal gaps; cheapest next: the sorter rebuild from the group labels (all 875 boxes read by BERGH-GRP/ALL1/ALL2, A/B 0.822 on each half), ~$8, then the syllabary/multi-sign family once the inventory is settled, ~$1
 
 ## While waiting
 
@@ -505,4 +505,69 @@ atlas/group_sign.tsv now has a `job` column: 285 BERGH-GRP rows (first nine colu
 BERGH-ALL1 rows. Not done, per the brief: lines L11-L22 (443 boxes, BERGH-ALL2), the sorter rebuild, any decoding.
 
 Calls: 4 Sonnet vision (about 1.5 each by the brief's rate); this worker's own eye on 1 strip (layout check). Requests: 0 network.
+Report what was found and where it was not found; novelty is not classified here (rule 10).
+
+## BERGH-ALL2 (9 Oct 2026): the BERGH-GRP group instrument on lines L11-L22 (LANE FAMILY-A2e, account 2, 02:45-02:5x UTC by `date -u`)
+
+Brief `.claude/briefs/runs/2026-10-09-ytbiz-family-0209-jobs.md` "### BERGH-ALL2". This runs the BERGH-ALL1 setup unchanged (PREREG-BERGH-GRP.md reader format and
+sign list, de-stacked layout, two blind Sonnet passes, A forward / B reverse, agreed-or-split rule with no arbitration) on lines L11-L22:
+the remaining 443 atlas boxes, of which 150 lie in BERGH-GRP's gate windows and 293 had not been read by a group pass before. With
+BERGH-ALL1, all 875 boxes now carry two group reads.
+
+Prior work: `tools/prior_work.py wvo-11106-bergh-1572 --item-spec '...' --step-type crop --fetch` exited 4 (LEAD 1: this job's own ROOM claim,
+02:45). It was answered with `--record` (CLEAR) and the re-run exited 0 ("proceed on the residue: whole item"), with UNCHECKED-NET 1 left
+(the aaymeloglu repo, grepped by hand by FAM-CS11106). Check 1 by hand: before this job atlas/strips_all/key.tsv held only L01-L10 and
+group_sign.tsv had no L11-L22 rows from a whole-line job. Checks 2-4 are as in BERGH-GRP. This step reads shapes only, so check 5 does
+not apply. Disk only, 0 network requests.
+
+**Crop step (pasted).** The line crops are the ones FAM-11106T committed (`tools/iiif_lines.py --image p-000.jpg --out images/crops ...`).
+Strips were cut by `python3 atlas/strips_grp.py --line L01 ... L22`, giving 44 PNGs and "875 numbered boxes, 875 distinct, of 875 atlas
+boxes on these lines" (exit 0). Numbering is per strip, so the L01-L10 rows of the regenerated atlas/strips_all/key.tsv are
+byte-identical to BERGH-ALL1's key (checked with `cmp`). `atlas/score_all.py` now scores only the strips present in the pass files, so
+BERGH-ALL1's `--check` stays current against the larger key. The PNGs are not committed.
+
+**Reads.** 4 Sonnet calls with one 12-strip set (6 lines) each: A = L11-L16 and L17-L22; B = L22-L17 and L16-L11, strips reversed.
+Readers got tx/signlist.md and the strip paths only. The results are atlas/strips_all/passA_ALL2.tsv (414 groups) and passB_ALL2.tsv
+(404 groups).
+**Correction, disclosed:** pass B's second-half call wrote the rows for the 17-box image under the name L18_h1 and the rows for the
+10-box image under L17_h2. The scorer then showed 7 boxes missing (L17_h2/11-17). Asked to complete them, the same reader reported the
+swap itself. The box counts confirm it: the key gives L17_h2 17 numbers and L18_h1 10, and B's rows under each name cover the other
+strip's numbers exactly. The two strip names were swapped back in passB_ALL2.tsv; no label was changed. The uncorrected file is in
+commit 27e70178. After the swap, every number is covered exactly once in both passes (0 missing, 0 duplicate).
+
+**Result (`python3 atlas/score_all.py --job BERGH-ALL2 atlas/strips_all/passA_ALL2.tsv -- atlas/strips_all/passB_ALL2.tsv`; `--check`
+reports current).** Nothing gates here; the instrument's gate was BERGH-GRP's 18/19.
+
+| | value |
+|---|---|
+| boxes read (L11-L22) | 443 (293 not read by a group pass before, 150 also in BERGH-GRP windows) |
+| A/B agreement, same group and labels | **364/443 = 0.822** (BERGH-ALL1: 0.822; BERGH-GRP: 0.811) |
+| agreed among the 293 boxes read for the first time | 231/293 = 0.788 |
+| agreed: one sign / two or more signs / FRAG-OTHERLINE | 258 / 32 / 74 |
+| agreed boxes in groups of >= 2 boxes | 33/364 |
+| splits (79): same group, label differs / group differs | 44 / 35 |
+| commonest label splits | 9/g 7, g/q 6, n/u 3, FRAG/g 2, G/g 2, 9/q 2, FRAG/yx 2, then single cases (5/s, B/sz, r/r f, 2/z) |
+| per line, agreed/boxes | L11 35/37, L12 35/49, L13 33/42, L14 37/42, L15 36/41, L16 25/31, L17 26/32, L18 28/28, L19 26/35, L20 32/39, L21 33/34, L22 18/33 |
+| overlap with BERGH-GRP windows: boxes agreed in both jobs / same label | 110 / 101 |
+
+The 9 cross-job differences are L11_01_013 G vs g; L11_01_014 yx vs "y FRAG"; L11_01_023, L20_01_032 and L20_01_035 2 vs z (all three
+the 2/z look-alike); L15_01_019 FRAG vs g; L20_01_012 o vs "o2 FRAG"; L21_01_009 "dd 4" vs 4; and L22_01_012 FRAG vs "y sz". In this half
+the label splits are led by the g-family (9/g, g/q, 9/q, G/g: 17 of 44), where BERGH-ALL1's were led by y/yx and d/dd. L22, the last
+line, agrees least (18/33). Both passes give L22_h1/17 (L22_01_017) the label NEW1 and describe it as a digit 1 with an overbar
+("as in 19", "digit 1 of date"); it is not on tx/signlist.md. That is a reader's shape note, not a reading.
+
+**Every box the readers flagged** (a `?` or a note in either pass): 143 answers on 109 boxes. The details, with the pass and the label,
+are in atlas/strips_all/BERGH-ALL2_flags.txt. Boxes: L11_01_003 005 010 012 014 015 024 030; L12_01_004 005 007 013 023 038 042; L13_01_001 017 018 022 023 030 031 036 042;
+L14_01_002 003 004 005 006 007 017 021 022 024 025 026 029 039; L15_01_003 006 021 023 037 039 041; L16_01_002 006 008 011 019 029 031;
+L17_01_002 003 005 007 012 013 014 017 018 019 025 031; L18_01_001 022 027; L19_01_001 007 011 012 014 019 023 024 029 030 031 034 035;
+L20_01_012 017 022 023 024 029 031 038; L21_01_001 003 008 016 017 018 022 031 033; L22_01_015 016 017 020 021 022 023 024 025 028 029 033.
+
+atlas/group_sign.tsv now holds 285 BERGH-GRP rows, 432 BERGH-ALL1 rows and 443 BERGH-ALL2 rows, so every one of the 875 atlas boxes has
+a whole-line group read. `score_groups.py --check` and BERGH-ALL1's `--check` are both still current. Per the brief, this job did no
+sorter rebuild and no decoding.
+Suggestion (one line, not done): rebuild the sorter inputs from group_sign.tsv's agreed group labels (sorter/build_inputs.py, a group tile
+per agreed group), with the 158 split boxes from BERGH-ALL1 and BERGH-ALL2 (77 + 79) and the NEW1 box as the "Check these first" focus.
+
+Calls: 4 Sonnet vision calls (about 1.5 each at the brief's rate) plus 1 short resumed call to the same B reader (the L17_h2 completion,
+which surfaced the swap). This worker's own eye checked 1 strip (layout). Requests: 0 network.
 Report what was found and where it was not found; novelty is not classified here (rule 10).
