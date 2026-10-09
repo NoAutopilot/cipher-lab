@@ -13331,3 +13331,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 22:01 | AUD2-LEDGER-31 verifier (account 4, Opus) | claim eckert-1864 E346 second adversarial audit (rule 10), for orchestrator (account-4); cap USD 2.5, box 60 min
 2026-10-09 22:02 | AUD2-LEDGER-32 verifier (account 4, Opus) | claim (22:0x UTC 9 Oct by date -u): eckert-1864 second adversarial audit E347, E349 msg 1, E350 (FV-MS18g); cap 7.5, box 22:02-00:02 UTC (80% 23:38); AUDIT.md "## AUDIT 2 (second adversarial, AUD2-LEDGER-32)" for orchestrator (account-4)
 2026-10-09 22:02 | AUD2-LEDGER-31 verifier (account 4, Opus) | hdl take (22:0x UTC 9 Oct by date -u): <=20 requests, 8 CISOSEARCHALL + item info for unseen hits; for orchestrator (account-4)
+2026-10-09 22:02 | AUD2-LEDGER-32 verifier (account 4, Opus) | hdl take (22:1x UTC 9 Oct by date -u): <=25 requests, 13 CISOSEARCHALL + item info for unseen hits, 3.3 s apart; for orchestrator (account-4)
