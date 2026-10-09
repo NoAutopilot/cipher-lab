@@ -3211,3 +3211,18 @@ Rule-10 note: "not located" lines are search results, dated 9 Oct 2026.
 ### Escalation
 Siblings: 9913 (E254 sent copy) and 4788 (E272's sibling) read; clear pages: none for the four N3 entries. Known keys: No. 1 reads all
 five. Print: E270 found; the other four not located in the volumes named. Image check: all five done. Verdict: keep going.
+## FV-FM8c (9 Oct 2026, account 1, for LANE LEDGER)
+First verifier for E293, E294, E295, E297, E298 (reader FM-R5c); full log in AUDIT.md "## AUDIT (FV-FM8c)". Duplicate diff: none (5822 also
+carries E265, row /1, another telegram). Every graded line eye-checked on the 2400 px page (two-line crops, scratch): the transcription matches
+on all five. The holder's CONTENTdm full text on pairs of each entry's clear words found **period clear copies of E294 (pointer 10253, p.111),
+E295 (10261, p.119) and E297 (10268, p.126)** in the Washington clear telegram book (pointer minus page = 10142): **E294, E295, E297 N1** (C,
+D3, no status/SO row). **E298 is printed: OR I/41 pt 4, first document** (Stanton to Lincoln, Fortress Monroe, 16 Oct 1864 3 a.m.): **N1**
+(C, D3). **E293 N3 D2** (Col. George S. Dodge to Col. R. C. Webster, 8 Dec 1864, Fort Fisher embarkation; "actor" unread, image as
+transcribed); status row E293, SO-ECKERT-E293 queued, WORK-QUEUE AUD2-LEDGER-20 (account-3).
+Reading corrections for a FIX job (rule 7, decode.py entry notes): E293 "Webster" is the addressee (not the signature word: the decoder's tail
+starts there), "An apple is" = Annapolis (not [Sumter]), "Dodge" = Col. George S. Dodge (not [McMinnville]), "Burr muddy" = Bermuda,
+"ball tick" = Baltic, "actor" M; E294 "weasler" = steamers (C); E295 "palates" = brigades (clear copy; key row Palate = Brigadier General);
+E298 header place is Fort Monroe (image "Ft Monroe Oct 16/64"), not Washington; "Dealy" = the operator.
+Lead for readers (fifth time): two common clear words ANDed ("send to sea", "efficient experienced", "diamond sold") find the clear book in
+one query; and for a telegram about Missouri in Oct 1864, fetch OR I/41 pt 4 (Trans-Mississippi, from 16 Oct), not only the Virginia volumes.
+Requests: hdl.huntington.org 24 (one token block 11:25-11:27 UTC: 19 dmQuery, 5 IIIF pages); archive.org 8 (3 advancedsearch, 5 djvu text).
