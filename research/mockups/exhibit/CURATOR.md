@@ -42,3 +42,22 @@ and p.5 (N4 for the two blanks only; the rest of the letter is Groen's print).
 - Colours: grades use the repo's CVD palette (blue firm, orange uncertain, grey unread; `tools/cvd_check.py` PASS light and dark);
   grade letter and underline style carry the grade without hue.
 - Rebuild: `python3 research/mockups/exhibit/build_exhibit.py` (reads token files and keys; writes nothing under ciphers/).
+
+## EXHIBIT-2 (9 Oct 2026, 23:0x-23:1x UTC by `date -u`): chosen by what the reading itself says
+- The owner's review of EXHIBIT-1: the Gramont display borrowed its hook (the divorce suit) from a letter printed in 1688; our
+  own reading there is a courier's note. `SELECTION.md` scores every N3+/D2+ result on its depth sentence and safe sentence
+  only; Gramont f.29r scores 1 (thin) and is dropped; items decoded on the leaf or in print (Du Vergier, Cañada, Suriname) are out.
+- Built: Washington 1864 (Eckert E46, the New York arson suspect in the Old Capitol; E52 and the steamer plot as companions),
+  Breda and Torgau 1561 (WVO 57, the Emperor's request, period key; WVO 53 beside it, our key, labelled a proposal), Berlin 1712
+  (frame 0391: the names in cipher; the headline says the story is in the clear text). Rebuild: `python3
+  research/mockups/exhibit/build_exhibit2.py` (pages `index2.html`, `washington-1864.html`, `breda-torgau-1561.html`,
+  `berlin-1712.html`; single file `research/mockups/exhibit-2026-10-09b.html`). EXHIBIT-1's files are untouched.
+- Each display opens with a "What the reading says" panel quoting the depth sentence; dates, map and faces sit under
+  "Context", never in the headline.
+- Images fetched once: Huntington IIIF item 9130 at 2400 px (1 request), SHStA Dresden image 0391 (1 request). WVO 53/57
+  crops are the folder's own. Reuse terms for all three holders are unrecorded; flagged on each page.
+- Portraits: no Wikimedia call (Commons answers 429 to the cloud). `portraits/manifest.tsv` lists 18 people with a Commons
+  file title or search phrase, expected licence and output filename for the desk runner (LOCAL-QUEUE L73). Each face is an
+  `<img src="portraits/<file>">` over a labelled silhouette that removes itself when the file is missing, so files dropped in
+  fill the faces with no rebuild (the single file points at `exhibit/portraits/`).
+- Colours unchanged from EXHIBIT-1 (same CSS variables); checked at 1100 px and 390 px, no horizontal scroll.
