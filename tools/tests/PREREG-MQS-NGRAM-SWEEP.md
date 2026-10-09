@@ -48,10 +48,48 @@ every sign's count, so the null can read only what sign frequency alone recovers
   everything else `weak` with both numbers. Nothing is run on a target from this job; a miss is not re-briefed.
 - No amendment after the first accuracy is read except a stated deviation (logged here, dated) for a run that crashes.
 
-## Deviation 1 (9 Oct 2026, 06:56 UTC by date -u; a crash, the only kind allowed above)
+## Deviation 1 (9 Oct 2026, 06:52 UTC by date -u; a crash, the only kind allowed above)
 
 N rule result: N=500 base o3 none u1 = 0.9457, 0.9565, 0.9375 (mean 0.9466) -- above 0.85, no headroom. N=300 crashes
 in `make_marked_control` for every seed ("40 signs cannot fit 19 letters at most 2 per letter": only 19 letters occur
 in 300 tokens of this stretch), so N=200 is infeasible too. No N qualifies: per the rule above, "no headroom at these
 N", every cell is still run and reported at N=500 (the largest feasible N tried), and **no gain is read**. The licence
 gate against the permuted null is still applied per cell (it can fail differently at any N). All shelf grades `weak`.
+
+## Results (appended 9 Oct 2026, 07:02 UTC by date -u; numbers in tools/tests/MQS-NGRAM-SWEEP-controls.tsv)
+
+Run: `python3 tools/tests/mqs_ngram_sweep.py --n 500 --cells all --out tools/tests/MQS-NGRAM-SWEEP-controls.tsv`
+(514 s, 4 processes). N=500, 368 letter tokens, marked share 0.264. Base o3 none u1 0.9466 (SD 0.0078); base_r16
+0.9466 (16 restarts add nothing). Bar = max(0.0000, 0.0156, 0.03) = 0.03. **No gain read (Deviation 1).**
+
+| cell | mean | null max | licence (> null max + 0.10) | vs base (not a gain) |
+|---|---|---|---|---|
+| o3 none u1 (base) | 0.9466 | 0.3288 | PASS | -- |
+| o3 none u0 | 0.3415 | 0.0707 | PASS | -0.6051 |
+| o3 nc2 u1 | 0.1033 | 0.1332 | FAIL | -0.8433 |
+| o3 nc2paper u1 | 0.2563 | 0.2908 | FAIL | -0.6903 |
+| o3 nc2paper u0 | 0.0707 | 0.0707 | FAIL | -0.8759 |
+| o3b none u1 | 0.9565 | 0.2690 | PASS | +0.0099 |
+| o3b none u0 | 0.3034 | 0.0707 | PASS | -0.6432 |
+| o3b nc2 u1 | 0.0725 | 0.1332 | FAIL | -0.8741 |
+| o3b nc2paper u1 | 0.2346 | 0.2636 | FAIL | -0.7120 |
+| o3b nc2paper u0 | 0.0707 | 0.0707 | FAIL | -0.8759 |
+| o4b none u1 | 0.9828 | 0.1087 | PASS | +0.0362 |
+| o4b none u0 | 0.0707 | 0.0707 | FAIL | -0.8759 |
+| o4b nc2 u1 | 0.1286 | 0.0842 | FAIL | -0.8180 |
+| o4b nc2paper u1 | 0.3225 | 0.2473 | FAIL | -0.6241 |
+| o4b nc2paper u0 | 0.0670 | 0.0707 | FAIL | -0.8796 |
+| o5b none u1 | 0.2763 | 0.1440 | PASS | -0.6703 |
+| o5b none u0 | 0.0707 | 0.0707 | FAIL | -0.8759 |
+| o5b nc2 u1 | 0.0888 | 0.0897 | FAIL | -0.8578 |
+| o5b nc2paper u1 | 0.2808 | 0.2174 | FAIL | -0.6658 |
+| o5b nc2paper u0 | 0.0670 | 0.0707 | FAIL | -0.8796 |
+
+Against expectation: (1) the paper's score (nc2paper) fails the licence at every order 3-5, with or without the unigram
+term; at u0 it reads 0.067-0.071 at every order, identical to its permuted null (the anneal collapses onto one letter,
+order-independent), so longer n-grams do not rescue it, the M13 question answered negatively for this solver and
+design. (2) o5b none u1 collapses (0.276; restarts disagree) where o4b reads 0.983: at 40,000 iters x 8 restarts the
+5-gram backoff landscape is not searched to its optimum at N=500 -- a search-budget limit of this anneal, not evidence
+about 5-grams under a better search (the paper used a different, longer annealer). (3) o4b none u1 sits +0.036 over
+base, above the 0.03 bar, but base is 0.947, inside the no-headroom band: recorded, not read as a gain.
+Shelf: every setting `weak`. Nothing is run on a target from this job and the miss is not re-briefed.
