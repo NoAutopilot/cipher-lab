@@ -11821,3 +11821,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 02:21 | BRANDT-GATE worker | arcinsys take (1 GET, Daenemark 131 image 0049) for LANE FAMILY-A2e (account 2)
 2026-10-09 02:22 | BRANDT-GATE worker | arcinsys release (1 GET, HTTP 200) for LANE FAMILY-A2e (account 2)
 2026-10-09 02:22 | standby (owner account) | alive; holder account 3, last line 02:03 (signed orchestrator (account 3), sorter re-render flag); no takeover
+2026-10-09 02:24 | SUR-0745 worker (account 2) | PREREG-SUR-0745.md + score.py + crops_manifest + calib_0744R.out pushed before either pass runs
