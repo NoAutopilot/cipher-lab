@@ -14,3 +14,24 @@ utc	item_id	look_row_id	role	folio	canvas	image	source	status
 2026-10-09 03:07	adhoc-bca2a1	adhoc-bca2a1:2-leaf:7182c7	after-2	179r		f179v_insert_canvas183.jpg	manifest	answered KNOWN (recorded)
 2026-10-09 03:07	adhoc-bca2a1	adhoc-bca2a1:2-leaf:7182c7	after-3	179v			folio arithmetic	answered KNOWN (recorded)
 2026-10-09 03:07	adhoc-bca2a1	adhoc-bca2a1:2-leaf:7182c7	after-4	180r			folio arithmetic	answered KNOWN (recorded)
+2026-10-09 06:13	adhoc-b5daa2	adhoc-b5daa2:2-leaf:497a5d	cipher-page	144r			folio arithmetic	owed
+2026-10-09 06:13	adhoc-b5daa2	adhoc-b5daa2:2-leaf:497a5d	facing	143v		f144r_canvas146.jpg	manifest	owed
+2026-10-09 06:13	adhoc-b5daa2	adhoc-b5daa2:2-leaf:497a5d	before-2	143r			folio arithmetic	owed
+2026-10-09 06:13	adhoc-b5daa2	adhoc-b5daa2:2-leaf:497a5d	after-1	144v		f144v_145r_canvas147.jpg	manifest	owed
+2026-10-09 06:13	adhoc-b5daa2	adhoc-b5daa2:2-leaf:497a5d	after-2	145r			folio arithmetic	owed
+2026-10-09 06:13	adhoc-b5daa2	adhoc-b5daa2:2-leaf:497a5d	after-3	145v			folio arithmetic	owed
+2026-10-09 06:13	adhoc-b5daa2	adhoc-b5daa2:2-leaf:497a5d	after-4	146r			folio arithmetic	owed
+2026-10-09 06:13	adhoc-0dd686	adhoc-0dd686:2-leaf:a4b1af	cipher-page	168r		f168r_canvas171.jpg	manifest	owed
+2026-10-09 06:13	adhoc-0dd686	adhoc-0dd686:2-leaf:a4b1af	facing	167v			folio arithmetic	owed
+2026-10-09 06:13	adhoc-0dd686	adhoc-0dd686:2-leaf:a4b1af	before-2	167r			folio arithmetic	owed
+2026-10-09 06:13	adhoc-0dd686	adhoc-0dd686:2-leaf:a4b1af	after-1	168v			folio arithmetic	owed
+2026-10-09 06:13	adhoc-0dd686	adhoc-0dd686:2-leaf:a4b1af	after-2	169r			folio arithmetic	owed
+2026-10-09 06:13	adhoc-0dd686	adhoc-0dd686:2-leaf:a4b1af	after-3	169v			folio arithmetic	owed
+2026-10-09 06:13	adhoc-0dd686	adhoc-0dd686:2-leaf:a4b1af	after-4	170r		f170r_canvas173.jpg	manifest	owed
+2026-10-09 06:13	adhoc-3a1660	adhoc-3a1660:2-leaf:fa0ad2	cipher-page	117r			folio arithmetic	owed
+2026-10-09 06:13	adhoc-3a1660	adhoc-3a1660:2-leaf:fa0ad2	facing	116v			folio arithmetic	owed
+2026-10-09 06:13	adhoc-3a1660	adhoc-3a1660:2-leaf:fa0ad2	before-2	116r			folio arithmetic	owed
+2026-10-09 06:13	adhoc-3a1660	adhoc-3a1660:2-leaf:fa0ad2	after-1	117v			folio arithmetic	owed
+2026-10-09 06:13	adhoc-3a1660	adhoc-3a1660:2-leaf:fa0ad2	after-2	118r			folio arithmetic	owed
+2026-10-09 06:13	adhoc-3a1660	adhoc-3a1660:2-leaf:fa0ad2	after-3	118v			folio arithmetic	owed
+2026-10-09 06:13	adhoc-3a1660	adhoc-3a1660:2-leaf:fa0ad2	after-4	119r			folio arithmetic	owed
