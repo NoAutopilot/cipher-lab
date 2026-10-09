@@ -126,6 +126,14 @@ def read_clusters(path):
     return out
 
 
+def pile_oddness(vecs, sids):
+    """(mean tile, {sid: oddness}) for one pile: oddness = root-mean-square distance of the tile's normalised 24x24 grey vector from
+    the pile's mean tile, rounded to 3 places; 0 for a pile of one. The one function the page's "Odd ones first" order and
+    --oddness-audit both use (MQS-SORTER, 9 Oct 2026)."""
+    n = len(sids); mean = [sum(vecs[x][i] for x in sids) / n for i in range(576)]
+    return mean, {x: (round(math.sqrt(sum((a - b) ** 2 for a, b in zip(vecs[x], mean)) / 576), 3) if n > 1 else 0) for x in sids}
+
+
 def build(signs_p, labels_p, pages_dir, marks_p=None, thumb=96, clusters=None, tile_q=None, page_scale=1.0, page_q=82):
     from PIL import Image, ImageOps
     signs = {r['sid']: r for r in tsv(signs_p)}
@@ -183,10 +191,9 @@ def build(signs_p, labels_p, pages_dir, marks_p=None, thumb=96, clusters=None, t
         fam[r['sign']] = r.get('family') or r['sign']
     means = {}
     for k, items in piles.items():   # oddness = distance from the pile's mean tile
-        n = len(items); mean = [sum(vecs[it['sid']][i] for it in items) / n for i in range(576)]
-        means[k] = mean
+        means[k], dd = pile_oddness(vecs, [it['sid'] for it in items])
         for it in items:
-            it['d'] = round(math.sqrt(sum((a - b) ** 2 for a, b in zip(vecs[it['sid']], mean)) / 576), 3) if n > 1 else 0
+            it['d'] = dd[it['sid']]
     # look-alike piles: the three piles whose mean tile is nearest, as merge candidates for the person to check
     # cosine similarity of mean tiles; only piles of 3+ tiles are offered (a 1-2 tile mean is mostly noise)
     def cos(u, v):
@@ -503,6 +510,86 @@ def mark_categories(data, marks_p):
     data['markCat'] = cat
 
 
+def variant_oddness(vecs, sids, variant):
+    """Audit-only rival orders (PREREG-MQS-SORTER A1): 'medoid' = distance to the pile member with the smallest summed distance to its
+    pile mates; 'knn3' = mean distance to the 3 nearest pile mates. Not used by the page."""
+    import numpy as np
+    X = np.array([vecs[x] for x in sids], dtype=float); n = len(sids)
+    if n < 2:
+        return {x: 0 for x in sids}
+    D = np.sqrt(((X[:, None, :] - X[None]) ** 2).mean(-1))
+    if variant == 'medoid':
+        m = int(D.sum(1).argmin()); return {x: float(D[i, m]) for i, x in enumerate(sids)}
+    k = min(3, n - 1)
+    return {x: float(np.sort(D[i])[1:k + 1].mean()) for i, x in enumerate(sids)}
+
+
+def oddness_audit(signs_p, labels_p, pages_dir, frac=0.05, kind='random', confusion_p=None, seeds=20, shuffles=200, top=0.10, min_pile=3, variant='mean'):
+    """--oddness-audit (MQS-SORTER, 9 Oct 2026; pre-registered in tools/tests/PREREG-MQS-SORTER.md). Known-answer measure of the
+    "Odd ones first" order on piles whose labels are right (--labels is the truth): per seed, plant round(frac x tiles) tiles into a
+    wrong pile (kind 'random': a uniformly random other pile; 'lookalike': the pile of the tile's top confusion partner in
+    --confusion label_a, label_b, n, only tiles whose pile has a surviving partner pile), recompute every pile's oddness with the
+    page's own function, and report recall@10% = the share of planted tiles in the first ceil(10% x pile size) of their new pile, beside
+    the shuffled-order p95 (same piles, each pile's order shuffled, `shuffles` times: the null changes which tiles are in the first 10%,
+    which is exactly the statistic). Piles under `min_pile` tiles are dropped first. Returns per-seed rows and a summary.
+    Meant to catch: a page order that does not put planted misfits first. Must NOT be read as: a probability that a tile in the
+    first 10% is wrong, or as the order's power on real errors that are not plantable (a look-alike error is a different tile, not
+    a moved one). Python numbers only; no network."""
+    import numpy as np
+    data = build(signs_p, labels_p, pages_dir, thumb=24)
+    vecs = data['_vecs']; pile_of = {it['sid']: p['id'] for p in data['piles'] for it in p['items']}
+    cnt = defaultdict(int)
+    for v in pile_of.values():
+        cnt[v] += 1
+    keep = {k for k, n in cnt.items() if n >= min_pile}
+    pile_of = {sid: v for sid, v in pile_of.items() if v in keep}
+    sids = sorted(pile_of); piles = sorted(keep)
+    partner = {}
+    if kind == 'lookalike':
+        pair = defaultdict(lambda: defaultdict(float))
+        for r in tsv(confusion_p):
+            a, b, n = r.get('label_a'), r.get('label_b'), float(r.get('n') or 0)
+            if a and b:
+                pair[a][b] += n; pair[b][a] += n
+        for k in piles:
+            c = [(n, b) for b, n in pair.get(k, {}).items() if b in keep and b != k]
+            if c:
+                partner[k] = max(c)[1]
+    pool = [x for x in sids if kind == 'random' or pile_of[x] in partner]
+    k_plant = max(1, round(frac * len(sids)))
+    rows = []
+    for seed in range(1, seeds + 1):
+        rng = random.Random(seed)
+        planted = rng.sample(pool, min(k_plant, len(pool)))
+        now = dict(pile_of)
+        for x in planted:
+            now[x] = partner[pile_of[x]] if kind == 'lookalike' else rng.choice([q for q in piles if q != pile_of[x]])
+        members = defaultdict(list)
+        for x in sids:
+            members[now[x]].append(x)
+        pl = set(planted); hits = 0; slots = []
+        for q, xs in members.items():
+            d = pile_oddness(vecs, xs)[1] if variant == 'mean' else variant_oddness(vecs, xs, variant)
+            m = max(1, math.ceil(top * len(xs)))
+            order = sorted(xs, key=lambda x: (-d[x], x))
+            hits += sum(1 for x in order[:m] if x in pl)
+            slots.append((len(xs), m, sum(1 for x in xs if x in pl)))
+        nrng = np.random.default_rng(seed)
+        null = []
+        for _ in range(shuffles):   # same piles, each pile's order shuffled
+            h = 0
+            for n_, m_, p_ in slots:
+                if p_:
+                    h += int(nrng.permutation(n_)[:m_].__lt__(p_).sum())   # planted = the first p_ positions of a random permutation
+            null.append(h / len(planted))
+        rows.append({'seed': seed, 'planted': len(planted), 'recall': round(hits / len(planted), 3),
+                     'shuffled_p95': round(float(np.percentile(null, 95)), 3), 'shuffled_mean': round(float(np.mean(null)), 3)})
+    return rows, {'kind': kind, 'variant': variant, 'tiles': len(sids), 'piles': len(piles), 'planted_per_seed': k_plant,
+                  'eligible': len(pool), 'mean_recall': round(float(np.mean([r['recall'] for r in rows])), 3),
+                  'seeds_above_p95': sum(1 for r in rows if r['recall'] > r['shuffled_p95']),
+                  'seeds_recall_ge_0.6_and_above_p95': sum(1 for r in rows if r['recall'] >= 0.6 and r['recall'] > r['shuffled_p95'])}
+
+
 def mark_refs(data, sids):
     """--refs: flag tiles as the person's earlier picks (item 'r': 1, no cluster id; movable, shown with a check). Returns the number flagged."""
     sids, n = set(sids), 0
@@ -557,7 +644,7 @@ def main(argv=None):
     ap.add_argument('--signs'); ap.add_argument('--labels')
     ap.add_argument('--atlas-topk', nargs='+', help='glyph_atlas classify --topk files instead of --signs/--labels')
     ap.add_argument('--pages', required=True); ap.add_argument('--marks')
-    ap.add_argument('--title', required=True); ap.add_argument('--out', required=True)
+    ap.add_argument('--title'); ap.add_argument('--out')
     ap.add_argument('--lede', default='Every sign of the cipher, cut out and piled by the label our readers gave it. '
                     'Settle the alphabet: which piles are one sign, which tiles sit in the wrong pile, and which '
                     'marks are not letters at all.')
@@ -600,8 +687,26 @@ def main(argv=None):
     ap.add_argument('--key-family', help='key family of this page (tools/data/sorter_families.tsv) for --show-values')
     ap.add_argument('--blind-sort', metavar='DB_EXPORT', help='a saved blind export (a --db folder) of the same tiles, required by --show-values')
     ap.add_argument('--no-register', action='store_true', help='with --show-values: do not stamp the family register (tests)')
+    ap.add_argument('--oddness-audit', action='store_true', help='known-answer recall@10%% of the "Odd ones first" order on --signs/--labels (the truth); no page is built')
+    ap.add_argument('--oddness-variant', choices=('mean', 'medoid', 'knn3'), default='mean', help='--oddness-audit: order to measure (mean = the page\'s own)')
+    ap.add_argument('--plant', type=float, default=0.05, help='--oddness-audit: share of tiles planted into a wrong pile (default 0.05)')
+    ap.add_argument('--plants', choices=('random', 'lookalike'), default='random', help='--oddness-audit: plant kind')
+    ap.add_argument('--confusion', help='--oddness-audit --plants lookalike: confusion TSV label_a, label_b, n')
+    ap.add_argument('--seeds', type=int, default=20, help='--oddness-audit: number of seeds (default 20)')
     ap.add_argument('--no-preflight', action='store_true', help='skip tools/sorter_preflight.py after the build')
     a = ap.parse_args(argv)
+    if not a.oddness_audit and not (a.title and a.out):
+        ap.error('--title and --out are required')
+    if a.oddness_audit:
+        if not (a.signs and a.labels):
+            ap.error('--oddness-audit needs --signs and --labels (the truth piles)')
+        if a.plants == 'lookalike' and not a.confusion:
+            ap.error('--plants lookalike needs --confusion')
+        rows, summ = oddness_audit(a.signs, a.labels, a.pages, a.plant, a.plants, a.confusion, a.seeds, variant=a.oddness_variant)
+        print('seed\tplanted\trecall@10%\tshuffled_p95\tshuffled_mean')
+        for r in rows:
+            print(f"{r['seed']}\t{r['planted']}\t{r['recall']}\t{r['shuffled_p95']}\t{r['shuffled_mean']}")
+        print(json.dumps(summ)); return
     if a.atlas_topk:
         import tempfile
         a.signs, a.labels = atlas_topk_inputs(a.atlas_topk, tempfile.mkdtemp(prefix='sorter_'))
