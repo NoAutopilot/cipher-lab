@@ -1,0 +1,51 @@
+line	seg	order	gloss	signs	note
+L02	s2	1	CLEAR:et	-	clear word before the cipher
+L02	s2	2	ma	Z v y a	a/f boundary between ma and dit uncertain
+L02	s2	3	dit	f 3 L z	last sign z could be 3
+L03	s1	1	-	II 4 a	no gloss visible above; may belong to auec
+L03	s1	2	auec	c y p	
+L03	s1	3	ws	w m	gloss may be vos/vus; m could belong to vn
+L03	s1	4	vn	o a	a is alpha-shaped
+L03	s1	5	dassister	# 1 . sq 0 0 f 3 c	word boundaries approximate
+L03	s1	6	a	1 . 4	single-letter gloss over 3 signs; boundary uncertain
+L03	s1	7	gennef	9 1 . f 4 0 0'	gloss read gehinnef/genne f, final f barred, may be two words
+L03	s1	8	deux	# 0 m sq z	
+L03	s1	9	millions	p 4 + L y f sq	y here looks 9-like with tail
+L03	s2	10	dor	3 y w	
+L03	s2	11	despagne	# 0 sq 0 v L 9	
+L03	s2	12	-	4' 0	4' = r-like sign with overstroke before/over a 4, may be a separate sign; no gloss seen
+L03	s2	13	CLEAR:Il	-	
+L03	s2	14	CLEAR:ha	-	
+L03	s2	15	CLEAR:laisse	-	
+L03	s2	16	+	y t	gloss + high above; may cover t only
+L03	s2	17	a	v'	
+L04	s1	1	bestiaux	-:- 0 0 4 f	gloss reading uncertain
+L04	s1	2	quarante	# y 4' a c	4' = r with tilde over a small 4 (same shape as L03); # y may be unglossed
+L04	s1	3	ung	v w	
+L04	s1	4	+	4 f	
+L04	s1	5	|	v	the | stroke stands directly over the v
+L04	s1	6	-	0 # 1 f a	gloss above unclear, may belong to mulets
+L04	s1	7	mulets	z m 4 0 v sq	
+L04	s1	8	chargez	# T v w 0 1 . sq	0 could be 9
+L04	s2	9	qui	a m 1 #	1 could be L
+L04	s2	10	doibt	y p m	p is the looped xp form, could be x
+L04	s2	11	venir	o f z	gloss reading uncertain
+L04	s2	12	pouvoir	y v c v	gloss read peuwir/pouvoir
+L04	s2	13	dans	L c #	
+L04	s2	14	tlem	z f t T z w y p sq	gloss after dans partly unread; alignment of the last signs uncertain; line ends in a filler dash (not a sign)
+L05	s1	1	Ioure	1 y	gloss uncertain (Jouxe/Ioure); first sign 1 has a hook
+L05	s1	2	est	m w	
+L05	s1	3	|	0	
+L05	s1	4	prendre	0' v 0' w 1 . f 3 c 0	
+L05	s1	5	le	4 1	
+L05	s1	6	chastiau	# T 1 z p f	T is pi-shaped; p could be x
+L05	s1	7	de	# 1 . m 0	boundary with + uncertain
+L05	s1	8	+	0'	
+L05	s1	9	bessounassance	y a f v 1 t 0' a a 1 . # 0	gloss may be two words; t is a cross descending below the line (could be g/9 over +)
+L05	s1	10	qui	f v	stroke above v (gloss mark or prime)
+L05	s2	11	vne	#	
+L05	s2	12	chrame	x 1 m	x could be T
+L05	s2	13	de	v a	
+L05	s2	14	florenc	sq 3 1 . 0' #	a faint mark between sq and 3 not counted
+L05	s2	15	-	y c NEW:n-shape 1 .	faint gloss above, unread; final . may be a colon
+L05	s2	16	CLEAR:Cremana	-	clear word, reading uncertain (C + mana)
