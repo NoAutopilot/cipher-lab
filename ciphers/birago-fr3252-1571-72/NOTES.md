@@ -1866,7 +1866,7 @@ worker's own eye, 5 tile sheets = 5 units).
 - **Crops (command, pasted):** `python3 cut_una_tiles.py` (in `harvest/f3637/`; native bands `../ceppo-nevers-fr3251-1570s/harvest/witness_f36/
   c37_f36r_cipher.jpg`, `c38_f36v_top.jpg`, `c38_f36v_mid.jpg`; x of each sign set by this worker from passD/recon neighbours on 1x ruler strips
   of each line, y = the row-ink peak of the sign column inside the cut_lines band) -> 35 tiles at 4x (150 x 80 native px, gloss line excluded),
-  shuffled with seed 3252, `harvest/f3637/tiles/t01-t35.jpg`, `sheet1-5.jpg`, `tiles_key.tsv` (1.7 MB, committed). Reads written to
+  shuffled with seed 3252, `harvest/f3637/tiles/t01-t35.jpg`, `tiles_key.tsv` committed (0.8 MB; the five 8-tile sheets regenerate from the script and are gitignored; the folder was already about 37 MB tracked before this job, over the 30 MB line -- flagged, not shrunk here). Reads written to
   `reads_una_blind.tsv` and pushed (00c85abe) before `tiles_key.tsv` was opened; merged per row in `reads_una.tsv`.
 - **Gate 1 (known answer first):** 6 glossed tiles shuffled among 29 targets: v36top_L01 idx 3 (r) and idx 18 (r) -> two bars X_THETA2,
   correct; idx 5 (a) -> barred 8 S80, correct; v36top_L02 pos 2 (t) -> slanted hash S88, correct; v36top_L03 pos 18 (et) -> plain 8 S65,
