@@ -48,3 +48,12 @@ self-contained HTML, no external scripts. (3) One single-file mock-up research/m
 complete item pages inline (Gramont 1530 to Montmorency, Manteuffel 1712 f.410, Lodewijk 5797) for the owner to judge look and wording.
 (4) Every content rule above stands. (5) Step 5's "the owner enables Pages" is withdrawn: the owner decides after the mock-up; the
 CATALOGUE-CHECK fact-check row is queued only if he says go.
+
+## Amendment 2 (orchestrator, 22:2x UTC 9 Oct by date -u; the owner's four model pages, 22:2x UTC)
+Models (CC BY 4.0: structure and voice, never a copied sentence): dbourdeau.github.io/cyphersolver/dinteville1592.html (a full item page
+for a target we also hold), hesse1824.html#method ("Method": how the key was found, plain words), highlights.html#method ("Highlights":
+favourites as one-paragraph stories -- the owner's "Hall of Fame"), mercy1648.html#the-cipher ("The cipher": the design and the key's
+shape for a reader). Each mock-up item page carries "The letter", "The cipher", "Method" plus the gist and the safe sentence; the
+single-file mock-up adds a "Hall of Fame" page of 5-8 favourites as one-paragraph stories (Gramont 1530, Manteuffel 1712, the Lodewijk
+blanks, Birago 1572, the Suriname fort map, Mercy 1648 if its safe sentence allows). Where Bourdeau or Tomokiyo read an item first, the
+page says so and links theirs. Cap unchanged: index and three item pages first, the Hall of Fame next if the cap allows.
