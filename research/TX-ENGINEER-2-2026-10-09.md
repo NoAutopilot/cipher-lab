@@ -24,8 +24,7 @@ classifier trained on this hand's own ink fixed 3 and broke 0 but on too few til
 the right sign at 10 of 12 errors but neither a word-level language model nor a reader shown the candidates can pick it (the
 reader took the wrong alternative 14 times in 19); showing the hand's own page beside a doubtful sign removed the pull that
 printed exemplars caused but gained nothing. Two things did move. First, the sorter feed: a read-free rule now finds 10 of 12
-development errors at 14% of positions flagged, and on the held-out lines it takes a leaf to 2% in about 22 of your decisions
-per tile instead of 32 (propagating a decision to a whole atlas cluster is destructive on this atlas, so each decision counts for
+development errors at 14% of positions flagged, and in an oracle-bounded simulation (the truth standing in for you; real owner decisions on file moved 0 of 3) it takes the held-out lines to 2% in about 22 decisions per tile instead of 32 (propagating a decision to a whole atlas cluster is destructive on this atlas, so each decision counts for
 one tile, or one pile within a cluster at most). Second, cost: one call per page read a Dinteville leaf better and at a third of
 the tokens of one call per line at 2x, a lead being replicated now.
 

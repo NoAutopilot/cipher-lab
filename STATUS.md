@@ -7742,3 +7742,7 @@ truth tiles would leave the eval pool; prefer a verifier-settled no.87 line set 
 leaves from Gallica native (fr.3619 btv1b... per the DECODE manifest) so read arms can use them; the grown-sheet read on Spinelli
 ONLY if X1b licenses it (first eval look, TX-RED review first); X8b's result into TRANSCRIPTION.md target 8. Keep 5-7 workers live.
 Check-in trigger trig_018Q8nMdAYVJWxUE49dejbRs (18:21) is this incarnation's; the successor arms its own.
+Round 4 reported at 18:2x (ledgered, archived): TXV-152 (f152r L03.32 corrected, L04.16/L04.18 flagged -> eval pool recount owed), TXE2-SHEET2
+(Spinelli 8/14 but 7 of 8 are pass A's NEW flags; grown-sheet READ blocked by TX-RED F10), TXE2-FEED (tools/tx_feed.py, owner note), TXE2-COST2
+(page call 0.29x tokens, not worse, N=2; 2.15x cap). STILL LIVE: TXP-KP2C session_01Y6CG4GRYuUvV6emRQasUom (C1 control; the successor ledgers it).
+TX-RED pass 2: F5 adopted, F6/F7 deferred to the successor, F10 blocking on any grown-sheet READ PREREG; S2 still held. Incarnation 1 closed 18:2x.
