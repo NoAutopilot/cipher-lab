@@ -1,0 +1,19 @@
+run	passage	pos	passC	A	B	status	why	kind	candidates	before	after	passB_record	altC
+sfzlook	f13_L02	12	g	d	g	split	split	target	9,d,g	fto o t	fa g e	d	9
+sfzlook	f13_L03	1	g	d	g	split	split	target	d,g		h- a mo	y	
+sfzlook	f13_L03	11	T=	b-	T=	split	split	target	T=,b-	3 ÷ a	b h- B	T=	
+sfzlook	f13_L03	22	g	d	g	split	split	target	d,g	pq gto ÷	go h pq	g	
+sfzlook	f13_L05	12	T=	b-	T=	split	split	target	T=,b-	# x a	h7 zo ÷	b	
+sfzlook	f13_L06	17	T=	b-	T=	split	split	target	T=,b-	b h- B	b e pq	T=	
+sfzlook	f13_L07	8	g	d	g	split	split	target	d,g	B e h7	t :|: q=	#	
+sfzlook	f13_L08	15	q=	V	q=	split	split	target	V,q=	x z- #	H coo b		
+sfzlook	f13_L08	22	q=	V	q=	split	split	target	V,q=	a e z-	h- 3 ÷	q	
+sfzlook	f13_L09	7	T=	b-	T=	split	split	target	T=,b-	q a #	den h- ÷	:|:	
+sfzlook	f13_L09	14	q=	V	q=	split	split	target	V,q=	go e B	x fo g	q	
+sfzlook	f13_L09	31	g	d	g	split	split	target	d,g	=y g÷ z-	pq	g	
+sfzlook	f13_L10	5	g	d	g	split	split	target	d,g	B to a	t ÷ q	g	
+sfzlook	f13_L10	24	q=	V	q=	split	split	target	V,q=	fo h- g÷	b coo dt		
+sfzlook	f13_L11	12	T=	b-	T=	split	split	target	T=,b-	÷ h a	pt :|: g÷	T=	
+sfzlook	f13_L12	8	g	d	g	split	split	target	d,g	h- bo x	m b h		
+sfzlook	f13_L12	13	q	V	q	split	split	target	V,q	b h pez	dt =y fo		
+sfzlook	f13_L12	19	q	V	q	split	split	target	V,q	fo b a	ht B go		

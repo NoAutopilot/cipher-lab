@@ -1,0 +1,355 @@
+passage	posA	idA	idC	altC	idB_record	status
+f13_L01	1	go	go		go	agree
+f13_L01	2	fo	fo		fo	agree
+f13_L01	3	ht	ht		ht	agree
+f13_L01	4	ze	a		z	split
+f13_L01	5	S	S		S	agree
+f13_L01	6	h-	h-		T=	agree
+f13_L01	7	÷	÷		÷	agree
+f13_L01	8	q	q		o	agree
+f13_L01	9	g÷	g÷		N1	agree
+f13_L02	1	3	3		3	agree
+f13_L02	2	:|:	:|:		:|:	agree
+f13_L02	3	h	h		h	agree
+f13_L02	4	p÷	pi		pi	split
+f13_L02	5	zo	a		z	split
+f13_L02	6	H	H		H	agree
+f13_L02	7	=y	=y		=y	agree
+f13_L02	8	So	go		So	split
+f13_L02	9	fto	fto		fto	agree
+f13_L02	10	a	o		o	split
+f13_L02	11	t	t		t	agree
+f13_L02	12	d	g	9	d	split
+f13_L02	13	fa	fa		fa	agree
+f13_L02	14	q	g			split
+f13_L02	15	e	e		e	agree
+f13_L02	16	b	b			agree
+f13_L02	17	z	zo			split
+f13_L02	18	So	go			split
+f13_L02	19	q=	x	T=		split
+f13_L02	20	S	S			agree
+f13_L02	21	to	ht	h		split
+f13_L02	22	y	mo	m		split
+f13_L02	23	B	S			split
+f13_L02	24	go	go			agree
+f13_L02	25	+2	+2			agree
+f13_L02	26	x	x			agree
+f13_L02	27	:||:	:||:		e	agree
+f13_L02	28	ze	a		h	split
+f13_L02	29	pq	pq			agree
+f13_L02	30	#	#			agree
+f13_L02	31	h-	h-			agree
+f13_L02	32	pq	pq			agree
+f13_L03	1	d	g		y	split
+f13_L03	2	h-	h-		h-	agree
+f13_L03	3	ae	a		go	split
+f13_L03	4	bo	mo	coo	coo	split
+f13_L03	5	p÷	p÷		p÷	agree
+f13_L03	6	z-	z-		z-	agree
+f13_L03	7	:|:	:|:		:|:	agree
+f13_L03	8	3	3		3	agree
+f13_L03	9	÷	÷		÷	agree
+f13_L03	10	a	a		a	agree
+f13_L03	11	b-	T=		T=	split
+f13_L03	12	b	b		b	agree
+f13_L03	13	h-	h-		T=	agree
+f13_L03	14	B	B		B	agree
+f13_L03	15	8	8		b	agree
+f13_L03	16	fo	fo		fo	agree
+f13_L03	17	x	x		x	agree
+f13_L03	18	e	e		e	agree
+f13_L03	19	pq	pq		pq	agree
+f13_L03	20	gto	gto		gto	agree
+f13_L03	21	÷	÷		÷	agree
+f13_L03	22	d	g		g	split
+f13_L03	23	So	go		So	split
+f13_L03	24	h	h		h	agree
+f13_L03	25	pq	pq		pq	agree
+f13_L03	26	x	x		x	agree
+f13_L03	27	bo	to		to	split
+f13_L03	28	b	b		b	agree
+f13_L03	29	ht	ht		ht	agree
+f13_L03	30	h7	T=			split
+f13_L03	31	q	g		to	split
+f13_L04	1	h-	T=			split
+f13_L04	2	B	B			agree
+f13_L04	3	S	S			agree
+f13_L04	4		d		b	split-gap
+f13_L04	5	dio	÷		gto	split
+f13_L04	6	q=	T=		T=	split
+f13_L04	7	b	b		÷	agree
+f13_L04	8	h	h-		coo	split
+f13_L04	9	B	B		B	agree
+f13_L04	10	d'	d'		g	agree
+f13_L04	11	:|:	:|:		:|:	agree
+f13_L04	12	e	e		x	agree
+f13_L04	13	ht	ht		a	agree
+f13_L04	14	dt	dio		T=	split
+f13_L04	15	q	q		T=	agree
+f13_L04	16	b	b		z	agree
+f13_L04	17	÷	÷		÷	agree
+f13_L04	18		T=		g	split-gap
+f13_L04	19	V	z-			split
+f13_L04	20	o#	o#		q	agree
+f13_L04	21	#	#		g	agree
+f13_L04	22	b	b		T=	agree
+f13_L04	23	h-	T=		q	split
+f13_L04	24	fa	fa		B	agree
+f13_L04	25	x	x		3	agree
+f13_L04	26	to	to		b	agree
+f13_L04	27	q	q		h	agree
+f13_L04	28	=y	=y		pez	agree
+f13_L04	29	V	g		÷	split
+f13_L04	30	b	b		pi	agree
+f13_L04	31	g÷	g÷		e	agree
+f13_L04	32	+2	:||:		ht	split
+f13_L04	33	a	a		dio	agree
+f13_L04	34	o#	to		q	split
+f13_L05	1	b	b			agree
+f13_L05	2	gto	gto			agree
+f13_L05	3	h-	h-			agree
+f13_L05	4	÷	÷			agree
+f13_L05	5	bo	mo			split
+f13_L05	6	B	B		fo	agree
+f13_L05	7	g	g		g	agree
+f13_L05	8	:|:	:|:			agree
+f13_L05	9	#	#		t	agree
+f13_L05	10	x	x		x	agree
+f13_L05	11	a	a		to	agree
+f13_L05	12	b-	T=		b	split
+f13_L05	13	h7	h7		gt	agree
+f13_L05	14	zo	zo		T=	agree
+f13_L05	15	÷	÷		q	agree
+f13_L05	16	q=	q=		3	agree
+f13_L05	17	+2	#		:|:	split
+f13_L05	18	q	q		a	agree
+f13_L05	19	8	g		g	split
+f13_L05	20	h7	h7		b	agree
+f13_L05	21	V	V		T=	agree
+f13_L05	22	B	B		B	agree
+f13_L05	23	3	3		T=	agree
+f13_L05	24	b	b		b	agree
+f13_L05	25	h	h-		pq	split
+f13_L05	26	pez	pez		q	agree
+f13_L05	27	÷	÷		÷	agree
+f13_L05	28	pi	pi		:||:	agree
+f13_L05	29	e	e		g	agree
+f13_L05	30	ht	ht		coo	agree
+f13_L05	31	dio	dio		T=	agree
+f13_L05	32	q	q			agree
+f13_L06	1	So	go			split
+f13_L06	2	d	d			agree
+f13_L06	3	t	t			agree
+f13_L06	4	x	x			agree
+f13_L06	5	to	to			agree
+f13_L06	6	b	b			agree
+f13_L06	7	ae	pq			split
+f13_L06	8	h-	h		q	split
+f13_L06	9	q	q		N2	agree
+f13_L06	10	3	3		T=	agree
+f13_L06	11	:|:	:|:		:|:	agree
+f13_L06	12	a	a		a	agree
+f13_L06	13	g	g			agree
+f13_L06	14	b	b			agree
+f13_L06	15	h-	h-			agree
+f13_L06	16	B	B		t	agree
+f13_L06	17	b-	T=		T=	split
+f13_L06	18	b	b			agree
+f13_L06	19	e	e			agree
+f13_L06	20	pq	pq		..	agree
+f13_L06	21	÷	g÷		t	split
+f13_L06	22	:||:	:||:		÷	agree
+f13_L06	23	g	g		#	agree
+f13_L06	24	dio	d'		x	split
+f13_L06	25	T=	T=		T=	agree
+f13_L06	26		q			split-gap
+f13_L06	27	go	o			split
+f13_L06	28	x	x		#	agree
+f13_L06	29	bo	coo		q	split
+f13_L06	30	So	go			split
+f13_L06	31	b	b			agree
+f13_L06	32	q=	q=			agree
+f13_L06	33	3	z			split
+f13_L06	34	÷	÷			agree
+f13_L07	1	..	..			agree
+f13_L07	2	h-	h-			agree
+f13_L07	3	gto	gto		:|:	agree
+f13_L07	4	zo	zo		coo	agree
+f13_L07	5	B	B		b	agree
+f13_L07	6	e	e		q	agree
+f13_L07	7	h-	h7		a	split
+f13_L07	8	d	g		#	split
+f13_L07	9	t	t		T=	agree
+f13_L07	10	:|:	:|:		coo	agree
+f13_L07	11	q=	q=		T=	agree
+f13_L07	12	y	m		÷	split
+f13_L07	13	b	b		So	agree
+f13_L07	14	a	a		g	agree
+f13_L07	15	q=	T=			split
+f13_L07	16	g	8		8	split
+f13_L07	17	ze	y	a	z	split
+f13_L07	18	ht	ht		ht	agree
+f13_L07	19	B	B		B	agree
+f13_L07	20	q	q		q	agree
+f13_L07	21	a	a		a	agree
+f13_L07	22	=y	=y			agree
+f13_L07	23	to	to		to	agree
+f13_L07	24	b	b		b	agree
+f13_L07	25	g÷	g÷		g÷	agree
+f13_L07	26	a	a		a	agree
+f13_L07	27	t	T=		t	split
+f13_L07	28	h-	h		T=	split
+f13_L07	29	q	q		q	agree
+f13_L07	30	gto	gto		gto	agree
+f13_L07	31	h-	T=		T=	split
+f13_L07	32	÷	÷		÷	agree
+f13_L07	33	h-	z-		T=	split
+f13_L08	1	q	q		q	agree
+f13_L08	2	ae	y			split
+f13_L08	3	h-	h-			agree
+f13_L08	4	:|:	:|:			agree
+f13_L08	5		a			split-gap
+f13_L08	6	o#	t			split
+f13_L08	7	h7	h7			agree
+f13_L08	8	..	..			agree
+f13_L08	9	t	t			agree
+f13_L08	10	÷	÷			agree
+f13_L08	11	#	#			agree
+f13_L08	12	x	x			agree
+f13_L08	13	h	z-			split
+f13_L08	14	#	#			agree
+f13_L08	15	V	q=			split
+f13_L08	16	to	H		H	split
+f13_L08	17	coo	coo		coo	agree
+f13_L08	18	b	b		b	agree
+f13_L08	19	a	a		a	agree
+f13_L08	20	e	e		e	agree
+f13_L08	21	z-	z-		z	agree
+f13_L08	22	V	q=		q	split
+f13_L08	23	h-	h-		T=	agree
+f13_L08	24	3	3		3	agree
+f13_L08	25	÷	÷		÷	agree
+f13_L08	26	m	m		m	agree
+f13_L08	27	q	q		q	agree
+f13_L08	28	#	#		#	agree
+f13_L08	29	g	g		g	agree
+f13_L08	30	dio	coo		coo	split
+f13_L08	31	a	a		a	agree
+f13_L08	32	g÷	g÷		g÷	agree
+f13_L08	33	3	3		3	agree
+f13_L09	1	:|:	:|:		g	agree
+f13_L09	2	coo	coo		t	agree
+f13_L09	3	b	b		÷	agree
+f13_L09	4	q	q		q	agree
+f13_L09	5	a	a		o	agree
+f13_L09	6	#	#		x	agree
+f13_L09	7	b-	T=		:|:	split
+f13_L09	8	dio	den		N3	split
+f13_L09	9	h-	h-		3	agree
+f13_L09	10	÷	÷		b	agree
+f13_L09	11	So	go		dio	split
+f13_L09	12	e	e		N3	agree
+f13_L09	13	B	B			agree
+f13_L09	14	V	q=		q	split
+f13_L09	15	x	x		x	agree
+f13_L09	16	fo	fo		fo	agree
+f13_L09	17	8	g		g	split
+f13_L09	18	B	B		B	agree
+f13_L09	19	fto	fto		ho	agree
+f13_L09	20	t	t		t	agree
+f13_L09	21	:|:	:|:		:|:	agree
+f13_L09	22	y	m		m	split
+f13_L09	23	x	x		x	agree
+f13_L09	24	q=	z-		g	split
+f13_L09	25	8	g		g	split
+f13_L09	26	ze	a		z	split
+f13_L09	27	B	B		B	agree
+f13_L09	28	=y	=y		=y	agree
+f13_L09	29	g÷	g÷		g÷	agree
+f13_L09	30	z-	z-		z	agree
+f13_L09	31	d	g		g	split
+f13_L09	32	pq	pq		pq	agree
+f13_L10	1	b	b			agree
+f13_L10	2	B	B			agree
+f13_L10	3	to	to		a	agree
+f13_L10	4	a	a		N2	agree
+f13_L10	5	d	g		g	split
+f13_L10	6	t	t		z	agree
+f13_L10	7	÷	÷		T=	agree
+f13_L10	8		q		q	split-gap
+f13_L10	9	go	o		fo	split
+f13_L10	10	x	x		÷	agree
+f13_L10	11	:|:	:|:		h	agree
+f13_L10	12	b-	b-		a	agree
+f13_L10	13	3	3		T=	agree
+f13_L10	14	b	b		÷o	agree
+f13_L10	15	dio	dio		N3	agree
+f13_L10	16	..	..		..	agree
+f13_L10	17	dio	g÷		g÷	split
+f13_L10	18	r	a		x	split
+f13_L10	19	b	b		b	agree
+f13_L10	20	q	q		q	agree
+f13_L10	21	fo	fo		fo	agree
+f13_L10	22	h-	h-		T=	agree
+f13_L10	23	g÷	g÷		g÷	agree
+f13_L10	24	V	q=			split
+f13_L10	25	b	b		b	agree
+f13_L10	26	coo	coo		coo	agree
+f13_L10	27	to	dt		tt	split
+f13_L10	28	So	go		So	split
+f13_L10	29	b	b		b	agree
+f13_L10	30	pez	pez		pez	agree
+f13_L11	1	a	a			agree
+f13_L11	2	q=	z-			split
+f13_L11	3	8	g		g	split
+f13_L11	4	ze	y			split
+f13_L11	5	h-	h-			agree
+f13_L11	6	y	y	a		agree
+f13_L11	7	H	H			agree
+f13_L11	8	fo	fo			agree
+f13_L11	9	÷	÷		m	agree
+f13_L11	10	h	h		b	agree
+f13_L11	11	a	a		g	agree
+f13_L11	12	b-	T=		T=	split
+f13_L11	13	pt	pt		b	agree
+f13_L11	14	:|:	:|:		x	agree
+f13_L11	15	g÷	g÷		g	agree
+f13_L11	16	g÷	g÷		m	agree
+f13_L11	17	#	#		b	agree
+f13_L11	18	r	y		T=	split
+f13_L11	19	b	b		pez	agree
+f13_L11	20	q=	q=		q	agree
+f13_L11	21	B	B		dto	agree
+f13_L11	22	dio	dio		a	agree
+f13_L11	23	fo	fo		fo	agree
+f13_L11	24	bo	bo		b	agree
+f13_L11	25	a	a		a	agree
+f13_L11	26	x	x			agree
+f13_L11	27	to	to		q	agree
+f13_L11	28	b	b		ht	agree
+f13_L11	29	q=	g		B	split
+f13_L11	30	ze	y		go	split
+f13_L11	31	h-	h-			agree
+f13_L12	1	h-	g	a		split
+f13_L12	2	y	m			split
+f13_L12	3	b	b			agree
+f13_L12	4	g	g			agree
+f13_L12	5	h-	h-			agree
+f13_L12	6	bo	bo			agree
+f13_L12	7	x	x			agree
+f13_L12	8	d	g			split
+f13_L12	9	m	m			agree
+f13_L12	10	b	b			agree
+f13_L12	11	h	h			agree
+f13_L12	12	pez	pez			agree
+f13_L12	13	V	q			split
+f13_L12	14	dt	dt			agree
+f13_L12	15	÷	=y			split
+f13_L12	16	fo	fo			agree
+f13_L12	17	b	b			agree
+f13_L12	18	a	a			agree
+f13_L12	19	V	q			split
+f13_L12	20	ht	ht			agree
+f13_L12	21	B	B			agree
+f13_L12	22	go	go			agree
+f13_L12	23	=y	=y			agree

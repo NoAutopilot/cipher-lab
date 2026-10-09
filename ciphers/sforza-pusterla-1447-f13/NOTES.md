@@ -284,10 +284,80 @@ f.42 reader moved nothing toward a reading: the instrument (two readers + conven
 reach; the remaining lever is the label convention itself (owner sorter) or more key units. **No reading is claimed**
 (cryptanalytic test output only).
 
+## S8: f.13 look-alike pass on T=/b-, d/g, q/V (SFZ-LOOK, account 4, 9 Oct 2026, 13:53-14:0x UTC by date -u)
+
+Worker SFZ-LOOK (Opus; one Sonnet subagent), LANE DEFAULT-account-4-20261009-1340, brief
+`.claude/briefs/runs/2026-10-09-account4-default-1340-jobs.md` J3. Disk only (0 network requests besides git).
+
+**Prior-work step** (`tools/prior_work.py sforza-pusterla-1447-f13 --item-spec 'shelfmark=BnF italien 1584;folio=13;canvas=15;date=1447-01-21;sender=Pietro de Pusterla;recipient=Francesco Sforza' --step-type transcribe --fetch`, 13:5x UTC):
+
+    step LEAD 1-own done-candidate NOTES.md:299 (the print check, another step); live-claim lines for SFZ-READ2, SFZ-F42 (both have done lines, ROOM 11:53 and 12:45) and this worker
+    plaintext CONTEXT 3-tomokiyo (two unrelated "f.13" hits: spanish.htm no.3, valle.htm); UNCHECKED-NET aymeloglu repo and editions; CLEAR cached solver files
+    plaintext KNOWN 2-leaf NOTES.md:113 "Pusterla's 1447 key ... decodes f.13 better than shuffled keys"
+    exit 2: KNOWN, no consumer
+
+The KNOWN is a false KNOWN: NOTES.md:113 is our own shuffled-key control result, not a gloss or a plaintext (f.13 has no clear
+copy or gloss, "Item" above). `--record` refuses an `--item-spec` item (no items.tsv for this folder), so it is answered here;
+the step is a re-read of our own transcription, which no prior plaintext could replace.
+
+**Instrument.** `lookalike/build.py` (adapter, rules pre-registered in its docstring before any re-read): reference sequence =
+pass C (the blind read of the level crops the windows are cut from), reader A = pass A, and the tool's 2-of-3 rule is applied
+between pass A, pass C and the re-read; pass B (two-line crops, the outlier) is a record column only. Target tiles = every
+position where A and C (or C and its own alternative) split on {T=,b-}, {d,g}, {q,V} or {q=,V} (q= added before any re-read:
+on f.13 the realised A-C swap is V/q=, 4 times). Matched control, hidden among the targets in shuffled order with the same
+windows and prompt: positions where A and C agree (conf H) on one of those labels, up to 3 per label, seed 7; gate = the re-read
+gives the agreed label at H/M on >= 0.80 of controls, else non-test. Windows: `tools/lookalike_pass.py windows --tiles
+lookalike/tiles_all.tsv --passc lookalike/passC.tsv --manifest <scratch manifest of images/level/, s2 at x=1600> --crop-pattern
+'{line}*' --desc <scratch shape descriptions from pusterla_labels.md> --per 6` (31 windows, 6 montages, scratch only; no image
+committed). One value-blind Sonnet call answered all 31 (`lookalike/reread_sonnet.tsv`).
+
+A-C confusion on f.13 (`lookalike/confusion_f13.tsv`, 95 split + 5 gap of 354): So/go 7, d/g 7, T=/b- 5, 8/g 5, h/h- 4, V/q= 4.
+
+| | n | result |
+|---|---|---|
+| control tiles (A = C) | 13 | **12/13 = 0.923** reproduce the agreed label at H/M (gate 0.80: PASS; the miss, L06.2 d, fell in a clipped window at the line start, conf L) |
+| target T=/b- (A b-, C T=) | 5 | 5 T= at H: settles on pass C, no label change |
+| target d/g (A d, C g) | 7 | 5 d at M: settled g -> d; 2 d at L: UNSETTLED |
+| target V/q, V/q= (A V, C q or q=) | 6 | 5 V at M: settled -> V; 1 q= at L: UNSETTLED |
+
+`tools/lookalike_pass.py reconcile`: 10 labels changed, 3 unsettled, **residual 3/354 = 0.008** -- a 2-of-3 agreement figure, not
+reader error (CLAUDE.md Usage 6; LESSONS.md "Look-alike pass"). Caution on the T=/b- result: the re-reader is a Sonnet model, as
+was pass C's reader, and every T=/b- tile went to C's label at H, while every d/g and V/q tile went to A's (Opus); a
+reader-family convention on the T=/b- shape (the clash S5 named for f.71) is not excluded by this control, whose T= and b-
+controls are one tile each. Pass D = pass C with the 10 changes, every other token unchanged (`ciphertext_f13_passD.tsv`).
+The 3 unsettled tiles (L03.1 d/g, L03.22 d/g, L10.24 V/q=) are in `lookalike/focus.tsv`, for the owner's sorter, not committed
+(scratch copy only; re-derived by the reconcile command above with `--focus`).
+
+**Lattice + judge rerun** (labels changed): `python3 lattice_decode.py --passD [--corpus=it15]` (pass C replaced by pass D,
+everything else as S4-S7; outputs `lattice_passD/`, `lattice_passD_it15/`; `--check` regenerates; lattice/ and lattice_it15/ untouched).
+
+| decode | corpus | real | shuffle mean | shuffle p95 | shuffle max | rank /201 | judge real_p05 | judge |
+|---|---|---|---|---|---|---|---|---|
+| lattice, A+B+C (S7) | it16dip | -1.128 | -1.368 | -1.219 | -1.171 | 1 | -0.926 | FAIL |
+| lattice, A+B+D (look-alike) | it16dip | **-1.140** | -1.387 | -1.246 | -1.177 | **1** | -0.926 | FAIL |
+| lattice, A+B+C (S7) | it15 | -1.159 | -1.409 | -1.274 | -1.218 | 1 | -0.877 | FAIL |
+| lattice, A+B+D (look-alike) | it15 | **-1.164** | -1.428 | -1.291 | -1.235 | **1** | -0.877 | FAIL |
+| vote top-1 (C -> D) | it16dip / it15 | -1.521 / -1.644 unchanged | -- | -1.697 / -1.783 | -- | 1 / 1 | -- | -- |
+
+Judge outputs (`python3 tools/judge_plaintext.py ciphers/sforza-pusterla-1447-f13/lattice_passD{,_it15}/spec.json --file .../plain.txt`):
+
+    FAIL language: score=-1.14, null_p99=-1.754, real_p05=-0.926, real_median=-0.827, mode=both, N=362
+    FAIL language: score=-1.164, null_p99=-1.835, real_p05=-0.877, real_median=-0.784, mode=both, N=365
+
+Both real scores fell slightly and both shuffled-key controls fell more (margin over shuffle max: it16dip 0.043 -> 0.038, it15
+0.059 -> 0.072); rank stays 1/201; the judge FAILs on both at 26% / 30% of the way from real_p05 to null_p99 (S7: 24% / 29%).
+The vote top-1 does not move because its 1-1-1 ties already went to pass A, which the changes now join.
+**Why the pass moved so little:** in the current 4-unit key (`../sforza-italien1584-1447/pusterla/key.tsv`) T= and b- both
+carry e, and d and g both carry t, so settling those two pairs on f.13 cannot change a decoded letter; only V (d) vs q (a) / q=
+(n) can, and five V settlements were the whole change. The pairs that matter for f.13 are the ones whose members carry
+different values; a T=/b- or d/g split matters only through the key slips, where it decides whether the two shapes keep one
+value (the owner-sorter gap below). Signature, reading.txt and grades unchanged (decode.py uses pass A; `--check` exit 0).
+**No reading is claimed** (cryptanalytic test output only).
+
 ## Remaining gaps (SFZ-F42, 9 Oct 2026; supersedes SFZ-READ2's list)
-Read so far: 0 lines read as Italian; lattice decode rank 1/201 on it16dip and it15 under the 4-unit key with f.81 and f.42 two readers; judge FAIL on both corpora; signature decodes "deptsterla"
+Read so far: 0 lines read as Italian; lattice decode rank 1/201 on it16dip and it15 under the 4-unit key with f.81 and f.42 two readers, also after the f.13 look-alike pass (S8); judge FAIL on both corpora; signature decodes "deptsterla"
 - Pusterla sign-label convention across readers - blocker: not-attempted; f.71 and f.67 reconcilers settled T=/b- opposite ways; f.81 and f.42 still split T=/b-, b/b-, q=/go, n/y; next: owner sign sorter on the four slips' T=/b-/h-/d/g/y/d'/q=/go shapes (focus pairs from f71/rec, f67/rec, pusterla/f81rec, pusterla/f42rec disagreements.tsv), then rerun g1p.py and lattice_decode.py, ~$2 plus owner time
-- f.13 transcription - blocker: not-attempted; A-C err_2reader 29.6%; next: lookalike pass on the T=/b-, d/g, q/V pairs (tools/lookalike_pass.py), ~$2
+- f.13 transcription - blocker: open-codes; look-alike pass done (SFZ-LOOK, S8: 10 relabelled, 3 unsettled in lookalike/focus.tsv, control 12/13); the decode-relevant splits left are So/go, 8/g, h/h-, a/ze (A-C confusion), none look-alike-tested; next: a look-alike pass on those pairs with the same adapter (lookalike/build.py PAIRS), ~$1.5
 - remaining Pusterla siblings f.72, f.75, f.77 with copies f.73/f.74/f.76 - blocker: not-attempted; pairing not eye-checked; next: pair check + two passes + reconciliation per slip, ~$3 each
 - print and novelty search on any decoded text - blocker: not-attempted; nothing reads yet; next: after a judge PASS, tools/print_check.py and a verifier session, ~$3
 - known period key - blocker: not-attempted; no period Pusterla key located yet; next: Cerioni 1970 / ASMi Sforzesco cipher registers key-hunt row, ~$2
@@ -300,4 +370,4 @@ Read so far: 0 lines read as Italian; lattice decode rank 1/201 on it16dip and i
 - [x] key-rebuild: key.tsv from four pairs (f.81 and f.42 two readers), G1 PASS 0.768
 - [ ] image-check: label-convention sorting across the four key slips not done (second readers done for f.81 and f.42)
 - [x] retry: lattice_decode.py under the re-pooled key on it16dip and it15, rank 1/201 both, judge FAIL both
-Verdict: keep going: 5 internal gaps; cheapest next: lookalike pass on f.13's T=/b-, d/g, q/V pairs, ~$2
+Verdict: keep going: 5 internal gaps; cheapest next: look-alike pass on f.13's So/go, 8/g, h/h-, a/ze pairs (lookalike/build.py), ~$1.5 (SFZ-LOOK, 9 Oct 2026)
