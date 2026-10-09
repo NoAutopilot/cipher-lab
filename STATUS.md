@@ -5925,6 +5925,49 @@ Left (next lane): eckert-1864 No 2 entries pp.86-182 of no2-candidates.tsv (~37 
 by D12-E2/E3 rates; N2-AI/N2-AJ/N2-R N4 needs RG 92/393/107 or the OR Supplement (owner-side or LOCAL-QUEUE); eckert-1862 `ec18_align.py --rows`
 still stale, cause untested (~1); 9877 Hurlbut token stays M.
 
+## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261009-0709, session_01JLg3wgWv5KDmveVFp6agMv, account 2), 9 October 2026 (closed 09:01 UTC: four waves worked, lane ~60.5 of 60)
+
+Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-09-ytbiz-family-0709-jobs.md. Started from the
+0409 handoff next list items 1-4. Gate 0a: SESSION-SWEEP-account-2 stale-claimed since 5 Oct, proceeded. Workers 13 in 4 waves (07:19-08:20 UTC;
+all ledgered from get_session): 52.05 by get_session; orchestrator ~8.5 (8.16 at 09:00). five_hour `allowed` throughout; account 2 seven_day `allowed_warning` from about 07:59
+(continued per blast rules). Over cap >10%: GB-PHRASE 1.40x (two folders priced as one unit). Known-text share ~30% (15.64 of 52.05): MANT-0109 5.87 + V-MANT0109 5.51 on a letter
+that turned out to be printed (N0), and VB-1537 4.26, which found its six leaves printed at its first step and stopped -- not deliberate; lesson = next item 2.
+Register rows re-checked and dropped by check 1: wallis-emus203 Thurloe vols 2-5 grep (done R8-SPLOOK 6 Oct), es132 f.89 re-derivation (done ES132-RD 8 Oct).
+
+Results:
+- sachsstaatsarchiv-manteuffel-1712 694/08 0454 (No. 88, Berlin 29 Oct 1712, ff.358-361, head on URL 0451; MANT-0453): first verifier V-MANT0454
+  **N2, D2** (code clause on 198 Stanislas; news printed in Droysen IV.1 p.267 n.511; Bonnesen 1918 pp.68-70 snippets). Bonnesen pp.62-77 could lower
+  to N1: unreadable from the cloud (BONNESEN), LOCAL-QUEUE L69. No SO/AUD2 row (N2). 0453's 22 tokens: gates too-short (L=16; pooled L=68 no control
+  window), all M.
+- 694/08 0109 (No. 40, Berlin 4 June 1712): MANT-0109 gate (b) PASS at 43 letters (S37 M43), then V-MANT0109 **N0, D3**: printed in clear with names
+  resolved in Acta Borussica Behördenorganisation I (1894) Nr. 64 pp.204-207 (55.44 Blaspil, 7.60 Grumbkow; reading agrees 24/24 groups).
+- 694/08 inventory (MANT-INV08B/C): 403 of 592 frames seen; mant0608/inv08b.tsv, inv08c.tsv, rank_unglossed_08.tsv re-ranked. Clear-under-code draft
+  leaves 0323/0348/0282/0398/0499 (~250 tokens with 0284/0410) = a gloss-free key check; glossed heavy 0494 (codes to ~625), 0313; unglossed 0382 carries
+  0109's run 11.60.66.6.28.
+- 694/09 0136 names (MANT-NAMES136): r01 = Lölhöffel only under a post-hoc f->v rule (M); others too short or no candidate. name_candidates.py is
+  whole-code only. GB-PHRASE: no print hit for 0136's news (press of the day needs desk paging) or for hessen-daenemark 0062's gloss.
+- vanbeuningen-dewitt-1657 pool: NA 3.01.17 EAD has no cipher marker at all (VB-EAD); inv.1537 screened (VB-SCREEN): 1656 scans 0029 (5 Apr), 0038,
+  0048, 0086 (29 Dec, ~120 groups), 0088 carry cipher WITH interlinear period gloss, 0079 ~30 groups without. VB-1537 (4.26): all six are PRINTED in Fruin/Japikse, Brieven aan Johan de Witt I (1919), cipher passages in clear,
+  letter-spaced: 0029=5 Apr 1656 pp.330-332, 0038=25 Jun pp.337-338, 0048=6 Aug pp.340-342, 0079=22 Nov pp.363-364, 0086=10 Dec pp.365-366, 0088=17 Dec
+  pp.366-367 (control p.405 PASS); no unprinted leaf, steps 2-3 not run. edition_check_1537.tsv.
+- na-suriname-map-1781 (SUR-PARTIAL): the pooled NO SPLIT excludes a second m sign only on >=75% of m positions (detection 0.86/0.87), not <=50%.
+- la-garde-1577 (LAG-CHECK): lag_sylv2/lag_wcgap --check exit 0, byte-for-byte; LAG-RESCORE stands; nothing cheap left on the base-code text.
+
+**next** (for the next LANE FAMILY incarnation):
+1. vanbeuningen-dewitt-1657: the 1656 letters are known texts -- use them only as key sources: align 0086 (~120 groups) against Brieven aan JdW I
+   pp.365-366 with tools/interlinear_align.py to test whether 1656 shares the 1657 key (~5); any unread Van Beuningen leaf must clear the same Fruin/Japikse
+   check BEFORE screening or reading (inv.1539/1541 letters are likely printed too: check the edition's toc1 by date first, ~1).
+2. sachsstaatsarchiv-manteuffel-1712: before ANY further reading job on a Prussian-administration leaf, grep Acta Borussica Behördenorganisation I
+   (IA diebehrdenorgan01posngoog) and the later AB BO volumes by date and names (V-MANT0109's flag); then the clear-under-code draft leaves
+   0323/0348/0282/0398/0499 as a gloss-free key check (~5, PREREG, blind passes).
+3. Manteuffel 0454: owner desk LOCAL-QUEUE L69 (Bonnesen pp.62-77); when answered, the verifier re-rules N2/N1.
+4. Manteuffel 694/08: 189 frames still unseen (other stride offsets), ~5 per 45-50 frames; 694/08 0494 glossed heavy (codes to ~625) as a key
+   extension leaf (~5), after the AB BO grep.
+5. Van Beuningen inv.1539/1541: edition check by date first (item 1); screen only dates the edition does not print.
+6. na-suriname-map-1781: a key-blind split statistic, pre-registered (~2, CPU), or stop there (power at 50% split is ~0.1).
+Excluded this incarnation (other lanes): eckert-*, lodewijk-van-nassau-1573-74, baluze167, huntington-blathwayt, ceppo-nevers, pro3055-clinton-1779,
+fr16045-pisany.
+
 ## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261009-0409, session_01Cnc5YUqc7JgCV9R2aq8L2f, account 2), 9 October 2026 (closed 05:5x UTC: four waves worked, lane ~57.4 of 60)
 
 Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-09-ytbiz-family-0409-jobs.md. Started from the
