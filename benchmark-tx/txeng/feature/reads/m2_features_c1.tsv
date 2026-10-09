@@ -1,0 +1,171 @@
+passage	pos	desc	asc	bars	loops	dots	lean	tail	conf	note
+L01	1	short	short	0	1	0	upright	none	H	circle with vertical stroke through
+L01	2	none	none	1	2	0	upright	none	H	oval cut by horizontal bar extending both sides
+L01	3	short	short	1	1	0	upright	none	M	p-like bowl, stem crossed by bar
+L01	4	none	none	1	0	0	upright	none	H	two legs under flat top bar
+L01	5	none	none	1	0	0	upright	none	H	reversed e joined to e, shared middle bar
+L01	6	short	none	0	0	0	upright	right	H	n with tail hooking down at right
+L01	7	none	none	1	0	0	upright	none	H	cross, long horizontal
+L01	8	short	short	1	1	0	upright	none	M	p-like bowl, stem crossed by bar
+L01	9	none	none	0	2	0	upright	none	M	two closed round loops, omega/infinity form
+L01	10	none	short	0	1	0	upright	none	M	round bowl with short flag stem rising
+L01	11	none	none	0	1	0	upright	none	M	m-like arches with loop at left
+L01	12	none	none	2	0	0	right	none	H	two slanted uprights crossed by two bars
+L01	13	short	none	0	1	1	upright	left	L	o followed by j-like stroke with dot; may be two marks
+L01	14	none	long	0	1	1	right	right	H	tall looped l with tick at top
+L01	15	none	none	2	0	0	right	none	H	two slanted uprights crossed by two bars
+L01	16	long	none	0	1	0	upright	none	M	circle on long stem with small cross on stem
+L01	17	none	none	1	0	0	upright	none	H	cross, long horizontal
+L01	18	none	none	0	1	0	upright	right	H	looped bowl with leg sweeping right
+L01	19	none	none	1	1	0	upright	none	M	D bowl with horizontal bar at left
+L01	20	none	none	2	0	0	right	none	H	two slanted uprights crossed by two bars
+L01	21	none	none	1	2	0	upright	none	H	oval cut by horizontal bar extending both sides
+L01	22	none	none	1	0	0	upright	none	H	reversed e joined to e, shared middle bar
+L01	23	none	none	0	1	0	upright	none	M	c curve with small loop inside / joined e
+L01	24	none	short	0	0	0	left	right	H	lambda, long stroke from upper left to lower right
+L01	25	none	none	1	0	0	upright	none	H	cross, long horizontal
+L01	26	none	none	0	0	1	upright	right	H	m with small superscript mark above right
+L01	27	none	none	1	2	0	upright	none	H	oval cut by horizontal bar extending both sides
+L02	1	none	none	1	0	0	upright	none	H	two short uprights standing on flat base bar
+L02	2	none	none	1	0	0	upright	none	H	two legs under flat top bar
+L02	3	none	none	0	2	0	upright	none	H	two stacked bowls on upright
+L02	4	none	none	0	2	0	upright	none	H	two joined round loops side by side
+L02	5	none	none	1	0	0	upright	none	H	cross, long horizontal
+L02	6	none	none	0	0	0	upright	none	H	open v
+L02	7	none	short	0	0	0	left	right	H	inverted v with curl at left foot
+L02	8	none	short	1	0	0	upright	none	M	T with curled flourish on top
+L02	9	short	none	1	1	0	upright	left	H	square box with stem below, flat top
+L02	10	none	none	1	2	0	upright	none	H	oval cut by horizontal bar extending both sides
+L02	11	long	long	0	2	0	upright	none	H	circle with vertical stroke through, above and below
+L02	12	long	none	0	1	0	upright	none	H	small circle on long vertical stem below
+L02	13	none	none	1	0	0	upright	none	H	two legs under flat top bar
+L02	14	none	none	1	1	0	upright	none	H	triangle
+L02	15	none	none	2	0	0	right	none	H	two slanted uprights crossed by two bars
+L02	16	none	none	1	2	0	upright	none	H	oval cut by horizontal bar extending both sides
+L02	17	long	short	0	2	0	upright	none	H	circle with vertical stroke through, above and below
+L02	18	none	none	1	0	0	upright	none	H	two short uprights standing on flat base bar
+L02	19	none	none	0	1	0	right	right	H	fish/alpha loop with crossing tail
+L02	20	none	long	0	1	1	right	right	H	tall looped l with tick at top
+L02	21	none	none	0	2	0	upright	none	H	two joined round loops side by side
+L02	22	none	none	1	0	0	upright	none	H	two legs under flat top bar
+L02	23	none	none	0	0	0	upright	right	H	three-arch m
+L02	24	none	none	1	2	0	upright	none	H	oval cut by horizontal bar extending both sides
+L02	25	none	none	1	0	0	upright	none	H	two short uprights standing on flat base bar
+L02	26	none	none	0	2	0	upright	none	H	two joined round loops side by side
+L02	27	none	none	1	0	0	upright	none	H	two legs under flat top bar
+L03	1	none	none	0	1	0	upright	none	H	lone small circle
+L03	2	none	none	1	0	0	upright	none	H	two short uprights standing on flat base bar
+L03	3	none	none	1	0	0	upright	none	M	two uprights joined by one crossbar
+L03	4	none	none	0	1	0	upright	none	M	c curve with small loop inside / joined e
+L03	5	none	none	0	2	0	upright	none	H	two joined round loops side by side
+L03	6	none	none	1	2	0	upright	none	H	oval cut by horizontal bar extending both sides
+L03	7	long	none	0	1	0	upright	left	H	bowl with descender hooking left
+L03	8	none	none	1	0	0	upright	none	H	two legs under flat top bar
+L03	9	none	none	1	0	0	upright	none	H	two short uprights standing on flat base bar
+L03	10	none	none	1	2	0	upright	none	H	oval cut by horizontal bar extending both sides
+L03	11	long	short	0	2	0	upright	none	H	circle with vertical stroke through, above and below
+L03	12	none	short	0	0	1	left	right	M	lambda with small mark above
+L03	13	none	long	0	1	0	right	none	H	round bowl with tall stem rising, curving top
+L03	14	none	none	1	0	0	upright	none	H	reversed e joined to e, shared middle bar
+L03	15	none	short	0	0	0	left	right	H	lambda, long stroke from upper left to lower right
+L03	16	none	none	0	2	0	upright	none	H	two joined round loops side by side
+L03	17	none	none	1	0	0	upright	none	H	two legs under flat top bar
+L03	18	none	none	0	1	0	upright	none	M	ampersand-like loop with curling head
+L03	19	none	none	2	0	0	right	none	H	two slanted uprights crossed by two bars
+L03	20	none	none	1	0	0	upright	none	H	cross, long horizontal
+L03	21	none	none	0	2	0	upright	none	H	two joined round loops side by side
+L03	22	none	none	1	0	0	upright	none	H	two legs under flat top bar
+L03	23	none	none	1	2	0	upright	none	H	oval cut by horizontal bar extending both sides
+L03	24	none	none	0	2	0	upright	none	H	figure 8
+L03	25	short	short	0	0	0	right	left	M	long s
+L03	26	none	none	2	0	0	right	none	H	two slanted uprights crossed by two bars
+L03	27	none	none	1	0	2+	upright	none	M	two uprights joined by bar, dots beside
+L04	1	none	short	1	1	0	upright	none	H	round bowl with stem rising, cross at top
+L04	2	none	short	0	0	0	left	right	H	lambda, long stroke from upper left to lower right
+L04	3	none	none	1	0	0	upright	none	H	two short uprights standing on flat base bar
+L04	4	none	none	0	1	0	upright	none	M	c curve with small loop inside / joined e
+L04	5	none	none	1	0	0	upright	none	M	two slanted uprights one bar
+L04	6	long	none	0	1	0	upright	left	H	bowl with descender hooking left
+L04	7	none	short	0	1	0	upright	none	H	b-like bowl with tall stem
+L04	8	none	none	1	0	0	upright	none	M	two uprights joined by one crossbar
+L04	9	none	short	1	1	0	upright	none	H	bowl with stem rising crossed at top
+L04	10	none	none	1	2	0	upright	none	H	oval cut by horizontal bar extending both sides
+L04	11	none	none	0	1	0	upright	none	M	ampersand-like loop with curling head
+L04	12	none	none	0	2	0	upright	none	H	two joined round loops side by side
+L04	13	none	long	0	1	1	right	right	H	tall looped l with tick at top
+L04	14	none	none	1	2	0	upright	none	M	circle with vertical through, underlined
+L04	15	none	none	1	0	0	upright	none	H	two legs under flat top bar
+L04	16	long	short	0	2	0	upright	none	H	circle with vertical stroke through, above and below
+L04	17	none	long	0	1	1	right	right	H	tall looped l with tick at top
+L04	18	none	none	0	1	0	upright	right	H	looped bowl with leg sweeping right
+L04	19	none	none	1	0	0	upright	none	H	two legs under flat top bar
+L04	20	long	short	0	2	0	upright	none	H	circle with vertical stroke through, above and below
+L04	21	short	none	0	0	0	upright	right	H	n with tail hooking down at right
+L04	22	none	short	0	2	0	upright	none	M	b with looped top / p-like bowl
+L04	23	none	none	2	0	0	right	none	H	two slanted uprights crossed by two bars
+L04	24	short	none	0	1	0	upright	none	H	diamond on short stem below
+L04	25	none	none	1	0	0	upright	none	M	two uprights joined by one crossbar
+L04	26	none	none	2	0	0	right	none	H	two slanted uprights crossed by two bars
+L04	27	long	short	0	2	0	upright	none	H	circle with vertical stroke through, above and below
+L04	28	short	none	0	0	0	upright	right	H	n with tail hooking down at right
+L05	1	short	none	0	1	0	upright	none	H	q bowl with stem below
+L05	2	short	none	0	1	0	upright	none	H	diamond on short stem below
+L05	3	none	none	2	0	0	upright	none	H	vertical with two horizontals to right
+L05	4	none	short	1	1	0	upright	none	H	bowl with stem rising crossed at top
+L05	5	none	none	0	2	0	upright	none	H	two stacked bowls on upright
+L05	6	none	none	1	2	0	upright	none	H	oval cut by horizontal bar extending both sides
+L05	7	none	short	1	0	0	upright	right	H	t with crossbar
+L05	8	none	none	1	0	0	upright	none	H	two legs under flat top bar
+L05	9	none	none	0	0	0	upright	right	H	three-arch m
+L05	10	none	short	0	0	1	left	right	M	lambda with tilde/omega mark above
+L05	11	none	none	1	0	0	upright	none	M	two uprights joined by one crossbar
+L05	12	none	none	0	0	0	upright	none	H	open v
+L05	13	none	long	0	1	0	right	none	H	round bowl with tall stem rising, curving top
+L05	14	none	none	0	0	2+	upright	right	H	m with tilde mark above right and dot after
+L05	15	none	none	1	0	0	upright	none	H	cross, long horizontal
+L05	16	none	none	1	0	0	upright	none	H	two legs under flat top bar
+L05	17	none	none	0	0	0	upright	right	H	K shape
+L05	18	none	short	0	1	0	right	none	H	round bowl with tall stem rising, curving top
+L05	19	long	none	0	1	0	upright	left	H	bowl with descender hooking left
+L05	20	none	short	0	0	0	left	right	H	lambda, long stroke from upper left to lower right
+L05	21	none	none	1	0	1	upright	none	H	pi with dot above
+L05	22	none	none	2	0	0	right	none	H	two slanted uprights crossed by two bars
+L05	23	none	none	1	0	0	upright	none	M	two uprights joined by one crossbar
+L05	24	none	short	0	2	1	upright	none	M	b with looped top / p-like bowl
+L05	25	none	none	0	1	0	upright	none	M	c curve with small loop inside / joined e
+L05	26	none	none	1	0	0	upright	none	H	two legs under flat top bar
+L05	27	long	none	0	1	0	upright	left	H	bowl with descender hooking left
+L05	28	short	none	0	0	0	upright	right	H	n with tail hooking down at right
+L05	29	none	none	0	1	0	upright	right	H	looped bowl with leg sweeping right
+L05	30	none	none	1	2	0	upright	none	H	oval cut by horizontal bar extending both sides
+L05	31	long	none	0	1	0	upright	left	H	bowl with descender hooking left
+L06	1	none	none	0	2	0	upright	none	H	two joined round loops side by side
+L06	2	none	long	0	1	0	right	none	H	round bowl with tall stem rising, curving top
+L06	3	none	none	2	0	0	right	none	H	two slanted uprights crossed by two bars
+L06	4	none	none	1	0	0	upright	none	M	two uprights joined by one crossbar
+L06	5	long	none	0	1	0	upright	left	H	bowl with descender hooking left
+L06	6	none	none	0	0	0	upright	none	H	open v
+L06	7	none	none	1	0	0	upright	none	H	two legs under flat top bar
+L06	8	none	none	0	1	0	upright	none	M	epsilon followed by small o
+L06	9	none	none	1	0	0	upright	none	M	3 shape crossed by bar
+L06	10	none	none	1	2	0	upright	none	H	oval cut by horizontal bar extending both sides
+L06	11	none	none	1	0	0	upright	none	H	two short uprights standing on flat base bar
+L06	12	none	none	1	0	0	upright	none	H	two legs under flat top bar
+L06	13	none	none	1	0	0	upright	none	H	reversed e joined to e, shared middle bar
+L06	14	none	none	1	1	0	upright	none	M	D bowl with horizontal bar at left
+L06	15	none	none	1	2	0	upright	none	H	two small circles joined by bar
+L06	16	none	none	1	2	0	upright	none	H	oval cut by horizontal bar extending both sides
+L06	17	none	none	2	0	0	right	none	H	two slanted uprights crossed by two bars
+L06	18	short	none	0	1	0	upright	none	H	circle with vertical stroke through and below
+L06	19	none	none	2	0	0	upright	none	H	vertical with two horizontals to right
+L06	20	short	none	1	2	0	upright	none	M	circle with vertical through, cross on stem below
+L06	21	none	none	1	0	0	upright	none	H	two short uprights standing on flat base bar
+L06	22	long	none	0	1	0	upright	left	H	small loop over S-shaped long descender
+L06	23	none	none	1	1	0	upright	none	M	D bowl with horizontal bar at left
+L06	24	none	none	0	2	0	upright	none	H	two stacked bowls on upright
+L06	25	none	none	1	1	0	upright	none	M	D bowl with horizontal bar at left
+L06	26	none	none	0	2	0	upright	none	H	figure 8
+L06	27	long	none	0	1	0	upright	left	H	bowl with descender hooking left
+L06	28	none	none	0	1	0	upright	none	M	epsilon followed by small o
+L06	29	none	none	0	0	0	upright	none	H	open v
+L06	30	none	long	0	1	0	right	none	H	round bowl with tall stem rising, curving top
