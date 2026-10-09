@@ -7151,3 +7151,125 @@ change to any code value). With FV-FM5c's crops of 5831, the whole of E235 is no
   despatch added, so the second opinion does not "find" it as prior print).
 - Postmortem: none against FV-FM5c's reading; its two open items (press unvalidated, 5832 not imaged) are closed above. Still open:
   Grant Papers vol. 13 and Google Books (429), and NY Herald/Baltimore American of 15 Dec read page by page.
+
+## AUDIT 2 (AUD2-LEDGER-10)
+
+Second verifier AUD2-LEDGER-10 (account 3, for LANE-VERIFY-4), 9 Oct 2026, 00:54-01:3x UTC by `date -u`; a separate session from the
+reader FM-R3b and the first auditor FV-FM5b (both account 1), not protecting either's conclusions. Account 3 had read and audited none
+of these items before. Scope: **E220, E222, E223, E224** (E225 is N1 and needs no second audit). Nothing decoded; key values looked up
+in key.md only. Key source for all four: `period`. Depth keep-or-lower (.claude/briefs/runs/2026-10-08-acct3-depth-bar.md). No spec,
+so `judge_plaintext.py` not run. Scripts: `fortmonroe/aud2_ledger10_beapi.py` (+ `.out`), `fortmonroe/aud2_ledger10_hdl.py` (+ `.out`);
+OR I/36 pt 3, I/40 pt 2, I/42 pts 1-3 djvu texts fetched once to scratch, OR I/43 pt 2 and Butler IV-V read from the cached print-check.
+
+### Prior-work checks 3-5
+- `prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=p<ptr>;ptr=<ptr>;date=..;sender=..;recipient=..'
+  --step-type second-audit` (the four entries have no items.tsv row) for 5811/5747/5823/5701: exit 4 for each, owing only target-level
+  LEADs -- the live claims of ECK-PAGEFIX (mssEC 19 page column), FM-R3b (the reader of these very rows, whose readings FV-FM5b already
+  audited) and, for 5747/5823, HOLDER-EXPORT (the delivery sheet); none is a prior reading or decipherment of these units: CLEAR.
+  Tomokiyo UNCHECKED (no folio key), cached solver files CLEAR, aaymeloglu UNCHECKED-NET (no clone), cached OR window CLEAR.
+- G3 (`--reading <decoded text> --network`): E220 run with `--network --max-requests 25` (about 5 min): every cached edition CLEAR for 6 decoded phrases (OR
+  ser. I vols 32-49 as cached, ORN I/9-10, Butler IV-V), the uncached OR volumes, IA-global and Google Books UNCHECKED-NET (request cap
+  reached). E222-E224 run `--offline`: each timed out at 100 s before reporting (not re-run); the hand greps below cover the volumes for
+  their dates (OR I/36 pt 3, I/40 pt 2, I/42 pts 1-3, I/43 pt 2, Butler IV-V) and are the G3 record for those three.
+- Duplicate diff: FV-FM5b's diff re-run by eye on ciphertext.txt headers: 5747 also carries E174 (14 June, the reply), 5823 E163/E177
+  (O'Brien to Sheldon, other telegrams); 5811 and 5701 only their own. **No duplicate.**
+- Key values re-checked against key.md, every code group: Henrietta 2.30 PM, Growl Washington, Zebra/Unity/Zodiac period, Pekin/Pedlar
+  comma, Melody 60, Plague 6, Publish 100 (key.md section 4: "Plank Promise Person Publish" = 2 thousand 5 hundred, so Melody Plague
+  Publish = 66 hundred = 6,600), Spit Men, Walrus Signature, Paradise Colonel, Saco Fort, Knox Butler, Wrangle Telegraph, Shelby/Shelter
+  General, Polka Command(-ing), Quadrant Department, Alba Virginia, Abacus North Carolina, Nankin W. F. Smith, Salem Force, Jupiter
+  Grant, Animal Monroe, Palsy Brigadier General. All as FV-FM5b graded.
+- **Holder's own transcription (G3), Huntington CONTENTdm full text** (8 queries under the hdl token, 3.2 s apart: "sixth corps",
+  "rucker", "farquhar", "biggs", "surgeon general", "baltic", "atlantic", "hospital boats"): no second copy of E220, E222, E223 or E224.
+  Same-day traffic found: **9901/1 (mssEC 18 p.235, the same Washington page as Rucker's call) is Halleck's 1 PM telegram to Sheridan of
+  29 Nov ("Will not the [information] in regard to Gordon's [division] prevent the ..."),** printed in clear in OR I/43 pt 2 p.695 (below);
+  5751 (14 June, Washington to Biggs on the orders for the boats) and 4711/5748 (14 June, Biggs on forage, "until steamers arrive")
+  are later traffic with Biggs, not E222; 5698 (26 May, Butler to Biggs, "send me all the Whig [transportation] you can") and 9747/5704
+  (27 May, Washington to Biggs) frame E224's day; 4515/5597 (7 Apr) give Farquhar as "Chf of Engrs in this Dept" before his sickness.
+- **Recipient-side and staff papers, same-day orders, print** (letters-normalized grep of the djvu texts):
+  - **E220:** OR I/43 pt 2 p.695: Halleck to Sheridan, Washington 29 Nov 1864 1 p.m., "Will not the information in regard to Gordon's
+    division prevent the detachment of the Sixth Corps? ... Please answer immediately, as I have ordered steamers here"; Sheridan 2.30 p.m.
+    "I think it best that it should go at once". OR I/42 pt 3 p.739: **Ingalls, Fortress Monroe, 29 Nov 1864 4 p.m., to Meigs: "I have
+    directed all steamers to be sent to Washington to be in readiness to bring back the Sixth Corps."** OR I/43 pt 2 (Lee to Davis,
+    6 Dec): twenty-one steamers loaded with troops descended the Potomac on the 3rd. So E220 (2.30 PM) is Fort Monroe's answer to the
+    Washington call for the Sixth Corps' return to Petersburg. None of the eight vessel names, "capacity in all" or "6,600" occurs in
+    OR I/42 pts 1-3 or I/43 pt 2 for this movement (Weybosset and "Idahoe" carry Fort Fisher troops in I/42 pt 1 p.981, a December movement after E220; Montauk I/43 pt 2 pp.560-569 is the November election movement).
+    Grant Papers vol. 13 is not an Internet Archive item (advancedsearch 9 Oct: vols. 1-12, 14-20 and an unnumbered `0000unse`, which
+    answered 0 for "Sixth Corps", "Western Metropolis", "Baltic"); vol. 12 "Sixth Corps" steamers: snippets are Aug-Sept traffic.
+    **Not located.**
+  - **E222:** OR I/40 pt 2 pp.12-13: Rawlins for Grant to Butler, 13 June, to turn over "all the ferry-boats and other transportation";
+    p.13 Biggs, Fort Monroe 13 June, to Shaffer: "By order of General Grant I send all ferry-boats and bridging material to Fort Powhatan
+    ... Am sending nails, spikes, rope, and lumber. Of the latter hope to get about 200,000 feet off to-day" -- the execution of E222,
+    as FV-FM5b found. Grant Papers vol. 11 (be-api): "Biggs" -- the 12 June Grant-to-Biggs telegram and Butler's "Lt Col Biggs is so
+    sick"; "lumber" -- Grant to Biggs 12 June, "Mill a[t] Fort Monroe to saw all th[e] two inch lumber they can ... Send also all the
+    lumber you can, particularly the 2 inch plank" (the order behind E222's lumber); "ferry boats" 502. E222 itself **not located**.
+  - **E223:** OR I/42 pt 1 pp.196-197 (McParlin's report, Army of the Potomac): the Surgeon-General's hospital steamers from City Point
+    and Fort Monroe were "Western Metropolis, W. M. Hudson, acting assistant surgeon ... capacity 450 beds", "Baltic, Asst. Surg. Thomas
+    McMillan ... capacity 500 beds", the Atlantic, "and steamers ... such as the Ben De Ford and S. B. Spaulding" -- **all three vessels
+    of E223 are the Surgeon-General's hospital transports**, which resolves FV-FM5b's residual M on "Baltic" (the hospital steamer Baltic,
+    not another vessel of the name) and explains why the medical director reported the taking to the Surgeon General. OR I/42 pt 3
+    pp.416-417 and Butler V: Stanton to Butler 28 Oct 1864, "The surgeon-general complains that his two hospital transports,
+    the Atlantic and Baltic, have been seized by your order"; Butler's reply; Meigs to Col. Webster the same day; Hardie 1 Nov releasing
+    them (OR I/42 pt 3, same exchange in Butler V) -- the precedent six weeks earlier. **OR I/42 pt 1 p.981** (Fort Fisher reports, Ames's
+    division): the troops embarked at Bermuda Hundred on ocean transports, the Third Brigade (Col. L. Bell) "on board the Baltic and
+    Haze"; Butler to Grant, "On Board Ben De Ford, Fort Monroe, December 14, 1864" (OR I/42 pts 1 and 3) -- the Baltic and the Ben De
+    Ford were used by the expedition that sailed in the days after E223, which is what the "urgent military necessity" was. E223 itself (9 Dec) **not located** in OR I/42 pts 1-3, Butler V, Grant Papers vol. 14 (be-api 0) or the
+    holder text; Grant Papers vol. 13 unreachable. Medical and Surgical History (hospital transports): not searched (budget; the OR
+    print already identifies the three vessels).
+  - **E224:** OR I/36 pt 3 p.265: **Farquhar, "Fort Monroe, May 27, 1864", to Maj. Gen. W. F. Smith** (a report on the Ninth New Jersey)
+    -- the addressee was at Fort Monroe on E224's day, as the ledger's routing requires; Weitzel signs "Brigadier-General and Chief
+    Engineer" in the same volume. Butler IV p.274 (Sarah Butler, Fort Monroe, end of May): "Capt. Farquhar came to see me today ... I am
+    sorry he left you ... It was not beneath him to be second to Genl. Weitzel"; Butler IV (Weitzel to Barnard, 5 July): Farquhar "went
+    to Fort Monroe to settle his engineer accounts". Grant Papers vol. 10 (Jan-May 1864, the volume for 27 May; FV-FM5b searched vol. 11):
+    "Farquhar" 0, "Weitzel" and "chief engineer" 502 (not retried). **Not located.**
+  - Google Books: one probe ("Western Metropolis" "Baltic" "De Ford" 1864, country=US, keyed) answered 429; host stopped. Press of the
+    day: not searched. W. F. Smith's own papers / *From Chattanooga to Petersburg*: not searched.
+
+### Corrections to the first audit
+1. E223: "Baltic" M (which vessel of the name) -> resolved by print: the Surgeon-General's hospital transport Baltic (OR I/42 pt 1 p.197).
+   Grades unchanged (plain words are not counted in depth_pct).
+2. E224: FV-FM5b's reading "[Brigadier General] and [Chief] Engineer": "Chief" is not in the ledger ("Palsy and Engineer"); it is an
+   inference (I) from Weitzel's printed signature, not a code value. No count changes (9 H of 9 code groups).
+3. E220: the "external check" now has a printed leg (OR I/42 pt 3 p.739, OR I/43 pt 2 p.695) besides the manuscript call in mssEC 18.
+4. E224 is in Grant Papers vol. 10, not 11 (vol. 11 begins 1 June 1864); FV-FM5b's vol. 11 search did not cover its date. Vol. 10 searched
+   here for "Farquhar" (0).
+
+### Classification (key `period`)
+| ID | N-class | text known? | depth | depth_pct | check |
+|---|---|---|---|---|---|
+| **E220** | **N3 (weak)** KEPT | unknown | **D3** kept | 100 (16 H of 16) | code clause as FV-FM5b; external (non-statistical): Rucker's call (mssEC 18 9901/0), Halleck 29 Nov 1 p.m. (OR I/43 pt 2 p.695), Ingalls 29 Nov 4 p.m. "all steamers ... to bring back the Sixth Corps" (OR I/42 pt 3 p.739) |
+| **E222** | **N3 (weak)** KEPT | unknown | **D3** kept | 100 (8 H of 8) | as FV-FM5b; plus Grant to Biggs 12 June on the lumber (Grant Papers 11, snippet) |
+| **E223** | **N3 (weak)** KEPT | unknown | **D3** kept | 100 (9 H of 9) | code clause as FV-FM5b; external (non-statistical): OR I/42 pt 1 pp.196-197 identifies all three vessels as the Surgeon-General's hospital transports; p.981 the Baltic carrying Bell's brigade to Fort Fisher; OR I/42 pt 3 pp.416-417 the October precedent |
+| **E224** | **N3 (weak)** KEPT | unknown | **D3** kept | 100 (9 H of 9) | as FV-FM5b; plus OR I/36 pt 3 p.265 (Farquhar at Fort Monroe 27 May writing to W. F. Smith) and Butler IV p.274 |
+
+Not raised to N4: Grant Papers vol. 13 (E220, E223) is not reachable online here, Google Books answered 429, the press of the day and
+RG 92/RG 112 are unsearched. Not lowered: no print of any of the four telegrams was found.
+
+- **E220: N3 (weak).** Safe sentence: "Read at grade H with War Department Cipher No. 1: on 29 Nov 1864 the chief quartermaster at
+  Fort Monroe, Col. R. C. Webster, answered General Rucker's call for every available steamer -- the call for transports to bring the
+  Sixth Corps back from Washington to Petersburg -- by naming eight he would send that night (H. Livingston, Weybosset, Gen'l
+  Sedgwick, Massachusetts, Louisa Moore, Idaho, Montauk, Beaufort), capacity in all 6,600 men. The telegram was not located in the
+  Official Records (ser. I vols. 42 pts 1-3, 43 pt 2), Butler's printed correspondence or the Huntington's full-text search (searched
+  9 Oct 2026); Grant Papers vol. 13 was not reachable." Unsafe: "first decipherment", "previously unread".
+  Depth sentence (mine): "On 29 Nov 1864, as Washington ordered steamers to bring the Sixth Corps back to Grant, Fort Monroe's chief
+  quartermaster named eight he would send that night, with room for 6,600 men."
+- **E222: N3 (weak).** Safe sentence: FV-FM5b's, kept. Depth sentence (mine): "On 13 June 1864 Butler's headquarters told the Fort
+  Monroe quartermaster to send every ferry-boat up to Fort Powhatan and the lumber after them as fast as possible, the day Biggs reported
+  sending them."
+- **E223: N3 (weak).** Safe sentence: "Read at grade H with Cipher No. 1: on 9 Dec 1864 the medical director of the Department of
+  Virginia and North Carolina, Surgeon Charles McCormick, told the Surgeon General that the commanding general had taken the Western
+  Metropolis, the Baltic and the B. Deford -- vessels the Official Records list as the Surgeon-General's hospital transports -- for an
+  urgent military necessity. Not located in the Official Records (ser. I vol. 42 pts 1-3), Butler's correspondence or the Huntington's
+  full-text search (searched 9 Oct 2026); Grant Papers vol. 13 was not reachable." Depth sentence (mine): "On 9 Dec 1864, the week of
+  the Fort Fisher expedition, the department's medical director warned the Surgeon General that three of his hospital steamers had been
+  taken by the commanding general."
+- **E224: N3 (weak).** Safe sentence: FV-FM5b's, kept. Depth sentence (mine): "On 27 May 1864 Captain Farquhar, then at Fort Monroe,
+  was ordered to join W. F. Smith as chief engineer when Smith's force passed on its way to Grant."
+
+SECOND-OPINIONS-QUEUE.tsv rows SO-ECKERT-E220/E222/E223/E224 already filed by FV-FM5b; no class or count changed, so no row edited.
+
+### Postmortem
+The first audit holds on all four; nothing over-claims. What it lacked was the print of the day's *context*: OR I/42 pt 1 (the medical
+reports) names all three of E223's vessels as hospital transports, and OR I/42 pt 3 p.739 and I/43 pt 2 p.695 say what E220's steamers
+were for. A Fort Monroe vessel list should be searched first in the volume's medical and quartermaster reports, not only in the
+correspondence. Requests: archive.org 6 (1 advancedsearch, 5 metadata probes) + 5 djvu downloads, be-api 13 (5 x 502, not retried),
+hdl.huntington.org 8 (CONTENTdm, 3.2 s apart), googleapis 1 (429, stopped), prior_work.py E220 network run within its own cap of 25.
