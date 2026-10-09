@@ -3872,3 +3872,32 @@ Read so far: ten of ten filed (E331-E340); six printed, four not located.
 - [x] image-check: four unlocated pages read at 2400 px; the six printed rows checked against the print.
 - [x] retry: none needed (no host refused).
 Verdict: keep going: 4 internal gaps; cheapest next: ORN/OR ser. II date search for E333 and E334, ~$0.4
+
+## KEY-LAV (9 Oct 2026, account 1, for LANE LEDGER)
+Two key questions from the incarnation-7 handoff, by the KEY-TW/KEY-BLIND method. Script `fortmonroe/key_lav.py` (`--help`, `--blind`, `--unmask`,
+`--tulip`; seed 20261009); no network beyond git, no hdl take. Intake gate (20:4x UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search
+citation found within 6 lines`.
+- **(a) Lavender = Gen. C. C. Washburn(e).** Occurrences: filed E169 (Eckert's 9 Sept 1864 instruction "for C. Washburn lavender and loadstone": the
+  definition itself, plain there, not scored) and E330 (OR I/39 pt 3 p.379, "Burbridge and Washburn"); unfiled 9870/1 (17 Oct 1864, "for lavender",
+  Paducah/Columbus, forces "sent up the Tennessee") and 9893/2 (9 Nov 1864, "For Lavender", "assist you at Memphis"), both mssEC 18, text from the
+  Huntington's cached CONTENTdm transcription (`sources/mssEC18/p9870.json`, `p9893.json`), image not checked. Control: the same 3 contexts each given a
+  random person from key.md's 52 person meanings. Verdicts `fortmonroe/key_lav_verdicts.tsv`, committed 06894c5f9 before `--unmask`. Result:
+  **Washburne 3 of 3, control 0 of 3** (Secretary of State, General-in-Chief, Grant), Fisher one-sided p = 0.050 (the smallest possible at N=3).
+  Disclosure: the reader had read FV-MS18c's AUDIT section and key.md's row first, so this is not blind. It is consistent with the H row (mssEC 43
+  p.[17]) and the C reading at E330, and it adds two unfiled uses as addressee at Memphis. **Proposed key.md wording** (section 7, Lavender row,
+  source cell): `mssEC 43 p.[17] head (413); E169 (5782/1, 9 Sept 1864, period instruction); C at E330 (OR I/39 pt 3 p.379); addressee at Memphis in
+  mssEC 18 9870/1 and 9893/2 (KEY-LAV)`. No change to the meaning or grade.
+- **(b) Tulip: Open (H, p.22 l.14) or Period (S, KEY-TW).** Rule, fixed in the script before the `--tulip` run (PRED written after reading E319): in No. 1 entries Tulip = **Open**
+  when the token is inflected (tuliped, tuliping: the book's "(-ed, -ing)") or the word before it is a verb that takes "open" as complement (remain,
+  keep, be/is/are/was/were/been/being, left, hold, stand, lie, lay); otherwise Tulip = **Period**. Every filed No. 1 occurrence (11; E283 is written
+  twice, "tuslip tulip"): Open at **E287** ("They have just tuliped fire upon [Fort] Harrison" = opened fire) and **E319** ("navigation must remain
+  open for vessels"); Period at E9 E106 E141 E170 E175 E230 E283 E284 E289 (KEY-BLIND read stop at these 9). **11 of 11 read.** Unfiled 9893/1
+  ("For Flora Tulip Knight is now probably driven"): Period. Side check, No. 2 (key-no2.md Tulip = Period, H): the rule gives Period at 108 of 108
+  tokens, so it never fires falsely there. Null: the Open trigger fires on 20 of 2592 random No. 1 key-word tokens (0.008). Not blind (PRED was
+  written after reading E319; E287 was found by the run). **E287 is misread now:** decode.py takes the section 7 row and renders "They have just
+  [.]ed fire" (KEY-TW's search matched only the bare form and missed it). **Proposed key.md wording** (section 7 Tulip row, meaning and source
+  cells): `| Tulip | Period (but Open, as p.22 l.14, when inflected -ed/-ing or after a verb taking "open": E287 "tuliped fire", E319 "remain
+  open") | S | ... KEY-LAV 9 Oct 2026: the context rule reads all 11 filed No. 1 occurrences (Open at E287, E319; Period at 9) and all 108 No. 2
+  tokens; null trigger rate 0.008 |`. decode.py reads one meaning per row, so the FIX job also gives E287 a per-entry note (as E319 already has)
+  reading "tuliped" as Open (-ed), grade H from p.22 l.14.
+- Not done here: key.md and decode.py are not edited (the next FIX job applies both proposals); no image check of 9870/9893.
