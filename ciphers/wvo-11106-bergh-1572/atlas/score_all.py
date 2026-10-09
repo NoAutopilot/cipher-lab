@@ -6,7 +6,8 @@
 Pass files: strip, boxes ('3+4'), labels ('y' | 'd 4' | 'FRAG' | 'OTHERLINE'), note -- the BERGH-GRP reader format
 (PREREG-BERGH-GRP.md). Same reconciliation rule as BERGH-GRP (atlas/score_groups.py): a box is `agreed` iff both passes put it
 in the same group (same set of numbers) with the same normalized labels (trailing '?' dropped, FRAG and OTHERLINE one class);
-otherwise `split`; no arbitration. Key: atlas/strips_all/key.tsv. Nothing here gates (the instrument's gate was BERGH-GRP's
+otherwise `split`; no arbitration. Key: atlas/strips_all/key.tsv (only the strips present in
+the passes). Nothing here gates (the instrument's gate was BERGH-GRP's
 18/19); reported: coverage, A/B agreement, groups of >= 2 boxes, label splits, reader-flagged boxes ('?' or a note), and the
 consistency of this job's agreed boxes with BERGH-GRP's agreed boxes where both read the same box.
 Writes this job's rows (job column) into atlas/group_sign.tsv, keeping every other job's rows; --check exits 1 if stale.
@@ -40,6 +41,10 @@ def main():
     (A, dA), (B, dB) = load(fa), load(fb)
     with open(os.path.join(HERE, 'strips_all', 'key.tsv')) as f:
         key = list(csv.DictReader(f, delimiter='\t'))
+    # key.tsv may hold more lines than this job read (BERGH-ALL2 regenerated it for L01-L22; the L01-L10 rows are byte-identical
+    # to BERGH-ALL1's): score only the strips that appear in either pass
+    seen = {s for s, _ in A} | {s for s, _ in B}
+    key = [k for k in key if k['strip'] in seen]
     rows, agree, multi, miss, flag = [], 0, 0, 0, []
     kinds, labsplit = collections.Counter(), collections.Counter()
     for k in key:
