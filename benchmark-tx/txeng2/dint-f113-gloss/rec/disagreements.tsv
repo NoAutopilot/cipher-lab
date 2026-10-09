@@ -1,0 +1,25 @@
+line	col	A	B	flagged	crop
+f113e_L02	1	-	.	B	benchmark-tx/txeng2/dint-f113-gloss/crops/f113e_L02.jpg
+f113_L03	1	NEW:d-shape	0'	A	benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L03.jpg
+f113_L03	4	NEW:d-shape	0'	AB	benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L03.jpg
+f113_L03	7	NEW:d-shape	0'	AB	benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L03.jpg
+f113_L03	18	NEW:d-shape	0'	AB	benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L03.jpg
+f113_L03	34	NEW:d-shape	0'	A	benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L03.jpg
+f113_L03	40	NEW:d-shape	0'	A	benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L03.jpg
+f113_L03	50	NEW:d-shape	0'	AB	benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L03.jpg
+f113_L03	56	4	0'	AB	benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L03.jpg
+f113_L05	2	f	#	AB	benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L05.jpg
+f113_L05	5	x	NEW:v on a baseline bar	AB	benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L05.jpg
+f113_L05	11	NEW:d-shape	0'	AB	benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L05.jpg
+f113_L05	13	NEW:d-shape	0'		benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L05.jpg
+f113_L05	20	f	#	AB	benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L05.jpg
+f113_L05	21	v'	v	AB	benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L05.jpg
+f113_L05	28	-	.		benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L05.jpg
+f113_L05	31	NEW:d-shape	0'	AB	benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L05.jpg
+f113_L05	46	-	.		benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L05.jpg
+f113_L07	4	v'	v	A	benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L07.jpg
+f113_L07	6	v'	v	AB	benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L07.jpg
+f113_L07	9	f	#	AB	benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L07.jpg
+f113_L07	38	NEW:d-shape	0'	B	benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L07.jpg
+f113_L07	42	T	NEW:heavy N-shape with overbar, possibly corrected	AB	benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L07.jpg
+f113_L09	7	v'	v	A	benchmark-tx/txeng2/dint-f113-gloss/crops/f113_L09.jpg

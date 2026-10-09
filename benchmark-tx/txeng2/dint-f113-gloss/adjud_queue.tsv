@@ -1,0 +1,72 @@
+line	col	kind	candidates	left_neighbours	right_neighbours
+f113e_L02	1	disagree	- | .		f L
+f113e_L02	2	uncertain	f	.	L 4
+f113e_L02	4	uncertain	4	f L	z 0
+f113e_L02	5	uncertain	z	L 4	0
+f113_L03	1	disagree	NEW:d-shape | 0'		w p
+f113_L03	3	uncertain	p	NEW:d-shape w	NEW:d-shape v
+f113_L03	4	disagree	NEW:d-shape | 0'	w p	v sq
+f113_L03	7	disagree	NEW:d-shape | 0'	v sq	. 1
+f113_L03	11	uncertain	z	1 .	-:- 4
+f113_L03	13	uncertain	4	z -:-	0 w
+f113_L03	18	disagree	NEW:d-shape | 0'	+ sq	0 c
+f113_L03	22	uncertain	t	c m	v' 0
+f113_L03	23	uncertain	v'	m t	0 m
+f113_L03	27	uncertain	sq	m c	# a
+f113_L03	32	uncertain	y	c w	L NEW:d-shape
+f113_L03	33	uncertain	L	w y	NEW:d-shape y
+f113_L03	34	disagree	NEW:d-shape | 0'	y L	y m
+f113_L03	35	uncertain	y	L NEW:d-shape	m w
+f113_L03	38	uncertain	sq	m w	L NEW:d-shape
+f113_L03	39	uncertain	L	w sq	NEW:d-shape y
+f113_L03	40	disagree	NEW:d-shape | 0'	sq L	y sq
+f113_L03	41	uncertain	y	L NEW:d-shape	sq 0
+f113_L03	42	uncertain	sq	NEW:d-shape y	0 c
+f113_L03	48	uncertain	v'	1 .	0 NEW:d-shape
+f113_L03	50	disagree	NEW:d-shape | 0'	v' 0	sq v
+f113_L03	56	disagree	4 | 0'	0 c	v L
+f113_L03	57	uncertain	v	c 4	L w
+f113_L03	58	uncertain	L	4 v	w 0
+f113_L05	2	disagree	f | #	v	v' 4
+f113_L05	3	uncertain	v'	v f	4 x
+f113_L05	4	uncertain	4	f v'	x .
+f113_L05	5	disagree	x | NEW:v on a baseline bar	v' 4	. 1
+f113_L05	6	uncertain	.	4 x	1 .
+f113_L05	11	disagree	NEW:d-shape | 0'	sq L	0 NEW:d-shape
+f113_L05	13	disagree	NEW:d-shape | 0'	NEW:d-shape 0	c .
+f113_L05	18	uncertain	sq	1 .	v f
+f113_L05	20	disagree	f | #	sq v	v' 1
+f113_L05	21	disagree	v' | v	v f	1 .
+f113_L05	24	uncertain	#	1 .	p 0
+f113_L05	26	uncertain	0	# p	z .
+f113_L05	27	uncertain	z	p 0	. 1
+f113_L05	28	disagree	- | .	0 z	1 .
+f113_L05	31	disagree	NEW:d-shape | 0'	1 .	m L
+f113_L05	36	uncertain	p	sq #	4 L
+f113_L05	38	uncertain	L	p 4	-:- 0
+f113_L05	39	uncertain	-:-	4 L	0 w
+f113_L05	45	uncertain	z	# 0	. 1
+f113_L05	46	disagree	- | .	0 z	1 .
+f113_L05	51	uncertain	f	w 0	3 c
+f113_L05	56	uncertain	#	1 v	0 sq
+f113_L05	64	uncertain	t	c a	# 0
+f113_L05	65	uncertain	#	a t	0
+f113_L07	1	uncertain	#		1 sq
+f113_L07	4	disagree	v' | v	1 sq	0 v'
+f113_L07	6	disagree	v' | v	v' 0	w y
+f113_L07	7	uncertain	w	0 v'	y f
+f113_L07	8	uncertain	y	v' w	f m
+f113_L07	9	disagree	f | #	w y	m L
+f113_L07	11	uncertain	L	f m	0 c
+f113_L07	21	uncertain	#	. sq	v w
+f113_L07	24	uncertain	9	v w	. 1
+f113_L07	31	uncertain	f	4 1	y 0
+f113_L07	32	uncertain	y	1 f	0 z
+f113_L07	34	uncertain	z	y 0	L 0
+f113_L07	35	uncertain	L	0 z	0 z
+f113_L07	37	uncertain	z	L 0	NEW:d-shape 1
+f113_L07	38	disagree	NEW:d-shape | 0'	0 z	1 sq
+f113_L07	39	uncertain	1	z NEW:d-shape	sq #
+f113_L07	41	uncertain	#	1 sq	T 0
+f113_L07	42	disagree	T | NEW:heavy N-shape with overbar, possibly corrected	sq #	0
+f113_L09	7	disagree	v' | v	0 4	

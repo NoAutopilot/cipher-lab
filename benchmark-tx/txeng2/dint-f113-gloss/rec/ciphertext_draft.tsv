@@ -1,0 +1,187 @@
+line	position	sign	confidence	alt	why
+f113e_L02	1	.	M	A:-	gap
+f113e_L02	2	f	M		agree-flagged
+f113e_L02	3	L	H		agree
+f113e_L02	4	4	M		agree-flagged
+f113e_L02	5	z	M		agree-flagged
+f113e_L02	6	0	H		agree
+f113_L03	1	NEW:d-shape	M	B:0'	differ
+f113_L03	2	w	H		agree
+f113_L03	3	p	M		agree-flagged
+f113_L03	4	NEW:d-shape	M	B:0'	differ
+f113_L03	5	v	H		agree
+f113_L03	6	sq	H		agree
+f113_L03	7	NEW:d-shape	M	B:0'	differ
+f113_L03	8	.	H		agree
+f113_L03	9	1	H		agree
+f113_L03	10	.	H		agree
+f113_L03	11	z	M		agree-flagged
+f113_L03	12	-:-	H		agree
+f113_L03	13	4	M		agree-flagged
+f113_L03	14	0	H		agree
+f113_L03	15	w	H		agree
+f113_L03	16	+	H		agree
+f113_L03	17	sq	H		agree
+f113_L03	18	NEW:d-shape	M	B:0'	differ
+f113_L03	19	0	H		agree
+f113_L03	20	c	H		agree
+f113_L03	21	m	H		agree
+f113_L03	22	t	M		agree-flagged
+f113_L03	23	v'	M		agree-flagged
+f113_L03	24	0	H		agree
+f113_L03	25	m	H		agree
+f113_L03	26	c	H		agree
+f113_L03	27	sq	M		agree-flagged
+f113_L03	28	#	H		agree
+f113_L03	29	a	H		agree
+f113_L03	30	c	H		agree
+f113_L03	31	w	H		agree
+f113_L03	32	y	M		agree-flagged
+f113_L03	33	L	M		agree-flagged
+f113_L03	34	NEW:d-shape	M	B:0'	differ
+f113_L03	35	y	M		agree-flagged
+f113_L03	36	m	H		agree
+f113_L03	37	w	H		agree
+f113_L03	38	sq	M		agree-flagged
+f113_L03	39	L	M		agree-flagged
+f113_L03	40	NEW:d-shape	M	B:0'	differ
+f113_L03	41	y	L		agree-flagged
+f113_L03	42	sq	M		agree-flagged
+f113_L03	43	0	H		agree
+f113_L03	44	c	H		agree
+f113_L03	45	.	H		agree
+f113_L03	46	1	H		agree
+f113_L03	47	.	H		agree
+f113_L03	48	v'	M		agree-flagged
+f113_L03	49	0	H		agree
+f113_L03	50	NEW:d-shape	M	B:0'	differ
+f113_L03	51	sq	H		agree
+f113_L03	52	v	H		agree
+f113_L03	53	L	H		agree
+f113_L03	54	0	H		agree
+f113_L03	55	c	H		agree
+f113_L03	56	4	M	B:0'	differ
+f113_L03	57	v	M		agree-flagged
+f113_L03	58	L	M		agree-flagged
+f113_L03	59	w	H		agree
+f113_L03	60	0	H		agree
+f113_L03	61	#	H		agree
+f113_L03	62	v	H		agree
+f113_L03	63	3	H		agree
+f113_L03	64	m	H		agree
+f113_L05	1	v	H		agree
+f113_L05	2	f	M	B:#	differ
+f113_L05	3	v'	M		agree-flagged
+f113_L05	4	4	M		agree-flagged
+f113_L05	5	x	M	B:NEW:v on a baseline bar	differ
+f113_L05	6	.	M		agree-flagged
+f113_L05	7	1	H		agree
+f113_L05	8	.	H		agree
+f113_L05	9	sq	H		agree
+f113_L05	10	L	H		agree
+f113_L05	11	NEW:d-shape	M	B:0'	differ
+f113_L05	12	0	H		agree
+f113_L05	13	NEW:d-shape	M	B:0'	differ
+f113_L05	14	c	H		agree
+f113_L05	15	.	H		agree
+f113_L05	16	1	H		agree
+f113_L05	17	.	H		agree
+f113_L05	18	sq	M		agree-flagged
+f113_L05	19	v	H		agree
+f113_L05	20	f	M	B:#	differ
+f113_L05	21	v'	M	B:v	differ
+f113_L05	22	1	H		agree
+f113_L05	23	.	H		agree
+f113_L05	24	#	M		agree-flagged
+f113_L05	25	p	H		agree
+f113_L05	26	0	M		agree-flagged
+f113_L05	27	z	M		agree-flagged
+f113_L05	28	.	M	A:-	gap
+f113_L05	29	1	H		agree
+f113_L05	30	.	H		agree
+f113_L05	31	NEW:d-shape	M	B:0'	differ
+f113_L05	32	m	H		agree
+f113_L05	33	L	H		agree
+f113_L05	34	sq	H		agree
+f113_L05	35	#	H		agree
+f113_L05	36	p	M		agree-flagged
+f113_L05	37	4	H		agree
+f113_L05	38	L	M		agree-flagged
+f113_L05	39	-:-	M		agree-flagged
+f113_L05	40	0	H		agree
+f113_L05	41	w	H		agree
+f113_L05	42	1	H		agree
+f113_L05	43	#	H		agree
+f113_L05	44	0	H		agree
+f113_L05	45	z	M		agree-flagged
+f113_L05	46	.	M	A:-	gap
+f113_L05	47	1	H		agree
+f113_L05	48	.	H		agree
+f113_L05	49	w	H		agree
+f113_L05	50	0	H		agree
+f113_L05	51	f	M		agree-flagged
+f113_L05	52	3	H		agree
+f113_L05	53	c	H		agree
+f113_L05	54	1	H		agree
+f113_L05	55	v	H		agree
+f113_L05	56	#	M		agree-flagged
+f113_L05	57	0	H		agree
+f113_L05	58	sq	H		agree
+f113_L05	59	.	H		agree
+f113_L05	60	1	H		agree
+f113_L05	61	.	H		agree
+f113_L05	62	c	H		agree
+f113_L05	63	a	H		agree
+f113_L05	64	t	M		agree-flagged
+f113_L05	65	#	M		agree-flagged
+f113_L05	66	0	H		agree
+f113_L07	1	#	M		agree-flagged
+f113_L07	2	1	H		agree
+f113_L07	3	sq	H		agree
+f113_L07	4	v'	M	B:v	differ
+f113_L07	5	0	H		agree
+f113_L07	6	v'	M	B:v	differ
+f113_L07	7	w	M		agree-flagged
+f113_L07	8	y	M		agree-flagged
+f113_L07	9	f	M	B:#	differ
+f113_L07	10	m	H		agree
+f113_L07	11	L	M		agree-flagged
+f113_L07	12	0	H		agree
+f113_L07	13	c	H		agree
+f113_L07	14	1	H		agree
+f113_L07	15	.	H		agree
+f113_L07	16	#	H		agree
+f113_L07	17	.	H		agree
+f113_L07	18	1	H		agree
+f113_L07	19	.	H		agree
+f113_L07	20	sq	H		agree
+f113_L07	21	#	M		agree-flagged
+f113_L07	22	v	H		agree
+f113_L07	23	w	H		agree
+f113_L07	24	9	M		agree-flagged
+f113_L07	25	.	H		agree
+f113_L07	26	1	H		agree
+f113_L07	27	.	H		agree
+f113_L07	28	0	H		agree
+f113_L07	29	4	H		agree
+f113_L07	30	1	H		agree
+f113_L07	31	f	M		agree-flagged
+f113_L07	32	y	M		agree-flagged
+f113_L07	33	0	H		agree
+f113_L07	34	z	M		agree-flagged
+f113_L07	35	L	M		agree-flagged
+f113_L07	36	0	H		agree
+f113_L07	37	z	M		agree-flagged
+f113_L07	38	NEW:d-shape	M	B:0'	differ
+f113_L07	39	1	M		agree-flagged
+f113_L07	40	sq	H		agree
+f113_L07	41	#	M		agree-flagged
+f113_L07	42	T	M	B:NEW:heavy N-shape with overbar, possibly corrected	differ
+f113_L07	43	0	H		agree
+f113_L09	1	#	H		agree
+f113_L09	2	1	H		agree
+f113_L09	3	.	H		agree
+f113_L09	4	#	H		agree
+f113_L09	5	0	H		agree
+f113_L09	6	4	H		agree
+f113_L09	7	v'	M	B:v	differ
