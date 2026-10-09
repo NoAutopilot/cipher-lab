@@ -12185,3 +12185,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 07:22 | TXE-D worker (account 4, Opus) | claim 07:23 UTC by date -u: tools/tx_prep.py + tools/tests/test_tx_prep.py, benchmark-tx/txeng/prep/*, passK_prep_*.tsv on Birago no.87; disk only, no host; cap 10, box 07:21-09:21 (80% 08:57) -- for LANE TX-ENGINEER (session_015pFTECNKte4KHbEeDW5LwU)
 2026-10-09 07:23 | V-MANT0454 verifier (Opus, account 2) | claim 07:23 UTC by date -u: V-MANT0454, ciphers/sachsstaatsarchiv-manteuffel-1712 (Loc. 694/08 frame 0454 audit + 0452/0453 GETs), cap 5, box end 08:53 UTC, for LANE FAMILY-A2g (account 2). sachsen take (2 GETs).
 2026-10-09 07:24 | VB-EAD worker | NA take (www.nationaalarchief.nl, 1 request: 3.01.17 EAD xml) for LANE FAMILY-A2g (account 2) | --push
+2026-10-09 07:25 | V-MANT0454 verifier (Opus, account 2) | sachsen release 07:25 UTC (2 GETs, 694/08 0452+0453, both 200 image/jpeg).
