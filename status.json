@@ -11253,9 +11253,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM10a)'"
+        "AUDIT.md '## AUDIT (FV-FM10a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-26)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM10a verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -11263,9 +11264,9 @@
       "date": "9 Oct 2026",
       "kind": "reading",
       "claim_scope": "completed-reading",
-      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM10a)' section 4",
-      "reading_version": "FM-R7b 9 Oct 2026 (reading.md), grades as corrected in AUDIT (FV-FM10a) section 3 (Ivory = General-in-Chief H, identity open)",
-      "unresolved_spans": "'pause' (as written); who 'Ivory' (General-in-Chief) denotes",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-26)' section 4",
+      "reading_version": "FM-R7b 9 Oct 2026 (reading.md, FIX-FM12), grades as in AUDIT (FV-FM10a) s.3 and AUDIT 2 (AUD2-LEDGER-26) s.3 (Ivory = General-in-Chief H; = General Halleck, C by OR I/36 pt 3 p.281 relay)",
+      "unresolved_spans": "'pause' (as written)",
       "depth_unread": {
         "names_codes": "0",
         "other": "0"
@@ -11275,8 +11276,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): T. T. Eckert, Washington, to G. D. Sheldon, Fort Monroe, 28 May 1864: the Gloucester route for the York River line; operators to Jamestown, Yorktown, Gloucester and West Point (E318)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 28 May 1864 Eckert told Sheldon at Fort Monroe that the General-in-Chief judged the Gloucester route best, since a hundred men could guard it where a regiment could not guard the other, and placed the operators for the York River line (Logue and Embree to Jamestown, Collings to Yorktown, Homan to Gloucester, Bickford's men at West Point); Butler's opinion on the same route and Sheldon's reply are printed in the Official Records (ser. I vol. 36 pt 3), the telegram itself was not located there, in Plum's Military Telegraph, Grant's papers or the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3 one audit (FV-FM10a), weak: the body is largely clear in the holder's public transcription; not N4: OR I/36 pt 3 and Grant Papers by be-api snippets only, press and RG 107 not searched",
+      "line": "Read at grade H with War Department Cipher No. 1: on 28 May 1864 Eckert told Sheldon at Fort Monroe that General Halleck (the cipher's General-in-Chief) judged the Gloucester route best, since a hundred men could guard it where a regiment could not guard the other, and placed the operators for the York River line (Logue and Embree to Jamestown, Collings to Yorktown, Homan to Gloucester, Bickford's men at West Point); Halleck's opinion itself is printed in the Official Records (ser. I vol. 36 pt 3, p.281) in Sheldon's same-day relay to Butler, but the telegram was not located there, in Plum's Military Telegraph, Grant's papers or the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "N3 two audits (FV-FM10a, AUD2-LEDGER-26), weak: the body is largely clear in the holder's public transcription and its first clause is printed in substance via Sheldon's relay (OR I/36 pt 3 p.281); not N4: NARA RG 107/108 and Grant Papers vol. 11 full text not reached, JSTOR rows open",
       "depth": "D3",
       "completeness": "11 H of 11 code-word groups ('white house' and 'Dunn' plain)",
       "phrases": [
@@ -11287,7 +11288,7 @@
         "Huntington mssEC 25 (obj 5952) p.165, pointer 5709, E318"
       ],
       "depth_sentence": "On 28 May 1864 Eckert ordered the telegraph line from Fort Monroe to White House built by the Gloucester side of the York, assigned operators to Jamestown, Yorktown, Gloucester and West Point, and told Sheldon to start the work as soon as Mackintosh's building party arrived.",
-      "depth_check": "code clause: Spit = Men, Saddle = Guard, Whip = Regiment, Haven = Yorktown, Homer = West Point, White = Report read passim; external (non-statistical): OR I/36 pt 3 p.262 Butler to Sheldon 28 May 'route most easily protected would be across the York at Gloucester Point, thence up to West Point'; Sheldon's printed reply 'Operators will be distributed according to orders' = ledger 5713/1 (Homan and Collings to Haven = Yorktown); sibling 5709/2 'Ivory has given his opinion that the North side of York River is best route'",
+      "depth_check": "code clause: Spit = Men, Saddle = Guard, Whip = Regiment, Haven = Yorktown, Homer = West Point, White = Report read passim; external (non-statistical): OR I/36 pt 3 p.281 Sheldon to Butler 28 May (= ledger 5709/2) 'General Halleck has given his opinion that the north side of York River is best route, as it can be guarded by small force'; p.262 Butler to Sheldon 28 May; pp.321-322 Sheldon to Eckert 29 May (= 5713/1, Homan and Collins, 'Operators will be distributed according to orders'); Plum 1882 vol. 2 'Jamestown Island office was worked by W. N. Embree and W. S. Logue'; image re-checked by AUD2-LEDGER-26",
       "depth_note": "11 H of 11 code-word groups"
     }
   ],

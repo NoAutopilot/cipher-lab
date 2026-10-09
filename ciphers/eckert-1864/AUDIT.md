@@ -11135,3 +11135,96 @@ Monroe exchange traffic of 1863-64; the tool's edition window should include it 
 Requests: hdl.huntington.org 30 (13 CONTENTdm queries, 3 ledger IIIF at 2400 px, 7 key IIIF at 2400 px answered 501, 7 re-fetched at 1400 px);
 archive.org 5 (OR II/6 lending copy 401, Butler III 1 reset + 1 x 502 + 1 x 200 on the alternative id, OR II/6 `warofrebellion0206rootrich` 200),
 1 advancedsearch, 1 metadata (reset); be-api 9 (6 answered, 3 x 502); G3 network calls through prior_work.py (its own count, not logged here).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER-26)
+
+Second verifier AUD2-LEDGER-26 (account 4, for the orchestrator (account-4) and LANE LEDGER (account 1)), 9 Oct 2026, 17:43-18:1x UTC by
+`date -u`; a separate session and account from the reader FM-R7b and the first auditor FV-FM10a (both account 1); this session had not read or
+audited this entry before. Scope: **E318** only (WORK-QUEUE AUD2-LEDGER-26; E314 and E315 are N1, no second audit owed). Nothing decoded beyond
+key look-ups in key.md. Key source: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Committed: this section;
+`fortmonroe/aud2_ledger26_keys.py` + `.out` (key look-up); `fortmonroe/aud2_ledger26_hdl.py` + `.out` (10 CONTENTdm queries the first audit did not
+run, 1 IIIF page to scratch); `fortmonroe/aud2_ledger26_phrases.txt` + `aud2_ledger26_sources.tsv` (tools/print_check.py input; its TSV kept in
+scratch, summarised below); `fortmonroe/aud2_ledger26_orgrep.py` + `.out` (full djvu-text grep of OR I/36 pt 3 and Plum vol. 2, which the first
+audit could reach only by be-api snippets); `fortmonroe/aud2_ledger26_scholar.py` + `.out` (S2, CORE, Chronicling America); two JSTOR-QUEUE.tsv
+rows. Re-derivation: `python3 ciphers/eckert-1864/decode.py --check` -> "reading.md is current" (FIX-FM12 had already landed FV-FM10a's s.5 fixes).
+
+### 1. Re-derivation, key look-ups and image
+- **Key look-ups (independent, by script):** Ivory = General-in-Chief (p.16 l.8), plunge = 1, prolong = 100, spit = Men, saddle = Guard, whip =
+  Regiment, Peru = As soon as, Haven = Yorktown, zodiac = Period, homer = West Point, white (2nd, "white progress") = Report: **11 code groups, all
+  H**. The first "white" ("white house", `plain-at: white#1`) is plain; "Dunn" has a key row only as a page-4 route blind word and stands as plain
+  "done" in running text; the key-row hits on line, work, push, through, office, progress, all are line-indicator words standing as plain words.
+  **No disagreement with FV-FM10a's count (H 11/11).**
+- **Image eye check this session** (IIIF 5709 at 2400 px, two autocontrasted strips of the entry region, scratch only; `tools/iiif_lines.py
+  --image` found 0 lines on the ruled grid, as FV-FM10a found): header "Geo D Sheldon", 12 grid rows, "T. T. Eckert". **Every word matches the
+  transcription**, including "pause" (as written), "Dunn", "Logue", "blissfull", "Cowans", "homer", "white progress"; the clerk's word-count
+  numerals 1-10 stand over the first row.
+
+### 2. New searches (families FV-FM10a did not cover, plus a fresh phrase pass)
+- **OR ser. I vol. 36 pt 3, full djvu text** (fetched this session; FV-FM10a's two downloads failed and it read be-api snippets only). Page by OCR
+  running heads, not seen on the image:
+  - **p.281: Sheldon to Butler, Fort Monroe, 28 May 1864 = ledger 5709/2 (the entry below E318 on the same page), printed in clear: "Since sending
+    my dispatch General Halleck has given his opinion that the north side of York River is best route, as it can be guarded by small force. G. D.
+    SHELDON."** The ledger has "Ivory has given his opinion that the torrent side of York Windsor is best route as it can be saddled by small force".
+    The Official Records editors therefore render the code word **Ivory as "General Halleck"** in the same-day relay of E318's own first clause.
+  - p.281 also prints Sheldon to Eckert, 28 May = ledger 5706/2 (General Carr: "practicable to run a telegraph from Gloucester to West Point if the
+    country was occupied by our forces ... I think the old road from Williamsburg to West Point the best"), the message E318 answers ("unless u know
+    of some very good reason why it should not be done").
+  - p.262 (Butler to Sheldon, the route across the York at Gloucester Point) and pp.321-322 (Sheldon to Eckert, 29 May, = 5713/1: "Butler favors
+    crossing at Yorktown and the north route. J. M. Palmer and party, with Homan and Collins, arrived at Jamestown last night ... Operators will be
+    distributed according to orders"; Bickford's party to West Point the same day) as FV-FM10a cited.
+  - **E318 itself is not printed:** Embree 0, Logue 0, Glazier 0, Cowan 0, "circuit twice" 0, "Gloucester route" 0, "regiment could" 1 (p.700,
+    Burnside's 9th Corps, 8 June, unrelated) in the whole volume.
+- **Plum, Military Telegraph vol. 2, full djvu text:** "Jamestown Island office was worked by W. N. Embree and W. S. Logue" (= E318 "send Logue &
+  Embree to Jamestown"); H. W. Cowan, J. H. Glazier, F. T. Bickford and A. H. Bliss among the operators with the Army of the Potomac; Homan,
+  Collings, "Mcintosh's or some other" building party. A non-statistical check on E318's plain names; no copy of the telegram.
+- **tools/print_check.py** (10 E318 phrases + 1 control): sources OR I/36 pt 3 and Plum vol. 2 (djvu downloaded), Butler Correspondence vol. 4 (cached djvu), Grant Papers vol. 11 (lending-only, be-api: 7 no hits, 4 x 502), Bates 1907 (listed id wrong, 403; the right item `telegraphoffice00baterich` grepped directly: Gloucester, Sheldon, West Point, Embree, Logue, Mackintosh, York River all 0); plus ia-global, Google Books (keyed, country=US), OpenAlex (keyed), CrossRef. **Control:** Butler's "telegraph route most easily protected would be across the York at Gloucester Point" found exact in OR I/36 pt 3 -- the route works. Every E318 phrase **no hits** in OR I/36 pt 3, Plum vol. 2 and Butler IV (Butler IV also lacks the p.281 relay); ia-global 7 no hits, 3 x 502, 1 loose hit ("some very good reason why it should not be done": a 1927 Commons report, unrelated); OpenAlex 12 no hits; Google Books returns only loose-match noise (railway and law journals), the one 1864 item being "send Collings to Yorktown and Homan to Gloucester" -> 4 OR serial-set volumes of 1891, i.e. OR I/36 pt 3's loose match on Homan/Collins/Yorktown/Gloucester (pp.321-322), which the full-text grep above shows is not E318; Semantic Scholar 429 on the first call (stopped, not retried); CrossRef 1 keyword query, noise.
+- **Huntington CONTENTdm** (10 new CISOSEARCHALL queries, all pointers, hdl take/release in ROOM.md): "Ivory opinion" 1, "Cowans" 1, "blissfull
+  Glazier" 1, "twice a day progress" 1 (all 5709 own); "Bickford operators" 6, "building party" 14, "Mackintosh party" 18, "Gloucester best" 9
+  (5703, 5706, 5713, 5740, 5741 context of 27 May-12 June; the rest other dates; none a copy of E318); "regiment could not" 21 (other dates and
+  matter). **"Ivory" 30 hits:** the code word stands for the General-in-Chief in Washington traffic through 1864, e.g. 5779 (11 Aug, "a despatch
+  preparing by ivory", which the ledger reading of the Washington book renders "[General-in-Chief]") and 5780 (20 Aug, Hilton Head "for Ivory").
+  **No clear copy of E318** in the holder's transcriptions.
+- **Scholarship:** Semantic Scholar (keyed, 1.1 s): 3 queries, nothing on the York River line; 1 answered 429 (not retried). CORE v3 (keyed): 4
+  queries, bag-of-words noise only. **Press** (Chronicling America, loc.gov JSON, 1864): 1 query 299 keyword pages (not read; no phrase match on
+  that route), 1 answered 503 (not retried). E318 is an internal telegraph-construction order; no route by which it would reach the press is known.
+- **Sender's and recipient's printed papers:** Eckert and Sheldon have no printed correspondence beyond the OR and Plum; Bates, *Lincoln in the
+  Telegraph Office* (Eckert's own recollections), grepped in full (s.2 print_check line): no E318 matter. Halleck's opinion reaches the OR only through Sheldon's relay.
+- **JSTOR-QUEUE.tsv:** 2 rows queued 9 Oct 2026 (family (i) Eckert AND Sheldon AND Gloucester AND "West Point"; family (ii) "come in circuit twice a
+  day"); they do not block (24 Sept 2026 rule).
+- **Not searched / unreachable:** NARA RG 107 (no NARA key); Halleck's letterbooks (NARA RG 108); Grant Papers vol. 11 full text (lending-only;
+  be-api in print_check only).
+
+### 3. "Ivory" identity (open in FV-FM10a) -- tested
+- Key book: Ivory = General-in-Chief, H (p.16 l.8, one of eight synonyms on that line block; Benjamin/Bennet are a separate General in Chief row).
+- Period usage of the code in this cipher in 1864: the General-in-Chief code signs Washington telegrams that the OR prints as Halleck's (E48, 5 May
+  1864 = OR I/37 pt 1 p.891, "H. W. HALLECK"; NOTES rows E93 and E99 "General-in-Chief = Halleck"), and is kept distinct from the code for "Maj
+  Genl U.S. Grant" in the same traffic. Grant was General-in-Chief in title from March 1864 but in the field on 28 May; Halleck, Chief of Staff in
+  Washington, is the man the code names in this ledger.
+- **Decisive:** OR I/36 pt 3 p.281 prints the same-day relay of this very opinion (5709/2) with "Ivory" rendered "General Halleck".
+- **Grade:** the value General-in-Chief stays **H** (key). The identity **Halleck** is **C for the 5709/2 token** (printed clear of that message)
+  and, for E318, **C by the printed relay** of the same opinion on the same day; it is no longer open. Not asserted beyond that: the print is the
+  editors' rendering of Sheldon's relay, not a clear copy of E318.
+
+### 4. Class and depth
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E318 | **N3 (held, weak)** | period | **D3 (held)**: H 11 of 11 code groups, no unread gap; external non-statistical: OR I/36 pt 3 p.281 (Sheldon's relay of the same opinion, "General Halleck"; Carr's opinion, 5706/2), p.262 (Butler), pp.321-322 (5713/1); Plum vol. 2 (Embree and Logue worked Jamestown Island); image re-checked | E318 itself not located in print or in the holder's clear books; **its first clause is printed in substance** (Halleck's opinion that the north side of the York is the best route, guardable by a small force) through Sheldon's relay on p.281; the operator orders, Mackintosh's party and the circuit report are not |
+
+- Not N4: NARA RG 107/108 and the Grant Papers vol. 11 full text not reached; JSTOR rows open.
+- **Safe sentence** (FV-FM10a's, corrected): "Read at grade H with War Department Cipher No. 1: on 28 May 1864 Eckert told Sheldon at Fort Monroe
+  that General Halleck (the cipher's General-in-Chief) judged the Gloucester route best, since a hundred men could guard it where a regiment could
+  not guard the other, and placed the operators for the York River line (Logue and Embree to Jamestown, Collings to Yorktown, Homan to Gloucester,
+  Bickford's men at West Point); Halleck's opinion itself is printed in the Official Records (ser. I vol. 36 pt 3, p.281) in Sheldon's same-day
+  relay to Butler, but the telegram was not located there, in Plum's Military Telegraph, Grant's papers or the Huntington's full-text search
+  (searched 9 Oct 2026)." Depth sentence (D3): FV-FM10a's, kept.
+- **Unsafe:** any "first", "new", "unpublished", "unread" for E318; "Halleck's opinion was unknown" or any claim that the route opinion is
+  unprinted; "Ivory = Grant".
+
+### 5. Postmortem and fixes (not applied here; reading.md is decode.py output)
+- FV-FM10a's "identity open" and "Butler's opinion and Sheldon's reply are printed" understated the print: the OR prints the relay naming Halleck
+  (p.281). The status.json row (results/301) is corrected here (audit_status, line, gap, depth_check, unresolved_spans); the reading is unchanged.
+- For the next FIX job: E318 header/note may add "Ivory = General Halleck (C, OR I/36 pt 3 p.281, Sheldon's relay 5709/2)"; SO-ECKERT-E318's
+  prompt "Context we already know" may add p.281 (no count or class changed, so the SECOND-OPINIONS-QUEUE.tsv row is left as filed).
+- Lead (not this entry, I): OR pp.321-322 prints 5713/1's "Mack and party" as "J. M. Palmer and party"; whether "Mack" is a code word or the
+  editors' substitution is for whoever audits 5713. "blissfull" (plain, as written) may be the operator A. H. Bliss (Plum vol. 2): lead only, I.
+Requests: hdl.huntington.org 11 (10 CISOSEARCHALL, 1 IIIF; all 200); archive.org 7 (print_check 4 incl. one 403 on a wrong Bates id; 1 metadata, 1 advancedsearch, 1 Bates djvu); be-api 33 (several 502); www.googleapis.com 11; api.openalex.org 12; api.semanticscholar.org 5 (2 x 429); api.crossref.org 1; api.core.ac.uk 4; www.loc.gov 2 (1 x 503).

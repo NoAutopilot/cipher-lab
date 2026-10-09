@@ -1,0 +1,13 @@
+# AUD2-LEDGER-26 (9 Oct 2026): E318 decoded phrases (plain-word stretches and code-expanded clauses), plus one positive control per route
+opinion is that the Gloucester route is the best
+one hundred men can guard that line
+where a regiment could not the other
+some very good reason why it should not be done
+let the work be commenced as soon as
+push through fast as can
+hold Blissfull and Glazier ready for White House
+send Collings to Yorktown and Homan to Gloucester
+Bickford has some operators with him
+let him come in circuit twice a day
+# control (OR I/36 pt 3 p.262, known present via be-api snippet)
+telegraph route most easily protected would be across the York at Gloucester Point
