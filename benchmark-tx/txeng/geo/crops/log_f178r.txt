@@ -1,0 +1,11 @@
+ciphers/nevers-birago-fr3251-1572/harvest/f178r/src_ark_12148_btv1b9060248g_f181_4700_3720_3050_620.jpg (local): region 3050x620, 3 lines, 3 bands x 3 segments; pitch 0 distance 0 prominence 0.0
+  centres (region y): 95 215 355
+  band L01: slope fit y = 64.9 + 0.05117*x (9 window peaks kept); drift over the region +156 px (pitch 130)
+  band L02: slope fit y = 162.3 + 0.06410*x (10 window peaks kept); drift over the region +196 px (pitch 130)
+  band L03: slope fit y = 306.6 + 0.05374*x (10 window peaks kept); drift over the region +164 px (pitch 130)
+  check-boxes f178r: 110 boxes, box rule: cut 37 (33.6%), admitted to another band 22 (20.0%); band-extent 0.1, mask on (margin 52) -> benchmark-tx/txeng/geo/crops/band_check.tsv
+    L01 (atlas line 1): 33 boxes, cut 15, admitted 11
+    L02 (atlas line 2): 31 boxes, cut 11, admitted 11
+    L03 (atlas line 3): 46 boxes, cut 11, admitted 0
+  overlap note -> benchmark-tx/txeng/geo/crops/crops_note.md: segments of a line overlap by 350 native px (the images you read are at 2x, so 700 px in each image), about 6 signs (median sign width 60 px, from the atlas boxes); a sign at the right edge of s1 and the left edge of s2 is ONE sign: the last 700 px of s1 and the first 700 px of s2 show the same ink, read it once.
+  wrote 9 crops and benchmark-tx/txeng/geo/crops/manifest.json

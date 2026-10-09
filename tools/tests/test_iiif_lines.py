@@ -8,6 +8,10 @@
 3. --groups (4) and --follow-slope (5, MONT-RECROP: a sloping line a fixed-y cut loses and a sloped cut keeps).
 6. Size cap: with the cap lowered, the fetched reference copy is downscaled and renamed, the crops are not.
 7. Size cap must not touch a src_* copy already tracked by git (RUN3-ESSHR, 4 Oct 2026).
+8. TXE-B (9 Oct 2026): two lines whose descenders cross the midpoint. Midpoint bands cut them (--check-boxes > 0%);
+   --band-extent keeps every box inside its band (0% cut, 0% admitted, box and ink rules, with and without
+   --mask-neighbours); --overlap-note states the configured overlap (150 px, 5 signs of 30 px); the mask leaves no
+   ghost rim of a removed neighbour stroke.
 Run: python3 tools/tests/test_iiif_lines.py"""
 import contextlib, io, json, os, random, shutil, sys, tempfile
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -116,6 +120,55 @@ try:
     r0 = run('--image', pg, '--out', os.path.join(tmp, 'sd'), '--prefix', 'd', '--max-width', '900', '--distance', '40')
     check(all('slope_fit' not in e for e in r0['entries']) and r0['entries'][0]['box'] == [0, r0['bands'][0][0], 900,
           r0['bands'][0][1]], 'default (no --follow-slope) unchanged: fixed boxes, no slope_fit')
+
+    # 8. TXE-B: --band-extent, --check-boxes, --overlap-note
+    W8 = 3 * 1250 - 2 * 150                         # three segments whose real overlap equals the configured 150 px
+    im = Image.new('RGB', (W8, 320), (235, 225, 200)); d = ImageDraw.Draw(im)
+    rows8 = []
+    for ln, cy in (('1', 100), ('2', 220)):
+        k = 0
+        for x in range(120, W8 - 150, 60):
+            k += 1
+            bot = cy + (85 if ln == '1' and k % 3 == 0 else 20)   # every third sign of line 1 has a long descender
+            d.ellipse([x, cy - 20, x + 29, cy + 20], fill=(40, 30, 20))   # widest at cy: the slope tracker peaks there
+            if bot > cy + 20:
+                d.rectangle([x + 10, cy + 15, x + 19, bot], fill=(40, 30, 20))
+            rows8.append(('syn8_%s_%03d' % (ln, k), 'syn8', ln, str(k), str(x), str(cy - 20), '30', str(bot - cy + 21)))
+    pg8 = os.path.join(tmp, 'desc.jpg'); im.save(pg8, quality=95)
+    st = os.path.join(tmp, 'signs.tsv')
+    with open(st, 'w') as f:
+        f.write('sid\tpage\tline\tpos\tx\ty\tw\th\n' + ''.join('\t'.join(r) + '\n' for r in rows8))
+    base8 = ['--image', pg8, '--prefix', 'syn8', '--centres', '100,220', '--max-width', '1250', '--overlap', '150',
+             '--check-boxes', st]
+    r_old = run(*base8, '--out', os.path.join(tmp, 'b0'), '--dry-run')
+    cut_old = r_old['check']['total']['cut'] / r_old['check']['total']['boxes']
+    check(cut_old > 0.1, f'midpoint bands cut the synthetic descenders ({cut_old:.1%} of boxes)')
+    for extra in ([], ['--mask-neighbours']):
+        r_new = run(*base8, '--out', os.path.join(tmp, 'b1'), '--band-extent', '0.1', *extra, '--overlap-note')
+        t = r_new['check']['total']
+        check(t['cut'] == 0 and t['admitted'] == 0 and r_new['check']['rule'] == 'ink',
+              f"--band-extent 0.1 {' '.join(extra)}: ink rule cut {t['cut']}, admitted {t['admitted']} of {t['boxes']}")
+        top, bot, _ = r_new['bands'][0]
+        check(all(int(r[5]) >= top and int(r[5]) + int(r[7]) <= bot for r in rows8 if r[2] == '1'),
+              f'every line-1 box inside its band {top}-{bot}')
+        check(all(e.get('band_extent', {}).get('frac') == 0.1 for e in r_new['entries']), 'manifest records band_extent')
+    note = open(os.path.join(tmp, 'b1', 'crops_note.md')).read()
+    run(*base8, '--out', os.path.join(tmp, 'b3'), '--overlap-note', '--note-scale', '2', '--dry-run')
+    note2 = open(os.path.join(tmp, 'b3', 'crops_note.md')).read()
+    check('at 2x, so 300 px in each image' in note2, '--note-scale 2 states the overlap in the reader images (300 px)')
+    check('overlap by 150 native px' in note and 'about 5 signs' in note and 'is ONE sign' in note,
+          '--overlap-note states the configured 150 px overlap, about 5 signs')
+    bc = open(os.path.join(tmp, 'b1', 'band_check.tsv')).read().splitlines()
+    check(bc[0].startswith('prefix\tband') and bc[-1].split('\t')[1] == 'all', 'band_check.tsv has a total row')
+    # the mask removes line 2's ink from band 1's crop without a ghost rim: no pixel there darker than mid-grey
+    m1 = [e for e in r_new['entries'] if e['band'] == 1 and e['segment'] == 1][0]
+    g = Image.open(os.path.join(tmp, 'b1', m1['crop'])).convert('L')
+    lo = [g.getpixel((x, y)) for x in range(0, g.width, 3) for y in range(g.height - 12, g.height)]
+    check(min(lo) > 150, f'masked band-1 crop: no neighbour ink or rim in its bottom rows (darkest {min(lo)})')
+    # the box rule (sloped bands) agrees on this page
+    r_sl = run(*base8, '--out', os.path.join(tmp, 'b2'), '--band-extent', '0.1', '--follow-slope', '300', '--dry-run')
+    check(r_sl['check']['rule'] == 'box' and r_sl['check']['total']['cut'] == 0,
+          f"--follow-slope: box rule, cut {r_sl['check']['total']['cut']}")
 
     out = os.path.join(tmp, 'cap'); os.makedirs(out)
     shutil.copy(page, os.path.join(out, 'src_test_full.jpg'))

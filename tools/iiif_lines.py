@@ -34,7 +34,8 @@ Steps:
      and a src_*.jpg already committed to git is never touched (RUN3-ESSHR, 4 Oct 2026).
   --centres y1,y2,... gives the line centres (region y px) by eye and skips step 3, for a short block whose profile the
      autocorrelation misreads (check the --debug overlay first; GAPS4-nevers-birago, 2 Oct 2026).
-  --debug writes OUT/<prefix>_lines_debug.jpg: the region at 1600 px wide with centres (red) and band edges (blue).
+  --debug writes OUT/<prefix>_lines_debug.jpg: the region at 1600 px wide with centres (red) and band edges (blue);
+     with --follow-slope/--deskew also each segment's cut strip (green, mask margin included).
   --dry-run prints the detected lines and writes nothing but the cached source.
   --groups GAP [--group-lines 3,8] [--group-ink 120] [--group-upscale 3]: split each band into ink pieces at runs of
      >= GAP blank columns in the band's core rows, one crop per piece (<prefix>_Lnn_gNN.jpg), and print the piece count
@@ -58,6 +59,39 @@ Steps:
      and white out (paper colour) each 8-connected ink component (pixels darker than --ink) with less than KEEP of its
      pixels inside the line band. Neighbour-line ink and bleed go; a mark of this line that reaches past the band edge is
      kept whole instead of clipped. Pixels are only removed, never added; the manifest records removed/kept counts.
+     The removed components' 2 px rim goes too (TXE-B, 9 Oct 2026: their anti-aliased edges, lighter than --ink, had
+     stayed as ghost outlines a reader could take for signs), and the fill is the local paper shade (mean of the
+     non-ink pixels within 20 px), not one flat colour that left white silhouettes on shaded paper; ink of a kept
+     component is never whitened.
+  --band-extent [FRAC] (TXE-B, 9 Oct 2026; research/TX-TAXONOMY-2026-10-09.md class 2): after the centres are found,
+     each band edge is moved from the midpoint between two centres to the row-profile minimum between them when that
+     lies farther out, then grown FRAC x pitch further (default 0.1, never past the neighbouring centre), so this line's
+     descenders and ascenders stay inside. Bands of neighbours then overlap; give --mask-neighbours with it so a grown
+     band carries no neighbour-line ink. The manifest entry records band_extent (frac, band rows, height). Lesson:
+     Birago no.87 (fr.3251 f.178v) fixed midpoint bands cut 14% of the hand's boxes top or bottom, error 9.5% on those
+     against 5.2% inside, half the d/s confusions on cut descenders. Default 0.1 from the read-free gate on f178v (ink
+     rule, with --mask-neighbours): FRAC 0.1 cut 0.6% / admitted 1.3%; 0.35 (the PREREG's first guess) admitted 34%.
+  --check-boxes signs.tsv [--check-page NAME] [--check-only]: read-free band report against an atlas box file (columns
+     sid, page, line, x, y, w, h; boxes in the coordinates of the source image the region is cut from, i.e. canvas
+     minus the fetched region origin, as tools/tx_taxonomy.py load_geometry uses them; with --image and --region the
+     region origin is subtracted). Each atlas line goes to the band whose centre is nearest its boxes. A box is CUT
+     when its top or bottom lies outside its own band (with --mask-neighbours: outside the crop's rows, or less than
+     --mask-keep of its height inside the band, so the mask would white it out); a box is ADMITTED to another band
+     when at least --mask-keep of its height lies inside that band (box height stands in for the component's ink
+     share). That box rule is a proxy; for fixed (unsloped) bands the report uses the INK rule instead: each band's
+     crop (band +/- mask margin) is simulated on the page pixels, with the very component mask --mask-neighbours
+     applies, and a box is CUT when under 90% of its ink pixels (darker than --ink) survive in its own band's crop,
+     ADMITTED to another band when at least --mask-keep of its ink survives there (a detached descender stroke the
+     mask would erase counts as cut here, which the box rule cannot see). Sloped bands (--follow-slope/--deskew) get the
+     box rule, evaluated at the box's centre x on the fit the crop was cut on (whole-line, or with --slope-local the
+     segment's local fit); the TSV's band_extent column names the rule.
+     Printed and written to OUT/band_check.tsv (one row per band and a total). It never reads a transcription or a
+     truth file; it is a dev gate for band parameters. --check-only (or --dry-run) writes no crops.
+  --overlap-note: OUT/crops_note.md gets one line per prefix stating the real segment overlap in native px and in
+     signs (median box width of the page from --check-boxes, else the median ink-run width of the band cores), to be
+     pasted into a pass brief, never typed by hand (the Birago 1572 brief said "about 100 px at 2x" while the boxes
+     overlapped 425 native px, 5-6 signs, and a reader de-duplicated by sequence and deleted 10 signs). --note-scale K
+     states the pixels at the scale the reader sees (K=2 for crops upscaled 2x).
   --views N|LIST [--views-of CROP ...] (TX-VIEWS, 4 Oct 2026; research/TRANSCRIPTION-PRACTICE-2026-10-04.md #1, #10, #14):
      write altered views of every crop for multi-view voting, OUT/views/<view>/<crop name>, one manifest entry each under
      "iiif_lines_views". N takes the first N of the default order pad,s125,warp,s080,contrast; LIST names them. pad = the
@@ -171,6 +205,220 @@ def bands(centres, height, lines_per_crop):
         [min(height, centres[-1] + pitch // 2)]
     return [(b[i], b[min(i + lines_per_crop, len(centres))], min(lines_per_crop, len(centres) - i))
             for i in range(0, len(centres), lines_per_crop)]
+
+
+def extent_bands(gray, x0, x1, centres, height, lines_per_crop, frac, ink=170):
+    """--band-extent: band edges at the row-profile minimum between two centres when it lies farther out than the
+    midpoint, plus frac x pitch, clamped to the neighbouring centre (and to the region). Returns bands like bands()."""
+    if not centres:
+        return []
+    pitch = int(np.median(np.diff(centres))) if len(centres) > 1 else 100
+    sm = max(1, pitch // 10)
+    p = profile(gray, x0, x1, ink, sm)
+    grow = int(round(frac * pitch))
+    tops, bots = [], []
+    for i, c in enumerate(centres):
+        if i == 0:
+            tops.append(max(0, c - pitch // 2 - grow))
+        else:
+            a, b = centres[i - 1], c
+            mid = (a + b) // 2
+            lo, hi = a + max(1, (b - a) // 4), b - max(1, (b - a) // 4)
+            mn = lo + int(np.argmin(p[lo:hi])) if hi > lo else mid
+            tops.append(max(a, min(mid, mn) - grow))
+        if i == len(centres) - 1:
+            bots.append(min(height, c + pitch // 2 + grow))
+        else:
+            a, b = c, centres[i + 1]
+            mid = (a + b) // 2
+            lo, hi = a + max(1, (b - a) // 4), b - max(1, (b - a) // 4)
+            mn = lo + int(np.argmin(p[lo:hi])) if hi > lo else mid
+            bots.append(min(b, max(mid, mn) + grow))
+    out = []
+    for i in range(0, len(centres), lines_per_crop):
+        j = min(i + lines_per_crop, len(centres)) - 1
+        out.append((tops[i], bots[j], j - i + 1))
+    return out
+
+
+def read_boxes(path, page, dx=0, dy=0):
+    """Atlas boxes of one page: [(line, x, y, w, h)] with the region origin (dx, dy) subtracted."""
+    import csv
+    rows = []
+    with open(path, newline='') as f:
+        for r in csv.DictReader(f, delimiter='\t'):
+            if r.get('page') == page:
+                rows.append((r['line'], int(float(r['x'])) - dx, int(float(r['y'])) - dy, int(float(r['w'])),
+                             int(float(r['h']))))
+    return rows
+
+
+def band_geoms(bb, centres, lines_per_crop, fits, mm, segs=None):
+    """Per band: functions of x giving (centre, band top, band bottom, crop top, crop bottom) in region rows. A sloped
+    band with --slope-local uses, at x, the local fit of the segment whose middle is nearest x (the fit that crop was
+    cut on)."""
+    g = []
+    for bi, (top, bot, nl) in enumerate(bb, 1):
+        if fits and bi in fits:
+            f = fits[bi]
+            h = f['half_height']
+
+            def fn(x, f=f, h=h):
+                a_, b_ = f['a'], f['b']
+                if f.get('local') and segs:
+                    sx0, sx1 = min(segs, key=lambda s_: abs((s_[0] + s_[1]) / 2 - x))
+                    a_, b_ = local_fit(f['peaks'], sx0, sx1, f['win'], a_, b_)
+                y = a_ + b_ * x
+                return y, y - h, y + h, y - h - mm, y + h + mm
+            g.append(fn)
+        else:
+            c = centres[(bi - 1) * lines_per_crop:(bi - 1) * lines_per_crop + nl]
+            cy = sum(c) / len(c)
+            g.append(lambda x, cy=cy, t=top, b=bot: (cy, t, b, t - mm, b + mm))
+    return g
+
+
+def check_boxes(boxes, geoms, keep=0.5, masked=False):
+    """Read-free band report: per band, own boxes cut and other-line boxes admitted (see --check-boxes in the doc).
+    Returns (rows, total, line_to_band)."""
+    by_line = {}
+    for b in boxes:
+        by_line.setdefault(b[0], []).append(b)
+    l2b = {}
+    for ln, bs in by_line.items():
+        d = [np.median([abs(y + h / 2 - g(x + w / 2)[0]) for _, x, y, w, h in bs]) for g in geoms]
+        l2b[ln] = int(np.argmin(d)) + 1 if d else None
+
+    def inside(y, h, t, b):
+        return max(0.0, min(y + h, b) - max(y, t)) / max(1, h)
+    rows = {bi: dict(band=bi, lines=[], boxes=0, cut=0, admitted=0) for bi in range(1, len(geoms) + 1)}
+    for ln, bi in l2b.items():
+        rows[bi]['lines'].append(ln)
+    n = cut = adm = 0
+    for ln, x, y, w, h in boxes:
+        own = l2b[ln]
+        cx = x + w / 2
+        _, t, b, vt, vb = geoms[own - 1](cx)
+        if masked:
+            c = inside(y, h, t, b) < keep or y < vt or y + h > vb
+        else:
+            c = y < t or y + h > b
+        rows[own]['boxes'] += 1; n += 1
+        if c:
+            rows[own]['cut'] += 1; cut += 1
+        hit = False
+        for bi, g in enumerate(geoms, 1):
+            if bi == own:
+                continue
+            _, t2, b2, _, _ = g(cx)
+            if inside(y, h, t2, b2) >= keep:
+                rows[bi]['admitted'] += 1; hit = True
+        adm += hit
+    total = dict(band='all', lines=sorted(l2b, key=lambda v: int(v) if str(v).isdigit() else 0), boxes=n, cut=cut,
+                 admitted=adm)
+    return [rows[k] for k in sorted(rows)], total, l2b
+
+
+def check_ink(gray, boxes, bb, centres, lines_per_crop, x0, x1, ink, mm, keep, masked, l2b, cut_below=0.9):
+    """Ink rule for fixed (unsloped) bands: simulate each band's crop on the page pixels -- rows band +/- mm, and with
+    masked the same component mask as mask_neighbours() -- and count, per box, the share of its ink pixels (darker than
+    ink, whole page) that survive in a band's crop. Own band: CUT when under cut_below survive. Other band: ADMITTED
+    when at least keep survive. Returns (rows, total) like check_boxes()."""
+    H = gray.shape[0]
+    pm = gray < ink
+    tot = [max(1, int(pm[max(0, y):max(0, y + h), max(0, x):max(0, x + w)].sum())) for _, x, y, w, h in boxes]
+    rows = {bi: dict(band=bi, lines=[], boxes=0, cut=0, admitted=0) for bi in range(1, len(bb) + 1)}
+    for ln, bi in l2b.items():
+        rows[bi]['lines'].append(ln)
+    surv = {}
+    for bi, (top, bot, nl) in enumerate(bb, 1):
+        ct, cb = max(0, top - mm), min(H, bot + mm)
+        m = pm[ct:cb, x0:x1].copy()
+        if masked:
+            lab, n = label_components(m)
+            if n:
+                total = np.bincount(lab.ravel(), minlength=n + 1)
+                ins = np.bincount(lab[max(0, top - ct):max(0, bot - ct)].ravel(), minlength=n + 1)
+                drop = np.where((total > 0) & (ins < keep * total))[0]
+                drop = drop[drop > 0]
+                m[np.isin(lab, drop)] = False
+        for k, (_, x, y, w, h) in enumerate(boxes):
+            ya, yb = max(ct, y), min(cb, y + h)
+            if yb <= ya:
+                continue
+            xa, xb = max(x0, x), min(x1, x + w)
+            surv[(k, bi)] = int(m[ya - ct:yb - ct, xa - x0:xb - x0].sum()) / tot[k]
+    n = cut = adm = 0
+    for k, (ln, x, y, w, h) in enumerate(boxes):
+        own = l2b[ln]
+        rows[own]['boxes'] += 1; n += 1
+        if surv.get((k, own), 0) < cut_below:
+            rows[own]['cut'] += 1; cut += 1
+        hit = False
+        for bi in range(1, len(bb) + 1):
+            if bi != own and surv.get((k, bi), 0) >= keep:
+                rows[bi]['admitted'] += 1; hit = True
+        adm += hit
+    total = dict(band='all', lines=sorted(l2b, key=lambda v: int(v) if str(v).isdigit() else 0), boxes=n, cut=cut,
+                 admitted=adm)
+    return [rows[k] for k in sorted(rows)], total
+
+
+def ink_run_width(gray, bb, x0, x1, ink, core=0.55):
+    """Median width of ink runs along the core rows of every band (the sign-width fallback for --overlap-note)."""
+    ws = []
+    for top, bot, _ in bb:
+        h = bot - top
+        c0, c1 = top + int(h * (1 - core) / 2), bot - int(h * (1 - core) / 2)
+        col = (gray[c0:c1, x0:x1] < ink).any(axis=0).astype(np.int8)
+        d = np.diff(np.concatenate(([0], col, [0])))
+        st, en = np.where(d == 1)[0], np.where(d == -1)[0]
+        ws += [int(e - s_) for s_, e in zip(st, en) if e - s_ >= 3]
+    return float(np.median(ws)) if ws else None
+
+
+def overlap_sentence(segs, sign_w, src_w, scale=1.0):
+    """One sentence for a pass brief: the actual overlap of neighbouring segments in native px and in signs."""
+    if len(segs) < 2:
+        return 'each line is one crop (no segments, no overlap).', 0
+    ov = [segs[i][1] - segs[i + 1][0] for i in range(len(segs) - 1)]
+    o = int(np.median(ov))
+    k = o / sign_w if sign_w else None
+    ks = f'about {k:.0f} signs (median sign width {sign_w:.0f} px, {src_w})' if k else 'sign width unknown'
+    sc = f'{scale:g}x' if scale != 1 else 'native resolution'
+    oi = int(round(o * scale))
+    return (f'segments of a line overlap by {o} native px (the images you read are at {sc}, so {oi} px in each image), '
+            f'{ks}; a sign at the right edge of s1 and the left edge of s2 is ONE sign: the last {oi} px of s1 and the '
+            f'first {oi} px of s2 show the same ink, read it once.'), o
+
+
+def write_note(out, prefix, sentence):
+    p = os.path.join(out, 'crops_note.md')
+    lines = []
+    if os.path.exists(p):
+        lines = [l for l in open(p).read().splitlines() if l.strip() and not l.startswith(f'- {prefix}: ')
+                 and not l.startswith('# ')]
+    lines.append(f'- {prefix}: {sentence}')
+    with open(p, 'w') as f:
+        f.write('# Crops note (written by tools/iiif_lines.py --overlap-note; paste after the pass brief)\n\n'
+                + '\n'.join(lines) + '\n')
+    return p
+
+
+def write_band_check(out, prefix, rows, total, extent, masked):
+    p = os.path.join(out, 'band_check.tsv')
+    keep = []
+    if os.path.exists(p):
+        keep = [l for l in open(p).read().splitlines()[1:] if l and not l.startswith(prefix + '\t')]
+    with open(p, 'w') as f:
+        f.write('prefix\tband\tlines\tboxes\tcut\tcut_share\tadmitted\tadmitted_share\tband_extent\tmasked\n')
+        for l in keep:
+            f.write(l + '\n')
+        for r in rows + [total]:
+            nb = max(1, r['boxes'])
+            f.write(f"{prefix}\t{r['band']}\t{','.join(map(str, r['lines']))}\t{r['boxes']}\t{r['cut']}\t"
+                    f"{r['cut'] / nb:.3f}\t{r['admitted']}\t{r['admitted'] / nb:.3f}\t{extent}\t{int(masked)}\n")
+    return p
 
 
 def segments(x0, x1, max_width, overlap):
@@ -311,7 +559,38 @@ def label_components(mask):
     return lab, len(ids)
 
 
-def mask_neighbours(crop, band_top, band_bot, ink, keep=0.5):
+def _dilate(m, r):
+    """Boolean dilation by r px (square), numpy shifts only."""
+    out = m.copy()
+    h, w = m.shape
+    for dy in range(-r, r + 1):
+        for dx in range(-r, r + 1):
+            if dy or dx:
+                out[max(0, dy):h + min(0, dy), max(0, dx):w + min(0, dx)] |= \
+                    m[max(0, -dy):h + min(0, -dy), max(0, -dx):w + min(0, -dx)]
+    return out
+
+
+def _box_sum(a, r):
+    """Sum over a (2r+1)^2 window, edges clipped (cumulative sums, numpy only)."""
+    c = np.pad(a, ((r + 1, r), (r + 1, r))).cumsum(0).cumsum(1)
+    return c[2 * r + 1:, 2 * r + 1:] - c[:-2 * r - 1, 2 * r + 1:] - c[2 * r + 1:, :-2 * r - 1] + c[:-2 * r - 1, :-2 * r - 1]
+
+
+def local_paper(arr, ink_mask, r=20):
+    """Per-pixel paper colour: the mean of the non-ink pixels within r px (normalised box filter), so a whited-out
+    stroke takes the shade of the paper around it instead of one flat colour that leaves a silhouette."""
+    ok = (~ink_mask).astype(float)
+    n = _box_sum(ok, r)
+    out = np.empty(arr.shape, float)
+    flat = np.median(arr[~ink_mask], axis=0) if (~ink_mask).any() else np.array([255.0, 255.0, 255.0])
+    for ch in range(arr.shape[2]):
+        sm = _box_sum(arr[..., ch] * ok, r)
+        out[..., ch] = np.where(n > 0, sm / np.maximum(n, 1), flat[ch])
+    return out
+
+
+def mask_neighbours(crop, band_top, band_bot, ink, keep=0.5, halo=2):
     """--mask-neighbours: white out (paper colour) every ink component of the crop whose share of pixels inside rows
     band_top..band_bot is below KEEP -- ink belonging to the line above or below that the crop's margin took in.
     A component mostly inside the band is kept whole, including the parts that reach into the margin (a tall mark of
@@ -328,8 +607,11 @@ def mask_neighbours(crop, band_top, band_bot, ink, keep=0.5):
     drop = np.where((total > 0) & (inside < keep * total))[0]
     drop = drop[drop > 0]
     if len(drop):
-        paper = np.median(arr[~m], axis=0) if (~m).any() else np.array([255, 255, 255])
-        arr[np.isin(lab, drop)] = paper.astype(np.uint8)
+        gone = np.isin(lab, drop)
+        if halo:      # the anti-aliased rim of a removed stroke is lighter than --ink and would stay as a ghost outline
+            gone = _dilate(gone, halo) & ~(m & ~gone)     # (TXE-B, 9 Oct 2026); kept components' ink is never touched
+        paper = local_paper(arr.astype(float), _dilate(m, halo) if halo else m)
+        arr[gone] = np.clip(paper[gone], 0, 255).astype(np.uint8)
     return Image.fromarray(arr), int(len(drop)), int(n - len(drop))
 
 
@@ -526,6 +808,20 @@ def main(argv=None):
     ap.add_argument('--mask-margin', type=int, help='with --mask-neighbours: extra px above and below (default 0.4 x pitch)')
     ap.add_argument('--mask-keep', type=float, default=0.5, help='with --mask-neighbours: share of a component that must '
                                                                   'lie inside the band for it to be kept (default 0.5)')
+    ap.add_argument('--band-extent', type=float, nargs='?', const=0.1, metavar='FRAC',
+                    help='grow each band edge from the midpoint to the row-profile minimum plus FRAC x pitch (default '
+                         '0.1; 0.35 admitted 34%% of other-line boxes on f178v) so descenders stay inside; use with '
+                         '--mask-neighbours (TXE-B, 9 Oct 2026)')
+    ap.add_argument('--check-boxes', metavar='SIGNS_TSV',
+                    help='read-free report: share of atlas boxes cut by their own band and admitted to another band; '
+                         'written to OUT/band_check.tsv (TXE-B)')
+    ap.add_argument('--check-page', help='with --check-boxes: the page name in the box file (default: --prefix)')
+    ap.add_argument('--check-only', action='store_true', help='with --check-boxes: report only, write no crops')
+    ap.add_argument('--overlap-note', action='store_true',
+                    help='write the real segment overlap (native px and signs) to OUT/crops_note.md for the pass brief')
+    ap.add_argument('--note-scale', type=float, default=1.0,
+                    help='with --overlap-note: the scale the reader sees the crops at (2 when they are upscaled 2x, as '
+                         'harvest/make_2x.py does), so the note gives pixels in the reader\'s images')
     ap.add_argument('--only-lines', help='comma list of band numbers to write crops for (default: all)')
     ap.add_argument('--centres', help='comma list of line centres (region y px) given by eye, skipping detection: for a '
                                       'short block whose ink profile the autocorrelation misreads (GAPS4-nevers-birago, 2 Oct 2026: '
@@ -574,7 +870,10 @@ def main(argv=None):
         params = dict(pitch_autocorr=0, distance=0, prominence=0.0, centres_given=centres)
     else:
         centres, params = detect(gray, x0, x1, a.ink, a.smooth, a.distance, a.prominence)
-    bb = bands(centres, im.height, a.lines_per_crop)
+    if a.band_extent is not None:
+        bb = extent_bands(gray, x0, x1, centres, im.height, a.lines_per_crop, a.band_extent, a.ink)
+    else:
+        bb = bands(centres, im.height, a.lines_per_crop)
     if a.top_margin:
         bb = [(max(0, top - a.top_margin), bot, nl) for top, bot, nl in bb]
     if a.bottom_margin:
@@ -583,30 +882,74 @@ def main(argv=None):
     print(f'{src} ({how}): region {im.width}x{im.height}, {len(centres)} lines, {len(bb)} bands x {len(segs)} segments; '
           f"pitch {params['pitch_autocorr']} distance {params['distance']} prominence {params['prominence']}")
     print('  centres (region y): ' + ' '.join(map(str, centres)))
-    if a.dry_run:
-        return dict(centres=centres, bands=bb, segments=segs, params=params)
+    pitch = int(np.median(np.diff(centres))) if len(centres) > 1 else 100
+    only = {int(x) for x in a.only_lines.split(',')} if a.only_lines else None
+    slope_win = a.follow_slope or a.deskew
+    mm = (a.mask_margin if a.mask_margin is not None else int(0.4 * pitch)) if a.mask_neighbours else 0
+    fits = {}
+    if slope_win:
+        for bi, (top, bot, nl) in enumerate(bb, 1):
+            if only and bi not in only and not a.check_boxes:
+                continue
+            c = centres[(bi - 1) * a.lines_per_crop:(bi - 1) * a.lines_per_crop + nl]
+            fa, fb, pts = track_line(gray, sum(c) / len(c), pitch, x0, x1, slope_win, a.ink)
+            half = (bot - top) // 2 + a.slope_margin
+            if a.band_extent is not None:      # a grown band is asymmetric about its centre; the strip is symmetric
+                cc = sum(c) / len(c)           # about the fit, so it takes the larger reach of the two
+                half = int(np.ceil(max(cc - top, bot - cc))) + a.slope_margin
+
+            fits[bi] = dict(a=round(fa, 2), b=round(fb, 5), peaks_kept=len(pts), half_height=half, win=slope_win,
+                            peaks=pts, local=a.slope_local)
+            print(f'  band L{bi:02d}: slope fit y = {fa:.1f} + {fb:.5f}*x ({len(pts)} window peaks kept); '
+                  f'drift over the region {fb * (x1 - x0):+.0f} px (pitch {pitch})')
+    check = None
+    sign_w, src_w = None, ''
+    if a.check_boxes:
+        page = a.check_page or prefix
+        boxes = read_boxes(a.check_boxes, page, rx if a.image and a.region else 0, ry if a.image and a.region else 0)
+        if not boxes:
+            ap.error(f'--check-boxes: no boxes for page {page!r} in {a.check_boxes}')
+        rows, total, l2b = check_boxes(boxes, band_geoms(bb, centres, a.lines_per_crop, fits, mm, segs), a.mask_keep,
+                                       a.mask_neighbours)
+        ext = a.band_extent if a.band_extent is not None else 'off'
+        mtxt = 'on (margin ' + str(mm) + ')' if a.mask_neighbours else 'off'
+        nb = max(1, total['boxes'])
+        box_line = (f"box rule: cut {total['cut']} ({total['cut'] / nb:.1%}), admitted to another band "
+                    f"{total['admitted']} ({total['admitted'] / nb:.1%})")
+        rule = 'box'
+        if not slope_win:
+            rows, total = check_ink(gray, boxes, bb, centres, a.lines_per_crop, x0, x1, a.ink, mm, a.mask_keep,
+                                    a.mask_neighbours, l2b)
+            rule = 'ink'
+        bc = write_band_check(a.out, prefix, rows, total, f'{ext};rule={rule}', a.mask_neighbours)
+        print(f"  check-boxes {page}: {total['boxes']} boxes, {rule} rule: cut {total['cut']} "
+              f"({total['cut'] / nb:.1%}), admitted to another band {total['admitted']} "
+              f"({total['admitted'] / nb:.1%}); band-extent {ext}, mask {mtxt} -> {bc}")
+        if rule == 'ink':
+            print(f'    (proxy {box_line})')
+        for r in rows:
+            if r['cut'] or r['admitted']:
+                print(f"    L{r['band']:02d} (atlas line {','.join(map(str, r['lines']))}): {r['boxes']} boxes, cut "
+                      f"{r['cut']}, admitted {r['admitted']}")
+        check = dict(rows=rows, total=total, line_to_band=l2b, file=bc, rule=rule)
+        sign_w, src_w = float(np.median([b[3] for b in boxes])), 'from the atlas boxes'
+    if a.overlap_note:
+        if sign_w is None:
+            sign_w, src_w = ink_run_width(gray, bb, x0, x1, a.ink), 'ink-run median'
+        sent, ov = overlap_sentence(segs, sign_w, src_w, a.note_scale)
+        np_ = write_note(a.out, prefix, sent)
+        print(f'  overlap note -> {np_}: {sent}')
+    if a.dry_run or a.check_only:
+        return dict(centres=centres, bands=bb, segments=segs, params=params, check=check, fits=fits)
     rgb = Image.open(src)
     if a.image and a.region:
         rgb = rgb.crop((rx, ry, rx + rw, ry + rh))
     entries = []
     date = time.strftime('%d %b %Y', time.gmtime())
-    only = {int(x) for x in a.only_lines.split(',')} if a.only_lines else None
-    pitch = int(np.median(np.diff(centres))) if len(centres) > 1 else 100
-    fits = {}
-    slope_win = a.follow_slope or a.deskew
     rgbc = rgb.convert('RGB') if slope_win else None
-    mm = (a.mask_margin if a.mask_margin is not None else int(0.4 * pitch)) if a.mask_neighbours else 0
     for bi, (top, bot, nl) in enumerate(bb, 1):
         if only and bi not in only:
             continue
-        if slope_win:
-            c = centres[(bi - 1) * a.lines_per_crop:(bi - 1) * a.lines_per_crop + nl]
-            fa, fb, pts = track_line(gray, sum(c) / len(c), pitch, x0, x1, slope_win, a.ink)
-            half = (bot - top) // 2 + a.slope_margin
-            fits[bi] = dict(a=round(fa, 2), b=round(fb, 5), peaks_kept=len(pts), half_height=half, win=slope_win,
-                            peaks=pts, local=a.slope_local)
-            print(f'  band L{bi:02d}: slope fit y = {fa:.1f} + {fb:.5f}*x ({len(pts)} window peaks kept); '
-                  f'drift over the region {fb * (x1 - x0):+.0f} px (pitch {pitch})')
         for si, (sx0, sx1) in enumerate(segs, 1):
             name = f'{prefix}_L{bi:02d}' + (f'_s{si}' if len(segs) > 1 else '') + '.jpg'
             extra = {}
@@ -640,6 +983,8 @@ def main(argv=None):
                      segment=si, method=method, params=params, date=date)
             if slope_win:
                 e['slope_fit'] = {k: v for k, v in f.items() if k != 'peaks'}
+            if a.band_extent is not None:
+                e['band_extent'] = dict(frac=a.band_extent, band_rows=[top, bot], height=bot - top)
             e.update(extra)
             entries.append(e)
     if a.groups:
@@ -676,6 +1021,13 @@ def main(argv=None):
         for top, bot, _ in bb:
             for y in (top, bot):
                 d.line([(0, y * scale), (dbg.width, y * scale)], fill=(0, 0, 255), width=1)
+        for bi, f in fits.items():        # sloped cuts: the strip each segment was cut on, in green (TXE-B)
+            for sx0, sx1 in segs:
+                fa, fb = (local_fit(f['peaks'], sx0, sx1, f['win'], f['a'], f['b']) if f.get('local')
+                          else (f['a'], f['b']))
+                for off in (-f['half_height'] - mm, f['half_height'] + mm):
+                    d.line([(sx0 * scale, (fa + fb * sx0 + off) * scale), (sx1 * scale, (fa + fb * sx1 + off) * scale)],
+                           fill=(0, 170, 0), width=1)
         dbg.save(os.path.join(a.out, f'{prefix}_lines_debug.jpg'), quality=70)
     shrunk = []
     if folder_size(a.out) > LIMIT:
@@ -699,7 +1051,7 @@ def main(argv=None):
         ve = write_views([os.path.join(a.out, e['crop']) for e in entries], views, a.out, a.quality)
         update_views_manifest(a.out, ve)
         print(f'  wrote {len(ve)} views ({",".join(views)}) under {a.out}/views')
-    return dict(centres=centres, bands=bb, segments=segs, params=params, entries=entries, fits=fits)
+    return dict(centres=centres, bands=bb, segments=segs, params=params, entries=entries, fits=fits, check=check)
 
 
 if __name__ == '__main__':
