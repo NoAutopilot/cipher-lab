@@ -10672,6 +10672,88 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM8d)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM8d verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM8d)' section 4",
+      "reading_version": "FM-R5a 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM8d) section 3",
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "depth": "D3",
+      "unresolved_spans": "0",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "title": "Eckert 1864 (Fort Monroe ledger): Col. R. C. Webster, chief QM, Fort Monroe, via Sheldon and S. H. Beckwith to Gen. Rufus Ingalls, City Point, 13 Dec 1864 1 PM: most of the fleet left last night, the few remaining this evening (E278)",
+      "line": "Read at grade H with War Department Cipher No. 1: at 1 PM on 13 Dec 1864 Col. R. C. Webster, chief quartermaster at Fort Monroe, answering General Ingalls's question of the same day whether the fleet had left, told him that most of the fleet had left during the night and that the few remaining vessels would, he presumed, get away that evening. It was not located in the Official Records (ser. I vol. 42 pt 3), Butler's Private and Official Correspondence vol. V or the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "first audit only; sender corrected from the FM-R5a header (Sheldon) to Col. R. C. Webster (webster is the plain name, not the signature word); 'mast' = Most, not 'last'",
+      "completeness": "7 H of 7 code-word groups",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.285, pointer 5829, E278"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.285, pointer 5829, E278",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.285, pointer 5829, E278"
+      ],
+      "depth_sentence": "On 13 Dec 1864 Fort Monroe's chief quartermaster told Ingalls most of the fleet had left overnight and the rest would get away that evening.",
+      "depth_check": "internal witness: mssEC 25 p.285 (5829) second entry, Ingalls to Webster 13 Dec, 'has [the] fleet [left] yet?', which E278 answers; external (non-statistical): OR I/42 pt 3 p.432 signature formula 'R. C. WEBSTER, Colonel and Quartermaster'; code clause: Torch = Of the, Stomach = Left in both entries",
+      "depth_note": "7 H of 7 code-word groups"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM8d)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM8d verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM8d)' section 4",
+      "reading_version": "FM-R5b 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM8d) section 3",
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "depth": "D3",
+      "unresolved_spans": "1 (tulip M)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "1"
+      },
+      "depth_pct": 87.5,
+      "title": "Eckert 1864 (Fort Monroe ledger): Rear-Adm. D. D. Porter via Fort Monroe to the Secretary of the Navy, 1 Dec 1864 noon: Captain Taylor and Lt. Cdr. Dewey ordered before a court martial, shall the witnesses leave as the squadron sails (E289)",
+      "line": "Read at grade H with Cipher No. 1: at noon on 1 Dec 1864 Admiral Porter, through Fort Monroe, told the Secretary of the Navy that orders had come for Captain Taylor and Lieutenant Commander Dewey to appear before a court martial and, the squadron being about to leave, asked whether the witnesses should go at such a time. Porter's other telegrams and reports of that day are printed in the Official Records of the Union and Confederate Navies (ser. I vol. 11); this one was not located there or in the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "first audit only; whose court martial is not stated; tulip M",
+      "completeness": "7 H of 8 code-word groups (tulip M)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.270, pointer 5814, E289"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.270, pointer 5814, E289",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.270, pointer 5814, E289"
+      ],
+      "depth_sentence": "On 1 Dec 1864 Porter asked Welles whether Captain Taylor and Lieutenant Commander Dewey, summoned to a court martial, should leave just as the squadron was about to sail.",
+      "depth_check": "external (non-statistical): ORN I/11 pp.116-117 Porter's and Parker's 1 Dec 1864 traffic, incl. the same-page sibling (monitors Saugus, Canonicus, Mahopac ready); Capt. W. R. Taylor (Juniata, p.321) and Lt. George Dewey both with the squadron that sailed for Fort Fisher in December; code clause: Burton = Secretary of Navy, Niagara = Porter as in E228 and 5814/1",
+      "depth_note": "7 H of 8 code-word groups (tulip M)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
         "AUDIT.md '## AUDIT (FV-FM8b)'"
       ],
       "audit_status": "one audit",

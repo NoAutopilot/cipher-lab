@@ -3226,3 +3226,22 @@ E298 header place is Fort Monroe (image "Ft Monroe Oct 16/64"), not Washington; 
 Lead for readers (fifth time): two common clear words ANDed ("send to sea", "efficient experienced", "diamond sold") find the clear book in
 one query; and for a telegram about Missouri in Oct 1864, fetch OR I/41 pt 4 (Trans-Mississippi, from 16 Oct), not only the Virginia volumes.
 Requests: hdl.huntington.org 24 (one token block 11:25-11:27 UTC: 19 dmQuery, 5 IIIF pages); archive.org 8 (3 advancedsearch, 5 djvu text).
+
+## FV-FM8d (9 Oct 2026, account 1, for LANE LEDGER)
+First verifier for E278 (reader FM-R5a), E286, E288, E289 (reader FM-R5b); full log in AUDIT.md "## AUDIT (FV-FM8d)". Duplicate diff: none
+(5829, 5724, 5814 also carry E254, E273, E228, other telegrams). Every graded line eye-checked on the 2400 px page (`tools/iiif_lines.py --image`,
+three-line crops, scratch), including the three pages FM-R5b had not read (5605, 5724, 5814). The holder's CONTENTdm full text found **period clear
+copies of E286 (pointer 4529, Page 88: Butler to the Secretary of War, Fort Monroe 1 PM 14 Apr 1864) and E288 (pointer 4676, Page 235: Small to
+the Commissary General, 6.30 PM 31 May 1864)**, word for word: **E286, E288 N1** (C, D3, no status/SO row). **E278 N3 D3** (Col. R. C. Webster to
+Ingalls, 13 Dec 1864: most of the fleet left last night, the rest this evening; answers the same-page Ingalls query) and **E289 N3 D3** (Porter to
+Welles, 1 Dec 1864: Captain Taylor and Lt. Cdr. Dewey ordered before a court martial, shall the witnesses leave as the squadron sails); status rows
+E278 E289, SO-ECKERT-E278 and -E289 queued, WORK-QUEUE AUD2-LEDGER-21 (account-3).
+Reading corrections for FIX-FM8 (rule 7, decode.py entry notes): E278 "webster" is the plain name R. C. Webster (not [Signature]; the sender is
+Webster, Sheldon is the operator), "are see" = R. C., "mast" = Most (FM-R5a's "last" withdrawn); E286 sender Butler to the Secretary of War (C 15
+of 15); E288 "John" is not [Grant] ("John Potts is good boy" is filler after the time word, not in the clear copy), one "Shall" in the image (the
+holder doubles it), Mary = 6.30 PM confirmed by the clear copy; E289 "witness" -> "Witnesses" (image), tulip M (CONF-FM's candidate Tulip = stop
+would fit; candidate only).
+Lead for readers (sixth time): the clear-word pairs that hit were the obvious ones ("jersey battery", "millions rations", "cattle white house");
+FM-R5b's 21 queries did not include them.
+Requests: hdl.huntington.org 32 (one token block 11:47-11:50 UTC: 20 dmQuery, 8 dmGetItemInfo, 4 IIIF pages); archive.org 3 djvu text + 5 be-api
+(one 502, retried once).
