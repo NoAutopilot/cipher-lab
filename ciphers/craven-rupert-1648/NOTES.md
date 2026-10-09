@@ -176,3 +176,33 @@ Read so far: 0 of 42 cipher tokens read (nine sibling and known tables EXCLUDED 
 - [x] image-check: DECODE full-size images obtained and transcribed 6 Oct 2026
 - [ ] retry: not applicable
 Verdict: keep going: 1 internal gap; cheapest next: R8450 sibling pairs, ~$2
+
+## Test 5: R8450, Hyde to Rupert (CRAV-8450, LANE DEFAULT-account-4-20261009-1051, 9 Oct 2026 11:44-12:0x UTC by date -u)
+**Prior work (pasted before the first priced step).** `python3 tools/prior_work.py craven-rupert-1648 --item-spec 'shelfmark=BL Add MS 18982;folio=177-178;decode=8450;recipient=Prince Rupert' --step-type key --fetch` -> exit 4: LEAD 1-own x3 (NOTES.md:171 "R8450 not yet looked at", NOTES.md:150 CRAV-54's prior-work prose, this worker's own claim), CLEAR 3-tomokiyo, LEAD 3-decode "R8450 'Decrypted', fetch the documents", UNCHECKED-NET 3-solver aaymeloglu, CLEAR 3-solver cyphersolver/bourdeau, LEAD 4-editions (CSP Dom. 1645-47, undated-span match). By hand: the three 1-own leads say only that R8450 was never fetched (grep 8450 in this folder and ROOM.md: CRAV-54's suggestion only) -- CLEAR; 3-decode is this step; 4-editions not run (R8450 is a key source here, not a target).
+**Material.** One DECODE browser login (`decode_browser_login.js 8450 <scratch> --guess-fullsize --delay 2000 --max-files 8`): record page, 4 thumbnails, 4 full-size images (6787x9076 to 7265x9735; sha256 in test3/sibling_images_sha256.tsv; images in scratch only, not committed; no record page committed). DECODE: Decrypted, Cipher Type Unknown, Inline Cleartext Yes, Inline Plaintext Yes (the period interlinear gloss), 3 pages, date "1645 - 1658".
+**What the leaf is.** f.177r-178r: Sir Edward Hyde to Prince Rupert, "Hague this 28 Feb. st. no." [1648/9], signed "Edw: Hyde"; endorsed f.178v "From Sr Edw: Hide, Hague Feb. 28 ... Concerning the murther of the King ... the States Generall ... want of money ... Princes Lanrick & Lauderdale ... Montrose ... affaires of Scotland". Clear text with eleven runs of dot-separated groups (f.177v, f.178r), each with a period interlinear gloss. Design: low codes 2-87 are letters (g e r m a n y = 12 34 21 11 32 18 27; m o n t r o s e = 11 15? 18 25 21 42 44 34; p r i z e s = 19 21 13 24 34 44), codes 89-491 are words (437 the, 431 to, 337 of, 62 and, 232 hee, 465/40 will, 262 Irland, 414 Scotland, 212 King). Several codes carry a superscript mark (85^s be, 25^t, 40^c, 15^d) not modelled here. Crops: PIL strips from the four native images in scratch (the iiif_lines.py line-crop route was not used: single reader, no subagent call). Table test3/T_8450.tsv: 83 codes, M where the gloss sits over the code, I where split, fitted or unglossed; conflicts 61 as/can and 22 u/f logged in its header.
+**Registered test (PREREG-D2-CRAV.md amendment A4, pushed 3c513ba4e before scoring): A1 unchanged.** test3/coverage_a4.tsv:
+
+| table | target COV /41 | key-true p01 (median) | random-code p99 | verdict |
+|---|---|---|---|---|
+| T_8450 (Hyde key, Hague 28 Feb 1648/9) | 10 | 33 (37) | 13 | EXCLUDED (control is an upper bound) |
+
+Key-true p01 sits above the random-code p99, so the control could fail differently from the target (rule 3). Target codes found in the table: 18 29 40 42 63 64 85 (10 tokens) -- below the random-code p99, so chance overlap on a small-number letter range. **Range:** T_8450's highest code read is 491; R8447's 852, 922, 1037 and 1067 lie above it, as above every earlier sibling table. **Reading:** none; 0 of 41 tokens read; no decode run (no table NOT EXCLUDED). Conditional on the two-pass R8447 transcription and single-reader sibling pairs.
+**Requests:** de-crypt.org: 1 login session, 1 record page + 8 files (4 thumbnails, 4 full images), 2 s apart. No other hosts.
+Script: `python3 test3/coverage_a4.py --check` (OK).
+
+## Remaining gaps (CRAV-8450, 9 Oct 2026)
+Read so far: 0 of 42 cipher tokens read (ten sibling and known tables EXCLUDED under A1; no key applies)
+- the 40 legible groups - blocker: not-attempted; the clear-pages crib constraint on the five runs is untried; every DECODE record of Add MS 18982 with glossed pairs from 1645-49 is now tested (R8445, R8446, R8448, R8450-R8454) and all are EXCLUDED; the only untried sibling, BL f.142 ("heavily ciphered, with deciphering"), has no DECODE record and the BL images are offline; R8447's codes run to 1067, above every sampled key (max 583); next: clear-context crib test on the five runs, ~$2
+- the struck group X and the torn 18? on f.134r - blocker: illegible; a blotted strike-out and a tear through the figure on the DECODE image; next: the original, or a BL image if the BL restores its images
+
+## Escalation (CRAV-8450, 9 Oct 2026)
+- [x] siblings: R8445/R8446/R8448 (D2-CRAV), R8451-R8453 (CRAV-49), R8454 + Gerrard table (CRAV-54) and R8450 Hyde table (CRAV-8450) EXCLUDED under A1; R8449 has no pairs; f.142 has no DECODE record (BL images offline)
+- [ ] clear-pages: use the clear context around each run ("write to [40.97.52.35.85]" is a name) to constrain groups
+- [x] known-keys: Tomokiyo's Nicholas-Rupert letter table EXCLUDED; THE=g4 unpublished; no other Rupert key on disk
+- [ ] print: no edition prints the letter (Warburton checked); recheck only if a later test reads a name
+- [ ] key-rebuild: only if a sibling key reads part of the letter
+- [x] image-check: DECODE full-size images obtained and transcribed 6 Oct 2026
+- [ ] retry: not applicable
+Verdict: keep going: 1 internal gap; cheapest next: clear-context crib test on the five runs, ~$2
+Suggestion (not run, outside this brief): BL f.142 once BL images return; Craven's other letters to Rupert outside Add MS 18982 for a Craven-own key.
