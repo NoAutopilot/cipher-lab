@@ -1,0 +1,16 @@
+# MANT-0177 (9 Oct 2026): HStA Dresden 10026 Loc. 694/08 file 0177 (film label 0178; p.136 on the right page), continuation of 0176 (stamp 135, Berl. 2 Juil 1712).
+# Two blind Sonnet passes (passA_0177.tsv crop order, passB_0177.tsv reversed) + worker reconciliation on native 2x zooms (one unit). Codes on the left page only;
+# the right page (p.136) is clear ('aux 6 h.', '2 a 3 mois' are clear numerals, not codes). No interlinear letters over any group: gate (a) n/a.
+# r02/r04: pass A '171' / '17.1', pass B '171.' (alt 17.1.) / '17.1'; worker native zoom shows a dot between 17 and 1 at both places -> 17.1.
+line	pos	sign	conf	page	context	note
+694-08_0177_r01	1	55	high	L	envoye quelqu'un a | , pour s'informer si les colonels susdits y sont	passes agree (alts 28/11/23/8 noted); worker zoom agrees
+694-08_0177_r01	2	2	high	L	envoye quelqu'un a | , pour s'informer si les colonels susdits y sont	passes agree (alts 28/11/23/8 noted); worker zoom agrees
+694-08_0177_r01	3	26	high	L	envoye quelqu'un a | , pour s'informer si les colonels susdits y sont	passes agree (alts 28/11/23/8 noted); worker zoom agrees
+694-08_0177_r01	4	14	high	L	envoye quelqu'un a | , pour s'informer si les colonels susdits y sont	passes agree (alts 28/11/23/8 noted); worker zoom agrees
+694-08_0177_r01	5	25	high	L	envoye quelqu'un a | , pour s'informer si les colonels susdits y sont	passes agree (alts 28/11/23/8 noted); worker zoom agrees
+694-08_0177_r01	6	6	high	L	envoye quelqu'un a | , pour s'informer si les colonels susdits y sont	passes agree (alts 28/11/23/8 noted); worker zoom agrees
+694-08_0177_r02	1	17	medium	L	a ce que | me dit	A 171 (alt 17.1), B 171. (alt 17.1.); worker zoom: dot after 17
+694-08_0177_r02	2	1	medium	L	a ce que | me dit	B alt 4
+694-08_0177_r03	1	13	high	L	bien d'embarras, si | vouloit peut-etre me tromper	A 13 (alt 15), B 13 high
+694-08_0177_r04	1	17	medium	L	j'tacherai d'exclure | du secret	A and B 17.1; worker zoom agrees
+694-08_0177_r04	2	1	medium	L	j'tacherai d'exclure | du secret	B alt 4

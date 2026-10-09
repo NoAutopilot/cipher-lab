@@ -1,10 +1,10 @@
 power	at 32 letters: 37/38 = 0.97	TEST
-block_1	letters 1-32	real -1.288	permuted mean -2.012 p95 -1.670 p99 -1.543 max -1.408	permuted>=real 0/1000	PASS	leemaierfspaldethornbernaugmaier
-leaf_0176	letters 32	blocks 1	PASS	leemaierfspaldethornbernaugmaier
-# whole leaf (reported, no power behind it if L > 62): real -1.288 permuted mean -2.010 p95 -1.666 p99 -1.550 permuted>=real 0/1000
+block_1	letters 1-32	real -1.277	permuted mean -2.016 p95 -1.665 p99 -1.502 max -1.423	permuted>=real 0/1000	PASS	leermaierfspaldethornbernaumaier
+leaf_0176	letters 32	blocks 1	PASS	leermaierfspaldethornbernaumaier
+# whole leaf (reported, no power behind it if L > 62): real -1.277 permuted mean -2.013 p95 -1.674 p99 -1.537 permuted>=real 0/1000
 # per run (reported, not gates): run, letters, score, decoded letters
-694-08_0176_r01	3	nan	lee
+694-08_0176_r01	4	-1.770	leer
 694-08_0176_r02	6	-1.665	maierf
 694-08_0176_r03	11	-1.215	spaldethorn
-694-08_0176_r04	7	-1.406	bernaug
+694-08_0176_r04	6	-1.327	bernau
 694-08_0176_r05	5	-1.632	maier

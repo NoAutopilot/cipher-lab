@@ -1,9 +1,9 @@
 # leaf 0176 gate (b): PASS; gloss: see NOTES (gate (a))
-# tokens 31: H 0, C 0, S 26, M 4, I 0, U 1
+# tokens 30: H 0, C 0, S 27, M 3, I 0, U 0
 tokid	code	key_value	conf	block	grade	why
 694-08_0176_r01.1	171	le	medium	block_1	S	unglossed letter token; block_1 PASS with power
 694-08_0176_r01.2	35	e	medium	block_1	S	unglossed letter token; block_1 PASS with power
-694-08_0176_r01.3	62		low	nonletter	U	not in key.tsv
+694-08_0176_r01.3	26	r	medium	block_1	S	unglossed letter token; block_1 PASS with power
 694-08_0176_r02.1	13	m	high	block_1	S	unglossed letter token; block_1 PASS with power
 694-08_0176_r02.2	66	a	high	block_1	S	unglossed letter token; block_1 PASS with power
 694-08_0176_r02.3	9	i	medium	block_1	S	unglossed letter token; block_1 PASS with power
@@ -26,7 +26,6 @@ tokid	code	key_value	conf	block	grade	why
 694-08_0176_r04.4	14	n	medium	block_1	S	unglossed letter token; block_1 PASS with power
 694-08_0176_r04.5	25	a	medium	block_1	S	unglossed letter token; block_1 PASS with power
 694-08_0176_r04.6	6	u	medium	block_1	S	unglossed letter token; block_1 PASS with power
-694-08_0176_r04.7	7	g	low	block_1	M	low-conf transcription
 694-08_0176_r05.1	13	m	high	block_1	S	unglossed letter token; block_1 PASS with power
 694-08_0176_r05.2	66	a	high	block_1	S	unglossed letter token; block_1 PASS with power
 694-08_0176_r05.3	9	i	medium	block_1	S	unglossed letter token; block_1 PASS with power

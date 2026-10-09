@@ -301,3 +301,15 @@ PREREG-MANTCUC.md (4c5930db8, pushed before scoring); scorer mant0608/cuc/cuc_sc
 - r01 '171.35.62' after 'le vieux' = 'le e [62 null]' does not read; worker's native look reads the last code 26 (and MANT-INV08B 17.41.35.26):
   the run is unsettled (M) -- who 'le vieux' is stays open.
 - V-MANT0176 note (9 Oct 2026, verifier, M, no key edit): the cipher 'maier(f)' and the clear text's 'bibliotheque de Maier' are probably two people. The library is Dr J. F. Mayer's (d. 1712; 'des Hamburgischen Herrn D. Mayers Bibliothec, welche A. 1716 zu Berlin verauctioniret', IA 10123080bsb). The cipher name that sends two colonels to Bernau and whose 'certificat' is asked for reads best as Meyerfeldt (Swedish general, governor-general at Stettin 1712-13; Dumont, Corps universel diplomatique; Droysen IV.2 p.56). On that reading r02's trailing 36 'f' begins the name. Not confirmed by any print; the y-glyph (9/4) still conditions 'maier'. r04 pos 7: one blind look + verifier eye read a comma, not a digit ('bernau'). r01 pos 3: verifier eye reads 26 (with MANT-INV08B and the worker), not 62. See AUDIT.md 'AUDIT (V-MANT0176)'.
+
+## MANT-0177 (9 Oct 2026, LANE FAMILY-A2i account 2): rule-4 slots from 694/08 0177 (f0177_08/) and the 0176 fix, no key.tsv change
+- 0177 r01 '55.2.26.14.25.6' = 'b e r n a u' ('envoye quelqu'un a Bernau, pour s'informer si les colonels susdits y sont'): the same place as 0176 r04
+  (55.2.27.14.25.6, now six codes after the fix); 27 vs 26 = two r homophones. M (gate (b) too-short on 0177); the clear context supports it (I).
+- 0177 r02 and r04 '17.1' (twice: 'a ce que 17.1 me dit'; 'je tacherai d'exclure 17.1 du secret') = 'p f' by the letter table: a two-code name
+  abbreviation of one person, recurring 2x (below the PREREG's >= 3 abbreviation rule, so scored as letters). Context: the person who came back and
+  promised to bring the 'certificat' (0176), i.e. most likely 'le vieux' of 0176 r01. Unidentified (M/I).
+- 0176 r01 (after the fix '171.35.26' = 'le e r' / 'leer'; 171 = 'le' as a word code) may instead be '17.1.35.26' with a dot the passes missed:
+  then 'pf' + 'er', the same person as 0177's 17.1. Not tested; an eye check of the committed crop f0176_08/crops for a dot between 17 and 1 is owed
+  before anything is read there (no transcription change by this job beyond the brief's two fixes).
+- 0177 r03 '13' alone ('si 13 vouloit peut-etre me tromper') = 'm': one-code abbreviation, most likely the 'maier' of 0176 r02/r05 (13 = m is that
+  name's first sign). M; who it is stays open (V-MANT0176's Meyerfeldt hypothesis neither supported nor weakened by 0177).

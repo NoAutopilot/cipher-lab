@@ -1,7 +1,7 @@
 line	pos	sign	conf	value	grade
 694-08_0176_r01	1	171	medium	le	C
 694-08_0176_r01	2	35	medium	e	C
-694-08_0176_r01	3	62	low	?	U
+694-08_0176_r01	3	26	medium	r	C
 694-08_0176_r02	1	13	high	m	C
 694-08_0176_r02	2	66	high	a	C
 694-08_0176_r02	3	9	medium	i	C
@@ -24,7 +24,6 @@ line	pos	sign	conf	value	grade
 694-08_0176_r04	4	14	medium	n	C
 694-08_0176_r04	5	25	medium	a	C
 694-08_0176_r04	6	6	medium	u	C
-694-08_0176_r04	7	7	low	g	M
 694-08_0176_r05	1	13	high	m	C
 694-08_0176_r05	2	66	high	a	C
 694-08_0176_r05	3	9	medium	i	C

@@ -1,0 +1,16 @@
+# MANT-0177 blind Sonnet code pass A (crop order L01..L07, native crops, crop paths only, one call), 9 Oct 2026; verbatim table as returned
+crop	line	before	group	after	conf	notes
+f0177L_L01	top	(none)	none	(none)	high	no numbers
+f0177L_L01	bottom	"apres demain." (end of line)	none (a "Mr"-like superscript mark at line end, not digits)	(none)	low	possibly a abbreviation, not a number
+f0177L_L02	top	"quelcun a"	55.2.26.14.25.6	(end of line, "quelqu'un sous main" interlined above)	medium	read as 55 . 2 . 26 . 14 . 25 . 6 ; "26" could be 28; "25" could be 23; "14" could be 11; the 6 is followed by a comma
+f0177L_L02	bottom	"si les colonels"	none	"susdits"	high	no numbers
+f0177L_L03	top	"s'ils devoient y arriver aujourd'hui / a ce que"	none	(none)	high	no numbers
+f0177L_L03	bottom	(start of line, follows "a ce que")	171	"me dit, et je crois que"	medium	written "171" with dot/period after it ("171."); possibly 17.1 or 171 as a single number; middle digit could be 7 or 1
+f0177L_L04	top	"trop de precaution dans cette affaire"	none	(none)	high	no numbers
+f0177L_L04	bottom	"bien d'embarras, si"	13	"voulois peut" (reads "vouloit")	medium	"13." with trailing dot; 13 could be 15
+f0177L_L05	top	(none)	none	(none)	high	no numbers
+f0177L_L05	bottom	(none)	none	(none)	high	no numbers
+f0177L_L06	top	(none)	none	(none)	high	no numbers
+f0177L_L06	bottom	"j'tacheray d'exclure"	17.1	"du secret, car"	medium	read as 17.1 or 171 with a dot; digits 7 and 1 uncertain
+f0177L_L07	top	(none)	none	(none)	high	no numbers
+f0177L_L07	bottom	(none)	none	(none)	high	no numbers

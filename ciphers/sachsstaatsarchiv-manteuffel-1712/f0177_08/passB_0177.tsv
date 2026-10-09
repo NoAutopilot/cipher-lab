@@ -1,0 +1,16 @@
+# MANT-0177 blind Sonnet code pass B (reversed crop order L07..L01, native crops, crop paths only, one call), 9 Oct 2026; verbatim table as returned
+crop	line	before	group	after	conf	notes
+f0177L_L07	top	none	none	none	-	no numbers
+f0177L_L07	bottom	none	none	none	-	no numbers
+f0177L_L06	top	none	none	none	-	no numbers
+f0177L_L06	bottom	d'exclure	17.1	du secret	medium	"17.1" could be "17.4"; could be "17." plus a stroke; final mark is faint
+f0177L_L05	top	none	none	none	-	no numbers
+f0177L_L05	bottom	none	none	none	-	no numbers
+f0177L_L04	top	none	none	none	-	no numbers
+f0177L_L04	bottom	si	13.	voulait peut	high	"13" followed by a dot; a trailing dot may be the start of a longer group, but nothing follows it
+f0177L_L03	top	none	none	none	-	no numbers
+f0177L_L03	bottom	ce que	171.	me dit	medium	left edge of the crop; could be "17.1." (dotted) or "171."; the third digit could be "4"
+f0177L_L02	top	attendant quelqu'un a	55.2.26.14.25.6	(comma) pour s'informer	medium	"55" could be "35"; "26" could be "28"; "14" could be "11"; "25" could be "23"; "6" could be "8". The word "soufrain" (or similar) is written above the line, between "quelqu'un" and the group
+f0177L_L02	bottom	none	none	none	-	no numbers
+f0177L_L01	top	none	none	none	-	no numbers
+f0177L_L01	bottom	none	none	none	-	only a final "Bon"/"Hn"-like flourish at the right edge, not a number

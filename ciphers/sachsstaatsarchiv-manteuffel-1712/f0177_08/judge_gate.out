@@ -1,0 +1,9 @@
+power	at 11 letters: 37/78 = 0.47	too-short (power < 0.80): neither PASS nor negative
+block_1	letters 1-11	real -1.752	permuted mean -2.011 p95 -1.333 p99 -1.085 max -0.880	permuted>=real 254/1000	too-short (own score not above p95)	bernaupfmpf
+leaf_0177	letters 11	blocks 1	too-short	bernaupfmpf
+# whole leaf (reported, no power behind it if L > 62): real -1.752 permuted mean -2.012 p95 -1.363 p99 -1.153 permuted>=real 254/1000
+# per run (reported, not gates): run, letters, score, decoded letters
+694-08_0177_r01	6	-1.327	bernau
+694-08_0177_r02	2	nan	pf
+694-08_0177_r03	1	nan	m
+694-08_0177_r04	2	nan	pf
