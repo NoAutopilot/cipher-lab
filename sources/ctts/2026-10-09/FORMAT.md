@@ -20,3 +20,14 @@ util/TranscribedImage.java, CTTSApplication.java (COLORS_FILE).
 - `icons/<colour>.png`: the reference icon of a symbol type.
 - Coordinates are taken to be the image's own pixels (layoutX/Y of the rectangle on the unscaled image pane); not yet
   confirmed by opening an export in CTTS (needs 16 GB RAM and a 2560x1600 screen: the owner's desktop).
+
+## Where each rule is in CTTS (commit d8b7d77b; lines as read 9 Oct 2026)
+
+- Colour list: util/Colors.java:75 `colorSet()`; position index lookup :401 `indexOf`; colors.txt read :139 `fromTextFile`,
+  written :433 `saveTextFile`; file name CTTSApplication.java:47 `COLORS_FILE = "colors"`.
+- Positions: util/Positions.java `save`, `restore`, `parsePositions` (5 fields, colour index past the set -> empty list),
+  `savePositionsTextFile` (`%f %f %f %f %3d`, plus the _SECOND_COPY folder); line numbers not kept for this file
+  (read from line 18 onward, about lines 31-114). Called per image at util/TranscribedImage.java:82.
+- Icons: util/Icons.java:27 `ICONS_DIR_NAME = "icons"`, :32 file name `<colour>.png`.
+- File naming: util/FileUtils.java:105 `textFilename` (cut at the first '.'), :186 `fileToRead`; util/ImageUtils.java:30
+  supported formats (.jpg .png .bmp), :36 `removeImageFormat`.
