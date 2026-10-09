@@ -2836,3 +2836,18 @@ Reading corrections for a FIX job (rule 7, decode.py entry notes): E217 address-
 (R. C. Webster; the body is pushed into the tail now), "Chief" plain; E226 "White horse" = White House plain, "wharf" plain (not [Today]);
 E227 "William" plain (not [100]), "Weasler" = [Steam]er.
 Requests: hdl.huntington.org 14 (one token block 03:58-04:00 UTC); archive.org 3; be-api 8; Google Books 0.
+
+## FV-FM6b (9 Oct 2026, account 1, for LANE LEDGER)
+First verifier for E228, E229 (reader FM-R3b) and E240, E241 (reader FM-R3d); full log in AUDIT.md "## AUDIT (FV-FM6b)". Duplicate diff: none
+(5784 also carries E193, another telegram). Pages 5814, 5833, 5784, 5663 eye-checked from 2400 px crops (scratch, not committed): transcription
+matches, except E240's image has "palsy Barnes grapes" (Barnes missing from the volunteer text) and "pekin" (= comma) where the text has "peken"
+(recorded, not repaired). Results: **E241 N1** -- its plaintext is printed as "An Associated Press despatch from Fortress Monroe" in the Daily
+National Intelligencer, 11 May 1864, p.3 (Chronicling America; every code value agrees, 48 C of 48); **E228 N3 (weak) D2, E229 N3 D3, E240 N3
+D3**; SO rows SO-ECKERT-E228/E229/E240 queued; WORK-QUEUE AUD2-LEDGER-13.
+Reading corrections for a FIX job (rule 7, decode.py entry notes): E241 "person" plain ("he [command]ing in person"; the decoder prints [5]), the
+Bermuda gloss C from the print; E229 "Herald" plain (the New York Herald; decoder prints [Ewell]), "up tooth feeble" = up to the [10]th (M); E228
+"wise" plain (Capt. H. A. Wise, Chief of the Bureau of Ordnance; holder 5907 has the same address form), "sugar" = [?] H; E240 "peken" -> pekin
+= [,] (image), "Barnes" (image), signer E. McClellan = Asst. Surg., Med. Div. Fort Monroe (holder 13059).
+Lead for readers: a Fort Monroe entry addressed "for" private names at a news hour (Fulton and Craig; 5662 "for Samuel Wilkeson, Tribune rooms")
+is a press telegram -- query Chronicling America for the next two days on a rare plain word before filing.
+Requests: hdl.huntington.org 14 (one token block 04:00-04:01 UTC); archive.org 4; be-api 7; loc.gov 15; Google Books 1 (429, stopped).
