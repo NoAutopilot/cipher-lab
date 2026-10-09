@@ -1,0 +1,62 @@
+# MANT-CEN2 (9 Oct 2026, LANE FAMILY-A2j account 2): Loc. 694/08 unseen frames 0133-0266 (first 50 of the 139 still uncovered past 0130, in frame order; 0177 skipped = read by MANT-0177) + planted controls. www.archiv.sachsen.de frames.tsv full-size URLs, 51 requests (50 targets + clear control 0125), 2.3 s apart, all HTTP 200 image/jpeg; images in scratch only (re-fetch from images/loc694-08-09/frames.tsv); code controls 0510/0511/0579/0580 read from disk. 5 sheets of 12 tiles (10 targets + code control + clear control 0125), sheets_d.py seed 6085, key sheet_key_e.tsv read after all five were classified. sheet_read = blind read at 600 px; a frame read code or possible was eye-checked at ~1100 px (code column = that result); a sheet "none" is NOT eye-checked (weak evidence: light single codes can be missed). Grade M throughout: eye readings, no transcription.
+loc	frame	kind	sheet_label	sheet_read	code	glossed	density_eye	est_tokens	note	http	sha256_16
+694/08	0153	target	D1-1	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	ecb7ee8463c486e4
+694/08	0510	control+	D1-2	code	y	-			planted control (control+), sheet read code	disk	914cc03bd531a4fb
+694/08	0156	target	D1-3	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	c0e326fca4099fa0
+694/08	0133	target	D1-4	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	d5a246e7a26d80f3
+694/08	0140	target	D1-5	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	8407776b5990aa81
+694/08	0136	target	D1-6	possible	y	partly	heavy	60-90	stamp ~102 left leaf: code runs in most lines of the right page, small words above some runs (interlinear)	200 image/jpeg	d7a77727676ea3d3
+694/08	0143	target	D1-7	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	44ad7fbd737f164c
+694/08	0138	target	D1-8	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	c882c164b07c80fc
+694/08	0125	control-	D1-9	none	n	-	-		planted control (control-), sheet read none	200 image/jpeg	54216fd3d6c80791
+694/08	0150	target	D1-10	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	9c8b49f0dd6abaae
+694/08	0148	target	D1-11	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	2ce4b4efcdd3b177
+694/08	0146	target	D1-12	possible	y	partly	medium	40-60	Berl. 25 juin 1712, stamp 111 (No. 48): two long runs in one paragraph, marginal words above some groups	200 image/jpeg	662e549ab66ff2d0
+694/08	0182	target	D2-1	code	y	n	light	25-35	right-hand text with two code runs (13.25.19.29.1 ... 25.90.2.17.28.10.38.29), unglossed, inline	200 image/jpeg	8e549cb9222d6d61
+694/08	0162	target	D2-2	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	2f7db5c77211fecf
+694/08	0167	target	D2-3	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	70ac4dad649e843b
+694/08	0179	target	D2-4	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	4f5d4ad6824c4bae
+694/08	0164	target	D2-5	possible	n	-	-		sheet possible; clear French text, no code groups at ~1100 px (stamp 125)	200 image/jpeg	5ab5df692daa0a9c
+694/08	0158	target	D2-6	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	3ef04a79800f2b24
+694/08	0125	control-	D2-7	none	n	-	-		planted control (control-), sheet read none	200 image/jpeg	54216fd3d6c80791
+694/08	0172	target	D2-8	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	ff9f9e9afbf65495
+694/08	0174	target	D2-9	code	y	partly	medium	35-50	stamp 133: code runs in the right page lines, small words above some groups, marginal note	200 image/jpeg	28ee934f31059a62
+694/08	0169	target	D2-10	possible	y	partly	medium	35-50	stamp 129: runs in lines of both pages, words above several groups	200 image/jpeg	4c30d401ade73912
+694/08	0579	control+	D2-11	possible	y	-			planted control (control+), sheet read possible	disk	8dcd15ef969fe268
+694/08	0184	target	D2-12	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	c72915509e2cdc15
+694/08	0194	target	D3-1	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	d545d0b84d763edf
+694/08	0209	target	D3-2	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	ab93fb33b2a5a764
+694/08	0187	target	D3-3	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	9a39b506fa39f864
+694/08	0202	target	D3-4	possible	n	-	-		sheet possible; copy of a letter ("Copie d'une lettre", 1712), clear, no code	200 image/jpeg	d221bd30fc8f4a03
+694/08	0197	target	D3-5	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	0ab7a21d57bd99ea
+694/08	0192	target	D3-6	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	4bc069b9e05b5da2
+694/08	0125	control-	D3-7	none	n	-	-		planted control (control-), sheet read none	200 image/jpeg	54216fd3d6c80791
+694/08	0207	target	D3-8	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	134551b89c4dbccf
+694/08	0511	control+	D3-9	code	y	-			planted control (control+), sheet read code	disk	bd7feb7abd0c702b
+694/08	0199	target	D3-10	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	6c073f03ebd092f1
+694/08	0204	target	D3-11	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	b16d73a2afae6b02
+694/08	0189	target	D3-12	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	798d646e9a79caf5
+694/08	0229	target	D4-1	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	47fe90ed6035869c
+694/08	0238	target	D4-2	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	125c0ce98041aee2
+694/08	0227	target	D4-3	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	53fa83f4bc749309
+694/08	0217	target	D4-4	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	fe452bc8420f6026
+694/08	0233	target	D4-5	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	54b852a967ecde5b
+694/08	0224	target	D4-6	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	9e6f064cea8f6c92
+694/08	0219	target	D4-7	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	bc70e5124c0baafa
+694/08	0125	control-	D4-8	none	n	-	-		planted control (control-), sheet read none	200 image/jpeg	54216fd3d6c80791
+694/08	0212	target	D4-9	possible	y	n	light	5-8	stamp 163: a few short groups (33 / 1 / 9) in two lines	200 image/jpeg	8223316916d723e1
+694/08	0580	control+	D4-10	possible	y	-			planted control (control+), sheet read possible	disk	87b9a48263cf8980
+694/08	0222	target	D4-11	possible	n	-	-		sheet possible; clear text (stamp 172), no code groups	200 image/jpeg	14f1e142844231b8
+694/08	0236	target	D4-12	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	19fb149ca1ace376
+694/08	0263	target	D5-1	possible	n	-	-		sheet possible; clear text (stamp 203), no code groups	200 image/jpeg	6c95df928ead5592
+694/08	0256	target	D5-2	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	b1d79a78add29ff2
+694/08	0246	target	D5-3	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	256a31e4e5b6a8dc
+694/08	0253	target	D5-4	possible	y	n	light	12-18	stamp 145: one run near the foot (7.60.44.12.33.3.11.9.21) and 51.28.257, unglossed	200 image/jpeg	9df1f0d782ac767e
+694/08	0510	control+	D5-5	code	y	-			planted control (control+), sheet read code	disk	914cc03bd531a4fb
+694/08	0258	target	D5-6	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	1d7433eef4dcb249
+694/08	0260	target	D5-7	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	e9669e42a1b2ce55
+694/08	0250	target	D5-8	possible	y	partly	light	4-8	stamp 193, Mezieres 8 juillet 1712: single codes (155, 55.177) with marginal words	200 image/jpeg	801b22354a067beb
+694/08	0243	target	D5-9	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	3acc30e2f67c1be1
+694/08	0248	target	D5-10	possible	y	n	light	6-10	stamp 192: short run in line 3 of the right page (29.2.5.1)	200 image/jpeg	599e5db1a9cf5880
+694/08	0125	control-	D5-11	none	n	-	-		planted control (control-), sheet read none	200 image/jpeg	54216fd3d6c80791
+694/08	0266	target	D5-12	none	n	-	-		sheet none, not eye-checked	200 image/jpeg	6801fbd71b5da4af

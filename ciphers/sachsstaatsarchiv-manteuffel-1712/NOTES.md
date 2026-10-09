@@ -3496,3 +3496,23 @@ codes (~$5.5 each); one native look at 0494 T036 (54 vs 59) and 0474 T119 (34 vs
 
 ## V-MANTC pointer (9 Oct 2026, verifier, account 2, LANE FAMILY-A2j)
 AUDIT.md "## V-MANTC (9 Oct 2026)": code 19 not established as a conflict (the 0398/0410 '19's read as the y-shaped 4, 14 = n; native re-read owed); 0474 withdrawn as a 63 witness (second digit illegible, 66 fits), 0008's single 63 = ff stands; **54 is a real rule-4 conflict** (u in 7 slots on 3 leaves, t in 5 slots on 4 leaves, all Manteuffel to Flemming Nov 1712 - Jan 1713) -> key.tsv row 54 grade C -> M, readings regenerated (main C 202 -> 199; f0052_09 C 29 -> 28); f0494_08 T134 is 59 by eye (fix owed); 0176 r01 '171'/'17.1' not settled at crop scale, leans 17.1, low.
+
+## MANT-CEN2 (9 Oct 2026, 15:21-15:3x UTC by date -u, LANE FAMILY-A2j account 2): 694/08 census, frames 0133-0266 (50 frames, sheet scale + eye check)
+
+Brief: .claude/briefs/runs/2026-10-09-ytbiz-family-1510-jobs.md "MANT-CEN2". No transcription, no decode, no reading, no key edit.
+**Prior work.** `tools/prior_work.py ... --step-type crop --fetch` (exit 4: nine target-level live-claim LEADs naming this slug, none this frame range; the LOOK is the
+"no gloss/clear-copy check recorded for this leaf" row, not applicable to an inventory; 3-tomokiyo/3-solver/4-editions UNCHECKED, not needed for a census).
+Check 1 (own work): the uncovered list was recomputed by script from every TSV naming 694/08 frames (592 frames, 453 seen, 139 uncovered past 0130; 0177 is in the
+list but already read by MANT-0177, so skipped; the next 50 in order are 0133-0266). Checks 2-5 not applicable (no leaf read, no decode).
+**Method.** As MANT-CENSUS (inv08d.tsv): 5 contact sheets of 12 tiles, 10 targets + one code control (0510 x2, 0511, 0579, 0580 from disk) + the clear control 0125,
+order shuffled (sheets_d.py seed 6085), classified at 600 px before the key was opened (sheet_key_e.tsv); every frame read code or possible was eye-checked at ~1100 px.
+Per-frame rows: `mant0608/inv08e.tsv` (written by `gen_inv08e.py`). Requests: www.archiv.sachsen.de 51 (all 200, 2.3 s apart, "sachsen take/release" in ROOM.md); no other host.
+**Controls (rule 3):** clear control read none 5/5; code controls read code 3/5 and possible 2/5 (0579, 0580), so a code-bearing tile was flagged 5/5 -- moderate-to-heavy
+leaves, so this says nothing about light single codes (same limit as inv08d).
+**Result (50 frames):** 9 code-bearing on eye check: **0136** (stamp ~102, heavy, ~60-90 tokens, small words above some runs), **0146** (Berl. 25 juin 1712, stamp 111, No. 48,
+~40-60), **0174** (stamp 133, ~35-50, partly glossed), **0169** (stamp 129, ~35-50, partly glossed), **0182** (two unglossed runs, ~25-35), light ones **0253** (~12-18, one run
+7.60.44.12.33.3.11.9.21), **0248** (~6-10), **0212** (~5-8), **0250** (~4-8, marginal words). 4 sheet possibles cleared at ~1100 px (0164 0202 0222 0263: clear text);
+37 sheet none, not eye-checked (weak evidence). Values seen in passing are in the 1-401 range; nothing in 381-625 was looked for at this scale, no value entered, key.tsv unchanged.
+Inventory count: 694/08 now about 503 of 592 seen; about 88 uncovered remain past 0266 (next in order 0268 ...); all grades M, eye readings only. No novelty class; status unchanged (partial).
+Next: 0136/0146/0174/0169 as known-answer candidates (glossed, ~$4.5 each, premise check first) and 0182 (unglossed, best read candidate of the batch, ~$4.5); the next 50 uncovered
+frames from 0268 (~$3, sachsen take/release).
