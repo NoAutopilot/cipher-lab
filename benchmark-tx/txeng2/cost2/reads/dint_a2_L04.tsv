@@ -1,0 +1,20 @@
+line	seg	order	gloss	signs	note
+L04	s1	1	bastiuon	-:- 0 0 4 f # y t	gloss ends in long flourish; small r-like stroke above t (gloss mark or part of sign?); -:- at line start is dot-bar-dot
+L04	s1	2	-	a	first a sits in gap between bastiuon flourish and qu; could belong to next word
+L04	s1	3	quarante	a v w 4 f v	letters after quar cramped, could be quarate with nasal mark; second a has long top stroke
+L04	s1	4	cinq	0 # 1 f	1 has small left flag
+L04	s1	5	+	a	unexpanded-sign marker
+L04	s1	6	|	Z	unexpanded-sign marker; Z large
+L04	s1	7	malhp	m 4 0 v sq	gloss letters uncertain (m-a-l-h-p, p descender touches v); m is z-tailed
+L04	s1	8	zavoy	# T v w 9	first gloss letter z/long-s shape, could be S; gloss flourish runs over 9
+L04	s2	9	-	. 1 . sq a	dots raised either side of 1; no gloss seen above
+L04	s2	10	qui	m L #	L could be 1 with foot bar
+L04	s2	11	d	y	gloss is a round-backed d
+L04	s2	12	o	x	gloss is a filled dot/small o
+L04	s2	13	cbt	m 0 f	gloss letters uncertain, could be ebt/obt
+L04	s2	14	cinq	m NEW:h-shape with top crossbar and hooked descender	only 2 signs under 4-letter gloss; v may also belong here
+L04	s2	15	|	v	unexpanded-sign marker
+L04	s2	16	peuhn	c v L c #	gloss letters uncertain (p with crossed descender, e, u/w, h, n); v crossed by gloss descender
+L04	s2	17	dam	Z f T m w	first sign Z-like with top bar (could be B/3); lower loop below it is next-line writing; gloss m flourish runs over w
+L04	s2	18	+	y	unexpanded-sign marker
+L04	s2	19	hou	p sq	p written xp; first gloss letter H/tt shape; line ends with a filler dash

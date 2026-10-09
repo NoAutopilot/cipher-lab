@@ -1,0 +1,45 @@
+passage	pos	sign_id	alt	conf	note
+L04	1	S16	S42	L	line start; heavy delta/triangle with base
+L04	2	S45		M	c/6 with dot inside
+L04	3	S56		H	t3
+L04	4	S53		M	looped p-like with crossing stroke
+L04	5	S93		H	w with long s
+L04	6	S69	X_THETA2	M	theta crossed by long bar
+L04	7	S35		H	m with tick
+L04	8	S84		H	looped x/ae
+L04	9	S80		M	8 with bar
+L04	10	S26		M	9 with dot over underline
+L04	11	S32		H	looped z3
+L04	12	S45		M	c with dot
+L04	13	S37		M	delta/8-like tall loop
+L04	14	S80		H	8 barred (start crop s2)
+L04	15	S56		H	t3
+L04	16	S70		H	v with bar
+L04	17	S66		H	z with dot above
+L04	18	S87	X_NEW	L	P/q-like with left hook
+L04	19	S93		H	w with long s
+L04	20	S80		H	8 barred
+L04	21	S47		H	epsilon/e
+L04	22	S23		M	dot + lambda
+L04	23	S13	S95	M	o with dot inside
+L04	24	S93		M	w with long s
+L04	25	S62		H	beta
+L04	26	X_THETA2	S69	M	theta with two bars
+L04	27	S23		M	dot + lambda
+L04	28	S88	S24	M	crossed double bar
+L04	29	S45		M	c with dot
+L04	30	S47		H	epsilon (start crop s3)
+L04	31	S80		H	8 barred
+L04	32	S23		M	lambda with dot
+L04	33	S88	S24	M	crossed double bar
+L04	34	S93		H	w with long s
+L04	35	S75		H	plus
+L04	36	S17		H	z
+L04	37	S84		H	looped x/ae
+L04	38	S65	S80	M	8 with dot
+L04	39	S73	S49	L	slash with dots / lambda-like
+L04	40	S88	S24	M	crossed bar
+L04	41	S91	S58	M	t-y looped
+L04	42	S52		H	3
+L04	43	S74		H	b with blob
+L04	44	S75		H	plus; line end

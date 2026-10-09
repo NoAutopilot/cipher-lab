@@ -1,0 +1,52 @@
+line	seg	order	gloss	signs	note
+L02	s2	1	CLEAR:et	-	clear word before cipher
+L02	s2	2	-	Z	no gloss above first sign; could be z
+L02	s2	3	ma	v y	
+L02	s2	4	dit	a f 3	f uncertain (could be 4 with flag)
+L02	s2	5	-	L z	no gloss above; last sign z/3 uncertain
+L03	s1	1	amvoye	II 4 a c y p w m o a	gloss start sits over y p; word boundary approximate; 'a c' could be one a sign
+L03	s1	2	ung	# 1 . sq	
+L03	s1	3	dassister	0 0 f 3 c 1 . 4 9	gloss boundaries approximate
+L03	s1	4	a	1 .	
+L03	s1	5	geneuf	f 4 0 0'	gloss read 'geneuf'/'geneue'
+L03	s2	6	deux	# 0 m sq z	boundary with previous approximate
+L03	s2	7	millione	p 4 + 1 9 f sq 3	sign after + could be L; gloss could be 'millions'
+L03	s2	8	dor	y w	
+L03	s2	9	despaigne	# 0 sq 0 v	gloss spelling uncertain (despaigne/despagne)
+L03	s2	10	-	1 9 4 0	no gloss seen above; 1 could be L
+L03	s2	11	CLEAR:Il	-	
+L03	s2	12	CLEAR:ha	-	
+L03	s2	13	CLEAR:laisse	-	
+L03	s2	14	+	y t	unexpanded mark above; may belong to line above
+L03	s2	15	a	v	
+L03	s2	16	-	.	dot after v, may be punctuation
+L04	s1	1	bestiaux	-:- 0 0 4 f # 9 4	gloss read uncertain (bestiaux/bestiuux); 4 after 9 is flagged r-like sign
+L04	s1	2	quarante	a c v w 4 f	gloss abbreviated 'quarant'
+L04	s1	3	ung	v' 0	
+L04	s1	4	+	#	
+L04	s1	5	|	1	
+L04	s1	6	malles	f a Z m 4	gloss spelling uncertain (mailes/malles)
+L04	s1	7	chargez	0 v sq # T v w o 1 . sq	sign-to-word boundaries approximate
+L04	s1	8	qui	a m 1	
+L04	s2	9	doibt	# y p m	
+L04	s2	10	avoir	o f m	gloss could be 'avoit'
+L04	s2	11	pouvoir	NEW:h-like hooked sign v c v	gloss written 'pewr'/'pouvr' abbreviated
+L04	s2	12	dans	L c #	
+L04	s2	13	troie	Z f T m w	gloss read 'thoia'/'troie' uncertain; T could be II/pi
+L04	s2	14	-	y p sq	no gloss seen above
+L04	s2	15	-	NEW:long dash line-filler	end of line dash
+L05	s1	1	jours	1 9 m	
+L05	s1	2	+	w	
+L05	s1	3	|	0 0'	
+L05	s1	4	prendre	v' 0 w 1 . f	
+L05	s1	5	la	3 c	
+L05	s1	6	chaulny	0 4 1 # T	gloss read uncertain
+L05	s1	7	de	1 z p	
+L05	s1	8	+	f	
+L05	s2	9	bessoumazance	# 1 . m 0 0' y a f v 1 4 t	gloss reading very uncertain; '4 t' is a flagged sign with a cross written below line
+L05	s2	10	qui	0 a	
+L05	s2	11	un	a 1 .	gloss 'vn'
+L05	s2	12	chevance	# 0 f v'	gloss read uncertain ('chraune')
+L05	s2	13	desfletu	# x 1	gloss largely illegible
+L05	s2	14	-	m v a sq 3 1 . 0' # y c NEW:n-shape 1 .	no gloss seen above; final '.' may be two dots (:)
+L05	s2	15	CLEAR:criana	-	clear closing word, reading uncertain (C with flourish)

@@ -1,0 +1,16 @@
+line	seg	order	gloss	signs	note
+L05	s1	1	-	1	opening stroke left of gloss; may belong to Jours
+L05	s1	2	Jours	NEW:curled-f-without-bar m w	first sign a looped f/g shape with no cross-bar (could be f); w is omega shape
+L05	s1	3	-	0' 0 v' 0'	gloss above illegible (a '+' over first 0' then small 'tiE'-like marks, possibly further '+'); 0' here = o with hooked ascender (delta shape); v' = triangle with tall ascender; last 0' has tall ascender like d
+L05	s1	4	prendre	w . 1 . f 3 c 0	first sign w (omega) seen at end of q1/start of q2; dots are separate signs
+L05	s1	5	le	4 1	
+L05	s1	6	chemin	# T 1 Z p f	gloss read 'chem..' ending ~'in'; # could belong to 'le'; p written xp; f is double-barred f
+L05	s1	7	de	# 1 . m 0	gloss 'de' sits over 1 . m; # and 0 at edges of the word
+L05	s1	8	+	0'	decipherer '+' over a delta-shaped 0'
+L05	s1	9	Lafounafiana	y a f v 1 NEW:triangle-over-cross Z' 0' a a . 1 .	gloss reading uncertain (La fou na f/s iana); triangle sign has a cross below it (could be 4 with t); Z' = z with cross-bar; second a could be c (written 'ac')
+L05	s2	10	qui	# 0 f v'	v' = triangle with tall ascender through end of gloss
+L05	s2	11	mi	# x 1	gloss partly lost ('mi..' or 'mir' with trailing dash)
+L05	s2	12	egraune	m v a sq 3 1 .	gloss reading uncertain (~'-graune'/'grauue'); a is alpha shape
+L05	s2	13	+	0'	'+' over delta-shaped 0'; gloss nearby 'de'/'gr' uncertain
+L05	s2	14	flech	# y c ? 1 .	gloss uncertain (~'d flech'/'flarh'); ink blot covers 1-2 signs after c (an 'n'-like sign visible); final : read as 1 .
+L05	s2	15	CLEAR:Grace	-	clear word at end of line, large G; could read 'Graue'

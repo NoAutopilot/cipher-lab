@@ -1,0 +1,46 @@
+passage	pos	sign_id	alt	conf	note
+L02	1	S87	X_NEW	L	line start; P-like stem with loop and foot stroke
+L02	2	S45		M	c with inner dot
+L02	3	S94	S55	M	circle over cross
+L02	4	S93		H	w with tall S
+L02	5	S62	S31	L	small loop with curl descending below line
+L02	6	S69		M	barred theta
+L02	7	S65	S80	M	8 with dot above, bar from previous touches
+L02	8	S49	S30	M	slash between two dots
+L02	9	S89		H	double bar
+L02	10	S93		H	w with tall S
+L02	11	S84		M	looped x2 shape
+L02	12	X_NEW	S61	L	j-like stroke with descender
+L02	13	S93		M	w shape at segment end
+L02	14	S74	S77	M	b/6 shape
+L02	15	S35		H	m with tick
+L02	16	S42	S16	M	triangle/X with tick
+L02	17	S56		H	t3
+L02	18	S80		H	8 with crossbar
+L02	19	S84		M	looped x2 shape
+L02	20	S91	S58	L	y/ij-like with diaeresis
+L02	21	S17		H	Z
+L02	22	S77	S54	L	b with dot below
+L02	23	S61		H	q/9
+L02	24	S52		H	3
+L02	25	S22		M	wavy w
+L02	26	S75	S24	M	cross with blob
+L02	27	S23		M	lambda with dot
+L02	28	S31		M	looped l
+L02	29	S70		H	crossed v
+L02	30	S84		H	looped x2 shape
+L02	31	S88	S24	M	double-barred slash with dot
+L02	32	S93		H	w with tall S
+L02	33	S40		M	x-like with descender
+L02	34	S57		H	reversed c with dot
+L02	35	S60	S69	M	theta crossed by double bar
+L02	36	S93		H	w with tall S
+L02	37	S23		M	lambda with dot
+L02	38	S37		M	delta/8 shape
+L02	39	S34		M	ls
+L02	40	S57		H	reversed c
+L02	41	S17		H	Z
+L02	42	S73		H	cross with dots
+L02	43	S89		H	double bar
+L02	44	S80		H	8 with crossbar
+L02	45	S74		H	6 with dot; line end
