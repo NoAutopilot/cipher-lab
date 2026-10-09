@@ -1,0 +1,23 @@
+line	seg	order	gloss	signs	note
+L03	s1	1	-	II 4	no gloss directly above; "auec" starts above the a; the gloss may be shifted right of its signs
+L03	s1	2	auec	a y p	
+L03	s1	3	ce	w m	w carries its own top bar (ϖ)
+L03	s1	4	bn	o a #	gloss written "b.n" and the b is ink-blotted; the o sits just left of the b and is small (o, not 0)
+L03	s1	5	dauff	1 . sq 0' 0	the gloss "ff" has a cross stroke that comes down over 0' 0; the 0' stroke could be that gloss descender
+L03	s1	6	hdor	f 3 c . 1 .	gloss written ".hdor"; the ". 1 ." run lies under the end of hdor / the gap before "a"
+L03	s1	7	a	4	4 = Δ with flag
+L03	s1	8	gehn	9 . 1 . f	gloss partly cut at the crop edge (g.. / gehn)
+L03	s1	9	f	NEW:z-with-crossbar 0 0'	gloss written ". ſ" with a crossbar; the cross comes down onto the 0', so it may be a + marker; the first sign is a z/4-like shape with a horizontal crossbar (could be 4 or z)
+L03	s1	10	dux	# 0 m sq Z	gloss written "d.ux"; # 0 lie partly under the gap before d
+L03	s1	11	nul	p 4 +	
+L03	s1	12	home	L 9 f sq	the 9 has a hook curling left at the bottom; sq lies under the end of "home"
+L03	s1	13	-	3	no gloss above; could belong to "home" or "dor"
+L03	s1	14	dor	9 w	"or" is underlined in the gloss; w has its own bar
+L03	s2	15	-	#	under the gap between "dor" and "d."
+L03	s2	16	dsseuagin	sq 0' T 9 NEW:z-with-crossbar 0	gloss written "d.ſſeu..agin" across the crop edge, middle letters uncertain (eu/ai); a long dash follows over the last 0; the 0' ascender may be the gloss ſ descender; the z-with-crossbar sign is the same as in row 9
+L03	s2	17	CLEAR:Il		clear word in the cipher line
+L03	s2	18	CLEAR:ha		clear word in the cipher line
+L03	s2	19	CLEAR:laisse		clear word; the final letter could be a or e, and a swash runs on to the right
+L03	s2	20	-	y #	a slash "/" above the y may be the decipherer's | marker or the laisse swash; a tall stroke, probably an ascender from the next line, crosses the #
+L03	s2	21	a	v	
+L03	s2	22	-	.	a dot right of the v, near the cipher row; may be a full stop rather than a sign
