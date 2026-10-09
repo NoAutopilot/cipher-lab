@@ -11334,6 +11334,47 @@
       "depth_sentence": "On 5 Nov 1864 the War Department ordered the arrest at Nashville of Col. Thomas T. Tunstall as a rebel agent, with the seizure of his papers, timed for 10 a.m. on Monday 7 Nov.",
       "depth_check": "code clause: The Infant = Secretary of War, oakum = Arrest, rambling = Following, walpole = Rebel, Emily = 10 AM, Embrace = Nashville read passim (E325 and the sibling copies 9889/1, 9890/0 carry the same clause); ciphertext eye-checked on the ledger image by FV-MS18c; no external check of the content located",
       "depth_note": "16 H of 16 code-word groups"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-MS18b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-MS18b verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-MS18b)' section 4",
+      "reading_version": "MS18-R2 9 Oct 2026 (reading.md), grades as in AUDIT (FV-MS18b) s.3 (pandora = Colonel H; Kennerly per image, transcription Kennedy)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger): C. A. Dana, Washington, to Rosecrans, St Louis, 5 Nov 1864: arrest of rebel agents at St Louis, St Joseph, New Madrid and Cape Girardeau (E325)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 5 November 1864 C. A. Dana telegraphed Rosecrans at St Louis that the Secretary of War ordered the arrest at 10 AM on the Monday following of rebel agents in Missouri -- Wm Kendall and Capt. Lewis Kennerly at St Louis, John or Wm Ritchie at St Joseph, James Hunter at New Madrid and Col. Wm Harper at Cape Girardeau -- and the seizure of their papers; the agents' list is printed in Horan's Confederate Agent (1954) and a same-day order for Chicago and Cincinnati in the Official Records, but this telegram was not located there or in the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "N3 one audit (FV-MS18b), weak: the names and most words are clear in the holder's public transcription, the agents' list is printed (Horan 1954) and a same-day sibling order is printed in an 1892 OR volume not yet identified; not N4: Grant/Rosecrans/Dana papers, Missouri press, NARA RG 107 not searched",
+      "depth": "D3",
+      "completeness": "16 H of 16 code-word groups (names plain)",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.223, pointer 9889, E325"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.223, pointer 9889, E325",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.223, pointer 9889, E325"
+      ],
+      "depth_sentence": "On 5 November 1864 the War Department ordered Rosecrans to arrest five named rebel agents at St Louis, St Joseph, New Madrid and Cape Girardeau at 10 AM on the following Monday and to seize their papers.",
+      "depth_check": "code clause: Indigo = Secretary of War, Odor = Arrest, Emily = 10 AM, Walpole = Rebel, Gaul = St Louis, Aragon = Missouri, Pandora = Colonel, Insanity = C. A. Dana; external (non-statistical): mssEC 19 pointer 9114, the same-day order to Davenport, Cincinnati ('directs the arrest at [time] on Monday morning next of the following named [rebel] Agents and the seizure of their papers'); Horan, Confederate Agent (1954), the informant's list naming Kendall, Capt. Lewis Kennerly, Ritchie, Col. Wm. Harper and the Missouri towns; image eye-checked by FV-MS18b",
+      "depth_note": "16 H of 16 code-word groups"
     }
   ],
   "lanes": [
