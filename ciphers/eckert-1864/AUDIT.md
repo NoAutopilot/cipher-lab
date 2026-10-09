@@ -11754,3 +11754,95 @@ Requests: hdl.huntington.org 16 (10 CISOSEARCHALL, 5 item info, 1 IIIF; all 200)
 list; all 200) + print_check's 2 (500, reset); be-api.us.archive.org 18 (print_check, several 502); www.loc.gov 9 (all 200);
 www.googleapis.com 8 + print_check's 6; api.openalex.org 7 and api.crossref.org 1 (print_check); api.semanticscholar.org 3 + print_check's 3 (429
 on 2); api.core.ac.uk 2 (1 x 500).
+
+## AUDIT (FV-MS18e)
+
+Verifier FV-MS18e (account 1, for LANE LEDGER), 9 Oct 2026, 20:48-21:0x UTC by `date -u`; a separate session from the reader MS18-R3, not
+protecting its conclusions. Scope: N1 confirmation of **E331, E332, E336, E337, E338, E339** (NOTES "## MS18-R3"), which the reader placed in print
+from OCR page heads only. Sent ledger mssEC 18 = Huntington object 10074, Cipher No. 1. Nothing decoded beyond key look-ups in key.md. Key source for
+all six: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Intake gate (20:48 UTC): `eckert-1864: partial (line 3) --
+edition/page or full-text-search citation found within 6 lines`. Prior work (`tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC
+18;folio=<pointer>;date=..;sender=..;recipient=..' --step-type audit --offline`, one per entry): exit 4 on each, 1-own LEAD x5 = the slug-level live
+claims of this wave (FV-MS18d, FIX-FM14, MS18-R4, KEY-LAV and the lane), none naming these six entries (CLEAR for this scope).
+Scripts: `ms18/fv_ms18e_hdl.py` (+ `.out`), `ms18/fv_ms18e_info.py` (+ `.out`).
+
+### 1. Print, on the page image (IA `_page_numbers.json` leaf -> page image, read at 1400 px; ids from `ciphers/eckert-1862/ec18/or_volumes.tsv`)
+| ID | volume (IA id) | leaf | page head on the image | print as read on the image |
+|---|---|---|---|---|
+| E331 | OR I/47 pt 3 (`warofrebellion014703rootrich`) | 568 | "560 OPERATIONS IN N. C., S. C., S. GA., AND E. FLA. [Chap. LIX." | Hq. Armies of the U.S., Washington, D. C., May 22, 1865 -- 2 p.m.; Maj. Gen. Schofield, Raleigh, N. C.: "You may inform General J. E. Johnston that he will be permitted to go to Canada through the States, as he may select, not to return to the United States without first obtaining leave to do so." U. S. Grant, Lieutenant-General. Second item on the page. |
+| E332 | OR I/37 pt 2 (`warofrebellion372unit`) | 582 | "576 OPERATIONS IN N. VA., W. VA., MD., AND PA. [Chap. XLIX." | Washington, August 2, 1864 -- 3.30 p.m.; Maj. Gen. Hunter, Monocacy, Md.: "General Kelley defeated the enemy last night near Cumberland, and drove him back toward Old Town, on the Potomac. Can you not push forward Averell's cavalry to cut off his retreat?" H. W. Halleck, Maj. Gen. and Chief of Staff. Third item. |
+| E336 | OR I/41 pt 4 (`warofrebellion414unit`) | 398 | "390 LOUISIANA AND THE TRANS-MISSISSIPPI. [Chap. LIII." | Washington, November 1, 1864 -- 11.30 a.m.; Maj. Gen. Rosecrans (via Saint Louis): Dispatches from General Thomas ... re-enforcements ... A. J. Smith should move by forced marches; his men can rest on the steamers ... no delay for payments, as Hood is crossing the Tennessee. Thomas may want the re-enforcements landed at Savannah or Clifton, or sent direct to Nashville. Consult him by telegraph when the troops reach Saint Louis. General Grant directs that all available troops in Saint Louis and vicinity be sent immediately to General Thomas. Halleck, Chief of Staff. First item. |
+| E337 | same | 428 | "420 LOUISIANA AND THE TRANS-MISSISSIPPI. [Chap. LIII." | Washington, November 3, 1864 -- 12 m.; Maj. Gen. Curtis, Newtonia, Mo.: "The Secretary of War directs that you assume command of all troops belonging to the Department of the Missouri and now serving on the western border of that State, and pursue Price toward the Arkansas River, or till he reaches the troops of General Steele or Reynolds. Having completed this duty, you will return the troops to their respective commands. You will furnish a copy of this order to the several commanders, and also to Major-General Rosecrans. Regiments or portions of regiments belonging to Department of Arkansas will be sent to General Steele." Halleck; footnote "Erroneously quoted by Curtis as of November 7". Last item (lower half). |
+| E338 | same | 446 | "438 LOUISIANA AND THE TRANS-MISSISSIPPI. [Chap. LIII." | Washington, D. C., November 5, 1864 -- 2.30 p.m.; Brig. Gen. Rawlins: "It is reported that there is an Illinois regiment at Cairo not required there, and under orders for Atlanta. If so please order it to Paducah or to General George H. Thomas or where it may be most needed. Are there not some troops at Cape Girardeau or at New Madrid that could be spared? I think every man you can possibly get should be hurried to General Thomas. If Beauregard can be checked on the Tennessee River, Sherman can begin his own movement at once." Halleck. Last item (lower half). |
+| E339 | OR I/43 pt 1 (`warofrebellion431unit_0`) | 82 | "62 OPERATIONS IN N. VA., W. VA., MD., AND PA. [Chap. LV." | War Department, Washington, October 12, 1864 (Sent 9 p.m.); Maj. Gen. Sheridan: "This Department again tenders its thanks to you, and through you to Major-General Torbert, Generals Merritt and Custer, and the officers and soldiers under their command, for the brilliant victory won last Sunday by their gallantry over the rebel cavalry in the Shenandoah Valley. Under gallant leaders your cavalry has become the efficient arm in this war that it has proved in other countries, and is winning by its exploits the admiration of the Government and the country." Edwin M. Stanton, Secretary of War. Second item. |
+
+**All six page numbers are confirmed on the image** (the reader's OCR heads were right). Diff, word for word, print against the ledger text and
+reading.md (date, hour, sender, addressee, body):
+- **E331:** body identical (ledger "Yuma inform" = "You may inform", "Can a day" = Canada, "willbe", "thro": the clerk's spellings). Hour: the time
+  word Helen = 2 PM (key, TIME page) agrees with the print's 2 p.m.; the ledger's closing "7 PM" is the hour of sending or copying. Addressee
+  Schofield, Raleigh and signer Grant agree.
+- **E332:** body identical in sense. Topple = Near agrees; **"Comb her land" is "Cumberland" spelled by syllables**: the decoder's Comb = [Jefferson]
+  is wrong here (print). Friend (Kelley), Dovers (Averell's), Warrick (retreat) stay unkeyed, C by print. Hour 3.30 PM, Hunter at Monocacy agree.
+  Signer: key word Jordan = "General-in-Chief" is the code's label; the print signs Halleck, "Major-General and Chief of Staff" (his title from
+  March 1864) -- same man, no conflict of substance.
+- **E336:** body identical. **"Clifton" is plain in the print** ("Savannah or Clifton"); the decoder's Clifton = [Fort Valley] (key.md H) is wrong
+  in this message. The holder's sibling 9882 (1 Nov 1864, to Van Duzer for Thomas: "land at Clifton or Garter or Embrace") uses the same plain
+  Clifton beside Garter = Savannah and Embrace = Nashville, which confirms it. Hour: time word Fanny = 11 AM (key) vs print 11.30 a.m. (a half-hour
+  gap; the ledger header has no hour; M on the minutes). Hudson = Hood by print (C, not a key edit); webb, Macbeth, tablet decode as the print.
+- **E337:** body identical. **"offal" here is "of all"** ("assume command of all troops"); the decoder's Offal = [Ammunition] (key.md H) is wrong in
+  this message. "fractions" = "portions" (print; the decoder's Fraction = [Pensacola] is wrong here). Archery = Arkansas (print "Arkansas River"),
+  Wilson = West(ern), Mellow = Steele, Montrose = Reynolds, polkers = commanders, "Ewill" = You will: all agree. Addressee: the print has Curtis at
+  Newtonia; the ledger sends it to Clowry at St Louis for Curtis "in field" (route, not conflict). Hour 12 m agrees.
+- **E338:** body identical. **"New Madrid" is plain in the print**; the decoder's Madrid = [Maj Gen O. O. Howard] (key.md H) is wrong here.
+  "Canby" = "can be" (plain sound-spelling, not Gen. Canby). Lantern / Lady = Thomas agree. Hour 2.30 PM agrees. The ledger's closing "weather
+  clear & cool" is the operator's addition, not in the print.
+- **E339:** body identical. **Three decoder errors, each a plain word read as a code word:** "plug <insertion>(won)</insertion>" = won (the leaf's
+  own interlinear gloss and the print agree; decoder Plug = [1]); "Gallant leaders" = gallant (decoder Gallant = [15]); "andes winning" = "and is
+  winning" (decoder Andes = [Donelson]). Hour: time word Nelly = 8.30 PM vs print "(Sent 9 p.m.)" -- written 8.30, sent 9 (no conflict). Signer
+  Infant = Secretary of War = Stanton agrees.
+**No difference of substance in any of the six.** Every difference is a plain word the decoder took for a code word (Comb, Clifton, Offal,
+Fraction, Madrid, Plug, Gallant, Andes) or an hour within thirty minutes.
+
+### 2. Holder's full text (Huntington CONTENTdm p16003coll11, `CISOSEARCHALL`, all pointers; hdl take 20:56-20:57 UTC, 12 requests)
+One rare word per entry (the reader's multi-word queries returned 0 or own-page hits): Canada 26 (own 10016; 10041 and 10043 read: July 1865,
+other messages); Averell 78 (9803, 9806 read: late July 1864 Hunter/McCaine traffic, other messages); Clifton 36 (own 9881; 9882 read: the 1 Nov 1864
+sibling to Thomas above, a different message); Reynolds 81 (9886 not among them: Montrose is in cipher; no Nov 1864 neighbour); Girardeau 5 (own
+9888; 9889 = the 5 Nov 1864 Dana copies, FV-MS18c s.1; 9068, 2568, 2571 other years); Custer 16 (own 9864; 10028 read: June 1865, other). **No
+period clear copy of any of the six at any pointer.** Not searched: the mssEC 19 received ledger by date (the six are sent messages); NARA RG 107.
+
+### 3. Grades (reading.md as of this audit; decode.py counts, then print)
+| ID | decoder H/C/S | wrong code reads found by the print | after correction | U |
+|---|---|---|---|---|
+| E331 | H 7 | 0 | H 7; body C by print | 0 |
+| E332 | H 15, C 1 | Comb | H 14, C 1; unkeyed Friend, Dovers, Warrick C by print | 0 |
+| E336 | H 30, S 1 | Clifton | H 29, S 1; unkeyed Hudson (= Hood) C by print | 0 |
+| E337 | H 30 | Offal, Fraction | H 28; body C by print | 0 |
+| E338 | H 21 | Madrid | H 20; body C by print | 0 |
+| E339 | H 25 | Plug, Gallant, Andes | H 22; body C by print | 0 |
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E331 | **N1** (text known) | period | D3 (H 7 + C by print, no gap; external: OR I/47 pt 3 p.560 on the image) | printed word for word, Grant to Schofield, 22 May 1865, 2 p.m. |
+| E332 | **N1** (text known) | period | D3 (H 14 + C 1 + C by print; external: OR I/37 pt 2 p.576) | printed word for word, Halleck to Hunter, 2 Aug 1864, 3.30 p.m. |
+| E336 | **N1** (text known) | period | D3 (H 29 + S 1 + C by print; external: OR I/41 pt 4 p.390) | printed word for word, Halleck to Rosecrans, 1 Nov 1864, 11.30 a.m. |
+| E337 | **N1** (text known) | period | D3 (H 28 + C by print; external: OR I/41 pt 4 p.420) | printed word for word, Halleck to Curtis, 3 Nov 1864, 12 m. |
+| E338 | **N1** (text known) | period | D3 (H 20 + C by print; external: OR I/41 pt 4 p.438) | printed word for word, Halleck to Rawlins, 5 Nov 1864, 2.30 p.m. |
+| E339 | **N1** (text known) | period | D3 (H 22 + C by print; external: OR I/43 pt 1 p.62) | printed word for word, Stanton to Sheridan, 12 Oct 1864, sent 9 p.m. |
+Not D4: no fresh rule-7 re-derivation in a separate session. Safe sentence (each): "The ledger copy of this telegram reads with the period key
+(Cipher No. 1) to the text printed in the Official Records (ser. I, vol./pt, page as above); the plaintext was already in print." Unsafe: "first
+decipherment", "previously unread", any word implying the text is new. No status.json or SO rows (N1, per the brief).
+
+### 5. Fixes for the next FIX job (not applied here; reading.md is decode.py output)
+- Plain-word overrides (exceptions, per entry, not key edits; the key rows stay H for their other uses): E332 "Comb" plain (Cumberland, with "her
+  land"); E336 "Clifton" plain; E337 "offal" plain (= of all) and "fractions" plain (= portions); E338 "Madrid" plain (New Madrid); E339 "plug" =
+  won (leaf gloss), "Gallant" plain, "andes" plain (= and is). Then `decode.py --write`, `--check`.
+- ciphertext.txt `###` headers of all six: replace "text checked against the print, page not eye-checked" with "print page eye-checked
+  (FV-MS18e, IA leaf <n>)" -- leaves 568, 582, 398, 428, 446, 82 as in s.1.
+- NOTES "## Remaining gaps (MS18-R3)": the last gap (page images of the six prints) is closed by this audit.
+- A reader-side lesson for the next MS18 reader: plain words that coincide with code words (Clifton, Madrid, Gallant, Andes, Offal) are the main
+  error class on printed rows; check each H token against the print's word at that position before counting it.
+
+### 6. Requests
+hdl.huntington.org 12 (6 CISOSEARCHALL, 6 dmGetItemInfo; all 200); archive.org 14 (4 `_page_numbers.json`, 6 page images, 4 `_djvu.txt`; all 200,
+to scratch, 1.6 s apart). be-api 0; googleapis 0. Subagents 0.
