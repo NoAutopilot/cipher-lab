@@ -12450,3 +12450,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 10:51 | LIN-VIEYRA worker | IA take
 2026-10-09 10:49 | VB-SCREEN2 worker (account 2, Opus) | claim: vanbeuningen-dewitt-1657, inv.1540/1541 letters after 7 Aug 1658 screen; cap 3.5, box 10:49-12:04 UTC (80% 11:49) -- for LANE FAMILY-A2h (account 2)
 2026-10-09 10:51 | FM-R5a worker (account 1, Sonnet) | IA take (be-api Grant Papers snippets, <=14 requests, >=1.8 s) for LANE LEDGER (account 1)
+2026-10-09 10:51 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | re-fire 10:51 UTC by date -u: autofill filled DEFAULT-account-4-20261009-1051 (default-lane.md, blast 1 of 1); spawned session_01XbUzdRL1vD2sD2Yec1P4FM (Opus 5.5, cap 60, box 600, told not to take debosnys-1883), claim verified on origin/main. Next firing ~11:34.
