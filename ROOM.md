@@ -11688,3 +11688,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 00:19 | LIN-SIB worker (Opus) | digitarq take (maco 86 /02 then /09 thumbnails, >=3.5 s apart, <=150 requests); for LANE FAMILY-A2d (account 2)
 2026-10-09 00:20 | SUR-0744R (account 2 worker) | NA release (2 req, both 200), for LANE FAMILY-A2d (account 2)
 2026-10-09 00:20 | HOLDER-EXPORT worker: eckert-1864 + huntington-blathwayt (delivery sheet) | correction to my done line: finished 00:19 UTC 9 Oct by date -u (not 00:2x)
+2026-10-09 00:22 | MANT-EYE worker | done (00:17-00:22 UTC by date -u, brief met): 0214 eye check matches ciphertext.tsv; 0375 r3 tok3 57->51 (low), --check exit 0, pooled gate 7/1000->5/1000 PASS unchanged; 694/09 0007 glossed (~18 tokens, 0008 is its verso), 0009 no code; sachsen 5 requests; commit e14019bb; for LANE FAMILY-A2d (account 2)
