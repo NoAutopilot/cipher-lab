@@ -1,0 +1,13 @@
+Q01	best=F	second=R	confidence=high	pi-omega (ϖ): a flat overbar on a w-shaped double loop (F's table cell is circled)
+Q02	best=H	second=M	confidence=medium	n-shaped sign whose right stroke drops into a curled descender, like ŋ (H's table cell is circled)
+Q03	best=C	second=K	confidence=medium	y-shaped sign with a rounded descender curling back left
+Q04	best=F	second=R	confidence=medium	pi-omega (ϖ) at the bottom of the tile, cut off; the vertical centre holds only a stray stroke (F's table cell is circled)
+Q05	best=S	second=K	confidence=low	a large loop on the right with a dot inside and a tail curving down to the lower left (∂/9-like); faint stroke at left
+Q06	best=P	second=H	confidence=high	m-shape whose final stroke runs down into a long descender (P's table cell is circled)
+Q07	best=F	second=R	confidence=high	pi-omega (ϖ) with a heavy overbar
+Q08	best=O	second=U	confidence=high	X-shaped cross whose right-lower arm ends in a small loop
+Q09	best=B	second=J	confidence=high	cursive k with a looped ascender
+Q10	best=L	second=J	confidence=low	ascender with a loop at the top and a horizontal foot stroke (ℓ/Ꝃ-like); unclear
+Q11	best=F	second=R	confidence=high	pi-omega (ϖ) with an overbar, near the bottom of the tile
+Q12	best=O	second=U	confidence=high	X-shaped cross with a heavy upper-left arm and a looped lower-right end
+Q13	best=F	second=R	confidence=high	pi-omega (ϖ) with an overbar

@@ -4,4 +4,18 @@ controls	Q02	K-T46	control	T46	T46	T13	medium	HIT
 controls	Q03	K-T36a	control	T36	T36	T31	high	HIT
 controls	Q04	K-T16	control	T16	T16	T17	high	HIT
 controls	Q05	K-T36b	control	T36	T31	T36	medium	MISS
+f302v	Q01	f302v_L02_p11	test	T57	T32	T51	high	SETTLED-T32
+f302v	Q02	K-T17	control	T17	T17	T38	medium	HIT
+f302v	Q03	K-T46	control	T46	T46	T13	medium	HIT
+f302v	Q04	f302v_L10_p32	test	T57	T32	T51	medium	SETTLED-T32
+f302v	Q05	f302v_L07_p21	test	T47	T33	T13	low	UNSETTLED
+f302v	Q06	K-T16	control	T16	T16	T17	high	HIT
+f302v	Q07	f302v_L05_p29	test	T57	T32	T51	high	SETTLED-T32
+f302v	Q08	K-T36b	control	T36	T36	T31	high	HIT
+f302v	Q09	f302v_L07_p29	test	T47	T27	T47	high	SETTLED-T27
+f302v	Q10	f302v_L09_p9	test	T47	T19	T47	low	UNSETTLED
+f302v	Q11	f302v_L10_p28	test	T57	T32	T51	high	SETTLED-T32
+f302v	Q12	K-T36a	control	T36	T36	T31	high	HIT
+f302v	Q13	f302v_L03_p35	test	T57	T32	T51	high	SETTLED-T32
 # controls: GK 4/5 PASS
+# f302v: GK 5/5 PASS
