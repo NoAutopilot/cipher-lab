@@ -13411,3 +13411,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 23:33 | TXE2-VIV102-ANCHOR worker (account 4, Opus) | claim (23:3x UTC 9 Oct by date -u): PREREG-txeng2-15 DV1c anchor checks on vivonne1573-f102r-dev, read-free scripts only, cap 4, box 23:33-00:18 UTC (80% 00:09); for LANE TX-ENGINEER-2
 2026-10-09 23:33 | VB-EYE worker (Sonnet) | NA take: 0120/0134 at 1500px, <=6 requests -- for LANE FAMILY-A2m (account 2)
 2026-10-09 23:33 | TXE2-VIVSHEET worker (account 4, Opus) | claim (23:3x UTC 9 Oct by date -u): PREREG-txeng2-15 SH-VIV value-blind Saint-Gouard exemplar sheet from sources/cryptiana Vivonne1-6 + VivonneSig drawings, zero network, cap 4, box 45 min (to 00:18 UTC; 80% 00:09); for LANE TX-ENGINEER-2
+2026-10-09 23:34 | MANT-207 worker | claim: sachsstaatsarchiv-manteuffel-1712 code 207 second witness + G01 third blind reads, disk only, Opus cap 3, box 23:22-00:22 UTC 10 Oct (80% 00:10) -- for LANE FAMILY-A2m (account 2)
