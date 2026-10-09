@@ -324,7 +324,7 @@ blind_k07_sort.tsv). Crops live in the session scratchpad only; no image is comm
 the three K19 instances MONLUC-K07 did not label (L02:15, L02:37, L04:1) as decoys. K38 is added because the key sheet's K38 cell
 (keysheet_monluc1_ids.png: a C-shaped curl enclosing a 3/z, table value t) looks like the form-A shape; MONLUC-2's sentence "Form A
 matches no cell drawn on the key sheet" is questioned here, to be settled by where the two K38 crops fall.
-**Pre-registration (written and pushed before the call).** One Sonnet call is shown only `blind_sheet.png` (34 tiles numbered 1-34 in
+**Pre-registration (written to NOTES.md before the call; correction: not pushed then -- tools/room.py --push committed only ROOM.md, so these files first reached git in d0c78c38a, after the call).** One Sonnet call is shown only `blind_sheet.png` (34 tiles numbered 1-34 in
 shuffled order, seed 1709; no line, no gloss, no values, no label names) and asked to sort the centre sign of each tile into shape
 groups. "Form A" = the sorter group holding the most of the 17 crops marked prevA=1 in blind_k07_sort.tsv (MONLUC-2's blind form A on
 f.86, 7; MONLUC-K07's reader form A on c268, 10); a tie for most = undecided, and --try is not run. Every c268 and f.86 token in that
