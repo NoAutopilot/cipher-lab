@@ -1,6 +1,6 @@
 # PREREG MQS-TAIL -- `tools/freq.py --tail N` (LANE MQS-3, account 4)
 
-Written 9 Oct 2026, 10:1x UTC by date -u, and pushed BEFORE any control below was run. Research row M23
+Written 9 Oct 2026, 10:06 UTC by date -u (commit eb3396cef; first draft said "10:1x", corrected), and pushed BEFORE any control below was run. Research row M23
 (month, date, place and enclosure-mark symbols as one positional class; Lasry, Biermann and Tomokiyo 2023,
 Cryptologia 47:2, pp.124-125 Fig. 12, p.137 n.99). Brief: `.claude/briefs/runs/2026-10-09-ytbiz-mqs3-tail.md`.
 
