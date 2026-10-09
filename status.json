@@ -11130,9 +11130,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM10b)'"
+        "AUDIT.md '## AUDIT (FV-FM10b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-27)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM10b verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -11153,7 +11154,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): G. D. Sheldon, Fort Monroe, to T. T. Eckert, 27 May 1864: the York at Yorktown and the Mattapony at West Point too wide to string wire across (E319)",
       "line": "Read at grade H with War Department Cipher No. 1: on 27 May 1864 Sheldon at Fort Monroe reported to Eckert that the York at Yorktown was a little over half a mile across and the Mattapony at West Point three quarters, too wide to string wire over because tall-masted vessels must pass; not located in the Official Records (ser. I vol. 36 pt 3 prints the next days' telegrams on the same line), Plum's Military Telegraph or the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3 one audit (FV-FM10b); 'pony' plain (Mattapony, M); tulip = Open at this occurrence (FIX-FM12, 9 Oct 2026: set by a per-entry gloss, reading.md now prints Open); not N4: Grant Papers vols. 11-12 by be-api snippets only (two queries 502), RG 107 and the press not searched, Google Books weak",
+      "gap": "N3 two audits (FV-FM10b; AUD2-LEDGER-27 held N3); 'pony' plain (Mattapony, M); tulip = Open at this occurrence (FIX-FM12, 9 Oct 2026: set by a per-entry gloss, reading.md now prints Open); not N4: Grant Papers vols. 11-12 by be-api only (no in-volume control; 3 of 14 phrases 502 each), NARA RG 107 not reached, JSTOR rows open",
       "depth": "D3",
       "completeness": "15 H + 1 M of 16 code-word tokens ('pony' plain-phonetic, Mattapony)",
       "phrases": [
@@ -11164,16 +11165,17 @@
         "Huntington mssEC 25 (obj 5952) p.151, pointer 5695, E319"
       ],
       "depth_sentence": "On 27 May 1864 Sheldon told Eckert that the York at Yorktown and the Mattapony at West Point were too wide to string telegraph wire across because navigation, including tall-masted vessels, had to stay open.",
-      "depth_check": "code clause: Windsor = River, Hastings = Yorktown, Homer = West Point, Spoon = Mile read passim; external (non-statistical): OR I/36 pt 3 p.322 Sheldon to Eckert 29 May 'will lay the cables', p.281 the route across at Yorktown and the Mattapony, Plum II submarine cables across the York and Mattapony",
+      "depth_check": "code clause: Windsor = River, Hastings = Yorktown, Homer = West Point, Spoon = Mile read passim; external (non-statistical): OR I/36 pt 3 p.322 Sheldon to Eckert 29 May 'will lay the cables', p.281 the route across at Yorktown and the Mattapony, Plum II submarine cables across the York and Mattapony; tulip = Open re-derived from the key book page (mssEC 41 p.22 l.14, AUD2-LEDGER-27); OR I/36 pt 3 p.262 Butler to Sheldon 28 May (the York at Gloucester Point, the Mattapony); holder 11803 (cable laid at Yorktown 30 May)",
       "depth_note": "15 H + 1 M of 16 code-word tokens ('pony' plain-phonetic, Mattapony)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM10b)'"
+        "AUDIT.md '## AUDIT (FV-FM10b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-27)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM10b verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -11194,7 +11196,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): T. T. Eckert, Washington, to G. D. Sheldon, Fort Monroe, 27 May 1864: O'Brien to stay at Bermuda Hundred in charge of the cipher work; Caldwell and Doren for the White House line (E320)",
       "line": "Read at grade H with War Department Cipher No. 1: on 27 May 1864 Eckert told Sheldon he regretted ordering O'Brien away from Bermuda Hundred, kept him there in charge of the cipher work, and gave Caldwell the cipher work and Doren the repairs once the White House line was built; the order it retracts is printed in the Official Records (ser. I vol. 36 pt 3 p.262), this telegram was not located there or in the Huntington's full-text search (searched 9 Oct 2026).",
-      "gap": "N3 one audit (FV-FM10b); 4 code groups, the rest clear; not N4: Grant Papers vols. 11-12 by be-api snippets only (two queries 502), RG 107 and the press not searched, Google Books weak",
+      "gap": "N3 two audits (FV-FM10b; AUD2-LEDGER-27 held N3); 4 code groups, the rest clear; not N4: Grant Papers vols. 11-12 by be-api only (no in-volume control; 3 of 14 phrases 502 each), NARA RG 107 not reached, JSTOR rows open",
       "depth": "D3",
       "completeness": "4 H of 4 code-word groups ('Bermuda', 'white' plain)",
       "phrases": [
@@ -11205,16 +11207,17 @@
         "Huntington mssEC 25 (obj 5952) p.158, pointer 5702, E320"
       ],
       "depth_sentence": "On 27 May 1864 Eckert reversed his order moving O'Brien from Bermuda Hundred, keeping him there for the cipher work, and assigned Caldwell the cipher work and Doren the repairs on the new White House line.",
-      "depth_check": "code clause: Penfield/Pembroke = Cipher, Zebra/Unity = period read passim; external (non-statistical): OR I/36 pt 3 p.262 Eckert to O'Brien 27 May 1864 'prepare for work in direction of White House ... bring away operators, builders, and material', the order this telegram retracts",
+      "depth_check": "code clause: Penfield/Pembroke = Cipher, Zebra/Unity = period read passim; external (non-statistical): OR I/36 pt 3 p.262 Eckert to O'Brien 27 May 1864 'prepare for work in direction of White House ... bring away operators, builders, and material', the order this telegram retracts; p.262 re-read by AUD2-LEDGER-27: a different telegram (to O'Brien), not a print of E320",
       "depth_note": "4 H of 4 code-word groups ('Bermuda', 'white' plain)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM10b)'"
+        "AUDIT.md '## AUDIT (FV-FM10b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-27)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM10b verifier (account 1)",
       "depth_date": "9 Oct 2026",
@@ -11233,9 +11236,9 @@
       "grade": "N3",
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
-      "title": "Eckert 1864 (Fort Monroe ledger): A. H. Caldwell, Head Qrs Army of the Potomac, to T. T. Eckert (copy to Sheldon), 1 Sept 1864: lay the cable on the north side of the river, safer from anchors (E321)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 1 Sept 1864 Caldwell at Army of the Potomac headquarters advised Eckert to lay the cable on the north side of the river, which took less cable and was safer from anchors, the channel lying nearest the south shore; not located in the Official Records (ser. I vol. 42 pt 2) or the Huntington's full-text search, which holds two further cipher copies (searched 9 Oct 2026).",
-      "gap": "N3 one audit (FV-FM10b); two further cipher copies (pointer 5781 foot, wire order; 12319, received copy); 'D do wren' = D. Doren (M); no external check of the content located (holds D2); not N4: Grant Papers vols. 11-12 by be-api snippets only (two queries 502), RG 107 and the press not searched, Google Books weak",
+      "title": "Eckert 1864 (Fort Monroe ledger): Hd Qrs Army of the Potomac (text ending 'D. Doren', signed Caldwell) to T. T. Eckert (copy to Sheldon), 1 Sept 1864: lay the cable on the north side of the river, safer from anchors (E321)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 1 Sept 1864 a telegram from Army of the Potomac headquarters, its text ending 'D. Doren' and signed Caldwell, advised Eckert to lay the cable on the north side of the river, which took less cable and was safer from anchors, the channel lying nearest the south shore; not located in the Official Records (ser. I vol. 42 pt 2), Butler's or Grant's papers, or the Huntington's full-text search, which holds two further cipher copies (searched 9 Oct 2026).",
+      "gap": "N3 two audits (FV-FM10b; AUD2-LEDGER-27 held N3); two further cipher copies (pointer 5781 foot, wire order; 12319, received copy); 'D do wren' = D. Doren (M); no external check of the content located (holds D2); not N4: Grant Papers vols. 11-12 by be-api only (no in-volume control; 3 of 14 phrases 502 each), NARA RG 107 not reached, JSTOR rows open; sender open: 'D do wren' (D. Doren) is inside the cipher grid and Caldwell below it, so the text may be Doren's sent over Caldwell's name (AUD2-LEDGER-27 s.3)",
       "depth": "D2",
       "completeness": "3 H of 3 code-word groups ('cab bell', 'D do wren' plain-phonetic)",
       "phrases": [
@@ -11245,8 +11248,8 @@
       "documents": [
         "Huntington mssEC 25 (obj 5952) p.238, pointer 5782, E321"
       ],
-      "depth_sentence": "On 1 Sept 1864 Caldwell advised Eckert that the cable should be laid on the north side of the river, needing less cable and less exposed to being dragged up by anchors, since the channel ran nearest the south shore.",
-      "depth_check": "code clause: Windsor = River (E319 and passim), Waxy = South, Tremble = North read passim; ciphertext checked by two cipher copies (5781, 12319); no external check of the content located",
+      "depth_sentence": "On 1 Sept 1864 Army of the Potomac headquarters (a text ending 'D. Doren', sent over Caldwell's signature) advised Eckert that the cable should be laid on the north side of the river, needing less cable and less exposed to being dragged up by anchors, since the channel ran nearest the south shore.",
+      "depth_check": "code clause: Windsor = River (E319 and passim), Waxy = South, Tremble = North read passim; ciphertext checked by two cipher copies (5781, 12319); no external check of the content located; holder 12367/12368 (Doren and the Fort Powhatan - Swan's Point cable, 12-13 Sept) and 13243 (cable breaks from anchors) are context, not a check of the content (D2 held, AUD2-LEDGER-27)",
       "depth_note": "3 H of 3 code-word groups ('cab bell', 'D do wren' plain-phonetic)"
     },
     {

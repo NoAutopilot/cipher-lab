@@ -1,0 +1,12 @@
+S2 | military telegraph York River Mattapony cable 1864 | 1 | George Kennan and the Challenge of Siberia (1999)
+S2 | Eckert O'Brien Bermuda Hundred telegraph cipher 1864 | ERROR HTTP Error 429: 
+S2 | Doren Caldwell telegraph cable James River 1864 | 0 | 
+S2 | Union military telegraph submarine cable Civil War Virginia | ERROR HTTP Error 429: 
+CORE | military telegraph York River Mattapony cable 1864 | 4476739 | [Postal Telegraph-Cable Company billing to T. N. Carswell] (1943); Telegraph, 1864-04-06 (1864); Telegraph, 1864-11-30 (1864); Telegraph, 1864-09-07 (1864); Telegraph, 1864-02-10 (1864); Telegraph, 1864-11-09 (1864)
+CORE | Eckert O'Brien Bermuda Hundred telegraph cipher 1864 | 1019591 | Telegraph, 1864-04-06 (1864); Telegraph, 1864-11-30 (1864); Telegraph, 1864-09-07 (1864); Telegraph, 1864-02-10 (1864); Telegraph, 1864-11-09 (1864); Telegraph, 1864-10-19 (1864)
+CORE | Doren Caldwell telegraph cable James River 1864 | 4465137 | [Postal Telegraph-Cable Company billing to T. N. Carswell] (1943); Telegraph, 1864-04-06 (1864); Telegraph, 1864-11-30 (1864); Telegraph, 1864-09-07 (1864); Telegraph, 1864-02-10 (1864); Telegraph, 1864-11-09 (1864)
+CORE | Union military telegraph submarine cable Civil War Virginia | 9699754 | Civil War political and military leaders, Union, ca. 1861-1865 (1861); Regulations of the Virginia Military Institute, 1854 (1854); Regulations of the Virginia Military Institute, 1870 (1870); Regulations of the Virginia Military Institute, 1848 (1848); Col. George S. Patton during Civil War, ca. 1861 [portrait] (1861); Captain John Quincy Marr [portrait]. First Confederate officer killed  (1861)
+LOC-CA | telegraph Yorktown Mattapony "West Point" wire | total 1 | Image 1 of New-York daily tribune (New-York [N.Y.]), March 1 1864-03-15
+LOC-CA | telegraph cable anchors "north side" James | total 5 | Image 3 of The Portland daily press (Portland, Me.), Septemb 1864-09-27; Image 3 of The Portland daily press (Portland, Me.), October 1864-10-19; Image 1 of The Willimantic journal (Willimantic, Conn.), May 1864-05-27; Image 3 of The Portland daily press (Portland, Me.), October 1864-10-17; Image 1 of The daily Gate City (Keokuk, Iowa), November 18,  1864-11-18
+LOC-CA | O'Brien telegraph "Bermuda Hundred" cipher | total 0 | 
+requests {'s2': 4, 'core': 4, 'loc': 3}

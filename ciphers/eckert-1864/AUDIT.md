@@ -11228,3 +11228,127 @@ rows. Re-derivation: `python3 ciphers/eckert-1864/decode.py --check` -> "reading
 - Lead (not this entry, I): OR pp.321-322 prints 5713/1's "Mack and party" as "J. M. Palmer and party"; whether "Mack" is a code word or the
   editors' substitution is for whoever audits 5713. "blissfull" (plain, as written) may be the operator A. H. Bliss (Plum vol. 2): lead only, I.
 Requests: hdl.huntington.org 11 (10 CISOSEARCHALL, 1 IIIF; all 200); archive.org 7 (print_check 4 incl. one 403 on a wrong Bates id; 1 metadata, 1 advancedsearch, 1 Bates djvu); be-api 33 (several 502); www.googleapis.com 11; api.openalex.org 12; api.semanticscholar.org 5 (2 x 429); api.crossref.org 1; api.core.ac.uk 4; www.loc.gov 2 (1 x 503).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER-27)
+
+Second verifier AUD2-LEDGER-27 (account 4, for the orchestrator (account-4) and LANE LEDGER (account 1)), 9 Oct 2026, 17:43-18:0x UTC by
+`date -u`; a separate session and account from the reader FM-R7b, the first auditor FV-FM10b and the fixer FIX-FM12 (all account 1); this
+session had not read or audited these entries before. Scope: **E319, E320, E321** (WORK-QUEUE AUD2-LEDGER-27). Nothing decoded beyond key
+look-ups. Key source: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Committed: this section;
+`fortmonroe/aud2_ledger27_keys.py` + `.out` (key look-up of every body word); `fortmonroe/aud2_ledger27_hdl.py` + `.out` (12 CONTENTdm queries
+the first audit did not run, 2 item infos, 6 IIIF pages to scratch); `fortmonroe/aud2_ledger27_phrases.txt` + `aud2_ledger27_sources.tsv`
+(tools/print_check.py input; its TSV kept in scratch, summarised below); `fortmonroe/aud2_ledger27_scholar.py` + `.out` (S2, CORE, Chronicling
+America); six JSTOR-QUEUE.tsv rows. Re-derivation: `python3 ciphers/eckert-1864/decode.py --check` -> "reading.md is current" (at the start and
+again before the push; FIX-FM12 had already applied FV-FM10b's s.5 fixes, so reading.md now prints E319's tulip as [Open]).
+
+### 1. Re-derivation, key book and image
+- **Key look-ups (independent, by script, body words only):** E319: plum x2 / pocket = Cross, Windsor = River, Hastings = Yorktown, spoon x2 =
+  Mile, pekin / pedlar x2 = Comma, Homer = West Point, Vernon = Point, tulip = Open (H row) / Period (S row), zodiac = Period, torch = Of the:
+  **15 code groups**; pony has the key row 9 (numeral) but stands as plain "Mattie pony" = Mattapony; little, must, learn, bill, line are
+  line-indicator rows standing as plain words in the running text, as the decoder treats them. E320: penfield / pembroke = Cipher, zebra / unity
+  = Period: **4**; Bermuda (key: White River) and White (key: Report) plain, as filed; must, charge, work, line, all, think, answer plain
+  line-indicator words. E321: tremble = North, windsor = River, waxy = South: **3**; think and side plain line-indicator words; anchors has no key
+  row in this text's sense (filed plain). **No disagreement with FV-FM10b's or reading.md's counts (H 15, H 4, H 3).**
+- **E319's tulip re-derived from the key book itself, not from the gloss:** the local image of mssEC 41 p.22 (pointer 339,
+  `images/mssEC41_p339.jpg`; the IIIF route answered 501 this session) shows the printed word **Tulip** on line 14, left, with the hand entry
+  **"Open - ed - ing"**, a `#` in the left margin, and "Out post" on the right (Turtle). So the H row Tulip = Open (key.md l.769) is what the
+  book says; the S row Tulip = Period (l.1298) is an inference from nine stop positions. In E319 tulip stands as a predicate ("navigation must
+  remain tulip for vessels"), where only Open reads. **Re-derived: Open, H, from the key book**, agreeing with FV-FM10b and FIX-FM12. The same
+  page confirms Torch = Of the (l.10 L) and Tremble = North (l.7 R).
+- **Image eye check this session, every grid row of all three entries** (IIIF 2400 px to scratch, PIL autocontrast strips; `tools/iiif_lines.py
+  --image` on 5695 found 8 lines in FV-FM10b's region, used to place the strips; nothing committed): 5695 header "Geo D Sheldon F. Monroe"
+  (the preceding entry's address line), "Ft Monroe May 27 1864 / Maj Eckert Di", nine 9-column rows from "distance plum York windsor" to "line as the
+  route up peninsula will inquire further", "Geo D Sheldon"; 5702 "Washn May 27 1864 / Geo D Sheldon F Monroe", seventeen 7-column rows from "I
+  regret having ordered OBrien away from" to "as quick as possible get answer soon", "Thos T Eckert"; 5782 "Head Qrs A. P. Sept 1/64 / Maj. Eckert
+  Di - Sheldon F", six 7-column rows from "I think Cab bell should be laid" to "is nearest waxy shore D do wren", and **"Caldwell" below the grid**.
+  **Every code word and plain word matches the transcription**; no slip found.
+
+### 2. New searches (families FV-FM10b did not cover, plus a fresh phrase pass)
+- **tools/print_check.py** (14 phrases: 5 E319, 5 E320, 3 E321, 1 control; sources Plum 1882 vol. 2, **Butler Correspondence vols. 4 and 5**
+  (cached djvu, full text: May-Aug and Aug 1864 onward), **Grant Papers vols. 11 and 12** (lending-only, be-api inside the volume), OR I/36 pt 3,
+  OR I/42 pt 2; plus ia-global, Google Books (keyed, `country=US`) and OpenAlex (keyed)). **Control:** "Herman Frank Waterhouse was
+  convalescing" found exact in Plum vol. 2 djvu, in 6 IA items (Plum copies) and in Google Books (Plum reprint 2025): the routes work. Results:
+  **every E319, E320 and E321 phrase no hits** in Butler IV and V (full djvu, the families FV-FM10b had only by one be-api query), Plum vol. 2 and OR
+  I/42 pt 2 (full djvu); Grant Papers vols. 11-12 by be-api: 11 of 14 phrases no hits each, 3 each answered 502 (not retried) -- a weak negative
+  without an in-volume control; OR I/36 pt 3 via be-api 9 no hits, 5 x 502 (covered instead by the full djvu text, next item); ia-global 11 no
+  hits, 2 x 502; OpenAlex 13 no hits, 1 bag-of-words return (52 works, none on the subject). Google Books returns loose-match noise (236-375
+  volumes per phrase, no 1864 telegraph matter in any top 5), except the E320 phrase whose top 5 included *The Telegrapher* (1865) and the *Army
+  and Navy Journal* (1868): followed up with six tight queries (`aud2_ledger27_gb.py` + `.out`): no snippet carries E320's (or E319's, E321's)
+  words; the one telegraph return, *Telegraph and Telephone Age* (1910), is an operator's reminiscence ("O'Brien having been ordered to North
+  Carolina. I found a line here ... from Bermuda Hundred"), later context, not E320.
+- **OR I/36 pt 3 p.262 and its neighbours, re-read this session** (`warofrebellion013603rootrich` djvu text, pages placed by the running heads
+  "262 OPERATIONS IN SE. VA. AND N. C." and "263 CORRESPONDENCE, ETC. UNION"): p.261-262 Butler to Halleck 27 May (debark at West Point), Dodge
+  to Shaffer 27 May; **p.262 Eckert to R. O'Brien, Washington, 27 May 1864**: "I want you to prepare for work in direction of White House from
+  Williamsburg without delay ... to enable you to bring away operators, builders, and material ... Confer with Sheldon as to plans and route ...
+  You must use all the arbitraries in your cipher ... Leave 'snow' out. Butler's headquarters to work cipher with his card key" -- an order to
+  O'Brien, not E320 (which is to Sheldon and reverses the "bring away" part); then **Butler to Sheldon, 28 May**: "the telegraph route most easily
+  protected would be across the York at Gloucester Point, thence up to West Point, thence across the Mattapony" (context for E319; FV-FM10b cited
+  pp.281 and 322 but not this); Gillmore to Butler 27 May (wire for entanglements); p.263 Shaffer to Gillmore. Letters-only counts over the whole
+  volume: "regret having ordered", "careful working", "better posted", "caldwell will", "mackintosh", "string wire", "high masts", "navigation
+  must", "dragged up", "nichols can remain" **0 each**. **FV-FM10b's retraction stands: p.262 does not print E320**; E320 is not on pp.261-263.
+- **Huntington CONTENTdm** (12 CISOSEARCHALL queries, all pointers, none run by FV-FM10b): "O Brien Bermuda" 7 and "OBrien cipher" 11 (other
+  dates and senders; 5665, 12 May, Eckert to O'Brien; none a copy of E320), "White house line" 45 (5702 own; 5697, 5700, 5706, 5709 the same week's
+  neighbours, other texts), "Mackintosh builders" 1 (5702 own), "Doren repairs" 2 (5702 own; 13453, Nov), "cable north side" 0, "laid on north
+  side" 1 (4059, Chattanooga 1863), "cable anchors" 4 (5782 own; 13243 Nov 1864 "three breaks ... all caused by vessels anchors"; 13550 Dec; 11448
+  another site), "Yorktown Gloucester" 24 and "Gloucester Point cable" 2 (**11803**, Sheldon to Eckert 31 May: "laid cable at Yorktown ... Mac
+  started from Gloucester Point" -- the outcome of E319's report; 5740, 12 June), "navigation open" 2 (other theatres), "Doren cable" 15 -- the
+  received book carries Doren's own telegrams signed **"D Doren"** from Hd Qrs A. P., among them **12367** (Sept 12: "Had we not better leave line
+  up from Ft Powhattan to Swans Point for present? D Doren") and **12368** (Sheldon, Sept 13: "Mr Doren agrees with me that it is best to leave
+  land line up ... if cable should fail ... New Cable works well"). **No clear copy of E319, E320 or E321** among the snippets read; the two cipher
+  copies of E321 (5781 foot, 12319) were re-fetched as item info and agree with FV-FM10b's description.
+- **Scholarship and press** (`aud2_ledger27_scholar.py`): Semantic Scholar (keyed, 1.1 s): 2 queries 0-1 unrelated results, 2 answered 429 (not
+  retried); CORE v3 (keyed): 4 queries, bag-of-words returns (1864 newspapers titled "Telegraph", VMI regulations), nothing on the York or
+  Mattapony crossings, O'Brien, Caldwell or Doren; Chronicling America (loc.gov JSON, 1864): 'telegraph Yorktown Mattapony "West Point" wire' 1
+  keyword page (NY Tribune, March), 'telegraph cable anchors "north side" James' 5 keyword pages (Portland, Willimantic, Keokuk; not read: no phrase
+  match on this route), 'O'Brien telegraph "Bermuda Hundred" cipher' 0. None of the three telegrams is press matter (internal telegraph-office
+  business): no route to the press is known.
+- **Sender's and recipient's printed papers:** Eckert, Sheldon, O'Brien, Caldwell and Doren have no printed correspondence that this search or
+  FV-FM10b found; Butler's (vols. 4 and 5), Grant's (vols. 11 and 12), the OR volumes and Plum are as above.
+- **JSTOR-QUEUE.tsv:** 6 rows queued 9 Oct 2026 (E319, E320, E321, families (i) and (ii)); they do not block (24 Sept 2026 rule).
+- **Not searched / unreachable:** NARA RG 107 telegram books (no NARA key; catalogue unusable without it); Grant Papers vols. 11-12 full text
+  (lending-only); the local press of Hampton Roads and City Point; mssEC received books beyond the holder's own transcriptions.
+
+### 3. Finding: who sent E321
+The image puts **"D do wren" in the last three cells of the cipher grid** (the enciphered body) and **"Caldwell" below the grid**, where E319
+and E320 carry their senders' signatures; the received copy 12319 has do and wren scattered inside the transposed body and "Caldwell" after it.
+Doren (superintendent of construction, Army of the Potomac) signs his own telegrams "D Doren" from Hd Qrs A. P. in the same weeks and was handling
+the James River cable (12367, 12368). Two readings fit: (a) the body is Doren's message, signed "D. Doren" inside the cipher, sent over the
+cipher operator Caldwell's name; (b) Caldwell's own message that ends by naming Doren. The layout favours (a) but does not settle it. FV-FM10b's
+title and safe sentence ("Caldwell ... advised Eckert") take (b) without saying so: **an attribution over-claim, corrected here in the safe
+sentence and in status.json's title and line**; the reading (the words) is unchanged and its grades stand.
+Context for E321 found this session (12367, 12368: a cable at Fort Powhatan - Swan's Point under way by 12-13 Sept with Doren; 13243: cable
+breaks from vessels' anchors) is consistent with the telegram but does not check its specific content (which shore, why): **D2 held**.
+
+### 4. Class and depth
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E319 | **N3 (held)** | period | **D3 (held)**: H 15 of 15 code groups + pony plain M 1 (93.8% H); tulip = Open re-derived from the key book page; external non-statistical: OR I/36 pt 3 pp.262 (Butler to Sheldon 28 May, the York at Gloucester Point and the Mattapony), 281, 322, Plum II, holder 11803 (cable laid at Yorktown 30 May); image re-checked | no prior plaintext or decipherment located after FV-FM10b's search and this one |
+| E320 | **N3 (held)** | period | **D3 (held)**: H 4 of 4 code groups, the rest clear; external non-statistical: OR I/36 pt 3 p.262, Eckert's same-day order to O'Brien (re-read: a different telegram, the one E320 reverses); image re-checked | no prior plaintext or decipherment located after FV-FM10b's search and this one; p.262 re-confirmed as not a print of it |
+| E321 | **N3 (held)** | period | **D2 (held)**: H 3 of 3 code groups; holder context 12367/12368/13243 consistent, not a check of the content; sender attribution open (s.3) | no prior plaintext or decipherment located after FV-FM10b's search and this one |
+
+- Not N4 for any: NARA RG 107 and the Grant Papers vols. 11-12 full text not reached; JSTOR rows open; the holder's catalogue covers the ledger only
+  at volume level.
+- **Safe sentences.** E319 (FV-FM10b's, kept): "Read at grade H with War Department Cipher No. 1: on 27 May 1864 Sheldon at Fort Monroe reported to
+  Eckert that the York at Yorktown was a little over half a mile across and the Mattapony at West Point three quarters, too wide to string wire over
+  because tall-masted vessels must pass; not located in the Official Records (ser. I vol. 36 pt 3 prints the next days' telegrams on the same
+  line), Plum's Military Telegraph, Butler's or Grant's papers, or the Huntington's full-text search (searched 9 Oct 2026)." E320 (FV-FM10b's,
+  kept): "Read at grade H with War Department Cipher No. 1: on 27 May 1864 Eckert told Sheldon he regretted ordering O'Brien away from Bermuda
+  Hundred, kept him there in charge of the cipher work, and gave Caldwell the cipher work and Doren the repairs once the White House line was
+  built; the order it retracts is printed in the Official Records (ser. I vol. 36 pt 3 p.262), this telegram was not located there or in the
+  Huntington's full-text search (searched 9 Oct 2026)." E321 (corrected): "Read at grade H with War Department Cipher No. 1: on 1 Sept 1864 a
+  telegram from Army of the Potomac headquarters, its text ending 'D. Doren' and signed Caldwell, advised Eckert to lay the cable on the north
+  side of the river, which took less cable and was safer from anchors, the channel lying nearest the south shore; not located in the Official
+  Records (ser. I vol. 42 pt 2), Butler's or Grant's papers, or the Huntington's full-text search, which holds two further cipher copies
+  (searched 9 Oct 2026)."
+- **Unsafe:** any "first", "new", "unpublished", "unread" for the three; "Caldwell advised" as settled fact for E321; naming E321's river; "OR I/36
+  pt 3 p.262 prints E320".
+
+### 5. Postmortem and fixes (for the next FIX job; reading.md not edited here)
+One over-claim: E321's sender (s.3). Corrected here in the safe sentence and in status.json (title, line, depth_sentence, gap). For FIX: ciphertext.txt
+/ reading.md header of E321 "Caldwell to Eckert" -> "Hd Qrs A. P. (text ends 'D do wren' = D. Doren, inside the grid; signed Caldwell below it) to
+Eckert"; SECOND-OPINIONS-QUEUE row SO-ECKERT-E321's prompt (`second-opinions/PROMPT-chatgpt-e321.md`) should carry the same sender wording before it
+is answered (no count or class changed, so the TSV row itself is left as filed). E319 and E320: no fix; FIX-FM12's tulip = Open is confirmed from
+the key book. KEY lane: the Tulip S row (Period) is an inference that E319 contradicts; the book's own row is Open (re-confirmed on the page).
+Requests: hdl.huntington.org 20 (12 CISOSEARCHALL, 2 dmGetItemInfo, 6 IIIF of which 1 x 501; key page read from the committed local image);
+archive.org 1 djvu download (OR I/36 pt 3, 200) + 4 metadata; print_check.py: archive.org 5, be-api 56 (x 502 as above), www.googleapis.com 14,
+api.openalex.org 14; follow-up www.googleapis.com 6; api.semanticscholar.org 4 (2 x 429), api.core.ac.uk 4, www.loc.gov 3.
