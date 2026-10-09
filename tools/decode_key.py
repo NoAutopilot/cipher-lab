@@ -103,6 +103,15 @@ with no ':'. Guard: a merge that makes two keyed codes with different values rea
 prints 'merge-mark collapses B:X -> B (value a vs b)' on stderr for each, every run (the merged code then reads the key row
 of its new form, as written).
 
+Corrections on the page (MQS-STRUCK, 9 Oct 2026; research/MARY-STUART-TALK-2026-10-09.tsv M44; Lasry, Biermann and Tomokiyo
+2023). A sign transcribed 'X{struck}' (crossed out or cancelled by a deletion symbol) or '{over=OLD>NEW}' (OLD overwritten
+as NEW), or a tsv `state` column (decode.json state_column) holding 'struck' / 'over=OLD>NEW' (the sign column then
+ignored for an overwrite). decode.json corrections (or --corrections): 'final' (default) skips struck signs (index kept,
+never decoded, rendered or in the token file) and reads NEW; 'original' reads X and OLD (the evidence view for
+cross-cipher contamination, M26). Catches: a planted struck sign entering the decode (control K1,
+tools/tests/PREREG-MQS-STRUCK.md). Must NOT: change anything when no marker is present (decode_configs byte for byte),
+or treat 'a>b' / '{x}' alone as a correction.
+
 decode.json: {"jobs": [{...}, ...]} or one job object. Job keys (all optional):
   ciphertext, key, exceptions, reading, tokens   file names relative to TARGET_DIR
   format        pipe | tsv | rows (default: detected)
@@ -313,6 +322,7 @@ def load_tsv(path, job):
     bi, mi = (col(header, 'base'), col(header, 'mark')) if si is None else (None, None)
     ki = col(header, *([job['conf_column']] if job.get('conf_column') else ['conf', 'confidence']))
     kc = col(header, job['kind_column']) if job.get('kind_column') else None
+    sti = col(header, job.get('state_column', 'state'))
     sign_kinds = set(job.get('sign_kinds', []))
     split = job.get('split_line')
     foi = col(header, foc) if foc else None
@@ -333,6 +343,11 @@ def load_tsv(path, job):
         else:
             t = r[si]
         conf = r[ki] if ki is not None and ki < len(r) else ''
+        st = r[sti].strip() if sti is not None and sti < len(r) else ''
+        if st == 'struck':  # MQS-STRUCK: the state column becomes the inline marker
+            t = t + '{struck}'
+        elif st.startswith('over='):
+            t = '{' + st + '}'
         cp = job.get('clear_prefix')
         if cp and t.startswith(cp) and len(t) > len(cp):
             t = 'w:' + t[len(cp):]
@@ -517,7 +532,42 @@ def merge_marks(recs, key, job):
     return n
 
 
+STRUCK_RE = re.compile(r'^(.*)\{struck\}$')
+OVER_RE = re.compile(r'^\{over=([^>{}]+)>([^>{}]+)\}$')
+
+
+def apply_corrections(recs, job):
+    """The encipherer's own corrections (MQS-STRUCK, 9 Oct 2026; research/MARY-STUART-TALK-2026-10-09.tsv M44; Lasry,
+    Biermann and Tomokiyo 2023). A sign token 'X{struck}' (or a tsv `state` cell 'struck') was crossed out or deleted on
+    the page; '{over=OLD>NEW}' (or state 'over=OLD>NEW') was OLD written over as NEW. corrections 'final' (default): a
+    struck sign becomes kind 'struck' (kept in the index, never decoded, rendered or written to the token file) and an
+    overwrite reads NEW; 'original': a struck sign is read as X and an overwrite as OLD (the evidence view for cross-cipher
+    contamination, M26). Every corrected record keeps state ('struck' / 'over=OLD>NEW') for a token_columns entry.
+    Only the exact forms match: 'a>b' or '{x}' alone stay ordinary signs. Returns (struck, over) counts."""
+    mode = job.get('corrections', 'final')
+    if mode not in ('final', 'original'):
+        raise ValueError(f"corrections must be 'final' or 'original', not {mode!r}")
+    ns = no = 0
+    for r in recs:
+        if r.get('kind') != 'sign':
+            continue
+        m = STRUCK_RE.match(r['sign'])
+        if m and m.group(1):
+            ns += 1
+            r['sign'], r['state'] = m.group(1), 'struck'
+            if mode == 'final':
+                r['kind'] = 'struck'
+            continue
+        m = OVER_RE.match(r['sign'])
+        if m:
+            no += 1
+            r['state'] = f'over={m.group(1)}>{m.group(2)}'
+            r['sign'] = m.group(2) if mode == 'final' else m.group(1)
+    return ns, no
+
+
 def grade_tokens(recs, key, exc, votes, job):
+    apply_corrections(recs, job)
     merge_marks(recs, key, job)
     null_values = set(job.get('null_values', ['NULL', 'null']))
     unknown_values = set(job.get('unknown_values', ['', '?']))
@@ -1839,6 +1889,9 @@ def with_merge(jobs, a):
     if getattr(a, 'merge_mark', None):
         for j in jobs:
             j['merge_marks'] = a.merge_mark
+    if getattr(a, 'corrections', None):  # MQS-STRUCK
+        for j in jobs:
+            j['corrections'] = a.corrections
     return jobs
 
 
@@ -1957,6 +2010,8 @@ def main(argv=None):
     ap.add_argument('--merge-mark', metavar='X[=Y][,..]|*', help='reclassify marks text-wide on B:X signs: X dropped, '
                     'X=Y renamed, * all dropped; warns when two keyed codes collapse (MQS-BASE-MARK)')
     ap.add_argument('--lookalike-tsv', help='with --lookalike: write every examined occurrence to this TSV')
+    ap.add_argument('--corrections', choices=['final', 'original'], help="struck / over=OLD>NEW signs: 'final' "
+                    "(default) skips struck and reads NEW; 'original' reads them as written first (MQS-STRUCK)")
     ap.add_argument('--error-matrix', metavar='SIBLING_KEY[,KEY2...]', help='cross-cipher contamination: read each '
                     'position as a sibling key of the same office would, one at a time; flag rate vs a permuted-sibling '
                     'null, and a per-code error matrix (MQS-CCE-MATRIX; a report, never a key edit)')

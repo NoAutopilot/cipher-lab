@@ -28,3 +28,23 @@ M1: with no state column and no inline marker, every decode_configs reading rege
 M2: a token whose text merely contains `>` or `{` without the exact marker forms is an ordinary sign.
 
 Outcome is written below after the run, both numbers per seed.
+
+## Outcome (run 9 Oct 2026, 09:41 UTC by date -u; `python3 tools/tests/test_decode_key_struck.py --controls`)
+| seed | K1 final | N1 original |
+|---|---|---|
+| 0 | 1.000 | 0.195 |
+| 1 | 1.000 | 0.119 |
+| 2 | 1.000 | 0.657 |
+| 3 | 1.000 | 0.114 |
+| 4 | 1.000 | 0.218 |
+| 5 | 1.000 | 0.090 |
+| 6 | 1.000 | 0.267 |
+| 7 | 1.000 | 0.186 |
+| 8 | 1.000 | 0.137 |
+| 9 | 1.000 | 0.078 |
+K1 1.000 on 10/10 (gate 10/10, PASS); N1 < 0.99 on 10/10 (gate 10/10, PASS). N1 is far below 0.99 because a read struck
+sign shifts every later position in the index-aligned accuracy; this is the prereg's statistic, stated so the size of the
+gap is not read as power. Shelf: controlled-only (plumbing). Must-not M1: tools/tests/test_decode_key.py shows the same 3
+failures before and after the edit (antt-linhares-chave reading.txt; rah-canada-1869 reading.txt, reading_tokens.tsv),
+pre-existing and not this job's; every decode_configs reading without a marker is otherwise unchanged. M2 PASS.
+Not built (cap): sign_sorter_apply.py struck/over labels, decipher_sheet.py callouts -- follow-up MQS-STRUCK-2.
