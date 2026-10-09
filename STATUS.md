@@ -6973,3 +6973,20 @@ errors. Not elevated: call position, glued pairs. Ceppo: the n-cells split; Dint
 disk qualifies; TX-CONFIRM-SET told to take a known-answer leaf, same hand if nothing else exists. Round 2 started: compare-don't-
 recall, adaptive crop band + manifest-generated overlap, thin-stroke 4x re-read; PREREG-txeng-2 pushed before any read. Flag from
 the lane: tools/tool_shelf.py --check fails on families/masc_inj.py and masc_words.py (a7fdb795, another session's commit).
+
+## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
+Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
+TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;
+benchmark-tx/taxonomy/. Birago 1572 classes by mass in pass A: (1) inventory look-alike pairs 27/54 (d T18/s T98, p T90/t T53, n T76/e, h T64/l,
+curled-Ce off-sheet; 20/803 wrong in every pass = the floor); (2) crop geometry 19/54 (f178r L03 tail cut, band cuts 14% of boxes at 9.5% vs 5.2%,
+brief's overlap sentence 100 px vs manifest 425 px); (3) thin strokes half of mapped errors at 29% base. Not elevated: call position, segment overlap
+zone, glued pairs. Ceppo: n-cells split; Dinteville: n-sign has no anchor. No third hand qualifies. Round 2 (PREREG benchmark-tx/PREREG-txeng-2.md
+pushed 07:1x before any read; units dev_tune 343 / eval_heldout 376 / geo 169, baselines L 0.041 / 0.040 / 0.089; gate paired fixed > broken p<0.05
+vs L, dev then eval once): three Opus 5.5 workers spawned 07:11 UTC.
+
+| instrument | worker | dev err_true (paired vs L) | eval err_true (paired vs L) | verdict |
+|---|---|---|---|---|
+| A compare-don't-recall (tools/tx_compare.py) | TXE-A session_01WRvxRA2LYbA2Z48bcHaSja, cap 10 | running | -- | -- |
+| B crop geometry (iiif_lines --band-extent/--check-boxes/--overlap-note) | TXE-B session_01KgjZdcCPTEZqpN1MA73hzx, cap 7 | read-free band gate; one read on geo unit vs pass A | -- | -- |
+| C thin-stroke pair re-read (tools/tx_pair_reread.py) | TXE-C session_01Qgc8K1v3akoPFs6oBoTnz6, cap 8 | running | -- | -- |
+Round 3 (cap 20) combines what moved eval, re-scores the whole pipeline on no.87 against 0.045, feeds what still splits to the sorter focus.tsv.
