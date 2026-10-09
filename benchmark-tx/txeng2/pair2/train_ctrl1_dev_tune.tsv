@@ -1,0 +1,157 @@
+fold	pair	n_a	n_b	lines	t	net	enabled	why
+1	T18/T98	11	6	9	0.8	1	1	
+1	T90/T53	9	11	8	0.9	0	0	inner leave-one-line-out net <= 0
+1	T76/T66	7	3	7	0.9	0	0	inner leave-one-line-out net <= 0
+1	T76/T86	7	26	10	0.9	7	1	
+1	T76/T45	7	19	10	0.9	2	1	
+1	T64/T95	2	4	4			0	too few tiles or lines
+1	T64/T51	2	0	2			0	too few tiles or lines
+1	T50/T36	0	0	0			0	too few tiles or lines
+1	T92/T95	0	4	3			0	too few tiles or lines
+1	T92/T98	0	0	0			0	too few tiles or lines
+1	T83/T24	10	3	8	0.1	1	1	
+1	T60/T86	17	24	11	0.2	1	1	
+1	T13/T64	4	2	5			0	too few tiles or lines
+2	T18/T98	12	4	9	0.9	-1	0	inner leave-one-line-out net <= 0
+2	T90/T53	9	9	8	0.9	2	1	
+2	T76/T66	7	3	7	0.9	-1	0	inner leave-one-line-out net <= 0
+2	T76/T86	7	27	11	0.9	6	1	
+2	T76/T45	7	20	11	0.9	-1	0	inner leave-one-line-out net <= 0
+2	T64/T95	1	6	4			0	too few tiles or lines
+2	T64/T51	1	0	1			0	too few tiles or lines
+2	T50/T36	0	0	0			0	too few tiles or lines
+2	T92/T95	0	6	4			0	too few tiles or lines
+2	T92/T98	0	0	0			0	too few tiles or lines
+2	T83/T24	12	3	9	0.9	0	0	inner leave-one-line-out net <= 0
+2	T60/T86	18	25	11	0.7	-4	0	inner leave-one-line-out net <= 0
+2	T13/T64	5	1	5			0	too few tiles or lines
+3	T18/T98	12	5	9	0.6	1	1	
+3	T90/T53	9	9	8	0.9	1	1	
+3	T76/T66	6	3	6	0.9	0	0	inner leave-one-line-out net <= 0
+3	T76/T86	6	25	10	0.6	0	0	inner leave-one-line-out net <= 0
+3	T76/T45	6	19	10	0.7	5	1	
+3	T64/T95	2	6	5			0	too few tiles or lines
+3	T64/T51	2	0	2			0	too few tiles or lines
+3	T50/T36	0	0	0			0	too few tiles or lines
+3	T92/T95	0	6	4			0	too few tiles or lines
+3	T92/T98	0	0	0			0	too few tiles or lines
+3	T83/T24	11	3	8	0.9	1	1	
+3	T60/T86	17	23	11	0.4	5	1	
+3	T13/T64	5	2	6			0	too few tiles or lines
+4	T18/T98	9	6	9	0.9	1	1	
+4	T90/T53	7	11	8	0.6	3	1	
+4	T76/T66	6	3	6	0.9	0	0	inner leave-one-line-out net <= 0
+4	T76/T86	6	23	10	0.8	3	1	
+4	T76/T45	6	19	10	0.3	0	0	inner leave-one-line-out net <= 0
+4	T64/T95	2	6	5			0	too few tiles or lines
+4	T64/T51	2	0	2			0	too few tiles or lines
+4	T50/T36	0	0	0			0	too few tiles or lines
+4	T92/T95	0	6	4			0	too few tiles or lines
+4	T92/T98	0	0	0			0	too few tiles or lines
+4	T83/T24	12	3	9	0.6	-2	0	inner leave-one-line-out net <= 0
+4	T60/T86	18	21	11	0.2	3	1	
+4	T13/T64	5	2	6			0	too few tiles or lines
+5	T18/T98	12	6	10	0.4	4	1	
+5	T90/T53	9	12	9	0.8	-1	0	inner leave-one-line-out net <= 0
+5	T76/T66	5	2	6			0	too few tiles or lines
+5	T76/T86	5	24	10	0.9	1	1	
+5	T76/T45	5	17	10	0.9	0	0	inner leave-one-line-out net <= 0
+5	T64/T95	2	6	5			0	too few tiles or lines
+5	T64/T51	2	0	2			0	too few tiles or lines
+5	T50/T36	0	0	0			0	too few tiles or lines
+5	T92/T95	0	6	4			0	too few tiles or lines
+5	T92/T98	0	0	0			0	too few tiles or lines
+5	T83/T24	12	3	9	0.4	1	1	
+5	T60/T86	18	23	11	0.0	8	1	
+5	T13/T64	4	2	5			0	too few tiles or lines
+6	T18/T98	11	6	9	0.2	2	1	
+6	T90/T53	9	11	8	0.9	4	1	
+6	T76/T66	6	3	6	0.9	0	0	inner leave-one-line-out net <= 0
+6	T76/T86	6	26	10	0.7	4	1	
+6	T76/T45	6	18	10	0.5	-2	0	inner leave-one-line-out net <= 0
+6	T64/T95	2	6	5			0	too few tiles or lines
+6	T64/T51	2	0	2			0	too few tiles or lines
+6	T50/T36	0	0	0			0	too few tiles or lines
+6	T92/T95	0	6	4			0	too few tiles or lines
+6	T92/T98	0	0	0			0	too few tiles or lines
+6	T83/T24	11	2	8			0	too few tiles or lines
+6	T60/T86	17	24	11	0.9	-2	0	inner leave-one-line-out net <= 0
+6	T13/T64	5	2	6			0	too few tiles or lines
+7	T18/T98	10	6	9	0.9	0	0	inner leave-one-line-out net <= 0
+7	T90/T53	6	11	8	0.2	-1	0	inner leave-one-line-out net <= 0
+7	T76/T66	6	3	6	0.9	-1	0	inner leave-one-line-out net <= 0
+7	T76/T86	6	23	10	0.9	6	1	
+7	T76/T45	6	20	10	0.9	5	1	
+7	T64/T95	2	6	5			0	too few tiles or lines
+7	T64/T51	2	0	2			0	too few tiles or lines
+7	T50/T36	0	0	0			0	too few tiles or lines
+7	T92/T95	0	6	4			0	too few tiles or lines
+7	T92/T98	0	0	0			0	too few tiles or lines
+7	T83/T24	11	3	8	0.7	3	1	
+7	T60/T86	16	21	11	0.3	3	1	
+7	T13/T64	4	2	5			0	too few tiles or lines
+8	T18/T98	10	5	9	0.9	0	0	inner leave-one-line-out net <= 0
+8	T90/T53	9	12	9	0.1	4	1	
+8	T76/T66	7	3	7	0.9	0	0	inner leave-one-line-out net <= 0
+8	T76/T86	7	26	10	0.0	1	1	
+8	T76/T45	7	17	10	0.9	3	1	
+8	T64/T95	1	5	4			0	too few tiles or lines
+8	T64/T51	1	0	1			0	too few tiles or lines
+8	T50/T36	0	0	0			0	too few tiles or lines
+8	T92/T95	0	5	3			0	too few tiles or lines
+8	T92/T98	0	0	0			0	too few tiles or lines
+8	T83/T24	11	3	8	0.9	0	0	inner leave-one-line-out net <= 0
+8	T60/T86	17	24	11	0.4	8	1	
+8	T13/T64	5	1	5			0	too few tiles or lines
+9	T18/T98	11	6	9	0.9	-1	0	inner leave-one-line-out net <= 0
+9	T90/T53	7	12	8	0.4	3	1	
+9	T76/T66	7	3	7	0.9	-3	0	inner leave-one-line-out net <= 0
+9	T76/T86	7	24	10	0.9	-4	0	inner leave-one-line-out net <= 0
+9	T76/T45	7	19	10	0.7	2	1	
+9	T64/T95	2	6	5			0	too few tiles or lines
+9	T64/T51	2	0	2			0	too few tiles or lines
+9	T50/T36	0	0	0			0	too few tiles or lines
+9	T92/T95	0	6	4			0	too few tiles or lines
+9	T92/T98	0	0	0			0	too few tiles or lines
+9	T83/T24	11	3	8	0.6	-1	0	inner leave-one-line-out net <= 0
+9	T60/T86	17	22	11	0.7	1	1	
+9	T13/T64	3	2	5			0	too few tiles or lines
+10	T18/T98	10	5	9	0.9	2	1	
+10	T90/T53	8	11	8	0.7	0	0	inner leave-one-line-out net <= 0
+10	T76/T66	6	2	6			0	too few tiles or lines
+10	T76/T86	6	24	10	0.8	5	1	
+10	T76/T45	6	17	10	0.7	-1	0	inner leave-one-line-out net <= 0
+10	T64/T95	2	6	5			0	too few tiles or lines
+10	T64/T51	2	0	2			0	too few tiles or lines
+10	T50/T36	0	0	0			0	too few tiles or lines
+10	T92/T95	0	6	4			0	too few tiles or lines
+10	T92/T98	0	0	0			0	too few tiles or lines
+10	T83/T24	11	2	8			0	too few tiles or lines
+10	T60/T86	18	23	11	0.9	-1	0	inner leave-one-line-out net <= 0
+10	T13/T64	5	2	6			0	too few tiles or lines
+11	T18/T98	12	6	10	0.9	-1	0	inner leave-one-line-out net <= 0
+11	T90/T53	8	11	8	0.6	2	1	
+11	T76/T66	7	2	6			0	too few tiles or lines
+11	T76/T86	7	25	10	0.9	2	1	
+11	T76/T45	7	18	10	0.7	3	1	
+11	T64/T95	2	4	4			0	too few tiles or lines
+11	T64/T51	2	0	2			0	too few tiles or lines
+11	T50/T36	0	0	0			0	too few tiles or lines
+11	T92/T95	0	4	3			0	too few tiles or lines
+11	T92/T98	0	0	0			0	too few tiles or lines
+11	T83/T24	9	2	8			0	too few tiles or lines
+11	T60/T86	18	23	11	0.9	0	0	inner leave-one-line-out net <= 0
+11	T13/T64	5	2	6			0	too few tiles or lines
+12	T18/T98	12	5	9	0.9	2	1	
+12	T90/T53	9	12	9	0.8	0	0	inner leave-one-line-out net <= 0
+12	T76/T66	7	3	7	0.6	-1	0	inner leave-one-line-out net <= 0
+12	T76/T86	7	24	10	0.7	0	0	inner leave-one-line-out net <= 0
+12	T76/T45	7	17	10	0.5	2	1	
+12	T64/T95	2	5	4			0	too few tiles or lines
+12	T64/T51	2	0	2			0	too few tiles or lines
+12	T50/T36	0	0	0			0	too few tiles or lines
+12	T92/T95	0	5	3			0	too few tiles or lines
+12	T92/T98	0	0	0			0	too few tiles or lines
+12	T83/T24	11	3	8	0.9	-3	0	inner leave-one-line-out net <= 0
+12	T60/T86	18	22	11	0.8	1	1	
+12	T13/T64	5	2	6			0	too few tiles or lines
