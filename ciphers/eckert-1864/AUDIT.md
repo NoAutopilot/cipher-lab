@@ -7273,3 +7273,13 @@ reports) names all three of E223's vessels as hospital transports, and OR I/42 p
 were for. A Fort Monroe vessel list should be searched first in the volume's medical and quartermaster reports, not only in the
 correspondence. Requests: archive.org 6 (1 advancedsearch, 5 metadata probes) + 5 djvu downloads, be-api 13 (5 x 502, not retried),
 hdl.huntington.org 8 (CONTENTdm, 3.2 s apart), googleapis 1 (429, stopped), prior_work.py E220 network run within its own cap of 25.
+
+## JSTOR (owner's machine, 8 Oct 2026)
+
+Local JSTOR runner (in-app browser, owner's JSTOR login; page viewer only, no download). 118 queued eckert-1864 rows of JSTOR-QUEUE.tsv run, one at a time, no block page; per-row results in JSTOR-QUEUE.tsv and jstor-runs/2026-10-08-local.tsv. None of the hits prints or discusses any of the queued telegrams; most phrase queries returned 0, the rest only indexes, directories, Appletons' cyclopaedia volumes and general Civil War articles. Read, because the title fitted the letter's people, place or decade:
+
+- Cortada, "Florida's Relations with Cuba during the Civil War", The Florida Historical Quarterly 59(1) (1980) 42-52, https://www.jstor.org/stable/30146073 (row: "Tassara" AND "Savage" AND Havana AND 1864). Tassara appears only in footnoted Spanish foreign-ministry file citations of 1856, 1861, 1862 and 1866 (pp. 45, 49-51); Savage once, p. 48 n., "Savage to Seward, No. 120, February 3, 1864, US/disp/Havana/47", supporting a sentence that the Union blockade had nearly sealed off Florida-Cuba traffic by 1864. Does not discuss the letter.
+- Martinez-Fernandez, "Political Change in the Spanish Caribbean during the United States Civil War and Its Aftermath, 1861-1878", Caribbean Studies 27(1/2) (1994) 37-64, https://www.jstor.org/stable/25613235 (same row). Tassara only as writer of two letters to Dulce, 26 Sept 1865 and 7 Feb 1866 (AHN Ultramar), pp. 58, 61. Does not discuss the letter.
+- Riegel, "Federal Operation of Southern Railroads during the Civil War", The Mississippi Valley Historical Review 9(2) (1922) 126-138, https://www.jstor.org/stable/1895670 (row: "Louisville and Nashville" AND (Meigs OR Donaldson) ...). Searched within for "Louisville": pp. 129, 130, 136; p. 129 names J. B. Anderson, formerly of the Louisville and Nashville, as railroad director in the Department of the Ohio (Nov. 1861). No 1864 seizure or possession telegram. Clauss, "Sherman's Rail Support In The Atlanta Campaign", The Georgia Historical Quarterly 50(4) (1966) 413-420, https://www.jstor.org/stable/40578791: no "Meigs" in the text.
+
+No N-class or depth change.
