@@ -1,0 +1,7 @@
+# SUR-KB: key-blind T (no [y-fam]); scaffolds from the key-blind alignment; pooled lines 65; K=300; master seed 20261009
+# scaffold A: lines 65, p_del 0.087, p_ins 0.105; face m {'[y-fam]': 37, 'k': 2, 'λ': 2, '8': 2}; face n {'[y-fam]': 118, 'l': 45, '4': 10, '[psi]': 8}
+# scaffold B: lines 65, p_del 0.087, p_ins 0.107; face m {'[y-fam]': 34, 'λ': 3, 'k': 2, 'r': 2}; face n {'[y-fam]': 113, 'l': 49, '[psi]': 10, '4': 10}
+# REAL pooled key-blind SPLIT, C1 10000 deranged-gloss draws, seed 20261009
+  pass A: y on m 37, n 118; S 0.761; C1 (10000) mean 0.770 p0.5 0.595 p99.5 0.923 -> NO SPLIT SHOWN
+  pass B: y on m 34, n 113; S 0.769; C1 (10000) mean 0.778 p0.5 0.606 p99.5 0.927 -> NO SPLIT SHOWN
+UNIT pooled key-blind SPLIT: NO SPLIT SHOWN

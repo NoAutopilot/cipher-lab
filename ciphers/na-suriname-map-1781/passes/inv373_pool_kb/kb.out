@@ -1,0 +1,19 @@
+# SUR-KB: key-blind T (no [y-fam]); scaffolds from the key-blind alignment; pooled lines 65; K=300; master seed 20261009
+# scaffold A: lines 65, p_del 0.087, p_ins 0.105; face m {'[y-fam]': 37, 'k': 2, 'λ': 2, '8': 2}; face n {'[y-fam]': 118, 'l': 45, '4': 10, '[psi]': 8}
+# scaffold B: lines 65, p_del 0.087, p_ins 0.107; face m {'[y-fam]': 34, 'λ': 3, 'k': 2, 'r': 2}; face n {'[y-fam]': 113, 'l': 49, '[psi]': 10, '4': 10}
+  f 0.00 A: units 100; planted share 0.000; y on m mean 32.3, on n mean 94.5; S mean 0.746; p99.5 mean 0.913; verdicts {'NO SPLIT SHOWN': 100}; LEANS n rate 0.000
+  f 0.00 B: units 100; planted share 0.000; y on m mean 29.4, on n mean 90.8; S mean 0.756; p99.5 mean 0.915; verdicts {'NO SPLIT SHOWN': 100}; LEANS n rate 0.000
+  f 0.25 A: units 100; planted share 0.257; y on m mean 24.3, on n mean 95.4; S mean 0.797; p99.5 mean 0.921; verdicts {'NO SPLIT SHOWN': 100}; LEANS n rate 0.000
+  f 0.25 B: units 100; planted share 0.264; y on m mean 22.6, on n mean 90.2; S mean 0.799; p99.5 mean 0.920; verdicts {'NO SPLIT SHOWN': 100}; LEANS n rate 0.000
+  f 0.50 A: units 100; planted share 0.490; y on m mean 18.1, on n mean 93.9; S mean 0.838; p99.5 mean 0.920; verdicts {'NO SPLIT SHOWN': 100}; LEANS n rate 0.000
+  f 0.50 B: units 100; planted share 0.501; y on m mean 15.9, on n mean 90.8; S mean 0.851; p99.5 mean 0.925; verdicts {'NO SPLIT SHOWN': 97, 'LEANS n': 3}; LEANS n rate 0.030
+  f 0.75 A: units 100; planted share 0.753; y on m mean 9.5, on n mean 93.4; S mean 0.907; p99.5 mean 0.930; verdicts {'NO SPLIT SHOWN': 80, 'LEANS n': 20}; LEANS n rate 0.200
+  f 0.75 B: units 100; planted share 0.753; y on m mean 9.2, on n mean 89.7; S mean 0.906; p99.5 mean 0.934; verdicts {'NO SPLIT SHOWN': 82, 'LEANS n': 18}; LEANS n rate 0.180
+  f 1.00 A: units 100; planted share 1.000; y on m mean 2.1, on n mean 94.4; S mean 0.978; p99.5 mean 0.940; verdicts {'LEANS n': 93, 'NO SPLIT SHOWN': 7}; LEANS n rate 0.930
+  f 1.00 B: units 100; planted share 1.000; y on m mean 2.0, on n mean 91.1; S mean 0.978; p99.5 mean 0.942; verdicts {'LEANS n': 92, 'NO SPLIT SHOWN': 8}; LEANS n rate 0.920
+false-LEANS-n (H0) f 0.00: A 0.000 B 0.000
+DETECTION f 0.25: A 0.000 B 0.000
+DETECTION f 0.50: A 0.000 B 0.030
+DETECTION f 0.75: A 0.200 B 0.180
+DETECTION f 1.00: A 0.930 B 0.920 -> power >= 0.80 both
+SMALLEST f with power >= 0.80 on both scaffolds: 1.0
