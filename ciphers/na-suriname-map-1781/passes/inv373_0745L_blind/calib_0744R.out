@@ -1,0 +1,15 @@
+# CALIBRATION on inv373_0744R_blind (not the target)
+# pass A: pairs 22, signs 744; keyed aligned 673, A 0.834; C1 (N=10000, seed 7450) mean 0.485 p99 0.524 max 0.544 -> SAME SYSTEM (DP)
+  (a) CLASS pooled y-family -> m|n: n_al 82, agree 76, share 0.927; C1 share mean 0.465 p99 0.565; need >= 0.589 -> PASS
+      [ij]-only (descriptive): n_al 18, agree 16, share 0.889
+  (b) SPLIT: y-family on gloss m 18, n 58; S = n/(m+n) 0.763; C1 (draws with m+n>0: 10000) mean 0.769 sd 0.052 p0.5 0.630 p99.5 0.897; distinct values 227 -> NO SPLIT SHOWN
+  (c) gloss m aligned 22: [y-fam] 18, r 1, 0 1, 9 1, & 1
+  (c) gloss n aligned 81: [y-fam] 58, l 13, 4 2, h 2, λ 2, 7 1, n 1, o 1
+# pass B: pairs 22, signs 747; keyed aligned 668, A 0.828; C1 (N=10000, seed 7450) mean 0.487 p99 0.524 max 0.545 -> SAME SYSTEM (DP)
+  (a) CLASS pooled y-family -> m|n: n_al 89, agree 81, share 0.910; C1 share mean 0.449 p99 0.550; need >= 0.572 -> PASS
+      [ij]-only (descriptive): n_al 19, agree 17, share 0.895
+  (b) SPLIT: y-family on gloss m 19, n 62; S = n/(m+n) 0.765; C1 (draws with m+n>0: 10000) mean 0.797 sd 0.049 p0.5 0.667 p99.5 0.921; distinct values 221 -> NO SPLIT SHOWN
+  (c) gloss m aligned 19: [y-fam] 19
+  (c) gloss n aligned 85: [y-fam] 62, l 12, h 2, d 1, 5 1, [psi] 1, n 1, o 1
+UNIT CLASS (a): PASS  [A PASS; B PASS]
+UNIT SPLIT (b): NO SPLIT SHOWN  [A NO SPLIT SHOWN; B NO SPLIT SHOWN]

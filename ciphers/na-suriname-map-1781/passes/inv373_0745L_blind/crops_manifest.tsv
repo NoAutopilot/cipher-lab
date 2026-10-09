@@ -1,0 +1,7 @@
+# SUR-0745 crops of NA 1.05.03 inv. 373 scan 0745 LEFT page (crops not committed: folder over 30 MB; regenerate as below)
+# IIIF base: https://service.archief.nl/iip/iipsrv?IIIF=b2/3d/22/5d/15/d5/43/77/a1/32/c7/e9/0e/8b/02/1a/44b4bee1-3e45-464b-b0e1-a30cd1bfd19c.jp2 (native 5000x4026)
+# region fetched: {base}/100,150,2450,3830/full/0/default.jpg -> l745.jpg (HTTP 200, 9 Oct 2026 02:2x UTC)
+# crop command: python3 tools/iiif_lines.py --image l745.jpg --out c --prefix p0745L --centres 36,129,212,288,368,442,532,612,702,782,866,934,1032,1111,1191,1277,1349,1421,1512,1595,1681,1757,1845,1921,2005,2083,2178,2255,2344,2435,2525,2622,2701,2790,2857,2952,3021,3098,3183,3266,3340,3408,3492,3557 --lines-per-crop 2 --max-width 2460 --debug
+# (centres from --dry-run --distance 50 --prominence 100: 45 lines = 22 gloss+cipher pairs + the catchword at 3705, dropped; gloss ABOVE its cipher line, checked by eye on the debug overlay top/bottom, on L11, and by the numerals 140/168 shared by the L06 gloss and cipher)
+crop	content
+L01-L22	one pair each: plain Dutch gloss line above, cipher line below
