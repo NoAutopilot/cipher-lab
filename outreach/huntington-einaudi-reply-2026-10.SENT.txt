@@ -1,0 +1,16 @@
+Sent by the person 9 Oct 2026, reported 01:35 UTC (date -u), as a reply in Ask a Librarian ticket #19266054. Text as given to the person at 01:32 UTC (the shortened body; the person's sign-off not recorded here, rule 9).
+
+Dear Mario,
+
+Thank you. We are not asking for anything. If you use any of the readings, a credit in the record, in whatever form you find reasonable, would be welcome, but that is up to you. No fee, no exclusivity: our readings and notes are public under an open licence (MIT) and free to use.
+
+What we have: 68 telegrams in mssEC 18, 19 and 25 whose text we did not find in the Official Records or the other editions we searched, read with your own cipher books (mssEC 41, 47 and 67). Most of each telegram is already plain in your volunteers' transcription; what we add is the meaning of the code words. For example, mssEC 19 p.223 (7 November 1864): "A walnut agent ... on his way waxy ... He is Plague feet Plank inches high ... Insanity catch him" reads "A rebel agent ... on his way south ... He is 6 feet 2 inches high ... [signed] C. A. Dana catch him". In 35 of the 68 this adds little, and the list marks them. We also have partial readings of two Blathwayt cipher passages: mssBLA 186, whose clear text Rose printed in the Marchmont Papers (1831, ii 414-15), and 191(a). File copies we have not seen, at the U.S. National Archives or in the correspondents' papers, may carry some of this text in clear or deciphered.
+
+The list: https://github.com/NoAutopilot/cipher-lab/blob/main/outreach/huntington-decipherments-list-2026-10-08.tsv
+Search logs: https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/eckert-1864/AUDIT.md and https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/huntington-blathwayt-madrid-1728/AUDIT.md
+
+If it would help, I can send a spreadsheet with one row per telegram, keyed to your page numbers, and we could go on in stages. A spot-check of a few readings by the Curator would be very welcome.
+
+One correction to my 6 October note: the troop figure we gave as a difference from the Official Records (Halleck to Grant, 16 April 1864) is not one; both say 2,000 cavalry.
+
+With thanks,
