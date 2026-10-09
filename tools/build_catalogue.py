@@ -777,10 +777,9 @@ def tokens_manteuffel(line):
     return [(r[2], r[4].replace("?", "") or "", r[5]) for r in rows if r[0] == f"694-08_0511_f410_{line}"]
 
 
-def tokens_gramont(row):
-    key = {r[0]: (r[1], r[2]) for r in _tsv("ciphers/fr2980-gramont/key.tsv")[1:] if len(r) >= 3}
-    codes = next(r[1] for r in _tsv("ciphers/fr2980-gramont/n12gra/recon_settled.tsv") if r[0] == row).split()
-    return [(c, *(key.get(c, ("", "U")) if c != "?" else ("", "U"))) for c in codes]
+def tokens_gramont29(line):
+    rows = _tsv("ciphers/fr2980-gramont/reading_tokens.tsv")[1:]
+    return [(r[3], "(null)" if r[4] == "NULL" else r[4], r[5]) for r in rows if r[0] == "f29r" and r[1] == line]
 
 
 def tokens_lodewijk(spot):
@@ -799,25 +798,27 @@ def tokens_lodewijk(spot):
 
 
 SHOWCASE = {
-    "Gramont to Montmorency": {
-        "short": "Gramont to Montmorency, Bologna, 28 March 1530",
-        "who": ("Gabriel de Gramont, bishop of Tarbes", "Anne de Montmorency, grand maître", "Bologna ('Boulogne')", "28 March 1530"),
-        "crops": [(["fr3040_f18rB_L04_a.jpg", "fr3040_f18rB_L04_b.jpg"], lambda: tokens_gramont("f18rB_L04"),
-                   "BnF fr.3040 f.18r, cipher line 4 (two halves)")],
-        "image": "https://gallica.bnf.fr/ark:/12148/btv1b9059870w/f33.item",
+    "Gramont to Villandry": {  # V2b: fr.3040 f.18r L4 decodes only to letters with gaps (no line alignment to Le Grand), so swapped
+        "short": "Gramont to Villandry, Rome, 20 May 1530",
+        "who": ("Gabriel de Gramont, bishop of Tarbes", "Jean Breton, seigneur de Villandry, Francis I's secretary", "Rome", "20 May 1530"),
+        "crops": [(["fr2980_L10.jpg"], lambda: tokens_gramont29("L10"), "BnF fr.2980 f.29r, cipher line 10 (cut from a reduced copy of the page)",
+                   "which is the reason I have made the said article separate"),
+                  (["fr2980_L11.jpg"], lambda: tokens_gramont29("L11"), "BnF fr.2980 f.29r, cipher line 11 (cut from a reduced copy of the page)",
+                   "for you, to [give] you knowledge of everything; but I [ask] you")],
+        "image": "https://gallica.bnf.fr/ark:/12148/btv1b9059991d/f31.item",
         "events": [("24 Feb 1530", "Clement VII crowns Charles V emperor at Bologna", True),
-                   ("1529-1530", "Henry VIII's divorce suit pending before the Pope", True),
-                   ("1688", "Le Grand prints this letter's period decipherment (Histoire du divorce III, pp.454-457)", False)],
-        "people": [("Rochefort", "Thomas Boleyn, Henry VIII's envoy", True), ("the Pope", "Clement VII", True),
-                   ("the King of England", "Henry VIII, seeking an annulment", True),
-                   ("Montmorency", "Francis I's grand maître; addressee", False)],
-        "edition": "Le Grand, Histoire du divorce III (1688), pp.454-457",
+                   ("8 June 1530", "Gramont is made cardinal, three weeks after this letter", True),
+                   ("1688", "Le Grand prints Gramont's 1530 dispatches; this letter not found there (pp.394-542 read page by page)", False)],
+        "people": [("le roy", "a king; the reading does not say which", False),
+                   ("Villandry", "Francis I's secretary; addressee", True)],
+        "edition": "no printed plaintext located: Le Grand, Histoire du divorce III (1688) pp.394-542, Letters and Papers Henry VIII IV(3) (searched)",
     },
     "Loc. 694/08 f.410": {
         "short": "Manteuffel to Flemming, Berlin, November 1712 (postscript)",
         "who": ("Ernst Christoph von Manteuffel, Saxon envoy", "Jacob Heinrich von Flemming, Saxon minister", "Berlin", "November 1712"),
-        "crops": [(["f410_L13.jpg"], lambda: tokens_manteuffel("L13"), "SHStA Dresden Loc. 694/08 f.410, cipher line 13"),
-                  (["f410_L14.jpg"], lambda: tokens_manteuffel("L14"), "SHStA Dresden Loc. 694/08 f.410, cipher line 14")],
+        "crops": [(["f410_L13.jpg"], lambda: tokens_manteuffel("L13"), "SHStA Dresden Loc. 694/08 f.410, cipher line 13",
+                   "... the Queen of England ... concerning the prince"),
+                  (["f410_L14.jpg"], lambda: tokens_manteuffel("L14"), "SHStA Dresden Loc. 694/08 f.410, cipher line 14", None)],
         "image": "https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=3a83f921-9a43-485f-874b-34653ed59b68",
         "events": [("Jan 1712 onward", "Peace congress at Utrecht", True),
                    ("1712", "Great Northern War: allied armies in Swedish Pomerania", True),
@@ -830,8 +831,10 @@ SHOWCASE = {
     "WVO 5797": {
         "short": "Jan and Lodewijk van Nassau to William of Orange, Dillenburg, 22 October 1573",
         "who": ("Jan and Lodewijk van Nassau", "William of Orange, their brother", "Dillenburg", "22 October 1573"),
-        "crops": [(["wvo5797_p5_bey.jpg"], lambda: tokens_lodewijk("p5_spot3"), "KHA A 3, 895/I (WVO 5797), p.5: Groen's blank 'Bey ...'"),
-                  (["wvo5797_p7_helt.jpg"], lambda: tokens_lodewijk("p7_spot2"), "KHA A 3, 895/I (WVO 5797), p.7: Groen's blank before 'helt sich wol'")],
+        "crops": [(["wvo5797_p5_bey.jpg"], lambda: tokens_lodewijk("p5_spot3"), "KHA A 3, 895/I (WVO 5797), p.5: Groen's blank 'Bey ...'",
+                   "With the Duke of Saxony ... and the Landgrave ... is"),
+                  (["wvo5797_p7_helt.jpg"], lambda: tokens_lodewijk("p7_spot2"), "KHA A 3, 895/I (WVO 5797), p.7: Groen's blank before 'helt sich wol'",
+                   "The Count Palatine ... holds well")],
         "image": "https://resources.huygens.knaw.nl/media/wvo/images/05000-05999/05797.pdf",
         "events": [("8 Oct 1573", "Spanish siege of Alkmaar lifted", True),
                    ("11 Oct 1573", "Battle of the Zuiderzee; Bossu captured", True),
@@ -849,7 +852,7 @@ def showcase_for(it):
     if sc is None or not os.path.isdir(os.path.join("research/mockups/catalogue/img")):
         return None
     try:
-        for _, toks, _ in sc["crops"]:
+        for _, toks, _, _ in sc["crops"]:
             toks()
     except (OSError, StopIteration):
         return None
@@ -889,9 +892,15 @@ def img_src(name, inline):
 def item_body_v2(it, sc, howto="how-to-read.html", inline=False):
     r, n, fold = it["row"], it["n"], it["folder"]
     out = [f'<h1>{E(sc["short"])}</h1>']
-    for imgs, toks, cap in sc["crops"]:
+    for imgs, toks, cap, eng in sc["crops"]:
+        # three layers (owner, 9 Oct 2026): the crop; the audited tokens in their own language with grades; English without grades
+        en = (f'<p class="en"><span class="k">English (translation, interpretation)</span>{E(eng)}</p>' if eng else
+              '<p class="en none">Reads as letters with gaps: no English is given for this line.</p>')
         out.append('<figure class="cipher">' + "".join(f'<img alt="{E(cap)}" src="{img_src(x, inline)}">' for x in imgs)
-                   + token_strip(toks()) + f'<figcaption>{E(cap)} &middot; our crop &middot; {E(LICENCE)}</figcaption></figure>')
+                   + '<p class="k layer">As read, sign by sign, with grades</p>' + token_strip(toks()) + en
+                   + f'<figcaption>{E(cap)} &middot; our crop &middot; {E(LICENCE)}</figcaption></figure>')
+    out.append('<p class="small">English lines: "..." marks unread or uncertain signs; [square brackets] mark a word the English supplies '
+               'over an unread sign or from the next line. The English carries no grades; the line above it does.</p>')
     out.append('<p class="legend"><span class="lg" style="border-color:#0072b2">read: <b>H</b> key, <b>C</b> known text, '
                '<b>S</b> cryptanalysis</span><span class="lg" style="border-color:#d55e00"><b>M</b> uncertain</span>'
                '<span class="lg" style="border-color:#7a7a7a;border-bottom-style:dashed"><b>U</b> unread</span>'
@@ -942,6 +951,9 @@ figcaption{font:12px/1.4 system-ui,sans-serif;color:var(--muted);margin-top:6px}
 .tk .cs{font:12px ui-monospace,Menlo,monospace;color:var(--muted)}
 .tk .pv{font:600 14px Georgia,serif}
 .tk .gr{font:10px system-ui,sans-serif;color:var(--muted)}
+.en{font:italic 15px/1.4 Georgia,serif;margin:8px 0 2px;padding-left:8px;border-left:3px solid var(--rule)}
+.en .k{font:normal 11px system-ui,sans-serif;margin-bottom:2px}.en.none{font:12px system-ui,sans-serif;color:var(--muted)}
+.k.layer{margin-top:8px}
 .legend{font:12px system-ui,sans-serif}.lg{border-bottom:4px solid;padding:0 4px;margin-right:6px}
 .ctx{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:6px;font:14px system-ui,sans-serif;background:var(--tint);padding:8px 10px}
 .k{color:var(--muted);font-size:12px;display:block}
@@ -1075,7 +1087,7 @@ def main(argv=None):
     ap.add_argument("--out", default="research/mockups/catalogue/")
     ap.add_argument("--status", default="status.json")
     ap.add_argument("--mockup", default="")
-    ap.add_argument("--mockup-items", nargs="*", default=["Gramont to Montmorency", "Loc. 694/08 f.410", "WVO 5797"])
+    ap.add_argument("--mockup-items", nargs="*", default=["Gramont to Villandry", "Loc. 694/08 f.410", "WVO 5797"])
     a = ap.parse_args(argv)
     for p in (a.out, a.mockup):
         if p and os.path.abspath(p).startswith(os.path.abspath("docs") + os.sep):
