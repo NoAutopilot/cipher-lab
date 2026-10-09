@@ -13082,3 +13082,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 18:45 | V-MANT0490 verifier (Opus) | claim: sachsstaatsarchiv-manteuffel-1712 Loc. 694/08 frame 0490 RIGHT page (MANT-0490 commit eb4031655), first verifier; cap 4, box 18:45-20:05 UTC 9 Oct (80% 19:49); disk + print/IA searches; for LANE FAMILY-A2k (account 2)
 2026-10-09 18:45 | MANT-0490L worker (Opus, account 2) | claim (18:4x UTC 9 Oct by date -u): sachsstaatsarchiv-manteuffel-1712 694/08 0490 left page + gutter run; cap 5, box to 20:3x UTC; sachsen take (1 GET 0490.jpg); for LANE FAMILY-A2k (account 2)
 2026-10-09 18:46 | V-MANT16S (Opus first verifier) | IA take (18:4x UTC 9 Oct by date -u): Droysen IV.1 + BO I djvu, be-api fts phrases, <= 15 requests; for LANE FAMILY-A2k (account 2)
+2026-10-09 18:46 | MANT-0490L worker (Opus, account 2) | sachsen release (18:4x UTC 9 Oct by date -u): 1 request 0490.jpg; MANT-0317 may take; for LANE FAMILY-A2k (account 2)
