@@ -1,6 +1,6 @@
 # PREREG MQS-BNF-S3 (LANE MQS-2, account 4) -- written before any scoring
 
-Date: 9 Oct 2026, 07:56 UTC by date -u. Worker MQS-BNF-S3, for LANE MQS-2 (session_01KtMrFJc3ZZmcYgUvGJNdCz).
+Date: 9 Oct 2026, 07:48 UTC by date -u. Worker MQS-BNF-S3, for LANE MQS-2 (session_01KtMrFJc3ZZmcYgUvGJNdCz).
 Brief: .claude/briefs/runs/2026-10-09-ytbiz-mqs-next-bnf-s3.md. Disk only; no host contacted.
 
 ## Option
@@ -59,3 +59,12 @@ fr.29880 f.18 against that line; 'fr.3040 f.19r'; a line naming fr.3041 f.18r; a
 All three gates met -> shelf grade `weak` remains the ceiling for a disk-only own-work scan (one development corpus,
 no held-out set); a missed gate -> `weak` with both numbers, not re-briefed. No target status, key, reading or AUDIT.md
 changes; `ours` is a lead for the scout, not a DONE (prior_work.py check 1 semantics stay per-slug).
+
+## Amendment A (07:5x UTC, before any scoring; read from the parser, not from results)
+
+Range notices (fr.3974-3995, fr.4050-4051, fr.4052-4053, fr.4133-4138, fr.4734-4736, fr.3693-3694, Clair./Dupuy
+ranges) list items with a folio but no volume, so an item's volume is not known. For these the unit carries every
+volume of the range; a hit is reported `ours?` (range-ambiguous) in column `ours_range`, and is NOT removed from the
+open counts. K1 counts a range volume as recalled on an `ours?` hit and reports those volumes separately. A line that
+names no volume is used only inside a `ciphers/<slug>/` folder whose slug carries a volume (fr3040-...), with that
+volume as context; such lines in ciphers/_triage/ are skipped.
