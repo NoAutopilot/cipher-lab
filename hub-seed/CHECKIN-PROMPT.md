@@ -134,3 +134,6 @@ above 5%: the owner's number exists and is not 5%. Lane inc. 3 session_01P46fwsU
 (never public): CATALOGUE-SITE-1 v1 at https://claude.ai/artifact/7Yh9bZpbgyVUrgM9kGuAnm (v2 in progress), EXHIBIT-1
 session_016E4oYJoEa1g7x68DPWsUbV (three museum displays). SCOUT-BOURDEAU-WEB queued account 1. AUD2-LEDGER-33 live on account 4
 session_01TKVSDAd9vYmihZgUsgL9ch. Accounts 1 and 2 lanes closed 22:3x, refilling. seven_day allowed_warning on account 4 (resets Mon).
+OWNER 22:4x UTC 9 Oct (clock 22:47): "I'm not that worried about the caps" -- the seven_day allowed_warning on account 4 is not a reason to hold
+work (it resets Mon 12 Oct 20:00 UTC, not tomorrow; told him); spend on the transcription programme and his mock-ups continues at the normal
+cadence; BUDGETS' five_hour rule unchanged (a five-hour `rejected` still stops spawning until its reset).
