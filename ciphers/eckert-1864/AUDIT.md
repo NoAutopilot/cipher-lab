@@ -10491,3 +10491,84 @@ Sheldon's stand-in, and Plum vol. 2 has Gaughey 10 times.
 - Postmortem: FV-FM9c's classes and depths hold. One over-reach in E305: "Wilson" was taken as the place name without checking it against
   the key's own row for West and the earlier E214 telegram from the same desk, which produced a place ("Wilson Point") that the line never
   touched. Still open: the Anderson Galleries 1908 catalogue (E305), NARA RG 107.
+
+## AUDIT 2 (AUD2-LEDGER-22)
+
+Second verifier AUD2-LEDGER-22 (account 4, for the orchestrator (account-4) and LANE LEDGER (account 1)), 9 Oct 2026, 14:55-15:0x UTC by
+`date -u`; a separate session and account from the reader FM-R5c and the first auditor FV-FM9a (both account 1); this session had not read or
+audited these entries before. Scope: **E291, E292** (WORK-QUEUE AUD2-LEDGER-22; E299 is N1 on the holder's clear copy 10239, no second audit
+owed). Nothing decoded beyond key look-ups in key.md. FV-FM9a's 17 CONTENTdm full-text queries and its image eye check of pages 5722 and 5783
+were not redone. Key source: `period`. Committed: this section, `fortmonroe/aud2_ledger22_print.py` + `.out` (four IA djvu texts fetched once to
+scratch: OR I/36 pt 3 `warofrebellion363unit`, OR I/43 pt 2 `warofrebellion432unit`, OR I/42 pt 2 `warofrebellion422unit`, OR I/42 pt 1
+`warofrebellion421unit`), `fortmonroe/aud2_ledger22_search.py` + `.out` (be-api in Grant Papers vols. 11-12 and Butler V; Google Books API),
+`fortmonroe/aud2_ledger22_beapi2.py` + `.out` (follow-up be-api in Grant Papers vol. 12), prior-work.tsv records.
+
+### 1. Prior-work checks
+`prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=pointer <ptr>;date=...;sender=...;recipient=...' --step-type
+second-audit --offline` for 5722 (E291) and 5783 (E292): both LEAD 1-own = FIX-FM7's target-level claim (10:49; names no unit, does not cover
+these items: CLEAR, as AUD2-LEDGER-21 recorded); 3-tomokiyo and 3-solver UNCHECKED (no folio/R-id; unsolved-ciphers not cloned,
+UNCHECKED-NET); 4-editions CLEAR on the cached OR volumes (date +-1 day, both correspondents, control hit). Duplicate diff: not redone
+(FV-FM9a's diff stands; no new `###` header for 5722 or 5783 since).
+
+### 2. Key look-ups (independent)
+Every word of both entries matched against key.md by script. **E291:** Sligo = In the, Pembroke = Cipher, Plate = Communicate, Unity/Zebra/
+Zodiac = Period, Pebble Pension Plague Plug Plaster Plank = 3 4 6 1 5 2, Perfume Penny Plaster Pledge Hunkey Harsh = 3 4 5 6 19 20 (all H);
+America (= Delaware), Denmark (= Kingsport), Austria (= Massachusetts) are key rows, while Dacotah, Crimea and Turkey are not, and none of the
+six is among the No. 1 book's 161 line-indicator words (key.md section 6): the series "America [3], Denmark [4], Austria [5], Dacotah [6] ...
+Crimea [19], Turkey [20]" is the card's own indicator list, written in clear. FV-FM9a's M for the three is the cautious grade; "white" is a key
+row (= Report) but reads White House. "event", "Coldwell" not key rows (plain). **E291: H 19, M 3 of 22 -- agrees with FV-FM9a.**
+**E292:** Silver = Head Quarters, Gift = 16, Pandora/Paradise = Colonel, Cancer = Harpers Ferry, Rome = Enemy, Piloted = Captured, Harsh
+Pension William = 20 4 100, Marriage Plague = 80 6, Wreathe = Telegraph, Animal/Appian = Monroe, Youth/Yoke = Signature, Libby = 6 PM,
+Forbid Wine = 12 100, Zebra/Zodiac/Unity = Period (all H). Wilson (= West) and Small (= line indicator, 2 lines) are key rows that read as the
+plain names Lt Col Thomas Wilson and M. P. Small (both printed, s.3); Kernel, finis, "a Pea" not key rows. **E292: H 25 of 25 code groups --
+agrees with FV-FM9a.** 2400 + 86 = 2,486 head, 12 x 100 = 1,200 head.
+
+### 3. New searches (the families FV-FM9a named unsearched or partly searched)
+- **E291, OR I/36 pt 3 by index and page** (djvu text): the index lists Eckert-Sheldon correspondence at pp.281, 321, 322, 424 only. p.281 =
+  Sheldon to Eckert, 28 May (Carr on the routes); pp.321-322 = Sheldon to Eckert, 29 May (Bickford and party arrived, six teams, steamer to
+  West Point; Butler favours the north route); p.424 = Sheldon to Eckert, 31 May, "I understand, and will communicate with Bickford" (the
+  answer FV-FM9a cites). **No Eckert-to-Sheldon telegram of 31 May is printed**; Bickford's own letters (pp.778, 788) are 18 and 21 June. Context
+  found that FV-FM9a did not cite: p.262, Eckert to R. O'Brien at Butler's headquarters, 27 May: "You must use all the arbitraries in your
+  cipher ... Butler's headquarters to work cipher with his card key" -- a printed reference to a card key on this wire four days earlier (context
+  for E291's card, not the telegram). "Coldwell" = A. H. Caldwell, whose 29 May telegram to Eckert (p.321) is the cause FV-FM9a cites.
+- **E292, OR I/42 pt 1** (reports): Capt. J. H. Woodward, C. S. in charge of the herd, to **"Lieut. Col. M. R. Morgan, Chief C. S., Armies
+  Operating Against Richmond"**: "The whole number of beef-cattle captured was 2,486 head"; Capt. N. A. Richardson's report (No. 4, 20 Sept):
+  "I had 2,486 head of cattle on hand"; the Confederate side (Hampton) also gives 2,486. A second independent printed count, and a print of
+  Morgan's office. OR I/42 pt 1: "Thomas Wilson" 0.
+- **E292, OR I/42 pt 2**: "1,200 head" 0, "M. P. Small" 1 (only Wiley's 18 Sept message, FV-FM9a's), "Colonel Small" 0, "Thomas Wilson" 0
+  ("Colonel Wilson" twice = other officers, 17 and 25 Sept). **OR I/43 pt 2** (Shenandoah, Sept 1864): "M. R. Morgan" 0, "Coggins" 0, the one
+  "Colonel Morgan" a Confederate officer. Not located in OR.
+- **E292, Papers of U. S. Grant vol. 12** (be-api snippets, no page numbers): the volume prints **Grant at Harpers Ferry on 16 Sept 1864**
+  ("To Maj. Gen. George G. Meade (Cipher) Harpers Ferry Va. Sept. 16th [1864] 9 pm"; 17 Sept to Halleck from Harpers Ferry), which fits a
+  telegram for Grant's chief commissary Morgan sent to Harpers Ferry that day; it also prints Coggins Point material in notes ("a dash was made
+  on the cattle herd at Coggins Point", "Twenty four hundred head of cattle were captured", "I have always considered Coggins point, an
+  unsuitable position for the cattle herd", "officer in charge of the cattle herd at the time of its capture") and has an index entry "Morgan,
+  Michael R." (pages cut off in the snippet). Queries "lines are down" 0, "Wilson" commissary 0 relevant, "Small" 0 relevant (FV-FM9a: "entire
+  herd" 0, "Thomas Wilson" 0); "Michael R" and "1200 head" 503 (host stopped). **Not located there by snippet search; the Morgan index pages
+  were not read** (lending-only volume).
+- **Butler V** (`privateofficialc05butl`) "Coggins" 0. **Grant Papers vol. 11** "Bickford" 0; "White House" telegraph: June 1864 depot
+  traffic only.
+- **Google Books API** (key, `country=US`; 8 requests, two 503 not retried): E291 `"Bickford" "White House" 1864 telegraph Eckert` 3 = OR
+  I/36 pt 3 (Bickford, 18 June); `"Bickford has a card"` 319 noise; `"not to build any farther"` 7, none 1864 (1910 West Point barracks, Savannah);
+  `"Bickford" "card" cipher telegraph 1864` 503. E292 `"Coggins Point" "1,200 head"` 183 noise (*Armor* 1934 on Hampton's force); `"Coggins"
+  "Morgan" "Harpers Ferry" commissary 1864` 0; `"Thomas Wilson" commissary "Coggins"` 59 noise; `"lines are down" "order by telegraph" Monroe`
+  503.
+- Requests by host: archive.org 4 (djvu downloads); be-api.us.archive.org 19 (three 503, one 502; stopped); www.googleapis.com 8 (two 503);
+  hdl.huntington.org 0.
+
+### 4. Verdict (key `period` for both)
+- **E291: N3 holds. D2 kept** (H 19, M 3 of 22). The three M are the card's own indicator words in clear (none is a No. 1 line indicator);
+  a later verifier could treat them as plain and reconsider D3, but this audit does not raise depth. Strengthened negative: OR I/36 pt 3's index
+  lists no Eckert-to-Sheldon item for 31 May; Google Books and Grant vol. 11 0. Safe sentence: FV-FM9a's, with "or Google Books" added among
+  the places not located. Unsafe: any novelty word; "Bickford's card cipher is described in print" (p.262 mentions a card key at Butler's
+  headquarters, not Bickford's card or its working).
+- **E292: N3 holds. D3 kept** (H 25 of 25). External check strengthened: the count 2,486 is printed three times in OR I/42 pt 1 (Woodward,
+  Richardson, Hampton) besides Wiley's 18 Sept message in pt 2, and Woodward's report names Morgan as chief commissary; Grant Papers vol. 12 puts
+  Grant at Harpers Ferry on 16 Sept. Safe sentence: FV-FM9a's, with "or Google Books" added and "Grant's papers (vol. 12 by snippet search)".
+  Unsafe: any novelty word; "Grant's Papers do not mention it" (the vol. 12 index pages for Michael R. Morgan were not read).
+- Propagated: status.json rows E291 and E292 (audit_refs, audit_status "two audits", gap); SO-ECKERT-E291 and -E292 prompts (a note so a second
+  opinion does not take OR I/36 pt 3 p.262 or OR I/42 pt 1's counts as a prior print of the telegrams).
+- Postmortem: FV-FM9a's readings, counts, classes and depths hold; no reading correction and no over-claim found. FV-FM9a's header
+  correction (E292 sent from Fort Monroe, page header "Fort Monroe Sept 16/64") and its section 5 fixes stay with the FIX job. Still open: Grant
+  Papers vol. 12 index pages for Morgan (a person with the loan, or HathiTrust from the owner's machine), NARA RG 192 commissary letters (E292),
+  the press of the day (neither is a press telegram).
