@@ -1,0 +1,354 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	T18		H	line start; phi
+L01	2	T37		H	barred theta
+L01	3	T95	T51	M	p with crossed stem
+L01	4	T19		H	pi
+L01	5	T83		H	
+L01	6	T52		H	
+L01	7	T85		H	plus
+L01	8	T95	T51	M	p with crossed stem
+L01	9	T53		H	
+L01	10	T45		H	
+L01	11	T38		H	
+L01	12	T60	T86	M	hash
+L01	13	T26		H	9j
+L01	14	T96		H	
+L01	15	T60	T86	M	hash
+L01	16	T36	T27	M	loop on stem
+L01	17	T85		H	
+L01	18	T54		H	
+L01	19	T80		H	
+L01	20	T60	T86	M	hash
+L01	21	T37		H	
+L01	22	T83		M	reversed-e pair
+L01	23	T29	T50	L	c-e loop joined
+L01	24	T25		H	
+L01	25	T85		H	
+L01	26	T13		H	m with superscript
+L01	27	T37		H	line end
+L02	1	T33		H	line start
+L02	2	T19		H	
+L02	3	T58		H	
+L02	4	T53		H	
+L02	5	T85		H	
+L02	6	T63		H	
+L02	7	T25		M	lambda
+L02	8	T42		H	T with tick
+L02	9	T49		H	
+L02	10	T37		H	
+L02	11	T98		H	
+L02	12	T36		H	
+L02	13	T19		H	
+L02	14	T70		H	
+L02	15	T60		H	
+L02	16	T37		H	
+L02	17	T98		H	
+L02	18	T33		H	
+L02	19	T81		H	
+L02	20	T96		H	
+L02	21	T53		H	
+L02	22	T19		H	
+L02	23	T64		H	
+L02	24	T37		H	
+L02	25	T33		M	small underlined
+L02	26	T53		H	
+L02	27	T19		H	line end
+L03	1	T88		H	line start; lone o
+L03	2	T33		H	
+L03	3	T86	T60	M	one crossbar
+L03	4	T29	T50	L	c-e loop joined
+L03	5	T53		H	
+L03	6	T37		H	
+L03	7	T76		H	
+L03	8	T19		H	
+L03	9	T33		H	
+L03	10	T37		H	
+L03	11	T98		H	
+L03	12	T25		M	lambda with stroke above
+L03	13	T45		H	
+L03	14	T83		H	
+L03	15	T25		H	
+L03	16	T53		H	
+L03	17	T19		H	
+L03	18	T97		H	
+L03	19	T60		H	
+L03	20	T85		H	
+L03	21	T53		H	
+L03	22	T19		H	
+L03	23	T37		H	
+L03	24	T11	T46	M	85 no tick seen
+L03	25	T60		H	
+L03	26	T86		M	H-shape; line end
+L04	1	T90		H	line start
+L04	2	T25		H	
+L04	3	T33		H	
+L04	4	T29	T50	L	c-e loop joined
+L04	5	T60	T86	M	
+L04	6	T76		H	
+L04	7	T45		H	
+L04	8	T60	T86	M	
+L04	9	T90		H	
+L04	10	T37		H	
+L04	11	T97		H	
+L04	12	T53		H	
+L04	13	T96		H	
+L04	14	T65	T18	M	phi with underbar
+L04	15	T19		H	
+L04	16	T18		H	
+L04	17	T96		H	
+L04	18	T54		H	
+L04	19	T19		H	
+L04	20	T18		H	
+L04	21	T52		H	
+L04	22	T89		H	
+L04	23	T86	T60	M	
+L04	24	T57		H	
+L04	25	T86		M	H-shape
+L04	26	T60		H	
+L04	27	T18		H	
+L04	28	T52		H	line end
+L05	1	T76	T26	M	line start; q-shape
+L05	2	T57		H	
+L05	3	T55		H	
+L05	4	T90		M	b with cross on top
+L05	5	T58		H	
+L05	6	T37		H	
+L05	7	T17	X_NEW	L	t/c-like stroke
+L05	8	T19		H	
+L05	9	T13		H	m with tilde above
+L05	10	T25		H	
+L05	11	T86		M	
+L05	12	T63		H	
+L05	13	T45		H	
+L05	14	T13		M	m with tilde and dot
+L05	15	T85		H	
+L05	16	T19		H	
+L05	17	X_K		H	capital K
+L05	18	T45		H	
+L05	19	T76		H	
+L05	20	T25		M	dot above
+L05	21	T19		M	dot above
+L05	22	T60		H	
+L05	23	T86		M	
+L05	24	T89		H	
+L05	25	T29	T50	L	c-e loop joined
+L05	26	T19		H	
+L05	27	T76		H	
+L05	28	T52		H	
+L05	29	T54		H	
+L05	30	T37		H	
+L05	31	T76		H	line end
+L06	1	T53		H	line start
+L06	2	T45		H	
+L06	3	T60		H	
+L06	4	T86		M	
+L06	5	T76		H	
+L06	6	T63		H	
+L06	7	T19		H	
+L06	8	T29		H	
+L06	9	T24	X_NEW	M	3-shape
+L06	10	T37		H	
+L06	11	T33		H	
+L06	12	T19		H	
+L06	13	T83		H	
+L06	14	T80		H	
+L06	15	T10		H	
+L06	16	T37		H	
+L06	17	T60		H	
+L06	18	T18		H	
+L06	19	T55		H	
+L06	20	T65		M	crossed phi
+L06	21	T33		M	small
+L06	22	T27		M	loop with long tail
+L06	23	T80		H	
+L06	24	T58		H	
+L06	25	T80		H	
+L06	26	T15	T11	M	89 no tick seen
+L06	27	T29		H	
+L06	28	T63		H	
+L06	29	T45		H	line end
+L07	1	T90		H	line start
+L07	2	T86		H	
+L07	3	T60		H	
+L07	4	T18		H	
+L07	5	T86		H	
+L07	6	T60		H	
+L07	7	T63		H	
+L07	8	T19		H	
+L07	9	T90		H	
+L07	10	T83		H	
+L07	11	T80		H	
+L07	12	T76		H	
+L07	13	T36	T18	M	small loop, stem below
+L07	14	T96		H	
+L07	15	T90		H	
+L07	16	T37		H	
+L07	17	T58		H	
+L07	18	T54		H	
+L07	19	T86		H	
+L07	20	T60		H	
+L07	21	T53		H	
+L07	22	T86		H	
+L07	23	T18		H	
+L07	24	T85		H	
+L07	25	T13		M	m with superscript a/tilde and dot below
+L07	26	T37		H	
+L07	27	T36		H	
+L07	28	T85		H	
+L07	29	T92	T29	M	w-shape with leading c, joined to next
+L07	30	T37		M	theta, joined to preceding w; line end
+L08	1	T63		H	line start
+L08	2	T86		H	
+L08	3	T17		M	t-shape
+L08	4	T45		H	
+L08	5	T17		M	t-shape
+L08	6	T19		H	
+L08	7	T83		H	
+L08	8	T85		H	
+L08	9	T60		H	
+L08	10	T92		H	
+L08	11	T80		H	
+L08	12	T64		H	
+L08	13	T37		H	
+L08	14	T33		H	
+L08	15	T45		H	
+L08	16	T60		H	
+L08	17	T18		H	
+L08	18	T19		H	
+L08	19	T25		H	
+L08	20	T95	T51	M	p with crossed descender
+L08	21	T36		H	
+L08	22	T85		H	
+L08	23	T98	T18	M	stem through loop above and below
+L08	24	T65		H	
+L08	25	T45		H	
+L08	26	T13		M	m with superscript a and dot
+L08	27	T55		H	
+L08	28	T18		H	
+L08	29	T96		H	
+L08	30	T11		M	small 85 at line end; line end
+L09	1	T29		M	line start; epsilon joined to o
+L09	2	T84		H	
+L09	3	T18		H	
+L09	4	T96		H	
+L09	5	T83		H	
+L09	6	T37		H	
+L09	7	T33		H	
+L09	8	T86		H	
+L09	9	T13		M	m with superscript a and dot
+L09	10	T52		H	
+L09	11	T60		H	
+L09	12	T45		H	
+L09	13	T13		M	m with superscript a and dot
+L09	14	T86		H	
+L09	15	T54		H	
+L09	16	T37		H	
+L09	17	T60		H	
+L09	18	T80		H	
+L09	19	T19		H	
+L09	20	T49		H	
+L09	21	T86		H	
+L09	22	T58		H	
+L09	23	T85		H	
+L09	24	T90		H	
+L09	25	T25		H	
+L09	26	T33		H	
+L09	27	T90		H	
+L09	28	T37		H	
+L09	29	X_NEW	T11	L	small 8/s-like stroke after theta at line end; line end
+L10	1	T53		H	line start
+L10	2	T86		H	
+L10	3	T18		H	
+L10	4	T76	T26	M	bold 9
+L10	5	T92		H	
+L10	6	T19		H	
+L10	7	T58		H	
+L10	8	T18		H	
+L10	9	T85		H	
+L10	10	T53		H	
+L10	11	T96		H	
+L10	12	T98	T18	M	stem through loop above and below
+L10	13	T55		H	
+L10	14	T60		H	
+L10	15	T55		H	
+L10	16	T15	T46	M	89, no visible tick
+L10	17	T86		H	
+L10	18	T70		H	
+L10	19	T58		H	
+L10	20	T96		H	
+L10	21	T60		H	
+L10	22	T45		H	
+L10	23	T90		H	
+L10	24	T33		H	
+L10	25	T19		H	
+L10	26	T24		H	
+L10	27	T37		H	
+L10	28	T83		H	
+L10	29	T45		H	
+L10	30	T18	T36	M	tilted loop with stem below
+L10	31	T96		H	
+L10	32	T19		L	small pi-like bar with two verticals at line end; line end
+L11	1	T89		H	line start
+L11	2	T33		H	
+L11	3	T19		H	
+L11	4	T95		H	
+L11	5	T76		H	
+L11	6	T92		H	
+L11	7	T45		H	
+L11	8	T60		H	
+L11	9	T10		H	
+L11	10	T85		H	
+L11	11	T56		M	gamma-like hook joined to looped descender
+L11	12	T37		H	
+L11	13	T33		H	
+L11	14	T45		H	
+L11	15	T83		H	
+L11	16	T86		H	
+L11	17	T80		H	
+L11	18	T19		H	
+L11	19	T24		H	
+L11	20	T19		H	
+L11	21	T83		H	
+L11	22	T17		H	
+L11	23	T37		H	
+L11	24	T63		H	
+L11	25	T80		H	
+L11	26	T90		H	
+L11	27	T55		M	F-like with bars
+L11	28	T53		H	
+L11	29	T86		H	
+L11	30	T83		H	
+L11	31	T95	T51	M	p with crossed descender
+L11	32	T96		L	faint l-shape; line end
+L12	1	T97	T58	M	line start; s/ss shape with loop
+L12	2	T96		H	
+L12	3	T54		H	
+L12	4	T45		H	
+L12	5	T63		H	
+L12	6	T96		H	
+L12	7	T37		H	
+L12	8	T97	T58	M	s/ss shape with loop
+L12	9	T86		H	
+L12	10	T26	T76	M	9 with hooked tail
+L12	11	T19		H	
+L12	12	T86		H	
+L12	13	T60		H	
+L12	14	T86		H	
+L12	15	T36		H	
+L12	16	T45		H	
+L12	17	T57		H	
+L12	18	T37		H	
+L12	19	T83		H	
+L12	20	T80		H	
+L12	21	T19		H	
+L12	22	T89		M	q/b loop
+L12	23	X_A	T78	M	capital A, crossbar extended into a plus
+L12	24	T98		H	
+L12	25	T45		H	
+L12	26	T33		H	
+L12	27	T19		H	
+L12	28	T95	T51	M	p with crossed descender
+L12	29	T45		H	
+L12	30	T37		H	
+L12	31	T57		H	
+L12	32	T96		L	faint l-shape; line end

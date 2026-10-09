@@ -1,0 +1,29 @@
+passage	pos	sign_id	conf	note
+L03	39	9	L	loop with tail; rejected c
+L03	54	y	L	forked top; rejected c-tail
+L03	55	t	L	cross with lower bar; rejected #
+L03	57	.	M	small dot after v; B right
+L04	7	y	M	psi shape; rejected 9
+L04	8	4'	L	4 with mark; A
+L04	10	NONE	L	a c adjacent; rejected a
+L04	32	o	M	small round; rejected 9
+L04	45	m	L	m-like; rejected z
+L04	46	NEW:h-shape	L	both agree on shape
+L04	47	y	L	forked; rejected hooked
+L04	48	NONE	L	no separate sign
+L04	55	NEW:R-with-crossbar	L	rejected Z
+L04	56	f	L	crossbar f; rejected t
+L04	57	T	L	pi shape; rejected z
+L04	58	m	L	m shape; B
+L04	63	NONE	M	line-end filler stroke
+L04	64	NONE	M	filler stroke
+L04	65	NONE	M	filler stroke
+L05	2	9	L	loop; rejected c-tail
+L05	5	0	M	round; B
+L05	7	0	L	round; A
+L05	9	0'	L	accent over; A
+L05	29	o	M	small round; A
+L05	36	4	L	rejected r-overbar
+L05	37	t	L	dagger-like; rejected z
+L05	38	0	L	round; B
+L05	63	.	L	dot; B

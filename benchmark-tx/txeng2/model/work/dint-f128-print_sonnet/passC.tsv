@@ -2,12 +2,11 @@ passage	pos	sign_id	conf	note
 L02	1	z	H	
 L02	2	v	H	
 L02	3	y	H	
-L02	4	?	L	gapB
-L02	5	a	H	
-L02	6	f	H	
-L02	7	3	H	
-L02	8	L	H	
-L02	9	m	H	
+L02	4	a	H	
+L02	5	f	H	
+L02	6	3	H	
+L02	7	L	H	
+L02	8	m	H	
 L03	1	II	H	
 L03	2	4	H	
 L03	3	a	H	
@@ -16,7 +15,7 @@ L03	5	y	H
 L03	6	p	H	
 L03	7	w	H	
 L03	8	m	H	
-L03	9	?	L	split
+L03	9	o	M	split+adj
 L03	10	a	H	
 L03	11	#	H	
 L03	12	1	H	
@@ -28,59 +27,58 @@ L03	17	f	H
 L03	18	3	H	
 L03	19	c	H	
 L03	20	1	H	
-L03	21	?	L	gapA
+L03	21	.	M	gapA+adj
 L03	22	4	H	
 L03	23	9	H	
 L03	24	1	H	
 L03	25	.	H	
 L03	26	f	H	
-L03	27	?	L	gapB
-L03	28	4	H	
-L03	29	0	H	
-L03	30	?	L	split
-L03	31	#	H	
-L03	32	0	H	
-L03	33	m	H	
-L03	34	sq	H	
-L03	35	z	H	
-L03	36	p	H	
-L03	37	4	H	
-L03	38	+	H	
-L03	39	L	H	
-L03	40	y	H	
-L03	41	f	H	
-L03	42	sq	H	
-L03	43	3	H	
-L03	44	y	H	
-L03	45	w	H	
-L03	46	#	H	
-L03	47	0	H	
-L03	48	sq	H	
-L03	49	?	L	split
-L03	50	v	H	
-L03	51	L	H	
-L03	52	9	H	
-L03	53	?	L	split
-L03	54	0	H	
-L03	55	y	H	
-L03	56	?	L	split
-L03	57	v	H	
+L03	27	4	H	
+L03	28	0	H	
+L03	29	0'	L	split+adj
+L03	30	#	H	
+L03	31	0	H	
+L03	32	m	H	
+L03	33	sq	H	
+L03	34	z	H	
+L03	35	p	H	
+L03	36	4	H	
+L03	37	+	H	
+L03	38	L	H	
+L03	39	y	H	
+L03	40	f	H	
+L03	41	sq	H	
+L03	42	3	H	
+L03	43	y	H	
+L03	44	w	H	
+L03	45	#	H	
+L03	46	0	H	
+L03	47	sq	H	
+L03	48	o	M	split+adj
+L03	49	v	H	
+L03	50	L	H	
+L03	51	9	H	
+L03	52	4	L	split+adj
+L03	53	0	H	
+L03	54	y	H	
+L03	55	m	L	split+adj
+L03	56	v	H	
 L04	1	-:-	H	
 L04	2	0	H	
 L04	3	0	H	
 L04	4	4	H	
-L04	5	?	L	split
+L04	5	#	M	split+adj
 L04	6	#	H	
 L04	7	y	H	
-L04	8	?	L	split
-L04	9	?	L	split
+L04	8	p	L	split+adj
+L04	9	y	L	split+adj
 L04	10	a	H	
 L04	11	c	H	
 L04	12	v	H	
 L04	13	w	H	
 L04	14	4	H	
-L04	15	?	L	split
-L04	16	?	L	gapA
+L04	15	f	M	split+adj
+L04	16	v	M	gapA+adj
 L04	17	0	H	
 L04	18	#	H	
 L04	19	1	H	
@@ -96,7 +94,7 @@ L04	28	#	H
 L04	29	T	H	
 L04	30	v	H	
 L04	31	w	H	
-L04	32	?	L	split
+L04	32	o	M	split+adj
 L04	33	1	H	
 L04	34	.	H	
 L04	35	sq	H	
@@ -110,31 +108,30 @@ L04	42	m	H
 L04	43	o	H	
 L04	44	f	H	
 L04	45	n	H	
-L04	46	?	L	split
-L04	47	?	L	gapA
-L04	48	v	H	
-L04	49	c	H	
-L04	50	v	H	
-L04	51	L	H	
-L04	52	c	H	
-L04	53	#	H	
-L04	54	?	L	gapB
-L04	55	t	H	
-L04	56	?	L	split
-L04	57	m	H	
-L04	58	w	H	
-L04	59	y	H	
-L04	60	x	H	
-L04	61	p	H	
-L04	62	sq	H	
+L04	46	m	L	split+adj
+L04	47	v	H	
+L04	48	c	H	
+L04	49	v	H	
+L04	50	L	H	
+L04	51	c	H	
+L04	52	#	H	
+L04	53	T	L	gapB+adj
+L04	54	t	H	
+L04	55	f	L	split+adj
+L04	56	m	H	
+L04	57	w	H	
+L04	58	y	H	
+L04	59	x	H	
+L04	60	p	H	
+L04	61	sq	H	
 L05	1	1	H	
 L05	2	y	H	
 L05	3	m	H	
 L05	4	w	H	
-L05	5	?	L	split
-L05	6	?	L	gapA
+L05	5	o	M	split+adj
+L05	6	0	L	gapA+adj
 L05	7	v	H	
-L05	8	?	L	split
+L05	8	0'	L	split+adj
 L05	9	w	H	
 L05	10	1	H	
 L05	11	.	H	
@@ -154,39 +151,37 @@ L05	24	#	H
 L05	25	1	H	
 L05	26	.	H	
 L05	27	m	H	
-L05	28	?	L	split
-L05	29	?	L	split
+L05	28	3	L	split+adj
+L05	29	0	L	split+adj
 L05	30	y	H	
 L05	31	a	H	
 L05	32	f	H	
 L05	33	v	H	
 L05	34	1	H	
-L05	35	?	L	gapA
-L05	36	y	H	
-L05	37	?	L	split
-L05	38	?	L	gapB
-L05	39	a	H	
-L05	40	a	H	
-L05	41	1	H	
-L05	42	.	H	
-L05	43	#	H	
-L05	44	0	H	
-L05	45	f	H	
-L05	46	v	H	
-L05	47	#	H	
-L05	48	T	H	
-L05	49	1	H	
-L05	50	m	H	
-L05	51	v	H	
-L05	52	a	H	
-L05	53	sq	H	
-L05	54	3	H	
-L05	55	1	H	
-L05	56	.	H	
-L05	57	0	H	
-L05	58	#	H	
-L05	59	y	H	
-L05	60	c	H	
-L05	61	n	H	
-L05	62	1	H	
-L05	63	.	H	
+L05	35	y	H	
+L05	36	0	L	split+adj
+L05	37	a	H	
+L05	38	a	H	
+L05	39	1	H	
+L05	40	.	H	
+L05	41	#	H	
+L05	42	0	H	
+L05	43	f	H	
+L05	44	v	H	
+L05	45	#	H	
+L05	46	T	H	
+L05	47	1	H	
+L05	48	m	H	
+L05	49	v	H	
+L05	50	a	H	
+L05	51	sq	H	
+L05	52	3	H	
+L05	53	1	H	
+L05	54	.	H	
+L05	55	0	H	
+L05	56	#	H	
+L05	57	y	H	
+L05	58	c	H	
+L05	59	n	H	
+L05	60	1	H	
+L05	61	.	H	

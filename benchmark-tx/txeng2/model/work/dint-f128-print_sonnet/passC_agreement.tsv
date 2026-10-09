@@ -2,7 +2,7 @@ passage	posA	idA	confA	posB	idB	confB	status	merged	merged_conf
 L02	1	z	H	1	z	H	agree	z	H
 L02	2	v	H	2	v	H	agree	v	H
 L02	3	y	H	3	y	H	agree	y	H
-L02	4	t	H				gapB	?	L
+L02	4	t	H				gapB+adj	NONE	L
 L02	5	a	H	4	a	H	agree	a	H
 L02	6	f	H	5	f	H	agree	f	H
 L02	7	3	H	6	3	H	agree	3	H
@@ -16,7 +16,7 @@ L03	5	y	H	5	y	H	agree	y	H
 L03	6	p	H	6	p	H	agree	p	H
 L03	7	w	H	7	w	H	agree	w	H
 L03	8	m	H	8	m	H	agree	m	H
-L03	9	o	H	9	0	H	split	?	L
+L03	9	o	H	9	0	H	split+adj	o	M
 L03	10	a	H	10	a	H	agree	a	H
 L03	11	#	H	11	#	H	agree	#	H
 L03	12	1	H	12	1	H	agree	1	H
@@ -28,16 +28,16 @@ L03	17	f	H	17	f	H	agree	f	H
 L03	18	3	H	18	3	H	agree	3	H
 L03	19	c	H	19	c	H	agree	c	H
 L03	20	1	H	20	1	H	agree	1	H
-L03				21	.	H	gapA	?	L
+L03				21	.	H	gapA+adj	.	M
 L03	21	4	H	22	4	H	agree	4	H
 L03	22	9	H	23	9	H	agree	9	H
 L03	23	1	H	24	1	H	agree	1	H
 L03	24	.	H	25	.	H	agree	.	H
 L03	25	f	H	26	f	H	agree	f	H
-L03	26	t	H				gapB	?	L
+L03	26	t	H				gapB+adj	NONE	L
 L03	27	4	H	27	4	H	agree	4	H
 L03	28	0	H	28	0	H	agree	0	H
-L03	29	0'	H	29	0	H	split	?	L
+L03	29	0'	H	29	0	H	split+adj	0'	L
 L03	30	#	H	30	#	H	agree	#	H
 L03	31	0	H	31	0	H	agree	0	H
 L03	32	m	H	32	m	H	agree	m	H
@@ -56,31 +56,31 @@ L03	44	w	H	44	w	H	agree	w	H
 L03	45	#	H	45	#	H	agree	#	H
 L03	46	0	H	46	0	H	agree	0	H
 L03	47	sq	H	47	sq	H	agree	sq	H
-L03	48	0	H	48	o	H	split	?	L
+L03	48	0	H	48	o	H	split+adj	o	M
 L03	49	v	H	49	v	H	agree	v	H
 L03	50	L	H	50	L	H	agree	L	H
 L03	51	9	H	51	9	H	agree	9	H
-L03	52	t	H	52	4	H	split	?	L
+L03	52	t	H	52	4	H	split+adj	4	L
 L03	53	0	H	53	0	H	agree	0	H
 L03	54	y	H	54	y	H	agree	y	H
-L03	55	m	H	55	w	H	split	?	L
+L03	55	m	H	55	w	H	split+adj	m	L
 L03	56	v	H	56	v	H	agree	v	H
 L04	1	-:-	H	1	-:-	H	agree	-:-	H
 L04	2	0	H	2	0	H	agree	0	H
 L04	3	0	H	3	0	H	agree	0	H
 L04	4	4	H	4	4	H	agree	4	H
-L04	5	t	H	5	#	H	split	?	L
+L04	5	t	H	5	#	H	split+adj	#	M
 L04	6	#	H	6	#	H	agree	#	H
 L04	7	y	H	7	y	H	agree	y	H
-L04	8	T	H	8	p	H	split	?	L
-L04	9	y	H	9	a	H	split	?	L
+L04	8	T	H	8	p	H	split+adj	p	L
+L04	9	y	H	9	a	H	split+adj	y	L
 L04	10	a	H	10	a	H	agree	a	H
 L04	11	c	H	11	c	H	agree	c	H
 L04	12	v	H	12	v	H	agree	v	H
 L04	13	w	H	13	w	H	agree	w	H
 L04	14	4	H	14	4	H	agree	4	H
-L04	15	t	H	15	f	H	split	?	L
-L04				16	v	H	gapA	?	L
+L04	15	t	H	15	f	H	split+adj	f	M
+L04				16	v	H	gapA+adj	v	M
 L04	16	0	H	17	0	H	agree	0	H
 L04	17	#	H	18	#	H	agree	#	H
 L04	18	1	H	19	1	H	agree	1	H
@@ -96,7 +96,7 @@ L04	27	#	H	28	#	H	agree	#	H
 L04	28	T	H	29	T	H	agree	T	H
 L04	29	v	H	30	v	H	agree	v	H
 L04	30	w	H	31	w	H	agree	w	H
-L04	31	o	H	32	0	H	split	?	L
+L04	31	o	H	32	0	H	split+adj	o	M
 L04	32	1	H	33	1	H	agree	1	H
 L04	33	.	H	34	.	H	agree	.	H
 L04	34	sq	H	35	sq	H	agree	sq	H
@@ -110,17 +110,17 @@ L04	41	m	H	42	m	H	agree	m	H
 L04	42	o	H	43	o	H	agree	o	H
 L04	43	f	H	44	f	H	agree	f	H
 L04	44	n	H	45	n	H	agree	n	H
-L04	45	3	H	46	m	H	split	?	L
-L04				47	h	H	gapA	?	L
+L04	45	3	H	46	m	H	split+adj	m	L
+L04				47	h	H	gapA+adj	NONE	L
 L04	46	v	H	48	v	H	agree	v	H
 L04	47	c	H	49	c	H	agree	c	H
 L04	48	v	H	50	v	H	agree	v	H
 L04	49	L	H	51	L	H	agree	L	H
 L04	50	c	H	52	c	H	agree	c	H
 L04	51	#	H	53	#	H	agree	#	H
-L04	52	T	H				gapB	?	L
+L04	52	T	H				gapB+adj	T	L
 L04	53	t	H	54	t	H	agree	t	H
-L04	54	n	H	55	f	H	split	?	L
+L04	54	n	H	55	f	H	split+adj	f	L
 L04	55	m	H	56	m	H	agree	m	H
 L04	56	w	H	57	w	H	agree	w	H
 L04	57	y	H	58	y	H	agree	y	H
@@ -131,10 +131,10 @@ L05	1	1	H	1	1	H	agree	1	H
 L05	2	y	H	2	y	H	agree	y	H
 L05	3	m	H	3	m	H	agree	m	H
 L05	4	w	H	4	w	H	agree	w	H
-L05	5	o	H	5	0	H	split	?	L
-L05				6	0	H	gapA	?	L
+L05	5	o	H	5	0	H	split+adj	o	M
+L05				6	0	H	gapA+adj	0	L
 L05	6	v	H	7	v	H	agree	v	H
-L05	7	d	H	8	0	H	split	?	L
+L05	7	d	H	8	0	H	split+adj	0'	L
 L05	8	w	H	9	w	H	agree	w	H
 L05	9	1	H	10	1	H	agree	1	H
 L05	10	.	H	11	.	H	agree	.	H
@@ -154,17 +154,17 @@ L05	23	#	H	24	#	H	agree	#	H
 L05	24	1	H	25	1	H	agree	1	H
 L05	25	.	H	26	.	H	agree	.	H
 L05	26	m	H	27	m	H	agree	m	H
-L05	27	3	H	28	0	H	split	?	L
-L05	28	o	H	29	0	H	split	?	L
+L05	27	3	H	28	0	H	split+adj	3	L
+L05	28	o	H	29	0	H	split+adj	0	L
 L05	29	y	H	30	y	H	agree	y	H
 L05	30	a	H	31	a	H	agree	a	H
 L05	31	f	H	32	f	H	agree	f	H
 L05	32	v	H	33	v	H	agree	v	H
 L05	33	1	H	34	1	H	agree	1	H
-L05				35	t	H	gapA	?	L
+L05				35	t	H	gapA+adj	NONE	L
 L05	34	y	H	36	y	H	agree	y	H
-L05	35	9	H	37	0	H	split	?	L
-L05	36	o	H				gapB	?	L
+L05	35	9	H	37	0	H	split+adj	0	L
+L05	36	o	H				gapB+adj	NONE	L
 L05	37	a	H	38	a	H	agree	a	H
 L05	38	a	H	39	a	H	agree	a	H
 L05	39	1	H	40	1	H	agree	1	H

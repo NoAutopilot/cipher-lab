@@ -1,0 +1,185 @@
+passage	pos	sign_id	alt	conf	note
+L07	1	T90		H	shape match; before: line start
+L07	2	T86	T60	M	shape match
+L07	3	T60	T86	M	shape match
+L07	4	T18	T98	H	shape match
+L07	5	T86	T60	M	shape match
+L07	6	T60	T86	M	shape match
+L07	7	T63		H	shape match
+L07	8	T19		H	shape match
+L07	9	T90		H	shape match
+L07	10	T83		H	shape match
+L07	11	T80		H	shape match
+L07	12	T76	T26	M	shape match
+L07	13	T36		H	shape match
+L07	14	T96		H	shape match
+L07	15	T90		H	shape match
+L07	16	T37		H	shape match
+L07	17	T58		H	shape match
+L07	18	T54		H	shape match
+L07	19	T86	T60	M	shape match
+L07	20	T60	T86	M	shape match
+L07	21	T53		H	shape match
+L07	22	T86	T60	M	shape match
+L07	23	T18	T98	H	shape match
+L07	24	T85		H	shape match
+L07	25	T13	T64	M	shape match
+L07	26	T37		H	shape match
+L07	27	T36		H	shape match
+L07	28	T85		H	shape match
+L07	29	T92	T50	L	shape match
+L07	30	T37		H	shape match; after: line end
+L08	1	T63		H	shape match; before: line start
+L08	2	T86	T60	M	shape match
+L08	3	T17		M	shape match
+L08	4	T45	T90	M	shape match
+L08	5	T17		M	shape match
+L08	6	T19		H	shape match
+L08	7	T83		H	shape match
+L08	8	T85		H	shape match
+L08	9	T60	T86	M	shape match
+L08	10	T92	T50	M	shape match
+L08	11	T80		H	shape match
+L08	12	T64		H	shape match
+L08	13	T37		H	shape match
+L08	14	T33		H	shape match
+L08	15	T45	T90	M	shape match
+L08	16	T60	T86	M	shape match
+L08	17	T18	T98	H	shape match
+L08	18	T19		H	shape match
+L08	19	T25		H	shape match
+L08	20	T95	T51	M	shape match
+L08	21	T36		H	shape match
+L08	22	T85		H	shape match
+L08	23	T98		H	shape match
+L08	24	T65		H	shape match
+L08	25	T45	T90	M	shape match
+L08	26	T13	T64	M	shape match
+L08	27	T55		M	shape match
+L08	28	T18	T98	H	shape match
+L08	29	T96		H	shape match
+L08	30	T11		L	shape match; after: line end
+L09	1	T29		H	shape match; before: line start
+L09	2	T84		H	shape match
+L09	3	T18	T98	H	shape match
+L09	4	T96		H	shape match
+L09	5	T83		H	shape match
+L09	6	T37		H	shape match
+L09	7	T33		H	shape match
+L09	8	T86	T60	M	shape match
+L09	9	T13	T64	M	shape match
+L09	10	T52		H	shape match
+L09	11	T60	T86	M	shape match
+L09	12	T45	T90	M	shape match
+L09	13	T13	T64	M	shape match
+L09	14	T86	T60	M	shape match
+L09	15	T54		H	shape match
+L09	16	T37		H	shape match
+L09	17	T60	T86	M	shape match
+L09	18	T80		H	shape match
+L09	19	T19		H	shape match
+L09	20	T49		H	shape match
+L09	21	T86	T60	M	shape match
+L09	22	T58		H	shape match
+L09	23	T85		H	shape match
+L09	24	T90		H	shape match
+L09	25	T25		H	shape match
+L09	26	T33		H	shape match
+L09	27	T90		H	shape match
+L09	28	T37		H	shape match
+L09	29	?		L	small mark at right crop edge, cut off; after: line end
+L10	1	T53		H	shape match; before: line start
+L10	2	T86	T60	M	shape match
+L10	3	T18	T98	H	shape match
+L10	4	T76	T26	M	shape match
+L10	5	T92	T50	M	shape match
+L10	6	T19		H	shape match
+L10	7	T58		H	shape match
+L10	8	T18	T98	H	shape match
+L10	9	T85		H	shape match
+L10	10	T53		H	shape match
+L10	11	T96		H	shape match
+L10	12	T98		H	shape match
+L10	13	T55		M	shape match
+L10	14	T60	T86	M	shape match
+L10	15	T55		M	shape match
+L10	16	T15		H	shape match
+L10	17	T86	T60	M	shape match
+L10	18	T70		H	shape match
+L10	19	T58		H	shape match
+L10	20	T96		H	shape match
+L10	21	T60	T86	M	shape match
+L10	22	T45	T90	M	shape match
+L10	23	T90		H	shape match
+L10	24	T33		H	shape match
+L10	25	T19		H	shape match
+L10	26	T24	T29	M	shape match
+L10	27	T37		H	shape match
+L10	28	T83		H	shape match
+L10	29	T45	T90	M	shape match
+L10	30	T18	T98	H	shape match
+L10	31	T96		H	shape match; after: line end
+L11	1	T89		H	shape match; before: line start
+L11	2	T33		H	shape match
+L11	3	T19		H	shape match
+L11	4	T95	T51	M	shape match
+L11	5	T76	T26	M	shape match
+L11	6	T92	T50	M	shape match
+L11	7	T45	T90	M	shape match
+L11	8	T60	T86	M	shape match
+L11	9	T10		H	shape match
+L11	10	T85		H	shape match
+L11	11	T56		H	shape match
+L11	12	T37		H	shape match
+L11	13	T33		H	shape match
+L11	14	T45	T90	M	shape match
+L11	15	T83		H	shape match
+L11	16	T86	T60	M	shape match
+L11	17	T80		H	shape match
+L11	18	T19		H	shape match
+L11	19	T24	T29	M	shape match
+L11	20	T19		H	shape match
+L11	21	T83		H	shape match
+L11	22	T17		M	shape match
+L11	23	T37		H	shape match
+L11	24	T63		H	shape match
+L11	25	T80		H	shape match
+L11	26	T90		H	shape match
+L11	27	T55		M	shape match
+L11	28	T53		H	shape match
+L11	29	T86	T60	M	shape match
+L11	30	T83		H	shape match
+L11	31	T95	T51	M	shape match
+L11	32	T96		L	shape match; after: line end
+L12	1	T97	T89	M	shape match; before: line start
+L12	2	T96		H	shape match
+L12	3	T54		H	shape match
+L12	4	T45	T90	M	shape match
+L12	5	T63		H	shape match
+L12	6	T96		H	shape match
+L12	7	T37		H	shape match
+L12	8	T97	T89	M	shape match
+L12	9	T86	T60	M	shape match
+L12	10	T26	T76	M	shape match
+L12	11	T19		H	shape match
+L12	12	T86	T60	M	shape match
+L12	13	T60	T86	M	shape match
+L12	14	T86	T60	M	shape match
+L12	15	T36		H	shape match
+L12	16	T45	T90	M	shape match
+L12	17	T57		H	shape match
+L12	18	T37		H	shape match
+L12	19	T83		H	shape match
+L12	20	T80		H	shape match
+L12	21	T19		H	shape match
+L12	22	T89		H	shape match
+L12	23	X_A		M	capital A with extra cross-stroke, no cell
+L12	24	T98		H	shape match
+L12	25	T45	T90	M	shape match
+L12	26	T33		H	shape match
+L12	27	T19		H	shape match
+L12	28	T95	T51	M	shape match
+L12	29	T45	T90	M	shape match
+L12	30	T37		H	shape match
+L12	31	T57		H	shape match
+L12	32	?		L	small mark at right crop edge, cut off; after: line end

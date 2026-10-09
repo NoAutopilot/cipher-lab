@@ -1,0 +1,12 @@
+passage	pos	context_before	context_after	candA	confA	candB	confB	noteA	noteB
+L01	3	T18 T37	T19 T83 T52 T85	T51	M	T95	M	crossed p	p with crossed stem
+L01	8	T19 T83 T52 T85	T53 T45 T38 T60	T51	M	T95	M	crossed p	p with crossed stem
+L01	23	T80 T60 T37 T83	T25 T85 T13 T37	T92	M	T29	L	omega with c-lead	c-e loop joined
+L03	4	T88 T33 T86	T53 T37 T76 T19	T92	M	T29	L	omega with c-lead	c-e loop joined
+L04	4	T90 T25 T33	? T76 T45 ?	T92	H	T29	L		c-e loop joined
+L04	5	T90 T25 T33 T92	T76 T45 ? T90	T86	M	T60	M	hash, one bar	
+L04	8	T92 ? T76 T45	T90 T37 T97 T53	T86	M	T60	M	hash, one bar	
+L05	25	T19 T60 T86 T89	T19 T76 T52 T54	T92	H	T29	L		c-e loop joined
+L06	9	T76 T63 T19 T29	T37 T33 T19 T83	X_NEW	L	T24	M	3 shape, mirrored epsilon	3-shape
+L09	29	T25 T33 T90 T37		?	L	X_NEW	L	small mark at right crop edge, cut off; after: line end	small 8/s-like stroke after theta at line end; line end
+L12	32	T95 T45 T37 T57		?	L	T96	L	small mark at right crop edge, cut off; after: line end	faint l-shape; line end
