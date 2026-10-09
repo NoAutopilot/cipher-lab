@@ -85,3 +85,20 @@ name it in ROOM for the account-3 VERIFY lane. Unit ~1.3 per entry; stop before 
 - FV-FM8b: E280, E281, E283, E284, E285 (NOTES "## FM-R5b"; E283 E285 against ORN I/11 page by page).
 - FV-FM8c: E293, E294, E295, E297, E298 (NOTES "## FM-R5c"; E298 against Basler, Collected Works of Lincoln vol. 8, and OR I/39 pt 3 for 16 Oct 1864).
 Handed on, not briefed: E278 (FM-R5a), E286 E288 E289 (FM-R5b, pages not image-read), E291 E292 E299 (FM-R5c, printed context only).
+
+---
+
+# Wave 3 (written 9 Oct 2026 11:4x UTC; seven_day allowed_warning, continuing per lane-common-blast)
+By get_session: CONF-FM2 3.39 (9 N1 D3), FV-FM8a 5.58 (E270 N1 OR I/42 pt 3 p.481; E254 E272 E277 N3 D3, E275 N3 D2; AUD2-LEDGER-18), FV-FM8c 6.38 (E294 E295
+E297 N1 holder clear copies, E298 N1 OR I/41 pt 4; E293 N3 D2; AUD2-LEDGER-20); FV-FM8b running (AUD2-LEDGER-19 queued). Lane ~40 of 60 at writing.
+
+## FV-FM8d (Opus 5.5, first verifier; cap $5.5, box 80 min)
+Exactly "## FV-FM8a, FV-FM8b, FV-FM8c" above (Wave 2), WORK-QUEUE `AUD2-LEDGER-21` on N3+ D2+. Entries: E278 (NOTES "## FM-R5a"), E286, E288, E289 (NOTES
+"## FM-R5b"; pages 5605 5724 5814 were not image-read by the reader -- eye-check every line on crops first; E289 against ORN I/11 page by page for 1 Dec 1864).
+
+## FIX-FM8 (Sonnet 5.5; cap $2.5, box 60 min, no network) -- spawned only after FV-FM8b and FV-FM8d report
+Exactly the FIX-FM7 method (Wave 1). Sources: AUDIT.md "## AUDIT (CONF-FM)" s.4 and "## AUDIT (CONF-FM2)" s.4 decoder slips (Knocks = Knox E271/E274, plain
+Chicken/person/shelter/ann, weasilers = Steamers, 6.45 not 51, page fixes E287 p.107, E271 p.148, E276 p.670); "## AUDIT (FV-FM8a)" .. "(FV-FM8d)" reading
+fixes (E254 contrive; E275 whimper = Transport; E298 header place Fort Monroe); FM-R5a's own slips (E273 Chickahominy, E276 in person, E279 shelter).
+Candidate key rows (whiskey = troops from FV-FM8a, Tulip = stop from CONF-FM) are NOT written to key.md: list them in NOTES as candidates. Propagate to
+status.json and SO prompts; NOTES "## FIX-FM8 (9 Oct 2026, account 1, for LANE LEDGER)"; decode --check exit 0; depth_check; file_shrink_guard.
