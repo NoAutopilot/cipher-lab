@@ -1,0 +1,250 @@
+line	position	sign	confidence	alt	why
+L01	1	46	H		agree
+L01	2	53	H		agree
+L01	3	|	M	A:-	gap
+L01	4	117	H		agree
+L01	5	|	M	A:-	gap
+L01	6	163	M	B:167	differ
+L02	1	100	H		agree
+L02	2	57	H		agree
+L02	3	131	H		agree
+L02	4	93	H		agree
+L02	5	32	H		agree
+L02	6	125	H		agree
+L02	7	116	H		agree
+L02	8	138	H		agree
+L02	9	75	H		agree
+L02	10	56	H		agree
+L02	11	123	H		agree
+L02	12	53	M	A:-	gap
+L03	1	73	H		agree
+L03	2	75	H		agree
+L03	3	95	H		agree
+L03	4	84	H		agree
+L03	5	101	H		agree
+L03	6	90	H		agree
+L03	7	93	H		agree
+L03	8	54	H		agree
+L03	9	95	H		agree
+L03	10	w:sombolus	L		agree-flagged
+L03	11	178	L		agree-flagged
+L04	1	54	H		agree
+L04	2	124	H		agree
+L04	3	130	H		agree
+L04	4	54	H		agree
+L04	5	117	H		agree
+L04	6	95	H		agree
+L04	7	46	H		agree
+L04	8	75	H		agree
+L04	9	46	L		agree-flagged
+L04	10	75	L		agree-flagged
+L05	1	47	H		agree
+L05	2	75	H		agree
+L05	3	54	H		agree
+L05	4	178	H		agree
+L05	5		L		agree-flagged
+L06	1	138	M	B:-	gap
+L06	2	102	M	B:-	gap
+L06	3	93	M	B:-	gap
+L06	4	170	M	B:-	gap
+L06	5	45	M	B:-	gap
+L06	6	33	M	B:-	gap
+L06	7	117	M	B:-	gap
+L06	8	86	M	B:-	gap
+L06	9	125	M	B:-	gap
+L06	10	131	M	B:-	gap
+L06	11	130	M	B:-	gap
+L06	12	35	M	B:-	gap
+L07	1	117	H		agree
+L07	2	131	H		agree
+L07	3	35	H		agree
+L07	4	63	H		agree
+L07	5	76	H		agree
+L07	6	118	H		agree
+L07	7	56	H		agree
+L07	8	137	H		agree
+L07	9	144	H		agree
+L07	10	138	H		agree
+L07	11	118	H		agree
+L07	12	46	H		agree
+L07	13	53	H		agree
+L07	14	79	L		agree-flagged
+L07	15	35	L		agree-flagged
+L08	1	53	H		agree
+L08	2	94	H		agree
+L08	3	124	H		agree
+L08	4	75	H		agree
+L08	5	53	H		agree
+L08	6	w:auch	H		agree
+L08	7	46	H		agree
+L08	8	35	H		agree
+L08	9	69	H		agree
+L08	10	74	H		agree
+L08	11	94	M	B:-	gap
+L08	12	94	L		agree-flagged
+L09	1	262	M		agree-flagged
+L09	2	|	M		agree-flagged
+L09	3	46	H		agree
+L09	4	53	H		agree
+L09	5	123	H		agree
+L09	6	|	M		agree-flagged
+L09	7	33	H		agree
+L09	8	85	H		agree
+L09	9	88	H		agree
+L09	10	55	H		agree
+L09	11	129	H		agree
+L09	12	35	H		agree
+L09	13	138	H		agree
+L10	1	99	H		agree
+L10	2	63	H		agree
+L10	3	88	H		agree
+L10	4	74	H		agree
+L10	5	124	H		agree
+L10	6	42	H		agree
+L10	7	69	H		agree
+L10	8	54	H		agree
+L10	9	91	H		agree
+L10	10	32	H		agree
+L10	11	94	H		agree
+L10	12	74	H		agree
+L10	13	53	H		agree
+L10	14	117	H		agree
+L11	1	75	H		agree
+L11	2	44	H		agree
+L11	3	73	H		agree
+L11	4	137	H		agree
+L11	5	53	H		agree
+L11	6	94	H		agree
+L11	7	144	H		agree
+L11	8	75	H		agree
+L11	9	88	H		agree
+L11	10	|	M		agree-flagged
+L11	11	w:undt	H		agree
+L11	12	35	M	B:-	gap
+L12	1	42	H		agree
+L12	2	35	H		agree
+L12	3	145	H		agree
+L12	4	88	H		agree
+L12	5	75	H		agree
+L12	6	55	H		agree
+L12	7	117	H		agree
+L12	8	53	H		agree
+L12	9	94	H		agree
+L12	10	w:undt	H		agree
+L13	1	|	M	B:-	gap
+L13	2	90	M		agree-flagged
+L13	3	35	H		agree
+L13	4	174	H		agree
+L13	5	116	H		agree
+L13	6	139	H		agree
+L13	7	55	H		agree
+L13	8	95	H		agree
+L13	9	34	H		agree
+L13	10	46	M	A:-	gap
+L13	11	74	M	A:-	gap
+L13	12	53	M	A:-	gap
+L14	1	130	H		agree
+L14	2	117	H		agree
+L14	3	35	H		agree
+L14	4	65	H		agree
+L15	1	54	H		agree
+L15	2	40	M	B:-	gap
+L15	3	|	M	B:46	differ
+L15	4	74	M		agree-flagged
+L15	5	50	H		agree
+L15	6	73	H		agree
+L15	7	34	H		agree
+L15	8	83	H		agree
+L15	9	37	H		agree
+L15	10	35	H		agree
+L15	11	138	H		agree
+L15	12	124	H		agree
+L15	13	144	H		agree
+L15	14	34	H		agree
+L15	15	117	H		agree
+L16	1	w:undt	H		agree
+L16	2	36	H		agree
+L16	3	88	H		agree
+L16	4	74	H		agree
+L16	5	38	H		agree
+L16	6	54	H		agree
+L16	7	94	H		agree
+L16	8	w:bis	H		agree
+L16	9	157	H		agree
+L16	10	139	H		agree
+L16	11	93	H		agree
+L16	12	54	H		agree
+L16	13	95	H		agree
+L16	14	46	H		agree
+L16	15	55	H		agree
+L17	1	w:drr	M	B:-	gap
+L17	2	52	H		agree
+L17	3	95	H		agree
+L17	4	63	H		agree
+L17	5	88	H		agree
+L17	6	74	H		agree
+L17	7	125	H		agree
+L17	8	42	H		agree
+L17	9	69	H		agree
+L17	10	54	H		agree
+L17	11	118	H		agree
+L17	12	54	H		agree
+L17	13	125	H		agree
+L17	14	75	H		agree
+L17	15	46	H		agree
+L17	16	53	H		agree
+L18	1	94	H		agree
+L18	2	131	H		agree
+L18	3	w:hat	H		agree
+L18	4	47	H		agree
+L18	5	74	H		agree
+L18	6	125	H		agree
+L18	7	53	H		agree
+L18	8	124	H		agree
+L18	9	138	H		agree
+L18	10	36	H		agree
+L18	11	54	H		agree
+L18	12	88	H		agree
+L18	13	63	H		agree
+L18	14	54	H		agree
+L18	15	94	H		agree
+L19	1	90	H		agree
+L19	2	93	H		agree
+L19	3	53	H		agree
+L19	4	94	H		agree
+L19	5	188	H		agree
+L19	6	191	H		agree
+L19	7	w:haben	H		agree
+L19	8	46	H		agree
+L19	9	74	H		agree
+L19	10	53	H		agree
+L19	11	125	H		agree
+L19	12	53	H		agree
+L19	13	139	H		agree
+L19	14	117	H		agree
+L19	15	35	M	B:75	differ
+L20	1	63	H		agree
+L20	2	sup:53	M		agree-flagged
+L20	3	|	M	B:-	gap
+L20	4	46	H		agree
+L20	5	74	H		agree
+L20	6	94	H		agree
+L20	7	w:nirmalrg	M	B:	differ
+L20	8	156	H		agree
+L20	9	138	H		agree
+L20	10	35	H		agree
+L20	11	63	H		agree
+L20	12	74	H		agree
+L20	13	53	H		agree
+L20	14	117	H		agree
+L20	15	54	H		agree
+L21	1	52	H		agree
+L21	2	118	H		agree
+L21	3	91	H		agree
+L21	4	74	H		agree
+L21	5	130	H		agree
+L21	6	136	H		agree
+L21	7	74	H		agree
+L21	8	117	H		agree
+L21	9	53	H		agree
+L21	10	136	H		agree

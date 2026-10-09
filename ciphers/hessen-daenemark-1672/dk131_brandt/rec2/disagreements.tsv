@@ -1,0 +1,9 @@
+line	col	A	B	flagged	crop
+L01	10		-	A	
+L08	6	w:auch	w:auss		
+L11	10	-	|	B	
+L11	19	1	-	A	
+L13	1	-	|	B	
+L14	3	-	|	B	
+L17	1		w:der	AB	
+L20	3	-	|	B	

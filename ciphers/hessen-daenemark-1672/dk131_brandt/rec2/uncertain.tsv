@@ -1,0 +1,19 @@
+line	col	A	B	flagged	crop	both_conf
+L01	2	53	53	A		A:M/B:H
+L01	4	|	|	B		A:H/B:M
+L01	6	|	|	B		A:H/B:M
+L02	10	56	56	A		A:M/B:H
+L04	7	46	46	B		A:H/B:M
+L04	9	46	46	AB		A:M/B:M
+L04	15	64	64	A		A:M/B:H
+L09	1	262	262	AB		A:M/B:M
+L09	2	|	|	B		A:H/B:M
+L09	6	|	|	B		A:H/B:M
+L11	11	|	|	B		A:H/B:M
+L12	12	46	46	B		A:H/B:M
+L13	16	65	65	A		A:M/B:H
+L14	5	56	56	AB		A:M/B:M
+L14	8	85	85	AB		A:M/B:M
+L19	1	90	90	A		A:M/B:H
+L20	2	sup:53	sup:53	AB		A:M/B:M
+L21	3	91	91	A		A:M/B:H

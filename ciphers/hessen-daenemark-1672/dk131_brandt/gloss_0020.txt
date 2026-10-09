@@ -1,0 +1,9 @@
+# gloss_0020.txt -- period marginal gloss beside the lower cipher block of HStAM 4 f Staaten D Daenemark 131 image 0020
+# (Brandt, Copenhagen, 27 Feb 1672). One Sonnet pass (gloss_pass.tsv) + BRANDT-TX worker check at 2x native on margin lines 9-15.
+# Normalised (rule 3 convention clause): lowercase, no punctuation, abbreviations expanded, the gloss's own period spelling kept
+# (tragedie, masquen, cavalliern), because the cipher encodes the writer's spelling, not modern German. [?] = letters unread.
+# Worker corrections to the pass: "wie aus dahin" -> "sie auch daher"; "güldenen" -> "gueldenlew" (Gyldenløve, M); "per" -> "der";
+# "mischen wollen" -> "[?] wollen" (word unread, M/L). Grade of the gloss text itself: M (eye read of a period hand).
+der koenig ist oft masquirt dahin kommen sonderlich vorgestern da die tragedie vom koenig in engelandt carl stuard agirt
+wurde kamen sie auch daher mit gueldenlew der selbst auf englische manier [?] wollen und andere cavalliern und nahmen
+die masquen ab da die tragedie halb aus war und blieben bis zum ende der englische resident hat dieses uebel genommen

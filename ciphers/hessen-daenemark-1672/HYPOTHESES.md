@@ -37,3 +37,5 @@ except the gloss itself.
 | hypothesis | control (14 held-out C-grade gloss tokens, 28 referents) | target | verdict |
 |---|---|---|---|
 | a de17 word-bigram context fill recovers nomenclator values (625, 634, 602) | top-1 0.071, MRR 0.208 vs shuffled-context null p95 0.314; prior-only top-1 0.000 | not scored (gate FAIL); record-only ranks in keys/context_fill_d4hdk.tsv | CONTROL BELOW GATE: instrument non-discriminating at these contexts; key-rebuild [retired] (keys/context_fill_d4hdk.py) |
+
+| BRANDT-TX (9 Oct 2026): the period margin gloss of Dänemark 131 0020 is a letter-level decipherment of its lower block (interlinear_align, 10 clear-word anchor pairs, PREREG-BRANDT-TX) | 200 gloss derangements: CONSISTENT mean 6.13, p95 10, max 12 | CONSISTENT 9, p = 0.149; exploratory agrees 95 vs derangement max 49 (p = 0.005, not a gate) | FAIL (pre-registered); next: pre-register the agrees count + held-out 0049 |
