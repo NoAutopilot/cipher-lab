@@ -1,0 +1,14 @@
+arm	fixed	broken	p	wrong	n
+word_lw0.5	4	5	1.0000	13	343
+word_lw0.5_blanket	4	7	0.5488	15	343
+word_lw1	4	5	1.0000	13	343
+word_lw1_blanket	4	7	0.5488	15	343
+word_lw2	3	4	1.0000	13	343
+word_lw2_blanket	3	6	0.5078	15	343
+word_lw4	3	4	1.0000	13	343
+word_lw4_blanket	3	6	0.5078	15	343
+word_LOO (L01:0.5 L02:0.5 L03:0.5 L04:0.5 L05:0.5 L06:0.5 L07:0.5 L08:0.5 L09:0.5 L10:0.5 L11:0.5 L12:0.5)	4	5	1.0000	13	343
+shuffled-key x20 lw0.5	1.3	11.35	passes 0/20		
+shuffled-key x20 lw1	1.3	11.45	passes 0/20		
+shuffled-key x20 lw2	1.3	11.55	passes 0/20		
+shuffled-key x20 lw4	1.25	11.7	passes 0/20		
