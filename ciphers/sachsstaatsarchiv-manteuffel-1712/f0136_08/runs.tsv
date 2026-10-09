@@ -1,0 +1,19 @@
+run	page	x0	x1	y_code	y_gloss	context (worker eye, clear text around the run)
+L01	L	1380	2075	1768	1718	la negociation de [..] entre [..] et [..]
+L02	L	1930	2075	1895	1857	a l'exclusion de [..]
+L03	L	1570	1745	2075	2040	nous soulames ches [..]
+L04	L	1370	1780	2775	2732	par le canal de [..] qui le gouverne
+R01	R	2290	3080	1393	1360	viennent originairement du [..]
+R02	R	2270	2990	1515	1478	la part a [..] selon laquelle
+R03a	R	2185	2295	1570	1552	[..] est declare ennemi jure
+R03b	R	3085	3205	1570	1540	des interets de [..]
+R04	R	3165	3265	1625	1595	au parti de [..]
+R05	R	2185	2605	1752	1722	comprendre a [..] que [..] l'engage
+R06	R	2565	2705	1808	1782	dont [..] sera la duppe
+R07	R	2725	2845	1990	1960	dire que [..] est mieux en cour
+R08	R	2865	3185	2055	2015	grace a [..]
+R09	R	2965	3075	2125	2087	que l'autre [..] a joue
+R10	R	2185	2800	2617	2577	[..] a averti [..], que [..] seroit bien aise
+R11	R	2295	2385	2680	2652	que [..] d'icy
+R12	R	3180	3280	2735	2695	ou si [..] (line end)
+R13	R	3060	3180	2772	2735	que [..] fait
