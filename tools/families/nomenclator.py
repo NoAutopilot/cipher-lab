@@ -46,6 +46,8 @@ Vocabulary prior with order (H73, 3 Oct 2026): `--param vocab_order=1 prior=WE02
 decade level on one sibling's alphabetical whole-word list (section "vocabulary-prior, one-part-by-decade" below; its
 control re-encodes the THE=972 decodes of Armstrong's 15/22 Feb 1808 letters with `book=THE972|WE028`, `thin=`).
 Matched control 0.153 mean vs gate 0.6 (ciphers/armstrong-madison-1808/h73/results.tsv): a non-test at N=369.
+lock (MQS-LOCK, 9 Oct 2026): family_run.py --param lock=FILE arrives as params["lock"] and is merged into the cribs
+above (_apply_lock); lock_truth/lock_decode are family_run's unlocked-position scoring hooks.
 Test: python3 tools/tests/test_nomenclator.py (offline, about a minute)."""
 import math, os, random, re, sys
 from collections import Counter, defaultdict
@@ -1304,7 +1306,38 @@ def solve_vocab(cipher_msgs, spec, seed, restarts, corpora, params):
 _solve_plain, _make_control_plain = solve, make_control
 
 
+def _apply_lock(params):
+    """family_run.py --param lock=FILE (MQS-LOCK, 9 Oct 2026): params["lock"] = {value: word} merged into the cribs
+    (a lock row wins over a crib on the same value), so it is held through phase 1, every annealed sweep and every
+    greedy sweep of every restart (ARM3-LOOP's crib path). Non-numeric signs (wildcards) are dropped; a NULL row is
+    refused (a null value is not part of this design). Not wired for vocab_order=1 (its solver takes no cribs)."""
+    lock = params.get("lock")
+    if not isinstance(lock, dict) or not lock:
+        return params
+    if int(params.get("vocab_order", 0) or 0):
+        raise SystemExit("nomenclator lock: not wired for --param vocab_order=1")
+    bad = sorted(k for k, v in lock.items() if k.isdigit() and not v)
+    if bad:
+        raise SystemExit(f"nomenclator lock: NULL value for {' '.join(bad[:10])}; this design has no null values")
+    p = dict(params)
+    p["cribs"] = {**(params.get("cribs") or {}), **{k: v for k, v in lock.items() if k.isdigit()}}
+    return p
+
+
+def lock_truth(cm, plain):
+    """family_run.py lock hook: the true word at each control token ('*' wildcard -> None)."""
+    w = plain.split()
+    if len(w) != sum(len(m) for m in cm):
+        raise SystemExit("nomenclator lock: control truth is not one word per token")
+    return [None if x == "*" else x for x in w]
+
+
+def lock_decode(dec, cm):
+    return dec.split()
+
+
 def solve(cipher_msgs, spec, seed, restarts, corpora, params):  # noqa: F811
+    params = _apply_lock(params)
     if int(params.get("vocab_order", 0) or 0):
         return solve_vocab(cipher_msgs, spec, seed, restarts, corpora, params)
     if int(params.get("slot_grammar", 0) or 0):

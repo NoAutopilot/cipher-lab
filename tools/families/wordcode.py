@@ -31,6 +31,8 @@ names (8), namepen (-6.0), codeletters (0: a code-capable type decodes only to a
 Calibration on the 0%-error control, seed 1, one restart, 20k iters (bSALW, 26 Sept 2026): the KL letter term taken
 over code-word letters as well read 0.00-0.20; over letter types only at uni_weight 0.5 it read 0.72, at 1.0 0.20;
 codeletters=1 read 0.00-0.44 (letter/word swaps stall the anneal). The defaults are those settings. Test: python3 tools/tests/test_wordcode.py
+lock (MQS-LOCK, 9 Oct 2026): family_run.py --param lock=FILE arrives as params["lock"] = {type: value}: a held map,
+set in every restart's initial key and never moved (_held); lock_truth/lock_decode are family_run's scoring hooks.
 
 Context option (SALV-CTX, LANE SALV, 26 Sept 2026): --param context=<path> gives, per spec ciphertext run (same order as
 the spec's lines), the plain word immediately before and after it -- a TSV `run_index<TAB>prev_word<TAB>next_word`, blank
@@ -333,6 +335,12 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
     inruns = {t: sorted({i for i, r in enumerate(runs) if t in r}) for t in types}
     capl = [t for t in types if t in cap]
     rng = random.Random(seed)
+    held = _held(params, tf, letters)
+    if held:  # a locked word outside the solver's word list scores at the list's rarest prior (never a KeyError)
+        floor = min(sc.wlog.values())
+        for v in held.values():
+            if len(v) > 1 and v != NAME and v not in sc.wlog:
+                sc.wlog[v] = floor
 
     def run_score(i, key):
         s = _run_string(runs[i], key)
@@ -376,6 +384,7 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
                 key[t] = rng.choices(sc.words, sc.wweights)[0]
             else:
                 key[t] = rng.choices(letters, lw)[0]
+        key.update(held)
         rs = [run_score(i, key) for i in range(len(runs))]
         cnt = letter_counts(key)
         nname = sum(1 for t in types if key[t] == NAME)
@@ -399,6 +408,8 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
                 if t in cap and not codeletters:
                     continue
                 new = rng.choices(letters, lw)[0]
+            if held and t in held:
+                continue
             old = key[t]
             if new == old:
                 continue
@@ -427,6 +438,7 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
             else:
                 key[t] = old
         results.append((best, bestkey))
+    held_ok = all(k[t] == v for _, k in results for t, v in held.items())
     results.sort(key=lambda x: -x[0])
     best, key = results[0]
     dec_tokens = [key[t] for r in runs for t in r]
@@ -453,10 +465,38 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
             "context_runs": sum(1 for p in pads if p[2] or p[3]),
             "code_tokens_decoded": ncode, "name_types": sum(1 for v in key.values() if v == NAME),
             "code_words": Counter(x for x in dec_tokens if len(x) > 1 and x != NAME).most_common(25),
+            **({"lock": {"types": len(held), "held_in_every_restart": held_ok}} if held else {}),
             **{k: v for k, v in _STASH.items() if k not in ("truth_tokens", "truth_index", "truth_code", "dec_tokens", "dec_lines", "solver_vocab",
                                                  "truth_hapax", "control_context", "control_msgs_id")}}
     dec = "".join(x for x in dec_tokens if x != NAME)
     return dec, best, info
+
+
+def _held(params, tf, letters):
+    """family_run.py --param lock=FILE (MQS-LOCK, 9 Oct 2026): params["lock"] = {type: letter | word | <NAME>}, held in
+    every restart's initial key and never proposed a move (the same contract as nomenclator's cribs). Types absent from
+    the runs are dropped; a one-character value must be a plaintext letter; NULL is refused (no null in this design)."""
+    lock = params.get("lock")
+    if not isinstance(lock, dict) or not lock:
+        return {}
+    held = {t: (v if v == NAME or len(v) > 1 else v.lower()) for t, v in lock.items() if t in tf}
+    bad = sorted(t for t, v in held.items() if not v or (len(v) == 1 and v not in letters))
+    if bad:
+        raise SystemExit(f"wordcode lock: value empty (NULL) or not a plaintext letter for {' '.join(bad[:10])}")
+    return held
+
+
+def lock_truth(cm, plain):
+    """family_run.py lock hook: the true token value (letter or word) at each control cipher token, through the error
+    index map; an inserted token -> None."""
+    tt, tix = _STASH.get("truth_tokens"), _STASH.get("truth_index")
+    if not tt or tix is None or len(tix) != sum(len(m) for m in cm):
+        raise SystemExit("wordcode lock: no control truth stash for these messages")
+    return [tt[j] if j is not None else None for j in tix]
+
+
+def lock_decode(dec, cm):
+    return list(_STASH.get("dec_tokens") or [])
 
 
 def score_recovery(plain, truth):

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# promoted to tools/family_run.py --param lock=FILE (stage 1 only; MQS-LOCK, 9 Oct 2026); kept because its outputs are cited
 """RUN5-C1161RA (4 Oct 2026): joint re-anneal of the M signs (+ contested S 4, S) with the C and agreed S signs held.
 Pre-registered in tx/PREREG_reanneal.md (pushed before any run). Outputs in two/ra/.
 

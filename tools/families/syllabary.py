@@ -17,6 +17,8 @@ weight), then the MEASURED transcription-error mix of NOTES 'CM3' sec.1 applied 
 type at the target's frequencies, a code confusion swaps the base for a listed partner #/+ g/y bh/g #/Z f/y bh/phi).
 Solver: every token is written as a code symbol then a mark symbol (P's expansion), mark symbols restricted to
 a e i o u (`allowed`), and tools/homophonic_anneal.py anneals over the ~76 symbols with the corpus trigram model.
+lock (MQS-LOCK, 9 Oct 2026): family_run.py --param lock=FILE -> params["lock"], mapped onto the anneal's fixed symbols
+(_lock_symbols); lock_truth/lock_decode are family_run's scoring hooks.
 Recovery on a control is TOKEN accuracy (every letter the token stands for right; a deleted token counts wrong, an
 inserted one in neither numerator nor denominator), the CM3 convention, so the numbers sit beside CM3's rows.
 
@@ -360,8 +362,10 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
         if s.startswith("M"):
             mk = s[1:] if params.get("assign", "regular") != "irregular" else split_tok(s[1:])[1]
             allowed[s] = mclass.get(mk, VOW)
+    fixed = {"B": "w"} if boundary else {}
+    nlock = _lock_symbols(params, seq, mclass, params.get("assign", "regular"), fixed)
     res = ha.solve(stream, model, restarts, _p(params, "iters", 120000), seed, _p(params, "uni_weight", 1.0), allowed=allowed,
-                   fixed={"B": "w"} if boundary else None)
+                   fixed=fixed or None)
     sc, key = res[0][:2]
     dec_tokens = ["".join(key[x] for x in stream[a:b]) for a, b in spans]
     dec = "".join(dec_tokens)  # decode carries no boundary letters: token spans exclude B
@@ -369,7 +373,55 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
     info = {"restart_scores": [round(r[0], 1) for r in res], "symbols": len(set(stream)), "letters": len(dec),
             "score_per_symbol": round(sc / max(1, len(stream)), 4), "score_per_letter": round(sc / max(1, len(dec)), 4),
             **{k: v for k, v in _STASH.items() if k not in ("truth_tokens", "truth_index", "dec_tokens")}, "key": key}
+    if nlock:
+        info["lock"] = {"types": nlock, "held_in_every_restart": all(r[1].get(x) == v for r in res for x, v in fixed.items())}
     return dec, sc, info
+
+
+def _lock_symbols(params, seq, mclass, assign, fixed):
+    """family_run.py --param lock=FILE (MQS-LOCK, 9 Oct 2026): params["lock"] = {token type: its letters} mapped onto
+    the anneal's symbols in `fixed` (never resampled, set in every restart): a bare `code` -> C<code> = the letter; a
+    marked `code^mark` -> C<code> = first letter and the mark symbol (M<mark>, or M<code^mark> under assign=irregular)
+    = the vowel; a doubling mark -> C<code> only. A lock on code^mark therefore also fixes the base code's bare tokens
+    (they are scored as unlocked, on control and target alike). Two lock rows that disagree on one symbol keep the
+    first and are reported. Returns the number of lock types applied."""
+    lock = params.get("lock")
+    if not isinstance(lock, dict) or not lock:
+        return 0
+    ss, n, clash = set(seq), 0, []
+    for t, v in sorted(lock.items()):
+        if t not in ss:
+            continue
+        code, mark = split_tok(t)
+        cls = (mclass or {}).get(mark, VOW) if mark else None
+        want = len(v) == 2 if mark and cls != "dbl" else (len(v) == 2 and v[0] == v[1]) if mark else len(v) == 1
+        if not v or not want:
+            raise SystemExit(f"syllabary lock: value {v!r} does not fit token {t!r} (bare = 1 letter, marked = 2, "
+                             "doubling mark = a doubled letter; NULL is refused)")
+        pairs = [("C" + code, v[0])]
+        if mark and cls != "dbl":
+            pairs.append(("M" + (t if assign == "irregular" else mark), v[1]))
+        for sym, letter in pairs:
+            if sym in fixed and fixed[sym] != letter:
+                clash.append(f"{t}:{sym}={letter} vs {fixed[sym]}")
+            else:
+                fixed[sym] = letter
+        n += 1
+    if clash:
+        print(f"  syllabary lock: {len(clash)} conflicting row(s) kept the first value: {'; '.join(clash[:8])}")
+    return n
+
+
+def lock_truth(cm, plain):
+    """family_run.py lock hook: the true letters of each control token through the error index map (inserted -> None)."""
+    tt, tix = _STASH.get("truth_tokens"), _STASH.get("truth_index")
+    if not tt or tix is None or len(tix) != sum(len(m) for m in cm):
+        raise SystemExit("syllabary lock: no control truth stash for these messages")
+    return [tt[j] if j is not None else None for j in tix]
+
+
+def lock_decode(dec, cm):
+    return list(_STASH.get("dec_tokens") or [])
 
 
 def score_recovery(plain, truth):

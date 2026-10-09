@@ -1,5 +1,9 @@
 """homophonic: homophonic substitution, wrapping tools/homophonic_anneal.py with the spec's K.
 
+lock (MQS-LOCK, 9 Oct 2026): family_run.py --param lock=FILE hands solve() params["lock"] = {sign: letter}, passed as
+homophonic_anneal's fixed= (never resampled, set in every restart's initial key); letter design only (refused with
+units, wild, crib, soft); a NULL row is refused (use exclude=). lock_truth/lock_decode are family_run's scoring hooks.
+
 Control design: homophonic_anneal.make_control (K signs allotted to letters by corpus frequency, each occurrence
 drawing a homophone at random) on a plaintext window cut from the corpus and held out of the solver's model.
 Solver: homophonic_anneal.solve. params: iters (40000), order (3), uni_weight (1.0), norm (none | nc2: divide the
@@ -526,6 +530,10 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
     ha.set_alphabet(params.get("alphabet"))
     _text_opts(params)
     mq = _mqs(params)
+    if isinstance(params.get("lock"), dict) and params["lock"]:
+        other = [k for k in ("units", "wild", "crib", "soft") if params.get(k)]
+        if other:
+            raise SystemExit(f"homophonic lock: not wired together with --param {', '.join(other)}")
     if _is_units(params):
         # corpora arrive as raw text for the target and as unit strings (the control's held-out rest) for a control
         # a unit string has no whitespace or punctuation; raw corpus text always has spaces
@@ -568,9 +576,41 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
     soft = str(params.get("soft", "") or "")
     if soft:
         return _solve_soft(seq, model, corpora, seed, restarts, params, soft)
-    res = ha.solve(seq, model, restarts, _p(params, "iters", 40000), seed, _p(params, "uni_weight", 1.0), norm=_p(params, "norm", "none"), **mq)
+    fx = _lock_fixed(params, seq)
+    res = ha.solve(seq, model, restarts, _p(params, "iters", 40000), seed, _p(params, "uni_weight", 1.0), fixed=fx, norm=_p(params, "norm", "none"), **mq)
     sc, key = res[0]
-    return "".join(key.get(x, ha.GAP) for x in seq), sc, {"restart_scores": [round(r[0], 1) for r in res], "key": key}
+    info = {"restart_scores": [round(r[0], 1) for r in res], "key": key}
+    if fx:
+        info["lock"] = {"signs": len(fx), "held_in_every_restart": all(r[1].get(x) == v for r in res for x, v in fx.items())}
+    return "".join(key.get(x, ha.GAP) for x in seq), sc, info
+
+
+def _lock_fixed(params, seq):
+    """--param lock=FILE (family_run.py, MQS-LOCK 9 Oct 2026): {sign: letter} held fixed in every restart and sweep
+    (homophonic_anneal's `fixed=`, the crib path of --fix). Signs absent from seq are dropped (family_run reports them);
+    a NULL value is refused here -- a null in this design is --param exclude=FILE (MQS-SOLVER's gap signs)."""
+    lock = params.get("lock")
+    if not isinstance(lock, dict) or not lock:
+        return None
+    ss = set(seq)
+    fx = {x: v for x, v in lock.items() if x in ss}
+    bad = sorted(x for x, v in fx.items() if v not in ha.ALPHA or len(v) != 1)
+    if bad:
+        raise SystemExit(f"homophonic lock: value is not one letter of the alphabet for sign(s) {' '.join(bad[:10])} "
+                         "(NULL rows: use --param exclude=FILE)")
+    return fx or None
+
+
+def lock_truth(cm, plain):
+    """family_run.py lock hook: the true letter at each control token ('-' = a null token -> None)."""
+    if len(plain) != sum(len(m) for m in cm):
+        raise SystemExit("homophonic lock: the control truth is not one letter per token (units=syl?); lock is wired "
+                         "for the letter design only")
+    return [None if c == "-" else c for c in plain]
+
+
+def lock_decode(dec, cm):
+    return list(dec)
 
 
 def _solve_soft(seq, model, corpora, seed, restarts, params, soft):

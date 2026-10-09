@@ -99,8 +99,31 @@ marked shuffle=SEED so they never collide with the real target's own row. A judg
 voids the judge as a gate for this family at this N (CLAUDE.md rule 3; ARM-C1, 26 Sept 2026: the en18 judge
 PASSed a nomenclator decode of shuffled armstrong-madison-1808) -- run --shuffle-target before trusting a PASS
 on the real target as a gate.
+--param lock=FILE (MQS-LOCK, 9 Oct 2026; tools/tests/PREREG-MQS-LOCK.md): hold confirmed sign values fixed through
+every restart and sweep and re-run the rest -- the confirm-lock-re-run step of Lasry, Biermann and Tomokiyo 2023
+pp.115-117 (Figs 6-7) and CTTS's 'Locked' homophones. FILE is `sign<TAB>value[<TAB>grade]` ('#' comments, NULL = a
+null), seeded_code's pins contract (read_pins, A2-CAS8 2 Oct 2026, castelcicala-1816). Wired for homophonic (fixed=),
+nomenclator (cribs), wordcode and syllabary (a held map), and seeded_code, where lock= is an alias of pins= and nothing
+else (its own control share and unpinned scoring). Any other family: exit 2, naming the family (a lock is never
+silently ignored). A lock sign absent from the ciphertext is reported in the plan and ignored, never an error. The
+control locks its OWN synthetic key at the target's locked TOKEN share (seeded_code's target_pinshare rule: types
+drawn with weight count**lockpow, default 2, each at its majority true value); recovery is scored on UNLOCKED token
+positions only and the row carries the lock file's sha256, row count and both locked shares. Control knobs:
+lockshare=p (override the share; 0 = the blind baseline), lockapply=0 (select and score the same positions but do not
+hold them: blind on identical positions), lockperm=1 (the wrong-key null: the same signs held at permuted values),
+lockdraw=D (another random draw of the locked types at the same share and seed; default 0).
+Promoted from ciphers/clair1161-avis-flandre-1688/two/reanneal.py stage 1 as run by two/lolo_diag.py (C1161-LOLO,
+4 Oct 2026, planted control 3/3); its stage 2 (word cover) is left behind, since that is what failed there.
+Not a fourth try of tools/crib_rounds.py's held re-anneal (rule 3's third-attempt clause): crib_rounds measures a
+reader loop (cribs proposed from a partial decode, round by round) and failed below a ~45% decode (solvEX, solvEX2,
+ARM3-LOOP); lock measures only the harness step -- values confirmed outside the run, held, the rest re-run and scored
+against a matched-share control -- and makes no claim that a reader can find the locks.
+Meant to catch: a run that re-anneals a sign a verifier already confirmed; a control that scores locked tokens as
+recovered (inflating the figure). Must NOT block: any run without lock= (byte-identical to before), a lock file
+naming signs the ciphertext lacks. Tests: tools/tests/test_family_run_lock.py.
 Exit codes: 0 run complete (gate met, or --control-only); 3 CONTROL BELOW GATE (control row written, no target);
-2 bad arguments (a --label carrying a rule 10 word: solved, new, first, unpublished).
+2 bad arguments (a --label carrying a rule 10 word: solved, new, first, unpublished; lock= on a family it is not
+wired for; a missing lock file).
 The row never carries a decode; the decode is in the families/ file. The tool never writes the words solved,
 new, first or unpublished (rule 10).
 
@@ -258,6 +281,82 @@ def append_row(out, cells):
     return row
 
 
+# ---------------------------------------------------------------- --param lock=FILE (MQS-LOCK, 9 Oct 2026)
+LOCK_FAMILIES = ("homophonic", "nomenclator", "wordcode", "syllabary", "seeded_code")
+
+
+def read_lock(path):
+    """The lock file: TSV `sign<TAB>value[<TAB>grade]`, '#' comments, value NULL = a null; an optional header row
+    `sign value [grade]` (or seeded_code's `group value`) is skipped. Same contract as seeded_code.read_pins (A2-CAS8,
+    2 Oct 2026, castelcicala-1816), except that the value is kept as written (seeded_code folds it to a-z itself; a
+    homophonic soft alphabet has upper-case letters). Returns ({sign: value}, {sign: grade}); a row with no TAB value
+    is an error (never silently dropped)."""
+    vals, grades = {}, {}
+    for n, line in enumerate(open(path, encoding="utf-8"), 1):
+        if line.startswith("#") or not line.strip():
+            continue
+        p = [x.strip() for x in line.rstrip("\n").split("\t")]
+        if len(p) < 2 or not p[0]:
+            raise SystemExit(f"lock file {path} line {n}: expected sign<TAB>value[<TAB>grade], got {line.rstrip()!r}")
+        if n == 1 and p[0].lower() in ("sign", "group") and p[1].lower() == "value":
+            continue
+        vals[p[0]] = "" if p[1] == "NULL" else p[1]
+        grades[p[0]] = p[2] if len(p) > 2 and p[2] else "-"
+    return vals, grades
+
+
+def sha256_of(path):
+    import hashlib
+    return hashlib.sha256(open(path, "rb").read()).hexdigest()
+
+
+def choose_control_lock(flat, truth, share, seed, pinpow=2.0, perm=False, draw=0):
+    """The control's own lock, matched to the target's locked TOKEN share (seeded_code.make_control's rule, A2-CAS8):
+    sign types are drawn at random with weight count**pinpow (default 2: a few frequent types carry the share, as a
+    verifier's confirmed signs do) until the locked tokens reach share * N; each locked type takes its TRUE value (the
+    majority truth over its occurrences, so an error-injected control is locked to what the sign mostly stands for).
+    perm=True is the wrong-key null: the locked values are permuted among themselves (a derangement of the distinct
+    values), so the same signs are held at the same share but at wrong values. Its own RNG; the family's RNG is never
+    touched, so lockshare=0 reproduces the blind run exactly."""
+    import random
+    from collections import defaultdict
+    by = defaultdict(Counter)
+    for t, v in zip(flat, truth):
+        if v is not None:
+            by[t][v] += 1
+    key = {t: c.most_common(1)[0][0] for t, c in by.items()}
+    cnt = Counter(t for t in flat if t in key)
+    rng = random.Random(seed * 7919 + 4243 + 1000003 * draw)
+    types = sorted(cnt, key=lambda t: (-cnt[t], t))
+    locked, cov, N = {}, 0, len(flat)
+    while cov < share * N and types:
+        t = rng.choices(types, weights=[cnt[x] ** pinpow for x in types])[0]
+        types.remove(t)
+        locked[t] = key[t]
+        cov += cnt[t]
+    if perm and locked:
+        vals = sorted(set(locked.values()))
+        if len(vals) > 1:
+            while True:
+                sh = vals[:]
+                rng.shuffle(sh)
+                if all(a != b for a, b in zip(vals, sh)):
+                    break
+            m = dict(zip(vals, sh))
+            locked = {t: m[v] for t, v in locked.items()}
+    return locked, cov / max(1, N)
+
+
+def unlocked_recovery(decoded, truth, flat, locked):
+    """Token accuracy over UNLOCKED positions only (a locked token reads right because it is locked, so it is never
+    counted); positions whose truth is None (a null, an inserted token, a wildcard) are not counted either.
+    Returns (share right, positions counted)."""
+    pos = [i for i, (t, v) in enumerate(zip(flat, truth)) if v is not None and t not in locked]
+    if not pos:
+        return 0.0, 0
+    return sum(1 for i in pos if i < len(decoded) and decoded[i] == truth[i]) / len(pos), len(pos)
+
+
 # ---------------------------------------------------------------- main
 def run_judge(spec_path, decode_path):
     r = subprocess.run([sys.executable, os.path.join(TOOLS, "judge_plaintext.py"), spec_path, "--file", decode_path],
@@ -320,6 +419,19 @@ def main(argv=None):
     spec = json.load(open(a.spec, encoding="utf-8"))
     slug = spec.get("slug") or os.path.splitext(os.path.basename(a.spec))[0]
     params = dict(kv.split("=", 1) for kv in a.param)
+    lock_path = None
+    if "lock" in params:
+        if a.family not in LOCK_FAMILIES:
+            print(f"--param lock= is not wired for family {a.family!r} (lock families: {', '.join(LOCK_FAMILIES)}); "
+                  "refusing rather than ignoring the lock", file=sys.stderr)
+            return 2
+        if not os.path.exists(params["lock"]):
+            print(f"--param lock={params['lock']}: no such file", file=sys.stderr)
+            return 2
+        if a.family == "seeded_code":  # an alias of pins (A2-CAS8), nothing else: its own control, share and scoring
+            params["pins"] = params.pop("lock")
+        else:
+            lock_path = params["lock"]
     label_note = ""
     if a.measured_error is not None:
         err_param = params.get("err") or params.get("noise")
@@ -361,6 +473,31 @@ def main(argv=None):
     out = a.out or os.path.join(ROOT, "ciphers", slug, "HYPOTHESES.md")
     fam = families.load(a.family)
     seeds = list(range(a.seed, a.seed + max(1, a.seeds)))
+    lock_t, lock_line, lock_cell = None, "", ""
+    if lock_path:
+        lvals, lgrades = read_lock(lock_path)
+        tset = set(toks)
+        lock_t = {sg: v for sg, v in lvals.items() if sg in tset}
+        absent = sorted(sg for sg in lvals if sg not in tset)
+        tshare = sum(1 for t in toks if t in lock_t) / N
+        lshare = float(params.get("lockshare", tshare))
+        lapply = str(params.get("lockapply", "1")) not in ("0", "no", "false")
+        lperm = str(params.get("lockperm", "0")) not in ("0", "no", "false", "")
+        lpow = float(params.get("lockpow", 2.0))
+        ldraw = int(params.get("lockdraw", 0))
+        gmix = ",".join(f"{g}:{c}" for g, c in sorted(Counter(lgrades[sg] for sg in lock_t).items()))
+        lsha = sha256_of(lock_path)
+        lock_line = (f"\nlock {rel(os.path.abspath(lock_path))} sha256 {lsha[:16]}: {len(lvals)} rows, {len(lock_t)} signs in the "
+                     f"ciphertext (grades {gmix or '-'}), locked token share {tshare:.3f}; {len(absent)} absent from the "
+                     f"ciphertext, ignored" + (f" ({' '.join(absent[:12])}{' ...' if len(absent) > 12 else ''})" if absent else "") +
+                     f"\ncontrol lock share {lshare:.3f}" + ("" if lapply else " (lockapply=0: selected and scored, NOT held: "
+                     "the blind arm on the same positions)") + (" lockperm: control locked at WRONG values (null)" if lperm else "") +
+                     "; recovery is scored on unlocked positions only")
+        lock_cell = (f" lock_sha256={lsha[:16]} lock_rows={len(lvals)} lock_in_cipher={len(lock_t)} lock_share_target={tshare:.3f}"
+                     f" lock_share_control={lshare:.3f}" + ("" if lapply else " lock_NOT_applied") + (" lock_WRONG_values" if lperm else "")
+                     + " recovery=unlocked_positions")
+        if not (hasattr(fam, "lock_truth") and hasattr(fam, "lock_decode")):
+            raise SystemExit(f"family {a.family} is in LOCK_FAMILIES but has no lock_truth/lock_decode hooks")
     pshow = ",".join(f"{k}={v}" for k, v in params.items() if k not in ("N", "K", "lengths", "target_msgs", "messages_independent"))
     if a.shuffle_target is not None:
         pshow = (pshow + "," if pshow else "") + f"shuffle_target={a.shuffle_target}"
@@ -384,7 +521,7 @@ def main(argv=None):
             (f" (target letters shuffled, seed {a.shuffle_target}, false-positive floor)" if a.shuffle_target is not None else "") +
             f"\ncorpora: {', '.join(rel(p) for p in paths)}\n"
             f"control seeds {seeds}, restarts {a.restarts}, gate {a.gate}, params {pshow or '-'}\n"
-            f"row -> {rel(out)}; decode -> ciphers/{slug}/families/{a.family}-{a.seed}{dsuffix}.txt")
+            f"row -> {rel(out)}; decode -> ciphers/{slug}/families/{a.family}-{a.seed}{dsuffix}.txt" + lock_line)
     print(plan)
     if a.dry_run:
         return 0
@@ -394,15 +531,27 @@ def main(argv=None):
     recs = []
     for s in seeds:
         cm, plain, train = fam.make_control(spec, s, corpora, dict(params))
-        dec, sc, info = fam.solve(cm, spec, s, a.restarts, train, dict(params))
+        sp = dict(params)
+        if lock_path:
+            flatc = [t for m in cm for t in m]
+            truth = fam.lock_truth(cm, plain)
+            clock, cshare = choose_control_lock(flatc, truth, lshare, s, lpow, lperm, ldraw)
+            sp["lock"] = clock if lapply else {}
+        dec, sc, info = fam.solve(cm, spec, s, a.restarts, train, sp)
         rec = fam.score_recovery(dec, plain)
+        if lock_path:
+            rec_all = rec
+            rec, npos = unlocked_recovery(fam.lock_decode(dec, cm), truth, flatc, clock)
+            print(f"  lock (control seed {s}): {len(clock)} sign types locked, token share {cshare:.3f} (target "
+                  f"{tshare:.3f}){'' if lapply else ', NOT held (lockapply=0)'}; recovery on {npos} unlocked positions "
+                  f"{rec:.3f} (family's own figure over all positions {rec_all:.3f})")
         recs.append(rec)
         print(f"CONTROL seed {s}: N={sum(len(m) for m in cm)} K={len({t for m in cm for t in m})} recovery {rec:.3f} score {sc:.2f}")
     mean = statistics.mean(recs)
     ctl = f"{fmt(mean)} ({fmt(min(recs))}-{fmt(max(recs))})"
     gated = mean >= a.gate
     date = utc_date()
-    par = f"N={N_display} K={K} restarts={a.restarts} corpus={'+'.join(os.path.basename(p) for p in paths)}" + (f" {pshow}" if pshow else "")
+    par = f"N={N_display} K={K} restarts={a.restarts} corpus={'+'.join(os.path.basename(p) for p in paths)}" + (f" {pshow}" if pshow else "") + lock_cell
     if a.control_only:
         row = append_row(out, [date, a.family, par, f"{seeds[0]}-{seeds[-1]}" if len(seeds) > 1 else seeds[0], ctl,
                               "not run (control-only)", "-", "yes" if gated else "no", a.label or "-"])
@@ -414,7 +563,10 @@ def main(argv=None):
         print(f"CONTROL BELOW GATE: mean {mean:.3f} < {a.gate}; target not run; row appended to {rel(out)}")
         return 3
     # 2. target
-    dec, sc, info = fam.solve(msgs, spec, a.seed, a.restarts, corpora, dict(params))
+    tp = dict(params)
+    if lock_path:
+        tp["lock"] = lock_t if lapply else {}
+    dec, sc, info = fam.solve(msgs, spec, a.seed, a.restarts, corpora, tp)
     fdir = os.path.join(ROOT, "ciphers", slug, "families")
     os.makedirs(fdir, exist_ok=True)
     dpath = os.path.join(fdir, f"{a.family}-{a.seed}{dsuffix}.txt")

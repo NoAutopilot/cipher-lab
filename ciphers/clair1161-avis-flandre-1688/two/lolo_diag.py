@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# promoted to tools/family_run.py --param lock=FILE (stage 1 only; MQS-LOCK, 9 Oct 2026); kept because its outputs are cited
 """C1161-LOLO step 1 (4 Oct 2026, account-3 Fable worker): why did the joint re-anneal's planted control fail 0/3 under
 both norms? Disk only. Reuses two/reanneal.py's objective (same stream, model, W, vocabulary) unchanged.
 
