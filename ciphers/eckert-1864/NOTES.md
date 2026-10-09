@@ -2921,3 +2921,23 @@ the earlier passes believed searched because the cached `warofrebellion431unit` 
 p.11; Plum II pp.34-35; Dana 18 June, OR I/40 pt 1 p.24). FV-FM7a section 4's decoder slips are still in reading.md (no FIX run yet).
 Follow-up suggestion (not done): cache the real I/43 pt 1 text in sources/ia-fulltext/print-check and re-check every N3 entry of
 1 Aug-30 Sept 1864 addressed to Halleck, Augur or the Department of Washington against it, ~$1.
+
+## FIX-E262 (9 Oct 2026, account 1, for orchestrator (account-4))
+
+Parent worker FIX-E262, 06:41-06:47 UTC by `date -u`. Applies the two E262 corrections named in AUDIT.md "## AUDIT 2 (AUD2-LEDGER-16)"
+through ciphertext.txt per-entry note lines (the decode layer, decode.py `entry_text`); the transcribed lines are untouched. No new reading.
+
+| Token (as written) | Before | After | Note line | Grade before -> after |
+|---|---|---|---|---|
+| "Whiskey" | Whiskey (left in clear, uncounted) | [Troops] | `variant: whiskey=Whisky:M` | none -> M (key row Whisky = Troops, p.24 l.7; spelling variant graded M as E143's identical "whiskey", FV-LS5-B) |
+| "hoe man" | hoe man (plain, uncounted) | [Homan] | `merge: hoe+man` + `gloss: hoeman=Homan:I` | none -> I (sound-alike for the operator Homan, holder 5671/5682/5707/5712/5713; the "white+horse" = White House I pattern) |
+
+Grade note: AUD2-LEDGER-16 wrote "H 8 of 8" counting Whiskey as H; this fix grades it M, the folder's own precedent for the same spelling
+variant (E143), so E262 now reads decoder H 7, M 1, I 1 (was H 7). Totals over 213 entries: I 22 -> 23, M 30 -> 31. status.json E262
+`completeness`/`depth_note` restated, `depth_pct` 100.0 -> 77.8 (7 H of 9 counted tokens), `depth` D2 unchanged (not raised), `gap`
+records the fix; `second-opinions/PROMPT-chatgpt-e262.md` already read [Troops] and Homan, now names both grades. SECOND-OPINIONS-QUEUE
+row 153 carries no reading text (unchanged). Not done (outside this fix): the ciphertext.txt header gloss "rebels(?) arriving" (AUD2 says
+troops) and the safe sentence's "Read at grade H" wording, which now rests on 7 H plus one M token: for the lane.
+
+`python3 ciphers/eckert-1864/decode.py --check` before the edit: "reading.md is current" (exit 0); after the note lines, stale (exit 1);
+after `--write`: "reading.md is current" (exit 0). `python3 tools/depth_check.py`: exit 0 (106 unique solves, unchanged).

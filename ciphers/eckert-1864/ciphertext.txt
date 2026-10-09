@@ -2588,6 +2588,9 @@ for apple mattox but I have told him there is
 none on hand at present please send hoe man here
 R OBrien
 plain: apple mattox
+variant: whiskey=Whisky:M
+merge: hoe+man
+gloss: hoeman=Homan:I
 
 ### E263 | Page 268 | 5812 | mssEC 25 (obj 5952, pointer 5812), 29 Nov 1864 Ft Monroe, Sheldon to the Cipher Agent City Point, for Capt. William T. Howell, Grant's Hd Qrs: empty steamers to Washington, signed Rufus Ingalls, Chief Quartermaster (FM-R4b; row 5812/0; image-read at 2400 px)
 Cipher Agent City Point

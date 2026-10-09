@@ -1363,9 +1363,9 @@ Code-word tokens: H 25.
 
 **E262 | Page 197 | 5741 | mssEC 25 (obj 5952, pointer 5741), 12 June 1864 Gen. Butler's Hd Qrs, R. O'Brien to Maj. Eckert: rebels(?) arriving, cable for the James and for Appomattox (FM-R4b; row 5741/0; image-read at 2400 px)**
 
-Whiskey arriving here in considerable numbers [.] every thing indicates work for as this side of [James] [.] would it not be well to have [Men] & material ready for short notice [.] we will need I think sooner or later cable for [James] [Maj Gen B. F. Butler] has asked again for one for apple mattox but I have told him there is none on hand at present please send hoe man here R OBrien
+[Troops] arriving here in considerable numbers [.] every thing indicates work for as this side of [James] [.] would it not be well to have [Men] & material ready for short notice [.] we will need I think sooner or later cable for [James] [Maj Gen B. F. Butler] has asked again for one for apple mattox but I have told him there is none on hand at present please send [Homan] here R OBrien
 
-Code-word tokens: H 7.
+Code-word tokens: H 7, I 1, M 1.
 
 **E263 | Page 268 | 5812 | mssEC 25 (obj 5952, pointer 5812), 29 Nov 1864 Ft Monroe, Sheldon to the Cipher Agent City Point, for Capt. William T. Howell, Grant's Hd Qrs: empty steamers to Washington, signed Rufus Ingalls, Chief Quartermaster (FM-R4b; row 5812/0; image-read at 2400 px)**
 
@@ -1409,5 +1409,5 @@ Code-word tokens: H 14.
 
 Code-word tokens: H 12.
 
-Totals over the 213 entries: H 3620, C 31, I 22, M 30, U 10.
+Totals over the 213 entries: H 3620, C 31, I 23, M 31, U 10.
 <!-- decode.py: derived block ends -->
