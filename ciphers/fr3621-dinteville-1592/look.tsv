@@ -1,0 +1,23 @@
+# tools/prior_work.py leaf looks, append-only: the newest row per (item, role, folio, canvas, image) is current
+utc	item_id	look_row_id	role	folio	canvas	image	source	status
+2026-10-09 15:28	adhoc-bb1d15	adhoc-bb1d15:2-leaf:dea449	cipher-page	89r			folio arithmetic	owed
+2026-10-09 15:28	adhoc-bb1d15	adhoc-bb1d15:2-leaf:dea449	facing	88v			folio arithmetic	owed
+2026-10-09 15:28	adhoc-bb1d15	adhoc-bb1d15:2-leaf:dea449	before-2	88r			folio arithmetic	owed
+2026-10-09 15:28	adhoc-bb1d15	adhoc-bb1d15:2-leaf:dea449	after-1	89v			folio arithmetic	owed
+2026-10-09 15:28	adhoc-bb1d15	adhoc-bb1d15:2-leaf:dea449	after-2	90r			folio arithmetic	owed
+2026-10-09 15:28	adhoc-bb1d15	adhoc-bb1d15:2-leaf:dea449	after-3	90v			folio arithmetic	owed
+2026-10-09 15:28	adhoc-bb1d15	adhoc-bb1d15:2-leaf:dea449	after-4	91r			folio arithmetic	owed
+2026-10-09 15:28	adhoc-89a7ce	adhoc-89a7ce:2-leaf:685c90	cipher-page	98v			folio arithmetic	owed
+2026-10-09 15:28	adhoc-89a7ce	adhoc-89a7ce:2-leaf:685c90	facing	99r			folio arithmetic	owed
+2026-10-09 15:28	adhoc-89a7ce	adhoc-89a7ce:2-leaf:685c90	before-1	98r			folio arithmetic	owed
+2026-10-09 15:28	adhoc-89a7ce	adhoc-89a7ce:2-leaf:685c90	before-2	97v			folio arithmetic	owed
+2026-10-09 15:28	adhoc-89a7ce	adhoc-89a7ce:2-leaf:685c90	after-2	99v			folio arithmetic	owed
+2026-10-09 15:28	adhoc-89a7ce	adhoc-89a7ce:2-leaf:685c90	after-3	100r			folio arithmetic	owed
+2026-10-09 15:28	adhoc-89a7ce	adhoc-89a7ce:2-leaf:685c90	after-4	100v			folio arithmetic	owed
+2026-10-09 15:28	adhoc-c7182d	adhoc-c7182d:2-leaf:f68d48	cipher-page	113r			folio arithmetic	owed
+2026-10-09 15:28	adhoc-c7182d	adhoc-c7182d:2-leaf:f68d48	facing	112v			folio arithmetic	owed
+2026-10-09 15:28	adhoc-c7182d	adhoc-c7182d:2-leaf:f68d48	before-2	112r			folio arithmetic	owed
+2026-10-09 15:28	adhoc-c7182d	adhoc-c7182d:2-leaf:f68d48	after-1	113v			folio arithmetic	owed
+2026-10-09 15:28	adhoc-c7182d	adhoc-c7182d:2-leaf:f68d48	after-2	114r			folio arithmetic	owed
+2026-10-09 15:28	adhoc-c7182d	adhoc-c7182d:2-leaf:f68d48	after-3	114v			folio arithmetic	owed
+2026-10-09 15:28	adhoc-c7182d	adhoc-c7182d:2-leaf:f68d48	after-4	115r			folio arithmetic	owed
