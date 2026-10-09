@@ -1,0 +1,58 @@
+== birago1572-no87
+  opus pipeline                                err_true 0.044 (15/343) [0.027-0.071] | flagged-excluded 0.030 (10/338) [0.016-0.054]
+  sonnet pipeline                              err_true 0.050 (17/343) [0.031-0.078] | flagged-excluded 0.036 (12/338) [0.020-0.061]
+  opus reader r1                               err_true 0.038 (13/343) [0.022-0.064] | flagged-excluded 0.024 (8/338) [0.012-0.046]
+  opus reader r2                               err_true 0.052 (18/343) [0.033-0.081] | flagged-excluded 0.038 (13/338) [0.023-0.065]
+  opus reconcile (pre-adjudication)            err_true 0.055 (19/343) [0.036-0.085] | flagged-excluded 0.041 (14/338) [0.025-0.068]
+  sonnet reader A                              err_true 0.064 (22/343) [0.043-0.095] | flagged-excluded 0.050 (17/338) [0.032-0.079]
+  sonnet reader B                              err_true 0.093 (32/343) [0.067-0.129] | flagged-excluded 0.080 (27/338) [0.055-0.114]
+  sonnet reconcile (pre-adjudication)          err_true 0.105 (36/343) [0.077-0.142] | flagged-excluded 0.092 (31/338) [0.065-0.127]
+  L (committed Sonnet pipeline + relabels)     err_true 0.035 (12/343) [0.020-0.060] | flagged-excluded 0.021 (7/338) [0.010-0.042]
+  opus raw (no relabel transfer)               err_true 0.044 (15/343) [0.027-0.071] | flagged-excluded 0.030 (10/338) [0.016-0.054]
+  sonnet raw (no relabel transfer)             err_true 0.070 (24/343) [0.047-0.102] | flagged-excluded 0.056 (19/338) [0.036-0.086]
+  paired [as measured] opus pipeline vs base sonnet pipeline: n 343, base wrong 17, out wrong 15, fixed 8, broken 6, p 0.7905
+  paired [as measured] sonnet pipeline vs base opus pipeline: n 343, base wrong 15, out wrong 17, fixed 6, broken 8, p 0.7905
+  paired [flagged excluded] opus pipeline vs base sonnet pipeline: n 338, base wrong 12, out wrong 10, fixed 8, broken 6, p 0.7905
+  paired [flagged excluded] sonnet pipeline vs base opus pipeline: n 338, base wrong 10, out wrong 12, fixed 6, broken 8, p 0.7905
+  control [as measured] sonnet pipeline vs base L: fixed 1, broken 6, p 0.1250
+  control [as measured] opus pipeline vs base L: fixed 3, broken 6, p 0.5078
+  reader spread [as measured] Sonnet B vs base Sonnet A: fixed 10, broken 17
+  reader spread [as measured] Opus r2 vs base Opus r1: fixed 2, broken 6
+  control [flagged excluded] sonnet pipeline vs base L: fixed 1, broken 6, p 0.1250
+  control [flagged excluded] opus pipeline vs base L: fixed 3, broken 6, p 0.5078
+  reader spread [flagged excluded] Sonnet B vs base Sonnet A: fixed 10, broken 17
+  reader spread [flagged excluded] Opus r2 vs base Opus r1: fixed 2, broken 6
+== dint-f128-print (label-mapped)
+  opus pipeline                                err_true 0.247 (21/85) [0.168-0.348] | flagged-excluded 0.247 (21/85) [0.168-0.348]
+  sonnet pipeline                              err_true 0.212 (18/85) [0.138-0.310] | flagged-excluded 0.212 (18/85) [0.138-0.310]
+  opus reader r1                               err_true 0.235 (20/85) [0.158-0.336] | flagged-excluded 0.235 (20/85) [0.158-0.336]
+  opus reader r2                               err_true 0.318 (27/85) [0.228-0.423] | flagged-excluded 0.318 (27/85) [0.228-0.423]
+  opus reconcile (pre-adjudication)            err_true 0.353 (30/85) [0.260-0.459] | flagged-excluded 0.353 (30/85) [0.260-0.459]
+  sonnet reader A                              err_true 0.247 (21/85) [0.168-0.348] | flagged-excluded 0.247 (21/85) [0.168-0.348]
+  sonnet reader B                              err_true 0.188 (16/85) [0.119-0.284] | flagged-excluded 0.188 (16/85) [0.119-0.284]
+  sonnet reconcile (pre-adjudication)          err_true 0.271 (23/85) [0.188-0.373] | flagged-excluded 0.271 (23/85) [0.188-0.373]
+  paired [as measured] opus pipeline vs base sonnet pipeline: n 85, base wrong 12, out wrong 16, fixed 4, broken 8, p 0.3877
+  paired [as measured] sonnet pipeline vs base opus pipeline: n 85, base wrong 16, out wrong 12, fixed 8, broken 4, p 0.3877
+  paired [flagged excluded] opus pipeline vs base sonnet pipeline: n 85, base wrong 12, out wrong 16, fixed 4, broken 8, p 0.3877
+  paired [flagged excluded] sonnet pipeline vs base opus pipeline: n 85, base wrong 16, out wrong 12, fixed 8, broken 4, p 0.3877
+== ceppo-f87-S
+  opus pipeline                                err_true 0.173 (24/139) [0.119-0.244] | flagged-excluded 0.173 (24/139) [0.119-0.244]
+  sonnet pipeline                              err_true 0.050 (7/139) [0.025-0.100] | flagged-excluded 0.050 (7/139) [0.025-0.100]
+  opus reader r1                               err_true 0.165 (23/139) [0.113-0.236] | flagged-excluded 0.165 (23/139) [0.113-0.236]
+  opus reader r2                               err_true 0.129 (18/139) [0.084-0.195] | flagged-excluded 0.129 (18/139) [0.084-0.195]
+  opus reconcile (pre-adjudication)            err_true 0.187 (26/139) [0.131-0.260] | flagged-excluded 0.187 (26/139) [0.131-0.260]
+  sonnet reader A                              err_true 0.043 (6/139) [0.020-0.091] | flagged-excluded 0.043 (6/139) [0.020-0.091]
+  sonnet reader B                              err_true 0.129 (18/139) [0.084-0.195] | flagged-excluded 0.129 (18/139) [0.084-0.195]
+  sonnet reconcile (pre-adjudication)          err_true 0.065 (9/139) [0.034-0.118] | flagged-excluded 0.065 (9/139) [0.034-0.118]
+  passC (committed folder Sonnet pipeline)     err_true 0.050 (7/139) [0.025-0.100] | flagged-excluded 0.050 (7/139) [0.025-0.100]
+  paired [as measured] opus pipeline vs base sonnet pipeline: n 139, base wrong 7, out wrong 24, fixed 2, broken 19, p 0.0002
+  paired [as measured] sonnet pipeline vs base opus pipeline: n 139, base wrong 24, out wrong 7, fixed 19, broken 2, p 0.0002
+  paired [flagged excluded] opus pipeline vs base sonnet pipeline: n 139, base wrong 7, out wrong 24, fixed 2, broken 19, p 0.0002
+  paired [flagged excluded] sonnet pipeline vs base opus pipeline: n 139, base wrong 24, out wrong 7, fixed 19, broken 2, p 0.0002
+== POOLED (dev_tune + dint-f128-print + ceppo-f87-S)
+  opus pipeline    err_true 0.106 (60/567) [0.083-0.134] | flagged-excluded 0.098 (55/562) [0.076-0.125]
+  sonnet pipeline  err_true 0.074 (42/567) [0.055-0.099] | flagged-excluded 0.066 (37/562) [0.048-0.089]
+  pooled paired [as measured] opus pipeline vs the other: n 567, fixed 14, broken 33, two-sided sign test p 0.0079
+  pooled paired [as measured] sonnet pipeline vs the other: n 567, fixed 33, broken 14, two-sided sign test p 0.0079
+  pooled paired [flagged excluded] opus pipeline vs the other: n 562, fixed 14, broken 33, two-sided sign test p 0.0079
+  pooled paired [flagged excluded] sonnet pipeline vs the other: n 562, fixed 33, broken 14, two-sided sign test p 0.0079
