@@ -1,0 +1,28 @@
+{
+ "jobs": [
+  {
+   "ciphertext": "../birago-fr3252-1571-72/harvest/f117/ciphertext_f117_txer.tsv",
+   "key": [
+    "harvest/key_1572_sheet.tsv"
+   ],
+   "format": "tsv",
+   "split_line": "_",
+   "style": "concat",
+   "exceptions": "harvest/tx_decode/eye/apply/exceptions_apply_f117.tsv",
+   "reading": "../birago-fr3252-1571-72/harvest/f117/txer/reading_f117_txer.txt",
+   "tokens": "../birago-fr3252-1571-72/harvest/f117/txer/reading_f117_txer_tokens.tsv",
+   "null_values": [
+    "NULL"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "uncertain_conf": [
+    "M",
+    "L"
+   ],
+   "exception_grade_overrides_conf": true
+  }
+ ]
+}
