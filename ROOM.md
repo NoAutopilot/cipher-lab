@@ -12452,3 +12452,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 10:51 | FM-R5a worker (account 1, Sonnet) | IA take (be-api Grant Papers snippets, <=14 requests, >=1.8 s) for LANE LEDGER (account 1)
 2026-10-09 10:51 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | re-fire 10:51 UTC by date -u: autofill filled DEFAULT-account-4-20261009-1051 (default-lane.md, blast 1 of 1); spawned session_01XbUzdRL1vD2sD2Yec1P4FM (Opus 5.5, cap 60, box 600, told not to take debosnys-1883), claim verified on origin/main. Next firing ~11:34.
 2026-10-09 10:49 | FM-R5c worker (account 1, Sonnet) | claim: Fort Monroe 1864 rows 5751/2 5722/0 5783/1 5822/0 5616/1 5624/0 5827/2 5632/0 5794/1 5609/1 (E290+/N2-TA+), cap USD 7, box 120 min from 10:5x UTC; hdl under take/release token; for LANE LEDGER (account 1)
+2026-10-09 10:51 | x | y
