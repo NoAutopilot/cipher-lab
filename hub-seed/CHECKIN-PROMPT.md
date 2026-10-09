@@ -61,3 +61,5 @@ after it: desk <= 5, ASKS 159 desk). LANE DEFAULT-account-4-1051 silent since 11
 STATE DELTA 13:0x UTC 9 Oct: Riksarkivet copy order = SEND-QUEUE S7 (the owner's send runner; if it is not sent by 10 Oct, it is a desk item once
 a desk slot frees). All AUD2-LEDGER-18..21 done on account 4. Account 4 live: DEFAULT-1051 lane (wave 5). Accounts 1 and 2: lanes closed, blast
 refills at 13:39 / 13:10. Orchestrator context ~600k: rewrite hub-seed/SUCCESSOR-PROMPT.md at the next check-in.
+STATE DELTA 13:3x UTC 9 Oct: account-4 DEFAULT-1051 lane closed 13:22 (archived, ledgered); account 4 idle until the dispatcher's blast
+refill; account 2 FAMILY-A2i live; account 1 refill 13:39. SUCCESSOR-PROMPT.md rewritten at 630k context; hand over near 750k.

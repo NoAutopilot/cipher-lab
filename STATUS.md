@@ -7260,6 +7260,15 @@ running; lane ~37 of 60. Account 1 LANE LEDGER-5 closed 12:37 (~50 of 60): ecker
 its blast refill fires 13:39. Account 2 FAMILY-A2h closed 12:30 (~59 of 60); refill at 13:10. Account 3 silent since 02:03. Checks: desk
 (5 rows, at cap), NEAR, system map, work_queue ok; wait-only empty. Next check-in 13:25.
 
+Check-in 9, 13:26-13:3x UTC 9 Oct (6:26 am PT): five_hour allowed; orchestrator context ~630k, cost 24.6; hub-seed/SUCCESSOR-PROMPT.md
+rewritten (hand-over planned near 750k). Account 4 LANE DEFAULT-1051 closed 13:22 (20 workers in 4 waves, 40.71 + orchestrator 10.58 by
+get_session; archived and ledgered here): sforza-pusterla f.13 lattice rank 1/201 on both corpora after two second readers (judge FAIL, NEAR
+row updated); Monluc c268 10 C-curl tokens relabelled K38 = t (judge -1.426 -> -1.300, still FAIL); craven-rupert parked no-key-material;
+five cheap follow-ups left in its handoff. Account 4 has nothing queued; blast auto-fill (default-lane.md) at the dispatcher's next
+firing. Account 2: LANE FAMILY-A2i opened 13:15 (Manteuffel 0176 fix/0177, CUC3, Brodec body-leaf sweep, Heinsius, es132 look-alike
+pass; Gallica 403 again on one probe). Account 1: refill expected 13:39. Account 3 silent since 02:03. Checks all ok; keys 5 of 9 (S2
+429); wait-only empty. Next check-in 14:05.
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;
