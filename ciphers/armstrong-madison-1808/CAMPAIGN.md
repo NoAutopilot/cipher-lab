@@ -2,7 +2,7 @@ target: armstrong-madison-1808
 goal: a verified reading of the Armstrong-to-Madison, 20 February 1808 letter at N3 or better after two audits
 started: 2026-09-27 20:31 UTC
 daily_budget_usd: 400
-spent_today_usd: 2.00
+spent_today_usd: 3.00
 spent_day: 2026-10-09
 key_known: no (a unique/private code; Madison, 15 May 1808: "No such Cypher is in the office"; THE=972 and every sibling table on file tested and excluded, NOTES.md ARM-A2/ARM3-*; Irving Brant Papers item located, not digitised)
 crib_available: no (no clear-text version or summary of the 20 Feb letter found; Krajcovic's 15 Feb crib does not check out, NOTES.md "What the cipher is"; no interlinear decipherment on the manuscript)
@@ -175,7 +175,7 @@ UTC), all reported UNSOLVED, none redone by this seed:
 | H80 | 3 | Key rebuild from the private Armstrong-Monroe cipher: the NYPL Monroe Papers letters of 22 Jan, 5 Apr, 4 May 1805 are "partially in code and deciphered" (UMW 83485/83535/83558, TOMO-ARM W1); align code groups to Monroe's decipherment with tools/interlinear_align.py (known-answer hold-out gate first), then test the rebuilt table on the target's 369 groups with a value-redraw matched control; a design match (two-level, THE-style particles) alone is a finding even if values differ | doc images of the three NYPL 1805 letters (outreach/armstrong-keyhunt-monroe-papers.md, owner sends) | 5 | open | |
 | H81 | 4 | New instrument (TOOLS-TOMO 8 Oct, freq.py --repeats --maximal, Tomokiyo polygram practice 6), never run here: recurring token n-grams (n>=2) in the 369 numeral groups, shorthand/star marks as breaks, against a 1,000-draw shuffled-order null (order is the axis repeats depend on, so the control can differ); gate: count of repeats n>=3 above null p95, then list positions and gaps for a KWIC step | nobody | 1 | done | target ordered repeats at the shuffled-order null (2 repeated bigrams vs null mean 1.86, 0 trigrams); all 360 matched simulated whole-text codes repeat more (min 8 bigrams), so phrase-anchored attacks have nothing to anchor on |
 | H82 | 5 | New instrument (freq.py --contacts K --vowels, Sukhotin; PASS on Ormonde, tool_shelf weak): contact chart of the top groups below 100 (132 groups, 48 values, NOTES ARM band) -- do the low codes split into vowel-like and consonant-like classes the way a letter band would; positive control first: the Ormonde known answer subsampled to the target's N (rule 3, positive-control subsample), then the target vs shuffled-order null | nobody | 1 | done | non-test: Ormonde positive control cut to the target's 132 low groups reads 0.725 vs gate 0.75 (4/8 windows), so Sukhotin classing is untestable at this N; target not run |
-| H83 | 6 | New instrument (freq.py --split-at auto, tool_shelf weak: Ormonde error 5 > gate 3): where does a letter band end in the 369 groups (NOTES uses 100 by assumption); matched control first: tools/families/nomenclator.py synthetic at N=369 with a known edge, 5 seeds, gate |err|<=3 on the control before the target's proposed edge is logged | nobody | 1 | running session_01BuquErzUYdSB116KPAM8qh | |
+| H83 | 6 | New instrument (freq.py --split-at auto, tool_shelf weak: Ormonde error 5 > gate 3): where does a letter band end in the 369 groups (NOTES uses 100 by assumption); matched control first: tools/families/nomenclator.py synthetic at N=369 with a known edge, 5 seeds, gate |err|<=3 on the control before the target's proposed edge is logged | nobody | 1 | done | non-test: seq_pblock control (known edge 100) proposes 26-58, 0/5 seeds within 3; split_auto finds the dense head of a Zipf particle block, not its edge; target not run |
 
 ## Log
 
@@ -273,3 +273,4 @@ UTC), all reported UNSOLVED, none redone by this seed:
 2026-10-08 05:3x UTC | session_01BuquErzUYdSB116KPAM8qh | H79 | 0.3 | done: escalation assessed from the record (clear-pages, known-keys, print, image-check [x]; key-rebuild, retry open on the NYPL 1805 deciphered letters); gaps_check keep-going; next runnable step needs those images
 2026-10-09 00:29 UTC | session_01BuquErzUYdSB116KPAM8qh | H81 | 1 | done: repeats 2/0 (bigram/trigram) vs shuffled null 1.86/0.01 and matched sims >=8 bigrams in 360/360; structural, no reading; h81/
 2026-10-09 00:3x UTC | session_01BuquErzUYdSB116KPAM8qh | H82 | 1 | done: CONTROL BELOW GATE (Ormonde at 132 letter tokens 0.725, null 0.568, 4/8 windows); target not run; h82/
+2026-10-09 00:4x UTC | session_01BuquErzUYdSB116KPAM8qh | H83 | 1 | done: CONTROL BELOW GATE (0/5, errors -42..-74); target not run; h83/

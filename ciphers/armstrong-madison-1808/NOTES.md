@@ -4328,3 +4328,28 @@ accuracy at least 0.75, and at least 0.15 above the order-null mean. Script and 
 known letter cipher reliably, even when the letters are contiguous. A Sukhotin labelling of the target's low band would
 therefore be a non-test at this N, whichever way it fell. Logged "untestable by this instrument at this N", not as a design
 negative. There is no reading and no class change. Vision 0, network 0.
+
+## Campaign step H83 (2026-10-09 00:31 UTC)
+
+New instrument (TOOLS-TOMO, 8 Oct 2026): `tools/freq.py --split-at auto` (`freq.split_auto`; Tomokiyo practice 1, spelling
+part first). Shelf grade `weak`: on Ormonde it proposed 85 against a true edge of 90. Question: where does a low band end in
+the 369 groups? NOTES has used "below 100" by assumption.
+
+**Matched control first.** The control is ARM-DESIGN's `seq_pblock` design (`design/design_stats.py`): a particle block 1-99,
+1,800 content forms numbered 100-1899, en18 plaintext, N=369. Its known edge is 100. The run used the row's pre-registered 5
+seeds (1000-1004), with gate |err| <= 3. Script and output: `h83/split_control.py`, `h83/output.txt`.
+
+| seed | groups below 100 | proposed edge | error |
+|---|---|---|---|
+| 1000 | 240 | 27 | -73 |
+| 1001 | 245 | 48 | -52 |
+| 1002 | 236 | 26 | -74 |
+| 1003 | 222 | 57 | -43 |
+| 1004 | 229 | 58 | -42 |
+
+**Result: CONTROL BELOW GATE (0 of 5); the target was not run.** In a code whose low block holds Zipf-distributed particles, the
+likelihood split lands on the dense head of the block, not on its edge. The instrument cannot place a particle-block edge at this
+design and N. Logged "untestable by this instrument at this N/design", not as a negative.
+
+One caveat on the match: the control puts 60-66 percent of its groups below 100, the target 36 percent. A closer-matched control
+would only make the edge harder to find. There is no reading and no class change. Vision 0, network 0.

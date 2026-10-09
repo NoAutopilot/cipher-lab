@@ -1,0 +1,9 @@
+CONTROL seq_pblock, known edge 100
+seed 1000: low<100 240/369  best single N=27 gain=570.8 err=-73  band=(570.8431211009527, 1, 27)
+seed 1001: low<100 245/369  best single N=48 gain=535.1 err=-52  band=(535.1332231529832, 1, 48)
+seed 1002: low<100 236/369  best single N=26 gain=500.6 err=-74  band=(500.59577814051255, 1, 26)
+seed 1003: low<100 222/369  best single N=57 gain=438.7 err=-43  band=(438.65486401387886, 1, 57)
+seed 1004: low<100 229/369  best single N=58 gain=478.5 err=-42  band=(478.46903591920477, 1, 58)
+control seeds within |err|<=3: 0/5
+CONTROL BELOW GATE
+TARGET not run (control below gate)
