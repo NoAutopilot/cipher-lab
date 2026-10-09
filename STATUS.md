@@ -7671,6 +7671,29 @@ TX-RED session_01WCmiKQwgGMzjVaBrAgxLiY 18.3, pass 6 running, pass 7 22:02; open
 three workers; pool 23 + gunther8246-p2 pending the lane's Amendment 7; TX-POOL-LEAF-2 queued account 1 | eval looks 0; S2 to be
 taken once the freeze line exists.
 
+Check-in 4, 21:56-22:0x UTC 9 Oct (2:56 pm PT): five_hour allowed on this session; workers' get_session now shows seven_day
+allowed_warning on account 4 (BUDGETS: a seven-day warning alone never stops spawning); trigger trig_015PFZePd3iR1Gayfpa12dSj (22:38).
+Done, ledgered, archived: ANON-PILE-RULE (1.92 D: CLAUDE.md anonymous-pile paragraph + intake gate holder path, S6 re-queued),
+AUD2-LEDGER-30 (3.86 D: E333/E335/E340 N3 D3 kept, E340's external check strengthened), MQS-BNF-S6b (4.00 D: the fr.3029 pile the BnF
+sweep carried open for three sessions is listed in Tomokiyo GL.htm as broken by Lasry 2023 -> found-solved; tools/bnf_findingaid.py
+--check-solved now runs the holder-side solved lists before any pile scoring). AUD2-LEDGER-31 (E346, cap 2.5) and -32 (E347/E349(1)/E350,
+cap 7.5) re-tagged from account 3 and spawned from this session. TX programme: lane inc. 2 (23.7, 552k; hand-over to incarnation 3 at
+its 22:12 or 22:5x check-in) applied F28 (b): PREREG-txeng2-S2 FROZEN 21:3x, S2READ done (passZ_S2 1891 signs, 18.4% doubt-flagged),
+TXV-VIV flags done (FLAG 236 / CORRECT 0 / KEEP 20) -> the lane runs the single S2 score at 22:12 and reports it as "product baseline
+on an unseen hand"; gunther8246-p2 pooled at 5 (Amendment 7), TXV-GUN 12 flags / 3 corrections, GUNSHEET 6 mislabelled exemplars;
+B2 Spinelli under atlas_v5 0.067 as measured (fixed 2 / broken 4, a baseline change) -> pool 30; round 8: X1b-v4 recall 5/6, A2 sheet
+audit of 34 sheets (1 Birago mislabel, 4 atlas-built folders with no truth), REGFIX 21 -> 3 unparsed with --check live. TX-RED pass 6
+(21:19; context 634k, told by send_message to hand over at pass 7, 22:02): no open blocking on a landed row; F30 blocks X1c (max reachable
+5/0, p 0.0625: cannot pass by construction -> dissolve into the sheet correction, retire with reopen condition), F31 on gunther pooling,
+F32 what to spend the restored pool on, F29 TX-RED's own note on the outside-the-frame rule. TX-POOL-LEAF-2 (other solvers' items) live on
+account 1 since 21:40. Account 1 LEDGER-8 wave 3 (E341-E345 N1; E346/E347/E350 N3 D3 one audit; KEY-CANBY: the key reads Hurlbut, all six
+filed uses read Canby, rule-4 record, key untouched); account 2 FAMILY-A2l wave 3 (SUR-372: an unread 11-scan enciphered Suriname letter
+of 1780 found by SUR-GOV); account 3 silent since 02:03. Checks ok but system_map_check FAIL (POOLS-2026-10-09-A2l.tsv, account 2's lane
+file: flagged to LANE FAMILY-A2l) and retired --check 1 missing (TX-REGISTER row 79, lane). Eval looks 0; S2 look pending (1 at 22:12).
+TX programme table 22:0x UTC: slot 1 orchestrator | slot 2 lane inc. 2 session_011EV9AKeJ4YuU9jjghdUy6F 23.7, check-in 6 22:12 (S2 score;
+hand-over to inc. 3 due) | slot 3 TX-RED session_01WCmiKQwgGMzjVaBrAgxLiY 21.2, context 634k, pass 7 22:02 (successor asked) | slots 4-10:
+round 9 four of five done (S2READ, VIV, GUN, GUNSHEET, BASE-SPIN2 all done); pool 30 | eval looks 0; S2 look 0 (score at 22:12).
+
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
 TX-FABLE already showed a plain swap reads worse). Round 1 (07:03 UTC, no reads): tools/tx_taxonomy.py + test; research/TX-TAXONOMY-2026-10-09.md;

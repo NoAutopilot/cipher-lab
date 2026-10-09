@@ -123,3 +123,7 @@ a second confirm-class leaf. TX-POOL-LEAF done (gunther8246-p2, lane pools under
 dispatcher). AUD2-LEDGER-30 live on account 4 session_01P6QdexMTmENKUbZ5PwZqUe (ledger + archive on done). Owner defaults: ASKS 156 (a)
 unless he says (b); depth bar strict; ASKS 160 later. Outside-the-frame rule in force (README common tail): no "blocked"/"material"
 without three outside places checked.
+STATE DELTA 22:0x UTC 9 Oct: S2 frozen and read (S2READ + TXV-VIV on file); the lane scores it once at 22:12 and reports "product baseline on an
+unseen hand". Pool 30 (gunther 5 + Spinelli v5). TX-RED at 634k context, asked to hand over at pass 7; lane inc. 2 at 552k, hand-over to inc. 3
+due. AUD2-LEDGER-31/32 live on account 4 from the orchestrator (ledger + archive on done). fr.3029 anonymous pile = found-solved (Lasry 2023,
+Tomokiyo GL.htm); the anonymous-pile intake path is in CLAUDE.md. Account-4 workers show seven_day allowed_warning (spawning continues).
