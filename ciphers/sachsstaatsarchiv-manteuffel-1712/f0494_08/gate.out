@@ -1,17 +1,17 @@
 key: key.tsv; spans 20
 == L (gloss pass left page): spans 12; code tokens 110; keyed 99
-S = 74/99 keyed (0.747); control (1000 permutations, seed 494): mean 16.49, p95 23, p99 27, max 30; control >= real 0/1000
+S = 75/99 keyed (0.758); control (1000 permutations, seed 494): mean 16.52, p95 23, p99 26, max 30; control >= real 0/1000
 GATE (S > p99 and S >= 0.5 x keyed): PASS
 == R (gloss pass right page): spans 8; code tokens 26; keyed 7
 S = 3/7 keyed (0.429); control (1000 permutations, seed 494): mean 0.65, p95 2, p99 3, max 4; control >= real 17/1000
 GATE (S > p99 and S >= 0.5 x keyed): too short (< 10 keyed code tokens): neither PASS nor FAIL
 == pooled (reported): spans 20; code tokens 136; keyed 106
-S = 77/106 keyed (0.726); control (1000 permutations, seed 494): mean 17.14, p95 24, p99 27, max 30; control >= real 0/1000
+S = 78/106 keyed (0.736); control (1000 permutations, seed 494): mean 17.17, p95 24, p99 27, max 30; control >= real 0/1000
 GATE (S > p99 and S >= 0.5 x keyed): PASS
 
 per span (code:op:gloss-letters):
 G01	L	breton	6/6	55:match:b 60:match:r 35:match:e 28:match:t 16:match:o 32:match:n
-G02	L	le Danois mancheroient à notre service	12/15	103:match:le 51:null: 120:match:d 66:match:a 21:match:n 13:match:m 50:match:a 27:miss:n 72:match:ch 35:match:e 26:match:r 33:match:o 4:miss:nta 21:match:n 59:match:t
+G02	L	le Danois mancheroient à notre service	13/15	103:match:le 51:null: 120:match:d 66:match:a 21:match:n 13:match:m 50:match:a 27:miss:n 72:match:ch 35:match:e 26:match:r 33:match:o 9:match:i 21:match:n 59:match:t
 G03	L	le Roy de Dan.	0/1	227:miss:dan
 G04	L	Détaché	2/3	120:match:d 54:miss:et 66:match:a
 G05	L	il ne le declarera pas	2/6	81:miss:nel 35:match:e 19:miss:dec 21:miss:lar 10:match:e 100:miss:pas
@@ -31,6 +31,6 @@ G18	R	l ont moins menté	0/9	403:miss:l 431:miss:o 384:miss:n 499:miss:t 419:mis
 G19	R	deux	0/1	715:miss:eux
 G20	R	court	0/2	231:miss:co 583:miss:urt
 
-distinct codes: 82; matched on every instance: 31
+distinct codes: 83; matched on every instance: 32
 unkeyed codes and their slots: 19=dec,0; 146=our; 231=co; 273=ein; 295=oye; 340=tre; 349=r; 375=o; 384=n; 388=fer,ane; 403=l; 408=nte; 410=tre; 419=m; 431=o; 475=let; 481=ene; 499=t; 540=dow; 548=sme; 561=aas; 580=0; 581=r; 583=in,urt; 611=0; 613=ran; 715=eux
-keyed codes with a non-match slot: 4(x)=miss:nta,miss:u,miss:o; 5(v)=miss:q; 7(g)=miss:ewi; 10(e)=miss:two; 15(c)=miss:ois; 21(n)=miss:lar; 23(p)=miss:tre; 26(r)=miss:qu; 27(r)=miss:n; 31(m)=miss:i; 34(p)=miss:e,miss:yen; 40(b)=miss:pan; 44(l)=miss:c; 51(s|sa)=null:,miss:ed; 54(u)=miss:et,miss:t; 58(s)=miss:ari; 59(t)=miss:e; 81(k)=miss:nel; 97(la)=null:; 100(d)=miss:pas; 180(Golowkin)=miss:ama; 217(la reine d'Angleterre)=miss:onh; 227(le roi de Danemark|Danemark)=miss:dan; 357(Ilgen)=miss:i
+keyed codes with a non-match slot: 4(x)=miss:u,miss:o; 5(v)=miss:q; 7(g)=miss:ewi; 10(e)=miss:two; 15(c)=miss:ois; 21(n)=miss:lar; 23(p)=miss:tre; 26(r)=miss:qu; 27(r)=miss:n; 31(m)=miss:i; 34(p)=miss:e,miss:yen; 40(b)=miss:pan; 44(l)=miss:c; 51(s|sa)=null:,miss:ed; 54(u)=miss:et,miss:t; 58(s)=miss:ari; 59(t)=miss:e; 81(k)=miss:nel; 97(la)=null:; 100(d)=miss:pas; 180(Golowkin)=miss:ama; 217(la reine d'Angleterre)=miss:onh; 227(le roi de Danemark|Danemark)=miss:dan; 357(Ilgen)=miss:i

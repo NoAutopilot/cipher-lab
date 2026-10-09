@@ -17,7 +17,7 @@ T015	c0494L_L02	72	72	72	high	agree
 T016	c0494L_L02	35	35	35	high	agree
 T017	c0494L_L02	26	26	26	high	agree
 T018	c0494L_L02	33	33	33	high	agree
-T019	c0494L_L02	4?	4	4	low	both 4/4?; glyph is the y-shape this hand uses for 9 (MANT-0008); kept as agreed
+T019	c0494L_L02	4?	4	9	low	both 4/4?; glyph is the y-shape this hand uses for 9 (MANT-0008); was 4, set 9 by FIX-YEYE 9 Oct 2026 (eye: open y as in T021 5y, unlike the crossed 4 of T023 14; PREREG-MANT-YCEN R9 PASS)
 T020	c0494L_L02	21	21	21	high	agree
 T021	c0494L_L02	54?	59	59	med	5y: y-shape 9
 T022	c0494L_L02	66	66	66	high	agree

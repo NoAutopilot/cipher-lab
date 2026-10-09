@@ -1,0 +1,9 @@
+# FIX-YEYE, 9 Oct 2026 (LANE FAMILY-A2k account 2): eye check of MANT-YCEN's six flagged slots on the committed crops (3-6x, worker eye; not blind: census, key and glosses seen). Beside ycen/census.tsv rows (leaf, tok).
+# eye = 4 | 9 | illegible (y-glyph read under PREREG-MANT-YCEN R9 = 9); edit = what changed in the leaf transcription.
+leaf	tok	crop	eye	shape	edit	reason
+0494	T019	f0494_08/crops/c0494L_L02.jpg	9	lone open y, long descender, no crossbar; same as the 2nd digit of T021 '5y' (settled 59), unlike the crossed 4 of T023 '14'	4 -> 9	eye and R9 agree (694/08 R9 17/17 on other slots)
+0136	T060	f0136_08/crops/c0136R10_L01.jpg	9	'25' + open y, no crossbar or loop	254 -> 259	eye and R9 agree; both blind passes had 259?; key 259 Ilgen stays M
+0136	T064	f0136_08/crops/c0136R13_L01.jpg	9	'25' + open y, as T060	254 -> 259	eye and R9 agree; pass A 259?, B 25?; key 259 Ilgen stays M
+0063	slot01	f0063_09/crops/slot01.jpg	9	lone open y, unlike this hand's crossed 4 (ref01)	held (7)	this hand also writes a looped 9 (ref02 '29'); the 694/09 R9 support (3/4) is these same slots, so an edit would be circular
+0063	slot03	f0063_09/crops/slot03.jpg	9	'2' + open y, unlike ref01 '24' crossed 4	held (24)	as slot01
+0063	slot04	f0063_09/crops/slot04.jpg	9	'3' + open y	held (34)	as slot01

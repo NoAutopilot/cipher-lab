@@ -57,7 +57,7 @@ U055	c0490G01	1	50	high
 U056	c0490G01	1	100	high	
 U057	c0490G01	1	29	med	y-shaped 9 (A 29?, B 29?)
 U058	c0490G01	1	66	high	
-U059	c0490G01	1	29	med	eye 2+y-shaped 9 with descender (A 28, B 28)
+U059	c0490G01	1	28	med	2+closed 8 with descender (A 28, B 28); was 29 (MANT-0490L y-override), set 28 by FIX-YEYE 9 Oct 2026: both passes + eye agree
 U060	c0490G01	1	9	med	y-shaped 9 (A 9, B 9)
 U061	c0490G01	1	51	high	
 U062	c0490G01	1	4	low	A 42?, B 4?; eye 4 then dot

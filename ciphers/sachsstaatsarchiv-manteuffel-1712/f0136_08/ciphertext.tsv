@@ -58,8 +58,8 @@ T056	R09	R	0	260	260	260	med	A 260? B 260?; eye 260, med
 T057	R10	R	0	55	55	55	high	agree
 T058	R10	R	1	12	12	12	high	agree
 T059	R10	R	2	100	100	160	med	A 100 B 100; eye 160 (the 6 as in 260 R08/R09), med
-T060	R10	R	3	259	259	254	low	A 259? B 259?; eye y-shaped 4 (V-MANTC: the y glyph = 4), low
+T060	R10	R	3	259	259	259	low	A 259? B 259?; was 254 (eye y-shaped 4, V-MANTC), set 259 by FIX-YEYE 9 Oct 2026 (eye: open y, no crossbar; PREREG-MANT-YCEN R9 PASS)
 T061	R11	R	0	160	160	160	high	agree
 T062	R12	R	0	55	12	55	med	A 55? B (missed); eye 55, med
 T063	R12	R	1	12		12	med	passes 12/
-T064	R13	R	0	259	25	254	low	A 259? B 25?; eye y-shaped 4, low
+T064	R13	R	0	259	25	259	low	A 259? B 25?; was 254 (eye y-shaped 4), set 259 by FIX-YEYE 9 Oct 2026 (eye: open y as T060; PREREG-MANT-YCEN R9 PASS)
