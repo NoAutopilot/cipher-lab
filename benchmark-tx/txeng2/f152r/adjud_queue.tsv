@@ -1,0 +1,44 @@
+line	col	kind	candidates	left_neighbours	right_neighbours
+L01	1	uncertain	T83		T84 T89
+L01	2	uncertain	T84	T83	T89 T96
+L01	4	uncertain	T96	T84 T89	T19 T63
+L02	1	uncertain	T57		T25 T17
+L02	3	uncertain	T17	T57 T25	T33 T58
+L02	6	uncertain	T96	T33 T58	T90 T55
+L02	7	uncertain	T90	T58 T96	T55 T80
+L02	11	uncertain	T98	T80 T89	T45 T60
+L02	12	uncertain	T45	T89 T98	T60 X_NEW
+L02	14	disagree	- | X_NEW	T45 T60	T78 T37
+L02	15	disagree	T78 | T85	T60 X_NEW	T37 T58
+L02	20	uncertain	T76	T36 T49	T95 T19
+L02	21	uncertain	T95	T49 T76	T19 T27
+L02	22	uncertain	T19	T76 T95	T27 T85
+L02	23	uncertain	T27	T95 T19	T85 T98
+L02	29	uncertain	T86	T55 T60	T64 T37
+L03	1	uncertain	T90		T26 T60
+L03	2	uncertain	T26	T90	T60 T92
+L03	4	uncertain	T92	T26 T60	T95 T65
+L03	5	uncertain	T95	T60 T92	T65 T19
+L03	8	disagree	T18 | T98	T65 T19	T25 T58
+L03	11	uncertain	T45	T25 T58	T33 T85
+L03	15	uncertain	T17	T85 T83	T96 T58
+L03	16	uncertain	T96	T83 T17	T58 T37
+L03	19	uncertain	T97	T58 T37	T86 T90
+L03	20	uncertain	T86	T37 T97	T90 T33
+L03	21	uncertain	T90	T97 T86	T33 T53
+L03	29	uncertain	T86	T19 T60	T90 T54
+L03	30	disagree	T90 | T24	T60 T86	T54 T60
+L03	31	uncertain	T54	T86 T90	T60 T76
+L03	32	disagree	T60 | T86	T90 T54	T76
+L03	33	uncertain	T76	T54 T60	
+L04	1	uncertain	T86		T97 T17
+L04	2	uncertain	T97	T86	T17 T96
+L04	3	uncertain	T17	T86 T97	T96 T25
+L04	4	uncertain	T96	T97 T17	T25 T60
+L04	9	uncertain	T17	T50 T19	T90 T83
+L04	10	uncertain	T90	T19 T17	T83 T55
+L04	13	uncertain	T17	T83 T55	T86 T57
+L04	14	uncertain	T86	T55 T17	T57 T52
+L04	23	uncertain	T45	T55 T83	X_NEW T84
+L04	24	uncertain	X_NEW	T83 T45	T84
+L04	25	disagree	T84 | X_NEW	T45 X_NEW	
