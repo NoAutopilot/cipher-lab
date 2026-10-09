@@ -1,0 +1,45 @@
+crop	kind	text	conf	remarks
+L01	gloss	't is hier toedat ligte kaatz hoepels en touwerk	0.5	blind read, small crop
+L01	cipher	[lambda] 8 [psi] S 8 3 0 [lambda] [hash] | 3 w % r c 8 9 [lambda] 7 t o 3 0 7 s [hash] 3 S 7 c [psi] 8 y [lambda] [hash]	0.4	blind read
+L02	gloss	gerequireert word; beide de quantiteiten en Vaa	0.5	blind read, small crop
+L02	cipher	5 4 3 0 b 9 3 0 7 x 5 8 0 3 7 0 r 4 k o r . - d 3 8 r 7 r 7 x 5 [delta] y [lambda] 8 [lambda] t r 3 y	0.4	blind read
+L03	gloss	moeijelijk juist te bepaalen. wij oordeelen	0.5	blind read, small crop
+L03	cipher	5 % c [lambda] [ij] [hash] 3 8 7 c t b 8 5 8 [psi] [lambda] | [lambda] 7 d 3 S [delta] x c 3 4 , 4 t k [hash] 0 r 3 7 c d l	0.4	blind read
+L04	gloss	dat ieder Vaam zwaar touw tien Vaam tot	0.5	blind read, small crop
+L04	cipher	r % [lambda] 8 3 w 3 0 5 % p y [psi] 4 x p 0 [lambda] [hash] 5 4 , [lambda] 8 3 y 5 % p y [lambda] [hash] r [hash] y 4 8 y	0.4	blind read
+L05	gloss	omwinding nodig heeft, en overzulks kome	0.5	blind read, small crop
+L05	cipher	r 8 4 9 h k [hash] r 8 9 S 3 7 8 [lambda] 3 l [hash] 5 3 0 n 5 c b [psi] b [hash] y [lambda] 5 k [hash] 0 [lambda] 4 7 % p c	0.4	blind read
+L06	gloss	voor 12 touwen ieder a 140 Vaam 168 Stuks op-	0.5	blind read, small crop
+L06	cipher	8 [lambda] [hash] 5 4 3 l 8 3 r 7 0 4 , 1 4 0 , 5 4 x y , 1 6 8 [psi] [lambda] 5 b [psi] [hash] S 9 3 [psi] c [delta] % ,	0.4	blind read
+L07	gloss	geslagen trossen van 100 Vaam, dog is het nodig	0.5	blind read, small crop
+L07	cipher	9 r [ij] [lambda] 0 [hash] [psi] 6 3 [ij] 5 [delta] y , 1 0 0 , c [delta] x [ij] , r [hash] 9 8 [psi] [lambda] y k [hash] r 8 9 1 0 4 1 2	0.4	blind read
+L08	gloss	10 a 12 meerte zenden omde te kort koming voor	0.5	blind read, small crop
+L08	cipher	y 3 7 0 [lambda] d a d y r 7 l c , [hash] y r 7 [lambda] 7 b k o [lambda] b k [hash] y d [ij] 9 5 k [hash] 0 [lambda] 7 b k	0.4	blind read
+L09	gloss	tekomen, tolde legging Vande boom diende ten	0.5	blind read, small crop
+L09	cipher	[hash] y 3 l | [lambda] [hash] [lambda] r 7 c 3 9 9 8 y 9 5 % y r 7 d k [hash] y | r 8 3 y 7 l [lambda] 3 [ij] [ij] 8 [ij]	0.4	blind read
+L10	gloss	minten 24 Stuks zwaare ankers evenredig Jen	0.5	blind read, small crop
+L10	cipher	[psi] [lambda] 3 [ij] , 2 4 [psi] [lambda] 5 b [psi] [psi] 4 x p 0 3 4 y b 3 0 [psi] 3 7 e 3 y 0 d a r 8 9 e 7 % y	0.4	blind read
+L11	gloss	zwaart na de dikte vande Touwen, te weten,	0.5	blind read, small crop
+L11	cipher	[psi] 4 x p 0 [lambda] 7 y % r 7 w 8 b a 7 e [delta] y w 7 [lambda] [hash] 5 4 3 y , [lambda] 7 4 3 7 [lambda] d 7 ,	0.4	blind read
+L12	gloss	dat is op ieder Touw 2 ankers voor Sloep, dan	0.5	blind read, small crop
+L12	cipher	w [delta] [lambda] 8 [psi] [hash] S 8 3 r 7 0 [lambda] [hash] 5 4 | [lambda] 4 3 7 x y b 3 0 [psi] e k [hash] 0 e c [hash] 3 r ,	0.4	blind read
+L13	gloss	voor ieder ieder twee ankers een touw, welkes ende	0.5	blind read, small crop
+L13	cipher	r [delta] [ij] 5 k [hash] 0 8 3 r 7 0 [lambda] 4 3 7 x y b 3 0 [psi] 7 d l [lambda] [hash] 5 4 4 3 c b 7 0 . d y r a l	0.4	blind read
+L14	gloss	inde ankert, en door de bogt de Sluytboom	0.5	blind read, small crop
+L14	cipher	8 y r 7 . x y b 3 0 [psi] , 3 y r k [hash] 0 w 3 d [hash] d [hash] 9 [lambda] r 7 [psi] c 5 t [lambda] d k ,	0.4	blind read
+L15	gloss	of gespannen cabel door gestoken word, ovr6	0.5	blind read, small crop
+L15	cipher	[hash] y [hash] 8 9 3 [psi] S [delta] y l 3 l 8 % . d 3 c r k [hash] 0 9 3 [psi] [lambda] k [hash] b 3 y 4 [hash] 0 r ,	0.4	blind read
+L16	gloss	zulks zijn is tot deze ankers twaalff Touwen	0.5	blind read, small crop
+L16	cipher	[hash] 5 3 0 n 5 c b [psi] n l y , 3 0 [lambda] k [lambda] r 3 7 n d [delta] [ij] b 3 0 [psi] [lambda] 4 % . p c & [lambda] [hash] 5 4	0.4	blind read
+L17	gloss	nodig, voortdiens is 16 ligtere voor kabels	0.5	blind read, small crop
+L17	cipher	3 y l k [hash] r 8 9 , 5 k [hash] 0 [lambda] [psi] r 8 3 y 7 l , 3 0 , 1 6 , c 8 9 [lambda] 3 0 7 [delta] y b 3 0 [psi]	0.4	blind read
+L18	gloss	van 10 duim te zijn, welke diener moeten	0.5	blind read, small crop
+L18	cipher	5 k [hash] 0 x % . d 3 c [psi] 5 % [ij] , 1 0 d = [lambda] 3 n t [ij] , 4 3 0 b 7 r 8 8 l 7 [ij] [ij] [hash] 3 [lambda] 7 l	0.4	blind read
+L19	gloss	omde boom voor Ebopte houden, ibr ieder	0.5	blind read, small crop
+L19	cipher	[hash] y r 7 d k [hash] y 5 k [hash] 0 3 d [hash] S [lambda] 3 S k 5 r 3 l , 5 k [hash] 0 8 3 r 7 0 , 5 4 y	0.4	blind read
+L20	gloss	van welke Touw dus ook 8 kabels van 10 duim.	0.5	blind read, small crop
+L20	cipher	4 3 c b 7 4 2 [lambda] [hash] 5 4 , w 5 [psi] k [hash] b [delta] 9 [lambda] p a d 3 c , [psi] 5 . x y [lambda] 8 3 y 8 5 t y	0.4	blind read
+L21	gloss	Voor deze ankert dienen 40 lijners tot ancker bind	0.5	blind read, small crop
+L21	cipher	5 k [hash] 0 r 3 7 n d , 4 0 , [delta] [ij] b 3 0 [psi] r 8 3 [ij] 7 l , 4 0 , c t y 8 l [lambda] [hash] [lambda] 4 y b 3 0	0.4	blind read
+L22	gloss	= sels en voor ieder een boey en boeyreep na	0.5	blind read, small crop
+L22	cipher	[d-loop] 8 y r [psi] 3 c [psi] , 3 y 5 k [hash] 0 8 3 r 7 0 8 7 y d [hash] 3 8 , 3 y d k 3 8 0 3 7 8 y 0	0.4	blind read
