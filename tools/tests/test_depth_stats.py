@@ -68,5 +68,56 @@ def test_m_through(tmp_path=None):
     assert s['stat_i_target'] >= s['stat_i_p95']
 
 
+def _windows(out):
+    rows = (out / 'contexts.tsv').read_text().splitlines()
+    h = rows[0].split('\t')
+    return [dict(zip(h, r.split('\t'))) for r in rows[1:]]
+
+
+def test_clear_aware_island_leaf(tmp_path=None):
+    """Synthetic island leaf: code 200 sits in one-token cipher runs between clear words. Without --clear-aware its
+    window splices letters of the neighbouring cipher runs; with it, the window is the real clear context. Runs,
+    AD and control (i) must not change between the two modes."""
+    d = Path(tempfile.mkdtemp())
+    corp = d / 'corp'; corp.mkdir()
+    with gzip.open(corp / 'c.txt.gz', 'wt') as f:
+        f.write('on dit que la reine touchant le prince ne donne contentement a personne et la paix\n' * 200)
+    key = d / 'key.tsv'
+    letters = 'abcdefghilmnopqrstuvxyz'
+    key.write_text('code\tvalue\tgrade\n' + ''.join(f'{i}\t{c}\tC\n' for i, c in enumerate(letters, 1)) + '200\tla reine\tC\n')
+    code = {c: str(i) for i, c in enumerate(letters, 1)}
+    runs = [('R1', ['la reine']), ('R2', list('paix')), ('R3', ['la reine']), ('R4', list('xyz'))]
+    tok = ['line\tpos\tsign\tconf\tvalue\tgrade']
+    for line, vals in runs:
+        for i, v in enumerate(vals, 1):
+            tok.append(f'{line}\t{i}\t{code.get(v, "200")}\tmed\t{v}\tC')
+    (d / 't.tsv').write_text('\n'.join(tok) + '\n')
+    (d / 'stream.tsv').write_text('kind\tvalue\n' + '\n'.join([
+        'clear\ton dit que', 'run\tR1', 'clear\ttouchant le prince', 'gap', 'clear\tet la', 'run\tR2',
+        'gap', 'clear\tcontentement a', 'run\tR3', 'clear\tne donne', 'gap', 'run\tR4']) + '\n')
+    base = ['--tokens', str(d / 't.tsv'), '--key', str(key), '--cipher-class', 'code<=120',
+            '--shuffle', 'classes', '--seeds', '1-20', '--corpus', str(corp)]
+    assert ds.main(base + ['--out', str(d / 'plain')]) == 0
+    assert ds.main(base + ['--out', str(d / 'clear'), '--clear-aware', str(d / 'stream.tsv')]) == 0
+    wp, wc = _windows(d / 'plain'), _windows(d / 'clear')
+    assert [r['window'] for r in wp] == ['lareinepaixlare', 'einepaixlareinexyz']
+    assert [r['window'] for r in wc] == ['onditquelareinetouchant', 'ntementalareinenedonne|x']
+    assert all(a['window'] != b['window'] and a['target'] != b['target'] for a, b in zip(wp, wc))
+    sp, sc = (json.load(open(d / m / 'summary.json')) for m in ('plain', 'clear'))
+    assert sc['clear_aware'] and sp['clear_aware'] is None
+    # code 200 is the only code-class value, so under --shuffle classes the all-clear first window cannot move
+    assert [r['shuffle_varies'] for r in wc] == ['False', 'True'] and wp[0]['shuffle_varies'] == 'True'
+    for k in ('primary_run', 'secondary_run', 'AD', 'stat_i_target', 'stat_i_p95', 'H_K'):
+        assert sp[k] == sc[k], k
+    # a run line left out of the stream is an error, not a silent splice
+    (d / 'bad.tsv').write_text('run\tR1\nrun\tR2\nrun\tR3\n')
+    try:
+        ds.main(base + ['--out', str(d / 'bad'), '--clear-aware', str(d / 'bad.tsv')])
+        assert False, 'missing run line accepted'
+    except SystemExit as e:
+        assert 'R4' in str(e)
+
+
 if __name__ == '__main__':
-    test_longest_segmentable(); test_window_skips_gaps(); test_end_to_end(); test_m_through(); print('ok')
+    test_longest_segmentable(); test_window_skips_gaps(); test_end_to_end(); test_m_through()
+    test_clear_aware_island_leaf(); print('ok')

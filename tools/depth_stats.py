@@ -15,6 +15,9 @@ Reads a reading-tokens TSV (line, pos, sign, conf, value, grade; as written by t
   4. control (i): longest decoded stretch that segments fully into corpus words (len >= 2, count >= 5, plus a, y);
   5. control (ii): per recurring code and context, mean log2 P per letter of an 8+value+8 letter window
      (sensitivity: the 8+8 flanks alone, the value's own letters gapped out);
+     With --clear-aware STREAM.tsv (CLEAR-AWARE, 9 Oct 2026; off by default) the windows of (5) are cut from the
+     leaf's mixed clear+cipher stream instead of the cipher tokens alone, so on a leaf where each cipher run is an island
+     in clear text a window reads the code's real neighbours, not letters spliced from the next run;
   (4) and (5) on the target and on N value-shuffled keys (within classes with --shuffle classes, over all codes
   with --shuffle all). Grade runs and recurrence counts do not depend on the key and get no shuffle control.
 
@@ -22,10 +25,24 @@ Scope: built for nomenclator/homophonic readings whose tokens file carries one k
 "a stretch above AD exists / does not" and "a code reads in >= 2 contexts above shuffle"; it must NOT be used to
 grade a reading (it never changes grades) or as a judge of the plaintext (no PASS/FAIL against real prose).
 
+Clear-aware input (--clear-aware): an ordered TSV, no header required (a first row 'kind<TAB>value' is skipped), one
+row per piece of the leaf in reading order:
+  clear<TAB><text>      clear text as read from the image (folded to a-z; never shuffled, never graded, never counted)
+  run<TAB><line id>     every token of the tokens file whose line column equals <line id>, in file order
+  gap                   unknown or unread text between pieces (the letter model's context resets there, as at a U token)
+Every line id of the selected tokens must appear in exactly one run row; a run row naming a line outside the selection
+(--line-prefix/--exclude-prefix) is skipped. Only control (ii)'s windows change: grade runs, AD, recurrences and control
+(i) still read the cipher tokens alone. The clear letters are the same under every shuffled key, so a window score above
+the shuffle p95 means the code's value and the cipher letters next to it fit the real context better than shuffled
+values do; the flanks-only sensitivity is then partly constant across shuffles and is weaker evidence than without it.
+A window whose varying letters are only the code's own value cannot move under --shuffle classes when the code class has
+one value: contexts.tsv's shuffle_varies column is False there and the tool warns -- that row is a non-test (CLAUDE.md
+rule 3), not a miss; use --shuffle all for such a leaf. contexts.tsv's p_upper = (1 + shuffles >= target)/(1 + shuffles).
+
 Usage:
   python3 tools/depth_stats.py --tokens T.tsv --key K.tsv --line-prefix PFX [--exclude-prefix X]
       --cipher-class code<=120 | len<=3  --shuffle classes|all  --seeds 8100-8299  --out DIR
-      [--corpus tools/data/fr18] [--break-lines]
+      [--corpus tools/data/fr18] [--break-lines] [--clear-aware STREAM.tsv]
 Writes DIR/summary.json, DIR/runs.tsv, DIR/contexts.tsv and prints a short report.
 """
 import argparse, collections, glob, gzip, json, math, os, random, sys, unicodedata
@@ -110,6 +127,54 @@ def build_stream(vals):
     return ''.join(out), spans
 
 
+def load_clear_plan(path, lines):
+    """Parse a --clear-aware stream TSV into [('clear', letters) | ('run', line) | ('gap', None)]."""
+    plan, used = [], collections.Counter()
+    for i, ln in enumerate(open(path, encoding='utf-8')):
+        f = ln.rstrip('\n').split('\t')
+        kind = f[0].strip().lower()
+        if not kind or kind.startswith('#') or (i == 0 and kind == 'kind'):
+            continue
+        if kind == 'clear':
+            letters = fold(f[1] if len(f) > 1 else '')
+            if letters:
+                plan.append(('clear', letters))
+        elif kind == 'run':
+            line = f[1].strip() if len(f) > 1 else ''
+            if line in lines:
+                plan.append(('run', line)); used[line] += 1
+        elif kind == 'gap':
+            plan.append(('gap', None))
+        else:
+            sys.exit(f'depth_stats: {path} row {i + 1}: kind must be clear, run or gap, got {f[0]!r}')
+    missing = [l for l in lines if used[l] == 0]
+    twice = [l for l in lines if used[l] > 1]
+    if missing or twice:
+        sys.exit(f'depth_stats: {path}: lines not placed {missing}, placed twice {twice}')
+    return plan
+
+
+def build_mixed(vals, toks, plan):
+    """Interleave token values (vals[i] for toks[i]) with clear text per plan; returns stream and per-token spans."""
+    by_line = collections.defaultdict(list)
+    for i, t in enumerate(toks):
+        by_line[t['line']].append(i)
+    out, spans, pos = [], [None] * len(toks), 0
+    for kind, x in plan:
+        if kind == 'clear':
+            out.append(x); pos += len(x)
+        elif kind == 'gap':
+            out.append('|'); pos += 1
+        else:
+            for i in by_line[x]:
+                v = vals[i]
+                if v is None:
+                    out.append('|'); spans[i] = (pos, pos); pos += 1
+                else:
+                    out.append(v); spans[i] = (pos, pos + len(v)); pos += len(v)
+    return ''.join(out), spans
+
+
 def window(stream, span, k=8):
     a, b = span
     i, got = a, 0
@@ -134,6 +199,8 @@ def main(argv=None):
     ap.add_argument('--seeds', default='8100-8299'); ap.add_argument('--out', required=True)
     ap.add_argument('--break-lines', action='store_true',
                     help='item-level runs never cross a line id (e.g. one id per cipher segment between clear words)')
+    ap.add_argument('--clear-aware', default=None, metavar='STREAM.tsv',
+                    help='cut control (ii) windows from the mixed clear+cipher stream in STREAM.tsv (format above)')
     ap.add_argument('--corpus', default=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'fr18'))
     a = ap.parse_args(argv)
 
@@ -169,6 +236,7 @@ def main(argv=None):
     for t in toks:
         t['cls'] = 'cipher' if is_cipher(t['sign'], key.get(t['sign'], t['value'])) else 'code'
         t['letters'] = None if t['grade'] == 'U' else fold(first_alt(t['value']))
+    plan = load_clear_plan(a.clear_aware, list(dict.fromkeys(t['line'] for t in toks))) if a.clear_aware else None
 
     # 1. grade runs
     def runs(allow_code, ok_grades='HCS'):
@@ -266,7 +334,8 @@ def main(argv=None):
                 vals.append(t['letters'])
             else:
                 vals.append(fold(first_alt(kmap.get(t['sign'], t['value']))))
-        return build_stream(vals)
+        cs, csp = build_stream(vals)  # control (i) and the plain windows: cipher tokens only
+        return (cs, build_mixed(vals, toks, plan) if plan else (cs, csp))
 
     def ctx_scores(stream, spans):
         out = {}
@@ -280,9 +349,9 @@ def main(argv=None):
                 out[(code, idx)] = (s / n if n else float('-inf'), w, s2 / n2 if n2 else float('-inf'))
         return out
 
-    st, sp = decode_with(None)
+    st, (wst, wsp) = decode_with(None)
     tgt_i = stat_i(st, words)
-    tgt_ii = ctx_scores(st, sp)
+    tgt_ii = ctx_scores(wst, wsp)
 
     lo, hi = (int(x) for x in a.seeds.split('-'))
     codes = list(key)
@@ -294,9 +363,9 @@ def main(argv=None):
         groups = [codes] if a.shuffle == 'all' else [[c for c in codes if cls_of[c] == g] for g in ('cipher', 'code')]
         for g in groups:
             vs = [key[c] for c in g]; rng.shuffle(vs); km.update(zip(g, vs))
-        s2, sp2 = decode_with(km)
+        s2, (w2, wsp2) = decode_with(km)
         sh_i.append(stat_i(s2, words))
-        for k, (v, _, fv) in ctx_scores(s2, sp2).items():
+        for k, (v, _, fv) in ctx_scores(w2, wsp2).items():
             sh_ii[k].append(v); sh_fl[k].append(fv)
 
     def p95(xs):
@@ -308,13 +377,15 @@ def main(argv=None):
         rows.append(dict(code=code, value=toks[idx]['value'], grade=toks[idx]['grade'], line=toks[idx]['line'],
                          window=w, target=round(v, 3), shuffle_p95=round(p95(sh), 3), shuffle_max=round(max(sh), 3),
                          above_p95=v > p95(sh), flanks=round(fv, 3), flanks_p95=round(p95(shf), 3),
-                         flanks_above=fv > p95(shf),
+                         flanks_above=fv > p95(shf), shuffle_varies=max(sh) != min(sh),
+                         p_upper=round((1 + sum(x >= v for x in sh)) / (1 + len(sh)), 4),
                          context=' '.join(toks[k]['value'] for k in range(max(0, idx - 4), min(len(toks), idx + 5)))))
     with open(os.path.join(a.out, 'contexts.tsv'), 'w', encoding='utf-8') as f:
-        f.write('code\tvalue\tgrade\tline\ttarget\tshuffle_p95\tshuffle_max\tabove_p95\tflanks\tflanks_p95\tflanks_above\twindow\tcontext\n')
+        f.write('code\tvalue\tgrade\tline\ttarget\tshuffle_p95\tshuffle_max\tabove_p95\tflanks\tflanks_p95\tflanks_above\twindow\tcontext\tshuffle_varies\tp_upper\n')
         for r in rows:
             f.write('\t'.join(str(r[k]) for k in ('code', 'value', 'grade', 'line', 'target', 'shuffle_p95',
-                                                     'shuffle_max', 'above_p95', 'flanks', 'flanks_p95', 'flanks_above', 'window', 'context')) + '\n')
+                                                     'shuffle_max', 'above_p95', 'flanks', 'flanks_p95', 'flanks_above', 'window', 'context',
+                                                     'shuffle_varies', 'p_upper')) + '\n')
     with open(os.path.join(a.out, 'runs.tsv'), 'w', encoding='utf-8') as f:
         f.write('line\tprimary_letters\tsecondary_letters\n')
         for ln_ in prim_lines:
@@ -329,7 +400,7 @@ def main(argv=None):
                 primary_run_m_through=prim_m, primary_run_m_through_text=span_text(prim_m_span),
                 AD=round(AD, 1), AD_R3_4=round(AD34, 1), cipher_clause=prim > AD, cipher_clause_m_through=prim_m > AD,
                 stat_i_target=tgt_i, stat_i_p95=p95(sh_i), stat_i_max=max(sh_i), stat_i_pass=tgt_i > p95(sh_i),
-                n_shuffles=len(sh_i), seeds=a.seeds, shuffle=a.shuffle, cipher_class=a.cipher_class,
+                n_shuffles=len(sh_i), seeds=a.seeds, clear_aware=a.clear_aware, shuffle=a.shuffle, cipher_class=a.cipher_class,
                 recurring_codes={c: dict(n_occ=r['n_occ'], independent_contexts=len(r['contexts']),
                                          contexts_above_p95=sum(1 for x in rows if x['code'] == c and x['above_p95']),
                                          flanks_above_p95=sum(1 for x in rows if x['code'] == c and x['flanks_above']))
@@ -341,6 +412,9 @@ def main(argv=None):
         print(f"{r['code']}\t{r['value']}\t{r['grade']}\t{r['target']}\tp95 {r['shuffle_p95']}\tmax {r['shuffle_max']}"
               f"\t{'ABOVE' if r['above_p95'] else 'below'}\tflanks {r['flanks']} p95 {r['flanks_p95']} "
               f"{'ABOVE' if r['flanks_above'] else 'below'}\t{r['context']}")
+        if not r['shuffle_varies']:
+            print(f"WARNING: code {r['code']} at {r['line']}: window score identical under every shuffle (non-test; "
+                  f"try --shuffle all)", file=sys.stderr)
     return 0
 
 

@@ -2709,3 +2709,25 @@ stems ('Pomm', 'Stett', 'lolh') and 0233's person codes are not identified beyon
 Next: 0233's person codes (83, 93, 75, 59, 4.10.11.2) in the 0136 clerk hand need a glossed witness of the same hand -- look for
 it among the mant0609/0608 glossed ranks before any further unglossed light leaf (~$1 grep + eye); the light unglossed ranks below 26 are
 not worth a reading job under gate (b) at these N (power 0.49 at N=10).
+
+## DEPTH-STATS-CLEAR (9 Oct 2026, 05:37-05:5x UTC by date -u, account 4 worker): 694/09 0015-16 code 198, both windows side by side
+FAM-MANTV's flag (ROOM 8 Oct 17:03): `tools/depth_stats.py` cut control (ii)'s 8+value+8 window from cipher tokens only, so on this
+island leaf 198's windows spliced letters of the neighbouring runs. The tool now takes `--clear-aware STREAM.tsv` (format in its
+docstring); f0015_09/clear_stream.tsv gives the clear French around each run in reading order, from passA_0015.tsv's before/after
+columns and the FAM-MANT15 section above (both read from the frames), 'gap' where the text between runs was not transcribed. Same
+options as PREREG-FAM-MANTV (`--cipher-class 'code<=120' --shuffle classes --seeds 8100-8299`, fr18); outputs f0015_09/depth_clear_plain/
+(reproduces f0015_09/depth_mantv/contexts.tsv exactly) and f0015_09/depth_clear_clear/.
+
+| 198 Stanislas (C) | window (plain, cipher-only) | target | shuffle p95 | p | window (clear-aware) | target | shuffle p95 | p |
+|---|---|---|---|---|---|---|---|---|
+| 0015 r3 | pasdeser·stanislas·pouruoy\|s | -4.104 | -3.973 | 0.104 | onnoitre·stanislas·pouruoyq | -3.770 | -2.958 | 0.388 |
+| 0016 r1 | colliers·stanislas·lenvoyee | -3.474 | -3.280 | 0.124 | lapartde·stanislas·yestrece | -3.551 | -2.784 | 0.707 |
+
+p = (1 + shuffled keys scoring >= target) / 201, contexts.tsv column p_upper (added to the tool in this job). Both windows stay **below
+p95 in both modes**; in the clear-aware mode they sit further below (other code-class values, shuffled into 198's place, fit "de la part
+de [X] y est receu" and "reconnoitre [X] pour" at least as well as "Stanislas" does under the fr18 letter model -- the window score
+measures letter fit, not sense). Flanks-only (value gapped): plain -4.240/-3.074 above p95 (-4.351/-3.588); clear-aware -3.929/-3.312
+below or at p95 (-3.201/-3.312) -- on 0016 r1 the clear-aware flanks are clear text only and do not move under the shuffle, so that
+sensitivity row is a non-test there. **No regrade**: FAM-MANTV's D1 ruling on 0015-16 stands (the code clause is not met either way)
+unless a verifier re-rules. Suggestion (not done, Usage 7): a verifier re-ruling the code clause on island leaves states in its PREREG
+which window mode it uses before computing.
