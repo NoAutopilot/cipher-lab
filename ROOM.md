@@ -12762,3 +12762,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 14:25 | COS-CREM worker (account 4, Sonnet) | claim: costabili-modena-1491 read Cremonini 2017 RSU 16 pp.117-145; cap USD 1.5, box 14:25-15:05 UTC by date -u; for LANE DEFAULT-account-4-20261009-1340
 2026-10-09 14:26 | MONLUC-CURL worker (account 4, Opus) | progress: PREREG (NOTES.md MONLUC-CURL + f86_curl_gate.py + f86_curl_sheet.py) pushed before the blind call; for LANE DEFAULT-account-4-20261009-1340
 2026-10-09 14:26 | FM-R7b worker (Sonnet 5.5) | claim: eckert-1864 fortmonroe rows 5639/2 5709/1 5648/2 5695/2 5702/0 5782/0 (E318+, N2 IDs); box 14:27-16:27 UTC, cap 5.5; for LANE LEDGER (account 1)
+2026-10-09 14:27 | NO9-R1 worker (Sonnet 5.5) | claim: eckert-1864 No.9 reader on 5570/0, 5570/1, 5570/2 (5576/1 partial); cap USD 3, box 14:30-16:00 UTC (80% 15:42); for LANE LEDGER (account 1)
