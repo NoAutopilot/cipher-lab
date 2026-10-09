@@ -116,3 +116,27 @@ if they differ, re-run score_up.py unchanged on each blind pass and report the n
 tokens stay M unless a pre-registered gate run on blind inputs passes -- write PREREG-BRANDT-MARGIN.md before scoring if you score). (2) Prior-work
 check 5 on the 0062 gloss: tools/print_check.py (Google Books with country=US and the key; one try, no loop on 429) on 3-4 distinctive gloss phrases
 plus one positive control; paste results. NOTES "BRANDT-MARGIN (9 Oct 2026)", gaps_check. 2 vision passes + CPU, ~$1.8.
+
+## Wave 3 (04:5x UTC 9 Oct)
+Hosts: archiv.sachsen.de ("sachsen") MANT-UNGL only (MANT-INV08 has released it; if MANT-INV08 posts a new take, wait for its release).
+MANT-R07 disk only. V-MANT0136 (separate verifier) is spawned after MANT-R07's done line.
+
+### MANT-R07 (Opus, cap 2.5, box 50 min, disk only): sachsstaatsarchiv-manteuffel-1712, 0136 r07/r08 faint gloss read blind
+NOTES "MANT-0136 (9 Oct 2026, 04:17...)" "Worker eye (NOT scored...)": the worker saw faint period gloss letters under r07 (34..30) and under r08
+16 31 13 that both blind passes missed. Steps: amendment PREREG-MANT-0136-A1.md (same statistic, control, seeds, gate as gate (a); only the input
+widens to r07 + r08 positions 1-3) committed BEFORE any read. Cut tighter, higher-contrast crops of r07 and r08 from the committed f0136_09/crops
+(local PIL/iiif_lines.py --image on the crop file; paste the command; commit the new crops), two blind Sonnet gloss passes that see only the
+crop paths (no key, no prior gloss file, no worker-eye note), score each pass under gloss_gate.py extended to the widened span; regrade with
+grade_0136.py (--check). Report old and new numbers side by side. No key.tsv change; 20/120/66 candidate values go to HYPOTHESES.md as rule-4
+slots only. NOTES "MANT-R07 (9 Oct 2026)", gaps_check. 2 vision passes + CPU, ~$2.
+
+### MANT-UNGL (Opus, cap 6, box 110 min): sachsstaatsarchiv-manteuffel-1712, 694/09 unglossed frames 0103, 0046, 0233 read under key.tsv
+Handoff next 2; mant0609/rank_unglossed.tsv (0103 light ~20 tokens 4 runs; 0046 light ~8; 0233 same clerk hand as 0136, isolated codes). Method
+exactly as MANT-0136 (PREREG-MANT-0136 design, f0136_09/ scripts): PREREG-MANT-UNGL.md committed BEFORE any score, with gate (b) per leaf AND
+pooled (fr18 judge, permuted letter values, n >= 1000), and its power control re-run AT THESE LEAVES' N (subsample the 0085/0136 positive control to
+each leaf's letter count -- CLAUDE.md rule 3 last paragraph: power shown at N=62 says nothing at N=8); a leaf whose N fails the power control is
+"too-short", not a negative. Prior-work tool and checks 1-4 first (leaf + neighbours from the mant0609 inventories). "sachsen take", ONE GET per
+frame (3), release; crops committed under f0103_09/, f0046_09/, f0233_09/; two blind Sonnet code passes per leaf (one call per leaf per pass;
+0046 and 0233 may share a call if both are light), reconciliation one more unit; if a leaf shows any interlinear gloss, read it blind twice and
+use it as gate (a) like 0136. Grades per token; check 5 (print_check.py) after decode. NOTES "MANT-UNGL (9 Oct 2026)", gaps_check. Units: ~5 vision
+calls + 1 reconciliation (~1 each at these sizes) + CPU, ~$5. Report what was found and where it was not found; do not classify novelty.
