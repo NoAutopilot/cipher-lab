@@ -1,0 +1,16 @@
+key: key.tsv; spans 6; code tokens in spans 78; keyed 77
+S (codes matched under key) = 69/77 keyed (0.896)
+shuffled-key control (1000 draws, seed 8): mean 11.61, p95 17, p99 20, max 24
+GATE (S > p99 and S >= 0.5 x keyed): PASS
+
+per span (code:op:gloss-letters):
+G01	L01	m	1/1	31:match:m
+G02	L01	la maladie	7/7	110:match:la 13:match:m 66:match:a 110:match:la 120:match:d 39:match:i 35:match:e
+G03	L01-L02	forte n'a pas eté mortelle et que Gondelsheims	23/25	1:match:f 33:match:o 60:match:r 28:match:t 10:match:e 14:match:n 50:match:a 34:match:p 25:match:a 51:match:s 205:miss:et 35:match:e 43:match:m 16:match:o 26:match:r 52:match:t 10:match:e 44:match:l 103:match:le 406:null: 1000:match:et 24:match:q 6:match:u 35:match:e 7:match:g
+G04	L03	bonne recompense	14/14	55:match:b 33:match:o 21:match:n 14:match:n 35:match:e 60:match:re 15:match:c 16:match:o 31:match:m 17:match:p 10:match:e 32:match:n 51:match:s 35:match:e
+G05	L04	les contenances de	14/20	35:match:e 51:null: 29:match:s 66:null: 34:null: 10:null: 60:null: 110:null: 30:match:c 16:match:o 21:match:n 28:match:t 2:match:e 21:match:n 25:match:a 14:match:n 30:match:c 10:match:e 100:match:d 35:match:e
+G06	L05-L06	maitre futur	10/11	43:match:m 66:match:a 9:match:i 28:match:t 60:match:r 35:match:e 36:match:f 6:match:u 54:miss:t 67:match:u 27:match:r
+
+distinct codes: 43; matched on every instance: 34
+unkeyed codes and their slots: 406=0
+keyed codes with a non-match slot: 10(e)=null:; 34(p)=null:; 51(s|sa)=null:; 54(u)=miss:t; 60(r|re|ro)=null:; 66(a)=null:; 110(la)=null:; 205(le grand général)=miss:et

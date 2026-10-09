@@ -167,3 +167,11 @@ Codes above 401 on the leaf: 503 and 399 (G08 run end, after "les forces" is ful
 | 54 | u (C) | t | 0007 G01 '30.10.54.28.35' under "cette" (c e t t e); every other code in the run matched | conflict; second witness for 54 = t after f0008_09 G13-area slot (gate.out "54(u)=miss:t"), while 0008 also reads 54 = u twice (G04, G10). Reader split on 0007: 54 low, alt 59 (= t in key.tsv) under a stray diagonal stroke, so a misread 59 is as likely as a homophone; rule 4: not settled by count, key.tsv unchanged |
 | 39, 46 | i, i (C) | 'Ilg' (worker) / 'Hy' (both blind passes) over single name codes | 0007 b2/b3/b5/b7 | initial agrees under the worker's reading only (single-letter key value vs a name gloss: weak class); under 'Hy' a conflict. Not settled |
 | 44 | l (C) | 'Ld' over a single name code | 0007 b4 | initial agrees (weak class) |
+| 54 | u (C) | t | 0056 G06 '43.66.9.28.60.35.36.6 / 54.67.27' under "maitre futur" (f u t u r); every other code in the run matched (MANT-0056, 9 Oct 2026; leaf gate PASS 69/77 vs p99 20) | conflict, now a third witness (0007, 0008, 0056) for 54 = t; still unresolved: key.tsv unchanged, not settled by count (rule 4); reader doubt on 0056: pass A '54?', pass B '54' |
+| 205 | le grand général (C) | 'et' (of "eté") | 0056 G03 '...34.25.51.205.35.43...' under "pas eté mortelle"; 205 is crossed by a diagonal stroke (struck, or the gloss pen) and pass A read it '2?5?' | reading doubt, not logged as a key conflict: a struck token, possibly two groups; one instance |
+
+## MANT-0056 gate row (9 Oct 2026)
+
+| date / job | instrument | control | target | verdict |
+|---|---|---|---|---|
+| 9 Oct 2026 MANT-0056 | f0056_09/gloss_gate.py, PREREG-MANT-0056 (PREREG-MANT-0056 written to disk by 02:20 UTC before scoring (gate first run 02:22:59, file mtimes); NOT committed before scoring -- this worker's `tools/room.py "msg" --push <paths>` call committed ROOM.md only, so the file reached git with the results; rule-3 pre-registration breach in form, disclosed here, design copied unchanged from PREREG-MANT-0008): key.tsv vs 694/09 0056's own interlinear gloss, 6 spans, 78 code tokens, 77 keyed | key values permuted over codes, 1000 draws, seed 8: mean 11.61, p95 17, p99 20, max 24 | S 69/77 (0.896) | **PASS**. key.tsv unchanged; no candidate addition qualifies (406 is a null slot only, f0056_09/key_add_0056.tsv) |

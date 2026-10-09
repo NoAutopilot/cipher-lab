@@ -1,0 +1,7 @@
+span_id	line	gloss	codes	note
+G01	L01	m	31	gloss 'm:' above '31:' (line start)
+G02	L01	la maladie	110 13 66 110 120 39 35	gloss over the run
+G03	L01-L02	forte n'a pas eté mortelle et que Gondelsheims	1 33 60 28 10 14 50 34 25 51 205 35 43 16 26 52 10 44 103 406 1000 24 6 35 7	one run L01 1..50 + L02 34..7; gloss continues above L02; doubtful gloss letters: n' (q'?), eté (eta?), name ending (-heims/-hairos)
+G04	L03	bonne recompense	55 33 21 14 35 60 15 16 31 17 10 32 51 35	gloss between L02 and L03, over L03 55..60
+G05	L04	les contenances de	35 51 29 66 34 10 60 110 30 16 21 28 2 21 25 14 30 10 100 35	first gloss word above 35..60 struck/unread (pass: 'Maffer..', worker: 'Massen'/'Masser'?) -- omitted, not guessed
+G06	L05-L06	maitre futur	43 66 9 28 60 35 36 6 54 67 27	third gloss word ('nignti'?) unread -- omitted; run continues to L06 54 67 27

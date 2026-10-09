@@ -1,0 +1,4 @@
+# Candidate key additions from 694/09 file 0056 (MANT-0056, 9 Oct 2026), per PREREG-MANT-0056: NOT merged into key.tsv by this job.
+# This leaf's own control: S 69/77 keyed vs shuffled-key p99 20 (mean 11.61, max 24), PASS (f0056_09/gate.out).
+code	candidate_value	grade	instances	slot	leaf_control	status
+406	(none: null)	-	1	G03, between 103 (le, closing 'mortelle') and 1000 (et); consumes no gloss letters	PASS (69/77 vs p99 20)	not a candidate by the prereg rule (needs 1-3 gloss letters); listed only; a null or a word-divider reading is positional, one instance

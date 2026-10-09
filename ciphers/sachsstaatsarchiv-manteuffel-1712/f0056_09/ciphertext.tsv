@@ -1,0 +1,10 @@
+# 694/09 file 0056 (film label 0057), Berlin 18 Feb 1713, code lines L01-L06 (crop centres 75,130,182,240,425,487 in region
+# 2150,1120,1230,760 of the full-size file). Two blind Sonnet passes (passA_0056.tsv, passB_0056.tsv) + worker reconciliation from the
+# image. conf: high = passes agree; low = settled by the worker. '|' = clear words. ~ = struck through (still listed).
+line	settled	conf_notes
+L01	31 | 110 13 66 110 120 39 35 | 1 33 60 28 10 14 50	high except 1 (B '1?', A '1'; worker eye: a plain stroke with a dot after it, settled 1)
+L02	34 25 51 ~205 35 43 16 26 52 10 44 103 406 1000 24 6 35 7 |	205: A '2?5?', B '205?', a diagonal stroke crosses it (struck or the gloss pen), settled 205 marked ~; 103: A '103/10', B '103?', worker eye 10 + z-shaped 3, settled 103; 406 both passes (worker eye 406 at 1.6x)
+L03	| 55 33 21 14 35 60 15 16 31 17 10 32 51 35	51: A '51?', B '81?', worker eye flat-topped 5, settled 51 (worker had read key.tsv; disclosure)
+L04	| 35 51 29 66 34 10 60 110 30 16 21 28 2 21 25 14 30 10 100 35 |	29: B '29?'; 10 before 100: both '10?' (closed w-like form); left as read
+L05	| 43 66 9 28 60 35 36 6	6: A '6?', B '6'; trailing comma, page edge
+L06	54 67 27 31 |	54: A '54?', B '54'; 31 is the '31:' before 'meme' (no gloss above it)
