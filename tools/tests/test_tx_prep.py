@@ -84,6 +84,13 @@ def main():
     assert [m['crop'] for m in m2] == ['p1_L01_s1a.png', 'p1_L01_s1b.png'], m2
     assert m2[0]['width'] + m2[1]['width'] - 2800 == 100, m2
     assert 'overlap' in open(os.path.join(o2, 'crops_note.md')).read()
+    # lines --segments: four segments sharing --overlap, under --max-w, covering the whole crop
+    o3 = os.path.join(d, 'lines4')
+    _q(T.main, ['lines', '--crops', cr, '--setting', 'sr4', '--out', o3, '--segments', '4', '--overlap', '200'])
+    m3 = json.load(open(os.path.join(o3, 'manifest.json')))
+    assert [m['crop'] for m in m3] == ['p1_L01_s1_q%d.png' % k for k in (1, 2, 3, 4)], m3
+    assert all(m['width'] <= 2500 for m in m3) and sum(m['width'] for m in m3) - 3 * 200 >= 5600, m3
+    assert 'segments' in open(os.path.join(o3, 'crops_note.md')).read()
     print('test_tx_prep: ok')
 
 

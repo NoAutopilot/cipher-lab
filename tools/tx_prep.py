@@ -43,6 +43,9 @@ lines: the same setting on whole line crops (iiif_lines manifest.json in --crops
 applied to the crop as is; tight/combo re-cut each crop from the source page (--page, native) with the band set to the
 ink extent of the line's atlas boxes (+10%) and the segment's x range trimmed to ink, then 2x LANCZOS; a crop wider than
 --max-w (2500) is split in two with --overlap (100) px of overlap at the output scale, recorded in DIR2/crops_note.md.
+--segments N cuts every rendered crop into N segments named <crop>_q1..qN sharing --overlap px (TXE-D2, 9 Oct 2026: a
+1250 px crop at sr4 is 5000 px, over the 2500 px reading limit; four segments of 1400 px with 200 px shared), each
+<= --max-w and never re-stitched; the per-crop overlap is written to crops_note.md, never typed by hand.
 Offline test: tools/tests/test_tx_prep.py.
 """
 import argparse, csv, json, os, re, shutil, sys, tempfile
@@ -405,7 +408,18 @@ def cmd_lines(a):
             im, nt = apply_ops(im, st['ops'], odd(15))
             im = im.resize((im.width * st['scale'], im.height * st['scale']), Image.LANCZOS)
             parts = [(im, tb)]
-        if parts[0][0].width > a.max_w:
+        if a.segments and a.segments > 1:
+            # TXE-D2: N equal segments sharing --overlap px each, every one under --max-w (never re-stitched)
+            im, n = parts[0][0], a.segments
+            w = -(-(im.width + (n - 1) * a.overlap) // n)
+            if w > a.max_w:
+                sys.exit(f'{stem}: {n} segments of {w} px exceed --max-w {a.max_w}; raise --segments')
+            xs = [min(k * (w - a.overlap), im.width - w) for k in range(n)]
+            parts = [(im.crop((x, 0, x + w, im.height)), f'_q{k + 1}') for k, x in enumerate(xs)]
+            notes.append(f'{stem}: {im.width} px at the output scale cut into {n} segments {stem}_q1..q{n} of {w} px, '
+                         f'neighbours sharing {w - (xs[1] - xs[0])}-{w - (xs[-1] - xs[-2])} px '
+                         f'({(w - (xs[-1] - xs[-2])) / st["scale"]:.0f}-{(w - (xs[1] - xs[0])) / st["scale"]:.0f} px native)')
+        elif parts[0][0].width > a.max_w:
             im = parts[0][0]
             half = (im.width + a.overlap) // 2
             parts = [(im.crop((0, 0, half, im.height)), 'a'), (im.crop((im.width - half, 0, im.width, im.height)), 'b')]
@@ -451,6 +465,8 @@ def main(argv=None):
     li.add_argument('--out', required=True); li.add_argument('--only', action='append', help='crop name prefix')
     li.add_argument('--page'); li.add_argument('--boxes'); li.add_argument('--page-name')
     li.add_argument('--max-w', type=int, default=2500); li.add_argument('--overlap', type=int, default=100)
+    li.add_argument('--segments', type=int, default=0,
+                    help='cut every rendered crop into N segments sharing --overlap px (TXE-D2: 4 at sr4), each <= --max-w')
     sp.add_parser('settings')
     a = ap.parse_args(argv)
     return {'render': cmd_render, 'proxy': cmd_proxy, 'lines': cmd_lines, 'settings': cmd_settings}[a.cmd](a)
