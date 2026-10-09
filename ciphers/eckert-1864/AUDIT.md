@@ -6267,3 +6267,44 @@ Cotterill not read through), "first decipherment".
   p.680) -- read that footnote before treating III/5 as the QM department's whole record.
 - Requests: archive.org 15 (advancedsearch 7, `_djvu.txt` 5 incl. one 404 on a guessed name, metadata 3); be-api.us.archive.org 27 (one 503,
   retried once); api.openalex.org 3 (keyed); googleapis.com 7 (all 429; stopped); cupola.gettysburg.edu 3 (Cloudflare; stopped). Subagents 0.
+
+## AUDIT 3 (AUD3-E97)
+
+Account 3, LANE-VERIFY-4, session_011d5Z2ak4C3YbZSG9KB1CgP, 9 Oct 2026 00:0x UTC (date -u). Fresh session: had not read or audited E97 and
+had seen V1-LS4B and AUD3-E96 only through this file. Claim under audit: E97 at N3 (weak), two audits. Question carried from AUD3-E96: does
+Horan, *Confederate Agent* (1954) pp.226-228, which prints Holt's 23 Nov 1864 summary of Francis Jones's confession, carry E97's substance
+(N2) or only names (N3)? Nothing decoded; decode.py not touched.
+
+### Prior-work checks 3-5 (this job only; families run by FV-LS4-R1b and V1-LS4B not repeated)
+| # | family / route | query (as run) | result |
+|---|---|---|---|
+| 1-4 | `tools/prior_work.py eckert-1864 --item-spec 'shelfmark=mssEC 19;folio=9119;date=1864-11-07;sender=Dana;recipient=Rosecrans' --step-type second-audit --fetch` | -- | step LEAD only: ECK-PAGEFIX's target-level page-column claim (not this item); plaintext UNCHECKED-NET on the aaymeloglu clone and uncached OR volumes, both covered by AUDIT 1-2; CLEAR on Tomokiyo mirror, Bourdeau caches, OR by date +-1 day |
+| 4 | Horan 1954, IA `dli.ernet.157117` `_djvu.txt` (open scan; same text AUD3-E96 used) | read pp.115-120 and 226-228 in full; grep "St. Louis", "Kennerly", "Kendall", "description", "Rosecrans" | **p.227**: Holt's list "St Louis .. Wm. Kendall and Capt Lewis Kennerly" (also St Joseph, New Madrid, Cape Girardeau in Missouri); names and stations only, **no personal description** for any entry and no statement that one was lacking; no telegram to Rosecrans; p.228 "Arrest them all", arrests dated 24 Nov |
+| 5 (G3) | be-api fts (no identifier) | "Lewis Kennerly" (10: modern, unrelated); "Capt. Lewis Kennerly" (5: the four Horan scans + `lostheroineofcon0000edmo`, a Confederate officer in a diary, no agent context); "Kendall" "Kennerly" rebel (10: unrelated) | no print of E97's statement located |
+
+Requests: archive.org 2 (metadata, djvu), be-api.us.archive.org 3; >= 2 s apart. No other host.
+
+### Judgment: frame in print, E97's own proposition not
+Horan's list confirms the affair: the 5 Nov arrest orders V1-LS4B found as E97's siblings (Cincinnati, New York, Memphis) match stations on
+Jones's list (Cincinnati, Maj. Heikermere; New York; Memphis, Capt. Pope), and St Louis is on it with two names. So "the Rebel agent at
+St. Louis" in E97 is, by strong inference, one of Kendall or Kennerly from Jones's list. But E97 states something else: that the War
+Department's evidence gives **no personal description** of that agent (the answer to St. Louis, per V1-LS4B's reading of the ledger). Horan
+prints no descriptions for anyone and says nothing about their absence -- and the siblings show the War Department did hold descriptions for
+other stations, so the print's silence cannot stand for E97's statement. E97 names no one, so the E96 test (same person, rank, city and role
+in print) has nothing to match. **N3 (weak) kept**, three audits. Horan pp.226-227 is now the printed context to cite.
+- E100 (QMG to Capt. Thomas, Baltimore, 5 Apr 1864, the Nelly Pentz) is not part of the Jones affair (seven months earlier, a troop
+  transport order); not checked against Horan; already N2 (V1-LS4B), untouched.
+
+### Classification (key `period`)
+| ID | N-class | text known? | depth (kept) | note |
+|---|---|---|---|---|
+| E97 Dana to Rosecrans, St. Louis, 7 Nov 1864 3 PM | **N3** (weak), three audits | unknown; context printed: Horan 1954 p.227 names the St Louis agents of Jones's list (Wm. Kendall, Capt. Lewis Kennerly) without description | D2 | not N4: press of the day, Dana papers, NARA RG 107, HathiTrust, JSTOR unread (V1-LS4B) |
+
+- Safe sentence, E97: "Read at grade H with the period Cipher No. 1 book: Assistant Secretary of War Dana's telegram of 7 Nov 1864 to
+  General Rosecrans at St. Louis that the evidence in the War Department's possession furnishes no personal description of the Rebel agent
+  at St. Louis. The St. Louis agents of Francis Jones's 1864 confession (Wm. Kendall and Capt. Lewis Kennerly) are printed, without
+  description, in J. D. Horan, *Confederate Agent* (1954), p.227; no prior plaintext or decipherment of this telegram was located (press of
+  the day and Dana's papers not reachable)." Unsafe: "first", "unpublished", "previously unknown", "identifies" either man as the agent
+  (E97 names no one).
+- Depth sentence unchanged (true against the reading); D2 kept (the print checks the affair, not E97's statement: no raise).
+- Postmortem: no over-claim found; status.json E97 gap/audit_status/audit_refs updated; SO-ECKERT-E97 stays queued (class unchanged).
