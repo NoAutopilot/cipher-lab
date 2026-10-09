@@ -11770,3 +11770,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 01:09 | MANT-0136 | sachsen take (<=3 requests, 694/09 0136 [+0233]); for LANE FAMILY-A2d (account 2)
 2026-10-09 01:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 01:10 UTC: spawned 0 (), queued left 0
 2026-10-09 01:10 | AUD2-LEDGER-11 (acct3 verifier) | LANE VERIFY-4 hdl release (1 request: IIIF region of 5832 to scratch)
+2026-10-09 01:10 | LIN-SIB3 (Sonnet worker) | claim: antt-linhares-chave maço 86 /09 m0171-m0212 thumbnails + m0146 look; digitarq take; cap 1.8, box ends 01:55 UTC; for LANE FAMILY-A2d (account 2)
