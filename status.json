@@ -8379,6 +8379,170 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM5a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM5a verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM5a)' section 5",
+      "reading_version": "FM-R3a 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM5a) section 4",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Capt. L. B. Norton (chief signal officer) to Capt. H. S. Tafft, Signal Office, 158 F Street, Washington, 28 Apr 1864, maps of the Peninsula and Sergeant Royer (E210)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 28 Apr 1864 Capt. L. B. Norton, chief signal officer at Fort Monroe, asked Capt. H. S. Tafft at the Signal Office, 158 F Street, Washington, to get twelve of the best maps of the Peninsula and the south side of the James from the Engineer Department and to hurry Sergeant Royer down with his desk. The telegram was not located in the Official Records (ser. I vols. 33, 36), Brown's Signal Corps history (1896), Plum's Military Telegraph (1882) or the Huntington's full-text search (searched 9 Oct 2026).",
+      "gap": "N3 (weak: the body is mostly clear in the holder's public transcription; the key supplies Captain x2, 158, Washington, from the Engineer Department, 12, South, James): Signal Corps letters (NARA RG 111), Google Books (429 on 8-9 Oct), press unread. Depth D3.",
+      "depth": "D3",
+      "completeness": "18 H of 18 code-word groups ('Tafft', 'Royer', 'Norton' plain)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.93, pointer 5637, E210"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.93, pointer 5637, E210",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.93, pointer 5637, E210"
+      ],
+      "depth_sentence": "A week before the Army of the James sailed up the river, its chief signal officer was sending to Washington for the Engineer Department's best maps of the Peninsula and the south side of the James.",
+      "depth_check": "code clause: Grapes = Washington, Waxy = South, Bergen = James passim; external, non-statistical: Brown, Signal Corps U.S.A. (1896): Signal Office at 158 F Street (= plug publish mandate platina), Capt. Henry S. Tafft on duty there, Sgt. W. Harry Royer act. QM sergeant for Capt. Norton, Norton Capt. and Chief Signal Officer, Dept. of Va. and N.C.; image read whole by FM-R3a; matched clause control FM-R3a",
+      "depth_note": "18 H of 18 code-word groups ('Tafft', 'Royer', 'Norton' plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM5a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM5a verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM5a)' section 5",
+      "reading_version": "FM-R3a 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM5a) section 4",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 93.3,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Quartermaster General (via Eckert) to Lt. Col. H. Biggs, Fort Monroe, 7 July 1864 11.30 AM, all available transportation to City Point to move troops to Washington (E212)",
+      "line": "Read at grade H with War Department Cipher No. 1: at 11.30 a.m. on 7 July 1864 the Quartermaster General, through Eckert's office, told Lt. Col. Herman Biggs at Fort Monroe that General Grant directed all available transportation be sent to City Point to move troops from there to Washington, and to send up such steamers as were suited. The order was not located in the Official Records (ser. I vols. 37 pt 2, 40 pts 2-3) or the Grant Papers (vol. 11, full-text search), searched 9 Oct 2026; the Washington sent copy is in the same ledger series (mssEC 18).",
+      "gap": "N3 (weak; the sent copy mssEC 18 9778/1 is the same cipher text): QMG letters sent (RG 92), Grant Papers vol. 11 page read, Google Books unread. Depth D2: no external check of the order's content.",
+      "depth": "D2",
+      "completeness": "14 H of 15 code-word groups ('united states of America' after the signature M; 'Biggs' plain)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.223, pointer 5767, E212"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.223, pointer 5767, E212",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.223, pointer 5767, E212"
+      ],
+      "depth_sentence": "On 7 July 1864, with Early in Maryland, Fort Monroe's quartermaster was ordered to send every available transport to City Point to carry troops to Washington.",
+      "depth_check": "code clause: Judah = Grant, Blubber = City Point, Whig = Transportation passim; the mssEC 18 sent copy (9778/1) header 11.30 AM confirms Florence = 11.30 AM; OR I/37 pt 2 and I/40 pt 3 print only the situation (Grant and Halleck 5 July on transportation; Biggs at Fort Monroe 6 July), not the order: D3 withheld",
+      "depth_note": "14 H of 15 code-word groups ('united states of America' after the signature M; 'Biggs' plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM5a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM5a verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM5a)' section 5",
+      "reading_version": "FM-R3a 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM5a) section 4",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Capt. L. F. Sheldon (telegraph, Dept. of the South) at Fort Monroe to Maj. Eckert, 16 Apr 1864, surplus telegraph material to go with the Tenth Corps (E213)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 16 Apr 1864 Capt. L. F. Sheldon, the military telegraph's officer in the Department of the South, reported from Fort Monroe that he had come by General Turner's directions for Eckert's instructions on material made surplus by the new arrangements, and that the General wanted the material and the superintendent to go with the Tenth Corps. The telegram was not located in the Official Records (ser. I vols. 33, 35 pt 2) or Plum's Military Telegraph (searched 9 Oct 2026).",
+      "gap": "N3 (weak: almost all clear in the holder's public transcription; the key supplies General x2 and 10th Corps): Dept. of the South telegraph records, Google Books unread. Depth D3.",
+      "depth": "D3",
+      "completeness": "6 H of 6 code-word groups (the body is clear; signer 'Ell F.' = L. F. [Sheldon], identification I)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.63, pointer 5607, E213"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.63, pointer 5607, E213",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.63, pointer 5607, E213"
+      ],
+      "depth_sentence": "As the Tenth Corps moved from South Carolina to Fort Monroe in April 1864, its telegraph superintendent asked Eckert to let him and his surplus line material go with the corps.",
+      "depth_check": "code clause: Shelby/Shelter = General passim, Federal Pelham = 10 Corps; external, non-statistical: Plum (Capt. Lemuel F. Sheldon, Dept. of the South), OR I/35 pt 2 (Tenth Corps regiments ordered from Hilton Head to Fortress Monroe 14-19 Apr 1864; Brig. Gen. J. W. Turner Gillmore's chief of staff), OR I/33 (engineering materials to come with Gillmore); image read by FM-R3a",
+      "depth_note": "6 H of 6 code-word groups (the body is clear; signer 'Ell F.' = L. F. [Sheldon], identification I)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-FM5a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-FM5a verifier (account 1)",
+      "depth_date": "9 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "9 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM5a)' section 5",
+      "reading_version": "FM-R3a 9 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-FM5a) section 4",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Maj. T. T. Eckert to G. D. Sheldon, Fort Monroe, 27 May 1864, Bickford's party and material for 20 miles of line to West Point (E214)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 27 May 1864 Eckert told G. D. Sheldon at Fort Monroe that Bickford had 10 miles of wire, 3 miles of insulators and 18 miles of spikes, to send him to West Point with enough material to make 20 miles, and that operators were ordered to report. Sheldon's reply of 29 May is printed in the Official Records (ser. I vol. 36 pt 3 pp.321-322); this telegram was not located there or in Plum's Military Telegraph (searched 9 Oct 2026).",
+      "gap": "N3 (weak: the key supplies the quantities, miles and West): Military Telegraph letters sent (Eckert), Google Books unread. Depth D3.",
+      "depth": "D3",
+      "completeness": "9 H of 9 code-word groups ('spoons' = Spoon = Mile, key.md p.21 l.26; 'Bickford' plain)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.159, pointer 5703, E214"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.159, pointer 5703, E214",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.159, pointer 5703, E214"
+      ],
+      "depth_sentence": "On 27 May 1864 Eckert sent the operator Bickford's line party to West Point with material for twenty miles of telegraph toward Grant's new base.",
+      "depth_check": "code clause: Harrow/Feeble/Pebble/Gradual numerals passim; external, non-statistical: OR I/36 pt 3 pp.321-322, Sheldon to Eckert 29 May ('Bickford and party arrived ... a steamer to take them direct to West Point ... material to make 20 miles with what they had') and Caldwell to Eckert ('your dispatch of 27th ... Bickford'): confirms Wilson = West, Harrow = 20, Spoon = Mile; image read by FM-R3a",
+      "depth_note": "9 H of 9 code-word groups ('spoons' = Spoon = Mile, key.md p.21 l.26; 'Bickford' plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
         "AUDIT.md '## AUDIT (FV-FM4)'",
         "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-8)'"
       ],
