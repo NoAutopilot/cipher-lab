@@ -118,3 +118,16 @@ of the Portuguese and English Languages, London 1809, Part I: IA advancedsearch 
 (country=US, key, filter=full), HathiTrust bibliographic API by OCLC (Chrome UA) -- list each copy with edition year, identifier, view and whether
 pp.83 and 241 are reachable. Fetch the two pages from at most one second copy. Write `vieyra_copies.tsv` and a NOTES section; update the two gap
 bullets' "next" with what was found; gaps_check. No count, no regrade (a later job counts under a fresh PREREG).
+
+Wave 1 results (10:4x): VB-0086 PASS 216/225 vs p99 0.249 (1656 shares the 1657 key); Brieven aan JdW I prints every Van Beuningen letter
+to De Witt 7 Jan 1657 - 7 Aug 1658 and none Sep-Dec 1658. MANT-ABBO: 0108/0109 and 0382 printed (AB BO I Nr.64, Nr.72); 5 date-only.
+HEIN-SR: Deel 2 pp.7-131 no cipher run. RIK-COVER: no cover names in R4282/R4284 clear text.
+
+### VB-SCREEN2 (Opus, cap 3.5, box 75 min, NA take/release): vanbeuningen-dewitt-1657, inv.1540/1541 letters after 7 Aug 1658 (unprinted window)
+The edition prints nothing from Van Beuningen to De Witt after 7 Aug 1658 (edition_check_1539_1541.tsv, VB-0086). Check 1: NOTES VB-SCREEN/VB-0086.
+Steps: (1) METS of inv.1541 (and 1540 if 1541 does not carry the late-1658 letters; the 1539/1541 METS URLs VB-SCREEN fetched; <= 3 METS requests);
+date the scans at 400 px from heads/endorsements (contact sheets, Sonnet subagent calls of <= 12 tiles, ~0.5 each) to find letters dated
+after 7 Aug 1658 -- also note any 1657-58 letter the edition list lacks; (2) screen only those scans for comma-separated number groups closed by
+colons, VB-SCREEN's method with planted controls (cipher 1538_0210/0211, clear 1538_0206/0207 from images/), tile key in a file read after the calls;
+(3) eye-check every flagged scan at 1500 px (<= 6 fetches). Write siblings_screen_1541.tsv (scan, date, sender, cipher y/n/partial, est. groups,
+gloss y/n, printed y/n) and a NOTES section; gaps_check. No transcription, no decode. Requests service.archief.nl <= 130, >= 1.6 s.
