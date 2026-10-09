@@ -47,5 +47,5 @@ A gate missed ships the option `weak` with both numbers; nothing is run on a tar
 - **A FAIL**: true date in the top 10% 0.217 vs null mean 0.170, p95 0.217 (needs > p95 and >= 0.30). The null sits above
   the expected 0.10: dates in busy weeks win on window size whatever the text. `sameday.py date` ships `weak`.
 - **B PASS**: crib precision 0.432 (41/95) vs null mean 0.270, p95 0.322; ceiling check passed (null < 0.95).
-  `sameday.py rank` ships `controlled-only` (one matched control, English, one sender's edition).
+  `sameday.py rank` (shelf row `sameday.py`) ships `controlled-only` (one matched control, English, one sender's edition).
 Not re-run with another setting (rule 3, third-attempt clause; a window-size normalisation for A is a suggestion only).
