@@ -495,3 +495,16 @@ Read so far: 0% of cipher tokens graded H/C/S; the period decipherment is in two
 - [x] image-check: the owner viewer screenshots (images-123-shots, about 2x the PDF) are legible line by line (FER1478-READ2 rerun, 5 Oct 2026); the block is now limited by the unsettled sign alphabet, not by the image
 - [ ] retry: transcription passes against settled sorter labels (the shape-label retry ran on 5 Oct 2026 and split 17%)
 Verdict: keep going: 2 internal gaps; cheapest next: re-cut the period decipherment at its own 29 px pitch and reconcile its passes, ~$2; the cipher transcription waits on ASKS row 143 (sign sorter)
+
+## BNE-DECODE re-test of DECODE R1172 / R1180 (9 Oct 2026, 11:27 UTC by date -u; account 4, Sonnet)
+One DECODE browser login (`decode_browser_login.js 1172 <scratch> --guess-fullsize --fetch-page RecordsView/1180 --max-files 14`), ~14 requests, 1.5 s apart. Images and saved pages stay in scratch, not committed; the account name is in no committed file.
+Full-size images were served this time (HTTP 200, `image/png` by file(1)); the 24 Sept placeholder (17,947 B, sha1 035489a0...) did not come back for any of the 5 pages:
+| file | bytes | pixels | sha1 (first 12) |
+|---|---|---|---|
+| IMG_R1172_I5878_P1.png | 2,309,727 | 1114x1520 | 11442cec6e3e |
+| IMG_R1172_I5879_P2.png | 1,188,237 | 1117x1510 | bc8d2adf8600 |
+| IMG_R1180_I5897_P1.png | 2,145,965 | 1123x1549 | 57e0a770a907 |
+| IMG_R1180_I5898_P2.png | 2,127,163 | 2144x1526 | 02d49e2e5e23 |
+| IMG_R1180_I5899_P3.png | 939,112 | 1120x1520 | 7a922427db3f |
+Not found: any document link on either record page (no `filesrv` link except the 5 thumbnails); the record pages' "Plaintext" field reads only the language ("Spanish" on R1180, empty on R1172). The Documents list was not requested (one login only), so R1180's plaintext document is untested, not refuted. The `decode/IMG_*.png` files already committed in this folder are the old placeholders (17,947 B each); they were not replaced.
+Next (one line): a later session with one login can fetch `DocumentsList` for R1180 and read the full-size pages above (they are about the size of the owner-viewer screenshots, so check against `images-123-shots` before any new transcription pass).
