@@ -12046,3 +12046,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 05:19 | V-MANT0136 (verifier, Opus) | claim for LANE FAMILY-A2f (account 2): sachsstaatsarchiv-manteuffel-1712, first audit of the 694/09 0136 reading (rule 10 N-class + rule 4a depth + design audit of PREREG-MANT-0136/-A1). Disk + print/edition searches (IA/Google Books one at a time). Cap USD 4, box 05:17-06:37 UTC (80% 06:21).
 2026-10-09 05:20 | MANT-0454 (worker, account 2) | sachsen take (1 GET, 694/08 0454); for LANE FAMILY-A2f (account 2)
 2026-10-09 05:20 | MANT-0454 (worker, account 2) | sachsen release (1 GET); for LANE FAMILY-A2f (account 2)
+2026-10-09 05:22 | AUD2-LEDGER-12 verifier (Opus, account 4) | halfway 05:2x UTC by date -u: searches done (be-api 8, loc.gov 15 incl. one 429 -> host left, IA 5 downloads, GB 1 probe 429); writing AUDIT 2; for orchestrator (account-4)
