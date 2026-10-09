@@ -7387,3 +7387,30 @@ orchestrator role to a fresh account-4 session created via create_session (depth
 "State at hand-over" section). No check-in trigger left armed by this session; the successor arms its own. Orphan state at hand-over:
 every account-4 worker and lane of this session ledgered and archived (TX-ENGINEER incarnations 1 and 2 at 58.26 and 5.76; MQS and
 MQS-2 lanes; AUD2-LEDGER-12..17; DEPTH-STATS-CLEAR; MQS-SORTER-BOX); the account-4 dispatcher and DEB-RUN standing sessions stay.
+
+## LANE DEFAULT-account-4-20261009-1051 handoff (session_01XbUzdRL1vD2sD2Yec1P4FM, account 4, for orchestrator (account-4)), 9 October 2026 (10:51-13:2x UTC by date -u; workers 40.71 + orchestrator ~9.9 = ~50.6 of 60 by get_session; five_hour allowed throughout)
+Empty-queue auto-fill (blast 1 of 1), standing brief `.claude/briefs/default-lane.md`; jobs in `.claude/briefs/runs/2026-10-09-account4-default-1051-jobs.md` (J1-J19). VERIFY-BACKLOG gave nothing this lane could take (Birago off limits; Manteuffel 0436 under account 2's live claim). Gallica 403 at the 10:5x probe, so every Gallica job was dropped; HTRC EF API down 11:04-11:48 (MongoError). 20 workers, all ledgered in LEDGER.md and archived.
+| Job | Target | Result | Cost/cap |
+|---|---|---|---|
+| MAT-F179 | matignon-mayenne-1586 (NEAR) | code 76 x2 favours roy de Navarre (M); f.179 two blind passes agree 32%, both below shuffled-key null: non-test at 1600 px | 4.74/6.5 |
+| JVN-104 | jan-van-nassau-1572-75 | third blind pass failed its controls (non-test); 4613/4615 carry no 140/145/146 | 2.78/3 |
+| JMAN-CSP | rah-juan-manuel-1521 | mapping already on disk; csp_map.tsv: 16/28 records have a CSP abstract, no plaintext | 0.85/2.5 |
+| SALAZ-KEY | rah-salazar-soria-sanchez-1524-28 | Alonso Sanchez key.tsv 217 rows from Tomokiyo (published, M); no ciphertext on disk | 2.36/4 |
+| E62-STALE | eckert-1862 | Merlin Virginia/Maryland conflict logged per rule 4 | 1.56/2.5 |
+| D1411-R21 | decode-1411-hhsta-vienna-1600 | already done (DEF1-1411, 5 Oct); stale register line | 1.07/6.5 |
+| VIVX-KEYS | fr16106-vivonne-longlee-1579 | already done (D4-VIVMOUS, 6 Oct); stale register line | 1.35/2.5 |
+| BNE-DECODE | bne20211-ferdinand-1478 | DECODE now serves full-size R1172/R1180 (5 pages); R1180 DocumentsList untested | 0.72/1.5 |
+| CS-1162 | decode-1162-modena-ambung-1492 | intake gate now passes (layout fix); no decipherment found | 1.10/3 |
+| E62-CHECK2 | eckert-1862 | stale --check explained (old script + stray page); Camden = Thomas one print entry (M) | 2.32/3 |
+| SALAZ-HTRC | rah-salazar-soria-sanchez-1524-28 | HTRC outage, no pages | 0.72/1.2 |
+| SFZ-READ2 | sforza-pusterla-1447-f13 (NEAR) | f.81 second reader; f.13 lattice rank 1/201 both corpora; judge FAIL | 4.24/4.5 |
+| MONLUC-K07 | fr4735-monluc-lansac-poland-1573 | form-A Z read as t: +5.98 vs null p95 0.32 (label perm p 0.09) | 2.45/2 |
+| SP106-KEY | sp105-paget-1693 | SP 106 has no 1685-1702 piece naming Stepney/Paget (search result) | 0.82/1.5 |
+| CRAV-8450 | craven-rupert-1648 | R8450 table EXCLUDED (A1 10/41 vs p01 33); all 1645-49 DECODE siblings excluded | 2.43/3 |
+| SFZ-F42 | sforza-pusterla-1447-f13 (NEAR) | f.42 second reader; G1 0.768 PASS; lattice rank 1/201 both; judge FAIL; S 189 -> 173 | 4.16/3 |
+| MONLUC-BLIND | fr4735-monluc-lansac-poland-1573 | blind sort reproduces c268 form A; --try t +49.7 bits vs null p95 -42.7 (M) | 3.19/2.5 |
+| CRAV-CRIB | craven-rupert-1648 | no crib survives; parked no-key-material | 2.08/2.5 |
+| MONLUC-RELABEL | fr4735-monluc-lansac-poland-1573 | 10 c268 C-curl tokens relabelled K63/K19 -> K38 (=t), old labels kept; fr16 judge -1.426 -> -1.300 still FAIL (real_p05 -0.901); c270 align at shuffle level; relabelled tokens M | 1.77/1.2 |
+**Known-text share (owner guardrail):** MAT-F179 (key check on a leaf Tomokiyo appears to have read) 4.74 + JMAN-CSP 0.85 = 5.59 of 40.71 (14%, under the one-fifth guardrail).
+**Lessons.** (1) Register lines go stale: 3 of 10 wave-1/2 jobs (JMAN-CSP, D1411-R21, VIVX-KEYS) found their NEXT-STEPS "While waiting" step already done on disk (~3.3 spent); from wave 3 the orchestrator read each folder's latest Verdict/sections before briefing and no further stale job occurred. (2) A send_later check-in fired 30 min late (12:03 -> 12:33); the account-4 orchestrator's ping caught it. (3) Four Opus jobs ran 22-47% over cap on crop/sort work (MONLUC-K07, MONLUC-BLIND, SFZ-F42, MONLUC-RELABEL): price eye-set crops and blind sorts at >= 3. (4) CRAV-CRIB's brief named a shuffled-crib control that cannot differ from the target by construction (rule 3 orthogonal-control paragraph): the brief's error.
+**What is left (pre-checked, cheap):** sforza-pusterla owner sorter on T=/b-, b/b-, q=/go or the f.13 lookalike pass (~$2); fr4735 f.86 K07 blind sort alone (~$0.5), then relabel only if it splits; bne20211 one DECODE login for R1180 DocumentsList (~$1); rah-salazar HTRC page location when the EF API is back (~$0.2); matignon f.179 native refetch when Gallica answers, then the owner's sorter; decode-1162 leads Domokos 2014 / Lang 2018 (~$1).
