@@ -1814,3 +1814,11 @@ Read so far: 460 of 847 R1953 tokens carry a key value (H 154, S 306) plus M 15,
 - [x] image-check: R4369, R4370, R4372, R4376, R4386, R4388 read from full-size images; R1953 checked against DECODE's transcription (R7A-HEL53) and its keyed 0/8 twins read masked (R8-HEL); both adopted into the counted reading (UNA-HELLEN)
 - [x] retry: the R1953 image check (R7A-HEL53) and the 0/8 pass (R8-HEL)
 Verdict: keep going: 1 internal gap; cheapest next: the 1-800 key-rebuild on the full Fagel scans 5-93 corpus, ~$30-35, low prior (a campaign, HELD: orchestrator decision); a verifier's rule-7 re-derivation of reading_R1953_img.txt is wanted
+
+## VERIFY-HELLEN (9 Oct 2026, account 1 verifier, for orchestrator (account-4))
+Rule-7 fresh re-derivation of `key_r4369/reading_R1953_img.txt` from the spec, key and input layer only
+(`verify_hellen/rederive.py`): 847/847 tokens agree on value and grade (H 154, S 306, M 15, U 372); `decode_key.py --check` and
+`build_input.py --check` exit 0; judge FAIL -0.978 vs real_p05 -0.968 reproduced (cannot decide). Depth re-run on the counted
+tokens (`verify_hellen/depth_summary.json`): run 13 vs AD 3168, item control 48 vs p95 67, D1 held at 54.3%; N3 held. Registers
+corrected: status.json near entry and depth_check, NEAR.md token count, and the Berlin clause of the safe sentence (AUDIT.md
+"## AUDIT (VERIFY-HELLEN)"). The "VERIFIER WANTED" of UNA-HELLEN is answered; the Remaining gaps and Escalation above stand.

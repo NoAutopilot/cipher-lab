@@ -1,0 +1,191 @@
+{
+ "tokens": 847,
+ "grades": {
+  "S": 306,
+  "H": 154,
+  "U": 372,
+  "M": 15
+ },
+ "hcs": 460,
+ "hcs_pct": 54.3,
+ "primary_run": 13,
+ "primary_run_text": "de me pro cu r er l",
+ "secondary_run": 31,
+ "secondary_run_text": "la proposition d une nouvelle paroit",
+ "H_model_bits": 2.792,
+ "R": 1.908,
+ "V": 250,
+ "distinct_cipher_codes": 132,
+ "H_design": 1051.5,
+ "H_lib": 2978.3,
+ "H_K": 4029.8,
+ "unicity": 2112.0,
+ "primary_run_m_through": 13,
+ "primary_run_m_through_text": "de me pro cu r er l",
+ "AD": 3168.0,
+ "AD_R3_4": 1777.8,
+ "cipher_clause": false,
+ "cipher_clause_m_through": false,
+ "stat_i_target": 48,
+ "stat_i_p95": 67,
+ "stat_i_max": 73,
+ "stat_i_pass": false,
+ "n_shuffles": 200,
+ "seeds": "8100-8299",
+ "clear_aware": null,
+ "shuffle": "all",
+ "cipher_class": "len<=3",
+ "recurring_codes": {
+  "1421": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 1,
+   "flanks_above_p95": 0
+  },
+  "1083": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 0
+  },
+  "1032": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 0
+  },
+  "1213": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 0
+  },
+  "1362": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 0
+  },
+  "802": {
+   "n_occ": 3,
+   "independent_contexts": 3,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 0
+  },
+  "884": {
+   "n_occ": 5,
+   "independent_contexts": 5,
+   "contexts_above_p95": 1,
+   "flanks_above_p95": 0
+  },
+  "1525": {
+   "n_occ": 4,
+   "independent_contexts": 3,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 0
+  },
+  "868": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 0
+  },
+  "1267": {
+   "n_occ": 3,
+   "independent_contexts": 3,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 0
+  },
+  "1368": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 0
+  },
+  "825": {
+   "n_occ": 3,
+   "independent_contexts": 3,
+   "contexts_above_p95": 1,
+   "flanks_above_p95": 0
+  },
+  "900": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 0
+  },
+  "807": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 0
+  },
+  "1343": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 0
+  },
+  "1355": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 0
+  },
+  "1511": {
+   "n_occ": 3,
+   "independent_contexts": 3,
+   "contexts_above_p95": 1,
+   "flanks_above_p95": 0
+  },
+  "863": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 2,
+   "flanks_above_p95": 2
+  },
+  "1253": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 0
+  },
+  "1257": {
+   "n_occ": 3,
+   "independent_contexts": 2,
+   "contexts_above_p95": 2,
+   "flanks_above_p95": 1
+  },
+  "1470": {
+   "n_occ": 3,
+   "independent_contexts": 2,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 0
+  },
+  "1357": {
+   "n_occ": 2,
+   "independent_contexts": 1,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 0
+  },
+  "843": {
+   "n_occ": 2,
+   "independent_contexts": 1,
+   "contexts_above_p95": 1,
+   "flanks_above_p95": 0
+  },
+  "850": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 0,
+   "flanks_above_p95": 0
+  },
+  "898": {
+   "n_occ": 2,
+   "independent_contexts": 2,
+   "contexts_above_p95": 1,
+   "flanks_above_p95": 1
+  }
+ },
+ "wordlist_size": 7287
+}

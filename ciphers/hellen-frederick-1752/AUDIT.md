@@ -34,6 +34,8 @@ the transcription error of the key is measured only as reader agreement (err_2re
 Confidence that R4369 is the key for R1953's codes 801-1796: high. Confidence in any sentence-level sense of the letter:
 low, because 44% of the tokens are unread.
 
+(Counts superseded 9 Oct 2026: 460 of 847 groups, H 154, S 306, after the image corrections were adopted; current safe sentence in "## AUDIT (VERIFY-HELLEN)" below.)
+
 **Safe sentence:** "Using a period key sheet in the British Library (Add MS 32276 f.44, catalogued on DECODE as R4369), we
 assigned values to 456 of the 846 code groups (54%) of Hellen's 4 January 1752 despatch to Frederick II (DECODE R1953).
 152 of them come straight from the sheet; for 304 we decided which code each sheet entry belongs to with a controlled
@@ -222,6 +224,8 @@ consistent with the decoded fragments but not a plaintext of them.
 Key source: `period` -- agreed with AUDIT 1. BL catalogue (searcharchives.bl.uk, 4 Oct 2026) describes Add MS 32276 only as
 "Vol. vi. (ff. 128) Cipher-keys", 1724-1844; the attribution of the volume to the English Deciphering Branch rests on the
 series it belongs to and on DECODE's record, as AUDIT 1 said.
+
+(Counts superseded 9 Oct 2026: 460 of 847 groups, H 154, S 306, after the image corrections were adopted; current safe sentence in "## AUDIT (VERIFY-HELLEN)" below.)
 
 **Safe sentence (revises AUDIT 1's last clause; the rest stands):** "Using a period key sheet in the British Library (Add MS 32276
 f.44, catalogued on DECODE as R4369), we assigned values to 456 of the 846 code groups (54%) of Hellen's 4 January 1752
@@ -462,3 +466,74 @@ N-class N3 and depth D1 are not re-ruled here (a solver does not classify). dept
 (53.9 -> 54.3). SECOND-OPINIONS-QUEUE row SO-HEL-R1953 (queued, not yet posted): its prompt now carries 460 of 847 and the
 reading_R1953_img.txt path. **VERIFIER WANTED:** a rule-7 fresh re-derivation of `reading_R1953_img.txt` from the spec, the key
 and the two corrections files (READ2-HELRD's three conventions, key_r4369/README.md).
+
+## AUDIT (VERIFY-HELLEN)
+
+Verifier VERIFY-HELLEN (account 1, Opus, session_01Mz2skc2zmooQro9gTirqun), 9 Oct 2026 07:42-08:0x UTC by date -u; brief
+`.claude/briefs/runs/2026-10-09-account4-orch-jobs.md` "### VERIFY-HELLEN". Separate from every solver of this item (UNA-HELLEN,
+R7A-HEL53, R8-HEL, READ2-HEL) and from DEPTH-REGRADE, DEPTH-MH, VHEL and A3V-VHEL2. Disk only: no host, no subagent, no image
+read. Nothing decoded beyond the re-derivation; key, ciphertext and corrections files untouched.
+
+**Rule 7, fresh re-derivation.** Written from the spec (`specs/hellen-frederick-1752.json`), the key (`key_r4369/key_decode.tsv`),
+the input layer (`key_r4369/R1953_pipe_img.txt`) and key_r4369/README.md's three conventions only, without decode_key.py
+(`verify_hellen/rederive.py`, exits 1 on any difference): **847/847 tokens agree on value and grade, 0 differences**; H 154,
+S 306, M 15, U 372 on both sides. The difference allowed by rule 7 (the M-graded tokens) is not used. Input layer checked by
+hand as well: `R1953_pipe.txt` equals `ciphertext_R1953.txt` token for token once the underline marks are stripped (846/846);
+`R1953_pipe_img.txt` differs from it in exactly 14 places, each a `corrections.tsv` row (R7A-HEL53: 8 high + 4 medium, one of
+them the 1426903 -> 1426 903 split; R8-HEL: 2 high; the ambiguous pos 272 row not applied). `python3 tools/decode_key.py
+ciphers/hellen-frederick-1752/key_r4369 --check`: exit 0, "reading up to date" (847: H 154, M 15, S 306, U 372; 846: H 152,
+M 16, S 304, U 374). `key_r4369/build_input.py --check`: exit 0. The rule-7 bar is met; the reading is not sent back.
+
+**Judge** (re-run 9 Oct 2026 07:4x UTC; reproduces UNA-HELLEN's figure):
+```
+$ python3 tools/judge_plaintext.py specs/hellen-frederick-1752.json --file ciphers/hellen-frederick-1752/key_r4369/reading_R1953_img.txt
+ok   length: got=1332, min=200, max=1000000000
+FAIL language: score=-0.978, null_p99=-1.739, real_p05=-0.968, real_median=-0.826, mode=both, N=1332
+FAIL - hellen-frederick-1752 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+A FAIL 0.010 below real_p05 and far above the null (null_p99 -1.739); judge_calib.py's true decodes at this coverage FAIL 2/8 at
+-0.972/-0.980, so the judge cannot decide here. Not a negative.
+
+**Rule 10 step 4, propagation audit.**
+
+| place | carries the revised counts? | action |
+|---|---|---|
+| AUDIT.md "Reading revision (UNA-HELLEN)" | yes (847; H 154, S 306, M 15, U 372; safe sentence at 460 of 847) | one wording fix below |
+| AUDIT.md sections 1 and A2.1 safe sentences | no (456 of 846, H 152, S 304: historical) | a "superseded" pointer added under each; text left as written |
+| SECOND-OPINIONS-QUEUE.tsv SO-HEL-R1953 (queued) and its prompt | yes (460 of 847, reading_R1953_img.txt); the six fragments quoted all re-checked in the counted reading and present | none |
+| status.json results (hellen) `grade`, `line`, `depth_pct` 54.3, `depth_unread`, `depth_note` | yes; but `grade` said "rule-7 re-derivation 845/846", `depth_check` still said 152 H / 304 S, `depth_note` still said VERIFIER WANTED | corrected |
+| status.json `near` (hellen) | no: title H 152 / S 304, next step R4370 (done 3 Oct), touched 3 Oct | brought in line with NEAR.md |
+| NEAR.md row | next-step cell yes; first cell said "836 tokens" (an older error, R1953 has 846 / 847) | corrected, verifier line added, touched updated |
+
+Wording fix in UNA-HELLEN's safe sentence: "the recipient's archive in Berlin has not been searched" under-states A3V-VHEL2, which
+found the file at shelfmark level online (GStA PK, I. HA Rep. 96 Nr. 38 G-H, not digitised) and did not read it. The current safe
+sentence uses A2.1's wording for that clause.
+
+**Depth re-stated.** `python3 tools/depth_stats.py` re-run on the counted tokens (`reading_R1953_img_tokens.tsv`, same options and
+seeds 8100-8299 as DEPTH-MH; output `verify_hellen/depth_summary.json`, `depth_contexts.tsv`): longest H/C/S run of values <= 3
+letters 13 ('de me pro cu r er l'), AD 3168 letters (H(K) 4029.8 bits, 132 distinct cipher codes) -- cipher clause fails; item
+control (i) 48 against shuffle p95 67 -- fails; 863 'province' 2/2 windows above p95 (flanks 2/2) and 1257 'nouvelle' as on file,
+not licensed while (i) fails. Under PREREG-DEPTH-MH's rule the revision changes nothing: **D1 held**, depth_pct **54.3** (H 154 +
+S 306 of 847), outward words "fragments read". Not lowered: D1's bar does not depend on the 14 changed tokens, and none of the
+fragments the safe sentence or the SO prompt quotes changed.
+
+**N-class: N3 held**, key source `period` (no search re-run; the revision changes 14 cipher-group readings and no plaintext
+claim, and no fragment quoted outside the repository changed).
+
+**One true sentence about the content (fragment level, D1; not a D2 sentence):** among the groups read, 1450 'feu' and 1611
+'pce d'Orange' stand together in the despatch's first line ("si feu pce d'Orange", both S) and 1612 'princesse d'Orange' (S) follows
+863 'province' (H) three groups later ('province s que princesse d'Orange'), so the letter speaks of the late Prince of Orange -- William IV, who died on 22 October 1751, ten
+weeks before the despatch -- and of the Princess of Orange.
+
+**Safe sentence (current, 9 Oct 2026):** "Using a period key sheet in the British Library (Add MS 32276 f.44, catalogued on DECODE
+as R4369), we assigned values to 460 of the 847 code groups (54%) of Hellen's 4 January 1752 despatch to Frederick II (DECODE
+R1953), as the groups read on the page images. 154 of them come straight from the sheet; for 306 we decided which code each
+sheet entry belongs to with a controlled statistical test. Codes 1-800 are not on that sheet and remain unread. In the editions,
+catalogues and decipherment volumes we searched (log in AUDIT.md) we found no printed plaintext or period decipherment of this
+despatch. The King's own file of Hellen's 1752 reports in Berlin (GStA PK, I. HA Rep. 96 Nr. 38 G-H) is not digitised and was
+not read, and it may hold the decipherment made on arrival."
+
+**Unsafe sentence:** "We have deciphered Hellen's 4 January 1752 despatch" (D1: fragments read; 372 of 847 groups unread).
+
+Postmortem: no over-claim found in the reading; three stale registers (status.json near entry, status.json depth_check, NEAR.md
+token count) and one under-stated clause in the revision's safe sentence, all corrected in this commit.

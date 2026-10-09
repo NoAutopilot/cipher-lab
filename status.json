@@ -3521,7 +3521,7 @@
       "fields_source": "hellen-frederick-1752/AUDIT.md: VHEL (N3, LANE-NEAR3) and A3V-VHEL2 second adversarial audit (N3 confirmed, LANE-A3V)",
       "document_id": "DECODE R1953 (KHA Prins Willem V inv. 196, now A31-1148): W. B. von der Hellen to Frederick II, The Hague, 4 Jan 1752; key BL Add MS 32276 f.44 (DECODE R4369)",
       "title": "Hellen to Frederick II, The Hague, 4 Jan 1752: intercepted despatch read in part with a 1751 period key sheet (BL Add MS 32276 f.44)",
-      "grade": "N3 (two audits), key period. 847 tokens after the image corrections adopted 9 Oct 2026 (UNA-HELLEN; 846 on DECODE's transcription: H 152, S 304, M 16, U 374): H 154, S 306, M 15, U 372; codes 1-800 not on the sheet (two candidate sheets R4370, R4372 fail as rival series). Value-shuffle and order-shuffle nulls p 0/200; rule-7 re-derivation 845/846.",
+      "grade": "N3 (two audits), key period. 847 tokens after the image corrections adopted 9 Oct 2026 (UNA-HELLEN; 846 on DECODE's transcription: H 152, S 304, M 16, U 374): H 154, S 306, M 15, U 372; codes 1-800 not on the sheet (two candidate sheets R4370, R4372 fail as rival series). Value-shuffle and order-shuffle nulls p 0/200; rule-7 re-derivation 845/846 (READ2-HELRD, transcription); VERIFY-HELLEN 9 Oct 2026: fresh re-derivation of the counted reading 847/847, judge FAIL -0.978 vs real_p05 -0.968 (cannot decide).",
       "line": "Class without a reading (D1, fragments read; not counted as a unique solve). Using a period key sheet in the British Library (Add MS 32276 f.44, DECODE R4369), values assigned to 460 of 847 code groups (as read on the image) of Hellen's 4 Jan 1752 despatch; no printed plaintext or period decipherment located in the searched editions; the Berlin file GStA PK I. HA Rep. 96 Nr. 38 G-H was not read.",
       "text": "unknown",
       "claim_scope_was": "partial reading (codes 801-1796)",
@@ -3531,10 +3531,10 @@
         "names_codes": "354 codes 1-800 not on the sheet (counted 9 Oct 2026 from reading_R1953_img_tokens.tsv), 18 other U: blank cells in 801-1796, the crossed-out 1023, doubtful digits",
         "other": "15 M"
       },
-      "depth_check": "period key sheet R4369 (152 H) + control-backed attribution (304 S); AUDIT 1: 'No continuous sentence of the letter can be given'; DEPTH-MH 8 Oct 2026 re-check: D1 held -- cipher clause fails (run 13 vs AD 3175), item control (i) fails (48 vs 200-shuffle p95 67); 863 province and 1257 nouvelle 2/2 windows above p95 but not licensed while (i) fails, (i) is weak for a word-valued syllabary (AUDIT.md)",
-      "depth_note": "H 154 + S 306 of 847 (image corrections adopted 9 Oct 2026, UNA-HELLEN; was H 152 + S 304 of 846); depth level D1 not re-ruled, VERIFIER WANTED for a rule-7 fresh re-derivation",
-      "depth_by": "session_01LMs2EyN5RhSA1321cqQrnZ",
-      "depth_date": "8 Oct 2026",
+      "depth_check": "period key sheet R4369 (154 H) + control-backed attribution (306 S) of 847 (was 152/304 of 846); AUDIT 1: 'No continuous sentence of the letter can be given'; DEPTH-MH 8 Oct 2026 re-check: D1 held -- cipher clause fails (run 13 vs AD 3175), item control (i) fails (48 vs 200-shuffle p95 67); 863 province and 1257 nouvelle 2/2 windows above p95 but not licensed while (i) fails, (i) is weak for a word-valued syllabary (AUDIT.md); VERIFY-HELLEN 9 Oct 2026 re-run on the counted tokens: run 13 vs AD 3168, item control 48 vs p95 67 -- D1 held",
+      "depth_note": "H 154 + S 306 of 847 (image corrections adopted 9 Oct 2026, UNA-HELLEN; was H 152 + S 304 of 846); D1 re-stated by VERIFY-HELLEN 9 Oct 2026 after a rule-7 fresh re-derivation (847/847)",
+      "depth_by": "session_01Mz2skc2zmooQro9gTirqun",
+      "depth_date": "9 Oct 2026",
       "decode_status": "Non-decrypted"
     },
     {
@@ -10098,10 +10098,10 @@
     },
     {
       "target": "hellen-frederick-1752",
-      "title": "Hellen 1752: the Deciphering Branch's own Hellen key (DECODE R4369, codes 801-1796) reads R1953 above every control (uni -7.017 vs -9.157, p 0/200; PMI vs order shuffle p 0); decode H 152 / S 304 / M 16 / U 374; judge FAIL -0.976 vs real_p05 -0.954, judge cannot decide at this coverage",
-      "next": "codes 1-800: R4370 transcription + --key test (~$12); rule 7 fresh-session re-derivation; R1953 image check",
+      "title": "Hellen 1752: the Deciphering Branch's own Hellen key (DECODE R4369, codes 801-1796) reads R1953 above every control (uni -7.017 vs -9.157, p 0/200; PMI vs order shuffle p 0); counted reading after the image corrections (UNA-HELLEN, 9 Oct 2026) H 154 / S 306 / M 15 / U 372 of 847, rule-7 re-derivation 847/847 (VERIFY-HELLEN); judge FAIL -0.978 vs real_p05 -0.968, judge cannot decide at this coverage",
+      "next": "codes 1-800 (354 tokens): key-rebuild on the full Fagel scans 5-93 corpus, ~$30-35, low prior, HELD (campaign, orchestrator decision); 1756/1763 letters: no key material; N4 needs GStA PK I. HA Rep. 96 Nr. 38 G read",
       "lane": "LANE-READ2 (account 2)",
-      "touched": "3 Oct 2026 23:3x"
+      "touched": "9 Oct 2026 07:5x (VERIFY-HELLEN)"
     },
     {
       "target": "clair1161-avis-flandre-1688",
