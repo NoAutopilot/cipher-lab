@@ -12528,3 +12528,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 11:24 | LIN-COUNT worker | IA take (<=6 requests: 5 calibration leaves at 1897 px via iiif.archive.org, >=1.5 s apart) -- for LANE FAMILY-A2h (account 2)
 2026-10-09 11:24 | LIN-COUNT worker | IA release (5 requests, iiif.archive.org leaves 236/146/276/261/265 at 1897x2152, 2 s apart, all 200) -- for LANE FAMILY-A2h (account 2)
 2026-10-09 11:24 | MANT-0176 worker (account 2, Opus) | IA take (<=4 requests: Droysen GpP IV.1/IV.2 djvu text by date, 2 s apart) -- for LANE FAMILY-A2h (account 2)
+2026-10-09 11:25 | CS-1162 worker (account 4, Sonnet) | claim decode-1162-modena-ambung-1492 check-solved + premise check; box end 12:25 UTC; for LANE DEFAULT-account-4-20261009-1051
