@@ -1,0 +1,98 @@
+line	col	kind	candidates	left_neighbours	right_neighbours
+p1c_L01	1	uncertain	FOUR		SEVEN TEE
+p1c_L01	3	disagree	HOOK | TEE	FOUR SEVEN	THREE EIGHT
+p1c_L01	5	uncertain	EIGHT	TEE THREE	THETA SEVEN
+p1c_L01	8	uncertain	HOOK	THETA SEVEN	NINE NINE
+p1c_L01	9	uncertain	NINE	SEVEN HOOK	NINE PHI
+p1c_L01	10	uncertain	NINE	HOOK NINE	PHI SIX
+p1c_L01	11	uncertain	PHI	NINE NINE	SIX HOOK
+p1c_L01	12	uncertain	SIX	NINE PHI	HOOK HOOK
+p1c_L01	13	uncertain	HOOK	PHI SIX	HOOK PI
+p1c_L01	14	uncertain	HOOK	SIX HOOK	PI OMEGABAR
+p1c_L01	17	uncertain	SIX	PI OMEGABAR	HOOK HOOK
+p1c_L01	18	disagree	HOOK | (or: no sign here)	OMEGABAR SIX	HOOK FOUR
+p1c_L01	19	uncertain	HOOK	SIX HOOK	FOUR
+p1c_L02	1	uncertain	HOOK		OMEGABAR XCURL
+p1c_L02	6	disagree	NEW:tall-l-bottom-loop | SIX	OMEGADOT NINE	PHI HOOK
+p1c_L02	7	uncertain	PHI	NINE NEW:tall-l-bottom-loop	HOOK HOOK
+p1c_L02	8	uncertain	HOOK	NEW:tall-l-bottom-loop PHI	HOOK HCURL
+p1c_L02	9	uncertain	HOOK	PHI HOOK	HCURL EIGHT
+p1c_L02	11	uncertain	EIGHT	HOOK HCURL	DIAMOND EM
+p1c_L02	20	disagree	EIGHT | PHI	EIGHTBAR NINE	HOOK XCURL
+p1c_L02	21	uncertain	HOOK	NINE PHI	XCURL SEVEN
+p1c_L02	22	uncertain	XCURL	PHI HOOK	SEVEN ESS
+p1c_L02	24	uncertain	ESS	XCURL SEVEN	THREE OMEGABAR
+p1c_L02	27	disagree	NEW:circle-with-vertical-stroke | PHI	THREE OMEGABAR	NEW:long-s FOUR
+p1c_L02	28	disagree	JHOOK | NEW:long-s	OMEGABAR NEW:circle-with-vertical-stroke	FOUR
+p1c_L03	3	disagree	NEW:tall-l-bottom-loop | SIX	PLUS NINE	HCURL OMEGABAR
+p1c_L03	6	uncertain	HOOK	HCURL OMEGABAR	SEVEN TWO
+p1c_L03	8	uncertain	TWO	HOOK SEVEN	HCURL SEVEN
+p1c_L03	12	uncertain	PHI	SEVEN THETA	ENN THREE
+p1c_L03	14	uncertain	THREE	PHI ENN	OMEGABAR OMEGADOT
+p1c_L03	18	uncertain	SEVEN	OMEGADOT DIAMOND	HOOK SEVEN
+p1c_L03	19	uncertain	HOOK	DIAMOND SEVEN	SEVEN HOOK
+p1c_L03	20	uncertain	SEVEN	SEVEN HOOK	HOOK PHI
+p1c_L03	21	uncertain	HOOK	HOOK SEVEN	PHI SIX
+p1c_L03	22	uncertain	PHI	SEVEN HOOK	SIX NINE
+p1c_L03	23	uncertain	SIX	HOOK PHI	NINE FOUR
+p1c_L04	2	uncertain	PHI	PI	HCURL PHI
+p1c_L04	4	uncertain	PHI	PHI HCURL	THREE SEVEN
+p1c_L04	10	uncertain	HOOK	OMEGABAR FOUR	PHI TWO
+p1c_L04	11	uncertain	PHI	FOUR HOOK	TWO HCURL
+p1c_L04	12	uncertain	TWO	HOOK PHI	HCURL SEVEN
+p1c_L04	16	uncertain	SEVEN	SEVEN TWO	NINE EIGHT
+p1c_L04	17	uncertain	NINE	TWO SEVEN	EIGHT ENN
+p1c_L04	21	uncertain	HOOK	ENN XCURL	OMEGABAR THREE
+p1c_L04	25	uncertain	TWO	THREE LL	DIAMOND HOOK
+p1c_L04	27	uncertain	HOOK	TWO DIAMOND	NINE SIX
+p1c_L05	2	uncertain	HOOK	TEE	THREE SIX
+p1c_L05	6	uncertain	HOOK	SIX OMEGABAR	SEVEN DIAMOND
+p1c_L05	10	uncertain	PHI	DIAMOND EIGHT	SIX NINE
+p1c_L05	11	uncertain	SIX	EIGHT PHI	NINE OMEGABAR
+p1c_L05	14	uncertain	THETA	NINE OMEGABAR	HOOK THREE
+p1c_L05	15	uncertain	HOOK	OMEGABAR THETA	THREE SIX
+p1c_L05	18	uncertain	HOOK	THREE SIX	NEW:tall-l-bottom-loop PHI
+p1c_L05	19	disagree	NEW:tall-l-bottom-loop | SIX	SIX HOOK	PHI ESS
+p1c_L05	20	uncertain	PHI	HOOK NEW:tall-l-bottom-loop	ESS
+p1c_L05	21	uncertain	ESS	NEW:tall-l-bottom-loop PHI	
+p1c_L06	1	uncertain	SIX		OMEGABAR EIGHTBAR
+p1c_L06	7	uncertain	LL	EM EIGHT	OMEGABAR XCURL
+p1c_L06	10	uncertain	TWO	OMEGABAR XCURL	TWO DIAMOND
+p1c_L06	14	uncertain	TWO	DIAMOND NINE	TWO SEVEN
+p1c_L06	15	uncertain	TWO	NINE TWO	SEVEN HOOK
+p1c_L06	17	uncertain	HOOK	TWO SEVEN	HOOK XCURL
+p1c_L06	18	uncertain	HOOK	SEVEN HOOK	XCURL TWO
+p1c_L06	20	uncertain	TWO	HOOK XCURL	NEW:long-s SIX
+p1c_L06	21	disagree	JHOOK | NEW:long-s	XCURL TWO	SIX EIGHT
+p1c_L06	25	uncertain	HOOK	EIGHT THREE	SIX
+p1c_L07	1	disagree	EIGHT | NEW:tall-l-bottom-loop		SEVEN ENN
+p1c_L07	4	uncertain	TWO	SEVEN ENN	THREE EM
+p1c_L07	7	uncertain	HOOK	THREE EM	PHI EIGHT
+p1c_L07	8	uncertain	PHI	EM HOOK	EIGHT DIAMOND
+p1c_L07	15	uncertain	TWO	SEVEN LL	ENN HOOK
+p1c_L07	17	uncertain	HOOK	TWO ENN	TWO XCURL
+p1c_L07	18	uncertain	TWO	ENN HOOK	XCURL EIGHT
+p1c_L07	21	uncertain	HOOK	XCURL EIGHT	PHI TWO
+p1c_L07	22	uncertain	PHI	EIGHT HOOK	TWO SEVEN
+p1c_L08	1	uncertain	PI		PHI HOOK
+p1c_L08	2	uncertain	PHI	PI	HOOK TWO
+p1c_L08	3	disagree	HOOK | NEW:epsilon-with-ring-above	PI PHI	TWO TWO
+p1c_L08	4	uncertain	TWO	PHI HOOK	TWO NINE
+p1c_L08	11	uncertain	HOOK	OMEGABAR THREE	THETA TWO
+p1c_L08	14	uncertain	HOOK	THETA TWO	OMEGABAR DIAMOND
+p1c_L08	18	uncertain	HOOK	DIAMOND THETA	EM FOUR
+p2c_L01	7	uncertain	PHI	NINE PLUS	ENN EIGHT
+p2c_L01	13	uncertain	TWO	DIAMOND SEVEN	NINE SEVEN
+p2c_L01	17	disagree	NEW:circle-with-vertical-stroke | PHI	SEVEN THREE	EM TWO
+p2c_L01	24	uncertain	HOOK	HCURL OMEGABAR	EIGHT NEW:tall-l-bottom-loop
+p2c_L01	26	disagree	NEW:tall-l-bottom-loop | SIX	HOOK EIGHT	NINE THETA
+p2c_L02	1	disagree	JHOOK | NEW:tall-flourish-stroke		HOOK FOUR
+p2c_L02	2	uncertain	HOOK	NEW:tall-flourish-stroke	FOUR OMEGABAR
+p2c_L02	5	uncertain	PHI	FOUR OMEGABAR	PI FOUR
+p2c_L02	6	uncertain	PI	OMEGABAR PHI	FOUR HOOK
+p2c_L02	8	uncertain	HOOK	PI FOUR	NEW:tall-l-bottom-loop OMEGABAR
+p2c_L02	9	disagree	NEW:tall-l-bottom-loop | SIX	FOUR HOOK	OMEGABAR PHI
+p2c_L02	11	uncertain	PHI	NEW:tall-l-bottom-loop OMEGABAR	TWO EM
+p2c_L02	15	disagree	NEW:tall-l-bottom-loop | SIX	EM SEVEN	EIGHT SEVEN
+p2c_L02	16	uncertain	EIGHT	SEVEN NEW:tall-l-bottom-loop	SEVEN XCURL
+p2c_L02	19	uncertain	PHI	SEVEN XCURL	

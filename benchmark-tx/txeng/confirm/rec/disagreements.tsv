@@ -1,0 +1,17 @@
+line	col	A	B	flagged	crop
+p1c_L01	3	TEE	HOOK	AB	benchmark-tx/txeng/confirm/crops/p1c_L01_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L01_s2.jpg
+p1c_L01	18	HOOK	-	A	benchmark-tx/txeng/confirm/crops/p1c_L01_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L01_s2.jpg
+p1c_L02	6	NEW:tall-l-bottom-loop	SIX	AB	benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg
+p1c_L02	20	PHI	EIGHT	AB	benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg
+p1c_L02	27	NEW:circle-with-vertical-stroke	PHI	AB	benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg
+p1c_L02	28	NEW:long-s	JHOOK	AB	benchmark-tx/txeng/confirm/crops/p1c_L02_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L02_s2.jpg
+p1c_L03	3	NEW:tall-l-bottom-loop	SIX	AB	benchmark-tx/txeng/confirm/crops/p1c_L03_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L03_s2.jpg
+p1c_L05	19	NEW:tall-l-bottom-loop	SIX	AB	benchmark-tx/txeng/confirm/crops/p1c_L05_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L05_s2.jpg
+p1c_L06	21	NEW:long-s	JHOOK	AB	benchmark-tx/txeng/confirm/crops/p1c_L06_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L06_s2.jpg
+p1c_L07	1	NEW:tall-l-bottom-loop	EIGHT	AB	benchmark-tx/txeng/confirm/crops/p1c_L07_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L07_s2.jpg
+p1c_L08	3	HOOK	NEW:epsilon-with-ring-above	AB	benchmark-tx/txeng/confirm/crops/p1c_L08_s1.jpg,benchmark-tx/txeng/confirm/crops/p1c_L08_s2.jpg
+p2c_L01	17	NEW:circle-with-vertical-stroke	PHI	AB	benchmark-tx/txeng/confirm/crops/p2c_L01_s1.jpg,benchmark-tx/txeng/confirm/crops/p2c_L01_s2.jpg
+p2c_L01	26	NEW:tall-l-bottom-loop	SIX	AB	benchmark-tx/txeng/confirm/crops/p2c_L01_s1.jpg,benchmark-tx/txeng/confirm/crops/p2c_L01_s2.jpg
+p2c_L02	1	NEW:tall-flourish-stroke	JHOOK	AB	benchmark-tx/txeng/confirm/crops/p2c_L02_s1.jpg,benchmark-tx/txeng/confirm/crops/p2c_L02_s2.jpg
+p2c_L02	9	NEW:tall-l-bottom-loop	SIX	AB	benchmark-tx/txeng/confirm/crops/p2c_L02_s1.jpg,benchmark-tx/txeng/confirm/crops/p2c_L02_s2.jpg
+p2c_L02	15	NEW:tall-l-bottom-loop	SIX	AB	benchmark-tx/txeng/confirm/crops/p2c_L02_s1.jpg,benchmark-tx/txeng/confirm/crops/p2c_L02_s2.jpg
