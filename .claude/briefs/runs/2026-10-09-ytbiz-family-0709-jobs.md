@@ -164,3 +164,14 @@ p.68-70 by the snippet V-MANT0454 saw. Write a NOTES section "BONNESEN" in the M
 mention the entities, and any quoted text (snippets verbatim). If no route reads the pages, write a LOCAL-QUEUE.tsv row (owner's browser:
 HathiTrust full view or Google Books page view of pp.62-77) per tools/local_runner_brief.md format, quoting the key_livecheck line for Google
 Books. Do not decode; do not change AUDIT.md (the verifier's class is changed only by a verifier). ~$1.5.
+
+### V-MANT0109 (Opus, cap 5, box 90 min; verifier, a session that has not read 0109): sachsstaatsarchiv-manteuffel-1712, Loc. 694/08 frame 0109
+Claim under audit (NOTES "MANT-0109"): "694/08 0109 (f.80) both pages read under Krauske's table: 80 tokens, S37 M43 (38 M = name-abbreviation
+groups 55.44 x12, 7.60 x7); gate (b) PASS at 43 letters (real -1.392 vs p95 -1.687, p99 -1.539, 0/1000; power 18/18); reads Kraut, Kr.,
+commissioners Feldm. le comte Dona / Printz / Kameke / Ilgen, le grand maitre". Same shape as V-MANT0454 (jobs file, wave 1): CLAUDE.md
+verifier template steps 1-5 in full, depth per .claude/briefs/runs/2026-10-08-acct3-depth-bar.md copied into your section. Step 0: the solver's
+owed lookup -- "sachsen take" (wait for MANT-0453's release; it is fetching 0450/0451), GET 0108 (and 0110 if 0108 shows no head), "sachsen
+release"; read the letter's date, place and sender. Check 4 by that date: Droysen IV.1/IV.2, Acta Borussica Behördenorganisation, the
+Kraut/commission affair in print (IA full text, Google Books country=US + key, OpenAlex; positive control per edition). Check 5 / G3 where
+MANT-0109 got Google Books 503. Rule the 55.44 / 7.60 name groups: H/C only with a key-table row or a gloss; else M. Write "## AUDIT
+(V-MANT0109)" in AUDIT.md, status.json row, NOTES pointer; if N3+ D2+, the SO row and WORK-QUEUE `AUD2-FAMILY-A2g-2` for account 3. ~$4.5.
