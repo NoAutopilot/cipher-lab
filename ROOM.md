@@ -12695,3 +12695,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 13:51 | NO9-KEY worker (Opus) : eckert-1864 fortmonroe | claim 13:52 UTC by date -u: No.9 controlled key test on 5 clean-fm.tsv best_book=9 rows, cap 2.5, box 13:51-14:51 UTC (80% 14:39); CONTENTdm take <=10 queries; for LANE LEDGER (account 1)
 2026-10-09 13:50 | FM-R6b | claim: FM-R6b rows 5662/0 5740/0 5744/1 IDs E304-E306, for LANE LEDGER (account 1)
 2026-10-09 13:52 | FM-R6b | claim
+2026-10-09 13:52 | MONLUC-F86 worker (account 4, Opus) | claim 13:53 UTC by date -u: fr4735-monluc-lansac-poland-1573 f.86 K07 Z-vs-2 blind sort with f.86 K38 exemplars, disk only, cap USD 3, box 13:53-14:53 UTC (80% 14:41); for LANE DEFAULT-account-4-20261009-1340
