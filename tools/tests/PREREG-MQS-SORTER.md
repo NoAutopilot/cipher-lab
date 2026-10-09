@@ -54,3 +54,12 @@ disputed tiles cited as supporting evidence only.
 Unit 1 has no numeric control: `tools/tests/test_sign_sorter_blind.py` carries a positive control (the legacy non-blind caption does show
 "reader weight"), so its "no machine string" checks can fail. Unit 5's `--cvd` check must FAIL the legacy tokens, a red/green pair, a hint
 naming "red", a light-on-tint dark block and a box under 3:1 on a parchment median, and PASS the updated template (`test_sign_sorter_cvd.py`).
+
+### A1. Addendum, written AFTER the shipped ("mean tile") order was run, before any variant was run (disclosed)
+
+Primary run, 9 Oct 2026, same seeds: random plants mean recall@10% 0.498 (above the shuffled p95 in 20 of 20 seeds, recall >= 0.6 in
+1 of 20: the gate FAILS); look-alike plants mean 0.282 (above p95 in 16 of 20). Per section A the option ships `weak` with these numbers.
+The brief allows a rival ordering "reported beside it": two variants, fixed now, same plants and seeds, `--oddness-variant`:
+`medoid` (distance to the pile member with the smallest summed distance to its pile mates) and `knn3` (mean distance to the 3 nearest
+pile mates). Same gate text, same shuffle null. Neither replaces the page order unless it passes the section A gate; the page order is not
+changed in this job either way (a variant that passes is a one-line suggestion for the lane).
