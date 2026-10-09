@@ -84,8 +84,8 @@ from X8b). Reader agreement before adjudication:
 
 ## Committed before any score (sha256 beside the commit)
 All the outputs below are in `sha256_before_score.txt`: 37 files, every passX21_* output, every read, every adjudicate_out. That
-file was committed in **15eb3f17** (pushed 18:50 UTC) before `score.py` first ran. Reader prompts: **1fd962db** (before any read).
-| file | sha256 (first 16) | commit |
+file was committed in **15eb3f17** (pushed 18:50 UTC) before `score.py` was run at all. Reader prompts: **1fd962db** (before any read).
+| file | sha256 (leading 16 hex) | commit |
 |---|---|---|
 | outputs/birago1572-no87/passX21_opus_pipeline.tsv | 314d30d988843f5c | 15eb3f17 (written 162e40cc) |
 | outputs/birago1572-no87/passX21_sonnet_pipeline.tsv | 7940527ad1aae762 | 15eb3f17 |
