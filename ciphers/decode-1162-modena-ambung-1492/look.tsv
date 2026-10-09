@@ -1,0 +1,14 @@
+# tools/prior_work.py leaf looks, append-only: the newest row per (item, role, folio, canvas, image) is current
+utc	item_id	look_row_id	role	folio	canvas	image	source	status
+2026-10-09 14:51	adhoc-3d7903	adhoc-3d7903:2-leaf:4a76b7	cipher-page	6r			folio arithmetic	owed
+2026-10-09 14:51	adhoc-3d7903	adhoc-3d7903:2-leaf:4a76b7	facing	5v			folio arithmetic	owed
+2026-10-09 14:51	adhoc-3d7903	adhoc-3d7903:2-leaf:4a76b7	before-2	5r			folio arithmetic	owed
+2026-10-09 14:51	adhoc-3d7903	adhoc-3d7903:2-leaf:4a76b7	after-1	6v			folio arithmetic	owed
+2026-10-09 14:51	adhoc-3d7903	adhoc-3d7903:2-leaf:4a76b7	after-2	7r			folio arithmetic	owed
+2026-10-09 14:51	adhoc-3d7903	adhoc-3d7903:2-leaf:4a76b7	after-3	7v			folio arithmetic	owed
+2026-10-09 14:51	adhoc-3d7903	adhoc-3d7903:2-leaf:4a76b7	after-4	8r			folio arithmetic	owed
+2026-10-09 14:51	adhoc-3d7903	adhoc-3d7903:2-leaf:4a76b7	unit			TH_IMG_R1162_I5837_P1.png	manifest	owed
+2026-10-09 14:51	adhoc-3d7903	adhoc-3d7903:2-leaf:4a76b7	unit			TH_IMG_R1162_I5838_P2.png	manifest	owed
+2026-10-09 14:51	adhoc-3d7903	adhoc-3d7903:2-leaf:4a76b7	unit			IMG_R1162_I5837_P1.png	manifest	owed
+2026-10-09 14:51	adhoc-3d7903	adhoc-3d7903:2-leaf:4a76b7	unit			IMG_R1162_I5838_P2.png	manifest	owed
+2026-10-09 14:51	adhoc-3d7903	adhoc-3d7903:2-leaf:4a76b7	unit			DOC_R1162_D3593_3593.txt	manifest	owed
