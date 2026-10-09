@@ -16,7 +16,8 @@ slip, real key vs 200 value-shuffled keys (seed 1); printed and written to the t
 Key used for "forces": harvest/key_1572_sheet.tsv with the clerk C rows exactly as build_birago87.py: T42 = m; T95 {s, l};
 T52 {i, o}; X_CE = s. A plain letter forces the SET of its homophones, so err_true is value-level.
 
-Flag column: 'align-conflict' on a scored position whose slip letter disagrees with the committed sign's majority chunk in
+Flag column: verifier verdicts in benchmark-tx/birago1572-f152r.flags.tsv (TXV-152; FLAG/CORRECT/KEEP as build_birago87.py)
+override, at their positions, the automatic 'align-conflict' on a scored position whose slip letter disagrees with the committed sign's majority chunk in
 this span (interlinear_align status conflict); tx_bench --exclude-flagged reports the figure without them beside the measured one.
 Excluded (counted, never scored): slip dot (wildcard) and null/unaligned; multi-letter chunk that is not a word sign's own
 value; align status doubtful/repaired/single-segment (align-uncertain); committed sign off-sheet (X_*, ?) except X_CE; T88.
@@ -108,6 +109,12 @@ def build(out_root):
     ctrl = ('align agrees %d/%d = %.3f; GAPS4 control: real key matched %.3f vs 200 value-shuffled keys mean %.3f max %.3f, '
             'rank %d of 201' % (agrees, len(align), agrees / len(align), real, sum(sh) / len(sh), max(sh), rank))
 
+    # TXV-152 (9 Oct 2026): verifier verdicts per position, as build_birago87.py; FLAG -> flag column, CORRECT -> truth changed
+    flags = {}
+    fp = os.path.join(ROOT, 'benchmark-tx', ITEM + '.flags.tsv')
+    if os.path.exists(fp):
+        for r in rd(fp):
+            flags[(r['line'], int(r['pos']))] = r
     rows, nsc, nex = [], 0, {}
     for (line, pos, sign), a in zip(committed, align):
         chunk = a['plain_chunk'].strip()
@@ -137,13 +144,25 @@ def build(out_root):
         else:
             nex[st] = nex.get(st, 0) + 1
         flag = 'align-conflict' if st == 'scored' and a['status'].startswith('conflict') else ''
+        fr = flags.get((line, pos))
+        if fr and st == 'scored':
+            if fr['verdict'] == 'CORRECT':
+                if fr['correct_plain']:
+                    chunk = fr['correct_plain']
+                ts = set(by_val.get(chunk, set())) | set(filter(None, fr['add_signs'].split('|')))
+                truth = '|'.join(sorted(ts))
+                flag = 'corrected:' + fr['class']
+            elif fr['verdict'] == 'FLAG':
+                flag = fr['class']
+            elif fr['verdict'] == 'KEEP':
+                flag = ''
         rows.append((line, pos, sign, truth, chunk, st, flag, a['status']))
     os.makedirs(os.path.join(out_root, 'benchmark-tx'), exist_ok=True)
     tp = os.path.join(out_root, 'benchmark-tx', ITEM + '.truth.tsv')
     with open(tp, 'w') as f:
         f.write('# Birago 1572 f.152r (no.77, BnF fr.3251) known answer: decipherment slip pasted on f.151v (later hand, grade C) '
                 'aligned to harvest/f152r/passC.tsv under the printed 1572 key + clerk C rows; built by '
-                'benchmark-tx/build_birago152.py\n# %s\nline\tpos\tref_sign\ttruth\tplain\tstatus\tflag\talign_status\n' % ctrl)
+                'benchmark-tx/build_birago152.py; flag column: align-conflict, overridden by birago1572-f152r.flags.tsv (TXV-152)\n# %s\nline\tpos\tref_sign\ttruth\tplain\tstatus\tflag\talign_status\n' % ctrl)
         for r in rows:
             f.write('\t'.join(map(str, r)) + '\n')
     with open(tp + '.sha256', 'w') as f:

@@ -1,4 +1,4 @@
-# Birago 1572 f.152r (no.77, BnF fr.3251) known answer: decipherment slip pasted on f.151v (later hand, grade C) aligned to harvest/f152r/passC.tsv under the printed 1572 key + clerk C rows; built by benchmark-tx/build_birago152.py
+# Birago 1572 f.152r (no.77, BnF fr.3251) known answer: decipherment slip pasted on f.151v (later hand, grade C) aligned to harvest/f152r/passC.tsv under the printed 1572 key + clerk C rows; built by benchmark-tx/build_birago152.py; flag column: align-conflict, overridden by birago1572-f152r.flags.tsv (TXV-152)
 # align agrees 63/97 = 0.649; GAPS4 control: real key matched 0.612 vs 200 value-shuffled keys mean 0.047 max 0.121, rank 1 of 201
 line	pos	ref_sign	truth	plain	status	flag	align_status
 f152r_L01	1	T84			excluded:unaligned		null-or-unaligned
@@ -70,7 +70,7 @@ f152r_L03	28	T60	T60|T76	n	scored		agrees
 f152r_L03	29	T86	T45|T66|T86	e	scored		agrees
 f152r_L03	30	T90		.	excluded:slip-dot		conflict:p
 f152r_L03	31	T54		.	excluded:slip-dot		conflict:
-f152r_L03	32	T86	T36|T50	c	scored	align-conflict	conflict:e
+f152r_L03	32	T86	T45|T66|T86	e	scored	corrected:transcription-doubtful	conflict:e
 f152r_L03	33	T27		.	excluded:slip-dot		conflict:
 f152r_L04	1	T86	T45|T66|T86	e	scored		agrees
 f152r_L04	2	T97	T83|T97	r	scored		agrees
@@ -87,9 +87,9 @@ f152r_L04	12	T55	T19|T52|T55	o	scored		agrees
 f152r_L04	13	X_NEW		m	excluded:off-sheet		single
 f152r_L04	14	T86	T45|T66|T86	e	scored		agrees
 f152r_L04	15	T57	T57|T92|T95|T98|X_CE	s	scored		agrees
-f152r_L04	16	T52	T37|T85	a	scored		single
+f152r_L04	16	T52	T37|T85	a	scored	clerk-doubtful	single
 f152r_L04	17	T58	T13|T51|T58|T95	l	scored		agrees
-f152r_L04	18	T64	T13|T51|T58|T95	l	scored	align-conflict	conflict:a
+f152r_L04	18	T64	T13|T51|T58|T95	l	scored	alignment-doubtful	conflict:a
 f152r_L04	19	T19	T19|T52|T55	o	scored		agrees
 f152r_L04	20	T60	T60|T76	n	scored		agrees
 f152r_L04	21	T55	T19|T52|T55	o	scored		agrees
