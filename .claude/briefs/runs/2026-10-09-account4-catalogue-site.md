@@ -40,3 +40,11 @@ Build, in order:
    the follow-up row the orchestrator queues (CATALOGUE-CHECK: a separate session reads every item page against its AUDIT.md and
    falsifies each factual sentence before the owner enables Pages). Stage by path; never force-push; never AskUserQuestion; never print
    credentials; no ciphers/ file edited.
+
+## Amendment 1 (orchestrator, 22:2x UTC 9 Oct by date -u; the owner at 22:1x UTC: "don't post anything publicly like that; if you do mock-ups I can look it over")
+Nothing public. (1) Write nothing under docs/ (the GitHub Pages folder): no docs/catalogue.html, no docs/items/. (2) tools/build_catalogue.py
+takes an output directory (default research/mockups/catalogue/) and that is what is committed: the generated index and per-item pages,
+self-contained HTML, no external scripts. (3) One single-file mock-up research/mockups/catalogue-2026-10-09.html shows the index and three
+complete item pages inline (Gramont 1530 to Montmorency, Manteuffel 1712 f.410, Lodewijk 5797) for the owner to judge look and wording.
+(4) Every content rule above stands. (5) Step 5's "the owner enables Pages" is withdrawn: the owner decides after the mock-up; the
+CATALOGUE-CHECK fact-check row is queued only if he says go.
