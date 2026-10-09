@@ -74,3 +74,9 @@ cross 80% of its cap or box.
 Adopted into round 3 only an instrument whose eval_heldout paired count is fixed > broken, p < 0.05. An instrument whose
 dev gate fails is reported as a FAIL with both numbers and is not run on eval. Readers never see truth; the worker scores
 only after the split's reads are committed; no `*.truth.tsv` is edited.
+
+## Amendment (lane, 9 Oct 2026 07:1x UTC by date -u; before any round-2 read landed -- the three workers were spawned 07:11 and had read nothing)
+Per the lane brief's Amendment 2 (orchestrator, 07:0x UTC): the single-instrument gate is **p < 0.01** on the paired sign test
+(dev gate and eval alike), not 0.05; the combined pipeline (round 3) is p < 0.05. One eval look per instrument, counted in
+research/TX-IDEAS-2026-10-09.md beside each eval p-value. Everything else above stands. The three workers were told by message
+and their briefs point here.
