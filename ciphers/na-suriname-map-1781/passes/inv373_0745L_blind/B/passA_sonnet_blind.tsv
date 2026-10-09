@@ -1,0 +1,46 @@
+# SUR-0745 pass B: one blind Sonnet call on crops p0745L_L01-L22 (crop paths only, reader-code vocabulary, [ij]=dotted, y=undotted; no values, no key), 9 Oct 2026 02:2x UTC, after PREREG 6cb5b6299. Verbatim as returned (notation per mk.py).
+crop	kind	text	conf	remarks
+L01	gloss	't is hier toedat ligte hautre hoepels en Touwerk	0.5	gloss approximate
+L01	cipher	[lambda] & [psi] | S & 3 0 [lambda] [hash] 3 w . r c & 9 | [lambda] 7 t n 3 0 7 s [hash] 3 s 7 c [psi] 3 y [lambda] [hash]	0.3	approximate
+L02	gloss	gerequireert word; beide de quantiteiten Vaam	0.5	approx
+L02	cipher	5 4 3 0 b 9 3 0 7 x 5 & 0 3 7 0 r 4 k o r . - d 3 8 r 7 r 7 x 5 [delta] y [lambda] & [lambda] t r 3 y	0.3	approximate
+L03	gloss	moeyelijk juist te bepalen. wij oordeelen	0.6	approx
+L03	cipher	5 % . c [lambda] [ij] [hash] 3 8 7 c t b & 5 8 [psi] [lambda] | [lambda] 7 d 3 s [delta] . c 3 4 , 4 t k [hash] 0 r 3 7 c d l	0.3	approximate
+L04	gloss	dat ieder Vaam zwaar touw tien Vaam tot	0.6	approx
+L04	cipher	r % [lambda] & 3 . w 3 0 | 5 % . p y [psi] 4 . p o [lambda] [hash] 5 4 , [lambda] & 3 y 5 % . p y [lambda] [hash] r [hash] y 4 & y	0.3	approximate
+L05	gloss	omwinding nodig heeft, en overzulks kome	0.6	approx
+L05	cipher	r 8 4 9 . h k [hash] r & 9 s 3 7 & [lambda] 3 l [hash] 5 3 0 n 5 c b [psi] b [hash] y [lambda] 5 k [hash] 0 [lambda] 4 7 . p c	0.3	approximate
+L06	gloss	voor 12 touwen ieder a 140 Vaam 168 Stuks op-	0.7	approx
+L06	cipher	& | [lambda] [hash] 5 4 3 l & 3 r 7 0 4 , 140 , 5 4 . y , 168 [psi] [lambda] 5 b [psi] [hash] s 9 3 [psi] c [delta] % .	0.3	approximate
+L07	gloss	geslagen trossen van 100 vaam, dog is het nodig	0.6	approx
+L07	cipher	" 9 7 [ij] [lambda] 0 [hash] [psi] 6 3 [ij] 5 [delta] y , 100 , c [delta] . [ij] , r [hash] 9 8 4 [psi] [lambda] y k [hash] r & 9 10 [delta] 12	0.3	approximate
+L08	gloss	10 a 12 meer te zenden omdat te kort koming voor	0.6	approx
+L08	cipher	y 3 7 0 [lambda] d a d y r 7 l , [hash] y r 7 [lambda] 7 b k o [lambda] b k [hash] y d [ij] 9 5 k [hash] 0 [lambda] 7 b k	0.3	approximate
+L09	gloss	te komen, tot de legging van de boom diende ten	0.6	approx
+L09	cipher	[hash] y 3 l | [lambda] [hash] [lambda] r 7 c 3 9 9 & y 9 5 % . y r 7 d k [hash] y r & 3 y 7 l [lambda] 3 [ij] [ij] 8 [ij]	0.3	approximate
+L10	gloss	minsten 24 Stuks zware ankers evenredig Touw	0.5	approx
+L10	cipher	[psi] [lambda] 3 [ij] , 24 [psi] [lambda] 5 b [psi] [psi] 4 . p o 3 4 y b 3 0 [psi] 3 7 e 3 y o d a r & 9 e 7 . y	0.3	approximate
+L11	gloss	zwaarte naar de dikte van de Touwen, te weten,	0.6	approx
+L11	cipher	[psi] 4 . p o [lambda] 7 y . 7 7 w & b a 7 e d y 7 7 [lambda] [hash] 5 4 3 y , [lambda] 7 4 3 7 [lambda] d 7 ,	0.3	approximate
+L12	gloss	dat is op ieder Touw 2 ankers voor vloed, dan	0.6	approx
+L12	cipher	r d [lambda] & [psi] [hash] s 8 3 r 7 0 [lambda] [hash] 5 4 [lambda] 4 3 7 . y b 3 0 [psi] e k [hash] 0 e c [hash] 3 r ,	0.3	approximate
+L13	gloss	voor ieder ieder twee ankers een touw, welke ende	0.5	approx
+L13	cipher	r [delta] [ij] | 5 k [hash] 0 8 3 r 7 0 [lambda] 4 3 7 . y b 3 0 [psi] 7 d l [lambda] [hash] 5 4 4 3 c b 7 0 . d y r a l	0.3	approximate
+L14	gloss	inde ankers en door de bogt de Sluytboom	0.6	approx
+L14	cipher	& y r 7 . y b 3 0 [psi] , 3 y r k [hash] 0 w 3 d [hash] d [hash] 9 [lambda] r 7 [psi] c 5 t [lambda] d k ,	0.3	approximate
+L15	gloss	of gespannen Cabel door gestoken word, over	0.6	approx
+L15	cipher	[hash] y [hash] & 9 3 [psi] s [delta] y l 3 l o % . d 3 c o k [hash] 0 9 3 [psi] [lambda] k [hash] b 3 y 4 [hash] 0 r ,	0.3	approximate
+L16	gloss	zulk is zijn is tot deze ankers twaalf Touwen,	0.5	approx
+L16	cipher	[hash] 5 3 0 n 5 c b [psi] n l y ' 3 0 [lambda] k [lambda] r 3 7 n d [delta] [ij] b 3 0 [psi] [lambda] 4 % . p c & [lambda] [hash] 5 4	0.3	approximate
+L17	gloss	noodig, voorts dienen is 16 ligtere voor kabels	0.6	approx
+L17	cipher	3 y l k [hash] r 8 9 , 5 k [hash] 0 [lambda] [psi] r & 3 y 7 l , 30 , 16 , c & 9 [lambda] 3 0 7 [delta] y b 3 0 [psi]	0.3	approximate
+L18	gloss	van 10 duim te zijn, welke dienen moeten	0.6	approx
+L18	cipher	5 k [hash] 0 o % . d 3 c [psi] 5 % . [ij] , 10 d = | [lambda] 3 n t [ij] , 4 3 0 b 7 r 8 8 l 7 [ij] [ij] [hash] 3 [lambda] 7 l	0.3	approximate
+L19	gloss	onde boom voor Eboste houden, voor ieder	0.5	approx
+L19	cipher	[hash] y r 7 d k [hash] y | 5 k [hash] 0 3 d [hash] s [lambda] 3 s k 5 r 3 l , 5 k [hash] 0 & 3 r 7 0 , 5 4 y	0.3	approximate
+L20	gloss	van welke Touw dus ook 8 Kabels van 10 duim.	0.6	approx
+L20	cipher	4 3 c b 7 4 2 [lambda] [hash] 5 4 , w 5 [psi] k [hash] b [delta] 9 [lambda] p a d 3 c , [psi] 5 : 5 y [lambda] & 3 y 8 5 t y	0.3	approximate
+L21	gloss	Voor deze ankers dienen 40 lijnen tot anker kind	0.5	approx
+L21	cipher	5 k [hash] 0 r 3 7 n d , 40 , [delta] [ij] b 3 0 [psi] & 7 3 [ij] 7 l , 40 , c t y 8 l [lambda] [hash] [lambda] 4 y b 3 0	0.3	approximate
+L22	gloss	Sels en voor ieder een Boey en boeyreep na	0.6	approx
+L22	cipher	" d & y r [psi] 3 c [psi] , 3 y 5 k [hash] 0 8 3 r 7 0 | 8 7 y d [hash] 3 & , 3 y d k 3 8 0 3 7 s y 0	0.3	approximate
