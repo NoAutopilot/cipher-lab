@@ -74,7 +74,8 @@ def build():
         '# dint-f128-print kp2c: the kp2 recipe (truth_variant.keyprint_rows, variant kp2) on f.128r with the 1882 print letters as gloss; '
         'built by benchmark-tx/txeng2/kp2c/kp2c.py (PREREG-txeng2-4 C1); %d positions, %d scored; control only, not a bench item\n' % (len(kp2), sc)
         + 'line\tpos\tref_sign\ttruth\tplain\tstatus\tflag\talign_status\n' + ''.join('\t'.join(map(str, r)) + '\n' for r in kp2))
-    bench = open(os.path.join(ROOT, 'BENCHMARK-TX.tsv')).read().splitlines()
+    allb = open(os.path.join(ROOT, 'BENCHMARK-TX.tsv')).read().splitlines()
+    bench = [l for l in allb if not l.startswith('#')]
     hdr = bench[0]
     row = next(l for l in bench if l.startswith('dint-f128-print\t'))
     cols = hdr.split('\t')

@@ -1,0 +1,6 @@
+dint-f128-print-kp2c [dev] err_true 0.180 (20/111) 95% 0.120-0.262 | wrong 15 deleted 0 inserted 5 | excluded 72 | lines missing 0
+  top confusions (truth value <- read): s<-0 x4, i<-x x2, c<-0 x1, n<-0 x1, l<-+ x1, n<-4 x1, n<-# x1, n<-p x1
+split dev: err_true 0.180 (20/111) 95% 0.120-0.262
+dint-f128-print [dev] err_true 0.188 (16/85) 95% 0.119-0.284 | wrong 11 deleted 0 inserted 5 | excluded 98 | lines missing 0
+  top confusions (truth value <- read): i<-x x2, n<-0 x1, n<-4 x1, n<-# x1, n<-p x1, g<-0 x1, i<-1 x1, e<-0 x1
+split dev: err_true 0.188 (16/85) 95% 0.119-0.284

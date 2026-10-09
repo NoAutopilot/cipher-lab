@@ -1,0 +1,185 @@
+# dint-f128-print kp2c: the kp2 recipe (truth_variant.keyprint_rows, variant kp2) on f.128r with the 1882 print letters as gloss; built by benchmark-tx/txeng2/kp2c/kp2c.py (PREREG-txeng2-4 C1); 183 positions, 111 scored; control only, not a bench item
+line	pos	ref_sign	truth	plain	status	flag	align_status
+f128_L02	1	z	z	m	scored		agrees
+f128_L02	2	v	4|v	a	scored		agrees
+f128_L02	3	y			excluded:unaligned		null-or-unaligned
+f128_L02	4	a			excluded:unaligned		null-or-unaligned
+f128_L02	5	p			excluded:unaligned		null-or-unaligned
+f128_L02	6	3	#|3	d	scored		agrees
+f128_L02	7	L	1|L|p	i	scored		agrees
+f128_L02	8	zh	m|v	t	scored		agrees
+f128_L03	1	II			excluded:unaligned		null-or-unaligned
+f128_L03	2	D	4|v	a	scored		agrees
+f128_L03	3	al	a|m	u	scored		agrees
+f128_L03	4	y	y	o	scored		agrees
+f128_L03	5	p	1|L|p	i	scored		agrees
+f128_L03	6	w	c|w	r	scored		agrees
+f128_L03	7	m	a|m	u	scored		agrees
+f128_L03	8	o			excluded:unaligned		null-or-unaligned
+f128_L03	9	al		u	excluded:align-uncertain		agrees
+f128_L03	10	#	#|3	d	scored		conflict:c
+f128_L03	11	1			excluded:unaligned		null-or-unaligned
+f128_L03	12	.	.|0|1|o	e	scored		agrees
+f128_L03	13	sq		s	excluded:align-uncertain		agrees
+f128_L03	14	0	#	c	scored		conflict:e
+f128_L03	15	0		e	excluded:align-uncertain		agrees
+f128_L03	16	f	f|r	n	scored		agrees
+f128_L03	17	3	#|3	d	scored		agrees
+f128_L03	18	c	c|w	r	scored		agrees
+f128_L03	19	1			excluded:unaligned		null-or-unaligned
+f128_L03	20	.	.|0|1|o	e	scored		agrees
+f128_L03	21	D	4|v	a	scored		agrees
+f128_L03	22	9	9	g	scored		agrees
+f128_L03	23	1			excluded:unaligned		null-or-unaligned
+f128_L03	24	.	.|0|1|o	e	scored		agrees
+f128_L03	25	f			excluded:unaligned		null-or-unaligned
+f128_L03	26	r	f|r	n	scored		agrees
+f128_L03	27	0		e	excluded:align-uncertain		agrees
+f128_L03	28	#	#|3	d	scored		conflict:c
+f128_L03	29	0		e	excluded:align-uncertain		agrees
+f128_L03	30	m		u	excluded:align-uncertain		agrees
+f128_L03	31	sq		x	excluded:letter-no-keyprint-sign		conflict:s
+f128_L03	32	z		m	excluded:align-uncertain		agrees
+f128_L03	33	p	1|L|p	i	scored		agrees
+f128_L03	34	4	4	l	scored		agrees
+f128_L03	35	plus	4	l	scored		single
+f128_L03	36	L	1|L|p	i	scored		agrees
+f128_L03	37	y	y	o	scored		agrees
+f128_L03	38	f	f|r	n	scored		agrees
+f128_L03	39	sq	sq	s	scored		agrees
+f128_L03	40	3	#|3	d	scored		agrees
+f128_L03	41	y	y	o	scored		agrees
+f128_L03	42	w		r	excluded:align-uncertain		agrees
+f128_L03	43	#	#|3	d	scored		conflict:c
+f128_L03	44	0		e	excluded:align-uncertain		agrees
+f128_L03	45	sq		s	excluded:align-uncertain		agrees
+f128_L03	46	0		p	excluded:letter-no-keyprint-sign		conflict:e
+f128_L03	47	v		a	excluded:align-uncertain		agrees
+f128_L03	48	L	1|L|p	i	scored		agrees
+f128_L03	49	9	9	g	scored		agrees
+f128_L03	50	r	f|r	n	scored		agrees
+f128_L03	51	0	.|0|1|o	e	scored		agrees
+f128_L03	52	y			excluded:unaligned		null-or-unaligned
+f128_L03	53	#			excluded:unaligned		null-or-unaligned
+f128_L03	54	v	4|v	a	scored		agrees
+f128_L04	1	div		b	excluded:letter-no-keyprint-sign		single
+f128_L04	2	0		e	excluded:align-uncertain		agrees
+f128_L04	3	0	sq	s	scored		conflict:e
+f128_L04	4	D		a	excluded:align-uncertain		agrees
+f128_L04	5	f	f|r	n	scored		agrees
+f128_L04	6	#	#	c	scored		agrees
+f128_L04	7	y	y	o	scored		agrees
+f128_L04	8	r	f|r	n	scored		agrees
+f128_L04	9	a	a	q	scored		agrees
+f128_L04	10	al	a|m	u	scored		agrees
+f128_L04	11	v	4|v	a	scored		agrees
+f128_L04	12	w	c|w	r	scored		agrees
+f128_L04	13	D	4|v	a	scored		agrees
+f128_L04	14	f		n	excluded:align-uncertain		agrees
+f128_L04	15	v	m|v	t	scored		conflict:a
+f128_L04	16	0		e	excluded:align-uncertain		agrees
+f128_L04	17	#		c	excluded:align-uncertain		agrees
+f128_L04	18	1	1|L|p	i	scored		conflict:e
+f128_L04	19	f		n	excluded:align-uncertain		agrees
+f128_L04	20	a	a	q	scored		agrees
+f128_L04	21	z	z	m	scored		agrees
+f128_L04	22	m	a|m	u	scored		agrees
+f128_L04	23	4	4	l	scored		agrees
+f128_L04	24	0		e	excluded:align-uncertain		agrees
+f128_L04	25	v	m|v	t	scored		conflict:a
+f128_L04	26	sq		s	excluded:align-uncertain		agrees
+f128_L04	27	#	#	c	scored		agrees
+f128_L04	28	T	T	h	scored		agrees
+f128_L04	29	v	4|v	a	scored		agrees
+f128_L04	30	w	c|w	r	scored		agrees
+f128_L04	31	9	9	g	scored		agrees
+f128_L04	32	1			excluded:unaligned		null-or-unaligned
+f128_L04	33	.	.|0|1|o	e	scored		agrees
+f128_L04	34	sq	sq	s	scored		agrees
+f128_L04	35	a	a	q	scored		agrees
+f128_L04	36	m	a|m	u	scored		agrees
+f128_L04	37	L		i	excluded:align-uncertain		agrees
+f128_L04	38	#	#|3	d	scored		conflict:c
+f128_L04	39	y		o	excluded:align-uncertain		agrees
+f128_L04	40	p	1|L|p	i	scored		agrees
+f128_L04	41	m	a|m	u	scored		agrees
+f128_L04	42	o	.|0|1|o	e	scored		agrees
+f128_L04	43	f		n	excluded:align-uncertain		agrees
+f128_L04	44	m	m|v	t	scored		conflict:u
+f128_L04	45	h		p	excluded:letter-no-keyprint-sign		single
+f128_L04	46	v	4|v	a	scored		agrees
+f128_L04	47	c		r	excluded:align-uncertain		agrees
+f128_L04	48	v	m|v	t	scored		conflict:a
+f128_L04	49	L		i	excluded:align-uncertain		agrees
+f128_L04	50	c		r	excluded:align-uncertain		agrees
+f128_L04	51	#	#|3	d	scored		conflict:c
+f128_L04	52	B		a	excluded:align-uncertain		single
+f128_L04	53	f	f|r	n	scored		agrees
+f128_L04	54	sq		s	excluded:align-uncertain		agrees
+f128_L04	55	m	m|v	t	scored		conflict:u
+f128_L04	56	w		r	excluded:align-uncertain		agrees
+f128_L04	57	y	y	o	scored		agrees
+f128_L04	58	p	1|L|p	i	scored		agrees
+f128_L04	59	sq	sq	s	scored		agrees
+f128_L05	1	1	1|L|p	i	scored		conflict:e
+f128_L05	2	y		o	excluded:align-uncertain		agrees
+f128_L05	3	m	a|m	u	scored		agrees
+f128_L05	4	w		r	excluded:align-uncertain		agrees
+f128_L05	5	0	sq	s	scored		conflict:e
+f128_L05	6	0		e	excluded:align-uncertain		agrees
+f128_L05	7	v		t	excluded:align-uncertain		conflict:a
+f128_L05	8	0		p	excluded:letter-no-keyprint-sign		conflict:e
+f128_L05	9	w		r	excluded:align-uncertain		agrees
+f128_L05	10	1			excluded:unaligned		null-or-unaligned
+f128_L05	11	.	.|0|1|o	e	scored		agrees
+f128_L05	12	f	f|r	n	scored		agrees
+f128_L05	13	3	#|3	d	scored		agrees
+f128_L05	14	c	c|w	r	scored		agrees
+f128_L05	15	0	.|0|1|o	e	scored		agrees
+f128_L05	16	4	4	l	scored		agrees
+f128_L05	17	1	.|0|1|o	e	scored		agrees
+f128_L05	18	#	#	c	scored		agrees
+f128_L05	19	T	T	h	scored		agrees
+f128_L05	20	1	.|0|1|o	e	scored		agrees
+f128_L05	21	z	z	m	scored		agrees
+f128_L05	22	p	1|L|p	i	scored		agrees
+f128_L05	23	f		n	excluded:align-uncertain		agrees
+f128_L05	24	#	#|3	d	scored		conflict:c
+f128_L05	25	1			excluded:unaligned		null-or-unaligned
+f128_L05	26	.	.|0|1|o	e	scored		agrees
+f128_L05	27	m	a|m	u	scored		agrees
+f128_L05	28	o		e	excluded:align-uncertain		agrees
+f128_L05	29	0	sq	s	scored		conflict:e
+f128_L05	30	y		o	excluded:align-uncertain		agrees
+f128_L05	31	a		ul	excluded:multi-letter		conflict:q
+f128_L05	32	f		n	excluded:align-uncertain		agrees
+f128_L05	33	v		a	excluded:align-uncertain		agrees
+f128_L05	34	1	1|L|p	i	scored		conflict:e
+f128_L05	35	r		n	excluded:align-uncertain		agrees
+f128_L05	36	zh	m|v	t	scored		agrees
+f128_L05	37	0			excluded:unaligned		null-or-unaligned
+f128_L05	38	a	a	q	scored		agrees
+f128_L05	39	al	a|m	u	scored		agrees
+f128_L05	40	1			excluded:unaligned		null-or-unaligned
+f128_L05	41	.	.|0|1|o	e	scored		agrees
+f128_L05	42	#	#	c	scored		agrees
+f128_L05	43	0	.|0|1|o	e	scored		agrees
+f128_L05	44	f		n	excluded:align-uncertain		agrees
+f128_L05	45	v	m|v	t	scored		conflict:a
+f128_L05	46	#		c	excluded:align-uncertain		agrees
+f128_L05	47	T	T	h	scored		agrees
+f128_L05	48	1	.|0|1|o	e	scored		agrees
+f128_L05	49	m	a|m	u	scored		agrees
+f128_L05	50	v	4|v	a	scored		agrees
+f128_L05	51	al		u	excluded:align-uncertain		agrees
+f128_L05	52	sq		x	excluded:letter-no-keyprint-sign		conflict:s
+f128_L05	53	3		d	excluded:align-uncertain		agrees
+f128_L05	54	1			excluded:unaligned		null-or-unaligned
+f128_L05	55	.		e	excluded:align-uncertain		agrees
+f128_L05	56	0	sq	s	scored		conflict:e
+f128_L05	57	#		c	excluded:align-uncertain		agrees
+f128_L05	58	y	y	o	scored		agrees
+f128_L05	59	c			excluded:unaligned		null-or-unaligned
+f128_L05	60	n		r	excluded:align-uncertain		single
+f128_L05	61	1	m|v	t	scored		conflict:e
+f128_L05	62	.		e	excluded:align-uncertain		agrees

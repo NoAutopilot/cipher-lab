@@ -1,0 +1,184 @@
+line	pos	ref_sign	print_chunk	align_status	kp2_status	kp2_set	print_status	print_set_mapped	class
+f128_L02	1	z	m	agrees	scored	z	scored	z	equal
+f128_L02	2	v	a	agrees	scored	4|v	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L02	3	y		null-or-unaligned	excluded:unaligned		excluded:null-or-unaligned		neither
+f128_L02	4	a		null-or-unaligned	excluded:unaligned		excluded:null-or-unaligned		neither
+f128_L02	5	p		null-or-unaligned	excluded:unaligned		excluded:null-or-unaligned		neither
+f128_L02	6	3	d	agrees	scored	#|3	scored	3	contains
+f128_L02	7	L	i	agrees	scored	1|L|p	scored	L|p	contains
+f128_L02	8	zh	t	agrees	scored	m|v	scored	m	contains
+f128_L03	1	II		null-or-unaligned	excluded:unaligned		excluded:null-or-unaligned		neither
+f128_L03	2	D	a	agrees	scored	4|v	scored	4	contains
+f128_L03	3	al	u	agrees	scored	a|m	scored	a	contains
+f128_L03	4	y	o	agrees	scored	y	scored	y	equal
+f128_L03	5	p	i	agrees	scored	1|L|p	scored	L|p	contains
+f128_L03	6	w	r	agrees	scored	c|w	scored	c|w	equal
+f128_L03	7	m	u	agrees	scored	a|m	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L03	8	o		null-or-unaligned	excluded:unaligned		excluded:null-or-unaligned		neither
+f128_L03	9	al	u	agrees	excluded:align-uncertain		scored	a	print-only
+f128_L03	10	#	d	conflict:c	scored	#|3	excluded:conflict:c		kp2-only
+f128_L03	11	1		null-or-unaligned	excluded:unaligned		excluded:null-or-unaligned		neither
+f128_L03	12	.	e	agrees	scored	.|0|1|o	scored	.|o	contains
+f128_L03	13	sq	s	agrees	excluded:align-uncertain		excluded:key-row-n<2-or-conflicted		neither
+f128_L03	14	0	c	conflict:e	scored	#	excluded:conflict:e		kp2-only
+f128_L03	15	0	e	agrees	excluded:align-uncertain		excluded:key-row-n<2-or-conflicted		neither
+f128_L03	16	f	n	agrees	scored	f|r	scored	f|r	equal
+f128_L03	17	3	d	agrees	scored	#|3	scored	3	contains
+f128_L03	18	c	r	agrees	scored	c|w	scored	c|w	equal
+f128_L03	19	1		null-or-unaligned	excluded:unaligned		excluded:null-or-unaligned		neither
+f128_L03	20	.	e	agrees	scored	.|0|1|o	scored	.|o	contains
+f128_L03	21	D	a	agrees	scored	4|v	scored	4	contains
+f128_L03	22	9	g	agrees	scored	9	scored	9	equal
+f128_L03	23	1		null-or-unaligned	excluded:unaligned		excluded:null-or-unaligned		neither
+f128_L03	24	.	e	agrees	scored	.|0|1|o	scored	.|o	contains
+f128_L03	25	f		null-or-unaligned	excluded:unaligned		excluded:null-or-unaligned		neither
+f128_L03	26	r	n	agrees	scored	f|r	scored	f|r	equal
+f128_L03	27	0	e	agrees	excluded:align-uncertain		excluded:key-row-n<2-or-conflicted		neither
+f128_L03	28	#	d	conflict:c	scored	#|3	excluded:conflict:c		kp2-only
+f128_L03	29	0	e	agrees	excluded:align-uncertain		excluded:key-row-n<2-or-conflicted		neither
+f128_L03	30	m	u	agrees	excluded:align-uncertain		excluded:key-row-n<2-or-conflicted		neither
+f128_L03	31	sq	x	conflict:s	excluded:letter-no-keyprint-sign		excluded:conflict:s		neither
+f128_L03	32	z	m	agrees	excluded:align-uncertain		scored	z	print-only
+f128_L03	33	p	i	agrees	scored	1|L|p	scored	L|p	contains
+f128_L03	34	4	l	agrees	scored	4	scored	4	equal
+f128_L03	35	plus	l	single	scored	4	excluded:single		kp2-only
+f128_L03	36	L	i	agrees	scored	1|L|p	scored	L|p	contains
+f128_L03	37	y	o	agrees	scored	y	scored	y	equal
+f128_L03	38	f	n	agrees	scored	f|r	scored	f|r	equal
+f128_L03	39	sq	s	agrees	scored	sq	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L03	40	3	d	agrees	scored	#|3	scored	3	contains
+f128_L03	41	y	o	agrees	scored	y	scored	y	equal
+f128_L03	42	w	r	agrees	excluded:align-uncertain		scored	c|w	print-only
+f128_L03	43	#	d	conflict:c	scored	#|3	excluded:conflict:c		kp2-only
+f128_L03	44	0	e	agrees	excluded:align-uncertain		excluded:key-row-n<2-or-conflicted		neither
+f128_L03	45	sq	s	agrees	excluded:align-uncertain		excluded:key-row-n<2-or-conflicted		neither
+f128_L03	46	0	p	conflict:e	excluded:letter-no-keyprint-sign		excluded:conflict:e		neither
+f128_L03	47	v	a	agrees	excluded:align-uncertain		excluded:key-row-n<2-or-conflicted		neither
+f128_L03	48	L	i	agrees	scored	1|L|p	scored	L|p	contains
+f128_L03	49	9	g	agrees	scored	9	scored	9	equal
+f128_L03	50	r	n	agrees	scored	f|r	scored	f|r	equal
+f128_L03	51	0	e	agrees	scored	.|0|1|o	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L03	52	y		null-or-unaligned	excluded:unaligned		excluded:null-or-unaligned		neither
+f128_L03	53	#		null-or-unaligned	excluded:unaligned		excluded:null-or-unaligned		neither
+f128_L03	54	v	a	agrees	scored	4|v	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L04	1	div	b	single	excluded:letter-no-keyprint-sign		excluded:single		neither
+f128_L04	2	0	e	agrees	excluded:align-uncertain		excluded:key-row-n<2-or-conflicted		neither
+f128_L04	3	0	s	conflict:e	scored	sq	excluded:conflict:e		kp2-only
+f128_L04	4	D	a	agrees	excluded:align-uncertain		scored	4	print-only
+f128_L04	5	f	n	agrees	scored	f|r	scored	f|r	equal
+f128_L04	6	#	c	agrees	scored	#	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L04	7	y	o	agrees	scored	y	scored	y	equal
+f128_L04	8	r	n	agrees	scored	f|r	scored	f|r	equal
+f128_L04	9	a	q	agrees	scored	a	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L04	10	al	u	agrees	scored	a|m	scored	a	contains
+f128_L04	11	v	a	agrees	scored	4|v	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L04	12	w	r	agrees	scored	c|w	scored	c|w	equal
+f128_L04	13	D	a	agrees	scored	4|v	scored	4	contains
+f128_L04	14	f	n	agrees	excluded:align-uncertain		scored	f|r	print-only
+f128_L04	15	v	t	conflict:a	scored	m|v	excluded:conflict:a		kp2-only
+f128_L04	16	0	e	agrees	excluded:align-uncertain		excluded:key-row-n<2-or-conflicted		neither
+f128_L04	17	#	c	agrees	excluded:align-uncertain		excluded:key-row-n<2-or-conflicted		neither
+f128_L04	18	1	i	conflict:e	scored	1|L|p	excluded:conflict:e		kp2-only
+f128_L04	19	f	n	agrees	excluded:align-uncertain		scored	f|r	print-only
+f128_L04	20	a	q	agrees	scored	a	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L04	21	z	m	agrees	scored	z	scored	z	equal
+f128_L04	22	m	u	agrees	scored	a|m	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L04	23	4	l	agrees	scored	4	scored	4	equal
+f128_L04	24	0	e	agrees	excluded:align-uncertain		excluded:key-row-n<2-or-conflicted		neither
+f128_L04	25	v	t	conflict:a	scored	m|v	excluded:conflict:a		kp2-only
+f128_L04	26	sq	s	agrees	excluded:align-uncertain		excluded:key-row-n<2-or-conflicted		neither
+f128_L04	27	#	c	agrees	scored	#	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L04	28	T	h	agrees	scored	T	scored	T	equal
+f128_L04	29	v	a	agrees	scored	4|v	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L04	30	w	r	agrees	scored	c|w	scored	c|w	equal
+f128_L04	31	9	g	agrees	scored	9	scored	9	equal
+f128_L04	32	1		null-or-unaligned	excluded:unaligned		excluded:null-or-unaligned		neither
+f128_L04	33	.	e	agrees	scored	.|0|1|o	scored	.|o	contains
+f128_L04	34	sq	s	agrees	scored	sq	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L04	35	a	q	agrees	scored	a	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L04	36	m	u	agrees	scored	a|m	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L04	37	L	i	agrees	excluded:align-uncertain		scored	L|p	print-only
+f128_L04	38	#	d	conflict:c	scored	#|3	excluded:conflict:c		kp2-only
+f128_L04	39	y	o	agrees	excluded:align-uncertain		scored	y	print-only
+f128_L04	40	p	i	agrees	scored	1|L|p	scored	L|p	contains
+f128_L04	41	m	u	agrees	scored	a|m	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L04	42	o	e	agrees	scored	.|0|1|o	scored	.|o	contains
+f128_L04	43	f	n	agrees	excluded:align-uncertain		scored	f|r	print-only
+f128_L04	44	m	t	conflict:u	scored	m|v	excluded:conflict:u		kp2-only
+f128_L04	45	h	p	single	excluded:letter-no-keyprint-sign		excluded:single		neither
+f128_L04	46	v	a	agrees	scored	4|v	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L04	47	c	r	agrees	excluded:align-uncertain		scored	c|w	print-only
+f128_L04	48	v	t	conflict:a	scored	m|v	excluded:conflict:a		kp2-only
+f128_L04	49	L	i	agrees	excluded:align-uncertain		scored	L|p	print-only
+f128_L04	50	c	r	agrees	excluded:align-uncertain		scored	c|w	print-only
+f128_L04	51	#	d	conflict:c	scored	#|3	excluded:conflict:c		kp2-only
+f128_L04	52	B	a	single	excluded:align-uncertain		excluded:single		neither
+f128_L04	53	f	n	agrees	scored	f|r	scored	f|r	equal
+f128_L04	54	sq	s	agrees	excluded:align-uncertain		excluded:key-row-n<2-or-conflicted		neither
+f128_L04	55	m	t	conflict:u	scored	m|v	excluded:conflict:u		kp2-only
+f128_L04	56	w	r	agrees	excluded:align-uncertain		scored	c|w	print-only
+f128_L04	57	y	o	agrees	scored	y	scored	y	equal
+f128_L04	58	p	i	agrees	scored	1|L|p	scored	L|p	contains
+f128_L04	59	sq	s	agrees	scored	sq	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L05	1	1	i	conflict:e	scored	1|L|p	excluded:conflict:e		kp2-only
+f128_L05	2	y	o	agrees	excluded:align-uncertain		scored	y	print-only
+f128_L05	3	m	u	agrees	scored	a|m	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L05	4	w	r	agrees	excluded:align-uncertain		scored	c|w	print-only
+f128_L05	5	0	s	conflict:e	scored	sq	excluded:conflict:e		kp2-only
+f128_L05	6	0	e	agrees	excluded:align-uncertain		excluded:key-row-n<2-or-conflicted		neither
+f128_L05	7	v	t	conflict:a	excluded:align-uncertain		excluded:conflict:a		neither
+f128_L05	8	0	p	conflict:e	excluded:letter-no-keyprint-sign		excluded:conflict:e		neither
+f128_L05	9	w	r	agrees	excluded:align-uncertain		scored	c|w	print-only
+f128_L05	10	1		null-or-unaligned	excluded:unaligned		excluded:null-or-unaligned		neither
+f128_L05	11	.	e	agrees	scored	.|0|1|o	scored	.|o	contains
+f128_L05	12	f	n	agrees	scored	f|r	scored	f|r	equal
+f128_L05	13	3	d	agrees	scored	#|3	scored	3	contains
+f128_L05	14	c	r	agrees	scored	c|w	scored	c|w	equal
+f128_L05	15	0	e	agrees	scored	.|0|1|o	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L05	16	4	l	agrees	scored	4	scored	4	equal
+f128_L05	17	1	e	agrees	scored	.|0|1|o	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L05	18	#	c	agrees	scored	#	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L05	19	T	h	agrees	scored	T	scored	T	equal
+f128_L05	20	1	e	agrees	scored	.|0|1|o	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L05	21	z	m	agrees	scored	z	scored	z	equal
+f128_L05	22	p	i	agrees	scored	1|L|p	scored	L|p	contains
+f128_L05	23	f	n	agrees	excluded:align-uncertain		scored	f|r	print-only
+f128_L05	24	#	d	conflict:c	scored	#|3	excluded:conflict:c		kp2-only
+f128_L05	25	1		null-or-unaligned	excluded:unaligned		excluded:null-or-unaligned		neither
+f128_L05	26	.	e	agrees	scored	.|0|1|o	scored	.|o	contains
+f128_L05	27	m	u	agrees	scored	a|m	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L05	28	o	e	agrees	excluded:align-uncertain		scored	.|o	print-only
+f128_L05	29	0	s	conflict:e	scored	sq	excluded:conflict:e		kp2-only
+f128_L05	30	y	o	agrees	excluded:align-uncertain		scored	y	print-only
+f128_L05	31	a	ul	conflict:q	excluded:multi-letter		excluded:conflict:q		neither
+f128_L05	32	f	n	agrees	excluded:align-uncertain		scored	f|r	print-only
+f128_L05	33	v	a	agrees	excluded:align-uncertain		excluded:key-row-n<2-or-conflicted		neither
+f128_L05	34	1	i	conflict:e	scored	1|L|p	excluded:conflict:e		kp2-only
+f128_L05	35	r	n	agrees	excluded:align-uncertain		scored	f|r	print-only
+f128_L05	36	zh	t	agrees	scored	m|v	scored	m	contains
+f128_L05	37	0		null-or-unaligned	excluded:unaligned		excluded:null-or-unaligned		neither
+f128_L05	38	a	q	agrees	scored	a	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L05	39	al	u	agrees	scored	a|m	scored	a	contains
+f128_L05	40	1		null-or-unaligned	excluded:unaligned		excluded:null-or-unaligned		neither
+f128_L05	41	.	e	agrees	scored	.|0|1|o	scored	.|o	contains
+f128_L05	42	#	c	agrees	scored	#	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L05	43	0	e	agrees	scored	.|0|1|o	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L05	44	f	n	agrees	excluded:align-uncertain		scored	f|r	print-only
+f128_L05	45	v	t	conflict:a	scored	m|v	excluded:conflict:a		kp2-only
+f128_L05	46	#	c	agrees	excluded:align-uncertain		excluded:key-row-n<2-or-conflicted		neither
+f128_L05	47	T	h	agrees	scored	T	scored	T	equal
+f128_L05	48	1	e	agrees	scored	.|0|1|o	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L05	49	m	u	agrees	scored	a|m	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L05	50	v	a	agrees	scored	4|v	excluded:key-row-n<2-or-conflicted		kp2-only
+f128_L05	51	al	u	agrees	excluded:align-uncertain		scored	a	print-only
+f128_L05	52	sq	x	conflict:s	excluded:letter-no-keyprint-sign		excluded:conflict:s		neither
+f128_L05	53	3	d	agrees	excluded:align-uncertain		scored	3	print-only
+f128_L05	54	1		null-or-unaligned	excluded:unaligned		excluded:null-or-unaligned		neither
+f128_L05	55	.	e	agrees	excluded:align-uncertain		scored	.|o	print-only
+f128_L05	56	0	s	conflict:e	scored	sq	excluded:conflict:e		kp2-only
+f128_L05	57	#	c	agrees	excluded:align-uncertain		excluded:key-row-n<2-or-conflicted		neither
+f128_L05	58	y	o	agrees	scored	y	scored	y	equal
+f128_L05	59	c		null-or-unaligned	excluded:unaligned		excluded:null-or-unaligned		neither
+f128_L05	60	n	r	single	excluded:align-uncertain		excluded:single		neither
+f128_L05	61	1	t	conflict:e	scored	m|v	excluded:conflict:e		kp2-only
+f128_L05	62	.	e	agrees	excluded:align-uncertain		scored	.|o	print-only
