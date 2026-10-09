@@ -1,0 +1,19 @@
+passage	pos	sign_id	conf	note
+L03	15	0	M	full round; rejected o
+L03	16	0'	L	round with tick above; rejected plain o
+L03	39	y	M	psi shape; rejected 9
+L03	52	NEW:r-shape	L	hooked r form; rejected 4 prime
+L03	53	4	L	triangle-flag follows r-shape; candA none rejected
+L03	56	#	L	hash-like; rejected t
+L03	57	v	M	plain v; rejected v prime
+L03	58	.	M	baseline dot at line end
+L04	8	NEW:r-shape	M	hooked r form between y signs; rejected 4 prime
+L04	10	a	M	two a signs in a row; candA none rejected
+L04	32	o	M	small round after w; rejected 0
+L04	53	z	L	z-like; rejected 9
+L04	55	NEW:r-shape	L	hooked form; rejected t
+L04	56	NONE	L	no separate sign; rejected T
+L05	2	y	M	psi shape; rejected 9
+L05	5	o	M	small round; rejected 0
+L05	28	o	M	small round; rejected 0
+L05	36	NONE	L	no clear sign; rejected y

@@ -21,8 +21,8 @@ L03	11	#	H	11	#	H	agree	#	H
 L03	12	1	H	12	1	H	agree	1	H
 L03	13	.	H	13	.	H	agree	.	H
 L03	14	sq	H	14	sq	H	agree	sq	H
-L03	15	0	H	15	o	H	split	?	L
-L03	16	0	H	16	0'	H	split	?	L
+L03	15	0	H	15	o	H	split+adj	0	M
+L03	16	0	H	16	0'	H	split+adj	0'	L
 L03	17	f	H	17	f	H	agree	f	H
 L03	18	3	H	18	3	H	agree	3	H
 L03	19	c	H	19	c	H	agree	c	H
@@ -45,7 +45,7 @@ L03	35	p	H	35	p	H	agree	p	H
 L03	36	4	H	36	4	H	agree	4	H
 L03	37	+	H	37	+	H	agree	+	H
 L03	38	L	H	38	L	H	agree	L	H
-L03	39	y	H	39	9	H	split	?	L
+L03	39	y	H	39	9	H	split+adj	y	M
 L03	40	f	H	40	f	H	agree	f	H
 L03	41	sq	H	41	sq	H	agree	sq	H
 L03	42	3	H	42	3	H	agree	3	H
@@ -58,13 +58,13 @@ L03	48	0	H	48	0	H	agree	0	H
 L03	49	v	H	49	v	H	agree	v	H
 L03	50	L	H	50	L	H	agree	L	H
 L03	51	9	H	51	9	H	agree	9	H
-L03	52	4'	H	52	NEW:r-shape	H	split	?	L
-L03				53	4	H	gapA	?	L
+L03	52	4'	H	52	NEW:r-shape	H	split+adj	NEW:r-shape	L
+L03				53	4	H	gapA+adj	4	L
 L03	53	0	H	54	0	H	agree	0	H
 L03	54	y	H	55	y	H	agree	y	H
-L03	55	t	H	56	#	H	split	?	L
-L03	56	v'	H	57	v	H	split	?	L
-L03				58	.	H	gapA	?	L
+L03	55	t	H	56	#	H	split+adj	#	L
+L03	56	v'	H	57	v	H	split+adj	v	M
+L03				58	.	H	gapA+adj	.	M
 L04	1	-:-	H	1	-:-	H	agree	-:-	H
 L04	2	0	H	2	0	H	agree	0	H
 L04	3	0	H	3	0	H	agree	0	H
@@ -72,9 +72,9 @@ L04	4	4	H	4	4	H	agree	4	H
 L04	5	f	H	5	f	H	agree	f	H
 L04	6	#	H	6	#	H	agree	#	H
 L04	7	y	H	7	y	H	agree	y	H
-L04	8	4'	H	8	NEW:r-shape	H	split	?	L
+L04	8	4'	H	8	NEW:r-shape	H	split+adj	NEW:r-shape	M
 L04	9	a	H	9	a	H	agree	a	H
-L04				10	a	H	gapA	?	L
+L04				10	a	H	gapA+adj	a	M
 L04	10	c	H	11	c	H	agree	c	H
 L04	11	v	H	12	v	H	agree	v	H
 L04	12	w	H	13	w	H	agree	w	H
@@ -96,7 +96,7 @@ L04	27	#	H	28	#	H	agree	#	H
 L04	28	T	H	29	T	H	agree	T	H
 L04	29	v	H	30	v	H	agree	v	H
 L04	30	w	H	31	w	H	agree	w	H
-L04	31	0	H	32	o	H	split	?	L
+L04	31	0	H	32	o	H	split+adj	o	M
 L04	32	1	H	33	1	H	agree	1	H
 L04	33	.	H	34	.	H	agree	.	H
 L04	34	sq	H	35	sq	H	agree	sq	H
@@ -117,20 +117,20 @@ L04	48	v	H	49	v	H	agree	v	H
 L04	49	L	H	50	L	H	agree	L	H
 L04	50	c	H	51	c	H	agree	c	H
 L04	51	#	H	52	#	H	agree	#	H
-L04	52	z	H	53	9	H	split	?	L
+L04	52	z	H	53	9	H	split+adj	z	L
 L04	53	f	H	54	f	H	agree	f	H
-L04	54	t	H	55	NEW:r-shape	H	split	?	L
-L04	55	T	H				gapB	?	L
+L04	54	t	H	55	NEW:r-shape	H	split+adj	NEW:r-shape	L
+L04	55	T	H				gapB+adj	NONE	L
 L04	56	z	H	56	z	H	agree	z	H
 L04	57	w	H	57	w	H	agree	w	H
 L04	58	y	H	58	y	H	agree	y	H
 L04	59	p	H	59	p	H	agree	p	H
 L04	60	sq	H	60	sq	H	agree	sq	H
 L05	1	1	H	1	1	H	agree	1	H
-L05	2	y	H	2	9	H	split	?	L
+L05	2	y	H	2	9	H	split+adj	y	M
 L05	3	m	H	3	m	H	agree	m	H
 L05	4	w	H	4	w	H	agree	w	H
-L05	5	0	H	5	o	H	split	?	L
+L05	5	0	H	5	o	H	split+adj	o	M
 L05	6	0'	H	6	0'	H	agree	0'	H
 L05	7	v	H	7	v	H	agree	v	H
 L05	8	0'	H	8	0'	H	agree	0'	H
@@ -153,7 +153,7 @@ L05	24	#	H	24	#	H	agree	#	H
 L05	25	1	H	25	1	H	agree	1	H
 L05	26	.	H	26	.	H	agree	.	H
 L05	27	m	H	27	m	H	agree	m	H
-L05	28	0	H	28	o	H	split	?	L
+L05	28	0	H	28	o	H	split+adj	o	M
 L05	29	0'	H	29	0'	H	agree	0'	H
 L05	30	y	H	30	y	H	agree	y	H
 L05	31	a	H	31	a	H	agree	a	H
@@ -161,7 +161,7 @@ L05	32	f	H	32	f	H	agree	f	H
 L05	33	v	H	33	v	H	agree	v	H
 L05	34	1	H	34	1	H	agree	1	H
 L05	35	t	H	35	t	H	agree	t	H
-L05				36	y	H	gapA	?	L
+L05				36	y	H	gapA+adj	NONE	L
 L05	36	0'	H	37	0'	H	agree	0'	H
 L05	37	a	H	38	a	H	agree	a	H
 L05	38	a	H	39	a	H	agree	a	H
