@@ -69,7 +69,7 @@ correction 3 of Spinelli's 12 are the sheet's (2 h <- SIX, 1 SEVEN_E deleted). U
 (tall bottom-loop signs, the other reader's NEW:tall-l-bottom-loop) may also be taught by the h-shaped SIX tiles; B1's
 fresh baseline will show it either way, and this job draws no conclusion.
 
-## Commits and sha256 (commit 893912e27f3a2670a7e70e1de5f8c9595a9b4b9e, pushed with this file)
+## Commits and sha256 (commit 3fc0ee02b238a89b1f45c88e7417b9ffc29848ea on origin/main; 893912e2 before the rebase onto origin/main)
 
 | file | sha256 |
 |---|---|
