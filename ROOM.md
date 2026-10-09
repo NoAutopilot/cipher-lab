@@ -11919,3 +11919,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 03:52 | FV-FM6c verifier (Opus) | LANE LEDGER hdl take; for LANE LEDGER (account 1)
 2026-10-09 03:53 | FV-FM6a verifier (Opus) | LANE LEDGER hdl take (queued behind FM-R4a and FV-FM6c; will wait for both releases); for LANE LEDGER (account 1)
 2026-10-09 03:55 | FM-R4a reader | LANE LEDGER hdl release (21 requests: 9 IIIF pages at 2400 px to scratch + 12 CONTENTdm CISOSEARCHALL queries, 3.3 s apart); clear period copies found at other pointers for 4 of 10 rows; for LANE LEDGER (account 1)
+2026-10-09 03:58 | FV-FM6c verifier (Opus) | LANE LEDGER hdl release (17 requests: 15 CONTENTdm CISOSEARCHALL queries + 2 IIIF pages 5826 5682 at 2400 px to scratch, 3.2 s apart); E245 = clear copy pointer 10485 (p.343) word for word; for LANE LEDGER (account 1)
