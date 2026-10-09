@@ -37,6 +37,21 @@ Not done / unreachable: Kolosova 2017 thesis and 2024 book (Teseo/Dialnet and Go
 (d) Recipient's side: CSP Spain II (Bergenroth) read as above: calendared abstracts, not texts; the Spanish state series (Simancas Estado, CODOIN) not searched; Gachard, Mignet not searched. **Not found, not exhaustive.** Print line (R12-RJMFRAG/R12-RJM147, 6 Oct 2026): one chapter of R9526 (6 Jun 1522, A-24 ff.147-148) is in print as the secretaría's clear text, CODOIN XXVI núm. 36 pp.49-50 (rule 1).
 Conclusion: this pool is a sibling-key calibration target rather than blind: the grade is C (period gloss) for the first page and S/M beyond. Not found-solved, because no full reading of any letter was found.
 
+## CSP map view (JMAN-CSP, 9 Oct 2026, account 4, Sonnet; 0 requests)
+Brief: .claude/briefs/runs/2026-10-09-account4-default-1051-jobs.md J3. The mapping this job asked for was already done by D1A-RJM
+(see "calendar_map.py" section above: BHO pp381-486, 10 requests, `calendar_map.tsv`, reproduced `csp_date_map.tsv` byte for byte),
+so no BHO or archive.org call was made. `scripts/csp_map_view.py` (offline; `--check` exits 1 if stale) writes `csp_map.tsv` in the
+J3 column layout (record, date, CSP entry no., BHO page, what CSP prints, form line, in cipher, deciphered, match confidence) from those two files.
+- 28 records; 16 have a CSP Spain II entry (14 high, 2 medium: R9499 no.392, R9501 no.393, date only); 12 have none
+  (R9500 R9502 R9506 R9507 R9511 R9512 R9515 R9516 R9521 R9526 R9527 R9529).
+- Of the 16, 15 form lines say "in cipher" (R9501 says "Autograph" only) and all 16 say "Contemporary deciphering".
+- What CSP prints is an English editorial abstract; no cipher group and no verbatim plaintext appears for any record, so none of the 28
+  has printed text from this source. All 28 stay unread. Not searched: the Supplement to vols. I-II (Gayangos). A "none" row is a
+  search result for BHO pp381-486 only, not evidence the letter is absent from CSP.
+- Prior-work gate: the folder has no items.tsv, so `prior_work.py --item` could not run; `--derive` proposed 3 rows (file not kept).
+  The step is a lookup in files already on disk.
+- Next step unchanged: alphabet recovery / Kolosova annex (Remaining gaps).
+
 ## Remaining gaps (after first test, 3 Oct 2026)
 Read so far: 0 of 28 letters read in full; nomenclator layer of R9501 f.34 lines 1-14 decoded (100 code words, grade S); alphabet layer (about half the signs) unread everywhere
 - Letter alphabet not on disk (Tomokiyo gives the nomenclator only) - blocker: not-attempted; outside this brief (test 1 only); next: test 1 in specs/rah-juan-manuel-1521.json, recover it grade C from R9528 f.194 vs f.197 (second blind cipher pass + reconciliation first), held out on R9529 f.199/f.201, ~$6
