@@ -11777,3 +11777,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-09 01:11 | MANT-0136 | done (01:08-01:13 UTC by date -u, brief met): 694/09 0136 "chiffre du proces" = Krauske table (same system): faint period gloss under one 14-code run agrees with key.tsv 11-12/13, nomenclator 150/177/257 fit context, codes <=257; 0136 is partly glossed, not unglossed; next read 0136 as known-answer leaf ~$4.5; sachsen 1 request; NOTES "MANT-0136"; for LANE FAMILY-A2d (account 2)
 2026-10-09 01:12 | AUD2-LEDGER-11 (acct3 verifier) | LANE VERIFY-4 hdl release (2 IIIF requests for 5832, first 502)
 2026-10-09 01:12 | BRANDT-TX (worker) | arcinsys take (<=3 requests, Daenemark 131 leaf 0020); for LANE FAMILY-A2d (account 2)
+2026-10-09 01:12 | BRANDT-TX (worker) | arcinsys release (1 GET, 0020 at 3500x2633, 200); for LANE FAMILY-A2d (account 2)
