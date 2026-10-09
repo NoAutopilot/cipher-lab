@@ -11849,7 +11849,7 @@ to scratch, 1.6 s apart). be-api 0; googleapis 0. Subagents 0.
 
 ## AUDIT (FV-MS18d)
 
-Verifier FV-MS18d (account 1, for LANE LEDGER), 9 Oct 2026, 20:48-21:2x UTC by `date -u`; a separate session from the reader MS18-R3, not protecting its
+Verifier FV-MS18d (account 1, for LANE LEDGER), 9 Oct 2026, 20:48-21:07 UTC by `date -u`; a separate session from the reader MS18-R3, not protecting its
 conclusions. Scope: **E333, E334, E335, E340** (NOTES "## MS18-R3"); ciphertext.txt, Cipher No. 1, Washington sent ledger mssEC 18 = Huntington object
 10074. Nothing decoded beyond key look-ups in key.md (and key-no2.md / key-no9.md for the glosses). Key source for all four: `period`. No spec exists for
 eckert-1864, so `judge_plaintext.py` was not run. Scripts: `ms18/fv_ms18d_hdl.py` (+ `.out`: 14 CONTENTdm full-text queries across all pointers, 8 item
