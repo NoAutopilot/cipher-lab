@@ -44,3 +44,34 @@ cyphersolver, unsolved-ciphers, holder notice; searched / UNCHECKED with the cac
 Gate for the option: K1 >= 0.90 AND N1 = 0 AND N2 <= 0.10 AND N3 = 0. Miss -> shelf `weak`, both numbers, no re-brief.
 
 ## Results (filled after scoring; nothing above is edited)
+Scored 21:4x UTC 9 Oct 2026 by date -u. `python3 tools/tests/mqs_bnf_s6_controls.py` (disk only, 0 host requests).
+
+| Control | Gate | First scoring | Final code |
+|---|---|---|---|
+| K1 GL.htm held-out items (2023 sections, not fr.3029/3092) | >= 0.90 | 47/49 = 0.959 | 47/49 = 0.959 (misses fr.3022 f.26, f.39: blocked by other pages' 'undeciphered' rows for the volume, conservative) |
+| N1 own-line-negation items | 0 | **1/4 FAIL** (fr.3040 f.16 cleared via francis.htm, the GL.htm item line found by tomo_item_lines was not under the negation guard) | 0/4 (guard extended to those lines) |
+| N2 unsolved-list items, no POSITIVE on the line | <= 0.10 | 0/8 | 0/8 (N small) |
+| N3 fr.3029 folios +37 | 0/7 | 0/7 | 0/7 |
+
+A second fix came from an existing test, not a null: test_bnf_findingaid_pile (fr.2988 open_named 2) failed when the
+section rule cleared f.4 from misplaced.htm's "f.1 ... was solved by"; a section sentence naming another folio no longer
+counts. Gate read on the first scoring: MISS (N1). Shelf grade **weak**, both numbers above; not re-briefed.
+
+K-dev (fr.3029, notice cc494882 = cc504266/cc57784f copies): --pile open_bare 6 -> 4; --check-solved: nos 34 (f.67),
+59 (f.134), 70 (f.182) found-solved; nos 49, 66, 68, 72 blocked by the tool (the notice gives no folio). By hand, from
+GL.htm's own item list (no.N matched to no.N): no.49 = ff.100,105, no.66 = f.162, no.68 = ff.172,176, no.72 = f.186, all
+in the same section; portal_status on those folios reads known. So all seven survivors sit in a cipher Tomokiyo reports
+"broken by George Lasry in 2023" and "by Norbert Biermann independently" (francis.htm; GL.htm notes of 6 Dec 2023 give
+raw decipherment excerpts of f.67 and f.186). Check-solved verdict for the S5 survivor: **found-solved** (prior
+decipherment, not ours; key: published, Lasry 2023). No target folder was opened or changed (brief: no status change);
+the orchestrator decides whether fr.3029 gets a ciphers/ folder or a CATALOG/LANDSCAPE row.
+
+Intake gate: not run on a target (no fr.3029 folder exists and none was made). The --check-solved draft block names
+DECODE, Cryptiana, both solver repositories, the notice and a folio range, and is held by intake_gate_check's holder
+path only on 'glyph set' (no sign inventory without images): test_bnf_findingaid_s6.py asserts exactly that, so an
+anonymous pile drafted from this tool stays `blocked` until a sign inventory exists. The 26 S2B image-triage notices
+have no item list: no item-level check-solved is possible from disk; they wait on S4 (Gallica).
+
+Premise check, for the record: the miss was a premise failure upstream -- S2A/S2B/S5 carried fr.3029 as an open pile for
+three sessions while Tomokiyo's GL.htm, on disk since 6 Oct, listed every item. Suggestion (not done): run
+--check-solved before any S4/S5 work on a pile survivor.

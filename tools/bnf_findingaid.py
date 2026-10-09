@@ -52,6 +52,17 @@ Scope (Usage 8a):
   does NOT mark fr.29880 f.18, fr.3040 f.19, fr.3041 f.18 against a line 'BnF fr.3040 f.18r', or read a RESTRICTED.md
            folder or debosnys-1883 (tools/tests/test_bnf_findingaid_prior.py). Not a DONE: prior_work.py check 1 stays per-slug.
            Controls (PREREG-MQS-BNF-S3.md): K1 volume recall, N1 folio shift +37, N2 volume swap; shelf grade on its row.
+  --check-solved NOTICE.html ... (MQS-BNF-S6b, 9 Oct 2026; disk only): the anonymous-pile holder checklist per bare or
+      named-unattributed item (CLAUDE.md Pipeline 2 "Anonymous piles"): DECODE listings by shelfmark, Cryptiana, both solver
+      repositories (unsolved-ciphers UNCHECKED: no cache), the holder notice; verdict found-solved / blocked / open per item and
+      a draft '## Check-solved' block (nothing written).  item_status() also reads a Tomokiyo item line as known from its
+      section (section_known: 'broken by' / 'provided solutions' in the section chain, never past an own-line negation or a
+      section sentence naming another folio) and from item lines under a 'BnF fr.N (Gallica ...)' line (tomo_item_lines).
+  catches  fr.3029 nos 34/59/70 (ff.67/134/182): listed in GL.htm's 'De la Tremoille's(?) Cipher', broken by Lasry 2023;
+           --pile had kept them open (the 'broken by' sits at section level, never on the item line).
+  does NOT clear fr.3022 f.16/f.40, es.336 f.196, fr.3040 f.16/f.68 (own-line 'undeciphered'/'remain unsolved'), fr.2988
+           f.4 against 'f.1 ... was solved by', or any folio +37 (tools/tests/test_bnf_findingaid_s6.py; controls
+           tools/tests/mqs_bnf_s6_controls.py, PREREG-MQS-BNF-S6.md; shelf weak).
   --attribute NOTICE.html ... (MQS-BNF-S5, 9 Oct 2026; disk only): catalogue-side attribution LEADS for pile items, one
       row per bare or unattributed cipher item: the nearest attributed letters before/after it in item order (sender and
       recipient keys, folio distance, agree yes/no), the names as papers to search, KEY-OFFICES.tsv rows naming them
@@ -234,22 +245,133 @@ def _pw_ctx(root):
     return _PW[root]
 
 
-def item_status(rows):
+SECTION_POS = re.compile(POSITIVE.pattern[4:] + r'|decipherment of hitherto unsolved|provided solutions', re.I)
+HEAD = re.compile(r'^\s*(#+)\s')
+ROUTE_LINE = re.compile(r'^(.*):text(\d+)$')
+
+
+def section_known(lines, i, folio=None):
+    """MQS-BNF-S6 (9 Oct 2026): is 1-based line i of a cached Tomokiyo page an item inside a section that says the
+    cipher was broken?  None when the item's own line carries a negation word (the line wins); else the first
+    evidence line found in: the nearest heading's body up to line i, each ancestor heading's text and its body up to
+    its first child heading, and the page's '#' title.  Catches GL.htm's 'f.67 no.34 Lettre en chiffre.' under 'De la
+    Tremoille's(?) Cipher' (page title 'Decipherment of Hitherto Unsolved Historical Ciphers (by George Lasry)');
+    does NOT clear 'F.40-43 ... seems to remain unsolved' (own-line negation) or an unsolved-list item whose section
+    has no broken-by wording (PREREG-MQS-BNF-S6 N1/N2), or a sibling leaf from a section sentence naming another folio
+    ('f.1 was solved by ...' does not clear f.4: test_bnf_findingaid_pile fr.2988)."""
+    if i < 1 or i > len(lines) or NEGATION.search(lines[i - 1]):
+        return None
+    level, end = 99, i - 1                       # scan upward; `end` = exclusive bound of the current body window
+    for j in range(i - 1, -1, -1):
+        m = HEAD.match(lines[j])
+        if not m:
+            continue
+        n = len(m.group(1))
+        if n >= level:
+            end = j                              # a sibling/child heading: an ancestor's body stops before it
+            continue
+        body = [lines[j]] + lines[j + 1:end]
+        for k, t in enumerate(body):
+            named = {int(x) for x in re.findall(r'(?i)\bff?\.\s?(\d+)', t)}
+            if named and (folio is None or folio not in named):
+                continue                         # a sentence about another leaf ('f.1 was solved by') is not section-level
+            if SECTION_POS.search(t):            # section wording: 'hitherto unsolved' in a solutions title is not a no
+                return 'section (text line %d) %s' % (j + 1 + k, t.strip()[:160])
+        level, end = n, j
+        if n == 1:
+            break
+    return None
+
+
+def item_status(rows, root=None, extra=None, folio=None):
     """prior_work check-3 rows -> ('known'|'open', evidence).  A KNOWN stays known unless its evidence says
-    undeciphered; a CONTEXT row whose evidence says 'broken/deciphered by' counts as known (the wording guard)."""
+    undeciphered; a CONTEXT row whose evidence says 'broken/deciphered by' counts as known (the wording guard).
+    With root (MQS-BNF-S6): an exact Tomokiyo CONTEXT row whose section says the cipher was broken counts as known
+    (section_known)."""
     for r in rows:
         ev = r.get('evidence', '')
         if r['verdict'] in ('KNOWN', 'KNOWN-PART') and not NEGATION.search(ev):
             return 'known', ev
         if r['verdict'] == 'CONTEXT' and POSITIVE.search(ev) and not NEGATION.search(ev):
             return 'known', ev
+    if root:
+        tomo = [r for r in rows if r.get('check') == '3-tomokiyo']
+        if any(NEGATION.search(r.get('evidence', '')) and not ev_flag(r.get('evidence', ''), vol_only=True)
+               for r in tomo):
+            return 'open', ''                      # an own-line 'undeciphered' anywhere wins over any section wording
+        cands = [ROUTE_LINE.match(r.get('route', '') or '') for r in tomo
+                 if r['verdict'] == 'CONTEXT' and not ev_flag(r.get('evidence', ''))]
+        extra = list(extra or [])
+        if any(NEGATION.search(tomo_lines(root, rel)[i - 1]) for rel, i in extra):
+            return 'open', ''                      # the same guard for the item lines tomo_item_lines found
+        cands = [(m.group(1), int(m.group(2))) for m in cands if m] + extra
+        for rel, i in cands:
+            sec = section_known(tomo_lines(root, rel), i, folio)
+            if sec:
+                return 'known', '%s:text%d %s' % (rel, i, sec)
     return 'open', ''
+
+
+VOL_LINE = re.compile(r'\bBnF\s+((?:fr|n\.a\.fr|es|it|lat|nouv\. acq\. fr)\.\s?\d+|(?:Dupuy|Baluze|Clair\.?|Colbert)\s?\d+)', re.I)
+ITEM_LINE = re.compile(r'^\s*ff?\.\s?\d+', re.I)
+
+
+def _vkey(v):
+    return re.sub(r'[\s.]+', '', v).lower()
+
+
+def tomo_item_lines(root, cote, folio):
+    """Item lines a cached Tomokiyo page lists under a volume line ('BnF fr.3029 (Gallica ...)' then 'f.100,f.105
+    no.49 ...'): the volume is carried down from the last line naming exactly one volume (a heading naming two
+    volumes sets none), and the item line must start 'f.N' with N == folio among its folios.  Fills the gap where
+    prior_work check 3 carries volumes only from headings (MQS-BNF-S6).  Returns [(rel, line_no)]."""
+    pw, ctx = _pw_ctx(root)
+    mirror = os.path.join(root, 'sources', 'cryptiana', 'web')
+    if not os.path.isdir(mirror):
+        return []
+    want, out = _vkey(cote), []
+    for fn in sorted(os.listdir(mirror)):
+        if not fn.lower().endswith(('.htm', '.html')):
+            continue
+        rel = os.path.relpath(os.path.join(mirror, fn), root)
+        raw = open(os.path.join(mirror, fn), 'rb').read()
+        if want.replace('fr', '').encode() not in raw.replace(b' ', b'').replace(b'.', b''):
+            continue
+        cur = None
+        for i, line in enumerate(tomo_lines(root, rel), 1):
+            vols = {_vkey(v) for v in VOL_LINE.findall(line)}
+            if vols and not ITEM_LINE.match(line):
+                cur = vols.pop() if len(vols) == 1 else None
+                continue
+            if cur == want and ITEM_LINE.match(line):
+                fs = {int(x) for x in re.findall(r'(?i)\bff?\.\s?(\d+)', line.split(' no.')[0])}
+                if folio in fs:
+                    out.append((rel, i))
+    return out
+
+
+def ev_flag(ev, vol_only=False):
+    """a prior_work evidence prefix that already says no / not this unit (undeciphered, fuzzy, volume-level, date);
+    vol_only: only the not-this-unit prefixes (a volume-level 'undeciphered letters' line is no own-line negation)."""
+    pat = r'(fuzzy-match|volume-level|date-match)' if vol_only else r'(undeciphered|fuzzy-match|volume-level|date-match)'
+    return bool(re.match(pat, ev))
+
+
+_TL = {}
+
+
+def tomo_lines(root, rel):
+    if rel not in _TL:
+        pw, _ = _pw_ctx(root)
+        _TL[rel] = pw.tomokiyo_lines(os.path.join(root, rel))
+    return _TL[rel]
 
 
 def portal_status(cote, folio, root):
     pw, ctx = _pw_ctx(root)
     it = pw.item_from_spec('shelfmark=BnF %s;folio=%s' % (cote, folio))
-    return item_status(pw.check_portals(ctx, it, pw.item_unit(it)))
+    return item_status(pw.check_portals(ctx, it, pw.item_unit(it)), root, tomo_item_lines(root, cote, int(folio)),
+                       int(folio))
 
 
 def title_cote(title):
@@ -677,6 +799,96 @@ def attribute_control(paths, n=200, seed=20261009, cipher_only=True):
 # ---------------------------------------------------------------------------------------------------------------
 # --census / --local-search / --branch-pdf (MQS-BNFPILE, 9 Oct 2026)
 # ---------------------------------------------------------------------------------------------------------------
+def decode_shelfmark_hits(root, cote, folio):
+    """DECODE by shelfmark on disk: the cached DECODE listings (sources/decode/*.tsv) grepped for the volume and folio
+    (the R-id route of prior_work needs an id a bare pile item does not have).  Returns (n_files, [hit lines])."""
+    base = os.path.join(root, 'sources', 'decode')
+    if not os.path.isdir(base):
+        return 0, None
+    vol = re.compile(r'(?i)\b%s\b' % re.escape(cote).replace(r'\.', r'\.?\s?'))
+    fol = re.compile(r'(?i)\bff?\.?\s?%d\b' % folio)
+    n, hits = 0, []
+    for dp, _, fns in os.walk(base):
+        for fn in fns:
+            if fn.endswith('.tsv'):
+                n += 1
+                for line in open(os.path.join(dp, fn), errors='ignore'):
+                    if vol.search(line) and fol.search(line):
+                        hits.append('%s: %s' % (os.path.relpath(os.path.join(dp, fn), root), line.strip()[:120]))
+    return n, hits
+
+
+def frange(vrows):
+    fs = sorted(_folio_num(f) for _, f, _ in vrows if _folio_num(f) is not None)
+    return ('ff.%d-%d' % (fs[0], fs[-1]) if fs else 'none') + ' (%s)' % ', '.join(f for _, f, _ in vrows)
+
+
+def check_solved(paths, root):
+    """--check-solved (MQS-BNF-S6, 9 Oct 2026; disk only): the anonymous-pile holder checklist per bare or named-unattributed
+    cipher item of saved notices (CLAUDE.md Pipeline 2 "Anonymous piles"; tools/intake_gate_check.py holder path):
+    DECODE (listings by shelfmark), Cryptiana (prior_work check 3 Tomokiyo + section_known), cyphersolver and
+    unsolved-ciphers (solver caches; UNCHECKED when no cache is on disk), the holder notice (Présentation /
+    Bibliographie prior work, the item's own déchiffré flag).  Verdict per item: found-solved when any source reads it
+    as known; blocked when a source is UNCHECKED; open only when every source was searched and none knows it.  Prints
+    a TSV and a draft '## Check-solved' block per volume for a target's NOTES.md (a draft: nothing is written)."""
+    out = ['cote\tno\tfolio\tkind\tdecode\tcryptiana\tcyphersolver\tunsolved_ciphers\tholder_notice\tverdict\tevidence']
+    md = []
+    pw, ctx = _pw_ctx(root)
+    for p in paths:
+        s = open(p, errors='ignore').read()
+        title, rows = parse(s)
+        cote = title_cote(title)
+        pv = [b for b in volume_blocks(s) if PRIOR_VOL.search(b)]
+        ark = re.search(r'(c[a-z0-9]{6,})', os.path.basename(p))
+        vrows = []
+        for r in rows:
+            r['kind'] = classify_item(r)
+            f = _folio_num(r['folio'])
+            if r['kind'] not in ('bare', 'named') or not cote:
+                continue
+            if f is None:                     # the notice gives no folio: no unit to search by (shelfmark.py binds folios)
+                vrows.append((r['no'], 'no.' + r['no'], 'blocked'))
+                out.append('\t'.join([cote, r['no'], '', r['kind']] + ['UNCHECKED (no folio in the notice)'] * 4 +
+                                      ['read, none', 'blocked', 'no folio in the notice: search by folio after an image check']))
+                continue
+            it = pw.item_from_spec('shelfmark=BnF %s;folio=%s' % (cote, f))
+            prow = pw.check_portals(ctx, it, pw.item_unit(it))
+            st, ev = item_status(prow, root, tomo_item_lines(root, cote, f), f)
+            nd, dh = decode_shelfmark_hits(root, cote, f)
+            dec = 'UNCHECKED (sources/decode not on disk)' if dh is None else (
+                'hit %d' % len(dh) if dh else 'searched %d listings, none' % nd)
+            cry = 'known' if st == 'known' and 'cryptiana' in ev else (
+                'UNCHECKED' if any(x['verdict'] == 'UNCHECKED' and x.get('check') == '3-tomokiyo' for x in prow)
+                else 'searched, not known')
+            sol = {x.get('route'): x for x in prow if x.get('check') == '3-solver'}
+            cyp = 'searched, %s' % sol['caches']['verdict'] if 'caches' in sol else 'UNCHECKED'
+            uns = 'UNCHECKED (no cache on disk)' if any('unsolved-ciphers' in (k or '') and
+                                                        v['verdict'].startswith('UNCHECKED') for k, v in sol.items()) \
+                else 'searched'
+            hold = 'prior work in notice' if pv else ('item marked déchiffré' if r.get('dechiffre') else 'read, none')
+            if st == 'known' or dh or pv:
+                v = 'found-solved'
+            elif any(x.startswith('UNCHECKED') for x in (dec, cry, cyp, uns)):
+                v = 'blocked'
+            else:
+                v = 'open'
+            vrows.append((r['no'], r['folio'], v))
+            out.append('\t'.join([cote, r['no'], r['folio'], r['kind'], dec, cry, cyp, uns, hold, v,
+                                   (ev or (dh[0] if dh else ''))[:200]]))
+        if vrows:
+            verdicts = sorted({v for _, _, v in vrows})
+            md += ['', '### BnF %s (notice %s): %d pile items, verdicts %s' % (cote, ark.group(1) if ark else '?',
+                                                                              len(vrows), ', '.join(verdicts)),
+                   '- **Pile:** anonymous', '',
+                   '## Check-solved', '',
+                   'Anonymous pile, holder-based check-solved (bnf_findingaid.py --check-solved, disk caches): folio range '
+                   '%s; the sign inventory is not yet taken (no images on disk). Sources read: DECODE listings by shelfmark; '
+                   'Cryptiana (cached Tomokiyo pages incl. GL.htm and the unsolved lists); cyphersolver cache; '
+                   'unsolved-ciphers (no cache on disk: UNCHECKED); the holder\'s notice (Présentation, Bibliographie, '
+                   'item list). Edition step: deferred until a sender is named.' % frange(vrows)]
+    return out, md
+
+
 def curl_meta(args):
     """-> (http status, body, seconds, bytes); sys.exit only on a curl transport error."""
     t0 = time.time()
@@ -761,6 +973,7 @@ def main():
     g.add_argument('--local-search', nargs=2, metavar=('IR', 'TERM'), help='search inside one finding aid')
     g.add_argument('--branch-pdf', metavar='ARK', help='UNTESTED ROUTE (HTTP 500 on 9 Oct 2026)')
     g.add_argument('--attribute', nargs='+', metavar='NOTICE.html', help='attribution leads for pile items (offline; M leads only)')
+    g.add_argument('--check-solved', nargs='+', metavar='NOTICE.html', help='anonymous-pile holder checklist per pile item (offline; MQS-BNF-S6)')
     g.add_argument('--attribute-control', nargs='+', metavar='NOTICE.html', help='masked-letter known answer + nulls (PREREG-MQS-BNF-S5)')
     g.add_argument('--cote')
     g.add_argument('--ark')
@@ -792,6 +1005,10 @@ def main():
     if a.attribute:
         res, lines = attribute(a.attribute, tsv=a.tsv, window=a.window)
         print('\n'.join(lines))
+        return 0
+    if a.check_solved:
+        out, md = check_solved(a.check_solved, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        print('\n'.join(out + md))
         return 0
     if a.attribute_control:
         r = attribute_control(a.attribute_control, a.permute or 200, cipher_only=not a.all_letters)
