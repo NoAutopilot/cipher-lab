@@ -1,0 +1,8 @@
+pass A seed 101: A 0.834 C1 p99 0.524; [ij] n_al 18 hit 16 share 0.889; C1 share mean 0.467 p99 0.733 need 0.844; draws >= share 0/10000 -> PASS
+pass A seed 202: A 0.834 C1 p99 0.522; [ij] n_al 18 hit 16 share 0.889; C1 share mean 0.467 p99 0.737 need 0.848; draws >= share 0/10000 -> PASS
+pass A seed 303: A 0.834 C1 p99 0.522; [ij] n_al 18 hit 16 share 0.889; C1 share mean 0.467 p99 0.733 need 0.844; draws >= share 2/10000 -> PASS
+pass B seed 101: A 0.828 C1 p99 0.524; [ij] n_al 19 hit 17 share 0.895; C1 share mean 0.476 p99 0.737 need 0.842; draws >= share 0/10000 -> PASS
+pass B seed 202: A 0.828 C1 p99 0.525; [ij] n_al 19 hit 17 share 0.895; C1 share mean 0.479 p99 0.737 need 0.842; draws >= share 0/10000 -> PASS
+pass B seed 303: A 0.828 C1 p99 0.526; [ij] n_al 19 hit 17 share 0.895; C1 share mean 0.476 p99 0.733 need 0.839; draws >= share 0/10000 -> PASS
+keyblind pass A seed 404: A 0.816 C1 p99 0.527; [ij] n_al 18 hit 14 share 0.778; C1 share mean 0.227 p99 0.467 need 0.578; draws >= share 0/10000 -> PASS
+keyblind pass B seed 404: A 0.806 C1 p99 0.525; [ij] n_al 17 hit 12 share 0.706; C1 share mean 0.239 p99 0.471 need 0.588; draws >= share 0/10000 -> PASS

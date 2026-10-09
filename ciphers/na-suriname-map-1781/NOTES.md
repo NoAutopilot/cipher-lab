@@ -3304,7 +3304,7 @@ grade change. Prior work: none run (verifier re-score of files on disk, no fetch
 
 Job (LANE FAMILY-A2d, account 2): 0744 right page as one held-out unit under V-SUR0744's gates (AUDIT.md "What 0744 right and 0745 must
 show"). 00:17-00:3x UTC by date -u. Files: `passes/inv373_0744R_blind/` (PREREG-SUR0744R.md + crops_manifest.tsv pushed alone in
-94e16aee before either pass was run; A/ and B/ raw.tsv verbatim; mk.py -> passA_sonnet_blind.tsv + gloss_reconciled.tsv; score.py ->
+94e16aee (on main as 9d14bcf29, 00:26 UTC: V-SUR0744R) before either pass was run; A/ and B/ raw.tsv verbatim; mk.py -> passA_sonnet_blind.tsv + gloss_reconciled.tsv; score.py ->
 score.out, `--check` exits 1 if stale, exit 0 now). Crops not committed (folder over 30 MB); region URL and command in crops_manifest.tsv.
 
 **Prior work.** `tools/prior_work.py na-suriname-map-1781 --item-spec 'shelfmark=NA 1.05.03 inv.373;folio=0744R' --step-type read --fetch`
@@ -3341,6 +3341,15 @@ Requests: service.archief.nl 2 (1200 px overview, right-page region), both 200; 
 (22 crops each), this worker's own eye on the overview and 3 crops. CPU: score.py 1 min 52 s (4 processes).
 Next (not run, one unit per brief): 0745 as its own unit with the dot dropped and pooled `[y-fam]` m-vs-n split under the derangement
 control (V-SUR0744 (c)), pre-registered first, ~$3-4.
+
+## V-SUR0744R-na-suriname-map-1781 (verifier of SUR-0744R, 9 Oct 2026, account 2)
+00:42-01:0x UTC by date -u. Ruling in AUDIT.md "AUDIT (V-SUR0744R)": **the CLASS PASS stands. It is not fragile and not a non-test.**
+score.py --check exit 0. PREREG order checked on main: 9d14bcf29 at 00:26 has the PREREG only; the passes came in 3b5ab8033 at 00:31.
+The held-out rule was kept (no 0744 input to T). Fresh seeds 101/202/303 at 10,000 draws (`passes/inv373_0744R_blind/vsur0744r_seeds.py`
+/.out): PASS 6/6. Key-blind variant, with [y-fam] removed from T so the aligner gets no m|n reward (descriptive): [ij] still faces m|n
+on A 0.778 and B 0.706, against a C1 p99 of 0.47. 5-crop eye check: each pass has one dot-label miss (A L17, B L13), and the gate holds
+under either correction. DOT FAIL unchanged (ceiling). No key, conflicts, transcription, grade or N-class change. Requests:
+service.archief.nl 1. Next is unchanged: 0745 with the dot dropped and an m-vs-n split, pre-registered first.
 
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Read so far: unmeasured on the target sheets. No 2039, 2046 or 2077 tokens have been transcribed to this folder's two-pass bar, so there is no target ciphertext.tsv and no reading (RD03D "State at close"). The key-source control (self-consistency only) is 37 of 56 tokens at grade C (66.1%), with M 1 and U 18 (reading.txt header; tools/decode_key.py --check exits 0, rerun on a scratch copy 1 Oct 2026). RD03D's "C 56, M 1, U 18" is a slip for the 56-token total. The key has 17 grade-C signs (key.tsv), period and ours.

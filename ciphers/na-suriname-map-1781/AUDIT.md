@@ -670,3 +670,48 @@ dotted share above that permutation's p95 on both passes would make `[ij]` a sep
 (c) if (b) fails again, the next unit drops the dot question and pools dotted+undotted as `[y-fam]` for an m-vs-n split test instead
 (letters' n vs m, with the same derangement control), since m|n is the open question the class cannot answer.
 Not changed: key files, conflicts.tsv, transcriptions, token grades, N-class (decode --check not needed). Rule 10: report only.
+
+## AUDIT (V-SUR0744R)
+Verifier of SUR-0744R (session_01Lium123hTRbScxTjFpWvxK), unit NA 1.05.03 inv. 373 scan 0744 right page; account 2, LANE FAMILY-A2d,
+9 Oct 2026, 00:42-01:0x UTC by date -u (this session did not run SUR-0744R). Claim audited: "(a) CLASS gate, reader [ij] in m|n, PASS on
+both blind passes (A 16/18 = 0.889, B 17/19 = 0.895 vs 10,000-draw C1 p99 0.733/0.737, need p99 + 2 steps); (b) DOT gate FAIL, no
+headroom." No reading is claimed, so no N-class and no depth change.
+
+1. **Reproduction.** `passes/inv373_0744R_blind/score.py --check` exit 0 (3 min 21 s CPU): score.out is current.
+2. **Pre-registration order.** The cited commit 94e16aee is not in origin/main's history: `tools/room.py --push`'s rebase folded it
+   (CLAUDE.md rule 6's known shape). PREREG-SUR0744R.md and crops_manifest.tsv reached main in 9d14bcf29 (00:26:25 UTC, titled
+   "AUD2-LEDGER-8 ..."), with neither pass and no score.py or mk.py; A/, B/, mk.py, score.py and score.out arrived in 3b5ab8033 (00:31:13).
+   PREREG on main is unchanged since. **Order kept.** (mk.py's header line says the passes ran at "00:4x UTC". That is a typo: they
+   were on main by 00:31. Left unedited because changing it would make the pass files stale. Noted here.)
+3. **Held-out rule.** T = sign tables of 0693/0702/0730 plus `[y-fam]` = {m, n}, the value hard-coded in R14-SURDP dp_align.py (from
+   0746). None of those inputs mentions 0744 (grep). 0744 left (SUR-BLIND) was not used either. **Kept.**
+4. **Fresh seeds** (`passes/inv373_0744R_blind/vsur0744r_seeds.py`, output `vsur0744r_seeds.out`; C1 at 10,000 draws per master seed
+   101/202/303). Pass A: p99 0.733-0.737, need 0.844-0.848, share 0.889, **PASS 3/3** (0-2 of 10,000 draws reach the share).
+   Pass B: p99 0.733-0.737, need 0.839-0.842, share 0.895, **PASS 3/3** (0 of 10,000). Unlike 0744 left (B at the null's edge), the
+   margin here is stable across seeds.
+5. **Can the control differ from the target (rule 3's non-test clause)?** Yes. Derangement changes which gloss letters face the
+   tagged tokens, and C1's share does move: its mean is 0.47 against the target's 0.89. V-SUR0744's caveat still applies. The DP
+   aligner already holds `[y-fam]` = {m, n} in T, so it steers tagged tokens onto nearby m or n, which inflates C1 (mean 0.47 against
+   a letter base rate of about 0.13). To test whether the PASS comes from that steering, a key-blind variant was run, descriptive and
+   not pre-registered (`--keyblind`, seed 404): `[y-fam]` was removed from T, so the aligner earns nothing for m or n, and the raw
+   share of aligned [ij] tokens facing gloss m or n was scored. Result: A 14/18 = 0.778 and B 12/17 = 0.706, against C1 mean
+   0.227/0.239 and p99 0.467/0.471. 0 of 10,000 draws reach either share. **The class signal survives without the aligner's help.**
+6. **Crop spot-check** (5 crops, regenerated from the NA region per crops_manifest.tsv, 1 request; this verifier's own eye at native
+   resolution). L03, L08, L20: every dotted/undotted label in both passes matches the image. L13 (`k` + two dotted y-forms): A
+   `[ij] [ij]` is right, B merged them into one `[ij]`. L17 (`b Δ ÿ`): B `[ij]` is right, A read an undotted `y`. Each pass is wrong
+   on one dot label, both on the crops SUR-0744R already listed as A/B disagreements. Effect: correcting A's L17 gives n_al 19 with
+   share 16/19-17/19 (0.842-0.895), against a need of about 0.838. Correcting B's L13 gives n_al 20 with 17/20-18/20 (0.85-0.90),
+   against about 0.833. The gate holds either way, by about one token above the +2-step bar.
+7. **DOT gate.** FAIL with p95 = p99 = 1.000 on both passes, as reported. At a y-family m|n base rate of about 0.92, the permutation
+   is at ceiling. NOTES' wording, "no dot effect seen, untestable to pass this way at this N", is correct. It is not a measured
+   exclusion. (V-SUR0744 (b) named p95, the PREREG used p99. Both are 1.000, so the verdict is the same.)
+
+**Ruling. The CLASS PASS stands. It is not fragile under fresh seeds, the key-blind alignment or the spot-check corrections, and it
+is not a non-test.** What it licenses: 0744 right is a second held-out page, after 0744 left, on which the y-family glyph (dotted or
+not) aligns with gloss m|n above a shuffled-gloss control on both blind passes. This supports the existing `[y-fam]` = {m, n} class.
+It does **not** license a separate value for dotted `[ij]` (the DOT gate failed on two units), an m-vs-n choice, or any change to
+key.tsv, key_period_*.tsv, conflicts.tsv, a transcription or a token grade. R15-SURV2's "`i j` = [ij] stays M" stands. Next, per
+V-SUR0744 (c): 0745 with the dot dropped, testing the m-vs-n split pooled under the derangement control, pre-registered first.
+Over-claims corrected: NOTES/HYPOTHESES cited "PREREG 94e16aee", which is not a main-history hash; both now name 9d14bcf29 beside it.
+Not changed: key files, conflicts.tsv, transcriptions, token grades, N-class. Rule 10: report only. Requests: service.archief.nl 1 (200).
+Vision: this verifier's eye on 5 crops; no subagent.
