@@ -3732,3 +3732,59 @@ Checks (FT4k, 3 Oct 2026): `python3 tools/gaps_check.py na-suriname-map-1781` ->
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
 - Action that depends on nobody: blind transcription of inv. 373 0743-0745 and 0701/0703 as fresh held-out [ij]/[y-fam] units, ~$6-8 (FAM-SUR373). (Updated 8 Oct 2026, SUR-IJ: the dotted-ij shape look named here before was run -- gate PASS, targets 0/4, outcome B, no change.) (Updated 8 Oct 2026, D4-SUR: the earlier text here -- "transcribe and test the glossed cipher at inv. 373 scan 0702 ... then 0730, 0746, 0758" -- was done 6 Oct 2026: 0702 by R13-SUR702 (SAME SYSTEM, S1 0.845 vs control p99 0.135) with its 32 word-unaligned lines by R14-SURDP2 (DP 0.967 vs C1 p99 0.484), 0730 by R13-SUR730, 0746 by R14-SUR746/R14-SURDP, 0758 by R14-SUR758/R14-SURDP2; it was queued again from this stale line as D4-SUR, which did not re-run it. Earlier update, R12-SURSIGN: the context-tile blind look for L08:51 / L10:30 g|l and [sigma] is [retired] for those four tokens, R8-SUR3.) Stage 9 (VERIFY5) stays blocked on LOCAL-QUEUE L36/L41.
+
+## SUR-GOV (9 Oct 2026, account 2, Sonnet worker for LANE FAMILY-A2l; 21:03-21:1x UTC by date -u)
+Job: image screen of NA 1.05.03 governor's incoming letters (POOLS-A2l rank 1). Output `sources/na-1.05.03/2026-10-09/screen_gov.tsv`
+(142 rows), scripts and fetch log in `passes/sur_gov/` (getitem.py, plan_fetch.py, sheets.py, nb.py, plan.tsv, fetch.log; the 600 px
+images and viewer JSONs stay in scratch and regenerate with those scripts), three evidence sheets in `images/sur_gov/`.
+Prior work: the inventories were not screened before (inv. 373 only, R10/R11/R12); no cipher passage in 370-372/378-380 is named in this
+folder, the EAD snapshot or LEDGER. Checks 1-4 of the prior-work step were not run as separate calls: this was an image screen, no
+reading, so no priced step beyond the screen; check 5 owed to whoever decodes 372.
+
+**Method.** Item page -> drupal-settings-json `viewer.response` (5 + 1 requests), then IIIF `full/600,/0/default.jpg` one at a time
+1.9 s apart. 22 scans per inventory at an even stride (every ~15-48th scan, offset into the volume), 132 scans, contact sheets of 5
+sampled scans plus the known cipher scan **373_0693 (600 px, from disk, 0 requests) as positive control on every sheet** (30 sheets).
+Negative control: each sheet carries blank, form and printed-table scans in the same sheet; none was marked cipher.
+Control read on 30 of 30 sheets (heavy-hand lines with interlinear text visible at 600 px), so no sheet is a non-test at the
+*presence of a one-scan passage on a scan I looked at* level. Control inv. 373 0744/0745 not used (scan 0693 was on disk; a different
+cipher scan than the brief named, disclosed).
+
+**Brief deviation (named).** The brief's 1-in-10 per inventory (about 420 scans of 4,221) is not reachable under the 150-request cap
+(6 item pages + 132 sampled + 12 follow-ups = 150). The sample is 1-in-15 to 1-in-48 (22 per inventory). **Power:** a one- or
+two-scan passage like 373_0693 is caught with probability about 2-5% per such passage at this stride, so a "no" for 370, 371, 378, 379,
+380 is "none in the sampled scans", not "none in the inventory". Only a run of about 15-48 scans (as in 372) is reliably caught.
+
+**Counts (scans looked at -> cipher yes / possible / no).**
+| inv | scans in volume | sampled | follow-ups | cipher yes | possible | no |
+|---|---|---|---|---|---|---|
+| 370 (1780 Jan-Mar) | 812 | 22 | 0 | 0 | 0 | 22 |
+| 371 (1780 Apr-Jun) | 665 | 22 | 0 | 0 | 0 | 22 |
+| 372 (1780 Jul-Oct) | 908 | 22 | 10 | 11 | 0 | 21 |
+| 378 (1783 Jul-Oct) | 444 | 22 | 0 | 0 | 0 | 22 |
+| 379 (1784 Jan-Jun) | 1051 | 22 | 1 (re-look) | 0 | 0 | 23 |
+| 380 (1784 Jul-Oct) | 341 | 22 | 1 (re-look) | 0 | 0 | 23 |
+| 266-270 (1739-42) | not screened | 0 | 0 | - | - | - |
+379_0028 (heavy ink, dense) and 380_0319 (rotated ruled table) were possibles at 600 px and read as ordinary Dutch / a table at 1100 px.
+NA requests: www.nationaalarchief.nl 6, service.archief.nl 144; 150 in all, 1.9 s apart, all HTTP 200, no 429/challenge.
+
+**Hit: inv. 372, scans 0184-0194 (viewer order = label order here; page numbers about 175-188; stamp N°30-36 at the left head).**
+Scan 0189 was the sampled hit (right page, about 19 lines of Latin-letter-and-digit strings of the kind seen at 373_0693); the follow-up
+of 0184-0188 and 0190-0194 shows enciphered text on **every one of the 10 follow-up scans, both pages, with short clear Dutch
+headings/numbered paragraph openers ("1.", "2.", "9.") between cipher runs and a closing signature-like cipher group**. The run is
+not closed on either side: 0184 and 0194 are both still cipher, so it is at least 11 scans (about 22 pages) and the ends are
+unfetched (0183 and 0195 are the next two requests). No interlinear gloss line visible at 600 px (glossed = unclear, not "no": a
+gloss at this scale would need 1500+ px). Date not legible at 600 px; the volume's neighbours put it between 0148 (24 Jul 1780) and
+0231, i.e. Jul-Oct 1780, Governor de Milly's years (a 1780 hand and the "Nieuw alphabet" issue years are 1739-42, so which key it uses is open).
+Evidence: `images/sur_gov/nb372_0.jpg`, `nb372_1.jpg` (the ten follow-ups), `372_s2.jpg` (0189 among the sampled scans, with the 373 control).
+Not read, not transcribed, no key claim, no grade. Signs are Latin letters and digits like 373_0693, not the map sheets' symbol alphabet.
+
+**What this changes.** inv. 372 has an unread pool of an estimated 20+ pages of cipher-text-with-clear-heads in one letter, far larger
+than 373_0693 (1 page); sign pool well above the 2,000-sign selection line if one key. Whether any gloss or clear copy follows is unknown.
+Where it was not found: no cipher in the sampled scans of 370, 371, 378, 379, 380 (power above); 266-270 not screened.
+
+### SUR-GOV next steps
+- [ ] 372: fetch 0183 and 0195 (2 requests) to close the run; one full-res (>=1500 px) scan of 0189 to read the date, heading and any
+  gloss; then prior-work step and check-solved on the letter before any transcription; ~$1.
+- [ ] 266-270 (1739-42) 1-in-15: not attempted (request cap); next: 4 item pages + about 40 scans, ~$1.5.
+- [ ] 370, 371, 378-380 at a denser stride (every 10th, about 330 scans) in a separate session with its own request budget; ~$3.
+Verdict: keep going.

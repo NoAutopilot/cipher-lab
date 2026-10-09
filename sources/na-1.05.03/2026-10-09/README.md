@@ -5,3 +5,7 @@
 - Job POOLS-A2l (LANE FAMILY-A2l, account 2). Series "Ingekomen brieven en papieren van de Gouverneur en andere
   overheidspersonen. Met bijlagen." = inv. 212-403 (1683 Nov 16 - 1794 Dec 31), 192 items, every one with an EAD <dao>;
   item-page viewer flag checked for inv. 372 (DIGITALIZED, 908 scans) and 374 (DIGITALIZED, 655 scans) only.
+
+## screen_gov.tsv (SUR-GOV, 9 Oct 2026, account 2)
+Thumbnail-scale (IIIF full/600,) screen of inv. 370-372, 378-380. One row per scan looked at. Dates, request counts and
+controls are in ciphers/na-suriname-map-1781/NOTES.md "## SUR-GOV". Viewer order and label differ by up to a few after split scans.
