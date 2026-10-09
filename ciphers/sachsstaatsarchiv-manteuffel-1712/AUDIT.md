@@ -1743,7 +1743,7 @@ crop pairs eyed). No 403, 429 or challenge.
 
 ## AUDIT (V-MANT0490)
 
-Verifier V-MANT0490 (account 2, LANE FAMILY-A2k), 9 Oct 2026, 18:45-19:0x UTC by `date -u`. This is a separate session from the solver
+Verifier V-MANT0490 (account 2, LANE FAMILY-A2k), 9 Oct 2026, 18:45-18:5x UTC by `date -u`. This is a separate session from the solver
 MANT-0490 (session_01JSQGXzU4jxaXKy8aZsseiy) and from MANT-0490L. Brief: .claude/briefs/runs/2026-10-09-ytbiz-family-1815-jobs.md
 "### V-MANT0490". Claim under audit (NOTES "## MANT-0490", commit eb4031655): the 0490 right page (p.392) is a key test, not a reading. Its
 148 code tokens are read by two blind passes and reconciled; the gloss gate PASSes at S 61/92 keyed against a permuted p99 of 22; grades are
