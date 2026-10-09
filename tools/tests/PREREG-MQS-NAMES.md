@@ -90,3 +90,26 @@ the key itself (the only name list on disk is the key), it is logged "untestable
 
 A control that misses its gate ships the option with shelf grade `weak` and both numbers; nothing is run on a target
 from it. Results are reported by class (places / persons, n=1 / n>=2) with pool coverage, never one blended figure.
+
+## Amendment 1 (9 Oct 2026, 03:2x UTC by date -u; written after the scan's output was read, before any control (b) run)
+
+**Scan (b), as run.** The first scan output (03:22 UTC) listed fr3993-gonzague-nevers-1595 on eight NULL codes and
+Manteuffel 1712 on isolated single-group lines; both are outside the brief's own rule ("codes that occur in decoded
+context", non-NULL values), which the pre-registered wording above had left out. The scan now excludes NULL and requires
+another decoded token on the same line. Its output (03:24 UTC): eckert-1864 (md-blocks, 1095 code words, English),
+lodewijk-van-nassau-1573-74 (12, German: control (a) itself), vanbeuningen-dewitt-1657 (9, Dutch). **No French set
+qualifies: "untestable at this N for French"; no French target run is licensed by this job.** The first qualifying
+non-German set in alphabetical order is eckert-1864 (English), so control (b) runs there.
+
+**Control (b) design (`tools/tests/mqs_names_control_b.py`).** Class: person code words whose cipher-book meaning has
+the book's surname-plus-initials form ("Grant U S"); places cannot be classed without a gazetteer, so (b) gates
+persons. Population: every such code word with >= 2 md-blocks contexts; sample 10 (random.Random(1)). Truth: the
+meaning's surname (fold-equal, or contained if >= 5 letters). Contexts: md-blocks readings (MdBlocks, read-only), the
+tested code word shown as <word> everywhere. Index: the Official Records volumes cached in
+sources/ia-fulltext/print-check/ (warofrebellion*, officialrecordso*), split into pages; **mask:** every page sharing >= 2
+folded word 4-grams with the decoded text of any telegram that carries the tested code is dropped from the pool and the
+co-mention feature. The pool never reads key.md. Nulls: context null 100 draws, decoy null 100 draws, seed 1.
+**Gate:** at least 5 of the 10 sampled person codes covered, in the top 5 and above their own context-null p95.
+**Expected:** FAIL. With no Wikidata, person candidates are bare surnames from the OR index; the English cues give
+title (general, gen) and frame (by, with, at, to) terms only, and ranking is then dominated by co-mention, which the
+context null holds constant -- so a true value can pass only if its contexts carry a title or frame cue the others lack.

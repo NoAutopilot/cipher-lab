@@ -595,7 +595,13 @@ def comention_counts(pool, index_kept, d):
     for e in index_kept:
         y = year(e.get('date', ''))
         w = 1.0 if (d is None or y is None or abs(y - d[0]) <= 1) else (0.5 if abs(y - d[0]) <= 3 else 0.2)
-        folded.append((w, Counter(fold(x) for x in re.findall(r"[A-Za-zÀ-ÿ]{3,}", e['text']))))
+        if '_folded' not in e:  # cached per index entry (the decoy null calls this once per draw)
+            e['_folded'] = Counter(fold(x) for x in re.findall(r"[A-Za-zÀ-ÿ]{3,}", e['text']))
+        folded.append((w, e['_folded']))
+    byw = defaultdict(Counter)  # one merged counter per date weight (thousands of index pages stay fast)
+    for w, cnt in folded:
+        byw[w].update(cnt)
+    folded = list(byw.items())
     for c in pool:
         names = {fold(n) for n in cand_names(c) if len(fold(n)) >= 4}
         names |= {fold(n.split()[-1]) for n in cand_names(c) if ' ' in n and len(fold(n.split()[-1])) >= 5}
@@ -782,9 +788,15 @@ def find_controls(min_codes=8, use_mdblocks=True):
                 rd = list(csv.DictReader(open(p, encoding='utf-8', errors='replace'), delimiter='\t'))
             except Exception:
                 continue
+            lines = defaultdict(list)
+            for r in rd:
+                lines[r.get('line', '')].append(r)
             for r in rd:
                 v, g, s = (r.get('value') or ''), (r.get('grade') or ''), (r.get('sign') or '')
-                if g in ('H', 'C') and NAMEISH(v) and s and not s.startswith('='):
+                # "in decoded context": another token on the same line decoded (not U/?), so the code has a window
+                ctx = any(o is not r and (o.get('grade') or '') not in ('', 'U') and (o.get('value') or '?') != '?'
+                          for o in lines[r.get('line', '')])
+                if g in ('H', 'C') and NAMEISH(v) and v.upper() != 'NULL' and s and not s.startswith('=') and ctx:
                     codes.setdefault(s, v.lstrip('=')); srcs.add(os.path.basename(p))
         if md is not None and glob.glob(os.path.join(folder, 'reading*.md')):
             try:
