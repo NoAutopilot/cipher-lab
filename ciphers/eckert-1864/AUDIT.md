@@ -18619,3 +18619,131 @@ within 6 lines`. Scripts and outputs (committed, `fortmonroe/`): `aud2_l15_1_hdl
   text, Plum II, O'Brien 1910; E568 notes the diary), rows SO-ECKERT-E555/E568/E541/E576/E575 stay queued; WORK-QUEUE AUD2-LEDGER15-1 -> done.
 - Requests: hdl.huntington.org 24 (19 CISOSEARCHALL + 5 IIIF, all 200); be-api.us.archive.org 39; archive.org 11 (one reset, one 500);
   www.googleapis.com 13; api.openalex.org 5, api.crossref.org 5, api.semanticscholar.org 5 (three 429).
+
+## AUDIT (FV-L15m)
+
+Verifier FV-L15m (Opus 5.5, account 1, for LANE LEDGER-15), 10 Oct 2026, 14:22-14:4x UTC by `date -u`; a separate session from the readers (FM65-D,
+FM65-E, FM65-F, FM-S2) and from CLEAR-SWEEP, which found the leads; it does not protect their conclusions. Scope: N1 confirms of CLEAR-SWEEP's seven hits
+(`fortmonroe/clear_sweep.tsv`): **E542, E548, E550, E562, E465** (holder clear copy at another pointer), **E543** (OR I/46 pt 2 p.259), **E571** (Grant
+Papers vol. 14). Fort Monroe ledger mssEC 25 = Huntington object 5952, Cipher No. 1. Nothing decoded beyond key.md look-ups. Key source for all seven:
+`period`. Intake gate re-run 14:2x UTC: `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Prior-work tool:
+`tools/prior_work.py eckert-1864 --item E542` -> "item 'E542' is not a row of ciphers/eckert-1864/items.tsv" (no items.tsv), so the checklist was run by
+hand: own work (AUDIT/NOTES/status.json/SO queue grep by entry and pointer: no audit, no status.json row and no SO row for any of the seven; E465's leaf
+5768 and its clear copy 4788 were already compared as a by-product in "## AUDIT" of FV-FM8a, which named the sibling "unfiled entry for a reader"), holder
+(s.2), print (s.1). **Step 0 not used for any class** (mssEC 25 ruling). Scripts: `fortmonroe/fvl15m_hdl.py` (+ `.out`: 9 dmGetItemInfo, 7 leaves at
+2400 px to scratch), `fortmonroe/fvl15m_gb.py` (+ `.out`: 3 Google Books API queries, keyed, `country=US`); OR text from the cached
+`sources/ia-fulltext/print-check/warofrebellion014602rootrich_djvu.txt.gz` (I/46 pt 2) and `warofrebellion403unit_djvu.txt.gz` (I/40 pt 3).
+
+### 1. Print
+| ID | print located | how read | print text (as read) |
+|---|---|---|---|
+| E543 | **OR ser. I vol. 46 pt 2 p.259** (running head "CHAP. LVIII.] CORRESPONDENCE, ETC.--UNION. 259" directly above) | IA `_djvu.txt` on disk, window read | "CITY POINT, VA., January 25, 1865--3 p.m. Major-General ORD, Fort Monroe, Va.: I shall leave here to-morrow, to be absent several days. I wish you to return to your headquarters in the field, so that in case of necessity you will be on hand to take charge of armies operating from here. It will answer if you start up in the morning. U. S. GRANT," |
+| E571 | *Papers of Ulysses S. Grant* vol. 14 (Google Books DVLPEPsH1_oC and 1D8fAQAAMAAJ; IA `papersofulyssess0014gran`), in a note: "[Lt. Col. Orville E.] Babcock, Fort Monroe, telegraphed to Brig. Gen. John A. Rawlins" | GB API snippets, 3 queries; **page number not resolved** (snippets carry none; IA item is lending-only, see s.6) | "Capt Glisson says he will send gun boats as desired, at once. Convoy is now ready. I leave in a few moments with pilots for Col Roberts." ALS (telegram sent), DNA, RG 107 ... "At 4:30 P.M., Babcock, Point Lookout, Md ..." |
+| E465 | **OR ser. I vol. 40 pt 3 p.142** (page head "142 OPERATIONS IN SE. VA. AND N. C. [CHAP. LII.") | IA `_djvu.txt` on disk | "General Halleck: None have arrived yet. Fort Monroe, July 10, 1864--10.15 a.m. J. W. S[HAFFER], Colonel and Chief of Staff." (abridged: the print drops "of the New Orleans troops") |
+| E542 E548 E550 E562 | not sought beyond CLEAR-SWEEP (holder clear copy suffices for N1) | -- | -- |
+
+### 2. Holder clear copy (dmGetItemInfo, p16003coll11, `fvl15m_hdl.py`; the transcription field read in full, the message located in it)
+- **E542 -> 7722 (Page 64)**: "6 PM Norfolk Jan 24 1865. Norfolk Sec Navy The Saugus left this morning for Washn ---- Gen Grant needs her at once ---- she must
+  be now half way ---- no use for me to send for her ---- will you let a message meet her & turn her back J. M Berrin Comdt 420 PM Beckwith City Pt".
+- **E548 -> 7741 (Page 83)**: "Ft Monroe Va Feby 2nd 1865 2.30 P. M for Bates, ascertain enemy by. what boat the President left Annapolis & the time of
+  leaving and telegraph me in cipher also the time the boat passes Pt Lookout Eckert".
+- **E550 -> 8561 (Page 83)**: "710 pm 2d Ft Monroe Feb 2 1865 Capt Blodgett a Q m Annapolis ---- Please inform Gen Schofield should he arrive in annapolis
+  tonight that I will be at Annapolis to morrow Fryday morning with important dispatches for him from Gen Sherman J. F Anderson Major & A. D. C." (the
+  same page also carries Anderson's own 4 P.M. telegram to Schofield, a different message).
+- **E562 -> 7787 (Page 129)**: "Ft Monroe Feb 25 1865 Norfolk twenty fifth to Hon. E. B. Washburn Chairman Committee of Commerce Washn ---- I sent for Johnson
+  to try him ---- It would be a pity that the greatest rascal should escape ---- I can send him to you under guard but do not let him turn states evidence
+  ---- His confidential is clear ---- Do you want him sig George H Gordon Br Gen".
+- **E465 -> 4788 (Page 347)**: "445 pm Fort Monroe July 10 1864 Ft Monroe 10th 15 am July 10th Gen Halleck - none of the New Orleans troops have arrived yet
+  J W Shaffer Col and Chief of staff".
+- **E571**: FV-L15c's Glisson pointers read in full: 7802 (Page 144, 5 Mar: Grant to Halleck, no Glisson message), 8622 (Page 144, 5 Mar: Glisson to Sec.
+  Navy on the Ariel and the monitors), 7818 (Page 160, 12 Mar: Glisson to Sec. Navy "Mahopac is in from Charleston & the Cosco from N. Y. ... no news of
+  the Montauk" -- the clear copy of the opening entry on leaf 5929, Mar 12, not of E571), 8486 (Page 8, Dec 1864). **No holder clear copy of E571.**
+- **E543**: none (CLEAR-SWEEP's 4 queries; not re-run).
+
+### 3. Diff, clear copy / print against the derived reading block (reading.md) and the leaf (eye-checked whole at 2400 px, IIIF, scratch only)
+- **E542** (leaf 5887, p.343): leaf "Farmer to Buxton unity The saugus left this morning for grapes zebra John needs her at once zodiac She must be now
+  half way zebra No use for me to send for her ditto will you let a message meet her and turner back Berrien / Geo. D. Sheldon", dateline "Ft Monroe Jan.
+  24 1865", addressed Maj. Eckert Washington: agrees with the transcription and the reading. Against 7722: body identical word for word (grapes =
+  Washington H, John = Grant H, Farmer = Norfolk H, Buxton = Sec. Navy H all **C by clear copy**; "turner" = turn her; "&" = and). Signer Berrien
+  (clear copy "J. M Berrin Comdt"). No disagreement.
+- **E548** (leaf 5895, p.351): leaf "Henrietta for Bates unity ascertain immed'y by what boat the bologna left Annie police and the time of leaving and
+  wreathe me in pembroke also the time the boat passes Point Lookott / webster Eckert", Ft Monroe Feb. 2 1865: agrees. Against 7741: identical
+  ("bologna" = President H, "wreathe" = telegraph H, "pembroke" = cipher H, "Annie police" = Annapolis plain, "webster" = signature; Henrietta = the
+  2.30 PM time word, clear copy "2.30 P. M"). The clear copy's "enemy" for "immed'y" is the holder transcriber's misreading of the ledger's
+  abbreviation, not a disagreement in substance. No disagreement in the reading.
+- **E550** (leaf 5897, p.353): leaf "animal for pilgrim Blodget a vinton anna police zebra Please inform Kitten should he arrive in An Apple is tonight
+  that I wilby at ditto ditto ditto whelp Fry day morning with important despatches for him from Knapsack yoke Jay F Anderson Tappan and A D see end",
+  Ft Monroe Feb. 2/65: agrees with the transcription. Against 8561: the substance is identical (Capt. Blodgett, Q.M., Schofield, tonight, will be,
+  tomorrow Friday morning, important despatches, Sherman, J. F. Anderson Major and A.D.C.), but **the reading misapplies two key words**: "anna police"
+  is the place **Annapolis** (clear copy "a Q m Annapolis"), not Anna = {time: 2 AM} + "police"; and "An Apple is" is **Annapolis** (clear copy "arrive
+  in annapolis"), a sound-spelling, not "An [Sumter] is". "ditto ditto ditto" repeats the three-word group, i.e. "at Annapolis" (clear copy "I will be at
+  Annapolis"). The other H code words (pilgrim = Captain, vinton = Quartermaster, Kitten = Schofield, whelp = Tomorrow, Knapsack = Sherman, Tappan =
+  Major) are C by clear copy.
+- **E562** (leaf 5917, p.373): leaf "Farmer harsh person to Honorable E. be wash burn Chairman Committee of Commerce growl unity I sent for Johnson to try
+  him zodiac It would be a pity that the greatest rascal should escape zodiac I can send him to you under saddle but do not let him turn state evidence
+  zebra His confidential is clear zodiac Do you want him walrus George H. Gore done palsy raining here tonight / Geo D Sheldon": agrees. Against 7787:
+  identical word for word (Farmer harsh person = Norfolk 20+5 = "twenty fifth"; saddle = Guard H; "state" / "states evidence" spelling only; "Gore done" =
+  Gordon; palsy = Brigadier General). The clear copy also reads "His confidential is clear", so the header's "[statement]" is an editorial gloss, not a
+  missing word. No disagreement.
+- **E465** (leaf 5768, p.224, third entry): leaf "Appian feeble ghost am July federal for Indian growl zebra none torch Emmet whiskey have arrived yet
+  walrus Jay W. Shaffer paradise and chief of staff fine morning / Geo D Sheldon", dateline "Ft Monroe July 10th 1864": agrees. Against 4788 and OR
+  I/40 pt 3 p.142: body identical ("none of the New Orleans troops have arrived yet"; Indian = General-in-Chief, clear copy "Gen Halleck"; Emmet = New
+  Orleans and whiskey = Troops C by clear copy). **One reading slip:** "feeble ghost am" is **10 15 AM** (Feeble = 10, Ghost = 15, H; clear copy "10th 15
+  am", print "10.15 a.m."), not "[25] AM" -- the reading summed the two numerals; the header's 10.15 AM is right.
+- **E543** (leaf 5888, p.344): leaf "Imogene for meriden I shall leave here whelp toby absent several days unity I wish you to return to your silver sligo
+  field see that encase of tarquinty you wilby on hand to take charge of oysters opera thing from here unity it will answer if you stair tups in the
+  morning yake Jersey thats all / S.H. Beckwith", City Point Jan. 25/65: agrees. Against OR I/46 pt 2 p.259: date 25 Jan, 3 p.m. (Imogene = 3 PM H),
+  Ord, Grant (Jersey) agree; body identical but for: **"tarquinty" = Tarquin (Necessary, H, key p.22) + "ty" = "necessity"** (print "in case of
+  necessity"): the reading leaves it as plain "tarquinty" and the header renders it "contingency", which is wrong; ledger "see that" vs print "so that"
+  (the ledger's own word, eye-checked; a clerk/edition difference, not a reading error); "[Army]'s opera thing" = "armies operating" (agrees).
+- **E571** (leaf 5929, p.385, second entry): leaf "Cornelia for palsy Rawlins Berry unity pilgrim Glisson says he will send Shannon as desired at once
+  unity Convoy is now ready zebra I leave in a few moments with pilot for paradise Roberts pandora Babcock / Geo. D. Sheldon", Ft Monroe Mar. 13/65:
+  agrees with the transcription. Against Grant Papers 14: body identical but for **"pilot" = plain "pilots"** (print "with pilots for Col Roberts"): the
+  reading's "[Capture (-ed, -ing)]" (key Pilot = Capture, H) is a misapplied key word here; Shannon = Gunboat H is C by print ("gun boats"); signer
+  Babcock (print "Babcock, Fort Monroe, telegraphed to ... Rawlins") agrees.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N-class | key | prior plaintext | prior decipherment of this ciphertext | depth | % H/C/S | check |
+|---|---|---|---|---|---|---|---|
+| E542 | **N1** | period | holder clear copy 7722 (Page 64) | not located | D3 | 100 (9 H, all C by clear copy) | clear copy, word for word |
+| E548 | **N1** | period | holder clear copy 7741 (Page 83) | not located | D3 | 100 (7 H) | clear copy, word for word |
+| E550 | **N1** | period | holder clear copy 8561 (Page 83) | not located | D2 as filed, D3 after the s.5 fix | 83 as filed (10 of 12 H right; anna, Apple misapplied) | clear copy, word for word |
+| E562 | **N1** | period | holder clear copy 7787 (Page 129) | not located | D3 | 100 (13 H) | clear copy, word for word |
+| E465 | **N1** | period | holder clear copy 4788 (Page 347); OR I/40 pt 3 p.142 (abridged) | not located | D3 (numeral slip, s.5) | 100 of tokens (11 H, 1 S; feeble ghost misread as a sum) | clear copy + print |
+| E543 | **N1** | period | OR I/46 pt 2 p.259 | not located | D3 after the s.5 fix | 100 (10 H; tarquinty unread as filed) | print, word for word |
+| E571 | **N1** | period | Grant Papers vol. 14 (note, page unresolved) | not located | D3 after the s.5 fix | 91 as filed (10 of 11 H right; pilot misapplied) | print, word for word |
+Depth D3, not D4: every cipher token is H (or now C), the check is non-statistical, but no fresh rule-7 re-derivation was run by this session.
+Content sentences (D2+): E542 "On 24 Jan 1865 Commander Berrien at Norfolk asks the Secretary of the Navy, through Eckert, to have a message turn back the
+monitor Saugus, half way to Washington, because Grant needs her at once."; E548 "On 2 Feb 1865 at 2.30 p.m. Eckert at Fort Monroe asks Bates to find
+out by what boat the President left Annapolis, when, and when it passes Point Lookout, and to reply in cipher."; E550 "On 2 Feb 1865 Maj. J. F.
+Anderson asks Capt. Blodgett at Annapolis to tell Schofield, if he arrives that night, that Anderson will be at Annapolis on Friday morning with
+despatches from Sherman."; E562 "On 25 Feb 1865 Gen. George H. Gordon at Norfolk tells Washburne he sent for Johnson to try him and can send him under
+guard, but warns against letting him turn State's evidence."; E465 "At 10.15 a.m. on 10 July 1864 Col. Shaffer at Fort Monroe tells Halleck that none
+of the New Orleans troops have arrived yet."; E543 "On 25 Jan 1865 at 3 p.m. Grant tells Ord he will be away several days from tomorrow and wants
+Ord back at his field headquarters to take charge of the armies there."; E571 "On 13 Mar 1865 Babcock at Fort Monroe tells Rawlins that Glisson will
+send gunboats at once and that he is leaving with pilots for Col. Roberts."
+- **Safe sentences.** E542/E548/E550/E562: "Read at grade H with War Department Cipher No. 1; the holder's own clear copy of the same telegram is
+  at Huntington pointer <7722/7741/8561/7787>; our reading is an independent re-decipherment of the Fort Monroe ledger copy." E465: the same, "clear copy
+  at pointer 4788; printed abridged in OR ser. I vol. 40 pt 3 p.142". E543: "printed in OR ser. I vol. 46 pt 2 p.259 (Grant to Ord, 25 Jan 1865, 3 p.m.)".
+  E571: "printed in *The Papers of Ulysses S. Grant* vol. 14 (Babcock to Rawlins, 13 Mar 1865), in a note". **Unsafe:** any of the seven called
+  unpublished, not in print, unread, or in any rule-10 restricted wording; E543's header "contingency"; E550's "2 AM" and "[Sumter]"; E571's "[convoy]/[Capture]".
+- **Postmortem.** Three of the seven readings misapplied a key word where the ledger's word was plain (E550 anna/Apple, E571 pilot) or missed a
+  compound (E543 tarquin+ty), and E465 summed two numeral words. Each was invisible without a clear copy; the holder and print sweep caught all four.
+
+### 5. Fixes for a FIX job (not applied to the reading here)
+- E550: "{time: 2 AM} police" -> "Anna police" = Annapolis (plain, C by clear copy 8561); "An [Sumter] is" -> "An Apple is" = Annapolis (plain sound-
+  spelling, C); "ditto ditto ditto" = "at Annapolis" repeated (note); header "(2 AM)" removed; note clear copy 8561.
+- E543: "tarquinty" -> [Necessary]ty = necessity (H by key, C by print); header "contingency" -> "necessity"; note OR I/46 pt 2 p.259; ledger "see that",
+  print "so that".
+- E571: "[Capture (-ed, -ing)]" -> "pilot" (plain, print "pilots"); header "with [convoy]" -> "with pilots"; note Grant Papers 14 (sender Babcock).
+- E465: "[25] AM" -> "[10] [15] AM" = 10.15 AM (Feeble 10, Ghost 15; C by clear copy 4788 and OR I/40 pt 3 p.142).
+- E542, E548, E562: note the clear-copy pointer; E562 header "[statement]" is an editorial gloss (clear copy has none).
+- Lead (not this audit's scope): leaf 5929's opening entry (12 Mar 1865, Glisson to the Sec. Navy, "Mahopac ... Cosco ... Montauk") has a holder clear
+  copy at 7818 (Page 160).
+
+### 6. Propagation and requests
+All seven N1, so no status.json, SO or AUD2 row (FV-MS18m/FV-MS18p rule; none of the seven had a row). None goes back to the NONE list: every hit held.
+E571's page in Grant Papers vol. 14 is not resolved (Google Books snippets carry no page; the IA item is `inlibrary`/`printdisabled`, its page map 403s
+without a loan) -- the class does not depend on it; a person with the volume can add it.
+Requests: hdl.huntington.org 17 (9 dmGetItemInfo, 7 IIIF leaves, 1 dropped connection on 5768 retried once after 25 s -> 200; under one take released in
+ROOM); www.googleapis.com 3; archive.org 1 (item metadata, made while another worker's archive.org take was open -- logged here, not repeated).
