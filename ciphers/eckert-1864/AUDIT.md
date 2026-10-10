@@ -17380,3 +17380,35 @@ punctuation; Niagara and John Odell are clear on the leaf): no clause.
   gap; E612 depth D3, depth_check, line; SECOND-OPINIONS-QUEUE.tsv SO-ECKERT-E620 withdrawn (N1); WORK-QUEUE AUD2-LEDGER14-2 -> done.
 - Requests: hdl.huntington.org 7 (all 200); be-api.us.archive.org 45 (2.2 s apart; one 502 retried once); archive.org 2 (advancedsearch); www.googleapis.com
   46 (1.6 s apart); api.openalex.org 5, api.semanticscholar.org 5 (three 429), api.crossref.org 5.
+
+## AUDIT (FV-L14d)
+
+First verifier FV-L14d (Opus 5.5, account 1, for LANE LEDGER-14), 10 Oct 2026 12:21-12:25 UTC (`date -u`); separate from every reader of E54
+(LS-R4), from LS-V4 and AUD2-LS-E, and from OR-CACHE. Scope: **E54 only** (Dyer to Capt. Edson, Fort Monroe, 5 Dec 1864 2.30 PM, mssEC 19 p.241,
+pointer 9135), the OR-CACHE lead "run of 8 words in OR I/44 p. 626" (NOTES "## OR-CACHE" (2); `print/or_cache_hits.tsv` row E54). Nothing decoded;
+no network request (the OR text is the cached `sources/ia-fulltext/print-check/warofrebellion44unit_djvu.txt.gz`). Intake gate re-run:
+"eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines".
+
+- **Page.** The text is on **p.627**, not p.626. In the cached djvu text the page header reads "Chap. LVI.] CORRESPONDENCE, ETC. - UNION. 62,7"
+  (OCR comma in "627"), then Geary 4 Dec, Kilpatrick 4 Dec, the Halleck order, and Meigs to Col. S. L. Brown, which runs over the next header "628".
+  OR-CACHE's page parser missed the comma-broken header and carried the previous page number; AUD2-LS-E's citation (p.627) is right. The
+  `or_cache_hits.tsv` page cell for E54 is a script artefact, not regenerated here (the script is OR-CACHE's).
+- **Printed text** (OR I/44 p.627): "WASHINGTON, D. C., December 5, 1864. SURGEON-GENERAL U. S. ARMY, Washington: The Secretary of War directs that all
+  supplies, stores, and material for General Sherman's army be immediately sent to Hilton Head, S. C., to be landed at such place, or places, as may be
+  there ordered. Competent officers of each department should be at that place to forward and issue stores without delay. ... H. W. HALLECK, Major-General
+  and Chief of Staff. (Copies to the Chief of Commissary Department, Chief Engineer, Chief of Ordnance, and the Quartermaster-General, Washington.)"
+- **Diff against E54's derived block** (reading.md, `decode.py --check` current): shared -- send immediately to Hilton Head [South Carolina]; supplies for
+  [Sherman's] army ("Kidnap's [Army]"); "landed ... at such place or places as may be then [there] ordered"; "issued" ~ "issue stores". E54's own and
+  not printed: the addressee Edson and "Confidential"; "ordnance supplies which have been ordered" (the print says "supplies, stores, and material");
+  the instruction to write to Lt Arnold, Ordnance Officer at Hilton Head, to hold the supplies on board vessel until landed; Dyer's signature and wording.
+  Context only, already logged by LS-V4: I/44 p.656 (Gray to Thomas's district, Dec 1864) "Lieutenant Arnold goes to Hilton Head about the ordnance" --
+  E54's Arnold, not E54. The 8-word run is the shared clause "at such place, or places, as may be there ordered" plus its neighbours.
+- **Ruling (G3 SUBSTANCE, prior-work-step.md item 5; the E49/E54/E72 precedent):** **keep N2.** A parallel order printed (Halleck's 5 Dec order, copied
+  to the Chief of Ordnance, which E54 relays to his officer the same afternoon); E54's own text and this cipher-to-plaintext mapping not located in
+  print. Not N1: the printed text is a different message to a different recipient, and E54's Arnold/hold-on-board clause and its ordnance wording are
+  not in it. OR-CACHE adds no new fact beyond the page check above. Key: ours (Cipher No. 1, key.md = mssEC 41, period). Depth unchanged (D3, 10/11 H).
+- **Safe sentence:** "E54 (Dyer to Edson, 5 Dec 1864) relays Halleck's order of the same day printed in OR I/44 p.627; Dyer's own telegram and its
+  decipherment were not located in print." **Unsafe:** "E54 is unpublished" / "first decipherment of an unknown order".
+- **Propagation:** class unchanged, so status.json, SECOND-OPINIONS-QUEUE.tsv (SO-ECKERT-E54 already withdrawn, citing p.627) and WORK-QUEUE need no
+  edit. NOTES "## OR-CACHE" (2) says p.626: corrected there by a one-line note.
+- Requests: none (cache only).
