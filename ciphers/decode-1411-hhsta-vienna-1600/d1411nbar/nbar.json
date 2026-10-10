@@ -1,0 +1,138 @@
+{
+ "prereg": "d1411nbar/PREREG-D1411NBAR.md",
+ "N": 308,
+ "T21r_pooled": 0.513,
+ "clean": {
+  "gloss63": 0.6129,
+  "tiled308": 0.6136,
+  "tiled308_T21r_roundtrip": 0.6136
+ },
+ "rates": {
+  "low": 0.06,
+  "central": 0.123,
+  "high": 0.25
+ },
+ "low": {
+  "bar_p05": 0.539,
+  "median": 0.5747,
+  "p95": 0.6039,
+  "mean": 0.573,
+  "noisy_shuffle_p99": 0.5162,
+  "noisy_shuffle_mean": 0.4405,
+  "noisy_shifted_max_p99": 0.4513,
+  "informative": true,
+  "T21r_percentile": 0.003
+ },
+ "central": {
+  "bar_p05": 0.4935,
+  "median": 0.5357,
+  "p95": 0.5812,
+  "mean": 0.536,
+  "noisy_shuffle_p99": 0.4968,
+  "noisy_shuffle_mean": 0.4253,
+  "noisy_shifted_max_p99": 0.4416,
+  "informative": false,
+  "T21r_percentile": 0.216
+ },
+ "high": {
+  "bar_p05": 0.4123,
+  "median": 0.4708,
+  "p95": 0.5195,
+  "mean": 0.4683,
+  "noisy_shuffle_p99": 0.474,
+  "noisy_shuffle_mean": 0.3956,
+  "noisy_shifted_max_p99": 0.4318,
+  "informative": false,
+  "T21r_percentile": 0.919
+ },
+ "secondary_split_merge_central": {
+  "bar_p05": 0.4858,
+  "median": 0.5318,
+  "p95": 0.5742,
+  "mean": 0.5316,
+  "noisy_shuffle_p99": 0.4984,
+  "noisy_shuffle_mean": 0.427,
+  "noisy_shifted_max_p99": 0.4459,
+  "informative": false,
+  "T21r_percentile": 0.246
+ },
+ "sweep_r_median_p05": [
+  [
+   0.0,
+   0.6136,
+   0.6136
+  ],
+  [
+   0.03,
+   0.5942,
+   0.5682
+  ],
+  [
+   0.06,
+   0.5747,
+   0.5325
+  ],
+  [
+   0.09,
+   0.5519,
+   0.513
+  ],
+  [
+   0.12,
+   0.5357,
+   0.4838
+  ],
+  [
+   0.15,
+   0.5195,
+   0.4708
+  ],
+  [
+   0.18,
+   0.5065,
+   0.4578
+  ],
+  [
+   0.21,
+   0.487,
+   0.4383
+  ],
+  [
+   0.24,
+   0.4675,
+   0.4123
+  ],
+  [
+   0.27,
+   0.461,
+   0.4058
+  ],
+  [
+   0.3,
+   0.4448,
+   0.3831
+  ],
+  [
+   0.33,
+   0.4253,
+   0.3701
+  ],
+  [
+   0.36,
+   0.4188,
+   0.3604
+  ],
+  [
+   0.39,
+   0.4091,
+   0.3539
+  ]
+ ],
+ "rate_where_median_equals_T21r": 0.165,
+ "gate": {
+  "bar_p05_central": 0.4935,
+  "informative": false,
+  "T21r": 0.513,
+  "verdict": "NON-TEST"
+ }
+}

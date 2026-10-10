@@ -952,20 +952,60 @@ encoding it through T21r and injecting number errors at the measured reader-erro
 on this transcription (the SALV-DIAG lesson: a control's error level must bracket the target's). Report: found as above; not found:
 a pooled coverage at or above the gloss bar. Novelty not classified.
 
-## Remaining gaps (AM-D1411P5, 7 Oct 2026; D1411-P6b, D1411-POOL, 10 Oct 2026)
+## D1411-NBAR step: noise-matched gloss bar for the de1600 coverage of frozen T21r (10 Oct 2026, account 2)
+
+Brief D1411-NBAR (LANE FAMILY-A2o, account 2). Disk only: no new reads, no image work, no table change. Prior work: `prior_work.py
+--step-type audit --offline` exit 4 on three own-claim LEADs (D1411-P6, D1411-POOL, this job), recorded CLEAR (both earlier claims
+closed by done lines; neither built the bar); check 1 by hand: "noise-matched" appears in NOTES only as D1411-POOL's named next step,
+no `d1411nbar/` existed. PREREG `d1411nbar/PREREG-D1411NBAR.md` + `d1411nbar/nbar.py` pushed in their own commit (8fc7340e8, checked
+on origin/main) before any noisy-bar number was computed.
+
+Design (all fixed in the PREREG): `gaps150/gloss_text.txt` tiled to N=308 (clean coverage 0.6136; single copy 0.6129), encoded through
+frozen T21r into numbers drawn from the pooled independent numerals by residue (fresh per seed), digit-substitution errors at
+registered rates (low 0.06 = about half the pass disagreement; central 0.123 = pooled p.4-p.6 pass disagreement 82/668; high 0.25),
+decoded with T21r, de1600 `cover` as `rescore_v.score`; 1000 seeds per rate. Controls per seed: the same encoded numbers in shuffled
+order with the same noise (noisy shuffle), and the noisy numbers under the 23 shifted rules (per-seed max). Bar B = p05 of noisy-gloss
+coverage at central r; informative iff B > noisy-shuffle p99 and > noisy-shifted p99.
+
+| rate | B = p05 | median | p95 | noisy shuffle p99 (mean) | noisy shifted p99 | informative | percentile of T21r 0.513 |
+|---|---|---|---|---|---|---|---|
+| low 0.06 | 0.539 | 0.575 | 0.604 | 0.516 (0.441) | 0.451 | yes | 0.3% |
+| **central 0.123** | **0.4935** | 0.536 | 0.581 | **0.4968** (0.425) | 0.442 | **no** | 21.6% |
+| high 0.25 | 0.412 | 0.471 | 0.520 | 0.474 (0.396) | 0.432 | no | 91.9% |
+| central, split/merge model (reported) | 0.486 | 0.532 | 0.574 | 0.498 (0.427) | 0.446 | no | 24.6% |
+
+Sweep (200 seeds, median): r 0.00 0.614, 0.06 0.575, 0.09 0.552, 0.12 0.536, 0.15 0.520, 0.18 0.507, 0.21 0.487, 0.30 0.445; the median
+falls to T21r's 0.513 at r = 0.165. `nbar.py --check` exits 0.
+
+**Pre-registered verdict: NON-TEST.** At the measured central reader-error rate the noise-matched bar (p05 0.4935) falls to the
+noisy order-shuffle level (p99 0.4968): on this reference text at N=308, de1600 coverage cannot separate a correct table read through
+12% digit error from the same numbers out of order, so the bar licenses nothing (rule 3). Observations, not verdicts: T21r's pooled
+0.513 lies inside the central noisy band (21.6th percentile, above B), i.e. reader error at the measured rate is enough to produce a
+gap of this size from a correct table; but at the low rate (0.06), where the bar is informative, T21r sits below it (0.513 < 0.539,
+0.3rd percentile). So the gap is explained only if the reconciled per-number error is about 0.10 or more, and not if it is about 0.06:
+the question now turns on the true reconciled error rate, which no figure in the folder measures directly (pass disagreement is
+between two single passes, not reconciled-vs-truth). A post-hoc pointer, not gated: the folder's one reconciled-vs-reconciled figure
+(p.2 vs its p.5 copy, 13 of 95 differ, D1A-D1411 found one genuine copy variant) would put each reconciled transcription near 6%,
+which is the low rate. The noisy-shuffle p99 on the gloss (0.497 at central) sits above the real pooled shuffle p99 (0.458), because
+the gloss's letter mix differs from the numerals' -- a further reason this 63-letter reference is narrow.
+
+Token grades unchanged (S 0 on every page; no S written). Vision: none. Requests: none (disk only). Report: found as above; not found:
+an informative noise-matched bar at the measured central rate. Novelty not classified.
+
+## Remaining gaps (AM-D1411P5, 7 Oct 2026; D1411-P6b, D1411-POOL, D1411-NBAR, 10 Oct 2026)
 Read so far: 0 cipher numbers at S (AM-D1411V withdrew AM-D1411P5's 114 p.5 S grades: the PASS rests on a copy of the p.2 text T21r was built on; independent p.5 numerals beat controls but stay 0.025 below the gloss); p.1 gloss pairs C 54 of 62; f.184 gloss pairs M 10; p.4 gloss pairs M 42; p.5 gloss pairs M 26; p.6 gloss pairs M 11 (D1411-P6b, no PASS); other numbers M
 - p.5 left page = second copy of p.2 (13 of 95 aligned numbers differ) - blocker: waiting-on ASKS row 120 (a person's read); D1A-D1411 (8 Oct) settled 2 of 13 (57, 17) and found 1 genuine copy variant (12/22) by a blind per-number tile read with a passed exemplar control (30/31); the other 10 stay unsettled for this machine instrument (both reads unsure or matching neither candidate) -- the 10 tiles (d1a/settled.tsv, montages d1a/montage/) can join the person's read of ASKS row 120
-- unglossed numerals p.3, p.4, p.5 right page, p.6 - blocker: not-attempted; the de1600 coverage-vs-gloss gate on independent numerals is retired by rule 3's third-attempt clause (D1411-POOL, 10 Oct: pooled p.4+p.5+p.6 independent N=308, T21r 0.513 beats order shuffle p99 0.458 and shifted 0.393 but is 0.100 below the gloss bar; per-page p.3 0.563, p.4 0.429, p.5 0.588, p.6 0.500); next: a different instrument -- a noise-matched gloss bar (gloss text encoded through T21r with number errors injected at the measured reader-error rate, d1411pool/), disk only, ~$1.5
+- unglossed numerals p.3, p.4, p.5 right page, p.6 - blocker: not-attempted; the de1600 coverage-vs-gloss gate on independent numerals is retired by rule 3's third-attempt clause (D1411-POOL, 10 Oct: pooled N=308, T21r 0.513 beats order shuffle p99 0.458 and shifted 0.393 but is 0.100 below the clean gloss bar); the noise-matched bar (D1411-NBAR, 10 Oct) is a NON-TEST at the measured central rate 0.123 (bar p05 0.4935 vs noisy-shuffle p99 0.4968), informative only at r 0.06 where T21r falls below it (0.513 < 0.539); next: measure the reconciled per-number reader-error rate on the pooled independent numerals against a person-settled sample (the ASKS row 120 read, or a sign-sorter focus list of a random 40-number sample), pre-registered, then apply the already-registered low/central bar at that rate, disk-side ~$1.5 after the person's read
 - p.4 4/5 residual (25 of 83 tiles unsettled, la2/applied.tsv) - blocker: waiting-on ASKS row 120 (a person's read; the 25 tiles can be added to that read or to a sign-sorter focus list); machine re-reads retired for this question
 - gloss letter identities (z/r at 21, n/u, residue 14) - blocker: waiting-on ASKS row 120 (a person's read of the gloss); p.5 adds 26 pairs; residue 12 = h now favoured by p.5's letter test
-- pages 7-12 numerals - blocker: not-attempted; full-size images re-fetchable with one DECODE login (absolute filesrv URL works, D1411-P6b); more pages under the retired coverage-vs-gloss gate are not a remedy (D1411-POOL); next: read p.7 only once the noise-matched bar exists, or for glossed numbers under the letter-level gloss-agreement test, ~$5 per page
+- pages 7-12 numerals - blocker: not-attempted; full-size images re-fetchable with one DECODE login (absolute filesrv URL works, D1411-P6b); more pages under the retired coverage-vs-gloss gate are not a remedy (D1411-POOL); next: read p.7 only once the reconciled error rate is measured (the noise-matched bar exists, D1411-NBAR, but is a NON-TEST at the pass-disagreement rate), or for glossed numbers under the letter-level gloss-agreement test, ~$5 per page
 
-## Escalation (AM-D1411P5, 7 Oct 2026; D1411-P6b, D1411-POOL, 10 Oct 2026)
+## Escalation (AM-D1411P5, 7 Oct 2026; D1411-P6b, D1411-POOL, D1411-NBAR, 10 Oct 2026)
 - [x] siblings: GAPS136/GAPS137 checked the Ferdinand III posts and the Kopal Cyffra nova key (inconsistent sign class); p.5 left page found to be a second copy of p.2 (AM-D1411P5); p.6 right page a further copy of p.2 (D1411-P6b)
 - [x] clear-pages: clear words around the cipher read in GAPS137; context words used only as post-hoc observation
 - [x] known-keys: Cyffra nova ad Poloniam tested in GAPS137, inconsistent at step 1
 - [ ] print: no printed edition of this letter located yet; planned print_check of the post-hoc words once a verifier accepts a PASS
 - [x] key-rebuild: period gloss table (GAPS141), residue rule (GAPS146), residue 21 = r (DEF1-1411, D4-1411P3, R12A-D1411P4), residue 12 = h favoured on p.5 and T21r_h12 PASS on p.5 (AM-D1411P5) voided by AM-D1411V: in-sample copy of p.2; independent p.5 below gloss
 - [x] image-check: D1A-D1411 (8 Oct) per-number tile comparison of the 13 p.2/p.5 copy differences: 2 settled, 1 genuine variant, 10 unsettled (control 30/31); remainder to a person's read (ASKS row 120)
-- [retired] retry: the de17/de1600 4-gram language judge as gate, retired by GAPS157 third-attempt clause; the de1600 coverage-vs-gloss gate on independent numerals, retired by D1411-POOL (10 Oct) third-attempt clause (pooled N=308 beats shuffle, 0.100 below gloss); also retired for the p.4 4/5 look-alike: machine re-read by a Sonnet shape reader (line crops R12A-D1411LA, then per-number tiles D07-D1411), a person's read is the remaining route
-Verdict: keep going: 2 internal gaps; cheapest next: a noise-matched gloss bar for the coverage statistic (gloss text through T21r with reader-error injection at the measured rate), disk only, ~$1.5; the p.2/p.5 copy differences go to a person's read (ASKS row 120)
+- [retired] retry: the de17/de1600 4-gram language judge as gate, retired by GAPS157 third-attempt clause; the de1600 coverage-vs-gloss gate on independent numerals, retired by D1411-POOL (10 Oct) third-attempt clause (pooled N=308 beats shuffle, 0.100 below gloss); the noise-matched gloss bar (D1411-NBAR, 10 Oct) a NON-TEST at the central measured rate (falls to noisy-shuffle level), informative only at r 0.06; also retired for the p.4 4/5 look-alike: machine re-read by a Sonnet shape reader (line crops R12A-D1411LA, then per-number tiles D07-D1411), a person's read is the remaining route
+Verdict: keep going: 2 internal gaps; cheapest next: measure the reconciled per-number reader-error rate on the pooled independent numerals against a person-settled sample (folds into the ASKS row 120 read), then the noise-matched bar of D1411-NBAR at that rate decides; the p.2/p.5 copy differences go to a person's read (ASKS row 120)
