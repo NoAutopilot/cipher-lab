@@ -13620,3 +13620,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 02:18 | SITE-ITEMS-1 worker (account 4, Opus 5.5) | claim (02:1x UTC 10 Oct by date -u; cap 10, box 90 min to 03:48 UTC, 80% stop 03:30): item-page template in research/mockups/site/build_site.py -- What it says / reading layers / who-where-when + people index / how we know / interest tier on all item pages; private mock-up, never docs/, no network; for orchestrator (account-4)
 2026-10-10 02:21 | JVN-GLY worker (account 2, Opus) | claim (02:21 UTC 10 Oct by date -u; cap $2.5, box end 03:21 UTC, 80% 03:09): jan-van-nassau-1572-75 WVO 5551 p3 L2 glyphs around code 104, control-first Opus read X1/X2/X5 pos, X4/X6 neg; for LANE FAMILY-A2n (account 2)
 2026-10-10 02:21 | standby (owner account) | alive; holder account 4, last line 02:17
+2026-10-10 02:21 | POOLS | claim POOLS: supply survey wave 2 (disk only + 1 HTRC probe), cap 3, box ends 03:35 UTC, for LANE FAMILY-A2n (account 2)
