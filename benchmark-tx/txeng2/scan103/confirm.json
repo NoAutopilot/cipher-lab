@@ -1,0 +1,40 @@
+{
+ "R": 6655,
+ "R_grid": 6650,
+ "best_s": 6500,
+ "distance_letters": 155,
+ "points": {
+  "6500": {
+   "real": 0.6139,
+   "mean": 0.4311,
+   "p95": 0.5017,
+   "max": 0.5565,
+   "margin_max": 0.0574,
+   "margin_fair": 0.0357,
+   "rank": 1
+  },
+  "6650": {
+   "real": 0.6043,
+   "mean": 0.4265,
+   "p95": 0.498,
+   "max": 0.5573,
+   "margin_max": 0.0469,
+   "margin_fair": 0.026,
+   "rank": 1
+  },
+  "6655": {
+   "real": 0.6049,
+   "mean": 0.4264,
+   "p95": 0.498,
+   "max": 0.5573,
+   "margin_max": 0.0476,
+   "margin_fair": 0.0267,
+   "rank": 1
+  }
+ },
+ "best_offset_null": {
+  "null_best_mean": 0.4838,
+  "null_best_p95": 0.546,
+  "null_best_max": 0.5782
+ }
+}
