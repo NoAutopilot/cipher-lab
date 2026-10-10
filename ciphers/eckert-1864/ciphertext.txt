@@ -4321,3 +4321,149 @@ in whose charge he is sent to allow
 no plainfield shun by or with him Brutus
 note: MS18-R7 (a mssEC 19 row, the sent ledger of 1865, found by AUD2-LEDGER-33; mssEC 19 p.364): No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .42/.39/.17; No. 2 reads Butler/Ammunition nonsense and the meaning-shuffled copy gives the same H count, so the count control cannot fail and licenses nothing: sense decides). Image (ledger page 364): transcription matches line by line; the first entry on the leaf (9258/1, Gilmore at Charleston, 15 July 1865) is not read here. Content: the 27 July 1865 answer in the Ryan case of E358 (Bvt Brig. Gen. E. Barton, Provost Marshal, Memphis, whose 24 July sibling is 10043/2); 'send forward the witness' is the object of AUD2-LEDGER-33's sibling link. Not located in print: letters-only phrase grep over cached and scratch OR volumes ('Spare no pains to find', 'action in respect to Ryan': none); no OR volume was read for July 1865 (not attempted). Holder: 'Ryan witness Somerville Memphis' returns 9258 only (this page).
 note: FIX-FM20 (10 Oct 2026; AUDIT FV-MS18o s.5, AUD2-LEDGER-38 s.4): hour 11 AM (fanny, H); signer the Secretary of War (Brutus, H); context: holder 7978 (Barton's reply, 28 July 1865) and 7976 (26 July, the informant-witness). Class N1 (AUD2-LEDGER-38): the holder's public transcription of 9258 already carries the message in clear.
+
+### E382 | Page 343 | 10003 | mssEC 18 (obj 10074, pointer 10003; printed page 337), 7 May 1865 Washington (the ledger time word reads 8 AM; the print has 7 p.m.), S. T. Lines at Macon Ga. (operator), for Bvt. Maj. Gen. J. H. Wilson at Macon, signed Secretary of War: the President directs that you immediately arrest Joseph E. Brown, who pretends to act as Governor of Georgia, and send him in close custody under sufficient and secure guard to Major-General Augur at Washington; allow him to hold no communication, verbal or written, with any person but the officer having him in charge; acknowledge by telegraph the hour at which you receive this order and report your action; printed OR I/49 pt 2 p.647 (MS18-R8; row 10003/2; leaf image-read at 2400 px (own lines))
+S. T. Lines Macon Ga.  Washington D. C. May 7 1865
+Growl Deborah may postpone for Shelby will son
+Dismal unity The Ida directs that you immedy
+oakum Joseph E Brown who pretends to act
+as Gov of Argus & send him in
+close cus toddy under sufficient & secure saddle
+to tappan Shelby Augur at Grapes & allow
+him to hold no platation verbal or written
+with any person but the ofcr having him
+in charge Oxide rect of this order Zebra
+You will acknowledge by wrangle the hour at
+which you receive this order & wick your
+action zodiac By order torch Ingot torch U
+night head states youth Infant not much infant
+note: MS18-R8: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .42/.38/.15): No. 1. Printed OR I/49 pt 2 (IA warofrebellion492unit; the item stands before the running head 648): Stanton to Wilson, War Department, Washington City, 7 May 1865 7 p.m., word for word; C against the print. The ledger's time word decodes 8 AM and the print has 7 p.m. (not resolved, M); Wilson's Special Orders No. 73 of 9 May cite 'instructions received from the Secretary of War, dated May 7, 1865, 8 a.m.' for the same arrest (printed in the same volume; context only). The decoder renders the plain word 'person' as [5] (a key row, slip, M, not a key edit); 'Oxide'/'Afide' before 'rect of this order' is written with an unclear first letter on the leaf (read 'Oxide', decoded [After the], M). Image (ledger page 337): the lower lines of the entry match the transcription; the first lines (above the crop) are holder transcription only.
+
+### E383 | Page 388 | 10048 | mssEC 18 (obj 10074, pointer 10048; printed page 382), 2 Sept 1865 Washington (hour 2.30 PM), Geo. Gallup (operator), for Maj. Gen. H. W. Slocum, signed Thomas T. Eckert, acting assistant [Secretary of War]: upon the [19th] of August Gov. Sharkey issued a proclamation calling for the formation of militia companies in each county to detect criminals, prevent crime and preserve good order in places where the military forces of the United States were insufficient to do so; if you have issued any order countermanding this proclamation or interfering with its execution you will at once revoke it; acknowledge receipt and report your action; send copy to Gov. Sharkey at [Jackson]; not located in print (MS18-R8; row 10048/1; leaf image-read at 2400 px (own lines))
+Geo Gallup  Wash'n Sept 2nd 1865
+Growl Sept Peach Henrietta for Myrtle zebra Up on
+the hope of August Gov Sharkey issued a proclamation
+calling for the formation of militia companies in each
+county to detect criminals prevent crime and preserve good
+order in places where the military salems torch united
+states were in sufficient to do so unity If
+you have issued any order countermanding this proclamation or
+interfering with its execution you will at once revoke
+it Zebra acknowledge receipt of this order and wrangle
+your action on it Zodiac By order torch ingrate
+yoke Thomas T Eckert Actg asst brutus send copy
+to Gov Sharkey at chapel Zebra How is this
+note: MS18-R8: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .31/.26/.12): No. 1 (September 1865: no 1865 HEAD share row for this pointer, so the whole-entry share stands; No. 2 and the shuffled copies read the same H count but nonsense in the head and tail; sense decides, 'no book in hand' not needed). Image (ledger page 382): the lower lines of the entry match the transcription line by line, including the signature 'Thomas T Eckert Actg asst' and the tail 'to Gov Sharkey at chapel Zebra How is this'. The date of the proclamation is decoded [19] (the key's number row; Gov. W. L. Sharkey's militia proclamation of 19 Aug 1865 is context, M for the digit). Not located in print: phrase grep (cached and scratch OR volumes: 'formation of militia companies', 'countermanding this proclamation' none) and date-window search of OR I/49 pt 2 for 2-3 Sept 1865 headings (2 headings, none with the terms; the volume carries Sharkey only at 1027 and in the index); no Sept 1865 print source was read (not attempted).
+
+### E384 | Page 225 | 9885 | mssEC 18 (obj 10074, pointer 9885; printed page 219), 2 Oct 1864 Washington (hour 2 PM), John Horner at New York (operator, label 2), for Maj. Gen. John A. Dix: would it not be well for you to publish a notice to the Inspectors and other officers of Election in New York requesting them to keep a register of the names and residence of all persons who present Soldiers' proxies or make any affidavit in relation thereto, so that such persons may be identified and, if the vote on investigation proves forged or fraudulent, the person producing it can be proceeded against and punished for his crime; this may deter the production of many fraudulent votes; signed [Secretary of War, M]; not located in print (MS18-R8; row 9885/1; leaf image-read at 2400 px (own lines))
+John Horner  Wash'n Oct 2nd 64
+Growl Helen Plank for Kunkle zebra would it not be
+well for you to publish a not ice to the
+Inspectors and other officers of Election in Frog requesting them
+to keep a register of the names and residence of
+all persons who present Soldiers proxies or make any affidavit
+in relation there to so that such person may be
+identified and if the vote on investigation proves to be
+forged or fraudulent the person producing it & so forth
+can be proceeded against and punished for his crime zebra
+This may deter the production of many fraudulent votes Infant
+note: MS18-R8: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .34/.22/.08): No. 1. Image (ledger page 219): the entry's last eight lines match the transcription line by line (the entry above them on the leaf was not read); the next entry on the leaf is 9885/2 ('Ed Schermorhorn H. Ferry', Wash'n Nov 2d 1864, not read here). The decoder renders the plain word 'publish' as [100] and 'person' as [5] (key rows, slips, M). Not located in print: phrase grep ('Inspectors and other officers of election', 'register of the names and residence', 'soldiers proxies', 'fraudulent votes' none) and date-window search for 2-3 Oct 1864 headings with Dix/New York/Stanton and proxies/affidavit/Inspectors in OR I/41 pt 3, I/41 pt 4, I/42 pt 2, I/42 pt 3, I/43 pt 2 (every dated heading in the window, 0 with the terms); OR ser. III vol. 4 (soldiers' voting, Oct 1864) was not read (not attempted).
+
+### E385 | Page 227 | 9887 | mssEC 18 (obj 10074, pointer 9887; printed page 221), 3 Nov 1864 Washington (hour 6.30 PM), John Horner at New York (operator), for Maj. Gen. John A. Dix, struck through on the leaf by one diagonal line and marked 'Not sent': the troops going to New York are from General Butler's army and he should have their immediate command under you and be relieved from any apprehension that his troops were to be taken from him; their station would be in the forts and city; those points were designated without any purpose of limiting or controlling your authority as commander in chief; the peculiar form of the order, if it has any peculiarity; draft not sent; not located in print (MS18-R8; row 9887/0; leaf image-read at 2400 px (own lines))
+John Horner New York  Washn Nov 3d 1864
+Mary perfume For Kasson Unity The whist going to France
+are from Knaves opal and he should have their immediate
+polka under you and be relieved from any apprehension that
+his whiff were toby taken from him zebra sufforing their
+station would be Stephen Sacos and city those vernons were
+designated but with out any purpose of limiting or controling
+your authority as polkaer in Chief zodiac The peculiar form
+of the order if it has any peculiarity
+Not sent
+note: MS18-R8: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .38/.33/.21): No. 1 (No. 2 and No. 9 read a few groups of nonsense; sense decides). Image (ledger page 221, whole entry on the crop): the transcription matches line by line, and one diagonal stroke crosses the whole entry from the upper right to the lower left with 'Not sent' written below; 'the whist going to France' is the clerk's own word (decoded 'troops going to New York': 'whist' and 'France' are code words, M for 'New York'). The entry replies in kind to Dix's 3 Nov 1864 4 p.m. telegram to Stanton ('I should not make the inquiry but for the peculiar form of the order'), printed OR I/43 pt 2 (before the running head 536); the SENT replies are different texts: Stanton to Dix, 3 Nov, 'You will understand that in assigning General Butler to report to you it is not designed in any way to impair or interfere with your supreme command' and 'When you called for several thousand troops it was supposed that ...' (OR I/43 pt 2 pp.535-536, read to compare). The ledger draft is not that text. Not located in print: phrase grep ('immediate command under you', 'apprehension that his troops' none) and date-window search of OR I/42 pt 3, I/43 pt 2: only the sent replies above.
+
+### E386 | Page 181 | 9841 | mssEC 18 (obj 10074, pointer 9841; printed page 175), 13 Sept 1864 Washington (hour 4.30 PM), to O'Brien, for Maj. Gen. Butler [M], signed [President, M]: the Ames guns: I am under promise to pay, or rather to advise paying, a very high price for [the plain word pekin, not in the key] provided they bear the test and they are not yet tested; I could not be justified to pay the extraordinary price without the testing; I shall be happy to let you have some of them as soon as I can; how comes on your can [all]; not located in print (MS18-R8; row 9841/0; leaf image-read at 2400 px (own lines))
+430 pm to OBrien  Washn Sept 13th 1864
+Katy Fever for Knox zebra The Ames shoals I am
+under promise to pay or rather to advise paying a
+very high price for pekin provided they bear the test
+and they are not yet tested zodiac I could not
+be justified to pay the extra ordinary price without the
+testing I shall be happy to let you have some
+of them so soon as I can unity How comes
+on your can all webster Bologna
+note: MS18-R8: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .35/.23/.15): No. 1. Image (ledger page 175, whole entry on the crop): the transcription matches line by line; the signature word is 'webster Bologna' on the leaf. The decoder renders the plain words 'bear' and 'happy' as [Bowling Green] and [Lee] (key rows colliding with ordinary words: slips, M) and 'pekin' stays unread; the recipient 'Knox' = Butler is the key's reading (M). Not located in print: phrase grep ('Ames guns' occurs in the OR only in other contexts; 'under promise to pay', 'extraordinary price without the testing' none) and date-window search of 13-14 Sept 1864 headings in OR I/41 pt 3, I/42 pt 2, I/43 pt 2 (99, 79 and 44 dated headings; 7 with the Butler/Knox/Ames terms, none this text). The Ames Manufacturing Company's guns for Butler's army are context, not read.
+
+### E387 | Page 395 | 10055 | mssEC 18 (obj 10074, pointer 10055; printed page 389), 23 Sept 1865 Washington (hour 12 m), J. W. Sampson at Lynchburg (operator), for Capt. [M. H.] Alberger at Lynchburg, signed Thos. T. Eckert, acting assistant [Secretary of War]: you have permission to visit Washington as you request in your telegram of the [21st], by leaving a competent and reliable officer in charge of your affairs; on arrival here report to me; another for Jno. Odell at Lynchburg: return with Captain Alberger to Washington unless you are necessary at Lynchburg, signed L. C. Baker, Brigadier General; holder clear context 8823 (Odell, Lynchburg, 23 Sept 1865 9.30 AM); not located in print (MS18-R8; row 10055/0; leaf image-read at 2400 px (own lines))
+12 m JW Sampson Lynchburg  Wash Sept 23 1865
+Growl harsh pebble Francis for pilgrim Alberger Dresden
+You have permission to visit grapes as you
+request in wrangle of harrow plug by leaving
+a competent and reliable officer in charge of
+your affairs Zebra on arrival here report to
+me yoke Thos T Eckert actg asst Bruno
+Zodiac another for Jno Odell Dresden Zebra Return
+with princess Alberger to growl unless you are
+necessary at Dresden youth L C Baker Palsy
+note: MS18-R8: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .51/.40/.17): No. 1 (September 1865: no HEAD share row, whole-entry share stands; No. 2 and the shuffled copy read nonsense, 'no book in hand' not needed). Image (ledger page 389, entry on the crop up to 'unless you are'): the transcription matches line by line (the last two lines are holder transcription only). Holder clear context, pointers 8823 (leaf 345 of the received ledger, 3 PM 18th Boston Sept 18 and '1030 AM Lynchburg Va Sept 23 1865: Lynchbg 930 AM twenty three for Genl Baker ---- there is a proposition to rob the Govt of money in Capt Albergers hands cannot explain by telegraph ---- I think Capt Alberger had better come to Washn with me and you have a talk with him It implicates some parties high in authority sig John Odell and ...'), 8004 (Recd 4.35 PM Lynchburg 26 Sept 1865 Alberger to Genl Baker: 'every thing has been arranged except the time ... a perfectly bona fida arrangement'), 8003 and 8825: these are Alberger's and Odell's own received telegrams, the other side of this exchange; none is a clear copy of this telegram (CISOSEARCHALL 'Alberger Lynchburg Baker' returns 10055, 8003, 8004, 8823, 8825). The answer relation to 8823 is by sense (C for the relation, not for a key). 'Zebra', 'Francis', 'Bruno' and the head words are code or null words (M).
+
+### E388 | Page 34 | 9694 | mssEC 18 (obj 10074, pointer 9694; printed page 28), 4 April 1864 Washington (hour 8 PM), F. S. Van Valkenburg (operator, label 1), for Maj. Gen. W. T. Sherman at Nashville, signed [Grant, M] (ledger 'John'; the print has U. S. Grant): the Eleventh and Twelfth Corps will be consolidated into the First Corps, Maj. Gen. Joseph Hooker commanding; General Howard will command the Fourth Corps, General Schofield the Twenty-third; relieve General Gordon Granger, assign General Slocum to command Vicksburg District and Newton to a division or wherever else you think best; ledger tail 'Do not split No 5 NY'; printed OR I/32 pt 3 p.247 (MS18-R8; row 9694/1; leaf image-read at 2400 px (own lines))
+F. S. Van Valkenburg ( 1 ) Wash'n DC Apr. 4th 1864 8. PM
+Growl April Pension Nancy For Kennebec Empress unity
+The Flag and Flood Pelton will be consoli -
+dated in to the first Pelham Language Polkaing
+Zebra Madrid will Pontiac the Penny Pelton Pekin
+Kiss the Harsh Pebble Zodiac Relieve Lobster Pedlar
+as sign Myrtle to Polka Girls District and
+Newton to a quitman or where - ever else
+you think best yoke John Do not split
+No 5 NY
+note: MS18-R8: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .70/.52/.09): No. 1. Printed OR I/32 pt 3 (IA warofrebellion323unit; the item sits between the running heads 247 and 248, after Grant's letter to Sherman of the same day): Grant to Sherman, Washington 4 April 1864 8 p.m., word for word; C against the print (the two corps numbers, Hooker, Howard, Schofield, Granger, Slocum and Newton are the print's, matching the key's readings). Image (ledger page 28, last lines of the entry): the transcription matches, and the page carries small interlinear pencil words above a few groups of this entry's last lines ('better', 'badly', 'way', '5', '3', and a marginal note beginning 'Navy ... Small Torn ...') that the holder transcription does not carry: hand not determined, not read here (a lead, not graded). The entry below it (9694/2, Apr 5 3 PM, 'Pagan Apr 4 ...' for Van Vleet) is not read here.
+
+### E389 | Page 243 | 9903 | mssEC 18 (obj 10074, pointer 9903; printed page 237), 2 Dec 1864 Washington (hour 4 PM), John Horner (operator, label 1), for Capt. [?] at [New York], signed A. B. Dyer, Brigadier General: procure immediately [6,700] and [20?] sacks suitable for holding [flour?], each sack to hold [100] pounds; send the sacks with despatch to Captain Edson at [Fort Monroe]; flour sacks will probably answer; they are needed at once; not located in print (MS18-R8; row 9903/1; leaf image-read at 2400 px (own lines))
+John Horner  Wash'n Dec 2nd 1864
+Growl Julia Peach for Pilgrim Cry spin No Leg Person
+Worth Straight France zebra Procure immy Plague Promise Plunder Publish
+and Harsh saxe suitable for holding prouder each sack to
+hold Plug Prolong pounds zebra Send the Saxe with despatch
+to Princess Edson Appian unity Flour Saxe will probably answer
+zodiac They are needed at once A. B. Dyer Palsy
+2
+note: MS18-R8: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .47/.23/.13): No. 1 (the whole-entry share is the widest of the ten; No. 2 reads 11 groups of nonsense). Image (ledger page 237, whole entry): the transcription matches line by line, including the signature 'A. B. Dyer Palsy'; the next entry on the leaf is 9903/2 (Beckwith, Wash'n Dec 3d 1864 10 am, not read here). Several lines carry code words the key does not give ('Cry spin No [45] Worth Straight' and 'Plague Promise Plunder Publish' read as [45], [6700], [20] and 'sacks' by the key's number rows; M for every number). Not located in print: phrase grep ('sacks suitable for holding', 'each sack to hold', 'flour sacks will probably answer' none) and date-window search of 2-3 Dec 1864 headings in OR I/42 pt 3, I/43 pt 2, I/45 pt 2 (about 230 headings, none with the terms). The correspondent A. B. Dyer (Chief of Ordnance), Edson and Monroe are the key's readings; the order is for sacks of powder or flour, not read.
+
+### E390 | Page 220 | 9880 | mssEC 18 (obj 10074, pointer 9880; printed page 214), 31 Oct 1864 Washington (hour 3 PM), Capt. G. H. Smith at St Louis (operator), for Maj. Gen. W. S. Rosecrans, signed [Halleck], General in Chief: General Curtis telegraphs that you have ordered the troops back from the pursuit of Price, directing General McNeil to Rolla and General Sanborn to Springfield; the orders of General Grant and [General Hurlbut, M; the print has General Canby] are that the pursuit must be continued to the Arkansas or until you meet the forces of Steele or Reynolds; these orders must be obeyed; printed OR I/41 pt 4 p.343 (MS18-R8; row 9880/2; leaf image-read at 2400 px (own lines))
+Capt GH Smith St Louis  Washn Oct 31st 1864
+Imogene Monday for Moon unity Shelter Curtis wrangles that
+you have ordered the whiskey back saxon vermont of
+Price directing Shelby Mc Neil to Rolla and Shelter
+Sand bourn to spring field zebra The orders of
+John and Lehigh are that the vermont must be
+continued tooth Archery or until you meet the saints
+of Mellow or Montrose These orders mustby obeyed Bennet
+note: MS18-R8: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .51/.44/.29): No. 1 (No. 9 reads 12 groups of nonsense and its share is the closest of the ten to No. 1's, so the sense decides). Printed OR I/41 pt 4 (IA warofrebellion414unit; the item stands between the running heads 342 and 344): Halleck to Rosecrans, Washington, 31 Oct 1864 3 p.m., word for word; C against the print. Differences: the ledger's second general is read [Hurlbut] by the key and the print has General Canby (M, unresolved: a key question for the KEY lane, not an edit); 'Springfield' is decoded [Has, or have been, reinforced] (a decoder slip: the key's row for the code word collides with the plain word, M). The ledger's 'Rosecrans' is the key's reading of 'Monday' (C by the print). Image (ledger page 220, last four lines of the entry): matches the transcription.
+
+### E391 | Page 112 | 9772 | mssEC 18 (obj 10074, pointer 9772; printed page 106), 3 July 1864 Washington (hour 8 PM), J. W. Sampson (operator), for John W. Garrett [President of the Baltimore and Ohio Railroad], signed [Stanton, M]: General Hunter has been under orders three days ago to move his forces up to the threatened points; Sullivan's cavalry should have been up before now; then, on the same entry, a second message '1.25 AM 4th, W. B. Gilmore, Chambersburg, Baltimore, third midnight, for [Couch? M]': Have you any information as to the movements of the enemy in the Valley, of the safety of Sigel's trains, or of any engagement he has had with the rebels? Please answer by telegraph, signed Lew Wallace; and '[Balto 4th] for [Couch? M]': obliged to you for telegram; please keep me posted as well as you can of the enemy's movements, anything definite as to their strength, signed Lew Wallace; the Stanton-to-Garrett message and Wallace's 12 m 3 July question are printed OR I/37 pt 2 pp.18 and 32; Wallace's second message not located (MS18-R8; row 9772/0; leaf image-read at 2400 px (own lines))
+JW Sampson Wash July 3d 1864
+Nancy for John W Garrett zodiac
+Mutton has been under orders pebble
+days ago to move his saints
+up tooth wheighed vernons zebra Dangers
+pacific should have been up before
+now yoke Brutus keep hand in
+125 AM 4th WB Gilmore Chambersburg
+Baltimore third midnight for Koran Myrtle
+Have you any information as to
+the movement of the Olive in
+the Valley of the safety of
+pagan Sigels trains or of any
+engage meant he has had with
+the rebels Please answer by telegraph
+sig pagan Lew Wall ace end
+WB Gilmore Chambersburg
+Balto 4th for Koran Myrtle period
+obliged to you for telegram Please
+keep me posted well as you
+can of olive move ments any
+thing definite as to their strength
+signed Pagan Lew Wall lace fourth
+note: MS18-R8: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .29/.30/.12): the shares tie No. 1 and No. 2 within 0.01; No. 1 reads sense (Grant, Garrett, Hunter, Sigel) and No. 2 reads Imboden/Reconnoissance nonsense, so No. 1 by sense. Printed OR I/37 pt 2 (IA warofrebellion372unit): (1) Stanton to John W. Garrett, Baltimore, War Department 3 July 1864, 'General Hunter has been under orders three days ago to move his forces up to the threatened points. Sullivan's cavalry should have been up before now', p.18 (before the running head 19), word for word; C against the print ('John' in the ledger header is the plain first name of Garrett; the decoder renders it [Grant]: slip, M; 'pacific' = Sullivan's, 'Dangers' = null, M). (2) Wallace to Couch, Headquarters Middle Department, 3 July 1864 12 m, 'Have you any information as to the movements of the enemy in the Valley, of the safety of Sigel's trains, or of any engagement he has had with the rebels? Please answer by telegraph', near the running head 32, word for word; C against the print for that message (the ledger gives 'third midnight' and the transmission time 1.25 AM 4th, the print 12 m: not resolved, M). Wallace's second message ('obliged to you for telegram', 'keep me posted') was not located in print (phrase grep none). Image (ledger page 106, first six lines and the next header '1.25 AM 4th W B Gilmore Chambersburg Baltimore third midnight for Koran Myrtle'): the transcription matches. W. B. Gilmore is the Chambersburg operator; 'Koran Myrtle' (decoded Mower, Slocum) is read M and is probably Couch (a key question).
