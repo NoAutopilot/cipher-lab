@@ -18361,3 +18361,88 @@ eckert-1864, so `judge_plaintext.py` was not run. Step 0 not used. Scripts: `for
   as this session's first take, so the two overlapped by about a minute); archive.org 6 (1 advancedsearch reset + 1 retry reset, 1 metadata 200, 1
   advancedsearch 200, Plum djvu 502 then 200, O'Brien djvu reset), >= 2 s apart; be-api.us.archive.org 3 (1 control + 2 phrases), 2 s apart;
   googleapis.com 15, 1.6 s apart; gutendex.com 1. For LANE LEDGER-15 (account 1).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER15-2)
+
+Second verifier AUD2-LEDGER15-2 (Opus 5.5, account 1, for the orchestrator (owner account), WORK-QUEUE row AUD2-LEDGER15-2), 10 Oct 2026, 13:41-13:56
+UTC by `date -u`; a separate session from the readers FM65-A and FM65-C and from the first verifier FV-L15b, which it does not protect. Scope: **E525**
+(5868/0) and **E505 msg 2** (5851/1, second message), first audit "## AUDIT (FV-L15b)" (E505 msg 1 and the other four FV-L15b entries are N1 there and not
+re-audited). Nothing decoded; every code group of both looked up again in key.md. Key source: `period` (War Department Cipher No. 1, key.md = mssEC 41).
+Step 0 is a non-test on mssEC 25 and was not used. Intake gate (13:51): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found
+within 6 lines`. No spec, so `judge_plaintext.py` was not run. Scripts and raw output (`fortmonroe/`): `aud2_l15_2_gb.py` (+ `.out`), `aud2_l15_2_beapi.py`
+(+ `.out`), `aud2_l15_2_hdl.py` (+ `.out`, `_hdl_retry.out`), `aud2_l15_2_schol.py` (+ `.out`); page images 5851 and 5868 at 2400 px to scratch only.
+
+### 1. Prior work
+`tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<pointer>;date=..;sender=..;recipient=..' --step-type second-audit`,
+both: exit 4. **Run after the first searches, not before them (this audit's slip; nothing it found changes a step).** LEADs: three target-level live
+claims (FM-F1, FIX-L14, CLEAR-SWEEP) -- none covers these two entries (CLEAR-SWEEP's 40 entries and FIX-L14's mssEC 18/19 scope exclude them); for E505
+an edition window in OR I/46 pt 2 around p.21 (Berrien, Webster's 7 PM reply = msg 1, Rawlins and Morgan on the fleet, 3 Jan) -- read in full (s.2), none
+is msg 2: CLEAR. UNCHECKED-NET: aaymeloglu cache not on disk (no ledger telegram in its scope), some 1864 OR parts not on disk (not the 1865 dates here).
+
+### 2. Families added by this audit
+| Family | Result |
+|---|---|
+| Huntington CONTENTdm full text (hdl token 13:48-13:5x, after AUD2-LEDGER15-3's release; 10 CISOSEARCHALL on words FV-L15b did not query + control 9678 returned; one dropped query retried once) | **No clear copy of either.** 'Rawlins wishes' -> own 5851 and the sibling rows 5849, 5855 (E502, R-5855), plus 1865 New Orleans items; 'best going' 25 hits, none of this text; 'Howell steamer coal', 'steamers named Rawlins', 'Webster Howell steamer' 0. 'Baltic Annapolis', 'Baltic Monroe Newport', 'Newport Webster', 'countermand Washington Baltic', 'impossible come up here' -> own 5868 and the ledger's Baltic thread (5847 Webster to Newport 3 Jan, 5858 5 Jan, 5861 6 Jan "If the Baltic has been ordered to Monroe consider the order as countermanded", 5865 Newport 6 Jan, Swann Point, 5866 Webster 7 Jan, coal at Annapolis), the clear books 8508 (Newport 6 Jan 3 PM to QMG) and 8511 (Newport 7 Jan 6 PM, printed), and **7693** (clear book, Page 35): "Balto. Jan. 10. 1865. 7. PM for BrGen Thomas Act'g Q. M. Gen ---- Col Webster reports that the Baltic will leave Ft. Monroe tomorrow morning for Annapolis which is as near as she can get to this city ---- is she to carry the Constn. Corps. R. M. Newport Col & Qm" -- a different telegram that confirms E525's content (Webster acted on Newport's request), not a copy. |
+| OR I/46 pt 2 on disk (`warofrebellion014602rootrich`), read by date 3-12 Jan | E525 context checked word for word: Meigs to Newport 5 Jan 10.15 a.m. (Ariel, Illinois, Sedgwick, Victor and Baltic ordered from Fort Monroe to Baltimore to embark Sheridan's troops = "the order given from Washington"); Wise to Newport 7 Jan 10.30 a.m. ("Has the Baltic left?"); Newport 7 Jan 6 p.m. ("The Baltic left for Fort Monroe last night"); Morgan to Rawlins 12 Jan, P.S. ("The Baltic went up yesterday to Annapolis, ready for sea. She ought to take a brigade on board"). E505: pp.21-24 and 34-35 (Rawlins 3 Jan 2 p.m.: "Captain Howell ... has been directed to so instruct the quartermaster at Fort Monroe"; Dodge 4 Jan; Comstock and Grant to Terry 4 Jan): the Fort Fisher fleet, none is msg 2. |
+| Google Books (keyed, `country=US`; 17 queries; control '"sailed in perfect order" intitle:Grant' -> Grant Papers vol. 13 `mnRjmhe3QLoC`, passed) | 0 copies. E505: "best going steamers", "one of the best going", "Rawlins wishes you to send", "no rations will be required", "in addition to the steamers named", Howell/Webster/City Point in `intitle:Grant`, Howell "for other service": only unrelated books and OR I/46 pt 2 p.21 (msg 1). E525: "Baltic got off", "countermand the order" Baltic, "where she can take troops", "impossible for her to come up", "let me know what orders you give her", Baltic/Annapolis/Newport: only Morgan's 12 Jan P.S. (OR, three copies). |
+| IA be-api whole collection (control: msg 1's printed sentence -> 7 OR copies, passed) | "best going steamers", "Rawlins wishes you to send", "no rations will be required", "in addition to the steamers named in your", "she had better coal there" 0; "before I could countermand" 10 and "what orders you give her" 1: fiction, rejected. |
+| Chronicling America (loc.gov JSON, 6-16 Jan 1865) | 'Baltic Annapolis troops' 1, 'steamer Baltic Fortress Monroe' 4 (NY Herald 7 and 14 Jan, Daily National Intelligencer 14 Jan, Bedford Inquirer 6 Jan): shipping and army news pages, **not opened** (a press item would report the Baltic's movements, not Newport's telegram to Webster). |
+| Open indexes (`aud2_l15_2_schol.out`: OpenAlex keyed 3, Semantic Scholar keyed 3, CrossRef 3) | Nothing on these telegrams, the Baltic in Jan 1865 or Newport. |
+| JSTOR | 4 rows appended to JSTOR-QUEUE.tsv (names AND date; bare quoted phrases); they never block a class. |
+| Not reached | Grant Papers vol. 13 page by page (not on IA; Google Books snippets only), NARA RG 92 / RG 107 telegram books, the Baltimore *American* and *Sun* of 7-12 Jan 1865, Newport's QM letter books. |
+
+### 3. Image, readings and grades, checked
+- **Image** (pages 5851 and 5868 at 2400 px, msg 2's lines cropped and autocontrasted): both entries match the transcription word for word, as FV-L15b
+  found. E505 msg 2: "inure wreate shelter rawlins wishes / utah send to this verion plug torch bessie" -- the word after "this" reads **verion /
+  vernon** (an r and a short n-stroke before "on"; FV-L15b's "venon" is a misreading of the same glyphs); "required honor Howell".
+- **E525:** every code group agrees with key.md and FV-L15b: Baptism Baltimore, Imogene 3 PM, Plunder 7, Paradise and Pandora Colonel, Vinton and Vincent
+  Quartermaster, Zodiac and Zebra period, Animal Monroe, Grapes Washington, Whinny Troops, Yoke signature (H 14); Princess = Captain stays M (Newport
+  was a colonel). Plain misfires (Webster, baltic, Sampson) as FV-L15b. Count stands: **H 14 + M 1 of 15, 93.3%.**
+- **E505 msg 2: three of FV-L15b's M/unread words read better (FIX job, not applied here):**
+  - **verion / vernon = [Point]** -- key.md `| Vernon | Point | H | p.22 l.19 (339) L |`; the ledger writes the same row in sibling 5865 ("Swann vernon" =
+    Swann Point, clear copy 8508 "Swann point") and in entries read [Point] in reading.md; "send to this [Point]" = City Point, as E506 ("started yet
+    for this point"). Grade **I** (the word as written is a variant spelling of the key row, read by the ledger's own usage), not M.
+  - **wreate = [Telegraph]** -- key.md `| Wreathe | Telegraph (-ed, -ing) | H |`; the ledger spells the row "wreath", "wreathed", "wreathe" elsewhere
+    (5822: "I wreathed to ..."); "steamers named in your [telegram]", as E506 "named in your dispatch". Grade **I**.
+  - **honor = "on her"** (phonetic, plain): the ledger uses it so twice elsewhere ("The Stromboli is honor way to you", "go on board the boat honor
+    arrival"); "no [rations] will be required on her. Howell." -- not a code word, not a signature word (the No. 1 signature words are yoke, youth,
+    webster, walrus), so it leaves the code count.
+  - Corrected count: **H 10 + I 2 of 12 code-word tokens, 83.3% H** (FV-L15b: H 10 + M 3 of 13, 76.9%). Reading: "City Point Jan'y 3/65 [9.30 PM]
+    [Colonel] Webster. In addition to [steam]ers named in your [telegram], [General] Rawlins wishes you to send to this [point] [one] [of the] best going
+    [steam]ers that you have [,] for other service. Please have her furnished with good supply of coal; no [rations] will be required on her. Howell.
+    S. H. Beckwith."
+- Code clause (depth bar): Shelter = General, Weasel/Wayworn = Steam in the 3-5 Jan fleet rows, Wales = Rations in msg 1 (C by print, OR I/46 pt 2
+  p.21), Torch = Of the, Plug = 1: msg 2 meets the clause. E525: Whinny = Troops in nine other ledger rows (e.g. "Colored Whinny", "no other whinny than those"), Grapes = Washington and Animal =
+  Monroe in dozens: meets it.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | text | depth | basis |
+|---|---|---|---|---|---|
+| E525 | **N3** (kept) | period | not known | **D3** (kept: H 14 + M 1 of 15; external non-statistical checks now two: OR I/46 pt 2 Morgan 12 Jan P.S., and the holder's clear book 7693, Newport 10 Jan 7 PM, "Col Webster reports that the Baltic will leave Ft. Monroe tomorrow morning for Annapolis which is as near as she can get to this city"; no fresh rule-7 re-derivation, so not D4) | not located after FV-L15b and s.2 |
+| E505 msg 2 | **N3** (kept) | period | not known | **D2** (kept; H 10 + I 2 of 12, 83.3%, above D3's 80% share, but no external check of msg 2's own content: E506 and E507 msg 1 are siblings in the same ledger, and OR I/46 pt 2's Rawlins 2 p.m. order is about the extra vessels, not this request) | not located after FV-L15b and s.2 |
+- **Not N4 (both):** Grant Papers vol. 13 read only by snippets (E505 msg 2 is a Rawlins request; the volume's notes for 3-5 Jan are the main residual
+  risk), NARA RG 92/107 telegram books and the Baltimore press not reached.
+- **Safe sentences.** E525: FV-L15b's stands; add "the Huntington's clear telegram book (pointer 7693) records Newport reporting on 10 Jan that, on
+  Webster's word, the Baltic would leave Fort Monroe for Annapolis next morning." E505 msg 2: "Read with War Department Cipher No. 1 (10 of 12 code words
+  at grade H, 2 inferred from variant spellings): on the evening of 3 Jan 1865 Capt. W. T. Howell at City Point asked Col. R. C. Webster at Fort Monroe,
+  for Rawlins, to send to City Point, in addition to the steamers already named, one of his best going steamers for other service, coaled, no rations
+  required; not located in the Official Records, Grant's papers (by snippet), Internet Archive full text or the Huntington's full-text search (searched
+  10 Oct 2026) -- partially deciphered (about 83%)."
+- **Unsafe:** any "first", "new", "unpublished" for either; "Grant Papers checked" for E505 msg 2 without "by snippet"; "wreate/venon/honor unread".
+- **Depth sentences:** E525 FV-L15b's. E505 msg 2: "On 3 Jan 1865, while the second Fort Fisher fleet was being coaled at Fort Monroe, Rawlins asked
+  through Capt. Howell for one more fast steamer to be sent up to City Point for other service, with coal but no rations."
+
+### 5. Postmortem, leads and propagation
+- Failure (small): FV-L15b left three words of msg 2 M that the key and the ledger's own spelling habits read (Vernon = Point is a key row; "wreath*" =
+  Telegraph and "honor" = on her recur in this ledger); the lesson for first verifiers: before grading a non-key word M, grep the ledger's other uses of
+  the same spelling and key.md rows within two letters. No over-claim in the readers' or FV-L15b's wording.
+- For a FIX job (not applied here; reading.md is decode.py output): E505 entry `variant: verion=Vernon:I`, `variant: wreate=Wreathe:I`, `plain-at: honor#1`
+  with gloss "on her"; header msg 2 "Capt. Howell to Webster" (FV-L15b s.5); E525 note: context 7693 (Newport 10 Jan) and OR I/46 pt 2 Meigs 5 Jan, Wise
+  7 Jan 10.30 a.m.
+- Leads: (1) Grant Papers vol. 13 notes for 3-5 Jan 1865 page by page (LOCAL-QUEUE or desk); (2) the Herald/Intelligencer pages of 7 and 14 Jan 1865
+  (Baltic movements, context only).
+- Propagated: status.json E525 and E505 msg 2 -> audit_status "two audits", audit_refs + this section; E505 msg 2 unresolved_spans, depth_pct 83.3,
+  completeness, depth_unread, line, gap; E525 depth_check (7693 added), gap; SECOND-OPINIONS-QUEUE.tsv rows unchanged (still queued), prompt
+  `PROMPT-chatgpt-e505.md` reading line updated to this audit's readings (rule 10 propagation); WORK-QUEUE AUD2-LEDGER15-2 -> done.
+- Requests: hdl.huntington.org 14 (11 CISOSEARCHALL incl control, 1 dropped and retried once, 2 IIIF pages; all 200 bar the drop); www.googleapis.com 17
+  (1.6 s apart); be-api.us.archive.org 8 (1.8 s); www.loc.gov 2; api.openalex.org 3, api.semanticscholar.org 3, api.crossref.org 3.
