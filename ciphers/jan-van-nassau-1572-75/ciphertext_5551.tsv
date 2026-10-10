@@ -9,6 +9,9 @@
 # subagent's "Perm" (unresolved, token left "=?"). None of these four are cipher codes; none affects the
 # H/C/S/M/I/U grade counts below (clear tokens grade "clear"). Both readers agree the last word of each line
 # is genuinely cut off by the leaf's own torn/deckled right edge, not just hard to read.
+# JVN-GLY, 10 Oct 2026 (PREREG-JVN-GLY.md, gate passed, Opus reader, controls X1/X2/X5 + and X4/X6 - all passed): two clear
+# glyphs added on L2 at conf M -- long-s "=ſ" before 104 and Kurrent "=ch" between 104 and 146 ("offentli[vff?] ſ[104]ch"). L2
+# positions after 9 shift by +1 (before 104) and +2 (after 104): old L2-16 is now L2-18, old L2-19 now L2-21.
 line	pos	token	conf
 L1	1	77
 L1	2	81
@@ -39,13 +42,15 @@ L2	6	31
 L2	7	112
 L2	8	103
 L2	9	=vff	?
-L2	10	104
-L2	11	146
-L2	12	127
-L2	13	85
-L2	14	29
-L2	15	140
-L2	16	=?	?
-L2	17	137
-L2	18	126
-L2	19	=?	?
+L2	10	=ſ	M
+L2	11	104
+L2	12	=ch	M
+L2	13	146
+L2	14	127
+L2	15	85
+L2	16	29
+L2	17	140
+L2	18	=?	?
+L2	19	137
+L2	20	126
+L2	21	=?	?

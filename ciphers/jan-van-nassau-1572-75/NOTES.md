@@ -1716,7 +1716,7 @@ Image: one fetch of `resources.huygens.knaw.nl/media/wvo/images/05000-05999/0555
 `pdftoppm -r 300 -f 3 -l 3` (2481x3508, scratch). Crop command (pasted, as JVN-104):
 `python3 tools/iiif_lines.py --image <scratch>/p3-3.png --region 530,190,1770,220 --out <scratch>/crops --prefix p3 --debug`
 -> 2 lines, pitch 103. Detail crops committed in `images/jvn_gly/` (X1-X6 JPEG, boxes in manifest.json): X1-X4 at JVN-104's
-boxes; X5 = (1040,880,1200,1000) "ſich" in "ſind ſonſten viel ſich" (body line 5 of the strip), X6 = (670,880,890,990) "ſonſten"
+boxes; X5 = (1040,880,1200,1000) "ſich" in "ſind ſonſten viel ſich" (body line 4 of the strip), X6 = (670,880,890,990) "ſonſten"
 (long-s, no ch), both chosen from a half-scale body strip (y 460-1200) that does not include L2. Control view order (seeded
 shuffle, 20261010): X5, X1, X6, X2, X4.
 
@@ -1733,3 +1733,53 @@ shuffle, 20261010): X5, X1, X6, X2, X4.
 Gate (i) and (ii) pass on this reader's calls. Note for the X3 read: in this hand Kurrent "h" after "c" is a descender drawn as a
 ʒ-like tail; JVN-104's Sonnet reader called that shape a separate "ʒ" before 146. Caveat (PREREG): this reader knew the truth labels
 (it chose X5/X6 and had read JVN-104), so these controls show the shapes are distinguishable at this crop size, not blind discrimination.
+
+### (b) X3 read (opened after (a) was pushed, commit c077280f3) and the gate
+
+X3 = (1060,290,1500,400), read at 1x and 2x: ". [g1] ſ104 . ch 146 . 127".
+
+| position | read | confidence |
+|---|---|---|
+| (a) after 103 (tsv "vff") | a small r- or c-shaped stroke, then a tall glyph with a loop above the line and a descender, closer to X6's looped long-s than to the ch-tail of X1/X2/X5; "rſ"-like, "ch" not excluded | low (not gated) |
+| (b) before 104 | long-s: a stroke rising from below the line, hooked right at the top, joined into the "1" of 104 | high |
+| (c) 104-146 | small c with a hooked cap, then h drawn as the ʒ-like descender tail seen on X1 and X5 -- one "ch", not a separate ʒ sign | medium-high |
+
+Gate (iii) met (long-s before 104 AND ch between 104 and 146); with (i)-(ii) passed in (a), the pre-registered answer is **YES for
+this pass**. JVN-104's "separate ʒ before 146" is, on this reader's control evidence, the h of that ch. Applied as the gate allows:
+`ciphertext_5551.tsv` gains `=ſ` (conf M) before 104 and `=ch` (conf M) after it; L2 positions shift (header comment); the numeral
+codes and their grades are unchanged (clear tokens are not graded), so the decode counts stay C 26 / M 1 / I 2 / U 3 under key_full
+(C 23 / U 6 under key.tsv). L2 under key_full now reads "o f f e n t l i VFF S i CH [146] e s [140] ? ?", i.e. "offentli[?] ſich":
+104 = i (key value) sits inside a clear "ſ...ch", which supports "ſich" at M. "offentlich" itself still rests on the ungated glyph
+after 103. `decode_key.py --check` exit 0 for decode_5551.json and decode_5551_full.json after regeneration.
+
+Caveat (PREREG): one reader, not blind to the proposal; the controls show the shapes are separable at this crop size, not that a
+blind reader separates them. A second, blind instrument (the owner's sign sorter, piles for ſ / ch / looped-ſ from X1-X6 plus
+X3's three glyphs) would lift the two M tokens; not run here.
+
+### (c) 140 vs 110 (same line, not gated)
+
+Crop `images/jvn_gly/X7_140.jpg` = (1450,285,2000,400): "27 . 85 . 29 . 1?0 . Perm 137". The middle digit is a single slanted
+down-stroke with a small foot, no closed bowl; the 4 of 104 in X3 has a closed q-like bowl. This reader calls it **110** (low-medium).
+Tally now 3 readers 110 (A 8 Oct, JVN-104's Sonnet, this pass) vs 4 readers 140; the tsv keeps 140 (not gated here). Neither 110
+nor 140 has a C/H value in key_full, so the decode is unaffected either way. The clear word after it reads "Perm"-like here (as the
+25 Sept subagent), left "=?".
+
+Requests: resources.huygens.knaw.nl 1 (05551.pdf, 200). Subagents: none. Crops committed: images/jvn_gly/ (X1-X7, manifest.json).
+Report what was found and where it was not found; novelty not classified.
+
+## Remaining gaps (JVN-GLY, 10 Oct 2026)
+Read so far: 22 of 28 letter tokens H/C/S in 5551 (78.6%, D3-5551 recount; unchanged: the two glyphs added by JVN-GLY are clear tokens at M)
+- 140/145/146 values in 5551 - blocker: waiting-on ASKS row 48 (the Marburg HStAM reply, MAIL-3) for a list-A witness carrying these codes; 4613/4615 carry none (JVN-104), 5550/5557 carry 140/145 unglossed
+- glyph after 103 ("vff"), and 140 vs 110 - blocker: not-attempted; JVN-GLY read the 104 glyphs (YES at M) but these two are ungated single-reader calls (rſ-like; 110 low-medium vs 4 readers 140); next: the owner's sign sorter on images/jvn_gly X1-X7 (piles for ſ, looped ſ, ch, 1, 4), ~$0.5 to build the page
+- 136 null vs 'vingt' - blocker: open-codes; settles only with another list-A occurrence (4613's one 136 is the 'uingt' source)
+- line-end word L2-21 (was L2-19) beyond the edge - blocker: illegible; cut by the leaf (D3-5551)
+
+## Escalation (JVN-GLY, 10 Oct 2026)
+- [x] siblings: 4613/4615 counted (no 140/145/146), 5550/5557 run contexts decoded under key_full (JVN-104)
+- [n/a] clear-pages: 5551 pp.1-4 carry no clear copy of the two cipher lines (D3-5551)
+- [x] known-keys: key.tsv, key_full, key_4614/5801/7205/7206 checked by D3-5551; no C/H value for the three codes
+- [x] print: Groen IV/V/Supplement and Gachard III read (check-solved 25 Sept 2026); nothing for 5551's cipher lines
+- [retired] key-rebuild: band instruments char-LM, word-segmentation, interlinear_align and local-window read retired for this band (Lodewijk GAPS28-39)
+- [ ] image-check: the 104 glyphs read by a control-passing reader (JVN-GLY, YES at M); still owed: the owner's sign sorter on images/jvn_gly for the glyph after 103 and 140/110, and as a blind check of the two M tokens
+- [x] retry: D3-5551 two passes, JVN-104 third pass, JVN-GLY control-first pass
+Verdict: keep going: 2 internal gaps; cheapest next: owner's sign sorter page on images/jvn_gly X1-X7, ~$0.5

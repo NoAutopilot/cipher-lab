@@ -36,6 +36,12 @@
    880,
    890,
    990
+  ],
+  "X7_140": [
+   1450,
+   285,
+   2000,
+   400
   ]
  },
  "control_view_order": [
@@ -44,5 +50,6 @@
   "X6",
   "X2",
   "X4"
- ]
+ ],
+ "note": "X7_140 cut after the X3 read, for the 140-vs-110 call (not gated)"
 }
