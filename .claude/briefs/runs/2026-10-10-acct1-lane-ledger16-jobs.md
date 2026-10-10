@@ -68,3 +68,5 @@ Exactly "## FV-L16a, FV-L16b, FV-L16c, FV-L16d" above, on the 1864 Mar / Oct-Dec
 E445 (H7) E446 (H4) E448 (H3). AUDIT.md "## AUDIT (FV-L16e)". Low-H entries (E446 E448) may be too short for a clause: say so (D0/D1) rather than spend on them.
 Hosts are busy with four verifiers: take tokens in turn, never overlap. WORK-QUEUE AUD2-LEDGER16-5 on N3+ D2+ (tagged account-1). Stop starting an entry at 80%
 of cap and name the rest. FV-L16d's lead (unfiled row 5679/1 = printed OR I/36 pt 3 pp.29-30 + holder 4642) is known text: do not read it.
+
+(15:04 UTC: FV-L16e spawned, session_01FEHG5YkPHYvZi4YoPaYDyv.)
