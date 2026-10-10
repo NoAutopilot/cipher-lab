@@ -13739,3 +13739,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 03:58 | FV-MS18p verifier (account 1, Opus 5.5) | claim (03:5x UTC 10 Oct by date -u; cap 4.5, box 90 min 03:59-05:29, 80% stop 05:11 / 3.6): eckert-1864 first audit of E372 E373 E376 E377 E380 (N1 confirms) and E379 (relay frame), step 0 first; AUDIT.md "## AUDIT (FV-MS18p)"; for LANE LEDGER-10 (account 1)
 2026-10-10 04:02 | FV-MS18p verifier (account 1, Opus 5.5) | hdl take (04:0x UTC 10 Oct by date -u): 6 CISOSEARCHALL (one clear word per entry) + 5 IIIF leaves (9907 9878 10013 9774 9732) at 3.3 s; for LANE LEDGER-10 (account 1)
 2026-10-10 04:05 | FV-MS18p verifier (account 1, Opus 5.5) | hdl release (04:0x UTC 10 Oct by date -u): 11 requests (6 CISOSEARCHALL, 5 IIIF), all 200, no drop; for LANE LEDGER-10 (account 1)
+2026-10-10 04:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 04:09 UTC: spawned 0 (), queued left 0
