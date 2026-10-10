@@ -16676,3 +16676,92 @@ plain-at ashland; "Mr Morgan" = signature M. R. Morgan; numerals 501/973 C and "
 print (Grant Papers 13)"; the next row **5871/2** (Victor, 375 men, plenty of hard bread, signed Morgan) is printed in the same note: do not
 file it as unlocated. E532: "ditto" M; addressee Col. R. C. Webster (print). Requests: hdl.huntington.org 27 (21 CONTENTdm queries incl. control
 and one retry, 6 IIIF pages), all 200 bar one dropped connection; archive.org 7 djvu downloads (472unit 503, ORN 0012 500, five 200) + 2 advancedsearch (ORN, Grant Papers); be-api 14; www.googleapis.com 34; www.loc.gov 3 (one read error).
+
+## AUDIT (FV-L14c)
+
+Verifier FV-L14c (Opus 5.5, account 1, for LANE LEDGER-14), 10 Oct 2026, 10:34-10:4x UTC by `date -u`; a session separate from the reader L14-B
+(NOTES "## L14-B"), not protecting its conclusions. Scope: N1 confirmation of **E610, E613, E614, E615, E616, E617** (filed by L14-B with print
+citations; under the lane RULING an in-print row should have stayed unfiled, so the question is only whether each citation holds), the E617 date
+conflict, and the leaf eye-check L14-B did not do. Method: FV-MS18p (IA page image or be-api snippet, word-for-word diff against the reading block,
+leaf eye-check). Sent ledger mssEC 18 = Huntington object 10074, Cipher No. 1; key source `period` for all six. Nothing decoded beyond reading the
+committed reading.md blocks. Intake gate (L14 brief, 09:43 UTC, re-run by the readers): `eckert-1864: partial (line 3) -- edition/page or full-text-search
+citation found within 6 lines`. Step 0 is information only under the lane RULING (STEP0-KEYCTL): L14-B's table, (a)/(b): E610 0.619/0.190, E613
+0.846/0.282, E614 0.776/0.245, E615 0.524/0.190, E616 0.629/0.286, E617 0.788/0.273 -- all "hits", none used. Scratch scripts (IA hocr locate,
+page fetch) in the session scratchpad, not committed; every figure below is re-derivable from the IA ids and leaf indices given.
+
+### 1. Print, located by IA hocr text and confirmed by the running head on the IA page image
+| ID | print | IA id, page image | page head on the image | print as read |
+|---|---|---|---|---|
+| E610 | OR I/37 pt 2 p.210 | `warofrebellion372unit` (hocr leaf 216) | head of the hocr leaf "210 OPERATIONS IN N. VA., W. VA., MD., AND PA."; next image 211 | Washington, July 11, 1864--12.30 p.m.; Major-General Hunter, Via Cumberland, Md.; H. W. Halleck, Major-General and Chief of Staff |
+| E613 | Basler, *Collected Works of Abraham Lincoln* vol. 7 (1953) | `collectedworksof0007royp_l5c3` (lending only; be-api snippets, page not read) | -- | snippets: "received yours about Gen. Carl Schurz. I appreciate him certainly as highly as you do; but you can never know"; "to find a place for an officer of so high rank, when there is no place seeking him. A. Lincoln" |
+| E614 | OR I/39 pt 3 p.395 | `cu31924079575357` (image n399, head "CHAP. LI.] CORRESPONDENCE, ETC.--UNION. 395") | 395 | October 22, 1864; Col. S. L. Brown, Quartermaster's Department, New York; M. C. Meigs, Quartermaster-General; "(Same to Maj. Stewart Van Vliet.)" |
+| E615 | OR I/37 pt 2 p.123 | `warofrebellion372unit` (image n128, head "... UNION 123") | 123 | Washington, July 8, 1864--10 p.m.; Major-General Hunter, Cumberland, Md.; Halleck, Major-General and Chief of Staff |
+| E616 | OR I/37 pt 1 p.525 | `warofrebellion371unit` (image n548, head "... UNION. 525") | 525 | Washington, May 23, 1864--9 p.m.; Major-General Hunter, Cedar Creek; Halleck, Major-General and Chief of Staff |
+| E617 | OR I/34 pt 2 p.606 | `warofrebellion342unit` (image n613, head "606 LOUISIANA AND THE TRANS-MISSISSIPPI") | 606 | Washington, D. C., March 14, 1864--10.30 a.m.; General Curtis, Leavenworth City, Kans.; H. W. Halleck, General-in-Chief |
+The `_page_numbers.json` offset differs by volume (image n = hocr leaf - 1 in 372unit and cu31924079575357; n613 = p.606 in 342unit): read the head
+on the image, not the json.
+
+### 2. Word-for-word diff, print against reading.md (date, hour, sender, addressee, body)
+- **E610:** body identical once the ledger's sound-spelling is read: "Sir come stanzas" = circumstances (plain pun, C by print). Date, hour 12.30, addressee
+  (Hunter via Cumberland) agree. Signer: decoder [General-in-Chief], print "Major-General and Chief of Staff" (Halleck's title after 12 March 1864,
+  same man, as FV-MS18p E372). **Holds: N1.**
+- **E613:** the two snippets agree with the reading word for word ("I appreciate him certainly as highly as you do"; "so high rank when there is no
+  place seeking him"); date, addressee and the Gillem clause not seen in a snippet (lending item, no page read). Addressee: the decoder reads the
+  group as [Johnston]; the print (Lincoln to Andrew Johnson) gives Johnson, s.5. The reader's cited id `letterstelegrams0008abra` is a secondary
+  reprint; the edition of record is Basler CW 7. **Holds: N1** (on two snippets; the page number is a FIX job's be-api/loan detail, not a class question).
+- **E614:** body identical except: "of Gassette inst." = "of 16th instant" (the date group is unread in the decoder's block; C by print); "some
+  vernon" = "some other point" (the decoder renders the group [Point]; the print's "other" is in the group, not dropped on the leaf -- leaf shows
+  "some Vernon"); "tooth list" = "to the list" (pun). Addressee: print Col. S. L. Brown, Quartermaster's Department, New York, "Same to Maj. Stewart
+  Van Vliet" -- the ledger sends one copy to both ("Brown & Van Vliet", operator Horner, N. Y.). Print has no hour; ledger 12.30 PM. **Holds: N1.**
+- **E615:** identical except the ledger's "His Orchard **is** under Hemp has pocketed" (print "His advance, under Breckinridge, has crossed": the "is" is
+  on the leaf, an operator's word, not a slip); "Tableling"/"tableting" = moving (decoder leaves one as residue; C by print). Addressee print adds
+  "Cumberland, Md.". **Holds: N1.**
+- **E616:** identical once read: "vacant says" = vacancies; "Stall Duffin and Dover" = Stahel, Duffie and Averell (pun names, C by print); "worth less
+  recon mend" = worthless recommend; "endorse" = print "indorse" (spelling). **One holder-transcription slip:** the leaf reads "recon mend **them** to
+  be mustered out" (print "recommend them to"); the transcription and reading drop "them". "Duffin" on the leaf is more likely "Duffie" (M). **Holds: N1.**
+- **E617:** **date conflict resolved: 14 March 1864, 10.30 a.m.** The print, the ledger header ("Washn Mar 14th 1864", on the leaf) and the hour
+  agree; the decoder's "{date: Mar 4}" from the groups "March Pension Elizabeth" is a wrong reading of the day group(s), not a second date. Addressee
+  "Shelton Curtes Saco Flag worth" = General Curtis, Leavenworth (print "Leavenworth City, Kans."; C by print). **Body: not word for word** as L14-B
+  wrote: the ledger has "when the order establishing it was **received**" (plain word, on the leaf, line 4 of the entry), the print has "was
+  **issued**". Every other word agrees ("If any orders have been issued assuming command of troops outside of such boundaries, they will be immediately
+  revoked"). This is a text variant between the telegram as sent and the OR's copy, not a decode error; record it, do not repair either side. Signer
+  Halleck, General-in-Chief (print the same, 14 March). **Holds: N1.**
+
+### 3. Leaf eye-check (IIIF 2400 px, one take, released; images in scratch, not committed)
+All six entries' lines read against ciphertext.txt on leaves 9787 (p.121), 9802 (p.136), 9874 (p.208), 9779 (p.113), 9743 (p.77), 9686 (p.20):
+the holder transcription matches line for line, code words and plain alike, with the one slip above (9743: "them" dropped before "to be mustered out")
+and one doubtful name ("Duffin"/"Duffie", M). Headers: 9787 "Washn D.C. July 11th 1864 12.30 Pm"; 9802 "Wash D.C. July 27 1864 9 am", "Nashville";
+9874 "(No 1) ... Wash Oct. 22 1864 12.30 PM"; 9779 "Washn July 8th 10 P.m. 1864" (the 8 is looped, read 8, agreeing with the print); 9743 "Wash'n
+May 23rd 9 PM 1864"; 9686 "Washn Mar 14th 1864". On leaf 9686 the entry above E617 (row 9686/1, Clowry at Little Rock, the same order to Steele) is already filed as O9-DK (Cipher No. 9); nothing to add.
+
+### 4. Classification
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E610 | N1 | period | D3 | OR I/37 pt 2 p.210, image head; body identical |
+| E613 | N1 | period | D3 | Basler CW 7, be-api snippets (page not read) |
+| E614 | N1 | period | D3 | OR I/39 pt 3 p.395, image head; one date group unread in the decode |
+| E615 | N1 | period | D3 | OR I/37 pt 2 p.123, image head |
+| E616 | N1 | period | D3 | OR I/37 pt 1 p.525, image head; one transcription slip |
+| E617 | N1 | period | D3 | OR I/34 pt 2 p.606, image read; received/issued variant; date 14 March |
+Depth: every code group H by the period key or C by the print, residue only names spelled by pun and one date group; external check = the printed
+edition (non-statistical). Not D4: no fresh rule-7 re-derivation in this session. Safe sentence (all six): "Read with the period key (Cipher No. 1);
+the plaintext is already printed (OR / Lincoln Collected Works); our reading is an independent re-decipherment of the ledger copy." Unsafe: "unpublished",
+"newly read". No status.json, SO or AUD2 rows (N1). None of the six citations failed, so no entry moves to the full verifier search.
+
+### 5. Corrections for a FIX job (not applied here)
+- E610 header: "in print, OR I/37 pt 2 p.210"; note "Sir come stanzas" = circumstances (C, print); signer title as printed.
+- E613 header/note: print = Basler, Collected Works vol. 7 (1953), IA `collectedworksof0007royp_l5c3` (be-api snippets), not only `letterstelegrams0008abra`;
+  addressee Gov. Andrew **Johnson** (decoder's [Johnston] is the key's spelling).
+- E614 header: "OR I/39 pt 3 p.395"; addressee "Col. S. L. Brown, QM Dept., New York (same to Maj. Stewart Van Vliet)", signer M. C. Meigs; note "Gassette" =
+  16th (C, print), "vernon" = other point, "tooth list" = to the list.
+- E615 header: "OR I/37 pt 2 p.123", addressee Hunter, Cumberland, Md.
+- E616 header: "OR I/37 pt 1 p.525"; ciphertext.txt line "any are worth less recon mend to" -> "recon mend them to" (leaf 9743; image-checked); "Duffin" M (leaf
+  likely "Duffie").
+- E617 header: replace "4 March 1864 by the cipher date words (ledger header 'Mar 14th', unreconciled, M)" with "14 March 1864 10.30 AM (ledger header and
+  OR I/34 pt 2 p.606 agree; the day group's decode '4' is wrong)"; addressee "Gen. S. R. Curtis, Leavenworth City, Kans." (C, print); replace "word for word"
+  with "word for word except 'received' (ledger, on the leaf) for the print's 'issued'".
+- NOTES "## L14-B": its "word for word" for E617 and its open "E617 date conflict" are superseded by s.2 above.
+
+Requests: hdl.huntington.org 6 (IIIF 2400 px, one take 10:37, released, all 200); archive.org 20 (hocr searchtext/pageindex/page_numbers for 5 ids incl. one
+401 on the restricted `warofrebellionco0039unit_y0l1`, 1 advancedsearch, 1 metadata, 12 page images), be-api 5 (all 200). Reporter: report what was found and
+where it was not found; this section classifies only N0/N1 on located print, as the brief asks.
