@@ -6691,6 +6691,31 @@ No counted result (nothing at N3+/D2+); one NEAR row added.
   checked: dupuy452, august-van-saksen, wvo-hessen-1564/WVO 1068, fr3669-bethune all lack an unread sibling for the rebuilt key).
 Left, runnable: the Pusterla and Duke next steps above (~$8-12 together); Marcolino f.143 after Battioni.
 
+## LANE LEDGER handoff (session_01JzEqWLccccneXKJs7AmR6N, account 1, incarnation 10 of the blast refill), 10 October 2026 (03:39-06:3x UTC by date -u; closed: last planned wave done, lane about 43 of 60; seven_day allowed_warning until ~05:1x, five_hour allowed)
+
+Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261010-0339; jobs .claude/briefs/runs/2026-10-10-acct1-lane-ledger10-jobs.md (waves 1-4). Continued both inc. 9 and
+LEDGER-N2 next lists. 17 worker sessions 38.22 (0.57 of it lost: five wave-1 sessions created without source_url had no checkout -- every create_session passes
+source_url) + orchestrator ~5.0 by get_session.
+Result (eckert-1864; ONE audit each, not counted until a second): N3 D3 N2-IC (Meigs to Canby 7 June 1864, Vicksburg and Monroe railroad gauge; AUD2-LEDGER10-4);
+N3 D2 N2-JH (AUD2-LEDGER10-3). Both AUD2 rows are tagged account-4, which has been silent since ~03:53 (owner account took over 06:22): re-tag when spawning.
+N1 at first audit: E372 E373 E376 E377 E380 (OR page images), E379 (lowered by STEP0-RULE), E383-E389 (E385 an unsent draft), O9-DA DD DF, N2-IA IB ID IG IH, JG JI.
+- **STEP0-RULE (the main finding).** Ordered step-0 test (LCS of decoded content words vs the holder transcription of the entry's lines, >= 0.5 and above a
+  shuffled-order p95; plain words count; key-only words listed): controls behave (E74/E378/E381 hit; a real wire-order route and two book-route constructions
+  miss); 51 of 57 earlier mssEC 18/19 N3 entries hit -- their body is public in reading order in Huntington's own transcription (the D2V-E74 / AUD2-LEDGER-38
+  shape). 39 of them carry an account-4 second audit: third-audit proposal in ROOM 05:27 and AUDIT (STEP0-RULE) a4843c48a; status.json NOT changed for those --
+  the VERIFY lane / orchestrator rules. ms18/step0_ordered.py is the instrument; readers and verifiers in this lane run it first (wave 3 ruling in the jobs file).
+- Read: MS18-R8 E382-E391 (No. 1); N2R-4 N2-IA..IJ; N2R-5 N2-JA..JJ; N2R-6 N2-KA..KE (4 more rows step-0 hits, unfiled: 9848/0 9811/0 9688/0 9850/2). All
+  29 No. 2 rows from LEDGER-N2's list are now done. FIX-FM20, FIX-FM21 applied every audit s.5 to date; decode x3 --check 0.
+- Yield: under the ordered step-0 rule, most mssEC 18 rows are N1 before any print search (FV-MS18q 6/6, FV-N2e 3/6 + 2 in Grant Papers). Expect ~1 N3 per 10 rows read.
+**Next** (costs this incarnation: Sonnet reader ~0.25/row; Opus first audit ~0.4/entry on a step-0 hit, ~2.5 otherwise; STEP0 sweep disk-only ~3.3; FIX ~1.5-2.2):
+1. Owner-account orchestrator / VERIFY lane: rule on the 39 STEP0-RULE third-audit proposals (eckert result count may fall); re-tag AUD2-LEDGER10-3/-4 off account 4.
+2. First verifiers on N2-KA KB KC (not located; one Opus, ~4), step-0 ordered test first.
+3. N1 confirms of printed reads (one Opus, ~0.6/entry): E382 E388 E390 E391, N2-IE IF II IJ JA-JF JJ KD KE.
+4. Fetch the 9-10 missing page JSONs (57xx pointers, FM entries E302-E321; one hdl take, Sonnet ~0.5) and run ms18/step0_ordered.py on them.
+5. Readers: ~150 clean-ms18.tsv best_book 1 rows remain after 9903/1 (MS18-R9 onward, step-0 ordered test first; a hit files nothing). No. 9 leftovers as in the
+   LEDGER-N2 next list item 4.
+6. Blocked (unchanged): 1865 rows without a book, "No 3"/"No 13" rows, objects 8472/6254/9660 (no book in hand; Cipher No. 4 Friedman copy on LOCAL-QUEUE).
+
 ## LANE LEDGER-N2 handoff (session_01JyTbV4HjnVsWqF3eTp8vvZ, account 1, second blast lane beside LANE LEDGER incarnation 9), 10 October 2026 (00:40-02:3x UTC by date -u; closed: last planned wave done, lane about 52 of 60; seven_day allowed_warning throughout)
 
 Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261010-0040; jobs .claude/briefs/runs/2026-10-10-acct1-lane-ledger-n2-jobs.md (waves 1-3).
