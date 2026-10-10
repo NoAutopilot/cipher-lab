@@ -54,3 +54,45 @@ coverage.
 Units: ~5 pages x (1 OCR script + 1 Sonnet call ~0.8) + 5 reconciliation looks ~0.5 + a possible second pass on 2 pages + align/gate/decode
 ~1.5 + Opus floor 1.5 = ~8; cap 9. NOTES "## THUR-BM", Remaining gaps / Escalation / Verdict, gaps_check.py. Report what was found and where
 it was not found; do not classify novelty.
+
+## Wave 1 results (costs by get_session)
+- THUR-BM 11.03 / 9 (Opus, 1.23x over): leaves 377-378 carry no printed decipherment of l.44535; key bm/key_blankmarshall.tsv (104 agreed
+  codes, 1 split) from ll.40469/65889/77385/89881, PREREG-THURBM gate PASS both blind passes (pooled 0.871/0.861; every fold above p95 <0.10);
+  l.44535 151/151 groups C, 4-gram -1.007 vs shuffled-key p95 -1.431; 3 more glossed BM letters listed (ll.3370, 83274, 86815). ROOM flag for
+  a first verifier. Commit bd6d47855.
+
+## Wave 2 (15:0x UTC 10 Oct)
+Hosts this wave: archive.org ("IA": V-THURBM and THUR-BM2 share it -- take/release lines, the second waits for the first's release; <= 30
+requests each). No other host than the open indexes / Google Books API for V-THURBM.
+
+### V-THURBM (Opus, cap 6, box 120 min): FIRST VERIFIER, thurloe-printed l.44535 (Blank-Marshall at Bruges, 8 July 1657 N.S., Birch vol 6 p.374)
+A separate session from the solver (THUR-BM, session_013aecKkuzFyrHQ1JDKgUb4x); do not protect its conclusions. Use the CLAUDE.md "Verifier
+brief (template)" steps 1-5 in full, with step-type `audit` for prior_work.py. Claim under audit: "l.44535, printed in cipher without a
+decipherment in Birch 1742 vol 6 p.374, reads 151/151 groups at C under a key rebuilt from Birch's printed decipherments of four sibling
+Blank-Marshall letters (bm/reading_l44535.txt)". Inputs: NOTES "## THUR-BM", bm/ (key, gate, decode_44535.py, crops, PREREG-THURBM.md).
+(a) Rule 7: re-derive the reading from bm/l44535_ciphertext.tsv + bm/key_blankmarshall.tsv with `bm/decode_44535.py --check` and by your
+own independent script; eye-check the ciphertext on bm/crops/l44535_p374_L0*.jpg (numerals group by group) and the slip groups the solver
+names ("tyemselues", "mepllow", "nany", "preuennted", "dew heeret", key code 9 s|b) -- record per slip: transcription slip, encipherment slip
+or key gap; regrade anything not supported (M/I). (b) Rule 10 search, logged per family: Birch vols 1-7 (other places the same letter or its
+substance could print: an abstract, an "intelligence" letter of the same week), Calendar of State Papers Domestic 1657-58, Clarendon State
+Papers (Calendar vol. III, Macray 1876) for the Royalist side of the same news (Charles Stuart at Brussels, Gloucester to the field, Hyde,
+creditors, July 1657), Nicholas Papers vol IV (Camden), Firth/Scott on Thurloe's intelligencers ("Blank"/"Marshall" identity; e.g. Firth,
+EHR, and Underdown, Royalist Conspiracy), Bodleian MS. Rawl. A. catalogue (whether the manuscript itself carries a decipherment), IA/HathiTrust
+EF/Google Books phrase search on 2-3 distinctive clear+decoded phrases (with a positive control phrase from a glossed sibling), the open indexes,
+the solver repositories; JSTOR-QUEUE rows in both families (i) and (ii). (c) N-class with key source (`period`: rebuilt from period
+decipherments printed by Birch), depth per rule 4a (`tools/depth_check.py`) with one true content sentence if D2+, safe/unsafe sentences.
+(d) Write AUDIT.md "## AUDIT (V-THURBM, l.44535)", status.json fields per the folder's convention, and a SECOND-OPINIONS-QUEUE.tsv row if N3+.
+If N3+ D2+, add one WORK-QUEUE.tsv row `AUD2-FAMILY-A2r-1` (account-3, brief: CLAUDE.md verifier template, second adversarial audit of this
+item) per lane-common-blast.md "Results", and a ROOM line naming it for the account-3 orchestrator. file_shrink_guard on every touched
+file. Do not decode anything else, do not touch other targets. Units: re-derivation + eye check ~1.5, searches ~2, write-up ~1, floor 1.5.
+
+### THUR-BM2 (Opus, cap 6, box 120 min, IA after V-THURBM's release or between its takes): thurloe-printed, Blank-Marshall key witnesses from ll.3370, 83274, 86815
+NOTES THUR-BM Remaining gaps bullet 2. Prior-work step (prior_work.py, step-type key) first and pasted. Fetch the leaves of the three glossed
+letters (bm/bm_letters.tsv gives the OCR windows; find leaf by the running heads as THUR-V6 did), crop step pasted, two blind Sonnet passes per
+letter on crops exactly as THUR-BM did (passes in bm/passes/, pairs bm/<line>_pairs_B<k>.tsv), then extend the key into a SEPARATE file
+`bm/key_blankmarshall_7.tsv` and re-run the PREREG-THURBM gate unchanged as a leave-one-letter-out on all seven letters (write the seven-letter
+table to bm/gate7.tsv; the pre-registered rule is not changed, only the pool). Then report, for l.44535's slip groups and code 9, what the
+three extra witnesses say -- as a proposed FIX list in NOTES, NOT applied: do not edit key_blankmarshall.tsv, reading_l44535.*, AUDIT.md or
+status.json (V-THURBM is auditing the committed reading in parallel; a change after its audit is a rule 10 propagation the orchestrator
+schedules). NOTES "## THUR-BM2", Remaining gaps / Escalation / Verdict, gaps_check.py. Units: 3 letters x 2 passes ~0.8 + reconcile ~0.5 +
+gate ~0.5 + floor 1.5 = ~5.5. Report what was found and where it was not found; do not classify novelty.
