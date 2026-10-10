@@ -12350,52 +12350,12 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-N2a)'"
+        "AUDIT.md '## AUDIT (FV-N2a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGERN2-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth_by": "FV-N2a verifier (account 1)",
-      "depth_date": "10 Oct 2026",
-      "decode_status": "Partially decrypted",
-      "date": "10 Oct 2026",
-      "kind": "reading",
-      "claim_scope": "completed-reading",
-      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-N2a)' section 4",
-      "reading_version": "N2R-1 10 Oct 2026 (reading-no2.md), grades as in AUDIT (FV-N2a) s.3 (corrections in s.5 pending a FIX job)",
-      "unresolved_spans": "",
-      "depth_unread": {
-        "names_codes": "0",
-        "other": "1"
-      },
-      "depth_pct": 100.0,
-      "grade": "N3",
-      "plaintext_novelty": "N3",
-      "mapping_novelty": "N3",
-      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): Dana for the Secretary of War to Maj. Gen. G. K. Warren, 30 Oct 1864: Felix McCloskey, Seymour's ballot commissioner for the Fifth Corps, reported an old ballot-box stuffer; prevent any fraud (N2-FA)",
-      "line": "Read at grade H with War Department Cipher No. 2: on 30 Oct 1864 C. A. Dana, for the Secretary of War, warned Maj. Gen. G. K. Warren that Felix McCloskey, Governor Seymour's commissioner to distribute ballots in the Fifth Corps, was reported to be an old ballot-box stuffer from California, and told him to prevent any fraud; not located in print (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-N2a); not N4: OR ser. III vol. 4, Grant Papers vols. 11-13, the Warren papers, NARA RG 107 (M473), the 1864 press page by page, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGERN2-2)",
-      "depth": "D3",
-      "completeness": "14 H of 14 code-word groups; names plain (McCloskey, Dana: I), 'Pem' unread (M)",
-      "phrases": [
-        "Huntington mssEC 18 (obj 10074) p.213, pointer 9879, N2-FA"
-      ],
-      "document_id": "Huntington mssEC 18 (obj 10074) p.213, pointer 9879, N2-FA",
-      "documents": [
-        "Huntington mssEC 18 (obj 10074) p.213, pointer 9879, N2-FA"
-      ],
-      "depth_sentence": "A week before the 1864 election the War Department told Warren that the Seymour ballot commissioner for his Fifth Corps was said to be a California ballot-box stuffer and should be watched.",
-      "depth_check": "code clause: Happy Hannah Ogden for Nymph = Washington, 1 PM, 30, for Warren; Dayton Pelham = Fifth Corps; external: Fry, A Republic in the Ranks (2020) p.174 (Felix McCloskey, Tammany operative with the army, 1864) and Dana's same-week telegrams on Seymour's agents, OR I/42 pt 3 pp.435-436, 455 (D3)",
-      "depth_note": "14 H of 14 code-word groups; names plain (McCloskey, Dana: I), 'Pem' unread (M)"
-    },
-    {
-      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
-      "key": "period",
-      "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-N2a)'"
-      ],
-      "audit_status": "one audit",
-      "superseded_by": "",
-      "depth_by": "FV-N2a verifier (account 1)",
+      "depth_by": "AUD2-LEDGERN2-2 verifier (account 4); first FV-N2a verifier (account 1)",
       "depth_date": "10 Oct 2026",
       "decode_status": "Partially decrypted",
       "date": "10 Oct 2026",
@@ -12408,15 +12368,57 @@
         "names_codes": "2",
         "other": "0"
       },
-      "depth_pct": 93.1,
+      "depth_pct": 77.8,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): Dana for the Secretary of War to Maj. Gen. G. K. Warren, 30 Oct 1864: Felix McCloskey, Seymour's ballot commissioner for the Fifth Corps, reported an old ballot-box stuffer; prevent any fraud (N2-FA)",
+      "line": "Read with War Department Cipher No. 2 (period key; 14 of 18 code words at grade H): on 30 Oct 1864 C. A. Dana, for the Secretary of War, warned Maj. Gen. G. K. Warren that Felix McCloskey, Governor Seymour's commissioner to distribute ballots in the Fifth Corps, was reported to be an old ballot-box stuffer from California, and told him to prevent any fraud; not located in print (searched 10 Oct 2026).",
+      "gap": "N3 two audits (FV-N2a, AUD2-LEDGERN2-2); not N4: OR ser. III vol. 4, Grant Papers 12 index pages (370n, 442) page by page, the Warren papers, NARA RG 107 (M473), HathiTrust, Fry's note to p.174 unread; JSTOR rows queued",
+      "depth": "D2",
+      "completeness": "14 H, 2 I (yard, stick: period short forms, I in key-no2.md), 2 M (Pem, Brach) of 18 code-word tokens (77.8%, AUD2-LEDGERN2-2); names plain (McCloskey, Dana: I)",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.213, pointer 9879, N2-FA"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.213, pointer 9879, N2-FA",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.213, pointer 9879, N2-FA"
+      ],
+      "depth_sentence": "A week before the 1864 election the War Department told Warren that the Seymour ballot commissioner for his Fifth Corps was said to be a California ballot-box stuffer and should be watched.",
+      "depth_check": "code clause: Happy Hannah Ogden for Nymph = Washington, 1 PM, 30, for Warren; Dayton Pelham = Fifth Corps; external: Fry, A Republic in the Ranks (2020) p.174 (Felix McCloskey, Tammany operative with the army, 1864) and Dana's same-week telegrams on Seymour's agents, OR I/42 pt 3 pp.435-436, 455 (D2 by AUD2-LEDGERN2-2: 77.8% H is under the D3 line; back to D3 if the yard/stick short forms are graded H)",
+      "depth_note": "14 H, 2 I (yard, stick: period short forms, I in key-no2.md), 2 M (Pem, Brach) of 18 code-word tokens (77.8%, AUD2-LEDGERN2-2); names plain (McCloskey, Dana: I)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-N2a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGERN2-2)'"
+      ],
+      "audit_status": "two audits",
+      "superseded_by": "",
+      "depth_by": "FV-N2a verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-N2a)' section 4",
+      "reading_version": "N2R-1 10 Oct 2026 (reading-no2.md), grades as in AUDIT (FV-N2a) s.3 (corrections in s.5 pending a FIX job)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "1",
+        "other": "0"
+      },
+      "depth_pct": 96.3,
       "grade": "N3",
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): Quartermaster General to Brig. Gen. Ingalls, 26 June 1864 10 PM: sea-going steamers to serve the Medical Department until the wounded at City Point are removed, before the New Orleans service (N2-FB)",
-      "line": "Read at grade H with War Department Cipher No. 2: on 26 June 1864 the Quartermaster General told Brig. Gen. Ingalls that sea-going steamers in the James or at Fort Monroe should serve the Medical Department until the wounded at City Point were removed, ahead of the New Orleans service; Ingalls's reply of 27 June is printed in the Official Records; this telegram not located in print (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-N2a); not N4: OR ser. III vol. 4, Grant Papers vol. 11, the Meigs papers, NARA RG 92/RG 107, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGERN2-2)",
+      "line": "Read at grade H with War Department Cipher No. 2: on 26 June 1864 the Quartermaster General told Brig. Gen. Ingalls to [see] Grant and that sea-going steamers in the James or at Fort Monroe should serve the Medical Department until the wounded at City Point were removed, ahead of the New Orleans service; Ingalls's reply of 27 June is printed in the Official Records; this telegram not located in print (searched 10 Oct 2026).",
+      "gap": "N3 two audits (FV-N2a, AUD2-LEDGERN2-2); not N4: OR ser. III vol. 4, the Meigs papers, NARA RG 92/RG 107, HathiTrust not searched; JSTOR rows queued",
       "depth": "D3",
-      "completeness": "27 of 29 code-word groups H/C; 'See/Lee? Magic' and 'Sandwich' M",
+      "completeness": "25 H, 1 C of 26 key groups plus 'Sandwich' unread (M): 26 of 27 (96.3%); Magic = Grant U S is H, 'See/Lee?' a doubtful clear word (AUD2-LEDGERN2-2)",
       "phrases": [
         "Huntington mssEC 18 (obj 10074) p.101, pointer 9767, N2-FB"
       ],
@@ -12426,15 +12428,16 @@
       ],
       "depth_sentence": "Meigs put the sea-going steamers at City Point at the service of the wounded ahead of the New Orleans troop lift, and Ingalls answered next day that only two or three could go to sea and Grant wanted the steamers for New Orleans.",
       "depth_check": "code clause: Surgeon shark advises me of great accumulation of sick and wilkes at Brimstone = Surgeon General ... sick and wounded at City Point; external: Ingalls's reply, holder 10443 = OR I/40 pt 2 pp.463-464 (D3)",
-      "depth_note": "27 of 29 code-word groups H/C; 'See/Lee? Magic' and 'Sandwich' M"
+      "depth_note": "25 H, 1 C of 26 key groups plus 'Sandwich' unread (M): 26 of 27 (96.3%); Magic = Grant U S is H, 'See/Lee?' a doubtful clear word (AUD2-LEDGERN2-2)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-N2a)'"
+        "AUDIT.md '## AUDIT (FV-N2a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGERN2-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-N2a verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -12449,15 +12452,15 @@
         "names_codes": "0",
         "other": "0"
       },
-      "depth_pct": 100.0,
+      "depth_pct": 92.9,
       "grade": "N3",
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): Brig. Gen. Ingalls to Brig. Gen. Rawlins, 3 Dec 1864: First Division of the Sixth Corps embarked, Third arrives tomorrow afternoon, Second on Tuesday (N2-FE)",
       "line": "Read at grade H with War Department Cipher No. 2: on 3 Dec 1864 Ingalls at Washington told Rawlins that the First Division of the Sixth Corps had embarked, the Third would arrive the next afternoon and embark at once and the Second on Tuesday; not located in print (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-N2a); not N4: OR ser. III vol. 4, Grant Papers vol. 13, NARA RG 92/RG 107, the 1864 press, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGERN2-2)",
+      "gap": "N3 two audits (FV-N2a, AUD2-LEDGERN2-2); not N4: OR ser. III vol. 4, Grant Papers 13 (IA be-api index does not answer: untested), NARA RG 92/RG 107, HathiTrust not searched",
       "depth": "D3",
-      "completeness": "25 H, 1 C of 26 code-word groups; rest plain",
+      "completeness": "25 H, 1 C, 2 I (yard, stick: period short forms) of 28 code-word tokens (92.9%, AUD2-LEDGERN2-2)",
       "phrases": [
         "Huntington mssEC 18 (obj 10074) p.239, pointer 9905, N2-FE"
       ],
@@ -12467,7 +12470,7 @@
       ],
       "depth_sentence": "As the Sixth Corps came back from the Valley, Ingalls reported from Washington that its divisions were being shipped to City Point one after another.",
       "depth_check": "code clause: The Benton Quaker will arrive here Wedlock after noon = the Third Division will arrive here tomorrow afternoon; external: Sheridan 3 Dec 2 p.m., OR I/43 pt 2 p.730, and Rawlins 4 Dec, OR I/42 pt 3 p.794 (D3)",
-      "depth_note": "25 H, 1 C of 26 code-word groups; rest plain"
+      "depth_note": "25 H, 1 C, 2 I (yard, stick: period short forms) of 28 code-word tokens (92.9%, AUD2-LEDGERN2-2)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",

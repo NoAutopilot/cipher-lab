@@ -14676,3 +14676,84 @@ S2, loc.gov), `aud2_ledgern2_1_hdl.py` + `.out`, `aud2_ledgern2_1_info.out`; IA 
 Requests: hdl.huntington.org 16 (12 CISOSEARCHALL, 4 item info; all 200); archive.org 13 (8 djvu, 3 metadata, 2 advancedsearch; one 403, one 503, two 404
 on wrong file names) + 5 advancedsearch in the script; be-api.us.archive.org 30 (all answered); www.googleapis.com 16; www.loc.gov 4 (all 403, stopped);
 api.openalex.org 2; api.semanticscholar.org 2 (1 x 429).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGERN2-2)
+
+Second verifier AUD2-LEDGERN2-2 (account 4, for the orchestrator (account-4); row queued by LANE LEDGER-N2 (account 1), re-tagged from account 3), 10 Oct
+2026, 02:38-02:5x UTC by `date -u`; a separate session and account from the reader N2R-1, the first auditor FV-N2a and the fixer FIX-N2a (account 1); this
+session had not read or audited N2-FA, N2-FB or N2-FE before. Scope: those three entries only. Nothing decoded beyond key look-ups in key-no2.md. Key source:
+`period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Re-derivation: `python3 ciphers/eckert-1864/decode_no2.py --check` ->
+"reading-no2.md is current" (exit 0). Intake gate: `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+Prior work (`tools/prior_work.py eckert-1864 --item-spec ... --step-type second-audit --offline`): exit 4 for each, every LEAD an own-work live claim (FIX-FM14
+to FIX-FM18, KEY-CANBY, FV-MS18f, FV-N2a and this session's own claim, none naming these units' audits); KNOWN-PART for N2-FA and N2-FE is the holder's
+public transcription of the clear words (the code words not). Image: not re-fetched (FV-N2a eye-checked every line at 2400 px; the holder's transcriptions
+match ciphertext-no2.txt token for token). Committed (`ms18/`): `aud2_ledgern2_2_hdl.py` + `.out` (12 CONTENTdm queries, 2 item infos);
+`aud2_ledgern2_2_search.py` + `.out` (IA be-api 15, Google Books 11, Chronicling America 6, S2/CORE/OpenAlex 2 each); `aud2_ledgern2_2_be2.py` + `.out`
+(be-api 13: Fry 2020 context, positive controls); `aud2_ledgern2_2_ca_pages.py` + `.out` (16 named Chronicling America pages); three JSTOR-QUEUE.tsv rows.
+
+### 1. Families FV-N2a did not cover, and what this pass did
+| Family | FV-N2a | This pass |
+|---|---|---|
+| Huntington CONTENTdm, new queries (all pointers) | 10 queries | 12 more: McClosky 0; Felix 2 (9879 own; 11855 = a June telegram from Pittsburg on Felix R. Brunot, other); ballots Fifth Corps 0; Warren ballots 0; Seymour commissioner 0; sea going steamers 6 (8629, 8712, 8506 = 1865; 4779 New Orleans July 1864; 7110 = 1863; 10443 = FV-N2a's reply); New Orleans service 22 (none 25-28 June 1864 from Washington); Medical Department steamers 0; Sixth Corps Bradley 0; river steamers 35 (**10442**, **10450** opened; the rest other dates/subjects by their heads); Third Division Sixth Corps 3 (1864-65, other); Getty division 5 (other). Item info: **10442** (City Point 26 June 9.30 a.m., recd 10.15 a.m., Ingalls to the Quartermaster General: "your dispatch of 11 30 am yesterday was recd ... the only ocean Steamers in this river are the C Thomas, Swanee, Rebecca, Barton and Ellen S Terry ... I have given them the orders you directed"; printed OR I/40 pt 2 pp.432-433, FV-N2a; the Google Books snippet below shows the same text) -- the morning of N2-FB's day, answering Meigs's 25 June order sending the ocean steamers to New Orleans; **10450** (New York 30 June, Van Vliet to the Quartermaster General: steamers sailed for New Orleans 24-30 June) -- the New Orleans lift that N2-FB puts second. Neither is a copy of N2-FB. **No duplicate or clear copy of N2-FA, N2-FB or N2-FE** |
+| Papers of U. S. Grant (IA be-api, no login) | not searched (ids unverified) | vol. 11 (`papersofulyssess0011gran`, June-Aug 1864): "hospital transports" 0, "sea-going" 0, "wait upon the other" 0; positive controls answer ('Ingalls "New Orleans" steamers', '"Surgeon General" transports': June 1864 Ingalls/Meigs transport notes) -- **N2-FB not located**. vol. 12 (`...0012gran`, Aug-Nov 1864): McCloskey 0, "ballot-box stuffer" 0, 'Seymour agents ballots' 0, 'Warren Seymour commissioner' 0, '"Fifth Corps" ballots' 0; positive control 'Seymour' answers (index: "Seymour, Horatio (Gov. of N.Y.), 370n, 442") -- **N2-FA not located** (pp.370n, 442 not read page by page). vol. 13 (`...0013gran`): every query 0 **including the positive control '"Sixth Corps"'** -- the volume's be-api index does not answer, so N2-FE in Grant Papers 13 is **untested**, not a miss |
+| Fry, *A Republic in the Ranks* (2020) | cited p.174 by snippet | positive control answers; context: a New York Democratic agent with the army wrote "that he had been accosted and feared for his life. Felix McCloskey, a Tammany Hall operative and likely the agent in question, remarked ...". 'stuffer' 0, 'Seymour commissioners Fifth Corps' 0 in the book: Fry does not appear to quote this telegram (be-api snippets only; the note to p.174 not read) |
+| Google Books (key, country=US) | not searched | 11 queries: "Felix McCloskey" 126 (the name in the House Journal 1863, House documents 1862, a Clinton Co., Pa. contested-election list 1879 and a federal register 1889; none this telegram); "old ballot-box stuffer from California", "credibly reported to this Department" Seymour, "one service or duty must wait upon the other", "great accumulation of sick and wounded" "City Point": noise only (California 1850s, case law, Matthew Henry, *Medical and Surgical History*); 'Meigs Ingalls "hospital transports" "New Orleans" June 1864' 4: OR I/40 pt 2 (Ingalls 26 June 9 a.m. = holder 10442), QM General's report 1880 -- **not N2-FB's text**; Sixth Corps/Ingalls/Rawlins 3 Dec 0 relevant |
+| Press of the day (Chronicling America) | not searched | 6 queries; 16 pages read (OCR): McCloskey hits 25 Oct-30 Nov 1864 and 1865 are a Bowery actor (J. McCloskey) and Archbishop McCloskey -- **no Felix McCloskey item**; Daily National Intelligencer 31 Oct p.3, New-York Daily Tribune 31 Oct p.4, Evening Star 3 Nov p.2 (the Seymour-agents arrests): no McCloskey, no Fifth Corps commissioner; Daily National Intelligencer 3 Dec p.3, Daily National Republican 3 and 5 Dec p.2: no Sixth Corps embarkation item. One page (New York Herald 9 May 1865 p.7) failed to download (IncompleteRead), not retried |
+| S2, CORE, OpenAlex | not searched | 2 queries each: nothing on McCloskey, the Fifth Corps ballot commissioners or the June 1864 hospital transports (OpenAlex lists "Absentee soldier voting in Civil War law and politics" -- a lead on the subject, not read) |
+| JSTOR | not queued | 3 rows queued (s.4); never blocking |
+| Unreachable / not searched | -- | OR ser. III vol. 4 (no readable IA text, FV-MS18o); Grant Papers 13 (index dead, above) and 12 pp.370n, 442 page by page; Warren papers (NYSL), Meigs papers (LC); NARA RG 92, RG 107 (M473); Fry's note to p.174; HathiTrust (Cloudflare) |
+
+### 2. Findings
+- **No copy, quotation or printed text of N2-FA, N2-FB or N2-FE found** in the families above. FV-N2a's three "not located" results stand.
+- **N2-FB reading omits a key-read clause.** The ledger has "halt See/Lee? Magic & place all stomach sea going waltzers ...": Magic = Grant U S (key-no2.md
+  p.18 l.13 R, **H**; the decoder already prints [Grant U S]). The header sentence in ciphertext-no2.txt, FV-N2a's s.3 reading and the SO prompt (which calls
+  Magic "[unread]") drop it. Read with the key the instruction is "[See?] Grant and place all necessary sea-going steamers ..."; Ingalls's reply next day
+  (10443 = OR I/40 pt 2 pp.463-464: "Gen Grant thinks it important that the Ocean Steamers heretofore ordered shall go to N. Orleans") is consistent with his
+  having seen Grant. "See" stays M (the leaf's word is doubtful, FV-N2a); Grant is H. FV-N2a's "'See/Lee? Magic' M" over-counts the gap: only "See/Lee?" is
+  doubtful and it is a clear word, not a code group.
+- **N2-FB context.** Holder 10442 (Ingalls, 26 June 9.30 a.m.) shows the sequence: Meigs on 25 June 11.30 a.m. ordered the ocean steamers to New Orleans;
+  N2-FB at 10 p.m. on the 26th, after the Surgeon General's appeal, puts them first at the Medical Department's service; Ingalls answers on the 27th. Add 10442
+  beside 10443 as context (I).
+- **Counts corrected (rule 4 / 4a).** FV-N2a gave N2-FA "H 14 of 14" and N2-FE "26 of 26", calling the decoder's I-grade tokens "fillers". They are not:
+  in both entries the two I tokens are **yard** and **stick** (period), which key-no2.md grades I (the clerk's short forms of Yardstick, p.25 l.23 R) -- code
+  words, not nulls. Counted per the standard (cipher tokens excluding cleartext and nulls): **N2-FA** 14 H, 2 I (yard, stick), 2 M (Pem, Brach) of 18 =
+  **77.8% H/C/S**; **N2-FE** 25 H, 1 C, 2 I of 28 = **92.9%**; **N2-FB** 25 H, 1 C (the decoder's merged Wiley+Buggy = signed Quartermaster General) of 26 key
+  groups plus Sandwich unread (M) = 26 of 27 = **96.3%**.
+- **N2-FA depth lowered D3 -> D2.** 77.8% is under D3's 80% line (rule 4a). The D2 conditions hold: the clause "Happy Hannah Ogden for Nymph ... tooth Dayton
+  Pem Pelham" reads Washington, 1 PM, 30, for Warren ... to the 5 [Pem] Corps, and the depth sentence (FV-N2a's) is true and specific. It returns to D3 if a
+  KEY job grades the yard/stick short forms H (16 of 18 = 88.9%) or Pem/Brach are read; a verifier decides, not this note.
+- **N2-FA identity.** "Felix McCloskey" stays I (plain phonetic split + Fry). Fry places McCloskey with the army as a Tammany operative; that the
+  telegram's commissioner is Fry's man is inference. The Felix McCloskey of the 1862-63 House Journal and documents (Google Books snippets) may or may not be the same
+  man: a lead, not a grade.
+
+### 3. Class (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| N2-FA | **N3** (kept) | period | **D2** (lowered from D3: 14 H of 18 code-word tokens, 77.8%; 2 I punctuation short forms, 2 M; decode --check current) | not located after FV-N2a and s.1 (Grant Papers 12, press 25 Oct-30 Nov 1864, Google Books, holder) |
+| N2-FB | **N3** (kept) | period | **D3** (kept: 26 of 27, 96.3%; external: holder 10443 = OR I/40 pt 2 pp.463-464, and 10442) | not located after FV-N2a and s.1 (Grant Papers 11, Google Books, holder) |
+| N2-FE | **N3** (kept) | period | **D3** (kept: 26 of 28, 92.9%; external: OR I/43 pt 2 p.730, I/42 pt 3 p.794) | not located after FV-N2a and s.1 (press 2-10 Dec 1864, Google Books, holder; Grant Papers 13 untested) |
+
+- Not N4 for any: OR ser. III vol. 4, Grant Papers 13 (dead index) and 12 index pages, NARA RG 92/107 (M473), the Warren and Meigs papers, HathiTrust unread;
+  JSTOR rows open. Not D4: no fresh rule-7 re-derivation session.
+- **Safe sentences:** N2-FA -- "Read with War Department Cipher No. 2 (period key; 14 of 18 code words at grade H): on 30 Oct 1864 C. A. Dana, for the
+  Secretary of War, warned Maj. Gen. G. K. Warren that Felix McCloskey, Governor Seymour's commissioner to distribute ballots in the Fifth Corps, was reported
+  to be an old ballot-box stuffer from California, and told him to prevent any fraud; not located in print (searched 10 Oct 2026)." N2-FB -- FV-N2a's, with
+  "told Brig. Gen. Ingalls" -> "told Brig. Gen. Ingalls to [see] Grant and". N2-FE -- FV-N2a's, unchanged.
+- **Unsafe:** "first", "new", "unpublished", "never printed"; "deciphered" or "largely deciphered" for N2-FA (D2: "partially deciphered (about 78%)");
+  "McCloskey was a ballot-box stuffer" (an allegation); "Fry's McCloskey" as fact; "not in the Grant Papers" for N2-FE (vol. 13 untested).
+
+### 4. Postmortem and fixes (for the next FIX job; ciphertext-no2.txt and reading-no2.md not edited here)
+- FV-N2a's classes and search stand. Its over-reaches are counting: the yard/stick short forms (I in the key) were called fillers, which put N2-FA at D3
+  on 14 of 14; and Magic (H) was counted as an M gap while the reading dropped it. Applied here: status.json N2-FA/FB/FE `audit_status` "two audits",
+  `audit_refs`, `gap`, `completeness`/`depth_note`/`depth_pct`; N2-FA `depth` D2, `depth_check`, `decode_status`; N2-FB `line`; SO prompt
+  PROMPT-chatgpt-n2-fb.md reading "See/Lee? [unread]" -> "See/Lee? [Grant]" (PROMPT-chatgpt-n2-fa.md unchanged: it states no counts or depth); the SECOND-OPINIONS-QUEUE rows
+  themselves unchanged (class unchanged). JSTOR-QUEUE.tsv: family (i) McCloskey AND Seymour AND (ballot OR "Fifth Corps") AND 1864; family (ii) "ballot-box
+  stuffer from California" and "one service or duty must wait upon the other".
+- **ciphertext-no2.txt (FIX job):** N2-FB header "I presume this is more urgent than the New Orleans service; place all necessary sea-going steamers" ->
+  "... the New Orleans service; [see? M] Grant (Magic, H) and place all necessary sea-going steamers"; note: add holder 10442 (Ingalls 26 June 9.30 a.m.,
+  OR I/40 pt 2 pp.432-433) and 10450 (Van Vliet 30 June) as context. N2-FA and N2-FE notes: "yard"/"stick" are I-grade period short forms (key-no2.md), not
+  fillers; N2-FA note: Grant Papers 12 and the press of 25 Oct-30 Nov 1864 searched (AUD2-LEDGERN2-2).
+- **KEY lane (suggestion):** yard and stick for Period now recur across many No. 2 entries (N2-A, N2-B, N2-S..U, N2-FA, N2-FE); a KEY job may decide
+  whether the short forms of Yardstick (p.25 l.23 R) are H, which moves N2-FA back over the D3 line.
+Requests: hdl.huntington.org 14 (12 CISOSEARCHALL, 2 item info), all 200; be-api.us.archive.org 28 (all answered); www.googleapis.com 11; www.loc.gov 6
+search + 30 page/full-text (one IncompleteRead); api.semanticscholar.org 2; api.core.ac.uk 2; api.openalex.org 2. For orchestrator (account-4).
