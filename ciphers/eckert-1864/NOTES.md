@@ -5509,3 +5509,11 @@ after: "of [31] January [1861] Directors". Grade before/after: decoder H 25 both
 (depth_pct 80 -> 100). N3 D3 stands (AUD2-LEDGER10-4 s.3). Carried into status.json (depth_pct, completeness, gap, line, reading_version)
 and the queued SO prompt (PROMPT-chatgpt-n2-ic.md) per rule 10. Checks: decode.py, decode_no2.py, decode_no9.py --check all "is current"
 (exit 0); tools/tests/test_eckert_decode.py 27 OK; tools/depth_check.py exit 0.
+
+## FIX-FM22 (10 Oct 2026, account 1, for LANE LEDGER-12)
+
+Worker FIX-FM22, offline, applies AUDIT.md "## AUDIT (FV-MS65a)" s.5. Header edits in ciphertext.txt (entry-level text only; key.md, reading*.md untouched except by `decode.py --write`).
+- E400: header "they will aid" -> "will aid" (the ledger and I/47-3, I/48-2 print it so; "they" was the I/49-2 wording); "or included" -> "or which was included"; page numbers added (I/47 pt 3 p.664, I/48 pt 2 p.995, I/49 pt 2 p.1035). Grades unchanged.
+- E401: header now says body plain in the holder transcription (Step-0 hit, a 0.540 vs b 0.190), key adds only Point, West Virginia, Kanawha, President (key-dependent); "not located in print" replaced by the places searched, the 1989 sibling quotation (Southern Revenge! p.133) and the 23-29 June 1865 press. Grades unchanged.
+- MS65-R1 gaps (E400 page numbers, E401 print) are answered by the audit and this edit. Classes are the audit's (E400 N1 D1, E401 N1 D1); no status.json or SO row exists for either (none filed at N3+), so nothing to propagate. N2-IC not touched.
+- Checks: decode.py --write then --check exit 0; decode_no2.py --check exit 0; decode_no9.py --check exit 0.
