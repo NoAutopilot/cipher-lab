@@ -138,3 +138,8 @@ re-score this one: no second score was run, and the gate was not loosened.
 | access_log_packets.tsv | 8eac2fabd26bd26d2b99181804a6b92c53744fb572c1cfb02e5476d3d3124d7a |
 
 Openings of eval truth: 0. dev openings: 1.
+
+## Citation correction (lane incarnation 5, 10 Oct 2026 03:5x UTC by date -u; TX-RED pass 17 F80)
+The header's "PREREG push 8212de547" names PREREG-21's first push (02:11, which did not yet hold SHEET-VIV); the SHEET-VIV section entered
+in **c29543f04 (02:54:18 UTC)**, which is this job's PREREG push of record. The order holds: reader_task.txt committed a1635d222 (03:01:47)
+after it, before the first read.

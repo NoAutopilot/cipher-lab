@@ -300,3 +300,19 @@ second hand. F77: the claims (02:59-03:00) follow the addenda commit (02:54:18) 
 (a1635d222) before its first read, per its RESULTS step 1.
 
 Costs this check-in: TXE2-SHEETVIVC 22, TXE2-MARKS2 3. Eval looks: 0. S2 looks: 1. Openings: SHEET-VIV-C 0 eval / 1 dev; MARKS-DEV2b 0 / 1.
+
+## MARKS-DEV2b result (lane, dated 03:5x UTC 10 Oct by date -u; TXE2-MARKS2 session_015gKdxtkRzXU8Vyun593ed5, 1.65 D, done 03:44)
+**FAIL read-free -- untested-by-this-tool (raw components):** the pool is empty a second time (1,771 boxes, 29 under 0.35 x the median sign
+height, 0 stacked pairs, 0 candidates; recall 0.000); the worker's read of the tool: `glyph_atlas.py segment` hard-codes a speck filter
+(h < 0.3 and w < 0.6 x the median) that no option reaches, so the colon's dots never reach the rule. Under rule 3's third-attempt clause (two
+runs, one knob changed, pool empty both times) the two-component rule on glyph_atlas segment output is RETIRED for this hand as
+"untested-by-this-tool" (not a negative); the orchestrator (03:51): stop at two; a raw connected-component pass or a single-component shape
+test is a different instrument that needs its own PREREG, not queued now. Openings: eval 0, dev 1 (script).
+
+## TX-RED pass 17 answers (lane, 03:5x UTC 10 Oct by date -u)
+F78 (the mask-of-record wording): the orchestrator's decision wording, clarified by the orchestrator in PREREG-S2 ("licenses no further read of
+f.103r; fixes the mask for re-scores of frozen outputs or a second confirm look a future PREREG would declare; a new pipeline's unseen-hand
+number comes from a new confirm item"); nothing for the lane to add. F79 adopted: dated proposal-version line in PREREG-19 (all three hands v1
+as published; no re-cut planned; minutes per 100 recorded per hand with its version). F80 adopted: dated note in txeng2/sheetviv/RESULTS.md
+citing c29543f04 (02:54:18) as SHEET-VIV's PREREG push. F81 is the orchestrator's successor prompt; the reader-display check (F14 shape) goes
+into the next reader brief as a confirmation the reader gives, not a rule it is told -- noted for SHEET-VIV-C's successor briefs.

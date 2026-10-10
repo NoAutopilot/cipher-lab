@@ -146,3 +146,10 @@ pieces are handled by R1 (both halves Bad cut); the descender-crossing test goes
 pages name their piles "sign box" / "mark box" (the machine's cut kind, said so in the lede); the next build names piles by geometry only ("box" /
 "small box under 0.35 x the line height"). The owner's minutes per 100 signs come to whichever orchestrator session is live (the account-4
 orchestrator is handing over at 03:4x) and complete this registration when written here.
+
+## OL1-MANIFEST: proposal version per hand (lane incarnation 5, 10 Oct 2026 03:5x UTC by date -u; TX-RED pass 17 F79, written before any re-cut -- none is planned)
+Proposal version of record per hand, as published 03:10 UTC (TXE2-OL1PAGE 906d366fa; sha256 in oracle1/RESULTS.md "## OL1-PAGE per hand"):
+vivonne1573-f102r **v1** (541 boxes; the owner works the fresh copy B861DYeshrbaHbghGo3YNZ); birago1572-no87 **v1** (343); luzerne108a-p1 **v1**
+(445, every box padded 4 px). No re-cut of any hand is planned for this run (the orchestrator, 03:4x); if a hand's proposals ever change, its
+page becomes v2 by a dated line here before the owner opens it, and the Vivonne page stays v1. The owner's minutes per 100 signs are recorded
+here per hand WITH the version they were timed on; a figure from a v1 page is comparable only with other v1 figures.
