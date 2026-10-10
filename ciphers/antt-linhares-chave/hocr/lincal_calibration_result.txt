@@ -1,0 +1,5 @@
+0306_c2	Parecer	19	hit	0
+0248_c1	Inevitavel	24	hit	0
+0362_c3	Rustico	25	hit	0
+0225_c1	Franco	8	hit	0
+hit 4/4 -> GATE PASS

@@ -206,5 +206,55 @@
    "box_native": "1020,470,1090,520",
    "scale": 6
   }
- }
+ },
+ "fam_lincal_2026_10_10": [
+  {
+   "file": "book_hires/leaf0306.jpg",
+   "url": "https://iiif.archive.org/image/iiif/2/newpocketdiction00viey%2fnewpocketdiction00viey_jp2.zip%2fnewpocketdiction00viey_jp2%2fnewpocketdiction00viey_0306.jp2/full/1897,/0/default.jpg",
+   "size": [
+    1897,
+    2152
+   ],
+   "bytes": 711833,
+   "fetched": "2026-10-10 09:26 UTC",
+   "job": "FAM-LINCAL",
+   "note": "p.290, held-out col 2 Parecer r19"
+  },
+  {
+   "file": "book_hires/leaf0248.jpg",
+   "url": "https://iiif.archive.org/image/iiif/2/newpocketdiction00viey%2fnewpocketdiction00viey_jp2.zip%2fnewpocketdiction00viey_jp2%2fnewpocketdiction00viey_0248.jp2/full/1897,/0/default.jpg",
+   "size": [
+    1897,
+    2152
+   ],
+   "bytes": 672662,
+   "fetched": "2026-10-10 09:26 UTC",
+   "job": "FAM-LINCAL",
+   "note": "p.234, held-out col 1 Inevitavel r24"
+  },
+  {
+   "file": "book_hires/leaf0362.jpg",
+   "url": "https://iiif.archive.org/image/iiif/2/newpocketdiction00viey%2fnewpocketdiction00viey_jp2.zip%2fnewpocketdiction00viey_jp2%2fnewpocketdiction00viey_0362.jp2/full/1897,/0/default.jpg",
+   "size": [
+    1897,
+    2152
+   ],
+   "bytes": 677034,
+   "fetched": "2026-10-10 09:26 UTC",
+   "job": "FAM-LINCAL",
+   "note": "p.344, held-out col 3 Rustico r25"
+  },
+  {
+   "file": "book_hires/leaf0225.jpg",
+   "url": "https://iiif.archive.org/image/iiif/2/newpocketdiction00viey%2fnewpocketdiction00viey_jp2.zip%2fnewpocketdiction00viey_jp2%2fnewpocketdiction00viey_0225.jp2/full/1897,/0/default.jpg",
+   "size": [
+    1897,
+    2152
+   ],
+   "bytes": 715853,
+   "fetched": "2026-10-10 09:26 UTC",
+   "job": "FAM-LINCAL",
+   "note": "p.211, held-out col 1 Franco r8"
+  }
+ ]
 }
