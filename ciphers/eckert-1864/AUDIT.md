@@ -13345,3 +13345,105 @@ ciphertext.txt or reading.md):
 Requests: hdl.huntington.org 22 (9 CISOSEARCHALL, 9 item info of which 1 dropped connection not retried, 3 IIIF 2400 px; plus 1 failed), archive.org 14 (5 djvu
 texts, 2 page_numbers, 7 page images), googleapis.com 6, be-api.us.archive.org 3.
 Queued: WORK-QUEUE `AUD2-LEDGER-36` (E366, E369, E370), SO-ECKERT-E366, SO-ECKERT-E369, SO-ECKERT-E370.
+
+## AUDIT (FV-MS18o)
+
+Verifier FV-MS18o (account 1, for LANE LEDGER), 10 Oct 2026, 00:58-01:2x UTC by `date -u`; a separate session from the reader MS18-R7, not protecting its
+conclusions. Scope: first audits of **E378** (mssEC 18 p.154, pointer 9820, third entry, 16 Aug 1864) and **E381** (mssEC 19 p.364, pointer 9258, second entry,
+27 July 1865). Nothing decoded beyond key look-ups in key.md. Key source for both: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run.
+Intake gate (00:5x): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Prior work (`tools/prior_work.py
+eckert-1864 --item-spec 'item_id=E378;ptr=9820/3;date=1864-08-16' --step-type audit --offline`, and the same for E381 with 9258/2, 1865-07-27): exit 4 each,
+verdict step LEAD, every LEAD an own-work line of this lane (MS18-R7's filing, AUD2-LEDGER-31/33), none an earlier audit of these entries. Scripts:
+`ms18/fv_ms18o_hdl.py` (+ `fv_ms18o_hdl.out`, `fv_ms18o_info.out`).
+
+### 0. What the reader missed
+- **E378:** "Libby" is the written time word (**Libby = 6 PM**, key.md TIME page, H); the reader's note "hour not written, so the decoder's 6 PM is the key row's,
+  M" is wrong. "for Insanity" = for **C. A. Dana** (H, not M) and "walrus Bruno" = signature, **Secretary of War** (H, not M). "Princess" is the schooner
+  **Princess**, not the key word Princess = Captain: the holder's clear siblings name her -- **9046** (= E40, 13 Aug 1864: "Detain the Princess and her cargo
+  ... Detain Schooner Princess"), **9047/0** (mssEC 19 p.154, 14 Aug 1864 11.10 AM, to Horner for Murray, signed Byron = Secretary of State: report
+  "immediately whether the Schr Princess was detained as directed yesterday or whether she got off"; not filed, a sibling) and **9820/2** (14 Aug 9 PM:
+  "Detain the Princess till further directions. The subject is under investigation", signed Webster Bunyan = Secretary of State). "trade" in "the course of
+  trade" is plain, not the key word Trade = Outflank. The word read "wrangler" is written "wrangles" on the image (Wrangle = Telegraph, plural: "Your two
+  telegrams received"; H, clerk's form). The transcription's "The the Princess" has one "The" on the page (end of line 2): a transcription slip.
+- **E381:** the reader found no answer; the holder has it. **7978** (received, Memphis 28 July 1865 11.30 AM, Barton to the Secretary of War): "Telegram of the
+  twenty seventh received ---- Ryan left for Washington at 5 P. M of the twenty sixth. Your orders in regard to him had been previously executed to the letter.
+  I will spare no pains to find the witnesses ..." -- the reply to E381 in its own words. **7976** (Memphis 26 July 1865 12 noon, Barton to Townsend): "I am
+  trying to find the author of the letter giving me information. [His] testimony in regard to the conversation he over heard concerning assassination would
+  be very valuable ---- no one but my self and the guard have seen him since his arrest": the witness E381 means, and the "no communication" order already
+  kept. Both were read by FV-MS18i/AUD2-LEDGER-33 as answers to E358; neither was tied to E381. "fanny" = 11 AM (the header has no hour).
+
+### 1. Duplicates and image (own entries, IIIF 2400 px, read at about 1200 px on the half-page and a header strip)
+- **Duplicate diff:** mssEC 19 (`entries-mssEC19.tsv`) has no 16 Aug 1864 Horner entry (p.155 = 9049: Sholes 15 Aug, McCaine and Chapel 16 Aug); mssEC 18
+  (`ms18/entries-ms18.tsv`) has no 27 July 1865 entry (10044 runs 26 July -> 29 July). The holder's full text finds each telegram only on its own page
+  ('Keiths' 9820 only; 'detectives trade' 9820 only; 'witness Ryan' 9258 only). **No duplicate.**
+- **E378 (9820, p.154, third entry):** matches the transcription line by line, except "The the" (one "The") and "wrangles" for "wrangler"; "plug on/or more"
+  is "or" or "on" (no grade turns on it). **E381 (9258, p.364, second entry):** matches line by line, header "Somerville. Memphis Tenn / Wash July 27 1865",
+  "Growl July harrow plunder fanny for palsy Barten"; tick marks under the last line's words (a check, not text).
+
+### 2. Holder's full text, siblings and print
+**Huntington CONTENTdm** (p16003coll11, CISOSEARCHALL, all pointers; two hdl takes 01:05-01:0x, 15 requests: 9 queries, 4 item infos, 2 IIIF): 'Princess' 99
+(mostly 1864 entries using the key word Princess = Captain); 'Princess schooner' 2 (9747 = May 1864 coal schooners, other; 9046); 'Princess Murray' 3 (9046,
+9047, 9820); 'Dana Horner' 10 (none 13-17 Aug 1864 on its page heads; not opened); 'Keiths' 1 (9820); 'detectives trade' 1 (9820); 'witness Ryan' 1 (9258);
+'Barton witnesses' 2 (10043, 7978); 'spare no pains Ryan' 2 (9258, 7978). Positive controls: own pages hit on every own-word query. Read: 9046, 9047, 9747,
+9820 (s.0); 7976, 7978 from `aud2_ledger33`/`fv_ms18i` item outputs on disk. None is a clear copy of E378 or E381.
+
+**Print** (archive.org djvu texts to scratch: OR ser. II vol. 7 `warofrebellion0207rootrich`, ser. II vol. 8 `warofrebellion0208rootrich`, I/49 pt 2
+`warofrebellion492unit`; ser. III vol. 4 `warofrebellion0304rootrich` 403 and vol. 5 `warofrebellion0305rootrich` 503, not retried):
+- **E378 -> not located.** II/7: the 15-17 Aug 1864 dated items (46 headings 13-18 Aug) are prison and exchange papers; "Princess" occurs only as a Fort
+  Lafayette ferry-boat (p.902 index), no Keith. Earlier families on this affair (AUDIT for E38-E40: II/7, II/8, III/4 by names, 1864 press "schooner
+  Princess", Larabee, CORE, IA full text) found no print of the Princess telegrams; Larabee (`dynamitefiendchi0000lara`, be-api) 'Princess' 0, 'schooner'
+  2 (1870s), 'detectives' 5 (the Dec 1864 New York shadowing, other).
+- **E381 -> not located.** II/8: 'Ryan' 0 in the volume, Barton only Judge Barton / Clara Barton / H. C. Barton; the 25-29 July 1865 headings (Fort Monroe,
+  Washington 26-27 July to Hooker on Stephens) none this. I/49 pt 2: no Ryan, no E. Barton; 25-28 July 1865 headings (Nashville, Louisville, Washington) none
+  this. AUD2-LEDGER-33's families (Chronicling America 3-12 Aug 1865, Katz 1982 snippets, Andrew Johnson Papers vols 8-9) print the case, not this telegram.
+- Not searched: OR ser. III vols 4-5 readable text (403/503), ORN (E378), NARA RG 107 / RG 153 (M599), Katz 1982 full text, the New York press of 15-20 Aug
+  1864 page by page, HathiTrust, JSTOR.
+
+### 3. Grades and readings (reading.md as of this audit)
+- **E378:** Libby = 6 PM, Insanity = C. A. Dana, peach = 2, wrangles = Telegraph(s), plug = 1, walrus = Signature, Bruno = Secretary of War: **H 7 of 7** code
+  groups; Princess and trade plain (C: the schooner by 9046/9047/9820/2). Reading: "Horner, New York. Washington, Aug 16, 1864, 6 PM. For C. A. Dana. Your two
+  telegrams received. The Princess may be released and allowed to proceed, sending one or more detectives along to observe the course of trade and whatever may
+  transpire. [signed] Secretary of War. Deliver Keith's message." "Keith's message" is probably the Keith letter held at Boston (9046: "Let the Boston message
+  go forward when these two have had time to take effect"; E38): inference, I.
+- **E381:** Growl = Washington, harrow plunder = 20 7 = 27, fanny = 11 AM, palsy = Brigadier General, drill = Memphis, Zebra / Zodiac / unity = periods,
+  wrangle = Telegraph, plainfield = Communicat(ion), Brutus = Secretary of War: **H 12 of 12**. Reading: "Washington, July 27, 1865, 11 AM. For Brigadier General
+  Barton, Memphis. Your action in respect to Ryan is approved. Spare no pains to find and send forward the witness mentioned in your telegram. Give strict
+  orders to the officer in whose charge he is sent to allow no communication by or with him. [signed] Secretary of War." The witness is the anonymous informant
+  of 7976 (context I).
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | class | key | depth | % code groups H/C/S | basis | safe sentence |
+|---|---|---|---|---|---|---|
+| E378 Secretary of War to C. A. Dana via Horner, New York, 16 Aug 1864 | **N3** | period | D3 | 100 (7 H) | not located: OR II/7 (13-18 Aug by text, names), earlier E38-E40 families, Larabee, holder full text; holder 9046/9047/9820/2 are the detention orders, not copies | "Read at grade H with War Department Cipher No. 1: on 16 Aug 1864 the Secretary of War told C. A. Dana at New York that the schooner Princess, detained there since 13 Aug on the State Department's orders, might be released and allowed to proceed with one or more detectives aboard to observe her trade; not located in print (searched 10 Oct 2026)." |
+| E381 Secretary of War to Bvt. Brig. Gen. E. Barton, Memphis, 27 July 1865 | **N3** | period | D3 | 100 (12 H) | not located: OR II/8, I/49 pt 2 (25-29 July by text and names), AUD2-LEDGER-33's press and literature families, holder full text; holder 7978 is Barton's reply, 7976 his report | "Read at grade H with War Department Cipher No. 1: on 27 July 1865 the Secretary of War approved Bvt. Brig. Gen. E. Barton's action at Memphis in the case of Capt. J. G. Ryan and told him to find and send forward the witness and let no one communicate with him; Barton's reply of 28 July is in the Huntington's Eckert papers; not located in print (searched 10 Oct 2026)." |
+
+Not N4 for either: ORN, NARA RG 107 / RG 153 (M599), OR ser. III vols 4-5 readable text, Katz 1982 full text, the New York press of 15-20 Aug 1864 page by
+page, HathiTrust and JSTOR unsearched. Unsafe: "first", "new", "unpublished", "never printed"; "the Captain may be released" (the schooner); "Dana was at New
+York" as read (H names the addressee, his whereabouts unchecked); "the witness was X" (unidentified). Depth checks (D3: >=80% of code groups H/C/S, an external
+non-statistical check): E378 -- code clause "Libby for Insanity Your peach wrangles recd" = 6 PM, for Dana, your two telegrams received, above a mostly plain
+body; external: holder 9046 (13 Aug detain the schooner Princess and her cargo), 9047 (14 Aug, was she detained or did she get off), 9820/2 (14 Aug 9 PM detain
+till further directions): the detention E378 lifts. **D2 is reached and D3 holds** on the same footing as E346 (AUD2-LEDGER-31). E381 -- code clause "Growl
+July harrow plunder fanny for palsy Barten drill" = Washington, July 27, 11 AM, for Brigadier General Barton, Memphis; external: holder 7978 (Barton, 28 July:
+"Telegram of the twenty seventh received ... I will spare no pains to find the witnesses"). Depth sentences (my own): E378 -- "Three days after the State
+Department had the schooner Princess detained at New York in the Keith affair, the War Department let her sail with detectives aboard to watch her trade."
+E381 -- "Stanton approved Barton's handling of the prisoner Ryan, and Barton replied next day that Ryan had already gone north and he would hunt for the
+witnesses."
+
+### 5. Postmortem and fixes for a FIX job (not applied here)
+Failure: MS18-R7 read a written time word as absent and graded the addressee and signer M where key rows give H; it let the decoder turn a vessel's name
+(Princess) and a plain noun (trade) into key words -- the Herald/Fox/King-and-Queen shape of AUDIT (FV-MS18j) and (FV-MS18l) s.5 again; and it did not open
+the holder's received answers already on disk (7976, 7978). Corrections (a verifier does not edit ciphertext.txt or reading.md):
+- E378 header: "for [C. A. Dana, M], signed [Secretary of War, M]" -> "6 PM, for C. A. Dana (Insanity, H), signed Secretary of War (walrus Bruno, H)"; "your
+  telegram received" -> "your two telegrams received"; "the Princess" = the schooner Princess (holder 9046 = E40, 9047/0, 9820/2); note "hour not written ...
+  M" -> "Libby = 6 PM, H"; context: Keith's message probably the Boston letter of 9046/E38 (I). Ciphertext: line 2 "The the" -> "The" (image: one "The");
+  "wrangler" -> "wrangles". Reading, per-entry mechanism (no key.md edit): **Princess plain, trade plain**; wrangles -> Telegraph. Grades H 7.
+- E381 header: add "11 AM" (fanny); "signed [Secretary of War, M]" -> Secretary of War (Brutus, H); context: holder 7978 (Barton's reply, 28 July) and 7976
+  (26 July, the informant-witness); "not located in print ... no OR volume was read for July 1865" -> "OR II/8 and I/49 pt 2 read by date and name (FV-MS18o)".
+- E358 note: add 9258/2 = E381 (filed) and 7978 as the reply to E381, not only to E358.
+- NOTES "## MS18-R7" gap "'Princess' (E378) ... decoder slips" is answered here (Princess = the schooner, C by holder); sibling 9047/0 (14 Aug 1864, mssEC 19
+  p.154) is unfiled and readable with No. 1 (Grapes, fugitive = 14, florence, wick, Walrus Byron).
+- KEY lane: the decoder should not apply Princess = Captain and Trade = Outflank where the clear sense needs the plain word (now four entries of this shape).
+
+Requests: hdl.huntington.org 15 (9 CISOSEARCHALL, 4 item info, 2 IIIF 2400 px; all 200); archive.org 5 djvu (3 x 200, 1 x 403, 1 x 503, not retried);
+be-api.us.archive.org 7 (Larabee, all answered).
+Queued: WORK-QUEUE `AUD2-LEDGER-38` (E378, E381), SO-ECKERT-E378, SO-ECKERT-E381.

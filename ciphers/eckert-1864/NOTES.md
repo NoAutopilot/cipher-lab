@@ -4615,3 +4615,27 @@ Read so far: 10 of 10 rows filed; 4 graded C against the print, 6 (N2-GA, GC, GE
 - [ ] image-check: three of ten leaves checked (see gaps).
 - [x] retry: none needed (one 302 from archive.org followed with -L).
 Verdict: keep going: 3 internal gaps; cheapest next: the three unprinted leaves' image check and a ser. III / OR naval pass for the six unlocated rows, ~$1.5
+
+## FV-MS18o (10 Oct 2026, account 1, for LANE LEDGER)
+First verifier of E378 and E381 (AUDIT.md "## AUDIT (FV-MS18o)"). Both **N3 D3**, key `period`, telegrams not located in print. **E378**: "Princess" is the
+schooner Princess (holder 9046 = E40, 9047/0, 9820/2: detained at New York 13-14 Aug 1864 on the Secretary of State's orders), not the key word Princess =
+Captain; "trade" is plain; Libby = 6 PM is written (H), Insanity = C. A. Dana and walrus Bruno = Secretary of War are H, not M; the image has one "The" and
+"wrangles" (= telegrams). **E381**: Barton's reply is holder 7978 (28 July 1865: "Telegram of the twenty seventh received ... I will spare no pains to find the
+witnesses"); 7976 names the informant-witness; fanny = 11 AM. No duplicate in mssEC 18/19. OR ser. II vols 7-8 and I/49 pt 2 read by date and name: not
+located. `AUD2-LEDGER-38` and SO-ECKERT-E378/E381 queued. Fixes in AUDIT s.5, not applied here.
+
+## Remaining gaps (FV-MS18o, 10 Oct 2026)
+Read so far: E378, E381 audited (N3 D3 each); both ledger entries eye-checked at 2400 px.
+- E378, E381 second audit and the unsearched families (ORN, NARA RG 107 / RG 153 (M599), OR ser. III vols 4-5 text, Katz 1982 full text, NY press 15-20 Aug 1864, HathiTrust, JSTOR) - blocker: waiting-on the answer of the VERIFY lane to WORK-QUEUE.tsv row AUD2-LEDGER-38; a second audit is a separate session (rule 10)
+- the transcription and reading fixes of AUDIT (FV-MS18o) s.5 (Princess, trade, The the, wrangles, header grades, 11 AM) - blocker: not-attempted; a verifier does not edit ciphertext.txt or reading.md; next: a FIX job, ~$1
+- sibling 9047/0 (14 Aug 1864, mssEC 19 p.154, Schr Princess) unfiled - blocker: not-attempted; outside this brief; next: a reader row with No. 1, ~$0.3
+
+## Escalation (FV-MS18o, 10 Oct 2026)
+- [x] siblings: 9046 (E40), 9047/0, 9820/2 (Princess, 13-14 Aug 1864); 7976, 7978 (Barton, 26 and 28 July 1865) read.
+- [x] clear-pages: all-pointer CISOSEARCHALL on 9 queries + 4 item reads, no clear copy; own pages hit as positive controls.
+- [x] known-keys: key.md rows checked for every graded token.
+- [x] print: OR II/7, II/8, I/49 pt 2 by date and names; not located; III/4-5 text 403/503 (not retried).
+- [n/a] key-rebuild: no key row edited; slips listed in AUDIT s.5.
+- [x] image-check: both entries eye-checked at 2400 px.
+- [x] retry: none (two archive.org texts 403/503, not retried).
+Verdict: keep going: 2 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18o) s.5, ~$1

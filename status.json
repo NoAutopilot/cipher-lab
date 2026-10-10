@@ -12001,6 +12001,88 @@
       "depth_sentence": "In September 1864 army headquarters asked the Military Railroads how many more horses than Sherman already had could be fed by rail.",
       "depth_check": "code clause: for how many spartons in excess of those now in Kidnap polka shade can be supplied by rail = horses ... Sherman's command forage; no external content check found (D2)",
       "depth_note": "16 H of 16 code-word groups; rest plain"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-MS18o)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-MS18o verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-MS18o)' section 4",
+      "reading_version": "MS18-R7 10 Oct 2026 (reading.md), grades as in AUDIT (FV-MS18o) s.3 (corrections in s.5 pending a FIX job)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger): Secretary of War to C. A. Dana via Horner at New York, 16 Aug 1864: the schooner Princess may be released, with detectives aboard to observe her trade (E378)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 16 Aug 1864 the Secretary of War told C. A. Dana at New York that the schooner Princess, detained there since 13 Aug on the State Department's orders, might be released and allowed to proceed with one or more detectives aboard to observe her trade; not located in print (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-MS18o); not N4: ORN, NARA RG 107/RG 153 (M599), OR ser. III vols 4-5 readable text, Katz 1982 full text, the New York press page by page, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGER-38)",
+      "depth": "D3",
+      "completeness": "7 H of 7 code-word groups; rest plain",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.154, pointer 9820, E378"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.154, pointer 9820, E378",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.154, pointer 9820, E378"
+      ],
+      "depth_sentence": "Three days after the State Department had the schooner Princess detained at New York in the Keith affair, the War Department let her sail with detectives aboard to watch her trade.",
+      "depth_check": "code clause: Libby for Insanity Your peach wrangles recd = 6 PM, for Dana, your two telegrams received; external: holder 9046 (13 Aug detain the schooner Princess), 9047 (14 Aug), 9820/2 (14 Aug 9 PM detain till further directions) (D3)",
+      "depth_note": "7 H of 7 code-word groups; rest plain"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-MS18o)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-MS18o verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-MS18o)' section 4",
+      "reading_version": "MS18-R7 10 Oct 2026 (reading.md), grades as in AUDIT (FV-MS18o) s.3 (corrections in s.5 pending a FIX job)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger): Secretary of War to Bvt. Brig. Gen. E. Barton at Memphis, 27 July 1865: your action in respect to Ryan is approved; send forward the witness (E381)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 27 July 1865 the Secretary of War approved Bvt. Brig. Gen. E. Barton's action at Memphis in the case of Capt. J. G. Ryan and told him to find and send forward the witness and let no one communicate with him; Barton's reply of 28 July is in the Huntington's Eckert papers; not located in print (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-MS18o); not N4: ORN, NARA RG 107/RG 153 (M599), OR ser. III vols 4-5 readable text, Katz 1982 full text, the New York press page by page, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGER-38)",
+      "depth": "D3",
+      "completeness": "12 H of 12 code-word groups; rest plain",
+      "phrases": [
+        "Huntington mssEC 19 (obj 9302) p.364, pointer 9258, E381"
+      ],
+      "document_id": "Huntington mssEC 19 (obj 9302) p.364, pointer 9258, E381",
+      "documents": [
+        "Huntington mssEC 19 (obj 9302) p.364, pointer 9258, E381"
+      ],
+      "depth_sentence": "Stanton approved Barton's handling of the prisoner Ryan, and Barton replied next day that Ryan had already gone north and he would hunt for the witnesses.",
+      "depth_check": "code clause: Growl July harrow plunder fanny for palsy Barten drill = Washington, July 27, 11 AM, for Brigadier General Barton, Memphis; external: holder 7978 (Barton, 28 July: Telegram of the twenty seventh received ... I will spare no pains to find the witnesses) (D3)",
+      "depth_note": "12 H of 12 code-word groups; rest plain"
     }
   ],
   "lanes": [
