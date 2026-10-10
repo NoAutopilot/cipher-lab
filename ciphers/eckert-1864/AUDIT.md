@@ -13784,7 +13784,7 @@ which finds 10443 for N2-FB. Corrections (a verifier does not edit ciphertext-no
 - All three: "leaf not eye-checked" -> "leaf eye-checked on crops (FV-N2a), matches the transcription".
 
 Requests: hdl.huntington.org 13 (10 CISOSEARCHALL, 3 IIIF 2400 px; all 200); archive.org 6 djvu (all 200) + 1 advancedsearch; be-api.us.archive.org 11 (all
-answered). Queued: WORK-QUEUE `AUD2-LEDGERN2-1` (N2-FA, N2-FB, N2-FE), SO-ECKERT-N2-FA, SO-ECKERT-N2-FB, SO-ECKERT-N2-FE. For LANE LEDGER-N2 (account 1)
+answered). Queued: WORK-QUEUE `AUD2-LEDGERN2-2` (N2-FA, N2-FB, N2-FE), SO-ECKERT-N2-FA, SO-ECKERT-N2-FB, SO-ECKERT-N2-FE. For LANE LEDGER-N2 (account 1)
 
 | N2-GE Halleck to Canby, New Orleans, 16 Dec 1864 | **N1** | period | D3 | 100 (11 C against print) | plaintext printed OR I/41 pt 4 p.869 (1891); our reading is an independent re-decipherment of the ledger copy | "The War Department's cipher copy of Halleck's telegram of 16 Dec 1864 to Canby (supplies at Pensacola to go to Hilton Head after Sherman reached Savannah), read with Cipher No. 2, agrees word for word with the text printed in the Official Records, ser. I vol. 41 pt 4 p.869." |
 | N2-FH Ingalls to Lt. Col. G. W. Bradley, 17 Dec 1864 | **N3** | period | D3 | 82.6 (19 H of 23) | not located: OR I/41 pt 4, I/42 pt 3, I/44, I/45 pt 2 (vessel names, 16-18 Dec windows), Google Books phrases, holder full text; holder 9142/0 (N2-CJ) is the 18 Dec sequel, not a copy | "Read with War Department Cipher No. 2 (period key): on 17 Dec 1864 Rufus Ingalls ordered eight steamers, among them the Guide, Cossack and Manhattan, to report to Sherman at or near Savannah, those in the James included; not located in print (searched 10 Oct 2026)." |
