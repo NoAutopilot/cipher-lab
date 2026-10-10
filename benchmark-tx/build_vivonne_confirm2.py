@@ -61,6 +61,20 @@ alignment again sets align-conflict. The item id becomes vivonne1573-f103r-confi
 the confirm2 item, its truth and outputs stay untouched. The build also prints the selection-fair margin: the control's
 published-key share minus SCAN-103's best-over-scan null max (confirm.json best_offset_null.null_best_max).
 Without --start the build is byte-identical to the frozen one.
+
+--witness FILE (TXV-GROEN, PREREG-txeng2-21 section WIT-FLAGS, 10 Oct 2026): re-applies a verifier's witness verdicts
+(benchmark-tx/vivonne1573-f103r-confirm2.witness.tsv: Groen van Prinsterer IV pp.90*-91*, a copy independent of the clerk
+decipherment) by (line, raw position), after TXV-VIV's: CONFIRM removes the automatic clerk-split flag ONLY (a TXV-VIV class
+stays, clerk-doubtful re-labelled alignment-doubtful; an align-conflict flag is never removed by a CONFIRM); CONFLICT keeps every
+flag and adds witness-conflict; NO-EVIDENCE changes nothing. The item id becomes vivonne1573-f103r-confirm2-w (new truth, sha256
+and outputs dir); truth and plain columns are those of the frozen item, only the flag column may differ. Its outputs dir holds
+byte copies of the frozen item's six scored outputs (passZ_S2b, passA_S2, passB_S2, passA, passB, committed), checked against
+txeng2/s2score/SHA256SUMS.prescore. The frozen item, its truth and outputs stay untouched.
+--offsets OUT.tsv: writes line, pos, dec_offset (j0 + aligned index into dec_norm; blank if unaligned), status, flag for every
+raw position of the (frozen, or --start/--witness) item and exits; it writes nothing else. A truth-adjacent file for a verifier,
+never for a reader.
+    python3 benchmark-tx/build_vivonne_confirm2.py --offsets OUT.tsv
+    python3 benchmark-tx/build_vivonne_confirm2.py --witness benchmark-tx/vivonne1573-f103r-confirm2.witness.tsv [--check]
 """
 import difflib, hashlib, json, os, random, re, sys
 
@@ -85,6 +99,15 @@ START, W_START = None, 3624
 if '--start' in sys.argv:
     START = int(sys.argv[sys.argv.index('--start') + 1])
     ITEM = 'vivonne1573-f103r-confirm2-s%d' % START
+    TRUTH = os.path.join(OUT, ITEM + '.truth.tsv')
+    SHA = TRUTH + '.sha256'
+    ODIR = os.path.join(OUT, 'outputs', ITEM)
+WITNESS = None
+FROZEN_ODIR = os.path.join(OUT, 'outputs', 'vivonne1573-f103r-confirm2')
+W_OUTS = ('passZ_S2b', 'passA_S2', 'passB_S2', 'passA', 'passB', 'committed')
+if '--witness' in sys.argv:
+    WITNESS = sys.argv[sys.argv.index('--witness') + 1]
+    ITEM = ITEM + '-w'
     TRUTH = os.path.join(OUT, ITEM + '.truth.tsv')
     SHA = TRUTH + '.sha256'
     ODIR = os.path.join(OUT, 'outputs', ITEM)
@@ -239,7 +262,15 @@ def build():
         for l in lines[1:]:
             r = dict(zip(hd, l.split('\t')))
             flags[(r['line'], int(r['pos']))] = r
-    rows, nex = [], {}
+    wit = {}
+    if WITNESS is not None:  # TXV-GROEN (10 Oct 2026): witness verdicts keyed by (line, raw position)
+        lines = [l for l in open(WITNESS, encoding='utf-8').read().splitlines() if not l.startswith('#')]
+        hd = lines[0].split('\t')
+        for l in lines[1:]:
+            r = dict(zip(hd, l.split('\t')))
+            wit[(r['line'], int(r['pos']))] = r['verdict']
+    j_base = START if START is not None else j0
+    rows, nex, offs = [], {}, []
     for k in sub:
         pg, code, line, raws = stream[k]
         plain = chr(97 + let[amap[k]]) if k in amap else ''
@@ -270,14 +301,23 @@ def build():
                         cp = fr['correct_plain'] or plain
                         truth = '|'.join(sorted(by_val.get(cp, set()) | set(filter(None, fr['add_signs'].split('|')))))
                         fl.insert(0, 'corrected:' + fr['class'])
+                wv = wit.get(('f103r_' + line, raws[0]))
+                if wv == 'CONFIRM' and 'clerk-split' in fl:  # witness confirms the merged clerk letter: clerk-split only
+                    fl.remove('clerk-split')
+                    fl = ['alignment-doubtful' if x == 'clerk-doubtful' else x for x in fl]
+                elif wv == 'CONFLICT':
+                    fl.append('witness-conflict')
                 flag = ','.join(fl)
+        doff = str(j_base + amap[k]) if k in amap else ''
         if code == 'oo':
             t1 = '|'.join(sorted(by_val[plain] - {'oo'} | {'o'})) if truth else ''
             rows.append(('f103r_' + line, raws[0], 'o', t1, plain, st, flag))
             rows.append(('f103r_' + line, raws[1], 'o', 'o' if truth else '', plain, st, flag))
+            offs += [('f103r_' + line, raws[0], doff, st, flag), ('f103r_' + line, raws[1], doff, st, flag)]
             n_add = 2
         else:
             rows.append(('f103r_' + line, raws[0], code, truth, plain, st, flag))
+            offs.append(('f103r_' + line, raws[0], doff, st, flag))
             n_add = 1
         nex[st] = nex.get(st, 0) + n_add
     hdr = ('# Vivonne 1573 (BnF fr.16105 f.103r, Saint-Gouard to Charles IX) confirmation item, split=confirm2: clerk period '
@@ -288,16 +328,38 @@ def build():
                'clerk period decipherment (ff.104r-108v) under the published Tomokiyo key (C rows), f.103r re-anchored at dec_norm '
                'offset %d (build_vivonne_confirm2.py --start %d; TX-RE103, PREREG-txeng2-20 RE103, SCAN-103 best offset). '
                'TXV-VIV verdicts re-applied by (line, raw position).\n# %s\n' % (START, START, START, ctrl))
+    if WITNESS is not None:
+        hdr = ('# Vivonne 1573 (BnF fr.16105 f.103r, Saint-Gouard to Charles IX) confirmation item confirm2-w, split=confirm2: '
+               'the frozen confirm2 item (truth and plain columns unchanged) with the clerk-split flags revised by TXV-GROEN\'s '
+               'witness verdicts (Groen van Prinsterer IV pp.90*-91*, a copy independent of the clerk decipherment; '
+               'build_vivonne_confirm2.py --witness %s; PREREG-txeng2-21 WIT-FLAGS).\n# %s\n'
+               % (os.path.relpath(WITNESS, ROOT), ctrl))
     body = hdr + COLS + ''.join('\t'.join(str(x) for x in r) + '\n' for r in rows)
     outs = {}
     for name, path in (('committed', 'f103r_rec.tsv'), ('passA', 'f103r_passA.tsv'), ('passB', 'f103r_passB.tsv')):
         outs[name] = 'line\tpos\tsign\n' + ''.join('f103r_%s\t%d\t%s\n' % (line, i + 1, t)
                                                    for line, toks in raw_tokens(os.path.join(TX, path)) for i, t in enumerate(toks))
-    return body, outs, nex, ctrl, rows
+    if WITNESS is not None:  # byte copies of the frozen item's six scored outputs, hash-checked against the prescore list
+        want = {}
+        for l in open(os.path.join(OUT, 'txeng2', 's2score', 'SHA256SUMS.prescore'), encoding='utf-8'):
+            h, n = l.split()
+            want[n] = h
+        outs = {}
+        for n in W_OUTS:
+            b = open(os.path.join(FROZEN_ODIR, n + '.tsv'), 'rb').read()
+            assert hashlib.sha256(b).hexdigest() == want[n + '.tsv'], 'frozen output changed: ' + n
+            outs[n] = b.decode('utf-8')
+    return body, outs, nex, ctrl, rows, offs
 
 
 def main():
-    body, outs, nex, ctrl, rows = build()
+    body, outs, nex, ctrl, rows, offs = build()
+    if '--offsets' in sys.argv:
+        op = sys.argv[sys.argv.index('--offsets') + 1]
+        with open(op, 'w', encoding='utf-8') as f:
+            f.write('line\tpos\tdec_offset\tstatus\tflag\n' + ''.join('\t'.join(str(x) for x in r) + '\n' for r in offs))
+        print('offsets: %d rows -> %s' % (len(offs), op))
+        sys.exit(0)
     sha = hashlib.sha256(body.encode()).hexdigest()
     shaline = '%s  %s\n' % (sha, os.path.basename(TRUTH))
     if '--check' in sys.argv:
