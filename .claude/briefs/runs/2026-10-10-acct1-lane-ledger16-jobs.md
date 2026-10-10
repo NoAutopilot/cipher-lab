@@ -56,3 +56,5 @@ Oct 2026, account 1, for LANE LEDGER-16)"; depth_check; gaps_check; file_shrink_
 
 Held for wave 2: FV-L16e on the 1864 Oct-Dec / Mar group (E447 H11, E474 H8, E470 H8, E468 H8, E443 H8, E445 H7, E471 H8, E446 H4, E448 H3), sized by
 wave 1's per-entry cost; a FIX on wave 1's s.5.
+
+(14:46 UTC 10 Oct by date -u: wave 1 spawned with source_url: FV-L16a session_01Ls4x34TEjAEr8ze954EVWY, FV-L16b session_01XgoX4dz8k6DR79HqcRypaA, FV-L16c session_01M6B2VzGbp7U241d8wD5Ek4, FV-L16d session_011JePD7wMqLcoFvgxZvAUYt, FIX-L16 session_01GvMLdw368na1CbqhUCw1fZ.)
