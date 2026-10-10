@@ -122,3 +122,36 @@ account 1, for LANE LEDGER-13)" with the table and a proposed revised ruling; ch
 the VERIFY lane and the owner-account orchestrator. Post one ROOM flag naming them and LANE LEDGER-12 with the survivor count. Report what was found.
 
 (09:15 UTC 10 Oct by date -u: wave 2 spawned with source_url: FM-F1 session_01JHiX4LKRYDVKyGWB8hu7gr, FM65-A session_01FAxkFpYTv9p9kv84Ddebbc, FM65-B session_01QLWhEtryuK3Cx8mrwrTTsV, FM65-C session_01P9rT1JNhnUViZnjaQhsWBx, FM-S3 session_0138GahTBHP93H9j3mfHmMRD, STEP0-KEYCTL session_011n8VvwXBwQk8dRfD87AagU.)
+
+---
+
+# Wave 3 (written 10 Oct 2026 10:0x UTC by date -u; lane ~21.8 workers + ~5 orchestrator of 60; last planned wave)
+By get_session: STEP0-KEYCTL 2.35 (step 0 fails the meaning-shuffled-key control on mssEC 18/19 too: 0 of 80 recorded hits hit only under the true book;
+proposed ruling in NOTES "## STEP0-KEYCTL", for the VERIFY lane / owner-account orchestrator; LANE LEDGER-14 already applies this lane's ruling to mssEC 18),
+FM-F1 1.78 (11 filed E441-E443 E445-E448 E466 E468-E470; 5752/0 in print), FM65-A 2.62 (9 filed), FM65-B 2.41 (9 filed E512-E520), FM65-C 2.48 (10 filed),
+FM-S3 1.80 (E471-E474, O9-DL, O9-DM; 7 in print). Rulings on FM65-B's held rows: **5861/2 second message (Beckwith asks whether Butler has left Monroe) is
+filed as E521** (the clear copy 8508 covers only the first message); **5856/1 / pointer 9153** is mssEC 18/19 and handed to LANE LEDGER-14 in ROOM.
+
+## FM65-D, FM65-E, FM65-F (Sonnet 5.5, readers; cap $4 each, box 120 min each): the last 45 Fort Monroe 1865 rows
+Exactly "## FM65-A, FM65-B, FM65-C" above, under the Wave 2 RULING. 15 rows each:
+- FM65-D: 5879/0 5883/0 5885/0 5885/1 5886/0 5887/0 5887/1 5888/1 5888/2 5889/2 5890/2 5891/1 5895/2 5896/2 5897/0 -- IDs E536-E550; also file the
+  second message of 5861/2 as E521 from FM65-B's own decode (NOTES "## FM65-B" and its scripts), print check as for any row.
+- FM65-E: 5898/1 5899/0 5902/1 5902/2 5904/1 5905/0 5907/1 5912/1 5914/1 5915/0 5915/1 5917/1 5918/0 5918/1 5919/1 -- IDs E551-E565.
+- FM65-F: 5919/2 5920/1 5923/1 5924/0 5924/1 5929/1 5929/2 5930/1 5931/0 (No. 1 vs No. 2 conflict: decode both) 5931/1 5933/0 5933/2 5936/0 5941/1 5943/1
+  -- IDs E566-E580.
+
+## FV-FM65a, FV-FM65b (Opus 5.5, first verifiers, separate from every reader; cap $8 each, box 100 min each): the 12 strongest wave-2 filings
+Exactly "## FV-FM10a, FV-FM10b" of .claude/briefs/runs/2026-10-09-acct1-lane-ledger7-jobs.md (= FV-FM9a method: all-pointer CONTENTdm clear-copy search
+FIRST, duplicate diff against every mssEC 18/19/25 entry, OR I-III and ORN (1865: OR I/46 pts 1-3, I/47 pts 1-2, ORN I/11-12), Grant Papers vols. 13-14 via
+IA be-api without identifier, Butler Corr. V, press of the day, G3 with decoded phrases, rare-name OR grep, eye-check every graded line on crops with
+tools/iiif_lines.py --image), with two changes: **step 0 is a non-test on mssEC 25 (Wave 2 RULING, STEP0-KEYCTL): never classify N1 from step 0; N1 needs
+print, a clear copy or a decipherment located**; and depth per rule 4a / tools/depth_check.py. Reading fixes go in AUDIT s.5 for a FIX job, not into the
+reading. Entries chosen by H count (reading.md "Code-word tokens"):
+- FV-FM65a: E535 E534 E504 E519 E531 E516 (NOTES "## FM65-A", "## FM65-B", "## FM65-C"). AUDIT.md "## AUDIT (FV-FM65a)".
+- FV-FM65b: E512 E502 E507 E530 E532 E520. AUDIT.md "## AUDIT (FV-FM65b)".
+status.json/SO rows for N3+ only, audit_status "one audit"; depth_check; file_shrink_guard. On N3+ D2+ append WORK-QUEUE `AUD2-LEDGER13-1` (FV-FM65a) /
+`AUD2-LEDGER13-2` (FV-FM65b) (tagged account-3 per lane-common-blast, Opus 5.5, cap 2.5 per entry; fetch first, take the next free number if taken) and
+name it in ROOM for the account-3 VERIFY lane. Unit ~1.3 per entry. The two never hold the hdl token at the same time as each other or any reader.
+
+Not briefed this incarnation (handoff): first verifiers on the other ~35 filings (E441-E474 group, E500-E535 rest, O9-DL/DM, and wave 3's), a FIX job on
+the FV-FM65a/b s.5.
