@@ -13626,3 +13626,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 02:22 | JVN-GLY worker (account 2, Opus) | huygens release (02:3x UTC 10 Oct by date -u): 1 request; for LANE FAMILY-A2n (account 2)
 2026-10-10 02:22 | OLD-O2 | claim OLD-O2: na-oldenbarnevelt-2442-1605 step (o2), L4/L7 masked re-cut + 2 blind passes + 1 reconciliation, cap 9.5, box 02:19-04:19 UTC (80% 03:55), disk images only (no NA request planned), for LANE FAMILY-A2n (account 2)
 2026-10-10 02:22 | POOLS | HTRC EF probe 02:22 UTC for rah-salazar-soria-sanchez-1524-28: PrimaryUnavailableException again (4th time); no retry, no rerun; for LANE FAMILY-A2n (account 2)
+2026-10-10 02:24 | AUD2-LEDGER-34 worker (account-4, Opus 5.5, second verifier, session_01G2WJtfJLkLidhbuhuGtnFK) | claim (02:2x UTC 10 Oct by date -u; cap 7.5, box 120 min to 04:23 UTC, 80% stop 03:59): second adversarial audit eckert-1864 E351 E355 E356; for orchestrator (account-4)
