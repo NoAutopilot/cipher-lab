@@ -1183,3 +1183,116 @@ R8-THUR25 (NOTES.md section of that name, commit aedddf34f) into the P25-P28 sec
   escaped and was at the Hague." status.json results[97] line and depth fields, and index.tsv P25-P28 status cells,
   updated to these counts.
 - SECOND-OPINIONS-QUEUE.tsv: no row is filed for P25-P28 (the only thurloe-printed row is SO-THURLOE-P4); nothing to update.
+
+## AUDIT (V-THURBM, l.44535)
+
+First verifier V-THURBM (account 2, for LANE FAMILY-A2r; 10 Oct 2026, 15:01-15:2x UTC by date -u), a session separate from the
+solver THUR-BM (session_013aecKkuzFyrHQ1JDKgUb4x). Brief: `.claude/briefs/runs/2026-10-10-ytbiz-family-1410-jobs.md` "### V-THURBM".
+**Claim under audit:** "l.44535, printed in cipher without a decipherment in Birch 1742 vol 6 p.374, reads 151/151 groups at C under
+a key rebuilt from Birch's printed decipherments of four sibling Blank-Marshall letters (bm/reading_l44535.txt)."
+
+**1. The item.** "A letter of intelligence from Blank-Marshall at Bruges, this 8th of July 1657. [N.S.]", signed "Mar. S.", to
+Thurloe; Birch, *A Collection of the State Papers of John Thurloe* (1742) vol. 6 p.374 (IA `bim_eighteenth-century_a-collection-of-
+the-stat_thurloe-john_1742_6`, leaf 377, djvu line 44535); original in Thurloe's papers, Bodleian MS. Rawl. A. (Birch's marginal
+volume reference not read here). 151 numeral groups set inline in clear prose. Solver's searches: leaves 377-378 (no "same
+decyphered"), prior_work.py G3 (IA full text, Birch vols 1-3, 5, 7, Google Books), per NOTES "## THUR-BM". Not searched by the
+solver: CSPD, Clarendon, the manuscript.
+
+**2a. Rule 7.** `bm/decode_44535.py --check` exit 0; an independent script of this session (reads `bm/l44535_ciphertext.tsv` and
+`bm/key_blankmarshall.tsv`, nothing else) gives a byte-identical rendering, grades C 151, unread 0. **Eye check of the ciphertext:**
+all 151 groups read by this session on `bm/crops/l44535_p374_L01-L05.jpg` against the tsv, row by row: **151/151 agree with the
+print** (old-style "g4" = 94; the four OCR disagreements THUR-BM settled for B1 -- 104, 50, 94, 73 -- confirmed).
+**Slips (all are in the printed cipher, none in our transcription):**
+
+| word as decoded | groups | print | class | intended (grade) |
+|---|---|---|---|---|
+| tyemselues | 80 **94** 18 48 76 19 46 82 20 73 | 94 printed | encipherment or printing slip (94 = y in 11 witnesses; h is 31-34) | themselues (I) |
+| mepllow (in "the rest wil mepllow") | 48 20 63 45 46 59 86 | 48 20 63 printed | slip of three groups or a word not identified; not a key gap (48 m, 20 e, 63 p each 6-45 witnesses) | follow? (M, unsettled) |
+| nany | **54** 4 55 96 | 54 printed | encipherment or printing slip (n 52-55, m 48-51) | many (I) |
+| preuennted | 63 69 19 82 20 52 **52** 78 21 14 | double 52 printed | writer's spelling or slip | preuented (I) |
+| dew heeret | 17 22 87 31 18 19 72 20 **80** | 80 printed, then clear "that" | stray t, encipherment or printing slip | dew heere (I) |
+| key code 9 (s / b) | not in l.44535 | -- | key gap (one witness each way); the table's alphabetical blocks (b 6-9, s 73-76) favour b | b (I), no effect on this letter |
+
+Which hand made the slips (writer, Thurloe's office, Birch's compositor) needs the manuscript. Grades: **group values C 151/151**
+(rule 4; no H: the key is rebuilt from Birch's printed period decipherments of ll.40469, 65889, 77385, 89881); the intended words
+of 4 slips are I and "mepllow" is M: **7 of 151 groups (4.6%) do not give the intended letter at face value.**
+**Corrections to the solver's files (not edited here; for the orchestrator):** (i) `bm/reading_l44535.txt` drops every clear-text row
+that carries no group, so it omits "But will first come hither. But truly I am partly confident he will give us the" and "for he is
+not"; the reading below restores them from the page. (ii) Key code 123's label "chdglocester" (Ch./D. Glocester): both glossed
+witnesses read "D. Gloucester" (passes B1, B2 of ll.40469 and 77385), so 123 = the Duke of Gloucester. (iii) Code 113 "Ormond" (one
+witness) conflicts with Tomokiyo's 173 (Ormond) for the same cipher (rule 4 data conflict; not in l.44535; THUR-BM2's three extra
+witnesses may settle it). (iv) NOTES "## THUR-BM" "no image check of these groups yet" is now done (this section).
+
+**Reading (clear text from the page, decoded groups in capitals, codes in brackets):** "By this I can give you very litle account of
+your business ... But you shall know, by every occasion, [Ch. St.] is still at [Bruxell]; [D. Gloucester] GOETH TOMORROW to the
+FEILDS. So its given out, [Ch. St.] saith, that as soon as HEE HATH RECEIUED MONY he will go. But will first come hither. But truly I
+am partly confident he will give us the SLIP that are here; for he is not ABLE to PAY the DEBTS, that is DEW HEERE[T], that most of
+THEM that ARE HEER must and will shift for T[H]EMSELUES; yet [Hyde], and some few of [Ch. St.] his SERUANTS stayes to FACE it OUT
+just as they did AT CULLOINE. This is the opinion of men of beter judgment than I am. ... them that comes AWAY. SAYS that the REST
+WIL MEPLLOW [follow?] and truly I think [M]ANY will, if not PREUEN[N]TED."
+
+**2b. Rule 10 search (logged per family; 10 Oct 2026, 15:05-15:15 UTC).**
+- (a) Birch vols 1-7: full text of every volume grepped (vols 2, 3, 5, 7 from `sources/ia-fulltext/thurloe-gz/`, vol 1 from
+  `print-check/`, vols 4 and 6 fetched: `collectionofstat04thur`, the bim_ vol 6 copy) for "Culloine/Culloin", "give us the slip",
+  "face it out", "shift for them", "beter judgment", "Blank/Blanck Marshall", "not able to pay", "Gloucester go": the only hits for
+  the letter's wording are l.44535's own clear text (control, vol 6); no other printing, abstract or decipherment of the letter.
+  Context, not a print: vol 6 OCR l.38639, an intelligence letter of early June 1657, reports "the duke of Gloucester goes a
+  voluntier with the marquis of Caracene for this summer" and the Duke of York receiving his money at Brussels before taking the
+  field -- consistent with the decoded clauses (an external historical check, not a source of the text).
+- (b) Calendar of State Papers Domestic 1657-58 (Green 1884; IA `sim_great-britain-public-record-papers-domestic-commonwealth_1657-
+  1658`, djvu text): no Blank/Blanck Marshall, Michell Deane, Culloine, "face it out", "shift for themselves". Not in CSPD.
+- (c) Calendar of the Clarendon State Papers vol. III (Macray 1876; IA `calendarofclaren03bodluoft`): Blanck Marshall / Michell
+  Deane letters to Thurloe (as "R. Richardson") are calendared at nos. 695, 774, 790, 800 (Jan 1657 - Mar 1657; 790 = Thurloe S.P.
+  iii p.117, 800 = vi p.136), so some originals of this correspondence are in the Clarendon MSS; the July 1657 stretch (nos. 935-985,
+  incl. 967 = Thurloe S.P. vi p.372, Bampfield 7 July) has no Blank Marshall item and nothing cites vi p.374. Not in the Clarendon
+  calendar. Clarendon State Papers (printed, 1767-86) vol. III: covered by the calendar's "Cl. S. P." cross-references only.
+- (d) Nicholas Papers vol. IV (Camden 3rd ser. 31, 1920; IA `nicholaspapers04nich`, `publications31royauoft`): no Marshall/Deane
+  letter, no phrase hit; context only ("the D. of Gloucester goes with Don Juan", 1658).
+- (e) Identity scholarship: Tomokiyo, "Codes and Ciphers of Thurloe's Agents" (cryptiana.web.fc2.com/code/thurloe.htm, cached
+  `sources/cryptiana/web/thurloe.htm`, 6 Oct 2026) has a section "Blank Marshall (1656-1658)": he reconstructs this cipher (four
+  values per consonant, five per vowel, E = 18-22; codes 104 Charles Stuart, 111 Bruges, 173 Ormond) and names the period key, BL Add
+  MS 4166 f.117 (DECODE R4897; our DECODE cache: a 1-image Key record, status N/A). The text names no decipherment of the 8 July 1657
+  letter; his figure (marshall.jpg) was not fetched (host outside this brief). He cites Akkerman, *Invisible Agents* (2018) pp.222-
+  223 (Blanck Marshall endorsements; the Margaret Smith identification) -- not read (in copyright); Google Books also shows Todd,
+  *The Secret Life of Aphra Behn* (2000) naming Margaret Smith / Blanck Marshall (snippet only). Firth and Underdown not read.
+- (f) Bodleian MS. Rawl. A. (the manuscript): not checked; whether Thurloe's office wrote a decipherment on the original is unknown
+  (an unpublished period decipherment would not change the class below, which concerns print and modern decipherment).
+- (g) Phrase searches: Google Books API (keyed, country=US; 12 queries): positive control "This is the opinion of men of beter
+  judgment than I am" (clear text of this letter) hits Birch vol 6 three times; no phrase hit for "give us the slip that are here",
+  "stayes to face it out just as they did at Culloine", "face it out just as they did at Cologne", "Gloucester goeth to-morrow to the
+  field", "not able to pay the debts that is due here", "the rest will follow and truly I think many will", "shift for themselves yet
+  Hyde", "his servants stays to face it out" (only word-scatter results). OpenAlex (3 queries): nothing on Blank Marshall; Semantic
+  Scholar: 0; CORE: HTTP 500 twice (unreachable). Solver repositories: `sources/cyphersolver*` no Thurloe item; aaymeloglu
+  unsolved-ciphers not cached (prior_work UNCHECKED-NET). HathiTrust EF not run. British History Online (Birch transcription) not
+  checked (host outside brief; it transcribes Birch, which prints no decipherment).
+- (h) JSTOR-QUEUE.tsv: 5 rows queued 10 Oct 2026 -- family (i) "Blanck Marshall" AND Thurloe AND cipher; "Blank Marshall" AND Bruges
+  AND 1657; family (ii) "stayes to face it out", "just as they did at Culloine", "give us the slip that are here".
+- Requests: archive.org 9 (3 advancedsearch, 6 djvu texts), Google Books API 12, OpenAlex 3, Semantic Scholar 1, CORE 2; all 200
+  except CORE.
+
+**3. Class.** **N3** (no prior plaintext or decipherment of l.44535 located after the logged search). Not N4: Akkerman 2018, Firth,
+Underdown and the Rawlinson manuscript were not read at page level, and BHO was not checked. Key source **`period`** (rebuilt by us
+from Birch's printed period decipherments of four sibling letters); the cipher system is known: Tomokiyo's published reconstruction
+and the period key sheet BL Add MS 4166 f.117 (DECODE R4897), neither compared value by value here (one conflict seen, 113/173
+Ormond, not in this letter). Text: not known in print. Evidence quality: strong for the reading (print-gloss key with a
+leave-one-letter-out gate, 151/151 groups eye-checked, coherent with the clear text around every group); medium for novelty.
+- **Safe sentence:** "Birch (1742, vol. 6 p.374) prints Blank Marshall's intelligence letter from Bruges of 8 July 1657 [N.S.] with
+  151 cipher groups and no decipherment; with a key rebuilt from Birch's printed decipherments of four other Blank Marshall letters
+  (a cipher Tomokiyo has reconstructed; period key BL Add MS 4166 f.117), all 151 groups decode, five words carrying slips in the
+  printed cipher; no prior decipherment of this letter located (N3, one audit)."
+- **Unsafe sentence:** "We broke Blank Marshall's cipher and produced the first decipherment of this previously unread letter."
+
+**3a. Depth (rule 4a).** Cipher groups at C: 151/151 at face value; 144/151 (**95.4%**) give the intended letter (7 slip groups, I/M);
+no name or code group unread. **D3**: >= 80% C, a matched control that can fail (THUR-BM: shuffled-key 4-gram -1.007 vs p95 -1.431;
+leave-one-letter-out gate PASS both blind passes) and an external check (the decoded words complete the clear sentences around them
+at every group, and the content matches an independent intelligence letter of June 1657 on Gloucester going to the field). Not D4:
+7 groups' intended letters are inferred, "mepllow" unsettled, and this re-derivation was made by a session that had seen the reading.
+**Sentence:** "Blank Marshall writes from Bruges on 8 July 1657 [N.S.] that Charles Stuart, still at Brussels, cannot pay the debts
+owed at Bruges, so that most of his people there must shift for themselves, while Hyde and a few servants stay to face it out as they
+did at Cologne." Outward wording: "largely deciphered (about 95%)".
+
+**4. Postmortem.** No over-claim found in NOTES/AUDIT: the solver assigned no class and said "no image check of these groups yet".
+Two file-level corrections listed in 2a (reading .txt omits clear rows; code 123 label). Rule 10 propagation: if THUR-BM2's FIX list
+changes any value used in l.44535, this section, the status.json row and SO-THURLOE-BM44535 must be updated together.
+SECOND-OPINIONS-QUEUE.tsv row SO-THURLOE-BM44535 filed (prompt `second-opinions/PROMPT-chatgpt-bm44535.md`); WORK-QUEUE.tsv row
+AUD2-FAMILY-A2r-1 (account-3) filed for the second adversarial audit.
