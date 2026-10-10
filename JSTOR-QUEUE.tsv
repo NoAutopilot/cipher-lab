@@ -583,3 +583,7 @@ ciphers/eckert-1864	"John Sherman" AND "City Point" AND "Goldsboro" AND telegram
 ciphers/eckert-1864	"I am going to see General Grant at City Point"	2026-10-10	queued	
 ciphers/eckert-1864	Lynch AND Radford AND torpedoes AND "New Ironsides" AND 1865	2026-10-10	queued	
 ciphers/eckert-1864	"no torpedoes on hand"	2026-10-10	queued	
+ciphers/thurloe-printed	Beverningh AND Nieuwpoort AND 1653 AND (cijfer OR cipher OR ontcijferd)	2026-10-10	queued	
+ciphers/thurloe-printed	"Nedermeyer van Rosenthal" AND Beverningh AND 1653	2026-10-10	queued	
+ciphers/thurloe-printed	"factieuse verdeeltheden"	2026-10-10	queued	
+ciphers/thurloe-printed	"princesse douariere" AND "graef willem" AND 1653	2026-10-10	queued	

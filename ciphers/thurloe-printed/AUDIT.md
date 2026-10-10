@@ -1443,3 +1443,102 @@ class: **N3, key period, two audits, unchanged.**
 - Rule 4 data conflicts logged in HYPOTHESES.md (135 chsturat vs Sr Edw. Walker; Ormond 113 vs 173), none in l.44535.
 - Propagated: status.json (completeness, unresolved_spans, reading_version, depth_pct, depth_note); `second-opinions/PROMPT-chatgpt-bm44535.md` (grade sentence);
   the SO-THURLOE-BM44535 queue row quotes no counts (no change); WORK-QUEUE row AUD2-FAMILY-A2r-1 quotes no counts (no change).
+
+## AUDIT (V-DUTCH, dutch1653: Birch I pp.340, 308/309, 351 under the printed De Witt 1653 key)
+Verifier V-DUTCH (LANE FAMILY-A2s, account 2, Opus 5.5, session_01UyZyHU4LScY9GRbExUEQ5v), 10 Oct 2026 19:52-20:2x UTC by date -u; first verifier, a
+separate session from the solver DUTCH-KEY (session_011q6wwtLCsXrkKaueV9imNC). Brief `.claude/briefs/runs/2026-10-10-ytbiz-family-1709-jobs.md`
+"### V-DUTCH". **Claim under audit:** "Birch 1742 vol 1 p.340 (Beverning and Nieuport to De Witt, 18 July 1653) reads 223 tokens, 218 H, under the key
+printed in Brieven van Johan de Witt I (Japikse) p.72 (dutch1653/reading_p339.tsv), the key having passed a pre-registered known-answer gate on p.351".
+Prior work: `prior_work.py thurloe-printed --item-spec 'shelfmark=Birch 1742 vol 1 p.340;sender=Beverning and Nieuport;recipient=De Witt;date=1653-07-18'
+--step-type audit`: exit 4 (16 LEAD = target-level live claims of other THUR jobs, the solver and this verifier; recorded CLEAR/CONTEXT with `--record`),
+re-run exit 0 (step verdict CONTEXT, plaintext LEAD = the Birch edition window, i.e. Birch's own English translation).
+
+**1. Items.** (a) p.340: Beverning and Nieuport (London) to De Witt, 18 July 1653; Birch prints an English translation (letter begins p.339) with 15 numeral
+runs, 223 tokens, no decipherment. (b) p.308/309: Beverning to De Witt, 27 and 30 June 1653; 19 + 67 tokens; Birch prints an interlinear English
+"new representatives" over the p.308 run only. (c) p.351: De Witt to Beverning, 24 July 1653; 11 runs, 82 tokens; the Dutch is printed (edition pp.100-101,
+De Witt's minute; also Van Sypesteyn, *Geschiedkundige Bijdragen*, per edition p.100 n.3) -- the gate's known answer. Solver's searches: THUR-DUTCH
+(huygens retroboeken `dewitt`, 49 requests; both solver repositories grepped), DUTCH-KEY G3 (IA global full text, Google Books 429, Birch djvu).
+
+**2. Rule 7 re-derivation and image check.**
+- `decode_dutch.py --check`: OK (p351 82 tokens 81 H 1 M; p339 223 tokens 218 H 5 M; p308 86 H; p435 136 '-'). `gate_dutchkey.py --check` OK.
+- Independent script (scratch, not committed: key ranges typed from the edition's own p.72 OCR, `edition/VAN_DEWITT_01_072.html`, not from key_dewitt_1653.tsv;
+  reads only ct_*.tsv): every run's letter string identical to the solver's (e.g. p.340 run 7 "toteebedieninghenuansyneuooroudersnyetuannuafgehesigneertworde",
+  p.351 run 1 "princessedouariere"). The p.72 OCR table (24 ranges, 1-66 contiguous: 1-8 a ... 54-58 u/v, 59-60 w ... 65-66 z) agrees with the TSV on every code.
+- PREREG-DUTCHKEY 6f9dbc5f7 (19:28:09 UTC) is an ancestor of the gate commit d3a51332e (19:34:28 UTC): pre-registration held. Its own disclosure (the
+  solver saw p.351 run 1 spell a word before pushing it) is noted; the reference spans are the edition's fixed Dutch, chosen run by run from the English
+  context, and the shuffled-key control is scored by the same subsequence statistic, so it can fail (control p95 0.346, max 0.432 vs 0.975).
+- Eye check on the committed crops (`dutch1653/crops/`, Birch's printed numerals): p.340 run 1 (L00/L01: "20. 4. 11. 52. 26. 15. 57" -- pos 5 is a clear
+  printed 26), run 2 (L01, 13 tokens), run 7 (L03/L04, 62 tokens), run 8 (L05/L06, 45 tokens), runs 12-15 (L08/L09): all match ct_p339.tsv token for token.
+  Run 8 pos 19 is printed with a blotted second digit (58 or 53): genuinely doubtful, M upheld.
+- **Regrade:** p.340 run 1 pos 5 (26) is clear on L00 -> supports H (the file keeps M; harmless under-grade, for the next FIX: p.340 becomes 219 H, 4 M
+  = codes 330, 97, 70 and run 8 pos 19). No token found graded above its support.
+- **Over-smoothing corrected (NOTES "## DUTCH-KEY" p.340 bullet):** run 8 decodes "...wytenuy[u/t]erstandaerouerbecommarszyn"; the solver's word-split
+  "ten uy[u/t]erst daer ouer" drops the decoded "an" (6 38 = a n), probably a misprint for "-en" ("ten uytersten daer over"); the run 7 opening is "tot e e
+  bedieninghe" (15 = e where d is expected), not "tot ee". Word division is ungraded either way; no grade changes.
+
+**3. Key source (b).** The key is `published`: Brieven van Johan de Witt dl 1 (ed. Japikse, after Fruin) p.72, a table the editor rebuilt from De Witt's
+minutes, not a period key sheet. The edition itself (p.92 n.2, OCR on disk, quoted in `dutch1653/edition_evidence.tsv`) states that the key serves De Witt's
+letters to Beverning and Nieuwpoort, that the ciphered places in Beverning's letters of 27 and 30 June (Thurloe I pp.304, 308, 309) are deciphered with it
+except part of p.309 ("misschien ten gevolge van misstellingen in den tekst bij Thurloe"), and that the 18 July letter (Thurloe I p.339/340, OCR "33(1, 3/oO")
+is "geheel te ontcijferen" with it apart from one easily mended misprint. So the decipherability of p.340 and p.308/309 with this key is stated in print; the
+edition prints the Dutch of neither (it calendars De Witt's own letters; searched by OCR grep on pp.71-73, 91-112 for the decoded words: no hit).
+p.99 n.1: the 18 July letter was printed by Nedermeyer van Rosenthal in Nijhoff's *Bijdragen* X p.291 (Dutch) and, translated, at Thurloe I p.339; the
+editor adds that the two postscript words Nedermeyer left undeciphered read "secrete correspondentiën" and "eenige" -- i.e. a deciphered Dutch text of
+this letter is in print, with only two words left open, and the editor supplied those.
+Nedermeyer's text was **not reached**: IA be-api per-identifier full-text search for "Beverningh" in seven Bijdragen copies on IA (bijdragenvoorva10/09/15/05/
+14/21/18japigoog: 0 hits each, one 502); IA global phrase searches (`"secrete correspondentien" Beverningh`: 2 hits, neither Bijdragen X; `"bedieninghe van
+syne voorouders"`: 0; `"Nedermeyer van Rosenthal" Beverning`: 1, a 1907 index); Delpher (browser tool) tijdschriften and boeken for "Nedermeyer van
+Rosenthal" Beverningh 1653 (one Bijdragen 1882 hit citing "Nedermeyer van Rosenthal in deze Bijdragen, X, 195, 285" -- confirming the article exists;
+the first-series vol X itself is not in Delpher's OCR under these queries), "factieuse verdeeltheden" (0), "secrete correspondentien" (3, none the letter).
+Google Books API: 429, daily quota spent (2 calls, not retried) -- **unreachable this session**. So no diff against Nedermeyer was possible (brief (b) not met
+on this point). The 1723-25 *Brieven geschreven ende gewisselt tusschen ... De Witt ende de gevolmaghtigden* and the 1725 *Verbael*: IA advancedsearch by
+title 0 items; Delpher boeken holds only citations of it (10 hits, all secondary works and sale catalogues); not reached.
+
+**4. Rule 10 search log.**
+| family | searched | result |
+|---|---|---|
+| (a) canonical series | Birch 1742 vols 1-7 (DUTCH-KEY G3, djvu; this audit: the leaves via crops) | Birch prints English translations with numerals; p.308 run glossed "new representatives" (Birch's own); no decipherment of p.340, p.309 or p.351 |
+| (b) sender/recipient editions | Brieven van Johan de Witt I (Japikse) pp.71-73, 91-112 OCR on disk; Bijdragen X p.291 (Nedermeyer) | key printed; decipherability of pp.304-309, 339/340 stated; p.351 Dutch printed pp.100-101; Bijdragen X cited, not reached |
+| (c) documentary editions | 1723-25 *Brieven ... gevolmaghtigden*, 1725 *Verbael*, Van Sypesteyn | not reached (IA title search 0; Delpher citations only; Google Books 429) -- **unreachable** |
+| (d) holding archive | Nationaal Archief (De Witt papers, liassen Engeland) | not searched (no host in this brief) |
+| (e) IA / HathiTrust / Google Books full text | be-api 13 requests; Google Books 2 x 429; HathiTrust not tried (Cloudflare) | no hit for decoded phrases; Google Books unreachable |
+| (f) solver repositories, cipher blogs | THUR-DUTCH grep of both repositories (commits named in NOTES); Tomokiyo dutch.htm (DUTCH-KEY) | Tomokiyo quotes the p.339-340 and p.435 numerals with no decipherment; Aymeloglu and Bourdeau work p.435/Vande Perre only |
+| (g) scholarship | OpenAlex (3 queries, 0), Semantic Scholar (2 queries: 1 unrelated chapel paper), CORE (HTTP 500, unreachable), Delpher tijdschriften (above) | nothing on these decipherments |
+| JSTOR | 4 rows appended to JSTOR-QUEUE.tsv (families (i) and (ii)) | queued; does not block this class |
+Requests: be-api 13 (1 x 502), archive.org advancedsearch 2, googleapis 2 (429), api.openalex.org 3, api.semanticscholar.org 2, api.core.ac.uk 1 (500),
+jsru.kb.nl 1, www.delpher.nl 10 (1 curl + 9 browser), huygens 0.
+
+**5. Classification (rule 10; key source `published`, Japikse after Fruin).**
+| item | prior plaintext | prior decipherment | class | depth |
+|---|---|---|---|---|
+| p.340 (18 Jul 1653, Beverning and Nieuport to De Witt) | yes: Nedermeyer van Rosenthal, Bijdragen X p.291 (cited by the edition p.99 n.1; not seen) and the editor's own two postscript words | yes: the edition states the Birch cipher is "geheel te ontcijferen" with the printed key (p.92 n.2) | **N0** (evidence: the edition's footnotes, read; Bijdragen X not seen; confidence medium-high) | **D3** |
+| p.308/309 (27/30 Jun 1653, Beverning to De Witt) | p.308: Birch's own interlinear English "new representatives"; p.309: none located | yes: the edition states these places are deciphered with the key except part of p.309 (p.92 n.2); no deciphered text printed | **N2** (a prior decipherment is located in print as a statement, so not N3; no plaintext located for p.309; the 1723-25 *Brieven* not reached) | **D1** |
+| p.351 (24 Jul 1653, De Witt to Beverning) | yes: edition pp.100-101 (De Witt's minute, printed), Van Sypesteyn | the key is stated to serve De Witt's letters to Beverning (p.92 n.2); no mapping of Birch p.351 printed | **N1** (our reading an independent re-decipherment of a published text; it is the gate's known answer) | **D3** |
+Nothing here is at N3 or better: no SECOND-OPINIONS-QUEUE.tsv row and no AUD2 WORK-QUEUE row are owed (brief (d) makes both conditional on N3+).
+
+**Depth (rule 4a; DEPTH BAR 2026-10-08; precedent: this file's V-THURBM l.44535 ruling, printed/period key + matched control + external check = D3).**
+- p.340: H 218/223 = 97.8% as filed (219/223 = 98.2% after the regrade above); residue codes 330, 97, 70 and one blotted token. Check used: shuffled-key
+  4-gram control the decode can fail (-0.948 vs max -1.475, 1000 draws) and an external check -- every eye-checked run completes the English sentence
+  printed around it (run 1-2 "the factious divisions"; run 7 "prevent that the same [be not designated now to the offices of his ancestors]"), plus the
+  editor's statement. Not D4: one letter token is M, misprints are read at face value, and this re-derivation was made by a session that had seen the
+  reading. **Sentence:** "In the ciphered words of their 18 July 1653 letter the envoys write of 'factieuse verdeeltheden' (factious divisions) and ask that
+  someone not be designated now to the offices ('bedieninghe') of his ancestors." Outward: "largely deciphered (about 98%)" -- but the plaintext is
+  already in print (N0), so this is a re-decipherment, not a result.
+- p.351: H 81/82 = 98.8%, residue code 330; non-statistical external check (the printed Dutch, 79/81 letters by subsequence fit; two Birch misprints).
+  Not D4 for the same seen-the-reading reason. Sentence: "De Witt's ciphered words name the 'princesse douariere', 'graef willem' and 'haere hoocheyt'
+  and the verb 'designeren' (to designate to an office) in his reply of 24 July 1653." Outward: "largely deciphered (about 99%)".
+- p.308/309: 86/86 tokens H at face value, but p.309 decodes as garbled Dutch ("t welke ne in crisis t qe tomt en een en een en of ten anderen in cirten
+  uyt te bersten") where the editor says the key fails; no clause above the authentication distance and no specific true sentence -> **D1** ("fragments read").
+
+**Safe sentence.** "Birch's Thurloe vol. 1 (1742) prints Dutch envoy letters of June-July 1653 with their cipher left in numerals; under the key printed in
+Japikse's *Brieven van Johan de Witt* I p.72 (after Fruin), whose editor already states that it deciphers these places, we re-derived the letters of p.351
+(checked against De Witt's printed Dutch) and p.340, whose Dutch text was printed by Nedermeyer van Rosenthal; p.309 reads only in fragments."
+**Unsafe sentence.** "We deciphered the Dutch ambassadors' 1653 cipher letters in Thurloe" (the key, the decipherability and the p.340 plaintext are all in
+print; this is a re-decipherment, N0/N1/N2).
+
+**6. Postmortem.** No over-claim of novelty in the solver's files (DUTCH-KEY credits Japikse/Fruin and Nedermeyer and classifies nothing). Corrections:
+the p.340 word split (section 2) and the p.340 run 1 under-grade; both left for the next FIX job to carry into NOTES/reading_p339.tsv (this verifier edits
+only AUDIT.md, JSTOR-QUEUE.tsv and prior-work.tsv). Open: Nedermeyer's Bijdragen X p.291 diff (Google Books with quota, HathiTrust from the owner's machine,
+or the KB's physical copy) would raise p.340's N0 evidence from "cited" to "seen" and give the letter its own known-answer check; status.json: the
+results register carries claimed readings (the l.44535 row is N3); these three items are N0/N1/N2 with a published key, so no results row is added
+here -- the lane orchestrator decides whether a `key: published, text: known` row is wanted.
