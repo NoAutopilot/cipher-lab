@@ -145,3 +145,26 @@ sheet's values over its codes, >= 200 draws, 4-gram p95; say if the run is too s
 reading the text; then `prior_work.py ... --reading <file> --network` (G3) and paste it. Write NOTES "## THUR-83274". A residue of two rows is
 small: no verifier flag unless it carries a clause above the authentication distance. Units ~0.7. Report what was found and where it was not found;
 do not classify novelty.
+
+## Wave 3 results (costs by get_session)
+- THUR-MEAD 6.79 / 5.5 (Opus, 1.24x): keys4166/key_period_meadowe_f102.tsv 189 codes (H 166, M 23), five sheet-internal conflicts; word list
+  left; l.69008 = Jephson glossed. R4896 P2/P3 images on disk.
+- THUR-V57 1.88 / 3 (Sonnet): bm/census_v5v7_all.tsv 148 groups, control 10/10; 7 imaged all glossed; 118 not classed (OCR cannot see the
+  vol 5/7 gloss style); no BM/Meadowe headings in vols 5/7 outside BM3's seven.
+- THUR-83274 0.99 / 1 (Sonnet): 29 groups H 28 M 1 under f.117; control a non-test at 28 letters (disclosed); below AD.
+
+## Wave 4 (18:2x UTC 10 Oct)
+Hosts this wave: archive.org ("IA"): THUR-V7LOOK only, <= 25 requests, take/release.
+
+### THUR-V7LOOK (Sonnet, cap 2.5, box 80 min, IA <= 25): thurloe-printed, image-class the unclassed Downing / headingless vol 7 groups and vol 5 l.15486
+Read NOTES "## THUR-V57" and its Remaining gaps, `bm/census_v5v7_all.tsv`, the page-to-leaf notes in "## THUR-BM3" (vol 7 leaf = page + 7, OCR
+page estimates off by up to 2 pages).
+Step 0: prior_work.py `--item-spec 'shelfmark=Birch 1742 vol 7 Downing numeral passages;sender=George Downing;recipient=Thurloe' --step-type lookup --fetch`, paste it.
+Task: page-locate first (fetch the leaf, read the printed page number on a header strip; move by the difference, never guess twice), then one
+strip crop per group (`tools/iiif_lines.py --image`), one Sonnet call or an eye read per strip: glossed / unglossed / partial. Order: the three
+headingless vol 7 groups (ll.37197, 37263, 37730) and vol 5 l.15486 first, then the Downing groups in THUR-V57's ranked order by numerals until
+8 Downing groups are classed or the cap/requests run out. Stop rule for the Downing tail: if all 8 sampled Downing groups are glossed, stop and
+say so (Birch glosses Downing systematically; the remaining 21 are then "not classed, prior strongly glossed"). Update `bm/census_v5v7_all.tsv`
+in place through `bm/v57_final.py` (its --check must stay exit 0; add the new evidence as image rows) and write NOTES "## THUR-V7LOOK" with any
+unglossed passage under a key in hand (Downing R4896) ranked by numerals. Do not transcribe or decode. Units: ~12-16 leaf fetches + ~12 strip
+looks at ~0.12; stop before a look crossing 80% of cap. Report what was found and where it was not found; do not classify novelty.
