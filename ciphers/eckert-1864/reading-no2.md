@@ -987,5 +987,65 @@ Beckwith City Pt Wash DC Oct 10. 64 [Monday] {time: 11 AM} [Lieut Gen U.S. Grant
 
 Code-word tokens: H 13.
 
-Totals over the 94 entries: H 2231, C 81, I 76, M 3.
+**N2-GA | Page 214 | 9874 | mssEC 18 (obj 10074, pointer 9874; printed page 208), 22 Oct 1864 Washington (ledger 12.30 PM; cipher time word 11 AM), R. R. McCaine (operator), to Col. J. W. Forsyth, Chief of Staff, signed B. W. Brice, Acting Paymaster General: paymasters leave here Monday morning the 24th with funds for the 19th Army Corps; sufficient escort wanted at Martinsburg (N2R-2; row 9874/1; holder transcription, leaf not eye-checked)**
+
+[Washington] [October] [22] {time: 11 AM} for [Colonel] J. W. ForSyth Chief of [Staff] [.] Pay mast hers will leave here [Monday] morning [24] inst with funds for pay ment [Of the] [19] [Army] [Corps] and others [.] Please have sufficient east court at [Martinsburg] for their protection  {tail: [signed] B W Brin Acting Pray mestn [General] many men many minds ( No 1 ) 1230 Pm}
+
+Code-word tokens: H 19.
+
+**N2-GB | Page 101 | 9761 | mssEC 18 (obj 10074, pointer 9761; printed page 95), 19 June 1864 11 AM Washington, forwarding Gen. Sigel's telegram from Martinsburg of the 18th to the Adjutant General: the cavalry detachment sent from Beverly with despatches to Hunter found the enemy in possession of Staunton and Lexington and returned with the despatches; another attempt made; sent for the information of Grant (N2R-2; row 9761/1; holder transcription, leaf not eye-checked)**
+
+{time: 11 AM} [19] Following just rec'd dated [Martinsburg] [18] to [Adjutant General] [Washington] [.] The [Detach (-ed, -ing)] ment of [Cavalry] sent from Beverly with [McLamores Cove]es to Minders found the [Enemy] in possession of Stand ton and [Lexington] [Cavalry] They returned with the [McLamores Cove]es another attempt to send the [McLamores Cove]es has been made  {tail: [signed] [Sigel F] sent for [Information] of [Grant U S]}
+
+Code-word tokens: H 19.
+
+**N2-GC | Page 253 | 9913 | mssEC 18 (obj 10074, pointer 9913; printed page 247), 10 Dec 1864 Washington (ledger 5 PM; cipher time word 12 noon), R. R. McCaine (operator), signed B. W. Brice, Acting Paymaster General: paymasters ready to go to pay the troops unpaid to 31 August; asks to be notified by telegram in cipher when paymasters may be sent to Relay House; the addressee decodes 'Sheridan P H' (M) (N2R-2; row 9913/0; holder transcription, leaf not eye-checked)**
+
+{time: 12 noon AM} [10] [Sheridan P H] [.] Pay masters ready togoto for pay ment of your [Troops]'s unpaid to [August] [31] [.] Under the [Secretary of War]'s [Order] of Pharoah [2] I mustache you for safe [Guard (-ed, -ing)] from [Effect (-ed, -ing) [#]] house [.] Please have me notified by [telegram] in [Cipher] whenny Pay masters maybe sent to [Effect (-ed, -ing) [#]] house  {tail: [signed] B W Brice No 1 5 PM}
+
+Code-word tokens: H 15, C 2, I 2.
+
+**N2-GD | Page 140 | 9800 | mssEC 18 (obj 10074, pointer 9800; printed page 134), 24 July 1864 12 M Washington, S. H. Beckwith (operator), Halleck to Lieut. Gen. Grant at City Point: the rear of the Sixth Corps got into camp last night and is being supplied and paid; they will probably begin to embark tonight; Hunter's last telegram on the enemy in the Shenandoah is forwarded (N2R-2; row 9800/2; holder transcription, leaf not eye-checked)**
+
+SH Beckwith [Washington] [July] [24] {time: 12 noon AM} For [Maj Genl U S Grant] [.] The [Rear] of [6] [Corps] got in to [Camp] last night pause They are being [Supply]ed and paid [To day] [.] They will probably big in to [Embark (-ed, -ing) [#]] tonight [.] Last [telegram] from [Hunter D] in regard to [Enemy] [In the] [Shenandoah] is [Forward]ed  {tail: [signed] [General in Chief] getting to be lively again}
+
+Code-word tokens: H 21, C 2, I 1.
+
+**N2-GE | Page 256 | 9916 | mssEC 18 (obj 10074, pointer 9916; printed page 250), 16 Dec 1864 Washington (ledger 1.30 PM), Fuller at New Orleans (operator), to Maj. Gen. Canby, signed Halleck: the arrival of the (decoded) 'Savannah' makes it unnecessary to keep supplies and troops to meet him on the Gulf coast; the Quartermaster General has ordered the supplies in vessels at Pensacola(?) to Hilton Head; the others at your disposal (N2R-2; row 9916/1; holder transcription, leaf not eye-checked)**
+
+[Friday] [16] [Canby Ed R S] The arrival of flora's pern at [Savannah] renders it unnecessary that you should keep supplies & [Troops]'s to meet him on the Gulf coast ---- The [Quarter[?] Master General] has ordered the supplies in vessels at Pen say cooler to Hilton Head ---- The others will be at your disposal  {tail: [signed] [H W Halleck] {time: 1.30 PM}}
+
+Code-word tokens: H 9.
+
+**N2-GF | Page 62 | 9722 | mssEC 18 (obj 10074, pointer 9722; printed page 56), 25 April 1864 Washington (cipher time word 3 PM), Caldwell (operator, Hd Qrs AP; the ledger's page text has 'Apl 25 1864', the clean-ms18 date 1864-11-02 is a segmenter slip), to Maj. Gen. Meade, signed Augur: Mosby is collecting corn and horses in the vicinity of Upperville; can you send a regiment of cavalry from Warrenton to meet a command; I will send on Wednesday or Thursday next to break up this business and destroy the supplies collected (N2R-2; row 9722/1; holder transcription, leaf not eye-checked)**
+
+Hd Qrs AP ---- [Meade G G] Moseby is [Harrison]ing corn [Horse]'s &c [Left] vicinity of Upperville Can you send a [Regiment] of [Cavalry] from Warrenton to meet a [Command (-ed, -ing)] I will send on [Wednesday] or [Thursday] next to break up this [Browns Ferry] & to take & [Destroy (-ed, -ing)] the supplies [Harrison]ed [?] [Augur C C] {time: 3 PM}
+
+Code-word tokens: H 14, C 1.
+
+**N2-GG | Page 20 | 9680 | mssEC 18 (obj 10074, pointer 9680; printed page 14), 27 Feb 1864 11 AM Washington, S. H. Beckwith (operator), Halleck to Grant: there is no immediate movement on foot in West Virginia towards Longstreet; advices just received from Jacksonville, Florida, that Hardee with 15,000 men from Johnston's army defeated Seymour near Baldwin on the 20th instant (N2R-2; row 9680/0; holder transcription, leaf not eye-checked)**
+
+[Washington] {time: 11 AM} [27] [February] For [Grant U S] There is no immediate [Movement] on foot in [West] [Virginia] [Towards] [Longstreet] [.] advices just received from [Jacksonville] [Florida] that [Hardee] with [15000] [Men] from [Johnston]'s [Army] quarrelled [General] [Found] [Near] [Crocker M M] on the [20] instant  {tail: [signed] [H W Halleck] keep them scared}
+
+Code-word tokens: H 27.
+
+**N2-GH | Page 65 | 9725 | mssEC 18 (obj 10074, pointer 9725; printed page 59), 27 April 1864 Alexandria Va. (cipher time word 2 PM), S. H. Beckwith (operator), to Lieut. Gen. Grant, signed Maj. Gen. A. E. Burnside: the column in motion will reach Fairfax tonight; several regiments not reported; will leave orders for them to follow up; we have the requisite ammunition and supplies with the column (N2R-2; row 9725/0; holder transcription, leaf not eye-checked)**
+
+[Alexandria] {time: 2 PM} {date: Apr 27} for [Lieut Gen U.S. Grant] [.] The [Column] in motion will reach Fairfacts to night Several [Regiment]'s not [Report]ed Will leave [Order] for them to [Follow (-ed, -ing) [#]] up [.] We have the requisite [Ammunition] and [Supplies] with the [Column]  {tail: [signed] [Maj Gen A E Burnside] when you going start south No 32}
+
+Code-word tokens: H 16, C 1.
+
+**N2-GI | Page 254 | 9914 | mssEC 18 (obj 10074, pointer 9914; printed page 248), 14 Dec 1864 Washington (cipher time word 3 PM), Caldwell (operator, Hdqrs AP), to Maj. Gen. Meade, signed B. W. Brice: in compliance with the Secretary's order of the 2nd inst. the paymasters will leave tomorrow by river for City Point to pay two regiments of the Sixth Corps unpaid to 31 August (N2R-2; row 9914/1; holder transcription, leaf not eye-checked)**
+
+[Wednesday] {time: 3 PM} [Meade G G] ---- In compliance with the Secys order of [2] inst I inform you that [2] Paymrs will leave [Tomorrow] by [River] for [City Point] for the payment of [2] [Regiment]'s of [6] [Corps] unpaid to [31] of Aug  {tail: [signed] B W Brice}
+
+Code-word tokens: H 14, C 1.
+
+**N2-GJ | Page 21 | 9681 | mssEC 18 (obj 10074, pointer 9681; printed page 15), 29 Feb 1864 12.30 PM Washington, S. H. Beckwith (operator), Stanton to Maj. Gen. Grant at Nashville: I have directed that Nashville be put in direct communication at 8 o'clock tonight; please come into the telegraph office at that hour; I desire to communicate with you (N2R-2; row 9681/0; holder transcription, leaf not eye-checked)**
+
+[Washington] [February] [29] {time: 12.30 PM} For [Grant U S] I have directed that [Nashville] be put in direct whiffir [Communications] at [8] clock to night Please come in to [Telegraph (-ed, -ing)] Office at that hour I [Lookout Valley] to [Communicate (-ed, -ing)] with you [Secretary of War] Think he will [Communicate (-ed, -ing) [#]] in [Cipher]
+
+Code-word tokens: H 15.
+
+Totals over the 104 entries: H 2400, C 88, I 79, M 3.
 <!-- decode.py: derived block ends -->
