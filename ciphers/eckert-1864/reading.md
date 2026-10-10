@@ -2477,5 +2477,53 @@ Code-word tokens: H 11.
 
 Code-word tokens: H 10.
 
-Totals over the 391 entries: H 6787, C 96, I 25, M 46, S 21, U 10.
+**E610 | Page 127 | 9787 | mssEC 18 (obj 10074, pointer 9787; printed page 121), 11 July 1864 Washington 12.30 PM, R. R. McCaine (operator), for Maj. Gen. David Hunter via Cumberland, signed [Halleck]: as soon as you form a junction with General Howe leave forces enough to hold Maryland Heights, move down the Potomac to form a junction with General Wright at or near Edwards Ferry; object a heavy force in the enemy's rear to intercept his retreat (row 9787/1; L14-B; in print, OR I/37 pt 2, 11 July 1864 12.30 p.m., word for word)**
+
+[Washington] {date: July 11} {time: 12.30} For [Maj. Gen. David Hunter] [.] [As soon as] you form a [Junction] with [General] Howe leave [Force]'s enough to hold [Maryland] Heights and move down the [Potomac] on which ever side you may deem best so as to form a [Junction] with [General] Wright at or near Edwards [Ferry] [.] It is important that this [Junction] be formed as early as possible [,] unless the [Enemy] should [In the meantime] attempt to retire above [Harpers Ferry] [,] in which case [General] Wright will move in that direction [.] The object will be to get a [Heavy] [Force] in the [Enemy]'s [Rear] so as to intercept his [Retreat] [.] The details will of course be varied according to Sir come stanzas  {tail: [signed] [General-in-Chief] [General-in-Chief]'s}
+
+Code-word tokens: H 31, C 1.
+
+**E611 | Page 73 | 9733 | mssEC 18 (obj 10074, pointer 9733; printed page 67), 7 May 1864 Washington 11 AM, John Horner (operator), for Capt. S. L. Brown, Asst. Quartermaster in charge of forage, New York, signed [Qr Master Genl U.S.], marked confidential: daily forage shipments to Monroe to average 27,000 bushels of grain and 350 tons of hay, consigned to Colonel Biggs, Chief Quartermaster, Department of Virginia; supply here lately low; about 60,000 animals to be supplied from here (row 9733/1; L14-B; not located in sources searched by date, below)**
+
+[Washington] {date: May 7} {time: 11 AM} For [Captain] S L Brown Asst [Quartermaster] in charge of [Forage (-ed, -ing)] [New York] [.] The daily ship ments of [Forage (-ed, -ing)] to [Monroe] should average until further orders [27000] busshels of grain and [350] tons of hay [.] consign this [Forage (-ed, -ing)] to [Colonel] Biggs Chief [Quartermaster] [Department] of [Virginia] and use every exertion to send it forward promptly [.] The supply at this point has lately been low & barely sufficient for daily wants [.] there has been no recent accumulation [.] About [60000] [Monroe]'s have to fore supplied from this point will probably be supplied here after via [Monroe] [.] acknowledge this on receipt  {tail: [signed] [Qr Master Genl U.S.] Mark this confidential}
+
+Code-word tokens: H 32.
+
+**E612 | Page 223 | 9883 | mssEC 18 (obj 10074, pointer 9883; printed page 217), 1 Nov 1864 Washington (hour 1 PM), for Brig. Gen. Robert Allen, Quartermaster, Louisville, signed [Qr Master Genl U.S.] (M, the signature groups read 'M see Me Eggs'): the Secretary of War informs me that many days since he ordered you to order Captain Ferry to Memphis without a day's delay and to arrest him and report the execution; he understands Ferry has not gone and you have not reported; the Secretary is not satisfied with your conduct (row 9883/0; L14-B; not located in sources searched by date, below)**
+
+{time: 1 PM} For [Brigadier General] Robt Allen [Quartermaster] [Louisville] [.] [Secretary of War] informs me that many days since he ordered you to order [Captain] Ferry to [Memphis] with out a days delay and to arrest him and to [Report] to [Secretary of War] the Execution of his order Zodia He understands that [Captain] Ferry has not yet gone to [Memphis] and you have not [Report]ed as ordered I am directed to inform you that [Secretary of War] is not satisfied with your conduct as it appears above  {tail: [signed] M see Me Eggs [Qr Master Genl U.S.] the End}
+
+Code-word tokens: H 16.
+
+**E613 | Page 142 | 9802 | mssEC 18 (obj 10074, pointer 9802; printed page 136), 27 July 1864 Washington 9 AM, J. C. Van Duzer (operator), for Gov. [Andrew] Johnson, Nashville, signed [President U.S.] (Lincoln): yours about General A. C. Gillem received, will look after it today; I also read yours about Carl Schurz, appreciate him as highly as you do, but you can never know until you have the trial how difficult it is to find a place for an officer of so high rank when there is no place seeking him (row 9802/1; L14-B; in print, Lincoln's telegram, IA letterstelegrams0008abra, below)**
+
+Nashville {time: 9 AM} [27] for Gov [Johnston] [Nashville] [.] Yours in relation to [General] A. C. Gillem just recd [.] Will look after the matter [Today] [.] I also read yours about [General] Carl Schurz [.] I appreciate him certainly as highly as you do [,] but you can never know until you have the trial how difficult it is to find a place for an officer of so high rank when there is no place seeking him  {tail: [signed] [President U.S.] End}
+
+Code-word tokens: H 15.
+
+**E614 | Page 214 | 9874 | mssEC 18 (obj 10074, pointer 9874; printed page 208), 22 Oct 1864 Washington 12.30 PM, John Horner (operator) at the Quartermaster General's office, for Col. Brown and Maj. Van Vliet, Quartermaster Department, signed [Qr Master Genl U.S.]: orders on shipment of supplies suspended by my dispatch from City Point are renewed; supplies to be sent to Hilton Head and stored there if storage, until the store houses are filled, the remainder held afloat for instant transfer to some point when needed (row 9874/2; L14-B; in print, OR I/39, below)**
+
+[Washington] {time: 12.30} for [Colonel] Brown & [Major] Van Vliet [Quartermaster] [Department] ---- The orders in relation to Shipment of supplies suspended by my telegraphic dispatch of Gassette inst. from [City Point] are renewed ---- Let the supplies as shipped be sent to Hilton Head to be stored there if there is storage or until the store houses are filled [,] The remainder tobe held afloat for instant transfer to some [Point] when needed ---- I will add tooth list by mail [Qr Master Genl U.S.]
+
+Code-word tokens: H 10.
+
+**E615 | Page 119 | 9779 | mssEC 18 (obj 10074, pointer 9779; printed page 113), 8 July 1864 Washington 10 PM, R. R. McCaine (operator), for Maj. Gen. David Hunter, signed [Halleck]: report the positions and numbers of your forces and when they will reach Harper's Ferry; the enemy has crossed the Potomac and appears to be moving by Boonsborough and Middletown on Frederick, his advance under Breckenridge has crossed the Monocacy and is moving on Urbana; unless your forces move forward rapidly they will not be in time (row 9779/0; L14-B; in print, OR I/37 pt 2, word for word)**
+
+Washn {date: July 8} {time: 10 PM} For [Maj. Gen. David Hunter] [.] Please [Report] the [Position]'s and numbers of your [Force]'s and when they will reach [Harpers Ferry] [.] The [Enemy] has [Cross (-ed, -ing)]ed the [Potomac] and appears to be [Movement]ing by Boons boro and Middle town on Frederick His [Advance (-ed, -ing)] is under [Breckenridge] has [Cross (-ed, -ing)]ed the Monocacy and is Tableling on Urbana [.] Unless your [Force]'s move forward rapidly they will not be in time to be of much use  {tail: [signed] [General-in-Chief] hot}
+
+Code-word tokens: H 19, C 1.
+
+**E616 | Page 83 | 9743 | mssEC 18 (obj 10074, pointer 9743; printed page 77), 23 May 1864 Washington 9 PM, R. R. McCaine (operator), for Maj. Gen. David Hunter, Cedar Creek, signed [Halleck]: there are no vacancies of brigadier-general of volunteers; you have three generals of cavalry in your department, Stahel, Duffie and Averell, enough for your cavalry; if any are worthless recommend them to be mustered out and I will endorse it; no one can be appointed till some one else is mustered out (row 9743/1; L14-B; in print, OR I/37 pt 1, word for word)**
+
+Genrl {time: 9 PM} [23] For [Maj. Gen. David Hunter] [.] There are no vacant says of [Brigadier General] of [Volunteer] [.] You have [3] [General]'s of [Cavalry] in your [Department] [,] Stall Duffin and Dover [,] certainly Enough for your [Cavalry] [Force] [.] If any are worth less recon mend to be mustered out and I will endorse it [.] No [1] can be appointed till some [1] Else is mustered out  {tail: [signed] [General-in-Chief] up}
+
+Code-word tokens: H 21, C 1.
+
+**E617 | Page 26 | 9686 | mssEC 18 (obj 10074, pointer 9686; printed page 20), 4 March 1864 by the cipher date words (ledger header 'Mar 14th', unreconciled, M) Washington 10.30 AM, Capt. Geo. H. Smith (operator), for [Curtis, Fort Leavenworth] (name and place groups 'Shelton Curtes', 'Fort 11 worth', M), signed Halleck, General-in-Chief: neither yourself nor any officer under your command will exercise authority over any troops not within the limits of your department when the order establishing it was received; if orders have been issued assuming command of troops outside such boundaries they will be immediately revoked (row 9686/2; L14-B; in print, OR I/34 pt 2, below)**
+
+[Washington] {date: Mar 4} {time: 10.30 AM} for Shelton Curtes [Fort] [11] worth [.] Neither your self nor any Officer under your [Command = Er (-ed, -ing)] will exercise authority over any [Troops] not with in the limits of your [Department] when the order establishing it was received [.] If any orders have been issued assuming [Command = Er (-ed, -ing)] of [Troops] out side of such boundaries they will be immediately revoked  {tail: [signed] Halleck [General-in-Chief] Please forward this at once}
+
+Code-word tokens: H 14.
+
+Totals over the 399 entries: H 6945, C 99, I 25, M 46, S 21, U 10.
 <!-- decode.py: derived block ends -->

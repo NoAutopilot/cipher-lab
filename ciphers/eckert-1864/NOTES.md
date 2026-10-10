@@ -6394,3 +6394,46 @@ Read so far: 9 of 9 rows handled (3 filed, 6 in print); the three filed rows are
 - [ ] image-check: the three filed leaves not opened (holder transcription only).
 - [x] retry: one dropped hdl connection retried after 25 s, then done.
 Verdict: keep going: 4 internal gaps; cheapest next: fetch OR I/39 pt 3 and I/41 pt 3 djvu texts and grep, ~$0.1
+
+## L14-B (10 Oct 2026, account 1, for LANE LEDGER-14)
+
+Job: the eight mssEC 18 (Huntington object 10074) No. 1 rows held by MS18-R10/R11 as step-0 hits, filed under the LEDGER-14 RULING (a step-0 hit is a non-test, STEP0-KEYCTL, 05cdfed6c; a row is filed unless a holder clear copy exists, it is located in print, it is plain, or it is too short). Worker L14-B (Sonnet 5.5), 09:50-10:1x UTC by `date -u`. **All eight filed**, E610-E617 (`ms18/ms18_l14b_file.py`, headers on `ms18/ms18_l14b_draft.py` blocks from MS18-R10/R11's `*_entries.txt`; `decode.py --write`, then `decode.py`, `decode_no2.py`, `decode_no9.py --check` all "current", exit 0). E618-E619 not used. Transcription only: no leaf was image-read by this worker, so a reading is conditional on the holder transcription (rule 2). The printed-page numbers in the headers are page minus 6, the offset E420 and E430 used (not read on the leaves).
+
+Intake gate (10 Oct 2026 09:5x UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0. Prior-work step (by hand): row ids grepped in `ciphertext*.txt` and NOTES.md before work (only the MS18-R10/R11 step-0 tables); ROOM.md read, no live claim on these pointers.
+
+**Per-row result** (step-0 (a)/(b) are MS18-R10/R11's, information only; book share No.1/No.2/No.9 from their tables; "H/C" are the decoder's code-word counts):
+| entry | row | date, from -> to | step-0 (a) / p95 | book | print / holder |
+|---|---|---|---|---|---|
+| E610 | 9787/1 | 11 July 1864 12.30 PM, Halleck -> Hunter (junction with Howe, Wright) | 0.619 / 0.190 | No. 1 (.48/.47/.27, by sense); H 31, C 1 | **in print**, OR I/37 pt 2 (IA warofrebellion372unit), word for word; page not read |
+| E611 | 9733/1 | 7 May 1864 11 AM, QM General -> Capt. S. L. Brown, forage to Monroe | 0.662 / 0.215 | No. 1 (.44/.30/.14); H 32 | **not located** (sources below) |
+| E612 | 9883/0 | 1 Nov 1864, QM General -> Brig. Gen. Allen, Louisville (Capt. Ferry to Memphis) | 0.630 / 0.217 | No. 1 by sense (No. 2 share .39 > .35); H 16 | **not located** |
+| E613 | 9802/1 | 27 July 1864 9 AM, President -> Gov. Johnson, Nashville (Gillem, Schurz) | 0.846 / 0.282 | No. 1 (.30/.28/.18, by sense); H 15 | **in print**: IA be-api whole collection, 88 hits on 'find a place for an officer of so high rank', first Letters and Telegrams of Abraham Lincoln vol. 8 (IA letterstelegrams0008abra); page/date not read |
+| E614 | 9874/2 | 22 Oct 1864 12.30 PM, QM General -> Col. Brown and Maj. Van Vliet (Hilton Head) | 0.776 / 0.245 | No. 1 (.22/.27/.08, by sense); H 10 | **in print**: be-api 'held afloat for instant transfer', 8 hits, OR vol. 39 (IA warofrebellionco0039unit_y0l1, warofrebellionco0039majg_t8d1); part/page not read |
+| E615 | 9779/0 | 8 July 1864 10 PM, Halleck -> Hunter (Breckinridge across the Monocacy) | 0.524 / 0.190 | No. 1 (.52/.41/.20); H 19, C 1 | **in print**, OR I/37 pt 2, word for word; page not read |
+| E616 | 9743/1 | 23 May 1864 9 PM, Halleck -> Hunter (no vacancies, Stahel Duffie Averell) | 0.629 / 0.286 | No. 1 (.53/.36/.17); H 21, C 1 | **in print**, OR I/37 pt 1 (IA warofrebellion371unit), p.525 by the OCR running head, word for word |
+| E617 | 9686/2 | March 1864 (cipher date words 4; ledger header "14th", unreconciled), Halleck -> Curtis? (limits of department) | 0.788 / 0.273 | No. 1 (.38/.30/.13); H 14 | **in print**: be-api 5 + 7 hits, OR vol. 34 pt 2 (IA warofrebellion342unit); date/page/addressee not read |
+
+**Holder clear copy (one take, 9 CISOSEARCHALL requests, p16003coll11, all pointers, 3.3 s apart; positive control 'Inspector Inquiry evidence' returned 9678; `ms18/ms18_l14b_hdl.py/.out`).** One query on rare plain words per row; every hit is the row's own pointer or none (9787, 9874, 9779, 9743 own pointer; 9733, 9883, 9802, 9686 zero hits). No holder clear copy of any of the eight. Released in ROOM at 10:0x UTC, 9 requests, all 200.
+
+**Print check (`ms18/ms18_l14b_print.py/.out`, `ms18_l14b_ctx.py`, `ms18_l14b_ia.py/.out`).** (1) Letters-only phrase grep of five-six clauses per row over the 177 cached volumes plus a date + correspondent window search. Hits: E610, E615 (OR I/37 pt 2), E616 (I/37 pt 1) as above. Hit rejected: E611's '27,000 bushels of grain and 350 tons of hay' matched OR I/32 pt 3 (warofrebellion323unit), Meigs to Grant 8 Apr 1864, '40,000 bushels of grain and 700 tons of hay ... to Pensacola' (a different telegram; the letters-only match dropped the digits). Hit rejected: E617's 'immediately revoked' in warofrebellion422unit (generic phrase, no other clause). Carl Schurz phrase hits in four volumes (lewwallaceautobi00wall, lincolnintelegra00bates, warofrebellion322unit, 323unit) are the name only, not the Lincoln telegram's clauses; the telegram was found by the be-api query. (2) One IA be-api whole-collection exact-phrase query (no identifier) for each row not located in the cached set: E611 x2 and E612 x2 returned 0 hits; E613, E614, E617 hit as above; E613's second query (Schurz Gillem Johnson Nashville telegram) 0. 1.6 s apart, 10 requests, all 200, one host. Not searched: the sender-specific editions (Lincoln Collected Works page, Butler Correspondence), Google Books, HathiTrust, newspapers of the day, OR vols. 34 pt 2 and 39 outside IA. "Not located" is a search result (rule 10), not a novelty verdict.
+
+**Grades.** Counts are the decoder's (`reading.md`): E610 H 31 C 1; E611 H 32; E612 H 16; E613 H 15; E614 H 10; E615 H 19 C 1; E616 H 21 C 1; E617 H 14. The six rows in print are C by comparison with the print (snippet or cached text), names and numbers inside the code-group set M. E611 and E612 have no independent witness: the book decode is the only support, with the count control non-discriminating (a shuffled key reads the same H), so they stand on sense (a coherent clause, E611 'daily shipments of forage to Monroe should average 27000 bushels of grain and 350 tons of hay', E612 'Secretary of War is not satisfied with your conduct'), which is D1 at most until a verifier reads them. E617 date: the cipher date word decodes to March 4, the ledger header says March 14th; Halleck stopped being General-in-Chief on 12 March 1864, so the ledger's 14th fits the print's signature poorly and the 4th fits the signature -- left M for the leaf check.
+
+**Requests.** hdl.huntington.org 9 (all 200, take/release posted); be-api.us.archive.org 14 (4 context + 10 query, all 200); archive.org metadata 4; no other host.
+
+## Remaining gaps (L14-B, 10 Oct 2026)
+Read so far: 8 of 8 rows filed (E610-E617); 6 in print by be-api snippet or cached text; 2 not located (E611, E612).
+- Page and part for E610, E613, E614, E615, E617 and the E617 Halleck-to-? addressee/date - blocker: not-attempted; OCR running heads only (E616 p.525); next: IA page read of OR I/37 pt 2, I/39 and I/34 pt 2, and Lincoln Collected Works, ~$0.1 per row
+- Eye check of the eight leaves (9787, 9733, 9883, 9802, 9874, 9779, 9743, 9686), E617 header date 4 vs 14 March first - blocker: not-attempted; brief named transcription; next: `tools/iiif_lines.py` crops under a Huntington take, ~$0.2 per leaf
+- E611, E612 (not located) first verifier; sender-specific editions and Google Books/HathiTrust not searched - blocker: not-attempted; no verifier has seen them; next: AUD2-stage verifier, ~$0.6 per row
+- Names in the (c) sets (Brown, Biggs, Allen, Ferry, Johnson as addressee, Curtis) - blocker: not-attempted; they are a verifier's counted contribution, not a reader's filing; next: a verifier's counted contribution, ~$0.3 per entry
+
+## Escalation (L14-B, 10 Oct 2026)
+- [x] siblings: same-leaf rows are other telegrams (9874/1 = N2-GA, 9779/1, 9885); one entry per leaf; no sibling clears a gap.
+- [x] clear-pages: all-pointer CISOSEARCHALL on every row (hits own pointer only).
+- [x] known-keys: No. 1, No. 2, No. 9 by the readers' share tables; No. 1 by sense on every row.
+- [x] print: 177 cached volumes + be-api whole collection; six in print.
+- [n/a] key-rebuild: no key row edited.
+- [ ] image-check: eight leaves not image-read; next above.
+- [n/a] retry: nothing failed, so no retry was needed.
+Verdict: keep going: 4 internal gaps; cheapest next: page reads for the six printed rows, ~$0.1 each

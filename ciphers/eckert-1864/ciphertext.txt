@@ -5281,3 +5281,118 @@ on the welch Its impt that there should be
 no delay walrus Jonah she went on to tell
 " (Cal) "  6 P. m
 note: L14-C: No. 1 by sense (share .36/.36/.14: a tie of No. 1 and No. 2, not discriminating; No. 1 H10 vs No. 2 H8 vs No. 9 H4; the shuffled-copy H count ties No. 1, so the count control cannot fail and licenses nothing; No. 1 gives the whole clause, No. 2 'Florence', 'Thomas Geo H', nonsense). Step 0 (ms18 step0_ordered functions, as recorded by the earlier reader; information only under the LEDGER-14 ruling, a non-test: STEP0-KEYCTL): (a) 0.579 (11/19), (b) p95 0.316, hit; (c) 8: arms, ferry, five, harpers, rail, report, road, ... Holder clear copy: one CISOSEARCHALL query on the row's plain words (all pointers, control 9678 returned 9678) returned only the row's own pointer. Print: not located (cached 177 volumes: letters-only phrase grep on 'arms were sent from here to Harpers Ferry', 'delayed on the Rail Road' and a 6-8 Oct 1864 date-window with Garrett/Harper/arms, 0 hits; OR I/39 pt 3 (Oct 1864) is NOT among the cached volumes; be-api whole-collection and inside warofrebellion393unit 0 hits). The ledger's tail 'she went on to tell (Cal) 6 P. m' is a service note, not message text. Names M.
+
+### E610 | Page 127 | 9787 | mssEC 18 (obj 10074, pointer 9787; printed page 121), 11 July 1864 Washington 12.30 PM, R. R. McCaine (operator), for Maj. Gen. David Hunter via Cumberland, signed [Halleck]: as soon as you form a junction with General Howe leave forces enough to hold Maryland Heights, move down the Potomac to form a junction with General Wright at or near Edwards Ferry; object a heavy force in the enemy's rear to intercept his retreat (row 9787/1; L14-B; in print, OR I/37 pt 2, 11 July 1864 12.30 p.m., word for word)
+McCaine  Washn D. C. July 11th 1864
+Growl July Flag Viola For Mutton unity Persia you form
+a Sylvan with Shelter Howe leave saints enough to hold
+Acton Heights and move down the Attica on which ever
+side you may deem best so as to form a
+Steuben with Shelby Wright at or near Edwards Salmon Zebra
+It is important that this Sylvan be formed as early
+as possible Pekin unless the Ridge should Stanhope attempt to
+retire above camel Pedlar in which case Shelter Wright will
+move in that direction Zodiac The object will be to
+get a Simms Salem in the Roses Watkins so as
+to intercept his Warwick Zodiac The details will of course
+be varied according to Sir come stanzas Yoke Jacob Jews
+note: L14-B: No. 1 (share .48/.47/.27 not discriminating vs No. 2; read by sense). Step 0 (as information only, a hit is a non-test under STEP0-KEYCTL): (a) 0.619 (39/63), (b) p95 0.190, HIT (MS18-R10). In print: OR I/37 pt 2 (IA warofrebellion372unit, cached text; page not read), Halleck to Hunter, Washington 11 July 1864 12.30 p.m., 'As soon as you form a junction with General Howe, leave forces enough to hold Maryland Heights ... heavy force in the enemy's rear, so as to intercept his retreat. The details will, of course, be varied according to circumstances'; C against the print. The ledger's tail 'Sir come stanzas' = 'circumstances' (undecoded group, M). Holder clear copy: CISOSEARCHALL p16003coll11 rare plain words, all pointers, hit only the row's own pointer (control 'Inspector Inquiry evidence' returned 9678), so none. Transcription only, leaf not image-read.
+
+### E611 | Page 73 | 9733 | mssEC 18 (obj 10074, pointer 9733; printed page 67), 7 May 1864 Washington 11 AM, John Horner (operator), for Capt. S. L. Brown, Asst. Quartermaster in charge of forage, New York, signed [Qr Master Genl U.S.], marked confidential: daily forage shipments to Monroe to average 27,000 bushels of grain and 350 tons of hay, consigned to Colonel Biggs, Chief Quartermaster, Department of Virginia; supply here lately low; about 60,000 animals to be supplied from here (row 9733/1; L14-B; not located in sources searched by date, below)
+John Horner  Wash'n May 7th 1864 11 AM
+Growl May Postpone Fanny For Princess S L Brown
+Asst Vinton in charge of shade Frog Unity The
+daily ship ments of Shade to Appian should average
+until further orders Harsh Plunder promise busshels of grain
+and Pebble Publish Mansion tons of hay zebra consign
+this Shaker to Paradise Biggs Chief Vincent Quadrant of
+Alba and use every exertion to send it forward
+promptly zodiac The supply at this point has lately
+been low & barely sufficient for daily wants zebra
+there has been no recent accumulation unity About Melody
+Waldo Animals have to fore supplied from this point
+will probably be supplied here after via Animal zodiac
+acknowledge this on receipt yoke Bender Mark this confidential
+note: L14-B: No. 1 (share .44/.30/.14; read by sense). Step 0 (as information only, a hit is a non-test under STEP0-KEYCTL): (a) 0.662 (43/65), (b) p95 0.215, HIT (MS18-R10). Not located: letters-only phrase grep of five clauses over the 177 cached OR/ORN/Butler volumes (one phrase hit, '27,000 bushels of grain and 350 tons of hay', is OR I/32 pt 3 [IA warofrebellion323unit] Meigs to Grant 8 Apr 1864 on '40,000 bushels of grain and 700 tons of hay' to Pensacola: a different telegram, rejected); date window 7 May 1864 with Brown/Biggs/forage: no heading; IA be-api whole collection, two exact-phrase queries ('daily shipments of forage to Monroe', 'consign this forage to Colonel Biggs'): 0 hits. The numbers 27000, 350 and 60000 are code-group values (M). Holder clear copy: CISOSEARCHALL p16003coll11 rare plain words, all pointers, hit only the row's own pointer (control 'Inspector Inquiry evidence' returned 9678), so none. Transcription only, leaf not image-read.
+
+### E612 | Page 223 | 9883 | mssEC 18 (obj 10074, pointer 9883; printed page 217), 1 Nov 1864 Washington (hour 1 PM), for Brig. Gen. Robert Allen, Quartermaster, Louisville, signed [Qr Master Genl U.S.] (M, the signature groups read 'M see Me Eggs'): the Secretary of War informs me that many days since he ordered you to order Captain Ferry to Memphis without a day's delay and to arrest him and report the execution; he understands Ferry has not gone and you have not reported; the Secretary is not satisfied with your conduct (row 9883/0; L14-B; not located in sources searched by date, below)
+Washn Nov 1st 1864
+Harriet For Palsy Robt Allen Vinton Dragon Zebra
+Indigo informs me that many days since he
+ordered you to order Pilgrim Ferry to Drum
+with out a days delay and to arrest
+him and to wick to Infant the Execution
+of his order Zodia He understands that princess
+Ferry has not yet gone to Drill and
+you have not wicked as ordered I am
+directed to inform you that India is not
+satisfied with your conduct as it appears above
+youth M see Me Eggs Bender the End
+note: L14-B: No. 2 share .39 vs No. 1 .35 (not discriminating; No. 1 read by sense, No. 2/9 nonsense, as MS18-R10). Step 0 (as information only, a hit is a non-test under STEP0-KEYCTL): (a) 0.630 (29/46), (b) p95 0.217, HIT (MS18-R10). Not located: phrase grep of five clauses over the 177 cached volumes: none; date window 1 Nov 1864 with Allen/Ferry/Memphis: no heading; IA be-api whole collection, two queries ('not satisfied with your conduct' + Captain Ferry + Memphis; 'Captain Ferry to Memphis' + 'Robert Allen'): 0 hits. Addressee's first name and the Secretary of War are inferred from the decode (M). Holder clear copy: CISOSEARCHALL p16003coll11 rare plain words, all pointers, hit only the row's own pointer (control 'Inspector Inquiry evidence' returned 9678), so none. Transcription only, leaf not image-read.
+
+### E613 | Page 142 | 9802 | mssEC 18 (obj 10074, pointer 9802; printed page 136), 27 July 1864 Washington 9 AM, J. C. Van Duzer (operator), for Gov. [Andrew] Johnson, Nashville, signed [President U.S.] (Lincoln): yours about General A. C. Gillem received, will look after it today; I also read yours about Carl Schurz, appreciate him as highly as you do, but you can never know until you have the trial how difficult it is to find a place for an officer of so high rank when there is no place seeking him (row 9802/1; L14-B; in print, Lincoln's telegram, IA letterstelegrams0008abra, below)
+Van Duzer  Wash D. C. July 27 1864
+Nashville
+Emma harsh plunder for Gov Holly Embrace zebra
+Yours in relation to Shelter A. C. Gillem
+just recd unity Will look after the matter
+Wedge zodiac I also read yours about Shelby
+Carl Schurz Zebra I appreciate him certainly as
+highly as you do pekin but you can
+never know until you have the trial how
+difficult it is to find a place for
+an officer of so high rank when there
+is no place seeking him Walrus bolivia End
+note: L14-B: No. 1 (share .30/.28/.18, not discriminating; read by sense). Step 0 (as information only, a hit is a non-test under STEP0-KEYCTL): (a) 0.846 (33/39), (b) p95 0.282, HIT (MS18-R10). In print: IA be-api whole-collection exact-phrase query 'find a place for an officer of so high rank': 88 hits, first on 'Letters and Telegrams of Abraham Lincoln' vol. 8 (IA letterstelegrams0008abra; snippet 'trial, how difficult it is to find a place for an officer of so high rank when there is no place seeking'), also a Missouri Historical Review 1932 issue and a quotation book; the snippet matches the decode word for word; edition page and date not read on a page (to be read by a verifier; the Lincoln Collected Works carries the same telegram by the same phrase). The cached 177 OR volumes have no such phrase. C against the snippet. Holder clear copy: CISOSEARCHALL p16003coll11 rare plain words, all pointers, hit only the row's own pointer (control 'Inspector Inquiry evidence' returned 9678), so none. Transcription only, leaf not image-read.
+
+### E614 | Page 214 | 9874 | mssEC 18 (obj 10074, pointer 9874; printed page 208), 22 Oct 1864 Washington 12.30 PM, John Horner (operator) at the Quartermaster General's office, for Col. Brown and Maj. Van Vliet, Quartermaster Department, signed [Qr Master Genl U.S.]: orders on shipment of supplies suspended by my dispatch from City Point are renewed; supplies to be sent to Hilton Head and stored there if storage, until the store houses are filled, the remainder held afloat for instant transfer to some point when needed (row 9874/2; L14-B; in print, OR I/39, below)
+Horner N. Y.  Wash Oct. 22 1864
+Grapes Viola for paradise Brown & tappan Van Vliet
+Vincent Quadroon ---- The orders in relation to Shipment
+of supplies suspended by my telegraphic dispatch of Gassette
+inst. from blubber are renewed ---- Let the supplies
+as shipped be sent to Hil - ton Head to be
+stored there if there is storage or until the
+store houses are filled pedlar The remainder tobe held
+afloat for instant transfer to some vernon when needed
+---- I will add tooth list by mail bender
+note: L14-B: No. 1 (share .22/.27/.08, No. 2 higher, not discriminating; read by sense). Step 0 (as information only, a hit is a non-test under STEP0-KEYCTL): (a) 0.776 (38/49), (b) p95 0.245, HIT (MS18-R10). In print: IA be-api whole-collection exact-phrase query 'held afloat for instant transfer': 8 hits; snippet 'store-houses are filled; the remainder to be held afloat for instant transfer to some other point when needed' in the Official Records vol. 39 (IA warofrebellionco0039unit_y0l1 and warofrebellionco0039majg_t8d1, cu31924079575357); matches the decode word for word; part and page not read. Cached 177 volumes: no phrase hit (vol. 39 not among them). 'Gassette inst.' and 'tooth list' are undecoded groups (M). Holder clear copy: CISOSEARCHALL p16003coll11 rare plain words, all pointers, hit only the row's own pointer (control 'Inspector Inquiry evidence' returned 9678), so none. Transcription only, leaf not image-read.
+
+### E615 | Page 119 | 9779 | mssEC 18 (obj 10074, pointer 9779; printed page 113), 8 July 1864 Washington 10 PM, R. R. McCaine (operator), for Maj. Gen. David Hunter, signed [Halleck]: report the positions and numbers of your forces and when they will reach Harper's Ferry; the enemy has crossed the Potomac and appears to be moving by Boonsborough and Middletown on Frederick, his advance under Breckenridge has crossed the Monocacy and is moving on Urbana; unless your forces move forward rapidly they will not be in time (row 9779/0; L14-B; in print, OR I/37 pt 2, word for word)
+R. R. McCaine  Washn July 8th 10 Pm 1864
+Washn July Platina Rebecca For Mutton unity
+Please wick the vespers and numbers of
+your Saints and when they will reach
+camel zebra The Rome has Pocketed the
+Attica and appears to be tableting by
+Boons boro and Middle town on Frederick
+His Orchard is under Hemp has pocketed
+the Monocacy and is Tableling on Urbana
+Zodiac Unless your Salems move forward rapidly
+they will not be in time to
+be of much use Yoke Jacob hot
+note: L14-B: No. 1 (share .52/.41/.20; read by sense). Step 0 (as information only, a hit is a non-test under STEP0-KEYCTL): (a) 0.524 (22/42), (b) p95 0.190, HIT (MS18-R10). In print: OR I/37 pt 2 (IA warofrebellion372unit, cached text; page not read), Halleck to Hunter, Washington 8 July 1864 10 p.m., 'Please report the positions and numbers of your forces, and when they will reach Harper's Ferry. The enemy has crossed the Potomac, and appears to be moving by Boonsborough and Middletown on Frederick. His advance, under Breckinridge, has crossed the Monocacy, and is moving on Urbana. Unless your forces move forward rapidly they will not be in time to be of much use'; C against the print (print spells Breckinridge; the ledger's 'Tableling' = moving, a code word read M). Holder clear copy: CISOSEARCHALL p16003coll11 rare plain words, all pointers, hit only the row's own pointer (control 'Inspector Inquiry evidence' returned 9678), so none. Transcription only, leaf not image-read.
+
+### E616 | Page 83 | 9743 | mssEC 18 (obj 10074, pointer 9743; printed page 77), 23 May 1864 Washington 9 PM, R. R. McCaine (operator), for Maj. Gen. David Hunter, Cedar Creek, signed [Halleck]: there are no vacancies of brigadier-general of volunteers; you have three generals of cavalry in your department, Stahel, Duffie and Averell, enough for your cavalry; if any are worthless recommend them to be mustered out and I will endorse it; no one can be appointed till some one else is mustered out (row 9743/1; L14-B; in print, OR I/37 pt 1, word for word)
+R. R. McCaine  Wash'n May 23rd 9. pm 1864
+Genrl Rosalie Harsh Perfume For Mackerel Unity There
+are no vacant says of Palsy of Wilcox
+zebra You have Pebble Shelbys of Pacific in
+your Quadrant Pekin Stall Duffin and Dover Pedlar
+certainly Enough for your Panama Salem zodiac If
+any are worth less recon mend to
+be mustered out and I will endorse it
+unity No Plug can be appointed till some
+Plunge Else is mustered out yoke Jacob up
+note: L14-B: No. 1 (share .53/.36/.17; read by sense). Step 0 (as information only, a hit is a non-test under STEP0-KEYCTL): (a) 0.629 (22/35), (b) p95 0.286, HIT (MS18-R11). In print: OR I/37 pt 1 (IA warofrebellion371unit, cached text; page 525 by the OCR running head before the 10.30 a.m. telegram of the same date, not read on a page image), Halleck to Hunter, Cedar Creek, Washington 23 May 1864 9 p.m., 'There are no vacancies of brigadier-general of volunteers. You have three generals of cavalry in your department, Stahel, Duffie, and Averell, certainly enough for your cavalry force. If any are worthless recommend them to be mustered out and I will indorse it. No one can be appointed till some one else is mustered out'; C against the print. The ledger's 'Stall Duffin and Dover' = Stahel, Duffie, Averell (undecoded name groups, M). Holder clear copy: CISOSEARCHALL p16003coll11 rare plain words, all pointers, hit only the row's own pointer (control 'Inspector Inquiry evidence' returned 9678), so none. Transcription only, leaf not image-read.
+
+### E617 | Page 26 | 9686 | mssEC 18 (obj 10074, pointer 9686; printed page 20), 4 March 1864 by the cipher date words (ledger header 'Mar 14th', unreconciled, M) Washington 10.30 AM, Capt. Geo. H. Smith (operator), for [Curtis, Fort Leavenworth] (name and place groups 'Shelton Curtes', 'Fort 11 worth', M), signed Halleck, General-in-Chief: neither yourself nor any officer under your command will exercise authority over any troops not within the limits of your department when the order establishing it was received; if orders have been issued assuming command of troops outside such boundaries they will be immediately revoked (row 9686/2; L14-B; in print, OR I/34 pt 2, below)
+Capt Geo H. Smith  Washn Mar 14th 1864
+Growl March Pension Elizabeth for Shelton Curtes Saco Flag worth
+unity Neither your self nor any Officer under your Polka
+will exercise authority over any whisky not with in the
+limits of your Quadrant when the order establishing it was
+received Zebra If any orders have been issued assuming Polka
+of whiff out side of such boundaries they will be
+immediately revoked yoke Halleck Ireland Please forward this at once
+note: L14-B: No. 1 (share .38/.30/.13; read by sense). Step 0 (as information only, a hit is a non-test under STEP0-KEYCTL): (a) 0.788 (26/33), (b) p95 0.273, HIT (MS18-R11). In print: IA be-api whole-collection exact-phrase queries: 'will exercise authority over any troops not within the limits of your department' 5 hits and 'assuming command of troops outside of such boundaries' 7 hits, in the Official Records vol. 34 pt 2 (IA warofrebellion342unit, warofrebellion013402rootrich, cu31924077730251) and other copies; snippets match the decode word for word; the Halleck-to-Curtis date, page and addressee not read on the page (a verifier's); the date mismatch (4 vs 14 March; Halleck was General-in-Chief to 12 March 1864) is for the image check of leaf 9686 (not done). Cached 177 volumes: no phrase hit (vol. 34 pt 2 is not among them). Holder clear copy: CISOSEARCHALL p16003coll11 rare plain words, all pointers, hit only the row's own pointer (control 'Inspector Inquiry evidence' returned 9678), so none. Transcription only, leaf not image-read.
