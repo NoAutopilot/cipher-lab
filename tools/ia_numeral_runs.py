@@ -8,6 +8,10 @@ numerals, distinct values, repeat rate (cipher repeats; index and table columns 
 4+ letters within three lines either side. One TSV row per cluster with 240 characters of context. Scripts read,
 models judge. Lending-only items answer 403 and are reported, not retried. Exit 0 always.
 
+--inline-run K (THUR-B146, 10 Oct 2026) also marks a line holding K consecutive numeral tokens inside prose, for editions
+that print short cipher runs mid-sentence (Birch 1742 vol. 4). Meant to catch: "215. 345. 196. 501. 105." inside a prose line.
+Must NOT flag: one stray number or a date ("in 2 dayes", "April 5, 1656") -- K defaults to off and is >= 4 in use.
+
 --markers (MQS-IA-MARKERS, 9 Oct 2026; research/MARY-STUART-TALK-2026-10-09.tsv row M04; after Lasry, Biermann and
 Tomokiyo 2023, Cryptologia 47:2, p.108 n.38: Labanoff 1844 printed a cipher passage as ellipses) also reports clusters
 of printed gap markers, where an edition left the cipher out instead of printing its numerals: an ellipsis (three or
@@ -60,11 +64,19 @@ def fetch(ident, cache):
     time.sleep(1.5)
     return text, 'fetched'
 
-def clusters(lines, min_tokens, share):
+def longest_run(tk):
+    best = cur = 0
+    for t in tk:
+        cur = cur + 1 if NUM.match(t) else 0
+        best = max(best, cur)
+    return best
+
+def clusters(lines, min_tokens, share, inline_run=0):
     out = []
     for i, l in enumerate(lines):
         tk = l.split()
-        if len(tk) >= min_tokens and sum(1 for t in tk if NUM.match(t)) / len(tk) >= share:
+        if (len(tk) >= min_tokens and sum(1 for t in tk if NUM.match(t)) / len(tk) >= share) \
+                or (inline_run and longest_run(tk) >= inline_run):
             if out and i - out[-1][-1] < 4:
                 out[-1].append(i)
             else:
@@ -88,6 +100,7 @@ def main():
     ap.add_argument('--min-tokens', type=int, default=6)
     ap.add_argument('--share', type=float, default=0.7)
     ap.add_argument('--tsv', default='-')
+    ap.add_argument('--inline-run', type=int, default=0, help='also mark a line holding this many consecutive numeral tokens inside prose (THUR-B146, 10 Oct 2026; default off)')
     ap.add_argument('--markers', action='store_true', help='also report clusters of printed gap markers (ellipses, [en chiffre])')
     ap.add_argument('--marker-gap', type=int, default=6, help='marked lines fewer than this apart join a cluster')
     ap.add_argument('--min-markers', type=int, default=3, help='weighted marker count that flags a cluster')
@@ -101,7 +114,7 @@ def main():
             print('%s: %s, skipped' % (ident, how), file=sys.stderr)
             continue
         lines = text.split('\n')
-        cs = clusters(lines, a.min_tokens, a.share)
+        cs = clusters(lines, a.min_tokens, a.share, a.inline_run)
         print('%s: %s, %d lines, %d clusters' % (ident, how, len(lines), len(cs)), file=sys.stderr)
         for c in cs:
             n, d, r, p = score(lines, c)

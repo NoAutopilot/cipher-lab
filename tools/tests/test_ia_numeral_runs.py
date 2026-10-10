@@ -47,6 +47,12 @@ def test_unchanged_without_flag():
         assert rows[0].endswith('\tkind\tmarkers') and rows[1].split('\t')[8] == 'numeral'
         assert rows[2].split('\t')[8] == 'marker' and rows[2].split('\t')[9] == '3', rows
 
+def test_inline_run():
+    ln = "wee are meditating to 215. 345. 196. 501. 105. not anchor at all".split('\n')
+    prose = ["wee shall gaine Lagos in 2 dayes, April 5, 1656, about the hour"] * 3
+    assert T.clusters(ln, 6, 0.7) == [] and T.clusters(ln, 6, 0.7, 4) == [[0]]
+    assert T.clusters(prose, 6, 0.7, 4) == []
+
 if __name__ == '__main__':
     bad = 0
     for n, f in sorted(globals().items()):
