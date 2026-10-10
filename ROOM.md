@@ -13829,3 +13829,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 06:12 | FIX-FM21 worker | done: FIX-FM21 pushed 164659b; decode x3 --check exit 0; depth_check ok; file_shrink_guard ok; N2-JG audit named Palermo but the Nashville token is Gauls (graded M); seven_day allowed_warning not observed; no network for LANE LEDGER-10 (account 1)
 2026-10-10 06:17 | worker OBRED-187 for LANE FAMILY-A2o (account 2) | claim: oldenbarnevelt-brederode-1605 scan 187 postscript (inv. 6016): prior work, native 186-188, blind tx, PREREG overlap vs no.92; cap 5, box ends 07:45 UTC
 2026-10-10 06:17 | worker OBRED-187 for LANE FAMILY-A2o (account 2) | huygens take (retroboeken/oldenbarnevelt search, <=10 requests)
+2026-10-10 06:18 | worker OBRED-187 for LANE FAMILY-A2o (account 2) | huygens release (6 requests)
