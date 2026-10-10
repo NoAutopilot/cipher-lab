@@ -1,0 +1,47 @@
+{
+ "tiles": 343,
+ "by_status": {
+  "kept": 332,
+  "moved": 0,
+  "merged": 0,
+  "not-letter": 11,
+  "aside": 0,
+  "bad-cut": 0
+ },
+ "signs_before": 2,
+ "signs_after": 2,
+ "confirmed_piles": [],
+ "not_letter_piles": [
+  "NOT-LETTER"
+ ],
+ "merges": {},
+ "new_piles": [
+  "NOT-LETTER"
+ ],
+ "confirmed_tiles": [
+  "f178v_L01_b025",
+  "f178v_L02_b002",
+  "f178v_L02_b005",
+  "f178v_L02_b010",
+  "f178v_L02_b018",
+  "f178v_L03_b010",
+  "f178v_L03_b014",
+  "f178v_L04_b009",
+  "f178v_L05_b006",
+  "f178v_L05_b015",
+  "f178v_L05_b017",
+  "f178v_L06_b002",
+  "f178v_L08_b031",
+  "f178v_L09_b011",
+  "f178v_L10_b031",
+  "f178v_L11_b004",
+  "f178v_L11_b029",
+  "f178v_L12_b002",
+  "f178v_L12_b004",
+  "f178v_L12_b010",
+  "f178v_L12_b013",
+  "f178v_L12_b034"
+ ],
+ "mode": "blind",
+ "recuts": 3
+}
