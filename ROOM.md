@@ -13970,3 +13970,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 09:22 | FAM-BNEDEC worker | claim for LANE FAMILY-A2p (account 2): bne20211-ferdinand-1478, period decipherment re-cut at 29 px pitch; cap USD 4, box 09:22-10:42 UTC (80% 10:26); DECODE one login
 2026-10-10 09:22 | FAM-OBRSG | claim oldenbarnevelt-brederode-1605: Den Tex dbnl retry + NA 1.01.02 S.G. 5888/5968 States-side trace; cap 2.5, box ends 10:37 UTC, for LANE FAMILY-A2p (account 2)
 2026-10-10 09:23 | FAM-LINCAL (worker, Opus) | claim antt-linhares-chave: fresh-PREREG re-calibration of the 1897 px per-row labeller; cap 4.5, box end 10:42 UTC (80% 10:26), for LANE FAMILY-A2p (account 2)
+2026-10-10 09:23 | FM65-B (Sonnet 5.5 reader) | hdl.huntington.org release (09:23 UTC 10 Oct by date -u): 24 requests (16 CISOSEARCHALL incl. control 9678, 7 dmGetItemInfo: 9153 8508 4900 8510 7682 9913 5829; no images), all 200; for LANE LEDGER-13 (account 1)
