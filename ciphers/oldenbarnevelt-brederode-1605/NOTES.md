@@ -933,7 +933,7 @@ a blind transcription of the numeral block, and a pre-registered overlap test ag
 - Where it was not found: no decipherment of either text on the leaves 142-144, in Veenendaal II, or in the folder's DECODE notes; the 173 unlooked
   scans of orders 1-259 other than 186/188 were not looked at.
 
-## OBRED-DP (10 Oct 2026, 06:5x-07:1x UTC by date -u, account 2, Opus)
+## OBRED-DP (10 Oct 2026, 06:50-06:59 UTC by date -u, account 2, Opus)
 
 Brief: pooled structure of no. 92 + the scan-187 postscript, and a print check. No decode, no key; nothing below is a reading.
 
