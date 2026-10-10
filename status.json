@@ -12225,9 +12225,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-N2b)'"
+        "AUDIT.md '## AUDIT (FV-N2b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGERN2-1)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-N2b verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -12242,15 +12243,15 @@
         "names_codes": "0",
         "other": "4"
       },
-      "depth_pct": 82.6,
+      "depth_pct": 89.5,
       "grade": "N3",
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): Rufus Ingalls to Lt. Col. G. W. Bradley, Chief Quartermaster, 17 Dec 1864: eight steamers ordered to report to Sherman at or near Savannah (N2-FH)",
       "line": "Read with War Department Cipher No. 2 (period key): on 17 Dec 1864 Rufus Ingalls ordered eight steamers, among them the Guide, Cossack and Manhattan, to report to Sherman at or near Savannah, those in the James included; not located in print (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-N2b); not N4: OR ser. III vol. 4, ORN, NARA RG 92/RG 107, Meigs/Ingalls papers, the Dec 1864 / Apr 1864 press, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGERN2-1)",
+      "gap": "N3 two audits (FV-N2b, AUD2-LEDGERN2-1); not N4: OR ser. III vols 4-5 (no good text on IA), Grant Papers vol. 13 (unreachable), the Dec 1864 / Apr 1864 press (loc.gov 403), NARA RG 92/RG 107, HathiTrust not read; JSTOR rows queued",
       "depth": "D3",
-      "completeness": "19 H of 23 code-word groups (4 M: Marshal, walch, willy, tooth); vessel names plain",
+      "completeness": "17 H, 2 M of 19 code-word tokens (decode after FIX-N2a; M: Marshal = 17, walch = Signature); willy, tooth plain/unkeyed; vessel names plain",
       "phrases": [
         "Huntington mssEC 18 (obj 10074) p.250, pointer 9916, N2-FH"
       ],
@@ -12259,8 +12260,8 @@
         "Huntington mssEC 18 (obj 10074) p.250, pointer 9916, N2-FH"
       ],
       "depth_sentence": "Ingalls ordered eight named army steamers, including any then in the James, to report to Sherman at or near Savannah.",
-      "depth_check": "code clause: Minnie Marshal Revenue Paxton GW Bradley Chief Vermont = 7 PM, 17, Lieutenant Colonel G. W. Bradley, Chief Quartermaster; external: holder 9142/0 (= N2-CJ, 18 Dec: the transports for Sherman ... the boats named as are in the James) (D3)",
-      "depth_note": "19 H of 23 code-word groups (4 M: Marshal, walch, willy, tooth); vessel names plain"
+      "depth_check": "code clause: Minnie Marshal Revenue Paxton GW Bradley Chief Vermont = 7 PM, 17, Lieutenant Colonel G. W. Bradley, Chief Quartermaster; external: holder 9142/0 (= N2-CJ, 18 Dec: the transports for Sherman ... the boats named as are in the James); Quartermaster General annual report 1865 vessel table lists Cossack and Thomas Collyer as chartered army steamers (AUD2-LEDGERN2-1) (D3)",
+      "depth_note": "17 H, 2 M of 19 code-word tokens (decode after FIX-N2a; M: Marshal = 17, walch = Signature); willy, tooth plain/unkeyed; vessel names plain"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
@@ -12307,9 +12308,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-N2b)'"
+        "AUDIT.md '## AUDIT (FV-N2b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGERN2-1)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-N2b verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -12330,7 +12332,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): Augur to Meade, 25 Apr 1864: Mosby collecting corn and horses near Upperville; send a cavalry regiment from Warrenton (N2-GF)",
       "line": "Read with War Department Cipher No. 2 (period key): on 25 Apr 1864 Augur asked Meade for a cavalry regiment from Warrenton to join a force he would send on Wednesday or Thursday to break up Mosby's collecting of corn and horses near Upperville; Meade's reply of the same day is in the Huntington's Eckert papers; not located in print (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-N2b); not N4: OR ser. III vol. 4, ORN, NARA RG 92/RG 107, Meigs/Ingalls papers, the Dec 1864 / Apr 1864 press, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGERN2-1)",
+      "gap": "N3 two audits (FV-N2b, AUD2-LEDGERN2-1); not N4: OR ser. III vols 4-5 (no good text on IA), Grant Papers vol. 13 (unreachable), the Dec 1864 / Apr 1864 press (loc.gov 403), NARA RG 92/RG 107, HathiTrust not read; JSTOR rows queued",
       "depth": "D3",
       "completeness": "11 H of 12 code-word groups (1 M: Stephen); collecting, Collected, business plain",
       "phrases": [

@@ -14613,3 +14613,66 @@ ciphertext variant and status.json agree; E366 context note: add Evening Star 15
 add OR I/39 pt 2 p.365 (Halleck to Sherman, 12 Sept 1864, the same question). status.json: audit_status "two audits" and gap lines updated here; E370
 completeness corrected to the committed count here.
 Requests: googleapis.com 28; loc.gov 26 (6 Chronicling America searches, 20 page/OCR requests, 1 cut short); archive.org 9 (5 advancedsearch, 4 djvu texts); be-api.us.archive.org 8; api.semanticscholar.org 3; api.core.ac.uk 3; api.openalex.org 3; hdl.huntington.org 17 attempts at 3.3 s (15 answered, 2 dropped by the host). No 429, no challenge page.
+
+## AUDIT 2 (second adversarial, AUD2-LEDGERN2-1)
+
+Second verifier AUD2-LEDGERN2-1 (account 4, for the orchestrator (account-4); row queued by FV-N2b for LANE LEDGER-N2 (account 1), re-tagged from account 3),
+10 Oct 2026, 02:37-02:5x UTC by `date -u`; a separate session and account from the readers N2R-1/N2R-2 and the first auditor FV-N2b (account 1); this session
+had not read or audited these entries before. Scope: **N2-FH** (mssEC 18 p.250, pointer 9916/2, 17 Dec 1864) and **N2-GF** (p.56, pointer 9722/1, 25 Apr 1864);
+N2-GE (N1) not re-audited, per the row. Nothing decoded beyond key look-ups. Key source: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was
+not run. Re-derivation: `python3 ciphers/eckert-1864/decode_no2.py --check` -> "reading-no2.md is current" (after FIX-N2a). Intake gate: `eckert-1864: partial
+(line 3) -- edition/page or full-text-search citation found within 6 lines`. Image: not re-checked (FV-N2b eye-checked both leaves at 2400 px; FIX-N2a carried
+its two transcription edits, walch and willy). Committed (`ms18/`): `aud2_ledgern2_1_search.py` + `.out` (IA advancedsearch, be-api, Google Books, OpenAlex,
+S2, loc.gov), `aud2_ledgern2_1_hdl.py` + `.out`, `aud2_ledgern2_1_info.out`; IA djvu texts read in scratch (ids below); two JSTOR-QUEUE.tsv rows per item.
+
+### 1. Families FV-N2b did not cover, and what this pass did
+| Family | FV-N2b | This pass |
+|---|---|---|
+| Huntington CONTENTdm, new queries (all pointers) | 9 queries | 12 more: 'Guide Escort Louise' 1 (9916 own); 'Collyer' 1 (9916 own); 'Collier Cossack' 0; 'transports Sherman James' 0; 'Bradley steamers' 0; 'Bradley Savannah' 0; 'Ingalls Savannah vessels' 0; 'Mosby corn' 2 (9722 own; **9826** = McCaine, Washington 25 Aug 1864, a scout's report from Upperville, other); 'Augur Mosby' 1 (7817 = Hancock for Augur, 10 Mar 1865, other); 'Upperville' 3 (9722 own; 7893 = Torbert, 4 May 1865, other; 6049 = Hd Qrs AP, June 1863 march orders, other); 'Meade Warrenton cavalry Augur' 0; 'Mosby horses' 0. **No duplicate or clear copy of N2-FH or N2-GF** |
+| ORN | not searched | ORN ser. I vol. 16 (South Atlantic Blockading Squadron, 1 Oct 1864-8 Aug 1865; IA `officialrecordso0016unse`, djvu): Cossack 0, Collyer 0, Hero of Jersey 0, G. W. Bradley 0. ORN ser. I vol. 11 (North Atlantic, 28 Oct 1864-1 Feb 1865, the James; `officialrecordso0011unse`): Cossack, Collyer, Hero of Jersey, Bradley, Louise 0. Not in either |
+| OR ser. III vol. 4 / vol. 5 (War Department correspondence and the Quartermaster General's reports, 1864-65) | not searched | **Not reliably searched.** IA `warofrebellion0304rootrich` 403 ("Item not available"); `waroftherebellio026242mbp` and `in.ernet.dli.2015.165578` / `155283`, all catalogued as "Series III Vol IV", are in fact ser. II vol. 4 (1862 prisoners; their only 'Cossack' is a Sept 1862 prisoner steamer); `in.ernet.dli.2015.171703` (III/4) is a poor OCR copy (1.6 MB, 'Meigs' 2 hits): Cossack, Collyer, Hero of Jersey 0 -- conditional on that OCR; III/5 (`in.ernet.dli.2015.165571`) OCR unusable, `warofrebellion0305rootrich` 503. Unreachable in practice: a page-image read or a good text is still owed |
+| OR ser. I, other 1864-65 volumes (be-api phrase "Hero of Jersey") | I/41 pt 4, I/42 pt 3, I/44, I/45 pt 2 by djvu grep | I/36 pt 1, I/40 pts 1-3, I/42 pts 1-3, I/44, I/46 pts 1-2, I/47 pts 1-2 by be-api: two hits only, both other -- I/40 pt 1 (a June 1864 report, "for Washington on steamer Hero of Jersey"; index p.515) and I/46 pt 2 (1865, "the James has the George Washington, Hero of Jersey, and the Thomas Powell"; index p.756); 'Cossack' 0 in I/44 and I/47 pt 2. The Google Books OR-index hits ("Hero of Jersey, Steamer. Mentioned", 1891-1902) are these index lines and the general index |
+| Quartermaster General's annual report 1865 (vessel tables) | not searched | Google Books snippet (`PhNAAAAAYAAJ`, *Annual Report of the Quartermaster General* 1865; same table in House Documents 1866 and the Secretary of War's report, `OeuqO9UOOZIC`): "Cossack, side-wheel steamer, 500 [tons] ... Collyer, Thomas, side-wheel ..." -- the chartered-vessel list. Confirms the vessel names as army transports (context, an external check on the plain names), **does not print the order** |
+| Grant Papers | vols 10, 13 (reader: 13 unreachable) | vol. 13 (`papersofulyssess0013gran`): 'Savannah' 0 as a positive control -> **still unreachable** (as N2R-2 found); no other IA copy found by advancedsearch. Vol. 10 (`papersofulyssess0010gran`, control 'Augur Warrenton' answered, other passages): 'Upperville' 0, 'Mosby corn' 0. Vol. 12 'Cossack' 0 |
+| Printed papers of the correspondents | not searched | *Life and Letters of George Gordon Meade* vol. 2 (`lifeandlettersg02meadgoog`, djvu): Augur 5 mentions, none Apr 1864 Mosby; 'Upperville' 0. Emerson, *Life and Letters of Charles Russell Lowell* (`lifelettersofcha00emeruoft`): notes pp.452-453 "April 19 ... reports ... the amount of corn in Loudoun County"; "April 26. General Tyler writes to General Augur ... some expedition about to start from Washington" (context, the expedition this telegram prepares); not the telegram |
+| OR I/33 context | pp.315, 985 | p.306 (djvu): Lowell's report, Vienna 20 Apr 1864: "Mosby thought it would be a good time to remove from around Leesburg and Point of Rocks corn ... He is not sending the corn to Upperville, but to points about the country" -- the corn-collecting the telegram names five days later (context, I); Tyler, Fairfax C. H. 18 Apr (djvu, page not established), "a large scout ... into the vicinity of Upperville" (context). Google Books '"Mosby is collecting"' hits three OR passages (Augur's and others': "his force for a raid", "his own men, White's battalion ... near Snicker's Gap", "beyond Middleburg for a raid into Maryland") -- **other telegrams**, none with corn or Upperville |
+| Press of the day | not searched | loc.gov Chronicling America: 4 queries all **HTTP 403**; stopped (good-citizen rule), not retried. Unreachable this session |
+| Google Books phrase pass | 4 queries | 16 more (in `.out`): "Hero of Jersey" with Sherman/Savannah/Cossack/transport, "Cossack" "Collyer" steamer, "T. Collyer" Savannah, Ingalls Bradley transports, "G. W. Bradley" quartermaster City Point, "Mosby is collecting" (+corn), "collecting corn" Mosby Upperville, Augur Meade regiment Warrenton, "break up this business" Mosby, Meade's reply "I would prefer not doing so": **no print of either telegram or of Meade's reply**. Lead not followed: *Cases Decided in the Court of Claims* (1868, `BvobAQAAMAAJ`, snippet) lists "Colonel G. W. Bradley, City Point, Virginia, Dec. 20, 1864 ... Jan. 27, 1865" in what looks like a voucher table -- a vessel claim, snippet only |
+| Scholarship | not searched | OpenAlex 2 (Mosby/Upperville/Augur: 'Gray ghostbusters: Eastern theatre Union counterguerrilla operations' (1988 thesis, not read); transports/Savannah: nothing on point); S2 1 x 429 (not retried), 1 x 0. JSTOR: 4 rows queued (s.4) |
+| Unreachable / not searched | -- | OR III/4-5 page images; Grant Papers vol. 13; the Dec 1864 and Apr 1864 press (loc.gov 403); NARA RG 92 (vessel files) / RG 107 (M473 telegrams sent); Meigs and Ingalls papers; HathiTrust (Cloudflare); 'Gray ghostbusters' (1988); Court of Claims 1868 full text |
+
+### 2. Findings
+- **No copy, quotation or printed text of N2-FH or N2-GF found** in any family above. The first audit's "not located" holds for both; each family this pass
+  added found only context (the vessel list, Lowell's corn report, Tyler's expedition) or other telegrams.
+- **Counts after FIX-N2a.** N2-FH now decodes H 17, M 2 (Marshal = 17 and walch = Signature M; "Hero of Jersey" plain, the decoder slip removed; willy, tooth
+  plain/unkeyed and outside the code-token count): 17 of 19 code-word tokens = 89.5% H (81.0% if willy and tooth are counted as unread groups, FV-N2b's
+  convention). status.json still carried FV-N2b's "19 H of 23" -- updated here. N2-GF: H 10, C 1, M 1 (decode) = 11 of 12, 91.7%, as status.json has it.
+- **One risk to N2-FH's class left open.** OR ser. III vol. 4 (War Department correspondence 1864-65) was the family the first audit named and this pass
+  could not read on a good text: the only true III/4 copy on IA has poor OCR. A Quartermaster-General telegram order is more likely in III/4-5 than in ser. I;
+  it stays an open family, not a negative.
+- No over-claim found in either safe sentence. The N2-GF safe sentence is exact (the reply 4569 is in the holder, not printed: Google Books found no print of it).
+
+### 3. Class (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| N2-FH | **N3** (kept) | period | **D3** (kept: 17 H of 19 code-word tokens, decode --check current; external non-statistical: holder 9142/0 = N2-CJ, the 18 Dec sequel, and, added, the Quartermaster General's 1865 vessel table naming Cossack and Thomas Collyer as chartered army steamers) | not located after FV-N2b and s.1 |
+| N2-GF | **N3** (kept) | period | **D3** (kept: 11 H/C of 12, decode --check current; external: holder 4569, Meade's reply; added context OR I/33 p.306, Lowell 20 Apr on Mosby's corn) | not located after FV-N2b and s.1 |
+
+- Not N4 for either: OR ser. III vols 4-5 (no good text), Grant Papers vol. 13, the press of Dec and Apr 1864, NARA RG 92/107, HathiTrust unread; JSTOR rows
+  open. Not D4: no fresh rule-7 re-derivation session; 2 M (FH) and 1 M (GF) remain.
+- **Safe sentences:** FV-N2b's, unchanged (status.json `line`). Depth sentences: FV-N2b's, unchanged.
+- **Unsafe:** "first", "new", "unpublished", "never printed"; "not in the Official Records" (ser. III vols 4-5 not read on a good text); "the Quartermaster
+  General's report prints this order" (it lists the vessels, not the order); "Augur's expedition of 28 April answered this telegram" (context, I);
+  "Meade refused" (he "would prefer not", 4569).
+
+### 4. Postmortem and fixes
+- FV-N2b's classes, readings and depth stand; its gap list was accurate. Its one stale number (N2-FH "19 H of 23", 82.6%) was overtaken by FIX-N2a, not an
+  error of the audit. Applied here: status.json N2-FH and N2-GF `audit_status` "two audits", `audit_refs` + this section, `gap`; N2-FH `completeness`,
+  `depth_pct` 89.5 (decode count). SO rows SO-ECKERT-N2-FH / -GF unchanged (no class or reading changed).
+- For a reader of the next incarnation: OR ser. III vol. 4 on HathiTrust (owner's machine) or a page-image read of the Dec 1864 window; the Court of Claims
+  1868 Bradley voucher table (vessel claim) as a lead.
+- JSTOR-QUEUE.tsv: (i) "Hero of Jersey" AND Cossack AND Savannah AND 1864; (ii) "are ordered to report to General Sherman"; (i) Mosby AND Upperville AND Augur
+  AND Meade AND 1864; (ii) "Mosby is collecting corn".
+Requests: hdl.huntington.org 16 (12 CISOSEARCHALL, 4 item info; all 200); archive.org 13 (8 djvu, 3 metadata, 2 advancedsearch; one 403, one 503, two 404
+on wrong file names) + 5 advancedsearch in the script; be-api.us.archive.org 30 (all answered); www.googleapis.com 16; www.loc.gov 4 (all 403, stopped);
+api.openalex.org 2; api.semanticscholar.org 2 (1 x 429).
