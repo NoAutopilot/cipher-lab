@@ -8240,5 +8240,17 @@ WIT-ANCHOR (running); SCAN-103 landed NOT BEST (1.53, ledgered + archived) -> PR
 beside; lines missing 0; line-level paired vs committed 0/23/13): dated lines in PREREG-S2, Amendment 9 (29)-(38), the owner paragraph,
 TRANSCRIPTION.md Today. Register regenerated (7 rows added). TX-RED F64+: none posted yet. Eval looks 0; S2 look 1; openings this
 incarnation 4 (Spinelli, gunther, confirm2, dev2). Owner-side with the orchestrator: L74 (now unblocked by the manifest), L75, the 17
-Spinelli feed tiles, the 20-tile sorter session. Next for this incarnation: WIT-ANCHOR result; RE103's landing (ledger via the
-dispatcher's cost, the final corrected-audit line beside the record); then "ready for incarnation 5".
+Spinelli feed tiles, the 20-tile sorter session. 01:1x-01:5x: TX-RED pass 13 F64-F67 applied (the orchestrator's binding decisions): the existing f.103r truth stays the truth of
+record, CA-S2 is the corrected audit, PREREG-20 amended (RE103 a sensitivity check; the F50 rule amended); the oracle manifest
+redrawn from dev_tune lines (sha256 978322f6), luzerne108a-p1 split -> dev; TX-RE103 (spawned by the orchestrator, 1.99, its ledger
+row) stopped at its own gate (control-window mismatch, the lane's PREREG error): untested by this declaration, optional idea 57,
+not re-run (the orchestrator, 01:2x); WIT-ANCHOR ANCHORED (Gachard at dec_norm 2697-3195, margin 0.355); WIT-GROEN NOT SUPPORTED
+by its gate as worded (clean half ends 247 from the end) and consistent on the whole passage (ends 95 from the end, ratio 0.79):
+the f.103r end anchor is consistent with the clerk-independent copy; the stretch's support (310 align-uncertain positions) stays
+the open question. Owner's three figures (the orchestrator, 01:2x): record 0.150 / 0.296; CA-S2 0.150 / 0.296 (SER 0.134 / 0.288);
+sensitivity check not run. **CLOSED at 01:5x UTC: cost 20.64 by get_session at 01:57, context about 400k; "ready for incarnation 5"
+sent; the orchestrator creates incarnation 5 from its own session (hub-seed/TXE2-SUCCESSOR-PROMPT.md), deletes the hourly routine
+trig_017AmCfxWB82wt4gwHVVToVB and archives this session; incarnation 5 ledgers it.** Runnable for incarnation 5: ORACLE-LOCATION-1's
+final registration on L74 (then the box-proposal worker); DET-RELEASED behind the oracle boxes; the Groen-flags verifier pass on the
+closing stretch (a PREREG with a verifier, flags only through the build's flag column); RE103b optional; the segmentation instrument
+after the oracle run; external [SO-TX-EXP] rows as they land.
