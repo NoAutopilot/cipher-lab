@@ -39,3 +39,21 @@ witness (a post-hoc reading; the declared gate itself fails on its own wording, 
 not: nothing about the 310 align-uncertain positions inside the stretch, nothing about the cipher reads, nothing rebuilt; a verifier
 pass on the closing stretch's clerk-doubtful flags against Groen's text is a later PREREG (flags change only through the build's
 flag column by a verifier).
+
+## END-CIPHER: the cipher side of the f.103r end anchor (lane incarnation 5, PREREG-txeng2-21; run 02:1x UTC 10 Oct by date -u; TX-RED F69)
+The committed reading of f.103r L36-L37 (tx/f103r_rec.tsv, the folder's reading, never the truth): 108 tokens, 72 keyed by the published
+key's C rows (36 unkeyed tokens and marks skipped), decoded to a 72-letter string (end_cipher.py; result_end.json).
+
+| target | best window | ratio | null max / p95 (200 letter-shuffled copies, each at its own best window) | margin vs max | letters after the window to the target's end |
+|---|---|---|---|---|---|
+| Groen passage (560 letters) | 470-542 | 0.4167 | 0.4444 / 0.4167 | **-0.0278** | 18 |
+| dec_norm last 800 | 710-782 | 0.4722 | 0.4167 / 0.3889 | 0.0556 | 18 |
+
+Gate as declared (best window in Groen's last 200 letters AND margin >= 0.03): the window condition holds (18 letters from the end), the
+margin FAILS (the real ratio sits at the null's p95, under its max) -> **NOT ANCHORED by the declared gate**. Reading beside the gate, not
+a verdict: a 72-letter string with a third of its tokens dropped (unkeyed marks and signs break the letter sequence) has a ratio ceiling
+near the shuffled null's, so this method at this N cannot show the anchor either way -- untestable at this length by this method, not a
+negative on the anchor; against dec_norm's own tail the same string does land at the end (margin 0.056, 18 letters from the end), which is
+consistent with N5-VIVK's end anchor but is the clerk-side stream the truth was aligned to, so it is weaker evidence than Groen would be.
+A re-declaration with a longer committed span (L33-L37) or a method that keeps unkeyed tokens as gaps would be a new PREREG, not run here.
+Nothing rebuilt, nothing re-scored; openings 0.

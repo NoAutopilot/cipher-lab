@@ -1,0 +1,38 @@
+{
+ "lines": [
+  "L36",
+  "L37"
+ ],
+ "tokens": 108,
+ "keyed_tokens": 72,
+ "decoded_letters": 72,
+ "decoded_head": "rincceeottooiorseotdintencclecceseototei",
+ "groen_letters": 560,
+ "results": [
+  {
+   "target": "groen_passage",
+   "target_len": 560,
+   "ratio": 0.4167,
+   "offset": 470,
+   "end": 542,
+   "end_gap_to_target_end": 18,
+   "null_max": 0.4444,
+   "null_p95": 0.4167,
+   "margin_vs_max": -0.0278,
+   "null_n": 200
+  },
+  {
+   "target": "dec_norm_last_800",
+   "target_len": 800,
+   "ratio": 0.4722,
+   "offset": 710,
+   "end": 782,
+   "end_gap_to_target_end": 18,
+   "null_max": 0.4167,
+   "null_p95": 0.3889,
+   "margin_vs_max": 0.0556,
+   "null_n": 200
+  }
+ ],
+ "verdict": "NOT ANCHORED"
+}
