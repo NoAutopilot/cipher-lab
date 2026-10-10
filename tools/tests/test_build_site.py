@@ -12,10 +12,15 @@ Builds the whole private preview site into a temp dir from the repository's own 
   - an --out or --preview under docs/ is refused;
   - (SITE-ITEMS-1) every item page carries the four sections in the display's order (What it says, The reading, Who where when,
     How we know) inside an <article data-interest=...>; a "Context" slot appears only where data-interest is 2 or 3; the
-    English-pending marker count and the people-index size are reported; every people/ page is reachable from people/index.html.
-Must catch: a broken relative link after a path change; a page missing the shell. Must NOT block: external https links, data: URIs,
+    English-pending marker count and the people-index size are reported; every people/ page is reachable from people/index.html;
+  - (SITE-ITEMS-3) a page never shows another item's signs: every token table's data-item equals the page's own file name, no two
+    item pages in one folder show the same table lines, and four known cases hold (Manteuffel frames 0390/0485/0214 have no rows in
+    the shared table, so no table; Baluze 170 f.228 and f.229 each show their own per-folio table).
+Must catch: a broken relative link after a path change; a page missing the shell; a shared token table shown whole on a sibling's
+page. Must NOT block: external https links, data: URIs,
 mailto, and in-page anchors. Run: python3 tools/tests/test_build_site.py
 """
+import html
 import os
 import re
 import subprocess
@@ -33,6 +38,39 @@ IDS = re.compile(r'\bid="([^"]+)"')
 def fail(msg):
     print("FAIL:", msg)
     sys.exit(1)
+
+
+TOKENS = re.compile(r'<div class="tokens" data-item="([^"]*)" data-folder="([^"]*)" data-file="([^"]*)" data-lines="([^"]*)"')
+H1 = re.compile(r"<h1>(.*?)</h1>", re.S)
+KNOWN = [("frame 0390", None), ("frame 0485", None), ("frame 0214", None),
+         ("Baluze 170 f.228r-v", "reading_tokens_b170f228.tsv"), ("Baluze 170 f.229r-v", "reading_tokens_b170f229.tsv")]
+
+
+def check_tokens(out, items_dir="items"):
+    """SITE-ITEMS-3: token tables belong to the page they sit on. Returns the number of tables checked."""
+    seen, n, titles = {}, 0, {}
+    d = os.path.join(out, items_dir)
+    for f in sorted(os.listdir(d)):
+        txt = open(os.path.join(d, f), encoding="utf-8").read()
+        h = H1.search(txt)
+        titles[f] = html.unescape(h.group(1)) if h else ""
+        for item, folder, tf, lines in TOKENS.findall(txt):
+            n += 1
+            if item != f[:-5]:
+                fail(f"items/{f}: token table belongs to {item!r}, not this page")
+            key = (folder, tf, lines)
+            if lines and key in seen:
+                fail(f"items/{f}: shows the same table lines as items/{seen[key]} ({tf}: {lines[:60]})")
+            seen[key] = f
+        titles[f] = (titles[f], [m[2] for m in TOKENS.findall(txt)])
+    for sub, want in KNOWN:
+        hit = [v for k, v in titles.items() if sub in v[0]]
+        if len(hit) != 1:
+            fail(f"known case {sub!r}: {len(hit)} item pages carry it in their title")
+        got = hit[0][1]
+        if (want is None and got) or (want is not None and got != [want]):
+            fail(f"known case {sub!r}: token table {got}, expected {want or 'none'}")
+    return n
 
 
 def main():
@@ -131,6 +169,7 @@ def main():
               f"docs/ refused; {len(pending)} portrait files pending (placeholders)")
         print(f"ok: item pages carry the four sections; English pending on {pend_en} item pages; people index {len(people)} pages; "
               "interest tiers " + ", ".join(f"{k}: {v}" for k, v in sorted(tiers.items())))
+        print(f"ok: {check_tokens(out)} token tables each on their own item page; known cases {len(KNOWN)}/{len(KNOWN)}")
 
 
 if __name__ == "__main__":

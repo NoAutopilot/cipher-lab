@@ -125,6 +125,14 @@ def load():
     results, targets = st.get("results", []), st.get("targets", [])
     ns = C.board_rules()
     items = C.build_items(results, ns)
+    per = {}
+    for it in items:
+        per[it["folder"]] = per.get(it["folder"], 0) + 1
+    _cache["per_folder"] = per
+    rd = {}
+    for it in items:
+        rd[it.get("reading")] = rd.get(it.get("reading"), 0) + 1
+    _cache["per_reading"] = rd
     for it in items:
         if not it["lang"]:
             it["lang"] = LANG_FALLBACK.get(it["folder"]) or spec_language(it["folder"])
@@ -370,7 +378,7 @@ def write_site(out, date):
 ENGLISH_TSV = os.path.join(HERE, "data", "english_lines.tsv")  # written by SITE-ITEMS-2: item, line id, original, english, grades, date
 PENDING_EN = "English line: pending (SITE-ITEMS-2)"
 ECKERT_READINGS = ("reading.md", "reading-no2.md", "reading-no9.md")
-BLOCK = re.compile(r"^\*\*([A-Z0-9][A-Z0-9-]*) \| Page [^\n]*\*\*\n\n(.+?)\n\n(Code-word tokens:[^\n]*)", re.M | re.S)
+BLOCK = re.compile(r"^\*\*([A-Z0-9][A-Z0-9-]*) \| [^\n]*\*\*\n\n(.+?)\n\n(Code-word tokens:[^\n]*)", re.M | re.S)
 TITLES = {"genl", "gen", "general", "maj", "major", "col", "colonel", "capt", "captain", "lt", "lieut", "brig", "adm", "admiral", "mr",
           "dr", "supt", "sec", "secy", "hon", "genl", "commander", "count", "duke", "prince", "king", "queen", "milord", "lord", "monsieur", "madame"}
 NOT_NAMES = {"january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november",
@@ -448,27 +456,42 @@ def ids_of(title):
     t = title.replace(" ", "")
     ids = set(re.findall(r"\d{2,}", title))
     ids |= {x.lower().replace(".", "") for x in re.findall(r"\b[fc]\.?\d+[rv]?", t)}
+    ids |= {re.sub(r"[.\s]", "", x).lower() for x in re.findall(r"\b[fc]\.\s?\d+[rv]?", title)}  # "fr.2980 f.30r" keeps f30r
     return ids
 
 
 def tokens_file(it):
-    """The folder's token table for this item: the only one, or the one whose name carries the item's number or folio."""
+    """The folder's token table for this item: the one whose name carries the item's own number or folio (the title's ids first, then
+    the document id's, a unique best match only), else the reading's sibling table, else the folder's only table. A folder with several
+    items and one shared table hands that table on; token_rows then keeps only the rows whose line ids carry this item's frame or folio
+    (SITE-ITEMS-3: a page never shows another item's signs)."""
     d = os.path.join(ROOT, "ciphers", it["folder"])
     fs = sorted(f for f in os.listdir(d) if re.match(r"reading.*tokens.*\.tsv$", f)) if os.path.isdir(d) else []
     if not fs:
         return ""
-    ids = ids_of(it["title"] + " " + (it["row"].get("document_id") or ""))
-    hit = [f for f in fs if any(re.search(rf"(?<![0-9a-z]){re.escape(i)}(?![0-9])", f.lower()) for i in ids)]
-    if len(hit) == 1:
-        return hit[0]
-    if len(hit) > 1:  # prefer the fullest version of the same piece
-        full = [f for f in hit if "full" in f] or hit
-        return full[0]
     rd = os.path.basename(it.get("reading") or "")
-    sib = rd.rsplit(".", 1)[0] + "_tokens.tsv" if rd else ""
-    if sib in fs:
-        return sib
-    return fs[0] if len(fs) == 1 or "reading_tokens.tsv" not in fs else "reading_tokens.tsv"
+    stem = rd.rsplit(".", 1)[0] if rd else ""
+    sibs = [x for x in (stem + "_full_tokens.tsv", stem + "_tokens.tsv", stem.replace("reading", "reading_tokens", 1) + ".tsv") if stem and x in fs]
+    if sibs and _cache.get("per_reading", {}).get(it.get("reading"), 1) == 1:  # the item's own reading, used by no other item
+        return sibs[0]
+    for hay in (it["title"].split(":")[0], it["title"] + " " + (it["row"].get("document_id") or "")):
+        ids = {i for i in ids_of(hay) if not re.fullmatch(r"1[0-9]{3}", i)}
+        score = {f: sum(1 for i in ids if re.search(rf"(?<![0-9]){re.escape(i)}(?![0-9])", f.lower())) for f in fs}
+        best = max(score.values())
+        hit = [f for f in fs if score[f] == best] if best else []
+        if len(hit) > 1:  # prefer the fullest version of the same piece
+            hit = [f for f in hit if "full" in f] or hit
+        if len(hit) == 1 or (hit and all("full" in f for f in hit)):
+            return hit[0]
+    if sibs:  # a shared reading's table: token_rows narrows it to this item's frame or folio, or shows nothing
+        return sibs[0]
+    if len(fs) == 1:
+        return fs[0]
+    return "reading_tokens.tsv" if "reading_tokens.tsv" in fs and folder_items(it["folder"]) == 1 else ""
+
+
+def folder_items(folder):
+    return _cache.get("per_folder", {}).get(folder, 1)
 
 
 def token_rows(it, path):
@@ -490,9 +513,21 @@ def token_rows(it, path):
         if li is not None and h[li] in ("folio", "page") and "line" in h and len(r) > h.index("line"):
             ln = r[li] + "_" + r[h.index("line")]
         out.append((ln, r[si], r[vi], r[gi]))
+    if folder_items(it["folder"]) == 1 or _cache.get("per_reading", {}).get(it.get("reading"), 1) == 1:
+        return out  # the item's own table: nothing to narrow (a date's "21" once cut a table to the rows of line 21)
     ids = {i for i in ids_of(it["title"]) if not re.fullmatch(r"1[0-9]{3}", i)}  # years are shared by siblings
-    narrowed = [x for x in out if any(i in x[0].lower().replace(".", "") for i in ids)]
-    return narrowed or out
+    ids = {i for i in ids if len(i) >= 3}  # a day of the month ("10 Oct") is not a line number (L10)
+    keys = [x[0].lower().replace(".", "") for x in out]
+    has = lambda i, k: re.search(rf"(?<![0-9]){re.escape(i)}(?![0-9])", k)
+    disc = {i for i in ids if not all(has(i, k) for k in keys)}  # an id every row carries (a bundle number) tells nothing
+    narrowed = [x for x, k in zip(out, keys) if any(has(i, k) for i in disc)]
+    if narrowed:
+        return narrowed
+    # a table shared by several items whose rows carry a frame or folio this item does not: none of them are this item's signs
+    if folder_items(it["folder"]) > 1 and any(re.search(r"(?<![0-9])\d{3,4}[rv]?(?![0-9])|f\d+", k) for k in keys) \
+            and os.path.basename(path) == "reading_tokens.tsv":
+        return []
+    return out
 
 
 def english_lines():
@@ -579,6 +614,8 @@ def reading_section(it, sc, dsp, pfx):
         body = E(text)
         body = re.sub(r"\[([^\]]+)\]", r'<mark class="cw" title="code word, decoded from the cipher book">\1</mark>', body)
         body = re.sub(r"\{(\w+): ([^}]+)\}", r'<span class="small">[\1: \2]</span>', body)
+        out.append(f'<div class="tokens" data-item="{E(it["file"][:-5])}" data-folder="eckert-1864" data-file="{E(rf)}" '
+                   f'data-lines="{E(entry)}"></div>')
         out.append(f'<p class="k layer">As read, entry {E(entry)} (English; <mark class="cw">highlighted</mark> words are code words '
                    f'decoded from the period cipher book, plain words are what the clerk wrote)</p><p class="orig">{body}</p>'
                    f'<p class="small">{E(counts)} {E(C.GRADE_KEY)} Regenerated by <a href="{C.REPO_BLOB}ciphers/eckert-1864/{E(rf)}">'
@@ -588,13 +625,17 @@ def reading_section(it, sc, dsp, pfx):
         rows = token_rows(it, os.path.join(ROOT, "ciphers", it["folder"], tf)) if tf else []
         if rows:
             lines = list(dict.fromkeys(r[0] for r in rows))
-            shown = lines[:8]
+            first = [l_ for l_ in lines if any(lid and (lid == l_ or l_.endswith(lid) or lid.startswith(l_ + "-")) for lid, _o, _e in en)]
+            shown = (first + [l_ for l_ in lines if l_ not in first])[:8]  # the English line's own lines lead
+            out.append(f'<div class="tokens" data-item="{E(it["file"][:-5])}" data-folder="{E(it["folder"])}" data-file="{E(tf)}" '
+                       f'data-lines="{E(",".join(shown))}">')
             out.append(f'<p class="k layer">{E(it["lang"] or "Original language")} as read, sign by sign, with grades '
                        f'({len(shown)} of {len(lines)} lines; the whole table is <a href="{C.REPO_BLOB}ciphers/{E(it["folder"])}/{E(tf)}">'
                        f'{E(tf)}</a>)</p>')
             for ln in shown:
                 toks = [(s, "(null)" if v.upper() == "NULL" else ("" if v == "?" else v), g) for l_, s, v, g in rows if l_ == ln][:80]
                 out.append(f'<div class="rline"><span class="small">line {E(ln)}</span>{C.token_strip(toks)}</div>')
+            out.append("</div>")
         else:
             link = (f' The reading is in the repository: {C.link_or_text(it["reading"])}.' if it["reading"] else "")
             out.append(f'<p class="small" data-pending="original">Graded original: no per-sign table on file for this item.{link}</p>')
