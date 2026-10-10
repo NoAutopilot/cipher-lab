@@ -6726,6 +6726,25 @@ No counted result (nothing at N3+/D2+); one NEAR row added.
   checked: dupuy452, august-van-saksen, wvo-hessen-1564/WVO 1068, fr3669-bethune all lack an unread sibling for the rebuilt key).
 Left, runnable: the Pusterla and Duke next steps above (~$8-12 together); Marcolino f.143 after Battioni.
 
+## LANE LEDGER-12 handoff (session_011R8J939oZMVV2ZyZZ2LS3W, account 1, blast refill after LEDGER-10/-11), 10 October 2026 (07:40-09:2x UTC by date -u; closed: backlog spent after three waves, lane about 33.3 of 60; five_hour allowed, seven_day allowed_warning throughout)
+
+Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261010-0740; jobs .claude/briefs/runs/2026-10-10-acct1-lane-ledger12-jobs.md (waves 1-3). Continued LEDGER-10 next 2-5 and
+LEDGER-11 next 1 and 4. Twelve workers 29.71 + orchestrator ~3.6 by get_session.
+Result (eckert-1864): no entry at N3 D2+; nothing for a second audit. First audits: N1 -- N2-KA KB KC (all three "not located" by the reader are in print: OR I/34-3 p.409,
+I/33 p.815, Grant Papers 13), E382 E388 E390 E391, N2-IE IF II IJ, N2-JA..JF JJ KD KE, E402 (Grant Papers 11), E404, E420, E430; N3 D1 -- E403 (2 Nov 1864, soldier-vote proxies; key words isolated).
+- Readers MS18-R9/R10/R11: all 26 remaining best_book 1 rows of ms18/clean-ms18.tsv read; 21 step-0 hits (body in holder transcription, not filed), E402 E403 E404 E420 E430 filed.
+- S0-57XX: 9 missing FM page JSONs fetched; step-0 HIT E302 E305 E306 E309 E312 E318 E319 E320 (miss E307). All already second-audited at N3: third-audit proposal for the VERIFY lane (ROOM 08:22, 08:52), no grade changed.
+- HDR-NO9: 9845/0 reads No. 9 (one time word); 9862/1 header 6 P.M. fits no book in hand. FIX-FM22/23/24 applied every first audit's s.5; decode x3 --check 0. KEY-CANBY: E390 (leaf Lehigh, print Canby) is a fifth witness.
+- Process flags: E420 had been filed with E388's body (reader filing script read the wrong extract; FV-MS18s re-filed it and fixed the script) -- verifiers diff the print against the derived reading block. Readers twice wrote "not located" for print their own check had found (N2-KA/KB; E402 in Grant Papers): one IA whole-collection phrase query before "not located".
+- Yield: under the step-0 ruling and print checks, 0 counted results from 26 first audits this incarnation: the mssEC 18 No. 1/No. 2 rows are largely public in the holder transcription or in OR/Grant Papers.
+**Next** (costs this lane: Sonnet reader ~0.1-0.2/row; Opus first audit ~0.4-0.6/entry on a step-0 hit or print, ~2 otherwise; Sonnet FIX ~0.6-1.6):
+1. VERIFY lane / orchestrator: rule on the STEP0-RULE third-audit proposals (39 from LEDGER-10) plus the 8 FM hits above; status.json unchanged for them.
+2. E403: OR ser. II vol. 7 / ser. III vol. 4 and the 2 Nov 1864 press for the soldier-vote proxy telegram (~1, Sonnet); stays N3 D1 otherwise -- low value.
+3. N2-JB continuation on 9758 (noted, unfiled): one reader step if the VERIFY lane wants it (~0.3).
+4. No unread best_book 1/2/9 rows remain in clean-ms18.tsv. Blocked (unchanged, no-key-material): 1865 rows in Nos. 3/4/5, "No 3"/"No 13" rows, 9862/1, objects 8472/6254/9660
+   (Cipher No. 4 Friedman copy on LOCAL-QUEUE). A further LEDGER incarnation has no runnable eckert-1864 reading work beyond items 2-3; the next object in LEDGER-SCOUT-2026-10-07.md
+   (5952, Fort Monroe 1864-65) needs its controlled key test first.
+
 ## LANE LEDGER handoff (session_01JzEqWLccccneXKJs7AmR6N, account 1, incarnation 10 of the blast refill), 10 October 2026 (03:39-06:3x UTC by date -u; closed: last planned wave done, lane about 43 of 60; seven_day allowed_warning until ~05:1x, five_hour allowed)
 
 Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261010-0339; jobs .claude/briefs/runs/2026-10-10-acct1-lane-ledger10-jobs.md (waves 1-4). Continued both inc. 9 and
