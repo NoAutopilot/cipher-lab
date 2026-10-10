@@ -108,3 +108,20 @@ LANE LEDGER-15)"; depth_check; gaps_check; file_shrink_guard on every touched fi
 
 (13:5x UTC by date -u: FIX-L15 HELD, not spawned -- AUD2-LEDGER15-1..4 were already claimed by the owner-account orchestrator, covering every N3 entry of
 wave 1; FIX-L15 runs after their done lines and then also applies their s.5, as FIX-AUD2-L14 did.)
+
+---
+
+# Wave 3 (written 10 Oct 2026 14:2x UTC by date -u; lane workers 43.08, orchestrator 4.65; last wave)
+CLEAR-SWEEP 2.04 (fortmonroe/clear_sweep.tsv: CLEAR E542 E548 E550 E562 E465, PRINT E543 E571, NEAR E518 E558 E442, NONE 30; control E557 hit only after
+rewording, so a NONE is a search result). AUD2-LEDGER15-1..4 (owner account) all done: E555 E541 E576 E575 E525 E549 E528 E500 E517 N3 D3, E568 N3 D3 (raised),
+E505 msg 2 N3 D2, E539 N3 -> N2.
+
+## FIX-L15 (Sonnet 5.5; cap $3, box 80 min, no network) -- now released
+As written in Wave 3a above, plus s.5 / FIX items of AUDIT 2 (AUD2-LEDGER15-1), (-2), (-3), (-4) (e.g. E575 "sacy" -> "say", E505 msg 2 verion/vernon =
+[Point], wreate = [Telegraph], honor = on her). The "do not touch an entry under second audit" clause no longer applies: all four are done.
+
+## FV-L15m (Opus 5.5, first verifier, N1 confirm; cap $3.5, box 70 min)
+Exactly "## FV-L15n" above (FV-MS18p method: the holder clear copy's own transcription and page image, or the printed page / snippet, word-for-word diff against
+the derived reading block, leaf eye-check, step 0 information only) on CLEAR-SWEEP's hits: E542 (7722 p.64), E548 (7741 p.83), E550 (8561 p.83), E562 (7787
+p.129), E465 (4788 p.347), E543 (OR I/46 pt 2 p.259), E571 (Grant Papers 14, find the page). N1 where it holds (substance-only -> N2), status.json/SO per rule 10
+only if a row exists. A hit that does not hold goes back to the NONE list (name it). AUDIT.md "## AUDIT (FV-L15m)". hdl under the token (<= 20 requests).
