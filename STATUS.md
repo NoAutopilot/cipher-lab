@@ -6801,6 +6801,28 @@ No counted result (nothing at N3+/D2+); one NEAR row added.
   checked: dupuy452, august-van-saksen, wvo-hessen-1564/WVO 1068, fr3669-bethune all lack an unread sibling for the rebuilt key).
 Left, runnable: the Pusterla and Duke next steps above (~$8-12 together); Marcolino f.143 after Battioni.
 
+## LANE LEDGER-15 handoff (session_01RQiEtm2KntpSGrqttBnXU1, account 1, blast refill after LEDGER-13/-14), 10 October 2026 (12:40-14:5x UTC by date -u; closed: last planned wave done, lane about 54.5 of 60; five_hour allowed, seven_day allowed_warning throughout)
+
+Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261010-1239; jobs .claude/briefs/runs/2026-10-10-acct1-lane-ledger15-jobs.md (waves 1-3). Continued LEDGER-13 next 1-2.
+Scope: eckert-1864 Fort Monroe filings (mssEC 25). 10 workers 48.74 + orchestrator ~5.8 by get_session; second audits AUD2-LEDGER15-1..4 (24.83) ran on the owner-account ledger.
+- **First audits (FV-L15a-d, FV-L15n, FV-L15m), 35 entries:** N1 22 -- holder clear copies at other pointers (Washington clear books): E513 E529 E536 E542 E545 E548 E550
+  E552 E557 E560 E562 E572 E465 (and E573 also ORN); print: E537 E544 E565 E567 E571 (Grant Papers 13/14, OR I/46 pt 2), E543 (OR I/46 pt 2 p.259), E551 (ORN I/12),
+  E505 msg 1 (OR I/46 pt 2 p.21), E171 (re-graded from N3: OR I/43 pt 1 p.860; the earlier N3 rested on the mislabelled IA id). N2 2 -- E515 (Meigs order OR I/46 pt 2 p.51),
+  E539 (AUD2-4: substance in holder clear relay 8538). **N3 after two audits, 11:** E555 E541 E576 E575 E568 (D3, raised by O'Brien 1910 p.218) E525 E549 E528 E500 E517 (D3),
+  E505 msg 2 (D2). E541 E575 E576 E555 are "weak N3" (sibling/relay/summary in print), the same shape AUD2-4 moved E539 to N2 on.
+- **CLEAR-SWEEP** (Sonnet, 2.04; fortmonroe/clear_sweep.tsv): 40 filings swept for holder clear copies and print -- CLEAR 5, PRINT 2 (all seven held at FV-L15m), NEAR 3, NONE 30.
+  Controls: E552 hit; E557 hit only after rewording, so NONE is a search result. Lesson: the holder clear books settle most FM entries for ~0.05/entry; Opus audits ~1.3/entry
+  should go only to sweep NONE rows. Grant Papers vol. 14 IS on IA (papersofulyssess0014gran); vol. 13 is not.
+- **Row 5855/1** (R-5855): decoded under No. 1, clause plain -> not filed. **FIX-L15** applied every first and second audit's s.5 (29 entries), decode x3 --check 0.
+**Next** (costs this lane: Sonnet sweep ~0.05/entry; Opus first audit 1.2-2.2/entry, FV-L15a ran 13.17 on six; N1 confirm ~0.5/entry; Sonnet FIX ~2):
+1. First verifiers (Opus, 5-6 per session, cap 8, stop at 80%) on the 30 sweep NONE rows, by H count: 1865 E509 E511 E514 E526 E527 E546 E553 E554 E564 E566 E569 E574 E577 E506 E508 E521;
+   1864 E441 E472 E447 E474 E471 E470 E468 E443 E473 E445 E469 E466 E446 E448. Each re-runs the holder search with reworded queries first (E557 lesson).
+2. NEAR rows E518 E558 E442 (related message same/next day): fold into item 1's batches.
+3. FIX (Sonnet, ~1.5, no network): FV-L15m s.5 (E550 Annapolis, E543 necessity, E571 pilots, E465 10 15 AM) and FIX-L15's open lead (the "Maj. Eckert, Washington" header rows E166 E215 E250 E569 E562 E542 E546 E548 E550).
+4. VERIFY lane / owner orchestrator: E541 E575 E576 E555 "weak N3" vs AUD2-4's E539 N2 line -- one ruling for the shape. Lead: leaf 5929 opening entry (12 Mar) clear copy 7818 (FV-L15m).
+5. Blocked (unchanged): 8472, 6254, 9660 (no book in hand; Cipher No. 4 Friedman copy on LOCAL-QUEUE); STEP0-KEYCTL ruling still with the VERIFY lane.
+Light-guardrail share (known-text work): the 22 N1 finds came inside ordinary first audits; the CLEAR-SWEEP/N1-confirm work aimed at them was about 5.7 of 48.74 (12%).
+
 ## LANE LEDGER-13 handoff (session_0144M5B5m1zmnBKpUbs32YxK, account 1, second blast lane beside LEDGER-12/-14), 10 October 2026 (08:40-11:3x UTC by date -u; closed: Fort Monroe scope spent after four waves, lane about 52 of 60; five_hour allowed, seven_day allowed_warning throughout)
 
 Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261010-0840; jobs .claude/briefs/runs/2026-10-10-acct1-lane-ledger13-jobs.md (waves 1-4).
