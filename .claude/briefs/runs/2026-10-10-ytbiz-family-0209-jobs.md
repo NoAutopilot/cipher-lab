@@ -124,3 +124,19 @@ Give depth_pct and D-level with the check used. (4) Write AUDIT.md "## AUDIT 6 (
 `ours`, depth, one safe and one unsafe sentence, and carry any change into status.json's row and the SO-OLDEN-2442-L457 SECOND-OPINIONS-QUEUE
 row (rule 10 propagation). If N3+ and D2+, add the WORK-QUEUE row AUD2-FAMILYA2N-1 for a second audit on account 3 (lane-common-blast
 "Results"). Rule 10 wording only.
+
+## Wave 4 (03:4x UTC 10 Oct)
+Wave 3: D1411-P6b p.6 independent N=60, T21r 0.500 vs shuffled p99 0.517, no PASS (S 0 M 133); V-OLD-O5 AUDIT 6 N3 carried, D1 kept
+(depth_pct 18.0). Disk only this wave.
+
+### D1411-POOL (Opus, cap 2, box 50 min, disk only): decode-1411-hhsta-vienna-1600 pooled independent-numeral test, p.4 + p.5 + p.6
+Read NOTES "## D1411-P6b" and the Remaining gaps/Escalation tail only. The three pages' independent (copy-masked) numerals each sit at or
+under their order-shuffle p99 alone (p.4 112, p.5 independent, p.6 60): no single page has power. Write PREREG-D1411POOL.md in its own commit
+(pushed and checked on origin/main BEFORE any score): pool exactly the already-committed independent sets of p.4, p.5 and p.6 under their
+committed copy masks (no re-masking, no new reads, no table changes), score T21r (primary) and h12/h22 (reported, not gated) with the SAME
+order-shuffle control the per-page scorers used (it can differ from the target: shuffling order breaks table-to-position fit), gate = target
+above shuffled p99 AND at or above the gloss coverage bar the AM-D1411V standard names. State plainly that the three pages were each seen
+before pooling, so the pool is a confirmatory power test of a fixed table, not a search. A PASS -> one line asking the lane for a verifier,
+no S grades written by you; a FAIL -> log it in HYPOTHESES.md as the third independent-material miss for T21r and say whether rule 3's
+third-attempt clause now applies to "T21r on independent numerals" (p.7/p.8 reads would then need a different instrument, not more pages).
+NOTES "## D1411-POOL", Remaining gaps/Escalation/Verdict, gaps_check.py. Report what was found and where it was not found.
