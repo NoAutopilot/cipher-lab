@@ -18747,3 +18747,179 @@ E571's page in Grant Papers vol. 14 is not resolved (Google Books snippets carry
 without a loan) -- the class does not depend on it; a person with the volume can add it.
 Requests: hdl.huntington.org 17 (9 dmGetItemInfo, 7 IIIF leaves, 1 dropped connection on 5768 retried once after 25 s -> 200; under one take released in
 ROOM); www.googleapis.com 3; archive.org 1 (item metadata, made while another worker's archive.org take was open -- logged here, not repeated).
+
+## AUDIT (FV-L16c)
+
+Verifier FV-L16c (account 1, for LANE LEDGER-16), 10 Oct 2026, 14:47-15:1x UTC by `date -u`; a separate session from the readers FM65-E and FM65-F,
+not protecting their conclusions. Scope: **E558, E564** (NOTES "## FM65-E"), **E566, E569, E574, E577** ("## FM65-F"); ciphertext.txt, War
+Department Cipher No. 1, Fort Monroe ledger mssEC 25 = Huntington object 5952, 22 Feb-18 Mar 1865. Nothing decoded beyond key look-ups in key.md.
+Key source for all six: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Intake gate: `eckert-1864: partial (line 3) --
+edition/page or full-text-search citation found within 6 lines`. **Step 0 is a non-test on mssEC 25** (Wave 2 RULING, STEP0-KEYCTL): nothing below is
+classed from step 0; the two N1s rest on print located this session.
+- **Prior work** (`tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<pointer>;date=<ISO>;sender=..;recipient=..'
+  --step-type audit`; the six are not items.tsv rows): all six exit 4, "holds: specific 3 (LEAD 3); generic 2 (UNCHECKED-NET 2)" (5924: specific 4).
+  The three LEADs are target-level live claims (FM-F1 09:29, FIX-L14 11:29, CLEAR-SWEEP 13:25) that do not cover these six: CLEAR. 5924's fourth,
+  an edition hit in OR I/33 (Kelley, 1864, a generic "Fort Monroe" window), is another letter: CLEAR. UNCHECKED-NET is the generic 1864 OR list; the
+  1865 volumes were read this session (s.2). The tool's write to prior-work.tsv was reverted (not this job's file).
+- Scripts (all `fortmonroe/`): `fv_l16c_hdl.py` (+ `fv_l16c_hdl.out`, `fv_l16c_hdl2.out`: CONTENTdm full text all pointers, control 9678 first, a
+  dmGetItemInfo date-walk of the two Washington clear books, six page images at 2400 px to scratch), `fv_l16c_print.py` (+ `.out`: letters-only phrase
+  grep of 191 cached IA volumes incl. OR I/46 pts 1-3, I/47 pt 2, ORN I/11 and I/12 (`officialrecords10librgoog`), Plum II, O'Brien 1910, Bates,
+  Gordon 1882, Butler V; KWIC for rare names), `fv_l16c_beapi.py` (+ `fv_l16c_beapi.out`, `fv_l16c_beapi2.out`: IA be-api, Grant Papers 14 by identifier
+  and whole collection), `fv_l16c_gb.py` (+ `fv_l16c_gb.out` Grant Papers 13/14 mode, `fv_l16c_g3.out` G3 mode; control E531 `"six vessels" Oriental`
+  hit vol. 13 mnRjmhe3QLoC).
+
+### 1. Duplicates, image
+- **Duplicate diff:** pointers 5912, 5918, 5919, 5924, 5931, 5933 and the subjects (office at Yorktown, pilots for monitors, Sumner and the expedition,
+  moving the office, the River Queen, Gordon not relieved by Hartsuff) against every `###` header in ciphertext*.txt: siblings only, no duplicate --
+  E560 (5915, 24 Feb, the Chief Quartermaster's office on a telegraph office; holder 8605 is its clear neighbour) for E558/E569; E571 (5929, 13 Mar,
+  Glisson's gunboats) for E564; E575/E576 (5931/1, Gordon's gunboats, 15 Mar) for E577. Row 5918/2 (Welles to Glisson, 4 Mar, monitors for the James)
+  is the row after E564 on the same leaf and is printed (ORN I/12 pp.59-60), a different telegram.
+- **Image eye check this session, every graded line** (2400 px page images, region crops at 0.6 scale; the ruled column pages give `iiif_lines.py`
+  too few bands, as FV-FM10a and FV-L15c found): 5912 row 1 (E558: header "Ft Monroe Feb. 22/65", "Maj. Eckert, Washington" + 4 lines + "Resp'y Geo. D.
+  Sheldon"), 5918 row 1 (E564: header "Ft Monroe Mar 4/65" + 4 lines + "sent 10.10 PM Dealy"), 5919 row 2 (E566: header "Ft Monroe Mar. 5-1865" + 4
+  lines + "sent 12 M. Dealy"), 5924 row 0 (E569: header "Ft Monroe Mar. 6/65", eight ruled columns, 9 lines), 5931 row 0 (E574: header "1.30 P.M.
+  Washington, Mar. 15/65", seven ruled columns), 5933 row 2 (E577: header "Hd qrs A. J. Mar. 18/65", six ruled columns, the "Emerick" signature
+  written up the right margin). **The transcription matches the image word for word on all six** (E558 "Mentor polking requires", "hastings",
+  "vinton quadrant", "Opera tours", "haven", "Considered imperative Resp'y"; E564 "entirely out of Pilots", "peach pilots wedge", "Bergen windsor pilgrim
+  James"; E566 "Turn her Berry unity", "whip zebra", "the rape Am I right youth", "first frog mounted rifles Leave soon so get quick answer"; E569
+  "forth accommodation of any polking off / I sir", "toby orbit", "Corn fed in Shall youth as below"; E574 "Brutus stomach here Harriet for black",
+  "honor arrival", "in person stop", "windsor queen stop"; E577 "torch order abbot to", "polka", "ripley alba", "malta yoke mereden good Day").
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; fresh queries, none of CLEAR-SWEEP's; hdl token
+15:0x UTC, 40 requests, control 9678 returned 9678): "anxious inquiry" 2 (5912 own; 4419 = 1864), "supply these operators" 1 (5923, another
+Fort Monroe row), "Yorktown at once" 21 (none 1865), "compelled to furnish" 2 (5918 own; 3702 other), "entirely out" 51 (none this message), "Navy pilots
+monitors" 1 (own), "instigation" 3 (5924 own; 8546, 4512 other), "precedent established" 1 (own), "accommodation commanding officer" 0, "Secretary War
+left here" 5 (7802 = 5 Mar Grant traffic, others other years), "deliver anything" 2 (5931 own; 12745 other), "board the boat" 19 (5931 own; others other
+dates), "joined expedition" 6 (none 1865 Sumner), "matters pending" 1 (5933 own). **Date-walk of the Washington clear books** (dmGetItemInfo, the full
+page transcription): book of pointers 7658 + page, 7779-7783 (pp.121-125, 21-23 Feb) and 7805-7808 (pp.147-150, 6-7 Mar); book of pointers 8478 + page,
+8599-8601 (pp.121-123, 22-23 Feb) and 8617-8621 (pp.139-143, 3-4 Mar). Both books on these pages hold Grant's City Point traffic and messages for Grant,
+Halleck and the Secretary of War, not the Fort Monroe office's own requests to Eckert: **no clear copy of E558 or E569 on the walked pages**; book 8478 for
+5-7 Mar (about 8622-8626) was not walked (take limit). **No holder clear copy located for any of the six.**
+
+**Print:**
+- **E566 is printed: OR ser. I vol. 46 pt 2 p.847** (IA `warofrebellion014602rootrich`, page from the running heads "UNION. 847" / "848 N. AND SE.
+  VA."): "FORT MONROE, VA., March 5, 1865--12 m. Brig. Gen. J. W. TURNER, Chief of Staff: I was ordered to join my regiment. I have joined the
+  expedition. Am I right? E. V. SUMNER, First New York Mounted Rifles." Also found by IA be-api whole collection (`"I have joined the expedition"`:
+  `warofrebellion462unit`, `cu31924077729014`). The ledger adds "Colonel" (paradise) before "First" and the operator's line "Leave soon so get quick
+  answer", which the print omits. Context, same volume pp.816-817: Kautz to Turner, 3 Mar, "The First Mounted Rifles, if Colonel Sumner could go with it,
+  would answer the lieutenant-general's purpose ... Colonel Sumner can be communicated with at the National Hotel, Norfolk"; OR I/46 pt 1, Col. S. H.
+  Roberts's report of 9 Mar on the expedition against Fredericksburg: "I left Fort Monroe at 5 p. m. March 5 ... a detachment of 300 men from the
+  First New York Mounted Rifles, under Col. E. V. Sumner".
+- **E577 is printed: George H. Gordon, *A War Diary of Events in the War of the Great Rebellion, 1863-1865* (Boston, 1882) p.384** (IA
+  `wardiaryevents00gordrich`, page from the running heads "384 A WAR DIARY" / "DISTRICT OF EASTERN VIRGINIA. 385"; second IA copy `cu31924032781175`
+  by be-api): "Hard upon this visit came the official promulgation of the Secretary's order, from General Ord, 'by telegraph from Headquarters, Army of
+  the Potomac,' dated March 18, 1865: -- 'The Secretary of War, when informed of the order about to issue, owing to matters still pending, prefers that
+  you continue in command of the District of Eastern Virginia. You will therefore not be relieved by General Hartsuff.'" Gordon pp.382-384 tells the
+  context: told on 18 March he was to go to the Army of the James, he met Stanton at Norfolk on the 19th, just back from the front, who said "I fixed
+  that matter with Generals Grant and Ord last night ... Hartsuff [who was to take my place] would have matters all mixed up". Every word of the
+  print is in the ledger in order. Not in OR I/46 pt 3 by phrase grep (`"matters still pending"` 0).
+- E564: not printed. Context: ORN I/12 pp.59-60 (page heads 59 and 61 bracket both; Welles to Glisson, 3 Mar: the Montauk and Monadnock "send them up James River immediately"; Glisson to Welles, Fort Monroe 5 Mar 10 a.m.: "The monitors are expected every moment from Cape Fear, and I shall send them up the river
+  immediately"; 2.30 p.m.: "The monitor Sangamon is now in and is on her way up the James River"); OR I/46 pt 2 pp.813-814 (Gibbon to Grant, 5 Mar:
+  army gunboats with the expedition, "Pilots will be necessary for them"; Bowers to Gibbon, 7 Mar: "The pilots are ready. Direct the boats to call on
+  Colonel Bradley, depot quartermaster, for them"); Grant Papers 14 (be-api snippet, same Gibbon/Bowers exchange). Phrase grep `"out of pilots"`,
+  `"furnish the Navy"`, `"monitors to go up"` none; be-api whole collection `"entirely out of pilots"` 0, `"furnish the Navy with two pilots"` 0;
+  Grant Papers 13/14 by Google Books 0 (three queries); G3 nothing.
+- E574: not printed. Context: OR I/46 pt 3 p.28 (Meade to Grant, 18 Mar 10.30 a.m., "Has the Secretary left City Point?"; Grant: "the Secretary of War
+  left early this morning for Washington"); Gordon 1882 p.383 (Stanton at Norfolk 19 Mar "but just arrived from the front"); Grant Papers 14 (Google
+  Books snippet, DVLPEPsH1_oC / 1D8fAQAAMAAJ: Grant to Stanton, City Point 14 Mar 3 p.m., with Stanton's telegram to Grant). The River Queen is the
+  boat of the Hampton Roads conference (OR I/46 pt 2 pp.352-353, Eckert) and of Lincoln's trip of 23 Mar (ORN I/12; Bates p.343). Phrase grep
+  (`"go on board the boat"`, `"deliver anything you may receive"`, `"name of boat"`) none; be-api `"name of boat is River Queen"` 0, `"deliver anything
+  you may receive in person"` 0; Google Books 0 (Eckert Sheldon Dealy "River Queen" Stanton: 0 total).
+- E558: not printed. Context in our own files and the holder's: E560 (5915, 24 Feb: the Chief Quartermaster's office on a telegraph office ordered by
+  the Major General commanding) and holder 8605 (p.127, Chief QM office Fort Monroe 24 Feb to Sheldon, a telegraph station at Yorktown; CLEAR-SWEEP
+  NEAR); Plum II (Emerick and others at Ord's Army of the James headquarters, Feb 1865). Phrase grep `"office at Yorktown"`, `"can you supply these
+  operators"` none (`"considered imperative"` hits OR I/35 pt 2 and I/44, other text); be-api `"requires an office at Yorktown"` 0; Google Books 0.
+- E569: not printed. Phrase grep (`"regarding moving office"`, `"precedent is once established"`, `"wants the room"`, `"purpose of her own"`) none;
+  be-api `"wants the room for some purpose"` 0, `"precedent is once established" office` 225 (all other text, 1898-1982); Google Books 0 relevant.
+- **O'Brien, *Telegraphing in Battle* (1910)** (lesson 6; on disk): nothing for any of the six (Yorktown 1864 pass, no 1865 office; no Sumner, River
+  Queen, Hartsuff, Dealy). **Plum II**: Emerick at Ord's headquarters only.
+- **Unreachable / not searched:** Grant Papers 13-14 page by page (snippets and be-api only); NARA RG 107 telegram books; the Washington clear book
+  pointers 8622-8626 (5-7 Mar) and the sent books; Stanton's and Ord's papers; the press (none of the six is a press dispatch); JSTOR; HathiTrust full text.
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+Key collisions found by look-up in key.md and confirmed on the image and, where one exists, by the print: these tokens are **plain**, not H.
+- **E564:** "Pilots" / "pilots" (twice) are plain, not [Capture (-ed, -ing)]'s (Pilot = Capture, key p.18): "entirely out of pilots", "two pilots" (the
+  reader's own summary has it; FV-L15m found the same in E571). "James" is plain (Capt. William L. James, A.Q.M., signing; FV-FM65a E504). **H 10 of 10**
+  (decoder 12, less the two Pilots): Rebecca = 10 PM, paradise = Colonel, Vinton = Quartermaster, black = City Point, unity = period, peach = 2, wedge =
+  Today, Bergen windsor = James River, pilgrim = Captain.
+- **E574:** "person" is plain ("deliver anything you may receive in person"), not [5] (Person = 5, numerals p.25); "queen" is plain (the steamer River
+  Queen; Queen = Danger, key p.19), only "windsor" = River is a code word. "honor" = "on" (plain-phonetic, I; FIX-L15 read E505's "honor" the same).
+  "F" = Fort (Monroe), plain abbreviation. **H 8 of 8** (decoder 10, less person and queen): Brutus = Secretary of War, stomach = Left, Harriet = 1 PM,
+  black = City Point, sarah = 11 PM, zebra, zodiac = period, windsor = River. Sense: Stanton left Washington at 1 p.m. on 15 Mar for City Point by the
+  River Queen, to pass Fort Monroe about 11 p.m.; Eckert tells Sheldon or Dealy to go aboard and hand him in person anything received until then.
+  BOOK-FM65's No. 1 / No. 2 conflict on this row: the No. 1 clause stands (every code word gives sense, and the OR p.28 trip agrees).
+- **E577:** "abbot" is plain-phonetic **about** (Gordon's print: "the order about to issue"), not [Minnesota] (Abbot = Minnesota, key p.9); the reader's
+  header "the order [of Gen.] Abbot to issue [it]" goes. "Francis" (decoder plain) is in time-word position after the address = 12 (TIME page): **M**
+  (the print gives no hour). "mereden" after "yoke" (= Signature) is an unread signature word (a name; the print attributes the order to Ord): unread name,
+  not forced. "there four" = therefore (I). **H 10 + M 1 of 11 code groups, 8 of them C by the print** (Brutus = Secretary of War, torch = of the (x2),
+  polka = command, ripley alba = East(ern) Virginia, malta = Hartsuff, yoke = [signed]); famish = Norfolk (the address) H, zebra = period H. The print says
+  "by telegraph from Headquarters, Army of the Potomac"; the ledger header is "Hd qrs A. J." with the operator Emerick, i.e. Ord's headquarters of the
+  Army of the James, relayed by Sheldon to Gordon at Norfolk.
+- **E566:** no collision. **H 10 of 10**, seven agreeing with print (C): Francis = 12 (print "12 m."), palsy = Brigadier General (print "Brig. Gen."),
+  "Turn her" = Turner (plain-phonetic, I; C), Berry = Chief of Staff (C), whip = regiment (C), rape = expedition (C), frog = New York (C); unity and zebra =
+  periods; paradise = Colonel and youth = [signed] H only (the print omits "Colonel"). The ledger's "Leave soon so get quick answer" is not in the print.
+- **E558:** "polking" is **[Command]ing** = commanding (Polka = Command = Er (-ed, -ing), key p.19, + "ing"; NOTES "variant: polking=Polka", E560
+  'polking' = Comdg. C by FIX-L15), not plain: "Gen. Ord commanding requires an office at Yorktown". "opera tours" = operators (plain-phonetic, I). The
+  header word "Washington" is already plain (FIX-L15, `plain-at: washington#1`). **H 8 of 8** (decoder 7, plus polking): Mentor = Maj Gen Ord, hastings =
+  Yorktown, vinton quadrant = Quartermaster Department, zodiac, zebra = period, haven = Yorktown (a second code word for Yorktown on the same key page,
+  an internal check), polking = commanding.
+- **E569:** the header word "Washington" ([Volunteer]) is plain (lesson 8; the `plain-at: washington#1` lead of NOTES "## FIX-L15", not yet applied to
+  E569 -- not counted against the body). "polking off I sir" = **any [Command]ing officer** (polking H as in E558; "off I sir" = officer, I); "forth" = for
+  the, "toby" = to be (I), "Corn fed in Shall" = confidential (I), "youth" = [signed] (Youth = Signature). **H 7 of 7** (decoder 7, less Washington, plus
+  polking): unity, zebra x2 = period, polking = commanding, orbit = At the, Mentor = Ord ("Mrs Ord"), youth = [signed]. The reader's WEAK flag holds:
+  most of the telegram is in clear on the page; the code words carry "commanding" and the name **Mrs. Ord**, on which the whole complaint turns.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E566 | **N1** | period | D3 (H 10/10, 7 C by print) | printed, OR ser. I vol. 46 pt 2 p.847 (Sumner to Turner, Fort Monroe 5 Mar 1865 12 m.) |
+| E577 | **N1** | period | D3 (H 10 + M 1 of 11, 8 C by print; 1 signature name unread) | printed, G. H. Gordon, *A War Diary of Events* (1882) p.384 (Ord's telegram of 18 Mar 1865) |
+| E564 | **N3** | period | **D3** (H 10/10; external: ORN I/12 pp.59-60 monitors sent up the James 3-5 Mar; OR I/46 pt 2 pp.813-814 pilots and Col. Bradley) | no prior plaintext or decipherment located |
+| E574 | **N3** | period | **D3** (H 8/8; external: OR I/46 pt 3 p.28 the Secretary of War at City Point, left 18 Mar; Gordon 1882 p.383) | no prior plaintext or decipherment located |
+| E558 | **N3** | period | **D3** (H 8/8; external: E560 and holder 8605, 24 Feb, the Chief Quartermaster's office and a telegraph station at Yorktown) | no prior plaintext or decipherment located |
+| E569 | **N3** | period | **D2** (H 7/7; the code clause Mentor = Ord reads in E558, E569 and other entries; no external check of this telegram) | no prior plaintext or decipherment located |
+
+- **D2 sentences (written from the reading):** E569: "On 6 Mar 1865 Sheldon asked Eckert to answer about moving the Fort Monroe telegraph office,
+  objecting that the office could then be moved for the convenience of any commanding officer, and that the whole matter was believed to be at the
+  instigation of Mrs. Ord, who wanted the room for a purpose of her own; he marked it confidential."
+- **N1 is not "nothing gained":** for E566 the ledger shows the route (Sheldon to Emerick at Ord's headquarters, for Turner) and two words the OR
+  omits; for E577 it gives the War Department cipher copy of the order Gordon printed from his own copy, and its true origin line (Hd qrs A. J., not
+  "Army of the Potomac"). No status.json, SO or WORK-QUEUE row for an N1 (brief: N3+ only).
+- **Not N4:** Grant Papers 13-14 by snippets only, NARA RG 107 unread, the Washington clear book 8622-8626 and the sent books not walked, Ord's and
+  Stanton's papers unread.
+- **Safe sentences.**
+  E564 (N3): "Read at grade H with War Department Cipher No. 1: at 10 p.m. on 4 Mar 1865 Captain James at Fort Monroe told Colonel G. W. Bradley, Chief
+  Quartermaster at City Point, that he was entirely out of pilots, having had to give the Navy two pilots that day for the monitors going up the James
+  River. Not located in the Official Records ser. I vol. 46, ORN ser. I vols. 11-12, The Papers of Ulysses S. Grant vols. 13-14 (Google Books snippets
+  and IA full text) or the Huntington's full-text search (searched 10 Oct 2026)."
+  E574 (N3): "Read at grade H with War Department Cipher No. 1: at 1.30 p.m. on 15 Mar 1865 Eckert told Sheldon at Fort Monroe that the Secretary of War
+  had left Washington at 1 p.m. for City Point and would reach Fort Monroe about 11 that night on the River Queen, and that Sheldon or Dealy should go on
+  board and deliver in person anything received for him. Not located in the same sources (searched 10 Oct 2026)."
+  E558 (N3): "Read at grade H with War Department Cipher No. 1: on 22 Feb 1865 Sheldon asked Eckert for operators, General Ord commanding requiring a
+  telegraph office at Yorktown at once (the more imperative) and an office being asked for at the Quartermaster's Department at Fort Monroe. Not
+  located in the same sources (searched 10 Oct 2026)."
+  E569 (N3): the D2 sentence above, prefixed "Read at grade H with War Department Cipher No. 1 (most of the telegram is in clear on the page):" and
+  followed by "Not located in the same sources (searched 10 Oct 2026)."
+  E566 / E577 (N1): "Sumner's telegram to Turner of 5 Mar 1865 is printed in OR I/46 pt 2 p.847 / Ord's order of 18 Mar 1865 keeping Gordon in command of
+  the District of Eastern Virginia is printed in Gordon's War Diary (1882) p.384; the Fort Monroe ledger holds the War Department cipher copy, and the
+  period key reads it the same."
+- **Unsafe:** any "first", "new", "unpublished" for any of the six; N3 for E566 or E577; "captured" for pilots in E564; "in 5" or "River Danger" in E574;
+  "the order of Gen. Abbot" or "Minnesota" in E577; "polking" as an unread word in E558/E569; "Volunteer" for Washington in E569.
+- **Postmortem.** CLEAR-SWEEP (NOTES "## CLEAR-SWEEP") logged E566 and E577 NONE: its holder queries were two-word names, and its print pass ran
+  before AUD2-LEDGER15-1 cached Gordon 1882 (14:08) and, for E566, phrase windows built from the decoded reading with code words in brackets. A NONE
+  from a sweep is a search result under its words (lesson 5); a fresh plain-word phrase grep of the cache found both in seconds.
+
+### 5. Fixes for the next FIX job (not applied here; reading.md is decode.py output)
+E564: "Pilots"/"pilots" plain x2 (`plain-at: pilots#1`, `#2`; key row Pilot = Capture misfires), "James" plain (Capt. William L. James). E574: "person"
+plain, "queen" plain (River Queen), "honor" = on (I); header: Stanton (Secretary of War) left Washington 1 PM for City Point by the River Queen, context
+OR I/46 pt 3 p.28. E577: "abbot" plain = about (C, Gordon p.384), "Francis" = 12 M (time position), "mereden" unread signature name, "there four" =
+therefore I; header: "the order about to issue", from Ord's Hd qrs A. J. (Emerick) to Gordon at Norfolk; printed Gordon 1882 p.384; class N1. E566:
+header "Colonel" and "Leave soon so get quick answer" not in the print; printed OR I/46 pt 2 p.847; class N1; "Turn her" = Turner I (C). E558: "polking"
+= [Command]ing (`variant: polking=Polka`, E560/MS18-R5 precedent); "opera tours" = operators I; context E560 / holder 8605. E569: `plain-at:
+washington#1` (lesson 8), "polking" = [Command]ing, "off I sir" = officer, "Corn fed in Shall" = confidential, "toby" = to be (I); header "Mrs. Ord"
+(Mentor) is the key reading, the WEAK flag stays. All six: "image-read by FV-L16c, matches the transcription".
+Requests: hdl.huntington.org 40 (control 9678 once, 16 CISOSEARCHALL, 17 dmGetItemInfo, 6 IIIF pages; 2 dropped connections retried once after 25 s;
+one take 15:0x UTC); be-api.us.archive.org 19 (6 x 502, 5 retried once), 1.8 s apart; googleapis.com 26, 1.6 s apart; archive.org 0.
+For LANE LEDGER-16 (account 1).

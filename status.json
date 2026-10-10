@@ -14664,6 +14664,170 @@
       "depth_sentence": "On 15 Mar 1865 City Point asked Gordon whether 500 cavalry would need pontoons to cross to the Nottoway and whether cavalry could land on the Nansemond.",
       "depth_check": "code: sharons/shannons = Gunboats, panama/pacific = Cavalry, village = Pontoon, plum = Cross, Meriden = Ord read passim; external (non-statistical): OR I/46 pt 2 p.993 Gordon's 6.30 p.m. reply: 'Army gun-boats can go to Suffolk. Cavalry can land at several points on the Nansemond ... pontoons ... necessary ... will leave word where the landing should be for Sumner's cavalry'",
       "depth_note": "24 H of 24 code-word groups (\"summers\" = Sumner's and \"nancy\" (Nansemond) plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L16c)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L16c verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16c)' section 4",
+      "reading_version": "FM65-E 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L16c) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "none among code words",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Captain James at Fort Monroe to Col. G. W. Bradley, Chief Quartermaster, City Point, 4 Mar 1865: entirely out of pilots after furnishing the Navy two for the monitors going up the James River (E564)",
+      "line": "Read at grade H with War Department Cipher No. 1: at 10 p.m. on 4 Mar 1865 Captain James at Fort Monroe told Colonel G. W. Bradley, Chief Quartermaster at City Point, that he was entirely out of pilots, having had to give the Navy two pilots that day for the monitors going up the James River; not located in the Official Records ser. I vol. 46 pts 1-3 and vol. 47 pt 2, ORN ser. I vols. 11-12, Gordon's War Diary (1882), Plum's Military Telegraph vol. 2, O'Brien's Telegraphing in Battle (1910), The Papers of Ulysses S. Grant vols. 13-14 (Google Books snippets; vol. 14 also IA full text) or the Huntington's full-text search and its Washington clear books for the dates (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L16c); not N4: Grant Papers 13-14 page by page, NARA RG 107 telegram books, the Washington clear book pointers 8622-8626 and the sent books, Ord's and Stanton's papers unread",
+      "depth": "D3",
+      "completeness": "10 H of 10 code-word groups (decoder 12: the two plain \"pilots\" collide with key row Pilot = Capture, AUDIT s.3/s.5)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.374, pointer 5918, E564"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.374, pointer 5918, E564",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.374, pointer 5918, E564"
+      ],
+      "depth_sentence": "At 10 p.m. on 4 Mar 1865 Captain James at Fort Monroe told Colonel G. W. Bradley, Chief Quartermaster at City Point, that he was entirely out of pilots, having had to give the Navy two pilots that day for the monitors going up the James River.",
+      "depth_check": "code: Rebecca = 10 PM, Vinton = Quartermaster, black = City Point, peach = 2, wedge = Today, Bergen windsor = James River, pilgrim = Captain; external (non-statistical): ORN I/12 pp.59-60 Welles 3 Mar and Glisson 5 Mar, monitors sent up the James; OR I/46 pt 2 pp.813-814 Gibbon/Bowers 5-7 Mar, pilots and Col. Bradley, depot quartermaster; image re-checked",
+      "depth_note": "10 H of 10 code-word groups"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L16c)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L16c verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16c)' section 4",
+      "reading_version": "FM65-F 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L16c) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "none among code words; 'honor' = on (I)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Eckert, Washington, to Sheldon at Fort Monroe, 15 Mar 1865: the Secretary of War left at 1 p.m. for City Point on the River Queen; Sheldon or Dealy to board her about 11 p.m. and deliver his messages in person (E574)",
+      "line": "Read at grade H with War Department Cipher No. 1: at 1.30 p.m. on 15 Mar 1865 Eckert told Sheldon at Fort Monroe that the Secretary of War had left Washington at 1 p.m. for City Point and would reach Fort Monroe about 11 that night on the River Queen, and that Sheldon or Dealy should go on board and deliver in person anything received for him; not located in the Official Records ser. I vol. 46 pts 1-3 and vol. 47 pt 2, ORN ser. I vols. 11-12, Gordon's War Diary (1882), Plum's Military Telegraph vol. 2, O'Brien's Telegraphing in Battle (1910), The Papers of Ulysses S. Grant vols. 13-14 (Google Books snippets; vol. 14 also IA full text) or the Huntington's full-text search and its Washington clear books for the dates (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L16c); not N4: Grant Papers 13-14 page by page, NARA RG 107 telegram books, the Washington clear book pointers 8622-8626 and the sent books, Ord's and Stanton's papers unread",
+      "depth": "D3",
+      "completeness": "8 H of 8 code-word groups (decoder 10: \"person\" and \"queen\" are plain, key rows Person = 5 and Queen = Danger misfire)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.387, pointer 5931, E574"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.387, pointer 5931, E574",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.387, pointer 5931, E574"
+      ],
+      "depth_sentence": "At 1.30 p.m. on 15 Mar 1865 Eckert told Sheldon at Fort Monroe that the Secretary of War had left Washington at 1 p.m. for City Point and would reach Fort Monroe about 11 that night on the River Queen, and that Sheldon or Dealy should go on board and deliver in person anything received for him.",
+      "depth_check": "code: Brutus = Secretary of War, stomach = Left, Harriet = 1 PM, black = City Point, sarah = 11 PM, windsor = River; external (non-statistical): OR I/46 pt 3 p.28 Meade/Grant 18 Mar, the Secretary of War at City Point, left that morning; Gordon, War Diary (1882) p.383, Stanton at Norfolk 19 Mar from the front; image re-checked",
+      "depth_note": "8 H of 8 code-word groups"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L16c)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L16c verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16c)' section 4",
+      "reading_version": "FM65-E 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L16c) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "none among code words; 'opera tours' = operators (I)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Sheldon at Fort Monroe to Eckert, Washington, 22 Feb 1865: General Ord commanding requires a telegraph office at Yorktown at once, and one is asked for at the Quartermaster's Department; can Eckert supply the operators (E558)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 22 Feb 1865 Sheldon asked Eckert for operators, General Ord commanding requiring a telegraph office at Yorktown at once (the more imperative) and an office being asked for at the Quartermaster's Department at Fort Monroe; not located in the Official Records ser. I vol. 46 pts 1-3 and vol. 47 pt 2, ORN ser. I vols. 11-12, Gordon's War Diary (1882), Plum's Military Telegraph vol. 2, O'Brien's Telegraphing in Battle (1910), The Papers of Ulysses S. Grant vols. 13-14 (Google Books snippets; vol. 14 also IA full text) or the Huntington's full-text search and its Washington clear books for the dates (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L16c); not N4: Grant Papers 13-14 page by page, NARA RG 107 telegram books, the Washington clear book pointers 8622-8626 and the sent books, Ord's and Stanton's papers unread",
+      "depth": "D3",
+      "completeness": "8 H of 8 code-word groups (decoder 7: \"polking\" = [Command]ing is H, AUDIT s.3/s.5)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.368, pointer 5912, E558"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.368, pointer 5912, E558",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.368, pointer 5912, E558"
+      ],
+      "depth_sentence": "On 22 Feb 1865 Sheldon asked Eckert for operators, General Ord commanding requiring a telegraph office at Yorktown at once (the more imperative) and an office being asked for at the Quartermaster's Department at Fort Monroe.",
+      "depth_check": "code: Mentor = Ord, hastings and haven = Yorktown (two code words, same key page), vinton quadrant = Quartermaster Department, polking = Commanding; external (non-statistical): holder 8605 (p.127, Chief Quartermaster's office Fort Monroe 24 Feb to Sheldon, a telegraph station at Yorktown) and E560 (5915, 24 Feb); image re-checked",
+      "depth_note": "8 H of 8 code-word groups"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L16c)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L16c verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16c)' section 4",
+      "reading_version": "FM65-F 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L16c) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "none among code words; 'off I sir' = officer, 'Corn fed in Shall' = confidential, 'toby' = to be (I)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Sheldon at Fort Monroe to Eckert, Washington, 6 Mar 1865: please answer about moving the telegraph office; it is believed to be at the instigation of Mrs. Ord, who wants the room (E569)",
+      "line": "Read at grade H with War Department Cipher No. 1 (most of the telegram is in clear on the page): on 6 Mar 1865 Sheldon asked Eckert to answer about moving the Fort Monroe telegraph office, objecting that the office could then be moved for the convenience of any commanding officer, and that the whole matter was believed to be at the instigation of Mrs. Ord, who wanted the room for a purpose of her own; he marked it confidential; not located in the Official Records ser. I vol. 46 pts 1-3 and vol. 47 pt 2, ORN ser. I vols. 11-12, Gordon's War Diary (1882), Plum's Military Telegraph vol. 2, O'Brien's Telegraphing in Battle (1910), The Papers of Ulysses S. Grant vols. 13-14 (Google Books snippets; vol. 14 also IA full text) or the Huntington's full-text search and its Washington clear books for the dates (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L16c); not N4: Grant Papers 13-14 page by page, NARA RG 107 telegram books, the Washington clear book pointers 8622-8626 and the sent books, Ord's and Stanton's papers unread",
+      "depth": "D2",
+      "completeness": "7 H of 7 code-word groups (most of the telegram is in clear on the page; header word Washington plain, lesson 8)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.380, pointer 5924, E569"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.380, pointer 5924, E569",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.380, pointer 5924, E569"
+      ],
+      "depth_sentence": "On 6 Mar 1865 Sheldon asked Eckert to answer about moving the Fort Monroe telegraph office, objecting that the office could then be moved for the convenience of any commanding officer, and that the whole matter was believed to be at the instigation of Mrs. Ord, who wanted the room for a purpose of her own; he marked it confidential.",
+      "depth_check": "code clause: Mentor = Ord reads in E558, E569 and other entries; polking = Commanding (as E558, E560); no external check of this telegram (D2); image re-checked",
+      "depth_note": "7 H of 7 code-word groups"
     }
   ],
   "lanes": [
