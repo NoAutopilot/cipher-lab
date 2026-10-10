@@ -1,0 +1,58 @@
+ia_id	claimed_volume	true_series	true_volume	true_part	date_range_title_page	claim_status	on_disk_cache_before	fetched_10_oct_2026	source_of_truth	note
+warofrebellion013401rootrich	34.1	I	34	1		ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "Ser. 1 vol. 34:1"	part number not parsed from OCR; IA metadata 34:1
+warofrebellion013402rootrich	34.2	I	34	2	1 Jan-31 Mar 1864	ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "Ser. 1 vol. 34:2"	
+warofrebellion013403rootrich	34.3	I	34	3		ok	Y		title page, local cache gz; IA metadata volume field "Ser. 1 vol. 34:3"	IA metadata 34:3
+warofrebellion013404rootrich	34.4	I	34	4	23 May-30 Jun 1864	ok	Y		title page, local cache gz; IA metadata volume field "Ser. 1 vol. 34:4"	part not parsed; IA metadata 34:4
+warofrebellion014602rootrich	46.2	I	46	2		ok	N	Y	title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "Ser. 1 vol. 46:2"	
+warofrebellion014702rootrich	47.2	I	47	2		ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "Ser. 1 vol. 47:2"	
+warofrebellion014703rootrich	47.3	I	47	3		ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "Ser. 1 vol. 47:3"	part not parsed; IA metadata 47:3
+warofrebellion321unit	32.1	I	32	1		ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.32:1"	
+warofrebellion322unit	32.2	I	32	2	1 Jan-29 Feb 1864	ok	Y		title page, local cache gz; IA metadata volume field "v.32:2"	
+warofrebellion323unit	32.3	I	32	3	1 Mar-30 Apr 1864	ok	Y		title page, local cache gz; IA metadata volume field "v.32:3"	title-page OCR reads XXXIX; running head and IA metadata say XXXII
+warofrebellion33unit	33	I	33			ok	Y		title page, local cache gz; IA metadata volume field "v.33"	single volume
+warofrebellion351unit	35.1	I	35	1		ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.35:1"	
+warofrebellion352unit	35.2	I	35	2		ok	Y		title page, local cache gz; IA metadata volume field "v.35:2"	
+warofrebellion361unit	36.1	I	36	1		ok	Y		title page, local cache gz; IA metadata volume field "v.36:1"	
+warofrebellion362unit	36.2	I	36	2		ok	Y		title page, local cache gz; IA metadata volume field "v.36:2"	
+warofrebellion363unit	36.3	I	36	3	20 May-12 Jun 1864	ok	Y		title page, local cache gz; IA metadata volume field "v.36:3"	
+warofrebellion371unit	37.1	I	37	1		ok	Y		title page, local cache gz; IA metadata volume field "v.37:1"	
+warofrebellion372unit	37.2	I	37	2		ok	Y		title page, local cache gz; IA metadata volume field "v.37:2"	
+warofrebellion381unit	38.1	I	38	1		ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.38:1"	part not parsed; IA metadata 38:1
+warofrebellion382unit	38.2	I	38	2		ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.38:2"	
+warofrebellion383unit	38.3	I	38	3		ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.38:3"	
+warofrebellion384unit	38.4	I	38	4	1 May-30 Jun 1864	ok	N	Y	title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.38:4"	
+warofrebellion385unit	38.5	I	38	5		ok	N	Y	title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.38:5"	
+warofrebellion391unit	39.1	I	39	1		ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.39:1"	
+warofrebellion392unit	39.2	I	39	2	1 May-30 Sep 1864	ok	N	Y	title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.39:2"	
+warofrebellion393unit	39.3	I	39	3	1 Oct-13 Nov 1864	ok	N	Y	title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.39:3"	
+warofrebellion401unit	40.1	I	40	1		ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.40:1"	
+warofrebellion402unit	40.2	I	40	2	13 Jun-4 Jul 1864	ok	Y		title page, local cache gz; IA metadata volume field "v.40:2"	
+warofrebellion403unit	40.3	I	40	3	5-31 Jul 1864	ok	Y		title page, local cache gz; IA metadata volume field "v.40:3"	
+warofrebellion411unit	41.1	I	41	1		ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.41:1"	
+warofrebellion412unit	41.2	I	41	2		ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.41:2"	
+warofrebellion413unit	41.3	I	41	3	1 Sep-15 Oct 1864	ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.41:3"	
+warofrebellion414unit	41.4	I	41	4	16 Oct-31 Dec 1864	ok	Y		title page, local cache gz; IA metadata volume field "v.41:4"	
+warofrebellion421unit	42.1	I	42	1		ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.42:1"	
+warofrebellion422unit	42.2	I	42	2	1 Aug-30 Sep 1864	ok	Y		title page, local cache gz; IA metadata volume field "v.42:2"	
+warofrebellion423unit	42.3	I	42	3	1 Oct-31 Dec 1864	ok	Y		title page, local cache gz; IA metadata volume field "v.42:3"	no title page in text (starts at Part III running head); IA metadata v.42:3
+warofrebellion431unit	43.1 (as used in earlier print checks)	I	47	2	1 Jan-23 Mar 1865	MISLABELLED	Y		title page, local cache gz; IA metadata volume field "v.47:2"	claimed 43.1 in entries-mssEC19.tsv header and in print checks that cite it as I/43 pt 1; title page says SERIES I VOLUME XLVII PART II (1 Jan-23 Mar 1865); IA metadata v.47:2. The real I/43 pt 1 is warofrebellion431unit_0
+warofrebellion431unit_0	43.1	I	43	1		ok	N	Y	title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.43:1"	title page: PART I, in two parts
+warofrebellion432unit	43.2	I	43	2	1 Sep-31 Dec 1864	ok	Y		title page, local cache gz; IA metadata volume field "v.43:2"	
+warofrebellion44unit	44	I	44			ok	N	Y	title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.44"	single volume
+warofrebellion451unit	45.1	I	45	1	14 Nov 1864-23 Jan 1865	ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.45:1"	part not parsed; IA metadata 45:1
+warofrebellion452unit	45.2	I	45	2	1 Dec 1864-23 Jan 1865	ok	Y		title page, local cache gz; IA metadata volume field "v.45:2"	
+warofrebellion461unit	46.1	I	46	1		ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.46:1"	
+warofrebellion463unit	46.3	I	46	3	16 Mar-30 Jun 1865	ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.46:3"	
+warofrebellion471unit	47.1	I	47	1		ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.47:1"	part not parsed; IA metadata 47:1
+warofrebellion481unit	48.1	I	48	1		ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.48:1"	
+warofrebellion482unit	48.2	I	48	2	1 Apr-30 Jun 1865	ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.48:2"	
+warofrebellion491unit	49.1	I	49	1		ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.49:1"	
+warofrebellion492unit	49.2	I	49	2		ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.49:2"	
+warofrebellion341unit	(in entries-mssEC19.tsv header)	I	34	1			exists	N		IA advancedsearch metadata only (10 Oct 2026); title page not read	duplicate of the rootrich id in or_volumes.tsv for 34; 46.2 is warofrebellion014602rootrich there
+warofrebellion342unit	(in entries-mssEC19.tsv header)	I	34	2			exists	N		IA advancedsearch metadata only (10 Oct 2026); title page not read	duplicate of the rootrich id in or_volumes.tsv for 34; 46.2 is warofrebellion014602rootrich there
+warofrebellion343unit	(in entries-mssEC19.tsv header)	I	34	3			exists	N		IA advancedsearch metadata only (10 Oct 2026); title page not read	duplicate of the rootrich id in or_volumes.tsv for 34; 46.2 is warofrebellion014602rootrich there
+warofrebellion344unit	(in entries-mssEC19.tsv header)	I	34	4			exists	N		IA advancedsearch metadata only (10 Oct 2026); title page not read	duplicate of the rootrich id in or_volumes.tsv for 34; 46.2 is warofrebellion014602rootrich there
+warofrebellion462unit	(in entries-mssEC19.tsv header; fm_prefilter.py)	I	46	2			exists	N		IA advancedsearch metadata only (10 Oct 2026); title page not read	duplicate of the rootrich id in or_volumes.tsv for 34; 46.2 is warofrebellion014602rootrich there
+warofrebellion511unit	(in entries-mssEC19.tsv header)					not-in-IA-search	N		not returned by advancedsearch identifier:warofrebellion* mediatype:texts (10 Oct 2026); out of the 32-49 range or not text items	not verified
+warofrebellionco0043unit_i5n6	(in entries-mssEC19.tsv header)					not-in-IA-search	N		not returned by advancedsearch identifier:warofrebellion* mediatype:texts (10 Oct 2026); out of the 32-49 range or not text items	not verified
+warofrebellionco0047unit_q8d9	(in entries-mssEC19.tsv header)					not-in-IA-search	N		not returned by advancedsearch identifier:warofrebellion* mediatype:texts (10 Oct 2026); out of the 32-49 range or not text items	not verified

@@ -19,7 +19,8 @@ ROOT = os.path.abspath(os.path.join(PARENT, "..", ".."))
 VOLS = {"warofrebellion33unit": "OR I/33", "warofrebellion361unit": "OR I/36-1", "warofrebellion362unit": "OR I/36-2", "warofrebellion363unit": "OR I/36-3",
         "warofrebellion401unit": "OR I/40-1", "warofrebellion402unit": "OR I/40-2", "warofrebellion403unit": "OR I/40-3",
         "warofrebellion421unit": "OR I/42-1", "warofrebellion422unit": "OR I/42-2", "warofrebellion423unit": "OR I/42-3",
-        "warofrebellion431unit": "OR I/43-1", "warofrebellion432unit": "OR I/43-2", "warofrebellion44unit": "OR I/44",
+        "warofrebellion431unit": "OR I/47-2",  # OR-CACHE 10 Oct 2026: IA 431unit is I/47 pt 2 (title page), not 43-1; committed prefilter-fm*.tsv rows labelled "OR I/43-1" are I/47-2 text
+        "warofrebellion431unit_0": "OR I/43-1", "warofrebellion432unit": "OR I/43-2", "warofrebellion44unit": "OR I/44",
         "warofrebellion451unit": "OR I/45-1", "warofrebellion452unit": "OR I/45-2",
         "warofrebellion461unit": "OR I/46-1", "warofrebellion462unit": "OR I/46-2", "warofrebellion463unit": "OR I/46-3",
         "warofrebellion511unit": "OR I/51-1", "warofrebellion512unit": "OR I/51-2",

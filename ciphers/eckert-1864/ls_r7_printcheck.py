@@ -4,6 +4,7 @@
 A miss is a search result for the log, not a verdict (rule 10)."""
 import gzip, re, sys, os
 D = os.path.join(os.path.dirname(__file__), '..', '..', 'sources', 'ia-fulltext', 'print-check')
+# OR-CACHE 10 Oct 2026: 'warofrebellion431unit' below is OR I/47 pt 2 (title page), NOT I/43 pt 1 (that is warofrebellion431unit_0, cached 10 Oct 2026); list left as run.
 VOLS = ['warofrebellion33unit', 'warofrebellion362unit', 'warofrebellion372unit', 'warofrebellion431unit',
         'warofrebellion432unit', 'warofrebellion452unit']
 PH = {
