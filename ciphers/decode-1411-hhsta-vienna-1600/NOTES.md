@@ -915,20 +915,57 @@ Vision: 2 Sonnet subagent calls (36 crops each) + 1 reconciliation unit (2 crop 
 views, 1 overlay, 3 contact sheets). Status unchanged: open. Report: found as above; not found: any p.6 span aligning to p.1, p.3, p.4
 or p.5; no PASS. Novelty not classified.
 
-## Remaining gaps (AM-D1411P5, 7 Oct 2026; D1411-P6b, 10 Oct 2026)
+## D1411-POOL step: pooled independent-numeral test of frozen T21r, p.4 + p.5 + p.6 (10 Oct 2026, account 2)
+
+Brief D1411-POOL (LANE FAMILY-A2n, account 2). Disk only, no new reads, no re-masking, no table change. PREREG
+`d1411pool/PREREG-D1411POOL.md` and `d1411pool/score_pool.py` pushed in their own commit (d43c9e2a9, checked on origin/main) before
+the score. The three pages were each read, masked and scored before this pooling and their per-page results were known when the PREREG
+was written, so this is a confirmatory power test of a fixed table, not a search. Prior work: none needed beyond the folder (check 1:
+no pooled independent test in NOTES/HYPOTHESES before this step; disk only).
+
+Material: p.4 independent 112 (p4_copy_mask rule), p.5 independent 136 (AM-D1411V mask), p.6 independent 60 (score_p6 mask) =
+**N 308**, counts checked by the script against the PREREG before scoring. Statistic and controls are `d1411v/rescore_v.score`
+unchanged (de1600 word coverage; 200 order shuffles of the pooled list, seed 1411; 23 shifted rules; gloss bar 0.6129).
+
+| table | cover | shuffled p99 (n >= real of 200) | shifted max | minus gloss | gate |
+|---|---|---|---|---|---|
+| **T21r** (gated) | 0.513 | 0.458 (0) | 0.393 | -0.100 | **FAIL** |
+| T21r_h12 (reported) | 0.523 | 0.464 (0) | 0.386 | -0.090 | -- |
+| T21r_h22 (reported) | 0.477 | 0.448 (1) | 0.390 | -0.136 | -- |
+
+de1600 real windows at N=308: coverage p05 0.890. Pooled gloss agreement (reported): 79 pass-agreed gloss pairs, T21r 49 vs
+value-shuffled p99 16, agrees. `score_pool.py --check` exits 0.
+
+**Pre-registered verdict: FAIL.** Pooling gave the power the single pages lacked on one side only: T21r now beats its order shuffle
+and every shifted rule clearly (no shuffle reached it), but its coverage stays 0.100 below the leaf's own gloss, further below than p.5
+independent alone (-0.025). Token grades unchanged: no S written (S 0 on every page; H 0, C as before, I 0).
+
+**Rule 3 third-attempt clause.** Attempts at "T21r on independent numerals, gated by de1600 coverage against the gloss bar" that
+changed only the material or its size: p.3 (below gloss), p.4 independent (shuffle not beaten), p.5 independent (-0.025), p.6
+independent (shuffle not beaten), this pool (-0.100). The control margin grew with N, but the gloss gap did not close
+(coverage 0.563, 0.429, 0.588, 0.500, 0.513): the numbers do not move together toward the gate. The clause applies: this gate on
+independent numerals is logged **untestable-by-this-instrument (not refuted)**, and reading p.7/p.8 to feed the same gate is not the
+next step. A different instrument is needed. Two on hand: (a) letter-level gloss agreement, which already agrees on every glossed leaf
+(pooled 49/79 vs p99 16) but covers only glossed numbers; (b) a noise-matched bar: the gloss bar is clean period text, while the
+decoded numerals carry reader error (p.6 pass agreement 89.1%, 59 of 133 M) and any table error. Scoring `gaps150/gloss_text.txt` after
+encoding it through T21r and injecting number errors at the measured reader-error rates would give a bar a correct table could reach
+on this transcription (the SALV-DIAG lesson: a control's error level must bracket the target's). Report: found as above; not found:
+a pooled coverage at or above the gloss bar. Novelty not classified.
+
+## Remaining gaps (AM-D1411P5, 7 Oct 2026; D1411-P6b, D1411-POOL, 10 Oct 2026)
 Read so far: 0 cipher numbers at S (AM-D1411V withdrew AM-D1411P5's 114 p.5 S grades: the PASS rests on a copy of the p.2 text T21r was built on; independent p.5 numerals beat controls but stay 0.025 below the gloss); p.1 gloss pairs C 54 of 62; f.184 gloss pairs M 10; p.4 gloss pairs M 42; p.5 gloss pairs M 26; p.6 gloss pairs M 11 (D1411-P6b, no PASS); other numbers M
 - p.5 left page = second copy of p.2 (13 of 95 aligned numbers differ) - blocker: waiting-on ASKS row 120 (a person's read); D1A-D1411 (8 Oct) settled 2 of 13 (57, 17) and found 1 genuine copy variant (12/22) by a blind per-number tile read with a passed exemplar control (30/31); the other 10 stay unsettled for this machine instrument (both reads unsure or matching neither candidate) -- the 10 tiles (d1a/settled.tsv, montages d1a/montage/) can join the person's read of ASKS row 120
-- unglossed numerals p.3, p.4, p.5 right page, p.6 - blocker: not-attempted; independent material stays below the leaf's own gloss in coverage (p.3 0.563, p.5 independent 0.588) and p.4 independent and p.6 independent (D1411-P6b, 10 Oct: N=60 after 73 of 133 masked as a copy of p.2; T21r 0.500 vs shuffled p99 0.517) do not beat their order shuffle, while p.6's gloss agrees with T21r 9/11 (p99 3); next: read p.7 numerals under a copy of the p.6 PREREG and scorer (copy mask now over p.1-p.6; the measured 60-number pages are at the NON-TEST floor, so pool independent numerals across p.6-p.8 in a registered pooled test rather than another single-page gate), one DECODE login with the absolute filesrv URL, ~$5 per page
+- unglossed numerals p.3, p.4, p.5 right page, p.6 - blocker: not-attempted; the de1600 coverage-vs-gloss gate on independent numerals is retired by rule 3's third-attempt clause (D1411-POOL, 10 Oct: pooled p.4+p.5+p.6 independent N=308, T21r 0.513 beats order shuffle p99 0.458 and shifted 0.393 but is 0.100 below the gloss bar; per-page p.3 0.563, p.4 0.429, p.5 0.588, p.6 0.500); next: a different instrument -- a noise-matched gloss bar (gloss text encoded through T21r with number errors injected at the measured reader-error rate, d1411pool/), disk only, ~$1.5
 - p.4 4/5 residual (25 of 83 tiles unsettled, la2/applied.tsv) - blocker: waiting-on ASKS row 120 (a person's read; the 25 tiles can be added to that read or to a sign-sorter focus list); machine re-reads retired for this question
 - gloss letter identities (z/r at 21, n/u, residue 14) - blocker: waiting-on ASKS row 120 (a person's read of the gloss); p.5 adds 26 pairs; residue 12 = h now favoured by p.5's letter test
-- pages 7-12 numerals - blocker: not-attempted; full-size images re-fetchable with one DECODE login (absolute filesrv URL works, D1411-P6b); next: p.7 then p.8 the same two-pass step per page, ~$5 each, then the pooled independent test
+- pages 7-12 numerals - blocker: not-attempted; full-size images re-fetchable with one DECODE login (absolute filesrv URL works, D1411-P6b); more pages under the retired coverage-vs-gloss gate are not a remedy (D1411-POOL); next: read p.7 only once the noise-matched bar exists, or for glossed numbers under the letter-level gloss-agreement test, ~$5 per page
 
-## Escalation (AM-D1411P5, 7 Oct 2026; D1411-P6b, 10 Oct 2026)
+## Escalation (AM-D1411P5, 7 Oct 2026; D1411-P6b, D1411-POOL, 10 Oct 2026)
 - [x] siblings: GAPS136/GAPS137 checked the Ferdinand III posts and the Kopal Cyffra nova key (inconsistent sign class); p.5 left page found to be a second copy of p.2 (AM-D1411P5); p.6 right page a further copy of p.2 (D1411-P6b)
 - [x] clear-pages: clear words around the cipher read in GAPS137; context words used only as post-hoc observation
 - [x] known-keys: Cyffra nova ad Poloniam tested in GAPS137, inconsistent at step 1
 - [ ] print: no printed edition of this letter located yet; planned print_check of the post-hoc words once a verifier accepts a PASS
 - [x] key-rebuild: period gloss table (GAPS141), residue rule (GAPS146), residue 21 = r (DEF1-1411, D4-1411P3, R12A-D1411P4), residue 12 = h favoured on p.5 and T21r_h12 PASS on p.5 (AM-D1411P5) voided by AM-D1411V: in-sample copy of p.2; independent p.5 below gloss
 - [x] image-check: D1A-D1411 (8 Oct) per-number tile comparison of the 13 p.2/p.5 copy differences: 2 settled, 1 genuine variant, 10 unsettled (control 30/31); remainder to a person's read (ASKS row 120)
-- [retired] retry: the de17/de1600 4-gram language judge as gate, retired by GAPS157 third-attempt clause; also retired for the p.4 4/5 look-alike: machine re-read by a Sonnet shape reader (line crops R12A-D1411LA, then per-number tiles D07-D1411), a person's read is the remaining route
-Verdict: keep going: 2 internal gaps; cheapest next: read p.7 (and p.8) numerals under a copy of the p.6 PREREG with the copy mask over p.1-p.6 and register a pooled independent-numeral test across p.6-p.8 (p.6 alone: N=60, at the floor, no PASS; gloss agrees 9/11), ~$5 per page; the p.2/p.5 copy differences go to a person's read (ASKS row 120)
+- [retired] retry: the de17/de1600 4-gram language judge as gate, retired by GAPS157 third-attempt clause; the de1600 coverage-vs-gloss gate on independent numerals, retired by D1411-POOL (10 Oct) third-attempt clause (pooled N=308 beats shuffle, 0.100 below gloss); also retired for the p.4 4/5 look-alike: machine re-read by a Sonnet shape reader (line crops R12A-D1411LA, then per-number tiles D07-D1411), a person's read is the remaining route
+Verdict: keep going: 2 internal gaps; cheapest next: a noise-matched gloss bar for the coverage statistic (gloss text through T21r with reader-error injection at the measured rate), disk only, ~$1.5; the p.2/p.5 copy differences go to a person's read (ASKS row 120)

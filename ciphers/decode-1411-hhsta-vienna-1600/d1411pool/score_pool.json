@@ -1,0 +1,51 @@
+{
+ "prereg": "d1411pool/PREREG-D1411POOL.md",
+ "counts": {
+  "p4": 112,
+  "p5": 136,
+  "p6": 60
+ },
+ "N": 308,
+ "gloss_bar": 0.6129,
+ "pooled": {
+  "N": 308,
+  "de1600_real_cover_p05": 0.8896,
+  "T21r": {
+   "cover": 0.513,
+   "shuffled_p99": 0.4578,
+   "shuffled_ge": 0,
+   "shifted_max": 0.3929,
+   "minus_gloss": -0.0999,
+   "verdict": "controls beaten, below gloss"
+  },
+  "T21r_h12": {
+   "cover": 0.5227,
+   "shuffled_p99": 0.4643,
+   "shuffled_ge": 0,
+   "shifted_max": 0.3864,
+   "minus_gloss": -0.0902,
+   "verdict": "controls beaten, below gloss"
+  },
+  "T21r_h22": {
+   "cover": 0.4773,
+   "shuffled_p99": 0.4481,
+   "shuffled_ge": 1,
+   "shifted_max": 0.3896,
+   "minus_gloss": -0.1356,
+   "verdict": "controls beaten, below gloss"
+  },
+  "gloss_T21r": {
+   "n": 79,
+   "matches": 49,
+   "control_p99": 16,
+   "agrees": true
+  }
+ },
+ "gate_T21r": {
+  "cover": 0.513,
+  "shuffled_p99": 0.4578,
+  "gloss_bar": 0.6129,
+  "PASS": false,
+  "verdict": "FAIL"
+ }
+}
