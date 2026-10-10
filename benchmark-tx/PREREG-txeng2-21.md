@@ -207,7 +207,7 @@ superseded for the read-free half by this line (the oracle date is the owner's).
 Costs this check-in: TXE2-OL1PAGE 4, TXE2-SHEETVIV 22, TXE2-MARKS 4. Eval looks: 0. S2 looks: 1 (unchanged). Openings: WIT-FLAGS step 6 1
 (the lane); SHEET-VIV 0 eval / 1 dev; MARKS-DEV2 0 eval / 1 dev; OL1-PAGE 0.
 
-## OL1-PAGE amended (lane, 10 Oct 2026 03:0x UTC by date -u; the orchestrator's message of 02:52: "re-cut ... re-run the preflight ... then I publish"; the gate stays, the proposals change; BEFORE TXE2-OL1PAGE had changed any tool)
+## OL1-PAGE amended (lane, 10 Oct 2026 02:59 UTC by date -u; the orchestrator's message of 02:52: "re-cut ... re-run the preflight ... then I publish"; the gate stays, the proposals change; BEFORE TXE2-OL1PAGE had changed any tool)
 Step (i) is WITHDRAWN: no `--box-verify` mode is added to tools/sorter_preflight.py -- a mode that lets the page pass by reporting what the
 gate counts would be gate-shopping on a page whose shape count is real (bad cuts are bad proposals, and they cost the owner's minutes).
 Instead the proposals are re-cut by declared, read-free, per-hand geometric rules (all medians per hand, kind=sign boxes only), applied in
