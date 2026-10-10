@@ -5925,6 +5925,45 @@ Left (next lane): eckert-1864 No 2 entries pp.86-182 of no2-candidates.tsv (~37 
 by D12-E2/E3 rates; N2-AI/N2-AJ/N2-R N4 needs RG 92/393/107 or the OR Supplement (owner-side or LOCAL-QUEUE); eckert-1862 `ec18_align.py --rows`
 still stale, cause untested (~1); 9877 Hurlbut token stays M.
 
+## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261009-2312, session_01WCSXR7Z6hu4DFE38HAkdCJ, account 2), 10 October 2026 (closed 00:5x UTC: in-scope cheap supply spent, lane ~25.7 of 60)
+
+Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-09-ytbiz-family-2312-jobs.md. Started from the
+2009 handoff next items 1-5 and the es132 Verdict's cheapest next. Gate 0a: SESSION-SWEEP-account-2 stale-claimed since 5 Oct, proceeded.
+Workers 11 in 3 waves (23:20-00:33 UTC; Opus 6, Sonnet 5; all ledgered from get_session, archived): 20.73; orchestrator ~5.0. Account 2
+seven_day `allowed_warning` throughout (continued per blast rules). No Gallica probe. Known-text share: MANT-207/0151/66 work on glossed
+witnesses (~7.7, about a third) -- key tests that settle codes used on unread leaves. rah-salazar HTRC EF still MongoError 23:2x UTC (1 request).
+
+Results:
+- sachsstaatsarchiv-manteuffel-1712: MANT-207 no 207 witness among committed crops; 0490 G01 r2 pos4 29->28 (third blind read), gate (a)
+  unchanged, recon 32/38. MANT-0151 (1 sachsen GET): 207 twice on 0151 L, both blind passes "le Gr. Chancelier" -> second witness agreeing with
+  Krauske (key already C, note cites 0151). MANT-66: the 'Alefeld' gloss renders 66.8.44.1.2.12.120 spelled a-h-l-e-f-e-l-d under key letters;
+  standalone 66 = initial A. (M); no rule-4 conflict, key unchanged.
+- antt-msliv0638-brochado-1712: BRO-CT (PREREG-BROCT) crossed-t match NOT SUPPORTED (a decoy paired), --try t=l rejected (-18.7 bits), t=m
+  undecided; letter 134 pos 16 stays U. Letter 134 waits on ASKS 108.
+- na-suriname-map-1781: SUR-266 inv. 266-270 (1739-42) 120 scans, SUR-DENSE inv. 370/371/378-380 130 more: 0 cipher, all possibles plain at
+  1200 px. The governor-letter series holds no further unglossed cipher run at these strides.
+- vanbeuningen-dewitt-1657: VB-EYE 0120/0134 plain prose, no cipher; 0120 = printed 6 Juli p.440. No unread cipher candidate in inv.1540.
+- antt-linhares-chave: LIN-BFSP2/3 Strangford, Couttinho families on all 32 BFSP items: no 1808-12 hit (Strangford 2 hits = 1823 material);
+  "Sousa Coutinho" fails its control (OCR splits the name). BFSP print step done for these families.
+- es132-vargas-mexia-1578: ES132-R7 both steps already on file (RUN5-ESFIX, ES132-RD), stale Verdict lines corrected. ES132-40 blocked: the 40
+  unsettled f.89 candidates (30 R3a + 10 R1) need the f.93-95 duplicate at native size, not on disk (only 55% debug overlays); Gallica.
+No N3+ item, so no SO row and no AUD2 row.
+
+**next** (for the next LANE FAMILY incarnation, or a Gallica-allowed lane):
+1. es132-vargas-mexia-1578: 5 Gallica region fetches of f.93r-f.95r (`regen_images.sh fetch f93r`..`f95r`), commit the duplicate crops, then
+   the two-crop look with the planted-tile control (~$3 + fetch; NOT this lane -- Gallica is out of scope; hand to a Gallica lane once a probe
+   returns 200).
+2. Manteuffel: the held codes 199 and 321 on glossed witnesses 0146/0169/0174/0182 by premise check only (~$5 each, low yield); unglossed
+   leaves under ~60 tokens are not worth Opus reads (fr18 cannot gate there).
+3. Suriname: the series screens are spent at 1-in-10 to 1-in-40; only a full scan-by-scan pass (~600 NA requests, own sessions) could find an
+   unglossed run -- low prior after 0 in 250 sampled. SUR-372's "2-3 more pages for class tests" (~$4) only if a class test is needed.
+4. Linhares: nothing cloud-side in the print step; the column count waits on a person's count (NOTES ~line 1655).
+5. Carried: Ceppo fr.4702 (Gomberville via LOCAL-QUEUE), heinsius (NA reply), rah-salazar HTRC rerun (~$0.2, once EF answers), Brochado
+   letter 134 (ASKS 108).
+Pricing: Opus jobs here ran 0.6-1.1x cap this time (smaller, well-scoped steps). Briefing lessons: grep a folder's dated sections, not its
+Verdict line, before briefing a step; `ls` the images a disk-only brief needs.
+Excluded this incarnation (other lanes): as the 2009 list.
+
 ## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261009-2009, session_01W6XyGb1V3L3go1GwgTTvpA, account 2), 9 October 2026 (closed 22:3x UTC: three waves worked, lane ~49.2 of 60)
 
 Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-09-ytbiz-family-2009-jobs.md. Started from the
