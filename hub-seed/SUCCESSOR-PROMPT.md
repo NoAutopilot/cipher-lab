@@ -104,3 +104,4 @@ STATUS.md and CHECKIN-PROMPT.md notes, then send_message the dispatcher session_
 successor: Fable, title 'ORCHESTRATOR (account 4) · talk to this one', tags cipherlab:account-4 cipherlab:orchestrator, source_url
 https://github.com/NoAutopilot/cipher-lab, prompt = the contents of hub-seed/SUCCESSOR-PROMPT.md at origin/main; reply with the new id";
 keep your trigger until the successor's TAKEN line appears in this file or ROOM.md.
+Successor created 03:39 UTC 10 Oct by the account-4 dispatcher (session_01PpZtGZsbseHrXViC8rzExA): session_017GN87mbYobH4zXRgRbFRLL (Fable, depth 2 via the dispatcher). The outgoing session session_012sGNgiddCpz4QUhQsMyoPU keeps trig_01MWaJbY5tJ6T3TyTVgmpb83 armed until the successor posts its line; the successor deletes it (step 4).
