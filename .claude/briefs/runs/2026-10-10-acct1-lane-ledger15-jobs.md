@@ -105,3 +105,6 @@ header/addressee/signer/time-word fixes, the key collisions each lists (Berrien,
 header notes. Do NOT touch an entry whose AUD2-LEDGER15-<n> second audit has started (grep ROOM for its claim): leave that entry's s.5 for the next FIX and say
 so. decode x3 --write/--check exit 0; status.json/SO already written by the verifiers (check, do not duplicate); NOTES "## FIX-L15 (10 Oct 2026, account 1, for
 LANE LEDGER-15)"; depth_check; gaps_check; file_shrink_guard on every touched file.
+
+(13:5x UTC by date -u: FIX-L15 HELD, not spawned -- AUD2-LEDGER15-1..4 were already claimed by the owner-account orchestrator, covering every N3 entry of
+wave 1; FIX-L15 runs after their done lines and then also applies their s.5, as FIX-AUD2-L14 did.)
