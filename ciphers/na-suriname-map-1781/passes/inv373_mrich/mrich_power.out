@@ -1,0 +1,12 @@
+# SUR-MRICH: pool 88 lines (pool4.py scaffolds), f 0.5, 30 units per pass per level, K=300, master seed 20261012
+# L1: extra set 23 lines, gloss m 54, letters 906; nx 23 drawn; expected added gloss m 54.0
+# L2: extra set 117 lines, gloss m 98, letters 4219; nx 117 drawn; expected added gloss m 98.0
+# L3: extra set 117 lines, gloss m 98, letters 4219; nx 234 drawn; expected added gloss m 196.0
+# L1 lines: 373_0730 L03 m4; 373_0746 L17 m3; 373_0758R L05 m3; 373_0692R/0693L L08 m3; 373_0702 L20 m3; 372_0189R 372_0189_right_native_L14 m3; 372_0189R 372_0189_right_native_L08 m3; 373_0692R/0693L L06 m2; 373_0746 L20 m2; 373_0692R/0693L L02 m2; 373_0746 L16 m2; 373_0702 R13 m2; 373_0702 L01 m2; 373_0702 R05 m2; 373_0702 R07 m2; 373_0702 R14 m2; 373_0702 R02 m2; 373_0758R L04 m2; 373_0702 R17 m2; 372_0189R 372_0189_right_native_L10 m2; 372_0189R 372_0189_right_native_L06 m2; 373_0730 L08 m2; 373_0730 L02 m2
+  L1 A: units 30; lines 111; y on m mean 48.1, on n mean 220.5; S mean 0.820; p99.5 mean 0.824; verdicts {'LEANS n': 14, 'NO SPLIT SHOWN': 16}; LEANS n 0.467
+  L1 B: units 30; lines 111; y on m mean 50.4, on n mean 218.2; S mean 0.813; p99.5 mean 0.821; verdicts {'LEANS n': 10, 'NO SPLIT SHOWN': 20}; LEANS n 0.333
+  L2 A: units 30; lines 205; y on m mean 65.5, on n mean 419.0; S mean 0.865; p99.5 mean 0.859; verdicts {'NO SPLIT SHOWN': 11, 'LEANS n': 19}; LEANS n 0.633
+  L2 B: units 30; lines 205; y on m mean 66.2, on n mean 412.3; S mean 0.862; p99.5 mean 0.861; verdicts {'NO SPLIT SHOWN': 15, 'LEANS n': 15}; LEANS n 0.500
+  L3 A: units 20; lines 322; y on m mean 105.3, on n mean 652.0; S mean 0.861; p99.5 mean 0.849; verdicts {'LEANS n': 18, 'NO SPLIT SHOWN': 2}; LEANS n 0.900
+  L3 B: units 20; lines 322; y on m mean 106.2, on n mean 655.0; S mean 0.861; p99.5 mean 0.853; verdicts {'LEANS n': 17, 'NO SPLIT SHOWN': 3}; LEANS n 0.850
+GATE (L1 power >= 0.80 on both passes at f 0.50): FAIL -> stop after step 1
