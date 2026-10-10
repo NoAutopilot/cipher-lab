@@ -209,3 +209,20 @@ Bourdeau at HEAD (if he has moved on or read it, record it), then the next unswe
 9 Oct UTC spend on this lane: 0 workers so far; lane orchestrator not exposed.
 Next best attempt and why: nothing runnable from the cloud today without Gallica or a desk answer; the R1/R2 rows are
 the strongest new material (a held key or a sibling folder) once reproduced. Re-check once a day.
+
+## Wave 17 (10 Oct 2026, 06:1x UTC by date -u): daily re-check
+
+- Dataset refreshed (`python3 tools/holder_dataset.py --out BNF-VALUE.tsv`; `--check` had gone stale): 118 BnF
+  folders (was 104 on 7 Oct), 35 classified readings (was 33), 20 at N3 or better, 6 of those at D2 or deeper. The
+  summary table in section 1 is as of 7 Oct; the TSV is current.
+- Shelf: `tools/data/tool_shelf.tsv` rows added for `bnf_findingaid.py` and `holder_dataset.py` (both `register`,
+  offline tests named), answering the 9 Oct 01:16 HOLDER-EXPORT flag.
+- Gallica: 403 again (1 request, IIIF info.json); orchestrator (account-4) holds Gallica fetches until 11 Oct
+  00:00 UTC. Rondinelli (fr3613-rondinelli-1590) waits.
+- Bourdeau re-screened at HEAD fcb07b0 (9 Oct 18:40 -05:00; was 1fb3c46): fr.4698/4700 still his catalogue 331
+  candidate (Nevers key no.35, gonzaga1590) -- left to him; nothing new on fr.3613, 3622, 3654, 4707 or Sega.
+- Desk rows (Sega edition; fr.3622 f.91 owner sign sorter): no answer in ROOM.md or ASKS.md since 9 Oct 06:30.
+- Workers: none (seven_day allowed_warning on accounts 1 and 2 -> BUDGETS scaling rule; script work only).
+
+10 Oct UTC spend on this lane: 0 workers. Next best attempt: unchanged -- Rondinelli page read once Gallica answers
+(~$1, <= 20 requests); R1/R2 reproduction rows; the two desk rows. Re-check once a day.
