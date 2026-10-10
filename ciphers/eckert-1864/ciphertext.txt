@@ -4758,3 +4758,136 @@ them since except the Baltic which was at Baptism
 this morning walrus Are see Webb Stir pandora vincent.
 Geo.  D. Sheldon
 note: FM65-B: Step 0 (fm65b_step0.py, step0_ordered.py's functions): (a) 0.640 (16/25), (b) p95 0.280, HIT; under a meaning-shuffled copy of No. 1 (seed 7) (a) 0.640, also HIT: on mssEC 25 the holder transcription is the cipher copy itself, so a step-0 hit is a non-test (RULING, LEDGER-13 jobs wave 2) and does not hold the row. Book: No. 1 (BOOK-FM65: No. 1 reads all ten tested 1865 rows; this row predicted No. 1 from its month and header). Holder (CISOSEARCHALL, all pointers, control 9678 returned): no clear copy of this row. Print: not located (phrase grep over 177 cached volumes, loose co-occurrence search, IA be-api whole-collection queries; a search result, not a verdict). Context, not a copy: pointer 7682 (clear, Ft Monroe 4 Jan 1865 5.30 PM, Ingalls to the QM General) 'the Ariel, Illinois, Gen. Sedgwick, Victor & Baltic are ordered to Balto; these vessels can carry 4,000 men'. M by hand: plain 'Baltic' read [Chattahoochee] (misfire).
+
+### E500 | Page 303 | 5847 | mssEC 25 (obj 5952, pointer 5847), 3 Jan 1865 Ft Monroe 2.30 PM, Sheldon (operator J. W. Sampson) to Col. Newport, chief quartermaster, Baltimore: as the anchor and chain cannot be furnished in time for the steamer Baltic she will not be sent on the expedition, so Newport need not send to New York for them; signed Wm L. James, Capt. AQM (FM65-A; row 5847/2; read from the transcription, no image)
+Ft Monroe Jan 3 / 65
+J. W. Sampson Baltimore
+Animal Henrietta pebble for pandora Newport sheaf vinton Baptism
+zebra As you are unable to furnish anchor &
+chain in time for weaseler Baltic she will not
+be sent on the roman consequently you need not
+send to france for them walrus William L. James
+Geo. D. Sheldon
+note: FM65-A: FM65-A step 0 (fm65a_step0.py, a/lcs-n/b p95): 0.333 (8/24) / b 0.250 MISS. M by hand: the decoder's 'Donelson' for the plain 'anchor' and 'Chattahoochee' for the plain steamer name Baltic are key rows misfiring on plain words (the siblings 5858 and 5865 write 'Baltic' and 'anchor' plain, and 5865, Baltimore 6 Jan, is the reply about the Baltic's anchor and chain); 'france' = New York is H and fits 5865 ('she can go to france, coal and get her anchor and return to Annapolis'). Antecedent/answer: 5865 (6 Jan, J. W. Sampson to Sheldon). Not a clear copy, not in print (OR I/46 pts 1-3 and I/47 pt 1, I/51 pts 1-2 on disk, 183-volume grep, CISOSEARCHALL 'anchor chain Baltic Sampson' -> 5847 itself and 5865 only). Image not read (transcription only, rule 2); the BOOK (No. 1) is by sense and BOOK-FM65; not novelty-classified (rule 10).
+
+### E502 | Page 305 | 5849 | mssEC 25 (obj 5952, pointer 5849), 3 Jan 1865 City Point 4.35 PM, S. H. Beckwith to Sheldon at Ft Monroe, for Gen. Rawlins by direction of Gen. Grant: the steamers coaled and watered under Gen. Ingalls's instructions are ready for service; turn them over to Col. Morgan, chief commissary, to be loaded with the required rations and tell him when the vessels are ready to receive them; Rawlins wishes to know what number of troops each steamer will carry (FM65-A; row 5849/1; transcription only)
+City Point 4.35 P. M. Jan. 3 / 65
+Geo. D. Sheldon Ft Monroe
+Katy pebble for pandora Webster stop shelter Rawlins Berry
+to Juno directs me inform you thats festus the
+weasels which you've been and are now cooling and
+watering under the instructions received from shelter in gals
+Chief vincent pedlar are ready for surface that ewill
+turn them over to paradise Morgan Chief commissary toby
+loaded with required number wales and that you inform
+him soons the versailles are ready to receive them
+shelby Rawlins wishes Know what No whisky wayworn will
+Carry tattoo send up yoke William Tea Howell pilgrim
+S. H. Beckwith
+note: FM65-A: FM65-A step 0 (fm65a_step0.py, a/lcs-n/b p95): 0.667 (4/6) / b 0.667 - (window of 6 words, no information). 'whisky' = Troops is S (KEY-TW; the decoder reads it so). 'cooling and watering' = coaling and watering (a plain slip the decoder leaves; M). Context in print: Rawlins to Morgan 10.30 a.m. 3 Jan and Morgan to Rawlins 11.30 a.m. 1 p.m. 5.30 p.m. 6.30 p.m. (OR I/46 pt 2 pp.21-22, the dates there read '5 January' by OCR) -- the same fleet, not this message. Not a clear copy (CISOSEARCHALL 'Morgan commissary coaling watering Rawlins' 0 hits), not in print on the phrases searched. Image not read (transcription only, rule 2); the BOOK (No. 1) is by sense and BOOK-FM65; not novelty-classified (rule 10).
+
+### E504 | Page 307 | 5851 | mssEC 25 (obj 5952, pointer 5851), 3 Jan 1865 Ft Monroe 6.30 PM, Sheldon to Beckwith at City Point, for Capt. Howell, AQM: the steamers ordered to report to Col. Bradley are the Euterpe, H. Livingston, Gen. Lyon, Varuna, A. Dupont, Prometheus, Thames, Idaho, DeMolay, McClellan, Champion, Weybossett and Towanda; the Atlantic, rationed for 1400 troops, is ready but draws too much water to go up; by direction of the chief quartermaster, Wm L. James (FM65-A; row 5851/0; transcription only)
+Ft Monroe Jan. 3 / 65
+S. H. Beckwith
+City Point
+Mary for princess William Tea Howell a vinton zebra
+The weaselers ordered to wick to pandora Bradley are
+the Euterpe pekin H. Livingston pedlar Shelby Lyon comma
+Varuna pekin A Dupont pedlar Prometheus Thames Idaho DeMolay
+M'Clellan Champion Weybossett and Towanda unity The Atlantic wales
+shunned for fugitive publish whisky is ready draws too
+much water togo up zodiac By direction Chief Vinton
+youth William L. James pilgrim and a vincent end.
+Geo. D. Sheldon
+note: FM65-A: FM65-A step 0 (fm65a_step0.py, a/lcs-n/b p95): 0.696 (32/46) / b 0.217 HIT (a non-test on this ledger, rule 3; BOOK-FM65's three shuffled-key copies hit the same row 36/59 /58/62 words). C check: 'the Atlantic, 1,400 men, cannot go up to City Point' is Morgan's 5.30 p.m. 3 Jan telegram (OR I/46 pt 2 p.22, 'January 6' by OCR) -- 1400 and 'draws too much water to go up' agree (numbers from the key: M for which code gives 1400). Col. Bradley, AQM at City Point, appears in OR I/46 pt 3 (March 1865, a different message). Fleet list not located: CISOSEARCHALL 'Euterpe Livingston Varuna Prometheus' -> 5851 only; phrase grep none. Image not read (transcription only, rule 2); the BOOK (No. 1) is by sense and BOOK-FM65; not novelty-classified (rule 10).
+
+### E505 | Page 307 | 5851 | mssEC 25 (obj 5952, pointer 5851), two telegrams, 3 Jan 1865: (1) Ft Monroe 7 PM, Sheldon to Beckwith for Capt. Howell, AQM, from Col. R. C. Webster: steamers all ready coaled and loaded with proper rations, the list stating capacity of each will be handed you; (2) City Point 9.30 PM, Beckwith to Sheldon: Gen. Rawlins wishes one of the going steamers sent to this place for other service, with a good supply of coal, no rations required (FM65-A; row 5851/1; transcription only)
+Ft Monroe Jan. 3 / 65
+S. H. Beckwith City Point
+Martha for pilgrim William Tea Howell a vincent unity
+wayworn ears all ready Cold and load ed with
+proper Wales The list wilby handed you stating Cap
+pace City &c. of each Are See webster pandora
+Geo. D. Sheldon
+City Point Jan'y 3 / 65
+Geo. D. Sheldon Ft. Monroe
+Rosetta paradise webster unity in addie shun tooth
+weasel ears named inure wreate shelter rawlins wishes
+utah send to this verion plug torch bessie
+going wayworn that you have pedlar for other
+service zebra please heifer furnished with good supply
+of coles no wales wilbey required honor Howell
+S. H. Beckwith
+note: FM65-A: FM65-A step 0 (fm65a_step0.py, a/lcs-n/b p95): 0.810 (47/58) / b 0.241 HIT (non-test). C: message (1) is printed OR I/46 pt 2 p.21: 'Fort Monroe, January 5 [3, OCR], 1865 -- 7 p. m. Capt. William T. Howell, Assistant Quartermaster: Steamers all ready coaled and loaded with proper rations. The list will be handed you, stating capacity, &c., of each. R. C. WEBSTER, Colonel.' -- word for word, time 7 PM agrees with the header, Are See = R. C. (Webster; H). Message (2) is not located (no clear copy: CISOSEARCHALL 'Webster Howell coaled loaded' 0 hits; phrase grep none): it is the only unprinted reading here. Filed with message (1) as C; the row is half in print, a verifier should class it so. Image not read (transcription only, rule 2); the BOOK (No. 1) is by sense and BOOK-FM65; not novelty-classified (rule 10).
+
+### E506 | Page 308 | 5852 | mssEC 25 (obj 5952, pointer 5852), 4 Jan 1865 City Point 1 PM, S. H. Beckwith to Sheldon at Ft Monroe, from Gen. Rawlins: wishes to know if the steamers named in your dispatch have started for this point yet; they have not been reported from Jamestown (FM65-A; row 5852/1; transcription only; about 25 words)
+City Point Jan 4 / 65
+Geo. D. Sheldon Ft Monroe
+Harriet penny Webster stop shelby ran lines
+wishes to know if the weasel ears
+named inure dispatch have started yet for
+this point they haven't yet been wicked
+from James town yoke William tea Howl
+S. H. Beckwith
+note: FM65-A: FM65-A step 0 (fm65a_step0.py, a/lcs-n/b p95): 1.000 (5/5) / b 0.800 HIT (window of 5 words, non-test). Short and mostly plain: clause = General Rawlins wishes to know if the steamers named in your dispatch have started yet for this point, they have not yet been reported from Jamestown; code meanings General, Steam, Report, signed (H); 'ran lines' = Rawlins is a plain misspelling the decoder leaves (M). Not a clear copy (CISOSEARCHALL 'Jamestown dispatch steamers Rawlins' 0 hits); not in print on the phrases searched. Kept because its sense fits the fleet of 5849-5851 and 5855; thin. Image not read (transcription only, rule 2); the BOOK (No. 1) is by sense and BOOK-FM65; not novelty-classified (rule 10).
+
+### E507 | Page 308 | 5852 | mssEC 25 (obj 5952, pointer 5852), two telegrams, 4 Jan 1865: (1) Ft Monroe 3 PM, Sheldon to Beckwith for Howell: all the steamers named had left here before 9 AM today, signed R. C. Webster, Col. QM; (2) Hd. Qrs. Army of the James 5 PM, R. O'Brien to Sheldon for Col. Webster: if the steamer Russia is at Monroe please send her here in time for a flag ship, by direction of Gen. Butler (FM65-A; row 5852/2; transcription only)
+Ft Monroe Jan 4 / 65
+S H. Beckwith City Point
+Imogene for Howell unity all the weaselers
+named had left here before pony AM
+wedge yoke Are See Webster paradise Vinton
+Geo. D. Sheldon
+Hd. Qrs. A. J.
+Geo D Sheldon Ft Monroe
+Lucy too paradise are see webster
+animal unity if the weasler Russia
+is at animal please send here
+time for a flag ship pekin
+by direction of Knave South Dodge
+R. O'Brien
+note: FM65-A: FM65-A step 0 (fm65a_step0.py, a/lcs-n/b p95): 0.594 (19/32) / b 0.250 HIT (non-test). M by hand: 'Dodge' decoded [McMinnville] and 'flag' decoded [11] are key rows misfiring on plain words (Col. Dodge, Butler's chief quartermaster, is in OR I/46 pt 2 p.24 on 3 Jan; the 'flag ship' reading is the sense of 'time for a flag ship'); Knave = Gen. Butler is H. Russia and Monroe: CISOSEARCHALL 'Russia flag ship' -> 5852 only; not in print on the phrases searched. Image not read (transcription only, rule 2); the BOOK (No. 1) is by sense and BOOK-FM65; not novelty-classified (rule 10).
+
+### E508 | Page 309 | 5853 | mssEC 25 (obj 5952, pointer 5853), 4 Jan 1865 Ft Monroe, Sheldon to Beckwith for Capt. Howell, AQM, from Webster: the C. C. Leary is just in and leaves immediately for City Point, she answers the description you required and has ten days' coal; if you can spare the Montauk we need her here (FM65-A; row 5853/1; transcription only; about 28 words)
+Ft Monroe Jan 4 / 65
+S. H. Beckwith City Point
+Imogene for pilgrim William Tea Howell a
+vincent unity The See See Leary is
+just in and leaves immed'y for blubber
+She answers the description you required and
+has feeble days Cole If you can
+spare the Montauk we need her here -
+Walrus Webster &c.  Geo. D. Sheldon
+note: FM65-A: FM65-A step 0 (fm65a_step0.py, a/lcs-n/b p95): 0.731 (19/26) / b 0.308 HIT (non-test). Codes read: City Point (blubber), ten (feeble), the signature; the rest is plain. The C. C. Leary is also in 5849/0, 5858 and 5854/0 (O'Brien: 'ordered to send the C. C. Leary and she has gone'), which fixes the ship and the date. CISOSEARCHALL 'Leary Montauk' -> 5853, 5854 (the sibling); not a clear copy; not in print on the phrases searched. Image not read (transcription only, rule 2); the BOOK (No. 1) is by sense and BOOK-FM65; not novelty-classified (rule 10).
+
+### E509 | Page 310 | 5854 | mssEC 25 (obj 5952, pointer 5854), 4 Jan 1865 Hd Qrs. Army of the James 5 PM, R. O'Brien to Sheldon for Col. Dodge: the Bendford is not here, the full list was sent to Gen. Butler this morning and Ainsworth has a copy; since then I have been ordered to send the C. C. Leary and she has gone; the Montauk is there, and if you need her telegraph Bradley at once; no other vessel here except the Alliance and the hospital boat Metropolis; the boats sent thus far fully comply with the orders of [Grant]; signed Sheldon (FM65-A; row 5854/0; transcription only)
+Ft Monroe Jan 4 / 65
+R. O'Brien
+Hd Qrs. A. J.
+Lucy for pandora Georges Dodge zebra The Bende Ford
+is not here unity Full list was cento Knox
+this Am zebra Ainsworth has copy with him unity
+Since sending the list to Knave I hevbin ordered
+to send the See See Leary and She has
+gone zodiac The Montauk is there and few need
+her wreathe Bradley at once There is no other
+Verseille here except the Alliance and the Horse spittal
+boat Wicoff win Metropolis The boots sent thus far
+fully comply with the orders of John Orcey Webster
+Geo. D. Sheldon
+note: FM65-A: FM65-A step 0 (fm65a_step0.py, a/lcs-n/b p95): 0.772 (44/57) / b 0.228 HIT (non-test). M by hand: 'Dodge' decoded [McMinnville] (plain name misfire, as E507); 'win Metropolis' and 'Wicoff' after 'hospital boat' unresolved ('[West]' is the decoder's); 'John Orcey' = Grant's orders (John = Grant is a key row, Orcey not read, M). Bradley = Col. Bradley, AQM at City Point (E504). The Leary sailing is stated in E508. CISOSEARCHALL 'Bendford Ainsworth Alliance' 0 hits; not in print on the phrases searched. Image not read (transcription only, rule 2); the BOOK (No. 1) is by sense and BOOK-FM65; not novelty-classified (rule 10).
+
+### E511 | Page 311 | 5855 | mssEC 25 (obj 5952, pointer 5855), 4 Jan 1865 City Point 5.30 PM, S. H. Beckwith to Sheldon at Ft Monroe, from Gen. Rawlins: two light-draft steamers, not over five feet, suitable for going with the other vessels and standing rough weather, will be required, to be held in readiness at Monroe, boats like the Eliza Hancox and the Winants will answer; a good supply of coal only is required; inform me whether these vessels [are available]; signed Howell (FM65-A; row 5855/2; transcription only)
+City Point Jan. 4 / 65
+Geo D Sheldon Ft Monroe
+Laura Webster unity peach light draft steamers pedlar not over
+person feet pekin suitable for going with the other verseilles
+and standing rough weather wilby required and shelby rawlins wishes
+them helden readiness at animal stop boots similar tooth Eliza
+hancox and a winants will answer purpose zebra if they
+arrat appian or near there he wishes them held in
+readiness and prepared at once forth service required stop a
+good supply coal only wilby required on them please inform
+me if these vassals ditto nutmeg walrus William Tea Howl
+S. H. Beckwith
+note: FM65-A: FM65-A step 0 (fm65a_step0.py, a/lcs-n/b p95): 1.000 (4/4) / b 1.000 - (window of 4 words, no information; BOOK-FM65's wider window 0.862 / 0.231 HIT). The Eliza Hancox and the Winants are the dispatch boats named in 5856 (O'Brien/Sheldon, 4 Jan: 'The Eliza Hancox has already been sent ... The winants is hardly capable of going'). The Eliza Hancox appears in the Fisher expedition order (OR I/46 pt 2, p.90 index, the landing order text), not this telegram. CISOSEARCHALL 'Hancox Winants' -> 5855, 5856; not a clear copy; not in print on the phrases searched. Image not read (transcription only, rule 2); the BOOK (No. 1) is by sense and BOOK-FM65; not novelty-classified (rule 10).

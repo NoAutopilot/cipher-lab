@@ -2255,5 +2255,59 @@ S. H. Beckwith City Point {time: 7.30 PM} for [Brigadier General] ring galls [.]
 
 Code-word tokens: H 18.
 
-Totals over the 354 entries: H 6193, C 94, I 25, M 46, S 20, U 10.
+**E500 | Page 303 | 5847 | mssEC 25 (obj 5952, pointer 5847), 3 Jan 1865 Ft Monroe 2.30 PM, Sheldon (operator J. W. Sampson) to Col. Newport, chief quartermaster, Baltimore: as the anchor and chain cannot be furnished in time for the steamer Baltic she will not be sent on the expedition, so Newport need not send to New York for them; signed Wm L. James, Capt. AQM (FM65-A; row 5847/2; read from the transcription, no image)**
+
+J. W. [Ferry] Baltimore [Monroe] {time: 2.30 PM} [3] for [Colonel] Newport sheaf [Quartermaster] [Baltimore] [.] As you are unable to furnish [Donelson] & chain in time for [Steam]er [Chattahoochee] she will not be sent on the [Expedition] consequently you need not send to [New York] for them  {tail: [signed] [100] L. James Geo. D. Sheldon}
+
+Code-word tokens: H 15.
+
+**E502 | Page 305 | 5849 | mssEC 25 (obj 5952, pointer 5849), 3 Jan 1865 City Point 4.35 PM, S. H. Beckwith to Sheldon at Ft Monroe, for Gen. Rawlins by direction of Gen. Grant: the steamers coaled and watered under Gen. Ingalls's instructions are ready for service; turn them over to Col. Morgan, chief commissary, to be loaded with the required rations and tell him when the vessels are ready to receive them; Rawlins wishes to know what number of troops each steamer will carry (FM65-A; row 5849/1; transcription only)**
+
+Geo. D. Sheldon Ft Monroe {time: 4.30 PM} [3] for [Colonel]  {tail: [signed] stop [General] Rawlins [Chief of Staff] to [Maj Genl U.S. Grant] directs me inform you thats festus the [Steam]'s which you've been and are now cooling and watering under the instructions received from [General] in gals Chief [Quartermaster] [,] are ready for surface that ewill turn them over to [Colonel] Morgan Chief commissary toby loaded with required number [Rations] and that you inform him soons the versailles are ready to receive them [General] Rawlins wishes Know what No [Troops] [Steam] will Carry tattoo send up [signed] [100] Tea Howell [Captain] S. H. Beckwith}
+
+Code-word tokens: H 19.
+
+**E504 | Page 307 | 5851 | mssEC 25 (obj 5952, pointer 5851), 3 Jan 1865 Ft Monroe 6.30 PM, Sheldon to Beckwith at City Point, for Capt. Howell, AQM: the steamers ordered to report to Col. Bradley are the Euterpe, H. Livingston, Gen. Lyon, Varuna, A. Dupont, Prometheus, Thames, Idaho, DeMolay, McClellan, Champion, Weybossett and Towanda; the Atlantic, rationed for 1400 troops, is ready but draws too much water to go up; by direction of the chief quartermaster, Wm L. James (FM65-A; row 5851/0; transcription only)**
+
+S. H. Beckwith City Point {time: 6.30 PM} for [Captain] [100] Tea Howell a [Quartermaster] [.] The [Steam]ers ordered to [Report] to [Colonel] Bradley are the Euterpe [,] H. Livingston [,] [General] Lyon comma Varuna [,] A Dupont [,] Prometheus Thames Idaho DeMolay M'Clellan Champion Weybossett and Towanda [.] The Atlantic [Rations] shunned for [1400] [Troops] is ready draws too much water togo up [.] By direction Chief [Quartermaster]  {tail: [signed] [100] L. James [Captain] and a [Quartermaster] end. Geo. D. Sheldon}
+
+Code-word tokens: H 24.
+
+**E505 | Page 307 | 5851 | mssEC 25 (obj 5952, pointer 5851), two telegrams, 3 Jan 1865: (1) Ft Monroe 7 PM, Sheldon to Beckwith for Capt. Howell, AQM, from Col. R. C. Webster: steamers all ready coaled and loaded with proper rations, the list stating capacity of each will be handed you; (2) City Point 9.30 PM, Beckwith to Sheldon: Gen. Rawlins wishes one of the going steamers sent to this place for other service, with a good supply of coal, no rations required (FM65-A; row 5851/1; transcription only)**
+
+S. H. Beckwith City Point {time: 7 PM} for [Captain] [100] Tea Howell a [Quartermaster] [.] [Steam] ears all ready Cold and load ed with proper [Rations] The list wilby handed you stating Cap pace City &c. of each Are See  {tail: [signed] [Colonel] Geo. D. Sheldon City Point Jan'y 3 / 65 Geo. D. Sheldon Ft. Monroe {time: 9.30 PM} [Colonel] [signed] [.] in addie shun tooth [Steam] ears named inure wreate [General] rawlins wishes utah send to this verion [1] [Of the] bessie going [Steam] that you have [,] for other service [.] please heifer furnished with good supply of coles no [Rations] wilbey required honor Howell S. H. Beckwith}
+
+Code-word tokens: H 21.
+
+**E506 | Page 308 | 5852 | mssEC 25 (obj 5952, pointer 5852), 4 Jan 1865 City Point 1 PM, S. H. Beckwith to Sheldon at Ft Monroe, from Gen. Rawlins: wishes to know if the steamers named in your dispatch have started for this point yet; they have not been reported from Jamestown (FM65-A; row 5852/1; transcription only; about 25 words)**
+
+Geo. D. Sheldon Ft Monroe {time: 1 PM} [4]  {tail: [signed] stop [General] ran lines wishes to know if the [Steam] ears named inure dispatch have started yet for this point they haven't yet been [Report]ed from James town [signed] [100] tea Howl S. H. Beckwith}
+
+Code-word tokens: H 8.
+
+**E507 | Page 308 | 5852 | mssEC 25 (obj 5952, pointer 5852), two telegrams, 4 Jan 1865: (1) Ft Monroe 3 PM, Sheldon to Beckwith for Howell: all the steamers named had left here before 9 AM today, signed R. C. Webster, Col. QM; (2) Hd. Qrs. Army of the James 5 PM, R. O'Brien to Sheldon for Col. Webster: if the steamer Russia is at Monroe please send her here in time for a flag ship, by direction of Gen. Butler (FM65-A; row 5852/2; transcription only)**
+
+S H. Beckwith City Point {time: 3 PM} for Howell [.] all the [Steam]ers named had left here before [9] AM [Today]  {tail: [signed] Are See [signed] [Colonel] [Quartermaster] Geo. D. Sheldon Hd. Qrs. A. J. Geo D Sheldon Ft Monroe {time: 5 PM} too [Colonel] are see [signed] [Monroe] [.] if the weasler Russia is at [Monroe] please send here time for a [11] ship [,] by direction of [Maj Gen B. F. Butler] South [McMinnville] R. O'Brien}
+
+Code-word tokens: H 19.
+
+**E508 | Page 309 | 5853 | mssEC 25 (obj 5952, pointer 5853), 4 Jan 1865 Ft Monroe, Sheldon to Beckwith for Capt. Howell, AQM, from Webster: the C. C. Leary is just in and leaves immediately for City Point, she answers the description you required and has ten days' coal; if you can spare the Montauk we need her here (FM65-A; row 5853/1; transcription only; about 28 words)**
+
+S. H. Beckwith City Point {time: 3 PM} for [Captain] [100] Tea Howell a [Quartermaster] [.] The See See Leary is just in and leaves immed'y for [City Point] She answers the description you required and has [10] days Cole If you can spare the Montauk we need her hereWalrus  {tail: [signed] &c. Geo. D. Sheldon}
+
+Code-word tokens: H 8.
+
+**E509 | Page 310 | 5854 | mssEC 25 (obj 5952, pointer 5854), 4 Jan 1865 Hd Qrs. Army of the James 5 PM, R. O'Brien to Sheldon for Col. Dodge: the Bendford is not here, the full list was sent to Gen. Butler this morning and Ainsworth has a copy; since then I have been ordered to send the C. C. Leary and she has gone; the Montauk is there, and if you need her telegraph Bradley at once; no other vessel here except the Alliance and the hospital boat Metropolis; the boats sent thus far fully comply with the orders of [Grant]; signed Sheldon (FM65-A; row 5854/0; transcription only)**
+
+R. O'Brien Hd Qrs. A. J. {time: 5 PM} for [Colonel] Georges [McMinnville] [.] The Bende Ford is not here [.] Full list was cento [Maj Gen B. F. Butler] this Am [.] Ainsworth has copy with him [.] Since sending the list to [Maj Gen B. F. Butler] I hevbin ordered to send the See See Leary and She has gone [.] The Montauk is there and few need her [Telegraph (-ed, -ing)] Bradley at once There is no other Verseille here except the Alliance and the Horse spittal boat [West] win Metropolis The boots sent thus far fully comply with the orders of [Maj Genl U.S. Grant] Orcey  {tail: [signed] Geo. D. Sheldon}
+
+Code-word tokens: H 14.
+
+**E511 | Page 311 | 5855 | mssEC 25 (obj 5952, pointer 5855), 4 Jan 1865 City Point 5.30 PM, S. H. Beckwith to Sheldon at Ft Monroe, from Gen. Rawlins: two light-draft steamers, not over five feet, suitable for going with the other vessels and standing rough weather, will be required, to be held in readiness at Monroe, boats like the Eliza Hancox and the Winants will answer; a good supply of coal only is required; inform me whether these vessels [are available]; signed Howell (FM65-A; row 5855/2; transcription only)**
+
+Geo D Sheldon Ft Monroe {time: 5.30 PM}  {tail: [signed] [.] [2] light draft steamers [,] not over [5] feet [,] suitable for going with the other verseilles and standing rough weather wilby required and [General] rawlins wishes them helden readiness at [Monroe] stop boots similar tooth Eliza hancox and a winants will answer purpose [.] if they arrat [Monroe] or near there he wishes them held in readiness and prepared at once forth service required stop a good supply coal only wilby required on them please inform me if these vassals ditto [Available] [signed] [100] Tea Howl S. H. Beckwith}
+
+Code-word tokens: H 14.
+
+Totals over the 363 entries: H 6335, C 94, I 25, M 46, S 20, U 10.
 <!-- decode.py: derived block ends -->
