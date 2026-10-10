@@ -133,6 +133,10 @@ def load():
     for it in items:
         rd[it.get("reading")] = rd.get(it.get("reading"), 0) + 1
     _cache["per_reading"] = rd
+    sn = {}
+    for it in items:
+        k = _stable(it["file"][:-5]); sn[k] = sn.get(k, 0) + 1
+    _cache["per_stable"] = sn   # English lines attach by stable name only where it names one item (english_for)
     for it in items:
         if not it["lang"]:
             it["lang"] = LANG_FALLBACK.get(it["folder"]) or spec_language(it["folder"])
@@ -545,6 +549,12 @@ def context_paragraphs():
     return _cache["ctx"]
 
 
+def _stable(name):
+    """An item file name without its running-number prefix ('003-jan-van-...' -> 'jan-van-...'): the numbers shift whenever
+    readings are added (10 Oct 2026: 75 new items left 154 of 240 pages "English pending"), the rest of the name does not."""
+    return re.sub(r"^\d+-", "", name)
+
+
 def english_lines():
     if "en" not in _cache:
         out = {}
@@ -555,6 +565,18 @@ def english_lines():
                     out.setdefault(c[0], []).append((c[1], c[2], c[3]))
         _cache["en"] = out
     return _cache["en"]
+
+
+def english_for(name):
+    """English lines for item file stem `name`: an exact match first; else the line set whose stable name (no running number)
+    is the same, but only when that stable name belongs to exactly one English item AND exactly one current item -- names that
+    repeat once the number is gone (15 of 157 on 10 Oct 2026) stay "English pending" rather than borrow another item's line."""
+    en = english_lines()
+    if name in en:
+        return en[name]
+    k = _stable(name)
+    keys = [e for e in en if _stable(e) == k]
+    return en[keys[0]] if len(keys) == 1 and _cache.get("per_stable", {}).get(k) == 1 else []
 
 
 def selection_rows():
@@ -622,7 +644,7 @@ def reading_section(it, sc, dsp, pfx):
                        + '<p class="k layer">As read, sign by sign, with grades</p>' + C.token_strip(toks()) + en
                        + f'<figcaption>{E(cap)} &middot; our crop &middot; {E(C.LICENCE)}</figcaption></figure>')
         return "".join(out), 0
-    en = english_lines().get(it["file"][:-5], [])
+    en = english_for(it["file"][:-5])
     entry = eckert_entry(it) if it["folder"] == "eckert-1864" else ""
     if entry:
         text, counts, rf = eckert_blocks()[entry]
