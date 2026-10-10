@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L34	13	3	M	yes	round-topped z-like after d
+f102r_L34	27	o	M	yes	small round o after tz x
+f102r_L34	30	R	M	yes	r-loop sign after s #, seen once in overlap
+f102r_L34	38	J	L	yes	tall flourish stroke before d
+f102r_L34	42	NONE	L	yes	p-like descender belongs to i/x group
+f102r_L34	43	h	M	yes	tall looped h shape
+f102r_L34	45	NONE	M	yes	non is plain script word
+f102r_L34	46	{ampersand}	M	yes	ampersand-like sign after non
+f102r_L34	47	{dot}	M	yes	single dot
+f102r_L34	48	x	M	yes	crossed x-like stroke
+f102r_L34	49	{dot}	M	yes	dot at line end
+f102r_L35	3	y	M	yes	swash y after pi sign
+f102r_L35	21	{dot}	M	yes	one dot only
+f102r_L35	23	6	M	yes	closed-loop digit 6 shape after tz
+f102r_L35	24	{swash}	M	yes	long sweeping stroke
+f102r_L35	29	NONE	L	yes	only oo then cross sign, no extra p

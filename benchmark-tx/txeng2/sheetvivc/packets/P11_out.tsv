@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L35	30	4	M	yes	cross-like digit 4 between oo and x
+f102r_L35	39	{dot}	L	yes	one dot before 2
+f102r_L35	40	2	M	yes	z-like with loop, 2 shape
+f102r_L35	48	z	L	yes	flat z before s
+f102r_L35	53	g	L	yes	g-like with flourish after c
+f102r_L36	1	q	M	yes	q-like with descender at line start
+f102r_L36	23	4	M	yes	cross-like 4 after p
+f102r_L36	35	NONE	L	yes	no separate sign before swash
+f102r_L36	36	{curl}	M	yes	large swash stroke after tz
+f102r_L37	8	NONE	M	yes	non is plain word
+f102r_L37	9	{box}	M	yes	boxed loop sign after non
+f102r_L37	14	p	M	yes	p with descender after x
+f102r_L37	15	o	L	yes	round loop sign
+f102r_L37	16	e	L	yes	e-like small
+f102r_L37	18	S	L	yes	tall stroke
+f102r_L37	24	NONE	L	yes	overlap area unclear
