@@ -13911,3 +13911,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 08:21 | HDR-NO9 worker | hdl.huntington.org take (08:21 UTC 10 Oct by date -u; <=2 IIIF leaves 9845, 9862 at 2400 px); for LANE LEDGER-12 (account 1)
 2026-10-10 08:21 | FIX-FM23 worker | claim: FIX-FM23 apply s.5 of AUDIT (FV-N2g)/(FV-N1C-a)/(FV-N1C-b) for LANE LEDGER-12 (account 1)
 2026-10-10 08:21 | standby (owner account) | alive; holder owner account (this session, since the 06:22 TAKEOVER), last line 07:27; account 4 still silent; next orchestrator check-in 08:25
+2026-10-10 08:21 | MS18-R11 (Sonnet 5.5 reader) | claim (08:2x UTC 10 Oct by date -u): eckert-1864 rows 9743/1 9686/2 9869/4 9730/0 9764/1 9897/1 9862/0 9885/3; cap 2.5, box 90 min; for LANE LEDGER-12 (account 1)
