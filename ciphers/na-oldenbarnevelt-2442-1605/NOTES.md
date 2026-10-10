@@ -1601,6 +1601,106 @@ further block's S test uses the OLD-O4 normaliser from the start (or the passes 
 AD >= 230 digits; small-liberty floor 24.2), key ours; re-derivation exact; 26 of 27 eye-checked tokens agree (L16 `h4237` likely
 `h4b3t7` "habito", solver lane); SO row SO-OLDEN-2442-L10 queued.
 
+## 24. OLD-O2, 10 Oct 2026: leaves 4 and 7 re-cut with neighbour masking, two fresh blind passes, re-graded (step (o2)); status stays open
+
+Brief: `.claude/briefs/runs/2026-10-10-ytbiz-family-0209-jobs.md`, "### OLD-O2" (account 2, LANE FAMILY-A2n, 02:19 UTC start by
+date -u). Prereg `transcription/PREREG_OLD-O2.md`, pushed in its own commit (46e41c071) before any blind pass was read.
+
+**Prior work (before the first priced step).** `python3 tools/prior_work.py na-oldenbarnevelt-2442-1605 --item-spec
+'shelfmark=NA 3.01.14 inv. 2442;folio=59v-62r;canvas=4,7;date=1605-12-23;sender=Juan Gara de Senisteros;recipient=Juan de la Pena'
+--step-type transcribe --fetch` -> exit 4: three LEAD 1-own rows (OLD-SIBS's crop-error paragraph, AUDIT 3's reading, this job's
+own claim), all recorded CLEAR with `--record` (no masked re-cut or second pass pair of L4/L7 exists; AUDIT 3c names (o2) as the
+way up). Other rows CLEAR (2-leaf, 3-solver bourdeau) or CONTEXT (3-tomokiyo, other letters); 3-solver aaymeloglu and 4-editions
+UNCHECKED-NET in the tool, carried CLEAR from V1-OLD (AUDIT 4, 8 Oct). Check 2 (leaf and neighbours): no gloss on the four
+regions re-cut here (seen on every crop). Check 5 not needed: no decoded word changed (grades only), so AUDIT 3/4's phrase
+searches stand.
+
+**Crops.** Every line on leaves 4 and 7 rises ~0.065-0.071 px/px to the right, a drift of 150-170 px (more than one 110 px line
+pitch) across a 2390 px region; that, not the missing mask alone, is why the OLD-SIBS crops held halves of two lines. Each region
+was levelled by one fixed rotation (bicubic, about the region centre, 200 px padding), saved as `images/crops_O2/rot_<prefix>.jpg`,
+and cut with line centres from the row-ink profile (checked by eye; peak detection skipped two lines on L4b):
+```
+rot_L4a = 004 region 750,1810,1780,1680 rotated -3.74 deg; rot_L4b = 004 region 2590,30,2390,3592 -3.79 deg
+rot_L7a = 007 region 600,760,1960,520 -4.07 deg (moved up: OLD-SIBS's L7a box 750,1160 sat on the clear lines below the cipher)
+rot_L7b = 007 region 2590,690,2390,2950 -3.98 deg
+python3 ../../tools/iiif_lines.py --image images/crops_O2/rot_L4a.jpg --out images/crops_O2 --prefix L4a --mask-neighbours --debug --centres 108,231,326,425,527,635,746,863,962,1066,1173,1270,1376,1490,1596   (15)
+python3 ../../tools/iiif_lines.py --image images/crops_O2/rot_L4b.jpg --out images/crops_O2 --prefix L4b --mask-neighbours --debug --centres 231,344,455,571,685,792,907,1018,1130,1253,1356,1468,1583,1689,1798,1906,2010,2124,2231,2340,2435,2535,2640,2749,2853,2958,3071,3182,3284,3402,3548   (31)
+python3 ../../tools/iiif_lines.py --image images/crops_O2/rot_L7a.jpg --out images/crops_O2 --prefix L7a --mask-neighbours --debug --centres 55,172,294,409   (4)
+python3 ../../tools/iiif_lines.py --image images/crops_O2/rot_L7b.jpg --out images/crops_O2 --prefix L7b --mask-neighbours --debug --centres 72,196,315,433,548,664,785,893,1001,1116,1231,1347,1464,1589,1710,1822,1931,2044,2150,2263,2371,2487,2594,2699,2789   (25; a 26th band at 2930 was blank page edge, removed)
+```
+84 crops, one line each (spot-checked: L4a_L01/L15, L4b_L01/L08/L11/L20/L21/L31, L7b_L01/L13/L24/L25). No NA request (images on disk).
+
+**Blind passes.** Eight Sonnet subagent calls, crops only, not told the key or the reading, told to write the cursive r as `r` and l
+as `l` (OLD-O4): sets L4a (15), L4b L01-16, L4b L17-31, L7 (29); pass A forward, pass B reverse. Files
+`transcription/passL_OLDO2_{L4,L7}_{A,B}.tsv` (L4 391/392 tokens, L7 247/249). Every subagent marked most rows conf=low (digit
+shapes 3/4/7/8 hard to separate). One call (L4b L17-31, pass B) had its Bash write refused and re-wrote the same draft with the
+Write tool on request; no re-read. `python3 scripts/decode_L457.py --diff`:
+```
+L4  edits 316  mean_len 1719  disagreement 18.4%     (OLD-SIBS unmasked: 30.9%)
+L7  edits 193  mean_len 1082  disagreement 17.8%     (OLD-SIBS unmasked: 57.1%)
+pooled edits 509 mean_len 2802 disagreement 18.2%
+```
+Over the 10% rule: **split recorded, no third machine pass** (prereg item 4). Agreement, not accuracy.
+
+**Reconciliation (one unit, this session, eye on the O2 crops).** Base `reconciled_L457_OLDSIBS.tsv` -> `transcription/
+reconciled_L457_OLDO2.tsv`. A scripted list of cipher tokens where both passes agree with each other on a reading 1-2 signs from the
+reconciled token (80 items) was mostly word-boundary artefacts; the 15 real sign candidates were eye-checked on the crops
+(L4a_02 a2353t4r, L4a_14 f28/f28r4 vs f88, L4b_10 7tr4 vs 7b4, L4b_15 s3n7 vs 83n7, L4b_20 t8n34 vs c8n84, L4b_24 4t38n vs 4l38n,
+L4b_26 628n7s vs b8n7s, L4b_30 8scr3638ss8 vs 8scr3b38s8, L7b_07 d8s7t4 vs -l4, L7b_13 27t4s vs 27l4s, L7b_17 m4n8r4 vs m4nd84,
+L7b_18 s7633n7 vs s7b3n7): **none is clearly supported by the image, so no sign changed**; the doubtful ones stay M as the
+grading leaves them. **Named eye-check suggestions:** L4a_05 `gr4nd7` -> `q24nd7` "quando": NOT supported (both masked passes read
+`gr4nd7`), stays open; L5_1 `s28ss8` -> `f28ss8` and L10 `h4237` -> `h4b3t7`: no masked pass in this job (L5 and L10 are outside
+(o2)), still open. L7b_18: both passes read a `b` (6) in third place (`s7b533n7`, `s7b3n7`), consistent with AUDIT 3's
+"sobrino not excluded"; the fourth sign is not settled, left as written.
+
+**Decode and grades.** `python3 scripts/decode_L457.py` (default now OLD-O2: L4/L7 against the passL passes, L5 against its
+OLD-SIBS passes, OLD-O4 normaliser) -> `reading_L457.txt` (words unchanged; header and grades only), `reading_L457_tokens.tsv`
+(gains a `digits` column), `transcription/reading_L457_cipher_only.txt` (one y->i fold more than the committed copy: "yes"->"ies");
+`--check` exit 0; `--norm sibs` reproduces OLD-SIBS's S 87 / M 642. Cipher tokens 729: **H 0, C 0, S 165, M 564, I 0** (was S 87).
+Decomposition (`--decomp`, the same L4/L7 tokens, OLD-O4 normaliser on both):
+```
+OLD-SIBS passes   L4: words S 66 M 310; digit S 112/750 (14.9%)    L7: words S 20 M 222; digit S 31/512 (6.1%)
+OLD-O2 passes     L4: words S 85 M 291; digit S 143/750 (19.1%)    L7: words S 60 M 182; digit S 92/512 (18.0%)
+```
+(OLD-SIBS's registered grading, no fold, had L4 S 50 / L7 S 20 words.) The masked passes raise L7 three-fold; L4 gains less.
+Cryptanalytic result (no H or C).
+
+**Matched controls (prereg item 7; both depend on the key).** `--control` / `--scontrol`, L4+L7 cipher tokens, V.S. excluded:
+```
+lexicon-hit share: 609 tokens; fixed key 2=u3=i4=a7=o8=e 0.790, rank 1 of 120; 119 permutations mean 0.445, max 0.616 (4<->7 swap)
+S share: 609 tokens, 174 in both passes; fixed key 0.236, rank 1 of 120; permutations mean 0.145, max 0.197 (2<->3 u/i swap)
+```
+Both pass marks met. The S-share margin over the best wrong key is 0.039 (scan 10's was 0.021).
+
+**Depth numbers (item 8; the verifier decides depth).** `--depth` (digit = signs 2/3/4/7/8; clear tokens do not break a stretch):
+```
+L4: digit 750, S 143 (19.1%); longest S stretch 13 digits ("con migo como amigo i en secreto"); AD with 291 M words 559 digits
+L5: digit 217, S 31 (14.3%); longest 7 ("decia como io"); AD 179
+L7: digit 512, S 92 (18.0%); longest 5 ("de verano i"); AD 352
+L4+L5+L7: digit 1479, S 266 (18.0%; AUDIT 3c 9.0% on its 1502-digit count); longest 13 digits; AD with 564 M words 1078 digits
+```
+Longest S stretch 13 digits, below the folder's small-liberty floor (24.2) and far below the AD with every M word counted. No
+code clause (n/a). On these numbers the D1 -> D2 cipher clause is not met; the verifier rules.
+
+**Judge (es1600, rule 7; spec copy with `"language": "es1600"`):**
+```
+reading_L457_cipher_only.txt (OLD-O2)   FAIL language: score=-1.017, null_p99=-2.024, real_p05=-0.818, real_median=-0.781, mode=both, N=2919
+                                        ok   words: cover=0.854, min=0.5, real_text_median_cover=0.909
+committed OLD-SIBS copy, same judge run FAIL language: score=-1.017 (identical; section 22's -0.99 vs -0.808 was the judge as of 8 Oct)
+letter-shuffled decode seeds 1/2/3      FAIL language: -2.087 / -2.096 / -2.129 (cover 0.499 / 0.469 / 0.484)
+```
+FAIL, unchanged shape: far above the shuffled nulls, below real_p05. Grades do not enter the judge, so no change was expected.
+
+Requests: none to any host (images on disk; NA 0 of 10). Subagent calls: 8 blind passes (Sonnet), one resumed to re-write its file.
+Reconciliation one unit (this session).
+
+**Verdict: open** (unchanged; a verifier classifies). The S share rose (L4/L7 digit S 11.3% under the old passes with the same normaliser -> 18.6%; L457 S words 87 -> 165), but
+the longest S stretch (13 digits) is still under the AD floor. Still open: L4a_05 "quando" (contradicted by both masked passes),
+L5_1 "fuesse", L10 "habito" (no masked pass). Next steps: (o5) verifier re-grade of leaves 4/5/7 under the OLD-O2 grades (AUDIT 3
+addendum, depth under the bar), ~$2.5; the stretch is held down by word-level M on short function words where one pass splits or
+joins tokens, not by sign disagreement alone -- a pre-registered word-boundary-insensitive S test (match the sign string across
+token boundaries) would be the next instrument, ~$1, before any third pass (none allowed by the 10% rule).
+
 ## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, R13-OLDSEG, R14-OLDF, R14-OLDF2 and R15-OLDUV, 6 Oct 2026)
 
 - [done 6 Oct 2026, R15-OLDV2] Action that depended on nobody: (v2) a verifier carries the R15-OLDUV reading change (B37/49/55/76 u/v naming) into AUDIT.md and

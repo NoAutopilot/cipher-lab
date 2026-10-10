@@ -1,5 +1,6 @@
 # OLD-SIBS reading of leaves 004/005/007, fixed B/C1 key; cipher words in CAPITALS, clear words as written.
-# cipher tokens 729: H 0, C 0, S 87, M 642, I 0 (clear tokens 70).
+# OLD-O2 grades: L4/L7 reconciled again and tested against the masked-crop passes (passL_OLDO2), L5 against passJ; S normaliser OLD-O4 (v->r, (->l).
+# cipher tokens 729: H 0, C 0, S 165, M 564, I 0 (clear tokens 70).
 L4a_01	Sengoel reconocimyo que es vacon,~ DESPUES FUI
 L4a_02	AUISITAR A AGUSTIN MEXIA EL CUNADO DEL RE
 L4a_03	GENTE I LE DI LAS CARTAS I LE DIXE LO QUE SE AUIA

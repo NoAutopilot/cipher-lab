@@ -1,800 +1,800 @@
-block	line	token_index	raw_token	decode	cipher	in_A	in_B	in_lexicon	grade
-L4	L4a_01	1	Sengoel	Sengoel	0	0	0	0	clear
-L4	L4a_01	2	reconocimyo	reconocimyo	0	0	0	0	clear
-L4	L4a_01	3	que	que	0	1	1	1	clear
-L4	L4a_01	4	es	es	0	1	1	1	clear
-L4	L4a_01	5	vacon,~	vacon,~	0	0	0	0	clear
-L4	L4a_01	6	d8sp28s	despues	1	0	0	0	M
-L4	L4a_01	7	f23	fui	1	0	0	1	M
-L4	L4a_02	1	a2353t4r	auisitar	1	0	0	0	M
-L4	L4a_02	2	4	a	1	0	0	1	M
-L4	L4a_02	3	4g2st3n	agustin	1	0	0	1	M
-L4	L4a_02	4	m8x34	mexia	1	1	1	1	S
-L4	L4a_02	5	8l	el	1	0	1	1	M
-L4	L4a_02	6	c2n4d7	cunado	1	0	1	1	M
-L4	L4a_02	7	d8l	del	1	0	0	1	M
-L4	L4a_02	8	R8	Re	1	0	0	1	M
-L4	L4a_03	1	g8nt8	gente	1	1	1	1	S
-L4	L4a_03	2	3	i	1	0	1	1	M
-L4	L4a_03	3	l8	le	1	0	1	1	M
-L4	L4a_03	4	d3	di	1	0	0	1	M
-L4	L4a_03	5	l4s	las	1	0	1	1	M
-L4	L4a_03	6	c4rt4s	cartas	1	0	1	1	M
-L4	L4a_03	7	3	i	1	0	1	1	M
-L4	L4a_03	8	l8	le	1	0	1	1	M
-L4	L4a_03	9	d3x8	dixe	1	0	0	0	M
-L4	L4a_03	10	l7	lo	1	0	0	1	M
-L4	L4a_03	11	q28	que	1	0	0	1	M
-L4	L4a_03	12	s8	se	1	0	0	1	M
-L4	L4a_03	13	4234	auia	1	0	0	0	M
-L4	L4a_04	1	h8ch7	hecho	1	1	1	1	S
-L4	L4a_04	2	3	i	1	0	0	1	M
-L4	L4a_04	3	c7m7	como	1	0	0	1	M
-L4	L4a_04	4	8l	el	1	0	0	1	M
-L4	L4a_04	5	C4rd8n4l	Cardenal	1	0	1	1	M
-L4	L4a_04	6	m8	me	1	0	0	1	M
-L4	L4a_04	7	4234	auia	1	0	0	0	M
-L4	L4a_04	8	h8ch7	hecho	1	1	1	1	S
-L4	L4a_04	9	md	md	0	0	0	1	clear
-L4	L4a_05	1	d8ll4,	della	1	0	1	1	M
-L4	L4a_05	2	q28	que	1	0	1	1	M
-L4	L4a_05	3	gr4nd7	grando	1	1	1	0	M
-L4	L4a_05	4	l7	lo	1	0	1	1	M
-L4	L4a_05	5	737	oio	1	1	1	1	S
-L4	L4a_05	6	s8	se	1	0	0	1	M
-L4	L4a_05	7	d37	dio	1	0	0	1	M
-L4	L4a_05	8	4l	al	1	0	0	1	M
-L4	L4a_05	9	d8m7n37	demonio	1	0	0	1	M
-L4	L4a_06	1	d3c38nd7	diciendo	1	0	1	1	M
-L4	L4a_06	2	q28	que	1	0	1	1	M
-L4	L4a_06	3	4234	auia	1	1	1	0	M
-L4	L4a_06	4	d8	de	1	0	0	1	M
-L4	L4a_06	5	s8r	ser	1	0	0	1	M
-L4	L4a_06	6	l4	la	1	0	1	1	M
-L4	L4a_06	7	c4n7ng34	canongia	1	0	0	0	M
-L4	L4a_06	8	p4r4	para	1	0	0	1	M
-L4	L4a_06	9	8l	el	1	0	0	1	M
-L4	L4a_07	1	D7ct7r	Doctor	1	0	0	1	M
-L4	L4a_07	2	c8t3n4	cetina	1	0	0	1	M
-L4	L4a_07	3	.7.	o	1	1	1	1	S
-L4	L4a_07	4	p4r4	para	1	0	0	1	M
-L4	L4a_07	5	8l.	el	1	0	0	1	M
-L4	L4a_07	6	D7ct7r	Doctor	1	0	0	1	M
-L4	L4a_07	7	s7s4	sosa	1	0	0	1	M
-L4	L4a_07	8	s2p4	supa	1	0	0	0	M
-L4	L4a_08	1	r38nt8	riente	1	0	1	0	M
-L4	L4a_08	2	3	i	1	0	1	1	M
-L4	L4a_08	3	q28	que	1	0	1	1	M
-L4	L4a_08	4	8l	el	1	0	0	1	M
-L4	L4a_08	5	n7	no	1	0	1	1	M
-L4	L4a_08	6	s4234	sauia	1	0	0	0	M
-L4	L4a_08	7	c7m7	como	1	0	0	1	M
-L4	L4a_08	8	4234n	auian	1	0	0	0	M
-L4	L4a_08	9	ll8g4d7	llegado	1	0	0	1	M
-L4	L4a_09	1	4	a	1	0	1	1	M
-L4	L4a_09	2	m3s	mis	1	0	1	1	M
-L4	L4a_09	3	m4n7s	manos	1	0	1	1	M
-L4	L4a_09	4	8st7s	estos	1	0	0	1	M
-L4	L4a_09	5	p7d8r8s	poderes	1	0	0	1	M
-L4	L4a_09	6	h4c38nd7	haciendo	1	0	0	1	M
-L4	L4a_09	7	gr4nd8s	grandes	1	0	0	1	M
-L4	L4a_10	1	8str8m7s	estremos	1	0	0	1	M
-L4	L4a_10	2	8n	en	1	0	0	1	M
-L4	L4a_10	3	8st7,	esto	1	0	0	1	M
-L4	L4a_10	4	3	i	1	0	0	1	M
-L4	L4a_10	5	37	io	1	0	0	1	M
-L4	L4a_10	6	l8	le	1	0	0	1	M
-L4	L4a_10	7	4bl4nd8	ablande	1	0	0	0	M
-L4	L4a_10	8	l7	lo	1	0	0	1	M
-L4	L4a_10	9	m8j7r	mejor	1	0	0	1	M
-L4	L4a_10	10	q28	que	1	0	0	1	M
-L4	L4a_11	1	p7d8,	pode	1	0	0	0	M
-L4	L4a_11	2	3	i	1	0	1	1	M
-L4	L4a_11	3	p7r	por	1	0	1	1	M
-L4	L4a_11	4	t8m8r	temer	1	0	0	1	M
-L4	L4a_11	5	m8	me	1	0	0	1	M
-L4	L4a_11	6	d8	de	1	0	1	1	M
-L4	L4a_11	7	q28	que	1	0	1	1	M
-L4	L4a_11	8	8st8	este	1	0	0	1	M
-L4	L4a_11	9	m8l7	melo	1	0	0	1	M
-L4	L4a_11	10	4234	auia	1	0	0	0	M
-L4	L4a_12	1	d8st7r24r	destoruar	1	0	1	0	M
-L4	L4a_12	2	7	o	1	0	1	1	M
-L4	L4a_12	3	d4r	dar	1	0	0	1	M
-L4	L4a_12	4	m8	me	1	0	0	1	M
-L4	L4a_12	5	4lg2n4	alguna	1	0	1	1	M
-L4	L4a_12	6	p8s4d2mbr8	pesadumbre	1	0	0	1	M
-L4	L4a_12	7	n7	no	1	0	0	1	M
-L4	L4a_12	8	l8	le	1	0	0	1	M
-L4	L4a_13	1	q23ss8	quisse	1	0	1	0	M
-L4	L4a_13	2	4bl4r	ablar	1	0	1	0	M
-L4	L4a_13	3	n3	ni	1	1	1	1	S
-L4	L4a_13	4	d4r	dar	1	0	0	1	M
-L4	L4a_13	5	l4s	las	1	0	0	1	M
-L4	L4a_13	6	c4rt4s	cartas	1	0	0	1	M
-L4	L4a_13	7	4st4	asta	1	0	0	0	M
-L4	L4a_13	8	t8n8r	tener	1	0	0	1	M
-L4	L4a_13	9	h8ch7	hecho	1	0	0	1	M
-L4	L4a_14	1	m3	mi	1	0	0	1	M
-L4	L4a_14	2	n8g7c37,	negocio	1	0	0	1	M
-L4	L4a_14	3	c7m7	como	1	1	1	1	S
-L4	L4a_14	4	f28	fue	1	0	1	1	M
-L4	L4a_14	5	3	i	1	0	0	1	M
-L4	L4a_14	6	s3	si	1	0	0	1	M
-L4	L4a_14	7	n7	no	1	0	0	1	M
-L4	L4a_14	8	f28r4	fuera	1	0	1	1	M
-L4	L4a_14	9	p7r	por	1	0	0	1	M
-L4	L4a_14	10	468r2s4	aberusa	1	0	0	0	M
-L4	L4a_15	1	d7	do	1	0	1	1	M
-L4	L4a_15	2	d8	de	1	0	1	1	M
-L4	L4a_15	3	t4n	tan	1	0	1	1	M
-L4	L4a_15	4	b28n4	buena	1	0	0	1	M
-L4	L4a_15	5	tr4c4	traca	1	0	1	0	M
-L4	L4a_15	6	s3n	sin	1	1	1	1	S
-L4	L4a_15	7	d2d4	duda	1	0	1	1	M
-L4	L4a_15	8	s8	se	1	0	0	1	M
-L4	L4a_15	9	m8	me	1	0	0	1	M
-L4	L4a_15	10	d38r4	diera	1	0	0	1	M
-L4	L4a_15	11	4lg2	algu	1	0	0	0	M
-L4	L4b_01	1	n4	na	1	1	1	1	S
-L4	L4b_01	2	p8s4d2mbr8	pesadumbre	1	0	1	1	M
-L4	L4b_01	3	p7r	por	1	0	1	1	M
-L4	L4b_01	4	l7	lo	1	0	1	1	M
-L4	L4b_01	5	m8n7s	menos	1	0	0	1	M
-L4	L4b_01	6	c7n	con	1	0	0	1	M
-L4	L4b_01	7	d3l4c37n	dilacion	1	0	0	0	M
-L4	L4b_07	1	y8s	yes	1	0	0	1	M
-L4	L4b_07	2	q28	que	1	0	1	1	M
-L4	L4b_07	3	l4	la	1	0	1	1	M
-L4	L4b_07	4	pr3m8r4	primera	1	1	1	1	S
-L4	L4b_07	5	v8z	vez	1	0	0	1	M
-L4	L4b_07	6	q28	que	1	0	1	1	M
-L4	L4b_07	7	f23	fui	1	0	1	1	M
-L4	L4b_07	8	4	a	1	1	1	1	S
-L4	L4b_07	9	T7l8d7	Toledo	1	0	0	1	M
-L4	L4b_07	10	m8	me	1	0	0	1	M
-L4	L4b_07	11	pr8	pre	1	0	0	1	M
-L4	L4b_08	1	g2nt7	gunto	1	0	0	0	M
-L4	L4b_08	2	8l	el	1	0	0	1	M
-L4	L4b_08	3	D7ct7r	Doctor	1	0	0	1	M
-L4	L4b_08	4	g4r43	garai	1	0	1	0	M
-L4	L4b_08	5	s3	si	1	0	0	1	M
-L4	L4b_08	6	tr434	traia	1	0	0	1	M
-L4	L4b_08	7	c4rt4	carta	1	1	1	1	S
-L4	L4b_08	8	d8	de	1	0	1	1	M
-L4	L4b_08	9	2s^a,	V.S.	1	0	0	1	M
-L4	L4b_08	10	p4r4	para	1	0	1	1	M
-L4	L4b_09	1	8l	el	1	0	0	1	M
-L4	L4b_09	2	C4rd8n4l	Cardenal	1	0	1	1	M
-L4	L4b_09	3	37	io	1	1	1	1	S
-L4	L4b_09	4	R8sp7nd3	Respondi	1	0	1	1	M
-L4	L4b_09	5	q28	que	1	0	1	1	M
-L4	L4b_09	6	v8n34	venia	1	1	1	1	S
-L4	L4b_09	7	8n7tr7	enotro	1	0	0	0	M
-L4	L4b_10	1	d2pl3c4d7	duplicado	1	0	0	1	M
-L4	L4b_10	2	q28	que	1	0	1	1	M
-L4	L4b_10	3	n7	no	1	0	0	1	M
-L4	L4b_10	4	4234	auia	1	0	1	0	M
-L4	L4b_10	5	ll8g4d7,	llegado	1	0	0	1	M
-L4	L4b_10	6	p7^r	po^r	1	0	0	1	M
-L4	L4b_10	7	7tr4	otra	1	0	0	1	M
-L4	L4b_10	8	p4rt8	parte	1	0	0	1	M
-L4	L4b_11	1	m8	me	1	1	1	1	S
-L4	L4b_11	2	d3x7,~	dixo	1	0	1	0	M
-L4	L4b_11	3	^3pr8g2nt7	ipregunto	1	0	0	0	M
-L4	L4b_11	4	h7r4c37	horacio	1	0	1	1	M
-L4	L4b_11	5	d7r34	doria	1	0	1	1	M
-L4	L4b_11	6	l7	lo	1	0	1	1	M
-L4	L4b_11	7	m3sm7	mismo	1	1	1	1	S
-L4	L4b_11	8	3,	i	1	1	1	1	S
-L4	L4b_11	9	d3	di	1	0	1	1	M
-L4	L4b_11	10	l4	la	1	0	0	1	M
-L4	L4b_11	11	m3sm4	misma	1	0	0	1	M
-L4	L4b_12	1	r8sp28st4	respuesta	1	0	1	1	M
-L4	L4b_12	2	3	i	1	1	1	1	S
-L4	L4b_12	3	8l	el	1	0	0	1	M
-L4	L4b_12	4	m8	me	1	1	1	1	S
-L4	L4b_12	5	d3x7	dixo	1	0	1	0	M
-L4	L4b_12	6	m2ch7	mucho	1	1	1	1	S
-L4	L4b_12	7	3np7rt4r34	inportaria	1	0	1	0	M
-L4	L4b_12	8	q28	que	1	0	1	1	M
-L4	L4b_13	1	ll8g4ss8	llegasse	1	1	0	0	M
-L4	L4b_13	2	p7rq28	porque	1	0	1	1	M
-L4	L4b_13	3	p4r4~	para	1	0	0	1	M
-L4	L4b_13	4	^4bl4r	ablar	1	0	0	0	M
-L4	L4b_13	5	c7n	con	1	1	1	1	S
-L4	L4b_13	6	m3g7	migo	1	0	0	1	M
-L4	L4b_13	7	c7m7	como	1	1	1	1	S
-L4	L4b_13	8	4m3g7	amigo	1	0	0	1	M
-L4	L4b_13	9	3	i	1	1	1	1	S
-L4	L4b_13	10	8n	en	1	1	1	1	S
-L4	L4b_14	1	s8cr8t7	secreto	1	1	1	1	S
-L4	L4b_14	2	8l	el	1	0	0	1	M
-L4	L4b_14	3	n7	no	1	1	1	1	S
-L4	L4b_14	4	t8m34	temia	1	0	0	1	M
-L4	L4b_14	5	q28	que	1	0	0	1	M
-L4	L4b_14	6	s8	se	1	0	0	1	M
-L4	L4b_14	7	m8	me	1	0	0	1	M
-L4	L4b_14	8	p2d38ss8	pudiesse	1	0	0	0	M
-L4	L4b_14	9	d8sp8nt4r	despentar	1	0	0	0	M
-L4	L4b_15	1	8st4	esta	1	1	0	1	M
-L4	L4b_15	2	c4n7ng34	canongia	1	0	0	0	M
-L4	L4b_15	3	s3n7	sino	1	0	1	1	M
-L4	L4b_15	4	s3	si	1	0	0	1	M
-L4	L4b_15	5	4c4ss7	acasso	1	0	0	0	M
-L4	L4b_15	6	d464n	daban	1	0	1	1	M
-L4	L4b_15	7	8l	el	1	0	0	1	M
-L4	L4b_15	8	C4rd8n4l	Cardenal	1	0	1	1	M
-L4	L4b_15	9	3,	i	1	0	1	1	M
-L4	L4b_16	1	g4r43	garai	1	0	1	0	M
-L4	L4b_16	2	8n	en	1	1	1	1	S
-L4	L4b_16	3	d2d4r	dudar	1	0	1	1	M
-L4	L4b_16	4	s3	si	1	1	0	1	M
-L4	L4b_16	5	s8r34	seria	1	0	1	1	M
-L4	L4b_16	6	c7nv3n38nt8	conviniente	1	0	0	1	M
-L4	L4b_16	7	p7r	por	1	0	1	1	M
-L4	L4b_16	8	468r	aber	1	0	0	0	M
-L4	L4b_16	9	s3	si	1	1	0	1	M
-L4	L4b_17	1	h8ch7	hecho	1	1	1	1	S
-L4	L4b_17	2	l4	la	1	1	1	1	S
-L4	L4b_17	3	3nf7rm4c37n	informacion	1	1	1	0	M
-L4	L4b_17	4	d8	de	1	0	0	1	M
-L4	L4b_17	5	s2	su	1	0	0	1	M
-L4	L4b_17	6	s76r3n7,	sobrino	1	0	0	1	M
-L4	L4b_17	7	3	i	1	1	1	1	S
-L4	L4b_17	8	n7	no	1	1	1	1	S
-L4	L4b_17	9	d4r	dar	1	0	1	1	M
-L4	L4b_17	10	q28	que	1	0	1	1	M
-L4	L4b_17	11	d8c3r,	decir	1	0	1	1	M
-L4	L4b_18	1	,	,	0	1	1	0	clear
-L4	L4b_18	2	3	i	1	0	0	1	M
-L4	L4b_18	3	q28	que	1	0	0	1	M
-L4	L4b_18	4	p7r	por	1	0	1	1	M
-L4	L4b_18	5	l4	la	1	0	0	1	M
-L4	L4b_18	6	m3sm4	misma	1	0	0	1	M
-L4	L4b_18	7	r4c7n	racon	1	0	1	0	M
-L4	L4b_18	8	p7r	por	1	0	1	1	M
-L4	L4b_18	9	468r	aber	1	0	1	0	M
-L4	L4b_18	10	s3d7	sido	1	0	0	1	M
-L4	L4b_18	11	R8ct7r	Rector	1	0	0	1	M
-L4	L4b_18	12	8l	el	1	0	0	1	M
-L4	L4b_19	1	D7ct7r	Doctor	1	0	0	1	M
-L4	L4b_19	2	c4p4t4	capata	1	1	1	0	M
-L4	L4b_19	3	4q28l	aquel	1	0	1	1	M
-L4	L4b_19	4	4n7	ano	1	0	1	1	M
-L4	L4b_19	5	3	i	1	1	1	1	S
-L4	L4b_19	6	468r	aber	1	0	1	0	M
-L4	L4b_19	7	4lg2n7s	algunos	1	0	1	1	M
-L4	L4b_19	8	d4d7	dado	1	0	1	1	M
-L4	L4b_19	9	8n	en	1	1	1	1	S
-L4	L4b_20	1	d8c3r	decir	1	0	1	1	M
-L4	L4b_20	2	q24nd7	quando	1	0	1	1	M
-L4	L4b_20	3	pr8t8nd37	pretendio	1	1	1	0	M
-L4	L4b_20	4	8l	el	1	0	0	1	M
-L4	L4b_20	5	c2r4t7	curato	1	0	0	0	M
-L4	L4b_20	6	q28	que	1	0	1	1	M
-L4	L4b_20	7	t8n34	tenia	1	0	0	1	M
-L4	L4b_20	8	s8g2?7	segu?o	1	0	0	0	M
-L4	L4b_21	1	8l	el	1	0	1	1	M
-L4	L4b_21	2	m8j7r,	mejor	1	0	0	1	M
-L4	L4b_21	3	d8sp28s	despues	1	0	1	0	M
-L4	L4b_21	4	n7	no	1	1	1	1	S
-L4	L4b_21	5	l8	le	1	0	0	1	M
-L4	L4b_21	6	d37	dio	1	0	0	1	M
-L4	L4b_21	7	n3ng2n7	ninguno	1	0	0	1	M
-L4	L4b_21	8	d8	de	1	0	0	1	M
-L4	L4b_21	9	l7s	los	1	0	0	1	M
-L4	L4b_21	10	m8j7r8s	mejores	1	0	0	1	M
-L4	L4b_22	1	p7r	por	1	0	1	1	M
-L4	L4b_22	2	g2st4r	gustar	1	0	0	1	M
-L4	L4b_22	3	d8ch7s,	dechos	1	0	0	0	M
-L4	L4b_22	4	s3n7	sino	1	1	1	1	S
-L4	L4b_22	5	2n7	uno	1	1	1	1	S
-L4	L4b_22	6	m8d34n7	mediano	1	0	0	1	M
-L4	L4b_22	7	4	a	1	0	0	1	M
-L4	L4b_22	8	2nq28	unque	1	0	0	0	M
-L4	L4b_22	9	8st4	esta	1	0	0	1	M
-L4	L4b_23	1	r4c7n	racon	1	0	1	0	M
-L4	L4b_23	2	8r4	era	1	0	0	1	M
-L4	L4b_23	3	s8cr8t4	secreta	1	0	1	1	M
-L4	L4b_23	4	3	i	1	1	1	1	S
-L4	L4b_23	5	q28	que	1	0	1	1	M
-L4	L4b_23	6	s7l7	solo	1	0	0	1	M
-L4	L4b_23	7	8r4	era	1	0	0	1	M
-L4	L4b_23	8	p4r4	para	1	0	0	1	M
-L4	L4b_23	9	m3,	mi	1	0	0	1	M
-L4	L4b_23	10	34ss3	iassi	1	0	0	0	M
-L4	L4b_23	11	q28	que	1	0	1	1	M
-L4	L4b_24	1	3np7rt464	inportaba	1	0	0	0	M
-L4	L4b_24	2	m2ch7	mucho	1	1	1	1	S
-L4	L4b_24	3	q28	que	1	0	1	1	M
-L4	L4b_24	4	ll8g4r4	llegara	1	0	0	1	M
-L4	L4b_24	5	l4	la	1	1	1	1	S
-L4	L4b_24	6	c4rt4	carta	1	0	1	1	M
-L4	L4b_24	7	d8	de	1	0	1	1	M
-L4	L4b_24	8	2s^a.	V.S.	1	0	0	1	M
-L4	L4b_24	9	4t38n	atien	1	0	0	0	M
-L4	L4b_25	1	p7	po	1	0	0	1	M
-L4	L4b_25	2	p7rq28	porque	1	0	0	1	M
-L4	L4b_25	3	s8	se	1	0	0	1	M
-L4	L4b_25	4	8nt8nd38r4	entendiera	1	0	1	1	M
-L4	L4b_25	5	q28	que	1	0	1	1	M
-L4	L4b_25	6	l7	lo	1	0	1	1	M
-L4	L4b_25	7	h4c34	hacia	1	1	1	1	S
-L4	L4b_25	8	p7r	por	1	0	1	1	M
-L4	L4b_25	9	2s^a.	V.S.	1	1	0	1	M
-L4	L4b_25	10	3	i	1	0	1	1	M
-L4	L4b_25	11	n7	no	1	0	1	1	M
-L4	L4b_26	1	p7r	por	1	0	0	1	M
-L4	L4b_26	2	p4g4rm8	pagarme	1	0	0	0	M
-L4	L4b_26	3	4	a	1	0	0	1	M
-L4	L4b_26	4	m3	mi	1	0	0	1	M
-L4	L4b_26	5	m3s	mis	1	1	1	1	S
-L4	L4b_26	6	628n7s	buenos	1	0	0	1	M
-L4	L4b_26	7	d8s8	dese	1	0	0	1	M
-L4	L4b_26	8	7s,	os	1	0	0	1	M
-L4	L4b_26	9	37	io	1	1	1	1	S
-L4	L4b_26	10	m8	me	1	1	1	1	S
-L4	L4b_26	11	238n	uien	1	1	1	0	M
-L4	L4b_27	1	8st7	esto	1	0	0	1	M
-L4	L4b_27	2	t4n	tan	1	0	0	1	M
-L4	L4b_27	3	4pr8t4d7	apretado	1	0	1	1	M
-L4	L4b_27	4	q28	que	1	0	1	1	M
-L4	L4b_27	5	p4r8c38nd7m8	pareciendome	1	0	0	0	M
-L4	L4b_27	6	s8r34	seria	1	0	1	1	M
-L4	L4b_27	7	g2st7	gusto	1	0	0	1	M
-L4	L4b_28	1	d8	de	1	0	1	1	M
-L4	L4b_28	2	2s^a	V.S.	1	0	0	1	M
-L4	L4b_28	3	37	io	1	1	1	1	S
-L4	L4b_28	4	h3c8	hice	1	1	1	1	S
-L4	L4b_28	5	2n4	una	1	1	1	1	S
-L4	L4b_28	6	f3rm4	firma	1	0	1	1	M
-L4	L4b_28	7	d8	de	1	0	1	1	M
-L4	L4b_28	8	2s^a	V.S.	1	0	0	1	M
-L4	L4b_28	9	8n	en	1	1	1	1	S
-L4	L4b_28	10	2n	un	1	1	1	1	S
-L4	L4b_28	11	pl38g7	pliego	1	0	0	1	M
-L4	L4b_29	1	d8	de	1	0	1	1	M
-L4	L4b_29	2	p4p8l	papel	1	0	0	1	M
-L4	L4b_29	3	l7	lo	1	0	0	1	M
-L4	L4b_29	4	m8j7r	mejor	1	0	0	1	M
-L4	L4b_29	5	q28	que	1	0	0	1	M
-L4	L4b_29	6	p2d8,	pude	1	0	0	1	M
-L4	L4b_29	7	3	i	1	1	1	1	S
-L4	L4b_29	8	h3c8	hice	1	0	1	1	M
-L4	L4b_29	9	4	a	1	1	0	1	M
-L4	L4b_29	10	2n	un	1	1	0	1	M
-L4	L4b_29	11	cr34d7	criado	1	0	1	1	M
-L4	L4b_29	12	m37~	mio	1	0	0	0	M
-L4	L4b_29	13	^s8cr8t7	secreto	1	0	0	1	M
-L4	L4b_30	1	q28	que	1	0	0	1	M
-L4	L4b_30	2	8scr3638ss8	escribiesse	1	0	0	0	M
-L4	L4b_30	3	l4	la	1	0	0	1	M
-L4	L4b_30	4	s2st4nc34	sustancia	1	0	0	1	M
-L4	L4b_30	5	d8l4	dela	1	0	0	1	M
-L4	L4b_30	6	c4rt4	carta	1	0	0	1	M
-L4	L4b_30	7	d3c38nd7l8	diciendole	1	0	0	0	M
-L4	L4b_31	1	q28	que	1	0	1	1	M
-L4	L4b_31	2	2s^a.	V.S.	1	0	0	1	M
-L4	L4b_31	3	m8	me	1	0	0	1	M
-L4	L4b_31	4	4234	auia	1	0	1	0	M
-L4	L4b_31	5	d8x4d7	dexado	1	0	0	0	M
-L4	L4b_31	6	4lg2n4s	algunas	1	0	0	1	M
-L4	L4b_31	7	f3rm4s	firmas	1	0	0	1	M
-L4	L4b_31	8	8n6l4nc7	enblanco	1	0	0	0	M
-L5	L5_1	1	franca	franca	0	1	1	1	clear
-L5	L5_1	2	demi,	demi,	0	1	1	0	clear
-L5	L5_1	3	l4	la	1	1	1	1	S
-L5	L5_1	4	c4rt4	carta	1	0	1	1	M
-L5	L5_1	5	p7r7c2r8	porocure	1	0	0	0	M
-L5	L5_1	6	q28	que	1	0	0	1	M
-L5	L5_1	7	s28ss8	suesse	1	0	0	0	M
-L5	L5_1	8	c7nf7rm8	conforme	1	0	0	1	M
-L5	L5_2	1	4l	al	1	1	1	1	S
-L5	L5_2	2	8st3l7	estilo	1	1	1	1	S
-L5	L5_2	3	d8	de	1	0	1	1	M
-L5	L5_2	4	2s^a,	V.S.	1	0	0	1	M
-L5	L5_2	5	3	i	1	0	0	1	M
-L5	L5_2	6	s7l7	solo	1	0	0	1	M
-L5	L5_2	7	d8c34	decia	1	1	1	1	S
-L5	L5_2	8	p7r	por	1	0	1	1	M
-L5	L5_2	9	g2st4r	gustar	1	0	0	1	M
-L5	L5_2	10	t7d7	todo	1	0	1	1	M
-L5	L5_2	11	g8n8	gene	1	0	0	1	M
-L5	L5_3	1	r7	ro	1	1	1	1	S
-L5	L5_3	2	d8	de	1	1	1	1	S
-L5	L5_3	3	r8p4r7/	reparo	1	0	1	1	M
-L5	L5_3	4	q28	que	1	0	0	1	M
-L5	L5_3	5	el	el	0	0	1	1	clear
-L5	L5_3	6	regente	regente	0	1	1	1	clear
-L5	L5_3	7	pareciendole	pareciendole	0	0	0	0	clear
-L5	L5_3	8	que	que	0	1	0	1	clear
-L5	L5_3	9	no	no	0	1	0	1	clear
-L5	L5_3	10	podia	podia	0	0	0	1	clear
-L5	L5_4	1	avenir	avenir	0	0	0	0	clear
-L5	L5_4	2	a	a	0	0	0	1	clear
-L5	L5_4	3	resfidir	resfidir	0	0	0	0	clear
-L5	L5_4	4	su	su	0	0	0	1	clear
-L5	L5_4	5	canongia	canongia	0	0	0	0	clear
-L5	L5_4	6	le	le	0	0	0	1	clear
-L5	L5_4	7	avia	avia	0	0	0	0	clear
-L5	L5_4	8	parecido	parecido	0	0	0	1	clear
-L5	L5_4	9	v4cc4rl4	vaccarla	1	0	0	0	M
-L5	L5_4	10	^libremente	^libremente	0	0	0	1	clear
-L5	L5_5	1	8n	en	1	0	0	1	M
-L5	L5_5	2	m4n7s	manos	1	0	0	1	M
-L5	L5_5	3	d8	de	1	0	0	1	M
-L5	L5_5	4	s2	su	1	0	0	1	M
-L5	L5_5	5	s8n7r34	senoria	1	0	0	0	M
-L5	L5_5	6	Illmas,	Illmas,	0	0	0	0	clear
-L5	L5_5	7	y	y	0	0	0	1	clear
-L5	L5_5	8	q28	que	1	0	0	1	M
-L5	L5_5	9	p4r4	para	1	0	0	1	M
-L5	L5_5	10	esto	esto	0	0	0	1	clear
-L5	L5_5	11	enviava	enviava	0	0	0	0	clear
-L5	L5_6	1	mexia	mexia	0	0	0	1	clear
-L5	L5_6	2	su	su	0	0	0	1	clear
-L5	L5_6	3	cuñado	cuñado	0	0	0	1	clear
-L5	L5_6	4	hiciessen	hiciessen	0	0	0	0	clear
-L5	L5_6	5	la	la	0	0	0	1	clear
-L5	L5_6	6	vacante	vacante	0	0	0	1	clear
-L5	L5_6	7	y	y	0	0	0	1	clear
-L5	L5_6	8	assi	assi	0	0	0	0	clear
-L5	L5_6	9	q28	que	1	0	0	1	M
-L5	L5_6	10	2s^a	V.S.	1	0	0	1	M
-L5	L5_6	11	l8	le	1	0	0	1	M
-L5	L5_7	1	s2pl3c4r4	suplicara	1	0	0	1	M
-L5	L5_7	2	q28	que	1	0	0	1	M
-L5	L5_7	3	4ll4nd7	allando	1	0	0	0	M
-L5	L5_7	4	8n	en	1	0	0	1	M
-L5	L5_7	5	m3	mi	1	0	0	1	M
-L5	L5_7	6	p4rt8s	partes	1	0	0	1	M
-L5	L5_7	7	p4r4	para	1	0	0	1	M
-L5	L5_7	8	p7d8rl8	poderle	1	0	0	1	M
-L5	L5_8	1	s8r23r	seruir	1	0	0	1	M
-L5	L5_8	2	8n	en	1	0	0	1	M
-L5	L5_8	3	8ll4	ella	1	0	0	1	M
-L5	L5_8	4	q28	que	1	0	0	1	M
-L5	L5_8	5	m8	me	1	0	0	1	M
-L5	L5_8	6	h3c38ss8	hiciesse	1	0	0	0	M
-L5	L5_8	7	md	md	0	0	0	1	clear
-L5	L5_8	8	q28	que	1	0	0	1	M
-L5	L5_8	9	2s^a	V.S.	1	0	0	1	M
-L5	L5_8	10	l4	la	1	0	0	1	M
-L5	L5_8	11	8st3m4	estima	1	0	0	1	M
-L5	L5_9	1	r34	ria	1	0	0	0	M
-L5	L5_9	2	p7r	por	1	0	0	1	M
-L5	L5_9	3	m23	mui	1	0	0	1	M
-L5	L5_9	4	gr4nd8,	grande	1	0	0	1	M
-L5	L5_9	5	-	-	0	0	0	0	clear
-L5	L5_9	6	despues	despues	0	0	0	0	clear
-L5	L5_9	7	vino	vino	0	0	0	1	clear
-L5	L5_9	8	mi	mi	0	0	0	1	clear
-L5	L5_9	9	buleto	buleto	0	0	0	0	clear
-L5	L5_9	10	de	de	0	0	0	1	clear
-L5	L5_9	11	Ro	Ro	0	0	0	1	clear
-L5	L5b_2	1	m8	me	1	1	1	1	S
-L5	L5b_2	2	en	en	0	1	0	1	clear
-L5	L5b_2	3	ellos,	ellos,	0	1	0	1	clear
-L5	L5b_2	4	34ss3	iassi	1	0	0	0	M
-L5	L5b_2	5	23	ui	1	0	0	1	M
-L5	L5b_2	6	8nd7m8	endome	1	1	1	0	M
-L5	L5b_2	7	t4nb38n	tanbien	1	1	1	0	M
-L5	L5b_2	8	8n	en	1	0	0	1	M
-L5	L5b_2	9	8st8	este	1	0	0	1	M
-L5	L5b_2	10	tr4n	tran	1	0	0	0	M
-L5	L5b_3	1	c8	ce	1	1	1	1	S
-L5	L5b_3	2	h3c8	hice	1	0	0	1	M
-L5	L5b_3	3	7tr4	otra	1	0	0	1	M
-L5	L5b_3	4	c4rt4	carta	1	0	1	1	M
-L5	L5b_3	5	8n	en	1	1	1	1	S
-L5	L5b_3	6	n7n6r8	nonbre	1	1	1	0	M
-L5	L5b_3	7	d8	de	1	1	1	1	S
-L5	L5b_3	8	2s^o	V.S.	1	0	0	1	M
-L5	L5b_3	9	p4r4	para	1	0	1	1	M
-L5	L5b_3	10	8l	el	1	0	0	1	M
-L5	L5b_3	11	Abbad	Abbad	0	0	0	0	clear
-L5	L5b_4	1	8n	en	1	0	0	1	M
-L5	L5b_4	2	q28	que	1	0	0	1	M
-L5	L5b_4	3	d8c34	decia	1	1	1	1	S
-L5	L5b_4	4	c7m7	como	1	1	1	1	S
-L5	L5b_4	5	37	io	1	1	1	1	S
-L5	L5b_4	6	4234	auia	1	0	1	0	M
-L5	L5b_4	7	8scr3t7	escrito	1	0	0	1	M
-L5	L5b_4	8	4	a	1	0	0	1	M
-L5	L5b_4	9	2s^o	V.S.	1	0	0	1	M
-L5	L5b_4	10	l4	la	1	1	1	1	S
-L5	L5b_4	11	md	md	0	0	0	1	clear
-L5	L5b_4	12	q28	que	1	0	0	1	M
-L5	L5b_5	1	m8	me	1	1	1	1	S
-L5	L5b_5	2	h4c34	hacia	1	0	0	1	M
-L5	L5b_5	3	3	i	1	1	0	1	M
-L5	L5b_5	4	c7m7	como	1	1	0	1	M
-L5	L5b_5	5	p7r	por	1	0	0	1	M
-L5	L5b_5	6	s2	su	1	0	0	1	M
-L5	L5b_5	7	c7ns8j7	consejo	1	0	0	1	M
-L5	L5b_5	8	s8	se	1	0	0	1	M
-L5	L5b_5	9	4234	auia	1	0	1	0	M
-L5	L5b_5	10	8n234d7	enuiado	1	0	0	1	M
-L5	L5b_6	1	p7r	por	1	1	1	1	S
-L5	L5b_6	2	2n	un	1	0	0	1	M
-L5	L5b_6	3	62l8t7	buleto	1	0	0	0	M
-L5	L5b_6	4	p4r4	para	1	0	1	1	M
-L5	L5b_6	5	p7d8r	poder	1	0	1	1	M
-L5	L5b_6	6	t8n8r	tener	1	0	0	1	M
-L5	L5b_6	7	c7n	con	1	0	1	1	M
-L5	L5b_6	8	l4	la	1	0	0	1	M
-L5	L5b_6	9	r8ct7r34	rectoria	1	0	0	0	M
-L5	L5b_6	10	l4	la	1	0	0	1	M
-L5	L5b_7	1	c4n7ng34	canongia	1	0	0	0	M
-L5	L5b_7	2	3	i	1	0	0	1	M
-L5	L5b_7	3	c4th8dr4,	cathedra	1	0	0	0	M
-L5	L5b_7	4	y	y	0	0	0	1	clear
-L5	L5b_7	5	q28	que	1	0	0	1	M
-L5	L5b_7	6	2s.	V.S.	1	1	1	1	S
-L5	L5b_7	7	8st464	estaba	1	0	0	1	M
-L5	L5b_7	8	m23	mui	1	0	0	1	M
-L5	L5b_7	9	4gr4	agra	1	0	0	0	M
-L7	L7a_1	1	y	y	0	0	0	1	clear
-L7	L7a_1	2	gta	gta	0	0	0	0	clear
-L7	L7a_1	3	collegial)	collegial)	0	0	0	0	clear
-L7	L7a_1	5	53n7	sino	1	0	0	1	M
-L7	L7a_1	6	q28	que	1	0	0	1	M
-L7	L7a_1	7	s7l7	solo	1	0	0	1	M
-L7	L7a_1	8	tr4t4ss8	tratasse	1	0	0	0	M
-L7	L7a_2	1	m7s	mos	1	0	0	1	M
-L7	L7a_2	2	d8	de	1	0	0	1	M
-L7	L7a_2	3	tr4t4r	tratar	1	0	0	1	M
-L7	L7a_2	4	4l7s	alos	1	0	0	1	M
-L7	L7a_2	5	435l4d7s,~	aislados	1	0	0	0	M
-L7	L7a_2	6	R8sp7nd37m8	Respondiome	1	0	0	0	M
-L7	L7a_2	7	q28	que	1	0	0	1	M
-L7	L7a_2	8	l8	le	1	0	0	1	M
-L7	L7a_3	1	p4r8c34	parecia	1	0	0	1	M
-L7	L7a_3	2	638n,	bien	1	0	0	1	M
-L7	L7a_3	3	3	i	1	0	0	1	M
-L7	L7a_3	4	q28	que	1	0	0	1	M
-L7	L7a_3	5	4l	al	1	0	0	1	M
-L7	L7a_3	6	t38mp7	tiempo	1	0	0	1	M
-L7	L7a_3	7	d8	de	1	0	0	1	M
-L7	L7a_3	8	l4	la	1	0	0	1	M
-L7	L7a_3	9	7cc4ss37n	occassion	1	0	0	0	M
-L7	L7a_4	1	l7??3?n,~	lo??i?n	1	0	0	0	M
-L7	L7a_4	2	^23n38ss8	uiniesse	1	0	0	0	M
-L7	L7a_4	3	que	que	0	0	0	1	clear
-L7	L7a_4	4	cierto	cierto	0	0	0	1	clear
-L7	L7a_4	5	es	es	0	0	0	1	clear
-L7	L7a_4	6	cosa	cosa	0	0	0	1	clear
-L7	L7a_4	7	particular	particular	0	0	0	1	clear
-L7	L7a_4	8	la	la	0	0	0	1	clear
-L7	L7a_4	9	md	md	0	0	0	1	clear
-L7	L7a_4	10	que	que	0	0	0	1	clear
-L7	L7a_4	11	nos	nos	0	0	0	1	clear
-L7	L7a_4	12	hace	hace	0	0	0	1	clear
-L7	L7a_4	13	y	y	0	0	0	1	clear
-L7	L7b_01	1	quiva	quiva	0	0	1	0	clear
-L7	L7b_01	2	que	que	0	1	1	1	clear
-L7	L7b_01	3	se	se	0	1	1	1	clear
-L7	L7b_01	4	gastava	gastava	0	0	1	0	clear
-L7	L7b_01	5	muy	muy	0	1	1	1	clear
-L7	L7b_01	6	bien	bien	0	1	1	1	clear
-L7	L7b_01	7	dinero,	dinero,	0	0	0	1	clear
-L7	L7b_01	8	ch4	cha	1	0	0	1	M
-L7	L7b_01	9	^3s2c4p4d8c4m3n7	isucapadecamino	1	0	0	0	M
-L7	L7b_02	1	6d8s	bdes	1	0	0	0	M
-L7	L7b_02	2	v8nd37	vendio	1	0	0	0	M
-L7	L7b_02	3	s268st3d7	subestido	1	0	0	0	M
-L7	L7b_02	4	l4rg7	largo	1	0	1	1	M
-L7	L7b_02	5	4ll4,	alla	1	0	1	0	M
-L7	L7b_02	6	3,	i	1	1	1	1	S
-L7	L7b_02	7	23n7	uino	1	1	1	1	S
-L7	L7b_02	8	s3n8l	sinel	1	0	0	0	M
-L7	L7b_03	1	34ss3	iassi	1	0	0	0	M
-L7	L7b_03	2	4s7d7	asodo	1	0	0	0	M
-L7	L7b_03	3	p7rc7ss7	porcosso	1	0	0	0	M
-L7	L7b_03	4	h4c8rl8	hacerle	1	0	0	1	M
-L7	L7b_03	5	t4nb38n	tanbien	1	0	0	0	M
-L7	L7b_03	6	v8st3d7	vestido	1	0	0	1	M
-L7	L7b_03	7	c7m7	como	1	0	0	1	M
-L7	L7b_04	1	4l7s	alos	1	1	1	1	S
-L7	L7b_04	2	d8m4s,	demas	1	1	1	1	S
-L7	L7b_04	3	p7rq28	porque	1	0	0	1	M
-L7	L7b_04	4	d3c8	dice	1	0	0	1	M
-L7	L7b_04	5	q28	que	1	0	1	1	M
-L7	L7b_04	6	d8l	del	1	0	0	1	M
-L7	L7b_04	7	m4nt87	manteo	1	0	0	0	M
-L7	L7b_04	8	h3c7	hico	1	0	1	0	M
-L7	L7b_04	9	s8	se	1	0	0	1	M
-L7	L7b_05	1	rv8rv8l7	rvervelo	1	0	0	0	M
-L7	L7b_05	2	3	i	1	0	1	1	M
-L7	L7b_05	3	l7	lo	1	0	0	1	M
-L7	L7b_05	4	d8m4s	demas	1	0	1	1	M
-L7	L7b_05	5	v8nd37	vendio	1	0	1	0	M
-L7	L7b_05	6	3	i	1	0	1	1	M
-L7	L7b_05	7	h3c7	hico	1	0	1	0	M
-L7	L7b_05	8	2n4	una	1	0	1	1	M
-L7	L7b_05	9	s7t4n8ll4	sotanella	1	0	1	0	M
-L7	L7b_06	1	q28	que	1	0	1	1	M
-L7	L7b_06	2	tr48	trae	1	0	0	1	M
-L7	L7b_06	3	d8l4n8ll4	delanella	1	0	1	0	M
-L7	L7b_06	4	n7824,	noeua	1	0	0	0	M
-L7	L7b_06	5	34ss3	iassi	1	0	0	0	M
-L7	L7b_06	6	m8	me	1	1	1	1	S
-L7	L7b_06	7	p3d37	pidio	1	1	1	0	M
-L7	L7b_06	8	q28	que	1	0	1	1	M
-L7	L7b_07	1	37	io	1	0	0	1	M
-L7	L7b_07	2	n7	no	1	0	0	1	M
-L7	L7b_07	3	8scr3v38ss8	escriviesse	1	0	0	0	M
-L7	L7b_07	4	4	a	1	1	0	1	M
-L7	L7b_07	5	2s^o	V.S.	1	0	0	1	M
-L7	L7b_07	6	q28	que	1	0	1	1	M
-L7	L7b_07	7	l8	le	1	0	1	1	M
-L7	L7b_07	8	h4c34	hacia	1	1	1	1	S
-L7	L7b_07	9	m4s	mas	1	1	1	1	S
-L7	L7b_07	10	d8s7t4	desota	1	0	0	0	M
-L7	L7b_08	1	n4	na	1	0	0	1	M
-L7	L7b_08	2	p7r	por	1	0	0	1	M
-L7	L7b_08	3	s8r	ser	1	0	0	1	M
-L7	L7b_08	4	l4s234	lasuia	1	0	0	0	M
-L7	L7b_08	5	d8	de	1	0	1	1	M
-L7	L7b_08	6	v8r4n7,	verano	1	0	1	1	M
-L7	L7b_08	7	3	i	1	1	1	1	S
-L7	L7b_08	8	q28	que	1	0	1	1	M
-L7	L7b_08	9	p4r4	para	1	1	1	1	S
-L7	L7b_08	10	8l	el	1	0	0	1	M
-L7	L7b_08	11	m4n	man	1	0	1	1	M
-L7	L7b_09	1	th87	theo	1	0	0	0	M
-L7	L7b_09	2	p2ss38ss8	pussiesse	1	0	0	0	M
-L7	L7b_09	3	37	io	1	0	0	1	M
-L7	L7b_09	4	8l	el	1	0	0	1	M
-L7	L7b_09	5	d3n8r7	dinero	1	0	0	1	M
-L7	L7b_09	6	4st4	asta	1	0	0	0	M
-L7	L7b_09	7	q28	que	1	0	1	1	M
-L7	L7b_09	8	s2	su	1	0	0	1	M
-L7	L7b_09	9	m4dr8	madre	1	0	0	1	M
-L7	L7b_10	1	v8nd38ss8	vendiesse	1	0	0	0	M
-L7	L7b_10	2	v3n7	vino	1	0	0	1	M
-L7	L7b_10	3	3	i	1	0	0	1	M
-L7	L7b_10	4	s8l7	selo	1	0	0	1	M
-L7	L7b_10	5	8nv34ss8	enviasse	1	0	0	0	M
-L7	L7b_10	6	q28	que	1	0	1	1	M
-L7	L7b_10	7	47r4	aora	1	0	0	0	M
-L7	L7b_10	8	n7	no	1	0	1	1	M
-L7	L7b_10	9	t8n4	tena	1	0	0	0	M
-L7	L7b_11	1	d8sp28s	despues	1	0	0	0	M
-L7	L7b_11	2	m8	me	1	0	0	1	M
-L7	L7b_11	3	d3x7,	dixo	1	0	0	0	M
-L7	L7b_11	4	^8ns8cr8t7	ensecreto	1	0	0	0	M
-L7	L7b_11	5	ll8g4nd7	llegando	1	0	0	1	M
-L7	L7b_11	6	4c7nt4r	acontar	1	0	0	0	M
-L7	L7b_11	7	8l	el	1	0	0	1	M
-L7	L7b_11	8	d3n8r7	dinero	1	0	0	1	M
-L7	L7b_11	9	q28	que	1	0	1	1	M
-L7	L7b_12	1	tr434n	traian	1	1	1	1	S
-L7	L7b_12	2	q28	que	1	0	1	1	M
-L7	L7b_12	3	4234	auia	1	1	1	0	M
-L7	L7b_12	4	t7m4d7	tomado	1	1	0	1	M
-L7	L7b_12	5	d8l	del	1	1	0	1	M
-L7	L7b_12	6	t4l8g7	talego	1	0	0	1	M
-L7	L7b_12	7	q28	que	1	0	1	1	M
-L7	L7b_12	8	8l	el	1	0	0	1	M
-L7	L7b_12	9	tr434	traia	1	0	0	1	M
-L7	L7b_13	1	q24r8nt4	quarenta	1	0	0	0	M
-L7	L7b_13	2	r84l8s	reales	1	0	0	1	M
-L7	L7b_13	3	8n7l8d7	enoledo	1	0	0	0	M
-L7	L7b_13	4	p4r4	para	1	0	0	1	M
-L7	L7b_13	5	2n4s	unas	1	0	0	1	M
-L7	L7b_13	6	27t4s	uotas	1	0	0	0	M
-L7	L7b_14	1	37?4s	io?as	1	0	0	0	M
-L7	L7b_14	2	c7ll4s	collas	1	0	0	0	M
-L7	L7b_14	3	3	i	1	1	0	1	M
-L7	L7b_14	4	q28	que	1	0	0	1	M
-L7	L7b_14	5	t4nb38n	tanbien	1	0	0	0	M
-L7	L7b_14	6	s8l7s	selos	1	0	0	1	M
-L7	L7b_14	7	8nv34r34	enviaria	1	0	0	0	M
-L7	L7b_14	8	4	a	1	0	0	1	M
-L7	L7b_14	9	q28	que	1	0	0	1	M
-L7	L7b_15	1	d3r	dir	1	1	1	1	S
-L7	L7b_15	2	4	a	1	0	0	1	M
-L7	L7b_15	3	s2	su	1	0	0	1	M
-L7	L7b_15	4	m4dr8,	madre	1	0	0	1	M
-L7	L7b_15	5	q28	que	1	0	1	1	M
-L7	L7b_15	6	s7n	son	1	0	1	1	M
-L7	L7b_15	7	c7s3ll4s	cosillas	1	0	0	0	M
-L7	L7b_15	8	q28	que	1	0	1	1	M
-L7	L7b_15	9	m8	me	1	0	0	1	M
-L7	L7b_15	10	h4n	han	1	0	0	1	M
-L7	L7b_15	11	8n	en	1	0	0	1	M
-L7	L7b_16	1	f4d4d7	fadado	1	0	1	0	M
-L7	L7b_16	2	2n	un	1	1	1	1	S
-L7	L7b_16	3	p7c7,	poco	1	1	1	1	S
-L7	L7b_16	4	42nq28	aunque	1	0	0	1	M
-L7	L7b_16	5	37	io	1	0	0	1	M
-L7	L7b_16	6	n7	no	1	0	0	1	M
-L7	L7b_16	7	s8l7	selo	1	0	0	1	M
-L7	L7b_16	8	h8	he	1	0	0	1	M
-L7	L7b_16	9	d4d7	dado	1	0	0	1	M
-L7	L7b_16	10	4	a	1	0	0	1	M
-L7	L7b_16	11	8n	en	1	0	0	1	M
-L7	L7b_17	1	t8nd8r	tender	1	0	1	0	M
-L7	L7b_17	2	d8	de	1	0	0	1	M
-L7	L7b_17	3	n3ng2n4	ninguna	1	0	0	1	M
-L7	L7b_17	4	m4n8r4,	manera	1	1	0	1	M
-L7	L7b_17	5	p7rq28	porque	1	0	0	1	M
-L7	L7b_17	6	64st4	basta	1	0	0	1	M
-L7	L7b_17	7	s8r	ser	1	0	0	1	M
-L7	L7b_18	1	s7633n7	sobiino	1	0	0	0	M
-L7	L7b_18	2	d8	de	1	1	1	1	S
-L7	L7b_18	3	q238n	quien	1	0	0	1	M
-L7	L7b_18	4	8s,	es	1	0	1	1	M
-L7	L7b_18	5	3	i	1	1	0	1	M
-L7	L7b_18	6	l4	la	1	1	0	1	M
-L7	L7b_18	7	628n4	buena	1	0	0	1	M
-L7	L7b_18	8	4m3st4d	amistad	1	0	0	1	M
-L7	L7b_18	9	q28	que	1	0	1	1	M
-L7	L7b_19	1	n7s	nos	1	1	1	1	S
-L7	L7b_19	2	h4	ha	1	1	1	1	S
-L7	L7b_19	3	h8ch7	hecho	1	0	0	1	M
-L7	L7b_19	4	8l	el	1	1	0	1	M
-L7	L7b_19	5	R8g8nt8	Regente	1	0	0	1	M
-L7	L7b_19	6	8n	en	1	0	1	1	M
-L7	L7b_19	7	8st7	esto	1	0	0	1	M
-L7	L7b_19	8	d8l4	dela	1	0	0	1	M
-L7	L7b_19	9	c4n7n	canon	1	0	0	1	M
-L7	L7b_20	1	g34	gia	1	0	0	0	M
-L7	L7b_20	2	p4r4	para	1	1	1	1	S
-L7	L7b_20	3	q28	que	1	0	1	1	M
-L7	L7b_20	4	4s2s	asus	1	0	1	0	M
-L7	L7b_20	5	c7s4s	cosas	1	0	0	1	M
-L7	L7b_20	6	d8l4	dela	1	0	0	1	M
-L7	L7b_20	7	h4g4m7s	hagamos	1	0	0	1	M
-L7	L7b_20	8	8n	en	1	0	0	1	M
-L7	L7b_21	1	t7d7	todo	1	0	0	1	M
-L7	L7b_21	2	l7	lo	1	0	0	1	M
-L7	L7b_21	3	q28	que	1	0	0	1	M
-L7	L7b_21	4	p8d3r8m7s,	pediremos	1	0	0	0	M
-L7	L7b_21	5	34ss3	iassi	1	0	0	0	M
-L7	L7b_21	6	2s^a	V.S.	1	0	0	1	M
-L7	L7b_21	7	v8r4	vera	1	0	0	1	M
-L7	L7b_21	8	l7	lo	1	0	0	1	M
-L7	L7b_21	9	q28	que	1	0	0	1	M
-L7	L7b_22	1	m4nd4	manda	1	0	1	1	M
-L7	L7b_22	2	q28	que	1	0	1	1	M
-L7	L7b_22	3	s8	se	1	0	1	1	M
-L7	L7b_22	4	h4g4	haga	1	0	0	1	M
-L7	L7b_22	5	8n	en	1	0	0	1	M
-L7	L7b_22	6	r4c7n	racon	1	0	0	0	M
-L7	L7b_22	7	^d8	de	1	0	0	1	M
-L7	L7b_22	8	s3	si	1	0	0	1	M
-L7	L7b_22	9	c76r4r8	cobrare	1	0	0	0	M
-L7	L7b_22	10	d8	de	1	0	0	1	M
-L7	L7b_23	1	ch428s	chaues	1	0	0	0	M
-L7	L7b_23	2	8l	el	1	0	0	1	M
-L7	L7b_23	3	c7st8	coste	1	0	0	1	M
-L7	L7b_23	4	d8l	del	1	0	0	1	M
-L7	L7b_23	5	m4nt87	manteo	1	0	1	0	M
-L7	L7b_23	6	3	i	1	0	0	1	M
-L7	L7b_23	7	l7s	los	1	0	0	1	M
-L7	L7b_23	8	q24r8nt4	quarenta	1	0	0	0	M
-L7	L7b_24	1	R84l8s	Reales	1	0	0	1	M
-L7	L7b_24	2	s2p28st7	supuesto	1	0	0	1	M
-L7	L7b_24	3	q28	que	1	0	1	1	M
-L7	L7b_24	4	8l	el	1	0	0	1	M
-L7	L7b_24	5	n7	no	1	0	0	1	M
-L7	L7b_24	6	s4v8	save	1	0	0	0	M
-L7	L7b_24	7	q28	que	1	0	1	1	M
-L7	L7b_24	8	2s.	V.S.	1	0	0	1	M
-L7	L7b_24	9	l7	lo	1	0	0	1	M
-L7	L7b_24	10	s4v8,	save	1	0	0	0	M
-L7	L7b_24	11	4n	an	1	0	0	1	M
-L7	L7b_25	1	t8s	tes	1	0	1	1	M
-L7	L7b_25	2	m8	me	1	1	1	1	S
-L7	L7b_25	3	p3d37	pidio	1	1	1	0	M
-L7	L7b_25	4	q28	que	1	0	0	1	M
-L7	L7b_25	5	n7	no	1	1	0	1	M
-L7	L7b_25	6	l7	lo	1	1	1	1	S
-L7	L7b_25	7	8scr3v38ss8	escriviesse	1	0	0	0	M
-L7	L7b_25	8	q28	que	1	0	0	1	M
-L7	L7b_25	9	8l	el	1	0	0	1	M
-L7	L7b_25	10	l7	lo	1	1	1	1	S
-L7	L7b_25	11	q28r34	queria	1	0	0	1	M
+block	line	token_index	raw_token	decode	cipher	digits	in_A	in_B	in_lexicon	grade
+L4	L4a_01	1	Sengoel	Sengoel	0	0	0	0	0	clear
+L4	L4a_01	2	reconocimyo	reconocimyo	0	0	0	0	0	clear
+L4	L4a_01	3	que	que	0	0	1	1	1	clear
+L4	L4a_01	4	es	es	0	0	1	0	1	clear
+L4	L4a_01	5	vacon,~	vacon,~	0	0	1	0	0	clear
+L4	L4a_01	6	d8sp28s	despues	1	3	0	0	0	M
+L4	L4a_01	7	f23	fui	1	2	0	1	1	M
+L4	L4a_02	1	a2353t4r	auisitar	1	4	0	0	0	M
+L4	L4a_02	2	4	a	1	1	0	0	1	M
+L4	L4a_02	3	4g2st3n	agustin	1	3	0	0	1	M
+L4	L4a_02	4	m8x34	mexia	1	3	1	1	1	S
+L4	L4a_02	5	8l	el	1	1	0	1	1	M
+L4	L4a_02	6	c2n4d7	cunado	1	3	0	1	1	M
+L4	L4a_02	7	d8l	del	1	1	0	0	1	M
+L4	L4a_02	8	R8	Re	1	1	0	0	1	M
+L4	L4a_03	1	g8nt8	gente	1	2	1	1	1	S
+L4	L4a_03	2	3	i	1	1	0	0	1	M
+L4	L4a_03	3	l8	le	1	1	0	0	1	M
+L4	L4a_03	4	d3	di	1	1	0	0	1	M
+L4	L4a_03	5	l4s	las	1	1	0	0	1	M
+L4	L4a_03	6	c4rt4s	cartas	1	2	0	0	1	M
+L4	L4a_03	7	3	i	1	1	0	0	1	M
+L4	L4a_03	8	l8	le	1	1	0	0	1	M
+L4	L4a_03	9	d3x8	dixe	1	2	0	0	0	M
+L4	L4a_03	10	l7	lo	1	1	0	0	1	M
+L4	L4a_03	11	q28	que	1	2	1	0	1	M
+L4	L4a_03	12	s8	se	1	1	0	0	1	M
+L4	L4a_03	13	4234	auia	1	4	0	0	0	M
+L4	L4a_04	1	h8ch7	hecho	1	2	1	1	1	S
+L4	L4a_04	2	3	i	1	1	0	0	1	M
+L4	L4a_04	3	c7m7	como	1	2	0	0	1	M
+L4	L4a_04	4	8l	el	1	1	0	1	1	M
+L4	L4a_04	5	C4rd8n4l	Cardenal	1	3	0	0	1	M
+L4	L4a_04	6	m8	me	1	1	1	1	1	S
+L4	L4a_04	7	4234	auia	1	4	1	1	0	M
+L4	L4a_04	8	h8ch7	hecho	1	2	1	1	1	S
+L4	L4a_04	9	md	md	0	0	0	0	1	clear
+L4	L4a_05	1	d8ll4,	della	1	2	0	0	1	M
+L4	L4a_05	2	q28	que	1	2	1	0	1	M
+L4	L4a_05	3	gr4nd7	grando	1	2	1	1	0	M
+L4	L4a_05	4	l7	lo	1	1	1	1	1	S
+L4	L4a_05	5	737	oio	1	3	1	1	1	S
+L4	L4a_05	6	s8	se	1	1	0	0	1	M
+L4	L4a_05	7	d37	dio	1	2	0	0	1	M
+L4	L4a_05	8	4l	al	1	1	1	0	1	M
+L4	L4a_05	9	d8m7n37	demonio	1	4	0	1	1	M
+L4	L4a_06	1	d3c38nd7	diciendo	1	4	0	1	1	M
+L4	L4a_06	2	q28	que	1	2	1	0	1	M
+L4	L4a_06	3	4234	auia	1	4	1	1	0	M
+L4	L4a_06	4	d8	de	1	1	0	0	1	M
+L4	L4a_06	5	s8r	ser	1	1	0	0	1	M
+L4	L4a_06	6	l4	la	1	1	1	0	1	M
+L4	L4a_06	7	c4n7ng34	canongia	1	4	0	0	0	M
+L4	L4a_06	8	p4r4	para	1	2	1	0	1	M
+L4	L4a_06	9	8l	el	1	1	0	1	1	M
+L4	L4a_07	1	D7ct7r	Doctor	1	2	0	0	1	M
+L4	L4a_07	2	c8t3n4	cetina	1	3	0	0	1	M
+L4	L4a_07	3	.7.	o	1	1	1	1	1	S
+L4	L4a_07	4	p4r4	para	1	2	1	0	1	M
+L4	L4a_07	5	8l.	el	1	1	1	1	1	S
+L4	L4a_07	6	D7ct7r	Doctor	1	2	0	0	1	M
+L4	L4a_07	7	s7s4	sosa	1	2	0	0	1	M
+L4	L4a_07	8	s2p4	supa	1	2	0	0	0	M
+L4	L4a_08	1	r38nt8	riente	1	3	1	1	0	M
+L4	L4a_08	2	3	i	1	1	0	0	1	M
+L4	L4a_08	3	q28	que	1	2	0	0	1	M
+L4	L4a_08	4	8l	el	1	1	0	1	1	M
+L4	L4a_08	5	n7	no	1	1	0	1	1	M
+L4	L4a_08	6	s4234	sauia	1	4	0	0	0	M
+L4	L4a_08	7	c7m7	como	1	2	1	1	1	S
+L4	L4a_08	8	4234n	auian	1	4	0	0	0	M
+L4	L4a_08	9	ll8g4d7	llegado	1	3	0	0	1	M
+L4	L4a_09	1	4	a	1	1	0	0	1	M
+L4	L4a_09	2	m3s	mis	1	1	0	0	1	M
+L4	L4a_09	3	m4n7s	manos	1	2	1	0	1	M
+L4	L4a_09	4	8st7s	estos	1	2	0	0	1	M
+L4	L4a_09	5	p7d8r8s	poderes	1	3	0	0	1	M
+L4	L4a_09	6	h4c38nd7	haciendo	1	4	1	0	1	M
+L4	L4a_09	7	gr4nd8s	grandes	1	2	0	1	1	M
+L4	L4a_10	1	8str8m7s	estremos	1	3	0	0	1	M
+L4	L4a_10	2	8n	en	1	1	0	0	1	M
+L4	L4a_10	3	8st7,	esto	1	2	0	0	1	M
+L4	L4a_10	4	3	i	1	1	0	0	1	M
+L4	L4a_10	5	37	io	1	2	0	0	1	M
+L4	L4a_10	6	l8	le	1	1	0	0	1	M
+L4	L4a_10	7	4bl4nd8	ablande	1	3	0	0	0	M
+L4	L4a_10	8	l7	lo	1	1	0	1	1	M
+L4	L4a_10	9	m8j7r	mejor	1	2	0	0	1	M
+L4	L4a_10	10	q28	que	1	2	1	0	1	M
+L4	L4a_11	1	p7d8,	pode	1	2	0	0	0	M
+L4	L4a_11	2	3	i	1	1	0	0	1	M
+L4	L4a_11	3	p7r	por	1	1	0	0	1	M
+L4	L4a_11	4	t8m8r	temer	1	2	0	0	1	M
+L4	L4a_11	5	m8	me	1	1	0	0	1	M
+L4	L4a_11	6	d8	de	1	1	0	0	1	M
+L4	L4a_11	7	q28	que	1	2	0	0	1	M
+L4	L4a_11	8	8st8	este	1	2	0	0	1	M
+L4	L4a_11	9	m8l7	melo	1	2	1	1	1	S
+L4	L4a_11	10	4234	auia	1	4	1	0	0	M
+L4	L4a_12	1	d8st7r24r	destoruar	1	4	0	0	0	M
+L4	L4a_12	2	7	o	1	1	1	1	1	S
+L4	L4a_12	3	d4r	dar	1	1	1	0	1	M
+L4	L4a_12	4	m8	me	1	1	1	0	1	M
+L4	L4a_12	5	4lg2n4	alguna	1	3	0	0	1	M
+L4	L4a_12	6	p8s4d2mbr8	pesadumbre	1	4	0	0	1	M
+L4	L4a_12	7	n7	no	1	1	0	0	1	M
+L4	L4a_12	8	l8	le	1	1	0	0	1	M
+L4	L4a_13	1	q23ss8	quisse	1	3	0	0	0	M
+L4	L4a_13	2	4bl4r	ablar	1	2	1	1	0	M
+L4	L4a_13	3	n3	ni	1	1	1	1	1	S
+L4	L4a_13	4	d4r	dar	1	1	1	0	1	M
+L4	L4a_13	5	l4s	las	1	1	1	0	1	M
+L4	L4a_13	6	c4rt4s	cartas	1	2	1	1	1	S
+L4	L4a_13	7	4st4	asta	1	2	0	0	0	M
+L4	L4a_13	8	t8n8r	tener	1	2	0	0	1	M
+L4	L4a_13	9	h8ch7	hecho	1	2	1	0	1	M
+L4	L4a_14	1	m3	mi	1	1	1	1	1	S
+L4	L4a_14	2	n8g7c37,	negocio	1	4	0	0	1	M
+L4	L4a_14	3	c7m7	como	1	2	1	1	1	S
+L4	L4a_14	4	f28	fue	1	2	0	0	1	M
+L4	L4a_14	5	3	i	1	1	1	0	1	M
+L4	L4a_14	6	s3	si	1	1	0	0	1	M
+L4	L4a_14	7	n7	no	1	1	0	0	1	M
+L4	L4a_14	8	f28r4	fuera	1	3	0	0	1	M
+L4	L4a_14	9	p7r	por	1	1	0	0	1	M
+L4	L4a_14	10	468r2s4	aberusa	1	4	0	0	0	M
+L4	L4a_15	1	d7	do	1	1	1	1	1	S
+L4	L4a_15	2	d8	de	1	1	0	0	1	M
+L4	L4a_15	3	t4n	tan	1	1	0	0	1	M
+L4	L4a_15	4	b28n4	buena	1	3	0	0	1	M
+L4	L4a_15	5	tr4c4	traca	1	2	0	0	0	M
+L4	L4a_15	6	s3n	sin	1	1	0	0	1	M
+L4	L4a_15	7	d2d4	duda	1	2	1	1	1	S
+L4	L4a_15	8	s8	se	1	1	0	0	1	M
+L4	L4a_15	9	m8	me	1	1	0	0	1	M
+L4	L4a_15	10	d38r4	diera	1	3	1	0	1	M
+L4	L4a_15	11	4lg2	algu	1	2	0	0	0	M
+L4	L4b_01	1	n4	na	1	1	1	1	1	S
+L4	L4b_01	2	p8s4d2mbr8	pesadumbre	1	4	0	1	1	M
+L4	L4b_01	3	p7r	por	1	1	1	1	1	S
+L4	L4b_01	4	l7	lo	1	1	1	1	1	S
+L4	L4b_01	5	m8n7s	menos	1	2	0	1	1	M
+L4	L4b_01	6	c7n	con	1	1	0	1	1	M
+L4	L4b_01	7	d3l4c37n	dilacion	1	4	0	0	0	M
+L4	L4b_07	1	y8s	yes	1	1	0	1	1	M
+L4	L4b_07	2	q28	que	1	2	0	1	1	M
+L4	L4b_07	3	l4	la	1	1	0	0	1	M
+L4	L4b_07	4	pr3m8r4	primera	1	3	0	0	1	M
+L4	L4b_07	5	v8z	vez	1	1	1	0	1	M
+L4	L4b_07	6	q28	que	1	2	0	1	1	M
+L4	L4b_07	7	f23	fui	1	2	0	0	1	M
+L4	L4b_07	8	4	a	1	1	1	1	1	S
+L4	L4b_07	9	T7l8d7	Toledo	1	3	0	0	1	M
+L4	L4b_07	10	m8	me	1	1	0	0	1	M
+L4	L4b_07	11	pr8	pre	1	1	0	0	1	M
+L4	L4b_08	1	g2nt7	gunto	1	2	1	0	0	M
+L4	L4b_08	2	8l	el	1	1	0	0	1	M
+L4	L4b_08	3	D7ct7r	Doctor	1	2	0	0	1	M
+L4	L4b_08	4	g4r43	garai	1	3	1	1	0	M
+L4	L4b_08	5	s3	si	1	1	0	0	1	M
+L4	L4b_08	6	tr434	traia	1	3	0	0	1	M
+L4	L4b_08	7	c4rt4	carta	1	2	1	1	1	S
+L4	L4b_08	8	d8	de	1	1	0	0	1	M
+L4	L4b_08	9	2s^a,	V.S.	1	1	0	0	1	M
+L4	L4b_08	10	p4r4	para	1	2	1	1	1	S
+L4	L4b_09	1	8l	el	1	1	0	0	1	M
+L4	L4b_09	2	C4rd8n4l	Cardenal	1	3	1	1	1	S
+L4	L4b_09	3	37	io	1	2	1	1	1	S
+L4	L4b_09	4	R8sp7nd3	Respondi	1	3	1	1	1	S
+L4	L4b_09	5	q28	que	1	2	0	1	1	M
+L4	L4b_09	6	v8n34	venia	1	3	1	0	1	M
+L4	L4b_09	7	8n7tr7	enotro	1	3	0	0	0	M
+L4	L4b_10	1	d2pl3c4d7	duplicado	1	4	0	0	1	M
+L4	L4b_10	2	q28	que	1	2	0	0	1	M
+L4	L4b_10	3	n7	no	1	1	1	1	1	S
+L4	L4b_10	4	4234	auia	1	4	0	0	0	M
+L4	L4b_10	5	ll8g4d7,	llegado	1	3	1	0	1	M
+L4	L4b_10	6	p7^r	po^r	1	1	1	1	1	S
+L4	L4b_10	7	7tr4	otra	1	2	0	0	1	M
+L4	L4b_10	8	p4rt8	parte	1	2	1	1	1	S
+L4	L4b_11	1	m8	me	1	1	1	1	1	S
+L4	L4b_11	2	d3x7,~	dixo	1	2	1	1	0	M
+L4	L4b_11	3	^3pr8g2nt7	ipregunto	1	4	0	0	0	M
+L4	L4b_11	4	h7r4c37	horacio	1	4	1	1	1	S
+L4	L4b_11	5	d7r34	doria	1	3	1	1	1	S
+L4	L4b_11	6	l7	lo	1	1	1	1	1	S
+L4	L4b_11	7	m3sm7	mismo	1	2	0	1	1	M
+L4	L4b_11	8	3,	i	1	1	1	1	1	S
+L4	L4b_11	9	d3	di	1	1	1	0	1	M
+L4	L4b_11	10	l4	la	1	1	0	0	1	M
+L4	L4b_11	11	m3sm4	misma	1	2	0	0	1	M
+L4	L4b_12	1	r8sp28st4	respuesta	1	4	0	0	1	M
+L4	L4b_12	2	3	i	1	1	1	0	1	M
+L4	L4b_12	3	8l	el	1	1	0	0	1	M
+L4	L4b_12	4	m8	me	1	1	1	0	1	M
+L4	L4b_12	5	d3x7	dixo	1	2	1	0	0	M
+L4	L4b_12	6	m2ch7	mucho	1	2	1	0	1	M
+L4	L4b_12	7	3np7rt4r34	inportaria	1	5	1	0	0	M
+L4	L4b_12	8	q28	que	1	2	0	0	1	M
+L4	L4b_13	1	ll8g4ss8	llegasse	1	3	1	0	0	M
+L4	L4b_13	2	p7rq28	porque	1	3	0	1	1	M
+L4	L4b_13	3	p4r4~	para	1	2	1	0	1	M
+L4	L4b_13	4	^4bl4r	ablar	1	2	0	0	0	M
+L4	L4b_13	5	c7n	con	1	1	1	1	1	S
+L4	L4b_13	6	m3g7	migo	1	2	1	1	1	S
+L4	L4b_13	7	c7m7	como	1	2	1	1	1	S
+L4	L4b_13	8	4m3g7	amigo	1	3	1	1	1	S
+L4	L4b_13	9	3	i	1	1	1	1	1	S
+L4	L4b_13	10	8n	en	1	1	1	1	1	S
+L4	L4b_14	1	s8cr8t7	secreto	1	3	1	1	1	S
+L4	L4b_14	2	8l	el	1	1	0	0	1	M
+L4	L4b_14	3	n7	no	1	1	1	1	1	S
+L4	L4b_14	4	t8m34	temia	1	3	0	0	1	M
+L4	L4b_14	5	q28	que	1	2	0	0	1	M
+L4	L4b_14	6	s8	se	1	1	1	0	1	M
+L4	L4b_14	7	m8	me	1	1	0	0	1	M
+L4	L4b_14	8	p2d38ss8	pudiesse	1	4	0	0	0	M
+L4	L4b_14	9	d8sp8nt4r	despentar	1	3	0	0	0	M
+L4	L4b_15	1	8st4	esta	1	2	1	1	1	S
+L4	L4b_15	2	c4n7ng34	canongia	1	4	0	0	0	M
+L4	L4b_15	3	s3n7	sino	1	2	0	0	1	M
+L4	L4b_15	4	s3	si	1	1	0	0	1	M
+L4	L4b_15	5	4c4ss7	acasso	1	3	0	0	0	M
+L4	L4b_15	6	d464n	daban	1	2	1	1	1	S
+L4	L4b_15	7	8l	el	1	1	0	0	1	M
+L4	L4b_15	8	C4rd8n4l	Cardenal	1	3	1	1	1	S
+L4	L4b_15	9	3,	i	1	1	1	1	1	S
+L4	L4b_16	1	g4r43	garai	1	3	1	1	0	M
+L4	L4b_16	2	8n	en	1	1	1	1	1	S
+L4	L4b_16	3	d2d4r	dudar	1	2	1	1	1	S
+L4	L4b_16	4	s3	si	1	1	1	0	1	M
+L4	L4b_16	5	s8r34	seria	1	3	1	0	1	M
+L4	L4b_16	6	c7nv3n38nt8	conviniente	1	5	0	0	1	M
+L4	L4b_16	7	p7r	por	1	1	1	1	1	S
+L4	L4b_16	8	468r	aber	1	2	0	0	0	M
+L4	L4b_16	9	s3	si	1	1	1	0	1	M
+L4	L4b_17	1	h8ch7	hecho	1	2	1	0	1	M
+L4	L4b_17	2	l4	la	1	1	1	1	1	S
+L4	L4b_17	3	3nf7rm4c37n	informacion	1	5	0	1	0	M
+L4	L4b_17	4	d8	de	1	1	1	0	1	M
+L4	L4b_17	5	s2	su	1	1	0	0	1	M
+L4	L4b_17	6	s76r3n7,	sobrino	1	3	0	0	1	M
+L4	L4b_17	7	3	i	1	1	1	1	1	S
+L4	L4b_17	8	n7	no	1	1	1	1	1	S
+L4	L4b_17	9	d4r	dar	1	1	1	0	1	M
+L4	L4b_17	10	q28	que	1	2	1	1	1	S
+L4	L4b_17	11	d8c3r,	decir	1	2	1	0	1	M
+L4	L4b_18	1	,	,	0	0	0	0	0	clear
+L4	L4b_18	2	3	i	1	1	1	1	1	S
+L4	L4b_18	3	q28	que	1	2	1	1	1	S
+L4	L4b_18	4	p7r	por	1	1	1	1	1	S
+L4	L4b_18	5	l4	la	1	1	0	0	1	M
+L4	L4b_18	6	m3sm4	misma	1	2	0	0	1	M
+L4	L4b_18	7	r4c7n	racon	1	2	1	1	0	M
+L4	L4b_18	8	p7r	por	1	1	1	1	1	S
+L4	L4b_18	9	468r	aber	1	2	1	1	0	M
+L4	L4b_18	10	s3d7	sido	1	2	0	1	1	M
+L4	L4b_18	11	R8ct7r	Rector	1	2	0	0	1	M
+L4	L4b_18	12	8l	el	1	1	0	0	1	M
+L4	L4b_19	1	D7ct7r	Doctor	1	2	0	0	1	M
+L4	L4b_19	2	c4p4t4	capata	1	3	1	1	0	M
+L4	L4b_19	3	4q28l	aquel	1	3	0	0	1	M
+L4	L4b_19	4	4n7	ano	1	2	1	0	1	M
+L4	L4b_19	5	3	i	1	1	1	1	1	S
+L4	L4b_19	6	468r	aber	1	2	1	1	0	M
+L4	L4b_19	7	4lg2n7s	algunos	1	3	0	1	1	M
+L4	L4b_19	8	d4d7	dado	1	2	1	0	1	M
+L4	L4b_19	9	8n	en	1	1	1	1	1	S
+L4	L4b_20	1	d8c3r	decir	1	2	1	0	1	M
+L4	L4b_20	2	q24nd7	quando	1	3	1	1	1	S
+L4	L4b_20	3	pr8t8nd37	pretendio	1	4	0	0	0	M
+L4	L4b_20	4	8l	el	1	1	0	0	1	M
+L4	L4b_20	5	c2r4t7	curato	1	3	0	0	0	M
+L4	L4b_20	6	q28	que	1	2	1	1	1	S
+L4	L4b_20	7	t8n34	tenia	1	3	0	0	1	M
+L4	L4b_20	8	s8g2?7	segu?o	1	3	0	0	0	M
+L4	L4b_21	1	8l	el	1	1	0	1	1	M
+L4	L4b_21	2	m8j7r,	mejor	1	2	0	0	1	M
+L4	L4b_21	3	d8sp28s	despues	1	3	1	0	0	M
+L4	L4b_21	4	n7	no	1	1	1	0	1	M
+L4	L4b_21	5	l8	le	1	1	0	0	1	M
+L4	L4b_21	6	d37	dio	1	2	0	0	1	M
+L4	L4b_21	7	n3ng2n7	ninguno	1	3	0	0	1	M
+L4	L4b_21	8	d8	de	1	1	0	0	1	M
+L4	L4b_21	9	l7s	los	1	1	0	0	1	M
+L4	L4b_21	10	m8j7r8s	mejores	1	3	0	0	1	M
+L4	L4b_22	1	p7r	por	1	1	1	1	1	S
+L4	L4b_22	2	g2st4r	gustar	1	2	0	0	1	M
+L4	L4b_22	3	d8ch7s,	dechos	1	2	0	0	0	M
+L4	L4b_22	4	s3n7	sino	1	2	1	0	1	M
+L4	L4b_22	5	2n7	uno	1	2	1	0	1	M
+L4	L4b_22	6	m8d34n7	mediano	1	4	1	0	1	M
+L4	L4b_22	7	4	a	1	1	0	0	1	M
+L4	L4b_22	8	2nq28	unque	1	3	0	0	0	M
+L4	L4b_22	9	8st4	esta	1	2	0	0	1	M
+L4	L4b_23	1	r4c7n	racon	1	2	1	1	0	M
+L4	L4b_23	2	8r4	era	1	2	1	1	1	S
+L4	L4b_23	3	s8cr8t4	secreta	1	3	1	0	1	M
+L4	L4b_23	4	3	i	1	1	1	1	1	S
+L4	L4b_23	5	q28	que	1	2	1	1	1	S
+L4	L4b_23	6	s7l7	solo	1	2	0	0	1	M
+L4	L4b_23	7	8r4	era	1	2	1	1	1	S
+L4	L4b_23	8	p4r4	para	1	2	0	0	1	M
+L4	L4b_23	9	m3,	mi	1	1	0	0	1	M
+L4	L4b_23	10	34ss3	iassi	1	3	0	0	0	M
+L4	L4b_23	11	q28	que	1	2	1	1	1	S
+L4	L4b_24	1	3np7rt464	inportaba	1	4	1	0	0	M
+L4	L4b_24	2	m2ch7	mucho	1	2	1	0	1	M
+L4	L4b_24	3	q28	que	1	2	0	0	1	M
+L4	L4b_24	4	ll8g4r4	llegara	1	3	0	0	1	M
+L4	L4b_24	5	l4	la	1	1	1	0	1	M
+L4	L4b_24	6	c4rt4	carta	1	2	0	0	1	M
+L4	L4b_24	7	d8	de	1	1	1	0	1	M
+L4	L4b_24	8	2s^a.	V.S.	1	1	0	0	1	M
+L4	L4b_24	9	4t38n	atien	1	3	0	0	0	M
+L4	L4b_25	1	p7	po	1	1	0	0	1	M
+L4	L4b_25	2	p7rq28	porque	1	3	1	0	1	M
+L4	L4b_25	3	s8	se	1	1	1	0	1	M
+L4	L4b_25	4	8nt8nd38r4	entendiera	1	5	1	0	1	M
+L4	L4b_25	5	q28	que	1	2	0	0	1	M
+L4	L4b_25	6	l7	lo	1	1	0	1	1	M
+L4	L4b_25	7	h4c34	hacia	1	3	0	1	1	M
+L4	L4b_25	8	p7r	por	1	1	1	1	1	S
+L4	L4b_25	9	2s^a.	V.S.	1	1	0	0	1	M
+L4	L4b_25	10	3	i	1	1	1	0	1	M
+L4	L4b_25	11	n7	no	1	1	1	0	1	M
+L4	L4b_26	1	p7r	por	1	1	1	0	1	M
+L4	L4b_26	2	p4g4rm8	pagarme	1	3	0	0	0	M
+L4	L4b_26	3	4	a	1	1	0	0	1	M
+L4	L4b_26	4	m3	mi	1	1	0	0	1	M
+L4	L4b_26	5	m3s	mis	1	1	1	0	1	M
+L4	L4b_26	6	628n7s	buenos	1	3	0	0	1	M
+L4	L4b_26	7	d8s8	dese	1	2	0	0	1	M
+L4	L4b_26	8	7s,	os	1	1	0	0	1	M
+L4	L4b_26	9	37	io	1	2	1	1	1	S
+L4	L4b_26	10	m8	me	1	1	1	1	1	S
+L4	L4b_26	11	238n	uien	1	3	1	1	0	M
+L4	L4b_27	1	8st7	esto	1	2	1	1	1	S
+L4	L4b_27	2	t4n	tan	1	1	1	0	1	M
+L4	L4b_27	3	4pr8t4d7	apretado	1	4	1	1	1	S
+L4	L4b_27	4	q28	que	1	2	1	1	1	S
+L4	L4b_27	5	p4r8c38nd7m8	pareciendome	1	6	0	0	0	M
+L4	L4b_27	6	s8r34	seria	1	3	1	0	1	M
+L4	L4b_27	7	g2st7	gusto	1	2	1	0	1	M
+L4	L4b_28	1	d8	de	1	1	1	0	1	M
+L4	L4b_28	2	2s^a	V.S.	1	1	0	0	1	M
+L4	L4b_28	3	37	io	1	2	1	1	1	S
+L4	L4b_28	4	h3c8	hice	1	2	1	1	1	S
+L4	L4b_28	5	2n4	una	1	2	1	1	1	S
+L4	L4b_28	6	f3rm4	firma	1	2	1	1	1	S
+L4	L4b_28	7	d8	de	1	1	1	0	1	M
+L4	L4b_28	8	2s^a	V.S.	1	1	0	0	1	M
+L4	L4b_28	9	8n	en	1	1	1	1	1	S
+L4	L4b_28	10	2n	un	1	1	1	1	1	S
+L4	L4b_28	11	pl38g7	pliego	1	3	0	0	1	M
+L4	L4b_29	1	d8	de	1	1	1	0	1	M
+L4	L4b_29	2	p4p8l	papel	1	2	1	0	1	M
+L4	L4b_29	3	l7	lo	1	1	0	1	1	M
+L4	L4b_29	4	m8j7r	mejor	1	2	0	0	1	M
+L4	L4b_29	5	q28	que	1	2	1	0	1	M
+L4	L4b_29	6	p2d8,	pude	1	2	0	0	1	M
+L4	L4b_29	7	3	i	1	1	1	1	1	S
+L4	L4b_29	8	h3c8	hice	1	2	0	0	1	M
+L4	L4b_29	9	4	a	1	1	0	0	1	M
+L4	L4b_29	10	2n	un	1	1	0	0	1	M
+L4	L4b_29	11	cr34d7	criado	1	3	1	0	1	M
+L4	L4b_29	12	m37~	mio	1	2	0	0	0	M
+L4	L4b_29	13	^s8cr8t7	secreto	1	3	0	0	1	M
+L4	L4b_30	1	q28	que	1	2	1	1	1	S
+L4	L4b_30	2	8scr3638ss8	escribiesse	1	5	0	0	0	M
+L4	L4b_30	3	l4	la	1	1	1	1	1	S
+L4	L4b_30	4	s2st4nc34	sustancia	1	4	1	0	1	M
+L4	L4b_30	5	d8l4	dela	1	2	1	0	1	M
+L4	L4b_30	6	c4rt4	carta	1	2	1	1	1	S
+L4	L4b_30	7	d3c38nd7l8	diciendole	1	5	0	0	0	M
+L4	L4b_31	1	q28	que	1	2	0	0	1	M
+L4	L4b_31	2	2s^a.	V.S.	1	1	0	0	1	M
+L4	L4b_31	3	m8	me	1	1	0	0	1	M
+L4	L4b_31	4	4234	auia	1	4	1	1	0	M
+L4	L4b_31	5	d8x4d7	dexado	1	3	0	0	0	M
+L4	L4b_31	6	4lg2n4s	algunas	1	3	1	0	1	M
+L4	L4b_31	7	f3rm4s	firmas	1	2	1	1	1	S
+L4	L4b_31	8	8n6l4nc7	enblanco	1	3	0	1	0	M
+L5	L5_1	1	franca	franca	0	0	1	1	1	clear
+L5	L5_1	2	demi,	demi,	0	0	1	1	0	clear
+L5	L5_1	3	l4	la	1	1	1	1	1	S
+L5	L5_1	4	c4rt4	carta	1	2	0	1	1	M
+L5	L5_1	5	p7r7c2r8	porocure	1	4	0	0	0	M
+L5	L5_1	6	q28	que	1	2	0	0	1	M
+L5	L5_1	7	s28ss8	suesse	1	3	0	0	0	M
+L5	L5_1	8	c7nf7rm8	conforme	1	3	0	0	1	M
+L5	L5_2	1	4l	al	1	1	1	1	1	S
+L5	L5_2	2	8st3l7	estilo	1	3	1	1	1	S
+L5	L5_2	3	d8	de	1	1	0	1	1	M
+L5	L5_2	4	2s^a,	V.S.	1	1	0	0	1	M
+L5	L5_2	5	3	i	1	1	0	0	1	M
+L5	L5_2	6	s7l7	solo	1	2	0	0	1	M
+L5	L5_2	7	d8c34	decia	1	3	1	1	1	S
+L5	L5_2	8	p7r	por	1	1	0	1	1	M
+L5	L5_2	9	g2st4r	gustar	1	2	0	0	1	M
+L5	L5_2	10	t7d7	todo	1	2	0	1	1	M
+L5	L5_2	11	g8n8	gene	1	2	0	0	1	M
+L5	L5_3	1	r7	ro	1	1	1	1	1	S
+L5	L5_3	2	d8	de	1	1	1	1	1	S
+L5	L5_3	3	r8p4r7/	reparo	1	3	0	1	1	M
+L5	L5_3	4	q28	que	1	2	0	0	1	M
+L5	L5_3	5	el	el	0	0	0	1	1	clear
+L5	L5_3	6	regente	regente	0	0	1	1	1	clear
+L5	L5_3	7	pareciendole	pareciendole	0	0	0	0	0	clear
+L5	L5_3	8	que	que	0	0	1	0	1	clear
+L5	L5_3	9	no	no	0	0	1	0	1	clear
+L5	L5_3	10	podia	podia	0	0	0	0	1	clear
+L5	L5_4	1	avenir	avenir	0	0	0	0	0	clear
+L5	L5_4	2	a	a	0	0	0	0	1	clear
+L5	L5_4	3	resfidir	resfidir	0	0	0	0	0	clear
+L5	L5_4	4	su	su	0	0	0	0	1	clear
+L5	L5_4	5	canongia	canongia	0	0	0	0	0	clear
+L5	L5_4	6	le	le	0	0	0	0	1	clear
+L5	L5_4	7	avia	avia	0	0	0	0	0	clear
+L5	L5_4	8	parecido	parecido	0	0	0	0	1	clear
+L5	L5_4	9	v4cc4rl4	vaccarla	1	3	0	0	0	M
+L5	L5_4	10	^libremente	^libremente	0	0	0	0	1	clear
+L5	L5_5	1	8n	en	1	1	0	0	1	M
+L5	L5_5	2	m4n7s	manos	1	2	0	0	1	M
+L5	L5_5	3	d8	de	1	1	0	0	1	M
+L5	L5_5	4	s2	su	1	1	0	0	1	M
+L5	L5_5	5	s8n7r34	senoria	1	4	0	0	0	M
+L5	L5_5	6	Illmas,	Illmas,	0	0	0	0	0	clear
+L5	L5_5	7	y	y	0	0	0	0	1	clear
+L5	L5_5	8	q28	que	1	2	0	0	1	M
+L5	L5_5	9	p4r4	para	1	2	0	0	1	M
+L5	L5_5	10	esto	esto	0	0	0	0	1	clear
+L5	L5_5	11	enviava	enviava	0	0	0	0	0	clear
+L5	L5_6	1	mexia	mexia	0	0	0	0	1	clear
+L5	L5_6	2	su	su	0	0	0	0	1	clear
+L5	L5_6	3	cuñado	cuñado	0	0	0	0	1	clear
+L5	L5_6	4	hiciessen	hiciessen	0	0	0	0	0	clear
+L5	L5_6	5	la	la	0	0	0	0	1	clear
+L5	L5_6	6	vacante	vacante	0	0	0	0	1	clear
+L5	L5_6	7	y	y	0	0	0	0	1	clear
+L5	L5_6	8	assi	assi	0	0	0	0	0	clear
+L5	L5_6	9	q28	que	1	2	0	0	1	M
+L5	L5_6	10	2s^a	V.S.	1	1	0	0	1	M
+L5	L5_6	11	l8	le	1	1	0	0	1	M
+L5	L5_7	1	s2pl3c4r4	suplicara	1	4	0	0	1	M
+L5	L5_7	2	q28	que	1	2	0	0	1	M
+L5	L5_7	3	4ll4nd7	allando	1	3	0	0	0	M
+L5	L5_7	4	8n	en	1	1	0	0	1	M
+L5	L5_7	5	m3	mi	1	1	0	0	1	M
+L5	L5_7	6	p4rt8s	partes	1	2	0	0	1	M
+L5	L5_7	7	p4r4	para	1	2	0	0	1	M
+L5	L5_7	8	p7d8rl8	poderle	1	3	0	0	1	M
+L5	L5_8	1	s8r23r	seruir	1	3	0	0	1	M
+L5	L5_8	2	8n	en	1	1	0	0	1	M
+L5	L5_8	3	8ll4	ella	1	2	0	0	1	M
+L5	L5_8	4	q28	que	1	2	0	0	1	M
+L5	L5_8	5	m8	me	1	1	0	0	1	M
+L5	L5_8	6	h3c38ss8	hiciesse	1	4	0	0	0	M
+L5	L5_8	7	md	md	0	0	0	0	1	clear
+L5	L5_8	8	q28	que	1	2	0	0	1	M
+L5	L5_8	9	2s^a	V.S.	1	1	0	0	1	M
+L5	L5_8	10	l4	la	1	1	0	0	1	M
+L5	L5_8	11	8st3m4	estima	1	3	0	0	1	M
+L5	L5_9	1	r34	ria	1	2	0	0	0	M
+L5	L5_9	2	p7r	por	1	1	0	0	1	M
+L5	L5_9	3	m23	mui	1	2	0	0	1	M
+L5	L5_9	4	gr4nd8,	grande	1	2	0	0	1	M
+L5	L5_9	5	-	-	0	0	0	0	0	clear
+L5	L5_9	6	despues	despues	0	0	0	0	0	clear
+L5	L5_9	7	vino	vino	0	0	0	0	1	clear
+L5	L5_9	8	mi	mi	0	0	0	0	1	clear
+L5	L5_9	9	buleto	buleto	0	0	0	0	0	clear
+L5	L5_9	10	de	de	0	0	0	0	1	clear
+L5	L5_9	11	Ro	Ro	0	0	0	0	1	clear
+L5	L5b_2	1	m8	me	1	1	1	1	1	S
+L5	L5b_2	2	en	en	0	0	1	0	1	clear
+L5	L5b_2	3	ellos,	ellos,	0	0	1	0	1	clear
+L5	L5b_2	4	34ss3	iassi	1	3	0	0	0	M
+L5	L5b_2	5	23	ui	1	2	0	0	1	M
+L5	L5b_2	6	8nd7m8	endome	1	3	1	1	0	M
+L5	L5b_2	7	t4nb38n	tanbien	1	3	1	1	0	M
+L5	L5b_2	8	8n	en	1	1	0	0	1	M
+L5	L5b_2	9	8st8	este	1	2	0	0	1	M
+L5	L5b_2	10	tr4n	tran	1	1	0	0	0	M
+L5	L5b_3	1	c8	ce	1	1	1	1	1	S
+L5	L5b_3	2	h3c8	hice	1	2	0	0	1	M
+L5	L5b_3	3	7tr4	otra	1	2	0	0	1	M
+L5	L5b_3	4	c4rt4	carta	1	2	1	1	1	S
+L5	L5b_3	5	8n	en	1	1	1	1	1	S
+L5	L5b_3	6	n7n6r8	nonbre	1	2	1	1	0	M
+L5	L5b_3	7	d8	de	1	1	1	1	1	S
+L5	L5b_3	8	2s^o	V.S.	1	1	0	0	1	M
+L5	L5b_3	9	p4r4	para	1	2	1	1	1	S
+L5	L5b_3	10	8l	el	1	1	0	0	1	M
+L5	L5b_3	11	Abbad	Abbad	0	0	0	0	0	clear
+L5	L5b_4	1	8n	en	1	1	0	0	1	M
+L5	L5b_4	2	q28	que	1	2	0	0	1	M
+L5	L5b_4	3	d8c34	decia	1	3	1	1	1	S
+L5	L5b_4	4	c7m7	como	1	2	1	1	1	S
+L5	L5b_4	5	37	io	1	2	1	1	1	S
+L5	L5b_4	6	4234	auia	1	4	0	1	0	M
+L5	L5b_4	7	8scr3t7	escrito	1	3	0	0	1	M
+L5	L5b_4	8	4	a	1	1	0	0	1	M
+L5	L5b_4	9	2s^o	V.S.	1	1	0	0	1	M
+L5	L5b_4	10	l4	la	1	1	1	1	1	S
+L5	L5b_4	11	md	md	0	0	0	0	1	clear
+L5	L5b_4	12	q28	que	1	2	0	0	1	M
+L5	L5b_5	1	m8	me	1	1	1	1	1	S
+L5	L5b_5	2	h4c34	hacia	1	3	0	0	1	M
+L5	L5b_5	3	3	i	1	1	1	0	1	M
+L5	L5b_5	4	c7m7	como	1	2	1	0	1	M
+L5	L5b_5	5	p7r	por	1	1	0	0	1	M
+L5	L5b_5	6	s2	su	1	1	0	0	1	M
+L5	L5b_5	7	c7ns8j7	consejo	1	3	0	0	1	M
+L5	L5b_5	8	s8	se	1	1	0	0	1	M
+L5	L5b_5	9	4234	auia	1	4	0	1	0	M
+L5	L5b_5	10	8n234d7	enuiado	1	5	0	0	1	M
+L5	L5b_6	1	p7r	por	1	1	1	1	1	S
+L5	L5b_6	2	2n	un	1	1	0	0	1	M
+L5	L5b_6	3	62l8t7	buleto	1	3	0	0	0	M
+L5	L5b_6	4	p4r4	para	1	2	1	1	1	S
+L5	L5b_6	5	p7d8r	poder	1	2	0	1	1	M
+L5	L5b_6	6	t8n8r	tener	1	2	0	0	1	M
+L5	L5b_6	7	c7n	con	1	1	0	1	1	M
+L5	L5b_6	8	l4	la	1	1	0	0	1	M
+L5	L5b_6	9	r8ct7r34	rectoria	1	4	0	0	0	M
+L5	L5b_6	10	l4	la	1	1	0	0	1	M
+L5	L5b_7	1	c4n7ng34	canongia	1	4	0	0	0	M
+L5	L5b_7	2	3	i	1	1	0	0	1	M
+L5	L5b_7	3	c4th8dr4,	cathedra	1	3	0	0	0	M
+L5	L5b_7	4	y	y	0	0	0	0	1	clear
+L5	L5b_7	5	q28	que	1	2	0	0	1	M
+L5	L5b_7	6	2s.	V.S.	1	1	1	1	1	S
+L5	L5b_7	7	8st464	estaba	1	3	0	0	1	M
+L5	L5b_7	8	m23	mui	1	2	0	0	1	M
+L5	L5b_7	9	4gr4	agra	1	2	0	0	0	M
+L7	L7a_1	1	y	y	0	0	0	1	1	clear
+L7	L7a_1	2	gta	gta	0	0	0	1	0	clear
+L7	L7a_1	3	collegial)	collegial)	0	0	0	0	0	clear
+L7	L7a_1	5	53n7	sino	1	2	0	0	1	M
+L7	L7a_1	6	q28	que	1	2	1	1	1	S
+L7	L7a_1	7	s7l7	solo	1	2	0	1	1	M
+L7	L7a_1	8	tr4t4ss8	tratasse	1	3	0	0	0	M
+L7	L7a_2	1	m7s	mos	1	1	0	1	1	M
+L7	L7a_2	2	d8	de	1	1	0	0	1	M
+L7	L7a_2	3	tr4t4r	tratar	1	2	0	0	1	M
+L7	L7a_2	4	4l7s	alos	1	2	1	1	1	S
+L7	L7a_2	5	435l4d7s,~	aislados	1	4	1	0	0	M
+L7	L7a_2	6	R8sp7nd37m8	Respondiome	1	5	1	0	0	M
+L7	L7a_2	7	q28	que	1	2	0	0	1	M
+L7	L7a_2	8	l8	le	1	1	0	0	1	M
+L7	L7a_3	1	p4r8c34	parecia	1	4	0	0	1	M
+L7	L7a_3	2	638n,	bien	1	2	1	1	1	S
+L7	L7a_3	3	3	i	1	1	0	1	1	M
+L7	L7a_3	4	q28	que	1	2	0	1	1	M
+L7	L7a_3	5	4l	al	1	1	0	1	1	M
+L7	L7a_3	6	t38mp7	tiempo	1	3	0	1	1	M
+L7	L7a_3	7	d8	de	1	1	1	1	1	S
+L7	L7a_3	8	l4	la	1	1	1	1	1	S
+L7	L7a_3	9	7cc4ss37n	occassion	1	4	1	0	0	M
+L7	L7a_4	1	l7??3?n,~	lo??i?n	1	2	0	0	0	M
+L7	L7a_4	2	^23n38ss8	uiniesse	1	5	0	0	0	M
+L7	L7a_4	3	que	que	0	0	1	1	1	clear
+L7	L7a_4	4	cierto	cierto	0	0	1	1	1	clear
+L7	L7a_4	5	es	es	0	0	0	1	1	clear
+L7	L7a_4	6	cosa	cosa	0	0	0	1	1	clear
+L7	L7a_4	7	particular	particular	0	0	1	1	1	clear
+L7	L7a_4	8	la	la	0	0	1	1	1	clear
+L7	L7a_4	9	md	md	0	0	1	1	1	clear
+L7	L7a_4	10	que	que	0	0	1	1	1	clear
+L7	L7a_4	11	nos	nos	0	0	0	0	1	clear
+L7	L7a_4	12	hace	hace	0	0	1	1	1	clear
+L7	L7a_4	13	y	y	0	0	1	0	1	clear
+L7	L7b_01	1	quiva	quiva	0	0	0	1	0	clear
+L7	L7b_01	2	que	que	0	0	1	1	1	clear
+L7	L7b_01	3	se	se	0	0	1	1	1	clear
+L7	L7b_01	4	gastava	gastava	0	0	1	1	0	clear
+L7	L7b_01	5	muy	muy	0	0	1	1	1	clear
+L7	L7b_01	6	bien	bien	0	0	0	0	1	clear
+L7	L7b_01	7	dinero,	dinero,	0	0	1	1	1	clear
+L7	L7b_01	8	ch4	cha	1	1	1	1	1	S
+L7	L7b_01	9	^3s2c4p4d8c4m3n7	isucapadecamino	1	8	0	0	0	M
+L7	L7b_02	1	6d8s	bdes	1	1	0	0	0	M
+L7	L7b_02	2	v8nd37	vendio	1	3	1	1	0	M
+L7	L7b_02	3	s268st3d7	subestido	1	4	0	0	0	M
+L7	L7b_02	4	l4rg7	largo	1	2	1	1	1	S
+L7	L7b_02	5	4ll4,	alla	1	2	1	1	0	M
+L7	L7b_02	6	3,	i	1	1	0	1	1	M
+L7	L7b_02	7	23n7	uino	1	3	0	1	1	M
+L7	L7b_02	8	s3n8l	sinel	1	2	0	0	0	M
+L7	L7b_03	1	34ss3	iassi	1	3	0	0	0	M
+L7	L7b_03	2	4s7d7	asodo	1	3	0	0	0	M
+L7	L7b_03	3	p7rc7ss7	porcosso	1	3	0	0	0	M
+L7	L7b_03	4	h4c8rl8	hacerle	1	3	1	1	1	S
+L7	L7b_03	5	t4nb38n	tanbien	1	3	1	1	0	M
+L7	L7b_03	6	v8st3d7	vestido	1	3	0	0	1	M
+L7	L7b_03	7	c7m7	como	1	2	0	0	1	M
+L7	L7b_04	1	4l7s	alos	1	2	1	1	1	S
+L7	L7b_04	2	d8m4s,	demas	1	2	1	1	1	S
+L7	L7b_04	3	p7rq28	porque	1	3	0	1	1	M
+L7	L7b_04	4	d3c8	dice	1	2	1	1	1	S
+L7	L7b_04	5	q28	que	1	2	0	1	1	M
+L7	L7b_04	6	d8l	del	1	1	1	1	1	S
+L7	L7b_04	7	m4nt87	manteo	1	3	1	1	0	M
+L7	L7b_04	8	h3c7	hico	1	2	1	0	0	M
+L7	L7b_04	9	s8	se	1	1	0	0	1	M
+L7	L7b_05	1	rv8rv8l7	rvervelo	1	3	0	0	0	M
+L7	L7b_05	2	3	i	1	1	0	1	1	M
+L7	L7b_05	3	l7	lo	1	1	0	0	1	M
+L7	L7b_05	4	d8m4s	demas	1	2	1	1	1	S
+L7	L7b_05	5	v8nd37	vendio	1	3	1	1	0	M
+L7	L7b_05	6	3	i	1	1	0	1	1	M
+L7	L7b_05	7	h3c7	hico	1	2	0	0	0	M
+L7	L7b_05	8	2n4	una	1	2	0	0	1	M
+L7	L7b_05	9	s7t4n8ll4	sotanella	1	4	0	0	0	M
+L7	L7b_06	1	q28	que	1	2	0	1	1	M
+L7	L7b_06	2	tr48	trae	1	2	0	0	1	M
+L7	L7b_06	3	d8l4n8ll4	delanella	1	4	0	0	0	M
+L7	L7b_06	4	n7824,	noeua	1	4	0	0	0	M
+L7	L7b_06	5	34ss3	iassi	1	3	0	0	0	M
+L7	L7b_06	6	m8	me	1	1	1	1	1	S
+L7	L7b_06	7	p3d37	pidio	1	3	1	1	0	M
+L7	L7b_06	8	q28	que	1	2	0	1	1	M
+L7	L7b_07	1	37	io	1	2	1	1	1	S
+L7	L7b_07	2	n7	no	1	1	1	1	1	S
+L7	L7b_07	3	8scr3v38ss8	escriviesse	1	5	0	0	0	M
+L7	L7b_07	4	4	a	1	1	1	1	1	S
+L7	L7b_07	5	2s^o	V.S.	1	1	0	0	1	M
+L7	L7b_07	6	q28	que	1	2	0	0	1	M
+L7	L7b_07	7	l8	le	1	1	0	0	1	M
+L7	L7b_07	8	h4c34	hacia	1	3	0	0	1	M
+L7	L7b_07	9	m4s	mas	1	1	1	1	1	S
+L7	L7b_07	10	d8s7t4	desota	1	3	0	0	0	M
+L7	L7b_08	1	n4	na	1	1	1	1	1	S
+L7	L7b_08	2	p7r	por	1	1	1	1	1	S
+L7	L7b_08	3	s8r	ser	1	1	0	0	1	M
+L7	L7b_08	4	l4s234	lasuia	1	4	0	0	0	M
+L7	L7b_08	5	d8	de	1	1	1	1	1	S
+L7	L7b_08	6	v8r4n7,	verano	1	3	1	1	1	S
+L7	L7b_08	7	3	i	1	1	1	1	1	S
+L7	L7b_08	8	q28	que	1	2	0	1	1	M
+L7	L7b_08	9	p4r4	para	1	2	1	1	1	S
+L7	L7b_08	10	8l	el	1	1	0	1	1	M
+L7	L7b_08	11	m4n	man	1	1	0	1	1	M
+L7	L7b_09	1	th87	theo	1	2	1	1	0	M
+L7	L7b_09	2	p2ss38ss8	pussiesse	1	4	0	0	0	M
+L7	L7b_09	3	37	io	1	2	0	1	1	M
+L7	L7b_09	4	8l	el	1	1	1	1	1	S
+L7	L7b_09	5	d3n8r7	dinero	1	3	0	1	1	M
+L7	L7b_09	6	4st4	asta	1	2	0	0	0	M
+L7	L7b_09	7	q28	que	1	2	0	1	1	M
+L7	L7b_09	8	s2	su	1	1	0	1	1	M
+L7	L7b_09	9	m4dr8	madre	1	2	0	1	1	M
+L7	L7b_10	1	v8nd38ss8	vendiesse	1	4	0	0	0	M
+L7	L7b_10	2	v3n7	vino	1	2	1	1	1	S
+L7	L7b_10	3	3	i	1	1	0	0	1	M
+L7	L7b_10	4	s8l7	selo	1	2	0	0	1	M
+L7	L7b_10	5	8nv34ss8	enviasse	1	4	0	0	0	M
+L7	L7b_10	6	q28	que	1	2	0	1	1	M
+L7	L7b_10	7	47r4	aora	1	3	0	0	0	M
+L7	L7b_10	8	n7	no	1	1	1	0	1	M
+L7	L7b_10	9	t8n4	tena	1	2	0	0	0	M
+L7	L7b_11	1	d8sp28s	despues	1	3	0	0	0	M
+L7	L7b_11	2	m8	me	1	1	1	1	1	S
+L7	L7b_11	3	d3x7,	dixo	1	2	0	0	0	M
+L7	L7b_11	4	^8ns8cr8t7	ensecreto	1	4	0	0	0	M
+L7	L7b_11	5	ll8g4nd7	llegando	1	3	0	0	1	M
+L7	L7b_11	6	4c7nt4r	acontar	1	3	1	1	0	M
+L7	L7b_11	7	8l	el	1	1	0	1	1	M
+L7	L7b_11	8	d3n8r7	dinero	1	3	0	1	1	M
+L7	L7b_11	9	q28	que	1	2	1	1	1	S
+L7	L7b_12	1	tr434n	traian	1	3	1	0	1	M
+L7	L7b_12	2	q28	que	1	2	0	1	1	M
+L7	L7b_12	3	4234	auia	1	4	1	1	0	M
+L7	L7b_12	4	t7m4d7	tomado	1	3	1	0	1	M
+L7	L7b_12	5	d8l	del	1	1	1	0	1	M
+L7	L7b_12	6	t4l8g7	talego	1	3	0	0	1	M
+L7	L7b_12	7	q28	que	1	2	0	1	1	M
+L7	L7b_12	8	8l	el	1	1	0	1	1	M
+L7	L7b_12	9	tr434	traia	1	3	1	0	1	M
+L7	L7b_13	1	q24r8nt4	quarenta	1	4	0	1	0	M
+L7	L7b_13	2	r84l8s	reales	1	3	0	0	1	M
+L7	L7b_13	3	8n7l8d7	enoledo	1	4	0	0	0	M
+L7	L7b_13	4	p4r4	para	1	2	1	1	1	S
+L7	L7b_13	5	2n4s	unas	1	2	1	1	1	S
+L7	L7b_13	6	27t4s	uotas	1	3	0	0	0	M
+L7	L7b_14	1	37?4s	io?as	1	3	0	0	0	M
+L7	L7b_14	2	c7ll4s	collas	1	2	0	1	0	M
+L7	L7b_14	3	3	i	1	1	1	1	1	S
+L7	L7b_14	4	q28	que	1	2	0	0	1	M
+L7	L7b_14	5	t4nb38n	tanbien	1	3	1	0	0	M
+L7	L7b_14	6	s8l7s	selos	1	2	1	1	1	S
+L7	L7b_14	7	8nv34r34	enviaria	1	5	1	0	0	M
+L7	L7b_14	8	4	a	1	1	0	0	1	M
+L7	L7b_14	9	q28	que	1	2	0	0	1	M
+L7	L7b_15	1	d3r	dir	1	1	1	0	1	M
+L7	L7b_15	2	4	a	1	1	0	0	1	M
+L7	L7b_15	3	s2	su	1	1	0	0	1	M
+L7	L7b_15	4	m4dr8,	madre	1	2	0	1	1	M
+L7	L7b_15	5	q28	que	1	2	0	1	1	M
+L7	L7b_15	6	s7n	son	1	1	0	1	1	M
+L7	L7b_15	7	c7s3ll4s	cosillas	1	3	0	1	0	M
+L7	L7b_15	8	q28	que	1	2	0	1	1	M
+L7	L7b_15	9	m8	me	1	1	0	0	1	M
+L7	L7b_15	10	h4n	han	1	1	1	1	1	S
+L7	L7b_15	11	8n	en	1	1	1	1	1	S
+L7	L7b_16	1	f4d4d7	fadado	1	3	0	1	0	M
+L7	L7b_16	2	2n	un	1	1	1	1	1	S
+L7	L7b_16	3	p7c7,	poco	1	2	1	1	1	S
+L7	L7b_16	4	42nq28	aunque	1	4	0	0	1	M
+L7	L7b_16	5	37	io	1	2	1	1	1	S
+L7	L7b_16	6	n7	no	1	1	1	1	1	S
+L7	L7b_16	7	s8l7	selo	1	2	0	1	1	M
+L7	L7b_16	8	h8	he	1	1	0	0	1	M
+L7	L7b_16	9	d4d7	dado	1	2	0	0	1	M
+L7	L7b_16	10	4	a	1	1	0	0	1	M
+L7	L7b_16	11	8n	en	1	1	0	0	1	M
+L7	L7b_17	1	t8nd8r	tender	1	2	1	1	0	M
+L7	L7b_17	2	d8	de	1	1	0	0	1	M
+L7	L7b_17	3	n3ng2n4	ninguna	1	3	0	0	1	M
+L7	L7b_17	4	m4n8r4,	manera	1	3	0	0	1	M
+L7	L7b_17	5	p7rq28	porque	1	3	0	1	1	M
+L7	L7b_17	6	64st4	basta	1	2	0	0	1	M
+L7	L7b_17	7	s8r	ser	1	1	0	0	1	M
+L7	L7b_18	1	s7633n7	sobiino	1	4	0	0	0	M
+L7	L7b_18	2	d8	de	1	1	0	1	1	M
+L7	L7b_18	3	q238n	quien	1	3	0	0	1	M
+L7	L7b_18	4	8s,	es	1	1	0	0	1	M
+L7	L7b_18	5	3	i	1	1	0	0	1	M
+L7	L7b_18	6	l4	la	1	1	0	0	1	M
+L7	L7b_18	7	628n4	buena	1	3	0	0	1	M
+L7	L7b_18	8	4m3st4d	amistad	1	3	0	0	1	M
+L7	L7b_18	9	q28	que	1	2	0	1	1	M
+L7	L7b_19	1	n7s	nos	1	1	1	1	1	S
+L7	L7b_19	2	h4	ha	1	1	1	1	1	S
+L7	L7b_19	3	h8ch7	hecho	1	2	1	1	1	S
+L7	L7b_19	4	8l	el	1	1	1	1	1	S
+L7	L7b_19	5	R8g8nt8	Regente	1	3	0	1	1	M
+L7	L7b_19	6	8n	en	1	1	0	0	1	M
+L7	L7b_19	7	8st7	esto	1	2	0	0	1	M
+L7	L7b_19	8	d8l4	dela	1	2	1	1	1	S
+L7	L7b_19	9	c4n7n	canon	1	2	1	1	1	S
+L7	L7b_20	1	g34	gia	1	2	1	1	0	M
+L7	L7b_20	2	p4r4	para	1	2	1	1	1	S
+L7	L7b_20	3	q28	que	1	2	0	1	1	M
+L7	L7b_20	4	4s2s	asus	1	2	1	1	0	M
+L7	L7b_20	5	c7s4s	cosas	1	2	0	0	1	M
+L7	L7b_20	6	d8l4	dela	1	2	0	0	1	M
+L7	L7b_20	7	h4g4m7s	hagamos	1	3	1	1	1	S
+L7	L7b_20	8	8n	en	1	1	1	1	1	S
+L7	L7b_21	1	t7d7	todo	1	2	0	0	1	M
+L7	L7b_21	2	l7	lo	1	1	0	0	1	M
+L7	L7b_21	3	q28	que	1	2	0	0	1	M
+L7	L7b_21	4	p8d3r8m7s,	pediremos	1	4	0	0	0	M
+L7	L7b_21	5	34ss3	iassi	1	3	0	0	0	M
+L7	L7b_21	6	2s^a	V.S.	1	1	0	0	1	M
+L7	L7b_21	7	v8r4	vera	1	2	1	1	1	S
+L7	L7b_21	8	l7	lo	1	1	0	0	1	M
+L7	L7b_21	9	q28	que	1	2	0	0	1	M
+L7	L7b_22	1	m4nd4	manda	1	2	1	1	1	S
+L7	L7b_22	2	q28	que	1	2	0	1	1	M
+L7	L7b_22	3	s8	se	1	1	0	1	1	M
+L7	L7b_22	4	h4g4	haga	1	2	1	0	1	M
+L7	L7b_22	5	8n	en	1	1	1	1	1	S
+L7	L7b_22	6	r4c7n	racon	1	2	1	1	0	M
+L7	L7b_22	7	^d8	de	1	1	1	1	1	S
+L7	L7b_22	8	s3	si	1	1	0	1	1	M
+L7	L7b_22	9	c76r4r8	cobrare	1	3	0	0	0	M
+L7	L7b_22	10	d8	de	1	1	1	1	1	S
+L7	L7b_23	1	ch428s	chaues	1	3	1	1	0	M
+L7	L7b_23	2	8l	el	1	1	1	1	1	S
+L7	L7b_23	3	c7st8	coste	1	2	1	1	1	S
+L7	L7b_23	4	d8l	del	1	1	1	1	1	S
+L7	L7b_23	5	m4nt87	manteo	1	3	1	1	0	M
+L7	L7b_23	6	3	i	1	1	0	0	1	M
+L7	L7b_23	7	l7s	los	1	1	0	0	1	M
+L7	L7b_23	8	q24r8nt4	quarenta	1	4	0	0	0	M
+L7	L7b_24	1	R84l8s	Reales	1	3	1	1	1	S
+L7	L7b_24	2	s2p28st7	supuesto	1	4	0	0	1	M
+L7	L7b_24	3	q28	que	1	2	0	1	1	M
+L7	L7b_24	4	8l	el	1	1	1	0	1	M
+L7	L7b_24	5	n7	no	1	1	0	0	1	M
+L7	L7b_24	6	s4v8	save	1	2	0	0	0	M
+L7	L7b_24	7	q28	que	1	2	0	1	1	M
+L7	L7b_24	8	2s.	V.S.	1	1	1	1	1	S
+L7	L7b_24	9	l7	lo	1	1	0	0	1	M
+L7	L7b_24	10	s4v8,	save	1	2	0	0	0	M
+L7	L7b_24	11	4n	an	1	1	0	0	1	M
+L7	L7b_25	1	t8s	tes	1	1	1	1	1	S
+L7	L7b_25	2	m8	me	1	1	1	1	1	S
+L7	L7b_25	3	p3d37	pidio	1	3	0	0	0	M
+L7	L7b_25	4	q28	que	1	2	0	1	1	M
+L7	L7b_25	5	n7	no	1	1	0	0	1	M
+L7	L7b_25	6	l7	lo	1	1	0	1	1	M
+L7	L7b_25	7	8scr3v38ss8	escriviesse	1	5	0	0	0	M
+L7	L7b_25	8	q28	que	1	2	0	1	1	M
+L7	L7b_25	9	8l	el	1	1	1	1	1	S
+L7	L7b_25	10	l7	lo	1	1	0	1	1	M
+L7	L7b_25	11	q28r34	queria	1	4	0	0	1	M
