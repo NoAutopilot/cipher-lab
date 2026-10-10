@@ -14358,3 +14358,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 16:50 | FIX-L17a worker | claim: FIX-L17a, eckert-1864 apply s.5 of FV-L16b/c/d + AUD2-LEDGER16-2/-3/-4; box ends 17:50 UTC 10 Oct 2026; for LANE LEDGER-17 (account 1)
 2026-10-10 16:50 | AUD2-LEDGER16-5 (Opus 5.5, second verifier) | hdl.huntington.org take (16:4x UTC 10 Oct by date -u; no un-released take open; <= 16 requests: control 9678 + 14 fresh CISOSEARCHALL + 1 IIIF page 5829, 3.2 s apart), for LANE LEDGER-16 (account 1)
 2026-10-10 16:50 | FM-S65B (Sonnet 5.5, reader, account 1, for LANE LEDGER-17) | claim 16:5x UTC 10 Oct by date -u: FM-S65B E589-E599 (11 short 1865 Fort Monroe rows); cap 3.5, box to 18:40 UTC
+2026-10-10 16:51 | OR-CACHE2 (Sonnet 5.5) | claim (16:5x UTC 10 Oct by date -u): fetch the 22 ser. I vols 32-49 parts missing from print/ and grep eckert-1864 N3 entries; cap 3.5, box ends 18:35 UTC 10 Oct; archive.org token posted separately; for LANE LEDGER-17 (account 1)
