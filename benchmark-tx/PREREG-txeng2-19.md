@@ -139,3 +139,10 @@ Note for the NEXT box-proposal build (not applied to the published pages; the ow
 luzerne 10 of 445): the over-wide split rule tests the chosen ink valley for a descender crossing before cutting -- a valley column whose ink
 below the line's baseline band is connected to the left piece's component is a tail, not a gap, and the cut moves to the next valley or is not
 made. Recorded here so the second oracle pass or the atlas recipe carries it.
+
+## OL1-MANIFEST: the orchestrator's decisions of 03:4x UTC 10 Oct 2026 on the published pages (lane incarnation 5, written 03:4x UTC by date -u)
+No rebuild mid-pass: the three published pages (one page version per hand for the run the owner is timing) stand as they are; luzerne's 10 split
+pieces are handled by R1 (both halves Bad cut); the descender-crossing test goes into the NEXT box build. F75 logged, not fixed in-run: this run's
+pages name their piles "sign box" / "mark box" (the machine's cut kind, said so in the lede); the next build names piles by geometry only ("box" /
+"small box under 0.35 x the line height"). The owner's minutes per 100 signs come to whichever orchestrator session is live (the account-4
+orchestrator is handing over at 03:4x) and complete this registration when written here.
