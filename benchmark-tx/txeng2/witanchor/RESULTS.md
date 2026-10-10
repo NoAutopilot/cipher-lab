@@ -18,3 +18,24 @@ bounded by OCR quality, Gachard's omission and period spelling, and is a transcr
 rebuilt, nothing re-scored.
 
 ## WIT-GROEN: Groen van Prinsterer IV pp.90*-91* vs dec_norm's end (running; appended when done)
+Run 01:21-01:3x UTC 10 Oct (wit_groen.py; result_groen.json). The passage "L'Empereur fait asseurément ... remédier ses affaires"
+(letter 63, "St. Goard au Roi Charles IX: Madrid, 8 juin (MS. P. Sup. G. H. 228, vol. 79a)", printed from a manuscript copy other than
+BnF fr.16105) split at the p.90*/p.91* page break into a clean part (370 letters) and an OCR-damaged part (189 letters).
+
+| part | best window in dec_norm | ratio | selection-fair null max / p95 (n) | margin vs max | letters before dec_norm's end (9554) |
+|---|---|---|---|---|---|
+| p.90* clean | **8937-9307** | **0.7865** | 0.3297 / 0.3135 (200) | **0.4568** | 247 |
+| p.91* damaged | 9270-9459 | 0.6508 | 0.381 / 0.3651 (50) | 0.2698 | 95 |
+
+Gate as declared (the clean part's window ends within 150 letters of dec_norm's end AND margin >= 0.03): margin passes (0.457),
+the end condition FAILS (247 letters) -> **NOT SUPPORTED by the declared gate**. Reading beside the gate, not
+a verdict: the gate was written for the whole passage but tested on its clean HALF; the damaged half follows contiguously
+(9270-9459, 37 letters of overlap at the join, margin 0.27 despite the OCR) and the whole passage ends 95
+letters before dec_norm's end -- inside 150 -- with the 95 letters after it being the clerk's own close (date and subscription,
+which Groen's extract omits). So the clerk-independent copy places the dispatch's closing passage at the end of dec_norm, where
+N5-VIVK's end anchor put the f.103r stretch, and agrees with the clerk's text there at ratio 0.79 (bounded by OCR, period spelling
+and the two copies' own variants). What this licenses: the END anchor of the f.103r stretch is consistent with an independent
+witness (a post-hoc reading; the declared gate itself fails on its own wording, and that is recorded, not reworded). What it does
+not: nothing about the 310 align-uncertain positions inside the stretch, nothing about the cipher reads, nothing rebuilt; a verifier
+pass on the closing stretch's clerk-doubtful flags against Groen's text is a later PREREG (flags change only through the build's
+flag column by a verifier).

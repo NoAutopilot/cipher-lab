@@ -1,0 +1,36 @@
+{
+ "dec_len": 9554,
+ "registered_f103r_span": [
+  6655,
+  9554
+ ],
+ "segments": [
+  {
+   "part": "p90_clean",
+   "letters": 370,
+   "ratio": 0.7865,
+   "offset": 8937,
+   "end": 9307,
+   "end_gap_to_dec_end": 247,
+   "null_max": 0.3297,
+   "null_p95": 0.3135,
+   "margin_vs_max": 0.4568,
+   "null_n": 200,
+   "head": "lempereurfaitasseurementtoutce"
+  },
+  {
+   "part": "p91_damaged",
+   "letters": 189,
+   "ratio": 0.6508,
+   "offset": 9270,
+   "end": 9459,
+   "end_gap_to_dec_end": 95,
+   "null_max": 0.381,
+   "null_p95": 0.3651,
+   "margin_vs_max": 0.2698,
+   "null_n": 50,
+   "head": "enoiigiourtoutseidfusantunerec"
+  }
+ ],
+ "verdict": "NOT SUPPORTED"
+}
