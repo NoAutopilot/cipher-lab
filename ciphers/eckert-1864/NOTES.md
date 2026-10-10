@@ -4738,3 +4738,31 @@ Read so far: 3 of 3 entries audited; N2-GE N1 (in print), N2-FH and N2-GF N3 D3,
 - [x] image-check: 9916 and 9722 eye-checked at 2400 px with line crops.
 - [ ] retry: none owed.
 Verdict: keep going: 1 internal gaps; cheapest next: the FIX job for AUDIT (FV-N2b) s.5, ~$1
+
+## FV-N2c (10 Oct 2026, account 1, for LANE LEDGER-N2)
+First verifier (separate from the reader N2R-2) of N2-GH (9725/0), N2-GA (9874/1), N2-GC (9913/0), N2-GI (9914/1): AUDIT.md "## AUDIT (FV-N2c)". Classes: **N2-GH
+N1** (its text is printed from the received copy in The Papers of U. S. Grant vol. 10, note to USG to Meade 27 Apr 1864 8.30 a.m., "On April 27, 2:00 P.M., Burnside,
+Alexandria, telegraphed to USG. 'The columns in motion will reach Fairfax tonight ...'"; page number not read; N2R-2's "not located" came from one long AND query),
+**N2-GA N3 D3** (holder clear sibling 9100, mssEC 19 p.206, same day: Brice to Stevenson, paymasters leave Monday for Sheridan's army, escort to Martinsburg; OR I/43
+pt 2 pp.370-373, 471-472 context), **N2-GC N3 D2**, **N2-GI N3 D2**, key `period`. Found: N2-GC "Pharoah Brooks" = December 2 (decoder missed the "[sic]" key row),
+the same order N2-GI cites as "of the 2nd inst"; "Relay house" plain, not Relay = Effect; Negus = Sheridan is H; N2-GI's own header carries "No 2" and "3 Pm" on the
+image; N2-GH's "No 32" is the next entry's label. All four leaves eye-checked at 2400 px; no duplicate in mssEC 18/19 or the Fort Monroe pages. status.json rows,
+SO-ECKERT-N2-GA/GC/GI and WORK-QUEUE AUD2-LEDGERN2-3 queued; corrections for a FIX job in AUDIT s.5, not applied here. Requests: hdl 27, be-api 13, archive.org 6,
+googleapis 13, loc.gov 3 (+3 x 404 on the retired chroniclingamerica search URL). For LANE LEDGER-N2 (account 1).
+
+## Remaining gaps (FV-N2c, 10 Oct 2026)
+Read so far: N2-GH, N2-GA, N2-GC, N2-GI audited (N1, N3 D3, N3 D2, N3 D2); all four ledger leaves eye-checked at 2400 px.
+- N2-GA, N2-GC, N2-GI second audit and the unsearched families (NARA RG 99/RG 107/RG 108, OR ser. III vol. 5 and the Paymaster General's 1865 report, Grant Papers vols. 12-13 note pages, Sheridan's and Meade's papers, the press pages, HathiTrust, JSTOR) - blocker: waiting-on the answer of the VERIFY lane to WORK-QUEUE.tsv row AUD2-LEDGERN2-3; a second audit is a separate session (rule 10)
+- the reading and header fixes of AUDIT (FV-N2c) s.5 (N2-GH in print and tail; N2-GC December 2, Relay House plain, Negus H; N2-GA sibling 9100; N2-GI header label and hour) - blocker: not-attempted; a verifier does not edit ciphertext-no2.txt or reading-no2.md; next: a FIX job, ~$1
+- N2-GH's page number in Grant Papers vol. 10 - blocker: not-attempted; the IA copy is lending-only and Google Books page view is blocked from the cloud; next: a LOCAL-QUEUE row for the owner's runner (Google Books 7DAAxfRuXKoC, search "requisite ammunition"), ~$0.1
+- N2-GC, N2-GI depth D3 (an external check of the content) - blocker: not-attempted; outside this audit's searches; next: the Secretary of War's order of 2 Dec 1864 on paying troops (War Department orders 1864, OR ser. III vol. 4 on HathiTrust via the runner) and a Sixth Corps regimental history for the mid-December pay, ~$0.5
+
+## Escalation (FV-N2c, 10 Oct 2026)
+- [x] siblings: 9100 (N2-GA's same-day clear order), 9913/1 and fortmonroe 5829 (E254), 5857, 5859, 5790/9867 read; none a copy.
+- [x] clear-pages: all-pointer CISOSEARCHALL on 12 queries with positive controls (own pages hit), 11 item reads; disk grep of every mssEC 18/19 and Fort Monroe page.
+- [x] known-keys: every code group checked in key-no2.md (s.3 of the audit).
+- [x] print: OR I/33, I/42 pt 3, I/43 pt 2, I/45 pt 2 by text and dated headings; Grant Papers vols. 10, 12, 13 by be-api short phrases; Google Books G3 phrases; Chronicling America by date window; N2-GH found in Grant Papers vol. 10.
+- [n/a] key-rebuild: no key row edited; fixes listed in AUDIT s.5.
+- [x] image-check: all four entries eye-checked at 2400 px.
+- [x] retry: none needed (the old Chronicling America URL 404s; the loc.gov JSON route answered).
+Verdict: keep going: 3 internal gaps; cheapest next: the FIX job for AUDIT (FV-N2c) s.5, ~$1

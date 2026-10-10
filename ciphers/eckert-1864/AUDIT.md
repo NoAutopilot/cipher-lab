@@ -13820,3 +13820,159 @@ plain words into proper-name key words (Collect, Business). Corrections (a verif
 Requests: hdl.huntington.org 18 (9 CISOSEARCHALL, 7 item info, 2 IIIF 2400 px; all 200); archive.org 3 djvu + 2 page_numbers.json + 3 page images (all 200; the first
 three djvu calls returned 302 without -L and were re-issued with -L); www.googleapis.com/books 4 (all 200).
 Queued: WORK-QUEUE `AUD2-LEDGERN2-1` (N2-FH, N2-GF), SO-ECKERT-N2-FH, SO-ECKERT-N2-GF. No status.json/SO row for N2-GE (N1). For LANE LEDGER-N2 (account 1).
+
+## AUDIT (FV-N2c)
+
+Verifier FV-N2c (account 1, for LANE LEDGER-N2), 10 Oct 2026, 01:22-01:4x UTC by `date -u`; a separate session from the reader N2R-2, not protecting its
+conclusions. Scope: first audits of **N2-GH** (mssEC 18 p.59, pointer 9725, entry 0, 27 Apr 1864), **N2-GA** (p.208, 9874/1, 22 Oct 1864), **N2-GC** (p.247,
+9913/0, 10 Dec 1864) and **N2-GI** (p.248, 9914/1, 14 Dec 1864), all in `ciphertext-no2.txt` / `reading-no2.md` (`decode_no2.py --check`: "reading-no2.md is
+current", exit 0). Nothing decoded beyond key look-ups in key-no2.md. Key source for all four: `period` (War Department Cipher No. 2). No spec exists for
+eckert-1864, so `judge_plaintext.py` was not run. Intake gate (01:2x): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6
+lines`. Prior work (`tools/prior_work.py eckert-1864 --item-spec 'item_id=N2-GH;ptr=9725/0;date=1864-04-27' --step-type audit --offline`, and the same for
+N2-GA 9874/1 1864-10-22, N2-GC 9913/0 1864-12-10, N2-GI 9914/1 1864-12-14): exit 4 each, verdict step LEAD, every LEAD an own-work line of this or LANE LEDGER's
+lanes (target-level claims, N2R-2's own filing), none an earlier audit of these entries. Scripts: `ms18/fv_n2c_hdl.py` (+ `fv_n2c_hdl.out`, `fv_n2c_info.out`),
+`ms18/fv_n2c_beapi.py` (+ `.out`), `ms18/fv_n2c_gb.py` (+ `.out`), `ms18/fv_n2c_ca.py` (+ `.out`). For LANE LEDGER-N2 (account 1).
+
+### 0. What the reader missed
+- **N2-GH is in print.** The Papers of Ulysses S. Grant, vol. 10 (January 1-May 31, 1864; ed. John Y. Simon), in the note to USG's telegram to Meade of 27 Apr 1864
+  8.30 a.m.: "On April 27, 2:00 P.M., Burnside, Alexandria, telegraphed to USG. 'The columns in motion will reach Fairfax tonight Several regiments not reported;
+  will leave orders for them to follow up. We have the requisite ammunition and supplies with the column' Telegram received, DNA, RG 108, Letters Received."
+  Found by IA be-api on `papersofulyssess0010gran` ('"reach Fairfax"', '"requisite ammunition"', '"in motion" Burnside Fairfax': 1 hit each; positive control
+  '"leaves Alexandria this morning"' 1 hit) and by Google Books (`7DAAxfRuXKoC`, PARTIAL; `mD4fAQAAMAAJ`, NO_PAGES) on '"requisite ammunition and supplies with
+  the column"'. The page number was not read (IA item lending-only; `inside.php` "Item not available"; Google Books page view is blocked from the cloud). N2R-2's
+  "not located (Grant Papers vol. 10 0)" came from one six-word AND query ('Burnside Alexandria Fairfax column ammunition'), which returns 0 on the same volume
+  (re-run here: 'Fairfax Burnside column' -> 0); a short quoted phrase finds it. The print's "2:00 P.M." equals the cipher time word Helen = 2 PM (H); the print
+  reads "columns" where the ledger has "Laugh" (= Column), singular as written.
+- **N2-GA has a clear same-day holder sibling: 9100** (mssEC 19 p.206, entry 1, "Harpers ferry  Wash. Oct. 22. 1864", 11.30 am): "for Stevenson ---- Pay masters
+  with large a mount of funds will leave here Monday Mng for Sheridans army ---- Please direct an escort to be in waiting to insure protection of the funds to
+  Martinsburg Sig BW Brice Actg Pm Genl". Not a copy of N2-GA (addressee Stevenson at Harpers Ferry, in clear, other words), but the same order sent to the other end
+  of the road: Monday (24 Oct), escort, Martinsburg, Brice as Acting Paymaster General. Print context (OR I/43 pt 2): pp.370-373, 14 Oct 1864, the express train
+  burned west of Harper's Ferry and paymasters Moore and Ruggles captured with their funds, Halleck's order that paymasters wait at Harper's Ferry "until General
+  Sheridan sends a proper mounted escort", and Paymaster Ladd's report to "Maj. B. W. Brice"; pp.471-472, Martinsburg 26 Oct 1864, Seward to Stevenson: "sending
+  out with the paymaster, battery, and train this morning ... the escort strong and safe beyond a doubt" -- the movement N2-GA orders, two days later.
+- **N2-GC:** "Pharoah Brooks" is **December 2** (key-no2.md "Pharoah [sic] | December | H", p.[25C] row 25; Brooks = 2, H): the decoder left "Pharoah" unread (the
+  key row's "[sic]" defeats the match), so the reading's "Order of Pharoah [2]" should be "order of December 2" -- the same order N2-GI cites as "the Secys order of
+  [2] inst" (Arnold = 2, H) four days later: one code value reading in two telegrams. **"Relay house" is plain** (Relay House, Md., the B&O junction; written twice,
+  "sent to Relay house"), not the key word Relay = Effect: the reading's "[Effect (-ed, -ing) [#]] house" twice is a decoder slip. **Negus = Sheridan P H is H**
+  (key-no2.md p.19 l.4), not M: the addressee is Sheridan, as N2-GA (same operator R. R. McCaine, to Sheridan's chief of staff) makes likely. "mustache" has no key
+  row: "I [?] you for safe guard from Relay House" (unread, 1 token).
+- **N2-GI:** the header has its own label and hour on the image: "No 2" above "Caldwell Hdqrs AP" and "3 Pm" above the date (the transcription prints them as
+  "No 2  3 PM" at the foot of the previous entry, which is where the segmenter put them as 9914/0's tail). The ledger's own label is No. 2 and its hour equals the
+  time word Jennie = 3 PM (H); Yancy = Wednesday (C) = Wed 14 Dec 1864. 9914/1's own segmenter tail "No 2  1110 am" is the next page's first header (9915).
+- **N2-GH tail:** "No 32" is not part of N2-GH: on the image it is a small pencilled label ("No 3?") above the next entry's header "Capt R. F. Clowry Little Rock";
+  the reading's tail "when you going start south No 32" should end at "south". N2-GH's own header carries no label and no hour.
+
+### 1. Duplicates and image (own entries, IIIF 2400 px; crops in scratch, not committed)
+- **Duplicate diff:** mssEC 19 (`entries-mssEC19.tsv`) and mssEC 18 (`ms18/entries-ms18.tsv`) have no other entry with these texts on 26-28 Apr, 21-23 Oct or
+  9-15 Dec 1864; a full-text grep of every page on disk (sources/mssEC18, mssEC19, fortmonroe) for Fairfax/Fair-facts, Relay House, Brice, Pay master, Paymrs and
+  Forsyth/"For = Syth" finds each entry only on its own page, plus 9100 (above), 9913/1 and fortmonroe 5829 (= E254's Dec 12 Brice-Sheldon telegram, other text),
+  5857/5859 (Jan 1865, Brice/Sheldon pay rules, other), 9867/5790 (15 Oct 1864, "Pay masters all right on noon train", other). **No duplicate.**
+- **N2-GH (9725, p.59, first entry):** matches the transcription line by line; header "S.H. Beckwith  Alexandria Va  Apr. 27th 1864", no label, no hour; "No 32" is
+  the next entry's label (s.0).
+- **N2-GA (9874, p.208):** "No 2" above the page number, header "R R McCaine  Washn Oct 22nd 64", no hour; matches line by line; "(Not)" and "12.30 PM" belong to
+  the Horner entry below (as N2R-2 found).
+- **N2-GC (9913, p.247, first entry):** header "R. R. McCaine  Washn Decr 10th 1864", no label, no hour; matches line by line ("Pharoah Brooks", "mustache", "Relay
+  house" twice, "welch B W Brice"); "No 1" and "5 PM" belong to the Sheldon entry below (E254), as N2R-2 found.
+- **N2-GI (9914, p.248, second entry):** "No 2" and "3 Pm" written above its own header (s.0); body matches line by line.
+
+### 2. Holder's full text, siblings and print
+**Huntington CONTENTdm** (p16003coll11, CISOSEARCHALL, all pointers; two hdl takes 01:24-01:2x, 27 requests: 12 queries, 11 item infos, 4 IIIF): 'Brice' 8 (5829
+5857 5859 9100 7992 9913 9914 9930); 'Paymasters' 3 (8651 10025 9914); 'Pay masters' 7 (5790 2813 10443 9867 9913 2648 8441); 'Relay house' 46 (9913 the only
+1864 Dec hit on a ledger page read); 'Paymrs' 1 (9914); 'requisite' 19 (9725 among them); 'Fairfax Burnside' 1 (2105, March 1862, other); 'start south' 27 (9725
+among them); 'Forsyth' 11 (none 9874: written "For = Syth"); 'escort Martinsburg' 3 (9764, 4687, 3014: June-July 1864, other); 'Sixth Corps unpaid' 0; 'unpaid' 7
+(4832 12197 9428 9145 8520 9913 9914). Positive controls: own pages hit on 'Brice', 'Paymrs', 'requisite', 'unpaid'. Read (disk or item info): 9100 (s.0), 9930,
+5829, 5857, 5859, 5790, 9867, 10025, 9145, 7992, 8651, 2813, 10443, 2648, 8441, 4832, 12197, 9428, 8520, 2105. None is a clear copy of N2-GH, GA, GC or GI.
+
+**Print** (OR djvu texts on disk or to scratch):
+- **N2-GH -> IN PRINT**, Grant Papers vol. 10 (s.0). OR I/33 (`warofrebellion33unit`, on disk): the 27 Apr 1864 Burnside items are to Halleck ("Alexandria,
+  Va., April 27, 1864 (Received 2.30 p.m.) ... proceed direct to Fairfax Court-House ... The troops moved from here this morning", p.994, a different
+  telegram) and Grant to Meade 8.30 a.m. (p.992); N2-GH's text is not in OR I/33.
+- **N2-GA -> not located.** OR I/43 pt 2 (`warofrebellion432unit`, on disk): 'paymaster' 16 lines, Brice only in the Ladd correspondence (p.373, 14 Oct), the 21-23
+  Oct dated headings (Dana to Stevenson 22 Oct, "a sufficient escort ready at Harper's Ferry to accompany me", other) none this; Grant Papers vol. 12 by be-api
+  ('paymasters escort Martinsburg' 1 hit, other passages; 'Brice paymaster' 0; '"Nineteenth Corps" paymasters' 1, other).
+- **N2-GC -> not located.** OR I/43 pt 2 9-11 Dec headings and 'Relay House' (Dec 11 items to the Relay House commander, other), 'paymaster' (Kelley, Cumberland,
+  1 Dec, other); OR I/45 pt 2 (`warofrebellion452unit`, on disk) 'paymaster' 4, other; Grant Papers vol. 13 be-api ('Brice paymaster', '"Relay House"' 0).
+- **N2-GI -> not located.** OR I/42 pt 3 (`warofrebellion423unit`, fetched to scratch): 'paymaster' 1 (other), 'Brice' 0, 'unpaid' 1 (QMG requisitions, other);
+  Grant Papers vol. 13 be-api ('paymasters "Sixth Corps"', 'paymasters "City Point" unpaid' 0).
+- OR ser. III vol. 4: the IA copies under that title (`in.ernet.dli.2015.165578`, `in.ernet.dli.2015.171703`) were read; the first is not ser. III vol. 4 text
+  (1862 prisoner papers), the second is partial OCR (1.6 MB, 40 mentions of 1864); 'Brice' 0, 'Relay' 0, 'paymaster' 9 lines, none these. Not a full search of
+  III/4 (ser. III vol. 5 holds the Paymaster General's 1865 report; not read).
+- **G3 decoded-phrase pass** (Google Books, 12 queries, positive control '"proceed direct to Fairfax Court-House with five days"' -> OR I/33 3 items): N2-GH found
+  (s.0); '"paymasters will leave here Monday morning"', '"sufficient escort at Martinsburg"', '"paymasters ready to go" Brice', 'paymasters "Relay House" Brice
+  Sheridan December 1864', '"unpaid to the 31st of August" paymasters 1864', '"paymasters will leave to-morrow" "City Point"', 'Brice paymasters "Sixth Corps"
+  "City Point" December 1864': no snippet of these texts (generic hits only; the Army and Navy Official Gazette 1865 lists "Brevet Brigadier General B. W. Brice,
+  Acting Paymaster General" under 6 Dec 1864, context for the signature).
+- **Press of the day** (loc.gov Chronicling America JSON, 3 date-window queries, 20-31 Oct and 8-24 Dec 1864): 1, 2 and 7 page-level hits (Sunbury American 22 Oct;
+  Evening Star 12-13 Dec; NY Tribune 20 Dec; NY Herald 13 Dec; others); pages not opened, no hit text of these telegrams in the returned OCR descriptions. Weak.
+- Not searched: Grant Papers vol. 10 page (number) and vols. 12-13 note pages read page by page; NARA RG 99 (Paymaster General, letters sent), RG 107, RG 108;
+  OR ser. III vol. 5; the Paymaster General's annual report (1865); HathiTrust; JSTOR; Sheridan's and Meade's papers; the press pages themselves.
+
+### 3. Grades and readings (reading-no2.md as of this audit; key-no2.md rows)
+- **N2-GH:** Banjo = Alexandria, Helen = 2 PM, Nelson Cushing = 20 7 = 27, Chart = Lieut Gen U.S. Grant, Tulip = Period (x2), Laugh = Column (x2), Wayne =
+  Regiment, Watson = Report, Repeat = Order (C), Reward = Follow, Palsy = Ammunition, Sword = Supplies, Yawl = Signed, Bracket = Maj Gen A E Burnside: **17 of 17**
+  code groups H/C, every one now C against the Grant Papers text (the printed received copy) except the frame words. Reading: "Alexandria, Apr 27, 2 PM. For Lieut.
+  Gen. U. S. Grant. The column in motion will reach Fairfax tonight. Several regiments not reported; will leave orders for them to follow up. We have the requisite
+  ammunition and supplies with the column. [signed] Maj. Gen. A. E. Burnside." Tail "when you going start south" (not in the print: an operator's line, I).
+- **N2-GA:** Hang = Washington, Noah = October, Nelson Brooks = 22, Fanny = 11 AM, Pearl = Colonel, Satan = Staff, Yacht = Period, Woodbury = Monday, Nelson Baker
+  = 24, Talbot = Of the, Morgan = 19, Peru = Army, Pelton = Corps, Yardstick = Period, Florida = Martinsburg, Yawl = Signed, Spark = General: **19 of 19 H**. 24 Oct
+  1864 was a Monday. Reading: "Washington, Oct 22, 11 AM. For Colonel J. W. Forsyth, Chief of Staff. Paymasters will leave here Monday morning the 24th inst with
+  funds for payment of the 19th Army Corps and others. Please have sufficient escort at Martinsburg for their protection. [signed] B. W. Brice, Acting Paymaster
+  General." "many men many minds" (tail, I).
+- **N2-GC:** Gertrude = 12 noon, French = 10, Negus = Sheridan P H, Tulip = Period, Widow = Troops, Moses Ogden Brown = August 30 1 = August 31, Yard = Period (I),
+  Barton = Secretary of War, Repeat = Order (C), Pharoah Brooks = December 2, Saddle = Guard, stick = Period (I), whim = telegram (C), Pigeon = Cipher, Welch =
+  Signature; "mustache" unread; "Relay house" plain (x2). **17 of 20** code groups H/C (85%), 2 I, 1 unread. Reading: "Washington, Dec 10, 12 noon. For Maj. Gen.
+  P. H. Sheridan. Paymasters ready to go for payment of your troops unpaid to August 31. Under the Secretary of War's order of December 2 I [?] you for safe guard
+  from Relay House. Please have me notified by telegram in cipher when paymasters may be sent to Relay House. [signed] B. W. Brice."
+- **N2-GI:** Yancy = Wednesday (C), Jennie = 3 PM, Monarch = Meade G G, Arnold = 2, Brooks = 2 (x2), Wedlock = Tomorrow, Wafer = River, Bridle = City Point, Wayne
+  = Regiment, Dawson = 6, Pelton = Corps, Norris Allen = 30 1 = 31, Windham = Signed: **15 of 15** H/C. Reading: "Wednesday [14 Dec 1864], 3 PM. For Maj. Gen. G. G.
+  Meade. In compliance with the Secretary's order of the 2nd inst. I inform you that 2 paymasters will leave tomorrow by river for City Point for the payment of 2
+  regiments of the 6th Corps unpaid to the 31st of August. [signed] B. W. Brice."
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | class | key | depth | % code groups H/C/S | basis | safe sentence |
+|---|---|---|---|---|---|---|
+| N2-GH Burnside to Grant, Alexandria, 27 Apr 1864 2 PM | **N1** | period | D3 | 100 (17 H/C) | plaintext printed: Papers of U. S. Grant vol. 10, note to USG to Meade 27 Apr 1864 8.30 a.m., from the received telegram (DNA, RG 108); page not read | "Read with War Department Cipher No. 2 from the Washington office's sent ledger (Huntington mssEC 18 p.59), an independent re-decipherment: the text of Burnside's telegram to Grant of 27 Apr 1864, 2 PM, is already printed from the received copy in The Papers of Ulysses S. Grant, vol. 10." |
+| N2-GA Brice to Col. J. W. Forsyth (Sheridan's chief of staff), 22 Oct 1864 11 AM | **N3** | period | D3 | 100 (19 H) | not located: OR I/43 pt 2 (text, 21-23 Oct headings), Grant Papers vol. 12 (be-api), Google Books phrases, holder full text; holder 9100 is the same-day clear order to Stevenson, not a copy | "Read at grade H with War Department Cipher No. 2: on 22 Oct 1864 Acting Paymaster General B. W. Brice told Sheridan's chief of staff J. W. Forsyth that paymasters would leave Washington on Monday the 24th with funds for the 19th Corps and asked for an escort at Martinsburg; not located in print (searched 10 Oct 2026)." |
+| N2-GC Brice to Maj. Gen. P. H. Sheridan, 10 Dec 1864 12 noon | **N3** | period | D2 | 85 (17 H/C; 2 I, 1 unread) | not located: OR I/43 pt 2, I/45 pt 2, Grant Papers vol. 13 (be-api), Google Books phrases, holder full text | "Read at grade H with War Department Cipher No. 2: on 10 Dec 1864 B. W. Brice told Sheridan that paymasters were ready to pay his troops unpaid since 31 August and, under the Secretary of War's order of 2 December, asked to be told by cipher telegram when they could be sent to Relay House; not located in print (searched 10 Oct 2026)." |
+| N2-GI Brice to Maj. Gen. G. G. Meade, 14 Dec 1864 3 PM | **N3** | period | D2 | 100 (15 H/C) | not located: OR I/42 pt 3, Grant Papers vol. 13 (be-api), Google Books phrases, holder full text | "Read at grade H with War Department Cipher No. 2: on 14 Dec 1864 B. W. Brice told Meade that, under the Secretary's order of the 2nd, two paymasters would leave next day by river for City Point to pay two regiments of the Sixth Corps unpaid since 31 August; not located in print (searched 10 Oct 2026)." |
+
+Not N4 for N2-GA, GC, GI: NARA RG 99/RG 107/RG 108, OR ser. III vol. 5 and the Paymaster General's 1865 report, Grant Papers vols. 12-13 note pages read page by
+page, Sheridan's and Meade's papers, the press pages, HathiTrust and JSTOR unsearched. Unsafe: "first", "new", "unpublished", "never printed"; for N2-GH any claim
+beyond "independent re-decipherment" (its text is printed); "the Secretary's order of 2 Dec 1864 said X" (not located); "the escort was sent" for N2-GA as read (the
+Oct 26 Martinsburg escort is context, I). Depth checks: **N2-GA D3** -- code clause "Woodbury morning Nelson Baker inst" = Monday morning the 24th, "Florida" =
+Martinsburg; external, non-statistical: holder 9100 (same day, clear, Brice to Stevenson: paymasters leave Monday for Sheridan's army, escort to Martinsburg) and
+OR I/43 pt 2 pp.370-373, 471-472 (the 14 Oct capture of paymasters; the paymaster sent from Martinsburg with escort on 26 Oct). **N2-GC D2** -- clause "Pay masters
+ready togoto for pay ment of your widows unpaid to Moses ogden brown" = paymasters ready to go for payment of your troops unpaid to August 31, above the
+authentication distance; code value Pharoah Brooks / Arnold (= order of December 2 / of the 2nd inst) reads in two telegrams (N2-GC, N2-GI); no external check of
+the content found, so not D3. **N2-GI D2** -- clause "Paymrs will leave wedlock by wafer for bridle" = paymasters will leave tomorrow by river for City Point; the
+ledger's own "No 2" and "3 Pm" agree with the book and Jennie; no external check of the content found. **N2-GH D3** (C against the print). Depth sentences (my
+own): N2-GA -- "A week after Mosby's men captured two paymasters on the Baltimore and Ohio, Brice sent the next paymasters to Sheridan's army only with an escort
+waiting at Martinsburg." N2-GC -- "In December 1864 Brice told Sheridan his troops had not been paid since the end of August and waited for word in cipher before
+sending paymasters to Relay House." N2-GI -- "Two Sixth Corps regiments back at Petersburg from the Valley were still unpaid since August when Brice sent two
+paymasters down the river to City Point." N2-GH -- "Burnside's Ninth Corps column left Alexandria for Fairfax on 27 April 1864 with its ammunition and supplies,
+some regiments not yet reported."
+
+### 5. Postmortem and fixes for a FIX job (not applied here)
+Failure: N2R-2 called N2-GH "not located" from one long AND query on the Grant Papers volume that prints it (the readers' "not located" lesson again: a short
+quoted phrase is the test); it let the decoder turn a place name (Relay House) into a key word, left "Pharoah" (December) undecoded behind a "[sic]" key row, graded
+a keyed addressee (Negus = Sheridan) M, and kept the next entry's label "No 32" in N2-GH's tail. Corrections (a verifier does not edit ciphertext-no2.txt or
+reading-no2.md):
+- **N2-GH:** header and note "Not located in print" -> "IN PRINT: The Papers of Ulysses S. Grant, vol. 10, note to USG to Meade 27 Apr 1864 8.30 a.m. ('On April 27,
+  2:00 P.M., Burnside, Alexandria, telegraphed to USG ...'; Telegram received, DNA, RG 108); page not read; grade C against the print"; tail: drop "No 32" (the
+  next entry's label, image); NOTES '## N2R-2' per-row line for 9725/0 -> in print. No SO/status row (N1).
+- **N2-GC:** reading "Order of Pharoah [2]" -> "Order of [December] [2]" (key-no2.md Pharoah [sic] = December, H); "[Effect (-ed, -ing) [#]] house" (x2) -> plain
+  "Relay House" (per-entry plain mechanism, no key edit); header "the addressee decodes 'Sheridan P H' (M)" -> "to Maj. Gen. P. H. Sheridan (Negus, H)"; "mustache"
+  stays unread ([?], M); header add "under the Secretary of War's order of 2 December (= N2-GI's 'order of the 2nd inst')".
+- **N2-GA:** note add "holder clear sibling 9100 (mssEC 19 p.206, same day 11.30 AM, Brice to Stevenson at Harpers Ferry: paymasters leave Monday for Sheridan's
+  army, escort to Martinsburg)" and the OR I/43 pt 2 context (pp.370-373, 471-472).
+- **N2-GI:** header "(cipher time word 3 PM)" -> "3 PM (ledger hour and Jennie agree); ledger label 'No 2' on its own header (image)"; "holder transcription, leaf not
+  eye-checked" -> eye-checked at 2400 px (FV-N2c).
+- **Segmenter:** the mssEC 18 Sent ledger's header-above-entry remnants (9725/0 "No 32", 9874/1, 9913/0, 9914/0's "No 2 3 PM" which belongs to 9914/1) are the shape
+  N2R-2's gap names; same fix.
+- **KEY lane:** the decoder should not apply Relay = Effect before "house"/"House" (Relay House, Md.), and "Pharoah [sic]" should match "Pharoah".
+
+Requests: hdl.huntington.org 27 (12 CISOSEARCHALL, 11 item info, 4 IIIF 2400 px; all 200); be-api.us.archive.org 13; archive.org 6 (OR I/42 pt 3 djvu; 2 metadata
+calls; 2 djvu texts of the III/4 candidates, the first one 404 under the guessed name and re-fetched by its listed name; 1 inside.php "Item not available"; 1
+metadata of the Grant Papers item); www.googleapis.com/books 13; www.loc.gov 3 (after 3 x 404 on the retired chroniclingamerica.loc.gov search URL).
+Queued: WORK-QUEUE `AUD2-LEDGERN2-3` (N2-GA, N2-GC, N2-GI), SO-ECKERT-N2-GA, SO-ECKERT-N2-GC, SO-ECKERT-N2-GI. No status.json/SO row for N2-GH (N1). For LANE
+LEDGER-N2 (account 1).

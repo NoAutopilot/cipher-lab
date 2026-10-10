@@ -12411,6 +12411,129 @@
       "depth_sentence": "As the Sixth Corps came back from the Valley, Ingalls reported from Washington that its divisions were being shipped to City Point one after another.",
       "depth_check": "code clause: The Benton Quaker will arrive here Wedlock after noon = the Third Division will arrive here tomorrow afternoon; external: Sheridan 3 Dec 2 p.m., OR I/43 pt 2 p.730, and Rawlins 4 Dec, OR I/42 pt 3 p.794 (D3)",
       "depth_note": "25 H, 1 C of 26 code-word groups; rest plain"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-N2c)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-N2c verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-N2c)' section 4",
+      "reading_version": "N2R-2 10 Oct 2026 (reading-no2.md), grades as in AUDIT (FV-N2c) s.3 (corrections in s.5 pending a FIX job)",
+      "unresolved_spans": "",
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): B. W. Brice to Col. J. W. Forsyth, Sheridan's chief of staff, 22 Oct 1864: paymasters leave Monday the 24th with funds for the 19th Corps; escort wanted at Martinsburg (N2-GA)",
+      "line": "Read at grade H with War Department Cipher No. 2 (period key): on 22 Oct 1864 Acting Paymaster General B. W. Brice told Sheridan's chief of staff J. W. Forsyth that paymasters would leave Washington on Monday the 24th with funds for the 19th Corps and asked for an escort at Martinsburg; a same-day clear order to Gen. Stevenson is in the Huntington's Eckert papers; not located in print (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-N2c); not N4: NARA RG 99/RG 107/RG 108, OR ser. III vol. 5 and the Paymaster General's 1865 report, Grant Papers vols. 12-13 note pages page by page, Sheridan's and Meade's papers, the press pages, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGERN2-3)",
+      "depth": "D3",
+      "completeness": "19 H of 19 code-word groups; rest plain",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.208, pointer 9874, N2-GA"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.208, pointer 9874, N2-GA",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.208, pointer 9874, N2-GA"
+      ],
+      "depth_sentence": "A week after Mosby's men captured two paymasters on the Baltimore and Ohio, Brice sent the next paymasters to Sheridan's army only with an escort waiting at Martinsburg.",
+      "depth_check": "code clause: Woodbury morning Nelson Baker inst = Monday morning the 24th, Florida = Martinsburg; external: holder 9100 (same day, clear, Brice to Stevenson: paymasters leave Monday for Sheridan's army, escort to Martinsburg); OR I/43 pt 2 pp.370-373, 471-472 (D3)",
+      "depth_note": "19 H of 19 code-word groups; rest plain"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-N2c)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-N2c verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-N2c)' section 4",
+      "reading_version": "N2R-2 10 Oct 2026 (reading-no2.md), grades as in AUDIT (FV-N2c) s.3 (corrections in s.5 pending a FIX job)",
+      "unresolved_spans": "",
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "1"
+      },
+      "depth_pct": 85.0,
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): B. W. Brice to Maj. Gen. P. H. Sheridan, 10 Dec 1864: paymasters ready for troops unpaid since 31 August, to be sent to Relay House on word in cipher (N2-GC)",
+      "line": "Read at grade H with War Department Cipher No. 2 (period key): on 10 Dec 1864 B. W. Brice told Sheridan that paymasters were ready to pay his troops unpaid since 31 August and, under the Secretary of War's order of 2 December, asked to be told by cipher telegram when they could be sent to Relay House; not located in print (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-N2c); not N4: NARA RG 99/RG 107/RG 108, OR ser. III vol. 5 and the Paymaster General's 1865 report, Grant Papers vols. 12-13 note pages page by page, Sheridan's and Meade's papers, the press pages, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGERN2-3)",
+      "depth": "D2",
+      "completeness": "17 H/C of 20 code-word groups (2 I period marks, 1 unread: mustache); Relay House plain",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.247, pointer 9913, N2-GC"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.247, pointer 9913, N2-GC",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.247, pointer 9913, N2-GC"
+      ],
+      "depth_sentence": "In December 1864 Brice told Sheridan his troops had not been paid since the end of August and waited for word in cipher before sending paymasters to Relay House.",
+      "depth_check": "code clause: Pay masters ready togoto for pay ment of your widows unpaid to Moses ogden brown = paymasters ready to go for payment of your troops unpaid to August 31; code value Pharoah Brooks / Arnold (order of December 2 / of the 2nd inst) reads in two telegrams (N2-GC, N2-GI); no external content check (D2)",
+      "depth_note": "17 H/C of 20 code-word groups (2 I period marks, 1 unread: mustache); Relay House plain"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-N2c)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-N2c verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-N2c)' section 4",
+      "reading_version": "N2R-2 10 Oct 2026 (reading-no2.md), grades as in AUDIT (FV-N2c) s.3 (corrections in s.5 pending a FIX job)",
+      "unresolved_spans": "",
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): B. W. Brice to Maj. Gen. G. G. Meade, 14 Dec 1864: two paymasters to City Point by river to pay two Sixth Corps regiments unpaid since 31 August (N2-GI)",
+      "line": "Read at grade H with War Department Cipher No. 2 (period key): on 14 Dec 1864 B. W. Brice told Meade that, under the Secretary's order of the 2nd, two paymasters would leave next day by river for City Point to pay two regiments of the Sixth Corps unpaid since 31 August; not located in print (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-N2c); not N4: NARA RG 99/RG 107/RG 108, OR ser. III vol. 5 and the Paymaster General's 1865 report, Grant Papers vols. 12-13 note pages page by page, Sheridan's and Meade's papers, the press pages, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGERN2-3)",
+      "depth": "D2",
+      "completeness": "15 H/C of 15 code-word groups; rest plain",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.248, pointer 9914, N2-GI"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.248, pointer 9914, N2-GI",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.248, pointer 9914, N2-GI"
+      ],
+      "depth_sentence": "Two Sixth Corps regiments back at Petersburg from the Valley were still unpaid since August when Brice sent two paymasters down the river to City Point.",
+      "depth_check": "code clause: Paymrs will leave wedlock by wafer for bridle = paymasters will leave tomorrow by river for City Point; the ledger's own 'No 2' and '3 Pm' agree with the book and Jennie = 3 PM; no external content check (D2)",
+      "depth_note": "15 H/C of 15 code-word groups; rest plain"
     }
   ],
   "lanes": [
