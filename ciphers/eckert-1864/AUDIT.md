@@ -16983,5 +16983,6 @@ located in print" (as filed).
   a title-page check before trusting any cached identifier.
 - Files that over-claim: ciphertext.txt / reading.md headers of E601 E603 E604 ("not located in print"); NOTES "## L14-A" table rows for 9826/0,
   9823/3, 9865/1. Corrections above (s.3) for FIX-L14.
-- No status.json / SO rows written (no reading at N3+ D2+ is outward-facing yet; E600 and E602 are N3 D2: AUD2-LEDGER14-1 queued below).
+- status.json rows E600 and E602 written (N3 D2, audit_status "one audit"), SO prompts `second-opinions/PROMPT-chatgpt-e600.md`, `-e602.md` and
+  their SECOND-OPINIONS-QUEUE rows; WORK-QUEUE `AUD2-LEDGER14-1` (account-3, Opus 5.5, cap 5) for the second audit. No rows for the N1 entries.
 - Requests: hdl.huntington.org 10 (one take, 3.3 s apart); archive.org 4 (advancedsearch 2, djvu 2) + be-api 14 (1.9 s apart); www.googleapis.com 6.
