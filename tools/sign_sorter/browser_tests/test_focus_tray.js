@@ -9,12 +9,18 @@
 //   plain.html      built with --no-focus-to-tray: the old layout (step 1, tiles in their piles with a "?", empty tray).
 // Review fixes (same template, 9 Oct 2026; iPhone and data-safety checks):
 //   loading         until the saved answers are in, step 2 shows "Loading your earlier answers…" and no sign or card (a tap there
-//                   saved a keep beside an old move); a keep in the home pile clears any move in the same step;
+//                   saved a keep beside an old move); a keep in the home pile clears any move in the same step; no keep at all
+//                   is taken before the saved answers are in ("Right pile: keep it" in a card opened meanwhile deleted the saved
+//                   move it could not see: round-2 check, 10 Oct 2026);
 //   only explicit   a keep is written only by "it was right" / "Right pile: keep it" / the "?" approve: a tray tap on a question opens
 //   keeps           step 2 on it, putting a tile back or a cluster move writes no keep (the question waits again), a tray tap puts a
 //                   taken-out tile back where it was taken from;
 //   in view         waiting tiles stay in their own pile in step 1, dimmed (a pile verdict is given with them on screen);
-//   card taps       a tap anywhere on a card (its pictures included) places the sign; "View pile" opens the pile and places nothing;
+//   card taps       a tap anywhere on a card (its pictures included; a mouse click too, template 2026-10-09.5) places the sign;
+//                   "View pile" opens the pile and places nothing;
+//   one rule (R05)  template 2026-10-09.5: a tap on a "Check these first" tile does what a tap in a pile does (into the tray: it is
+//                   there already, nothing moves) and a HOLD opens its card; the box's hint says so (tools/sign_sorter/
+//                   browser_tests/test_gestures.js checks every box on iPhone 13, iPhone SE and a mouse);
 //   wording         the cluster offer names the sign it is about; all answered -> "All N questions answered."; the rank box is
 //                   hidden when it only repeats "Check these first", else it gets the same waiting line and captions.
 // Must NOT: write a move or keep at load; re-tray a tile with a saved decision; change step after the person touched the page;
@@ -57,7 +63,8 @@ const tap = async (page, loc, touch) => { if (touch) await loc.tap(); else await
     ok(tag + ': its own pile is the first card, marked as its pile now', s.card0 && s.card0.pile === s.home && /\bcur\b/.test(s.card0.cls) && /its pile now/.test(s.card0.text), JSON.stringify(s.card0));
     ok(tag + ': nothing written to the store at load (no fake moves)', store.writes === 0 && !Object.keys(s.moves).length && !Object.keys(s.checked).length, store.writes);
     ok(tag + ': step 1 focus box: one line pointing at step 2', s.note === LINE(N), s.note);
-    ok(tag + ': step 1 focus box: tap opens the large view, said plainly', !s.tapHidden && /Tap a sign here to see it large on its line/.test(s.tap), s.tap);
+    ok(tag + ': step 1 focus box: the one rule said plainly (tap = to the tray, hold = its card)', !s.tapHidden && /^Tap a sign: it goes to the “Taken out” tray/.test(s.tap) &&
+       /Hold a sign: its card opens/.test(s.tap) && !/see it large on its line; nothing moves/.test(s.tap), s.tap);
     ok(tag + ': the focus tiles are not in their piles while they wait', F.every(x => !s.inPiles.includes(x)));
     ok(tag + ': ...but each is shown dimmed in its own pile (a verdict is given with it in view)', F.every(x => s.waitIn.some(w => w.endsWith(':' + x))) &&
        await page.evaluate(W => W.every(w => { const [p, x] = w.split(':'); return homeOf[x] === p; }), s.waitIn), s.waitIn.join(','));
@@ -88,10 +95,15 @@ const tap = async (page, loc, touch) => { if (touch) await loc.tap(); else await
     ok(tag + ': ...where "It was right" keeps it', s.checked[c3] && !(c3 in s.moves) && !s.L.includes(c3), JSON.stringify(s.checked));
     await tap(page, page.locator('#tab1'), touch);
     const fi = F.indexOf(F[3]); await page.locator('#focusTiles .t').nth(fi).scrollIntoViewIfNeeded();
-    await tap(page, page.locator('#focusTiles .t').nth(fi), touch);
+    const s4 = await S(page); await tap(page, page.locator('#focusTiles .t').nth(fi), touch); const s4b = await S(page);
+    ok(tag + ': a tap on a waiting focus tile leaves it in the tray: nothing moves, no large view (owner rule R05)',
+       await page.evaluate(() => document.getElementById('ctx').hidden) && JSON.stringify([s4.moves, s4.checked, s4.L]) === JSON.stringify([s4b.moves, s4b.checked, s4b.L]) &&
+       /already in the tray/.test(await page.textContent('#save')), await page.textContent('#save'));
+    await mock.hold(page, page.locator('#focusTiles .t').nth(fi));
     const cx = await page.evaluate(() => ({ hidden: document.getElementById('ctx').hidden, t: document.getElementById('ctxT').textContent,
       keep: document.getElementById('ctxKeep').hidden ? '' : document.getElementById('ctxKeep').textContent, out: document.getElementById('ctxOut').hidden }));
-    ok(tag + ': a tap on a focus tile opens the large view (nothing moves)', !cx.hidden && cx.t.includes(F[3]) && cx.t.includes('waiting in step 2'), cx.t);
+    ok(tag + ': a hold on a focus tile opens the large view (nothing moves)', !cx.hidden && cx.t.includes(F[3]) && cx.t.includes('waiting in step 2') &&
+       JSON.stringify((await S(page)).moves) === JSON.stringify(s4.moves), cx.t);
     ok(tag + ': ...with "Right pile: keep it" and no "take out" (it is out already)', /Right pile: keep it in/.test(cx.keep) && cx.out, JSON.stringify(cx));
     await tap(page, page.locator('#ctxKeep'), touch); s = await S(page);
     ok(tag + ': "keep" in the large view answers it', s.checked[F[3]] && !s.L.includes(F[3]));
@@ -166,7 +178,8 @@ const tap = async (page, loc, touch) => { if (touch) await loc.tap(); else await
     ok(tag + ': a rank box that only repeats "Check these first" is not shown', await page.evaluate(() => document.getElementById('rank').hidden && (DATA.rank || []).length > 0));
     await ctx.close();
 
-    // 12. loading: a saved move arrives late; nothing can be answered before it; a keep given meanwhile (large view) clears the move
+    // 12. loading: a saved move arrives late; nothing can be answered before it -- not even "Right pile: keep it" in a card opened by a
+    // hold (round-2 check, 10 Oct 2026: a keep given meanwhile deleted the saved move it could not see yet); the saved move survives
     ({ ctx, store, page, errs } = await (async () => { const ctx = await b.newContext(vp); const store = await mock.install(ctx, { connectMs: 3000 });
       store.docs.moves = { [F[0]]: { sid: F[0], from: 'Y', to: 'Z', updated: '2026-10-08T10:00:00Z' }, [F[3]]: { sid: F[3], from: '?', to: 'Z', updated: '2026-10-08T10:00:00Z' } };
       const page = await ctx.newPage(); const errs = []; page.on('pageerror', e => errs.push(e.message));
@@ -177,13 +190,62 @@ const tap = async (page, loc, touch) => { if (touch) await loc.tap(); else await
     ok(tag + ': loading: lands on step 2 saying "Loading your earlier answers", no sign, no card, nothing in the tray', s.step === 2 && l0.load && !l0.work && !l0.cards && !l0.tray && !s.L.length, JSON.stringify(l0));
     ok(tag + ': loading: the step-1 line says the answers are loading', l0.note === 'Loading your earlier answers…', l0.note);
     const kx = F[3], kh = await page.evaluate(x => homeOf[x], kx);
-    await page.evaluate(() => { setStep(1); }); await page.evaluate(x => showCtx(x, pileOf(x)), kx); await tap(page, page.locator('#ctxKeep'), touch);
+    await page.evaluate(() => { setStep(1); }); await page.evaluate(x => showCtx(x, pileOf(x)), kx); const w12 = store.writes; await tap(page, page.locator('#ctxKeep'), touch);
+    const kmsg = await page.textContent('#ctxMsg'), kchk = await page.evaluate(x => checked[x] || null, kx);
+    ok(tag + ': loading: "Right pile: keep it" in a card opened meanwhile saves nothing and says so', !kchk && store.writes === w12 && /Loading your earlier answers/.test(kmsg), kmsg);
     await page.evaluate(() => document.getElementById('ctxClose').click());
     await page.waitForTimeout(3200); await saved(page); await page.waitForTimeout(400); s = await S(page);
-    ok(tag + ': loading: once in, the moved tile does not wait (its saved move wins), the rest do', !s.L.includes(F[0]) && s.moves[F[0]] === 'Z' && !s.L.includes(kx) && s.L.length === N - 2, s.L.join(','));
-    ok(tag + ': a keep given while loading cleared any move of it: the store never holds both', store.docs.checked[kx] && store.docs.checked[kx].pile === kh && !(store.docs.moves || {})[kx] &&
+    ok(tag + ': loading: once in, the moved tiles do not wait (their saved moves win), the rest do', !s.L.includes(F[0]) && s.moves[F[0]] === 'Z' && !s.L.includes(kx) && s.moves[kx] === 'Z' && s.L.length === N - 2, s.L.join(','));
+    ok(tag + ': the saved moves survive the loading window: the store holds both moves and no keep', (store.docs.moves || {})[kx] && store.docs.moves[kx].to === 'Z' && !(store.docs.checked || {})[kx] &&
        !(store.docs.checked || {})[F[0]], JSON.stringify(store.docs));
     ok(tag + ': loading: no page errors', !errs.length, errs.join(' | '));
+    await ctx.close();
+
+    // 12b. a tap before the saved answers are in writes nothing (adversarial check, 10 Oct 2026: on a no-tray page a "Check these
+    // first" tap 0.7 s after load replaced a saved 'X' with 'OUT', and Undo then deleted it; a pile-tile tap did the same on both
+    // layouts). Slow store (3.5 s), saved moves p2_02 -> X and p1_03 -> Y; tap both before ready; the store and the page keep them.
+    for (const file of ['plain.html', 'tray.html']) {
+      ({ ctx, store, page, errs } = await (async () => { const ctx = await b.newContext(vp); const store = await mock.install(ctx, { connectMs: 3500 });
+        store.docs.moves = { p2_02: { sid: 'p2_02', from: '?', to: 'X', updated: '2026-10-08T10:00:00Z' }, p1_03: { sid: 'p1_03', from: '?', to: 'Y', updated: '2026-10-08T10:00:00Z' } };
+        const page = await ctx.newPage(); const errs = []; page.on('pageerror', e => errs.push(e.message));
+        await page.goto('file://' + DIR + '/' + file); await page.waitForTimeout(400); return { ctx, store, page, errs }; })());
+      await page.evaluate(() => { if (step !== 1) setStep(1); });
+      const early = await page.evaluate(() => ready); const w0 = store.writes;
+      await tap(page, page.locator('#focusTiles > div[data-sid="p2_02"] .t'), touch);
+      await tap(page, page.locator('#list .pile .t[data-sid="p1_03"]').first(), touch);
+      const mid = await page.evaluate(() => ({ moves: { ...moves }, note: document.getElementById('save').textContent }));
+      await page.waitForFunction(() => ready, null, { timeout: 10000 }).catch(() => {}); await page.waitForTimeout(800);
+      const after = await page.evaluate(() => ({ moves: { ...moves } }));
+      ok(tag + ': ' + file + ': taps before the saved answers are in move nothing and say so', !early && !mid.moves.p2_02 && !mid.moves.p1_03 && /Loading your earlier answers/.test(mid.note),
+        'ready at tap ' + early + ', ' + JSON.stringify(mid));
+      ok(tag + ': ' + file + ': ...the store and the page keep the earlier answers (p2_02 X, p1_03 Y), nothing written', store.docs.moves.p2_02.to === 'X' && store.docs.moves.p1_03.to === 'Y' &&
+        after.moves.p2_02 === 'X' && after.moves.p1_03 === 'Y' && store.writes === w0, JSON.stringify(store.docs.moves) + ' writes ' + (store.writes - w0));
+      ok(tag + ': ' + file + ': early taps: no page errors', !errs.length, errs.join(' | '));
+      await ctx.close();
+    }
+    // 12c. a question in a pile the person already gave a verdict is decided: it does not wait in the tray again (owner rule R08: a
+    // page re-rendered onto this layout after he had marked piles done brought their questions back); taking the verdict back does
+    ({ ctx, store, page, errs } = await open(b, vp, 'tray.html', {}, st => {
+      st.docs.piles = { X: { pile: 'X', verdict: 'same', merge_into: null, outliers: [], note: '', updated: '2026-10-08T10:00:00Z' } }; }));
+    { const r = await page.evaluate(() => ({ L: outList(), inX: Object.keys(trayOrder).filter(s => homeOf[s] === 'X'), other: Object.keys(trayOrder).filter(s => homeOf[s] !== 'X') }));
+      ok(tag + ': a question in a pile marked done does not wait; the others do', r.inX.length && r.inX.every(x => !r.L.includes(x)) && r.other.every(x => r.L.includes(x)), JSON.stringify(r));
+      await page.evaluate(() => { state.X.verdict = null; render(); });
+      const L2 = await page.evaluate(() => outList());
+      ok(tag + ': ...and it waits again once the verdict is taken back', r.inX.every(x => L2.includes(x)), L2.join(','));
+      ok(tag + ': verdict page: no page errors', !errs.length, errs.join(' | ')); }
+    await ctx.close();
+    // 12d. a merge is not such a verdict (round-2 check, 10 Oct 2026): "same sign as pile X" does not say whether an odd one out
+    // belongs with the rest, so a saved merge leaves its questions waiting, and a merge made in step 2 (the name drag) never takes the
+    // sign being answered, or any other, out of step 2
+    ({ ctx, store, page, errs } = await open(b, vp, 'tray.html', {}, st => {
+      st.docs.piles = { 'X-DOT': { pile: 'X-DOT', verdict: null, merge_into: 'X', outliers: [], note: '', updated: '2026-10-08T10:00:00Z' } }; }));
+    { const r = await page.evaluate(() => ({ L: outList(), inXD: Object.keys(trayOrder).filter(s => homeOf[s] === 'X-DOT') }));
+      ok(tag + ': a question in a pile saved as merged into another still waits', r.inXD.length && r.inXD.every(x => r.L.includes(x)), JSON.stringify(r));
+      const m = await page.evaluate(() => { setStep(2); const q = Object.keys(trayOrder).find(s => preTrayed(s) && homeOf[s] !== 'X-DOT'); s2Cur = q; renderS2();
+        const h = homeOf[q], to = basePiles.map(p => p.id).find(id => id !== h && !SPECIAL.has(id) && !(state[id] && state[id].merge_into)), before = outList().slice();
+        mergePile(h, to); return { q, h, to, before, after: outList().slice(), cur: s2Cur, merged: state[h].merge_into }; });
+      ok(tag + ': a merge in step 2 keeps every question waiting and the sign being answered on screen', m.merged === m.to && JSON.stringify(m.before) === JSON.stringify(m.after) && m.cur === m.q, JSON.stringify(m));
+      ok(tag + ': merge page: no page errors', !errs.length, errs.join(' | ')); }
     await ctx.close();
 
     // 13. a question moved in step 2, taken out of that pile in step 1, tapped in the tray: back in the pile it came from, no keep
@@ -209,8 +271,7 @@ const tap = async (page, loc, touch) => { if (touch) await loc.tap(); else await
       const hit = await cur.evaluate(c => { const r = c.querySelector('.smp img').getBoundingClientRect(); const x = r.left + r.width / 2, y = r.top + r.height / 2; const e = document.elementFromPoint(x, y); return { x, y, img: e && e.tagName === 'IMG' }; });
       if (touch) await page.touchscreen.tap(hit.x, hit.y); else await page.mouse.click(hit.x, hit.y); await page.waitForTimeout(400);
       s = await S(page); const dlg = await page.evaluate(() => !document.getElementById('ctx').hidden);
-      if (touch) ok(tag + ': a tap on a picture in the middle of its own pile card keeps the sign there (no dialog)', hit.img && s.checked[q] === hq && !dlg && s.s2Cur !== q, JSON.stringify({ hit, dlg, c: s.checked }));
-      else ok(tag + ': mouse: a click on a picture still opens that pile (and places nothing)', hit.img && dlg && !s.checked[q], JSON.stringify({ hit, dlg })); }
+      ok(tag + ': a ' + (touch ? 'tap' : 'mouse click') + ' on a picture in the middle of its own pile card keeps the sign there (no dialog)', hit.img && s.checked[q] === hq && !dlg && s.s2Cur !== q, JSON.stringify({ hit, dlg, c: s.checked })); }
     await ctx.close();
 
     // 15. a cluster move that brings a question tile home writes no keep; the offer names the sign it is about
@@ -237,7 +298,8 @@ const tap = async (page, loc, touch) => { if (touch) await loc.tap(); else await
     ok(tag + ': --no-focus-to-tray: option off, step 1, tray empty', s.opts && s.opts.focusToTray === false && s.step === 1 && !s.L.length, s.step + ' ' + s.L.length);
     ok(tag + ': --no-focus-to-tray: focus tiles in their piles with a "?"', F.every(x => s.inPiles.includes(x)) &&
        await page.evaluate(F => F.every(x => { const t = document.querySelector('#list .pile .t.fq[data-sid="' + x + '"]'); return t && t.querySelector('.badge').textContent === '?'; }), F));
-    ok(tag + ': --no-focus-to-tray: the old focus instructions', /Tap one to see it on its line/.test(s.note) && s.tapHidden, s.note);
+    ok(tag + ': --no-focus-to-tray: the focus instructions say the one rule (tap = to the tray, hold = its card) and point at the "?" tiles',
+       /^Tap a sign: it goes to the “Taken out” tray \(tap it there to put it back\)/.test(s.note) && /Hold a sign: its card opens/.test(s.note) && /double frame and a "\?"/.test(s.note) && s.tapHidden, s.note);
     ok(tag + ': --no-focus-to-tray: no page errors', !errs.length, errs.join(' | '));
     await ctx.close();
   }

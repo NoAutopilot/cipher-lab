@@ -54,11 +54,12 @@ const workPile = page => page.evaluate(() => basePiles.map(p => p.id).filter(id 
       const fq = await page.evaluate(() => document.querySelectorAll('#list .t.fq').length);
       ok(tag + ': "Check these first" tiles are marked in their piles', fq > 0, fq);
     }
-    // 2. the larger view from a focus tile: opens on itself, question, stepping, zoom, brackets
+    // 2. the larger view from a focus tile (a HOLD: owner rule R05, template 2026-10-09.5): opens on itself, question, stepping, zoom, brackets
     if (F.length >= 2) {
-      const j0 = Math.min(3, F.length - 2);
-      await page.locator('#focusTiles .t').nth(j0).click(); await page.waitForTimeout(200);
-      ok(tag + ': focus tile opens the larger view on that tile', (await page.textContent('#ctxT')).includes(F[j0]), await page.textContent('#ctxT'));
+      const j0 = Math.min(3, F.length - 2), m0 = await page.evaluate(() => JSON.stringify(moves));
+      await mock.hold(page, page.locator('#focusTiles .t').nth(j0)); await page.waitForTimeout(200);
+      ok(tag + ': holding a focus tile opens the larger view on that tile, and takes nothing out', (await page.textContent('#ctxT')).includes(F[j0]) &&
+        m0 === await page.evaluate(() => JSON.stringify(moves)), await page.textContent('#ctxT'));
       ok(tag + ': position reads ' + (j0 + 1) + ' of ' + F.length, (await page.textContent('#ctxPos')).startsWith((j0 + 1) + ' of ' + F.length));
       ok(tag + ': the question is shown in the dialog', await page.isVisible('#ctxQ'));
       await page.click('#ctxNext'); ok(tag + ': Next goes to the next focus tile', (await page.textContent('#ctxT')).includes(F[j0 + 1]));
@@ -81,14 +82,14 @@ const workPile = page => page.evaluate(() => basePiles.map(p => p.id).filter(id 
         Object.keys(pageImgs).forEach(k => delete pageImgs[k]);
         const im = new Image(); pageImgs[pa] = im; setTimeout(() => { im.src = 'data:image/jpeg;base64,' + DATA.pages[pa]; }, 400); return j; }, F);
       if (late !== null) {
-        await page.click('#ctxClose'); await page.locator('#focusTiles .t').nth(0).click();
+        await page.click('#ctxClose'); await mock.hold(page, page.locator('#focusTiles .t').nth(0));
         for (let i = 0; i < late; i++) await page.click('#ctxNext');
         await page.waitForTimeout(800);
         const right = await page.evaluate(() => document.getElementById('ctxC').dataset.sid === ctxSid);
         ok(tag + ': a late page image does not paint another tile over the one shown', right);
       }
       await page.click('#ctxClose');
-      await page.locator('#focusTiles .t').nth(0).click(); await page.mouse.click(vp.viewport.width - 3, vp.viewport.height - 3);
+      await mock.hold(page, page.locator('#focusTiles .t').nth(0)); await page.mouse.click(vp.viewport.width - 3, vp.viewport.height - 3);
       ok(tag + ': tapping the backdrop closes the dialog', await page.locator('#ctx').isHidden());
     }
     // 3. STEP 1: tap takes a sign out, hold opens the larger view (and takes nothing out), tray puts back
@@ -117,7 +118,7 @@ const workPile = page => page.evaluate(() => basePiles.map(p => p.id).filter(id 
     await el.locator('.ph .big').click(); ok(tag + ': "View larger" on a pile opens it too', await page.isVisible('#ctx')); await page.click('#ctxClose');
     // 4. decisions in the larger view, walking a list of 7+ tiles (the focus list if long enough, else the biggest pile)
     const fromFocus = F.length >= 7;
-    if (fromFocus) await page.locator('#focusTiles .t').nth(0).click(); else await el.locator('.ph .big').click();
+    if (fromFocus) await mock.hold(page, page.locator('#focusTiles .t').nth(0)); else await el.locator('.ph .big').click();
     const L = await page.evaluate(() => ctxList.slice());
     ok(tag + ': a list of 7+ tiles to walk (' + (fromFocus ? 'focus' : 'pile ' + pid) + ')', L.length >= 7, L.length);
     const dest = await page.evaluate(() => document.getElementById('ctxDest').options[1].value);
@@ -140,7 +141,7 @@ const workPile = page => page.evaluate(() => basePiles.map(p => p.id).filter(id 
       ok(tag + ': answered focus tiles say what happened', c5.every(Boolean), JSON.stringify(c5)); }
     if (F.length) {   // last tile of the focus list: Keep and a move both stay on it and say it was the last
       const last = F[F.length - 1];
-      await page.locator('#focusTiles .t').nth(F.length - 1).click();
+      await mock.hold(page, page.locator('#focusTiles .t').nth(F.length - 1));
       if (await page.isVisible('#ctxKeep')) { await page.click('#ctxKeep');
         ok(tag + ': Keep on the last focus tile stays on it and says it was the last', (await page.textContent('#ctxT')).includes(last) && /last tile/.test(await page.textContent('#ctxMsg'))); }
       await page.selectOption('#ctxDest', { index: 1 });
@@ -180,22 +181,28 @@ const workPile = page => page.evaluate(() => basePiles.map(p => p.id).filter(id 
     const fam0 = await page.evaluate(() => { const c = document.querySelector('.card'); return [byBase[c.dataset.pile] && byBase[c.dataset.pile].family, itemBySid[s2Cur].fam]; });
     ok(tag + ': closest piles first (top card from the same family)', fam0[0] === fam0[1] || (await page.evaluate(() => new Set(basePiles.map(p => p.family)).size)) > 3, JSON.stringify(fam0));
     const c0 = await page.locator('.card').nth(1).getAttribute('data-pile'), w0 = waiting[0];
-    // a small picture: with a mouse a click opens that pile and places nothing; on a finger it is part of the card (template
-    // 2026-10-09.1), so "View pile" is the control that opens the pile there (and places nothing)
-    const peek = tag === 'phone' ? page.locator('.card').nth(1).locator('.vw') : page.locator('.card').nth(1).locator('.smp img').first();
-    if (await peek.count()){ await peek.click(); await page.waitForTimeout(150);
-      ok(tag + ': ' + (tag === 'phone' ? '"View pile"' : 'clicking a small picture') + ' opens that pile and places nothing', !(await page.locator('#ctx').isHidden()) && (await page.evaluate(() => s2Cur)) === w0 && (await page.evaluate(s => moves[s], w0)) === 'OUT');   // still waiting to be placed (its home pile can be the card itself)
+    // a small picture is part of the card (template 2026-10-09.1; 2026-10-09.5, owner rule R05, for a mouse too): a tap places the
+    // sign, a HOLD opens that tile and places nothing; "View pile" opens the pile and places nothing (both checked, on both devices)
+    for (const [what, peek] of [['"View pile"', page.locator('.card').nth(1).locator('.vw')], ['holding a small picture', page.locator('.card').nth(1).locator('.smp img').first()]]) {
+      if (!(await peek.count())) continue;
+      if (what === '"View pile"') await peek.click(); else await mock.hold(page, peek); await page.waitForTimeout(150);
+      ok(tag + ': ' + what + ' opens that pile and places nothing', !(await page.locator('#ctx').isHidden()) && (await page.evaluate(() => s2Cur)) === w0 && (await page.evaluate(s => moves[s], w0)) === 'OUT');   // still waiting to be placed (its home pile can be the card itself)
       await page.click('#ctxX'); await page.waitForTimeout(100); }
     await page.locator('.card').nth(1).locator('.cid').click(); await page.waitForTimeout(100);
     ok(tag + ': tapping a pile card places the sign there', await page.evaluate(s => pileOf(s), w0) === c0 && (await page.evaluate(() => s2Cur)) === waiting[1]);
     await page.click('#undo'); await page.waitForTimeout(100);
     ok(tag + ': Undo in step 2 brings the sign back to place again', (await page.evaluate(s => moves[s], w0)) === 'OUT' && (await page.evaluate(() => s2Cur)) === w0);
     const target = page.locator('.card').nth(2); const c2 = await target.getAttribute('data-pile');
+    const touchDev = tag === 'phone';
     await mock.drag(page, page.locator('#s2Tile'), target); await page.waitForTimeout(150);
-    ok(tag + ': dragging the sign onto a pile card places it there', await page.evaluate(s => pileOf(s), w0) === c2, await page.evaluate(s => moves[s], w0));
-    // drag to the bottom edge and hold there: the page scrolls on its own
+    if (touchDev) {   // a finger never drags the big sign (round-2 check, 10 Oct 2026: a swipe meant to scroll dropped it on a card); a tap places it
+      ok(tag + ': a finger dragging the sign onto a pile card places nothing (owner rule R05: tap the card)', (await page.evaluate(s => moves[s], w0)) === 'OUT' && (await page.evaluate(() => s2Cur)) === w0,
+        await page.evaluate(s => moves[s], w0));
+      await page.locator('.card[data-pile="' + c2 + '"] .cid').click(); await page.waitForTimeout(150); }
+    ok(tag + ': ' + (touchDev ? 'tapping' : 'dragging the sign onto') + ' a pile card places it there', await page.evaluate(s => pileOf(s), w0) === c2, await page.evaluate(s => moves[s], w0));
+    // drag to the bottom edge and hold there: the page scrolls on its own (a mouse drag; a finger does not drag the sign)
     await page.evaluate(() => window.scrollTo(0, document.getElementById('s2').getBoundingClientRect().top + scrollY - 80));
-    if (await page.evaluate(() => document.documentElement.scrollHeight - innerHeight - scrollY > 120 && !!s2Cur)) {
+    if (!touchDev && await page.evaluate(() => document.documentElement.scrollHeight - innerHeight - scrollY > 120 && !!s2Cur)) {
       const ys = await page.evaluate(() => scrollY);
       const tb = await page.locator('#s2Tile').boundingBox(); const x = tb.x + tb.width / 2;
       await mock.gesture(page, 'down', x, tb.y + 20);
@@ -206,10 +213,13 @@ const workPile = page => page.evaluate(() => basePiles.map(p => p.id).filter(id 
     }
     const wt = await page.evaluate(() => s2Cur);
     if (wt) { const n = await page.evaluate(() => JSON.stringify(moves)); await page.evaluate(() => window.scrollTo(0, document.getElementById('s2').getBoundingClientRect().top + scrollY - 80));
-      await page.locator('#s2Tile').click(); await page.waitForTimeout(200);
-      ok(tag + ': tapping the big sign in step 2 opens its larger view, and the lifted finger presses nothing in it',
+      await mock.hold(page, page.locator('#s2Tile')); await page.waitForTimeout(200);
+      ok(tag + ': holding the big sign in step 2 opens its larger view, and the lifted finger presses nothing in it',
         await page.isVisible('#ctx') && (await page.textContent('#ctxT')).includes(wt) && n === await page.evaluate(() => JSON.stringify(moves)));
-      await page.click('#ctxClose'); }
+      await page.click('#ctxClose');
+      await page.locator('#s2Tile').click(); await page.waitForTimeout(200);   // a tap on it: it is in the tray already, nothing moves (owner rule R05)
+      ok(tag + ': tapping the big sign in step 2 moves nothing and opens nothing (it says so)', await page.locator('#ctx').isHidden() &&
+        n === await page.evaluate(() => JSON.stringify(moves)) && /waiting here to be placed/.test(await page.textContent('#s2Msg'))); }
     const w1 = await page.evaluate(() => s2Cur);
     if (w1) { const wantN = await page.evaluate(s => nextPileName(homeOf[s]), w1);
       await page.click('#s2New'); ok(tag + ': "None of these: new sign" makes ' + wantN, await page.evaluate(s => moves[s], w1) === wantN); }
@@ -239,12 +249,18 @@ const workPile = page => page.evaluate(() => basePiles.map(p => p.id).filter(id 
     await page.waitForTimeout(2500);
     ok('race: take-out+undo x10 leaves no stray move in the store', !Object.values(store.docs.moves || {}).some(m => m.sid === s0), JSON.stringify(store.docs.moves));
     await ctx.close(); }
-  // decisions made before storage answers are kept
+  // a take-out tapped before the saved answers are in moves nothing and writes nothing (template 2026-10-09.5; adversarial check,
+  // 10 Oct 2026: written while connecting it overwrote an earlier saved answer of that tile, and Undo then deleted it); it says so,
+  // and the same tap once they are in is saved
   { const { ctx, store, page } = await open(b, DESK, { connectMs: 2500 });
     await page.goto(PAGE); await page.waitForTimeout(300);
-    await page.locator('#list .t:not(.ref)').first().click();
+    const t0 = page.locator('#list .t:not(.ref)').first(), s0 = await t0.getAttribute('data-sid');
+    await t0.click(); const note = await page.textContent('#save'), m0 = await page.evaluate(() => Object.keys(moves).length);
     await page.waitForTimeout(3500);
-    ok('early: a take-out made while storage is connecting is saved', Object.keys(store.docs.moves || {}).length === 1);
+    ok('early: a take-out tapped while the saved answers load moves nothing, writes nothing and says so',
+      m0 === 0 && !Object.keys(store.docs.moves || {}).length && /Loading your earlier answers/.test(note), note);
+    await page.locator('#list .t:not(.ref)[data-sid="' + s0 + '"]').first().click(); await page.waitForTimeout(1200);
+    ok('early: the same tap once they are in is saved', (Object.values(store.docs.moves || {}).find(m => m.sid === s0) || {}).to === 'OUT', JSON.stringify(store.docs.moves || {}));
     await ctx.close(); }
   // a refused save is visible, and can be retried
   { const { ctx, store, page } = await open(b, DESK);

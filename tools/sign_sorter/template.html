@@ -1,10 +1,13 @@
 <!doctype html>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-09.4"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-09.5"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
 <title>__TITLE__</title>
 <style>
 /* Layout: a sorting bench in two steps (owner, 3 Oct 2026). Step 1: clean each pile -- tap a sign that does not belong
-   and it goes to a "Taken out" tray; hold a sign to see it larger on its line. Step 2: one taken-out sign at a time,
-   large, over cards of every other pile -- drag it onto its pile or tap the pile. Phone first, mouse works too. */
+   and it goes to a "Taken out" tray; hold a sign to open its card, large on its line. Step 2: one taken-out sign at a time,
+   large, over cards of every other pile -- tap the pile (a mouse can also drag the sign onto it). Phone first, mouse works too.
+   One gesture rule on every page and in every box (owner rule R05, tools/data/sorter_owner_requirements.tsv; template
+   2026-10-09.5): a TAP takes the sign out into the tray, a HOLD opens its card and moves nothing; a finger never drags a sign
+   (a swipe scrolls), and the lift after a hold presses nothing in the card. */
 :root{
   --bg:#f3f1ec; --surface:#fbfaf7; --ink:#24211c; --muted:#6b655b; --line:#d9d4c9;
   /* Colour-blind safe (MQS-SORTER, 9 Oct 2026; Okabe-Ito, tools/cvd_check.py PALETTES['sorter_light'|'dark']): no state is told by hue
@@ -92,8 +95,7 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
 .t.ref .badge{background:var(--ok);color:var(--on-fill)}
 .t.kept .badge{background:var(--ok);color:var(--on-fill)}
 .pile.dropover{outline:3px solid var(--accent);outline-offset:2px;background:var(--accent-soft)}
-#trayTiles .t{touch-action:pan-x}
-.tapmode{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin-top:8px;font-size:.9rem}
+#trayTiles .t{touch-action:pan-x pan-y}   /* a finger never drags a tray tile up (round-2 check, 10 Oct 2026): a swipe scrolls the tray or the page */
 #ctxBigW{display:flex;justify-content:center;background:var(--tile);border-radius:6px;padding:8px}
 #ctxBig{width:auto;height:min(42vh,320px);max-width:100%;object-fit:contain;image-rendering:auto}
 .pile.new{border-style:dashed}
@@ -163,7 +165,7 @@ canvas{display:block;max-width:none;height:auto}
 .s2stick .cv{max-height:22vh;overflow:auto}
 @media (max-width:640px){.s2stick .row button{padding:4px 7px;font-size:.8rem}#s2Work .hint{margin:2px 0}}
 .bigt{width:104px;height:104px;flex:0 0 auto;background:var(--tile);border:2px solid var(--accent);border-radius:6px;display:grid;place-items:center;
-  touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;cursor:grab}
+  touch-action:pan-y;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;cursor:grab}
 .bigt img{max-width:96px;max-height:96px;pointer-events:none;-webkit-user-drag:none}
 .s2info{min-width:0;flex:1 1 auto}
 .s2info strong{display:block;overflow-wrap:anywhere}
@@ -173,12 +175,13 @@ canvas{display:block;max-width:none;height:auto}
 .card .cid{font-family:var(--f-mono);font-weight:600;overflow-wrap:anywhere}
 .card .cnt{font-size:.75rem}
 .card .smp{display:flex;flex-wrap:wrap;gap:4px}
-.card .smp img{width:var(--csz,60px);height:var(--csz,60px);object-fit:contain;background:var(--tile);border-radius:3px;border:2px solid transparent;cursor:zoom-in;-webkit-user-drag:none}
+.card .smp img{width:var(--csz,60px);height:var(--csz,60px);object-fit:contain;background:var(--tile);border-radius:3px;border:2px solid transparent;cursor:pointer;-webkit-user-drag:none}
 @media (hover:hover){.card .smp img:hover{border-color:var(--accent)}}
 .card .smp img{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
 .card .put{font-size:.75rem;color:var(--accent);font-weight:600}
 .card .cid.grab{cursor:grab;touch-action:none;-webkit-user-select:none;user-select:none}
 .card .cid.grab::after{content:' \2725';color:var(--muted);font-weight:400}
+.card .cid.armed{outline:2px dashed var(--accent);outline-offset:2px}   /* a finger held on the name: the merge is armed, a move lifts the pile */
 .pileghost{width:auto;height:auto;padding:6px 10px;font-family:var(--f-mono);font-weight:600;color:var(--ink);background:var(--accent-soft)}
 .card.home{border-style:dashed}
 /* a "Check these first" tile waiting in step 2 (template 2026-10-09.1): its own pile is the first card, framed in ink (shape and
@@ -243,18 +246,20 @@ body.traypad #offer{bottom:100px}
 #dropBar [data-drop] small{font-weight:400;color:var(--muted)}
 #dropBar [data-drop="NOT-LETTER"]{border-color:var(--bad)}
 #dropBar .dropover{border-color:var(--accent);background:var(--accent-soft);outline:3px solid var(--accent)}
-.t.lifted{opacity:.35}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 
-/* phone (owner, 8 Oct 2026, iPhone: "I still can't see the strip"): strip and its controls first, the enlarged tile last */
+/* phone (owner, 8 Oct 2026, iPhone: "I still can't see the strip"): strip and its controls first; then the enlarged sign, short, right
+   under the strip (round-2 check, 10 Oct 2026, owner rule R05 "a hold opens the sign's page large": last in the card it was below the
+   fold on every Armstrong tile, iPhone SE 0 px of it on screen, and the sign in the strip is often smaller than its own 64 px tile) */
 @media (max-width:640px), (max-height:500px){
-  #ctx .row.top{order:-7;top:-10px}
-  #ctxNav{order:-6}
-  #ctxCv{order:-5;scroll-margin-top:56px}
+  #ctx .row.top{order:-8;top:-10px}
+  #ctxNav{order:-7}
+  #ctxCv{order:-6;scroll-margin-top:56px}
+  #ctxBigW{order:-5;padding:4px}
   #ctxFixRow,#fixBox{order:-4}
   #ctxQ{order:-3}
   #ctxActs,#ctxMsg,#ctxErr{order:-2}
-  #ctxBig{height:min(26dvh,200px)}
+  #ctxBig{height:min(18dvh,120px);min-height:80px}
 }
 @media (pointer:coarse){select,input[type=text],textarea,#fixBox .nudges select{font-size:16px}}   /* iOS zooms on focus below 16px */
 button,select,summary{touch-action:manipulation}   /* no double-tap zoom on repeated taps (nudge arrows, Next) */
@@ -282,7 +287,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 /* phone tap targets (template 2026-10-09.1, iPhone check: step-2 buttons were 29 px tall, the card's put line 17 px): 44 px on a
    finger, in the question flow (bar, step 2, the larger view, the cluster offer, the tray) */
 @media (pointer:coarse){
-  .tabs button,#undo,#trayGo,#focusNote .go,#rankNote .go,.tapmode .seg button,#s2Work .row button,#s2Empty button,#s2QMore,#offer button,#ctx .row button,#ctx .row select,#ctxX{min-height:44px}
+  .tabs button,#undo,#trayGo,#focusNote .go,#rankNote .go,#s2Work .row button,#s2Empty button,#s2QMore,#offer button,#ctx .row button,#ctx .row select,#ctxX{min-height:44px}
   #s2Work .row button{padding:6px 10px}
   #ctx input[type=range]{height:44px}
   .card .vw{min-height:44px;padding:0 12px}
@@ -299,8 +304,8 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
   <p class="banner" id="banner" hidden></p>
   <div class="how">
     <div><b>Step 1 · Clean each pile</b>Look along a pile. <b style="display:inline;text-transform:none;letter-spacing:0">Tap</b> any sign that is not like the others: it moves to the "Taken out" tray at the bottom. Tap it there to put it back. When a pile looks right, press "This pile is done".</div>
-    <div><b>See a sign larger</b>Press and hold a sign (or press "View larger" on a pile): it opens on its line, the sign in brackets, with Next and Previous.</div>
-    <div><b>Step 2 · Place the taken-out signs</b>Each taken-out sign is shown large with every other pile below it, closest-looking first. Drag it onto its pile, or just tap the pile. "None of these: new sign" starts a new pile; nothing to type.</div>
+    <div><b>Open a sign's card</b>Hold a sign, in a pile, a box or the tray (or press "View larger" on a pile): its card opens, large on its line, the sign in brackets, with Fix the cut, the answer buttons, Next and Previous. A hold never moves a sign.</div>
+    <div><b>Step 2 · Place the taken-out signs</b>Each taken-out sign is shown large with every other pile below it, closest-looking first. Tap the pile it belongs to<span class="mouse-only"> (or drag it onto the pile with the mouse)</span>. "None of these: new sign" starts a new pile; nothing to type.</div>
   </div>
   <div class="bar">
     <div class="tabs" role="tablist" aria-label="Steps"><button type="button" role="tab" id="tab1" aria-selected="true">1 · Clean<span class="wide"> piles</span></button><button type="button" role="tab" id="tab2" aria-selected="false">2 · Place <span class="cntb zero" id="outN">0</span></button></div>
@@ -308,8 +313,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
     <span class="save" id="save">Connecting to storage…</span>
   </div>
   <section id="s1">
-    <p class="hint1" id="hint1"><b>Tap</b> a sign that doesn’t belong to take it out. <b>Hold</b> a sign: lift your finger to see it larger, or drag it onto a pile (or onto the bar at the bottom: doesn’t belong / trash). <span id="hintQ"><span class="mouse-only">Click the <b>?</b> badge on a questioned sign to approve it.</span><span class="touch-only">To approve a questioned sign (<b>?</b>), hold it, lift, and press “Right pile: keep it”.</span></span> <b>Drag</b> a sign onto another pile (mouse: straight away; phone: hold first).<span class="mouse-only"> The <b>✕</b> on a sign (shown on hover) trashes it: a page edge, shadow or stain, not a sign.</span></p>
-    <div class="tapmode"><span class="hint">A tap on a sign:</span><span class="seg" role="group" aria-label="What a tap does"><button type="button" id="modeOut" class="on">Takes it out</button><button type="button" id="modeLook">Shows it large</button></span></div>
+    <p class="hint1" id="hint1"><b>Tap</b> a sign: it goes to the “Taken out” tray at the bottom (tap it there to put it back). <b>Hold</b> a sign: its card opens, large on its line, where you fix the cut, keep it (“Right pile: keep it”) or move it; a hold moves nothing. The same in every box on this page. <span id="hintQ"><span class="mouse-only">Click the <b>?</b> badge on a questioned sign to approve it.</span><span class="touch-only">To approve a questioned sign (<b>?</b>), hold it and press “Right pile: keep it”.</span></span><span class="mouse-only"> Mouse: drag a sign onto another pile (or onto the bar at the bottom: doesn’t belong / trash); the <b>✕</b> on a sign (shown on hover) trashes it: a page edge, shadow or stain, not a sign.</span></p>
     <div class="meter"><div class="track"><div class="fill" id="fill"></div></div><span id="prog">0 of 0 piles done</span></div>
     <details class="opts"><summary>Display options</summary><div class="row">
       <label for="size">Tile size <input id="size" type="range" min="40" max="110" value="64"></label>
@@ -319,7 +323,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
       <label for="psort">Sort piles <select id="psort"><option value="size">By size</option><option value="name">By name</option></select></label>
       <label for="gbv" id="gbvL" hidden><input type="checkbox" id="gbv"> Group by value</label>
     </div><p class="hint" id="psortHelp">Tip from the CTTS transcription tool (Lasry, Apache-2.0): segment about 500 symbols, then classify in bulk, category by category. Sorting the piles by size or by mark category does the same here.</p></details>
-    <section id="rank" hidden><h2 class="ftitle">Most useful first</h2><p class="sub" id="rankNote"></p><div class="tiles" id="rankTiles"></div></section>
+    <section id="rank" hidden><h2 class="ftitle">Most useful first</h2><p class="sub" id="rankNote"></p><p class="hint" id="rankTap"></p><div class="tiles" id="rankTiles"></div></section>
     <details id="refBox" class="opts" hidden><summary id="refCap"></summary><div style="overflow:auto;max-height:70vh;background:var(--tile);border-radius:6px;margin-top:6px"><img id="refImg" alt="Reference sheet" style="max-width:none;display:block"></div><p class="hint">Scroll the sheet sideways if it is wide; it stays open while you sort.</p></details>
     <section id="focus" hidden><h2 class="ftitle">Check these first</h2><p class="sub" id="focusNote"></p><p class="hint" id="focusTap" hidden></p><div class="tiles" id="focusTiles"></div></section>
     <div id="list"></div>
@@ -327,7 +331,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
   </section>
   <section id="s2" hidden aria-label="Step 2: place each sign">
     <h2 class="ftitle">Place each sign</h2>
-    <p class="hint1" id="hint2">Tap the pile the sign belongs to (anywhere on its card), or drag the sign onto it. The closest-looking piles come first; for a question, its own pile is first. <b>View pile</b> on a card opens that pile larger and places nothing. <span class="mouse-only"><b>Click a small picture</b> to open that pile too; <b>drag a small picture</b> onto another pile to move that one tile. </span><span class="touch-only">A tap on a small picture is a tap on its pile; <b>hold a small picture</b> to see that one tile larger. </span><b>Drag a pile's name</b> (✥) onto another pile to merge the whole pile (on a phone: press a moment, then drag).</p>
+    <p class="hint1" id="hint2">Tap the pile the sign belongs to (anywhere on its card)<span class="mouse-only">, or drag the sign onto it</span>. The closest-looking piles come first; for a question, its own pile is first. <b>View pile</b> on a card, or a hold anywhere on a card, opens that pile larger and places nothing. A tap on a small picture is a tap on its pile; <b>hold a small picture</b> to see that one tile larger; <b>hold the sign</b> at the top to see it larger. <span class="mouse-only"><b>Drag a small picture</b> onto another pile to move that one tile. </span><b>Drag a pile's name</b> (✥) onto another pile to merge the whole pile (on a phone: hold the name until it is outlined, then drag; let go without dragging and the pile opens).</p>
     <div id="s2Note"><p class="hint" id="s2Msg" aria-live="polite"></p></div>
     <div id="s2Load" class="donebox" hidden><strong>Loading your earlier answers…</strong> <span id="s2LoadT"></span></div>
     <div id="s2Empty" class="donebox" hidden><strong id="s2EmptyH">Nothing waiting to be placed.</strong> <span id="s2EmptyT"></span> <button type="button" id="s2Back">Back to step 1</button></div>
@@ -434,16 +438,26 @@ if (TRAY_ON) (DATA.focus || []).concat(DATA.rank || []).forEach(f => { const s =
 // iPhone check, 9 Oct 2026). So no tile waits, and step 2 takes no answer, until the first snapshots of piles, moves and checked
 // are in (or the browser copy is read): `ready`. Until then step 2 says "Loading your earlier answers…".
 let ready = false, loadErr = '';
-const preTrayed = sid => ready && !!trayOrder[sid] && !moves[sid] && !checked[sid] && !(state[homeOf[sid]] && state[homeOf[sid]].outliers.includes(sid));
+// A question tile in a pile the person already gave a verdict ("This pile is done", "Not a letter") is decided -- the export reads the
+// verdict for it -- so it never waits again (owner rule R08: a page re-rendered onto the tray layout after he had marked piles done
+// brought their questions back as open; adversarial check, 10 Oct 2026). Taking the verdict back makes it wait again. A merge ("Same
+// sign as...", or a pile name dragged onto another card in step 2) is NOT such a verdict: it says the pile is the same sign as another,
+// not whether this odd one out belongs with the rest, and the step-2 drag never showed the waiting tiles -- so its questions keep
+// waiting, as on 2026-10-09.4 (round-2 check, 10 Oct 2026: a step-2 merge silently took the sign being answered out of step 2).
+const pileDecided = pid => { const s = state[pid]; return !!(s && !s.merge_into && (s.verdict === 'same' || s.verdict === 'mark')); };
+const preTrayed = sid => ready && !!trayOrder[sid] && !moves[sid] && !checked[sid] && !pileDecided(homeOf[sid]) &&
+  !(state[homeOf[sid]] && state[homeOf[sid]].outliers.includes(sid));
 const where = sid => moves[sid] || (preTrayed(sid) ? 'OUT' : homeOf[sid]);   // where a tile is now; 'OUT' = in the tray
 const waitingOf = pid => Object.keys(trayOrder).filter(s => homeOf[s] === pid && preTrayed(s));   // question tiles of pile pid in the tray
 // "It was right" / "Right pile: keep it": a keep (db 'checked') in `pile`, one Undo step. A keep in the tile's own pile also clears
-// any move of it in the same step, so a keep and a move are never both saved (while the saved answers are still loading the page
-// cannot know there is none, so it sends the delete anyway). Only the explicit keep controls come here: the framed "its pile now"
+// any move of it in the same step, so a keep and a move are never both saved. Never before the saved answers are in (`ready`): a
+// keep then deleted a saved move it could not see (round-2 check, 10 Oct 2026), so every caller asks notYet() first -- "Right pile:
+// keep it" in the card, the "?" approve, step 2 (place) and a mouse drag out of the tray (settle). Only the explicit keep controls come here: the framed "its pile now"
 // card and "It was right" in step 2, "Right pile: keep it" in the larger view, the "?" approve in step 1 (data-safety check, 9 Oct
 // 2026: putting a tile back, a cluster move or "Put it back" after a recut wrote a keep the person never gave).
 function keepAt(sid, pile){
-  const e = []; if (pile === homeOf[sid] && (moves[sid] || !ready)){ e.push([sid, moves[sid] || null]); delete moves[sid]; saveMove(sid); }
+  if (!ready) return;   // unreachable: every caller asks notYet() first
+  const e = []; if (pile === homeOf[sid] && moves[sid]){ e.push([sid, moves[sid] || null]); delete moves[sid]; saveMove(sid); }
   e.checks = [[sid, checked[sid] || null]]; history.push(e); if (history.length > 200) history.shift(); updateUndo();
   checked[sid] = pile; saveCheck(sid); hideOffer(); }
 // put a tile in pile `to` from the step-2 answer screen (or a drag out of the tray): a question tile put in its own pile is answered
@@ -516,24 +530,83 @@ function outList(){   // the tray: taken-out tiles in the order taken out, the w
 function statusOf(id){ const s = state[id]; if(!s) return null; if (s.merge_into) return 'merge'; return s.verdict; }
 const answered = sid => !!moves[sid] || !!checked[sid];
 
-// ---- press: a tap does one thing, a hold (450 ms, touch or mouse) another; no callout, no text selection, no ghost drag
-// After a hold opens the larger view, lifting the finger makes the browser send a click to whatever now lies under it --
-// a button of the dialog (Next, Set aside...). That one click is swallowed; any new press clears the guard.
-let swallowClick = false;
-document.addEventListener('pointerdown', () => { swallowClick = false; }, true);
+// ---- press: ONE gesture rule on every page and in every box (owner rule R05, tools/data/sorter_owner_requirements.tsv, said six
+// times, last on 9 Oct 2026: "One tap it takes the symbol out and puts it in my tbd pile. If I hold on the symbol open [the] symbol
+// page."). A TAP does the box's tap (a pile, "Check these first", "Most useful first": into the "Taken out" tray); a HOLD (500 ms
+// touch, 380 ms mouse or pen) ALWAYS opens the sign's card and moves nothing. Template 2026-10-08.2 to 2026-10-09.4 turned a touch
+// hold into a drag, so a real fingertip's drift pulled the sign out of its pile; a finger never drags a pile tile now. A resting
+// fingertip drifts several pixels: before the hold fires it is cancelled only past 18 px on touch or pen (10 px with a mouse, where
+// that is also where a mouse drag starts). No callout, no text selection, no ghost drag.
+// After a hold opens the card, lifting the finger makes the browser send a click to whatever now lies under it -- the tile itself,
+// or a button of the dialog (Next, Set aside...). That one click is swallowed, so a hold never also counts as a tap; any new press
+// clears the guard. el._held tells a drag handler on the same element (mouse drag of a pile tile, the tray's drag up) that this press
+// was a hold, so it never turns into a drag.
+// The lift also sends the browser's compatibility mousedown / mouseup to that spot before the click (round-2 check, 10 Oct 2026, iPhone
+// emulation: the lift landed on the card's "Move this tile to…" list and opened its picker, so the next tap moved the sign; on the
+// Zoom slider it jumped 5 -> 2; focus went to Trash or Keep). So after a hold fires (heldLift), the lifting touch's touchend is
+// cancelled (no mouse events, no click follow it) and any mousedown / mouseup that still comes is swallowed too, until the next press
+// or 700 ms after that pointer lifts.
+let swallowClick = false, swallowMouse = false, swallowT = 0;
+function heldLift(){ swallowClick = true; swallowMouse = true; clearTimeout(swallowT); }
+document.addEventListener('pointerdown', () => { swallowClick = false; swallowMouse = false; clearTimeout(swallowT); }, true);
 document.addEventListener('click', e => { if (swallowClick){ swallowClick = false; e.preventDefault(); e.stopPropagation(); } }, true);
-function attachPress(el, onTap, onHold){
-  let t = null, sx = 0, sy = 0, held = false;
-  const cancel = () => { if (t){ clearTimeout(t); t = null; } el.classList.remove('pressing'); };
-  el.addEventListener('pointerdown', e => { if (e.button > 0) return; held = false; sx = e.clientX; sy = e.clientY; el.classList.add('pressing'); const pt = e.pointerType;
-    clearTimeout(t); t = setTimeout(() => { t = null; held = true; swallowClick = true; el.classList.remove('pressing');
-      if (pt === 'touch' && el._touchArm) el._touchArm(sx, sy); else onHold(); }, pt === 'touch' ? 500 : 380); });   // touch: lift to drag; lift off unmoved = larger view
-  el.addEventListener('pointermove', e => { if (t && Math.hypot(e.clientX - sx, e.clientY - sy) > 10) cancel(); });
-  el.addEventListener('pointerup', cancel); el.addEventListener('pointercancel', cancel); el.addEventListener('pointerleave', cancel);
+['mousedown', 'mouseup'].forEach(t => document.addEventListener(t, e => { if (swallowMouse){ e.preventDefault(); e.stopPropagation(); } }, true));
+document.addEventListener('touchend', e => { if (swallowMouse && e.cancelable) e.preventDefault(); }, {capture: true, passive: false});
+['pointerup', 'pointercancel'].forEach(t => document.addEventListener(t, () => { if (swallowMouse){ clearTimeout(swallowT); swallowT = setTimeout(() => { swallowMouse = false; }, 700); } }, true));
+// The pending hold lives in ONE slot for the whole page, not on the element pressed (template 2026-10-09.5, adversarial check 10 Oct
+// 2026): a re-render while the finger is down (a saved answer arriving, another device's write, step 2 redrawing its cards) replaces
+// the element, its pointerup then goes to the new one, and a hold timer kept on the old element was never cleared -- the tap acted
+// AND, half a second later, the card opened. The document clears the slot on that pointer's pointerup / pointercancel and on a drift
+// past the slop, wherever the element went. holdStart(e, el, ms, slop, fire, end): fire() when the hold completes; end() whenever the
+// slot is let go (completed, cancelled or replaced).
+let pend = null;   // {id: pointerId, x, y, t0, slop, touch, el, timer, end}
+function holdStart(e, el, ms, slop, fire, end){
+  holdEnd(); const p = {id: e.pointerId, x: e.clientX, y: e.clientY, t0: performance.now(), slop, touch: e.pointerType !== 'mouse', el, end, timer: 0};
+  p.timer = setTimeout(() => { if (pend !== p) return; pend = null; if (end) end(); fire(); }, ms); pend = p; }
+function holdEnd(el){ const p = pend; if (!p || (el && p.el !== el)) return; pend = null; clearTimeout(p.timer); if (p.end) p.end(); }
+document.addEventListener('pointermove', e => { if (pend && e.pointerId === pend.id && Math.hypot(e.clientX - pend.x, e.clientY - pend.y) > pend.slop) holdEnd(); }, true);
+document.addEventListener('pointerup', e => { if (pend && e.pointerId === pend.id) holdEnd(); }, true);
+document.addEventListener('pointercancel', e => { if (pend && e.pointerId === pend.id) holdEnd(); }, true);
+// The browser starts its own pan, and cancels the press, once a resting finger has drifted about 15 px (Chromium, measured on iPhone 13
+// and SE emulation, 10 Oct 2026; WebKit's own threshold is not measured here) -- short of the 18 px a hold allows, so a hold drifting
+// 16-18 px opened nothing. While a hold is pending, from GUARD_MS after the press on, a drift up to the slop does not start the pan;
+// before that (a swipe meant to scroll has moved further by then) and past the slop the page scrolls as before. Every pressable
+// element calls this from its own non-passive touchmove listener (never one on the document, which would hold up every scroll).
+// To be checked on a real iPhone: a slow drag that starts on a tile and has not moved 15 px within GUARD_MS scrolls only past 18 px.
+const GUARD_MS = 150;
+function holdGuard(e){ const p = pend; if (!p || !p.touch || !e.cancelable || !e.touches || e.touches.length !== 1 || performance.now() - p.t0 < GUARD_MS) return;
+  const t = e.touches[0]; if (Math.hypot(t.clientX - p.x, t.clientY - p.y) <= p.slop) e.preventDefault(); }
+// attachPress(el, onTap, onHold[, skip]): skip(e) true = this press belongs to something inside el with its own press (a step-2
+// card's pictures and name), so el starts no hold of its own; its tap still comes to el as a click.
+function attachPress(el, onTap, onHold, skip){
+  let held = false;
+  const end = () => el.classList.remove('pressing');
+  el.addEventListener('pointerdown', e => { if (e.button > 0) return; held = false; el._held = false; if (skip && skip(e)) return; el.classList.add('pressing');
+    const pt = e.pointerType;
+    holdStart(e, el, pt === 'touch' ? 500 : 380, pt === 'mouse' ? 10 : 18, () => { held = true; el._held = true; heldLift(); onHold(); }, end); });
+  el.addEventListener('pointerleave', () => holdEnd(el));
+  el.addEventListener('touchmove', e => { if (held && e.cancelable) e.preventDefault(); else holdGuard(e); }, {passive: false});   // after a hold the page stays put under the card
   el.addEventListener('click', e => { if (held){ held = false; e.preventDefault(); return; } onTap(e); });
   el.addEventListener('contextmenu', e => e.preventDefault());
   el.addEventListener('dragstart', e => e.preventDefault());
 }
+// a tap on a sign that is in the tray already (a question waiting in step 2, or a sign taken out): the tap would put it in the tray,
+// so it only shows where it is (the tile flies to the tray); nothing moves
+function trayedTap(sid, el){
+  note_(sid + ' is already in the tray' + (preTrayed(sid) ? ': it waits in step 2 · Place' : ' (taken out): tap it there to put it back') + ' (nothing moved).');
+  fly(sid, el.getBoundingClientRect()); }
+// Nothing moves until the saved answers are in (`ready`): before they arrive a tile shows where the page was built, not where the
+// person left it, and a move written now would overwrite an earlier saved answer -- and Undo would then delete it (adversarial check,
+// 10 Oct 2026: a tap in "Check these first" 0.7 s after load on a no-tray page replaced a saved 'X' with 'OUT'; a pile-tile tap did the
+// same on every template). Every step-1 move route asks here first: a tap (takeOut), the trash, a mouse drag, the card's move buttons.
+function notYet(sid, msgEl){ if (ready) return false;
+  const t = 'Loading your earlier answers… ' + (TRAY_ON && trayOrder[sid] ? sid + ' goes to the tray by itself once they are in' : sid + ' stays where it is; try again in a moment') + ' (nothing moved).';
+  note_(t); if (msgEl) msgEl.textContent = t; return true; }
+// a tap in the "Check these first" / "Most useful first" boxes: into the tray like a tap in a pile (owner rule R05)
+function boxTap(sid, el){
+  if (notYet(sid)) return;
+  if (preTrayed(sid) || moves[sid] === 'OUT'){ trayedTap(sid, el); return; }
+  takeOut(sid, el); }
 
 function barBottom(){ const r = document.querySelector('.bar').getBoundingClientRect(); return Math.max(0, r.bottom); }
 const VAL = DATA.values || {}, MARKCAT = DATA.markCat || {};
@@ -607,15 +680,15 @@ function tileEl(sid, pid, cls){
   const b = document.createElement('button'); b.type = 'button'; b.dataset.sid = sid;
   b.className = 't' + cls + (fq ? ' fq' : '');
   b.title = sid + (fq ? ' (check this one: ' + focusQ[sid] + ')' : '') + (cls.includes('in') ? ' (moved here from ' + homeOf[sid] + ')' : '') + (cls.includes('out') ? ' (set aside)' : '') +
-    '. Tap: take out of this pile. Drag (mouse): move to another pile. Hold: see it larger.';
-  b.setAttribute('aria-label', sid + ': tap to take out, hold to see larger');
+    '. Tap: take it out to the tray. Hold: open its card (see it large on its line, fix the cut). Mouse: drag it onto another pile.';
+  b.setAttribute('aria-label', sid + ': tap to take it out to the tray, hold to open its card');
   const im = document.createElement('img'); im.alt = sid; im.src = imgSrc(sid); im.loading = 'lazy'; im.draggable = false;
   b.append(im);
   if (recuts[sid]){ const r = document.createElement('span'); r.className = 'rcb'; r.textContent = 'recut'; b.append(r); b.title += ' Its cut was fixed by hand.'; }
-  if (it.r && !cls.includes('in')){ b.classList.add('ref'); b.title = sid + ': sorted by you earlier (✓), shown as an example of this pile. If it does not belong, tap to take it out, like any tile. Hold: see it larger.';
-    b.setAttribute('aria-label', sid + ': your earlier pick for this pile, tap to take out, hold to see larger');
+  if (it.r && !cls.includes('in')){ b.classList.add('ref'); b.title = sid + ': sorted by you earlier (✓), shown as an example of this pile. If it does not belong, tap to take it out to the tray, like any tile. Hold: open its card.';
+    b.setAttribute('aria-label', sid + ': your earlier pick for this pile, tap to take it out to the tray, hold to open its card');
     const g = document.createElement('span'); g.className = 'badge'; g.textContent = '✓'; g.setAttribute('aria-hidden', 'true'); b.append(g);
-    attachPress(b, () => tapMode === 'look' ? showCtx(sid, pid) : takeOut(sid, b), () => showCtx(sid, pid)); return b; }
+    attachPress(b, () => takeOut(sid, b), () => showCtx(sid, pid)); return b; }
   const kept = !fq && focusQ[sid] && checked[sid] && checked[sid] === pid && !cls.includes('out');
   if (kept) b.classList.add('kept');
   const mark = cls.includes('out') ? '×' : cls.includes('in') ? '↪' : fq ? '?' : kept ? '✓' : '';
@@ -623,25 +696,29 @@ function tileEl(sid, pid, cls){
     if (fq || kept){ g.classList.add('ok'); g.removeAttribute('aria-hidden'); g.setAttribute('role', 'button');
       g.title = fq ? 'Looks right: approve it in ' + pid : 'Approved. Tap to undo the approval';
       g.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); approveTile(sid, pid, !fq); }); } }
-  attachPress(b, () => tapMode === 'look' ? showCtx(sid, pid) : takeOut(sid, b), () => showCtx(sid, pid));
+  attachPress(b, () => takeOut(sid, b), () => showCtx(sid, pid));
   if (pid !== 'NOT-LETTER'){ const tr = document.createElement('span'); tr.className = 'trash'; tr.textContent = '\u2715'; tr.setAttribute('role', 'button');
     tr.title = 'Trash: not a sign (page edge, shadow, stain)'; tr.setAttribute('aria-label', 'Trash ' + sid + ': not a sign');
-    tr.addEventListener('pointerdown', e => e.stopPropagation()); tr.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); trashTile(sid, pid); }); b.append(tr); }
+    // a click trashes; a press held 380 ms is a hold like anywhere else: the sign's card opens and nothing is trashed (adversarial
+    // check, 10 Oct 2026: holding the ✕ trashed the sign on release). Its press never reaches the tile (no tile hold, no drag).
+    attachPress(tr, e => { e.preventDefault(); e.stopPropagation(); trashTile(sid, pid); }, () => showCtx(sid, pid));
+    tr.addEventListener('pointerdown', e => e.stopPropagation()); tr.addEventListener('click', e => e.stopPropagation()); b.append(tr); }
   pileDrag(b, sid, pid);
   return b;
 }
-// drag a sign straight from one pile onto another with a mouse or pen (touch keeps tap-out + tray, so a swipe still scrolls)
+// drag a sign straight from one pile onto another with a mouse or pen (a finger never drags a pile tile: owner rule R05, below)
 // owner 6 Oct 2026: page edges and shadows get cut as signs; one click sends a tile to the not-a-letter pile ("trash")
-function trashTile(sid, pid){ remember([sid]); ensureSpecial('NOT-LETTER'); setDest(sid, 'NOT-LETTER'); hideOffer();
+function trashTile(sid, pid){ if (notYet(sid)) return; remember([sid]); ensureSpecial('NOT-LETTER'); setDest(sid, 'NOT-LETTER'); hideOffer();
   note_('Trashed ' + sid + ' (not a sign). Undo puts it back.'); renderSome([pid, 'NOT-LETTER']); }
 // drag auto-scroll step per frame: touch gets a gentler ramp and cap (about 720 px/s), so the pile lit under the finger is the one it drops on
 function edgeStep(over, cap){ return COARSE ? Math.min(12, over / 4 + 2) : Math.min(cap, over / 2 + 4); }
 function pileDrag(b, sid, pid){
   // move/up are listened for on the window while a drag runs, so a lost pointer capture (seen in the hosted page,
   // owner 6 Oct 2026: the ghost stuck on screen) can never strand the ghost; Esc or leaving the window cancels.
-  // Touch (owner, 8 Oct 2026, on a phone: "I try to hold to pull it down to the not a fit pile and I can't"): hold a moment
-  // and the sign lifts (attachPress calls b._touchArm); drag it onto a pile, or onto the bar at the bottom ("Doesn't belong"
-  // = take out, "Trash" = not a sign); lift without moving to see it larger, as the hold did before.
+  // Mouse or pen only, straight away (no hold first): drop it on a pile, or on the bar at the bottom ("Doesn't belong" = take
+  // out, "Trash" = not a sign). Touch has no drag here (owner rule R05, 9 Oct 2026: template 2026-10-08.2 to 2026-10-09.4 lifted
+  // the sign on a touch hold, so a resting fingertip's drift pulled it out of its pile): a finger taps it out or holds for its card.
+  // A press that was already a hold (attachPress set b._held, the card is open) never becomes a drag.
   let d = null;
   const pileAt = (x, y) => { const e = document.elementFromPoint(x, y); if (!e || !e.closest) return null;
     const z = e.closest('[data-drop]'); if (z) return z; const p = e.closest('.pile'); return p && p.dataset.pile ? p : null; };
@@ -654,10 +731,9 @@ function pileDrag(b, sid, pid){
     mark(); d.raf = requestAnimationFrame(loop); };
   const lift = () => { const g = document.createElement('img'); g.className = 'ghost'; g.src = imgSrc(sid); document.body.append(g); d.ghost = g;
     dropBar(true); d.raf = requestAnimationFrame(loop); place(); };
-  const place = () => { if (d && d.ghost){ d.ghost.style.left = (d.x - 36) + 'px'; d.ghost.style.top = (d.y - (d.touch ? 84 : 36)) + 'px'; } };   // above the finger
-  const move = e => { if (!d) return; if (e.buttons === 0 && e.pointerType !== 'touch') return end(e, true); d.x = e.clientX; d.y = e.clientY;
-    if (!d.on && Math.hypot(d.x - d.sx, d.y - d.sy) > 10){ d.on = true; lift(); }
-    if (d.touch && !d.moved && Math.hypot(d.x - d.sx, d.y - d.sy) > 10) d.moved = true;
+  const place = () => { if (d && d.ghost){ d.ghost.style.left = (d.x - 36) + 'px'; d.ghost.style.top = (d.y - 36) + 'px'; } };
+  const move = e => { if (!d) return; if (e.buttons === 0) return end(e, true); d.x = e.clientX; d.y = e.clientY;
+    if (!d.on && Math.hypot(d.x - d.sx, d.y - d.sy) > 10){ if (b._held) return end(e, false); d.on = true; lift(); }
     if (d.ghost){ e.preventDefault(); place(); } };
   const up = e => end(e, true), cancel = e => end(e, false), key = e => { if (e.key === 'Escape') end(e, false); };
   const on = () => { window.addEventListener('pointermove', move, true); window.addEventListener('pointerup', up, true);
@@ -665,18 +741,14 @@ function pileDrag(b, sid, pid){
   const off = () => { window.removeEventListener('pointermove', move, true); window.removeEventListener('pointerup', up, true);
     window.removeEventListener('pointercancel', cancel, true); window.removeEventListener('blur', cancel); window.removeEventListener('keydown', key, true); };
   function end(e, drop){ if (!d) return; const dd = d; d = null; off(); if (!dd.on) return; cancelAnimationFrame(dd.raf); swallowClick = true;
-    const x = dd.touch || !e || e.clientX == null ? dd.x : e.clientX, y = dd.touch || !e || e.clientY == null ? dd.y : e.clientY;   // touch: the last move point
-    const p = drop && !(dd.touch && !dd.moved) ? pileAt(x, y) : null, to = target(p);   // looked up before the drop bar goes away
-    if (dd.ghost) dd.ghost.remove(); if (dd.over) dd.over.classList.remove('dropover'); dropBar(false); b.classList.remove('lifted');
-    if (dd.touch && !dd.moved){ if (drop) showCtx(sid, pid); return; }   // a hold without a drag: the larger view
+    const x = !e || e.clientX == null ? dd.x : e.clientX, y = !e || e.clientY == null ? dd.y : e.clientY;
+    const p = drop ? pileAt(x, y) : null, to = target(p);   // looked up before the drop bar goes away
+    if (dd.ghost) dd.ghost.remove(); if (dd.over) dd.over.classList.remove('dropover'); dropBar(false);
     if (!to || to === pid) return;
     if (to === 'OUT'){ takeOut(sid, b); return; }
     if (to === 'NOT-LETTER' && p.dataset.drop){ trashTile(sid, pid); return; }
+    if (notYet(sid)) return;
     remember([sid]); setDest(sid, to); note_('Moved ' + sid + ' from ' + pid + ' to pile ' + to + '.'); renderSome([pid, to]); offerCluster([sid], to); }
-  b._touchArm = (x, y) => { document.querySelectorAll('img.ghost').forEach(g => g.remove()); if (d) return;
-    d = {x, y, sx: x, sy: y, on: true, touch: true, moved: false, over: null, ghost: null, raf: 0}; b.classList.add('lifted');
-    try { navigator.vibrate && navigator.vibrate(12); } catch (er) {} on(); lift(); };
-  b.addEventListener('touchmove', e => { if (d && d.touch) e.preventDefault(); }, {passive: false});   // the page stays put while a sign is lifted
   b.addEventListener('pointerdown', e => { if (e.button > 0 || e.pointerType === 'touch') return;
     document.querySelectorAll('img.ghost').forEach(g => g.remove());
     d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, over: null, ghost: null, raf: 0}; on(); });
@@ -709,7 +781,8 @@ function pileEl(p, piles){
   p.members.forEach(sid => tiles.append(tileEl(sid, p.id, homeOf[sid] !== p.id ? ' in' : '')));
   aside.forEach(sid => tiles.append(tileEl(sid, p.id, ' out')));
   // its question tiles waiting in step 2 stay in view here, dimmed (data-safety check, 9 Oct 2026: "This pile is done", "Not a
-  // letter" and "Same sign as..." decide them in the export, so the verdict is given with them on screen, as on the old layout)
+  // letter" and "Same sign as..." decide them in the export, so the verdict is given with them on screen, as on the old layout; once
+  // it is given they are decided and stand in the pile as ordinary tiles, preTrayed)
   waitingOf(p.id).forEach(sid => tiles.append(waitTileEl(sid)));
   el.append(tiles);
   const acts = document.createElement('div'); acts.className = 'acts';
@@ -736,23 +809,22 @@ function pileEl(p, piles){
 // a sign out into the tray, a hold opens it large): it is in the tray already, so a tap only shows it going there; a hold opens it.
 function waitTileEl(sid){
   const b = document.createElement('button'); b.type = 'button'; b.dataset.sid = sid; b.className = 't wait';
-  b.title = sid + ': a question, already in the tray, waiting in step 2 · Place (' + (focusQ[sid] || 'is this its pile?') + '). Hold: see it larger and answer it.';
-  b.setAttribute('aria-label', sid + ': question already in the tray, waiting in step 2; hold to see it larger');
+  b.title = sid + ': a question, already in the tray, waiting in step 2 · Place (' + (focusQ[sid] || 'is this its pile?') + '). Tap: it is in the tray already, nothing moves. Hold: open its card and answer it.';
+  b.setAttribute('aria-label', sid + ': question already in the tray, waiting in step 2; hold to open its card');
   const im = document.createElement('img'); im.alt = sid; im.src = imgSrc(sid); im.loading = 'lazy'; im.draggable = false; b.append(im);
   const g = document.createElement('span'); g.className = 'badge'; g.textContent = '2'; g.setAttribute('aria-hidden', 'true'); b.append(g);
-  attachPress(b, () => { note_(sid + ' is already in the tray: it waits in step 2 · Place (nothing moved).'); fly(sid, b.getBoundingClientRect()); },
-    () => showCtx(sid, homeOf[sid], false, outList(), 'waiting to be placed'));
+  attachPress(b, () => trayedTap(sid, b), () => showCtx(sid, homeOf[sid], false, outList(), 'waiting to be placed'));
   return b;
 }
 function answerIn2(sid){ s2Cur = sid; if (step === 2) renderS2(); else setStep(2); }   // open step 2 on this sign
 function approveTile(sid, pid, undoIt){
+  if (notYet(sid)) return;   // the "?" approve is a keep: never before the saved answers are in (round-2 check, 10 Oct 2026)
   if (undoIt){ const e = []; e.checks = [[sid, checked[sid] || null]]; history.push(e); updateUndo(); delete checked[sid]; saveCheck(sid); hideOffer(); }
   else keepAt(sid, pid);
   note_(undoIt ? 'Took back the approval of ' + sid + '.' : 'Approved ' + sid + ' in pile ' + pid + '.'); renderSome([pid]);
 }
-let tapMode = 'out'; try { if (localStorage.getItem('sorterTapMode') === 'look') tapMode = 'look'; } catch (e) {}
-function setTapMode(m){ tapMode = m; try { localStorage.setItem('sorterTapMode', m); } catch (e) {}
-  $('modeOut').classList.toggle('on', m === 'out'); $('modeLook').classList.toggle('on', m === 'look'); }
+// (template 2026-10-09.5: the switch for what a tap does -- take out, or show large -- is gone: one rule, no option (owner rule R05);
+// a 'sorterTapMode' an older page left in this browser is ignored)
 function btn(t, on, fn){ const b = document.createElement('button'); b.type = 'button'; b.textContent = t; if (on) b.classList.add('on'); b.setAttribute('aria-pressed', !!on); b.onclick = fn; return b; }
 
 // ---- step 1: take out / put back
@@ -766,11 +838,12 @@ function setDest(sid, to){
   if (hs && hs.outliers.includes(sid) && to !== 'ASIDE'){ hs.outliers = hs.outliers.filter(x => x !== sid); save(homeOf[sid]); }
   saveMove(sid);
 }
-function takeOut(sid, el){
+function takeOut(sid, el){   // -> true when it moved (false: the saved answers are not in yet, notYet())
+  if (notYet(sid)) return false;
   const from = el ? el.getBoundingClientRect() : null, was = pileOf(sid);
   remember([sid]); setDest(sid, 'OUT'); hideOffer();
   note_('Took ' + sid + ' out of pile ' + was + '. Tap it in the tray to put it back.');
-  renderSome([was]); if (from) fly(sid, from);
+  renderSome([was]); if (from) fly(sid, from); return true;
 }
 function putBack(sid){   // a tray tap: back in the pile it was taken out of (else its own pile); a waiting question opens step 2 instead
   if (preTrayed(sid)){ answerIn2(sid); return; }
@@ -792,7 +865,7 @@ function renderSome(ids){
     if (openM){ const d = ne.querySelector('details'); if (d) d.open = true; }
     el.replaceWith(ne);
   }
-  updateMeter(piles); renderTray();
+  updateMeter(piles); renderTray(); markRankDone(); markFocusDone();   // the two boxes say where their signs are now (a tap there takes one out)
 }
 function updateMeter(piles){
   const live = piles.filter(p => !SPECIAL.has(p.id) && (statusOf(p.id) || membersOf(p.id).length || asideOf(p.id).length || waitingOf(p.id).length));
@@ -835,7 +908,11 @@ function renderTray(){
     trayDrag(b, sid);
     w.append(b); });
 }
-// drag a taken-out sign from the tray up onto a pile (step 1); a sideways swipe still scrolls the tray
+// drag a taken-out sign from the tray up onto a pile (step 1) with a mouse or pen; a sideways swipe still scrolls the tray. A finger
+// never drags it (round-2 check, 10 Oct 2026: a quick swipe up from the tray at the bottom of the screen -- where a thumb starts a
+// scroll -- moved the sign into whichever pile it lifted over, and answered a question tile, 4 of 4 on iPhone 13 and SE): a tap puts
+// it back (a question: opens step 2 on it), a hold opens its card, step 2 places it; a swipe scrolls (touch-action pan-x pan-y). A
+// pen's drag starts only past 18 px up, a mouse's past 8 px, never after the press became a hold (b._held; owner rule R05).
 function trayDrag(b, sid){
   let d = null;
   const pileAt = (x, y) => { const e = document.elementFromPoint(x, y); const p = e && e.closest ? e.closest('.pile') : null; return p && p.dataset.pile ? p : null; };
@@ -843,15 +920,16 @@ function trayDrag(b, sid){
   const loop = () => { if (!d) return; const top = barBottom() + 40, bot = window.innerHeight - 110;
     if (d.y < top) window.scrollBy(0, -edgeStep(top - d.y, 28)); else if (d.y > bot && d.y < window.innerHeight - 92) window.scrollBy(0, edgeStep(d.y - bot, 28));
     mark(); d.raf = requestAnimationFrame(loop); };
-  b.addEventListener('pointerdown', e => { if (e.button > 0) return; d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, over: null, ghost: null, raf: 0, id: e.pointerId}; try { b.setPointerCapture(e.pointerId); } catch (er) {} });
+  b.addEventListener('pointerdown', e => { if (e.button > 0 || e.pointerType === 'touch') return; d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, over: null, ghost: null, raf: 0, id: e.pointerId,
+    up: e.pointerType === 'mouse' ? 8 : 18}; try { b.setPointerCapture(e.pointerId); } catch (er) {} });
   b.addEventListener('pointermove', e => { if (!d) return; d.x = e.clientX; d.y = e.clientY;
-    if (!d.on){ const dx = d.x - d.sx, dy = d.y - d.sy; if (Math.abs(dx) > 10 && Math.abs(dx) > Math.abs(dy)){ d = null; return; }
-      if (dy < -8 && Math.abs(dy) >= Math.abs(dx)){ d.on = true;
+    if (!d.on){ if (b._held){ d = null; return; } const dx = d.x - d.sx, dy = d.y - d.sy; if (Math.abs(dx) > 10 && Math.abs(dx) > Math.abs(dy)){ d = null; return; }
+      if (dy < -d.up && Math.abs(dy) >= Math.abs(dx)){ d.on = true;
         const g = document.createElement('img'); g.className = 'ghost'; g.src = imgSrc(sid); document.body.append(g); d.ghost = g; d.raf = requestAnimationFrame(loop); } }
     if (d && d.ghost){ e.preventDefault(); d.ghost.style.left = (d.x - 36) + 'px'; d.ghost.style.top = (d.y - 36) + 'px'; } });
   const end = (e, drop) => { if (!d) return; const dd = d; d = null; if (!dd.on) return; cancelAnimationFrame(dd.raf); swallowClick = true;
     if (dd.ghost) dd.ghost.remove(); if (dd.over) dd.over.classList.remove('dropover');
-    const p = drop && pileAt(e.clientX, e.clientY); if (!p) return; const to = p.dataset.pile;
+    const p = drop && pileAt(e.clientX, e.clientY); if (!p) return; const to = p.dataset.pile; if (notYet(sid)) return;
     const how = settle(sid, to); note_((how === 'kept' ? 'Kept ' : 'Put ') + sid + ' in pile ' + to + '.'); renderSome([to]); offerCluster([sid], to); };
   b.addEventListener('pointerup', e => end(e, true)); b.addEventListener('pointercancel', e => end(e, false));
 }
@@ -874,7 +952,6 @@ function setStep(n){
 function s2Top(){ const note = !!$('s2Note').textContent.trim() || $('s2Note').contains($('offer'));
   const t = !PHONE ? $('s2') : note ? $('s2Note') : !$('s2Work').hidden ? $('s2Work') : !$('s2Load').hidden ? $('s2Load') : $('s2');
   window.scrollTo(0, Math.max(0, t.getBoundingClientRect().top + scrollY - barStuck())); }
-$('modeOut').onclick = () => setTapMode('out'); $('modeLook').onclick = () => setTapMode('look'); setTapMode(tapMode);
 $('tab1').onclick = () => setStep(1); $('tab2').onclick = () => setStep(2); $('trayGo').onclick = () => setStep(2); $('s2Back').onclick = () => setStep(1);
 // tile likeness: a 16x16 ink vector per tile (computed in the browser once), pile = mean of its tiles; cosine similarity
 const vecs = {}; let vecPromise = null, vecDone = false;
@@ -938,16 +1015,19 @@ function renderS2(){
     .map(p => ({...p, score: likeness(sid, p.members.length ? p.members : p.wait) + (p.family === it.fam ? 0.08 : 0)}))
     .sort((a, b) => (pre ? (b.id === home) - (a.id === home) : 0) || b.score - a.score || a.id.localeCompare(b.id));   // a question tile: its own pile first
   // A tap anywhere on a card places the sign (owner, 9 Oct 2026: "If I click on it once I'm taken into it" -- a tap on the pictures,
-  // most of the card, opened a DIFFERENT tile of that pile with its own "keep" button). On a finger the pictures are part of the card:
-  // a tap places the sign, a long hold lifts that one picture to move it. "View pile" is the one control that opens the pile; with a
-  // mouse a click on a picture still opens it too.
+  // most of the card, opened a DIFFERENT tile of that pile with its own "keep" button). The pictures are part of the card: a tap (or
+  // a mouse click, template 2026-10-09.5: one rule for every pointer, owner rule R05) places the sign, a hold opens that one tile's
+  // card and places nothing. "View pile" opens the pile. A hold anywhere else on the card (its put line, its count, its padding)
+  // opens the pile as "View pile" does and places nothing (adversarial check, 10 Oct 2026: with a plain onclick a long press there
+  // placed the sign when the finger lifted); the name is the merge handle (cardDrag), with the same tap and hold.
   ps.forEach(p => { const own = p.id === home, c = document.createElement('button'); c.type = 'button'; c.className = 'card' + (own ? (pre ? ' cur' : ' home') : ''); c.dataset.pile = p.id;
     const hd = document.createElement('span'); hd.className = 'chead';
     const h = document.createElement('span'); h.className = 'cid'; h.textContent = p.id;
     const smpl = p.members.length ? p.members : p.wait;
     const vw = document.createElement('span'); vw.className = 'vw'; vw.textContent = 'View pile'; vw.setAttribute('role', 'button'); vw.tabIndex = 0;
     vw.title = 'Look at pile ' + p.id + ' larger, one tile at a time (places nothing)'; vw.setAttribute('aria-label', 'View pile ' + p.id + ' (places nothing)');
-    const view = e => { e.preventDefault(); e.stopPropagation(); if (smpl.length) showCtx(smpl[0], p.id, false, p.members.length ? undefined : p.wait.slice()); };
+    const openPile = () => { if (smpl.length) showCtx(smpl[0], p.id, false, p.members.length ? undefined : p.wait.slice()); };
+    const view = e => { e.preventDefault(); e.stopPropagation(); openPile(); };
     vw.addEventListener('click', view); vw.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') view(e); });
     vw.addEventListener('pointerdown', e => e.stopPropagation());
     hd.append(h); if (smpl.length) hd.append(vw);
@@ -955,40 +1035,47 @@ function renderS2(){
       (own ? (pre ? ' · its pile now' : ' · where it came from') : p.isNew ? ' · new pile' : '');
     const smp = document.createElement('span'); smp.className = 'smp';
     smpl.slice().sort((a, b) => (itemBySid[b].r ? 1 : 0) - (itemBySid[a].r ? 1 : 0) || (itemBySid[a].d || 0) - (itemBySid[b].d || 0)).slice(0, 6).forEach(m => { const im = document.createElement('img'); im.src = imgSrc(m); im.draggable = false;
-      if (COARSE){ im.alt = ''; }   // part of the card: the tap goes on to the card and places the sign
-      else { im.alt = 'Look at pile ' + p.id; im.title = 'Open pile ' + p.id + ' to look at it'; im.onclick = e => { e.preventDefault(); e.stopPropagation(); showCtx(m, p.id); }; }
+      im.alt = '';   // part of the card: a tap goes on to the card and places the sign
+      if (!COARSE) im.title = 'Hold: see this tile larger. Click: put the sign in ' + p.id + '. Drag: move this tile to another pile.';
       picDrag(im, m); smp.append(im); });
     const put = document.createElement('span'); put.className = 'put'; put.textContent = own && pre ? 'It was right: tap here to keep it in ' + p.id : 'Tap here to put the sign in ' + p.id;
-    h.title = 'Drag this name onto another pile to merge the whole pile into it'; h.classList.add('grab'); cardDrag(h, p.id);
+    h.title = 'Drag this name onto another pile to merge the whole pile into it'; h.classList.add('grab'); cardDrag(h, p.id, openPile);
     c.append(hd, n, smp, put); c.setAttribute('aria-label', (own && pre ? 'It was right: keep the sign in pile ' : 'Put the sign in pile ') + p.id + ' (' + p.members.length + ' tiles)');
-    c.onclick = () => place(p.id);
+    attachPress(c, () => place(p.id), openPile, e => !!(e.target.closest && e.target.closest('.smp img, .vw, .cid')));   // a keyboard Enter is a click: it places
     cards.append(c); });
 }
 // phone: "more ▾" under a question folded to three lines, so it is plain that the rest is there
 function qMore(){ const q = $('s2Q'), b = $('s2QMore'); if (!PHONE || q.hidden){ b.hidden = true; return; }
   const open = q.classList.contains('open'); b.hidden = !open && q.scrollHeight <= q.clientHeight + 1;
   b.textContent = open ? 'less ▴' : 'more ▾'; b.setAttribute('aria-expanded', open); }
-// a small picture on a step-2 pile card. Mouse: drag it onto another card to move that one tile; a click opens the pile. Finger
-// (template 2026-10-09.1; owner, 9 Oct 2026, "If I hold on this I can move the piece. If I click on it once I'm taken into it",
-// and his gesture rule R05, a hold opens the sign large): a tap is a tap on the card (it places the sign), a hold opens that tile
-// large in its pile; a finger never drags a sample tile away by mistake.
 // drag a pile card by its name onto another card: the whole pile is the same sign (state.merge_into, the same record as
-// step 1's 'Same sign as...'); owner, 4 Oct 2026. Mouse: just drag; touch: press 1/4 s, then drag. One Undo in the message line.
-function cardDrag(h, pid){
+// step 1's 'Same sign as...'); owner, 4 Oct 2026. One Undo in the message line. The name keeps the card's tap and hold (owner rule
+// R05; adversarial check, 10 Oct 2026: a 300 ms tap on it placed nothing, and a still finger lifted a ghost of the whole pile at
+// 250 ms). Mouse: drag straight away (past 8 px); a click places the sign; a 380 ms hold opens the pile (openPile), places nothing.
+// Finger: a tap places the sign; a 500 ms hold arms the merge (the name is outlined, nothing lifts on a still finger); then a move of
+// more than 18 px lifts the pile to drag it onto another card; lifting the finger without that move opens the pile, places nothing.
+function cardDrag(h, pid, openPile){
   let d = null;
   const cardAt = (x, y) => { const e = document.elementFromPoint(x, y); return e && e.closest ? e.closest('.card') : null; };
-  const start = () => { d.on = true; clearTimeout(d.t); try { h.setPointerCapture(d.id); } catch (er) {}
+  const start = () => { d.on = true; h.classList.remove('armed'); try { h.setPointerCapture(d.id); } catch (er) {}
     const g = document.createElement('div'); g.className = 'ghost pileghost'; g.textContent = pid + ' (' + membersOf(pid).length + ')'; document.body.append(g); d.ghost = g; move(); d.raf = requestAnimationFrame(loop); };
   const move = () => { if (d.ghost){ d.ghost.style.left = (d.x - 40) + 'px'; d.ghost.style.top = (d.y - 20) + 'px'; }
     const c = cardAt(d.x, d.y); if (c !== d.over){ if (d.over) d.over.classList.remove('over'); if (c && c.dataset.pile !== pid) c.classList.add('over'); d.over = c; } };
   const loop = () => { if (!d) return; const top = barBottom() + 24, bot = window.innerHeight - 40;
     if (d.y < top) window.scrollBy(0, -edgeStep(top - d.y, 24)); else if (d.y > bot) window.scrollBy(0, edgeStep(d.y - bot, 24)); move(); d.raf = requestAnimationFrame(loop); };
-  h.addEventListener('pointerdown', e => { if (e.button > 0) return; d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, id: e.pointerId, over: null, ghost: null, raf: 0, mouse: e.pointerType === 'mouse', t: 0};
-    if (!d.mouse){ const dd = d; d.t = setTimeout(() => { if (d === dd && !d.on) start(); }, 250); } });
+  h.addEventListener('pointerdown', e => { if (e.button > 0) return;
+    const dd = d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, id: e.pointerId, over: null, ghost: null, raf: 0, mouse: e.pointerType === 'mouse', armed: false};
+    holdStart(e, h, e.pointerType === 'touch' ? 500 : 380, dd.mouse ? 8 : 18, () => { if (d !== dd || dd.on) return; heldLift();
+      if (dd.mouse){ d = null; openPile(); return; }   // a mouse hold: the pile opens, as from the rest of the card
+      dd.armed = true; dd.ax = dd.x; dd.ay = dd.y; h.classList.add('armed'); try { navigator.vibrate && navigator.vibrate(12); } catch (er) {} }); });
   h.addEventListener('pointermove', e => { if (!d) return; d.x = e.clientX; d.y = e.clientY;
-    if (!d.on){ if (Math.hypot(d.x - d.sx, d.y - d.sy) > 8){ if (d.mouse) start(); else { clearTimeout(d.t); d = null; } } return; } e.preventDefault(); });
-  h.addEventListener('touchmove', e => { if (d && d.on) e.preventDefault(); }, {passive: false});
-  const end = (e, drop) => { if (!d) return; const dd = d; d = null; clearTimeout(dd.t); if (!dd.on) return; cancelAnimationFrame(dd.raf); swallowClick = true;
+    if (!d.on){ if (d.mouse ? Math.hypot(d.x - d.sx, d.y - d.sy) > 8 : d.armed && Math.hypot(d.x - d.ax, d.y - d.ay) > 18){ holdEnd(h); start(); } return; }
+    e.preventDefault(); });
+  h.addEventListener('touchmove', e => { if (d && (d.on || d.armed) && e.cancelable) e.preventDefault(); else holdGuard(e); }, {passive: false});
+  h.addEventListener('pointerleave', () => { if (d && d.mouse) holdEnd(h); });
+  const end = (e, drop) => { if (!d) return; const dd = d; d = null; h.classList.remove('armed');
+    if (!dd.on){ if (dd.armed && drop) openPile(); return; }   // armed, never moved: a hold -- the pile opens, nothing placed or merged
+    cancelAnimationFrame(dd.raf); swallowClick = true;
     if (dd.ghost) dd.ghost.remove(); if (dd.over) dd.over.classList.remove('over');
     const c = drop && cardAt(e.clientX, e.clientY); if (!c || c.dataset.pile === pid) return; mergePile(pid, c.dataset.pile); };
   h.addEventListener('pointerup', e => end(e, true)); h.addEventListener('pointercancel', e => end(e, false));
@@ -1002,6 +1089,11 @@ function mergePile(from, to){
   u.onclick = () => { const t = st(from); t.merge_into = prev.merge_into; t.verdict = prev.verdict; save(from); render(); $('s2Msg').textContent = 'Undid the merge of ' + from + '.'; };
   m.append(u);
 }
+// a small picture on a step-2 pile card (template 2026-10-09.1; owner, 9 Oct 2026, "If I hold on this I can move the piece. If I
+// click on it once I'm taken into it", and his gesture rule R05, a hold opens the sign large): a tap is a tap on the card (it places
+// the sign), a hold opens that tile's card in its pile and places nothing -- a finger, a pen and (2026-10-09.5) a mouse alike; before
+// the hold fires it is cancelled past 18 px on a finger or pen, 8 px with a mouse (where a mouse drag starts). Mouse: drag the picture
+// onto another card to move that one tile; a finger never drags a sample tile away by mistake, and a hold never becomes a drag.
 function picDrag(im, sid){
   let d = null;
   const cardAt = (x, y) => { const e = document.elementFromPoint(x, y); return e && e.closest ? e.closest('.card') : null; };
@@ -1011,24 +1103,22 @@ function picDrag(im, sid){
     const c = cardAt(d.x, d.y); if (c !== d.over){ if (d.over) d.over.classList.remove('over'); if (c && c.dataset.pile !== pileOf(sid)) c.classList.add('over'); d.over = c; } };
   const loop = () => { if (!d) return; const top = barBottom() + 24, bot = window.innerHeight - 40;
     if (d.y < top) window.scrollBy(0, -edgeStep(top - d.y, 24)); else if (d.y > bot) window.scrollBy(0, edgeStep(d.y - bot, 24)); move(); d.raf = requestAnimationFrame(loop); };
-  let held = null;   // finger: the hold timer
-  const unhold = () => { if (held){ clearTimeout(held); held = null; } };
-  im.addEventListener('pointerdown', e => { if (e.button > 0) return;
-    if (e.pointerType !== 'mouse'){ unhold(); const x0 = e.clientX, y0 = e.clientY; im._p0 = [x0, y0];
-      held = setTimeout(() => { held = null; swallowClick = true; showCtx(sid, pileOf(sid)); }, 500); return; }   // the lifted finger presses nothing
-    d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, id: e.pointerId, over: null, ghost: null, raf: 0}; });
-  im.addEventListener('pointermove', e => { if (held && im._p0 && Math.hypot(e.clientX - im._p0[0], e.clientY - im._p0[1]) > 10) unhold();   // a scroll, not a hold
-    if (!d) return; d.x = e.clientX; d.y = e.clientY;
-    if (!d.on){ if (Math.hypot(d.x - d.sx, d.y - d.sy) > 8) start(); return; } e.preventDefault(); });
-  const end = (e, drop) => { unhold(); if (!d) return; const dd = d; d = null; if (!dd.on) return; cancelAnimationFrame(dd.raf); swallowClick = true;
+  let wasHeld = false;   // whether this press became a hold (the hold itself waits in the page's one slot, holdStart)
+  im.addEventListener('pointerdown', e => { if (e.button > 0) return; wasHeld = false; const mouse = e.pointerType === 'mouse';
+    holdStart(e, im, e.pointerType === 'touch' ? 500 : 380, mouse ? 8 : 18, () => { wasHeld = true; heldLift(); showCtx(sid, pileOf(sid)); });   // the lifted finger presses nothing
+    if (mouse) d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, id: e.pointerId, over: null, ghost: null, raf: 0}; });
+  im.addEventListener('touchmove', e => holdGuard(e), {passive: false});   // a drift up to 18 px does not turn the hold into a scroll
+  im.addEventListener('pointermove', e => { if (!d) return; d.x = e.clientX; d.y = e.clientY;
+    if (!d.on){ if (wasHeld){ d = null; return; } if (Math.hypot(d.x - d.sx, d.y - d.sy) > 8){ holdEnd(im); start(); } return; } e.preventDefault(); });
+  const end = (e, drop) => { holdEnd(im); if (!d) return; const dd = d; d = null; if (!dd.on) return; cancelAnimationFrame(dd.raf); swallowClick = true;
     if (dd.ghost) dd.ghost.remove(); if (dd.over) dd.over.classList.remove('over');
     const c = drop && cardAt(e.clientX, e.clientY); if (!c || c.dataset.pile === pileOf(sid)) return; const to = c.dataset.pile;
     remember([sid]); setDest(sid, to); $('s2Msg').textContent = 'Moved ' + sid + ' to pile ' + to + '.'; render(); offerCluster([sid], to); };
-  im.addEventListener('pointerup', e => end(e, true)); im.addEventListener('pointercancel', e => end(e, false)); im.addEventListener('pointerleave', () => unhold());
+  im.addEventListener('pointerup', e => end(e, true)); im.addEventListener('pointercancel', e => end(e, false)); im.addEventListener('pointerleave', () => holdEnd(im));
   im.addEventListener('contextmenu', e => e.preventDefault());
 }
 function place(to){
-  const sid = s2Cur; if (!sid) return;
+  const sid = s2Cur; if (!sid) return; if (notYet(sid, $('s2Msg'))) return;
   const L = outList(), i = L.indexOf(sid);
   const how = settle(sid, to);
   const L2 = outList(); s2Cur = L2[Math.min(i, L2.length - 1)] || null;
@@ -1046,7 +1136,12 @@ $('s2Aside').onclick = () => place('ASIDE');
 $('s2Home').onclick = () => { if (s2Cur) place(homeOf[s2Cur]); };
 $('s2Prev').onclick = () => { const L = outList(), i = L.indexOf(s2Cur); if (i > 0){ s2Cur = L[i - 1]; $('s2Msg').textContent = ''; renderS2(); } };
 $('s2Next').onclick = () => { const L = outList(), i = L.indexOf(s2Cur); if (i < L.length - 1){ s2Cur = L[i + 1]; $('s2Msg').textContent = ''; renderS2(); } };
-// drag the big sign onto a pile card (pointer events: touch, pen and mouse); the page scrolls when the finger nears an edge
+// drag the big sign onto a pile card with a mouse or pen; the page scrolls when the pointer nears an edge.
+// Owner rule R05 (template 2026-10-09.5): a HOLD on the big sign opens its card (large on its line, Fix the cut) and moves nothing;
+// a tap moves nothing either (it is in the tray already) and says so. A finger never drags it (round-2 check, 10 Oct 2026: a quick
+// swipe down that started on the pinned sign -- the natural way to scroll the cards -- dropped it on whichever card the finger
+// lifted over, 4 of 4 on iPhone 13 and SE): a tap on a card places it, as everywhere, and a swipe that starts here scrolls the page
+// (touch-action: pan-y). A mouse or pen drag starts past 6 px (pen 18 px, beyond a resting tip's drift), never once the hold fired.
 (function(){
   const tile = $('s2Tile'); let drag = null;
   const cardAt = (x, y) => { const e = document.elementFromPoint(x, y); return e && e.closest ? e.closest('.card') : null; };
@@ -1054,19 +1149,30 @@ $('s2Next').onclick = () => { const L = outList(), i = L.indexOf(s2Cur); if (i <
     if (y > bot) window.scrollBy(0, edgeStep(y - bot, 24)); else if (y < top) window.scrollBy(0, -edgeStep(top - y, 24));
     mark(); drag.raf = requestAnimationFrame(loop); };
   const mark = () => { const c = cardAt(drag.x, drag.y); if (c !== drag.over){ if (drag.over) drag.over.classList.remove('over'); if (c) c.classList.add('over'); drag.over = c; } };
-  tile.addEventListener('pointerdown', e => { if (e.button > 0 || !s2Cur) return; e.preventDefault();
-    tile.setPointerCapture(e.pointerId);
-    drag = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, moved: false, over: null, ghost: null, raf: 0}; });
-  tile.addEventListener('pointermove', e => { if (!drag) return; drag.x = e.clientX; drag.y = e.clientY;
-    if (!drag.moved && Math.hypot(drag.x - drag.sx, drag.y - drag.sy) > 6){ drag.moved = true;
-      const g = document.createElement('img'); g.className = 'ghost'; g.src = imgSrc(s2Cur); document.body.append(g); drag.ghost = g; drag.raf = requestAnimationFrame(loop); }
-    if (drag.ghost){ drag.ghost.style.left = (drag.x - 36) + 'px'; drag.ghost.style.top = (drag.y - 36) + 'px'; } });
+  tile.addEventListener('pointerdown', e => { if (e.button > 0 || !s2Cur) return;
+    const touch = e.pointerType === 'touch', mouse = e.pointerType === 'mouse';
+    if (!touch){ e.preventDefault(); try { tile.setPointerCapture(e.pointerId); } catch (er) {} }   // a finger keeps the page's own scroll
+    if (drag) cancelAnimationFrame(drag.raf);
+    const dd = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, moved: false, over: null, ghost: null, raf: 0, slop: mouse ? 6 : 18, held: false, touch};
+    drag = dd;
+    holdStart(e, tile, touch ? 500 : 380, dd.slop, () => { if (drag !== dd || dd.moved || !s2Cur) return; dd.held = true; heldLift();
+      showCtx(s2Cur, homeOf[s2Cur], false, outList(), 'waiting to be placed'); }); });
+  tile.addEventListener('touchmove', e => holdGuard(e), {passive: false});   // a resting fingertip's drift (up to 18 px) stays a hold
+  tile.addEventListener('pointermove', e => { const d = drag; if (!d || d.held) return; d.x = e.clientX; d.y = e.clientY;
+    if (!d.moved && Math.hypot(d.x - d.sx, d.y - d.sy) > d.slop){ d.moved = true; holdEnd(tile);
+      if (d.touch) return;   // a finger that moves on is a scroll (or nothing), never a drag: owner rule R05
+      const g = document.createElement('img'); g.className = 'ghost'; g.src = imgSrc(s2Cur); document.body.append(g); d.ghost = g; d.raf = requestAnimationFrame(loop); }
+    if (d.ghost){ d.ghost.style.left = (d.x - 36) + 'px'; d.ghost.style.top = (d.y - 36) + 'px'; } });
   const end = (e, drop) => { if (!drag) return; const d = drag; drag = null; cancelAnimationFrame(d.raf);
     if (d.ghost) d.ghost.remove(); if (d.over) d.over.classList.remove('over');
-    if (!d.moved){ if (drop && s2Cur){ swallowClick = true; } if (drop && s2Cur) showCtx(s2Cur, homeOf[s2Cur], false, outList(), 'waiting to be placed'); return; }   // a tap on the big sign: the larger view
+    if (d.held) return;   // a hold: its card is open, nothing moved
+    if (!d.moved){ if (drop && s2Cur){ swallowClick = true;   // a tap on the big sign: it is in the tray already, nothing moves
+      $('s2Msg').textContent = s2Cur + ' is waiting here to be placed: tap the pile it belongs to below' + (d.touch ? '' : ' (or drag the sign onto it)') + '. Hold the sign to see it large on its line (nothing moved).'; } return; }
+    if (d.touch || !d.ghost) return;   // a finger swipe: nothing placed
     const c = drop && cardAt(e.clientX, e.clientY); if (c) place(c.dataset.pile); };
   tile.addEventListener('pointerup', e => end(e, true)); tile.addEventListener('pointercancel', e => end(e, false));
   tile.addEventListener('contextmenu', e => e.preventDefault());
+  tile.title = 'Hold: see the sign large on its line (fix the cut there). Tap the pile it belongs to (a mouse can also drag it onto the pile).';
 })();
 
 const history = [];   // each entry: [[sid, previous destination or null], ...] (+ .cluster/.prevDec for a cluster decision, .checks for "keep")
@@ -1106,17 +1212,29 @@ function offerCluster(sids, to){
   const c = cs[0];
   const rest = (clusterMembers[c] || []).filter(s => !sids.includes(s) && (moves[s] || homeOf[s]) !== to && moves[s] !== 'BAD-CUT');
   if (!rest.length) return;
-  offerState = {c, to, sids, rest};
+  offerState = {c, to, sids, rest}; drawOffer();
+}
+// The offer's pictures follow the one gesture rule too (owner rule R05; adversarial check, 10 Oct 2026: they answered neither a tap
+// nor a hold): a HOLD opens that sign's card (the look-alikes are its list) and moves nothing; a TAP takes that sign out into the tray
+// -- a look-alike tapped out is no longer in "Yes, move N more", and tapping the sign just placed takes it back out (the offer closes).
+function drawOffer(){
+  const o = offerState; if (!o) return; const {c, to, sids, rest} = o;
   const prov = DATA.clusterSource === 'provisional';
+  const look = s => { showCtx(s, pileOf(s), false, sids.slice(0, 1).concat(rest), 'with its look-alikes'); placeOffer(); };
+  const tile = (s, cls) => { const b = document.createElement('button'); b.type = 'button'; b.className = 't' + cls; b.dataset.sid = s;
+    b.title = s + ' (tap: to the tray; hold: see it large on its line)'; b.setAttribute('aria-label', s + ': tap to put it in the tray, hold to see it large on its line');
+    const im = document.createElement('img'); im.alt = s; im.src = imgSrc(s); im.draggable = false; b.append(im); return b; };
   // the offer names the sign it is about and shows it: after a step-2 placement the page has already moved on to the next sign, and
   // "Apply to all ... Just this tile" read as being about the sign on screen (iPhone check, 9 Oct 2026)
   const ot = $('offerT'), one = sids.length === 1, n = rest.length; ot.textContent = '';
-  const subj = document.createElement('span'); subj.className = 't subj'; subj.title = sids[0]; const sim = document.createElement('img'); sim.alt = sids[0]; sim.src = imgSrc(sids[0]); subj.append(sim);
+  const subj = tile(sids[0], ' subj'); attachPress(subj, () => takeOut(sids[0], subj), () => look(sids[0]));
   ot.append((one ? 'The sign you just put in ' + to + ' ' : 'The ' + sids.length + ' tiles you just put in ' + to + ' '), subj,
     ' has ' + n + ' look-alike' + (n > 1 ? 's' : '') + ' in its ' + (prov ? 'shape group' : 'atlas cluster') + ' ' + c + '. Move ' + (n > 1 ? 'them' : 'it') + ' to ' + to + ' too?');
   $('offerYes').textContent = 'Yes, move ' + (n > 1 ? n + ' more' : 'it too'); $('offerNo').textContent = one ? 'No, only that one' : 'No, only those';
   const w = $('offerTiles'); w.textContent = '';
-  rest.slice(0, 12).forEach(s => { const b = document.createElement('span'); b.className = 't'; const im = document.createElement('img'); im.alt = s; im.src = imgSrc(s); b.append(im); w.append(b); });
+  rest.slice(0, 12).forEach(s => { const b = tile(s, ''); w.append(b);
+    attachPress(b, () => { const left = offerState && offerState.rest.filter(x => x !== s); if (!takeOut(s, b) || !left) return;   // takeOut closes the offer
+      if (left.length){ offerState = {c, to, sids, rest: left}; drawOffer(); } }, () => look(s)); });
   if (rest.length > 12) w.append('+' + (rest.length - 12));
   $('offer').hidden = false; placeOffer();
 }
@@ -1211,9 +1329,11 @@ const pageImgs = {};
 function pageImg(p){ if (!pageImgs[p]){ const im = new Image(); im.src = 'data:image/jpeg;base64,' + DATA.pages[p]; pageImgs[p] = im; } return pageImgs[p]; }
 // draw a tile's line into canvas c; alive() says whether that tile is still the one wanted (a late page image must not
 // paint over the tile now shown). Phone: zoom 3 fits the line to the width and the zoom scales from there.
-// Neighbour lines (owner, 4 Oct 2026: a sign written over the line below must be visible): when a page is one line crop named
-// <leaf>_L<n> and the crops of lines n-1 / n+1 are on the page, they are drawn above and below at the same x window.
-function nbPages(p){ const m = /^(.*_L)(\d+)$/.exec(p); if (!m) return [null, null]; const n = +m[2], w = m[2].length;
+// Neighbour lines (owner, 4 Oct 2026: a sign written over the line below must be visible; owner rule R02): when a page is one line
+// crop named <leaf>_L<n> or <leaf>L<n> and the crops of lines n-1 / n+1 are on the page, they are drawn above and below at the same x
+// window. (Round-2 check, 10 Oct 2026: Armstrong's crops are p1L05, with no underscore, so the old /_L/ form found no neighbour on any
+// of its 997 tiles and the card never showed the lines above and below.)
+function nbPages(p){ const m = /^(.*L)(\d+)$/.exec(p); if (!m) return [null, null]; const n = +m[2], w = m[2].length;
   const name = k => m[1] + String(k).padStart(w, '0'); const a = name(n - 1), b = name(n + 1);
   return [DATA.pages[a] ? a : null, DATA.pages[b] ? b : null]; }
 function drawLine(sid, c, z, alive){
@@ -1234,18 +1354,29 @@ function drawLine(sid, c, z, alive){
     // editing: keep the picture under ~45% of the screen height so the box and the Save button both fit on a phone (8 Oct 2026)
     if (ed){ const cw0 = Math.max(120, c.parentElement.clientWidth || 600), maxH = Math.max(220, (window.innerHeight || 800) * 0.45);
       halfW = Math.max(halfW, Math.round((h + 2 * padY) * cw0 / maxH / 2)); }
-    const cxm = x + w / 2;
-    const x0 = Math.max(0, Math.round(cxm - halfW)), x1 = Math.min(im.naturalWidth, Math.round(cxm + halfW));
-    const py = (ia || ib) ? Math.round(h * 0.35) + 4 : padY;   // with neighbour lines shown, keep this strip to its own line
-    let y0 = Math.max(0, y - py), y1 = Math.min(im.naturalHeight, y + h + py);
-    // phone (8 Oct 2026): a dot or tick at zoom 5 drew a 20-35 px sliver; show at least ~120 css px of the line's height
-    if (PHONE && !ed && !ia && !ib){ const cw = Math.max(120, c.parentElement.clientWidth || 600), minH = Math.min(im.naturalHeight, Math.round(120 * (x1 - x0) / cw));
+    const cxm = x + w / 2, W = im.naturalWidth, H = im.naturalHeight;
+    // a sign near either end of its line keeps the same span of line (the window slides instead of being cut short), so the strip
+    // keeps its scale and height (round-2 check, 10 Oct 2026: Armstrong p3L06_01, at x 0, drew a strip 481 px tall on an iPhone 13)
+    const span = ed ? 0 : Math.min(W, 2 * halfW);
+    const x0 = ed ? Math.max(0, Math.round(cxm - halfW)) : Math.max(0, Math.min(Math.round(cxm - halfW), W - span)),
+      x1 = ed ? Math.min(W, Math.round(cxm + halfW)) : Math.min(W, x0 + span);
+    // a line crop overlaps its neighbours, so only the middle band of each neighbour crop (its own line) is drawn
+    const band = q => [Math.round(q.naturalHeight * 0.22), Math.round(q.naturalHeight * 0.78)];
+    // with neighbour lines shown (owner rule R02): this crop's own middle band (and the whole box), the neighbour bands above and
+    // below abutting it; on a side with no neighbour crop on the page, this crop's own pixels to its edge (round-2 check, 10 Oct
+    // 2026: a side with no neighbour showed only a third of the sign's height of paper)
+    let y0, y1;
+    if (ia || ib){ const [b0, b1] = band(im); y0 = ia ? Math.max(0, Math.min(b0, y - 4)) : 0; y1 = ib ? Math.min(H, Math.max(b1, y + h + 4)) : H; }
+    else { y0 = Math.max(0, y - padY); y1 = Math.min(H, y + h + padY); }
+    // phone (8 Oct 2026): a dot or tick at zoom 5 drew a 20-35 px sliver; show at least ~120 css px of the line's height. With no
+    // neighbour crop to draw (owner rule R02: the lines above and below), the card shows the whole crop's height when it fits in 40% of
+    // the screen (round-2 check, 10 Oct 2026: the strip left out 15-34 px of the crop's own pixels above and below the sign)
+    if (PHONE && !ed && !ia && !ib){ const cw = Math.max(120, c.parentElement.clientWidth || 600), css = cw / (x1 - x0);
+      const minH = c.id === 'ctxC' && im.naturalHeight * css <= Math.max(160, (window.innerHeight || 700) * 0.4) ? im.naturalHeight : Math.min(im.naturalHeight, Math.round(120 / css));
       if (y1 - y0 < minH){ y0 = Math.max(0, Math.round((y0 + y1 - minH) / 2)); y1 = Math.min(im.naturalHeight, y0 + minH); y0 = Math.max(0, y1 - minH); } }
     const cv = c.parentElement;
     const cssW = Math.max(120, cv.clientWidth || 600);                  // always fill the box; the slider changes the window
     const s = cssW * Math.min(2, window.devicePixelRatio || 1) / (x1 - x0);
-    // a line crop overlaps its neighbours, so only the middle band of each neighbour crop (its own line) is drawn
-    const band = q => [Math.round(q.naturalHeight * 0.22), Math.round(q.naturalHeight * 0.78)];
     const ha = ia ? Math.round((band(ia)[1] - band(ia)[0]) * s) : 0, hb = ib ? Math.round((band(ib)[1] - band(ib)[0]) * s) : 0, hm = Math.round((y1 - y0) * s);
     c.width = Math.round((x1 - x0) * s); c.height = ha + hm + hb; c.style.width = cssW + 'px'; c.style.height = Math.round(c.height * cssW / c.width) + 'px'; c.dataset.span = x1 - x0; c.dataset.sid = sid; c.dataset.whole = (x0 === 0 && x1 === im.naturalWidth) ? '1' : ''; c.dataset.view = 'strip';
     const g = c.getContext('2d'); g.imageSmoothingEnabled = true;
@@ -1625,7 +1756,7 @@ function ctxAdvance(sid){
   else { $('ctxMsg').textContent += ' That was the last tile in this list.'; showCtx(sid, pileOf(sid), true); }
 }
 function ctxMove(to){
-  const sid = ctxSid;
+  const sid = ctxSid; if (notYet(sid, $('ctxMsg'))) return;
   remember([sid]); setDest(sid, to);
   $('ctxMsg').textContent = (to === 'OUT' ? 'Took ' + sid + ' out' : 'Moved ' + sid + ' to ' + (to === 'ASIDE' ? 'set aside' : to === 'BAD-CUT' ? 'bad cuts' : to === 'NOT-LETTER' ? 'trash (not a sign)' : to)) + '. Showing the next tile.';
   render();
@@ -1634,6 +1765,7 @@ function ctxMove(to){
 }
 function ctxKeep(){
   const sid = ctxSid, cur = moves[sid] || homeOf[sid];
+  if (notYet(sid, $('ctxMsg'))) return;   // round-2 check, 10 Oct 2026: a keep while loading deleted a saved move
   keepAt(sid, cur);
   $('ctxMsg').textContent = 'Kept ' + sid + ' in ' + cur + '. Showing the next tile.';
   render(); ctxAdvance(sid);
@@ -1654,11 +1786,11 @@ $('ctxUndo').onclick = () => { if (fix) fixStop(); const last = undo(); if (!las
   if (one && ctxList.includes(one)){ $('ctxMsg').textContent = 'Undid the last step for ' + one + '. Showing it again.'; showCtx(one, pileOf(one), true); }
   else { $('ctxMsg').textContent = 'Undid the last step (' + (last.length || 1) + (last.length > 1 ? ' tiles).' : ' tile).'); showCtx(ctxSid, pileOf(ctxSid), true); } };
 $('ctxNext').onclick = () => ctxStep(1);
-$('ctxDest').onchange = e => { if (e.target.value) ctxMove(e.target.value); };
+$('ctxDest').onchange = e => { const v = e.target.value; if (!v) return; if (notYet(ctxSid, $('ctxMsg'))){ e.target.selectedIndex = 0; return; } ctxMove(v); };
 $('ctxAside').onclick = () => ctxMove('ASIDE');
-$('ctxBad').onclick = () => { ensureSpecial('BAD-CUT'); ctxMove('BAD-CUT'); };
-$('ctxTrash').onclick = () => { ensureSpecial('NOT-LETTER'); ctxMove('NOT-LETTER'); };   // tile box cut in the wrong place: parked for recutting
-$('ctxNewB').onclick = () => ctxMove(makePile(pileOf(ctxSid)));
+$('ctxBad').onclick = () => { if (notYet(ctxSid, $('ctxMsg'))) return; ensureSpecial('BAD-CUT'); ctxMove('BAD-CUT'); };
+$('ctxTrash').onclick = () => { if (notYet(ctxSid, $('ctxMsg'))) return; ensureSpecial('NOT-LETTER'); ctxMove('NOT-LETTER'); };   // tile box cut in the wrong place: parked for recutting
+$('ctxNewB').onclick = () => { if (notYet(ctxSid, $('ctxMsg'))) return; ctxMove(makePile(pileOf(ctxSid))); };
 document.addEventListener('keydown', e => { if ($('ctx').hidden || e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
   if (e.key === 'Enter' && fix && e.target.tagName !== 'BUTTON'){ e.preventDefault(); $('fixSave').click(); return; }   // owner, 6 Oct 2026: Enter saves the cut
   if (e.key === 'ArrowLeft') ctxStep(-1); if (e.key === 'ArrowRight') ctxStep(1); });
@@ -1683,14 +1815,18 @@ $('show').onchange = render;
   ps.onchange = render; $('gbv').onchange = render; })();
 $('foot').textContent = Object.keys(itemBySid).length + ' tiles, ' + (DATA.blind ? (DATA.seedNote || 'first piled by nearest pile on the image alone (shape only).') : 'first piled by our readers’ labels.') + ' ' +
   (DATA.skipped ? DATA.skipped + ' tiles from a line outside the page crops are not shown.' : '');
+// the words of the two boxes (owner rule R05): one rule, the same as in the piles
+const BOX_HINT = 'Tap a sign: it goes to the “Taken out” tray' + (TRAY_ON ? ' (a question waiting in step 2 is there already: nothing moves)' : ' (tap it there to put it back)') +
+  '. Hold a sign: its card opens, large on its line, with Fix the cut and the answer buttons; a hold moves nothing.';
+const BOX_TITLE = ' (tap: to the tray; hold: see it large on its line)', BOX_ARIA = ': tap to put it in the tray, hold to see it large on its line';
 (function(){ const F = DATA.focus || []; if (!F.length) return;
   const box = $('focus'); box.hidden = false;
-  // owner, 9 Oct 2026 ("If I click on it once I'm taken into it"): a tap here only shows the sign large; the hint says so plainly.
-  // With the questions in the tray, the instructions above the tiles are one line pointing at step 2 (waitLine) and this hint.
+  // Owner rule R05 (template 2026-10-09.5; template 2026-10-09.1 had "a tap here only shows the sign large", the opposite of his rule):
+  // a tap here does what a tap in a pile does, into the "Taken out" tray (a sign already there stays, nothing moves); a hold opens
+  // its card. With the questions in the tray, the instructions above the tiles are one line pointing at step 2 (waitLine) and this hint.
   const tap = TRAY_ON ? $('focusTap') : $('focusNote');
   if (TRAY_ON) tap.hidden = false;
-  tap.textContent = (DATA.focusNote || '') + (DATA.focusNote ? ' ' : '') + (TRAY_ON ? 'Tap a sign here to see it large on its line; nothing moves.' :
-    'Tap one to see it on its line. In the piles below these signs have a double frame and a "?".');
+  tap.textContent = (DATA.focusNote || '') + (DATA.focusNote ? ' ' : '') + BOX_HINT + (TRAY_ON ? '' : ' In the piles below these signs have a double frame and a "?".');
   const wrap = $('focusTiles');
   const missing = F.filter(f => !itemBySid[f.sid]).map(f => f.sid);
   if (missing.length) tap.textContent += ' ' + missing.length +
@@ -1698,11 +1834,10 @@ $('foot').textContent = Object.keys(itemBySid).length + ' tiles, ' + (DATA.blind
   const ids = [...new Set(F.map(x => x.sid).filter(x => itemBySid[x]))];
   F.forEach(f => { const it = itemBySid[f.sid]; if (!it || wrap.querySelector('[data-sid="' + CSS.escape(f.sid) + '"]')) return;
     const d = document.createElement('div'); d.style.display = 'grid'; d.style.gap = '2px'; d.dataset.sid = f.sid;
-    const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.title = f.sid + ': ' + f.q + ' (tap: see it large on its line)';
-    b.setAttribute('aria-label', f.sid + ': tap to see it large on its line');
+    const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.title = f.sid + ': ' + f.q + BOX_TITLE;
+    b.setAttribute('aria-label', f.sid + BOX_ARIA);
     const im = document.createElement('img'); im.alt = f.sid; im.src = imgSrc(f.sid); im.draggable = false; b.append(im);
-    b.onclick = () => showCtx(f.sid, pileOf(f.sid), false, ids, 'in "Check these first"');
-    b.addEventListener('contextmenu', e => e.preventDefault());
+    attachPress(b, () => boxTap(f.sid, b), () => showCtx(f.sid, pileOf(f.sid), false, ids, 'in "Check these first"'));
     // short caption: the question itself (the part after the last ';', without a [bracketed note]); the full text is in the dialog.
     // Too long for three lines under a tile (Harley 287: twelve captions all read "Odd one out of shape pile kNN (NN tiles…"):
     // the question clause if it is short, else the pile it is in now with a "?" ("k05?"), as the "Most useful first" box does
@@ -1740,12 +1875,14 @@ function waitLine(){ if (!TRAY_ON) return;
   if (TRAY_ON && fs.size && R.every(f => !itemBySid[f.sid] || fs.has(f.sid))) return;
   const box = $('rank'); box.hidden = false;
   $('rankNote').textContent = (DATA.rankNote || '') + '. Answer these and most of the reading is settled; each one may offer to move its whole cluster.';
+  $('rankTap').textContent = BOX_HINT;   // owner rule R05: tap = to the tray, hold = its card, as in every box
   const wrap = $('rankTiles');
   R.forEach((f, n) => { const it = itemBySid[f.sid]; if (!it) return;
     const d = document.createElement('div'); d.style.display = 'grid'; d.style.gap = '2px'; d.dataset.sid = f.sid;
-    const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.title = f.sid + ': ' + (f.why || '') + (f.detail ? ' ' + f.detail : '') + ' (tap: see it large on its line)';
+    const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.title = f.sid + ': ' + (f.why || '') + (f.detail ? ' ' + f.detail : '') + BOX_TITLE;
+    b.setAttribute('aria-label', f.sid + BOX_ARIA);
     const im = document.createElement('img'); im.alt = f.sid; im.src = imgSrc(f.sid); im.draggable = false; b.append(im);
-    b.onclick = () => showCtx(f.sid, pileOf(f.sid), false, R.map(x => x.sid).filter(x => itemBySid[x]), 'in "Most useful first"');
+    attachPress(b, () => boxTap(f.sid, b), () => showCtx(f.sid, pileOf(f.sid), false, R.map(x => x.sid).filter(x => itemBySid[x]), 'in "Most useful first"'));
     const k = document.createElement('span'); k.className = 'rk'; k.textContent = '#' + (n + 1) + (DATA.blind ? '' : ' · ' + (+f.score).toFixed(1));
     const c = document.createElement('span'); c.className = 'fcap'; c.textContent = f.why || (f.alt ? homeOf[f.sid] + ' or ' + f.alt + '?' : '');
     const ok = document.createElement('span'); ok.className = 'fdone';

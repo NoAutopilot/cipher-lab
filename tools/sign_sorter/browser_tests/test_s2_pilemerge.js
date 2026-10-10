@@ -1,5 +1,6 @@
 // Step 2: drag a pile card by its name onto another card merges the whole pile (state.merge_into), the merged card leaves
-// the list, and "Undo merge" restores it (owner, 4 Oct 2026). Desktop mouse and phone touch (press 1/4 s, then drag).
+// the list, and "Undo merge" restores it (owner, 4 Oct 2026). Desktop mouse and phone touch (template 2026-10-09.5: hold the name
+// 500 ms until it is outlined, then drag; a still finger lifts nothing -- owner rule R05).
 // Run: PW_EXE=/opt/pw-browsers/chromium NODE_PATH=$(npm root -g) node test_s2_pilemerge.js PAGE.html SHOT.png
 const { chromium } = require('playwright'); const mock = require('./mock_db');
 (async () => {
@@ -15,14 +16,15 @@ const { chromium } = require('playwright'); const mock = require('./mock_db');
     await page.waitForTimeout(200);
     const hb = await page.locator('.card[data-pile="' + info.from + '"] .cid').boundingBox(), tb = await page.locator('.card[data-pile="' + info.to + '"]').boundingBox(); console.log('cards', await page.locator('.card').count());
     const x0 = hb.x + 10, y0 = hb.y + hb.height / 2, x1 = tb.x + tb.width / 2, y1 = tb.y + tb.height / 2;
-    await mock.gesture(page, 'down', x0, y0); await page.waitForTimeout(tag === 'phone' ? 350 : 30);
+    await mock.gesture(page, 'down', x0, y0); await page.waitForTimeout(tag === 'phone' ? 650 : 30);
+    if (tag === 'phone') res.phoneStill = await page.evaluate(() => !document.querySelector('.ghost') && !!document.querySelector('.card .cid.armed'));   // armed, nothing lifted yet
     for (let i = 1; i <= 12; i++){ await mock.gesture(page, 'move', x0 + (x1 - x0) * i / 12, y0 + (y1 - y0) * i / 12); await page.waitForTimeout(16); }
     await mock.gesture(page, 'up', x1, y1); await page.waitForTimeout(500);
     const merged = await page.evaluate(f => [state[f] && state[f].merge_into, !!document.querySelector('.card[data-pile="' + f + '"]')], info.from);
     const stored = ((store.docs.piles || {})[info.from] || {}).merge_into;
     await page.locator('#s2Msg button', { hasText: 'Undo merge' }).click(); await page.waitForTimeout(300);
     const undone = await page.evaluate(f => [state[f] && state[f].merge_into, !!document.querySelector('.card[data-pile="' + f + '"]')], info.from);
-    res[tag] = merged[0] === info.to && !merged[1] && stored === info.to && !undone[0] && undone[1];
+    res[tag] = merged[0] === info.to && !merged[1] && stored === info.to && !undone[0] && undone[1] && (tag !== 'phone' || res.phoneStill);
     console.log(tag, info, merged, stored, undone);
     if (tag === 'desk') await page.screenshot({ path: process.argv[3] });
     await ctx.close();

@@ -2,9 +2,11 @@
 """Pre-publish gate for a sign-sorter page (SORTER-PREFLIGHT, 6 Oct 2026; CLAUDE.md Usage 8a: a rule broken twice
 becomes a tool). Exits non-zero unless the page is fit to put in front of the owner.
 
-  python3 tools/sorter_preflight.py SORTER.html [--cipher-lines FILE] [--expect-owner-account] [--sheet OUT.png]
+  python3 tools/sorter_preflight.py SORTER.html [--cipher-lines FILE] [--expect-owner-account] [--sheet OUT.png] [--no-gestures]
   python3 tools/sorter_preflight.py --inputs DIR [--cipher-lines FILE]      (text inputs: signs.tsv, labels.tsv,
         focus.tsv, optional pages/ -- before a build, or where the images may not leave a private clone)
+  python3 tools/sorter_preflight.py --gestures SORTER.html                  (check 6 alone; exit 0 PASS, 1 FAIL, 2 SKIP)
+  python3 tools/sorter_preflight.py --cvd [SORTER.html | TEMPLATE]          (check 5 alone)
 
 Why (owner, 6 Oct 2026, "how do we prevent this in the future?"): the Oldenbarnevelt A/C2 sorter (R7-OLDSORT) cut its
 tiles with boxes the full height of the strip, reaching into the line above and below, and tiled the clear Spanish
@@ -12,7 +14,8 @@ opening of line A1; the Dinteville f.23r sorter (ASKS 112) put 268 of 303 tiles 
 "Check these first" questions ("pass A D, pass B -; which sheet label?") whose labels had no pile to tap; the MLH
 page reached the owner on a template without "Fix the cut". Each was found by the owner, after publishing.
 
-Checks (each prints one line; the verdict is PASS only if all five pass):
+Checks (each prints one line; the verdict is PASS only if none FAILs -- a check that could not run says SKIP or n/a, and the
+last line names it under "not checked"):
  1. template  the page carries the "Fix the cut" control (id="ctxFix") and the current template's version marker
               (<meta name="sign-sorter-template" content=...> in tools/sign_sorter/template.html). An older page is
               re-rendered with tools/sorter_rerender.py. Not applicable with --inputs.
@@ -43,11 +46,32 @@ Checks (each prints one line; the verdict is PASS only if all five pass):
               focus questions, rank captions) names a colour: `\bred\b`, `\bgreen\b`, `\borange\b` on word boundaries.
               Pile names and data values are exempt. cvd_check's WARN (judgement call, under its gate by < 2) prints
               WARN and does not fail. n/a for a page with no `:root` tokens.
+ 6. gestures (owner rule R05, tools/data/sorter_owner_requirements.tsv; template 2026-10-09.5, 10 Oct 2026; `--gestures PAGE`
+              runs this one alone)  runs tools/sign_sorter/browser_tests/test_gestures.js on the page in headless Chromium as an
+              iPhone 13, an iPhone SE and a desktop mouse: a still hold and drifting holds (a finger 14 px by 450 ms, then 16 and
+              17 px; a mouse 5 px) on every kind of tile the page has (pile, check-mark, '?', waiting '2', "Check these first", "Most
+              useful first", tray, tray question, step-2 card picture, put line, count, padding and name, step-2 big sign, cluster
+              offer) open the sign's card and move nothing; a tap takes the sign out to the tray (or does the box's own tap) and never
+              opens the card; a tap during a re-render makes one move and no card; a mouse hold on the trash x trashes nothing; no
+              tap switch on the page; a mouse drag onto another pile still moves a tile; zero page errors. Round 2 (10 Oct 2026),
+              on the phones: a quick swipe that starts on a tray tile or on the step-2 big sign moves nothing (a finger never drags
+              them); lifting the finger after a hold presses nothing in the card that opened under it (the "Move this tile to…"
+              list, the Zoom slider); and owner rule R02, every tile whose line has a neighbouring line crop on the page gets that
+              line drawn above / below it in the card (Armstrong's p1L05 crops had none on 2026-10-09.5's first build). FAIL prints
+              the failing lines. It needs node, a global playwright and Chromium
+              ($PW_EXE, default /opt/pw-browsers/chromium); without them it prints `SKIP gestures (no node/playwright: ...)`,
+              never a silent pass. It takes four to five minutes a page (4 min 4 s on the plain fixture, 4 min 39 s on Armstrong's 997
+              tiles, 10 Oct 2026), so the CLI runs it by default (`--no-gestures` skips
+              it, saying so) and a library call (`run()`, e.g. tools/sign_sorter.py after a build) only when asked
+              (`gestures=True`), printing `SKIP gestures (not run by this call ...)` otherwise.
  --expect-owner-account  also fail unless CIPHERLAB_ACCOUNT is 'owner' (ASKS 145: a page published from another
               account is private to it, and the owner gets "deleted or not available").
 
 Must NOT block (each has an offline test in tools/tests/test_sorter_preflight.py; the colour check's are in test_sign_sorter_cvd.py:
 "ordered", "required" and "entered" in a hint, and "green" in a pile name or a data value):
+ - a machine with no node, playwright or Chromium: the gesture check prints SKIP and the verdict stands on the other checks;
+ - a page without one of the tile kinds the gesture test drives (no rank box, no tray, no check-mark tiles): it says skip for
+   that kind and checks the rest;
  - a page whose focus tiles are legitimately all one family or one pile (Ferdinand's 25 t / tt / e questions): the
    gate counts named piles on the page, never the spread of the focus tiles' own piles;
  - a focus question in free prose that names no reader split ("tt or a single crossed t?"): only the explicit
@@ -57,10 +81,11 @@ Must NOT block (each has an offline test in tools/tests/test_sorter_preflight.py
 It is a shape gate, not a reading check: a PASS says the page can be answered and shows cipher signs, never that
 the starting piles are right.
 """
-import argparse, base64, csv, io, json, os, random, re, statistics, sys
+import argparse, base64, csv, io, json, os, random, re, shutil, statistics, subprocess, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 TEMPLATE = os.path.join(HERE, 'sign_sorter', 'template.html')
+GESTURE_JS = os.path.join(HERE, 'sign_sorter', 'browser_tests', 'test_gestures.js')
 MARKER_RE = re.compile(r'<meta name="sign-sorter-template" content="([^"]+)"')
 PLACEHOLDER = {'', '_', '?', 'unread', 'unsorted', 'unknown', 'none', 'bad-cut', 'not-a-letter', 'nonletter'}
 PROSE = {'sign', 'signs', 'word', 'words', 'blind', 'label', 'labels', 'pile', 'piles', 'here', 'reading', 'this', 'that', 'which'}
@@ -428,8 +453,56 @@ def contact_sheet(data, imgs, scale, out, flags, seed=20261006, k=24):
     return True, f'contact sheet: {len(pick)} tiles beside their line strips -> {out} (seed {seed}; eye it before publishing)'
 
 
-def run(page=None, inputs=None, cipher_lines=None, expect_owner=False, sheet=None, seed=20261006, quiet=False, search=(), pages_json=None):
-    """-> (ok, lines). Used by tools/sign_sorter.py after a build."""
+def node_env():
+    """-> (env, None) when node, a global playwright and Chromium can run the gesture test, else (None, why)."""
+    node = shutil.which('node')
+    if not node:
+        return None, 'no node on PATH'
+    root = os.environ.get('NODE_PATH', '')
+    if not (root and os.path.isdir(os.path.join(root, 'playwright'))):
+        npm = shutil.which('npm')
+        try:
+            root = subprocess.run([npm, 'root', '-g'], capture_output=True, text=True, timeout=60).stdout.strip() if npm else ''
+        except (OSError, subprocess.SubprocessError):
+            root = ''
+    if not (root and os.path.isdir(os.path.join(root, 'playwright'))):
+        return None, 'no global playwright (npm root -g)'
+    exe = os.environ.get('PW_EXE', '/opt/pw-browsers/chromium')
+    if not os.path.exists(exe):
+        return None, f'no Chromium at {exe} (set PW_EXE)'
+    return dict(os.environ, NODE_PATH=root, PW_EXE=exe), None
+
+
+def check_gestures(page, timeout=1800, env=None, runner=None):
+    """(ok|None, line). Check 6: tools/sign_sorter/browser_tests/test_gestures.js on the page (see the module docstring). None = SKIP
+    (no node/playwright/Chromium). env/runner are for the offline test: runner(cmd, **kw) stands in for subprocess.run."""
+    if env is None:
+        env, why = node_env()
+        if env is None:
+            return None, f'SKIP gestures (no node/playwright: {why}) -- run `python3 tools/sorter_preflight.py --gestures PAGE` where they are, before publishing'
+    runner = runner or subprocess.run
+    try:
+        r = runner(['node', GESTURE_JS, os.path.abspath(page)], cwd=os.path.dirname(GESTURE_JS), env=env, capture_output=True, text=True, timeout=timeout)
+    except subprocess.TimeoutExpired:
+        return False, f'gestures: test_gestures.js did not finish in {timeout} s'
+    out = (r.stdout or '').splitlines()
+    good = [l for l in out if l.startswith('ok ')]
+    bad = [l for l in out if l.startswith('FAIL')]
+    skipped = [l for l in out if l.startswith('skip ')]
+    if r.returncode == 0 and not bad and good:
+        return True, (f'gestures: owner rules R05 (tap = to the tray, hold = the card, every box; swipes move nothing) and R02 (lines above and below) hold on iPhone 13, iPhone SE and a mouse: '
+                      f'{len(good)} checks, {len(skipped)} skipped (a tile kind this page lacks, counted per device) [test_gestures.js]')
+    if not bad:
+        tail = ((r.stderr or '') + '\n' + (r.stdout or '')).strip().splitlines()[-3:]
+        return False, f'gestures: test_gestures.js exited {r.returncode} with no FAIL line -- ' + ' | '.join(tail)
+    return False, (f'gestures: {len(bad)} of {len(good) + len(bad)} checks FAIL (owner rule R05: tap = to the tray, hold = the card, moves nothing)'
+                   + ''.join('\n      ' + l for l in bad[:12]) + (f'\n      ... {len(bad) - 12} more' if len(bad) > 12 else ''))
+
+
+def run(page=None, inputs=None, cipher_lines=None, expect_owner=False, sheet=None, seed=20261006, quiet=False, search=(), pages_json=None,
+        gestures=False):
+    """-> (ok, lines). Used by tools/sign_sorter.py after a build. gestures=True runs check 6 (a minute or more a page; the CLI
+    default); otherwise it prints `SKIP gestures (not run by this call ...)`."""
     html = None
     if page:
         data, html = load_html(page)
@@ -455,13 +528,20 @@ def run(page=None, inputs=None, cipher_lines=None, expect_owner=False, sheet=Non
             rgb = {k: Image.open(v['image'] if os.path.isabs(v['image']) else os.path.join(root, v['image'])).convert('RGB')
                    for k, v in json.load(open(pages_json)).items() if not v.get('box') and k in (data.get('pages') or {})}
         res.append(check_cvd(html, data, imgs, rgb))
+    if html is None:
+        res.append((None, 'SKIP gestures (text inputs, no page)'))
+    elif gestures:
+        res.append(check_gestures(page))
+    else:
+        res.append((None, 'SKIP gestures (not run by this call: `python3 tools/sorter_preflight.py PAGE` or `--gestures PAGE` runs it before publishing)'))
     if expect_owner:
         acct = os.environ.get('CIPHERLAB_ACCOUNT', '')
         res.append((acct == 'owner', f'account: CIPHERLAB_ACCOUNT={acct or "unset"}' +
                     ('' if acct == 'owner' else ' -- publish from the owner account, or the owner cannot open it (ASKS 145)')))
     ok = all(r[0] is not False for r in res)
-    lines = [('PASS ' if r[0] else 'n/a  ' if r[0] is None else 'FAIL ') + r[1] for r in res]
-    partial = [w for w, gone in (('template', html is None), ('ink, strip-height, contact sheet', not imgs)) if gone]
+    lines = [r[1] if r[0] is None and r[1].startswith('SKIP ') else ('PASS ' if r[0] else 'n/a  ' if r[0] is None else 'FAIL ') + r[1] for r in res]
+    partial = [w for w, gone in (('template', html is None), ('ink, strip-height, contact sheet', not imgs),
+                                 ('gestures', any(r[0] is None and r[1].startswith('SKIP gestures') for r in res))) if gone]
     lines.append(f'preflight: {"PASS" if ok else "FAIL"}' + (f' (not checked: {"; ".join(partial)})' if partial else ''))
     if not quiet:
         print('\n'.join(lines))
@@ -480,7 +560,13 @@ def main(argv=None):
     ap.add_argument('--cvd', nargs='?', const=TEMPLATE, metavar='PAGE_OR_TEMPLATE',
                     help='run only the colour check (check 5) on a page or on the template (default tools/sign_sorter/template.html)')
     ap.add_argument('--pages-json', help='glyph_atlas pages.json: real page colours for the box-colour check (default: the embedded greys)')
+    ap.add_argument('--gestures', metavar='PAGE', help='run only the gesture check (check 6, owner rule R05) on PAGE: exit 0 PASS, 1 FAIL, 2 SKIP')
+    ap.add_argument('--no-gestures', action='store_true', help='skip the gesture check (check 6) in a full run; it prints SKIP and is listed as not checked')
     a = ap.parse_args(argv)
+    if a.gestures:
+        ok, line = check_gestures(a.gestures)
+        print(line if ok is None else ('PASS ' if ok else 'FAIL ') + line)
+        sys.exit(0 if ok else 2 if ok is None else 1)
     if a.cvd:
         html = open(a.cvd, encoding='utf-8').read()
         data, imgs, rgb = {}, {}, None
@@ -491,7 +577,7 @@ def main(argv=None):
         sys.exit(0 if ok is not False else 1)
     if bool(a.page) == bool(a.inputs):
         ap.error('give a page or --inputs DIR')
-    ok, _ = run(a.page, a.inputs, a.cipher_lines, a.expect_owner_account, a.sheet, a.seed, pages_json=a.pages_json)
+    ok, _ = run(a.page, a.inputs, a.cipher_lines, a.expect_owner_account, a.sheet, a.seed, pages_json=a.pages_json, gestures=not a.no_gestures)
     sys.exit(0 if ok else 1)
 
 
