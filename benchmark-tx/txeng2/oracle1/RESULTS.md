@@ -350,3 +350,8 @@ ad3e4dddd49f79e39b048b802006ca6a78f6b0e34b1d3486b7f146930deb0baf  sorter/birago/
 60514db02a24178d2642ef8d005a708bce32af3028e7990dc860fae55356c839  build.sh
 ```
 Openings of eval truth: 0. No read, no truth, no pass opened. Nothing published (the orchestrator publishes for L74).
+
+## Combined page removed (lane incarnation 5, 10 Oct 2026 03:0x UTC by date -u)
+The withheld combined page (sorter/oracle_boxes_sorter.html, its JSON and preflight PNG; FAIL 6.9% as recorded above) is removed from the
+tree in this commit to keep the folder under 30 MB (30 -> 19 MB); it stays in git history (906d366fa and before) with its sha256 above. The
+three per-hand pages are the pages of record for LOCAL-QUEUE L74; the orchestrator publishes each.
