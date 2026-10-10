@@ -13448,6 +13448,84 @@ Requests: hdl.huntington.org 15 (9 CISOSEARCHALL, 4 item info, 2 IIIF 2400 px; a
 be-api.us.archive.org 7 (Larabee, all answered).
 Queued: WORK-QUEUE `AUD2-LEDGER-38` (E378, E381), SO-ECKERT-E378, SO-ECKERT-E381.
 
+## AUDIT 2 (second adversarial, AUD2-LEDGER-38)
+
+Second verifier AUD2-LEDGER-38 (account 4, Opus, for the orchestrator (account-4); row queued by FV-MS18o for LANE LEDGER (account 1), re-tagged from
+account 3), 10 Oct 2026, 02:24-02:5x UTC by `date -u`; a separate session and account from the reader MS18-R7 and the first auditor FV-MS18o (account 1);
+this session had not read or audited E378 or E381 before. Scope: **E378** and **E381** only. Nothing decoded beyond key look-ups. Key source: `period`. No
+spec exists for eckert-1864, so `judge_plaintext.py` was not run. Re-derivation: `python3 ciphers/eckert-1864/decode.py --check` -> "reading.md is current". Image: not
+re-checked (FV-MS18o read both entries line by line at 2400 px). Committed (`ms18/`): `aud2_ledger38_search.py` + `.out` (Google Books 12, IA be-api 14,
+IA advancedsearch 2); `aud2_ledger38_hdl.py` + `aud2_ledger38_hdl.out`, `aud2_ledger38_info.out` (Huntington 8 CISOSEARCHALL, 3 item infos).
+
+### 1. The test FV-MS18o did not run: the holder's own public transcription (D2V-E74 line)
+FV-MS18o searched the holder's full text for duplicates and siblings, but did not compare its own entries' public `transc` fields with the reading -- the
+D2V-E74 test (AUDIT "## AUDIT 2 (second adversarial, D2V-E74)" s.2, E74 lowered to N1; stated as a line in "## AUDIT (LS3-V18b)" s.5: "an entry whose
+body is in clear in the holding archive's public transcription except at most one code word is N1"; applied since to E81, E82, E76, E178, E312, E313,
+O9-CA..CD). Read here (`dmGetItemInfo`, `transc`, fresh, 10 Oct 2026, 02:37 UTC):
+- **9820, third entry (E378)**, as the Huntington publishes it: "John Horner NY Washn Aug 16th 1864 / Libby for Insanity Your peach wrangler recd The the /
+  Princess may be released and aloud to proceed / sending plug on more detect hives along to / observe the cours of trade & what ever / may trans pire
+  walrus Bruno deliver Keiths msg". The whole message -- the Princess may be released and allowed to proceed, sending detectives along to observe the
+  course of trade and whatever may transpire; deliver Keith's message -- is public in clear. The key adds only the hour (Libby = 6 PM), the addressee
+  (Insanity = C. A. Dana), "two telegrams" (peach wrangles), "one" (plug) and the signer (walrus Bruno = Secretary of War). No code word carries the content.
+- **9258, second entry (E381)**: "Somerville Memphis Tenn Wash July 27 1865 / Growl July harrow plunder fanny for palsy Barten ---- / drill Zebra Your action
+  in respect to Ryan / is approved Zodiac Spare no pains to find / and send forward the witness mentioned in your / wrangle unity Give strict orders to the
+  officer / in whose charge he is sent to allow / no plainfield shun by or with him Brutus". The whole message is public in clear; the key adds the place
+  and date words (Growl = Washington, harrow plunder = 27, drill = Memphis), the hour (fanny = 11 AM), the rank (palsy = Brigadier General), three stops,
+  "telegram" (wrangle), "communication" (plainfield, completed by the plain "shun") and the signer (Brutus = Secretary of War). AUD2-LEDGER-33 had already
+  quoted this transcription in clear (its s.1, "Holder siblings" row) before E381 was filed.
+- Both are the E74 / E178 / O9-CA shape, not the E78 / E83 shape: the code words are routing, numbers, a rank, stops and two generic nouns; the sense of each
+  telegram is readable from the holder's page without the key. So the plaintext is already published (on the holder's own site); our reading is an
+  independent re-reading that supplies the header and signer. **Both are lowered N3 -> N1** (text known: the Huntington's public transcription).
+
+### 2. Print families (second pass)
+| Family | FV-MS18o | This pass |
+|---|---|---|
+| Huntington CONTENTdm, new queries | 9 queries ('Princess' family, 'witness Ryan', 'Barton witnesses', 'spare no pains Ryan') | 8 more: 'Princess released' 1 (9820, own); 'Princess detectives' 1 (9820); 'Princess Dana' 1 (9115 = 5 Nov 1864, Dana's descriptions of rebel agents, other); 'Princess proceed' 6 (9712, 5865, 5614, 5870, 5629: 1864 entries using Princess = Captain, other; 9820); 'Keith Dana' 1 (9817, the 11 Aug locomotive detention, already read by AUD2-LEDGER-31); 'Ryan approved' 1 (9258, own); 'Ryan Barton' 1 (7978, Barton's reply, read by FV-MS18o); 'Ryan witness' 1 (9258). Item info: 9820, 9258 (the `transc` of s.1), 9115. **No clear copy or received copy of either telegram; Dana's end of E378 not found** |
+| Google Books (key, country=US) | not run for these entries | 12 queries; positive control "with malice toward none" 345 hits. Exact phrases: "may be released and allowed to proceed" 3 (a 1771 Tobago petition, 1948 underwriters: other); "observe the course of trade" 44 (1748/1814 tracts: other); "send forward the witness" 1 (1866 sermon: other); "detectives along to observe", "action in respect to Ryan", "allow no communication by or with him", "spare no pains to find" witness Ryan, "Keith's message": loose matches only, none Civil War; "schooner Princess" Keith 1864: 2 (1862 British wreck lists: other); Barton Memphis Ryan witness Stanton 1865: 0. **No print of either telegram** |
+| IA full text (be-api, global, exact phrase) | Larabee and OR volumes by id | positive control "with malice toward none" 57,478; "may be released and allowed to proceed", "detectives along to observe", "schooner Princess Keith", "action in respect to Ryan", "send forward the witness mentioned", "allow no communication by or with him": **0 each** |
+| OR ser. III vols 4-5 | 403 / 503 | not searched: `warofrebellion0304rootrich` answers be-api with 0 hits even for the control term 'Stanton' (not indexed), `warofrebellion0305rootrich` does not exist on IA; IA advancedsearch finds only ser. III vols 1-2. Logged as unreachable, not a negative |
+| ORN (E378) | not searched | `officialrecordso0003unse` (ORN ser. II vol. 3, Confederate diplomatic correspondence; the volume the advancedsearch returned for 'volume 3'): 'Princess' 1 (royal princesses), 'Keith' 1 (M. A. Keith, Halifax, as a Confederate forwarding address, other matter). ORN ser. I vol. 3 (cruisers) not identified on IA in this pass |
+| Grant Papers, Butler Correspondence, Lincoln Collected Works | covered for the case by earlier families (E38-E40, E346, E358) | reached only through the Google Books and IA phrase searches above (no hit); not opened by volume: neither telegram is to or from Grant, Butler or Lincoln |
+| Unreachable / not searched | as FV-MS18o s.2 | NARA RG 107 / RG 153 (M599); Katz 1982 full text; New York press 15-20 Aug 1864 page by page; HathiTrust (Cloudflare); JSTOR (no row queued: the class rests on the holder's transcription, which no JSTOR answer can raise) |
+
+### 3. Class (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E378 Secretary of War to C. A. Dana via Horner, New York, 16 Aug 1864 6 PM | **N1** (lowered from N3; text known) | period | **D1** (lowered from D3; H 7 of 7 code groups) | the Huntington's own public transcription of pointer 9820 shows the message in clear but the hour, addressee, "two telegrams", "one" and the signer (D2V-E74 line) |
+| E381 Secretary of War to Bvt. Brig. Gen. E. Barton, Memphis, 27 July 1865 11 AM | **N1** (lowered from N3; text known) | period | **D1** (lowered from D3; H 12 of 12 code groups) | the Huntington's own public transcription of pointer 9258 shows the message in clear but place, date, hour, rank, stops, "telegram", "communication" and the signer (D2V-E74 line) |
+
+- **Depth.** FV-MS18o's D3 rested on header code clauses ("Libby for Insanity Your peach wrangles recd"; "Growl July harrow plunder fanny for palsy Barten
+  drill"). Under the D2V-E74 depth ruling the code clause is read in body words, address, date, time and signature excluded (as for E74, E81, E82,
+  O9-CA..CD: all D1). What is left -- "your two telegrams", "one or more", "your telegram", "no communication" -- is no stretch above the authentication
+  distance and no specific sentence the key alone makes true: **D1** for both. The external checks FV-MS18o found (holder 9046, 9047, 9820/2; 7976, 7978)
+  stand as context. (The depth precedent is mixed: E74, E81, E82, O9-CA..CD are D1; E178 held D2 on a body code word that read in two contexts; two Fort Monroe
+  ledger entries lowered to N1 on the same line kept D3. A third audit may draw the depth line differently; the N1 class does not depend on it.
+  status.json `decode_status` set to "Non-decrypted", the value `tools/depth_check.py` requires for D1.)
+- **Safe sentence, E378:** "Re-read with War Department Cipher No. 1 (seven code words; the message is in clear in the Huntington's public transcription
+  of the ledger): on 16 Aug 1864 at 6 PM the Secretary of War told C. A. Dana, through the New York operator, that the schooner Princess might be released
+  and allowed to proceed with one or more detectives aboard to observe her trade; the key supplies the hour, the addressee and the signer. Plaintext
+  already public (N1); not located in print (searched 10 Oct 2026)."
+- **Safe sentence, E381:** "Re-read with War Department Cipher No. 1 (twelve code words; the message is in clear in the Huntington's public transcription
+  of the ledger): on 27 July 1865 at 11 AM the Secretary of War approved Brig. Gen. E. Barton's action at Memphis in respect to Ryan and told him to find
+  and send forward the witness and allow no communication with him; the key supplies place, date, hour, rank and signer. Plaintext already public (N1);
+  not located in print (searched 10 Oct 2026)."
+- **Unsafe:** "first", "new", "unpublished", "previously unread", "not located anywhere" (the text is on the holder's site); "deciphered" without the
+  qualifier that the body is clear; "D3" (the key reads only routing words); "the Captain may be released" (the schooner); "the witness was X".
+
+### 4. Postmortem and fixes
+- **Failure:** FV-MS18o (and MS18-R7) graded two mostly-clear ledger entries as cryptanalytic N3/D3. The holder's `transc` of both own pages was on disk
+  (`fv_ms18o_info.out` line 4 for 9820; `aud2_ledger33_info.out` line 2 for 9258) and shows each message in clear; the D2V-E74 test was not run. The
+  same shape recurs in this run: **E346** (9820, first entry, AUD2-LEDGER-31 kept N3 D3) is in clear in the same `transc` ("Gordon Bruce & Co or Gordon
+  Bruce & Hanliff are supplying machinery of some description for Alex Ke-ith Jr the walnut agent at Hali-fax ...": one body code word, walnut = rebel)
+  -- out of this row's scope, flagged for a third audit; and every mssEC 18/19 No. 1 entry filed by the R5-R7 readers whose body is plain should get the
+  D2V-E74 test before its class stands (E351-E375 not checked here).
+- **Applied here:** status.json E378 and E381: `grade`, `plaintext_novelty`, `mapping_novelty` N1, `text` known, `audit_status` "two audits",
+  `audit_refs` + this section, `depth` D1, `depth_check`, `depth_sentence`, `gap`, `line` (safe sentences above); SECOND-OPINIONS-QUEUE.tsv
+  SO-ECKERT-E378 and SO-ECKERT-E381 marked withdrawn (N1; queued for N3+ only, CLAUDE.md "Operating model"; rule 10 propagation).
+- **For a FIX job** (reading.md / ciphertext.txt not edited here): ciphertext.txt E378 and E381 headers "not located in print" -> "N1: message clear in the
+  Huntington transcription of 9820/9258 (AUD2-LEDGER-38)"; FV-MS18o s.5 corrections still pending as listed there.
+Requests: hdl.huntington.org 11 (8 CISOSEARCHALL, 3 item info; all 200, at 3.3 s under a ROOM take/release); www.googleapis.com 12; be-api.us.archive.org 16 (14 scripted + 2 control checks); archive.org 5 (3 advancedsearch, 2 metadata).
+
 ## AUDIT (FV-MS18n)
 
 Verifier FV-MS18n (account 1, for LANE LEDGER), 10 Oct 2026, 01:01-01:3x UTC by `date -u`; a separate session from the reader MS18-R7, not protecting its
