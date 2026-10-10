@@ -16875,3 +16875,113 @@ Morgan's 5 Jan telegram" is withdrawn; the FIX job keeps the header's 3 Jan and 
   the "picked up here ... in my possession" telegram are printed in the same notes; any ledger row carrying them is N1 before it is read.
 - Requests: www.googleapis.com 110 (1.6 s apart); archive.org 7 (djvu text 302 then 200, page_numbers.json, page images n27 n28 n32 n33, 2 s apart).
   For LANE LEDGER-13 (account 1) and the orchestrator (owner account).
+
+## AUDIT (FV-L14a)
+
+Verifier FV-L14a (Opus 5.5, account 1, for LANE LEDGER-14), 10 Oct 2026, 10:33-10:5x UTC by `date -u`; a session separate from the reader L14-A
+(and from every other reader), not protecting its conclusions. Scope: **E600 E601 E602 E603 E604** (NOTES "## L14-A"), all filed "not located".
+Cipher No. 1, mssEC 18 (Huntington obj 10074). Key source for all five: `period`. Per the LEDGER-14 RULING, step 0 (L14-A's figures, all HIT) is
+information only and was not used for any class. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Scripts and outputs in
+`ms18/`: `fv_l14a_hdl.py` (+ `.out`), `fv_l14a_print.py` (fetches the two OR texts below and prints the KWIC with running heads),
+`fv_l14a_beapi.py` (+ `.out`, 14 be-api queries incl. two controls), `fv_l14a_gb.out` (6 Google Books API queries, keyed, `country=US`, control
+first), `fv_l14a_voltitles.txt` (title-page check of every cached `warofrebellion*` text).
+
+### 1. Duplicates, prior work, image
+- **Duplicate / prior work:** the five pointers (9877 9826 9777/9778 9823/9824 9865) grepped in ciphertext*.txt, NOTES, AUDIT, status.json: only
+  L14-A's filings and the MS18-R9/R10 held-row lines; 9877 also carries E403 (9877/3, Schermerhorn, a different telegram). No earlier class.
+- **Holder full text** (CONTENTdm CISOSEARCHALL, all pointers, under the hdl token 10:41-10:4x UTC, 3 queries + 7 IIIF leaves, all 200): 'Delaware
+  furlough vote' 0, 'Ricketts Locust Point' 0; L14-A's 17 queries reproduce (each row's own pointer only). The query L14-A labels "control 9678"
+  (Schermerhorn Maxon Amos State agent) returns **9877**, in L14-A's own `.out` too: a working positive control, mislabelled. **No holder clear copy.**
+- **Image eye check this session** (IIIF 2400 px, scratch): 9826 and 9877 whole entries, 9777, 9823 + top of 9824, 9865 whole entry. The holder
+  transcription matches the leaves word for word on the lines checked, except the header points in s.3 (E600 time; the extractor's tail).
+
+### 2. Print -- three of the five are printed
+**Lane-level finding first:** three cached print-check texts are not the volumes their identifiers suggest (`fv_l14a_voltitles.txt`):
+`warofrebellion431unit` is **OR I/47 pt 2** (1865 Carolinas), not I/43 pt 1; `warofrebellion323unit` is OR I/39 pt 3; `warofrebellion422unit` is OR
+I/42 pt 1. **OR I/43 pt 1 (Aug-Sept 1864 Shenandoah correspondence) was therefore not in the 177-volume cache at all**, and every earlier
+"not located" for an Aug-Sept 1864 Augur/Sheridan/Shenandoah row that relies on the cache is unsearched for that volume. Fetched here:
+OR I/43 pt 1 = `warofrebellion014301rootrich`, OR I/39 pt 3 = `warofrebellion393unit` (djvu text, title pages read).
+- **E601 -> in print: OR I/43 pt 1 p.909** (running heads 908 and 910 bracket it): "Hdqrs. Department of Washington, 22d Army Corps, Washington,
+  D. C., August 25, 1864 -- 9 p. m. Major-General Sheridan, Comdg. Middle Military Division, Harper's Ferry: Among the persons brought in by Major
+  Waite is one well known to me as a reliable Union man ... those who join Mosby are exempt from joining Lee's army. By this means Mosby can command
+  between 800 and 1,000 men. To get information from Snicker's Gap would require a force able to manage Mosby ... I trust he will not deceive me.
+  C. C. Augur, Major-General, Commanding." Every clause of the reading is in it. Also reprinted in Williamson, Mosby's Rangers (1896; be-api
+  `mosbysrangersar00willgoog` and Google Books, same words). be-api control: `"those who join Mosby are exempt"` 10 hits (the decoded wording
+  "exempt from conscription" that L14-A queried misses: whole-collection misses are wording-conditional).
+- **E603 -> in print: OR I/43 pt 1 p.843** (heads 843 before, 844 after): "Hdqrs. Department of Washington, 22d Army Corps, Washington, D. C.,
+  August 19, 1864 -- 11.30 a. m. Major-General Sheridan, Commanding Middle Military Division, Charlestown, W. Va.: I have just received your dispatch
+  of 10 p. m. yesterday. The Eighth Illinois Cavalry will all be at Muddy Branch to-day and start immediately on their scout, as you have directed.
+  The river meanwhile will be watched by a provisional battalion of cavalry under Major Fry. Lazelle, with his regiment, is on the upper
+  Rappahannock and will return by the gaps. I get the rumor from a rebel scout that Longstreet in person passed with a large number of troops
+  through Gordonsville last Monday. You probably know by this time if the report be true. I will inform you all that I can learn of what the enemy
+  are doing this side the mountains. C. C. Augur, Major-General, Commanding." Same text, same hour.
+- **E604 msg 1 -> in print: OR I/39 pt 3 pp.251-252**: "Washington, October 13, 1864 -- 12 m. Maj. Gen. G. H. Thomas, Nashville, Tenn.: Two old
+  regiments from General Pope and several new regiments from Ohio and Indiana are on their way to Nashville. Generals Schofield and [p.252]
+  Burbridge are ordered to send you everything that can be spared from Kentucky. Put yourself in communication with them. General Grant directs
+  that you collect your forces and be prepared to meet Hood wherever he may present himself on the Tennessee, and that you take the supplies of the
+  country without compunction. By thus supplying your own army you will leave none for him. H. W. Halleck, Major-General and Chief of Staff."
+  (L14-A's be-api queries on OR I/39 pt 3 missed it: the OCR reads "i)re])are(Lto meet" and "Avithout compunction".) **msg 2** (to J. H. Wilson,
+  the Ordnance Department wants the report on imperfections in Spencer carbines): not in OR I/39 pt 3 (no "Wilson ... carbine" passage); be-api
+  and Google Books phrase queries 0 relevant. Not located.
+- **E600** (27 Oct 1864, to Sampson at Baltimore, furlough [1st Delaware Cavalry] to go home and vote): not located. OR I/43 pt 2 (cached, title
+  page verified) has only the Middle Department's General Orders No. 107 of 2 Nov 1864 ("Pursuant to instructions from the War Department, leaves
+  of absence and furloughs to such officers and men as desire to vote ... free transportation to their homes and return") and the Delaware
+  governor's correspondence with Wallace (p.485): context, not this text. Lincoln CW vol. 8 in-volume be-api 'Delaware cavalry furlough vote' 0;
+  whole-collection be-api 3 queries 0 relevant; Google Books 2 queries: only regimental histories ("furlough to go home to vote", Union Army 1908).
+  Holder 0.
+- **E602** (7 July 1864, to Capt. Thomas, Asst QM at Baltimore: Ricketts's ~8000 men, Locust Point, forward to Harper's Ferry, no ambulances or
+  wagons, Hunter's train, forage at Martinsburg): not located. OR I/37 pt 2 (title page verified) by 6-8 July: Garrett's 7 July telegrams
+  (transportation waiting at Locust Point for Ricketts's troops; "Colonel Thomas has just effected arrangement with the senior officer on
+  transports") and Ingalls to Meigs 6 July (L14-A): context only. OR I/37 pt 1, I/40 pts 2-3: phrase grep 0. be-api 5 queries 0 relevant; Google
+  Books 2 queries 0. Holder 0.
+- **Not searched:** Grant Papers (Grant not a party to E600 E602), the Baltimore/Washington press of the day, Meigs's letterbooks (RG 92,
+  unpublished), OR ser. III vol. 4 by page (E600's furlough policy). Unreachable: none.
+
+### 3. Reading corrections (for a FIX job; not applied here)
+- **E600:** header time **11 AM**, not 11.30 AM: the leaf header reads "Sampson Balt. Wash Oct. 27 1864 11 am", No. 1; the "No 1 11.30 am" at the
+  end of the E600 block in ciphertext.txt is the header of the next entry (9877/2, Glass at Nashville), which the extractor attached to E600's
+  tail (also feeds the decoder's `{time: 11.30 AM}`). 'pontiac' (= Command) is on the leaf. Code tokens H 12, C 1, M 1 ('leghorn' decoded Hurlbut,
+  sense "can be": M, as the reader says).
+- **E601:** sender **C. C. Augur**, Maj. Gen. Commanding Dept. of Washington (print; 'Nicarangua' = his signature, C); addressee Sheridan (C);
+  '[prisoners]' -> **persons** (leaf and print); 'Laughters [Gap]' -> **Snicker's Gap** ('Laughters' is a code word, C by print, not a plain place
+  name); '[Bowling Green]ing' -> **bearing** (C); summary omits "I will do all I can, however" and "I trust he will not deceive me" (on the leaf
+  and in the decode). Time: print 9 p.m.; the reading's 10.30 PM is not visible on the leaf header (M). Header "not located" -> "in print, OR I/43
+  pt 1 p.909".
+- **E603:** addressee 'bobby' = **Sheridan**, Comdg. Middle Military Division, Charlestown (C); signature 'Orgirldrillbore screw cut' = **C. C. Augur,
+  Major-General, Commanding** (C); "Major [Tappan], 'fry' [unread]" -> **Major Fry** ('Tappan' = Major; 'fry' the plain name); '[Sazeel]' ->
+  **Lazelle** (plain name, clerk's spelling); 'in [5]' -> **in person** ('person' plain on leaf 9824); 'this [Gordonsville]' -> through
+  Gordonsville (print); "last Monday last Monday" -> once (leaf 9824 has it once); 'tankards' = **mountains** (C). Leaf "Muddy Branch whf", print
+  "Muddy Branch to-day": keep the leaf, note the print. Header -> "in print, OR I/43 pt 1 p.843".
+- **E604:** 'Kent' is the code word for **Burbridge** (print "Generals Schofield and Burbridge"), not the clerk's "Kentucky"; "[we] will leave none"
+  -> **you** will leave none; signer **H. W. Halleck, Major-General and Chief of Staff** (not General-in-Chief). msg 2 stands (not located).
+  Header -> "msg 1 in print, OR I/39 pt 3 pp.251-252".
+- **E602:** 'Locust' is plain on the leaf ("optic Locust Pt Depot"; the decoder's [Banks] is a key-row misfire, as the reader says); 'Hunters'
+  plain (decoder [Lee] misfire); the "10 AM" in the header is not on the leaf header (M). Code tokens after the misfires: H 23, M 3 (Lee, Banks,
+  Monroe for animals).
+
+### 4. Classes (rule 10) and depth (rule 4a, depth bar of 8 Oct 2026)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E600 | **N3** | period | **D2** (H 12 + C 1 + M 1, 93%; code clause: Whig = Transportation and Pekin = comma read in E532 and passim; context only -- GO No. 107, Middle Dept., 2 Nov 1864, OR I/43 pt 2 -- not a check of this telegram's own words) | no prior plaintext or decipherment located after the search in s.2 |
+| E601 | **N1** | period | **D3** (H 60 code tokens, the print agrees clause by clause; external non-statistical: OR I/43 pt 1 p.909; no fresh rule-7 re-derivation, so not D4) | plaintext printed OR I/43 pt 1 p.909 (1893) and Williamson, Mosby's Rangers (1896); our reading an independent re-decipherment |
+| E602 | **N3** | period | **D2** (H 23 + M 3, 88%; code clause: Whig = Transportation, Shelby/Shelter = General read passim; context only -- Garrett's 7 July telegrams, OR I/37 pt 2) | no prior plaintext or decipherment located after the search in s.2 |
+| E603 | **N1** | period | **D3** (H 24, print agrees on every clause and the hour; OR I/43 pt 1 p.843) | plaintext printed OR I/43 pt 1 p.843 (1893); independent re-decipherment |
+| E604 | **N1** (msg 1); msg 2 N3 D1 | period | **D3** for msg 1 (print OR I/39 pt 3 pp.251-252 agrees); msg 2 D1 (its clause is plain words; code only 'wick', 'Madison', the names) | msg 1 printed (1892); msg 2 no prior plaintext located |
+
+Depth sentences (own, from the reading): E600 -- on 27 Oct 1864 the War Department told Baltimore to give the [1st Delaware Cavalry] in the
+command furloughs, with transportation both ways, to go home and vote, if the service allowed. E602 -- on 7 July 1864 Washington told Capt. Thomas
+at Baltimore that Ricketts's division, about 8000 men without ambulances or wagons, would arrive by steamer, to be landed at Locust Point and
+forwarded to Harper's Ferry. All five are transcription-conditional only on the lines not eyed (E602's 9778 continuation; the rest of 9824).
+Safe sentences: E600, E602 -- "read with the period Cipher No. 1 key; no prior plaintext or decipherment located after the search logged in AUDIT.md
+(FV-L14a)". Unsafe: "first", "previously unread" (needs N4). E601, E603, E604 msg 1 -- "printed in OR; our reading re-deciphers it"; unsafe: "not
+located in print" (as filed).
+
+### 5. Postmortem and follow-ups
+- Failure: three of five "not located" were printed. Causes: (i) OR I/43 pt 1 missing from the cache under a mislabelled identifier
+  (`431unit` = I/47 pt 2); (ii) letters-only phrase grep defeated by OCR in I/39 pt 3; (iii) whole-collection be-api queried with the decoded wording
+  rather than a period-plausible variant. Fix for every later Aug-Sept 1864 mssEC 18 "not located": grep `warofrebellion014301rootrich` before filing;
+  a title-page check before trusting any cached identifier.
+- Files that over-claim: ciphertext.txt / reading.md headers of E601 E603 E604 ("not located in print"); NOTES "## L14-A" table rows for 9826/0,
+  9823/3, 9865/1. Corrections above (s.3) for FIX-L14.
+- No status.json / SO rows written (no reading at N3+ D2+ is outward-facing yet; E600 and E602 are N3 D2: AUD2-LEDGER14-1 queued below).
+- Requests: hdl.huntington.org 10 (one take, 3.3 s apart); archive.org 3 (advancedsearch 2, djvu 2) + be-api 14 (1.9 s apart); www.googleapis.com 6.
