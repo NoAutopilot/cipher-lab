@@ -9,7 +9,10 @@ Builds the whole private preview site into a temp dir from the repository's own 
   - each display page links to at least one item page ("See the evidence");
   - no leading-slash path, no remote script, and no rule-10 phrase in any page the site writes itself (the front door, displays,
     browse pages, sitemap); phrases inside an item page's quoted audit log are reported by the builder, not failed here;
-  - an --out or --preview under docs/ is refused.
+  - an --out or --preview under docs/ is refused;
+  - (SITE-ITEMS-1) every item page carries the four sections in the display's order (What it says, The reading, Who where when,
+    How we know) inside an <article data-interest=...>; a "Context" slot appears only where data-interest is 2 or 3; the
+    English-pending marker count and the people-index size are reported; every people/ page is reachable from people/index.html.
 Must catch: a broken relative link after a path change; a page missing the shell. Must NOT block: external https links, data: URIs,
 mailto, and in-page anchors. Run: python3 tools/tests/test_build_site.py
 """
@@ -21,7 +24,8 @@ import tempfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SCRIPT = os.path.join(ROOT, "research", "mockups", "site", "build_site.py")
-NAV = ["Exhibit", "All readings", "By century", "By archive", "By language", "How to read", "Credits"]
+NAV = ["Exhibit", "All readings", "By century", "By archive", "By language", "How to read", "People", "Credits"]
+SECTIONS = ["what-it-says", "reading", "who", "how"]
 LINK = re.compile(r'(?:href|src)="([^"]+)"')
 IDS = re.compile(r'\bid="([^"]+)"')
 
@@ -81,6 +85,27 @@ def main():
                     fail(f"{p}: no prev/next")
             if p.startswith("exhibit/") and "See the evidence" not in txt:
                 fail(f"{p}: no 'See the evidence' links")
+        pend_en, tiers = 0, {}
+        for p in pages:
+            if not p.startswith("items/"):
+                continue
+            txt = open(os.path.join(out, p), encoding="utf-8").read()
+            m = re.search(r'<article data-interest="([^"]+)"', txt)
+            if not m:
+                fail(f"{p}: no <article data-interest>")
+            tiers[m.group(1)] = tiers.get(m.group(1), 0) + 1
+            pos = [txt.find(f'<section class="part" id="{s_}">') for s_ in SECTIONS]
+            if min(pos) < 0 or pos != sorted(pos):
+                fail(f"{p}: the four sections are missing or out of order: {dict(zip(SECTIONS, pos))}")
+            has_ctx = 'id="context"' in txt
+            if has_ctx != (m.group(1) in ("2", "3")):
+                fail(f"{p}: Context slot {'present' if has_ctx else 'absent'} at interest {m.group(1)}")
+            pend_en += txt.count('data-pending="english"')
+        people = [p for p in pages if p.startswith("people/") and p != "people/index.html"]
+        pidx = open(os.path.join(out, "people", "index.html"), encoding="utf-8").read()
+        for p in people:
+            if f'href="{os.path.basename(p)}"' not in pidx:
+                fail(f"people/index.html does not list {p}")
         backs = sum("Back to the display" in open(os.path.join(out, p), encoding="utf-8").read() for p in pages if p.startswith("items/"))
         if backs < 3:
             fail(f"only {backs} item pages carry 'Back to the display'")
@@ -104,6 +129,8 @@ def main():
                 fail(f"docs/ not refused for {bad}")
         print(f"ok: {len(pages)} pages, {checked} internal links checked, 0 broken; {backs} item pages link back to a display; "
               f"docs/ refused; {len(pending)} portrait files pending (placeholders)")
+        print(f"ok: item pages carry the four sections; English pending on {pend_en} item pages; people index {len(people)} pages; "
+              "interest tiers " + ", ".join(f"{k}: {v}" for k, v in sorted(tiers.items())))
 
 
 if __name__ == "__main__":

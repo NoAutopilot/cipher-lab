@@ -90,7 +90,7 @@ f.forEach(function(s){s.addEventListener('change',go)});if(q)q.addEventListener(
 
 NAV = [("index.html", "Exhibit"), ("all-readings.html", "All readings"), ("browse/century.html", "By century"),
        ("browse/archive.html", "By archive"), ("browse/language.html", "By language"), ("how-to-read.html", "How to read"),
-       ("credits.html", "Credits")]
+       ("people/index.html", "People"), ("credits.html", "Credits")]
 
 
 def top_bar(prefix, current):
@@ -111,7 +111,7 @@ def footer(date, prefix):
 
 def shell(title, body, prefix, current, trail, date, desc="", exhibit=False):
     """The one wrapper every page uses. Catalogue CSS first, exhibit CSS after (exhibit pages only), site CSS last."""
-    css = C.CSS + C.CSS_V2 + ((B.CSS + X.CSS2) if exhibit else "") + SITE_CSS
+    css = C.CSS + C.CSS_V2 + ((B.CSS + X.CSS2) if exhibit else "") + SITE_CSS + ITEM_CSS
     js = f"<script>{B.JS}</script>" if exhibit else ""
     return ('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<title>{E(title)}</title>' + (f'<meta name="description" content="{E(desc)}">' if desc else "")
@@ -280,7 +280,7 @@ def write_site(out, date):
     dmap = display_map(items)
     item_display = {it["file"]: d for d in X.DISPLAYS for it in dmap.get(d["slug"], [])}
     quotes = selection_lines()
-    for sub in ("exhibit", "items", "browse"):
+    for sub in ("exhibit", "items", "browse", "people"):
         os.makedirs(os.path.join(out, sub), exist_ok=True)
     copy_assets(out)
     pages = []
@@ -303,11 +303,18 @@ def write_site(out, date):
         body = display_section(d, lambda p: "../assets/exhibit-" + p, "../assets/portraits/", ev)
         w(f"exhibit/{d['slug']}.html", shell(d["short"] + " cipher display", body, "../", "Exhibit",
                                              [("Exhibit", "index.html"), (d["short"], "")], date, d["headline"], exhibit=True))
-    # items
+    # items (SITE-ITEMS-1: one data-driven template)
+    main_of = {dmap[d["slug"]][0]["file"]: d for d in X.DISPLAYS if dmap.get(d["slug"])}
+    people, stats = {}, {"pending_en": 0, "tiers": {}}
     for i, it in enumerate(items):
         sc = C.showcase_for(it)
-        body = C.item_body_v2(it, sc, "../how-to-read.html") if sc else C.item_body(it, "../how-to-read.html", "../credits.html")
-        body = body.replace('src="../img/', 'src="../assets/cat-img/')
+        dsp = main_of.get(it["file"])
+        body, pend, names, sel = item_page(it, sc, dsp, "../", lambda n: "../people/" + person_slug(n) + ".html")
+        stats["pending_en"] += pend
+        tier = str(sel["score"]) if sel and sel["score"] is not None else "unscored"
+        stats["tiers"][tier] = stats["tiers"].get(tier, 0) + 1
+        for n in names:
+            people.setdefault(person_slug(n), (n, []))[1].append(it)
         prev_, next_ = (items[i - 1] if i else None), (items[i + 1] if i + 1 < len(items) else None)
         pager = ('<div class="pager">'
                  + (f'<a rel="prev" href="{prev_["file"]}">&larr; {E(C.ten_words(prev_["title"], 8))}</a>' if prev_ else "<span></span>")
@@ -318,7 +325,14 @@ def write_site(out, date):
         back = (f'<p class="backlink">This reading is shown in the exhibit: <a href="../exhibit/{d["slug"]}.html">Back to the display '
                 f'&ldquo;{E(d["short"])}&rdquo;</a></p>') if d else ""
         w("items/" + it["file"], shell(it["title"][:80], back + pager + body + pager, "../", "All readings",
-                                       [("All readings", "all-readings.html"), (C.ten_words(it["title"], 8), "")], date))
+                                       [("All readings", "all-readings.html"), (C.ten_words(it["title"], 8), "")], date,
+                                       exhibit=bool(dsp)))
+    # people and places named in the readings
+    ppages, pidx = people_pages({n: its for n, its in people.values()}, lambda it: "../items/" + it["file"])
+    for slug, (n, body) in ppages.items():
+        w(f"people/{slug}.html", shell(n, body, "../", "People", [("People and places", "people/index.html"), (n, "")], date))
+    w("people/index.html", shell("People and places", pidx, "../", "People", [("People and places", "")], date))
+    stats["people"] = len(ppages)
     # browse
     for kind, label in (("century", "By century"), ("archive", "By archive"), ("language", "By language")):
         w(f"browse/{kind}.html", shell(label, browse_page(items, kind, quotes, lambda it: "../items/" + it["file"]), "../", label,
@@ -335,15 +349,443 @@ def write_site(out, date):
     groups = [("Exhibit", [p for p in pages if p == "index.html" or p.startswith("exhibit/")]),
               ("Catalogue", [p for p in pages if p in ("all-readings.html", "attention.html") or p.startswith("browse/")]),
               ("Reference", [p for p in pages if p in ("how-to-read.html", "credits.html", "sitemap.html")]),
-              ("Item pages (catalogue order)", [p for p in pages if p.startswith("items/")])]
+              ("Item pages (catalogue order)", [p for p in pages if p.startswith("items/")]),
+              ("People and places", [p for p in pages if p.startswith("people/")])]
     titles = {"items/" + it["file"]: it["title"] for it in items}
     titles.update({f"exhibit/{d['slug']}.html": d["short"] + " (display)" for d in X.DISPLAYS})
+    titles.update({f"people/{slug}.html": n for slug, (n, _b) in ppages.items()})
     sm = [f"<h1>Sitemap</h1><p class=\"small\">{len(pages)} pages.</p>"]
     for g, ps in groups:
         sm.append(f"<h2>{E(g)} ({len(ps)})</h2><ul>" + "".join(f'<li><a href="{p}">{E(titles.get(p, p))}</a></li>' for p in ps) + "</ul>")
     pages.pop()
     w("sitemap.html", shell("Sitemap", "".join(sm), "", "", [("Sitemap", "")], date))
-    return items, dmap, pages
+    return items, dmap, pages, stats
+
+
+# ------------------------------------------------------------------ item pages (SITE-ITEMS-1, 10 Oct 2026)
+# Every item page has the displays' structure from data already on disk, with only as much story as the audited reading supports:
+# (1) What it says, (2) The reading in layers, (3) Who, where, when + names linked to people/<slug>.html, (4) How we know;
+# (5) the interest tier is a data attribute only (score >= 2 adds an empty "Context" slot for SITE-ITEMS-3, nothing else changes).
+
+ENGLISH_TSV = os.path.join(HERE, "data", "english_lines.tsv")  # written by SITE-ITEMS-2: item, line id, original, english, grades, date
+PENDING_EN = "English line: pending (SITE-ITEMS-2)"
+ECKERT_READINGS = ("reading.md", "reading-no2.md", "reading-no9.md")
+BLOCK = re.compile(r"^\*\*([A-Z0-9][A-Z0-9-]*) \| Page [^\n]*\*\*\n\n(.+?)\n\n(Code-word tokens:[^\n]*)", re.M | re.S)
+TITLES = {"genl", "gen", "general", "maj", "major", "col", "colonel", "capt", "captain", "lt", "lieut", "brig", "adm", "admiral", "mr",
+          "dr", "supt", "sec", "secy", "hon", "genl", "commander", "count", "duke", "prince", "king", "queen", "milord", "lord", "monsieur", "madame"}
+NOT_NAMES = {"january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november",
+             "december", "abandon", "capture", "entrench", "equip", "equipage", "fort", "gunboat", "illegible", "rail", "road",
+             "reconnoissance", "repulsed", "siege", "transport", "sic", "inland", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday", "jan", "feb", "mar", "apr",
+             "jun", "jul", "aug", "sep", "sept", "oct", "nov", "dec", "null", "clear", "the", "and", "les", "der", "die", "das", "und"}
+OFFICES = {"adjt", "president", "secretary", "master", "qr", "treasury", "chief", "in", "of", "the", "war", "navy", "state"}
+_cache = {}
+
+
+def common_words():
+    """Lower-case words seen at least twice in the English judge corpora (en, en18, en_vdrop) or once in lower case in the Eckert
+    readings (the clerks' plain words, which carry the military vocabulary the novels lack): a decoded value made only of these is
+    not listed as a name."""
+    if "common" not in _cache:
+        cnt = {}
+        for sub in ("en", "en18", "en_vdrop"):
+            for dp, _, fs in os.walk(os.path.join(ROOT, "tools", "data", sub)):
+                for f in sorted(fs):
+                    if f.endswith(".txt"):
+                        for w in re.findall(r"\b[a-z]{2,}\b", open(os.path.join(dp, f), encoding="utf-8", errors="ignore").read()):
+                            cnt[w] = cnt.get(w, 0) + 1
+        words = {w for w, n in cnt.items() if n >= 2}
+        for f in ECKERT_READINGS:
+            p = os.path.join(ROOT, "ciphers", "eckert-1864", f)
+            if os.path.exists(p):
+                words |= set(re.findall(r"\b[a-z]{3,}\b", open(p, encoding="utf-8").read()))
+        _cache["common"] = words
+    return _cache["common"]
+
+
+def name_like(v):
+    """True for a decoded value that reads as a proper name (person or place). Conservative: a name that is also an ordinary English
+    word (Grant, Butler, Post) is missed rather than a common word being listed; a rank before a capitalised word counts as a name."""
+    v = re.sub(r"[\[\]?#()*]", "", v or "").strip(" .,;:")
+    ws = re.findall(r"[A-Za-zÀ-ÿ]+", v)
+    if not ws or not ws[0][0].isupper() or len(v) < 3 or len(v) > 40:
+        return False
+    low = [w.lower() for w in ws]
+    if all(w in NOT_NAMES or w in TITLES or w in OFFICES or len(w) == 1 for w in low) or "illegible" in low or "sic" in low:
+        return False
+    for i, w in enumerate(low):
+        if w in TITLES and i + 1 < len(ws) and ws[i + 1][0].isupper():
+            return True
+    com = common_words()
+    return any(len(w) >= 3 and w not in com and w not in TITLES and w not in OFFICES and w not in NOT_NAMES
+               and ws[i][0].isupper()
+               for i, w in enumerate(low))
+
+
+def eckert_blocks():
+    """{entry id: (derived text, grade-count line, reading file)} from the decode scripts' derived blocks."""
+    if "eckert" not in _cache:
+        out = {}
+        for f in ECKERT_READINGS:
+            p = os.path.join(ROOT, "ciphers", "eckert-1864", f)
+            if os.path.exists(p):
+                for m in BLOCK.finditer(open(p, encoding="utf-8").read()):
+                    out.setdefault(m.group(1), (m.group(2).strip(), m.group(3).strip(), f))
+        _cache["eckert"] = out
+    return _cache["eckert"]
+
+
+def eckert_entry(it):
+    r = it["row"]
+    blocks = eckert_blocks()
+    for hay in (r.get("document_id") or "", r.get("title") or "", r.get("line") or ""):
+        for tok in re.findall(r"\b[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)*\b", hay):
+            if tok in blocks:
+                return tok
+    return ""
+
+
+def ids_of(title):
+    t = title.replace(" ", "")
+    ids = set(re.findall(r"\d{2,}", title))
+    ids |= {x.lower().replace(".", "") for x in re.findall(r"\b[fc]\.?\d+[rv]?", t)}
+    return ids
+
+
+def tokens_file(it):
+    """The folder's token table for this item: the only one, or the one whose name carries the item's number or folio."""
+    d = os.path.join(ROOT, "ciphers", it["folder"])
+    fs = sorted(f for f in os.listdir(d) if re.match(r"reading.*tokens.*\.tsv$", f)) if os.path.isdir(d) else []
+    if not fs:
+        return ""
+    ids = ids_of(it["title"] + " " + (it["row"].get("document_id") or ""))
+    hit = [f for f in fs if any(re.search(rf"(?<![0-9a-z]){re.escape(i)}(?![0-9])", f.lower()) for i in ids)]
+    if len(hit) == 1:
+        return hit[0]
+    if len(hit) > 1:  # prefer the fullest version of the same piece
+        full = [f for f in hit if "full" in f] or hit
+        return full[0]
+    rd = os.path.basename(it.get("reading") or "")
+    sib = rd.rsplit(".", 1)[0] + "_tokens.tsv" if rd else ""
+    if sib in fs:
+        return sib
+    return fs[0] if len(fs) == 1 or "reading_tokens.tsv" not in fs else "reading_tokens.tsv"
+
+
+def token_rows(it, path):
+    """[(line id, sign, value, grade)] from a token table, header-driven; rows narrowed to the item's folio or frame when its lines
+    carry one."""
+    rows = [ln.rstrip("\n").split("\t") for ln in open(path, encoding="utf-8") if ln.strip() and not ln.startswith("#")]
+    if not rows:
+        return []
+    h = [c.strip().lower() for c in rows[0]]
+    pick = lambda *names: next((h.index(n) for n in names if n in h), None)
+    li, si, vi, gi = pick("line", "record", "folio", "page"), pick("sign", "code", "token", "group"), pick("value", "letter"), pick("grade")
+    if None in (si, vi, gi):
+        return []
+    out = []
+    for r in rows[1:]:
+        if len(r) <= max(si, vi, gi):
+            continue
+        ln = r[li] if li is not None else ""
+        if li is not None and h[li] in ("folio", "page") and "line" in h and len(r) > h.index("line"):
+            ln = r[li] + "_" + r[h.index("line")]
+        out.append((ln, r[si], r[vi], r[gi]))
+    ids = {i for i in ids_of(it["title"]) if not re.fullmatch(r"1[0-9]{3}", i)}  # years are shared by siblings
+    narrowed = [x for x in out if any(i in x[0].lower().replace(".", "") for i in ids)]
+    return narrowed or out
+
+
+def english_lines():
+    if "en" not in _cache:
+        out = {}
+        if os.path.exists(ENGLISH_TSV):
+            for ln in open(ENGLISH_TSV, encoding="utf-8"):
+                c = ln.rstrip("\n").split("\t")
+                if len(c) >= 4 and c[0] != "item" and not c[0].startswith("#"):
+                    out.setdefault(c[0], []).append((c[1], c[2], c[3]))
+        _cache["en"] = out
+    return _cache["en"]
+
+
+def selection_rows():
+    """SELECTION.md rows: (quote, ids from the item cell, score, thin, family row?)."""
+    if "sel" not in _cache:
+        rows = []
+        p = os.path.join(EXHIBIT_DIR, "SELECTION.md")
+        for line in open(p, encoding="utf-8") if os.path.exists(p) else []:
+            c = [x.strip() for x in line.strip().strip("|").split("|")]
+            if len(c) >= 11 and c[0].isdigit():
+                q = re.search(r'"([^"]{20,})"', c[6])
+                sc = re.search(r"[0-3]", c[9])
+                fam = "family" in c[1].lower() or "about" in c[1].lower() and "telegrams" in c[1].lower()
+                ids = set(re.findall(r"\b(?:E\d+|WVO \d+|BLA \d+|frame \d{4}|f\.\s?\d+[rv]?|no\.\s?\d+)\b", c[1].replace("*", "")))
+                ids |= {f"WVO {n}" for n in re.findall(r"\b(\d{4})\b", c[1]) if c[1].startswith("Lodewijk")}
+                rows.append({"quote": q.group(1) if q else "", "ids": ids, "score": int(sc.group()) if sc else None,
+                             "thin": len(c) > 10 and "thin" in c[-1], "family": fam, "item": c[1].replace("*", "")})
+        _cache["sel"] = rows
+    return _cache["sel"]
+
+
+def selection_for(it):
+    """The SELECTION.md row for this item: by its quoted sentence inside the depth sentence, else by an identifier in its item cell;
+    Eckert telegrams in the scored pool that no row names get the family row (row 11's own scope). None outside the pool."""
+    norm = lambda s: re.sub(r"\W+", " ", s or "").lower().strip()
+    g = norm(it["gist"])
+    rows = selection_rows()
+    for r in rows:
+        head = norm(r["quote"].split("...")[0])[:60]
+        if not r["family"] and len(head) > 25 and head in g:
+            return r
+    hay = it["title"] + " " + (it["row"].get("document_id") or "")
+    for r in rows:
+        if not r["family"] and any(re.search(rf"(?<![\w.]){re.escape(i)}(?!\d)", hay) for i in r["ids"]):
+            return r
+    d = re.match(r"\s*D([0-4])", str(it["row"].get("depth") or ""))
+    if it["folder"] == "eckert-1864" and (it["n"] or 0) >= 3 and d and int(d.group(1)) >= 2:
+        return next((r for r in rows if r["family"]), None)
+    return None
+
+
+def what_it_says(it, sel):
+    if sel and sel["quote"] and not sel["family"]:
+        return sel["quote"], "quoted in the exhibit's selection notes from the verifier's depth sentence"
+    if it["gist"]:
+        return it["gist"], "the verifier's depth sentence (an English paraphrase of the read passage)"
+    n = f"N{it['n']}" if it["n"] is not None else "an unrecorded class"
+    kind = dict((k, h) for k, h, _ in C.CLASSES).get(it["cls"], "reading").lower()
+    return f"A {kind} read at grade {n}; the reading is below the content bar.", "no depth sentence on file"
+
+
+def reading_section(it, sc, dsp, pfx):
+    """Three layers where a crop and an English line exist; otherwise the graded original and an English slot marked pending."""
+    out, pend = [], 0
+    if dsp:  # the display's own lines: crop, graded original, English
+        fix = [(pfx + "assets/exhibit-" + s, t, a, b) for s, t, a, b in dsp["lines"]]
+        out.append(B.legend() + X.lines_html(fix, dsp["lang"])
+                   + f'<p class="small">The same lines, with the story around them: <a href="{pfx}exhibit/{dsp["slug"]}.html">the display</a>.</p>')
+        return "".join(out), 0
+    if sc:
+        for imgs, toks, cap, eng in sc["crops"]:
+            en = (f'<p class="en"><span class="k">English (translation, interpretation)</span>{E(eng)}</p>' if eng else
+                  '<p class="en none">Reads as letters with gaps: no English is given for this line.</p>')
+            out.append('<figure class="cipher">' + "".join(f'<img alt="{E(cap)}" src="{pfx}assets/cat-img/{E(x)}">' for x in imgs)
+                       + '<p class="k layer">As read, sign by sign, with grades</p>' + C.token_strip(toks()) + en
+                       + f'<figcaption>{E(cap)} &middot; our crop &middot; {E(C.LICENCE)}</figcaption></figure>')
+        return "".join(out), 0
+    en = english_lines().get(it["file"][:-5], [])
+    entry = eckert_entry(it) if it["folder"] == "eckert-1864" else ""
+    if entry:
+        text, counts, rf = eckert_blocks()[entry]
+        body = E(text)
+        body = re.sub(r"\[([^\]]+)\]", r'<mark class="cw" title="code word, decoded from the cipher book">\1</mark>', body)
+        body = re.sub(r"\{(\w+): ([^}]+)\}", r'<span class="small">[\1: \2]</span>', body)
+        out.append(f'<p class="k layer">As read, entry {E(entry)} (English; <mark class="cw">highlighted</mark> words are code words '
+                   f'decoded from the period cipher book, plain words are what the clerk wrote)</p><p class="orig">{body}</p>'
+                   f'<p class="small">{E(counts)} {E(C.GRADE_KEY)} Regenerated by <a href="{C.REPO_BLOB}ciphers/eckert-1864/{E(rf)}">'
+                   f'{E(rf)}</a>.</p>')
+    else:
+        tf = tokens_file(it)
+        rows = token_rows(it, os.path.join(ROOT, "ciphers", it["folder"], tf)) if tf else []
+        if rows:
+            lines = list(dict.fromkeys(r[0] for r in rows))
+            shown = lines[:8]
+            out.append(f'<p class="k layer">{E(it["lang"] or "Original language")} as read, sign by sign, with grades '
+                       f'({len(shown)} of {len(lines)} lines; the whole table is <a href="{C.REPO_BLOB}ciphers/{E(it["folder"])}/{E(tf)}">'
+                       f'{E(tf)}</a>)</p>')
+            for ln in shown:
+                toks = [(s, "(null)" if v.upper() == "NULL" else ("" if v == "?" else v), g) for l_, s, v, g in rows if l_ == ln][:80]
+                out.append(f'<div class="rline"><span class="small">line {E(ln)}</span>{C.token_strip(toks)}</div>')
+        else:
+            link = (f' The reading is in the repository: {C.link_or_text(it["reading"])}.' if it["reading"] else "")
+            out.append(f'<p class="small" data-pending="original">Graded original: no per-sign table on file for this item.{link}</p>')
+    out.append('<p class="small" data-pending="crop">Cipher crop: not cut for this page (crops are cut from the folder\'s own images '
+               'when an English line is written).</p>')
+    if en:
+        out.append("".join(f'<p class="en"><span class="k">English (translation, interpretation), line {E(lid)}</span>{E(eng)}</p>'
+                           for lid, _o, eng in en))
+    else:
+        out.append(f'<p class="en none" data-pending="english">{PENDING_EN}</p>')
+        pend = 1
+    return "".join(out), pend
+
+
+def names_of(it, sc, dsp):
+    """Names of persons and places as the reading itself decodes them (code words, nomenclature values), de-duplicated."""
+    vals = []
+    if dsp:
+        vals += [v for line in dsp["lines"] for v, g, _s in line[1] if g not in ("clear",)]
+    elif sc:
+        vals += [p for p, _w, _c in sc["people"]]
+    elif it["folder"] == "eckert-1864":
+        e = eckert_entry(it)
+        if e:
+            vals += re.findall(r"\[([^\]]+)\]", eckert_blocks()[e][0])
+    else:
+        tf = tokens_file(it)
+        if tf:
+            vals += [v for _l, _s, v, g in token_rows(it, os.path.join(ROOT, "ciphers", it["folder"], tf)) if g in "HCSM"]
+    out = []
+    for v in vals:
+        v = re.sub(r"\s*\((?:-ed|-ing)[^)]*\)|\[[#?]\]|[\[\]?]", "", v).strip(" .,;:")
+        if (sc and not dsp) or name_like(v):
+            if v and v not in out:
+                out.append(v)
+    return out[:24]
+
+
+def portraits():
+    if "por" not in _cache:
+        rows = []
+        p = os.path.join(EXHIBIT_DIR, "portraits", "manifest.tsv")
+        if os.path.exists(p):
+            lines = open(p, encoding="utf-8").read().splitlines()
+            h = lines[0].split("\t")
+            for ln in lines[1:]:
+                c = dict(zip(h, ln.split("\t")))
+                if c.get("person") and c.get("file"):
+                    rows.append(c)
+        _cache["por"] = rows
+    return _cache["por"]
+
+
+def portrait_for(name):
+    """A manifest row whose person's surname (last word) is a word of the name; None otherwise (a placeholder shows)."""
+    ws = set(re.findall(r"[A-Za-z]{3,}", name or ""))
+    for c in portraits():
+        sur = re.findall(r"[A-Za-z]{3,}", re.sub(r",.*|\(.*", "", c["person"]))
+        if sur and sur[-1] in ws:
+            return c
+    return None
+
+
+def person_slug(n):
+    return C.slugify(n, 50) or "x"
+
+
+def who_of(it):
+    """(from, to, place, date) as the item's title states them: the catalogue's own parser, retried on the part after a heading
+    colon with parentheticals dropped ("Eckert 1864 (Fort Monroe ledger): Ingalls (City Point) to Webster, 27 Aug 1864")."""
+    got = C.parties(it)
+    if got[0] and got[1]:
+        return got
+    t = it["title"]
+    for part in ([t.split(": ", 1)[1]] if ": " in t else []) + [t]:
+        part = re.sub(r"\s*\([^)]*\)", "", part)
+        alt = C.parties({"title": part})
+        if alt[0] and alt[1] and len(alt[0]) < 80 and len(alt[1]) < 120:
+            return alt
+    return got
+
+
+def place_ok(p):
+    """A place as the title gives it: capitalised words (particles allowed), not a role or a description."""
+    ws = (p or "").replace(",", " ").split()
+    return bool(ws) and all(w[0].isupper() or w in ("de", "la", "le", "van", "am", "an", "der", "di", "du", "sur") for w in ws)
+
+
+def badge_block(it, pfx):
+    n, r, fold = it["n"], it["row"], it["folder"]
+    st = it["audit_status"] or ""
+    two = "yes" if st in ("two audits", "three audits") else ("no, one audit" if st == "one audit" else "not recorded")
+    b = [f'<a class="badge" href="{pfx}how-to-read.html#n-class">N{n} {E(C.NSHORT[n])}</a>' if n is not None else "",
+         f'<a class="badge" href="{pfx}how-to-read.html#depth">{E(it["depth"])}</a>' if it["depth"] else "",
+         f'<a class="badge" href="{pfx}how-to-read.html#key">{E(it["key"])}</a>' if it["key"] else "",
+         f'<span class="badge">two audits: {two}</span>']
+    claim = (f'<blockquote class="claim">{C.md(it["safe"])}</blockquote><p class="small">The verifier\'s safe sentence, quoted from '
+             'AUDIT.md.</p>' if it["safe"] else
+             f'<blockquote class="claim">{C.md(it["register"])}</blockquote><p class="small">From the results register; no safe sentence '
+             'in AUDIT.md matched this entry, so read the audit before quoting it.</p>')
+    ct, keys = C.files_of(fold)
+    script = ("decode.py" if it["script"].startswith("decode.py") else "decode.json" if it["script"] else "")
+    links = [f'<a href="{C.REPO_BLOB}ciphers/{E(fold)}/AUDIT.md">AUDIT.md</a>',
+             f'decode script <a href="{C.REPO_BLOB}ciphers/{E(fold)}/{script}">{script}</a>' if script else "decode script: none recorded",
+             "key " + ", ".join(f'<a href="{C.REPO_BLOB}ciphers/{E(fold)}/{E(k)}">{E(k)}</a>' for k in keys) if keys else "key file: none in folder",
+             f'image source {C.link_or_text(it["image"])}' if it["image"] else "image source: see the folder's NOTES.md",
+             f'<a href="{C.REPO_TREE}ciphers/{E(fold)}">folder</a>']
+    searched, unreach = C.search_log(fold, 30)
+    cl = C.control_lines(r)
+    cmd = (f"python3 ciphers/{fold}/decode.py --check" if script == "decode.py" else
+           f"python3 tools/decode_key.py ciphers/{fold} --check" if script else "")
+    return ("".join(claim) + '<p class="badges">' + "".join(b) + "</p>" + C.grade_bar(r)
+            + '<ul class="links"><li>' + " &middot; ".join(links) + "</li>"
+            + (f"<li>Regenerate: <code>{E(cmd)}</code></li>" if cmd else "")
+            + (f"<li>Control: {C.md(cl[0])}</li>" if cl else "") + "</ul>"
+            + C.det(f"Search log from AUDIT.md ({len(searched)} search lines, {len(unreach)} on blocked or unreachable hosts)",
+                    "<ul>" + "".join(f"<li>{C.md(s)}</li>" for s in searched) + "</ul>"
+                    + ("<p><b>Unreachable</b></p><ul>" + "".join(f"<li>{C.md(s)}</li>" for s in unreach) + "</ul>" if unreach else "")))
+
+
+ITEM_CSS = """
+section.part{margin:22px 0}section.part>h2{font:600 13px system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;
+ color:var(--muted);border-bottom:1px solid var(--rule);padding-bottom:4px}
+.says1{font:19px/1.45 Georgia,serif;margin:6px 0}
+p.orig{font:16px/1.7 Georgia,serif}mark.cw{background:var(--tint);color:inherit;border-bottom:2px solid var(--accent);padding:0 2px}
+.rline{margin:8px 0}.names{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0}
+.names a{font:14px system-ui,sans-serif;border:1px solid var(--rule);padding:2px 8px;text-decoration:none}
+.faces1{display:flex;flex-wrap:wrap;gap:12px}.faces1 .face{width:120px;font:12px/1.3 system-ui,sans-serif}
+.faces1 .pf{position:relative;width:120px;height:140px}.faces1 .pf img,.faces1 .pf svg{position:absolute;inset:0;width:120px;height:140px;object-fit:cover}
+.ctxslot{border:1px dashed var(--rule);padding:8px 12px;color:var(--muted);font:14px system-ui,sans-serif}
+"""
+
+
+def item_page(it, sc, dsp, pfx, people_href):
+    """The one item-page template: returns (body, pending English count)."""
+    sel = selection_for(it)
+    says, src = what_it_says(it, sel)
+    out = [f'<article data-interest="{sel["score"] if sel and sel["score"] is not None else "unscored"}"'
+           f' data-thin="{"yes" if sel and sel["thin"] else "no"}">',
+           f'<h1>{E(sc["short"] if sc else it["title"])}</h1>']
+    out.append(f'<section class="part" id="what-it-says"><h2>What it says</h2><p class="says1">{C.md(says)}</p>'
+               f'<p class="small">Source: {E(src)}.</p></section>')
+    rd, pend = reading_section(it, sc, dsp, pfx)
+    out.append(f'<section class="part" id="reading"><h2>The reading</h2>{rd}</section>')
+    f, t, place, date = sc["who"] if sc else who_of(it)
+    place = place if sc or place_ok(place) else ""
+    names = names_of(it, sc, dsp)
+    who = [f'<div class="ctx"><div><span class="k">From</span> {E(f) or "not given in the record"}</div>'
+           f'<div><span class="k">To</span> {E(t) or "not given in the record"}</div>'
+           f'<div><span class="k">At</span> {E(place) or "not given in the record"}</div>'
+           f'<div><span class="k">Date</span> {E(date) or "not given in the record"}</div>'
+           f'<div><span class="k">Held</span> {E(C.archive_of(it) or it["holder"] or "not recorded")}</div></div>']
+    if names:
+        who.append('<p class="k layer">Named in the reading (persons and places as the cipher decodes them)</p><ul class="names">'
+                   + "".join(f'<li><a href="{people_href(n)}">{E(n)}</a></li>' for n in names) + "</ul>")
+    else:
+        who.append('<p class="small">No person or place name is decoded in the cipher text of this item (names in clear, or none).</p>')
+    faces = []
+    for n in [f, t] + names:
+        c = portrait_for(n)
+        if c and c["person"] not in [x["person"] for x in faces]:
+            faces.append(c)
+    if faces:
+        who.append('<div class="faces1">' + "".join(X.face_html(c["person"], c.get("role_five_words", ""), "", c["file"],
+                                                                pfx + "assets/portraits/") for c in faces[:6]) + "</div>")
+    out.append('<section class="part" id="who"><h2>Who, where, when</h2>' + "".join(who) + "</section>")
+    out.append(f'<section class="part" id="how"><h2>How we know</h2>{badge_block(it, pfx)}</section>')
+    if sel and sel["score"] is not None and sel["score"] >= 2:
+        out.append('<section class="part" id="context"><h2>Context</h2><p class="ctxslot" data-pending="context">Context: to be '
+                   'written from printed sources on file, labelled context (SITE-ITEMS-3).</p></section>')
+    out.append("</article>")
+    return "".join(out), pend, names, sel
+
+
+def people_pages(index, href_item):
+    """people/<slug>.html per name, and people/index.html. index: {name: [item, ...]}."""
+    pages = {}
+    for n, its in index.items():
+        c = portrait_for(n)
+        face = ('<div class="faces1">' + X.face_html(c["person"], c.get("role_five_words", ""), "", c["file"], "../assets/portraits/")
+                + "</div>") if c else ""
+        lis = "".join(f'<li><a href="{href_item(it)}">{E(C.ten_words(it["title"], 16))}</a></li>' for it in its)
+        pages[person_slug(n)] = (n, f'<h1>{E(n)}</h1>{face}<p class="small">As the decoded cipher text names it. Every item whose '
+                                    f'reading decodes this name ({len(its)}):</p><ul class="browse">{lis}</ul>')
+    order = sorted(index, key=lambda n: (-len(index[n]), n.lower()))
+    idx = ('<h1>People and places</h1><p class="small">Names as the cipher text decodes them (code words and nomenclature entries), one '
+           'page each, listing every item that names them. Picked from the decoded values by a word-list filter: a name that is also an '
+           'ordinary English word (Grant, Butler, Post) is not listed, and a person and a place are not told apart.</p><ul class="browse">'
+           + "".join(f'<li><a href="{person_slug(n)}.html">{E(n)}</a> <span class="small">({len(index[n])})</span></li>' for n in order)
+           + "</ul>")
+    return pages, idx
 
 
 PORTRAIT_CREDIT = ('<h2>Portraits</h2><p>Faces in the displays are public-domain paintings and prints from Wikimedia Commons, named with '
@@ -395,8 +837,10 @@ def main(argv=None):
     for p in (a.out, a.preview):
         if p and (os.path.abspath(p) + os.sep).startswith(os.path.abspath("docs") + os.sep):
             sys.exit("refused: docs/ is the GitHub Pages folder; the site is a private preview (owner, 10 Oct 2026)")
-    items, dmap, pages = write_site(a.out, a.date)
-    msg = f"site: {len(pages)} pages ({len(items)} item pages, {len(X.DISPLAYS)} displays) -> {a.out}"
+    items, dmap, pages, stats = write_site(a.out, a.date)
+    msg = (f"site: {len(pages)} pages ({len(items)} item pages, {len(X.DISPLAYS)} displays, {stats['people']} people pages) -> {a.out}"
+           f"; English pending {stats['pending_en']} of {len(items)}; interest tiers "
+           + ", ".join(f"{k}: {v}" for k, v in sorted(stats["tiers"].items())))
     missing = [s for s, w in DISPLAY_ITEMS.items() if len(dmap.get(s, [])) < len(w)]
     if missing:
         msg += "; display items not matched: " + ", ".join(missing)
