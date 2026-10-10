@@ -7820,6 +7820,28 @@ second-opinions/prompt-2026-10-10-tx-external-opinion.md and given. PR 70 unmerg
 TX programme table 00:0x UTC 10 Oct: slot 1 orchestrator | slot 2 lane inc. 3 session_01P46fwsU5VTc1oJiV1sayg5 18.4, check-in 3 due | slot 3
 TX-RED inc. 2 session_019mC2iYWnDXZQipquND2vZE 15.2, pass 11 at 00:24; open F47-F49 | slots 4-10: DV1c done (UNANCHORED), SH-VIV done;
 TX-POOL-LEAF-2 (account 1) overdue | eval looks 0; S2 look 1 (TAKEN).
+Check-in 8 (00:4x UTC 10 Oct by date -u, clock 00:45-00:5x; orchestrator (account-4) session_012sGNgiddCpz4QUhQsMyoPU, 55.8 at 00:45, context 309k):
+five_hour allowed; seven_day allowed_warning on account-4 workers (continuing). OUTSIDE REVIEW: the owner's ChatGPT runner answered
+second-opinions/prompt-2026-10-10-tx-external-opinion.md as PR 71; landed at research/SO-TX-TRANSCRIPTION-2026-10-10.md (1b681446c); its
+three scorer findings reproduced by me and by SO-TX-CITE (0.76 D, ledgered, archived; R1-R6 confirmed, R7 unreachable; PR 71 closed 00:39);
+TX-RED pass 12 graded it (nothing wrong, 8 already its own, 11 new F53-F63; F55: Amendment 2's unflagged paired convention was never
+implemented, no eval verdict rests on it); the lane adopted it: TXE2-SCORERFIX tool part done 00:44 (6896cf0e7: fixed manifest, unknown ids
+exit 2, paired per-line edit totals, abstention split, standard SER, --strict, --ci line bootstrap, --legacy byte-identical to the old S2
+and DV1b outputs; tests 10/10 FAIL old, 16/16 PASS new), corrected audit HELD pending PREREG-18 SCAN-103 (TXE2-SCAN103 live, read-free, box
+to 01:19) per my F50 order; bracket wording withdrawn in four places; ORACLE-LOCATION-1 a register candidate (ideas row 54; desk step
+LOCAL-QUEUE L74, the owner times the first 100 signs); f.102r truth re-anchoring (TXE2-VIV102-REANCHOR), DV1 withdrawn from the dev pool.
+TX-RED F51: five sentences of my prompt file corrected in a dated section. WVO-153-KEY-2 (session_01HPM6SotBgvufiXfyymdiXb) flagged 00:40:
+153 p6 is 20 cipher lines (~780 mixed signs) + two witness pages = 21 bands, about USD 126 at the measured rate (cipher + one witness 84),
+far over cap 12 -> the worker runs ONE pilot band under 80% and stops; decision: the rest is PARKED with the pilot result as the costed next
+step (p 0.15, no unread target needs key_153), not re-briefed. TX-POOL-LEAF-2 (account 1) still claimed at 3h05m on a 120-min box, flagged
+twice, no answer from account 1. Checks: desk_check flags outreach gramont-jstor-waive as stale against eckert AUDIT commits of 10 Oct
+(a date-heuristic hit, not re-read this check-in); near ok; system_map ok; ledger_check lines 487 and 1115 outcome B (other lanes').
+Context watch: lane inc. 3 at 572k (hand-over ~700k), TX-RED inc. 2 at 554k (successor at ~600k: spawn from its brief at check-in 9 if
+pass 13 crosses it). Check-in 9 trig_01DSGwwWUPBGiFfXXk9d5uwA at 01:26 UTC.
+TX programme table 00:4x UTC 10 Oct: slot 1 orchestrator | slot 2 lane inc. 3 session_01P46fwsU5VTc1oJiV1sayg5 26.0, context 572k | slot 3
+TX-RED inc. 2 session_019mC2iYWnDXZQipquND2vZE 20.6, context 554k, pass 13 at 01:11; open F47-F49, F53-F63 | slots 4-10: SCORERFIX tool done
+(audit held), SCAN103 live, VIV102-REANCHOR live, GALLICA probe, VIVWIT done; TX-POOL-LEAF-2 (account 1) overdue | eval looks 0; S2 look 1
+(TAKEN; corrected audit pending SCAN-103).
 
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:

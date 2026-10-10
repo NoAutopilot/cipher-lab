@@ -149,3 +149,9 @@ key_1068.tsv, controls PASS); WVO-153-KEY-2 (cap 12) queued for the :34 dispatch
 f.102r truth UNANCHORED (beats shuffle by 0.003) -- the 0.199 dev figure is provisional; watch for the lane's re-anchor PREREG and the
 segmentation PREREG. TX-POOL-LEAF-2 flagged overdue to LANE LEDGER (account 1). Owner given the ChatGPT prompt (second-opinions/prompt-2026-10-10-
 tx-external-opinion.md); if he pastes the answer back, hand it to the lane and TX-RED as a second opinion. Orchestrator context 245k (compacted).
+STATE DELTA 00:4x UTC 10 Oct: check-in 8 done (check-in 9 trig_01DSGwwWUPBGiFfXXk9d5uwA at 01:26). Outside review PR 71 landed
+(research/SO-TX-TRANSCRIPTION-2026-10-10.md), verified, closed; scorer fixed (tx_bench.py, --legacy keeps old figures); corrected audit of
+frozen S2/DV1b HELD until SCAN-103 (f.103r truth window scan, box to 01:19) reports -- then tell the owner the rescored S2 number and
+whether the truth moved. WVO-153-KEY-2: one pilot band only, rest PARKED (21 bands ~USD 126). TX-RED inc. 2 at 554k: spawn its successor
+from its brief (.claude/briefs/runs/ tx-red file) when it passes ~600k. Lane inc. 3 at 572k (hand-over ~700k). TX-POOL-LEAF-2 (account 1)
+overdue 3h+, flagged twice.
