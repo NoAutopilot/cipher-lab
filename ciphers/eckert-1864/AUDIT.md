@@ -16765,3 +16765,113 @@ the plaintext is already printed (OR / Lincoln Collected Works); our reading is 
 Requests: hdl.huntington.org 6 (IIIF 2400 px, one take 10:37, released, all 200); archive.org 20 (hocr searchtext/pageindex/page_numbers for 5 ids incl. one
 401 on the restricted `warofrebellionco0039unit_y0l1`, 1 advancedsearch, 1 metadata, 12 page images), be-api 5 (all 200). Reporter: report what was found and
 where it was not found; this section classifies only N0/N1 on located print, as the brief asks.
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER13-1)
+
+Second verifier AUD2-LEDGER13-1 (owner-account session session_01PN7DEESMcc29nmCQJDxJUU, Opus 5.5, for the orchestrator (owner account) and LANE
+LEDGER-13 (account 1); WORK-QUEUE row AUD2-LEDGER13-1, re-tagged account-1 by the orchestrator at 10:28), 10 Oct 2026, 10:33-10:4x UTC by `date -u`; a
+separate session and account from the readers FM65-A, FM65-B, FM65-C and the first verifier FV-FM65a; this session had read or audited none of the six
+before. Scope: **E504, E516, E519, E531, E534, E535** (first audit "## AUDIT (FV-FM65a)"). Nothing decoded; every code word of the six was looked up again
+in key.md (s.2). Key source: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Step 0 not re-run: a non-test on mssEC 25
+(Wave 2 RULING, STEP0-KEYCTL), and nothing below rests on it. No Huntington request (FV-FM65a's 19 all-pointer CONTENTdm queries stand; the hdl token was
+not taken). Scripts (committed, `fortmonroe/`): `aud2_l13_1_gb.py` (+ `.out`, `gb2.out`), `aud2_l13_1_gb3.py` ... `aud2_l13_1_gb6.py` (+ `.out`): 110
+Google Books API queries (keyed, `country=US`), positive control first (FV-FM65b's E530 query, `"sailed in perfect order" intitle:Grant` -> Grant Papers
+vol. 13, passed). OR I/46 pt 2 p.22 read on the IA page image (`warofrebellion014602rootrich`, leaf n27, 1910 px, scratch, not committed).
+
+### 1. The family FV-FM65a could not reach: The Papers of Ulysses S. Grant, vol. 13 (Nov 16, 1864 - Feb 20, 1865; ed. J. Y. Simon, SIU Press, 1985)
+Not on Internet Archive (FV-FM65b: the advancedsearch listing has vols. 1-12, 14-18); Google Books volumes `mnRjmhe3QLoC` (PARTIAL) and `ij8fAQAAMAAJ`
+(NO_PAGES) answer snippet queries. **Two of the six are printed there, in the editors' notes, from the telegrams themselves:**
+- **E531 -> IN PRINT.** `"six vessels" Oriental intitle:Grant`, `"Suwo Nada" "half an hour"`, `"5109 men" intitle:Grant`, `"Oriental" "has sailed"
+  intitle:Grant`: "... 'Oriental' seven hundred & seventy eight (778) men has sailed -- The 'Suwo Nada' nine hundred & thirty (930) men will start in
+  half an hour -- This makes six vessels, 5109 men, all as ordered -- ALS (telegram sent), ibid.; telegram received, ibid." (ibid. = DNA, RG 107,
+  Telegrams Collected (Unbound), as for E530 in the same note). The note's lead-in, `"Jan. 15" Morgan Rawlins Oriental intitle:Grant`: "... 15, 1:20 P.M.,
+  4:00 P.M., and 10:30 P.M., Morgan telegraphed to [Rawlins]". The cipher's time word **Julia = 4 PM** (key.md, H) puts E531 at the 4:00 P.M. telegram, and
+  "Mr. Morgan pandora" = M. R. Morgan, [Colonel] is the signer the edition names. Diff, print against the decode: plunder William and Murder paddle =
+  7 100 and 70 8 = **778**; pony prolong and laugh = 9 100 and 30 = **930**; plague vassals = 6 vessels; plaster waldo plug wine and padlock = 5 1000 1 100
+  and 9 = **5109**; spit = men -- every numeral and code group agrees; "Survo Nada" is the clerk's spelling. The note continues: "If in summing up today I
+  said six vessels I was wrong, I should have said seven -- ALS (telegram sent), ibid." -- the 10:30 P.M. correction, a different telegram (lead for the
+  lane, not checked against the ledger by this session: entries-fm.tsv 5873/2 is 16 Jan; 5874/0 is a 201-word 15 Jan row, unread here).
+- **E516 -> IN PRINT.** `"overcoat pocket" "Wilmington expedition"`, `"Butler's report of the Wilmington" intitle:Grant`, `"enquiries made at both places"
+  intitle:Grant`: "... lost, some place, from my overcoat pocket, a large package of papers containing Gen. Butler's report of the Wilmington Expedition.
+  The only two places I had my coat off was at the theatre and at the hotel kept by Mr. Phillips. Will you be good enough to have enquiries made at both
+  places and telegh me the result. -- Telegram received, DNA, RG 94, Generals' Papers and [Books] ..." In the same note: Butler's "Has it been lost again?
+  If so, I have a copy -- ALS (telegram sent), DNA, RG 107" (= OR I/46 pt 2 p.97, FV-FM65a's context) and a telegram "... has been picked up here, and is
+  in my possession. What will you have done with it? -- LS (telegram sent)" (the package found; sender and date not in the snippet). Diff: Knaves wick torch
+  Hamlet rape = Gen. Butler's report of the Wilmington Expedition; peach = two; optic / orbit = at the; pedlar / pekin = commas: **every code group agrees**;
+  "pocket" and "Hotel" are plain words in the print, confirming FV-FM65a's collisions; "willow" = Will you, "maid" = made, "weather one" = the print's
+  "telegh me" (FV-FM65a's "wire?" is right in sense). Not in the print's snippets: the head (date line, Emily = 10 AM, palate Shipley Farmer) and the
+  ledger's tail "youth Japan didn't travel very much" -- the printed text ends "the result." with the source line directly after, so the tail is either an
+  operator's line after the signature or omitted by the editors; it stays M (FV-FM65a). The addressee as printed was not seen (snippet); the ledger's
+  "palate Shipley Farmer" = Brig. Gen. Shepley, Norfolk (FV-FM65a s.3) stands, and the received copy filed in RG 94 Generals' Papers fits a general's file.
+- **E504, E519, E534, E535: not located in vol. 13 by snippet.** Grant-Papers-restricted queries on their decoded phrases, ship names and dates
+  (`"draws too much water" Atlantic`, `Weybosset Towanda`, `Euterpe Prometheus Varuna`, `"Gen. Lyon" Varuna`, `"Howell" steamers Bradley`; `"ship troops on
+  the Baltic"`, `"Coal at Annapolis"`, `"Baltic" Newport`, `"approach the docks" Annapolis`; `"Haze" "Sentinel"`, `"Thames" "Haze"`, `"Sentinel are all"`,
+  `"obtain the remainder"`, `"put fifteen days rations"`, `"as the Quartermaster designates"`; `"returned from the expedition disabled"`, `"three vessels"
+  disabled`, `"3500 men"`, `"thirty five hundred" wagons`, `"fifty wagons"`, `"Fort Fisher news"`, `"instructions in regard to mortars"`, `"ready by
+  tomorrow noon"`, `"each vessel leaves here"`, `"Jan. 16"/"Jan. 17" Morgan telegraphed`, `"Jan. 17" Porter Rawlins`): hits only on other telegrams
+  (Grant to Morgan 7 Jan, the fifteen days' rations order = OR I/46 pt 2 p.61; Morgan's 12-13 Jan Ariel/Sedgwick telegrams = E530; vol. 14 "noon tomorrow
+  ready to move", March; vols. 2-12, 17 on other matters), each read in the snippet and rejected. **A snippet search is weaker than reading the volume:
+  the notes of 3-7 and 16-17 Jan were not read page by page**, and E535 (to Rawlins, 17 Jan, the Fort Fisher news) has the same shape as the printed E531
+  and E530; this is the main residual risk for N3 on the four.
+- Google Books at large (`aud2_l13_1_gb2.out`, 14 exact-phrase queries): only OR copies already known (Newport/Thomas "The Oriental has not yet arrived";
+  Grant's 7 Jan rations order, also in House documents 1895; Dodge, 12 June 1864, "draws too much water to go up", other) and loose matches.
+
+### 2. Key look-ups and FV-FM65a's corrections, checked
+Every code word of the six looked up in key.md (one table, this session): all match the decoder and FV-FM65a s.3 (Mary 6.30 PM, Princess Captain, Fugitive
+14, Publish 100, Whisky Troops, Shelby General; Emily 10 AM, Palate Brigadier General, Farmer Norfolk, Knave Maj Gen B. F. Butler, Wick Report, Torch Of
+the, Hamlet Wilmington, Rape Expedition, Peach 2, Japan Maj Genl U.S. Grant; Viola 12.30, Postpone 7, Baptism / Banditti Baltimore, Belcher Qr Master Genl,
+Walrus / Webster Signature, Quadrant Department; Julia 4 PM, Berry Chief of Staff, Plunder 7, Murder 70, Paddle 8, Pony 9, Prolong 100, Laugh 30, Plague 6,
+Plaster 5, Waldo 1000, Plug 1, Wine 100, Padlock 9, Spit Men; Martha 7 PM, Nelly 8.30 PM, Forlorn 13, Jersey Maj Genl U.S. Grant, Ghost 15, Wales Rations,
+Sweden Information, Blubber City Point; Fanny 11 AM, Pebble 3, Saxon From the, Lamp 30, Person 5, Mansion / Mandate 50, Saco Fort, Olive Ammunition, Yoke
+Signature, Black City Point). The collisions FV-FM65a named are real key rows (William 100, Pocket Cross, Sampson Ferry, Baltic Chattahoochee, Horace
+Weldon, Animal Monroe, Hotel Longstreet) and the print confirms two of them plain (pocket, Hotel). FV-FM65a's grades stand, with E516 and E531's code
+groups now **C** by print. One new agreement: E535's "Lamp person publish" = 30 5 100 = 3500 and "Mansion wagons and plug prolong and mandate animals" =
+50 wagons and 150 animals (FV-FM65a's reading of "animals" as plain, confirmed by the sum).
+
+**One FV-FM65a correction is itself wrong.** FV-FM65a (s.2 and s.5) said Morgan's Atlantic telegram is of **5 Jan** ("the reader's '3 Jan' is wrong, the
+OCR reads January 5") and listed "E504 dated by the printed Morgan telegram (that is 5 Jan)" as unsafe. On the page image, OR I/46 pt 2 **p.22 reads "FORT
+MONROE, January 3, 1865--5.30 p.m."**: the OCR's "5" is a misread "3" (the telegram sits between Rawlins's 3 Jan 2 p.m. and Morgan's 3 Jan 6.30 p.m. in a
+chronological volume). So the reader FM65-A was right: Morgan's 3 Jan 5.30 p.m. telegram to Rawlins ("The Atlantic, 1,400 men, cannot go up to City
+Point; she is not watered, but she will be to-night") is one hour before E504 (Mary = 6.30 PM), on the same day, and Rawlins's 3 Jan 2 p.m. telegram on the
+same page ("Captain Howell, assistant quartermaster, has been directed to so instruct the quartermaster at Fort Monroe" about the extra vessels) is the
+instruction E504 answers. Both are context, different texts (Morgan to Rawlins; E504 is Fort Monroe to Beckwith for Howell). FV-FM65a s.5's "the C check is
+Morgan's 5 Jan telegram" is withdrawn; the FIX job keeps the header's 3 Jan and cites p.22, 3 Jan 5.30 p.m. Corrected here in status.json `depth_check`
+(E504) and in `second-opinions/PROMPT-chatgpt-e504.md` line 10.
+
+### 3. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E504 | **N3** (kept; weak, FV-FM65a: the fleet list is clear in the holder transcription) | period | **D3** (kept; external: OR I/46 pt 2 p.22, Morgan 3 Jan 5.30 p.m. and Rawlins 3 Jan 2 p.m. on Howell, page image; p.90 GO No. 3) | not located after FV-FM65a and s.1 |
+| E516 | **N1** (lowered from N3: plaintext printed in Grant Papers vol. 13 (1985), from the telegram received, DNA RG 94; our reading an independent re-decipherment) | period | **D3** (kept; code groups C by print) | s.1 |
+| E519 | **N3** (kept) | period | **D3** (kept) | not located after FV-FM65a and s.1 |
+| E531 | **N1** (lowered from N3: plaintext printed in Grant Papers vol. 13 (1985), from the telegram sent and received, DNA RG 107; our reading an independent re-decipherment) | period | **D3** (kept; every numeral C by print; Julia = 4 PM = the printed 4:00 P.M. telegram) | s.1 |
+| E534 | **N3** (kept) | period | **D3** (kept) | not located after FV-FM65a and s.1 |
+| E535 | **N3** (kept) | period | **D3** (kept) | not located after FV-FM65a and s.1; same shape as the printed E531, residual risk |
+- Not N0 for E516/E531: the editors printed from the sent and received telegrams, not from a decipherment of this ledger (the E530 precedent, FV-FM65b).
+- Not N4 for the four: Grant Papers vol. 13 searched by snippet only (not page by page), ORN I/12 and NARA RG 92/107 unread, JSTOR not queued (a JSTOR
+  hit could not move these four past what the Grant Papers volume itself would show; the volume is the next step, LOCAL-QUEUE or a person's copy).
+- Not D4 for any: no fresh rule-7 re-derivation, and FV-FM65a s.5's fixes are pending.
+- **Safe sentences.** E504, E519, E534, E535: FV-FM65a's (s.4) stand, with the search tail "not located in the Official Records ser. I vols. 46-47, ORN
+  ser. I vol. 11, Butler's correspondence vol. V, the Huntington's full-text search or, by Google Books snippet search, The Papers of Ulysses S. Grant vol.
+  13 (searched 10 Oct 2026)". E516: "Re-read with War Department Cipher No. 1 (an independent re-decipherment; the plaintext is printed in The Papers of
+  Ulysses S. Grant, vol. 13, 1985, from the telegram received): on 6 Jan 1865 S. H. Beckwith at City Point reported the loss from his overcoat pocket of a
+  package containing General Butler's report of the Wilmington expedition and asked for inquiries at the theatre and at the hotel kept by Mr Phillips."
+  E531: "Re-read with War Department Cipher No. 1 (an independent re-decipherment; the plaintext is printed in The Papers of Ulysses S. Grant, vol. 13, 1985,
+  from the telegram sent and received): at 4 p.m. on 15 Jan 1865 Lt. Col. M. R. Morgan at Fort Monroe told General Rawlins that the Oriental (778 men) had
+  sailed and the Suwo Nada (930 men) would start within half an hour, six vessels and 5,109 men, all as ordered."
+- **Unsafe:** "not located in print", "N3" or anything above N1 for E516 and E531; "first", "new", "unpublished" for any of the six; "Morgan's Atlantic
+  telegram is of 5 Jan" (it is 3 Jan, page image).
+
+### 4. Postmortem and propagation
+- Failure: FV-FM65a logged Grant Papers vol. 13 as "unreachable" (IA be-api not indexed, download 503) and stopped there, while the sister audit FV-FM65b
+  the same hour found the Google Books snippet route into the same volume and used it only for its own six. A family logged unreachable by one route is
+  re-tried by the route a sibling audit has just shown working. Second failure: an OCR date was used to overrule the reader without opening the page image
+  (rule 2, image over transcription, applies to print checks too).
+- Propagated (rule 10): status.json E516 and E531 -> N1, `text: known`, two audits, new `line`/`gap`/`depth_check`; E504 E519 E534 E535 -> two audits, `gap`
+  updated, E504 `depth_check` 3 Jan; SECOND-OPINIONS-QUEUE.tsv SO-ECKERT-E516 and SO-ECKERT-E531 -> withdrawn (N1), the other four stay queued;
+  PROMPT-chatgpt-e504.md line 10 corrected. FV-FM65a's section is left as written (history). For the next FIX job, in addition to FV-FM65a s.5: E516 and
+  E531 headers "in print (Grant Papers vol. 13)" and their code groups C; E531 signer M. R. Morgan, 4 PM (Julia); E504 keep 3 Jan, C context OR I/46 pt 2
+  p.22 3 Jan 5.30 p.m. (not 5 Jan). Lead for LANE LEDGER-13: Morgan's 15 Jan 1:20 P.M. and 10:30 P.M. ("I should have said seven") telegrams to Rawlins and
+  the "picked up here ... in my possession" telegram are printed in the same notes; any ledger row carrying them is N1 before it is read.
+- Requests: www.googleapis.com 110 (1.6 s apart); archive.org 7 (djvu text 302 then 200, page_numbers.json, page images n27 n28 n32 n33, 2 s apart).
+  For LANE LEDGER-13 (account 1) and the orchestrator (owner account).

@@ -13445,9 +13445,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM65a)'"
+        "AUDIT.md '## AUDIT (FV-FM65a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER13-1)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM65a verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -13468,7 +13469,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Fort Monroe (Sheldon) to S. H. Beckwith, City Point, for Capt. Howell, A.Q.M., 3 Jan 1865: the thirteen steamers ordered to report to Col. Bradley; the Atlantic, rationed for 1,400 troops, draws too much water to go up (E504)",
       "line": "Read at grade H with War Department Cipher No. 1: on 3 Jan 1865 Fort Monroe told Captain Howell, A.Q.M., at City Point which thirteen steamers had been ordered to report to Colonel Bradley, and that the Atlantic, rationed for 1,400 troops, was ready but drew too much water to go up; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vol. V or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-FM65a), weak: the fleet list is clear in the holder transcription of 5851; not N4: Grant Papers vols. 13-14 and ORN I/12 unreachable, OR I/46 pt 2 read in OCR, NARA RG 107/108, Google Books and JSTOR not searched",
+      "gap": "N3 two audits (FV-FM65a, AUD2-LEDGER13-1), weak: the fleet list is clear in the holder transcription of 5851; not N4: The Papers of Ulysses S. Grant vol. 13 searched by Google Books snippets only (not page by page), ORN I/12 and NARA RG 92/107 unread",
       "depth": "D3",
       "completeness": "22 H of 22 code-word groups (\"William\" x2 plain: Capt. William T. Howell, Capt. William L. James)",
       "phrases": [
@@ -13479,24 +13480,25 @@
         "Huntington mssEC 25 (obj 5952) p.307, pointer 5851, E504"
       ],
       "depth_sentence": "On 3 Jan 1865 Fort Monroe told Captain Howell, A.Q.M., at City Point which thirteen steamers had been ordered to report to Colonel Bradley, and that the Atlantic, rationed for 1,400 troops, was ready but drew too much water to go up.",
-      "depth_check": "code: Whisky = Troops, Wales = Rations, Pilgrim = Captain read passim; external (non-statistical): OR I/46 pt 2 pp.22-24 Morgan, Fort Monroe 5 Jan, 'The Atlantic, 1,400 men, cannot go up to City Point'; p.90 Terry's GO No. 3 names 12 of the 13 steamers; p.908 William L. James, Captain and A.Q.M.",
+      "depth_check": "code: Whisky = Troops, Wales = Rations, Pilgrim = Captain read passim; external (non-statistical): OR I/46 pt 2 pp.22-24 Morgan, Fort Monroe 3 Jan 5.30 p.m. (page image), 'The Atlantic, 1,400 men, cannot go up to City Point'; p.90 Terry's GO No. 3 names 12 of the 13 steamers; p.908 William L. James, Captain and A.Q.M.",
       "depth_note": "22 H of 22 code-word groups (\"William\" x2 plain: Capt. William T. Howell, Capt. William L. James)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM65a)'"
+        "AUDIT.md '## AUDIT (FV-FM65a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER13-1)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth_by": "FV-FM65a verifier (account 1)",
+      "depth_by": "AUD2-LEDGER13-1 verifier (owner account)",
       "depth_date": "10 Oct 2026",
       "decode_status": "Partially decrypted",
       "date": "10 Oct 2026",
       "kind": "reading",
       "claim_scope": "completed-reading",
-      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM65a)' section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER13-1)' section 3",
       "reading_version": "FM65 readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-FM65a) s.3 (fixes pending in s.5)",
       "unresolved_spans": "see AUDIT (FV-FM65a) s.3 (M tokens)",
       "depth_unread": {
@@ -13504,14 +13506,14 @@
         "other": "0"
       },
       "depth_pct": 94.7,
-      "grade": "N3",
-      "plaintext_novelty": "N3",
-      "mapping_novelty": "N3",
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
       "title": "Eckert 1864 (Fort Monroe ledger): S. H. Beckwith, City Point, to Sheldon, Fort Monroe, for Brig. Gen. Shepley, Norfolk, 6 Jan 1865: a package with General Butler's report of the Wilmington expedition lost from his overcoat pocket; inquire at the theatre and Mr Phillips's hotel (E516)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 6 Jan 1865 S. H. Beckwith at City Point asked, through Sheldon, Brig. Gen. Shepley at Norfolk to make inquiries at the theatre and at the hotel kept by Mr Phillips for a large package of papers containing General Butler's report of the Wilmington expedition, lost from his overcoat pocket the night before; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vol. V or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-FM65a); not N4: Grant Papers vols. 13-14 and ORN I/12 unreachable, OR I/46 pt 2 read in OCR, NARA RG 107/108, Google Books and JSTOR not searched",
+      "line": "Re-read with War Department Cipher No. 1 (an independent re-decipherment; the plaintext is printed in The Papers of Ulysses S. Grant, vol. 13, 1985, from the telegram received): on 6 Jan 1865 S. H. Beckwith at City Point reported the loss from his overcoat pocket of a package containing General Butler's report of the Wilmington expedition and asked for inquiries at the theatre and at the hotel kept by Mr Phillips.",
+      "gap": "N1: second audit AUD2-LEDGER13-1 (10 Oct 2026) lowered N3 -> N1: plaintext printed in The Papers of Ulysses S. Grant vol. 13 (1985), note, 'Telegram received, DNA, RG 94, Generals' Papers' (Google Books snippets, volume mnRjmhe3QLoC; page not read); every code group agrees with the print",
       "depth": "D3",
-      "completeness": "18 H + 1 M of 19 code-word groups (\"pocket\", \"Hotel\" plain; Japan M)",
+      "completeness": "18 C + 1 M of 19 code-word groups (C by Grant Papers vol. 13; Japan in the unprinted tail M)",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.316, pointer 5860, E516"
       ],
@@ -13520,16 +13522,18 @@
         "Huntington mssEC 25 (obj 5952) p.316, pointer 5860, E516"
       ],
       "depth_sentence": "On 6 Jan 1865 S. H. Beckwith at City Point asked, through Sheldon, Brig. Gen. Shepley at Norfolk to make inquiries at the theatre and at the hotel kept by Mr Phillips for a large package of papers containing General Butler's report of the Wilmington expedition, lost from his overcoat pocket the night before.",
-      "depth_check": "code: Rape = Expedition reads in E516 and E535; Farmer = Norfolk, Palate = Brigadier General; external (non-statistical): OR I/46 pt 2 p.97 Butler to Grant 11 Jan 'Has it been lost again? If so, I have a copy'; p.68 Grant to Leet on the same report; holder 7685 the report made 5 Jan",
-      "depth_note": "18 H + 1 M of 19 code-word groups (\"pocket\", \"Hotel\" plain; Japan M)"
+      "depth_check": "code: Knave Wick Torch Hamlet Rape = Gen. Butler's report of the Wilmington Expedition, Peach = two, Optic/Orbit = at the, C by print; external (non-statistical): The Papers of Ulysses S. Grant vol. 13 (1985) prints the telegram; OR I/46 pt 2 p.97 Butler, 11 Jan, 'Has it been lost again?'",
+      "depth_note": "18 C + 1 M of 19 code-word groups (C by Grant Papers vol. 13; Japan in the unprinted tail M)",
+      "text": "known"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM65a)'"
+        "AUDIT.md '## AUDIT (FV-FM65a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER13-1)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM65a verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -13550,7 +13554,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Fort Monroe (Sheldon) to J. W. Sampson, Baltimore, for Col. R. M. Newport, 7 Jan 1865: ship troops on the Baltic by the soonest method; coal her at Baltimore, she cannot approach the docks at Annapolis; by order of the Quartermaster General (E519)",
       "line": "Read at grade H with War Department Cipher No. 1: on 7 Jan 1865 Fort Monroe, by order of the Quartermaster General, told Colonel R. M. Newport at Baltimore to ship troops on the Baltic by whatever method was soonest, coaling her at Baltimore rather than Annapolis, whose docks she could not approach; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vol. V or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-FM65a); not N4: Grant Papers vols. 13-14 and ORN I/12 unreachable, OR I/46 pt 2 read in OCR, NARA RG 107/108, Google Books and JSTOR not searched",
+      "gap": "N3 two audits (FV-FM65a, AUD2-LEDGER13-1); not N4: The Papers of Ulysses S. Grant vol. 13 searched by Google Books snippets only (not page by page), ORN I/12 and NARA RG 92/107 unread",
       "depth": "D3",
       "completeness": "19 H + 1 M of 20 code-word groups (\"Sampson\", \"Baltic\" plain; Webster M)",
       "phrases": [
@@ -13568,17 +13572,18 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM65a)'"
+        "AUDIT.md '## AUDIT (FV-FM65a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER13-1)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth_by": "FV-FM65a verifier (account 1)",
+      "depth_by": "AUD2-LEDGER13-1 verifier (owner account)",
       "depth_date": "10 Oct 2026",
       "decode_status": "Partially decrypted",
       "date": "10 Oct 2026",
       "kind": "reading",
       "claim_scope": "completed-reading",
-      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-FM65a)' section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER13-1)' section 3",
       "reading_version": "FM65 readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-FM65a) s.3 (fixes pending in s.5)",
       "unresolved_spans": "none",
       "depth_unread": {
@@ -13586,14 +13591,14 @@
         "other": "0"
       },
       "depth_pct": 100.0,
-      "grade": "N3",
-      "plaintext_novelty": "N3",
-      "mapping_novelty": "N3",
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
       "title": "Eckert 1864 (Fort Monroe ledger): Sheldon, Fort Monroe, to S. H. Beckwith, City Point, for Gen. Rawlins, 15 Jan 1865: the Oriental (778 men) has sailed, the Suwo Nada (930 men) starts in half an hour; six vessels, 5,109 men, all as ordered (E531)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 15 Jan 1865 Sheldon reported to General Rawlins that the Oriental had sailed and the Suwo Nada would start within the half hour, making six vessels and about 5,100 men, all as ordered; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vol. V or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-FM65a); not N4: Grant Papers vols. 13-14 and ORN I/12 unreachable, OR I/46 pt 2 read in OCR, NARA RG 107/108, Google Books and JSTOR not searched",
+      "line": "Re-read with War Department Cipher No. 1 (an independent re-decipherment; the plaintext is printed in The Papers of Ulysses S. Grant, vol. 13, 1985, from the telegram sent and received): at 4 p.m. on 15 Jan 1865 Lt. Col. M. R. Morgan at Fort Monroe told General Rawlins that the Oriental (778 men) had sailed and the Suwo Nada (930 men) would start within half an hour, six vessels and 5,109 men, all as ordered.",
+      "gap": "N1: second audit AUD2-LEDGER13-1 (10 Oct 2026) lowered N3 -> N1: plaintext printed in The Papers of Ulysses S. Grant vol. 13 (1985), note on Morgan's 15 Jan 1:20, 4:00 and 10:30 P.M. telegrams to Rawlins, 'ALS (telegram sent), ibid.; telegram received, ibid.' (DNA RG 107; Google Books snippets, volume mnRjmhe3QLoC; page not read); 778, 930, 5109 agree with the decode",
       "depth": "D3",
-      "completeness": "22 H of 22 code-word groups",
+      "completeness": "22 C of 22 code-word groups (C by Grant Papers vol. 13)",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.329, pointer 5873, E531"
       ],
@@ -13602,16 +13607,18 @@
         "Huntington mssEC 25 (obj 5952) p.329, pointer 5873, E531"
       ],
       "depth_sentence": "On 15 Jan 1865 Sheldon reported to General Rawlins that the Oriental had sailed and the Suwo Nada would start within the half hour, making six vessels and about 5,100 men, all as ordered.",
-      "depth_check": "code: Spit = Men, numerals passim; external (non-statistical): holder 8518 Newport 14 Jan 'The Oriental and Surro Nada with the remainder of Genl Grovers command sailed last night'; 8509 transport for 5,000 troops",
-      "depth_note": "22 H of 22 code-word groups"
+      "depth_check": "code: numerals 778, 930, 6 vessels, 5109 and Spit = Men C by print; Julia = 4 PM = the printed 4:00 P.M. telegram; external (non-statistical): The Papers of Ulysses S. Grant vol. 13 (1985) prints the telegram; holder 8518 Newport 14 Jan, the Oriental and Suwo Nada",
+      "depth_note": "22 C of 22 code-word groups (C by Grant Papers vol. 13)",
+      "text": "known"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM65a)'"
+        "AUDIT.md '## AUDIT (FV-FM65a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER13-1)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM65a verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -13632,7 +13639,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): two messages, 16 Jan 1865: Fort Monroe to City Point for Col. G. W. Bradley, the Dupont, Thames, Haze and Sentinel are all we have, enough for the teams and 1,300 men; City Point to Fort Monroe for Col. M. P. Small, by General Grant's direction put 15 days' rations on the vessels (E534)",
       "line": "Read at grade H with War Department Cipher No. 1: on 16 Jan 1865 Fort Monroe told Colonel Bradley that the Dupont, Thames, Haze and Sentinel were all the vessels it had, enough for the teams and 1,300 men, and City Point told Colonel Small, by General Grant's direction, to put fifteen days' rations on the vessels the quartermaster named; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vol. V or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-FM65a); not N4: Grant Papers vols. 13-14 and ORN I/12 unreachable, OR I/46 pt 2 read in OCR, NARA RG 107/108, Google Books and JSTOR not searched",
+      "gap": "N3 two audits (FV-FM65a, AUD2-LEDGER13-1); not N4: The Papers of Ulysses S. Grant vol. 13 searched by Google Books snippets only (not page by page), ORN I/12 and NARA RG 92/107 unread",
       "depth": "D3",
       "completeness": "28 H + 1 M of 29 code-word groups (Webster in message 1 M)",
       "phrases": [
@@ -13650,9 +13657,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM65a)'"
+        "AUDIT.md '## AUDIT (FV-FM65a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER13-1)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM65a verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -13673,7 +13681,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Fort Monroe to S. H. Beckwith, City Point, for Gen. J. A. Rawlins, 17 Jan 1865: three vessels back disabled from the expedition; enough here for 3,500 men, 50 wagons and 150 animals; will the Fort Fisher news change your instructions on mortars, troops or ammunition (E535)",
       "line": "Read at grade H with War Department Cipher No. 1: on 17 Jan 1865 Fort Monroe told General Rawlins that three vessels had come back disabled from the expedition, that those in port could carry 3,500 men, 50 wagons and 150 animals by the next noon, and asked whether the Fort Fisher news changed his instructions about mortars, troops or ammunition; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vol. V or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-FM65a); not N4: Grant Papers vols. 13-14 and ORN I/12 unreachable, OR I/46 pt 2 read in OCR, NARA RG 107/108, Google Books and JSTOR not searched",
+      "gap": "N3 two audits (FV-FM65a, AUD2-LEDGER13-1); not N4: The Papers of Ulysses S. Grant vol. 13 searched by Google Books snippets only (not page by page), ORN I/12 and NARA RG 92/107 unread",
       "depth": "D3",
       "completeness": "29 H of 29 code-word groups (\"Horace\", \"animals\" plain)",
       "phrases": [
