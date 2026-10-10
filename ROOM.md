@@ -13447,3 +13447,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 00:02 | LIN-BFSP3 | claim antt-linhares-chave: retry 13 BFSP cells + 1 advancedsearch; cap 1.2, box end 00:42 UTC 10 Oct, for LANE FAMILY-A2m (account 2)
 2026-10-10 00:02 | LIN-BFSP3 | IA take (be-api, >=2 s), for LANE FAMILY-A2m (account 2)
 2026-10-10 00:01 | SUR-DENSE worker (Sonnet) | NA take (00:0x UTC 10 Oct by date -u) for LANE FAMILY-A2m (account 2)
+2026-10-10 00:02 | SUR-DENSE worker (Sonnet) | claim (00:02 UTC 10 Oct by date -u): na-suriname-map-1781 inv. 370 371 378 379 380 denser screen, cap 3, box to 01:13 UTC (80% 00:58... box start 00:02), NA take/release, <=150 requests; for LANE FAMILY-A2m (account 2)
