@@ -254,3 +254,51 @@ On gate FAIL: log the row in HYPOTHESES.md, do not decode p.435, say what failed
 Units: key read ~0.8; 4 pages x 2 passes ~0.6 each = 4.8 (Sonnet passes are cheaper; your own eye read counts as a pass) + 4 reconciles folded in;
 gate/decode/control ~1; Opus floor 1.5. If at 5.5 spent before p.435 is transcribed, stop and list it with its cost. NOTES "## DUTCH-KEY",
 Remaining gaps / Escalation / Verdict, gaps_check.py. Report what was found and where it was not found; do not classify novelty.
+
+## Wave 6 results (costs by get_session)
+- DUTCH-KEY 8.66 / 7 (Opus, 1.24x): dutch1653/key_dewitt_1653.tsv (printed p.72 key, 1-66); PREREG 6f9dbc5f7; gate PASS on Birch I p.351
+  (0.975 vs shuffled p95 0.346); folds pass on p.340 (223 tok, 218 H) and p.308/309 (86 H); p.435 Boreel NOT read by this key (decode
+  below its own shuffle mean; matched control separates at N=136) -> negative for this key only. ROOM flag: p.340 for a first verifier.
+
+## Wave 7 (19:5x UTC 10 Oct)
+Hosts this wave: archive.org page/download ("IA"): DUTCH-MORE only (<= 20, take/release). V-DUTCH: open indexes, Google Books API, Delpher /
+KB if reachable, be-api.us.archive.org full-text (a different host from archive.org page downloads; take/release it too), huygens <= 10 (after
+nobody else holds it).
+
+### V-DUTCH (Opus, cap 5, box 120 min): FIRST VERIFIER, thurloe-printed/dutch1653 -- Birch I p.340 (and pp.308/309, 351) under the printed De Witt 1653 key
+A separate session from the solver (DUTCH-KEY, session_011q6wwtLCsXrkKaueV9imNC); do not protect its conclusions. Use the CLAUDE.md "Verifier
+brief (template)" steps 1-5 in full (step-type `audit` for prior_work.py; depth per .claude/briefs/runs/2026-10-08-acct3-depth-bar.md).
+Claim under audit: "Birch 1742 vol 1 p.340 (Beverning and Nieuport to De Witt, 18 July 1653) reads 223 tokens, 218 H, under the key printed in
+Brieven van Johan de Witt I (Japikse) p.72 (dutch1653/reading_p339.tsv), the key having passed a pre-registered known-answer gate on p.351".
+Inputs: NOTES "## THUR-DUTCH", "## DUTCH-KEY", dutch1653/ (key, PREREG-DUTCHKEY.md, gate_dutchkey.*, ct_*.tsv, passes/, crops/, reading_*).
+(a) Rule 7: re-derive p.340/p.351/p.308 readings from ct_*.tsv + key_dewitt_1653.tsv with `decode_dutch.py --check` AND your own independent
+script; eye-check the ciphertext on dutch1653/crops for the two doubtful tokens and three runs of your choice; regrade anything unsupported.
+(b) Key source: the edition itself says the key reads these letters (p.92 n.2: pp.304, 308-309, 339 "geheel te ontcijferen"): record that the
+editor (Fruin/Japikse) states the decipherability and whether the edition PRINTS any of the deciphered Dutch for p.340/p.308 (read pp.91-112
+OCR on disk, dutch1653/edition/). Find Nedermeyer van Rosenthal's Dutch of the 18 July letter (Nijhoff, Bijdragen voor vaderlandsche
+geschiedenis en oudheidkunde X p.291) -- IA/HathiTrust EF/Google Books (country=US)/Delpher -- and if reached, diff the decode against it
+(normalize spelling per rule 3's PX-BRODEC paragraph). Also the 1723-25 printed "Brieven ... tusschen den heer Johan de Witt ende de
+gevolmaghtigden" (vol 1-2, 1653) and the 1725 Verbael, on IA/Google Books: the envoys' 18 July letter may be printed there in full.
+(c) Rule 10 search per family as the template lists; JSTOR rows to JSTOR-QUEUE.tsv in both families (i) and (ii).
+(d) Classify each item (p.340, p.308/309; p.351 is the gate's known text -- class it too) N0-N5 with key source `published` (Japikse after
+Fruin), depth D0-D4 with the check used; write `ciphers/thurloe-printed/AUDIT.md` section "## AUDIT (V-DUTCH)"; status.json row only if the
+folder convention has per-item rows (say). If N3+, append the SECOND-OPINIONS-QUEUE.tsv row in the same session and add one WORK-QUEUE row
+`AUD2-FAMILY-A2s-1` for a second audit on account-3 (VERIFY lane) per lane-common-blast.md, naming it in ROOM.
+Cap 5; units: rule-7 rederive ~0.8, edition read ~0.5, print search ~2, write ~0.7, floor. Do not decode new material, do not touch other targets.
+
+### DUTCH-MORE (Opus, cap 6, box 140 min, IA <= 20): thurloe-printed/dutch1653 -- the other Birch vol 1 Dutch cipher pages under the printed De Witt key
+Read NOTES "## THUR-DUTCH", "## DUTCH-KEY" and its Remaining gaps, dutch1653/pairs_census.tsv, decode_dutch.py, PREREG-DUTCHKEY.md.
+Units (leaf = printed page + 29 near pp.308-435; check the page number on the leaf): pp.304, 316-317 (named by the edition p.92 n.2), then the
+pairs_census rows pp.324, 383, 466, 486 (and any other vol 1 Dutch-family page in pairs_census.tsv not yet decoded), in that order.
+Step 0: prior_work.py per page (`--item-spec 'shelfmark=Birch 1742 vol 1 p.<n>;sender=..;recipient=..;date=..' --step-type decode --fetch`),
+paste each exit code; check 1 by hand. A page whose Birch text prints its own decipherment or whose Dutch is printed in the edition is a known
+answer: decode it anyway as a further key fold, say so.
+Per page: crop step pasted (`tools/iiif_lines.py --image ...`), two passes (one Sonnet call on line crops + your own eye read), reconcile ->
+`ct_p<n>.tsv`; decode with decode_dutch.py (extend it with a page argument; existing outputs byte-identical, --check exit 0); the same
+shuffled-key 4-gram control as DUTCH-KEY's folds, computed before reading; codes > 100 left as name codes (M) unless the edition names them
+(p.111 128 = Danzig; p.92 170 unsolved): list every code > 100 with its contexts in `dutch1653/codes_over_100.tsv`. A page that fails its
+control: log it (the 4 July letter says numbers above 100 changed; later letters may use the "new" cipher), do not force a reading.
+G3 (`prior_work.py ... --reading <file> --network`) per read page, paste it. A page beating its control with a clause above the authentication
+distance: ROOM flag "DUTCH-MORE reading p.<n> for a first verifier". Units: ~6 pages x (Sonnet pass ~0.4 + eye read/reconcile ~0.4 + decode/
+control ~0.15) = ~5.7 incl. Opus floor; stop before a page that would cross 80% of cap and list the rest with cost. NOTES "## DUTCH-MORE",
+Remaining gaps / Escalation / Verdict, gaps_check.py. Report what was found and where it was not found; do not classify novelty.
