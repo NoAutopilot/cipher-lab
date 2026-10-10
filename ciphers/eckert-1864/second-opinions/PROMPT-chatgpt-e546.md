@@ -12,10 +12,10 @@ THE ITEM
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key.md, search log
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (FV-L16b)").
 
-WHERE WE HAVE LOOKED: Official Records ser. I vols. 46 pts 1-3 and 47 pt 2 and ORN ser. I vol. 11 (full text, by phrase and by name); Butler's Private and Official Correspondence vols. IV-V; G. H. Gordon, A War Diary (1882); J. E. O'Brien, Telegraphing in Battle (1910); The Papers of Ulysses S. Grant vols. 13-14 by Google Books snippet search; Internet Archive full-text search across all collections; Chronicling America; the Huntington's CONTENTdm full-text search across the whole Eckert collection.
+WHERE WE HAVE LOOKED: Official Records ser. I vols. 46 pts 1-3 and 47 pt 2 and ORN ser. I vols. 11-12 (full text, by phrase and by name; vol. 12 added by the second audit); Butler's Private and Official Correspondence vols. IV-V; G. H. Gordon, A War Diary (1882); J. E. O'Brien, Telegraphing in Battle (1910); The Papers of Ulysses S. Grant vols. 13-14 by Google Books snippet search; Internet Archive full-text search across all collections; Chronicling America; the Huntington's CONTENTdm full-text search across the whole Eckert collection.
 
 WHERE WE HAVE NOT YET LOOKED PROPERLY (start here)
-- ORN ser. I vol. 12; The Papers of Ulysses S. Grant vols. 13-14 notes page by page; NARA RG 92, 107 and 393; Google Books; HathiTrust; JSTOR; newspapers of the following week.
+- The Papers of Ulysses S. Grant vols. 13-14 notes page by page; NARA RG 92, 107 and 393; Google Books; HathiTrust; JSTOR; newspapers of the following week.
 
 HOW TO REPORT (this part is the same for every label)
 - Write your answer as one Markdown file in the repository github.com/NoAutopilot/cipher-lab at the path
