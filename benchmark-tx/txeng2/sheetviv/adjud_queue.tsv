@@ -1,0 +1,847 @@
+line	col	kind	candidates	left_neighbours	right_neighbours
+f102r_L01	1	uncertain	x		: # d
+f102r_L01	2	disagree	(no sign) | :	x	# d l
+f102r_L01	3	uncertain	#	x :	d l n
+f102r_L01	4	uncertain	d	x : #	l n o
+f102r_L01	5	disagree	l | (no sign)	: # d	n o n
+f102r_L01	6	uncertain	n	# d l	o n a
+f102r_L01	7	uncertain	o	d l n	n a tz
+f102r_L01	8	uncertain	n	l n o	a tz g
+f102r_L01	9	uncertain	a	n o n	tz g o
+f102r_L01	10	uncertain	tz	o n a	g o o
+f102r_L01	11	uncertain	g	n a tz	o o m
+f102r_L01	12	uncertain	o	a tz g	o m z
+f102r_L01	13	uncertain	o	tz g o	m z m
+f102r_L01	14	uncertain	m	g o o	z m p
+f102r_L01	15	uncertain	z	o o m	m p #
+f102r_L01	16	uncertain	m	o m z	p # s
+f102r_L01	17	uncertain	p	m z m	# s y
+f102r_L01	18	uncertain	#	z m p	s y s
+f102r_L01	19	uncertain	s	m p #	y s tz
+f102r_L01	20	uncertain	y	p # s	s tz j
+f102r_L01	21	uncertain	s	# s y	tz j tz
+f102r_L01	22	uncertain	tz	s y s	j tz c
+f102r_L01	23	uncertain	j	y s tz	tz c L
+f102r_L01	24	uncertain	tz	s tz j	c L a
+f102r_L01	25	uncertain	c	tz j tz	L a n
+f102r_L01	26	disagree	L | (no sign)	j tz c	a n r
+f102r_L01	27	uncertain	a	tz c L	n r y
+f102r_L01	28	uncertain	n	c L a	r y m
+f102r_L01	29	disagree	r | y	L a n	y m g
+f102r_L01	30	uncertain	y	a n r	m g s
+f102r_L01	31	uncertain	m	n r y	g s tz
+f102r_L01	32	disagree	g | e	r y m	s tz :
+f102r_L01	33	uncertain	s	y m g	tz : #
+f102r_L01	34	uncertain	tz	m g s	: # r
+f102r_L01	35	uncertain	:	g s tz	# r y
+f102r_L01	36	uncertain	#	s tz :	r y m
+f102r_L01	37	disagree	r | y	tz : #	y m d
+f102r_L01	38	uncertain	y	: # r	m d m
+f102r_L01	39	uncertain	m	# r y	d m y
+f102r_L01	40	disagree	d | z	r y m	m y tz
+f102r_L01	41	uncertain	m	y m d	y tz R
+f102r_L01	42	uncertain	y	m d m	tz R d
+f102r_L01	43	uncertain	tz	d m y	R d tz
+f102r_L01	44	uncertain	R	m y tz	d tz #
+f102r_L01	45	uncertain	d	y tz R	tz # tz
+f102r_L01	46	uncertain	tz	tz R d	# tz b
+f102r_L01	47	uncertain	#	R d tz	tz b c
+f102r_L01	48	uncertain	tz	d tz #	b c a
+f102r_L01	49	uncertain	b	tz # tz	c a d
+f102r_L01	50	uncertain	c	# tz b	a d m
+f102r_L01	51	uncertain	a	tz b c	d m g
+f102r_L01	52	uncertain	d	b c a	m g d
+f102r_L01	53	uncertain	m	c a d	g d tz
+f102r_L01	54	uncertain	g	a d m	d tz m
+f102r_L01	55	uncertain	d	d m g	tz m
+f102r_L01	56	uncertain	tz	m g d	m
+f102r_L01	57	uncertain	m	g d tz	
+f102r_L02	1	uncertain	p		# P r
+f102r_L02	2	uncertain	#	p	P r y
+f102r_L02	3	uncertain	P	p #	r y m
+f102r_L02	4	disagree	r | y	p # P	y m a
+f102r_L02	5	uncertain	y	# P r	m a g
+f102r_L02	6	uncertain	m	P r y	a g o
+f102r_L02	7	uncertain	a	r y m	g o t
+f102r_L02	8	uncertain	g	y m a	o t g
+f102r_L02	9	uncertain	o	m a g	t g p
+f102r_L02	10	disagree	t | (no sign)	a g o	g p x
+f102r_L02	11	disagree	g | tz	g o t	p x s
+f102r_L02	12	uncertain	p	o t g	x s t
+f102r_L02	13	uncertain	x	t g p	s t d
+f102r_L02	14	uncertain	s	g p x	t d p
+f102r_L02	15	uncertain	t	p x s	d p o
+f102r_L02	16	uncertain	d	x s t	p o o
+f102r_L02	17	uncertain	p	s t d	o o j
+f102r_L02	18	uncertain	o	t d p	o j R
+f102r_L02	19	uncertain	o	d p o	j R m
+f102r_L02	20	uncertain	j	p o o	R m x
+f102r_L02	21	disagree	R | z	o o j	m x o
+f102r_L02	22	uncertain	m	o j R	x o m
+f102r_L02	23	uncertain	x	j R m	o m g
+f102r_L02	24	uncertain	o	R m x	m g s
+f102r_L02	25	uncertain	m	m x o	g s p
+f102r_L02	26	uncertain	g	x o m	s p :
+f102r_L02	27	uncertain	s	o m g	p : m
+f102r_L02	28	uncertain	p	m g s	: m g
+f102r_L02	29	uncertain	:	g s p	m g m
+f102r_L02	30	uncertain	m	s p :	g m g
+f102r_L02	31	disagree	g | p	p : m	m g m
+f102r_L02	32	uncertain	m	: m g	g m z
+f102r_L02	33	uncertain	g	m g m	m z m
+f102r_L02	34	uncertain	m	g m g	z m f
+f102r_L02	35	uncertain	z	m g m	m f R
+f102r_L02	36	uncertain	m	g m z	f R tz
+f102r_L02	37	uncertain	f	m z m	R tz m
+f102r_L02	38	disagree	R | z	z m f	tz m a
+f102r_L02	39	uncertain	tz	m f R	m a m
+f102r_L02	40	uncertain	m	f R tz	a m p
+f102r_L02	41	uncertain	a	R tz m	m p d
+f102r_L02	42	uncertain	m	tz m a	p d m
+f102r_L02	43	uncertain	p	m a m	d m d
+f102r_L02	44	uncertain	d	a m p	m d tz
+f102r_L02	45	uncertain	m	m p d	d tz x
+f102r_L02	46	uncertain	d	p d m	tz x s
+f102r_L02	47	uncertain	tz	d m d	x s o
+f102r_L02	48	uncertain	x	m d tz	s o o
+f102r_L02	49	uncertain	s	d tz x	o o m
+f102r_L02	50	uncertain	o	tz x s	o m :
+f102r_L02	51	uncertain	o	x s o	m : to
+f102r_L02	52	uncertain	m	s o o	: to z
+f102r_L02	53	uncertain	:	o o m	to z
+f102r_L02	54	uncertain	to	o m :	z
+f102r_L02	55	uncertain	z	m : to	
+f102r_L03	1	uncertain	m		x : m
+f102r_L03	2	uncertain	x	m	: m x
+f102r_L03	3	uncertain	:	m x	m x #
+f102r_L03	4	uncertain	m	m x :	x # s
+f102r_L03	5	uncertain	x	x : m	# s g
+f102r_L03	6	uncertain	#	: m x	s g #
+f102r_L03	7	uncertain	s	m x #	g # tz
+f102r_L03	8	uncertain	g	x # s	# tz H
+f102r_L03	9	uncertain	#	# s g	tz H tz
+f102r_L03	10	uncertain	tz	s g #	H tz :
+f102r_L03	11	uncertain	H	g # tz	tz : m
+f102r_L03	12	uncertain	tz	# tz H	: m r
+f102r_L03	13	uncertain	:	tz H tz	m r y
+f102r_L03	14	uncertain	m	H tz :	r y s
+f102r_L03	15	disagree	r | y	tz : m	y s #
+f102r_L03	16	uncertain	y	: m r	s # tz
+f102r_L03	17	uncertain	s	m r y	# tz g
+f102r_L03	18	uncertain	#	r y s	tz g m
+f102r_L03	19	uncertain	tz	y s #	g m g
+f102r_L03	20	uncertain	g	s # tz	m g s
+f102r_L03	21	uncertain	m	# tz g	g s z
+f102r_L03	22	uncertain	g	tz g m	s z m
+f102r_L03	23	uncertain	s	g m g	z m h
+f102r_L03	24	uncertain	z	m g s	m h d
+f102r_L03	25	uncertain	m	g s z	h d o
+f102r_L03	26	uncertain	h	s z m	d o o
+f102r_L03	27	uncertain	d	z m h	o o d
+f102r_L03	28	uncertain	o	m h d	o d m
+f102r_L03	29	uncertain	o	h d o	d m g
+f102r_L03	30	uncertain	d	d o o	m g d
+f102r_L03	31	uncertain	m	o o d	g d A
+f102r_L03	32	uncertain	g	o d m	d A s
+f102r_L03	33	uncertain	d	d m g	A s d
+f102r_L03	34	uncertain	A	m g d	s d tz
+f102r_L03	35	uncertain	s	g d A	d tz d
+f102r_L03	36	uncertain	d	d A s	tz d p
+f102r_L03	37	uncertain	tz	A s d	d p 3
+f102r_L03	38	uncertain	d	s d tz	p 3 m
+f102r_L03	39	uncertain	p	d tz d	3 m a
+f102r_L03	40	disagree	3 | z	tz d p	m a s
+f102r_L03	41	uncertain	m	d p 3	a s d
+f102r_L03	42	uncertain	a	p 3 m	s d m
+f102r_L03	43	uncertain	s	3 m a	d m g
+f102r_L03	44	uncertain	d	m a s	m g d
+f102r_L03	45	uncertain	m	a s d	g d o
+f102r_L03	46	uncertain	g	s d m	d o o
+f102r_L03	47	uncertain	d	d m g	o o 6
+f102r_L03	48	uncertain	o	m g d	o 6 #
+f102r_L03	49	uncertain	o	g d o	6 # g
+f102r_L03	50	uncertain	6	d o o	# g
+f102r_L03	51	uncertain	#	o o 6	g
+f102r_L03	52	uncertain	g	o 6 #	
+f102r_L04	1	uncertain	m		p r y
+f102r_L04	2	uncertain	p	m	r y m
+f102r_L04	3	disagree	r | y	m p	y m g
+f102r_L04	4	uncertain	y	m p r	m g s
+f102r_L04	5	uncertain	m	p r y	g s tz
+f102r_L04	6	disagree	g | e	r y m	s tz :
+f102r_L04	7	uncertain	s	y m g	tz : #
+f102r_L04	8	uncertain	tz	m g s	: # 3
+f102r_L04	9	uncertain	:	g s tz	# 3 m
+f102r_L04	10	uncertain	#	s tz :	3 m r
+f102r_L04	11	disagree	3 | z	tz : #	m r y
+f102r_L04	12	uncertain	m	: # 3	r y s
+f102r_L04	13	disagree	r | y	# 3 m	y s g
+f102r_L04	14	uncertain	y	3 m r	s g m
+f102r_L04	15	uncertain	s	m r y	g m :
+f102r_L04	16	uncertain	g	r y s	m : d
+f102r_L04	17	uncertain	m	y s g	: d p
+f102r_L04	18	uncertain	:	s g m	d p d
+f102r_L04	19	uncertain	d	g m :	p d tz
+f102r_L04	20	uncertain	p	m : d	d tz j
+f102r_L04	21	uncertain	d	: d p	tz j tz
+f102r_L04	22	uncertain	tz	d p d	j tz s
+f102r_L04	23	uncertain	j	p d tz	tz s #
+f102r_L04	24	uncertain	tz	d tz j	s # tz
+f102r_L04	25	uncertain	s	tz j tz	# tz d
+f102r_L04	26	uncertain	#	j tz s	tz d p
+f102r_L04	27	uncertain	tz	tz s #	d p 3
+f102r_L04	28	uncertain	d	s # tz	p 3 o
+f102r_L04	29	uncertain	p	# tz d	3 o o
+f102r_L04	30	disagree	3 | z	tz d p	o o H
+f102r_L04	31	uncertain	o	d p 3	o H 3
+f102r_L04	32	uncertain	o	p 3 o	H 3 d
+f102r_L04	33	uncertain	H	3 o o	3 d g
+f102r_L04	34	disagree	3 | z	o o H	d g s
+f102r_L04	35	uncertain	d	o H 3	g s p
+f102r_L04	36	uncertain	g	H 3 d	s p 4
+f102r_L04	37	uncertain	s	3 d g	p 4 m
+f102r_L04	38	uncertain	p	d g s	4 m m
+f102r_L04	39	uncertain	4	g s p	m m #
+f102r_L04	40	uncertain	m	s p 4	m # r
+f102r_L04	41	uncertain	m	p 4 m	# r y
+f102r_L04	42	uncertain	#	4 m m	r y m
+f102r_L04	43	disagree	r | y	m m #	y m x
+f102r_L04	44	uncertain	y	m # r	m x d
+f102r_L04	45	uncertain	m	# r y	x d tz
+f102r_L04	46	uncertain	x	r y m	d tz m
+f102r_L04	47	uncertain	d	y m x	tz m p
+f102r_L04	48	uncertain	tz	m x d	m p d
+f102r_L04	49	uncertain	m	x d tz	p d
+f102r_L04	50	uncertain	p	d tz m	d
+f102r_L04	51	uncertain	d	tz m p	
+f102r_L05	1	uncertain	d		o o S
+f102r_L05	2	uncertain	o	d	o S tz
+f102r_L05	3	uncertain	o	d o	S tz m
+f102r_L05	4	uncertain	S	d o o	tz m d
+f102r_L05	5	uncertain	tz	o o S	m d Z
+f102r_L05	6	uncertain	m	o S tz	d Z z
+f102r_L05	7	uncertain	d	S tz m	Z z m
+f102r_L05	8	uncertain	Z	tz m d	z m #
+f102r_L05	9	uncertain	z	m d Z	m # d
+f102r_L05	10	uncertain	m	d Z z	# d o
+f102r_L05	11	uncertain	#	Z z m	d o o
+f102r_L05	12	uncertain	d	z m #	o o :
+f102r_L05	13	uncertain	o	m # d	o : y
+f102r_L05	14	uncertain	o	# d o	: y m
+f102r_L05	15	uncertain	:	d o o	y m g
+f102r_L05	16	uncertain	y	o o :	m g d
+f102r_L05	17	uncertain	m	o : y	g d tz
+f102r_L05	18	uncertain	g	: y m	d tz #
+f102r_L05	19	uncertain	d	y m g	tz # r
+f102r_L05	20	uncertain	tz	m g d	# r y
+f102r_L05	21	uncertain	#	g d tz	r y m
+f102r_L05	22	disagree	r | (no sign)	d tz #	y m g
+f102r_L05	23	uncertain	y	tz # r	m g s
+f102r_L05	24	uncertain	m	# r y	g s tz
+f102r_L05	25	disagree	g | e	r y m	s tz :
+f102r_L05	26	uncertain	s	y m g	tz : #
+f102r_L05	27	uncertain	tz	m g s	: # c
+f102r_L05	28	uncertain	:	g s tz	# c s
+f102r_L05	29	uncertain	#	s tz :	c s d
+f102r_L05	30	uncertain	c	tz : #	s d m
+f102r_L05	31	uncertain	s	: # c	d m s
+f102r_L05	32	uncertain	d	# c s	m s o
+f102r_L05	33	uncertain	m	c s d	s o o
+f102r_L05	34	uncertain	s	s d m	o o m
+f102r_L05	35	uncertain	o	d m s	o m :
+f102r_L05	36	uncertain	o	m s o	m : m
+f102r_L05	37	uncertain	m	s o o	: m x
+f102r_L05	38	uncertain	:	o o m	m x m
+f102r_L05	39	disagree	m | a	o m :	x m d
+f102r_L05	40	uncertain	x	m : m	m d r
+f102r_L05	41	uncertain	m	: m x	d r y
+f102r_L05	42	uncertain	d	m x m	r y s
+f102r_L05	43	disagree	r | y	x m d	y s L
+f102r_L05	44	uncertain	y	m d r	s L d
+f102r_L05	45	uncertain	s	d r y	L d z
+f102r_L05	46	uncertain	L	r y s	d z d
+f102r_L05	47	uncertain	d	y s L	z d R
+f102r_L05	48	uncertain	z	s L d	d R
+f102r_L05	49	uncertain	d	L d z	R
+f102r_L05	50	disagree	R | z	d z d	
+f102r_L06	1	uncertain	m		# tz d
+f102r_L06	2	uncertain	#	m	tz d p
+f102r_L06	3	uncertain	tz	m #	d p b
+f102r_L06	4	uncertain	d	m # tz	p b tz
+f102r_L06	5	uncertain	p	# tz d	b tz m
+f102r_L06	6	uncertain	b	tz d p	tz m 4
+f102r_L06	7	uncertain	tz	d p b	m 4 o
+f102r_L06	8	uncertain	m	p b tz	4 o o
+f102r_L06	9	uncertain	4	b tz m	o o m
+f102r_L06	10	uncertain	o	tz m 4	o m s
+f102r_L06	11	uncertain	o	m 4 o	m s :
+f102r_L06	12	uncertain	m	4 o o	s : m
+f102r_L06	13	uncertain	s	o o m	: m g
+f102r_L06	14	uncertain	:	o m s	m g d
+f102r_L06	15	uncertain	m	m s :	g d a
+f102r_L06	16	uncertain	g	s : m	d a d
+f102r_L06	17	uncertain	d	: m g	a d c
+f102r_L06	18	uncertain	a	m g d	d c a
+f102r_L06	19	uncertain	d	g d a	c a P
+f102r_L06	20	uncertain	c	d a d	a P s
+f102r_L06	21	uncertain	a	a d c	P s tz
+f102r_L06	22	uncertain	P	d c a	s tz x
+f102r_L06	23	uncertain	s	c a P	tz x tz
+f102r_L06	24	uncertain	tz	a P s	x tz 6
+f102r_L06	25	uncertain	x	P s tz	tz 6 d
+f102r_L06	26	uncertain	tz	s tz x	6 d m
+f102r_L06	27	uncertain	6	tz x tz	d m z
+f102r_L06	28	uncertain	d	x tz 6	m z m
+f102r_L06	29	uncertain	m	tz 6 d	z m g
+f102r_L06	30	uncertain	z	6 d m	m g m
+f102r_L06	31	uncertain	m	d m z	g m tz
+f102r_L06	32	uncertain	g	m z m	m tz #
+f102r_L06	33	uncertain	m	z m g	tz # x
+f102r_L06	34	uncertain	tz	m g m	# x s
+f102r_L06	35	uncertain	#	g m tz	x s z
+f102r_L06	36	uncertain	x	m tz #	s z s
+f102r_L06	37	uncertain	s	tz # x	z s tz
+f102r_L06	38	uncertain	z	# x s	s tz x
+f102r_L06	39	uncertain	s	x s z	tz x x
+f102r_L06	40	uncertain	tz	s z s	x x m
+f102r_L06	41	uncertain	x	z s tz	x m z
+f102r_L06	42	uncertain	x	s tz x	m z S
+f102r_L06	43	uncertain	m	tz x x	z S 6
+f102r_L06	44	uncertain	z	x x m	S 6 s
+f102r_L06	45	uncertain	S	x m z	6 s p
+f102r_L06	46	uncertain	6	m z S	s p R
+f102r_L06	47	uncertain	s	z S 6	p R
+f102r_L06	48	uncertain	p	S 6 s	R
+f102r_L06	49	uncertain	R	6 s p	
+f102r_L07	1	uncertain	z		m d s
+f102r_L07	2	uncertain	m	z	d s o
+f102r_L07	3	uncertain	d	z m	s o o
+f102r_L07	4	uncertain	s	z m d	o o d
+f102r_L07	5	uncertain	o	m d s	o d tz
+f102r_L07	6	uncertain	o	d s o	d tz L
+f102r_L07	7	uncertain	d	s o o	tz L d
+f102r_L07	8	uncertain	tz	o o d	L d o
+f102r_L07	9	uncertain	L	o d tz	d o o
+f102r_L07	10	uncertain	d	d tz L	o o z
+f102r_L07	11	uncertain	o	tz L d	o z c
+f102r_L07	12	uncertain	o	L d o	z c s
+f102r_L07	13	uncertain	z	d o o	c s g
+f102r_L07	14	disagree	c | a	o o z	s g r
+f102r_L07	15	uncertain	s	o z c	g r y
+f102r_L07	16	uncertain	g	z c s	r y m
+f102r_L07	17	disagree	r | y	c s g	y m g
+f102r_L07	18	uncertain	y	s g r	m g m
+f102r_L07	19	uncertain	m	g r y	g m #
+f102r_L07	20	uncertain	g	r y m	m # z
+f102r_L07	21	uncertain	m	y m g	# z m
+f102r_L07	22	uncertain	#	m g m	z m z
+f102r_L07	23	uncertain	z	g m #	m z tz
+f102r_L07	24	uncertain	m	m # z	z tz :
+f102r_L07	25	uncertain	z	# z m	tz : #
+f102r_L07	26	uncertain	tz	z m z	: # d
+f102r_L07	27	uncertain	:	m z tz	# d m
+f102r_L07	28	uncertain	#	z tz :	d m o
+f102r_L07	29	uncertain	d	tz : #	m o o
+f102r_L07	30	uncertain	m	: # d	o o j
+f102r_L07	31	uncertain	o	# d m	o j m
+f102r_L07	32	uncertain	o	d m o	j m z
+f102r_L07	33	uncertain	j	m o o	m z m
+f102r_L07	34	uncertain	m	o o j	z m p
+f102r_L07	35	uncertain	z	o j m	m p #
+f102r_L07	36	uncertain	m	j m z	p # Z
+f102r_L07	37	uncertain	p	m z m	# Z m
+f102r_L07	38	uncertain	#	z m p	Z m d
+f102r_L07	39	uncertain	Z	m p #	m d o
+f102r_L07	40	uncertain	m	p # Z	d o m
+f102r_L07	41	uncertain	d	# Z m	o m g
+f102r_L07	42	uncertain	o	Z m d	m g d
+f102r_L07	43	uncertain	m	m d o	g d tz
+f102r_L07	44	uncertain	g	d o m	d tz #
+f102r_L07	45	uncertain	d	o m g	tz # a
+f102r_L07	46	uncertain	tz	m g d	# a d
+f102r_L07	47	uncertain	#	g d tz	a d b
+f102r_L07	48	uncertain	a	d tz #	d b
+f102r_L07	49	uncertain	d	tz # a	b
+f102r_L07	50	uncertain	b	# a d	
+f102r_L08	1	uncertain	m		# r y
+f102r_L08	2	uncertain	#	m	r y o
+f102r_L08	3	disagree	r | y	m #	y o o
+f102r_L08	4	uncertain	y	m # r	o o z
+f102r_L08	5	uncertain	o	# r y	o z s
+f102r_L08	6	uncertain	o	r y o	z s o
+f102r_L08	7	uncertain	z	y o o	s o o
+f102r_L08	8	uncertain	s	o o z	o o g
+f102r_L08	9	uncertain	o	o z s	o g d
+f102r_L08	10	uncertain	o	z s o	g d tz
+f102r_L08	11	uncertain	g	s o o	d tz m
+f102r_L08	12	uncertain	d	o o g	tz m p
+f102r_L08	13	uncertain	tz	o g d	m p S
+f102r_L08	14	uncertain	m	g d tz	p S tz
+f102r_L08	15	uncertain	p	d tz m	S tz m
+f102r_L08	16	uncertain	S	tz m p	tz m p
+f102r_L08	17	uncertain	tz	m p S	m p R
+f102r_L08	18	uncertain	m	p S tz	p R d
+f102r_L08	19	uncertain	p	S tz m	R d x
+f102r_L08	20	uncertain	R	tz m p	d x #
+f102r_L08	21	uncertain	d	m p R	x # r
+f102r_L08	22	uncertain	x	p R d	# r y
+f102r_L08	23	uncertain	#	R d x	r y s
+f102r_L08	24	disagree	r | y	d x #	y s g
+f102r_L08	25	uncertain	y	x # r	s g tz
+f102r_L08	26	uncertain	s	# r y	g tz p
+f102r_L08	27	uncertain	g	r y s	tz p 3
+f102r_L08	28	uncertain	tz	y s g	p 3 m
+f102r_L08	29	uncertain	p	s g tz	3 m r
+f102r_L08	30	disagree	3 | z	g tz p	m r y
+f102r_L08	31	uncertain	m	tz p 3	r y m
+f102r_L08	32	disagree	r | y	p 3 m	y m o
+f102r_L08	33	uncertain	y	3 m r	m o o
+f102r_L08	34	uncertain	m	m r y	o o y
+f102r_L08	35	uncertain	o	r y m	o y x
+f102r_L08	36	uncertain	o	y m o	y x m
+f102r_L08	37	disagree	y | g	m o o	x m d
+f102r_L08	38	uncertain	x	o o y	m d p
+f102r_L08	39	uncertain	m	o y x	d p m
+f102r_L08	40	uncertain	d	y x m	p m z
+f102r_L08	41	uncertain	p	x m d	m z tz
+f102r_L08	42	uncertain	m	m d p	z tz c
+f102r_L08	43	uncertain	z	d p m	tz c a
+f102r_L08	44	uncertain	tz	p m z	c a m
+f102r_L08	45	uncertain	c	m z tz	a m #
+f102r_L08	46	uncertain	a	z tz c	m # g
+f102r_L08	47	uncertain	m	tz c a	# g 7
+f102r_L08	48	uncertain	#	c a m	g 7
+f102r_L08	49	uncertain	g	a m #	7
+f102r_L08	50	uncertain	7	m # g	
+f102r_L09	1	uncertain	S		m j m
+f102r_L09	8	uncertain	Z	x m #	m x c
+f102r_L09	11	uncertain	c	Z m x	m y d
+f102r_L09	27	uncertain	c	o o p	d o o
+f102r_L09	40	uncertain	b	o tz m	3 z m
+f102r_L09	48	disagree	b | d	d tz m	#
+f102r_L10	5	disagree	s | (no sign)	o m x	h o o
+f102r_L10	6	uncertain	h	m x s	o o tz
+f102r_L10	16	uncertain	H	y o s	# {ampersand-like} :
+f102r_L10	17	disagree	(no sign) | #	o s H	{ampersand-like} : c
+f102r_L10	18	disagree	{ampersand-like} | {ampersand}	s H #	: c g
+f102r_L10	20	uncertain	c	# {ampersand-like} :	g tz p
+f102r_L10	25	disagree	m | n	tz p d	3 m 6
+f102r_L10	26	disagree	3 | z	p d m	m 6 s
+f102r_L10	28	uncertain	6	m 3 m	s g d
+f102r_L10	32	uncertain	H	s g d	: y m
+f102r_L10	38	disagree	3 | y	m n o	j R m
+f102r_L10	40	uncertain	R	o 3 j	m # s
+f102r_L10	45	disagree	p | (no sign)	# s g	y m t
+f102r_L10	48	uncertain	t	p y m	
+f102r_L11	3	uncertain	Z	m #	s o o
+f102r_L11	10	uncertain	R	d tz #	g m d
+f102r_L11	14	uncertain	S	g m d	tz m p
+f102r_L12	4	disagree	x | a	: d p	m to r
+f102r_L12	7	uncertain	r	x m to	m p :
+f102r_L12	13	disagree	(no sign) | @	: m s	m r d
+f102r_L12	15	uncertain	r	s @ m	d z #
+f102r_L12	23	uncertain	b	o o g	d tz #
+f102r_L12	30	uncertain	L	y o s	d : y
+f102r_L12	36	disagree	R | r	y m j	d tz m
+f102r_L12	37	disagree	d | o	m j R	tz m j
+f102r_L12	44	uncertain	t	m 3 m	d o o
+f102r_L13	4	uncertain	b	3 m x	s g #
+f102r_L13	7	disagree	# | (no sign)	b s g	# tz :
+f102r_L13	19	disagree	A | @	tz # m	3 o o
+f102r_L13	26	uncertain	4	x tz m	m m #
+f102r_L13	41	uncertain	c	o g x	g m d
+f102r_L13	44	disagree	d | b	c g m	m p #
+f102r_L13	49	uncertain	c	p # m	s g y
+f102r_L13	53	uncertain	7	s g y	
+f102r_L15	8	uncertain	t	m 3 m	d p #
+f102r_L15	12	uncertain	4	d p #	d o o
+f102r_L15	16	uncertain	t	d o o	m g x
+f102r_L15	19	disagree	x | z	t m g	P @ m
+f102r_L15	20	uncertain	P	m g x	@ m r
+f102r_L15	21	disagree	(no sign) | @	g x P	m r d
+f102r_L15	23	uncertain	r	P @ m	d z tz
+f102r_L15	42	disagree	A | @	tz : #	x m y
+f102r_L15	46	disagree	x | y	x m y	d p
+f102r_L16	14	uncertain	Z	tz d p	s o o
+f102r_L16	21	uncertain	c	d tz #	b m o
+f102r_L16	22	uncertain	b	tz # c	m o o
+f102r_L16	28	uncertain	b	o s d	z m b
+f102r_L16	31	uncertain	b	b z m	o o d
+f102r_L16	49	uncertain	4	d o o	b d tz
+f102r_L16	50	uncertain	b	o o 4	d tz b
+f102r_L16	53	disagree	b | (no sign)	b d tz	d
+f102r_L17	5	uncertain	g	x x m	o o tz
+f102r_L17	9	disagree	j | (no sign)	o o tz	g s y
+f102r_L17	10	uncertain	g	o tz j	s y o
+f102r_L17	12	uncertain	y	j g s	o s c
+f102r_L17	15	uncertain	c	y o s	tz tz 4
+f102r_L17	16	disagree	tz | 3	o s c	tz 4 V
+f102r_L17	19	uncertain	V	tz tz 4	tz # m
+f102r_L17	23	uncertain	3	tz # m	m : :
+f102r_L17	25	disagree	(no sign) | :	m 3 m	: m x
+f102r_L17	30	disagree	p | S	m x s	p s tz
+f102r_L17	34	uncertain	g	p s tz	m d tz
+f102r_L17	38	disagree	b | o	m d tz	# m 3
+f102r_L17	41	uncertain	3	b # m	tz o :
+f102r_L17	48	uncertain	g	# d tz	m Z m
+f102r_L17	50	uncertain	Z	tz g m	m d #
+f102r_L18	5	uncertain	g	tz # #	m x s
+f102r_L18	9	uncertain	z	m x s	d m 3
+f102r_L18	12	uncertain	3	z d m	m y o
+f102r_L18	14	uncertain	y	m 3 m	o s S
+f102r_L18	15	disagree	o | x	3 m y	s S d
+f102r_L18	17	uncertain	S	y o s	d o o
+f102r_L18	25	disagree	e | g	m tz p	d g z
+f102r_L18	27	disagree	g | y	p e d	z s #
+f102r_L18	28	uncertain	z	e d g	s # tz
+f102r_L18	34	disagree	n | a	tz d p	tz m y
+f102r_L18	37	uncertain	y	n tz m	o o z
+f102r_L18	40	uncertain	z	y o o	m V s
+f102r_L18	42	uncertain	V	o z m	s o o
+f102r_L18	49	disagree	g | e	d tz x	s tz :
+f102r_L18	50	disagree	s | S	tz x g	tz :
+f102r_L19	5	uncertain	a	m m d	m g s
+f102r_L19	7	uncertain	g	d a m	s p #
+f102r_L19	11	disagree	(no sign) | S	s p #	s : m
+f102r_L19	12	disagree	s | :	p # S	: m n
+f102r_L19	15	disagree	n | a	s : m	tz m y
+f102r_L19	18	uncertain	y	n tz m	o o z
+f102r_L19	21	uncertain	z	y o o	m V 3
+f102r_L19	23	uncertain	V	o z m	3 tz d
+f102r_L19	24	uncertain	3	z m V	tz d d
+f102r_L19	29	disagree	x | (no sign)	d d tz	x n #
+f102r_L19	31	disagree	n | a	tz x x	# d o
+f102r_L19	36	uncertain	R	d o o	m x :
+f102r_L19	39	disagree	(no sign) | :	R m x	: y d
+f102r_L19	41	uncertain	y	x : :	d d m
+f102r_L19	46	disagree	(no sign) | :	d m x	: m o
+f102r_L19	50	uncertain	g	: m o	m o s
+f102r_L19	54	uncertain	g	m o s	d
+f102r_L20	6	uncertain	S	p # s	d p :
+f102r_L20	9	disagree	(no sign) | :	S d p	: y m
+f102r_L20	11	uncertain	y	p : :	m z s
+f102r_L20	13	uncertain	z	: y m	s tz p
+f102r_L20	19	uncertain	Z	p m #	s o o
+f102r_L20	31	uncertain	g	# m #	m x z
+f102r_L20	34	uncertain	z	g m x	s @ tz
+f102r_L20	35	disagree	s | S	m x z	@ tz 3
+f102r_L20	36	disagree	@ | o	x z s	tz 3 s
+f102r_L20	38	uncertain	3	s @ tz	s o o
+f102r_L20	44	uncertain	g	o d tz	m V #
+f102r_L20	46	uncertain	V	tz g m	# m p
+f102r_L20	53	disagree	(no sign) | tz	h o o	
+f102r_L21	1	disagree	n | a		y o m
+f102r_L21	2	uncertain	y	n	o m 3
+f102r_L21	5	uncertain	3	y o m	tz : #
+f102r_L21	9	uncertain	3	tz : #	m e d
+f102r_L21	11	disagree	e | z	# 3 m	d p #
+f102r_L21	19	uncertain	z	d o o	m g z
+f102r_L21	21	uncertain	g	o z m	z m o
+f102r_L21	22	uncertain	z	z m g	m o o
+f102r_L21	28	disagree	n | e	o x #	g tz p
+f102r_L21	29	uncertain	g	x # n	tz p d
+f102r_L21	33	uncertain	S	tz p d	m j r
+f102r_L21	36	disagree	r | R	S m j	tz x y
+f102r_L21	39	uncertain	y	r tz x	o m z
+f102r_L21	42	uncertain	z	y o m	m 3 m
+f102r_L21	44	uncertain	3	m z m	m z s
+f102r_L21	46	uncertain	z	m 3 m	s p h
+f102r_L21	47	disagree	s | S	3 m z	p h s
+f102r_L21	50	disagree	s | S	s p h	p r
+f102r_L21	52	disagree	(no sign) | r	h s p	
+f102r_L22	2	uncertain	3	#	m to z
+f102r_L22	4	uncertain	to	# 3 m	z m j
+f102r_L22	5	uncertain	z	3 m to	m j R
+f102r_L22	8	disagree	(no sign) | R	z m j	r : d
+f102r_L22	9	disagree	r | :	m j R	: d p
+f102r_L22	16	uncertain	z	d m m	s p :
+f102r_L22	19	disagree	(no sign) | :	z s p	: m m
+f102r_L22	35	disagree	b | o	# x tz	V tz s
+f102r_L22	36	uncertain	V	x tz b	tz s o
+f102r_L22	44	uncertain	c	d tz #	s d o
+f102r_L22	49	uncertain	V	d o o	m
+f102r_L23	1	disagree	l | L		d g #
+f102r_L23	3	uncertain	g	l d	# m g
+f102r_L23	6	uncertain	g	g # m	m V o
+f102r_L23	8	uncertain	V	m g m	o m s
+f102r_L23	13	uncertain	z	m s m	d z tz
+f102r_L23	15	uncertain	z	m z d	tz m y
+f102r_L23	18	uncertain	y	z tz m	o o z
+f102r_L23	21	uncertain	z	y o o	g m d
+f102r_L23	22	uncertain	g	o o z	m d a
+f102r_L23	25	uncertain	a	g m d	d p k
+f102r_L23	31	disagree	n | a	k tz x	tz m d
+f102r_L23	35	disagree	(no sign) | :	tz m d	: s o
+f102r_L23	43	uncertain	to	d tz x	V m e
+f102r_L23	44	uncertain	V	tz x to	m e d
+f102r_L23	46	disagree	e | d	to V m	d o o
+f102r_L23	50	uncertain	a	d o o	d 3
+f102r_L23	52	disagree	(no sign) | 3	o a d	
+f102r_L24	5	disagree	n | a	m p #	g d p
+f102r_L24	6	uncertain	g	p # n	d p p
+f102r_L24	13	uncertain	g	tz # m	k m y
+f102r_L24	16	uncertain	y	g k m	o tz x
+f102r_L24	20	uncertain	y	o tz x	o m x
+f102r_L24	25	uncertain	V	m x tz	m x #
+f102r_L24	29	uncertain	3	m x #	m : :
+f102r_L24	31	disagree	(no sign) | :	# 3 m	: m to
+f102r_L24	34	uncertain	to	: : m	s o o
+f102r_L24	41	uncertain	V	d tz m	# o m
+f102r_L24	47	disagree	z | 3	m o o	m d g
+f102r_L24	50	uncertain	g	z m d	d S g
+f102r_L24	52	uncertain	S	d g d	g
+f102r_L24	53	uncertain	g	g d S	
+f102r_L25	2	uncertain	t	m	r y r
+f102r_L25	3	disagree	(no sign) | r	m t	y r s
+f102r_L25	4	uncertain	y	m t r	r s a
+f102r_L25	5	disagree	r | (no sign)	t r y	s a g
+f102r_L25	6	uncertain	s	r y r	a g m
+f102r_L25	7	disagree	a | e	y r s	g m V
+f102r_L25	8	uncertain	g	r s a	m V s
+f102r_L25	10	uncertain	V	a g m	s p #
+f102r_L25	11	uncertain	s	g m V	p # @
+f102r_L25	12	uncertain	p	m V s	# @ m
+f102r_L25	14	uncertain	@	s p #	m P tz
+f102r_L25	16	uncertain	P	# @ m	tz : c
+f102r_L25	19	disagree	c | a	P tz :	d o o
+f102r_L25	23	uncertain	6	d o o	o d tz
+f102r_L25	24	disagree	o | (no sign)	o o 6	d tz #
+f102r_L25	28	uncertain	g	d tz #	o o d
+f102r_L25	33	uncertain	L	o d tz	m x #
+f102r_L25	35	uncertain	x	tz L m	# m @
+f102r_L25	38	uncertain	@	x # m	m Z m
+f102r_L25	40	disagree	Z | P	m @ m	m 6 to
+f102r_L25	42	uncertain	6	m Z m	to Z m
+f102r_L25	43	uncertain	to	Z m 6	Z m :
+f102r_L25	44	disagree	Z | P	m 6 to	m : s
+f102r_L25	47	uncertain	s	Z m :	6 a s
+f102r_L25	48	disagree	6 | d	m : s	a s g
+f102r_L25	49	disagree	a | e	: s 6	s g :
+f102r_L25	50	uncertain	s	s 6 a	g : m
+f102r_L25	51	uncertain	g	6 a s	: m @
+f102r_L25	54	uncertain	@	g : m	m P Z
+f102r_L25	56	disagree	(no sign) | P	m @ m	Z
+f102r_L25	57	disagree	Z | h	@ m P	
+f102r_L26	2	uncertain	j	m	m m x
+f102r_L26	5	uncertain	x	j m m	# d tz
+f102r_L26	10	disagree	c | e	d tz #	d o o
+f102r_L26	14	uncertain	g	d o o	: m @
+f102r_L26	17	uncertain	@	g : m	m Z m
+f102r_L26	19	disagree	Z | P	m @ m	m j R
+f102r_L26	21	uncertain	j	m Z m	R : d
+f102r_L26	22	uncertain	R	Z m j	: d p
+f102r_L26	25	uncertain	p	R : d	# m V
+f102r_L26	28	uncertain	V	p # m	d tz #
+f102r_L26	32	uncertain	S	d tz #	tz r p
+f102r_L26	34	uncertain	r	# S tz	p g m
+f102r_L26	35	uncertain	p	S tz r	g m g
+f102r_L26	36	uncertain	g	tz r p	m g #
+f102r_L26	38	uncertain	g	p g m	# tz j
+f102r_L26	41	uncertain	j	g # tz	R : m
+f102r_L26	42	uncertain	R	# tz j	: m #
+f102r_L26	46	disagree	r | x	: m #	m o o
+f102r_L26	50	disagree	c | e	m o o	6 m 7
+f102r_L26	51	uncertain	6	o o c	m 7
+f102r_L26	53	uncertain	7	c 6 m	
+f102r_L27	1	disagree	3 | Z		s tz x
+f102r_L27	2	uncertain	s	3	tz x c
+f102r_L27	4	uncertain	x	3 s tz	c tz m
+f102r_L27	5	disagree	c | e	s tz x	tz m V
+f102r_L27	8	uncertain	V	c tz m	s o o
+f102r_L27	9	uncertain	s	tz m V	o o d
+f102r_L27	14	uncertain	x	o d tz	6 : m
+f102r_L27	15	disagree	6 | b	d tz x	: m o
+f102r_L27	20	uncertain	to	m o o	m o o
+f102r_L27	24	disagree	6 | @	m o o	m p #
+f102r_L27	26	uncertain	p	o 6 m	# o g
+f102r_L27	29	uncertain	g	p # o	tz x r
+f102r_L27	31	uncertain	x	o g tz	r y r
+f102r_L27	32	disagree	(no sign) | r	g tz x	y r s
+f102r_L27	33	uncertain	y	tz x r	r s l
+f102r_L27	34	disagree	r | (no sign)	x r y	s l d
+f102r_L27	35	uncertain	s	r y r	l d y
+f102r_L27	36	disagree	l | L	y r s	d y #
+f102r_L27	38	uncertain	y	s l d	# m g
+f102r_L27	41	uncertain	g	y # m	m V m
+f102r_L27	43	uncertain	V	m g m	m m #
+f102r_L27	47	disagree	c | e	m m #	tz R :
+f102r_L27	49	uncertain	R	# c tz	:
+f102r_L27	50	disagree	(no sign) | :	c tz R	
+f102r_L28	1	uncertain	V		R y r
+f102r_L28	2	uncertain	R	V	y r y
+f102r_L28	3	disagree	y | :	V R	r y o
+f102r_L28	4	uncertain	r	V R y	y o o
+f102r_L28	5	disagree	(no sign) | y	R y r	o o z
+f102r_L28	8	uncertain	z	y o o	c d o
+f102r_L28	9	disagree	c | e	o o z	d o o
+f102r_L28	13	uncertain	z	d o o	d tz x
+f102r_L28	16	uncertain	x	z d tz	s o o
+f102r_L28	17	uncertain	s	d tz x	o o 6
+f102r_L28	20	disagree	6 | @	s o o	tz c m
+f102r_L28	22	disagree	c | e	o 6 tz	m o o
+f102r_L28	26	uncertain	z	m o o	tz g m
+f102r_L28	28	uncertain	g	o z tz	m @ m
+f102r_L28	30	uncertain	@	tz g m	m Z m
+f102r_L28	32	disagree	Z | P	m @ m	m j R
+f102r_L28	34	uncertain	j	m Z m	R m j
+f102r_L28	35	uncertain	R	Z m j	m j R
+f102r_L28	37	uncertain	j	j R m	R m 6
+f102r_L28	38	uncertain	R	R m j	m 6 #
+f102r_L28	40	disagree	6 | b	j R m	# d tz
+f102r_L28	45	disagree	c | e	d tz #	f V m
+f102r_L28	46	uncertain	f	tz # c	V m y
+f102r_L28	47	uncertain	V	# c f	m y r
+f102r_L28	49	disagree	y | (no sign)	f V m	r s
+f102r_L28	50	uncertain	r	V m y	s
+f102r_L28	51	uncertain	s	m y r	
+f102r_L29	5	uncertain	y	o d tz	tz S 3
+f102r_L29	7	disagree	S | s	tz y tz	3 S tz
+f102r_L29	8	disagree	3 | Z	y tz S	S tz x
+f102r_L29	9	disagree	S | s	tz S 3	tz x o
+f102r_L29	11	uncertain	x	3 S tz	o o m
+f102r_L29	18	disagree	3 | Z	o o m	S tz x
+f102r_L29	19	disagree	S | s	o m 3	tz x @
+f102r_L29	21	uncertain	x	3 S tz	@ m a
+f102r_L29	22	uncertain	@	S tz x	m a s
+f102r_L29	24	uncertain	a	x @ m	s o o
+f102r_L29	25	uncertain	s	@ m a	o o m
+f102r_L29	30	uncertain	@	o m :	m Z m
+f102r_L29	32	disagree	Z | P	: @ m	m x #
+f102r_L29	34	uncertain	x	m Z m	# d o
+f102r_L29	42	disagree	(no sign) | r	# : m	y r s
+f102r_L29	43	uncertain	y	: m r	r s tz
+f102r_L29	44	disagree	r | (no sign)	m r y	s tz m
+f102r_L29	45	uncertain	s	r y r	tz m 6
+f102r_L29	48	disagree	6 | b	s tz m	: s o
+f102r_L29	50	uncertain	s	m 6 :	o o d
+f102r_L29	55	uncertain	x	o d tz	
+f102r_L30	1	uncertain	@		m Z m
+f102r_L30	3	disagree	Z | P	@ m	m j R
+f102r_L30	5	uncertain	j	m Z m	R V g
+f102r_L30	6	uncertain	R	Z m j	V g o
+f102r_L30	7	uncertain	V	m j R	g o o
+f102r_L30	8	uncertain	g	j R V	o o d
+f102r_L30	14	disagree	c | e	d tz #	d tz p
+f102r_L30	17	uncertain	p	c d tz	# 3 m
+f102r_L30	19	uncertain	3	tz p #	m c d
+f102r_L30	21	disagree	c | e	# 3 m	d y #
+f102r_L30	23	uncertain	y	m c d	# @ m
+f102r_L30	25	uncertain	@	d y #	m P tz
+f102r_L30	27	uncertain	P	# @ m	tz : l
+f102r_L30	30	disagree	l | Z	P tz :	m o s
+f102r_L30	32	disagree	o | e	: l m	s tz 6
+f102r_L30	33	uncertain	s	l m o	tz 6 d
+f102r_L30	35	disagree	6 | b	o s tz	d tz #
+f102r_L30	40	uncertain	g	tz # :	d z y
+f102r_L30	42	uncertain	z	: g d	y m c
+f102r_L30	43	uncertain	y	g d z	m c S
+f102r_L30	45	disagree	c | e	z y m	S tz m
+f102r_L30	46	uncertain	S	y m c	tz m 6
+f102r_L30	48	disagree	m | n	c S tz	6 :
+f102r_L30	49	disagree	6 | V	S tz m	:
+f102r_L31	3	uncertain	x	# d	# y o
+f102r_L31	5	uncertain	y	d x #	o m b
+f102r_L31	8	disagree	(no sign) | b	y o m	6 y r
+f102r_L31	9	disagree	6 | r	o m b	y r s
+f102r_L31	10	uncertain	y	m b 6	r s 6
+f102r_L31	11	disagree	r | (no sign)	b 6 y	s 6 d
+f102r_L31	12	uncertain	s	6 y r	6 d p
+f102r_L31	13	uncertain	6	y r s	d p x
+f102r_L31	15	uncertain	p	s 6 d	x r y
+f102r_L31	16	uncertain	x	6 d p	r y r
+f102r_L31	17	disagree	(no sign) | r	d p x	y r s
+f102r_L31	18	uncertain	y	p x r	r s 3
+f102r_L31	19	disagree	r | (no sign)	x r y	s 3 m
+f102r_L31	20	uncertain	s	r y r	3 m x
+f102r_L31	21	uncertain	3	y r s	m x m
+f102r_L31	23	uncertain	x	s 3 m	m P o
+f102r_L31	25	uncertain	P	m x m	o s g
+f102r_L31	26	disagree	o | e	x m P	s g m
+f102r_L31	27	uncertain	s	m P o	g m L
+f102r_L31	28	uncertain	g	P o s	m L d
+f102r_L31	30	uncertain	L	s g m	d tz m
+f102r_L31	34	uncertain	p	d tz m	# r y
+f102r_L31	36	disagree	(no sign) | r	m p #	y r s
+f102r_L31	37	uncertain	y	p # r	r s g
+f102r_L31	38	disagree	r | (no sign)	# r y	s g m
+f102r_L31	39	uncertain	s	r y r	g m o
+f102r_L31	40	uncertain	g	y r s	m o o
+f102r_L31	45	disagree	(no sign) | r	o o #	y r s
+f102r_L31	46	uncertain	y	o # r	r s g
+f102r_L31	47	disagree	r | (no sign)	# r y	s g tz
+f102r_L31	48	uncertain	s	r y r	g tz p
+f102r_L31	49	disagree	g | L	y r s	tz p 3
+f102r_L31	51	uncertain	p	s g tz	3 m V
+f102r_L31	52	uncertain	3	g tz p	m V d
+f102r_L31	54	uncertain	V	p 3 m	d x #
+f102r_L31	56	uncertain	x	m V d	#
+f102r_L32	1	uncertain	t		m c g
+f102r_L32	3	disagree	c | e	t m	g S #
+f102r_L32	4	uncertain	g	t m c	S # tz
+f102r_L32	5	disagree	S | s	m c g	# tz :
+f102r_L32	9	uncertain	@	# tz :	m Z m
+f102r_L32	11	disagree	Z | P	: @ m	m V m
+f102r_L32	13	uncertain	V	m Z m	m r y
+f102r_L32	15	disagree	(no sign) | r	m V m	y r s
+f102r_L32	16	uncertain	y	V m r	r s Z
+f102r_L32	17	disagree	r | (no sign)	m r y	s Z P
+f102r_L32	18	uncertain	s	r y r	Z P V
+f102r_L32	19	disagree	Z | z	y r s	P V #
+f102r_L32	20	uncertain	P	r s Z	V # o
+f102r_L32	21	uncertain	V	s Z P	# o o
+f102r_L32	26	disagree	Z | P	o o d	j o o
+f102r_L32	27	uncertain	j	o d Z	o o 3
+f102r_L32	30	uncertain	3	j o o	s o o
+f102r_L32	31	uncertain	s	o o 3	o o m
+f102r_L32	35	uncertain	V	o o m	# S tz
+f102r_L32	37	uncertain	S	m V #	tz 4 m
+f102r_L32	39	uncertain	4	# S tz	m tz P
+f102r_L32	42	uncertain	P	4 m tz	c d g
+f102r_L32	43	disagree	c | e	m tz P	d g #
+f102r_L32	45	disagree	g | y	P c d	# o o
+f102r_L32	49	uncertain	V	# o o	m g
+f102r_L32	51	uncertain	g	o V m	
+f102r_L33	1	uncertain	o		o o tz
+f102r_L33	4	uncertain	tz	o o o	x : a
+f102r_L33	6	uncertain	:	o tz x	a tz m
+f102r_L33	12	disagree	n | m	m o o	d x d
+f102r_L33	18	uncertain	Z	d tz x	L {tilde} s
+f102r_L33	19	disagree	L | (no sign)	tz x Z	{tilde} s o
+f102r_L33	20	disagree	{tilde} | {flourish}	x Z L	s o o
+f102r_L33	36	disagree	3 | Z	tz d p	m g s
+f102r_L33	41	uncertain	y	g s tz	m d m
+f102r_L34	9	uncertain	c	: m s	m P d
+f102r_L34	13	disagree	3 | Z	m P d	tz m y
+f102r_L34	32	disagree	g | y	# R tz	m y H
+f102r_L34	34	uncertain	y	tz g m	H H
+f102r_L34	35	disagree	(no sign) | H	g m y	H
+f102r_L34	36	uncertain	H	m y H	
+f102r_L35	1	uncertain	S		P y y
+f102r_L35	4	uncertain	y	S P y	s c s
+f102r_L35	14	disagree	n | m	o o A	# 3 m
+f102r_L35	16	uncertain	3	A n #	m x x
+f102r_L35	18	disagree	x | (no sign)	# 3 m	x m y
+f102r_L35	22	uncertain	:	x m y	tz b {tilde}
+f102r_L35	24	disagree	b | 6	y : tz	{tilde} tz s
+f102r_L35	25	disagree	{tilde} | {flourish}	: tz b	tz s o
+f102r_L35	30	disagree	t | (no sign)	s o o	4 x m
+f102r_L35	31	uncertain	4	o o t	x m o
+f102r_L35	38	uncertain	c	o 6 to	tz : 3
+f102r_L35	40	uncertain	:	to c tz	3 m p
+f102r_L35	41	disagree	3 | Z	c tz :	m p s
+f102r_L35	45	disagree	z | Z	m p s	# tz s
+f102r_L35	49	disagree	3 | Z	# tz s	s tz x
+f102r_L35	54	uncertain	S	tz x c	
+f102r_L36	1	uncertain	g		y y m
+f102r_L36	7	uncertain	c	m P to	tz tz 6
+f102r_L36	36	uncertain	{flourish}	p h tz	m d m
+f102r_L37	4	disagree	g | tz	m x :	tz a #
+f102r_L37	8	uncertain	{boxed sign}	tz a #	L h o
+f102r_L37	9	disagree	L | 2	a # {boxed sign}	h o S
+f102r_L37	10	uncertain	h	# {boxed sign} L	o S S
+f102r_L37	13	disagree	S | s	h o S	y y s
+f102r_L37	19	disagree	(no sign) | tz	s c s	to a y
+f102r_L37	26	disagree	3 | Z	y d p	tz o :
+f102r_L37	28	disagree	o | (no sign)	p 3 tz	: # to
+f102r_L37	32	disagree	2 | Z	: # to	m o o
+f102r_L37	40	disagree	S | s	m # g	tz L m

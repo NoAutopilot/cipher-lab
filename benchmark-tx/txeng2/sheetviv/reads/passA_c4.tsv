@@ -1,0 +1,414 @@
+line	pos	sign	alt	conf
+f102r_L25	1	m		H
+f102r_L25	2	t		M
+f102r_L25	3	y		M
+f102r_L25	4	r		M
+f102r_L25	5	s		M
+f102r_L25	6	a		M
+f102r_L25	7	g		M
+f102r_L25	8	m		H
+f102r_L25	9	V		M
+f102r_L25	10	s		M
+f102r_L25	11	p		M
+f102r_L25	12	#		H
+f102r_L25	13	@		M
+f102r_L25	14	m		H
+f102r_L25	15	P		M
+f102r_L25	16	tz		H
+f102r_L25	17	:		H
+f102r_L25	18	c	a	M
+f102r_L25	19	d		H
+f102r_L25	20	o		H
+f102r_L25	21	o		H
+f102r_L25	22	6	d	M
+f102r_L25	23	o		H
+f102r_L25	24	d		H
+f102r_L25	25	tz		H
+f102r_L25	26	#		H
+f102r_L25	27	g		M
+f102r_L25	28	o		H
+f102r_L25	29	o		H
+f102r_L25	30	d		H
+f102r_L25	31	tz		H
+f102r_L25	32	L	l	M
+f102r_L25	33	m		H
+f102r_L25	34	x		M
+f102r_L25	35	#		H
+f102r_L25	36	m		H
+f102r_L25	37	@		M
+f102r_L25	38	m		H
+f102r_L25	39	Z	2	M
+f102r_L25	40	m		H
+f102r_L25	41	6	d	M
+f102r_L25	42	to		M
+f102r_L25	43	Z	2	M
+f102r_L25	44	m		H
+f102r_L25	45	:		H
+f102r_L25	46	s		M
+f102r_L25	47	6	d	M
+f102r_L25	48	a		M
+f102r_L25	49	s		M
+f102r_L25	50	g		M
+f102r_L25	51	:		H
+f102r_L25	52	m		H
+f102r_L25	53	@		M
+f102r_L25	54	m		H
+f102r_L25	55	Z	2	M
+f102r_L26	1	m		H
+f102r_L26	2	j		M
+f102r_L26	3	m		H
+f102r_L26	4	m		H
+f102r_L26	5	x		M
+f102r_L26	6	#		H
+f102r_L26	7	d		H
+f102r_L26	8	tz		H
+f102r_L26	9	#		H
+f102r_L26	10	c	a	M
+f102r_L26	11	d		H
+f102r_L26	12	o		H
+f102r_L26	13	o		H
+f102r_L26	14	g		M
+f102r_L26	15	:		H
+f102r_L26	16	m		H
+f102r_L26	17	@		M
+f102r_L26	18	m		H
+f102r_L26	19	Z	2	M
+f102r_L26	20	m		H
+f102r_L26	21	j		M
+f102r_L26	22	R	r	M
+f102r_L26	23	:		H
+f102r_L26	24	d		H
+f102r_L26	25	p		M
+f102r_L26	26	#		H
+f102r_L26	27	m		H
+f102r_L26	28	V		M
+f102r_L26	29	d		H
+f102r_L26	30	tz		H
+f102r_L26	31	#		H
+f102r_L26	32	S	s	M
+f102r_L26	33	tz		H
+f102r_L26	34	r		M
+f102r_L26	35	p		M
+f102r_L26	36	g		M
+f102r_L26	37	m		H
+f102r_L26	38	g		M
+f102r_L26	39	#		H
+f102r_L26	40	tz		H
+f102r_L26	41	j		M
+f102r_L26	42	R	r	M
+f102r_L26	43	:		H
+f102r_L26	44	m		H
+f102r_L26	45	#		H
+f102r_L26	46	r		M
+f102r_L26	47	m		H
+f102r_L26	48	o		H
+f102r_L26	49	o		H
+f102r_L26	50	c	a	M
+f102r_L26	51	6	d	M
+f102r_L26	52	m		H
+f102r_L26	53	7		M
+f102r_L27	1	3	Z	M
+f102r_L27	2	s		M
+f102r_L27	3	tz		H
+f102r_L27	4	x		M
+f102r_L27	5	c	a	M
+f102r_L27	6	tz		H
+f102r_L27	7	m		H
+f102r_L27	8	V		M
+f102r_L27	9	s		M
+f102r_L27	10	o		H
+f102r_L27	11	o		H
+f102r_L27	12	d		H
+f102r_L27	13	tz		H
+f102r_L27	14	x		M
+f102r_L27	15	6	d	M
+f102r_L27	16	:		H
+f102r_L27	17	m		H
+f102r_L27	18	o		H
+f102r_L27	19	o		H
+f102r_L27	20	to		M
+f102r_L27	21	m		H
+f102r_L27	22	o		H
+f102r_L27	23	o		H
+f102r_L27	24	6	d	M
+f102r_L27	25	m		H
+f102r_L27	26	p		M
+f102r_L27	27	#		H
+f102r_L27	28	o		H
+f102r_L27	29	g		M
+f102r_L27	30	tz		H
+f102r_L27	31	x		M
+f102r_L27	32	y		M
+f102r_L27	33	r		M
+f102r_L27	34	s		M
+f102r_L27	35	l	L	M
+f102r_L27	36	d		H
+f102r_L27	37	y		M
+f102r_L27	38	#		H
+f102r_L27	39	m		H
+f102r_L27	40	g		M
+f102r_L27	41	m		H
+f102r_L27	42	V		M
+f102r_L27	43	m		H
+f102r_L27	44	m		H
+f102r_L27	45	#		H
+f102r_L27	46	c	a	M
+f102r_L27	47	tz		H
+f102r_L27	48	R	r	M
+f102r_L28	1	V		M
+f102r_L28	2	R	r	M
+f102r_L28	3	y		M
+f102r_L28	4	r		M
+f102r_L28	5	o		H
+f102r_L28	6	o		H
+f102r_L28	7	z	Z	M
+f102r_L28	8	c	a	M
+f102r_L28	9	d		H
+f102r_L28	10	o		H
+f102r_L28	11	o		H
+f102r_L28	12	z	Z	M
+f102r_L28	13	d		H
+f102r_L28	14	tz		H
+f102r_L28	15	x		M
+f102r_L28	16	s		M
+f102r_L28	17	o		H
+f102r_L28	18	o		H
+f102r_L28	19	6	d	M
+f102r_L28	20	tz		H
+f102r_L28	21	c	a	M
+f102r_L28	22	m		H
+f102r_L28	23	o		H
+f102r_L28	24	o		H
+f102r_L28	25	z	Z	M
+f102r_L28	26	tz		H
+f102r_L28	27	g		M
+f102r_L28	28	m		H
+f102r_L28	29	@		M
+f102r_L28	30	m		H
+f102r_L28	31	Z	2	M
+f102r_L28	32	m		H
+f102r_L28	33	j		M
+f102r_L28	34	R	r	M
+f102r_L28	35	m		H
+f102r_L28	36	j		M
+f102r_L28	37	R	r	M
+f102r_L28	38	m		H
+f102r_L28	39	6	d	M
+f102r_L28	40	#		H
+f102r_L28	41	d		H
+f102r_L28	42	tz		H
+f102r_L28	43	#		H
+f102r_L28	44	c	a	M
+f102r_L28	45	f		M
+f102r_L28	46	V		M
+f102r_L28	47	m		H
+f102r_L28	48	y		M
+f102r_L28	49	r		M
+f102r_L28	50	s		M
+f102r_L29	1	o		H
+f102r_L29	2	o		H
+f102r_L29	3	d		H
+f102r_L29	4	tz		H
+f102r_L29	5	y		M
+f102r_L29	6	tz		H
+f102r_L29	7	S	s	M
+f102r_L29	8	3	Z	M
+f102r_L29	9	S	s	M
+f102r_L29	10	tz		H
+f102r_L29	11	x		M
+f102r_L29	12	o		H
+f102r_L29	13	o		H
+f102r_L29	14	m		H
+f102r_L29	15	o		H
+f102r_L29	16	o		H
+f102r_L29	17	m		H
+f102r_L29	18	3	Z	M
+f102r_L29	19	S	s	M
+f102r_L29	20	tz		H
+f102r_L29	21	x		M
+f102r_L29	22	@		M
+f102r_L29	23	m		H
+f102r_L29	24	a		M
+f102r_L29	25	s		M
+f102r_L29	26	o		H
+f102r_L29	27	o		H
+f102r_L29	28	m		H
+f102r_L29	29	:		H
+f102r_L29	30	@		M
+f102r_L29	31	m		H
+f102r_L29	32	Z	2	M
+f102r_L29	33	m		H
+f102r_L29	34	x		M
+f102r_L29	35	#		H
+f102r_L29	36	d		H
+f102r_L29	37	o		H
+f102r_L29	38	o		H
+f102r_L29	39	#		H
+f102r_L29	40	:		H
+f102r_L29	41	m		H
+f102r_L29	42	y		M
+f102r_L29	43	r		M
+f102r_L29	44	s		M
+f102r_L29	45	tz		H
+f102r_L29	46	m		H
+f102r_L29	47	6	d	M
+f102r_L29	48	:		H
+f102r_L29	49	s		M
+f102r_L29	50	o		H
+f102r_L29	51	o		H
+f102r_L29	52	d		H
+f102r_L29	53	tz		H
+f102r_L29	54	x		M
+f102r_L30	1	@		M
+f102r_L30	2	m		H
+f102r_L30	3	Z	2	M
+f102r_L30	4	m		H
+f102r_L30	5	j		M
+f102r_L30	6	R	r	M
+f102r_L30	7	V		M
+f102r_L30	8	g		M
+f102r_L30	9	o		H
+f102r_L30	10	o		H
+f102r_L30	11	d		H
+f102r_L30	12	tz		H
+f102r_L30	13	#		H
+f102r_L30	14	c	a	M
+f102r_L30	15	d		H
+f102r_L30	16	tz		H
+f102r_L30	17	p		M
+f102r_L30	18	#		H
+f102r_L30	19	3	Z	M
+f102r_L30	20	m		H
+f102r_L30	21	c	a	M
+f102r_L30	22	d		H
+f102r_L30	23	y		M
+f102r_L30	24	#		H
+f102r_L30	25	@		M
+f102r_L30	26	m		H
+f102r_L30	27	P		M
+f102r_L30	28	tz		H
+f102r_L30	29	:		H
+f102r_L30	30	l	L	M
+f102r_L30	31	m		H
+f102r_L30	32	o		H
+f102r_L30	33	s		M
+f102r_L30	34	tz		H
+f102r_L30	35	6	d	M
+f102r_L30	36	d		H
+f102r_L30	37	tz		H
+f102r_L30	38	#		H
+f102r_L30	39	:		H
+f102r_L30	40	g		M
+f102r_L30	41	d		H
+f102r_L30	42	z	Z	M
+f102r_L30	43	y		M
+f102r_L30	44	m		H
+f102r_L30	45	c	a	M
+f102r_L30	46	S	s	M
+f102r_L30	47	tz		H
+f102r_L30	48	m		H
+f102r_L30	49	6	d	M
+f102r_L30	50	:		H
+f102r_L31	1	#		H
+f102r_L31	2	d		H
+f102r_L31	3	x		M
+f102r_L31	4	#		H
+f102r_L31	5	y		M
+f102r_L31	6	o		H
+f102r_L31	7	m		H
+f102r_L31	8	6	d	M
+f102r_L31	9	y		M
+f102r_L31	10	r		M
+f102r_L31	11	s		M
+f102r_L31	12	6	d	M
+f102r_L31	13	d		H
+f102r_L31	14	p		M
+f102r_L31	15	x		M
+f102r_L31	16	y		M
+f102r_L31	17	r		M
+f102r_L31	18	s		M
+f102r_L31	19	3	Z	M
+f102r_L31	20	m		H
+f102r_L31	21	x		M
+f102r_L31	22	m		H
+f102r_L31	23	P		M
+f102r_L31	24	o		H
+f102r_L31	25	s		M
+f102r_L31	26	g		M
+f102r_L31	27	m		H
+f102r_L31	28	L	l	M
+f102r_L31	29	d		H
+f102r_L31	30	tz		H
+f102r_L31	31	m		H
+f102r_L31	32	p		M
+f102r_L31	33	#		H
+f102r_L31	34	y		M
+f102r_L31	35	r		M
+f102r_L31	36	s		M
+f102r_L31	37	g		M
+f102r_L31	38	m		H
+f102r_L31	39	o		H
+f102r_L31	40	o		H
+f102r_L31	41	#		H
+f102r_L31	42	y		M
+f102r_L31	43	r		M
+f102r_L31	44	s		M
+f102r_L31	45	g		M
+f102r_L31	46	tz		H
+f102r_L31	47	p		M
+f102r_L31	48	3	Z	M
+f102r_L31	49	m		H
+f102r_L31	50	V		M
+f102r_L31	51	d		H
+f102r_L31	52	x		M
+f102r_L31	53	#		H
+f102r_L32	1	t		M
+f102r_L32	2	m		H
+f102r_L32	3	c	a	M
+f102r_L32	4	g		M
+f102r_L32	5	S	s	M
+f102r_L32	6	#		H
+f102r_L32	7	tz		H
+f102r_L32	8	:		H
+f102r_L32	9	@		M
+f102r_L32	10	m		H
+f102r_L32	11	Z	2	M
+f102r_L32	12	m		H
+f102r_L32	13	V		M
+f102r_L32	14	m		H
+f102r_L32	15	y		M
+f102r_L32	16	r		M
+f102r_L32	17	s		M
+f102r_L32	18	Z	2	M
+f102r_L32	19	P		M
+f102r_L32	20	V		M
+f102r_L32	21	#		H
+f102r_L32	22	o		H
+f102r_L32	23	o		H
+f102r_L32	24	d		H
+f102r_L32	25	Z	2	M
+f102r_L32	26	j		M
+f102r_L32	27	o		H
+f102r_L32	28	o		H
+f102r_L32	29	3	Z	M
+f102r_L32	30	s		M
+f102r_L32	31	o		H
+f102r_L32	32	o		H
+f102r_L32	33	m		H
+f102r_L32	34	V		M
+f102r_L32	35	#		H
+f102r_L32	36	S	s	M
+f102r_L32	37	tz		H
+f102r_L32	38	4		M
+f102r_L32	39	m		H
+f102r_L32	40	tz		H
+f102r_L32	41	P		M
+f102r_L32	42	c	a	M
+f102r_L32	43	d		H
+f102r_L32	44	g		M
+f102r_L32	45	#		H
+f102r_L32	46	o		H
+f102r_L32	47	o		H
+f102r_L32	48	V		M
+f102r_L32	49	m		H
+f102r_L32	50	g		M

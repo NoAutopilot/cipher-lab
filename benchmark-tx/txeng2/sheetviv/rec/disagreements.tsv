@@ -1,0 +1,190 @@
+line	col	A	B	flagged	crop
+f102r_L01	2	-	:	B	
+f102r_L01	5	l	-	A	
+f102r_L01	26	L	-	A	
+f102r_L01	29	r	y	AB	
+f102r_L01	32	g	e	AB	
+f102r_L01	37	r	y	AB	
+f102r_L01	40	d	z	B	
+f102r_L02	4	r	y	AB	
+f102r_L02	10	t	-	A	
+f102r_L02	11	g	tz	AB	
+f102r_L02	21	R	z	AB	
+f102r_L02	31	g	p	AB	
+f102r_L02	38	R	z	AB	
+f102r_L03	15	r	y	AB	
+f102r_L03	40	3	z	AB	
+f102r_L04	3	r	y	AB	
+f102r_L04	6	g	e	AB	
+f102r_L04	11	3	z	AB	
+f102r_L04	13	r	y	AB	
+f102r_L04	30	3	z	AB	
+f102r_L04	34	3	z	AB	
+f102r_L04	43	r	y	AB	
+f102r_L05	22	r	-	A	
+f102r_L05	25	g	e	AB	
+f102r_L05	39	m	a	B	
+f102r_L05	43	r	y	AB	
+f102r_L05	50	R	z	AB	
+f102r_L07	14	c	a	AB	
+f102r_L07	17	r	y	AB	
+f102r_L08	3	r	y	AB	
+f102r_L08	24	r	y	AB	
+f102r_L08	30	3	z	AB	
+f102r_L08	32	r	y	AB	
+f102r_L08	37	y	g	AB	
+f102r_L09	48	b	d	A	
+f102r_L10	5	s	-		
+f102r_L10	17	-	#		
+f102r_L10	18	{ampersand-like}	{ampersand}	AB	
+f102r_L10	25	m	n		
+f102r_L10	26	3	z		
+f102r_L10	38	3	y		
+f102r_L10	45	p	-		
+f102r_L12	4	x	a		
+f102r_L12	13	-	@	B	
+f102r_L12	36	R	r	AB	
+f102r_L12	37	d	o		
+f102r_L13	7	#	-		
+f102r_L13	19	A	@	AB	
+f102r_L13	44	d	b	B	
+f102r_L15	19	x	z		
+f102r_L15	21	-	@	B	
+f102r_L15	42	A	@	AB	
+f102r_L15	46	x	y		
+f102r_L16	53	b	-	A	
+f102r_L17	9	j	-		
+f102r_L17	16	tz	3	B	
+f102r_L17	25	-	:		
+f102r_L17	30	p	S		
+f102r_L17	38	b	o		
+f102r_L18	15	o	x		
+f102r_L18	25	e	g	B	
+f102r_L18	27	g	y	B	
+f102r_L18	34	n	a	B	
+f102r_L18	49	g	e	B	
+f102r_L18	50	s	S		
+f102r_L19	11	-	S		
+f102r_L19	12	s	:		
+f102r_L19	15	n	a	B	
+f102r_L19	29	x	-		
+f102r_L19	31	n	a	B	
+f102r_L19	39	-	:		
+f102r_L19	46	-	:		
+f102r_L20	9	-	:		
+f102r_L20	35	s	S		
+f102r_L20	36	@	o	A	
+f102r_L20	53	-	tz		
+f102r_L21	1	n	a	B	
+f102r_L21	11	e	z	B	
+f102r_L21	28	n	e	B	
+f102r_L21	36	r	R	AB	
+f102r_L21	47	s	S		
+f102r_L21	50	s	S		
+f102r_L21	52	-	r		
+f102r_L22	8	-	R	B	
+f102r_L22	9	r	:	A	
+f102r_L22	19	-	:		
+f102r_L22	35	b	o		
+f102r_L23	1	l	L	B	
+f102r_L23	31	n	a	B	
+f102r_L23	35	-	:		
+f102r_L23	46	e	d		
+f102r_L23	52	-	3	B	
+f102r_L24	5	n	a	B	
+f102r_L24	31	-	:		
+f102r_L24	47	z	3	B	
+f102r_L25	3	-	r	B	
+f102r_L25	5	r	-	A	
+f102r_L25	7	a	e	A	
+f102r_L25	19	c	a	AB	
+f102r_L25	24	o	-		
+f102r_L25	40	Z	P	AB	
+f102r_L25	44	Z	P	AB	
+f102r_L25	48	6	d	A	
+f102r_L25	49	a	e	A	
+f102r_L25	56	-	P	B	
+f102r_L25	57	Z	h	AB	
+f102r_L26	10	c	e	AB	
+f102r_L26	19	Z	P	AB	
+f102r_L26	46	r	x	A	
+f102r_L26	50	c	e	A	
+f102r_L27	1	3	Z	AB	
+f102r_L27	5	c	e	A	
+f102r_L27	15	6	b	AB	
+f102r_L27	24	6	@	AB	
+f102r_L27	32	-	r		
+f102r_L27	34	r	-	A	
+f102r_L27	36	l	L	A	
+f102r_L27	47	c	e	AB	
+f102r_L27	50	-	:		
+f102r_L28	3	y	:	A	
+f102r_L28	5	-	y		
+f102r_L28	9	c	e	A	
+f102r_L28	20	6	@	AB	
+f102r_L28	22	c	e	A	
+f102r_L28	32	Z	P	AB	
+f102r_L28	40	6	b	A	
+f102r_L28	45	c	e	A	
+f102r_L28	49	y	-	A	
+f102r_L29	7	S	s	A	
+f102r_L29	8	3	Z	A	
+f102r_L29	9	S	s	A	
+f102r_L29	18	3	Z	A	
+f102r_L29	19	S	s	A	
+f102r_L29	32	Z	P	AB	
+f102r_L29	42	-	r		
+f102r_L29	44	r	-	A	
+f102r_L29	48	6	b	A	
+f102r_L30	3	Z	P	AB	
+f102r_L30	14	c	e	A	
+f102r_L30	21	c	e	A	
+f102r_L30	30	l	Z	AB	
+f102r_L30	32	o	e		
+f102r_L30	35	6	b	AB	
+f102r_L30	45	c	e	A	
+f102r_L30	48	m	n		
+f102r_L30	49	6	V	AB	
+f102r_L31	8	-	b		
+f102r_L31	9	6	r	A	
+f102r_L31	11	r	-	A	
+f102r_L31	17	-	r		
+f102r_L31	19	r	-	A	
+f102r_L31	26	o	e		
+f102r_L31	36	-	r		
+f102r_L31	38	r	-	A	
+f102r_L31	45	-	r		
+f102r_L31	47	r	-	A	
+f102r_L31	49	g	L	AB	
+f102r_L32	3	c	e	A	
+f102r_L32	5	S	s	A	
+f102r_L32	11	Z	P	AB	
+f102r_L32	15	-	r		
+f102r_L32	17	r	-	A	
+f102r_L32	19	Z	z	A	
+f102r_L32	26	Z	P	AB	
+f102r_L32	43	c	e	A	
+f102r_L32	45	g	y	A	
+f102r_L33	12	n	m	A	
+f102r_L33	19	L	-	A	
+f102r_L33	20	{tilde}	{flourish}	AB	
+f102r_L33	36	3	Z		
+f102r_L34	13	3	Z	A	
+f102r_L34	32	g	y	B	
+f102r_L34	35	-	H	B	
+f102r_L35	14	n	m	A	
+f102r_L35	18	x	-		
+f102r_L35	24	b	6	B	
+f102r_L35	25	{tilde}	{flourish}	AB	
+f102r_L35	30	t	-		
+f102r_L35	41	3	Z		
+f102r_L35	45	z	Z		
+f102r_L35	49	3	Z		
+f102r_L37	4	g	tz	B	
+f102r_L37	9	L	2	A	
+f102r_L37	13	S	s		
+f102r_L37	19	-	tz		
+f102r_L37	26	3	Z		
+f102r_L37	28	o	-		
+f102r_L37	32	2	Z	A	
+f102r_L37	40	S	s		

@@ -1,0 +1,189 @@
+label	agent	tool	target	ok
+A1	ac3033afbe4612e89	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads/task_A1.txt	ok
+A1	ac3033afbe4612e89	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/glyphs/sheet_tomokiyo_v1.png	ok
+A1	ac3033afbe4612e89	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L01_s1.jpg	ok
+A1	ac3033afbe4612e89	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L01_s2.jpg	ok
+A1	ac3033afbe4612e89	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L02_s1.jpg	ok
+A1	ac3033afbe4612e89	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L02_s2.jpg	ok
+A1	ac3033afbe4612e89	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L03_s1.jpg	ok
+A1	ac3033afbe4612e89	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L03_s2.jpg	ok
+A1	ac3033afbe4612e89	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L04_s1.jpg	ok
+A1	ac3033afbe4612e89	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L04_s2.jpg	ok
+A1	ac3033afbe4612e89	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L05_s1.jpg	ok
+A1	ac3033afbe4612e89	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L05_s2.jpg	ok
+A1	ac3033afbe4612e89	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L06_s1.jpg	ok
+A1	ac3033afbe4612e89	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L06_s2.jpg	ok
+A1	ac3033afbe4612e89	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L07_s1.jpg	ok
+A1	ac3033afbe4612e89	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L07_s2.jpg	ok
+A1	ac3033afbe4612e89	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L08_s1.jpg	ok
+A1	ac3033afbe4612e89	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L08_s2.jpg	ok
+A1	ac3033afbe4612e89	Bash	Bash write script; paths named: /home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads/passA_c1.tsv	ok
+A1	ac3033afbe4612e89	SubagentHandback	(reply) {"message": "f102r_L01 56, f102r_L02 55, f102r_L03 52, f102r_L04 51, f102r_L05 50, f102r_L06 49, f102r_L07 50, f102r_L08	ok
+A2	a8f0090e2684058ac	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads/task_A2.txt	ok
+A2	a8f0090e2684058ac	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/glyphs/sheet_tomokiyo_v1.png	ok
+A2	a8f0090e2684058ac	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L09_s1.jpg	ok
+A2	a8f0090e2684058ac	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L09_s2.jpg	ok
+A2	a8f0090e2684058ac	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L10_s1.jpg	ok
+A2	a8f0090e2684058ac	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L10_s2.jpg	ok
+A2	a8f0090e2684058ac	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L11_s1.jpg	ok
+A2	a8f0090e2684058ac	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L11_s2.jpg	ok
+A2	a8f0090e2684058ac	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L12_s1.jpg	ok
+A2	a8f0090e2684058ac	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L12_s2.jpg	ok
+A2	a8f0090e2684058ac	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L13_s1.jpg	ok
+A2	a8f0090e2684058ac	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L13_s2.jpg	ok
+A2	a8f0090e2684058ac	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L14_s1.jpg	ok
+A2	a8f0090e2684058ac	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L14_s2.jpg	ok
+A2	a8f0090e2684058ac	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L15_s1.jpg	ok
+A2	a8f0090e2684058ac	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L15_s2.jpg	ok
+A2	a8f0090e2684058ac	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L16_s1.jpg	ok
+A2	a8f0090e2684058ac	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L16_s2.jpg	ok
+A2	a8f0090e2684058ac	Bash	Bash write script; paths named: /home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads passA_c2.tsv	ok
+A2	a8f0090e2684058ac	SubagentHandback	(reply) {"message": "Row counts by line, written to /home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads/passA_c2.tsv:\nL09 	ok
+A3	a9259943279564ca6	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads/task_A3.txt	ok
+A3	a9259943279564ca6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/glyphs/sheet_tomokiyo_v1.png	ok
+A3	a9259943279564ca6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L17_s1.jpg	ok
+A3	a9259943279564ca6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L17_s2.jpg	ok
+A3	a9259943279564ca6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L18_s1.jpg	ok
+A3	a9259943279564ca6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L18_s2.jpg	ok
+A3	a9259943279564ca6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L19_s1.jpg	ok
+A3	a9259943279564ca6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L19_s2.jpg	ok
+A3	a9259943279564ca6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L20_s1.jpg	ok
+A3	a9259943279564ca6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L20_s2.jpg	ok
+A3	a9259943279564ca6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L21_s1.jpg	ok
+A3	a9259943279564ca6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L21_s2.jpg	ok
+A3	a9259943279564ca6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L22_s1.jpg	ok
+A3	a9259943279564ca6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L22_s2.jpg	ok
+A3	a9259943279564ca6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L23_s1.jpg	ok
+A3	a9259943279564ca6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L23_s2.jpg	ok
+A3	a9259943279564ca6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L24_s1.jpg	ok
+A3	a9259943279564ca6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L24_s2.jpg	ok
+A3	a9259943279564ca6	Bash	Bash write script; paths named: /home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads passA_c3.tsv	ok
+A3	a9259943279564ca6	SubagentHandback	(reply) {"message": "I wrote /home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads/passA_c3.tsv. Rows per line: f102r_L17 52,	ok
+A4	a0b752d78dea97643	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads/task_A4.txt	ok
+A4	a0b752d78dea97643	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/glyphs/sheet_tomokiyo_v1.png	ok
+A4	a0b752d78dea97643	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L25_s1.jpg	ok
+A4	a0b752d78dea97643	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L25_s2.jpg	ok
+A4	a0b752d78dea97643	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L26_s1.jpg	ok
+A4	a0b752d78dea97643	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L26_s2.jpg	ok
+A4	a0b752d78dea97643	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L27_s1.jpg	ok
+A4	a0b752d78dea97643	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L27_s2.jpg	ok
+A4	a0b752d78dea97643	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L28_s1.jpg	ok
+A4	a0b752d78dea97643	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L28_s2.jpg	ok
+A4	a0b752d78dea97643	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L29_s1.jpg	ok
+A4	a0b752d78dea97643	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L29_s2.jpg	ok
+A4	a0b752d78dea97643	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L30_s1.jpg	ok
+A4	a0b752d78dea97643	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L30_s2.jpg	ok
+A4	a0b752d78dea97643	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L31_s1.jpg	ok
+A4	a0b752d78dea97643	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L31_s2.jpg	ok
+A4	a0b752d78dea97643	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L32_s1.jpg	ok
+A4	a0b752d78dea97643	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L32_s2.jpg	ok
+A4	a0b752d78dea97643	Bash	Bash write script; paths named: /home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads passA_c4.tsv	ok
+A4	a0b752d78dea97643	SubagentHandback	(reply) {"message": "L25 55, L26 53, L27 48, L28 50, L29 54, L30 50, L31 53, L32 50 (413 rows, written to /home/user/cipher-lab/	ok
+A5	a207454a8be9e110c	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads/task_A5.txt	ok
+A5	a207454a8be9e110c	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/glyphs/sheet_tomokiyo_v1.png	ok
+A5	a207454a8be9e110c	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L33_s1.jpg	ok
+A5	a207454a8be9e110c	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L33_s2.jpg	ok
+A5	a207454a8be9e110c	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L34_s1.jpg	ok
+A5	a207454a8be9e110c	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L34_s2.jpg	ok
+A5	a207454a8be9e110c	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L35_s1.jpg	ok
+A5	a207454a8be9e110c	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L35_s2.jpg	ok
+A5	a207454a8be9e110c	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L36_s1.jpg	ok
+A5	a207454a8be9e110c	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L36_s2.jpg	ok
+A5	a207454a8be9e110c	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L37_s1.jpg	ok
+A5	a207454a8be9e110c	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L37_s2.jpg	ok
+A5	a207454a8be9e110c	Bash	Bash write script; paths named: /home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads/passA_c5.tsv	ok
+A5	a207454a8be9e110c	SubagentHandback	(reply) {"message": "f102r_L33: 54\nf102r_L34: 36\nf102r_L35: 54\nf102r_L36: 49\nf102r_L37: 44"}	ok
+B1	a09cd8078591b3f1a	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads/task_B1.txt	ok
+B1	a09cd8078591b3f1a	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/glyphs/sheet_tomokiyo_v1.png	ok
+B1	a09cd8078591b3f1a	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L01_s1.jpg	ok
+B1	a09cd8078591b3f1a	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L01_s2.jpg	ok
+B1	a09cd8078591b3f1a	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L02_s1.jpg	ok
+B1	a09cd8078591b3f1a	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L02_s2.jpg	ok
+B1	a09cd8078591b3f1a	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L03_s1.jpg	ok
+B1	a09cd8078591b3f1a	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L03_s2.jpg	ok
+B1	a09cd8078591b3f1a	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L04_s1.jpg	ok
+B1	a09cd8078591b3f1a	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L04_s2.jpg	ok
+B1	a09cd8078591b3f1a	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L05_s1.jpg	ok
+B1	a09cd8078591b3f1a	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L05_s2.jpg	ok
+B1	a09cd8078591b3f1a	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L06_s1.jpg	ok
+B1	a09cd8078591b3f1a	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L06_s2.jpg	ok
+B1	a09cd8078591b3f1a	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L07_s1.jpg	ok
+B1	a09cd8078591b3f1a	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L07_s2.jpg	ok
+B1	a09cd8078591b3f1a	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L08_s1.jpg	ok
+B1	a09cd8078591b3f1a	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L08_s2.jpg	ok
+B1	a09cd8078591b3f1a	Bash	Bash write script; paths named: /home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads/passB_c1.tsv	ok
+B1	a09cd8078591b3f1a	SubagentHandback	(reply) {"message": "Rows per line:\nf102r_L01: 55\nf102r_L02: 54\nf102r_L03: 52\nf102r_L04: 51\nf102r_L05: 49\nf102r_L06: 49\nf	ok
+B2	a11c99299d7c63344	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads/task_B2.txt	ok
+B2	a11c99299d7c63344	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/glyphs/sheet_tomokiyo_v1.png	ok
+B2	a11c99299d7c63344	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L09_s1.jpg	ok
+B2	a11c99299d7c63344	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L09_s2.jpg	ok
+B2	a11c99299d7c63344	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L10_s1.jpg	ok
+B2	a11c99299d7c63344	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L10_s2.jpg	ok
+B2	a11c99299d7c63344	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L11_s1.jpg	ok
+B2	a11c99299d7c63344	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L11_s2.jpg	ok
+B2	a11c99299d7c63344	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L12_s1.jpg	ok
+B2	a11c99299d7c63344	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L12_s2.jpg	ok
+B2	a11c99299d7c63344	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L13_s1.jpg	ok
+B2	a11c99299d7c63344	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L13_s2.jpg	ok
+B2	a11c99299d7c63344	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L14_s1.jpg	ok
+B2	a11c99299d7c63344	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L14_s2.jpg	ok
+B2	a11c99299d7c63344	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L15_s1.jpg	ok
+B2	a11c99299d7c63344	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L15_s2.jpg	ok
+B2	a11c99299d7c63344	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L16_s1.jpg	ok
+B2	a11c99299d7c63344	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L16_s2.jpg	ok
+B2	a11c99299d7c63344	Bash	Bash write script; paths named: /home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads/passB_c2.tsv	ok
+B2	a11c99299d7c63344	SubagentHandback	(reply) {"message": "I wrote the TSV to /home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads/passB_c2.tsv. Rows per line:\n-	ok
+B3	acb27ba869a41dd16	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads/task_B3.txt	ok
+B3	acb27ba869a41dd16	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/glyphs/sheet_tomokiyo_v1.png	ok
+B3	acb27ba869a41dd16	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L17_s1.jpg	ok
+B3	acb27ba869a41dd16	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L17_s2.jpg	ok
+B3	acb27ba869a41dd16	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L18_s1.jpg	ok
+B3	acb27ba869a41dd16	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L18_s2.jpg	ok
+B3	acb27ba869a41dd16	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L19_s1.jpg	ok
+B3	acb27ba869a41dd16	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L19_s2.jpg	ok
+B3	acb27ba869a41dd16	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L20_s1.jpg	ok
+B3	acb27ba869a41dd16	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L20_s2.jpg	ok
+B3	acb27ba869a41dd16	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L21_s1.jpg	ok
+B3	acb27ba869a41dd16	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L21_s2.jpg	ok
+B3	acb27ba869a41dd16	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L22_s1.jpg	ok
+B3	acb27ba869a41dd16	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L22_s2.jpg	ok
+B3	acb27ba869a41dd16	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L23_s1.jpg	ok
+B3	acb27ba869a41dd16	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L23_s2.jpg	ok
+B3	acb27ba869a41dd16	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L24_s1.jpg	ok
+B3	acb27ba869a41dd16	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L24_s2.jpg	ok
+B3	acb27ba869a41dd16	Bash	Bash write script; paths named: /home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads passB_c3.tsv	ok
+B3	acb27ba869a41dd16	SubagentHandback	(reply) {"message": "The TSV is written to /home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads/passB_c3.tsv. Rows per line:	ok
+B4	a09954f4de2b98a96	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads/task_B4.txt	ok
+B4	a09954f4de2b98a96	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/glyphs/sheet_tomokiyo_v1.png	ok
+B4	a09954f4de2b98a96	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L25_s1.jpg	ok
+B4	a09954f4de2b98a96	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L25_s2.jpg	ok
+B4	a09954f4de2b98a96	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L26_s1.jpg	ok
+B4	a09954f4de2b98a96	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L26_s2.jpg	ok
+B4	a09954f4de2b98a96	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L27_s1.jpg	ok
+B4	a09954f4de2b98a96	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L27_s2.jpg	ok
+B4	a09954f4de2b98a96	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L28_s1.jpg	ok
+B4	a09954f4de2b98a96	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L28_s2.jpg	ok
+B4	a09954f4de2b98a96	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L29_s1.jpg	ok
+B4	a09954f4de2b98a96	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L29_s2.jpg	ok
+B4	a09954f4de2b98a96	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L30_s1.jpg	ok
+B4	a09954f4de2b98a96	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L30_s2.jpg	ok
+B4	a09954f4de2b98a96	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L31_s1.jpg	ok
+B4	a09954f4de2b98a96	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L31_s2.jpg	ok
+B4	a09954f4de2b98a96	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L32_s1.jpg	ok
+B4	a09954f4de2b98a96	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L32_s2.jpg	ok
+B4	a09954f4de2b98a96	Bash	Bash write script; paths named: /home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads passB_c4.tsv	ok
+B4	a09954f4de2b98a96	SubagentHandback	(reply) {"message": "Rows per line, written to /home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads/passB_c4.tsv: f102r_L25 	ok
+B5	aeac72a433794f6d6	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads/task_B5.txt	ok
+B5	aeac72a433794f6d6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/glyphs/sheet_tomokiyo_v1.png	ok
+B5	aeac72a433794f6d6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L33_s1.jpg	ok
+B5	aeac72a433794f6d6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L33_s2.jpg	ok
+B5	aeac72a433794f6d6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L34_s1.jpg	ok
+B5	aeac72a433794f6d6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L34_s2.jpg	ok
+B5	aeac72a433794f6d6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L35_s1.jpg	ok
+B5	aeac72a433794f6d6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L35_s2.jpg	ok
+B5	aeac72a433794f6d6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L36_s1.jpg	ok
+B5	aeac72a433794f6d6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L36_s2.jpg	ok
+B5	aeac72a433794f6d6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L37_s1.jpg	ok
+B5	aeac72a433794f6d6	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L37_s2.jpg	ok
+B5	aeac72a433794f6d6	Bash	Bash write script; paths named: /home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads/passB_c5.tsv	ok
+B5	aeac72a433794f6d6	SubagentHandback	(reply) {"message": "Rows per line in /home/user/cipher-lab/benchmark-tx/txeng2/sheetviv/reads/passB_c5.tsv:\nf102r_L33 53\nf102	ok
