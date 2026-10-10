@@ -1,0 +1,18 @@
+vivonne1573-f102r-dev [dev] as measured: err_true(0.75-indel align) 0.431 (434/1008) | standard SER (unit-cost Levenshtein) 0.426 (429/1008): S 373 D 20 I 36 | wrong 371 deleted 21 inserted 42 | excluded 840 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 371/987 = 0.376 | coverage 987/1008 = 0.979
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.158 (159/1008) | standard SER 0.155 (156/1008)
+paired passZ_dv1.tsv vs committed.tsv on vivonne1573-f102r-dev [as measured]: 36 lines; lines improved 0, worsened 33, tied 3; line sign test p = 0.0000; unit-cost edits base 330 -> output 429 over 1008 scored signs | beside, sign-level position McNemar: 1008 common scored signs; base wrong 330, output wrong 392; fixed 2, broken 64; exact p = 0.0000
+  top confusions (truth value <- read): d<-d x10, a<-3 x9, a<-S x8, s<-m x8, r<-y x8, a<-2 x7, s<-: x7, a<-d x7
+split dev: err_true(0.75-indel align) 0.431 (434/1008) | standard SER 0.426 (429/1008)
+vivonne1573-f102r-dev [dev] as measured: err_true(0.75-indel align) 0.445 (449/1008) | standard SER (unit-cost Levenshtein) 0.444 (448/1008): S 394 D 24 I 30 | wrong 393 deleted 24 inserted 32 | excluded 840 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 393/984 = 0.399 | coverage 984/1008 = 0.976
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.186 (188/1008) | standard SER 0.185 (187/1008)
+paired passA_dv1.tsv vs committed.tsv on vivonne1573-f102r-dev [as measured]: 36 lines; lines improved 0, worsened 31, tied 5; line sign test p = 0.0000; unit-cost edits base 330 -> output 448 over 1008 scored signs | beside, sign-level position McNemar: 1008 common scored signs; base wrong 330, output wrong 417; fixed 2, broken 89; exact p = 0.0000
+  top confusions (truth value <- read): a<-S x18, a<-3 x11, d<-d x10, r<-y x9, s<-m x9, s<-: x7, a<-d x7, a<-2 x6
+split dev: err_true(0.75-indel align) 0.445 (449/1008) | standard SER 0.444 (448/1008)
+vivonne1573-f102r-dev [dev] as measured: err_true(0.75-indel align) 0.415 (418/1008) | standard SER (unit-cost Levenshtein) 0.408 (411/1008): S 362 D 22 I 27 | wrong 360 deleted 24 inserted 34 | excluded 840 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 360/984 = 0.366 | coverage 984/1008 = 0.976
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.141 (142/1008) | standard SER 0.136 (137/1008)
+paired passB_dv1.tsv vs committed.tsv on vivonne1573-f102r-dev [as measured]: 36 lines; lines improved 1, worsened 30, tied 5; line sign test p = 0.0000; unit-cost edits base 330 -> output 411 over 1008 scored signs | beside, sign-level position McNemar: 1008 common scored signs; base wrong 330, output wrong 384; fixed 2, broken 56; exact p = 0.0000
+  top confusions (truth value <- read): d<-d x10, s<-: x8, s<-m x8, a<-3 x7, a<-d x7, e<-d x6, u<-tz x6, r<-y x6
+split dev: err_true(0.75-indel align) 0.415 (418/1008) | standard SER 0.408 (411/1008)
