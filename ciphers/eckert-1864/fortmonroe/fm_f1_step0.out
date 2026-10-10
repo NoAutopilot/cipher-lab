@@ -1,0 +1,31 @@
+entry	row	key	window	a	lcs/n	b_p95	hit	c_key_meanings	c_plain_absent
+X440	5752/0	no1	0	0.636	21/33	0.273	HIT	attack city dana fifteen james point richmond secretary smith volunteer war	ed
+X440	5752/0	no1shuf	0	0.618	21/34	0.265	HIT	effect fifteen gunboat help movement new president secretary state track valley york	ed
+E441	5699/1	no1	1	0.787	48/61	0.213	HIT	alexandria chief cipher fourteen general left nine point river west yorktown	
+E441	5699/1	no1shuf	1	0.750	48/64	0.203	HIT	alabama chief fourteen general government hurlbut killing major newbern nine selma staff stevenson	
+E442	5707/0	no1	0	0.785	51/65	0.215	HIT	city gillmore head point river white williamsburg	
+E442	5707/0	no1shuf	0	0.773	51/66	0.212	HIT	defeat geo information jno logan potomac red river thomas	
+E443	5785/1	no1	0+1	0.741	20/27	0.370	HIT	general grant newbern thirteen	
+E443	5785/1	no1shuf	1	0.731	19/26	0.308	HIT	burnside diversion fortify general major meridian thirteen	
+X444	5799/0	no1	0	1.000	13/13	0.462	HIT		
+X444	5799/0	no1shuf	0	1.000	13/13	0.462	HIT		
+E445	5816/2	no1	2	0.783	18/23	0.348	HIT	butler general major porter tomorrow	
+E445	5816/2	no1shuf	2	0.818	18/22	0.364	HIT	alexandria chief government staff	
+E446	5583/2	no1	1+2	0.846	22/26	0.385	HIT	baltimore butler general humboldt	
+E446	5583/2	no1shuf	1+2	0.786	22/28	0.357	HIT	general heavy helena thomas treasury	
+E447	5827/0	no1	0	0.667	14/21	0.333	HIT	mile porter six telegraph tomorrow	
+E447	5827/0	no1shuf	0	0.667	14/21	0.286	HIT	after chief government gunboat six staff winchester	
+E448	5793/1	no1	1	0.810	17/21	0.429	HIT	secretary today war	
+E448	5793/1	no1shuf	1	0.850	17/20	0.400	HIT	chattahoochee colonel movement	
+X449	5822/2	no1	2	0.800	12/15	0.467	HIT	colonel division mcminnville	
+X449	5822/2	no1shuf	2	0.706	12/17	0.412	HIT	bowling green hampshire new troops	
+E466	5638/0	no1	0	0.800	16/20	0.400	HIT	butler general telegraph	
+E466	5638/0	no1shuf	0	0.762	16/21	0.381	HIT	general thomas winchester	
+X467	5632/2	no1	2	0.739	17/23	0.348	HIT	fifteen fifty mile necessary telegraph	
+X467	5632/2	no1shuf	2	0.739	17/23	0.348	HIT	after dana fifteen fifty winchester	
+E468	5810/1	no1	1	0.667	10/15	0.400	HIT	butler general major tomorrow	
+E468	5810/1	no1shuf	1	0.588	10/17	0.353	HIT	chief general major newbern staff thomas	
+E469	5720/0	no1	0	0.684	13/19	0.368	HIT	bridge fifteen grant twenty	
+E469	5720/0	no1shuf	0	0.684	13/19	0.368	HIT	butterfield division fifteen twenty	
+E470	5814/0	no1	0	0.800	12/15	0.467	HIT	porter telegraph three	
+E470	5814/0	no1shuf	0	0.800	12/15	0.467	HIT	government three winchester	

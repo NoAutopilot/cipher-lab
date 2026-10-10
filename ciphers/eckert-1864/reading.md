@@ -2369,5 +2369,71 @@ S. H. Beckwith City Point {time: 11 AM} for [Brigadier General] J. A Rawlins [Ch
 
 Code-word tokens: H 31.
 
-Totals over the 373 entries: H 6527, C 94, I 25, M 46, S 21, U 10.
+**E441 | Page 155 | 5699 | mssEC 25 (obj 5952, pointer 5699), 27 May 1864 Washington, T. T. Eckert to Sheldon at Ft Monroe (received): the operators should have reached Monroe, left Alexandria yesterday, boat probably delayed; your cipher received, suggestions good, will adopt the route after the General-in-Chief's opinion; how wide is the river at Yorktown, can a No. 14 wire be stretched across at that point or will it need cable; also how wide at West Point; dread the necessity of cables; chance for poles on the route (FM-F1, filed from FM-R9; row 5699/1)**
+
+Geo D Sheldon Ft Monroe Operators should have reached [Monroe] by this morning [Left] [Alexandria] yesterday boat probably delayed [.] your [Cipher] received the suggestions are good and unless find some good reason against will adopt the route will get [General-in-Chief]'s opinion however before deciding [.] how wide is [River] at [Yorktown] [?] can a number [14] wire be stretched cross at that [Point] or will it require cable also how wide is {time: 7 PM} [9] it [West Point] [?] I dread necessity for use of cables what is chance for poles on route you propose answer quick T. T. Eckert
+
+Code-word tokens: H 16.
+
+**E442 | Page 163 | 5707 | mssEC 25 (obj 5952, pointer 5707), 27 May 1864 11.30 PM, Hd Qrs Genl Butler, R. O'Brien to Maj. Eckert (received): Butler must have an office at his Head Quarters, one at Gillmore's and one at the [Bermuda] landing, and wants City Point connected by cable; construction party to start tomorrow with Homan and Collings; party goes to Williamsburg via Jamestown Island; about one mile of cable to connect City Point (FM-F1, filed from FM-R9; row 5707/0)**
+
+Maj Eckert Di 11.30 PM Yours received [Maj Gen B. F. Butler] says he must have office at his [Head Quarters] one at [Gen Q. A. Gillmore]'s & one at [White River] landing wants [City Point] connected by cable I will start construction party material etc tomorrow with homan & Collings retaining one operator for each office & one repairer with little fine wire for repairs [.] party will go to [Williamsburg] via Jamestown island & report for duty it will require about one mile of cable to connect [City Point] [.] I will find exact distance and get Mr Sheldon to send it R OBrien
+
+Code-word tokens: H 9.
+
+**E443 | Page 241 | 5785 | mssEC 25 (obj 5952, pointer 5785), 1 Oct 1864 Ft Monroe, Sheldon to John Horner, New York, for Surgeon Charles McDougall: yellow fever is prevailing to considerable extent at Newbern, N.C.; I have thought best to notify you at once; E. McClellan (FM-F1, filed from FM-S1; row 5785/1; image-read at 2400 px by FM-S1)**
+
+[Maj Genl U.S. Grant] Horner New York [Monroe] {time: 11 AM} [1] for Surgeon Charles McDougall [New York] [.] Yell oh [13] is prevailing to considerable extent at [Newbern] N see I have thought best to notify you at once E. McClellan Geo. D. Sheldon
+
+Code-word tokens: H 8.
+
+**E445 | Page 272 | 5816 | mssEC 25 (obj 5952, pointer 5816), 6 Dec 1864 Butler's Hd Qrs, R. O'Brien to Sheldon at Ft Monroe (received), 6 PM, for D. D. Porter: Mr Baird will arrive tomorrow morning on the City of Hendron; please have him sent here with his instruments (FM-F1, filed from FM-S1; row 5816/2; image-read at 2400 px by FM-S1)**
+
+Geo D Sheldon Ft. Monroe {time: 6 PM} for [D. D. Porter] [.] Mr Baird sly will arrive at appear [Tomorrow] morning [,] please have him sent here with his instruments [,] furies etc on city of Hendron [Maj Gen B. F. Butler] R OBrien
+
+Code-word tokens: H 7.
+
+**E446 | Page 39 | 5583 | mssEC 25 (obj 5952, pointer 5583), 12 Mar 1864 Ft Monroe, Sheldon to Maj. Eckert: General Butler desires to know if the operator at Cherrystone is the same W. A. Dunn formerly employed in the American office at Baltimore; answer quick; I don't know the reason (FM-F1, filed from FM-S1; row 5583/2)**
+
+Maj Eckert Di [Maj Gen B. F. Butler] desires to know if the wrangler at [Humboldt] Stone is the same W A Dunn formerly employed Employed [In the] American off is at [Baltimore] answer quick I dont know reason Geo D Sheldon
+
+Code-word tokens: H 4.
+
+**E447 | Page 283 | 5827 | mssEC 25 (obj 5952, pointer 5827), 10 Dec 1864 City Point, S. H. Beckwith to Sheldon at Ft Monroe (received), for D. D. Porter: U.S.S. Saugus, six miles above City Point; telegram just received, will start down at [daylight?] tomorrow; E. R. Cole, Commander; 11 PM (FM-F1, filed from FM-S1; row 5827/0)**
+
+Geo. D. Sheldon Ft Monroe Us S Saugus [6] [Mile]'s above [City Point] {time: 9.30 PM} for [D. D. Porter] [.] [Telegraph (-ed, -ing)] just received will start down at early delight [Tomorrow]  {tail: [signed] E. R Cole hound [Command = Er (-ed, -ing)]er {time: 11 PM} S. H. Beckwith}
+
+Code-word tokens: H 11.
+
+**E448 | Page 249 | 5793 | mssEC 25 (obj 5952, pointer 5793), 15 Oct 1864 Washington, T. T. Eckert to Dealy at Ft Monroe (received): don't fail to be at the wharf when the Manhattan arrives from Washington with the Secretary of War on board; don't mention his coming to anyone; presume Bates has posted you fully (FM-F1, filed from FM-S1; row 5793/1)**
+
+Dealy "F" dont fail to be at [Today] when the man hattan arrives from [Washington] with [Secretary of War] on board dont mention his coming to any one presume Bates posted you fully etc T. T. Eckert
+
+Code-word tokens: H 3.
+
+**E466 | Page 94 | 5638 | mssEC 25 (obj 5952, pointer 5638), 29 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert: I referred your telegram about Dunn to General Butler; he returns it endorsed 'I know of none and do not believe a word against him'; appears settled (FM-F1, filed from FM-S2; row 5638/0)**
+
+Maj Eckert Di I referred your [Telegraph (-ed, -ing)] about Dunn to [Maj Gen B. F. Butler] he returns it endorsed ["] I Know of none and do not believe a word against him ["] appears settled Geo D Sheldon
+
+Code-word tokens: H 4.
+
+**E468 | Page 266 | 5810 | mssEC 25 (obj 5952, pointer 5810), 28 Nov 1864 City Point, S. H. Beckwith to Sheldon at Ft Monroe (received), for Butler: [if so] I will meet you [at Monroe] tomorrow at 10.30 AM and the Admiral there at 3 PM; about (FM-F1, filed from FM-S2; row 5810/1)**
+
+Geo D Sheldon Ft. Monroe For [Maj Gen B. F. Butler] {time: 10.30 AM} Monday miller beat [Monroe] Alday [Tomorrow] [?] if so I will meat you and the admire all there at {time: 3 PM}  {tail: [signed] [Maj Genl U.S. Grant] about SH Beckwith}
+
+Code-word tokens: H 8.
+
+**E469 | Page 176 | 5720 | mssEC 25 (obj 5952, pointer 5720), 30 May 1864 7.30 PM, Gen Butler's Hd Qrs, R. O'Brien to Maj. Eckert (received): private; I hear heavy and continuous firing about 15 miles from here in the direction of the battery; it may be that Grant has reached there (FM-F1, filed from FM-S2; row 5720/0)**
+
+Maj Eckert Di private {time: 7.30 PM} [20] poney [.] I here heavy & continuous firing about [15] miles from here in direction of battery [Bridge (-ed, -ing)] it may be [Maj Genl U.S. Grant] has reached there R OBrien
+
+Code-word tokens: H 6.
+
+**E470 | Page 270 | 5814 | mssEC 25 (obj 5952, pointer 5814), 1 Dec 1864 8 AM, Butler's Hd Qrs, R. O'Brien to Sheldon at Ft Monroe (received), for D. D. Porter: your telegram received; the three monitors Mahopac, Canonicus and Saugus are ready for service; Commander Parker (FM-F1, filed from FM-S2; row 5814/0)**
+
+Geo D Sheldon Ft. Monroe {time: 8 AM} for [D. D. Porter] [.] Your [Telegraph (-ed, -ing)] received [.] the [3] monitors Mahopac canon cuss and Saugus are ready for service  {tail: [signed] [Command = Er (-ed, -ing)]er park Kerr R OBrien}
+
+Code-word tokens: H 8.
+
+Totals over the 384 entries: H 6611, C 94, I 25, M 46, S 21, U 10.
 <!-- decode.py: derived block ends -->

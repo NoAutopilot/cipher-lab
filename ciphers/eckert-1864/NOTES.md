@@ -5740,7 +5740,7 @@ Four clean 1864 Fort Monroe rows (Huntington object 5952 = mssEC 25) that no ent
 | 5650/0 | no book | 0.943 (33/35) under No. 1; 0.914 No. 2; 0.971 No. 9 | 0.314 | YES (plain words, any book) | 1-2 words only |
 All four are step-0 hits: body in holder transcription (plain words carry the telegram; the code words are a few names and numbers). Per the ruling a reader files nothing for a hit and does not search print.
 
-**Per-row line.** 5752/0: step-0 skip (c names Dana, Secretary of War, City Point, W. F. Smith; lead only: Dana's 16 June dispatches via Jamestown Island, OR I/40 pt 1 pp.20-22 per the E256 note, not checked). 5699/1: step-0 skip. 5707/0: step-0 skip. 5650/0: step-0 skip and no book in hand (no clause above the authentication distance under any book). Holder clear copy: not searched (hit rows). Not located: not claimed.
+**Per-row line.** 5752/0: **FM-F1: in print, not filed** (be-api); step-0 skip (c names Dana, Secretary of War, City Point, W. F. Smith; lead only: Dana's 16 June dispatches via Jamestown Island, OR I/40 pt 1 pp.20-22 per the E256 note, not checked). 5699/1: **filed E441 (FM-F1)**; step-0 skip superseded. 5707/0: **filed E442 (FM-F1)**; step-0 skip superseded. 5650/0: step-0 skip and no book in hand (no clause above the authentication distance under any book). Holder clear copy: not searched (hit rows). Not located: not claimed.
 
 ## Remaining gaps (FM-R9, 10 Oct 2026)
 Read so far: 0 of 4 filed; 4 of 4 step-0 hits.
@@ -5923,13 +5923,13 @@ Ten short 1864 Fort Monroe rows (Huntington object 5952 = mssEC 25; 31-69 words;
 | row | per-row line | content as the No. 1 decode reads it (M unless stated) |
 |---|---|---|
 | 5698/0 | **in print: OR I/36 pt 3 and Butler Corr. IV p.271 ("Telegram. Cipher. May 26th, 1864, 9 p.m. Col. Biggs. Send me all the transportation you can to Bermuda Hundreds, and telegraph what is coming. Benj. F. Butler")**; step-0 skip. The decoder's "White River" for plain "Bermuda" is the E313-type slip (IA `privateofficialc04butl`, `warofrebellion363unit`, cached text; page numbers of OR not read) | Butler to Biggs, send transports to Bermuda Hundred |
-| 5638/0 | step-0 skip; not located (phrases 'Dunn', 'returns it endorsed': no clear copy, no print in 164 volumes, be-api Butler IV 0) | Sheldon to Eckert, referred your telegram about Dunn to Butler; "I know of none and do not believe a word against him" |
-| 5632/2 | step-0 skip; not located | conference with Butler; Telegraph, 15 and 50 miles; no clause beyond "ready to put up at a moment's notice" |
+| 5638/0 | **filed E466 (FM-F1)**; step-0 skip superseded; not located (phrases 'Dunn', 'returns it endorsed': no clear copy, no print in 164 volumes, be-api Butler IV 0) | Sheldon to Eckert, referred your telegram about Dunn to Butler; "I know of none and do not believe a word against him" |
+| 5632/2 | **FM-F1: too short to read a clause, not filed**; step-0 skip; not located | conference with Butler; Telegraph, 15 and 50 miles; no clause beyond "ready to put up at a moment's notice" |
 | 5627/1 | **holder clear copy, pointer 10266** (Apr 23 1864); step-0 skip | see above (C) |
-| 5810/1 | step-0 skip; not located; 5810 page 28 Nov, Beckwith to Sheldon, "for Butler ... meet you at Monroe tomorrow 10.30 AM ... 3 PM" | Beckwith (City Point) to Sheldon, for Butler, time words |
+| 5810/1 | **filed E468 (FM-F1)**; step-0 skip superseded; not located; 5810 page 28 Nov, Beckwith to Sheldon, "for Butler ... meet you at Monroe tomorrow 10.30 AM ... 3 PM" | Beckwith (City Point) to Sheldon, for Butler, time words |
 | 5756/1 | step-0 skip, no book in hand (one code word; the telegram is plain): White House 18 Jun 1864, [?] to Eckert, "have heard from Sheridan ... will probably get here tonight ... tell me quick if Beckwith or Caldwell have my cipher ... want to use it tonight"; not located (print phrases, be-api whole-collection: only generic-word noise rejected) | too short to read a clause beyond the plain text |
-| 5720/0 | step-0 skip; not located; sibling blocks on 5720 are other telegrams | O'Brien, 30 May: heavy continuous firing about 15 miles from here, towards the battery; "may be Grant has reached there" (H, M for Grant) |
-| 5814/0 | step-0 skip; antecedent at 5813 (clear-ish cipher copy, not a clear copy); not located in print | Butler HQ to Sheldon for Porter: your telegram received, the three monitors Mahopac, Canonicus, Saugus ready for service; Cdr Parker signs |
+| 5720/0 | **filed E469 (FM-F1)**; step-0 skip superseded; not located; sibling blocks on 5720 are other telegrams | O'Brien, 30 May: heavy continuous firing about 15 miles from here, towards the battery; "may be Grant has reached there" (H, M for Grant) |
+| 5814/0 | **filed E470 (FM-F1)**; step-0 skip superseded; antecedent at 5813 (clear-ish cipher copy, not a clear copy); not located in print | Butler HQ to Sheldon for Porter: your telegram received, the three monitors Mahopac, Canonicus, Saugus ready for service; Cdr Parker signs |
 | 5768/3 | **filed E465**; step-0 MISS; no clear copy, not located in print | see E465 |
 | 5680/2 | step-0 skip (and 0x miss); not located; **key check, not a new reading**: the row is Eckert's order of 20 May 1864 to add the words mackerel and mutton to the extra arbitraries for Maj. Gen. D. Hunter; key.md already has Mackerel and Mutton = Maj. Gen. David Hunter at C (OR I/37 pt 1 p.525 via E9; OR I/43 pt 1 p.698 via E13), so the telegram describes its own definition; the decoder's "Lee" for plain "Hunter" and the doubled "[Hunter] and [Hunter]" are misfires | Eckert to Sheldon and O'Brien |
 
@@ -6003,15 +6003,15 @@ Ten short 1864 rows of the Fort Monroe ledger (Huntington object 5952 = mssEC 25
 
 | row | line |
 |---|---|
-| 5785/1 | step-0 skip; No. 1, H8, "yellow fever is prevailing to considerable extent at Newbern N. C., I have thought best to notify you at once", 1 Oct 1864 Sheldon to John Horner NY for Surgeon Charles McDougall (flora = Newbern is the same key word as E280, 30 Sept); not located in print, no holder clear copy |
-| 5799/0 | step-0 skip; No. 1, H3; plain: Patrick (Hd Qrs A.P., 29 Oct) asks Sheldon to forward a copy of all dispatches sent north signed Schoonmaker, which is the question E187 (5799/1) answers; not located in print, no holder clear copy |
-| 5816/2 | step-0 skip; No. 1, H7; Butler's Hd Qrs, O'Brien to Sheldon, 6 Dec, Mr Baird will arrive tomorrow morning, send him here with his instruments (Hendron/Hendron plain); not located |
-| 5583/2 | step-0 skip; No. 1, H4 but "Cherry"= Humboldt is a plain place name (Cherrystone, siblings 11330 etc.), so M; 12 Mar 1864 Sheldon to Eckert: Butler (Knox) wants to know if the operator at Cherrystone is the same W. A. Dunn formerly employed in the American office at Baltimore; holder siblings only; not located in print |
-| 5827/0 | step-0 skip; No. 1, H11 but a clause of "will start down at early ..." and ordnance/Saugus words only; 10 Dec Beckwith City Point to Sheldon, for Porter, U.S.S. Saugus ... sibling 5813; not located; short, the middle is not read |
+| 5785/1 | **filed E443 (FM-F1)**; step-0 skip superseded; No. 1, H8, "yellow fever is prevailing to considerable extent at Newbern N. C., I have thought best to notify you at once", 1 Oct 1864 Sheldon to John Horner NY for Surgeon Charles McDougall (flora = Newbern is the same key word as E280, 30 Sept); not located in print, no holder clear copy |
+| 5799/0 | **FM-F1: too short to read a clause, not filed**; step-0 skip; No. 1, H3; plain: Patrick (Hd Qrs A.P., 29 Oct) asks Sheldon to forward a copy of all dispatches sent north signed Schoonmaker, which is the question E187 (5799/1) answers; not located in print, no holder clear copy |
+| 5816/2 | **filed E445 (FM-F1)**; step-0 skip superseded; No. 1, H7; Butler's Hd Qrs, O'Brien to Sheldon, 6 Dec, Mr Baird will arrive tomorrow morning, send him here with his instruments (Hendron/Hendron plain); not located |
+| 5583/2 | **filed E446 (FM-F1)**; step-0 skip superseded; No. 1, H4 but "Cherry"= Humboldt is a plain place name (Cherrystone, siblings 11330 etc.), so M; 12 Mar 1864 Sheldon to Eckert: Butler (Knox) wants to know if the operator at Cherrystone is the same W. A. Dunn formerly employed in the American office at Baltimore; holder siblings only; not located in print |
+| 5827/0 | **filed E447 (FM-F1)**; step-0 skip superseded; No. 1, H11 but a clause of "will start down at early ..." and ordnance/Saugus words only; 10 Dec Beckwith City Point to Sheldon, for Porter, U.S.S. Saugus ... sibling 5813; not located; short, the middle is not read |
 | 5647/0 | **in print** (Butler's Correspondence IV p.157, word for word) **and holder clear copy 4592**; step-0 skip; No. 1 H8 |
-| 5793/1 | step-0 skip; No. 1, H3, 15 Oct 1864 Eckert to Dealy, Fort Monroe: be at the wharf when the Manhattan arrives from Washington with the Secretary of War on board, tell no one; "grapes with brutus" = Washington/Secretary of War is M (two keyed words, no print or sibling to test the sense); not located |
+| 5793/1 | **filed E448 (FM-F1)**; step-0 skip superseded; No. 1, H3, 15 Oct 1864 Eckert to Dealy, Fort Monroe: be at the wharf when the Manhattan arrives from Washington with the Secretary of War on board, tell no one; "grapes with brutus" = Washington/Secretary of War is M (two keyed words, no print or sibling to test the sense); not located |
 | 5636/2 | **in print** (OR I/33 p.1009; Butler Corr. IV p.142, word for word) **and holder clear copy 10279**; step-0 skip; No. 1 H12 |
-| 5822/2 | step-0 skip; No. 1, H8, but "paradise"= McMinnville and "viola" = Colonel are not sense; 8 Dec O'Brien to Sheldon, "every thing is shipped ... and the DeMolay leave here at daylight" is the readable clause, and DeMolay is a vessel (sibling 5851); recorded as too short to read a clause with confidence; not located |
+| 5822/2 | **FM-F1: too short to read a clause, not filed**; step-0 skip; No. 1, H8, but "paradise"= McMinnville and "viola" = Colonel are not sense; 8 Dec O'Brien to Sheldon, "every thing is shipped ... and the DeMolay leave here at daylight" is the readable clause, and DeMolay is a vessel (sibling 5851); recorded as too short to read a clause with confidence; not located |
 | 5731/0 | no book needed: plain English, H0 under every book; **holder clear copy 11877** (Eckert's received leaf, 6 June 1864), and the ledger row itself is clear; step-0 skip |
 
 **Image check.** Pages of 5785, 5799, 5816 read at 2400 px (full page, own entries only): every line matches the transcription (e.g. 5785 "Charles McDougall france / zodiac Yell oh fever is prevailing to considerable"; 5799 "for ward", "Scoon maker walrus M R Patrick"; 5816/2 "Mr Baird sly will arrive at appear whelp"). The other seven page images are on disk in the scratch directory only (not committed); their lines are graded from the transcription and are not eye-checked.
@@ -6292,3 +6292,42 @@ Read so far: 10 of 12 filed (E525-E532, E534, E535); 2 holder clear copies (5867
 - [ ] image-check: no image read; filed from the volunteer transcription (rule 2: conditional on it).
 - [x] retry: one retry on a 500 (djvu download).
 Verdict: keep going: 3 internal gaps; cheapest next: IA page read of the three sibling prints, ~$0.1
+## FM-F1 (10 Oct 2026, account 1, for LANE LEDGER-13)
+
+Worker FM-F1 (Sonnet 5.5), 09:29-09:4x UTC by `date -u`. Job: file the 15 Fort Monroe rows (Huntington object 5952 = mssEC 25) that FM-R9, FM-S1 and FM-S2 decoded but held as Step-0 skips, under the Wave 2 RULING (a step-0 hit on mssEC 25 is a non-test; a row is not filed only for a holder clear copy, a located print, plain text with no code word / no book reading a clause, or too short for a clause). Intake gate (09:4x UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Prior-work (`prior_work.py eckert-1864 --item-spec 5699/1 --step-type read --offline`): exit 4, the same shape as FM-S1/FM-R7a (target-level LEADs = the editions, searched by correspondents by hand here through be-api and the 177 cached volumes; one LOOK for the leaf, not answered: no image read in this job). Scripts and outputs in `fortmonroe/`: `fm_f1_entries.txt` (the 15 rows copied unchanged from the readers' entry files), `fm_f1_show.py`, `fm_f1_step0.py/.out`, `fm_f1_beapi.py/.out`, `fm_f1_hdl.py/.out`, `fm_f1_printcheck.out`, `fm_f1_file.py`. Novelty not classified (rule 10).
+
+**Filed (11): E441 5699/1, E442 5707/0, E443 5785/1, E445 5816/2, E446 5583/2, E447 5827/0, E448 5793/1, E466 5638/0, E468 5810/1, E469 5720/0, E470 5814/0.** IDs follow the brief's blocks; E440, E444, E449, E467 are the IDs of the four rows not filed and stay unused. Decoder grades (No. 1): E441 H16, E442 H9, E443 H8, E445 H7, E446 H4, E447 H11, E448 H3, E466 H4, E468 H8, E469 H6, E470 H8; C 0, S 0, I 0 on all (every meaning is a key-row value, no cryptanalysis, no known plaintext); each entry's note lists the M tokens by hand (address-line and sign-off artefacts that the decoder reads as Grant/Butler, slips such as White River for Bermuda and Humboldt for Cherrystone, unread words). Weakest: E448 (H3, two code meanings), E468 (clause rests on two single-occurrence words), E469, E446 (H4, with the Humboldt slip). Source text: the volunteer transcription on disk, no page image read in this job (rule 2; E443 and E445 were image-read at 2400 px by FM-S1, the others are conditional on the transcription).
+
+**Not filed (4).**
+| row | line |
+|---|---|
+| 5752/0 | **in print, not filed.** Dana to the Secretary of War, City Point, 16 June 1864 ("Hancock is not near enough to render General Smith any aid. The Richmond papers have nothing to indicate a suspicion of our planning the [attack on the James]") is quoted word for word in the be-api whole-collection query (`fm_f1_beapi.out`): Raftsman's Journal 22 Jun 1864 (`per_raftsman-s-journal_raftsman-s-journal_1864-06-22_1`), Armed Forces Journal 25 Jun 1864 (`sim_armed-forces-journal_1864-06-25_1_44`), Congressional Globe 18 Jun 1864 (`sim_united-states-congress-congressional-globe_1864-06-18_190`), `xt7gb56d4s2m`, `wordsofwar0000brac`; read on the snippets, not on page images. The OR I/40 pt 1 page was not read (the cached OR text has vols 40-2/40-3 only). Distinct from E256 (5752/1), as FM-R9 checked. |
+| 5799/0 | too short to read a clause: H3 and plain; the only key word is the signature Schoonmaker, plain on the page, the rest is the question E187 (5799/1) answers. |
+| 5632/2 | too short to read a clause: the decoder gives 15 and 50 miles, telegraph, necessary, but the middle words are unread ('Pekin', 'ghost spoons', 'Matt aerial') and no sibling or print tests the sense; the plain clause 'ready to put up at a moment's notice' is not key. |
+| 5822/2 | too short to read a clause: 'paradise' = McMinnville and 'viola' = Colonel do not make sense; the readable clause ('every thing is shipped ... and the Demolay leave here at day light') is plain except one word (Division). |
+The authentication distance was not computed per row; the cut is: a connected clause with at least two code meanings that the sense supports, else too short. A different cut would move 5793/1 and 5810/1 (kept, flagged weak) or 5632/2 (dropped) the other way.
+
+**Check before each filing.** be-api whole-collection phrase query per row on the readable clause (`fm_f1_beapi.out`, 15 queries, 1.9 s apart, all 200) and re-read of FM-S1's and FM-S2's own print-check and be-api outputs; hits rejected and why: 5699/1 Yorktown/West Point (OR vol. 27, a different 1862 text); 5785/1 'yellow fever is prevailing to considerable extent in Vera Cruz' (Illinois State Register 1846); 5814/0 Porter's 28 Nov 1864 'Move the Saugus and Canonicus up to Dutch Gap' (ORN ser. I vol. 11) and a modern monitor history; the other eight rows returned 0 hits. Holder clear copy (CISOSEARCHALL all pointers, control 9678 returned): FM-S1 and FM-S2 had searched every row but 5699/1 and 5707/0; this job ran those two (`fm_f1_hdl.out`: only their own pointers). Cached-volume phrase grep for the FM-R9 rows (`fm_f1_printcheck.out`, 177 volumes): none for 5699/1 and 5707/0; 5752/0's 'direction of Malvern Hill' appears in OR vols 40-2/40-3 in other letters.
+
+**Step 0, as information** (`fm_f1_step0.out`; (a) true book / (b) p95 / shuffled-key copy): all 15 HIT, and the meaning-shuffled copy hits on all 15 as well (0.59-1.00), which is the BOOK-FM65 finding again: on this ledger step 0 cannot fail differently under a shuffled key, so it licenses neither a skip nor a filing.
+
+**Over-claim guard.** "Not located in print" is a search result (be-api full-text on snippets, 177 cached volumes), not a novelty verdict (rule 10); no AUDIT.md, status.json or SO row was touched. These entries are N-unclassified until a verifier runs.
+
+**Requests.** be-api 15 (all 200, 1.9 s apart); hdl.huntington.org 3 (CISOSEARCHALL incl. control; take/release posted in ROOM); no other host.
+
+## Remaining gaps (FM-F1, 10 Oct 2026)
+Read so far: 11 of 15 filed (E441-E443, E445-E448, E466, E468-E470); 1 in print (5752/0); 3 too short.
+- E441-E470 first verifier (page image, word-for-word clause check, print) - blocker: not-attempted; no verifier has seen these entries; next: first verifier on the eleven, ~$0.6 per row (queue the AUD2 stage)
+- 5752/0 OR I/40 pt 1 page and E448/E468/E469 weak clauses (Manhattan 15 Oct 1864; 28 Nov 1864 meeting; 30 May firing) - blocker: not-attempted; the cached OR text lacks vol. 40 pt 1 and no date-window search was run; next: Butler Corr. V and OR ser. I vol. 40/42 windows by date through be-api page hits, ~$0.2 per row
+- 5799/0, 5632/2, 5822/2 - blocker: too-short; next: nothing at this N; a sibling window or a book that reads the middle words, ~$0.2 each, only if a later job wants them
+- Page images of the nine rows not image-read (all but E443, E445) - blocker: not-attempted; the job brief named transcription only and no crops were cut; next: re-fetch at 2400 px via `tools/iiif_lines.py` crops, ~$0.3 per page
+
+## Escalation (FM-F1, 10 Oct 2026)
+- [x] siblings: E256 vs 5752/0, E280, E187, E274, 5813 seen; windows by date not read.
+- [x] clear-pages: all-pointer CISOSEARCHALL on every row (readers + this job's two).
+- [x] known-keys: three books per row by the readers; No. 1 chosen by sense.
+- [x] print: be-api whole-collection per row, 177 cached volumes; one row in print.
+- [n/a] key-rebuild: no key row edited.
+- [ ] image-check: nine of eleven filed rows not image-read; next above.
+- [n/a] retry: nothing failed, so no retry was needed.
+Verdict: keep going: 3 internal gaps; cheapest next: E448 15 Oct 1864 Manhattan/Stanton window by be-api, ~$0.2
