@@ -110,3 +110,5 @@ for LANE LEDGER-14)"; if the shared print-check scripts read a wrong mapping, fi
 not found.
 
 Held for wave 4: a first verifier (Opus) on OR-CACHE's hits (N3 -> N1 where the print holds); AUD2 rows already queued need nothing from this lane.
+
+(11:2x UTC 10 Oct by date -u: wave 3 spawned with source_url: FIX-L14 session_01MnJxo7xFEDqZ5TquLzA1VU, OR-CACHE session_01F6mJ9GibCyU5amLnnN9Ug1.)
