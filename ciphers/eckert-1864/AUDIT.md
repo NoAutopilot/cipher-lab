@@ -17412,3 +17412,88 @@ no network request (the OR text is the cached `sources/ia-fulltext/print-check/w
 - **Propagation:** class unchanged, so status.json, SECOND-OPINIONS-QUEUE.tsv (SO-ECKERT-E54 already withdrawn, citing p.627) and WORK-QUEUE need no
   edit. NOTES "## OR-CACHE" (2) says p.626: corrected there by a one-line note.
 - Requests: none (cache only).
+
+## AUDIT (FV-L15n)
+
+Verifier FV-L15n (Opus 5.5, account 1, for LANE LEDGER-15), 10 Oct 2026, 12:52-13:0x UTC by `date -u`; a separate session from the readers (FM65-D,
+FM65-E, FM-R2a) and from FIX-FM65 / OR-CACHE, which found the leads; it does not protect their conclusions. Scope: N1 confirms of **E537, E544, E565**
+(FIX-FM65's Grant Papers 13/14 snippet hits, NOTES "## FIX-FM65") and a ruling on **E171** (OR-CACHE lead, OR I/43 pt 1 p.860; E171 already carried
+N3 D3 from AUDIT (FV-FM3b) and AUDIT 2 (AUD2-LEDGER-6)). Fort Monroe ledger mssEC 25 = Huntington object 5952, Cipher No. 1. Nothing decoded beyond
+reading reading.md. Key source for all four: `period`. Intake gate re-run 12:5x UTC: `eckert-1864: partial (line 3) -- edition/page or full-text-search
+citation found within 6 lines`. Prior-work tool: `tools/prior_work.py eckert-1864 --item E537` -> "item 'E537' is not a row of ciphers/eckert-1864/items.tsv"
+(same for E544, E565, E171; the folder has no items.tsv), so the checklist was run by hand: own work (NOTES/AUDIT/status.json/SO queue grep by entry and
+pointer: only the FM65-D/E, FM-R2a, FIX-FM65 and OR-CACHE sections and the E171 audits above), holder clear copy (s.2), print (s.1). Step 0 was not
+used for any class (mssEC 25 ruling). Scripts: `fortmonroe/fvl15n_gb.py` (+ `.out`), `fortmonroe/fvl15n_hdl.py` (+ `.out`).
+
+### 1. Print
+| ID | print located | how read | print text (as read) |
+|---|---|---|---|
+| E537 | *Papers of Ulysses S. Grant* vol. 13 (Google Books mnRjmhe3QLoC and ij8fAQAAMAAJ), in a note: "Jan. 20, 6:00 P.M., USG, Fort Monroe, telegraphed to Maj. Gen. Edward O. C. Ord." | Google Books API snippets, 3 queries (FIX-FM65 2 + `fvl15n_gb.py` 2 of 5); no page number in a snippet | "Please notify Col. Mulford on Steamer New York to remain at Varina until Mr. Blair arrives and is passed through the lines." ALS (telegram sent), DNA, RG 107, Telegrams Collected (Bound); telegram received, ibid., Telegrams Collected (Unbound). Not in OR I/46 pt 2 (letters-only grep of `warofrebellion014602rootrich` for "remain at Varina", "passed through the lines", "notify Col": none; Grant's 19 Jan telegrams to Fox on Blair are on p.177). |
+| E544 | **OR ser. I vol. 46 pt 2 p.271** (`warofrebellion014602rootrich`, cached; running heads 271 and 272 bracket it) and Grant Papers vol. 13 (snippet cites "O.R., I, xlvi, part 2, 271") | IA `_djvu.txt` on disk, window read; GB snippet | "City Point, Va., January 26, 1865--10.30 a.m. Brig. Gen. I. N. Palmer, New Berne, N. C.: All asked by you has been ordered. Not less than 6,000 [OCR '(5,000'] men will report to you. Prepare accordingly. U. S. Grant, Lieutenant-General." Grant Papers: "All asked for by you has been ordered. Not less than 6000 men will ..." |
+| E565 | Grant Papers vol. 14 (DVLPEPsH1_oC and 1D8fAQAAMAAJ), in a note: "March 5, 1865, Col. Samuel H. Roberts, 139th N. Y., telegraphed to Lt. Col. Theodore S. Bowers." | GB snippets, 5 queries (FIX-FM65 4 + 1 here; the bare "Shall I go without him" query returned no Grant volume, total 262) | "I cannot find the Scout that was to report to me this morning. Will be ready to proceed in two hours. Shall I go without him?" Telegram received (at 11:30 A.M.). Not in OR I/46 pt 2 (grep "cannot find", "without him", "the scout": none for 5 Mar; Roberts's 8 Mar telegrams are on p.891). |
+| E171 | **OR ser. I vol. 43 pt 1 p.860** (`warofrebellion431unit_0`, cached by OR-CACHE; the true I/43 pt 1; running heads 860 above, 861 after Halleck's indorsement; index "Arago, Steamer. Mentioned . . 860") | IA `_djvu.txt` on disk, window read | "Fort Monroe, August 20, 1864--10 p. m. (Received [time garbled in the OCR] a. m. 21st.) Major-General Halleck, Chief of Staff: General: Arrived at 9.20 p. m. in steamer Arago, with the One hundred and third New York Volunteers, from Port Royal, S. C. Report hereby to you as directed. Will await, as ordered, two hours for orders from you, and, none arriving, after that time will proceed to Alexandria, Va., as ordered by General Foster. W. Heine, Colonel 103d New York Volunteers." First indorsement, 21 Aug, Halleck: troops for the Department of Washington; Augur to send orders to Alexandria. |
+
+### 2. Holder clear copy (one CISOSEARCHALL each, p16003coll11, under the hdl token, `fvl15n_hdl.py`)
+"Varina Blair": 1 record, 5883 (this leaf). "Palmer accordingly": 5888 (this leaf) and 9191 (Page 297, mssEC 19, 25 Feb 1865 Beckwith "Katie Palmer for
+Bender ...": a different telegram). "scout Roberts": 1 record, 6903 (Page 103, Baltimore 25 Apr 1863, Schenck to Halleck "nothing from Roberts": unrelated;
+dmGetItemInfo read). "Arago Heine": 5779 (this leaf) and 5780 (Page 236, Foster's Hilton Head telegram naming Heine and the Arago, in cipher: a different
+message). No holder clear copy of any of the four at another pointer.
+
+### 3. Diff, print against the derived reading block (reading.md) and the leaf (eye-checked whole at 2400 px, IIIF, scratch only)
+- **E537** (leaf 5883, p.339): leaf reads "R. O'Brien Hd Qrs A. J. / Libby for Meriden unity Please notify pandora Mule ford on weasler frog to remain
+  at Varina until Mister Blair arrives and is passed through the lines youth Japan quite pleasant this evening / Geo. D. Sheldon", dateline "Ft Monroe
+  Jan 20/65": the transcription and the reading agree with the leaf. Against the print: body identical word for word ("mule ford" = Mulford, plain
+  sound-spelling; "Mister" = Mr.); date 20 Jan and hour 6 P.M. agree; addressee Ord and sender Grant agree. The decoder's **[New York] (M)** after
+  "weasler" is **C by print** ("Steamer New York"); "pandora" = Colonel agrees ("Col."). No disagreement.
+- **E544** (leaf 5888, p.344): leaf "Elizabeth harsh pledge I N Palmer fortune unity all asked for bayou has been ordered ditto not lesson plague purple
+  spit will wick to you pedlar prepare accordingly youth Juno lamp love / S.H. Beckwith", dateline "City Point Jan 26/65": agrees with the transcription.
+  Against the print: body identical ("bayou" = by you, "lesson" = less than, sound-spellings; "ditto" = the stop); 6000, Men, Report, Newbern, 26, the
+  hour 10.30 a.m. and the signer Grant all agree. The ledger carries "asked for by you" with Grant Papers; OR omits "for". No disagreement in the reading.
+  **Header slip (s.5):** the header summary drops "by you" ("All asked for has been ordered").
+- **E565** (leaf 5919, p.375): leaf "Florence for Lieut pandora Tea S Bowers A A Shelter blubber unity I cannot find the wolf that was to wick tommy this
+  morning zebra Wilby ready to proceed in plank ours zodiac Shall I go with out him walrus S. H. Roberts pandora plug prolong laugh pony frog washingtons
+  polking roman fine morning, sent 11.35 am Dealy", dateline "Ft Monroe Mar 5/65": agrees. Against the print: body identical ("tommy" = to me,
+  "Wilby" = will be, "plank ours" = [2] hours); date 5 Mar, Roberts 139th New York, Bowers A.A.G., received 11.30 a.m. (the ledger's sent 11.35 is the
+  Fort Monroe hand) agree. **Header slip (s.5):** "[We shall] be ready" should read "Will be ready" (leaf "Wilby", print "Will be").
+- **E171** (leaf 5779, p.235): leaf "Appian Rebecca August harsh for Jacob growl zebra Shelter pekin arrived at pony harrow pea hem in weasler Arago with
+  the plug publish and pebble france wilcoxs from flint S see pedlar white hereby to you as directed pekin will wait as ordered plank ours for orders from
+  you and none arriving after that time will proceed to Banjo Virgin I a as ordered by lester youth W Heine paradise plunge wine and perfume frog
+  washington pekin aftering none arriving", dateline "Ft Monroe Aug 20/64": agrees with the transcription (the trailing "after[ing] none arriving" is the
+  clerk's tail, apparently struck). Against the print: **the whole body is printed** -- 10 p.m., 20 Aug, Halleck (Jacob = General-in-Chief, the
+  E168 alteration to Halleck; print "Major-General Halleck, Chief of Staff"), 9.20 p.m., Arago, 103rd New York Volunteers, Port Royal S. C., "Report
+  hereby to you as directed", two hours, Alexandria Va., Foster, Heine Colonel 103d New York Volunteers. One spelling-level difference: ledger "will wait
+  as ordered", print "Will await, as ordered" (not a reading error). Every code group FV-FM3b graded H is now also C by print.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N-class | key | prior plaintext | prior decipherment of this ciphertext | depth | % H/C/S | check |
+|---|---|---|---|---|---|---|---|
+| E537 | **N1** | period | Grant Papers vol. 13 (note under 20 Jan 1865) | not located | D3 | 100 (7 H; [New York] M -> C by print) | print, word for word |
+| E544 | **N1** | period | OR I/46 pt 2 p.271; Grant Papers vol. 13 | not located | D3 | 100 (13 H) | print, word for word |
+| E565 | **N1** | period | Grant Papers vol. 14 (note under 5 Mar 1865) | not located | D3 | 100 (19 H) | print, word for word |
+| E171 | **N1** (was N3) | period | OR I/43 pt 1 p.860 (1893) | not located | D3 (kept) | 100 (31 H) | print, word for word |
+Depth D3, not D4: every cipher token is H and C by print, the check is non-statistical (print), but no fresh rule-7 re-derivation was run by this
+session. Content sentences (D2+): E537 "On 20 Jan 1865 at 6 p.m. Grant tells Ord at Fort Monroe to have Col. Mulford keep the flag-of-truce steamer New
+York at Varina until Blair arrives and is passed through the lines."; E544 "On 26 Jan 1865 Grant tells Palmer at New Bern that all he asked for has been
+ordered and that at least 6,000 men will report to him."; E565 "On the morning of 5 Mar 1865 Col. S. H. Roberts at Fort Monroe tells Bowers he cannot
+find the scout who was to report and asks whether to start without him in two hours."
+- **Safe sentences.** E537: "Read at grade H with War Department Cipher No. 1; the plaintext is printed in *The Papers of Ulysses S. Grant* vol. 13
+  (Grant to Ord, 20 Jan 1865, 6 p.m.); our reading is an independent re-decipherment of the Fort Monroe ledger copy." E544: the same, "printed in OR
+  ser. I vol. 46 pt 2 p.271 and in the Grant Papers vol. 13". E565: "printed in the Grant Papers vol. 14 (Roberts to Bowers, 5 Mar 1865)". E171:
+  "Read at grade H with Cipher No. 1; Heine's telegram of 20 Aug 1864 is printed in full in OR ser. I vol. 43 pt 1 p.860; our reading is an independent
+  re-decipherment of the Fort Monroe ledger copy." **Unsafe:** any of the four called unpublished, "not located in print", or a first decipherment;
+  for E171, status.json's earlier line "the telegram itself not located in the Official Records".
+- **Postmortem (E171).** FV-FM3b and AUD2-LEDGER-6 searched OR I/35 pt 2 and I/42 and read `warofrebellion431unit` as "I/43 pt 1" when it is I/47 pt 2
+  (OR-CACHE): the real I/43 pt 1 was never on disk, so the N3 rested on a mislabelled volume. The OR-CACHE title-page check is what caught it.
+
+### 5. Fixes for a FIX job (not applied to the reading here)
+- E544 header: "All asked for by you has been ordered" (add "by you"); note OR I/46 pt 2 p.271 + Grant Papers 13; code groups C by print.
+- E565 header: "[We shall] be ready" -> "Will be ready"; note Grant Papers 14; received 11.30 a.m.
+- E537 header/decoder: "[New York]" (M) -> New York, C by print (Grant Papers 13: "Steamer New York").
+- E171 header/note: OR I/43 pt 1 p.860, print "Will await"; N1.
+
+### 6. Propagation
+E171 class N3 -> N1: status.json result (grade, plaintext_novelty, mapping_novelty N1, text known, line, gap, audit_refs, depth_check) edited; SECOND-
+OPINIONS-QUEUE.tsv SO-ECKERT-E171 withdrawn (N1). E537, E544, E565: N1, so no status.json, SO or AUD2 row (FV-MS18m/FV-MS18p rule). None of the four
+leaves the entry for a full verifier: every citation held.
+Requests: www.googleapis.com 5 (`fvl15n_gb.py`, 1.6 s apart); hdl.huntington.org 9 (4 IIIF leaf images, 4 CISOSEARCHALL, 1 dmGetItemInfo, 3.2 s
+apart, under two takes released in ROOM); archive.org 0 (cache only).

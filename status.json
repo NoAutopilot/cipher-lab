@@ -8043,9 +8043,10 @@
       "key": "period",
       "audit_refs": [
         "AUDIT.md '## AUDIT (FV-FM3b)'",
-        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-6)'"
+        "AUDIT.md '## AUDIT 2 (AUD2-LEDGER-6)'",
+        "AUDIT.md '## AUDIT (FV-L15n)'"
       ],
-      "audit_status": "two audits",
+      "audit_status": "three audits",
       "superseded_by": "",
       "depth_by": "FV-FM3b verifier (account 1)",
       "depth_date": "8 Oct 2026",
@@ -8061,12 +8062,12 @@
         "other": "0"
       },
       "depth_pct": 100.0,
-      "grade": "N3",
-      "plaintext_novelty": "N3",
-      "mapping_novelty": "N3",
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
       "title": "Eckert 1864 (Fort Monroe ledger): Heine (103rd New York) via Sheldon to Halleck, 20 Aug 1864, arrival on the Arago (E171)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 20 Aug 1864 Col. W. Heine telegraphs Halleck through Fort Monroe that he has arrived at 9.20 p.m. in the steamer Arago with the 103rd New York Volunteers from Port Royal, will wait two hours for orders and, none arriving, will proceed to Alexandria as Foster ordered -- the arrival telegram Foster's printed letter of 18 Aug (OR ser. I vol. 35 pt 2) says he ordered; the telegram itself not located in the Official Records (ser. I vols. 35 pt 2, 42 pts 1-3) or the Huntington's full-text search (searched 8 Oct 2026).",
-      "gap": "N3: second audit AUD2-LEDGER-6 (8 Oct 2026): N3 D3 kept; Grant Papers vols 11-12 (be-api) and Chronicling America 19-31 Aug 1864 (Arago via Fort Monroe reported, not this telegram) searched, not located; Google Books 429",
+      "line": "Read at grade H with War Department Cipher No. 1; Col. W. Heine's telegram of 20 Aug 1864 (arrived at Fort Monroe at 9.20 p.m. in the steamer Arago with the 103rd New York Volunteers from Port Royal, will wait two hours for orders, then proceed to Alexandria as Foster ordered) is printed in full in OR ser. I vol. 43 pt 1 p.860; our reading is an independent re-decipherment of the Fort Monroe ledger copy.",
+      "gap": "N1 (FV-L15n, 10 Oct 2026): body printed word for word in OR I/43 pt 1 p.860 (earlier N3 rested on a mislabelled 'I/43 pt 1' id that is I/47 pt 2, OR-CACHE)",
       "depth": "D3",
       "completeness": "31 H of 31 code-word groups (address 'Washington' and 'Virgin[ia]' plain)",
       "phrases": [
@@ -8077,8 +8078,9 @@
         "Huntington mssEC 25 (obj 5952) p.235, pointer 5779, E171"
       ],
       "depth_sentence": "On the night of 20 Aug 1864 Col. Heine reports the 103rd New York at Fort Monroe on the Arago and says he will go on to Alexandria if no orders come within two hours.",
-      "depth_check": "code clause: Lester = Foster, Flint = Port Royal, France/Frog = New York passim; external: Foster to Halleck 18 Aug 1864 (OR I/35 pt 2) orders this arrival telegram; image read by FM-R2a",
-      "depth_note": "31 H of 31 code-word groups (address 'Washington' and 'Virgin[ia]' plain)"
+      "depth_check": "code clause: Lester = Foster, Flint = Port Royal, France/Frog = New York passim; external: the telegram printed in OR I/43 pt 1 p.860 (all code groups C by print); image read by FM-R2a, eye-checked FV-L15n",
+      "depth_note": "31 H of 31 code-word groups (address 'Washington' and 'Virgin[ia]' plain)",
+      "text": "known"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",

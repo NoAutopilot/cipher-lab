@@ -6687,6 +6687,7 @@ Job: find where the eckert print checks get their OR volume list, read each volu
 - Scripts fixed: `fortmonroe/fm_prefilter.py` labelled `431unit` "OR I/43-1": relabelled "OR I/47-2" and `431unit_0` added as "OR I/43-1" (the committed `prefilter-fm*.tsv` rows labelled "OR I/43-1" are I/47-2 text and were not regenerated); `ls_r7_printcheck.py` carries a comment (its VOLS list left as run).
 - FV-L14d (10 Oct 2026): the E54 lead is OR I/44 **p.627** (the parser missed the OCR header "62,7"), not p.626; N2 kept (AUDIT "## AUDIT (FV-L14d)").
 - Next: a verifier on E171 and E54 (rows to LEDGER-13 for E171), the ~$0.3 fetch of 47.3 and 46.3 if a March-June 1865 entry needs it.
+- FV-L15n (10 Oct 2026): the E171 lead holds -- the whole body is printed in OR I/43 pt 1 p.860; E171 N3 -> N1 (AUDIT "## AUDIT (FV-L15n)"; status.json and SO-ECKERT-E171 propagated). The FIX-FM65 hits E537, E544 (OR I/46 pt 2 p.271), E565 confirmed N1 in the same section.
 
 ## R-5855 (10 Oct 2026, account 1, for LANE LEDGER-15)
 
