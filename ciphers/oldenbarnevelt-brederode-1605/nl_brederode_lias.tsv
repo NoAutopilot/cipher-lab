@@ -1,0 +1,11 @@
+invnr	dates	mets_id	digitised	scans	item_page	note
+6016	1602-1613	4153f78f-3369-4801-93bc-c3eb9b39012c	y	624	https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/6016	not re-fetched; METS read by OBRED-6016 (624 scans)
+6017	1614-1617	b060ccbc-a7f8-4174-a34f-c25e5ff9e526	y	585	https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/6017	viewer.response scans=585; iiif path METS b060ccbc-a7f8-4174-a34f-c25e5ff9e526 = EAD dao
+6018	1618	8ab6959a-fc81-425b-8591-86e332ad1454	y	577	https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/6018	viewer.response scans=577; iiif path METS 8ab6959a-fc81-425b-8591-86e332ad1454 = EAD dao
+6019	1619	1ebb4182-2b80-4e37-a226-8b8c7e578c8b	y	649	https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/6019	viewer.response scans=649; iiif path METS 1ebb4182-2b80-4e37-a226-8b8c7e578c8b = EAD dao
+6020	1620	6b71330d-279e-4fe8-904b-01493a2c93d1	y	604	https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/6020	viewer.response scans=604; iiif path METS 6b71330d-279e-4fe8-904b-01493a2c93d1 = EAD dao
+6021	1621-1622	c82b1eb5-6946-4ca9-8082-f13c2ab5f078	y	810	https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/6021	viewer.response scans=810; iiif path METS c82b1eb5-6946-4ca9-8082-f13c2ab5f078 = EAD dao
+6022	1623-1626	412b1414-afa2-42fe-b56d-2b5f705e5005	y	595	https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/6022	viewer.response scans=595; iiif path METS 412b1414-afa2-42fe-b56d-2b5f705e5005 = EAD dao
+6023	1627-1631	c199ea4d-1bb8-4b46-bab9-df7dafa273f8	y	536	https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/6023	viewer.response scans=536; iiif path METS c199ea4d-1bb8-4b46-bab9-df7dafa273f8 = EAD dao
+6024	1632-1637	8fdb0106-1bbd-4f84-8caf-f2c19c74f069	y	470	https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/6024	viewer.response scans=470; iiif path METS 8fdb0106-1bbd-4f84-8caf-f2c19c74f069 = EAD dao
+12569.38	Stukken betreffende de zending, op last van de Staten-Generaal, van doctor Pieter Brederode naar de Zwitserse kantons, 1605. Met retroacta, 1587-1604		n	0	https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/12569.38	item page 200 but viewer.response carries 0 scans, and the 1.01.02 EAD record (unitid 12569.38, 1 omslag) has no dao: not digitised

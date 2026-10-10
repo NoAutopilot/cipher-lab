@@ -1,0 +1,19 @@
+1 cipher=J plain=A PS=F ok; no cipher elsewhere (B,H small slip, I,L slips; plain)
+2 cipher=J plain=D PS=M ok; no cipher (G small slip block, K slip; plain)
+3 cipher=I plain=K PS=G ok; no cipher; H=right-margin column of small marks (candidate relook, low)
+4 cipher=H plain=E PS=K ok; no cipher (A blank, D upside-down address, plain)
+5 cipher=C plain=B PS=A ok; no cipher
+6 cipher=M plain=C PS=H ok; no cipher (B,I,J seal/address leaves)
+7 cipher=B plain=F PS=D ok; no cipher (J year divider 1610; others plain)
+8 cipher=I plain=M PS=C ok; no cipher
+9 cipher=L plain=H PS=I ok; no cipher (B,E,K printed Fraktur leaves, M printed + letter; plain; D short marginal block, plain)
+10 cipher=H plain=A PS=M ok; L=small pasted slip at centre of right leaf with a short block of marks (candidate relook); others no cipher
+11 cipher=M plain=B PS=L ok; K=1612 divider; G,J small white pasted slips with clear lines (low candidate); no cipher
+12 cipher=E plain=D PS=F ok; no cipher
+13 cipher=H plain=A PS=G ok; E=1613 divider; no cipher
+14 cipher=E plain=D PS=F ok; H=right leaf with a vertical list of short items (candidate relook, low: list not numeral groups); A,L upside-down clear slips; no cipher
+15 cipher=M plain=F PS=E ok; no cipher (B,G,H,J small pasted clear slips)
+16 cipher=K plain=B PS=C ok; no cipher
+17 cipher=G plain=E PS=L ok; no cipher
+18 cipher=E plain=J PS=C ok; no cipher
+19 cipher=E plain=B PS=C ok; A=small separate slip at right of a bound leaf with a dense short block, stamped (candidate relook); D=torn cover/blank; no cipher
