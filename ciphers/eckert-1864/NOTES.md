@@ -5517,3 +5517,51 @@ Worker FIX-FM22, offline, applies AUDIT.md "## AUDIT (FV-MS65a)" s.5. Header edi
 - E401: header now says body plain in the holder transcription (Step-0 hit, a 0.540 vs b 0.190), key adds only Point, West Virginia, Kanawha, President (key-dependent); "not located in print" replaced by the places searched, the 1989 sibling quotation (Southern Revenge! p.133) and the 23-29 June 1865 press. Grades unchanged.
 - MS65-R1 gaps (E400 page numbers, E401 print) are answered by the audit and this edit. Classes are the audit's (E400 N1 D1, E401 N1 D1); no status.json or SO row exists for either (none filed at N3+), so nothing to propagate. N2-IC not touched.
 - Checks: decode.py --write then --check exit 0; decode_no2.py --check exit 0; decode_no9.py --check exit 0.
+
+## MS18-R9 (10 Oct 2026, account 1, for LANE LEDGER-12)
+
+Job: nine unread `ms18/clean-ms18.tsv` rows guessed No. 1 (best_book 1): 9811/1 9835/1 9877/1 9877/3 9793/0 9826/0 9806/2 9882/0 9777/1. Worker MS18-R9 (Sonnet), 07:46-08:2x UTC by `date -u`. Under the Wave 3 Step-0 ruling **six rows are step-0 hits and are not filed** ("body in holder transcription"); three are filed as E402-E404 in `ciphertext.txt` (`ms18/ms18_r9_file.py`; `decode.py --write` then `--check`, `decode_no2.py --check`, `decode_no9.py --check` all "is current", exit 0). No row read as No. 2 or No. 9. Working files: `ms18/ms18_r9_extract.py`, `ms18_r9.py` (`ms18_r9_controls.txt`), `ms18_r9_step0.py/.out`, `ms18_r9_printcheck.py/.out`, `ms18_r9_hdl.py/.out`, `ms18_r9_file.py`, `ms18_r9_entries.txt`.
+
+Intake gate (re-run 10 Oct 2026 07:5x UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+**Prior-work step (by hand; one line per check).** (1) own work: the eight pointers grepped in `ciphertext*.txt` before filing: 9811 (E347 = 9811/2, Sampson to W. P. Smith, the same trip as 9811/1) and 9835 (E342 = 9835/0, 5 Sept) are other entries on the same leaves; none of the nine rows had an ID; ROOM.md carried no claim on them except MS18-R10's, which names other rows. (2) holder transcription of the same pointer: step 0 below. (3) holder clear copies: four CISOSEARCHALL queries over p16003coll11 on the filed rows' clear words, 0 hits each (a miss is a search result, rule 10). (4) print: 177 cached OR/ORN volumes in `sources/ia-fulltext/print-check`, letters-only phrase grep plus a date-and-addressee window search (`ms18_r9_printcheck.py`); the OR volumes not cached (ser. III, Navy, Grant Papers) were not searched. (5) same-leaf siblings: listed in the E402-E404 notes. No by-date page-image read of OR was done; page numbers come from running heads in the IA text.
+
+**Step 0 (Wave 3 ruling; `ms18_r9_step0.py`, output `ms18_r9_step0.out`).** No. 1 key; (a) ordered overlap, (b) shuffled-transcription control p95 (20 draws), (c) key-dependent decoded content words.
+| row | (a) | (b) p95 | hit | (c) count, person/place/unit words the transcription does not give |
+|---|---|---|---|---|
+| 9811/1 | 0.381 (16/42) | 0.167 | no (filed E402) | 17: Grant, Hunter, Ord (slip), Washington, head quarters, rail road, transportation |
+| 9835/1 | 0.692 (18/26) | 0.308 | YES | 6: surrender (slip), cavalry (slip), telegraph; the Secretary of War signature word |
+| 9877/1 | 0.583 (28/48) | 0.188 | YES | 16: Baltimore, Lew Wallace, Hurlbut, Delaware cavalry, command, secretary of war, transportation |
+| 9877/3 | 0.310 (9/29) | 0.172 | no (filed E403) | 16: Brigadier General, New York, McHenry, Dana, president, arrest, report, telegraph |
+| 9793/0 | 0.490 (75/153) on the entry's own leaf, **0.556 (104/187) with the six lines that continue on the next leaf (9794)** | 0.123 | YES (only with the continuation) | 43: Grant, Hunter, Wright, Maryland, Washington, president, secretary, numbers 25000, 1000, 4000 |
+| 9826/0 | 0.619 (91/147) | 0.136 | YES | 34: Sheridan, Mosby, Lee, Loudon, Bowling Green (slip), numbers, army, cavalry |
+| 9806/2 | 0.638 (67/105) | 0.162 | YES | 20: Kelly, Grant, Washington, cavalry, reinforce |
+| 9882/0 | 0.442 (50/113) | 0.133 | no (filed E404) | 44: Thomas, Rosecrans, Smith, Rawlins, Hood, Grant, St. Louis, Nashville, Savannah, Michigan, Ohio |
+| 9777/1 | 0.718 (51/71) | 0.197 | YES | 19: Banks, Lee, Baltimore, Martinsburg, Harpers Ferry, Potomac, 8000 men |
+Six step-0 hits, nothing filed, nothing searched: 9835/1, 9877/1, 9793/0, 9826/0, 9806/2, 9777/1 -- **body in holder transcription** (a verifier decides what, if anything, (c) adds; Grant, Sheridan, Mosby, Wallace and similar words are the key's readings of code words and carry a counted contribution only if a verifier accepts them, D1 at most). The ruling's 0.5 line cuts a continuum: 9793/0 is a hit only because the entry runs onto the next leaf (the extractor stops at the leaf end; its first leaf alone reads 0.490); filing 9793/0 would have meant filing a truncated entry. 9811/1 (0.381), 9877/3 (0.310) and 9882/0 (0.442) are the three under the line and are filed.
+
+**Book per row (whole-entry vocabulary share No.1/No.2/No.9; `ms18_r9_controls.txt`).** 9811/1 .49/.35/.22; 9835/1 .37/.37/.20 (tie, not filed); 9877/1 .38/.31/.08; 9877/3 .59/.47/.29; 9793/0 .54/.41/.20; 9826/0 .44/.35/.16; 9806/2 .40/.35/.17; 9882/0 .57/.42/.18; 9777/1 .38/.39/.12 (tie, not filed). For the three filed rows the book is No. 1 by share and by sense (No. 2, No. 9 and the meaning-shuffled copies read nonsense); the matched control (meaning-shuffled copies) gives the same H count by construction and cannot fail, so it licenses nothing: sense decides.
+
+**Print (one printed clause for clause; two not located).** E404 Halleck to Thomas, 1 Nov 1864 11.30 a.m., OR I/41 pt 4 p.389 (before the running head 390), C against the print. For the step-0 hits, not searched by this worker, the same cached text shows 9793/0 is Halleck to Hunter, Washington 14 July 1864 12 m, printed OR I/37 pt 2 pp.815-816 (item before the running head 816) clause for clause; a lead for the verifier, not filed and not graded here. E402 and E403 not located in the cached volumes (phrase grep and date windows in the E402-E403 notes); E402's own 3 PM trip is corroborated by the E347 sibling.
+
+**Image check (four leaves at 2400 px to scratch, not committed; every filed row read on its whole entry on the leaf).** 9811 (printed 145): the entry's lines match the transcription, and the leaf gives the hour 10.40 AM that the transcription header omits; 9877 (211): 9877/3 matches line by line; 9793 (127): the leaf ends at 'be placed' and the entry continues on 9794 (found by the image, which led to the step-0 correction above); 9882 (216): matches, the entry ends 'as they arrive Jacob' (complete). The five step-0-hit leaves other than 9793 (9835, 9826, 9806, 9777) were not opened (not needed, nothing filed).
+
+Grades: E402 H16 C2, E403 H20, E404 H48 C1 from the decoder (C by comparison with the print for E404); M for names, slips and numbers per entry; no S, no I. No judge spec exists for this ledger (rule 7: none run). Requests: hdl.huntington.org 8 (4 CISOSEARCHALL, 4 IIIF leaves; all 200; one take, released), no other host (print texts from disk). Depth and novelty not classified (rule 10). seven_day allowed_warning not observed by me.
+
+## Remaining gaps (MS18-R9, 10 Oct 2026)
+Read so far: three of nine rows filed (E402-E404); six step-0 hits left unfiled by ruling; one printed (E404).
+- E402 and E403 print - blocker: not-attempted; cached OR volumes only, no ser. III, Navy, Grant Papers or by-date page-image read; next: OR I/43 pt 1 pages 4-6 Aug 1864 and OR I/42 pt 3 28-29 Oct 1864 on IA page images, ~$0.4
+- E402 'Wesley' (second addressee word) and 'Ord' versus Hunter - blocker: open-codes; names M; next: a KEY job, ~$0.3
+- E403 'Amos', Stevenson and the McHenry reading - blocker: not-attempted; names are code-word readings only; next: a Dana/Stevenson Oct 1864 search (Baltimore, Maxon the State agent), ~$0.3
+- E404 'Clifton' read [Fort Valley] and other slips - blocker: open-codes; plain words collide with key rows; next: a KEY job, ~$0.3
+- step-0-hit rows 9835/1 9877/1 9793/0 9826/0 9806/2 9777/1 - blocker: not-attempted; the Wave 3 ruling files nothing from a reader and no first verifier has run on them; next: FV first verifier on the six, ~$2.5 per entry
+
+## Escalation (MS18-R9, 10 Oct 2026)
+- [x] siblings: 9811/2 (E347) and 9877/1, 9877/2 tested or noted; same-leaf neighbours not filed here.
+- [x] clear-pages: CISOSEARCHALL, 4 queries (filed rows), 0 hits each.
+- [x] known-keys: three books plus meaning-shuffled copies (count control non-discriminating by construction, read by sense).
+- [x] print: 177 cached volumes, phrase grep plus date windows; E404 printed, E402 and E403 not located; 9793/0 lead noted.
+- [n/a] key-rebuild: no key row edited.
+- [x] image-check: four leaves, whole filed entries read.
+- [x] retry: none needed.
+Verdict: keep going: 5 internal gaps; cheapest next: OR I/43 pt 1 and I/42 pt 3 page-image windows for E402 and E403, ~$0.4

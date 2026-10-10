@@ -2141,5 +2141,23 @@ Geo K. Smith Cumberland Md for [Major] [General] W. H. Emory [Command = Er (-ed,
 
 Code-word tokens: H 31.
 
-Totals over the 335 entries: H 5869, C 81, I 25, M 41, S 18, U 10.
+**E402 | Page 151 | 9811 | mssEC 18 (obj 10074, pointer 9811; printed page 145), 5 Aug 1864 Washington (the leaf gives 10.40 AM; the holder transcription gives no hour), McCaine (operator) at Monocacy Junction, for [Maj. Gen. David Hunter, M] or [the code word 'Wesley', unread], signed C. B. Comstock Lt [Colonel] A D C (Grant's aide): General Grant will leave here for [Hunter's, the decoder reads Ord's, M] head quarters about 3 PM by rail road; will you inform me to what point he should come for that purpose and furnish transportation for [5] from that point to [Hunter]; not located in print (MS18-R9; row 9811/1; leaf image-read at 2400 px, whole entry)**
+
+Monocacy Junc . [Washington] [55] am for [Maj. Gen. David Hunter] or [Right] ---- [Maj Genl U.S. Grant] will leave here for [Maj Gen E. O. C. Ord]'s <insertion>Mackerals</insertion> [Head Quarters] about {time: 3 PM} by [Rail Road] ---- Will you inform me to what [Point] he shld come for that purpose & furnish [Transportation] for [5] from that [Point] to [Maj. Gen. David Hunter]  {tail: [signed] C. B. Comstock Lt [Colonel] A D C End}
+
+Code-word tokens: H 16, C 2.
+
+**E403 | Page 217 | 9877 | mssEC 18 (obj 10074, pointer 9877; printed page 211), 28 Oct 1864 Washington (9.30 AM), H. F. Schermerhorn (operator, label No. 1), for [Brig. Gen.] Stevenson [M]: arrest Stephen Maxon Amos [the name word 'Amos' unread, M], State agent, if within the limits of your command and send him immediately to [Fort McHenry, M]; report to this Department by telegraph; by order of the President, signed [C. A. Dana] Assistant [Secretary of War]; the clerk adds in plain words 'How do you like our cipher'; not located in print (MS18-R9; row 9877/3; leaf image-read at 2400 px, whole entry)**
+
+{time: 9.30 AM} [28] for [Brigadier General] Steven son [.] [Arrest (-ed, -ing)] [In the] Maxon [New York] State agent if with in the limits of your [Command = Er (-ed, -ing)] and send him imm'y to [McHenry] [.] [Report] to this [Department] by [Telegraph (-ed, -ing)] [.] By order [Of the] [President U.S.]  {tail: [signed] [C. A. Dana] Assistant [Secretary of War] How do you like our cipher}
+
+Code-word tokens: H 20.
+
+**E404 | Page 222 | 9882 | mssEC 18 (obj 10074, pointer 9882; printed page 216), 1 Nov 1864 Washington (11.30 AM), Capt. J. G. Van Duzer (operator), for [Maj. Gen. Thomas at Nashville], signed [Halleck] General in Chief: General Rosecrans was directed some days ago to send you A. J. Smith's division; he is also directed to send you all available troops in Saint Louis and vicinity; General Grant has sent his chief of staff, General Rawlins, to Saint Louis to hurry forward these reinforcements; should you want them to land at Clifton, Savannah or Nashville instead of Eastport please so direct; the four Michigan regiments had all gotten off by the 24th ultimo and the two from Ohio left the 24th and 27th; there is another regiment in Ohio which will be gotten off as soon as completed; the two regiments from the Northwest are en route; I think you should concentrate all you can against Hood, replacing the garrisons in your rear by new troops as they arrive; printed OR I/41 pt 4 p.389 (MS18-R9; row 9882/0; leaf image-read at 2400 px, whole entry)**
+
+{time: 11.30 AM} [1] [Maj Gen Geo. H. Thomas] [.] [Maj Gen W. S. Rosecrans] was directed some days ago to send you [Gen A. J. Smith]'s [Division] He is also directed to send you all [Available] [Troops] in [St Louis] & vicinity [.] [Maj Genl U.S. Grant] has sent his [Chief of Staff] [General] Rawlins to [St Louis] to hurry forward these [Reinforcements] should you want them to land at [Fort Valley] or [Savannah] or [Nashville] instead of [East] port please so direct The [4] [Michigan] [Regiment]'s had all gotten off blithe [24] ultimo & the [2] from [Ohio] [Left] the [24] and [27] [.] Theres another [Regiment] in [Ohio] which wilby gotten off [As soon as] completed stop The [2] [Regiment]'s [From the] [North] [West] are enroute but as they had a long march before reaching [Rail Road] or [Steam] boat [Transportation] we may not hear of them for some days I think you should [Concentrate (-ed, -ing)] all you can against [Maj Gen J. B. Hood (Confederate)] replacing the garrisons in your [Rear] by new [Troops] as they arrive [General-in-Chief]
+
+Code-word tokens: H 48, C 1.
+
+Totals over the 338 entries: H 5953, C 84, I 25, M 41, S 18, U 10.
 <!-- decode.py: derived block ends -->

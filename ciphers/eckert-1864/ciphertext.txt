@@ -4498,3 +4498,50 @@ be the best to intrust with the duty of odoring
 Mack Cause Land by order of Tappan Shelter Hancock Walrus
 C W Clark Junior A A G how are you
 note: MS65-R1: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .48/.51/.22: favours No. 2 by 3 points; the sense reads No. 1: Emory, West Virginia, Kanawha, Gallipolis, arrest; No. 2 reads Pickets/Harbor nonsense; header 'Tappan Shelby' = Major General, 'Irving' = President (No. 1 rows)). Step-0: a 0.458 (33/72), shuffle p95 0.181, (c) 19 words: not a hit. 'Mac Cause land' / 'Mack Cause Land' is written plain (McCausland, Gen. John McCausland, M for the identity); the decoder reads the plain 'oakumed' as [Arrest] and 'wicked' as [Report] (key rows). Not located in print: OR I/46 pt 3 (IA warofrebellion463unit): McCausland appears only at one index line p.507 and one cavalry mention; 26 dated headings 13-15 June 1865, two with terms (13 June Eckert to Halleck at Richmond, arrest of Northrop; not this). Holder 7953 (received ledger page 295, 12.20 PM Cumberland 16 June 1865, Emory to Col King: 'Gallopolis June 15 to Maj General Emory: Mack cause land is said to be in St Louis Mo. he is not here, have made thorough search (signed) C W Smith Captain Comdg Post'): the reply to this order, a context item not a clear copy. Image: the entry (lower half of the leaf, lines from 'for Tappan Shelby W H Emory' to 'how are you') matches the transcription line by line; signed 'C W Clark Junior A A G'.
+
+### E402 | Page 151 | 9811 | mssEC 18 (obj 10074, pointer 9811; printed page 145), 5 Aug 1864 Washington (the leaf gives 10.40 AM; the holder transcription gives no hour), McCaine (operator) at Monocacy Junction, for [Maj. Gen. David Hunter, M] or [the code word 'Wesley', unread], signed C. B. Comstock Lt [Colonel] A D C (Grant's aide): General Grant will leave here for [Hunter's, the decoder reads Ord's, M] head quarters about 3 PM by rail road; will you inform me to what point he should come for that purpose and furnish transportation for [5] from that point to [Hunter]; not located in print (MS18-R9; row 9811/1; leaf image-read at 2400 px, whole entry)
+McCaine  Wash. Aug 5 1864
+Monocacy Junc .
+Grapes feeble leg person am for mutton or
+Wesley ---- Jupiter will leave here for <deletion>Meridens</deletion> <insertion>Mackerals</insertion>
+Snake about Imogene by Welch ---- Will you
+inform me to what Vernon he shld come
+for that purpose & furnish Whig for Plaster
+from that Vernon to Mutton Walrus C. B.
+Com - stock Lt paradise A D C End
+note: MS18-R9: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .49/.35/.22): No. 1 (No. 2 and No. 9 read nonsense: 'Siege Gun', 'Reconnoissance'; sense decides; the control cannot fail on H count, read by sense). Step 0 (Wave 3 ruling, ms18_r9_step0.py): (a) 0.381 (16/42), (b) p95 0.167, not a hit; (c) 17 key-dependent words: david, fifty five, gen, genl, grant, head, hunter, maj, ord, point, quarters, rail, right, road, transportation, washington. Same leaf, same date as E347 (9811/2, Sampson to W. P. Smith, Baltimore: General Grant with one of his staff wishes to go to Monocacy this afternoon; leaves Washington 3 PM train for Relay): the same trip, independent corroboration of the 3 PM and the destination (context, M). The decoder reads the plain 'Mackerals' (inserted over 'Meridens' by the clerk) as [Head Quarters] and 'Hunter' as [Ord]: slips, M. Not located in print: phrase grep (cached OR volumes: 'Grant will leave here for', 'what point he should come for that purpose' none) and date-window search 4-6 Aug 1864 with Comstock/Monocacy/Hunter + Grant/Ord in OR I/35 pt 2, I/37 pt 2, I/43 pt 1 and others (0 with terms); Grant's own 4 Aug 1864 telegram to Halleck ('will start in two hours for Washington and will spend a day or two with the army under General Hunter') is printed OR I/43 pt 1 (context, not this text).
+
+### E403 | Page 217 | 9877 | mssEC 18 (obj 10074, pointer 9877; printed page 211), 28 Oct 1864 Washington (9.30 AM), H. F. Schermerhorn (operator, label No. 1), for [Brig. Gen.] Stevenson [M]: arrest Stephen Maxon Amos [the name word 'Amos' unread, M], State agent, if within the limits of your command and send him immediately to [Fort McHenry, M]; report to this Department by telegraph; by order of the President, signed [C. A. Dana] Assistant [Secretary of War]; the clerk adds in plain words 'How do you like our cipher'; not located in print (MS18-R9; row 9877/3; leaf image-read at 2400 px, whole entry)
+Schermerhorn H. F.  Wash'n Oct 28th 1864 930 AM
+Eugenia Harsh Platina for Palsy Steven son zebra Oakum Stephen
+Maxon Amos State agent if with in the limits of
+your Polka and send him imm'y to Alamo zodiac Wick
+to this Quadrant by wrangle unity By order torch Bologna
+Yoke Insanity Assistant Brutus How do you like our cipher
+note: MS18-R9: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .59/.47/.29): No. 1. Step 0: (a) 0.310 (9/29), (b) p95 0.172, not a hit; (c) 16 key-dependent words: arrest, brigadier, command, department, ed, eight, er, general, ing, mchenry, new, president, report, telegraph, twenty, york. The leaf (printed 211) matches the transcription line by line, header 'Schermerhorn H.F. No 1, Wash'n Oct 28th 1864 9.30 am'. Same leaf: 9877/1 (Sampson to Wallace, furlough to vote, Step-0 hit, not filed) and 9877/2 (Glass at Nashville 'Should Moscow be able to send you', not read here). Not located in print: phrase grep ('Arrest Maxon', 'State agent if within the limits of your command', 'send him immediately to McHenry' none) and date-window search 28-29 Oct 1864 with McHenry/Maxon/Dana + Maxon/agent/arrest in OR I/42 pt 3, I/43 pt 2, I/41 pt 4 and others (one window with terms, a Dana letter from Rectortown of 29 Oct, a different text). The person and the State are code-word readings (M).
+
+### E404 | Page 222 | 9882 | mssEC 18 (obj 10074, pointer 9882; printed page 216), 1 Nov 1864 Washington (11.30 AM), Capt. J. G. Van Duzer (operator), for [Maj. Gen. Thomas at Nashville], signed [Halleck] General in Chief: General Rosecrans was directed some days ago to send you A. J. Smith's division; he is also directed to send you all available troops in Saint Louis and vicinity; General Grant has sent his chief of staff, General Rawlins, to Saint Louis to hurry forward these reinforcements; should you want them to land at Clifton, Savannah or Nashville instead of Eastport please so direct; the four Michigan regiments had all gotten off by the 24th ultimo and the two from Ohio left the 24th and 27th; there is another regiment in Ohio which will be gotten off as soon as completed; the two regiments from the Northwest are en route; I think you should concentrate all you can against Hood, replacing the garrisons in your rear by new troops as they arrive; printed OR I/41 pt 4 p.389 (MS18-R9; row 9882/0; leaf image-read at 2400 px, whole entry)
+Capt JG Van Duzer  Washn Nov 1st 1864
+Florence plunge Lantern zodiac Moscow was directed
+some days ago to send you Maynards
+quincy He is also directed to send
+you all nugget Whisky in Geneva &
+vicinity zebra Japan has sent his Borgia
+Shelby Rawlins to Gaul to hurry forward
+these webb should you want them to
+land at Clifton or Garter or Embrace
+instead of ripley port please so direct
+The pension Alpha whips had all gotten
+off blithe harrow penny ultimo & the
+peach from Abner stomach the harsh pension
+and harrow postpone unity Theres another wharton
+in Abner which wilby gotten off persia
+completed stop The plank whips saxon torrent
+wilson are enroute but as they had
+a long march before reaching weldon or
+weasel boat whig we may not hear
+of them for some days I think
+you should plant all you can against
+Handle replacing the garrisons in your watkins
+by new whisky as they arrive Jacob
+note: MS18-R9: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .57/.42/.18): No. 1. Printed OR I/41 pt 4 (IA warofrebellion414unit; the item stands before the running head 390): Halleck to Major-General Thomas, Washington, 1 Nov 1864 11.30 a.m., word for word; C against the print. Step 0: (a) 0.442 (50/113), (b) p95 0.133, not a hit; (c) 44 key-dependent words (place, unit and officer words: Thomas, Rosecrans, Smith, Rawlins, Hood, Grant, Louis, Nashville, Savannah, Michigan, Ohio, ...). The leaf (printed 216, last line ends 'as they arrive Jacob') matches the transcription line by line; the entry is complete on the leaf. Slips (M, key questions, no key edit): the decoder reads the plain word 'Clifton' as [Fort Valley] (the print has Clifton), 'Eastport' is [East] port, 'Garter' [Savannah], 'Embrace' [Nashville]; 'Moscow' reads [Maj Gen W. S. Rosecrans], 'Japan' [Maj Genl U.S. Grant] (C by the print).
