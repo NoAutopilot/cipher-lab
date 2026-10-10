@@ -12933,6 +12933,131 @@
       "depth_check": "D2V-E74 depth ruling (body code words only; address, date, time, signature excluded): body code words Cadmus, swallow, Saffron, Merlin H, Muss, Mud, Willow M -- no clause above the authentication distance",
       "depth_note": "9 H of 13 code-word groups (Muss, Mud, Willow unread, Abbott M); message clear in the holder's transcription",
       "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-N2f)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-N2f verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Non-decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-N2f)' section 4",
+      "reading_version": "N2R-5 10 Oct 2026 (reading-no2.md), grades as in AUDIT (FV-N2f) s.3 (decoder misreads of plain words pending a FIX job)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 93.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): Quartermaster General to Brig. Gen. Ingalls, 25 June 1864, 11.30 a.m.: send the spare ocean steamers from the James to New Orleans to bring troops north (N2-JG)",
+      "line": "Re-read with War Department Cipher No. 2 (the message is largely in clear in the Huntington's public transcription of the ledger): at 11.30 a.m. on 25 June 1864 the Quartermaster General told Ingalls to send every ocean steamer that could be spared from before Richmond to New Orleans to bring troops north; the key supplies the ports, the river and the units, and Ingalls's reply the next morning (holder 10442) confirms it. Plaintext already public (N1); the telegram not located in print (searched 10 Oct 2026).",
+      "gap": "N1 one audit (FV-N2f, 10 Oct 2026): Step-0 ruling hit, ordered overlap 0.533 vs shuffle p95 0.200; key adds 28 words (ports, river, units); holder 10442/10443 (Ingalls's clear reply) confirm hour, sender, steamers, the James, New Orleans; 'Palermo' = Nashville is M (FIX job)",
+      "depth": "D1",
+      "completeness": "26 code-word groups filed (H 25, C 1), 1 lowered to M (Palermo); body largely clear in the holder's transcription",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.99, pointer 9765, N2-JG"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.99, pointer 9765, N2-JG",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.99, pointer 9765, N2-JG"
+      ],
+      "depth_sentence": "Ingalls had the ocean steamers in the James ordered to New Orleans within hours of the Quartermaster General's 11.30 a.m. telegram (holder 10442).",
+      "depth_check": "Wave 3 Step-0 ruling: body known in holder transcription; depth from the key-dependent words alone (steamers, New Orleans, the James), checked against holder 10442/10443 (D1)",
+      "depth_note": "26 code-word groups filed (H 25, C 1), 1 lowered to M (Palermo); body largely clear in the holder's transcription",
+      "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-N2f)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-N2f verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-N2f)' section 4",
+      "reading_version": "N2R-5 10 Oct 2026 (reading-no2.md), grades as in AUDIT (FV-N2f) s.3 (decoder misreads of plain words pending a FIX job)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 94.1,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): War Department to C. A. Dana, 8 July 1864, 11 p.m.: return at once; Wallace reports about 20,000 under Early and Breckinridge near Urbana (N2-JH)",
+      "line": "Read at grade H with War Department Cipher No. 2: at 11 p.m. on 8 July 1864 a War Department telegram (signer read as the Secretary of War) recalled C. A. Dana to Washington, passing on Lew Wallace's report of about 20,000 men under Early and Breckinridge near Urbana and Halleck's word that he had no force to take the field; not located in print (searched 10 Oct 2026); Dana's printed dispatch of 9 July (OR I/40 pt 3 p.111) repeats the news and says he is leaving for Washington.",
+      "gap": "N3 one audit (FV-N2f, 10 Oct 2026); Step-0 ruling miss (0.458 vs 0.167); not N4: Grant Papers vol. 11, Stanton and Dana Papers (LC), NARA RG 107, press of 9-11 July, Google Books, G3, JSTOR not searched; D3 pending a leaf eye-check; second audit AUD2-LEDGER10 row queued; SO-ECKERT-N2-JH queued",
+      "depth": "D2",
+      "completeness": "32 H of 34 code-word groups filed (2 are plain words the decoder misread: business, George; FIX job)",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.114, pointer 9780, N2-JH"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.114, pointer 9780, N2-JH",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.114, pointer 9780, N2-JH"
+      ],
+      "depth_sentence": "Dana was recalled from Grant's headquarters on the night of 8 July with Wallace's estimate of 20,000 men near Urbana, and printed his own repeat of that estimate the next day as he left for Washington.",
+      "depth_check": "code clause: Opal Watsons tonight that the Rabbit are Swindling in Strong saint near Urbana ... Nelson Dwight strong = Wallace reports tonight that the enemy are moving in strong force near Urbana ... 20000 strong; external (non-statistical): Dana to Burnside, City Point 9 July 1864, OR I/40 pt 3 p.111 (D2; D3 pending leaf eye-check)",
+      "depth_note": "32 H of 34 code-word groups filed (2 are plain words the decoder misread: business, George; FIX job)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-N2f)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-N2f verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Non-decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-N2f)' section 4",
+      "reading_version": "N2R-5 10 Oct 2026 (reading-no2.md), grades as in AUDIT (FV-N2f) s.3 (decoder misreads of plain words pending a FIX job)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 80.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): telegram to Maj. Gen. Meade (M), 24 Oct 1864, 8 p.m.: the disputed appointments will be made unless clearly in conflict with law, the question left to the Senate (N2-JI)",
+      "line": "Re-read with War Department Cipher No. 2 (the message is in clear in the Huntington's public transcription of the ledger): at 8 p.m. on 24 Oct 1864 the sender (read as the Secretary of War) wrote that he would make the disputed appointments of two officers, names spelled out in the ledger, unless they clearly conflicted with law, leaving the question to the Senate; the key adds only the date, the addressee and the signer. Plaintext already public (N1); the telegram not located in print (searched 10 Oct 2026).",
+      "gap": "N1 one audit (FV-N2f, 10 Oct 2026): Step-0 ruling hit, ordered overlap 0.860 vs shuffle p95 0.279; key adds date, addressee (M), signer (M); 2 I tokens are plain 'reward'/'question' misread by the decoder (FIX job); spelled names probably Meigs and Barnard (lead, M)",
+      "depth": "D1",
+      "completeness": "10 H, 2 I of 12 code-word groups filed; the 2 I are plain words; body clear in the holder's transcription",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.210, pointer 9876, N2-JI"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.210, pointer 9876, N2-JI",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.210, pointer 9876, N2-JI"
+      ],
+      "depth_sentence": "The sender ruled he would make the contested appointments and leave their legality to the Senate on confirmation.",
+      "depth_check": "Wave 3 Step-0 ruling: body known in holder transcription; no body code word (date, addressee, signer only) (D1)",
+      "depth_note": "10 H, 2 I of 12 code-word groups filed; the 2 I are plain words; body clear in the holder's transcription",
+      "text": "known"
     }
   ],
   "lanes": [

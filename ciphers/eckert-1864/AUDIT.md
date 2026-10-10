@@ -15360,3 +15360,82 @@ No novelty search was run on the (c) words: at D1 they do not reach the N3+ D2+ 
   Wave 3 Step-0 ruling (N1, body known in holder transcription)". Its "Remaining gaps" items for these six can be marked [retired] for classification.
 - MS18-R8's E382, E388, E390, E391 (printed, not in this audit's scope) have step-0 figures 0.65, 0.16, 0.41, 0.57 by the reader's instrument: a lead for
   STEP0-RULE / FV-MS18p's successor, not classified here.
+
+## AUDIT (FV-N2f)
+
+Verifier FV-N2f (account 1, for LANE LEDGER-10), 10 Oct 2026, 05:1x-05:3x UTC by `date -u`; a separate session from the reader N2R-5 and from every other
+verifier of these entries, not protecting the reader's conclusions. Scope: first audits of **N2-JG** (9765/2), **N2-JH** (9780/0) and **N2-JI** (9876/0) in
+`ciphertext-no2.txt` (War Department Cipher No. 2; Washington sent ledger mssEC 18 = Huntington object 10074). Nothing decoded beyond key look-ups.
+`decode_no2.py --check` -> "reading-no2.md is current" (exit 0, 05:23). Intake gate (05:23): `eckert-1864: partial (line 3) -- edition/page or full-text-search
+citation found within 6 lines`. No spec for eckert-1864, so `judge_plaintext.py` was not run. Key source for all three: `period`. Scripts:
+`ms18/fv_n2f_step0.py` (+ `.out`), `ms18/fv_n2f_hdl.py` (+ `.out`). No leaf image fetched (budget): all three remain "holder transcription, leaf not
+eye-checked", which caps depth below.
+
+### 0. Step 0 (the Wave 3 Step-0 ruling of 10 Oct, ordered overlap)
+`ms18/fv_n2f_step0.py`, disk only (sources/mssEC18/p<pointer>.json, cut from the entry's own header line to the next entry header). (a) LCS of decoded
+content words against the entry's transcription words / decoded content words; (b) the same against that transcription shuffled within the entry, 20 draws,
+p95; (c) decoded content words absent from the transcription.
+| ID | pointer | (a) ordered | (b) shuffle p95 | hit | (c) key-dependent words |
+|---|---|---|---|---|---|
+| N2-JG | 9765 | 0.533 (32/60) | 0.200 | **yes** | 28: 25, brig general, Nashville, quarter master x2, steamers x2, New York, Philadelphia, James, (Hampton) Roads, City Point, necessary, Richmond, New Orleans, report, city, order, troops, north |
+| N2-JH | 9780 | 0.458 (22/48) | 0.167 | **no** | 26: Washington x3, Dana, Browns Ferry, department, Wallace Lew, report x2, enemy, move, force x4, towards, McCallum, 20000, Breckenridge, Halleck, Grant, 30, mile, Hunter |
+| N2-JI | 9876 | 0.860 (37/43) | 0.279 | **yes** | 6: 24, Meade, Follow, Defend, Secretary of War |
+N2-JG and N2-JI are step-0 hits: **body known in the holder transcription, N1 (key `period`, `text: known`)**. N2-JH is below 0.5 and gets the full audit
+(s.2). The cut for each entry was printed and checked by eye against the JSON (JI's cut includes the ledger tail "No 2 11 am", no content words).
+
+### 1. Holder clear-copy and received-copy search (all pointers, CONTENTdm full text; `ms18/fv_n2f_hdl.py`, 8 queries, all 200)
+'steamers New Orleans' 17, 'Hampton Roads steamers' 2, 'ocean steamers' 8, 'Urbana Early' 3, 'Parkersburg Hunter' 2, 'return immediately' 43,
+'liberal construction' 1 (9876 itself), 'Meigs Barnard' 11. Read for each hit: no clear copy and no received copy of any of the three. Context found:
+- **N2-JG**: holder **10442** (mssEC 19 p.300, clear): Ingalls, City Point 9.30 a.m. 26 June, to the Quartermaster General: "your dispatch of 1130 am
+  yesterday was recd by me at 9.10 P M -- the only ocean Steamers in this river are [five named] -- I have given them the orders you directed ...". Holder
+  **10443** (p.301, clear, same exchange): "Gen Grant thinks it important that the Ocean Steamers heretofore ordered shall go to N. Orleans". Together these
+  confirm, non-statistically, the hour (11.30 a.m. 25 June), the sender (the Quartermaster General), the addressee (Ingalls at City Point), and the
+  key-dependent words steamers, the James ("this river") and New Orleans.
+- **N2-JH**: holder 8998 (p.106) is a different 10.30 p.m. 8 July telegram on Urbana in the same code; no copy of JH.
+- **N2-JI**: 'Me I g S' and 'Barn Yard' are spelled names; the holder pages 10354/10356 (clear, 'sig Meigs & Barnard', May 1864) show the pair M. C. Meigs
+  (Quartermaster General) and J. G. Barnard acting together that year. Lead only (M): the cases are probably Meigs's and Barnard's, i.e. brevet appointments.
+
+### 2. N2-JH: print, editions and the external check
+- Official Records, cached full text on disk (sources/ia-fulltext/print-check): I/37 pt 2 (warofrebellion372unit) and I/40 pt 3 (warofrebellion403unit),
+  phrase grep "glad to have you return", "pressure of business", "not yet left Parkersburg", "Urbana is about", "return immediately": no hit for this
+  telegram (the reader's grep of I/37 pts 1-2 and I/43 agrees).
+- **External check, OR I/40 pt 3 p.111** (OCR "Ill"), City Point, July 9, 1864, Dana to Burnside: "Wallace reports Early at Urbana with 20,000 men
+  threatening communication between Baltimore and Washington. Truth of report very doubtful. **I am about to start for Washington.** C. A. DANA." Dana, at
+  City Point, repeats the telegram's own news (Wallace, Urbana, 20,000, Early) the next day and leaves for Washington, which is what JH asks of him; OR
+  I/37 pt 2 then has Dana writing from Washington on 11-12 July. This confirms four code values (Wallace, 20000, the recall, Dana as addressee) by a
+  printed text that does not reproduce the telegram.
+- C. A. Dana, *Recollections of the Civil War* (1898), IA recollectionsofc00danauoft full text: "Parkersburg", "Urbana", "pressure of business",
+  "glad to have you", "return immediately": no hit for this telegram.
+- Not searched (budget): Grant Papers vol. 11 (IA be-api), Stanton Papers (LC), NARA RG 107, the Washington press of 9 July, Google Books, G3, JSTOR,
+  OR ser. III.
+
+### 3. Grades and corrections (for a FIX job; not edited into the reading)
+- N2-JH: the decoder reads plain 'business' as the code [Browns Ferry] and 'George' (of plain 'George Town') as [McCallum D C]; the reader's summary already
+  reads "business" and "Georgetown", correctly by the sense. 'wheedle' = [Towards] (the summary's "threatening" is the reader's gloss, not the key). Code
+  tokens: 34 filed H, of which 2 are plain words misread by the decoder; 32 H stand (Washington x3, Dana, Department, Wallace, report x2, enemy, move,
+  force x4, towards, 20000, Breckinridge, Halleck, Grant, 30, mile, Hunter, signer, date, hour, etc.).
+- N2-JI: the decoder reads plain 'reward' as [Follow] and 'question' as [Defend], and 'Yard' of the spelled 'Barn Yard' as a stop; the 2 I-graded tokens are
+  these. The summary already reads "reward" ("meritorious ... reward of public service" is the leaf's 'a merry tory us reward of public service') and
+  "question". Addressee Meade (Mohawk) and signer (Comb = Secretary of War) stay M as the reader filed them.
+- N2-JG: 'Palermo' decoded "Nashville" in "Nashville's Chief Quarter Master" is wrong in context (Ingalls was chief quartermaster at City Point, holder 10442);
+  M, a FIX job should test Palermo's other key values. "Vermont tulip" opening and "repeats" = [Order] stand H.
+
+### 4. Classification (rule 10) and depth (rule 4a)
+| ID | step 0 | N-class | key | depth | safe sentence |
+|---|---|---|---|---|---|
+| N2-JG | hit (0.533 vs 0.200) | **N1** (body in the holder transcription; text known) | period | **D1** | On 25 June 1864 at 11.30 a.m. the Quartermaster General told Ingalls to send every ocean steamer that could be spared from before Richmond to New Orleans to bring troops north; Ingalls's reply of the next morning (holder 10442) confirms it. The plain words are in the Huntington's transcription; the key adds the ports, the river and the units. |
+| N2-JH | no (0.458 vs 0.167) | **N3** (no prior plaintext or decipherment located after the logged search; not N4: s.2 "not searched") | period | **D2** (D3 pending a leaf eye-check) | Read at grade H with War Department Cipher No. 2: at 11 p.m. on 8 July 1864 a War Department telegram (signer read as the Secretary of War, M) recalled C. A. Dana to Washington, passing on Lew Wallace's report of about 20,000 men under Early and Breckinridge near Urbana and Halleck's word that he had no force to take the field; not located in print (searched 10 Oct 2026); Dana's printed dispatch of 9 July (OR I/40 pt 3 p.111) repeats the news and says he is leaving for Washington. |
+| N2-JI | hit (0.860 vs 0.279) | **N1** (body in the holder transcription; text known) | period | **D1** | On 24 Oct 1864 at 8 p.m. the sender (read as the Secretary of War, M) wrote that he would make the disputed appointments unless they clearly conflicted with law, leaving the question to the Senate; the body is plain in the Huntington's transcription, and the key adds only the date, the addressee and the signer (both M). |
+Unsafe: "first decipherment" or "unread" for any of the three; "Stanton recalled Dana" as fact (the signer is a decoded value, M); "Meigs and Barnard" for
+JI's spelled names (a lead).
+N2-JH depth: code tokens 32 H of 34 filed (2 are plain words, s.3), clause above the authentication distance read from the key ("[Wallace] [reports] tonight
+that the [enemy] are [moving] in strong [force] near Urbana ... about [20000] strong consisting of Early and [Breckinridge]'s [forces]"), external
+non-statistical check OR I/40 pt 3 p.111; held at D2 because the leaf is not eye-checked. Depth sentence: "Dana was recalled from Grant's headquarters on the
+night of 8 July with Wallace's estimate of 20,000 men near Urbana, and printed his own repeat of that estimate the next day as he left for Washington."
+SO row SO-ECKERT-N2-JH queued (prompt second-opinions/PROMPT-chatgpt-n2-jh.md); WORK-QUEUE AUD2-LEDGER10-3 (account-4 tag) for N2-JH (N3 D2).
+
+### 5. Postmortem
+N2R-5 filed all three as "not located" H readings. Two of them (JG, JI) are mostly plain words in reading order in the holder's public transcription and
+are N1 under the Step-0 ruling; the reader's own step-0 line counted unordered plain-word overlap and filed nothing about it. JH is the only one whose body
+depends on the key. No over-claiming sentence was found in NOTES/reading-no2 (all three say "not located", none "new"). Decoder misreads of plain words
+(business, George, reward, question, Yard) are listed in s.3 for a FIX job. For LANE LEDGER-10 (account 1)
