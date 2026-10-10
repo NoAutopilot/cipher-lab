@@ -120,3 +120,5 @@ positions), against the same holder window, under the book and the 3 shuffles. R
 shuffles, and whether the hit survives (book hit AND all three shuffles miss, or key-only beats every shuffle). Write NOTES "## STEP0-KEYCTL (10 Oct 2026,
 account 1, for LANE LEDGER-13)" with the table and a proposed revised ruling; change NO status.json, AUDIT.md, ciphertext or grade -- the ruling belongs to
 the VERIFY lane and the owner-account orchestrator. Post one ROOM flag naming them and LANE LEDGER-12 with the survivor count. Report what was found.
+
+(09:15 UTC 10 Oct by date -u: wave 2 spawned with source_url: FM-F1 session_01JHiX4LKRYDVKyGWB8hu7gr, FM65-A session_01FAxkFpYTv9p9kv84Ddebbc, FM65-B session_01QLWhEtryuK3Cx8mrwrTTsV, FM65-C session_01P9rT1JNhnUViZnjaQhsWBx, FM-S3 session_0138GahTBHP93H9j3mfHmMRD, STEP0-KEYCTL session_011n8VvwXBwQk8dRfD87AagU.)
