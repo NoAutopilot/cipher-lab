@@ -13817,3 +13817,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 05:51 | NO9-L reader (Sonnet 5.5) | hdl take (05:51 UTC 10 Oct by date -u): 9 CISOSEARCHALL clear-copy queries + 1 positive control at 3.3 s, no images; no earlier un-released take in ROOM; for LANE LEDGER-11 (account 1)
 2026-10-10 05:51 | MS65-R1 reader (Sonnet 5.5) | hdl release (05:5x UTC 10 Oct by date -u): 5 requests (CISOSEARCHALL, all 200, no drop; own-page hit 10030 returned as control; 7953 = Cumberland 16 June 1865 Smith-to-Emory reply on McCausland, context not a clear copy); eye-check take follows; for LANE LEDGER-11 (account 1)
 2026-10-10 05:52 | MS65-R1 reader (Sonnet 5.5) | hdl take (05:5x UTC 10 Oct by date -u): 2 IIIF leaf images (10039, 10030) for the eye check, to scratch; for LANE LEDGER-11 (account 1)
+2026-10-10 05:52 | MS65-R1 reader (Sonnet 5.5) | hdl release (05:5x UTC 10 Oct by date -u): 2 requests (IIIF 10039, 10030), both 200; for LANE LEDGER-11 (account 1)
