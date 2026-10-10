@@ -13202,3 +13202,146 @@ decipherment", "previously unread", any word implying the text is new. No status
 ### 7. Requests
 hdl.huntington.org 19 (7 CISOSEARCHALL + 1 dropped and retried once, 5 item info, 7 IIIF 2400 px; one take, released); archive.org 17 (5
 `_page_numbers.json`, 10 page images incl. 3 re-fetched leaves, 2 `_djvu.txt`), 1.6 s apart. be-api 0; googleapis 0. Subagents 0.
+## AUDIT (FV-MS18l)
+
+Verifier FV-MS18l (account 1, for LANE LEDGER), 10 Oct 2026, 00:25-00:5x UTC by `date -u`; a separate session from the reader MS18-R6, not protecting its
+conclusions. Scope: first audits of **E366, E369, E370** (NOTES "## MS18-R6"; ciphertext.txt, Cipher No. 1, Washington sent ledger mssEC 18 = Huntington object
+10074). Nothing decoded beyond key look-ups in key.md and key-no2.md. Key source for all three: `period`. No spec exists for eckert-1864, so `judge_plaintext.py`
+was not run. Intake gate (00:2x): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Prior work
+(`tools/prior_work.py eckert-1864 --item-spec 'item_id=E36x;ptr=...' --step-type audit --offline`, one per entry): exit 4 each, verdict step LEAD, every LEAD an
+own-work line of this lane (MS18-R6's filing and notes), none an earlier audit of these entries. Scripts: `ms18/fv_ms18l_hdl.py` (+ `fv_ms18l_hdl.out`,
+`fv_ms18l_info1.out`, `fv_ms18l_info2.out`), `ms18/fv_ms18l_gb.py` (+ `.out`).
+
+### 0. What the reader missed
+- **E370:** the open word "spartons" is in the key: **Spartan = Horse** (key.md p.21 l.10 (338) R; the clerk's o for a). With Kidnap = Sherman, polka = Command,
+  **shade = Forage**, the sentence reads "Head Quarters Army wish to know for how many **horses** in excess of those now in Sherman's command **forage** can be
+  supplied by rail". The reader's "[the army] wish to know for how many 'spartons' ... can be supplied by rail" missed both words.
+- **E369:** "Chant" is the key word **Chart = Knoxville** (key.md p.12 l.26 (329) L) in the clerk's spelling: the same Chant-for-Chart habit is already recorded for
+  Cipher No. 2 (key-no2.md, row Chant, D12-E2); the decoder left it plain. "confess skating" is phonetic **"confiscating"**; "forth" = for the. "Paxton bell" is
+  **Paxton = Camp + bell = Campbell** (the decoder already reads this; the header's "Thomas J. Paxton or Parton [M] Campbell [M]" is wrong: the name is
+  **Thomas J. Campbell**). The holder's received 8756 (s.2) confirms all three. The day words "Harsh female" give 20 + 14 = 34, against "May 24th" in the header and
+  in 8756: a clerk's slip for Harsh Penny/Pension (= 24; "Eugenia harsh pension" heads the entry above on the same leaf for 24 May); female graded M.
+- **E366:** "King and Queen court Hows" is the clear place name King and Queen Court House (Va.); the decoder applied the key rows King = Maj Genl J. M. Schofield
+  and Queen = Danger to it. The header's "five or six miles from [Hanover?, M] and King and Queen Court House" has no source: it is "five or six miles from King
+  and Queen Court House" (plaster = 5, pledge = 6, spoons = Mile). "wick tooth judge advocate shelter" = to **report to the Judge Advocate General** (wick = Report,
+  "tooth" = to the, the phonetic shape FV-MS18j noted, shelter = General). "Ireland" = General-in-Chief, here Halleck (C, s.2); Insanity = C. A. Dana (C, s.2).
+
+### 1. Duplicates and image (own entry, IIIF 2400 px, line crops via `tools/iiif_lines.py --image ... --region`)
+- **Duplicate diff:** the three pointers occur only in their own headers and MS18-R6's notes; mssEC 19 (`entries-mssEC19.tsv`) carries no entry for 8 May 1865 to
+  Caldwell, 24 May 1865 to Lines, or 7 Sept 1864 to Horner/McCallum in these words; the holder's full text finds each telegram only on its own page (s.2). **No
+  duplicate.**
+- **E366 (10005, p.339, second entry; label "No 1"):** transcription matches line by line, including the struck and rewritten date line (first slot "Platina"
+  struck, "Julia" written below; second slot "Julia" struck, "Platina" written above: final order Julia Platina = 4 PM, 8, matching the header "May 8 1865 4 PM"),
+  "Will Yam Boulware", "Norwell rest", "pledge spoons from King and Queen court Hows", "tooth judge advocate Shelter Youth Insanity purity virtue". The first entry
+  on the page (No. 2, Caldwell, Richmond, 10.30 am, 8 May) is a different telegram, not read here.
+- **E369 (10020, p.354, second entry):** matches; "Chant Bethel" is written as two words, "Chant" plainly with n; the name is written "Parton" or "Paxton" (the
+  key word Paxton = Camp, s.0). Lines 6-7 checked on the 800 px page view only.
+- **E370 (9836, p.170, second entry):** matches line by line ("spartons", "Kidnap polka / shade", "Adonis webster W H Whiton"); lines 1-2, 4-5 checked on the
+  800 px page view, lines 3 and 6 on crops.
+
+### 2. Holder's full text, siblings and print
+**Huntington CONTENTdm** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; one hdl take 00:2x-00:3x UTC, 22 requests: 9 queries, 9 item records of
+which one (9983) closed the connection and was not retried, 3 page images). Positive controls: 'Boulware' hits 10005 (E366's own page), 'King and Queen' hits
+10005, 'Masury' hits 9836 (E370's own page). Hits: 'Boulware' 7905, 10005, 8728; 'King and Queen' 10005, 4488, 4490, 7783, 5100; 'Thomas J Campbell' 11; 'confiscating
+officer' 8756; 'Whiton' 12; zero: 'Lines Macon arrest', 'McCallum forage horses', 'Campbell Chattanooga'. Item records read:
+- **7905** (received, Richmond, 10 May 1865, 12.30 pm, "for Hon CA Dana": "your telegraph for the arrest of Wm Boulware has been received and orders accordingly
+  HW Halleck M Genl") and **8728** (received, Richmond, 13 May 1865, 11 am, to Grant: "Boulware has been captured and will be sent immediately to Wash HW
+  Halleck"): **neither is a clear copy of E366**; they are Halleck's answers to it. They fix E366's signer (Dana, = Insanity) and its addressee behind the
+  operator (Halleck, = Ireland), and the outcome. The brief's "N0 by holder copy" test: not met.
+- **8756** (received, Nashville, 24 May 1865, 1 P.M., received 3.40 P.M., "for Secy of War": "I have the honor to request that the Comdg officer at Augusta Ga be
+  directed to arrest Thomas J. Campbell who was confiscating officer for the Rebel Government at Knoxville Tennessee Campbell is said to be in Augusta at this
+  time and send him to Nashville under guard Geo H Thomas Maj Gen"): **the request E369 executes** the same day: E369 is addressed "officer Commanding Augusta"
+  (Polka = Command, Bigelow = Augusta) through Lines at Macon, "forward by rail road". An independent witness of the same day, not a copy.
+- 10016, 10024 (sent ledger pages 350, 358, the same May 1865 stretch), 8689 (Ord, Richmond, Apr 1865, Judge J. A. Campbell): no Campbell-Thomas text; not copies.
+- 7856, 7857 (received, Newbern, 6-7 Apr 1865: W. W. Wright, Chief Engineer Military Railroads, "for WW Whiton in charge Washn"), 9098 (sent, 21 Oct 1864, to Adna
+  Anderson, signed "William Henry Whiton"): **context for E370**: W. H. Whiton was in charge of the Military Railroads office at Washington; E370 is his
+  telegram to McCallum (Director of Military Railroads) in New York, care of Masury and Whiton (a New York paint firm of the Whiton family, IA
+  `whitonfamilyinam00whit`: "in 1857 he formed the partnership of Masury and Whiton"). Not copies.
+
+**Print** (archive.org djvu texts fetched: OR I/49 pt 2 `warofrebellion492unit`, I/46 pt 3 `warofrebellion463unit`, I/39 pt 2 `warofrebellion392unit`, I/38 pt
+5 `warofrebellion385unit`, ser. II vol. 8 `warofrebellion0208rootrich`; page images read where named):
+- **E369 -> not located.** OR I/49 pt 2: the 24 May 1865 items (pp.888-906 by text, **pp.889 and 891 read on page images**, leaves n894 and n896; the
+  `_page_numbers.json` map is two leaves off here, n896 = p.891) include Stanton to Wilson at Macon 5.15 p.m. (Howell Cobb's parole) and two Thomas to Wilson 1 p.m.
+  telegrams (p.889), but neither Thomas's request (8756) nor the order; the index has no Thomas J. Campbell. Ser. II vol. 8 index: only Thomas M. Campbell.
+  External context: *Civil War History* (1963), via Google Books snippet: property at Knoxville sold "by Receiver T. J. Campbell pursuant to a decree of the
+  Confederate States District Court for the Eastern District of Tennessee" (the Confederate sequestration receiver: E369's "confiscating officer"); *The Papers
+  of Andrew Johnson* (1967 vol., snippet) identifies "Thomas J. Campbell (1824-1885), McMinn County banker"; page not narrowed.
+- **E366 -> not located; a related document is printed.** OR I/46 pt 3: the 8 May 1865 Washington-to-Halleck items, **pp.1109-1113 read on page images** (leaves
+  n1112-n1116; Stanton on Virginia trade, Grant on cavalry and batteries, Comstock on the $460 reward), none about Boulware; the djvu text has no 'Boulware' in
+  the volume (only Boulware's Wharf in ser. II vol. 8). Google Books: Edward Steers Jr. (ed.), *The Lincoln Assassination: The Evidence* (2009/2010) snippet "...
+  arrest & bring here the above named Wm. Boulware, near King & Queen C.H. John A. Bingham": Special Judge Advocate Bingham's request in the assassination
+  evidence files (NARA M599), the request behind E366, **a different text** (Bingham's note, not Dana's telegram); page not seen (snippet only), so whether the
+  volume also prints Dana's telegram is **not excluded**.
+- **E370 -> not located.** OR I/38 pt 5 and I/39 pt 2, 5-9 Sept 1864 by text (Washington and Atlanta dated headings with McCallum/forage/rail/horses: none this);
+  both indexes list McCallum correspondence only at I/38 pt 5 p.738 (Rousseau), pp.4, 434 (mentioned) and I/39 pt 2 p.208 (Goodhue, 28 July 1864): no McCallum
+  or Whiton item of 7 Sept. Not read on page images (the indexes are the check). 
+- **G3 / full text** (Google Books, `country=US`, key, 6 queries; IA be-api 3 queries; `fv_ms18l_gb.out`): '"Masury" "Whiton" McCallum 1864' 0, '"Whiton"
+  "military railroad" horses forage Sherman 1864' 0; '"Thomas J. Campbell" confiscating Knoxville' 4 (none this telegram); be-api 'Boulware "King and Queen"
+  1865 arrest' (county histories, none this), '"Masury and Whiton"' 6 (paint trade), '"Thomas J. Campbell" Knoxville confiscat' 18 (none).
+- Not searched: Steers's volume at the page (and NARA M599, the assassination investigation files, for E366 and the Dana telegram); McCallum's reports (his
+  1866 Report, OR ser. III vol. 5) and the Military Railroad papers (NARA RG 92) for E370; Thomas's and Wilson's papers, Augusta press May-June 1865 for E369;
+  HathiTrust; JSTOR.
+
+### 3. Grades and reading corrections (reading.md as of this audit)
+- **E366:** Julia = 4 PM, Platina = 8, Ireland = General-in-Chief (= Halleck; C by 7905), unity / Zebra = periods, Infant = Secretary of War, oakum = Arrest,
+  plaster = 5, pledge = 6, spoons = Mile, shallow = Guard, wick = Report, shelter = General, Youth = Signature, Insanity = C. A. Dana (C by 7905), virtue
+  (= Pending, filler); **King and Queen clear** (not Schofield / Danger); "purity" in no key row (filler, unread); "Norwell rest" plain (the estate's name as
+  written; spelling M). **H 16 of 16** code groups read (decoder H 18 minus King, Queen), 1 filler unread. Reading: "Washington, May 8, 1865, 4 PM. [For Halleck.]
+  The Secretary of War directs that you arrest William Boulware, whose estate is named Norwell Rest and is five or six miles from King and Queen Court House.
+  Send him here under guard to report to the Judge Advocate General. [signed] C. A. Dana."
+- **E369:** Grapes = Washington (blind), Harsh = 20, **female = 14 (M; 24 by header and 8756)**, Nelly = 8.30 PM, Polka = Command(-ing), Bigelow = Augusta,
+  Oakum = Arrest, Paxton = Camp (+ bell), Pekin / Pedlar = commas, Walnut = Rebel, Shark = Government, **Chant = Chart = Knoxville** (H; C by 8756), Bethel =
+  Tennessee, saddle = Guard, Empress = Nashville, Tappan Shelby = Major General, Lady = Thomas, yoke = Signature, Indigo = Secretary of War, Welch = Rail Road:
+  **H 21 + M 1** of 22 code groups. Reading: "H. F. Lines, Macon. Washington, May 24, 1865, 8.30 PM. Officer Commanding, Augusta: You will immediately arrest
+  Thomas J. Campbell, who was confiscating officer for the Rebel Government at Knoxville, Tennessee, and send him under guard to Nashville to be delivered to
+  Major General Thomas. [signed] Secretary of War. Forward by railroad."
+- **E370:** Harriet = 1 PM, Pandora = Colonel, Plug publish flag = 1 100 11 = 111, France = New York, zebra x2 = periods, Silver = Head Quarters, oyster = Army,
+  **spartons = Spartan = Horse(s)**, Kidnap = Sherman, polka = Command, **shade = Forage**, Adonis = Tennessee, webster = Signature: **H 16 of 16** code groups.
+  Reading: "Horner, New York. Washington, Sept 7, 1864, 1 PM. For Colonel McCallum, care Masury and Whiton, 111 Fulton Street, New York. Head Quarters Army wish
+  to know for how many horses in excess of those now in Sherman's command forage can be supplied by rail. Have sent this to Tennessee. [signed] W. H. Whiton."
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | class | key | depth | % code groups H/C/S | basis | safe sentence |
+|---|---|---|---|---|---|---|
+| E366 C. A. Dana (for the Secretary of War) to Maj. Gen. Halleck via Caldwell, Richmond, 8 May 1865 | **N3** | period | D3 | 100 (16 H, 2 of them C by holder; 1 filler unread) | not located: OR I/46 pt 3 (8 May on page images), ser. II vol. 8, holder full text, Google Books, IA full text; holder 7905 and 8728 are Halleck's answers, not copies; Bingham's request is in Steers (2009/2010), a different text, page unseen | "Read at grade H with War Department Cipher No. 1: on 8 May 1865 Assistant Secretary of War C. A. Dana told General Halleck at Richmond, for the Secretary of War, to arrest William Boulware, whose estate lay five or six miles from King and Queen Court House, and send him to Washington under guard to the Judge Advocate General; Halleck's acknowledgement (10 May) and report of the capture (13 May) are in the Huntington's received ledgers; the telegram was not located in print (searched 10 Oct 2026)." |
+| E369 Secretary of War to the officer commanding at Augusta via Lines at Macon, 24 May 1865 | **N3** | period | D3 | 95 (21 H, 3 of them C by holder; 1 M day word) | not located: OR I/49 pt 2 (24 May on page images, index), ser. II vol. 8 index, holder full text, Google Books, IA; holder 8756 (Thomas's request of the same day) is the prompt, not a copy | "Read at grade H with War Department Cipher No. 1: on 24 May 1865 the War Department ordered the officer commanding at Augusta to arrest Thomas J. Campbell, the Confederate confiscating officer at Knoxville, and send him under guard to General Thomas at Nashville, as Thomas had asked that afternoon; not located in print (searched 10 Oct 2026)." |
+| E370 W. H. Whiton to Col. D. C. McCallum via Horner, New York, 7 Sept 1864 | **N3** | period | D2 | 100 (16 H) | not located: OR I/38 pt 5 and I/39 pt 2 (5-9 Sept by text; McCallum index entries other dates), holder full text, Google Books, IA | "Read at grade H with War Department Cipher No. 1: on 7 Sept 1864 W. H. Whiton of the Military Railroads office asked Col. McCallum at New York, for army headquarters, for how many horses beyond those in Sherman's command forage could be supplied by rail; not located in print (searched 10 Oct 2026)." |
+
+Not N4 for any: Steers's *The Lincoln Assassination: The Evidence* at the page and NARA M599 (E366), McCallum's 1866 Report and OR ser. III vol. 5 (E370), Thomas's
+papers and the Augusta press (E369), HathiTrust and JSTOR are unsearched. Unsafe for all three: "first", "new", "unpublished", "never printed". Depth checks (D3:
+>=80% of code groups H/C/S, gaps none or one day word, an external non-statistical check): E366 -- code clause "The Infant directs that you oakum Will Yam
+Boulware" = The Secretary of War directs that you arrest William Boulware; external: holder 7905 (Halleck to Dana, Richmond 10 May 1865, "your telegraph for the
+arrest of Wm Boulware has been received") and 8728 (13 May, "Boulware has been captured"). E369 -- code clause "officer Polkaing Bigelow ... Oakum Thomas J Paxton
+bell ... at Chant Bethel" = officer commanding Augusta ... arrest Thomas J. Campbell ... at Knoxville, Tennessee; external: holder 8756 (Thomas to the Secretary
+of War, Nashville 24 May 1865, the same request in clear). E370 -- **D2, not D3**: every code group H and the clause "for how many spartons in excess of those now
+in Kidnap polka shade can be supplied by rail" reads as one sentence (horses, Sherman's command, forage), but no external check of the content was found (the
+holder witnesses 9098, 7857 fix only who Whiton was). Depth sentences (my own): E366 -- "On 8 May 1865 Dana had Halleck arrest the Virginian William Boulware
+for the Judge Advocate General, and Halleck reported him captured on 13 May." E369 -- "On 24 May 1865 the War Department passed on Thomas's request that the
+Confederate sequestration officer of Knoxville, T. J. Campbell, be arrested at Augusta and sent to Nashville." E370 -- "In September 1864 army headquarters asked
+the Military Railroads how many more horses than Sherman already had could be fed by rail."
+
+### 5. Postmortem and fixes for a FIX job (not applied here)
+Failure: MS18-R6 left a key word open ("spartons" = Spartan = Horse, a row in key.md) and left "Chant" plain though the clerk's Chant-for-Chart is on file in
+key-no2.md; it also invented a header place ("[Hanover?, M]") where the line reads King and Queen Court House, and the decoder pushed that clear place name through
+two key rows (King = Schofield, Queen = Danger) -- the Herald/Fox/Wilson shape of AUDIT (FV-MS18j) s.5 a fourth time. Corrections (a verifier does not edit
+ciphertext.txt or reading.md):
+- E366 header: "for [General-in-Chief = Halleck]" (C, holder 7905); signer **C. A. Dana** (Insanity; C, holder 7905); "five or six miles from King and Queen Court
+  House" (drop "[Hanover?, M]"); "send him here under guard to report to the Judge Advocate General"; "holder transcription, leaf not eye-checked" -> "leaf
+  eye-checked (FV-MS18l)"; context note 7905 (10 May), 8728 (13 May, captured), Steers (Bingham's request). Reading, per-entry mechanism (no key.md edit):
+  **King plain, Queen plain** (not Schofield, Danger). Grades H 16 (2 C-supported).
+- E369 header: the name is **Thomas J. Campbell** (Paxton = Camp + bell; C by holder 8756), drop "Paxton or Parton [M]"; "who was confiscating officer for the
+  Rebel Government at Knoxville, Tennessee" (Chant = Chart = Knoxville, "confess skating" = confiscating) replacing "a Confederate officer at [Chattanooga?, M]";
+  addressee "Officer Commanding, Augusta (via H. F. Lines, Macon), forward by railroad"; date note "Harsh female" = 34 vs 24 (female M, clerk's slip); context
+  note holder 8756. Reading: **Chant -> Knoxville** (per-entry note: clerk's spelling of Chart, as key-no2.md's Chant row). Grades H 21 + M 1.
+- E370 header: "for how many **horses** [spartons = Spartan = Horse] in excess of those now in Sherman's command **forage** can be supplied by rail"; signer W. H.
+  Whiton (Military Railroads office, Washington: holder 9098, 7857); "[Head Quarters Army, M]" -> Head Quarters Army (H, the subject, not the signer); Adonis =
+  Tennessee H; "leaf not eye-checked" -> "leaf eye-checked (FV-MS18l)". Reading: **spartons -> Horse** (per-entry note: clerk's spelling of Spartan). Grades H 16.
+- NOTES "## MS18-R6": "E369 name Paxton/Parton ... 'bell' (Campbell?) ... E370 'spartons'" open-code gap is closed by this audit (Campbell, Horse); "not located"
+  stands for all three telegrams; add holder 8756 (E369's prompt) and the Steers lead (E366).
+- KEY lane: Chant = Chart now attested in Cipher No. 1 too (E369; C by holder 8756); spartons = Spartan (spelling); a tools job could flag tokens one edit away
+  from a key word (Chant/Chart, spartons/Spartan) before a reader calls them open.
+- Tool lesson: IA `_page_numbers.json` for `warofrebellion492unit` is two leaves off at p.889-891 (n894 = p.889); read the head on the leaf.
+
+Requests: hdl.huntington.org 22 (9 CISOSEARCHALL, 9 item info of which 1 dropped connection not retried, 3 IIIF 2400 px; plus 1 failed), archive.org 14 (5 djvu
+texts, 2 page_numbers, 7 page images), googleapis.com 6, be-api.us.archive.org 3.
+Queued: WORK-QUEUE `AUD2-LEDGER-36` (E366, E369, E370), SO-ECKERT-E366, SO-ECKERT-E369, SO-ECKERT-E370.
