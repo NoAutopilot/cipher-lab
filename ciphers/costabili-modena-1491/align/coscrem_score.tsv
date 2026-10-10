@@ -1,0 +1,20 @@
+label	our_value	grade	n1_row	n1_value	hit
++	a	C	R16	q	0
+T	d	C	R24	z	0
+a	i	C	R13	n	0
+b	o	C	R5	e	0
+c	p	C	R24	z	0
+d	r	C	R17	r	1
+g	l	C	R8	i	0
+o	e	C	R21	v	0
+y	n	C	R12	m	0
+z	o	C	R7	g	0
+W	t	C	R1	a	0
+4	b	M	R1	a	0
+8	m	M	none	-	0
+L	h	M	none	-	0
+TT	s	M	R3	c	0
+Z	t	M	R7	g	0
+q	u	M	R14	o	0
+x	il S. Re	M	R18	s	0
+# C labels 11; hits 1; null mean 0.588; null p95 2; FAIL
