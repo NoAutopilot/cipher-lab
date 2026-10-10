@@ -5954,3 +5954,20 @@ Read so far: 1 of 10 filed (E465); 1 clear copy (5627/1), 1 in print (5698/0), 1
 - [x] image-check: 5768 only (the filed row).
 - [x] retry: dropped connection retried once after 25 s.
 Verdict: keep going: 3 internal gaps; cheapest next: OR I/36 pt 3 page read for 5698/0, ~$0.1
+
+## FIX-FM24 (10 Oct 2026, account 1, for LANE LEDGER-12)
+
+Worker FV-MS18s (Opus 5.5), same session as "## AUDIT (FV-MS18s)", 09:0x UTC by `date -u`; the audit verdict was written and pushed first (1786b7c7e).
+Applied s.5 of "## AUDIT (FV-MS18r)" (items 1-4) and of "## AUDIT (FV-MS18s)" (items 1-4) through `ms18/fix_fm24.py` (header text and note/gloss/plain
+lines in ciphertext.txt; manuscript lines untouched; idempotent, `--dry` reports 0 after the run):
+- E402: Wesley = [Maj. Gen. H. G. Wright], inserted 'Mackerals' = [Gen. Hunter's] (C by print, Simon, Papers of U. S. Grant vol. 11); the struck 'Meridens'
+  no longer reads Ord ([struck word, not read], M); header "not located" -> printed (page not read, lending-only item).
+- E403: header "Stevenson [M]" -> name plain on the leaf; context note (Stephen Maxon in the NY soldier-vote forgery testimony); stays N3 D1, not located.
+- E404: header carries the long-march clause and the print signature; p.389 on the page image.
+- E420: p.291 (page image). **Body re-filed:** `ms18/ms18_r10_file.py` had read `ms18_r8_entries.txt`, so E388's 4 Apr 1864 text stood under E420; the
+  body now comes from `ms18_r10_entries.txt` X7 (script corrected) and reads the print's text (Edwards Ferry, Wright, 12,000, Howe, 20,000); "hoped" plain.
+- E430: pages OR I/36 pt 1 p.1, OR I/36 pt 2 p.391 (2 p.m.), Butler Corr. IV p.161 (page images); Judah's = Grant's (H), Inland = Halleck (C), Know =
+  Butler (C; slip for Knox), Chinamen M. Code-word tokens H 31, C 2, M 1.
+`decode.py --write`; `decode.py`, `decode_no2.py`, `decode_no9.py --check` all exit 0. status.json: no row exists for E402-E430 (none N3+ D2+), unchanged;
+no SECOND-OPINIONS-QUEUE row (none N3+). `tools/depth_check.py` exit 0 (unique solves 163). NOTES "## MS18-R9" E402 print gap and "## MS18-R11" E430
+print-page gap are closed by the audits; the E403 gap stays (next: OR ser. II vol. 7 / ser. III vol. 4 by page and the Ferry-Donohue commission record, ~$0.4).

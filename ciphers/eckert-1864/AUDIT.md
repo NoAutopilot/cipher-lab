@@ -16326,6 +16326,13 @@ sent form of what Butler's papers print as received in two items. A relay frame 
    OCR running heads" -> **p.391 (page image), printed 2 p.m.**; "not located as such" -> printed in two parts as received (Butler IV p.161).
 2. E430 reading: Judah's -> [Grant]'s (H, possessive), Inland -> [Halleck] (C), Know -> [Butler] (I slip for Knox, C by print); Chinamen M.
 3. NOTES "## MS18-R11" Remaining gaps: the E430 print-page gap is closed.
+4. **Found during the FIX step (09:0x UTC): E420's committed body was the wrong telegram.** `ms18/ms18_r10_file.py` read `ms18_r8_entries.txt`
+   instead of `ms18_r10_entries.txt`, so under the E420 header (13 July 1864, McCaine to Hunter) stood E388's 4 Apr 1864 Van Valkenburg text (Grant to
+   Sherman, Corps consolidation), and reading.md showed that text. FV-MS18r's "word for word identical to the reading's body" was a comparison with the
+   reader's transcription extract (X7 of ms18_r10_entries.txt, which is right and matches the leaf), not with the filed body. Fix: the E420 body re-filed
+   from X7 (the transcription as made, nothing repaired), the script's source file corrected; the decode now gives the print's text (H 27, C 1). The N1
+   D1 class stands (it rests on the leaf and the print, which agree). Lesson: a verifier diffs the print against the **derived reading block**, not the
+   reader's extract.
 
 Requests: archive.org 7 (3 page_numbers.json, 4 page images), be-api.us.archive.org 2 full-text queries, 1.6 s apart; hdl.huntington.org 0.
 For LANE LEDGER-12 (account 1).
