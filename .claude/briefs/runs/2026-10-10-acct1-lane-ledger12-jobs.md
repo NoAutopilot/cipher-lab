@@ -55,3 +55,36 @@ Held for wave 2: MS18-R11 (9743/1 9686/2 9869/4 9730/0 9764/1 9897/1 9862/0 9885
 
 (07:45 UTC 10 Oct by date -u: wave 1 spawned, all with source_url: FV-N2g session_01Hcr3JGur9Z5mPB46GTpgRY, FV-N1C-a session_01AGERdLKuMQUBqX9D5ibDNo,
 FV-N1C-b session_01MoccAAFnp3RKe7DbvYURL9, FIX-FM22 session_015cZzKuwyqr5PxCW7mKeFNu, MS18-R9 session_01VaZ66G8BH227GpVMMeQaPb, MS18-R10 session_01B6PSg1GRBoBJNoujdmPLgJ.)
+
+---
+
+# Wave 2 (written 10 Oct 2026 08:2x UTC by date -u; lane ~18 of 60 + orchestrator)
+By get_session: FV-N2g 3.49 (KA KB KC all in print: N1), FV-N1C-a 4.69 (all 8 N1 D1), FV-N1C-b 5.61 (all 9 N1), FIX-FM22 0.63, MS18-R9 1.61 (E402 E403 not located,
+E404 OR I/41-4 p.389; 6 step-0 hits), MS18-R10 1.62 (E420 OR I/37-2; 8 step-0 hits). Lesson for readers: FV-N2g found the reader's own printcheck output had
+the phrase hits that its NOTES verdict called "not located" -- before writing "not located", re-read your own print-check output for each row and say which
+hit lines you rejected and why.
+
+## FV-MS18r (Opus 5.5, first verifier, separate from every reader; cap $4, box 80 min): E402, E403 (not located), E404, E420 (printed, N1 confirm)
+E402/E403 exactly "## FV-MS18q" of the ledger10 jobs file (Step-0 ruling first; full print search per the verifier template); E404/E420 exactly "## FV-MS18p"
+(IA page image, word-for-word diff, leaf eye-check). Readers' notes: NOTES "## MS18-R9" and "## MS18-R10". WORK-QUEUE AUD2-LEDGER12-<n> for N3+ D2+ (account-3
+tag), name it in ROOM. AUDIT.md "## AUDIT (FV-MS18r)"; s.5 corrections for a FIX job.
+
+## MS18-R11 (Sonnet 5.5, reader; cap $2.5, box 90 min): the last 8 best_book 1 rows
+As MS18-R9 (with the wave-2 lesson above). Rows: 9743/1 9686/2 9869/4 9730/0 9764/1 9897/1 9862/0 9885/3. IDs from E430 (fetch first; next free if taken).
+NOTES "## MS18-R11 (10 Oct 2026, account 1, for LANE LEDGER-12)".
+
+## FIX-FM23 (Sonnet 5.5; cap $2.5, box 60 min, no network)
+Exactly FIX-FM20's method: apply s.5 (or the section the audit names) of "## AUDIT (FV-N2g)", "(FV-N1C-a)" and "(FV-N1C-b)": the readers' NOTES verdicts
+(N2R-4/5/6, MS18-R8 rows now N1, with the audits' print citations), decoder plain-word slips through the decode scripts' entry-note mechanism, E390 Lehigh/Canby
+note, N2-JB's continuation on 9758 (note only, do not file). decode x3 --write/--check exit 0; status.json/SO per rule 10; NOTES "## FIX-FM23 (10 Oct 2026,
+account 1, for LANE LEDGER-12)"; depth_check; file_shrink_guard. Not N2-IC.
+
+## S0-57XX (Sonnet 5.5; cap $1.5, box 50 min; hdl token)
+LEDGER-10 next 4: fetch the page JSONs (CONTENTdm dmGetItemInfo, one take, <= 15 requests) for the entries "## AUDIT (STEP0-RULE ...)" lists as having no page
+JSON on disk (the 57xx pointers / FM entries E302-E321), save them beside the others under ciphers/eckert-1864/sources/ with the manifest updated, then run
+ms18/step0_ordered.py on those entries and append their rows to ms18/step0_ordered.tsv. Change no grade: post one ROOM line listing hits "for the VERIFY lane
+and LANE LEDGER-12", and NOTES "## S0-57XX (10 Oct 2026, account 1, for LANE LEDGER-12)".
+
+## HDR-NO9 (Sonnet 5.5; cap $1, box 40 min)
+LEDGER-11 next 4: header crops of 9845/0 and 9862/1 (`tools/iiif_lines.py --image <leaf on disk>` or, if absent, one IIIF fetch each under the hdl token),
+read the header (book label, time word) and write the No. 9 book call for each into NOTES "## NO9-L" as an addendum (decode nothing beyond the header).
