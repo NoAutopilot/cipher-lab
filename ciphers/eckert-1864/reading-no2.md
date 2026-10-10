@@ -1281,5 +1281,35 @@ Jenny [Monday] [Maj Genl U S Grant] [.] [telegram] just received from [General] 
 
 Code-word tokens: H 13, C 3.
 
-Totals over the 143 entries: H 3443, C 121, I 119, M 9.
+**N2-KA | Page 69 | 9729 | mssEC 18 (obj 10074, pointer 9729; printed page 63), 3 May 1864 11 AM Washington ('S. H. Beckwith, Washn May 3rd 1864'; entry 1 of the leaf), to Lieut. Gen. Grant at Culpeper, signed H. W. Halleck: your last instructions in regard to [matters] were telegraphed to [Cairo] and were sent by [General] [name unresolved] on [1 May]; the President has seen your telegrams but has said nothing to me on the subject since I last wrote to you; I will write to you immediately (N2R-6; row 9729/1; holder transcription, leaf not eye-checked)**
+
+[Washington] [3] [May] {time: 11 AM} For [Lieut Gen U.S. Grant] [Culpepper] [.] Your last instructions in regard to matters were [Telegraph (-ed, -ing)]ed to [Cairo] and were sent by [General] BrayMan done the [River] on [May] [1] [.] The [President U.S.] has seen your [telegram]s but has said nothing to me on the [Protect] since I last wrote to you [.] I will write to you immediately  {tail: [signed] [H W Halleck]}
+
+Code-word tokens: H 18, C 1, I 1.
+
+**N2-KB | Page 37 | 9697 | mssEC 18 (obj 10074, pointer 9697; printed page 31), 7 Apr 1864 1 PM Washington ('SH Beckwith (2), Washn April 7th 1864 1 P. M'; entry 0 of the leaf), to Lieut. Gen. Grant at Culpeper, signed H. W. Halleck: [Burnside] left unexpectedly last night; your message will be sent to him in cipher as soon as he can be found; 'Manngo' has been relieved and troops ordered as directed; [Sigel] asks that a regiment of heavy artillery be sent from 'Pard' [Baltimore?] to garrison [Harpers Ferry]; shall it be done? (the ledger adds 'fine day this') (N2R-6; row 9697/0; holder transcription, leaf not eye-checked)**
+
+{time: 1 PM} For [Lieut Gen U.S. Grant] [.] [Maj Gen A E Burnside] [Left] unexpectedly last night [,] Your message [Will be sent] to him in [Cipher] [As soon as] he can be found [.] Manngo has been relieved [,] and [Troops] [Order]ed as directed [.] [Sigel F] asks that a [Regiment] of [Heavy] [Artillery] be sent from Pard to Garrison [Harpers Ferry] [,] Shall it be done [?]  {tail: [signed] [H W Halleck] [?] fine day this}
+
+Code-word tokens: H 23, C 1.
+
+**N2-KC | Page 248 | 9908 | mssEC 18 (obj 10074, pointer 9908; printed page 242), 6 Dec 1864 1 PM Washington ('Beckwith City Pt., Washn D.C. Dec 6. 1864'; entry 2 of the leaf), to Lieut. Gen. Grant, signed Halleck: [Sheridan] was ordered some days ago to report in regard to the New Creek disaster; the movements asked for by [Thomas] against the Mobile and Ohio Railroad were ordered by [Canby] on the 25th and 26th ult. and these orders have been repeated (N2R-6; row 9908/2; holder transcription, leaf not eye-checked)**
+
+[Tuesday] {time: 1 PM} [Lieut Gen U.S. Grant] [Sheridan P H] was [Order]ed some days ago to [Report] in regard to New Creek dis aster ---- The [Movement]'s asked forby [Thomas Geo H] against [Mobile] & [Ohio] [Rail-road] were ordered by [Canby Ed R S] on the [25] & [26] ult. & these orders have been [Order]ed [Maj Genl H W Halleck]
+
+Code-word tokens: H 16, C 2.
+
+**N2-KD | Page 138 | 9798 | mssEC 18 (obj 10074, pointer 9798; printed page 132), 19 July 1864 4 PM Washington ('SH Beckwith, Washn July 19th 1864'; entry 1 of the leaf), to Lieut. Gen. Grant, signed H. W. Halleck: I am of the opinion that another regiment of heavy artillery, in addition to those with General Wright ('Right' by the key, M), should be sent here as soon as you can spare it; I have written to-day at length (N2R-6; row 9798/1; holder transcription, leaf not eye-checked)**
+
+{time: 4 PM} [19] for [Lieut Gen U.S. Grant] [.] I am of [Field] that another [Regiment] of [Heavy] [Artillery] in addition to those with [General] [Right] should be Sent here [As soon as] you can spare it stop I have written [To day] at length  {tail: [signed] [H W Halleck]}
+
+Code-word tokens: H 14.
+
+**N2-KE | Page 172 | 9832 | mssEC 18 (obj 10074, pointer 9832; printed page 166), 3 Sept 1864 9.30 PM City Point ('Beckwith City Pt., Wash. Sept. 3. 1864 930 pm'; entry 1 of the leaf), to Captain M. Smith, Senior Naval Officer, James River, City Point, signed Gideon Welles (Secretary of the Navy; the ledger's closing code words 'Benjamin Paulding' read [Secretary of Navy] by the key, M): the Onondaga and the Atlanta will be the only ironclads retained in the James River; prepare the Saugus and Canonicus to go south; convoy will be sent from the north; answer (N2R-6; row 9832/1; holder transcription, leaf not eye-checked)**
+
+{time: 9.30 PM} [3] for [Captain] M. [Smith] Senior Naval [Officer] [James] [River] [City Point] ---- The Onondaga & Atlanta [Will be] the only iron clods retained in [James] ---- Prepare the Saugus & Canonicus to go [South] ---- [Convoy] [Will be sent] [Fear] [North] Answer [Secretary of Navy] [Convoy] is arbitrary End
+
+Code-word tokens: H 16, C 1.
+
+Totals over the 148 entries: H 3530, C 126, I 120, M 9.
 <!-- decode.py: derived block ends -->
