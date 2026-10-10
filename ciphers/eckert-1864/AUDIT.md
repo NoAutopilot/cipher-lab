@@ -16336,3 +16336,142 @@ sent form of what Butler's papers print as received in two items. A relay frame 
 
 Requests: archive.org 7 (3 page_numbers.json, 4 page images), be-api.us.archive.org 2 full-text queries, 1.6 s apart; hdl.huntington.org 0.
 For LANE LEDGER-12 (account 1).
+
+## AUDIT (FV-FM65a)
+
+Verifier FV-FM65a (account 1, for LANE LEDGER-13), 10 Oct 2026, 10:03-10:4x UTC by `date -u`; a separate session from the readers FM65-A, FM65-B
+and FM65-C, not protecting their conclusions. Scope: **E535, E534, E531** (NOTES "## FM65-C"), **E504** ("## FM65-A"), **E519, E516** ("## FM65-B");
+ciphertext.txt, War Department Cipher No. 1, Fort Monroe ledger mssEC 25 = Huntington object 5952, January 1865. Nothing decoded beyond key look-ups in
+key.md. Key source for all six: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Intake gate: `eckert-1864: partial
+(line 3) -- edition/page or full-text-search citation found within 6 lines`. **Step 0 is a non-test on mssEC 25 (Wave 2 RULING, STEP0-KEYCTL)**: the
+readers' step-0 hits (and E534's miss) carry no weight here, and nothing below is classed N1 from step 0. Scripts: `fortmonroe/fv_fm65a_hdl.py`
+(+ `.out`: 19 CONTENTdm full-text queries across all pointers, control 9678, six page images at 2400 px to scratch), `fortmonroe/fv_fm65a_print.py`
+(+ `.out`: letters-only phrase grep over 177 cached print-check volumes plus OR I/46 pts 1-3, I/47 pts 1-2 and ORN I/11 downloaded to scratch this
+session, with KWIC for rare names), `fortmonroe/fv_fm65a_beapi.py` (+ `.out`: be-api by identifier and whole-collection phrase queries, positive
+control `"Suwo Nada"` in OR I/46 pt 2 = 1 doc hit).
+
+### 1. Duplicates, image
+- **Duplicate diff:** pointers 5851, 5860, 5866, 5873, 5877, 5878 against every `###` header in ciphertext*.txt and status.json: each pointer's other
+  headers are different rows of the same page (E505 = 5851 other rows, E520 = 5866/2, E532 = 5877/0); no other header names the Euterpe-Towanda list,
+  the lost overcoat papers, the Baltic coaling order, the Oriental/Suwo Nada sailing, the Haze/Sentinel or the disabled vessels. **No duplicate.**
+- **Image eye check this session, every graded line** (page images at 2400 px; strips of the entry region at 0.6-0.7 scale, the ruled-grid pages give
+  `iiif_lines.py` too few bands, as FV-FM10a found): 5851 row 0 (E504, header + 8 lines + Sheldon), 5860 row 1 (E516, header + 7 lines + Beckwith), 5866
+  row 0 (E519, header + 8 lines + Sheldon), 5873 row 1 (E531, header + 6 lines + Sheldon), 5877 last row (E534 message 1, header + 5 lines + Sheldon),
+  5878 rows 0-1 (E534 message 2 and E535). **The transcription matches the image word for word on all six** (E504 "weaselers ordered to wick to pandora
+  Bradley", "M'Clellan Champion Weybossett and Towanda", "youth William L. James pilgrim and a vincent end"; E516 "Emily plague palate Shipley Farmer",
+  "overcoat pocket pekin", "orbit Hotel", "youth Japan didn't travel very much", clerk's word-count numerals 2-9 over line 1; E519 "Belcher walrus Are
+  See Webster paradise vinton quadrant"; E531 "plague vassals plaster waldo plug wine and padlock spit"; E534 "forth teams and forlorn William spit";
+  E535 "Carry Lamp person publish spit Mansion wagons and plug prolong and mandate animals", "yoke Horace Porter Lieut pandora and A D see").
+- **E534 spans two pages.** Message 1 is the last row of p.333 (pointer 5877); message 2 ("City Point Jan. 16/65 / Geo. D. Sheldon Ft Monroe / Nelly
+  paradise M. P Small ... S. H. Beckwith") is **row 0 of p.334 (pointer 5878)**, above E535. The E534 header names only p.333 / 5877: fix in s.5.
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; hdl token 10:12-10:15 UTC, control 9678 returned):
+Weybossett 3 (5851 own; 5820, 9694 other dates), Towanda 1, Euterpe 1, "Atlantic draws water" 1 (all 5851 own), overcoat 2 (5860 own; 14109 other),
+"theatre Phillips" 1 (own), "Butler report lost" 0, "soonest Baltic" 1, "Baltic Annapolis docks" 1 (5866 own), Oriental 9, Nada 10, "Oriental sailed" 3
+(5873 own; **8514, 8518**), Sentinel 5 (5877 own; others other dates/senses), designates 2 (1863), "Small rations vessels" 1 (1863), mortars 27,
+"disabled vessels" 6 (5878 own; 8539/8540/8565 = 24-26 Jan gunboats), "Fisher news instructions" dropped connection (not retried).
+**No clear copy of any of the six rows.** The Washington clear book of January 1865 (pointers 7681-8540, pp.23-62) gives context, not copies:
+8518 (p.40) Newport, Baltimore 14 Jan: "The Oriental and Surro Nada with the remainder of Genl Grovers command sailed last night"; 8511 (p.33) and
+8516 (p.38) the same transports; 8509 (p.31) Van Vliet, 6 Jan: transportation "for the 5.000 troops & 1.000 laborers"; 7693 (p.35) Newport, 10 Jan:
+"Col Webster reports that the Baltic will leave Ft. Monroe tomorrow morning for Annapolis which is as near as she can get to this city"; 8508 (p.30,
+FM65-B's antecedent) the Baltic at Swann Point needing coal; 7685 (p.27) Butler, Ft Monroe 5 Jan, "I have made my report to Genl Grant of the
+operations ... against Wilmington", and Grant, 5 Jan, "fifteen Cohorn mortars ... at Ft Monroe".
+
+**Print** (OR I/46 pt 2 = `warofrebellion014602rootrich`, read in djvu text with page from the running heads; pts 1, 3, I/47 pts 1-2, ORN I/11 phrase grep;
+Butler Corr. V on disk): **none of the six telegrams is printed.** Context located, each a different telegram:
+- E504: Terry's General Orders No. 3, Flag-ship McClellan, 10 Jan 1865 (OR I/46 pt 2 p.90), transports "McClellan, Atlantic, Varuna, Tonawanda, De Molay,
+  Thames, Champion, Commodore Du Pont, Montauk, Idaho, Euterpe, L. C. Livingston, Prometheus, General Lyon, California, Weybosset ..." -- twelve of
+  E504's thirteen steamers; Morgan, Fort Monroe, **5 Jan** 1865 5.30 p.m. (OR I/46 pt 2 pp.22-24; the reader's "3 Jan" is wrong, the OCR reads January 5):
+  "The Atlantic, 1,400 men, cannot go up to City Point"; "WILLIAM L. JAMES, Captain and Assistant Quartermaster", Fort Monroe (p.908); "Captain Howell
+  has telegraphed you" to Bradley (pp.6-8).
+- E516: Grant to Leet, 8 Jan (p.68), "Send back General Butler's report of the Wilmington expedition"; Leet, 9 Jan, "will be returned by to-day's mail";
+  **Butler to Grant, Fort Monroe, 11 Jan 1865 10.45 a.m. (p.97): "no report has ever been received at the War Department. You told me you had forwarded it.
+  Has it been lost again? If so, I have a copy."** -- "lost again" independently confirms a first loss of the report, which is what E516 reports on 6 Jan.
+- E519: Wise for the Quartermaster-General to Newport, 7 Jan 10.30 a.m. (pp.65-66), "Has the Baltic left? By order of Quartermaster-General"; Newport 7 Jan
+  6 p.m. (pp.65-66), "the Baltic left for Fort Monroe last night" (= holder 8511).
+- E531: Van Vliet (p.28), the Suwo Nada "1,200 men" and the Oriental "can carry 1,000 men"; Newport 7, 11, 12 Jan (pp.65-66, 103, 112) waiting
+  for the Oriental for Grover's command; holder 8518 has the sailing from Baltimore 13 Jan.
+- E534: Grant to Morgan, City Point 7 Jan (p.61), "load such sea going vessels as may arrive at that point, with fifteen days' rations"; the steamer
+  Haze at Bermuda Hundred 30 Jan (p.305); Thames, Commodore Du Pont in GO No. 3 (p.90). The row's own sibling E532 (5877/0, Bradley's request for 4000 men
+  with 15 days' rations) is the ledger, not independent print.
+- E535: Maynadier to Grant, 16 Jan (p.146), "The Coehorn mortars asked for by your telegram of the 5th instant were at Fort Monroe on the 11th instant".
+- Phrase grep (40 decoded phrases, listed in `fv_fm65a_print.out`): hits only for the ship names and generic phrases ("draws too much water", "are all we
+  have", "ready by tomorrow noon", "overcoat pocket"), each read in KWIC and rejected (other dates, senders or subjects); "report of the Wilmington
+  expedition" hits = the Leet/Butler telegrams above.
+- be-api whole collection (Grant Papers vol. 14 and the press): `"Haze and Sentinel"`, `"returned from the expedition disabled"`, `"enough are here to
+  carry"`, `"overcoat pocket" Butler report Wilmington` 0; `"kept by Mr. Phillips"`, `"cannot approach the docks"`, Weybosset/Towanda/Euterpe,
+  `"Suwo Nada" Oriental sailed` only unrelated hits (1868 Shanghai shipping lists, directories, later docks). Butler V by be-api `overcoat` 0,
+  `Beckwith` 0 (and in the phrase grep on disk, 0).
+- **Unreachable:** Grant Papers vol. 13 (be-api in-volume control `Fisher` 0 and `Butler` 0 = not indexed; djvu download 503); vol. 14 download 401
+  (lending); ORN I/12 download 500 (no retry; be-api `Sentinel` hits a different sense). Not searched: NARA RG 107/108, Google Books, JSTOR.
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+Key collisions found by look-up in key.md (a plain word on the page that is also a code word): these tokens are **plain**, not H, and the readers' H
+counts include them.
+- **E504:** "William" x2 = 100 (key p.24) in "princess William Tea Howell" and "youth William L. James": plain, Capt. William T. Howell and Capt. William L.
+  James (OR I/46 pt 2 p.908 prints James as "Captain and Assistant Quartermaster", Fort Monroe = "pilgrim and a vincent"). **H 22 of 22** (reader 24, less
+  2 plain). Shelby = General (steamer General Lyon), weaselers = Steam(ers), whisky = Troops, fugitive publish = 1400 (agrees with Morgan's printed
+  Atlantic 1,400): H.
+- **E516:** "pocket" (= Cross, key p.19) and "Hotel" (= Longstreet, p.15; the reader flagged it) are plain. "Farmer" = Norfolk (H) and "palate" =
+  Brigadier General, so **"palate Shipley Farmer" = Brig. Gen. [G. F.] Shepley, Norfolk**: the telegram is to Sheldon for Shepley at Norfolk (the theatre
+  and Mr Phillips's hotel are in Norfolk), not to Sheldon himself; "Shipley" is a plain name (I, spelling). "Japan" = Maj Genl U.S. Grant stands H by
+  the key but its sense after the stop ("[Grant] didn't travel very much", above Beckwith's signature) is unexplained: **M**. Knaves wick torch Hamlet rape
+  = Butler's Report Of the Wilmington Expedition (Rape = Expedition reads again in E535, "saxon Rape" = From the Expedition): H. **H 18 + M 1 of 19**
+  (reader 21, less 2 plain). "willow" = will you, "maid" = made, "weather" = wire? (plain-phonetic, I).
+- **E519:** "Sampson" (= Ferry, p.20) in the address "J. W. Sampson Baltimore" and "Baltic" (= Chattahoochee, p.10; the reader flagged it) are plain.
+  "Webster" = Signature (p.23) stands H as a mark, but "Are See Webster paradise vinton" may be the name R. C. Webster, Colonel, Quartermaster (the Fort
+  Monroe chief QM of holder 7693): **M**. Baptism and Banditti = Baltimore (two code words, both read by the Baltimore antecedent 8508), Belcher walrus =
+  Qr Master Genl, pilgrim = Captain, whist = Troops: H. **H 19 + M 1 of 20** (reader 22, less 2 plain).
+- **E531:** no collision found; "William" here is the numeral (plunder William = 700) and agrees with the sum. **H 22 of 22.** The total "6 vessels,
+  5109 men, all as ordered" is consistent with the 5,000 troops of Grover's command (Van Vliet, holder 8509); M only for the reader's arithmetic.
+- **E534:** message 1 "Webster paradise and Vinton" = [signed] [Colonel] and [Quartermaster], or R. C. Webster, Colonel and Quartermaster: **M**; message 2
+  "Webster Mr Morgan Lieut pandora" = [signed] M. R. Morgan, Lieut. Colonel: H. Jersey = Grant, ghost days wales = 15 days Rations (agrees with Grant's
+  printed 7 Jan order, p.61), forlorn William = 1300: H. **H 28 + M 1 of 29.** "Dupont Thames Haze and Sentinel" plain (vessels, as the reader says).
+- **E535:** "Horace" (= Weldon, p.15) in "Horace Porter Lieut [Colonel] and A D C" is plain (Grant's aide Lt. Col. Horace Porter), and "animals" (read
+  [Monroe]'s from Animal = Monroe, p.9) is plain: "[50] wagons and [100] and [50] animals" = 50 wagons and 150 animals (M for the join). Saco Fisher =
+  Fort Fisher, whist = Troops, olive = Ammunition, saxon Rape = From the Expedition: H. **H 29 of 29** (reader 31, less 2 plain). Who sends (Porter at Fort
+  Monroe for Grant's staff, or Sheldon) stays M as the reader says.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+None of the six has print, a clear copy or a decipherment located, so none is N1 (step 0 does not count here). Each body is partly clear on the page and so
+partly in the Huntington's public transcription of its pointer; the key adds the numbers, ranks, places and the subject words.
+
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E504 | **N3** (weak: the fleet list is clear in the holder transcription of 5851) | period | **D3** (H 22/22 code groups; external: OR I/46 pt 2 pp.22-24 Morgan, Atlantic 1,400 men, cannot go up; p.90 GO No. 3 names 12 of the 13 steamers; p.908 William L. James, Captain and A.Q.M.) | no prior plaintext or decipherment located |
+| E516 | **N3** | period | **D3** (H 18 + M 1 of 19; external: OR I/46 pt 2 p.97 Butler, 11 Jan, "Has it been lost again? If so, I have a copy"; p.68 Grant/Leet on the same report; holder 7685 the report made 5 Jan) | no prior plaintext or decipherment located |
+| E519 | **N3** | period | **D3** (H 19 + M 1 of 20; external: holder 8508 Newport 6 Jan, the Baltic at Swann Point needing coal, five days to coal at Annapolis; 7693 Webster, the Baltic to Annapolis, nearest she can get; OR I/46 pt 2 pp.65-66 Wise, "Has the Baltic left? By order of Quartermaster-General") | no prior plaintext or decipherment located |
+| E531 | **N3** | period | **D3** (H 22/22; external: holder 8518 Newport 14 Jan, "The Oriental and Surro Nada with the remainder of Genl Grovers command sailed last night"; 8509 transport for 5,000 troops) | no prior plaintext or decipherment located |
+| E534 | **N3** | period | **D3** (H 28 + M 1 of 29; external: OR I/46 pt 2 p.61 Grant to Morgan, fifteen days' rations on the sea-going vessels at Fort Monroe; p.305 the steamer Haze) | no prior plaintext or decipherment located |
+| E535 | **N3** | period | **D3** (H 29/29; external: OR I/46 pt 2 p.146 Maynadier, the Coehorn mortars of Grant's 5 Jan telegram at Fort Monroe on the 11th; holder 7685 Grant's order; Fort Fisher fell 15 Jan) | no prior plaintext or decipherment located |
+
+- Not N4 for any: Grant Papers vols. 13-14 and ORN I/12 unreachable this session, OR I/46 pt 2 read in OCR (pages from running heads, not seen on the
+  image), NARA RG 107/108, Google Books and JSTOR not searched.
+- **Safe sentences** (each: "Read at grade H with War Department Cipher No. 1 ...; not located in the Official Records ser. I vols. 46-47, ORN ser. I
+  vol. 11, Butler's correspondence vol. V or the Huntington's full-text search (searched 10 Oct 2026)"):
+  E504: "on 3 Jan 1865 Fort Monroe told Captain Howell, A.Q.M., at City Point which thirteen steamers had been ordered to report to Colonel Bradley, and
+  that the Atlantic, rationed for 1,400 troops, was ready but drew too much water to go up." E516: "on 6 Jan 1865 S. H. Beckwith at City Point asked, through
+  Sheldon, Brig. Gen. Shepley at Norfolk to make inquiries at the theatre and at the hotel kept by Mr Phillips for a large package of papers containing
+  General Butler's report of the Wilmington expedition, lost from his overcoat pocket the night before." E519: "on 7 Jan 1865 Fort Monroe, by order of the
+  Quartermaster General, told Colonel R. M. Newport at Baltimore to ship troops on the Baltic by whatever method was soonest, coaling her at Baltimore
+  rather than Annapolis, whose docks she could not approach." E531: "on 15 Jan 1865 Sheldon reported to General Rawlins that the Oriental had sailed and
+  the Suwo Nada would start within the half hour, making six vessels and about 5,100 men, all as ordered." E534: "on 16 Jan 1865 Fort Monroe told Colonel
+  Bradley that the Dupont, Thames, Haze and Sentinel were all the vessels it had, enough for the teams and 1,300 men, and City Point told Colonel Small,
+  by General Grant's direction, to put fifteen days' rations on the vessels the quartermaster named." E535: "on 17 Jan 1865 Fort Monroe told General
+  Rawlins that three vessels had come back disabled from the expedition, that those in port could carry 3,500 men, 50 wagons and 150 animals by the next
+  noon, and asked whether the Fort Fisher news changed his instructions about mortars, troops or ammunition."
+  Depth sentences (D3) = the same clauses without the search tail.
+- **Unsafe:** any "first", "new", "unpublished" for any of the six; "to Sheldon" as the addressee of E516's request (it is for Shepley at Norfolk); E504
+  dated by the printed Morgan telegram (that is 5 Jan); "Weldon Porter" or "Monroe's" in E535; "Ferry" for Sampson in E519.
+
+### 5. Fixes for the next FIX job (not applied here; reading.md is decode.py output)
+E504: "William" x2 plain (Capt. William T. Howell; Capt. William L. James), not [100]; header: the C check is Morgan's **5 Jan** telegram (OR I/46 pt 2
+pp.22-24), and the steamers are GO No. 3 (p.90); image-read whole by FV-FM65a. E516: "pocket" plain, not [Cross]; "Hotel" plain (already noted);
+header: "for Brig. Gen. Shepley, Norfolk" (palate = Brig Gen, Farmer = Norfolk), "Shipley" = Shepley as written; Japan M; add OR I/46 pt 2 p.97 (Butler, "lost
+again") as context. E519: "Sampson" plain in the address (not [Ferry]); "Baltic" plain (already noted); Webster M (signature or R. C. Webster). E531: none.
+E534: header: message 2 is p.334, pointer 5878 row 0 (not p.333); message 1 Webster M. E535: "Horace" plain (Horace Porter), not [Weldon]; "animals" plain,
+not [Monroe]'s ("150 animals"). All six: header may say "image-read by FV-FM65a, matches the transcription".
+Requests: hdl.huntington.org 25 (19 CONTENTdm queries, 1 dropped and not retried; 6 IIIF pages; one take 10:12-10:15 UTC); archive.org 9 djvu downloads
+(6 x 200, 1 x 503, 1 x 401, 1 x 500), 2 s apart; be-api.us.archive.org 20, 1.8 s apart.
+For LANE LEDGER-13 (account 1).
