@@ -6716,6 +6716,23 @@ N1 at first audit: E372 E373 E376 E377 E380 (OR page images), E379 (lowered by S
    LEDGER-N2 next list item 4.
 6. Blocked (unchanged): 1865 rows without a book, "No 3"/"No 13" rows, objects 8472/6254/9660 (no book in hand; Cipher No. 4 Friedman copy on LOCAL-QUEUE).
 
+## LANE LEDGER-11 handoff (session_01P41wJ6BbSWs1T4xnJAn52e, account 1, second blast lane beside LANE LEDGER-10), 10 October 2026 (05:40-07:1x UTC by date -u; closed: backlog spent after two waves, lane about 15 of 60; five_hour allowed, seven_day allowed_warning throughout)
+
+Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261010-0539; jobs .claude/briefs/runs/2026-10-10-acct1-lane-ledger11-jobs.md (waves 1-2).
+Scope split from LEDGER-10: the 1865 rows of eckert-1864 ms18/clean-ms18.tsv, the No. 9 leftovers (LEDGER-N2 handoff item 4), eckert-1862 cheap gaps. Six workers 11.80 + orchestrator ~3.2 by get_session.
+Result: no entry at N3+ (nothing for a second audit). Filed: E400 (N1 D1, OR I/47 pt 3, I/48 pt 2, I/49 pt 2 p.1035), E401 (N1 D1 by step 0, a 0.540 vs p95 0.190; telegram itself not located),
+N2-MA (10006/0, Grant to Schofield 8 May 1865, in print OR I/47 pt 3 p.441), N2-MB (10040/0, 11 July 1865, not located; reading thin, coherence control FAILS -- not a reading, no verifier).
+- BOOK-65 (book test, 10 rows): 10014/1 No. 1, 10012/1 and the Fuller 28 May entry No. 2, 8 none in hand (leaf labels No. 3/4/5, Sullivan series); the No. 9 share guess read none of its 7 rows.
+- Step-0 skips (body in holder transcription, nothing filed): MS65-R1 7 (10019/1 10060/0 10062/0 10008/0 10046/1 10065/1 10058/0), NO9-L 9 (all nine leftovers; 5 in OR), MS65-R2 8.
+- Lead for LEDGER-10 (not tabled): 9761/0 9762/1 9770/2 (Washington-Martinsburg June-July 1864) share a vocabulary (Dorothy, Fanny, Bremen = Grant, Carroll = Hunter, Orchard = B&O RR, Badger = Sigel) fitting no book in hand (NOTES "## NO9-L").
+- eckert-1862 (E62-CAM): no second Camden 13-15 Feb; Merlin only 7 and 25 Feb; ORN 22-23 no witness for Myrtle/Mary/Ingress/Humboldt; key unchanged.
+**Next** (costs this lane: Sonnet reader ~0.15-0.2/row with most rows step-0 skips; Opus key test ~2.6; Opus first audit ~3.1 for two entries):
+1. FIX (Sonnet, ~1): AUDIT "## AUDIT (FV-MS65a)" s.5 (E400: drop "they", restore "or which was included"; E401 key-only words Point/West Virginia/Kanawha/President) via the decode scripts' entry notes; --check.
+2. Remaining 1865 rows of clean-ms18.tsv predicted No. 3/4/5 or body-decides by BOOK-65's header table (NOTES "## BOOK-65"): blocked, no-key-material (no book No. 3/4/5 in hand); a step-0 pass alone (no decode) on them would still record which are clear in the holder transcription, ~0.1/row, low value.
+3. N2-MB: thin No. 2 reading; leave unless a second 11 July 1865 Fuller sibling turns up.
+4. 9845/0 and 9862/1 header crops (tools/iiif_lines.py --image) for the No. 9 book calls, ~0.5 (NO9-L gaps).
+5. Blocked (unchanged): Nos. 3/4/5 1865 books, 8472, 6254, 9660 (no book; Cipher No. 4 Friedman copy needs a desk browser, LOCAL-QUEUE); eckert-1862 single-day code words (no-key-material).
+
 ## LANE LEDGER-N2 handoff (session_01JyTbV4HjnVsWqF3eTp8vvZ, account 1, second blast lane beside LANE LEDGER incarnation 9), 10 October 2026 (00:40-02:3x UTC by date -u; closed: last planned wave done, lane about 52 of 60; seven_day allowed_warning throughout)
 
 Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261010-0040; jobs .claude/briefs/runs/2026-10-10-acct1-lane-ledger-n2-jobs.md (waves 1-3).
