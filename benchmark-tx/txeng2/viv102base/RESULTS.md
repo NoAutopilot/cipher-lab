@@ -168,3 +168,5 @@ Openings of eval truth: 0.
 Verdict: measured: dev baseline of today's pipeline on vivonne1573-f102r-dev: passZ_dv1 0.199 (80/403) flagged excluded
 (binding; as measured 0.431, not read as a figure), beside passA_dv1 0.208 and passB_dv1 0.161; split of passZ's 80
 flagged-excluded errors: segmentation 48 (6 deleted, 42 inserted), read 26, notation 6.
+
+## Pointer (lane incarnation 3, 10 Oct 2026 00:1x UTC by date -u; TX-RED F49): the sentence in step 5 that S2 on f.103r used "no '3', no 'V' at all" repeats a count corrected before this file was read by the lane -- see PREREG-txeng2-0 Amendment 9 (7): passZ_S2b carries '3' 22 and 'V' 36 (under-use, with 'z' over-used), not absence. Also: the 0.199 figure here is against the f.102r truth that DV1c found UNANCHORED (Amendment 9 (11)); it is superseded by DV1d's re-score against the re-anchored truth, never corrected in place.
