@@ -15439,3 +15439,128 @@ N2R-5 filed all three as "not located" H readings. Two of them (JG, JI) are most
 are N1 under the Step-0 ruling; the reader's own step-0 line counted unordered plain-word overlap and filed nothing about it. JH is the only one whose body
 depends on the key. No over-claiming sentence was found in NOTES/reading-no2 (all three say "not located", none "new"). Decoder misreads of plain words
 (business, George, reward, question, Yard) are listed in s.3 for a FIX job. For LANE LEDGER-10 (account 1)
+## AUDIT (STEP0-RULE, third audit where one exists)
+
+Verifier STEP0-RULE (account 1, Opus 5.5), 10 Oct 2026 05:18-05:3x UTC by date -u; separate from every reader and first verifier of these entries.
+Brief: `.claude/briefs/runs/2026-10-10-acct1-lane-ledger10-jobs.md`, Wave 3 "Step-0 ruling" and "## STEP0-RULE". Disk only: no request to any host.
+Script `ms18/step0_ordered.py` -> `ms18/step0_ordered.tsv` (reproducible: fixed seeds; re-run prints the same table).
+
+### 1. Method (the ruling, as implemented)
+- Decoded body = the entry's body line in reading.md / reading-no2.md / reading-no9.md; `{..}` markup dropped (as HTX-SWEEP); `[..]` kept as the
+  reading's own expansions. Both sides: one case, letters only, stop words dropped, period abbreviations expanded, digits written as words.
+- The entry's lines: the page transcription (sources/mssEC18|mssEC19|fortmonroe/p<pointer>.json) split at blank lines (one telegram per block in
+  these ledgers); candidate windows are each block and each adjacent pair (a telegram broken by a blank line, or O9-DF running over 9699-9700); the
+  window with the highest LCS is taken as the entry's lines and its index is reported. The chosen window was eye-checked for E379 (the one status
+  change): block 1 of 9759 is the Van Valkenburg 13 June 12 pm telegram, "Growl June forlorn topsy For Kennebec Zebra Japan commenced ...".
+- (a) LCS / decoded content words; (b) the same LCS against that window's words shuffled, 20 draws, p95; (c) decoded content words absent from the
+  window, split into those that are decoded key meanings (`[..]`) and plain spelling variants (listed in the TSV only). Hit = (a) >= 0.5 and (a) > (b).
+- b2 (reported, not part of the gate): selection-matched control -- every candidate window shuffled, max taken, 20 draws, p95. b2 <= 0.462 on every
+  entry, so the window choice does not manufacture the hits; every hit clears b2 as well as (b).
+
+### 2. Controls (all behave; the method separates)
+- **Positive** (known N1 by holder transcription): E74 0.958 (23/24) vs 0.333; E378 0.833 (15/18) vs 0.389; E381 0.759 (22/29) vs 0.310. All hit.
+- **Transposed, must NOT hit by (a):**
+  1. E321 against the foot of 5781 -- real wire order: AUDIT (FV-FM10b) s.1 established it is E321 "in its transposed (wire) order: the word
+     multiset is E321's plus the route's nulls". (a) 0.208 (5/24) vs (b) 0.292: miss. The same telegram's reading-order copy 5782: 0.875: hit.
+  2. E378 with its own matched window re-ordered by Cipher No. 1's page-3 route (key.md s.6: 7 columns, up 1st, down 6th, up 4th, down 2nd, up 3rd,
+     down 5th, up 7th): 0.222 vs 0.389, miss.
+  3. E340 likewise by the page-5 route (9 columns, up 5th, down 2nd, up 9th, down 6th, up 1st, down 3rd, up 8th, down 4th, up 7th): 0.280 vs 0.360, miss.
+  Only one real route-transposed copy is on disk (key.md s.1: the ledgers record reading order; transposition was applied on the wire, and 12319,
+  E321's received copy, is not on disk), so controls 2-3 are constructed from real ledger texts with the book's own routes, labelled as such.
+
+### 3. Per entry
+| entry | pointer (window) | (a) ordered | (b) shuffle p95 | b2 sel.-matched p95 | (c) absent / key meanings among them | body known in holder transcription | N-class proposed |
+|---|---|---|---|---|---|---|---|
+| E325 | 9889 (0) | 0.650 (26/40) | 0.275 | 0.275 | 13: arrest captain colonel dana general major missouri rebel rosecrans secretary war | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| E326 | 9889 (2) | 0.522 (12/23) | 0.304 | 0.348 | 9: arrest brigadier colonel follow general rebel secretary war | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| E333 | 9745 (1) | 0.613 (49/80) | 0.175 | 0.188 | 29: aurora captain dix five general ian information jno kentuck left major men new orleans period right secretary steam today war york | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| E335 | 9693 (0) | 0.795 (31/39) | 0.308 | 0.308 | 5: captain communicate telegraph | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| E340 | 10056 (1) | 0.800 (20/25) | 0.360 | 0.360 | 4: captain fifteen lynchburg quartermaster | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| E346 | 9820 (0) | 0.826 (38/46) | 0.326 | 0.304 | 8: new rebel report york | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| E347 | 9811 (2) | 0.744 (29/39) | 0.256 | 0.308 | 9: baltimore general grant major | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| E349 | 9843 (1+2) | 0.714 (30/42) | 0.238 | 0.262 | 10: baltimore colonel general grant major meade quartermaster | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| E350 | 9895 (1) | 0.649 (24/37) | 0.243 | 0.270 | 13: cavalry chief cincinnati colonel command communicate fifteen general horse louis nashville | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| E351 | 10065 (1) | 0.865 (32/37) | 0.270 | 0.324 | 5: defense general report secretary war | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| E355 | 9863 (0) | 0.639 (23/36) | 0.250 | 0.278 | 13: butler enemy general information major monroe new north report six york | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| E356 | 9729 (2) | 0.789 (30/38) | 0.289 | 0.289 | 5: colonel york | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| E357 | 9825 (0) | 0.575 (23/40) | 0.250 | 0.250 | 16: artillery cavalry colonel grant information join lee left men orange point report troops | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| E358 | 10043 (0) | 0.763 (29/38) | 0.316 | 0.316 | 5: brigadier general secretary telegraph war | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| E366 | 10005 (0+1) | 0.676 (23/34) | 0.324 | 0.294 | 10: arrest chief general guard mile report secretary six war | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| E369 | 10020 (1+2) | 0.452 (14/31) | 0.258 | 0.258 | 16: arrest augusta camp command general geo government guard knoxville major rebel tennessee thirty | no | no step-0 change (stays N3 as audited) |
+| E370 | 9836 (1) | 0.500 (15/30) | 0.233 | 0.267 | 14: army colonel command eleven forage general head horse major new quarters sherman tennessee york | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| E371 | 9842 (1) | 0.621 (18/29) | 0.241 | 0.310 | 11: brigadier colonel depot general government louisville quartermaster secretary war | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| E374 | 9673 (1) | 0.588 (10/17) | 0.294 | 0.353 | 7: colonel nashville secretary war west | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| E375 | 10061 (0) | 0.625 (10/16) | 0.312 | 0.375 | 6: baltimore brigadier general secretary telegraph war | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| E378 | 9820 (2) | 0.833 (15/18) | 0.389 | 0.389 | 3: dana telegraph two | yes | N1 (confirms) |
+| E379 | 9759 (1) | 0.517 (46/89) | 0.157 | 0.169 | 38: ammunition arms attack capture command demoralize fifty fight force fought general grant horse ing james kentucky killed killing major movement scatter sherman south three today wounded wounding | yes | N1 for the body (from N3, first audit only); key words in (c) only, D1 -- **set in status.json** |
+| E381 | 9258 (1) | 0.759 (22/29) | 0.310 | 0.310 | 6: brigadier communicate general secretary telegraph war | yes | N1 (confirms) |
+| N2-AI | 8910 (0) | 0.526 (41/78) | 0.179 | 0.205 | 33: available brigadier cavalry colonel general horse information kilpatrick left men monroe new point steam tomorrow transportation york yorktown | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| N2-AJ | 8910 (1) | 0.300 (3/10) | 0.300 | 0.300 | 7: army brigadier general grant lieutenant potomac | no | no step-0 change (stays N3 as audited) |
+| N2-BI | 9011 (1) | 0.542 (26/48) | 0.250 | 0.271 | 18: artillery brigadier cavalry general grant horse join major nine three troops two | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| N2-BJ | 8979 (0) | 0.611 (22/36) | 0.250 | 0.250 | 14: army captain cavalry colonel dana lieutenant meade new orleans potomac report sheridan staff | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| N2-BK | 9139 (1) | 0.750 (24/32) | 0.281 | 0.312 | 8: army master officer order quarter secretary sheridan war | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| N2-BL | 8925 (1) | 0.667 (26/39) | 0.256 | 0.282 | 9: colonel department forage master quarter york | yes | N1 for the body (from N2); counted contribution only for the key words in (c), depth D1 |
+| N2-BM | 9019 (0) | 0.696 (16/23) | 0.304 | 0.348 | 6: brigadier five general horse master quarter | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| N2-BN | 8914 (0) | 0.676 (25/37) | 0.270 | 0.297 | 9: advance bridge fifty forty necessary nine pontoon train twenty | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| N2-BY | 9126 (0) | 0.357 (5/14) | 0.286 | 0.357 | 9: brigadier city general grant lieutenant point thursday | no | no step-0 change (stays N2 as audited) |
+| N2-BZ | 9047 (1) | 0.690 (58/84) | 0.179 | 0.202 | 23: cairo colonel general gordonsville grant horse information men secretary signed thursday tomorrow two war wednesday | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| N2-CJ | 9142 (0) | 0.720 (18/25) | 0.320 | 0.320 | 7: colonel general james major master quarter sherman | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| N2-CK | 9142 (0+1) | 0.538 (7/13) | 0.385 | 0.462 | 4: day general grant left | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| N2-FA | 9879 (0) | 0.704 (38/54) | 0.222 | 0.241 | 15: california commissioner corps department five mccloskey new prevent report secretary war warren york | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| N2-FB | 9767 (1) | 0.594 (38/64) | 0.188 | 0.188 | 26: brigadier city department general grant james monroe necessary new north orleans point quartermaster steam transport wounded york | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| N2-FE | 9905 (1+2) | 0.459 (17/37) | 0.216 | 0.243 | 19: brigadier colonel corps division embark general river six staff steam tomorrow tuesday two | no | no step-0 change (stays N3 as audited) |
+| N2-FH | 9916 (2) | 0.538 (28/52) | 0.212 | 0.212 | 24: brigadier colonel general james lieutenant major marshall master near quarter report savannah sherman signature steam welch | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| N2-GA | 9874 (0) | 0.667 (20/30) | 0.300 | 0.333 | 8: army colonel corps martinsburg monday nineteen staff | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| N2-GC | 9913 (0) | 0.657 (23/35) | 0.286 | 0.314 | 12: august cipher december guard order secretary sheridan telegram thirty troops two war | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| N2-GF | 9722 (1) | 0.679 (19/28) | 0.321 | 0.321 | 9: augur cavalry command destroy horse meade regiment thursday wednesday | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| N2-GI | 9914 (1) | 0.435 (10/23) | 0.261 | 0.304 | 10: city corps meade point regiment river six thirty tomorrow wednesday | no | no step-0 change (stays N3 as audited) |
+| N2-HF | 9813 (0) | 0.551 (38/69) | 0.174 | 0.188 | 28: baltimore brigadier city general infantry master men monroe move movement necessary new nineteen philadelphia point quarter steam telegraph thirteen thirty twelve york | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| N2-R | 8948 (1) | 0.727 (16/22) | 0.364 | 0.409 | 6: augur force meade point six warrenton | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| O9-AH | 8937 (0) | 0.822 (74/90) | 0.222 | 0.233 | 15: batteries butler captain colonel equipage fort major monroe new quartermaster transportation troops york | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| O9-AI | 8907 (0) | 0.850 (17/20) | 0.400 | 0.450 | 3: abingdon maine | yes | N1 (confirms) |
+| O9-AJ | 8907 (1) | 0.893 (25/28) | 0.357 | 0.393 | 3: abingdon maine | yes | N1 (confirms) |
+| O9-AK | 8946 (1) | 0.737 (14/19) | 0.368 | 0.368 | 5: halleck heintzelman ohio regiment troops | yes | N1 for the body (from N2); counted contribution only for the key words in (c), depth D1 |
+| O9-DC | 9673 (0) | 0.857 (42/49) | 0.245 | 0.245 | 7: general major new quartermaster subsistence york | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| O9-DE | 9684 (2) | 0.704 (19/27) | 0.333 | 0.296 | 8: colonel fayette fort fox la new york | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| O9-DH | 9684 (0) | 0.700 (14/20) | 0.350 | 0.400 | 6: army arrest colonel fox new york | yes | N1 for the body (from N3); counted contribution only for the key words in (c), depth D1 |
+| O9-DI | 9684 (1) | 0.400 (6/15) | 0.333 | 0.333 | 9: colonel dix fayette fort fox jno la | no | no step-0 change (stays N3 as audited) |
+| O9-DA | 9709 (1) | 0.972 (35/36) | 0.333 | 0.333 | 1: colonel | yes | N1 (confirms) |
+| O9-DD | 9687 (1) | 0.837 (41/49) | 0.245 | 0.286 | 8: general major new quartermaster secretary war york | yes | N1 (confirms) |
+| O9-DF | 9699+9700 (1+2) | 0.844 (65/77) | 0.221 | 0.234 | 12: captain general harbor maine new quartermaster sailing vessels york | yes | N1 (confirms) |
+| E74 | 9071 (2) | 0.958 (23/24) | 0.333 | 0.375 | 1: - | yes | N1 (confirms) |
+
+Controls:
+
+| control | kind | (a) | (b) | hit | must |
+|---|---|---|---|---|---|
+| E378 (9820) | positive (N1 by holder transcription, D2V-E74 / AUD2-LEDGER-38) | 0.833 | 0.389 | HIT | hit -- OK |
+| E381 (9258) | positive (N1 by holder transcription, D2V-E74 / AUD2-LEDGER-38) | 0.759 | 0.310 | HIT | hit -- OK |
+| E74 (9071) | positive (N1 by holder transcription, D2V-E74 / AUD2-LEDGER-38) | 0.958 | 0.333 | HIT | hit -- OK |
+| E321 vs 5781 foot (real wire order) | transposed | 0.208 | 0.292 | - | miss -- OK |
+| E321 vs 5782 (reading order) | pair-check | 0.875 | 0.333 | HIT | reading-order copy of the same telegram: hit expected -- OK |
+| E378 wire order (route p.3, 7 cols, constructed) | transposed | 0.222 | 0.389 | - | miss -- OK |
+| E340 wire order (route p.5, 9 cols, constructed) | transposed | 0.280 | 0.360 | - | miss -- OK |
+
+### 4. Findings and propagation
+- **51 of 57 measured entries hit** (incl. the three positive controls and FV-O9b's three); 6 do not: E369 (0.452), N2-AJ (0.300, 10 words), N2-BY
+  (0.357, 14 words), N2-FE (0.459), N2-GI (0.435), O9-DI (0.400). E370 sits on the gate (0.500, 15/30). E379 is 0.517 (46/89) against b 0.157.
+- **FV-O9b checked:** O9-DA 0.972, O9-DD 0.837, O9-DF 0.844, all hit -- its N1 D1 stands.
+- **This account's first audit only (no AUDIT 2):** of the swept entries only **E379** (AUDIT (FV-MS18p)); it hits, so per the ruling the body is
+  public in the holder transcription: **N1 for the body, key `period`, `text: known`, D1**; the counted contribution is only the key meanings in
+  its (c), verbatim from the TSV: ammunition arms attack capture command demoralize fifty fight force fought general grant horse ing james kentucky
+  killed killing major movement scatter sherman south three today wounded wounding (the Burbridge quotation itself is N1, OR I/39 pt 1 p.20, as
+  FV-MS18p found, so the persons/places/units/numbers that count are those of the relay frame: Sherman, Grant, movement, south, the James). FV-MS18p's
+  "none of the six is clear" used the wave-1 bar (all-word plus code overlap); this ruling replaces that bar. status.json set; SO-ECKERT-E379
+  withdrawn; WORK-QUEUE AUD2-LEDGER10-2 (second audit of E379, still `queued`) withdrawn.
+- **Already second-audited (account 4 or the VERIFY lane): status.json unchanged**, third-audit proposal posted in ROOM.md: hits currently above N1 --
+  E325 E326 E333 E335 E340 E346 E347 E349 E350 E351 E355 E356 E357 E358 E366 E370 E371 E374 E375, N2-AI N2-BI N2-BJ N2-BK N2-BL N2-BM N2-BN N2-BZ
+  N2-CJ N2-CK N2-FA N2-FB N2-FH N2-GA N2-GC N2-GF N2-HF N2-R, O9-AH O9-AK O9-DC O9-DE O9-DH -> proposed N1 for the body, contribution only for the key
+  words in (c), depth D1. Hits already N1 (confirmed): E74 E378 E381 O9-AI O9-AJ (and FV-O9b's three).
+- **No page JSON on disk (listed, not fetched):** E302 (5697), E305 (5740), E306 (5744), E307 (5777), E309 (5786), E312 (5746), E318 (5709), E319
+  (5695), E320 (5702). E321 (5782) IS on disk (sources/fortmonroe) and hits at 0.875 (pair-check row): proposed N1 body, key words north, river,
+  south only -- second-audited (AUD2-LEDGER-27), so a proposal, not a change.
+- **What this does not settle:** (c) counts every decoded key meaning; whether a given key word (e.g. a rank or a stop) is a "person, place, unit or
+  number the transcription does not give" is the third auditor's call per entry. Rule 10: no novelty wording; key `period` throughout.
+
+Postmortem: the first audits of these entries applied step 0 as "is the holder copy a clear copy" (code words decoded in the transcription); the
+ruling asks the narrower question "is the body's wording already public in order", which these mostly-plain ledger telegrams almost always answer yes.

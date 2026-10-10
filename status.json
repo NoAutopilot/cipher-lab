@@ -12225,13 +12225,14 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-MS18p)'"
+        "AUDIT.md '## AUDIT (FV-MS18p)'",
+        "AUDIT.md '## AUDIT (STEP0-RULE, third audit where one exists)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth_by": "FV-MS18p verifier (account 1)",
+      "depth_by": "STEP0-RULE verifier (account 1)",
       "depth_date": "10 Oct 2026",
-      "decode_status": "Partially decrypted",
+      "decode_status": "Non-decrypted",
       "date": "10 Oct 2026",
       "kind": "reading",
       "claim_scope": "completed-reading",
@@ -12243,13 +12244,13 @@
         "other": "0"
       },
       "depth_pct": 100.0,
-      "grade": "N3",
-      "plaintext_novelty": "N3",
-      "mapping_novelty": "N3",
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
       "title": "Eckert 1864 (Washington sent ledger): Secretary of War Stanton to Maj. Gen. Sherman, 13 June 1864, midnight: Grant has begun moving to the south side of the James; Burbridge's report of routing Morgan at Cynthiana relayed (E379, relay frame)",
-      "line": "Read at grade H with War Department Cipher No. 1: at midnight on 13 June 1864 the Secretary of War told Sherman that Grant had begun the night before to move to the south side of the James, relayed Burbridge's report of routing Morgan at Cynthiana (printed in the Official Records), and added 'that is the way to do it'; the relay's own wording was not located in print (searched 10 Oct 2026; the same-hour bulletin to Dix carries the news in other words).",
-      "gap": "N3 one audit (FV-MS18p); the quoted Burbridge dispatch is N1 (OR I/39 pt 1 p.20); not N4: Sherman Papers (LC) and printed Sherman correspondence, Stanton Papers (LC), NARA RG 107 Telegrams Sent, NY Times/Herald 14 June 1864 full text, HathiTrust, JSTOR not searched; second audit AUD2-LEDGER10-2 queued (10 Oct 2026)",
-      "depth": "D3",
+      "line": "Re-read with War Department Cipher No. 1: at midnight on 13 June 1864 the Secretary of War told Sherman that Grant had begun the night before to move to the south side of the James and relayed Burbridge's report of routing Morgan at Cynthiana; the body's wording is already public in order in the Huntington's transcription of the ledger page (pointer 9759), and the key supplies the code words (Grant, Sherman, movement, south, the James and the figures of the quoted dispatch). Plaintext already public (N1).",
+      "gap": "N1: STEP0-RULE (10 Oct 2026, Wave 3 Step-0 ruling) lowered N3 -> N1 and D3 -> D1: ordered overlap 0.517 (46/89) of the decoded content words with the holder transcription of 9759 block 1, against a shuffled-within-entry p95 of 0.157; counted contribution only for the key meanings (AUDIT.md '## AUDIT (STEP0-RULE, third audit where one exists)' s.4); quoted Burbridge dispatch N1 (OR I/39 pt 1 p.20); second audit AUD2-LEDGER10-2 withdrawn",
+      "depth": "D1",
       "completeness": "47 H of 47 code-word groups (decoder count after FIX-FM20; the audit's 48 counted the spurious {time: 2 AM} on 'Cyntha anna'); quoted dispatch C by print; rest plain",
       "phrases": [
         "Huntington mssEC 18 (obj 10074) p.93, pointer 9759, E379"
@@ -12258,9 +12259,10 @@
       "documents": [
         "Huntington mssEC 18 (obj 10074) p.93, pointer 9759, E379"
       ],
-      "depth_sentence": "Stanton passed Sherman the news of Grant's crossing toward the south side of the James together with Burbridge's victory over Morgan at Cynthiana within minutes of receiving it, with a comment of his own, 'that is the way to do it', that the bulletin sent to Dix the same hour does not carry.",
-      "depth_check": "code clause: Japan commenced last night his talbot to the Waxy side of Bergen = Grant commenced last night his movement to the south side of the James; external (non-statistical): War Department bulletin to Dix, June 13--12 midnight (New-York Daily Tribune 14 June 1864 p.1) carries the same news and the Burbridge quotation; quoted dispatch clause for clause OR I/39 pt 1 p.20 (received 11.53 p.m.) (D3, FV-MS18p)",
-      "depth_note": "47 H of 47 code-word groups; hour 12 = midnight (header corrected, FIX-FM20); 'Cyntha anna' plain, not a time word"
+      "depth_sentence": "On 13 June 1864 Stanton passed Sherman the news of Grant's move toward the south side of the James with Burbridge's report of routing Morgan (sense readable from the holder's public transcription; the key adds the names and figures).",
+      "depth_check": "STEP0-RULE: body public in order in the holder transcription (ordered overlap 0.517 vs 0.157), so depth counts only what the key adds -- the relay-frame code words (Japan/Grant, talbot/movement, Waxy/south, Bergen/James) form one clause; with the ruling's 'normally D1' and rule 4a's lowering on revision, D1 pending a third auditor; FV-MS18p's external check (Dix bulletin, NY Daily Tribune 14 June 1864 p.1) stands as context",
+      "depth_note": "47 H of 47 code-word groups; body public in order in the holder's transcription (STEP0-RULE)",
+      "text": "known"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
