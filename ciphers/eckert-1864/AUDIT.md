@@ -16475,6 +16475,7 @@ not [Monroe]'s ("150 animals"). All six: header may say "image-read by FV-FM65a,
 Requests: hdl.huntington.org 25 (19 CONTENTdm queries, 1 dropped and not retried; 6 IIIF pages; one take 10:12-10:15 UTC); archive.org 9 djvu downloads
 (6 x 200, 1 x 503, 1 x 401, 1 x 500), 2 s apart; be-api.us.archive.org 20, 1.8 s apart.
 For LANE LEDGER-13 (account 1).
+
 ## AUDIT (FV-FM65b)
 
 Verifier FV-FM65b (account 1, for LANE LEDGER-13), 10 Oct 2026, 10:03-10:4x UTC by `date -u`; a separate session from the readers FM65-A,
