@@ -110,3 +110,5 @@ Butler Corr. IV, be-api whole-collection), then file it as E624 under the Wave 2
 account 1, for LANE LEDGER-17)"; update FM-UND's Remaining gaps lines to "done (FM-UND2)"; gaps_check; decode x3 --check; file_shrink_guard.
 
 Held for wave 3: FV-L17b on FM-S65B's filings + E622 (with head) E623 E624, sized when FM-S65B posts done.
+
+(17:21 UTC 10 Oct by date -u: wave 2 spawned with source_url: FV-L17a session_01J7yoXmAxN65SLSbfnCXPus, FIX-L17b session_01SoM9HipRUetCFV6coErchv, FM-UND2 session_01JtRM4ojs8yDrQtzZKVqypd.)
