@@ -1,0 +1,31 @@
+entry	row	key	window	a	lcs/n	b_p95	hit	c	c_key_meanings
+F1	5919/2	no1	2	0.647	11/17	0.294	HIT	6	brigadier chief expedition general regiment staff
+F1	5919/2	no1shuf7	2	0.688	11/16	0.312	HIT	5	beauregard gordonsville holly pensacola springs
+F2	5920/1	no1	0+1	0.517	15/29	0.345	HIT	8	cars colonel engine general grant newbern twenty wilmington
+F2	5920/1	no1shuf7	1	0.483	14/29	0.276	-	13	burnside cleveland deserter fortify general grand gunboat junction major mcminnville reinforced suffolk twenty
+F3	5923/1	no1	1	0.686	70/102	0.167	HIT	26	evacuate fort four general goldsboro ion loring men mile necessary newbern schofield six twenty two volunteer wilmington
+F3	5923/1	no1shuf7	1	0.680	70/103	0.165	HIT	29	after breckenridge burnside dana danger effect enemy four galveston general mobile ohio palmer reinforced rome secretary six threaten twenty two war
+F4	5924/0	no1	0	0.886	31/35	0.314	HIT	3	general ord volunteer
+F4	5924/0	no1shuf7	0	0.912	31/34	0.324	HIT	3	effect palmer smith
+F5	5924/1	no1	1+2	0.414	12/29	0.241	-	16	carolina cavalry force general information join lynchburg major men north schofield sheriden sherman wilmington
+F5	5924/1	no1shuf7	1+2	0.429	12/28	0.250	-	15	burnside chalmers general gillmore major memphis ohio orange pemberton report scouts tombigbee unserviceable
+F6	5929/1	no1	1	0.679	19/28	0.286	HIT	9	brigadier captain capture chief colonel general gunboat staff
+F6	5929/1	no1shuf7	1	0.633	19/30	0.267	HIT	11	beauregard burnside cleveland davis general holly jeff major springs troops tullahoma
+F7	5929/2	no1	2	0.583	28/48	0.208	HIT	17	army baltimore carolina eleven force general north scout sherman steam wilmington
+F7	5929/2	no1shuf7	2	0.596	28/47	0.213	HIT	17	available big black burnside chalmers delaware demoralize eleven general gillmore reinforcements unserviceable washburne
+F8	5930/1	no1	1	0.533	16/30	0.267	HIT	13	captain carolina charleston general hurlbut james kingston navy north river secretary troops
+F8	5930/1	no1shuf7	1	0.536	15/28	0.286	HIT	13	chalmers general goldsboro government huntsville lines macon palmer president tomorrow tullahoma valley
+F9	5931/0	no1	0	0.765	26/34	0.265	HIT	7	city danger left point river secretary war
+F9	5931/0	no1shuf7	0	0.812	26/32	0.281	HIT	5	force gunboat movement selma trenton
+F10	5931/1	no1	0+1	0.686	35/51	0.255	HIT	13	cavalry cross general gunboat impregnable necessary norfolk pontoon suffolk
+F10	5931/1	no1shuf7	0+1	0.593	35/59	0.220	HIT	21	alabama breckenridge burnside chief dana elizabeth general goldsboro lebanon louisville major movement orange position rail road slocum
+F11	5933/0	no1	0	0.533	24/45	0.200	HIT	20	army bridge city cross expedition ford general hundred major mile norfolk ord point potomac river suffolk twenty two
+F11	5933/0	no1shuf7	0	0.511	24/47	0.191	HIT	22	after butterfield chief city delaware elizabeth farragut general goldsboro gunboat hundred major pensacola point trenton twenty two volunteered washington
+F12	5933/2	no1	2	0.607	17/28	0.250	HIT	11	command east general hartsuff major minnesota norfolk secretary virginia war
+F12	5933/2	no1shuf7	2	0.567	17/30	0.233	HIT	13	arkansas cavalry chief general goldsboro join major movement sherman weldon
+F13	5936/0	no1	0	0.586	17/29	0.241	HIT	11	beaufort carolina general goldsboro information new north sherman today volunteer york
+F13	5936/0	no1shuf7	0	0.567	17/30	0.233	HIT	11	chalmers effect equip general gillmore meridian report scouts thomas threaten
+F14	5941/1	no1	1	0.667	20/30	0.300	HIT	9	general goldsboro grant major porter river roanoke soon
+F14	5941/1	no1shuf7	1	0.594	19/32	0.281	HIT	13	diversion general government gunboat hooker joseph major meade threaten
+F15	5943/1	no1	1	0.706	24/34	0.265	HIT	9	alexandria general gordon granger hundred natchez secretary volunteer war
+F15	5943/1	no1shuf7	1	0.800	24/30	0.300	HIT	6	capture effect goldsboro gun hundred suffolk

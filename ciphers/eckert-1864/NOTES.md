@@ -6437,3 +6437,58 @@ Read so far: 8 of 8 rows filed (E610-E617); 6 in print by be-api snippet or cach
 - [ ] image-check: eight leaves not image-read; next above.
 - [n/a] retry: nothing failed, so no retry was needed.
 Verdict: keep going: 4 internal gaps; cheapest next: page reads for the six printed rows, ~$0.1 each
+
+## FM65-F (10 Oct 2026, account 1, for LANE LEDGER-13)
+
+Fifteen Fort Monroe 1865 rows (Huntington object 5952 = mssEC 25), March 1865, Cipher No. 1 per BOOK-FM65: 5919/2 5920/1 5923/1 5924/0 5924/1 5929/1 5929/2 5930/1 5931/0 5931/1 5933/0 5933/2 5936/0 5941/1 5943/1 (IDs E566-E580). Intake gate (10:0x UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Own work (grep of pointer/row in `ciphertext*.txt`, AUDIT, NOTES): only the BOOK-FM65 prediction table names these rows; none filed before. Prior-work step by hand as in FM65-C (the target-level leads are the editions searched below; `tools/prior_work.py` not run). Scripts: `fortmonroe/fm65f*.py`, outputs `fm65f_*.out`, `fm65f_controls.txt`.
+
+**Holder layer (CISOSEARCHALL, all pointers, 16 queries incl. control 9678, `fm65f_hdl.out`).** One clear copy: **5936/0 = pointer 8650** (Page 172, Washington clear telegram book): "630 pm Maj Eckert Fort Monroe Mch 21st 1865 for your information. Beaufort NC Mch 20th to Saml Sinclair Tribune office N York. Sherman occupied Goldsboro yesterday sunday morning without opposition (sig) Elias Smith (not sent) Geo D Sheldon" (C: matches the No. 1 decode of 5936/0 word for word; not filed). 5919/2 also matched pointer 5944 (6 Apr 1865, E. V. Sumner to Sheldon via Emerick), a different message, not a copy. Everything else matched only its own page or nothing (queries on decoded words give 0 where the page is cipher).
+
+**Print (re-read of my own output).** Exact-phrase grep of 183 volumes (177 cached + scratch OR I/46 pt 1-3, 47 pt 1-3; `fm65f_printcheck.out`), window search of the six OR I/46-47 volumes (`fm65f_win.out`), be-api quoted-clause queries (16, 1.8 s apart, `fm65f_beapi.out`). **Two rows are in print and not filed:**
+- **5924/1 in print**: OR I/47 pt 2 (IA `warofrebellion014702rootrich`, djvu text, page not read on image; the neighbouring running page numbers are in the 700s): "CITY POINT, VA., March 6, 1865 -- 12.30 p. m. Major-General SCHOFIELD: Sheridan will push on to Lynchburg and if information received there justifies it, he will push on into North Carolina and join you and Sherman with a cavalry force of about 8,000 men. U. S. GRANT". The No. 1 decode of the ledger row agrees word for word (Sheridan, Lynchburg, North Carolina, Sherman, cavalry force of about 8000 men; Schofield; 12.30), the ledger date is 6 Mar 1865 (received entry): a third-party print, not our reading.
+- **5941/1 in print**: OR I/47 pt 3 (IA `warofrebellion014703rootrich`, page not read on image): "HDQRS. MILITARY DIVISION OF THE MISSISSIPPI, Old Point, March 27, 1865 -- 12.30 p. m. General GRANT, City Point: All well at Goldsborough. I am coming up to see you, but must get back as soon as possible. Therefore, get all the maps ready that illustrate the Roanoke and Chowan Rivers. If Admiral Porter is there I should like to meet him. W. T. SHERMAN, Major-General." The No. 1 decode agrees (All well at Goldsboro; Roanoke and Chowan Rivers; D. D. Porter; Sherman; 12.30).
+Hits I rejected: 'Am I right', 'I was ordered to join my', 'I have joined the', 'first mounted rifles' (5919/2, generic phrases in other OR volumes), 'construction parties' (5923/1, other contexts), 'Captain Glisson' (5929/1: name only, other contexts), 'in possession of Kinston' (5930/1: Sherman's 16 Mar letter to Terry, a different text), 'George H Gordon' and 'District of Eastern Virginia' (names/titles in many volumes), 'without opposition' (5936/0: generic; the row has the clear copy anyway), 'barges and', 'Morehead City' (5943/1: generic), be-api 'Sumner' (1917 Congressional Record) and 'Champion/Wilmington/Scouts/Sherman' (1928-36 newspapers). 'Not located' below means these searches; it is not a novelty verdict (rule 10).
+
+**Step 0 (a = ordered LCS, b = shuffled p95), information only under the RULING** (`fm65f_step0.out`, No. 1 and one meaning-shuffled copy, seed 7): HIT for 14 of 15 under No. 1 and 13 of 15 under the shuffled copy; no-hit under No. 1: 5924/1 (a .414 vs .241) and for 5920/1 only the shuffled copy missed (.483). The shuffled copy hits wherever the true key does, the non-test BOOK-FM65 and FM65-A/B/C already found. Nothing was held back by it.
+
+**Book.** No. 1 for all fifteen (BOOK-FM65 prediction). 5931/0, the conflict row, was decoded under No. 1, No. 2 and No. 9: No. 1 gives a clause (Secretary of War, left, 1 PM, City Point, 11 PM, "I wish you or Dealy to go on board the boat on arrival and deliver anything you may receive in person"), No. 2 gives Delaware / Necessary / Cairo / 1000 / Sunday / Subsistence / Division, No. 9 gives Transportation / Sherman / Movement / Flank. Vocabulary share alone had No. 2 ahead (.268/.293/.146, not discriminating); the clause decides it for No. 1. 5919/2 and 5941/1 and 5943/1 also had a No. 2 share lead (.317, .318, .242) and No. 1 gives the clause for the first two (5941/1 matches the print). Shuffled copies (seeds 7, 11, 13) give nonsense for every filed row (`fm65f_controls.txt`).
+
+**Per-row line.**
+| row | per-row line |
+|---|---|
+| 5919/2 | **filed E566**; not located; Sheldon to Emerick for Brig. Gen. Turner (M): "I was ordered to join my regiment. I have joined the expedition. Am I right?", signed E. V. Sumner, Colonel First New York Mounted Rifles (5 Mar 1865) |
+| 5920/1 | **filed E567**; not located; 5 Mar, Sheldon to Beckwith: two engines and flat cars sent at once so Wright can commence work; signed Schofield (M) |
+| 5923/1 | **filed E568**; not located; 5 Mar, Sheldon to Eckert: Schofield arrived, directs a line from here to Fort Fisher and a double line to Goldsboro, a double line from Morehead City to Goldsboro, with the tools and men listed (numerals H, two items M) |
+| 5924/0 | **filed E569 (WEAK)**; not located; 6 Mar, Sheldon to Eckert: please answer regarding moving the office; objection that we may be required to move; "Mrs [Ord] who wants the room". Plain except two code values; a verifier may withdraw it as plain |
+| 5924/1 | **in print, not filed** (OR I/47 pt 2, Grant to Schofield 6 Mar 1865, above) |
+| 5929/1 | **filed E571**; not located; 13 Mar, Sheldon to Beckwith for Rawlins: Captain Glisson will send a gunboat as desired, convoy ready, leaving with it for Colonels Roberts and Babcock |
+| 5929/2 | **filed E572**; not located; 14 Mar, Sheldon to Eckert: steamship Champion from Wilmington reports Sherman's army at Fayetteville intact; his scouts reached Wilmington on the 11th |
+| 5930/1 | **filed E573**; not located; 14 Mar, Sheldon to Eckert: Hurlbut (M) in from Charleston to go up the James; no news of the Montauk; our troops in possession of Kinston; Glisson, Senior Officer |
+| 5931/0 | **filed E574** (No. 1; conflict row decoded under both); not located; 15 Mar, Eckert to Sheldon: a traveller leaves Washington 1 PM, reaches Fort Monroe about 11 PM; Eckert or Dealy to go aboard and deliver messages in person; boat "windsor queen" (plain, M) |
+| 5931/1 | **filed E575**; not located; 15 Mar, Beckwith/Ord (M) to Gordon: gunboat draught to Suffolk, landing cavalry; answer to Emerick; the middle of the message unread (M) |
+| 5933/0 | **filed E576**; not located; 15 Mar, Gordon via Emerick: guide Boyle, the Blackwater crossing at Broad Ford, 22 miles from Suffolk, the Nottoway bridges |
+| 5933/2 | **filed E577**; not located; 18 Mar, Emerick for Gordon: (Secretary of War, M) prefers that Gordon continue in command of the district; not relieved by Hartsuff (M) |
+| 5936/0 | **holder clear copy, pointer 8650** (21 Mar 1865); not filed |
+| 5941/1 | **in print, not filed** (OR I/47 pt 3, Sherman to Grant 27 Mar 1865, above) |
+| 5943/1 | **not filed: no book in hand reads a clause.** No. 1 reads only the header, "8 PM" and three stray values (Granger, Secretary of War, 100); No. 2 and No. 9 give nothing; the body (pump pink Juliet ... barges and geese ... Morehead ... no exertions ... spared to send them ... defraud ... destine nation speedily ... William L. James) is plain words around code words that are in none of the three books (best_book column said 9; No. 9 reads only 'Traitor' and the time). Next: a book not in hand, or a sibling window by date for the barges at Morehead City |
+
+**Grades (decoder, tokens).** E566 H10; E567 H18; E568 H37; E569 H7; E571 H11; E572 H17; E573 H14; E574 H10; E575 H26; E576 H28; E577 H11; C 0, S 0, I 0 in every filed entry, so these are decipherments by key (No. 1 is a period key, mssEC 41), the depth set by the verifier. M by hand: plain words that are also key rows misfire (Danger for 'windsor', City Point for 'black', Minnesota, Impregnable, Ashland-type name slips; each listed in the entry's note), the identification of the recipient or signer from context (Schofield, Ord, Hurlbut, Gordon, Hartsuff, Turner), unread middle words in E575. Check: `decode.py --write` then `decode.py --check`, `decode_no2.py --check`, `decode_no9.py --check` exit 0.
+
+**Requests.** hdl.huntington.org 18 (16 CISOSEARCHALL incl. control 9678 + 2 dmGetItemInfo 8650 5944), all 200, no images; token taken 10:07, released 10:0x UTC, not overlapping another take. be-api 16 (1.8 s apart), archive.org djvu downloads 6. Cost: orchestrator get_session. seven_day allowed_warning not observed by me. No page image read (rule 2: the filed readings are conditional on the volunteer transcription).
+
+## Remaining gaps (FM65-F, 10 Oct 2026)
+Read so far: 11 of 15 filed (E566-E569, E571-E577); 2 in print (5924/1, 5941/1); 1 holder clear copy (5936/0); 1 no book in hand (5943/1).
+- E566-E577 first verifier (page image, word-for-word clause check, print by page) - blocker: not-attempted; no verifier has seen these entries; E569 may be ruled plain; next: first verifier on the eleven, ~$0.6 per row
+- Pages of the two prints, OR I/47 pt 2 and pt 3 - blocker: not-attempted; located by djvu text, not by page; next: IA page read, ~$0.1 each
+- 5943/1 - blocker: no-key-material; its code words are in none of No. 1, No. 2, No. 9; next: a sibling window by date (barges for Morehead City, March 1865) in OR I/47 pt 2-3 and Butler Corr. V, ~$0.2
+- Page images of the fifteen rows not image-read - blocker: not-attempted; the brief named transcription only and no crops were cut; next: re-fetch at 2400 px via `tools/iiif_lines.py` crops, ~$0.3 per page
+
+## Escalation (FM65-F, 10 Oct 2026)
+- [x] siblings: neighbouring 5929-5933 rows read together (Gordon strand E575-E577),.
+- [x] clear-pages: all-pointer CISOSEARCHALL on every row; clear copy 8650.
+- [x] known-keys: No. 1, No. 2, No. 9 on the conflict row and the three No. 2-leaning rows; three shuffled copies per row.
+- [x] print: 183 volumes, window search, be-api whole-collection and per-volume; two rows in print.
+- [n/a] key-rebuild: no key row edited.
+- [ ] image-check: no image read; filed from the volunteer transcription (rule 2: conditional on it).
+- [x] retry: none needed.
+Verdict: keep going: 3 internal gaps; cheapest next: IA page read of the two prints, ~$0.2

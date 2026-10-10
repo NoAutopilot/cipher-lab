@@ -2525,5 +2525,71 @@ Code-word tokens: H 21, C 1.
 
 Code-word tokens: H 14.
 
-Totals over the 399 entries: H 6945, C 99, I 25, M 46, S 21, U 10.
+**E566 | Page 375 | 5919 | mssEC 25 (obj 5952, pointer 5919), 5 Mar 1865 Ft Monroe, sent 12 M, Geo. D. Sheldon to J. H. Emerick, Hd. qrs. Army of the James, for [Brig. Gen.] Jay W. Turner [Chief of Staff]: 'I was ordered to join my [regiment]. I have joined the [expedition]. Am I right?'; signed E. V. Sumner, [Colonel] First [New York] Mounted Rifles; 'Leave soon so get quick answer' (FM65-F; row 5919/2)**
+
+J. H. Emerick Hd. qrs. A. J. {time: 12} for [Brigadier General] Jay W. Turn her [Chief of Staff] [.] I was ordered to join my [Regiment] [.] I have joined the [Expedition] Am I right  {tail: [signed] E. V. Sumner [Colonel] first [New York] mounted rifles Leave soon so get quick answer. sent 12 M. Dealy , Geo. D. Sheldon}
+
+Code-word tokens: H 10.
+
+**E567 | Page 376 | 5920 | mssEC 25 (obj 5952, pointer 5920), 5 Mar 1865 Ft Monroe, sent 2.35 P.M., Sheldon to S. H. Beckwith, City Point, for [Maj. Gen. Grant/Rawlins at] City Point (M): 'Please have [two] [engines] and some flat [cars] sent here at once so that [Colonel] Wright can commence work. None have arrived at this place or [Newbern]'; signed [Maj. Gen. J. M. Schofield] (FM65-F; row 5920/1)**
+
+S. H. Beckwith , City Point [Wilmington] February [25] [By the way of] [Monroe] {time: 2.30 PM} {date: Mar 5} for [Maj Genl U.S. Grant] [City Point] [.] Please have [2] [Engine]'s and some flat [Cars] sent here at once so that [Colonel] wright can commence work [.] None have arrived at this place or [Newbern]  {tail: [signed] [Maj Genl J. M. Schofield] long coming. sent 2.35 P. M. Dealy Geo. D. Sheldon}
+
+Code-word tokens: H 18.
+
+**E568 | Page 379 | 5923 | mssEC 25 (obj 5952, pointer 5923), 5 Mar 1865 Ft Monroe, Sheldon to Maj. Thomas T. Eckert, Superintendent, &c., Washington: [General Schofield] arrived here this morning; [he] directs that a line be built at once from here [Wilmington] to Fort Fisher and that it is [necessary] to have a double line from here to [Goldsboro]; also a double line from Morehead City to [Goldsboro]; wants 2 construction parties, 100 miles more material, 20 [evacuate?] , 20 operators, 8 construction men, 1 good foreman, 6 diggers, 8 shovels, 4 vices and straps, 6 axes, 4 [loring]'s [probably hatchets], 4 pliers and climbers; has explained to the General the difficulty of getting operators but assured him that you will do all in your power to supply (FM65-F; row 5923/1; long, 116 tokens, the best-controlled row of the set)**
+
+Maj. Eckert , [Volunteer] [Wilmington] February [26] to [Major] Thomas Tea Eckert Superintendent &c [Washington] [.] arrived here this morning [.] [Maj Genl J. M. Schofield] directs that a line be built at once from here to [Fort] Fisher and that it is [Necessary] to have a double line from here to [Goldsboro] he also wishes me to start at same time a double line from More head City to [Goldsboro] this will necessitate [2] Construct shun parties [,] [100] [Mile]'s more material [20] [Evacuate (-ed, -ing) - ion]'s [20] operators [8] Construction [Men] [1] good foreman [6] diggers [8] shovels [4] vices and straps [6] Axes [4] [Loring]'s [4] plyers and Climbers [.] I have explained tooth [General] the difficulty of getting operators but assured him you will do all inure power to supply ditto [.] These [Men] and supplies should be sent to [Newbern] I will send instructions to that place by which they canby guided [.] Please hurry the Operators and instruments along Very respect fully Yours R. OBrien Geo D. Sheldon
+
+Code-word tokens: H 37.
+
+**E569 | Page 380 | 5924 | mssEC 25 (obj 5952, pointer 5924), 6 Mar 1865 Ft Monroe, Sheldon to Maj. Eckert, Washington: 'Please answer regarding moving office. A very essential objection is that we may be required to move for the accommodation of any [one] ... if the precedent is once established. The whole matter is believed to be at the instigation of Mrs. [Ord] who wants the room for some purpose of her own'; signed as below (FM65-F; row 5924/0; WEAK: the page is mostly plain words)**
+
+Maj. Eckert , [Volunteer] Please answer regarding moving office [.] a very essential objection is that we may be required to move forth accommodation of any polking off I sir if the precedent is once established [.] The whole matter is believed toby [At the] instigation of Mrs [Maj Gen E. O. C. Ord] who wants the room for some purpose of her own [.] This is Corn fed in Shall  {tail: [signed] as below Geo. D. Sheldon}
+
+Code-word tokens: H 7.
+
+**E571 | Page 385 | 5929 | mssEC 25 (obj 5952, pointer 5929), 13 Mar 1865 Ft Monroe, sent 6.30 A.M., Sheldon to S. H. Beckwith, City Point, for [Brig. Gen.] Rawlins, [Chief of Staff]: '[Captain] Glisson says he will send [a gunboat] as desired at once. Convoy is now ready. I leave in a few moments with [convoy] for [Colonel] Roberts [Colonel] Babcock' (FM65-F; row 5929/1)**
+
+S. H. Beckwith , City Point {time: 6.30 AM} for [Brigadier General] Rawlins [Chief of Staff] [.] [Captain] Glisson says he will send [Gunboat] as desired at once [.] Convoy is now ready [.] I leave in a few moments with [Capture (-ed, -ing)] for [Colonel] Roberts [Colonel] Babcock Geo. D. Sheldon
+
+Code-word tokens: H 11.
+
+**E572 | Page 385 | 5929 | mssEC 25 (obj 5952, pointer 5929), 14 Mar 1865 Ft Monroe, Sheldon to Maj. Eckert, Washington, [received/entered] 14 [March] ([Baltimore] as a place word, M): 'The steamship Champion arrived here from Wilmington, North Carolina this morning and brings the intelligence that [Maj. Gen. Sherman] and his [forces] had reached Fayetteville, North Carolina, intact. The [scouts] of [Sherman's army] reached Wilmington ditto on the 11th instant, but the Champion sailing the same day no particulars could be obtained' (FM65-F; row 5929/2)**
+
+Maj Eckert , WashingtonAnimal [14] for See See Full turn American office [Baltimore] [.] The [Steam] Ship Champion arrived here from [Wilmington] [North Carolina] this morning and brings the intelligence that [Maj Gen W. T. Sherman] and his [Force]'s had reached Fay it ville [North Carolina] intact [.] The [Scout (-ed, -ing)]'s of [Maj Gen W. T. Sherman]'s [Army] reached [Wilmington] ditto on the [11] instant but the Champion sailing the same day no particulars could be obtained  {tail: [signed] no [signed] of course not sentGeo. D. Sheldon}
+
+Code-word tokens: H 17.
+
+**E573 | Page 386 | 5930 | mssEC 25 (obj 5952, pointer 5930), 14 Mar 1865 Ft Monroe, Sheldon to Maj. Eckert, Washington, for [Secretary of the Navy at Washington] (M): '[Maj. Gen. Hurlbut] in from [Charleston] and will go up the James River immediately. No news of the Montauk. Our [troops] in possession of [Kinston, North Carolina]'; [Captain] Glisson, Senior Officer (FM65-F; row 5930/1)**
+
+Maj. Eckert , WashingtonMartha for [Secretary of Navy] [Washington] [.] money tour [Maj Gen S. A. Hurlbut] in from [Charleston] and will go up the [James] [River] immed'y [.] no news [Of the] Montauk [.] our [Troops] in possession of [Kingston] [North Carolina] Glisten [Captain] Senior Officer Geo D. Sheldon
+
+Code-word tokens: H 14.
+
+**E574 | Page 387 | 5931 | mssEC 25 (obj 5952, pointer 5931), 15 Mar 1865 Washington, T. T. Eckert to Geo. D. Sheldon, Ft Monroe (received entry): '[Secretary of War] [left] here 1 P.M. for [City Point]; will reach F[ortress Monroe] about 11 P.M. tonight; we will send everything for him up to that time to F[ortress Monroe]. I wish you or Dealy to go on board the boat on arrival and deliver anything you may receive in person. Name of boat is [River Queen]'; T. T. Eckert (FM65-F; row 5931/0; the one BOOK-FM65 No. 1 / No. 2 conflict row, decoded under both)**
+
+Geo D. Sheldon . Ft Monroe [Secretary of War] [Left] here {time: 1 PM} for [City Point] will reach F about {time: 11 PM} tonight [.] we will send every thing for him up to that time to F [.] I wish you or Dealy to go on board the boat honor arrival and deliver anything you may receive in [5] stop name of boat is [River] [Danger] stop T. T. Eckert
+
+Code-word tokens: H 10.
+
+**E575 | Page 387 | 5931 | mssEC 25 (obj 5952, pointer 5931), 15 Mar 1865 Ft Monroe, sent 5 P.M., Beckwith to Sheldon [at Ft Monroe], for [General] George H. Gordon, Norfolk: 'How much water can your [gunboats] draw to [Suffolk]? Is there no [point] on the Banks of the [Nansemond?] where [cavalry] could land, covered if [necessary] by [gunboats]; ... [500] [cavalry] ... carry [pontoons] to cross ... you can come up tonight if [Impregnable]'s [cavalry] comes to Norfolk, as they are expected to do; leave word where they had better land'; signed [Maj. Gen. Ord]; send answer to Mr. Emerick (FM65-F; row 5931/1)**
+
+Geo D. Sheldon . Ft Monroe , {time: 5 PM} [15] for [General] George H. Gordons [Norfolk] how much water can your [Gunboat]'s teacup to [Suffolk] [,] andys there no [Point] on the Banks [Of the] {time: 8 PM} moaned where [Cavalry] could land [,] covered if [Necessary] by [Gunboat]'s [,] woody party sacy [500] [Cavalry] hefty carry [Pontoon] to [Cross (-ed, -ing)] to the not away [?] you can Come up to night if [Impregnable]'s [Cavalry] comes to [Norfolk] wheaton as they are expected to do leave word where they had better land  {tail: [signed] [Maj Gen E. O. C. Ord] send answer to Mister Emerick S. H. Beckwith}
+
+Code-word tokens: H 26.
+
+**E576 | Page 389 | 5933 | mssEC 25 (obj 5952, pointer 5933), 15 Mar 1865 Ft Monroe, J. H. Emerick, H'dqrs A. J., to Geo. D. Sheldon: [Gordon] [at Norfolk] to [Ord]: 'I have just seen the guide Boyle; he will be here ready to accompany any [expedition]. There is no place that the Blackwater can be crossed unless near the [Army of the Potomac line] without [bridging]. Broad [Ford] is the best place. It is 22 miles from Suffolk. The [river] there is 100 and 25 yards wide. The Not to way has several [bridges] standing'; signed George H. Gordon, [Brigadier General] (FM65-F; row 5933/0)**
+
+J. H. Emerick H'dqrs A. J. [Norfolk] to [Maj Gen E. O. C. Ord] [.] I have just seen the guide Boyle [.] he wilby here ready to accompany any [Expedition] [.] There is no place that the [City Point] water canby [Cross (-ed, -ing)]ed unless near the [Army] [Of the] [Potomac] without villager [.] Broad [Ford (-ed, -ing)] is the best place [.] It is [22] [Mile]'s from [Suffolk] [.] The [River] there is [100] and [25] yards wide [.] The Not to way has several [Bridge (-ed, -ing)]'s standing  {tail: [signed] George H. Gordon [Brigadier General] Geo D. Sheldon}
+
+Code-word tokens: H 28.
+
+**E577 | Page 391 | 5933 | mssEC 25 (obj 5952, pointer 5933), 18 Mar 1865 Ft Monroe, Sheldon [for] Gordon, Norfolk, from Emerick [Hd. qrs. Army of the James] (received entry): '[Secretary of War], when informed of the order [of Gen.] Abbot to issue [it], owing to matters still pending prefers that you continue in command of the district of [East] [Virginia]; you will therefore not be relieved by [Maj. Gen. Hartsuff]'; Good Day, Emerick (FM65-F; row 5933/2)**
+
+Geo. D. Sheldon Ft MonroeFrancis for Gordon [Norfolk] [.] [Secretary of War] when informed [Of the] order [Minnesota] to issue owing to matters still pending prefers that you continue in [Command = Er (-ed, -ing)] [Of the] district of [East] [Virginia] you will there four not be relieved by [Maj Gen G. L. Hartsuff]  {tail: [signed] mereden Good Day Emerick .}
+
+Code-word tokens: H 11.
+
+Totals over the 410 entries: H 7134, C 99, I 25, M 46, S 21, U 10.
 <!-- decode.py: derived block ends -->

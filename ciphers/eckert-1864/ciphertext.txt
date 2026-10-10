@@ -5396,3 +5396,153 @@ received Zebra If any orders have been issued assuming Polka
 of whiff out side of such boundaries they will be
 immediately revoked yoke Halleck Ireland Please forward this at once
 note: L14-B: No. 1 (share .38/.30/.13; read by sense). Step 0 (as information only, a hit is a non-test under STEP0-KEYCTL): (a) 0.788 (26/33), (b) p95 0.273, HIT (MS18-R11). In print: IA be-api whole-collection exact-phrase queries: 'will exercise authority over any troops not within the limits of your department' 5 hits and 'assuming command of troops outside of such boundaries' 7 hits, in the Official Records vol. 34 pt 2 (IA warofrebellion342unit, warofrebellion013402rootrich, cu31924077730251) and other copies; snippets match the decode word for word; the Halleck-to-Curtis date, page and addressee not read on the page (a verifier's); the date mismatch (4 vs 14 March; Halleck was General-in-Chief to 12 March 1864) is for the image check of leaf 9686 (not done). Cached 177 volumes: no phrase hit (vol. 34 pt 2 is not among them). Holder clear copy: CISOSEARCHALL p16003coll11 rare plain words, all pointers, hit only the row's own pointer (control 'Inspector Inquiry evidence' returned 9678), so none. Transcription only, leaf not image-read.
+
+### E566 | Page 375 | 5919 | mssEC 25 (obj 5952, pointer 5919), 5 Mar 1865 Ft Monroe, sent 12 M, Geo. D. Sheldon to J. H. Emerick, Hd. qrs. Army of the James, for [Brig. Gen.] Jay W. Turner [Chief of Staff]: 'I was ordered to join my [regiment]. I have joined the [expedition]. Am I right?'; signed E. V. Sumner, [Colonel] First [New York] Mounted Rifles; 'Leave soon so get quick answer' (FM65-F; row 5919/2)
+Ft Monroe Mar. 5 - 1865
+J. H. Emerick Hd. qrs. A. J.
+Francis for palsy Jay W. Turn her Berry unity I
+was ordered to join my whip zebra I have joined
+the rape Am I right youth E. V. Sumner paradise
+first frog mounted rifles Leave soon so get quick answer.
+sent 12 M. Dealy ,  Geo. D. Sheldon
+note: FM65-F (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (March 1865 rows read No. 1 in its ten-row test; here also checked against No. 2 and three meaning-shuffled No. 1 copies, fm65f_controls.txt). Step 0 (fm65f_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.647 (11/17) vs (b) p95 0.294, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.688 vs 0.312, HIT; (c) key-dependent words: brigadier chief expedition general regiment staff. No. 1 gives a connected clause (Brigadier General / Chief of Staff / Regiment / Expedition / Colonel / New York: eight key values); the three meaning-shuffled copies give Holly Springs / Beauregard / Gordonsville / Pensacola, Near, Siege and no sense, No. 2 gives Ammunition / Secretary of State / Skirmish / Macon, No. 9 gives Yorktown / Division / Arkansas (river); so No. 1. The row's first line is the header. 'Jay W. Turn her' is the plain name (Brig. Gen. John W. Turner, Chief of Staff of the Army of the James; M), 'Sumner' is plain (the same signer appears in pointer 5944, 6 Apr 1865, which is a different message, not a copy). Holder CISOSEARCHALL 'Sumner mounted rifles Emerick' found pointers 5919 (this page) and 5944 only. Not located in print (exact-phrase grep of 183 volumes incl. OR I/46-47 pts 1-3, window search of OR I/46-47, be-api whole-collection quoted-clause query: 0 relevant hits).
+
+### E567 | Page 376 | 5920 | mssEC 25 (obj 5952, pointer 5920), 5 Mar 1865 Ft Monroe, sent 2.35 P.M., Sheldon to S. H. Beckwith, City Point, for [Maj. Gen. Grant/Rawlins at] City Point (M): 'Please have [two] [engines] and some flat [cars] sent here at once so that [Colonel] Wright can commence work. None have arrived at this place or [Newbern]'; signed [Maj. Gen. J. M. Schofield] (FM65-F; row 5920/1)
+Ft Monroe Mar 5 / 65
+S. H. Beckwith , City Point
+Hamlet February harsh person peasant appian Henrietta March plaster
+for Japan black unity Please have plank Rabbits and
+some flat palmyra sent here at once so that
+pandora wright can commence work zodiac None have arrived
+at this place or fortune walrus Kiss long coming.
+sent 2.35 P. M. Dealy  Geo. D. Sheldon
+note: FM65-F (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (March 1865 rows read No. 1 in its ten-row test; here also checked against No. 2 and three meaning-shuffled No. 1 copies, fm65f_controls.txt). Step 0 (fm65f_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.517 (15/29) vs (b) p95 0.345, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.483 vs 0.276, no hit; (c) key-dependent words: cars colonel engine general grant newbern twenty wilmington. No. 1 reads (Wilmington / 25 February / Maj Gen Grant / City Point / two engines / flat cars / Colonel / Newbern / Schofield); the shuffled copies and No. 2 give nonsense (Burnside / Columbus / Atlanta / Memphis). Step 0 under the shuffled copy is a miss here only by 0.034 (a .483 vs the script's 0.5 floor), which is noise: the true-book hit is a non-test on this ledger. The sense fits the railroad-stock strand of Schofield's March 1865 correspondence in OR I/47 pt 2 (the window search lists a Schofield letter 'We have not even rolling-stock to commence work with', a different text); this telegram's own wording is not in that volume. 'Colonel' is the key row for 'pandora', 'wright' is plain (M); the middle date line 'February' is ledger header residue. Holder CISOSEARCHALL 'Wright commence work flat plank': own page only. Not located in print (exact-phrase grep of 183 volumes incl. OR I/46-47 pts 1-3, window search of OR I/46-47, be-api whole-collection quoted-clause query: 0 relevant hits).
+
+### E568 | Page 379 | 5923 | mssEC 25 (obj 5952, pointer 5923), 5 Mar 1865 Ft Monroe, Sheldon to Maj. Thomas T. Eckert, Superintendent, &c., Washington: [General Schofield] arrived here this morning; [he] directs that a line be built at once from here [Wilmington] to Fort Fisher and that it is [necessary] to have a double line from here to [Goldsboro]; also a double line from Morehead City to [Goldsboro]; wants 2 construction parties, 100 miles more material, 20 [evacuate?] , 20 operators, 8 construction men, 1 good foreman, 6 diggers, 8 shovels, 4 vices and straps, 6 axes, 4 [loring]'s [probably hatchets], 4 pliers and climbers; has explained to the General the difficulty of getting operators but assured him that you will do all in your power to supply (FM65-F; row 5923/1; long, 116 tokens, the best-controlled row of the set)
+Ft Monroe Mar. 5 -1865
+Maj. Eckert , Washington
+Hamlet February harrow pledge to Tappan Thomas Tea Eckert
+Superintendent &c growl zebra arrived here this morning unity
+King directs that a line be built at once
+from here to saco Fisher and that it is
+tarquin to have a double line from here to
+Camargo he also wishes me to start at same
+time a double line from More head City to
+Census this will necessitate peach Construct shun parties pekin
+plunge wine spoons more material harsh relays harrow operators
+platina Construction spit plug good foreman plague diggers paddle
+shovels penny vices and straps pledge Axes pension hatchets
+penny plyers and Climbers zebra I have explained tooth
+Shelby the difficulty of getting operators but assured him
+you will do all inure power to supply ditto
+unity These spit and supplies should be sent to
+fortune I will send instructions to that place by
+which they canby guided unity Please hurry the Operators
+and instruments along Very respect fully Yours R. OBrien
+Geo D. Sheldon
+note: FM65-F (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (March 1865 rows read No. 1 in its ten-row test; here also checked against No. 2 and three meaning-shuffled No. 1 copies, fm65f_controls.txt). Step 0 (fm65f_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.686 (70/102) vs (b) p95 0.167, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.680 vs 0.165, HIT; (c) key-dependent words: evacuate fort four general goldsboro ion loring men mile necessary newbern schofield six twenty two volunteer wilmington. Telegraph-construction request for the Wilmington-to-Goldsboro and Morehead City-to-Goldsboro lines; the numeral columns (2 parties, 100 miles, 20 operators, 8 men, 6 diggers, 8 shovels, 4 vices, 6 axes, 4 pliers) read in order from the key's number rows (M for the unread items 'evacuate' / 'loring'). 'Schofield' decodes through 'Maj Genl J. M. Schofield' (key row for 'King') and Goldsboro for 'Camargo' / 'Census'; the same two values are in E567. Matched control: the shuffled copies give Galveston / Bridge / Cincinnati / Mobile and no sense, No. 2 gives Marmaduke / Decherd / Wounded. No. 9 gives Flotilla / Maryland / Transports / Cavalry (not a clause). Related print, not this telegram: OR I/47 pt 2 carries Schofield's March 1865 correspondence on the Wilmington and Goldsboro roads (context only, not read as a match). Holder CISOSEARCHALL 'foreman diggers shovels vices plyers Climbers': own page only. Not located in print (exact-phrase grep of 183 volumes incl. OR I/46-47 pts 1-3, window search of OR I/46-47, be-api whole-collection quoted-clause query: 0 relevant hits).
+
+### E569 | Page 380 | 5924 | mssEC 25 (obj 5952, pointer 5924), 6 Mar 1865 Ft Monroe, Sheldon to Maj. Eckert, Washington: 'Please answer regarding moving office. A very essential objection is that we may be required to move for the accommodation of any [one] ... if the precedent is once established. The whole matter is believed to be at the instigation of Mrs. [Ord] who wants the room for some purpose of her own'; signed as below (FM65-F; row 5924/0; WEAK: the page is mostly plain words)
+Ft. Monroe Mar. 6 / 65
+Maj. Eckert , Washington
+Please answer regarding moving office unity a very
+essential objection is that we may be required
+to move forth accommodation of any polking off
+I sir if the precedent is once established
+zebra The whole matter is believed toby orbit
+instigation of Mrs Mentor who wants the room
+for some purpose of her own zebra This
+is Corn fed in Shall youth as below
+Geo. D. Sheldon
+note: FM65-F (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (March 1865 rows read No. 1 in its ten-row test; here also checked against No. 2 and three meaning-shuffled No. 1 copies, fm65f_controls.txt). Step 0 (fm65f_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.886 (31/35) vs (b) p95 0.314, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.912 vs 0.324, HIT; (c) key-dependent words: general ord volunteer. WEAK. Almost all of this telegram is plain on the page; the key supplies the header ('Volunteer' for Washington's line is a misfire) and two values: 'orbit' = 'At the' and 'Mentor' = Maj Gen E. O. C. Ord (so 'Mrs. Ord', whose husband commanded the Army of the James; M, the plain-name reading 'Mrs. Mentor' is also possible). Filed under the Wave 2 ruling (two code values, sense supports them) and flagged: a verifier may rule it 'plain with no code word' and withdraw it. The shuffled copies give different names (control passes weakly: Ord is the only value that changes). Not located in print; no holder clear copy (CISOSEARCHALL 'moving office accommodation precedent instigation': own page only). Not located in print (exact-phrase grep of 183 volumes incl. OR I/46-47 pts 1-3, window search of OR I/46-47, be-api whole-collection quoted-clause query: 0 relevant hits).
+
+### E571 | Page 385 | 5929 | mssEC 25 (obj 5952, pointer 5929), 13 Mar 1865 Ft Monroe, sent 6.30 A.M., Sheldon to S. H. Beckwith, City Point, for [Brig. Gen.] Rawlins, [Chief of Staff]: '[Captain] Glisson says he will send [a gunboat] as desired at once. Convoy is now ready. I leave in a few moments with [convoy] for [Colonel] Roberts [Colonel] Babcock' (FM65-F; row 5929/1)
+Ft Monroe Mar. 13 / 65
+S. H. Beckwith , City Point
+Cornelia for palsy Rawlins Berry unity pilgrim Glisson says
+he will send Shannon as desired at once unity
+Convoy is now ready zebra I leave in a
+few moments with pilot for paradise Roberts pandora Babcock
+Geo. D. Sheldon
+note: FM65-F (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (March 1865 rows read No. 1 in its ten-row test; here also checked against No. 2 and three meaning-shuffled No. 1 copies, fm65f_controls.txt). Step 0 (fm65f_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.679 (19/28) vs (b) p95 0.286, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.633 vs 0.267, HIT; (c) key-dependent words: brigadier captain capture chief colonel general gunboat staff. No. 1 reads a connected clause (Brigadier General, Chief of Staff, Captain, gunboat, Colonel x2; 'Capture (-ed, -ing)' for the fifth value is a misfire read as 'with [the convoy]', M). 'Glisson' is plain on the page ('Captain Glisson' occurs in OR I/46 pt 2, context not read; not this telegram). Roberts and Babcock are read as City Point staff officers (M). Shuffled copies give no sense. Holder CISOSEARCHALL 'Glisson Convoy pilot Roberts Babcock': own page only. Not located in print (exact-phrase grep of 183 volumes incl. OR I/46-47 pts 1-3, window search of OR I/46-47, be-api whole-collection quoted-clause query: 0 relevant hits).
+
+### E572 | Page 385 | 5929 | mssEC 25 (obj 5952, pointer 5929), 14 Mar 1865 Ft Monroe, Sheldon to Maj. Eckert, Washington, [received/entered] 14 [March] ([Baltimore] as a place word, M): 'The steamship Champion arrived here from Wilmington, North Carolina this morning and brings the intelligence that [Maj. Gen. Sherman] and his [forces] had reached Fayetteville, North Carolina, intact. The [scouts] of [Sherman's army] reached Wilmington ditto on the 11th instant, but the Champion sailing the same day no particulars could be obtained' (FM65-F; row 5929/2)
+Ft Monroe Mar 14 - 1865
+Maj Eckert , Washington -
+Animal female for See See Full turn American office Baptism
+unity The weasel Ship Champion arrived here from Hamlet abacus
+this morning and brings the intelligence that Kitchen and his
+saints had reached Fay it ville abacus intact zebra The
+wolfs of Kennebecs oyster reached Hannibal ditto on the fence
+instant but the Champion sailing the same day no particulars
+could be obtained youth no yoke of course not sent -
+Geo. D. Sheldon
+note: FM65-F (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (March 1865 rows read No. 1 in its ten-row test; here also checked against No. 2 and three meaning-shuffled No. 1 copies, fm65f_controls.txt). Step 0 (fm65f_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.583 (28/48) vs (b) p95 0.208, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.596 vs 0.213, HIT; (c) key-dependent words: army baltimore carolina eleven force general north scout sherman steam wilmington. Plain on the page: 'Ship Champion arrived here from', 'had reached Fay it ville', 'on the fence instant'; key-dependent: Steam, Wilmington, North Carolina, Sherman x2, Force, Scout, Army, the day '11' and the date line. The content fits the printed record: Sherman reached Fayetteville on 11 Mar 1865 and his scouts reached Wilmington the same day (OR I/47 pt 2 prints Terry's and Sherman's messages of 12-16 Mar); no print of this telegram located. Shuffled copies give no sense. Holder CISOSEARCHALL 'Champion Fayetteville Kennebec Wilmington': 0 hits. Not located in print (exact-phrase grep of 183 volumes incl. OR I/46-47 pts 1-3, window search of OR I/46-47, be-api whole-collection quoted-clause query: 0 relevant hits).
+
+### E573 | Page 386 | 5930 | mssEC 25 (obj 5952, pointer 5930), 14 Mar 1865 Ft Monroe, Sheldon to Maj. Eckert, Washington, for [Secretary of the Navy at Washington] (M): '[Maj. Gen. Hurlbut] in from [Charleston] and will go up the James River immediately. No news of the Montauk. Our [troops] in possession of [Kinston, North Carolina]'; [Captain] Glisson, Senior Officer (FM65-F; row 5930/1)
+Ft Monroe Mar 14 / 65
+Maj. Eckert , Washington -
+Martha for Burton growl zodiac money tour Lehigh in
+from Brandy and will go up the Bergen windpipe
+immed'y zebra no news torch Montauk unity our whisky
+in possession of Cherub abacus Glisten pilgrim Senior Officer
+Geo D. Sheldon
+note: FM65-F (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (March 1865 rows read No. 1 in its ten-row test; here also checked against No. 2 and three meaning-shuffled No. 1 copies, fm65f_controls.txt). Step 0 (fm65f_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.533 (16/30) vs (b) p95 0.267, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.536 vs 0.286, HIT; (c) key-dependent words: captain carolina charleston general hurlbut james kingston navy north river secretary troops. Sherman's 16 Mar 1865 letter to Terry (OR I/47 pt 2, found by the print check) says 'General Schofield is in possession of Kinston', which fits the fact in this telegram but is a different text. 'Hurlbut' is the key row for the plain-looking 'Lehigh' (Maj Gen S. A. Hurlbut; the identification is M and may be a misfire of a plain name; flagged). 'Glisson ... Senior Officer' closes the telegram as the signing naval officer (M). Shuffled copies give no sense. Not located in print (exact-phrase grep of 183 volumes incl. OR I/46-47 pts 1-3, window search of OR I/46-47, be-api whole-collection quoted-clause query: 0 relevant hits).
+
+### E574 | Page 387 | 5931 | mssEC 25 (obj 5952, pointer 5931), 15 Mar 1865 Washington, T. T. Eckert to Geo. D. Sheldon, Ft Monroe (received entry): '[Secretary of War] [left] here 1 P.M. for [City Point]; will reach F[ortress Monroe] about 11 P.M. tonight; we will send everything for him up to that time to F[ortress Monroe]. I wish you or Dealy to go on board the boat on arrival and deliver anything you may receive in person. Name of boat is [River Queen]'; T. T. Eckert (FM65-F; row 5931/0; the one BOOK-FM65 No. 1 / No. 2 conflict row, decoded under both)
+1.30 P. M. Washington , Mar. 15 / 65
+Geo D. Sheldon . Ft Monroe
+Brutus stomach here Harriet for black will
+reach F about sarah tonight zebra we
+will send every thing for him up
+to that time to F zodiac I
+wish you or Dealy to go on
+board the boat honor arrival and deliver
+anything you may receive in person stop
+name of boat is windsor queen stop
+T. T. Eckert
+note: FM65-F (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (March 1865 rows read No. 1 in its ten-row test; here also checked against No. 2 and three meaning-shuffled No. 1 copies, fm65f_controls.txt). Step 0 (fm65f_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.765 (26/34) vs (b) p95 0.265, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.812 vs 0.281, HIT; (c) key-dependent words: city danger left point river secretary war. Decoded under No. 1 AND No. 2 as the brief requires: No. 1 gives Secretary of War / left / 1 PM / City Point / 11 PM / River / Danger (the last two read 'River Queen' with 'queen' plain; the Danger value is a misfire for the plain 'windsor'); No. 2 gives Delaware / Necessary / 1.30 PM / Cairo / 11.30 PM / 1000 / Sunday / Subsistence / Division, which is nonsense, and No. 9 gives Transportation / Sherman / Movement / Flank. So No. 1; the conflict is resolved in No. 1's favour on the clause, not on the vocabulary share. The three shuffled No. 1 copies give no sense. The mention of 'Dealy' (the Fort Monroe operator) is plain. The boat's name is plain 'windsor' + 'queen' on the page; I do not read it as 'River Queen' (M). Content: an arrangement between Eckert and Sheldon to hand a traveller's messages to him on a boat at Fort Monroe; who the traveller is ('Secretary of War' is the key value for a header word) is M. Holder CISOSEARCHALL 'Windsor Dealy boat arrival deliver': own page only. Not located in print (exact-phrase grep of 183 volumes incl. OR I/46-47 pts 1-3, window search of OR I/46-47, be-api whole-collection quoted-clause query: 0 relevant hits).
+
+### E575 | Page 387 | 5931 | mssEC 25 (obj 5952, pointer 5931), 15 Mar 1865 Ft Monroe, sent 5 P.M., Beckwith to Sheldon [at Ft Monroe], for [General] George H. Gordon, Norfolk: 'How much water can your [gunboats] draw to [Suffolk]? Is there no [point] on the Banks of the [Nansemond?] where [cavalry] could land, covered if [necessary] by [gunboats]; ... [500] [cavalry] ... carry [pontoons] to cross ... you can come up tonight if [Impregnable]'s [cavalry] comes to Norfolk, as they are expected to do; leave word where they had better land'; signed [Maj. Gen. Ord]; send answer to Mr. Emerick (FM65-F; row 5931/1)
+City Point , Mar. 15 - 1865
+Geo D. Sheldon . Ft Monroe ,
+Lucy Ghost for Shelter George H. Gordons famish
+how much water can your sharons teacup to
+Genoa pedlar andys there no vernon on the
+Banks torch nancy moaned where panama could land
+pedlar covered if tarquin by shannons pekin woody
+party sacy plaster publish pacific hefty carry village
+to plum to the not away sugar you
+can Come up to night if summers panama
+comes to farmer wheaton as they are expected
+to do leave word where they had better
+land yoke Meriden send answer to Mister Emerick
+S. H. Beckwith
+note: FM65-F (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (March 1865 rows read No. 1 in its ten-row test; here also checked against No. 2 and three meaning-shuffled No. 1 copies, fm65f_controls.txt). Step 0 (fm65f_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.686 (35/51) vs (b) p95 0.255, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.593 vs 0.220, HIT; (c) key-dependent words: cavalry cross general gunboat impregnable necessary norfolk pontoon suffolk. A request to Gordon, signed [Ord] (M) about landing cavalry from gunboats near Suffolk for the March 1865 Ord expedition, in the same strand as the cavalry expedition from Suffolk named in the window search of OR I/46 pt 1 (context only, a different text; this message is dated 15 Mar by the page). 'Impregnable' is a misfire (M); the middle of the telegram ('woody party sacy ... hefty ... not away') is unread (M). Shuffled copies give no sense. No. 2 gives no sense. Holder CISOSEARCHALL 'Gordon Emerick gunboats cavalry land Norfolk': 0 hits. Not located in print (exact-phrase grep of 183 volumes incl. OR I/46-47 pts 1-3, window search of OR I/46-47, be-api whole-collection quoted-clause query: 0 relevant hits).
+
+### E576 | Page 389 | 5933 | mssEC 25 (obj 5952, pointer 5933), 15 Mar 1865 Ft Monroe, J. H. Emerick, H'dqrs A. J., to Geo. D. Sheldon: [Gordon] [at Norfolk] to [Ord]: 'I have just seen the guide Boyle; he will be here ready to accompany any [expedition]. There is no place that the Blackwater can be crossed unless near the [Army of the Potomac line] without [bridging]. Broad [Ford] is the best place. It is 22 miles from Suffolk. The [river] there is 100 and 25 yards wide. The Not to way has several [bridges] standing'; signed George H. Gordon, [Brigadier General] (FM65-F; row 5933/0)
+Ft Monroe Mar 15 / 65
+J. H. Emerick H'dqrs A. J.
+Famish to Meriden zebra I have just seen the guide
+Boyle unity he wilby here ready to accompany any rape
+zodiac There is no place that the Black water canby
+pocketed unless near the oyster torch attica without villager zebra
+Broad rusty is the best place zodiac It is harsh
+plank spoons from Genoa zebra The windsor there is plug
+prolong and harrow plaster yards wide zodiac The Not to
+way has several patents standing yoke George H. Gordon palate
+Geo D. Sheldon
+note: FM65-F (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (March 1865 rows read No. 1 in its ten-row test; here also checked against No. 2 and three meaning-shuffled No. 1 copies, fm65f_controls.txt). Step 0 (fm65f_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.533 (24/45) vs (b) p95 0.200, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.511 vs 0.191, HIT; (c) key-dependent words: army bridge city cross expedition ford general hundred major mile norfolk ord point potomac river suffolk twenty two. A reconnaissance report on crossing the Blackwater near Suffolk, with 'Boyle' the guide, Broad Ford (22 miles from Suffolk) and the Nottoway River 'several bridges standing', signed Gordon (the signer's name is plain on the page). Same strand as E575 (the Gordon-Ord Suffolk cavalry expedition of March 1865). 'City Point water canby' reads 'the [Blackwater] canby': the decoder prints [City Point] for 'black' (M). 'Not to way' is the plain Nottoway. Shuffled copies give no sense. Holder CISOSEARCHALL 'guide Boyle Blackwater Broad Ford Gordon': 0 hits. Not located in print (exact-phrase grep of 183 volumes incl. OR I/46-47 pts 1-3, window search of OR I/46-47, be-api whole-collection quoted-clause query: 0 relevant hits).
+
+### E577 | Page 391 | 5933 | mssEC 25 (obj 5952, pointer 5933), 18 Mar 1865 Ft Monroe, Sheldon [for] Gordon, Norfolk, from Emerick [Hd. qrs. Army of the James] (received entry): '[Secretary of War], when informed of the order [of Gen.] Abbot to issue [it], owing to matters still pending prefers that you continue in command of the district of [East] [Virginia]; you will therefore not be relieved by [Maj. Gen. Hartsuff]'; Good Day, Emerick (FM65-F; row 5933/2)
+Hd Qrs A. J. Mar. 18 / 65
+Geo. D. Sheldon Ft Monroe -
+Francis for Gordon famish zebra Brutus
+when informed torch order abbot to
+issue owing to matters still pending
+prefers that you continue in polka
+torch district of ripley alba you
+will there four not be relieved
+by malta yoke mereden Good Day
+Emerick .
+note: FM65-F (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (March 1865 rows read No. 1 in its ten-row test; here also checked against No. 2 and three meaning-shuffled No. 1 copies, fm65f_controls.txt). Step 0 (fm65f_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.607 (17/28) vs (b) p95 0.250, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.567 vs 0.233, HIT; (c) key-dependent words: command east general hartsuff major minnesota norfolk secretary virginia war. The Hartsuff/Gordon/Abbot command question for the Norfolk/Eastern Virginia district: Hartsuff took the District of the Nottoway on 25-30 May 1865 (index of OR I/46 pt 3 'Hartsuff, George L., assumes command of District of the Nottoway'), which is later; this telegram is the March exchange that kept Gordon in command. 'Abbot' is a plain name (not identified here); the 'Minnesota' value is a misfire (M). Shuffled copies give no sense. Holder CISOSEARCHALL 'Hartsuff Gordon district relieved continue': 0 hits. Not located in print (exact-phrase grep of 183 volumes incl. OR I/46-47 pts 1-3, window search of OR I/46-47, be-api whole-collection quoted-clause query: 0 relevant hits).
