@@ -1,0 +1,3 @@
+statistic	real	shuffle_mean	shuffle_p95	n_4grams	above_p95	corpus_letters
+mean_log10_4gram	-1.5302	-1.5117	-1.4149	20	False	96409
+power_windows(28 letters, rows1-8)	0.182			11	False	

@@ -3389,3 +3389,28 @@ Read so far: l.44535 151 of 151 group values H (period key sheet); 143 of 151 (9
 - [ ] image-check: R4891's right half (names, uncypher) not fetched
 - [x] retry: none needed
 Verdict: keep going: 8 internal gaps; cheapest next: Meadowe five-conflict check in l.75081's gloss or R4891's uncypher half, ~$0.5
+
+## THUR-83274 (LANE FAMILY-A2s, account 2, worker Sonnet 5.5, 10 Oct 2026 18:02-18:2x UTC by date -u)
+Brief: .claude/briefs/runs/2026-10-10-ytbiz-family-1709-jobs.md "### THUR-83274". Disk only, no host request. Question: what do the last two unglossed numeral rows of l.83274 (p.698, row 9 after "the", row 10) read under the period key sheet BL Add MS 4166 f.117?
+**Prior work.** `prior_work.py thurloe-printed --item-spec 'shelfmark=Birch 1742 vol 6 l.83274;sender=Blank Marshall;recipient=Thurloe' --step-type decode --fetch --reading bm/reading_l83274_tail_words.txt --network`: exit 4, owed 12 own-work LEADs (all target-level live claims on the slug; none names l.83274's tail: THUR-BM2 aligned the glossed rows only, FIX-THURBM2 and the sheet read touched l.44535). Check 1 by hand: ROOM/NOTES/HYPOTHESES/WORK-QUEUE name l.83274 only for the aligned gloss rows. G3 (check 6): 2 decoded phrases, no hit in Birch vols 1, 2, 3, 5, 7 (IA full text, no control hit); the two network sources were not searched (IA global HTTP 502, Google Books HTTP 429; no retry loop). Leaf look.tsv: 1 crop owed (not on disk).
+**Numerals.** bm/passes/l83274_B1.tsv and _B2.tsv hold identical numerals for both rows (29 groups, asserted in the script); no eye read of the crop was needed or done.
+**Decode** (`bm/decode_83274_tail.py --check` exit 0; reading_l83274_tail.tsv/.txt, control_l83274_tail.tsv): row 9 tail 94 58 55 30 31 3 38 72 59 26 74 64 4 95, row 10 52 [with] 7 60 53 18 23 96 69 74 [and other] 80 70 39 13 41 45 [I will trouble you no] reads, letter by letter under the sheet:
+`the | y o n g h a i r o f s p a y n | with | b o n e f y r s | and other | t r i c k l | I will trouble you no`, i.e. "the young haire of Spayn with bonefyres and other trickl[s]". Grades (rule 4): H 28 (sheet states the value and the seven-letter printed-gloss key agrees), C 0, S 0, M 1 (45 = l where "tricks" wants s; encipherment or printing slip, not a key gap: the sheet gives 45 = L and 73-76 = S; intended letter in brackets only), unread 0. Word division is mine and is I, not a grade.
+**Control (PREREG-THUR83274.md pushed f0abca3f1 before the score; the decode had been looked up by hand before the PREREG and the PREREG says so).** Mean log10 4-gram, 20 four-grams, corpus tools/data/en16_repo (96,409 letters, 1650s Thurloe readings; the vol-6 OCR corpus of decode_44535.py is not on disk): real -1.530, shuffled-sheet mean -1.512, p95 -1.415, 200 draws: **FAIL** the gate. Power check (every 14th 28-letter window of the glossed rows 1-8 under the sheet, each against its own 200 shuffles): 0.182 of 11 windows exceed their own p95 against a gate of 0.8. The control cannot discriminate at 28 letters on this corpus, so the FAIL is a non-test (no word boundaries in the stream, 20 four-grams), not a negative; the H grades rest on the sheet and the printed-gloss key, not on this statistic.
+**Where it was not found.** No eye check of the crop for the tail (numerals taken from two agreeing blind passes); no vol-6 OCR corpus control; IA-global and Google Books phrase search of "of spayn with bonefyres and" not run (502/429); no printed gloss for these two rows was sought beyond Birch's own page (Tomokiyo's page not re-read here). Reading is a clause of 11 words, below the authentication distance for a verifier flag; no verifier flag, no novelty class assigned.
+
+## Remaining gaps (THUR-83274, 10 Oct 2026; replaces nothing above for other letters)
+Read so far: l.83274 tail 29 of 29 groups decoded (H 28, M 1; 100% by token, a two-row residue).
+- Phrase search of the tail's two phrases at IA-global and Google Books - blocker: not-attempted; IA global answered 502 and Google Books 429 on 10 Oct 2026 and the single retry was not spent; next: one retry after a pause by the next IA-licensed worker, ~$0.1
+- Eye check of p.698 rows 9-10 crop for 45 (l vs s) - blocker: not-attempted; the tail's numerals came from two agreeing passes and the crop was not looked at; next: one crop look, bm/crops/l83274_p698_L01.jpg, ~$0.2
+- l.3370 word-code pairing, Jephson/Meadowe pools, Downing-Lockhart and Blake control-miss letters (THUR-BM2's list) - blocker: not-attempted; unchanged by this job; next: as THUR-BM2 lists
+
+## Escalation (THUR-83274, 10 Oct 2026)
+- [x] siblings: the seven glossed Blank-Marshall letters aligned (THUR-BM2)
+- [x] clear-pages: the tail's own clear words ("the", "with", "and other", "I will trouble you no") used as separators
+- [x] known-keys: sheet f.117 applied, agrees with the printed-gloss key at every tail value
+- [x] print: Birch's page is the source; G3 phrase search in vols 1,2,3,5,7 no hit
+- [x] key-rebuild: not needed
+- [ ] image-check: 45 on the p.698 crop
+- [ ] retry: IA-global / Google Books phrase search after the 502/429
+Verdict: keep going: 3 internal gaps; cheapest next: one crop look at 45, ~$0.2
