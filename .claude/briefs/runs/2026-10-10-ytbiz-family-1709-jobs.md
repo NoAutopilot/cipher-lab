@@ -211,3 +211,46 @@ skip them). One strip per unit (`tools/iiif_lines.py --image`), one Sonnet call 
 correspondent. Output `b146/census_v146.tsv` and NOTES "## THUR-V146": any unglossed cipher passage, its correspondent, and whether a glossed
 sibling pool of the same correspondent exists in Birch (the THUR-BM route: rebuild a key from glossed siblings, then read the unglossed one).
 Do not transcribe or decode. Stop at 80% of cap. Report what was found and where it was not found; do not classify novelty.
+
+## Wave 5 results (costs by get_session)
+- THUR-DUTCH 2.16 / 3 (Sonnet): Brieven van Johan de Witt dl 1 (Japikse) p.72 prints De Witt's 1653 key (1-66 homophonic alphabet; OCR column
+  order scrambled); p.92 n.2 says it serves the Beverning/Nieuwpoort letters (Thurloe I pp.304, 308-309, 336/339 "geheel te ontcijferen");
+  Dutch clear texts in print for the 24 Jul De Witt letter (Van Sypesteyn; edition pp.99-101 extracts; Birch l.32198-32400, p.351, 397
+  numerals) and the 18 Jul envoys' letter (Nijhoff Bijdragen X p.291; Birch l.31246, p.339, 196 numerals). Boreel letter (Birch p.435,
+  l.38695, 128 numerals; closed-negative at both solver repositories) symbols 6-33 inside the key's range. dutch1653/pairs_census.tsv.
+- THUR-V146 1.84 / 2.5 (Sonnet): 12 imaged units with cipher, 7 glossed, 4 partial, 1 unglossed (vol 6 l.19092 Bamfylde p.160, ~24 numerals;
+  glossed Bamfylde siblings l.68904 p.576 and vol 4 pp.194-195, 231-232). Vol 1 non-Dutch hits not read (djvu 500).
+
+## Wave 6 (19:1x UTC 10 Oct)
+Hosts this wave: resources.huygens.knaw.nl ("huygens") and archive.org ("IA"): DUTCH-KEY only (take/release; huygens <= 10, IA <= 20).
+
+### DUTCH-KEY (Opus, cap 7, box 150 min): thurloe-printed/dutch1653 -- the printed De Witt 1653 key read from the page image, known-answer test on Birch vol 1 pp.351 and 339, then the Boreel letter p.435 under it with a matched control
+Read: NOTES "## THUR-DUTCH" and its Remaining gaps, `dutch1653/pairs_census.tsv`, `dutch1653/edition/VAN_DEWITT_01_071-073, 091-101`,
+`dutch1653/edition_evidence.tsv`, `b146/hits.tsv` vol 1 rows, the "## THUR-BM" PREREG/gate pattern (bm/PREREG-THURBM.md, bm/bm_gate.py),
+the docstrings of `tools/decode_key.py` (--try, decode.json) and `tools/judge_plaintext.py` (is there a 17th-c. Dutch corpus in tools/data? say).
+Credit: the key is printed by Japikse (after Fruin) -- grade H for values it states (rule 4); Bourdeau (cyphersolver targets/thurloe) and
+Aymeloglu (unsolved-ciphers vande-perre-1653) worked the Boreel letter and logged it stuck/not read by their alphabets; cite both, copy nothing.
+Step 0: `python3 tools/prior_work.py thurloe-printed --item-spec 'shelfmark=Birch 1742 vol 1 p.435;sender=Beverning;recipient=Boreel;date=1653-09-27' --step-type decode --fetch`
+(adjust the date to what the leaf shows), and the same for p.351 (`--step-type key`), paste both with exit codes.
+Step 1 (key, huygens <= 10): fetch the edition page image of p.72 (and p.71/73 if the table spans) via pages.json (image_url), crop the table,
+read it yourself (one Sonnet pass + your own eye read; printed type) -> `dutch1653/key_dewitt_1653.tsv` (code, letter, source page) with a
+`--check` script; note p.92/p.107's statements (codes above 100 for persons/countries; Beverning's extra numerals).
+Step 2 (IA <= 20): Birch vol 1 `collectionofstat01thur` leaves for p.351, p.339, p.308-309 and p.435 (page-locate by the printed page number;
+the vol 1 djvu text answered 500 to THUR-V146, so use the page image header). Crop step pasted (`tools/iiif_lines.py --image ...`); the numerals of
+each cipher passage read by TWO passes (pass A: one Sonnet call per page on line crops; pass B: a second Sonnet call or your own eye read),
+reconciled by eye (one unit) -> `dutch1653/ct_p351.tsv`, `ct_p339.tsv`, `ct_p308.tsv`, `ct_p435.tsv` (line, position, token).
+Step 3 (known-answer gate, PREREG first): write `dutch1653/PREREG-DUTCHKEY.md` and push it in its own commit (check `git log origin/main -1 -- <file>`)
+BEFORE decoding anything: the gate is that the printed key decodes p.351 (whose Dutch clear text is printed, edition pp.99-101 extracts / Van
+Sypesteyn) to that Dutch text at >= 0.80 letter agreement on the aligned spans, against a shuffled-key control that CAN differ (permute the key's
+letters over its codes, >= 200 draws, p95), with coverage (share of tokens < 67) reported; p.339 and p.308 scored by a Dutch letter 4-gram or
+the judge if a Dutch corpus exists (say which; else the shuffled-key control on 4-gram-free statistics such as word-list hits from the p.99-101
+Dutch extracts), as supporting folds. Then decode through a `--check` script (decode.json + `tools/decode_key.py`, or `dutch1653/decode_dutch.py`).
+Step 4 (only on gate PASS): decode p.435 (Boreel) with the same key, codes > 100 left as name codes (M), shuffled-key control on p.435 itself
+computed before reading the text, plus a matched control in the sense of rule 3 (a synthetic Dutch text of 128 tokens enciphered under this
+key family with the same code-group share: does the scoring separate it from shuffles at this N? report both numbers). Grades per rule 4 (H for
+key-stated values; M for misprints/unkeyed; counts). Then `prior_work.py ... --reading <file> --network` (G3) on any reading and paste it.
+A reading beating its control with a clause above the authentication distance: one ROOM flag "DUTCH-KEY reading p.<n> for a first verifier".
+On gate FAIL: log the row in HYPOTHESES.md, do not decode p.435, say what failed.
+Units: key read ~0.8; 4 pages x 2 passes ~0.6 each = 4.8 (Sonnet passes are cheaper; your own eye read counts as a pass) + 4 reconciles folded in;
+gate/decode/control ~1; Opus floor 1.5. If at 5.5 spent before p.435 is transcribed, stop and list it with its cost. NOTES "## DUTCH-KEY",
+Remaining gaps / Escalation / Verdict, gaps_check.py. Report what was found and where it was not found; do not classify novelty.
