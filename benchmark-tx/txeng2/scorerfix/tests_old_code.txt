@@ -1,0 +1,10 @@
+FAIL test_fix1_missing_line_is_deleted AssertionError {'scored': 1, 'wrong': 0, 'deleted': 0, 'inserted': 0, 'excluded': 0, 'read': 1,
+FAIL test_fix1_unknown_line_id_fails AssertionError 
+FAIL test_fix2_paired_uses_rate_population AssertionError it1 [eval] err_true 0.000 (0/2) 95% 0.000-0.658 | wrong 0 deleted 0 inserted 0 |
+FAIL test_fix3_insertion_repair_counts KeyError 'lines_improved'
+FAIL test_fix4_abstention_is_wrong_not_flagged KeyError 'abstained'
+FAIL test_fix5_standard_ser_and_ranking_note TypeError score_item() got an unexpected keyword argument 'G'
+FAIL test_fix6_strict_visual_identity TypeError score_item() got an unexpected keyword argument 'strict'
+FAIL test_fix7_no_wilson_with_insertions_and_bootstrap AssertionError it1 [eval] err_true 2.000 (4/2) 95% 0.342-1.000 | wrong 0 deleted 0 inserted 4 |
+FAIL test_fix8_macro_mean AssertionError ia [eval] err_true 0.500 (1/2) 95% 0.095-0.905 | wrong 1 deleted 0 inserted 0 | 
+FAIL test_fix9_legacy_reproduces_files_on_record SystemExit 2

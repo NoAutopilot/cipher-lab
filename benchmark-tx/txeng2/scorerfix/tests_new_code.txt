@@ -1,0 +1,16 @@
+PASS test_scoring
+PASS test_label_map
+PASS test_wilson
+PASS test_repo_bench_parses
+PASS test_exclude_flagged
+PASS test_two_rate
+PASS test_fix1_missing_line_is_deleted
+PASS test_fix1_unknown_line_id_fails
+PASS test_fix2_paired_uses_rate_population
+PASS test_fix3_insertion_repair_counts
+PASS test_fix4_abstention_is_wrong_not_flagged
+PASS test_fix5_standard_ser_and_ranking_note
+PASS test_fix6_strict_visual_identity
+PASS test_fix7_no_wilson_with_insertions_and_bootstrap
+PASS test_fix8_macro_mean
+PASS test_fix9_legacy_reproduces_files_on_record
