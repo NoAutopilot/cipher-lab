@@ -178,3 +178,5 @@ Part 2 (no network): apply s.5 of AUDIT "## AUDIT (FV-FM65a)" and of "## AUDIT 2
 scripts' entry-note mechanism (FIX-FM20 method: never hand-edit reading*.md), and FV-FM65b's s.5 **only after AUD2-LEDGER13-2 has posted its done line** (it is
 live on E502 E507 E512 E520 E532; if not done by your 60th minute, leave FV-FM65b's s.5 for the next incarnation and say so). Do not file 5871/2 (in print).
 decode x3 --write/--check exit 0; depth_check; file_shrink_guard; gaps_check. status.json/SO only where an audit already set them.
+
+(10:47 UTC 10 Oct by date -u: FIX-FM65 spawned with source_url, session_01L27UXyKY2kWMcGceyK5nH8.)
