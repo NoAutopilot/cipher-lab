@@ -137,3 +137,21 @@ Held for wave 4: FIX-L17c (Sonnet, ~1.5, no network) on s.5 of FV-L17a, FV-L17b,
 not-filed recommendation for E583 E586 (RULING iii) -- for entries not under a live AUD2 row.
 
 (17:49 UTC 10 Oct by date -u: wave 3 spawned with source_url: FV-L17b session_012BEuPWoDVqNEjuFY4GqGLT, FV-L17c session_011mhE9fqXzv5spWgwkRTyLK.)
+
+---
+
+# Wave 4 (written 10 Oct 2026 18:2x UTC by date -u; lane ~36.1 workers + ~4 orchestrator of 60; last planned wave)
+By get_session: FV-L17b 9.58 (20% over its $8 cap; E594 E591 N3 D3, AUD2-LEDGER17-2; E589 E590 E592 E593 N3 D1), FV-L17c 6.19 (E622 N3 D3 with the vessel list
+N2, E623 N3 D2, AUD2-LEDGER17-3; E624 N1 holder clear copy 10308).
+
+**Lane ruling on the D1 and N1 filings (consistent with LEDGER-15/-16 practice: E443-E448 D1 and the FM N1 rows stay filed with header notes):** E582 E587
+(print) and E624 (holder clear copy 10308) stay filed with N1 header notes naming the print / pointer; E583 E586 E589 E590 E592 E593 stay filed at D1 with a note
+"too short for a clause above the authentication distance (FV-L17a/b)". No entry is removed from ciphertext.txt.
+
+## FIX-L17c (Sonnet 5.5; cap $2, box 60 min, no network)
+Exactly "## FIX-L17a" (Wave 1; entry-note mechanism, never hand-edit reading*.md; extend fixl17b_apply.py or write an idempotent fixl17c_apply.py), applying
+s.5 (and s.6 where the section numbers it so) of AUDIT.md "## AUDIT (FV-L17a)", "## AUDIT (FV-L17b)", "## AUDIT (FV-L17c)" and the lane ruling above, to the
+entries NOT under a live AUD2 row: E582 E583 E586 E587 (FV-L17a), E589 E590 E592 E593 (FV-L17b; incl. E593 "can be issued / will be satisfactory", not Canby),
+E624 (FV-L17c). Do NOT touch E581 E585 (AUD2-LEDGER17-1), E591 E594 (-2), E622 E623 (-3): their s.5 goes to the FIX after the second audits (next incarnation)
+-- including E591 polking = commanding and E622 pioneer 256. Check each fix is not already applied. decode x3 --write/--check exit 0; status.json: no N3 row
+for E582 E587 E624 (N1); NOTES "## FIX-L17c (10 Oct 2026, account 1, for LANE LEDGER-17)"; depth_check; gaps_check; file_shrink_guard on every touched file.
