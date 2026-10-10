@@ -15,12 +15,12 @@ britishandforei06offigoog	Strangford	0
 britishandforei07offigoog	Strangford	0	
 britishandforei08offigoog	Strangford	0	
 britishandforei09offigoog	Strangford	0	
-britishandforei10offigoog	Strangford	ERR	unsearched: HTTP 502 on call and one retry
+britishandforei10offigoog	Strangford	1	hit (LIN-BFSP3 retry): 1823 Porte/Vicomte de Strangford remonstrance text (French); not 1808-1812 Linhares correspondence
 britishandforei11offigoog	Strangford	0	
 britishforeignst1001grea	Strangford	0	
 britishforeignst1011grea	Strangford	0	
 britishforeignst3218grea	Strangford	0	
-britishforeignst4018grea	Strangford	ERR	unsearched: HTTP 502 on call and one retry
+britishforeignst4018grea	Strangford	1	hit (LIN-BFSP3 retry): Odessa 1823 letter to Vicomte de Strangford; not 1808-1812 Linhares correspondence
 britishforeignst6618grea	Strangford	0	
 britishforeignst8518grea	Strangford	0	
 britishforeignst9318grea	Strangford	0	
@@ -28,38 +28,38 @@ britishforeignst9419grea	Strangford	0
 britishforeignst9819grea	Strangford	0	
 bub_gb_L9gMAQAAIAAJ	Strangford	0	
 bub_gb_Wd0MAQAAIAAJ	Strangford	0	
-bub_gb_XJ40AQAAMAAJ_2	Strangford	ERR	unsearched: HTTP 502 on call and one retry
+bub_gb_XJ40AQAAMAAJ_2	Strangford	0	LIN-BFSP3 retry 10 Oct 2026: answered HTTP 200, no hit
 bub_gb_YT4CAAAAYAAJ	Strangford	0	
-bub_gb_pyIgAAAAMAAJ	Strangford	ERR	unsearched: HTTP 502 on call and one retry
+bub_gb_pyIgAAAAMAAJ	Strangford	0	LIN-BFSP3 retry 10 Oct 2026: answered HTTP 200, no hit
 generalindextob00hertgoog	Strangford	1	hit: index entry: Note of Viscount Strangford to the Reis Effendi (Ottoman); not 1808-1812 Linhares correspondence
 british-and-foreign-state-papers-1963-1964	Couttinho	0	
 britishandforei00londgoog	Couttinho	0	
-britishandforei00offigoog	Couttinho	ERR	unsearched: HTTP 502 on call and one retry
+britishandforei00offigoog	Couttinho	0	LIN-BFSP3 retry 10 Oct 2026: answered HTTP 200, no hit
 britishandforei00ridggoog	Couttinho	0	
-britishandforei00sonsgoog	Couttinho	ERR	unsearched: HTTP 502 on call and one retry
+britishandforei00sonsgoog	Couttinho	0	LIN-BFSP3 retry 10 Oct 2026: answered HTTP 200, no hit
 britishandforei00unkngoog	Couttinho	0	
 britishandforei01offigoog	Couttinho	0	
 britishandforei02offigoog	Couttinho	0	
-britishandforei03offigoog	Couttinho	ERR	unsearched: HTTP 502 on call and one retry
+britishandforei03offigoog	Couttinho	0	LIN-BFSP3 retry 10 Oct 2026: answered HTTP 200, no hit
 britishandforei04offigoog	Couttinho	0	
 britishandforei06offigoog	Couttinho	0	
 britishandforei07offigoog	Couttinho	0	
-britishandforei08offigoog	Couttinho	ERR	unsearched: HTTP 502 on call and one retry
+britishandforei08offigoog	Couttinho	0	LIN-BFSP3 retry 10 Oct 2026: answered HTTP 200, no hit
 britishandforei09offigoog	Couttinho	0	
-britishandforei10offigoog	Couttinho	ERR	unsearched: HTTP 502 on call and one retry
+britishandforei10offigoog	Couttinho	0	LIN-BFSP3 retry 10 Oct 2026: answered HTTP 200, no hit
 britishandforei11offigoog	Couttinho	0	
 britishforeignst1001grea	Couttinho	0	
 britishforeignst1011grea	Couttinho	0	
-britishforeignst3218grea	Couttinho	ERR	unsearched: HTTP 502 on call and one retry
+britishforeignst3218grea	Couttinho	0	LIN-BFSP3 retry 10 Oct 2026: answered HTTP 200, no hit
 britishforeignst4018grea	Couttinho	0	
 britishforeignst6618grea	Couttinho	0	
-britishforeignst8518grea	Couttinho	ERR	unsearched: HTTP 502 on call and one retry
+britishforeignst8518grea	Couttinho	0	LIN-BFSP3 retry 10 Oct 2026: answered HTTP 200, no hit
 britishforeignst9318grea	Couttinho	0	
 britishforeignst9419grea	Couttinho	0	
 britishforeignst9819grea	Couttinho	0	
 bub_gb_L9gMAQAAIAAJ	Couttinho	0	
 bub_gb_Wd0MAQAAIAAJ	Couttinho	0	
-bub_gb_XJ40AQAAMAAJ_2	Couttinho	ERR	unsearched: HTTP 502 on call and one retry
-bub_gb_YT4CAAAAYAAJ	Couttinho	ERR	unsearched: HTTP 502 on call and one retry
+bub_gb_XJ40AQAAMAAJ_2	Couttinho	0	LIN-BFSP3 retry 10 Oct 2026: answered HTTP 200, no hit
+bub_gb_YT4CAAAAYAAJ	Couttinho	0	LIN-BFSP3 retry 10 Oct 2026: answered HTTP 200, no hit
 bub_gb_pyIgAAAAMAAJ	Couttinho	0	
 generalindextob00hertgoog	Couttinho	0	
