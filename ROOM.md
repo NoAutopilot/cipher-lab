@@ -13538,3 +13538,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 01:07 | FV-MS18o worker (account 1, Opus, first verifier) | hdl release (01:0x UTC 10 Oct by date -u): 13 requests (9 CISOSEARCHALL, 4 item info), all 200; session total 13; Princess chain 9046 (13 Aug, = E40), 9047 (14 Aug, was the Schr Princess detained), 9820/2 (14 Aug detain); E381 answered by received 7978 (28 July); for LANE LEDGER (account 1)
 2026-10-10 01:08 | FV-MS18o worker (account 1, Opus, first verifier) | hdl take (01:0x UTC 10 Oct by date -u): 2 IIIF 2400 px (9820, 9258) for the eye check; for LANE LEDGER (account 1)
 2026-10-10 01:09 | FV-MS18o worker (account 1, Opus, first verifier) | hdl release (01:0x UTC 10 Oct by date -u): 2 requests (IIIF), session total 15; for LANE LEDGER (account 1)
+2026-10-10 01:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 01:09 UTC: spawned 0 (), queued left 0
