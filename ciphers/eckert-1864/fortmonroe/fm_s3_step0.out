@@ -1,0 +1,41 @@
+entry	row	key	window	a	lcs/n	b_p95	hit	c_key_meanings	c_plain_absent
+F1	5720/2	no1	2	0.381	8/21	0.190	-	bridge butler command general major monroe river white yorktown	ing
+F1	5720/2	no1shuf	2	0.267	8/30	0.167	-	butterfield capture general hurlbut jno logan major newbern sherman thomas	ing
+F2	5547/1	no1	1	0.739	17/23	0.304	HIT	general grant jones major point rapidan	
+F2	5547/1	no1shuf	1	0.810	17/21	0.333	HIT	alabama diversion gun pontoon	
+F3	5569/1	no1	1	0.944	17/18	0.389	HIT	rapidan	
+F3	5569/1	no1shuf	1	0.944	17/18	0.389	HIT	pontoon	
+F4	5546/0	no1	0	0.550	11/20	0.300	HIT	big day killing point rapidan rebel report sandy sparta	
+F4	5546/0	no1shuf	0	0.524	11/21	0.286	HIT	alabama camp chief cleve danville general lebanon louis pontoon van	
+F5	5577/0	no1	0	0.810	17/21	0.333	HIT	cipher today	
+F5	5577/0	no1shuf	0	0.810	17/21	0.333	HIT	chattahoochee equip killing steam	
+F6	5673/1	no1	1	0.929	13/14	0.429	HIT	telegraph	
+F6	5673/1	no1shuf	1	0.929	13/14	0.429	HIT	enemy	
+F7	5672/1	no1	0+1	0.636	14/22	0.364	HIT	danville grant rail richmond road	
+F7	5672/1	no1shuf	1	0.600	12/20	0.300	HIT	alexandria division foster major out post track	
+F8	5641/0	no1	0	0.571	8/14	0.357	HIT	butler culpepper general gillmore major	
+F8	5641/0	no1shuf	0	0.727	8/11	0.455	HIT	alexandria information today	
+F9	5804/2	no1	1+2	0.800	4/5	0.600	HIT	colonel	
+F9	5804/2	no1shuf	0	0.500	2/4	0.500	-	ford troops	
+F10	5669/1	no1	1	0.357	10/28	0.214	-	army chief danville grant head major potomac rail richmond road telegraph	
+F10	5669/1	no1shuf	1	0.357	10/28	0.179	-	brigadier colonel geo jno kingsport logan magruder major potomac right thomas tuscaloosa winchester	
+F11	5664/2	no1	2	0.750	12/16	0.438	HIT	cipher general major	
+F11	5664/2	no1shuf	2	0.750	12/16	0.438	HIT	danger ferry movement steam	
+F12	5679/0	no1	0	0.533	8/15	0.333	HIT	colonel forage james left sheriden	
+F12	5679/0	no1shuf	0	0.533	8/15	0.333	HIT	cleveland forage newbern pemberton selma valley	
+F13	5830/0	no1	0	0.667	8/12	0.417	HIT	beaufort navy road secretary	
+F13	5830/0	no1shuf	0	0.727	8/11	0.455	HIT	force lines unite	
+F14	5633/1	no1	2	0.700	14/20	0.350	HIT	butler captain general major	
+F14	5633/1	no1shuf	2	0.560	14/25	0.280	HIT	chief encountered enemy force general major strong thomas	
+F15	5798/1	no1	1	0.812	13/16	0.438	HIT	cipher follow	ing
+F15	5798/1	no1shuf	1	0.812	13/16	0.438	HIT	petersburg steam	ing
+F16	5833/2	no1	2	0.800	12/15	0.400	HIT	butler general major	
+F16	5833/2	no1shuf	2	0.750	12/16	0.375	HIT	general major thomas	
+F17	5828/1	no1	1	0.818	9/11	0.545	HIT	norfolk tomorrow	
+F17	5828/1	no1shuf	1	0.562	9/16	0.375	HIT	chief general major parke rail road staff	
+F18	5829/1	no1	0+1	0.667	6/9	0.444	HIT	colonel new york	
+F18	5829/1	no1shuf	0+1	0.750	6/8	0.500	HIT	meridian troops	
+F19	5800/2	no1	2	0.556	5/9	0.444	HIT	general grant major telegraph	
+F19	5800/2	no1shuf	2	0.714	5/7	0.571	HIT	division winchester	
+F20	5590/0	no1	0	0.583	7/12	0.333	HIT	general grant major monroe norfolk	
+F20	5590/0	no1shuf	0	0.636	7/11	0.364	HIT	chief division general newbern	
