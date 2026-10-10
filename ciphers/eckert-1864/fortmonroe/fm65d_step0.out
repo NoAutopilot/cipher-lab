@@ -1,0 +1,33 @@
+entry	row	key	window	a	lcs/n	b_p95	hit	c	c_key_meanings
+F1	5879/0	no1	0	0.651	82/126	0.151	HIT	44	carolina colonel dana defense expedition fifteen fifty five follow fort four general hundred impregnable killed marine men north point rebel report secretary six south surrender thousand troops two volunteer war wilmington
+F1	5879/0	no1shuf7	0	0.600	81/135	0.141	HIT	53	alabama atlanta baltimore breckenridge brigadier burnside camp chalmers cleveland colonel danger effect effective feint fifteen fifty five four front galveston general goldsboro hundred huntsville island jefferson lockwood longstreet negley ohio petersburg president prss rhode secretary six state thousand two warrenton written
+F2	5883/0	no1	0	0.739	17/23	0.304	HIT	6	colonel general major new ord york
+F2	5883/0	no1shuf7	0	0.850	17/20	0.350	HIT	2	cleveland volunteered
+F3	5885/0	no1	0+1	0.646	31/48	0.271	HIT	12	brigadier general grant palmer quartermaster soon today volunteer
+F3	5885/0	no1shuf7	0+1	0.633	31/49	0.245	HIT	15	chickamauga division effect equip feint general holly hooker joseph newbern palmer springs
+F4	5885/1	no1	2	0.767	23/30	0.267	HIT	6	captain command force nine norfolk
+F4	5885/1	no1shuf7	2	0.639	23/36	0.222	HIT	12	encountered enemy force general major nine rail road sherman strong unserviceable
+F5	5886/0	no1	0	0.438	14/32	0.250	-	13	command division james nine norfolk river twelve volunteer
+F5	5886/0	no1shuf7	0	0.366	15/41	0.195	-	20	effect general hampshire new nine palmer rail road sherman trenton twelve valley
+F6	5887/0	no1	0	0.833	5/6	0.500	HIT	1	colonel
+F6	5887/0	no1shuf7	0	0.833	5/6	0.500	HIT	1	troops
+F7	5887/1	no1	1	0.742	23/31	0.290	HIT	6	general grant navy norfolk secretary volunteer
+F7	5887/1	no1shuf7	1	0.793	23/29	0.310	HIT	6	colonel diversion effect hanover rail road
+F8	5888/1	no1	1	0.781	25/32	0.281	HIT	7	army general head major ord quarters tomorrow
+F8	5888/1	no1shuf7	1	0.806	25/31	0.290	HIT	6	atlanta chief delaware pearl staff volunteered
+F9	5888/2	no1	1+2	0.737	14/19	0.368	HIT	4	men newbern report thousand
+F9	5888/2	no1shuf7	1+2	0.737	14/19	0.368	HIT	4	camp ohio reinforced thousand
+F10	5889/2	no1	2	0.667	10/15	0.400	HIT	4	battery colonel division follow
+F10	5889/2	no1shuf7	2	0.500	9/18	0.333	HIT	9	general hampshire kirby new newbern palmer petersburg smith troops
+F11	5890/2	no1	2	0.700	21/30	0.300	HIT	7	command hampshire longstreet new telegraph volunteer
+F11	5890/2	no1shuf7	2	0.618	21/34	0.265	HIT	11	effect enemy general hurlbut louisa newbern palmer sherman
+F12	5891/1	no1	1	0.949	37/39	0.308	HIT	2	cipher today
+F12	5891/1	no1shuf7	1	0.949	37/39	0.308	HIT	2	chattahoochee steam
+F13	5895/2	no1	2	0.818	18/22	0.409	HIT	4	cipher president telegraph volunteer
+F13	5895/2	no1shuf7	2	0.818	18/22	0.409	HIT	4	effect enemy hiawassie killing
+F14	5896/2	no1	2	0.667	34/51	0.235	HIT	16	carolina cipher colonel corps general major north schofield tomorrow
+F14	5896/2	no1shuf7	2	0.694	34/49	0.224	HIT	15	chalmers chief city cleveland fortifications general goldsboro hurlbut major mobile newbern point staff steam troops
+F15	5897/0	no1	0+1	0.621	18/29	0.345	HIT	9	captain general quartermaster schofield sherman sumter tomorrow volunteer
+F15	5897/0	no1shuf7	0+1	0.600	18/30	0.300	HIT	12	chickamauga chief city effect general hooker joseph newbern point staff transportation tullahoma
+F16	5861/2	no1	2+3	0.769	40/52	0.288	HIT	8	butler general left savannah secretary tomorrow volunteer war
+F16	5861/2	no1shuf7	2+3	0.741	40/54	0.259	HIT	12	chief corps effect general movement newbern palmer selma staff thomas

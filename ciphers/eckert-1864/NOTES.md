@@ -6542,3 +6542,49 @@ Read so far: 11 of 15 filed (E551-E555, E557, E558, E560, E562, E564, E565); 2 h
 - [ ] image-check: no image read; filed from the volunteer transcription (rule 2: conditional on it).
 - [x] retry: ORN I/12 djvu retried once after 20 s (500 again).
 Verdict: keep going: 4 internal gaps; cheapest next: page reads of the two prints, ~$0.2
+
+## FM65-D (10 Oct 2026, account 1, for LANE LEDGER-13)
+
+Fifteen 1865 Fort Monroe rows (Huntington object 5952 = mssEC 25), pointers 5879-5897, plus the second message of 5861/2 (E521), book No. 1 per BOOK-FM65. Where the share table put No. 2 first (5883/0, 5890/2, and 5897/0 by .003) the No. 1 / No. 2 decode was compared: No. 1 reads, No. 2 gives nonsense ([Hunter D], [Casualties], [Jeff Davis]; [Tennessee], [Weldon], [Alabama]; [Pemberton], [Walker]), so No. 1 (`fm65d.out`). Under the wave-2 RULING a step-0 hit is a non-test on this ledger; step 0 (a)/(b), (c) and the shuffled-copy step 0 are in `fm65d_step0.out` and pasted in each entry's note (13 of 16 HIT under No. 1, and the same under the shuffled copy). Intake gate (10:0x UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Own work: no row in ciphertext*.txt before this job. Text as transcribed by the volunteers; no image read (rule 2: conditional on the transcription). Novelty not classified (rule 10). Scripts and outputs in `fortmonroe/`: `fm65d_dump.py`, `fm65d.py`, `fm65d_step0.py`, `fm65d_hdl.py`, `fm65d_printcheck.py`, `fm65d_cooc.py`, `fm65d_beapi*.py`, `fm65d_file.py` and their `.out` files. Prior-work step: the civil-war adapter's checks were run by hand as the lines below (holder CISOSEARCHALL all pointers, 177 cached volumes exact phrase and co-occurrence, IA be-api whole-collection with a positive control, one volume read); `tools/prior_work.py` was not run.
+
+| row | filed | per-row line |
+|---|---|---|
+| 5879/0 | **E536** | not located in print (Tribune correspondent's Fort Fisher dispatch to Dana, 17 Jan; Porter's different 'Fort Fisher is ours' telegram to Welles is in the 18 Jan 1865 papers and was rejected as this text); no holder clear copy |
+| 5883/0 | **E537** | not located; context in print: O'Brien, Telegraphing in Battle p.187 paraphrases this very cipher telegram (diary of 20 Jan 1865: Grant telegraphed in cipher to hold the flag-of-truce boat until Mr. Blair arrives); no holder clear copy |
+| 5885/0 | no | **holder clear copy of the second message, pointer 8531** (23 Jan 1865 2 pm, Webster to Rucker: 'I send today the El cid and Ranger. the Cassandria is just here and will be sent as soon as discharged'); the first message (Sheldon for Palmer, 21 Jan, 'Grant has started this evening on his return') is plain with two code words and has no clear copy of its own; row held under (i)/(iii) |
+| 5885/1 | **E539** | not located; no clear copy (8538 is the clear copy of the next row's telegram, a reply-chain sibling, not this message) |
+| 5886/0 | no | **holder clear copy, pointer 8538** (Norfolk 24 Jan 9.20 AM, 'for Comdr H A Wise Chf Bu Ord Washn. 12 torpedoes of nine hundred pounds each with insulating wire are required by Comdr Parker Comdg 5th Divn James river for immediate use, signed D Lynch Comdr & Inspector of Ord'): **C checks on No. 1**: Norfolk ('farmer'), 24, 12 ('flood'), 900, 5th, Division, James River, Commander all read the clear words; 8 of 8 key rows match |
+| 5887/0 | **E541** | not located; a second cipher copy (not clear) at pointer 9943, page 277, the Washington telegram book, same cipher words; no clear copy |
+| 5887/1 | **E542** | not located; no clear copy |
+| 5888/1 | **E543** | not located (five loose co-occurrence hits each read in context and rejected); no clear copy |
+| 5888/2 | **E544** | not located; no clear copy; short (13 H) |
+| 5889/2 | **E545** | not located; no clear copy |
+| 5890/2 | **E546** | not located (the only be-api hit is the 1860 Covode investigation, a different event); no clear copy |
+| 5891/1 | no | **plain**: 41 tokens, 2 H ('Cipher', 'Today'), the whole message is plain English (Baldwin to Eckert, 'very sorry I missed train by forgetting cipher book ... too many pupils about office'); no code word to read, held under (iii) |
+| 5895/2 | **E548** | not located; no clear copy; short (7 H) |
+| 5896/2 | **E549** | not located; no clear copy |
+| 5897/0 | **E550** | not located; no clear copy |
+| 5861/2 second message | **E521** | not located in print; no clear copy (FM65-B's decode of the second message; the first message is the clear copy 8508 and stays unfiled); 4 H tokens in the second message, the clause is short, graded M as a clause |
+
+**Print check, with what I rejected.** Phrase grep over 177 cached volumes (`fm65d_printcheck.out`): one generic hit, 'prepare accordingly' (OR I/42 pt 3, I/45 pt 2 and a Bodleian calendar, a phrase in many volumes, rejected) and 'keep me posted' (many volumes, generic, rejected). Loose co-occurrence (`fm65d_cooc.out`): 5 hits for 'Ord absent several days' / 'Ord take charge headquarters' read in context and rejected (OR I/33 Kilpatrick's 1864 move, OR 41 pt 4 Minnesota troops, OR 43 pt 1 Logan's corps, Baker's detective history, other generic hits), and ORN 'Saugus Monroe Fox' (a Fox telegram on monitors for the Gulf, unrelated). IA be-api whole-collection, three scripts (`fm65d_beapi.py` 20 queries, `fm65d_beapi2.py` 16, `fm65d_beapi3.py` 6, plus `fm65d_beapi4.out` 2 and the control): the **positive control** (quoted OR I/47 pt 2 sentence 'report in person to General Sherman at Savannah' McCallum Townsend) returned 7 hits (`fm65d_beapi_ctl.out`); per-volume queries with identifier returned 0 even for the control, so only the whole-collection queries count. Hits and rejections: 'Fort Fisher is ours' (10 newspaper hits, Porter's dispatch to Welles, 18-21 Jan 1865, rejected: different text); 'until Mr. Blair arrives' (O'Brien's book, a paraphrase, used as context); 'ordered to Portsmouth, New Hampshire, do not wish to go' (Covode investigation, 1860, rejected); 'one battery with each division' (1857-1862 regimental histories, rejected); 'cipher operator Stager Schofield construction corps' (Bates and O'Brien telegraph books, other passages, rejected); 'Annapolis Schofield Sherman' (Bates/Lincoln telegraph books, April 1865 Annapolis trip, rejected); 'Cassandria El Cid Ranger' (dog-show registers, rejected); the rest returned 0 or index entries only. 'take charge of army operations' returned one 1930 periodical, rejected.
+
+**Grades (decoder, H per token; no C beyond the checks above):** E536 H53, E537 H7, E539 H15, E541 H29, E542 H9, E543 H10, E544 H13, E545 H24, E546 H10, E548 H7, E549 H15, E550 H12, E521 H4 (second message). Several clauses are largely plain words around the code words; M by hand as listed in each entry's note (plain words that are also key rows misfire: Saint -> [Force], Whiting -> [Report]ing, Hotel -> [Longstreet], Annapolis -> [Sumter]). `decode.py --write` then `--check`, `decode_no2.py --check`, `decode_no9.py --check` exit 0.
+
+**Requests.** hdl.huntington.org 21 (18 CISOSEARCHALL incl. control 9678 once, 3 dmGetItemInfo 8531 8538 9943; plus 2 extra CISOSEARCHALL queries inside the 18), all 200, no drop; IA be-api about 54 (1.8 s apart), archive.org one djvu download (cu31924030909315, 456 KB, one read).
+
+## Remaining gaps (FM65-D, 10 Oct 2026)
+Read so far: 12 rows plus E521 filed (E536 E537 E539 E541-E546 E548-E550, E521); 2 rows held for holder clear copies (5885/0 second message, 5886/0 with 8 C checks); 1 plain (5891/1).
+- 5885/0 first message (Sheldon for Palmer, 21 Jan: 'Grant has started this evening on his return ... wait for him') - blocker: not-attempted; plain with two code words and no clear copy found; next: file it as a separate short entry if the orchestrator rules it, ~$0.05
+- Names that are M in the filed entries ('Joseph Land Man', 'I N Palmer', 'G. W. Schofield', 'Mulford's boat', 'Berrien') - blocker: not-attempted; plain names as transcribed; next: one verifier pass against OR I/46-47 pt 2 and the Navy register, ~$0.3
+- Image check of pages 335, 339, 341, 343, 344, 345, 346, 351-353 - blocker: not-attempted; text only; next: one 2400 px look per page under the hdl token, ~$0.9
+- Press of the day for E536 (New York Tribune 17-18 Jan 1865: the correspondent's own dispatch) - blocker: not-attempted; Tribune pages are not in the IA be-api index searched; next: loc.gov Chronicling America phrase search, ~$0.2
+
+## Escalation (FM65-D, 10 Oct 2026)
+- [x] siblings: 5883 O'Brien diary, 5885/5886/5887 torpedo chain (8531, 8538, 9943), 5888 Grant-Ord-Palmer run, 5889/5896/5897 Schofield group.
+- [x] clear-pages: all-pointer CISOSEARCHALL on every row; clear copies 8531 (part) and 8538; second cipher copy 9943.
+- [x] known-keys: No. 1 per BOOK-FM65; No. 1 vs No. 2 decode on the three share-table-No. 2 rows.
+- [x] print: 177 volumes exact and loose, be-api whole-collection with a positive control, one volume read at the page.
+- [n/a] key-rebuild: no key row edited.
+- [ ] image-check: no image read; filed from the volunteer transcription (rule 2: conditional on it).
+- [x] retry: no step failed.
+Verdict: keep going: 4 internal gaps; cheapest next: orchestrator ruling on the first message of 5885/0, ~$0.05

@@ -2657,5 +2657,83 @@ S. H. Beckwith , City Point , {time: 11.30 AM} for Lieut [Colonel] Tea S Bowers 
 
 Code-word tokens: H 19.
 
-Totals over the 421 entries: H 7323, C 99, I 25, M 46, S 21, U 10.
+**E536 | Page 335 | 5879 | mssEC 25 (obj 5952, pointer 5879), 17 Jan 1865 12.30 Ft Monroe, Sheldon to Maj. Eckert, for C. A. Dana (Asst. Secretary of War): forwards the Tribune special correspondent's dispatch from the Wilmington expedition: Fort Fisher is ours with the adjacent defences of New Inlet; surrendered to the troops under General Terry after a well sustained assault of 4 hours, ending 9.30 PM Sunday 15 (Jan); garrison 2000 picked South and North Carolina troops; General [Whiting, the row's 'Report'ing, M] had expressed the belief that it was impregnable; between 1200 and 1500 prisoners; loss 'not exceed 6 ditto and 50' (numbers M); among the killed Colonels Bell and Pennypacker; at 7.30 AM Monday as the Vanderbilt was leaving, a bright flash and a stunning report, believed the explosion of the rebel powder magazine just outside the fort, anxiety for the men within; signed E H Hall (FM65-D; row 5879/0; 140 tokens)**
+
+Maj. Eckert [Volunteer] {time: 12.30} for [C. A. Dana] [Washington] [.] The Tribune Special Correspondent withy [Wilmington] [Expedition] sends the [Follow (-ed, -ing)]ing tooth Honorable Assistant [Secretary of War] Day neigh [.] [Fort] Fisher is ours and with it all the adjacent [Defense (-ed, -ing)]'s of New Inlet [.] It [Surrender (-ed, -ing)]ed to our [Troops] under [General] Terry after a well sustained assault of [4] hours [,] at {time: 9.30 PM} Sunday [15] [.] nothing Could withstand the bravery of our [Troops] notwithstanding the garrison was composed of [2000] picked [South] and [North Carolina] [Troops] [.] [General] [Report]ing had expressed the belief that it was [Impregnable] [.] we have taken between [1200] and [1500] prisoners [.] Our loss will not exceed [6] ditto and [50] Soldiers [Marine]'s and Sailors [.] Among the [Killed] are [Colonel]'s Bell and pennypacker ditto Just as the Vanderbilt was leaving {time: 7.30 AM} Monday a bright flash was seen to proceed from a [Point] either within or near Fisher this was followed by a stunning [Report] which induces the belief that it proceeded [From the] explosion [Of the] [Rebel] powder magazine just outside the [Fort] [.] The greatest anxiety prevailed on board the Vanderbilt for the safety of our brave [Men] who are quartered within the [Fort] E H Hall Geo. D. Sheldon
+
+Code-word tokens: H 53.
+
+**E537 | Page 339 | 5883 | mssEC 25 (obj 5952, pointer 5883), 20 Jan 1865, Hd Qrs A. J. (operator R. O'Brien) 6 PM, to Ft Monroe (operator Geo. D. Sheldon), for Maj. Gen. [Ord]: 'Please notify Colonel Mulford (plain 'mule ford') on the flag-of-truce boat (the row's 'weasler' plus a code word that the decoder prints [New York], M) to remain at Varina until Mr. Blair arrives and is passed through the lines'; signed Grant ('Japan' read [Maj Genl U.S. Grant]); 'quite pleasant this evening' follows the signature (FM65-D; row 5883/0; short, 29 tokens)**
+
+R. O'Brien Hd Qrs A. J. {time: 6 PM} for [Maj Gen E. O. C. Ord] [.] Please notify [Colonel] mule ford on weasler [New York] to remain at Varina until Mister Blair arrives and is passed through the lines  {tail: [signed] [Maj Genl U.S. Grant] quite pleasant this evening Geo D. Sheldon}
+
+Code-word tokens: H 7.
+
+**E539 | Page 341 | 5885 | mssEC 25 (obj 5952, pointer 5885), Hd. Qrs. A. J. 23 Jan 1865 to Geo. D. Sheldon at Ft Monroe (operator R. O'Brien), to Captain Lynch commanding the ordnance ship St. Lawrence near Norfolk: send immediately by the Phlox the large torpedoes of 900 pounds each with insulating wire; I have immediate use for them; signed Parker, Commander, 5th Division (the row has 'William ah Parker' and 'Diversion' for Division, M), etc. (FM65-D; row 5885/1)**
+
+G. D. Sheldon Ft Monroe {time: 6.30 PM} too [Captain] Lynch [Command = Er (-ed, -ing)]ing Ord Ship [Force] Lawrence near [Norfolk] [.] send immediately by the phlox the large tar pee does of [900] pounds ach [,] wich insulating wire [.] I have immediate use for them  {tail: [signed] [100] ah Parker [Command = Er (-ed, -ing)]er [5] [Diversion] etc etc etc R. O'Brien}
+
+Code-word tokens: H 15.
+
+**E541 | Page 343 | 5887 | mssEC 25 (obj 5952, pointer 5887), Washington 24 Jan 1865 1 PM to Geo D. Sheldon at Ft Monroe, two messages: (1) for Colonel Webster, Quartermaster at Monroe: the steamer Nevada will be at Monroe in a day or two with recruits; please order her to City Point immediately after they have landed, also all other sea-going steam vessels that may reach Monroe during the next 5 or 6 days; signed Rucker; (2) another for Commander Lynch, ship St. Lawrence, Norfolk: telegram received; no torpedoes of the kind you name are available, it would take months to prepare them, and the Bureau does not know for what purpose these are intended; will not the rebel torpedoes on hand, or those on board the Stromboli, or those sent from the ordnance yard answer; signed H. A. Wise, Chief of Bureau; T. T. Eckert (FM65-D; row 5887/0; 85 tokens)**
+
+Geo D. Sheldon Ft Monroe Va. {time: 1 PM} [Colonel]  {tail: [signed] [Quartermaster] [Monroe] [Steam]er Nevada wilby at [Monroe] in addy or [2] with [Recruits]'s please order her tooths [Point] immed'y after they have landed also all otter see going [Steam] vessels that may reach [Monroe] during the next [5] or [6] days [signed] rucker another for [Command = Er (-ed, -ing)]er Lynch ship [Force] lawrence [Norfolk] [Telegraph (-ed, -ing)] received no torpedoes [Of the] kind you name are [Available]'s [Rapidan] will take months to prepare them [.] besides the Bureau does not know for what purpose these are intended [.] will not the [Rebel] torpedoes on hand or there on board the stromboli on those sent [From the] [After the] yard answer [?] [signed] H a wise Chief Bureau T. T. Eckert}
+
+Code-word tokens: H 29.
+
+**E542 | Page 343 | 5887 | mssEC 25 (obj 5952, pointer 5887), Ft Monroe 24 Jan 1865, Sheldon from Norfolk ('farmer') to Maj. Eckert, for the Secretary of the Navy ('Buxton'): the Saugus left this morning for Washington; General Grant needs her at once; she must be now half way; no use for me to send for her; will you let a message meet her and turn her back; Berrien (FM65-D; row 5887/1; 33 tokens)**
+
+Maj. Eckert [Volunteer] [Norfolk] to [Secretary of Navy] [.] The saugus left this morning for [Washington] [.] [Maj Genl U.S. Grant] needs her at once [.] she must be now half way [.] No use for me to send for her ditto will you let a message meet her and turner back Berrien Geo. D. Sheldon
+
+Code-word tokens: H 9.
+
+**E543 | Page 344 | 5888 | mssEC 25 (obj 5952, pointer 5888), City Point 25 Jan 1865 to Geo. D. Sheldon at Ft Monroe, for Maj. Gen. [Ord]: 'I shall leave here tomorrow to be absent several days. I wish you to return to your headquarters in the field, see that in case of contingency you will be on hand to take charge of army operations from here. It will answer if you start up in the morning'; signed Grant ('Jersey'), 'thats all' S. H. Beckwith (FM65-D; row 5888/1; 40 tokens)**
+
+Geo. D. Sheldon Ft Monroe {time: 3 PM} for [Maj Gen E. O. C. Ord] I shall leave here [Tomorrow] toby absent several days [.] I wish you to return to your [Head Quarters] [In the] field see that encase of tarquinty you wilby on hand to take charge of [Army]'s opera thing from here [.] it will answer if you stair tup in the morning  {tail: [signed] [Maj Genl U.S. Grant] thats all S. H. Beckwith}
+
+Code-word tokens: H 10.
+
+**E544 | Page 344 | 5888 | mssEC 25 (obj 5952, pointer 5888), City Point 26 Jan 1865 to Geo. D. Sheldon at Ft Monroe, for 'I N Palmer' (as transcribed) at Newbern: 'All asked for has been ordered; not less than 6000 men will report to you; prepare accordingly'; signed Grant, Beckwith (FM65-D; row 5888/2; short, 28 tokens)**
+
+Geo. D. Sheldon Ft Monroe {time: 10.30 AM} [26] I N Palmer [Newbern] [.] all asked for bayou has been ordered ditto not lesson [6000] [Men] will [Report] to you [,] prepare accordingly  {tail: [signed] [Maj Genl U.S. Grant] [30] love S. H. Beckwith}
+
+Code-word tokens: H 13.
+
+**E545 | Page 345 | 5889 | mssEC 25 (obj 5952, pointer 5889), Ft Monroe 27 Jan 1865, Sheldon to Maj. Eckert, two messages: (1) Monroe to Lieut. Colonel G. W. Schofield (as written), Willards, Washington: send one battery with each division and let the others follow when convenient; signed Maj. Gen. J. M. Schofield; (2) another to Lieut. Colonel Boyd, Quartermaster, Willards, Washington: it will be necessary to bring transportation from Washington to follow the troops; if good mules cannot be obtained in Washington ask authority to bring those from Kentucky; signed Schofield (FM65-D; row 5889/2; 51 tokens)**
+
+[Monroe] to Lieut. [Colonel] G. W. Schofield Willards [Washington] [.] Send [1] [Battery] with each [Division] and let the others [Follow (-ed, -ing)] when convenient  {tail: [signed] [Maj Genl J. M. Schofield] another to Lieut [Colonel] Boyd a [Quartermaster] willards [Washington] [.] It wilby [Necessary] to bring [Transportation] from [Washington] to [Follow (-ed, -ing)] the [Troops] [.] If good mules cannot be obtained in [Washington] ask authority to bring those from [Kentucky] [signed] [Maj Genl J. M. Schofield] and nothing for nothing moreGeo. D. Sheldon}
+
+Code-word tokens: H 24.
+
+**E546 | Page 346 | 5890 | mssEC 25 (obj 5952, pointer 5890), Ft Monroe 29 Jan 1865, Sheldon to Maj. Eckert, for Senator L. F. S. Faster (as transcribed), Willards Hotel, Washington: 'Ship ordered to Portsmouth, New Hampshire. I do not wish to go. Have me detached here by telegraph. My executive officer Lieut. Commander Parker can take ship'; signed Joseph Land Man (as transcribed) (FM65-D; row 5890/2; 36 tokens)**
+
+Maj. Eckert , [Volunteer] [Monroe] {time: 9 AM} to Senator L. F. S. Faster Willards [Longstreet] [Washington] [.] Ship ordered to Ports mouth [New Hampshire] I do not wish to go Have me detached here by [Telegraph (-ed, -ing)] my executive off I sir Lieut [Command = Er (-ed, -ing)]er Parker can take ship  {tail: [signed] Joseph Land ManGeo. D. Sheldon}
+
+Code-word tokens: H 10.
+
+**E548 | Page 351 | 5895 | mssEC 25 (obj 5952, pointer 5895), Ft Monroe 2 Feb 1865 2.30 PM, Sheldon to Maj. Eckert, for Bates: 'ascertain immediately by what boat the President (the row's 'bologna') left Annapolis and the time of leaving and telegraph me in cipher; also the time the boat passes Point Lookout'; signed Eckert (FM65-D; row 5895/2; short, 29 tokens)**
+
+Maj. Eckert [Volunteer] {time: 2.30 PM} for Bates [.] ascertain immed'y by what boat the [President U.S.] left Annie police and the time of leaving and [Telegraph (-ed, -ing)] me in [Cipher] also the time the boat passes Point Lookout  {tail: [signed] Eckert Geo. D. Sheldon}
+
+Code-word tokens: H 7.
+
+**E549 | Page 352 | 5896 | mssEC 25 (obj 5952, pointer 5896), Washington 2 Feb 1865, Geo. D. Sheldon at Ft Monroe, 'for Eckert': Maj. Gen. [Schofield] has called on Colonel Stager for a cipher operator to go with him tomorrow to North Carolina, and says he will in a short time need a construction corps and some operators; the Colonel refers the matter to you and has informed General Schofield of the fact; can you have the party selected to meet General Schofield at Monroe to accompany him, and shall I have Mack and party get ready to leave together with the material; answer; T. T. Eckert (FM65-D; row 5896/2; 50 tokens)**
+
+Geo. D. Sheldon Ft Monroe for Eckert [.] [Maj Genl J. M. Schofield] has called on [Colonel] stagers for [Cipher] operator to go with hymn [Tomorrow] to [North Carolina] and says he will in a short time need construction [Corps] and some operators [.] [Colonel] refers matter to you and has informed [Maj Genl J. M. Schofield] [Of the] fact [.] can you have the party selected bayou meet [Maj Genl J. M. Schofield] at [Monroe] to accompany him and shall I have mack and party get ready to leave together with the material [.] answer T. T. Eckert
+
+Code-word tokens: H 15.
+
+**E550 | Page 353 | 5897 | mssEC 25 (obj 5952, pointer 5897), Ft Monroe 2 Feb 1865, Sheldon to Maj. Eckert, for Captain Blodget, Quartermaster, Annapolis (2 AM): please inform General Schofield, should he arrive in Annapolis tonight, that I will be at (Annapolis) Friday morning with important despatches for him from General Sherman; signed Jay F. Anderson, Major and A.D.C. (FM65-D; row 5897/0; 35 tokens)**
+
+Maj. Eckert , [Volunteer] [Monroe] for [Captain] Blodget a [Quartermaster] {time: 2 AM} police [.] Please inform [Maj Genl J. M. Schofield] should he arrive in An [Sumter] is tonight that I wilby at ditto ditto ditto [Tomorrow] Fry day morning with important despatches for him from [Maj Gen W. T. Sherman]  {tail: [signed] Jay F Anderson [Major] and A D see end Geo. D. Sheldon}
+
+Code-word tokens: H 12.
+
+**E521 | Page 317 | 5861 | mssEC 25 (obj 5952, pointer 5861), City Point 6 Jan 1865 to Geo. D. Sheldon at Ft Monroe: 'please ascertain immediately if [Butler] has left Monroe, and if so when and when bound; don't mention that I enquired; keep me posted'; S. H. Beckwith (FM65-D, from FM65-B's decode of row 5861/2, second message only; short, about 24 tokens)**
+
+Geo D Sheldon Ft Monroe please ascertain immed'y if [Maj Gen B. F. Butler] has [Left] [Monroe] & if so when & when bound [.] don't mention that I enquired keep me posted S. H. Beckwith
+
+Code-word tokens: H 4.
+
+Totals over the 434 entries: H 7531, C 99, I 25, M 46, S 21, U 10.
 <!-- decode.py: derived block ends -->

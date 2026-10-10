@@ -5683,3 +5683,186 @@ with out him walrus S. H. Roberts pandora plug
 prolong laugh pony frog washingtons polking roman fine morning ,
 sent 11.35 am Dealy  Geo. D. Sheldon
 note: FM65-E (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (header features and month; no row-level book test beyond the share table). Step 0 (fm65e_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.696 (16/23) vs (b) p95 0.348, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.696 vs 0.304, HIT; (c) key-dependent words: colonel general report scout two. Key values: Colonel, General, City Point, Scout (the 'wolf' of the page), Report, 2, Colonel, 139, New York, Volunteer, Expedition; the signature and the 'Expedition' tail are M. 'Colonel S. H. Roberts, 139th New York' is a field officer of the Army of the James in Mar 1865 (M; the regiment was not checked in any volume here). Not located in print (exact phrases none; windows zero; be-api 'Roberts' '139th New York' Bowers scout: ten hits, none this telegram: OR I/46 scouting passages and Whitman notebooks, rejected). No holder clear copy (CISOSEARCHALL 'Bowers Roberts proceed Beckwith ready Shall I go': own page only).
+
+### E536 | Page 335 | 5879 | mssEC 25 (obj 5952, pointer 5879), 17 Jan 1865 12.30 Ft Monroe, Sheldon to Maj. Eckert, for C. A. Dana (Asst. Secretary of War): forwards the Tribune special correspondent's dispatch from the Wilmington expedition: Fort Fisher is ours with the adjacent defences of New Inlet; surrendered to the troops under General Terry after a well sustained assault of 4 hours, ending 9.30 PM Sunday 15 (Jan); garrison 2000 picked South and North Carolina troops; General [Whiting, the row's 'Report'ing, M] had expressed the belief that it was impregnable; between 1200 and 1500 prisoners; loss 'not exceed 6 ditto and 50' (numbers M); among the killed Colonels Bell and Pennypacker; at 7.30 AM Monday as the Vanderbilt was leaving, a bright flash and a stunning report, believed the explosion of the rebel powder magazine just outside the fort, anxiety for the men within; signed E H Hall (FM65-D; row 5879/0; 140 tokens)
+Ft Monroe Jan 17 / 63
+Maj. Eckert
+Washington
+Viola for Insanity grapes unity The Tribune Special Correspondent
+withy Hamlet roman sends the rambling tooth Honorable Assistant
+Indigo Day neigh zodiac Saco Fisher is ours and
+with it all the adjacent quacks of New Inlet
+zebra It watched to our whisky under Shelby Terry
+after a well sustained assault of penny hours pekin
+at Rosetta Sunday gallant unity nothing Could withstand the
+bravery of our whistle notwithstanding the garrison was composed
+of plank waldo picked waxy and Abacus whinny zodiac
+Shelby Whiting had expressed the belief that it was
+summer zebra we have taken between flood prolong and
+ghost publish prisoners zebra Our loss will not exceed
+pledge ditto and mansion Soldiers squadrons and Sailors zebra
+Among the Superb are pandoras Bell and pennypacker ditto
+Just as the Vanderbilt was leaving Delia Monday a
+bright flash was seen to proceed from a vernon
+either within or near Fisher this was followed by
+a stunning wick which induces the belief that it
+proceeded saxon explosion torch walnut powder magazine just outside
+the saco zodiac The greatest anxiety prevailed on board
+the Vanderbilt for the safety of our brave spit
+who are quartered within the Saco E H Hall
+Geo. D. Sheldon
+note: FM65-D (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (month and header; the share table and a No. 1 / No. 2 / No. 9 decode of the row in fm65d.out). Step 0 (fm65d_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.651 (82/126) vs (b) p95 0.151, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.600 vs 0.141, HIT; (c) key-dependent words: carolina colonel dana defense expedition fifteen fifty five follow fort four general hundred impregnable killed marine men north point rebel report secretary six south surrender thousand troops two volunteer war wilmington. Longest row of the batch, 53 H tokens, with the shuffled copies reading the same plain words (a non-test, as above). 'Whiting' is the decoder's [General] [Report]ing (the plain name 'Shelby Whiting' misfires on 'Shelby' = General and 'Whiting' = Report; M). 'Day neigh' = Dana (plain). Numbers: '4 hours', '2000', '1200 and 1500' are H key rows; the loss figure is M. Print: Porter's Fort Fisher telegram (to Gideon Welles, 'Fort Fisher is ours. I send a bearer of despatches ... with all the contiguous works commanding New Inlet') is in the 18 Jan 1865 newspapers (IA be-api: The Press 18 Jan p.1 and The Pittsburgh Commercial 18 Jan, 'FORTRESS MONROE, Jan. 17'), a different dispatch with different wording, rejected as the text of this row; the Tribune correspondent's dispatch itself was not located (be-api whole-collection, 6 phrases, and exact phrases in 177 cached volumes: none). No holder clear copy (CISOSEARCHALL 'Tribune Special Correspondent Vanderbilt garrison': own page only).
+
+### E537 | Page 339 | 5883 | mssEC 25 (obj 5952, pointer 5883), 20 Jan 1865, Hd Qrs A. J. (operator R. O'Brien) 6 PM, to Ft Monroe (operator Geo. D. Sheldon), for Maj. Gen. [Ord]: 'Please notify Colonel Mulford (plain 'mule ford') on the flag-of-truce boat (the row's 'weasler' plus a code word that the decoder prints [New York], M) to remain at Varina until Mr. Blair arrives and is passed through the lines'; signed Grant ('Japan' read [Maj Genl U.S. Grant]); 'quite pleasant this evening' follows the signature (FM65-D; row 5883/0; short, 29 tokens)
+Ft Monroe Jan. 20 / 65
+R. O'Brien Hd Qrs A. J.
+Libby for Meriden unity Please notify pandora mule
+ford on weasler frog to remain at Varina
+until Mister Blair arrives and is passed through
+the lines youth Japan quite pleasant this evening
+Geo D. Sheldon
+note: FM65-D (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (month and header; the share table and a No. 1 / No. 2 / No. 9 decode of the row in fm65d.out). Step 0 (fm65d_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.739 (17/23) vs (b) p95 0.304, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.850 vs 0.350, HIT; (c) key-dependent words: colonel general major new ord york. Book check (the share table put this row at No. 2 by .003): No. 1 reads 'Ord', 'Grant', 'Colonel'; No. 2 reads [Hunter D], [Casualties], [Jeff Davis], [Fire]ed: nonsense, so No. 1. Only 7 H tokens; the clause is mostly plain words, the code words giving addressee, signer and rank (graded M for the clause as a whole). External check (description, not text): O'Brien, Telegraphing in Battle (IA cu31924030909315 / telegraphinginba00obri, printed p.187, diary of Friday 20 January 1865): 'General Grant has gone to Washington; General Ord to Fort Monroe ... Grant telegraphed in cipher to hold the flag of truce boat until Mr. Blair arrives. This is significant, Blair going as a possible peace commissioner a second time to Richmond.' The diarist is the R. O'Brien who signs the row; the book paraphrases this telegram, it does not print it. The row's own wording not located in print (be-api whole-collection exact phrases 'until Mr. Blair arrives' and 'passed through the lines' Varina: only the O'Brien paraphrase and unrelated Blair biographies). No holder clear copy (CISOSEARCHALL 'Varina Blair passed lines': own page only).
+
+### E539 | Page 341 | 5885 | mssEC 25 (obj 5952, pointer 5885), Hd. Qrs. A. J. 23 Jan 1865 to Geo. D. Sheldon at Ft Monroe (operator R. O'Brien), to Captain Lynch commanding the ordnance ship St. Lawrence near Norfolk: send immediately by the Phlox the large torpedoes of 900 pounds each with insulating wire; I have immediate use for them; signed Parker, Commander, 5th Division (the row has 'William ah Parker' and 'Diversion' for Division, M), etc. (FM65-D; row 5885/1)
+Hd. Qrs. A. J. Jan 23 - 1865
+G. D. Sheldon Ft Monroe
+Mary too princess Lynch polkaing Ord
+Ship saint Lawrence near farmer Unity
+send immediately by the phlox the
+large tar pee does of pony
+prolong pounds ach pedlar wich insulating
+wire zebra I have immediate use
+for them yoke William ah Parker
+polkaer plaster Prescott etc etc etc
+R. O'Brien
+note: FM65-D (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (month and header; the share table and a No. 1 / No. 2 / No. 9 decode of the row in fm65d.out). Step 0 (fm65d_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.767 (23/30) vs (b) p95 0.267, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.639 vs 0.222, HIT; (c) key-dependent words: captain command force nine norfolk. Chain: this is Parker's order (23 Jan); the next day Lynch asks Washington for twelve 900-pound torpedoes 'required by Comdr Parker Comdg 5th Divn James river' -- holder clear copy at pointer 8538 (24 Jan 9.20 AM, Norfolk, 'for Comdr H A Wise Chf Bu Ord Washn', signed D Lynch Comdr & Inspector of Ord), which is the clear copy of 5886/0 (not filed, see NOTES), not of this row. 'Saint' decodes [Force] in 'Ship [Force] Lawrence' (plain word, key-row misfire, M); 'farmer' = Norfolk (same code as in 5886/0 and 5887/1). Not located in print (OR I/46 pt 2 window search and be-api whole-collection 'insulating wire' 'nine hundred pounds': none). No holder clear copy at another pointer (CISOSEARCHALL 'Phlox torpedoes Lawrence Lynch' and 'torpedoes insulating wire Parker': 5886 and 8538 only, neither this message).
+
+### E541 | Page 343 | 5887 | mssEC 25 (obj 5952, pointer 5887), Washington 24 Jan 1865 1 PM to Geo D. Sheldon at Ft Monroe, two messages: (1) for Colonel Webster, Quartermaster at Monroe: the steamer Nevada will be at Monroe in a day or two with recruits; please order her to City Point immediately after they have landed, also all other sea-going steam vessels that may reach Monroe during the next 5 or 6 days; signed Rucker; (2) another for Commander Lynch, ship St. Lawrence, Norfolk: telegram received; no torpedoes of the kind you name are available, it would take months to prepare them, and the Bureau does not know for what purpose these are intended; will not the rebel torpedoes on hand, or those on board the Stromboli, or those sent from the ordnance yard answer; signed H. A. Wise, Chief of Bureau; T. T. Eckert (FM65-D; row 5887/0; 85 tokens)
+Washington Jan. 24 - 1865
+Geo D. Sheldon
+Ft Monroe Va.
+Harriet paradise Webster vincent Animal weaseler Nevada
+wilby at appian in addy or peach
+with wafers please order her tooths vernon
+immed'y after they have landed also all
+otter see going wayworn vessels that may
+reach Animal during the next plaster or
+plague days yoke rucker another for polkaer
+Lynch ship saint lawrence famish wreathe received
+no torpedoes torch kind you name are
+nutmegs audit will take months to prepare
+them zebra besides the Bureau does not
+know for what purpose these are intended
+zodiac will not the walpole torpedoes on
+hand or there on board the stromboli
+on those sent saxon ordnance yard answer
+Sugar youth H a wise Chief Bureau
+T. T. Eckert
+note: FM65-D (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (month and header; the share table and a No. 1 / No. 2 / No. 9 decode of the row in fm65d.out). Step 0 (fm65d_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.833 (5/6) vs (b) p95 0.500, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.833 vs 0.500, HIT; (c) key-dependent words: colonel. Replies to the Lynch order of E539 / the clear copy 8538 (24 Jan). A second cipher copy of the same telegram sits at pointer 9943 (page 277, the Washington telegram book, 'GD Sheldon Washn Jany 24th 1865 Harriet Paradise Webster Vincent ...' with the identical cipher words, signed H A Wise chf Bureau): a witness for the transcription, not a clear copy; its next message (Halleck to Grant, 8.30 PM, ocean transports for sixteen thousand men) is a different telegram. M for [Rapidan] (a key row that misfires on the cipher word before 'will take months'). Not located in print (OR I/46 pt 2 window search, be-api whole-collection 'torpedoes of the kind you name' 'Nevada' Rucker: none). No holder clear copy (CISOSEARCHALL 'Nevada Rucker Lynch torpedoes': 5887 and 9943 only).
+
+### E542 | Page 343 | 5887 | mssEC 25 (obj 5952, pointer 5887), Ft Monroe 24 Jan 1865, Sheldon from Norfolk ('farmer') to Maj. Eckert, for the Secretary of the Navy ('Buxton'): the Saugus left this morning for Washington; General Grant needs her at once; she must be now half way; no use for me to send for her; will you let a message meet her and turn her back; Berrien (FM65-D; row 5887/1; 33 tokens)
+Ft Monroe Jan. 24 - 1865
+Maj. Eckert
+Washington
+Farmer to Buxton unity The saugus left this morning
+for grapes zebra John needs her at once zodiac
+she must be now half way zebra No use
+for me to send for her ditto will you
+let a message meet her and turner back Berrien
+Geo. D. Sheldon
+note: FM65-D (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (month and header; the share table and a No. 1 / No. 2 / No. 9 decode of the row in fm65d.out). Step 0 (fm65d_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.742 (23/31) vs (b) p95 0.290, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.793 vs 0.310, HIT; (c) key-dependent words: general grant navy norfolk secretary volunteer. Short but the clause is specific; shuffled copies read the same plain words. 'John' = Grant in the row ([Maj Genl U.S. Grant]), 'Buxton' = Secretary of the Navy (C-checked in FM65-C against the holder clear copy 8511 of 5867/0). Not located in print (cached volumes: only a loose Saugus/Monroe/Fox hit in officialrecordso0009unse, a Fox telegram on monitors for the Gulf, unrelated, rejected; be-api whole-collection 'The Saugus left this morning': none). No holder clear copy (CISOSEARCHALL 'Saugus Berrien turn': none).
+
+### E543 | Page 344 | 5888 | mssEC 25 (obj 5952, pointer 5888), City Point 25 Jan 1865 to Geo. D. Sheldon at Ft Monroe, for Maj. Gen. [Ord]: 'I shall leave here tomorrow to be absent several days. I wish you to return to your headquarters in the field, see that in case of contingency you will be on hand to take charge of army operations from here. It will answer if you start up in the morning'; signed Grant ('Jersey'), 'thats all' S. H. Beckwith (FM65-D; row 5888/1; 40 tokens)
+City Point Jan. 25 / 65
+Geo. D. Sheldon Ft Monroe
+Imogene for meriden I shall leave here whelp
+toby absent several days unity I wish you
+to return to your silver sligo field see
+that encase of tarquinty you wilby on hand
+to take charge of oysters opera thing from
+here unity it will answer if you stair
+tup in the morning yoke Jersey thats all
+S. H. Beckwith
+note: FM65-D (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (month and header; the share table and a No. 1 / No. 2 / No. 9 decode of the row in fm65d.out). Step 0 (fm65d_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.781 (25/32) vs (b) p95 0.281, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.806 vs 0.290, HIT; (c) key-dependent words: army general head major ord quarters tomorrow. Follows the 20 Jan telegram of E537 (Ord at Fort Monroe while Grant was in Washington). 'oysters' = Army in 'charge of oysters operations' (a key row, H). Not located in print: loose co-occurrence 'Ord absent several days' matched five volumes, each read in context and rejected (OR I/33 Kilpatrick 'absent several days' 1864, OR 41 pt 4 and OR 43 pt 1 unrelated orders, Baker's history, an unrelated 'absent from the city'); be-api 'take charge of army operations' returned one 1930 periodical. No holder clear copy (CISOSEARCHALL 'Ord absent several days operations': none).
+
+### E544 | Page 344 | 5888 | mssEC 25 (obj 5952, pointer 5888), City Point 26 Jan 1865 to Geo. D. Sheldon at Ft Monroe, for 'I N Palmer' (as transcribed) at Newbern: 'All asked for has been ordered; not less than 6000 men will report to you; prepare accordingly'; signed Grant, Beckwith (FM65-D; row 5888/2; short, 28 tokens)
+City Point Jan 26 / 65
+Geo. D. Sheldon Ft Monroe
+Elizabeth harsh pledge I N Palmer fortune unity
+all asked for bayou has been ordered ditto
+not lesson plague purple spit will wick to
+you pedlar prepare accordingly youth Juno lamp love
+S. H. Beckwith
+note: FM65-D (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (month and header; the share table and a No. 1 / No. 2 / No. 9 decode of the row in fm65d.out). Step 0 (fm65d_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.737 (14/19) vs (b) p95 0.368, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.737 vs 0.368, HIT; (c) key-dependent words: men newbern report thousand. Short (13 H). The numeral '6000' and 'Newbern' are key rows. The addressee is the plain 'I N Palmer' (initials as transcribed; not identified here, M). The 6000 men may relate to the Schofield move (E545, E549; M). Not located in print (be-api whole-collection 'prepare accordingly' Newbern Palmer: index hits only; 'prepare accordingly' alone also hits OR I/42 and I/45, generic, rejected). No holder clear copy (CISOSEARCHALL 'Palmer Newbern prepare accordingly': none).
+
+### E545 | Page 345 | 5889 | mssEC 25 (obj 5952, pointer 5889), Ft Monroe 27 Jan 1865, Sheldon to Maj. Eckert, two messages: (1) Monroe to Lieut. Colonel G. W. Schofield (as written), Willards, Washington: send one battery with each division and let the others follow when convenient; signed Maj. Gen. J. M. Schofield; (2) another to Lieut. Colonel Boyd, Quartermaster, Willards, Washington: it will be necessary to bring transportation from Washington to follow the troops; if good mules cannot be obtained in Washington ask authority to bring those from Kentucky; signed Schofield (FM65-D; row 5889/2; 51 tokens)
+Maj. Eckert - Washington  Ft Monroe Jan. 27 - 1865
+Animal to Lieut. paradise G. W. Schofield Willards growl unity
+Send plug pagan with each quincy and let the others
+ramble when convenient yoke King another to Lieut pandora Boyd
+a vinton willards grapes unity It wilby tarquin to bring
+wherry from growl to rampant the whistle unity If good
+mules cannot be obtained in growl ask authority to bring
+those from Aurora walrus Kitten and nothing for nothing more -
+Geo. D. Sheldon
+note: FM65-D (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (month and header; the share table and a No. 1 / No. 2 / No. 9 decode of the row in fm65d.out). Step 0 (fm65d_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.667 (10/15) vs (b) p95 0.400, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.500 vs 0.333, HIT; (c) key-dependent words: battery colonel division follow. 24 H of 51; both messages read in No. 1 and not under the shuffled copies. The addressee 'Lieut. Colonel G. W. Schofield' is plain as transcribed (M); the signer is decoded [Maj Genl J. M. Schofield]. Not located in print (cached volumes and be-api: 'one battery with each division' returns unrelated 1857-1862 regimental histories, rejected; 'bring those from Kentucky' mules: none). No holder clear copy (CISOSEARCHALL 'Schofield Willards Boyd batteries Kentucky mules': none).
+
+### E546 | Page 346 | 5890 | mssEC 25 (obj 5952, pointer 5890), Ft Monroe 29 Jan 1865, Sheldon to Maj. Eckert, for Senator L. F. S. Faster (as transcribed), Willards Hotel, Washington: 'Ship ordered to Portsmouth, New Hampshire. I do not wish to go. Have me detached here by telegraph. My executive officer Lieut. Commander Parker can take ship'; signed Joseph Land Man (as transcribed) (FM65-D; row 5890/2; 36 tokens)
+Ft Monroe Jan 29 - 1865
+Maj. Eckert , Washington
+Animal Emma to Senator L. F. S. Faster Willards
+Hotel growl unity Ship ordered to Ports mouth Asia
+I do not wish to go Have me detached
+here by wreathe my executive off I sir Lieut
+polkaer Parker can take ship walrus Joseph Land Man -
+Geo. D. Sheldon
+note: FM65-D (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (month and header; the share table and a No. 1 / No. 2 / No. 9 decode of the row in fm65d.out). Step 0 (fm65d_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.700 (21/30) vs (b) p95 0.300, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.618 vs 0.265, HIT; (c) key-dependent words: command hampshire longstreet new telegraph volunteer. Book check (the share table put this row at No. 2): No. 1 reads Monroe, Washington, New Hampshire ('Hotel' misfires as [Longstreet], M); No. 2 reads [Tennessee], [Weldon], [Alabama], [Valley]: nonsense, so No. 1. The sender's name as transcribed is not decoded (M); the clause names no vessel. Not located in print (be-api whole-collection 'ordered to Portsmouth' 'New Hampshire' 'do not wish to go' hits only the 1860 Covode investigation, a different 'ordered to Portsmouth, New Hampshire' event, rejected). No holder clear copy except its own page (CISOSEARCHALL 'Portsmouth detached executive Parker': 5890 only).
+
+### E548 | Page 351 | 5895 | mssEC 25 (obj 5952, pointer 5895), Ft Monroe 2 Feb 1865 2.30 PM, Sheldon to Maj. Eckert, for Bates: 'ascertain immediately by what boat the President (the row's 'bologna') left Annapolis and the time of leaving and telegraph me in cipher; also the time the boat passes Point Lookout'; signed Eckert (FM65-D; row 5895/2; short, 29 tokens)
+Ft Monroe Feb. 2 - 1865
+Maj. Eckert Washington
+Henrietta for Bates unity ascertain immed'y by what
+boat the bologna left Annie police and the
+time of leaving and wreathe me in pembroke
+also the time the boat passes Point Lookout
+webster Eckert  Geo. D. Sheldon
+note: FM65-D (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (month and header; the share table and a No. 1 / No. 2 / No. 9 decode of the row in fm65d.out). Step 0 (fm65d_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.818 (18/22) vs (b) p95 0.409, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.818 vs 0.409, HIT; (c) key-dependent words: cipher president telegraph volunteer. Short (7 H, the rest plain). 'bologna' decodes [President U.S.] (key row, H); 'Annie police' is plain Annapolis; the addressee 'Bates' is plain (David Homer Bates, War Department telegraph office manager, M). Not located in print (be-api whole-collection 'what boat the President left Annapolis': none; loose co-occurrence of Bates, President, Annapolis, Point Lookout in the cached volumes: none). No holder clear copy (CISOSEARCHALL 'Bates President Annapolis Point Lookout boat': none).
+
+### E549 | Page 352 | 5896 | mssEC 25 (obj 5952, pointer 5896), Washington 2 Feb 1865, Geo. D. Sheldon at Ft Monroe, 'for Eckert': Maj. Gen. [Schofield] has called on Colonel Stager for a cipher operator to go with him tomorrow to North Carolina, and says he will in a short time need a construction corps and some operators; the Colonel refers the matter to you and has informed General Schofield of the fact; can you have the party selected to meet General Schofield at Monroe to accompany him, and shall I have Mack and party get ready to leave together with the material; answer; T. T. Eckert (FM65-D; row 5896/2; 50 tokens)
+Washington Feb. 2 / 65
+Geo. D. Sheldon Ft Monroe
+for Eckert unity Kingdom has called on
+pandora stagers for penfield operator to go
+with hymn whelp to abacus and says
+he will in a short time need
+construction pelton and some operators zebra paradise
+refers matter to you and has informed
+kitten torch fact zodiac can you have
+the party selected bayou meet King at
+animal to accompany him and shall I
+have mack and party get ready to
+leave together with the material unity answer
+T. T. Eckert
+note: FM65-D (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (month and header; the share table and a No. 1 / No. 2 / No. 9 decode of the row in fm65d.out). Step 0 (fm65d_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.667 (34/51) vs (b) p95 0.235, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.694 vs 0.224, HIT; (c) key-dependent words: carolina cipher colonel corps general major north schofield tomorrow. Direction is not settled (M): the header is Washington to Sheldon and 'for Eckert', yet the body asks 'can you have the party selected' and is signed T. T. Eckert. 'Kingdom' decodes [Maj Genl J. M. Schofield] and 'abacus' [North Carolina] (key rows, H); 'stagers' and 'Mack' are plain names. Not located in print (be-api whole-collection 'cipher operator' Stager Schofield 'construction corps' returns O'Brien/Bates books on the telegraph corps, no Schofield telegram; cached volumes: none). No holder clear copy (CISOSEARCHALL 'Stager Schofield cipher operator construction': none).
+
+### E550 | Page 353 | 5897 | mssEC 25 (obj 5952, pointer 5897), Ft Monroe 2 Feb 1865, Sheldon to Maj. Eckert, for Captain Blodget, Quartermaster, Annapolis (2 AM): please inform General Schofield, should he arrive in Annapolis tonight, that I will be at (Annapolis) Friday morning with important despatches for him from General Sherman; signed Jay F. Anderson, Major and A.D.C. (FM65-D; row 5897/0; 35 tokens)
+Ft. Monroe Feb 2 / 65
+Maj. Eckert , Washington
+Animal for pilgrim Blodget a vinton anna police
+zebra Please inform Kitten should he arrive in
+An apple is tonight that I wilby at
+ditto ditto ditto whelp Fry day morning with
+important despatches for him from Knapsack yoke Jay
+F Anderson Tappan and A D see end
+Geo. D. Sheldon
+note: FM65-D (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (month and header; the share table and a No. 1 / No. 2 / No. 9 decode of the row in fm65d.out). Step 0 (fm65d_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.621 (18/29) vs (b) p95 0.345, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.600 vs 0.300, HIT; (c) key-dependent words: captain general quartermaster schofield sherman sumter tomorrow volunteer. Book check (the share table put No. 2 .003 ahead of No. 1 on this row): No. 2 reads [Tennessee], [Walker], [Pemberton], [McLamores Cove]: nonsense, so No. 1 ([Schofield], [Sherman], [Sumter] for 'An apple is' = Annapolis misfire, M). The sender is Major Jay F. Anderson (plain name). Not located in print (be-api whole-collection 'important despatches' Schofield Sherman Annapolis: the Bates and Lincoln telegraph books on other dates, rejected; cached volumes: none). No holder clear copy (CISOSEARCHALL 'Blodget Anderson Schofield Sherman despatches': none).
+
+### E521 | Page 317 | 5861 | mssEC 25 (obj 5952, pointer 5861), City Point 6 Jan 1865 to Geo. D. Sheldon at Ft Monroe: 'please ascertain immediately if [Butler] has left Monroe, and if so when and when bound; don't mention that I enquired; keep me posted'; S. H. Beckwith (FM65-D, from FM65-B's decode of row 5861/2, second message only; short, about 24 tokens)
+City Point Jan'y 6 1865
+Geo D Sheldon Ft Monroe
+please ascertain immed'y if Knox has
+stomach animal & if so when
+& when bound unity don't mention
+that I enquired keep me posted
+S. H. Beckwith
+note: FM65-D (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 and FM65-B's decode of this row (month and header; the share table and a No. 1 / No. 2 / No. 9 decode of the row in fm65d.out). Step 0 (fm65d_step0.py on the whole row, both messages, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.769 (40/52) vs (b) p95 0.288, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.741 vs 0.259, HIT; (c) key-dependent words: butler general left savannah secretary tomorrow volunteer war. Only the second message is filed: the first message (Sheldon to Maj. Eckert, 'Mrs Ellen H. Stanton ... arrived here safely ... start for Savannah', 6 Jan 1865) is the holder clear copy at pointer 8508 (FM65-B) and stays unfiled. This message has no clear copy: CISOSEARCHALL 'Butler left Monroe Beckwith enquired' (FM65-D) and FM65-B's queries found none; 'Knox' decodes [Maj Gen B. F. Butler] (H key row, as in E527) and 'stomach animal' [Left] [Monroe]. Not located in print (exact phrases 'if General Butler has left Monroe', 'keep me posted' in 177 cached volumes: the second is generic and hits many volumes, rejected; be-api whole-collection 'if General Butler has left Monroe': none; loose co-occurrence Beckwith, Butler, left Monroe: none). Context only (M): FM65-C's note on E527 cites Grant's 4 Jan 1865 request for Butler's removal in OR I/46 pt 2; the row does not say why Beckwith, at City Point, is asking.
