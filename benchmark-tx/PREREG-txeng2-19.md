@@ -70,3 +70,20 @@ protocol, arms, scoring, PASS rule as PREREG-17 states them; the box-proposal st
 dated section appended here once L74 is answered, before any annotation. Openings: 0.
 
 Costs this round: the lane's own session (no worker). Eval looks this round: 0. S2 looks: 1 (unchanged). Openings: CA-S2 2 (one eval, one dev), F55/COMP-VIS 2.
+
+## WIT-ANCHOR Gachard II p.428 as a read-free anchor check of dec_norm (added 01:1x UTC 10 Oct by date -u, BEFORE the run; the successor prompt's job 6; run by the lane)
+Nearest prior: WIT-VIV / TXE2-VIVWIT (the witness: Gachard II (1875) p.428 prints the dispatch's "Quant a la paix ... par la
+force" passage verbatim; placed by string search at dec_norm about 2669-3230, "not decided" whether on f.102r or across the
+f.102r/f.102v seam), DV1d / TXE2-VIV102-REANCHOR (f.102r stretch = dec_norm 550-2850 after re-anchoring; f.102v+f.103r keep j0's
+alignment), DV1c (the scan method), SCAN-103 (running). What is different: the printed witness is used, once, as an independent
+transcription of the same clerk decipherment: (1) the passage is pulled by script from the on-disk OCR
+(sources/ia-fulltext/print-check/labibliothquen02gachuoft_djvu.txt.gz) between its first and last words, normalised with vivwit's
+fold (letters only, v->u, j->i, y->i, k->c), Gachard's "...." omissions kept as gaps; (2) a letter-level local alignment
+(difflib SequenceMatcher ratio over sliding windows of dec_norm of the passage's length, step 10) gives the best offset and the
+agreement ratio there; (3) the selection-fair null is the same statistic for 200 letter-shuffled copies of the passage, each taking
+its own best window (max ratio over the scan); (4) reported: best offset, ratio, null max and p95, the margin, and where the
+passage sits against the registered bounds (f.102r 550-2850; the seam) -- a statement about dec_norm's transcription of the
+clerk text in that span and about the seam, never about the cipher reads. Gate, declared: ANCHORED if ratio - null max >= 0.03
+at an offset within 100 letters of the string-search placement (2669); else NOT ANCHORED, numbers reported. Nothing is rebuilt
+or re-scored by this job; a consequence for dev2 or confirm2 would be a separate PREREG. Reads no truth file, no output file.
+Output: benchmark-tx/txeng2/witanchor/ (wit_anchor.py, result.json, RESULTS.md). Openings: 0.
