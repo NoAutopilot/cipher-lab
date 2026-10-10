@@ -2171,5 +2171,11 @@ Code-word tokens: H 30.
 
 Code-word tokens: H 30.
 
-Totals over the 340 entries: H 5999, C 89, I 25, M 44, S 18, U 10.
+**E465 | Page 224 | 5768 | mssEC 25 (obj 5952, pointer 5768), 10 July 1864 Ft Monroe 10.15 AM, Sheldon for the General-in-Chief at Washington, carrying Col. J. W. Shaffer's words: none of the New Orleans troops (the 19th Army Corps of the sibling entries on the page) have arrived yet; shorter twin of the Rawlins/Beckwith entry 5768/2 (FM-S2; row 5768/3; image-read at 2400 px)**
+
+[Monroe] [25] AM {date: July 10} for [General-in-Chief] [Washington] [.] none [Of the] [New Orleans] [Troops] have arrived yet  {tail: [signed] Jay W. Shaffer [Colonel] and chief of staff fine morning Geo D Sheldon}
+
+Code-word tokens: H 11, S 1.
+
+Totals over the 341 entries: H 6010, C 89, I 25, M 44, S 19, U 10.
 <!-- decode.py: derived block ends -->

@@ -4582,3 +4582,12 @@ will demonstrate whether the Rome intends giving Parson
 this side of Garden zebra wrangle Know that
 we have Pocketed the Audit Walrus John Chinamen
 note: MS18-R11: No. 1 (whole-entry vocabulary share No.1/No.2/No.9 = .72/.57/.28; read by sense, count control non-discriminating: shuffled copy H30 = H30). Step 0 (ms18_r11_step0.py): (a) 0.091 (1/11), (b) p95 0.091, MISS (the holder transcription of page 9730 carries the cipher text and its plain words only); (c) key-dependent words: army, Butler, cross, general, Grant, major, Rapidan. Printed: the Grant message word for word in OR I/36 pt 1 and Butler Corr. IV; the Halleck relay as sent to Butler is printed only in the short form 'General Grant's army has crossed the Rapidan' (OR I/36 pt 2 p.391; Butler Corr. IV 'Lt. General Grant Comd'g has crossed the Rapidan', 3 p.m.), so the ledger's wording 'Here is Grant's message from Germanna Ford for Halleck' is not located as such. Holder clear copy: 3 CISOSEARCHALL queries 0 hits (control 9678).
+
+### E465 | Page 224 | 5768 | mssEC 25 (obj 5952, pointer 5768), 10 July 1864 Ft Monroe 10.15 AM, Sheldon for the General-in-Chief at Washington, carrying Col. J. W. Shaffer's words: none of the New Orleans troops (the 19th Army Corps of the sibling entries on the page) have arrived yet; shorter twin of the Rawlins/Beckwith entry 5768/2 (FM-S2; row 5768/3; image-read at 2400 px)
+Ft Monroe July 10th 1864
+Appian feeble ghost AM July federal for
+Indian growl zebra none torch Emmet whiskey
+have arrived yet walrus Jay W. Shaffer
+paradise and chief of staff fine morning
+Geo D Sheldon
+note: FM-S2: Step 0 (fm_s2_step0.py): (a) 0.385 (5/13), (b) p95 0.308, MISS; (c) key-dependent words: five, general, New Orleans, troops, twenty, Washington. The time reads 10.15 AM (feeble = 10, ghost = 15; the decoder prints [25], a numeral-combination quirk; the sibling 5768/2 header says 10.15 AM). whiskey = Troops is S (key row), supported by sibling 5768/1 'troops arriving from New Orleans'. Indian = General-in-Chief is H but an odd address for 10 July 1864 (Halleck was Chief of Staff): M for who is meant. Not in print: phrase grep over 164 cached volumes, Huntington CISOSEARCHALL (no clear copy), be-api: none located.

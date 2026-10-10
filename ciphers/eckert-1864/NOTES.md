@@ -5908,3 +5908,49 @@ Read so far: book called for 10 of 10 tested 1865 Fort Monroe rows (all No. 1; 8
 - [ ] image-check: not done (disk only); text as transcribed.
 - [n/a] retry: no step failed.
 Verdict: keep going: 5 internal gaps; cheapest next: 5931/0 body under No. 1 and No. 2, ~$0.2
+
+## FM-S2 (10 Oct 2026, account 1, for LANE LEDGER-13)
+
+Ten short 1864 Fort Monroe rows (Huntington object 5952 = mssEC 25; 31-69 words; FM-PRE never ran the holder layer on them): 5698/0 5638/0 5632/2 5627/1 5810/1 5756/1 5720/0 5814/0 5768/3 5680/2. Grep of pointer/entry in `ciphertext*.txt`, NOTES, AUDIT at 08:5x UTC: none filed. Intake gate (08:5x): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Filed: **E465 (5768/3)** only. Novelty not classified (rule 10). Scripts/outputs in `fortmonroe/`: `fm_s2_dump.py`, `fm_s2.py` + `fm_s2_controls.txt` (shares, five decodes), `fm_s2_step0.py/.out`, `fm_s2_step0x.py/.out`, `fm_s2_hdl.py/.out`, `fm_s2_hdl2.py`, `fm_s2_printcheck.py/.out`, `fm_s2_beapi.py/.out`, `fm_s2_file.py`.
+
+**Holder layer (CISOSEARCHALL, all pointers, positive control 9678 returned).** One clear copy: **5627/1 = pointer 10266** (Washington clear telegram book, p.124): "3.10 P.M. Ft Monroe Apl 23. 1864. For Genl Ramsay, Chief of Ord Washn. Please send me three hundred thousand cartridges for spencer rifles with all possible dispatch sig Theodore Edson Captain Ord". It is a C check on No. 1: growl = Washington, Shelby = General, perfume publish promise = 300000 agree; the decoder's "Effect" for the plain name Ramsay and "Enemy's"/"has been reinforced" for the plain words Ridges/Spencer are key rows misfiring on plain text (M). Other-pointer hits are different telegrams: 5698/0 query -> 10356 (25 May Meigs/Barnard), 10364 (28 May Biggs to Rucker), 8934 (19 Apr); 5814/0 -> 5813 (1 Dec, Sheldon to Cdr Parker, USS Onondaga: "Monitors Saugus Canonicus and Mahopac ... ready" = the antecedent of 5814/0, which reads "3 monitors Mahopac, Canonicus [sic: the row says 'canon cuss'] and Saugus are ready for service"). The other seven rows: no second pointer.
+
+**Step 0 (ruling: a = ordered LCS, b = shuffled p95, c = key-dependent words).** Literal ruling (`fm_s2_step0.out`, book that reads = No. 1, No. 2 for 5756/1): HIT for 9 of 10 (a 0.60-0.91 vs b 0.25-0.43); MISS only 5768/3 (0.385 vs 0.308). **This is a non-test for mssEC 25**: the window is the page transcription of the entry's own lines, which is the cipher letter itself with its plain words, and Fort Monroe letters are mostly plain words with arbitrary words between, so (a) is high by construction (MS18-R10/R11 note the same artifact where it happened to MISS). A control that cannot vary on the manipulated axis (rule 3). Step 0x (`fm_s2_step0x.py`, same functions, own block removed, other blocks of the page plus the pointers above as windows): HIT only 5627/1 (0.700 vs 0.400, the clear copy 10266, positive); all other nine MISS. Following the ruling as written I file nothing for the nine literal hits; 5768/3 is the only literal miss and is filed.
+
+**Book.** Shares s1/s2/s9 from HEAD (`fm_s2_controls.txt`): No. 1 leads on nine rows; 5756/1 has no book reading it (.095/.143/.048; its words are almost all plain, one code word). The count control (shuffled copy H = true H) cannot fail by construction (as FM-R7a); sense decides.
+
+**Per-row line.**
+| row | per-row line | content as the No. 1 decode reads it (M unless stated) |
+|---|---|---|
+| 5698/0 | **in print: OR I/36 pt 3 and Butler Corr. IV p.271 ("Telegram. Cipher. May 26th, 1864, 9 p.m. Col. Biggs. Send me all the transportation you can to Bermuda Hundreds, and telegraph what is coming. Benj. F. Butler")**; step-0 skip. The decoder's "White River" for plain "Bermuda" is the E313-type slip (IA `privateofficialc04butl`, `warofrebellion363unit`, cached text; page numbers of OR not read) | Butler to Biggs, send transports to Bermuda Hundred |
+| 5638/0 | step-0 skip; not located (phrases 'Dunn', 'returns it endorsed': no clear copy, no print in 164 volumes, be-api Butler IV 0) | Sheldon to Eckert, referred your telegram about Dunn to Butler; "I know of none and do not believe a word against him" |
+| 5632/2 | step-0 skip; not located | conference with Butler; Telegraph, 15 and 50 miles; no clause beyond "ready to put up at a moment's notice" |
+| 5627/1 | **holder clear copy, pointer 10266** (Apr 23 1864); step-0 skip | see above (C) |
+| 5810/1 | step-0 skip; not located; 5810 page 28 Nov, Beckwith to Sheldon, "for Butler ... meet you at Monroe tomorrow 10.30 AM ... 3 PM" | Beckwith (City Point) to Sheldon, for Butler, time words |
+| 5756/1 | step-0 skip, no book in hand (one code word; the telegram is plain): White House 18 Jun 1864, [?] to Eckert, "have heard from Sheridan ... will probably get here tonight ... tell me quick if Beckwith or Caldwell have my cipher ... want to use it tonight"; not located (print phrases, be-api whole-collection: only generic-word noise rejected) | too short to read a clause beyond the plain text |
+| 5720/0 | step-0 skip; not located; sibling blocks on 5720 are other telegrams | O'Brien, 30 May: heavy continuous firing about 15 miles from here, towards the battery; "may be Grant has reached there" (H, M for Grant) |
+| 5814/0 | step-0 skip; antecedent at 5813 (clear-ish cipher copy, not a clear copy); not located in print | Butler HQ to Sheldon for Porter: your telegram received, the three monitors Mahopac, Canonicus, Saugus ready for service; Cdr Parker signs |
+| 5768/3 | **filed E465**; step-0 MISS; no clear copy, not located in print | see E465 |
+| 5680/2 | step-0 skip (and 0x miss); not located; **key check, not a new reading**: the row is Eckert's order of 20 May 1864 to add the words mackerel and mutton to the extra arbitraries for Maj. Gen. D. Hunter; key.md already has Mackerel and Mutton = Maj. Gen. David Hunter at C (OR I/37 pt 1 p.525 via E9; OR I/43 pt 1 p.698 via E13), so the telegram describes its own definition; the decoder's "Lee" for plain "Hunter" and the doubled "[Hunter] and [Hunter]" are misfires | Eckert to Sheldon and O'Brien |
+
+**E465 grades.** Decoder H 11, S 1 (whiskey = Troops), C 0, I 0; M by hand: the address General-in-Chief (H row, odd for 10 Jul 1864), the time (10.15 AM; the decoder's [25] is a numeral-combination quirk, twin header on the same page says 10.15 AM), New Orleans (single occurrence, but consistent across the page's four entries: sibling 5768/1 "troops arriving from New Orleans", 5768/0 and 5768/2 "19th Army Corps from New Orleans"). Check: `decode.py --check`, `decode_no2.py --check`, `decode_no9.py --check` exit 0. Image: 5768 at 2400 px, own entry read line by line, matches the transcription ("Jay W." correct); the 3rd entry's header (S. H. Beckwith ... Rawlins, 10.15 A.M.) is plain on the image.
+
+**Requests.** hdl.huntington.org 16 (12 CISOSEARCHALL incl. control and one retry after a dropped connection, 3 dmGetItemInfo, 1 IIIF leaf; the last overlapped FM-S1's open take for one request, flagged in ROOM); be-api 10 (one a positive control, 1 hit), all 200, 1.8 s apart.
+
+**Over-claim guard.** Not located is a search result only; the 164-volume phrase grep and be-api cover OR/ORN/Butler/Grant Papers vols. 10-11 only.
+
+## Remaining gaps (FM-S2, 10 Oct 2026)
+Read so far: 1 of 10 filed (E465); 1 clear copy (5627/1), 1 in print (5698/0), 1 key check (5680/2), 7 literal step-0 hits not read.
+- Nine rows held by the Step-0 ruling, which is a non-test for mssEC 25 (step 0x misses 8 of them) - blocker: not-attempted; the ruling's own window is the row, so a ruling is needed first; next: orchestrator rules whether Step 0x replaces the literal test for Fort Monroe rows, then a reader files 5638/0 5632/2 5810/1 5720/0 5814/0 5680/2 (and 5756/1 as no-book), ~$0.2 per row
+- 5632/2, 5810/1 and 5638/0 code words (Pekin, Elizabeth/Monday miller, violet/virgin) - blocker: open-codes; the words are unread in all three books; next: sibling window by date (24-25 Apr, 28 Nov, 29 Apr), ~$0.2
+- OR I/36 pt 3 page of 5698/0 - blocker: not-attempted; OCR gives running head only; next: djvu page read, ~$0.1
+
+## Escalation (FM-S2, 10 Oct 2026)
+- [x] siblings: 5813 (antecedent of 5814/0), 5768/0-2, 10356/10364 seen.
+- [x] clear-pages: all-pointer CISOSEARCHALL on every row; clear copy 10266.
+- [x] known-keys: three books plus shuffled copies per row.
+- [x] print: 164 cached volumes, be-api 10 incl. whole-collection queries (hits rejected: generic words in wrong context).
+- [n/a] key-rebuild: no key row edited.
+- [x] image-check: 5768 only (the filed row).
+- [x] retry: dropped connection retried once after 25 s.
+Verdict: keep going: 3 internal gaps; cheapest next: OR I/36 pt 3 page read for 5698/0, ~$0.1

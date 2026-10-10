@@ -1,0 +1,110 @@
+F1 tokens=22 no1=7(0.32) no2=5(0.23) no9=4(0.18)
+  no1: H6 C0 I0 M0
+    Geo D Sheldon Ft Monroe for Colonel Biggs [.] send me all the [Transportation] you can to [White River] hundreds and [Telegraph (-ed, -ing)] what is coming  {tail: [signed] [Maj Gen B. F. Butler] I have no more to say R OBrien}
+  no2: H5 C0 I0 M0
+    Geo D Sheldon Ft Monroe for Colonel Biggs [1000] send me all the [Train] you can to [Virginia] hundreds and [Valley] what is coming [Surrendered] Knox I have no more to say R OBrien
+  no9: H4 C0 I0 M0
+    Geo D Sheldon Ft Monroe for Colonel Biggs [Movement] send me all the [Skirmish] you can to Bermuda hundreds and [Intercept] what is coming [Killed] Knox I have no more to say R OBrien
+  no1shuf: H6 C0 I0 M0
+    Geo D Sheldon Ft Monroe for Colonel Biggs [.] send me all the [Impregnable] you can to [Maj Gen Jno A. Logan] hundreds and [Winchester] what is coming  {tail: [signed] [Maj Gen Geo. H. Thomas] I have no more to say R OBrien}
+  no2shuf: H5 C0 I0 M0
+    Geo D Sheldon Ft Monroe for Colonel Biggs [1000] send me all the [Philadelphia] you can to [Push] hundreds and [Success] what is coming [Captain] Knox I have no more to say R OBrien
+F2 tokens=21 no1=6(0.29) no2=4(0.19) no9=1(0.05)
+  no1: H4 C0 I0 M0
+    Maj Eckert Di I referred your [Telegraph (-ed, -ing)] about Dunn to [Maj Gen B. F. Butler] he returns it endorsed ["] I Know of none and do not believe a word against him ["] appears settled Geo D Sheldon
+  no2: H3 C0 I0 M0
+    Maj Eckert Di I referred your [Valley] about Dunn to Knox he returns it endorsed [Rebel] I Know of none and do not believe a word against him [Repulse] appears settled Geo D Sheldon
+  no9: H1 C0 I0 M0
+    Maj Eckert Di I referred your [Intercept] about Dunn to Knox he returns it endorsed violet I Know of none and do not believe a word against him virgin appears settled Geo D Sheldon
+  no1shuf: H4 C0 I0 M0
+    Maj Eckert Di I referred your [Winchester] about Dunn to [Maj Gen Geo. H. Thomas] he returns it endorsed ["] I Know of none and do not believe a word against him ["] appears settled Geo D Sheldon
+  no2shuf: H3 C0 I0 M0
+    Maj Eckert Di I referred your [Success] about Dunn to Knox he returns it endorsed [Scout (-ed, -ing)] I Know of none and do not believe a word against him [Retreat (-ed, -ing)] appears settled Geo D Sheldon
+F3 tokens=23 no1=8(0.35) no2=5(0.22) no9=3(0.13)
+  no1: H7 C0 I0 M0
+    Maj Eckert Di Have had conference with Knocks [,] must have [15] [Mile]'s [Telegraph (-ed, -ing)] Matt aerial ready to put up at a moments notice . and [50] [Mile]'s ready if [Necessary] answer Geo D Sheldon
+  no2: H5 C0 I0 M0
+    Maj Eckert Di Have had conference with Knocks [Cavalry] must have ghost [North]'s [Valley] Matt aerial ready to put up at a moments notice . and mandate [North]'s ready if [Our scouts report] answer Geo D Sheldon
+  no9: H3 C0 I0 M0
+    Maj Eckert Di Have had conference with Knocks Pekin must have ghost [Transports]'s [Intercept] Matt aerial ready to put up at a moments notice . and mandate [Transports]'s ready if tarquin answer Geo D Sheldon
+  no1shuf: H7 C0 I0 M0
+    Maj Eckert Di Have had conference with Knocks [,] must have [15] [After the]'s [Winchester] Matt aerial ready to put up at a moments notice . and [50] [After the]'s ready if [C. A. Dana] answer Geo D Sheldon
+  no2shuf: H5 C0 I0 M0
+    Maj Eckert Di Have had conference with Knocks [Jasper] must have ghost [Country]'s [Success] Matt aerial ready to put up at a moments notice . and mandate [Country]'s ready if [Humboldt] answer Geo D Sheldon
+F4 tokens=29 no1=12(0.41) no2=9(0.31) no9=5(0.17)
+  no1: H11 C0 I0 M0
+    Maj Eckert Di for [General] [Effect (-ed, -ing)] Chief of ord [Washington] [.] Please send me [300000] cart [Enemy]'s for [Has, or have been, reinforced] Rifles with all possible dispatch  {tail: [signed] Theodore Edson [Captain] Ord. Geo D Sheldon}
+  no2: H8 C0 I0 M0
+    Maj Eckert Di for [Harbor] [Entrench (-ed, -ing)] Chief of ord [Maj Gen B. F. Butler] unity Please send me [Concentrate (-ed, -ing) [#]] publish promise cart [Equipment]'s for [Information] Rifles with all possible dispatch [100] Theodore Edson [Battled [?]] Ord. Geo D Sheldon
+  no9: H5 C0 I0 M0
+    Maj Eckert Di for [Projectiles] [Ammunition] Chief of ord growl unity Please send me perfume publish promise cart [Convoys]'s for [Rifled Guns] Rifles with all possible dispatch [Troops] Theodore Edson princess Ord. Geo D Sheldon
+  no1shuf: H11 C0 I0 M0
+    Maj Eckert Di for [Danger] [Troops] Chief of ord [Gen J. M. Palmer] [.] Please send me [300000] cart [Demoralize (-ed, -ing)]'s for [Elizabeth] Rifles with all possible dispatch  {tail: [signed] Theodore Edson [Encountered enemy in strong force] Ord. Geo D Sheldon}
+  no2shuf: H8 C0 I0 M0
+    Maj Eckert Di for [Secretary of War] [Smith J E] Chief of ord [Aquia Creek] unity Please send me [Encounter] publish promise cart [Hovey A.P.]'s for [Organize (-ed, -ing)] Rifles with all possible dispatch [100] Theodore Edson [Yazoo] Ord. Geo D Sheldon
+F5 tokens=22 no1=9(0.41) no2=7(0.32) no9=5(0.23)
+  no1: H8 C0 I0 M0
+    Geo D Sheldon Ft. Monroe For [Maj Gen B. F. Butler] {time: 10.30 AM} Monday miller beat [Monroe] Alday [Tomorrow] [?] if so I will meat you and the admire all there at {time: 3 PM}  {tail: [signed] [Maj Genl U.S. Grant] about SH Beckwith}
+  no2: H7 C0 I0 M0
+    Geo D Sheldon Ft. Monroe For Knox {time: 10.30 AM} Monday miller beat [Tennessee] Alday [Throw] [Infantry] if so I will meat you and the admire all there at {time: 3.30 PM} [Saturday] [Imboden] about SH Beckwith
+  no9: H5 C0 I0 M0
+    Geo D Sheldon Ft. Monroe For Knox {time: 8 AM} Monday miller beat animal Alday [Surrounded] [Siege Guns] if so I will meat you and the admire all there at {time: 5 PM} [Troops] John about SH Beckwith
+  no1shuf: H8 C0 I0 M0
+    Geo D Sheldon Ft. Monroe For [Maj Gen Geo. H. Thomas] {time: 10.30 AM} Monday miller beat [Newbern] Alday [Chief of Staff] [?] if so I will meat you and the admire all there at {time: 3 PM}  {tail: [signed] [Diversion] about SH Beckwith}
+  no2shuf: H7 C0 I0 M0
+    Geo D Sheldon Ft. Monroe For Knox {time: 10.30 AM} Monday miller beat [Wheeler] Alday [Point] [City Point] if so I will meat you and the admire all there at {time: 3.30 PM} [Hardee] [Communicate (-ed, -ing)] about SH Beckwith
+F6 tokens=23 no1=2(0.09) no2=2(0.09) no9=1(0.04)
+  no1: H1 C0 I0 M0
+    Maj. Eckert [Volunteer] have heard from Sheridan period will probably get here tonight period please tell me quick if Beckwith or Caldwell have my cipher think I shall want to use it tonight
+  no2: H2 C0 I0 M0
+    Maj. Eckert [Wounded] have heard from Sheridan period will probably get here tonight period please tell me quick if Beckwith or [5] have my cipher think I shall want to use it tonight
+  no9: H1 C0 I0 M0
+    Maj. Eckert [Traitor] have heard from Sheridan period will probably get here tonight period please tell me quick if Beckwith or Caldwell have my cipher think I shall want to use it tonight
+  no1shuf: H1 C0 I0 M0
+    Maj. Eckert [Effect (-ed, -ing)] have heard from Sheridan period will probably get here tonight period please tell me quick if Beckwith or Caldwell have my cipher think I shall want to use it tonight
+  no2shuf: H2 C0 I0 M0
+    Maj. Eckert [Martinsburg] have heard from Sheridan period will probably get here tonight period please tell me quick if Beckwith or [5] have my cipher think I shall want to use it tonight
+F7 tokens=22 no1=8(0.36) no2=5(0.23) no9=2(0.09)
+  no1: H6 C0 I0 M0
+    Maj Eckert Di private {time: 7.30 PM} [20] poney [.] I here heavy & continuous firing about [15] miles from here in direction of battery [Bridge (-ed, -ing)] it may be [Maj Genl U.S. Grant] has reached there R OBrien
+  no2: H4 C0 I0 M0
+    Maj Eckert Di private {time: 7 PM} harsh poney [Sunday] I here heavy & continuous firing about ghost miles from here in direction of battery [Advance (-ed, -ing) [#]] it may be [Lomax] has reached there R OBrien
+  no9: H2 C0 I0 M0
+    Maj Eckert Di private {time: 2.30 PM} harsh poney [Movement] I here heavy & continuous firing about ghost miles from here in direction of battery patent it may be Jupiter has reached there R OBrien
+  no1shuf: H6 C0 I0 M0
+    Maj Eckert Di private {time: 7.30 PM} [20] poney [.] I here heavy & continuous firing about [15] miles from here in direction of battery [Maj Gen D. Butterfield] it may be [Division] has reached there R OBrien
+  no2shuf: H4 C0 I0 M0
+    Maj Eckert Di private {time: 7 PM} harsh poney [Carter S.P.] I here heavy & continuous firing about ghost miles from here in direction of battery [Norfolk] it may be [Raleigh] has reached there R OBrien
+F8 tokens=23 no1=8(0.35) no2=6(0.26) no9=5(0.22)
+  no1: H8 C0 I0 M0
+    Geo D Sheldon Ft. Monroe {time: 8 AM} for [D. D. Porter] [.] Your [Telegraph (-ed, -ing)] received [.] the [3] monitors Mahopac canon cuss and Saugus are ready for service  {tail: [signed] [Command = Er (-ed, -ing)]er park Kerr R OBrien}
+  no2: H6 C0 I0 M0
+    Geo D Sheldon Ft. Monroe {time: 8 AM} for [Slocum H W] [1000] Your [Valley] received [Sunday] the pebble monitors Mahopac canon cuss and Saugus are ready for service [Surrendered] polkaer park Kerr R OBrien
+  no9: H5 C0 I0 M0
+    Geo D Sheldon Ft. Monroe {time: 3 AM} for Niagara [Movement] Your [Intercept] received [Movement] the pebble monitors Mahopac canon cuss and Saugus are ready for service [Killed] polkaer park Kerr R OBrien
+  no1shuf: H8 C0 I0 M0
+    Geo D Sheldon Ft. Monroe {time: 8 AM} for [Government] [.] Your [Winchester] received [.] the [3] monitors Mahopac canon cuss and Saugus are ready for service  {tail: [signed] [Maj Gen W. T. Sherman]er park Kerr R OBrien}
+  no2shuf: H6 C0 I0 M0
+    Geo D Sheldon Ft. Monroe {time: 8 AM} for [Alexandria] [1000] Your [Success] received [Carter S.P.] the pebble monitors Mahopac canon cuss and Saugus are ready for service [Captain] polkaer park Kerr R OBrien
+F9 tokens=25 no1=12(0.48) no2=9(0.36) no9=2(0.08)
+  no1: H11 C0 I0 M0
+    [Monroe] [25] AM {date: July 10} for [General-in-Chief] [Washington] [.] none [Of the] [New Orleans] [Troops] have arrived yet  {tail: [signed] Jay W. Shaffer [Colonel] and chief of staff fine morning Geo D Sheldon}
+  no2: H9 C0 I0 M0
+    [Tennessee] feeble ghost AM July [Conasauga River] for Indian [Maj Gen B. F. Butler] [1000] none [Pursue (-ed, -ing)] [Lynchburg] whiskey have arrived yet [Surrendered] Jay W. Shaffer [Cars] and chief of [Station] fine morning Geo D Sheldon
+  no9: H2 C0 I0 M0
+    Appian feeble ghost AM July federal for Indian growl [Movement] none torch Emmet whiskey have arrived yet [Killed] Jay W. Shaffer paradise and chief of staff fine morning Geo D Sheldon
+  no1shuf: H12 C0 I0 M0
+    [Fortify (-ed, -ing)] [25] AM {date: July 10} for [Stevenson] [Gen J. M. Palmer] [.] none [Goldsboro] [Major] [Hill] have arrived yet  {tail: [signed] Jay W. Shaffer [Troops] and chief of staff fine morning Geo D Sheldon}
+  no2shuf: H9 C0 I0 M0
+    [Charleston] feeble ghost AM July [Winchester] for Indian [Aquia Creek] [1000] none [Unite (-ed, -ing)] [Richmond] whiskey have arrived yet [Captain] Jay W. Shaffer [Enemy] and chief of [West] fine morning Geo D Sheldon
+F10 tokens=21 no1=8(0.38) no2=5(0.24) no9=2(0.10)
+  no1: H6 C2 I0 M0
+    Geo D Sheldon & R OBrien add to the list of Extra arbitraries in no [1] [Cipher] the words [Maj. Gen. David Hunter] and [Maj. Gen. David Hunter] for [Major] [General] D [Lee] [.] acknowledge receipt TT Eckert
+  no2: H5 C0 I0 M0
+    Geo D Sheldon & R OBrien add to the list of Extra arbitraries in no plug [Communications] the words mackerel and mutton for [Our pickets] [Harbor] D [Washington] [1000] acknowledge receipt TT Eckert
+  no9: H2 C0 I0 M0
+    Geo D Sheldon & R OBrien add to the list of Extra arbitraries in no plug penfield the words mackerel and mutton for tappan [Projectiles] D Hunter [Movement] acknowledge receipt TT Eckert
+  no1shuf: H8 C0 I0 M0
+    Geo D Sheldon & R OBrien add to the list of Extra arbitraries in no [1] [Steam] the words [Monroe] and [Larkinsville] for [Secretary of War] [Danger] D [Our scouts report] [.] acknowledge receipt TT Eckert
+  no2shuf: H5 C0 I0 M0
+    Geo D Sheldon & R OBrien add to the list of Extra arbitraries in no plug [Edisto] the words mackerel and mutton for [Opelika] [Secretary of War] D [Fight (-ing, Fought) [#]] [1000] acknowledge receipt TT Eckert
