@@ -20399,6 +20399,13 @@ Biggs` 0, `Shore Baltimore World` 3 (5644 = E310; 5656 own; **10291**), `Davenpo
   could not resolve its IA id today); NARA RG 92 (Quartermaster General letters sent); the press of the day (Baltimore, New York World) for E623; JSTOR;
   HathiTrust full text.
 
+### 2a. Internet Archive full text (be-api, whole collection)
+`fortmonroe/fv_l17c_beapi.py` (+ `.out`), one take 18:1x UTC, 7 requests: the control query 'Suwo Nada' returned 502 on the first pass and 10 hits on its
+one retry after 25 s; 'Shore correspondent of the World Baltimore arrest Butler May 1864', 'W. W. Shore World correspondent arrested Baltimore 1864' (E623)
+and 'Meigs Biggs Rucker officer steamer Potomac stop vessels Fort Monroe April 20 1864' (E622) returned **0 hits**. These ran before the control answered, on
+a host that was answering intermittently, so they are weak negatives. 'send steamers to Chesapeake City to meet and escort the tows down the Bay' returned
+502 twice and was **not searched** (one retry, then stopped). FM-UND2's 7 E622-head queries (0 hits, control answered) stand beside these.
+
 ### 3. Grade and reading corrections (reading.md as of this audit; key look-ups in key.md)
 - **E622:** "pioneer [306]" -> **[256]** (image: one Mandate; drop the transcription's second "mandate"); lift the M. "Briggs" (header and list close) =
   **Lieut. Col. Herman Biggs**, Chief Quartermaster at Fort Monroe (9712 reads Biggs; OR I/33 index "Biggs, Herman"; E294 on the same leaf): a name spelling,
@@ -20454,4 +20461,4 @@ Biggs` 0, `Shore Baltimore World` 3 (5644 = E310; 5656 own; **10291**), `Davenpo
 - **E623:** header addressee "season ... not decoded, M" -> Maj. Gen. Lew Wallace, Baltimore (C, E168/E310/10291); "[Valley]" -> World (plain); tail
   "[signed] [Maj Genl U.S. Grant] I Davenport" -> "[.] John I. Davenport, Lieut., Office Bureau of [Information]" (`plain: John` or a gloss as E310's);
   header note: the 1 May order it refers to is E310 (clear copy 10291).
-- Requests this session: hdl.huntington.org 22 (all 200); be-api see s.2a; googleapis 0; archive.org 0.
+- Requests this session: hdl.huntington.org 22 (all 200); be-api.us.archive.org 7 (3 x 502, s.2a); googleapis 0; archive.org 0.
