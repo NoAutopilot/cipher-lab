@@ -1212,3 +1212,73 @@ SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing 
 - ciphers/wvo-hessen-1564 (1109 with 1107) and willem-van-hessen-1567 [same-design; unread] -- run design_prior.py with key_74/key_98 nomenclator against wvo-hessen-1564 cipher with shuffled-key control; ~$2; p 0.1; evidence: folders.tsv; KEY-DESIGN.tsv German 1560s nomenclator rows key_1069, key_74
 - Locat 9941/3 other leaves and KHA minute (clear draft of 126 postscript f.139) [same-volume; not-in-repo] -- WVO imaged-leaf listing for Locat 9941/3 f.xx; DDB/Archivportal-D (DDB_API_KEY) search for cipher leaves; ~$1; p 0.05; evidence: AUDIT.md:61 (minute unverified)
 - WVO 124 (cipher ~679 signs, ciphertext_124.tsv, align_124.txt) [same-volume; read] -- none: read and controlled (control_124.py 611/611 vs shuffled mean 0.100; NOTES.md:551-578); p 0.03; evidence: ciphertext_124.tsv, control_124.py, dp_check_124.py, pairs_124.tsv exist; NOTES.md:539 (corrected by reconciler: NOTES.md:551-578)
+
+## WVO-153-KEY (account 4, 10 Oct 2026, 00:36-00:5x UTC by date -u)
+
+Worker WVO-153-KEY-2 (Opus 5.5, session_01HPM6SotBgvufiXfyymdiXb; brief .claude/briefs/runs/2026-10-09-account4-wvo-1068-key.md
+Job B, cap 12, box 120). WVO 153, Oranje to August, 1 Sept 1566: a KEY SOURCE, its plaintext survives on the leaf in two
+contemporary decipherments, so this is a key rebuilt from the period decipherments (grade C), not a reading of an unread text.
+
+**Source.** `https://resources.huygens.knaw.nl/media/wvo/images/00000-00999/00153.pdf` fetched once (HTTP 200, 8,915,147 bytes) to
+the session scratchpad, not committed (images stay out of the repository). Native page images extracted with `pdfimages -j`
+(p6 2200x4214, about 383 dpi; p7 2033x2194; p8 2294x3694), not upsampled to 600 dpi: the native scan is the best image there is.
+- p6 (f.4) = the cipher (second "post data"), **20 lines, about 780 signs** (not "~200" as inventory.tsv said). Line bands:
+  `python3 tools/iiif_lines.py --image <scratch>/r/nat-000.jpg --out <scratch>/c6 --debug` -> 21 bands (L01 = the folio
+  number "4"; L02-L21 = cipher lines 1-20), debug overlay checked; each pass then cut its own 2x half or third zooms.
+- p7 (f.5) = witness W1, 19 clear lines; p8 (f.6) = witness W2, about 20 clear lines. They agree nearly word for word.
+  W2 lines 1-12 were read by this worker at native resolution; W1 only at an overview (W1 has 'wenig' where W2 omits it, and
+  'vberwachsset' as the cipher does).
+
+**Design (corrected).** 153 is **not** "a different design (overlined numerals)" (this file's Escalation bullet, inventory.tsv
+row 31): it is a letter substitution with few homophones (plain and tall d both c; S and the 5-like sign both zu) and a few word signs, and its values match **key_98 (System B)**:
+3=e, 2=i, 6=s, 0=a, 9=t, 1=h, 4=o, 5=u/v, 8=w, theta=r, Lambda=l, barred Lambda=m, open cup=n, barred cup=b, tall d=c,
+dagger d=d, q=f, crossed-foot loop=g, barred z / 7-with-ball=st, M=und, K=die, B=der, S=zu, plus Q=das and a dotted '.16.'
+over 'König zu Hispania'. The dagger strokes above the line that look like overlines are the cross-tops of the d-signs.
+
+**Method and cost units.** Band count stated before the first call (ROOM 00:40): cipher 7 bands, each witness 7 bands, 21 bands
+x 3 calls x about USD 2 = about 126 at the WVO-1068-KEY rate, so the full job was far over the cap. Run instead: band 1 (lines
+1-3) with two blind Sonnet passes (pass A with given conventions, pass B its own labels; one call each), and lines 4-9 (two
+bands) with one blind Sonnet call per pass over six line crops (pass A given labels, pass B own labels): 4 Sonnet vision
+calls in all (about 100-120k tokens each), reconciled by this worker on 2x zooms of the splits (about 12 worker image reads),
+then aligned by hand to W2 (+W1) in w153/recon_153.py. Pass A's 'vb' label on lines 4-9 lumped the open cup (n) with the
+barred cup (b); pass B separated them and its labels were used. Lines 10-20 are not transcribed (see Remaining).
+
+**Result.** `key_153.tsv` 31 classes from cipher lines 1-9 (347 signs): 27 C, 4 M (5z = zu read as 5 by both passes, 3 tokens;
+C16 '.16.' = König zu Hispania, 1; Zb barred x = z, 1; c open c = a, 1). `ciphertext_153.tsv` per token: C 313, M 34 (the M
+tokens are pass splits and places where the cipher's spelling differs from both witnesses: 'nuhr', 'augspurgis(ch)e' and
+'Caluinis(ch)' with no sch sign, 'weniger' vs W1 'wenig', 'vnrugiher' (h/g swapped), 'leuth ihre' vs W2 'leute jre',
+'Relligion', 'giwalt', 'vervolgen' with the u/v sign over f, and the three-sign code group over 'Stadt Antorff', not assigned).
+`python3 check_153.py --check` (reading_153.txt, recon_153.py --check, controls_153.py --check):
+```
+w153/recon_153.py -> check OK: ciphertext_153.tsv and key_153.tsv up to date
+w153/controls_153.py -> check OK
+reading_153.txt up to date
+exit 0
+```
+
+**Controls (rule 3), `python3 w153/controls_153.py`:**
+```
+(a) shuffle-consistency, all valued tokens N=330: real 1.000 | shuffled mean 0.232 p95 0.248 max 0.273 -> PASS
+    withheld tokens (value '-', cipher spelling differs from the witnesses) counted as misses: real 0.962 over N=343 (13 withheld) | same shuffled p95 0.248
+    C-graded tokens only N=313: real 1.000 | shuffled mean 0.232 p95 0.249
+(b) key_153 vs key_98: 26/26 classes same value | permuted p95 3 -> PASS; differ: none
+(b) key_153 vs key_98 [pre-fixed map: digits + 98's own reader labels only]: 11/11 classes same value | permuted p95 3 -> PASS; differ: none
+(b) key_153 vs key_74: 0/8 classes same value | permuted p95 1 -> FAIL; differ: 3=e/a, 6=s/l, 5=u/h, 0=a/g, 9=t/f, 1=h/e, 4=o/c, 8=w/b
+(b) key_153 vs key_53: 0/7 classes same value | permuted p95 1 -> FAIL; differ: 3=e/a, 2=i/d, 5=u/n, 0=a/g, 1=h/e, 4=o/c, 8=w/b
+```
+Caveats: (a)'s 1.000 is partly built in, because values were withheld where the cipher's spelling departs from the witness; the
+0.962 line counts those as misses. (b) The full key_98 map (26 classes) names some 153 shapes after key_98's legend by eye
+after the values were known (Lm->Lf, phi->Dp, vb->Pb, st->Ma, Zb->Yz, dT/d->D, dD->Td, q->Pf, g->Qg): that part is not
+independent. The pre-fixed map (the digits plus Sb='6', Z='2', Or='+'/theta, N='v' as key_98's own readers wrote them,
+NOTES.md:758) is independent of this worker's values and gives 11/11 against p95 3. key_74 and key_53 are mapped by digit
+identity only, and match nothing: 153 is not System A or the 53 system.
+Alignment tool cross-check (`tools/interlinear_align.py stream`, w153/stream_check.txt): 347 signs vs W2's text, 328 matched
+pairs, agrees with key_153 on 23/23 single-letter classes; the same run on W2's letters shuffled (seed 153) agrees 2/23.
+Two witnesses value by value: on lines 1-9 W1 and W2 give the same letters wherever both have the word, so no class carries a
+rule-4 W1/W2 conflict here; W1 was read only at an overview, so this is a provisional statement for W1.
+
+**Not done / next.** Cipher lines 10-20 (about 11 lines, 4 bands) and a native read of W1 are left: at the Sonnet-pass rate
+used here (2 Sonnet calls per 6 lines + worker reconciliation) about 2 more Sonnet pass pairs plus reconciliation, ~USD 4-6;
+the key_98-anchored transcription makes them a key-extension job (more word signs and the 'Stadt Antorff' group), not a new
+design question. Requests: resources.huygens.knaw.nl 1 (the PDF). Report what was found and where it was not found; novelty
+not classified.

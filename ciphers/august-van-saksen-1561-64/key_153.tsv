@@ -1,0 +1,33 @@
+sign	value	count	grade	note
+# WVO 153 (Oranje -> August, 1 Sept 1566) p6 lines 1-9: sign class -> value from the two period decipherments (p7/f.5, p8/f.6). A `period` key rebuilt by WVO-153-KEY-2 (account 4, 10 Oct 2026), w153/recon_153.py. C = every aligned token gives this value; M = values split, one token only under a held reading, or a code group.
+3	e	49	C	n=49 e:49
+v	n	35	C	n=35 n:35
+2	i	29	C	n=29 i:29
+TH	r	28	C	n=28 r:28
+6	s	22	C	n=22 s:22
+5	u	20	C	n=20 u:20
+0	a	19	C	n=19 a:19
+9	t	17	C	n=17 t:17
+L	l	13	C	n=13 l:13
+dD	d	12	C	n=12 d:12
+1	h	11	C	n=11 h:11
+g	g	11	C	n=11 g:11
+4	o	10	C	n=10 o:10
+8	w	7	C	n=7 w:7
+dT	c	6	C	n=6 c:6
+B	der	5	C	n=5 der:5
+Lm	m	5	C	n=5 m:5
+M	und	5	C	n=5 und:5
+vb	b	5	C	n=5 b:5
+q	f	4	C	n=4 f:4
+5z	zu	3	M	n=3 zu:3
+st	st	3	C	n=3 st:3
+K	die	2	C	n=2 die:2
+phi	p	2	C	n=2 p:2
+C16	Konig_zu_Hispania	1	M	n=1 Konig_zu_Hispania:1
+Q	das	1	C	n=1 das:1
+S	zu	1	C	n=1 zu:1
+V	k	1	C	n=1 k:1
+Zb	z	1	M	n=1 z:1
+c	a	1	M	n=1 a:1
+d	c	1	C	n=1 c:1

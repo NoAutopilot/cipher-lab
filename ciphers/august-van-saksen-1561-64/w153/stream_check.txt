@@ -1,0 +1,3 @@
+interlinear_align.py stream (tools/stream_align.py), syms_153.txt (347 signs, lines 1-9) vs w2_lines1-9.txt (witness W2, p8, lines 1-~12):
+  --band 40 --step 60 --first 100 --iters 4 -> stream_key_153.tsv; 328 matched pairs; agrees with key_153.tsv on 23/23 single-letter classes
+  shuffled-text control (W2 letters shuffled, seed 153, same options): 2/23

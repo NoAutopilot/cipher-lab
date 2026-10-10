@@ -28,7 +28,7 @@ briefnr	page	content	cipher_type	approx_tokens	decipherment_location
 153	p3	clear German prose continues (f.2)	n/a	0	n/a
 153	p4	clear German prose, closing + signature + date "1. Septembris anno [15]66" (f.3 top: "post data" heading)	n/a	0	n/a
 153	p5	clear German prose, first "post data" ("Der Tol", customs/toll matter), signed again	n/a	0	n/a
-153	p6	dense cipher block, foliated 4, signed "Wilhelm printz zu Uranien" -- second "post data"	numerals (2-3 digit, overlined), no symbol glyphs -- different design from 53/57/74/98/126	~200	see p7 AND p8 (WVO: "waarvan 2 oplossingen" -- TWO decipherments of this same cipher)
+153	p6	dense cipher block, foliated 4, signed "Wilhelm printz zu Uranien" -- second "post data"	numerals (2-3 digit, overlined), no symbol glyphs -- different design from 53/57/74/98/126 [corrected 10 Oct 2026, WVO-153-KEY-2: about 780 signs over 20 lines, digits plus letter-like signs; the System B / key_98 design, 26/26 values (NOTES.md WVO-153-KEY)]	~200	see p7 AND p8 (WVO: "waarvan 2 oplossingen" -- TWO decipherments of this same cipher)
 153	p7	CONTEMPORARY DECIPHERMENT #1: clear German prose, foliated 5, begins "Es ist aber zu erbarmen, das Calvinismus so weit einreisset..." (religious/political content, Calvinism vs. Augsburg Confession)	clear German prose	n/a	this page (decipherment copy 1 of 2)
 153	p8	CONTEMPORARY DECIPHERMENT #2: clear German prose, foliated 6, near-duplicate opening ("Es ist aber zu erbarmen dass Calvinismus so weit einreisset und die Augspurgische Confession begunstiget...") -- a second, independently worded decipherment of the same cipher (p6)	clear German prose	n/a	this page (decipherment copy 2 of 2)
 153	p9	address leaf, docketed "17. Septembris a[nn]o 66. Zeitung"	n/a	0	n/a

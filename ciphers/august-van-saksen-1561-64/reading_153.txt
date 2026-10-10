@@ -1,0 +1,10 @@
+# WVO 153 p6 (Oranje -> August, 1 Sept 1566) lines 1-9 of 20: ciphertext_153.tsv through key_153.tsv, 347 signs, key-class grades {'?': 3, 'C': 338, 'M': 6}. Key source (two period decipherments on p7/p8), not a reading of an unread text. WVO-153-KEY-2, 10 Oct 2026.
+L01: esistaberzu.erb[a]rmendasdercaluinismussoweitt
+L02: einreisset.unddieaugspurgiseconfessionuber
+L03: wachssetdaninallendiessenlandenseintnuhr
+L04: [z]wokirchenderaugspurgisenconfessionunddiewerden
+L05: indiesser[?][?][?]erhaltenderanderhauffistdurchauss
+L06: caluinisdarumbsthet[zu]besorgender[Konig_zu_Hispania]werde[zu]
+L07: enderungderrelligionwenigeruershenundmitt
+L08: rathund[zu]thununrugiherleuthihrealterelligion
+L09: mittgiwalterhaltenunddieandernueruolgen
