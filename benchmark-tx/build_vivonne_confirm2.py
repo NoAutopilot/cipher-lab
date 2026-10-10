@@ -50,6 +50,17 @@ committed = the reference sequence (home advantage, errs only on its conflicts);
 
     python3 benchmark-tx/build_vivonne_confirm2.py           # (re)build, print counts + control + sha256
     python3 benchmark-tx/build_vivonne_confirm2.py --check   # rebuild in memory; exit 1 if truth, sha256 or outputs are stale
+    python3 benchmark-tx/build_vivonne_confirm2.py --start 6500 [--check]   # RE103 re-anchored item vivonne1573-f103r-confirm2-s6500
+
+--start S (TX-RE103, PREREG-txeng2-20 section RE103, 10 Oct 2026; as build_vivonne_f102r.py's --start, DV1d): the f.103r stretch
+alone is aligned (same DP, band 400) to the dec_norm window [S : S+W], W = 3624 = SCAN-103's window (round(1.25 x the frozen
+control span), benchmark-tx/txeng2/scan103/scan.json; clipped at the end of dec_norm), S = SCAN-103's best offset, instead of
+taking its stretch of the j0-anchored whole-stream alignment. Key forcing, exclusions, the flag rule and the control are
+unchanged; TXV-VIV's verdicts are re-applied from the frozen item's flags file by (line, raw position), and only where the new
+alignment again sets align-conflict. The item id becomes vivonne1573-f103r-confirm2-s6500 (new truth, sha256 and outputs dir);
+the confirm2 item, its truth and outputs stay untouched. The build also prints the selection-fair margin: the control's
+published-key share minus SCAN-103's best-over-scan null max (confirm.json best_offset_null.null_best_max).
+Without --start the build is byte-identical to the frozen one.
 """
 import difflib, hashlib, json, os, random, re, sys
 
@@ -69,6 +80,14 @@ ODIR = os.path.join(OUT, 'outputs', ITEM)
 WIN, WMIN = 8, 0.5
 DEC_PAGES = ('f105v', 'f106r', 'f106v', 'f107r', 'f107v', 'f108r', 'f108v')
 COLS = 'line\tpos\tref_sign\ttruth\tplain\tstatus\tflag\n'
+FLAGS = os.path.join(OUT, ITEM + '.flags.tsv')
+START, W_START = None, 3624
+if '--start' in sys.argv:
+    START = int(sys.argv[sys.argv.index('--start') + 1])
+    ITEM = 'vivonne1573-f103r-confirm2-s%d' % START
+    TRUTH = os.path.join(OUT, ITEM + '.truth.tsv')
+    SHA = TRUTH + '.sha256'
+    ODIR = os.path.join(OUT, 'outputs', ITEM)
 
 
 def raw_tokens(path):
@@ -173,6 +192,11 @@ def build():
     seq = [t[1] for t in stream]
     amap, dec = align(seq, let, pub)
     i0 = next(k for k, t in enumerate(stream) if t[0] == 'f103r')
+    if START is not None:  # RE103: re-anchor the f.103r stretch alone at dec_norm offset START (window W_START letters)
+        let = allet[START:START + W_START]
+        cmask = clerk_mask(len(allet))[START:START + W_START]
+        am_seg, _ = align(seq[i0:], let, pub)
+        amap = {k + i0: j for k, j in am_seg.items()}
 
     def ok(k):  # aligned, keyed: does the decoded value equal the aligned letter?
         return dec[k] >= 0 and k in amap and dec[k] == let[amap[k]]
@@ -201,11 +225,14 @@ def build():
     rank = 1 + sum(1 for x in sh if x >= real)
     ctrl = ('control: f.103r match share, published key %.3f vs 200 value-shuffled keys mean %.3f p95 %.3f max %.3f, rank %d of '
             '201' % (real, sum(sh) / len(sh), sorted(sh)[189], max(sh), rank))
+    if START is not None:
+        nb = json.load(open(os.path.join(OUT, 'txeng2', 'scan103', 'confirm.json')))['best_offset_null']['null_best_max']
+        ctrl += '; selection-fair margin %.4f (published %.4f minus SCAN-103 best-over-scan null max %.4f)' % (real - nb, real, nb)
 
     # TXV-VIV (9 Oct 2026): verifier verdicts on the align-conflict positions, keyed by the oo's first raw position (both raw
     # rows of a collapsed oo carry the same verdict); FLAG -> class in the flag column, CORRECT -> truth re-forced, KEEP -> cleared
     flags = {}
-    fp = os.path.join(OUT, ITEM + '.flags.tsv')
+    fp = FLAGS
     if os.path.exists(fp):
         lines = [l for l in open(fp, encoding='utf-8').read().splitlines() if not l.startswith('#')]
         hd = lines[0].split('\t')
@@ -256,6 +283,11 @@ def build():
     hdr = ('# Vivonne 1573 (BnF fr.16105 f.103r, Saint-Gouard to Charles IX) confirmation item, split=confirm2: clerk period '
            'decipherment (ff.104r-108v) under the published Tomokiyo key (C rows); built by benchmark-tx/'
            'build_vivonne_confirm2.py (TX-CONFIRM-SET-2). LANE TX-ENGINEER-2 scores this ONCE, at the end.\n# %s\n' % ctrl)
+    if START is not None:
+        hdr = ('# Vivonne 1573 (BnF fr.16105 f.103r, Saint-Gouard to Charles IX) confirmation item confirm2-s%d, split=confirm2: '
+               'clerk period decipherment (ff.104r-108v) under the published Tomokiyo key (C rows), f.103r re-anchored at dec_norm '
+               'offset %d (build_vivonne_confirm2.py --start %d; TX-RE103, PREREG-txeng2-20 RE103, SCAN-103 best offset). '
+               'TXV-VIV verdicts re-applied by (line, raw position).\n# %s\n' % (START, START, START, ctrl))
     body = hdr + COLS + ''.join('\t'.join(str(x) for x in r) + '\n' for r in rows)
     outs = {}
     for name, path in (('committed', 'f103r_rec.tsv'), ('passA', 'f103r_passA.tsv'), ('passB', 'f103r_passB.tsv')):

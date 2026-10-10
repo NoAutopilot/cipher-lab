@@ -1,0 +1,6 @@
+positions 2033, scored 1112, excluded 921
+status counts: scored 1112, excluded:unaligned 277, excluded:align-uncertain 255, excluded:off-key 132, excluded:key-M-S 105, excluded:letter-off-key 104, excluded:key-M-y 41, excluded:key-M-b 5, excluded:key-M-A 2
+flags on scored: align-conflict 148, clerk-split 472, any 636, none 476
+align-conflict share among clerk-agreed scored: 103/640
+control: f.103r match share, published key 0.607 vs 200 value-shuffled keys mean 0.426 p95 0.498 max 0.557, rank 1 of 201; selection-fair margin 0.0287 (published 0.6069 minus SCAN-103 best-over-scan null max 0.5782)
+sha256 5ac8f5e05c5c9641a78d7ee057adfe20e94e8bd0825e8a39d2354aecd6268cef
