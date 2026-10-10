@@ -112,3 +112,18 @@ not found.
 Held for wave 4: a first verifier (Opus) on OR-CACHE's hits (N3 -> N1 where the print holds); AUD2 rows already queued need nothing from this lane.
 
 (11:2x UTC 10 Oct by date -u: wave 3 spawned with source_url: FIX-L14 session_01MnJxo7xFEDqZ5TquLzA1VU, OR-CACHE session_01F6mJ9GibCyU5amLnnN9Ug1.)
+
+---
+
+# Wave 4 (written 10 Oct 2026 12:1x UTC by date -u; lane workers 25.81 by get_session)
+Wave 3: FIX-L14 1.54 (all three audits' corrections applied, decode x3 --check 0), OR-CACHE 3.01 (map print/or_volume_map.tsv; 7 parts cached, 26 of 48 ser. I
+vols 32-49 parts on disk; 176 N3 entries re-grepped; leads E171 (Fort Monroe, LEDGER-13's) and E54).
+
+## FV-L14d (Opus 5.5, first verifier, separate from every reader and from OR-CACHE; cap $2, box 50 min): E54 against OR I/44 p.626
+OR-CACHE lead (NOTES "## OR-CACHE" (2)): E54 (Dyer to Capt. Edson, 5 Dec 1864, ordnance supplies for Sherman's army to Hilton Head) shares an 8-word run with
+Halleck to the Surgeon-General, Washington, 5 Dec 1864, OR I/44 p.626 ("all supplies, stores, and material for General Sherman's army be immediately sent
+to Hilton Head ..."; copies to the Chief of Ordnance and others). Read the OR page (image or `_djvu.txt`, the cached 44unit), diff it against E54's derived
+reading block, and rule under the G3 SUBSTANCE rule of .claude/briefs/prior-work-step.md item 5 (and the E49/E54/E72 precedent, AUDIT.md around the
+"SUBSTANCE: N3 -> N2" line): keep, N2 (parallel order printed, this mapping not), or N1. Step 0 information only. AUDIT.md "## AUDIT (FV-L14d)"; if the class
+changes, update status.json and any SECOND-OPINIONS-QUEUE.tsv / WORK-QUEUE AUD2 row for E54 per rule 10 (propagation). file_shrink_guard; depth_check.
+Report what was found. Do not touch E171 (LANE LEDGER-13's).
