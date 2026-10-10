@@ -2465,5 +2465,17 @@ Code-word tokens: H 24.
 
 Code-word tokens: H 32, C 1.
 
-Totals over the 389 entries: H 6766, C 96, I 25, M 46, S 21, U 10.
+**E620 | Page 237 | 9897 | mssEC 18 (obj 10074, pointer 9897; printed page 231), 15 Nov 1864 Washington 10 PM ('John Horner, New York, Washn Nov 15th 1864'), signed [C. A. Dana] by the key (M), to [Maj. Gen. Dix] (M): I am confidentially informed that Beverly Tucker will cross at [Niagara] Falls on Thursday morning; I am also informed that John Odell may be relied upon to arrest him, but I do not know Odell; have you any officer of sufficient discretion who can at once be dispatched to the falls for the purpose? (L14-C; row 9897/1; holder transcription, leaf not eye-checked)**
+
+{time: 10 PM} [15] [Maj Gen Jno A. Dix] [.] I am confidentially informed that Beverly Tucker will cross at [D. D. Porter] Falls on thursday morning [.] I am also informed that [Maj Genl U.S. Grant] Odell may be relied upon to arrest him but I do not know Odell [.] Have you any officer of sufficient discretion who can at once be dispatched to the falls for the purpose [?]  {tail: [signed] [C. A. Dana]}
+
+Code-word tokens: H 11.
+
+**E621 | Page 202 | 9862 | mssEC 18 (obj 10074, pointer 9862; printed page 196), 7 Oct 1864 Washington 4 PM ('J W Sampson, Washn Oct 7th 1864'), signed [General-in-Chief] (Halleck, M), for J. W. Garrett (B&O Railroad): arms were sent from here to Harper's Ferry on the afternoon of the 5th inst.; it is reported that they have not arrived there; please see if they have been delayed on the Rail Road; it is important that there should be no delay (L14-C; row 9862/0; holder transcription, leaf not eye-checked)**
+
+{time: 4 PM} for J W Garrett [.] [Arms] were sent from here to [Harpers Ferry] on the after noon [Of the] [5] inst It is [Report]ed that they have not arrived there Please see if they have been delayed on the [Rail Road] Its impt that there should be no delay  {tail: [signed] [General-in-Chief] she went on to tell " (Cal) " 6 P. m}
+
+Code-word tokens: H 10.
+
+Totals over the 391 entries: H 6787, C 96, I 25, M 46, S 21, U 10.
 <!-- decode.py: derived block ends -->

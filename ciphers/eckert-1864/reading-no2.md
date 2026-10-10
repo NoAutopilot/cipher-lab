@@ -1323,5 +1323,11 @@ Code-word tokens: H 16, C 2.
 
 Code-word tokens: H 16.
 
-Totals over the 150 entries: H 3531, C 130, I 119, M 17.
+**N2-SA | Page 190 | 9850 | mssEC 18 (obj 10074, pointer 9850; printed page 184), 26 Sept 1864 Washington 12.30 PM ('Kimber N.O., Washn Sept 26th 1864'; entry 2 of the leaf; 'No 1 9 AM' is a service note), to Maj. Gen. E. R. S. Canby, signed H. W. Halleck (tail group 'welch Lamb', M): an officer of rank and experience should be sent by you to investigate alleged frauds and inefficiencies in Arkansas and especially at Fort Smith and the Indian Territory; Grant has given [Smith] full discretion to act with his command as he may deem best against Kirby Smith, Price and company (L14-C; row 9850/2; holder transcription, leaf not eye-checked)**
+
+{time: 12.30 PM} [26] for [Maj Gen E R S Canby] [.] An officer of [Has been sent] and experience should be sent by you to investigate alleged frauds and inefficiencies in [Arkansas] and especially at [Fort] [100] & the Indian Territory ---- [Grant U S] has given [Smith] full discretion to act with his [Command (-ed, -ing)] as he may deem best against [Kirby Smith] [Price] and Com'p'y  {tail: [signed] [H W Halleck] No 1 9 AM}
+
+Code-word tokens: H 16.
+
+Totals over the 151 entries: H 3547, C 130, I 119, M 17.
 <!-- decode.py: derived block ends -->

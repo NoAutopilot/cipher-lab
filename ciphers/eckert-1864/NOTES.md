@@ -6353,3 +6353,44 @@ Requests: hdl.huntington.org 17 + 8 + 5 (two takes, one for the three leaf image
 ### Escalation (L14-A)
 Done within the brief; 9835/1 stays unread (no clause); Verdict: keep going (verifiers for E600-E604; page-image reads for the two in-print rows).
 
+
+## L14-C (10 Oct 2026, account 1, for LANE LEDGER-14)
+Job: nine mssEC 18 rows the earlier readers held as step-0 hits (MS18-R11: 9869/4 9764/1 9897/1 9862/0 9885/3, Cipher No. 1; N2R-6: 9848/0 9811/0 9688/0 9850/2, Cipher No. 2). Worker L14-C (Sonnet 5.5), 09:52-10:3x UTC by `date -u`. Under the LEDGER-14 RULING (a step-0 hit is a non-test, STEP0-KEYCTL) a row is filed unless a holder clear copy at another pointer exists, it is located in print, or it is plain / has no clause. Result: **3 filed (E620, E621, N2-SA), 6 in print (not filed), 0 holder clear copies.** The readings were made by the earlier readers (ms18_r11.py, n2r6.py output reproduced here by the same decoders); nothing re-derived.
+
+Intake gate (10 Oct 2026 09:52 UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+**Prior-work step (by hand).** (1) own work: the nine row ids grepped in ciphertext*.txt and NOTES.md at 09:5x: only the MS18-R11 / N2R-6 sections named them, none filed; the neighbouring entry of pointer 9850 (N2-IB, 'Shelby'/N2R-4) is a different telegram. ROOM.md had no other live claim on them. (2) holder transcription of the same pointer: step 0 figures below, as the earlier readers recorded them (information only). (3) holder clear copy: `ms18/l14c_hdl.py` (`.out`), 11 CISOSEARCHALL requests, control 9678 returned 9678: hits only each row's own pointer (9764, 9897, 9885, 9811, 9850) or none; no row has a clear copy at another pointer. (4) print: `ms18/l14c_print.py` (`.out`), 177 cached volumes (OR, ORN, Butler Corr. IV-V, Grant-era calendars; letters-only phrase grep plus date-window), then IA be-api full-text (snippets, no page numbers): `l14c_beapi.py`-`l14c_beapi5.py` (`.out`), 33 be-api requests. The whole-collection be-api control (the 9764/1 phrase) returned 0 in round 1, so whole-collection misses are weak; the in-volume control (round 2) hit.
+
+| row | entry | step 0 (a) / (b) p95 | holder | print | verdict |
+|---|---|---|---|---|---|
+| 9869/4 | 17 Oct 1864, Washington 2 PM, Halleck to Carey? at Lexington Ky: no troops available to reinforce Paducah ... assignment of General Meredith not deemed judicious | 0.686 (24/35) / 0.286 | 0 hits | be-api: "The assignment of General Meredith was not deemed judicious by the War Department" in OR I/39 pt 3 (IA warofrebellionco0039majg_t8d1, warofrebellionco0039unit_y0l1, warrebellion02unkngoog; page not read, Oct 1864 is pt 3) | in print (not filed) |
+| 9764/1 | 23 June 1864 9 PM, Halleck to Stahel, Martinsburg | 0.917 (33/36) / 0.333 | own pointer only | OR I/37 pt 1 (IA warofrebellion371unit), "Washington, June 23, 1864-9 p. m. Major-General Stahel ... I have no orders to give you, except to carry out General Hunter's instructions ... attacked Lynchburg and been repulsed ... great caution" (cached djvu text; page not read, the 22 June item is on p.660; in-volume be-api control hit) | in print (not filed) |
+| 9885/3 | 3 Nov 1864 9 PM, Stanton to Butler: "I have telegraphed to General Dix ... matter will be settled now without trouble" | 0.611 (22/36) / 0.250 | own pointer only | OR I/43 pt 2 (IA warofrebellion432unit) p.536 by running heads (OCR date 'November 6'); Butler Corr. V (IA privateofficialc05butl) 'Washington, Nov. 3d, 1864' | in print (not filed) |
+| 9688/0 | 16 Mar 1864 12.30 PM, Halleck to Grant, furloughs of veteran regiments, Dept. of the South | 0.548 (17/31) / 0.226 | 0 hits | OR I/35 pt 2 (IA warofrebellion352unit), 'Washington, March 16, 1864-12.30 p. m. ... Nashville': text word for word, running head 20 precedes (about p.20-21, M) | in print (not filed) |
+| 9848/0 | 21 Sept 1864 2 PM, Halleck to Grant: a veteran regiment sent yesterday to Johnson's Island as additional guard for prisoners ... new regiments to await Sheridan | 0.511 (23/45) / 0.222 | 0 hits | OR I/39 pt 2 (IA warofrebellion013902rootrich, warofrebellionco0039geor_v8g5 ...) and Grant Papers vol. 12 (IA papersofulyssess0012gran), 'A veteran regiment was sent from here yesterday to Johnson's Island, as additional ...' (be-api snippets; page not read). The N2R-6 decode's 'Imboden sons Island' is Johnson's Island | in print (not filed) |
+| 9811/0 | 4 Aug 1864, Halleck to Grant, declines to decide the Hunter / Sheridan questions | 0.707 (29/41) / 0.244 | own pointer only | Grant Papers vol. 11 (IA papersofulyssess0011gran) and Anderson, Henry Halleck's War (IA henryhalleckswar0000ande), 'freely and frankly given; but I must beg to be excused from deciding questions which lawfully and properly ...' (be-api snippets; page not read) | in print (not filed) |
+| 9897/1 | 15 Nov 1864 10 PM, to Dix: Beverly Tucker will cross at [Niagara] Falls; John Odell | 0.765 (26/34) / 0.353 | own pointer only | not located (below) | **filed E620** |
+| 9862/0 | 7 Oct 1864 4 PM, for J W Garrett: arms sent to Harper's Ferry on the 5th not arrived | 0.579 (11/19) / 0.316 | 0 hits | not located | **filed E621** |
+| 9850/2 | 26 Sept 1864 12.30 PM, Halleck to Canby: officer to investigate frauds, Fort Smith, Indian Territory; Grant's discretion against Kirby Smith, Price | 0.500 (18/36) / 0.250 | own pointer only | not located | **filed N2-SA** |
+
+**Filed entries (`ms18/l14c_file.py`; `decode.py --write`, `decode_no2.py --write`, then `decode.py`, `decode_no2.py`, `decode_no9.py --check` all exit 0).** E620 (Cipher No. 1, H11, names Dix/Dana/Niagara M), E621 (No. 1, H10, names M), N2-SA (No. 2, H16, 'Fort [100]' = Fort Smith M). Leaves were not opened: holder transcription only, so these are transcription-conditional readings (rule 2). Book assignment is by sense: the shuffled-copy H counts tie the book's on every row (count control cannot fail, licenses nothing).
+Where not located, the sources actually searched: 177 cached volumes (phrase + date window); be-api whole-collection phrase queries (weak, control failed in whole-collection mode) and inside OR I/39 pt 3 / I/43 pt 2 / I/41 (guess of identifier) / I/37 pt 2. NOT searched: OR I/39 pt 3 and I/41 pt 3 page text (not cached, IA djvu not fetched), Grant Papers vols. 12-13 text by page, Lincoln Collected Works, the Washington press of the day, ser. III. A "not located" here is a search result for the log (rule 10), not a novelty verdict.
+
+Requests: hdl.huntington.org 11 (all 200 after one dropped connection retried after 25 s, take released 09:5x), IA be-api 33, other hosts 0.
+
+## Remaining gaps (L14-C, 10 Oct 2026)
+Read so far: 9 of 9 rows handled (3 filed, 6 in print); the three filed rows are transcription-conditional (leaves not opened).
+- print pages of OR I/39 pt 3 (Oct 1864) and I/41 pt 3 (Sept 1864) for E620, E621, N2-SA - blocker: not-attempted; the two djvu texts were never fetched; next: fetch once and grep, ~$0.1
+- leaf eye checks of pointers 9897, 9862, 9850 - blocker: not-attempted; cap; next: `tools/iiif_lines.py --image` crops, ~$0.2 each
+- page cites (vol/page) for the in-print rows 9869/4, 9764/1, 9688/0, 9848/0, 9811/0 - blocker: not-attempted; be-api gives no page numbers; next: IA page read, ~$0.1 each
+- first verifiers for E620, E621, N2-SA - blocker: not-attempted; wave 2 of LANE LEDGER-14 names them; next: first verifier (Opus), ~$1.4 per entry
+
+## Escalation (L14-C, 10 Oct 2026)
+- [x] siblings: other entries on the same leaves are other telegrams (N2-IB at 9850 is a different one).
+- [x] clear-pages: holder clear-copy queries on all nine rows, none at another pointer.
+- [x] known-keys: Nos. 1, 2, 9 tried by vocabulary share and by sense on every row.
+- [x] print: 177 cached volumes plus 33 be-api requests; six rows located in print.
+- [n/a] key-rebuild: no new key value used or proposed.
+- [ ] image-check: the three filed leaves not opened (holder transcription only).
+- [x] retry: one dropped hdl connection retried after 25 s, then done.
+Verdict: keep going: 4 internal gaps; cheapest next: fetch OR I/39 pt 3 and I/41 pt 3 djvu texts and grep, ~$0.1
