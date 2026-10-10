@@ -14986,3 +14986,153 @@ djvu (`warofrebellion422unit`, sha256 a8256afaf8b20e02..., = or_volumes.tsv) rea
   copy; owner-side or a reproduction order); Risch 1962 at the "200 additional sailing vessels" passage.
 - JSTOR-QUEUE.tsv (2 rows): (i) Meigs AND Ingalls AND Rucker AND steamboats AND "City Point" AND 1864; (ii) "flag of truce boats and the boats about".
 Requests: hdl.huntington.org 9 (9 CISOSEARCHALL), all 200; archive.org 2 (1 djvu, 1 metadata), all 200; www.googleapis.com 15 (11 + 4), all 200. For orchestrator (account-4).
+
+## AUDIT (FV-MS18p)
+
+Verifier FV-MS18p (account 1, for LANE LEDGER-10), 10 Oct 2026, 03:59-04:2x UTC by `date -u`; a separate session from the reader MS18-R7, not
+protecting its conclusions. Scope: N1 confirmation of **E372, E373, E376, E377, E380** (NOTES "## MS18-R7", placed in print from OCR running heads),
+the class of **E379** (quoted Burbridge dispatch printed; the relay frame not located), and the eye check of the five leaves MS18-R7 did not
+eye-check (9907, 9878, 10013, 9774, 9732). Sent ledger mssEC 18 = Huntington object 10074, Cipher No. 1. Nothing decoded beyond key look-ups in
+key.md. Key source for all six: `period`. No spec for eckert-1864, so `judge_plaintext.py` was not run. Intake gate (03:5x UTC, LANE LEDGER-10 brief
+and re-run): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Scripts: `ms18/fv_ms18p_step0.py`
+(+ `.out`), `ms18/fv_ms18p_ia.py` (+ `.out`), `ms18/fv_ms18p_hdl.py` (+ `.out`).
+
+### 0. Step 0: is the body clear in the holder's own transcription? (LANE LEDGER-10 lesson, AUD2-LEDGER-38)
+`ms18/fv_ms18p_step0.py`, disk only (sources/mssEC18/p<pointer>.json). `all` = decoded content words found in order in the transcription / decoded
+content words (stop-words out, one case); `code` = meanings of the code groups found in the transcription; control = `all` against 20 random other
+mssEC 18 pages, p95.
+| ID | pointer | all overlap | code overlap | control p95 | step 0 |
+|---|---|---|---|---|---|
+| E372 | 9907 | 0.423 (11/26) | 0.091 | 0.077 | cipher transcription |
+| E373 | 9878 | 0.233 (7/30) | 0.000 | 0.067 | cipher transcription |
+| E376 | 10013 | 0.588 (10/17) | 0.250 | 0.118 | cipher transcription |
+| E377 | 9774 | 0.345 (10/29) | 0.000 | 0.069 | cipher transcription |
+| E379 | 9759 | 0.468 (44/94) | 0.000 | 0.032 | cipher transcription |
+| E380 | 9732 | 0.597 (46/77) | 0.000 | 0.052 | cipher transcription |
+**None is a step-0 item.** Each transcription is the cipher text as entered (Growl, Polka, Mellows, Piloted ... in place of the meanings); the
+overlap over 0.5 on E376 and E380 comes from the plain words this system leaves in clear, and the code overlap is near 0 on all six (E376's 0.25 =
+"service able", "under your orders" around a code word, not a decipherment). The brief's ">= half the content words" test alone would have flagged
+E376 and E380 wrongly; the code-group column is what separates a clear copy from a cipher transcription.
+
+### 1. Print, on the page image (IA page images at 1400 px; ids from `ciphers/eckert-1862/ec18/or_volumes.tsv`)
+| ID | volume (IA id) | leaf | page head on the image | print as read on the image |
+|---|---|---|---|---|
+| E372 | OR I/45 pt 2 (`warofrebellion452unit`) | 88 | "82 KY., SW. VA., TENN., MISS., ALA., AND N. GA. [CHAP. LVII." | Washington, D. C., December 6, 1864--10 a.m.; Commanding Officer, Memphis: "You will immediately endeavor to cut the Mobile and Ohio Railroad so that Hood's army cannot be supplied by that route. Call on General Reynolds for assistance if necessary." H. W. Halleck, Major-General and Chief of Staff. "Commanding officer at Cairo will forward this by special messenger. H. W. H." |
+| E373 | OR I/39 pt 3 (`warofrebellion393unit`) | 488 | "482 KY., SW. VA., TENN., MISS., ALA., AND N. GA. [CHAP. LI." | Washington, October 28, 1864--1.40 a.m.; Major-General Thomas, Nashville, Tenn.: "General Grant has ordered General Rosecrans to send you re-enforcements to Eastport, but it by no means follows that he will do so. As I shall be absent from Washington three or four days, please communicate with General Rosecrans." H. W. Halleck, Major-General and Chief of Staff. |
+| E376 | OR I/48 pt 2 (`warofrebellion482unit`) | 511 | "CHAP. LX.] CORRESPONDENCE, ETC.--UNION. 505" | Washington, D. C., May 19, 1865--8.30 p.m.; Maj. Gen. John Pope, Saint Louis, Mo.: "The Quartermaster's Department will deliver to you at Saint Louis in about one week 2,500 serviceable cavalry horses, to be issued under your orders." Jno. A. Rawlins, Brigadier-General and Chief of Staff. (Directly after Pope's 19 May, received 6.15 p.m., "What shall we do for horses ...?") |
+| E377 | OR I/37 pt 2 (`warofrebellion372unit`) | 69 | "CHAP. XLIX.] CORRESPONDENCE, ETC.--UNION. 63" | Washington, July 5, 1864--4 p.m.; Major-General Hunter, Parkersburg, W. Va.: "General Grant has revoked the order that you report to him in person, and directs that you take the immediate direction of operations against the enemy's forces now threatening Maryland and the Baltimore and Ohio Railroad." H. W. Halleck, Major-General and Chief of Staff. |
+| E380 | OR I/34 pt 3 (`warofrebellion013403rootrich`) | 486 | "480 LOUISIANA AND THE TRANS-MISSISSIPPI. [CHAP. XLVI." | Washington, May 6, 1864--3.30 p.m.; Brigadier-General R. Allen, Louisville, Ky.: "Dispatches just received from Little Rock, dated April 28, state that General Steele's supply train of 240 wagons was captured on the 25th, at Marks' Mills, on the Camden road, near the Saline River. You will immediately adopt measures to supply this loss in provisions and transportation by the Arkansas or Washita River, as you may deem most practicable. Officers or quartermaster's agents should be sent to Saint Louis, Cairo, Memphis, &c., to collect wagons, mules, &c., and send them forward. The Department of the Missouri should be able to supply a part, at least, of your immediate wants. Telegraph for any orders you may require to take them, if General Rosecrans will not give them up." H. W. Halleck, Major-General, Chief of Staff. |
+| E379 (quoted part) | OR I/39 pt 1 (`warofrebellion391unit`) | 42 | "20 KY., SW. VA., TENN., MISS., ALA., AND N. GA. [CHAP. LI." | Lexington, Ky., June 13, 1864 (Received 11.53 p.m.); to Maj. Gen. H. W. Halleck: "I attacked Morgan at Cynthiana at daylight yesterday morning, and after an hour's hard fighting completely routed him, killing 300, wounding as many, and capturing nearly 400, besides recapturing nearly all of General Hobson's command and over 1,000 horses. Our loss in killed and wounded about 150. Morgan's scattered forces are flying in all directions; have thrown away arms; are out of ammunition and wholly demoralized." S. G. Burbridge, Brigadier-General. |
+**All six page numbers are on the image and agree with the reader's running-head pages** (82, 482, 505, 63, 480, 20); `_page_numbers.json` gave
+the right leaf on all six volumes this time. Diff, print against the leaf (s.3) and reading.md (date, hour, sender, addressee, body):
+- **E372:** body identical once the ledger's sound-spellings are read ("imm'y end ever" = immediately endeavor; **"Hudsons" = Hood's**, plain
+  sound-spelling, C by print, not a code word; "as sistems" = assistance). Date, hour 10 a.m., addressee (commanding officer, Memphis) agree;
+  Monster = Reynolds C by print. Signer: decoder [General-in-Chief] (Italy), print "Major-General and Chief of Staff" (Halleck's title from March
+  1864, same man; as FV-MS18e E332, FV-MS18m E362). The print's routing line "Commanding officer at Cairo will forward this by special messenger"
+  is not on the ledger (the ledger copy went to the Memphis operator R. S. Fowler); the print also carries a twin of the same hour to the
+  commanding officer at Vicksburg ("make every possible exertion to destroy the Mobile and Ohio Railroad") that is not this entry.
+- **E373:** body identical. Addressee, date agree. **Hour:** print 1.40 a.m.; the ledger's time word "francis" decodes 12 (the next entry on the
+  same leaf, Byington, has "Oct harrow platina francis" too): not resolved, M, as MS18-R7 said. Signer as E372.
+- **E376:** body identical ("Pipe" = Pope, plain sound-spelling, C by print; "weak" = week; "Toby is sued" = to be issued). Year 1865 C by print;
+  hour 8.30 p.m., signer Rawlins Brigadier-General and Chief of Staff agree.
+- **E377:** body identical **except one word**: the ledger's code word Polka (key.md Command) where the print has "the immediate **direction** of
+  operations" -- a clerk's or editor's synonym; sense C, the word M. **Harlem = Baltimore and Ohio Railroad** (C by print; MS18-R7's C 1). **Decoder
+  slip: "person" is plain** on the leaf ("report to him in person", print the same); the reading renders it [5] (the same slip FV-MS18m found on
+  E368). Hour 4 p.m., Hunter at Parkersburg agree; tail "Irelands observe checks Pirate" is the operator's, not in the print.
+- **E380:** body identical except: the ledger omits "or" in "Officers [or] quartermaster's agents"; **"Sabine" on the leaf (clearly written) for the
+  print's "Saline"** -- a clerk's slip of the pen or hearing, M; **decoder slip: "Camden" is plain** (print "on the Camden road"; the holder's next-day
+  sibling 9734, 7 May 1864 9 p.m. to Allen, writes "If Mellow has [reached] Camden ... supplies will not be sent by the Washita" with Camden plain
+  again); the reading renders it [Dalton] through key row Camden = Dalton. Date 28 April, 240 wagons (Peach Publish & Lampoon = 200 & 40), the 25th,
+  hour 3.30 p.m., signer agree.
+- **E379 (quoted dispatch):** clause for clause the OR text, with three ledger differences: **"Cyntha anna"** on the leaf = Cynthiana (print); the
+  decoder reads "anna" as a time word and inserts {time: 2 AM} (slip); **"Winston near as many"** = wounding nearly as many: OR has "wounding as many",
+  but the same-hour War Department bulletin to Dix (below) has "wounding nearly as many" -- the ledger agrees with the bulletin, not with OR; loss
+  "plunge publish and mansion" = 100 and 50 = 150 (C). Burbridge's "recapturing nearly all of General Hobson's command" agrees.
+**No difference of substance in E372, E373, E376, E377, E380.** Every difference is a sound-spelling (Hudsons, Pipe), a plain word the decoder took for
+a code word (person, Camden), a synonym at one code word (Polka/direction), a clerk's slip (Sabine), the unresolved time word (E373), or a routing
+line the print adds (E372).
+
+### 2. E379: the relay frame
+Text of the relay (Stanton to Sherman): "General Grant commenced last night his movement to the south side of the James. At latest dates everything
+was progressing successfully. The following despatch dated at Lexington, Kentucky, today has been received from General Burbridge: [the dispatch]";
+tail "that is the way to do it".
+- **Hour corrected: midnight, not noon.** The ledger header "12 pm"; Burbridge's dispatch was received in Washington at 11.53 p.m. on 13 June (OR, on
+  the image), so the relay that quotes it cannot be from noon. The War Department bulletin to Dix of the same night is dated "June 13--12 midnight"
+  (New-York Daily Tribune, 14 June 1864, p.1, loc.gov sn83030213/1864-06-14/ed-1 seq.1, OCR read): **E379 is 13 June 1864, 12 midnight**; reading.md's
+  "12 m" is wrong (s.5).
+- **Sister text located, in other words.** The Dix bulletin (same hour, Stanton, printed in the press 14 June): "We have dispatches from the Army of
+  the Potomac as late as 8 o'clock this morning. The movement was at that hour in successful progress. No reports to-day from Gen. Sherman ..." then
+  Burbridge's dispatch. Same news, same quotation, **different wording**; the Sherman relay's sentences ("commenced last night his movement to the
+  south side of the James", "at latest dates everything was progressing successfully", "that is the way to do it") were not found in it.
+- **Searched for the relay's own text:** OR I/38 pt 4 (`warofrebellion384unit`, djvu text, normalised; 13-14 June dated headings; Stanton to Sherman
+  14 June 12 m on Sturgis is printed, not this one); OR I/40 pt 2 (`warofrebellion402unit`; Burbridge named only in a Halleck letter summary); OR
+  I/39 pt 1 p.20 and MS18-R7's reads of I/36 pt 3, I/38 pt 4, I/39 pt 2, I/42 pt 1-2; Google Books API (country=US) "commenced last night his
+  movement" (327 loose hits, none this text in the first 10) and '"that is the way to do it" Burbridge' (none); Internet Archive full-text search
+  (be-api) "commenced last night his movement": 0; loc.gov Chronicling America 13-25 June 1864: "commenced last night his movement" 0,
+  '"completely routed him"' 28 (positive control: the dispatch itself, NY Tribune 14 June p.1 among them), '"south side of the James" Burbridge'
+  3 (22 and 18 June weeklies, not read); holder CONTENTdm "Cynthiana" 11 hits, none a clear copy (8989 = mssEC 19, 23 June to Burbridge on
+  Cynthiana citizens; 4693-4697, 11910-11915, 12450-12455 not this telegram's pointer range; own 9759 not among them -- the ledger writes "Cyntha anna").
+  **Not searched:** Sherman Papers (LC) and printed Sherman correspondence, Stanton Papers (LC), NARA RG 107 Telegrams Sent, NY Times/Herald 14 June full text, HathiTrust, JSTOR (queued, below).
+
+### 3. Holder's full text (Huntington CONTENTdm p16003coll11, `CISOSEARCHALL`, all pointers; hdl take 04:02-04:05 UTC, 6 queries)
+Hood 69 (own 9907 not among them: the ledger writes "Hudsons"; 10049, 10059 read on disk: Sept and Oct 1865 matters; 9057 mssEC 19 Aug 1864 rumours);
+Eastport 95 (own 9878 not among them: the ledger writes "Ripley port"; mssEC 18/19 hits on disk are Jan-Feb 1865 Plum entries); serviceable 8 (none
+in mssEC 18/19 on disk; own 10013 not among them, the ledger writes "service able"); **Parkersburg 64 incl. own 9774** (positive control; 8996 =
+mssEC 19, 6 July 1864 to McCaine, another message); Cynthiana 11 (s.2); **Washita 7 incl. own 9732** (positive control; 9734 and 8956/8957 are the
+4, 7 May Halleck-Allen siblings on Steele's supply, context for E380, other messages). **No period clear copy of any of the six at any pointer.**
+
+### 4. Image check of the five leaves MS18-R7 left (IIIF 2400 px, 5 images to scratch, not committed; the entry's region cropped and read at
+2000 px; `tools/iiif_lines.py --image` found 0-1 lines on these full leaves, so plain region crops were used)
+| ID | pointer | verdict | slips (transcription vs leaf) |
+|---|---|---|---|
+| E372 | 9907 | matches line by line | "Polkaing" could be read "Palkaing" (no effect) |
+| E373 | 9878 | matches line by line | none |
+| E376 | 10013 | matches line by line | "shelter" may be "Shetter" (M; no effect on [General]) |
+| E377 | 9774 | matches line by line | none; "person" plainly written |
+| E380 | 9732 | **body matches; the transcription omits pencil annotations** | header: a faint pencil note between "Capt Sam Bruch" and the date (read tentatively "Stanton visit water", M) and "No w 47" at the page head (transcribed); small pencil figures and words written **above the first line** (4, 6, 8, 2 and words over "Palsy", "Robt", "Al-") and **under the last line** ("burnt", "return", "arrive", "bonds" under Moscow / will / not / give, figures under "them up Ireland"), plus "1147 chgd[?]" and "(Sent to G 4.15 P.M. Tinker)" below the message. A later working of the indicator/route words and an operator's sending note; not read here (s.6) |
+With MS18-R7's own six, **all eleven MS18-R7 leaves are now eye-checked.**
+
+### 5. Grades (reading.md as of this audit; decode.py counts, then print)
+| ID | decoder H/C | wrong code reads found | after correction | U |
+|---|---|---|---|---|
+| E372 | H 14 | 0 | H 14; body C by print | 0 |
+| E373 | H 15 | time word (francis = 12 vs print 1.40 a.m.) | H 14 + time M; body C by print | 0 |
+| E376 | H 18 | 0 | H 18; body C by print | 0 |
+| E377 | H 12, C 1 | person [5] | H 11, C 1 (Harlem); Polka = direction (sense C, word M); body C by print | 0 |
+| E379 | H 48 | Cyntha anna {time: 2 AM} (a plain word, not a code group); hour 12 = midnight | H 48; quoted dispatch C by print (OR and the Dix bulletin); frame H | 0 |
+| E380 | H 33 | Camden [Dalton] | H 32; Camden plain C by print; body C by print | 0 |
+
+### 6. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E372 | **N1** (text known) | period | D3 (H 14 + C by print; OR I/45 pt 2 p.82 on the image) | printed word for word, Halleck to the commanding officer at Memphis, 6 Dec 1864, 10 a.m. |
+| E373 | **N1** | period | D3 (H 14 + C by print; OR I/39 pt 3 p.482) | printed word for word, Halleck to Thomas, 28 Oct 1864 (print 1.40 a.m.) |
+| E376 | **N1** | period | D3 (H 18 + C by print; OR I/48 pt 2 p.505) | printed word for word, Rawlins to Pope, 19 May 1865, 8.30 p.m. |
+| E377 | **N1** | period | D3 (H 11 + C 1 + C by print; OR I/37 pt 2 p.63) | printed, one word differing (command / direction), Halleck to Hunter, 5 July 1864, 4 p.m. |
+| E380 | **N1** | period | D3 (H 32 + C by print; OR I/34 pt 3 p.480) | printed (Sabine / Saline, "or" omitted), Halleck to Allen, 6 May 1864, 3.30 p.m. |
+| E379, quoted dispatch | **N1** | period | D3 (C by print, OR I/39 pt 1 p.20 and the Dix bulletin in the press) | Burbridge to Halleck, Lexington, 13 June 1864 |
+| **E379, relay frame** | **N3** | period | **D3** (all frame code groups H: Washington, Sherman, Grant, Movement, South, James, Kentucky, Today, General, Secretary of War; external, non-statistical: the same-hour War Department bulletin to Dix, 13 June 12 midnight, carries the same news and the same quotation; Grant's crossing to the south side of the James began on the night of 12 June) | no prior plaintext or decipherment of the relay's own wording located after s.2's search; its news and its quotation are in print in other words |
+**E379 safe sentence:** "Read at grade H with War Department Cipher No. 1: at midnight on 13 June 1864 the Secretary of War told Sherman that Grant had
+begun the night before to move to the south side of the James, relayed Burbridge's report of routing Morgan at Cynthiana (printed in the Official Records),
+and added 'that is the way to do it'; the relay's own wording was not located in print (searched 10 Oct 2026; the same-hour bulletin to Dix carries the
+news in other words)." **Unsafe:** "first decipherment", "unpublished telegram", "never printed" (rule 10; one audit, N3 only; Sherman and Stanton
+papers unsearched). **Depth sentence (D3):** "Stanton passed Sherman the news of Grant's crossing toward the south side of the James together with
+Burbridge's victory over Morgan at Cynthiana within minutes of receiving it, with a comment of his own, 'that is the way to do it', that the bulletin
+sent to Dix the same hour does not carry."
+For E372, E373, E376, E377, E380 and E379's quotation: no status.json or SO rows (N1). For E379's relay frame: status.json row, SO-ECKERT-E379 queued
+(`second-opinions/PROMPT-chatgpt-e379.md`), WORK-QUEUE.tsv AUD2-LEDGER10-2 (account-4 tag) for the second audit, JSTOR-QUEUE.tsv 2 rows.
+
+### 7. Postmortem and fixes (for a FIX job; a verifier does not edit ciphertext.txt or reading.md)
+- MS18-R7's five print placements were right to the page; its "not eye-checked" caveat is now cleared. Its E379 header hour "12 m" (noon) is the
+  over-claim of this batch: **13 June 1864, 12 midnight** (Burbridge received 11.53 p.m.; Dix bulletin 12 midnight).
+- Entry notes to carry (decode.py's entry-note mechanism): E372 "Hudsons" = Hood's (plain), signer Major-General and Chief of Staff; E373 time word
+  "francis" = 12 vs print 1.40 a.m. (M); E376 Pipe = Pope (plain); E377 "person" plain (not [5]), Polka = "direction" in print; E379 "Cyntha anna" =
+  Cynthiana plain (no {time: 2 AM}), hour midnight, "near as many" agrees with the Dix bulletin; E380 "Camden" plain (not [Dalton]), "Sabine" =
+  print Saline (clerk's slip), the 9732 pencil annotations untranscribed; all five "leaf not eye-checked" notes -> "leaf eye-checked at 2400 px
+  (FV-MS18p)", and "printed OR ..." -> "printed OR ... (on the page image, FV-MS18p)". Key questions (person = 5 slip, Camden = Dalton row) belong to
+  the KEY lane, no key edit here.
+- Lead, not read: the 9732 pencil annotations (indicator/route working, "Sent to G 4.15 P.M. Tinker"); holder 9734 (7 May 1864, E380's follow-up).
+Requests: archive.org 12 (6 page_numbers.json + 6 page images) + 2 djvu (warofrebellion384unit, 402unit) 200 + 1 djvu 500 (392unit, not retried);
+hdl.huntington.org 11 (6 CISOSEARCHALL, 5 IIIF), all 200; www.googleapis.com 2; be-api.us.archive.org 1; www.loc.gov 5 (1 cut off and one retry
+with --http1.1), tile.loc.gov 1 (partial transfer, OCR read to the cut); chroniclingamerica.loc.gov 1 (308 to loc.gov). seven_day allowed_warning
+not observed by me. For LANE LEDGER-10 (account 1).

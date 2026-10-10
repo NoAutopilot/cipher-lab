@@ -4910,3 +4910,31 @@ Read so far: 3 of 3 entries audited; N2-HB and N2-HC N1 (in print), N2-HF N3 D3,
 - [x] image-check: all three leaves (and 9808) eye-checked on crops at 2400 px.
 - [x] retry: none needed.
 Verdict: keep going: 2 internal gaps; cheapest next: the FIX job for AUDIT (FV-N2d) s.5, ~$1
+
+## FV-MS18p (10 Oct 2026, account 1, for LANE LEDGER-10)
+
+First verifier (separate from the reader MS18-R7) of E372, E373, E376, E377, E380 and E379: AUDIT.md "## AUDIT (FV-MS18p)". Step 0 (holder transcription
+carries the body in clear?): none of the six -- each transcription is the cipher text (code overlap 0.00-0.25; `ms18/fv_ms18p_step0.out`). Print found on
+the IA page image at the reader's pages for all five: **E372, E373, E376, E377, E380 N1 D3**, key `period`, text known (OR I/45 pt 2 p.82, I/39 pt 3 p.482,
+I/48 pt 2 p.505, I/37 pt 2 p.63, I/34 pt 3 p.480). E379: the quoted Burbridge dispatch N1 (OR I/39 pt 1 p.20); **the relay frame N3 D3** (not located;
+the same-hour War Department bulletin to Dix, NY Daily Tribune 14 June 1864 p.1, carries the news in other words). **E379's hour is 12 midnight, not
+noon** (Burbridge received 11.53 p.m.). Decoder slips found: E377 "person" plain (not [5]); E380 "Camden" plain (not [Dalton]); E379 "Cyntha anna"
+plain (no time word). All five leaves eye-checked at 2400 px: match line by line; 9732 (E380) carries pencil annotations the holder transcription omits.
+status.json row (E379 relay frame), SO-ECKERT-E379 queued, WORK-QUEUE AUD2-LEDGER10-2 (account-4), JSTOR-QUEUE 2 rows. Fixes in AUDIT s.7, not applied here.
+
+## Remaining gaps (FV-MS18p, 10 Oct 2026)
+Read so far: E372, E373, E376, E377, E380 audited N1 D3; E379 quoted part N1, relay frame N3 D3; all eleven MS18-R7 leaves now eye-checked.
+- E379 relay frame second audit and the unsearched families (Sherman and Stanton Papers, LC; printed Sherman correspondence; NARA RG 107; NY Times/Herald 14-15 June 1864; HathiTrust; JSTOR) - blocker: waiting-on the answer of the VERIFY lane to WORK-QUEUE.tsv row AUD2-LEDGER10-2; a second audit is a separate session (rule 10)
+- the header and reading fixes of AUDIT (FV-MS18p) s.7 (E379 hour midnight and Cynthiana; E377 person; E380 Camden, Sabine; E372 Hudsons; E376 Pipe; eye-check notes) - blocker: not-attempted; a verifier does not edit ciphertext.txt or reading.md; next: a FIX job, ~$1
+- the 9732 pencil annotations (indicator/route working; "Sent to G 4.15 P.M. Tinker") - blocker: not-attempted; outside this brief; next: a reader's eye pass on line crops of 9732, ~$0.3
+- E373 time word "francis" (decodes 12; print 1.40 a.m.) - blocker: not-attempted; a key question for the KEY lane; next: a KEY job over every "francis" time word, ~$0.5
+
+## Escalation (FV-MS18p, 10 Oct 2026)
+- [x] siblings: E380's next-day follow-up 9734 and 8956/8957 (4 May) seen in search results, context only; E372's Vicksburg twin in the print noted.
+- [x] clear-pages: CISOSEARCHALL, 6 queries; own-page positive controls 9774 and 9732 returned; no clear copy of any of the six.
+- [x] known-keys: every code group read in key.md (Cipher No. 1); no other book tested (header label No 1 on 9878, 10013; print agreement on all five).
+- [x] print: OR on page images for all five and E379's quotation; OR I/38 pt 4 and I/40 pt 2 text for the relay; Chronicling America, Google Books, IA full text by phrase.
+- [n/a] key-rebuild: no key row edited; fixes listed in AUDIT s.7.
+- [x] image-check: all five leaves MS18-R7 left eye-checked at 2400 px.
+- [x] retry: one loc.gov fetch retried once (--http1.1); IA djvu 500 on warofrebellion392unit not retried (not needed).
+Verdict: keep going: 3 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18p) s.7, ~$1
