@@ -1943,5 +1943,65 @@ Code-word tokens: H 21, C 1.
 
 Code-word tokens: H 14, C 2.
 
-Totals over the 302 entries: H 5245, C 77, I 25, M 35, S 17, U 10.
+**E361 | Page 14 | 9674 | mssEC 18 (obj 10074, pointer 9674; printed page 8), 10 Feb 1864 4 PM Washington, S. H. Beckwith (label 1), for Maj. Gen. Grant at Nashville, signed Halleck, General-in-Chief: Mr Beckwith has been restored; Captain Stokes will be made quartermaster with the rank of lieutenant-colonel; Governors of States have no authority to furlough troops; report any cases and the Secretary of War will so inform the governors; tail 'Mailed letter today'; printed OR I/32 pt 2 (about p.361) (MS18-R6; row 9674/0; leaf image-read at 2400 px)**
+
+[Washington] {date: Feb 10} {time: 4 PM} For [Maj Genl U.S. Grant] [Nashville] [.] Mr Beck with has been restored [.] [Captain] Stokes will be made [Quartermaster] with the rank of Lieut [Colonel] [.] Governors of States have no authority to furlough [Troops] [.] Please [Report] any cases that have occurred and the [Secretary of War] will so in form the governors who have done so  {tail: [signed] [General-in-Chief] Mailed letter today}
+
+Code-word tokens: H 17.
+
+**E362 | Page 226 | 9886 | mssEC 18 (obj 10074, pointer 9886; printed page 220), 3 Nov 1864 4 PM Washington, to Capt. Clowry at St Louis for Brig. Gen. Rawlins, Chief of Staff to Maj. Gen. Grant, signed Halleck: all the troops you can lay hands on in Missouri should be sent forward with the least possible delay to reinforce General Thomas; he is probably opposed by Hood's entire army and the cavalry of Wheeler and Forrest; printed OR I/41 pt 4 p.418 (MS18-R6; row 9886/1; holder transcription, leaf not eye-checked)**
+
+From {time: 4 PM} [3] for [Brigadier General] Rawlins Chief of Staff to [Maj Genl U.S. Grant] [St Louis] [.] I am satisfied that all the [Troops] you can lay hand on in [Missouri] should be sent for ward with the least possible delay to [Reinforce (-ed, -ing)] [Maj Gen Geo. H. Thomas] [.] He is probably opposed by [Maj Gen J. B. Hood (Confederate)]'s entire [Army] and the [Cavalry] of [Wheeler] and Halifax  {tail: [signed] [General-in-Chief] He is in your city}
+
+Code-word tokens: H 16, C 1.
+
+**E363 | Page 16 | 9676 | mssEC 18 (obj 10074, pointer 9676; printed page 10), 14 Feb 1864 12.30 PM Washington, S. H. Beckwith (label 1), for Maj. Gen. Grant at Nashville, signed Halleck: recruiting officers and provost marshals have been directed to send recruits to their regiments as fast as collected and to send new regiments to the field as fast as organized; in case General Schofield should be rejected, who do you want to command his department; name several to select from; printed OR I/32 pt 2 (pp.386-389) (MS18-R6; row 9676/1; holder transcription, leaf not eye-checked)**
+
+[Washington] {time: 12.30} [14] Feby For [Maj Genl U.S. Grant] [Nashville] [.] [Recruits]ing Officers & Provost Marshals have been directed to send [Recruits]'s to their [Regiment]'s as fast as collected and also to send new [Regiment]'s to the field as fast as [Organize (-ed, -ing)]d [.] In case [Maj Genl J. M. Schofield] should be rejected who do you want to [Command = Er (-ed, -ing)] his [Department] [?] Name several to select from  {tail: [signed] [General-in-Chief]}
+
+Code-word tokens: H 18.
+
+**E364 | Page 109 | 9769 | mssEC 18 (obj 10074, pointer 9769; printed page 103), 29 June 1864 4 PM Washington, to Brig. Gen. Bailey care of Capt. Wooster at Cairo (operator line 'WT June Mason (#1) Cairo'), signed Meigs, Quartermaster General: Lieutenant-General Grant has decided that the Vicksburg and Shreveport Railroad shall not be repaired at present; whenever repaired the gauge should be changed to 5 feet; no engines or cars of 5 feet 6 inches gauge are in existence up North; tail 'Where is Wash Parker now'; printed OR I/34 pt 4 p.586 (MS18-R6; row 9769/1; holder transcription, leaf not eye-checked)**
+
+{time: 4 PM} {date: June 29} to [Brigadier General] Bailey [Vicksburg] Care of [Captain] [Volunteered] [Cairo] [.] [Maj Genl U.S. Grant] has decided that the [Vicksburg] & Shreveport [Rail Road] shall not be repaired at present [.] Whenever repaired the guage should be changed to [5] feet [,] No [Engine]'s or [Cars]'s of [5] feet [6] inch guage are in existence [In the] [North]  {tail: [signed] [Qr Master Genl U.S.] Where is Wash Parker now}
+
+Code-word tokens: H 23.
+
+**E365 | Page 14 | 9674 | mssEC 18 (obj 10074, pointer 9674; printed page 8), 11 Feb 1864 4 PM Washington, S. H. Beckwith (label 1), for Maj. Gen. Grant at Nashville, signed Halleck: Congress has been more than two months discussing the draft bill and unless it soon passes we cannot fill up infantry regiments in time to supply the place of furloughed men; other armies are in the same or worse condition than yours; tail 'She's my darling'; printed OR I/32 pt 2 (about p.369) (MS18-R6; row 9674/1; leaf image-read at 2400 px)**
+
+[Washington] [11] Feby {time: 4 PM} [Maj Genl U.S. Grant] [Nashville] [.] Congress has been more than [2] months discusssing the draft bill and unless it soon passes we can not fill up [Infantry] [Regiment]'s in time to supply the place of fur loughed [Men] [.] Other [Arms]'s are in the same or worse condition than yours  {tail: [signed] [General-in-Chief] She's my [Martinsburg]}
+
+Code-word tokens: H 15.
+
+**E366 | Page 345 | 10005 | mssEC 18 (obj 10074, pointer 10005; printed page 339), 8 May 1865 4 PM Washington (label No 1), to Caldwell at Richmond for Halleck [M], signed [Dana, M]: the Secretary of War directs that you arrest William Boulware, whose estate is Norwell Rest [M], five or six miles from [Hanover?, M] and King and Queen Court House; send him here under guard to the Judge Advocate (MS18-R6; row 10005/2; holder transcription, leaf not eye-checked)**
+
+Caldwell [8] {time: 4 PM} <insertion>Julia Platina</insertion> for [General-in-Chief] [.] The [Secretary of War] directs that you [Arrest (-ed, -ing)] Will Yam Boulware whose estate is named Norwell rest and is [5] or [6] [Mile]'s from [Maj Genl J. M. Schofield] and [Danger] court Hows [.] Send him here under [Guard (-ed, -ing)] to [Report] tooth judge advocate [General]  {tail: [signed] [C. A. Dana] purity [Pending]}
+
+Code-word tokens: H 18.
+
+**E367 | Page 141 | 9801 | mssEC 18 (obj 10074, pointer 9801; printed page 135), 24 July 1864 10 PM Washington, McCaine at Harpers Ferry, for Maj. Gen. Hunter, signed Stanton, Secretary of War: we have dispatches from General Grant's headquarters this afternoon; he is not in Richmond and gives no intimation that the rebel army is down the Valley of the Shenandoah; where was General Crook when you last heard from him and in what direction was he operating; printed OR I/37 pt 2 (about pp.429-431) (MS18-R6; row 9801/0; holder transcription, leaf not eye-checked)**
+
+[Washington] {date: July 20} Jenny {time: 10 PM} for [Maj. Gen. David Hunter] paws We have dispatches from Jupiter's [Head Quarters] this afternoon He is not in [Richmond] & gives no intimation that the [Rebel] [Army] is down the [Valley] of the [Shenandoah] [.] Where was [General] Crooked when you last heard from him and in what direction was he operating [Secretary of War]
+
+Code-word tokens: H 12, C 1.
+
+**E368 | Page 367 | 10027 | mssEC 18 (obj 10074, pointer 10027; printed page 361), 2 June 1865 Washington (hour 10 AM), Clowry at St Louis, for Maj. Gen. Pope, signed Grant: you may authorize the issuing of arms to all persons connected with the carrying of Government freight over the plains on proper security that the arms will not be lost to the Government; referred to the Secretary of War for approval; approved; printed OR I/48 pt 2 p.730 (MS18-R6; row 10027/2; holder transcription, leaf not eye-checked)**
+
+{time: 10 AM} [2] for Pope [.] You may authorize the issuing of [Arms]'s to all [5]s connected with the carrying of [Government] freight [Over the] plains on proper security that the [Arms] will not be lost to [Government]  {tail: [signed] [Maj Genl U.S. Grant] [.] Respy referred to the [Secretary of War] for approval before being dispatched [signed] [Maj Genl U.S. Grant] [.] approved [Secretary of War]}
+
+Code-word tokens: H 17.
+
+**E369 | Page 360 | 10020 | mssEC 18 (obj 10074, pointer 10020; printed page 354), 24 May 1865 Washington (hour 8.30 or 4.30 PM, M), label No 1, H. F. Lines at Macon, signed [Secretary of War, M]: you will immediately arrest Thomas J. Paxton or Parton [M] Campbell [M], who was a Confederate officer at [Chattanooga?, M], and send him under guard to Nashville to be delivered to Maj. Gen. Thomas; forward by rail (MS18-R6; row 10020/2; leaf image-read at 2400 px)**
+
+[Washington] [34] may {time: 8.30 PM} officer [Command = Er (-ed, -ing)]ing [Augusta] You will imm'y [Arrest (-ed, -ing)] Thomas J [Camp] bell [,] who was confess skating officer forth [Rebel] [Government] at Chant [Tennessee] [,] and send him under [Guard (-ed, -ing)] to [Nashville] to be delivered to [Major] [General] [Maj Gen Geo. H. Thomas]  {tail: [signed] [Secretary of War] forward by [Rail Road]}
+
+Code-word tokens: H 21.
+
+**E370 | Page 176 | 9836 | mssEC 18 (obj 10074, pointer 9836; printed page 170), 7 Sept 1864 Washington, Horner at New York, for [Col. McCallum, M] care Masury and Whiton, 111 Fulton street, signed [Head Quarters Army, M]/Whiton: [the army] wish to know for how many 'spartons' in excess of those now in [Sherman's] command can be supplied by rail; have sent this to [Tennessee, M] (MS18-R6; row 9836/1; holder transcription, leaf not eye-checked)**
+
+{time: 1 PM} for [Colonel] McCallum care Masury and Whiton [111] Fulton street [New York] [.] [Head Quarters] [Army] wish to know for how many spartons in excess of those now in [Maj Gen W. T. Sherman] [Command = Er (-ed, -ing)] [Forage (-ed, -ing)] can be supplied by rail [.] Have sent this to [Tennessee]  {tail: [signed] W H Whiton}
+
+Code-word tokens: H 15.
+
+Totals over the 312 entries: H 5417, C 79, I 25, M 35, S 17, U 10.
 <!-- decode.py: derived block ends -->

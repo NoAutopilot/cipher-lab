@@ -1,0 +1,132 @@
+X1 tokens=41 no1=18(0.44) no2=17(0.41) no9=7(0.17)
+  no1: H17 C0 I0 M0
+    [Washington] {date: Feb 10} {time: 4 PM} For [Maj Genl U.S. Grant] [Nashville] [.] Mr Beck with has been restored [.] [Captain] Stokes will be made [Quartermaster] with the rank of Lieut [Colonel] [.] Governors of States have no authority to furlough [Troops] [.] Please [Report] any cases that have occurred and the [Secretary of War] will so in form the governors who have done so  {tail: [signed] [General-in-Chief] Mailed letter today}
+  no2: H16 C0 I0 M0
+    [Maj Gen B. F. Butler] Feby [Conasauga River] {time: 4 PM} For [Imboden] [General in Chief] Unity Mr Beck with has been restored [Sunday] [Battled [?]] Stokes will be made [Rifle Pits] with the [Has been sent] of Lieut [Cars] [1000] Governors of States have no authority to furlough [Union] unity Please [South] any cases that have occurred and the [Delaware] will so in form the governors who have done so [100] [Ewell] Mailed letter today
+  no9: H7 C0 I0 M0
+    Growl Feby Federal {time: 7 PM} For John Empress Unity Mr Beck with has been restored [Movement] Pilgrim Stokes will be made [Quartermaster] with the rank of Lieut Paradise [Movement] Governors of States have no authority to furlough [Union] unity Please [Equipage] any cases that have occurred and the Brutus will so in form the governors who have done so [Troops] Italy Mailed letter today
+  no1shuf: H16 C1 I0 M0
+    [Gen J. M. Palmer] {date: Feb 10} {time: 4 PM} For [Diversion] [Captain] [.] Mr Beck with has been restored [.] [Tullahoma] Stokes will be made [Coosa] with the rank of Lieut [Troops] [.] Governors of States have no authority to furlough [Huntsville] [.] Please [Brig. Gen. H. H. Lockwood (Baltimore); written "Prss"] any cases that have occurred and the [Movement] will so in form the governors who have done so  {tail: [signed] [Right] Mailed letter today}
+  no2shuf: H15 C1 I0 M0
+    [Aquia Creek] Feby [Winchester] {time: 4 PM} For [Communicate (-ed, -ing)] [Will be] Unity Mr Beck with has been restored [Carter S.P.] [Marietta] Stokes will be made [Fredericksburg] with the [Entrench (-ed, -ing)] of Lieut [Enemy] [1000] Governors of States have no authority to furlough [Citizen] unity Please [Lieut Gen U.S. Grant] any cases that have occurred and the [Drove in our Pickets] will so in form the governors who have done so [100] [Early] Mailed letter today
+X2 tokens=35 no1=19(0.54) no2=21(0.60) no9=7(0.20)
+  no1: H16 C1 I0 M0
+    From {time: 4 PM} [3] for [Brigadier General] Rawlins Chief of Staff to [Maj Genl U.S. Grant] [St Louis] [.] I am satisfied that all the [Troops] you can lay hand on in [Missouri] should be sent for ward with the least possible delay to [Reinforce (-ed, -ing)] [Maj Gen Geo. H. Thomas] [.] He is probably opposed by [Maj Gen J. B. Hood (Confederate)]'s entire [Army] and the [Cavalry] of [Wheeler] and Halifax  {tail: [signed] [General-in-Chief] He is in your city}
+  no2: H15 C0 I0 M0
+    From {time: 4 PM} Pebble for [Ammunition] Rawlins Chief of [Station] to [Imboden] [Nashville] [1000] I am satisfied that all the [Telegraph (-ed, -ing)] you can lay hand on in [Kanawha] should be sent for ward with the least possible delay to waylay [H W Halleck] [1000] He is probably opposed by Handles entire [Washburn C C] and the [Battery] of [Yorktown] and Halifax [100] [Ewell] He is in your city
+  no9: H7 C0 I0 M0
+    From {time: 7 PM} Pebble for [Yorktown] Rawlins Chief of Staff to John Gaul [Movement] I am satisfied that all the [Threaten] you can lay hand on in [Quartermaster General] should be sent for ward with the least possible delay to waylay Lady [Movement] He is probably opposed by Handles entire Oyster and the Panama of hug and Halifax [Troops] Italy He is in your city
+  no1shuf: H16 C1 I0 M0
+    From {time: 4 PM} [3] for [Holly Springs] Rawlins Chief of Staff to [Diversion] [East] [.] I am satisfied that all the [Telegraph (-ed, -ing)] you can lay hand on in [Newbern] should be sent for ward with the least possible delay to [Favorable] [Maj. Gen. David Hunter] [.] He is probably opposed by [Mile]'s entire [Delaware] and the [Orange C.H.] of [Chattanooga] and Halifax  {tail: [signed] [Right] He is in your city}
+  no2shuf: H15 C0 I0 M0
+    From {time: 4 PM} Pebble for [Reverse] Rawlins Chief of [West] to [Communicate (-ed, -ing)] [Scatter (-ed, -ing)] [1000] I am satisfied that all the [Valley] you can lay hand on in [Hunter D] should be sent for ward with the least possible delay to waylay [Bellefonte] [1000] He is probably opposed by Handles entire [Hood] and the [Davidson J W] of [Body] and Halifax [100] [Early] He is in your city
+X3 tokens=38 no1=18(0.47) no2=18(0.47) no9=8(0.21)
+  no1: H18 C0 I0 M0
+    [Washington] {time: 12.30} [14] Feby For [Maj Genl U.S. Grant] [Nashville] [.] [Recruits]ing Officers & Provost Marshals have been directed to send [Recruits]'s to their [Regiment]'s as fast as collected and also to send new [Regiment]'s to the field as fast as [Organize (-ed, -ing)]d [.] In case [Maj Genl J. M. Schofield] should be rejected who do you want to [Command = Er (-ed, -ing)] his [Department] [?] Name several to select from  {tail: [signed] [General-in-Chief]}
+  no2: H18 C0 I0 M0
+    [Maj Gen B. F. Butler] {time: 12 midnight PM} [Cooyehuttie " [ditto = River]] Feby For [Jenkins] [General in Chief] Unity [River]ing Officers & Provost Marshals have been directed to send [River]'s to their [Skirmish (-ed, -ing)]'s as fast as [Harrison]ed and also to send new [Skirmish (-ed, -ing)]'s to the field as fast as [Overtook (or taking) the Enemy]d [1000] In case [Pemberton] should be [Maneuvre [sic]]ed who do you want to Polka his [Deserter] [Infantry] Name several to select from [Saturday] [Ewell]
+  no9: H8 C0 I0 M0
+    Grapes {time: 12.30 PM} Female Feby For Juno Empress Unity [Advance]ing Officers & Provost Marshals have been directed to send [Advance]'s to their [Division]'s as fast as collected and also to send new [Division]'s to the field as fast as twinkled [Movement] In case Kiss should be rejected who do you want to Polka his Quadroon [Siege Guns] Name several to select from [Troops] Italy
+  no1shuf: H18 C0 I0 M0
+    [Colonel] {time: 12.30} [14] Feby For [Abingdon] [Captain] [.] [Qr Master Genl U.S.]ing Officers & Provost Marshals have been directed to send [Qr Master Genl U.S.]'s to their [Gordonsville]'s as fast as collected and also to send new [Pemberton]'s to the field as fast as [Stevenson]d [.] In case [Tombigbee] should be rejected who do you want to [Maj Gen W. T. Sherman] his [Abandon (-ed, -ing)] [?] Name several to select from  {tail: [signed] [Right]}
+  no2shuf: H18 C0 I0 M0
+    [Follow (-ed, -ing) [#]] {time: 12 midnight PM} [Kanawha] Feby For [Sparta] [Will be] Unity [To day]ing Officers & Provost Marshals have been directed to send [To day]'s to their [Rail-road]'s as fast as [Murfreesboro]ed and also to send new [West Point]'s to the field as fast as [Join]d [1000] In case [Savannah] should be [Culpepper]ed who do you want to Polka his [Athens] [City Point] Name several to select from [Hardee] [Early]
+X4 tokens=44 no1=26(0.59) no2=19(0.43) no9=8(0.18)
+  no1: H23 C0 I0 M0
+    {time: 4 PM} {date: June 29} to [Brigadier General] Bailey [Vicksburg] Care of [Captain] [Volunteered] [Cairo] [.] [Maj Genl U.S. Grant] has decided that the [Vicksburg] & Shreveport [Rail Road] shall not be repaired at present [.] Whenever repaired the guage should be changed to [5] feet [,] No [Engine]'s or [Cars]'s of [5] feet [6] inch guage are in existence [In the] [North]  {tail: [signed] [Qr Master Genl U.S.] Where is Wash Parker now}
+  no2: H19 C0 I0 M0
+    {time: 4 PM} June Harrow padlock to [Ammunition] [Campbell W B] [Maj Gen J G Foster] Care of [Battled [?]] [Rear Guard] [Calhoun] unity [Lomax] has decided that the [Maj Gen J G Foster] & Shreveport  {tail: [signed] shall not be repaired at present [1000] Whenever repaired the guage should be changed to [Failure] feet [Cavalry] No [Enemy]'s or [Brigade]'s of person feet plague inch guage are in existence [Killing] [Open (-ed, -ing)] [100] [Secretary of Treasury] Where is Wash Parker now}
+  no9: H8 C0 I0 M0
+    {time: 7 PM} June Harrow padlock to [Yorktown] Bailey Girls Care of Pilgrim [Treasonable] Bladder unity Jupiter has decided that the Guns & Shreveport [Defend] shall not be repaired at present [Movement] Whenever repaired the guage should be changed to plaster feet pekin No [Bridge]'s or palmettos of person feet plague inch guage are in existence [Scouting Party] Tremble [Troops] Belcher Where is Wash Parker now
+  no1shuf: H23 C0 I0 M0
+    {time: 4 PM} {date: June 29} to [Holly Springs] Bailey [Cumberland Gap] Care of [Tullahoma] [Marietta] [Martinsburg] [.] [Division] has decided that the [Evacuate (-ed, -ing) - ion] & Shreveport [Magruder] shall not be repaired at present [.] Whenever repaired the guage should be changed to [5] feet [,] No [McMinnville]'s or [Today]'s of [5] feet [6] inch guage are in existence [Pearl] [Columbus]  {tail: [signed] [Surrender (-ed, -ing)] Where is Wash Parker now}
+  no2shuf: H19 C0 I0 M0
+    {time: 4 PM} June Harrow padlock to [Reverse] [Driving back] [Potomac] Care of [Marietta] [Mask] [Secure] unity [Raleigh] has decided that the [Louisa C H] & Shreveport  {tail: [signed] shall not be repaired at present [1000] Whenever repaired the guage should be changed to [Evacuation] feet [Jasper] No [Vicksburg]'s or [Johns Mountain]'s of person feet plague inch guage are in existence [Etowah] [Secretary of Navy] [100] [Driven back] Where is Wash Parker now}
+X5 tokens=39 no1=18(0.46) no2=16(0.41) no9=6(0.15)
+  no1: H15 C0 I0 M0
+    [Washington] [11] Feby {time: 4 PM} [Maj Genl U.S. Grant] [Nashville] [.] Congress has been more than [2] months discusssing the draft bill and unless it soon passes we can not fill up [Infantry] [Regiment]'s in time to supply the place of fur loughed [Men] [.] Other [Arms]'s are in the same or worse condition than yours  {tail: [signed] [General-in-Chief] She's my [Martinsburg]}
+  no2: H14 C0 I0 M0
+    [Maj Gen B. F. Butler] [Acton [sic, ? Action]] Feby {time: 4 PM} [Jeff Davis] [General in Chief] unity Congress has been more than Plank months discusssing the draft bill and unless it soon [Fire]es we can not fill up [Infantry] [Skirmish (-ed, -ing)]'s in time to supply the place of fur loughed [Near] [1000] Other [Thomas Geo H]'s are in the same or worse condition than yours [Saturday] [Ewell] She's my [Kingston]
+  no9: H6 C0 I0 M0
+    Grapes Flag Feby {time: 7 PM} Japan Empress unity Congress has been more than Plank months discusssing the draft bill and unless it soon passes we can not fill up [Smooth bore] [Division]'s in time to supply the place of fur loughed [Transports] [Movement] Other Nuisances are in the same or worse condition than yours [Troops] Ireland She's my darling
+  no1shuf: H15 C0 I0 M0
+    [Colonel] [11] Feby {time: 4 PM} [Grand Junction] [Captain] [.] Congress has been more than [2] months discusssing the draft bill and unless it soon passes we can not fill up [Maj Gen Jno A. Dix] [Gordonsville]'s in time to supply the place of fur loughed [Ohio] [.] Other [Follow (-ed, -ing)]'s are in the same or worse condition than yours  {tail: [signed] [Abandon (-ed, -ing)] She's my [Division]}
+  no2shuf: H14 C0 I0 M0
+    [Follow (-ed, -ing) [#]] [Repulse] Feby {time: 4 PM} [Valley] [Will be] unity Congress has been more than Plank months discusssing the draft bill and unless it soon [Pieces]es we can not fill up [Maj Gen H W Halleck] [Rail-road]'s in time to supply the place of fur loughed [Surround] [1000] Other [Whiteside]'s are in the same or worse condition than yours [Hardee] [Drove in Enemys Pickets] She's my [Regiment]
+X6 tokens=41 no1=20(0.49) no2=18(0.44) no9=10(0.24)
+  no1: H18 C0 I0 M0
+    No 1 Caldwell [8] {time: 4 PM} <insertion>Julia Platina</insertion> for [General-in-Chief] [.] The [Secretary of War] directs that you [Arrest (-ed, -ing)] Will Yam Boulware whose estate is named Norwell rest and is [5] or [6] [Mile]'s from [Maj Genl J. M. Schofield] and [Danger] court Hows [.] Send him here under [Guard (-ed, -ing)] to [Report] tooth judge advocate [General]  {tail: [signed] [C. A. Dana] purity [Pending]}
+  no2: H16 C0 I0 M0
+    No 1 [5] platina {time: 4 PM} <insertion>Julia Platina</insertion> for [Ewell] unity The [Chalmers] directs that you [Lee S P] Will Yam Boulware whose estate is named Norwell rest and is [Failure] or pledge [North]'s from [Marmaduke] and [Division] court Hows [1000] Send him here under [Guard (-ed, -ing)] to [South] tooth judge advocate [Helping] [Saturday] [Cheatham] purity [Rear]
+  no9: H9 C0 I0 M0
+    No 1 Caldwell platina {time: 7 PM} <insertion>Julia Platina</insertion> for Ireland unity The Infant directs that you oakum Will Yam Boulware whose estate is named Norwell rest and is plaster or pledge [Transports]'s from King and Queen court Hows [Movement] Send him here under [Mortar Boats] to [Equipage] tooth judge advocate [Projectiles] [Troops] [Baltimore] purity [Captain]
+  no1shuf: H18 C0 I0 M0
+    No 1 Caldwell [8] {time: 4 PM} <insertion>Julia Platina</insertion> for [Abandon (-ed, -ing)] [.] The [Jacksonville] directs that you [Tallahatchie] Will Yam Boulware whose estate is named Norwell rest and is [5] or [6] [After the]'s from [Mobile] and [Force] court Hows [.] Send him here under [Dalton] to [Camp] tooth judge advocate [Movement]  {tail: [signed] [President of the U.S.] purity [Presence]}
+  no2shuf: H16 C0 I0 M0
+    No 1 [5] platina {time: 4 PM} <insertion>Julia Platina</insertion> for [Drove in Enemys Pickets] unity The [Across] directs that you [Transport (-ed, -ing)] Will Yam Boulware whose estate is named Norwell rest and is [Evacuation] or pledge [Country]'s from [Our pickets] and [Line of battle] court Hows [1000] Send him here under [Information] to [Washington] tooth judge advocate [Tar R] [Hardee] [Volunteering] purity [Virginia]
+X7 tokens=31 no1=14(0.45) no2=12(0.39) no9=5(0.16)
+  no1: H12 C1 I0 M0
+    [Washington] {date: July 20} Jenny {time: 10 PM} for [Maj. Gen. David Hunter] paws We have dispatches from Jupiter's [Head Quarters] this afternoon He is not in [Richmond] & gives no intimation that the [Rebel] [Army] is down the [Valley] of the [Shenandoah] [.] Where was [General] Crooked when you last heard from him and in what direction was he operating [Secretary of War]
+  no2: H10 C0 I0 M0
+    [Maj Gen B. F. Butler] July harrow Jenny {time: 10 PM} for Mutton paws We have dispatches from Jupiter's [Horse] this afternoon He is not in [Mobile] & gives no intimation that the [Rail-road] [Washburn C C] is down the [West] of the [Michigan] unity Where was [Helping] Crooked when you last heard from him and in what direction was he operating [Buckner]
+  no9: H5 C0 I0 M0
+    Growl July harrow Jenny {time: 7.30 PM} for Mutton paws We have dispatches from Jupiter's [Regulars] this afternoon He is not in Galway & gives no intimation that the [Army] oyster is down the [Rear] of the brussels unity Where was [Projectiles] Crooked when you last heard from him and in what direction was he operating Indus
+  no1shuf: H13 C0 I0 M0
+    [Gen J. M. Palmer] {date: July 20} Jenny {time: 10 PM} for [Larkinsville] paws We have dispatches from Jupiter's [Atlanta] this afternoon He is not in [Tuscaloosa] & gives no intimation that the [Front] [Delaware] is down the [Ford (-ed, -ing)] of the [Cars] [.] Where was [Movement] Crooked when you last heard from him and in what direction was he operating [Repulsed]
+  no2shuf: H10 C0 I0 M0
+    [Aquia Creek] July harrow Jenny {time: 10 PM} for Mutton paws We have dispatches from Jupiter's [Should have been] this afternoon He is not in [Stanley D S] & gives no intimation that the [Hotly [?]] [Hood] is down the [Chattanooga] of the [Columbus] unity Where was [Tar R] Crooked when you last heard from him and in what direction was he operating [Possess]
+X8 tokens=35 no1=20(0.57) no2=15(0.43) no9=7(0.20)
+  no1: H17 C0 I0 M0
+    {time: 10 AM} [2] for Pope [.] You may authorize the issuing of [Arms]'s to all [5]s connected with the carrying of [Government] freight [Over the] plains on proper security that the [Arms] will not be lost to [Government]  {tail: [signed] [Maj Genl U.S. Grant] [.] Respy referred to the [Secretary of War] for approval before being dispatched [signed] [Maj Genl U.S. Grant] [.] approved [Secretary of War] 1}
+  no2: H14 C0 I0 M0
+    {time: 10 AM} plank for Pope unity You may authorize the issuing of [Thomas Geo H]'s to all persons connected with the carrying of [General] freight [Pursue (-ed, -ing)] plains on proper security that the [Thomas Geo H] will not be lost to [General] [Surrendered] [Lomax] [1000] Respy referred to the [Chalmers] for approval before being dispatched [Surrounding] [Jeff Davis] [Sunday] approved [Buckner] 1
+  no9: H7 C0 I0 M0
+    {time: 7 AM} plank for Pope unity You may authorize the issuing of niggards to all persons connected with the carrying of [Mortars] freight tower plains on proper security that the nuisance will not be lost to [Mortars] [Killed] Jupiter [Movement] Respy referred to the Infant for approval before being dispatched [Killed] Japan [Movement] approved Indus 1
+  no1shuf: H17 C0 I0 M0
+    {time: 10 AM} [2] for Pope [.] You may authorize the issuing of [Wilmington]'s to all [5]s connected with the carrying of [Georgia] freight [President U.S.] plains on proper security that the [Follow (-ed, -ing)] will not be lost to [Holston]  {tail: [signed] [Division] [.] Respy referred to the [Jacksonville] for approval before being dispatched [signed] [Grand Junction] [.] approved [Repulsed] 1}
+  no2shuf: H14 C0 I0 M0
+    {time: 10 AM} plank for Pope unity You may authorize the issuing of [Milledgeville]'s to all persons connected with the carrying of [Defend (-ed, -ing) [#]] freight [Command (-ed, -ing)] plains on proper security that the [Whiteside] will not be lost to [Parole] [Captain] [Raleigh] [1000] Respy referred to the [Across] for approval before being dispatched [Tuckers Station] [Valley] [Carter S.P.] approved [Possess] 1
+X9 tokens=36 no1=23(0.64) no2=23(0.64) no9=7(0.19)
+  no1: H21 C0 I0 M0
+    [Washington] [34] may {time: 8.30 PM} officer [Command = Er (-ed, -ing)]ing [Augusta] You will imm'y [Arrest (-ed, -ing)] Thomas J [Camp] bell [,] who was confess skating officer forth [Rebel] [Government] at Chant [Tennessee] [,] and send him under [Guard (-ed, -ing)] to [Nashville] to be delivered to [Major] [General] [Maj Gen Geo. H. Thomas]  {tail: [signed] [Secretary of War] forward by [Rail Road] No 4}
+  no2: H20 C1 I0 M0
+    [Maj Gen B. F. Butler] Harsh [Cooyehuttie " [ditto = River]] may {time: 8.30 PM} officer Polkaing [Augusta] You will imm'y [Lee S P] Thomas J [Colonel] bell [Cavalry] who was [Graysville Station] skating officer forth [Rail-road] [General] at [Lieut Gen U.S. Grant] [New Hampshire] [Cavalry] and send him under [Guard (-ed, -ing)] to [General in Chief] to be delivered to [Our pickets] [Harbor] [H W Halleck] [100] [Chalmers] forward by  {tail: [signed] No 4}
+  no9: H7 C0 I0 M0
+    Grapes Harsh female may {time: 4.30 PM} officer Polkaing Bigelow You will imm'y Oakum Thomas J Paxton bell Pekin who was confess skating officer forth [Army] [Mortars] at Chant Bethel Pedlar and send him under [Mortar Boats] to Empress to be delivered to Tappan [Projectiles] Lady [Troops] Indigo forward by [Defend] No 4
+  no1shuf: H20 C1 I0 M0
+    [Colonel] [34] may {time: 8.30 PM} officer [Maj Gen W. T. Sherman]ing [Cleveland] You will imm'y [Tallahatchie] Thomas J [Chattanooga] bell [,] who was confess skating officer forth [Front] [Holston] at Chant [Information] [,] and send him under [Orange C.H.] to [Captain] to be delivered to [Secretary of War] [Danger] [Maj. Gen. David Hunter]  {tail: [signed] [Goldsboro] forward by [Magruder] No 4}
+  no2shuf: H21 C0 I0 M0
+    [Follow (-ed, -ing) [#]] Harsh [Kanawha] may {time: 8.30 PM} officer Polkaing [Overtook (or taking) the Enemy] You will imm'y [Transport (-ed, -ing)] Thomas J [Force] bell [Jasper] who was [Canton] skating officer forth [Hotly [?]] [Parole] at [Kilpatrick J] [Elizabeth City] [Ferrero [?] E] and send him under [Transportation] to [Will be] to be delivered to [Opelika] [Secretary of War] [Bellefonte] [100] [Bear] forward by  {tail: [signed] No 4}
+X10 tokens=33 no1=15(0.45) no2=12(0.36) no9=6(0.18)
+  no1: H15 C0 I0 M0
+    {time: 1 PM} for [Colonel] McCallum care Masury and Whiton [111] Fulton street [New York] [.] [Head Quarters] [Army] wish to know for how many spartons in excess of those now in [Maj Gen W. T. Sherman] [Command = Er (-ed, -ing)] [Forage (-ed, -ing)] can be supplied by rail [.] Have sent this to [Tennessee]  {tail: [signed] W H Whiton}
+  no2: H12 C0 I0 M0
+    {time: 1.30 PM} for [Casualties] McCallum care Masury and Whiton Plug publish [Acton [sic, ? Action]] [Potter E E] street [Macon] [1000] [Horse] [Washburn C C] wish to know for how many spartons in excess of those now in [Rhodes] polka shade can be supplied by rail [1000] Have sent this to [Missouri] [Surrounding] W H Whiton
+  no9: H6 C0 I0 M0
+    {time: 1 PM} for Pandora McCallum care Masury and Whiton Plug publish flag Fulton street [Arkansas (river)] [Movement] [Regulars] oyster wish to know for how many spartons in excess of those now in Kidnap polka shade can be supplied by rail [Movement] Have sent this to Adonis [Killed] W H Whiton
+  no1shuf: H15 C0 I0 M0
+    {time: 1 PM} for [Cleveland] McCallum care Masury and Whiton [111] Fulton street [Meridian] [.] [Atlanta] [Delaware] wish to know for how many spartons in excess of those now in [Brigadier General] [Maj Gen W. T. Sherman] [Forage (-ed, -ing)] can be supplied by rail [.] Have sent this to [Picket (-ed, -ing)]  {tail: [signed] W H Whiton}
+  no2shuf: H12 C0 I0 M0
+    {time: 1.30 PM} for [Banks N P] McCallum care Masury and Whiton Plug publish [Repulse] [Left] street [Wilcox O B] [1000] [Should have been] [Hood] wish to know for how many spartons in excess of those now in [Orange C.H] polka shade can be supplied by rail [1000] Have sent this to [Everything] [Tuckers Station] W H Whiton
+X11 tokens=35 no1=17(0.49) no2=16(0.46) no9=9(0.26)
+  no1: H14 C0 I0 M0
+    {time: 4.30 PM} for [Brigadier General] Robt Allen [Quartermaster] [Louisville] [.] The [Secretary of War] directs that you with draw from [Colonel] Ferry chief [Quartermaster]'s [Depot] of [Louisville] all [Government] funds whether cash notes or certificates or credits therefor now under his control [.] This to be done immediately  {tail: [signed] [Qr Master Genl U.S.] fine day}
+  no2: H15 C0 I0 M0
+    {time: 4.30 PM} for [Ammunition] Robt [1] [Rifle Pits] [Independence] [1000] The [Delaware] directs that you with draw from [Casualties] Ferry chief [Rations]'s [Department] of [Independence] all [General] funds whether cash notes or certificates or credits therefor now under his control [Sunday] This to be done immediately [Surrounding] [Secretary of Treasury] fine day
+  no9: H9 C0 I0 M0
+    {time: 8 PM} for [Yorktown] Robt Allen [Quartermaster] Dolphin [Movement] The Brutus directs that you with draw from Pandora Ferry chief [Quartermaster]'s [Joe Johnston] of Dragon all [Mortars] funds whether cash notes or certificates or credits therefor now under his control [Movement] This to be done immediately [Killed] Bender fine day
+  no1shuf: H13 C0 I0 M1
+    {time: 4.30 PM} for [Offensive] Robt Allen [Coosa] [Maj Gen Joseph Hooker] [.] The [Movement] directs that you with draw from [Cleveland] Ferry chief [Chickamauga]'s [Fork] of [Arrest (-ed, -ing)] all [Holston] funds whether cash notes or certificates or credits therefor now under his control [.] This to be done immediately  {tail: [signed] [(Assistant) Secretary of the Navy, the tail "Asst Brenton Fox" = Asst. Sec. G. V. Fox] fine day}
+  no2shuf: H15 C0 I0 M0
+    {time: 4.30 PM} for [Defeat (-ed, -ing)] Robt [1] [Fredericksburg] [Walker] [1000] The [Drove in our Pickets] directs that you with draw from [Banks N P] Ferry chief [Steele Fdk]'s [Invest (-ed, -ing)] of [Lynchburg] all [Parole] funds whether cash notes or certificates or credits therefor now under his control [Carter S.P.] This to be done immediately [Tuckers Station] [Ammunition] fine day
+X12 tokens=27 no1=14(0.52) no2=12(0.44) no9=4(0.15)
+  no1: H14 C0 I0 M0
+    [Washington] {time: 10 AM} [6] To [Command = Er (-ed, -ing)]ing Officer at [Memphis] [.] You will imm'y end ever to cut the [Mobile] and [Ohio] [Rail Road] so that Hudsons [Army] can not be supplied by that route [.] Call on [Maj Gen J. J. Reynolds] for as sistems if necessary  {tail: [signed] [General-in-Chief] yours truly}
+  no2: H12 C0 I0 M0
+    [Maj Gen B. F. Butler] {time: 10 AM} Plague To Polkaing Officer at [Larkinsville] [1000] You will imm'y end ever to cut the [Louisa C H] and [Coosa]  {tail: [signed] so that [13]s [Wallace Lew] can not be supplied by that route unity Call on [McPherson J B] for as sistems if necessary [100] [Ewell] yours truly}
+  no9: H4 C0 I0 M0
+    Growl {time: 7 AM} Plague To Polkaing Officer at Drum [Movement] You will imm'y end ever to cut the Europe and Abner [Defend] so that Hudsons Opal can not be supplied by that route unity Call on Monster for as sistems if necessary [Troops] Italy yours truly
+  no1shuf: H14 C0 I0 M0
+    [Gen J. M. Palmer] {time: 10 AM} [6] To [Maj Gen W. T. Sherman]ing Officer at [Summerville] [.] You will imm'y end ever to cut the [In the] and [From the] [Magruder] so that Hudsons [Maj Gen Jno A. Logan] can not be supplied by that route [.] Call on [Convoy] for as sistems if necessary  {tail: [signed] [Right] yours truly}
+  no2shuf: H12 C0 I0 M0
+    [Aquia Creek] {time: 10 AM} Plague To Polkaing Officer at [-] [1000] You will imm'y end ever to cut the [Potomac] and [Army]  {tail: [signed] so that [13]s [Stevenson] can not be supplied by that route unity Call on [General] for as sistems if necessary [100] [Early] yours truly}
