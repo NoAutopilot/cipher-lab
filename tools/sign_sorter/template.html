@@ -559,13 +559,31 @@ document.addEventListener('touchend', e => { if (swallowMouse && e.cancelable) e
 // AND, half a second later, the card opened. The document clears the slot on that pointer's pointerup / pointercancel and on a drift
 // past the slop, wherever the element went. holdStart(e, el, ms, slop, fire, end): fire() when the hold completes; end() whenever the
 // slot is let go (completed, cancelled or replaced).
-let pend = null;   // {id: pointerId, x, y, t0, slop, touch, el, timer, end}
+// A press is a tap or a hold by its OWN clock (template 2026-10-09.6; sweep of 10 Oct 2026 on Debosnys, Lancosme and Juan Manuel, whose
+// render() takes 0.4-0.8 s): a render that holds the main thread delays the hold timer AND queues the finger's lift behind it, and when
+// the page is free again the browser may run the timer first -- a 120 ms tap then opened the card and moved nothing (3 of 9 probes on
+// Debosnys; 6 of 6 on the synthetic page blocked 0.6 s). So the lift decides whenever it is in: its pointerup's timeStamp minus the
+// pointerdown's (when each event happened, not when the page got to it; both on performance.now()'s clock) is the press's length --
+// under the hold time a tap, at or over it a hold (its card opens, nothing moves), however late either event is handled. The timer is set
+// from the pointerdown's own time, and when it comes due it waits ONE more macrotask before it treats the press as a hold, so a lift
+// queued behind the render is handled first; a finger still down then is a hold. On a browser whose event times are not on that clock
+// (evT says null), a lift handled before the hold fires is a tap, as on 2026-10-09.5.
+let pend = null;   // {id: pointerId, x, y, t0, ts: the pointerdown's own time or null, ms, slop, touch, el, timer, fire, end}
+const evT = e => { const t = e && e.timeStamp; return typeof t === 'number' && isFinite(t) && t > 0 && Math.abs(performance.now() - t) < 60000 ? t : null; };
 function holdStart(e, el, ms, slop, fire, end){
-  holdEnd(); const p = {id: e.pointerId, x: e.clientX, y: e.clientY, t0: performance.now(), slop, touch: e.pointerType !== 'mouse', el, end, timer: 0};
-  p.timer = setTimeout(() => { if (pend !== p) return; pend = null; if (end) end(); fire(); }, ms); pend = p; }
+  holdEnd(); const now = performance.now(), ts = evT(e);
+  const p = {id: e.pointerId, x: e.clientX, y: e.clientY, t0: now, ts, ms, slop, touch: e.pointerType !== 'mouse', el, fire, end, timer: 0};
+  const due = () => { if (pend === p) p.timer = setTimeout(() => { if (pend === p) holdFire(p); }, 0); };   // one macrotask more: a queued lift goes first
+  p.timer = setTimeout(due, Math.max(0, ms - (ts === null ? 0 : now - ts))); pend = p; }
+function holdFire(p){ pend = null; clearTimeout(p.timer); if (p.end) p.end(); p.fire(); }
 function holdEnd(el){ const p = pend; if (!p || (el && p.el !== el)) return; pend = null; clearTimeout(p.timer); if (p.end) p.end(); }
 document.addEventListener('pointermove', e => { if (pend && e.pointerId === pend.id && Math.hypot(e.clientX - pend.x, e.clientY - pend.y) > pend.slop) holdEnd(); }, true);
-document.addEventListener('pointerup', e => { if (pend && e.pointerId === pend.id) holdEnd(); }, true);
+// the lift: held at least the hold time by the two events' own times -> a hold, even when the timer has not run yet (the page was busy):
+// it fires now, before this pointerup reaches the element, and the lift's click and compatibility mouse events are swallowed as after
+// any hold (heldLift, from fire); else the press was a tap and the slot is let go (its click does the tap)
+document.addEventListener('pointerup', e => { const p = pend; if (!p || e.pointerId !== p.id) return; const t = evT(e);
+  if (p.ts !== null && t !== null && t - p.ts >= p.ms){ holdFire(p); if (swallowMouse){ clearTimeout(swallowT); swallowT = setTimeout(() => { swallowMouse = false; }, 700); } return; }
+  holdEnd(); }, true);
 document.addEventListener('pointercancel', e => { if (pend && e.pointerId === pend.id) holdEnd(); }, true);
 // The browser starts its own pan, and cancels the press, once a resting finger has drifted about 15 px (Chromium, measured on iPhone 13
 // and SE emulation, 10 Oct 2026; WebKit's own threshold is not measured here) -- short of the 18 px a hold allows, so a hold drifting

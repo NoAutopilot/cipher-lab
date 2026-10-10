@@ -1,0 +1,177 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SHStA Dresden Loc. 694/08 frame 0391 (P.S. 13 Oct 1712): unglossed cipher spans </title><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#55565c;--rule:#d9d6cf;--card:#ffffff;--accent:#0b3d91;--accent2:#8a4b00;--tint:#eef2fa}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#141518;--fg:#ececef;--muted:#a9abb3;--rule:#33353b;
+ --card:#1c1e22;--accent:#9cc2ff;--accent2:#f2b46b;--tint:#1f2633}}
+:root[data-theme="dark"]{--bg:#141518;--fg:#ececef;--muted:#a9abb3;--rule:#33353b;--card:#1c1e22;--accent:#9cc2ff;--accent2:#f2b46b;--tint:#1f2633}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 Georgia,"Iowan Old Style","Palatino Linotype",serif}
+main{max-width:980px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:1.9rem;line-height:1.2;margin:.2em 0 .3em}
+h2{font-size:1.3rem;margin:1.8em 0 .5em;border-bottom:1px solid var(--rule);padding-bottom:.2em}
+h3{font-size:1.05rem;margin:1.2em 0 .3em}
+a{color:var(--accent)}
+nav.top{font:14px/1.4 system-ui,sans-serif;display:flex;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--rule);padding-bottom:8px}
+.lede{color:var(--muted);max-width:44em}
+.mock{font:13px/1.4 system-ui,sans-serif;border:2px dashed var(--accent2);color:var(--fg);padding:8px 12px;margin:12px 0}
+.counts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:16px 0}
+.count{background:var(--card);border:1px solid var(--rule);padding:10px 12px}
+.count b{display:block;font-size:1.7rem;font-family:system-ui,sans-serif}
+.count span{font:13px/1.35 system-ui,sans-serif;color:var(--muted)}
+.item{background:var(--card);border:1px solid var(--rule);border-left:4px solid var(--accent);padding:10px 14px;margin:10px 0}
+.item h3{margin:0 0 4px}
+.meta{font:13px/1.45 system-ui,sans-serif;color:var(--muted);margin:2px 0}
+.meta b{color:var(--fg);font-weight:600}
+.gist{margin:6px 0 0}
+.gist em{font:12px system-ui,sans-serif;color:var(--muted);font-style:normal}
+blockquote{margin:8px 0;padding:8px 12px;background:var(--tint);border-left:4px solid var(--accent2)}
+dl{display:grid;grid-template-columns:minmax(120px,190px) 1fr;gap:6px 14px;font:14px/1.45 system-ui,sans-serif}
+dt{color:var(--muted)} dd{margin:0;overflow-wrap:anywhere}
+.small{font:13px/1.45 system-ui,sans-serif;color:var(--muted)}
+details summary{cursor:pointer;color:var(--accent);font:14px system-ui,sans-serif}
+section.page{border-top:3px double var(--rule);margin-top:40px;padding-top:8px}
+.filters{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;font:14px system-ui,sans-serif;margin:12px 0}
+.filters select{font:inherit;padding:2px 4px;max-width:260px}
+table.cat{width:100%;border-collapse:collapse;font:14px/1.4 system-ui,sans-serif}
+table.cat th{text-align:left;border-bottom:2px solid var(--rule);padding:6px 6px;font-weight:600}
+table.cat td{border-bottom:1px solid var(--rule);padding:6px;vertical-align:top}
+blockquote.claim{font-size:1.08rem}
+details{border:1px solid var(--rule);background:var(--card);margin:6px 0;padding:6px 10px}
+details .det{font:14px/1.5 system-ui,sans-serif;padding:4px 0}
+code{font:13px ui-monospace,Menlo,monospace;background:var(--tint);padding:1px 4px;overflow-wrap:anywhere}
+@media (max-width:760px){table.cat thead{display:none}table.cat tr{display:block;border:1px solid var(--rule);background:var(--card);margin:8px 0;padding:4px 8px}
+ table.cat td{display:block;border:0;padding:2px 0}table.cat td:empty{display:none}table.cat td::before{content:attr(data-l) ": ";color:var(--muted);font-size:12px}}
+@media (max-width:560px){dl{grid-template-columns:1fr}dt{margin-top:6px}h1{font-size:1.5rem}}
+
+figure.cipher{margin:14px 0;background:var(--card);border:1px solid var(--rule);padding:8px}
+figure.cipher img{display:block;width:100%;height:auto;background:#fff}
+figcaption{font:12px/1.4 system-ui,sans-serif;color:var(--muted);margin-top:6px}
+.strip{display:flex;flex-wrap:wrap;gap:3px;margin-top:8px}
+.tk{display:inline-flex;flex-direction:column;align-items:center;min-width:34px;padding:2px 3px 0;border:1px solid var(--rule);border-bottom-width:5px;background:var(--bg)}
+.tk .cs{font:12px ui-monospace,Menlo,monospace;color:var(--muted)}
+.tk .pv{font:600 14px Georgia,serif}
+.tk .gr{font:10px system-ui,sans-serif;color:var(--muted)}
+.en{font:italic 15px/1.4 Georgia,serif;margin:8px 0 2px;padding-left:8px;border-left:3px solid var(--rule)}
+.en .k{font:normal 11px system-ui,sans-serif;margin-bottom:2px}.en.none{font:12px system-ui,sans-serif;color:var(--muted)}
+.k.layer{margin-top:8px}
+.legend{font:12px system-ui,sans-serif}.lg{border-bottom:4px solid;padding:0 4px;margin-right:6px}
+.ctx{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:6px;font:14px system-ui,sans-serif;background:var(--tint);padding:8px 10px}
+.k{color:var(--muted);font-size:12px;display:block}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}.two h3{margin:.8em 0 .3em}
+ul.tl{list-style:none;padding:0;margin:0;font:14px/1.45 system-ui,sans-serif}ul.tl li{margin:3px 0}
+.cx{font-size:11px;color:var(--muted);border:1px solid var(--rule);padding:0 4px}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 6px}
+.badge{font:13px system-ui,sans-serif;border:1px solid var(--accent);padding:2px 8px;text-decoration:none;color:var(--fg)}
+.bar{display:flex;height:12px;border:1px solid var(--rule)}.bar span{display:block}
+img.thumb{display:block;max-width:220px;height:auto;margin-bottom:3px;background:#fff}
+ul.links{font:14px/1.6 system-ui,sans-serif;padding-left:18px}
+@media (max-width:640px){.two{grid-template-columns:1fr}}
+
+:root{--bg:#f6f2ea;--panel:#fffdf8;--ink:#1d1b18;--muted:#5f5a52;--rule:#d9d1c3;--accent:#123c69;
+--gH:#0072B2;--gC:#0072B2;--gS:#0072B2;--gM:#B35900;--gI:#B35900;--gU:#595959;--bt:#ffffff;--chip:#efe8db;--tint:#e8eef6}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#15130f;--panel:#1f1c17;--ink:#efe9de;--muted:#b4ab9c;
+--rule:#3a352d;--accent:#9cc3ef;--gH:#56B4E9;--gC:#56B4E9;--gS:#56B4E9;--gM:#E69F00;--gI:#E69F00;--gU:#9a9184;--bt:#1b1916;--chip:#2a261f;--tint:#1d2a3a}}
+:root[data-theme="dark"]{--bg:#15130f;--panel:#1f1c17;--ink:#efe9de;--muted:#b4ab9c;--rule:#3a352d;--accent:#9cc3ef;--gH:#56B4E9;
+--gC:#56B4E9;--gS:#56B4E9;--gM:#E69F00;--gI:#E69F00;--gU:#9a9184;--bt:#1b1916;--chip:#2a261f;--tint:#1d2a3a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Georgia,"Iowan Old Style",serif}
+a{color:var(--accent)}.wrap{max-width:1060px;margin:0 auto;padding:0 16px 48px}
+.mock{font:13px/1.4 system-ui,sans-serif;background:var(--chip);color:var(--muted);padding:6px 16px;text-align:center}
+nav.top{display:flex;gap:16px;flex-wrap:wrap;font:14px system-ui,sans-serif;padding:12px 0;border-bottom:1px solid var(--rule)}
+.kicker{font:600 13px system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:28px 0 4px}
+h1{font-size:clamp(26px,4.4vw,40px);line-height:1.15;margin:0 0 14px}h2{font:600 13px system-ui,sans-serif;letter-spacing:.1em;
+text-transform:uppercase;color:var(--muted);margin:36px 0 10px;border-top:1px solid var(--rule);padding-top:14px}
+.headline{font-size:clamp(18px,2.4vw,22px);max-width:46em;margin:0 0 18px}
+.hero{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:760px){.hero{grid-template-columns:minmax(0,1fr)}}
+figure{margin:0}figure img{width:100%;height:auto;display:block;border:1px solid var(--rule);background:#fff}
+figcaption{font:13px/1.4 system-ui,sans-serif;color:var(--muted);margin-top:6px}
+.line{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:10px;margin-bottom:12px}
+.line img{width:100%;height:auto;display:block;background:#fff;border-radius:3px}
+.toks{display:flex;justify-content:space-between;gap:2px;margin-top:6px;overflow-x:auto;padding-bottom:2px}
+.tok{display:inline-flex;flex-direction:column;align-items:center;font:600 14px/1.1 ui-monospace,Menlo,monospace;min-width:.9em}
+.tok small{font:9px system-ui,sans-serif;color:var(--muted);margin-top:2px}
+.tok.H b{color:var(--gH);border-bottom:2px solid var(--gH)}.tok.C b{color:var(--gC);border-bottom:3px double var(--gC)}
+.tok.S b{color:var(--gS);border-bottom:4px solid var(--gS)}.tok.M b{color:var(--gM);border-bottom:2px dotted var(--gM)}
+.tok.I b{color:var(--gI);border-bottom:2px dashed var(--gI)}.tok.U b{color:var(--gU)}
+.tok.clear b{font:italic 15px Georgia,serif;color:var(--ink)}.tok.null b{color:var(--gU);font-weight:400}
+.layer{font:12px system-ui,sans-serif;color:var(--muted);margin-top:8px}
+.en{border-left:3px solid var(--rule);padding:4px 10px;margin-top:4px}.en .fr{font-style:italic}.en .tr{font-size:17px}
+.reveal .toks,.reveal .en,.reveal .layer{display:none}.reveal.open .toks,.reveal.open .en,.reveal.open .layer{display:flex}
+.reveal.open .en,.reveal.open .layer{display:block}
+button{font:600 14px system-ui,sans-serif;background:var(--accent);color:var(--bg);border:0;border-radius:4px;padding:8px 14px;cursor:pointer}
+.legend{display:flex;flex-wrap:wrap;gap:10px 18px;font:12px system-ui,sans-serif;color:var(--muted);margin:8px 0 14px}
+.legend .tok{flex-direction:row;gap:6px}
+.faces{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.face{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:10px;font:13px/1.35 system-ui,sans-serif}
+.face svg{width:100%;height:auto;display:block;border-radius:4px}.face strong{display:block;font:600 14px Georgia,serif;margin-top:6px}
+.face .now{color:var(--muted)}
+.moment{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:20px}@media (max-width:760px){.moment{grid-template-columns:minmax(0,1fr)}}
+ol.strip{list-style:none;margin:0;padding:0;border-left:3px solid var(--rule)}ol.strip li{padding:6px 0 10px 14px;position:relative}
+ol.strip li:before{content:"";position:absolute;left:-8px;top:12px;width:12px;height:12px;border-radius:50%;background:var(--panel);
+border:3px solid var(--muted)}ol.strip li.this:before{border-color:var(--accent);background:var(--accent)}
+ol.strip time{font:600 13px system-ui,sans-serif;display:block}ol.strip li.this time{color:var(--accent)}
+.map{background:var(--panel);border:1px solid var(--rule);border-radius:6px}.map svg{width:100%;height:auto;display:block}
+.secret{background:var(--tint);border-radius:6px;padding:14px}.secret .tag{font:600 12px system-ui,sans-serif;color:var(--muted)}
+.secret img{width:100%;max-width:820px;display:block;margin-top:8px;background:#fff;border-radius:3px}
+.try{display:flex;flex-wrap:wrap;gap:12px}.card{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:10px;
+width:190px;text-align:center;cursor:pointer;font:13px system-ui,sans-serif}.card img{height:84px;width:auto;max-width:100%;background:#fff}
+.card .code{font:600 22px ui-monospace,Menlo,monospace;min-height:84px;display:flex;align-items:center;justify-content:center}
+.card .ans{visibility:hidden;font:600 18px Georgia,serif;margin-top:6px}.card.open .ans{visibility:visible}
+.card .hint{color:var(--muted)}.card.open .hint{display:none}
+.badges{display:flex;flex-wrap:wrap;gap:10px}.badge{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:10px 12px;
+max-width:330px;font:13px/1.4 system-ui,sans-serif}.badge strong{font:600 20px Georgia,serif;display:block}
+.bar{display:flex;height:22px;border-radius:4px;overflow:hidden;border:1px solid var(--rule);margin:6px 0;max-width:620px}
+.bar span{display:flex;align-items:center;justify-content:center;font:600 11px system-ui,sans-serif;color:var(--bt);min-width:0}
+.bar .H{background:var(--gH)}.bar .C{background:var(--gC)}.bar .S{background:var(--gS)}.bar .M{background:var(--gM);
+background-image:repeating-linear-gradient(45deg,transparent 0 4px,rgba(255,255,255,.28) 4px 6px)}.bar .I{background:var(--gI)}
+.bar .U{background:var(--gU);background-image:repeating-linear-gradient(-45deg,transparent 0 3px,rgba(255,255,255,.35) 3px 5px)}
+.small{font:13px/1.45 system-ui,sans-serif;color:var(--muted)}ul.links{font:14px system-ui,sans-serif;padding-left:18px}
+.credit{font:12px/1.45 system-ui,sans-serif;color:var(--muted);border-top:1px solid var(--rule);margin-top:30px;padding-top:10px}
+.cards3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:20px}
+.cards3 a{display:block;background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:12px;text-decoration:none;color:var(--ink)}
+.cards3 img{width:100%;height:150px;object-fit:cover;object-position:top;border-radius:4px}
+
+.pf{position:relative}.pf img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:4px;border:0;background:var(--chip)}
+.says{background:var(--panel);border:2px solid var(--accent);border-radius:6px;padding:14px;margin:0 0 18px}
+.says .tag,.ctx{font:600 12px system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.says p{margin:6px 0 0;font-size:18px}.ctxbox{border:1px dashed var(--rule);border-radius:6px;padding:12px}
+.comp{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:10px 12px;margin:8px 0;font-size:16px}
+.comp b{font:600 13px system-ui,sans-serif;display:block;color:var(--muted)}
+.caution{font:13px/1.45 system-ui,sans-serif;border-left:3px solid var(--gM);padding:4px 10px;margin:8px 0}
+
+nav.site{font:14px/1.4 system-ui,sans-serif;display:flex;gap:6px 14px;flex-wrap:wrap;align-items:center;padding:10px 0;
+ border-bottom:2px solid var(--rule)}
+nav.site a{text-decoration:none;padding:2px 0}nav.site a[aria-current=page]{font-weight:700;border-bottom:2px solid currentColor}
+nav.site .brand{font-weight:700;margin-right:6px;color:inherit}
+.crumbs{font:13px/1.4 system-ui,sans-serif;color:var(--muted);margin:10px 0 0}.crumbs a{color:inherit}
+.pager{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:14px/1.4 system-ui,sans-serif;margin:16px 0;
+ padding:10px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.pager a{max-width:46%}.pager .mid{text-align:center}
+.backlink{font:14px system-ui,sans-serif;border:1px solid var(--rule);border-left:4px solid var(--accent2);padding:8px 12px;margin:12px 0}
+.evidence{font:14px/1.5 system-ui,sans-serif;border:1px solid var(--rule);border-left:4px solid var(--accent);padding:8px 14px;margin:18px 0}
+.evidence ul{margin:6px 0 0;padding-left:20px}
+footer.site{font:12px/1.5 system-ui,sans-serif;color:var(--muted);border-top:1px solid var(--rule);margin-top:40px;padding-top:10px}
+.qf{font:inherit;padding:4px 8px;min-width:260px;max-width:100%}
+ul.browse{list-style:none;padding:0}ul.browse li{margin:8px 0;padding:6px 0;border-bottom:1px solid var(--rule)}
+ul.browse .one{display:block;color:var(--muted);font-size:.95em}
+.toc{font:14px system-ui,sans-serif;display:flex;flex-wrap:wrap;gap:6px 14px}
+.door{border-top:3px double var(--rule);margin-top:36px;padding-top:6px}
+.dsum{border:1px solid var(--rule);padding:10px 14px;margin:16px 0}
+.sitenote{font:13px/1.4 system-ui,sans-serif;color:var(--muted);margin:10px 0}.sitenote a{color:inherit}
+@media (max-width:560px){.qf{min-width:0;width:100%}.pager a{max-width:100%}}
+
+section.part{margin:22px 0}section.part>h2{font:600 13px system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;
+ color:var(--muted);border-bottom:1px solid var(--rule);padding-bottom:4px}
+.says1{font:19px/1.45 Georgia,serif;margin:6px 0}
+p.orig{font:16px/1.7 Georgia,serif}mark.cw{background:var(--tint);color:inherit;border-bottom:2px solid var(--accent);padding:0 2px}
+.rline{margin:8px 0}.names{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0}
+.names a{font:14px system-ui,sans-serif;border:1px solid var(--rule);padding:2px 8px;text-decoration:none}
+.faces1{display:flex;flex-wrap:wrap;gap:12px}.faces1 .face{width:120px;font:12px/1.3 system-ui,sans-serif}
+.faces1 .pf{position:relative;width:120px;height:140px}.faces1 .pf img,.faces1 .pf svg{position:absolute;inset:0;width:120px;height:140px;object-fit:cover}
+.ctxslot{border:1px dashed var(--rule);padding:8px 12px;color:var(--muted);font:14px system-ui,sans-serif}
+</style></head><body><main><nav class="site" aria-label="Site"><a class="brand" href="../index.html">What the cipher said</a><a href="../index.html">Exhibit</a><a href="../all-readings.html" aria-current=page>All readings</a><a href="../browse/century.html">By century</a><a href="../browse/archive.html">By archive</a><a href="../browse/language.html">By language</a><a href="../how-to-read.html">How to read</a><a href="../people/index.html">People</a><a href="../credits.html">Credits</a></nav><p class="crumbs"><a href="../index.html">Home</a> &rsaquo; <a href="../all-readings.html">All readings</a> &rsaquo; SHStA Dresden Loc. 694/08 frame 0391 (P.S. 13 ...</p><p class="sitenote">Cipher Lab readings: what our agents have read in historical cipher letters, with the evidence. Each reading carries its grade; see <a href="../how-to-read.html">How to read</a>. &middot; <a href="https://github.com/NoAutopilot/cipher-lab">Repository</a></p><p class="backlink">This reading is shown in the exhibit: <a href="../exhibit/berlin-1712.html">Back to the display &ldquo;Berlin, 1712&rdquo;</a></p><div class="pager"><a rel="prev" href="095-sachsstaatsarchiv-manteuffel-1712-shsta-dresden-loc-694-08-frame-0390.html">&larr; SHStA Dresden Loc. 694/08 frame 0390 (10 Oct ...</a><span class="mid">96 of 240 &middot; <a href="../all-readings.html">All readings</a></span><a rel="next" href="097-sachsstaatsarchiv-manteuffel-1712-shsta-dresden-loc-694-08-frame-0485.html">SHStA Dresden Loc. 694/08 frame 0485 (about 12 ... &rarr;</a></div><article data-interest="2" data-thin="no"><h1>SHStA Dresden Loc. 694/08 frame 0391 (P.S. 13 Oct 1712): unglossed cipher spans read with Dr. Krauske&#x27;s 1893 manuscript key table</h1><section class="part" id="what-it-says"><h2>What it says</h2><p class="says1">Oxford had said the Queen of England was too far off to meddle in pacifying the North and would defer to Hanover ... Bolingbroke&#x27;s declaration had been far more violent (Denmark to be detached from its allies by the spring)</p><p class="small">Source: quoted in the exhibit&#x27;s selection notes from the verifier&#x27;s depth sentence.</p></section><section class="part" id="reading"><h2>The reading</h2><div class="legend"><span class="tok H"><b>H</b> read from a key source</span><span class="tok C"><b>C</b> from known plaintext or a period key table</span><span class="tok S"><b>S</b> cryptanalytic, with a control</span><span class="tok M"><b>M</b> uncertain</span><span class="tok I"><b>I</b> inferred</span><span class="tok U"><b>U</b> sign not covered by the key</span><span class="tok clear"><b>clear</b> written in clear on the page</span></div><div class="line"><img src="../assets/exhibit-img/mant0391_a.jpg" alt="Cipher line"><div class="layer">French as read, sign by sign (grade under each)</div><div class="toks"><span class="tok C" title="sign 217 = la reine d&#x27;Angleterre, grade C"><b>la reine d&#x27;Angleterre</b><small>C</small></span><span class="tok clear" title="clear text on the page"><b>s&#x27;est expliqué par ses ministres au sujet des affaires du nord</b><small>clear</small></span></div><div class="layer">English (translation, interpretation)</div><div class="en"><div class="fr">[la reine d&#x27;Angleterre] s&#x27;est expliquée par ses ministres au sujet des affaires du nord</div><div class="tr">the Queen of England has explained herself through her ministers on the affairs of the North</div></div></div><div class="line"><img src="../assets/exhibit-img/mant0391_b.jpg" alt="Cipher line"><div class="layer">French as read, sign by sign (grade under each)</div><div class="toks"><span class="tok clear" title="clear text on the page"><b>bien differente.</b><small>clear</small></span><span class="tok C" title="sign 33 = o, grade C"><b>o</b><small>C</small></span><span class="tok M" title="sign 4 = x, grade M"><b>x</b><small>M</small></span><span class="tok M" title="sign 1 = f, grade M"><b>f</b><small>M</small></span><span class="tok M" title="sign 16 = o|ou|ous, grade M"><b>o/…</b><small>M</small></span><span class="tok M" title="sign 60 = r|re|ro, grade M"><b>r/…</b><small>M</small></span><span class="tok C" title="sign 120 = d, grade C"><b>d</b><small>C</small></span><span class="tok clear" title="clear text on the page"><b>a dit en gros que</b><small>clear</small></span><span class="tok C" title="sign 217 = la reine d&#x27;Angleterre, grade C"><b>la reine d&#x27;Angleterre</b><small>C</small></span><span class="tok clear" title="clear text on the page"><b>etoit trop</b><small>clear</small></span></div><div class="layer">English (translation, interpretation)</div><div class="en"><div class="fr">… bien différente. [Oxford] a dit en gros que [la reine] étoit trop</div><div class="tr">… quite differently. Oxford said, broadly, that the Queen was too</div></div></div><div class="line"><img src="../assets/exhibit-img/mant0391_c.jpg" alt="Cipher line"><div class="layer">French as read, sign by sign (grade under each)</div><div class="toks"><span class="tok clear" title="clear text on the page"><b>loin de s&#x27;en meler pour les appaiser, et de s&#x27;en rap-</b><small>clear</small></span></div><div class="layer">English (translation, interpretation)</div><div class="en"><div class="fr">loin de s&#x27;en mêler pour les apaiser, et de s&#x27;en rap-</div><div class="tr">far off to meddle in pacifying them, and would</div></div></div><div class="line"><img src="../assets/exhibit-img/mant0391_d.jpg" alt="Cipher line"><div class="layer">French as read, sign by sign (grade under each)</div><div class="toks"><span class="tok clear" title="clear text on the page"><b>porter, quant a l&#x27;execution, aux sentiments de</b><small>clear</small></span><span class="tok M" title="sign 266 = l&#x27;Electeur de Hanovre, grade M"><b>l&#x27;Electeur de Hanovre</b><small>M</small></span></div><div class="layer">English (translation, interpretation)</div><div class="en"><div class="fr">porter, quant à l&#x27;exécution, aux sentiments de [l&#x27;Electeur de Hanovre]</div><div class="tr">defer, as to carrying it out, to the views of the Elector of Hanover;</div></div></div><div class="line"><img src="../assets/exhibit-img/mant0391_e.jpg" alt="Cipher line"><div class="layer">French as read, sign by sign (grade under each)</div><div class="toks"><span class="tok clear" title="clear text on the page"><b>mais la declaration de</b><small>clear</small></span><span class="tok M" title="sign 55 = b|[a], grade M"><b>b/…</b><small>M</small></span><span class="tok M" title="sign 6 = u, grade M"><b>u</b><small>M</small></span><span class="tok M" title="sign 12 = l, grade M"><b>l</b><small>M</small></span><span class="tok M" title="sign 44 = l, grade M"><b>l</b><small>M</small></span><span class="tok C" title="sign 39 = i, grade C"><b>i</b><small>C</small></span><span class="tok C" title="sign 21 = n, grade C"><b>n</b><small>C</small></span><span class="tok C" title="sign 40 = b, grade C"><b>b</b><small>C</small></span><span class="tok M" title="sign 60 = r|re|ro, grade M"><b>r/…</b><small>M</small></span><span class="tok M" title="sign 16 = o|ou|ous, grade M"><b>o/…</b><small>M</small></span><span class="tok M" title="sign 67 = u, grade M"><b>u</b><small>M</small></span><span class="tok C" title="sign 7 = g, grade C"><b>g</b><small>C</small></span><span class="tok clear" title="clear text on the page"><b>a été bien</b><small>clear</small></span></div><div class="layer">English (translation, interpretation)</div><div class="en"><div class="fr">mais la déclaration de [Bullinbroug] a été bien</div><div class="tr">but the declaration of Bolingbroke was much</div></div></div><div class="line"><img src="../assets/exhibit-img/mant0391_h.jpg" alt="Cipher line"><div class="layer">French as read, sign by sign (grade under each)</div><div class="toks"><span class="tok clear" title="clear text on the page"><b>plus facilement, on</b><small>clear</small></span><span class="tok M" title="sign 160 = [160], grade M"><b>[160]</b><small>M</small></span><span class="tok C" title="sign 35 = e, grade C"><b>e</b><small>C</small></span><span class="tok C" title="sign 28 = t, grade C"><b>t</b><small>C</small></span><span class="tok C" title="sign 66 = a, grade C"><b>a</b><small>C</small></span><span class="tok C" title="sign 72 = ch, grade C"><b>ch</b><small>C</small></span><span class="tok C" title="sign 10 = e, grade C"><b>e</b><small>C</small></span><span class="tok M" title="sign 60 = r|re|ro, grade M"><b>r/…</b><small>M</small></span><span class="tok C" title="sign 33 = o, grade C"><b>o</b><small>C</small></span><span class="tok C" title="sign 9 = i, grade C"><b>i</b><small>C</small></span><span class="tok C" title="sign 59 = t, grade C"><b>t</b><small>C</small></span><span class="tok clear" title="clear text on the page"><b>(bon gré malgré)</b><small>clear</small></span><span class="tok M" title="sign 227 = le roi de Danemark, grade M"><b>le roi de Danemark</b><small>M</small></span><span class="tok clear" title="clear text on the page"><b>de ses</b><small>clear</small></span></div><div class="layer">English (translation, interpretation)</div><div class="en"><div class="fr">plus facilement, on [d]etacheroit (bon gré malgré) [le roi de Danemark] de ses</div><div class="tr">more easily, the King of Denmark would be detached, willing or not, from his</div></div></div><p class="small">The same lines, with the story around them: <a href="../exhibit/berlin-1712.html">the display</a>.</p></section><section class="part" id="who"><h2>Who, where, when</h2><div class="ctx"><div><span class="k">From</span> not given in the record</div><div><span class="k">To</span> not given in the record</div><div><span class="k">At</span> not given in the record</div><div><span class="k">Date</span> not given in the record</div><div><span class="k">Held</span> Sächsisches Hauptstaatsarchiv Dresden</div></div><p class="small">No person or place name is decoded in the cipher text of this item (names in clear, or none).</p></section><section class="part" id="how"><h2>How we know</h2><blockquote class="claim">Partially deciphered. Applying Krauske&#x27;s 1893 table to the cipher names in Manteuffel&#x27;s postscript of 13 Oct 1712 (Loc. 694/08) gives Oxford, Bolingbroke and the queen of England in a report, passed on by the Hanoverian resident Heusch, of their differing declarations on the northern peace; no prior plaintext located in the searched editions (Bolingbroke&#x27;s Letters and Correspondence, Klopp XIV, Macpherson II, Sbornik RIO 61, Heinsius XIV, Droysen IV.1); Hanover&#x27;s own stance (a general peace only) is printed in Klopp XIV pp. 421-422.</blockquote><p class="small">From the results register; no safe sentence in AUDIT.md matched this entry, so read the audit before quoting it.</p><p class="badges"><a class="badge" href="../how-to-read.html#n-class">N3 no prior reading located</a><a class="badge" href="../how-to-read.html#depth">partially deciphered (about 47% of the cipher text)</a><a class="badge" href="../how-to-read.html#key">a key published by someone else, applied by us (credited)</a><span class="badge">two audits: yes</span></p><ul class="links"><li><a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/sachsstaatsarchiv-manteuffel-1712/AUDIT.md">AUDIT.md</a> &middot; decode script <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/sachsstaatsarchiv-manteuffel-1712/decode.json">decode.json</a> &middot; key <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/sachsstaatsarchiv-manteuffel-1712/key.tsv">key.tsv</a> &middot; image source <a href="https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=3a83f921-9a43-485f-874b-34653ed59b68">https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=3a83f921-9a43-485f-874b-34653ed59b68</a> &middot; <a href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sachsstaatsarchiv-manteuffel-1712">folder</a></li><li>Regenerate: <code>python3 tools/decode_key.py ciphers/sachsstaatsarchiv-manteuffel-1712 --check</code></li><li>Control: Frame 0391 clears the shuffled-key gate on its own letters (0/1000, 28 letters)</li></ul><details><summary>Search log from AUDIT.md (7 search lines, 30 on blocked or unreachable hosts)</summary><div class="det"><ul><li>N4 step named (Acta Borussica <i>Behördenorganisation</i> I read page by page, not only by word counts). No decoding was done.</li><li>the key, was searched in full text with passing controls, and it does not carry this passage. The standard narrative history</li><li>Behördenorganisation<i> I (1894) or quoted in Droysen&#x27;s </i>Geschichte der preußischen Politik* IV.1, searched in full text on</li><li>The two items listed as &quot;not excluded&quot; under (b). Searched by word lists and search-inside, not read page by page.</li><li>(RGP GS 226), full-text search &#x27;Colyer&#x27; within Deel 14 (35 hits, 2 requests), then the OCR pages read (4 requests</li><li>Droysen IV.1 and Acta Borussica: V-MANT08&#x27;s and earlier audits&#x27; greps stand (not re-run). Sbornik RIO: IA full-text query</li><li>Press of Jul and Sept 1712 (Europäische Fama, Mercure historique): *<i>not searched</i>* (no full-text route tried in the box).</li></ul><p><b>Unreachable</b></p><ul><li>(a) canonical/edition series | Acta Borussica, <i>Behördenorganisation</i> I (1894, Schmoller &amp; Krauske). Found via Google Books API snippets (country=US, key): Nr. 82 &quot;Bericht... Manteuffel an... Flemming. Berlin 23. November 1712. Urschrift. D</li><li>Unreachable: HathiTrust page images (Cloudflare; EF used instead); books.google.com page view (captcha). Requests: googleapis.com</li><li>(e) print_check.py (5 phrases in phrases.txt, sources in sources.tsv) | IA global full text, Google Books, OpenAlex, CrossRef, HTRC on njp.32101065980920, and Droysen IV.1 | no hit on any phrase in a relevant source. The ia-global and g</li><li>(429), api.crossref.org 1.</li><li>5, be-api.us.archive.org 4; no 403/429/challenge.</li><li>each), net calls by prior_work.py (ia-global, gbooks). No 403, 429 or challenge.</li><li>16, archive.org 3, www.googleapis.com 1 (503); no 403/429/challenge.</li><li>The press of the day (Mercure historique et politique, Europäische Fama, Oct-Nov 1712): UNREACHABLE this session** -- Google</li><li>Books API answered HTTP 429 (daily quota spent) on the first two calls, host stopped; IA advancedsearch finds no 1712 Mercure</li><li>item = a book on Alain Resnais, recorded CLEAR as noise; gbooks on all three (429). IA full text by hand: &#x27;&quot;Hertzog</li><li>www.googleapis.com 2 (429, stopped) plus prior_work.py&#x27;s own --network calls; no 403 or challenge.</li><li>The press of the day (Mercure historique, Europäische Fama, Lamberty) and Google Books generally: UNREACHABLE.** The Books API</li><li>answered HTTP 429 to all 7 of my calls (I sent the batch of 7 at 2 s intervals before reading the first status -- six calls past the</li><li>occasion), which keeps the Hanoverian half from counting as unlocated. Not N4: Google Books and the press of the day were unreachable</li><li>www.googleapis.com 7 (all 429); books.google.com 6 (200, answers void); github.com 1 clone. One 500 (archive.org, retried once).</li><li>archive.org 3 (one 404); no 403/429/challenge.</li><li>brill.com 403, *<i>unreachable</i>*. Stuber 2024 is about Urbich, not relevant (OAPEN 403/429 in any case). Haake, Ziekursch, Flemming</li><li>Google Books: *<i>unreachable</i>*. 10 keyed calls with country=US returned 429 at 23:41 (the shared key&#x27;s quota was apparently spent by</li><li>parallel sessions), plus one retry after about 9 minutes, also 429; nothing further sent. So no Google Books coverage beyond</li><li>Gaps: Google Books 429; the press not searched. Safe sentence: V-MANTR8&#x27;s, unchanged. Unsafe: &quot;Arnold&#x27;s mission to Stanislas</li><li>unreachable, Rous 2016 was unreachable, and the Saxon biographies and the 1712 press were not searched. Safe sentence: V-MANTR8&#x27;s</li><li>googleapis.com 11 (all 429); library.oapen.org 1 + 3 browser (403/403/429); brill.com 1 (403). Stopped at each block, no loops beyond</li><li>Mercure item by title; Google Books API answered 429 twice (host stopped). IA full-text (be-api) phrase search: &quot;dictateurs dans le</li><li>6. Postmortem and corrections.** (a) &#x27;s check 4 left Acta Borussica BO I and Droysen IV.2 unsearched (Google Books 429; IV.1 ends</li><li>Requests this audit: books.google.com 39 (search-inside, 2-2.5 s apart; no error), www.googleapis.com 2 (429, stopped), archive.org 7</li><li>(advancedsearch 3, metadata 2, djvu 2), be-api.us.archive.org 3. No 403 or challenge.</li><li>&#x27;Arnold&#x27; 0 and &#x27;missnojd&#x27; unreachable (one search-within answered blocked; host stopped).</li><li>f0454_08/vmant0454_print-check.tsv`; the solver&#x27;s 6 phrases where its Google Books was 429, plus 3 clear-context phrases): IA global full text 0 hits</li><li>crop pairs eyed). No 403, 429 or challenge.</li><li>&quot;### V-MANT0490&quot;. Claim under audit: the 0490 right page (p.392) is a key test, not a reading. Its</li></ul></div></details></section><section class="part" id="context"><h2>Context</h2><p class="ctxslot" data-pending="context">Context: to be written from printed sources on file, labelled context (SITE-ITEMS-3).</p></section></article><div class="pager"><a rel="prev" href="095-sachsstaatsarchiv-manteuffel-1712-shsta-dresden-loc-694-08-frame-0390.html">&larr; SHStA Dresden Loc. 694/08 frame 0390 (10 Oct ...</a><span class="mid">96 of 240 &middot; <a href="../all-readings.html">All readings</a></span><a rel="next" href="097-sachsstaatsarchiv-manteuffel-1712-shsta-dresden-loc-694-08-frame-0485.html">SHStA Dresden Loc. 694/08 frame 0485 (about 12 ... &rarr;</a></div><footer class="site">Built 10 October 2026. Readings graded per CLAUDE.md rule 4; novelty classes per rule 10 (verifier's verdict). Nothing here is called first, new or unpublished. <a href="../sitemap.html">Sitemap</a></footer></main><script>
+document.addEventListener('click',function(e){var b=e.target.closest('[data-reveal]');if(b){var s=document.getElementById(b.dataset.reveal);
+var o=s.classList.toggle('open');b.textContent=o?'Hide the reading':'Reveal the reading';b.setAttribute('aria-expanded',o);return}
+var c=e.target.closest('.card');if(c){c.classList.toggle('open');c.setAttribute('aria-pressed',c.classList.contains('open'))}});
+document.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.target.classList&&e.target.classList.contains('card')){
+e.preventDefault();e.target.click()}});
+</script></body></html>
