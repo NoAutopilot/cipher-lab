@@ -106,3 +106,42 @@ Do NOT decode any letter in this job; the known-answer gate on l.75081 and the l
 Units: DECODE fetch ~0.4; IA class ~0.4; sheet 2 images x 2 passes ~0.8 each = 3.2 + reconcile 0.8; Opus floor 1.5 => ~6, cap 5.5: if the
 sheet is denser than f.117, transcribe R4890 f.102 only and list f.103 in Remaining gaps. NOTES "## THUR-MEAD", Remaining gaps / Escalation /
 Verdict, gaps_check.py. Report what was found and where it was not found; do not classify novelty.
+
+## Wave 1-2 results so far (costs by get_session)
+- THUR-BM3 9.68 / 8 (Opus, 1.21x over): bm/census_v6v7.tsv -- vol 6's eight units are all printed in clear (OCR numerals were prose numbers);
+  vol 7 has seven BM cipher letters (Jun-Sep 1658), all printed with a gloss; no unglossed BM letter in vols 6-7. Vol 7 IA page_numbers.json
+  off by one (leaf = page + 7). Vol 5 not searched.
+- THUR-MEAD (running at 17:5x): R4890 sheet letters/nulls/names transcribed (keys4166/key_period_meadowe_f102.tsv, 189 codes); l.69008 is
+  Jephson, glossed (p.577), not Meadowe. Images of R4896 (Downing) on disk.
+
+## Wave 3 (18:0x UTC 10 Oct)
+Hosts this wave: archive.org ("IA"): THUR-V57 only, after THUR-MEAD's IA release line, <= 20 requests, take/release. THUR-83274: disk only.
+
+### THUR-V57 (Sonnet, cap 3, box 100 min, IA <= 20): thurloe-printed, Birch vols 5 and 7 -- every cipher passage classed glossed / unglossed, by agent
+The djvu texts are on disk: `sources/ia-fulltext/thurloe-gz/collectionofstat05thur_djvu.txt.gz`, `..._07thur_...` (do not refetch). Read NOTES
+"## THUR-B146", "## THUR-BM3", "## THUR-AGENTS", `bm/agents_4166.tsv`, `bm/census_v6v7.tsv`, `b146/hits.tsv`, index.tsv (P2-P28 already in the
+folder: vol 5 P25-P28 and vol 7 Fauconberg P16-P24 are KNOWN, list them as such, do not re-class).
+Step 0: `python3 tools/prior_work.py thurloe-printed --item-spec 'shelfmark=Birch 1742 vols 5 and 7 numeral passages;recipient=Thurloe' --step-type lookup --fetch`, paste with exit code.
+Step 1 (disk): `python3 tools/ia_numeral_runs.py <id> --cache <dir holding the gunzipped texts> --inline-run 4 --tsv ...` on vols 5 and 7, with
+the B146 positive control (vol 3's 18 known windows, as b146/control.tsv did; report recall); then for each hit window: the letter heading
+(correspondent, place, date) from the OCR, agent attribution against agents_4166.tsv, and the OCR gloss evidence (alphabetic rows interleaved
+with numeral rows, "The same decyphered", etc.). Also grep vol 5 headings for Blank Marshall ("Blank", "Marſhal", "Bruges", "B. M.") with
+`bm/bm_letters.py DJVU --vol 5` if the option fits (else a --vol flag in the same style, vol 6/7 outputs byte-identical, --check exit 0).
+Step 2 (IA, <= 18 leaves, vol 5 `collectionofstat05thur`, vol 7 leaf = page + 7 per THUR-BM3): image-class ONLY the windows whose OCR gloss
+evidence is ambiguous AND whose agent has a period key in Add MS 4166 (Blank Marshall R4897, Meadowe R4890, Downing R4896/R4895) or is
+unattributed; strip crops (`tools/iiif_lines.py --image`), one Sonnet call per leaf. Output `bm/census_v5v7_all.tsv` (vol, djvu line, page,
+leaf, heading, date, agent, 4166 key, numerals, gloss: yes/no/partial/unknown, evidence: ocr|image, note) and NOTES "## THUR-V57" with the list
+of unglossed passages under a key in hand, ranked by numeral count. Do not transcribe or decode. Units: script ~0.5; <= 18 Sonnet looks at
+~0.12 = 2.2; stop before a look that crosses 80% of cap. Report what was found and where it was not found; do not classify novelty.
+
+### THUR-83274 (Sonnet, cap 1, box 45 min, disk only): thurloe-printed, l.83274's last two unglossed rows under the period key f.117
+Read NOTES "## THUR-BM2" (l.83274), the last Remaining gaps, `bm/pairs7/l83274_pairs_B1.tsv`/`B2.tsv`, `bm/passes/` for l.83274, `bm/crops/`
+for its page, `bm/key_period_f117.tsv`, `bm/slips.tsv`, `bm/decode_44535.py`.
+Step 0: prior_work.py `--item-spec 'shelfmark=Birch 1742 vol 6 l.83274;sender=Blank Marshall;recipient=Thurloe' --step-type decode --fetch`, paste it.
+Task: from the two blind passes (they already hold the numerals of the two unglossed rows; if not, eye-read them on the committed crop and say
+so), decode under the f.117 sheet with a `--check` script (`bm/decode_83274_tail.py`, or extend decode_44535.py's pattern without changing its
+outputs), grade per rule 4 (H for sheet-stated groups, M for slips/unkeyed; counts), shuffled-key control on the same groups (permute the
+sheet's values over its codes, >= 200 draws, 4-gram p95; say if the run is too short for the control to discriminate) computed before
+reading the text; then `prior_work.py ... --reading <file> --network` (G3) and paste it. Write NOTES "## THUR-83274". A residue of two rows is
+small: no verifier flag unless it carries a clause above the authentication distance. Units ~0.7. Report what was found and where it was not found;
+do not classify novelty.
