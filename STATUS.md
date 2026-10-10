@@ -6850,6 +6850,31 @@ Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261010-1740;
 3. Blocked (unchanged, no-key-material): objects 8472, 6254, 9660. Fort Monroe residue belongs to LEDGER-17's handoff.
 Light-guardrail share (known-text work): none.
 
+## LANE LEDGER-17 handoff (session_012RUntsXtDcM9uQywtGBBXs, account 1, blast refill after LEDGER-16), 10 October 2026 (16:40-18:4x UTC by date -u; closed: Fort Monroe residue spent after four waves, lane about 43 of 60; five_hour allowed, seven_day allowed_warning throughout)
+
+Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261010-1640; jobs .claude/briefs/runs/2026-10-10-acct1-lane-ledger17-jobs.md (waves 1-4). Continued LEDGER-16 next 1, 3; LEDGER-14 next 2.
+Scope: eckert-1864 Fort Monroe residue (mssEC 25): the 22 short 1865 rows no session had read and the 11 undated entries; FIX jobs on every LEDGER-16 audit; the OR-CACHE gap.
+11 workers 37.13 + orchestrator ~5.8 by get_session.
+- **Read (FM-S65A/B, FM-UND, FM-UND2):** 33 rows -> 15 filed (E581-E583 E585-E587 E589-E594 E622-E624); the rest holder clear copies (8558 8561 10167 4483 4601 7666 8602), print
+  (OR I/46 pt 2 p.38, I/47 pt 2 pp.213/300, I/36 pt 1 p.786, I/36 pt 3 pp.140-141, Butler Corr. IV, Grant Papers 14), plain, too short, or the title leaf (5951/0).
+- **First audits (FV-L17a-c, Opus), ONE audit each:** N1 3 -- E582 (OR I/47 pt 2 p.18), E587 (OR I/46 pt 2 p.198), E624 (holder clear copy 10308). N3 D2+ 6 -- E585 E594 E591 E622 (D3;
+  E622's vessel list is N2, OR I/33 p.915 + clear copy 4546-4548), E581 E623 (D2). D1 (too short for a clause) 6 -- E583 E586 E589 E590 E592 E593. Lane ruling: N1 and D1 filings stay filed with notes
+  (as LEDGER-15/-16).
+- **Second audits queued, tagged account-1 for the owner-account dispatcher:** AUD2-LEDGER17-1 (E585 E581), -2 (E594 E591), -3 (E622 E623); cap 5 each. Each starts with Grant Papers vol. 13
+  (Google Books API ids mnRjmhe3QLoC / ij8fAQAAMAAJ): it reaches Jan 1865 and returned 429 to every audit this window.
+- **FIX-L17a/b/c** applied every LEDGER-16 first- and second-audit s.5 (25 entries) and FV-L17a/b/c s.5 on the nine entries no AUD2 holds; decode x3 --check 0. key.md Topsy/Francis rows held (NOTES "## FIX-L17a").
+- **OR-CACHE2:** 20 missing ser. I parts (vols 32-49) fetched and title-checked; 210 N3 entries re-grepped, no same-message hit (control E171 hit, shuffle 0/210). OR-CACHE item closed.
+- **Lesson:** Google Books API 429 is now the binding limit on 1865 audits (FV-L17a 19 x 429; FV-L17b again): one googleapis take per lane at a time, stop at the first 429, and name vol. 13 as unchecked rather than retrying.
+  Opus first audits ran 1.6-2.1 per entry (FV-L17b 20% over cap on six).
+**Next** (costs this lane: Sonnet reader ~0.25/row; Opus first audit ~1.6-2.1/entry; Sonnet FIX ~1.0-1.3):
+1. After AUD2-LEDGER17-1..3 post done: one FIX (Sonnet, ~1.2, no network) applying s.5 of AUDIT (FV-L17a) for E581 E585, (FV-L17b) for E591 E594 (polking = commanding), (FV-L17c) for E622 E623
+   (pioneer 256), and of the three AUDIT 2 sections.
+2. key.md Topsy/Francis rows (FIX-L17a held; E554/E474 entry glosses): a checked key edit job, ~1 (Opus, decode x3 re-run, every filed entry re-diffed).
+3. Unfiled known-text rows (light guardrail, unchanged from LEDGER-16 next 2): 5679/1, 5577/1, 5793/2, 5853/0.
+4. Fort Monroe: no unread row remains that this lane knows of (809 entries: read, filed, or flagged clear/print/plain/short; the ~250 print-likely 1864 and 75 print-likely 1865 rows are known text by design).
+5. Blocked (unchanged, no-key-material): objects 8472, 6254, 9660; 5943/1. Next ledger scope for the brief: LEDGER-SCOUT-2026-10-07.md beyond these, or the mssEC 15 eckert-1862 residue -- check its handoff first.
+Light-guardrail share (known-text work): FM-UND's flag confirmations and the N1 halves of the audits -- about a sixth of worker spend.
+
 ## LANE LEDGER-16 handoff (session_01TLWfkiSj8wYTbXc7mEnE5G, account 1, blast refill after LEDGER-15), 10 October 2026 (14:40-15:5x UTC by date -u; closed: scope spent after three waves, lane about 48.8 of 60; five_hour allowed, seven_day allowed_warning throughout)
 
 Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261010-1440; jobs .claude/briefs/runs/2026-10-10-acct1-lane-ledger16-jobs.md (waves 1-3). Continued LEDGER-15 next 1-3.
