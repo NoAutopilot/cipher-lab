@@ -5612,3 +5612,12 @@ Read so far: 9 of 9 rows handled (1 filed, 8 step-0 hits not filed); the one fil
 - [x] image-check: the filed row's leaf read on the whole entry; the eight step-0 hits not opened (nothing filed).
 - [x] retry: none needed.
 Verdict: keep going: 3 internal gaps (E420 page number; a verifier's counted (c) words for 8 hits; eye checks); cheapest next: IA page read for E420, ~$0.1
+
+## FV-N1C-b (first audit of N2-JA JB JC JD JE JF JJ, N2-KD KE, 10 Oct 2026, account 1)
+First audit in AUDIT.md "## AUDIT (FV-N1C-b)" (07:47-07:5x UTC by `date -u`). All nine **N1** (key `period`, text known), each found on the IA page image:
+JA OR I/32 pt 2 p.432, JB I/34 pt 4 p.304, JC I/34 pt 3 pp.306-307, JD I/37 pt 2 p.15, JE I/37 pt 2 p.523, JF I/34 pt 3 p.357, JJ I/37 pt 1 p.670, KD I/37 pt 2
+**p.384** (not 385-388), KE ORN I/10 p.418 dated **3 Sept** (the OCR's "5" was wrong). Step-0 ruling: JA JB JC JD JJ KE hit (D1); JE JF KD miss (D3 by print).
+All nine leaves eye-checked at 2400 px; the KE leaf carries a period pencil "No 2" over the header. For a FIX job (AUDIT s.3, s.5, not edited into the reading):
+plain words read through key rows -- JB Bailey/desire/rank, JC rations/despatch, JD Jackson/Weber/despatches, JJ collect/despatch, KD opinion; JE Sligo vs print
+"in the" (M); JF Mastiff -> Canby where the print has Hurlbut (M, KEY lane); **N2-JB continues on pointer 9758 (ledger p.92, 15 lines), not filed**. No status.json,
+SO or AUD2 row (nothing at N3).

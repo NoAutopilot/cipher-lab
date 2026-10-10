@@ -15931,3 +15931,107 @@ three new. Corrections:
 3. Decoder plain-word misreads: N2-KA 'subject' (read [Protect]); N2-KC the second 'repeated' (read [Order]ed). `decode_no2.py --write` then `--check`.
 4. status.json rows for N2-KA, KB, KC added by me (N1, `text: known`, key `period`).
 For LANE LEDGER-12 (account 1)
+
+## AUDIT (FV-N1C-b)
+
+Verifier FV-N1C-b (account 1, for LANE LEDGER-12), 10 Oct 2026, 07:47-07:5x UTC by `date -u`; a separate session from the readers N2R-5 and N2R-6,
+not protecting their conclusions. Scope: N1 confirmation of **N2-JA JB JC JD JE JF JJ** (NOTES "## N2R-5") and **N2-KD KE** (NOTES "## N2R-6"), all
+placed in print by the readers from the OCR text layer; print found on the page image, word-for-word diff, leaf eye-check of each entry's lines. Sent
+ledger mssEC 18 = Huntington object 10074, War Department Cipher No. 2 (key-no2.md). Nothing decoded beyond key look-ups. Key source for all nine:
+`period`. No spec for eckert-1864, so `judge_plaintext.py` was not run. Intake gate (07:4x UTC): `eckert-1864: partial (line 3) -- edition/page or
+full-text-search citation found within 6 lines`. N2-IC not touched (FIX-N2IC-DATE). Scripts: `ms18/fv_n1cb_step0.py` (+ `.out`), `ms18/fv_n1cb_locate.py`
+(+ `.out`), `ms18/fv_n1cb_ia.py` (+ `.out`), `ms18/fv_n1cb_diff.py` (+ `.out`), `ms18/fv_n1cb_hdl.py` (+ `.out`).
+
+### 0. Step 0 (Wave 3 ruling; `step0_ordered.py`'s own functions, `ms18/fv_n1cb_step0.py`, disk only)
+| ID | pointer | window | (a) ordered | (b) shuffle p95 | b2 sel.-matched p95 | hit | (c) count; key meanings absent from the transcription |
+|---|---|---|---|---|---|---|---|
+| N2-JA | 9678 | 0 | 0.757 (28/37) | 0.324 | 0.324 | **HIT** | 9; general grant halleck lieutenant major telegraph |
+| N2-JB | 9757 | 1 | 0.554 (36/65) | 0.169 | 0.185 | **HIT** | 29; abandon army brigadier campbell canby command corps east general granger lookout necessary rail report reynolds road secretary sent thirteen valley vicksburg war west |
+| N2-JC | 9724 | 0 | 0.644 (65/101) | 0.168 | 0.168 | **HIT** | 35; alexandria arkansas banks command communicate cove general grant gunboat hill junction major mclamores new red smith soon station steele troops |
+| N2-JD | 9771 | 0 | 0.506 (39/77) | 0.169 | 0.182 | **HIT** | 37; attack breckenridge cove enemy force grant hunter march mclamores move officer operations order rail report road shenandoah sigel spears stahel telegraph threaten valley |
+| N2-JE | 9804 | 0 | 0.421 (40/95) | 0.137 | 0.137 | - | 53 |
+| N2-JF | 9727 | 0 | 0.493 (35/71) | 0.169 | 0.155 | - | 34 |
+| N2-JJ | 9764 | 1 | 0.532 (25/47) | 0.170 | 0.213 | **HIT** | 22; ammunition cove effect expedition grant harrison hunter information mclamores shenandoah stahel telegraph train troops valley |
+| N2-KD | 9798 | 1 | 0.450 (9/20) | 0.300 | 0.300 | - | 11 |
+| N2-KE | 9832 | 1 | 0.500 (16/32) | 0.250 | 0.250 | **HIT** | 15; captain convoy fear james navy north officer point river secretary sent smith south |
+Six hits (JA JB JC JD JJ KE): body known in the holder transcription, N1. Their (c) words that name a person, place, unit or number are all printed in the
+Official Records / ORN on the page found below (Grant, Canby, Reynolds, Granger, Banks, Steele, Smith, Red River, Arkansas, Sigel, Hunter, Breckinridge,
+Stahel, Shenandoah, the Thirteenth Corps, Captain M. Smith, the James), and several (c) words are decoder slips on plain words (s.3): **no counted
+contribution remains for any of the six.** Three misses (JE JF KD) are N1 by print alone (s.1).
+
+### 1. Print, on the page image (IA page images at 1400 px, scratch, not committed; ids as the readers'; leaf from `_page_numbers.json`)
+| ID | volume (IA id) | leaf | page head on the image | dateline and parties on the image |
+|---|---|---|---|---|
+| N2-JA | OR I/32 pt 2 (`warofrebellion322unit`) | **438** (page_numbers.json gave 440 = p.434; off by 2 on this volume) | "432 KY., SW. VA., TENN., MISS., ALA., AND N. GA. [CHAP. XLIV." | Washington, D. C., February 20, 1864--1 p.m.; Maj. Gen. U. S. Grant, Nashville; H. W. Halleck, General-in-Chief |
+| N2-JB | OR I/34 pt 4 (`warofrebellion013404rootrich`) | 312 | "304 LOUISIANA AND THE TRANS-MISSISSIPPI. [CHAP. XLVI." | Washington, D. C., June 11, 1864--4 p.m. (Received 21st.); Major-General Canby, Vicksburg; H. W. Halleck, Major-General, Chief of Staff |
+| N2-JC | OR I/34 pt 3 (`warofrebellion013403rootrich`) | 312 (p.306; runs to p.307, leaf 313, read in the text layer) | "306 LOUISIANA AND THE TRANS-MISSISSIPPI. [CHAP. XLVI." | Washington, April 27, 1864--11.35 a.m.; Major-General Banks, Department of the Gulf, via Cairo, Ill.; Halleck, Chief of Staff |
+| N2-JD | OR I/37 pt 2 (`warofrebellion372unit`) | 21 | "CHAP. XLIX.] CORRESPONDENCE, ETC.--UNION. 15" | Washington, July 3, 1864--4 p.m.; Lieutenant-General Grant, City Point; Halleck, Major-General and Chief of Staff |
+| N2-JE | OR I/37 pt 2 (`warofrebellion372unit`) | 529 | "CHAP. XLIX.] CORRESPONDENCE, ETC.--UNION. 523" | Chambersburg, Pa., July 30, 1864--3 a.m. (Received 3.30 a.m.); Major-General Halleck, Chief of Staff; D. N. Couch, Major-General |
+| N2-JF | OR I/34 pt 3 (`warofrebellion013403rootrich`) | 363 | "CHAP. XLVI.] CORRESPONDENCE, ETC.--UNION. 357" | Washington, April 30, 1864--3.15 p.m.; Lieutenant-General Grant, Culpeper, Va.; Halleck, Chief of Staff |
+| N2-JJ | OR I/37 pt 1 (`warofrebellion371unit`) | 694 | "670 OPERATIONS IN N. VA., W. VA., MD., AND PA. [CHAP. XLIX." | Washington, June 24, 1864--11.30 a.m.; Lieutenant-General Grant, Bermuda Hundred, Va.; Halleck, Major-General and Chief of Staff |
+| N2-KD | OR I/37 pt 2 (`warofrebellion372unit`) | 390 | "384 OPERATIONS IN N. VA., W. VA., MD., AND PA. [CHAP. XLIX." | Washington, July 19, 1864--4 p.m.; Lieutenant-General Grant, City Point, Va.; Halleck, Major-General and Chief of Staff |
+| N2-KE | ORN ser. I vol. 10 (`officialrecordso0010unse`) | 454 | "418 NORTH ATLANTIC BLOCKADING SQUADRON." | [Telegram.] Navy Department, **September 3**, 1864; Gideon Welles, Secretary; Captain M. Smith, Senior Naval Officer, James River, City Point, Va.; "Operator at City Point, send this message to Captain Smith." |
+**All nine are printed, and the readers' pages are right except N2-KD: p.384, not "between heads 385 and 388".** N2-KE's print date is **September 3**
+on the image (the djvu OCR reads "5"): the ledger's 3 Sept agrees; N2R-6's open question is closed. Word overlap, print vs decoded body (`fv_n1cb_diff.out`,
+text layer, LCS / print content words): JA 0.96, JC 0.80, JD 0.67, JE 0.69, JF 0.71, JJ 0.73, KD 0.87, KE 0.88; JB 0.34 because the print runs on past
+what was filed (s.2). The residue is headers and signatures, sound-spellings and abbreviations (authorrising, imm'y, Stand on = Staunton, Mose by =
+Mosby, Wm Sport, Mercers burg, iron clods, toby), and the slips in s.3; **no difference of substance in any of the nine.**
+
+### 2. Leaf eye-check (IIIF 2400 px, 10 leaves to scratch, not committed; whole leaf read, each entry's lines line by line against the transcription)
+| ID | pointer (ledger page) | verdict | notes from the leaf |
+|---|---|---|---|
+| N2-JA | 9678 (12) | matches line by line | "author = rising" split across a line; "Is it cold with you" after the signature group (Tawl Behead) |
+| N2-JB | 9757 (91) + **9758 (92)** | matches line by line on 9757 | **the entry continues on 9758, lines 1-15** ("Agnew period All shops are now pressed for Locomotives ... the Washita may be made available Cupid"), the print's last eleven lines; holder transcribes it (cipher text) on 9758; **not filed by N2R-5** |
+| N2-JC | 9724 (58) | matches line by line | header "Apr. 27th 1864", "(2)" after N. Orleans; "make prepar rations" written as two plain words; "this despatch" plain |
+| N2-JD | 9771 (105) | matches line by line | header "Washn 330 pm July 3d 1864"; **"Jackson" and "Max Weber" written plain**; "despatches" plain |
+| N2-JE | 9804 (138) | matches line by line | pencil "8 am 30th" top left (transcribed); "Beacon Sligo virtue of St Thomas" at the line end |
+| N2-JF | 9727 (61) | **body matches; the transcription omits pencil annotations** | small pencil words and numbers above line 1 ("2, 6, Cordell, slip, Cornel, 4, 10, 8, today, tenth"), after the header ("Ambush wonder"), and under the last line ("good, blow, 9, 5, 1, owner, product, offer, 7, 3") and a pencil line "(1:42 ... 4 PM ... Tinker)"; none is in the holder transcription (the 9732 kind found by FV-MS18p: route or indicator working, lead only, hand not determined) |
+| N2-JJ | 9764 (98) | matches line by line | **"collect" and "despatch" written plain** |
+| N2-KD | 9798 (132) | matches line by line | "I am of opinion that another Webb of Simms Pagan" -- **"opinion" plain**; "Shark Watkins" = General Wright (Watkins = Wright also in the 18 July entry above it) |
+| N2-KE | 9832 (166) | matches line by line | **pencil "No 2" in an oval above the header** (and "No 10" above the entry before it), transcribed by the holder: the ledger itself names the book |
+
+### 3. Grades (reading-no2.md as filed; decoder counts, then print and leaf)
+Plain words the decoder read through a key row (each is in the leaf as a plain word and in the print as the same word; for a FIX job, s.5):
+| ID | decoder H/C/I | slips found (leaf word -> reading) | after correction |
+|---|---|---|---|
+| N2-JA | H 13 | none | H 13; body C by print |
+| N2-JB | H 31 | Bailey -> [Campbell W B]; desire -> [Lookout Valley]; rank -> [Has been sent] | H 28 + 3 plain; body C by print (filed part) |
+| N2-JC | H 38, I 1 | rations -> [Hill]'s ("prepar rations" = preparations); despatch -> [McLamores Cove]; hour 10.30 AM vs print 11.35 a.m. (M); [Alexandria] where the print's address is "Department of the Gulf, via Cairo" (M) | H 36 + 2 plain; body C by print |
+| N2-JD | H 37, C 3, I 1 | Jackson -> [Spears J.G.]; Weber -> Max [Threaten]er; despatches -> [McLamores Cove]es | H 34 + 3 plain; body C by print |
+| N2-JE | H 49 | Sligo -> [Killing] where the print has "in the" (M; a code word read wrong or a clerk's slip) | H 48 + 1 M; body C by print |
+| N2-JF | H 38, C 4, I 3 | the second "Religions" left plain as "Religious" (= operations, as the first, C by print); Mastiff -> [Canby Ed R S] where the print has **Hurlbut** (in N2-JB the same word stands where the print has Canby: a key question, M, for the KEY lane, as E390's Lehigh) | H 37 + 1 C + 1 M; body C by print |
+| N2-JJ | H 25, I 2 | collect -> [Harrison]; despatch -> [McLamores Cove]; hour 11 AM vs print 11.30 a.m. (M) | H 23 + 2 plain; body C by print |
+| N2-KD | H 14 | opinion -> [Field] | H 13 + 1 plain; body C by print |
+| N2-KE | H 16, C 1 | none; [Fear] = from (C by print); [Secretary of Navy] = Gideon Welles (C by print); tail "Convoy is arbitrary End" is the operator's | H 16, C 1; body C by print |
+Pattern (for the KEY lane, no key edit here): "despatch" is plain in JC, JD and JJ and in all three prints; the reading's [McLamores Cove] for it is a key row
+applied to a plain word, as E377's "person" and E380's "Camden" under No. 1 (FV-MS18p).
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | text | prior print (on the page image) | depth | safe sentence |
+|---|---|---|---|---|---|---|
+| N2-JA | **N1** | period | known | OR I/32 pt 2 p.432; body also in the holder transcription (step 0) | D1 | Re-read with War Department Cipher No. 2; Halleck's 20 Feb 1864 1 p.m. telegram to Grant on inspectors and a court of inquiry is printed in the Official Records (I/32 pt 2 p.432). |
+| N2-JB | **N1** | period | known | OR I/34 pt 4 p.304; holder step 0 | D1 | Re-read with Cipher No. 2; Halleck's 11 June 1864 4 p.m. telegram to Canby (general officers, the Thirteenth Corps, the Monroe railroad) is printed in OR I/34 pt 4 p.304. |
+| N2-JC | **N1** | period | known | OR I/34 pt 3 pp.306-307; holder step 0 | D1 | Re-read with Cipher No. 2; Halleck's 27 Apr 1864 telegram to Banks ordering his return to New Orleans is printed in OR I/34 pt 3 pp.306-307 (11.35 a.m.). |
+| N2-JD | **N1** | period | known | OR I/37 pt 2 p.15; holder step 0 | D1 | Re-read with Cipher No. 2; Halleck's 3 July 1864 4 p.m. telegram to Grant on Early, Hunter and Sigel is printed in OR I/37 pt 2 p.15. |
+| N2-JE | **N1** | period | known | OR I/37 pt 2 p.523 | D3 (H 48 + C by print, page image) | Re-read with Cipher No. 2; Couch's 30 July 1864 3 a.m. telegram to Halleck from Chambersburg is printed in OR I/37 pt 2 p.523. |
+| N2-JF | **N1** | period | known | OR I/34 pt 3 p.357 | D3 (H 37 + C by print) | Re-read with Cipher No. 2; Halleck's 30 Apr 1864 3.15 p.m. telegram to Grant on the trans-Mississippi and Hurlbut is printed in OR I/34 pt 3 p.357. |
+| N2-JJ | **N1** | period | known | OR I/37 pt 1 p.670; holder step 0 | D1 | Re-read with Cipher No. 2; Halleck's 24 June 1864 telegram to Grant on Stahel's expedition is printed in OR I/37 pt 1 p.670 (11.30 a.m.). |
+| N2-KD | **N1** | period | known | OR I/37 pt 2 p.384 | D3 (H 13 + C by print) | Re-read with Cipher No. 2; Halleck's 19 July 1864 4 p.m. telegram to Grant asking for another heavy artillery regiment is printed in OR I/37 pt 2 p.384. |
+| N2-KE | **N1** | period | known | ORN ser. I vol. 10 p.418; holder step 0 | D1 | Re-read with Cipher No. 2; Welles's 3 Sept 1864 telegram to Captain M. Smith (Onondaga and Atlanta retained, Saugus and Canonicus south) is printed in ORN ser. I vol. 10 p.418. |
+Depth for the six step-0 hits is D1 by the ruling (no key-only word survives the print). The three misses are D3 on the FV-MS18p precedent (printed word for
+word on the page image, every code token H or C by print, a non-statistical external check), not D4 (no fresh rule-7 re-derivation). **Unsafe for all
+nine:** "first decipherment", "previously unread", "unpublished". No status.json, SO or AUD2 row: nothing reaches N3.
+
+### 5. Postmortem and fixes (for a FIX job; a verifier does not edit ciphertext-no2.txt or reading-no2.md)
+- N2R-5's and N2R-6's print placements were right on eight of nine pages; N2-KD is p.384 (their OCR-head guess 385-388 was off). N2-KE's "September 5"
+  was OCR; the page image reads September 3 = the ledger. The "leaf not eye-checked" caveat on all nine is cleared ("leaf eye-checked at 2400 px, FV-N1C-b").
+- Entry notes to carry: the plain-word slips of s.3 (JB Bailey, desire, rank; JC rations, despatch; JD Jackson, Weber, despatches; JJ collect, despatch;
+  KD opinion); JE Sligo = "in the" in print (M); JF the second Religions = operations (C by print) and Mastiff/Hurlbut (M); hours JC 11.35 a.m., JF 3.15 p.m.,
+  JJ 11.30 a.m. (print; ledger time words M); N2-KD page 384; N2-KE print date 3 Sept, leaf "No 2"; "printed OR ..." -> "printed OR ... (on the page image,
+  FV-N1C-b)".
+- **N2-JB is filed short:** the entry continues on 9758 (ledger p.92, 15 lines, to "the Washita may be made available Cupid"); a FIX or reader job may file
+  the continuation into N2-JB (N1 either way: printed OR I/34 pt 4 p.304).
+- Lead, not read: the 9727 pencil working (N2-JF; untranscribed by the holder); "Mastiff" = Canby in JB but Hurlbut in JF's print (KEY lane).
+Requests: archive.org 17 (6 page_numbers.json + 11 page images, one a wrong leaf) + 2 (one empty response, one retry, leaf 438), all 200 after the retry;
+hdl.huntington.org 11 IIIF (one dropped connection on 9832, one retry after 25 s), one take, released; no search. seven_day allowed_warning not observed by me.
+For LANE LEDGER-12 (account 1).
