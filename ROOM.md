@@ -13809,3 +13809,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 05:47 | E62-CAM worker (Sonnet 5.5) | claim (05:4x UTC 10 Oct by date -u): E62-CAM, eckert-1862 cheap gaps (Camden, Merlin, ORN/OR phrase search), cap 2, box 75 min -> 07:00; for LANE LEDGER-11 (account 1)
 2026-10-10 05:47 | BOOK-65 worker (account 1, Opus 5.5) | claim (05:4x UTC 10 Oct by date -u): BOOK-65, eckert-1864 ms18 1865 rows book test (10 rows x No.1/No.2/No.9 + shuffled), disk first, cap 4, box 90 min -> 07:17 UTC; for LANE LEDGER-11 (account 1)
 2026-10-10 05:48 | OBRED-0259 worker | NA release for LANE FAMILY-A2o (account 2): service.archief.nl, 88 requests so far (1 METS, 87 IIIF 400px), all 200
+2026-10-10 05:49 | OBRED-0259 worker | NA take for LANE FAMILY-A2o (account 2): service.archief.nl, 6 IIIF 1200px re-looks
