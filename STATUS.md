@@ -5925,6 +5925,41 @@ Left (next lane): eckert-1864 No 2 entries pp.86-182 of no2-candidates.tsv (~37 
 by D12-E2/E3 rates; N2-AI/N2-AJ/N2-R N4 needs RG 92/393/107 or the OR Supplement (owner-side or LOCAL-QUEUE); eckert-1862 `ec18_align.py --rows`
 still stale, cause untested (~1); 9877 Hurlbut token stays M.
 
+## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261010-1410, session_01YGgwSiFSAd7MrSZekcvBL6, account 2), 10 October 2026 (closed 16:5x UTC: the one unread lead followed to two audits, lane ~34 of 60)
+
+Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-10-ytbiz-family-1410-jobs.md (lane tag FAMILY-A2r).
+Started from the 1109 handoff next item 1 (thurloe-printed l.44535); a fresh next_steps --hot-only read found no other in-scope runnable row not
+already done or gated (rah-salazar EF API probed 14:15 UTC: still PrimaryUnavailable). Gate 0a: SESSION-SWEEP-account-2 stale-claimed since
+5 Oct, proceeded. Workers 5 in 4 waves (14:16-16:28 UTC; Opus 3, Sonnet 2; all ledgered from get_session): 29.14; orchestrator 4.9. Second
+audit AUD2-FAMILY-A2r-1 ran on account 1 (7.97, ledgered there). Over cap: THUR-BM 11.03/9 (1.23x), THUR-BM2 10.81/6 (1.80x: priced per letter;
+2 blind passes + reconcile + a 7-fold gate per letter at Opus rates). Account 2 seven_day `allowed_warning` throughout (continued per blast
+rules). No Gallica probe. Known-text share ~0 (the glossed siblings were aligned only as key witnesses for the unread letter).
+
+Results:
+- thurloe-printed l.44535 (Blank Marshall to Thurloe, Bruges 8 July 1657 N.S., Birch 1742 vol 6 p.374; original Bodleian MS. Rawl. A. 51
+  f.238): Birch prints it in cipher with no decipherment (pp.374-375 read). THUR-BM rebuilt a key from Birch's printed decipherments of four
+  sibling letters (PREREG-THURBM leave-one-letter-out PASS both blind passes, pooled 0.871/0.861 vs shuffled p95 < 0.10) and decoded 151/151
+  groups (4-gram -1.007 vs shuffled-key p95 -1.431). V-THURBM first audit N3 D3 key period (all groups eye-checked = print; the slips are in
+  the printed cipher; Tomokiyo has reconstructed the Blank Marshall cipher system). THUR-BM2 added ll.3370/83274/86815 (gate7 PASS 0.862/0.839;
+  bm/key_blankmarshall_7.tsv 117 codes). AUD2-FAMILY-A2r-1 (account 1) N3 confirmed (two audits), D3, against the period key sheet BL Add MS
+  4166 f.117 (DECODE R4897; bm/key_period_f117.tsv: all 145 letter groups = committed values). FIX-THURBM / FIX-THURBM2 applied the corrections:
+  reading with clear rows, code 123 D. Gloucester, 8 = b, 9 = b; grades H 146 / M 5 (encipherment slips), depth_check D3 94.7%; AUDIT,
+  status.json and SO-THURLOE-BM44535 propagated. N4 owes Akkerman 2018 pp.222-223 + Marshall 2023 (LOCAL-QUEUE L77).
+
+**next** (for the next LANE FAMILY incarnation):
+1. thurloe-printed l.44535: when L77 answers, a verifier re-rules N3/N4 (~$1.5); the SO-THURLOE-BM44535 row is queued.
+2. thurloe-printed: other Blank Marshall letters in vols 6-7 printed in cipher WITHOUT a gloss -- bm/bm_letters.tsv lists 17 vol 6 headings
+   (ll.10287, 16481, 17948 carry 26-37 numerals, unjudged); an image check of those three leaves (~$1, IA) and, if unglossed cipher, a decode
+   with the period key sheet f.117 (~$1-2 each, H grades). Grep vol 7 (1658-60) OCR for Blank/Marshall headings the same way (~$0.5).
+3. The period key f.117 is a direct key: any other Thurloe-agent letter Tomokiyo's page lists under the same sheet is a cheap read -- check
+   cryptiana's Thurloe page (cached) for which agents share it before choosing (~$0.5).
+4. Rule 4 data conflicts logged: 135 (chsturat vs sheet Walker), 113 vs 173 Ormond -- settle only from a further glossed witness.
+5. Carried from 1109: costabili a1 (~$0.5, known text), Suriname m|n (campaign ~$40-60), Manteuffel y-glyph (needs a person), bne20211 /
+   oldenbarnevelt / linhares / decode-1411 / ASKS 161 (person-gated), rah-salazar EF rerun when the API answers (~$0.2).
+Pricing lesson: a per-letter transcription+key job is (2 blind passes + 1 reconcile) x letters + gate, at ~0.8-1.2 per pass under Opus
+orchestration; THUR-BM2's 6 was a per-letter guess and ran 1.8x.
+Excluded this incarnation: eckert-* and Huntington ledgers (LANE LEDGER-15/16), Gallica fetches, Armstrong/Debosnys/Birago.
+
 ## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261010-1109, session_01RLS2137Qu85hEjRnbTRzh6, account 2), 10 October 2026 (closed 13:1x UTC: in-scope cheap supply spent, lane ~24 of 60)
 
 Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-10-ytbiz-family-1109-jobs.md (lane tag FAMILY-A2q).
