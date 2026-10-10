@@ -1,0 +1,44 @@
+entry	pointer	date	clear_copy	print	shared_run_words	verdict	note
+E509	5854	4 Jan 1865	-	-	-	NONE	hdl 4 queries (Montauk Metropolis Alliance; Leary Bradley Ainsworth; Metropolis Alliance; Ainsworth): only own page
+E511	5855	4 Jan 1865	-	-	-	NONE	hdl Hancox Winants / Winants: only own page and 5856, 5925 (other cipher rows of the same ledger, not clear copies)
+E514	5858	5 Jan 1865	-	-	-	NONE	hdl Blackstone x3 queries: 7673 (31 Dec 1864 QM message) and 10442 are other messages
+E518	5864	7 Jan 1865	-	-	4	NEAR	holder 8510 p.32: Elias Smith (Tribune) to C. A. Dana, Ft Monroe 7 Jan 9.20 AM, asks permission to go on the expedition: different message, same person and day
+E526	5867	9 Jan 1865	-	-	-	NONE	hdl 4 queries; 9142 p.248 (18 Dec 1864, shares Abbott/Emerick only) is another message
+E527	5869	12 Jan 1865	-	-	-	NONE	hdl 4 queries (Eastville 43 hits, none a clear copy of the message)
+E542	5887	24 Jan 1865	7722 p.64	-	24	CLEAR	"The Saugus left this morning for Washn ... Gen Grant needs her at once ... half way ... turn her back J. M Berrin Comdt" (Norfolk 24 Jan 6 PM)
+E543	5888	25 Jan 1865	-	OR I/46 pt 2 p.259 (IA warofrebellion014602rootrich; also be-api warofrebellion462unit, warofrebellion0046unse, cu31924077729014)	17	PRINT	Grant to Maj. Gen. Ord, City Point 25 Jan 1865 3 p.m.: "to be absent several days. I wish you to return to your headquarters in the field ... It will answer if you start up in the morning"; holder clear copy not found by 4 queries (23 hits on "contingency", none the message)
+E546	5890	29 Jan 1865	-	-	-	NONE	hdl 4 queries
+E548	5895	2 Feb 1865	7741 p.83	-	15	CLEAR	"Ft Monroe Va Feby 2nd 1865 2.30 P. M. for Bates, ascertain ... what boat the President left Annapolis ... time the boat passes Pt Lookout Eckert"
+E550	5897	2 Feb 1865	8561 p.83	-	12	CLEAR	"Ft Monroe Feby 2nd 1865 ... Capt Blodgett a Q m Annapolis ... inform Gen Schofield ... important dispatches ... from Gen Sherman J. F Anderson Major & A. D. C."
+E553	5902	8 Feb 1865	-	-	-	NONE	hdl Vogdes x4 queries: 5636 p.92 and 13559 are other messages
+E554	5902	8 Feb 1865	-	-	-	NONE	as E553
+E558	5912	22 Feb 1865	-	-	3	NEAR	holder 8605 p.127: Chief QM office, Ft Monroe 24 Feb to Sheldon, a telegraph station to be established at Yorktown (a related message, two days later; not the 22 Feb telegram)
+E562	5917	25 Feb 1865	7787 p.129	-	32	CLEAR	"Ft Monroe Feb 25 1865 ... to Hon. E. B. Washburn ... I sent for Johnson to try him ... greatest rascal ... do not let him turn states evidence ... sig George H Gordon Br Gen"
+E564	5918	4 Mar 1865	-	-	-	NONE	hdl 4 queries; own page only
+E566	5919	5 Mar 1865	-	-	-	NONE	hdl 4 queries; 5944 p.400 is a cipher row of 6 Apr 1865, not a clear copy
+E569	5924	6 Mar 1865	-	-	-	NONE	hdl 4 queries; own page only (12 hits on "moving office")
+E571	5929	13 Mar 1865	-	Grant Papers vol. 14 (21 Feb-30 Apr 1865; IA papersofulyssess0014gran, GB DVLPEPsH1_oC / 1D8fAQAAMAAJ), page unresolved	7	PRINT	"to Brig. Gen. John A. Rawlins. Capt Glisson says he will send gun boats as desired, at once. Convoy ..." (be-api whole collection total 1, restricted to the IA item total 1, Google Books snippet in both vol. 14 ids); djvu text 500; holder clear copy not located (Glisson hits 7802, 8486, 7818, 8622 of FV-L15c not diffed here)
+E574	5931	15 Mar 1865	-	-	-	NONE	hdl 4 queries (River Queen 12 hits, none the message)
+E577	5933	18 Mar 1865	-	-	-	NONE	hdl Hartsuff x3 queries: 8605 p.127 is a 22-25 Feb Grant message; Grant Papers 14 "General Hartsuff" hit is a different item
+E506	5852	4 Jan 1865	-	-	-	NONE	hdl 4 queries; 4711, 5713 other messages
+E508	5853	4 Jan 1865	-	-	-	NONE	hdl 4 queries; Grant Papers 13 "ten days coal" snippet is another message
+E521	5861	6 Jan 1865	-	-	-	NONE	hdl 3 queries; own page only
+E441	5699	27 May 1864	-	-	-	NONE	hdl 4 queries (11134, 11843, 12446 are leaves of other volumes, run 3)
+E472	5679	20 May 1864	-	-	-	NONE	hdl 4 queries
+E465	5768	10 Jul 1864	4788 p.347	-	6	CLEAR	"Fort Monroe July 10 1864 Ft Monroe 10th 15 am July 10th Gen Halleck - none of the New Orleans troops have arrived yet J W Shaffer Col and Chief of staff"; 10487 p.345 is the 1 PM Crescent message (different)
+E447	5827	10 Dec 1864	-	-	-	NONE	hdl 5 queries; 5813 is another cipher row
+E442	5707	27 May 1864	-	-	4	NEAR	holder 4666 p.225: Butler Hd Qrs to Eckert 28 May 11 PM, Mac and party to report at Jamestown, Homan and Collings sent with relays: a different message, one day later
+E474	5829	13 Dec 1864	-	-	-	NONE	hdl 4 queries
+E471	5577	3 Mar 1864	-	-	-	NONE	hdl 4 queries; own page only
+E470	5814	1 Dec 1864	-	-	-	NONE	hdl 4 queries; 5813 (Butler Hd Qrs, 1 Dec) is another cipher row of the same ledger
+E468	5810	28 Nov 1864	-	-	-	NONE	hdl 4 queries
+E443	5785	1 Oct 1864	-	-	-	NONE	hdl 4 queries returned 0 for the yellow-fever phrases
+E473	5633	26 Apr 1864	-	-	-	NONE	hdl 4 queries (Edgar 4 hits)
+E445	5816	6 Dec 1864	-	-	-	NONE	hdl 4 queries; own page only
+E469	5720	30 May 1864	-	-	-	NONE	hdl 4 queries; 3612 p.36 (battery, other message)
+E466	5638	29 Apr 1864	-	-	-	NONE	hdl 4 queries; own page only
+E446	5583	12 Mar 1864	-	-	-	NONE	hdl 3 queries (Dunn Cherrystone 34 hits, none the message; leaves of other volumes run 3)
+E448	5793	15 Oct 1864	-	-	-	NONE	hdl 3 queries; own page only
+CTRL E552	5899	4 Feb 1865	7749 p.91	-	15	CONTROL-HIT	must hit 7749: hit with "Dumbarton" (take 1 and take 2)
+CTRL E557	5907	16 Feb 1865	7768 p.110	-	6	CONTROL-HIT	must hit 7768: missed by "submarine torpedoes immediate James River" and "Lynch Commander Inspector Ordnance" (the holder spells "Sub marine", has no "Inspector"), hit with "Lynch torpedoes"; so a NONE above can be a wording miss, see NOTES
+CTRL E549	5896	2 Feb 1865	-	-	3	CONTROL-NEG	must not hit: "Mack party material" gives 5896 own and 5713 5716 5744 (run 3, cov <= 0.32, other messages); print pass only generic 5-word runs ("refers the matter to you")
