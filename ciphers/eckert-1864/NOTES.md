@@ -5499,3 +5499,13 @@ Read so far: ten of ten rows through Step-0; two filed (N2-MA printed, N2-MB not
 - [ ] image-check: leaves for N2-MA and N2-MB not opened.
 - [x] retry: none needed.
 Verdict: keep going: 4 internal gaps; cheapest next: IA page read for N2-MA's page, ~$0.1
+
+## FIX-N2IC-DATE (10 Oct 2026, owner account, for orchestrator)
+
+Applies AUDIT.md "## AUDIT 2 (second adversarial, AUD2-LEDGER10-4)" s.2 to N2-IC (mssEC 18 p.89, pointer 9755). Change: a new per-entry note
+`year: word` in decode.py (generic, inert unless used; the numeral run starting at that token is read as a year, first value as hundreds:
+[18, 60, 1] -> 1861) and `year: ludlow` on N2-IC in ciphertext-no2.txt, with a FIX note. Reading before: "of [31] January [79] Directors";
+after: "of [31] January [1861] Directors". Grade before/after: decoder H 25 both (token count unchanged); audit count 20 H + 5 M -> 25 H of 25
+(depth_pct 80 -> 100). N3 D3 stands (AUD2-LEDGER10-4 s.3). Carried into status.json (depth_pct, completeness, gap, line, reading_version)
+and the queued SO prompt (PROMPT-chatgpt-n2-ic.md) per rule 10. Checks: decode.py, decode_no2.py, decode_no9.py --check all "is current"
+(exit 0); tools/tests/test_eckert_decode.py 27 OK; tools/depth_check.py exit 0.

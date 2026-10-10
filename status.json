@@ -13163,21 +13163,21 @@
       "kind": "reading",
       "claim_scope": "completed-reading",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-N2e)' section 3",
-      "reading_version": "N2R-4 10 Oct 2026 (reading-no2.md), grades as in AUDIT (FV-N2e) s.3 (decoder misreads pending a FIX job, s.2)",
+      "reading_version": "FIX-N2IC-DATE 10 Oct 2026 (reading-no2.md; report date [1861] by the 'year:' note), grades as in AUDIT 2 (AUD2-LEDGER10-4) s.2-3",
       "unresolved_spans": "",
       "depth_unread": {
         "names_codes": "0",
         "other": "0"
       },
-      "depth_pct": 80.0,
+      "depth_pct": 100.0,
       "grade": "N3",
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): Meigs to Canby, 7 June 1864: the gauge of the Vicksburg and Monroe railroad; no grading between Monroe and Shreveport; 74 1/4 miles Vicksburg to Monroe (N2-IC)",
-      "line": "Re-read with War Department Cipher No. 2: on 7 June 1864 Meigs, Quartermaster General, asked Canby the gauge of the Vicksburg and Monroe railroad, citing the Directors' report for no grading between Monroe and Shreveport, and put Vicksburg to Monroe at 74 1/4 miles. The questions are legible in the Huntington's transcription; the key adds the railroad, the report and the figures. Not located in print (searched 10 Oct 2026).",
-      "gap": "N3 two audits (FV-N2e; AUD2-LEDGER10-4, 10 Oct 2026): step-0 near miss 0.472 vs bar 0.5 (p95 0.250) -- the questions are plain in the holder transcription, the key adds railroad, report, date and figures; not in OR I/34 pts 3-4 by date or OR III/4; report date reads 31 January 1861 by the key's numeral rule (FIX pending, then depth_pct 100); unread: Grant Papers vol. 11 notes, Meigs/Canby papers, NARA RG 92/107; JSTOR rows queued",
+      "line": "Re-read with War Department Cipher No. 2: on 7 June 1864 Meigs, Quartermaster General, asked Canby the gauge of the Vicksburg and Monroe railroad, citing the Directors' report of 31 January 1861 for no grading between Monroe and Shreveport, and put Vicksburg to Monroe at 74 1/4 miles. The questions are legible in the Huntington's transcription; the key adds the railroad, the report and the figures. Not located in print (searched 10 Oct 2026).",
+      "gap": "N3 two audits (FV-N2e; AUD2-LEDGER10-4, 10 Oct 2026): step-0 near miss 0.472 vs bar 0.5 (p95 0.250) -- the questions are plain in the holder transcription, the key adds railroad, report, date and figures; not in OR I/34 pts 3-4 by date or OR III/4; report date reads 31 January 1861 by the key's numeral rule (FIX-N2IC-DATE applied 10 Oct 2026, decode_no2 --check passes; depth_pct 100); unread: Grant Papers vol. 11 notes, Meigs/Canby papers, NARA RG 92/107; JSTOR rows queued",
       "depth": "D3",
-      "completeness": "25 code-word groups (1 filed group is plain 'rebellion'): H 20, M 5 (report-date numerals)",
+      "completeness": "25 code-word groups (1 filed group is plain 'rebellion'): H 25 (report date 31 January 1861 read by the key's numeral rule, FIX-N2IC-DATE)",
       "phrases": [
         "Huntington mssEC 18 (obj 10074) p.89, pointer 9755, N2-IC"
       ],

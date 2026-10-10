@@ -122,7 +122,11 @@ def entry_text(lines):
     recorded in NOTES.md instead of the reading.
 
     One more (FIX-FM8, 9 Oct 2026): "unjoin: word" keeps the ' - ' just after that word a printed dash between two
-    words instead of the dis - missed style join (E280 "immediately - wrangle" is two words, not "immediatelywrangle")."""
+    words instead of the dis - missed style join (E280 "immediately - wrangle" is two words, not "immediatelywrangle").
+
+    One more (FIX-N2IC-DATE, 10 Oct 2026; AUDIT AUD2-LEDGER10-4): "year: word" starts a numeral run at that token that is
+    read as a year, the first value as hundreds and the rest combined the English way ([18, 60, 1] -> 1861, "eighteen
+    sixty-one"), instead of summed ([79]); the tokens and their grades are unchanged."""
     plain = set()
     cut_after = None
     variant = {}
@@ -133,6 +137,7 @@ def entry_text(lines):
     merge = []
     graded = {}
     unjoin = set()
+    year = set()
     body = []
     for l in lines[1:]:
         if l.startswith("plain:"):
@@ -159,6 +164,8 @@ def entry_text(lines):
         elif l.startswith("cut-after:"):
             wd, n = l[10:].split()[0].rsplit("#", 1)
             cut_after = (wd.lower(), int(n))
+        elif l.startswith("year:"):
+            year.update(w.lower() for w in l[5:].split())
         elif l.startswith("unjoin:"):
             unjoin.update(w.lower() for w in l[7:].split())
         elif l.startswith("graded:"):
@@ -208,12 +215,14 @@ def entry_text(lines):
         text = " ".join(out)
     if plain:
         text = " ".join(w + "\\" if w.strip(" .,;:'\"()").lower() in plain else w for w in text.split(" "))
-    if variant or split or gloss or graded:
+    if variant or split or gloss or graded or year:
         out = []
         for w in text.split(" "):
             c = w.strip(" .,;:'\"()").lower()
             if c in split:
                 out.append("|")
+            if c in year:
+                out.append("^")
             if c in gloss:
                 w = f"{w}~!{gloss[c][0]}~{gloss[c][1]}"
             elif c in graded:
@@ -332,9 +341,14 @@ def decode_entry(text, key, possessive=False, guard=None, guarded=None, tokens=N
     i = 0
     signed = False
     tail = []
+    as_year = False
     while i < len(words):
         w = words[i]
         if w == "|":  # "split:" note: only ends the numeral run before it
+            i += 1
+            continue
+        if w == "^":  # "year:" note: the numeral run starting at the next token is a year
+            as_year = True
             i += 1
             continue
         ovr = None
@@ -423,7 +437,11 @@ def decode_entry(text, key, possessive=False, guard=None, guarded=None, tokens=N
                     j += 1
                 else:
                     break
-            rendered = "[" + str(number(vals)) + "]" + flag
+            if as_year and len(vals) > 1:
+                rendered = "[" + str(vals[0] * 100 + number(vals[1:])) + "]" + flag
+            else:
+                rendered = "[" + str(number(vals)) + "]" + flag
+            as_year = False
             i = j
         elif kind == "time":
             rendered = "{time: " + meaning.split("(")[0].strip() + "}" + flag

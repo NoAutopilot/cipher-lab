@@ -1235,7 +1235,7 @@ Code-word tokens: H 17, I 2.
 
 **N2-IC | Page 95 | 9755 | mssEC 18 (obj 10074, pointer 9755; printed page 89), 7 June 1864 Washington (cipher time word 3.30 PM), S. P. Kimber (operator), to Maj. Gen. Canby, signed (decoded) Meigs, Quartermaster General (M): what is the gauge of the Vicksburg and Monroe railroad; in the annual report of the Directors there is no grading between Monroe and Shreveport; it is not likely that any work has been done upon it since this rebellion; it is 74 and a quarter miles from Vicksburg to Monroe (N2R-4; row 9755/0; holder transcription, leaf not eye-checked)**
 
-[Washington] {date: June 7} {time: 3.30 PM} For [Canby Ed R S] [.] What is the guage [Of the] [Vicksburg] and Monroe [Rail-road] [?] In the annual [Report] of [31] January [79] Directors [Report] no grading between Monroe and Shreveport [.] It is not likely that any work has been done upon it since this rebellion [.] It is [74] and [1] quarter [Mile]'s from [Vicksburg] to Monroe  {tail: [signed] Meigs [Quarter[?] Master General] damp again}
+[Washington] {date: June 7} {time: 3.30 PM} For [Canby Ed R S] [.] What is the guage [Of the] [Vicksburg] and Monroe [Rail-road] [?] In the annual [Report] of [31] January [1861] Directors [Report] no grading between Monroe and Shreveport [.] It is not likely that any work has been done upon it since this rebellion [.] It is [74] and [1] quarter [Mile]'s from [Vicksburg] to Monroe  {tail: [signed] Meigs [Quarter[?] Master General] damp again}
 
 Code-word tokens: H 25.
 
