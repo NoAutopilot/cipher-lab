@@ -15074,6 +15074,252 @@
       "depth_sentence": "On 29 Apr 1864 Sheldon told Eckert that Butler had returned Eckert's telegram about Dunn endorsed \"I know of none and do not believe a word against him\", which appeared to settle it.",
       "depth_check": "code: Knox = Butler, Wrangle = Telegraph passim; no external check",
       "depth_note": "4 H of 4 code-word groups"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L16b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L16b verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16b)' section 4",
+      "reading_version": "FM65-B..E readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L16b) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "none",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Col. R. C. Webster, chief quartermaster, Fort Monroe, to Ingalls at City Point, 7 Jan 1865: will General Grant let Elias Smith, New York Tribune correspondent, pass on the next boat joining the expedition? (E518)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 7 Jan 1865 Col. R. C. Webster, chief quartermaster at Fort Monroe, asked Brig. Gen. Ingalls at City Point whether General Grant would let Elias Smith, correspondent of the New York Tribune, pass on the next boat joining the expedition; the Huntington holds only Smith's own request to Dana of the same morning (pointer 8510); not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vols. IV-V, The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L16b); not N4: Grant Papers vol. 13 by snippets only, NARA RG 92/107 unread, the Tribune of January 1865 unread",
+      "depth": "D3",
+      "completeness": "10 H of 10 code-word groups (\"Webster\" plain, the signer)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.320, pointer 5864, E518"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.320, pointer 5864, E518",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.320, pointer 5864, E518"
+      ],
+      "depth_sentence": "On 7 Jan 1865 Fort Monroe's chief quartermaster asked Ingalls whether Grant would let the Tribune's Elias Smith go on the next boat joining the Fort Fisher expedition.",
+      "depth_check": "code: france = New York, rape = Expedition, Judah = Grant, palate = Brigadier General, Eugenia = 9.30 AM read passim; external (non-statistical): holder 8510 (mssEC 25 p.32), Smith to Dana 9.20 AM 7 Jan asking War Department permission to go on the expedition; OR I/46 pt 2, Webster chief quartermaster at Fort Monroe (Grant to Berrien, 3 Jan); image 5864 re-read",
+      "depth_note": "10 H of 10 code-word groups (\"Webster\" plain, the signer)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L16b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L16b verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16b)' section 4",
+      "reading_version": "FM65-B..E readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L16b) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "none",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Fort Monroe quartermaster (Capt. William L. James) to Emerick at City Point, add to Ingalls's message, 9 Jan 1865: no other forage vessels here; no troops arrived or sailed; General Abbott not seen (E526)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 9 Jan 1865 the Fort Monroe quartermaster's office (Capt. William L. James, by direction of the chief quartermaster) added to Ingalls's message that there were no other forage vessels at Fort Monroe, that no troops had arrived or sailed, and that General Abbott had not been seen; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vols. IV-V, The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L16b), short (34 tokens); not N4: Grant Papers vol. 13 by snippets only, NARA RG 92 unread",
+      "depth": "D2",
+      "completeness": "9 H + 1 S of 10 code-word groups (\"William\" plain)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.323, pointer 5867, E526"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.323, pointer 5867, E526",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.323, pointer 5867, E526"
+      ],
+      "depth_sentence": "On 9 Jan 1865 Fort Monroe reported no other forage vessels there and no troops arrived or sailed, adding that General Abbott had not been seen.",
+      "depth_check": "code: shade = Forage, whiskey = Troops (S), Shelter = General, pilgrim = Captain, Vinton = Quartermaster read passim; context only: OR I/46 pt 2 p.105 Ingalls 12 Jan, half rations of forage at City Point; image 5867 re-read",
+      "depth_note": "9 H + 1 S of 10 code-word groups (\"William\" plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L16b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L16b verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16b)' section 4",
+      "reading_version": "FM65-B..E readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L16b) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "none",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Fort Monroe to the War Department for approval, 12 Jan 1865: Lt. Col. Frank J. White, Eastville, 11 Jan, to Maj. George J. Carney, Superintendent of Negro Affairs, Norfolk: Butler is relieved, I think I will resign, what are you going to do? (E527)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 12 Jan 1865 Fort Monroe forwarded to the War Department, for approval, a telegram of 11 Jan from Lt. Col. Frank J. White at Eastville to Maj. George J. Carney, Superintendent of Negro Affairs at Norfolk: Butler is relieved, White thinks he will resign, and asks what Carney is going to do; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vols. IV-V, The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L16b); not N4: Grant Papers vol. 13 by snippets only, NARA RG 107 unread, Butler's own papers (LC) unread",
+      "depth": "D3",
+      "completeness": "10 H of 10 code-word groups (\"Negro\" and \"White\" plain)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.325, pointer 5869, E527"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.325, pointer 5869, E527",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.325, pointer 5869, E527"
+      ],
+      "depth_sentence": "On 11 Jan 1865, four days after Butler's removal, White at Eastville told Carney at Norfolk he thought he would resign; Fort Monroe held the telegram for the War Department's approval.",
+      "depth_check": "code: Knox = Butler, Tappan = Major, farmer = Norfolk, flag = 11, quadroon = Department read passim; external (non-statistical): OR I/46 pt 2 p.60 General Orders No. 1, Butler relieved 7 Jan 1865; p.711 and Butler Corr. V p.444, Frank J. White commanding at Eastville; image 5869 re-read",
+      "depth_note": "10 H of 10 code-word groups (\"Negro\" and \"White\" plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L16b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L16b verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16b)' section 4",
+      "reading_version": "FM65-B..E readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L16b) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "none",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Commodore Joseph Lanman, U.S.S. Minnesota, via Fort Monroe to Senator L. S. Foster at Willard's Hotel, 29 Jan 1865: ship ordered to Portsmouth, N.H.; I do not wish to go; have me detached here by telegraph; Lieut. Commander Parker can take the ship (E546)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 29 Jan 1865 Commodore Joseph Lanman of the U.S.S. Minnesota telegraphed Senator L. S. Foster at Willard's Hotel that his ship was ordered to Portsmouth, New Hampshire, that he did not wish to go, and asked to be detached there by telegraph, his executive officer Lieut. Commander Parker being able to take the ship; ORN ser. I vol. 11 p.725 prints only the Minnesota's departure for Portsmouth on 2 Feb; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vols. IV-V, The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L16b); not N4: ORN I/12 by be-api only, NARA RG 45 and RG 107 unread, Foster's papers unread",
+      "depth": "D3",
+      "completeness": "8 H of 8 body code-word groups (\"Hotel\" plain; header \"Washington\" a known slip)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.346, pointer 5890, E546"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.346, pointer 5890, E546",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.346, pointer 5890, E546"
+      ],
+      "depth_sentence": "On 29 Jan 1865 Lanman asked Senator Foster to have him detached by telegraph rather than take the Minnesota to Portsmouth, New Hampshire.",
+      "depth_check": "code: Asia = New Hampshire, wreathe = Telegraph, polka = Command, growl = Washington, Animal = Monroe read passim; external (non-statistical): ORN I/11 pp.724-725 Lanman 1-2 Feb 1865 'shall proceed forthwith to Portsmouth, N. H.'; Army and Navy Journal 1864, James Parker executive officer of the Minnesota; image 5890 re-read",
+      "depth_note": "8 H of 8 body code-word groups (\"Hotel\" plain; header \"Washington\" a known slip)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L16b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L16b verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16b)' section 4",
+      "reading_version": "FM65-B..E readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L16b) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "none",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Brig. Gen. George H. Gordon via Fort Monroe to Ord, 8 Feb 1865 11 PM: suggests the command of the Eastern District go temporarily to General Vogdes, as all his time goes to the investigation (E553)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 8 Feb 1865 Brig. Gen. George H. Gordon suggested to General Ord that the command of the Eastern District be given temporarily to General Vogdes, since all his own time and attention went to the investigation; the Official Records print the outcome (General Orders No. 21 of 9 Feb, OR ser. I vol. 46 pt 2 p.504) and Ord's objection to Vogdes (p.348), not this telegram; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vols. IV-V, The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L16b); not N4: Grant Papers vol. 13 by snippets only, the Gordon commission's papers and NARA RG 393 unread",
+      "depth": "D3",
+      "completeness": "9 H of 9 code-word groups",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.358, pointer 5902, E553"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.358, pointer 5902, E553",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.358, pointer 5902, E553"
+      ],
+      "depth_sentence": "On 8 Feb 1865 Gordon asked Ord to give the Eastern District to Vogdes for the time being so that he could keep at the investigation.",
+      "depth_check": "code: Mentor = Ord, polka = Command, Shelby = General, Palate = Brigadier General, Sarah = 11 PM read passim; external (non-statistical): OR I/46 pt 2 p.348 Ord to Grant 7 Feb (Vogdes to relieve Gordon on the commission; Vogdes unfit), p.504 General Orders No. 21, 9 Feb (Gordon temporarily to the District of Eastern Virginia); image 5902 re-read",
+      "depth_note": "9 H of 9 code-word groups"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L16b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L16b verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16b)' section 4",
+      "reading_version": "FM65-B..E readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L16b) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "see AUDIT (FV-L16b) s.3 (M tokens)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 77.8,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Ord, Hd Qrs Army of the James, to Gordon via Fort Monroe, 8 Feb 1865 at 12: you will have to take the command for the present; the investigation can go on quietly at the same time (E554)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 8 Feb 1865 General Ord answered Gordon that he would have to take the command for the present, the investigation going on quietly at the same time, with a further word on General V[ogdes] not read; the Official Records print the outcome (General Orders No. 21 of 9 Feb, OR ser. I vol. 46 pt 2 p.504), not this telegram; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vols. IV-V, The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L16b), short (24 tokens), 'obtain' x2 unread; not N4: Grant Papers vol. 13 by snippets only, NARA RG 393 unread",
+      "depth": "D2",
+      "completeness": "7 H + 2 M of 9 code-word groups (\"obtain\" x2 M, unread)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.358, pointer 5902, E554"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.358, pointer 5902, E554",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.358, pointer 5902, E554"
+      ],
+      "depth_sentence": "Ord told Gordon he must take the district command himself for now and carry on the investigation quietly at the same time.",
+      "depth_check": "code: Mentor = Ord, polka = Command, palsy = Brigadier General, Topsy = 12 read passim; external (non-statistical): OR I/46 pt 2 p.504 General Orders No. 21, 9 Feb 1865, Gordon temporarily assigned to the District of Eastern Virginia; image 5902 re-read",
+      "depth_note": "7 H + 2 M of 9 code-word groups (\"obtain\" x2 M, unread)"
     }
   ],
   "lanes": [

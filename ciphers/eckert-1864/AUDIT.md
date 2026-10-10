@@ -19101,3 +19101,183 @@ pp.29-30 / holder 4642 (N1 when filed).** All six: header may say "image-read by
 Requests: hdl.huntington.org 24 (18 CONTENTdm queries incl. control, 6 IIIF pages; one take 14:5x-15:0x UTC, all 200);
 www.googleapis.com 9 (1.6 s apart, all 200); be-api.us.archive.org 11 (1.8 s apart, 1 x 502); archive.org 0 (every OR volume used was on disk).
 For LANE LEDGER-16 (account 1).
+
+## AUDIT (FV-L16b)
+
+Verifier FV-L16b (account 1, for LANE LEDGER-16), 10 Oct 2026, 14:5x-15:3x UTC by `date -u`; a separate session from the readers FM65-B, FM65-C,
+FM65-D and FM65-E and from CLEAR-SWEEP, not protecting their conclusions. Scope: **E518** (NOTES "## FM65-B"), **E526, E527** ("## FM65-C"), **E546**
+("## FM65-D"), **E553, E554** ("## FM65-E"); ciphertext.txt, War Department Cipher No. 1, Fort Monroe ledger mssEC 25 = Huntington object 5952,
+7 Jan-8 Feb 1865. Nothing decoded beyond key look-ups in key.md. Key source for all six: `period`. No spec exists for eckert-1864, so
+`judge_plaintext.py` was not run. Intake gate: `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+**Step 0 is a non-test on mssEC 25** (Wave 2 RULING, STEP0-KEYCTL): nothing below rests on step 0.
+- **Prior work** (`tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<pointer>;date=..;sender=..;recipient=..'
+  --step-type audit`; the six are not items.tsv rows): all five pointers exit 4, "holds: specific 3 (LEAD 3); generic 2 (UNCHECKED-NET 2)". The three
+  LEADs are target-level live claims of other jobs (FM-F1 09:29, FIX-L14 11:29, CLEAR-SWEEP 13:25) that do not cover these six: CLEAR. 5902 adds three
+  edition-hit LEADs (OR I/32 pt 2, I/46 pt 1, I/46 pt 2 by date window): the I/46 pt 2 windows are the Ord/Grant/Gordon context read in s.2; the other
+  two are other events (a Feb 1864 Tennessee expedition, Feb 1865 Petersburg returns): CLEAR. UNCHECKED-NET is the generic OR list; the 1865 volumes
+  were read (s.2). The tool's writes to prior-work.tsv were reverted (not this job's file to change).
+- Scripts: `fortmonroe/fv_l16b_hdl.py` (+ `fv_l16b_hdl.out`, `fv_l16b_hdl2.out`, `fv_l16b_hdl3.out`: CONTENTdm full text, all pointers, control 9678
+  first, dmGetItemInfo 8510, five page images at 2400 px to scratch), `fortmonroe/fv_l16b_print.py` (+ `.out`: letters-only phrase grep over the 191
+  cached print-check texts -- OR I/46 pt 2, I/47 pt 2 (`warofrebellion431unit`, per or_volume_map.tsv), ORN I/9-11, Butler Corr. IV-V, Gordon's *War
+  Diary* (1882), J. E. O'Brien's *Telegraphing in Battle* (1910), Plum vol. 2, Bates -- plus KWIC for rare names), `fortmonroe/fv_l16b_gb.py` (+
+  `fv_l16b_gb.out` Grant Papers mode, `fv_l16b_g3.out` unrestricted G3 mode; control E531 `"six vessels" Oriental` hit vol. 13 mnRjmhe3QLoC),
+  `fortmonroe/fv_l16b_gb2.py` (+ `.out`: twelve short `intitle:Grant` queries), `fortmonroe/fv_l16b_beapi.py` (+ `.out`: IA be-api).
+- CLEAR-SWEEP's queries (NOTES "## CLEAR-SWEEP") were not repeated: every holder, Google Books and be-api query below is a fresh one (LEDGER-15 lesson 5).
+
+### 1. Duplicates, image
+- **Duplicate diff:** pointers 5864, 5867, 5869, 5890, 5902 and the names Elias Smith, Tribune, Carney, Eastville, Lanman / Land Man, Faster /
+  Willards, Vogdes, Gordon, Abbott, Portsmouth against every `###` header and body in ciphertext.txt, ciphertext-no2.txt and ciphertext-no9.txt: the
+  only other hits are other telegrams (E304 Wilkeson's Tribune rooms, May 1864; E536 the Tribune special correspondent, 17 Jan 1865; E251 Carney, Dec
+  1864; E545 Willards, 27 Jan 1865; E575-E577 Gordon at Norfolk, Mar 1865). **No duplicate in our files.** Unfiled rows on the same leaves, other
+  messages: 5864/0 is the cipher copy of holder 8510 (s.2, Elias Smith to Dana); 5890/0 is the cipher copy of holder 7731 (Lanman to the Secretary of
+  the Navy, 27 Jan, launches against the torpedo boats); 5890/1 is the Washington reply to Lanman (Jones Creek).
+- **Image eye check this session, every graded line** (2400 px page images, read whole and with region crops; the ruled pages give `iiif_lines.py` too
+  few bands, as FV-FM10a and FV-L15c found): 5864 row 1 (E518, header "Ft Monroe Jan 7/65 / S. H. Beckwith City Point" + 5 lines + Geo. D. Sheldon),
+  5867 row 2 (E526, header "Ft Monroe Jan. 9 - 1865" + 4 lines + Sheldon), 5869 row 1 (E527, header "Ft Monroe Jan. 12 - 1865 / Maj. Eckert, Wash'n."
+  + 6 lines + Sheldon), 5890 row 2 (E546, header "Ft Monroe Jan 29 - 1865 / Maj. Eckert, Washington" + 5 lines + Sheldon), 5902 rows 1-2 (E553 header
+  "Ft Monroe Feb 8 - 1865 / J. H. Emerick, Hd Qrs A. J." + 6 lines + Sheldon; E554 header "Hd Qrs A. J. Feb 8/65 / Geo. D. Sheldon Ft Monroe" + 4
+  lines + Emerick). **The transcription matches the image word for word on all six** (E518 "Eugenia for palate ringals sheaf vincent unity Mr",
+  "next boot joining the rape", "walrus Pandora Webster Vinton"; E526 "No whiskey arrived Nor sailed", "Have not seen Shelter Abbott"; E527 "The
+  rambling is forwarded to war quadroon for approval", "Carney Supt. Negro affairs farmer zebra Knox is relieved", "Frank J White Lieut. paradise";
+  E546 "Senator L. F. S. Faster Willards / Hotel growl", "polkaer Parker can take ship walrus Joseph Land Man"; E553 "the purposes torch Commission
+  ditto be more advanced", "hands of Shelby Vogdes"; E554 "shelby V will / not obtain walrus Mentor It is obtain very plain / Emerick"), with one
+  exception: E518's operator signature is **"Geo. D. Sheldon"** on the page, transcribed "Gen D. Sheldon" (s.5).
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; hdl token 15:03-15:1x UTC, 31 requests,
+control 9678 returned 9678): Elias 5 (5864 own; **8510**; 8650 and 5936 = Smith's 21 Mar 1865 Goldsboro dispatch, not sent), "correspondent
+expedition" 1 (**8510**), "Tribune permission" 2 (5864 own; **8510**), "nor sailed" 1 (own), "vessels forage" 7 (other dates), "Abbott forage" 2 (1864,
+other), "Negro affairs" 2 (5869 own; 8837 Thomas, 1865, other), "relieved resign" 4 (5869 own; others other years), "Eastville January" 1 (own), "Frank
+White" 2 (own; 9190 other), Lanman 7 (5886 = Lanman 21 Jan, rams; **7731** p.73 and **7734** p.76 = Lanman to the Secretary of the Navy 27 Jan, other
+messages; 5788, 7188, 9861, 2678 other dates), Landman 0, "Foster Willards" 0, "Senator Foster" 0, "detached Portsmouth" 1 (own), "wish detached" 2
+(own; 9670 = Foster at Knoxville, 1864), Faster 11 (own; the rest the adverb), "Eastern District" 3 (own; 3172, 8033 other), "respectfully suggest
+Commission" 0, "temporarily Vogdes" 1 (own), "progress quietly" 2 (own; 2667 = 1863), "Gordon investigation" 2 (own; 9820 = Gordon Bruce & Co.), "very
+plain" 10 (own; others other). **No holder clear copy of any of the six.** Pointer **8510** (p.32, Washington clear book): "920 AM Ft Monroe Va Jany 7th
+65 9 AM for CA Dana Washn I require permission from the War Dept to go on the expedition . A steamer sails immy Please telegraph permit & oblige
+Tribune Elias Smith Army Correspondent" -- Smith's own request to Dana, the same morning (cipher copy 5864/0, the row above E518): CLEAR-SWEEP's NEAR is
+upheld as **a different message** (other sender, other addressee, other ask), not a copy of E518.
+
+**Print:**
+- **E518:** not printed. Phrase grep (`"desires permission to go"`, `"next boat joining the expedition"`, `"will permit him to pass"`, "Elias Smith"):
+  none in 191 volumes. Grant Papers 13 (Google Books, `intitle:Grant`): `"Elias Smith"` 0 in vols. 13/14, `Tribune correspondent expedition permit` 0;
+  three long queries 0. The signer is **Col. Ralph C. Webster, Chief Quartermaster at Fort Monroe** (OR I/46 pt 2: Grant to Berrien 3 Jan 1865, "Colonel
+  Webster, quartermaster, at Fortress Monroe"; Hoffman's order, "Colonel Webster, chief quartermaster at Fort Monroe"; OR I/42 pt 3 p.1080 "Col. R. C.
+  Webster, Fort Monroe"; Butler Corr. V, "Col. R. C. Webster, Chief Q. M., Fort Monroe", Nov 1864), writing to Ingalls, chief quartermaster of the
+  armies at City Point.
+- **E526:** not printed (`"no other vessels of forage"`, `"no troops arrived nor sailed"`, `"have not seen General Abbott"`: none; Google Books
+  `Emerick Abbott` 0, `"nor sailed" troops forage Ingalls` none in Grant Papers). Context: OR I/46 pt 2 p.105, Ingalls to Brown, 12 Jan 1865: "We have half
+  rations of forage only for to-day" -- the forage shortage at City Point the same week.
+- **E527:** not printed (`"I think I will resign"`, `"what are you going to do"` hits other text; `"George J. Carney"` only OR I/33, an 1864 order; `"Frank
+  J. White"` hits OR I/46 pt 2, Butler V and other volumes, none this telegram). Context: OR I/46 pt 2 p.60, Halleck to Grant 7 Jan 1865 with General
+  Orders No. 1 ("Maj. Gen. B. F. Butler is relieved from the command of the Department of North Carolina and Virginia"); p.130, Dodge at Morehead City
+  11 Jan: "I am sorry to learn General Butler is relieved"; p.711, "FRANK J. WHITE, Lieutenant-Colonel, Commanding U. S. Forces", Eastville, Feb 1865;
+  Butler Corr. V p.444, "Colonel Frank J. White ... Provost Marshal's Office, Eastern Shore of Va., Eastville", 30 Dec 1864. Google Books: three
+  queries, no Grant Papers hit; `"I think I will resign" Butler 1865` hits vol. 13 only on another letter (Schriver).
+- **E546:** not printed (`"have me detached here"`, `"ordered to Portsmouth"` in the Minnesota sense, `"Lieutenant Commander Parker"` + Lanman: none
+  this telegram; Google Books `Lanman Portsmouth`, `Lanman Minnesota detached` 0 in Grant Papers, G3 three queries none). **Its substance is confirmed in
+  print:** ORN I/11 pp.724-725 (IA `officialrecordso0011unse`, running head 725), Lanman to Porter, U.S.S. Minnesota, Hampton Roads, 1 Feb 1865: he has
+  transferred the senior officer's papers to Commodore Schenck, has been directed by the Secretary of the Navy "to send on shore stores of all kinds not
+  wanted for your voyage", and (2 Feb) "shall proceed forthwith to Portsmouth, N. H."; OR I/46 pt 2 p.227 (Lanman at Hampton Roads, U.S.S. Minnesota,
+  24 Jan) and p.306 (Shepley, Norfolk 30 Jan, "Commodore Lanman, U.S.S. Minnesota"). The executive officer: Google Books G3, *Army and Navy Journal*
+  (1864, naw0AQAAMAAJ), "Minnesota ... Commodore Commanding, Joseph Lanman; Lieutenant-Commander and Executive Officer, James Parker". The addressee
+  "Senator L. F. S. Faster" is Senator **Lafayette S. Foster** of Connecticut; G3 genealogy snippets (*Foster Genealogy* 1899, *NEHGR* 1879) say
+  Foster married Joanna Lanman of Norwich (kinship to the Commodore not established here: context, not a check).
+- **E553 / E554:** not printed (`"Eastern District temporarily"`, `"devoted to the investigation"`, `"purposes of the commission"` (only a 19th-century
+  despatch volume, other text), `"investigation can progress"`, `"progress quietly"`, `"take the command for the present"`: none; Gordon's *War Diary*
+  (1882) on disk: Vogdes only in the 1863-64 Charleston chapters, nothing on Norfolk 1865; Google Books six queries, Grant Papers vol. 13
+  (ij8fAQAAMAAJ) hits only Ord's 7 Feb dispatch below). **Their substance is in print:** OR I/46 pt 2 p.348 (page from the OCR running head), Ord to
+  Grant 7 Feb 1865 6.20 p.m., "I propose ordering at once General Vogdes to relieve General Gordon on the commission; General Gordon to relieve General
+  Shepley", approved; Ord 6 p.m., "Inquire of any officer of the Army who has ever served with General Vogdes ... He would bring us into contempt";
+  Grant 7 p.m., "Do not give General Vogdes the command of Norfolk if you deem him unfit"; p.504, General Orders No. 21, Department of Virginia, 9 Feb
+  1865: "Brig. Gen. George H. Gordon ... is temporarily assigned to the command of the District of Eastern Virginia, and will relieve Brig. Gen. George
+  F. Shepley". E553 is Gordon's counter-suggestion (Vogdes to the district, Gordon kept on the commission); E554 is Ord's refusal; GO 21 next day is the
+  outcome. The G3 SUBSTANCE shape (AUDIT "G3 SUBSTANCE" ruling) does **not** apply: no printed text states what E553 or E554 says (that Gordon asked for
+  the reverse arrangement, or Ord's reply); the print gives the decision, not these messages.
+- **IA be-api** (whole collection and ORN I/12 by identifier): control `"Suwo Nada"` hit (909); `"desires permission to go on"` 0, `"no other vessels of forage"` 0, `"have me detached here"` 0, `"investigation can progress quietly"` 0; `"Elias Smith" Tribune Ingalls`, `"I think I will resign" Eastville`, `"devoted to the investigation" Vogdes` only other texts; `"George J. Carney"` -- Lowell bank histories and one book on Carney's office: **Gerteis, *From Contraband to Freedman* (1973, IA `fromcontrabandto0000gert`), "Major George J. Carney, who replaced Colonel Kinsman late in November 1864"** as superintendent of Negro affairs (confirms the office, not the telegram); `Lanman Portsmouth Minnesota detached Foster` -- ORN I/11 and its reprints (Porter's order sending "the Minnesota to Portsmouth", other text), no telegram; `"Eastern District temporarily"` 502 twice (one retry after 20 s), not searched; ORN I/12 by identifier `Lanman` 0 (Lanman left Hampton Roads 2 Feb).
+- **Unreachable / not searched:** Grant Papers 13 page by page (snippets only; vol. 14 begins 21 Feb, after these dates); ORN I/12 full text (500 for
+  every earlier verifier; by be-api only); NARA RG 107 and RG 45 telegram books; the Gordon commission's own report and papers (the investigation of
+  Butler's administration at Norfolk, 1865); the New York Tribune of January 1865 (E518 is not a press dispatch: it asks about a correspondent's pass);
+  JSTOR; HathiTrust full text.
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+Key collisions found by look-up in key.md, confirmed on the image and by the print or the holder: these tokens are **plain**, not H.
+- **E518:** "Webster" is the signer's name, **Col. R. C. Webster, Chief Quartermaster, Fort Monroe** (s.2), not a second [signed] (Webster =
+  Signature, key p.23): the close reads "[signed] [Colonel] Webster [Quartermaster]". "ringals" = Ingalls, "sheaf" = Chief (phonetic, I), so the
+  address is "for Brig. Gen. Ingalls, Chief Quartermaster". "me" in "permit me to pass him" is as written (sense: permit him to pass). "boot" = boat
+  (plain-phonetic). **H 10 of 10** (reader 11, less Webster): Eugenia = 9.30 AM, palate = Brigadier General, vincent = Quartermaster, unity, france = New
+  York, rape = Expedition, Judah = Grant, walrus, pandora = Colonel, Vinton = Quartermaster. Consistent with 8510 (Tribune, the expedition, 9.20 AM the
+  same morning). Operator signature: Geo. D. Sheldon (image), not "Gen".
+- **E526:** "William" (= 100) is plain (**Capt. William L. James, A.Q.M.**: FV-FM65a, FV-L15c E515 ruling); "ring galls" = Ingalls (plain, as the reader
+  left it); "Sheaf Vincent" = Chief Quartermaster (I + H): "by direction [of the] Chief Quartermaster" (Webster, as E518). **H 9 + S 1 of 10** (reader H 10
+  S 1, less William): shade = Forage, whiskey = Troops (S, KEY-TW), Shelter = General, unity, zodiac x2, Vincent, youth, pilgrim = Captain, Vinton =
+  Quartermaster. Abbott = Brig. Gen. J. C. Abbott (plain name; not checked here against the Fort Fisher print, M for the person).
+- **E527:** "Negro" is plain (**Supt. of Negro Affairs**, Carney's office: OR I/33, Butler V; the page writes "Negro affairs"), not [Artillery] (Negro =
+  Artillery, key p.18); "White" is plain (**Lt. Col. Frank J. White**, commanding at Eastville: OR I/46 pt 2 p.711, Butler V p.444), not [Report] (the
+  reader already flagged it M). "rambling" = [Follow]ing (Ramble, key p.20, H). "Janeway July August and finis" after the signature is ledger filler or
+  check text (M, unread). **H 10 of 10** (reader 12, less Negro and White): rambling, quadroon = Department, unity, flag = 11, Tappan = Major, farmer =
+  Norfolk, zebra, Knox = Butler, youth, paradise = Colonel. The relayed telegram is from White at Eastville, 11 Jan 1865, to Maj. George J. Carney,
+  Supt. of Negro Affairs, Norfolk, four days after GO No. 1 relieved Butler.
+- **E546:** "Hotel" is plain (**Willard's Hotel**, Washington), not [Longstreet] (Hotel = Longstreet, key p.15; the reader flagged it M). The header
+  "Maj. Eckert, Washington" reads [Volunteer] in reading.md: the known slip (`plain-at: washington#1`, NOTES "## FIX-L15", lesson 8), not counted.
+  "Faster" = **Foster** (Senator Lafayette S. Foster; the page writes "L. F. S."), "Joseph Land Man" = **Commodore Joseph Lanman**, U.S.S. Minnesota
+  (5890/0 and holder 7731 write the same name), "off I sir" = officer (plain-phonetic, I), "Parker" = Lt. Cmdr. James Parker (G3, s.2). **H 8 of 8**
+  body code groups (reader 10, less Hotel and the header slip): Animal = Monroe, Emma = 9 AM, growl = Washington, unity, Asia = New Hampshire, wreathe =
+  Telegraph, polka(er) = Command(er), walrus. All consistent with ORN I/11 p.725 (Portsmouth, N.H.).
+- **E553:** no collision. Sarah = 11 PM, Mentor = Ord, unity, torch x2 = of the, polka = Command, Shelby = General, yoke, Palate = Brigadier General.
+  **H 9 of 9.** "ditto" is ledger filler; "add" before Palate is as written (M, not read). Direction: the leaf header is "Ft Monroe Feb 8 - 1865 / J. H.
+  Emerick, Hd Qrs A. J." -- Gordon at Fort Monroe to Ord, through Sheldon to Emerick at Army of the James headquarters.
+- **E554:** Topsy = 12 (time word), palsy = Brigadier General, zebra, polka = Command, shelby = General, walrus, Mentor = Ord: **H 7**; "obtain" twice
+  (key: a line indicator, p.6/p.7) is **M, unread** ("General V will not obtain", "It is obtain very plain" after the signature, an operator's note); "V"
+  = Vogdes (I, from E553). **H 7 + M 2 of 9.** Time: "Topsy" = 12; the ledger order (E553 at 11 PM, then E554 as its answer) and GO 21 of 9 Feb make
+  **12 midnight, 8-9 Feb** the coherent reading (M; the reading block's "12 noon or 12.30 PM" header should say 12, noon or midnight). Direction: leaf
+  header "Hd Qrs A. J. Feb 8/65 / Geo. D. Sheldon Ft Monroe", signed Ord, operator Emerick -- from Army of the James headquarters to Gordon via Sheldon,
+  not from Fort Monroe (s.5).
+
+### 4. Classes (rule 10) and depth (rule 4a)
+
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E518 | **N3** | period | D3 (H 10/10; external: holder 8510, Smith's own request to Dana 9.20 AM the same day; OR I/46 pt 2, Webster chief QM at Fort Monroe) | no prior plaintext or decipherment located |
+| E526 | **N3** | period | **D2** (H 9 + S 1 of 10; no external check of the content beyond context, OR I/46 pt 2 p.105) | no prior plaintext or decipherment located |
+| E527 | **N3** | period | D3 (H 10/10; external: OR I/46 pt 2 p.60 GO No. 1, Butler relieved 7 Jan; p.711 and Butler V p.444, White at Eastville) | no prior plaintext or decipherment located |
+| E546 | **N3** | period | D3 (H 8/8; external: ORN I/11 p.725, Lanman 1-2 Feb "shall proceed forthwith to Portsmouth, N.H."; Army and Navy Journal 1864, Parker executive officer) | no prior plaintext or decipherment located |
+| E553 | **N3** | period | D3 (H 9/9; external: OR I/46 pt 2 p.348 Ord/Grant 7 Feb, p.504 GO 21 9 Feb) | no prior plaintext or decipherment located |
+| E554 | **N3** | period | **D2** (H 7 + M 2 of 9 = 78%; external: GO 21, p.504; short, the sense of "obtain" unread) | no prior plaintext or decipherment located |
+
+- **Not N4:** Grant Papers 13 by snippets only, NARA RG 107 unread, the Gordon commission's papers unread, ORN I/12 by be-api only.
+- **Safe sentences.**
+  E518 (N3): "Read at grade H with War Department Cipher No. 1: on 7 Jan 1865 Col. R. C. Webster, chief quartermaster at Fort Monroe, asked Brig. Gen.
+  Ingalls at City Point whether General Grant would let Elias Smith, correspondent of the New York Tribune, pass on the next boat joining the expedition.
+  Not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, The Papers of Ulysses S. Grant vol. 13 (Google Books snippets) or the
+  Huntington's full-text search, which holds only Smith's own request to Dana of the same morning (searched 10 Oct 2026)."
+  E526 (N3): "Read at grade H with War Department Cipher No. 1: on 9 Jan 1865 the Fort Monroe quartermaster's office (Capt. William L. James, by direction
+  of the chief quartermaster) added to Ingalls's message that there were no other forage vessels at Fort Monroe, no troops had arrived or sailed, and
+  General Abbott had not been seen. Not located in ... (searched 10 Oct 2026)."
+  E527 (N3): "Read at grade H with War Department Cipher No. 1: on 12 Jan 1865 Fort Monroe forwarded to the War Department, for approval, a telegram of
+  11 Jan from Lt. Col. Frank J. White at Eastville to Maj. George J. Carney, Superintendent of Negro Affairs at Norfolk: Butler is relieved, White thinks
+  he will resign, and asks what Carney is going to do. Not located in ... (searched 10 Oct 2026)."
+  E546 (N3): "Read at grade H with War Department Cipher No. 1: on 29 Jan 1865 Commodore Joseph Lanman of the U.S.S. Minnesota telegraphed Senator L. S.
+  Foster at Willard's Hotel that his ship was ordered to Portsmouth, New Hampshire, that he did not wish to go, and asked to be detached at Hampton Roads
+  by telegraph, his executive officer Lieut. Commander Parker being able to take the ship. ORN ser. I vol. 11 p.725 prints the Minnesota's sailing for
+  Portsmouth on 2 Feb; the telegram itself was not located in ... (searched 10 Oct 2026)."
+  E553 / E554 (N3): "Read at grade H with War Department Cipher No. 1: on 8 Feb 1865 Brig. Gen. George H. Gordon suggested to General Ord that the
+  command of the Eastern District be given temporarily to General Vogdes, since his whole time went to the investigation; Ord answered that Gordon would
+  have to take the command for the present, the investigation going on quietly at the same time. The Official Records print the outcome (General Orders
+  No. 21 of 9 Feb, OR ser. I vol. 46 pt 2 p.504) and Ord's objection to Vogdes (p.348), not these two telegrams."
+- **Unsafe:** any "first", "new", "unpublished" for any of the six; "Webster" as a code word in E518 or "Gen D. Sheldon"; "100 L James" in E526;
+  "Supt. of Artillery affairs" or "Frank J. Report" in E527; "Longstreet" or "Volunteer" in E546, or "Faster"/"Land Man" as names; E554 as sent from Fort
+  Monroe, or at noon as a fact; E553/E554 as printed (only the outcome is).
+
+### 5. Fixes for the next FIX job (not applied here; reading.md is decode.py output)
+E518: "Webster" plain (Col. R. C. Webster, Chief QM, Fort Monroe), not a second [signed]; "sheaf" = Chief (I); operator signature "Geo. D. Sheldon" (the
+transcription's "Gen D." is a slip, image 5864); header: from Webster at Fort Monroe for Ingalls at City Point, via Beckwith; context holder 8510 (p.32,
+Smith to Dana, 9.20 AM 7 Jan, cipher copy 5864/0). E526: "William" plain (Capt. William L. James, A.Q.M.), not [100]; "Sheaf Vincent" = Chief
+Quartermaster. E527: "Negro" plain (Supt. of Negro Affairs), not [Artillery]; "White" plain (Lt. Col. Frank J. White, Eastville), not [Report]; header
+context OR I/46 pt 2 p.60 (GO No. 1, 7 Jan). E546: "Hotel" plain (Willard's Hotel), not [Longstreet]; header word "Washington" `plain-at:
+washington#1` (lesson 8; FIX-L16 left E546 to this audit); names: Senator L. S. Foster (as "Faster"), Commodore Joseph Lanman, U.S.S. Minnesota (as
+"Land Man"), Lt. Cmdr. James Parker; header context ORN I/11 p.725. E553: header: Gordon at Fort Monroe to Ord at Hd Qrs Army of the James, via Emerick;
+context OR I/46 pt 2 pp.348, 504. E554: "obtain" x2 M (unread); "V" = Vogdes (I); time "12" (noon or midnight; midnight 8-9 Feb coherent, M); header:
+from Hd Qrs Army of the James (Ord, operator Emerick) to Gordon via Sheldon at Fort Monroe, not "Ft Monroe, Geo. D. Sheldon, for Gordon". All six:
+"image-read by FV-L16b, matches the transcription" (E518 except "Gen" for "Geo.").
+Requests: hdl.huntington.org 31 (control 9678 once, 25 CISOSEARCHALL incl. one dropped connection retried once after 25 s, 1 dmGetItemInfo 8510, 5 IIIF pages; one take 15:03-15:1x UTC); googleapis.com 50 (Google Books API, 1.6 s apart); be-api.us.archive.org 13 (2 x 502 on one query, one retry), 1.8 s apart; archive.org 0 (all OR/ORN/Butler/Gordon/O'Brien texts read from the print-check cache on disk).
+For LANE LEDGER-16 (account 1).
