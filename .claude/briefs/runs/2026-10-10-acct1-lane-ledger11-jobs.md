@@ -63,3 +63,25 @@ McClellan pages by phrase for the entries carrying Myrtle, Mary, Ingress, Humbol
 No key.md edit: a value with a second witness is proposed in NOTES with its witnesses for a later KEY job (rule 4: conflicting witnesses logged, never
 majority-voted). NOTES "## E62-CAM (10 Oct 2026, account 1, for LANE LEDGER-11)"; update Remaining gaps / Escalation; gaps_check; residue_decode.py --check if
 anything regenerated. Report what was found and where it was not found.
+
+---
+
+# Wave 2 (written 10 Oct 2026 06:3x UTC by date -u; seven_day allowed_warning on every worker)
+By get_session: BOOK-65 2.64 (10014/1 No. 1; 10012/1 and the Fuller 28 May entry inside the 10023/1 segment No. 2; 8 none in hand, labels No. 3/4/5; 26 predicted),
+MS65-R1 1.86 (7 step-0 skips; E400 in print; E401 not located), NO9-L 1.92 (all 9 step-0 hits, nothing filed), E62-CAM 0.91 (no second witness). Wave 1 7.33.
+
+## FV-MS65a (Opus 5.5, first verifier, separate from every reader; cap $3.5, box 90 min): E401 (10030/2), and the N1 confirm of E400 (10039/0)
+Exactly "## FV-MS18l" of .claude/briefs/runs/2026-10-10-acct1-lane-ledger9-jobs.md, Step-0 ruling first (MS65-R1 filed both, so its (a) was a miss: recompute
+and paste a/b/c). E401: 14 June 1865 (Cumberland; holder 7953 = Smith-to-Emory reply on McCausland, context): OR I/46 pt 3 and ser. I vols. 47-49 by date + both
+correspondents on page images, ser. II, Grant Papers 15, the press of the day, G3 with decoded phrases; leaf eye-check against the transcription (MS65-R1
+image-read it). E400: N1 confirm only (IA page image, word-for-word diff of the three print locations MS65-R1 cites; ~0.6). AUDIT.md "## AUDIT (FV-MS65a)";
+status.json/SO rows per rule 10; WORK-QUEUE AUD2-LEDGER11-1 for N3+ D2+ (account-4 tag). Corrections in s.5 for a FIX job.
+
+## MS65-R2 (Sonnet 5.5, reader; cap $3.5, box 110 min): the rows BOOK-65 assigned or predicted
+Method "## MS65-R1" above (for No. 1 rows) and "## N2R-4" of the ledger10 jobs file (for No. 2 rows: decode_no2.py, ciphertext-no2.txt, No. 1 and shuffled
+No. 2 side by side), Step-0 ruling first for every row. Rows: 10014/1 (read No. 1 by BOOK-65: file only the Sheldon 21 May entry; the Sullivan entry in the same
+segment reads in no book, record it), 10012/1 (No. 2), the Fuller 28 May entry inside the 10023/1 segment (No. 2: cut it from the segment as BOOK-65 NOTES says),
+then the header-word predictions 10006/0 10040/0 10034/2 10028/2 (No. 2), 10007/1 10006/1 (No. 1 or No. 2: decode both, file under the one that carries a clause),
+10040/1 (Fuller, Impress). Paste BOOK-65's table row for each. IDs: No. 1 from E402 (fetch first; next free if taken); No. 2 from N2-MA (N2-L exists as a single id; fetch first, next free block if taken).
+NOTES "## MS65-R2 (10 Oct 2026, account 1, for LANE LEDGER-11)" with the per-row line; Remaining gaps / Escalation; gaps_check; decode --write/--check exit 0.
+No audits. Unit ~0.3 per row.
