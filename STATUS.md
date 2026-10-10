@@ -7968,6 +7968,21 @@ trig_01RGVEn9pU1qWSy56TANypW8 at 03:30 UTC.
 TX programme table 02:4x UTC 10 Oct: slot 1 orchestrator | slot 2 lane inc. 5 session_01ERAcUeCn1HuAUASaqBTzcf 8.9 | slot 3 TX-RED inc. 3
 session_01X3CDfBTKgm75BMx43r7AWj 9.6, pass 16 due ~03:00; open F68-F72 | slots 4-10: TXV-GROEN done, OL1BOXES done (preflight FAIL, re-cut
 owed), END-CIPHER in-lane | eval looks 0; S2 look 1 (record stands).
+Check-in 12 (03:3x UTC 10 Oct by date -u, clock 03:30-03:4x; orchestrator (account-4) session_012sGNgiddCpz4QUhQsMyoPU, 89.9 at 03:30, context 759k --
+HAND-OVER DUE before ~820k: successor prompt rewritten this check-in, successor to be created by the account-4 DISPATCHER session (depth
+rule), not by this session). five_hour allowed; seven_day allowed_warning (continuing). Counted: 10 Oct 22 of 25 results, all time 162
+(AUD2-LEDGERN2-1/2/3/5 done 02:50-02:59, dispatcher-spawned, ledgered this check-in; -4 queued for the 03:34 firing). SITE: SITE-ITEMS-2
+done 03:28 (4.04 session + 9.4 sub-calls; 157 English lines, spot-check clean, 24 left of which 5 pages showed another item's token
+table); SITE-ITEMS-3 spawned from here with the fix first, then the republish (two publishes, nulls for removed paths), then the curator
+paragraphs written to data/context_paragraphs.tsv and HELD until the orchestrator creates data/context_approved. L74: the owner is
+verifying boxes on a fresh Vivonne copy https://claude.ai/artifact/B861DYeshrbaHbghGo3YNZ (his questions -> three owner-facing rules sent
+to the lane: tails cut under neighbours = Bad cut both halves; joined pairs = Skip, count separately; sliver/bleed = keep). TX: lane inc.
+5 18.0 at 03:30 (469k); TXE2-SHEETVIV dev result 0.088 flagged-excluded vs 0.124 (dev2 only, 16 lines improved / 8 worsened); TX-RED
+inc. 3 13.8 (421k), pass 16 at 03:00, next 03:38; V-OLD-O5 (account 2) carried Oldenbarnevelt N3 D1. TX-POOL-LEAF-2 (account 1) 5h50m:
+bounce at check-in 13 (past six hours). Check-in 13 trig_01MWaJbY5tJ6T3TyTVgmpb83 at 04:11 UTC.
+TX programme table 03:3x UTC 10 Oct: slot 1 orchestrator (hand-over due) | slot 2 lane inc. 5 session_01ERAcUeCn1HuAUASaqBTzcf 18.0 |
+slot 3 TX-RED inc. 3 session_01X3CDfBTKgm75BMx43r7AWj 13.8, pass 17 at 03:38; open F68-F72 | slots 4-10: OL1PAGE done (3 pages
+published for L74), SHEETVIV done (dev), MARKS live, GROEN verifier done | eval looks 0; S2 look 1 (record stands; -w comparison mask).
 
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:

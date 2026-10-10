@@ -189,3 +189,10 @@ parallel when one changes directory (02:53: a cd persisted into the other call a
 STATE DELTA 03:0x UTC 10 Oct: site republished (version 3) at https://claude.ai/artifact/3vTAKPQQRWAbgVMXxM43Pc after the clean rebuild (310 pages: 180 items, 117 people); a republish over 255 files must be split into two publishes to the same url (assets + items 001-130 + removals, then items 131+ and people); removed paths are passed as null. LESSON: build_site.py does not clean its output dir -- rm -rf items/ people/ before a rebuild or stale renumbered pages linger.
 STATE DELTA 03:0x UTC 10 Oct: decided -- confirm2-w (576) is the comparison mask of record for later f.103r comparisons (record 0.150/500 stays, quoted beside -w 0.141/576); oracle pages per hand, publish each passing one for L74 (TXE2-OL1PAGE session_015VLbL2RXRcUgndpMMLrZF8 re-cutting; expected vivonne and birago pass, luzerne uncertain); SHEETVIV (cap 22) and MARKS (cap 4) running now.
 STATE DELTA 03:1x UTC 10 Oct: L74 pages published private (vivonne Aqq2jWzu9t2vF6GC7ZH1iR, birago LvfNgwVZDVDoXDvFYFKCQn, luzerne 6AUbkHX1JxhYSp2QzHQ2kj); owner told; the lane appends the final ORACLE-LOCATION-1 registration when he reports minutes per 100 signs.
+STATE DELTA 03:3x UTC 10 Oct: check-in 12 done (check-in 13 trig_01MWaJbY5tJ6T3TyTVgmpb83 at 04:11). SITE-ITEMS-2 done + ledgered; SITE-ITEMS-3
+spawned (fix 5 mis-attributed token tables, republish, curator paragraphs HELD until research/mockups/site/data/context_approved exists --
+the orchestrator reads research/mockups/site/data/context_paragraphs.tsv, creates the flag file, has the site rebuilt + republished).
+AUD2-LEDGERN2-1/2/3/5 ledgered; -4 at the dispatcher. Owner on L74 (fresh page B861DYeshrbaHbghGo3YNZ); his minutes/100 -> lane.
+SUCCESSOR RULE (new): the orchestrator successor is created by the account-4 dispatcher session (session_01PpZtGZsbseHrXViC8rzExA) on a
+send_message carrying hub-seed/SUCCESSOR-PROMPT.md, never by the outgoing orchestrator (each self-created generation adds one lineage
+level; this session is depth 5, its lanes 6, their workers 7 -- one more generation and lane workers hit the depth-8 wall).
