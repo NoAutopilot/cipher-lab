@@ -831,16 +831,43 @@ gloss (unchanged from R9-OBRED4). (2) Out of this folder's scope, a possible tar
 Requests: `service.archief.nl` 34 (1 METS, 27 thumbnails at 400 px, 5 scans at 1400 px, 1 region crop), >= 1.9 s apart, descriptive
 User-Agent, no 403/429/challenge. No subagents.
 
-## Remaining gaps (loose-ends pass, 8 Oct 2026)
-Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the reading
-- a Brederode-side sibling cipher letter with a period gloss in NA 1.01.02 inv. 6016 (image order 261 on) - blocker: not-attempted; named by TX-KEYS and R9-OBRED4/R10-OBRED98 next step 1, never run (corrected by AERS-POOL, 8 Oct 2026: the loose-ends line here named the 10 Aug 1598 Van Aerssen slip, which R10-OBRED98 had already excluded for no. 92 by design on 6 Oct -- a French syllabary of marked one- and two-digit numbers cannot produce no. 92's unmarked three-digit Dutch groups; the live part of that find is the Van Aerssen pool, now ciphers/vanaerssen-1598-1609); next: 400 px contact sheets of inv. 6016 from image order 261, then 1400 px for any numeral page, ~$1.5
+## OBRED-6016 (10 Oct 2026, 02:46-02:5x UTC by date -u, account 2, Sonnet)
 
-## Escalation (loose-ends pass, 8 Oct 2026)
-- [ ] siblings: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
+Brief: contact-sheet screen of NA 1.01.02 inv. 6016 "from image order 261" for a Brederode-side cipher letter with a period gloss. Orders 260-350
+were already read leaf by leaf by YX-OBR (25 Sept 2026, `obr_6016_leaflog.tsv`, 91 leaves, no numeral cipher, key or gloss), so this pass starts at
+351 (the "1607 - 1608" divider) and runs to the end of the object, 624.
+
+- Prior-work step: `prior_work.py` run (step lookup, exit 4: one LEAD, my own live claim, plus UNCHECKED rows for a unit with no folio), all five rows
+  recorded CLEAR in `prior-work.tsv`; checks 1-4 by hand are the folder's own Premise check lines (a)-(c) above (3 Oct 2026): own files, solver repos
+  and Tomokiyo, edition and neighbours; no unit-keyed prior work on inv. 6016 351-624 on file.
+- Route: METS `service.archief.nl/gaf/api/mets/v1/4153f78f-...` (1 request, 624 scans, order -> IIIF base), then IIIF `/full/400,/0/default.jpg` for every
+  third scan 351, 354, ..., 624 (92 scans, 2.0 s apart) and `/full/1200,/0/default.jpg` for four. Descriptive User-Agent, all HTTP 200, no 403/429/challenge.
+  Requests: service.archief.nl 97 (1 METS, 92 at 400 px, 4 at 1200 px); cap was 120.
+- Method: ten contact sheets, each seeded with the same two controls from disk (no request): CTRL-CIPHER = NA 3.01.14 inv. 2016 scan 31
+  (`na_301_14_2016_p0031.jpg`, the interlinear decipherment opening with numeral groups) and CTRL-PLAIN = inv. 6016 order 261. One reader (this worker's own
+  eye, no subagent). Control calls: on all ten sheets the cipher control read as figure-groups and the plain control as running prose (10/10 seen both), so no
+  sheet is a non-test by the brief's rule. Calls per scan are in `images/6016_screen.tsv` (92 rows, every one "no cipher").
+- Result: **no numeral-code page, key table or interlinear decipherment seen on any of the 92 scans.** Four scans were re-looked at 1200 px because a sheet
+  showed something unusual: 417 (dense Dutch columns, p.355; plain prose), 492 (a slip-like block on the left leaf is the upside-down address of a German
+  letter dated 31 Jan 1610 from Christian of Anhalt; plain), 507 (a note slip on a German letter of 5 Jan 1611; plain), 597 (a Dutch letter, marginal date
+  "11 Juli 161[3]", with a stray "1, 91" annotation; plain, no code groups). Glossed: no for all four. Year dividers seen at 357 (1607), 375 (1608), 408
+  (1609), 498 (1611). 417 and 492 are committed as `images/na_101_02_6016_p0417_1200.jpg` and `..._p0492_1200.jpg`.
+- Where it was not found, and the limits: every third scan only, so 182 of the 274 scans in 351-624 were not looked at (a cipher letter or key slip on one
+  leaf only could sit in them); contact sheets at 400 px show a numeral run of the control's density, a short code passage inside prose may not stand out; the
+  positive control is a French letter of 1598 with dense figure-groups, not a Dutch three-digit run like no. 92; orders 1-259 (1602-1604) were not in the
+  brief and are unlooked beyond the six sample leaves of TX-KEYS. Not a negative for the series; a negative for the sampled leaves at this resolution only.
+
+## Remaining gaps (OBRED-6016, 10 Oct 2026)
+Read so far: unmeasured; no transcription of this folder's no. 92 was attempted in this pass, which only screened scans of the sibling series (92 of 274 scans of inv. 6016 351-624 looked at)
+- the 182 unlooked scans of NA 1.01.02 inv. 6016 orders 351-624 (the two scans between each sampled one) - blocker: not-attempted; stride-3 sampling in OBRED-6016 found no cipher, a full 400 px pass needs about 182 requests (more than one session's 120-request cap); next: two more sessions of 400 px sheets, orders 352-624 not sampled, ~$1.5 each
+- orders 1-259 of inv. 6016 (1602-1604, including a bound negotiation register from about order 100) - blocker: not-attempted; only six sample leaves seen (TX-KEYS); next: the same sheet screen at stride 3, 87 requests, ~$1.5
+
+## Escalation (OBRED-6016, 10 Oct 2026)
+- [ ] siblings: inv. 6016 orders 260-350 read leaf by leaf (YX-OBR), 351-624 sampled every third scan (OBRED-6016, 92 scans, no cipher); the 182 unsampled scans and orders 1-259 remain, planned step in the gaps above
 - [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [x] known-keys: the 10 Aug 1598 Van Aerssen slip excluded for no. 92 by design (R10-OBRED98, 6 Oct 2026); the Buzanval syllabary inv. 2028 excluded likewise (R9-OBRED4 step 0); DECODE 1600s and Palatine/Hessian keys screened (OLD-DKEY, R8-OBRED2, R9-OBRED3)
 - [ ] print: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-Verdict: keep going: 1 internal gaps; cheapest next: 400 px contact sheets of NA 1.01.02 inv. 6016 from image order 261 for a glossed Brederode-side sibling, ~$1.5
+Verdict: keep going: 2 internal gaps; cheapest next: the same 400 px sheet screen of inv. 6016 orders 1-259 at stride 3 (87 requests), ~$1.5
