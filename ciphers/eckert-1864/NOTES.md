@@ -4314,3 +4314,27 @@ Worker FIX-FM18, 00:25-00:3x UTC by `date -u`, offline. Carries AUDIT.md s.5 of 
 Counts: E356 reads H 11 by the decoder against the audit's "H 12 of 12 code groups" (the audit counts the period punctuation code groups); status.json's completeness text is the audit's, left as is. Per-entry H changes: E351 +1, E355 -3, E356 -2, E357 0 (M +1 already counted); corpus totals not recomputed here.
 
 Decode: `decode.py --check` "reading.md is current"; `decode_no2.py --check`, `decode_no9.py --check` current, exit 0. `tools/depth_check.py` 139 unique solves (D4 5, D3 92, D2 42), exit 0. Propagation (rule 10): status.json rows for E351/E355/E356/E357 and PROMPT-chatgpt-e351/e355/e356/e357.md already carry the corrected readings and counts; E359 (N1) has no status row or SO prompt by design. Not done: HYPOTHESES.md rule-4 note for the E357 "No 2" label and the Elgin = Grant M record (a KEY job's, named in AUDIT FV-MS18k s.5); NOTES "## MS18-R5" wording on E359 is superseded here, not edited.
+
+## FV-MS18m (10 Oct 2026, account 1, for LANE LEDGER)
+First verifier of E361-E365, E367, E368 and image check of MS18-R6's seven unchecked leaves (AUDIT.md "## AUDIT (FV-MS18m)"). **All seven N1 D3**,
+key `period`, printed in OR on the page image: E361 I/32 pt 2 p.361 (leaf 367), E363 p.389 (395), E365 p.369 (375), E362 I/41 pt 4 p.418 (424),
+E364 I/34 pt 4 p.586 (594), E367 I/37 pt 2 p.429 (435), E368 I/48 pt 2 p.730 (736). No difference of substance. **E367's leaf has a word the
+transcription dropped**: "the walnut oyster is tannering down" -- Tanner = Movement, so "is moving down" as printed (MS18-R6's "'moving' absent"
+was the transcription). Decoder slips: Wooster (E364), darling (E365), persons (E368) are plain; E367 date 24 not 20; E364 header "June" inserted.
+Holder: no clear copy (7 CISOSEARCHALL, own-page positive controls). All ten MS18-R6 entries now eye-checked. Fixes in AUDIT s.6, not applied here.
+
+## Remaining gaps (FV-MS18m, 10 Oct 2026)
+Read so far: E361-E365, E367, E368 audited N1 D3 on the print page images; leaves of E362-E364, E366-E368, E370 eye-checked on crops.
+- the transcription and reading fixes of AUDIT (FV-MS18m) s.6 (E367 tannering and date, Wooster, darling, persons, E364 header, page numbers in headers) - blocker: not-attempted; a verifier does not edit ciphertext.txt or reading.md; next: a FIX job, ~$1
+- E366, E369, E370 print (not located) - blocker: not-attempted; outside this brief (a first verifier of N1 confirms only); next: MS18-R6's named page-image read of the OR windows and a first verifier for the three, ~$1.5
+- E364 "Girls" = [Vicksburg] in the address (print has no Vicksburg) - blocker: not-attempted; key question for the KEY lane; next: a KEY job, ~$0.3
+
+## Escalation (FV-MS18m, 10 Oct 2026)
+- [x] siblings: 9755, 9758 (Kimber/Meigs June 1864 railroad entries), 9873 (Van Duzer Oct 1864), 7614/7615 opened; none a copy.
+- [x] clear-pages: all-pointer CISOSEARCHALL, 7 queries, own-page positive controls on 5; no clear copy.
+- [x] known-keys: key.md rows checked for every corrected token (Tanner = Movement H; Person = 5; Nuisance = Arms).
+- [x] print: all seven read on the IA page images, pages narrowed.
+- [n/a] key-rebuild: no key row edited; fixes listed in AUDIT s.6.
+- [x] image-check: seven leaves eye-checked on crops; E367 omission found.
+- [x] retry: one dropped hdl connection retried once.
+Verdict: keep going: 3 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18m) s.6, ~$1

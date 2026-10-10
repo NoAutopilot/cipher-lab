@@ -13087,3 +13087,118 @@ Corrections (a verifier does not edit ciphertext.txt or reading.md):
 Requests: hdl.huntington.org 24 (11 CISOSEARCHALL, 10 item info, 3 IIIF 2400 px), all 200; archive.org 13 (5 djvu texts of which 1 403 and 1 503, 2 metadata,
 1 advancedsearch, 1 page_numbers, 2 page images); googleapis.com 7; be-api.us.archive.org 3; loc.gov 2 (+1 chroniclingamerica.loc.gov, 308 redirect).
 Queued: WORK-QUEUE `AUD2-LEDGER-34` (E351, E355, E356), SO-ECKERT-E351, SO-ECKERT-E355, SO-ECKERT-E356.
+
+## AUDIT (FV-MS18m)
+
+Verifier FV-MS18m (account 1, for LANE LEDGER), 10 Oct 2026, 00:25-00:4x UTC by `date -u`; a separate session from the reader MS18-R6, not
+protecting its conclusions. Scope: N1 confirmation of **E361, E362, E363, E364, E365, E367, E368** (NOTES "## MS18-R6", placed in print from OCR
+heads) and the eye check of the seven leaves MS18-R6 did not eye-check (E362, E363, E364, E366, E367, E368, E370). Sent ledger mssEC 18 = Huntington
+object 10074, Cipher No. 1. Nothing decoded beyond key look-ups in key.md. Key source for all seven: `period`. No spec for eckert-1864, so
+`judge_plaintext.py` was not run. Intake gate (00:26 UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within
+6 lines`. Prior work (`tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 18;folio=<pointer>;date=..;sender=..;recipient=..'
+--step-type audit --offline`, one per entry, 00:36 UTC): exit 4 on each, 1-own LEADs only = the slug-level live claims of this wave (MS18-R7,
+FV-MS18l and the lane), none naming these entries (CLEAR for this scope). Scripts: `ms18/fv_ms18m_ia.py` (+ `.out`), `ms18/fv_ms18m_hdl.py` (+ `.out`).
+
+### 1. Print, on the page image (IA leaf -> page image at 1400 px; ids from `ciphers/eckert-1862/ec18/or_volumes.tsv`)
+Pages narrowed from the djvu text layer (running head before each item), then read on the image. **`_page_numbers.json` is off by two leaves in
+322unit after p.361 and in 414unit** (its leaf for p.369 shows 371, for p.389 shows 391, for p.418 shows 420); the leaves below are the ones whose
+image carries the page number.
+| ID | volume (IA id) | leaf | page head on the image | print as read on the image |
+|---|---|---|---|---|
+| E361 | OR I/32 pt 2 (`warofrebellion322unit`) | 367 | "CHAP. XLIV.] CORRESPONDENCE, ETC.--UNION. 361" | Washington, February 10, 1864--4 p.m.; Major-General Grant, Nashville, Tenn.: "Mr. Beckwith has been restored. Captain Stokes will be made quartermaster with the rank of lieutenant-colonel. Governors of States have no authority to furlough troops. Please report any cases that have occurred, and the Secretary of War will so inform the governors who have done so." H. W. Halleck, General-in-Chief. |
+| E365 | same | 375 | "... 369" | Washington, February 11, 1864--4 p.m.; Major-General Grant, Nashville: "Congress has been more than two months discussing the draft bill, and unless it soon passes we cannot fill up infantry regiments in time to supply the place of furloughed men. Other armies are in the same or worse condition than yours." Halleck, General-in-Chief. |
+| E363 | same | 395 | "... 389" | Washington, February 14, 1864--12.30 p.m.; Major-General Grant, Nashville: "Recruiting officers and provost-marshals have been directed to send recruits to their regiments as fast as collected, and also to send new regiments to the field as fast as organized. In case General Schofield should be rejected, who do you want to command his department? Name several to select from." Halleck, General-in-Chief. |
+| E362 | OR I/41 pt 4 (`warofrebellion414unit`) | 424 | "418 LOUISIANA AND THE TRANS-MISSISSIPPI. [CHAP. LIII." | Washington, November 3, 1864--4 p.m.; Brigadier-General Rawlins, Chief of Staff to General Grant, Saint Louis: "I am satisfied that all the troops you can lay hands on in Missouri should be sent forward with the least possible delay to re-enforce General Thomas. He is probably opposed by Hood's entire army and the cavalry of Wheeler and Forrest." Halleck, Major-General and Chief of Staff. |
+| E364 | OR I/34 pt 4 (`warofrebellion013404rootrich`) | 594 | "586 LOUISIANA AND THE TRANS-MISSISSIPPI. [CHAP. XLVI." | Washington, D. C., June 29, 1864--4 p.m.; Brigadier-General Bailey (Care Captain Wooster, Cairo): "Lieutenant-General Grant has decided that the Vicksburg and Shreveport Railroad shall not be repaired at present. Whenever repaired, should be changed to 5 feet. No engines or cars of 5 feet 6 inches gauge are in existence up North." M. C. Meigs, Quartermaster-General. |
+| E367 | OR I/37 pt 2 (`warofrebellion372unit`) | 435 | "CHAP. XLIX.] CORRESPONDENCE, ETC.--UNION. 429" | War Department, July 24, 1864--10 p.m.; Major-General Hunter, Harper's Ferry: "We have dispatches from General Grant's headquarters this afternoon. He is not in Richmond, and he gives no intimation that the rebel army is moving down the Valley of the Shenandoah. Where was General Crook when you last heard from him, and in what direction was he operating?" Edwin M. Stanton, Secretary of War. |
+| E368 | OR I/48 pt 2 (`warofrebellion482unit`) | 736 | "730 LOUISIANA AND THE TRANS-MISSISSIPPI. [CHAP. LX." | Washington, D. C., June 2, 1865 (Received 10 a.m.); Major-General Pope: "You may authorize the issuing of arms to all persons connected with the carrying of Government freights over the plains on proper security that the arms will not be lost to the Government." U. S. Grant, Lieutenant-General. |
+
+**All seven page numbers are on the image**; the reader's "about p.361", "pp.386-389", "pp.368-370", "pp.429-431" narrow to **361, 389, 369, 429**;
+418, 586, 730 were right. Diff, print against the ledger (leaf) and reading.md (date, hour, sender, addressee, body):
+- **E361:** body identical (ledger "Beck with", "in form"). Hour 4 PM, Grant at Nashville, signer General-in-Chief agree. Tail "Mailed letter
+  today" is the operator's, not in the print.
+- **E362:** body identical ("for ward", "lay hand"). Hour 4 PM, Rawlins Chief of Staff to Grant at St Louis agree. Halifax = Forrest (C, print);
+  hug = Wheeler, Panama = cavalry agree. Signer: decoder gives [General-in-Chief], print "Major-General and Chief of Staff": Halleck's title from
+  March 1864, same man (as FV-MS18e E332). Tail "He is in your city" not in the print.
+- **E363:** body identical. Hour 12.30 PM agrees; Kiss = Schofield, Polka(+Er) = command, Quadroon = department (C by print).
+- **E364:** body identical **except the print drops "the gauge"** ("Whenever repaired, should be changed"): the ledger is fuller, no conflict.
+  Jupiter = Grant (print "Lieutenant-General"; title only). **Decoder slip: "Wooster" is plain** (print "Captain Wooster"), not a code word; the
+  reading renders it [Volunteered]. "Girls" after Bailey renders [Vicksburg]: the print's address has no Vicksburg (M; Bailey's post, a routing
+  word). Tail "Where is Wash Parker now" not in the print.
+- **E365:** body identical. **"Nuisances" = armies** (print "Other armies"); reading gives [Arms]'s: the key row Nuisance = Arms is the clerk's
+  word for "armies" here (sense by print, C; no key edit). **Decoder slip: tail "She's my darling" is plain**; the reading renders darling as
+  [Martinsburg].
+- **E367:** body identical once the leaf is read: **the transcription drops a word** -- the leaf reads "the walnut oyster is **tannering** down"
+  (eye-checked, s.3): Tanner = Movement (key.md H, p.22 l.2) + "-ing" = **moving**, word for word the print's "is moving down". MS18-R6's
+  "'moving' absent" is a transcription omission, not a print difference. **Date slip:** reading.md gives {date: July 20} and leaves "Jenny" plain;
+  the print and the leaf's own header give July 24 (harrow + Jenny = 24; M on the split, the date C by print). "Crooked" = General Crook (plain
+  sound-spelling, C by print). Hour 10 PM, Hunter at Harper's Ferry, signer Secretary of War agree.
+- **E368:** body identical ("freight" vs print "freights"; "tower plains" = "over the plains"). **Decoder slip: "persons" is plain** (print "all
+  persons connected"); the reading renders it [5]s (Person = 5, right in E364's "person feet"). Hour: ledger header "10 am" = print "Received 10
+  a.m.". The referral and approval lines are the ledger's own, not in the print. Signer Grant agrees.
+**No difference of substance in any of the seven.** Every difference is a plain word the decoder took for a code word (Wooster, darling, persons),
+a dropped word in the transcription (tannering), a date-word split (July 20 / Jenny), or a word the print or ledger omits (the gauge, freights).
+
+### 2. Holder's full text (Huntington CONTENTdm p16003coll11, `CISOSEARCHALL`, all pointers; hdl take 00:31-00:34 UTC)
+One rare clear word per entry: Stokes 3 (own 9674; 7614, 7615 read: Jan 1864 Philadelphia, Charles Stokes's clothing house, another matter);
+Forrest 79 (9886 not among them: the ledger writes Halifax; 9873 read: Oct 1864 Van Duzer entries, other messages); Provost 87 (own 9676);
+Shreveport 64 (own 9769; 9755, 9758 read: the Kimber/Meigs June 1864 railroad entries, context for E364, other messages); Congress 68 (own 9674);
+Crook 88 (9801 not among them: the ledger writes "Crooked"; no 24 July neighbour opened); freight 34 (own 10027). The own-page hits are the
+positive controls. **No period clear copy of any of the seven at any pointer.** One dropped connection on the second query, retried once.
+Not searched: mssEC 19 by date (these are sent messages); NARA RG 107.
+
+### 3. Image check of the seven leaves MS18-R6 left (IIIF 2400 px; `tools/iiif_lines.py --image <leaf> --region .. --lines-per-crop 4`, 30 crops
+to scratch, read as one region per entry at 1900 px)
+| ID | pointer | verdict | slips (transcription vs leaf) |
+|---|---|---|---|
+| E362 | 9886 | matches line by line | header has the label "(1)" after Clowry (transcription omits it; harmless) |
+| E363 | 9676 | matches | last line "Quadroons" may carry an -s (M; no effect on the reading) |
+| E364 | 9769 | matches | **header: the leaf reads "W. T. Mason (#1) Cairo"; the transcription's "WT June Mason" inserts "June"** (header only) |
+| E366 | 10005 | matches, incl. the struck "platina"/"Julia" correction | "Will Yam" may be "Will Yams" (M; = William) |
+| E367 | 9801 | **one word dropped** | line 4: "the walnut oyster is **tannering** down" -- transcription "is down" (s.1) |
+| E368 | 10027 | matches | label "No 1." and "10 am" in the header; line 8 has "being being" (ledger dittography), the transcription one "being" |
+| E370 | 9836 | matches | "Kidnaps polka" (possessive, = Sherman's command), transcription "Kidnap" |
+With the 9674 (E361, E365) and 10020 (E369) leaves MS18-R6 read itself, **all ten MS18-R6 entries are now eye-checked.**
+
+### 4. Grades (reading.md as of this audit; decode.py counts, then print)
+| ID | decoder H/C | wrong code reads found by the print | after correction | U |
+|---|---|---|---|---|
+| E361 | H 17 | 0 | H 17; body C by print | 0 |
+| E362 | H 16, C 1 | 0 | H 16, C 1 (Halifax); body C by print | 0 |
+| E363 | H 18 | 0 | H 18; body C by print | 0 |
+| E364 | H 23 | Wooster | H 22; Girls M; body C by print | 0 |
+| E365 | H 15 | darling | H 14; Nuisances = armies C by print | 0 |
+| E367 | H 12, C 1 | date split (Jenny) | H 12 + Tannering (H, dropped word restored); date 24 C by print | 0 |
+| E368 | H 17 | persons | H 16; body C by print | 0 |
+
+### 5. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E361 | **N1** (text known) | period | D3 (H 17 + C by print; external: OR I/32 pt 2 p.361 on the image) | printed word for word, Halleck to Grant, 10 Feb 1864, 4 p.m. |
+| E362 | **N1** | period | D3 (H 16 + C 1 + C by print; OR I/41 pt 4 p.418) | printed word for word, Halleck to Rawlins, 3 Nov 1864, 4 p.m. |
+| E363 | **N1** | period | D3 (H 18 + C by print; OR I/32 pt 2 p.389) | printed word for word, Halleck to Grant, 14 Feb 1864, 12.30 p.m. |
+| E364 | **N1** | period | D3 (H 22 + C by print; OR I/34 pt 4 p.586) | printed (the print drops "the gauge"), Meigs to Bailey, 29 June 1864, 4 p.m. |
+| E365 | **N1** | period | D3 (H 14 + C by print; OR I/32 pt 2 p.369) | printed word for word, Halleck to Grant, 11 Feb 1864, 4 p.m. |
+| E367 | **N1** | period | D3 (H 13 + C by print; OR I/37 pt 2 p.429) | printed word for word once "tannering" is restored, Stanton to Hunter, 24 July 1864, 10 p.m. |
+| E368 | **N1** | period | D3 (H 16 + C by print; OR I/48 pt 2 p.730) | printed word for word, Grant to Pope, 2 June 1865, received 10 a.m. |
+Not D4: no fresh rule-7 re-derivation in a separate session. Safe sentence (each): "The ledger copy of this telegram reads with the period key
+(Cipher No. 1) to the text printed in the Official Records (ser. I, vol./pt, page as above); the plaintext was already in print." Unsafe: "first
+decipherment", "previously unread", any word implying the text is new. No status.json or SO rows (N1, per the brief).
+
+### 6. Fixes for the next FIX job (not applied here; reading.md is decode.py output)
+- ciphertext.txt E367 line 4: "intimation that the walnut oyster is down" -> "... is tannering down" (leaf 9801); then Tannering decodes Movement
+  (moving), and the header/note "'moving' absent" is withdrawn.
+- E367 date: "July harrow Jenny" = 24 (print and header); the date parse leaves Jenny plain and gives 20 -- an entry note, not a key edit.
+- Plain-word overrides (per entry, not key edits): E364 "Wooster" plain; E365 "darling" plain (tail); E368 "persons" plain. E365 "Nuisances" =
+  armies (entry note; the key row stays Arms).
+- ciphertext.txt E364 header line: "WT June Mason ( #1 ) Cairo" -> "W. T. Mason ( #1 ) Cairo". Optional: E362 header label "(1)"; E370 "Kidnaps".
+- `###` headers: E361 "about p.361" -> "p.361"; E363 "pp.386-389" -> "p.389"; E365 "about p.369" -> "p.369"; E367 "about pp.429-431" -> "p.429";
+  all seven add "print page eye-checked (FV-MS18m, IA leaf <n>)" (leaves 367, 424, 395, 594, 375, 435, 736); E362-E364, E366-E368, E370 replace
+  "holder transcription, leaf not eye-checked" with "leaf eye-checked (FV-MS18m)".
+- NOTES "## Remaining gaps (MS18-R6)": the "seven leaves not eye-checked" and "print page numbers" gaps are closed by this audit.
+- Tool note: `_page_numbers.json` for `warofrebellion322unit` (after p.361) and `warofrebellion414unit` is two leaves off; take the leaf whose
+  image carries the page number.
+
+### 7. Requests
+hdl.huntington.org 19 (7 CISOSEARCHALL + 1 dropped and retried once, 5 item info, 7 IIIF 2400 px; one take, released); archive.org 17 (5
+`_page_numbers.json`, 10 page images incl. 3 re-fetched leaves, 2 `_djvu.txt`), 1.6 s apart. be-api 0; googleapis 0. Subagents 0.
