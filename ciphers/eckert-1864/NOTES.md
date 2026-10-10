@@ -4639,3 +4639,29 @@ Read so far: E378, E381 audited (N3 D3 each); both ledger entries eye-checked at
 - [x] image-check: both entries eye-checked at 2400 px.
 - [x] retry: none (two archive.org texts 403/503, not retried).
 Verdict: keep going: 2 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18o) s.5, ~$1
+
+## FV-MS18n (10 Oct 2026, account 1, for LANE LEDGER)
+First verifier (separate from the reader MS18-R7) of E371 (9842/1), E374 (9673/1), E375 (10061/0): AUDIT.md "## AUDIT (FV-MS18n)". Classes: E371 N3 D2, E374 N3 D3,
+E375 N3 D3, key `period`, one audit; status.json rows, SO-ECKERT-E371/E374/E375 and WORK-QUEUE AUD2-LEDGER-37 queued. Found: holder 8898 (mssEC 19 p.6, 5 Feb 1864,
+Anderson to McCallum, "Nothing about Devereux") is E374's day-before sibling, and McCallum's printed 1866 report dates Anderson's appointment at Nashville (10 Feb 1864);
+holder 8012 (Baker, Baltimore, 20 Oct 1865 9.30 AM, "Isaac Surrat arrived in Baltimore ... is here still") is the telegram E375 answers, not a copy; E375 "watch" is
+plain (decoder slip to Surrender); E375 book No. 1 confirmed by header agreement against No. 2, No. 9 and shuffled copies; E374's name is written "Devrux"; E371's
+colonel reads Ferry or Terry (M). Not located in print: OR I/32 pt 2, I/39 pt 2 (text, index, dated headings), Chronicling America (E375, weak), Google Books, IA full
+text; OR ser. III vol. 4 not on IA. Corrections for a FIX job in AUDIT s.5. Requests: hdl 19, archive.org 9, be-api 7, loc.gov 3, googleapis 6.
+
+## Remaining gaps (FV-MS18n, 10 Oct 2026)
+Read so far: E371, E374, E375 audited (N3 D2, N3 D3, N3 D3); all three ledger leaves eye-checked on line crops at 2400 px.
+- E371, E374, E375 second audit and the unsearched families (OR ser. III vol. 4 and NARA RG 92 QM papers; railroad histories at the page; Surratt trial record 1867, Baker's papers, Baltimore press; HathiTrust; JSTOR) - blocker: waiting-on the answer of the VERIFY lane to WORK-QUEUE.tsv row AUD2-LEDGER-37; a second audit is a separate session (rule 10)
+- the header and reading fixes of AUDIT (FV-MS18n) s.5 (E375 watch plain, L. C. Baker and Isaac Surratt context, E374 Devrux spelling and Anderson/8898 context, E371 Ferry/Terry) - blocker: not-attempted; a verifier does not edit ciphertext.txt or reading.md; next: a FIX job, ~$1
+- E371 depth D3 and the colonel's identity - blocker: not-attempted; no external check of the content found; next: OR ser. III vol. 4 on HathiTrust via the owner's runner or a Google Books full-view copy, and the Louisville press Sept 1864, ~$0.5
+- unfiled siblings 8898/1 (mssEC 19 p.6, 5 Feb 1864, Anderson to McCallum) and 10061/1 (21 Oct 1865, Siebert for Capt. Gross, New Orleans, 'Sure rat') - blocker: not-attempted; filing is a reader's job; next: a reader row each, ~$0.3
+
+## Escalation (FV-MS18n, 10 Oct 2026)
+- [x] siblings: 8898 (E374's day-before sibling), 8012 (Baker's report E375 answers), 8828, 8830 (Sheridan on Isaac Surratt), 8693, 11066 read.
+- [x] clear-pages: all-pointer CISOSEARCHALL on 10 queries with positive controls (own pages hit), 6 item reads, no clear copy of any of the three.
+- [x] known-keys: every code group checked in key.md; E375 tested against key-no2.md, key-no9.md and three shuffled No. 1 copies (`ms18/fv_ms18n_book.out`).
+- [x] print: OR I/32 pt 2 and I/39 pt 2 by text, index and dated headings; McCallum's 1866 report; Chronicling America; Google Books and IA full text.
+- [n/a] key-rebuild: no key row edited; fixes listed in AUDIT s.5.
+- [x] image-check: all three entries eye-checked on line crops.
+- [x] retry: none needed.
+Verdict: keep going: 3 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18n) s.5, ~$1

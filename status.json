@@ -12083,6 +12083,129 @@
       "depth_sentence": "Stanton approved Barton's handling of the prisoner Ryan, and Barton replied next day that Ryan had already gone north and he would hunt for the witnesses.",
       "depth_check": "code clause: Growl July harrow plunder fanny for palsy Barten drill = Washington, July 27, 11 AM, for Brigadier General Barton, Memphis; external: holder 7978 (Barton, 28 July: Telegram of the twenty seventh received ... I will spare no pains to find the witnesses) (D3)",
       "depth_note": "12 H of 12 code-word groups; rest plain"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-MS18n)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-MS18n verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-MS18n)' section 4",
+      "reading_version": "MS18-R7 10 Oct 2026 (reading.md), grades as in AUDIT (FV-MS18n) s.3 (corrections in s.5 pending a FIX job)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger): Quartermaster General Meigs to Brig. Gen. Robert Allen at Louisville, 15 Sept 1864: withdraw all Government funds from Colonel Ferry of the quartermaster's depot (E371)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 15 Sept 1864 the Quartermaster General, for the Secretary of War, ordered Brig. Gen. Robert Allen at Louisville to withdraw at once from Colonel Ferry (or Terry) of the quartermaster's depot there all Government funds under his control; not located in print (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-MS18n); not N4: OR ser. III vol. 4 (not on IA), Quartermaster General's papers (NARA RG 92), Louisville press Sept 1864, HathiTrust, JSTOR not searched; colonel's name Ferry/Terry M; second audit queued (AUD2-LEDGER-37)",
+      "depth": "D2",
+      "completeness": "14 H of 14 code-word groups; rest plain (names M)",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.176, pointer 9842, E371"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.176, pointer 9842, E371",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.176, pointer 9842, E371"
+      ],
+      "depth_sentence": "In mid-September 1864 the War Department had the chief quartermaster at Louisville strip a depot colonel of all the Government money in his hands.",
+      "depth_check": "code clause: The Brutus directs that you with draw from Pandora Ferry chief Vintons quotient of Dragon all shark funds = the Secretary of War directs that you withdraw from Colonel Ferry, chief quartermaster's depot of Louisville, all Government funds; no external check of the content found (D2)",
+      "depth_note": "14 H of 14 code-word groups; rest plain; colonel's name Ferry or Terry (M)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-MS18n)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-MS18n verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-MS18n)' section 4",
+      "reading_version": "MS18-R7 10 Oct 2026 (reading.md), grades as in AUDIT (FV-MS18n) s.3 (corrections in s.5 pending a FIX job)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger): W. H. Whiton to Col. D. C. McCallum at Nashville, 6 Feb 1864: the Secretary of War will not let Devereux go West; A. Anderson has left for Nashville (E374)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 6 Feb 1864 W. H. Whiton telegraphed Col. McCallum at Nashville that the Secretary of War would not let J. H. Devereux leave his duties to go West and that A. Anderson had left for Nashville; not located in print (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-MS18n); not N4: railroad histories (Weber, Abdill) at the page, NARA RG 92 Military Railroads, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGER-37)",
+      "depth": "D3",
+      "completeness": "11 H of 11 code-word groups (1 C by header); rest plain",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.7, pointer 9673, E374"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.7, pointer 9673, E374",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.7, pointer 9673, E374"
+      ],
+      "depth_sentence": "When McCallum took over the western military railroads in February 1864, Stanton kept Devereux on the Virginia lines but let Adna Anderson go to Nashville.",
+      "depth_check": "code clause: The Infant is not willing that Devereux should leave his present duties to go Wilson ... has left for Empress = the Secretary of War ... to go West ... has left for Nashville; external (non-statistical): holder 8898 (mssEC 19 p.6, 5 Feb 1864, Anderson to McCallum, 'I leave here to day ... Nothing about Devereux') and McCallum's printed report (1866; A. Anderson appointed general superintendent at Nashville 10 Feb 1864)",
+      "depth_note": "11 H of 11 code-word groups; rest plain"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-MS18n)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-MS18n verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-MS18n)' section 4",
+      "reading_version": "MS18-R7 10 Oct 2026 (reading.md), grades as in AUDIT (FV-MS18n) s.3 (corrections in s.5 pending a FIX job)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger): Thomas T. Eckert to Brig. Gen. L. C. Baker at Baltimore, 20 Oct 1865: keep a very close watch on the man referred to (Isaac Surratt) (E375)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 20 Oct 1865 Thomas T. Eckert, for the Secretary of War, answered General Baker's report that Isaac Surratt was in Baltimore by asking him to keep a very close watch on the man; not located in print (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-MS18n); not N4: John H. Surratt trial record (1867), L. C. Baker's papers and History of the U.S. Secret Service at the page, Baltimore Sun Oct 1865, NARA M599, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGER-37)",
+      "depth": "D3",
+      "completeness": "11 H of 11 code-word groups (3 C by header); 'watch' plain; rest plain",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.395, pointer 10061, E375"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.395, pointer 10061, E375",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.395, pointer 10061, E375"
+      ],
+      "depth_sentence": "In October 1865 the War Department, warned that Isaac Surratt had come north, had General Baker keep him under close watch in Baltimore.",
+      "depth_check": "code clause: Your wrangle is received Zodiac the Brutus wishes you to keep a very close watch = your telegram is received; the Secretary of War wishes you to keep a very close watch; external (non-statistical): holder 8012 (Baker to Eckert, Baltimore 20 Oct 1865 9.30 AM, 'Isaac Surrat arrived in Baltimore on Sunday morning is here still') and 8828 (Sheridan, 18 Oct 1865, Isaac Surratt left Monterey)",
+      "depth_note": "11 H of 11 code-word groups; 'watch' plain (decoder slip to Surrender); day word written like 'Larch' (M shape)"
     }
   ],
   "lanes": [

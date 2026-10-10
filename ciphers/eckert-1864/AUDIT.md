@@ -13447,3 +13447,145 @@ the holder's received answers already on disk (7976, 7978). Corrections (a verif
 Requests: hdl.huntington.org 15 (9 CISOSEARCHALL, 4 item info, 2 IIIF 2400 px; all 200); archive.org 5 djvu (3 x 200, 1 x 403, 1 x 503, not retried);
 be-api.us.archive.org 7 (Larabee, all answered).
 Queued: WORK-QUEUE `AUD2-LEDGER-38` (E378, E381), SO-ECKERT-E378, SO-ECKERT-E381.
+
+## AUDIT (FV-MS18n)
+
+Verifier FV-MS18n (account 1, for LANE LEDGER), 10 Oct 2026, 01:01-01:3x UTC by `date -u`; a separate session from the reader MS18-R7, not protecting its
+conclusions. Scope: first audits of **E371, E374, E375** (NOTES "## MS18-R7"; ciphertext.txt, Cipher No. 1, Washington sent ledger mssEC 18 = Huntington object
+10074). Nothing decoded beyond key look-ups in key.md, key-no2.md and key-no9.md. Key source for all three: `period`. No spec exists for eckert-1864, so
+`judge_plaintext.py` was not run. Intake gate (01:01): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Prior work
+(`tools/prior_work.py eckert-1864 --item-spec 'item_id=E37x;ptr=...' --step-type audit --offline`, one per entry): exit 4 each, verdict step LEAD, every LEAD an
+own-work line of this lane (MS18-R7's filing and notes, live lane claims), none an earlier audit of these entries. Scripts: `ms18/fv_ms18n_hdl.py` (+ `fv_ms18n_hdl.out`,
+`fv_ms18n_info.out`), `ms18/fv_ms18n_fts.py` (+ `.out`), `ms18/fv_ms18n_gb.py` (+ `.out`); book test `ms18/fv_ms18n_book.out`.
+
+### 0. What the reader missed
+- **E374:** the holder's received/sent text has the day-before sibling. mssEC 19 p.6 (pointer **8898**, second entry; filed nowhere, stopped at step 0 in an
+  earlier pass, NOTES line ~1962) is S. H. Beckwith, Washington, **5 Feb 1864**, to McCallum: "I leave here to day and will report to you soon as possible sig A.
+  Anderson", with the clerk's tail "**Nothing about Devereux**". E374 (6 Feb, 11 AM) is the War Department's follow-up on both men: the Secretary of War will not let
+  Devereux leave his duties to go West, and Anderson has left for Nashville. The reader searched the holder only for 'Devereux McCallum' (0 hits); 'Devereux'
+  alone hits 8898.
+- **E375:** "watch" in "keep a very close watch on the man" is **plain**; the decoder pushed it through the key row Watch = Surrender and reading.md prints
+  "[Surrender]" (the King/Queen/Camden shape again, AUDIT (FV-MS18l) s.5). The day word on the leaf is written like "Larch" (initial L-shaped, as in "Laura" two
+  entries below) rather than "harsh"; no book has "Larch"; read as Harsh = 20 by the clear header "Oct 20" (M on the shape, the date not in doubt).
+- **E375 book:** the reader's book choice holds, by a test the reader did not run on the header: No. 1 gives Grapes = Washington, Florence = 11.30 AM, palsy =
+  Brigadier General, Baptism = Baltimore, wrangle = Telegraph, Brutus/Bruno = Secretary of War, matching the clear header "1130 AM ... Balto ... Washn Oct 20 1865";
+  No. 2 gives Butler, Ammunition, Baton Rouge, Valley, Delaware, Donaldson (only Florence agrees); No. 9 has none of Grapes, harsh, Baptism, Brutus, watch, Bruno;
+  three meaning-shuffled copies of No. 1 read nonsense (`fv_ms18n_book.out`). No. 1 is the book; "no book in hand" was not needed.
+- **E371:** the brief's link "Ferry appears in E352 too" does not hold: E352's "Ferry" is Harper's Ferry (operator Lawrence, H. Ferry), not this colonel.
+
+### 1. Duplicates and image (own entry, IIIF 2400 px, line crops via `tools/iiif_lines.py --image ... --region`, crops to scratch)
+- **Duplicate diff:** `entries-mssEC19.tsv` has no entry dated 15-16 Sept 1864, 6 Feb 1864 or 19-21 Oct 1865 to Allen, McCallum or Baker; the 5 Feb 1864 McCallum
+  entry (8898/1) is a different telegram (s.0). The holder's full text finds 'Ferry funds' and 'certificates credits' only on 9842, 'good time coming' and 'close
+  watch' on 10061 among others none of which is a copy (s.2). **No duplicate.**
+- **E371 (9842, p.176, second entry):** the six text lines match the transcription word for word ("Katy for Palate Robt Allen Vincent Dolphin zebra" ... "to be
+  done immediately Webster Bender fine day"); header "Capt Bruch ... Washn Sept 15th 1864" read on the 800 px view. The colonel's name is written with a looped
+  capital that this clerk also uses for T ("The" on the next line): **"Ferry" or "Terry"**, M for the spelling as well as the identity.
+- **E374 (9673, p.7, second entry):** matches, including the numbered head groups (1-9 over Growl ... Mc). One slip: the name is written **"Devrux" / "Deverux"**
+  (an abbreviated spelling), not "Devereux" as transcribed; the holder's own transcription normalises it too (its full text hits 9673 on 'Devereux').
+- **E375 (10061, p.395, first entry):** matches line by line ("Grapes Oct [Larch/harsh] Florence for palsy Elsee", "Baker Baptism Zebra Your wrangle is received",
+  "Zodiac the Brutus wishes you to keep", "a very close watch on the man", "referred to Yoke Thomas T. Eckert actg", "asst Bruno there is good time coming"); a
+  small mark after "Elsee" (tick or stray stroke), not a word.
+
+### 2. Holder's full text, siblings and print
+**Huntington CONTENTdm** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; one hdl take 01:10-01:12 UTC, 19 requests: 10 queries, 6 item records, 3
+page images). Positive controls: 'Ferry funds' and 'certificates credits' hit 9842 (E371's own page) only; 'good time coming' and 'close watch' hit 10061; 'Devereux'
+hits 9673. Hits: 'Bruch' 318; 'Ferry Louisville' 20 (not opened: Harper's Ferry pages by pointer range, the queried phrase is not in E371); 'Devereux' 18 (titles read:
+mssEC 19 p.6 = 8898, mssEC 18 p.7 = 9673, the rest received ledgers and field letterbooks); 'Isaac Surratt' 8828, 8830; 'Surratt Baltimore' 8693. Item records read:
+- **8898** (mssEC 19 p.6): see s.0, the 5 Feb 1864 Anderson-to-McCallum telegram, "Nothing about Devereux". **Not a copy of E374**; an independent same-office witness
+  of the day before.
+- **8012** (received ledger p.354): "9 30AM Baltimore Oct 20 1865 / Balto. 19th. for TT Eckert Washn / Isaac Surrat arrived in Baltimore on Sunday morning / is here
+  still ---- S [sic: holder text] C Baker Br Genl &c", followed on the page by a 20 Oct 2.10 PM D. H. Bates telegram signed W. J. Bodle ("will close up this office
+  today"). **Not a clear copy of E375; it is the telegram E375 answers**: received 9.30 AM, answered 11.30 AM the same day to Baker at Baltimore through the same
+  operator Bodle, "Your telegram is received ... keep a very close watch on the man referred to" = Isaac Surratt. The signer's initials in the holder text ("S C")
+  against E375's phonetic "Elsee" (L. C.) are a holder-transcription question, not read on the 8012 image (M; L. C. Baker most likely).
+- **8828** (received ledger p.350): Sheridan, New Orleans, 18 Oct 1865, to the Secretary of War, relaying Steele: "Isaac Surratt, another son of Mrs Surratt, left
+  Monterey Mexico some three or four weeks ago to assassinate the President", with a description; **8830** (p.352): Sheridan 28 Oct 1865 on John K. Spires, the
+  informant on "the intention of Isaac Surrat". Context: why the War Department wanted Isaac Surratt watched, not copies.
+- 8693 (Fort Monroe, 17 Apr 1865, the Arnold/Booth/Surratt arrest order) and 11066 (field telegraph letterbook, "Devereux" a station): unrelated.
+
+**Print** (archive.org djvu texts fetched to scratch: OR I/32 pt 2 `warofrebellion322unit`, I/39 pt 2 `warofrebellion392unit`; McCallum's report
+`unitedstatesmili00unit`):
+- **E374 -> not located; its context is printed.** OR I/32 pt 2: 'Devereux' 0 in the whole text and index; the 6-7 Feb 1864 dated headings (43, pp.334-348) hold no
+  Washington item of 6 Feb (the first Washington heading is 7 Feb 12.30 p.m., Halleck to Grant). *United States Military Railroads. Report of Bvt. Brig. Gen. D. C.
+  McCallum* (1866; IA `unitedstatesmili00unit`; also OR ser. III vol. 5) prints Grant's General Orders No. 3, Nashville, 4 Feb 1864 ("received on the 4th of
+  February"), making McCallum general manager of the western military railways, and McCallum's order of **Nashville, 10 Feb 1864**: "A. Anderson is hereby appointed
+  general superintendent of transportation and maintenance of roads in use" (and of 11 Feb, the letter of appointment); its officer lists give J. H. Devereux as
+  superintendent of the Alexandria railroads 1862-63 and A. Anderson as chief engineer of the military railroads of Virginia in 1863, general superintendent in
+  the West in 1864. The telegram itself is not in the report (text: 'Devereux' twice, both in the lists).
+- **E371 -> not located.** OR I/39 pt 2: no Washington-dated item of 15 or 16 Sept 1864 by heading (the 15-16 Sept headings are Atlanta, Nashville, Knoxville,
+  Cincinnati, Memphis-side); the index has no Robert Allen and Meigs only at pp.208, 341. OR ser. III vol. 4 (the Quartermaster General's 1864 papers) is not on
+  the Internet Archive under any identifier found (`advancedsearch` for Ser. 3 returns vols 1-2 only; `warofrebellion0304rootrich` metadata unavailable): not searched.
+- **E375 -> not located.** No OR volume covers 20 Oct 1865. Chronicling America (loc.gov, 3 date-window queries 15 Oct-31 Dec 1865: 'Isaac Surratt Baltimore' 4,
+  'Isaac Surratt arrested' 15, 'Surratt Baker Baltimore' 18 page hits, titles and first lines read, none showing the telegram; OCR- and rank-dependent, weak).
+- **G3 / full text** (Google Books, `country=US`, key, 6 queries; IA be-api 7 queries; `fv_ms18n_gb.out`, `fv_ms18n_fts.out`): '"close watch on the man referred
+  to"', '"Isaac Surratt" "close watch" 1865', '"withdraw from Colonel Ferry"', '"Ferry" "all Government funds" Louisville 1864', '"Devereux should leave his present
+  duties"', '"Devereux" McCallum Anderson "February 6, 1864"': no hit is any of the three telegrams (top hits Harper's Ferry, Bible dictionaries, 1917 bulletins).
+  be-api: Devereux/Anderson/McCallum hits are Haupt's *Reminiscences*, Weber's *The Northern Railroads in the Civil War* ("On February 10, 1864, McCallum appointed Adna
+  Anderson superintendent of transportation"), Abdill, Lord, Ward; none prints E374. 'Col./Colonel Ferry quartermaster Louisville' finds a "Colonel Ferry, of
+  Michigan" in Tennessee Bar Association reports (subsistence stores) and a Kentucky paper's "affidavit of Colonel Ferry" on Louisville transportation frauds with
+  Capt. Samuel Black, A.Q.M. (both snippets only, unread at the page): a lead for the colonel's identity, not a print of E371.
+- Not searched: OR ser. III vol. 4 (Quartermaster General, 1864) and Meigs's papers / the QM consolidated correspondence (NARA RG 92) for E371; the Louisville press
+  Sept 1864; Weber's and Abdill's railroad histories at the page, Devereux's papers, NARA RG 92 Military Railroads for E374; the John H. Surratt trial record (1867),
+  L. C. Baker's papers and his *History of the United States Secret Service* (1867) at the page, the Baltimore Sun Oct 1865, NARA M599 for E375; HathiTrust; JSTOR.
+
+### 3. Grades and reading corrections (reading.md as of this audit)
+- **E371:** Katy = 4.30 PM (H; the clear header gives no hour), Palate = Brigadier General, Vincent = Quartermaster, Dolphin = Louisville, zebra =
+  period, Brutus = Secretary of War, Pandora = Colonel, Vintons = Vinton = Quartermaster (possessive), quotient = Depot, Dragon = Louisville, shark = Government,
+  zodiac = period, Webster = Signature, Bender = Qr Master Genl U.S. (= Meigs): **H 14 of 14** code groups. Ferry/Terry and Robt Allen plain (names M for
+  identity; Robert Allen was chief quartermaster at Louisville). Reading: "Washington, Sept 15, 1864, 4.30 PM. For Brigadier General Robert Allen, Quartermaster,
+  Louisville. The Secretary of War directs that you withdraw from Colonel Ferry [or Terry, M], chief quartermaster's depot of Louisville, all Government funds,
+  whether cash, notes or certificates, or credits therefor, now under his control. This to be done immediately. [signed] Quartermaster General [Meigs]."
+- **E374:** Growl = Washington (blind), Plague = 6, Fanny = 11 AM (C by header "11 AM"), Pandora = Colonel, Embrace = Nashville, Unity = period, Infant = Secretary of
+  War, Wilson = West, Zebra = period, Empress = Nashville, Youth = Signature: **H 11 of 11**. "A And-er-son" = A. Anderson (phonetic split; Adna Anderson, C-supported
+  by 8898 and McCallum's report); "Devrux" = Devereux (J. H. Devereux, superintendent of the Alexandria military railroads). Reading: "Washington, Feb 6, 1864, 11 AM.
+  For Colonel D. C. McCallum, Nashville. The Secretary of War is not willing that Devereux should leave his present duties to go West. A. Anderson has left for
+  Nashville. [signed] W. H. Whiton. How goes battle with you."
+- **E375:** Grapes = Washington (blind), harsh = 20 (written like "Larch", M on the shape; C by header), Florence = 11.30 AM (C by header), palsy = Brigadier
+  General, Baptism = Baltimore (C by header "Balto"), Zebra / Zodiac = periods, wrangle = Telegram, Brutus = Secretary of War, Yoke = Signature, Bruno = Secretary of
+  War: **H 11 of 11** code groups; **watch plain** (not Surrender). Elsee = L. C. (phonetic, M), Baker = Brig. Gen. L. C. Baker (M; holder 8012 signer). Reading:
+  "Washington, Oct 20, 1865, 11.30 AM. For Brigadier General L. C. Baker, Baltimore. Your telegram is received. The Secretary of War wishes you to keep a very close
+  watch on the man referred to. [signed] Thomas T. Eckert, acting Assistant Secretary of War. There is good time coming."
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | class | key | depth | % code groups H/C/S | basis | safe sentence |
+|---|---|---|---|---|---|---|
+| E371 Quartermaster General Meigs to Brig. Gen. Robert Allen, Louisville, 15 Sept 1864 | **N3** | period | D2 | 100 (14 H) | not located: OR I/39 pt 2 (15-16 Sept headings, index), holder full text (own page only), Google Books, IA full text; OR ser. III vol. 4 unsearched (not on IA) | "Read at grade H with War Department Cipher No. 1: on 15 Sept 1864 the Quartermaster General, for the Secretary of War, ordered Brig. Gen. Robert Allen at Louisville to withdraw at once from Colonel Ferry (or Terry) of the quartermaster's depot there all Government funds under his control; not located in print (searched 10 Oct 2026)." |
+| E374 W. H. Whiton to Col. D. C. McCallum, Nashville, 6 Feb 1864 | **N3** | period | D3 | 100 (11 H, 1 C by header) | not located: OR I/32 pt 2 (text and index, 6-7 Feb headings), McCallum's 1866 report (context only), holder full text, Google Books, IA; holder 8898 (5 Feb, Anderson to McCallum, "Nothing about Devereux") is a sibling, not a copy | "Read at grade H with War Department Cipher No. 1: on 6 Feb 1864 W. H. Whiton telegraphed Col. McCallum at Nashville that the Secretary of War would not let J. H. Devereux leave his duties to go West and that A. Anderson had left for Nashville; not located in print (searched 10 Oct 2026)." |
+| E375 Thomas T. Eckert to Brig. Gen. L. C. Baker, Baltimore, 20 Oct 1865 | **N3** | period | D3 | 100 (11 H, 3 C by header; watch plain) | not located: no OR volume covers the date; holder 8012 is Baker's report it answers, not a copy; Chronicling America (weak), Google Books, IA | "Read at grade H with War Department Cipher No. 1: on 20 Oct 1865 Thomas T. Eckert, for the Secretary of War, answered General Baker's report that Isaac Surratt was in Baltimore by asking him to keep a very close watch on the man; not located in print (searched 10 Oct 2026)." |
+
+Not N4 for any: OR ser. III vol. 4 and the Quartermaster General's papers (E371), the railroad histories at the page and NARA RG 92 (E374), the Surratt trial record,
+Baker's papers and the Baltimore press (E375), HathiTrust and JSTOR are unsearched. Unsafe for all three: "first", "new", "unpublished", "never printed". Depth checks:
+E371 -- **D2**: every code group H and the clause "The Brutus directs that you with draw from Pandora Ferry chief Vintons quotient of Dragon all shark funds" =
+the Secretary of War directs that you withdraw from Colonel Ferry, chief quartermaster's depot of Louisville, all Government funds, one sentence; no external check of
+the content found (the colonel's identity is open). E374 -- **D3**: code clause "The Infant is not willing that Devereux should leave his present duties to go Wilson
+... has left for Empress" = the Secretary of War ... to go West ... has left for Nashville; external (non-statistical): holder 8898 (5 Feb 1864, Anderson to McCallum,
+"I leave here to day ... Nothing about Devereux") and McCallum's printed report (Anderson appointed at Nashville 10 Feb 1864). E375 -- **D3**: code clause "Your
+wrangle is received Zodiac the Brutus wishes you to keep a very close watch" = your telegram is received; the Secretary of War wishes you to keep a very close watch;
+external: holder 8012 (Baker to Eckert, Baltimore 20 Oct 1865 9.30 AM, "Isaac Surrat arrived in Baltimore on Sunday morning is here still") and 8828 (Sheridan's
+18 Oct warning). Depth sentences (my own): E371 -- "In mid-September 1864 the War Department had the chief quartermaster at Louisville strip a depot colonel of all the
+Government money in his hands." E374 -- "When McCallum took over the western military railroads in February 1864, Stanton kept Devereux on the Virginia lines but let
+Adna Anderson go to Nashville." E375 -- "In October 1865 the War Department, warned that Isaac Surratt had come north, had General Baker keep him under close watch in
+Baltimore."
+
+### 5. Postmortem and fixes for a FIX job (not applied here)
+Failure: MS18-R7 searched the holder with two-term queries ('Devereux McCallum', 'Ferry Allen Louisville funds') that returned 0 where one term finds the sibling
+8898; it let the decoder turn the plain word "watch" into [Surrender]; and it normalised a written spelling (Devrux -> Devereux). Corrections (a verifier does not
+edit ciphertext.txt or reading.md):
+- E371 header: "Colonel Ferry [or Terry, M; capital as the clerk's T]"; "holder transcription" note -> "leaf eye-checked on crops (FV-MS18n)"; drop the reader's
+  link to E352 if added anywhere (E352's Ferry is Harper's Ferry). Leads for the colonel: Kentucky press "affidavit of Colonel Ferry" (Louisville transportation,
+  Capt. Samuel Black, A.Q.M.), "Colonel Ferry, of Michigan" (subsistence).
+- E374 header: add context "Anderson = Adna Anderson (appointed general superintendent at Nashville 10 Feb 1864, McCallum's report); Devereux = J. H. Devereux,
+  superintendent of the Alexandria military railroads; sibling holder 8898 (mssEC 19 p.6, 5 Feb 1864, 'Nothing about Devereux')". ciphertext.txt line 4: the name is
+  written "Devrux"/"Deverux" (eye-checked on crop e374_L02 of IIIF 9673 at 2400 px, FV-MS18n): record as written with a dated note, decoded the same.
+- E375 reading: **watch plain** (per-entry mechanism, no key.md edit); header "[L.?] C. Baker" -> "L. C. Baker [Elsee = L. C., M]", "the man referred to = Isaac
+  Surratt (holder 8012, received 9.30 AM the same day)", context 8828/8830 (Sheridan, 18 and 28 Oct 1865); day word written "Larch"-like, read Harsh = 20 (M shape,
+  header C). Book: No. 1 confirmed by header agreement against No. 2/No. 9/shuffled (s.0).
+- NOTES "## MS18-R7" gaps: "E375 and its sibling 10061/1 ... only the holder search result text was read" -- 8012 now read (item record); 10061/1 ('Sure rat',
+  21 Oct 1865, Siebert for Capt. Gross, New Orleans) remains an unread sibling of the same Isaac Surratt watch, a reader's row. 8898/1 (5 Feb 1864) is an unfiled
+  mssEC 19 row worth filing (body clear, sign-off "Nothing about Devereux").
+- Tools lesson: a holder clear-copy search should run each rare name alone before combining terms (the 'Devereux' single-term query found the sibling the
+  two-term query missed).
+
+Requests: hdl.huntington.org 19 (10 CISOSEARCHALL, 6 item info, 3 IIIF 2400 px), archive.org 9 (3 djvu texts, 6 metadata/advancedsearch), be-api.us.archive.org 7,
+www.loc.gov 3, googleapis.com 6. No 429, no challenge, no retry loop.
+Queued: WORK-QUEUE `AUD2-LEDGER-37` (E371, E374, E375), SO-ECKERT-E371, SO-ECKERT-E374, SO-ECKERT-E375.
