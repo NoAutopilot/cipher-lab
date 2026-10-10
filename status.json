@@ -11755,6 +11755,129 @@
       "depth_sentence": "On 10 November 1864 the Cavalry Bureau's Major Price asked Col. Brackett at St Louis when Pleasonton's and Grierson's cavalry would arrive there and how many serviceable horses were on hand for them.",
       "depth_check": "code clause: Panama = Cavalry, Gaul/Geneva = St Louis, Booby = Cincinnati, Spartan = Horse, Polka = Command, Empress = Nashville; external (non-statistical): OR ser. I vol. 45 pt 1 p.898 (Price expected at Louisville 14 Nov; 'Special Inspector Cavalry'), p.952 (Major Brackett of the Cavalry Bureau; Grierson's men at Saint Louis), p.1001 (Price, assistant inspector general of the Cavalry Bureau); second audit (AUD2-LEDGER-32): Brackett's title Special Inspector of Cavalry printed (Army of the Cumberland, July 1864-Feb 1865)",
       "depth_note": "22 H of 22 code-word groups (Tomama read Panama = Cavalry; Planters, Pleasonton plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-MS18j)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-MS18j verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-MS18j)' section 4",
+      "reading_version": "MS18-R5 9 Oct 2026 (reading.md), grades as in AUDIT (FV-MS18j) s.3 (corrections in s.5 pending a FIX job)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1865 (Washington sent ledger): Townsend for the Secretary of War to Maj. Gen. Hancock, Baltimore, 2 Dec 1865: habeas corpus writs for minors not to be resisted; report the officers who enlisted them (E351)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 2 Dec 1865 the Adjutant General's office told General Hancock at Baltimore, for the Secretary of War, not to resist habeas corpus writs for minors, to defend the cases without counsel unless a special point arose, and to report the officers who had illegally enlisted the discharged minors; not located in print (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-MS18j); most words clear in the holder's public transcription; not N4: Baltimore press Nov-Dec 1865, NARA RG 94/107/393, OR ser. III vol. 5 in a readable text, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGER-34)",
+      "depth": "D3",
+      "completeness": "14 H of 14 code-word groups (rest plain)",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.399, pointer 10065, E351"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.399, pointer 10065, E351",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.399, pointer 10065, E351"
+      ],
+      "depth_sentence": "On 2 Dec 1865 the War Department told Hancock not to resist habeas corpus writs freeing under-age enlistees and to report the officers who had enlisted them.",
+      "depth_check": "code clause: Brutus says the habeas corpus in case of minors / quack the case = defend the case / wick the names of officers = report the names; book test: No. 2 and No. 9 give no sense, only No. 1 reads; external (non-statistical): Townsend signs as asst Barton = Asst. Adjt. Gen., his rank; holder 8012 and 10060-10062 (Bodle is Hancock's cipher operator at Baltimore, Oct 1865)",
+      "depth_note": "14 H of 14 code-word groups (rest plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-MS18j)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-MS18j verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-MS18j)' section 4",
+      "reading_version": "MS18-R5 9 Oct 2026 (reading.md), grades as in AUDIT (FV-MS18j) s.3 (corrections in s.5 pending a FIX job)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 94.4,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger): G. V. Fox to Maj. Gen. B. F. Butler, 7 Oct 1864: the New York Herald's Fort Monroe reporter W. H. Stiner is printing naval movements, 'about all the information the enemy wants' (E355)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 7 Oct 1864 Assistant Secretary of the Navy G. V. Fox complained to General Butler that the New York Herald's Fort Monroe reporter William H. Stiner was printing naval movements, 'about all the information the enemy wants'; Butler's rebuke to Stiner of 9 Oct is printed in his Correspondence vol. 5 p.245; the telegram was not located in print (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-MS18j); not N4: Confidential Correspondence of G. V. Fox and Fox's papers, the New York Herald of 6 Oct 1864, Butler papers (LoC), HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGER-34)",
+      "depth": "D3",
+      "completeness": "17 H + 1 M (time word) of 18 code-word groups (rest plain)",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.197, pointer 9863, E355"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.197, pointer 9863, E355",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.197, pointer 9863, E355"
+      ],
+      "depth_sentence": "On 7 Oct 1864 Fox asked Butler to stop a New York Herald reporter at Fort Monroe from publishing naval movements, and two days later Butler forbade it.",
+      "depth_check": "code clause: Knox zebra Sligo France Herald torch plague = Maj. Gen. Butler. In the New York Herald of the 6th; external (non-statistical): Butler to Stiner, 9 Oct 1864, Private and Official Correspondence of Gen. B. F. Butler vol. 5 p.245 ('Your reports in the Herald on the 6th of activity in the Navy at Fort Monroe')",
+      "depth_note": "17 H + 1 M (time word) of 18 code-word groups (rest plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-MS18j)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-MS18j verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-MS18j)' section 4",
+      "reading_version": "MS18-R5 9 Oct 2026 (reading.md), grades as in AUDIT (FV-MS18j) s.3 (corrections in s.5 pending a FIX job)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger): G. V. Fox to Col. H. S. Olcott, New York, 3 May 1864: the discharged Boston witness to be brought back; Goodman to report for the Boston and New York Navy Yard cases (E356)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 3 May 1864 Fox told Col. Olcott that the Boston commandant was ordered to bring back a discharged witness and that the former judge advocate Goodman would report to him and Wilson so the Boston and New York Navy Yard cases could go forward; not located in print (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-MS18j); not N4: Fox's Confidential Correspondence and papers, Olcott's printed Navy Yard fraud reports, Boston and New York press May 1864, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGER-34)",
+      "depth": "D3",
+      "completeness": "12 H of 12 code-word groups (rest plain)",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.63, pointer 9729, E356"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.63, pointer 9729, E356",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.63, pointer 9729, E356"
+      ],
+      "depth_sentence": "On 3 May 1864 Fox answered the alarm over a Boston Navy Yard witness discharged for testifying by ordering the witness brought back and sending Goodman to help press the Navy Yard fraud cases.",
+      "depth_check": "code clause: for Paradise Ol = cott Frog = for Colonel Olcott, New York; Pebble = 3 = the header's date; external (non-statistical): holder 10297 (Wilson to Fox, New York, 3 May 1864 6.30 p.m.: witness Cluer discharged at Boston, 'something should be done immediately'), the message E356 answers",
+      "depth_note": "12 H of 12 code-word groups (rest plain)"
     }
   ],
   "lanes": [

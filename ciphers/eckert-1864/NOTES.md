@@ -4273,3 +4273,28 @@ Read so far: E357 and E359 audited (E359 N1 by print on the page image; E357 N3 
 - [x] image-check: both entries eye-checked on line crops.
 - [x] retry: be-api 502 once retried; archive.org page map 500 not retried.
 Verdict: keep going: 3 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18k) s.5, ~$1
+
+## FV-MS18j (10 Oct 2026, account 1, for LANE LEDGER)
+First verifier of E351, E355, E356 (AUDIT.md "## AUDIT (FV-MS18j)"). All three **N3 D3**, key `period`, telegrams not located in print. **E355** reads in
+full: Knox = Maj Gen B. F. Butler and "Sligo France Herald torch plague" = "In the New York Herald of the 6"; Fox complained to Butler of the Herald's Fort
+Monroe reporter W. H. Stiner, and Butler's rebuke to Stiner of 9 Oct 1864 is printed in his *Correspondence* vol. 5 p.245 (read on the IA leaf n254; the page
+map is one leaf off). **E356** answers the holder's received 10297 (Wilson to Fox, New York, 3 May 1864: the Boston witness Cluer discharged). **E351**: the
+book test reads only No. 1 by sense (No. 2 and No. 9 give none); the date word "flank" is plank = 2. Decoder slips: Herald = Ewell, Fox = Philadelphia (twice),
+Wilson = West applied to clear names; E356 line 2 omits "ordered to" in the transcription. MS18-R5's unopened holder hits opened: none a copy of E351, E355,
+E356, E357 or E359. `AUD2-LEDGER-34` and SO-ECKERT-E351/E355/E356 queued. Fixes in AUDIT s.5, not applied here.
+
+## Remaining gaps (FV-MS18j, 10 Oct 2026)
+Read so far: E351, E355, E356 audited (N3 D3 each); all three ledger pages eye-checked on line crops at 2400 px.
+- E351, E355, E356 second audit and the unsearched families (Fox Confidential Correspondence and papers, Olcott reports, NY Herald 6 Oct 1864, Baltimore/Boston press, OR ser. III vols 4-5 readable text, HathiTrust, JSTOR) - blocker: waiting-on the answer of the VERIFY lane to WORK-QUEUE.tsv row AUD2-LEDGER-34; a second audit is a separate session (rule 10)
+- the transcription and reading fixes of AUDIT (FV-MS18j) s.5 (plank, Herald, Fox, Wilson, "ordered to", E355 header) - blocker: not-attempted; a verifier does not edit ciphertext.txt or reading.md; next: a FIX job, ~$1
+- E355 time word Rosalie = 9 PM vs header 8 pm, as a HYPOTHESES.md row - blocker: not-attempted; key questions belong to the KEY lane; next: a KEY job beside the Deborah/Viola notes, ~$0.5
+
+## Escalation (FV-MS18j, 10 Oct 2026)
+- [x] siblings: 10297 and 8911 (Olcott/Wilson/Horner, 1864), 8012 and 10060-10062 (Bodle for Hancock, Oct 1865) read; 10419, 7943, 4514 opened (other telegrams).
+- [x] clear-pages: all-pointer CISOSEARCHALL on 11 queries (positive controls hit all three own pages) + 10 item reads, no clear copy.
+- [x] known-keys: key.md rows checked for every graded token; E351 book test against No. 2 and No. 9 (only No. 1 reads).
+- [x] print: Butler V p.245 found and read on the page image (E355's effect); E351, E355, E356 telegrams not located.
+- [n/a] key-rebuild: no key row edited; slips listed in AUDIT s.5.
+- [x] image-check: all three entries eye-checked on line crops.
+- [x] retry: none needed (two archive.org texts 403/503, replaced by other copies; not retried).
+Verdict: keep going: 2 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18j) s.5, ~$1

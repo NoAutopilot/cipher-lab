@@ -12946,3 +12946,144 @@ telegram; the same "wrong or missing volume" shape as E343/E352. Corrections (a 
 Requests: hdl.huntington.org 17 (8 CISOSEARCHALL, 7 item info, 2 IIIF 2400 px), all 200; archive.org 9 (4 djvu texts, 3 page_numbers -- 2 x 200, 1 x 500
 not retried -- 2 page images), be-api.us.archive.org 10 (8 answered, 1 x 502 retried once and answered, 1 x 502 not retried). Queued: WORK-QUEUE
 `AUD2-LEDGER-35` (E357), SO-ECKERT-E357.
+
+## AUDIT (FV-MS18j)
+
+Verifier FV-MS18j (account 1, for LANE LEDGER), 9-10 Oct 2026, 23:52-00:2x UTC by `date -u`; a separate session from the reader MS18-R5, not protecting
+its conclusions. Scope: first audits of **E351, E355, E356** (NOTES "## MS18-R5"; ciphertext.txt, Cipher No. 1, Washington sent ledger mssEC 18 = Huntington
+object 10074). Nothing decoded beyond key look-ups in key.md, key-no2.md, key-no9.md. Key source for all three: `period`. No spec exists for eckert-1864, so
+`judge_plaintext.py` was not run. Intake gate (23:5x): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+Prior work (`tools/prior_work.py eckert-1864 --item-spec 'item_id=E355;ptr=9863' --step-type audit --offline`): exit 4, verdict step LEAD, the LEADs
+own-work lines of this lane (MS18-R5, this session's claim), none an earlier audit of these entries. Scripts: `ms18/fv_ms18j_hdl.py` (+ `fv_ms18j_hdl.out`,
+`fv_ms18j_info2.out`), `ms18/fv_ms18j_gb.py` (+ `.out`).
+
+### 0. What the reader missed
+- **E355:** the opening the reader left M ("Rosalie postpone Knox zebra Sligo France Herald torch plague") reads at once with the book: Rosalie = 9 PM,
+  postpone = 7, **Knox = Maj Gen B. F. Butler** (key p.16 l.27, a hand-added line), zebra = period, **Sligo France Herald torch plague = "In the New York
+  Herald of the 6"**. The decoder applied the key row Herald = Ewell to a clear word ("Herald" is the newspaper) and Fox = Philadelphia to the signer's clear
+  name ("G V Fox asst Buxton" = G. V. Fox, Asst. Secretary of the Navy). "Ewell under stand" is not the general: it is the clerk's phonetic **"you'll
+  understand"** (the "tooth" = to the shape). The reader's "the decoder's Butler comes out of the shuffled copy equally" is a count-control remark; by sense
+  and by print (s.2) the addressee is Butler.
+- **E356:** "Wilson" is clear (the person who signed the telegram E356 answers, holder 10297, s.2); the decoder applied the key row Wilson = West. "Fox" is the
+  signer's name, not Fox = Philadelphia (as E355). The transcription drops two words in line 2 (s.1).
+- **E351:** the date word "flank" is the clerk's lowercase p: **plank = Plank = 2** (= the header's Dec 2); the decoder left it plain.
+
+### 1. Duplicates and image (own entry, IIIF 2400 px, line crops of every line via `tools/iiif_lines.py --image`)
+- **Duplicate diff:** the three pointers occur only in their own headers and the MS18-R5 notes; mssEC 19 (`entries-mssEC19.tsv`, grepped by date and by
+  Stiner/Olcott/Goodman/minors/habeas/Bodle/Herald/Hancock) has on 3 May 1864 only 8956 (Beckwith; Capt Sam), on 2 Dec 1865 only 9294 (Seiberg, Condon, Cairo
+  operator), and nothing on 7 Oct 1864 or naming these correspondents. **No duplicate.**
+- **E351 (10065, p.399):** transcription matches line by line, except the date word: "flank" is, to my eye, **"plank"** with the same looped lowercase p as
+  "possible", "peculiar point" two lines below (key Plank = 2; the header Dec 2). No label on the entry ("No 6 card" heads the entry above). Signature
+  "youth Ed Town send asst Barton end".
+- **E355 (9863, p.197):** matches line by line ("Herald torch" written run together; "commences" squeezed at the line end; "Wm H Stiner", the print's William
+  H.). Header hour "8 pm" against the time word Rosalie = 9 PM: a conflict, recorded, not settled (rule 4).
+- **E356 (9729, p.63):** line 2 reads **"Comm - and ant at Boston ordered to bring back any"**; the transcription has "Boston bring back" and omits
+  "ordered to" (a two-word omission; the header already reads "ordered"). Otherwise matches, including "Ol = cott", "Good man", "Wilson", "France Navy Yards",
+  "Yoke Fox Asst Buxton boy". Header hour "1025 Pm" against Reliance = 10.30 PM (the time words run on the half hour: consistent).
+
+### 2. Holder's full text, siblings and print
+**Huntington CONTENTdm** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; one hdl take 23:59-00:0x UTC, 24 requests, all 200: 11 queries,
+10 item records, 3 page images). Positive controls: 'activity navy arrival vessels' and 'Stiner' hit 9863 (E355's own page), 'Goodman Judge Advocate' and 'Navy
+Yards witness' hit 9729 (E356's own page), 'habeas corpus minors' hit 10065 (E351's own page). Zero: 'minors discharged illegally' (the page splits "ill
+legally"), 'Herald reporter Monroe' (code words between), 'northern reader' ("tremble ern reader" on the page: non-test), 'Olcott Goodman' ("Ol = cott": non-
+test), 'Hancock minors' ("Hand cock": non-test). 'Bodle' 5: 10060, 10061, 10062, 10065, 8012. Item records read:
+- **10297 (received, New York, 3 May 1864, 6.30 p.m., "for Fox asst Secy Navy Wash", signed Wilson):** "Col Alcott has just received the following dispatch
+  'Boston third may decapitation commenced Cluer one of our witness discharged today reason no longer need of his service doubtless on account of giving
+  testimony here strong feeling in yard against us something should be done immediately or all best witnesses will be discharged for testifying (signed) M A
+  Clancey' you see that there is necessity for immediately action. My time is entirely engaged by the court martial and in the preparation of cases that I
+  cannot undertake the investigation in the Boston affairs unless something is done at once ... some person be employed to go at once signed Wilson".
+  **E356 (3 May 1864, 10.25 p.m.) is the answer**: the discharged witness brought back, Goodman sent "to report to you and Wilson so you can go forward at once
+  on the cases in Boston". An independent witness of the same day, not a copy.
+- 8911 (sent, 10 Mar 1864, to John Horner for H. S. Olcott, Special Commissioner Navy Dept, 35 Gramercy Place): an earlier Fox-Olcott telegram through the same
+  operator (Horner is the New York operator, Olcott the commissioner), not a copy.
+- 8012 (received, Baltimore, 20 Oct 1865, W. J. Bodle to D. H. Bates: "Genl. Hancock wants cipher at Balto"); 10060-10062 (sent, Oct 1865, to Bodle for
+  Hancock: Townsend and L. C. Baker telegrams): **context for E351** (Bodle is Hancock's cipher operator at Baltimore in late 1865), not copies.
+- MS18-R5's other unopened hits: 7898, 7917, 7976-7978, 8791 were read by FV-MS18i (AUDIT (FV-MS18i) s.2). 10419 (Van Duzer, Big Shanty, 15 June 1864),
+  7943 (New Orleans, 5 June 1865, Kirby Smith's surrender, to Rawlins), 4514 (Grant, Culpeper, 7 Apr 1864, Burnside at Annapolis): other telegrams, not copies
+  of E351, E355, E356, E357 or E359.
+
+**Print** (archive.org djvu texts; page images read for every print cited):
+- **E355 -> the telegram not located; its effect is printed.** *Private and Official Correspondence of Gen. Benjamin F. Butler* vol. 5 (1917, IA
+  `privateofficialc05butl`, cached) **p.245** (leaf n254; the `_page_numbers.json` map gives n255, which is p.246 on the image): "From General Butler. Hd. Qrs.
+  Army James, Oct. 9th, 1864, 9.30 a.m. WILLIAM H. STINER, Herald Correspondent, Fort Monroe. YOUR reports in the Herald on the 6th of activity in the Navy at
+  Fort Monroe, of the arrival and departure of Naval Officers, is calculated to give information to the enemy, and it must never occur again. BENJ. F.
+  BUTLER, Maj. Gen'l. Comd'g." This is Butler acting on Fox's 7 Oct telegram: it fixes the addressee (Knox = Butler), the paper and day ("Herald of the 6",
+  clear word + plague = 6), the reporter's full name and the substance; it is a different text, not a print of E355. Fox's telegram itself is not in Butler
+  V (grep 'Fox' 1864: Butler to Fox 7-11 Aug and 10 Oct, Fox to Butler 11 Nov, nothing 7-8 Oct), not in ORN ser. I vol. 10 (cached `officialrecordso0010unse`;
+  'Stiner', 'northern reader', 'written accounts' 0), ORN I/9 (cached; 0), OR I/42 pt 3 (`warofrebellion423unit`, fetched; 'Stiner' 0, Fox items only 21 Oct-
+  10 Dec). The New York Herald of 6 Oct 1864 is not in Chronicling America (a loc.gov query for 6 Oct 1864 'Fortress Monroe' returns the Tribune, Star,
+  National Republican, not the Herald; 'Stiner Fortress Monroe' 5-12 Oct: 0); not read.
+- **E356 -> not located.** OR I/42 pt 3; ser. II vol. 8 (`warofrebellion0208rootrich`, fetched: 'Goodman' only Capt. Charles / J. M. Goodman, quartermasters
+  at Camp Douglas and Salisbury); ser. III vol. 4 not searched in effect (`waroftherebellio026242mbp`, titled ser. III vol. IV, is a ser. II prisoners text;
+  `warofrebellion0304rootrich` 403); Butler IV-V ('Olcott' only Dec 1864, the Strout case); ORN I/9-10: no Olcott-Goodman-Navy Yard telegram of May 1864.
+- **E351 -> not located.** OR ser. I ends before Dec 1865. OR ser. III vol. 5 (`in.ernet.dli.2015.165571`, a DLI scan whose OCR is mostly unreadable: a non-
+  test), ser. II vol. 8 ('minors' near 'habeas' 0).
+- **G3 / full text** (Google Books, `country=US`, key, 7 queries; IA be-api, 3 queries; `fv_ms18j_gb.out`): '"Stiner" "Herald" Fox "Fortress Monroe" 1864' 1
+  (unrelated); '"Goodman" "late Judge Advocate" Olcott' 21, none this; '"habeas corpus in case of minors"' 1 (an 1823 Massachusetts index); '"by whom the
+  minors" "illegally enlisted"' legal digests, none this; 'Cluer witness discharged Boston navy yard Olcott 1864' 0; the two long exact phrases ('of what use is
+  it to the northern reader', 'bring back any witness discharged') were matched loosely by the API (5467, 289 results), noise: non-tests. be-api: 'Stiner' +
+  'northern reader' 8, 'Goodman' 'Olcott' 'navy yard' 1864 10 (one a Navy appropriation naming assistants to Colonel Olcott), 'habeas corpus' minors Hancock
+  Baltimore 1865 10 (Hancock and the habeas corpus in the Surratt case, not this): none this telegram.
+- Not searched: Fox's papers and *Confidential Correspondence of Gustavus Vasa Fox* (1918-19) for E355 and E356; Olcott's reports on the Navy Yard frauds
+  (House/Senate documents 1864-65, the Smith brothers court martial record) and the Boston press of May 1864 for E356; the Baltimore Sun and American of Dec
+  1865, Hancock's Middle Department letters, NARA RG 94/107 for E351; HathiTrust; JSTOR; the New York Herald of 6 Oct 1864.
+
+### 3. Grades and reading corrections (reading.md as of this audit)
+- **E351:** Grapes = Washington (blind), **plank = 2** (H; the decoder left "flank" plain), Helen = 2 PM, Shelby = General, Zebra / Zodiac x3 / unity =
+  periods, Brutus = Secretary of War, quack = Defense -> "Defend the case", wick = Report, youth = Signature, Barton = Adjt Genl. U.S. ("Ed Townsend asst
+  Barton" = Asst. Adjt. Gen., Townsend's rank): **H 14 of 14** code groups (decoder H 13 + plank). Book test (the brief's ask; HEAD share tied No. 1 .29 /
+  No. 2 .29): No. 2 gives Grapes = Maj Gen Butler, Shelby = Harbor, Zebra = 1000, Zodiac = Sunday, Brutus = Delaware, Quack = Destroy, Wick = South, Youth =
+  Saturday, Barton = Secretary of War ("the Delaware says the habeas corpus", "Sunday South the names of officers", "Ed Townsend asst Secretary of War",
+  wrong for Townsend): no sense; No. 9 keys only Helen (= 3 PM) of these words. **No. 1 alone reads**, by sense, not by the share.
+- **E355:** Rosalie = 9 PM (**M**: header 8 pm), postpone = 7, Knox = Maj Gen B. F. Butler, zebra, Sligo = In the, France = New York, **Herald clear** (not
+  Herald = Ewell; C by print, Butler V p.245), torch = Of the, plague = 6, wicker = Report(-er), Animal = Monroe, white = Report, stephen = In the, zodiac,
+  Sweden = Information, rome = Enemy, tremble = North, walrus = Signature, **Fox clear** (not Fox = Philadelphia), Buxton = Secretary of Navy; "Ewell under
+  stand" = you'll understand (phonetic, graded nothing). **H 17 + M 1** of 18 code groups. Reading: "[9 PM] [7] [Maj Gen B. F. Butler]. In the New York
+  Herald of the 6th, Wm H. Stiner, reporter at [Fort] Monroe, commences to report activity in the navy, arrival of vessels and so forth. You'll understand very
+  readily that these written accounts of such a character are about all the information the enemy wants. Of what use is it to the northern reader? [signed] G.
+  V. Fox, Asst. Secretary of the Navy."
+- **E356:** Growl = Washington, Pebble = 3, Reliance = 10.30 PM, Paradise = Colonel ("for Colonel Olcott"), Frog = New York, Zebra / zodiac / unity = periods,
+  France = New York, Yoke = Signature, Buxton = Secretary of Navy: **H 12 of 12** code groups. **"Wilson" clear** (not Wilson = West; C by holder 10297,
+  "signed Wilson"); **"Fox" clear** (signer). Transcription: add "ordered to" in line 2. "boy" filler.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | class | key | depth | % code groups H/C/S | basis | safe sentence |
+|---|---|---|---|---|---|---|
+| E351 Townsend for the Secretary of War to Maj. Gen. Hancock (via Bodle), Baltimore, 2 Dec 1865 | **N3** | period | D3 | 100 (14 H; rest plain) | not located: OR ser. II vol. 8, ser. III vol. 5 (OCR a non-test), holder full text, Google Books, IA full text; book test: only No. 1 reads | "Read at grade H with War Department Cipher No. 1: on 2 Dec 1865 the Adjutant General's office told General Hancock at Baltimore, for the Secretary of War, not to resist habeas corpus writs for minors, to defend the cases without counsel unless a special point arose, and to report the officers who had illegally enlisted the discharged minors; not located in print (searched 10 Oct 2026)." |
+| E355 Fox to Maj. Gen. B. F. Butler, 7 Oct 1864 | **N3** | period | D3 | 94 (17 H + 1 M time word) | the telegram not located (Butler V, ORN I/9-10, OR I/42 pt 3, Google Books, IA, holder); Butler's own letter of 9 Oct to Stiner (Butler V p.245) prints its effect | "Read at grade H with War Department Cipher No. 1: on 7 Oct 1864 Assistant Secretary of the Navy G. V. Fox complained to General Butler that the New York Herald's Fort Monroe reporter William H. Stiner was printing naval movements, 'about all the information the enemy wants'; Butler's rebuke to Stiner of 9 Oct is printed in his Correspondence vol. 5 p.245; the telegram was not located in print (searched 10 Oct 2026)." |
+| E356 Fox to Col. H. S. Olcott (via Horner), New York, 3 May 1864 | **N3** | period | D3 | 100 (12 H; rest plain) | not located: OR I/42 pt 3, ser. II vol. 8, Butler IV-V, ORN I/9-10, Google Books, IA, holder; the holder's received 10297 is the message it answers | "Read at grade H with War Department Cipher No. 1: on 3 May 1864 Fox told Col. Olcott that the Boston commandant was ordered to bring back a discharged witness and that the former judge advocate Goodman would report to him and Wilson so the Boston and New York Navy Yard cases could go forward; not located in print (searched 10 Oct 2026)." |
+
+Not N4 for any: Fox's papers and *Confidential Correspondence*, Olcott's printed reports, the Baltimore / Boston / New York press of the days, HathiTrust, JSTOR,
+and OR ser. III vols 4-5 in a readable text are unsearched. Unsafe for all three: "first", "new", "unpublished", "never printed". Depth checks (D3: >=80% of code
+groups H/C/S, gaps none or one time word, an external non-statistical check): E351 -- code clause "Brutus says the hay be us corpus in case of minors" /
+"quack the case" / "wick the names of officers", the book test (No. 2, No. 9 give no sense); external: Townsend's rank as signed (asst Barton = Asst. Adjt.
+Gen.) and the holder's 8012, 10060-10062 (Bodle is Hancock's cipher operator at Baltimore, Oct 1865). E355 -- code clause "Knox zebra Sligo France Herald
+torch plague" = Maj. Gen. Butler. In the New York Herald of the 6th; external: Butler V p.245 (Butler to Stiner, 9 Oct 1864, "Your reports in the Herald on
+the 6th of activity in the Navy at Fort Monroe"). E356 -- code clause "for Paradise Ol = cott Frog" = for Colonel Olcott, New York, Pebble = 3 = the header's
+date; external: holder 10297 (Wilson to Fox, New York, 3 May 1864 6.30 p.m., the discharged Boston witness Cluer, "something should be done immediately").
+Depth sentences (my own): E351 -- "On 2 Dec 1865 the War Department told Hancock not to resist habeas corpus writs freeing under-age enlistees and to report
+the officers who had enlisted them." E355 -- "On 7 Oct 1864 Fox asked Butler to stop a New York Herald reporter at Fort Monroe from publishing naval
+movements, and two days later Butler forbade it." E356 -- "On 3 May 1864 Fox answered the alarm over a Boston Navy Yard witness discharged for testifying by
+ordering the witness brought back and sending Goodman to help press the Navy Yard fraud cases."
+
+### 5. Postmortem and fixes for a FIX job (not applied here)
+Failure: MS18-R5 left E355's addressee and opening M though the key reads them (Knox = Butler; "In the New York Herald of the 6"), and accepted three clear
+words through key rows (Herald = Ewell, Fox = Philadelphia twice, Wilson = West) -- the Negro/Reward shape of AUDIT (FV-MS18i) s.5 again, now on proper names.
+Corrections (a verifier does not edit ciphertext.txt or reading.md):
+- E351: transcription note "flank" = plank (clerk's lowercase p); reading **plank = Plank = 2** (H, date Dec 2). Header: signer "Townsend, Asst. Adjt. Gen."
+  (Barton = Adjt Genl.); "not located" stands. Grades H 14.
+- E355 header: addressee **Maj. Gen. B. F. Butler** (Knox; operator O'Brien); "[the addressee's] Wm H. Stiner" -> "In the New York Herald of the 6th, Wm H.
+  Stiner"; "[we] understand" -> "you'll understand" ("Ewell", phonetic); signed G. V. Fox, Asst. Secretary of the Navy; time note (Rosalie 9 PM vs header 8
+  pm, M); context "Butler to Stiner, 9 Oct 1864, Butler Correspondence V p.245". Reading, per-entry mechanism (no key.md edit): **Herald plain, not Herald =
+  Ewell; Fox plain, not Fox = Philadelphia**. Grades H 17 + M 1.
+- E356: ciphertext line 2 **insert "ordered to"** after "Boston" (image); reading: **Wilson plain, not Wilson = West; Fox plain**. Header: "Wilson" = the
+  sender of holder 10297 (New York, 3 May 1864); context note 10297 (witness Cluer discharged at Boston). Grades H 12.
+- Decoder lesson, third time (E352 Negro, E353 Reward, now Herald, Fox, Wilson): a KEY/tools job could flag every applied key row whose token is a proper
+  name or common word that also reads in clear (a signer's name after "Yoke"/"walrus", a newspaper name, a correspondent of the same day in the holder's
+  received file); not a key edit.
+- NOTES "## MS18-R5": "Not located ... E351, E355, E356" stands for the telegrams; add Butler V p.245 (E355's effect) and holder 10297 (E356's prompt).
+- Tool lesson: IA `_page_numbers.json` for `privateofficialc05butl` is one leaf off at p.245 (n255 is p.246); read the head on the leaf.
+
+Requests: hdl.huntington.org 24 (11 CISOSEARCHALL, 10 item info, 3 IIIF 2400 px), all 200; archive.org 13 (5 djvu texts of which 1 403 and 1 503, 2 metadata,
+1 advancedsearch, 1 page_numbers, 2 page images); googleapis.com 7; be-api.us.archive.org 3; loc.gov 2 (+1 chroniclingamerica.loc.gov, 308 redirect).
+Queued: WORK-QUEUE `AUD2-LEDGER-34` (E351, E355, E356), SO-ECKERT-E351, SO-ECKERT-E355, SO-ECKERT-E356.
