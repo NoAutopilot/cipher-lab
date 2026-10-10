@@ -20733,3 +20733,94 @@ N4 or N1. Like FV-L17a, this session ran the prior-work tool after its first net
   to 1865 on the leaf (AUD2-LEDGER17-1)"; header "(read from the transcription, no image)" -> image-read by FV-L17a and AUD2-LEDGER17-1.
 - Requests this session: hdl.huntington.org 29 (one dropped connection, re-fetched once; rest 200); be-api 10 (6 x 502, of which 2 after one retry);
   googleapis 2 (both 429); archive.org 0.
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER17-3)
+
+Second verifier AUD2-LEDGER17-3 (owner account, Opus 5.5, for the orchestrator (owner account) and LANE LEDGER-17 (account 1), WORK-QUEUE row
+AUD2-LEDGER17-3), 10 Oct 2026, 18:41-19:1x UTC by `date -u`; a separate session from the readers FM-UND and FM-UND2 and the first verifier FV-L17c,
+not protecting their conclusions. Scope: **E622** (5614 l.21-5616/0, 20 Apr 1864) and **E623** (5656/0 tel 1, 5 May 1864), first audit "## AUDIT
+(FV-L17c)". Nothing decoded; key look-ups in key.md only. Key source: `period` (War Department Cipher No. 1). Step 0 not used (non-test on mssEC 25).
+No spec, so `judge_plaintext.py` was not run. Scripts and raw output (committed, `fortmonroe/`): `aud2_l17_3_hdl.args` (the env queries passed to
+FV-L17c's `fv_l17c_hdl.py`, reused unchanged) + `aud2_l17_3_hdl.out`, `aud2_l17_3_hdl2.out`; `aud2_l17_3_ia.py` (+ `.out`); `aud2_l17_3_beapi.py`
+(+ `.out`), `aud2_l17_3_beapi2.out`; `aud2_l17_3_loc.py` (+ `.out`).
+
+### 1. Prior work (prior-work-step.md, civil-war adapter)
+`tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=5614|5656;date=..;sender=..;recipient=..' --step-type second-audit
+--offline` (18:42, before the first request), both: verdict step LEAD (exit 4) on three target-level live claims (CLEAR-SWEEP 13:25, FIX-L17a 16:50,
+OR-CACHE2 16:51), all finished workers of LANE LEDGER-17/-14 whose work does not cover a second audit of these rows: CLEAR. 4-editions CLEAR in the
+1864 OR parts on disk; UNCHECKED-NET = `warofrebellion014702rootrich` (OR I/47 pt 2, 1865, not relevant to Apr-May 1864) and the aaymeloglu repository
+(no cache). The tool's write to prior-work.tsv was reverted (not this job's file). **The own-work grep that matters was not in the tool's reach:
+AUDIT.md "## AUDIT (FV-FM9e)" s.2 (8-9 Oct 2026) already names pointer 10299 as "the clear copy of the sibling 5656"** (s.2 below).
+
+### 2. Families added by this audit
+| Family | Result |
+|---|---|
+| Huntington CONTENTdm full text (one hdl take 18:5x-19:0x; control 'Inspector difficulty Evidence Nashville' -> 9678; 18 fresh queries, none of FM-UND's, FM-UND2's or FV-L17c's; every hit's text printed and read) | **E623: 'Davenport Lieut' -> 10299 (Page 157), the holder's clear copy of E623** (s.3). E622: 'Highland light' 7, 'Kingston Portsmouth Jefferson' 3, 'Rockland Winona Wyoming' 3, 'management fleet' 3, 'change their destination' 1, 'Vliets list' 1, 'Attica Appian animal' 7: only the cipher copies 5614-5616 and 9712-9713 (mssEC 18), Wise's clear telegram 4546 (the list's source, known), 5612/8935 (Wise's earlier list, other), 5630/10267 (Biggs to Meigs 24 Apr, steamers reported at Monroe, cipher and clear: a sequel, not a copy) and **9711** (mssEC 18, a Meigs cipher message: "As soon as Vulcan wise completes his work in merlin he should hasten to hammock to assist Vesper Biggs in management of this fleet sig Aragon hannah": another Meigs order on the same fleet, unfiled, a lead for a reader); 'assemble Potomac' 0, 'Chesapeake city escort' 0. **No clear copy of E622's relay at any pointer.** One query ('Vliet list not yet') dropped its connection and was not retried (it repeats 'Vliets list'). |
+| Image (IIIF 5615, 5616, 5656 at 2400 px this session) | **5615: one "Mandate"** at the end of the row "tons plague wine spit / Zebra Pioneer plank prolong / Mandate", next row "plague tons plaster William": FV-L17c's fix stands, Pioneer = 2 x 100 + 50 + 6 = 256 (print 256; mssEC 18 copy 9712 also has one "mandate"). **5616 last line: "yoke meigs Bender translate - Pekin & pedlar every time"**, "pedlar" present: FV-L17c's fix stands. 5656 matches the transcription. |
+| OR ser. I parts on disk (grep 'Chesapeake City', 'Colonel Biggs', 'Herman Biggs', 'Lieut. Col. H. Biggs' with an April/fleet/vessel context; OR I/33 by date 19-21 Apr) | Meigs-to-Biggs telegrams are printed for 5 Apr (OR I/35 pt 2), 23 May (I/36 pt 3), 11 and 15 June (I/36 pt 3, I/40 pt 2), **none for 20 Apr**; OR I/33 prints Meigs's 16 Apr order to Wise ("Take up any suitable vessels in Baltimore ... Telegraph daily progress") and Wise's 19 Apr list (p.915), not the relay. |
+| OR ser. II vol. 7 (on disk, `warofrebellion0207rootrich`, Apr-Dec 1864; title page read: SERIES II-VOLUME VII) | 'Shore' 26 hits, none W. W. Shore (a Dr. John Shore of St. Louis, and shore/coast); 'New York World' / 'correspondent of the World' 0. |
+| OR ser. III vol. 4 | **Not reached in full.** IA `waroftherebellio026242mbp`, catalogued "SERIES III VOL IV", is **OR ser. II vol. 4** by its own title page ("SERIES II-VOLUME IV", 1862 prisoners): a mislabel, logged so nobody uses it for III/4. The DLI copies `in.ernet.dli.2015.165578` / `155283` answer 404/500 on `_djvu.txt`; be-api inside 165578 (control 'Quartermaster-General' hit, Quartermaster's Department text; title page not read, so the volume is by IA metadata only): 'Van Vliet' 0, 'Chesapeake City' 0; 155283 'Chesapeake City' 0 with no control (502). A weak negative. |
+| The Papers of Ulysses S. Grant vol. 10 (IA `papersofulyssess0010gran`, be-api inside, control 'Fort Monroe' hit) | 'Chesapeake City' 0, 'Captain Wise' 0, 'Biggs' 0; 'Van Vliet' 1 = Lt. Frederick Van Vliet, Burnside's aide (other); 'canal barges' = St. Louis and James River Canal (other). |
+| IA be-api, whole collection | 'Van Vliet chartered vessels expedition Fort Monroe April 1864 Wise Meigs' 0 (after one 502 and retry); the E623 queries ('Shore correspondent World Butler arrested Baltimore Wallace', 'Davenport Bureau of Information Butler Shore', '"W. W. Shore"', 'Butler ordered out of the department correspondent World 1864 Shore') are in `aud2_l17_3_beapi.out`; they no longer bear on the class (s.3). |
+| Press of the day (Chronicling America, loc.gov JSON; control 'Butler' May 1864: 2,111 pages) | The loc.gov keyword search does not honour quoted phrases ('"W. W. Shore"' -> 48,268 pages); the one narrow hit, '"Shore, the correspondent"' -> St. Cloud Democrat 12 May 1864 p.2, read in OCR: a column-mash false hit ("shores" and a "Correspondent" in adjacent columns). Stopped there (8 requests). The New York World of May 1864 is not in Chronicling America. |
+| JSTOR | 2 rows appended to JSTOR-QUEUE.tsv for E622 (family i: names/date ANDed; family ii: a bare quoted phrase). They never block a class. |
+| Not reached | OR ser. III vol. 4 by title-verified text; NARA RG 92 (Meigs's letters sent) and RG 107; Google Books (not tried: 429 on this egress since 17:3x, FV-L17b 18:10). |
+
+### 3. E623: a holder clear copy exists (pointer 10299)
+Holder record 10299 (Page 157 of the Washington clear telegram book that holds 10291), read in full (dmGetItemInfo, holder's transcription):
+"810 AM 6th Ft Monroe May 6 1864 Ft Monroe May 5th 1230 PM for Gen S Wallace Batts ---- W. W short is in Baltimore somewhere he was some time ago
+ordered out of this Dept ---- I want him caught and arrested and sent to me under guard . Have the evidence against him . he is the correspondent of
+the World from Baltimore as he was from here ---- the general telegraphed you three days ago to arrest him since which we have heard nothing ---- I
+presume you did not get the dispatch ---- Can send you if necessary a man who knows him (sig) Jno I Davenport Lieut Office Bureau of Information".
+**Same telegram, clause for clause**: date and time (Appian May fifth viola = Ft Monroe May 5th 12.30 PM), addressee (season = Gen. Wallace,
+"Batts" the holder's reading of Balto), baptism = Baltimore, oakumed = arrested, wrangled = telegraphed, Sweden = Information, webster = stop, and the
+signature **Lt. John I. Davenport, Office of the Bureau of Information** (the sender; Sheldon is the Fort Monroe operator who wrote the cipher copy).
+This record was already on file: AUDIT (FV-FM9e) s.2 (pointer 10299, "the clear copy of the sibling 5656"); FM-UND's three holder queries, FM-UND2 and
+FV-L17c's eleven did not reach it, and nobody grepped AUDIT.md for 10299 or 5656 before reading. Under the Wave 2 RULING (i) **E623 is N1 and not filed**;
+every code group is C from the clear copy. FV-L17c's s.3 readings (season = Lew Wallace; the World, plain; webster = stop; John I. Davenport plain, not
+"[signed] [Grant]") are all confirmed by it.
+
+### 4. E622: checked
+- **Classes.** No clear copy of the relay at any pointer (18 fresh queries + FV-L17c's 11); not in OR ser. I for 19-21 Apr, not in Grant Papers 10,
+  not in OR II/7; OR III/4 reached only weakly (s.2). FV-L17c's split stands: **relay (head and close) N3, vessel list N2** (OR I/33 p.915 and holder
+  4546-4548, Wise to Meigs 19 Apr).
+- **Numeral diff, re-run here** from the reading against OR I/33 p.915 on disk: all 17 side-wheelers' tons and men agree once Pioneer = 256 (s.2 image);
+  "[11] propellers" (print lists 11), propeller totals "[2200] & [40] tons [2800] [Men]" = the print's sum (350+220+140+200+190+195+200+170+200+190+185 =
+  2,240 tons; 2,800 men), "[8] steam tugs" (8 names), "[50] canal barges ... [150] [Men]": all agree. Order: cipher Jefferson before Portsmouth, print
+  the reverse.
+- **Correction to FV-L17c s.3 (tail):** "translate Pekin & pedlar every time" is not "sense unclear, M". key.md: **Pekin = Comma (H, p.19 l.7 R),
+  Pedlar = Comma (H, p.19 l.7 L)**. The two words are *mentioned*, not used: an operator's instruction after Meigs's signature to render both Pekin and
+  Pedlar as commas every time, the list being punctuated with them throughout (5615-5616). Read: "[signed] Meigs [Qr Master Genl U.S.] -- translate
+  'Pekin' & 'pedlar' [as commas] every time". No M left in the tail.
+- **Depth D3 kept** (every code group H or C after FV-L17c s.3/s.5 and this section; external non-statistical: print and holder 4546 agree with the
+  list's figures, O9-Z puts Wise in New York on 20 Apr). Not D4: no fresh rule-7 re-derivation in this session.
+- **Not N4:** OR ser. III vol. 4 not read by title-verified text; NARA RG 92 unread; Google Books not tried.
+
+### 5. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | text | depth | basis |
+|---|---|---|---|---|---|
+| E622 | **N3** relay (kept); vessel list **N2** (kept) | period | relay not known; list printed | D3 (kept) | s.2, s.4 |
+| E623 | **N3 -> N1** | period | known (holder clear copy 10299) | D3 (all code groups C from 10299; external: the clear copy itself) | holder clear copy at another pointer, 10299 (Page 157): Wave 2 RULING (i), **not filed**; SO-ECKERT-E623 withdrawn |
+
+- **Safe sentences.** E622: FV-L17c's stands, "two audits" for "one audit". E623 (N1): "the Fort Monroe ledger's cipher copy of Lt. John I.
+  Davenport's 5 May 1864 telegram to General Lew Wallace at Baltimore (arrest W. W. Shore, the New York World's correspondent) reads the Huntington's
+  own clear copy (pointer 10299)."
+- **Unsafe:** for E623, any sentence implying the plaintext was unknown, or naming Sheldon or Fort Monroe as its author; for E622, any sentence
+  presenting the vessel list as unknown, "first", "new", "unpublished".
+
+### 6. Postmortem, fixes and propagation
+- **Failure:** E623's holder clear copy was already in AUDIT.md (FV-FM9e, 9 Oct) and three sessions missed it. Lesson: before any holder query on a
+  Fort Monroe row, grep AUDIT.md, NOTES.md and ciphertext*.txt for the row's own pointer and for its neighbours' clear-copy pointers (here "5656" ->
+  "10299"); `tools/prior_work.py` keys units by folio and did not surface the AUDIT line. FV-L17c's other E622/E623 findings all held.
+- **For a FIX job (not applied here; reading.md is decode.py output):** E623 -> header "N1: holder clear copy 10299 (Page 157); sender Lt. John I.
+  Davenport, Office Bureau of Information (sig), Ft Monroe 5 May 1864 12.30 PM, to Maj. Gen. Lew Wallace, Baltimore; not filed under the Wave 2 RULING (i)
+  (stays in ciphertext.txt with the N1 note, as E582/E587/E624 under the lane ruling of 10 Oct)" plus FV-L17c s.5; E622 -> FV-L17c s.5 as written, and
+  the tail note "translate 'Pekin' & 'pedlar' [as commas] every time (Pekin, Pedlar = Comma, key.md p.19 l.7): an operator's instruction, not an M".
+- Lead for a reader (not this job): mssEC 18 pointer 9711, a Meigs cipher order on the same fleet ("... to assist [Biggs] in management of this fleet"),
+  not filed.
+- Propagated: status.json E622 (audit_status "two audits", audit_refs, gap) and E623 (grade N1, plaintext_novelty N1, depth D3, gap "not counted"); SO
+  row SO-ECKERT-E623 -> withdrawn (N1, holder clear copy 10299), SO-ECKERT-E622 kept queued (class unchanged, its prompt carries no tail reading);
+  WORK-QUEUE AUD2-LEDGER17-3 -> done; JSTOR-QUEUE 2 rows (E622).
+- Requests: hdl.huntington.org 23 (19 CONTENTdm queries incl. control, one dropped connection not retried; 1 item record; 3 IIIF leaves); archive.org 12
+  (5 _djvu.txt GETs: 3 x 500/404, one retry after 25 s 200); be-api.us.archive.org 18 (5 x 502); www.loc.gov 8; googleapis 0.
+For the orchestrator (owner account) and LANE LEDGER-17 (account 1).
