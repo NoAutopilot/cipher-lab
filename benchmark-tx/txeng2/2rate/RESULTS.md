@@ -3,7 +3,7 @@
 Worker TXE2-2RATE (account 4, Opus) for LANE TX-ENGINEER-2. PREREG benchmark-tx/PREREG-txeng2-16.md section TOOL-2RATE;
 brief row TXE2-2RATE in .claude/briefs/runs/2026-10-10-account4-txe2-round16.md. Run 00:12-00:2x UTC 10 Oct 2026 by date -u.
 
-## Diff summary (commit 9298c281532b15b4604ccc8f6ee7810e87c29e17)
+## Diff summary (commit 3359a64addf93ad13244404098a83b5333cacd97 (pushed; pre-rebase local 9298c2815); RESULTS.md itself 79aad990c)
 - `tools/tx_bench.py`: `score_item` also counts `read` (the output's sign count on the covered truth lines). Under
   `--exclude-flagged` the flagged-excluded line now ends with
   `| position errors P/U = r | insertions I / read R = r` (P = wrong + deleted at unflagged positions, U = unflagged
