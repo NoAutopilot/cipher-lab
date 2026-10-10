@@ -47,5 +47,19 @@ of pointer/entry in ciphertext*.txt and NOTES.md): 5752/0 (16 June 1864, sent, 5
 the per-row line "in print (vol/page) / holder clear copy (pointer) / not located (sources searched by date) / step-0 skip / no book in hand"; Remaining
 gaps / Escalation; gaps_check; decode x3 --check exit 0. No audits. Unit ~0.3 per row.
 
+## FM-S1, FM-S2 (Sonnet 5.5, readers; cap $2.5 each, box 100 min each): short 1864 Fort Monroe rows (24-39 words), never read
+FM-PRE left 40 1864 rows below its 40-word line unread (prefilter-fm-final.tsv `final_verdict` clean-offline: offline pre-filter clean, the Huntington
+full-text layer NOT run on them). Method as FM-R9 above, plus, because the holder layer was never run: one CONTENTdm CISOSEARCHALL query per row on a rare
+plain word or name of the row (all pointers, under the hdl token; positive control 9678 once per take) before decoding, and the Step-0 ruling. A short row
+may give no clause above the authentication distance: record it "too short to read a clause" rather than forcing a reading, and file only rows that carry
+one. Grep each row first (pointer/entry in ciphertext*.txt, NOTES.md); skip any filed meanwhile.
+- FM-S1 (10): 5785/1 5799/0 5816/2 5583/2 5827/0 5647/0 5793/1 5636/2 5822/2 5731/0 -- IDs E450 onward (No. 1), next free N2/O9 otherwise.
+- FM-S2 (10): 5698/0 5638/0 5632/2 5627/1 5810/1 5756/1 (best_book 2) 5720/0 5814/0 5768/3 5680/2 -- IDs E465 onward.
+NOTES "## FM-S1 (10 Oct 2026, account 1, for LANE LEDGER-13)" / "## FM-S2 (...)" with the per-row line as FM-R9; Remaining gaps / Escalation; gaps_check;
+decode x3 --check exit 0. No audits. Unit ~0.2 per row. FM-S1 and FM-S2 never hold the hdl token at the same time. Held for wave 2: the other 20 short rows
+(5720/2 5547/1 5569/1 5546/0 5577/0 best_book 9; 5673/1 5672/1 5641/0 5804/2 5669/1 5664/2 5679/0 5830/0 5633/1 5798/1 5833/2 5828/1 5829/1 5800/2 5590/0).
+
+(08:45 UTC 10 Oct by date -u: wave 1 spawned with source_url: BOOK-FM65 session_01L1JBbw4Zcn7kDhqDocdSUE, FM-R9 session_01NhUBdr3wGVNmw1FTEoY6vZ.)
+
 Held for wave 2: readers on the 1865 rows BOOK-FM65 assigns (step-0 misses only, ~0.25/row, batches of 10); first verifiers on anything filed "not located"
 (Opus, ~1.4/entry; AUD2-LEDGER13-<n> rows for N3+ D2+, tagged account-3); a FIX job on the audits' s.5.
