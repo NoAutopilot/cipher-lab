@@ -16035,3 +16035,127 @@ nine:** "first decipherment", "previously unread", "unpublished". No status.json
 Requests: archive.org 17 (6 page_numbers.json + 11 page images, one a wrong leaf) + 2 (one empty response, one retry, leaf 438), all 200 after the retry;
 hdl.huntington.org 11 IIIF (one dropped connection on 9832, one retry after 25 s), one take, released; no search. seven_day allowed_warning not observed by me.
 For LANE LEDGER-12 (account 1).
+
+## AUDIT (FV-N1C-a)
+
+Verifier FV-N1C-a (Opus 5.5, account 1, for LANE LEDGER-12), 10 Oct 2026, 07:47-08:0x UTC by `date -u`; a separate session from the readers MS18-R8
+(E382 E388 E390 E391) and N2R-4 (N2-IE IF II IJ), not protecting their conclusions. Scope: N1 confirmation of the eight printed entries (IA page image
+of the printed page, word-for-word diff, leaf eye-check of the entry's lines), Step-0 ruling first. Sent ledger mssEC 18 = Huntington object 10074.
+Key source for all: `period` (Cipher No. 1 for E3xx, No. 2 for N2-xx). No spec for eckert-1864, so `judge_plaintext.py` was not run. Intake gate
+(re-run 07:4x UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Scripts: `ms18/fv_n1ca_step0.py`
+(+ `.out`), `ms18/fv_n1ca_ia.py` (+ `.out`), `ms18/fv_n1ca_hdl.py` (+ `.out`). N2-IC not touched (FIX-N2IC-DATE).
+
+### 0. Step 0 (Wave-3 ruling; `step0_ordered.py`'s own functions, disk only)
+(a) ordered LCS of decoded content words against the holder transcription of the entry's block / decoded content words; (b) within-entry shuffle p95,
+20 draws; b2 the selection-matched control; (c) decoded content words absent from the transcription (key meanings | plain absent).
+| entry | ptr | (a) | (b) | b2 | hit | (c) |
+|---|---|---|---|---|---|---|
+| E382 | 10003 | 0.720 (36/50) | 0.240 | 0.260 | **HIT** | 11: after arrest general georgia guard major president report telegraph |
+| E388 | 9694 | 0.196 (9/46) | 0.130 | 0.152 | - | 35: command corps division eleven general gordon granger hooker howard joseph major nashville schofield sherman slocum three twelve vicksburg; consolidated ing whereever |
+| E390 | 9880 | 0.429 (21/49) | 0.184 | 0.184 | - | 28: arkansas chief force fredk general grant hurlbut major pursue reinforced reynolds rosecrans steele telegraph troops |
+| E391 (Garrett part) | 9772 | 0.542 (13/24) | 0.292 | 0.292 | **HIT** | 10: cavalry david force general grant hunter major point |
+| E391-W1 (Wallace 12 m) | 9772 | 0.730 (27/37) | 0.270 | - | **HIT** | 10: ammunition battery general major mower presence slocum |
+| E391-W2 (Wallace, Balto 4th) | 9772 | 0.733 (22/30) | 0.267 | - | **HIT** | 8: ammunition battery general major mower slocum |
+| N2-IE | 9759 | 0.515 (17/33) | 0.242 | 0.273 | **HIT** | 15: canby general grant major protect quarter rail road secretary telegraph vicksburg war; master |
+| N2-IF | 9685 | 0.553 (21/38) | 0.237 | 0.237 | **HIT** | 16: army chattahoochee command commander general head major potomac president quarters secretary war; ity proveed states |
+| N2-II | 9782 | 0.455 (10/22) | 0.227 | 0.227 | - | 12: baltimore city corps defend grant halleck nineteen order six troops; ed |
+| N2-IJ | 9880 | 0.385 (10/26) | 0.192 | 0.269 | - | 16: general grant major monday order price pursuit rosecrans telegram telegraph troops; ed |
+E391's two Wallace messages sit in the reading's `{tail}`, which `body()` drops; they were measured apart on their own blocks (b2 not computed: one
+window). **Hits: E382, E391 (all three parts), N2-IE, N2-IF** -- body known in the holder transcription (N1 for the body). Every (c) word of the hits is
+given by the print (s.1) except the decoder's own wrong meanings (protect, chattahoochee, ammunition, battery, presence, mower, slocum, s.2), so no hit
+carries a counted contribution beyond the print. Non-hits (E388, E390, N2-II, N2-IJ) are N1 by print alone.
+
+### 1. Print, on the page image (IA, 1400 px; page head read on each image)
+`_page_numbers.json` was **off by two leaves** on `warofrebellion492unit` (leaf 655 = p.649) and `warofrebellion414unit` (leaf 351 = p.345, 345 = p.339);
+the right leaves (653, 349, 343) were refetched and read (wrong ones not used). The readers' running-head pages are all right.
+| entry | volume (IA id), leaf | page head on image | print |
+|---|---|---|---|
+| E382 | OR I/49 pt 2 (`warofrebellion492unit`), 653 | "CORRESPONDENCE, ETC.--UNION. 647" | War Department, Washington City, May 7, 1865--7 p.m.; Bvt. Maj. Gen. J. H. Wilson, Macon: arrest Joseph E. Brown ... to Major-General Augur, at Washington ... no communication, verbal or written, with any person but the officer having him in charge after the receipt of this order ... acknowledge by telegraph the hour ... report your action. By order of the President of the United States: Edwin M. Stanton |
+| E388 | OR I/32 pt 3 (`warofrebellion323unit`), 253 | "CHAP. XLIV.] ... 247" | Washington, April 4, 1864--8 p.m.; Maj. Gen. W. T. Sherman: Eleventh and Twelfth Corps into the First Corps, Hooker commanding; Howard the Fourth, Schofield the Twenty-third; relieve Gordon Granger; Slocum to command Vicksburg District, Newton to a division "or wherever else you may think best". U. S. Grant, Lieutenant-General |
+| E390 | OR I/41 pt 4 (`warofrebellion414unit`), 349 | "CHAP. LIII.] ... 343" | Washington, October 31, 1864--3 p.m.; Major-General Rosecrans, Saint Louis: ... "The orders of General Grant and **General Canby** are that the pursuit must be continued to the Arkansas River, or until you meet the forces of Generals Steele or Reynolds. These orders must be obeyed." H. W. Halleck, Major-General and Chief of Staff |
+| N2-IJ | same, 343 | "CHAP. LIII.] ... 337" | Washington, D. C., October 31, 1864--3 p.m.; Lieutenant-General Grant, City Point: telegram from Curtis, Rosecrans has recalled his troops from the pursuit of Price; contrary to repeated orders; "I have just telegraphed that the pursuit must be continued." Halleck |
+| E391 Garrett | OR I/37 pt 2 (`warofrebellion372unit`), 24 | "18 OPERATIONS IN N. VA. ..." | War Department, July 3, 1864; John W. Garrett, Esq., Baltimore: "General Hunter has been under orders three days ago to move his forces up to the threatened points. Sullivan's cavalry should have been up before now." Edwin M. Stanton |
+| E391-W1 | same, 38 | "32 OPERATIONS IN N. VA. ..." | Headquarters Middle Department, July 3, 1864--12 m.; Major-General Couch, Chambersburg: "Have you any information as to the movements of the enemy in the Valley, of the safety of Sigel's trains, or of any engagement he has had with the rebels? Please answer by telegraph." Lew. Wallace |
+| N2-IE | OR I/34 pt 4 (`warofrebellion013404rootrich`), 339 | "CHAP. XLVI.] ... 331" | Washington, D. C., June 13, 1864--8 p.m. (Received New Orleans, 24th); Major-General Canby, Vicksburg: "With regard to subject of your telegram of the 4th instant to General Meigs ... Vicksburg to Monroe ... referred to Lieut. Gen. U. S. Grant." Jas. A. Hardie, Colonel and Inspector-General |
+| N2-IF | OR I/33 (`warofrebellion33unit`), 681 | "CHAP. XLV.] ... 663" | War Department, March 10, 1864--1.40 p.m.; Lieut. Gen. U. S. Grant, Commander-in-Chief, Hdqrs. Army of the Potomac: "Pursuant to the authority of the act of Congress approved February 29, 1864, the President, by Executive order of this date, has assigned to you the command of the Armies of the United States." Edwin M. Stanton (p.664 fetched, not needed) |
+| N2-II | OR I/40 pt 3 (`warofrebellion403unit`), 99 **and** OR I/37 pt 2 (`warofrebellion372unit`), 141 | "... 93" and "CHAP. XLIX.] ... 135" | Washington, July 9, 1864--11 p.m.; Lieutenant-General Grant, City Point: "As the arrival of the Nineteenth Corps is very uncertain, I think the remainder of the Sixth Corps should be sent to this place. I have ordered all troops from the North to be stopped at Baltimore for the defense of that city." Halleck. **Printed twice**; N2R-4 named only I/40 pt 3, page not found: it is p.93 there and p.135 in I/37 pt 2 |
+
+### 2. Diff, print against the leaf (s.3) and the reading
+- **E382:** body identical. Hour: print 7 p.m., ledger time word decodes 8 AM (M, unresolved, as MS18-R8). **Decoder slip: "person" is plain** on the
+  leaf and in print; the reading renders it [5] (the same slip as E368, E377). "Oxide/Afide" = "after the" (C by print). Signer [Secretary of War] =
+  Stanton, C.
+- **E388:** body identical except the ledger's "you think best" for the print's "you may think best". Signer 'John' = U. S. Grant, C by print. The reading's
+  tail "**No 5 NY**" is the next entry's header label (John Horner, N.Y., 5 April), not part of E388 (s.5).
+- **E390 (the key question): the second general is Canby.** The leaf reads "The orders of John and **Lehigh**" (clearly written, 9880 at 2400 px); key.md
+  rows Leghorn/Legend/Lehigh/Leopard = Maj Gen S. A. Hurlbut as the book wrote them, and the KEY-CANBY condition (key.md, under those rows) reads this
+  slot as Canby in No. 1 traffic from 11 May 1864: E390 (31 Oct 1864) is a **further print witness for Canby (C)**, to be added to HYPOTHESES.md
+  "## KEY-CANBY" (s.5). Otherwise identical (ledger "tooth Archery" = to the Arkansas, "River" not written; "Moon" = Rosecrans; signer [General in
+  Chief] = Halleck, Major-General and Chief of Staff, as FV-MS18p E372). Decoder slip: "Spring field" is plain (Springfield, print), not
+  [Has, or have been, reinforced] (MS18-R8 noted it).
+- **E391:** Garrett part identical; **decoder slip: "John" in "for John W Garrett" is plain** (print "John W. Garrett, Esq."), the reading renders
+  [Maj Genl U.S. Grant]; "Dangers" = Sullivan's (print; the reading leaves it as a plain word), "Mutton" = Hunter, "pebble" = three, "saints" = forces,
+  "vernons" = points (C by print). **W1** identical in words with the print of Wallace to Couch, 3 July 12 m, except "movement" for "movements"; the
+  ledger frame "1.25 AM 4th, W. B. Gilmore, Chambersburg / Baltimore third midnight" is a relay of it (print hour 12 m = noon; "midnight" is the
+  relay's dateline, M). **"Koran Myrtle" = Couch (C by print)**, not the decoder's [Mower] [Slocum]; **"Olive" = enemy** (C by print), not
+  [Ammunition]; **"Valley" is plain** (print, leaf), not [Presence]; "Pagan" before "Sigels trains" and before the signature has no print counterpart
+  (M; decoder [Battery]). **W2 ("Balto 4th ... obliged to you for telegram; please keep me posted ... of olive movements, anything definite as to
+  their strength", Lew Wallace) not located in print**: OR I/37 pt 2 djvu text normalised, "obliged" (10 hits: Burleigh, Weber, Kelley -- none this),
+  "definite as to" 0, "as well as you can" 0. Its body is plain in the holder transcription (s.0 hit 0.733); the only code groups (Koran Myrtle,
+  olive, Pagan) are read by W1's print. Classified honestly below as N1 by Step 0, not as an unlocated new text.
+- **N2-IE:** body identical. **Decoder slip: "Subject" is plain** on the leaf (print "subject"), the reading renders [Protect]. "Buggy" = General Meigs
+  (reading [Quarter Master General]: the print names Meigs, the office's QMG, C). Hour 8 p.m., Hardie agree.
+- **N2-IF:** body identical. **Decoder slip: "author - it = y" is plain** on the leaf (print "authority"); the reading renders [Chattahoochee]ity. The date
+  words "Feby Oliver Ellsworth Mason Douglas ^Perkins^ Baker" (Perkins interlined) = "February 29, 1864," in print; the reading's {date: Feb 4700}
+  Perkins [4] is wrong (M -> C by print for the date only). Hour: print 1.40 p.m., reading {time: 1.30 PM} (M). Note: the leaf carries no time in the
+  header ("Caldwell Wash'n Mar. 10th 1864").
+- **N2-II:** body identical except "from the North" absent on the leaf (and "the" before arrival/remainder); ledger header 10.30 PM vs print 11 p.m.
+  (the decoded time word agrees with the print, as N2R-4 said).
+- **N2-IJ:** word for word ("Mud" = Rosecrans, "umber" = pursuit, C by print).
+**No difference of substance in any of the eight.**
+
+### 3. Holder's full text and the leaves
+CONTENTdm p16003coll11 `CISOSEARCHALL` (hdl take 07:5x UTC, 8 queries): pretends 2 (**own 10003**, positive control; 9977 = 11 Mar 1865 Beckwith, another
+message); consolidated 15 (own 9694 not among them: the ledger writes "consoli-dated"; 9787 on disk, another message); Rolla 7 (**own 9880**; 9840 on disk,
+13 Sept 1864, another); Sigel 119 (own 9772 not among them, "Sigels"; 9741, 9775 nearby pointers, not this text by date); Monroe 2139 (Fort Monroe: no
+discrimination, my bad pick, logged); pursuant 6 (own 9685 not, "Pur su ant"; 8723 8726 8746 8831 10446 13525 not on disk, not read); uncertain 34
+(**own 9782**); contrary 47 (**own 9880**). No period clear copy of any of the eight found among the hits read on disk.
+**Leaves (IIIF 2400 px, 7 images to scratch, not committed), each entry's own lines read:** 10003 (E382), 9694 (E388), 9880 (E390, N2-IJ), 9772 (E391),
+9759 (N2-IE), 9685 (N2-IF), 9782 (N2-II): **every line of the eight entries matches the holder transcription.** Additions from the images: 9694 carries
+interlinear pencil words and figures above the cipher lines and a vertical pencil note in the body (read tentatively "Sent ... 7 P.M. Tinker", M), not
+transcribed; 9880's Smith header has a small "No 1" over "Smith" (N2-IJ's header "No 2"); 10003's date "May 7" (the 7 may be written over another
+figure, M; print 7 May). All eight leaves are now eye-checked.
+
+### 4. Grades after this audit
+Decoder H counts stand as filed (MS18-R8, N2R-4), minus the slips of s.2, which become C by print: E382 person; E390 Spring field, Lehigh (H Hurlbut ->
+C Canby); E391 John, Valley, Olive (C enemy), Koran Myrtle (C Couch), Pagan M; N2-IE Subject; N2-IF author, date words (C by print), hour M. The body of
+every entry is C by print (W2 excepted: body public in the holder transcription, its three code groups C by W1's print or M). U 0, I 0.
+
+### 5. Classes (rule 10) and depth (rule 4a)
+| entry | N | key | text | depth | basis |
+|---|---|---|---|---|---|
+| E382 | **N1** | period | known | D1 | Step-0 hit; printed OR I/49 pt 2 p.647 (image); key adds nothing the print lacks |
+| E388 | **N1** | period | known | D1 | printed OR I/32 pt 3 p.247 (image), "may" omitted |
+| E390 | **N1** | period | known | D1 | printed OR I/41 pt 4 p.343 (image); Lehigh = Canby by print |
+| E391 Garrett + W1 | **N1** | period | known | D1 | Step-0 hits; printed OR I/37 pt 2 pp.18 and 32 (image) |
+| E391 W2 | **N1** | period | known | D1 | Step-0 hit (0.733 vs 0.267): body public in reading order in the holder transcription; not located in print (OR I/37 pt 2 text); code groups read from W1's print |
+| N2-IE | **N1** | period | known | D1 | Step-0 hit; printed OR I/34 pt 4 p.331 (image) |
+| N2-IF | **N1** | period | known | D1 | Step-0 hit; printed OR I/33 p.663 (image) |
+| N2-II | **N1** | period | known | D1 | printed OR I/40 pt 3 p.93 and I/37 pt 2 p.135 (image) |
+| N2-IJ | **N1** | period | known | D1 | printed OR I/41 pt 4 p.337 (image) |
+Depth D1 throughout (FV-MS65a precedent under the Step-0 ruling: what the key adds is names and numbers already in print). Safe sentence (all):
+"Sent-ledger entries <ID> are telegrams whose text is printed in the Official Records (pages above) or public in the Huntington's own transcription;
+read with the period key, they agree with the print." **Unsafe:** any "new", "unread" or "first" wording. **No N3+: no status.json result row, no
+SECOND-OPINIONS row, no WORK-QUEUE AUD2-LEDGER12 row from this audit.**
+
+### 6. Fixes for a FIX job (a verifier does not edit ciphertext.txt, reading*.md or key.md)
+- Entry notes (decode.py / decode_no2.py note mechanism): E382 "person" plain (not [5]); E388 drop "No 5 NY" from the tail (next entry's header), print
+  "you may think best"; E390 gloss Lehigh = Canby (C, KEY-CANBY, OR I/41 pt 4 p.343), "Spring field" plain; E391 "John" plain in "John W Garrett",
+  Valley plain, Olive = enemy (C), Koran Myrtle = Couch (C), W1 printed p.32 (12 m; "midnight" is the relay dateline), W2 not located, body public;
+  N2-IE "Subject" plain (not [Protect]); N2-IF "author" plain (not [Chattahoochee]), date "February 29, 1864" (C by print), hour 1.40 p.m. by print;
+  N2-II printed also OR I/37 pt 2 p.135, page I/40 pt 3 p.93. All eight: "leaf not eye-checked" -> "leaf eye-checked at 2400 px (FV-N1C-a)", print
+  page "(on the page image, FV-N1C-a)".
+- HYPOTHESES.md "## KEY-CANBY": add E390 (31 Oct 1864, Halleck to Rosecrans, Lehigh, OR I/41 pt 4 p.343 "General Canby") as a fifth print witness.
+- KEY lane questions, no key edit here: "Koran Myrtle" = Couch, "Olive" = enemy, "Dangers" = Sullivan, "Buggy" = Meigs, the No. 2 date words.
+Requests: archive.org 19 (7 page_numbers.json + 12 page images, 3 off-by-two wrong leaves among them) + 6 by curl for the 3 right leaves (3 unfollowed 302s, then 3 followed to 200);
+hdl.huntington.org 15 (8 CISOSEARCHALL + 7 IIIF), one take, released, all 200, no drop. seven_day allowed_warning: seen in the brief, continued per
+lane-common-blast. For LANE LEDGER-12 (account 1).

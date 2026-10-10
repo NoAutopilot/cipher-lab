@@ -1,0 +1,28 @@
+E382 warofrebellion492unit page 647 leaf [655]
+  -> /tmp/claude-0/-home-user-cipher-lab/938a8984-9eee-5c85-854a-8f43048f84a5/scratchpad/ia/E382_warofrebellion492unit_p647_leaf655.jpg 1095220
+E388 warofrebellion323unit page 247 leaf [253]
+  -> /tmp/claude-0/-home-user-cipher-lab/938a8984-9eee-5c85-854a-8f43048f84a5/scratchpad/ia/E388_warofrebellion323unit_p247_leaf253.jpg 1252028
+E390 warofrebellion414unit page 343 leaf [351]
+  -> /tmp/claude-0/-home-user-cipher-lab/938a8984-9eee-5c85-854a-8f43048f84a5/scratchpad/ia/E390_warofrebellion414unit_p343_leaf351.jpg 1160474
+N2-IJ warofrebellion414unit page 337 leaf [345]
+  -> /tmp/claude-0/-home-user-cipher-lab/938a8984-9eee-5c85-854a-8f43048f84a5/scratchpad/ia/N2-IJ_warofrebellion414unit_p337_leaf345.jpg 1230646
+E391 warofrebellion372unit page 18 leaf [24]
+  -> /tmp/claude-0/-home-user-cipher-lab/938a8984-9eee-5c85-854a-8f43048f84a5/scratchpad/ia/E391_warofrebellion372unit_p18_leaf24.jpg 1238237
+E391 warofrebellion372unit page 19 leaf [25]
+  -> /tmp/claude-0/-home-user-cipher-lab/938a8984-9eee-5c85-854a-8f43048f84a5/scratchpad/ia/E391_warofrebellion372unit_p19_leaf25.jpg 1027282
+E391 warofrebellion372unit page 32 leaf [38]
+  -> /tmp/claude-0/-home-user-cipher-lab/938a8984-9eee-5c85-854a-8f43048f84a5/scratchpad/ia/E391_warofrebellion372unit_p32_leaf38.jpg 1056241
+N2-II warofrebellion372unit page 135 leaf [141]
+  -> /tmp/claude-0/-home-user-cipher-lab/938a8984-9eee-5c85-854a-8f43048f84a5/scratchpad/ia/N2-II_warofrebellion372unit_p135_leaf141.jpg 977170
+N2-II warofrebellion403unit page 93 leaf [99]
+  -> /tmp/claude-0/-home-user-cipher-lab/938a8984-9eee-5c85-854a-8f43048f84a5/scratchpad/ia/N2-II_warofrebellion403unit_p93_leaf99.jpg 1256727
+N2-IE warofrebellion013404rootrich page 331 leaf [339]
+  -> /tmp/claude-0/-home-user-cipher-lab/938a8984-9eee-5c85-854a-8f43048f84a5/scratchpad/ia/N2-IE_warofrebellion013404rootrich_p331_leaf339.jpg 488663
+N2-IF warofrebellion33unit page 663 leaf [681]
+  -> /tmp/claude-0/-home-user-cipher-lab/938a8984-9eee-5c85-854a-8f43048f84a5/scratchpad/ia/N2-IF_warofrebellion33unit_p663_leaf681.jpg 1179578
+N2-IF warofrebellion33unit page 664 leaf [682]
+  -> /tmp/claude-0/-home-user-cipher-lab/938a8984-9eee-5c85-854a-8f43048f84a5/scratchpad/ia/N2-IF_warofrebellion33unit_p664_leaf682.jpg 1094459
+requests 19
+# eye check of page heads: _page_numbers.json is off by 2 leaves on warofrebellion492unit (leaf 655 = p.649) and warofrebellion414unit
+# (leaf 351 = p.345, leaf 345 = p.339); refetched by curl: 492unit leaf 653 (p.647), 414unit leaves 349 (p.343) and 343 (p.337); 6 requests: 3 unfollowed 302s, then 3 followed to 200.
+# The other nine leaves show the wanted page number on the image.
