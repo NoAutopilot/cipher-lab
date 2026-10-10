@@ -15849,3 +15849,85 @@ b. E401: mark as a Step-0 hit under the ruling's instrument (a 0.540 vs b 0.190;
 c. NOTES "## MS65-R1" Remaining gaps: the E401 print gap is worked (this section); the E400 page gap is answered.
 
 Requests: archive.org 11 (5 djvu, 3 page_numbers.json, 3 page images; all 200), be-api.us.archive.org 4 (one non-JSON reply, retried once), googleapis.com 8, www.loc.gov 1, tile.loc.gov 6, chroniclingamerica.loc.gov 6 (all 403, stopped), hdl.huntington.org 0 (no token taken).
+
+## AUDIT (FV-N2g)
+
+Verifier FV-N2g (account 1, for LANE LEDGER-12), 10 Oct 2026, 07:4x-07:5x UTC by `date -u`; a separate session from the reader N2R-6 and from every other
+verifier of these entries, not protecting the reader's conclusions. Scope: first audits of **N2-KA** (9729/1), **N2-KB** (9697/0) and **N2-KC** (9908/2) in
+`ciphertext-no2.txt` (War Department Cipher No. 2; Washington sent ledger mssEC 18 = Huntington object 10074), all three filed by N2R-6 as "not located".
+Nothing decoded beyond key look-ups. `decode_no2.py --check` -> "reading-no2.md is current" (exit 0). Intake gate (07:4x): `eckert-1864: partial (line 3) --
+edition/page or full-text-search citation found within 6 lines`. No spec for eckert-1864, so `judge_plaintext.py` was not run. Key source for all three:
+`period`. Scripts: `ms18/fv_n2g_step0.py` (+ `.out`), `ms18/fv_n2g_print.py` (+ `.out`, which also logs the Google Books snippets). No leaf image fetched
+(the print makes the eye-check moot for the values; see s.5). No hdl.huntington.org request this session.
+
+### 0. Step 0 (the Wave 3 Step-0 ruling, with STEP0-RULE's own functions, `ms18/step0_ordered.py` above its sweep loop)
+| ID | pointer | window | (a) ordered | (b) shuffle p95 | b2 | hit | (c) key-dependent words |
+|---|---|---|---|---|---|---|---|
+| (E74, positive control) | 9071 | 2 | 0.958 (23/24) | 0.333 | 0.375 | YES | 1 |
+| N2-KA | 9729 | 1 | 0.567 (17/30) | 0.233 | 0.300 | **YES** | 13: cairo, culpepper, general, grant, lieutenant, president, protect, river, telegram, telegraph (+ plain absent: brayman, ed) |
+| N2-KB | 9697 | 0 | 0.344 (11/32) | 0.188 | 0.219 | no | 20: artillery, burnside, cipher, ferry, general, grant, harpers, heavy, left, lieutenant, major, order, regiment, sigel, soon, troops (+ ed, garrison, unexpectedly) |
+| N2-KC | 9908 | 2 | 0.333 (13/39) | 0.179 | 0.205 | no | 25: canby, five, general, geo, grant, halleck, lieutenant, major, mobile, movement, ohio, order, rail, report, road, sheridan, thomas, tuesday, twenty (+ ed) |
+N2-KA is a step-0 hit under the shared functions (the reader's own `n2r6_step0.py` gave 0.485, under the line; the difference is the tokenizer -- the shared
+functions expand abbreviations and are the ruling's instrument). The point is moot: all three are in print (s.1).
+
+### 1. Print (the decisive finding): all three are printed, word for word
+- **N2-KA = OR ser. I vol. 34 pt 3 p.409** (IA `warofrebellion013403rootrich`, cached): "WASHINGTON, May 3, 1864 -- 11 a. m. Lieutenant-General GRANT,
+  Culpeper, Va.: Your last instructions in regard to trans-Mississippi matters were telegraphed to Cairo, and were sent by General Brayman down the river on
+  May 1. The President has seen your telegrams, but has said nothing to me on the subject since I last wrote you. I will write to you immediately. H. W.
+  HALLECK, Major-General, Chief of Staff." (page head 409 in the OCR just before the text).
+- **N2-KB = OR ser. I vol. 33 p.815** (IA `warofrebellion33unit`, cached): "Washington, April 7, 1864 -- 1 p. m. Lieutenant-General Grant, Culpeper, Va.:
+  General Burnside left unexpectedly last night. Your message will be sent to him in cipher as soon as he can be found. General Wilson has been relieved, and
+  troops ordered as directed. General Sigel asks that a regiment of heavy artillery be sent from Baltimore to garrison Harper's Ferry. Shall it be done?
+  H. W. HALLECK, Major-General, Chief of Staff." (page heads 815 before, 816 after).
+- **N2-KC = The Papers of Ulysses S. Grant vol. 13 (Nov 16, 1864-Feb 20, 1865; ed. J. Y. Simon, Southern Illinois University Press, 1985; ISBN
+  0809311976), in a note**, Google Books `mnRjmhe3QLoC` (PARTIAL; snippet, page not given): "Halleck telegraphed to USG. "Genl Sheridan was ordered [s]ome
+  days ago to report in [re]gard to New Creek disaster. The movements asked for by Genl Thomas against Mobile & Ohio R. R. were ordered by Genl Canby on
+  the 25th & 26th ultimo, & these orders have [be]en repeated." ALS (telegram sent), DNA, RG 107, Telegrams ...". The source is Halleck's own holograph sent
+  copy at NARA. Not in OR I/42 pt 3, I/43 pt 2 or I/45 pt 2 by OCR (cached; letters-only grep for "New Creek disaster", "some days ago to report").
+**How the reader missed KA and KB:** N2R-6's own `ms18/n2r6_printcheck.out` lists, under PH (phrase hits), all four KA phrases in
+`warofrebellion013403rootrich` and three KB phrases in `warofrebellion33unit`; the NOTES per-row lines read the hit column as "not located" and named the
+wrong volumes (I/36 pt 2 for KA; OR I/33 p.813, Sigel's request, for KB). OR I/34 pt 3 (Louisiana and the Trans-Mississippi) is where Halleck's message
+about trans-Mississippi instructions is printed, not I/36. Holder clear-copy search: not re-run (N2R-6's all-pointer search found no clear copy; a print
+hit settles N-class without it).
+
+### 2. External confirmation of the code values (non-statistical, from the print)
+- N2-KA: Cairo, telegraphed, General, River ('done the [River]' = "down the river"), May 1, President, telegrams -- all C by OR I/34 pt 3 p.409.
+  'Bray Man' (plain, spelled) = General [Mason] Brayman (commanding at Cairo; OR I/32 pt 3 passim), C.
+- N2-KB: Burnside, Left, Will be sent, Cipher, As soon as, Troops, Order(ed), Sigel, Regiment, Heavy, Artillery, Harpers Ferry -- all C by OR I/33 p.815.
+  The two unread plain-looking groups are now read by the print: **'Manngo' = General Wilson** (J. H. Wilson, relieved at the Cavalry Bureau) and
+  **'Pard' = Baltimore**; both C by print, not key look-ups (key-no2.md has no row for either; a FIX job may add them as print-attested values, rule 4).
+- N2-KC: Sheridan, Order(ed), Report, Movements, Thomas, Mobile, Ohio, Rail-road, Canby, 25, 26 -- all C by the Grant Papers note. [Tuesday] agrees with
+  6 Dec 1864 (a Tuesday).
+
+### 3. Grades and corrections (s.5 below; for a FIX job, not edited into the reading by me)
+- N2-KA: code tokens 20 (decoder H 18, C 1, I 1): 'subject' is plain in the ledger and the print ("on the subject"); the decoder reads it as [Protect] --
+  a plain-word misread. 19 of 20 stand, now C by print. The ledger has "matters" where the print has "trans-Mississippi matters" (a copying difference
+  between the sent ledger and the printed copy; no code group carries it -- M note, not a fix).
+- N2-KB: code tokens 24 (H 23, C 1), all agree with the print; plus 'Manngo' and 'Pard' read by the print (s.2). 24/24.
+- N2-KC: code tokens 18 (H 16, C 2): the second 'repeated' ("these orders have been repeated") is plain in the print; the decoder reads it as [Order]ed --
+  a plain-word misread (the first, 'Negus was repeated' = "was ordered", is the code use and stands). 17 of 18 stand, C by print.
+
+### 4. Classification (rule 10) and depth (rule 4a)
+| ID | step 0 | N-class | key | depth | depth_pct | safe sentence |
+|---|---|---|---|---|---|---|
+| N2-KA | hit (0.567 vs 0.233) | **N1** (plaintext printed: OR I/34 pt 3 p.409) | period | **D1** (step-0 hit: body public in the holder transcription; the key adds the place and names, all confirmed by print) | 95.0 | The ledger copy of Halleck's 3 May 1864 11 a.m. telegram to Grant (trans-Mississippi instructions sent down the river from Cairo by General Brayman on 1 May) reads with War Department Cipher No. 2 to the text printed in OR ser. I vol. 34 pt 3 p.409. |
+| N2-KB | no (0.344 vs 0.188) | **N1** (plaintext printed: OR I/33 p.815) | period | **D3** (24/24 code tokens agree with the print; external non-statistical check: the print) | 100.0 | The ledger copy of Halleck's 7 Apr 1864 1 p.m. telegram to Grant (Burnside gone, Wilson relieved, Sigel's request for heavy artillery from Baltimore to Harpers Ferry) reads with War Department Cipher No. 2 to the text printed in OR ser. I vol. 33 p.815. |
+| N2-KC | no (0.333 vs 0.179) | **N1** (plaintext printed: Papers of U. S. Grant vol. 13, note) | period | **D3** (17/18 code tokens agree with the print; 1 plain-word misread) | 94.4 | The ledger copy of Halleck's 6 Dec 1864 1 p.m. telegram to Grant (Sheridan to report on New Creek; Canby's orders against the Mobile and Ohio repeated) reads with War Department Cipher No. 2 to the text printed in The Papers of Ulysses S. Grant vol. 13 (1985). |
+Unsafe: "not located in print", "first decipherment", "unread" or "new" for any of the three. No WORK-QUEUE AUD2 row and no SO row (none is N3+). Depth
+sentences: KA "Grant's trans-Mississippi instructions of late April 1864 went by telegraph to Cairo and down the river with General Brayman on 1 May.";
+KB "On 7 April 1864 Halleck put Sigel's request for a heavy-artillery regiment from Baltimore to Harpers Ferry to Grant, who ordered it that evening
+(holder 10219)."; KC "On 6 December 1864 Halleck told Grant that Sheridan had been ordered to report on the New Creek disaster and that Canby's orders
+against the Mobile and Ohio had been repeated."
+
+### 5. Postmortem and corrections for a FIX job (not applied by me)
+The failure: the reader's print-check script found KA and KB in print and the NOTES reported the opposite (the PH column was read as the date-window
+column); KC was in the Grant Papers notes, which the reader listed as not searched. Over-claims are negative claims, not novelty: no file calls any of the
+three new. Corrections:
+1. `NOTES.md` "## N2R-6", per-row lines for 9729/1 and 9697/0 and 9908/2: "not located" -> in print (OR I/34 pt 3 p.409; OR I/33 p.815; Grant Papers 13,
+   note), and the gaps line "N2-KA, N2-KB, N2-KC (3 unlocated rows)" -> closed by FV-N2g.
+2. `ciphertext-no2.txt` notes for N2-KA, KB, KC: "Not located in print" -> the citations above; N2-KA summary "[matters]" -> "[trans-Mississippi] matters
+   (print; not in the ledger)", "[name unresolved]" -> "General Brayman" (C); N2-KB summary "'Manngo'" -> "[General Wilson] (C, print)", "'Pard' [Baltimore?]"
+   -> "[Baltimore] (C, print)".
+3. Decoder plain-word misreads: N2-KA 'subject' (read [Protect]); N2-KC the second 'repeated' (read [Order]ed). `decode_no2.py --write` then `--check`.
+4. status.json rows for N2-KA, KB, KC added by me (N1, `text: known`, key `period`).
+For LANE LEDGER-12 (account 1)

@@ -13314,6 +13314,132 @@
       "depth_check": "N1: depth limited to a re-decipherment of printed text (D1)",
       "depth_note": "",
       "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-N2g)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-N2g verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Non-decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "key-to-known-text",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-N2g)' section 4",
+      "reading_version": "N2R-6 10 Oct 2026 (reading-no2.md), corrections listed in AUDIT (FV-N2g) s.5",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 95.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): Halleck to Grant at Culpeper, 3 May 1864, 11 a.m.: trans-Mississippi instructions telegraphed to Cairo and sent down the river by General Brayman (N2-KA)",
+      "line": "The Cipher No. 2 ledger copy reads, with the period key, to the telegram printed in OR ser. I vol. 34 pt 3 p.409.",
+      "gap": "plain text known from OR ser. I vol. 34 pt 3 p.409; no novelty (N2R-6 filed it 'not located'; FV-N2g found it in print).",
+      "depth": "D1",
+      "completeness": "20 code-word tokens (H 18, C 1, I 1); 'subject' misread as [Protect] (plain-word misread, FIX job)",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.69, pointer 9729, N2-KA"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.69, pointer 9729, N2-KA",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.69, pointer 9729, N2-KA"
+      ],
+      "depth_sentence": "Grant's trans-Mississippi instructions of late April 1864 went by telegraph to Cairo and down the river with General Brayman on 1 May.",
+      "depth_check": "Wave 3 Step-0 ruling hit (0.567 vs shuffle p95 0.233), depth from the key-read words alone (Cairo, river, President, telegrams), all confirmed by OR I/34 pt 3 p.409 (D1)",
+      "depth_note": "20 code-word tokens (H 18, C 1, I 1); 'subject' misread as [Protect] (plain-word misread, FIX job)",
+      "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-N2g)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-N2g verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "key-to-known-text",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-N2g)' section 4",
+      "reading_version": "N2R-6 10 Oct 2026 (reading-no2.md), corrections listed in AUDIT (FV-N2g) s.5",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): Halleck to Grant at Culpeper, 7 Apr 1864, 1 p.m.: Burnside gone, Wilson relieved, Sigel asks heavy artillery from Baltimore for Harpers Ferry (N2-KB)",
+      "line": "The Cipher No. 2 ledger copy reads, with the period key, to the telegram printed in OR ser. I vol. 33 p.815.",
+      "gap": "plain text known from OR ser. I vol. 33 p.815; no novelty (N2R-6 filed it 'not located'; FV-N2g found it in print).",
+      "depth": "D3",
+      "completeness": "24 code-word tokens agreeing with the print (H 23, C 1); 'Manngo' = General Wilson and 'Pard' = Baltimore read by the print (C)",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.37, pointer 9697, N2-KB"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.37, pointer 9697, N2-KB",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.37, pointer 9697, N2-KB"
+      ],
+      "depth_sentence": "On 7 April 1864 Halleck put Sigel's request for a heavy-artillery regiment from Baltimore to Harpers Ferry to Grant, who ordered it that evening (holder 10219).",
+      "depth_check": "code clause: [Sigel] asks that a [regiment] of [heavy] [artillery] be sent from Pard (= Baltimore) to garrison [Harpers Ferry]; external non-statistical: OR I/33 p.815",
+      "depth_note": "24 code-word tokens agreeing with the print (H 23, C 1); 'Manngo' = General Wilson and 'Pard' = Baltimore read by the print (C)",
+      "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-N2g)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-N2g verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "key-to-known-text",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-N2g)' section 4",
+      "reading_version": "N2R-6 10 Oct 2026 (reading-no2.md), corrections listed in AUDIT (FV-N2g) s.5",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 94.4,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): Halleck to Grant, 6 Dec 1864, 1 p.m.: Sheridan to report on New Creek; Canby's orders against the Mobile and Ohio repeated (N2-KC)",
+      "line": "The Cipher No. 2 ledger copy reads, with the period key, to the telegram quoted in The Papers of Ulysses S. Grant vol. 13 (1985).",
+      "gap": "plain text known from The Papers of Ulysses S. Grant vol. 13 (1985), note (Google Books mnRjmhe3QLoC, page not read); no novelty (N2R-6 filed it 'not located'; FV-N2g found it in print).",
+      "depth": "D3",
+      "completeness": "18 code-word tokens (H 16, C 2); the second 'repeated' misread as [Order]ed (plain-word misread, FIX job); 17 agree with the print",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.248, pointer 9908, N2-KC"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.248, pointer 9908, N2-KC",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.248, pointer 9908, N2-KC"
+      ],
+      "depth_sentence": "On 6 December 1864 Halleck told Grant that Sheridan had been ordered to report on the New Creek disaster and that Canby's orders against the Mobile and Ohio had been repeated.",
+      "depth_check": "code clause: [Movements] asked for by [Thomas] against [Mobile] & [Ohio] [Rail-road] were ordered by [Canby] on the [25] & [26] ult.; external non-statistical: Papers of U. S. Grant vol. 13 note (ALS telegram sent, DNA RG 107)",
+      "depth_note": "18 code-word tokens (H 16, C 2); the second 'repeated' misread as [Order]ed (plain-word misread, FIX job); 17 agree with the print",
+      "text": "known"
     }
   ],
   "lanes": [
