@@ -4,7 +4,9 @@ tools/sign_sorter.py on a synthetic two-line page: a good page (PASS); a wrong-l
 (tiles on a line that is not in the cipher-line list, clear words before the cipher part, strip-height boxes) (FAIL);
 an unanswerable page, the Dinteville shape (every tile in one UNREAD pile, questions offering labels with no pile)
 (FAIL). Then the cases it must NOT block: focus tiles all one family, free-prose questions, a '-' reader split, a tall
-sign touching one strip edge. Run: python3 tools/tests/test_sorter_preflight.py"""
+sign touching one strip edge, a machine with no node/playwright (check 6 says SKIP). Check 6 (gestures, owner rule R05) is
+tested here for its wiring and its SKIP path only, with a stand-in for node; run_all.sh runs the browser test itself.
+Run: python3 tools/tests/test_sorter_preflight.py"""
 import os, re, sys, tempfile
 from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent.parent
@@ -130,6 +132,71 @@ with tempfile.TemporaryDirectory() as d:
     check('--expect-owner-account on the owner account: PASS', run(good, str(cl), expect_owner=True)[0])
     seg = d / 'segment_pages.txt'; seg.write_text('--page L01=<s>/a.jpg --page L02=<s>/b.jpg@0,0,9,9\n')
     check('segment_pages.txt read as a cipher-line list', pf.read_cipher_lines(str(seg)) == {'L01': None, 'L02': None})
+
+    # check 6, gestures (owner rule R05, template 2026-10-09.5): the wiring and the SKIP path, offline (no browser is started here;
+    # tools/sign_sorter/browser_tests/run_all.sh runs test_gestures.js itself on the fixtures)
+    import subprocess as _sp, io as _io, contextlib as _cl
+    os.environ['CIPHERLAB_ACCOUNT'] = ''
+    check('gesture test file exists and run_all.sh runs it', os.path.exists(pf.GESTURE_JS) and
+          'test_gestures.js' in (ROOT / 'tools' / 'sign_sorter' / 'browser_tests' / 'run_all.sh').read_text())
+    ok, ls = run(good, str(cl))
+    check('library call (the build): gestures not run, says SKIP, listed as not checked, verdict stands',
+          ok and any(l.startswith('SKIP gestures (not run by this call') for l in ls) and 'gestures' in ls[-1] and 'not checked' in ls[-1])
+    ok, ls = pf.run(inputs=str(d), cipher_lines=str(cl), quiet=True, gestures=True)
+    check('--inputs (no page): SKIP gestures (text inputs, no page)', any(l.startswith('SKIP gestures (text inputs') for l in ls))
+    real_env, real_run = pf.node_env, _sp.run
+    try:
+        pf.node_env = lambda: (None, 'no node on PATH')
+        g = pf.check_gestures(good)
+        check('no node/playwright: SKIP gestures (no node/playwright: ...), never a pass', g[0] is None and g[1].startswith('SKIP gestures (no node/playwright: no node on PATH)'))
+        ok, ls = run(good, str(cl), gestures=True)
+        check('...in a full run the SKIP line is printed as is and the last line says gestures were not checked',
+              ok and 'SKIP gestures (no node/playwright: no node on PATH)' in '\n'.join(ls) and 'gestures' in ls[-1].split('not checked')[-1])
+        buf = _io.StringIO()
+        with _cl.redirect_stdout(buf):
+            try: pf.main(['--gestures', good]); code = 0
+            except SystemExit as e: code = e.code
+        check('--gestures PAGE with no node/playwright: prints SKIP, exit 2', code == 2 and buf.getvalue().startswith('SKIP gestures'))
+        seen = {}
+        def fake(out, rc):
+            def f(cmd, **kw):
+                seen['cmd'], seen['kw'] = cmd, kw; return _sp.CompletedProcess(cmd, rc, out, '')
+            return f
+        g = pf.check_gestures(good, env={}, runner=fake('ok   iPhone 13: still hold\nok   desktop: tap\nskip iPhone 13: no ref tile\nALL PASS\n', 0))
+        check('wiring: node runs test_gestures.js on the page, from browser_tests/ (mock_db.js beside it)',
+              seen['cmd'][1] == pf.GESTURE_JS and seen['cmd'][2] == os.path.abspath(good) and seen['kw']['cwd'] == os.path.dirname(pf.GESTURE_JS))
+        check('wiring: all ok -> PASS with the counts', g[0] is True and '2 checks, 1 skipped' in g[1])
+        g = pf.check_gestures(good, env={}, runner=fake('ok   a\nFAIL iPhone 13: drifting hold on a pile tile opens its card and moves nothing\n1 FAILED\n', 1))
+        check('wiring: a FAIL line -> FAIL, the failing line printed', g[0] is False and '1 of 2 checks FAIL' in g[1] and 'FAIL iPhone 13: drifting hold on a pile tile' in g[1])
+        g = pf.check_gestures(good, env={}, runner=fake('', 1))
+        check('wiring: a crash with no FAIL line is a FAIL, not a pass', g[0] is False and 'no FAIL line' in g[1])
+        g = pf.check_gestures(good, env={}, runner=fake('ALL PASS\n', 0))
+        check('wiring: exit 0 with no ok line at all is a FAIL, not a pass', g[0] is False)
+        def slow(cmd, **kw): raise _sp.TimeoutExpired(cmd, kw.get('timeout'))
+        check('wiring: a timeout is a FAIL', pf.check_gestures(good, env={}, runner=slow)[0] is False)
+        pf.node_env = lambda: ({}, None)
+        _sp.run = fake('ok   a\nFAIL desktop: tap on a "Check these first" tile ... opens no card\n1 FAILED\n', 1)
+        ok, ls = run(good, str(cl), gestures=True)
+        check('run(gestures=True): a gesture FAIL fails the preflight, with the failing line', not ok and line(ls, 'gestures').startswith('FAIL')
+              and 'FAIL desktop: tap on a "Check these first" tile' in line(ls, 'gestures'))
+        _sp.run = fake('ok   a\nok   b\nALL PASS\n', 0)
+        buf = _io.StringIO()
+        with _cl.redirect_stdout(buf):
+            try: pf.main(['--gestures', good]); code = 0
+            except SystemExit as e: code = e.code
+        check('--gestures PAGE: PASS, exit 0', code == 0 and buf.getvalue().startswith('PASS gestures'))
+        buf = _io.StringIO()
+        with _cl.redirect_stdout(buf):
+            try: pf.main([good, '--cipher-lines', str(cl)]); code = 0
+            except SystemExit as e: code = e.code
+        check('CLI full run: gestures run by default (PASS line), verdict PASS', code == 0 and 'PASS gestures:' in buf.getvalue())
+        buf = _io.StringIO()
+        with _cl.redirect_stdout(buf):
+            try: pf.main([good, '--cipher-lines', str(cl), '--no-gestures']); code = 0
+            except SystemExit as e: code = e.code
+        check('CLI --no-gestures: says SKIP and lists it as not checked', code == 0 and 'SKIP gestures (not run' in buf.getvalue() and 'not checked' in buf.getvalue())
+    finally:
+        pf.node_env, _sp.run = real_env, real_run
 
 print('ALL PASS' if not fails else f'{fails} FAILED')
 sys.exit(1 if fails else 0)
