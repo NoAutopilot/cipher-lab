@@ -2381,23 +2381,23 @@ Maj Eckert Di 11.30 PM Yours received [Maj Gen B. F. Butler] says he must have o
 
 Code-word tokens: H 9.
 
-**E443 | Page 241 | 5785 | mssEC 25 (obj 5952, pointer 5785), 1 Oct 1864 Ft Monroe, Sheldon to John Horner, New York, for Surgeon Charles McDougall: yellow fever is prevailing to considerable extent at Newbern, N.C.; I have thought best to notify you at once; E. McClellan (FM-F1, filed from FM-S1; row 5785/1; image-read at 2400 px by FM-S1)**
+**E443 | Page 241 | 5785 | mssEC 25 (obj 5952, pointer 5785), 1 Oct 1864 Ft Monroe, Sheldon to John Horner, New York, for Surgeon Charles McDougall: yellow fever is prevailing to considerable extent at Newbern, N.C.; I have thought best to notify you at once; E. McClellan (FM-F1, filed from FM-S1; row 5785/1; image-read at 2400 px by FM-S1 and FV-L16e; context OR I/42 pt 3 p.1153, yellow fever at New Berne; John Horner the New York operator, Plum vol. II; N3 weak, D1)**
 
-[Maj Genl U.S. Grant] Horner New York [Monroe] {time: 11 AM} [1] for Surgeon Charles McDougall [New York] [.] Yell oh [13] is prevailing to considerable extent at [Newbern] N see I have thought best to notify you at once E. McClellan Geo. D. Sheldon
+John Horner New York [Monroe] {time: 11 AM} [1] for Surgeon Charles McDougall [New York] [.] Yell oh fever is prevailing to considerable extent at [Newbern] N see I have thought best to notify you at once E. McClellan Geo. D. Sheldon
 
-Code-word tokens: H 8.
+Code-word tokens: H 6.
 
-**E445 | Page 272 | 5816 | mssEC 25 (obj 5952, pointer 5816), 6 Dec 1864 Butler's Hd Qrs, R. O'Brien to Sheldon at Ft Monroe (received), 6 PM, for D. D. Porter: Mr Baird will arrive tomorrow morning on the City of Hendron; please have him sent here with his instruments (FM-F1, filed from FM-S1; row 5816/2; image-read at 2400 px by FM-S1)**
+**E445 | Page 272 | 5816 | mssEC 25 (obj 5952, pointer 5816), 6 Dec 1864 Butler's Hd Qrs, R. O'Brien to Sheldon at Ft Monroe (received), 6 PM, for D. D. Porter: Mr Baird will arrive tomorrow morning on the City of Hendron; please have him sent here with his instruments (FM-F1, filed from FM-S1; row 5816/2; image-read at 2400 px by FM-S1 and FV-L16e, matches the transcription; N3 weak, D1)**
 
 Geo D Sheldon Ft. Monroe {time: 6 PM} for [D. D. Porter] [.] Mr Baird sly will arrive at appear [Tomorrow] morning [,] please have him sent here with his instruments [,] furies etc on city of Hendron [Maj Gen B. F. Butler] R OBrien
 
 Code-word tokens: H 7.
 
-**E446 | Page 39 | 5583 | mssEC 25 (obj 5952, pointer 5583), 12 Mar 1864 Ft Monroe, Sheldon to Maj. Eckert: General Butler desires to know if the operator at Cherrystone is the same W. A. Dunn formerly employed in the American office at Baltimore; answer quick; I don't know the reason (FM-F1, filed from FM-S1; row 5583/2)**
+**E446 | Page 39 | 5583 | mssEC 25 (obj 5952, pointer 5583), 12 Mar 1864 Ft Monroe, Sheldon to Maj. Eckert: General Butler desires to know if the operator at Cherrystone is the same W. A. Dunn formerly employed in the American office at Baltimore; answer quick; I don't know the reason (FM-F1, filed from FM-S1; row 5583/2; image-read by FV-L16e, matches the transcription; context ORN I/9 p.527, William H. Dunn, Cherrystone operator, 5 Mar 1864; N3 weak, D1)**
 
-Maj Eckert Di [Maj Gen B. F. Butler] desires to know if the wrangler at [Humboldt] Stone is the same W A Dunn formerly employed Employed [In the] American off is at [Baltimore] answer quick I dont know reason Geo D Sheldon
+Maj Eckert Di [Maj Gen B. F. Butler] desires to know if the wrangler at Cherry Stone is the same W A Dunn formerly employed Employed [In the] American off is at [Baltimore] answer quick I dont know reason Geo D Sheldon
 
-Code-word tokens: H 4.
+Code-word tokens: H 3.
 
 **E447 | Page 283 | 5827 | mssEC 25 (obj 5952, pointer 5827), 10 Dec 1864 City Point, S. H. Beckwith to Sheldon at Ft Monroe (received), for D. D. Porter: U.S.S. Saugus, six miles above City Point; telegram just received, will start down at [daylight?] tomorrow; E. R. Cole, Commander; 11 PM (FM-F1, filed from FM-S1; row 5827/0)**
 
@@ -2405,11 +2405,11 @@ Geo. D. Sheldon Ft Monroe Us S Saugus [6] [Mile]'s above [City Point] {time: 9.3
 
 Code-word tokens: H 11.
 
-**E448 | Page 249 | 5793 | mssEC 25 (obj 5952, pointer 5793), 15 Oct 1864 Washington, T. T. Eckert to Dealy at Ft Monroe (received): don't fail to be at the wharf when the Manhattan arrives from Washington with the Secretary of War on board; don't mention his coming to anyone; presume Bates has posted you fully (FM-F1, filed from FM-S1; row 5793/1)**
+**E448 | Page 249 | 5793 | mssEC 25 (obj 5952, pointer 5793), 15 Oct 1864 Washington, T. T. Eckert to Dealy at Ft Monroe (received): don't fail to be at the wharf when the Manhattan arrives from Washington with the Secretary of War on board; don't mention his coming to anyone; presume Bates has posted you fully (FM-F1, filed from FM-S1; row 5793/1; image-read by FV-L16e, matches the transcription; the companion 5793/2 is clear on the page and not yet filed; N3 weak, D1)**
 
-Dealy "F" dont fail to be at [Today] when the man hattan arrives from [Washington] with [Secretary of War] on board dont mention his coming to any one presume Bates posted you fully etc T. T. Eckert
+Dealy "F" dont fail to be at wharf when the man hattan arrives from [Washington] with [Secretary of War] on board dont mention his coming to any one presume Bates posted you fully etc T. T. Eckert
 
-Code-word tokens: H 3.
+Code-word tokens: H 2.
 
 **E466 | Page 94 | 5638 | mssEC 25 (obj 5952, pointer 5638), 29 Apr 1864 Ft Monroe, Sheldon to Maj. Eckert: I referred your telegram about Dunn to General Butler; he returns it endorsed 'I know of none and do not believe a word against him'; appears settled (FM-F1, filed from FM-S2; row 5638/0)**
 
@@ -2417,11 +2417,11 @@ Maj Eckert Di I referred your [Telegraph (-ed, -ing)] about Dunn to [Maj Gen B. 
 
 Code-word tokens: H 4.
 
-**E468 | Page 266 | 5810 | mssEC 25 (obj 5952, pointer 5810), 28 Nov 1864 City Point, S. H. Beckwith to Sheldon at Ft Monroe (received), for Butler: [if so] I will meet you [at Monroe] tomorrow at 10.30 AM and the Admiral there at 3 PM; about (FM-F1, filed from FM-S2; row 5810/1)**
+**E468 | Page 266 | 5810 | mssEC 25 (obj 5952, pointer 5810), 28 Nov 1864 City Point, S. H. Beckwith to Sheldon at Ft Monroe (received), for Butler, from Grant at City Point (10.30 AM, the time of sending; Beckwith the operator): 'will you be at Fort Monroe all day tomorrow? If so I will meet you and the Admiral there at 3 PM' (FM-F1, filed from FM-S2; row 5810/1; image-read by FV-L16e, matches the transcription; N1: OR ser. I vol. 42 pt 3 p.735, Butler Correspondence vol. V p.369, Grant Papers vol. 13)**
 
 Geo D Sheldon Ft. Monroe For [Maj Gen B. F. Butler] {time: 10.30 AM} Monday miller beat [Monroe] Alday [Tomorrow] [?] if so I will meat you and the admire all there at {time: 3 PM}  {tail: [signed] [Maj Genl U.S. Grant] about SH Beckwith}
 
-Code-word tokens: H 8.
+Code-word tokens: H 8, M 3.
 
 **E469 | Page 176 | 5720 | mssEC 25 (obj 5952, pointer 5720), 30 May 1864 7.30 PM, Gen Butler's Hd Qrs, R. O'Brien to Maj. Eckert (received): private; I hear heavy and continuous firing about 15 miles from here in the direction of the battery; it may be that Grant has reached there (FM-F1, filed from FM-S2; row 5720/0)**
 
@@ -2429,7 +2429,7 @@ Maj Eckert Di private {time: 7.30 PM} [20] poney [.] I here heavy & continuous f
 
 Code-word tokens: H 6.
 
-**E470 | Page 270 | 5814 | mssEC 25 (obj 5952, pointer 5814), 1 Dec 1864 8 AM, Butler's Hd Qrs, R. O'Brien to Sheldon at Ft Monroe (received), for D. D. Porter: your telegram received; the three monitors Mahopac, Canonicus and Saugus are ready for service; Commander Parker (FM-F1, filed from FM-S2; row 5814/0)**
+**E470 | Page 270 | 5814 | mssEC 25 (obj 5952, pointer 5814), 1 Dec 1864 8 AM, Butler's Hd Qrs, R. O'Brien to Sheldon at Ft Monroe (received), for D. D. Porter: your telegram received; the three monitors Mahopac, Canonicus and Saugus are ready for service; Commander [Wm. A.] Parker (signature plain, 'park Kerr') (FM-F1, filed from FM-S2; row 5814/0; image-read by FV-L16e, matches the transcription; N2: substance in Parker's letter of the same day, ORN I/11 p.116)**
 
 Geo D Sheldon Ft. Monroe {time: 8 AM} for [D. D. Porter] [.] Your [Telegraph (-ed, -ing)] received [.] the [3] monitors Mahopac canon cuss and Saugus are ready for service  {tail: [signed] [Command = Er (-ed, -ing)]er park Kerr R OBrien}
 
@@ -2525,7 +2525,7 @@ Code-word tokens: H 21, C 1.
 
 Code-word tokens: H 13, C 1.
 
-**E566 | Page 375 | 5919 | mssEC 25 (obj 5952, pointer 5919), 5 Mar 1865 Ft Monroe, sent 12 M, Geo. D. Sheldon to J. H. Emerick, Hd. qrs. Army of the James, for [Brig. Gen.] Jay W. Turner [Chief of Staff]: 'I was ordered to join my [regiment]. I have joined the [expedition]. Am I right?'; signed E. V. Sumner, [Colonel] First [New York] Mounted Rifles; 'Leave soon so get quick answer' (FM65-F; row 5919/2)**
+**E566 | Page 375 | 5919 | mssEC 25 (obj 5952, pointer 5919), 5 Mar 1865 Ft Monroe, sent 12 M, Geo. D. Sheldon to J. H. Emerick, Hd. qrs. Army of the James, for [Brig. Gen.] Jay W. Turner [Chief of Staff]: 'I was ordered to join my [regiment]. I have joined the [expedition]. Am I right?'; signed E. V. Sumner, [Colonel] First [New York] Mounted Rifles; 'Leave soon so get quick answer' (FM65-F; row 5919/2; image-read by FV-L16c, matches the transcription; N1: OR ser. I vol. 46 pt 2 p.847, Sumner to Turner, Fort Monroe 5 Mar 1865 12 m.; the print omits 'Colonel' and 'Leave soon so get quick answer', which are the ledger's own)**
 
 J. H. Emerick Hd. qrs. A. J. {time: 12} for [Brigadier General] Jay W. Turn her [Chief of Staff] [.] I was ordered to join my [Regiment] [.] I have joined the [Expedition] Am I right  {tail: [signed] E. V. Sumner [Colonel] first [New York] mounted rifles Leave soon so get quick answer. sent 12 M. Dealy , Geo. D. Sheldon}
 
@@ -2585,11 +2585,11 @@ J. H. Emerick H'dqrs A. J. [Norfolk] to [Maj Gen E. O. C. Ord] [.] I have just s
 
 Code-word tokens: H 27, M 1.
 
-**E577 | Page 391 | 5933 | mssEC 25 (obj 5952, pointer 5933), 18 Mar 1865 Ft Monroe, Sheldon [for] Gordon, Norfolk, from Emerick [Hd. qrs. Army of the James] (received entry): '[Secretary of War], when informed of the order [of Gen.] Abbot to issue [it], owing to matters still pending prefers that you continue in command of the district of [East] [Virginia]; you will therefore not be relieved by [Maj. Gen. Hartsuff]'; Good Day, Emerick (FM65-F; row 5933/2)**
+**E577 | Page 391 | 5933 | mssEC 25 (obj 5952, pointer 5933), 18 Mar 1865 Ft Monroe, Sheldon [for] Gordon, Norfolk, from Emerick [Hd. qrs. Army of the James] (received entry): '[Secretary of War], when informed of the order about to issue, owing to matters still pending prefers that you continue in command of the district of [East] [Virginia]; you will therefore not be relieved by [Maj. Gen. Hartsuff]'; Good Day, Emerick (FM65-F; row 5933/2; image-read by FV-L16c; N1: printed G. H. Gordon, A War Diary of Events (1882) p.384, Ord's telegram of 18 Mar 1865; the cipher copy is Hd qrs A. J. (operator Emerick), Ord's headquarters, relayed by Sheldon to Gordon at Norfolk; the signature word 'mereden' is an unread name, M)**
 
-Geo. D. Sheldon Ft MonroeFrancis for Gordon [Norfolk] [.] [Secretary of War] when informed [Of the] order [Minnesota] to issue owing to matters still pending prefers that you continue in [Command = Er (-ed, -ing)] [Of the] district of [East] [Virginia] you will there four not be relieved by [Maj Gen G. L. Hartsuff]  {tail: [signed] mereden Good Day Emerick .}
+Geo. D. Sheldon Ft MonroeFrancis for Gordon [Norfolk] [.] [Secretary of War] when informed [Of the] order abbot to issue owing to matters still pending prefers that you continue in [Command = Er (-ed, -ing)] [Of the] district of [East] [Virginia] you will [therefore] not be relieved by [Maj Gen G. L. Hartsuff]  {tail: [signed] mereden Good Day Emerick .}
 
-Code-word tokens: H 11.
+Code-word tokens: H 10, I 1.
 
 **E551 | Page 354 | 5898 | mssEC 25 (obj 5952, pointer 5898), 4 Feb 1865, received at Ft Monroe by Sheldon, closing line 'T. T. Eckert', signature word 'Buxton' (the Secretary of the Navy in the pair 5867/0 and clear copy 8511): [two] vessels exclusive of the Rhode Island at the yard or in the Roads, [available] to patrol from Cape Henry to Cape Fear River whilst troops [are moving] south; from the Secretary of the Navy to Capt. J. M. Berrien, Comdt Navy Yard Norfolk ('Berrying', plain), opening words 'Are there' ('arthur', C by print); N1: printed in ORN I/12 (page to resolve), second cipher copy holder 9953 (p.287) (FM65-E; row 5898/1; image-read by FV-L15c)**
 
@@ -2735,5 +2735,5 @@ Geo D Sheldon Ft Monroe please ascertain immed'y if [Maj Gen B. F. Butler] has [
 
 Code-word tokens: H 4.
 
-Totals over the 434 entries: H 7437, C 113, I 30, M 61, S 21, U 10.
+Totals over the 434 entries: H 7432, C 113, I 31, M 64, S 21, U 10.
 <!-- decode.py: derived block ends -->

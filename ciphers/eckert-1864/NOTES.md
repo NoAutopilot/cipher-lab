@@ -6776,3 +6776,15 @@ header). Second audit queued as WORK-QUEUE AUD2-LEDGER16-5 (E447 E471 E474).
 - One-line suggestion: file **row 5793/2** (Washington 15 Oct 1864, Eckert to Sheldon "J": the Secretary of War left Washington at noon for City Point on
   board the Manhattan; he will pass Jamestown Island early tomorrow morning), E448's companion; check OR I/42 pt 3 for Stanton's City Point visit of 16 Oct
   1864 before reading.
+
+## FIX-L16b (10 Oct 2026, account 1, for LANE LEDGER-16)
+Applied s.5 of AUDIT (FV-L16c) to E566 and E577 and of AUDIT (FV-L16e) to E468 E470 E443 E445 E446 E448, with `fortmonroe/../fixl16b_apply.py`
+(`ciphers/eckert-1864/fixl16b_apply.py`; reuses fixl15_apply.run; idempotent, skips a block with a 'FIX-L16b' note; reading*.md only by decode.py --write).
+Decoder changes: E577 `plain-at: abbot#1` (about; header "of Gen. Abbot" withdrawn), `merge: there+four` + `gloss: therefour=therefore:I`; E468
+`plain-at: alday#1`, `plain-at: beat#1`, `graded: monday/miller/about:M`, header rewritten (Grant to Butler, 10.30 AM the time of sending); E443 `plain-at: john#1`,
+`fever#1` (H 8 -> 6); E446 `plain-at: cherry#1` ([Humboldt] withdrawn); E448 `plain-at: wharf#1`, `washington#1` ([Today] withdrawn). Header/note only: E566
+(N1, OR I/46 pt 2 p.847), E470 (N2, signature Parker plain), E445. Not applied: E577 "Francis" = 12 (M) -- the decoder's line join "Monroe -" + "Francis"
+hides the token, so a `gloss:` directive could not act; recorded in the entry note. Not touched (second audits or FV-L16a pending): E564 E574 E558 E569 E447 E471
+E474 and FV-L16a's six, and E546/E569's `plain-at: washington#1`.
+Checks: decode.py, decode_no2.py, decode_no9.py `--write` then `--check` all exit 0; second apply run changes nothing; status.json and SECOND-OPINIONS-QUEUE.tsv
+carry no row for these eight (none stale); gaps_check eckert-1864 OK keep-going (exit 0).
