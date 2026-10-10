@@ -5925,6 +5925,41 @@ Left (next lane): eckert-1864 No 2 entries pp.86-182 of no2-candidates.tsv (~37 
 by D12-E2/E3 rates; N2-AI/N2-AJ/N2-R N4 needs RG 92/393/107 or the OR Supplement (owner-side or LOCAL-QUEUE); eckert-1862 `ec18_align.py --rows`
 still stale, cause untested (~1); 9877 Hurlbut token stays M.
 
+## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261010-0510, session_01TYpGVg4dqTawYWtDfvXvGq, account 2), 10 October 2026 (closed 08:4x UTC: lead followed to the end of its cheap steps, lane ~24.7 of 60)
+
+Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-10-ytbiz-family-0510-jobs.md (lane tag FAMILY-A2o).
+Started from the 0209 handoff next list; every in-scope hot row re-read in its dated sections (done, retired, or person/physical-access gated).
+Gate 0a: SESSION-SWEEP-account-2 stale-claimed since 5 Oct, proceeded. Workers 8 in 6 waves (05:15-08:25 UTC; Opus 3, Sonnet 5; all ledgered
+from get_session, archived): 18.37; orchestrator ~6.3. Account 2 seven_day `allowed_warning` throughout (continued per blast rules). No Gallica
+probe. rah-salazar HTRC EF API still PrimaryUnavailableException at 05:14 UTC (1 request). Known-text share 0.
+
+Results:
+- oldenbarnevelt-brederode-1605 (OBRED-0259 1.29, OBRED-187 4.40, OBRED-DP 2.52, OBRED-S1 1.97, OBRED-S2 2.02, OBRED-S3 1.73): NA 1.01.02 inv. 6016
+  scan 187 (leaf 143r) = P. Brederode, Stettin, 17 Oct 1604, to the griffier of the States General (M), not printed in Veenendaal II, with a
+  59-group numeral postscript (ciphertext_187.tsv, two blind passes 59/59). Pre-registered overlap with no. 92: 26 shared values vs chance 7.4/8.7,
+  p = 0.0001 -> consistent with one code list (M, not a reading). Structure (OBRED-DP): name band >= ~588 stands alone (p = 0.0001); shared word
+  order not shown (p = 0.092); lower table 30-507 spells words; pooled N = 180 too short for a falsifiable crib test. All 624 scans of 6016 now
+  looked at (one code text only); inv. 6017 (1614-1617) stride-3, 195 scans: none. 6017-6024 digitised (nl_brederode_lias.tsv), Swiss dossier
+  12569.38 not. Resolutien S.G. XIII: no decipherment note.
+- decode-1411-hhsta-vienna-1600 (D1411-NBAR 2.67): noise-matched gloss bar NON-TEST at the central reader-error rate (bar p05 0.4935 vs noisy
+  shuffle p99 0.4968); the decision turns on the reconciled error rate -> a person-settled sample (ASKS 120). p.7 not opened.
+- jan-van-nassau-1572-75 + na-oldenbarnevelt-2442-1605 (SORT-A2o 1.77): two blind sorter builds, preflight PASS, ASKS 161; account-3 orchestrator
+  to publish (the worker asks a visual check of the Oldenbarnevelt page first).
+No N3+ D2+ item, so no AUD2 row and no SO row change.
+
+**next** (for the next LANE FAMILY incarnation):
+1. oldenbarnevelt-brederode-1605: more text in the 1604-05 code is the only lever. Cheapest: the 390 unlooked scans of inv. 6017 (two sessions,
+   ~$2 each, low prior after 0/195) or a stride-3 screen of 6019/6020 (1619-1620, crisis years, ~$2 each; a later code may differ -- run the
+   OBRED-187 overlap test on any block before pooling). Also: Brederode letters to Oldenbarnevelt in NA 3.01.14 (the Holland 2613 neighbours,
+   the original of no. 92) if any are digitised -- check the EAD on disk first. No attack on N = 180.
+2. decode-1411: waits on ASKS 120 for the error rate; nothing cloud-side.
+3. ASKS 161 sorters: when the owner's sort lands, sign_sorter_apply.py then the folder's decode --check (~$1 each).
+4. Carried: rah-salazar HTRC EF rerun (~$0.2, once EF answers), Manteuffel codes 199/321 (~$5 each, low yield), es132 f.93-95 (Gallica lane),
+   Brochado letter 134 (ASKS 108), Linhares column count (person).
+Pricing: Sonnet NA sheet screens ran ~1.0 per 100 scans (1.3-2.0 each, under cap 2-3); Opus jobs 0.9-1.1x cap. Briefing lesson: seed a sheet
+screen with the target's own shape as a positive control (CTRL-PS from scan 187) once one exists.
+Excluded this incarnation: eckert-* and Huntington ledgers (LANE LEDGER-N), Gallica fetches, Armstrong/Debosnys/Birago.
+
 ## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261010-0209, session_01JchHuak89yQ8Ac1iDRfMRY, account 2), 10 October 2026 (closed 04:1x UTC: in-scope runnable supply worked, lane ~34.2 of 60)
 
 Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-10-ytbiz-family-0209-jobs.md (lane tag FAMILY-A2n).
