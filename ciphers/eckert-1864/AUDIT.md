@@ -20462,3 +20462,165 @@ a host that was answering intermittently, so they are weak negatives. 'send stea
   "[signed] [Maj Genl U.S. Grant] I Davenport" -> "[.] John I. Davenport, Lieut., Office Bureau of [Information]" (`plain: John` or a gloss as E310's);
   header note: the 1 May order it refers to is E310 (clear copy 10291).
 - Requests this session: hdl.huntington.org 22 (all 200); be-api.us.archive.org 7 (3 x 502, s.2a); googleapis 0; archive.org 0.
+
+## AUDIT (FV-L17b)
+
+Verifier FV-L17b (account 1, for LANE LEDGER-17), 10 Oct 2026, 17:55-18:3x UTC by `date -u`; a separate session from the reader FM-S65B, not
+protecting its conclusions. Scope: FM-S65B's six filings (NOTES "## FM-S65B"), by H count in reading.md **E591 (H9) E594 (H9) E592 (H5) E590 (H4)
+E593 (H4) E589 (H3)**; ciphertext.txt, War Department Cipher No. 1, Fort Monroe ledger mssEC 25 = Huntington object 5952, 2 Feb-27 Mar 1865. Nothing
+decoded beyond key look-ups in key.md. Key source for all six: `period`. No spec for eckert-1864, so `judge_plaintext.py` was not run. Intake gate
+(17:5x UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. **Step 0 is a non-test on mssEC 25**:
+nothing below is classed from step 0. Prior-work tool, run 17:5x UTC before the first priced step (`prior_work.py eckert-1864 --item-spec
+'shelfmark=Huntington mssEC 25;folio=pointer 5892|5896|5908|5910|5936|5941;date=1865-02-02..1865-03-27' --step-type audit`): exit 4 each; the
+three LEAD rows are target-level live claims (CLEAR-SWEEP, FIX-L17a, OR-CACHE2) naming the slug and no unit, covering none of these pointers;
+UNCHECKED rows are generic (Tomokiyo, solver repositories by unit: unchecked, not clear); the run wrote `prior-work.tsv`.
+Scripts (fortmonroe/): `fv_l17b_hdl.py` (+ `.out`: control + 19 fresh CISOSEARCHALL queries across all pointers; six IIIF leaves at 2400 px to
+scratch), `fv_l17b_print.py` (+ `.out`: letters-only phrase grep + KWIC over the 211 cached print-check volumes incl. OR I/46 pts 1-3, I/47 pts 2-3,
+ORN I/11-12, Butler Corr. IV-V, O'Brien 1910), `fv_l17b_beapi.py` (+ `.out`, `fv_l17b_beapi2.out`: IA whole collection and Grant Papers 14
+`papersofulyssess0014gran`, short phrases, controls first), `fv_l17b_gb.py` (+ `.out`: Google Books, 429, below). The Sherman Letters (1894,
+IA `shermanlettersc00shergoog`) and one copy of John Sherman's Recollections (IA `johnshermansrec01shergoog`, which is vol. 2) were read from
+scratch copies, not committed.
+
+### 1. The reader's unrun checks, re-run first
+- **IA be-api** (FM-S65B: Seward, Cammann and ponchos whole-collection queries "HTTP 502 twice, UNCHECKED"; Grant Papers 14 sweep not run).
+  Controls: `"Wait at Fort Monroe until I get there"` (OR I/46 pt 2 p.198) -> 7 OR copies, hit; Grant Papers 14 `"Cashier of the National Bank"`
+  (FM-S65B's 5914/2 snippet) -> hit. Then: `"retained no copy"` whole collection 10 hits, none 1865 (a Zion's Herald letter of 1825, a 1966 tax
+  case, others); in Grant Papers 14 0; `"staff officer to be delivered"` (vol. 14) 0; `Seward "staff officer"` (vol. 14) 1 = the index only.
+  `"Camman" gold Norfolk` 1 (New York Times 1872, other); `"sell gold" Norfolk 1865` 10, numismatic and 1870 gold-panic material, none ours.
+  `"ponchos are not on hand"` 0; `ponchos` in vol. 14 0; `"ponchos" Ingalls` HTTP 502, retried once after 25 s, 502 again: unchecked.
+  `"Monohansett will leave"` 2 (Zion's Herald 1866, the Martha's Vineyard steamer, other); `Monohansett` in vol. 14 0. `"no torpedoes on hand"` 0;
+  `"forward immediately on receipt"` 10, none 1865. `"from Old Point on Wednesday"` 0; `"back to Goldsboro by way of"` 0; `"I am going to see
+  General Grant"` 2 (Lee at Appomattox, 1950 and a biography: other). Vol. 14 `"Old Point" Sherman Goldsboro` 1 = **Grant Papers 14 prints
+  Sherman's Old Point Comfort telegram to Grant of 27 Mar** ("All well at Goldsboro. I am coming ..."), i.e. the companion row 5941/1, not E594.
+- **Google Books, The Papers of Ulysses S. Grant vol. 13** (Nov 1864-20 Feb 1865: the edition volume for E589, E590, E591, E592): `fv_l17b_gb.py`
+  sent the control (`"six vessels" Oriental`, a vol. 13 hit for FM-S65B) and got **HTTP 429**, one retry after 25 s, 429 again; the run stopped there
+  (2 requests). **Grant Papers vol. 13 is unchecked by this audit**, as by FV-L17a and FM-S65B (whose one vol. 13 snippet for 5896/0, "not all
+  thre...", is a different telegram).
+
+### 2. Duplicates, image
+- **Duplicate diff** (pointers and subjects Monohansett / staff officer, no copy / Radford, torpedoes / Camman, gold / ponchos, Ingalls / John
+  Sherman, Old Point against every `###` header in ciphertext*.txt and reading*.md, mssEC 18/19/25): no duplicate. Sister rows: **E557** (5907/1,
+  same day, Lynch to Wise, Bureau of Ordnance: "Sub squdron torpid owes mentioned in Bureaux letter of [25] ultimo have not been rec'd", N1 by holder
+  clear copy 7768, "Sub marine Torpedoes") is Lynch's other telegram of 16 Feb, and it settles E591's "Sub squadron" as **Submarine**
+  (Squadron = Marine, H; the clear copy's "Sub marine", C for the reading). **E541** (5887, 24 Jan, Wise to Lynch: "Will not the torpedoes on hand
+  or those on board the Stromboli ... answer") is the January stage of the same supply question (holder clear copy 9943). The row ending at the top of 5941 (continued from 5940;
+  Sherman to Stanton, sent 1.30 PM) and **5941/1** (Sherman to Grant, sent 1.10 PM), unfiled, share E594's leaf and hour.
+- **Image eye check this session, every graded line** (IIIF leaves at 2400 px from hdl.huntington.org; `tools/iiif_lines.py --image p5892.jpg`
+  found 0 line bands on these pale pencil leaves, as FV-L17a found on 5862, so PIL region crops of the same files were read instead): 5892 (E589:
+  header + three lines + Beckwith), 5896 (E590: header + five lines + Beckwith), 5908 (E591: header + six lines + Sheldon), 5910 (E592: header +
+  three lines + Sheldon), 5936 (E593: header + four lines + Beckwith), 5941 (E594: header + four lines + "sent 140 PM Dealy" + Sheldon).
+  **The transcription matches the image on all six**, including "about ann Taunton E wishes / euta meat him", "Jennie Byron I have sent the
+  letter ... inure dispatch", "polking", "Burr Muddy", "wrangled the Bureau of Ordnance for harrow / Sub squadron", "Animal harsh for Camman and
+  / Company frog unity Sell gold to fall / yoke W. Cooper", "Minnie for princess Bergen Stop the ponchos ... Canby is Shoed on Nabobs are rival /
+  here if that Wilby Sausage factory Ingalls", "Animal to Honorable John Shear man grapes I am / going tussey Jupiter at black ... Census peasant
+  flora from Old vernon on Wednesday / Kitchen".
+
+### 3. Holder's full text and print
+**Huntington CONTENTdm** (p16003coll11, CISOSEARCHALL, all pointers; one take 18:0x-18:1x UTC, 25 requests incl. 6 leaves, all 200; control
+'Inspector Inquiry evidence' -> 9678; queries fresh, none of FM-S65B's): `Monohansett` 3 (9984 = Apr 1865 cipher, 13039 = 1864 letter book, own
+pointer), `Sheldon meet arrival` 2 (own, 5745 other), `Monohansett February` 1 (own), `retained no copy` 4 (9043 Aug 1864, 10019 1865 mustering-out,
+10087 1866, own), `Secretary State staff officer` 0, `letter referred staff` 1 (own), `torpedoes hand` 4 (4642/5679 = May 1864 Pamunkey pair, 5887/9943
+= E541's 24 Jan pair), `Lynch Ordnance` 3 (5887, 9943, own), `Bureau Ordnance torpedoes` 2 (5887, 9943), `Camman` 1 (own), `sell gold` 3 (10122 1867,
+7616 1863, own), `naval officer Cooper` 2 (5546 Feb 1864 other, own), `ponchos` 1 (own), `Ingalls ponchos` 1 (own), `not on hand` 175 (generic; first
+page of results read, nothing of 22 Mar 1865), `Old Point Wednesday` 1 (own), `John Sherman` 16 (8561 = the Anderson clear copy; the rest other
+dates; none is a telegram to Senator Sherman), `Goldsboro Newbern` 0. **No clear copy of any of the six** at another pointer.
+**Print** (phrase grep and KWIC, `fv_l17b_print.out`; pages from OCR running heads):
+- **E594: not printed; its companions are.** OR ser. I vol. 47 pt 3 pp.32-33 (IA `warofrebellion014703rootrich`; running head "Chap. LIX.]
+  Correspondence, etc. Union. 33" inside the passage) prints, from "Hdqrs. Military Division of the Mississippi, Old Point, March 27, 1865 -- 12.30
+  p.m.", Sherman to Grant ("All well at Goldsborough. I am coming up to see you, but must get back as soon as possible. Therefore, get all the maps
+  ready that illustrate the Roanoke and Chowan Rivers. If Admiral Porter is there I should like to meet him") = holder 5941/1 on E594's leaf; Sherman
+  to Stanton ("I am en route for City Point to see General Grant as to my next movement, when I shall return to Goldsborough ... Let me know by
+  telegraph as soon as possible how many narrow-gauge locomotives ...") = the row ending at the top of 5941 (from 5940); and **Stanton's reply of 6.55 p.m. the same day: "Your
+  brother, Senator Sherman, will start at 8 o'clock this evening to meet you at City Point"**, the answer to E594. Same volume, Sherman (City
+  Point, 28 Mar): "I suppose John Sherman to be with General McCallum, and will prevail on him to go with me as far as Goldsborough." Grant Papers 14
+  (be-api) prints the Sherman-to-Grant telegram. The Sherman Letters (1894) have no item between 22 Jan and 6 Apr 1865 (the editor's bridge
+  "The next letter from General Sherman is a short and hurried one of April 6th"); John Sherman's Recollections vol. 1 (the 1865 volume) not read
+  (the copy fetched was vol. 2; one other copy 500). **External check for the code words**: the printed 5941/1 is the clear of the same clerk's
+  "All well at Census ... coming up to see you" with "John Black" = General Grant, City Point, so **Census = Goldsborough** and **Black = City Point**
+  are confirmed against print on the same leaf (C), and Animal = Monroe / Old Point (the print's dateline).
+- **E591: not printed.** ORN ser. I vol. 12 (IA `officialrecords10librgoog`) prints its antecedent: "U. S. S. New Ironsides, Bermuda Hundred,
+  February 14, 1865 -- 4:15 p.m. I have made a requisition for 20 torpedoes that will stand immersion. Wanted now. Wm. Radford, Commodore. H. A.
+  Wise, Chief Bureau of Ordnance" -- the same number (Harrow = 20, H) and the same kind (torpedoes that stand immersion = **sub[marine]**), read
+  independently; ORN I/11 (`officialrecordso0011unse`) prints Lynch's 24 Jan line to Parker ("The Bureau of Ordnance can not furnish the torpedoes
+  required") and Wise's 6 Dec 1864 shipment of 20 torpedoes to Fortress Monroe. Phrases `no torpedoes on hand`, `telegraphed the Bureau of
+  Ordnance`, `forward immediately on receipt`: no hit in 211 volumes ("for 20 torpedoes" hits are letters-only artefacts of "for torpedoes", rejected).
+- **E590: not printed.** OR ser. I vol. 46 pt 2 pp.352-353 prints the day's Hampton Roads traffic: Grant, City Point 2 Feb 9 a.m., to "Secretary of
+  State, Fort Monroe" ("The gentlemen here have accepted the proposed terms ..."), Seward at Fort Monroe 7 p.m., Eckert at Fort Monroe 11.30 a.m.
+  ("I arrived here at 9 o'clock this a.m.") -- the addressee (Byron = Secretary of State) and the signer (Juno = Grant) fit the day exactly, but the
+  3.30 p.m. telegram ("I have sent the letter referred to in our dispatch by the hands of a staff officer ... I retained no copy") is not there; no
+  hit for `retained no copy`, `by the hands of a staff officer`, `the letter referred to` in 211 volumes, IA be-api, Grant Papers 14 (wrong volume);
+  Grant Papers 13 unchecked (429); Lincoln's Collected Works (Basler) vol. 8 not searched.
+- **E589: not printed.** Context: Eckert's own 11.30 a.m. Fort Monroe telegram of 2 Feb (OR I/46 pt 2 p.353, "I arrived here at 9 o'clock this
+  a.m.") fits "Major E[ckert]" leaving City Point on the Monohansett about 1 a.m. that night. Monohansett elsewhere only in 1864 transport orders.
+- **E592: not printed.** Messrs. Camman & Co., bankers, New York city, exist in print (Report of the Provost Marshal General, a donation "through
+  Messrs. Camman & Co., bankers, New York city"); a private gold order, not expected in OR.
+- **E593: not printed.** `ponchos` hits OR I/33, I/36 pt 1, I/37 pt 1, I/38 pt 4, I/39 pt 2 only (1863-64, other); OR I/46 pt 3 (Mar 1865) none.
+  Context on the same leaf: Sheldon to Eckert, Fort Monroe 22 Mar (unfiled row above E593), on supplies for "Nabob" (Sheridan) at White House,
+  signed for Ingalls.
+- **Unreachable / not searched:** Grant Papers 13 (429); John Sherman's Recollections vol. 1; Sherman's Memoirs; Lincoln Collected Works vol. 8;
+  NARA RG 92/107/108; JSTOR; HathiTrust full text; the press. `tools/print_check.py` not run (its Google Books leg is throttled on this egress);
+  G3 was run by hand with the decoded phrases above (be-api whole collection + 211-volume grep).
+
+### 4. Grade and reading corrections (reading.md as of this audit; key look-ups in key.md)
+- **E589:** reading stands ("euta meat" = you to meet, plain-phonetic). Animal = Monroe, Ann = 1 AM, Taunton = Major: H 3.
+- **E590:** reading stands ("inure dispatch" = in our dispatch, plain-phonetic; "fit" unread, a null or a slip, M). Byron = Secretary of State and
+  Juno = Grant are key rows (H) and fit OR I/46 pt 2 pp.352-353 (Seward at Fort Monroe; Grant telegraphing the Secretary of State there that day):
+  FM-S65B's M on addressee and signer can be lifted to H. Jennie = 3.30 PM, Walrus = Signature: H 4.
+- **E591:** "polking" -> **[Command]ing** (Polka = Command, -ing; FV-L17a's E585 ruling): "Commodore William Radford commanding [5th] [Division],
+  New Ironsides"; "Sub [Marine]" = **submarine** (Squadron = Marine, H; E557's clear copy 7768 "Sub marine Torpedoes", C for the word; ORN I/12
+  "torpedoes that will stand immersion"). "Burr" unread (M; not in key.md); "Muddy" is a key row, "line indicator: 5 lines" (route word, not
+  content). "wrangled" = telegraphed (key.md "mangled" row, C; same clerk's spelling family). "youth" = Signature. Code-word tokens: Farmer, plaster,
+  quincy, zodiac, wrangled, harrow, squadron, youth, polkaer, polking = 10 H/C, Burr 1 M: **10 of 11**.
+- **E592:** "Animal harsh" = **[Monroe] [20]**, most likely the private telegram's dateline (Fort Monroe, 20th, the row's own date; M as
+  to role), rather than "20 (units not given)": correct the header.
+  "frog unity" = [New York] [.]; "yoke" = Signature. Content: "For approval -- Fort Monroe, 20th, for Camman and Company, New York: Sell gold to
+  fall. W. Cooper (he is naval officer)". H 5.
+- **E593:** **"Canby is Shoed on" = "can be issued on"** (plain sound-alike; not General Canby, and not "shipped") and **"Wilby Sausage factory" = "will be
+  satisfactory"** (not "sufficient"): "Captain James[?]: The ponchos are not on hand at present but can be issued on [Sheridan]'s arrival here if
+  that will be satisfactory. Ingalls." Minnie = 7.30 PM, Princess = Captain, Bergen = James, Nabobs = P. H. Sheridan: H 4; "princess Bergen" as an
+  addressee ("Captain James", a person, or "Captain, James River") stays M. "Stop" plain.
+- **E594:** reading stands. Animal = Monroe, Grapes = Washington, Jupiter = Grant, Black = City Point (C, OR I/47 pt 3 p.33 via 5941/1), Census =
+  Goldsboro (C, same), Peasant = By the way of, Flora = Newbern, Vernon = Point, Kitchen = Sherman (C, holder 8561 via 5896/1): code-word tokens
+  **9 of 9 H/C** (3 C). "tussey", "toggo" = to see, to go (plain-phonetic); "Shear man" = Sherman (plain); "Dealy" the operator.
+
+### 5. Classes (rule 10) and depth (rule 4a)
+
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E594 | **N3** | period | **D3** (9 of 9 code-word tokens H/C, 3 C; external non-statistical: OR I/47 pt 3 pp.32-33 -- Sherman at Old Point 27 Mar en route to City Point to see Grant and returning to Goldsborough; Stanton's 6.55 p.m. reply "Your brother, Senator Sherman, will start ... to meet you at City Point"; the reader's shuffled-key control loses the clause) | no prior plaintext or decipherment located; not N4: John Sherman's Recollections vol. 1, Sherman's Memoirs, Grant Papers 14 page by page (be-api only) not covered |
+| E591 | **N3** | period | **D3** (10 of 11 code-word tokens H/C, "Burr" M; external non-statistical: ORN I/12 Radford's 14 Feb requisition for 20 torpedoes "that will stand immersion" and E557's clear copy 7768, Lynch's same-day "Sub marine Torpedoes"; shuffled-key control: 5, Division, 20 read Rail Road, Winchester, B. F. Kelly) | no prior plaintext or decipherment located; not N4: Grant Papers 13 unchecked (429), ORN by grep only |
+| E590 | N3 (plaintext not located) | period | **D1** (the body is plain English that reads the same under every key; the key words are time, addressee, signature) | RULING (iii) "plain, no book reads a clause" -- **recommend not filed** (orchestrator's call); a Grant-to-Seward telegram of 2 Feb, Grant Papers 13 unchecked |
+| E593 | N3 (plaintext not located) | period | **D1** (body plain; key words time, address, Sheridan) | RULING (iii) -- **recommend not filed** (orchestrator's call) |
+| E592 | N3 (plaintext not located) | period | **D1** (18 tokens; key words dateline, New York, signature) | RULING (iii) too short -- **recommend not filed** (orchestrator's call) |
+| E589 | N3 (plaintext not located) | period | **D1** (15 tokens; Monroe, 1 AM, Major) | RULING (iii) too short -- **recommend not filed** (orchestrator's call) |
+
+- Not N4 for any: The Papers of Ulysses S. Grant vol. 13 (the volume for 2-20 Feb 1865) not searched (Google Books 429); vol. 14 by IA full-text
+  search only; NARA RG 92/107/108, JSTOR, HathiTrust full text and the press not searched; OR pages from OCR running heads.
+- **Safe sentences** (each ends "; not located in the Official Records ser. I vols. 46 and 47, ORN ser. I vols. 11-12, Butler's correspondence vols.
+  IV-V, O'Brien's Telegraphing in Battle, the Internet Archive's full-text search or the Huntington's full-text search (searched 10 Oct 2026)";
+  read at grade H with War Department Cipher No. 1):
+  - E594 (add "; The Sherman Letters (1894) has no letter of these dates; John Sherman's Recollections vol. 1 not yet searched"): "on 27 Mar 1865 at
+    1.40 p.m. Fort Monroe sent to Major Eckert in Washington a telegram from Maj. Gen. W. T. Sherman for the Hon. John Sherman: 'I am going to see
+    General Grant at City Point and expect to go back to Goldsboro by way of Newbern from Old Point on Wednesday.'"
+  - E591 (add "; The Papers of Ulysses S. Grant vol. 13 not yet searched"): "on 16 Feb 1865 Fort Monroe passed to S. H. Beckwith at City Point, for
+    Commodore William Radford commanding the 5th Division, New Ironsides, a message from Norfolk signed D. Lynch, commander and inspector of
+    ordnance: no torpedoes on hand; he had telegraphed the Bureau of Ordnance for 20 submarine torpedoes and would forward them immediately on
+    receipt."
+- **Unsafe** for all: "first", "new", "unpublished", "never printed"; for E594, any sentence implying Sherman's visit or Stanton's reply is unknown
+  (both are printed); for E593, any sentence naming General Canby.
+- **Depth sentences** (D2+): E594 "On 27 Mar 1865 Sherman, passing Fort Monroe, telegraphed his brother John Sherman that he was going to see Grant at
+  City Point and expected to return to Goldsboro by way of Newbern from Old Point on Wednesday." E591 "On 16 Feb 1865 Lynch at Norfolk told Radford
+  he had no torpedoes on hand and had telegraphed the Bureau of Ordnance for 20 submarine torpedoes, to be forwarded on receipt."
+
+### 6. For a FIX job (not applied here)
+- **E591:** "polking" -> [Command]ing (H); "Sub [Marine]" -> Submarine (gloss); "Burr" M; header "(the row has '100 Radford' ...)" -> "Commodore
+  William Radford commanding the 5th Division"; cite ORN I/12 Radford 14 Feb and E557 (5907/1) as the sister telegram.
+- **E592:** header "from Monroe, 20 (units not given)" -> "[Monroe] [20], probably the dateline Fort Monroe, 20th (M)"; "sell gold to fall (below?)" stays as read.
+- **E593:** "Canby is Shoed on" -> "can be issued on" (I, plain sound-alike); "Wilby Sausage factory" -> "will be satisfactory" (I); header
+  "Canby is shipped on (Sheridan's?) arrival ... if that will suffice" -> "can be issued on [Sheridan]'s arrival ... if that will be satisfactory".
+- **E590:** lift M on addressee (Byron) and signer (Juno) to H; "fit" M.
+- **E594:** header: add the printed companions (OR I/47 pt 3 pp.32-33; the row ending at the top of 5941 and 5941/1, unfiled, both printed, N1 if ever filed) and Stanton's reply.
+- **NOTES "## FM-S65B"**: its be-api "UNCHECKED" for E590, E592, E593 are now run (s.1; `"ponchos" Ingalls` still 502); its Google Books "vol. 14 HTTP
+  429, UNCHECKED" for E594 is superseded by the be-api vol. 14 search (s.1); "Canby is shipped" is superseded (s.4).
+- Filing (orchestrator's call): E589, E590, E592, E593 are RULING (iii) rows (D1).
+- Requests this session: hdl.huntington.org 25 (all 200); be-api about 22 (2 x 502, one unrecovered); archive.org 6 (two 500); googleapis 2 (both 429).
