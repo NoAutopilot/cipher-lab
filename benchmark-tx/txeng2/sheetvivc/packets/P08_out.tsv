@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L28	50	c	M	yes	small round c-like before f
+f102r_L28	55	p	L	yes	descender sign after y before s
+f102r_L29	42	NONE	L	yes	no separate sign between m and y
+f102r_L29	44	p	M	yes	descender p after y
+f102r_L30	5	j	M	yes	dotted j-like after m
+f102r_L30	9	g	L	yes	g/8 ambiguous loop with descender
+f102r_L30	25	NONE	M	yes	overlap duplicate of # curl m 2 tz run
+f102r_L30	26	NONE	M	yes	overlap duplicate
+f102r_L30	27	NONE	M	yes	overlap duplicate
+f102r_L30	28	NONE	M	yes	overlap duplicate
+f102r_L30	29	NONE	M	yes	overlap duplicate
+f102r_L30	35	NONE	L	yes	single dot only
+f102r_L30	38	g	L	yes	curled g-like sign
+f102r_L30	39	S	M	yes	tall descending long s
+f102r_L30	56	NONE	L	yes	only a single end dot
+f102r_L31	9	NONE	M	yes	no r between d and y

@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L19	55	{cut sign}	L	no	near end of s1, tz d d t area; unsure
+f102r_L19	56	NONE	L	no	likely part of one split sign
+f102r_L20	9	NONE	M	yes	single dot pair after p, already the neighbour colon
+f102r_L20	36	{curl}	M	yes	6-like with open curl right of S
+f102r_L21	3	NONE	L	yes	y y then m; no clear separate o
+f102r_L21	7	NONE	M	yes	one dot pair after tz only
+f102r_L21	37	2	M	yes	2-like with dash after j
+f102r_L21	48	s	L	yes	short s before p h
+f102r_L21	51	s	L	yes	short s between p and p
+f102r_L21	53	r	M	yes	r-like stroke at line end
+f102r_L22	8	2	M	yes	2-like after j
+f102r_L22	9	:	L	yes	dots after 2
+f102r_L22	19	NONE	M	yes	one dot pair before m m
+f102r_L22	35	6	M	yes	6 shape after x tz
+f102r_L23	11	s	L	yes	short s-like before o m
+f102r_L23	25	a	L	yes	small a-like between d d
