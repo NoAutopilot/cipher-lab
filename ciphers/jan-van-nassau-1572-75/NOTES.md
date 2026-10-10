@@ -1703,3 +1703,33 @@ Read so far: 22 of 28 letter tokens H/C/S in 5551 (78.6%, D3-5551 recount, uncha
 - [ ] image-check: a reader that passes the same-hand ſich control reads the 104 glyphs (planned step above)
 - [x] retry: D3-5551 two passes plus this third pass on the 104 glyphs
 Verdict: keep going: 2 internal gaps; cheapest next: control-first blind read of the 104 glyphs, ~$1.5
+
+## JVN-GLY: control-first Opus read of the 104 glyphs, WVO 5551 p3 L2 (10 Oct 2026, account 2, LANE FAMILY-A2n)
+
+Worker JVN-GLY (Opus, reading the crops directly, no subagent), brief `.claude/briefs/runs/2026-10-10-ytbiz-family-0209-jobs.md`,
+from 02:21 UTC by date -u. Gate pre-registered in `PREREG-JVN-GLY.md` (commit ab2999928, on origin/main before X3 was viewed).
+Prior work: `tools/prior_work.py jan-van-nassau-1572-75 --item-spec 'shelfmark=WVO 5551;folio=p3;date=1574-04-17;sender=Jan van Nassau;recipient=Willem van Oranje' --step-type transcribe --fetch`
+-> verdict plaintext CLEAR, exit 0 (all rows recorded CLEAR 8-9 Oct for adhoc-a95125). A first run without sender/recipient made
+a stray item adhoc-ab8737 (exit 4, LOOK/UNCHECKED); it is the same leaf, superseded by the full-spec run, nothing owed.
+
+Image: one fetch of `resources.huygens.knaw.nl/media/wvo/images/05000-05999/05551.pdf` (200, 3,266,446 bytes), p3 rendered
+`pdftoppm -r 300 -f 3 -l 3` (2481x3508, scratch). Crop command (pasted, as JVN-104):
+`python3 tools/iiif_lines.py --image <scratch>/p3-3.png --region 530,190,1770,220 --out <scratch>/crops --prefix p3 --debug`
+-> 2 lines, pitch 103. Detail crops committed in `images/jvn_gly/` (X1-X6 JPEG, boxes in manifest.json): X1-X4 at JVN-104's
+boxes; X5 = (1040,880,1200,1000) "ſich" in "ſind ſonſten viel ſich" (body line 5 of the strip), X6 = (670,880,890,990) "ſonſten"
+(long-s, no ch), both chosen from a half-scale body strip (y 460-1200) that does not include L2. Control view order (seeded
+shuffle, 20261010): X5, X1, X6, X2, X4.
+
+### (a) Control calls (written before X3 was opened)
+
+| crop | truth (set from the word's context) | read | ch? | gate |
+|---|---|---|---|---|
+| X5 | ſich (+) | ſich: tall long-s, short i, small c, h whose lower bow runs below the line and back left | yes | pass |
+| X1 | ſich (+) | ſich: long-s, i with a dot, c, h drawn as a z-shaped (ʒ-like) tail below the line | yes | pass |
+| X6 | ſonſten (-) | ſonſten: looped long-s, o-n, long-s, t-e-n | no | pass |
+| X2 | ſich (+) | ſich: long-s, i, c, h with a large descending loop | yes | pass |
+| X4 | laſſen (-) | laſſen: l-a, double long-s, e-n | no | pass |
+
+Gate (i) and (ii) pass on this reader's calls. Note for the X3 read: in this hand Kurrent "h" after "c" is a descender drawn as a
+ʒ-like tail; JVN-104's Sonnet reader called that shape a separate "ʒ" before 146. Caveat (PREREG): this reader knew the truth labels
+(it chose X5/X6 and had read JVN-104), so these controls show the shapes are distinguishable at this crop size, not blind discrimination.
