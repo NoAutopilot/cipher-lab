@@ -1,0 +1,191 @@
+code	value	class	sheet_label	passes	sheet_witness2	r4891	grade	note
+1	i	letter	J	agree	agree	agree	H	letter table and To-uncypher agree
+2	q	letter	Q	agree	agree		H	letter table and To-uncypher agree
+3	a	letter	A	agree	agree	agree	H	letter table and To-uncypher agree
+4	x	letter	X	agree	agree		H	letter table and To-uncypher agree
+5	n	letter	N	agree	agree	agree	H	letter table and To-uncypher agree
+6	e	letter	E	agree	agree	agree	H	letter table and To-uncypher agree
+7	y	letter	Y	agree	uncypher only		M	letter-table column Y at the binding on f.102v (only a digit 8 visible in two rows); value from To-uncypher
+8	p	letter	P	agree	agree	agree	H	letter table and To-uncypher agree
+9	w	letter	W	agree	agree		H	letter table and To-uncypher agree
+10	u	letter	U	agree	agree		H	letter table and To-uncypher agree
+11	nul	null	Nulls	agree	agree		H	"Nulls table and To-uncypher ""nul"""
+12	g	letter	G	agree	agree	agree	H	letter table and To-uncypher agree
+13	b	letter	B	agree	agree	agree	H	letter table and To-uncypher agree
+14	s	letter	S	agree	agree		H	letter table and To-uncypher agree
+15	nul	null	Nulls	agree	agree		H	"Nulls table and To-uncypher ""nul"""
+16	m	letter	M	agree	agree	agree	H	letter table and To-uncypher agree
+17	h	letter	H	agree	agree	agree	H	letter table and To-uncypher agree
+18	t	letter	T	agree	agree		H	letter table and To-uncypher agree
+19	k	letter	K	agree	agree	agree	H	letter table and To-uncypher agree
+20	r	letter	R	agree	agree		H	letter table and To-uncypher agree
+21	c	letter	C	agree	agree	agree	H	letter table and To-uncypher agree
+22	nul	null	Nulls	agree	agree		H	"Nulls table and To-uncypher ""nul"""
+23	f	letter	F	agree	agree	agree	H	letter table and To-uncypher agree
+24	a	letter	A	agree	agree	agree	H	letter table and To-uncypher agree
+25	f|o	letter	F,O	agree	differ	agree	M	table F,O vs To-uncypher o; code entered under two letters in the table (both copies); uncypher gives o only; f has three other codes (23 59 90)
+26	d	letter	D	agree	agree	agree	H	letter table and To-uncypher agree
+27	l	letter	L	agree	agree	agree	H	letter table and To-uncypher agree
+28	w	letter	W	agree	agree		H	letter table and To-uncypher agree
+29	s	letter	S	agree	agree		H	letter table and To-uncypher agree
+30	k|h	letter	K	agree	differ	agree	M	table K vs To-uncypher h; table and uncypher disagree on R4890; R4891 table also K 30
+31	z	letter	Z	agree	agree		H	letter table and To-uncypher agree
+32	u	letter	U	agree	agree		H	letter table and To-uncypher agree
+33	n	letter	N	agree	agree	agree	H	letter table and To-uncypher agree
+34	b	letter	B	agree	agree	agree	H	letter table and To-uncypher agree
+35	nul	null	Nulls	agree	agree		H	"Nulls table and To-uncypher ""nul"""
+36	x	letter	X	agree	agree		H	letter table and To-uncypher agree
+37	q	letter	Q	agree	agree		H	letter table and To-uncypher agree
+38	a	letter	A	agree	agree	agree	H	letter table and To-uncypher agree
+39	nul	null	Nulls	agree	agree		H	"Nulls table and To-uncypher ""nul"""
+40	h	letter	H	agree	agree	agree	H	letter table and To-uncypher agree
+41	nul	null	Nulls	agree	agree		H	"Nulls table and To-uncypher ""nul"""
+42	t	letter	T	agree	agree		H	letter table and To-uncypher agree
+43	a	letter	A	agree	agree	agree	H	letter table and To-uncypher agree
+44	o	letter	O	agree	agree	agree	H	letter table and To-uncypher agree
+45	d	letter	D	agree	agree	agree	H	letter table and To-uncypher agree
+46	r	letter	R	agree	agree		H	letter table and To-uncypher agree
+47	i|l	letter	J	agree	differ	agree	M	table J vs To-uncypher l; R4891 table also J 47
+48	m	letter	M	agree	agree	agree	H	letter table and To-uncypher agree
+49	p	letter	P	agree	agree	agree	H	letter table and To-uncypher agree
+50	e|c	letter	E	agree	differ	agree	M	table E vs To-uncypher c; R4891 table also E 50; Tomokiyo lists E=6/50/68/97 for R4890
+51	nul	null	Nulls	agree	agree		H	"Nulls table and To-uncypher ""nul"""
+52	l	letter	L	agree	agree	agree	H	letter table and To-uncypher agree
+53	c	letter	C	agree	agree	agree	H	letter table and To-uncypher agree
+54	g	letter	G	agree	agree	agree	H	letter table and To-uncypher agree
+55	z	letter	Z	agree	agree		H	letter table and To-uncypher agree
+56	t	letter	T	agree	agree		H	letter table and To-uncypher agree
+57	h	letter	H	agree	agree	agree	H	letter table and To-uncypher agree
+58	b	letter	B	agree	agree	agree	H	letter table and To-uncypher agree
+59	f	letter	F	agree	agree	agree	H	letter table and To-uncypher agree
+60	b	letter	B	agree	agree	agree	H	letter table and To-uncypher agree
+61	u	letter	U	agree	agree		H	letter table and To-uncypher agree
+62	x	letter	X	agree	agree		H	letter table and To-uncypher agree
+63	q	letter	Q	agree	agree		H	letter table and To-uncypher agree
+64	c	letter	C	agree	agree	agree	H	letter table and To-uncypher agree
+65	m	letter	M	agree	agree	agree	H	letter table and To-uncypher agree
+66	w	letter	W	agree	agree		H	letter table and To-uncypher agree
+67	o	letter	O	agree	agree	agree	H	letter table and To-uncypher agree
+68	e	letter	E	agree	agree	agree	H	letter table and To-uncypher agree
+69	n	letter	N	agree	agree	agree	H	letter table and To-uncypher agree
+70	s	letter	S	agree	agree		H	letter table and To-uncypher agree
+71	nul	null	Nulls	agree	agree		H	"Nulls table and To-uncypher ""nul"""
+72	nul	null	Nulls	agree	agree		H	"Nulls table and To-uncypher ""nul"""
+73	g	letter	G	agree	agree	agree	H	letter table and To-uncypher agree
+74	k	letter	K	agree	agree	agree	H	letter table and To-uncypher agree
+75	r	letter	R	agree	agree		H	letter table and To-uncypher agree
+76	l	letter	L	agree	agree	agree	H	letter table and To-uncypher agree
+77	p	letter	P	agree	agree	agree	H	letter table and To-uncypher agree
+78	i	letter	J	agree	agree	agree	H	letter table and To-uncypher agree
+79	d	letter	D	agree	agree	agree	H	letter table and To-uncypher agree
+80	nul	null	Nulls	agree	agree		H	"Nulls table and To-uncypher ""nul"""
+81	n	letter	N	agree	agree	agree	H	letter table and To-uncypher agree
+82	nul	null	Nulls	agree	agree		H	"Nulls table and To-uncypher ""nul"""
+83	y	letter	Y	agree	uncypher only		M	letter-table column Y at the binding on f.102v (only a digit 8 visible in two rows); value from To-uncypher
+84	q|g	letter	Q	agree	differ		M	table Q vs To-uncypher g; R4891 Q column not legible on P2 (binding)
+85	h	letter	H	agree	agree	agree	H	letter table and To-uncypher agree
+86	c	letter	C	agree	agree	agree	H	letter table and To-uncypher agree
+87	y	letter	Y	agree	uncypher only		M	letter-table column Y at the binding on f.102v (only a digit 8 visible in two rows); value from To-uncypher
+88	k	letter	K	agree	agree	agree	H	letter table and To-uncypher agree
+89	s	letter	S	agree	agree		H	letter table and To-uncypher agree
+90	f	letter	F	agree	agree	agree	H	letter table and To-uncypher agree
+91	w	letter	W	agree	agree		H	letter table and To-uncypher agree
+92	m	letter	M	agree	agree	agree	H	letter table and To-uncypher agree
+93	t	letter	T	agree	agree		H	letter table and To-uncypher agree
+94	d	letter	D	agree	agree	agree	H	letter table and To-uncypher agree
+95	l	letter	L	agree	agree	agree	H	letter table and To-uncypher agree
+96	p	letter	P	agree	agree	agree	H	letter table and To-uncypher agree
+97	e	letter	E	agree	agree	agree	H	letter table and To-uncypher agree
+98	r	letter	R	agree	agree		H	letter table and To-uncypher agree
+99	u	letter	U	agree	agree		H	letter table and To-uncypher agree
+100	o	letter	O	agree	agree	agree	H	letter table and To-uncypher agree
+101	i	letter	J	agree	agree	agree	H	letter table and To-uncypher agree
+102	nul	null	Nulls	agree	agree		H	"Nulls table and To-uncypher ""nul"""
+103	g	letter	G	agree	agree	agree	H	letter table and To-uncypher agree
+104	nul	null	Nulls	agree	agree		H	"Nulls table and To-uncypher ""nul"""
+111	nul	null	Nulls	agree	Nulls table only		M	above the To-uncypher range; the word list (not transcribed) may also use this number
+127	nul	null	Nulls	agree	Nulls table only		M	above the To-uncypher range; the word list (not transcribed) may also use this number
+128	nul	null	Nulls	agree	Nulls table only		M	above the To-uncypher range; the word list (not transcribed) may also use this number
+129	nul	null	Nulls	agree	Nulls table only		M	above the To-uncypher range; the word list (not transcribed) may also use this number
+130	nul	null	Nulls	agree	Nulls table only		M	above the To-uncypher range; the word list (not transcribed) may also use this number
+131	nul	null	Nulls	agree	Nulls table only		M	above the To-uncypher range; the word list (not transcribed) may also use this number; written twice in the Nulls table
+154	nul	null	Nulls	agree	Nulls table only		M	above the To-uncypher range; the word list (not transcribed) may also use this number
+155	nul	null	Nulls	agree	Nulls table only		M	above the To-uncypher range; the word list (not transcribed) may also use this number
+169	nul	null	Nulls	agree	Nulls table only		M	above the To-uncypher range; the word list (not transcribed) may also use this number
+539	Sweden	name	Sweden	agree			M	code overwritten in heavy ink; code heavily overwritten, reads 539 or 559; pass B filled codes as a running sequence
+540	Skonen	name	Skonen	agree			H	
+541	Holland	name	Holland	agree			H	
+542	Stockholm	name	Stockholm	agree			H	
+543	Gottenburg	name	Gottenburg	agree			H	
+544	Stralsond	name	Stralsond	agree			H	
+545	Rugen	name	Rugen	agree			H	
+546	Riga	name	Riga	agree			H	
+547	Livonia	name	Livonia	agree			H	
+548	Muscovia	name	Muscovia	agree			H	
+549	Swed: fleet	name	Swed: fleet	agree			H	
+550	k. Sweden	name	k. Sweden	agree			H	
+551	Gen. Wrangle	name	Gen. Wrangle	agree			H	
+552	Swedes	name	Swedes	agree			H	
+553	Vienna	name	Vienna	agree			H	
+554	Emper^r	name	Emper^r	agree			M	superscript r (or c) after Emper; M; superscript mark above r
+555	k. Hungary	name	k. Hungary	agree			H	
+556	Denmark	name	Denmark	agree			H	
+557	Copenhagen	name	Copenhagen	agree			H	
+558	Glackstad	name	Glackstad	agree			H	partly cut at crop edge, read from 1a
+559	k. Denm:	name	k. Denm:	agree			H	
+560	Danes	name	Danes	agree			H	
+561	Low Countries	name	Low Countries	agree			H	
+562	Holsten	name	Holsten	agree			H	
+563	Jutland	name	Jutland	agree			H	
+564	Flensburg	name	Flensburg	agree			H	
+565	Prussia	name	Prussia	agree			H	
+566	Thoren	name	Thoren	agree			H	
+567	Marienburg	name	Marienburg	agree			H	
+568	Coningburg	name	Coningburg	agree			M	first letter C or Co-ligature
+569	Pilaw	name	Pilaw	agree			H	
+570	Memel	name	Memel	agree			H	
+571	Pomeren	name	Pomeren	agree			H	
+572	Pr. Ragotsky	name	Pr. Ragotsky	agree			H	
+573	Bremen	name	Bremen	agree			H	
+574	Hamburg	name	Hamburg	agree			H	
+575	Transylvania	name	Transylvania	agree			H	
+576	Dantzick	name	Dantzick	agree			H	
+577	Lubeck	name	Lubeck	agree			H	
+578	Imperiallists	name	Imperiallists	agree			H	
+579	Liefland	name	Liefland	agree			H	
+580	H. of Austria	name	H. of Austria	agree			H	
+581	Poland	name	Poland	agree			H	
+582	Craco	name	Craco	agree			H	
+583	Warsow	name	Warsow	agree			H	
+584	Posen	name	Posen	agree			H	
+585	Polesarmy	name	Polesarmy	agree			H	
+586	k. Poland	name	k. Poland	agree			H	
+587	D. G. Muscovy	name	D. G. Muscovy	agree			H	
+588	Muscovites	name	Muscovites	agree			H	
+589	France	name	France	agree			H	
+590	k. France	name	k. France	agree			H	
+591	Fr: army	name	Fr: army	agree			H	
+592	Spaine	name	Spaine	agree			H	
+593	k. Spaine	name	k. Spaine	agree			H	
+594	Sp: Army	name	Sp: Army	agree			H	
+595	K. Scots	name	K. Scots	agree			H	
+596	D. york	name	D. york	agree			H	
+597	Brandenb:	name	Brandenb:	agree			H	
+598	El: Brand:	name	El: Brand:	agree			H	
+599	P. Ragotsky	name	P. Ragotsky	agree			H	
+600	ye Sound	name	ye Sound	agree			M	ye = y with superscript e
+601	Ballick sea	name	Ballick sea	agree			H	
+602	St: general	name	St: general	agree			H	
+603	Dutch fleet	name	Dutch fleet	agree			H	
+604	Dutch Army	name	Dutch Army	agree			H	
+605	Dan: fleet	name	Dan: fleet	agree			H	
+606	pop: Elect.n	name	pop: Elect.n	differ			M	Elect with superscript n/ur
+607	prot: Elect.n	name	prot: Elect.n	differ			M	Elect with superscript n/ur
+608	Fr: Ambass:	name	Fr: Ambass:	agree			H	
+609	Sp: Ambass:	name	Sp: Ambass:	agree			H	
+610	Dutch Ambass:	name	Dutch Ambass:	agree			H	
+611	Stetin	name	Stetin	agree			H	
+612	Amsterdam	name	Amsterdam	agree			H	
+613	Bruxels	name	Bruxels	agree			H	
+614	Strasburg	name	Strasburg	agree			H	
+# source: BL Add MS 4166 f.102v-103r (DECODE R4890); read by THUR-MEAD 10 Oct 2026 (two blind Sonnet passes + worker eye on conflicts); words ~105-538 not transcribed								

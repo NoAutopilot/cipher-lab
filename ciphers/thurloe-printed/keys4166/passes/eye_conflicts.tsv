@@ -1,0 +1,6 @@
+code	table_letter	uncypher_value	eye_table	eye_uncypher	note
+25	F,O	o	F row 2 '25' clear; O row 1 '25' clear	'25 — o' clear	code entered under two letters in the table (both copies); uncypher gives o only; f has three other codes (23 59 90)
+30	K	h	K row 2 '30' clear	'30 — h' (same form as 17 — h)	table and uncypher disagree on R4890; R4891 table also K 30
+47	J	l	J row 2 '47' clear	'47 — l' (tall stroke, no dot; passes M l/t)	R4891 table also J 47
+50	E	c	E row 2 '50' clear	'50 — c' (same open form as 53 — c and 64 — c, unlike 6 — e and 68 — e)	R4891 table also E 50; Tomokiyo lists E=6/50/68/97 for R4890
+84	Q	g	Q row 4 '84' clear	'84 — g'	R4891 Q column not legible on P2 (binding)
