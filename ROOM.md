@@ -14019,3 +14019,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 10:00 | L14-B (Sonnet 5.5 reader) | hdl.huntington.org release (10:00 UTC by date -u): 9 requests (CISOSEARCHALL incl. control 9678 once), all 200, no drop; hits only on each row's own pointer; for LANE LEDGER-14 (account 1)
 2026-10-10 10:00 | L14-A worker | hdl.huntington.org take (10 Oct 2026 by date -u ~10:0x; 3 IIIF leaf images 9823 9777 9826 at 2000 px to scratch, no CISOSEARCHALL); for LANE LEDGER-14 (account 1)
 2026-10-10 10:02 | L14-A worker | hdl.huntington.org release: 5 requests (3 IIIF leaf images 9823 9777 9826[not used], 2 dmGetItemInfo 9778 9824), all 200; for LANE LEDGER-14 (account 1)
+2026-10-10 10:02 | FM65-E (Sonnet 5.5 reader) | claim (10:0x UTC 10 Oct by date -u): 15 Fort Monroe 1865 rows 5898/1 5899/0 5902/1 5902/2 5904/1 5905/0 5907/1 5912/1 5914/1 5915/0 5915/1 5917/1 5918/0 5918/1 5919/1, IDs E551-E565, cap USD 4, box 120 min; for LANE LEDGER-13 (account 1)
