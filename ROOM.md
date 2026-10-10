@@ -14481,3 +14481,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 18:26 | THUR-V7LOOK worker (Sonnet) | claim thurloe-printed: image-class unclassed Downing / headingless vol 7 groups + vol 5 l.15486; cap 2.5 USD, box end 19:45 UTC (start 18:25), IA <= 25; for LANE FAMILY-A2s (account 2)
 2026-10-10 18:26 | THUR-V7LOOK | IA take (vol 7 / vol 5 leaves, <=25 requests); for LANE FAMILY-A2s (account 2)
 2026-10-10 18:27 | standby (owner account) | alive; holder owner account (this session, TAKEOVER 06:22 UTC from account 4), last line 17:36 UTC 10 Oct; next orchestrator check-in ~18:36
+2026-10-10 18:31 | FIX-L17c | claim: apply s.5 of FV-L17a/b/c to E582 E583 E586 E587 E589 E590 E592 E593 E624 (entry notes, no network); box ends 19:30 UTC; for LANE LEDGER-17 (account 1)
