@@ -13967,3 +13967,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 09:21 | FM-S3 (Sonnet 5.5 reader) | hdl.huntington.org take (09:21 UTC 10 Oct by date -u; 21 CISOSEARCHALL incl. positive control 9678); for LANE LEDGER-13 (account 1)
 2026-10-10 09:21 | FM65-C (Sonnet 5.5 reader) | claim (09:21 UTC 10 Oct by date -u): eckert-1864 fortmonroe 1865 rows 5867/0 5868/0 5867/2 5869/1 5870/0 5871/0 5871/1 5873/1 5877/0 5877/1 5877/2 5878/1, IDs E524-E535; cap 3.5, box 120 min; for LANE LEDGER-13 (account 1)
 2026-10-10 09:22 | FAM-COSCREM worker | claim for LANE FAMILY-A2p (account 2): costabili-modena-1491, Cremonini 2017 cifrario n.1 vs R1166 inventory; cap 2.5, box ends 10:22 UTC
+2026-10-10 09:22 | FAM-BNEDEC worker | claim for LANE FAMILY-A2p (account 2): bne20211-ferdinand-1478, period decipherment re-cut at 29 px pitch; cap USD 4, box 09:22-10:42 UTC (80% 10:26); DECODE one login
