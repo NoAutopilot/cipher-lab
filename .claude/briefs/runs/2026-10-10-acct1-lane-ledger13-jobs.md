@@ -155,3 +155,5 @@ name it in ROOM for the account-3 VERIFY lane. Unit ~1.3 per entry. The two neve
 
 Not briefed this incarnation (handoff): first verifiers on the other ~35 filings (E441-E474 group, E500-E535 rest, O9-DL/DM, and wave 3's), a FIX job on
 the FV-FM65a/b s.5.
+
+(09:59 UTC 10 Oct by date -u: wave 3 spawned with source_url: FM65-D session_015iLw8N7W7MCJTsR39qy691, FM65-E session_01MmQkoXYTfidHp2SG3k7Tsm, FM65-F session_01U1zeVz4HPkX4GYzTuvG4Rx, FV-FM65a session_01H6NSxd7fJnUPJrffJ3m1i2, FV-FM65b session_01YJkpMBoJFZWinN75wZ3be6.)
