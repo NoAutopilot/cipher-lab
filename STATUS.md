@@ -6801,6 +6801,27 @@ No counted result (nothing at N3+/D2+); one NEAR row added.
   checked: dupuy452, august-van-saksen, wvo-hessen-1564/WVO 1068, fr3669-bethune all lack an unread sibling for the rebuilt key).
 Left, runnable: the Pusterla and Duke next steps above (~$8-12 together); Marcolino f.143 after Battioni.
 
+## LANE LEDGER-16 handoff (session_01TLWfkiSj8wYTbXc7mEnE5G, account 1, blast refill after LEDGER-15), 10 October 2026 (14:40-15:5x UTC by date -u; closed: scope spent after three waves, lane about 48.8 of 60; five_hour allowed, seven_day allowed_warning throughout)
+
+Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261010-1440; jobs .claude/briefs/runs/2026-10-10-acct1-lane-ledger16-jobs.md (waves 1-3). Continued LEDGER-15 next 1-3.
+Scope: eckert-1864 Fort Monroe filings (mssEC 25). 7 workers 44.28 + orchestrator ~4.5 by get_session.
+- **First audits (FV-L16a-e, Opus), all 33 CLEAR-SWEEP NONE/NEAR filings (ONE audit each, not counted until a second):** N1 3 -- E566 (OR I/46 pt 2 p.847), E577 (G. H. Gordon,
+  A War Diary of Events 1882 p.384), E468 (OR I/42 pt 3 p.735, Butler Corr. V p.369, Grant Papers 13); N2 1 -- E470 (ORN I/11 p.116). N3 29: D3 E509 (weak) E511 E514 E521 E518
+  E527 E546 E553 E564 E574 E558 E441 E472 (= received copy of E90) E442 E473 E447; D2 E508 E506 E526 E554 E569 (weak) E469 E466 E471 E474; D1 (too short for a clause) E443 E445 E446 E448.
+- **Second audits queued, tagged account-1 for the owner-account dispatcher:** AUD2-LEDGER16-1 (FV-L16a six), -2 (FV-L16b six), -3 (E564 E574 E558 E569), -4 (FV-L16d six),
+  -5 (E447 E471 E474): 25 entries, caps 2.5/entry.
+- **FIX-L16** (FV-L15m s.5 + washington#1 on E166 E215 E250 E562 E542 E548 E550) and **FIX-L16b** (s.5 of E566 E577 E468 E470 E443 E445 E446 E448) applied; decode x3 --check 0.
+- **Lesson:** CLEAR-SWEEP's NONE missed three printed texts (E566 OR, E577 Gordon 1882, E468 OR/Butler V) -- a Sonnet sweep's NONE is a floor; Opus audits ran 7.4-9.6 per six
+  (1.2-1.6/entry), three of five over the $8 cap by 7-20% despite the 80% stop.
+**Next** (costs this lane: Opus first audit ~1.4/entry; Sonnet FIX ~0.8-0.9):
+1. After AUD2-LEDGER16-1..5 post done: one FIX (Sonnet, ~1.5, no network) applying s.5 of AUDIT (FV-L16a), (FV-L16b), (FV-L16c) [E564 E574 E558 E569 incl. E569 washington#1],
+   (FV-L16d), (FV-L16e) [E447 E471 E474] and of the five AUDIT 2 sections, on the 25 AUD2 entries (E546 washington#1 too).
+2. Unfiled rows, known text (light guardrail -- file as N1 only if a record needs it): 5679/1 (Biggs reply 20 May 1864, OR I/36 pt 3 pp.29-30 + holder 4642), 5577/1 (OR I/33 p.197),
+   5793/2 (FV-L16e NOTES), 5853/0 (Dodge request, OR I/46 pt 2 pp.34-35).
+3. Fort Monroe residue (unchanged from LEDGER-13 next 4): print-likely 1864/1865 rows are known text by design; 11 undated entries unexamined.
+4. Blocked (unchanged, no-key-material): objects 8472, 6254, 9660; 5943/1. No unaudited Fort Monroe filing remains that this lane knows of.
+Light-guardrail share (known-text work): the N1/N2 halves of the audits and FIX-L16 -- about a sixth of worker spend.
+
 ## LANE LEDGER-15 handoff (session_01RQiEtm2KntpSGrqttBnXU1, account 1, blast refill after LEDGER-13/-14), 10 October 2026 (12:40-14:5x UTC by date -u; closed: last planned wave done, lane about 54.5 of 60; five_hour allowed, seven_day allowed_warning throughout)
 
 Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261010-1239; jobs .claude/briefs/runs/2026-10-10-acct1-lane-ledger15-jobs.md (waves 1-3). Continued LEDGER-13 next 1-2.
