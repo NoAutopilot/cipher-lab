@@ -4054,7 +4054,7 @@ of Hemp Webster Jew are you all oak
 gloss: harlem=Baltimore_and_Ohio_Railroad:C
 note: MS18-R5: No. 1 (HEAD share .49 vs No. 2 .41). Printed OR I/37 pt 2 (letters-only phrase hits on three phrases, window read): body C against that print ('Major-General Hunter, West Virginia: General Grant says that such of your forces as are not required to hold the Kanawha Valley should be brought back to the line of the Baltimore and Ohio Railroad, so that by operating from that base they can prevent any raid into Maryland. He says that Ewell's corps has returned to his front, but he hears nothing of Breckinridge. H. W. Halleck, Major-General and Chief of Staff'); the ledger's closing 'Jew are you all oak' is not in the print (M). Image: transcription matches line by line (the third entry on the leaf, Martinsburg 3 July, not read here). The print's page numbers are from the OCR head only, not eye-checked. Not a key edit (rule 4).
 
-### E361 | Page 14 | 9674 | mssEC 18 (obj 10074, pointer 9674; printed page 8), 10 Feb 1864 4 PM Washington, S. H. Beckwith (label 1), for Maj. Gen. Grant at Nashville, signed Halleck, General-in-Chief: Mr Beckwith has been restored; Captain Stokes will be made quartermaster with the rank of lieutenant-colonel; Governors of States have no authority to furlough troops; report any cases and the Secretary of War will so inform the governors; tail 'Mailed letter today'; printed OR I/32 pt 2 (about p.361) (MS18-R6; row 9674/0; leaf image-read at 2400 px)
+### E361 | Page 14 | 9674 | mssEC 18 (obj 10074, pointer 9674; printed page 8), 10 Feb 1864 4 PM Washington, S. H. Beckwith (label 1), for Maj. Gen. Grant at Nashville, signed Halleck, General-in-Chief: Mr Beckwith has been restored; Captain Stokes will be made quartermaster with the rank of lieutenant-colonel; Governors of States have no authority to furlough troops; report any cases and the Secretary of War will so inform the governors; tail 'Mailed letter today'; printed OR I/32 pt 2 p.361 (print page eye-checked, FV-MS18m, IA leaf 367) (MS18-R6; row 9674/0; leaf image-read at 2400 px)
 S. H. Beckwith 1  Washn Feby 10th 1864 4. PM
 Growl Feby Federal Julia For John Empress Unity Mr
 Beck with has been restored zodiac Pilgrim Stokes will
@@ -4065,7 +4065,7 @@ and the Brutus will so in form the governors
 who have done so yoke Italy Mailed letter today
 note: MS18-R6: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .44/.41/.17). Printed OR I/32 pt 2 (IA warofrebellion322unit; the item is followed by the running head 362): Halleck to Grant, Washington 10 Feb 1864 4 p.m., clause for clause; C against the print. The closing 'Mailed letter today' is not in the print (plain, the operator's own addition). Image: transcription matches line by line (ledger page 8). Not a key edit (rule 4).
 
-### E362 | Page 226 | 9886 | mssEC 18 (obj 10074, pointer 9886; printed page 220), 3 Nov 1864 4 PM Washington, to Capt. Clowry at St Louis for Brig. Gen. Rawlins, Chief of Staff to Maj. Gen. Grant, signed Halleck: all the troops you can lay hands on in Missouri should be sent forward with the least possible delay to reinforce General Thomas; he is probably opposed by Hood's entire army and the cavalry of Wheeler and Forrest; printed OR I/41 pt 4 p.418 (MS18-R6; row 9886/1; holder transcription, leaf not eye-checked)
+### E362 | Page 226 | 9886 | mssEC 18 (obj 10074, pointer 9886; printed page 220), 3 Nov 1864 4 PM Washington, to Capt. Clowry at St Louis for Brig. Gen. Rawlins, Chief of Staff to Maj. Gen. Grant, signed Halleck: all the troops you can lay hands on in Missouri should be sent forward with the least possible delay to reinforce General Thomas; he is probably opposed by Hood's entire army and the cavalry of Wheeler and Forrest; printed OR I/41 pt 4 p.418 (print page eye-checked, FV-MS18m, IA leaf 424) (MS18-R6; row 9886/1; leaf eye-checked (FV-MS18m))
 Capt R. C. Clowry  Wash'n Nov. 3rd 1864 4 P. M.
 From Julia Pebble for Palsy Rawlins Chief of Staff
 to John Gaul zebra I am satisfied that all
@@ -4076,7 +4076,7 @@ by Handles entire Oyster and the Panama of hug
 and Halifax Yoke Italy He is in your city
 note: MS18-R6: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .54/.60/.20): the share favours No. 2 but No. 2 reads Imboden/Ammunition nonsense and No. 1 reads clause for clause; the sense picks No. 1. Printed OR I/41 pt 4 p.418 (IA warofrebellion414unit; the item sits under the head 418): Halleck to Rawlins, Chief of Staff to General Grant, Saint Louis, 3 Nov 1864 4 p.m. C against the print. The print names Forrest where the ledger has Halifax (plain, in no key row): Halifax = Forrest by print (C, one witness; 'hug' = Wheeler by print too, M in the key); 'Panama' = Cavalry (see E350). The tail 'He is in your city' is not in the print. Sibling of E337 (same day, same operator, 12 m, for Curtis).
 
-### E363 | Page 16 | 9676 | mssEC 18 (obj 10074, pointer 9676; printed page 10), 14 Feb 1864 12.30 PM Washington, S. H. Beckwith (label 1), for Maj. Gen. Grant at Nashville, signed Halleck: recruiting officers and provost marshals have been directed to send recruits to their regiments as fast as collected and to send new regiments to the field as fast as organized; in case General Schofield should be rejected, who do you want to command his department; name several to select from; printed OR I/32 pt 2 (pp.386-389) (MS18-R6; row 9676/1; holder transcription, leaf not eye-checked)
+### E363 | Page 16 | 9676 | mssEC 18 (obj 10074, pointer 9676; printed page 10), 14 Feb 1864 12.30 PM Washington, S. H. Beckwith (label 1), for Maj. Gen. Grant at Nashville, signed Halleck: recruiting officers and provost marshals have been directed to send recruits to their regiments as fast as collected and to send new regiments to the field as fast as organized; in case General Schofield should be rejected, who do you want to command his department; name several to select from; printed OR I/32 pt 2 p.389 (print page eye-checked, FV-MS18m, IA leaf 395) (MS18-R6; row 9676/1; leaf eye-checked (FV-MS18m))
 S. H. Beckwith " 1 "  Washn Feby 14th 1864 12.30 PM
 Grapes Viola Female Feby For Juno Empress Unity Wafering
 Officers & Provost Marshals have been directed to send
@@ -4087,8 +4087,8 @@ be rejected who do you want to Polka his
 Quadroon Sugar Name several to select from Youth Italy
 note: MS18-R6: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .47/.47/.21): a tie, the sense picks No. 1 (No. 2 reads Jenkins/Pemberton nonsense; the shuffled No. 1 gives the same H count, so the count control cannot fail and licenses nothing). Printed OR I/32 pt 2 (running heads 386 before and 390 after; page not narrowed): Halleck to Grant, Washington 14 Feb 1864 12.30 p.m., word for word; C against the print. 'Kiss' = Schofield and 'Polka' + 'Er' = command are key rows confirmed by the print (C). The print's closing is 'Name several to select from.'; the ledger's tail words are the signature code.
 
-### E364 | Page 109 | 9769 | mssEC 18 (obj 10074, pointer 9769; printed page 103), 29 June 1864 4 PM Washington, to Brig. Gen. Bailey care of Capt. Wooster at Cairo (operator line 'WT June Mason (#1) Cairo'), signed Meigs, Quartermaster General: Lieutenant-General Grant has decided that the Vicksburg and Shreveport Railroad shall not be repaired at present; whenever repaired the gauge should be changed to 5 feet; no engines or cars of 5 feet 6 inches gauge are in existence up North; tail 'Where is Wash Parker now'; printed OR I/34 pt 4 p.586 (MS18-R6; row 9769/1; holder transcription, leaf not eye-checked)
-WT June Mason ( #1 ) Cairo  Washn June 29th 1864
+### E364 | Page 109 | 9769 | mssEC 18 (obj 10074, pointer 9769; printed page 103), 29 June 1864 4 PM Washington, to Brig. Gen. Bailey care of Capt. Wooster at Cairo (operator line 'W. T. Mason (#1) Cairo'), signed Meigs, Quartermaster General: Lieutenant-General Grant has decided that the Vicksburg and Shreveport Railroad shall not be repaired at present; whenever repaired the gauge should be changed to 5 feet; no engines or cars of 5 feet 6 inches gauge are in existence up North; tail 'Where is Wash Parker now'; printed OR I/34 pt 4 p.586 (print page eye-checked, FV-MS18m, IA leaf 594) (MS18-R6; row 9769/1; leaf eye-checked (FV-MS18m))
+W. T. Mason ( #1 ) Cairo  Washn June 29th 1864
 Julia June Harrow padlock to Palsy Bailey Girls Care
 of Pilgrim Wooster Bladder unity Jupiter has decided that
 the Guns & Shreveport welch shall not be repaired
@@ -4096,9 +4096,10 @@ at present zebra Whenever repaired the guage should be
 changed to plaster feet pekin No Rabbits or palmettos
 of person feet plague inch guage are in existence
 sligo Tremble yoke Belcher Where is Wash Parker now
+plain: wooster
 note: MS18-R6: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .59/.43/.18): No. 1. Printed OR I/34 pt 4 p.586 (IA warofrebellion013404rootrich; item under the head 586): Meigs to Bailey (Care Captain Wooster, Cairo), Washington 29 June 1864 4 p.m.; C against the print. 'Wooster' stands for Cairo's Capt. Wooster (plain in print); the print's 'Lieutenant-General Grant' is the ledger's 'Jupiter' (= Maj Genl U.S. Grant in the key: a title difference, Grant was Lieutenant-General from March 1864; the key row's title is M). The tail 'Where is Wash Parker now' is not in the print. Context in clear at the holder: pointer 10469 (Canby, New Orleans 23 June 1864, to Halleck on the Vicksburg and Shreveport road, gauge) and 8986 (Kimber, 17 June 1864, the gauge question), both other pages, not this telegram.
 
-### E365 | Page 14 | 9674 | mssEC 18 (obj 10074, pointer 9674; printed page 8), 11 Feb 1864 4 PM Washington, S. H. Beckwith (label 1), for Maj. Gen. Grant at Nashville, signed Halleck: Congress has been more than two months discussing the draft bill and unless it soon passes we cannot fill up infantry regiments in time to supply the place of furloughed men; other armies are in the same or worse condition than yours; tail 'She's my darling'; printed OR I/32 pt 2 (about p.369) (MS18-R6; row 9674/1; leaf image-read at 2400 px)
+### E365 | Page 14 | 9674 | mssEC 18 (obj 10074, pointer 9674; printed page 8), 11 Feb 1864 4 PM Washington, S. H. Beckwith (label 1), for Maj. Gen. Grant at Nashville, signed Halleck: Congress has been more than two months discussing the draft bill and unless it soon passes we cannot fill up infantry regiments in time to supply the place of furloughed men; other armies are in the same or worse condition than yours; tail 'She's my darling'; printed OR I/32 pt 2 p.369 (print page eye-checked, FV-MS18m, IA leaf 375) (MS18-R6; row 9674/1; leaf image-read at 2400 px)
 S. H. Beckwith " 1 "  Washn Feby 11th 1864 4 PM
 Grapes Flag Feby Julia Japan Empress unity Congress has been
 more than Plank months dis = cuss = sing the draft bill
@@ -4106,9 +4107,10 @@ and unless it soon passes we can not fill up
 Squash Whips in time to supply the place of fur
 lough = ed spit zebra Other Nuisances are in the same
 or worse condition than yours Youth Ireland She's my darling
+plain: darling
 note: MS18-R6: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .46/.41/.15): No. 1. Printed OR I/32 pt 2 (running heads 368 before and 370 after): Halleck to Grant, Washington 11 Feb 1864 4 p.m., word for word; C against the print. Image: transcription matches line by line (ledger page 8). Tail 'She's my darling' is not in the print. The next entry on the leaf (A. H. Caldwell, label 2, 11 Feb 1864 4 PM) is not read here.
 
-### E366 | Page 345 | 10005 | mssEC 18 (obj 10074, pointer 10005; printed page 339), 8 May 1865 4 PM Washington (label No 1), to Caldwell at Richmond for Halleck [M], signed [Dana, M]: the Secretary of War directs that you arrest William Boulware, whose estate is Norwell Rest [M], five or six miles from [Hanover?, M] and King and Queen Court House; send him here under guard to the Judge Advocate (MS18-R6; row 10005/2; holder transcription, leaf not eye-checked)
+### E366 | Page 345 | 10005 | mssEC 18 (obj 10074, pointer 10005; printed page 339), 8 May 1865 4 PM Washington (label No 1), to Caldwell at Richmond for General-in-Chief Halleck (C, holder 7905), signed C. A. Dana (C, holder 7905): the Secretary of War directs that you arrest William Boulware, whose estate is Norwell Rest [M], five or six miles from King and Queen Court House; send him here under guard to report to the Judge Advocate General (holders 7905 of 10 May, 8728 of 13 May with the man captured; Steers lead: Bingham's request) (MS18-R6; row 10005/2; leaf eye-checked (FV-MS18m))
 Wash May 8 1865 4 PM
 Caldwell
 <deletion>platina Julia</deletion> <insertion>Julia Platina</insertion> for Ireland unity The Infant directs
@@ -4117,20 +4119,22 @@ is named Norwell rest and is plaster or
 pledge spoons from King and Queen court Hows
 Zebra Send him here under shallow to wick
 tooth judge advocate shelter Youth Insanity purity virtue
+plain: king queen
 note: MS18-R6: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .49/.44/.24): No. 1 (the 1865 HEAD share row for this pointer is not in key-share-1865.tsv, so the share is the whole-entry share above); the clear text is plain. Not located in print: letters-only phrase grep over 177 cached/scratch volumes (hits for 'Boulware' only in OR I/46 ser. other volumes about Boulware's Wharf, a place), date-window search for 8 May 1865 headings with Boulware/arrest/Richmond/Halleck in OR I/46 pt 3, I/47 pt 3, I/48 pt 2, I/49 pt 2: 0. Holder witnesses of the case at other pointers (clear): 7905 (object 8066, Richmond 10 May 1865 12.30 pm, Halleck to Dana: 'your telegraph for the arrest of Wm Boulware has been received and orders accordingly') and 8728 (object 8886, Richmond 13 May 1865, Halleck to Grant: 'Boulware has been captured and will be sent immediately to Wash'): corroborate that Boulware was ordered arrested at Dana's telegram (C for the name and the act); the 8 May telegram itself has no clear copy found.
 
-### E367 | Page 141 | 9801 | mssEC 18 (obj 10074, pointer 9801; printed page 135), 24 July 1864 10 PM Washington, McCaine at Harpers Ferry, for Maj. Gen. Hunter, signed Stanton, Secretary of War: we have dispatches from General Grant's headquarters this afternoon; he is not in Richmond and gives no intimation that the rebel army is down the Valley of the Shenandoah; where was General Crook when you last heard from him and in what direction was he operating; printed OR I/37 pt 2 (about pp.429-431) (MS18-R6; row 9801/0; holder transcription, leaf not eye-checked)
+### E367 | Page 141 | 9801 | mssEC 18 (obj 10074, pointer 9801; printed page 135), 24 July 1864 (date token 'harrow Jenny' = 20+4, print and FV-MS18m s.6) 10 PM Washington, McCaine at Harpers Ferry, for Maj. Gen. Hunter, signed Stanton, Secretary of War: we have dispatches from General Grant's headquarters this afternoon; he is not in Richmond and gives no intimation that the rebel army is down the Valley of the Shenandoah; where was General Crook when you last heard from him and in what direction was he operating; printed OR I/37 pt 2 p.429 (print page eye-checked, FV-MS18m, IA leaf 435) (MS18-R6; row 9801/0; leaf eye-checked (FV-MS18m))
 10 P. M. - McCaine H. Ferry  Washington D. C. July 24, 1864
 Growl July harrow Jenny Rebecca for Mutton paws
 We have dispatches from Jupiter's Silver this afternoon
 He is not in Galway & gives no
-intimation that the walnut oyster is down
+intimation that the walnut oyster is tannering down
 the walker of the brussels unity Where was
 Shelter Crooked when you last heard from him
 and in what direction was he operating Indus
+gloss: jenny=4_(the_unit_of_24):M
 note: MS18-R6: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .45/.39/.16): No. 1. Printed OR I/37 pt 2 (IA warofrebellion372unit; running heads 428 before, 432 after): Stanton to Hunter, War Department 24 July 1864 10 p.m.; C against the print. The print reads 'is moving down the Valley'; the ledger's word group gives 'is down' (no 'moving'); 'Galway' = Richmond and 'Jupiter's' = General Grant's by print; 'Indus' = Secretary of War (signature). Context: Hunter to Stanton 24 July 8.30 p.m. immediately above in the print.
 
-### E368 | Page 367 | 10027 | mssEC 18 (obj 10074, pointer 10027; printed page 361), 2 June 1865 Washington (hour 10 AM), Clowry at St Louis, for Maj. Gen. Pope, signed Grant: you may authorize the issuing of arms to all persons connected with the carrying of Government freight over the plains on proper security that the arms will not be lost to the Government; referred to the Secretary of War for approval; approved; printed OR I/48 pt 2 p.730 (MS18-R6; row 10027/2; holder transcription, leaf not eye-checked)
+### E368 | Page 367 | 10027 | mssEC 18 (obj 10074, pointer 10027; printed page 361), 2 June 1865 Washington (hour 10 AM), Clowry at St Louis, for Maj. Gen. Pope, signed Grant: you may authorize the issuing of arms to all persons connected with the carrying of Government freight over the plains on proper security that the arms will not be lost to the Government; referred to the Secretary of War for approval; approved; printed OR I/48 pt 2 p.730 (print page eye-checked, FV-MS18m, IA leaf 736) (MS18-R6; row 10027/2; leaf eye-checked (FV-MS18m))
 Clowry St Louis  Wash June 2 1865.
 Emily plank for Pope unity You
 may authorize the issuing of niggards
@@ -4141,9 +4145,10 @@ will not be lost to Shark
 walrus Jupiter zebra Respy referred to the
 Infant for approval before being
 dispatched webster Japan zodiac approved Indus
+plain: persons
 note: MS18-R6: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .57/.43/.20): No. 1. Printed OR I/48 pt 2 p.730 (IA warofrebellion482unit; the item ends just before the head of p.731 and follows the head 730): Grant to Pope, Washington 2 June 1865, 'Received 10 a.m.'; C against the print. 'Niggards' = arms (the key row; read by sense, the print confirms C). The referral and approval lines ('Respy referred to the Secretary of War for approval ... approved') are the ledger's own and not in the print. Holder: 10027 is this page alone.
 
-### E369 | Page 360 | 10020 | mssEC 18 (obj 10074, pointer 10020; printed page 354), 24 May 1865 Washington (hour 8.30 or 4.30 PM, M), label No 1, H. F. Lines at Macon, signed [Secretary of War, M]: you will immediately arrest Thomas J. Paxton or Parton [M] Campbell [M], who was a Confederate officer at [Chattanooga?, M], and send him under guard to Nashville to be delivered to Maj. Gen. Thomas; forward by rail (MS18-R6; row 10020/2; leaf image-read at 2400 px)
+### E369 | Page 360 | 10020 | mssEC 18 (obj 10074, pointer 10020; printed page 354), 24 May 1865 Washington (hour 8.30 or 4.30 PM, M), label No 1, H. F. Lines at Macon for the Officer Commanding at Augusta, signed [Secretary of War, M]: you will immediately arrest Thomas J. Campbell (Paxton = Camp + bell; C by holder 8756), who was confiscating officer for the Rebel Government at Knoxville, Tennessee (Chant = Chart, the clerk's spelling; 'confess skating' = confiscating), and send him under guard to Nashville to be delivered to Maj. Gen. Thomas; forward by railroad (date token 'Harsh female' = 34 for 24, female M, a clerk's slip; holder 8756) (MS18-R6; row 10020/2; leaf image-read at 2400 px)
 H. F. Lines Macon  Wash'n May 24th 1865
 Grapes Harsh female may Nelly officer Polkaing Bigelow
 You will imm'y Oakum Thomas J Paxton bell
@@ -4151,9 +4156,10 @@ Pekin who was confess skating officer forth Walnut
 Shark at Chant Bethel Pedlar and send him
 under saddle to Empress to be delivered to
 Tappan Shelby Lady yoke Indigo forward by Welch
+variant: chant=Chart:M
 note: MS18-R6: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .64/.64/.19): a tie of No. 1 and No. 2; the sense picks No. 1 (No. 2 reads Butler/Cavalry nonsense; the shuffled copy gives the same H count). Image (ledger page 354): the operator line is 'H. F. Lines, No 1, Macon' and the header 'Wash'n May 24th 1865'; the hour above the page (9.30 am) belongs to the entry above; 'No 4' at the foot is the next entry's label (T. C. Sullivan, Nashville), dropped. The name is written 'Thomas J. Parton' or 'Paxton' on the image (not settled): decoder reads the code groups 'Paxton' (name, plain) and 'bell' (Campbell?) as M. Not located in print: phrase grep (177 volumes) and date-window search for 23-24 May 1865 headings with Macon/Wilson/Nashville and Campbell/Paxton/deliver in OR I/46 pt 3, I/47 pt 3, I/48 pt 2, I/49 pt 2: 0 (I/49 pt 2 has 35 dated headings for the window, none with the terms). Holder: 'Paxton' returns 53 pages (a common cipher word in the ledger), none opened.
 
-### E370 | Page 176 | 9836 | mssEC 18 (obj 10074, pointer 9836; printed page 170), 7 Sept 1864 Washington, Horner at New York, for [Col. McCallum, M] care Masury and Whiton, 111 Fulton street, signed [Head Quarters Army, M]/Whiton: [the army] wish to know for how many 'spartons' in excess of those now in [Sherman's] command can be supplied by rail; have sent this to [Tennessee, M] (MS18-R6; row 9836/1; holder transcription, leaf not eye-checked)
+### E370 | Page 176 | 9836 | mssEC 18 (obj 10074, pointer 9836; printed page 170), 7 Sept 1864 Washington, Horner at New York, for Col. McCallum care Masury and Whiton, 111 Fulton street, signed W. H. Whiton (Military Railroads office, Washington; holders 9098, 7857), for the Head Quarters Army: wish to know for how many horses ('spartons' = Spartan = Horse, the clerk's spelling) in excess of those now in Sherman's command forage can be supplied by rail; have sent this to Tennessee (MS18-R6; row 9836/1; leaf eye-checked (FV-MS18m))
 Horner N. Y.  Washn Sept 7th 1864
 Harriet for Pandora McCallum care Masury and Whiton
 Plug publish flag Fulton street France zebra Silver
@@ -4161,6 +4167,7 @@ oyster wish to know for how many spartons
 in excess of those now in Kidnap polka
 shade can be supplied by rail zebra Have
 sent this to Adonis webster W H Whiton
+variant: spartons=Spartan:M
 note: MS18-R6: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .45/.36/.18): No. 1 (the decode gives McCallum and Fulton street as plain; 'spartons' is in no key row, M). Not located in print: phrase grep (177 volumes: 'Masury', 'Fulton street', 'supplied by rail' none) and date-window search for 7-8 Sept 1864 headings with New York/Horner/Whiton/Masury and rail in OR I/42 pt 2 (54 dated headings), I/42 pt 3 (1), I/43 pt 2 (47): 0 with the terms. Holder: 'Masury Whiton' returns pointer 9836 only (this page); no clear copy. McCallum is presumably the Director of Military Railroads (not established).
 
 ### E371 | Page 182 | 9842 | mssEC 18 (obj 10074, pointer 9842; printed page 176), 15 Sept 1864 Washington (hour 4.30 PM), Capt Bruch (operator), for Brig. Gen. Robt Allen, Chief Quartermaster at Louisville, signed Meigs, Quartermaster General: the Secretary of War directs that you withdraw from Colonel Ferry, Chief Quartermaster's Depot at Louisville, all Government funds, whether cash, notes, certificates or credits therefor, now under his control; to be done immediately; tail 'fine day'; not located in print (MS18-R7; row 9842/1; leaf image-read at 2400 px)

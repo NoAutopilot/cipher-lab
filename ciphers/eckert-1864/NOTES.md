@@ -4486,3 +4486,24 @@ Read so far: book called for 8 of 10 tested rows (4 No. 9, 2 No. 1, 2 none in ha
 - [ ] image-check: not done (disk only); labels as transcribed.
 - [n/a] retry: no step failed, so nothing to retry.
 Verdict: keep going: 2 internal gaps; cheapest next: a wave-2 reader on 9694/2 and 9699/0 under No. 9 with the print, ~$0.5
+
+## FIX-FM19 (10 Oct 2026, account 1, for LANE LEDGER)
+
+Worker FIX-FM19, 00:58-01:1x UTC by `date -u`, offline. Carries AUDIT.md s.5 of "## AUDIT (FV-MS18l)" and s.6 of "## AUDIT (FV-MS18m)" into ciphertext.txt headers and per-entry decoder lines; no key.md row touched; reading*.md only via `decode*.py --write`. Classes are the audits' (E361-E365, E367, E368 N1; E366 E369 N3; E370 N3) and untouched.
+
+**One transcription edit, permitted because FV-MS18m eye-checked it on the leaf:** E367 line 4 "is down" -> "is tannering down" (mssEC 18 pointer 9801, FV-MS18m's crop of the entry's own line, AUDIT s.6 / s.1; the print page is IA leaf 435 of warofrebellion372unit). The original is in git history. The E364 operator line "WT June Mason" -> "W. T. Mason" is the same kind of correction (AUDIT s.6; header and line).
+
+| Entry | Change | Decoder before -> after |
+|---|---|---|
+| E364 | `plain: wooster` (not Wooster = Volunteered); header "W. T. Mason" | H 23 -> H 22 |
+| E365 | `plain: darling` (tail "She's my darling", not Martinsburg); "Nuisances" = armies stays a note (key row Arms, not edited) | H 15 -> H 14 |
+| E366 | `plain: king queen` (King and Queen Court House clear, not Schofield, Danger); header: Halleck and C. A. Dana (C, holder 7905), "report to the Judge Advocate General", holders 7905/8728, Steers lead; "[Hanover?]" dropped | H 18 -> H 16 (audit: H 16) |
+| E367 | `gloss: jenny=4_(the_unit_of_24):M`; the line now carries "tannering", so Tanner = Movement H; date stays 20 in the parse, header says 24 (print) | H 12, C 1 -> H 13, C 1, M 1 |
+| E368 | `plain: persons` (not Person = 5) | H 17 -> H 16 |
+| E369 | `variant: chant=Chart:M` -> Knoxville; header: Thomas J. Campbell (Paxton = Camp + bell, C by holder 8756), confiscating officer at Knoxville, Augusta, "Harsh female" = 34 for 24 | H 21 -> H 21, M 1 (the variant spelling is graded M here; the audit counts it H) |
+| E370 | `variant: spartons=Spartan:M` -> Horse; header: horses, forage, signer W. H. Whiton (holders 9098, 7857), Head Quarters Army | H 15 -> H 15, M 1 (audit: H 16 counting the variant as H) |
+| E361-E368 | `###` header page numbers narrowed and "print page eye-checked (FV-MS18m, IA leaf n)" (leaves 367, 424, 395, 594, 375, 435, 736); "leaf not eye-checked" -> "leaf eye-checked (FV-MS18m)" for E362-E364, E366-E368, E370 | none |
+
+Not applied: E362 header label "(1)" and E370 "Kidnaps" (optional in the audit); E367's day word stays 20 in the machine date (4 is glossed). Totals over the 323 entries: H 5610 -> 5606, M 37 -> 40. Propagation (rule 10): status.json rows and PROMPT-chatgpt-e366/e369/e370.md already carry the corrected readings and counts (audit-based; the SO readings are unchanged by this job); E361-E365, E367, E368 are N1 and have no status row or SO prompt by design.
+
+Decode: `decode.py --check`, `decode_no2.py --check`, `decode_no9.py --check` each "reading ... is current", exit 0.
