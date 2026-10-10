@@ -1,0 +1,121 @@
+F1 tokens=15 no1=3(0.20) no2=3(0.20) no9=1(0.07)
+  no1: H3 C0 I0 M0
+    1250 A. M. Geo. D. Sheldon Ft Monroe Monohansett will leave for [Monroe] about {time: 1 AM} [Major] E wishes euta meat him on arrival S. H. Beckwith
+  no2: H3 C0 I0 M0
+    1250 A. M. Geo. D. Sheldon Ft Monroe Monohansett will leave for [Tennessee] about {time: 1 AM} [Our lines] E wishes euta meat him on arrival S. H. Beckwith
+  no9: H1 C0 I0 M0
+    1250 A. M. Geo. D. Sheldon Ft Monroe Monohansett will leave for animal about {time: 1.30 AM} Taunton E wishes euta meat him on arrival S. H. Beckwith
+  no1shuf: H2 C1 I0 M0
+    1250 A. M. Geo. D. Sheldon Ft Monroe Monohansett will leave for [Newbern] about {time: 1 AM} [Ferry] E wishes euta meat him on arrival S. H. Beckwith
+  no2shuf: H3 C0 I0 M0
+    1250 A. M. Geo. D. Sheldon Ft Monroe Monohansett will leave for [Wheeler] about {time: 1 AM} [Humboldt] E wishes euta meat him on arrival S. H. Beckwith
+F2 tokens=13 no1=6(0.46) no2=4(0.31) no9=3(0.23)
+  no1: H4 C0 I0 M0
+    Maj Eckert [Volunteer] Bates Did the [Secretary of War] come with the [President U.S.] answer quick Eckert {time: 4 PM} Geo D. Sheldon
+  no2: H3 C0 I0 M0
+    Maj Eckert [Wounded] Bates Did the [Donaldson] come with the Bolivia answer quick Eckert {time: 4 PM} Geo D. Sheldon
+  no9: H3 C0 I0 M0
+    Maj Eckert [Traitor] Bates Did the Bruno come with the [Heintzelman] answer quick Eckert {time: 7 PM} Geo D. Sheldon
+  no1shuf: H4 C0 I0 M0
+    Maj Eckert [Effect (-ed, -ing)] Bates Did the [Vicksburg] come with the [St Louis] answer quick Eckert {time: 4 PM} Geo D. Sheldon
+  no2shuf: H3 C0 I0 M0
+    Maj Eckert [Martinsburg] Bates Did the [Stevenson T.G.] come with the Bolivia answer quick Eckert {time: 4 PM} Geo D. Sheldon
+F3 tokens=22 no1=4(0.18) no2=5(0.23) no9=2(0.09)
+  no1: H4 C0 I0 M0
+    Geo D. Sheldon Ft Monroe {time: 3.30 PM} [Secretary of State] I have sent the letter referred to inure dispatch by the hands of a staff officer to be delivered to you. I retained no copy fit  {tail: [signed] [Maj Genl U.S. Grant]'s H. Beckwith}
+  no2: H5 C0 I0 M0
+    Geo D. Sheldon Ft Monroe {time: 3 PM} [Magruder] I have sent the letter referred to inure dispatch by the hands of a [Station] officer to be delivered to you. I retained no copy fit [Surrendered] [Jenkins]'s H. Beckwith
+  no9: H2 C0 I0 M0
+    Geo D. Sheldon Ft Monroe {time: 6 PM} Byron I have sent the letter referred to inure dispatch by the hands of a staff officer to be delivered to you. I retained no copy fit [Killed] JunoS. H. Beckwith
+  no1shuf: H4 C0 I0 M0
+    Geo D. Sheldon Ft Monroe {time: 3.30 PM} [Arizona] I have sent the letter referred to inure dispatch by the hands of a staff officer to be delivered to you. I retained no copy fit  {tail: [signed] [Abingdon]'s H. Beckwith}
+  no2shuf: H4 C1 I0 M0
+    Geo D. Sheldon Ft Monroe {time: 3 PM} [Wednesday] I have sent the letter referred to inure dispatch by the hands of a [West] officer to be delivered to you. I retained no copy fit [Captain] [Sparta]'s H. Beckwith
+F4 tokens=25 no1=11(0.44) no2=11(0.44) no9=4(0.16)
+  no1: H10 C0 I0 M0
+    Maj. Eckert Wash'n. {time: 4 PM} for [Maj Genl J. M. Schofield] [Washington] or {time: 2 AM} police [.] I arrived here today with despatches for you from [Maj Gen W. T. Sherman] will be in Annie police [Tomorrow] morning friday  {tail: [signed] [Maj Genl U.S. Grant] F. Anderson [Major] AddiseyGeo D Sheldon}
+  no2: H10 C0 I0 M0
+    Maj. Eckert Wash'n. {time: 4 PM} for [Marmaduke] [Maj Gen B. F. Butler] or {time: 2 AM} police unity I arrived here today with [McLamores Cove]es for you from [Walker] will be in Annie police [Throw] morning friday [Surrendered] [Imboden] F. Anderson [Our pickets] AddiseyGeo D Sheldon
+  no9: H4 C0 I0 M0
+    Maj. Eckert Wash'n. {time: 7 PM} for Kingdom growl or {time: 3.30 AM} police unity I arrived here today with despatches for you from Kitchen will be in Annie police [Surrounded] morning friday [Killed] John F. Anderson Tappan AddiseyGeo D Sheldon
+  no1shuf: H10 C0 I0 M0
+    Maj. Eckert Wash'n. {time: 4 PM} for [Maj Gen S. A. Hurlbut] [Gen J. M. Palmer] or {time: 2 AM} police [.] I arrived here today with despatches for you from [Gen Q. A. Gillmore] will be in Annie police [Chief of Staff] morning friday  {tail: [signed] [Diversion] F. Anderson [Secretary of War] AddiseyGeo D Sheldon}
+  no2shuf: H10 C0 I0 M0
+    Maj. Eckert Wash'n. {time: 4 PM} for [Meade G G] [Aquia Creek] or {time: 2 AM} police unity I arrived here today with [Field]es for you from [Maryland] will be in Annie police [Point] morning friday [Captain] [Communicate (-ed, -ing)] F. Anderson [Opelika] AddiseyGeo D Sheldon
+F5 tokens=37 no1=14(0.38) no2=10(0.27) no9=5(0.14)
+  no1: H11 C0 I0 M0
+    S. H. Beckwith City Point [Norfolk] for Comma door [100] Radford polking [5] [Division] New Iron sides Burr Muddy [.] No torpid owes on hand have [Telegraph (-ed, -ing)]d the Bureau of [After the] for [20] Sub [Marine] will forward immed'y on receipt  {tail: [signed] D Lynch [Command = Er (-ed, -ing)]er and Inspector Ord. Geo D. Sheldon}
+  no2: H9 C0 I0 M0
+    S. H. Beckwith City Point [Maj Gen E R S Canby] for Comma door William Radford [Commander]ing [Failure] [Danger] New Iron sides Burr Muddy [Sunday] No torpid owes on hand have [Valley]d the Bureau of [After the] for harrow Sub [North] will forward immed'y on receipt [Saturday] D Lynch polkaer and Inspector Ord. Geo D. Sheldon
+  no9: H5 C0 I0 M0
+    S. H. Beckwith City Point [Louisiana] for Comma door William Radford polking plaster quincy New Iron sides Burr Muddy [Movement] No torpid owes on hand have [Intercept]d the Bureau of Ordnance for harrow Sub [Volunteers] will forward immed'y on receipt [Troops] D Lynch polkaer and Inspector Ord. Geo D. Sheldon
+  no1shuf: H11 C0 I0 M0
+    S. H. Beckwith City Point [Rail Road] for Comma door [100] Radford polking [5] [New Hampshire] New Iron sides Burr Muddy [.] No torpid owes on hand have [Winchester]d the Bureau of [B. F. Kelly] for [20] Sub [Feint] will forward immed'y on receipt  {tail: [signed] D Lynch [Maj Gen W. T. Sherman]er and Inspector Ord. Geo D. Sheldon}
+  no2shuf: H9 C0 I0 M0
+    S. H. Beckwith City Point [Re-enforce (-ed, -ing)] for Comma door William Radford [Suffolk]ing [Evacuation] [Milledgeville] New Iron sides Burr Muddy [Carter S.P.] No torpid owes on hand have [Success]d the Bureau of [Troops] for harrow Sub [Turchin J B] will forward immed'y on receipt [Hardee] D Lynch polkaer and Inspector Ord. Geo D. Sheldon
+F6 tokens=18 no1=6(0.33) no2=4(0.22) no9=3(0.17)
+  no1: H5 C0 I0 M0
+    Maj. Eckert [Volunteer] For approvalAnimal [20] for Camman and Company [New York] [.] Sell gold to fall  {tail: [signed] W. Cooper he is naval officer Geo. D. Sheldon}
+  no2: H3 C0 I0 M0
+    Maj. Eckert [Wounded] For approvalAnimal harsh for Camman and Company [Macon] unity Sell gold to fall [100] W. Cooper he is naval officer Geo. D. Sheldon
+  no9: H3 C0 I0 M0
+    Maj. Eckert [Traitor] For approvalAnimal harsh for Camman and Company [Arkansas (river)] unity Sell gold to fall [Troops] W. Cooper he is naval officer Geo. D. Sheldon
+  no1shuf: H5 C0 I0 M0
+    Maj. Eckert [Effect (-ed, -ing)] For approvalAnimal [20] for Camman and Company [Ford (-ed, -ing)] [.] Sell gold to fall  {tail: [signed] W. Cooper he is naval officer Geo. D. Sheldon}
+  no2shuf: H3 C0 I0 M0
+    Maj. Eckert [Martinsburg] For approvalAnimal harsh for Camman and Company [Louisville] unity Sell gold to fall [100] W. Cooper he is naval officer Geo. D. Sheldon
+F7 tokens=22 no1=6(0.27) no2=5(0.23) no9=3(0.14)
+  no1: H5 C0 I0 M0
+    Geo. D. Sheldon {time: 10 AM} for Mereden if gordons commission has not yet adjourned I think it will we advisable to call before it the Cashier [Of the] National bank [Norfolk]  {tail: [signed] [Maj Genl U.S. Grant] bully boy S. H. Beckwith}
+  no2: H5 C0 I0 M0
+    Geo. D. Sheldon {time: 10 AM} for Mereden if gordons commission has not yet adjourned I think it will we advisable to call before it the Cashier [Pursue (-ed, -ing)] National bank [Maj Gen E R S Canby] [Surrounding] [Jeff Davis] bully boy S. H. Beckwith
+  no9: H3 C0 I0 M0
+    Geo. D. Sheldon {time: 7 AM} for Mereden if gordons commission has not yet adjourned I think it will we advisable to call before it the Cashier torch National bank [Louisiana] [Killed] Jersey bully boy S. H. Beckwith
+  no1shuf: H5 C0 I0 M0
+    Geo. D. Sheldon {time: 10 AM} for Mereden if gordons commission has not yet adjourned I think it will we advisable to call before it the Cashier [Goldsboro] National bank [Rail Road]  {tail: [signed] [Kingsport] bully boy S. H. Beckwith}
+  no2shuf: H5 C0 I0 M0
+    Geo. D. Sheldon {time: 10 AM} for Mereden if gordons commission has not yet adjourned I think it will we advisable to call before it the Cashier [Unite (-ed, -ing)] National bank [Re-enforce (-ed, -ing)] [Tuckers Station] [Cincinnati] bully boy S. H. Beckwith
+F8 tokens=11 no1=0(0.00) no2=0(0.00) no9=0(0.00)
+  no1: H0 C0 I0 M0
+    Maj. Eckert , WashingtonI can only suggest an immediate change of opera tours at HamletGeo. D. Sheldon
+  no2: H0 C0 I0 M0
+    Maj. Eckert , WashingtonI can only suggest an immediate change of opera tours at HamletGeo. D. Sheldon
+  no9: H0 C0 I0 M0
+    Maj. Eckert , WashingtonI can only suggest an immediate change of opera tours at HamletGeo. D. Sheldon
+  no1shuf: H0 C0 I0 M0
+    Maj. Eckert , WashingtonI can only suggest an immediate change of opera tours at HamletGeo. D. Sheldon
+  no2shuf: H0 C0 I0 M0
+    Maj. Eckert , WashingtonI can only suggest an immediate change of opera tours at HamletGeo. D. Sheldon
+F9 tokens=21 no1=4(0.19) no2=4(0.19) no9=1(0.05)
+  no1: H4 C0 I0 M0
+    Geo D. Sheldon , Ft Monroe , {time: 7.30 PM} for [Captain] [James] Stop the ponchos are not on hand at present but Canby is Shoed on [P. H. Sheriden]'s are rival here if that Wilby Sausage factory Ingalls S. H. Beckwith
+  no2: H4 C0 I0 M0
+    Geo D. Sheldon , Ft Monroe , {time: 7 PM} for [Battled [?]] [Pennsylvania] Stop the ponchos are not on hand at present but Canby is Shoed on [Schenck R C]'s are rival here if that Wilby Sausage factory Ingalls S. H. Beckwith
+  no9: H1 C0 I0 M0
+    Geo D. Sheldon , Ft Monroe , {time: 2.30 PM} for princess Bergen Stop the ponchos are not on hand at present but Canby is Shoed on nabobs are rival here if that Wilby Sausage factory Ingalls S. H. Beckwith
+  no1shuf: H4 C0 I0 M0
+    Geo D. Sheldon , Ft Monroe , {time: 7.30 PM} for [Encountered enemy in strong force] [Valley] Stop the ponchos are not on hand at present but Canby is Shoed on [Pemberton]'s are rival here if that Wilby Sausage factory Ingalls S. H. Beckwith
+  no2shuf: H4 C0 I0 M0
+    Geo D. Sheldon , Ft Monroe , {time: 7 PM} for [Yazoo] [Nashville] Stop the ponchos are not on hand at present but Canby is Shoed on [Maine]'s are rival here if that Wilby Sausage factory Ingalls S. H. Beckwith
+F10 tokens=28 no1=10(0.36) no2=11(0.39) no9=4(0.14)
+  no1: H10 C0 I0 M0
+    Maj. Eckert , [Volunteer] [Monroe] to Honorable [Maj Genl U.S. Grant] Shear man [Washington] I am going tussey [Maj Genl U.S. Grant] at [City Point] and expect toggo back to [Goldsboro] [By the way of] [Newbern] from Old [Point] on Wednesday Kitchensent 1.40 PM Dealy Geo. D. Sheldon
+  no2: H10 C0 I0 M0
+    Maj. Eckert , [Wounded] [Tennessee] to Honorable [Imboden] Shear man [Maj Gen B. F. Butler] I am going tussey [Lomax] at [Cairo] and expect toggo back to [Decherd] [Concentrate (-ed, -ing)] [Maj Gen W T Sherman] from Old [Reconnoissance] on Wednesday Kitchensent 1.40 PM Dealy Geo. D. Sheldon
+  no9: H4 C0 I0 M0
+    Maj. Eckert , [Traitor] Animal to Honorable John Shear man grapes I am going tussey Jupiter at [W. S. Sherman] and expect toggo back to [Maryland] peasant flora from Old [Maj. Gen.] on Wednesday Kitchensent 1.40 PM Dealy Geo. D. Sheldon
+  no1shuf: H10 C0 I0 M0
+    Maj. Eckert , [Effect (-ed, -ing)] [Newbern] to Honorable [Diversion] Shear man [Colonel] I am going tussey [Division] at [Gunboat] and expect toggo back to [Threaten (-ed, -ing)] [Suffolk] [Maj Genl A. E. Burnside] from Old [Alabama] on Wednesday Kitchensent 1.40 PM Dealy Geo. D. Sheldon
+  no2shuf: H10 C0 I0 M0
+    Maj. Eckert , [Martinsburg] [Wheeler] to Honorable [Communicate (-ed, -ing)] Shear man [Follow (-ed, -ing) [#]] I am going tussey [Raleigh] at [Hatch J P] and expect toggo back to [Fear] [Maj Gen B. F. Butler] [Elliott W L] from Old [Danville] on Wednesday Kitchensent 1.40 PM Dealy Geo. D. Sheldon
+F11 tokens=10 no1=2(0.20) no2=2(0.20) no9=1(0.10)
+  no1: H2 C0 I0 M0
+    Beckwith furlough [Maine]'s is hampered and under stood blue [Secretary of War] Geo. D. Sheldon
+  no2: H2 C0 I0 M0
+    Beckwith furlough [Arkansas]'s is hampered and under stood blue [Chalmers] Geo. D. Sheldon
+  no9: H1 C0 I0 M0
+    Beckwith furlough [President (United States)]'s is hampered and under stood blue indigo Geo. D. Sheldon
+  no1shuf: H2 C0 I0 M0
+    Beckwith furlough [Marmaduke]'s is hampered and under stood blue [Goldsboro] Geo. D. Sheldon
+  no2shuf: H2 C0 I0 M0
+    Beckwith furlough [-]s is hampered and under stood blue [Bear] Geo. D. Sheldon
