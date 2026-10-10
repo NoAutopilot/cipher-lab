@@ -53,3 +53,5 @@ The three readers never hold the hdl token at the same time as each other or a L
 
 Held for wave 2: first verifiers (Opus, separate sessions, ~1.4/entry, CLAUDE.md verifier template + depth per the acct3 depth bar) on every row wave 1 files
 "not located"; AUD2-LEDGER14-<n> WORK-QUEUE rows (account-3 tag) for N3+ D2+; a FIX job on the audits' s.5.
+
+(09:4x UTC 10 Oct by date -u: wave 1 spawned with source_url: L14-A session_01EjyUGmdtU5rKhYXogNeNsb, L14-B session_019KG1CDAcmR826HphyHC8P9, L14-C session_017A3ak76bcEddQEQhfQ2g4Z.)
