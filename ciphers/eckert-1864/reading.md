@@ -2165,5 +2165,11 @@ Code-word tokens: H 48, C 1.
 
 Code-word tokens: H 30.
 
-Totals over the 339 entries: H 5969, C 89, I 25, M 44, S 18, U 10.
+**E430 | Page 70 | 9730 | mssEC 18 (obj 10074, pointer 9730; printed page 64), 4 May 1864 Washington 2.30 PM, operator Geo. D. Sheldon, for [Maj. Gen. B. F. Butler], signed [Halleck]: Grant's army has crossed the Rapidan; relays Grant's message from Germanna Ford for Halleck ('The crossing of the Rapidan effected. Forty-eight hours now will demonstrate whether the enemy intends giving battle this side of Richmond. Telegraph Butler that we have crossed the Rapidan'); Grant's text printed OR I/36 pt 1 (Germanna Ford 4 May 1864, rec'd 1.50 p.m.; page not read) and Butler's Private and Official Correspondence vol. IV (IA privateofficialc04butl, pp.161-162 by OCR); Halleck's short cover text printed OR I/36 pt 2 p.391 by OCR running heads (MS18-R11; row 9730/0; leaf image-read at 2400 px, whole entry)**
+
+[Washington] {time: 2.30 PM} {date: May 4} For [Maj Gen B. F. Butler] [.] [Maj Genl U.S. Grant]'s [Army] has [Cross (-ed, -ing)]ed the [Rapidan] {date: May 4}  {tail: [signed] [General-in-Chief] [.] Here is Judah's message From Germ ana [Ford (-ed, -ing)] For Inland [Washington] [.] The [Cross (-ed, -ing)]ing of [Rapidan] effected [.] [48] hours now will demonstrate whether the [Enemy] intends giving [Battle] this side of [Richmond] [.] [Telegraph (-ed, -ing)] Know that we have [Cross (-ed, -ing)]ed the [Rapidan] [signed] [Maj Genl U.S. Grant] Chinamen}
+
+Code-word tokens: H 30.
+
+Totals over the 340 entries: H 5999, C 89, I 25, M 44, S 18, U 10.
 <!-- decode.py: derived block ends -->

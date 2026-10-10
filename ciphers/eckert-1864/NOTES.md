@@ -5678,3 +5678,49 @@ Not applied (the audits' own out-of-scope items): the E391 Dangers = Sullivan's,
 Propagation (rule 10): status.json rows for N2-KA, KB, KC (added by FV-N2g) get the post-fix completeness / depth_note counts; `depth` and `depth_pct` are the verifier's and are not raised. No SECOND-OPINIONS-QUEUE.tsv row exists for any of the 17 entries (grep, none N3+). AUDIT.md was not edited (a verifier's file).
 
 Checks: `decode.py --write`, `decode_no2.py --write`, each then `--check` "reading ... is current"; `decode_no9.py --check` current; all exit 0.
+
+## MS18-R11 (10 Oct 2026, account 1, for LANE LEDGER-12)
+
+Job: the last eight `ms18/clean-ms18.tsv` best_book 1 rows of mssEC 18 (Huntington object 10074): 9743/1 9686/2 9869/4 9730/0 9764/1 9897/1 9862/0 9885/3. Worker MS18-R11 (Sonnet), 08:20-08:4x UTC by `date -u`. Seven rows are step-0 hits and are **not filed** ("body in holder transcription"); one (9730/0) missed step 0 and is filed as **E430** (`ms18/ms18_r11_file.py`; `decode.py --write`, then `decode.py`, `decode_no2.py`, `decode_no9.py --check` all current). No row read No. 2 or No. 9. Working files: `ms18/ms18_r11_extract.py`, `ms18_r11_entries.txt`, `ms18_r11.py`, `ms18_r11_step0.py/.out`, `ms18_r11_print.py/.out`, `ms18_r11_hdl.py/.out`.
+
+Intake gate (10 Oct 2026 08:2x UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+**Prior-work step.** (1) own work: the eight row ids grepped in `ciphertext*.txt` before work: none filed; ROOM.md had no live claim on them. (2) Huntington transcription of the same pointer: step 0 below. (3) OR by date + addressee: run for the filed row only (177 cached volumes phrase-grepped, 4 May 1864 window). (4) civil-war adapter / siblings / newspapers: not run (cap; a reader files nothing for a hit).
+
+**Step 0 (`ms18_r11_step0.py`, `step0_ordered.py` functions unchanged; hit = (a) >= 0.5 and (a) > (b) p95).**
+| row | (a) | (b) p95 | hit | (c) key-dependent words |
+|---|---|---|---|---|
+| 9743/1 (23 May 1864 9 pm, McCaine to Genl; no vacancies, muster out) | 0.629 (22/35) | 0.286 | HIT | 8; brigadier cavalry david department force major volunteer |
+| 9686/2 (14 Mar 1864, Halleck to Capt Geo H. Smith; Quadrant limits) | 0.788 (26/33) | 0.273 | HIT | 7; command department eleven fort troops |
+| 9869/4 (17 Oct 1864, to Carey at Lexington Ky; Paducah, Meredith) | 0.686 (24/35) | 0.286 | HIT | 11; available department general memphis reinforce tennessee troops washburne |
+| 9730/0 -> filed E430 | 0.091 (1/11) | 0.091 | - | 10; army butler cross general grant major rapidan |
+| 9764/1 (23 June 1864 9 pm, to Genl Stahel at Martinsburg) | 0.917 (33/36) | 0.333 | HIT | 3; ammunition fredericksburg indiana |
+| 9897/1 (15 Nov 1864, to Horner NY; Beverly Tucker at Niagara Falls) | 0.765 (26/34) | 0.353 | HIT | 8; dix general grant jno major porter |
+| 9862/0 (7 Oct 1864, Sampson for J W Garrett; arms by rail) | 0.579 (11/19) | 0.316 | HIT | 8; arms ferry five harpers rail report road |
+| 9885/3 (3 Nov 1864, Dix/Butler/Grant context) | 0.611 (22/36) | 0.250 | HIT | 14; butler command dix general grant jno major telegraph troops |
+
+Seven hits, nothing filed: **body in holder transcription**. Of their (c) words, the names/places not in the transcription are a verifier's counted contribution (D1 at most), not a reader's filing. 9764/1 is largely plain text with "period" for stops.
+
+**Book per row (whole-entry vocabulary share No.1/No.2/No.9, `ms18_r11.py`).** 9743/1 .53/.36/.17; 9686/2 .38/.30/.13; 9869/4 .37/.29/.10; 9730/0 .72/.57/.28; 9764/1 .24/.19/.00; 9897/1 .32/.29/.16; 9862/0 .36/.36/.14; 9885/3 .40/.35/.17. Not discriminating on 9862/0 (tie), 9897/1, 9885/3 (0.03-0.05); the meaning-shuffled copies read the same H count as No. 1 on every row (e.g. 9730/0 H30 vs H30), so the count control cannot fail and licenses nothing: every row was read by sense (No. 1 gives Butler, Grant, Rapidan clauses; No. 2/9 nonsense), as in MS18-R8/R10.
+
+**Filed row E430 (9730/0, 4 May 1864 2.30 PM, for Butler: Grant's army has crossed the Rapidan; Grant's Germanna Ford message relayed).** Phrase grep over 177 cached volumes (`ms18_r11_print.out`): "The crossing of Rapidan effected" in OR I/36 pt 1 (IA warofrebellion361unit, Grant to Halleck, Germanna Ford 4 May 1864, rec'd 1.50 p.m., page not read) and in Butler's Private and Official Correspondence vol. IV (IA privateofficialc04butl, pp.161-162 by OCR, which also prints Halleck's 3 p.m. "Lt. General Grant Comd'g has crossed the Rapidan"); "whether the enemy intends giving battle this side of Richmond" and "forty-eight hours now will demonstrate" the same two volumes. Halleck's short cover text "General Grant's army has crossed the Rapidan" in OR I/36 pt 2 (warofrebellion362unit) p.391 by OCR running heads (390 and 392 bracket it). Rejected hits: the 4 May 1864 date windows in 361/362 for other telegrams. NOT found: the ledger's own wording "Here is [Grant's] message from Germanna Ford for [Halleck]" and its sequence (cover + quoted message in one telegram as sent): the print gives the two parts separately and in short form. So the content is C against the print (Grant's message word for word), while the sent form as a whole is not located as such. Image check: leaf 9730 at 2400 px (scratch), whole entry read: transcription matches line by line (header "Geo. D. Sheldon", 2.30 P.M.). Grades E430: H 30, C by the print for the Grant quotation; names M (Butler as addressee inferred from "Telegraph Butler" and the printed 3 p.m. relay); no I.
+
+**Holder clear-copy search (one take, 5 requests: 4 CISOSEARCHALL p16003coll11, positive control returned 9678; 1 IIIF leaf).** Three queries on clear words of E430: 0 hits. Not run for the seven step-0 hits.
+
+Requests: hdl.huntington.org 5 (all 200, take released); other hosts 0 (cached OR text only). No judge spec exists for this ledger (rule 7: none run).
+
+## Remaining gaps (MS18-R11, 10 Oct 2026)
+Read so far: 8 of 8 rows handled (1 filed, 7 step-0 hits not filed); the filed row's Grant quotation is C against the print.
+- E430 print pages (OR I/36 pt 1 Grant dispatch; Butler Corr. IV pp.161-162) - blocker: not-attempted; OCR heads only; next: IA page read, ~$0.1
+- the seven step-0 hits' (c) words (Thomas-type names, units, places) - blocker: not-attempted; a verifier's counted contribution under the ruling; next: a first verifier decides, ~$0.3 per entry
+- eye checks of the seven hit leaves - blocker: not-attempted; cap; next: `tools/iiif_lines.py --image` crops, ~$0.2 each
+
+## Escalation (MS18-R11, 10 Oct 2026)
+- [x] siblings: same-leaf rows are other telegrams (not read here); no sibling clears a gap.
+- [x] clear-pages: page text for all eight rows read on disk (sources/mssEC18); hdl clear-copy search on the filed row, none.
+- [x] known-keys: No. 1, No. 2, No. 9 and a meaning-shuffled copy on every row (count control non-discriminating by construction, read by sense).
+- [x] print: 177 cached volumes phrase-grepped and the 4 May 1864 window searched for the filed row: found in part.
+- [n/a] key-rebuild: no key row edited.
+- [x] image-check: the filed row's leaf read on the whole entry; the seven hit leaves not opened (nothing filed).
+- [x] retry: none needed.
+Verdict: keep going: 3 internal gaps (E430 page numbers; counted (c) words for 7 hits; eye checks); cheapest next: IA page read for E430, ~$0.1
