@@ -157,3 +157,24 @@ Not briefed this incarnation (handoff): first verifiers on the other ~35 filings
 the FV-FM65a/b s.5.
 
 (09:59 UTC 10 Oct by date -u: wave 3 spawned with source_url: FM65-D session_015iLw8N7W7MCJTsR39qy691, FM65-E session_01MmQkoXYTfidHp2SG3k7Tsm, FM65-F session_01U1zeVz4HPkX4GYzTuvG4Rx, FV-FM65a session_01H6NSxd7fJnUPJrffJ3m1i2, FV-FM65b session_01YJkpMBoJFZWinN75wZ3be6.)
+
+---
+
+# Wave 4 (written 10 Oct 2026 10:4x UTC by date -u; lane ~43.5 workers + ~5.7 orchestrator of 60; last job before close)
+By get_session: FM65-D 2.25 (13 filed incl. E521), FM65-E 2.44 (11 filed), FM65-F 1.79 (11 filed), FV-FM65a 6.11 (E504 E516 E519 E531 E534 E535 N3 D3 first
+audit; AUD2-LEDGER13-1 run on the owner account found E516 and E531 IN PRINT in Grant Papers vol. 13 notes -> N1), FV-FM65b 9.11 (over its $8 cap; E502 E512
+E520 E532 N3 D3, E507 N3 D2, E530 N1 by Grant Papers vol. 13; AUD2-LEDGER13-2 running on the owner account). Lesson: **The Papers of Ulysses S. Grant vol. 13
+(Jan-Feb 1865) and vol. 14 are not on IA, so be-api never searched them; their notes print Fort Monroe/City Point telegrams of Jan 1865 from the telegrams
+themselves** -- reached by Google Books snippet search (country=US, GOOGLE_BOOKS_KEY).
+
+## FIX-FM65 (Sonnet 5.5; cap $3.5, box 90 min): Grant Papers 13/14 snippet sweep of every unaudited 1865 filing, then the audits' s.5
+Part 1 (first, network): for every 1865 Fort Monroe entry filed this lane and NOT yet first-audited -- E500 E505 E506 E508 E509 E511 E513-E515 E517 E518 E521
+E525-E529 E536-E550 E551-E565 E566-E577 (re-list from ciphertext.txt; skip the twelve FV-FM65a/b entries) -- run Google Books API queries (www.googleapis.com/
+books/v1/volumes, `&country=US&key=$GOOGLE_BOOKS_KEY`, never print the key; 1.5 s apart) restricted to the Grant Papers volumes 13 and 14 (find their volume ids
+once; then `q=<phrase>` inside each, or intitle:Grant + phrase) on two distinctive decoded phrases or plain names/numbers per entry. Positive control first:
+E531 (Morgan to Rawlins 15 Jan, 778/930/5109) and E530 must hit. Record per entry: hit (volume, snippet, page if shown) / no hit, in NOTES "## FIX-FM65 (10 Oct
+2026, account 1, for LANE LEDGER-13)" as a table; a hit is an N1 candidate for the next first verifier, not a grade change by you. Report request count.
+Part 2 (no network): apply s.5 of AUDIT "## AUDIT (FV-FM65a)" and of "## AUDIT 2 ... AUD2-LEDGER13-1" (withdrawn corrections stay withdrawn) through the decode
+scripts' entry-note mechanism (FIX-FM20 method: never hand-edit reading*.md), and FV-FM65b's s.5 **only after AUD2-LEDGER13-2 has posted its done line** (it is
+live on E502 E507 E512 E520 E532; if not done by your 60th minute, leave FV-FM65b's s.5 for the next incarnation and say so). Do not file 5871/2 (in print).
+decode x3 --write/--check exit 0; depth_check; file_shrink_guard; gaps_check. status.json/SO only where an audit already set them.
