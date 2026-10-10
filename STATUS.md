@@ -6654,6 +6654,23 @@ No counted result (nothing at N3+/D2+); one NEAR row added.
   checked: dupuy452, august-van-saksen, wvo-hessen-1564/WVO 1068, fr3669-bethune all lack an unread sibling for the rebuilt key).
 Left, runnable: the Pusterla and Duke next steps above (~$8-12 together); Marcolino f.143 after Battioni.
 
+## LANE LEDGER handoff (session_016pcjMK9ShCpNwDUEG955mj, account 1, incarnation 9 of the blast refill), 10 October 2026 (9 Oct 23:42 - 10 Oct 01:3x UTC by date -u; closed: last planned wave done at 80% of cap, lane about 48.2 of 60; seven_day allowed_warning throughout)
+
+Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261009-2342; jobs .claude/briefs/runs/2026-10-10-acct1-lane-ledger9-jobs.md (waves 1-3). Eleven
+workers 43.95 + orchestrator ~4.2 by get_session. Five_hour allowed; seven_day allowed_warning on every session (not a stop under lane-common-blast).
+Result (eckert-1864; ONE audit each, not counted until a second): N3 D3 -- E351 E355 E356 E366 E369 E374 E375 E378 E381; N3 D2 -- E357 E370 E371.
+Second audits queued (account-3 tag; account 3 silent, account 4 has re-tagged 30..33): AUD2-LEDGER-34 (E351 E355 E356), -35 (E357), -36 (E366 E369 E370), -37 (E371 E374 E375), -38 (E378 E381).
+N1 at first audit (8): E359 (OR I/37 pt 1 p.589, the reader missed the volume), E361-E365 E367 E368 (FV-MS18m, page images).
+- Key: KEY-CANBY applied (FIX-FM17): Leghorn/Legend/Leopard = Canby from 11 May 1864, Hurlbut before; E55 E323 E334 E345 re-graded.
+- Read: mssEC 18 E361-E380 (MS18-R6, MS18-R7) + mssEC 19 9258/2 = E381. Fixes: FIX-FM17 (AUD2-30..33, FV-MS18i), FIX-FM18 (FV-MS18j/k), FIX-FM19 (FV-MS18l/m); decode/no2/no9 --check exit 0.
+- Yield: of 21 rows read, 12 printed in OR (or N1 by page image), 9 not located -> all 9 N3 at first audit (better than inc. 8: date-by-page-image search in the reader brief cut false "not located").
+**Next** (costs this incarnation: Sonnet reader ~0.25/row; Opus first audit ~2.5/entry; N1 confirm + eye-check ~0.63/entry; Sonnet FIX ~0.9):
+1. FIX-FM20 (Sonnet, ~1): AUDIT s.5 of "## AUDIT (FV-MS18n)" and "(FV-MS18o)" (E375 watch plain; E378 Princess = schooner C, SecWar H; E371 Ferry/Terry M; headers with holder pointers).
+2. FV N1 confirms (Opus, ~4): E372 (OR I/45 pt 2 p.82), E373 (I/39 pt 3 p.482), E376 (I/48 pt 2 p.505), E377 (I/37 pt 2 p.63), E380 (I/34 pt 3 p.480), and E379 (quoted Burbridge dispatch printed I/39 pt 1 p.20; relay itself not located -- classify honestly, may be N3 for the relay frame) + eye-check of the leaves MS18-R7 did not check.
+3. MS18-R8 (Sonnet, ~2.5): next clean-ms18.tsv rows after 9732/1 -- spares 10048/1 (Sept 1865: book test first) and 10003/2 (printed OR I/49 pt 2 per MS18-R7: confirm, file), then 9885/1, 9887/0, 9841/0, 10055/0 (pointer in ciphertext.txt: check entry), 9694/1, 9903/1, and onward (~160 left).
+4. AUD2-LEDGER-34..38 outcomes: carry any s.4 corrections in the next FIX job.
+5. E344 para 2 (D1, unclassified): only with a sibling note. Blocked (unchanged): 5648/2 5639/2 (no book in hand); Fort Monroe Jan-Apr 1865 and mssEC 18 10058/0 (no 1865 Oct book -- but E375 20 Oct 1865 read under No. 1 by sense vs No. 2/No. 9/shuffled (FV-MS18n): re-test 10058/0 with No. 1 first); 8472, 6254, 9660 (no book; Cipher No. 4 Friedman copy needs a desk browser, LOCAL-QUEUE). Anderson Galleries 1908 catalogue for E305 (LOCAL-QUEUE L70).
+
 ## LANE LEDGER handoff (session_01FeQWmACzMQn2r9uJttmV36, account 1, incarnation 8 of the blast refill), 9 October 2026 (20:40-22:3x UTC by date -u; closed: last planned wave done, lane about 48 of 60; seven_day allowed_warning throughout)
 
 Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261009-2039; jobs .claude/briefs/runs/2026-10-09-acct1-lane-ledger8-jobs.md (waves 1-3). Thirteen
