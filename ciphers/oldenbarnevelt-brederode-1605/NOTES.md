@@ -857,17 +857,46 @@ were already read leaf by leaf by YX-OBR (25 Sept 2026, `obr_6016_leaflog.tsv`, 
   positive control is a French letter of 1598 with dense figure-groups, not a Dutch three-digit run like no. 92; orders 1-259 (1602-1604) were not in the
   brief and are unlooked beyond the six sample leaves of TX-KEYS. Not a negative for the series; a negative for the sampled leaves at this resolution only.
 
-## Remaining gaps (OBRED-6016, 10 Oct 2026)
-Read so far: unmeasured; no transcription of this folder's no. 92 was attempted in this pass, which only screened scans of the sibling series (92 of 274 scans of inv. 6016 351-624 looked at)
-- the 182 unlooked scans of NA 1.01.02 inv. 6016 orders 351-624 (the two scans between each sampled one) - blocker: not-attempted; stride-3 sampling in OBRED-6016 found no cipher, a full 400 px pass needs about 182 requests (more than one session's 120-request cap); next: two more sessions of 400 px sheets, orders 352-624 not sampled, ~$1.5 each
-- orders 1-259 of inv. 6016 (1602-1604, including a bound negotiation register from about order 100) - blocker: not-attempted; only six sample leaves seen (TX-KEYS); next: the same sheet screen at stride 3, 87 requests, ~$1.5
+## OBRED-0259 (10 Oct 2026, 05:43-06:0x UTC by date -u, account 2, Sonnet)
 
-## Escalation (OBRED-6016, 10 Oct 2026)
-- [ ] siblings: inv. 6016 orders 260-350 read leaf by leaf (YX-OBR), 351-624 sampled every third scan (OBRED-6016, 92 scans, no cipher); the 182 unsampled scans and orders 1-259 remain, planned step in the gaps above
-- [ ] clear-pages: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [x] known-keys: the 10 Aug 1598 Van Aerssen slip excluded for no. 92 by design (R10-OBRED98, 6 Oct 2026); the Buzanval syllabary inv. 2028 excluded likewise (R9-OBRED4 step 0); DECODE 1600s and Palatine/Hessian keys screened (OLD-DKEY, R8-OBRED2, R9-OBRED3)
-- [ ] print: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] key-rebuild: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-- [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
-Verdict: keep going: 2 internal gaps; cheapest next: the same 400 px sheet screen of inv. 6016 orders 1-259 at stride 3 (87 requests), ~$1.5
+Brief: the same contact-sheet screen as OBRED-6016, for NA 1.01.02 inv. 6016 image orders 1-259 (1602-1604), stride 3 (scans 1, 4, ..., 259 = 87 scans).
+
+- Prior-work step: `prior_work.py` (step lookup, exit 4: one LEAD = my own live claim, four UNCHECKED rows: no unit-keyed prior work); all five recorded CLEAR in
+  `prior-work.tsv`. Checks 1-4 by hand are the folder's Premise check (a)-(c) (3 Oct 2026); nothing on file keyed to inv. 6016 orders 1-259 beyond the six sample leaves
+  of TX-KEYS (orders 1, 100, 180, 260-262). Check 5 (after a decode): not applicable, nothing decoded.
+- Route: METS (1 request) then IIIF `/full/400,/0/default.jpg` for 87 scans, 2.1 s apart, descriptive User-Agent, and `/full/1200,/0/default.jpg` for six. Requests to
+  service.archief.nl: 94 (1 METS, 87, 6), all HTTP 200, no 403/429/challenge (cap 95).
+- Method: nine contact sheets (ten scans each, seven on the last), every sheet seeded with the same two disk controls placed by a seeded shuffle (CTRL-CIPHER = inv. 2016
+  scan 31, CTRL-PLAIN = inv. 6016 order 261). One reader, this worker's own eye, no subagent. Control calls: on all nine sheets the cipher control read as
+  figure-groups and the plain control as running prose (9/9 both), so no sheet is a non-test by the brief's rule. Calls per scan: `images/6016_screen_0001_0259.tsv` (87 rows).
+- **Found: scan 187 (inv. 6016 image order 187; leaf folio-numbered "143" by the archive's pencil mark) carries a Dutch letter dated "... 17 october 1604" ending
+  "... onderdanigen ende getrouwen dienaer" with a signature beginning "P. Br..." (not read further), and directly under the signature a block of five lines of numeral
+  groups, mostly three-digit (about 85 groups by a rough count, values seen from 36 to 758 including 577, 457, 289, 217, 623, 553), with a short clear-text insertion in
+  the third-to-fourth line that I read as "oock bestaen dat dits" (reading M, not checked at native size).** Seen at 1200 px
+  (`images/na_101_02_6016_p0187_1200.jpg`) and a 3x local zoom of the block (`images/na_101_02_6016_p0187_numerals_zoom.jpg`, no request). The sign-off wording is the same
+  formula that the folder records for no. 92 ("UE. onderdanigen ende getrouwen dienaer", above). Not transcribed, not decoded, not graded: a by-eye finding on one leaf,
+  grade M. Whether this leaf is the same sender and what its cipher block belongs to is not established here.
+- Five further 1200 px looks, all plain (Glossed: no): 208 (reversed show-through of a letter dated 1604 and a note block; no numerals), 232 (Latin text with marginal
+  notes), 256 (two loose Dutch letters dated 4 Sept? and 21 Aug 1604, deleted words only), 205 (German letter of the Elector's court, an inventory slip), 85 (Dutch
+  letter of 1603, note slip). Committed beside the 187 pair.
+- Year dividers seen: 1 (1602-1603), 127 (1604); the "1605" divider is the control at 261.
+- Where it was not found, and the limits: every third scan only, so 173 of the 259 scans in 1-259 were not looked at (the two scans between each sampled one, including
+  186 and 188, which may continue the 187 letter); 400 px sheets show a numeral run of the control's density and a short code passage inside prose may not stand out;
+  the positive control is a French letter of 1598, not a Dutch three-digit run; the cipher block on 187 was found only because it is large and sits on a leaf sampled by
+  the stride. Not a negative for the series elsewhere; a negative for the other 86 sampled leaves at this resolution only.
+
+## Remaining gaps (OBRED-0259, 10 Oct 2026)
+Read so far: unmeasured; no transcription of this folder's no. 92 was attempted in this pass, which found one numeral block (scan 187, inv. 6016, 17 Oct 1604) beside it and has not transcribed it (87 of 259 scans of orders 1-259 looked at, and 92 of 274 of 351-624 by OBRED-6016)
+- scan 187 numeral block (about 85 groups) not transcribed and its clear letter text not read - blocker: not-attempted; found at the very end of this brief's 400 px screen with the request cap spent; next: fetch 186, 187, 188 at native size (3 requests), crop lines with tools/iiif_lines.py --image, two blind passes, ~$3
+- the 173 unlooked scans of NA 1.01.02 inv. 6016 orders 1-259 (two between each sampled one, 186 and 188 first) - blocker: not-attempted; the stride-3 brief and its 95-request cap stop at the sampled scans; next: 400 px sheets of the remaining scans at stride 1 around 187 (orders 181-193 first), then the rest, 173 requests over two sessions, ~$1.5 each
+- the 182 unlooked scans of NA 1.01.02 inv. 6016 orders 351-624 - blocker: not-attempted; stride-3 sampling in OBRED-6016 found no cipher; next: two more sessions of 400 px sheets, ~$1.5 each
+
+## Escalation (OBRED-0259, 10 Oct 2026)
+- [ ] siblings: inv. 6016 orders 1-259 and 351-624 sampled every third scan (OBRED-0259, OBRED-6016), 260-350 read leaf by leaf (YX-OBR); scan 187 is the one numeral block found; next: the 173 + 182 unsampled scans, 186-188 first
+- [ ] clear-pages: scan 187 has a clear Dutch letter of 17 Oct 1604 above its numerals (this section), not yet read; next: read it from the native image and compare with the neighbouring clear letters of the same bundle (orders 181-193), ~$1.5
+- [x] known-keys: the 10 Aug 1598 Van Aerssen slip excluded for no. 92 by design (R10-OBRED98, 6 Oct 2026); the Buzanval syllabary inv. 2028 excluded likewise (R9-OBRED4 step 0); DECODE 1600s and Palatine/Hessian keys screened (OLD-DKEY, R8-OBRED2, R9-OBRED3); the 187 block has not been tried against them (no transcription yet)
+- [x] print: the print and web search for no. 92 is settled by "Search log" (25 Sept 2026), "Web and blog check" (1 Oct 2026) and "Premise check" (3 Oct 2026); none of these searched for the 17 Oct 1604 letter, which is a separate item of this bundle
+- [ ] key-rebuild: after a transcription of 187, compare its code values and range with no. 92's (tools/key_design.py, decode_key.py --split-check) before any claim of a shared key; ~$1
+- [x] image-check: ciphertext.txt checked against the NA inv. 1490 images and the corrections verified (R9-OBRED4, R10-OBREDV, 6 Oct 2026); the 187 block is a fresh image-only item
+- [ ] retry: the Den Tex biography (dbnl.org) retry named in "Open" above has not been run (TLS-failed twice, 25 Sept 2026); next: one retry from a fresh container, ~$0.3
+Verdict: keep going: 3 internal gaps; cheapest next: native-size fetch of scans 186-188 and a blind transcription of the 187 numeral block, ~$3
