@@ -11878,6 +11878,129 @@
       "depth_sentence": "On 3 May 1864 Fox answered the alarm over a Boston Navy Yard witness discharged for testifying by ordering the witness brought back and sending Goodman to help press the Navy Yard fraud cases.",
       "depth_check": "code clause: for Paradise Ol = cott Frog = for Colonel Olcott, New York; Pebble = 3 = the header's date; external (non-statistical): holder 10297 (Wilson to Fox, New York, 3 May 1864 6.30 p.m.: witness Cluer discharged at Boston, 'something should be done immediately'), the message E356 answers",
       "depth_note": "12 H of 12 code-word groups (rest plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-MS18l)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-MS18l verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-MS18l)' section 4",
+      "reading_version": "MS18-R6 10 Oct 2026 (reading.md), grades as in AUDIT (FV-MS18l) s.3 (corrections in s.5 pending a FIX job)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger): C. A. Dana to Maj. Gen. Halleck at Richmond, 8 May 1865: arrest William Boulware near King and Queen Court House and send him under guard to the Judge Advocate General (E366)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 8 May 1865 Assistant Secretary of War C. A. Dana told General Halleck at Richmond, for the Secretary of War, to arrest William Boulware, whose estate lay five or six miles from King and Queen Court House, and send him to Washington under guard to the Judge Advocate General; Halleck's acknowledgement (10 May) and report of the capture (13 May) are in the Huntington's received ledgers; the telegram was not located in print (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-MS18l); not N4: Steers, The Lincoln Assassination: The Evidence (Bingham's request, snippet only, page unseen), NARA M599, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGER-36)",
+      "depth": "D3",
+      "completeness": "16 H of 16 code-word groups (2 C-supported by holder 7905); 1 filler unread; rest plain",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.339, pointer 10005, E366"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.339, pointer 10005, E366",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.339, pointer 10005, E366"
+      ],
+      "depth_sentence": "On 8 May 1865 Dana had Halleck arrest the Virginian William Boulware for the Judge Advocate General, and Halleck reported him captured on 13 May.",
+      "depth_check": "code clause: The Infant directs that you oakum Will Yam Boulware = The Secretary of War directs that you arrest William Boulware; external (non-statistical): holder 7905 (Halleck to Dana, Richmond 10 May 1865, 'your telegraph for the arrest of Wm Boulware has been received') and 8728 (13 May, 'Boulware has been captured')",
+      "depth_note": "16 H of 16 code-word groups (2 C-supported by holder 7905); 1 filler unread; rest plain"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-MS18l)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-MS18l verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-MS18l)' section 4",
+      "reading_version": "MS18-R6 10 Oct 2026 (reading.md), grades as in AUDIT (FV-MS18l) s.3 (corrections in s.5 pending a FIX job)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 95.5,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger): Secretary of War to the officer commanding at Augusta via Lines at Macon, 24 May 1865: arrest Thomas J. Campbell, Confederate confiscating officer at Knoxville, and send him to Thomas at Nashville (E369)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 24 May 1865 the War Department ordered the officer commanding at Augusta to arrest Thomas J. Campbell, the Confederate confiscating officer at Knoxville, and send him under guard to General Thomas at Nashville, as Thomas had asked that afternoon; not located in print (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-MS18l); not N4: Thomas's papers, the Augusta press May-June 1865, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGER-36)",
+      "depth": "D3",
+      "completeness": "21 H (3 C-supported by holder 8756) + 1 M (day word) of 22 code-word groups; rest plain",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.354, pointer 10020, E369"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.354, pointer 10020, E369",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.354, pointer 10020, E369"
+      ],
+      "depth_sentence": "On 24 May 1865 the War Department passed on Thomas's request that the Confederate sequestration officer of Knoxville, T. J. Campbell, be arrested at Augusta and sent to Nashville.",
+      "depth_check": "code clause: officer Polkaing Bigelow ... Oakum Thomas J Paxton bell ... at Chant Bethel = officer commanding Augusta ... arrest Thomas J. Campbell ... at Knoxville, Tennessee; external (non-statistical): holder 8756 (Thomas to the Secretary of War, Nashville 24 May 1865 1 PM, the same request in clear)",
+      "depth_note": "21 H (3 C-supported by holder 8756) + 1 M (day word) of 22 code-word groups; rest plain"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-MS18l)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-MS18l verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-MS18l)' section 4",
+      "reading_version": "MS18-R6 10 Oct 2026 (reading.md), grades as in AUDIT (FV-MS18l) s.3 (corrections in s.5 pending a FIX job)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger): W. H. Whiton to Col. D. C. McCallum at New York, 7 Sept 1864: for how many horses beyond those in Sherman's command can forage be supplied by rail (E370)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 7 Sept 1864 W. H. Whiton of the Military Railroads office asked Col. McCallum at New York, for army headquarters, for how many horses beyond those in Sherman's command forage could be supplied by rail; not located in print (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-MS18l); not N4: McCallum's 1866 Report, OR ser. III vol. 5, NARA RG 92, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGER-36)",
+      "depth": "D2",
+      "completeness": "16 H of 16 code-word groups; rest plain",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.170, pointer 9836, E370"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.170, pointer 9836, E370",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.170, pointer 9836, E370"
+      ],
+      "depth_sentence": "In September 1864 army headquarters asked the Military Railroads how many more horses than Sherman already had could be fed by rail.",
+      "depth_check": "code clause: for how many spartons in excess of those now in Kidnap polka shade can be supplied by rail = horses ... Sherman's command forage; no external content check found (D2)",
+      "depth_note": "16 H of 16 code-word groups; rest plain"
     }
   ],
   "lanes": [

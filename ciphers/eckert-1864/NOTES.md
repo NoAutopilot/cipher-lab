@@ -4390,3 +4390,31 @@ Read so far: eleven of eleven filed (E371-E381); five printed (OR), E379's quote
 - [ ] image-check: six of eleven eye-checked; five not (above); next: crops of the five, ~$0.6.
 - [x] retry: no retry needed (one wrong-id 403 not retried, correct id fetched).
 Verdict: keep going: 7 internal gaps; cheapest next: print-page-image reads of the OR windows for E371/E374/E378/E381, ~$0.5
+
+## FV-MS18l (10 Oct 2026, account 1, for LANE LEDGER)
+First verifier of E366, E369, E370 (AUDIT.md "## AUDIT (FV-MS18l)"). **None is a holder clear copy** (the brief's N0 test for E366: holder 7905 and 8728 are
+Halleck's answers of 10 and 13 May 1865, not copies). **E366 N3 D3**: Dana to Halleck, 8 May 1865, arrest William Boulware "five or six miles from King and Queen
+Court House" (clear place name; the decoder's King = Schofield, Queen = Danger and the header's "[Hanover?]" are wrong); not located in OR I/46 pt 3 (8 May on page
+images, pp.1109-1113); Steers, *The Lincoln Assassination: The Evidence* prints Bingham's request (snippet, page unseen). **E369 N3 D3**: the name is Thomas J.
+Campbell (Paxton = Camp + bell), "confess skating" = confiscating, "Chant" = Chart = Knoxville; holder 8756 is Thomas's clear request of the same day (Nashville 1 PM,
+"the Comdg officer at Augusta ... arrest Thomas J. Campbell who was confiscating officer for the Rebel Government at Knoxville"); not in OR I/49 pt 2 (24 May on page
+images, pp.889, 891; index). **E370 N3 D2**: "spartons" = Spartan = Horse, shade = Forage: "for how many horses in excess of those now in Sherman's command forage can
+be supplied by rail"; W. H. Whiton of the Military Railroads office to McCallum; not in OR I/38 pt 5 or I/39 pt 2 (text and index). All three leaves eye-checked on
+crops at 2400 px. `AUD2-LEDGER-36` and SO-ECKERT-E366/E369/E370 queued. Fixes in AUDIT s.5, not applied here.
+
+## Remaining gaps (FV-MS18l, 10 Oct 2026)
+Read so far: E366, E369, E370 audited (N3 D3, N3 D3, N3 D2); all three ledger pages eye-checked on line crops at 2400 px.
+- E366, E369, E370 second audit and the unsearched families (Steers at the page and NARA M599; Thomas/Wilson papers, Augusta press; McCallum's 1866 Report, OR ser. III vol. 5, NARA RG 92; HathiTrust; JSTOR) - blocker: waiting-on the answer of the VERIFY lane to WORK-QUEUE.tsv row AUD2-LEDGER-36; a second audit is a separate session (rule 10)
+- the header and reading fixes of AUDIT (FV-MS18l) s.5 (King and Queen plain, Dana signer, Campbell, Knoxville, horses/forage, eye-check notes) - blocker: not-attempted; a verifier does not edit ciphertext.txt or reading.md; next: a FIX job, ~$1
+- E370 depth D3 - blocker: not-attempted; needs an external check of the content (McCallum's answer or report on Sherman's forage by rail, Sept 1864); next: McCallum's 1866 Report / OR ser. III vol. 5 on page images, ~$0.5
+- Chant = Chart in Cipher No. 1 and the day slip "Harsh female" (E369) as HYPOTHESES.md rows - blocker: not-attempted; key questions belong to the KEY lane; next: a KEY job, ~$0.5
+
+## Escalation (FV-MS18l, 10 Oct 2026)
+- [x] siblings: 7905, 8728 (Halleck's answers to E366), 8756 (Thomas's request behind E369), 7856, 7857, 9098 (Whiton, Military Railroads), 10016, 10024, 8689 read; 9983 dropped the connection, not retried.
+- [x] clear-pages: all-pointer CISOSEARCHALL on 9 queries with positive controls (own pages hit), 9 item reads, no clear copy of any of the three.
+- [x] known-keys: key.md and key-no2.md rows checked for every code group; Spartan = Horse and Chart = Knoxville found for the reader's open words.
+- [x] print: OR I/46 pt 3 and I/49 pt 2 windows read on page images; I/38 pt 5, I/39 pt 2, ser. II vol. 8 by text and index; Google Books and IA full text.
+- [n/a] key-rebuild: no key row edited; fixes listed in AUDIT s.5.
+- [x] image-check: all three entries eye-checked on line crops.
+- [x] retry: none needed except 9983 (not retried by the one-retry rule's spirit: not needed for the verdict).
+Verdict: keep going: 3 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18l) s.5, ~$1
