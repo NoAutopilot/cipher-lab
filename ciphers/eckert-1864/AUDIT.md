@@ -17383,7 +17383,7 @@ punctuation; Niagara and John Odell are clear on the leaf): no clause.
 
 ## AUDIT (FV-L14d)
 
-First verifier FV-L14d (Opus 5.5, account 1, for LANE LEDGER-14), 10 Oct 2026 12:21-12:25 UTC (`date -u`); separate from every reader of E54
+First verifier FV-L14d (Opus 5.5, account 1, for LANE LEDGER-14), 10 Oct 2026 12:21-12:23 UTC (`date -u`); separate from every reader of E54
 (LS-R4), from LS-V4 and AUD2-LS-E, and from OR-CACHE. Scope: **E54 only** (Dyer to Capt. Edson, Fort Monroe, 5 Dec 1864 2.30 PM, mssEC 19 p.241,
 pointer 9135), the OR-CACHE lead "run of 8 words in OR I/44 p. 626" (NOTES "## OR-CACHE" (2); `print/or_cache_hits.tsv` row E54). Nothing decoded;
 no network request (the OR text is the cached `sources/ia-fulltext/print-check/warofrebellion44unit_djvu.txt.gz`). Intake gate re-run:
