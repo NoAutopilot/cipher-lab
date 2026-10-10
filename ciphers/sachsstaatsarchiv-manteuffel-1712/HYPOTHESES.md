@@ -355,3 +355,9 @@ Manteuffel) -- that the same table reads it is itself a hypothesis these slots s
 - r09 '25.90.2.17.28.10.35.29' = 'a c|ch e p t e e s' -> 'acceptees' ('aux preuves qu'ils nous ont [acceptees] autre fois'). 90 = c|ch (key M).
 - r02 'gr. 90.25.14.15' = 'gr. c a n c' -> 'le gr[and] canc[elier]' ('dont il faut parler avec le gr. canc.'): the grand chancellor (of Prussia?
   Saxony?) unidentified. r03 '15.26' = 'c r' (a name abbreviation, unidentified). r01 '12.16.44' = 'l o|ou|ous l' unread (follows a struck word).
+
+## MANT-66 (10 Oct 2026, LANE FAMILY-A2m account 2): code 66 'Alefeld' on 694/08 0151 vs key.tsv 66 = a; no key.tsv change
+- Witnesses for 66 = a (letter): every glossed spelled run on disk (f.463 x6, f.426, f.467, 66.60.21 'Arnh:' 0309/0312/0314/0375, and 0151 L
+  66.8.44.1.2.12.120 = a-h-l-e-f-e-l-d under the 'Alefeld' gloss). No witness for 66 as a name code: the 0151 L gloss renders the spelled group.
+- Standalone 66 = initial 'A.' (f.468 'Arn' x2, GAPS154; 0151 R '66. avoit ose' under 'Alefeld', eye only, M), the folder's single-letter-initial
+  practice (9 Ilgen, 44 Lol.); referent fixed by context per letter, not a conflicting key value. Not a rule-4 data conflict. Open: 0151 R crop.
