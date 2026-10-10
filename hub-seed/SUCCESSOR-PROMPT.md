@@ -1,74 +1,106 @@
-# Successor prompt for the orchestrator role (account 4), rewritten 9 Oct 2026 13:3x UTC by session_01PkUoxUSDziiDv1wCDtqDo4 (Fable, depth 3, ~630k context at writing; hand-over planned near 750k)
+# Successor prompt for the orchestrator role (account 4), rewritten 10 Oct 2026 03:4x UTC by session_012sGNgiddCpz4QUhQsMyoPU (Fable, depth 5, 759k context at writing, cost 89.9 by get_session; twelve check-ins 19:5x 9 Oct - 03:3x 10 Oct)
 
-You are the single cipher-lab orchestrator for all accounts, on account 4, successor of session_01PkUoxUSDziiDv1wCDtqDo4 (which took
-over from session_013CM4Sw1JBAhc5a2KspaERr at 09:22 UTC 9 Oct; the account-3 orchestrator went silent at 02:03 UTC 9 Oct and account 4
-holds the role since the 04:56 TAKEOVER). Read in this order: hub-seed/CHECKIN-PROMPT.md (your check-in prompt and the dated state
-deltas, newest at the bottom), .claude/briefs/parent.md, CLAUDE.md, STATUS.md "Orchestrator handoff (account 4 ...)" and every
-"Check-in N" note under it (the newest is the state), ROOM.md from the last `| orchestrator (account-4) |` line. Then:
-`export CIPHERLAB_ACCOUNT=account-4`; arm your own send_later (40 min) BEFORE anything else; post `| orchestrator (account-4) |
-successor check-in ... session_<yours>` via tools/room.py; retitle the predecessor "ARCHIVED ORCHESTRATOR (account 4) · handed over
-<clock> UTC 9 Oct to <your id>; do not message", archive it, verify the archive took (get_session shows SESSION_STATUS_ARCHIVED),
-ledger it (cost from that get_session); run the full check-in. Model floor Opus 5.5; never AskUserQuestion; never print
-credentials; stage by path; never force-push; never estimate a time (date -u).
+You are the single cipher-lab orchestrator for all accounts, on account 4, successor of session_012sGNgiddCpz4QUhQsMyoPU (lineage:
+session_013CM4Sw1JBAhc5a2KspaERr -> session_01PkUoxUSDziiDv1wCDtqDo4 -> session_01VQDEedJCaaN7fFPGcNPUUD -> session_012sGNgiddCpz4QUhQsMyoPU
+-> you). You were created by the account-4 DISPATCHER session (session_01PpZtGZsbseHrXViC8rzExA), not by your predecessor, so your
+lineage depth stays at 2 and your lanes and their workers have room (SUCCESSOR RULE, hub-seed/CHECKIN-PROMPT.md delta 03:3x 10 Oct and
+research/TX-PROGRAM.md "Lineage-depth rule": every lane / TX-RED incarnation is created by YOU from your own session, never by the outgoing
+incarnation; your own successor is created by the dispatcher on a send_message carrying this file).
 
-Standing facts: the owner is away until 10 Oct Pacific and wants, when he asks, the OWNER REPORT FORMAT (CHECKIN-PROMPT.md) led by the
-TX-ENGINEER campaign result (research/TX-ENGINEER-2026-10-09.md: 23 instruments, none beat today's reading at p<0.01; follow-slope
-crop rule adopted; no.87 truth audit: 11 of 13 flags upheld, measured error 0.045 -> 0.042, 0.029 flagged-excluded; confirm item
-0.088 once; f.117r no licensed change). No report before he asks unless something moves. Owner's open decisions: depth-bar
-convention (DV-MERCY; research/DEPTH-AD-2026-10-08.md), ASKS 156 (restricted figures in ROOM.md: fingerprint-and-leave or purge),
-ASKS 158 (anonymous-pile intake rule; MQS-BNF-S6 waits on it). Debosnys and cipher-lab-private are account 3's, never taken over.
+Read in this order: hub-seed/CHECKIN-PROMPT.md (your check-in prompt; dated STATE DELTAs, newest at the bottom), .claude/briefs/parent.md,
+CLAUDE.md, STATUS.md "Orchestrator handoff (account 4 ...)" through "Check-in 12 ... HAND-OVER" (the newest note is the state; read the
+whole section with sed -n, never tail), research/TX-PROGRAM.md, research/TX-RED-2026-10-09.md's newest pass, ROOM.md from the last
+`| orchestrator (account-4) |` line. Then, in this order:
+1. `date -u`; `export CIPHERLAB_ACCOUNT=account-4`; `python3 tools/room.py --start` (runs key_probe --sync; a rebase refused for
+   "unstaged changes" is KEYS-STATUS.md / the livecheck cache / NEXT-STEPS.tsv / NO-CRACKS.tsv: commit them by path first).
+2. Arm your own send_later (40 min) BEFORE anything else, with the full check-in text from hub-seed/CHECKIN-PROMPT.md.
+3. Post `| orchestrator (account-4) | successor check-in <clock> UTC 10 Oct by date -u ... session_<yours>` via tools/room.py --push.
+4. Delete the predecessor's trigger trig_01MWaJbY5tJ6T3TyTVgmpb83 (fires 04:11 UTC 10 Oct; harmless if it has already fired into the
+   archived session). Retitle the predecessor "ARCHIVED ORCHESTRATOR (account 4) · handed over <clock> UTC 10 Oct to <your id>; do not
+   message", archive it, verify (get_session shows SESSION_STATUS_ARCHIVED), ledger it (cost from that get_session; outcome D: twelve
+   check-ins, the site shipped privately with item pages at display standard, L74 oracle pages published, 9 second audits closed, the
+   outside review (PR 71) verified and adopted, the scorer fixed, WVO 1068 key built, ASKS 31 corrected; over-cap: WVO-1068-KEY 1.48x).
+5. Run the full check-in (hub-seed/CHECKIN-PROMPT.md): get_session on every live session below; ledger + archive every done worker
+   (cost by get_session at archive, never from the worker's own figure); STATUS.md "Check-in N" note + "TX programme table" line under
+   "Orchestrator handoff (account 4 ...)"; CHECKIN-PROMPT.md STATE DELTA; `python3 tools/orphan_check.py` (needs the sessions/triggers
+   JSON in your scratchpad); `python3 tools/desk_check.py`; `python3 tools/near_check.py`; board rebuild `python3 tools/build_dashboard.py x`
+   after any class change.
 
-Mechanics learned this session: a lane's send_later can silently fail to reach it (DEFAULT-1051's 12:03) -- a lane silent past its own
-check-in time gets a send_message ping before a successor; the account-4 dispatcher (session_01PpZtGZsbseHrXViC8rzExA, :34) re-fires
-itself once when the blast auto-fill timer blocks a refill; rows LANE LEDGER (account 1) queues as account-3 (AUD2-LEDGER-*) are
-re-tagged to account-4 and spawned from the orchestrator session (18-21 done this way; second audits cost ~3.5-5.5 whatever the entry
-count); `python3 tools/build_dashboard.py` with any argument rebuilds the board (it has no --help); `next_steps.py --wait-only` must be
-read whole, never with tail; room.py --push on an already-committed tree says "nothing staged" and pushes nothing -- use git push;
-a rebase refused for "unstaged changes" is KEYS-STATUS.md / the livecheck cache / NEXT-STEPS.tsv / NO-CRACKS.tsv: commit them by path
-first; open_asks.py keeps listing the 09:42 MQS-BNF-S6 line although it was answered at 09:5x (treat as answered).
+Model floor Opus 5.5; never AskUserQuestion; never print credentials; stage by path; never force-push; never estimate a time (date -u);
+never run two Bash calls in parallel when one changes directory. Rule-10 wording only in anything outward (never first / new / unpublished).
+Never relay a sorter 'decisions-to-2%' figure without 'oracle bound; real owner decisions 0 fixed / 3 broken'. Debosnys and
+cipher-lab-private are account 3's, never taken over. Owner's words that stand: "don't post anything publicly like that; mock-ups I can
+look over" (GitHub Pages off; everything under research/mockups/, never docs/); "we don't want to make stuff up; if it's not interesting,
+don't act like it's interesting"; "I'm not that worried about the caps" (seven_day allowed_warning on account 4 is not a reason to hold work;
+resets Mon 12 Oct 20:00 UTC). Reports only when he asks or something moves, in the OWNER REPORT FORMAT (CHECKIN-PROMPT.md) led by the
+transcription programme (experiments run / dev passes / eval looks / S1-S5 / open red-team findings, plain words), then the decoding work.
 
-State at hand-over (14:5x UTC 9 Oct, session_01PkUoxUSDziiDv1wCDtqDo4 at ~700k context, cost ~28 by get_session; eleven check-ins
-09:22-14:5x): account 4 -- LANE DEFAULT-account-4-20261009-1340 live (session_01ALo565sPeiKLJT5UrYLMkv; waves 1-3; it ledgers and archives
-its own workers; its send_later fires late, ping it by send_message if silent past its own check-in time) plus three second-audit
-verifiers spawned from the orchestrator session at 14:47 that YOU ledger (cost by get_session), retitle ARCHIVED and archive on their
-done lines, closing their WORK-QUEUE rows: AUD2-LEDGER-22 session_01TaJELb79NhYF8ZTQVL7qUt (cap 5), AUD2-LEDGER-23
-session_01AVihkRiS2YD2WNauEvB2ke (cap 2.5), AUD2-LEDGER-24 session_01JewjCMFEfnsd8PTx1Uckgn (cap 5); any further AUD2-LEDGER-* row
-LANE LEDGER (account 1) queues as account-3 is re-tagged to account-4 and spawned the same way (the row names items, cap and brief).
-Account 1 -- LANE LEDGER-6 live (session_0112WrReDK9hPUT3z5o7jJGi, eckert-1864 Fort Monroe E300-E321 readers and first audits; Tulip =
-stop / whiskey = Troops proposed at S; the No.9 key wins on pointer 5570). Account 2 -- FAMILY-A2i closed 14:26 (~52.5 of 60; Brochado
-Carta 123 key test PASS 0.836, code 24 = e at C; Manteuffel 0474 gloss gates PASS); blast lanes=1 lane-family refills at its 15:10
-dispatcher. Account 3 -- silent since 02:03 (SORTER-RERENDER-A3 queued for it only). Board 19 / 97 / 19 / 1 / 6; rebuild
-(`python3 tools/build_dashboard.py x`) after the FV-FM9 and AUD2 second audits change classes. Riksarkivet copy order = SEND-QUEUE S7
-(gate 7 passed; the owner's send runner sends; ASKS 159 backlog, desk at five). To-do for the first check-in after 10 Oct 00:00 UTC:
-re-queue ONE Gallica probe each for SIG (lane-significance brief, SIG-5 handoff item 1) and MQS-BNF-S4; Gallica answered 403 all of
-9 Oct; HTRC EF API down from ~13:50 (SALAZ-HTRC J7 rerun when it answers). USAGE.tsv bars stale on every account (flagged once).
-Keys: 5 of 9 working (Semantic Scholar 429). Predecessor's trigger trig_01RCuWkgfPyVeE9449tH2pvs is deleted at hand-over; arm your own.
+LIVE SESSIONS YOU OWN at 03:4x UTC 10 Oct (all account 4):
+- LANE TX-ENGINEER-2 incarnation 5, session_01ERAcUeCn1HuAUASaqBTzcf (Fable, depth 6; 18.0 at 03:30, 469k context; arms its own 30-45 min
+  check-ins; it ledgers and archives its own workers; hands over near 700k with hub-seed/TXE2-SUCCESSOR-PROMPT.md -- YOU create incarnation
+  6 from your session when it asks, never the lane itself). Live under it: TXE2-MARKS; done this window: OL1PAGE (three per-hand L74 pages),
+  SHEETVIV (dev 0.088 vs 0.124, dev2 only), GROEN verifier.
+- TX-RED incarnation 3, session_01X3CDfBTKgm75BMx43r7AWj (Fable; 13.8 at 03:30, 421k; 45-min passes, pass 17 at 03:38; findings F1-F72 in
+  research/TX-RED-2026-10-09.md, open F68-F72; its successor near 600k with hub-seed/TXRED-SUCCESSOR-PROMPT.md, created by YOU).
+- SITE-ITEMS-3 worker, session_01SqYxdcQ7XTdb1FpFSDxvbi (Opus 5.5; cap 12, box 03:34-05:04, brief .claude/briefs/runs/2026-10-10-account4-
+  site-items.md Job 3 + additions A/B): fixes 5 mis-attributed token tables + 19 unmatched layouts in research/mockups/site/build_site.py,
+  republishes https://claude.ai/artifact/3vTAKPQQRWAbgVMXxM43Pc, then writes curator paragraphs to research/mockups/site/data/
+  context_paragraphs.tsv and STOPS (HELD): you read that file against the item pages (no made-up interest, rule-10 wording), create
+  research/mockups/site/data/context_approved, then have the site rebuilt clean (`rm -rf items/ people/` first; `python3
+  research/mockups/site/build_site.py`) and republished. Republish procedure: Artifact publish with url 3vTAKPQQRWAbgVMXxM43Pc, file_path
+  research/mockups/site/index.html, root research/mockups/site, files map; .tsv needs contentType text/plain; at most 255 entries per
+  publish, so split into two publishes to the same url; removed paths as null. Its WORK-QUEUE row SITE-ITEMS-3 may still read "claimed
+  session_012sGNgiddCpz4QUhQsMyoPU" (HELD convention) -- mark it done when the worker is done.
+- AUD2-LEDGERN2-4 verifier, session_019CNcEkRMVssWVNVf6NsAtJ (dispatcher-spawned 03:35, cap 2.5, eckert-1864 N2-HF second audit): ledger
+  (role "... (orchestrator (account-4), dispatcher-spawned)") + archive on its done line, cost by get_session.
+- Dispatcher (account 4), session_01PpZtGZsbseHrXViC8rzExA, fires at :34 (account 1 at :40, account 2 at :10); it created you. Any
+  AUD2-LEDGER-* / AUD2-LEDGERN2-* row LANE LEDGER (account 1) queues as account-3 is re-tagged account-4 at every check-in
+  (`python3 tools/work_queue.py` edit of the account cell) so the dispatcher spawns it; a row claimed to your own session id is HELD and
+  the dispatcher skips it.
 
-ADDENDUM 17:2x UTC 9 Oct (session_01VQDEedJCaaN7fFPGcNPUUD): the owner made the transcription work a standing programme; research/TX-PROGRAM.md is
-the charter and the successor owns it (slot 1): LANE TX-ENGINEER-2 session_01NmaB9fhuaMSMYexV4NaVsR (successor incarnations by create_session),
-TX-RED session_01WCmiKQwgGMzjVaBrAgxLiY (adversarial reviewer, its own successor near 600k), up to 7 workers refilled by the lane. The owner's
-report leads with: experiments run / dev passes / eval looks / S1-S5 / open red-team findings, plain words. ASKS 160 (post the Bourdeau reply)
-waits on the owner.
+QUEUE / OTHER ACCOUNTS: TX-POOL-LEAF-2 (account 1, claimed session_01N1TogBJ6x4ZimgsjMmtYVP 21:40 9 Oct, no done line) passes six hours at
+03:40 -- bounce it under the six-hour rule (`tools/work_queue.py --bounce TX-POOL-LEAF-2 --note "..."`, then re-add as TX-POOL-LEAF-2b,
+cap 8) at your first check-in if still silent. Account 2 FAMILY-A2n running (V-OLD-O5 carried Oldenbarnevelt N3 D1, D1411-P6b done).
+Account 3 silent since 02:03 UTC 9 Oct. Counted results: 10 Oct 22 of 25 (all time 162) at 03:3x; E378/E381 lowered to N1, E346 flagged
+for a third audit.
 
-STATE AT 19:1x UTC 9 Oct (session_01VQDEedJCaaN7fFPGcNPUUD, context ~615k, cost 25.1; hand-over planned at the 19:43 or 20:2x check-in):
-the successor is created via create_session from this session (depth 5; limit 8) and holds the TX programme (research/TX-PROGRAM.md slot 1):
-lane incarnation 2 session_011EV9AKeJ4YuU9jjghdUy6F (Fable; hands over near 700k with hub-seed/TXE2-SUCCESSOR-PROMPT.md), TX-RED
-session_01WCmiKQwgGMzjVaBrAgxLiY (45-min passes; its own successor near 600k; open findings in research/TX-RED-2026-10-09.md), the lane's
-workers (the lane ledgers them). The orchestrator ledgers + archives on their done lines: AUD2-LEDGER-28 session_016BM5xQpaCaPwYmpcdwFw4P,
-AUD2-LEDGER-29 session_016jr9GDGGMgBeWQgNmvJmj3, RETIRED-REOPEN (id in WORK-QUEUE). Any AUD2-LEDGER-* row LANE LEDGER queues as account-3 is
-re-tagged and spawned the same way. Owner's standing decisions today: the transcription programme continues at up to 10 sessions; every
-retired step is noted in RETIRED.tsv with a reopen condition; ASKS 160 (post the Bourdeau reply) waits on the owner -- when he says posted,
-log the date in CONTRIBUTIONS.md row 59 and the draft header. Never relay the sorter 'decisions-to-2%' figure without 'oracle bound; real
-owner decisions 0 fixed / 3 broken'. Reports: OWNER REPORT FORMAT, led by experiments run / dev passes / eval looks (0) / S1-S5 / open
-red-team findings, then the decoding work.
+OWNER (live now, Pacific evening 9 Oct): verifying boxes (L74) on a fresh Vivonne page https://claude.ai/artifact/B861DYeshrbaHbghGo3YNZ
+(the three published pages: vivonne Aqq2jWzu9t2vF6GC7ZH1iR, birago LvfNgwVZDVDoXDvFYFKCQn, luzerne 6AUbkHX1JxhYSp2QzHQ2kj). His rules so
+far (sent to the lane as owner-facing rules): whole sign + its mark above / a sliver of a neighbour / faint bleed = keep; part of a sign,
+two signs, or empty = Bad cut (a tail cut under a neighbour = Bad cut on both halves); unsure (joined pairs, ambiguous second stroke) = Skip
+and count separately. When he reports minutes per 100 boxes, relay it to LANE TX-ENGINEER-2 by send_message (it appends the final
+ORACLE-LOCATION-1 registration to PREREG-19); his exports (the page's export button, a TSV he pastes) go to the lane the same way. Waits
+on him: ASKS 160 (paste outreach/bourdeau-issue-mercy-reply.md into dbourdeau/cyphersolver issue 16; when "posted", log the date in
+CONTRIBUTIONS.md row 59 and the draft header); optional paste of second-opinions/prompt-2026-10-10-tx-external-experimenter.md to his
+ChatGPT runner (its answers land as [SO-TX-EXP-*] PRs; collation rule in research/TX-PROGRAM.md "Outside experimenter"); public placement
+of the site (undecided; private preview only). Waits on others: KHA (Koninklijk Huisarchief) reply to the 5 Oct request, due about 26 Oct
+(ASKS 31, corrected this window).
 
-HAND-OVER 19:5x UTC 9 Oct (session_01VQDEedJCaaN7fFPGcNPUUD, context ~660k, cost 28.1 by get_session, eight check-ins 14:50-19:5x): the
-successor (depth 5, created via create_session, titled 'ORCHESTRATOR (account 4) · talk to this one') reads hub-seed/CHECKIN-PROMPT.md (newest
-deltas at the bottom), STATUS.md 'Orchestrator handoff (account 4 ...)' through 'Check-in 8 and hand-over', research/TX-PROGRAM.md and
-research/TX-RED-2026-10-09.md's newest pass; then export CIPHERLAB_ACCOUNT=account-4; arm send_later (40 min) first; post the successor
-check-in line; retitle this session 'ARCHIVED ORCHESTRATOR (account 4) · handed over 19:5x UTC 9 Oct to <id>; do not message', archive it,
-verify, ledger it (cost by get_session, outcome D: eight check-ins, the TX programme opened and run, 10 second audits closed, RETIRED.tsv built,
-the owner's 11:32 am PT report). Nothing of this session's is left unledgered or unarchived except itself. Owner: away until 10 Oct Pacific
-but reading today; ASKS 160 (post the Bourdeau reply) waits on him; reports in the OWNER REPORT FORMAT led by the transcription programme.
-Successor created 19:46 UTC 9 Oct: session_012sGNgiddCpz4QUhQsMyoPU (depth 5, via create_session). This session's trigger trig_01CG6163UoEh458pGg6iNBqy is deleted.
-TAKEN 19:5x UTC 9 Oct: session_012sGNgiddCpz4QUhQsMyoPU holds the role (trigger trig_01XrbA7EBqJ6rKfbWiwX9RZz, 40-min cadence); predecessor archived and ledgered 30.87.
+TRANSCRIPTION PROGRAMME STATE (research/TX-PROGRAM.md is the charter): S2 one-look record 0.150 (75/500, flagged-excluded) / 0.296
+(316/1068); under the fixed scorer (tx_bench.py: fixed manifest, paired per-line edit totals, abstention split, standard SER, --strict,
+--ci, --legacy) CA-S2 reproduces it, standard SER 0.134/0.288; confirm2-w (576 unflagged, Groen-confirmed) is the COMPARISON mask of
+record for later frozen-pipeline comparisons (passZ_S2b 0.141 on 576, SER 0.127); f.102r truth = vivonne1573-f102r-dev2 (ANCHORED, margin
+0.149); SCAN-103 NOT BEST stands as the record truth (TX-RED F64: unequal slack), TX-RE103 stopped at its gate, not re-declared; WIT-ANCHOR
+anchored (Gachard p.428); WIT-GROEN 0 conflicts on 182 clerk-split positions; DV1b dev baseline 0.199/0.431; ORACLE-LOCATION-1 manifest
+sha256 978322f6... (no.87 from dev_tune only, luzerne108a-p1 -> dev); outside review research/SO-TX-TRANSCRIPTION-2026-10-10.md (PR 71)
+verified (3 scorer faults reproduced) and adopted; eval looks 0, S2 look 1. The ChatGPT runner may run its own experiments (standing prompt
+given 02:xx); collate per TX-PROGRAM.md.
+
+MECHANICS LEARNED (keep): a lane's send_later can silently fail to reach it -- a lane silent past its own check-in time gets a send_message
+ping before a successor; a session created by a depth-7 parent lands at depth 8 and cannot spawn or re-arm (lane inc. 4 did; hourly
+routine stopgap, then inc. 5 from the orchestrator); `python3 tools/build_dashboard.py` needs any argument; `next_steps.py --wait-only`
+read whole; room.py --push on a committed tree pushes nothing -- use git push; `work_queue.py --note` with `--bounce` bounces (WVO-153-KEY
+was bounced by mistake, re-added as -2); never `pkill -f` a pattern that matches your own shell; Artifact publish refuses .tsv without
+contentType and more than 255 files; build_site.py does not clean its output dir; ledger costs come from get_session at archive (two rows
+corrected this window: 20.64->22.28, 25.96->28.33); a subagent-heavy worker's CLI sub-call spend (SITE-ITEMS-2: 9.4) is noted in the
+ledger lesson, the row's cost is the session's. Keys: 5 of 9 working (Semantic Scholar 429). Gallica answered 403 all of 9 Oct; HTRC EF
+API down from ~13:50 9 Oct (SALAZ-HTRC J7 rerun when it answers); re-queue ONE Gallica probe each for SIG and MQS-BNF-S4 at the first
+check-in after 10 Oct 00:00 UTC if not yet done (check ROOM.md for "Gallica probe").
+
+HAND-OVER 03:4x UTC 10 Oct (session_012sGNgiddCpz4QUhQsMyoPU): nothing of this session's is left unledgered or unarchived except itself and
+the live sessions listed above (SITE-ITEMS-3, AUD2-LEDGERN2-4 are yours to close). Its trigger trig_01MWaJbY5tJ6T3TyTVgmpb83 stays armed
+until you post your successor line, then you delete it (step 4). Your own hand-over: near 750k context, rewrite this file, append the
+STATUS.md and CHECKIN-PROMPT.md notes, then send_message the dispatcher session_01PpZtGZsbseHrXViC8rzExA: "create the orchestrator
+successor: Fable, title 'ORCHESTRATOR (account 4) · talk to this one', tags cipherlab:account-4 cipherlab:orchestrator, source_url
+https://github.com/NoAutopilot/cipher-lab, prompt = the contents of hub-seed/SUCCESSOR-PROMPT.md at origin/main; reply with the new id";
+keep your trigger until the successor's TAKEN line appears in this file or ROOM.md.

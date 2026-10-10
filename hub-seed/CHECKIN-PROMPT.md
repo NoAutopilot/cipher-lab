@@ -196,3 +196,9 @@ AUD2-LEDGERN2-1/2/3/5 ledgered; -4 at the dispatcher. Owner on L74 (fresh page B
 SUCCESSOR RULE (new): the orchestrator successor is created by the account-4 dispatcher session (session_01PpZtGZsbseHrXViC8rzExA) on a
 send_message carrying hub-seed/SUCCESSOR-PROMPT.md, never by the outgoing orchestrator (each self-created generation adds one lineage
 level; this session is depth 5, its lanes 6, their workers 7 -- one more generation and lane workers hit the depth-8 wall).
+STATE DELTA 03:4x UTC 10 Oct: HAND-OVER written -- hub-seed/SUCCESSOR-PROMPT.md rewritten (full state at 03:4x; live sessions, HELD
+site step, L74 relay, queue bounce, mechanics); dispatcher session_01PpZtGZsbseHrXViC8rzExA asked by send_message to create the successor
+(Fable, title 'ORCHESTRATOR (account 4) · talk to this one', tags cipherlab:account-4 cipherlab:orchestrator, source_url
+https://github.com/NoAutopilot/cipher-lab, prompt = that file). AUD2-LEDGERN2-1/2/3/5 ledgered + archived; -4 live
+(session_019CNcEkRMVssWVNVf6NsAtJ, dispatcher-spawned 03:35). The outgoing trigger trig_01MWaJbY5tJ6T3TyTVgmpb83 stays armed until the
+successor's line appears; if 04:11 fires into this session before then, run check-in 13 here and re-send the dispatcher message.

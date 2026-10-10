@@ -7983,6 +7983,13 @@ bounce at check-in 13 (past six hours). Check-in 13 trig_01MWaJbY5tJ6T3TyTVgmpb8
 TX programme table 03:3x UTC 10 Oct: slot 1 orchestrator (hand-over due) | slot 2 lane inc. 5 session_01ERAcUeCn1HuAUASaqBTzcf 18.0 |
 slot 3 TX-RED inc. 3 session_01X3CDfBTKgm75BMx43r7AWj 13.8, pass 17 at 03:38; open F68-F72 | slots 4-10: OL1PAGE done (3 pages
 published for L74), SHEETVIV done (dev), MARKS live, GROEN verifier done | eval looks 0; S2 look 1 (record stands; -w comparison mask).
+HAND-OVER (03:4x UTC 10 Oct by date -u; session_012sGNgiddCpz4QUhQsMyoPU at 759k context, 89.9 by get_session): AUD2-LEDGERN2-1/2/3/5
+ledgered (3.85 / 4.38 / 6.15 / 5.61, all D) and archived; AUD2-LEDGERN2-4 spawned by the 03:34 dispatcher (session_019CNcEkRMVssWVNVf6NsAtJ)
+for the successor to close. hub-seed/SUCCESSOR-PROMPT.md rewritten (state at 03:4x); the successor is created by the account-4 dispatcher
+session_01PpZtGZsbseHrXViC8rzExA on a send_message (SUCCESSOR RULE), never by this session; this session's trigger
+trig_01MWaJbY5tJ6T3TyTVgmpb83 (04:11) stays armed until the successor posts its line, then the successor deletes it, retitles, archives and
+ledgers this session (outcome D). Live for the successor: lane inc. 5, TX-RED inc. 3, SITE-ITEMS-3 (HELD paragraphs step), AUD2-LEDGERN2-4;
+TX-POOL-LEAF-2 (account 1) bounce at the first check-in. Owner live on L74 (fresh Vivonne page); his minutes/100 -> the lane.
 
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
