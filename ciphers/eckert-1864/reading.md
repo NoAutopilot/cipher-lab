@@ -2591,5 +2591,71 @@ Geo. D. Sheldon Ft MonroeFrancis for Gordon [Norfolk] [.] [Secretary of War] whe
 
 Code-word tokens: H 11.
 
-Totals over the 410 entries: H 7134, C 99, I 25, M 46, S 21, U 10.
+**E551 | Page 354 | 5898 | mssEC 25 (obj 5952, pointer 5898), 4 Feb 1865, received at Ft Monroe by Sheldon, closing line 'T. T. Eckert', signature word 'Buxton' (the Secretary of the Navy in the pair 5867/0 and clear copy 8511): [two] vessels exclusive of the Rhode Island at the yard or in the Roads, [available] to patrol from Cape Henry to Cape Fear River whilst troops [are moving] south; addressee and opening words unread (FM65-E; row 5898/1; weak, 41 words)**
+
+Sheldon , Ft Monroe {time: 11 AM} for [Chief of Staff]ing [Norfolk] arthur [2] wessells exclusive [Of the] [Rhode Island] [At the] yard or [In the] [Road]'s [Available] to pat roll from K penri to Keep [Fear] [River] whilst [Troops] R [Movement]ing [South]  {tail: [signed] [Secretary of Navy] else end T. T. Eckert}
+
+Code-word tokens: H 17.
+
+**E552 | Page 355 | 5899 | mssEC 25 (obj 5952, pointer 5899), 4 Feb 1865 Ft Monroe, Sheldon to Maj. Eckert, Washington, for [the Secretary of the Navy, 'Buxton']: 'Sir, [your telegram] received; we have but one vessel, the Dumbarton, ready, and she had been [promised] to [an officer, name unread] to convey him up the James River; the Cambridge will be available on Tuesday next'; signed 'Jay M. ...' (unread) and Geo. D. Sheldon (FM65-E; row 5899/0)**
+
+Maj Eckert [Volunteer] [Norfolk] for [Secretary of Navy] [Washington] [.] Sir wranglam received we have but [1] verseil [,] the Dumbarton [,] ready and she had been [1000]d to ditto door Bell to convey him up the [James] [River] [.] The Came bridge wilby [Available] on tuesday next  {tail: [signed] Jay M. [Chief of Staff]ing polkant Geo D. Sheldon}
+
+Code-word tokens: H 15.
+
+**E553 | Page 358 | 5902 | mssEC 25 (obj 5952, pointer 5902), 8 Feb 1865 [11 PM], J. H. Emerick, Hdqrs Army of the James, for [Maj. Gen. Ord]: 'I would respectfully suggest that the purposes of the Commission be more advanced by placing the Command of the Eastern District temporarily in hands of General Vogdes, as all my time and attention is devoted to the investigation'; signed George H. Gordon, Brigadier General, forwarded by Geo. D. Sheldon (FM65-E; row 5902/1)**
+
+J. H. Emerick H'd Qrs A. J. {time: 11 PM} for [Maj Gen E. O. C. Ord] [.] I would respect fully suggest that the purposes [Of the] Commission ditto be more advanced by placing the [Command = Er (-ed, -ing)] [Of the] Eastern District temporarily in hands of [General] Vogdes as all my time and attention is devoted tooth investigation  {tail: [signed] George H Gordon add [Brigadier General] Geo. D. Sheldon}
+
+Code-word tokens: H 9.
+
+**E554 | Page 358 | 5902 | mssEC 25 (obj 5952, pointer 5902), 8 Feb 1865 [12 noon or 12.30 PM] Ft Monroe, Geo. D. Sheldon, for [Brig. Gen.] Gordon: 'you will have to take the command for the present; the investigation can progress quietly at the same time; General V[ogdes] will not obtain [it]'; signed [Ord] (the reply to E553; short, 24 tokens, weak) (FM65-E; row 5902/2)**
+
+Geo D. Sheldon Ft Monroe. {time: 12} for [Brigadier General] Gordon [.] you will have to take the [Command = Er (-ed, -ing)] for the present the investigation can progress quietly at the same time [General] V will not obtain  {tail: [signed] [Maj Gen E. O. C. Ord] It is obtain very plain Emerick}
+
+Code-word tokens: H 7.
+
+**E555 | Page 360 | 5904 | mssEC 25 (obj 5952, pointer 5904), 9 Feb 1865 [12.30 PM], Washington, Rucker via Beckwith to Sheldon at Ft Monroe: dispatch received [for 1 battery and 440 horses]; Schofield's corps, with about 5000 of Meagher's division, shipped from here and Annapolis; still waiting for two divisions of the 23rd Corps, about 10,000 men, the horses of regimental and staff officers, 3 or 4 batteries, 306 mule teams and wagons and 102 horse ambulances; 2,500 of these troops will sail from here tomorrow morning and the remainder as soon as ships arrive and are prepared and loaded; signed D. H. Rucker, Brigadier General, S. H. Beckwith (FM65-E; row 5904/1; BOOK-FM65 test row: clause reused, not re-derived)**
+
+Geo. D. Sheldon [Washington] [9] {time: 12.30} Glass ring alls forwarded [Maj Genl U.S. Grant]'s [Information] [.] Dispatch received [6] for [Men] [,] [1] [Battery] and [440] [Horse] [1000] [Maj Genl J. M. Schofield]es [Corps] with about [5000] of Meaghers [Division] shipped from here and Annapolis [.] still waiting while [2] [Division]'s of [23] [Corps] [,] about [10000] [Men] [,] the [Horse]'s of regimental and staff officers [3] or [4] [Battery]'s [,] [306] mule teams and wagons and [102] [Horse] Ambulances and ditto [.] [2500] of these [Troops] will sail from here [Tomorrow] morning and remainder [As soon as] ships arrive and are prepared and loaded  {tail: [signed] D H Rucker [Brigadier General] etc S. H. Beckwith}
+
+Code-word tokens: H 53.
+
+**E557 | Page 363 | 5907 | mssEC 25 (obj 5952, pointer 5907), 16 Feb 1865 Ft Monroe, Sheldon to Maj. Eckert, Washington, for Comdr H. A. Wise, Chief of the Bureau of Ordnance: the [submarine torpedoes ('Sub squdron torpid owes', plain, read by hand, M)] mentioned in the Bureau's letter of the 25th ultimo have not been received; they are wanted for immediate use on the James River; 14 in addition to these [6] are also required; signed D. Lynch, Commander and Inspector of Ordnance (FM65-E; row 5907/1)**
+
+Maj. Eckert , [Volunteer] [Norfolk] [16] for [Command = Er (-ed, -ing)]er H a wise Sheaf Bureau [Washington] Sub squdron torpid owes mentioned in Bureaux letter of [25] ultimo have not been rec'd. They are decided for immediate use on [James] [River] [.] [14] in addition to these [6] are also required  {tail: [signed] D. Lynch [Command = Er (-ed, -ing)]er &c , Geo. D. Sheldon}
+
+Code-word tokens: H 14.
+
+**E558 | Page 368 | 5912 | mssEC 25 (obj 5952, pointer 5912), 22 Feb 1865 Ft Monroe, Sheldon to Maj. Eckert, Washington, for [Maj. Gen. Ord]: General Ord requires an office at Yorktown at once; there is also anxious inquiry about an office at the Quartermaster Department here; can you supply these operators; the one at Yorktown is considered imperative (FM65-E; row 5912/1)**
+
+Maj. Eckert , [Volunteer] [Maj Gen E. O. C. Ord] polking requires an office at [Yorktown] at once There is also anxious inquiry about office at [Quartermaster] [Department] here [.] Can you supply these opera tours [.] The one at [Yorktown] is considered imperative Resp'y Geo. D. Sheldon
+
+Code-word tokens: H 8.
+
+**E560 | Page 371 | 5915 | mssEC 25 (obj 5952, pointer 5915), 24 Feb 1865 Ft Monroe, Sheldon to Maj. Eckert, Washington, enclosing 'Chief Quartermaster's office, Monroe, 24th': 'The Major General [Commanding] has directed that a Telegraph station be established at Yorktown, Virginia, without delay. Please take the necessary steps to provide a [battery] and operator and establish the office as speedily as practicable. Very respectfully ... [William] D. James, Captain, A.Q.M. and Acting Chief Quartermaster'; 'Foregoing respectfully forwarded to Major Eckert, Asst. Supt., &c. Geo. D. Sheldon' (FM65-E; row 5915/0)**
+
+Maj. Eckert , [Volunteer] Sheaf [Quartermaster]'s office [Monroe] [24] for George D Shell done &c. ditto Sir The [Major] [General] polking has directed that a [Telegraph (-ed, -ing)] station be established at [Yorktown] [Virginia] without delay [.] Please take the necessary steps to provide a [Battery] and opera tour and establish the office as speedily as practicable [.] Very Respectfully Your obedient Servant  {tail: [signed] [100] D. James [Captain] a [Quartermaster] and Acting Sheaf [Quartermaster] [.] Foregoing respectfully forwarded to [Major] Eckert Asst. Supt. &c. [Washington] [signed] Geo. D. Sheldon}
+
+Code-word tokens: H 22.
+
+**E562 | Page 373 | 5917 | mssEC 25 (obj 5952, pointer 5917), 25 Feb 1865 Ft Monroe, Sheldon to Maj. Eckert, Washington, for Hon. E. B. Washburne, Chairman of the Committee of Commerce: 'I sent for Johnson to try him. It would be a pity that the greatest rascal should escape. I can send him to you under guard but do not let him turn State's evidence. His confidential [statement] is clear. Do you want him?'; signed George H. Gordon, Brigadier General; 'raining here tonight', Geo. D. Sheldon (FM65-E; row 5917/1; weak: mostly plain)**
+
+Maj. Eckert [Volunteer] [Norfolk] [25] to Honorable E. be wash burn chairman Committee of Commerce [Washington] [.] I sent for Johnson to try him [.] It would be a pity that the greatest rascal should escape [.] I can send him to you under [Guard (-ed, -ing)] but do not let him turn state evidence [.] His confidential is clear [.] Do you want him  {tail: [signed] George H. Gore done [Brigadier General] raining here tonight Geo D Sheldon}
+
+Code-word tokens: H 13.
+
+**E564 | Page 374 | 5918 | mssEC 25 (obj 5952, pointer 5918), 4 Mar 1865 [10 PM] Ft Monroe, Sheldon to S. H. Beckwith, City Point, for Colonel George W. Bradley, Chief Quartermaster: 'I am entirely out of pilots. I was compelled to furnish the Navy with [two] pilots today for monitors to go up James River'; signed Captain James; 'sent 10.10 PM' (FM65-E; row 5918/1)**
+
+S. H. Beckwith , City Point {time: 10 PM} for [Colonel] George W Bradley Chief [Quartermaster] [City Point] [.] I am entirely out of [Capture (-ed, -ing)]'s I was compelled to furnish the Navy with [2] [Capture (-ed, -ing)]'s [Today] for monitors to go up [James] [River] [Captain] James sent 10.10 PM Dealy. Geo. D. Sheldon
+
+Code-word tokens: H 12.
+
+**E565 | Page 375 | 5919 | mssEC 25 (obj 5952, pointer 5919), 5 Mar 1865 [11.30 AM, sent 11.35] Ft Monroe, Sheldon to S. H. Beckwith, City Point, for Lieut. Col. T. S. Bowers, A.A.G.: 'I cannot find the scout that was to report to me this morning. [We shall] be ready to proceed in two hours. Shall I go without him?'; signed S. H. Roberts, Colonel, 139th New York Volunteers [Expedition ...]; 'fine morning' (FM65-E; row 5919/1)**
+
+S. H. Beckwith , City Point , {time: 11.30 AM} for Lieut [Colonel] Tea S Bowers A A [General] [City Point] [.] I cannot find the [Scout (-ed, -ing)] that was to [Report] tommy this morning [.] Wilby ready to proceed in [2] ours [.] Shall I go with out him  {tail: [signed] S. H. Roberts [Colonel] [139] [New York] [Volunteer]'s polking [Expedition] fine morning , sent 11.35 am Dealy Geo. D. Sheldon}
+
+Code-word tokens: H 19.
+
+Totals over the 421 entries: H 7323, C 99, I 25, M 46, S 21, U 10.
 <!-- decode.py: derived block ends -->

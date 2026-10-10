@@ -5546,3 +5546,140 @@ will there four not be relieved
 by malta yoke mereden Good Day
 Emerick .
 note: FM65-F (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (March 1865 rows read No. 1 in its ten-row test; here also checked against No. 2 and three meaning-shuffled No. 1 copies, fm65f_controls.txt). Step 0 (fm65f_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.607 (17/28) vs (b) p95 0.250, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.567 vs 0.233, HIT; (c) key-dependent words: command east general hartsuff major minnesota norfolk secretary virginia war. The Hartsuff/Gordon/Abbot command question for the Norfolk/Eastern Virginia district: Hartsuff took the District of the Nottoway on 25-30 May 1865 (index of OR I/46 pt 3 'Hartsuff, George L., assumes command of District of the Nottoway'), which is later; this telegram is the March exchange that kept Gordon in command. 'Abbot' is a plain name (not identified here); the 'Minnesota' value is a misfire (M). Shuffled copies give no sense. Holder CISOSEARCHALL 'Hartsuff Gordon district relieved continue': 0 hits. Not located in print (exact-phrase grep of 183 volumes incl. OR I/46-47 pts 1-3, window search of OR I/46-47, be-api whole-collection quoted-clause query: 0 relevant hits).
+
+### E551 | Page 354 | 5898 | mssEC 25 (obj 5952, pointer 5898), 4 Feb 1865, received at Ft Monroe by Sheldon, closing line 'T. T. Eckert', signature word 'Buxton' (the Secretary of the Navy in the pair 5867/0 and clear copy 8511): [two] vessels exclusive of the Rhode Island at the yard or in the Roads, [available] to patrol from Cape Henry to Cape Fear River whilst troops [are moving] south; addressee and opening words unread (FM65-E; row 5898/1; weak, 41 words)
+Washington Feb. 4 1865
+Sheldon , Ft Monroe
+Fanny for Berrying famish arthur
+peach wessells exclusive torch Aaron
+optic yard or sligo wileys
+nutmeg to pat roll from
+K penri to Keep seneca
+windpipe whilst whiff R tannering
+waxy walrus Buxton else end
+T. T. Eckert
+note: FM65-E (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (header features and month; no row-level book test beyond the share table). Step 0 (fm65e_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.444 (12/27) vs (b) p95 0.222, no hit; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.364 vs 0.182, no hit; (c) key-dependent words: available chief fear island movement norfolk rhode river road south staff troops two. Weak: the clause rests on eight key values (2, Rhode Island, Roads, Available, Fear, River, Troops, South), but 'wessells' = vessels, 'pat roll' = patrol and 'K penri' = Cape Henry are plain misspellings the decoder leaves as written, read by hand (M, not key readings), and the addressee words 'Berrying famish' are decoded to [Chief of Staff] [Norfolk] which do not fit (M, unread). The shuffled No. 1 copy gives 'Beauregard ... Goldsboro ... Maj Gen O. O. Howard ... Telegraph' for the same words, and No. 2 gives 'Secretary of State ... Canby ... Subsistence ... Sumter'. Not in print (exact-phrase grep of 184 volumes none; windows only the Rhode Island / Hampton Roads strand of OR I/46 pt 2 and ORN I/11, other texts; be-api 'exclusive of the Rhode Island': 1863 and 1798-era hits rejected). No holder clear copy (CISOSEARCHALL 'Sheldon wessells sligo wileys Rhode Island yard' and 'Sheldon Eckert wessells': own page and three other ledger pages that carry Sheldon and Eckert, none a clear copy of this text).
+
+### E552 | Page 355 | 5899 | mssEC 25 (obj 5952, pointer 5899), 4 Feb 1865 Ft Monroe, Sheldon to Maj. Eckert, Washington, for [the Secretary of the Navy, 'Buxton']: 'Sir, [your telegram] received; we have but one vessel, the Dumbarton, ready, and she had been [promised] to [an officer, name unread] to convey him up the James River; the Cambridge will be available on Tuesday next'; signed 'Jay M. ...' (unread) and Geo. D. Sheldon (FM65-E; row 5899/0)
+Ft Monroe Feb. 4 - 1865
+Maj Eckert
+Washington
+Farmer for Buxton grapes unity Sir wranglam received
+we have but plug verseil pekin the Dumbarton
+pedlar ready and she had been promised to
+ditto door Bell to convey him up the
+Bergen windsor unity The Came bridge wilby nutmeg
+on tuesday next walrus Jay M. Berrying polkant
+Geo D. Sheldon
+note: FM65-E (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (header features and month; no row-level book test beyond the share table). Step 0 (fm65e_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.704 (19/27) vs (b) p95 0.296, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.667 vs 0.296, HIT; (c) key-dependent words: available james navy norfolk river secretary volunteer. 'Dumbarton' is plain in the row and is the flag-ship of Commodore Radford's James River Flotilla (OR I/46 pt 2, Radford to Grant, 3 Mar 1865: 'Flag-ship Dumbarton'; ORN I/11 also names a Dumbarton in the North Atlantic Blockading Squadron): context, not this telegram. 'Came bridge' = Cambridge is read by hand (M), as is 'Sir wranglam' = 'your telegram' (unread). The decoder gives [1000]d for 'promised' (a key-row slip, M) and [Chief of Staff]ing for the signature. Under the meaning-shuffled No. 1 the same words give 'Valley Trenton' for the James River. Not located in print (exact phrase none; be-api 'Dumbarton' 'Cambridge' available Tuesday next: ten hits, all Times of London and Daily Telegraph items of 1942-1988, rejected). No holder clear copy (CISOSEARCHALL 'Dumbarton Came bridge Tuesday promised convey': own page only).
+
+### E553 | Page 358 | 5902 | mssEC 25 (obj 5952, pointer 5902), 8 Feb 1865 [11 PM], J. H. Emerick, Hdqrs Army of the James, for [Maj. Gen. Ord]: 'I would respectfully suggest that the purposes of the Commission be more advanced by placing the Command of the Eastern District temporarily in hands of General Vogdes, as all my time and attention is devoted to the investigation'; signed George H. Gordon, Brigadier General, forwarded by Geo. D. Sheldon (FM65-E; row 5902/1)
+Ft Monroe Feb 8 - 1865
+J. H. Emerick H'd Qrs A. J.
+Sarah for Mentor unity I would respect fully suggest
+that the purposes torch Commission ditto be more advanced
+by placing the polka torch Eastern District temporarily in
+hands of Shelby Vogdes as all my time and
+attention is devoted tooth investigation yoke George H Gordon
+add Palate  Geo. D. Sheldon
+note: FM65-E (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (header features and month; no row-level book test beyond the share table). Step 0 (fm65e_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.808 (21/26) vs (b) p95 0.308, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.750 vs 0.286, HIT; (c) key-dependent words: command general major ord. Mostly plain; key values in the clause are 'Mentor' = Ord (addressee, as in 5918/0's signature, BOOK-FM65), 'polka' = Command, 'torch' = of the, 'shelby' = General, 'palsy' = Brigadier General. Context printed in OR I/46 pt 2 (IA warofrebellion014602rootrich, scratch djvu): Ord to Grant 7 Feb 1865 6.20 p.m. 'I propose ordering at once General Vogdes to relieve General Gordon on the commission; General Gordon to relieve General Shepley', approved the same day; Ord to Grant 7 Feb 7 p.m. objecting to Vogdes for Norfolk; the index lists 'Gordon, George H. Assigned to temporary command of District of Eastern Virginia' and 'Shepley ... relieved ... 504' (index entry, page not read on an image); Gordon's Norfolk order of 13 Feb puts Vogdes in command of the post of Norfolk and Portsmouth. The row's own text is not in those pages (exact phrase 'placing the Command of the Eastern District' none; 'purposes of the Commission' hits only 'Despatches' of another century; be-api 'Vogdes' 'Eastern District' Gordon Commission: 0). No holder clear copy (CISOSEARCHALL 'Vogdes Gordon investigation Eastern District Commission': own page only).
+
+### E554 | Page 358 | 5902 | mssEC 25 (obj 5952, pointer 5902), 8 Feb 1865 [12 noon or 12.30 PM] Ft Monroe, Geo. D. Sheldon, for [Brig. Gen.] Gordon: 'you will have to take the command for the present; the investigation can progress quietly at the same time; General V[ogdes] will not obtain [it]'; signed [Ord] (the reply to E553; short, 24 tokens, weak) (FM65-E; row 5902/2)
+Hdqrs A. J. Feb 8 / 65
+Geo D. Sheldon Ft Monroe.
+Topsy for palsy Gordon zebra you will have to
+take the polka for the present the investigation can
+progress quietly at the same time shelby V will
+not obtain walrus Mentor It is obtain very plain
+Emerick
+note: FM65-E (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (header features and month; no row-level book test beyond the share table). Step 0 (fm65e_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.765 (13/17) vs (b) p95 0.412, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.684 vs 0.368, HIT; (c) key-dependent words: brigadier command general. Short and weak: two connected clauses with three key values (Brigadier General, Command, General; signature Mentor = Ord), the rest plain; the reading hangs together with E553 and with the printed 7 Feb exchange in OR I/46 pt 2 (Ord proposing that Gordon relieve Shepley and Vogdes relieve Gordon on the commission), which is the only support for the sense. The shuffled No. 1 copy gives 'you will have to take the Maj Gen W. T. Sherman for the present ... [Danger] V will not obtain ... [W. F. Smith]'. 'It is obtain very plain Emerick' after the signature is left unread (Emerick is the operator named in E553). Not located in print (exact phrases 'investigation can progress quietly', 'take the command for the present': none; be-api: 0). No holder clear copy (CISOSEARCHALL 'Vogdes Gordon investigation progress quietly Emerick': own page only).
+
+### E555 | Page 360 | 5904 | mssEC 25 (obj 5952, pointer 5904), 9 Feb 1865 [12.30 PM], Washington, Rucker via Beckwith to Sheldon at Ft Monroe: dispatch received [for 1 battery and 440 horses]; Schofield's corps, with about 5000 of Meagher's division, shipped from here and Annapolis; still waiting for two divisions of the 23rd Corps, about 10,000 men, the horses of regimental and staff officers, 3 or 4 batteries, 306 mule teams and wagons and 102 horse ambulances; 2,500 of these troops will sail from here tomorrow morning and the remainder as soon as ships arrive and are prepared and loaded; signed D. H. Rucker, Brigadier General, S. H. Beckwith (FM65-E; row 5904/1; BOOK-FM65 test row: clause reused, not re-derived)
+City Point Feb. 9 - 1865
+Geo. D. Sheldon
+Growl pony Viola Glass ring alls forwarded Jerseys sweden zebra
+Dispatch received pledge for spit pekin plunge pagoda and penny
+publish leg spartan promise Kisses pelton with about person promise
+of Meaghers quitman shipped from here and Annapolis unity still
+waiting while peach quitmans of harsh perfume pelton pedlar about
+federal promise spit pekin the Spartans of regimental and staff
+officers pebble or penny pagans pedlar pebble prolong plague mule
+teams and wagons and plug prolong peach Spafford Ambulances and
+ditto zebra harsh person publish of these whistle will sail
+from here whelp morning and remainder peru ships arrive and
+are prepared and loaded yoke D H Rucker palsy etc
+S. H. Beckwith
+note: FM65-E (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (header features and month; no row-level book test beyond the share table). Step 0 (fm65e_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.395 (30/76) vs (b) p95 0.158, no hit; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.370 vs 0.148, no hit; (c) key-dependent words: battery corps division forty four general grant horse information major men schofield six soon ten three tomorrow troops twenty two washington. BOOK-FM65 verdict for this row: No. 1, clause '[Schofield]'s [corps] with about [5000] of Meagher's [division] shipped from here and Annapolis ... still waiting while [2] [division]s of [23] [corps], about [10000] [men] ... [306] mule teams ... [2500] of these [troops] will sail from here [tomorrow] morning', with the same tokens nonsense under the shuffled copies; No. 2 reads H31 against No. 1's H53. The numerals (5000, 10000, 306, 102, 2500) are key values and M together; the 'Glass ring alls' span is Ingalls (plain). Context in print, not this telegram: OR I/47 pt 2 (IA warofrebellion014702rootrich) prints the Annapolis telegram of 3 Feb 1865 'One of General Schofield's brigades arrived at 5.30 p.m., and is being embarked' and the order sending 'The Second and First Divisions, Twenty-third Army Corps ... will embark at Alexandria or Annapolis, as may be directed by Brigadier-General Rucker, quartermaster'; the holder pointers 7721, 8538, 8561 carry the neighbouring 23-24 Jan and 2 Feb telegrams on the same movement, none this one. Exact phrases ('306 mule teams', 'about 10,000 men') none in the Fort Monroe context; be-api whole-collection 'Meagher Schofield Rucker Annapolis mule teams ambulances': ten hits, all general Schofield/Rucker passages of OR I/45 and memoirs, rejected. No holder clear copy (CISOSEARCHALL 'Meagher Schofield Rucker ambulances mule teams' 0 hits; 'Meagher Schofield': 7721 8538 8561, read, none a copy).
+
+### E557 | Page 363 | 5907 | mssEC 25 (obj 5952, pointer 5907), 16 Feb 1865 Ft Monroe, Sheldon to Maj. Eckert, Washington, for Comdr H. A. Wise, Chief of the Bureau of Ordnance: the [submarine torpedoes ('Sub squdron torpid owes', plain, read by hand, M)] mentioned in the Bureau's letter of the 25th ultimo have not been received; they are wanted for immediate use on the James River; 14 in addition to these [6] are also required; signed D. Lynch, Commander and Inspector of Ordnance (FM65-E; row 5907/1)
+Ft Monroe Feb. 16 - 1865
+Maj. Eckert , Washington
+Farmer gift for polkaer H a wise Sheaf Bureau growl
+Sub squdron torpid owes mentioned in Bureaux letter of harsh
+person ultimo have not been rec'd. They are decided for
+immediate use on Bergen windsor unity female in addition to
+these plague are also required yoke D. Lynch polkaer &c ,
+Geo. D. Sheldon
+note: FM65-E (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (header features and month; no row-level book test beyond the share table). Step 0 (fm65e_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.625 (20/32) vs (b) p95 0.281, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.556 vs 0.222, HIT; (c) key-dependent words: command fourteen james norfolk river six twenty volunteer. Key values in the clause: 16 (date), Washington, 25, James River, 14, 6, Command = Er; the vocabulary of the torpedoes and the signature are plain. Related telegrams in print and in the holder text, not this one: ORN I/11 prints Lynch to Cdr W. A. Parker, off Norfolk, 24 Jan 1865 'The Bureau of Ordnance can not furnish the torpedoes required'; the holder page 8538 (mssEC 13 p.60) carries Lynch to Wise 24 Jan 1865 '12 torpedoes of nine hundred pounds each ... required by Comdr Parker ... James river for immediate use' (clear copy of another message). This row of 16 Feb is a follow-up asking for the earlier consignment; exact phrases none; be-api 'torpedoes Lynch Bureau ultimo immediate use': ten hits, all OR/ORN passages on torpedoes in other contexts, rejected; Butler Corr. V, Grant Papers 13-14: no Lynch telegram among the snippets. No holder clear copy (CISOSEARCHALL 'Lynch Bureau letter ultimo immediate use squadron': own page only).
+
+### E558 | Page 368 | 5912 | mssEC 25 (obj 5952, pointer 5912), 22 Feb 1865 Ft Monroe, Sheldon to Maj. Eckert, Washington, for [Maj. Gen. Ord]: General Ord requires an office at Yorktown at once; there is also anxious inquiry about an office at the Quartermaster Department here; can you supply these operators; the one at Yorktown is considered imperative (FM65-E; row 5912/1)
+Ft Monroe Feb. 22 / 65
+Maj. Eckert , Washington
+Mentor polking requires an office at hastings at once
+There is also anxious inquiry about office at vinton
+quadrant here zodiac Can you supply these opera tours
+zebra The one at haven is considered imperative Resp'y
+Geo. D. Sheldon
+note: FM65-E (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (header features and month; no row-level book test beyond the share table). Step 0 (fm65e_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.692 (18/26) vs (b) p95 0.308, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.692 vs 0.308, HIT; (c) key-dependent words: department general ord quartermaster volunteer yorktown. Five key values (Volunteer, Ord, Yorktown, Quartermaster, Department), the rest plain; the sense is supported by its follow-up E560 (24 Feb, the order to establish the Yorktown station), not by a print. Under the shuffled No. 1 copy 'Yorktown' becomes 'Capture' and 'Hurlbut', under No. 2 'Shelbyville'. Not located in print (OR I/46-47 windows found only telegraph-office passages of other dates; be-api 'anxious inquiry' office Yorktown operators: one hit, a 19th-century gardening journal, rejected). No holder clear copy (CISOSEARCHALL 'Hastings Vinton anxious inquiry office imperative': own page only).
+
+### E560 | Page 371 | 5915 | mssEC 25 (obj 5952, pointer 5915), 24 Feb 1865 Ft Monroe, Sheldon to Maj. Eckert, Washington, enclosing 'Chief Quartermaster's office, Monroe, 24th': 'The Major General [Commanding] has directed that a Telegraph station be established at Yorktown, Virginia, without delay. Please take the necessary steps to provide a [battery] and operator and establish the office as speedily as practicable. Very respectfully ... [William] D. James, Captain, A.Q.M. and Acting Chief Quartermaster'; 'Foregoing respectfully forwarded to Major Eckert, Asst. Supt., &c. Geo. D. Sheldon' (FM65-E; row 5915/0)
+Ft Monroe Feb. 24 / 65
+Maj. Eckert ,
+Washington
+Sheaf vintons office animal harsh penny for George D
+Shell done &c. ditto Sir The Tappan Shelby polking
+has directed that a wreathe station be established at
+Hastings Alba without delay unity Please take the necessary
+steps to provide a pagan and opera tour and
+establish the office as speedily as practicable zodiac Very
+Respectfully Your obedient Servant yoke William D. James pilgrim
+a vincent and Acting Sheaf vincent unity Foregoing respectfully
+forwarded to Taunton Eckert Asst. Supt. &c. growl yoke
+Geo. D. Sheldon
+note: FM65-E (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (header features and month; no row-level book test beyond the share table). Step 0 (fm65e_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.725 (29/40) vs (b) p95 0.300, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.690 vs 0.286, HIT; (c) key-dependent words: battery general quartermaster telegraph virginia volunteer yorktown. The follow-up to E558. Key values in the body: Quartermaster, Monroe, 24, Major, General, Telegraph, Yorktown, Virginia, Battery (the 'Hastings Alba' of the page), Captain; the grammar is plain. The decoder's [Battery] for 'pagan' and the [100] for 'yoke William' are slips (M). Which Major General (Ord) is not stated in the row (M). Not located in print (exact 'station be established at Yorktown' none; be-api none; 'Acting Chief Quartermaster' hits only other volumes' officers). No holder clear copy (CISOSEARCHALL 'Hastings station established Acting Chief Quartermaster James Asst. Supt' 0 hits; 'Hastings Vincent station': own page only).
+
+### E562 | Page 373 | 5917 | mssEC 25 (obj 5952, pointer 5917), 25 Feb 1865 Ft Monroe, Sheldon to Maj. Eckert, Washington, for Hon. E. B. Washburne, Chairman of the Committee of Commerce: 'I sent for Johnson to try him. It would be a pity that the greatest rascal should escape. I can send him to you under guard but do not let him turn State's evidence. His confidential [statement] is clear. Do you want him?'; signed George H. Gordon, Brigadier General; 'raining here tonight', Geo. D. Sheldon (FM65-E; row 5917/1; weak: mostly plain)
+Ft Monroe Feb 25 / 65
+Maj. Eckert
+Washington
+Farmer harsh person to Honorable E. be wash burn chairman
+Committee of Commerce growl unity I sent for Johnson to
+try him zodiac It would be a pity that the
+greatest rascal should escape zodiac I can send him to
+you under saddle but do not let him turn state
+evidence zebra His confidential is clear zodiac Do you want
+him walrus George H. Gore done palsy raining here tonight
+Geo D Sheldon
+note: FM65-E (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (header features and month; no row-level book test beyond the share table). Step 0 (fm65e_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.867 (26/30) vs (b) p95 0.333, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.812 vs 0.312, HIT; (c) key-dependent words: guard norfolk volunteer. Weak: the body is plain English with two key values ('saddle' = Guard, 'palsy' = Brigadier General) besides the header words (Volunteer, Norfolk, 25, Washington); the sense is not tested by the key. Under the shuffled No. 1 copy the two values become nonsense. The sender is Brig. Gen. George H. Gordon (Norfolk, Eastern Virginia; see E553), and 'Johnson' is unidentified (M); the Committee of Commerce of the House under Washburne is plain. Not located in print (exact phrases none; windows zero; be-api 'I sent for Johnson' 'turn State evidence': 0; 'Do you want him' hits OR I/40 and Butler Corr. V in unrelated contexts, rejected). No holder clear copy (CISOSEARCHALL 'Washburne Committee of Commerce Johnson rascal state evidence' and 'Washburne Johnson rascal': 0 hits).
+
+### E564 | Page 374 | 5918 | mssEC 25 (obj 5952, pointer 5918), 4 Mar 1865 [10 PM] Ft Monroe, Sheldon to S. H. Beckwith, City Point, for Colonel George W. Bradley, Chief Quartermaster: 'I am entirely out of pilots. I was compelled to furnish the Navy with [two] pilots today for monitors to go up James River'; signed Captain James; 'sent 10.10 PM' (FM65-E; row 5918/1)
+Ft Monroe Mar 4 / 65
+S. H. Beckwith , City Point
+Rebecca for paradise George W Bradley Chief Vinton black
+unity I am entirely out of Pilots I was
+compelled to furnish the Navy with peach pilots wedge
+for monitors to go up Bergen windsor pilgrim James
+sent 10.10 PM Dealy.  Geo. D. Sheldon
+note: FM65-E (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (header features and month; no row-level book test beyond the share table). Step 0 (fm65e_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.676 (23/34) vs (b) p95 0.265, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.657 vs 0.257, HIT; (c) key-dependent words: captain capture colonel quartermaster river today two. Eight key values around plain words (Colonel, Quartermaster, City Point, 2, Today, James, River, Captain); the decoder reads the plain word 'Pilots' as [Capture (-ed, -ing)] (a plain-word misfire, M), and 'peach pilots wedge' as [2] ... [Today]. Grant Papers 14 (IA papersofulyssess0014gran, be-api) prints a Bowers telegram of the same days about pilots for boats ('The pilots are ready. Direct the boats to call on Colonel ...'): a different text. Not located in print (exact phrases none; windows only monitors/James River passages of other texts; be-api 'out of pilots' monitors James River: 0). No holder clear copy (CISOSEARCHALL 'pilots monitors Bradley furnish Navy James': own page only).
+
+### E565 | Page 375 | 5919 | mssEC 25 (obj 5952, pointer 5919), 5 Mar 1865 [11.30 AM, sent 11.35] Ft Monroe, Sheldon to S. H. Beckwith, City Point, for Lieut. Col. T. S. Bowers, A.A.G.: 'I cannot find the scout that was to report to me this morning. [We shall] be ready to proceed in two hours. Shall I go without him?'; signed S. H. Roberts, Colonel, 139th New York Volunteers [Expedition ...]; 'fine morning' (FM65-E; row 5919/1)
+Ft Monroe Mar 5 / 65
+S. H. Beckwith , City Point ,
+Florence for Lieut pandora Tea S Bowers A A
+Shelter blubber unity I cannot find the wolf that
+was to wick tommy this morning zebra Wilby ready
+to proceed in plank ours zodiac Shall I go
+with out him walrus S. H. Roberts pandora plug
+prolong laugh pony frog washingtons polking roman fine morning ,
+sent 11.35 am Dealy  Geo. D. Sheldon
+note: FM65-E (10 Oct 2026, account 1, for LANE LEDGER-13): book No. 1 per BOOK-FM65 (header features and month; no row-level book test beyond the share table). Step 0 (fm65e_step0.py, information only on mssEC 25 under the Wave 2 ruling; the page transcription of the row is its own cipher copy): No. 1 (a) 0.696 (16/23) vs (b) p95 0.348, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.696 vs 0.304, HIT; (c) key-dependent words: colonel general report scout two. Key values: Colonel, General, City Point, Scout (the 'wolf' of the page), Report, 2, Colonel, 139, New York, Volunteer, Expedition; the signature and the 'Expedition' tail are M. 'Colonel S. H. Roberts, 139th New York' is a field officer of the Army of the James in Mar 1865 (M; the regiment was not checked in any volume here). Not located in print (exact phrases none; windows zero; be-api 'Roberts' '139th New York' Bowers scout: ten hits, none this telegram: OR I/46 scouting passages and Whitman notebooks, rejected). No holder clear copy (CISOSEARCHALL 'Bowers Roberts proceed Beckwith ready Shall I go': own page only).
