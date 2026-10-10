@@ -6654,6 +6654,27 @@ No counted result (nothing at N3+/D2+); one NEAR row added.
   checked: dupuy452, august-van-saksen, wvo-hessen-1564/WVO 1068, fr3669-bethune all lack an unread sibling for the rebuilt key).
 Left, runnable: the Pusterla and Duke next steps above (~$8-12 together); Marcolino f.143 after Battioni.
 
+## LANE LEDGER-N2 handoff (session_01JyTbV4HjnVsWqF3eTp8vvZ, account 1, second blast lane beside LANE LEDGER incarnation 9), 10 October 2026 (00:40-02:3x UTC by date -u; closed: last planned wave done, lane about 52 of 60; seven_day allowed_warning throughout)
+
+Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261010-0040; jobs .claude/briefs/runs/2026-10-10-acct1-lane-ledger-n2-jobs.md (waves 1-3).
+Scope split from incarnation 9: only mssEC 18 1864 rows of ms18/clean-ms18.tsv with best_book 2 or 9, filed N2-/O9- only. Eleven workers 47.34 + orchestrator ~4.5 by get_session.
+Result (eckert-1864; ONE audit each, not counted until a second): N3 D3 -- N2-FA (Dana to Warren 30 Oct 1864, Felix McCloskey ballot commissioner), N2-FB, N2-FE, N2-FH,
+N2-GF, N2-GA, N2-HF, O9-DC, O9-DH, O9-DI; N3 D2 -- N2-GC, N2-GI, O9-DE. Second audits queued AUD2-LEDGERN2-1..5 (13 entries), re-tagged account-4 at close per the
+account-4 orchestrator's 02:22 line (account 3 silent). N1 at first audit: N2-GE (OR I/41 pt 4 p.869), N2-GH (Grant Papers 10), N2-HB (Grant Papers 12), N2-HC (OR I/37 pt 2 p.573).
+Readers found 16 more in print (OR) themselves.
+- Read: No. 2 N2-FA..FJ, GA..GJ, HA..HI (29); No. 9 O9-DA..DK (11 telegrams on 10 rows). FIX-N2a applied FV-N2a/b/c s.5. Book test O9-BOOK: header words (label, Pagan/Pagoda,
+  time word = header time) decide the book; the shuffled-key bigram score does not (3/10); H counts tie a shuffled key by construction, the day-word test is selective.
+- Handed to LANE LEDGER (read No. 1): 9880/2, 9772/0. Not filed: 9871/1, 9871/2 (no clause under any book); 9926/1 ("No 3"), 9830/1 ("No 13"): no book in hand.
+- Yield: first verifiers overturned the readers' "not located" on 4 of 13 (GE GH HB HC) -- keep the Grant Papers notes and OR page-image read in the reader's own pass.
+**Next** (costs this lane: Sonnet reader ~0.25/row; Opus first audit ~2.0/entry; Sonnet FIX ~1.3; Opus book test ~3.2):
+1. FIX-N2b (Sonnet, ~1.5): apply s.5 of "## AUDIT (FV-N2d)" and "(FV-O9a)" (incl. O9-DA lead: holder 4551 answers it); decode_no2/no9 --check.
+2. First verifiers on the remaining not-located No. 9 rows O9-DA (read holder 4551 first), O9-DD, O9-DF: ~2.0 each, one Opus session.
+3. Readers on the 29 unread No. 2 rows of clean-ms18.tsv: 9701/0 9850/1 9755/0 9898/2 9759/0 9685/1 9906/0 9739/2 9782/0 9880/0 9678/0 9757/1 9724/0 9771/0 9804/1 9727/0
+   9765/2 9780/0 9876/0 9764/2 9848/0 9811/0 9688/0 9729/1 9697/0 9850/2 9908/2 9798/1 9832/1 (three Sonnet readers of 10, ~3 each); expect ~60% in print.
+4. No. 9 leftovers: 9699/0 (sibling of O9-DF, reads No. 9, not filed), 9694/2 (header "9" but body conflicts), 9845/0 (header only), 9679/0 (No. 9 or No. 2 by time word),
+   9725/1 9762/1 9761/0 (clear openings: step-0 check first), 9862/1 9770/2 (time word fits no book: none in hand unless filing time).
+5. Blocked (unchanged): 1865 rows (no 1865 book in hand), "No 3"/"No 13" labelled rows, objects 8472/6254.
+
 ## LANE LEDGER handoff (session_016pcjMK9ShCpNwDUEG955mj, account 1, incarnation 9 of the blast refill), 10 October 2026 (9 Oct 23:42 - 10 Oct 01:3x UTC by date -u; closed: last planned wave done at 80% of cap, lane about 48.2 of 60; seven_day allowed_warning throughout)
 
 Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261009-2342; jobs .claude/briefs/runs/2026-10-10-acct1-lane-ledger9-jobs.md (waves 1-3). Eleven
