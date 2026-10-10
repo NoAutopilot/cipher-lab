@@ -6740,3 +6740,15 @@ Not applied as a decoder change: E544 E565 E567 E545 E549 E171 (no reading error
 Open leads (not done here): 'Maj. Eckert , Washington' rows outside these audits still read the header word as [Volunteer]: E166 E215 E250 (mssEC 18/19), E569 E562 E542 E546 E548 E550 (Fort Monroe, CLEAR-SWEEP / FV-L15m targets); the FIX job after FV-L15m should apply `plain-at: washington#1` to them.
 
 Remaining gaps: none opened by this job; the folder's gaps are unchanged (`tools/gaps_check.py eckert-1864`: keep-going, 4 internal gaps, 1 step untried).
+
+## FIX-L16 (10 Oct 2026, account 1, for LANE LEDGER-16)
+
+Worker FIX-L16 (Sonnet 5.5), offline (git only). `ciphers/eckert-1864/fixl16_apply.py` (idempotent; reuses `fixl15_apply.py`'s `run()`, which gained a fallback so a block with no `note:` line takes its directives at the end) applies AUDIT.md "## AUDIT (FV-L15m)" s.5 and the "## FIX-L15" open lead to `ciphertext.txt`; `reading.md` only by `decode.py --write`.
+
+Entries (10): E550 E543 E571 E465 E562 E542 E548 E166 E215 E250.
+- E550: `plain-at: anna#1`, `apple#1` (Annapolis, C by clear copy 8561); header "(2 AM)" removed. E543: `gloss: tarquinty=necessity:C`, header "contingency" -> "necessity", print OR I/46 pt 2 p.259. E571: `plain-at: pilot#1` (print "pilots"), header "with pilots". E465: `merge: feeble+ghost` read as 10 15 (not summed to [25]). E562: header "[statement]" removed (clear copy has none).
+- `plain-at: washington#1` (address line 'Maj. Eckert , Washington'): E166 E215 E250 E562 E542 E548 E550. Not E546 or E569 (under FV-L16b/c audit); the FIX after those audits takes them. E557 E558 E529 E513 E552 E560 E536 E568 were done by FIX-L15.
+- Counts after the fix (decoder): E550 H 9 (was 12), E562 H 12, E542 H 8, E548 H 6, E543 H 10 + C 1, E571 H 10, E465 H 10 + S 1 (the audit counts 11 H: the merge makes 'feeble ghost' one token), E166 H 36, E215 H 22, E250 H 26. The drops are the Volunteer/Anna/Apple/Capture misfires now read plain. The audit's E571 'pilot' count and E465 count differ by one token each, not forced.
+- Checked, nothing to add: FV-L15m filed all seven N1, so `status.json` and `SECOND-OPINIONS-QUEUE.tsv` carry no row for E542 E548 E550 E562 E465 E543 E571 (grep 0/0), none stale. E571's Grant Papers vol. 14 page is still unresolved.
+
+Remaining gaps: none opened by this job.

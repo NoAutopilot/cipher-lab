@@ -883,9 +883,9 @@ Code-word tokens: H 5.
 
 **E166 | Page 236 | 5780 | mssEC 25 (obj 5952, pointer 5780), 20 Aug 1864 Fortress Monroe, Sheldon to Maj. Eckert, forwarding a Hilton Head dispatch (FM-R1; row 5780/0; transcription only)**
 
-Maj. Eckert , [Volunteer] . Hill ton Head August [18] [By the way of] [Monroe] {time: 10 PM} [20] for [General-in-Chief] [Washington] [.] I send [Today] by waywormers Arago and Cosmopolitan [2] old [Report] [Regiment]'s [,] the [100] and [3] [New York] [Volunteer]'s and [70] forth Penn [Volunteer]'s with orders to [Colonel]'s [100] Heine and Lieut. [Colonel] A Von Weitzel [Command = Er (-ed, -ing)]ing off I sirs [,] to await at [Monroe] [2] hours for orders [.] In the event of no orders being received [,] they are to proceed at once to [Alexandria] ["] I a disquorum and march direct to [Washington] and [Report] to you at that place [.] very Respect fully  {tail: [signed] [Maj Gen J. G. Foster] &c. Geo. D. Sheldon}
+Maj. Eckert , Washington . Hill ton Head August [18] [By the way of] [Monroe] {time: 10 PM} [20] for [General-in-Chief] [Washington] [.] I send [Today] by waywormers Arago and Cosmopolitan [2] old [Report] [Regiment]'s [,] the [100] and [3] [New York] [Volunteer]'s and [70] forth Penn [Volunteer]'s with orders to [Colonel]'s [100] Heine and Lieut. [Colonel] A Von Weitzel [Command = Er (-ed, -ing)]ing off I sirs [,] to await at [Monroe] [2] hours for orders [.] In the event of no orders being received [,] they are to proceed at once to [Alexandria] ["] I a disquorum and march direct to [Washington] and [Report] to you at that place [.] very Respect fully  {tail: [signed] [Maj Gen J. G. Foster] &c. Geo. D. Sheldon}
 
-Code-word tokens: H 37.
+Code-word tokens: H 36.
 
 **E167 | Page 274 | 5818 | mssEC 25 (obj 5952, pointer 5818), 6 Dec 1864 New York, Wm. Bradford (sent by the New York operator John Horner) to Sheldon (FM-R1; row 5818/0; transcription only)**
 
@@ -1171,9 +1171,9 @@ Code-word tokens: H 9.
 
 **E215 | Page 190 | 5734 | mssEC 25 (obj 5952, pointer 5734), 8 June 1864 Ft Monroe, Sheldon to Maj. Eckert, forwarding Acting Rear-Adm. S. P. Lee's telegram to the Secretary of the Navy from Trent's Reach, 7 June 10 PM (FM-R3a; row 5734/0; image-read)**
 
-Maj. Eckert [Volunteer] Agawam Trents Reach [James] [River] {time: 10 PM} [7] [By the way of] [Monroe] {time: 5.30 PM} [8] for [Secretary of Navy] [Washington] [.] No change [In the] naval situation [.] This days [Richmond] examiner says [Maj Genl U.S. Grant] will [Cross (-ed, -ing)] [James] [River] and operate against [Richmond] on the [South] side  {tail: [signed] [S. P. Lee] &c Geo D Sheldon}
+Maj. Eckert Washington Agawam Trents Reach [James] [River] {time: 10 PM} [7] [By the way of] [Monroe] {time: 5.30 PM} [8] for [Secretary of Navy] [Washington] [.] No change [In the] naval situation [.] This days [Richmond] examiner says [Maj Genl U.S. Grant] will [Cross (-ed, -ing)] [James] [River] and operate against [Richmond] on the [South] side  {tail: [signed] [S. P. Lee] &c Geo D Sheldon}
 
-Code-word tokens: H 23.
+Code-word tokens: H 22.
 
 **E216 | Page 199 | 5743 | mssEC 25 (obj 5952, pointer 5743), 13 June 1864 4.20 PM Washington, T. T. Eckert to Sheldon at Ft Monroe, for Lt. Col. Biggs: vessels to White House, signed Quartermaster General (FM-R3a; row 5743/1; image-read)**
 
@@ -1297,9 +1297,9 @@ Code-word tokens: H 24, I 4.
 
 **E250 | Page 226 | 5770 | mssEC 25 (obj 5952, pointer 5770), 12 July 1864 Ft Monroe, Sheldon to Maj. Eckert, forwarding Maj. W. M. Este (A.D.C.) to the Secretary of War on the fight near Silver Spring; a clear period copy stands at pointer 10490, Page 348 (FM-R4a, 9 Oct 2026; row 5770/1; transcription-only, page image not viewed)**
 
-Maj. Eckert [Volunteer] {time: 2 PM} following just received and is forwarded for swede of war [Department] [.] Have her D grass {date: July 12} for [Maj Genl U.S. Grant] [City Point] [.] The [Major] [General] [Command = Er (-ed, -ing)]ing middle [Department] [8] [Corps] ordered me upon my arrival here to learn whether wreathic plation with you was intact [,] to in form that yesterday after noon a [Fight ing Fought] was going on [7] [Mile]'s from [Washington] D see on seventh street road near Silver spring [,] that he had but [11000] [Troops] all told including Rick its [Men] in [Baltimore]  {tail: [signed] Respectfully William M Este [Major] & a D see finis Geo. D. Sheldon}
+Maj. Eckert Washington {time: 2 PM} following just received and is forwarded for swede of war [Department] [.] Have her D grass {date: July 12} for [Maj Genl U.S. Grant] [City Point] [.] The [Major] [General] [Command = Er (-ed, -ing)]ing middle [Department] [8] [Corps] ordered me upon my arrival here to learn whether wreathic plation with you was intact [,] to in form that yesterday after noon a [Fight ing Fought] was going on [7] [Mile]'s from [Washington] D see on seventh street road near Silver spring [,] that he had but [11000] [Troops] all told including Rick its [Men] in [Baltimore]  {tail: [signed] Respectfully William M Este [Major] & a D see finis Geo. D. Sheldon}
 
-Code-word tokens: H 27.
+Code-word tokens: H 26.
 
 **E251 | Page 272 | 5816 | mssEC 25 (obj 5952, pointer 5816), 4 Dec 1864 12.50 PM Hd Qrs Army of the James, R. O'Brien (Butler's office) to Sheldon at Ft Monroe, for Maj. Carney: Col. Saunders's report on property of Stephen Barton (FM-R4a; row 5816/0; image-read)**
 
@@ -2171,11 +2171,11 @@ Code-word tokens: H 27, C 1.
 
 Code-word tokens: H 31, C 2, M 1.
 
-**E465 | Page 224 | 5768 | mssEC 25 (obj 5952, pointer 5768), 10 July 1864 Ft Monroe 10.15 AM, Sheldon for the General-in-Chief at Washington, carrying Col. J. W. Shaffer's words: none of the New Orleans troops (the 19th Army Corps of the sibling entries on the page) have arrived yet; shorter twin of the Rawlins/Beckwith entry 5768/2 (FM-S2; row 5768/3; image-read at 2400 px)**
+**E465 | Page 224 | 5768 | mssEC 25 (obj 5952, pointer 5768), 10 July 1864 Ft Monroe 10.15 AM, Sheldon for the General-in-Chief at Washington, carrying Col. J. W. Shaffer's words: none of the New Orleans troops (the 19th Army Corps of the sibling entries on the page) have arrived yet; shorter twin of the Rawlins/Beckwith entry 5768/2 (FM-S2; N1: holder clear copy 4788 (Page 347) and OR ser. I vol. 40 pt 3 p.142 (abridged); row 5768/3; image-read at 2400 px)**
 
-[Monroe] [25] AM {date: July 10} for [General-in-Chief] [Washington] [.] none [Of the] [New Orleans] [Troops] have arrived yet  {tail: [signed] Jay W. Shaffer [Colonel] and chief of staff fine morning Geo D Sheldon}
+[Monroe] [10 15] AM {date: July 10} for [General-in-Chief] [Washington] [.] none [Of the] [New Orleans] [Troops] have arrived yet  {tail: [signed] Jay W. Shaffer [Colonel] and chief of staff fine morning Geo D Sheldon}
 
-Code-word tokens: H 11, S 1.
+Code-word tokens: H 10, S 1.
 
 **E471 | Page 33 | 5577 | mssEC 25 (obj 5952, pointer 5577), 3 Mar 1864 Ft Monroe, Sheldon to Maj. Eckert, Washington: number 1 cipher received today; send no ciphers till the cable is repaired; nothing heard from Kilpatrick (kill pat trick, plain) up to 1 PM today (FM-S3; row 5577/0; transcription only)**
 
@@ -2549,11 +2549,11 @@ Maj. Eckert , [Volunteer] Please answer regarding moving office [.] a very essen
 
 Code-word tokens: H 7.
 
-**E571 | Page 385 | 5929 | mssEC 25 (obj 5952, pointer 5929), 13 Mar 1865 Ft Monroe, sent 6.30 A.M., Sheldon to S. H. Beckwith, City Point, for [Brig. Gen.] Rawlins, [Chief of Staff]: '[Captain] Glisson says he will send [a gunboat] as desired at once. Convoy is now ready. I leave in a few moments with [convoy] for [Colonel] Roberts [Colonel] Babcock' (FM65-F; row 5929/1)**
+**E571 | Page 385 | 5929 | mssEC 25 (obj 5952, pointer 5929), 13 Mar 1865 Ft Monroe, sent 6.30 A.M., Sheldon to S. H. Beckwith, City Point, for [Brig. Gen.] Rawlins, [Chief of Staff]: '[Captain] Glisson says he will send [a gunboat] as desired at once. Convoy is now ready. I leave in a few moments with pilots for [Colonel] Roberts [Colonel] Babcock' (FM65-F; row 5929/1; N1: The Papers of Ulysses S. Grant vol. 14, in a note, Babcock to Rawlins; page unresolved)**
 
-S. H. Beckwith , City Point {time: 6.30 AM} for [Brigadier General] Rawlins [Chief of Staff] [.] [Captain] Glisson says he will send [Gunboat] as desired at once [.] Convoy is now ready [.] I leave in a few moments with [Capture (-ed, -ing)] for [Colonel] Roberts [Colonel] Babcock Geo. D. Sheldon
+S. H. Beckwith , City Point {time: 6.30 AM} for [Brigadier General] Rawlins [Chief of Staff] [.] [Captain] Glisson says he will send [Gunboat] as desired at once [.] Convoy is now ready [.] I leave in a few moments with pilot for [Colonel] Roberts [Colonel] Babcock Geo. D. Sheldon
 
-Code-word tokens: H 11.
+Code-word tokens: H 10.
 
 **E572 | Page 385 | 5929 | mssEC 25 (obj 5952, pointer 5929), 14 Mar 1865 Ft Monroe, Sheldon to Maj. Eckert, Washington, for C. C. Fulton, American office, Baltimore (C, holder clear copy 7822), 14 March: 'The steamship Champion arrived here from Wilmington, North Carolina this morning and brings the intelligence that [Maj. Gen. Sherman] and his [forces] had reached Fayetteville, North Carolina, intact. The [scouts] of [Sherman's army] reached Wilmington ditto on the 11th instant, but the Champion sailing the same day no particulars could be obtained' (FM65-F; row 5929/2; image-read by FV-L15b; N1: holder clear copy 7822; the same news in the press of 16 Mar 1865)**
 
@@ -2639,11 +2639,11 @@ Maj. Eckert , Washington Sheaf [Quartermaster]'s office [Monroe] [24] for George
 
 Code-word tokens: H 20, C 1.
 
-**E562 | Page 373 | 5917 | mssEC 25 (obj 5952, pointer 5917), 25 Feb 1865 Ft Monroe, Sheldon to Maj. Eckert, Washington, for Hon. E. B. Washburne, Chairman of the Committee of Commerce: 'I sent for Johnson to try him. It would be a pity that the greatest rascal should escape. I can send him to you under guard but do not let him turn State's evidence. His confidential [statement] is clear. Do you want him?'; signed George H. Gordon, Brigadier General; 'raining here tonight', Geo. D. Sheldon (FM65-E; row 5917/1; weak: mostly plain)**
+**E562 | Page 373 | 5917 | mssEC 25 (obj 5952, pointer 5917), 25 Feb 1865 Ft Monroe, Sheldon to Maj. Eckert, Washington, for Hon. E. B. Washburne, Chairman of the Committee of Commerce: 'I sent for Johnson to try him. It would be a pity that the greatest rascal should escape. I can send him to you under guard but do not let him turn State's evidence. His confidential is clear. Do you want him?'; signed George H. Gordon, Brigadier General; 'raining here tonight', Geo. D. Sheldon (FM65-E; row 5917/1; weak: mostly plain)**
 
-Maj. Eckert [Volunteer] [Norfolk] [25] to Honorable E. be wash burn chairman Committee of Commerce [Washington] [.] I sent for Johnson to try him [.] It would be a pity that the greatest rascal should escape [.] I can send him to you under [Guard (-ed, -ing)] but do not let him turn state evidence [.] His confidential is clear [.] Do you want him  {tail: [signed] George H. Gore done [Brigadier General] raining here tonight Geo D Sheldon}
+Maj. Eckert Washington [Norfolk] [25] to Honorable E. be wash burn chairman Committee of Commerce [Washington] [.] I sent for Johnson to try him [.] It would be a pity that the greatest rascal should escape [.] I can send him to you under [Guard (-ed, -ing)] but do not let him turn state evidence [.] His confidential is clear [.] Do you want him  {tail: [signed] George H. Gore done [Brigadier General] raining here tonight Geo D Sheldon}
 
-Code-word tokens: H 13.
+Code-word tokens: H 12.
 
 **E564 | Page 374 | 5918 | mssEC 25 (obj 5952, pointer 5918), 4 Mar 1865 [10 PM] Ft Monroe, Sheldon to S. H. Beckwith, City Point, for Colonel George W. Bradley, Chief Quartermaster: 'I am entirely out of pilots. I was compelled to furnish the Navy with [two] pilots today for monitors to go up James River'; signed Captain James; 'sent 10.10 PM' (FM65-E; row 5918/1)**
 
@@ -2683,15 +2683,15 @@ Code-word tokens: H 25, M 1.
 
 **E542 | Page 343 | 5887 | mssEC 25 (obj 5952, pointer 5887), Ft Monroe 24 Jan 1865, Sheldon from Norfolk ('farmer') to Maj. Eckert, for the Secretary of the Navy ('Buxton'): the Saugus left this morning for Washington; General Grant needs her at once; she must be now half way; no use for me to send for her; will you let a message meet her and turn her back; Berrien (FM65-D; row 5887/1; 33 tokens)**
 
-Maj. Eckert [Volunteer] [Norfolk] to [Secretary of Navy] [.] The saugus left this morning for [Washington] [.] [Maj Genl U.S. Grant] needs her at once [.] she must be now half way [.] No use for me to send for her ditto will you let a message meet her and turner back Berrien Geo. D. Sheldon
+Maj. Eckert Washington [Norfolk] to [Secretary of Navy] [.] The saugus left this morning for [Washington] [.] [Maj Genl U.S. Grant] needs her at once [.] she must be now half way [.] No use for me to send for her ditto will you let a message meet her and turner back Berrien Geo. D. Sheldon
 
-Code-word tokens: H 9.
+Code-word tokens: H 8.
 
-**E543 | Page 344 | 5888 | mssEC 25 (obj 5952, pointer 5888), City Point 25 Jan 1865 to Geo. D. Sheldon at Ft Monroe, for Maj. Gen. [Ord]: 'I shall leave here tomorrow to be absent several days. I wish you to return to your headquarters in the field, see that in case of contingency you will be on hand to take charge of army operations from here. It will answer if you start up in the morning'; signed Grant ('Jersey'), 'thats all' S. H. Beckwith (FM65-D; row 5888/1; 40 tokens)**
+**E543 | Page 344 | 5888 | mssEC 25 (obj 5952, pointer 5888), City Point 25 Jan 1865 to Geo. D. Sheldon at Ft Monroe, for Maj. Gen. [Ord]: 'I shall leave here tomorrow to be absent several days. I wish you to return to your headquarters in the field, so that in case of necessity (the ledger reads 'see that'; print 'so that') you will be on hand to take charge of army operations from here. It will answer if you start up in the morning'; signed Grant ('Jersey'), 'thats all' S. H. Beckwith (FM65-D; N1: OR ser. I vol. 46 pt 2 p.259, Grant to Ord, City Point 25 Jan 1865, 3 p.m.; row 5888/1; 40 tokens)**
 
-Geo. D. Sheldon Ft Monroe {time: 3 PM} for [Maj Gen E. O. C. Ord] I shall leave here [Tomorrow] toby absent several days [.] I wish you to return to your [Head Quarters] [In the] field see that encase of tarquinty you wilby on hand to take charge of [Army]'s opera thing from here [.] it will answer if you stair tup in the morning  {tail: [signed] [Maj Genl U.S. Grant] thats all S. H. Beckwith}
+Geo. D. Sheldon Ft Monroe {time: 3 PM} for [Maj Gen E. O. C. Ord] I shall leave here [Tomorrow] toby absent several days [.] I wish you to return to your [Head Quarters] [In the] field see that encase of [necessity] you wilby on hand to take charge of [Army]'s opera thing from here [.] it will answer if you stair tup in the morning  {tail: [signed] [Maj Genl U.S. Grant] thats all S. H. Beckwith}
 
-Code-word tokens: H 10.
+Code-word tokens: H 10, C 1.
 
 **E544 | Page 344 | 5888 | mssEC 25 (obj 5952, pointer 5888), City Point 26 Jan 1865 to Geo. D. Sheldon at Ft Monroe, for 'I N Palmer' (as transcribed) at Newbern: 'All asked for by you has been ordered; not less than 6000 men will report to you; prepare accordingly'; signed Grant, Beckwith (FM65-D; row 5888/2; short, 28 tokens; N1: OR I/46 pt 2 p.271 and Grant Papers vol. 13)**
 
@@ -2713,9 +2713,9 @@ Code-word tokens: H 10.
 
 **E548 | Page 351 | 5895 | mssEC 25 (obj 5952, pointer 5895), Ft Monroe 2 Feb 1865 2.30 PM, Sheldon to Maj. Eckert, for Bates: 'ascertain immediately by what boat the President (the row's 'bologna') left Annapolis and the time of leaving and telegraph me in cipher; also the time the boat passes Point Lookout'; signed Eckert (FM65-D; row 5895/2; short, 29 tokens)**
 
-Maj. Eckert [Volunteer] {time: 2.30 PM} for Bates [.] ascertain immed'y by what boat the [President U.S.] left Annie police and the time of leaving and [Telegraph (-ed, -ing)] me in [Cipher] also the time the boat passes Point Lookout  {tail: [signed] Eckert Geo. D. Sheldon}
+Maj. Eckert Washington {time: 2.30 PM} for Bates [.] ascertain immed'y by what boat the [President U.S.] left Annie police and the time of leaving and [Telegraph (-ed, -ing)] me in [Cipher] also the time the boat passes Point Lookout  {tail: [signed] Eckert Geo. D. Sheldon}
 
-Code-word tokens: H 7.
+Code-word tokens: H 6.
 
 **E549 | Page 352 | 5896 | mssEC 25 (obj 5952, pointer 5896), Washington 2 Feb 1865, Geo. D. Sheldon at Ft Monroe, 'for Eckert': Maj. Gen. [Schofield] has called on Colonel Stager for a cipher operator to go with him tomorrow to North Carolina, and says he will in a short time need a construction corps and some operators; the Colonel refers the matter to you and has informed General Schofield of the fact; can you have the party selected to meet General Schofield at Monroe to accompany him, and shall I have Mack and party get ready to leave together with the material; answer; closing line 'T. T. Eckert' (the office for Eckert; the sender's person M); context OR I/47 pt 2 pp.189-190 and p.205 (Eckert at Fort Monroe 2 Feb 1 p.m.), Plum II p.274, holder 7870 (Mack in North Carolina to 14 Apr 1865) (FM65-D; row 5896/2; 50 tokens; image-read by FV-L15c)**
 
@@ -2723,11 +2723,11 @@ Geo. D. Sheldon Ft Monroe for Eckert [.] [Maj Genl J. M. Schofield] has called o
 
 Code-word tokens: H 15.
 
-**E550 | Page 353 | 5897 | mssEC 25 (obj 5952, pointer 5897), Ft Monroe 2 Feb 1865, Sheldon to Maj. Eckert, for Captain Blodget, Quartermaster, Annapolis (2 AM): please inform General Schofield, should he arrive in Annapolis tonight, that I will be at (Annapolis) Friday morning with important despatches for him from General Sherman; signed Jay F. Anderson, Major and A.D.C. (FM65-D; row 5897/0; 35 tokens)**
+**E550 | Page 353 | 5897 | mssEC 25 (obj 5952, pointer 5897), Ft Monroe 2 Feb 1865, Sheldon to Maj. Eckert, for Captain Blodget, Quartermaster, Annapolis: please inform General Schofield, should he arrive in Annapolis tonight, that I will be at (Annapolis) Friday morning with important despatches for him from General Sherman; signed Jay F. Anderson, Major and A.D.C. (FM65-D; image-read by FV-L15m; N1: holder clear copy 8561, Page 83, word for word; row 5897/0; 35 tokens)**
 
-Maj. Eckert , [Volunteer] [Monroe] for [Captain] Blodget a [Quartermaster] {time: 2 AM} police [.] Please inform [Maj Genl J. M. Schofield] should he arrive in An [Sumter] is tonight that I wilby at ditto ditto ditto [Tomorrow] Fry day morning with important despatches for him from [Maj Gen W. T. Sherman]  {tail: [signed] Jay F Anderson [Major] and A D see end Geo. D. Sheldon}
+Maj. Eckert , Washington [Monroe] for [Captain] Blodget a [Quartermaster] anna police [.] Please inform [Maj Genl J. M. Schofield] should he arrive in An apple is tonight that I wilby at ditto ditto ditto [Tomorrow] Fry day morning with important despatches for him from [Maj Gen W. T. Sherman]  {tail: [signed] Jay F Anderson [Major] and A D see end Geo. D. Sheldon}
 
-Code-word tokens: H 12.
+Code-word tokens: H 9.
 
 **E521 | Page 317 | 5861 | mssEC 25 (obj 5952, pointer 5861), City Point 6 Jan 1865 to Geo. D. Sheldon at Ft Monroe: 'please ascertain immediately if [Butler] has left Monroe, and if so when and when bound; don't mention that I enquired; keep me posted'; S. H. Beckwith (FM65-D, from FM65-B's decode of row 5861/2, second message only; short, about 24 tokens)**
 
@@ -2735,5 +2735,5 @@ Geo D Sheldon Ft Monroe please ascertain immed'y if [Maj Gen B. F. Butler] has [
 
 Code-word tokens: H 4.
 
-Totals over the 434 entries: H 7448, C 112, I 30, M 61, S 21, U 10.
+Totals over the 434 entries: H 7437, C 113, I 30, M 61, S 21, U 10.
 <!-- decode.py: derived block ends -->

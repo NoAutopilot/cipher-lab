@@ -142,7 +142,7 @@ def run(F):
                 old, new = LF[e]; hit = [x for x, l in enumerate(blk[1:], 1) if old in l and not l.startswith('note:')]
                 if len(hit) != 1: print('LINE MISS', e, old)
                 else: blk[hit[0]] = blk[hit[0]].replace(old, new, 1)
-            k = next(x for x, l in enumerate(blk) if l.startswith('note:'))
+            k = next((x for x, l in enumerate(blk) if l.startswith('note:')), max(x for x, l in enumerate(blk) if l.strip()) + 1)  # FIX-L16: blocks with no note line
             blk[k:k] = s['d']
             end = max(x for x, l in enumerate(blk) if l.strip())
             blk.insert(end + 1, 'note: ' + s['n'])
