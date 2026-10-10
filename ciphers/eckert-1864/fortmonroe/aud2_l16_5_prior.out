@@ -1,0 +1,39 @@
+prior_work eckert-1864 item adhoc-c1d76f (shelfmark=Huntington mssEC 25; folio=5827; date=1864-12-10) step second-audit @ origin/main 6f6aa18db (2026-10-10T16:46)
+  step      LEAD          1-own         [adhoc-c1d76f:1-own:ddc30c] live-claim (target-level: names the slug, no unit; check it does not cover this item) (5.3 h, no done line): 2026-10-10 11:29 | FIX-L14 worker | claim: FIX-L14 (apply FV-L14a/b/c corrections, eckert-1
+  step      LEAD          1-own         [adhoc-c1d76f:1-own:277ec2] live-claim (target-level: names the slug, no unit; check it does not cover this item) (3.4 h, no done line): 2026-10-10 13:25 | CLEAR-SWEEP worker (Sonnet 5.5) | claim (13:25 UTC 10 Oct by date -u, bo
+  plaintext CLEAR         3-tomokiyo    [adhoc-c1d76f:3-tomokiyo:80d907] cached mirror (sources/cryptiana/web, snapshot 19 Sept 2026) names no folio of this unit; terms ['25', '1864']
+  plaintext UNCHECKED-NET 3-solver      [adhoc-c1d76f:3-solver:c79056] unsolved-ciphers (github.com/aaymeloglu/unsolved-ciphers): no cache on disk, not searched; pass --clone <local clone> to search it
+  plaintext CLEAR         3-solver      [adhoc-c1d76f:3-solver:a7793a] no cached solver file names this unit: sources/cyphersolver, sources/cyphersolver-site, sources/bourdeau
+  plaintext UNCHECKED-NET 4-editions    [adhoc-c1d76f:4-editions:95e0f9] not on disk (warofrebellion321unit warofrebellion013401rootrich warofrebellion013402rootrich warofrebellion351unit warofrebellion381unit warofrebellion382unit warofrebellion383unit warofrebellion391un
+  plaintext CLEAR         4-editions    [adhoc-c1d76f:4-editions:f96526] date +-1 day and both correspondents searched, control hit, no window: warofrebellion322unit warofrebellion323unit warofrebellion33unit warofrebellion013403rootrich warofrebellion013404rootrich warofr
+  holds: specific 2 (LEAD 2); generic 2 (UNCHECKED-NET 2)
+  verdict plaintext: UNCHECKED-NET
+  verdict step: LEAD
+exit 4: owed before this step: LEAD adhoc-c1d76f:1-own:277ec2, LEAD adhoc-c1d76f:1-own:ddc30c
+exit 4
+prior_work eckert-1864 item adhoc-a51c2e (shelfmark=Huntington mssEC 25; folio=5577; date=1864-03-03) step second-audit @ origin/main 6f6aa18db (2026-10-10T16:46)
+  step      LEAD          1-own         [adhoc-a51c2e:1-own:ddc30c] live-claim (target-level: names the slug, no unit; check it does not cover this item) (5.3 h, no done line): 2026-10-10 11:29 | FIX-L14 worker | claim: FIX-L14 (apply FV-L14a/b/c corrections, eckert-1
+  step      LEAD          1-own         [adhoc-a51c2e:1-own:277ec2] live-claim (target-level: names the slug, no unit; check it does not cover this item) (3.4 h, no done line): 2026-10-10 13:25 | CLEAR-SWEEP worker (Sonnet 5.5) | claim (13:25 UTC 10 Oct by date -u, bo
+  plaintext CLEAR         3-tomokiyo    [adhoc-a51c2e:3-tomokiyo:80d907] cached mirror (sources/cryptiana/web, snapshot 19 Sept 2026) names no folio of this unit; terms ['25', '1864']
+  plaintext UNCHECKED-NET 3-solver      [adhoc-a51c2e:3-solver:c79056] unsolved-ciphers (github.com/aaymeloglu/unsolved-ciphers): no cache on disk, not searched; pass --clone <local clone> to search it
+  plaintext CLEAR         3-solver      [adhoc-a51c2e:3-solver:a7793a] no cached solver file names this unit: sources/cyphersolver, sources/cyphersolver-site, sources/bourdeau
+  plaintext UNCHECKED-NET 4-editions    [adhoc-a51c2e:4-editions:95e0f9] not on disk (warofrebellion321unit warofrebellion013401rootrich warofrebellion013402rootrich warofrebellion351unit warofrebellion381unit warofrebellion382unit warofrebellion383unit warofrebellion391un
+  plaintext CLEAR         4-editions    [adhoc-a51c2e:4-editions:f96526] date +-1 day and both correspondents searched, control hit, no window: warofrebellion322unit warofrebellion323unit warofrebellion33unit warofrebellion013403rootrich warofrebellion013404rootrich warofr
+  holds: specific 2 (LEAD 2); generic 2 (UNCHECKED-NET 2)
+  verdict plaintext: UNCHECKED-NET
+  verdict step: LEAD
+exit 4: owed before this step: LEAD adhoc-a51c2e:1-own:277ec2, LEAD adhoc-a51c2e:1-own:ddc30c
+exit 4
+prior_work eckert-1864 item adhoc-aff22e (shelfmark=Huntington mssEC 25; folio=5829; date=1864-12-13) step second-audit @ origin/main 6f6aa18db (2026-10-10T16:46)
+  step      LEAD          1-own         [adhoc-aff22e:1-own:ddc30c] live-claim (target-level: names the slug, no unit; check it does not cover this item) (5.4 h, no done line): 2026-10-10 11:29 | FIX-L14 worker | claim: FIX-L14 (apply FV-L14a/b/c corrections, eckert-1
+  step      LEAD          1-own         [adhoc-aff22e:1-own:277ec2] live-claim (target-level: names the slug, no unit; check it does not cover this item) (3.4 h, no done line): 2026-10-10 13:25 | CLEAR-SWEEP worker (Sonnet 5.5) | claim (13:25 UTC 10 Oct by date -u, bo
+  plaintext CLEAR         3-tomokiyo    [adhoc-aff22e:3-tomokiyo:80d907] cached mirror (sources/cryptiana/web, snapshot 19 Sept 2026) names no folio of this unit; terms ['25', '1864']
+  plaintext UNCHECKED-NET 3-solver      [adhoc-aff22e:3-solver:c79056] unsolved-ciphers (github.com/aaymeloglu/unsolved-ciphers): no cache on disk, not searched; pass --clone <local clone> to search it
+  plaintext CLEAR         3-solver      [adhoc-aff22e:3-solver:a7793a] no cached solver file names this unit: sources/cyphersolver, sources/cyphersolver-site, sources/bourdeau
+  plaintext UNCHECKED-NET 4-editions    [adhoc-aff22e:4-editions:95e0f9] not on disk (warofrebellion321unit warofrebellion013401rootrich warofrebellion013402rootrich warofrebellion351unit warofrebellion381unit warofrebellion382unit warofrebellion383unit warofrebellion391un
+  plaintext CLEAR         4-editions    [adhoc-aff22e:4-editions:f96526] date +-1 day and both correspondents searched, control hit, no window: warofrebellion322unit warofrebellion323unit warofrebellion33unit warofrebellion013403rootrich warofrebellion013404rootrich warofr
+  holds: specific 2 (LEAD 2); generic 2 (UNCHECKED-NET 2)
+  verdict plaintext: UNCHECKED-NET
+  verdict step: LEAD
+exit 4: owed before this step: LEAD adhoc-aff22e:1-own:277ec2, LEAD adhoc-aff22e:1-own:ddc30c
+exit 4

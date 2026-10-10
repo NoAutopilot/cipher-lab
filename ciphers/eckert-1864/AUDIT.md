@@ -19965,3 +19965,82 @@ djvu texts), `aud2_l16_4_hdl.py` (+ `.out`: CONTENTdm full text, 13 fresh querie
   note: AUD2-LEDGER16-2 and AUD2-LEDGER16-3 posted be-api takes at 15:53 and 15:57 while one of this session's takes was open, so the hosts saw two
   sessions at once for about a minute each); archive.org 2 (Peirpoint metadata + djvu, 200); www.googleapis.com 9 (6 x 200, 3 errors), 1.6 s apart;
   www.loc.gov 5 (JSON API, 200); chroniclingamerica.loc.gov 1 (403 Cloudflare, stopped). For LANE LEDGER-16 (account 1).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER16-5)
+
+Second verifier AUD2-LEDGER16-5 (account 1, Opus 5.5, for the orchestrator (owner account), WORK-QUEUE row AUD2-LEDGER16-5), 10 Oct 2026,
+16:43-17:1x UTC by `date -u`; a separate session from the readers FM-S1, FM-S3 and FM-F1 and the first verifier FV-L16e, not protecting their
+conclusions. Scope: **E447** (5827/0), **E471** (5577/0), **E474** (5829/1), first audit "## AUDIT (FV-L16e)" (the other six there are N1, N2 or
+D1 and not re-audited). Nothing decoded; every code group looked up again in key.md (`fv_l16e_keylook.out` re-read against key.md lines). Key
+source: `period` (War Department Cipher No. 1). Step 0 not used (non-test on mssEC 25). Intake gate (16:4x): `eckert-1864: partial (line 3) --
+edition/page or full-text-search citation found within 6 lines`, exit 0. No spec, so `judge_plaintext.py` was not run. Scripts and raw output
+(committed, `fortmonroe/`): `aud2_l16_5_prior.out`, `aud2_l16_5_hdl.py` (+ `.args`, `.out`), `aud2_l16_5_gb.py` (+ `.out`, `_gb2.out` retry),
+`aud2_l16_5_beapi.py` (+ `.out`), `aud2_l16_5_print.py` (KWIC over the cached IA texts; hits quoted below).
+
+### 1. Prior work (prior-work-step.md, civil-war adapter)
+`tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<pointer>;date=..;sender=..;recipient=..' --step-type
+second-audit --offline`, all three (16:4x, before the first network request): verdict step LEAD (exit 4) on the two target-level live claims
+FIX-L14 (11:29) and CLEAR-SWEEP (13:25), neither covering a second audit of these three: CLEAR. 4-editions: date +-1 day and both correspondents
+CLEAR in the parts on disk; UNCHECKED-NET = the 1864 OR parts not on disk (none of them the Virginia/N.C. parts for Mar or Dec 1864) and the
+aaymeloglu repository (no cache). The tool's write to prior-work.tsv was reverted (not this job's file).
+
+### 2. Families added by this audit
+| Family | Result |
+|---|---|
+| Huntington CONTENTdm full text (one hdl take 16:5x-17:0x, after AUD2-LEDGER16-1's release; control 'Inspector difficulty Evidence Nashville' -> 9678; 14 fresh queries, none of CLEAR-SWEEP's or FV-L16e's; **the code words themselves queried too**, so a received copy at Washington transcribed with the same arbitraries would hit) | **No copy of any of the three at another pointer.** E447: 'Saugus daylight' 0, 'Colhoun Porter' 0, 'Saugus Colhoun' -> 5824 only (E185, the antecedent), 'Spoons above black' -> 5827 own, 9979 (1865, other), 5662 (May 1864, other), 'early delight' -> 5827 own. E471: 'plunge Pembroke' and 'penfields cable' -> 5577 own only; 'kill pat trick' -> 5577 own, 5578 (4 Mar, Kilpatrick's own report, another telegram); 'number 1 cipher received' 21 hits, none Mar 1864 (6605 = 1862 Buell, 7691 = Jan 1865, others other subjects). E474: 'Frances fever paradise', 'arsey webster', 'Ingalls Webster fleet' -> 5829 own only; 'fleet stomach yet' -> 5829 own, 5925 (8 Mar 1865, other); 'Butler fleet left' -> 4601, 7666, 5657 (other dates and subjects). |
+| OR / ORN by correspondent index (the AUD2-LEDGER16-3 lesson), on disk | **OR I/42 pt 3 index**: "Ingalls, Rufus. Correspondence with Dodge 392; Meade 445; Quartermaster-General's Office 198, 709, 739; War Department 703; Wise 1101" -- no Webster; "Webster, Ralph C. Correspondence with Butler 418; Grant 1080; Quartermaster-General's Office 417, 432" -- no Ingalls (p.1080 = Grant to Webster 27 Dec, River Queen, another telegram). **ORN I/11 index**: Porter's correspondence with Colhoun pp.146, 276, 467, 604 (5-6 Dec, Fort Fisher, Jan 1865, Mar 1865); Saugus "Orders for movements" 103, 111, 378, 604; none 10 Dec. ORN I/11 p.194 (Nichols, 15 Dec) read whole: "the rescue of the Saugus from her dangerous position", afloat at meridian on the 14th: she grounded on the way down that E447 announces (context; the telegram is not printed). ORN I/11 Dec 10-11 by date (28 hits read): Porter's 11 Dec orders to the Mahopac, Monadnock, Canonicus; Parker 11 Dec (page not taken from the OCR) on the James River vessels; no Saugus reply. **OR I/33 index**: "Sheldon, George D. Correspondence with Thomas T. Eckert 649" -- p.649 read: Sheldon at **Cherrystone**, 6 Mar 1864 (received 7 p.m.), to Eckert, Suffolk rumours: another telegram, three days after E471; same page, Butler 6 Mar: "The raid on Cherrystone and the capture of the Titan" (context: the Cherrystone end of the bay cable was raided on 5 Mar). |
+| Telegraph histories on disk (Plum II, O'Brien 1910, Bates 1907) by 'cable' | O'Brien p.~71: the Chesapeake cable "was a piece of the first Atlantic cable ... It was also broken more than once", relaid to Cherrystone; p.120: a failure of it in Oct 1863; Bates p.~258: the same cable. Context for E471's "till cable is repaired"; no break dated 3 Mar 1864 in print found. |
+| Google Books API (keyed, `country=US`; 11 queries + one retry of the 7 that failed after 30 s; control E468 phrase hit Grant Papers 13 `mnRjmhe3QLoC`, `ij8fAQAAMAAJ`) | **6 queries unreachable (503 twice, not retried again)**: '"fleet left yet" Ingalls', 'Ingalls "Colonel Webster" "December 13, 1864"', '"most of the fleet left during last night"', '"early daylight" Saugus Colhoun', '"Colhoun" "six miles above City Point"', '"cable" Cherrystone broken March 1864'. Answered, no Grant Papers 13/14 hit and no copy: 'Saugus aground ... Colhoun "Hampton Roads"' 0; '"number one cipher" Sheldon 1864' 338 (OR and directories, off subject); '"nothing heard from Kilpatrick"' 351 (Dahlgren raid histories, other wording); 'Sheldon Eckert "March 3, 1864" cipher' 0. |
+| IA be-api, whole collection (7 queries; control '"Suwo Nada"' hit) | '"Saugus" aground "December" 1864 "James River" Colhoun' -> ORN I/11 contents pages only; '"number one cipher" Sheldon' 2 (engineering journals); '"cable" "Cherrystone" March 1864 broken' 1 (1890 Congressional Record, off subject); '"Butler's fleet" Ingalls Webster' 34 (Pickett memoir, 1957 trade journals); '"Saugus" "early daylight" "City Point"' and '"fleet left yet"' 502, not retried. |
+| Image (5829 at 2400 px this session, E474 region cropped) | **The leaf reads "Frances fever paradise arsey webster chief vincent . / has Knox fleet stomach yet youth Ingalls"**, word for word as the transcription (the first word is written "Frances", not "France" or "Francis"). E447 and E471 not re-fetched: FV-L16e's eye check of 5827 and 5577 stands, and the holder transcription on disk (`sources/fortmonroe/p5827.json`, `p5577.json`) agrees with ciphertext.txt word for word. |
+| JSTOR | 6 rows appended to JSTOR-QUEUE.tsv (both families: names/date ANDed; bare quoted phrases "will start down at early daylight", "send no ciphers till the cable is repaired", "has General Butler's fleet left yet"); they never block a class. |
+| Open indexes | Not run (FV-L16e and AUD2-LEDGER16-2/3 found the open indexes off subject for these ledgers; budget kept for the families above). |
+| Not reached | NARA RG 107 (telegrams received at the War Department, Mar 1864: the Washington copy of E471), RG 92 (QMG: Ingalls, Webster), RG 45 (Porter's papers); Grant Papers vol. 13 for 10-13 Dec beyond snippets; OR I/42 pt 1 (Butler's report on the expedition; not on disk); HathiTrust full text. |
+
+### 3. Readings and grades, checked
+- **E474 -- correction: "Frances fever" reads.** key.md has **Francis = 12 (time word, TIME page (315))** and fever = 13 (numerals p.25 row 13). The clerk's
+  "Frances" for the time word Francis is attested and confirmed elsewhere on the ledgers: **E200** (mssEC 18 pointer 9696, Baldwin, 6 Apr 1864) heads
+  "Washn Apr 6th 1864 12 M" in clear and opens "Frances For Princess Thomas Vinton ...", already filed with `variant: frances=Francis:I`. The opening
+  of E474 is therefore the usual time-and-date head of a City Point telegram ("Katy for John Black ..." E296; "Harriet for In galls ..." E278 on the
+  same page): **{time: 12 M} [13] [Colonel] R. C. Webster chief [Quartermaster] . has [Maj Gen B. F. Butler]'s fleet [Left] yet [signed] Ingalls**.
+  The time fits: Ingalls asks at noon on the 13th; Webster's answer on the same page (E278) is timed Harriet = 1 PM the same day. FV-L16e's
+  "[New York]'s [13]" (the reader's) and "does not read: M x2" are withdrawn; "France" = New York does not apply ("Frances" with -s was matched to
+  France by suffix stripping). **Grades: Francis I (spelling variant, E200 precedent), fever H, paradise H, vincent H, Knox H, stomach H, youth H =
+  H 6 + I 1 of 7**; "webster", "arsey" (= R. C.), "chief", "Ingalls" plain, as FV-L16e. Body code words 2 (Butler, Left), as before.
+- **E447:** every code group re-looked up: pledge 6, Spoons Miles, black City Point, Rosetta 9.30 PM, Niagara D. D. Porter, unity period, wrangle
+  telegram, whelp tomorrow, Youth signature, polkaer Command-er, Sarah 11 PM. FV-L16e's **H 11 of 11** stands; "Cole hound" = E. R. Colhoun (holder
+  5824 "E. are Colhoun"; ORN I/11 "Edmd. R. Colhoun, Commander") stands.
+- **E471:** plunge 1, Pembroke Cipher, Wedge Today, unity period, penfields Ciphers, zodiac period, Harriet 1 PM, Wharf Today; "repaired",
+  "nothing", "kill" plain (line indicators read as plain). FV-L16e's **H 8 of 8** stands. **New internal check (non-statistical, from the holder's
+  own ledger):** every mssEC 25 entry before E471 reads with **No. 9** ("old vocabulary": O9-DM 3 Feb, O9-DL 3 Feb, O9-CA/CB 10 Feb, O9-CC 11 Feb,
+  O9-CD 1 Mar 1864, `ciphertext-no9.txt`), and every Fort Monroe entry from E471 (3 Mar) on reads with **No. 1** (the same page's row 5577/1, Butler
+  to Stanton 3 Mar 8 p.m. = OR I/33 p.197; E311 9 Mar; E188, E276, E446 12 Mar; E168 17 Mar; E191 28 Mar). The telegram that says "number 1 cipher
+  received today" is the first No. 1 entry in the ledger: the reading's content agrees with the ledger's own change of key on that date.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | text | depth | basis |
+|---|---|---|---|---|---|
+| E447 | **N3** (kept) | period | not known | D3 (kept; external added: ORN I/11 p.194, the Saugus aground on the way down, afloat 14 Dec) | not located after FV-L16e and s.2 |
+| E471 | **N3** (kept) | period | not known | **D2 -> D3** (H 8/8 = 100% of code groups, no unread span; external, non-statistical: the ledger's switch from No. 9 (to 1 Mar) to No. 1 (from 3 Mar) matches "number 1 cipher received today"; OR I/33 p.197 and p.649 context) | not located after FV-L16e and s.2; OR I/33's one Sheldon-Eckert telegram (p.649, 6 Mar, Cherrystone) is another |
+| E474 | **N3** (kept) | period | not known | D2 (kept; completeness raised to H 6 + I 1 of 7, 85.7% H; D3 not claimed: two body code words and one I) | not located after FV-L16e and s.2; the OR I/42 pt 3 index prints no Ingalls-Webster correspondence |
+- **Not N4 (all three):** NARA RG 107 / 92 / 45 unread; Grant Papers 13 by snippet only and six Google Books queries unreachable (503); OR I/42 pt 1 not on disk.
+- **Safe sentences.** E447 and E471: FV-L16e's stand. E474: FV-L16e's, with the time: "... on 13 Dec 1864, at noon, Brig. Gen. Ingalls at City Point
+  asked Col. R. C. Webster, chief quartermaster at Fort Monroe, whether General Butler's fleet had left yet." E471 may add: "It is the first telegram on
+  the Fort Monroe ledger read with Cipher No. 1; the entries before it read with No. 9."
+- **Unsafe:** any "first decipherment", "new", "unpublished" for the three (the E471 "first telegram ... read with Cipher No. 1" is about the ledger's
+  order, never about novelty); "[New York]'s [13]" or "Frances fever unread" for E474; "the cable was cut by the Cherrystone raid" for E471 (the raid
+  was 5 Mar, after E471; no cause of the 3 Mar break was found).
+
+### 5. Postmortem, leads and propagation
+- FV-L16e's one error: "Frances fever" left M as "[New York]'s [13]" -- a suffix-stripping look-up (Frances -> France) where the time word Francis
+  (TIME page) fits and the ledger itself has the variant (E200). Lesson: before an M on the first one or two words after the address of a
+  received telegram, try the TIME page and the date numerals, and grep ciphertext*.txt for `variant:` lines carrying the same spelling.
+- For a FIX job (not applied here; reading.md is decode.py output): **E474: entry note so the head reads {time: 12 M} [13] (Frances = Francis:I,
+  as E200), not "[New York]'s [13]"; drop the M; header "13 Dec 1864 12 M"**; E471 header may add "first No. 1 entry on the ledger (No. 9 before 3 Mar)";
+  E447 header may add ORN I/11 p.194 (Saugus aground, afloat 14 Dec). FV-L16e's s.5 for these three otherwise stands.
+- Propagated: status.json E447 E471 E474 -> audit_status "two audits", audit_refs + this section, gap; E471 depth D3 + depth_check; E474 completeness,
+  unresolved_spans, depth_pct, line; `second-opinions/PROMPT-chatgpt-e474.md` reading line corrected (rule 10: revision carried into a queued SO
+  prompt); SECOND-OPINIONS-QUEUE.tsv rows SO-ECKERT-E447/E471/E474 kept queued (classes unchanged); WORK-QUEUE AUD2-LEDGER16-5 -> done.
+- Requests: hdl.huntington.org 16 (15 CISOSEARCHALL incl control, 1 IIIF; all 200; one take); www.googleapis.com 18 (11 + 7 retry; 12 x 503);
+  be-api.us.archive.org 7 (1.8 s; 2 x 502); no archive.org downloads.
+For the orchestrator (owner account) and LANE LEDGER-16 (account 1).

@@ -15343,9 +15343,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L16e)'"
+        "AUDIT.md '## AUDIT (FV-L16e)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER16-5)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-L16e verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -15353,7 +15354,7 @@
       "date": "10 Oct 2026",
       "kind": "reading",
       "claim_scope": "completed-reading",
-      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16e)' section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16e)' section 4; AUDIT 2 (AUD2-LEDGER16-5) s.4",
       "reading_version": "FM-S1/FM-S2/FM-S3/FM-F1 readers (reading.md), grades as in AUDIT (FV-L16e) s.3 (fixes pending in s.5)",
       "unresolved_spans": "none",
       "depth_unread": {
@@ -15366,7 +15367,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): City Point (Beckwith) to Sheldon, Fort Monroe, for Admiral Porter, 10 Dec 1864: Commander E. R. Colhoun, monitor Saugus, will start down at early daylight tomorrow (E447)",
       "line": "Read at grade H with War Department Cipher No. 1: on 10 Dec 1864 Commander E. R. Colhoun of the monitor Saugus, six miles above City Point, told Admiral Porter through City Point and Fort Monroe that his telegram was just received and that he would start down at early daylight tomorrow; not located in the Official Records ser. I vols. 33 and 42 pt 3, ORN ser. I vols. 9 and 11, Butler's correspondence vol. V, Plum's Military Telegraph vol. II, J. E. O'Brien's Telegraphing in Battle, Google Books, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L16e); not N4: Grant Papers vols. 12-13 by Google Books snippets only, NARA RG 107/92/45 unread, OR read in OCR",
+      "gap": "N3 two audits (FV-L16e, AUD2-LEDGER16-5: kept); not N4: NARA RG 107/92/45 unread, Grant Papers 13 by Google Books snippets only (six queries 503 on 10 Oct), OR I/42 pt 1 not on disk",
       "depth": "D3",
       "completeness": "11 H of 11 code-word groups (\"Cole hound\" = Colhoun, plain name)",
       "phrases": [
@@ -15384,17 +15385,18 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L16e)'"
+        "AUDIT.md '## AUDIT (FV-L16e)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER16-5)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth_by": "FV-L16e verifier (account 1)",
+      "depth_by": "AUD2-LEDGER16-5 second verifier (account 1)",
       "depth_date": "10 Oct 2026",
       "decode_status": "Partially decrypted",
       "date": "10 Oct 2026",
       "kind": "reading",
       "claim_scope": "completed-reading",
-      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16e)' section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16e)' section 4; AUDIT 2 (AUD2-LEDGER16-5) s.4",
       "reading_version": "FM-S1/FM-S2/FM-S3/FM-F1 readers (reading.md), grades as in AUDIT (FV-L16e) s.3 (fixes pending in s.5)",
       "unresolved_spans": "none",
       "depth_unread": {
@@ -15407,8 +15409,8 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Sheldon, Fort Monroe, to Maj. Eckert, 3 Mar 1864: No. 1 cipher received; send no ciphers till the cable is repaired; nothing heard from Kilpatrick up to 1 PM (E471)",
       "line": "Read at grade H with War Department Cipher No. 1: on 3 Mar 1864 Sheldon at Fort Monroe told Eckert that the No. 1 cipher had been received that day, asked him to send no ciphers until the cable was repaired, and reported nothing heard from Kilpatrick up to 1 PM; not located in the Official Records ser. I vols. 33 and 42 pt 3, ORN ser. I vols. 9 and 11, Butler's correspondence vol. V, Plum's Military Telegraph vol. II, J. E. O'Brien's Telegraphing in Battle, Google Books, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L16e); not N4: Grant Papers vols. 12-13 by Google Books snippets only, NARA RG 107/92/45 unread, OR read in OCR",
-      "depth": "D2",
+      "gap": "N3 two audits (FV-L16e, AUD2-LEDGER16-5: kept); not N4: NARA RG 107/92/45 unread, Grant Papers 13 by Google Books snippets only (six queries 503 on 10 Oct), OR I/42 pt 1 not on disk",
+      "depth": "D3",
       "completeness": "8 H of 8 code-word groups",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.33, pointer 5577, E471"
@@ -15418,39 +15420,40 @@
         "Huntington mssEC 25 (obj 5952) p.33, pointer 5577, E471"
       ],
       "depth_sentence": "On 3 Mar 1864 Sheldon at Fort Monroe told Eckert that the No. 1 cipher had been received that day, asked him to send no ciphers until the cable was repaired, and reported nothing heard from Kilpatrick up to 1 PM.",
-      "depth_check": "code: Pembroke / Penfields = Cipher(s) in two contexts, Wedge / Wharf = Today; external (non-statistical): OR I/33 p.197 Butler to Stanton, Fort Monroe 3 Mar 1864 8 p.m. (received 8.40 a.m., 4th), Kilpatrick arrived",
+      "depth_check": "code: Pembroke / Penfields = Cipher(s) in two contexts, Wedge / Wharf = Today; external (non-statistical): OR I/33 p.197 Butler to Stanton, Fort Monroe 3 Mar 1864 8 p.m. (received 8.40 a.m., 4th), Kilpatrick arrived; ledger-internal (non-statistical, AUD2-LEDGER16-5): every mssEC 25 entry before 3 Mar 1864 reads with No. 9 (O9-DM, O9-DL, O9-CA..CD to 1 Mar) and every entry from E471 on with No. 1 -- the reading's 'number 1 cipher received today' matches the ledger's own change of key",
       "depth_note": "8 H of 8 code-word groups"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L16e)'"
+        "AUDIT.md '## AUDIT (FV-L16e)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER16-5)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth_by": "FV-L16e verifier (account 1)",
+      "depth_by": "FV-L16e verifier (account 1); completeness revised by AUD2-LEDGER16-5",
       "depth_date": "10 Oct 2026",
       "decode_status": "Partially decrypted",
       "date": "10 Oct 2026",
       "kind": "reading",
       "claim_scope": "completed-reading",
-      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16e)' section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16e)' section 4; AUDIT 2 (AUD2-LEDGER16-5) s.4",
       "reading_version": "FM-S1/FM-S2/FM-S3/FM-F1 readers (reading.md), grades as in AUDIT (FV-L16e) s.3 (fixes pending in s.5)",
-      "unresolved_spans": "\"Frances fever\" (M)",
+      "unresolved_spans": "none",
       "depth_unread": {
         "names_codes": "0",
         "other": "0"
       },
-      "depth_pct": 71.4,
+      "depth_pct": 85.7,
       "grade": "N3",
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): City Point (Ingalls) to Col. R. C. Webster, Fort Monroe, 13 Dec 1864: has General Butler's fleet left yet (E474)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 13 Dec 1864 Brig. Gen. Ingalls at City Point asked Col. R. C. Webster, chief quartermaster at Fort Monroe, whether General Butler's fleet had left yet; not located in the Official Records ser. I vols. 33 and 42 pt 3, ORN ser. I vols. 9 and 11, Butler's correspondence vol. V, Plum's Military Telegraph vol. II, J. E. O'Brien's Telegraphing in Battle, Google Books, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L16e); not N4: Grant Papers vols. 12-13 by Google Books snippets only, NARA RG 107/92/45 unread, OR read in OCR",
+      "line": "Read at grade H with War Department Cipher No. 1: on 13 Dec 1864, at noon, Brig. Gen. Ingalls at City Point asked Col. R. C. Webster, chief quartermaster at Fort Monroe, whether General Butler's fleet had left yet; not located in the Official Records ser. I vols. 33 and 42 pt 3, ORN ser. I vols. 9 and 11, Butler's correspondence vol. V, Plum's Military Telegraph vol. II, J. E. O'Brien's Telegraphing in Battle, Google Books, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 two audits (FV-L16e, AUD2-LEDGER16-5: kept); not N4: NARA RG 107/92/45 unread, Grant Papers 13 by Google Books snippets only (six queries 503 on 10 Oct), OR I/42 pt 1 not on disk",
       "depth": "D2",
-      "completeness": "5 H + 2 M of 7 code-word groups (\"Frances fever\" unread, M; webster = the addressee, plain)",
+      "completeness": "6 H + 1 I of 7 code-word groups (Frances = Francis, the 12 M time word, spelling variant as E200, I; fever = 13, the date; webster = the addressee, plain)",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.285, pointer 5829, E474"
       ],
@@ -15458,9 +15461,9 @@
       "documents": [
         "Huntington mssEC 25 (obj 5952) p.285, pointer 5829, E474"
       ],
-      "depth_sentence": "On 13 Dec 1864 Brig. Gen. Ingalls at City Point asked Col. R. C. Webster, chief quartermaster at Fort Monroe, whether General Butler's fleet had left yet.",
-      "depth_check": "code: Stomach = Left reads again in E278 (Webster's 1 PM reply, same page: most of the fleet left during last night), Knox = Butler passim; external: E278",
-      "depth_note": "5 H + 2 M of 7 code-word groups (\"Frances fever\" unread, M; webster = the addressee, plain)"
+      "depth_sentence": "On 13 Dec 1864, at noon, Brig. Gen. Ingalls at City Point asked Col. R. C. Webster, chief quartermaster at Fort Monroe, whether General Butler's fleet had left yet.",
+      "depth_check": "code: Stomach = Left reads again in E278 (Webster's 1 PM reply, same page: most of the fleet left during last night), Knox = Butler passim; external: E278; time: Francis = 12 M (Ingalls asks at noon), Webster's reply E278 timed Harriet = 1 PM the same day",
+      "depth_note": "6 H + 1 I of 7 code-word groups (Frances = Francis, the 12 M time word, spelling variant as E200, I; fever = 13, the date; webster = the addressee, plain)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",

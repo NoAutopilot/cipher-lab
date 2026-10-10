@@ -6,7 +6,7 @@ reading. Be adversarial: we would rather learn now that it is in print than clai
 
 THE ITEM
 - Source: Thomas T. Eckert Papers, Huntington Library, San Marino, mssEC 25 ("Ciphers Received and Sent", Fort Monroe) p.285 (digital pointer 5829), headed "City Point Dec. 13 - 1864 / Geo. D. Sheldon FT Monroe", E474, https://hdl.huntington.org/digital/collection/p16003coll11/id/5829. Read with War Department Cipher No. 1 (Huntington mssEC 41).
-- Reading (code words in brackets, as corrected by our verifier, AUDIT (FV-L16e) s.3): "Geo. D. Sheldon FT Monroe Frances fever (unread by us) [Colonel] arsey (= R. C.) webster chief [Quartermaster] . has [Maj Gen B. F. Butler]'s fleet [Left] yet [signed] Ingalls S. H. Beckwith"
+- Reading (code words in brackets, as corrected by our verifiers, AUDIT (FV-L16e) s.3 and AUDIT 2 (AUD2-LEDGER16-5) s.3): "Geo. D. Sheldon FT Monroe Frances (= Francis, {time: 12 M}) fever ([13], the date) [Colonel] arsey (= R. C.) webster chief [Quartermaster] . has [Maj Gen B. F. Butler]'s fleet [Left] yet [signed] Ingalls S. H. Beckwith"
 - Context we already know: the reply on the same ledger page (Webster to Ingalls, 13 Dec 1864 1 PM: most of the fleet left during last night), our item E278.
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/reading.md,
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key.md, search log
