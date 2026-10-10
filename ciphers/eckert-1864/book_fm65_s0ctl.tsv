@@ -1,0 +1,17 @@
+# wrapper positive controls (E305 5740, E320 5702, E309 5786: step0_ordered.tsv HIT)
+5740/0	no1
+5740/1	no1
+5702/0	no1
+5786/0	no1
+5786/1	no1
+# the ten test rows (read No. 1 by instrument C)
+5854/1	no1
+5856/0	no1
+5878/1	no1
+5886/0	no1
+5897/0	no1
+5904/1	no1
+5905/0	no1
+5918/0	no1
+5924/0	no1
+5936/0	no1

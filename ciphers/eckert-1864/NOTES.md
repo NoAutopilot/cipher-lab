@@ -5756,3 +5756,155 @@ Read so far: 0 of 4 filed; 4 of 4 step-0 hits.
 - [ ] image-check: not run, nothing filed.
 - [n/a] retry: nothing failed, so no retry needed.
 Verdict: keep going: 2 internal gaps; cheapest next: 5650/0 sibling window by date, ~$0.2
+## BOOK-FM65 (10 Oct 2026, account 1, for LANE LEDGER-13)
+
+Question (FM-PRE gap item 2): does any book in hand (No. 1 key.md, No. 2 key-no2.md, No. 9 key-no9.md) read the 81 clean **1865** rows of
+`fortmonroe/clean-fm.tsv` (Jan 48, Feb 15, Mar 18)? Pre-registered in HYPOTHESES.md "## BOOK-FM65 pre-registration" (08:49 UTC, pushed 368371f2e) before
+any decode. Scripts `book_fm65.py` (book65.py pointed at the Fort Monroe pages; outputs `book_fm65.out` = `--show --shufshow`, `book_fm65_headers.out` =
+`--headers`, `book_fm65_step0.tsv` and `book_fm65_step0_shuf{1,2,3}.tsv` = `--step0 book_fm65_pred_books.tsv [--shuf N]`) and `book_fm65_pred.py`
+(header features -> `book_fm65_pred.tsv`). Text: the volunteer transcription on disk (sources/fortmonroe/p<pointer>.json, all present); no image, 0 network
+requests, so every call is conditional on that text (rule 2). Intake gate (08:4x UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search
+citation found within 6 lines`. Own work: no Fort Monroe pointer >= 5847 is in reading*.md or ciphertext*.txt (grep 08:4x UTC). Nothing filed.
+
+Gate (instrument C): a book reads a row only if its decode carries a coherent clause (>= 4 tokens, >= 2 code meanings) that none of its 3 shuffled copies and
+no other book gives. Instrument A (bigram count, book / shuffled max of 3 / 20-seed p95) beside it, supplementary. Instrument B (header): this ledger's
+transcription carries **no book label** on any of the 81 rows (no "No 1"-type line above or in a header), so B is the opening place/date/time words only.
+
+| row | date, dir | A No.1 | A No.2 | A No.9 | C: clause (No. 1; the same tokens under No. 2, No. 9 and No. 1's shuffles are nonsense, see book_fm65.out) | verdict |
+|---|---|---|---|---|---|---|
+| 5854/1 | 4 Jan 1865, sent (Sheldon to Hardie) | 17/14/15 | 15/20/17 | 11/11/13 | "The McClellan, Atlantic, Tonowanda and Champion are at [City Point] with other [transport]s necessary to [transport] [8000] [men] and [2] [batteries] ... I proceed at once to [Grant]'s [Head Quarters]" (shuffles: "[Milledgeville]s necessary to [Milledgeville] [8000] [Fortifications]", "[Volunteer]s ... [Roddy]") | **No. 1** |
+| 5856/0 | 4 Jan, sent (two messages in one segment) | 7/8/8 | 6/8/9 | 6/5/6 | O'Brien part: "please have the Winants in order to go with [expedition], also the tug D. D. Porter. will try bring down a tug [tomorrow] for your use" (shuffles: [Athens]/[Cut off]/[Tuscumbia] ... [Cross]/[Delaware]); Beckwith part partly nonsense ("sent to [Colonel] [McMinnville]") | **No. 1 (weak: one clause, two code meanings)** |
+| 5878/1 | 17 Jan, sent (to Rawlins) | 12/6/8 | 7/9/8 | 7/8/9 | "[3] [of the] vessels returned [from the] [expedition] disabled. enough are here to carry [3500] [men] [50] wagons and [100] and [50] [Monroe]'s (sic, plain 'mandate animals' on the page) ... The [Quartermaster] at [City Point] will be [telegraph]ed when each vessel leaves here" (shuffles: "[Ohio] vessels returned [Marietta] [Athens] ... [3500] [Fortifications]") | **No. 1** |
+| 5886/0 | 24 Jan, sent (Wise, Ordnance) | 7/4/5 | 5/2/4 | 1/3/3 | "[Norfolk] [24] ... [12] torpedoes of [900] pounds each with insulating wire are required by [Command]er Parker [command]ing [5] [Division] [James] [River] for immediate use" (shuffles: "[Grand Junction]er Parker", "[Brigadier General]er Parker ... [Hurlbut] [C. A. Dana]") | **No. 1** |
+| 5897/0 | 2 Feb, sent | 7/6/7 | 4/7/7 | 2/2/2 | "Please inform [Schofield] should he arrive ... that I will be at ... [tomorrow] Friday morning with important despatches for him from [Sherman]. [signed] Jay F. Anderson [Major] and A. D. C." (shuffles: inform [Threaten]/[Johnston]/[Evacuate]) | **No. 1** |
+| 5904/1 | 9 Feb, received (Rucker via Beckwith) | 9/7/7 | 14/12/12 | 5/5/7 | "[Schofield]'s [corps] with about [5000] of Meagher's [division] shipped from here and Annapolis. still waiting while [2] [division]s of [23] [corps], about [10000] [men], the [horse]s of regimental and staff officers, [3] or [4] [batteries], [306] mule teams and wagons and [102] [horse] ambulances ... [2500] of these [troops] will sail from here [tomorrow] morning" (shuffles: "[2] [Marmaduke]s of [23] [Tuscaloosa]") -- A favours No. 2 here, the clause does not (No. 2: "[Diversion]s of harsh [Concentrate] [Corps] [Cavalry]") | **No. 1** |
+| 5905/0 | 10 Feb, sent | 7/5/5 | 2/3/5 | 3/3/5 | "The [following] has just been received from [Palmer] addressed to you. February [8] ... The [troops] of Meagher's [division] are just arriving at Morehead. They have no [transportation]" (shuffles: "The [Madison] of meaghers [Marmaduke] ... no [Meridian]") | **No. 1** |
+| 5918/0 | 3 Mar, sent (to Grant) | 12/6/9 | 6/10/12 | 6/4/6 | "The order I gave Wilder to [report] for duty to [Major] Plato has been rescinded [at the] War [Department] and Wilder is directed to [report] in [5] (plain 'in person' on the page; 'person' is a No. 1 number word) [at the] War [Department]" (shuffles: "[North] for duty to [Defense] ... rescinded [New York] war [Fredericksburg]") | **No. 1** |
+| 5924/0 | 6 Mar, sent | 1/2/2 | 3/1/3 | 3/4/4 | "The whole matter is believed to be [at the] instigation of Mrs [Ord] who wants the room" (mentor = [Ord] also in 5918/0's signature; shuffles: [Troops]/[Warrenton]/[Hill] instigation of Mrs [Kingston]/[Philadelphia]) -- the row is mostly plain | **No. 1 (marginal: two code meanings, the rest plain)** |
+| 5936/0 | 21 Mar, sent (Elias Smith to S. Sinclair, Tribune) | 5/1/3 | 2/2/3 | 1/1/2 | "[Beaufort] [North Carolina] Mar 20, to Samuel Sinclair, Tribune office, [New York]. [Sherman] occupied [Goldsboro] yes[terday] ..." (shuffles: "[Harass] occupied [Culpepper]", "[Louisville] occupied [Jasper]"; No. 2 s3 gives [Sherman] occupied [Cumberland] by chance, one meaning) | **No. 1** |
+
+**Summary.** No. 1 reads all ten test rows (8 clearly, 5856/0 weak, 5924/0 marginal), in every month: Jan 4 of 4, Feb 3 of 3, Mar 3 of 3. No. 2 and No. 9
+read none. So no month is "blocked, no-key-material"; the FM-PRE share guess (best_book 1 on 76 of 81) stands on these ten. Instrument A again disagreed
+with C on one row (5904/1, A No. 2), the function-word artefact BOOK-65 and O9-BOOK met.
+
+**The other 71 rows (prediction from header-side words only, no gate; `book_fm65_pred.tsv`).** Features on the first 12 decoded tokens per book: a number
+equal to the header's day (d), the time word against a time written in the header (t), the first code word a place (p). No. 1 has a feature on 22 rows
+(day numbers d3-d26 on 18, Norfolk/Monroe/Washington/Baltimore openings) and No. 2 / No. 9 on none of those; 48 rows have no feature in any book and are
+predicted **No. 1 (by month)**; one conflict, **5931/0** (15 Mar, received, header "1.30 P. M."): the time word reads 1.30 PM only under No. 2, while the
+opening "Brutus" reads [Secretary of War] under No. 1 -- step 0 run under both. Also No. 1 by header in its own form: 5849/0 "for [Brigadier General]
+ringals" (Ingalls), 5860/2 "for Brevet [Brigadier General] Desey", 5850/1 "[Norfolk] [3]" (the share's only No. 2 guess). The share's four No. 9 guesses
+(5943/1 5891/1 5941/1 5860/2) have no No. 9 feature; 5891/1 is plain ("very sorry I missed train").
+
+Prediction table with step 0 ((a) ordered overlap / (b) shuffle p95 / hit, step0_ordered.py's functions, decode under the predicted book, read by script only),
+and the same step 0 under three meaning-shuffled copies of No. 1:
+
+| row | date | dir | header features (No. 1 / No. 2 / No. 9) | predicted | step-0 (a) / (b) / hit under predicted book | No. 1 shuffled s1-s3 |
+|---|---|---|---|---|---|---|
+| 5849/0 | 1865-01-03 | sent | - / - / - | no1 (month) | no1: 0.591 / 0.227 / HIT | HHH |
+| 5856/1 | 1865-01-05 | received | p=Washington / - / - | no1 | no1: 0.650 / 0.250 / HIT | HHH |
+| 5898/1 | 1865-02-04 | received | - / - / - | no1 (month) | no1: 0.455 / 0.212 / miss | --- |
+| 5877/1 | 1865-01-16 | sent | - / - / - | no1 (month) | no1: 0.603 / 0.190 / HIT | HHH |
+| 5851/0 | 1865-01-03 | sent | - / - / - | no1 (month) | no1: 0.667 / 0.204 / HIT | HHH |
+| 5860/1 | 1865-01-06 | received | d6 / - / - | no1 | no1: 0.691 / 0.218 / HIT | HHH |
+| 5929/2 | 1865-03-14 | sent | d14 / - / - | no1 | no1: 0.566 / 0.189 / HIT | HHH |
+| 5857/1 | 1865-01-05 | received | d5 / - / - | no1 | no1: 0.673 / 0.245 / HIT | HHH |
+| 5852/2 | 1865-01-04 | sent | - / - / - | no1 (month) | no1: 0.622 / 0.267 / HIT | HHH |
+| 5867/0 | 1865-01-07 | sent | - / - / - | no1 (month) | no1: 0.700 / 0.260 / HIT | HHH |
+| 5871/0 | 1865-01-12 | sent | - / - / - | no1 (month) | no1: 0.723 / 0.234 / HIT | HHH |
+| 5924/1 | 1865-03-06 | received | d6 / - / - | no1 | no1: 0.395 / 0.184 / miss | --- |
+| 5885/1 | 1865-01-23 | received | - / - / - | no1 (month) | no1: 0.690 / 0.238 / HIT | HHH |
+| 5853/1 | 1865-01-04 | sent | - / - / - | no1 (month) | no1: 0.724 / 0.310 / HIT | HHH |
+| 5870/0 | 1865-01-12 | sent | - / - / - | no1 (month) | no1: 0.613 / 0.226 / HIT | HHH |
+| 5890/2 | 1865-01-29 | sent | - / - / - | no1 (month) | no1: 0.686 / 0.257 / HIT | HHH |
+| 5877/0 | 1865-01-16 | received | - / - / - | no1 (month) | no1: 0.576 / 0.242 / HIT | H-H |
+| 5858/1 | 1865-01-05 | sent | - / - / - | no1 (month) | no1: 0.500 / 0.233 / HIT | -H- |
+| 5864/1 | 1865-01-07 | sent | - / - / - | no1 (month) | no1: 0.667 / 0.256 / HIT | HHH |
+| 5933/2 | 1865-03-18 | received | p=Norfolk / - / - | no1 | no1: 0.636 / 0.273 / HIT | HHH |
+| 5861/1 | 1865-01-06 | sent | - / - / - | no1 (month) | no1: 0.562 / 0.281 / HIT | HH- |
+| 5852/1 | 1865-01-04 | received | d4 / - / - | no1 | no1: 0.774 / 0.290 / HIT | HHH |
+| 5867/2 | 1865-01-09 | sent | - / - / - | no1 (month) | no1: 0.714 / 0.321 / HIT | HHH |
+| 5871/1 | 1865-01-13 | sent | - / - / - | no1 (month) | no1: 0.484 / 0.226 / miss | -HH |
+| 5929/1 | 1865-03-13 | sent | - / - / - | no1 (month) | no1: 0.679 / 0.286 / HIT | HHH |
+| 5930/1 | 1865-03-14 | sent | - / - / - | no1 (month) | no1: 0.533 / 0.267 / HIT | -H- |
+| 5883/0 | 1865-01-20 | sent | - / - / - | no1 (month) | no1: 0.688 / 0.250 / HIT | HHH |
+| 5902/2 | 1865-02-08 | received | - / - / - | no1 (month) | no1: 0.667 / 0.292 / HIT | HHH |
+| 5888/2 | 1865-01-26 | received | d26 / - / - | no1 | no1: 0.615 / 0.308 / HIT | HHH |
+| 5851/1 | 1865-01-03 | sent | - / - / - | no1 (month) | no1: 0.819 / 0.236 / HIT | HHH |
+| 5849/1 | 1865-01-03 | received | d3 / - / - | no1 | no1: 0.701 / 0.194 / HIT | HHH |
+| 5931/1 | 1865-03-15 | received | d15 / - / - | no1 | no1: 0.667 / 0.200 / HIT | HHH |
+| 5889/2 | 1865-01-27 | received | p=Monroe / - / - | no1 | no1: 0.520 / 0.220 / HIT | -HH |
+| 5914/1 | 1865-02-23 | sent | d23 / - / - | no1 | no1: 0.404 / 0.191 / miss | --- |
+| 5919/1 | 1865-03-05 | sent | - / - / - | no1 (month) | no1: 0.636 / 0.227 / HIT | HHH |
+| 5931/0 | 1865-03-15 | received | - / t=1.30 PM / - | no2 | no1: 0.765 / 0.294 / HIT; no2: 0.794 / 0.294 / HIT | HHH |
+| 5866/2 | 1865-01-07 | sent | - / - / - | no1 (month) | no1: 0.606 / 0.242 / HIT | -HH |
+| 5907/1 | 1865-02-16 | sent | d16 / - / - | no1 | no1: 0.605 / 0.289 / HIT | HHH |
+| 5920/1 | 1865-03-05 | sent | - / - / - | no1 (month) | no1: 0.571 / 0.286 / HIT | HHH |
+| 5873/1 | 1865-01-15 | sent | - / - / - | no1 (month) | no1: 0.500 / 0.211 / HIT | -HH |
+| 5899/0 | 1865-02-04 | sent | - / - / - | no1 (month) | no1: 0.657 / 0.257 / HIT | HHH |
+| 5919/2 | 1865-03-05 | sent | - / - / - | no1 (month) | no1: 0.714 / 0.286 / HIT | HHH |
+| 5887/1 | 1865-01-24 | sent | - / - / - | no1 (month) | no1: 0.742 / 0.323 / HIT | HHH |
+| 5918/1 | 1865-03-04 | sent | - / - / - | no1 (month) | no1: 0.676 / 0.265 / HIT | HHH |
+| 5912/1 | 1865-02-22 | sent | - / - / - | no1 (month) | no1: 0.692 / 0.308 / HIT | HHH |
+| 5895/2 | 1865-02-02 | sent | - / - / - | no1 (month) | no1: 0.808 / 0.346 / HIT | HHH |
+| 5877/2 | 1865-01-16 | sent | - / - / - | no1 (month) | no1: 0.256 / 0.141 / miss | --- |
+| 5915/1 | 1865-02-24 | sent | d24 / - / - | no1 | no1: 0.720 / 0.240 / HIT | HHH |
+| 5855/2 | 1865-01-04 | received | - / - / - | no1 (month) | no1: 0.862 / 0.231 / HIT | HHH |
+| 5896/2 | 1865-02-02 | received | - / - / - | no1 (month) | no1: 0.667 / 0.216 / HIT | HHH |
+| 5866/0 | 1865-01-07 | sent | d7 / - / - | no1 | no1: 0.646 / 0.229 / HIT | HHH |
+| 5902/1 | 1865-02-08 | sent | - / - / - | no1 (month) | no1: 0.765 / 0.265 / HIT | HHH |
+| 5847/2 | 1865-01-03 | sent | d3 / - / - | no1 | no1: 0.276 / 0.172 / miss | --- |
+| 5879/0 | 1865-01-17 | sent | - / - / - | no1 (month) | no1: 0.651 / 0.143 / HIT | HHH |
+| 5923/1 | 1865-03-05 | sent | - / - / - | no1 (month) | no1: 0.686 / 0.167 / HIT | HHH |
+| 5887/0 | 1865-01-24 | received | - / - / - | no1 (month) | no1: 0.675 / 0.195 / HIT | HHH |
+| 5854/0 | 1865-01-04 | sent | - / - / - | no1 (month) | no1: 0.767 / 0.233 / HIT | HHH |
+| 5933/0 | 1865-03-15 | sent | p=Norfolk / - / - | no1 | no1: 0.538 / 0.192 / HIT | HHH |
+| 5915/0 | 1865-02-24 | sent | d24 / - / - | no1 | no1: 0.712 / 0.271 / HIT | HHH |
+| 5868/0 | 1865-01-07 | received | d7,p=Baltimore / - / - | no1 | no1: 0.696 / 0.239 / HIT | HHH |
+| 5858/0 | 1865-01-05 | received | - / - / - | no1 (month) | no1: 0.738 / 0.262 / HIT | HHH |
+| 5917/1 | 1865-02-25 | sent | d25 / - / - | no1 | no1: 0.825 / 0.325 / HIT | HHH |
+| 5885/0 | 1865-01-21 | received | d21 / - / - | no1 | no1: 0.625 / 0.232 / HIT | HHH |
+| 5861/2 | 1865-01-06 | sent | - / - / - | no1 (month) | no1: 0.769 / 0.269 / HIT | HHH |
+| 5888/1 | 1865-01-25 | received | - / - / - | no1 (month) | no1: 0.711 / 0.263 / HIT | HHH |
+| 5869/1 | 1865-01-12 | sent | - / - / - | no1 (month) | no1: 0.667 / 0.256 / HIT | HHH |
+| 5943/1 | 1865-03-29 | sent | - / - / - | no1 (month) | no1: 0.706 / 0.265 / HIT | HHH |
+| 5891/1 | 1865-01-31 | received | - / - / - | no1 (month) | no1: 0.949 / 0.282 / HIT | HHH |
+| 5941/1 | 1865-03-27 | sent | - / - / - | no1 (month) | no1: 0.634 / 0.244 / HIT | HHH |
+| 5860/2 | 1865-01-06 | sent | - / - / - | no1 (month) | no1: 0.571 / 0.257 / HIT | HHH |
+| 5850/1 | 1865-01-03 | sent | d3,p=Norfolk / - / - | no1 | no1: 0.743 / 0.286 / HIT | HHH |
+
+Step 0: 66 of 72 measurements hit under the predicted book (71 rows + 5931/0 under No. 2, also a hit); misses **5898/1 5924/1 5871/1 5914/1 5877/2 5847/2**.
+
+**Rule-3 check on step 0 for this ledger (it fails).** The Fort Monroe volunteer transcription is the *cipher copy* itself (plain words plus code words,
+e.g. p5854 "Laura for paradise James A. Hardie Inspect Shelter growl"), not a clear text. Step 0's (a) therefore measures the plain residue the decode shares
+with the cipher copy, and the control cannot fail differently from the target: under meaning-shuffled copies of No. 1 the same 72 measurements hit 61, 66
+and 64 times (seeds 1-3); on no row does the predicted book hit while all three shuffles miss (58 rows hit under all three); the wrapper's positive controls
+(E305 5740/0, E320 5702/0, E309 5786/0, step0_ordered.tsv HITs) hit under shuffle seed 1 too (0.743, 0.919, 0.667); and on the ten test rows No. 9, which
+leaves most code words as they stand, scores *higher* (a) than No. 1 on every row (e.g. 5904/1: No. 9 0.833 HIT, No. 1 0.402 miss). On this ledger a step-0
+hit is a non-test, not a sign that the plaintext is known, and a miss is not a sign that it is unknown. This bears on S0-57XX's hits (E302 E305 E306 E309 E312
+E318 E319 E320, all Fort Monroe pages 5695-5786): if the transcription of those pages is the cipher copy too (p5702 is: "...he must remain there in charge
+attend to penfield work etc ... zebra when new line via White house is completed Caldwell will attend to all pembroke work..."), those hits say nothing
+about print or known text. Flagged in ROOM for LANE LEDGER-12, LANE LEDGER-13 and the VERIFY lane; not acted on here.
+
+**Rows a reader should take (book in hand, step-0 miss), as the brief asks:** 5898/1, 5924/1, 5871/1, 5914/1, 5877/2, 5847/2 (all No. 1). Because step 0
+does not discriminate on this ledger, the 66 step-0 "hits" are reader material too, under No. 1 (5931/0: No. 1 or No. 2, the reader decides from the body).
+
+Not done: no image (no labels exist in the transcription to check); no reading filed; no print search; no shuffled or A run on the 71 prediction rows beyond
+step 0.
+
+## Remaining gaps (BOOK-FM65, 10 Oct 2026)
+Read so far: book called for 10 of 10 tested 1865 Fort Monroe rows (all No. 1; 8 clear, 5856/0 weak, 5924/0 marginal); 71 further rows predicted from header words (70 No. 1, 5931/0 No. 1 or No. 2); none filed.
+- the ten test rows (No. 1) unfiled - blocker: not-attempted; a key test files nothing; next: a LANE LEDGER-13 No. 1 reader files them with per-row prior-work and print, ~$2.5
+- the six step-0 misses 5898/1 5924/1 5871/1 5914/1 5877/2 5847/2 - blocker: not-attempted; a key test files nothing; next: a No. 1 reader, ~$1.5
+- the 65 other predicted rows (step-0 hits that are non-tests here) - blocker: not-attempted; a key test files nothing; next: No. 1 readers in batches, step 0 skipped or replaced by a clear-text check on this ledger, ~$0.25 per row
+- 5931/0 book (No. 1 opening vs No. 2 time word) - blocker: not-attempted; header words only, body not read; next: the reader decodes the body under both, ~$0.2
+- step 0 on the Fort Monroe ledger (holder text is the cipher copy) - blocker: not-attempted; outside this brief; next: the lane orchestrator re-rules step 0 for mssEC 25 and re-checks S0-57XX's eight hits, ~$1
+
+## Escalation (BOOK-FM65, 10 Oct 2026)
+- [n/a] siblings: no labels on any 1865 leaf of this ledger; neighbouring entries share the test rows' pages.
+- [x] clear-pages: header, opening and the line above read for all 81 rows.
+- [x] known-keys: all three books in hand on the ten test rows with 3 shuffled copies each; No. 1 shuffled x3 on all 72 step-0 measurements.
+- [ ] print: not in this brief; the readers search print.
+- [n/a] key-rebuild: no key row edited.
+- [ ] image-check: not done (disk only); text as transcribed.
+- [n/a] retry: no step failed.
+Verdict: keep going: 5 internal gaps; cheapest next: 5931/0 body under No. 1 and No. 2, ~$0.2

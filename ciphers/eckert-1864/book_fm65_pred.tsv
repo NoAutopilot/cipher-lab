@@ -1,0 +1,72 @@
+row	date	dir	header_time	feat_no1	feat_no2	feat_no9	predicted
+5849/0	1865-01-03	sent		-	-	-	no1 (month)
+5856/1	1865-01-05	received	10.10 AM	p=Washington	-	-	no1
+5898/1	1865-02-04	received		-	-	-	no1 (month)
+5877/1	1865-01-16	sent		-	-	-	no1 (month)
+5851/0	1865-01-03	sent		-	-	-	no1 (month)
+5860/1	1865-01-06	received		d6	-	-	no1
+5929/2	1865-03-14	sent		d14	-	-	no1
+5857/1	1865-01-05	received	1 PM	d5	-	-	no1
+5852/2	1865-01-04	sent		-	-	-	no1 (month)
+5867/0	1865-01-07	sent		-	-	-	no1 (month)
+5871/0	1865-01-12	sent		-	-	-	no1 (month)
+5924/1	1865-03-06	received		d6	-	-	no1
+5885/1	1865-01-23	received		-	-	-	no1 (month)
+5853/1	1865-01-04	sent		-	-	-	no1 (month)
+5870/0	1865-01-12	sent		-	-	-	no1 (month)
+5890/2	1865-01-29	sent		-	-	-	no1 (month)
+5877/0	1865-01-16	received		-	-	-	no1 (month)
+5858/1	1865-01-05	sent		-	-	-	no1 (month)
+5864/1	1865-01-07	sent		-	-	-	no1 (month)
+5933/2	1865-03-18	received		p=Norfolk	-	-	no1
+5861/1	1865-01-06	sent		-	-	-	no1 (month)
+5852/1	1865-01-04	received		d4	-	-	no1
+5867/2	1865-01-09	sent		-	-	-	no1 (month)
+5871/1	1865-01-13	sent		-	-	-	no1 (month)
+5929/1	1865-03-13	sent		-	-	-	no1 (month)
+5930/1	1865-03-14	sent		-	-	-	no1 (month)
+5883/0	1865-01-20	sent		-	-	-	no1 (month)
+5902/2	1865-02-08	received		-	-	-	no1 (month)
+5888/2	1865-01-26	received		d26	-	-	no1
+5851/1	1865-01-03	sent		-	-	-	no1 (month)
+5849/1	1865-01-03	received	4.35 PM	d3	-	-	no1
+5931/1	1865-03-15	received		d15	-	-	no1
+5889/2	1865-01-27	received		p=Monroe	-	-	no1
+5914/1	1865-02-23	sent		d23	-	-	no1
+5919/1	1865-03-05	sent		-	-	-	no1 (month)
+5931/0	1865-03-15	received	1.30 PM	-	t=1.30 PM	-	no2
+5866/2	1865-01-07	sent		-	-	-	no1 (month)
+5907/1	1865-02-16	sent		d16	-	-	no1
+5920/1	1865-03-05	sent		-	-	-	no1 (month)
+5873/1	1865-01-15	sent		-	-	-	no1 (month)
+5899/0	1865-02-04	sent		-	-	-	no1 (month)
+5919/2	1865-03-05	sent		-	-	-	no1 (month)
+5887/1	1865-01-24	sent		-	-	-	no1 (month)
+5918/1	1865-03-04	sent		-	-	-	no1 (month)
+5912/1	1865-02-22	sent		-	-	-	no1 (month)
+5895/2	1865-02-02	sent		-	-	-	no1 (month)
+5877/2	1865-01-16	sent		-	-	-	no1 (month)
+5915/1	1865-02-24	sent		d24	-	-	no1
+5855/2	1865-01-04	received		-	-	-	no1 (month)
+5896/2	1865-02-02	received		-	-	-	no1 (month)
+5866/0	1865-01-07	sent		d7	-	-	no1
+5902/1	1865-02-08	sent		-	-	-	no1 (month)
+5847/2	1865-01-03	sent		d3	-	-	no1
+5879/0	1865-01-17	sent		-	-	-	no1 (month)
+5923/1	1865-03-05	sent		-	-	-	no1 (month)
+5887/0	1865-01-24	received		-	-	-	no1 (month)
+5854/0	1865-01-04	sent		-	-	-	no1 (month)
+5933/0	1865-03-15	sent		p=Norfolk	-	-	no1
+5915/0	1865-02-24	sent		d24	-	-	no1
+5868/0	1865-01-07	received		d7,p=Baltimore	-	-	no1
+5858/0	1865-01-05	received		-	-	-	no1 (month)
+5917/1	1865-02-25	sent		d25	-	-	no1
+5885/0	1865-01-21	received		d21	-	-	no1
+5861/2	1865-01-06	sent		-	-	-	no1 (month)
+5888/1	1865-01-25	received		-	-	-	no1 (month)
+5869/1	1865-01-12	sent		-	-	-	no1 (month)
+5943/1	1865-03-29	sent		-	-	-	no1 (month)
+5891/1	1865-01-31	received	8 PM	-	-	-	no1 (month)
+5941/1	1865-03-27	sent		-	-	-	no1 (month)
+5860/2	1865-01-06	sent		-	-	-	no1 (month)
+5850/1	1865-01-03	sent		d3,p=Norfolk	-	-	no1
