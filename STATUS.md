@@ -8309,3 +8309,15 @@ State: eval pool 29; dev 37 + dev2 84; gate p < 0.05 at >= 24; eval looks 0; S2 
 re-probe not before 11 Oct 00:00 UTC, RE103b optional and not re-declared); no [SO-TX-EXP-*] PR open; red-team findings open: none (F65 the
 orchestrator's, done 02:03). Owner-side with the orchestrator: L74 (after the box proposals land), L75, the 17 Spinelli feed tiles, the 20-tile
 sorter session.
+02:4x-02:5x (check-in 1): TXV-GROEN done 02:25 (2.58 D, ledgered, archived): **INFORMATIVE** -- 84 of 182 clerk-split positions in dec_norm 8937-9459
+confirmed by Groen's independent print (CONFIRM 84 / CONFLICT 0, unreachable by the block-only rule / NO-EVIDENCE 98; ceiling 0.887; null max 9); item
+vivonne1573-f103r-confirm2-w (576 unflagged, old truth kept). Step 6 run once by the lane 02:47: **passZ_S2b 0.141 (81/576; SER 0.127) under the
+witness-revised mask beside the record 0.150 (75/500; SER 0.134); 0.296 on 1,068 unchanged** -- corrected audit 2, never a second look; the -w mask's
+adoption is the orchestrator's decision. TXE2-OL1BOXES done 02:22 (3.33 D, ledgered, archived): 1,412 boxes on 35/35 lines, cvd PASS; the sorter page
+fails sorter_preflight on two checks the PREREG made unmeetable (one neutral pile + no focus) and on the shape count that is the page's subject -- the
+lane's error; OL1-PAGE spawned (TXE2-OL1PAGE, cap 4: --box-verify mode with tests, page rebuilt on sign box / mark box piles, focus = shape-flagged
+tiles); L74 waits on it. TX-RED pass 15 (F70-F72) answered: F70 fixed in the owner paragraph, PREREG-S2 and TRANSCRIPTION.md (RE103 stopped, no second
+truth, record on CA-S2, -w beside); F71 adopted (PREREG in its own commit, hash in any WORK-QUEUE row); F72 adopted -- SHEET-VIV (TXE2-SHEETVIV, cap 22:
+the pictured SH-VIV sheet in DV1b's recipe on dev2, line-level gate, power clean 1.000 / noisy0.1 0.871 at E 84) and MARKS-DEV2 (TXE2-MARKS, cap 4:
+the ':' mark detector's read-free half) spawned. BENCHMARK-TX row 11's stale sha note corrected (truth untouched). Workers live 3 / slots free 4;
+eval looks 0; S2 look 1; openings this incarnation 1 (the -w re-score); register regenerated.
