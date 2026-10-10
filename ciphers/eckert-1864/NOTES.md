@@ -4507,3 +4507,57 @@ Worker FIX-FM19, 00:58-01:1x UTC by `date -u`, offline. Carries AUDIT.md s.5 of 
 Not applied: E362 header label "(1)" and E370 "Kidnaps" (optional in the audit); E367's day word stays 20 in the machine date (4 is glossed). Totals over the 323 entries: H 5610 -> 5606, M 37 -> 40. Propagation (rule 10): status.json rows and PROMPT-chatgpt-e366/e369/e370.md already carry the corrected readings and counts (audit-based; the SO readings are unchanged by this job); E361-E365, E367, E368 are N1 and have no status row or SO prompt by design.
 
 Decode: `decode.py --check`, `decode_no2.py --check`, `decode_no9.py --check` each "reading ... is current", exit 0.
+
+## N2R-1 (10 Oct 2026, account 1, for LANE LEDGER-N2)
+
+Worker N2R-1 (Sonnet), 00:50-01:1x UTC by `date -u`. Rows: the first ten best_book 2 rows of ms18/clean-ms18.tsv (9879/0 9767/1 9690/0 9680/1 9905/1 9807/0 9782/2 9916/2 9690/2 9798/0), filed as N2-FA..N2-FJ in ciphertext-no2.txt; `decode_no2.py --write` then `--check` exit 0, `decode.py --check` exit 0. None of the ten pointers was in ciphertext*.txt, NOTES or AUDIT before (grep, 00:5x UTC). Spares: 9874/1 is N2-GA (N2R-2 filed it first, skipped); 9871/2 is a plain-English entry that no book reads (coherence No. 2 -8.123 vs No. 1 -7.547), not filed. Scripts: ms18/n2r1_extract.py, n2r1.py, n2r1_coherence.py, n2r1_hdl.py, n2r1_printcheck.py, n2r1_beapi.py, n2r1_file.py; outputs n2r1_coherence.out, n2r1_printcheck.out, n2r1_beapi.out.
+
+Intake gate (re-run): `intake_gate_check.py eckert-1864` -> "eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines". Prior-work (tools/prior_work.py, one item, 9879/0, `--step-type read`): exit 4, owed rows were target-level live claims by other lane sessions (not this item), a missing sender/recipient spec and an uncached solver repository; its 4-editions check "CLEAR: date +-1 day and both correspondents searched, control hit" for ten cached OR volumes. By hand: own work (grep of the ten pointers in ciphertext*.txt/NOTES/AUDIT: none filed); holder (the all-pointer CISOSEARCHALL search of p16003coll11 on each row's clear words, 10 queries: six returned the row's own page only (9879, 9690, 9680, 9807, 9782, 9916), four returned 0 hits; no clear copy of any row at another pointer); print (letters-only phrase grep over 184 cached volumes, 20 OR volumes read this session from IA, plus date-window search by date and addressee in OR I/32 pt 2-3, I/33, I/34 pt 2-3, I/36-I/45); Grant Papers vols. 11-13 via be-api (6 queries: 4 answered 0 hits, 2 answered 502 and were not retried; ids for vols. 11 and 13 unverified).
+
+**Method and control.** Each row was decoded with `decode.py`'s machinery under No. 1, No. 2, No. 9 and under meaning-shuffled copies of No. 2 and No. 1 (seeds 1-3). The H count cannot separate a key from its shuffled copy (the same code groups resolve; ms18/n2r1.out, e.g. 9879/0 H 14 under No. 2 against 13/14/14 under three shuffles), so the coherence control scores each decode by mean per-word-pair log-probability under an interpolated bigram model of period text (11.6 M words of OR volumes, trained without OR I/32 pt 2, I/33, I/34 pt 2 and I/37 pt 2, the volumes that print six of these rows):
+
+| row | id | No. 1 | No. 2 | No. 9 | No. 2 shuffled (1/2/3) | No. 1 shuffled (1/2/3) | No. 2 best |
+|---|---|---|---|---|---|---|---|
+| 9879/0 | N2-FA | -8.229 | -7.499 | -8.573 | -7.948/-7.878/-8.058 | -8.259/-8.276/-8.609 | yes |
+| 9767/1 | N2-FB | -6.983 | -6.029 | -7.903 | -7.142/-6.729/-7.380 | -7.071/-7.600/-7.632 | yes |
+| 9690/0 | N2-FC | -6.997 | -5.893 | -7.923 | -7.125/-6.429/-7.835 | -6.769/-7.035/-7.426 | yes |
+| 9680/1 | N2-FD | -6.941 | -5.774 | -7.601 | -6.714/-6.892/-6.765 | -6.593/-6.684/-6.425 | yes |
+| 9905/1 | N2-FE | -7.912 | -5.962 | -8.259 | -7.087/-6.981/-7.342 | -8.088/-7.590/-7.760 | yes |
+| 9807/0 | N2-FF | -8.490 | -7.558 | -9.306 | -8.066/-8.099/-8.729 | -8.354/-8.505/-7.825 | yes |
+| 9782/2 | N2-FG | -7.516 | -6.732 | -8.729 | -6.366/-7.882/-7.780 | -7.087/-7.748/-7.261 | **no (seed 1)** |
+| 9916/2 | N2-FH | -9.033 | -7.415 | -9.228 | -8.218/-8.695/-9.372 | -8.840/-8.553/-9.453 | yes |
+| 9690/2 | N2-FI | -6.677 | -5.826 | -8.652 | -7.095/-7.345/-7.807 | -6.525/-7.950/-7.122 | yes |
+| 9798/0 | N2-FJ | -7.941 | -6.854 | -8.058 | -7.773/-7.425/-7.859 | -7.971/-7.395/-7.624 | yes |
+
+Nine of ten beat all eight controls. 9782/2 (N2-FG) fails the rule-3 gate on one shuffled No. 2 seed (-6.366 against -6.732); it is filed anyway because it is printed word for word (below), so the number licenses nothing and the print decides; flagged for the verifier. The margins are modest (control spread is wide at 40-100 tokens) and the spare 9871/2 and the model's own scale were not calibrated against a known-No. 1 entry here: a verifier should repeat the control on a known No. 1 and a known No. 2 filed entry before leaning on the numbers.
+
+**Per row** ("in print / holder clear copy / not located / step-0 skip / reads No. 1"; all rows are holder transcription, leaf not eye-checked; the nine leaves were fetched at 2400 px to a scratch directory and not read):
+- 9879/0 N2-FA (30 Oct 1864, Caldwell, to Nymph yacht: Seymour's agents, ballot-box stuffer): **not located** in OR I/42 pt 3 or I/39 pt 3, phrase grep and be-api 'ballot box stuffer' 0. A same-day sibling is in print with different wording (Dana to Patrick, OR I/42 pt 3 between running heads 435-436); not this text.
+- 9767/1 N2-FB (26 June 1864 10 PM, hospital transports, Ingalls): **not located** (OR I/36 pt 3, I/37 pt 2, I/40 pt 2 and 3 date windows; be-api vol. 11 two queries 0).
+- 9690/0 N2-FC (17 Mar 1864 2.30 PM Halleck to Grant): **in print** OR I/34 pt 2 pp.634-635 (IA warofrebellion013402rootrich), word for word, C.
+- 9680/1 N2-FD (27 Feb 1864 1.30 PM Halleck to Grant): **in print** OR I/32 pt 2 p.481 (IA warofrebellion322unit), word for word, C.
+- 9905/1 N2-FE (3 Dec 1864, Sixth Corps shipping, Rawlins): **not located** (OR I/42 pt 3, I/43 pt 2, I/45 pt 1 date windows; be-api vol. 13 0).
+- 9807/0 N2-FF (1 Aug 1864 Meigs to Ingalls): **in print** OR I/37 pt 2 p.559 (IA warofrebellion372unit), word for word, C; two plain-word differences noted in the entry.
+- 9782/2 N2-FG (10 July 1864 Halleck to Grant, Monocacy): **in print** OR I/37 pt 2 near p.156 (IA warofrebellion372unit; page not read on the print image), word for word, C.
+- 9916/2 N2-FH (17 Dec 1864 vessels to Sherman at Savannah): **not located** (OR I/42 pt 3, I/44, I/45 pt 1-2 date windows 16-18 Dec; phrase grep of the vessel names 0).
+- 9690/2 N2-FI (25 Mar 1864 Halleck to Grant, heavy artillery): **in print** OR I/33 p.730 (IA warofrebellion33unit), word for word, C; the operator's tail about 'extra pages until I receive my book' is not in the print.
+- 9798/0 N2-FJ (18 July 1864 Halleck to Grant, Purcellville): **in print** OR I/37 pt 2 p.374 (IA warofrebellion372unit), word for word, C; ledger 'Watkins' where the print has Wright (M).
+- Step-0 skip: none. Reads No. 1: none of the ten (No. 2 best under every control but 9782/2's one seed). Holder clear copy: none at another pointer (hdl: 10 queries, 19 requests, release posted).
+Result: 6 of 10 read and are printed in OR (all C against the print); 4 read as No. 2 (sense plus coherence) and were not located; the printed items are hits for the verifier's N-class, not a novelty claim.
+
+## Remaining gaps (N2R-1, 10 Oct 2026)
+Read so far: 10 of 10 rows filed; 6 graded C against the print, 4 (N2-FA, N2-FB, N2-FE, N2-FH) not located in print, H grade only; no leaf eye-checked.
+- N2-FA, N2-FB, N2-FE, N2-FH (4 unlocated rows) - blocker: not-attempted; Series III and the Surgeon General's/Quartermaster General's correspondence (OR ser. III vol. 4, Meigs and Ingalls papers) and ORN were not searched; next: a verifier's phrase pass over ser. III vol. 4 and the Grant Papers vols. 11-13 (be-api answered 502 on two queries and ids for vols. 11 and 13 are unverified), ~$1.2
+- eye check of all ten leaves - blocker: not-attempted; leaves fetched at 2400 px to scratch but not read or cropped; next: `tools/iiif_lines.py --image` crops of the ten entries and a header check (times, '1.30 PM' against the cipher time word), ~$1.5
+- coherence control calibration - blocker: not-attempted; the bigram control has not been run on a known No. 1 and a known No. 2 filed entry; next: repeat it on 10 filed N2 and 10 E entries, ~$0.3
+- 9782/2 page number in OR I/37 pt 2 and its failed seed - blocker: not-attempted; the print page was not read on the image and the control was run with three seeds only; next: read the print page image (IA leaf) and re-run with seeds 4-10, ~$0.3
+
+## Escalation (N2R-1, 10 Oct 2026)
+- [n/a] siblings: same-leaf rows checked in the ledger text (9680/0, 9690/0 and /2, 9916/1 are filed siblings); no cipher sibling clears a gap.
+- [x] clear-pages: page text for all ten rows read on disk (sources/mssEC18).
+- [x] known-keys: No. 1, No. 2 and No. 9 and eight shuffled copies run on every row.
+- [x] print: OR I/32-I/45 (all but I/35 pt 1, I/38 pt 1 and I/44 pt 1) by phrase and by date window; six rows found, four not.
+- [n/a] key-rebuild: no key row edited.
+- [ ] image-check: not done (see gaps).
+- [x] retry: one retry of OR I/44 (HTTP 500 then 200); two be-api 502s not retried (good-citizen limit is one retry per host; the host answered the other four).
+Verdict: keep going: 4 internal gaps; cheapest next: the coherence-control calibration and the four unlocated rows' ser. III pass, ~$1.5

@@ -1047,5 +1047,65 @@ Code-word tokens: H 14, C 1.
 
 Code-word tokens: H 15.
 
-Totals over the 104 entries: H 2400, C 88, I 79, M 3.
+**N2-FA | Page 219 | 9879 | mssEC 18 (obj 10074, pointer 9879; printed page 213), 30 Oct 1864 Washington (cipher time word 1 PM), Caldwell (operator), to [Warren, G. K.?, M] at Nymph (a yacht-type address group): it is credibly reported to this Department that [Felix Mack, Clos Rey: names/groups unread] hold a commission from Governor Seymour of New York to distribute ballots; one of them is an old ballot-box stuffer from California and is probably engaged in frauds and forgeries like those in which other agents of Governor Seymour have been detected here; take such measures as you judge advisable to prevent any such criminal operations; by order of the Secretary of War; signature groups not resolved (M) (N2R-1; row 9879/0; holder transcription, leaf not eye-checked)**
+
+[Washington] {time: 1 PM} [30] for [Warren G K] [.] It is credibly [Report]ed to this [Department] that Felix Mack Clos Rey Commission ear from Go vernor Say more of [New York] to dis tribute ballots & c tooth [5] Pem [Corps] is an old balllot box stuffer from [California] and is probably engaged in frauds and forge Jerry's like those in which other a gents of Grove Say more have been detect ed here [.] Please take such me as yours. as you may judge advisable to first rate any such criminal opera tions [.] By order [Of the] [Secretary of War]'s  {tail: [signed] See A Day nay assist ant Brach how look now}
+
+Code-word tokens: H 14, I 2.
+
+**N2-FB | Page 107 | 9767 | mssEC 18 (obj 10074, pointer 9767; printed page 101), 26 June 1864 10 PM Washington, S. H. Beckwith (operator), to Brig. Gen. Ingalls (written 'In gulls'), tail group read as the Quartermaster General (Meigs, M): the Surgeon General advises me of a great accumulation of sick and wounded at City Point and urges a supply of more hospital transports fit to carry them by sea to the North; I presume this is more urgent than the New Orleans service; place all necessary sea-going steamers now in the James or at [Fort] Monroe at the service of the Medical Department until these wounded are removed; steamers from New York will go to New Orleans; one service or duty must wait upon the other (N2R-1; row 9767/1; holder transcription, leaf not eye-checked)**
+
+{time: 10 PM} [26] for [Brig. General] In gulls [.] Surgeon [General] advises me of great accumulation of sick and [Wounded] at [City Point] and urges supply of more hospital [Transport (-ed, -ing)]'s fit to carry them by sea to the [North] pause I [Hotly [?]] this is more urgent than the [New Orleans] service halt See/Lee? [Grant U S] & place all [Necessary] sea going [Steam]ers now [In the] [James] or at [Monroe] at the service [Of the] Medical [Department] until these [Wounded] are removed [.] [Steam]ers from [New York] will go to [New Orleans] [,] one service or duty must wait upon the other  {tail: [signed] [Quarter[?] Master General] Sandwich}
+
+Code-word tokens: H 28.
+
+**N2-FC | Page 30 | 9690 | mssEC 18 (obj 10074, pointer 9690; printed page 24), 17 March 1864 Washington 2.30 PM, S. H. Beckwith (operator), Halleck to Lieut. Gen. Grant at Nashville: the furloughed regiments from the Department of the South are ordered to rendezvous here; Rosecrans asks for four regiments of cavalry and one or two of infantry to be sent to Missouri; Banks reports that the Twelfth Illinois Cavalry ordered to his department has been dismounted at St. Louis and the horses sent to your orders, and that other horses collected there for his command have been diverted; I fear these diversions may interfere with his movements; printed OR I/34 pt 2 pp.634-635 (N2R-1; row 9690/0; holder transcription, leaf not eye-checked)**
+
+[Washington] [March] [17] {time: 2.30 PM} To [Maj Genl U S Grant] The fur loughed [Regiment]'s from [Department] [Of the] [South] are [Order]ed to rendezvous here [.] [Rosecrans W S] asks for [4] [Regiment]'s of [Cavalry] & [1] or [2] [Regiment]'s of [Infantry] to be sent to [Missouri] [.] [Banks N P] [Report]'s that the [12] [Illinois] [Cavalry] [Order]ed to his [Department] have been dismounted at [St Louis] & the [Horse]'s sent to your [Order]'s [,] and that other [Horse]'s [Harrison]ed there for his [Command (-ed, -ing)] have been diverted [.] I [Fear] these [Diversion]'s may inter [Fear] with his [Movement]'s sig [H W Halleck] [Major] [General] Chief of [Staff]
+
+Code-word tokens: H 41, C 3.
+
+**N2-FD | Page 20 | 9680 | mssEC 18 (obj 10074, pointer 9680; printed page 14), 27 Feb 1864 Washington 1.30 PM, S. H. Beckwith (operator), Halleck to Maj. Gen. Grant at Nashville: the Wisconsin regiment is ordered to Nashville as requested; others will be so ordered as fast as reported ready unless you wish otherwise; much anxiety is felt here about Sherman's movements, we have nothing official since the 8th; rebel accounts represent his forces as far south as Quitman but say nothing of any movement on Selma; it is reported that Johnston has ordered the evacuation of that part of Georgia north of the Chattahoochee River; printed OR I/32 pt 2 p.481 (N2R-1; row 9680/1; holder transcription, leaf not eye-checked)**
+
+[Washington] {time: 1.30 PM} [27] For [Maj Genl U S Grant] The [Wisconsin] [Regiment] is ordered to [Nashville] as requested others will be so ordered as fast as reported ready unless you should wish other wise [.] much anxiety is felt here about flora's [Movement] [,] We have nothing office all since the [8] [.] [Rebel] accounts represent his [Force]'s as far [South] as [Diversion] but say nothing of any [Movement] on [Selma] [.] it is [Report] that [Johnston] has ordered the [Evacuation] of the part of [Georgia] [North] of [Chattahoochee] [River]  {tail: [signed] [Maj Gen H W Halleck] End}
+
+Code-word tokens: H 28, C 1.
+
+**N2-FE | Page 245 | 9905 | mssEC 18 (obj 10074, pointer 9905; printed page 239), 3 Dec 1864 Washington (cipher time word 3 PM), S. H. Beckwith (operator), to Brig. Gen. Rawlins, Chief of Staff, signed Rufus Ingalls, Chief Quartermaster (signature group read, M for the identity): the first division of the Sixth Corps has been [embarked]; the third division will arrive here tomorrow afternoon and will be embarked at once; the second division will arrive Tuesday; a portion of the river steamers should be retained here; please give Colonel Bradley such orders; 'How are you' (N2R-1; row 9905/1; holder transcription, leaf not eye-checked)**
+
+{time: 3 PM} [3] For [Brig. General] Raw lins Chief of [Staff] [.] The [1] [Division] [6] [Corps] has been [Embark (-ed, -ing) [#]]ed [.] The [3] [Division] will arrive here [Tomorrow] after noon and will be [Embark (-ed, -ing) [#]]ed at once [.] the [2] [Division] will arrive on [Tuesday] [.] a portion [Of the] [River] [Steam]ers should be writ earned here Please give [Colonel] Bradley such [Order]'s  {tail: [signed] Roof us In galls [Brig. General] Chif [Quarter Master] How are you}
+
+Code-word tokens: H 25, C 1, I 2.
+
+**N2-FF | Page 147 | 9807 | mssEC 18 (obj 10074, pointer 9807; printed page 141), 1 Aug 1864 Washington (ledger 12 noon; the tail adds '230 Pm'), F. T. Bickford (operator), Meigs, Quartermaster General, to Brig. Gen. Ingalls, Quartermaster: despatch of yesterday received and all transportation fit for moving cavalry and infantry now in service and not otherwise employed at Washington, Baltimore, Philadelphia and New York yesterday ordered to City Point; no new charters reported; is this what is wanted or is the emergency extensive, and does it need new and further provision of vessels; printed OR I/37 pt 2 p.559 (N2R-1; row 9807/0; holder transcription, leaf not eye-checked)**
+
+{time: 12 noon AM} [1] for [Brig. General] In gals [Quarter Master] [.] [McLamores Cove]es of yesterday recd and all [Transportation] fit for swingling [Cavalry] & [Infantry] now in service & not other wise employed at [Washington] [Baltimore] mar [Philadelphia] & [New York] yesterday [Order]ed to [City Point] [.] No new [Lieut Gen U.S. Grant]ers [Order]ed stop Is this what is wanted or is the [Movement] extensive & does it need new & further provision of vessels wind [Quarter[?] Master General] man a strange [Tennessee] &c 230 Pm
+
+Code-word tokens: H 18, C 2, I 1.
+
+**N2-FG | Page 122 | 9782 | mssEC 18 (obj 10074, pointer 9782; printed page 116), 10 July 1864 Washington 12.30 AM, S. H. Beckwith (operator) at City Point, Halleck to Lieut. Gen. Grant: despatch just received from General Wallace, who admits a serious defeat at Monocacy Junction to-day; he is in full retreat on Baltimore with, he says, his column demoralized; a part of Ricketts's division is covering his retreat; he estimates the enemy's force at 20,000; printed OR I/37 pt 2 pp.156-157 (N2R-1; row 9782/2; holder transcription, leaf not eye-checked)**
+
+[Washington] . [July] [10] {time: 12.30 AM} for [Lieut Gen U.S. Grant] : [.] [McLamores Cove] just received from [General] [River] who admits a serious [Defeat (-ed, -ing) [#]] at Monocacy Junction [To day] [.] He is in full [Retreat (-ed, -ing)] on [Baltimore] with [,] he says [,] his [Column] [Demoralize (-ed, -ing)]ed pause a part of Ricketts [Division] is covering his [Retreat (-ed, -ing)] [.] He estimates the [Enemy]'s [Force] at [20] <unclear>sprague</unclear>  {tail: [signed] [Maj Genl H W Halleck] things are come mixed}
+
+Code-word tokens: H 26.
+
+**N2-FH | Page 256 | 9916 | mssEC 18 (obj 10074, pointer 9916; printed page 250), 17 Dec 1864 Washington (cipher time word 7 PM), J. H. Emerick (operator), to Lieut. Col. G. W. Bradley, Chief Quartermaster, signed Rufus Ingalls (signature group, M for the identity): the steamers Guide, Cossack, T. Collyer, Escort, Louise, Hero of Jersey (the decoder reads 'Vicksburg of Jeff Davis', a slip, M), Manhattan and Crescent are ordered to report to General Sherman; any of the above-named vessels now in the James will be ordered to report as directed at or near Savannah; Chief Quartermaster at that point (N2R-1; row 9916/2; holder transcription, leaf not eye-checked)**
+
+{time: 7 PM} Marshal [Lieutenant] [Colonel] GW Bradley Chief [Quarter Master] The [Steam]er Guide Cossack T Collyer Escort Louise [Vicksburg] of [Jeff Davis] Manhattan & Crescent are ordered to [Report] to [Maj Gen W T Sherman] [.] Any [Of the] above named vessels which are [In the] [James] wilby ordered to [Report] as directed at or [Near] [Savannah] tooth chf [Quarter Master] at that point <insertion>trinity</insertion> Rufus In Galls Chf [Quarter Master] [Brig. General] &c
+
+Code-word tokens: H 19.
+
+**N2-FI | Page 30 | 9690 | mssEC 18 (obj 10074, pointer 9690; printed page 24), 25 March 1864 Washington 3.30 PM, S. H. Beckwith (operator), Halleck to Lieut. Gen. Grant, Army of the Potomac: two regiments of heavy artillery, numbering about 3,000 men, are ordered to the Army of the Potomac and will leave as soon as they can be replaced by men from other forts; please direct General Meade to telegraph General Augur where they are to land; the clerk's tail: 'do not use any words from them extra pages until I receive my book'; printed OR I/33 p.730 (N2R-1; row 9690/2; holder transcription, leaf not eye-checked)**
+
+{time: 3.30 PM} For [Grant U S] [.] [2] [Regiment]'s of heavy [Artillery] numb ering about [3000] [Men] are [Order]ed to [Army] [Of the] [Potomac] and will leave [As soon as] they can be rep laced by [Men] from other [Fort]'s [.] Please direct [Meade G G] to [Telegraph (-ed, -ing)] [Augur C C] where they are to land  {tail: [signed] [Maj Genl H W Halleck] do not use any words from them extra pages until I receive my book}
+
+Code-word tokens: H 21, C 1.
+
+**N2-FJ | Page 138 | 9798 | mssEC 18 (obj 10074, pointer 9798; printed page 132), 18 July 1864 Washington 12.30 PM, S. H. Beckwith (operator), Halleck to Lieut. Gen. Grant, City Point: I have just learned from General Wright that he formed a junction yesterday at Purcellville with General Crook's command, and that their cavalry struck the enemy's rear near Snicker's Gap, capturing a considerable number of wagons and mules and taking about 60 prisoners; the pursuit will be continued to-day to verify the enemy's retreat, after which Wright will return; printed OR I/37 pt 2 p.374 (N2R-1; row 9798/0; holder transcription, leaf not eye-checked)**
+
+{time: 12.30 PM} [18] for [Maj Genl U S Grant] I have just [Design]ed from Genl [Right] that he formed a [Junction] yesterday at Purcell ville vile with Genl Crooks [Command (-ed, -ing)] & that their [Cavalry] struck the [Enemy]'s [Rear] [Near] Snickers [Gap] [Capture (-ed, -ing) [#]]ing a considerable number of wagons & mules & taking about [60] [Prisoners]'s [.] The number [Will be] Continued [To day] to verify [Enemy] [Retreat (-ed, -ing)] after which [Right] will return wind [H W Halleck]
+
+Code-word tokens: H 21, I 1.
+
+Totals over the 114 entries: H 2641, C 96, I 85, M 3.
 <!-- decode.py: derived block ends -->

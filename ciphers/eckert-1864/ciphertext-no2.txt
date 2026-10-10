@@ -1378,3 +1378,139 @@ at Fisher clock to night Please come in to
 Whimper Office at that hour I desire to Pine
 with you Beach Think he will Plant in Pigeon
 note: N2R-2: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .46/.58/.08); No. 1 reads 'Kirby Smith ... St Louis ... Cipher ... Concentrate'; No. 2 reads the clause, decoded day 29 = header day (shuffle 1 of 200). IN PRINT: OR I/32 pt 2 (IA warofrebellion322unit) p.494, Stanton to Grant, Washington 29 Feb 1864, 12.30 p.m.: 'I have directed that Nashville be put in direct telegraphic communication at 8 o'clock to-night. Please come into telegraph office at that hour. I desire to communicate with you. EDWIN M. STANTON, Secretary of War.' Grade C against the print; the cipher's tail 'Think he will Plant in Pigeon' is not in the print passage quoted (the ledger entry may carry a second telegram; M).
+
+### N2-FA | Page 219 | 9879 | mssEC 18 (obj 10074, pointer 9879; printed page 213), 30 Oct 1864 Washington (cipher time word 1 PM), Caldwell (operator), to [Warren, G. K.?, M] at Nymph (a yacht-type address group): it is credibly reported to this Department that [Felix Mack, Clos Rey: names/groups unread] hold a commission from Governor Seymour of New York to distribute ballots; one of them is an old ballot-box stuffer from California and is probably engaged in frauds and forgeries like those in which other agents of Governor Seymour have been detected here; take such measures as you judge advisable to prevent any such criminal operations; by order of the Secretary of War; signature groups not resolved (M) (N2R-1; row 9879/0; holder transcription, leaf not eye-checked)
+Caldwell  Wash'n Oct 30th 1864
+Happy Hannah Ogden for Nymph yacht It is credibly
+watsoned to this Quotient that Felix Mack Clos Rey
+Commission ear from Go vernor Say more of Bengal
+to dis tribute ball = ots & c tooth Dayton
+Pem Pelham is an old ball = lot box stuffer
+from Alkali and is probably engaged in frauds and
+forge Jerry's like those in which other a gents
+of Grove Say more have been detect ed here
+yard Please take such me as yours. as you
+may judge advisable to first rate any such criminal
+opera tions stick By order talbot Combs yawl See
+A Day nay assist ant Brach how look now
+note: N2R-1: No. 2 (bigram coherence per word-pair, No. 1 / No. 2 / No. 9; shuffled No. 2 x3 = -8.229/-7.499/-8.573; shuffled No. 2 -7.948/-7.878/-8.058; ms18/n2r1_coherence.out; the H count cannot separate a key from its meaning-shuffled copy, ms18/n2r1.out). Same-day sibling in print, not this text: Dana to Brig. Gen. M. R. Patrick, Provost-Marshal-General, City Point, Washington 30 Oct 1864, on Governor Seymour's election agents and 'gross frauds and forgeries' (OR I/42 pt 3, IA warofrebellion423unit, between running heads 435 and 436). The ledger telegram's own wording ('ballot-box stuffer', 'credibly reported', 'criminal operations') is not located in print; names 'Felix Mack', 'Clos Rey', 'Pelham' are unresolved.
+
+### N2-FB | Page 107 | 9767 | mssEC 18 (obj 10074, pointer 9767; printed page 101), 26 June 1864 10 PM Washington, S. H. Beckwith (operator), to Brig. Gen. Ingalls (written 'In gulls'), tail group read as the Quartermaster General (Meigs, M): the Surgeon General advises me of a great accumulation of sick and wounded at City Point and urges a supply of more hospital transports fit to carry them by sea to the North; I presume this is more urgent than the New Orleans service; place all necessary sea-going steamers now in the James or at [Fort] Monroe at the service of the Medical Department until these wounded are removed; steamers from New York will go to New Orleans; one service or duty must wait upon the other (N2R-1; row 9767/1; holder transcription, leaf not eye-checked)
+10 pm  Washn June 26th 1864
+Rebecca Nelson Dawson for Palestine In gulls yacht
+Surgeon shark advises me of great accumulation of
+sick and wilkes at Brimstone and urges supply
+of more hospital weans fit to carry them
+by sea to the squadron pause I presume
+this is more urgent than the Gland service
+halt See/Lee? Magic & place all stomach sea
+going waltzers now shylock Abbot or at Bunyan
+at the service talbot Medical quotient until these
+wilcox are removed tulip Waltzers from Granada will
+go to Ginger pike one service or duty
+must wait upon the other wiley Buggy Sandwich
+note: N2R-1: No. 2 (bigram coherence per word-pair, No. 1 / No. 2 / No. 9; shuffled No. 2 x3 = -6.983/-6.029/-7.903; -7.142/-6.729/-7.380; ms18/n2r1_coherence.out; the H count cannot separate a key from its meaning-shuffled copy, ms18/n2r1.out). Decoder slip: 'presume' reads [Hotly [?]] (a key row on the plain word, M). 'Grant U S' for 'See/Lee?' is the decoder's reading of a doubtful word (M). Not located in print: letters-only phrase grep ('great accumulation of sick and wounded', 'hospital transports fit to carry them by sea', 'one service or duty must wait upon the other': none in 184 cached volumes incl. 20 OR volumes read this session) and date-window search for 25-27 June 1864 headings with Ingalls/hospital/Surgeon/City Point in OR I/36 pt 3, I/37 pt 2, I/40 pt 2 and 3: 0.
+
+### N2-FC | Page 30 | 9690 | mssEC 18 (obj 10074, pointer 9690; printed page 24), 17 March 1864 Washington 2.30 PM, S. H. Beckwith (operator), Halleck to Lieut. Gen. Grant at Nashville: the furloughed regiments from the Department of the South are ordered to rendezvous here; Rosecrans asks for four regiments of cavalry and one or two of infantry to be sent to Missouri; Banks reports that the Twelfth Illinois Cavalry ordered to his department has been dismounted at St. Louis and the horses sent to your orders, and that other horses collected there for his command have been diverted; I fear these diversions may interfere with his movements; printed OR I/34 pt 2 pp.634-635 (N2R-1; row 9690/0; holder transcription, leaf not eye-checked)
+S. H. Beckwith  Wash'n Mar 17th 1864 230 P. M
+Happy Enoch Marshall Henrietta To Bellows The fur
+loughed Webbs from Quotient Talbot White are repeated
+to rend - ez - vous here Tulip Mud asks
+for Baker waynes of Pekin & Allen or
+Brooks Waylands of Sugar to be sent to
+Bremen Yacht Lapland Watsons that the Gilbert Agate
+Pedlar repeated to his Quotient have been dismounted
+at Holland & the Silvers sent to your
+repeats Pike and that other Silvers collected there
+for his Princeton have been diverted Tulip I
+Saxon these quitmans may inter saxon with his
+Suppers sig Lady Spunky Shark Chief of Satan
+note: N2R-1: No. 2 (bigram coherence per word-pair, No. 1 / No. 2 / No. 9; shuffled No. 2 x3 = -6.997/-5.893/-7.923; -7.125/-6.429/-7.835; ms18/n2r1_coherence.out; the H count cannot separate a key from its meaning-shuffled copy, ms18/n2r1.out). Printed OR I/34 pt 2 (IA warofrebellion013402rootrich; the item runs across the head of p.635 under 'Washington, March 17, 1864 -- 2.30 p.m.', Lieutenant-General Grant, Nashville): word for word; C against the print. Ledger codes: 'Bellows' (header) decodes Maj. Gen. U. S. Grant and 'Mud' decodes Rosecrans (key); 'rend - ez - vous' and 'inter saxon' are the clerk's splits of plain words. Quoted print text identified by the letters-only phrase grep (n2r1_printcheck.out: 'furloughed regiments', 'have been diverted', 'interfere with his movements', 'rendezvous here' all hit warofrebellion013402rootrich).
+
+### N2-FD | Page 20 | 9680 | mssEC 18 (obj 10074, pointer 9680; printed page 14), 27 Feb 1864 Washington 1.30 PM, S. H. Beckwith (operator), Halleck to Maj. Gen. Grant at Nashville: the Wisconsin regiment is ordered to Nashville as requested; others will be so ordered as fast as reported ready unless you wish otherwise; much anxiety is felt here about Sherman's movements, we have nothing official since the 8th; rebel accounts represent his forces as far south as Quitman but say nothing of any movement on Selma; it is reported that Johnston has ordered the evacuation of that part of Georgia north of the Chattahoochee River; printed OR I/32 pt 2 p.481 (N2R-1; row 9680/1; holder transcription, leaf not eye-checked)
+S. H. Beckwith " 2 "  Washn 1.30 PM Feby 27th 1864
+Huron Harriet Oliver Cushing For Belly The
+Belgrade Wayne is ordered to Gaul as
+requested others will be so ordered as
+fast as reported ready unless you should
+wish other wise yardstick much anxiety is
+felt here about flora's Supper pike We
+have nothing office all since the Fisher
+Tulip Violet accounts represent his Saints as
+far wick as Quit - man but say
+nothing of any Surgery on Harvard Tulip
+it is Watson that Java has ordered
+the reptile of the part of abortion
+spoon of author wafer windham behead End
+note: N2R-1: No. 2 (bigram coherence per word-pair, No. 1 / No. 2 / No. 9; shuffled No. 2 x3 = -6.941/-5.774/-7.601; -6.714/-6.892/-6.765; ms18/n2r1_coherence.out; the H count cannot separate a key from its meaning-shuffled copy, ms18/n2r1.out). Printed OR I/32 pt 2 (IA warofrebellion322unit; the item stands under the running head 481, Halleck to Grant, Washington 27 Feb 1864 1.30 p.m.; Grant's reply from Nashville at 5.30 p.m. follows): word for word; C against the print. Differences: the ledger's 'Belgrade Wayne' is decoded Wisconsin Regiment and 'flora's Supper pike' reads Sherman's movements (decoder gives [Movement]); the tail decodes Halleck (signature group, M). Sibling on the same ledger page: 9680/0 (N2-GG, 27 Feb 11 AM).
+
+### N2-FE | Page 245 | 9905 | mssEC 18 (obj 10074, pointer 9905; printed page 239), 3 Dec 1864 Washington (cipher time word 3 PM), S. H. Beckwith (operator), to Brig. Gen. Rawlins, Chief of Staff, signed Rufus Ingalls, Chief Quartermaster (signature group read, M for the identity): the first division of the Sixth Corps has been [embarked]; the third division will arrive here tomorrow afternoon and will be embarked at once; the second division will arrive Tuesday; a portion of the river steamers should be retained here; please give Colonel Bradley such orders; 'How are you' (N2R-1; row 9905/1; holder transcription, leaf not eye-checked)
+SH Beckwith  Wash'n Dec 3rd 1864
+Jennie Benton For Palermo Raw lins Chief of Satan yacht
+The Brown Queen Dawson Pelton has been Rodneyed yard The
+Benton Quaker will arrive here Wedlock after noon and will
+be Rodneyed at once Tulip the Brooks Queen will arrive
+on young stick a portion Talbot wafer waltzers should be
+writ earned here Please give Pearl Bradley such repeats yawl
+Roof us In galls Palestine Chif Vermont How are you
+note: N2R-1: No. 2 (bigram coherence per word-pair, No. 1 / No. 2 / No. 9; shuffled No. 2 x3 = -7.912/-5.962/-8.259; -7.087/-6.981/-7.342; ms18/n2r1_coherence.out; the H count cannot separate a key from its meaning-shuffled copy, ms18/n2r1.out). Day words: 'Wedlock after noon' reads Tomorrow, 'young stick' reads Tuesday (3 Dec 1864 was a Saturday; M for the weekday words, the shuffle floor for a day-name match is high). Decoded 'Embark' carries a [#] mark (the key row's flag). Not located in print: date-window search for 2-4 Dec 1864 headings with Rawlins/Sixth/embark/Ingalls in OR I/42 pt 3, I/43 pt 2 (cached), I/45 pt 1: 0 (the 3 Dec items found are Meade and Grant at City Point, none about the Sixth Corps shipping); letters-only phrase grep ('will be disembarked at once', 'will arrive here Tuesday', 'Third Division will arrive here': none); be-api Grant Papers vol. 13 (id unverified) 'Rawlins Sixth Corps embarked': 0 hits.
+
+### N2-FF | Page 147 | 9807 | mssEC 18 (obj 10074, pointer 9807; printed page 141), 1 Aug 1864 Washington (ledger 12 noon; the tail adds '230 Pm'), F. T. Bickford (operator), Meigs, Quartermaster General, to Brig. Gen. Ingalls, Quartermaster: despatch of yesterday received and all transportation fit for moving cavalry and infantry now in service and not otherwise employed at Washington, Baltimore, Philadelphia and New York yesterday ordered to City Point; no new charters reported; is this what is wanted or is the emergency extensive, and does it need new and further provision of vessels; printed OR I/37 pt 2 p.559 (N2R-1; row 9807/0; holder transcription, leaf not eye-checked)
+FT Bickford  Washn August 1st 1864
+Gertrude Brown for Palermo In gals Vermont tulip
+Despatches of yesterday recd and all weasel fit
+for swingling pedlar & Sugar now in service
+& not other wise employed at Hunter Bard mar
+Grammar & Girdle yesterday repeated to Brimstone yard
+No new charters repeated stop Is this what
+is wanted or is the surgery extensive &
+does it need new & further provision of
+vessels wind Buggy man a strange animal &c
+230 Pm
+note: N2R-1: No. 2 (bigram coherence per word-pair, No. 1 / No. 2 / No. 9; shuffled No. 2 x3 = -8.490/-7.558/-9.306; -8.066/-8.099/-8.729; ms18/n2r1_coherence.out; the H count cannot separate a key from its meaning-shuffled copy, ms18/n2r1.out). Printed OR I/37 pt 2 (IA warofrebellion372unit; Meigs to Brig. Gen. Ingalls, Washington 1 Aug 1864 12 noon, the item ends just before the head of p.560, after Humphreys's telegram of the same day): word for word; C against the print. Differences: the ledger writes 'surgery' where the print has 'emergency' (the clerk's code group; the decoder leaves the plain word, M) and 'repeated' where the print has 'reported' ('No new charters reported'); the decoder reads 'Despatches' as [McLamores Cove]es, a key row on a plain word (decoder slip, M, not a key edit). 'Brimstone' = City Point, 'Hunter Bard mar Grammar & Girdle' = Washington, Baltimore, Philadelphia and New York (key). Tail '230 Pm' is the ledger's time.
+
+### N2-FG | Page 122 | 9782 | mssEC 18 (obj 10074, pointer 9782; printed page 116), 10 July 1864 Washington 12.30 AM, S. H. Beckwith (operator) at City Point, Halleck to Lieut. Gen. Grant: despatch just received from General Wallace, who admits a serious defeat at Monocacy Junction to-day; he is in full retreat on Baltimore with, he says, his column demoralized; a part of Ricketts's division is covering his retreat; he estimates the enemy's force at 20,000; printed OR I/37 pt 2 pp.156-157 (N2R-1; row 9782/2; holder transcription, leaf not eye-checked)
+SH Beckwith City Point  Washn July 10th 1864 1230 AM
+Hang . Mark french francis for Crowd : yacht
+Despatch just received from Spark Wallace who
+admits a serious quarrel at Monocacy Junction
+wherry tulip He is in full vulture
+on bard with pike he says pike
+his laugh picketed pause a part of
+Ricketts quaker is covering his vomit tulip
+He estimates the rabbits Salem at Nelson
+<unclear>sprague</unclear> Wiley cupid things are come mixed
+note: N2R-1: No. 2 (bigram coherence per word-pair, No. 1 / No. 2 / No. 9; shuffled No. 2 x3 = -7.516/-6.732/-8.729; -6.366/-7.882/-7.780; ms18/n2r1_coherence.out; the H count cannot separate a key from its meaning-shuffled copy, ms18/n2r1.out). Printed OR I/37 pt 2 (IA warofrebellion372unit; Halleck to Grant, City Point, Washington 10 July 1864 12.30 a.m., followed by Grant's reply of 12.30 p.m. the same day; the item stands before the running head 157, so on p.156 or at the foot of the preceding page, page not checked on the image of the print): word for word; C against the print. COHERENCE CONTROL FAILED ON ONE SEED: No. 2 -6.732 against shuffled No. 2 seed 1 -6.366 (the other five controls lower); this is a short entry and the pass is carried by the print, not by the number (rule 3: the control licenses nothing here; the sense and the print decide). The ledger writes 'Wallace' and the decoder gives [General] [River] for 'Spark Wallace' (decoder slip, M); '<unclear>sprague</unclear>' follows 'Nelson' (= 20): the clerk's group for thousand, M. Tail 'things are come mixed' is the signature group (Halleck, M).
+
+### N2-FH | Page 256 | 9916 | mssEC 18 (obj 10074, pointer 9916; printed page 250), 17 Dec 1864 Washington (cipher time word 7 PM), J. H. Emerick (operator), to Lieut. Col. G. W. Bradley, Chief Quartermaster, signed Rufus Ingalls (signature group, M for the identity): the steamers Guide, Cossack, T. Collyer, Escort, Louise, Hero of Jersey (the decoder reads 'Vicksburg of Jeff Davis', a slip, M), Manhattan and Crescent are ordered to report to General Sherman; any of the above-named vessels now in the James will be ordered to report as directed at or near Savannah; Chief Quartermaster at that point (N2R-1; row 9916/2; holder transcription, leaf not eye-checked)
+JH Emerick  Washn Decr 17th 1864
+Minnie Marshal Revenue paxton GW Bradley Chief Vermont
+The Waltzer Guide Cossack T Collyer Escort Louise Hero
+of Jersey Manhattan & Crescent are ordered to Watson
+to fortune tulip Any talbot above named vessels which
+are Shylock Abbot wilby ordered to watson as directed
+at or spit Hebrew tooth chf vermont at that
+<deletion>point</deletion> <insertion>trinity</insertion> Rufus In Galls Chf vermont Palermo &c
+note: N2R-1: No. 2 (bigram coherence per word-pair, No. 1 / No. 2 / No. 9; shuffled No. 2 x3 = -9.033/-7.415/-9.228; -8.218/-8.695/-9.372; ms18/n2r1_coherence.out; the H count cannot separate a key from its meaning-shuffled copy, ms18/n2r1.out). Vessel names are plain in the ledger; the decoder reads 'Hero' and 'Jersey' as key rows ([Vicksburg], [Jeff Davis]) on plain words (decoder slips, M, not key edits). The '<deletion>point</deletion> <insertion>trinity</insertion>' correction is the clerk's (insertion read as 'that point' tail). Not located in print: date-window search for 16-18 Dec 1864 headings with Bradley/Collyer/Cossack/Manhattan in OR I/45 pt 2 (cached), I/44 (first fetch HTTP 500, the one retry answered), I/42 pt 3: 0; letters-only phrase grep ('Guide, Cossack', 'T. Collyer', 'Escort, Louise': none; 'Cossack' hits only OR I/41 pt 2, a different Cossack). Sibling on the same ledger leaf: 9916/1 (N2-GE).
+
+### N2-FI | Page 30 | 9690 | mssEC 18 (obj 10074, pointer 9690; printed page 24), 25 March 1864 Washington 3.30 PM, S. H. Beckwith (operator), Halleck to Lieut. Gen. Grant, Army of the Potomac: two regiments of heavy artillery, numbering about 3,000 men, are ordered to the Army of the Potomac and will leave as soon as they can be replaced by men from other forts; please direct General Meade to telegraph General Augur where they are to land; the clerk's tail: 'do not use any words from them extra pages until I receive my book'; printed OR I/33 p.730 (N2R-1; row 9690/2; holder transcription, leaf not eye-checked)
+S.H. Beckwith ( 2 )  Washn Mar 25th 1864
+Imogene For Madrid Yacht Arnold Waynes of heavy Pagan
+numb ering about Benton Dwight Summer are repeated to
+Persia talbot Advent and will leave Panther they can
+be rep laced by summer from other Sacos tulip
+Please direct Mohawk to Whiff Lantern where they are
+to land Yawl Cupid do not use any words
+from them extra pages until I receive my book
+note: N2R-1: No. 2 (bigram coherence per word-pair, No. 1 / No. 2 / No. 9; shuffled No. 2 x3 = -6.677/-5.826/-8.652; -7.095/-7.345/-7.807; ms18/n2r1_coherence.out; the H count cannot separate a key from its meaning-shuffled copy, ms18/n2r1.out). Printed OR I/33 (IA warofrebellion33unit; the item stands under the running head 730, 'Washington, March 25, 1864 -- 3.30 p.m.', after Grant's 'Send the heavy artillery as they are'): word for word; C against the print. The tail ('do not use any words from them extra pages until I receive my book') is not in the print: an operator's note about the cipher book's extra pages, graded M (it is the only mention of a book in these ten rows; 25 Mar 1864 ledger leaf p.24). 'Arnold Waynes' = 2 regiments and 'Benton Dwight Summer' = 3,000 men (key). Sibling: 9690/0 (N2-FC) on the same ledger page.
+
+### N2-FJ | Page 138 | 9798 | mssEC 18 (obj 10074, pointer 9798; printed page 132), 18 July 1864 Washington 12.30 PM, S. H. Beckwith (operator), Halleck to Lieut. Gen. Grant, City Point: I have just learned from General Wright that he formed a junction yesterday at Purcellville with General Crook's command, and that their cavalry struck the enemy's rear near Snicker's Gap, capturing a considerable number of wagons and mules and taking about 60 prisoners; the pursuit will be continued to-day to verify the enemy's retreat, after which Wright will return; printed OR I/37 pt 2 p.374 (N2R-1; row 9798/0; holder transcription, leaf not eye-checked)
+SH Beckwith  Washn July 18th 1864
+Topsy Mason for Bellows I have just learned from Genl
+Watkins that he formed a sulphur yesterday at Purcell ville vile
+with Genl Crooks princeton & that their pedlar struck the
+robins virtue spit Snickers shannon plating a considerable number of
+wagons & mules & taking about Perkins samples yard The
+number trifle Continued wherry to verify raven vomit after which
+Watkins will return wind Lady
+note: N2R-1: No. 2 (bigram coherence per word-pair, No. 1 / No. 2 / No. 9; shuffled No. 2 x3 = -7.941/-6.854/-8.058; -7.773/-7.425/-7.859; ms18/n2r1_coherence.out; the H count cannot separate a key from its meaning-shuffled copy, ms18/n2r1.out). Printed OR I/37 pt 2 (IA warofrebellion372unit; Halleck to Grant, Washington 18 July 1864 12.30 p.m., after the running head 374): word for word; C against the print. Differences: the ledger has 'Genl Watkins' for the print's 'General Wright' (the decoder gives [Right], a key row, M for the code-versus-name question, not a key edit); 'The number trifle Continued' where the print has 'The pursuit will be continued' (the ledger's 'number' is a code group read here as the plain word; the decoder shows 'The number [Will be] Continued'); 'Perkins samples' = 60 prisoners (key). 'Lady' tail = Halleck (key).
