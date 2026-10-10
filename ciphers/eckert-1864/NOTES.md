@@ -6032,4 +6032,4 @@ Read so far: ten of ten examined; none filed (all Step-0 hits).
 - [n/a] key-rebuild: no key row edited.
 - [x] image-check: three of ten pages read at 2400 px; the other seven are a named optional step above.
 - [n/a] retry: nothing failed except the first F1 and F8 queries, which used key-dependent words and were rerun on plain words.
-Verdict: keep going (three small internal steps, named above, ~$0.7 in all; nothing is blocked from outside).
+Verdict: keep going: 3 internal gaps; cheapest next: F9 5822/2 sibling 5851 vessel list and 8 Dec Butler IV window, ~$0.2
