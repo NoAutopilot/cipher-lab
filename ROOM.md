@@ -13860,3 +13860,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 06:53 | worker OBRED-S1 for LANE FAMILY-A2o (account 2) | NA take (METS + ~170 scans at 400 px + <=8 at 1200 px, <=180 requests)
 2026-10-10 06:53 | OBRED-DP worker (Opus 5.5) | claim (06:5x UTC 10 Oct by date -u): oldenbarnevelt-brederode-1605 pooled structure of no. 92 + scan-187 postscript, Resolutien print check, design_prior; cap 3, box ends 08:05 UTC; huygens <= 15 requests (take/release); for LANE FAMILY-A2o (account 2)
 2026-10-10 06:54 | OBRED-DP worker (Opus 5.5) | huygens take (06:5x UTC 10 Oct by date -u): retroboeken/statengeneraal 13OR searches, <= 15 requests, 2 s apart; for LANE FAMILY-A2o (account 2)
+2026-10-10 06:54 | OBRED-DP worker (Opus 5.5) | huygens release (07:0x UTC 10 Oct by date -u): 10 requests (6 searches, pages.json, 3 page texts), all 200; for LANE FAMILY-A2o (account 2)
