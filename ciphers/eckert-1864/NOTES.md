@@ -5360,3 +5360,69 @@ Read so far: nine of nine rows through Step-0; two filed (E400 printed, E401 not
 - [x] image-check: E400 (top) and E401 (whole entry) eye-checked on 2400 px crops.
 - [x] retry: none needed.
 Verdict: keep going: 3 internal gaps; cheapest next: IA page read for E400's three page numbers, ~$0.1
+
+## NO9-L (10 Oct 2026, account 1, for LANE LEDGER-11)
+
+Worker NO9-L (reader, Sonnet 5.5, 05:47-06:1x UTC by `date -u`). Nine mssEC 18 leftovers of the LEDGER-N2 handoff item 4: 9699/0 9694/2 9845/0 9679/0 9725/1 9762/1 9761/0 9862/1 9770/2. **Nothing is filed** (no O9-E* block, `ciphertext-no9.txt` and `key-no9.md` untouched, `decode_no9.py --check` exit 0): every row is a Step-0 hit under the LANE LEDGER-10 Wave 3 ruling, i.e. the body is in the holder transcription of its own leaf. Not classified for novelty (rule 10).
+
+Intake gate (pasted, 10 Oct): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Prior-work (`tools/prior_work.py eckert-1864 --item-spec ... --step-type decode --offline`, once, for 9699/0): exit 4, owed = two target-level live claims (FIX-FM17, FIX-FM18, 5-6 h old, they name the slug and no pointer of these nine rows) and the leaf LOOK; answered here by step 0 against the leaf's own transcription and by the CISOSEARCHALL queries below; solver repositories and cryptiana mirror CLEAR (no file names these leaves); editions: OR volumes searched by phrase below, control hit. No ad-hoc rows were written to look.tsv or prior-work.tsv.
+
+Scripts (regenerate): `ms18/no9l_extract.py` (entries from sources/mssEC18, 9725/1 continued from pointer 9726 up to "sig Applause") -> `ms18/no9l_entries.txt`; `ms18/no9l.py --show` (H counts and the three decodes); `ms18/no9l_step0.py` -> `no9l_step0.out`; `ms18/no9l_printcheck.py` -> `no9l_printcheck.out`; `no9l_hdl.out` (13 CISOSEARCHALL queries); `no9l_unread.out`.
+
+### Step 0 (ordered overlap (a), shuffle p95 (b), key-dependent words (c); No. 9 decode)
+| row | (a) | (b) | hit | (c) key meanings absent from the leaf's text | (c) plain absent |
+|---|---|---|---|---|---|
+| 9699/0 | 0.915 (54/59) | 0.254 | HIT | captain major quartermaster | informing |
+| 9694/2 | 0.786 (55/70) | 0.214 | HIT | boats general major new quartermaster steam troops york | gillmore |
+| 9845/0 | 0.933 (42/45) | 0.289 | HIT | pemberton regiment | - |
+| 9679/0 | 0.672 (39/58) | 0.224 | HIT | arrest fight new secretary york | dana individual kene |
+| 9725/1 (+9726) | 0.731 (98/134) | 0.187 | HIT | arkansas banks boats general grant gun halleck lieutenant major red river troops | comemunicate |
+| 9762/1 | 0.921 (58/63) | 0.270 | HIT | new surrounded threaten wounded | - |
+| 9761/0 | 0.971 (34/35) | 0.343 | HIT | recruits | - |
+| 9862/1 | 0.914 (32/35) | 0.314 | HIT | abingdon maine | - |
+| 9770/2 | 0.889 (24/27) | 0.370 | HIT | left wing | er |
+Under No. 1 and No. 2 every row also scores (a) 0.61-0.87, because the body is plain words; the overlap does not choose the book. Body in holder transcription for all nine; the ruling's controls (E74/E378/E381 hit, transposed constructions miss) were run by STEP0-RULE (`ms18/step0_ordered.tsv`) and were not rerun here. (c) is what the key adds: names/places only, and on several rows those key meanings are themselves doubtful (below).
+
+### Book test (header words, No. 9 / No. 1 / No. 2)
+| row | date | label, place word | time word: No. 9 / No. 1 / No. 2 | header time | call |
+|---|---|---|---|---|---|
+| 9699/0 | 8 Apr 1864 | none, Mud/Muss unread | Minnie 2.30 PM / 7.30 PM / 7 PM | none | No. 9 by sense only (Captain/Quartermaster/Major Van Vliet; No. 1 and No. 2 give Brannon, Kelly, Rifle Pits); sibling O9-DF (9699/1, same Horner/Meigs/Brown) is filed under No. 9 |
+| 9694/2 | 5 Apr 1864 | ( 9 ), Pagan = Washington | Helen 3 PM / 2 PM / 2 PM | 3 PM | No. 9: label, place word and time word agree; under No. 1 the body reads Pontoon/Heintzelman/Boyle (no clause), under No. 9 it reads as a Meigs order to Maj. Van Vleet. This is the row whose "body conflicts" in the brief: it does not |
+| 9845/0 | 18 Sept 1864 | none; header "11 A. M. To J. W. Wallack Indianapolis" | Francis 11 AM / 12 / 12.30 AM | 11 AM | No. 9 by ONE time word, weakest call of the nine; content does not corroborate: Quorum/Quarrel = Pemberton and Shylock/Stanhope = Regiment (key-no9 rows) do not fit "a despatch received from Quarrel Sherman" / "the recall of Shylock" (a person, in a telegram to Gov. Morton about the draft and his election): three key values misfit, graded M; Mohawk, tappan, blanchard, taunton unread. The leaf is not "header only": it carries a full body |
+| 9679/0 | 26 Feb 1864 | none, Pagan = Washington (second copy) | Gertrude 12 noon / 12.30 / 12 noon AM | 12 M | No. 9 (No. 2's "12 noon AM" carries the wrong meridian); body reads under No. 9 only (Arrest, Fight(er), New York, Secretary of War). The leaf carries the message twice, Dana to Kennedy (Metropolitan Police) and "another" to Robt Murray, US Marshal, with different code words for arrest (Waggish/Waddinged) and fighter (Woolwicher/Wyominger): one order sent in two forms |
+| 9725/1 | 27 Apr 1864 | none, Pagan = Washington | Francis 11 AM / 12 / 12.30 AM | none (print 11.35 a.m.) | No. 9: the body reads end to end (Banks, Grant, Red River, Gun Boats, Arkansas); 24 of 219 tokens H |
+| 9762/1 | 19 June 1864 | none | Fanny 9 AM / 11 AM / 11 AM | 2.30 PM (print 3 p.m.) | none in hand: no book gives 2.30-3 PM; whiff/whale/whelp/whistle/Merlin misfit all three (print: fall back / cavalry / reconnaissances / enemy / Virginia) |
+| 9761/0 | 18 June 1864 | none | Dorothy 4 AM / 8.30 AM / 8.30 AM | 11 AM | none in hand: no book gives 11 AM; "yellow" = Recruits (No. 9) against print "ammunition" |
+| 9862/1 | 7 Oct 1864 | none | Emily 7 AM / 10 AM / 10 AM | none | none in hand: nothing reads (Kettle = "a vessel" by sense, Meade/Maj Genl G. G. Meade in No. 1; Nugget, Quiver, Ida unread/misfit) |
+| 9770/2 | 3 July 1864 | none | Dorothy 4 AM / 8.30 / 8.30 | 10.30 AM (print 11 a.m.) | none in hand |
+**Reads No. 1 or No. 2: none of the nine** (nothing is handed to LANE LEDGER-10 for that reason). **Lead for LEDGER-10, not a key edit:** 9761/0, 9762/1, 9770/2 (18-19 June and 3 July 1864, Washington to Martinsburg, Meysenburg/Stahel/Sigel) share Dorothy, Fanny, Bremen, Carroll, Orchard, Badger, Alden and read by the print as Dorothy = 11 AM (header 11 AM; header 10.30 and print 11 a.m. on 9770/2), Fanny = 2.30-3 PM, Bremen = Grant, Carroll = Hunter, Orchard = "the Baltimore and Ohio Railroad", Badger = Sigel, whiff = fall back, whale = cavalry, whelp = reconnaissances, whistle = enemy, Merlin = Virginia, yellow = ammunition, Alden/Wager = signature groups. All C (each single-source from one printed item) and none matches a value in key.md, key-no2.md or key-no9.md: the group looks like a fourth vocabulary or a different table page, `none in hand`; not tabled.
+
+### Print and holder (letters-only phrase grep over the 177 cached volumes, `no9l_printcheck.out`; CISOSEARCHALL on all pointers, `no9l_hdl.out`)
+- **9694/2: in print**, OR I/35 pt 2 pp.37-38 (IA warofrebellion352unit; Meigs to Maj. Van Vliet, QM-General's Office, "April 5, 1864 - 2.30 p. m."): word for word with Maxim = Music = Port Royal, "youth" = troops, "Swindles" = steamers; header and time word say 3 PM, the print 2.30 p. m. (logged). CISOSEARCHALL: own pointer 9694 only.
+- **9725/1: in print**, OR I/34 pt 3 pp.306-307 (warofrebellion013403rootrich; Washington, April 27, 1864 - 11.35 a. m., Lieutenant-General Grant to Major-General Banks, "return yourself immediately to New Orleans ... Red River"): word for word; Mint = New Orleans, Mogul = "via Cairo, Ill." (print); the covering telegram to the commanding officer at Little Rock was not located separately. CISOSEARCHALL: 9725 only.
+- **9761/0: in print**, OR I/37 pt 1 p.648 (warofrebellion371unit; Halleck to Maj. Gen. Stahel, Martinsburg, June 18, 1864): "ammunition", "Harper's Ferry", "General Hunter's instructions". 9762/1: OR I/37 pt 1 pp.652-653 (Halleck to Stahel, June 19, 1864 - 3 p. m.). 9770/2: OR I/37 pt 2 p.20 (Wager, Capt. AAG, to Maj. Gen. Sigel, Martinsburg, July 3, 1864 - 11 a. m.; text before the running head of p.21). CISOSEARCHALL: each own pointer only.
+- **Not located in print** (177 volumes; OR ser. III vol. 4 and ORN not on disk): 9699/0 (forage to Muss, 8 Apr; the 9 Apr sibling O9-DF is also not located), 9845/0 (Stanton? to Gov. Morton, 18 Sept: the sender is not named in the leaf's header words), 9679/0 (Dana to Kennedy / Murray, Ned Price, 26 Feb 1864; 'Ned Price' occurs only in unrelated places), 9862/1 (Camden, 7 Oct). CISOSEARCHALL on clear words: own pointer only for every row (no clear copy at another pointer). A miss is a search result (rule 10).
+- Positive control for CISOSEARCHALL: each plain-word query returned its own pointer; the one control-shaped query I added (9803, 'railroad facilities ...') returned 0 because 'railroad' is the code word Soap on that leaf, so it was not a valid control and counts for nothing.
+
+### Unread by the No. 9 table (code-shaped groups left as written, graded M; no reading filed so these are counts for the record)
+9699/0: Mud, Muss (2; Abbott = Abbot variant). 9694/2: Maxim, Music (2, both Port Royal by the print, C, not tabled). 9845/0: Mohawk, tappan, blanchard, taunton (4) plus three misfit key values (Quarrel, Quorum, Shylock). 9679/0: 0. 9725/1: Mint, Mogul (2, New Orleans / via Cairo, Ill. by the print, C). 9762/1, 9761/0, 9862/1, 9770/2: the groups above, not readable by any book in hand. H counts (No. 9, from `no9l.py`): 5, 10, 4, 11, 24, 5, 2, 4, 2.
+
+Judge (rule 7): no reading filed, so `tools/judge_plaintext.py` was not run and no fresh-session re-derivation is owed. Requests: hdl.huntington.org 13 (CISOSEARCHALL, shared token, take/release in ROOM, all 200); archive.org 0; be-api 0; googleapis 0.
+
+## Remaining gaps (NO9-L, 10 Oct 2026)
+Read so far: 0 of 9 rows filed (all nine are Step-0 hits; their bodies are in the holder transcription); 5 rows read as No. 9 by header words (9699/0 weakly, 9694/2, 9845/0 weakly, 9679/0, 9725/1), 4 have no book in hand.
+- 9699/0 Mud, Muss; 9694/2 Maxim, Music; 9725/1 Mint, Mogul; 9845/0 Mohawk, tappan, blanchard, taunton: unread code groups - blocker: not-attempted; next: a key-rebuild read of the mssEC 67 pages beyond the sample table (page pointer = 1720 + page; the print gives candidate values for Maxim, Music, Mint, Mogul), ~$1.0
+- 9762/1, 9761/0, 9770/2 (and 9862/1): book not in hand, Dorothy/Fanny/Bremen/Carroll/Orchard/Badger/whiff/whale/whelp/whistle/Merlin read by the print only - blocker: no-key-material; no key page for these groups is on disk; next: find the time-word page and code pages that carry Dorothy = 11 AM (other June-July 1864 Martinsburg entries of ciphertext-no2.txt/ciphertext.txt use Bremen too), ~$1.5
+- 9845/0 three misfit key values (Quarrel/Quorum = Pemberton, Shylock = Regiment) against the sense - blocker: not-attempted; each is a key value that disagrees with the sense, graded M until tested; next: test each at every occurrence with decode_key.py --try, ~$0.5
+- 9699/0, 9845/0, 9679/0, 9862/1 not located in print - blocker: not-attempted; those volumes were not on disk; next: OR ser. III vol. 4 and ORN ser. I April 1864, and Grant Papers for the 18 Sept item, ~$0.3
+- no leaf was eye-checked (holder transcription only; a negative is conditional on it, rule 2) - blocker: not-attempted; disk-only job; next: header crops with tools/iiif_lines.py --image for 9845/0 and 9862/1, ~$0.5
+
+## Escalation (NO9-L, 10 Oct 2026)
+- [x] siblings: 9699/0 against 9699/1 (O9-DF) and 9695; 9761/9762/9770 read together with 9771 and 9726.
+- [x] clear-pages: leaf text read for every header; clear words of every row searched on all pointers (13 queries).
+- [x] known-keys: No. 1, No. 2 and No. 9 run on every row (`no9l_step0.out`).
+- [ ] print: 177 cached volumes searched; ser. III vol. 4, ORN and Grant Papers not searched (planned above).
+- [n/a] key-rebuild: no key row edited.
+- [ ] image-check: not done (disk and holder transcription only).
+- [n/a] retry: no step failed.
+Verdict: keep going: 4 internal gaps; cheapest next: test the three misfit No. 9 values of 9845/0 at every occurrence with decode_key.py --try, ~$0.5
