@@ -14446,6 +14446,211 @@
       "depth_sentence": "On the evening of 3 Jan 1865 Capt. Howell at City Point asked Col. Webster at Fort Monroe, for General Rawlins, to send one of his best going steamers to City Point for other service, furnished with coal, no rations being required.",
       "depth_check": "code clause read with the period key ([General] Rawlins ... [one] [of the] best going [steam]ers, [rations]); no external check of message 2's own content",
       "depth_note": "msg 2: 10 H + 3 M of 13 code-word tokens"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L15a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L15a verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L15a)' section 4",
+      "reading_version": "FM65 readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L15a) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "see AUDIT (FV-L15a) s.3 (M tokens)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 96.2,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Rucker, Washington, via City Point to Fort Monroe, 9 Feb 1865: Schofield's corps and about 5,000 of Meagher's division shipped; two divisions of the 23rd Corps, 306 mule teams and 102 ambulances still waiting; 2,500 sail tomorrow (E555)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 9 Feb 1865 General Rucker's dispatch, sent from Washington through City Point to Fort Monroe, reported that Schofield's corps and about 5,000 of Meagher's division had shipped from Washington and Annapolis, that two divisions of the 23rd Corps (about 10,000 men) with their horses, three or four batteries, 306 mule teams and wagons and 102 horse ambulances were still waiting, and that 2,500 of these troops would sail the next morning; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vol. V, The Papers of Ulysses S. Grant vols. 13-14 by Google Books snippet search, Chronicling America or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L15a), weak: the sibling row 5904/0 is printed (OR I/46 pt 2; Grant Papers vol. 13 note) and this row was not found there by 7 snippet queries; not N4: Grant Papers vols. 13-14 by snippets only, ORN I/12 unreachable, NARA RG 92/107 unread; Washington's copy in another cipher at mssEC 18 pointer 9957",
+      "depth": "D3",
+      "completeness": "51 H + 2 M of 53 code-word groups (\"promise\" and \"pledge for spit\" M for sense)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.360, pointer 5904, E555"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.360, pointer 5904, E555",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.360, pointer 5904, E555"
+      ],
+      "depth_sentence": "On 9 Feb 1865 Rucker reported 2,500 of the 23rd Corps troops waiting at Washington would sail the next morning, with 306 mule teams and 102 horse ambulances still to ship.",
+      "depth_check": "code: Kisses pelton = Schofield's Corps, quitman = Division, spartan/Spafford = Horse, pagans = Batteries, whelp = Tomorrow read passim; external (non-statistical): OR I/47 pt 2 pp.354-355 Rucker's A.Q.M., 8 Feb, to embark about 2,550 men of the 2nd Div., 23rd Corps, from Alexandria at 7 a.m. on the 10th; p.306 Halleck, 5 Feb, over 2,000 of Meagher's division off; holder 8569, 8572 Meagher's division at Annapolis",
+      "depth_note": "51 H + 2 M of 53 code-word groups (\"promise\" and \"pledge for spit\" M for sense)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L15a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L15a verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L15a)' section 4",
+      "reading_version": "FM65 readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L15a) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "none",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): R. O'Brien, Wilmington, to Maj. Eckert via Fort Monroe, 26 Feb (forwarded 5 Mar) 1865: Schofield orders a line to Fort Fisher and double lines to Goldsboro; construction parties, relays, operators and tools wanted (E568)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 26 Feb 1865 R. O'Brien at Wilmington told Major Eckert, through Fort Monroe on 5 Mar, that General Schofield had directed a telegraph line from Wilmington to Fort Fisher and double lines from Wilmington and from Morehead City to Goldsboro, and asked for two construction parties, 100 miles of material, 20 relays, 20 operators and the men and tools listed, to be sent to New Bern; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vol. V, The Papers of Ulysses S. Grant vols. 13-14 by Google Books snippet search, Chronicling America or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L15a); not N4: Grant Papers vols. 13-14 by snippets only, ORN I/12 unreachable, NARA RG 107 (Military Telegraph) unread",
+      "depth": "D2",
+      "completeness": "35 H of 35 code-word groups (\"relays\", \"hatchets\" plain)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.379, pointer 5923, E568"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.379, pointer 5923, E568",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.379, pointer 5923, E568"
+      ],
+      "depth_sentence": "On 26 Feb 1865 O'Brien asked Eckert for 20 relays, 20 operators and two construction parties for Schofield's lines from Wilmington and Morehead City to Goldsboro.",
+      "depth_check": "code clause: King directs ... a double line from here to Camargo [Goldsboro] ... from More head City to Census [Goldsboro] ... fortune [Newbern], all numerals H; external: place only (OR I/47 pt 2 p.~580 Schofield's headquarters at Wilmington on 25 Feb), not content",
+      "depth_note": "35 H of 35 code-word groups (\"relays\", \"hatchets\" plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L15a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L15a verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L15a)' section 4",
+      "reading_version": "FM65 readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L15a) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "see AUDIT (FV-L15a) s.3 (M tokens)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 96.2,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Washington to Fort Monroe, 24 Jan 1865: Rucker orders the steamer Nevada and every sea-going steamer on to City Point; Wise tells Commander Lynch the Bureau has no such torpedoes (E541)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 24 Jan 1865 Washington told Colonel Webster, quartermaster at Fort Monroe, through Sheldon, that the steamer Nevada would arrive in a day or two with recruits and was to go on to City Point after landing them, with every other sea-going steamer reaching Monroe in the next five or six days (signed Rucker), and told Commander Lynch of the St. Lawrence that the Bureau of Ordnance had no torpedoes of the kind he named, that they would take months to prepare, and asked whether the rebel torpedoes on hand, those on the Stromboli or those sent from the ordnance yard would not answer (signed H. A. Wise); not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vol. V, The Papers of Ulysses S. Grant vols. 13-14 by Google Books snippet search, Chronicling America or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L15a), weak: message 2's substance is relayed in print by Lynch (ORN I/11 p.634); the same telegram's Washington copy is E85 (mssEC 18 pointer 9943, unread); not N4: Grant Papers by snippets only, ORN I/12 unreachable, NARA RG 45/92 unread",
+      "depth": "D3",
+      "completeness": "25 H + 1 M of 26 code-word groups (\"Webster\", \"saint\", \"Ordnance\" plain; \"audit\" M)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.343, pointer 5887, E541"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.343, pointer 5887, E541",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.343, pointer 5887, E541"
+      ],
+      "depth_sentence": "On 24 Jan 1865 Wise told Lynch the Bureau of Ordnance had no torpedoes of the kind he named and asked whether those on the Stromboli would not answer.",
+      "depth_check": "code: weaseler/wayworn = Steam(er), wafers = Recruits, Animal/appian = Monroe, walpole = Rebel read passim; external (non-statistical): ORN I/11 p.634 Lynch, 24 Jan, 'The Bureau of Ordnance can not furnish the torpedoes required ... whether those on board the Stromboli ... will not answer'; p.151 Wise, 6 Dec 1864, torpedoes forwarded from the ordnance yard; holder 8529 the Nevada leaving New York for Fort Monroe with recruits",
+      "depth_note": "25 H + 1 M of 26 code-word groups (\"Webster\", \"saint\", \"Ordnance\" plain; \"audit\" M)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L15a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L15a verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L15a)' section 4",
+      "reading_version": "FM65 readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L15a) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "see AUDIT (FV-L15a) s.3 (M tokens)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 96.4,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Gordon, Norfolk, to Ord via Fort Monroe, 15 Mar 1865: the guide Boyle is here; the Blackwater cannot be crossed without pontoons except near the Army of the Potomac; Broad Ford, 22 miles from Suffolk, is the best place (E576)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 15 Mar 1865 General Gordon at Norfolk told General Ord that he had seen the guide Boyle, who would accompany any expedition; that the Blackwater could not be crossed without pontoons except near the Army of the Potomac's lines; that Broad Ford, 22 miles from Suffolk, was the best place, the river there being 125 yards wide; and that several bridges were standing on the Nottoway; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vol. V, The Papers of Ulysses S. Grant vols. 13-14 by Google Books snippet search, Chronicling America or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L15a), weak: its substance is summarised by Ord to Grant, 16 Mar (OR I/46 pt 3 p.9); not N4: Grant Papers vol. 14 by snippets only, ORN I/12 unreachable, NARA RG 393 unread",
+      "depth": "D3",
+      "completeness": "27 H + 1 M of 28 code-word groups (\"Black\" plain; \"villager\" M)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.389, pointer 5933, E576"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.389, pointer 5933, E576",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.389, pointer 5933, E576"
+      ],
+      "depth_sentence": "On 15 Mar 1865 Gordon reported the guide Boyle at hand and Broad Ford, 22 miles from Suffolk, as the best crossing of the Blackwater.",
+      "depth_check": "code: rusty = Ford, Genoa = Suffolk, windsor = River, patents = Bridges, oyster torch attica = Army of the Potomac; external (non-statistical): OR I/46 pt 3 p.9 Ord to Grant, 16 Mar 8.30 a.m., 'The Blackwater ... cannot be forded except near the Army of the Potomac. Cavalry would have to have a ferry or pontoons'; OR I/46 pt 2 p.993 Gordon, 15 Mar 6.30 p.m., Boyle sent for",
+      "depth_note": "27 H + 1 M of 28 code-word groups (\"Black\" plain; \"villager\" M)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L15a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L15a verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L15a)' section 4",
+      "reading_version": "FM65 readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L15a) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "none",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): City Point to Gordon, Norfolk, for Ord, 15 Mar 1865 5 PM: gunboat draught to Suffolk, a cavalry landing on the Nansemond, pontoons for 500 cavalry to cross to the Nottoway; come up tonight if Sumner's cavalry reaches Norfolk (E575)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 15 Mar 1865 at 5 p.m. City Point asked General Gordon at Norfolk, for General Ord, how much water his gunboats could draw to Suffolk, whether there was a point on the banks of the Nansemond where cavalry could land, covered by gunboats if necessary, and whether a party of about 500 cavalry would have to carry pontoons to cross to the Nottoway; he could come up that night if Sumner's cavalry came to Norfolk; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vol. V, The Papers of Ulysses S. Grant vols. 13-14 by Google Books snippet search, Chronicling America or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L15a), weak: answered point by point in Gordon's printed reply (OR I/46 pt 2 p.993); not N4: Grant Papers vol. 14 by snippets only, ORN I/12 unreachable, NARA RG 393 unread",
+      "depth": "D3",
+      "completeness": "24 H of 24 code-word groups (\"summers\" = Sumner's and \"nancy\" (Nansemond) plain)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.387, pointer 5931, E575"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.387, pointer 5931, E575",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.387, pointer 5931, E575"
+      ],
+      "depth_sentence": "On 15 Mar 1865 City Point asked Gordon whether 500 cavalry would need pontoons to cross to the Nottoway and whether cavalry could land on the Nansemond.",
+      "depth_check": "code: sharons/shannons = Gunboats, panama/pacific = Cavalry, village = Pontoon, plum = Cross, Meriden = Ord read passim; external (non-statistical): OR I/46 pt 2 p.993 Gordon's 6.30 p.m. reply: 'Army gun-boats can go to Suffolk. Cavalry can land at several points on the Nansemond ... pontoons ... necessary ... will leave word where the landing should be for Sumner's cavalry'",
+      "depth_note": "24 H of 24 code-word groups (\"summers\" = Sumner's and \"nancy\" (Nansemond) plain)"
     }
   ],
   "lanes": [

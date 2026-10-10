@@ -41,8 +41,8 @@ warofrebellion432unit	43.2	I	43	2	1 Sep-31 Dec 1864	ok	Y		title page, local cach
 warofrebellion44unit	44	I	44			ok	N	Y	title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.44"	single volume
 warofrebellion451unit	45.1	I	45	1	14 Nov 1864-23 Jan 1865	ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.45:1"	part not parsed; IA metadata 45:1
 warofrebellion452unit	45.2	I	45	2	1 Dec 1864-23 Jan 1865	ok	Y		title page, local cache gz; IA metadata volume field "v.45:2"	
-warofrebellion461unit	46.1	I	46	1		ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.46:1"	
-warofrebellion463unit	46.3	I	46	3	16 Mar-30 Jun 1865	ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.46:3"	
+warofrebellion461unit	46.1	I	46	1		ok	N	Y	title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.46:1"	fetched into the print-check cache by FV-L15a, 10 Oct 2026
+warofrebellion463unit	46.3	I	46	3	16 Mar-30 Jun 1865	ok	N	Y	title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.46:3"	fetched into the print-check cache by FV-L15a, 10 Oct 2026
 warofrebellion471unit	47.1	I	47	1		ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.47:1"	part not parsed; IA metadata 47:1
 warofrebellion481unit	48.1	I	48	1		ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.48:1"	
 warofrebellion482unit	48.2	I	48	2	1 Apr-30 Jun 1865	ok	N		title page, IA Range GET of _djvu.txt first 40 kB, 10 Oct 2026; IA metadata volume field "v.48:2"	
@@ -56,3 +56,4 @@ warofrebellion462unit	(in entries-mssEC19.tsv header; fm_prefilter.py)	I	46	2			
 warofrebellion511unit	(in entries-mssEC19.tsv header)					not-in-IA-search	N		not returned by advancedsearch identifier:warofrebellion* mediatype:texts (10 Oct 2026); out of the 32-49 range or not text items	not verified
 warofrebellionco0043unit_i5n6	(in entries-mssEC19.tsv header)					not-in-IA-search	N		not returned by advancedsearch identifier:warofrebellion* mediatype:texts (10 Oct 2026); out of the 32-49 range or not text items	not verified
 warofrebellionco0047unit_q8d9	(in entries-mssEC19.tsv header)					not-in-IA-search	N		not returned by advancedsearch identifier:warofrebellion* mediatype:texts (10 Oct 2026); out of the 32-49 range or not text items	not verified
+officialrecordso0011unse	ORN I/11	ORN I	11			ok	N	Y	IA metadata title "Official records of the Union and Confederate Navies" volume 11, 10 Oct 2026	fetched into the print-check cache by FV-L15a, 10 Oct 2026 (ORN I/12 officialrecordso0012unse: HTTP 500 twice, not cached)

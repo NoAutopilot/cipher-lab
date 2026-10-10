@@ -18068,3 +18068,209 @@ yoke" = "sig No sig". Jobs-file lesson (1): Grant Papers vol. 14 is on IA (`pape
 not. Requests: hdl.huntington.org 23 (17 CONTENTdm queries incl. control, 6 IIIF pages), all 200; www.googleapis.com 33; be-api 15 (3 answered
 502, one of them retried once, still 502); archive.org 1 (advancedsearch); www.loc.gov 9 (3 searches, 6 resource JSON, one of them by curl); tile.loc.gov
 6 (one by curl, five by script); chroniclingamerica.loc.gov 7 (all 403, host then left alone).
+
+## AUDIT (FV-L15a)
+
+Verifier FV-L15a (account 1, for LANE LEDGER-15), 10 Oct 2026, 12:51-13:5x UTC by `date -u`; a separate session from the readers FM65-D, FM65-E and
+FM65-F, not protecting their conclusions. Scope: **E555** (NOTES "## FM65-E"), **E536, E541** ("## FM65-D"), **E568, E576, E575** ("## FM65-F");
+ciphertext.txt, War Department Cipher No. 1, Fort Monroe ledger mssEC 25 = Huntington object 5952, Jan-Mar 1865. Nothing decoded beyond key look-ups in
+key.md. Key source for all six: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Intake gate (12:52 UTC): `eckert-1864:
+partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. **Step 0 is a non-test on mssEC 25** (Wave 2 RULING, STEP0-KEYCTL):
+nothing below is classed from step 0. Prior-work tool (`prior_work.py --item-spec ... --step-type audit`, all six): exit 4, the only specific holds two
+target-level live claims (FM-F1, FIX-L14) that name other rows (checked: not these); edition rows UNCHECKED-NET or CLEAR; for E575/E576 an edition LEAD in
+OR I/46 pt 2 (Gordon/Ord, 14-15 Mar) = the Gordon reply settled in s.2 below. G3 (`--reading <decoded body> --network --max-requests 12`, five non-N1
+entries): `fortmonroe/fv_l15a_g3.out`.
+Scripts: `fortmonroe/fv_l15a_hdl.py` (+ `.out`: 26 CONTENTdm full-text queries across all pointers incl. control -> 9678, 4 item infos, six page
+images at 2400 px to scratch), `fv_l15a_print.py` (+ `.out`: letters-only phrase grep over 187 cached print-check volumes incl. OR I/46 pts 1-3,
+I/47 pt 2, ORN I/11, Butler Corr. V; OR I/46 pts 1, 3 and ORN I/11 fetched into the cache this session and added to `print/or_volume_map.tsv`),
+`fv_l15a_net.py` (+ `.out`: Google Books on Grant Papers 13/14, IA be-api whole collection, loc.gov Chronicling America), `fv_l15a_gb2.py` (+ `.out`),
+`fv_l15a_loc.py` / `fv_l15a_loc.out` (the New-York Daily Tribune page).
+
+### 1. Duplicates, image
+- **Duplicate diff** (pointers 5879, 5887, 5904, 5923, 5931, 5933 and the subjects, against every `###` header in ciphertext*.txt): **E541 = E85**
+  (ciphertext.txt, "mssEC 18 p.277, pointer 9943 | 24 Jan 1865, to Col Webster ... signed H A Wise ... KEY NOT IN HAND ... reading not claimed"): the
+  holder transcription of 9943 is the same cipher text word for word ("Harriet Paradise Webster Vincent Animal Weaseler Nevada ... Saxon ordnance yard
+  answer sugar youth H A Wise chf Bureau"), i.e. Washington's sent copy of the telegram E541 records as received at Fort Monroe. One telegram, two IDs;
+  E541 carries the reading, E85 stays unclaimed (s.5). The other five: their pointers' other headers are other rows of the same page (E542 = 5887/1,
+  E574 = 5931/0, E577 = 5933/2); no other header names these subjects. E539 (FV-L15d) is the antecedent of E541's second message (the torpedo request),
+  not a duplicate.
+- **Image eye check this session, every graded line** (page images at 2400 px, read at 1000 px overview, the ruled pages being legible at that scale):
+  5904 row 1 (E555, header + 12 lines + Beckwith), 5879 (E536, header + 22 lines + Sheldon), 5923 row 1 (E568, header + 19 lines + Sheldon), 5887 row 0
+  (E541, header + 16 lines + Eckert), 5933 row 0 (E576, header + 8 lines + Sheldon), 5931 row 1 (E575, header + 12 lines + Beckwith). **The
+  transcription matches the image on all six**, including every token disputed in s.3: "Shelby Whiting had expressed" (5879), "harsh relays harrow
+  Operators", "pension hatchets" (5923), "paradise Webster vincent Animal", "saint lawrence", "nutmegs audit will take", "saxon Ordnance yard answer
+  Sugar" (5887), "the Black water canby pocketed", "without villager zebra Broad rusty" (5933), "Banks torch nancy moaned", "if summers panama comes"
+  (5931), "Glass ring alls forwarded", "promise Kisses pelton" (5904). E575's sender line reads "City Point, Mar. 15 - 1865" (Beckwith), E568's opens
+  "Hamlet February harrow pledge" = Wilmington, February 26.
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm** (p16003coll11, CISOSEARCHALL, suppressfulltext=1, all pointers; hdl token 13:05-13:08 UTC, control 9678 returned):
+- **E536: holder clear copy, pointers 7703-7704** (Page 45-46, the Washington clear book, January 1865): "1 PM Ft Monroe Va Jan 17. 1865. 1230 P. M for
+  CA Dana ---- The Tribune Special Corres. with the Wilmington Expedn sends the following to Hon Asst Secy Dana ---- fort Fisher is ours & with it all
+  the adjacent defences of New Inlet ... Gen Whiting had expressed the belief that it was impregnable ... our loss will not exceed six hundred & fifty
+  soldiers, marines & sailors ... Cols Bell & Pennypacker ... 7 30 AM Monday ... stunning report ... Signed E H. Hall". Every code group of E536 agrees
+  with it (s.3). Found by `pennypacker` (2 hits: 7704, 5879), `stunning` (7704, 5879, 9502 other), `Vanderbilt Fisher`, `New Inlet` (7703).
+- **E541: second cipher copy 9943** (= E85, s.1), not clear. Context, all clear, other telegrams: **8529** (Page 51, New York 22 Jan, to Charles Thomas
+  A.Q.M.: "the Nevada nine hundred men is partly loaded and will leave on tuesday for Ft Monroe with recruits"); 5886 (Lynch's 24 Jan request to Wise,
+  the antecedent of message 2); 9134/5815 (Wise, 3 Dec 1864: "The Stromboli is on her way to you with ... torpedo on board"); 7734 (Grant to Rucker,
+  28 Jan, transports at Fort Monroe, "telegraph Col Webster or Capt James").
+- **E555: second cipher copy 9957** (mssEC 18 Page 291, "Beckwith City Pt #3 Washn Feby 9th 1865 ... mule teams ... ambulances ... will sail fromere
+  ... are prepared and loaded"): the Washington-to-City Point copy in another cipher ("#3"), not clear. Context: 8569 (Blodgett, Annapolis, 4 Feb:
+  "three thousand men of Meagher's Division have arrived and are on board the ships"), 8572 (6 Feb, the Ariel sailed with 800, "all of Meaghers command
+  that have arrived"), 8561, 7738, 7753 (the Annapolis embarkation). `Meaghers` 16 hits, `mule teams Ambulances` 3 (9957, 5904, 8386 = Oct 1863),
+  `prepared and loaded` 5 (9957, 5904, three other years). **No clear copy.**
+- **E568:** `foreman diggers` 1 (own), `Climbers` 4 (own; three 1866-67 leaves), `shovels` 14, `More head City` 19, `OBrien Goldsboro` 1 (8818 = Aug
+  1865, other): **no copy.** Context 5922 (p.378, the same days: rolling stock for More head City, "The case is desperate"), 5940.
+- **E575, E576:** `moaned` 2 (5931 own; **5932** = Page 388, Gordon's reply in cipher, printed OR I/46 pt 2 p.993, below), `Boyle` 70 (only 5932 and
+  5933 in March 1865), `Emerick Gordon` 7 (5902 5905 5930 5932 5933 5935 5944: the Gordon strand, other telegrams), `Nansemond` 52, `Black water` 94,
+  `pontoons Suffolk` 3 (1862-63): **no copy of either.**
+**Print** (phrase grep and KWIC on the cached volumes, pages from OCR running heads unless "read" is said):
+- **E536 is in print: New-York Daily Tribune, 18 Jan 1865, p.1** (loc.gov Chronicling America, `"stunning report" Fisher magazine`, 17-31 Jan: 1 result;
+  page OCR read in `fv_l15a_loc.out`): "Special Dispatch to The N. Y. Tribune. Washington, Tuesday, Jan. 17 ... One of The Tribune's correspondents at
+  Fortress Monroe has just sent a dispatch to Assistant Secretary Dana, from which the following is an extract: Fortress Monroe, Jan. 17--12½ p.m.
+  Nothing could withstand the bravery of our troops ... Gen. Whiting had expressed the belief that it was impregnable. We have taken between 1,200 and
+  1,500 prisoners. Just as the Vanderbilt was leaving, at 7½ a.m. Monday, a bright flash ... stunning report ... quartered within the fort." (the
+  surrender sentence, the loss and the killed colonels are not in the extract). Porter's "Fort Fisher is ours" to Welles (OR I/46 pt 2; ORN I/11) and
+  Fulton's 6.30 p.m. telegram to Fox (holder 7705; ORN I/11 p.457) are different texts.
+- **E575: not printed; answered in print.** Gordon, Norfolk, 15 Mar 1865 6.30 p.m., to Ord (OR I/46 pt 2 **p.993**, read in the djvu text): "Army
+  gun-boats can go to Suffolk. Cavalry can land at several points on the Nansemond; gun-boats are not necessary to cover them anywhere on the Nansemond.
+  If intended to cross the Blackwater anywhere near Franklin or South Quay pontoons or a flat or raft are necessary. A man named Boyle ... I will not
+  come up until to morrow, and will leave word where the landing should be for Sumner's cavalry ... Colonel Lewis has about 500 cavalry" -- a reply to
+  E575 question by question. Antecedents: Ord to Gordon, 14 Mar 9 p.m., "How many cavalry can you spare to try it" (pp.978-979); Gordon 15 Mar 12 m.,
+  "I have no pontoons" (p.992). The holder's 5932 is that reply in cipher.
+- **E576: not printed; summarised in print.** Ord to Grant, 16 Mar 1865 8.30 a.m. (OR I/46 pt 3 **p.9**): "The Blackwater, a branch of the Chowan, I am
+  informed cannot be forded except near the Army of the Potomac. Cavalry would have to have a ferry or pontoons." -- Ord's summary of E576's "no place
+  that the Blackwater can be crossed unless near the Army of the Potomac without pontoons". Gordon's p.993 telegram (above) says Boyle is at City Point
+  and "I have sent for him": E576 ("I have just seen the guide Boyle") follows it. OR I/46 pt 3 index "Boyle, --. Mentioned 194, 542" = other men.
+- **E541: not printed; message 2 relayed in print.** ORN I/11 **p.634**: "[Telegram.] U. S. Ship St. Lawrence, Off Norfolk, Va., January 24, 1865. The
+  Bureau of Ordnance can not furnish the torpedoes required, and desires to be informed whether those on board the Stromboli or those captured from the
+  rebels will not answer. D. Lynch" to Commander W. A. Parker -- Lynch's paraphrase of Wise's answer, not its text. ORN I/11 p.151: Wise, 6 Dec 1864,
+  "A torpedo apparatus and [?]0 torpedoes [OCR "i?0"] have this day been forwarded from the ordnance yard here ... to the care of the senior officer at Fortress
+  Monroe" = E541's "those sent from the ordnance yard". Message 1 (Rucker to Webster): not located; OR I/47 pt 2 p.~20 the steamer Nevada is Stanton's
+  boat of 7 Jan (other).
+- **E555: not located.** OR I/47 pt 2 (`warofrebellion431unit`): p.192 Halleck, 31 Jan, "Send General Meagher's division to Annapolis to embark for Fort
+  Fisher"; **pp.354-355**, Rucker's A.Q.M., Washington, 8 Feb: "directed by Brig. Gen. D. H. Rucker ... to embark about 2,550 men of your command [2nd
+  Div., 23rd Corps] from Alexandria at 7 a.m. on the morning of the 10th" (= E555's "2,500 of these troops will sail from here tomorrow morning", sent
+  9 Feb); p.306 Halleck to Grant, 5 Feb, "One division of the Twenty-third Corps sailed yesterday ... over 2,000 of Meagher's division are off". OR I/46
+  pt 2 p.~496 prints **the sibling row 5904/0** (Halleck to Grant at Fort Monroe, 9 Feb 12.45 p.m., "General Rucker thinks you will have difficulty with
+  ice ... telegraph to Captain Blodgett"), and Grant Papers vol. 13 has it too (Google Books snippet, mnRjmhe3QLoC, "ALS (telegram sent), DNA, RG 107"):
+  E555 is the next row, and 7 snippet queries on its own words (`"Meagher" Rucker "ambulances"`, `"mule teams and wagons"`, `"will sail from here"
+  Rucker`, `"10,000 men" Schofield Rucker February`, `"staff officers" batteries ambulances Annapolis`, `Schofield Meagher "shipped from" Annapolis`,
+  `"prepared and loaded"`) return nothing from vols. 13-14. Not N1 on present evidence, and the place to look next is that note.
+- **E568: not located.** OR I/47 pt 2 p.~580: Schofield's headquarters "Wilmington, February 25, 1865" (he is there when O'Brien writes on the 26th);
+  no telegraph-construction telegram of O'Brien's in OR I/47 pts 2, ORN I/11, or by be-api (`"vices and straps"`: only later town reports).
+- Phrase grep (58 phrases, `fv_l15a_print.out`): other hits read and rejected -- numerals-only phrases (the letters-only grep drops digits: '306 mule
+  teams', '440 horses', '500 cavalry', '125 yards wide' match every volume), 'construction parties' (other years), 'come up to night' (other senders),
+  'Commander Lynch'/'St Lawrence' (ORN 9-11, other dates), 'without bridging' (OR I/33).
+- **Google Books** (Grant Papers 13/14, FIX-FM65's four volume ids; control `"six vessels" Oriental` hit vol. 13): 35 queries plus the control, 4-11 per entry: no
+  snippet from vols. 13-14 for any of the six (E555's sibling above aside). **IA be-api** whole collection (control `"Suwo Nada"` hit OR I/46 pt 2):
+  `"Bell and Pennypacker"` (Waddell 1887-88, Harbord, Fort Fisher histories: brigade commanders, other texts), `"Fort Fisher is ours" "stunning
+  report"` (a Civil War extra: Fulton's text), `"those on board the Stromboli"` (Crispi's memoirs: the Italian ship), `"guide Boyle"`, `"Broad Ford"
+  Blackwater Suffolk` (English places), `"vices and straps"`, `"how much water can your gunboats"` 0, `"torpedoes of the kind you name"` 0, `"bright
+  flash was seen to proceed"` 0, `"well sustained assault of four hours"` 0; two queries 502 (not retried). **Chronicling America:** E536 above; E555
+  (`"Meagher" "mule teams" ambulances Annapolis`, 8-20 Feb) 0; `Tribune "Fort Fisher is ours" Pennypacker Bell` -> Tribune 19 Jan p.1 (not read).
+- **Unreachable:** ORN I/12 (archive.org djvu 500 twice this session; be-api 0 / 502); Grant Papers 13-14 page by page (snippets only). Not searched:
+  NARA RG 92/107, JSTOR, HathiTrust full text, the Tribune of 19 Jan.
+
+### 3. Grade and reading corrections (reading.md as of this audit; key look-ups in key.md)
+- **E555:** no collision found. "Glass ring alls" is plain (probably "[Gen.] Ingalls", phonetic: I), "Kisses pelton" = Schofield's Corps, quitman =
+  Division, spartan/Spafford = Horse(s), pagans = Batteries, peru = As soon as, whelp = Tomorrow, palsy = Brigadier General: H. "promise" (1000) before
+  "Kisses" has no place in the sentence as read and "pledge for spit" ([6] for [Men]) is unexplained: **M** for both senses (tokens stand H by the key).
+  **H 51 + M 2 of 53.** The header's "Washington, Rucker via Beckwith" is right in substance: Washington sent it to City Point in another cipher (9957,
+  "#3"), and Beckwith forwarded it in No. 1 to Fort Monroe, where Grant was that day (5904/0 above).
+- **E536:** "Whiting" in "Shelby Whiting had expressed" is the plain name (Gen. W. H. C. Whiting; clear copy "Gen Whiting"), read by the decoder as
+  "[Report]ing": a misfire, not a code word. Every other code group agrees with the clear copy 7703-7704: Insanity = C. A. Dana, Hamlet roman =
+  Wilmington Expedition, rambling = following, Indigo = Secretary ("Asst Secy"), Saco = Fort, quacks = defences, watched = surrendered, whisky / whistle /
+  whinny = troops, Shelby = General, penny = 4, Rosetta = 9.30 PM, gallant = 15, plank waldo = two thousand, waxy and Abacus = South and North Carolina,
+  summer = impregnable, flood prolong / ghost publish = twelve / fifteen hundred, **"pledge ditto and mansion" = six hundred & fifty** (the readers' "6
+  ditto and 50", M, is settled: "ditto" stands for "hundred" here), squadrons = marines, Superb = killed, pandoras = Cols, Delia = 7.30 AM, vernon =
+  point, wick = report, saxon = from the, torch = of the, walnut = rebel, spit = men. **C 52 of 52** (reader H 53, less "Whiting").
+- **E568:** two collisions: "relays" (key Relay = Evacuate, p.20) in "harsh relays harrow Operators" = 20 relays, 20 operators, and "hatchets" (Hatchet =
+  Loring, p.15) in "pension hatchets" = 4 hatchets (the reader flagged it): both **plain** (telegraph stores). "Hamlet February harrow pledge" =
+  Wilmington, February 26: **the telegram is R. O'Brien's from Wilmington of 26 Feb**, sent on by Sheldon on 5 Mar (O'Brien signs it; "arrived here this
+  morning" is at Wilmington). King = Schofield, tarquin = Necessary, Camargo / Census = Goldsboro, fortune = Newbern, spit = men, numerals: H. The
+  header token "Washington" read [Volunteer] is header matter. **H 35 of 35** (reader 37, less 2 plain).
+- **E541:** three collisions and one doubtful word. "Webster" (= Signature, p.23) in "Harriet paradise Webster vincent Animal" is the plain name: 1 PM,
+  [for] Colonel Webster, Quartermaster, Monroe (R. C. Webster, Fort Monroe's chief Q.M., holder 8531, 7734) -- the reading opens a "{tail: [signed]"
+  there and so puts the whole of both messages inside the signature tail (a structure error, s.5). "saint" (= Force, p.20) in "ship saint lawrence" is
+  plain (the ordnance ship St. Lawrence, ORN). "Ordnance" (= After the, p.18) in "saxon Ordnance yard" is plain (ORN I/11 p.151 "the ordnance yard").
+  "audit" (= Rapidan, p.10) in "nutmegs audit will take months" cannot be Rapidan; "[available], as it will take months" is the likely sense (phonetic
+  "s audit", I): **M**. weaseler/wayworn = Steam(er), wafers = Recruits, appian/Animal = Monroe, vernon = Point, polkaer = Commander, famish = Norfolk,
+  wreathe = Telegraph, torch = of the, nutmegs = Available, walpole = Rebel, saxon = From the, Sugar = ?, plaster/plague = 5/6, peach = 2: H. **H 25 +
+  M 1 of 26** (reader 29, less 3 plain).
+- **E576:** "Black" (= City Point, p.11) in "the Black water canby pocketed" is plain (the Blackwater; Gordon's and Ord's printed telegrams), read as "[City
+  Point] water": a misfire. "villager" (unread in the reading, rendered [bridging] in the header) is Village (= Pontoon, p.22) + -er: "without
+  [pontoons]" -- Ord's printed summary says "ferry or pontoons": **M** (one token added to the count). Famish = Norfolk, Meriden = Ord, rape =
+  Expedition, pocketed = Crossed, oyster torch attica = Army of the Potomac, rusty = Ford, harsh plank = 22, spoons = Miles, Genoa = Suffolk, windsor =
+  River, plug prolong and harrow plaster = 100 and 25, patents = Bridges, palate = Brigadier General: H. **H 27 + M 1 of 28** (reader 28, less 1 plain,
+  plus villager).
+- **E575:** two collisions. "summers" (Summer = Impregnable, p.21) in "if summers panama comes to farmer" is the plain name: **Sumner's cavalry** (Gordon's
+  printed reply: "the landing ... for Sumner's cavalry"); "nancy" (Nancy = 8 PM time word) in "Banks torch nancy moaned" is plain: **the Nansemond**
+  ("on the Banks of the Nansemond"; Gordon: "Cavalry can land at several points on the Nansemond"). "woody party sacy [500] [cavalry] hefty carry
+  [pontoons] to [cross] to the not away" = "would a party, say 500 cavalry, have to carry pontoons to cross to the Nottoway?" (plain-phonetic, I);
+  "teacup" (draw?) unread, plain: I. Lucy Ghost = 5 PM 15th, Shelter = General, famish/farmer = Norfolk, sharons/shannons = Gunboats, Genoa = Suffolk,
+  vernon = Point, panama/pacific = Cavalry, tarquin = Necessary, plaster publish = 500, village = Pontoon, plum = Cross, sugar = ?, Meriden = Ord: H.
+  **H 24 of 24** (reader 26, less 2 plain).
+
+### 4. Classes (rule 10) and depth (rule 4a)
+
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E536 | **N1** (text known) | period | **D3** (C 52 of 52; external non-statistical: holder clear copy 7703-7704; New-York Daily Tribune 18 Jan 1865 p.1 extract) | plaintext already published: the Huntington's transcription of the Washington clear book, pointers 7703-7704, and the Tribune of 18 Jan 1865 (extract) |
+| E555 | **N3** (weak: the sibling row 5904/0 is printed in OR I/46 pt 2 and in a Grant Papers vol. 13 note; this row not found there by 7 snippet queries) | period | **D3** (H 51 + M 2 of 53; external: OR I/47 pt 2 pp.354-355 Rucker's order to embark about 2,550 men from Alexandria at 7 a.m. on the 10th; p.306 Halleck, 5 Feb; holder 8569, 8572 Meagher's division at Annapolis) | no prior plaintext or decipherment located |
+| E568 | **N3** | period | **D2** (H 35 of 35, the whole list of stores reads; external only that Schofield's headquarters were at Wilmington on 25 Feb, OR I/47 pt 2 p.~580: corroboration of place, not of content) | no prior plaintext or decipherment located |
+| E541 | **N3** (weak: message 2's substance is relayed in print, ORN I/11 p.634; = E85, the Washington copy, unread) | period | **D3** (H 25 + M 1 of 26; external: ORN I/11 p.634 Lynch's relay of Wise's answer, p.151 torpedoes forwarded from the ordnance yard; holder 8529 the Nevada leaving New York for Fort Monroe with recruits) | no prior plaintext or decipherment located |
+| E576 | **N3** (weak: its substance is summarised by Ord to Grant, OR I/46 pt 3 p.9) | period | **D3** (H 27 + M 1 of 28; external: OR I/46 pt 3 p.9 Ord, 16 Mar, "cannot be forded except near the Army of the Potomac ... ferry or pontoons"; OR I/46 pt 2 p.993 Gordon, Boyle sent for) | no prior plaintext or decipherment located |
+| E575 | **N3** (weak: answered point by point in Gordon's printed reply, OR I/46 pt 2 p.993) | period | **D3** (H 24 of 24; external: OR I/46 pt 2 p.993 Gordon's reply -- gunboats to Suffolk, cavalry landing on the Nansemond, pontoons, Sumner's cavalry, leave word where to land) | no prior plaintext or decipherment located |
+
+- Not N4 for any: ORN I/12 unreachable this session; Grant Papers vols. 13-14 searched by snippet only; NARA RG 92/107/108, JSTOR and HathiTrust full text
+  not searched; OR pages from OCR running heads.
+- **Safe sentences** (N3 rows; each ends "; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vol. V,
+  The Papers of Ulysses S. Grant vols. 13-14 by Google Books snippet search, Chronicling America or the Huntington's full-text search (searched 10 Oct
+  2026)"; read at grade H with War Department Cipher No. 1):
+  - E555: "on 9 Feb 1865 General Rucker's dispatch, sent from Washington through City Point to Fort Monroe, reported that Schofield's corps and about
+    5,000 of Meagher's division had shipped from Washington and Annapolis, that two divisions of the 23rd Corps (about 10,000 men) with their horses,
+    three or four batteries, 306 mule teams and wagons and 102 horse ambulances were still waiting, and that 2,500 of these troops would sail the next
+    morning."
+  - E568: "on 26 Feb 1865 R. O'Brien at Wilmington told Major Eckert, through Fort Monroe on 5 Mar, that General Schofield had directed a telegraph line
+    from Wilmington to Fort Fisher and double lines from Wilmington and from Morehead City to Goldsboro, and asked for two construction parties, 100 miles
+    of material, 20 relays, 20 operators and the men and tools listed, to be sent to New Bern."
+  - E541: "on 24 Jan 1865 Washington told Colonel Webster, quartermaster at Fort Monroe, through Sheldon, that the steamer Nevada would arrive in a day or
+    two with recruits and was to go on to City Point after landing them, with every other sea-going steamer reaching Monroe in the next five or six days
+    (signed Rucker), and told Commander Lynch of the St. Lawrence that the Bureau of Ordnance had no torpedoes of the kind he named, that they would take
+    months to prepare, and asked whether the rebel torpedoes on hand, those on the Stromboli or those sent from the ordnance yard would not answer (signed
+    H. A. Wise)."
+  - E576: "on 15 Mar 1865 General Gordon at Norfolk told General Ord that he had seen the guide Boyle, who would accompany any expedition; that the
+    Blackwater could not be crossed without pontoons except near the Army of the Potomac's lines; that Broad Ford, 22 miles from Suffolk, was the best
+    place, the river there being 125 yards wide; and that several bridges were standing on the Nottoway."
+  - E575: "on 15 Mar 1865 at 5 p.m. City Point asked General Gordon at Norfolk, for General Ord, how much water his gunboats could draw to Suffolk, whether
+    there was a point on the banks of the Nansemond where cavalry could land, covered by gunboats if necessary, and whether a party of about 500 cavalry
+    would have to carry pontoons to cross to the Nottoway; he could come up that night if Sumner's cavalry came to Norfolk."
+  - E536 (N1): "Re-read with War Department Cipher No. 1 (an independent re-decipherment; the text is in the Huntington's transcription of the Washington
+    clear book, pointers 7703-7704, and an extract was printed in the New-York Daily Tribune of 18 Jan 1865, p.1): on 17 Jan 1865 Fort Monroe sent
+    C. A. Dana the Tribune correspondent E. H. Hall's account of the fall of Fort Fisher."
+- **Unsafe** for all: "first", "new", "unpublished", "never printed"; for E536 any wording other than an independent re-decipherment of a known text.
+- **Depth sentences** (D2+): E555 "On 9 Feb 1865 Rucker reported 2,500 of the 23rd Corps troops waiting at Washington would sail the next morning, with
+  306 mule teams and 102 horse ambulances still to ship." E568 "On 26 Feb 1865 O'Brien asked Eckert for 20 relays, 20 operators and two construction
+  parties for Schofield's lines from Wilmington and Morehead City to Goldsboro." E541 "On 24 Jan 1865 Wise told Lynch the Bureau of Ordnance had no
+  torpedoes of the kind he named and asked whether those on the Stromboli would not answer." E576 "On 15 Mar 1865 Gordon reported the guide Boyle at
+  hand and Broad Ford, 22 miles from Suffolk, as the best crossing of the Blackwater." E575 "On 15 Mar 1865 City Point asked Gordon whether 500 cavalry
+  would need pontoons to cross to the Nottoway and whether cavalry could land on the Nansemond." E536 "On 17 Jan 1865 Sheldon forwarded to Dana the
+  Tribune's report that Fort Fisher had fallen with between 1,200 and 1,500 prisoners and Colonels Bell and Pennypacker killed."
+
+### 5. For a FIX job (not applied here)
+- **E536**: "[General] [Report]ing" -> "[General] Whiting" (plain); "[6] ditto and [50]" -> 650 (C, "ditto" = hundred); every code group C by the clear
+  copy 7703-7704; header: holder clear copy 7703-7704 and Tribune 18 Jan 1865 p.1; class N1 (not filed as unread under the mssEC 25 ruling's item i:
+  carry the class, keep the entry as an independent re-decipherment).
+- **E541**: the "{tail: [signed]" opens at "Webster"; Webster is the plain name (for Colonel Webster, Quartermaster, Monroe); the signature tails are
+  "yoke rucker" and "youth H a wise Chief Bureau T. T. Eckert". "[Force] lawrence" -> Saint Lawrence (plain); "[After the] yard" -> ordnance yard
+  (plain); "[Rapidan]" -> M ("as it"?). Header: = E85 (mssEC 18 p.277, pointer 9943, the Washington copy): mark E85 as the same telegram, reading in E541.
+- **E555**: header: Washington's copy in another cipher at mssEC 18 pointer 9957 (Page 291, "#3"); 5904/0 above it is printed (OR I/46 pt 2 p.~496;
+  Grant Papers vol. 13 note). "promise" and "pledge for spit" M.
+- **E568**: "[20] [Evacuate]'s" -> 20 relays (plain); "[4] [Loring]'s" -> 4 hatchets (plain); header: R. O'Brien, Wilmington, 26 Feb 1865, to Maj. T. T.
+  Eckert, forwarded by Sheldon from Fort Monroe 5 Mar (not "Sheldon to Eckert ... arrived here").
+- **E575**: "[Impregnable]'s [Cavalry]" -> Sumner's cavalry (plain name); "{time: 8 PM} moaned" -> Nansemond (plain, "nancy moaned"); header: from City
+  Point (S. H. Beckwith), 15 Mar 5 PM; Gordon's reply OR I/46 pt 2 p.993 and holder 5932.
+- **E576**: "[City Point] water" -> Blackwater (plain); "villager" -> [Pontoon]s (M); header "[bridging]" -> pontoons; Ord's summary OR I/46 pt 3 p.9.
+- Unfiled holder rows met: **5932** (Gordon's 6.30 p.m. reply in cipher, OR I/46 pt 2 p.993: N1 if ever filed) and **9957** row 1 (E555's Washington
+  copy in "#3"; reading it is an independent cross-check of E555).
