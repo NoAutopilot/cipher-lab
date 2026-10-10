@@ -5206,9 +5206,9 @@ Decoder grades over the five filed rows (key-no2.md): H 87, C 5, I 1, M 0; by ha
 - 9811/0 (4 Aug 1864, Halleck to Grant, declines to decide the Hunter / Sheridan questions): **step-0 hit, not filed**.
 - 9688/0 (16 Mar 1864 12.30 PM, Halleck to Grant, furloughs of veteran regiments from the Department of the South): **step-0 hit, not filed**.
 - 9850/2 (26 Sept 1864, Halleck to Canby, officer to investigate frauds at Fort Smith and the Indian Territory, Grant has given discretion against Kirby Smith and Price): **step-0 hit, not filed**.
-- 9729/1 N2-KA (3 May 1864 11 AM, Halleck to Grant at Culpeper, instructions telegraphed to Cairo, the President has said nothing): **not located** (OR I/36 pts 1-3 and I/34 pt 4 cached, letters-only phrases none; the date-window search returned only unrelated 2 May St Louis District orders; the volume with the matching 3-5 May correspondence of Halleck to Grant, OR I/36 pt 2, is cached and was searched).
-- 9697/0 N2-KB (7 Apr 1864 1 PM, Halleck to Grant, Burnside left unexpectedly, a regiment of heavy artillery for Harpers Ferry): **not located as this telegram**; the subject is attested in print (OR I/33 p.813, Sigel to the Adjutant General 6 Apr 8.30 p.m., 'regiment of heavy artillery now at Baltimore ... to Harpers Ferry'; OR I/33 date window 7 Apr with seven term hits, none the text) and in the holder (10215 Sigel's request, 10219 Grant 7 Apr 8 p.m.).
-- 9908/2 N2-KC (6 Dec 1864, Halleck to Grant, Sheridan and New Creek, Canby's Mobile and Ohio orders): **not located as this telegram**; the second sentence is word for word in the printed Halleck to Thomas of 6 Dec 1 p.m. (OR I/45 pt 2 p.71) and the New Creek question is the printed Stanton to Sheridan 9.30 p.m. (OR I/43 pt 2 p.746).
+- 9729/1 N2-KA (3 May 1864 11 AM, Halleck to Grant at Culpeper, instructions telegraphed to Cairo, the President has said nothing): **not located** (OR I/36 pts 1-3 and I/34 pt 4 cached, letters-only phrases none; the date-window search returned only unrelated 2 May St Louis District orders; the volume with the matching 3-5 May correspondence of Halleck to Grant, OR I/36 pt 2, is cached and was searched). **[Superseded 10 Oct 2026, FV-N2g / FIX-FM23: IN PRINT, OR I/34 pt 3 p.409 (Halleck to Grant, 3 May 1864 11 a.m.); N1; the reader's PH/date-window columns were misread.]**
+- 9697/0 N2-KB (7 Apr 1864 1 PM, Halleck to Grant, Burnside left unexpectedly, a regiment of heavy artillery for Harpers Ferry): **not located as this telegram**; the subject is attested in print (OR I/33 p.813, Sigel to the Adjutant General 6 Apr 8.30 p.m., 'regiment of heavy artillery now at Baltimore ... to Harpers Ferry'; OR I/33 date window 7 Apr with seven term hits, none the text) and in the holder (10215 Sigel's request, 10219 Grant 7 Apr 8 p.m.). **[Superseded 10 Oct 2026, FV-N2g / FIX-FM23: IN PRINT, OR I/33 p.815 (Halleck to Grant, 7 Apr 1864 1 p.m.); N1.]**
+- 9908/2 N2-KC (6 Dec 1864, Halleck to Grant, Sheridan and New Creek, Canby's Mobile and Ohio orders): **not located as this telegram**; the second sentence is word for word in the printed Halleck to Thomas of 6 Dec 1 p.m. (OR I/45 pt 2 p.71) and the New Creek question is the printed Stanton to Sheridan 9.30 p.m. (OR I/43 pt 2 p.746). **[Superseded 10 Oct 2026, FV-N2g / FIX-FM23: IN PRINT, The Papers of U. S. Grant vol. 13 (1985), note, and OR I/45 pt 2 p.71 for the second sentence; N1.]**
 - 9798/1 N2-KD (19 July 1864 4 PM, Halleck to Grant, another regiment of heavy artillery with General Wright): **in print** OR I/37 pt 2 (IA warofrebellion372unit) 'Washington, July 19, 1864 - 4 p. m.', word for word, C (also in OR I/40 pt 3, IA warofrebellion403unit, as a repeat); page number not read (heads 385 and 388 by OCR either side).
 - 9832/1 N2-KE (3 Sept 1864 9.30 PM, Welles to Capt. M. Smith at City Point, Onondaga and Atlanta retained, Saugus and Canonicus to go south): **in print** ORN ser. I vol. 10 (IA officialrecordso0010unse) p.418, word for word, C; the print's date reads September 5 in the OCR, the ledger 3 Sept (unresolved, M).
 - Step-0 skips (hits, nothing filed): 9848/0, 9811/0, 9688/0, 9850/2. Reads No. 1: none of the nine. Not filed otherwise: none.
@@ -5217,7 +5217,7 @@ Decoder grades over the five filed rows (key-no2.md): H 87, C 5, I 1, M 0; by ha
 
 ## Remaining gaps (N2R-6, 10 Oct 2026)
 Read so far: 9 of 9 rows handled (5 filed, 4 step-0 hits not filed); 2 of the 5 filed graded C against the print; 3 (N2-KA, KB, KC) not located as this telegram.
-- N2-KA, N2-KB, N2-KC (3 unlocated rows) - blocker: not-attempted; Grant Papers, OR ser. III, the Meigs / Ingalls papers and the Washington press of the day not searched, no be-api route; next: Grant Papers vol. 10-12 by date plus a phrase pass, ~$0.8
+- N2-KA, N2-KB, N2-KC (3 unlocated rows) - blocker: not-attempted; Grant Papers, OR ser. III, the Meigs / Ingalls papers and the Washington press of the day not searched, no be-api route; next: Grant Papers vol. 10-12 by date plus a phrase pass, ~$0.8 **[Closed 10 Oct 2026 by FV-N2g: all three in print (N1); FIX-FM23 carried it into ciphertext-no2.txt and status.json.]**
 - eye check of the leaves (holder transcription only; no leaf opened) for the five filed rows - blocker: not-attempted; cap; next: `tools/iiif_lines.py --image` crops of 9729, 9697, 9908, ~$0.6
 - N2-KD printed page number and N2-KE print date (September 3 or 5) - blocker: not-attempted; OCR heads only; next: IA page read of OR I/37 pt 2 and ORN I/10 p.418, ~$0.1
 - the four step-0 hits' (c) words (Imboden, Sheridan, Hunter, Canby, Kirby Smith, Price, Fort Smith) - blocker: not-attempted; they are a verifier's counted contribution under the ruling, not a reader's filing; next: a first verifier decides, ~$0.3
@@ -5641,3 +5641,40 @@ Worker HDR-NO9 (Sonnet 5.5). Two IIIF leaves at 2400 px (pointers 9845 = book p.
 | 9845/0 (p.179) | "11 A.M. To J. W. Wallack Indianapolis, Washn Sept 18th" | none | line 1 "Mohawk Francis Eighteenth to Governor Morton" -> Francis = 11 AM (No. 9, H, TIME page) | 11 AM | **No. 9**: Francis = 11 AM agrees with the header time (No. 1 gives 12, No. 2 12.30 AM). Still one time word; no label. Header names the addressee Wallack, not Gov. Morton (body address); sender not in header. Body on the leaf is the clerk's interlinear (code words left, plain words beside), so the leaf also carries the sense; "quarrel Sherman" / "quorum says quotation" visible, as NO9-L's misfit rows. |
 | 9862/1 (p.196, mid-page, below the J. W. Sampson entry "Julia for J W Garrett" of 7 Oct) | "Gen Wright San Fran. (Cal)", "6 P.M." , "Washn D.C. Oct. 7, 1864" | none ("(Cal)" in quotes is a place/station note) | line 1 "Ida Emily Octo 7 for Goor" -> Emily = 7 AM (No. 9) / 10 AM (No. 1, No. 2) | 6 P.M. | **none in hand**: no book gives 6 PM for Emily; header 6 P.M. against Emily 7 AM is a conflict, not a read. Body shows nugget, Camden, Kettle, Idaho, Quiver visible (unread as before). The entry above on the leaf (J. W. Sampson, "Julia" = 7 PM No. 9) is a different entry, not this row. |
 Correction to the table above: 9862/1 header time was recorded "none"; the leaf carries "6 P.M." (above the dateline). 9845/0's header time 11 AM stands. Crops/regeneration: `https://hdl.huntington.org/digital/iiif/p16003coll11/<pointer>/full/2400,/0/default.jpg` (not committed; scratch only).
+
+
+## FIX-FM23 (10 Oct 2026, account 1, for LANE LEDGER-12)
+
+Worker FIX-FM23, 08:2x UTC by `date -u`, offline (git only). Carries AUDIT.md s.5 of "(FV-N2g)" and "(FV-N1C-b)" and s.6 of "(FV-N1C-a)" into `ciphertext-no2.txt` / `ciphertext.txt` through the decoders' per-entry lines (`plain:`, `plain-at:`, `gloss:`, `variant:`, `merge:`, `graded:`, `cut-after:`) and `note:` lines; `reading*.md` only by `decode*.py --write`. No key row touched, N2-IC not touched, classes and depths are the verifiers' (all N1; D1 for the step-0 hits, D3 for the print-checked misses).
+
+| Entry | Change | Decoder before -> after |
+|---|---|---|
+| N2-KA | `plain: subject` (was [Protect]); `gloss: brayman=Brayman:C`; header [matters] -> [trans-Mississippi] matters (print), [name unresolved] -> General Brayman; N1, OR I/34 pt 3 p.409 | H 18, C 1, I 1 -> H 17, C 2, I 1 |
+| N2-KB | `gloss: manngo=General_Wilson:C pard=Baltimore:C`; header; N1, OR I/33 p.815 | H 23, C 1 -> H 23, C 3 |
+| N2-KC | `plain-at: repeated#2` (the second "repeated"; the first stays the code use); N1, Grant Papers 13 note, OR I/45 pt 2 p.71 | H 16, C 2 -> H 16, C 1 |
+| N2-JA | note only (N1, OR I/32 pt 2 p.432) | H 13 |
+| N2-JB | `plain: bailey desire rank`; note: the entry continues on pointer 9758 (ledger p.92, 15 lines) and is NOT filed (note only); N1, OR I/34 pt 4 p.304 | H 31 -> H 28 |
+| N2-JC | `plain: rations despatch`; `variant: elizabeth=Elizabeth:M` (time word 10.30 AM vs print 11.35 a.m.); address [Alexandria] vs print noted (M) | H 38, I 1 -> H 35, I 1, M 1 |
+| N2-JD | `plain: jackson weber despatches` | H 37, C 3, I 1 -> H 34, C 3, I 1 |
+| N2-JE | `graded: sligo:M` (print has "in the"; was [Killing] H) | H 49 -> H 48, M 1 |
+| N2-JF | `gloss: religious=operations:C`; `variant: mastiff=Mastiff:M` (reads Canby, print Hurlbut; KEY lane); `variant: jennie=Jennie:M` (time word 3 PM vs print 3.15 p.m.) | H 38, C 4, I 3 -> H 36, C 5, I 3, M 2 |
+| N2-JJ | `plain: collect despatch`; `variant: fanny=Fanny:M` (11 AM vs print 11.30 a.m.) | H 25, I 2 -> H 22, I 2, M 1 |
+| N2-KD | `plain: opinion`; page 384 (the readers' 385-388 was off) | H 14 -> H 13 |
+| N2-KE | note only (3 Sept, not 5 Sept; leaf pencil "No 2"); header "leaf eye-checked" | H 16, C 1 |
+| N2-IE | `plain: subject` (was [Protect]) | H 18 -> H 17 |
+| N2-IF | `plain: author` (was [Chattahoochee]ity); `variant: harriet=Harriet:M` (1.30 PM vs print 1.40 p.m.); date words "February 29, 1864" (C by print) in the note only (the {date: Feb 4700} tokens are left as decoded, M) | H 16, C 1 -> H 15, M 1 |
+| N2-II, N2-IJ | notes only (print pages OR I/40 pt 3 p.93 and I/37 pt 2 p.135; I/41 pt 4 p.337) | none |
+| E382 | `plain: person` (was [5]) | H 25 -> H 24 |
+| E388 | `cut-after: split#1` (the tail "No 5 NY" is the next entry's header) | H 30 (tail only) |
+| E390 | `plain: spring` (Springfield); `gloss: lehigh=Canby:C` (KEY-CANBY, a fifth print witness) | H 19, S 1 -> H 17, C 1, S 1 |
+| E391 | `plain: john valley`; `merge: koran+myrtle` + `gloss: koranmyrtle=Couch:C olive=enemy:C`; `variant: pagan=Pagan:M`; W2 stays "not located in print", body public in the holder transcription | H 20, C 1 -> H 9, C 5, M 3 |
+
+Header edits: the nine FV-N1C-b entries (JA-JF, JJ, KD, KE) "leaf not eye-checked" -> "leaf eye-checked at 2400 px, FV-N1C-b"; the four FV-N1C-a No. 2 entries (IE, IF, II, IJ) -> "FV-N1C-a"; E382/E388/E390/E391 headers already said "leaf image-read at 2400 px". KA/KB/KC leaves were not opened by FV-N2g, so their headers keep "leaf not eye-checked".
+
+Totals: decode.py "H 5983, C 84, I 25, M 41, S 18, U 10" -> **H 5969, C 89, I 25, M 44, S 18, U 10**; decode_no2.py "H 3550, C 128, I 119, M 11" -> **H 3531, C 130, I 119, M 17**; decode_no9.py unchanged (H 426, M 18). (Slips are removed from H; print-read values are C; time-word and Pagan/Mastiff/Sligo calls are M.)
+
+Not applied (the audits' own out-of-scope items): the E391 Dangers = Sullivan's, Buggy = Meigs, "Koran Myrtle"/"Olive"/Mastiff-vs-Canby and the "despatch"/"person"/"Camden" key-row pattern belong to the KEY lane (no key edit); the 9727 pencil working (N2-JF) is a lead; N2-JB's continuation on 9758 is noted, not filed; E388 "you may think best" (print) vs the ledger's "you think best" stays in the note; FV-N1C-a's s.5 "no SO / AUD2 row" and FV-N1C-b's "no status.json row" hold (nothing is N3+). HYPOTHESES.md "## KEY-CANBY" gains E390 as a fifth print witness (see below).
+
+Propagation (rule 10): status.json rows for N2-KA, KB, KC (added by FV-N2g) get the post-fix completeness / depth_note counts; `depth` and `depth_pct` are the verifier's and are not raised. No SECOND-OPINIONS-QUEUE.tsv row exists for any of the 17 entries (grep, none N3+). AUDIT.md was not edited (a verifier's file).
+
+Checks: `decode.py --write`, `decode_no2.py --write`, each then `--check` "reading ... is current"; `decode_no9.py --check` current; all exit 0.

@@ -13344,7 +13344,7 @@
       "line": "The Cipher No. 2 ledger copy reads, with the period key, to the telegram printed in OR ser. I vol. 34 pt 3 p.409.",
       "gap": "plain text known from OR ser. I vol. 34 pt 3 p.409; no novelty (N2R-6 filed it 'not located'; FV-N2g found it in print).",
       "depth": "D1",
-      "completeness": "20 code-word tokens (H 18, C 1, I 1); 'subject' misread as [Protect] (plain-word misread, FIX job)",
+      "completeness": "20 code-word tokens after FIX-FM23 (H 17, C 2, I 1); 'subject' now plain (was misread as [Protect]); BrayMan = General Brayman (C by print)",
       "phrases": [
         "Huntington mssEC 18 (obj 10074) p.69, pointer 9729, N2-KA"
       ],
@@ -13354,7 +13354,7 @@
       ],
       "depth_sentence": "Grant's trans-Mississippi instructions of late April 1864 went by telegraph to Cairo and down the river with General Brayman on 1 May.",
       "depth_check": "Wave 3 Step-0 ruling hit (0.567 vs shuffle p95 0.233), depth from the key-read words alone (Cairo, river, President, telegrams), all confirmed by OR I/34 pt 3 p.409 (D1)",
-      "depth_note": "20 code-word tokens (H 18, C 1, I 1); 'subject' misread as [Protect] (plain-word misread, FIX job)",
+      "depth_note": "20 code-word tokens after FIX-FM23 (H 17, C 2, I 1); 'subject' now plain (was misread as [Protect]); BrayMan = General Brayman (C by print)",
       "text": "known"
     },
     {
@@ -13386,7 +13386,7 @@
       "line": "The Cipher No. 2 ledger copy reads, with the period key, to the telegram printed in OR ser. I vol. 33 p.815.",
       "gap": "plain text known from OR ser. I vol. 33 p.815; no novelty (N2R-6 filed it 'not located'; FV-N2g found it in print).",
       "depth": "D3",
-      "completeness": "24 code-word tokens agreeing with the print (H 23, C 1); 'Manngo' = General Wilson and 'Pard' = Baltimore read by the print (C)",
+      "completeness": "26 code-word tokens after FIX-FM23 (H 23, C 3), all agreeing with the print; 'Manngo' = General Wilson and 'Pard' = Baltimore are now glossed C by print",
       "phrases": [
         "Huntington mssEC 18 (obj 10074) p.37, pointer 9697, N2-KB"
       ],
@@ -13396,7 +13396,7 @@
       ],
       "depth_sentence": "On 7 April 1864 Halleck put Sigel's request for a heavy-artillery regiment from Baltimore to Harpers Ferry to Grant, who ordered it that evening (holder 10219).",
       "depth_check": "code clause: [Sigel] asks that a [regiment] of [heavy] [artillery] be sent from Pard (= Baltimore) to garrison [Harpers Ferry]; external non-statistical: OR I/33 p.815",
-      "depth_note": "24 code-word tokens agreeing with the print (H 23, C 1); 'Manngo' = General Wilson and 'Pard' = Baltimore read by the print (C)",
+      "depth_note": "26 code-word tokens after FIX-FM23 (H 23, C 3), all agreeing with the print; 'Manngo' = General Wilson and 'Pard' = Baltimore are now glossed C by print",
       "text": "known"
     },
     {
@@ -13428,7 +13428,7 @@
       "line": "The Cipher No. 2 ledger copy reads, with the period key, to the telegram quoted in The Papers of Ulysses S. Grant vol. 13 (1985).",
       "gap": "plain text known from The Papers of Ulysses S. Grant vol. 13 (1985), note (Google Books mnRjmhe3QLoC, page not read); no novelty (N2R-6 filed it 'not located'; FV-N2g found it in print).",
       "depth": "D3",
-      "completeness": "18 code-word tokens (H 16, C 2); the second 'repeated' misread as [Order]ed (plain-word misread, FIX job); 17 agree with the print",
+      "completeness": "17 code-word tokens after FIX-FM23 (H 16, C 1), all agreeing with the print; the second 'repeated' is now plain (was misread as [Order]ed)",
       "phrases": [
         "Huntington mssEC 18 (obj 10074) p.248, pointer 9908, N2-KC"
       ],
@@ -13438,7 +13438,7 @@
       ],
       "depth_sentence": "On 6 December 1864 Halleck told Grant that Sheridan had been ordered to report on the New Creek disaster and that Canby's orders against the Mobile and Ohio had been repeated.",
       "depth_check": "code clause: [Movements] asked for by [Thomas] against [Mobile] & [Ohio] [Rail-road] were ordered by [Canby] on the [25] & [26] ult.; external non-statistical: Papers of U. S. Grant vol. 13 note (ALS telegram sent, DNA RG 107)",
-      "depth_note": "18 code-word tokens (H 16, C 2); the second 'repeated' misread as [Order]ed (plain-word misread, FIX job); 17 agree with the print",
+      "depth_note": "17 code-word tokens after FIX-FM23 (H 16, C 1), all agreeing with the print; the second 'repeated' is now plain (was misread as [Order]ed)",
       "text": "known"
     }
   ],
