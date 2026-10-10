@@ -1,0 +1,214 @@
+leaf	vol	file	tokid	crop	settled	passA	passB	as4	val4	as9	val9	kind
+0494	694/08	f0494_08/ciphertext.tsv	T019	c0494L_L02	9	4?	4	4	x	9	i	single
+0494	694/08	f0494_08/ciphertext.tsv	T021	c0494L_L02	59	54?	59	54	u	59	t	single
+0494	694/08	f0494_08/ciphertext.tsv	T023	c0494L_L02	14	14	14	14	n	19		single
+0494	694/08	f0494_08/ciphertext.tsv	T025	c0494L_L02	91	91	91	41	k	91	st	single
+0494	694/08	f0494_08/ciphertext.tsv	T035	c0494L_L05	54	54?	54	54	u	59	t	single
+0494	694/08	f0494_08/ciphertext.tsv	T055	c0494L_L05	29	29	29	24	q	29	s	single
+0494	694/08	f0494_08/ciphertext.tsv	T057	c0494L_L06	48	48	48	48	g	98	NAME:ilgen	single
+0494	694/08	f0494_08/ciphertext.tsv	T058	c0494L_L06	59	5999? 35?	59? 99? 35	54	u	59	t	single
+0494	694/08	f0494_08/ciphertext.tsv	T059	c0494L_L06	99	5999? 35?	59? 99? 35					multi
+0494	694/08	f0494_08/ciphertext.tsv	T062	c0494L_L07	42	42	42	42	l	92	y	single
+0494	694/08	f0494_08/ciphertext.tsv	T063	c0494L_L07	54	54	54	54	u	59	t	single
+0494	694/08	f0494_08/ciphertext.tsv	T067	c0494L_L07	14	14	14	14	n	19		single
+0494	694/08	f0494_08/ciphertext.tsv	T071	c0494L_L07	96	96? 27?	96 24	46	i	96	le	single
+0494	694/08	f0494_08/ciphertext.tsv	T072	c0494L_L07	29	96? 27?	96 24	24	q	29	s	single
+0494	694/08	f0494_08/ciphertext.tsv	T073	c0494L_L07	74	74	74	74	sch	79	la	single
+0494	694/08	f0494_08/ciphertext.tsv	T075	c0494L_L07	34	5? 34?	~34?	34	p	39	i	single
+0494	694/08	f0494_08/ciphertext.tsv	T078	c0494L_L07	46	46	46	46	i	96	le	single
+0494	694/08	f0494_08/ciphertext.tsv	T085	c0494L_L09	39	34	39	34	p	39	i	single
+0494	694/08	f0494_08/ciphertext.tsv	T087	c0494L_L09	24	24	24	24	q	29	s	single
+0494	694/08	f0494_08/ciphertext.tsv	T090	c0494L_L09	44	44	44					multi
+0494	694/08	f0494_08/ciphertext.tsv	T091	c0494L_L09	19	14	19	14	n	19		single
+0494	694/08	f0494_08/ciphertext.tsv	T093	c0494L_L09	4	4	4	4	x	9	i	single
+0494	694/08	f0494_08/ciphertext.tsv	T095	c0494L_L09	90	90	90	40	b	90	c,ch	single
+0494	694/08	f0494_08/ciphertext.tsv	T097	c0494L_L09	29	29	29	24	q	29	s	single
+0494	694/08	f0494_08/ciphertext.tsv	T102	c0494L_L09	392	392	392	342		392		single
+0494	694/08	f0494_08/ciphertext.tsv	T105	c0494L_L10	34	120? 34	20 31?	34	p	39	i	single
+0494	694/08	f0494_08/ciphertext.tsv	T106	c0494L_L10	14	14	14	14	n	19		single
+0494	694/08	f0494_08/ciphertext.tsv	T113	c0494L_L10	69	69	69	64	c	69	w	single
+0494	694/08	f0494_08/ciphertext.tsv	T118	c0494L_L10	9	9?	3?	4	x	9	i	single
+0494	694/08	f0494_08/ciphertext.tsv	T120	c0494L_L14	349	349	349					multi
+0494	694/08	f0494_08/ciphertext.tsv	T121	c0494L_L14	4	4	4	4	x	9	i	single
+0494	694/08	f0494_08/ciphertext.tsv	T123	c0494L_L14	14	14	14	14	n	19		single
+0494	694/08	f0494_08/ciphertext.tsv	T133	c0494L_L14	14	14	14	14	n	19		single
+0494	694/08	f0494_08/ciphertext.tsv	T134	c0494L_L15	59	54?	54	54	u	59	t	single
+0494	694/08	f0494_08/ciphertext.tsv	T141	c0494L_L15	14	14	14	14	n	19		single
+0494	694/08	f0494_08/ciphertext.tsv	T144	c0494L_L15	341	341	341	341	NAME:guerre	391		single
+0494	694/08	f0494_08/ciphertext.tsv	T146	c0494L_L15	97	97	97	47	h	97	la	single
+0494	694/08	f0494_08/ciphertext.tsv	T149	c0494L_L15	54	54	54	54	u	59	t	single
+0494	694/08	f0494_08/ciphertext.tsv	T151	c0494L_L15	54	54	54	54	u	59	t	single
+0494	694/08	f0494_08/ciphertext.tsv	T154	c0494L_L15	14	14	14	14	n	19		single
+0494	694/08	f0494_08/ciphertext.tsv	T157	c0494L_L16	34	34	34	34	p	39	i	single
+0494	694/08	f0494_08/ciphertext.tsv	T159	c0494L_L16	46	46	46	46	i	96	le	single
+0494	694/08	f0494_08/ciphertext.tsv	T164	c0494L_L16	481	481?	481	481		981		single
+0494	694/08	f0494_08/ciphertext.tsv	T169	c0494L_L16	146	~146	146?	146		196		single
+0494	694/08	f0494_08/ciphertext.tsv	T175	c0494L_L17	348	348?	348	348		398		single
+0494	694/08	f0494_08/ciphertext.tsv	T183	c0494L_L17	39	39	39	34	p	39	i	single
+0494	694/08	f0494_08/ciphertext.tsv	T185	c0494L_L17	14	14	14	14	n	19		single
+0494	694/08	f0494_08/ciphertext.tsv	T190	c0494L_L17	44	44	44					multi
+0494	694/08	f0494_08/ciphertext.tsv	T193	c0494L_L17	43	43	43	43	m	93	f,ff	single
+0494	694/08	f0494_08/ciphertext.tsv	T195	c0494L_L17	39	39	39	34	p	39	i	single
+0494	694/08	f0494_08/ciphertext.tsv	T196	c0494L_L17	29	29	29	24	q	29	s	single
+0494	694/08	f0494_08/ciphertext.tsv	T197	c0494L_L17	42	42	42	42	l	92	y	single
+0494	694/08	f0494_08/ciphertext.tsv	T198	c0494L_L17	54	54	54	54	u	59	t	single
+0494	694/08	f0494_08/ciphertext.tsv	T204	c0494L_L18	390	340 ~400	390 ~700	340		390	NAME:stettin	single
+0494	694/08	f0494_08/ciphertext.tsv	T206	c0494L_L18	487	487	487	487		987		single
+0494	694/08	f0494_08/ciphertext.tsv	T207	c0494L_L18	64	64	64	64	c	69	w	single
+0494	694/08	f0494_08/ciphertext.tsv	T209	c0494L_L18	14	14	14	14	n	19		single
+0494	694/08	f0494_08/ciphertext.tsv	T213	c0494L_L18	9	9	9	4	x	9	i	single
+0494	694/08	f0494_08/ciphertext.tsv	T218	c0494L_L18	349	349	349					multi
+0494	694/08	f0494_08/ciphertext.tsv	T219	c0494R_L02	44	44	44					multi
+0494	694/08	f0494_08/ciphertext.tsv	T223	c0494R_L03	34	34	34	34	p	39	i	single
+0494	694/08	f0494_08/ciphertext.tsv	T224	c0494R_L03	340	340	340	340		390	NAME:stettin	single
+0494	694/08	f0494_08/ciphertext.tsv	T225	c0494R_L03	475	475	475	475		975		single
+0494	694/08	f0494_08/ciphertext.tsv	T226	c0494R_L03	410	410	410	410		910		single
+0494	694/08	f0494_08/ciphertext.tsv	T230	c0494R_L08	40	40	40	40	b	90	c,ch	single
+0494	694/08	f0494_08/ciphertext.tsv	T231	c0494R_L08	540	540	540	540		590		single
+0494	694/08	f0494_08/ciphertext.tsv	T232	c0494R_L09	295	295	295	245		295		single
+0494	694/08	f0494_08/ciphertext.tsv	T233	c0494R_L10	403	403	403	403		903		single
+0494	694/08	f0494_08/ciphertext.tsv	T234	c0494R_L10	431	431	431	431		931		single
+0494	694/08	f0494_08/ciphertext.tsv	T235	c0494R_L10	384	384	384	384		389		single
+0494	694/08	f0494_08/ciphertext.tsv	T236	c0494R_L10	499	444 449	499 419					multi
+0494	694/08	f0494_08/ciphertext.tsv	T237	c0494R_L10	419	444 449	499 419					multi
+0494	694/08	f0494_08/ciphertext.tsv	T240	c0494R_L10	548	548	548	548		598		single
+0494	694/08	f0494_08/ciphertext.tsv	T241	c0494R_L10	408	408	408	408		908		single
+0474	694/08	f0474_08/ciphertext.tsv	T004	c0474L_L02	44	44	44					multi
+0474	694/08	f0474_08/ciphertext.tsv	T005	c0474L_L02	9	9?	9?	4	x	9	i	single
+0474	694/08	f0474_08/ciphertext.tsv	T007	c0474L_L02	39	39	39	34	p	39	i	single
+0474	694/08	f0474_08/ciphertext.tsv	T012	c0474L_L02	14	14	14	14	n	19		single
+0474	694/08	f0474_08/ciphertext.tsv	T017	c0474L_L02	34	34	34	34	p	39	i	single
+0474	694/08	f0474_08/ciphertext.tsv	T026	c0474R_L01	39	39	39	34	p	39	i	single
+0474	694/08	f0474_08/ciphertext.tsv	T038	c0474R_L01	246	46?	246?	246		296		single
+0474	694/08	f0474_08/ciphertext.tsv	T040	c0474R_L01	24	2477310?	-	24	q	29	s	single
+0474	694/08	f0474_08/ciphertext.tsv	T051	c0474R_L02	24	24	24	24	q	29	s	single
+0474	694/08	f0474_08/ciphertext.tsv	T052	c0474R_L02	54	54	54	54	u	59	t	single
+0474	694/08	f0474_08/ciphertext.tsv	T054	c0474R_L02	29	29	29	24	q	29	s	single
+0474	694/08	f0474_08/ciphertext.tsv	T059	c0474R_L03	24	-	9?	24	q	29	s	single
+0474	694/08	f0474_08/ciphertext.tsv	T061	c0474R_L03	4	-	4	4	x	9	i	single
+0474	694/08	f0474_08/ciphertext.tsv	T063	c0474R_L04	24	24	24	24	q	29	s	single
+0474	694/08	f0474_08/ciphertext.tsv	T066	c0474R_L06	34	34	34	34	p	39	i	single
+0474	694/08	f0474_08/ciphertext.tsv	T070	c0474R_L06	14	14?	14?	14	n	19		single
+0474	694/08	f0474_08/ciphertext.tsv	T072	c0474R_L07	39	39?	37	34	p	39	i	single
+0474	694/08	f0474_08/ciphertext.tsv	T074	c0474R_L07	29	29	29	24	q	29	s	single
+0474	694/08	f0474_08/ciphertext.tsv	T081	c0474R_L07	39	39	39	34	p	39	i	single
+0474	694/08	f0474_08/ciphertext.tsv	T094	c0474R_L07	43	43	43	43	m	93	f,ff	single
+0474	694/08	f0474_08/ciphertext.tsv	T096	c0474R_L08	14	14?	14?	14	n	19		single
+0474	694/08	f0474_08/ciphertext.tsv	T103	c0474R_L08	54	54	54	54	u	59	t	single
+0474	694/08	f0474_08/ciphertext.tsv	T105	c0474R_L08	42	42	42	42	l	92	y	single
+0474	694/08	f0474_08/ciphertext.tsv	T107	c0474R_L08	54	54	54	54	u	59	t	single
+0474	694/08	f0474_08/ciphertext.tsv	T115	c0474R_L10	14	14	14	14	n	19		single
+0474	694/08	f0474_08/ciphertext.tsv	T119	c0474R_L10	34	34	34	34	p	39	i	single
+0474	694/08	f0474_08/ciphertext.tsv	T120	c0474R_L10	29	29	29	24	q	29	s	single
+0474	694/08	f0474_08/ciphertext.tsv	T123	c0474R_L10	14	14	14	14	n	19		single
+0474	694/08	f0474_08/ciphertext.tsv	T128	c0474R_L10	44	44	44					multi
+0474	694/08	f0474_08/ciphertext.tsv	T129	c0474R_L10	46	46	46	46	i	96	le	single
+0474	694/08	f0474_08/ciphertext.tsv	T131	c0474R_L10	89	89	89	84	sch	89	s,tz,z	single
+0089	694/08	f0089_08/ciphertext.tsv	T002	c0089L01_L01	9	(4?)	9	4	x	9	i	single
+0089	694/08	f0089_08/ciphertext.tsv	T020	c0089R01_L01	84	84? 4?	894?	84	sch	89	s,tz,z	single
+0089	694/08	f0089_08/ciphertext.tsv	T021	c0089R02_L01	45	45	45	45	k	95	te	single
+0089	694/08	f0089_08/ciphertext.tsv	T025	c0089R02_L01	59	59?	5 9?	54	u	59	t	single
+0089	694/08	f0089_08/ciphertext.tsv	T027	c0089R03_L01	44	44	44					multi
+0136	694/08	f0136_08/ciphertext.tsv	T023	c0136R01_L01	14	14	14	14	n	19		single
+0136	694/08	f0136_08/ciphertext.tsv	T026	c0136R01_L01	44	44	44					multi
+0136	694/08	f0136_08/ciphertext.tsv	T029	c0136R02_L01	43	43	43	43	m	93	f,ff	single
+0136	694/08	f0136_08/ciphertext.tsv	T032	c0136R02_L01	48	48	48	48	g	98	NAME:ilgen	single
+0136	694/08	f0136_08/ciphertext.tsv	T037	c0136R02_L01	199	199	199					multi
+0136	694/08	f0136_08/ciphertext.tsv	T041	c0136R03b_L01	43	43	43	43	m	93	f,ff	single
+0136	694/08	f0136_08/ciphertext.tsv	T044	c0136R05_L01	43	43	43	43	m	93	f,ff	single
+0136	694/08	f0136_08/ciphertext.tsv	T048	c0136R06_L01	43	43	43	43	m	93	f,ff	single
+0136	694/08	f0136_08/ciphertext.tsv	T055	c0136R08_L01	43	43	43	43	m	93	f,ff	single
+0136	694/08	f0136_08/ciphertext.tsv	T060	c0136R10_L01	259	259	259	254		259	NAME:ilgen	single
+0136	694/08	f0136_08/ciphertext.tsv	T064	c0136R13_L01	259	259	25	254		259	NAME:ilgen	single
+0309	694/08	f0309_08/ciphertext.tsv	T001	c0309R01_L01	198	198	198	148		198	NAME:stanislas	single
+0309	694/08	f0309_08/ciphertext.tsv	T006	c0309R02_L01	44	44	44					multi
+0309	694/08	f0309_08/ciphertext.tsv	T008	c0309R03_L01	198	198	198	148		198	NAME:stanislas	single
+0309	694/08	f0309_08/ciphertext.tsv	T010	c0309R04_L01	259	259	259	254		259	NAME:ilgen	single
+0309	694/08	f0309_08/ciphertext.tsv	T011	c0309R05_L01	46	46	46	46	i	96	le	single
+0309	694/08	f0309_08/ciphertext.tsv	T014	c0309R05_L01	44	44	44					multi
+0309	694/08	f0309_08/ciphertext.tsv	T017	c0309R05_L01	29	29	29	24	q	29	s	single
+0309	694/08	f0309_08/ciphertext.tsv	T020	c0309R06_L01	9			4	x	9	i	single
+0309	694/08	f0309_08/ciphertext.tsv	T032	c0309R08_L01	29	29	29	24	q	29	s	single
+0309	694/08	f0309_08/ciphertext.tsv	T035	c0309R09_L01	9	4		4	x	9	i	single
+0309	694/08	f0309_08/ciphertext.tsv	T036	c0309R10_L01	198	198	198	148		198	NAME:stanislas	single
+0309	694/08	f0309_08/ciphertext.tsv	T043	c0309R13_L01	198	198	198	148		198	NAME:stanislas	single
+0309	694/08	f0309_08/ciphertext.tsv	T047	c0309R15_L01	198	198	198	148		198	NAME:stanislas	single
+0309	694/08	f0309_08/ciphertext.tsv	T048	c0309R16_L01	9	4		4	x	9	i	single
+0312	694/08	f0312_08/ciphertext.tsv	T007	c0312A02_L01	198	198	198	148		198	NAME:stanislas	single
+0312	694/08	f0312_08/ciphertext.tsv	T014	c0312A07_L01	198	198	198	148		198	NAME:stanislas	single
+0312	694/08	f0312_08/ciphertext.tsv	T016	c0312A09_L01	198	198	198	148		198	NAME:stanislas	single
+0312	694/08	f0312_08/ciphertext.tsv	T018	c0312A11_L01	198	198	198	148		198	NAME:stanislas	single
+0312	694/08	f0312_08/ciphertext.tsv	T027	c0312A14_L01	284	284	284	284	NAME:comte	289		single
+0312	694/08	f0312_08/ciphertext.tsv	T028	c0312A14_L01	47	47	47	47	h	97	la	single
+0312	694/08	f0312_08/ciphertext.tsv	T036	c0312A17_L01	191	191	191	141		191	NAME:stenbock	single
+0312	694/08	f0312_08/ciphertext.tsv	T037	c0312A18_L01	191	191	191	141		191	NAME:stenbock	single
+0312	694/08	f0312_08/ciphertext.tsv	T038	c0312A19_L01	198	198	198	148		198	NAME:stanislas	single
+0312	694/08	f0312_08/ciphertext.tsv	T042	c0312A21_L01	198	198	198	148		198	NAME:stanislas	single
+0312	694/08	f0312_08/ciphertext.tsv	T044	c0312A23_L01	198	198	198	148		198	NAME:stanislas	single
+0312	694/08	f0312_08/ciphertext.tsv	T046	c0312A25_L01	198	198	198	148		198	NAME:stanislas	single
+0314	694/08	f0314_08/ciphertext.tsv	T001	c0314R01_L01	198	198	198	148		198	NAME:stanislas	single
+0314	694/08	f0314_08/ciphertext.tsv	T010	c0314R04_L01	198	198	198	148		198	NAME:stanislas	single
+0314	694/08	f0314_08/ciphertext.tsv	T011	c0314R05_L01	292	292	292	242		292	NAME:pologne	single
+0314	694/08	f0314_08/ciphertext.tsv	T019	c0314R07_L01	14	14	14	14	n	19		single
+0314	694/08	f0314_08/ciphertext.tsv	T023	c0314R09_L01	292	292	292	242		292	NAME:pologne	single
+0314	694/08	f0314_08/ciphertext.tsv	T024	c0314R10_L01	198	198	198	148		198	NAME:stanislas	single
+0314	694/08	f0314_08/ciphertext.tsv	T031	c0314R11_L01	42	42	42	42	l	92	y	single
+0314	694/08	f0314_08/ciphertext.tsv	T032	c0314R11_L01	14	14	14	14	n	19		single
+0314	694/08	f0314_08/ciphertext.tsv	T036	c0314R14_L01	292	292	292	242		292	NAME:pologne	single
+0314	694/08	f0314_08/ciphertext.tsv	T037	c0314R15_L01	292	292	292	242		292	NAME:pologne	single
+0314	694/08	f0314_08/ciphertext.tsv	T039	c0314R15_L01	190	150	190	140		190	NAME:stanislas	single
+0314	694/08	f0314_08/ciphertext.tsv	T040	c0314R16_L01	292	292	292	242		292	NAME:pologne	single
+0314	694/08	f0314_08/ciphertext.tsv	T043	c0314R19_L01	292	292	292	242		292	NAME:pologne	single
+0314	694/08	f0314_08/ciphertext.tsv	T044	c0314R20_L01	198	198	198	148		198	NAME:stanislas	single
+0317	694/08	f0317_08/ciphertext.tsv	T026	c0317R06_L01	292	242	242	242		292	NAME:pologne	single
+0490	694/08	f0490_08/ciphertext.tsv	T003	c0490R01_L01	9			4	x	9	i	single
+0490	694/08	f0490_08/ciphertext.tsv	T004	c0490R01_L01	4			4	x	9	i	single
+0490	694/08	f0490_08/ciphertext.tsv	T008	c0490R01_L01	29			24	q	29	s	single
+0490	694/08	f0490_08/ciphertext.tsv	T010	c0490R01_L01	39			34	p	39	i	single
+0490	694/08	f0490_08/ciphertext.tsv	T014	c0490R01_L01	44							multi
+0490	694/08	f0490_08/ciphertext.tsv	T016	c0490R01_L01	34			34	p	39	i	single
+0490	694/08	f0490_08/ciphertext.tsv	T022	c0490R01_L01	44							multi
+0490	694/08	f0490_08/ciphertext.tsv	T024	c0490R01_L01	46			46	i	96	le	single
+0490	694/08	f0490_08/ciphertext.tsv	T029	c0490R02_L01	54			54	u	59	t	single
+0490	694/08	f0490_08/ciphertext.tsv	T034	c0490R02_L01	46			46	i	96	le	single
+0490	694/08	f0490_08/ciphertext.tsv	T046	c0490R05_L01	74			74	sch	79	la	single
+0490	694/08	f0490_08/ciphertext.tsv	T048	c0490R05_L01	9			4	x	9	i	single
+0490	694/08	f0490_08/ciphertext.tsv	T052	c0490R05_L01	29			24	q	29	s	single
+0490	694/08	f0490_08/ciphertext.tsv	T053	c0490R06_L01	48			48	g	98	NAME:ilgen	single
+0490	694/08	f0490_08/ciphertext.tsv	T068	c0490R11_L01	41			41	k	91	st	single
+0490	694/08	f0490_08/ciphertext.tsv	T069	c0490R11_L01	9			4	x	9	i	single
+0490	694/08	f0490_08/ciphertext.tsv	T074	c0490R11_L01	24			24	q	29	s	single
+0490	694/08	f0490_08/ciphertext.tsv	T083	c0490R12_L01	9			4	x	9	i	single
+0490	694/08	f0490_08/ciphertext.tsv	T087	c0490R12_L01	9			4	x	9	i	single
+0490	694/08	f0490_08/ciphertext.tsv	T090	c0490R12_L01	14			14	n	19		single
+0490	694/08	f0490_08/ciphertext.tsv	T094	c0490R13_L01	54			54	u	59	t	single
+0490	694/08	f0490_08/ciphertext.tsv	T109	c0490R14_L01	54			54	u	59	t	single
+0490	694/08	f0490_08/ciphertext.tsv	T112	c0490R14_L01	4			4	x	9	i	single
+0490	694/08	f0490_08/ciphertext.tsv	T117	c0490R15_L01	14			14	n	19		single
+0490	694/08	f0490_08/ciphertext.tsv	T127	c0490R16_L01	54			54	u	59	t	single
+0490	694/08	f0490_08/ciphertext.tsv	T131	c0490R16_L01	97			47	h	97	la	single
+0490	694/08	f0490_08/ciphertext.tsv	T133	c0490R17_L01	46			46	i	96	le	single
+0490	694/08	f0490_08/ciphertext.tsv	T138	c0490R17_L01	39			34	p	39	i	single
+0490	694/08	f0490_08/ciphertext.tsv	T144	c0490R17_L01	46			46	i	96	le	single
+0490	694/08	f0490_08/ciphertext.tsv	T147	c0490R17_L01	29			24	q	29	s	single
+0490L	694/08	f0490_08/ciphertext_L.tsv	U005	c0490L02_L01	59			54	u	59	t	single
+0490L	694/08	f0490_08/ciphertext_L.tsv	U012	c0490L02_L01	9			4	x	9	i	single
+0490L	694/08	f0490_08/ciphertext_L.tsv	U015	c0490L02_L01	14			14	n	19		single
+0490L	694/08	f0490_08/ciphertext_L.tsv	U022	c0490L04_L01	44							multi
+0490L	694/08	f0490_08/ciphertext_L.tsv	U024	c0490L04_L01	9			4	x	9	i	single
+0490L	694/08	f0490_08/ciphertext_L.tsv	U029	c0490L04_L01	91			41	k	91	st	single
+0490L	694/08	f0490_08/ciphertext_L.tsv	U031	c0490L04_L01	9			4	x	9	i	single
+0490L	694/08	f0490_08/ciphertext_L.tsv	U040	c0490L05_L01	14			14	n	19		single
+0490L	694/08	f0490_08/ciphertext_L.tsv	U047	c0490L07_L01	96			46	i	96	le	single
+0490L	694/08	f0490_08/ciphertext_L.tsv	U048	c0490L07_L01	34			34	p	39	i	single
+0490L	694/08	f0490_08/ciphertext_L.tsv	U057	c0490G01_L01	29			24	q	29	s	single
+0490L	694/08	f0490_08/ciphertext_L.tsv	U060	c0490G01_L01	9			4	x	9	i	single
+0490L	694/08	f0490_08/ciphertext_L.tsv	U062	c0490G01_L01	4			4	x	9	i	single
+0490L	694/08	f0490_08/ciphertext_L.tsv	U065	c0490G01_L01	59			54	u	59	t	single
+0490L	694/08	f0490_08/ciphertext_L.tsv	U066	c0490G01_L01	39			34	p	39	i	single
+0490L	694/08	f0490_08/ciphertext_L.tsv	U071	c0490G01_L01	29			24	q	29	s	single
+0490L	694/08	f0490_08/ciphertext_L.tsv	U077	c0490G01_L01	39			34	p	39	i	single
+0490L	694/08	f0490_08/ciphertext_L.tsv	U078	c0490G01_L01	29			24	q	29	s	single
+0490L	694/08	f0490_08/ciphertext_L.tsv	U081	c0490G01_L01	44							multi
+0490L	694/08	f0490_08/ciphertext_L.tsv	U083	c0490G01_L01	39			34	p	39	i	single
+0490L	694/08	f0490_08/ciphertext_L.tsv	U089	c0490G01_L01	59			54	u	59	t	single

@@ -1,0 +1,78 @@
+leaf	vol	tokid	crop	settled	known	witness	evidence
+0089	694/08	T021	c0089R02_L01	45	4	G:G11	Krauts letter=k span_agree=1.00
+0089	694/08	T025	c0089R02_L01	59	9	G:G11	Krauts letter=t span_agree=1.00
+0136	694/08	T023	c0136R01_L01	14	4	G:G05	Fr. d'Anhalt letter=n span_agree=0.86
+0136	694/08	T029	c0136R02_L01	43	4	G:G06	la marquaue letter=m span_agree=0.62
+0136	694/08	T044	c0136R05_L01	43	4	G:G09a	la m. letter=m span_agree=1.00
+0309	694/08	T001	c0309R01_L01	198	9	G1:G1-R01;G2:G2-R01	Stan: name | Stan: name
+0309	694/08	T008	c0309R03_L01	198	9	G1:G1-R03;G2:G2-R03	Stan: name | Stan: name
+0309	694/08	T017	c0309R05_L01	29	9	G1:G1-R05;G2:G2-R05	Jablonski: letter=s span_agree=1.00 | Jablonski: letter=s span_agree=1.00
+0309	694/08	T032	c0309R08_L01	29	9	G1:G1-R08;G2:G2-R08	Razrozewski letter=s span_agree=0.90 | Razrozewski letter=s span_agree=0.90
+0309	694/08	T036	c0309R10_L01	198	9	G1:G1-R10;G2:G2-R10	Stan: name | Stan: name
+0309	694/08	T043	c0309R13_L01	198	9	G1:G1-R13;G2:G2-R13	Stan: name | Stan: name
+0309	694/08	T047	c0309R15_L01	198	9	G1:G1-R15;G2:G2-R15	Stan: name | Stan: name
+0312	694/08	T007	c0312A02_L01	198	9	G1:G1-A02;G2:G2-A02	Stan: name | Stan: name
+0312	694/08	T016	c0312A09_L01	198	9	G1:G1-A09;G2:G2-A09	Stan: name | Stan: name
+0312	694/08	T018	c0312A11_L01	198	9	G1:G1-A11;G2:G2-A11	Stan: name | Stan: name
+0312	694/08	T028	c0312A14_L01	47	4	G1:G1-A14;G2:G2-A14	le Comte Horn letter=h span_agree=1.00 | le Conte Horn letter=h span_agree=1.00
+0312	694/08	T036	c0312A17_L01	191	9	G1:G1-A17;G2:G2-A17	Steinbock name | Steinbock name
+0312	694/08	T037	c0312A18_L01	191	9	G1:G1-A18;G2:G2-A18	Steinbock name | Steinbock name
+0312	694/08	T038	c0312A19_L01	198	9	G1:G1-A19;G2:G2-A19	Stan: name | Stan: name
+0312	694/08	T042	c0312A21_L01	198	9	G1:G1-A21;G2:G2-A21	Stan name | Stan name
+0312	694/08	T044	c0312A23_L01	198	9	G1:G1-A23;G2:G2-A23	Stan: name | Stan: name
+0312	694/08	T046	c0312A25_L01	198	9	G1:G1-A25;G2:G2-A25	Stan: name | Stan: name
+0314	694/08	T011	c0314R05_L01	292	9	G1:G1-R05;G2:G2-R05	Pol. name | Pol. name
+0314	694/08	T019	c0314R07_L01	14	4	G1:G1-R07;G2:G2-R07	la Couronn letter=n span_agree=0.88 | la couronne letter=n span_agree=1.00
+0314	694/08	T023	c0314R09_L01	292	9	G1:G1-R09;G2:G2-R09	Pol. name | Pol. name
+0314	694/08	T032	c0314R11_L01	14	4	G1:G1-R11;G2:G2-R11	la Couronne letter=n span_agree=1.00 | la Couronne letter=n span_agree=1.00
+0314	694/08	T044	c0314R20_L01	198	9	G1:G1-R20	Stan: name
+0474	694/08	T005	c0474L_L02	9	9	G:G01	la Religion de notre Ennemy Royal [?] letter=i span_agree=1.00
+0474	694/08	T007	c0474L_L02	39	9	G:G01	la Religion de notre Ennemy Royal [?] letter=i span_agree=1.00
+0474	694/08	T026	c0474R_L01	39	9	G:G02	de sortir de la galere ou nous sommes em letter=i span_agree=0.94
+0474	694/08	T061	c0474R_L03	4	9	G:G03	une Religion [?] letter=i span_agree=0.80
+0474	694/08	T066	c0474R_L06	34	4	G:G05	le Pr: Royal [?] Lon[?] letter=p span_agree=0.75
+0474	694/08	T070	c0474R_L06	14	4	G:G05	le Pr: Royal [?] Lon[?] letter=n span_agree=0.75
+0474	694/08	T072	c0474R_L07	39	9	G:G06	fils dans les sentimens de nôtre charman letter=i span_agree=0.85
+0474	694/08	T074	c0474R_L07	29	9	G:G06	fils dans les sentimens de nôtre charman letter=s span_agree=0.85
+0474	694/08	T081	c0474R_L07	39	9	G:G06	fils dans les sentimens de nôtre charman letter=i span_agree=0.85
+0474	694/08	T094	c0474R_L07	43	4	G:G06	fils dans les sentimens de nôtre charman letter=m span_agree=0.85
+0474	694/08	T115	c0474R_L10	14	4	G:G08	Ennemis et de nos alliez letter=n span_agree=1.00
+0474	694/08	T119	c0474R_L10	34	9	G:G08	Ennemis et de nos alliez letter=i span_agree=1.00
+0474	694/08	T120	c0474R_L10	29	9	G:G08	Ennemis et de nos alliez letter=s span_agree=1.00
+0474	694/08	T123	c0474R_L10	14	4	G:G08	Ennemis et de nos alliez letter=n span_agree=1.00
+0490	694/08	T003	c0490R01_L01	9	9	G:G01	la paix sans tiers, l'epee a la gloire e letter=i span_agree=0.90
+0490	694/08	T004	c0490R01_L01	4	4	G:G01	la paix sans tiers, l'epee a la gloire e letter=x span_agree=0.90
+0490	694/08	T008	c0490R01_L01	29	9	G:G01	la paix sans tiers, l'epee a la gloire e letter=s span_agree=0.90
+0490	694/08	T016	c0490R01_L01	34	4	G:G01	la paix sans tiers, l'epee a la gloire e letter=p span_agree=0.90
+0490	694/08	T024	c0490R01_L01	46	4	G:G01	la paix sans tiers, l'epee a la gloire e letter=i span_agree=0.90
+0490	694/08	T029	c0490R02_L01	54	4	G:G01	la paix sans tiers, l'epee a la gloire e letter=u span_agree=0.90
+0490	694/08	T034	c0490R02_L01	46	4	G:G01	la paix sans tiers, l'epee a la gloire e letter=i span_agree=0.90
+0490	694/08	T046	c0490R05_L01	74	4	G:G05	Blackscheiffen letter=sch span_agree=0.60
+0490	694/08	T048	c0490R05_L01	9	9	G:G05	Blackscheiffen letter=i span_agree=0.60
+0490	694/08	T053	c0490R06_L01	48	4	G:G06	Grumbkow letter=g span_agree=0.67
+0490	694/08	T068	c0490R11_L01	41	9	G:G11	la postining que le oy letter=st span_agree=0.67
+0490	694/08	T074	c0490R11_L01	24	4	G:G11	la postining que le oy letter=q span_agree=0.67
+0490	694/08	T083	c0490R12_L01	9	9	G:G12a	Roy de Pruss voulois faire letter=i span_agree=0.67
+0490	694/08	T087	c0490R12_L01	9	9	G:G12a	Roy de Pruss voulois faire letter=i span_agree=0.67
+0490	694/08	T094	c0490R13_L01	54	9	G:G13	une tete letter=t span_agree=0.60
+0490	694/08	T109	c0490R14_L01	54	9	G:G14	en sigmere fut traine en mecklenbourg qu letter=t span_agree=0.77
+0490	694/08	T112	c0490R14_L01	4	9	G:G14	en sigmere fut traine en mecklenbourg qu letter=i span_agree=0.77
+0490	694/08	T138	c0490R17_L01	39	9	G:G17	mouvroit de faie a Roy letter=i span_agree=0.75
+0490	694/08	T144	c0490R17_L01	46	4	G:G17	mouvroit de faie a Roy letter=i span_agree=0.75
+0490L	694/08	U005	c0490L02_L01	59	9	G:LG02	une treve à trepadorff letter=t span_agree=0.82
+0490L	694/08	U040	c0490L05_L01	14	4	G:LG05b	du nord letter=n span_agree=0.67
+0494	694/08	T019	c0494L_L02	9	9	G:G02	le Danois mancheroient à notre service letter=i span_agree=0.85
+0494	694/08	T021	c0494L_L02	59	9	G:G02	le Danois mancheroient à notre service letter=t span_agree=0.85
+0494	694/08	T035	c0494L_L05	54	9	G:G04	Détaché letter=t span_agree=1.00
+0494	694/08	T085	c0494L_L09	39	9	G:G08	Savoir quelque chose à la Reine d'Anglet letter=i span_agree=0.82
+0494	694/08	T087	c0494L_L09	24	4	G:G08	Savoir quelque chose à la Reine d'Anglet letter=q span_agree=0.82
+0494	694/08	T095	c0494L_L09	90	9	G:G08	Savoir quelque chose à la Reine d'Anglet letter=ch span_agree=0.82
+0494	694/08	T097	c0494L_L09	29	9	G:G08	Savoir quelque chose à la Reine d'Anglet letter=s span_agree=0.82
+0494	694/08	T106	c0494L_L10	14	4	G:G09	en chaque Witwort letter=n span_agree=0.67
+0494	694/08	T123	c0494L_L14	14	4	G:G10	le Roy ne donne confidemment letter=n span_agree=0.75
+0494	694/08	T133	c0494L_L14	14	4	G:G10	le Roy ne donne confidemment letter=n span_agree=0.75
+0494	694/08	T149	c0494L_L15	54	9	G:G11	la Reine d'Angleterre touchant letter=t span_agree=0.67
+0494	694/08	T151	c0494L_L15	54	4	G:G11	la Reine d'Angleterre touchant letter=u span_agree=0.67
+0494	694/08	T154	c0494L_L15	14	4	G:G11	la Reine d'Angleterre touchant letter=n span_agree=0.67
+0494	694/08	T157	c0494L_L16	34	4	G:G12	le Prince son fils la Reine ne fera rien letter=p span_agree=0.67
+0494	694/08	T159	c0494L_L16	46	4	G:G12	le Prince son fils la Reine ne fera rien letter=i span_agree=0.67
