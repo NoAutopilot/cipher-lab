@@ -112,3 +112,26 @@ account 1, for LANE LEDGER-17)"; update FM-UND's Remaining gaps lines to "done (
 Held for wave 3: FV-L17b on FM-S65B's filings + E622 (with head) E623 E624, sized when FM-S65B posts done.
 
 (17:21 UTC 10 Oct by date -u: wave 2 spawned with source_url: FV-L17a session_01J7yoXmAxN65SLSbfnCXPus, FIX-L17b session_01SoM9HipRUetCFV6coErchv, FM-UND2 session_01JtRM4ojs8yDrQtzZKVqypd.)
+
+---
+
+# Wave 3 (written 10 Oct 2026 17:5x UTC by date -u; lane ~20.3 workers + ~3 orchestrator of 60)
+By get_session: FM-S65B 3.50 (E589-E594 filed; 5896/1 clear copy 8561 + OR I/47 pt 2 p.213, 5914/2 Grant Papers 14; be-api checks for E590 E592 E593 and the
+Grant Papers 14 sweep not run, 502/503/429), FV-L17a 5.40 (E582 N1 OR I/47 pt 2 p.18, E587 N1 OR I/46 pt 2 p.198, E585 N3 D3, E581 N3 D2, E583 E586 D1;
+AUD2-LEDGER17-1 queued for E585 E581), FIX-L17b 1.31 (nine entries), FM-UND2 2.31 (E622 head joined, list in print OR I/33 p.915, relay not located; E624 =
+5658/0 tel 2, thin). FM-S65B's flag (clear copy 8561 covers E550) is already on file: E550 N1 by 8561 since FV-L15m.
+
+## FV-L17b, FV-L17c (Opus 5.5, first verifiers, separate from every reader; FV-L17b cap $8, box 120 min; FV-L17c cap $6, box 100 min)
+Exactly "## FV-L17a" (Wave 2), with FV-L17a's lesson: Grant Papers vol. 13 DOES reach Jan 1865 (FM-S65A said it ends Dec 1864) -- run it by Google Books API
+for every 1865 entry. Read the reader's NOTES section first, including its shuffled-key control lines and its Remaining gaps (re-run what it could not).
+- FV-L17b (FM-S65B's six, NOTES "## FM-S65B"), by H count: E589 E590 E591 E592 E593 E594 (order by reading.md "Code-word tokens"); FM-S65B's unrun be-api checks
+  for E590 E592 E593 and the Grant Papers 14 sweep first. AUDIT.md "## AUDIT (FV-L17b)". AUD2 row `AUD2-LEDGER17-2` on N3+ D2+.
+- FV-L17c (FM-UND / FM-UND2, NOTES "## FM-UND", "## FM-UND2"): E622 (Apr 1864, long: the vessel list is printed OR I/33 p.915 -- decide whether the printed
+  list makes the entry N1/N2 or only a part of it, and diff the numerals), E623 (5656/0 tel 1, May 1864, Butler Corr. IV and OR I/36 by date), E624 (thin: D0/D1,
+  spend little). 1864 sources: OR ser. I parts in print/or_volume_map.tsv (OR-CACHE2 put vols 32-49 on disk), Butler Corr. IV, Plum. AUDIT.md "## AUDIT
+  (FV-L17c)". AUD2 row `AUD2-LEDGER17-3` on N3+ D2+.
+Both: WORK-QUEUE rows tagged account-1, Opus 5.5, cap 2.5 per entry, box 30 per entry + 30 (fetch first; next free number if taken); name them in ROOM for the
+orchestrator (owner account). Never hold one host's token at the same time as each other. Stop starting a new entry at 80% of cap and name the rest.
+
+Held for wave 4: FIX-L17c (Sonnet, ~1.5, no network) on s.5 of FV-L17a, FV-L17b, FV-L17c -- including the unfile/N1 header notes for E582 E587 and the
+not-filed recommendation for E583 E586 (RULING iii) -- for entries not under a live AUD2 row.
