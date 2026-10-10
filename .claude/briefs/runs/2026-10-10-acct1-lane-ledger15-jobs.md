@@ -125,3 +125,5 @@ Exactly "## FV-L15n" above (FV-MS18p method: the holder clear copy's own transcr
 the derived reading block, leaf eye-check, step 0 information only) on CLEAR-SWEEP's hits: E542 (7722 p.64), E548 (7741 p.83), E550 (8561 p.83), E562 (7787
 p.129), E465 (4788 p.347), E543 (OR I/46 pt 2 p.259), E571 (Grant Papers 14, find the page). N1 where it holds (substance-only -> N2), status.json/SO per rule 10
 only if a row exists. A hit that does not hold goes back to the NONE list (name it). AUDIT.md "## AUDIT (FV-L15m)". hdl under the token (<= 20 requests).
+
+(14:17 UTC 10 Oct by date -u: wave 3 spawned with source_url: FIX-L15 session_01WETYJhqKQffHKdwHeShNqp, FV-L15m session_01CCv9izMcestJ4EPXNAykKG.)
