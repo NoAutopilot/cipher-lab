@@ -987,7 +987,7 @@ Beckwith City Pt Wash DC Oct 10. 64 [Monday] {time: 11 AM} [Lieut Gen U.S. Grant
 
 Code-word tokens: H 13.
 
-**N2-GA | Page 214 | 9874 | mssEC 18 (obj 10074, pointer 9874; printed page 208), 22 Oct 1864 Washington (ledger 12.30 PM; cipher time word 11 AM), R. R. McCaine (operator), to Col. J. W. Forsyth, Chief of Staff, signed B. W. Brice, Acting Paymaster General: paymasters leave here Monday morning the 24th with funds for the 19th Army Corps; sufficient escort wanted at Martinsburg (N2R-2; row 9874/1; holder transcription, leaf not eye-checked)**
+**N2-GA | Page 214 | 9874 | mssEC 18 (obj 10074, pointer 9874; printed page 208), 22 Oct 1864 Washington (cipher time word 11 AM; no hour in the ledger header), R. R. McCaine (operator), to Col. J. W. Forsyth, Chief of Staff, signed B. W. Brice, Acting Paymaster General: paymasters leave here Monday morning the 24th with funds for the 19th Army Corps; sufficient escort wanted at Martinsburg (N2R-2; row 9874/1; image-read at 2400 px, own entry; ledger label 'No 2' above the page number)**
 
 [Washington] [October] [22] {time: 11 AM} for [Colonel] J. W. ForSyth Chief of [Staff] [.] Pay mast hers will leave here [Monday] morning [24] inst with funds for pay ment [Of the] [19] [Army] [Corps] and others [.] Please have sufficient east court at [Martinsburg] for their protection  {tail: [signed] B W Brin Acting Pray mestn [General] many men many minds ( No 1 ) 1230 Pm}
 
@@ -999,7 +999,7 @@ Code-word tokens: H 19.
 
 Code-word tokens: H 19.
 
-**N2-GC | Page 253 | 9913 | mssEC 18 (obj 10074, pointer 9913; printed page 247), 10 Dec 1864 Washington (ledger 5 PM; cipher time word 12 noon), R. R. McCaine (operator), signed B. W. Brice, Acting Paymaster General: paymasters ready to go to pay the troops unpaid to 31 August; asks to be notified by telegram in cipher when paymasters may be sent to Relay House; the addressee decodes 'Sheridan P H' (M) (N2R-2; row 9913/0; holder transcription, leaf not eye-checked)**
+**N2-GC | Page 253 | 9913 | mssEC 18 (obj 10074, pointer 9913; printed page 247), 10 Dec 1864 Washington (cipher time word 12 noon; no hour in the ledger header), R. R. McCaine (operator), signed B. W. Brice, Acting Paymaster General: paymasters ready to go to pay the troops unpaid to 31 August; asks to be notified by telegram in cipher when paymasters may be sent to Relay House; the addressee decodes 'Sheridan P H' (M) (N2R-2; row 9913/0; image-read at 2400 px, own entry)**
 
 {time: 12 noon AM} [10] [Sheridan P H] [.] Pay masters ready togoto for pay ment of your [Troops]'s unpaid to [August] [31] [.] Under the [Secretary of War]'s [Order] of Pharoah [2] I mustache you for safe [Guard (-ed, -ing)] from [Effect (-ed, -ing) [#]] house [.] Please have me notified by [telegram] in [Cipher] whenny Pay masters maybe sent to [Effect (-ed, -ing) [#]] house  {tail: [signed] B W Brice No 1 5 PM}
 
@@ -1011,7 +1011,7 @@ SH Beckwith [Washington] [July] [24] {time: 12 noon AM} For [Maj Genl U S Grant]
 
 Code-word tokens: H 21, C 2, I 1.
 
-**N2-GE | Page 256 | 9916 | mssEC 18 (obj 10074, pointer 9916; printed page 250), 16 Dec 1864 Washington (ledger 1.30 PM), Fuller at New Orleans (operator), to Maj. Gen. Canby, signed Halleck: the arrival of the (decoded) 'Savannah' makes it unnecessary to keep supplies and troops to meet him on the Gulf coast; the Quartermaster General has ordered the supplies in vessels at Pensacola(?) to Hilton Head; the others at your disposal (N2R-2; row 9916/1; holder transcription, leaf not eye-checked)**
+**N2-GE | Page 256 | 9916 | mssEC 18 (obj 10074, pointer 9916; printed page 250), 16 Dec 1864 Washington (ledger 1.30 PM), Fuller at New Orleans (operator), to Maj. Gen. Canby, signed Halleck: the arrival of the (decoded) 'Savannah' makes it unnecessary to keep supplies and troops to meet him on the Gulf coast; the Quartermaster General has ordered the supplies in vessels at Pensacola(?) to Hilton Head; the others at your disposal (N2R-2; row 9916/1; image-read at 2400 px, own entry)**
 
 [Friday] [16] [Canby Ed R S] The arrival of flora's pern at [Savannah] renders it unnecessary that you should keep supplies & [Troops]'s to meet him on the Gulf coast ---- The [Quarter[?] Master General] has ordered the supplies in vessels at Pen say cooler to Hilton Head ---- The others will be at your disposal  {tail: [signed] [H W Halleck] {time: 1.30 PM}}
 
