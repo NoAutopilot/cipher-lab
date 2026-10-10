@@ -1,0 +1,143 @@
+X1 tokens=35 no1=17(0.49) no2=16(0.46) no9=9(0.26)
+  no1: H14 C0 I0 M0
+    {time: 4.30 PM} for [Brigadier General] Robt Allen [Quartermaster] [Louisville] [.] The [Secretary of War] directs that you with draw from [Colonel] Ferry chief [Quartermaster]'s [Depot] of [Louisville] all [Government] funds whether cash notes or certificates or credits therefor now under his control [.] This to be done immediately  {tail: [signed] [Qr Master Genl U.S.] fine day}
+  no2: H15 C0 I0 M0
+    {time: 4.30 PM} for [Ammunition] Robt [1] [Rifle Pits] [Independence] [1000] The [Delaware] directs that you with draw from [Casualties] Ferry chief [Rations]'s [Department] of [Independence] all [General] funds whether cash notes or certificates or credits therefor now under his control [Sunday] This to be done immediately [Surrounding] [Secretary of Treasury] fine day
+  no9: H9 C0 I0 M0
+    {time: 8 PM} for [Yorktown] Robt Allen [Quartermaster] Dolphin [Movement] The Brutus directs that you with draw from Pandora Ferry chief [Quartermaster]'s [Joe Johnston] of Dragon all [Mortars] funds whether cash notes or certificates or credits therefor now under his control [Movement] This to be done immediately [Killed] Bender fine day
+  no1shuf: H13 C0 I0 M1
+    {time: 4.30 PM} for [Offensive] Robt Allen [Coosa] [Maj Gen Joseph Hooker] [.] The [Movement] directs that you with draw from [Cleveland] Ferry chief [Chickamauga]'s [Fork] of [Arrest (-ed, -ing)] all [Holston] funds whether cash notes or certificates or credits therefor now under his control [.] This to be done immediately  {tail: [signed] [(Assistant) Secretary of the Navy, the tail "Asst Brenton Fox" = Asst. Sec. G. V. Fox] fine day}
+  no2shuf: H15 C0 I0 M0
+    {time: 4.30 PM} for [Defeat (-ed, -ing)] Robt [1] [Fredericksburg] [Walker] [1000] The [Drove in our Pickets] directs that you with draw from [Banks N P] Ferry chief [Steele Fdk]'s [Invest (-ed, -ing)] of [Lynchburg] all [Parole] funds whether cash notes or certificates or credits therefor now under his control [Carter S.P.] This to be done immediately [Tuckers Station] [Ammunition] fine day
+X2 tokens=27 no1=14(0.52) no2=12(0.44) no9=4(0.15)
+  no1: H14 C0 I0 M0
+    [Washington] {time: 10 AM} [6] To [Command = Er (-ed, -ing)]ing Officer at [Memphis] [.] You will imm'y end ever to cut the [Mobile] and [Ohio] [Rail Road] so that Hudsons [Army] can not be supplied by that route [.] Call on [Maj Gen J. J. Reynolds] for as sistems if necessary  {tail: [signed] [General-in-Chief] yours truly}
+  no2: H12 C0 I0 M0
+    [Maj Gen B. F. Butler] {time: 10 AM} Plague To Polkaing Officer at [Larkinsville] [1000] You will imm'y end ever to cut the [Louisa C H] and [Coosa]  {tail: [signed] so that [13]s [Wallace Lew] can not be supplied by that route unity Call on [McPherson J B] for as sistems if necessary [100] [Ewell] yours truly}
+  no9: H4 C0 I0 M0
+    Growl {time: 7 AM} Plague To Polkaing Officer at Drum [Movement] You will imm'y end ever to cut the Europe and Abner [Defend] so that Hudsons Opal can not be supplied by that route unity Call on Monster for as sistems if necessary [Troops] Italy yours truly
+  no1shuf: H14 C0 I0 M0
+    [Gen J. M. Palmer] {time: 10 AM} [6] To [Maj Gen W. T. Sherman]ing Officer at [Summerville] [.] You will imm'y end ever to cut the [In the] and [From the] [Magruder] so that Hudsons [Maj Gen Jno A. Logan] can not be supplied by that route [.] Call on [Convoy] for as sistems if necessary  {tail: [signed] [Right] yours truly}
+  no2shuf: H12 C0 I0 M0
+    [Aquia Creek] {time: 10 AM} Plague To Polkaing Officer at [-] [1000] You will imm'y end ever to cut the [Potomac] and [Army]  {tail: [signed] so that [13]s [Stevenson] can not be supplied by that route unity Call on [General] for as sistems if necessary [100] [Early] yours truly}
+X3 tokens=25 no1=16(0.64) no2=14(0.56) no9=6(0.24)
+  no1: H15 C0 I0 M0
+    [Washington] {time: 12} [Maj Gen Geo. H. Thomas] ---- [Maj Genl U.S. Grant] has ordered [Maj Gen W. S. Rosecrans] to send you [Reinforcements] to [East] port but it by no means [Follow (-ed, -ing)]'s that he will do so ---- as I shall be absent from [Washington] [3] or [4] days please [Communicate (-ed, -ing)] with [Maj Gen W. S. Rosecrans]  {tail: [signed] [General-in-Chief] End No 1}
+  no2: H13 C0 I0 M0
+    [Maj Gen B. F. Butler] {time: 12.30 AM} [Augur C C] ---- [Imboden] has ordered [Negley J S] to send you [Regiment] to [Expedition] port but it by no means [Evacuate (-ed, -ing)]'s that he will do so ---- as I shall be absent from [Maj Gen B. F. Butler] pebble or pension days please [Capture (-ed, -ing)] with [Ord E O C] [Surrendered] [Hardee] End No 1
+  no9: H6 C0 I0 M0
+    Growl {time: 11 AM} lantern ---- John has ordered moon to send you [Defensive] to [Cannon] port but it by no means [Deserters]'s that he will do so ---- as I shall be absent from Grapes pebble or pension days please [Jno. Morgan] with Moscow [Killed] Jonah End No 1
+  no1shuf: H15 C0 I0 M0
+    [Gen J. M. Palmer] {time: 12} [Loring] ---- [Diversion] has ordered [General in Chief] to send you [Offensive] to [Cavalry] port but it by no means [Adjt Genl. U.S.]'s that he will do so ---- as I shall be absent from [Colonel] [3] or [4] days please [Join (-ed, -ing)] with [Cairo]  {tail: [signed] [General-in-Chief] End No 1}
+  no2shuf: H13 C0 I0 M0
+    [Aquia Creek] {time: 12.30 AM} [Suffolk] ---- [Communicate (-ed, -ing)] has ordered [Independence] to send you [Station] to [Dumont] port but it by no means [Buckner]'s that he will do so ---- as I shall be absent from [Follow (-ed, -ing) [#]] pebble or pension days please [Thursday] with [Quarter Master] [Captain] [Maj Gen E R S Canby] End No 1
+X4 tokens=26 no1=14(0.54) no2=11(0.42) no9=4(0.15)
+  no1: H11 C0 I0 M0
+    [Washington] {date: Feb 6} {time: 11 AM} For [Colonel] D C Mc Callum [Nashville] [.] The [Secretary of War] is not willing that Devereux should leave his present duties to go [West] [.] A Anderson has left for [Nashville]  {tail: [signed] W H Whiton how goes battle with you}
+  no2: H10 C0 I0 M0
+    [Maj Gen B. F. Butler] Feby Plague {time: 11 AM} For [Casualties] D C Mc Callum [General in Chief] Unity The [Chalmers] is not willing that Devereux should leave his present duties to go [Drove in our Pickets] [1000] A Anderson has left for [General in Chief] [Saturday] W H Whiton how goes [Maj Gen H W Halleck] with you
+  no9: H4 C0 I0 M0
+    Growl Feby Plague {time: 9 AM} For Pandora D C Mc Callum Embrace Unity The Infant is not willing that Devereux should leave his present duties to go [Invested] [Movement] A Anderson has left for Empress [Troops] W H Whiton how goes battle with you
+  no1shuf: H11 C0 I0 M0
+    [Gen J. M. Palmer] {date: Feb 6} {time: 11 AM} For [Cleveland] D C Mc Callum [Jones] [.] The [Jacksonville] is not willing that Devereux should leave his present duties to go [Itercept [sic] (-ed, -ing)] [.] A Anderson has left for [Captain]  {tail: [signed] W H Whiton how goes battle with you}
+  no2shuf: H10 C0 I0 M0
+    [Aquia Creek] Feby Plague {time: 11 AM} For [Banks N P] D C Mc Callum [Corinth] Unity The [Across] is not willing that Devereux should leave his present duties to go [Smith] [1000] A Anderson has left for [Will be] [Hardee] W H Whiton how goes [Shackleford J M] with you
+X5 tokens=29 no1=14(0.48) no2=15(0.52) no9=6(0.21)
+  no1: H12 C0 I0 M0
+    [Washington] {date: Oct 20} {time: 11.30 AM} for [Brigadier General] Elsee Baker [Baltimore] [.] Your [Telegraph (-ed, -ing)] is received [.] the [Secretary of War] wishes you to keep a very close [Surrender (-ed, -ing)] on the man referred to  {tail: [signed] Thomas T. Eckert actg asst [Secretary of War] there is good time coming}
+  no2: H13 C0 I0 M0
+    [Maj Gen B. F. Butler] Oct harsh {time: 11.30 AM} for [Ammunition] Elsee [4] [Baton Rouge] [1000] Your [Valley] is received [Sunday] the [Delaware] wishes you to keep a very [Eastport] [Scatter (-ed, -ing)] on the man referred to [100] Thomas T. Eckert actg asst [Donaldson] there is good time coming
+  no9: H6 C0 I0 M0
+    Grapes Oct harsh {time: 10 AM} for [Yorktown] Elsee Baker Baptism [Movement] Your [Intercept] is received [Movement] the Brutus wishes you to keep a very close watch on the man referred to [Troops] Thomas T. Eckert actg asst Bruno there is good time coming
+  no1shuf: H12 C0 I0 M0
+    [Colonel] {date: Oct 20} {time: 11.30 AM} for [Holly Springs] Elsee Baker [Gen C. C. Washburne] [.] Your [Winchester] is received [.] the [Movement] wishes you to keep a very close [Warrenton] on the man referred to  {tail: [signed] Thomas T. Eckert actg asst [Vicksburg] there is good time coming}
+  no2shuf: H13 C0 I0 M0
+    [Follow (-ed, -ing) [#]] Oct harsh {time: 11.30 AM} for [Reverse] Elsee [4] [Atlanta] [1000] Your [Success] is received [Carter S.P.] the [Drove in our Pickets] wishes you to keep a very [Crook S [?]] [Garfield J A] on the man referred to [100] Thomas T. Eckert actg asst [Stevenson T.G.] there is good time coming
+X6 tokens=30 no1=18(0.60) no2=12(0.40) no9=6(0.20)
+  no1: H18 C0 I0 M0
+    [Washington] [19] {time: 8.30 PM} for [Major] [General] Pipe [.] The [Quartermaster] [Department] will deliver to you at [St Louis] in about [1] weak [2500] service able [Cavalry] [Horse]'s Toby is sued under your orders  {tail: [signed] Jno A Rawlins [Brigadier General]}
+  no2: H12 C0 I0 M0
+    [Maj Gen B. F. Butler] Hunkey {time: 8.30 PM} for [Our pickets] [Helping] Pipe unity The [Rations] [Deserter] will deliver to you at [Nashville] in about plunge weak peach promise [Failure] prolong service able [Battery] [Impregnable]'s Toby is sued under your orders [Saturday] Jno A Rawlins [Ammunition]
+  no9: H6 C0 I0 M0
+    Grapes Hunkey {time: 4.30 PM} for Tappan [Projectiles] Pipe unity The [Quartermaster] quadroon will deliver to you at Geneva in about plunge weak peach promise plaster prolong service able panama [River]'s Toby is sued under your orders [Troops] Jno A Rawlins [Yorktown]
+  no1shuf: H18 C0 I0 M0
+    [Colonel] [19] {time: 8.30 PM} for [Secretary of War] [Movement] Pipe [.] The [Chickamauga] [Abandon (-ed, -ing)] will deliver to you at [Report] in about [1] weak [2500] service able [Orange C.H.] [Lafayette]'s Toby is sued under your orders  {tail: [signed] Jno A Rawlins [Offensive]}
+  no2shuf: H12 C0 I0 M0
+    [Follow (-ed, -ing) [#]] Hunkey {time: 8.30 PM} for [Opelika] [Tar R] Pipe unity The [Steele Fdk] [Athens] will deliver to you at [Jefferson] in about plunge weak peach promise [Evacuation] prolong service able [Davidson J W] [Steam]'s Toby is sued under your orders [Hardee] Jno A Rawlins [Defeat (-ed, -ing)]
+X7 tokens=26 no1=14(0.54) no2=13(0.50) no9=7(0.27)
+  no1: H12 C1 I0 M0
+    {time: 4 PM} [Maj. Gen. David Hunter] [.] [Maj Genl U.S. Grant] has revoked the order that you [Report] to him in [5] and directs that you take the immediate [Command = Er (-ed, -ing)] of opera rations against the [Enemy]'s [Force]'s now [Threaten (-ed, -ing)]ing [Maryland] and Harlem  {tail: [signed] [General-in-Chief]'s observe checks Pirate}
+  no2: H12 C0 I0 M0
+    {time: 4 PM} Mackerel [1000] [Jenkins] has revoked the order that you [South] to him in person and directs that you take the immediate polka of opera [Hill]'s against the [Engineer]'s [Force]'s now [Track]ing [Chowan] and [Smith M L] [Saturday] [Ewell]'s observe checks Pirate
+  no9: H7 C0 I0 M0
+    {time: 7 PM} Mackerel [Movement] Juno has revoked the order that you [Equipage] to him in person and directs that you take the immediate polka of opera rations against the [Coast]'s [Forage]'s now [Surprised]ing Acton and Harlem [Troops] Irelands observe checks Pirate
+  no1shuf: H12 C1 I0 M0
+    {time: 4 PM} [Monroe] [.] [Abingdon] has revoked the order that you [Brig. Gen. H. H. Lockwood (Baltimore); written "Prss"] to him in [5] and directs that you take the immediate [Maj Gen W. T. Sherman] of opera rations against the [Grenada]'s [Unserviceable]'s now [Reinforce (-ed, -ing)]ing [Inland [sic: Island]] and Harlem  {tail: [signed] [Abandon (-ed, -ing)]'s observe checks Pirate}
+  no2shuf: H11 C1 I0 M0
+    {time: 4 PM} Mackerel [1000] [Sparta] has revoked the order that you [Lieut Gen U.S. Grant] to him in person and directs that you take the immediate polka of opera [Deserter]'s against the [Schenck R C]'s [Secretary of War]'s now [Battery]ing [Force] and [Red R] [Hardee] [Drove in Enemys Pickets]'s observe checks Pirate
+X8 tokens=27 no1=9(0.33) no2=7(0.26) no9=3(0.11)
+  no1: H8 C0 I0 M0
+    {time: 6 PM} for [C. A. Dana] Your [2] wrangler recd The the [Captain] may be released and aloud to proceed sending [1] on more detect hives along to observe the cours of [Outflank (-ed, -ing)] & what ever may trans pire  {tail: [signed] [Secretary of War] deliver Keiths msg}
+  no2: H6 C0 I0 M0
+    {time: 6 PM} for [Cheatham] Your peach wrangler recd The the [Battled [?]] may be released and aloud to proceed sending plug on more detect hives along to observe the cours of [Picket (-ed, -ing)] & what ever may trans pire [Surrendered] [Donaldson] deliver Keiths msg
+  no9: H3 C0 I0 M0
+    {time: 11 PM} for [Baltimore] Your peach wrangler recd The the Princess may be released and aloud to proceed sending plug on more detect hives along to observe the cours of trade & what ever may trans pire [Killed] Bruno deliver Keiths msg
+  no1shuf: H8 C0 I0 M0
+    {time: 6 PM} for [President of the U.S.] Your [2] wrangler recd The the [Encountered enemy in strong force] may be released and aloud to proceed sending [1] on more detect hives along to observe the cours of [Maj Genl Wilson] & what ever may trans pire  {tail: [signed] [Vicksburg] deliver Keiths msg}
+  no2shuf: H6 C0 I0 M0
+    {time: 6 PM} for [Volunteering] Your peach wrangler recd The the [Yazoo] may be released and aloud to proceed sending plug on more detect hives along to observe the cours of [Forward] & what ever may trans pire [Captain] [Stevenson T.G.] deliver Keiths msg
+X9 tokens=98 no1=54(0.55) no2=41(0.42) no9=19(0.19)
+  no1: H48 C0 I0 M0
+    [Washington] {date: June 13} {time: 12} For [Maj Gen W. T. Sherman] [.] [Maj Genl U.S. Grant] commenced last night his [Movement] to the [South] side of [James] [.] At latest dates every thing was progressing success fully . [.] the following despatch dated at Lexington [Kentucky] [Today] has been received from [General] Burbridge ["] I [Attack (-ed, -ing)]ed Morgan at Cyntha {time: 2 AM} at day light yesterday morning & after an hours hard [Fight ing Fought]ing completely routed him [Killing] [300] [Wounding] near
+  no2: H40 C0 I0 M0
+    [Maj Gen B. F. Butler] June forlorn {time: 12.30 PM} For [Roddy] [1000] [Jeff Davis] commenced last night his [Of the] to the Waxy side of [Pennsylvania] [Sunday] At latest dates every thing was progressing success fully . [1000] the following [McLamores Cove] dated at [Willich A] [Mississippi] [Troops] has been received from [Harbor] Burbridge [Repulse] I [Abandon (-ed, -ing) [#]]ed [19] at Cyntha {time: 2 AM} at day light yesterday morning & after an hours hard [Flank (-ed, -ing) [#]]ing completely routed him [Mo
+  no9: H19 C0 I0 M0
+    Growl June forlorn {time: 11.30 PM} For Kennebec [Movement] Japan commenced last night his talbot to the [Offensive] side of Bergen [Movement] At latest dates every thing was progressing success fully . [Movement] the following despatch dated at Lexington Aurora [Subsistence] has been received from [Projectiles] Burbridge Virgin I oiled Morgan at Cyntha {time: 3.30 AM} at day light yesterday morning & after an hours hard [Engineers]ing completely routed him [Telegraphs] perfume publish [Front] near as many and pilo
+  no1shuf: H48 C0 I0 M0
+    [Gen J. M. Palmer] {date: June 13} {time: 12} For [Reinforcements] [.] [Grand Junction] commenced last night his [Major] to the [J. S. Negley] side of [Valley] [.] At latest dates every thing was progressing success fully . [.] the following despatch dated at Lexington [Qr Master Genl U.S.] [Equip] has been received from [Danger] Burbridge ["] I [New York]ed Morgan at Cyntha {time: 2 AM} at day light yesterday morning & after an hours hard [Warrenton]ing completely routed him [Danville] [300] [Fight ing Fought] nea
+  no2shuf: H40 C0 I0 M0
+    [Aquia Creek] June forlorn {time: 12.30 PM} For [Position] [1000] [Valley] commenced last night his [Lebanon] to the Waxy side of [Nashville] [Carter S.P.] At latest dates every thing was progressing success fully . [1000] the following [Field] dated at [Arkansas] [Maj Gen B. F. Butler] [Cumberland Gap] has been received from [Secretary of War] Burbridge [Retreat (-ed, -ing)] I [Larkinsville]ed [19] at Cyntha {time: 2 AM} at day light yesterday morning & after an hours hard [Maj Gen A E Burnside]ing completely rout
+X10 tokens=82 no1=37(0.45) no2=34(0.41) no9=15(0.18)
+  no1: H33 C0 I0 M0
+    [Washington] {date: May 6} {time: 3.30 PM} For [Brigadier General] Robt Al- in [.] Despatches just received from Little Rock dated {date: Apr 28} state that [Maj Gen Fredk Steele]'s supply train of [200] & [40] wagons was [Capture (-ed, -ing)]ed on the [25] at Marks Mills on the [Dalton] [Road] near the Sabine [River] [.] You will immediately adopt measures to supply this loss in provisions and [Transportation] by the [Arkansas] or Washita [River] as you may deem most practicable [.] Officers [Quartermaster] agents
+  no2: H29 C0 I0 M0
+    [Maj Gen B. F. Butler] May Pledge {time: 3 PM} For [Ammunition] Robt Al- in [1000] [McLamores Cove]es just received from Little Rock dated April Harsh Paddle state that [Palmer J M]'s supply train of Peach Publish & Lampoon wagons was [Bridge (-ed, -ing) [#]]ed on the Harrow [Failure] at [July]'s Mills on the [Corinth]  {tail: [signed] near the Sabine [Subsistence] [Sunday] You will immediately adopt [Engage]'s to supply this loss in provisions and [Train] by the [Alabama] or Washita [Subsistence] as you may deem m
+  no9: H15 C0 I0 M0
+    Growl May Pledge {time: 6 PM} For [Yorktown] Robt Al- in [Movement] Despatches just received from Little Rock dated April Harsh Paddle state that [Philadelphia]'s supply train of Peach Publish & Lampoon wagons was Piloted on the Harrow Plaster at Marks Mills on the [Maine] [Enemy] near the Sabine [Flank] [Movement] You will immediately adopt measures to supply this loss in provisions and [Skirmish] by the Archery or Washita [Flank] as you may deem most practicable unity Officers [Quartermaster] agents should be sen
+  no1shuf: H33 C0 I0 M0
+    [Gen J. M. Palmer] {date: May 6} {time: 3.30 PM} For [Holly Springs] Robt Al- in [.] Despatches just received from Little Rock dated {date: Apr 28} state that [Big Sandy]'s supply train of [200] & [40] wagons was [Jeff Davis]ed on the [25] at Marks Mills on the [Retreat] [Unite (-ed, -ing)] near the Sabine [Trenton] [.] You will immediately adopt measures to supply this loss in provisions and [Impregnable] by the [Surrender (-ed, -ing)] or Washita [Government] as you may deem most practicable [.] Officers [Chickama
+  no2shuf: H29 C0 I0 M0
+    [Aquia Creek] May Pledge {time: 3 PM} For [Reverse] Robt Al- in [1000] [Field]es just received from Little Rock dated April Harsh Paddle state that [Rapidan]'s supply train of Peach Publish & Lampoon wagons was [Division]ed on the Harrow [Evacuation] at [Hill]'s Mills on the [-]  {tail: [signed] near the Sabine [Presence] [Carter S.P.] You will immediately adopt [Louisiana]'s to supply this loss in provisions and [Philadelphia] by the [Johnston] or Washita [Fork] as you may deem most practicable unity Officers [Ste
+X11 tokens=68 no1=21(0.31) no2=18(0.26) no9=8(0.12)
+  no1: H18 C0 I0 M0
+    [Washington] {date: Sept 2} {time: 2.30 PM} for [Maj Gen H. W. Slocum] [.] Up on the [19] of August Gov Sharkey issued a proclamation calling for the formation of militia companies in each county to detect criminals prevent crime and preserve good order in places where the military [Force]'s [Of the] united states were in sufficient to do so [.] If you have issued any order countermanding this proclamation or interfering with its execution you will at once revoke it [.] acknowledge receipt of this order and [Telegr
+  no2: H16 C0 I0 M0
+    [Maj Gen B. F. Butler] Sept Peach {time: 2.30 PM} for [Prentiss B M] [1000] Up on the hope of August Gov Sharkey issued a proclamation calling for the formation of militia companies in each county to detect criminals prevent crime and preserve good order in places where the military [Force]'s [Pursue (-ed, -ing)] [Re-enforce (-ed, -ing)]d states were in sufficient to do so unity If you have issued any order countermanding this proclamation or interfering with its execution you will at once revoke it [1000] acknowle
+  no9: H8 C0 I0 M0
+    Growl Sept Peach {time: 4 PM} for Myrtle [Movement] Up on the hope of August Gov Sharkey issued a proclamation calling for the formation of militia companies in each county to detect criminals prevent crime and preserve good order in places where the military [Flotilla]'s torch united states were in sufficient to do so unity If you have issued any order countermanding this proclamation or interfering with its execution you will at once revoke it [Movement] acknowledge receipt of this order and [Intercept] your acti
+  no1shuf: H18 C0 I0 M0
+    [Gen J. M. Palmer] {date: Sept 2} {time: 2.30 PM} for [Entrench (-ed, -ing)] [.] Up on the [19] of August Gov Sharkey issued a proclamation calling for the formation of militia companies in each county to detect criminals prevent crime and preserve good order in places where the military [Attack (-ed, -ing)]'s [Goldsboro] united states were in sufficient to do so [.] If you have issued any order countermanding this proclamation or interfering with its execution you will at once revoke it [.] acknowledge receipt of 
+  no2shuf: H16 C0 I0 M0
+    [Aquia Creek] Sept Peach {time: 2.30 PM} for [Shellmound] [1000] Up on the hope of August Gov Sharkey issued a proclamation calling for the formation of militia companies in each county to detect criminals prevent crime and preserve good order in places where the military [Baton Rouge]'s [Unite (-ed, -ing)] [Surrounded]d states were in sufficient to do so unity If you have issued any order countermanding this proclamation or interfering with its execution you will at once revoke it [1000] acknowledge receipt of thi
+X12 tokens=65 no1=27(0.42) no2=25(0.38) no9=10(0.15)
+  no1: H25 C0 I0 M0
+    [Washington] {time: 8 AM} {date: May 7} for [General] will son [Macon] [.] The [President of the U.S.] directs that you immedy [Arrest (-ed, -ing)] Joseph E Brown who pretends to act as Gov of [Georgia] & send him in close cus toddy under sufficient & secure [Guard (-ed, -ing)] to [Major] [General] Augur at [Washington] & allow him to hold no platation verbal or written with any [5] but the ofcr having him in charge [After the] rect of this order [.] You will acknowledge by [Telegraph (-ed, -ing)] the hour at which
+  no2: H24 C0 I0 M0
+    [Maj Gen B. F. Butler] {time: 8 AM} may postpone for [Harbor] will son [Kingsville] unity The [Beauregard] directs that you immedy [Lee S P] Joseph E [1] who pretends to act as Gov of [Potomac] & send him in [Eastport] cus toddy under sufficient & secure [Guard (-ed, -ing)] to [Our pickets] [Harbor] Augur at [Maj Gen B. F. Butler] & allow him to hold no platation verbal or written with any person but the ofcr having him in charge [At the] rect of this order [1000] You will acknowledge by [Valley] the hour at which 
+  no9: H10 C0 I0 M0
+    Growl {time: 3 AM} may postpone for [Projectiles] will son Dismal unity The [Abingdon] directs that you immedy oakum Joseph E Brown who pretends to act as Gov of Argus & send him in close cus toddy under sufficient & secure [Mortar Boats] to tappan [Projectiles] Augur at Grapes & allow him to hold no platation verbal or written with any person but the ofcr having him in charge Oxide rect of this order [Movement] You will acknowledge by [Intercept] the hour at which you receive this order & [Equipage] your action [M
+  no1shuf: H25 C0 I0 M0
+    [Gen J. M. Palmer] {time: 8 AM} {date: May 7} for [Danger] will son [Pending] [.] The [Head Quarters] directs that you immedy [Tallahatchie] Joseph E Brown who pretends to act as Gov of [Subsistence] & send him in close cus toddy under sufficient & secure [Orange C.H.] to [Secretary of War] [Danger] Augur at [Colonel] & allow him to hold no platation verbal or written with any [5] but the ofcr having him in charge [Philadelphia] rect of this order [.] You will acknowledge by [Winchester] the hour at which you recei
+  no2shuf: H24 C0 I0 M0
+    [Aquia Creek] {time: 8 AM} may postpone for [Secretary of War] will son [Execute (struck: Manifest, written Execute)] unity The [Marmaduke] directs that you immedy [Transport (-ed, -ing)] Joseph E [1] who pretends to act as Gov of [Imboden] & send him in [Crook S [?]] cus toddy under sufficient & secure [Transportation] to [Opelika] [Secretary of War] Augur at [Follow (-ed, -ing) [#]] & allow him to hold no platation verbal or written with any person but the ofcr having him in charge [Wednesday] rect of this order 
+X13 tokens=36 no1=15(0.42) no2=14(0.39) no9=6(0.17)
+  no1: H12 C0 I0 M0
+    [Washington] {date: July 27} {time: 11 AM} for [Brigadier General] Barten ---- [Memphis] [.] Your action in respect to Ryan is approved [.] Spare no pains to find and send forward the witness mentioned in your [Telegraph (-ed, -ing)] [.] Give strict orders to the officer in whose charge he is sent to allow no [Communicate (-ed, -ing)] shun by or with him [Secretary of War]
+  no2: H10 C0 I0 M0
+    [Maj Gen B. F. Butler] July harrow plunder {time: 11 AM} for [Ammunition] Barten ---- [Larkinsville] [1000] Your action in [Mask] to Ryan is approved [Sunday] Spare no pains to find and send forward the witness mentioned in your [Valley] unity Give strict orders to the officer in whose charge he is sent to allow no [Capture (-ed, -ing)] shun by or with him [Delaware]
+  no9: H6 C0 I0 M0
+    Growl July harrow plunder {time: 9 AM} for [Yorktown] Barten ---- drill [Movement] Your action in respect to Ryan is approved [Movement] Spare no pains to find and send forward the witness mentioned in your [Intercept] unity Give strict orders to the officer in whose charge he is sent to allow no [Jno. Morgan] shun by or with him Brutus
+  no1shuf: H12 C0 I0 M0
+    [Gen J. M. Palmer] {date: July 27} {time: 11 AM} for [Holly Springs] Barten ---- [Horse] [.] Your action in respect to Ryan is approved [.] Spare no pains to find and send forward the witness mentioned in your [Winchester] [.] Give strict orders to the officer in whose charge he is sent to allow no [Join (-ed, -ing)] shun by or with him [Movement]
+  no2shuf: H10 C0 I0 M0
+    [Aquia Creek] July harrow plunder {time: 11 AM} for [Reverse] Barten ---- [Philadelphia] [1000] Your action in [Washington] to Ryan is approved [Carter S.P.] Spare no pains to find and send forward the witness mentioned in your [Success] unity Give strict orders to the officer in whose charge he is sent to allow no [Thursday] shun by or with him [Drove in our Pickets]

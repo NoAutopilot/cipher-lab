@@ -4162,3 +4162,129 @@ in excess of those now in Kidnap polka
 shade can be supplied by rail zebra Have
 sent this to Adonis webster W H Whiton
 note: MS18-R6: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .45/.36/.18): No. 1 (the decode gives McCallum and Fulton street as plain; 'spartons' is in no key row, M). Not located in print: phrase grep (177 volumes: 'Masury', 'Fulton street', 'supplied by rail' none) and date-window search for 7-8 Sept 1864 headings with New York/Horner/Whiton/Masury and rail in OR I/42 pt 2 (54 dated headings), I/42 pt 3 (1), I/43 pt 2 (47): 0 with the terms. Holder: 'Masury Whiton' returns pointer 9836 only (this page); no clear copy. McCallum is presumably the Director of Military Railroads (not established).
+
+### E371 | Page 182 | 9842 | mssEC 18 (obj 10074, pointer 9842; printed page 176), 15 Sept 1864 Washington (hour 4.30 PM), Capt Bruch (operator), for Brig. Gen. Robt Allen, Chief Quartermaster at Louisville, signed Meigs, Quartermaster General: the Secretary of War directs that you withdraw from Colonel Ferry, Chief Quartermaster's Depot at Louisville, all Government funds, whether cash, notes, certificates or credits therefor, now under his control; to be done immediately; tail 'fine day'; not located in print (MS18-R7; row 9842/1; leaf image-read at 2400 px)
+Capt Bruch  Washn Sept 15th 1864
+Katy for Palate Robt Allen Vincent Dolphin zebra
+The Brutus directs that you with draw from
+Pandora Ferry chief Vintons quotient of Dragon all
+shark funds whether cash notes or certificates or
+credits therefor now under his control zodiac This
+to be done immediately Webster Bender fine day
+note: MS18-R7: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .49/.46/.26): No. 1 (No. 2 reads H15 by count but the sense is carried by No. 1). Image (ledger page 176, entry below the 14 Sept 1 PM Beckwith entry on Washington's coal and gas supply, not read): transcription matches line by line; operator written 'Capt Bruch'. Not located in print: phrase grep (cached and scratch OR volumes: 'cash notes or certificates', 'credits therefor' none) and date-window search for 15-16 Sept 1864 headings with Allen/Louisville/Meigs/Quartermaster and funds/Ferry/certificates in OR I/39 pt 2, I/42 pt 1, pt 2 (120 dated headings): 0. 'Ferry' is the colonel's name in clear (M for the identity).
+
+### E372 | Page 247 | 9907 | mssEC 18 (obj 10074, pointer 9907; printed page 241), 6 Dec 1864 Washington (hour 10 AM), R. S. Fowler at Memphis (operator), to the commanding officer at Memphis, signed Halleck, General-in-Chief: you will immediately endeavor to cut the Mobile and Ohio Railroad so that Hood's army cannot be supplied by that route; call on General Reynolds for assistance if necessary; printed OR I/45 pt 2 p.82 (MS18-R7; row 9907/1; holder transcription, leaf not eye-checked)
+R. S. Fowler Memphis  Wash'n Dec. 6th 1864
+Growl Emily Plague To Polkaing Officer at Drum Zebra
+You will imm'y end ever to cut the Europe
+and Abner Welch so that Hudsons Opal can not
+be supplied by that route unity Call on Monster
+for as sistems if necessary yoke Italy yours truly
+note: MS18-R7: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .52/.44/.15): No. 1 (No. 9 reads 4 groups). Printed OR I/45 pt 2 (IA warofrebellion452unit; the item sits between the running heads 82 and 83, and follows Halleck's 6 Dec order to the Commanding Officer at Vicksburg to destroy the Mobile and Ohio Railroad): Halleck to Commanding Officer, Memphis, Washington 6 Dec 1864 10 a.m., word for word; C against the print. 'end ever' = endeavor and 'sistems' = assistance are the clerk's code splits (plain in print); 'Hudsons Opal' = Hood's army (key). Print note: 'Commanding officer at Cairo will forward this by special messenger'; not in the ledger.
+
+### E373 | Page 218 | 9878 | mssEC 18 (obj 10074, pointer 9878; printed page 212), 28 Oct 1864 Washington (the ledger time word reads 12; the print has 1.40 a.m.), B. B. Glass at Nashville (operator), for Maj. Gen. Thomas, signed Halleck: General Grant has ordered General Rosecrans to send you reinforcements to Eastport but it by no means follows that he will do so; as I shall be absent from Washington three or four days please communicate with General Rosecrans; ledger tail 'End No 1'; printed OR I/39 pt 3 p.482 (MS18-R7; row 9878/1; holder transcription, leaf not eye-checked)
+B. B. Glass Nashville  Washn Oct 28 1864
+Growl francis lantern ---- John has ordered moon to
+send you Webb to Ripley port but it by
+no means rampants that he will do so ----
+as I shall be absent from Grapes pebble or
+pension days please plainfield with Moscow walrus Jonah End
+No 1
+note: MS18-R7: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .64/.56/.24): No. 1. Printed OR I/39 pt 3 (IA warofrebellion393unit; the item ends just before the head of p.483): Halleck to Thomas, Washington 28 Oct 1864 1.40 a.m., word for word; C against the print. 'Webb' = reinforcements and 'Ripley' = East (in Eastport) are the key's readings, C by the print. The ledger's time word (decoded 12) differs from the print's 1.40 a.m.; not resolved (M). Not a key edit (rule 4).
+
+### E374 | Page 13 | 9673 | mssEC 18 (obj 10074, pointer 9673; printed page 7), 6 Feb 1864 11 AM Washington, S. H. Beckwith (label 1), for Col. D. C. McCallum, Nashville, signed W. H. Whiton: the Secretary of War is not willing that Devereux should leave his present duties to go West; Anderson has left for Nashville; tail 'how goes battle with you'; not located in print (MS18-R7; row 9673/1; leaf image-read at 2400 px)
+S. H. Beckwith 1  Washn Feby 6th 1864 11. AM
+Growl Feby Plague Fanny For Pandora D C Mc
+Callum Embrace Unity The Infant is not willing that
+Devereux should leave his present duties to go Wilson
+Zebra A And = er = son has left for Empress
+Youth W H Whiton how goes battle with you
+note: MS18-R7: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .54/.42/.15): No. 1. Image (ledger page 7, the entry follows a Meigs entry and precedes a 7 Feb 12.30 PM Beckwith entry, not read): transcription matches line by line, including the numbered code groups of the first line ('Pandora D C Mc Callum'). Signed 'Youth W H Whiton' (Whiton = the Masury and Whiton partner named in E370; M for the identity). Not located in print: phrase grep ('Devereux', 'has left for Nashville' none) and date-window search for 6-7 Feb 1864 headings with McCallum/Nashville/Stanton and Devereux in OR I/32 pt 2 (79 dated headings) and I/33 (112): 0. Holder: 'Devereux McCallum' returns 0 pages.
+
+### E375 | Page 401 | 10061 | mssEC 18 (obj 10074, pointer 10061; printed page 395), 20 Oct 1865 11.30 AM Washington, W. J. Bodle at Baltimore (operator), for Brig. Gen. [L.?] C. Baker, Baltimore, signed Thomas T. Eckert, acting assistant [Secretary of War]: your telegram is received; the Secretary of War wishes you to keep a very close watch on the man referred to; tail 'there is good time coming'; holder clear context 8012 (MS18-R7; row 10061/0; leaf image-read at 2400 px)
+1130 AM WJ Bodle . Balto  Washn Oct 20 1865
+Grapes Oct harsh Florence for palsy Elsee
+Baker Baptism Zebra Your wrangle is received
+Zodiac the Brutus wishes you to keep
+a very close watch on the man
+referred to Yoke Thomas T. Eckert actg
+asst Bruno there is good time coming
+note: MS18-R7: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .48/.52/.21): the share favours No. 2 by a point; the sense reads No. 1 (No. 2 reads Florence/Grapes nonsense) and the head 'Grapes Oct ... for Brig. Gen.' is No. 1's pattern ('no book in hand' not needed). Image (ledger page 395): transcription matches line by line. Not located in print (the Official Records end before October 1865; no volume read). Holder clear context: pointer 8012 (page 354 of the received ledger), 9.30 AM Baltimore 20 Oct 1865, 'Isaac Surratt arrived in Baltimore on Sunday morning is here still', S. C. Baker Br. Genl, for T. T. Eckert, Washington -- the received telegram this one answers on its face ('the man referred to'; Baker answered 'Your telegram is received'): C for the answer relation by sense, not by a key. The next entry on the leaf (21 Oct 1865 4 PM, H. Siebert No 5, for Capt. Gross, N.O.; 'Sure rat' reached this vicinity, not yet identified) is 10061/1, not read here. 'Elsee Baker' (L. C. Baker?) is read M.
+
+### E376 | Page 353 | 10013 | mssEC 18 (obj 10074, pointer 10013; printed page 347), 19 May [1865] 8.30 PM Washington, Capt. R. C. Clowry at St Louis (operator, label No 1), for Maj. Gen. Pope, signed Jno A. Rawlins, Brigadier General and Chief of Staff: the Quartermaster's Department will deliver to you at St Louis in about one week 2,500 serviceable cavalry horses, to be issued under your orders; printed OR I/48 pt 2 p.505 (MS18-R7; row 10013/0; holder transcription, leaf not eye-checked)
+No 1 Capt RC Clowry St Louis  Washington 830 PM 19 May
+Grapes Hunkey Nelly for Tappan shelter Pipe unity
+The Vinton quadroon will deliver to you at
+Geneva in about plunge weak peach promise plaster
+prolong service able panama spartans Toby is sued
+under your orders youth Jno A Rawlins palate
+note: MS18-R7: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .60/.40/.20): No. 1. The ledger line gives no year; the print supplies 1865. Printed OR I/48 pt 2 (IA warofrebellion482unit; between the running heads 505 and 506): Rawlins to Pope, Washington 19 May 1865 8.30 p.m., the answer to Pope's 'What shall we do for horses, &c., for the brigade of cavalry General Thomas sent here?' (Pope to Grant, 19 May, received 6.15 p.m.); word for word; C against the print. The addressee is written 'Pipe' for Pope (M).
+
+### E377 | Page 114 | 9774 | mssEC 18 (obj 10074, pointer 9774; printed page 108), 5 July [1864] 4 PM Washington, to Maj. Gen. Hunter at Parkersburg W. Va. via Philadelphia, signed Halleck, General-in-Chief: General Grant has revoked the order that you report to him in person and directs that you take the immediate direction of operations against the enemy's forces now threatening Maryland and the Baltimore and Ohio Railroad; printed OR I/37 pt 2 p.63 (MS18-R7; row 9774/1; holder transcription, leaf not eye-checked)
+Parkersburg W Va via Phila  Washn 4 pm July 5th
+Julia Mackerel zebra Juno has revoked the order
+that you white to him in person and
+directs that you take the immediate polka of
+opera rations against the rocklands saints now weighing
+Acton and Harlem youth Irelands observe checks Pirate
+note: MS18-R7: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .54/.50/.27): No. 1 (No. 2 reads the same H count; the sense picks No. 1). Printed OR I/37 pt 2 (IA warofrebellion372unit; the item sits between the running heads 63 and 64): Halleck to Hunter, Washington 5 July 1864 4 p.m., Parkersburg W. Va., word for word; C against the print. The year and 'Parkersburg' are the print's; the ledger header gives 'Parkersburg W Va via Phila', no year. 'Harlem' for the print's Baltimore and Ohio Railroad is the ledger's code group (M); 'Acton' = Maryland (key, C by the print). The tail 'observe checks Pirate' is the signature code, not in the print.
+
+### E378 | Page 160 | 9820 | mssEC 18 (obj 10074, pointer 9820; printed page 154), 16 Aug 1864 Washington, to John Horner at New York, for [C. A. Dana, M], signed [Secretary of War, M]: your telegram received; the Princess may be released and allowed to proceed, sending one or more detectives along to observe the course of trade and whatever may transpire; deliver Keith's message; not located in print (MS18-R7; row 9820/3; leaf image-read at 2400 px)
+John Horner NY  Washn Aug 16th 1864
+Libby for Insanity Your peach wrangler recd The the
+Princess may be released and aloud to proceed
+sending plug on more detect hives along to
+observe the cours of trade & what ever
+may trans pire walrus Bruno deliver Keiths msg
+note: MS18-R7: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .33/.26/.11): No. 1 (a short entry, whole-entry share low). Image (ledger page 154): transcription matches line by line (hour not written, so the decoder's 6 PM is the key row's, M). The entry above it on the leaf (14 Aug 1864 9 PM, Horner N.Y., for Robt Murray, U.S. Marshal: 'Detain the Prince[ss] till further directions. The subject is under investigation', tail 'Bunyan', 9820/2) is not read here and is a sibling; E346 (9820/1, 13 Aug, Gordon Bruce & Co, Alex Keith Jr) is the same case: 'Keiths msg' links this one to it. The decoder reads 'Princess' as [Captain] (a key row); on the image of the 14 Aug sibling the word is written plain, so 'Princess' is probably a vessel or a name, not a code word: the decoded 'Captain' is a decoder slip (M), not a key edit. Not located in print: phrase grep ('may be released and allowed to proceed', 'observe the course of trade', 'whatever may transpire' none) and date-window search for 16-17 Aug 1864 headings with Dana/Horner/New York/Stanton and released/trade/detective in OR I/39 pt 2, pt 3, I/42 pt 1, pt 2 (144 headings), I/43 pt 1: 0.
+
+### E379 | Page 99 | 9759 | mssEC 18 (obj 10074, pointer 9759; printed page 93), 13 June 1864 12 m Washington, Van Valkenburg (operator), for Maj. Gen. Sherman, signed by the Secretary of War: General Grant commenced last night his movement to the south side of the James; at latest dates everything was progressing successfully; the following despatch dated at Lexington [Ky.] today has been received from General Burbridge: 'I attacked Morgan at Cynthiana at daylight yesterday morning and after an hour's hard fighting completely routed him, killing 300, wounding as many and capturing nearly 400, besides recapturing nearly all of General Hobson's command and over 1,000 horses. Our loss in killed and wounded about 150. Morgan's scattered forces are flying in all directions; have thrown away arms; are out of ammunition and wholly demoralized'; 'that is the way to do it'; the quoted Burbridge dispatch is printed OR I/39 pt 1 p.20; the relay to Sherman is not located (MS18-R7; row 9759/1; leaf image-read at 2400 px)
+12 pm Van Valkenburg ----  Wash June 13 " 1864
+Growl June forlorn topsy For Kennebec Zebra Japan commenced
+last night his talbot to the Waxy side of
+Bergen Zodiac At latest dates every thing was progressing
+success fully . Zebra the following despatch dated at Lexington
+Aurora wedge has been received from Shelby Burbridge Virgin
+I oiled Morgan at Cyntha anna at day light
+yesterday morning & after an hours hard rapturing completely
+routed him supper perfume publish Winston near as many
+and piloting nearly penny prolong besides rea piloting nearly
+all of Shelter Hobsons polka and over plug purple
+spartans unity Our loss in superb and Wilkes about
+plunge publish and mansion Zodiac Morgans widowed saints are
+flying in all directions pedlar have thrown away niggard
+pekin are out of Olive and wholly prospected Violet
+Webster Brutus that is the way to do it
+note: MS18-R7: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .55/.42/.19): No. 1. Image (ledger page 93, the lower entry of the leaf, ticked): transcription matches line by line; the operator is 'Van Valkenburg'. The Burbridge dispatch quoted inside is printed in OR I/39 pt 1 (IA warofrebellion391unit; between the heads 20 and 21): Burbridge to Halleck, Lexington Ky. 13 June 1864 (received 11.53 p.m.), 'I attacked Morgan at Cynthiana at daylight yesterday morning, and after an hour's hard fighting completely routed him, killing 300, wounding as many, and capturing nearly 400, besides recapturing nearly all of General Hobson's command and over 1,000 horses. Our loss in killed and wounded about 150. Morgan's scattered forces are flying in all directions; have thrown away arms; are out of ammunition and wholly demoralized': C against the print for that quotation (clause for clause); the dispatch is also in OR I/39 pt 1 addressed to Sherman at 9.10 p.m. in a different wording. The Stanton-to-Sherman relay itself ('Grant commenced last night his movement to the south side of the James', the closing 'that is the way to do it') is not located in print: date-window search for 13-14 June 1864 headings with Sherman/Stanton and Burbridge/Morgan in OR I/36 pt 3 (6 headings), I/38 pt 4 (55), I/39 pt 2 (42; four with terms, all Burbridge-side items, one an editor's note pointing to Part 1 p.20), I/42 pt 1-2: no 13 June relay to Sherman. Holder clear context: pointer 12455 (leaf 19, 12 June 1864 3.25 PM Cincinnati, to Maj. Eckert: Hobson surrendered, Burbridge 'completely broke him up'). 'Kennebec' = Sherman (key); the clauses between the quotation marks are read as the decoder gives them.
+
+### E380 | Page 72 | 9732 | mssEC 18 (obj 10074, pointer 9732; printed page 66), 6 May 1864 3.30 PM Washington, Capt. Sam Bruch (operator), for Brig. Gen. Robt Allen, Louisville, signed Halleck, General-in-Chief: dispatches just received from Little Rock dated 28 April state that General Steele's supply train of 240 wagons was captured on the 25th at Marks Mills on the Camden road near the Saline River; you will immediately adopt measures to supply this loss in provisions and transportation by the Arkansas or Washita River as you may deem most practicable; officers or quartermaster's agents should be sent to St Louis, Cairo, Memphis and so forth to collect wagons, mules and so forth and send them forward; the Department of the Missouri should be able to supply a part at least of your immediate wants; telegraph for any orders you may require to take them if Rosecrans will not give them up; printed OR I/34 pt 3 p.480 (MS18-R7; row 9732/1; holder transcription, leaf not eye-checked)
+Capt Sam Bruch  Washn May 6th 1864
+Growl May Pledge Jennie For Palsy Robt  Al-
+in zebra Despatches just received from Little Rock
+dated April Harsh Paddle state that Mellows supply
+train of Peach Publish & Lampoon wagons was
+Piloted on the Harrow Plaster at Marks Mills
+on the Camden Wiley near the Sabine Windsor
+zodiac You will immediately adopt measures to supply
+this loss in provisions and Whig by the
+Archery or Washita Windpipe as you may deem
+most practicable unity Officers Vinton agents should be
+sent to Gaul Bladder Drum & so forth
+to collect wagons mules & so forth and
+send them forward zebra The Quadroon of Aragon
+should be able to supply a part at
+least of your immediate wants zodiac Wrangle for
+any orders you may require to take them
+if Moscow will not give them up Ireland
+note: MS18-R7: No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .45/.41/.18): No. 1. Printed OR I/34 pt 3 (IA warofrebellion013403rootrich; the item stands under the head 480): Halleck to Allen, Washington 6 May 1864 3.30 p.m., word for word; C against the print. Differences: the ledger writes 'Sabine' where the print has 'Saline' (the ledger's own spelling or the volunteer's transcription; the print is the geography), and the decoder renders the plain word 'Camden' as [Dalton] (a key row mapping a code word that coincides with the plain word: decoder slip, M, not a key edit); the ledger's 'If Moscow will not give them up' = Rosecrans (key, C by the print: 'General Rosecrans'). 'Mellows' = Steele (key). A Louisville reply to Halleck of 6 May 8.30 p.m. follows the item in the print.
+
+### E381 | Page 366 | 9258 | mssEC 19 (obj 9302, pointer 9258; printed page 364), 27 July 1865 Washington, Somerville at Memphis Tenn (operator), for Brig. Gen. [E.] Barton, signed [Secretary of War, M]: your action in respect to Ryan is approved; spare no pains to find and send forward the witness mentioned in your telegram; give strict orders to the officer in whose charge he is sent to allow no communication by or with him; the received-ledger sibling of E358 (Ryan, Memphis); not located in print (MS18-R7; row 9258/2; leaf image-read at 2400 px)
+Somerville Memphis Tenn  Wash July 27 1865
+Growl July harrow plunder fanny for palsy Barten ----
+drill Zebra Your action in respect to Ryan
+is approved Zodiac Spare no pains to find
+and send forward the witness mentioned in your
+wrangle unity Give strict orders to the officer
+in whose charge he is sent to allow
+no plainfield shun by or with him Brutus
+note: MS18-R7 (a mssEC 19 row, the sent ledger of 1865, found by AUD2-LEDGER-33; mssEC 19 p.364): No. 1 (whole-entry vocabulary share No.1 / No.2 / No.9 = .42/.39/.17; No. 2 reads Butler/Ammunition nonsense and the meaning-shuffled copy gives the same H count, so the count control cannot fail and licenses nothing: sense decides). Image (ledger page 364): transcription matches line by line; the first entry on the leaf (9258/1, Gilmore at Charleston, 15 July 1865) is not read here. Content: the 27 July 1865 answer in the Ryan case of E358 (Bvt Brig. Gen. E. Barton, Provost Marshal, Memphis, whose 24 July sibling is 10043/2); 'send forward the witness' is the object of AUD2-LEDGER-33's sibling link. Not located in print: letters-only phrase grep over cached and scratch OR volumes ('Spare no pains to find', 'action in respect to Ryan': none); no OR volume was read for July 1865 (not attempted). Holder: 'Ryan witness Somerville Memphis' returns 9258 only (this page).
