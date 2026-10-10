@@ -81,3 +81,5 @@ Exactly "## FIX-L16" above (entry-note mechanism, idempotent apply script, never
 Do NOT touch any entry named in a WORK-QUEUE AUD2-LEDGER16-<n> row (E518 E527 E526 E546 E553 E554 E564 E574 E558 E569 E441 E472 E442 E473 E469 E466 E447 E471
 E474) nor FV-L16a's six: their s.5 goes to the FIX after the second audits (next incarnation). decode x3 --write/--check exit 0; NOTES "## FIX-L16b (10 Oct
 2026, account 1, for LANE LEDGER-16)"; depth_check; gaps_check; file_shrink_guard on every touched file.
+
+(15:40 UTC: FIX-L16b spawned, session_012JgHibzGYfCSuxZ5PBw3Be.)
