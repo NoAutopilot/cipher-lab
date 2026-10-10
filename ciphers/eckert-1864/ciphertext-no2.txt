@@ -1882,3 +1882,116 @@ perilous toby undertaken please whiff to that Roanoke otherwise he
 will proceed the best he can up the Apollo wrangle
 Welch Cupid
 note: N2R-5: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .38/.54/.22); No. 1 reads 'Luke Oliver Baker to [Maj Gen O. O. Howard] ... Available ... Maj Gen E. O. C. Ord', no consistent clause; No. 2 reads the whole clause, decoded date 'June 24' = header day (200-seed shuffle: 4 of 200). Coherence -6.619 / -6.654 / -7.805, shuffled No. 2 x3 -6.575/-7.346/-6.287 (the bigram model does not separate No. 2 from No. 1 or from one shuffle on this entry; the print match is the test). IN PRINT: OR I/37 pt 1 (IA warofrebellion371unit) p.670 (the page header 670 precedes the telegram), 'Washington, June 24, 1864 -- 11.30 a. m. Lieutenant-General Grant, Bermuda Hundred, Va.: As stated in my former dispatch, Major-General Stahel was sent back by General Hunter to collect troops and escort to him a train of ammunition. General Stahel is nearly ready to start, but has no information as to where he can find General Hunter. Should your information be such that you deem General Stahel's expedition too perilous to be undertaken, please telegraph to that effect. Otherwise he will proceed to do the best he can up the Shenandoah Valley. H. W. Halleck, Major-General and Chief of Staff': word for word; grade C against the print. Differences (M): the decoded hour 11 AM against the print's 11.30 a.m.; 'McLamores Cove' for 'dispatch' and 'Harrison' for 'collect' are key values that do not read here.
+
+### N2-IA | Page 41 | 9701 | mssEC 18 (obj 10074, pointer 9701; printed page 35), 9 April 1864 1.30 PM Culpeper, S. H. Beckwith (operator), to Lieut. Gen. Grant, signed (decoded) Halleck (M): a veteran Maryland infantry regiment of the Twelfth Corps (Slocum) has been detained in Baltimore a few days for a special purpose; if it is intended to bring more troops from the West here or to West Virginia it would save transportation to take this one; Burnside will be given another battery in place of that now in the Army of the Potomac (N2R-4; row 9701/0; holder transcription, leaf not eye-checked)
+SH Beckwith Culpeper  Washn 130 pm April 9th 1864
+Harriet For Crowd Yacht A Veteran Baltic Sugar
+Wayne belonging to the Hoffman pelton Niagara has
+been detained in Baron a few days for
+a special purpose Yardstick If it is in
+tended to bring more whack savory world here
+or to Walker Bermuda it would save Weasel
+to take this Brown Lawn will be given
+another Panama in place of that now in
+the Persia talbot Argus Yawl Cupid wet again
+note: N2R-4: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .52/.59/.25); No. 1 reads 'Knoxville ... Baton Rouge ... Maj Gen Joseph Hooker', no clause; No. 2 reads the clause; decoded time 1.30 PM = header 1.30 pm (shuffle 3 of 200), decoded day not matched (shuffle 14 of 200). Not located in print: see NOTES '## N2R-4' (OR I/33 searched; the 8 April 1864 Halleck to Grant telegram on p.821 is a different text).
+
+### N2-IB | Page 190 | 9850 | mssEC 18 (obj 10074, pointer 9850; printed page 184), 25 Sept 1864 Washington, S. H. Beckwith (operator), to Lieut. Gen. Grant, signed (decoded) the Secretary of War (M): it is important to remove Heintzelman from any function and perhaps Rosecrans; have you any objection to Hooker being assigned to the place of one of them; there is no vacant major-general's place for Crook but I am disposed to muster out Heintzelman and make a vacancy; Crook shall have the one that occurs; Duval promoted immediately (N2R-4; row 9850/1; holder transcription, leaf not eye-checked)
+Beckwith  Washn Sept 25th 1864
+Nancy Nelson Dalon For Chart Tulip It is republic
+to remove Melon from any function and perhaps Mud
+yard Have you any objection to Malta being assigned
+to the place of Allen of them stanhope There
+is no vacant Spunky spark ship for Crook but
+I am disposed to muster out Melon and make
+a vacancy stick Crook shall have the Brown that
+occurs Tulip Duval Shelby promoted immedy yawl Costume good
+#2
+note: N2R-4: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .33/.46/.13); same pointer as 9850/2 (26 Sept, not read here). No. 1 reads 'Prentiss ... Hartsuff', no clause; No. 2 reads the clause; the decoded numeral [20] against the header day 25 does not match (shuffle 0 of 200 for the day), no hour in the header (not testable). 'Duval Harbor promoted' the last words are not read (M). Not located in print: see NOTES '## N2R-4'.
+
+### N2-IC | Page 95 | 9755 | mssEC 18 (obj 10074, pointer 9755; printed page 89), 7 June 1864 Washington (cipher time word 3.30 PM), S. P. Kimber (operator), to Maj. Gen. Canby, signed (decoded) Meigs, Quartermaster General (M): what is the gauge of the Vicksburg and Monroe railroad; in the annual report of the Directors there is no grading between Monroe and Shreveport; it is not likely that any work has been done upon it since this rebellion; it is 74 and a quarter miles from Vicksburg to Monroe (N2R-4; row 9755/0; holder transcription, leaf not eye-checked)
+S. P. Kimber  Wash'n June 7th 1864
+Happy June Downing Imogene For Mastiff Tulip
+What is the guage Talbot Hero and
+Monroe Walnut Stanhope In the annual Watson
+of Norris Brown January Ludlow Perkins Allen
+Directors Watson no grading between Monroe and
+Shreveport Yacht It is not likely that
+any work has been done upon it
+since this rebellion yardstick It is Prentiss
+Andrew and Allen quarter Sylvans from Holly
+to Monroe Wiley Meigs Buggy damp again
+note: N2R-4: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .37/.57/.18); No. 1 reads 'Maj Gen B. M. Prentiss ... Johnston ... Junction', no clause; No. 2 reads the clause, decoded day 7 = header day (shuffle 25 of 200), time 3.30 PM not in the header (not testable). Context only: Meigs to Canby 17 June 1864 1.30 p.m., 'I learn that the gauge of the Vicksburg and Shreveport Railroad is 5 feet 0 inches ... I have telegraphed you twice to inform me of the gauge' (OR I/34 pt 4 pp.424-425), a later and different text. Not located in print as this telegram: see NOTES '## N2R-4'.
+
+### N2-ID | Page 238 | 9898 | mssEC 18 (obj 10074, pointer 9898; printed page 232), 23 Nov 1864 10.30 AM Washington, to Col. G. H. Sharpe (decoded; the ledger 'G H Sharp'), signed G. K. Leet (the ledger's own signature): all the hotels in this city and Georgetown have been searched for the man Buyers without avail; there is no hotel at the corner of 21st Street and Pennsylvania Avenue; Captain Potts commanding detectives and patrols will make every effort to find Buyers but thinks he is not in the city (N2R-4; row 9898/2; holder transcription, leaf not eye-checked)
+1030 am to Caldwell  Washn Novr 23d 1864
+Elizabeth Oliver benton for Paxton G H Sharp
+tulip All the union hotels in this pontiac
+and George town hafbin searched forth man Buyers
+but with out avail Theres no hotel at
+corner of Oliver brown St and Bergen ave
+yard Interest Potts prospecting detectives & Patrols will
+make every effort to find Buyers but thinks
+he snot shylock pontiac welch G K Leet
+note: N2R-4: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .38/.49/.07); No. 1 reads 'Longstreet ... Command ... Rail Road', no clause; No. 2 reads the clause, decoded day 23 = header day (shuffle 6 of 200) and time 10.30 AM = the header hour (shuffle 2 of 200). 'Buyers' is the ledger's own plain spelling of the man's name (the OCR of OR I/45 and I/41 pt 4 gives only unrelated 'buyers'); 'Pontiac' decodes to City (M for the place). Not located in print: see NOTES '## N2R-4'.
+
+### N2-IE | Page 99 | 9759 | mssEC 18 (obj 10074, pointer 9759; printed page 93), 13 June 1864 8 PM Washington, to Maj. Gen. Canby at Vicksburg, signed Col. J. A. Hardie (decoded 'Colonel Hardie'): with regard to the subject of your telegram of the 4th instant to Meigs, the supply of stock and materials for the repair of the railroad from Vicksburg to Monroe, I am directed by the Secretary of War to say that the expediency of the expense is so much doubted that it has been referred to Lieutenant General Grant (N2R-4; row 9759/0; holder transcription, leaf not eye-checked)
+8 pm  Washn D. C. June 13 1864
+Nancy Hudson June to Farmer Hero tulip With regard
+to the Subject of your whimper talbot Baker inst
+to Buggy the supply of stock and materials for
+the repair talbot warner from Holly to Monroe I
+am directed by the Barton to say that the
+expediency talbot expense is so much doubted as that
+it has been referred to Magic Welch Paxton Hardie
+note: N2R-4: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .51/.54/.14); same pointer as E379 (13 June 1864 12 m, entry 1 of the leaf); this entry is entry 0. No. 1 reads 'Norfolk ... Johnston ... Columbus', no clause; No. 2 reads the clause, decoded day 13 = header day (shuffle 14 of 200) and time 8 PM = header hour (shuffle 8 of 200). IN PRINT: OR I/34 pt 4 (IA warofrebellion013404rootrich) p.331 (the page header 332 follows the next telegram; leaf not opened), 'Washington, D. C., June 13, 1864 -- 8 p. m. (Received New Orleans, 24th.) Major-General Canby, Vicksburg, Miss.: With regard to subject of your telegram of the 4th instant to General Meigs, the supply of stock and materials for the repair of the railroad from Vicksburg to Monroe, I am directed by the Secretary of War to say that the expediency of the expense is so much doubted as that it has been referred to Lieut. Gen. U. S. Grant. Jas. A. Hardie, Colonel and Inspector-General.'; word for word; grade C against the print.
+
+### N2-IF | Page 25 | 9685 | mssEC 18 (obj 10074, pointer 9685; printed page 19), 10 March 1864 Washington, to Lieut. Gen. Grant, Commander in Chief, Headquarters Army of the Potomac, signed (decoded) the Secretary of War (Stanton): pursuant to the authority of the act of Congress approved February 29 (decoded 'Feb 4700', M), the President by Executive order of this date has assigned to you the command of the Armies of the United States (N2R-4; row 9685/1; holder transcription, leaf not eye-checked)
+Caldwell  Wash'n Mar 10th 1864
+Huron Harriet for Bellows Polk in Chief Snake Peru
+Argus Pur su ant to the author it =
+y of the act of con gress ap prove =
+ed Feby Oliver Ellsworth Mason Douglas <insertion>Perkins</insertion> Baker the college
+by Execu tive or der of this date has
+as signed to you the Princeton of the persias
+of the U nited Sta = tes sig Costume Etc
+note: N2R-4: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .25/.45/.07); No. 1 reads 'Kirby Smith ... Culpepper ... Georgia', no clause; No. 2 reads the clause; the header has no hour; decoded day [4] against header day 10 is not a match (shuffle 3 of 200); 'Chattahoochee' for the print's 'authority' is a key mismatch (M), the clerk's 'Perkins' insertion is the decoded 'Perkins' (M). IN PRINT: OR I/33 (IA warofrebellion33unit) pp.663-664 (the page header 664 follows the next circular; leaf not opened), 'War Department, March 10, 1864 -- 1.40 p. m. Lieut. Gen. U. S. Grant, Commander-in-Chief, Hdqrs. Army of the Potomac: Pursuant to the authority of the act of Congress approved February 29, 1864, the President, by Executive order of this date, has assigned to you the command of the Armies of the United States. Edwin M. Stanton, Secretary of War.'; word for word; grade C against the print (the same order is in OR I/32 pt 3, IA warofrebellion323unit).
+
+### N2-IG | Page 246 | 9906 | mssEC 18 (obj 10074, pointer 9906; printed page 240), 5 Dec 1864 11 AM Washington, S. H. Beckwith (operator), to Lieut. Gen. Grant, signed Rufus Ingalls, Brig. General, Quartermaster (the ledger's own 'Roof us In galls'): the vessels will be ready; should they not be assembled at Bridgeport (M for the place name) instead of at Monroe (M); if so please cause General Rucker to be notified; I shall leave at 3 PM to-day (N2R-4; row 9906/0; holder transcription, leaf not eye-checked)
+S. H. Beckwith  Wash'n Dec 5th 1864 11. AM
+Fanny Dayton For Crowd The vassails trifle
+ready Pike Should they not be as
+sem bled at Bear mew day Douglas
+in steady of at Bunyan Stanhope If
+so please cause Shark Rucker toby notified
+Tulip I shall leave at Jennie Wherry
+yawl Roof us In galls Palermo Vermont
+note: N2R-4: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .41/.50/.22); No. 1 reads 'Knoxville ... Bowling Green ... Secretary of State', no clause; No. 2 reads the clause, decoded day [5] = header day (shuffle 7 of 200) and time 11 AM = header hour (shuffle 3 of 200); the clause 'I shall leave at 3 PM' carries a second decoded time word. The two place names are the key's values for place codes and are M here. Not located in print: see NOTES '## N2R-4'.
+
+### N2-IH | Page 79 | 9739 | mssEC 18 (obj 10074, pointer 9739; printed page 73), 19 May 1864 8.30 PM Washington (the ledger's '( 2 )' header), S. H. Beckwith (operator), to Lieut. Gen. Grant, signed (decoded) C. A. Dana (M): it is Canby and not Hurlbut who commands the combined departments of the Gulf and Arkansas; Hurlbut is not on duty; Banks is to be relieved and Reynolds appointed to command the department; the order will be issued tomorrow (N2R-4; row 9739/2; holder transcription, leaf not eye-checked)
+Beckwith ( 2 )  Washn 830 pm May 19
+Nelly Job Morgan for Crowds It is Canby & not
+Hurl but who prospects the combined quotients talbot Gulf &
+Asp tulip Hurl but is not on duty Lapland is
+to be relieved & Maxim appointed to princeton the quotient
+The order will be issued wedlock welch Mars by Jocks
+note: N2R-4: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .50/.57/.18); No. 1 reads 'Knoxville ... Hooker ... Gillmore', no clause; No. 2 reads the clause, decoded day [19] = header day (shuffle 7 of 200) and time 8.30 PM = header hour (shuffle 5 of 200). 'Hurlbut' is the ledger's plain spelling. Not located in print: see NOTES '## N2R-4'.
+
+### N2-II | Page 122 | 9782 | mssEC 18 (obj 10074, pointer 9782; printed page 116), 9 July 1864 Washington (ledger header 10.30 PM; decoded time 11 PM), to Lieut. Gen. Grant, signed Halleck: as the arrival of the Nineteenth Corps is very uncertain I think the remainder of the Sixth Corps should be sent to this place; I have ordered all troops [from the North] to be stopped at Baltimore for the defense of that city (N2R-4; row 9782/0; holder transcription, leaf not eye-checked)
+1030 pm  Washn July 9th 1864
+Magic tulip As arrival of Morgan pelton is
+very uncertain I think remainder of Dawson pelham
+should be sent to this place stop I
+have repeated all widow toby stopped at Baron
+for quince of that pontiac Mind Lady Susan
+note: N2R-4: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .48/.52/.08); same pointer as N2-FG (10 July 1864 12.30 AM, entry 2 of the leaf); this entry is entry 0. No. 1 reads 'Howard ... Baton Rouge ... Thomas', no clause; No. 2 reads the clause; the decoded time 11 PM equals the printed hour, the ledger header writes 10.30 PM (so the time word does not match the header, and the decoded day does not either: shuffle 3 of 200 for the time, 8 for the day). IN PRINT: OR I/40 pt 3 (IA warofrebellion403unit), 'Washington, July 9, 1864 -- 11 p. m. Lieutenant-General Grant, City Point, Va.: As the arrival of the Nineteenth Corps is very uncertain, I think the remainder of the Sixth Corps should be sent to this place. I have ordered all troops from the North to be stopped at Baltimore for the defense of that city. H. W. Halleck, Major-General and Chief of Staff.' (page not read from the OCR text; leaf not opened); word for word except the ledger's lacking 'from the North'; grade C against the print.
+
+### N2-IJ | Page 220 | 9880 | mssEC 18 (obj 10074, pointer 9880; printed page 214), 31 Oct 1864 3 PM Washington (ledger header 'No 2'), S. H. Beckwith (operator), to Lieut. Gen. Grant, signed H. W. Halleck: telegram just received from General Curtis states that Rosecrans has recalled his troops from the pursuit of Price; this is contrary to repeated orders; I have just telegraphed that the pursuit must be continued (N2R-4; row 9880/0; holder transcription, leaf not eye-checked)
+SH Beckwith No 2  Washn 3 pm Oct 31st 1864
+Jenny Woodbury Belly tulip Whim just received from Shark
+Curtis states that Mud has recalled his widow savory
+umber of Knight This is contrary to repeated repeats
+I have just whiffed that the umber must be
+continued Yawl Lady
+No 1
+note: N2R-4: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .50/.69/.27); No. 1 reads 'Culpepper ... Curtis ... Brannon', no clause; No. 2 reads the clause; the decoded day word is 'Monday' (not the header's 31) and the entry carries no decoded time word (header '3 pm' plain; control reads n/n/n, shuffle 0 of 200 for both). IN PRINT: OR I/41 pt 4 (IA warofrebellion414unit) p.337 (the page header 338 follows it; leaf not opened), 'Washington, D. C., October 31, 1864 -- 3 p. m. Lieutenant-General Grant, City Point: Telegram just received from General Curtis states that General Rosecrans has recalled his troops from the pursuit of Price. This is contrary to repeated orders. I have just telegraphed that the pursuit must be continued. H. W. Halleck, Major-General and Chief of Staff.'; word for word; grade C against the print.
