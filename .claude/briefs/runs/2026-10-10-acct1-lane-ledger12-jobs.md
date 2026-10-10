@@ -88,3 +88,6 @@ and LANE LEDGER-12", and NOTES "## S0-57XX (10 Oct 2026, account 1, for LANE LED
 ## HDR-NO9 (Sonnet 5.5; cap $1, box 40 min)
 LEDGER-11 next 4: header crops of 9845/0 and 9862/1 (`tools/iiif_lines.py --image <leaf on disk>` or, if absent, one IIIF fetch each under the hdl token),
 read the header (book label, time word) and write the No. 9 book call for each into NOTES "## NO9-L" as an addendum (decode nothing beyond the header).
+
+(08:19 UTC 10 Oct by date -u: wave 2 spawned with source_url: FV-MS18r session_01CXQMDaCTduUo8KJmfBkFDo, MS18-R11 session_019Uiw5ZjKovLPq4Db1PKCAi, FIX-FM23
+session_01X1cz8coPgpXQJyahaiGHtG, S0-57XX session_01DAazHZS5hJPjKWGu7FFmph, HDR-NO9 session_01MP9srFvpRKvXFXmsWFsUdX.)
