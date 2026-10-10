@@ -19642,3 +19642,97 @@ any of the six** at another pointer.
 - **E521**: none.
 - Unfiled holder rows met: **5853/0** (Dodge to Webster, 4 Jan 2.55 PM, in cipher; printed OR I/46 pt 2 pp.34-35: N1 if ever filed) and **5852/0** (Dodge
   to Webster, "is steamer Ben De Ford at Monroe?", the first of the pair; not located in print by this audit).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER16-2)
+
+Second verifier AUD2-LEDGER16-2 (account 1, session_011PnKvoc2gvGUqWPhdkFgpe, Opus 5.5, for LANE LEDGER-16; WORK-QUEUE row AUD2-LEDGER16-2), 10 Oct
+2026, 15:42-16:00 UTC by `date -u`. This is a separate session from the readers FM65-B to FM65-E and from the first verifier FV-L16b, and does not
+protect their conclusions. Scope: **E518, E526, E527, E546, E553, E554** (first audit "## AUDIT (FV-L16b)", all six N3). Nothing was decoded: every code
+group was looked up again in key.md, and the TIME page was read on its image (`images/mssEC41_p315.jpg`). Key source: `period` (War Department Cipher
+No. 1, mssEC 41). Step 0 was not used (a non-test on mssEC 25, Wave 2 RULING). There is no spec, so `judge_plaintext.py` was not run. Intake gate
+(15:4x UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Scripts and outputs (committed,
+`fortmonroe/`): `aud2_l16_2_print.py` (+ `.out`), `aud2_l16_2_gb.py` (+ `aud2_l16_2_gb.out` Grant Papers mode, `aud2_l16_2_g3.out` G3 mode),
+`aud2_l16_2_hdl.py` (+ `.out`), `aud2_l16_2_beapi.py` (+ `.out`, `aud2_l16_2_beapi2.out`), `aud2_l16_2_schol.py` (+ `.out`). No query below repeats
+one of FV-L16b's or CLEAR-SWEEP's (LEDGER-15 lesson 5).
+
+### 1. Prior work
+The six are not items.tsv rows. FV-L16b's prior-work run (`tools/prior_work.py ... --step-type audit`, exit 4, three target-level LEADs of other jobs
+plus three OR date-window LEADs, all CLEAR) was not changed by anything since: no ROOM claim or commit after 15:26 names these six apart from this job.
+The 8 Feb OR I/46 pt 2 window that the 5902 LEADs point to was read again in full (s.2).
+
+### 2. Families added by this audit
+| Family | Result |
+|---|---|
+| **G. H. Gordon, *A War Diary* (1882)**, full text, every Norfolk page of Jan-Mar 1865 (FV-L16b grepped only "Vogdes" and found nothing for 1865) | **p.378: "Shepley had been removed from the command of the District of Eastern Virginia, and from his position as military governor of Norfolk. Through an order which I vainly protested against, I was compelled on the 11th of February to take upon myself temporarily the command."** This is Gordon's own summary of E553 (his protest) and E554 (Ord's refusal). It does not reproduce the text of either telegram: it gives neither the Vogdes proposal nor Ord's wording. pp.376-378: the commission (opened 21 Jan at Norfolk), more than 50 witnesses, report filed with the War Department. **Correction to FV-L16b s.2**: the diary does cover Norfolk in 1865; it was missed because only "Vogdes" was searched. |
+| Butler, *Private and Official Correspondence* vol. V, KWIC on the names (FV-L16b ran a phrase grep only) | **p.545, W. P. Webster to Butler, Provost Court, Norfolk, 8 Feb 1865: "Gen. Shepley this morning received his notice that he was relieved ... Gen. Gordon is to succeed him."** The order therefore reached Norfolk on the morning of 8 Feb, before E553 (11 PM). p.558 (Webster, 26 Feb): "Vogdes has his reward by being placed in command of the Posts and all the troops" (GO No. 3, District of Eastern Virginia, 13 Feb, OR I/46 pt 2: context). Carney: other letters only (Nov 1864). No copy of any of the six. |
+| OR I/46 pt 2, every 7-10 Feb 1865 telegram with Gordon, Vogdes, Shepley, Norfolk or the commission (KWIC by offset) | p.347-348: **Grant to Ord, 1 Feb 4.30 p.m.**, proposing Vogdes for Norfolk "on relieving General Shepley" (the start of the exchange; FV-L16b quotes only the 7 Feb part of it); 7 Feb 6, 6.20 and 7 p.m. as FV-L16b; p.504 GO No. 21 of 9 Feb; p.523 Ord to Gordon, 10 Feb 8.30 p.m. (torpedo parties, other). **No telegram dated 8 Feb between Ord and Gordon is printed.** FV-L16b's reading stands. |
+| J. E. O'Brien, *Telegraphing in Battle* (1910), KWIC on Webster, Sheldon, Emerick, Parker, Eastville (lesson 6) | **pp.179-180, R. O'Brien's diary, Wednesday 4 Jan 1865: "Colonel Dodge making arrangements with Colonel Webster, quartermaster at Fort Monroe, in cipher, for Terry's expedition."** This independently confirms that the signer of E518 is Col. Webster, quartermaster at Fort Monroe, and that he handled the expedition's shipping in cipher that week; the "[Expedition]" of E518 is Terry's (Fort Fisher). George D. Sheldon is chief operator at Fort Monroe and Emerick took O'Brien's place as chief operator of the Army of the James (p.302): both confirm the operators named in the headers. None of the six is printed there. |
+| ORN ser. I vol. 12 (Michigan copy `officialrecords10librgoog`, full text on disk since AUD2-LEDGER15-1; FV-L16b had it only by be-api) | Lanman 0 (he sailed on 2 Feb). Parker = Cdr. F. A. Parker (Potomac Flotilla) and Lt. Cdr. James Parker commanding the *Maumee* off Wilmington, 22 Feb. If he is the *Minnesota*'s executive officer of E546, he had a ship of his own by 22 Feb; context only. Foster = acting officers. Nothing on E546. |
+| Plum vol. II, Dana's *Recollections* (1898), OR I/46 pts 1 and 3 (KWIC on the same names) | Elias Smith 0 in all; the Sheldon brothers and Emerick placed at Fort Monroe and Army of the James headquarters (Plum II); OR I/46 pt 3 Vogdes relieved in March (other). No copy. |
+| Huntington CONTENTdm full text (hdl take 15:5x, 16 CISOSEARCHALL incl. control -> 9678, all words new) | `Smith Tribune` 4 (5864 own; 8510 as FV-L16b; 8650/5936 = 21 Mar); `Webster Ingalls` 22: **7682 p.24** Ingalls, Fort Monroe 4 Jan ("Col R. C. Webster has the letter for Mr Draper"), **5853/5854** Dodge to Webster 4 Jan in cipher (the telegrams O'Brien's diary describes; see FV-L16a's note on 5853/0), **9928** 3 Jan Webster surplus vessels, **7734 p.76 "please telegh Col Webster or Capt James at Ft Monroe"** (confirms Capt. James under Webster, E526), 7745 other; `James forage` 11, `Abbott troops` 3 (7846: "Genl Abbott for siege ammunition", Ingalls, other); `Carney resign`, `Carney Eastville`, `White Carney` 1 each (5869 own only); `Lanman Foster` 0, `Minnesota Portsmouth` 0; `Parker Minnesota` 3 (7712/5886 Lanman 24 Jan, rams: other); `executive officer` 5 (5890 own; others 1864 or other); `Vogdes command` 1 (5636 = Apr 1864); `Gordon Vogdes` 1 (own); `Gordon commission` 3 (4263/4264 = 1863; own). **No holder clear copy of any of the six.** |
+| Google Books API (keyed, country=US), 14 new queries + control `"six vessels" Oriental` (hit vol. 13 mnRjmhe3QLoC), Grant Papers mode and G3 mode | Grant Papers 13/14: 0 for all 14. G3: `"Commodore Lanman" detached 1865` gives ORN I/12 contents ("Report of Commodore Lanman ... regarding the transfer of duties as senior officer in Hampton Roads"); *Officers of the Army and Navy (regular) who Served in the Civil War* (1892), "detached from the Minnesota", which is another officer's record; `"Major Carney" Negro affairs` gives *Afro-Virginian History and Culture*, *Dixie's Other Daughters*, Gerteis (*From Contraband to Freedman*) and the Chase letters (*Dear Ones at Home*, 1966), which confirm Carney's office and nothing more; *Army and Navy Journal* 1865, a snippet on the superintendent "of Negro Affairs in the Department of Virginia and North Carolina, and ordered to turn over all records" (who and when not read beyond the snippet: a lead for E527's context, not checked); `"General Vogdes" Gordon commission` gives OR I/46 pt 2 (House documents reprint), the 7 Feb exchange only; `Gordon "protested"` gives the *War Diary*, as above. No copy of any of the six. |
+| IA be-api, 9 whole-collection + 3 by identifier (control `"Suwo Nada"` hit 909) | `"William L. James" quartermaster "Fort Monroe"` gives **Grant Papers vol. 14 (`papersofulyssess0014gran`): "USG telegraphed to Capt. William L. James, Fort Monroe", and Babcock "telegraphed to Capt. William L. James, Fort Monroe"**, which confirms the E526 signer's post. `"George J. Carney" Eastville` gives Berlin et al., *Freedom* ser. I vol. 2 (`wartimegenesisof0000irab`), reports to Carney Dec 1864 (other). `"Joseph Lanman" "Foster"` gives *Lanman Family* (`lanmanfamilydesc00ston`): a Lanman of Norwich "married Lafayette Sabine Foster" (consistent with FV-L16b's genealogy note), and Lanman later commandant of the Portsmouth N.H. Navy Yard (after the war: other). `"Elias Smith" Tribune "Fort Fisher"`, `"Colonel Webster" "Elias Smith"`, `"vainly protested" Gordon` (the 1882 OCR is not hit by be-api), `"Gordon" "Vogdes" "Eastern District"`, `"Lanman" "detached" "Minnesota" 1865`: other texts. |
+| Open indexes (OpenAlex keyed, CrossRef; 5 queries each) | Nothing on these telegrams. One lead: the article "Contraband Trade during the Last Year of the Civil War" (CrossRef title only; author and journal not read here; the Gordon commission's subject). |
+| JSTOR | 6 rows appended to JSTOR-QUEUE.tsv (both families: names AND-ed; bare phrases "the investigation can progress quietly", "have me detached here"); they never block a class. |
+| Not reached | NARA RG 92, 107, 393, 45; the Gordon commission's report (War Department archives, per the *War Diary* p.379); the New York Tribune of Jan 1865; Grant Papers vol. 13 page by page; HathiTrust full text. |
+
+### 3. Image eye check and grades, checked
+- Page images 5864, 5867, 5869, 5890, 5902 (hdl take, 2400 px), each read whole on the image. **The transcription matches the image on all six**,
+  including every token FV-L16b ruled on ("walrus pandora Webster Vinton", "Sheaf Vincent youth William L James pilgrim A. Vinton", "Negro affairs",
+  "Frank J White Lieut. paradise and A A G Janeway July August and finis", "Faster Willards / Hotel growl", "Joseph Land Man", "torch Commission ditto",
+  "add Palate", "Topsy for palsy Gordon zebra", "shelby V will / not obtain walrus Mentor It is obtain very plain / Emerick"). E518's operator signature
+  is **"Geo. D. Sheldon"** on the image (5864), so FV-L16b's "Gen" -> "Geo." fix is confirmed. The leaf headers are as FV-L16b reads them: 5902 row 2 is
+  headed "Hd Qrs A. J. Feb 8/65 / Geo. D. Sheldon, Ft Monroe", signed by the operator Emerick, so E554 runs from Army of the James headquarters to Fort
+  Monroe.
+- Every code group of the six was looked up again in key.md and agrees with FV-L16b s.3 (Eugenia = 9.30 AM, Palate/Palsy = Brigadier General,
+  Vincent/Vinton = Quartermaster, France = New York, Rape = Expedition, Judah = Grant, Pandora/Paradise = Colonel, Shade = Forage, Whiskey = Troops (S,
+  KEY-TW), Shelter/Shelby = General, Pilgrim = Captain, Ramble = Follow, Quadroon = Department, Flag = 11, Tappan = Major, Farmer = Norfolk, Knox =
+  Butler, Animal = Monroe, Emma = 9 AM, Growl = Washington, Asia = New Hampshire, Wreathe = Telegraph, Polka = Command, Sarah = 11 PM, Mentor = Ord,
+  Torch = Of the, Obtain = a line indicator, Unity/Zebra/Zodiac = period, Walrus/Youth/Yoke = signature), as do the collisions it resolved as plain
+  (Webster, William, Negro, White, Hotel).
+- **One grade raised, E554's time word.** The TIME page of mssEC 41 (pointer 315, image read this session) writes **"Francis 12 (noon)"** in the A.M.
+  column and **"Topsy 12 (midnight)"** in the P.M. column. So "Topsy" = **12 midnight**, grade H from the key itself. FV-L16b graded it M ("noon or
+  midnight; midnight coherent") from the ledger order and GO No. 21; the key settles it, and FV-L16b's inference was right. key.md's row 1024 reads only
+  "12 (time word)" and should say "12 midnight" (likewise Francis "12 noon"). E554 counts: H 7 + M 2 of 9 is unchanged, since Topsy was already counted
+  H; only the gloss and its grade note change.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E518 | **N3** (kept) | period | **D3** (kept; a second external check: O'Brien's diary 4 Jan 1865, Webster quartermaster at Fort Monroe handling Terry's expedition in cipher) | not located after FV-L16b and s.2 |
+| E526 | **N3** (kept) | period | **D2** (kept; the signer's post is now confirmed by Grant Papers vol. 14 and holder 7734, but the content is not; short) | not located after FV-L16b and s.2 |
+| E527 | **N3** (kept) | period | **D3** (kept) | not located after FV-L16b and s.2 |
+| E546 | **N3** (kept) | period | **D3** (kept) | not located after FV-L16b and s.2; ORN I/12 now read in full text |
+| E553 | **N3** (kept; its substance is summarised in print by its sender, its text is not) | period | **D3** (kept; a second external check: Gordon, *War Diary* p.378, "an order which I vainly protested against") | not located after FV-L16b and s.2 |
+| E554 | **N3** (kept; as E553) | period | **D2** (kept; H 7 + M 2 of 9 = 78%, under the D3 line; external check now Gordon p.378 as well as GO No. 21; time = 12 midnight, H) | not located after FV-L16b and s.2 |
+- **Not N4:** NARA RG 92/107/393/45 and the Gordon commission's report are unread; Grant Papers vol. 13 has been searched by snippets only; the New York
+  Tribune of January 1865 is unread (E518).
+- **Safe sentences:** FV-L16b's six stand, each search tail extended with "ORN ser. I vol. 12, G. H. Gordon's War Diary (1882) and J. E. O'Brien's
+  Telegraphing in Battle (1910) in full text". Additions: E553 / E554 may add "Gordon's own War Diary (1882, p.378) summarises the outcome: 'Through an
+  order which I vainly protested against, I was compelled on the 11th of February to take upon myself temporarily the command.'" E554: "at 12
+  midnight, 8-9 Feb" (the key's TIME page). E518 may add "R. O'Brien's diary for 4 Jan 1865 records Colonel Webster, quartermaster at Fort Monroe,
+  arranging Terry's expedition in cipher."
+- **Unsafe:** "first", "new", "unpublished", "never printed" for any of the six; "not in print" for E553/E554 without saying that Gordon's memoir
+  summarises the protest; E554 "at noon".
+- **Depth sentences** (D2+): FV-L16b's stand. E553's depth_check adds Gordon p.378, and E554's time is midnight.
+
+### 5. Postmortem, leads and propagation
+- No over-claim was found in FV-L16b's classes. Two misses: (a) its "Gordon's *War Diary* ... nothing on Norfolk 1865" is wrong, because p.378
+  summarises E553/E554, though it does not print them, so the class stands; (b) E554's hour was left M when the key's own TIME page settles it.
+  Lesson: grep a memoir by the event (commission, Shepley, command), not only by the rival's name; and read the key page for the time word before
+  calling it ambiguous.
+- **For the FIX job (FV-L16b s.5, not applied here), add:** E554 time "12 midnight" (Topsy, TIME page "12 (midnight)", H), replacing "12 noon or 12.30
+  PM" in the reading-block header; key.md row "Topsy | 12 (time word)" -> "12 midnight (time word)" and "Francis | 12 (time word)" -> "12 noon (time
+  word)" (the TIME page's own parentheses); E553/E554 header context "+ Gordon, War Diary (1882) p.378; Butler Corr. V p.545 (Shepley notified the
+  morning of 8 Feb)"; E518 context "+ O'Brien, Telegraphing in Battle pp.179-180 (4 Jan, Webster in cipher for Terry's expedition)"; E526 context "+
+  Capt. William L. James at Fort Monroe: Grant Papers vol. 14, holder 7734 p.76".
+- **Leads (not done here):** the article "Contraband Trade during the Last Year of the Civil War" (CrossRef title) for the Gordon commission; the *Army and
+  Navy Journal* 1865 snippet on the superintendent of Negro Affairs "ordered to turn over all records" (E527 context); the Gordon
+  commission's report in RG 107/RG 94.
+- Propagated: status.json E518 E526 E527 E546 E553 E554 -> audit_status "two audits", audit_refs + this section, gap and line updated, depth_check
+  extended for E518 E553 E554 (`tools/depth_check.py --strict`); the six second-opinion prompts' "where we have looked" lists updated (ORN I/12),
+  context lines for E518 E526 E553 E554 extended, E554's reading shows "[12 midnight]"; rows SO-ECKERT-E518/E526/E527/E546/E553/E554 stay queued;
+  WORK-QUEUE AUD2-LEDGER16-2 -> done.
+- Requests: hdl.huntington.org 21 (16 CISOSEARCHALL + 5 IIIF, all 200); be-api.us.archive.org 12 (all 200); www.googleapis.com 30 (all 200);
+  archive.org 0 (all texts from the print-check cache on disk); api.openalex.org 5, api.crossref.org 5.
+For LANE LEDGER-16 (account 1).

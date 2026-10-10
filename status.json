@@ -15079,11 +15079,12 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L16b)'"
+        "AUDIT.md '## AUDIT (FV-L16b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER16-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth_by": "FV-L16b verifier (account 1)",
+      "depth_by": "FV-L16b verifier (account 1); confirmed AUD2-LEDGER16-2",
       "depth_date": "10 Oct 2026",
       "decode_status": "Partially decrypted",
       "date": "10 Oct 2026",
@@ -15101,8 +15102,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Col. R. C. Webster, chief quartermaster, Fort Monroe, to Ingalls at City Point, 7 Jan 1865: will General Grant let Elias Smith, New York Tribune correspondent, pass on the next boat joining the expedition? (E518)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 7 Jan 1865 Col. R. C. Webster, chief quartermaster at Fort Monroe, asked Brig. Gen. Ingalls at City Point whether General Grant would let Elias Smith, correspondent of the New York Tribune, pass on the next boat joining the expedition; the Huntington holds only Smith's own request to Dana of the same morning (pointer 8510); not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vols. IV-V, The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L16b); not N4: Grant Papers vol. 13 by snippets only, NARA RG 92/107 unread, the Tribune of January 1865 unread",
+      "line": "Read at grade H with War Department Cipher No. 1: on 7 Jan 1865 Col. R. C. Webster, chief quartermaster at Fort Monroe, asked Brig. Gen. Ingalls at City Point whether General Grant would let Elias Smith, correspondent of the New York Tribune, pass on the next boat joining the expedition; the Huntington holds only Smith's own request to Dana of the same morning (pointer 8510); not located in the Official Records ser. I vols. 46-47, ORN ser. I vols. 11-12, Butler's correspondence vols. IV-V, G. H. Gordon's War Diary (1882), J. E. O'Brien's Telegraphing in Battle (1910), The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 two audits (FV-L16b, AUD2-LEDGER16-2); not N4: Grant Papers vol. 13 by snippets only, NARA RG 92/107 unread, the Tribune of January 1865 unread",
       "depth": "D3",
       "completeness": "10 H of 10 code-word groups (\"Webster\" plain, the signer)",
       "phrases": [
@@ -15113,18 +15114,19 @@
         "Huntington mssEC 25 (obj 5952) p.320, pointer 5864, E518"
       ],
       "depth_sentence": "On 7 Jan 1865 Fort Monroe's chief quartermaster asked Ingalls whether Grant would let the Tribune's Elias Smith go on the next boat joining the Fort Fisher expedition.",
-      "depth_check": "code: france = New York, rape = Expedition, Judah = Grant, palate = Brigadier General, Eugenia = 9.30 AM read passim; external (non-statistical): holder 8510 (mssEC 25 p.32), Smith to Dana 9.20 AM 7 Jan asking War Department permission to go on the expedition; OR I/46 pt 2, Webster chief quartermaster at Fort Monroe (Grant to Berrien, 3 Jan); image 5864 re-read",
+      "depth_check": "code: france = New York, rape = Expedition, Judah = Grant, palate = Brigadier General, Eugenia = 9.30 AM read passim; external (non-statistical): holder 8510 (mssEC 25 p.32), Smith to Dana 9.20 AM 7 Jan asking War Department permission to go on the expedition; OR I/46 pt 2, Webster chief quartermaster at Fort Monroe (Grant to Berrien, 3 Jan); image 5864 re-read; second audit: R. O'Brien's diary 4 Jan 1865 (J. E. O'Brien, Telegraphing in Battle, 1910, pp.179-180), Colonel Webster, quartermaster at Fort Monroe, arranging Terry's expedition in cipher",
       "depth_note": "10 H of 10 code-word groups (\"Webster\" plain, the signer)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L16b)'"
+        "AUDIT.md '## AUDIT (FV-L16b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER16-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth_by": "FV-L16b verifier (account 1)",
+      "depth_by": "FV-L16b verifier (account 1); confirmed AUD2-LEDGER16-2",
       "depth_date": "10 Oct 2026",
       "decode_status": "Partially decrypted",
       "date": "10 Oct 2026",
@@ -15142,8 +15144,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Fort Monroe quartermaster (Capt. William L. James) to Emerick at City Point, add to Ingalls's message, 9 Jan 1865: no other forage vessels here; no troops arrived or sailed; General Abbott not seen (E526)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 9 Jan 1865 the Fort Monroe quartermaster's office (Capt. William L. James, by direction of the chief quartermaster) added to Ingalls's message that there were no other forage vessels at Fort Monroe, that no troops had arrived or sailed, and that General Abbott had not been seen; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vols. IV-V, The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L16b), short (34 tokens); not N4: Grant Papers vol. 13 by snippets only, NARA RG 92 unread",
+      "line": "Read at grade H with War Department Cipher No. 1: on 9 Jan 1865 the Fort Monroe quartermaster's office (Capt. William L. James, by direction of the chief quartermaster) added to Ingalls's message that there were no other forage vessels at Fort Monroe, that no troops had arrived or sailed, and that General Abbott had not been seen; not located in the Official Records ser. I vols. 46-47, ORN ser. I vols. 11-12, Butler's correspondence vols. IV-V, G. H. Gordon's War Diary (1882), J. E. O'Brien's Telegraphing in Battle (1910), The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 two audits (FV-L16b, AUD2-LEDGER16-2), short (34 tokens); not N4: Grant Papers vol. 13 by snippets only, NARA RG 92 unread",
       "depth": "D2",
       "completeness": "9 H + 1 S of 10 code-word groups (\"William\" plain)",
       "phrases": [
@@ -15154,18 +15156,19 @@
         "Huntington mssEC 25 (obj 5952) p.323, pointer 5867, E526"
       ],
       "depth_sentence": "On 9 Jan 1865 Fort Monroe reported no other forage vessels there and no troops arrived or sailed, adding that General Abbott had not been seen.",
-      "depth_check": "code: shade = Forage, whiskey = Troops (S), Shelter = General, pilgrim = Captain, Vinton = Quartermaster read passim; context only: OR I/46 pt 2 p.105 Ingalls 12 Jan, half rations of forage at City Point; image 5867 re-read",
+      "depth_check": "code: shade = Forage, whiskey = Troops (S), Shelter = General, pilgrim = Captain, Vinton = Quartermaster read passim; context only: OR I/46 pt 2 p.105 Ingalls 12 Jan, half rations of forage at City Point; image 5867 re-read; second audit: signer's post confirmed (Capt. William L. James at Fort Monroe: Grant Papers vol. 14; holder 7734 p.76), content not",
       "depth_note": "9 H + 1 S of 10 code-word groups (\"William\" plain)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L16b)'"
+        "AUDIT.md '## AUDIT (FV-L16b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER16-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth_by": "FV-L16b verifier (account 1)",
+      "depth_by": "FV-L16b verifier (account 1); confirmed AUD2-LEDGER16-2",
       "depth_date": "10 Oct 2026",
       "decode_status": "Partially decrypted",
       "date": "10 Oct 2026",
@@ -15183,8 +15186,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Fort Monroe to the War Department for approval, 12 Jan 1865: Lt. Col. Frank J. White, Eastville, 11 Jan, to Maj. George J. Carney, Superintendent of Negro Affairs, Norfolk: Butler is relieved, I think I will resign, what are you going to do? (E527)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 12 Jan 1865 Fort Monroe forwarded to the War Department, for approval, a telegram of 11 Jan from Lt. Col. Frank J. White at Eastville to Maj. George J. Carney, Superintendent of Negro Affairs at Norfolk: Butler is relieved, White thinks he will resign, and asks what Carney is going to do; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vols. IV-V, The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L16b); not N4: Grant Papers vol. 13 by snippets only, NARA RG 107 unread, Butler's own papers (LC) unread",
+      "line": "Read at grade H with War Department Cipher No. 1: on 12 Jan 1865 Fort Monroe forwarded to the War Department, for approval, a telegram of 11 Jan from Lt. Col. Frank J. White at Eastville to Maj. George J. Carney, Superintendent of Negro Affairs at Norfolk: Butler is relieved, White thinks he will resign, and asks what Carney is going to do; not located in the Official Records ser. I vols. 46-47, ORN ser. I vols. 11-12, Butler's correspondence vols. IV-V, G. H. Gordon's War Diary (1882), J. E. O'Brien's Telegraphing in Battle (1910), The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 two audits (FV-L16b, AUD2-LEDGER16-2); not N4: Grant Papers vol. 13 by snippets only, NARA RG 107 unread, Butler's own papers (LC) unread",
       "depth": "D3",
       "completeness": "10 H of 10 code-word groups (\"Negro\" and \"White\" plain)",
       "phrases": [
@@ -15202,11 +15205,12 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L16b)'"
+        "AUDIT.md '## AUDIT (FV-L16b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER16-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth_by": "FV-L16b verifier (account 1)",
+      "depth_by": "FV-L16b verifier (account 1); confirmed AUD2-LEDGER16-2",
       "depth_date": "10 Oct 2026",
       "decode_status": "Partially decrypted",
       "date": "10 Oct 2026",
@@ -15224,8 +15228,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Commodore Joseph Lanman, U.S.S. Minnesota, via Fort Monroe to Senator L. S. Foster at Willard's Hotel, 29 Jan 1865: ship ordered to Portsmouth, N.H.; I do not wish to go; have me detached here by telegraph; Lieut. Commander Parker can take the ship (E546)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 29 Jan 1865 Commodore Joseph Lanman of the U.S.S. Minnesota telegraphed Senator L. S. Foster at Willard's Hotel that his ship was ordered to Portsmouth, New Hampshire, that he did not wish to go, and asked to be detached there by telegraph, his executive officer Lieut. Commander Parker being able to take the ship; ORN ser. I vol. 11 p.725 prints only the Minnesota's departure for Portsmouth on 2 Feb; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vols. IV-V, The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L16b); not N4: ORN I/12 by be-api only, NARA RG 45 and RG 107 unread, Foster's papers unread",
+      "line": "Read at grade H with War Department Cipher No. 1: on 29 Jan 1865 Commodore Joseph Lanman of the U.S.S. Minnesota telegraphed Senator L. S. Foster at Willard's Hotel that his ship was ordered to Portsmouth, New Hampshire, that he did not wish to go, and asked to be detached there by telegraph, his executive officer Lieut. Commander Parker being able to take the ship; ORN ser. I vol. 11 p.725 prints only the Minnesota's departure for Portsmouth on 2 Feb; not located in the Official Records ser. I vols. 46-47, ORN ser. I vols. 11-12, Butler's correspondence vols. IV-V, G. H. Gordon's War Diary (1882), J. E. O'Brien's Telegraphing in Battle (1910), The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 two audits (FV-L16b, AUD2-LEDGER16-2); not N4: NARA RG 45 and RG 107 unread, Foster's papers unread",
       "depth": "D3",
       "completeness": "8 H of 8 body code-word groups (\"Hotel\" plain; header \"Washington\" a known slip)",
       "phrases": [
@@ -15243,11 +15247,12 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L16b)'"
+        "AUDIT.md '## AUDIT (FV-L16b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER16-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth_by": "FV-L16b verifier (account 1)",
+      "depth_by": "FV-L16b verifier (account 1); confirmed AUD2-LEDGER16-2",
       "depth_date": "10 Oct 2026",
       "decode_status": "Partially decrypted",
       "date": "10 Oct 2026",
@@ -15265,8 +15270,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Brig. Gen. George H. Gordon via Fort Monroe to Ord, 8 Feb 1865 11 PM: suggests the command of the Eastern District go temporarily to General Vogdes, as all his time goes to the investigation (E553)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 8 Feb 1865 Brig. Gen. George H. Gordon suggested to General Ord that the command of the Eastern District be given temporarily to General Vogdes, since all his own time and attention went to the investigation; the Official Records print the outcome (General Orders No. 21 of 9 Feb, OR ser. I vol. 46 pt 2 p.504) and Ord's objection to Vogdes (p.348), not this telegram; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vols. IV-V, The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L16b); not N4: Grant Papers vol. 13 by snippets only, the Gordon commission's papers and NARA RG 393 unread",
+      "line": "Read at grade H with War Department Cipher No. 1: on 8 Feb 1865 Brig. Gen. George H. Gordon suggested to General Ord that the command of the Eastern District be given temporarily to General Vogdes, since all his own time and attention went to the investigation; the Official Records print the outcome (General Orders No. 21 of 9 Feb, OR ser. I vol. 46 pt 2 p.504) and Ord's objection to Vogdes (p.348), not this telegram, and Gordon's own War Diary (1882) p.378 summarises his protest without the text; not located in the Official Records ser. I vols. 46-47, ORN ser. I vols. 11-12, Butler's correspondence vols. IV-V, G. H. Gordon's War Diary (1882), J. E. O'Brien's Telegraphing in Battle (1910), The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 two audits (FV-L16b, AUD2-LEDGER16-2); not N4: Grant Papers vol. 13 by snippets only, the Gordon commission's papers and NARA RG 393 unread",
       "depth": "D3",
       "completeness": "9 H of 9 code-word groups",
       "phrases": [
@@ -15277,18 +15282,19 @@
         "Huntington mssEC 25 (obj 5952) p.358, pointer 5902, E553"
       ],
       "depth_sentence": "On 8 Feb 1865 Gordon asked Ord to give the Eastern District to Vogdes for the time being so that he could keep at the investigation.",
-      "depth_check": "code: Mentor = Ord, polka = Command, Shelby = General, Palate = Brigadier General, Sarah = 11 PM read passim; external (non-statistical): OR I/46 pt 2 p.348 Ord to Grant 7 Feb (Vogdes to relieve Gordon on the commission; Vogdes unfit), p.504 General Orders No. 21, 9 Feb (Gordon temporarily to the District of Eastern Virginia); image 5902 re-read",
+      "depth_check": "code: Mentor = Ord, polka = Command, Shelby = General, Palate = Brigadier General, Sarah = 11 PM read passim; external (non-statistical): OR I/46 pt 2 p.348 Ord to Grant 7 Feb (Vogdes to relieve Gordon on the commission; Vogdes unfit), p.504 General Orders No. 21, 9 Feb (Gordon temporarily to the District of Eastern Virginia); image 5902 re-read; second audit: G. H. Gordon, A War Diary (1882) p.378, 'Through an order which I vainly protested against, I was compelled on the 11th of February to take upon myself temporarily the command' (summary, not the text)",
       "depth_note": "9 H of 9 code-word groups"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L16b)'"
+        "AUDIT.md '## AUDIT (FV-L16b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER16-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth_by": "FV-L16b verifier (account 1)",
+      "depth_by": "FV-L16b verifier (account 1); confirmed AUD2-LEDGER16-2",
       "depth_date": "10 Oct 2026",
       "decode_status": "Partially decrypted",
       "date": "10 Oct 2026",
@@ -15306,8 +15312,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Ord, Hd Qrs Army of the James, to Gordon via Fort Monroe, 8 Feb 1865 at 12: you will have to take the command for the present; the investigation can go on quietly at the same time (E554)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 8 Feb 1865 General Ord answered Gordon that he would have to take the command for the present, the investigation going on quietly at the same time, with a further word on General V[ogdes] not read; the Official Records print the outcome (General Orders No. 21 of 9 Feb, OR ser. I vol. 46 pt 2 p.504), not this telegram; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Butler's correspondence vols. IV-V, The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L16b), short (24 tokens), 'obtain' x2 unread; not N4: Grant Papers vol. 13 by snippets only, NARA RG 393 unread",
+      "line": "Read at grade H with War Department Cipher No. 1: at 12 midnight, 8-9 Feb 1865, General Ord answered Gordon that he would have to take the command for the present, the investigation going on quietly at the same time, with a further word on General V[ogdes] not read; the Official Records print the outcome (General Orders No. 21 of 9 Feb, OR ser. I vol. 46 pt 2 p.504), not this telegram; not located in the Official Records ser. I vols. 46-47, ORN ser. I vols. 11-12, Butler's correspondence vols. IV-V, G. H. Gordon's War Diary (1882), J. E. O'Brien's Telegraphing in Battle (1910), The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 two audits (FV-L16b, AUD2-LEDGER16-2), short (24 tokens), 'obtain' x2 unread; not N4: Grant Papers vol. 13 by snippets only, NARA RG 393 unread",
       "depth": "D2",
       "completeness": "7 H + 2 M of 9 code-word groups (\"obtain\" x2 M, unread)",
       "phrases": [
@@ -15318,7 +15324,7 @@
         "Huntington mssEC 25 (obj 5952) p.358, pointer 5902, E554"
       ],
       "depth_sentence": "Ord told Gordon he must take the district command himself for now and carry on the investigation quietly at the same time.",
-      "depth_check": "code: Mentor = Ord, polka = Command, palsy = Brigadier General, Topsy = 12 read passim; external (non-statistical): OR I/46 pt 2 p.504 General Orders No. 21, 9 Feb 1865, Gordon temporarily assigned to the District of Eastern Virginia; image 5902 re-read",
+      "depth_check": "code: Mentor = Ord, polka = Command, palsy = Brigadier General, Topsy = 12 read passim; external (non-statistical): OR I/46 pt 2 p.504 General Orders No. 21, 9 Feb 1865, Gordon temporarily assigned to the District of Eastern Virginia; image 5902 re-read; Topsy = 12 midnight (TIME page, '12 (midnight)', H); second audit: G. H. Gordon, A War Diary (1882) p.378 (summary of the protest and refusal, not the text)",
       "depth_note": "7 H + 2 M of 9 code-word groups (\"obtain\" x2 M, unread)"
     },
     {
