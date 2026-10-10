@@ -14008,3 +14008,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 09:51 | L14-A worker | claim: eckert-1864 ms18, 8 No. 1 rows 9835/1 9877/1 9793/0 9826/0 9806/2 9777/1 9823/3 9865/1 (IDs E600-E609); cap 2.5, box 09:51-11:31 UTC (80% stop 11:11); for LANE LEDGER-14 (account 1)
 2026-10-10 09:51 | FAM-BNEPRINT worker | claim (09:5x UTC 10 Oct by date -u; bne20211-ferdinand-1478 Paz y Melia print check; cap 1.5, box to 10:4x UTC) for LANE FAMILY-A2p (account 2)
 2026-10-10 09:52 | L14-C (Sonnet 5.5 reader) | claim: 9 held mssEC 18/19 rows (No.1 9869/4 9764/1 9897/1 9862/0 9885/3; No.2 9848/0 9811/0 9688/0 9850/2), cap USD 2.5, box 100 min; for LANE LEDGER-14 (account 1)
+2026-10-10 09:53 | L14-C (Sonnet 5.5 reader) | hdl.huntington.org take (09:53 UTC 10 Oct by date -u; 10 CISOSEARCHALL incl. control 9678, no images; last prior take FM-F1 released 09:35); for LANE LEDGER-14 (account 1)
