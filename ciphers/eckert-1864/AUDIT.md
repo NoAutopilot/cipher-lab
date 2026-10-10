@@ -14255,3 +14255,69 @@ Corrections (a verifier does not edit ciphertext-no2.txt or reading-no2.md):
 Requests: hdl.huntington.org 17 (13 CISOSEARCHALL, 4 IIIF 2400 px; all 200); archive.org 5 djvu (all 200); be-api.us.archive.org 21 (all answered);
 www.googleapis.com/books 7 (all 200). Queued: WORK-QUEUE `AUD2-LEDGERN2-4` (N2-HF), SO-ECKERT-N2-HF. No status.json/SO row for N2-HB, N2-HC (N1). For LANE
 LEDGER-N2 (account 1).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER-35)
+
+Second verifier AUD2-LEDGER-35 (account 4, for the orchestrator (account-4); row queued by FV-MS18k for LANE LEDGER (account 1), re-tagged from account 3),
+10 Oct 2026, 02:24-02:4x UTC by `date -u`; a separate session and account from the reader MS18-R5 and the first auditor FV-MS18k (account 1); this session
+had not read or audited E357 before. Scope: **E357** only (E359 is N1, not re-audited). Nothing decoded beyond key look-ups. Key source: `period`. No spec
+exists for eckert-1864, so `judge_plaintext.py` was not run. Re-derivation: `python3 ciphers/eckert-1864/decode.py --check` -> "reading.md is current".
+Image not re-checked (FV-MS18k eye-checked ten line crops at 2400 px). Committed (`ms18/`): `aud2_ledger35_hdl.py` + `.out` (10 CONTENTdm queries),
+`aud2_ledger35_info.out` (10 item infos); `aud2_ledger35_search.py` + `.out` (Google Books 8, Chronicling America 5, IA be-api 5, S2/CORE/OpenAlex 2 each);
+`aud2_ledger35_be.out` (10 of the 12 inline be-api queries on Grant Papers 12; the other two re-ran search.py queries for their highlights); `aud2_ledger35_ca_pages.py` + `.out` (4 named pages). OR text: I/42 pt 2
+(`warofrebellion422unit`) and I/43 pt 1 (`warofrebellion431unit_0`) djvu text fetched to scratch and grepped whitespace-normalised. Note for later
+workers: `sources/ia-fulltext/print-check/warofrebellion431unit_djvu.txt.gz` is **OR I/47 pt 2** (Sherman, 1865), not I/43 pt 1 -- use `_0`.
+
+### 1. Families FV-MS18k did not cover, and what this pass did
+| Family | FV-MS18k | This pass |
+|---|---|---|
+| Official Records, adversarial re-read of the near misses | I/42 pt 2 p.291 (Halleck 19 Aug), p.330 (Sharpe 20 Aug) called "other telegrams" | Read whole on normalised text. **Sharpe to McEntee, City Point, 20 Aug 1864 (received 8.15 p.m.), OR I/42 pt 2 p.330:** "We have news from Orange Court-House from our own men up to Wednesday morning last. No troops had passed there from General Lee's army since the division of Longstreet's corps, which passed two weeks ago to-day, except Fitzhugh Lee's cavalry. Both the old men agree that no infantry has passed either way for the past two weeks" (+ Hancock's deserters). **Grant to Sheridan, City Point, 21 Aug 1864 5 p.m., OR I/43 pt 1 p.870:** "A man employed by the provost-marshal visits Orange Court-House regularly and gets accurate reports from there. Not a regiment has passed there in the last two weeks going either way." **Sharpe to Babcock, 12 Aug, OR I/42 pt 2 p.127:** "Dispatch from Captain Leet says that our men report these troops to have passed through Gordonsville" -- Sharpe epitomises Leet's telegrams (also 1 Sept, p.630: "a telegram from Captain Leet regarding Early" of 29 Aug, epitomised from memory). Neither the 20 nor the 21 Aug text carries E357's rumour (Fitzhugh Lee beaten, artillery and prisoners lost) or its "joined Early / none had left him" frame; both report Orange C.H. traffic from the provost-marshal's own men ("the old men"). Verdict below. Grep of I/42 pt 2 and I/43 pt 1 for Fitz(hugh) Lee + beaten/whipped, 'badly beaten', 'all his artillery', rumo(u)r + Orange: nothing for 17-25 Aug 1864 |
+| Grant Papers vol. 12 (be-api, `papersofulyssess0012gran`) | 5 queries | 15 more (5 in search.py, 10 inline, + 2 re-runs for highlights): '"Orange Court House" Fitzhugh' -> index only (Orange C.H. pp.64, 107n, 438) and the 21 Aug Grant-to-Sheridan text above (so printed there too); '"badly beaten"' 0; '"badly whipped"' 1 (Reams Station; Early, 20 Sept: other); 'Leet "August 19"' 0; 'Leet Bowers August' 0; '"joined Early"' 1 doc (Culpeper scouts, "Longstreet had joined Early with five thousand men": other); '"Wednesday last"' 0; '"Fitzhugh Lee"' 0 (index form "Lee, Fitzhugh"); '"Fitz Lee"' 1 doc (Rooney/Fitz Lee, Fitz Lee ordered back from the Valley: other); positive control '"no troops had moved to or from the Valley"' answers. Page-by-page reading of vol. 12 around 19-21 Aug not done (lending-only item) |
+| Huntington CONTENTdm, new queries (all pointers) | 8 queries | 10 more: Fitz Lee 17; Fitzhugh 26 (incl. **9825** own); Orange beaten 1 (7582, 1863); Orange artillery prisoners 2; Leet Bowers 7 (7883, 9047, 9059, 9060, 9061, **9825** own, 9913); joined Early 2; Wednesday last Early 7 (9044, 9825 own, others); badly beaten 3; Sharpe Orange 2; Orange Court House 20. Item info read: **9044/2** (Beckwith & McCaine, Wash. 12 Aug 1864, Leet for Bowers: "... Pelton was sent to Early last Friday ... Fitz Hugh Hunters Panama was France Feather Wednesday night ..." = the 12 Aug Leet scout telegram Sharpe epitomised, a sibling of the same series, other text); **9047/2** (14 Aug 1864, "For Lt Pearl Bowers ... Sharpes [men?] ... are not disposed to go out", sibling); **9061/2** (1 Sept 1864, Leet for Bowers, railway report, sibling); 9913, 9393, 10153, 9783 (Monocacy "so badly beaten", July 1864), 10412, 6947, 4461: other. **No duplicate or clear copy of E357** |
+| Press of 19-31 Aug 1864 (Chronicling America) | not searched | 5 queries (1 x IncompleteRead, not retried; 2, 1, 7, 25 pages); 4 pages read: **New-York Daily Tribune 20 Aug p.1** quoting the Richmond press: "There are reports afloat that Fitz Lee's Cavalry had defeated the enemy near Front Royal" (the opposite rumour); **Cleveland Morning Leader 25 Aug p.1** and **Muscatine Weekly Journal 26 Aug p.3** (NY Times special, Washington 23 Aug): Fitzhugh Lee reported killed on the Weldon road, Sunday 21 Aug, "No information has been received here confirming" it; Evening Star 23 Aug p.2: no Fitz hit. **No paper prints the telegram or its Orange C.H. rumour** |
+| Google Books (key, country=US) | not searched | 8 queries ("Fitzhugh Lee's cavalry had been badly beaten", "Lee's cavalry had been badly beaten" Orange, "rumored at Orange", "no other troops than those already reported", Leet Bowers "August 19, 1864", "joined Early" + Orange + Fitzhugh, "Fitz Lee" "badly beaten" Aug 1864, Leet "Elgin" cipher): API word-matching noise only (Crisis of Command, Rebellion Record, Battles and Leaders etc. on other events); **0 relevant** |
+| S2, CORE, OpenAlex | not searched | 2 each (S2 2 x 429, not retried): nothing on the telegram |
+| Unreachable / not searched | -- | NARA RG 107 (telegrams sent), RG 108 (Grant HQ telegrams received), RG 393 (Bureau of Military Information); Grant Papers 12 page by page (lending-only); HathiTrust (Cloudflare); JSTOR (no row queued: a 19 Aug 1864 scout telegram is not a plausible journal quotation; family (ii) phrase "had been badly beaten, losing all his artillery" left for the owner's runner if wanted, never blocking); Fishel, *The Secret War for the Union* (1996, BMI history; snippet/print only, not reached by the 8 GB queries) |
+
+### 2. Findings
+- **No copy, quotation or printed text of E357 found.** The adversarial candidate is Sharpe's 20 Aug telegram (OR I/42 pt 2 p.330). It shares the
+  Wednesday cut-off, "our own men", and "no troops ... except Fitzhugh Lee's cavalry", and Sharpe is shown elsewhere epitomising Leet's telegrams. But it
+  reports traffic *passing Orange C.H.* from "the old men" (the provost-marshal's agents, cf. Grant 21 Aug), not troops *joining or leaving Early*, and has
+  no trace of E357's second half (the rumour that Fitzhugh Lee's cavalry was badly beaten, losing all its artillery and many prisoners). It is a parallel
+  report from the same intelligence stream, probably the City Point end of the same scouts' news, not a print of E357's text: **it does not make N1 or N2**.
+- **The rumour.** No print found carries it. The nearest events: Guard Hill / Front Royal, 16 Aug 1864 (Wickham's brigade of Fitz Lee's division
+  and Kershaw's infantry repulsed by Merritt; the Richmond press claimed the opposite, NY Tribune 20 Aug); the Weldon road reports of 23-24 Aug that
+  Fitzhugh Lee was killed. Which action the Orange C.H. rumour reflects stays unsettled (FV-MS18k s.3a); a context question, not a reading one.
+- **Corrections to FV-MS18k:** none to class, counts or depth. One precision: its s.2 calls p.330 "other telegrams" -- right, but the 21 Aug Grant to
+  Sheridan text (OR I/43 pt 1 p.870, also in Grant Papers 12) should be named with it as the second printed parallel; and the depth sentence's
+  "Early had received no new troops" is corroborated in substance by both (see 3).
+
+### 3. Class (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E357 | **N3** (kept) | period | **D2** (kept) | not located after FV-MS18k's search and s.1 |
+
+- Depth: 17 H + 1 M of 18 code groups (94%); decode --check current. Sharpe 20 Aug and Grant 21 Aug corroborate the first clause's substance (no troops
+  moved, scouts' news to the previous Wednesday), but that clause is mostly plain words and does not test the code groups Swindle(d) = Joined / Stomach =
+  Left beyond sense; the code-group clause (Feather, Hunter, panama, nuptial: the Orange C.H. rumour) has no external check. Held at **D2**, not raised.
+- Not N4: NARA RG 107/108/393, Grant Papers 12 page by page, HathiTrust, Fishel 1996 not read. Not D3/D4: no external check of the code-group clause; no
+  fresh rule-7 re-derivation session.
+- **Safe sentence:** "Read at grade H with War Department Cipher No. 1: on 19 Aug 1864 Capt. George K. Leet in Washington telegraphed Lt. Col. T. S.
+  Bowers at City Point that Grant's scouts reported no troops had joined or left Early up to the previous Wednesday, and that Fitzhugh Lee's cavalry was
+  rumoured at Orange Court House to have been badly beaten, losing all its artillery and many prisoners. Parallel reports from the same scouts' stream,
+  without the rumour, are printed (Sharpe, 20 Aug, OR I/42 pt 2 p.330; Grant to Sheridan, 21 Aug, OR I/43 pt 1 p.870); this telegram was not located in
+  print (searched 10 Oct 2026)."
+- **Unsafe:** "first", "new", "unpublished", "previously unread", "never printed"; "Lee's cavalry" (Fitzhugh Lee's); "the rumour was true" or naming the
+  action (unsettled); "Sharpe's 20 Aug telegram is a copy of it" (it is a parallel report, not this text).
+
+### 4. Postmortem and fixes (for the next FIX job; reading.md and ciphertext.txt not edited here)
+- FV-MS18k's class, counts and depth stand; no over-claim found in its section, status.json or the SO prompt. Applied here: status.json E357
+  `audit_status` "two audits", `audit_refs` + this section, `gap`, `line` (safe sentence above). SO prompt and SECOND-OPINIONS-QUEUE row unchanged (no
+  class, count or reading change).
+- ciphertext.txt E357 header (FIX job, optional): add "parallel reports printed: Sharpe to McEntee 20 Aug (OR I/42 pt 2 p.330), Grant to Sheridan 21 Aug
+  (OR I/43 pt 1 p.870); siblings of the same Leet-for-Bowers series: holder 9044/2 (12 Aug), 9047/2 (14 Aug), 9059 (29 Aug), 9061/2 (1 Sept)".
+- Cache label: `sources/ia-fulltext/print-check/warofrebellion431unit_djvu.txt.gz` is OR I/47 pt 2, not I/43 pt 1 (IA identifier `warofrebellion431unit_0`
+  is I/43 pt 1); a FIX or tools job may note it in that folder's README.
+Requests: hdl.huntington.org 20 (10 CISOSEARCHALL, 10 item info), all 200; archive.org 2 (djvu texts, 200); be-api.us.archive.org 17 (all answered);
+www.googleapis.com 8; www.loc.gov 5 search (1 IncompleteRead, not retried) + 8 page/full-text (all 200); api.semanticscholar.org 2 (2 x 429, not retried);
+api.core.ac.uk 2; api.openalex.org 2.

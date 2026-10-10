@@ -11593,9 +11593,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-MS18k)'"
+        "AUDIT.md '## AUDIT (FV-MS18k)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-35)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-MS18k verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -11615,8 +11616,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Washington sent ledger): Capt. George K. Leet to Lt. Col. T. S. Bowers, City Point, 19 Aug 1864: no troops joined or left Early; rumour at Orange C.H. that Fitzhugh Lee's cavalry was badly beaten (E357)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 19 Aug 1864 Capt. George K. Leet in Washington telegraphed Lt. Col. T. S. Bowers at City Point that Grant's scouts reported no troops had joined or left Early up to the previous Wednesday, and that Fitzhugh Lee's cavalry was rumoured at Orange Court House to have been badly beaten, losing all its artillery and many prisoners; this telegram was not located in the Official Records or the Grant Papers (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-MS18k); not N4: NARA RG 107/108/393, Grant Papers vol. 12 page by page, the press of 20-25 Aug 1864, HathiTrust, JSTOR not searched; the ledger labels the entry 'No 2' but only No. 1 reads (rule-4 conflict recorded, not settled)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 19 Aug 1864 Capt. George K. Leet in Washington telegraphed Lt. Col. T. S. Bowers at City Point that Grant's scouts reported no troops had joined or left Early up to the previous Wednesday, and that Fitzhugh Lee's cavalry was rumoured at Orange Court House to have been badly beaten, losing all its artillery and many prisoners. Parallel reports from the same scouts' stream, without the rumour, are printed (Sharpe, 20 Aug, OR I/42 pt 2 p.330; Grant to Sheridan, 21 Aug, OR I/43 pt 1 p.870); this telegram was not located in print (searched 10 Oct 2026).",
+      "gap": "N3 two audits (FV-MS18k, AUD2-LEDGER-35); not N4: NARA RG 107/108/393, Grant Papers vol. 12 page by page, HathiTrust, Fishel 1996 not read; second audit: Huntington (10 more queries, siblings 9044/2, 9047/2, 9061/2 of the same Leet-for-Bowers series, no copy), press of 19-31 Aug 1864 (no copy; Fitz Lee rumours of other kinds), Google Books, Grant Papers 12 be-api: not located; parallel reports printed without the rumour (OR I/42 pt 2 p.330; OR I/43 pt 1 p.870); the ledger labels the entry 'No 2' but only No. 1 reads (rule-4 conflict recorded, not settled)",
       "depth": "D2",
       "completeness": "17 H + 1 M of 18 code-word groups (rest plain)",
       "phrases": [
