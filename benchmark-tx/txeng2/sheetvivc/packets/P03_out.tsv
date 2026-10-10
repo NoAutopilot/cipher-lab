@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L10	20	c	M	yes	small round hook after colon
+f102r_L10	25	n	M	yes	two humps
+f102r_L10	26	3	M	yes	round-topped with descender
+f102r_L10	32	H	M	yes	one crossbar capital H
+f102r_L10	45	NONE	M	yes	slash is lead-in of following y
+f102r_L11	3	Z	H	yes	capital Z
+f102r_L12	13	{curl}	M	yes	left curl before m
+f102r_L12	23	V	H	yes	long backslash stroke
+f102r_L12	36	{tilde}	M	yes	wavy tilde mark after j
+f102r_L13	25	4	H	yes	digit 4 between m and m
+f102r_L15	21	{curl}	M	yes	large curl left of m
+f102r_L16	14	Z	H	yes	capital Z
+f102r_L16	28	6	M	yes	round 6 with loop
+f102r_L16	49	4	M	yes	digit 4 shape
+f102r_L16	50	V	H	yes	long backslash stroke
+f102r_L16	53	{loop}	M	yes	closed loop flourish after tz

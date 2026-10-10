@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L17	9	:	M	yes	two small dots after tz before g
+f102r_L17	25	:	H	yes	two dots between m and m
+f102r_L17	30	S	M	yes	tall stroke below line, no crossbar
+f102r_L17	32	s	M	yes	short s before tz
+f102r_L17	38	6	M	yes	round loop with hook before #
+f102r_L17	43	o	M	yes	round small body after tz
+f102r_L17	50	z	M	yes	flat z-like before swash
+f102r_L17	51	Z	M	yes	large swash capital Z shape
+f102r_L18	24	c	L	yes	small c-like after tz, position uncertain
+f102r_L18	48	c	M	yes	c-like after tz x before long s
+f102r_L18	51	:	M	yes	two dots at right edge
+f102r_L19	11	S	H	yes	tall long s after #
+f102r_L19	12	:	H	yes	two dots after S
+f102r_L19	38	NONE	M	yes	only one dot pair between x and y
+f102r_L19	45	NONE	M	yes	only one dot pair between x and m
+f102r_L19	52	s	M	yes	short s between o and g
