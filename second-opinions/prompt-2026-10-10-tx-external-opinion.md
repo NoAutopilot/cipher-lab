@@ -36,3 +36,21 @@ Files to read, in order:
 - https://github.com/NoAutopilot/cipher-lab/blob/main/research/TX-RED-2026-10-09.md (the adversarial reviewer's findings)
 - https://github.com/NoAutopilot/cipher-lab/blob/main/research/TX-REGISTER.tsv (every experiment tried and its outcome)
 - https://github.com/NoAutopilot/cipher-lab/blob/main/tools/tx_bench.py (the scorer)
+
+## Corrections (10 Oct 2026 00:3x UTC by date -u, orchestrator (account-4), from TX-RED pass 11 F51)
+
+The prompt above was pasted by the owner before this check and answered as PR 71 (research/SO-TX-TRANSCRIPTION-2026-10-10.md). Five
+of its sentences were wrong or loose, by TX-RED's reading against the register; the reviewer caught the first and fourth itself from
+the repository, which is why its answer is unaffected on those points:
+1. "positions the reader marked uncertain are dropped" -- wrong. The flags are truth-side (the build's align-conflict and clerk-split
+   classes, then TXV-VIV's), never the reader's marks. The real caveat is F39: the flags are the folder's earlier reading's disagreements
+   with the witness, so the 500 binding positions are selected on a correlated reader.
+2. "a stronger reader model read worse on the same crops" -- X21b is a null at this N (Opus 17 / Sonnet 11 errors, p 0.345), not a
+   worse read.
+3. "Pair classifiers, count-then-read, same-sign retrieval strips ... each failed their own pre-registered gate" -- X3/X5/X7 were
+   non-tests at E 12 (too few baseline errors to test), not failed gates.
+4. "an 'atlas' sheet of exemplar signs is given to the reader" -- the S2 readers had a value-blind text-list sheet, not exemplar images.
+5. "roughly 15-30% error depending on how it is counted" -- two operational scores with different masks (0.150 flagged-excluded,
+   0.296 as measured), not a bracket on the true page error (PR 71 section 1 says the same).
+A future paste of this prompt uses the corrected wording; a draft sent outside by the owner gets a `checked:` line from a session other
+than its drafter first (outreach gate 7), which this one did not.
