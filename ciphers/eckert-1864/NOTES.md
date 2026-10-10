@@ -4980,3 +4980,33 @@ Step-0 test (holder page transcription vs decoded body) run retroactively: `ms18
 - Not flagged (overlap < p95 or < 0.5): E326 E369 E370 E375 E379 N2-AJ N2-BY N2-FE O9-DI.
 - **Missing page JSON (not scored, for a fetch job):** E302 (ptr 5697), E305 (5740), E306 (5744), E307 (5777), E309 (5786), E312 (5746), E318 (5709), E319 (5695), E320 (5702), E321 (5782) -- pointers 57xx-5786 are not in sources/mssEC18 or mssEC19.
 - Caveat: AUDIT.md class parsing is by table-row regex; an entry with a later lowering is still in the set.
+
+## FV-O9b (10 Oct 2026, account 1, for LANE LEDGER-10)
+First verifier FV-O9b (04:33-04:5x UTC by `date -u`), separate from O9-BOOK, O9R-1 and FV-O9a: first audits of O9-DA (9709/1), O9-DD (9687/1) and O9-DF
+(9699/1 + 9700) in AUDIT.md "## AUDIT (FV-O9b)". Step 0 first: all three bodies are clear in the Huntington's public transcription of the ledger page (content
+overlap 0.941, 0.826, 0.809 against a 20-page control p95 of 0.043-0.074; the key's meanings themselves are absent from it), so all three are **N1 (key
+`period`, text known), D1** under the D2V-E74 depth ruling, the same shape as E378. Book call re-tested on 2400 px crops of all four leaves: No. 9 for all
+three (labels "(9)" on DD and DF; Francis/Viola equal the header times). The leaf corrects O9-DA's two "unread" groups: "Can" = plain "Care", "Canon" = plain
+"Spl Comr &c" (O9-DA now 3 H of 3); O9-DD's last line has "mark" before "Confidential" (holder omits it); O9-DF's "in changes in charge" is the holder's
+doubling of "in Charge"; leaves 9699-9700 carry pencil interlinear words and digits and "139 w chg Q.M.G." not in the holder text (not read). Holder 4551 is
+the New York office's 20 Apr answer to O9-DA (the same names, for Capt Fox); NYT 1 Apr 1864 has Miss Dix arriving on the Fulton from Port Royal (O9-DD
+context). Not located in print. No SO or WORK-QUEUE row (nothing N3+). Flag: O9-DC, O9-DE and O9-DH (FV-O9a, N3) pass the same step-0 threshold (0.830,
+0.640, 0.684; O9-DI 0.400 does not): the orchestrator decides. Scripts `ms18/fv_o9b_step0.py`, `fv_o9b_step0_leads.py`, `fv_o9b_grep.py`, `fv_o9b_hdl.py`,
+`fv_o9b_fts.py`, `fv_o9b_gb.py`. For LANE LEDGER-10 (account 1)
+
+## Remaining gaps (FV-O9b, 10 Oct 2026)
+Read so far: 18 of 22 cipher tokens H over the three entries as filed (DA 3/5, DD 6/6, DF 9/13), 20 of 22 once O9-DA's two holder misreadings are fixed; the message bodies are public in the holder transcription.
+- leaf fixes for O9-DA (Care, Spl Comr), O9-DD (mark) and O9-DF (in Charge) not yet in ciphertext-no9.txt - blocker: not-attempted; a verifier does not edit the reading; next: a FIX job applying AUDIT (FV-O9b) s.5 through decode_no9.py's note lines, ~$0.5
+- O9-DF Muss, Mud, Willow unread (3 place words) - blocker: not-attempted; not in the key-no9.md sample table; next: look the three words up on the mssEC 67 Places pages beyond the sample table (key-rebuild read), ~$0.5
+- the class of O9-DC, O9-DE and O9-DH under the step-0 rule (they pass the threshold that made these three N1) - blocker: not-attempted; flagged to the LANE LEDGER-10 orchestrator in ROOM (FV-O9b halfway line, 10 Oct 2026); next: a verifier pass re-classifying them under the E378 / step-0 ruling once the orchestrator rules, ~$1.5
+- second audit of the three - blocker: not-attempted; N1 items get no AUD2 row from this brief; next: only if the orchestrator wants N1 confirmed, ~$1.5
+
+## Escalation (FV-O9b, 10 Oct 2026)
+- [x] siblings: 9699/0 (8 Apr, same pair) and the same-page entries read; holder 4551 (the reply to O9-DA) opened.
+- [x] clear-pages: step 0 on the holder page text of all four pointers; all-pointer CONTENTdm clear-copy and incoming-side queries (12).
+- [x] known-keys: No. 1, No. 2 and No. 9 looked up for every code word.
+- [x] print: OR and related volumes on disk grepped; be-api (8 queries, 2 unreachable after one retry); Google Books (4).
+- [ ] key-rebuild: Muss, Mud, Willow not looked up on mssEC 67 (planned step above).
+- [x] image-check: leaves 9709, 9687, 9699, 9700 at 2400 px, every line of the three entries.
+- [x] retry: each be-api 502 retried once.
+Verdict: keep going: 4 internal gaps; cheapest next: the FIX job for AUDIT (FV-O9b) s.5, ~$0.5
