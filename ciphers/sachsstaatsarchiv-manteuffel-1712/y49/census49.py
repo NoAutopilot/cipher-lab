@@ -157,12 +157,13 @@ H1 = ['leaf', 'vol', 'file', 'tokid', 'crop', 'settled', 'passA', 'passB', 'as4'
 H2 = ['leaf', 'vol', 'tokid', 'crop', 'settled', 'known', 'witness', 'evidence']
 def tsv(h, rs): return '\t'.join(h) + '\n' + ''.join('\t'.join(map(str, r)) + '\n' for r in rs)
 out = {'census.tsv': tsv(H1, census), 'known.tsv': tsv(H2, known)}
-stale = False
-for fn, txt in out.items():
-    p = os.path.join(HERE, fn)
-    if '--check' in sys.argv:
-        if not os.path.exists(p) or open(p).read() != txt: print('STALE', fn); stale = True
-    else: open(p, 'w').write(txt)
-print('census tokens', len(census), 'single', sum(r[12] == 'single' for r in census), 'known', len(known),
-      'known4', sum(k[5] == '4' for k in known), 'known9', sum(k[5] == '9' for k in known))
-sys.exit(1 if stale else 0)
+if __name__ == '__main__':
+    stale = False
+    for fn, txt in out.items():
+        p = os.path.join(HERE, fn)
+        if '--check' in sys.argv:
+            if not os.path.exists(p) or open(p).read() != txt: print('STALE', fn); stale = True
+        else: open(p, 'w').write(txt)
+    print('census tokens', len(census), 'single', sum(r[12] == 'single' for r in census), 'known', len(known),
+          'known4', sum(k[5] == '4' for k in known), 'known9', sum(k[5] == '9' for k in known))
+    sys.exit(1 if stale else 0)

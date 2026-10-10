@@ -1,0 +1,10 @@
+pass A: N=77 BA 0.883 (recall4 1.000 n=30, recall9 0.766 n=47) vs permuted mean 0.468 p99 0.593 -> PASS; reads 4/9/other/missing 36/36/3/2
+   excl. name codes 198/191/292: N=60 BA 0.817 recall4 1.000 recall9 0.633; reads 
+   settled digit != label (y-candidates): N=8 BA 0.000 recall4 0.000 recall9 0.000; reads T061:9>other T119:9>4 T068:9>4 T094:9>4 T109:9>4 T112:9>missing T035:9>4 T149:9>4
+   per leaf: 0089 1/2 0136 3/3 0309 7/7 0312 10/10 0314 5/5 0474 11/14 0490 15/19 0490L 2/2 0494 12/15
+pass B: N=77 BA 0.862 (recall4 1.000 n=30, recall9 0.723 n=47) vs permuted mean 0.468 p99 0.599 -> PASS; reads 4/9/other/missing 38/34/2/3
+   excl. name codes 198/191/292: N=60 BA 0.800 recall4 1.000 recall9 0.600; reads 
+   settled digit != label (y-candidates): N=8 BA 0.000 recall4 0.000 recall9 0.000; reads T061:9>missing T119:9>4 T068:9>4 T094:9>4 T109:9>4 T112:9>missing T035:9>4 T149:9>4
+   per leaf: 0089 1/2 0136 3/3 0309 7/7 0312 9/10 0314 5/5 0474 11/14 0490 14/19 0490L 2/2 0494 12/15
+both passes = label: 64/77; passes agree on 4/9 digit: 70/77
+GATE (both passes BA > p99 and >= 0.80): PASS

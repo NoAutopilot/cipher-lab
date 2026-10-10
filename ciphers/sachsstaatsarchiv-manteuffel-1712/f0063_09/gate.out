@@ -1,17 +1,17 @@
 key: key.tsv; spans 7; code tokens in spans 36; keyed 36
-S (codes matched under key) = 24/36 keyed (0.667)
-shuffled-key control (1000 draws, seed 8): mean 4.75, p95 8, p99 9, max 12
+S (codes matched under key) = 25/36 keyed (0.694)
+shuffled-key control (1000 draws, seed 8): mean 4.75, p95 8, p99 9, max 11
 GATE (S > p99 and S >= 0.5 x keyed): PASS
 
 per span (code:op:gloss-letters):
 G01	T1	m	1/1	13:match:m
-G02	A1-A2	si le roy prent a manquer le pr royal	15/17	29:match:s 7:miss:i 103:match:le 60:match:r 5:miss:o 39:match:i 10:match:e 21:match:n 28:match:t 66:match:a 31:match:m 50:match:a 14:match:n 24:match:q 6:match:u 35:match:e 27:match:r
+G02	A1-A2	si le roy prent a manquer le pr royal	16/17	29:match:s 9:match:i 103:match:le 60:match:r 5:miss:o 39:match:i 10:match:e 21:match:n 28:match:t 66:match:a 31:match:m 50:match:a 14:match:n 24:match:q 6:match:u 35:match:e 27:match:r
 G03	B1-B2	barth	3/4	55:match:b 25:match:a 60:match:r 84:miss:th
 G04	C1	was hat zu	2/4	8:miss:w 50:match:a 24:miss:sha 28:match:t
 G05	C1	hf	2/2	8:match:h 1:match:f
 G06	C1	dich	1/2	120:match:d 34:miss:ich
 G07	C1	zu bekennen	0/6	100:miss:z 25:miss:u 60:miss:b 67:miss:e 83:miss:ken 55:miss:nen
 
-distinct codes: 28; matched on every instance: 16
+distinct codes: 28; matched on every instance: 17
 unkeyed codes and their slots: 
-keyed codes with a non-match slot: 5(v)=miss:o; 7(g)=miss:i; 8(h)=miss:w; 24(q)=miss:sha; 25(a)=miss:u; 34(p)=miss:ich; 55(b|[a])=miss:nen; 60(r|re|ro)=miss:b; 67(u)=miss:e; 83(sch)=miss:ken; 84(sch)=miss:th; 100(d)=miss:z
+keyed codes with a non-match slot: 5(v)=miss:o; 8(h)=miss:w; 24(q)=miss:sha; 25(a)=miss:u; 34(p)=miss:ich; 55(b|[a])=miss:nen; 60(r|re|ro)=miss:b; 67(u)=miss:e; 83(sch)=miss:ken; 84(sch)=miss:th; 100(d)=miss:z

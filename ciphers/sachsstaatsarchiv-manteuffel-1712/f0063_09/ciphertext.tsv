@@ -2,7 +2,7 @@
 # Two blind Sonnet passes (passA_0063.tsv, passB_0063.tsv) + worker reconciliation from the image at 3x. conf: high = passes agree; low = settled by the worker. '|' = clear words.
 line	settled	conf_notes
 T1	| 13 |	high ('le 13. dont j'ai eu l'honneur')
-A1	| 29 7 103 60 5 39	high; 103: A '103?', B '103'; worker eye at 2x: '10' with '3' close against '60', settled 103 (low: 10 3 not excluded); run continues on A2
+A1	| 29 9 103 60 5 39	high except tok2 (MANT-Y49 10 Oct 2026: 7 -> 9, M; two blind Sonnet reads of crops/slot01 both 9, PREREG-MANTY49 rule (ii)); 103: A '103?', B '103'; worker eye at 2x: '10' with '3' close against '60', settled 103 (low: 10 3 not excluded); run continues on A2
 A2	10 21 28 66 31 50 14 24 6 35 27 | 103 17 26 |	28: A '28?', B '28?/29?'; worker eye 3x: second digit same form as 8 in C1 '28', settled 28; ';' after 27 ends the first run
 B1	| 55 25	high; run continues on B2
 B2	60 84 |	60: A '62?', B '64?'; worker eye 3x: open 6 + 0, settled 60 (low)
