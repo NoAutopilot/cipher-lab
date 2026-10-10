@@ -885,18 +885,67 @@ Brief: the same contact-sheet screen as OBRED-6016, for NA 1.01.02 inv. 6016 ima
   the positive control is a French letter of 1598, not a Dutch three-digit run; the cipher block on 187 was found only because it is large and sits on a leaf sampled by
   the stride. Not a negative for the series elsewhere; a negative for the other 86 sampled leaves at this resolution only.
 
-## Remaining gaps (OBRED-0259, 10 Oct 2026)
-Read so far: unmeasured; no transcription of this folder's no. 92 was attempted in this pass, which found one numeral block (scan 187, inv. 6016, 17 Oct 1604) beside it and has not transcribed it (87 of 259 scans of orders 1-259 looked at, and 92 of 274 of 351-624 by OBRED-6016)
-- scan 187 numeral block (about 85 groups) not transcribed and its clear letter text not read - blocker: not-attempted; found at the very end of this brief's 400 px screen with the request cap spent; next: fetch 186, 187, 188 at native size (3 requests), crop lines with tools/iiif_lines.py --image, two blind passes, ~$3
-- the 173 unlooked scans of NA 1.01.02 inv. 6016 orders 1-259 (two between each sampled one, 186 and 188 first) - blocker: not-attempted; the stride-3 brief and its 95-request cap stop at the sampled scans; next: 400 px sheets of the remaining scans at stride 1 around 187 (orders 181-193 first), then the rest, 173 requests over two sessions, ~$1.5 each
-- the 182 unlooked scans of NA 1.01.02 inv. 6016 orders 351-624 - blocker: not-attempted; stride-3 sampling in OBRED-6016 found no cipher; next: two more sessions of 400 px sheets, ~$1.5 each
+## OBRED-187 (10 Oct 2026, 06:12-06:2x UTC by date -u, account 2, Opus worker, Sonnet subagents)
 
-## Escalation (OBRED-0259, 10 Oct 2026)
-- [ ] siblings: inv. 6016 orders 1-259 and 351-624 sampled every third scan (OBRED-0259, OBRED-6016), 260-350 read leaf by leaf (YX-OBR); scan 187 is the one numeral block found; next: the 173 + 182 unsampled scans, 186-188 first
-- [ ] clear-pages: scan 187 has a clear Dutch letter of 17 Oct 1604 above its numerals (this section), not yet read; next: read it from the native image and compare with the neighbouring clear letters of the same bundle (orders 181-193), ~$1.5
-- [x] known-keys: the 10 Aug 1598 Van Aerssen slip excluded for no. 92 by design (R10-OBRED98, 6 Oct 2026); the Buzanval syllabary inv. 2028 excluded likewise (R9-OBRED4 step 0); DECODE 1600s and Palatine/Hessian keys screened (OLD-DKEY, R8-OBRED2, R9-OBRED3); the 187 block has not been tried against them (no transcription yet)
-- [x] print: the print and web search for no. 92 is settled by "Search log" (25 Sept 2026), "Web and blog check" (1 Oct 2026) and "Premise check" (3 Oct 2026); none of these searched for the 17 Oct 1604 letter, which is a separate item of this bundle
-- [ ] key-rebuild: after a transcription of 187, compare its code values and range with no. 92's (tools/key_design.py, decode_key.py --split-check) before any claim of a shared key; ~$1
-- [x] image-check: ciphertext.txt checked against the NA inv. 1490 images and the corrections verified (R9-OBRED4, R10-OBREDV, 6 Oct 2026); the 187 block is a fresh image-only item
+Brief: the scan-187 postscript (NA 1.01.02 inv. 6016 image order 187, archive leaf 143r) -- prior work, native fetch of 186-188, the clear letter,
+a blind transcription of the numeral block, and a pre-registered overlap test against no. 92's printed values. No decode, no key.
+
+- Prior work: `prior_work.py ... --item-spec 'shelfmark=NA 1.01.02 inv. 6016;folio=scan 187;date=1604-10-17;...' --step-type transcribe --fetch`
+  exit 4 (2 LEAD = OBRED-0259's claim and my own; LOOK 2-leaf; UNCHECKED 3-tomokiyo, 3-solver; UNCHECKED-NET 3-solver aaymeloglu, 4-editions);
+  five recorded CLEAR in `prior-work.tsv` after the checks below; the two -NET rows stay unchecked by the tool (edition check by hand below).
+  - Check 1 (own work): folder NOTES/AUDIT/decode-key TSVs and sources/decode grepped for "1604" and Brederode: only OBRED-0259's find; no transcription on file.
+  - Check 2 (leaf and neighbours): scans 186-188 at native size (5000 px). 186 right = leaf 142r, the letter's opening; 187 left = 142v, 187 right = 143r
+    (letter end, signature, numeral block); 188 left = 143v, the address leaf, with only mirror show-through of the numerals; 188 right = 144r, a French
+    news enclosure ("Quant a l'estat des affaires de dela ..." on Denmark, Sweden, Duke Charles, Livonia, Brandenburg) under the same docket. No
+    interlinear or marginal decipherment, no clear copy, no "ontcijferd" note on any of the six pages. The code does not continue on 186 or 188.
+  - Check 4 (edition): Huygens retroboeken/oldenbarnevelt full-text search, all three volumes: "17 october 1604" 2 hits (Deel 1 p.719 errata; Deel 2 p.106,
+    nos. 88-89 of Aug/Sept 1604 -- the OCR matched the words separately), "Brederode" 181 hits (first 20 read; Deel 1 only), "Stettin" 2 hits (Deel 3 only,
+    1614-20). Deel 2 pp.106-107 read in full: the edition runs no. 89 (J. van der Veken, 28 Sept 1604) -> no. 90 (P. Merula, 27 Nov 1604), so **the
+    17 Oct 1604 letter is not printed in Veenendaal II** (chronological order; positive control: no. 92's own letter is found on p.110 by the same route,
+    25 Sept 2026). The edition prints Oldenbarnevelt's papers; this letter is addressed to the griffier (below), which fits its absence. Its postscript is
+    therefore neither printed, marked nor deciphered there. Not searched: the Resolutiën der Staten-Generaal XIII for Oct-Nov 1604 (a griffier letter
+    would be read in the States General), the Den Tex biography, Brandenburg-side editions.
+  - Requests: resources.huygens.knaw.nl 6 (3 searches, pages.json, 2 page texts); service.archief.nl 4 (METS + 3 native scans). All HTTP 200.
+- The clear letter (by eye at native size, grade M throughout): opening (142r) "Edele Erntfesten Hoochgeleerde wyse ende seer voorsinnige heere, Uijt mijne
+  voorgaende schrijven aen mijn heere van Oldenbarnevelt sullen mijn E.M. heeren sonder twijfel ... verstaen hebben ... van mijne negotiatie bijden
+  Churf. van Brandenburg ende om wat oorsaeck mij dese mijne reyse op Stettin noodich gevonden heeft ..."; end (143r) "... uijt Stetijn desen 17 october
+  1604. U E. onderdanighe ende getrouwen dienaer P. Brederode"; docket at the head of each leaf "de Stettin le 17 octob. 1604"; address (143v, upside
+  down) "Den Edele Erntfesten hoochgeleerde wyse ende seer voorsinnighe heere [Doctor? Aerssens], Griffier van mijn heeren Staten Generael der vereenichde
+  Nederlanden, mijne gunstighe heere, in den [Hage]". So: P. Brederode to the griffier of the States General (the name read is M), from Stettin, on his
+  negotiation with the Elector of Brandenburg (Berlin) and his journey to Stettin, with talk of a particular alliance (Brandenburg, England, Denmark,
+  "the whole Empire") on 142v. Images: `images/na_101_02_6016_p0187_native.jpg` (5000x3933), `..._p0186_opening.jpg`, `..._p0187_dateline.jpg`,
+  `..._p0188_address_rot180.jpg`.
+- Transcription: `tools/iiif_lines.py --image images/na_101_02_6016_p0187_native.jpg --out images/p187_lines --region 2930,2450,1840,450 --prefix p187
+  --centres 142,205,263,324,378 --deskew 300 --band-extent 0.35 --debug` -> 5 line crops (auto-detection found 4 slanted bands; centres given by eye
+  from the debug overlay; a --mask-neighbours cut lost the raised digits and was discarded). Two blind Sonnet passes on the crops only (not told no. 92
+  or any value): **59 numeral groups, the two passes agree on 59/59**; reconciliation on the crops by me: `ciphertext_187.tsv`, 49 H-read, 10 M
+  (low-confidence shapes: 265, 48, 444, 440, 751, 461, 553, 335, 105, 450; "444 440" run together with a heavy 4 at the join, possibly overwritten),
+  plus two clear insertions kept as text: L3 end "[Ick hebbe]" (faded) and L4 start "[oock verstaen dat dits]" (M). 48 313 sit under an overline.
+  OBRED-0259's "about 85 groups" was a rough count; the block is 59.
+- Overlap test: `obred187/PREREG-OBRED187.md` pushed in its own commit 774b4ccb1 before scoring; `python3 obred187/overlap.py` (`--check` OK) ->
+  `obred187/overlap.json`. V187 57 distinct of 59 tokens; V92 99 distinct of 121 tokens (ciphertext.txt); **S = 26 shared values** (40 80 97 105 108 110
+  119 137 139 144 217 289 330 337 409 420 433 440 457 461 481 492 529 577 611 623). C1 uniform on 1..751: mean 7.42, p99 13, p = 0.0001; C2 band-matched
+  to 187's hundreds histogram: mean 8.72, p99 15, p = 0.0001; negatives subsampled to 59 tokens: N1 Lodewijk 7206 (1574) mean 5.19, p95 8; N2 Jan van
+  Nassau 5551 (32 tokens, resampled) mean 5.07, p95 6. H-read only: 24 of 49. **The overlap clears its pre-registered control** (p < 0.01 under both
+  models and above both negatives): consistent with no. 92 (Heidelberg, Feb 1605) and the Stettin postscript (Oct 1604) using one code list, grade M,
+  not a reading. Caveat: N2 is short (32 numerals); the negatives also have smaller ranges (max 348, 146), so they bound chance only loosely -- C1/C2 carry
+  the gate. `tools/key_design.py` has no fit: it needs a code->letter key table and none exists; not run.
+- Where it was not found: no decipherment of either text on the leaves 142-144, in Veenendaal II, or in the folder's DECODE notes; the 173 unlooked
+  scans of orders 1-259 other than 186/188 were not looked at.
+
+## Remaining gaps (OBRED-187, 10 Oct 2026)
+Read so far: unmeasured; nothing decoded -- no. 92 (121 groups) and the scan-187 postscript (59 groups, transcribed this pass) are both unread; they share 26 values, above chance (OBRED-187)
+- no. 92 and the 187 postscript, pooled (180 tokens, about 130 distinct values) - blocker: not-attempted; the shared-list evidence is new this pass and the brief stops before an attack; next: lane decides a design_prior / pooled-attack step on the two texts with a matched control at N=180, ~$3
+- the 173 unlooked scans of NA 1.01.02 inv. 6016 orders 1-259 - blocker: not-attempted; stride-3 screen only; next: 400 px sheets at stride 1 around 187 (orders 181-193 first: further Brederode letters of 1604 in the same hand and code), ~$1.5
+- the 182 unlooked scans of NA 1.01.02 inv. 6016 orders 351-624 - blocker: not-attempted; stride-3 sampling found no cipher; next: two more sessions of 400 px sheets, ~$1.5 each
+- States-side trace of the 17 Oct 1604 letter (Resolutiën der Staten-Generaal XIII, Oct-Nov 1604; the griffier's papers) - blocker: not-attempted; outside this brief's named sources; next: Huygens retroboeken/statengeneraal search "Brederode" + "Stettin" in Deel 13, ~$0.5
+
+## Escalation (OBRED-187, 10 Oct 2026)
+- [ ] siblings: scan 187 is a second code text sharing 26 values with no. 92 (OBRED-187); further 1604 Brederode letters may sit in the unlooked scans of orders 1-259; next: stride-1 sheets of 181-193, then the rest
+- [x] clear-pages: the clear letter of 142r-143r read by eye (OBRED-187: Stettin, 17 Oct 1604, to the griffier of the States General, on the Brandenburg negotiation); it carries no gloss of the code
+- [x] known-keys: the 10 Aug 1598 Van Aerssen slip excluded for no. 92 by design (R10-OBRED98); Buzanval syllabary inv. 2028 excluded (R9-OBRED4); DECODE 1600s and Palatine/Hessian keys screened (OLD-DKEY, R8-OBRED2, R9-OBRED3); the 187 values fall in the same 1-751 range as no. 92 and add no key
+- [x] print: no. 92 settled by "Search log", "Web and blog check", "Premise check"; the 17 Oct 1604 letter is not in Veenendaal II (OBRED-187, nos. 89 -> 90)
+- [ ] key-rebuild: the pooled two-text attack is now the named step (overlap gate cleared, OBRED-187); next: design_prior.py and a pooled family run with a matched control at N=180, ~$3
+- [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv is two blind passes agreeing 59/59 on native crops (OBRED-187)
 - [ ] retry: the Den Tex biography (dbnl.org) retry named in "Open" above has not been run (TLS-failed twice, 25 Sept 2026); next: one retry from a fresh container, ~$0.3
-Verdict: keep going: 3 internal gaps; cheapest next: native-size fetch of scans 186-188 and a blind transcription of the 187 numeral block, ~$3
+Verdict: keep going: 4 internal gaps; cheapest next: the pooled no. 92 + 187 attack (design_prior first), ~$3
