@@ -1,0 +1,5 @@
+row	book	match/word-tokens
+G2	no1 0/5	no2 0/6	no9 0/2	shuffled no9: max 1 p95 0 mean 0.05 (20 seeds)
+G7	no1 0/4	no2 0/3	no9 3/4	shuffled no9: max 1 p95 1 mean 0.10 (20 seeds)
+G10	no1 0/9	no2 0/9	no9 4/5	shuffled no9: max 1 p95 1 mean 0.15 (20 seeds)
+G11	no1 0/4	no2 0/6	no9 5/5	shuffled no9: max 2 p95 1 mean 0.20 (20 seeds)

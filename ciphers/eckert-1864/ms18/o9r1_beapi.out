@@ -1,0 +1,11 @@
+confidentialcorr02foxg | Olcott | 0
+confidentialcorr02foxg | Stover | 0
+confidentialcorr02foxg | Brady Fort Lafayette | 0
+confidentialcorr02foxg | Brooklyn Navy Yard Painter absconded | 0
+confidentialcorr01foxg | Olcott | ERR HTTP Error 502: Bad Gateway
+confidentialcorr02foxg | Miss Dix Fulton | 0
+papersofulyssess0010gran | Meigs Van Vliet New York Fulton transports | 0
+papersofulyssess0010gran | Kelley Cumberland Sigel Ohio militia | 0
+be-api requests 8
+control query (confidentialcorr02foxg | Welles) run 10 Oct 2026 01:5x UTC, 1 request
+retry (confidentialcorr01foxg | Olcott): HTTP 200, 0 hits (vol. 1 covers 1861-63; the first try gave 502). 10 Oct 2026

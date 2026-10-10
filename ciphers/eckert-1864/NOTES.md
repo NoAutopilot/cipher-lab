@@ -4766,3 +4766,70 @@ Read so far: N2-GH, N2-GA, N2-GC, N2-GI audited (N1, N3 D3, N3 D2, N3 D2); all f
 - [x] image-check: all four entries eye-checked at 2400 px.
 - [x] retry: none needed (the old Chronicling America URL 404s; the loc.gov JSON route answered).
 Verdict: keep going: 3 internal gaps; cheapest next: the FIX job for AUDIT (FV-N2c) s.5, ~$1
+
+## O9R-1 (10 Oct 2026, account 1, for LANE LEDGER-N2)
+
+Worker O9R-1 (reader, 01:22-01:5x UTC by `date -u`). Ten mssEC 18 rows that O9-BOOK assigned (9709/1, 9808/2, 9673/0) or predicted (9687/1, 9684/1, 9699/1, 9803/0, 9684/0, 9735/0, 9686/1) to Cipher No. 9, filed as **O9-DA..O9-DK** in `ciphertext-no9.txt` (11 blocks: leaf 9684 carries two telegrams of 9 March under row 9684/0, split from the crop as O9-DH and O9-DI). Convention as O9-BA/O9-BB: first line the ledger header, one manuscript line per line, a `### id | page | pointer | description` header, `note:` lines; slips and unread groups carried by decode.py's own `plain:`, `variant:` and `graded:` lines (key-no9.md untouched). Regeneration: `python3 ciphers/eckert-1864/decode_no9.py --write` then `--check` (exit 0, 10 Oct 01:4x UTC); `ms18/o9r1_extract.py` (entries from sources/mssEC18, the 9699/1 entry continued from pointer 9700), `ms18/o9r1.py` (H counts, `o9r1.out`), `ms18/o9r1_file.py` (filing, idempotent). Nothing called No. 1: no row read as Cipher No. 1, so nothing is handed to LANE LEDGER from this job (O9-BOOK's two No. 1 rows were not in my list). Not classified for novelty (rule 10).
+
+Intake gate (pasted, 10 Oct): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Prior-work (`tools/prior_work.py eckert-1864 --item-spec ... --step-type decode --offline`, run once for 9735/0, 01:3x UTC): "verdict plaintext: KNOWN (exit 2: cryptiana date matches about other ciphers, habsburg/valle/viete, not these telegrams); 5-civil-war not on disk; 4-editions UNCHECKED-NET (IA OR ids not on disk) / CLEAR (date +-1 and both correspondents on the cached volumes, control hit, no window); 2-leaf LOOK (no gloss/clear-copy check for this leaf)"; the LOOK was answered by the CONTENTdm clear-copy search below. The run wrote ad-hoc rows into look.tsv and prior-work.tsv, which I reverted (not mine to keep).
+
+### Header words and the book test (page text and, where marked, crops)
+| id | row | date | label | place word | time word (header time / print time) | book call |
+|---|---|---|---|---|---|---|
+| O9-DA | 9709/1 | 19 Apr 1864 | none | Pagan = Washington (dateline agrees) | Viola 12.30 PM (no header time) | No. 9 by place word + Colonel Olcott (Vesper); weakest on content |
+| O9-DB | 9808/2 | 3 Aug 1864 | none | none | Henrietta 4 PM = header 4 PM (crop read) | No. 9 by ONE time word; weakest book call |
+| O9-DC | 9673/0 | 5 Feb 1864 | "9" | Pagan = Washington | Henrietta 4 PM (no header time) | No. 9: Major Van Vliet / Quartermaster / New York / QM General |
+| O9-DD | 9687/1 | 16 Mar 1864 | ( 9 ) | none | Francis 11 AM = header 11 AM | No. 9 |
+| O9-DE | 9684/1 | 10 Mar 1864 | ( 9 ) | Pagoda = Washington | Susan 10.30 PM = header 1030 PM | No. 9 |
+| O9-DF | 9699/1 | 9 Apr 1864 | ( 9 ) | Pagan = Washington | Viola 12.30 PM = header 12.30 PM | No. 9 (sense; coherence does not favour it) |
+| O9-DG | 9803/0 | 27 Jul 1864 | none | Pagan = Washington | Lucy 9 PM = header 9 P.M = print 9 p.m. (crop read) | No. 9 |
+| O9-DH | 9684/0 | 9 Mar 1864 11 AM | none | none | Francis 11 AM = header 11 A.M (crop read) | No. 9 |
+| O9-DI | 9684/0 (2nd) | 9 Mar 1864 | "No 9" over the header (crop read) | none | Sarah 9.30 PM (no header time) | No. 9 |
+| O9-DJ | 9735/0 | 9 May 1864 | "9" (crop read) | Pagan = Washington | Hannah 2 PM against print 10.05 a.m. (no header time) | No. 9 by print match; TIME-WORD CONFLICT |
+| O9-DK | 9686/1 | 14 Mar 1864 | (9) (crop read) | Pagan = Washington | Clara 10.30 AM against print 10.30 p.m. (no header time) | No. 9 by print match; MERIDIAN CONFLICT |
+Where a header time exists the No. 9 time word equals it on 5 of 5 rows (O9-DB, DD, DE, DF, DG; No. 1 and No. 2 read none of the five except 12.30 on DF), against the 1.5-2.5% shuffle floor measured for LS3-R18's four timed entries (not rerun). On the two print-timed rows with no header time (O9-DJ, O9-DK) the time word does NOT equal the printed time (2 PM vs 10.05 a.m.; 10.30 AM vs 10.30 p.m.): logged, graded M, not explained (the ledger word may mark a different clock, the receiving or filing time, but nothing in hand shows it).
+
+### Instruments and controls (rule 3)
+1. Print-match (`ms18/o9r1_printmatch.py`, `o9r1_printmatch.out`, new here; the shuffle moves the values but not the printed text, so the number can differ between target and control): of the word-kind code tokens each book resolves in the entry, how many have a meaning whose content words all occur in the printed item. O9-DG No. 9 3/4 (No. 1 0/4, No. 2 0/3); O9-DJ 4/5 (0/9, 0/9); O9-DK 5/5 (0/4, 0/6); O9-DB 0/2 (0/5, 0/6, an almost plain entry: silent). Shuffled No. 9 (meanings permuted among word rows, 20 seeds): max 1, 1, 2, 1, p95 1, 1, 1, 0. N is small (4-5 tokens a row) and the text is the same print that fixed the reading, so this licenses "No. 9 reads the print where No. 1 and No. 2 read none", not a power claim; pooled over the three matching rows No. 9 matches 12 of 14 word tokens against 0 of 33 for No. 1/No. 2.
+2. Bigram coherence (`ms18/o9r1_coherence.py`, `o9r1_coherence.out`; OR volumes on disk minus 372, 371, 013402; same instrument as N2R-1): No. 9 beats No. 1, No. 2 and all three shuffled No. 9 / No. 1 copies on 6 of 11 blocks (DC, DD, DG, DH, DI, DK) and does not on 5 (DA, DB, DE, DF, DJ); on DK the margin over the shuffled No. 9 control is 0.04. Weak at these lengths, as O9-BOOK found; the header words and the print match decide, and the coherence failures are reported, not gated away.
+3. Nothing here rests on the sample table being complete: unread groups stay as written, graded M (counts below).
+
+### Per row: print / holder / unread (the brief's required line)
+- **O9-DA 9709/1**: not located (OR I-II cached incl. ser. II vol. 7: 'Painter has absconded', 'full names of Simpson': 0; Fox Confidential Correspondence vol. 2 on IA be-api 'Olcott', 'Stover', 'Brooklyn Navy Yard Painter absconded': 0 after a positive control 'Welles': 1; CISOSEARCHALL 'Brooklyn Yards master Painter absconded': 9709 only, i.e. no holder clear copy). Unread by the sample table: 2 (Can, Canon). H 3, M 2.
+- **O9-DB 9808/2**: in print, OR I/37 pt 2 p.590 (Halleck to Maj. Gen. Couch, Pittsburg, 3 Aug 1864, word for word apart from teams/trains and engineer/Preston); CISOSEARCHALL 9808 only. Unread: 3 (Optic, Preston, Mohawk) plus the conflict on 'Austria' (Sec. of State in the key against the printed signature Halleck). H 1, M 4.
+- **O9-DC 9673/0**: not located (OR I/32-37 cached or downloaded, 170 volumes; ser. III vol. 4 and ORN not on disk; Grant Papers vol. 10 be-api 'Meigs Van Vliet New York Fulton transports': 0; CISOSEARCHALL 9673 only). Unread: 0. H 7.
+- **O9-DD 9687/1**: not located (same volumes; Butler's letters to Miss Dix of 4 and 15 Apr 1864 name the Fulton: a different item; CISOSEARCHALL 9687 only; be-api Fox vol. 2 'Miss Dix Fulton': 0). Unread: 0. H 6.
+- **O9-DE 9684/1**: not located ('H. D. Stover': 0 in 170 volumes incl. ser. II vol. 7; CISOSEARCHALL 'books papers Stover prisoner permits consultation': 0 hits, an AND-of-terms query). Unread: 2 tail tokens (dam, bore). H 6, M 2.
+- **O9-DF 9699/1**: not located ('quantity of forage to be placed', 'do not use steamers very expensive': 0; CISOSEARCHALL 'forage Steamers hay ...': 0 hits). Unread: 3 place words (Muss, Mud, Willow). H 9, M 4. The sibling 9699/0 (8 Apr 1864, Meigs to Brown, forage to Muss; O9-BOOK "undecided") reads as No. 9 on the same grounds and is a lead for the next reader, not filed here (not in this brief).
+- **O9-DG 9803/0**: in print, OR I/37 pt 2 p.471 (Halleck to Brig. Gen. Kelley, Cumberland, 27 Jul 1864 9 p.m.), word for word; CISOSEARCHALL 0 hits. Unread: 0. H 4, M 1 (Vermin = Maj. Gen. in the key against the printed Brigadier-General: data conflict, graded M).
+- **O9-DH 9684/0 (11 AM)**: not located ('Is Brady connected with a Navy operation', 'Edwin L. Brady': 0; CISOSEARCHALL 9684 only). Unread: 0. H 6.
+- **O9-DI 9684/0 (9.30 PM)**: not located (as O9-DH). Unread: 0. H 5.
+- **O9-DJ 9735/0**: in print, OR I/37 pt 1 p.414 (Halleck to Brig. Gen. Kelley, Cumberland, 9 May 1864 10.05 a.m.; ledger 'two' where the print has 'three' to Cumberland); CISOSEARCHALL 0 hits. Unread: 4 (Jargon, Belgiums, Jaundice, Harp; their meanings are given by the print, C, and are proposals for key rows, not tabled). H 5, M 5.
+- **O9-DK 9686/1**: in print, OR I/34 pt 2 p.602 (Halleck to Maj. Gen. Steele, Little Rock, 14 Mar 1864 10.30 p.m., word for word apart from 'come and' / 'command'); CISOSEARCHALL 9686 only. Unread: 1 (easy). H 5, M 2.
+Totals: H 57, M 20, C 0, over 11 blocks (derived block "Totals over the 57 entries: H 426, C 0, I 0, M 20" after filing). Of the 20 M tokens, 11 are unread groups, 4 are conflicts (Austria, Vermin, Hannah, Clara) and 1 a spelling variant (Abbott); the rest are the unread tails above. Print is the only source of C here, and it is not used to raise a grade (the readings keep H where the key row gave the value and the print agrees: DG 3, DJ 4, DK 5 tokens).
+
+### What it says (conditional on the key-no9.md sample table and on the holder text, grades above; rule 10: no novelty claim)
+Fox (Assistant Secretary of the Navy, 'Atlas') to Colonel H. S. Olcott in New York on 9-10 March 1864: is Brady a Navy matter or an Army one (11 AM), arrest Edwin L. Brady and put him in Fort La Fayette, seize H. D. Stover's books and papers (O9-DH, DI, DE); Olcott's 19 April note about the Brooklyn Yards and 'master Painter' (O9-DA). Meigs to Van Vliet and S. L. Brown: separate accounts for a special expedition (5 Feb), reserve the Fulton for Miss Dix and three staterooms (16 Mar), hay and forage by sailing vessels instead of steamers, one large propeller from New York (9 Apr). Halleck to Couch (3 Aug), Kelley (27 Jul, 9 May) and Steele (14 Mar): these four are in print (OR I/37 and I/34).
+
+### Image check
+Crops of the top of each fetched leaf at 2400 px (scratch, not committed): 9684 (headers of O9-DH/DI, label "No 9" over the second), 9808 (header, 'Optic', signature 'Austria Mohawk August third act'), 9803, 9735, 9686 (headers and first lines). 9709 was fetched and not read; 9673, 9687, 9699 and the O9-DE entry were not fetched or read: holder transcription only, so a negative about those five is conditional on it (rule 2). Requests, 10 Oct 01:2x-01:4x UTC: hdl.huntington.org 16 (10 CISOSEARCHALL, 6 IIIF 2400 px), all 200 (shared token, take/release in ROOM); archive.org about 19 (5 volume texts downloaded: 013402rootrich, 013403rootrich, 322unit, 371unit, 323unit; 10 metadata and 4 search calls) and be-api 10 (one 502, one retry 200, one control).
+
+### Judge (rule 7)
+`python3 tools/judge_plaintext.py specs/eckert-1862.json --file ciphers/eckert-1864/ms18/o9r1_readings.md` -> `FAIL language: score=-1.094, null_p99=-2.118, real_p05=-0.836, real_median=-0.81, mode=both, N=8530` / `FAIL - eckert-1862 (a PASS is a gate for a verifier, not a reading; rule 10)`. Reported as a FAIL: bracketed readings with unread groups and plain names; the en judge is of unknown reliability (tools/data/en/README.md). Fresh-session re-derivation of the readings (rule 7, before stage 9) is not done.
+
+## Remaining gaps (O9R-1, 10 Oct 2026)
+Read so far: 57 of 77 code-word tokens at H (74%) over the 11 blocks, 20 M, 0 C; the rest of each entry is plain words.
+- unread code groups in the sample table (Can, Canon, Optic, Preston, Mohawk, dam, bore, Muss, Mud, Willow, Jargon, Belgiums, Jaundice, Harp, easy) - blocker: not-attempted; look each up on the mssEC 67 pages beyond the sample table (page pointer = 1720 + page), print gives candidate values for Optic, Preston, Jargon, Belgiums, Jaundice, Harp; next: a key-rebuild read of those mssEC 67 lines, ~$1.0
+- seven entries not located in print (O9-DA, DC, DD, DE, DF, DH, DI) - blocker: not-attempted; OR ser. III vol. 4 and ORN ser. I vols. for March-April 1864 were not on disk; next: download and phrase-grep those volumes (IA ids by search), ~$0.3
+- five leaves' entries not eye-checked (9709, 9673, 9687, 9699, and the O9-DE entry on leaf 9684) - blocker: not-attempted; the other five leaves' headers were read on crops and these were not, so their label and time words rest on the holder text; next: header crops with tools/iiif_lines.py --image, ~$0.5
+- four data conflicts logged M (Austria in O9-DB, Vermin in O9-DG, the time words of O9-DJ and O9-DK) - blocker: not-attempted; each is a key value that disagrees with the print or the clock and is graded M until tested; next: the first verifier tests each at every occurrence with decode_key.py --try and a control, ~$0.5
+
+## Escalation (O9R-1, 10 Oct 2026)
+- [x] siblings: same-leaf pairs read together (9684 two telegrams plus 9684/1, 9699/1 against 9699/0, 9699/1 continued from 9700).
+- [x] clear-pages: page text read for every header and the line above it; the clear words of every entry searched on all pointers (10 queries).
+- [x] known-keys: No. 1, No. 2 and No. 9 run on every entry, with 3 shuffled copies in the coherence run and 20 in the print-match run.
+- [ ] print: OR I-II volumes on disk and five downloaded searched; ser. III vol. 4 and ORN not searched (planned step above).
+- [n/a] key-rebuild: no key row edited, the sample table is as it was.
+- [ ] image-check: five of ten leaves read at the header only (planned step above).
+- [x] retry: the one be-api 502 retried once (HTTP 200).
+Verdict: keep going: 4 internal gaps; cheapest next: ORN and OR ser. III vol. 4 phrase grep for the seven unlocated entries, ~$0.3
