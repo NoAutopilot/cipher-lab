@@ -1,0 +1,117 @@
+line	pos	label	shape_description	gloss	confidence
+4	1	ELOOP	small e-like loop with tail	v	med
+4	2	SHOOK	heavy S-curl / hook, thick lower stroke	n	med
+4	3	TWOCOLON	numeral 2 followed by colon dots	d	med
+4	4	HCURS	cursive H, two uprights with crossbar	t	low
+4	5	OSMALL	small o after HCURS (may belong to it)	-	low
+4	6	KR	small R/k shape, leg diagonal (heavy here)	s	med
+4	7	HLOOP	looped H: left loop joined to upright stroke	r	med
+4	8	NINE	numeral 9	a	high
+4	9	EIGHT	plain numeral 8	u	high
+4	10	B3	b-like ascender joined to 3	p	med
+4	11	ARROWCIRC	small circle with arrow stroke rising right (mars-like)	i	low
+4	12	OL	o joined to l (struck through by a gloss stroke)	t	low
+4	13	LSTEM	tall single loop l	z	med
+4	14	ZERO	small solid oval / 0	-	low
+4	15	GLOOP	tall 8 / g with loops	v	med
+4	16	SQ	open square with top bar	a	med
+4	17	SQ	open square with top bar	-	med
+4	18	TWOZ	2 / z with flat base	d	high
+4	19	TBASE	upright cross with horizontal base (plus over bar)	r	med
+4	20	LCURL	pound-sign-like L: curl with crossbar and base	e	med
+4	21	NINE	numeral 9	i	med
+4	22	KR	small R/k shape	i	low
+4	23	KR	small R/k shape	l	low
+4	24	NINE	numeral 9	n	low
+4	25	BLOB	heavy filled ink blob / spade	g	low
+4	26	BIGO	large open circle (cut at bottom edge)	t	low
+5	1	CROSSBOX	cross above an open box (tower)	-	low
+5	2	LCURL	pound-sign-like L: curl with crossbar and base	-	med
+5	3	CURLH	s-curl with loop, crossed	h	med
+5	4	ZCROSS	z with cross stroke	e	low
+5	5	NINE	numeral 9	r	med
+5	6	CURLE	open curl with descending loop	e	med
+5	7	ZWAVE	wavy z / tilde stroke	i	med
+5	8	XI	gamma/xi curl crossed with loop at foot	n	med
+5	9	NINE	numeral 9	l	high
+5	10	DCROSS	upright with two crossbars (double dagger)	a	med
+5	11	ZLOOP	z with loop at top-left	n	med
+5	12	LAMBDA	lambda / inverted v with hook	s	med
+5	13	SIX	numeral 6	k	high
+5	14	ZT	curl over small T / cross	n	med
+5	15	EPS	open e / epsilon with tail	e	high
+5	16	BOXSTEM	small box pierced by vertical stem	c	med
+5	17	TOWER	open box under a horizontal lid bar	h	med
+5	18	HLOOP	looped H: left loop joined to upright stroke	t	med
+5	19	GLOOP	tall 8 / g with loops	v	med
+5	20	ZED	plain Z	o	high
+5	21	DPLUS	d-like loop joined to plus/cross	m	med
+5	22	LIBRA	arch (omega) over two horizontal bars	konig zu franck	high
+6	1	DELTA	triangle	b	high
+6	2	LCURL	pound-sign-like L: curl with crossbar and base	e	high
+6	3	KR	small R/k shape	s	high
+6	4	HLOOP	looped H: left loop joined to upright stroke	t	high
+6	5	XDOT	x / chi followed by dot	a	med
+6	6	NINE	numeral 9	l	high
+6	7	NINE	numeral 9 (dot after)	l	high
+6	8	GLOOP	tall 8 / g with loops	u	med
+6	9	XI	gamma/xi curl crossed with loop at foot	n	med
+6	10	DHOOK	d / delta with hooked ascender	g	med
+6	11	TOWER	open box under a horizontal lid bar	h	high
+6	12	DCROSS	upright with two crossbars (double dagger)	a	high
+6	13	DELTA	triangle	b	high
+6	14	EPS	open e / epsilon with tail	e	high
+6	15	XI	gamma/xi curl crossed with loop at foot	n	high
+6	16	PHOOK	tall upright with p-bowl / hook (thorn-like)	w	med
+6	17	ATAIL	a / 9 with long horizontal tail	i	med
+6	18	TBASE	upright cross with horizontal base (plus over bar)	r	high
+6	19	DELTA	triangle (heavy)	b	high
+6	20	ATAIL	a / 9 with long horizontal tail	i	med
+6	21	HLOOP	looped H: left loop joined to upright stroke	r	med
+6	22	IIBAR	two uprights between top and bottom bars (II)	g	high
+6	23	EPS	open e / rho with descender	e	med
+6	24	XI	gamma/xi curl crossed with loop at foot	n	high
+# ELOOP: small e-shaped loop
+# SHOOK: heavy S-curl hook
+# TWOCOLON: numeral 2 followed by colon
+# HCURS: cursive H, two uprights and crossbar
+# OSMALL: small o
+# KR: small R/k with diagonal leg
+# HLOOP: H made of a left loop joined to a tall upright
+# NINE: numeral 9
+# EIGHT: plain 8
+# B3: b-ascender joined to a 3
+# ARROWCIRC: circle with rising arrow (mars sign)
+# OL: o joined to l
+# LSTEM: tall single loop l
+# ZERO: small solid oval
+# GLOOP: tall figure-8 / g with loops
+# SQ: open square with top bar
+# TWOZ: 2/z with flat base
+# TBASE: plus sign standing on a horizontal base bar
+# DCROSS: vertical with two crossbars (double dagger)
+# LCURL: pound-sign-like curl with crossbar and base
+# BLOB: heavy filled ink shape
+# BIGO: large open circle
+# CROSSBOX: cross on top of an open box
+# CURLH: crossed s-curl with loop
+# ZCROSS: z with cross stroke
+# CURLE: open curl with descending loop
+# ZWAVE: wavy z / tilde
+# XI: crossed gamma/xi curl with loop at foot
+# ZLOOP: z with loop at upper left
+# LAMBDA: lambda with hook
+# SIX: numeral 6
+# ZT: curl over small T
+# EPS: open e / epsilon (or rho) with tail
+# BOXSTEM: small box pierced by a vertical stem
+# TOWER: open box under a horizontal lid bar
+# ZED: plain Z
+# DPLUS: d-loop joined to plus
+# LIBRA: omega arch over two bars (libra-like)
+# DELTA: triangle
+# XDOT: x/chi with dot
+# DHOOK: d with hooked ascender
+# PHOOK: tall upright with p-bowl (thorn-like)
+# ATAIL: a/9 with long horizontal tail
+# IIBAR: II between top and bottom bars

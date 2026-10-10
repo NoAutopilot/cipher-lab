@@ -1,0 +1,85 @@
+line	pos	sign_class	shape_note	gloss	confidence
+7	1	double-cross	vertical through two parallel horizontal bars	a	high
+7	2	closed-triangle	triangle, flat base	b	high
+7	3	NEW:e-loop	e-like loop with descending tail	e	high
+7	4	NEW:plus-over-bar	plus/t with a bar under the foot	r	high
+7	5	NEW:2-flourish	large 2/z with long flourish rising right	e	med
+7	6	p-shape	thorn-like p, ascender above bowl	w	high
+7	7	h-with-horizontal-bar	t-cross on top of h-like hooked stem	r	med
+7	8	nine-with-top-loop	large 9 with closed top loop	l	high
+7	9	NEW:y-shape	small y with curved descender	i	high
+7	10	NEW:e-loop	e-like loop with tail (also start of seg 2)	e	high
+7	11	closed-triangle	triangle	b	high
+7	12	capital-R	R/k shape, low	s	med
+7	13	NEW:y-shape	small y	i	high
+7	14	NEW:2-flourish	2/L with long looped flourish	e	high
+7	15	p-shape	thorn-like p	w	high
+7	16	seven	numeral 7	o	high
+7	17	nine-with-top-loop	tall 9	l	high
+7	18	nine-with-top-loop	9 slightly smaller	l	high
+7	19	NEW:e-loop	e-loop (also start of seg 3)	e	high
+7	20	NEW:looped-y	y/gamma with closed loop at foot	n	med
+7	21	NEW:delta-loop	tall figure-8/delta with cross-stroke and tail	v	med
+7	22	NEW:horned-cross	curved horns over crossbar, loop at foot	n	med
+7	23	capital-R	R/k shape	d	med
+7	24	NEW:plus-over-bar-dotted	hooked plus over base bar, dot below	i	low
+7	25	NEW:plus-over-bar	plus with base bar	r	high
+8	1	NEW:delta-loop	open-topped 8/delta loop	v	high
+8	2	NEW:horned-cross	horns over crossbar, vertical, foot bar	n	high
+8	3	NEW:delta-loop	open-topped 8/delta loop	v	med
+8	4	NEW:e-loop	e-loop with tail	e	high
+8	5	NEW:plus-over-bar	plus with base bar	r	high
+8	6	NEW:o-cross	small o joined to a t-cross	m	high
+8	7	NEW:e-loop	e-loop	e	high
+8	8	nine-with-top-loop	9/d-shape with top loop	l	med
+8	9	NEW:x-loop	x/h loop with tail, dot below	t	med
+8	10	NEW:horned-cross	horns over crossbar, vertical, foot bar	n	high
+8	11	double-cross	vertical through two bars	a	high
+8	12	NEW:h-plain	h-shape with hooked right leg	c	med
+8	13	NEW:double-post-box	two posts joined by top and bottom bars	h	high
+8	14	filled-pi-square	solid inked rectangle with bars	f	med
+8	15	NEW:hooked-double-bar	vertical with two bars, hook at foot	r	med
+8	16	double-cross	vertical through two bars	a	high
+8	17	NEW:alpha-tail	alpha/d loop with tail to lower right	g	med
+8	18	NEW:e-loop	e-loop	e	high
+8	19	NEW:looped-y	gamma/y with loop at foot	n	high
+8	20	capital-R	R/k shape (also start of seg 3)	s	high
+8	21	NEW:double-post-box	two posts with top and bottom bars	h	high
+8	22	double-cross	vertical through two bars	a	high
+8	23	closed-triangle	triangle	b	high
+8	24	NEW:P-loop	P/2-like loop with tail	e	med
+8	25	NEW:looped-y	gamma/y with loop at foot	n	high
+9	1	NEW:delta-loop	open-topped 8/delta loop	v	high
+9	2	NEW:horned-cross	horns over crossbar	n	high
+9	3	NEW:2-shape	2 with diagonal slash	d	high
+9	4	NEW:delta-loop	open-topped 8/delta loop	v	high
+9	5	NEW:horned-cross	horns over crossbar	n	high
+9	6	capital-R	R/k shape	d	med
+9	7	NEW:2-loop-on-bar	small 2/q loop standing on a base bar	i	med
+9	8	NEW:plus-over-bar	plus with base bar	r	high
+9	9	NEW:e-loop	e-loop	e	high
+9	10	NEW:plus-over-bar	plus with base bar (cut at seg1 edge, full in seg2)	r	high
+9	11	NEW:small-8	small closed figure 8	e	high
+9	12	NEW:plus-over-bar	plus with base bar	r	high
+9	13	NEW:loop-flourish	small loop with long thin flourish rising right	k	low
+9	14	NEW:tall-z-loop	tall z/3 with loop, bold	n	low
+9	15	NEW:looped-y	gamma/delta loop with hooked top	n	med
+9	16	NEW:2-shape	plain 2	d	med
+9	17	NEW:y-shape	small y	i	high
+9	18	NEW:alpha-tail	alpha/d loop with tail (also start of seg 3)	g	med
+9	19	l-loop	tall looped l	n	low
+9	20	NEW:horned-cross	horns over crossbar	n	high
+9	21	NEW:alpha-tail	alpha/d loop with tail	g	high
+9	22	NEW:P-loop	P/2-like loop	e	med
+10	1	yogh-3-shape	z/3 with loop descender	z	med
+10	2	NEW:e-loop	e-loop	e	high
+10	3	NEW:plus-over-bar	plus with base bar	r	high
+10	4	capital-R	R/k shape	s	med
+10	5	NEW:x-loop	x with loop on left	t	med
+10	6	NEW:2-flourish	2/L with long flourish	e	high
+10	7	NEW:looped-y	gamma/y with loop at foot	n	high
+10	8	NEW:2-shape	2 with diagonal slash	d	high
+10	9	NEW:y-shape	small y	i	high
+10	10	d-loop-diagonal	d/alpha loop crossed by diagonal (also start of seg 2)	d	med
+10	11	NEW:e-loop	e-loop	e	high
+10	12	NEW:looped-y	gamma/y with loop at foot	n	high

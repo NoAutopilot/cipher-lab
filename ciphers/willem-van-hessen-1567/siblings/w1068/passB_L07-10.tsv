@@ -1,0 +1,121 @@
+line	pos	label	shape_description	gloss	confidence
+7	1	DBLBAR	vertical stroke crossed by two horizontal bars	a	high
+7	2	DELTA	open triangle	b	high
+7	3	ELOOP	looped e-like sign with tail	e	med
+7	4	TBASE	vertical with short crossbar and flat foot	r	med
+7	5	ZED	long flat 2/Z-shape with lower bar	e	med
+7	6	THORN	p-like with ascender (thorn)	w	high
+7	7	HTCROSS	cross with hooked h-like descender	r	low
+7	8	DOT	single dot between signs (separator?)	-	low
+7	9	NINE	large 9-shape, round head, tail down	l	med
+7	10	Y	y/g-like with loop tail	i	med
+7	11	ELOOP	e-like loop	e	med
+7	12	DELTA	open triangle	b	high
+7	13	KAY	k/R-like, upright with diagonal leg	s	high
+7	14	Y	y-like with loop tail	i	med
+7	15	ZED	long 2/Z-shape with looped top	e	med
+7	16	THORN	p-like with cross stroke on stem	w	high
+7	17	SEVEN	7-shape	o	high
+7	18	NINE	9-shape	l	high
+7	19	NINE	9-shape, smaller	l	med
+7	20	ELOOP	e-like loop	e	high
+7	21	NLOOP	crossed y/x-like sign with loop below	n	med
+7	22	FIG8	standing figure-8 / loop on a stem	u	med
+7	23	NLOOP	curly crossed sign with loop below, larger	n	med
+7	24	KAY	R/k-like with diagonal leg	s	high
+7	25	DBLBAR_DOT	vertical with two crossbars and a dot below	z	med
+7	26	PLUSBASE	cross on a curved/broad base	u	med
+8	1	FIG8	tall 8/l loop with tail	u	high
+8	2	NLOOP	crossed x/y-like sign with crossbar and lower loop	n	high
+8	3	FIG8	tall 8/l loop	u	med
+8	4	CBAR	C/e with stroke through it	e	med
+8	5	TBASE	vertical with crossbar and flat foot	r	high
+8	6	OT	small o joined to a cross (o+t)	m	med
+8	7	ELOOP	e-like loop with tail	e	high
+8	8	NINE	9/theta-like loop	l	med
+8	9	HDOT	H/x-like looped sign with dot below	t	low
+8	10	NLOOP	crossed x/y sign with loop below	n	high
+8	11	DBLBAR	vertical crossed by two bars	a	high
+8	12	HBAR	h with crossbar on ascender	c	high
+8	13	TABLE	horizontal bar on two legs with base (pi/box)	h	high
+8	14	BOX	solid rectangle with midline	f	high
+8	15	TZED	cross with z-like bent foot	r	med
+8	16	DBLBAR	vertical crossed by two bars	a	high
+8	17	ALPHA	alpha/d-like loop with ascender	g	high
+8	18	RHO	P/rho with tail	e	high
+8	19	NLOOP	crossed sign with loop below	n	high
+8	20	KAY	R/k-like with diagonal leg	s	high
+8	21	TABLE	bar on two legs with base (pi/box)	h	high
+8	22	DBLBAR	vertical crossed by two bars	a	high
+8	23	DELTA	triangle	b	high
+8	24	RHO	P/rho with tail	e	high
+8	25	NLOOP	crossed sign with loop below	n	high
+9	1	FIG8	tall 8/l loop	u	high
+9	2	NLOOP	crossed sign with loop below	n	high
+9	3	ZCROSS	2/Z with crossing slash (2 + 4)	d	high
+9	4	FIG8	tall 8/l loop	u	high
+9	5	NLOOP	crossed sign with loop below	n	high
+9	6	KAY	R/k-like with diagonal leg	s	high
+9	7	Q9	9/a-like loop on an underline	i	med
+9	8	PLUSBASE	cross on curved base	u	med
+9	9	ELOOP	e-like loop	e	high
+9	10	TBASE	cross with flat foot	r	high
+9	11	EIGHT	compact closed figure 8	e	high
+9	12	TBASE	cross with flat foot	r	high
+9	13	CURLO	small o with long upward curled stroke	k	med
+9	14	DARK3	heavy 3/z-like sign with loop	u	low
+9	15	SIX	6/sigma-like with loop and cross stroke	n	med
+9	16	ZCROSS	2-shape with small curl/cross at right	d	med
+9	17	Y	y/4-like	i	high
+9	18	ALPHA	alpha/d-like loop with ascender	g	high
+9	19	ELL	tall open l-loop	u	low
+9	20	NLOOP	crossed sign with loop below	n	high
+9	21	ALPHA	alpha/d-like loop	g	high
+9	22	RHO	P/rho with loop	e	high
+10	1	ZLOOP	3/z over a lower loop (tall)	z	med
+10	2	CBAR	e-like with crossing curve below	e	low
+10	3	TBASE	cross with flat foot	r	high
+10	4	KAY	R/k-like with diagonal leg	s	high
+10	5	XI	x/kappa-like with curl	t	med
+10	6	ZED	long 2/Z with loop	e	high
+10	7	NLOOP	crossed sign with loop below	n	high
+10	8	ZCROSS	2 with crossing slash (2 + 4)	d	high
+10	9	Y	y-like with tail	i	high
+10	10	ALPHA	alpha/d-like loop	g	high
+10	11	ELOOP	e/rho-like loop	e	high
+10	12	NLOOP	crossed sign with loop below	n	high
+# DBLBAR vertical crossed by two horizontal bars
+# DBLBAR_DOT as DBLBAR with a dot under it
+# DELTA open triangle
+# ELOOP rounded e-like loop with tail (rho-like variant possible)
+# RHO P/rho with tail or loop
+# TBASE vertical/cross with flat foot (plus-on-base)
+# PLUSBASE cross on curved/broad base (possibly = TBASE)
+# ZED long flat 2/Z shape
+# ZCROSS 2 with crossing slash, like 2+4
+# THORN p/thorn with ascender or cross on stem
+# HTCROSS cross with hooked h-like descender
+# DOT isolated dot (separator)
+# NINE large 9 with round head
+# Y y/g/4-like with tail
+# KAY upright R/k with diagonal leg
+# SEVEN 7 shape
+# NLOOP crossed x/y-like sign with loop below
+# FIG8 tall 8 / l-loop on a stem
+# EIGHT compact closed 8
+# CBAR C or e with a stroke through it
+# OT o joined to a small cross
+# HDOT H/x-like looped sign with dot
+# XI x/kappa with curl (possibly = HDOT)
+# HBAR h with crossbar on ascender
+# TABLE bar on two legs with base (pi/box)
+# BOX solid rectangle with midline
+# TZED cross with z-like bent foot
+# ALPHA alpha/d-like loop with ascender
+# Q9 9/a-like loop on an underline
+# CURLO small o with long upward curl
+# DARK3 heavy 3/z-like with loop
+# SIX 6/sigma-like with loop
+# ELL tall open l-loop
+# ZLOOP 3/z over lower loop
+# Line 10 right part (seg s2 after pos 12, all of s3): flourish/dash only, no cipher signs.

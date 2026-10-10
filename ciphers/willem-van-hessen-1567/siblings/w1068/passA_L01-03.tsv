@@ -1,0 +1,77 @@
+line	pos	sign_class	shape_note	gloss	confidence
+1	1	NEW:loop-on-splayed-legs	small loop on top of two splayed legs	e	med
+1	2	capital-R	small R: loop with diagonal leg	s	med
+1	3	p-shape	p with round bowl at top of stem	w	high
+1	4	NEW:nine-over-diagonal-loop	small loop/9 above, stem into a lower loop crossed by diagonal	i	med
+1	5	NEW:plus-with-base	upright cross with crossbar and curled foot/base	r	med
+1	6	capital-H-with-crossbar	cursive H with left loop	d	med
+1	7	double-cross	vertical with two crossbars	a	high
+1	8	NEW:tall-8	tall open figure-8, top loop and bottom loop	w	med
+1	9	h-with-horizontal-bar	h with bar crossing ascender	c	med
+1	10	NEW:bold-II-block	two verticals between heavy top and bottom bars	h	med
+1	11	closed-triangle	open-based triangle, apex up (spans s1/s2 overlap)	o	high
+1	12	NEW:hooked-C-tau	C/curved stem with hook-bar on top	e	med
+1	13	NEW:nine-over-diagonal-loop	9-loop above, diagonal stroke to lower loop	i	med
+1	14	NEW:tall-8	stacked two-loop 8	v	med
+1	15	mercury	curved horns on top, circle, stem below	n	med
+1	16	capital-R	R with loop and long diagonal leg	s	high
+1	17	NEW:open-square	large open square box	f	high
+1	18	l-loop	loop on top of stem with bottom curl	u	med
+1	19	NEW:plus-with-base	cross with crossbar and base bar	r	high
+1	20	d-loop-diagonal	alpha-like loop with diagonal ascender	g	high
+1	21	NEW:tall-8	small figure-8	a	med
+1	22	p-shape	p with hooked (3-like) top	w	med
+1	23	NEW:nine-over-diagonal-loop	9/y-like loop with sweeping lower curve	i	med
+1	24	capital-R	R with loop and long diagonal leg	s	high
+2	1	d-loop-diagonal	alpha loop with diagonal ascender	g	high
+2	2	NEW:hooked-C-tau	curved stem with hook-bar on top	e	med
+2	3	capital-R	lambda-like R with loop on top	s	med
+2	4	NEW:lambda	plain lambda, no loop	a	med
+2	5	d-loop-diagonal	alpha loop with diagonal	g	high
+2	6	capital-H-with-crossbar	cursive H with left loop	t	med
+2	7	NEW:two-over-bar	2-shape over heavy horizontal bar with small tick	d	med
+2	8	double-cross	vertical with two crossbars	a	high
+2	9	capital-R	R with loop and diagonal leg	s	high
+2	10	p-shape	thorn-like: stem above and below bowl, foot hook	w	med
+2	11	NEW:nine-over-diagonal-loop	9-loop over diagonal lower loop	i	med
+2	12	nine	closed loop, stem, hook to left at foot	l	med
+2	13	NEW:bold-II-block	heavy top/bottom bars, two verticals (upper letter descends onto it)	h	med
+2	14	NEW:nine-long-tail	small loop with long tail sweeping down-left	a	med
+2	15	nine	closed loop, stem, foot hook left	l	med
+2	16	NEW:circle-with-cross	small circle at lower left with diagonal t-cross	m	med
+2	17	l-loop	tall loop-stem with lower loop	v	med
+2	18	NEW:tall-8	small closed figure-8	o	high
+2	19	mercury	horns on top, small circle, stem	n	med
+2	20	d-loop-diagonal	alpha loop with diagonal ascender	g	high
+2	21	NEW:plus-with-base	cross with crossbar and base bar (spans s2/s3 overlap)	r	high
+2	22	horizontal-z	Z with heavy horizontal strokes	o	high
+2	23	NEW:circle-with-cross	small circle with diagonal t-cross	m	high
+2	24	closed-triangle	triangle apex up	b	high
+2	25	double-cross	vertical with two crossbars	a	high
+2	26	h-with-horizontal-bar	h with crossbar on ascender	c	med
+2	27	NEW:bold-II-block	heavy top/bottom bars, two verticals; gloss is end flourish of ch	h	low
+3	1	l-loop	short l-loop with tail	v	med
+3	2	open-pi	flat-topped Pi; f descender touches it	f	med
+3	3	open-pi	flat-topped Pi; long-s/f descender runs into left leg	f	med
+3	4	small-o-with-hooked-tail	dark filled oval with small tail	z	low
+3	5	NEW:v-over-loop	v-like top opening into closed loop below	w	low
+3	6	seven	horizontal bar with diagonal down-left (7)	o	med
+3	7	nine	closed loop, stem, foot hook left	l	high
+3	8	NEW:open-square	open square; upper ff stem descends onto it	f	high
+3	9	NEW:open-square	open square	f	high
+3	10	d-loop-diagonal	alpha loop with diagonal ascender	g	high
+3	11	NEW:tall-8	small figure-8	e	med
+3	12	capital-R	R with loop and diagonal leg (spans s1/s2 overlap)	s	high
+3	13	h-with-horizontal-bar	h with crossbar	c	med
+3	14	NEW:bold-II-block	heavy bars with two verticals	h	high
+3	15	NEW:hash	# two verticals two crossbars; 9-shaped gloss letter descends into it	w	low
+3	16	NEW:two-over-bar	2-shape over long bar with slash	a	low
+3	17	NEW:script-L-bar	looped L/script-L with diagonal and base bar	d	low
+3	18	NEW:plus-with-base	cross with crossbar and base	r	med
+3	19	NEW:plus-with-base	cross with crossbar and base (spans s2/s3 overlap)	r	high
+3	20	NEW:hooked-C-tau	small p/C-like loop with hook, stem down	e	med
+3	21	l-loop	small l-loop	u	med
+3	22	capital-H-with-crossbar	cursive H with loop rising into gloss	t	med
+3	23	NEW:hooked-C-tau	small loop with hook, bottom cut by crop	e	low
+3	24	NEW:plus-with-base	f-like cross with hooked top and crossbar	r	med
+3	25	capital-X-cross	curved X / crossing strokes, lower part cut by crop	n	low

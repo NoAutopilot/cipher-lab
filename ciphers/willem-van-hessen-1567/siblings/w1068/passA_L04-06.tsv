@@ -1,0 +1,73 @@
+line	pos	sign_class	shape_note	gloss	confidence
+4	1	l-loop	narrow upright loop like script l, open foot	v	med
+4	2	NEW:looped-gamma	bold slanting stroke with thin hooked arm up-right (v/gamma), foot cut by crop	n	low
+4	3	backward-C-loop	bold rounded hook open to lower right, dot after	d	low
+4	4	NEW:z-with-l-loop	2/z-curve crossed by a tall thin loop	t	med
+4	5	NEW:arc-cut	small arch at crop foot, rest cut off	-	low
+4	6	NEW:k-loop-leg	k/R shape: loop at top, bold diagonal leg	s	med
+4	7	NEW:z-with-l-loop	2/z-curve crossed by tall loop rising into gloss h	rh	low
+4	8	nine	plain 9	a	high
+4	9	open-8-with-tail	8 with open lower bowl and right leg	u	med
+4	10	yogh-3-shape	flat-topped 3	p	med
+4	11	mars	small circle with long arrow stroke up-right	i	med
+4	12	NEW:arc-cut	small arch at crop foot before 2-curve	-	low
+4	13	NEW:z-with-l-loop	2-curve crossed by loop (loop may be descender of gloss z)	t	med
+4	14	NEW:bold-oval-0	small bold oval, upright	z	med
+4	15	NEW:loop-on-stem	small loop on top of a stem with curled foot	v	med
+4	16	small-closed-square	bold square, wider, top bar extends left	n	med
+4	17	small-closed-square	bold square	s	med
+4	18	NEW:2z-ligature	bold 2 joined to a small z	d	med
+4	19	double-cross	upright with crossbar and lower base bar	r	med
+4	20	NEW:pound-L	loop up-right over a stem with bold base bar	e	med
+4	21	nine	plain 9	i	high
+4	22	NEW:k-loop-leg	small R/k with loop, foot cut	i	med
+4	23	NEW:k-loop-leg	small R/k with loop, foot cut	l	med
+4	24	nine	plain 9	h	med
+4	25	closed-triangle	heavy filled triangular blot, foot cut	ag	low
+4	26	small-plain-circle	large thin circle, lower half cut	t	low
+5	1	NEW:cross-over-box	square box with stem rising from it, crossbar on stem	f	low
+5	2	NEW:pound-L	bar with loop up-right, stem, bold base bar	e	low
+5	3	NEW:looped-gamma	gamma/v cross with loop and base	n	med
+5	4	NEW:barred-2	2/z shape with horizontal stroke through	d	low
+5	5	nine	9 with dash at foot (loop joins gloss blot above)	l	low
+5	6	NEW:pound-L	stem with loop top-right, curved foot	e	med
+5	7	NEW:hook-with-wave	small hooked stroke running into long wavy base	i	low
+5	8	NEW:looped-gamma	curved left arm, diagonal up-right, crossed at base	n	med
+5	9	nine	9 with dash at foot	l	med
+5	10	double-cross	upright with two crossbars	a	high
+5	11	NEW:looped-gamma	gamma with bar top, loop below	n	med
+5	12	NEW:looped-lambda	lambda with small loop at apex (joins gloss blot)	d	med
+5	13	small-o-with-hooked-tail	small o with long hooked tail rising right (like 6)	k	med
+5	14	NEW:looped-gamma	gamma with hook top-left and crossbar foot	n	med
+5	15	NEW:looped-c	c with small loop at top-left	e	med
+5	16	NEW:cross-over-box	stem through left side of a box, short left bar	c	med
+5	17	NEW:loop-over-box	small loop sitting on top of a square box	h	med
+5	18	NEW:z-with-l-loop	2-curve crossed by thin tall loop	t	med
+5	19	NEW:loop-on-stem	loop on top, s-curve stem below	v	med
+5	20	NEW:capital-Z	bold capital Z	o	high
+5	21	d-loop-diagonal	open loop with diagonal rising right, crossed by bar	m	med
+5	22	NEW:libra	arch over long double bar; plain words in margin explain it (upper 'konig zu', lower 'frank')	konig zu frank	med
+6	1	closed-triangle	tall outlined triangle, bold base	b	high
+6	2	NEW:pound-L	crossbar over stem with bold base bar (loop above is gloss s descender)	es	low
+6	3	NEW:k-loop-leg	small R/k with loop, dot below	ta	low
+6	4	NEW:z-with-l-loop	2-curve crossed by tall loop	t	med
+6	5	capital-X-cross	x-like cross of two curved strokes, colon after	u	low
+6	6	nine	9 with dash at foot	n	med
+6	7	nine	9 with dash at foot, colon after	n	med
+6	8	NEW:s-with-bottom-loop	s-curve stem ending in small bottom loop (top meets gloss g)	g	low
+6	9	NEW:looped-gamma	gamma with loop on stem and crossbar foot	-	med
+6	10	d-loop-diagonal	small circle with bold diagonal rising right	-	med
+6	11	NEW:cross-over-box	square box with cross on top	h	med
+6	12	double-cross	upright with two close crossbars	a	med
+6	13	closed-triangle	triangle, bold	b	high
+6	14	NEW:looped-c	c with small loop at top	e	med
+6	15	NEW:looped-gamma	gamma with small loop at stem and foot bar	n	high
+6	16	p-shape	tall stem with bowl to right	w	med
+6	17	nine	9 with long tail swept right	i	low
+6	18	double-cross	bold upright with crossbar and base bar	r	med
+6	19	closed-triangle	bold triangle pointing right	b	high
+6	20	nine	small 9, stem curls into foot loop	i	med
+6	21	NEW:z-with-l-loop	2-curve crossed by loop (loop meets gloss g descender)	r	low
+6	22	NEW:roman-II	two uprights between top and bottom bars	g	high
+6	23	p-shape	loop on top with descending stem (rho)	e	med
+6	24	NEW:looped-gamma	gamma with loop at stem, foot	n	high

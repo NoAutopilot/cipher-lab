@@ -1,0 +1,11 @@
+# briefnr 1068 p.2 (Oranje -> Willem van Hessen, 13 Mar 1563): ciphertext_1068.tsv through key_1068.tsv, 232 signs; key value = the token's own reconciled gloss on 212 of 232; per-token grades {'?': 21, 'H': 159, 'M': 52} (H/M from ciphertext_1068.tsv where the key agrees; '?' = class unkeyed). '-' = no gloss over the sign. WVO-1068-KEY, 10 Oct 2026.
+L01: eswirtauchbeiunsfurg?wis
+L02: gesagtdaswi?ha?mu?ngrombach
+L03: uffzwo?ffg?sch?ddrreutern
+L04: undt?st?upi?tzuffdre?ss?gt
+L05: fend?ein?ansknechtuom[konig zu frankreich]
+L06: besta??unghabenwirbithen
+L07: aberewr?iebsiewo??enunser
+L08: unuerme?tnachfragenshaben
+L09: undunsirer?rkundigunge
+L10: uerstendigen

@@ -1,0 +1,66 @@
+sign_desc	value	count	grade	note
+# briefnr 1068 (Oranje -> Willem van Hessen, Brussels 13 Mar 1563), sign class -> letter from the contemporary decipherment written above each cipher line. A `period` key rebuilt by WVO-1068-KEY (account 4, 10 Oct 2026) from two blind Opus passes + the worker's reconciliation (w1068/reconcile_1068.py). Class names are this letter's own (not the 1069 names); the 1069 / f.23 concordance is a separate controlled test (w1068/concord_1068.py).
+2-flourish	e	3	H	3 H token(s)
+P-loop	e	4	H	4 H token(s)
+R-loop	s	15	H	6 H token(s)
+X-dot	a	1	M	no H token; reconciled values {'a': 1}
+X-hook	n	1	H	1 H token(s)
+Z	o	2	H	2 H token(s)
+alpha-loop	g	10	H	8 H token(s)
+arc-cut	?	2	M	no gloss over any occurrence
+big-circle	t	1	H	1 H token(s)
+blot	g	1	M	no H token; reconciled values {'g': 1}
+bold-oval	z	2	H	1 H token(s)
+box-stem	c	1	H	1 H token(s)
+compact-8	?	4	M	H tokens conflict {'o': 1, 'e': 2}
+cross-on-base	r	15	H	13 H token(s)
+cross-over-box	f	1	M	no H token; reconciled values {'f': 1}
+curl-o	k	1	H	1 H token(s)
+d-loop-plus	m	1	H	1 H token(s)
+dark-3	u	1	M	no H token; reconciled values {'u': 1}
+double-cross	a	8	H	8 H token(s)
+double-cross-dot	e	1	M	no H token; reconciled values {'e': 1}
+double-post-box	h	7	H	2 H token(s)
+e-loop	e	8	H	8 H token(s)
+filled-box	f	1	H	1 H token(s)
+flat-3	p	1	H	1 H token(s)
+h-bar	c	4	H	1 H token(s)
+h-cross	r	1	H	1 H token(s)
+hash	?	1	M	no gloss over any occurrence
+hook-wave	i	1	H	1 H token(s)
+hooked-c	e	5	H	5 H token(s)
+hooked-double-bar	r	1	H	1 H token(s)
+hump-cut	e	1	M	no H token; reconciled values {'e': 1}
+l-loop	u	6	H	4 H token(s)
+lambda	a	1	H	1 H token(s)
+libra	^konig zu frankreich^	1	H	1 H token(s)
+lidded-box	h	2	H	2 H token(s)
+loop-splayed-legs	e	1	H	1 H token(s)
+looped-H	t	9	H	5 H token(s)
+looped-gamma	n	15	H	13 H token(s)
+looped-lambda	s	1	M	no H token; reconciled values {'s': 1}
+mars	i	1	H	1 H token(s)
+mercury	n	7	H	7 H token(s)
+nine	?	14	M	H tokens conflict {'l': 6, 'a': 1, 'i': 1}
+nine-long-tail	a	1	H	1 H token(s)
+nine-tail	i	6	H	6 H token(s)
+o-cross	m	3	H	3 H token(s)
+open-8	u	1	H	1 H token(s)
+open-pi	f	2	H	2 H token(s)
+open-square	f	5	M	no H token; reconciled values {'f': 5}
+pound-L	e	4	H	2 H token(s)
+q-on-bar	i	1	H	1 H token(s)
+script-L-bar	d	1	H	1 H token(s)
+seven	o	2	H	2 H token(s)
+six	k	1	H	1 H token(s)
+tall-8	u	10	H	8 H token(s)
+thorn-p	w	6	H	6 H token(s)
+triangle	b	8	H	6 H token(s)
+triple-cross	a	1	M	no H token; reconciled values {'a': 1}
+two-colon	d	1	H	1 H token(s)
+two-slash	d	6	H	4 H token(s)
+two-z	d	1	H	1 H token(s)
+v-over-loop	w	1	H	1 H token(s)
+x-loop	t	2	H	2 H token(s)
+y-tail	i	4	H	4 H token(s)
+yogh-z	u	1	M	no H token; reconciled values {'u': 1}

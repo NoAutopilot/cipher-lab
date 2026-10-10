@@ -1,0 +1,40 @@
+labelled signs: 1068 59, 1069 42, f23 22
+1068 vs 1069: pairs listed 32, scored (high+medium, both labelled) 17, same-letter real 10 of 17, perm mean 0.73 p95 2 max 6 p 0.0000 -> PASS
+   D01=e  B32=NULL  
+   D03=s  B05=s  SAME
+   D14=r  B03=r  SAME
+   D17=m  B39=m  SAME
+   D19=a  B08=a  SAME
+   D24=p  B31=p  SAME
+   D25=c  B11=c  SAME
+   D40=i  B16=i  SAME
+   D43=a  B18=a  SAME
+   D44=i  B34=NULL  
+   D46=u  B19=u  SAME
+   D47=f  B22=h  
+   D47=f  B20=NULL  
+   D52=o  B23=NULL  
+   D53=k  B25=m  
+   D16=k  B25=m  
+   D55=w  B21=w  SAME
+1068 vs f.23: pairs listed 35, scored (high+medium, both labelled) 20, same-letter real 13 of 20, perm mean 1.13 p95 3 max 7 p 0.0000 -> PASS
+   D01=e  Z=d  
+   D03=s  R=s  SAME
+   D06=o  Z=d  
+   D07=g  ALF=g  SAME
+   D09=t  O=z  
+   D14=r  T=r  SAME
+   D19=a  DT=a  SAME
+   D21=h  II=h  SAME
+   D22=e  E=e  SAME
+   D25=c  HB=c  SAME
+   D37=t  GE=i  
+   D40=i  MARS=i  SAME
+   D41=n  RAM=n  SAME
+   D43=a  9=a  SAME
+   D46=u  8=e  
+   D47=f  II=h  
+   D48=f  SQ=f  SAME
+   D55=w  P=w  SAME
+   D56=b  TRI=b  SAME
+   D63=i  Y=k  

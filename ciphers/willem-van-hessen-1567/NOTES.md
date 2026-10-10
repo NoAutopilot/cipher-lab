@@ -775,3 +775,125 @@ Brief: `.claude/briefs/runs/2026-10-06-account4-run10-jobs.md` "R10-WVHMIN". No 
   24 Sept harvest (opmerkingen=cijfer) missed it; 1069 is its answer. Glossed, so a key source for the Orange-to-Hessen direction, not
   a target. WVO 1130 (21 Feb 1567) is the same kind (a copy with the coded passages solved). Not transcribed (KH4-C brief: survivors
   only); suggestion: test 1068's sign shapes against key_1069.tsv and the f.23 key (wvo-hessen-1564). Log: keyhunt/2026-10-07-KH4C.tsv.
+
+## WVO-1068-KEY (account 4, 9 Oct 2026 23:39-23:5x UTC by date -u): WVO 1068's period gloss aligned into siblings/key_1068.tsv
+
+Brief: `.claude/briefs/runs/2026-10-09-account4-wvo-1068-key.md` Job A. A key source, not a target. The plaintext survives on
+the leaf as the decipherer's line, so this is "key rebuilt from the period gloss", never a decipherment of an unread letter.
+The status of 1127 is unchanged: `partial`, parked on ASKS 31.
+
+**Source**
+- `01068.pdf` was fetched once from resources.huygens.knaw.nl: 1 request, HTTP 200, 1,442,634 bytes, sha256 in `images/manifest.json`.
+- The PDF is kept in the scratchpad and not committed (images stay out of the repository).
+- Page 2 is the cipher postscript: **10 cipher lines**, not about 18, each under a plain line. KH4-C counted gloss and cipher lines
+  together. Native image 1235x1084 at 149 ppi; rendered at 600 dpi with `pdftoppm -r 600 -f 2 -l 2` (4961x7016).
+
+**Crop step (pasted, run before the first subagent call)**
+- `python3 tools/iiif_lines.py --image p2_600-2.png --region 950,980,3950,2800 --out crops --prefix p2g --max-width 1400 --overlap 120 --centres 179,508,733,942,1247,1525,1818,2091,2345,2634 --debug`
+  wrote 30 crops (10 line pairs x 3 segments).
+- Detection could not find the lines on its own (autocorrelation pitch 44, 0 lines; with `--distance` it gave 9 or 16). Gloss and cipher
+  rows alternate, so I gave the centres by eye between each gloss row and its cipher row.
+- The debug overlay was checked: every band holds its gloss row and its cipher row.
+- Ascenders and descenders are clipped at some band edges, mostly on line 4.
+
+**Passes**
+- Six Opus subagent passes, blind, on crops only (no full page sent). Bands: L1-3, L4-6, L7-10.
+- Pass A used the 42 key_1069 class names as a reference vocabulary, plus NEW:. Pass B used its own labels.
+- Sign counts are identical in both passes on all 10 lines: 24 / 27 / 25 / 26 / 22 / 24 / 25 / 25 / 22 / 12 = **232 signs**.
+  Pass B counted one interpunct on L7 as a sign; it was dropped.
+- Reconciliation is my own, against the crops plus four own region looks (L3 middle, L4 right, L7 s3, L10 s1).
+- Script: `siblings/w1068/reconcile_1068.py`; per-sign table: `w1068/reconcile_1068.tsv`.
+- Pass B's labels were unified across bands by shape in UNIFY. Where pass A split a shape that B lumped, A's split was followed
+  (TOKCLASS). One looped-y vs horned-cross split was carried into a mercury class.
+
+**Grades**
+- H = both passes' literal gloss letters equal the reconciled letter, after v->u, j/y->i and long s->s normalisation.
+- Everything else is M. That includes places where both passes read the same Kurrent letter wrongly: u read as w ("auch"), round s
+  read as b, initial v read as z ("verstendigen"), r read as v, the e of "vnser" read as i/z.
+- Tokens: **H 170, M 62 of 232**.
+- Key (`siblings/key_1068.tsv`): **64 classes**. 59 are keyed and 2 are left unkeyed because their H tokens conflict:
+  - `nine`: l 6, a 1, i 1. The a and i are on the smudged line 4, so this is probably two 9-shapes lumped.
+  - `compact-8`: e 2, o 1.
+- 2 classes have no gloss over any occurrence (`arc-cut`, `hash`) and 1 code word is keyed: `libra` = "konig zu frankreich".
+  The gloss writes "konig zu" above the sign and "franck" in the margin beside it.
+- `siblings/glyphs_1068.tsv` is the atlas: blind-pass descriptions and occurrences.
+
+**What the key is like**
+- Homophonic, 20 letters, mean 2.95 signs per letter (KEY-DESIGN row).
+- 'o' is a real letter here (von, vom, grombach, zwolff, wollen). No null mark was found.
+- In 1069, by contrast, the decipherer writes o over seven or more shapes at word breaks, and those are nulls.
+
+**Rule 7**
+`python3 siblings/check_1068.py --check` re-runs `reconcile_1068.py --check` and regenerates `reading_1068.txt`.
+Output (pasted, run twice, exit 0 both times):
+```
+OK: reconcile_1068.tsv, ciphertext_1068.tsv, key_1068.tsv current
+OK: reading_1068.txt current
+```
+Through the key, the gloss reads (unkeyed '?'):
+```
+eswirtauchbeiunsfurg?wis | gesagtdaswi?ha?mu?ngrombach | uffzwo?ffg?sch?ddrreutern | undt?st?upi?tzuffdre?ss?gt |
+fend?ein?ansknechtuom[konig zu frankreich] | besta??unghabenwirbithen | aberewr?iebsiewo??enunser | unuerme?tnachfragenshaben |
+undunsirer?rkundigunge | uerstendigen
+```
+The key value equals the token's own reconciled gloss on 212 of 232 signs. Of the 20 that differ, most are the unkeyed `nine` (l).
+- L3 p12-17 ("gesch?dd", over h-bar, double-post-box, hash, two-slash, script-L-bar) stays M or unread. The gloss there is cramped
+  under line 2's descenders. WVO 98 f.67 has "zwolff hundert pferde" at this point, and the word was not settled.
+- L6 "bithen" (looped-H, double-post-box) is literal. Both passes read r and g there; the value is M.
+
+**Control (a): shuffle-consistency (bSZL form)**
+`w1068/control_shuffle_1068.py`, 10000 draws, seed 1068. Output pasted:
+```
+H (both passes same gloss): 146 tokens in 28 recurring classes; real 0.979; shuffled mean 0.323, p95 0.356; p 0.0000 -> PASS (real > p95)
+all reconciled: 198 tokens in 31 recurring classes; real 0.980; shuffled mean 0.281, p95 0.308; p 0.0000 -> PASS (real > p95)
+H, pass B's own raw labels per band (no merging by the reconciler): 123 tokens in 40 recurring classes; real 0.967; shuffled mean 0.414, p95 0.447; p 0.0000 -> PASS (real > p95)
+```
+- The third row uses no class merging by me (pass B's blind labels within each band), so the pass does not come from my unification.
+- Ties: none.
+
+**Control (b): shape concordance (R9-WVOX form)**
+- Pre-registered in `w1068/PREREG-WVO1068-CONC.md`, pushed before scoring (cca823c73).
+- One blind Sonnet text-only call on the letter-stripped description files wrote `w1068/concordance_1068.tsv`: 66 rows, kept as returned.
+  The 1068 descriptions are the blind passes' own words.
+- Scorer: `w1068/concord_1068.py`; full output in `w1068/concord_1068_out.txt`. Letters were permuted within each key, 10000 draws.
+
+| key pair | matched same-letter / scored pairs | perm mean | perm p95 | max | verdict |
+|---|---|---|---|---|---|
+| 1068 vs key_1069 | **10 / 17** | 0.73 | **2** | 6 | PASS |
+| 1068 vs f.23 (WVO 1109) gloss key | **13 / 20** | 1.13 | **3** | 7 | PASS |
+
+**What the key shares, and what it does not** (ids mapped back to class names from `concord_1068_out.txt`)
+- Shared with 1069 (same shape, same letter): s (R-loop / capital-R), r (cross-on-base / bold-dagger-crossbar),
+  m (d-loop-plus / d-loop-diagonal), a (double-cross), a (nine-long-tail / nine), p (flat-3 / yogh-3), c (h-bar / h-with-horizontal-bar),
+  i (mars), u (open-8 / open-8-with-tail), w (thorn-p / p-shape).
+- Different from 1069 (7 of 17):
+  - Four 1068 letters fall on shapes that 1069 glosses o and the R9 scorer labels NULL: e (2-flourish / horizontal-z),
+    i (nine-tail / nine-with-top-loop), f (open-pi / open-pi), and seven, which is glossed o in **both** letters. Seven is scored as
+    different only because 1069's o-signs carry the NULL label. In 1068, o is a real letter, which raises the question of whether
+    some of 1069's "o" signs are real o rather than nulls. Not tested; noted only.
+  - open-pi is f here, against h for 1069's pi-like-capital-Π.
+  - Two 1068 k-signs (six, curl-o) match 1069's m sign (small-o-with-hooked-tail).
+- Shared with f.23: s, g, r, a, h, e, c, i, n, a, f, w, b.
+- Different from f.23 (7 of 20): 2-flourish e and Z o against f.23's Z (d); big-circle t against O (z); looped-H t against GE (i);
+  open-8 u against 8 (e); open-pi f against II (h); y-tail i against Y (k).
+- So 1068 (Orange -> Hesse, 13 Mar 1563), 1069 (Hesse -> Orange, 23 Mar 1563) and f.23 (1564) share a core of sign->letter values.
+  This is a test result at the p95 above, not an assumption.
+- They are not one table: about a third of the matched shapes carry another letter or a null. These are graded statements from three
+  gloss keys, with no key merged.
+
+**WVO 98 f.67 (KH1-D)**
+- The clear text matches in substance. 1068's gloss reads "es wirt auch bei uns fur gewis gesagt das wilhalm von grombach uff zwolff
+  [..] reuter und staupitz uff dreissig fendlein lansknecht vom konig zu frankreich bestallung haben wir bithen aber ewr lieb sie
+  wollen vnser unvermelt nachfragen s haben und uns irer erkundigung verstendigen".
+- WVO 98 f.67 (august-van-saksen-1561-64 align_98.txt) has the same news in the same order.
+- Its differences: "wirdt bey uns", "zwolff hundert pferde", "landtsknecht", "sol", "E.L. wollen meiner unvermeldt nachforschung
+  haben und mich irer erkundigung ...". 1068 is the version addressed to Hesse, not a verbatim copy.
+
+**Hosts and calls**
+- Hosts: resources.huygens.knaw.nl, 1 request.
+- Subagents: 6 Opus vision passes (crops only), 1 Sonnet text-only concordance call. Own looks: 4 region crops plus the debug overlay.
+
+**Next (suggestion, not run)**
+- An own look at L3 p12-17 and L4 p20-26 at higher crop height (the band edges clip them) would settle `nine` and `compact-8`.
+- The three gloss keys could then be cross-checked class by class on their M classes only.
+- None of this reads 1127: its ciphertext is still unimaged (REQUEST.md, ASKS 31).

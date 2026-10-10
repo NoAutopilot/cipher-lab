@@ -1,0 +1,66 @@
+glyph_id	sign_class	shape_desc	value	grade	count	occurrences
+# briefnr 1068 p.2 sign classes (WVO-1068-KEY, 10 Oct 2026). shape_desc = pass B description // pass A description at the first occurrence; value/grade from key_1068.tsv; occurrences = line.pos. Crops are not committed (scratchpad; images stay out of the repository); regenerate with the iiif_lines command in NOTES.md.
+D01	2-flourish	long flat 2/Z-shape with lower bar // large 2/z with long flourish rising right	e	H	3	7.5,7.14,10.6
+D02	P-loop	open e / rho with descender // loop on top with descending stem (rho)	e	H	4	6.23,8.18,8.24,9.22
+D03	R-loop	R-like: small loop on a stem, legs splayed, right leg heavy // small R: loop with diagonal leg	s	H	15	1.2,1.16,1.24,2.3,2.9,3.12,4.6,4.22,4.23,6.3,7.12,7.23,8.20,9.6,10.4
+D04	X-dot	x / chi followed by dot // x-like cross of two curved strokes, colon after	a	M	1	6.5
+D05	X-hook	Y/X with curled left arm, long right arm // curved X / crossing strokes, lower part cut by crop	n	H	1	3.25
+D06	Z	Z/7: top bar, diagonal, bottom bar // Z with heavy horizontal strokes	o	H	2	2.22,5.20
+D07	alpha-loop	fish/alpha: oval at lower left crossed by stroke to right // alpha-like loop with diagonal ascender	g	H	10	1.20,2.1,2.5,2.20,3.10,6.10,8.17,9.18,9.21,10.10
+D08	arc-cut	small o after HCURS (may belong to it) // small arch at crop foot, rest cut off	?	M	2	4.5,4.12
+D09	big-circle	large open circle (cut at bottom edge) // large thin circle, lower half cut	t	H	1	4.26
+D10	blot	heavy filled ink blob / spade // heavy filled triangular blot, foot cut	g	M	1	4.25
+D11	bold-oval	bold small oval/zero with inner dot // dark filled oval with small tail	z	H	2	3.4,4.14
+D12	box-stem	small box pierced by vertical stem // stem through left side of a box, short left bar	c	H	1	5.16
+D13	compact-8	compact 8, two closed loops // small figure-8	?	M	4	1.21,2.18,3.11,9.11
+D14	cross-on-base	t-cross: vertical stem, crossbar, short base bar // upright cross with crossbar and curled foot/base	r	H	15	1.5,1.19,2.21,3.18,3.19,3.24,4.19,6.18,7.4,7.25,8.5,9.8,9.10,9.12,10.3
+D15	cross-over-box	cross above an open box (tower) // square box with stem rising from it, crossbar on stem	f	M	1	5.1
+D16	curl-o	small o with long upward curled stroke // small loop with long thin flourish rising right	k	H	1	9.13
+D17	d-loop-plus	d-like loop joined to plus/cross // open loop with diagonal rising right, crossed by bar	m	H	1	5.21
+D18	dark-3	heavy 3/z-like sign with loop // tall z/3 with loop, bold	u	M	1	9.14
+D19	double-cross	double-barred cross with hooked top // vertical with two crossbars	a	H	8	1.7,2.8,5.10,6.12,7.1,8.11,8.16,8.22
+D20	double-cross-dot	vertical with two crossbars and a dot below // hooked plus over base bar, dot below	e	M	1	7.24
+D21	double-post-box	heavy double horizontal bar joined by two short uprights // two verticals between heavy top and bottom bars	h	H	7	1.10,2.13,2.27,3.14,6.22,8.13,8.21
+D22	e-loop	looped e-like sign with tail // e-like loop with descending tail	e	H	8	7.3,7.10,7.19,8.4,8.7,9.9,10.2,10.11
+D23	filled-box	solid rectangle with midline // solid inked rectangle with bars	f	H	1	8.14
+D24	flat-3	b-like ascender joined to 3 // flat-topped 3	p	H	1	4.10
+D25	h-bar	h-like: stem with left crossbar and hooked right leg // h with bar crossing ascender	c	H	4	1.9,2.26,3.13,8.12
+D26	h-cross	cross with hooked h-like descender // t-cross on top of h-like hooked stem	r	H	1	7.7
+D27	hash	double-barred hash (#), left stem rising into a loop // # two verticals two crossbars; 9-shaped gloss letter descends into it	?	M	1	3.15
+D28	hook-wave	wavy z / tilde stroke // small hooked stroke running into long wavy base	i	H	1	5.7
+D29	hooked-c	c-like hook with small loop at top right, tail down // C/curved stem with hook-bar on top	e	H	5	1.12,2.2,3.20,5.15,6.14
+D30	hooked-double-bar	cross with z-like bent foot // vertical with two bars, hook at foot	r	H	1	8.15
+D31	hump-cut	small arch/oval, lower half cut off by crop // small loop with hook, bottom cut by crop	e	M	1	3.23
+D32	l-loop	top loop on stem, tail curving down-left (open bottom) // loop on top of stem with bottom curl	u	H	6	1.18,2.17,3.1,3.21,4.1,9.19
+D33	lambda	plain lambda, long right leg // plain lambda, no loop	a	H	1	2.4
+D34	libra	arch (omega) over two horizontal bars // arch over long double bar; plain words in margin explain it (upper 'konig zu', lower 'frank')	^konig zu frankreich^	H	1	5.22
+D35	lidded-box	open box under a horizontal lid bar // small loop sitting on top of a square box	h	H	2	5.17,6.11
+D36	loop-splayed-legs	8-like loop whose lower legs cross and splay // small loop on top of two splayed legs	e	H	1	1.1
+D37	looped-H	script H: left curl, tall right stroke with top loop // cursive H with left loop	t	H	9	1.6,2.6,3.22,4.4,4.7,4.13,5.18,6.4,6.21
+D38	looped-gamma	heavy S-curl / hook, thick lower stroke // bold slanting stroke with thin hooked arm up-right (v/gamma), foot cut by crop	n	H	15	4.2,5.3,5.8,5.11,5.14,6.9,6.15,6.24,7.20,7.22,8.19,8.25,9.15,10.7,10.12
+D39	looped-lambda	lambda / inverted v with hook // lambda with small loop at apex (joins gloss blot)	s	M	1	5.12
+D40	mars	small circle with arrow stroke rising right (mars-like) // small circle with long arrow stroke up-right	i	H	1	4.11
+D41	mercury	Y/v top with small circle and stem below // curved horns on top, circle, stem below	n	H	7	1.15,2.19,8.2,8.10,9.2,9.5,9.20
+D42	nine	large 9: loop with short heavy foot curving left // closed loop, stem, hook to left at foot	?	M	14	2.12,2.15,3.7,4.8,4.21,4.24,5.5,5.9,6.6,6.7,7.8,7.17,7.18,8.8
+D43	nine-long-tail	small 9 with long thin tail down-left // small loop with long tail sweeping down-left	a	H	1	2.14
+D44	nine-tail	small loop at top, stroke down then sweeping right // small loop/9 above, stem into a lower loop crossed by diagonal	i	H	6	1.4,1.13,1.23,2.11,6.17,6.20
+D45	o-cross	small circle with stroke rising right to a short cross // small circle at lower left with diagonal t-cross	m	H	3	2.16,2.23,8.6
+D46	open-8	plain numeral 8 // 8 with open lower bowl and right leg	u	H	1	4.9
+D47	open-pi	gate/pi: crossbar on two legs, left leg runs up into gloss f // flat-topped Pi; f descender touches it	f	H	2	3.2,3.3
+D48	open-square	open square/rectangle // large open square box	f	M	5	1.17,3.8,3.9,4.16,4.17
+D49	pound-L	pound-sign-like L: curl with crossbar and base // loop up-right over a stem with bold base bar	e	H	4	4.20,5.2,5.6,6.2
+D50	q-on-bar	9/a-like loop on an underline // small 2/q loop standing on a base bar	i	H	1	9.7
+D51	script-L-bar	looped Z: loop top-right, diagonal down to heavy base bar // looped L/script-L with diagonal and base bar	d	H	1	3.17
+D52	seven	7/Z: top bar with long diagonal down-left // horizontal bar with diagonal down-left (7)	o	H	2	3.6,7.16
+D53	six	numeral 6 // small o with long hooked tail rising right (like 6)	k	H	1	5.13
+D54	tall-8	tall 8: top loop, long stem, closed bottom loop // tall open figure-8, top loop and bottom loop	u	H	10	1.8,1.14,4.15,5.19,6.8,7.21,8.1,8.3,9.1,9.4
+D55	thorn-p	p-shape: bowl on a stem, straight top bar // p with round bowl at top of stem	w	H	6	1.3,1.22,2.10,6.16,7.6,7.15
+D56	triangle	open triangle, base stroke extending left // open-based triangle, apex up (spans s1/s2 overlap)	b	H	8	1.11,2.24,6.1,6.13,6.19,7.2,7.11,8.23
+D57	triple-cross	vertical stem with three crossbars // vertical with two crossbars	a	M	1	2.25
+D58	two-colon	numeral 2 followed by colon dots // bold rounded hook open to lower right, dot after	d	H	1	4.3
+D59	two-slash	2-shape with a slanted stroke through its base // 2-shape over heavy horizontal bar with small tick	d	H	6	2.7,3.16,5.4,9.3,9.16,10.8
+D60	two-z	2 / z with flat base // bold 2 joined to a small z	d	H	1	4.18
+D61	v-over-loop	small circle with ascender stem (b/sigma-like) // v-like top opening into closed loop below	w	H	1	3.5
+D62	x-loop	H/x-like looped sign with dot below // x/h loop with tail, dot below	t	H	2	8.9,10.5
+D63	y-tail	y/g-like with loop tail // small y with curved descender	i	H	4	7.9,7.13,9.17,10.9
+D64	yogh-z	3/z over a lower loop (tall) // z/3 with loop descender	u	M	1	10.1

@@ -1,0 +1,114 @@
+line	pos	label	shape_description	gloss	confidence
+1	1	EIGHTX	8-like loop whose lower legs cross and splay	e	med
+1	2	RLOOP	R-like: small loop on a stem, legs splayed, right leg heavy	s	med
+1	3	PHOOK	p-shape: bowl on a stem, straight top bar	w	med
+1	4	ATAIL	small loop at top, stroke down then sweeping right	i	med
+1	5	TCROSS	t-cross: vertical stem, crossbar, short base bar	r	high
+1	6	HSCRIPT	script H: left curl, tall right stroke with top loop	t	low
+1	7	DCROSS	double-barred cross with hooked top	a	high
+1	8	EIGHTTALL	tall 8: top loop, long stem, closed bottom loop	w	med
+1	9	HSTEM	h-like: stem with left crossbar and hooked right leg	h	med
+1	10	DBAR	heavy double horizontal bar joined by two short uprights	g	high
+1	11	TRI	open triangle, base stroke extending left	d	low
+1	12	CHOOK	c-like hook with small loop at top right, tail down	e	med
+1	13	ATAIL	small loop at top, stroke down then sweeping right	i	med
+1	14	EIGHTTALL	tall 8: top loop, long stem, closed bottom loop	v	med
+1	15	YLOOP	Y/v top with small circle and stem below	n	high
+1	16	RLOOP	R-like: small loop on a stem, legs splayed	b	med
+1	17	SQ	open square/rectangle	t	high
+1	18	LOOPTAIL	top loop on stem, tail curving down-left (open bottom)	u	med
+1	19	TCROSS	t-cross: stem, crossbar, base bar	r	high
+1	20	ALPHA	fish/alpha: oval at lower left crossed by stroke to right	g	high
+1	21	EIGHT	compact 8, two closed loops	a	med
+1	22	PHOOK	p-shape with hooked top and long stem	w	low
+1	23	ATAIL	9-like loop with long tail sweeping right	i	med
+1	24	RLOOP	R-like: small loop on a stem, legs splayed	b	high
+2	1	XHOOK	X/lambda with hooked top and long curved left leg	g	low
+2	2	CHOOK	small c-hook with loop	e	med
+2	3	RLOOP	small R/lambda with loop on left leg	s	med
+2	4	LAMBDA	plain lambda, long right leg	a	high
+2	5	ALPHA	oval at lower left crossed by stroke to right	g	high
+2	6	HSCRIPT	script H: left curl, tall right stroke with top loop	t	high
+2	7	TWO	2-shape with a slanted stroke through its base	d	med
+2	8	DCROSS	double-barred cross	a	high
+2	9	RLOOP	R-like: loop on stem, heavy right leg	b	high
+2	10	PHOOK	b/p-shape: bowl on tall stem whose foot curls left	w	med
+2	11	ATAIL	loop at top, stroke sweeping right	i	med
+2	12	NINE	large 9: loop with short heavy foot curving left	p	low
+2	13	DBAR	heavy double bar joined by two uprights (loop above from upper letter)	g	high
+2	14	NINEL	small 9 with long thin tail down-left	a	low
+2	15	NINE	large 9 with short heavy foot curving left	c	low
+2	16	OCROSS	small circle with stroke rising right to a short cross	m	high
+2	17	LOOPTAIL	tall: top loop, stem, open bottom loop curving left	v	med
+2	18	EIGHT	compact 8, two closed loops	o	high
+2	19	YLOOP	Y/v top with circle and stem below	n	high
+2	20	ALPHA	oval at lower left crossed by stroke	g	high
+2	21	TCROSS	t-cross: stem, crossbar, base bar	r	high
+2	22	ZED	Z/7: top bar, diagonal, bottom bar	o	med
+2	23	OCROSS	circle with stroke rising right to a short cross	m	high
+2	24	TRI	triangle, base extending left	d	low
+2	25	TRIPCROSS	vertical stem with three crossbars	ac	low
+2	26	HSTEM	h-like: stem with left crossbar and hooked right leg	h	med
+2	27	DBAR	heavy double bar joined by two uprights	-	low
+3	1	ELOOP	small e/l-loop on short stem	r	med
+3	2	PI	gate/pi: crossbar on two legs, left leg runs up into gloss f	f	med
+3	3	HSQ	h with square shoulder; stem runs up into gloss f	f	low
+3	4	OVAL	bold small oval/zero with inner dot	z	med
+3	5	OB	small circle with ascender stem (b/sigma-like)	w	low
+3	6	ZED	7/Z: top bar with long diagonal down-left	o	med
+3	7	NINE	large 9 with short heavy foot curving left	l	low
+3	8	SQ	square; uprights of gloss letter touch its top	t	high
+3	9	SQ	square	t	high
+3	10	ALPHA	oval at lower left crossed by stroke to right	g	high
+3	11	EIGHT	compact 8, two closed loops	e	high
+3	12	RLOOP	R-like: loop on stem, heavy right leg	i	high
+3	13	HSTEM	h-like: stem with left crossbar and hooked right leg	e	med
+3	14	DBAR	heavy double bar on two uprights, loop above	g	high
+3	15	HASH	double-barred hash (#), left stem rising into a loop	q	low
+3	16	TWO	2-shape with slanted stroke through base	g	low
+3	17	LZ	looped Z: loop top-right, diagonal down to heavy base bar	d	low
+3	18	TCROSS	t-cross; stem rises to gloss r	r	high
+3	19	TCROSS	t-cross	r	high
+3	20	PFLAT	p with flat top bar, small loop	e	med
+3	21	ELOOP	small e/l-loop on stem	u	med
+3	22	HSCRIPT	2-like curl with tall looped stroke crossing (script H)	t	low
+3	23	HUMP	small arch/oval, lower half cut off by crop	z	low
+3	24	FCROSS	f-like: stem with hooked top and long crossbar	r	low
+3	25	XHOOK	Y/X with curled left arm, long right arm	n	med
+# Label definitions (PASS B)
+# EIGHTX: 8-like loop whose lower legs cross and splay
+# RLOOP: R-like: small loop on a stem, legs splayed, right leg heavy
+# PHOOK: p-shape: bowl on a stem, straight top bar
+# ATAIL: small loop at top, stroke down then sweeping right
+# TCROSS: t-cross: vertical stem, crossbar, short base bar
+# HSCRIPT: script H: left curl, tall right stroke with top loop
+# DCROSS: double-barred cross with hooked top
+# EIGHTTALL: tall 8: top loop, long stem, closed bottom loop
+# HSTEM: h-like: stem with left crossbar and hooked right leg
+# DBAR: heavy double horizontal bar joined by two short uprights
+# TRI: open triangle, base stroke extending left
+# CHOOK: c-like hook with small loop at top right, tail down
+# YLOOP: Y/v top with small circle and stem below
+# SQ: open square/rectangle
+# LOOPTAIL: top loop on stem, tail curving down-left (open bottom)
+# ALPHA: fish/alpha: oval at lower left crossed by stroke to right
+# EIGHT: compact 8, two closed loops
+# XHOOK: X/lambda with hooked top and long curved left leg
+# LAMBDA: plain lambda, long right leg
+# TWO: 2-shape with a slanted stroke through its base
+# NINE: large 9: loop with short heavy foot curving left
+# NINEL: small 9 with long thin tail down-left
+# OCROSS: small circle with stroke rising right to a short cross
+# ZED: Z/7: top bar, diagonal, bottom bar
+# TRIPCROSS: vertical stem with three crossbars
+# ELOOP: small e/l-loop on short stem
+# PI: gate/pi: crossbar on two legs, left leg runs up into gloss f
+# HSQ: h with square shoulder; stem runs up into gloss f
+# OVAL: bold small oval/zero with inner dot
+# OB: small circle with ascender stem (b/sigma-like)
+# HASH: double-barred hash (#), left stem rising into a loop
+# LZ: looped Z: loop top-right, diagonal down to heavy base bar
+# PFLAT: p with flat top bar, small loop
+# HUMP: small arch/oval, lower half cut off by crop
+# FCROSS: f-like: stem with hooked top and long crossbar
+# Note: L2 pos27 DBAR has no letter directly above (ornate h-letter flourish runs over it); L3 pos23 lower half cut by crop.

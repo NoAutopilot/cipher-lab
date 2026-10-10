@@ -1,0 +1,68 @@
+a_id	b_id	confidence	reason
+D01	B32	medium	flat Z shape
+D03	B05	medium	R form
+D04	B06	low	X cross
+D05	B06	low	curved X
+D06	B23	low	7/Z with top bar
+D06	B32	low	Z with bars
+D13	B12	low	figure-8 loops
+D13	B19	low	8 form
+D14	B03	medium	t-cross dagger
+D17	B39	medium	d-loop with diagonal
+D19	B08	high	double cross
+D20	B08	low	double bar cross
+D24	B31	medium	flat-topped 3
+D25	B11	high	h with bar
+D40	B16	high	mars circle with arrow
+D42	B18	medium	nine loop
+D43	B18	medium	small nine
+D44	B34	medium	nine with top loop
+D46	B19	medium	8 with open bowl
+D47	B22	high	flat pi gate
+D47	B20	medium	open pi
+D21	B22	low	pi-like bars
+D52	B23	medium	seven
+D53	B25	high	small o hooked tail
+D16	B25	medium	small o rising tail
+D55	B21	high	p with bowl
+D56	B07	low	triangle
+D12	B37	low	small box
+D48	B35	low	open box
+D15	B28	low	cross over box
+D18	B33	low	3-like z
+D63	B41	low	small g/y
+D01	Z	medium	Z shape
+D02	P	low	loop on stem
+D02	E	low	open e loop
+D03	R	high	R form
+D04	X	medium	X cross
+D05	X	low	curved X
+D06	Z	medium	Z with bars
+D06	7	low	7/Z
+D07	ALF	high	alpha loop
+D09	O	medium	circle
+D13	8	high	figure-8
+D14	T	high	t-cross
+D19	DT	high	double cross
+D20	DT	low	double bar cross
+D21	II	high	verticals between bars
+D22	E	medium	e loop with tail
+D25	HB	high	h with bar
+D27	HH	medium	two verticals crossbar
+D37	GE	medium	script H loop
+D40	MARS	high	mars symbol
+D41	RAM	medium	horned Y
+D42	9	medium	nine loop
+D43	9	medium	small nine tail
+D44	9	low	nine over loop
+D46	8	medium	eight
+D47	II	medium	pi/gate bars
+D48	SQ	medium	square
+D12	SQ	low	small box
+D51	L	medium	looped L
+D52	7	medium	seven
+D55	P	medium	p with bowl
+D56	TRI	medium	triangle
+D63	Y	medium	y with descender
+D18	Z4	low	z with loop descender
+D30	Z4	low	cross with z foot

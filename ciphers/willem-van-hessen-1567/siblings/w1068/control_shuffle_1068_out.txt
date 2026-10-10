@@ -1,0 +1,3 @@
+H (both passes same gloss): 146 tokens in 28 recurring classes; real 0.979; shuffled mean 0.323, p95 0.356; p 0.0000 -> PASS (real > p95)
+all reconciled: 198 tokens in 31 recurring classes; real 0.980; shuffled mean 0.281, p95 0.308; p 0.0000 -> PASS (real > p95)
+H, pass B's own raw labels per band (no merging by the reconciler): 123 tokens in 40 recurring classes; real 0.967; shuffled mean 0.414, p95 0.447; p 0.0000 -> PASS (real > p95)
