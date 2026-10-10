@@ -1,0 +1,53 @@
+'Stokes': 3 hits: 7614() 7615() 9674()
+Traceback (most recent call last):
+  File "/home/user/cipher-lab/ciphers/eckert-1864/ms18/fv_ms18m_hdl.py", line 26, in <module>
+    d = json.load(urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60)); n += 1
+                  ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.13/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/usr/lib/python3.13/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.13/urllib/request.py", line 1379, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/urllib/request.py", line 1335, in do_open
+    r = h.getresponse()
+  File "/usr/lib/python3.13/http/client.py", line 1478, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/client.py", line 343, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/http/client.py", line 312, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+http.client.RemoteDisconnected: Remote end closed connection without response
+img 9886 547972
+img 9676 519854
+img 9769 537674
+img 10005 508727
+img 9801 490735
+img 10027 491334
+img 9836 542095
+requests 7
+'Forrest': 79 hits: 2697() 7871() 7872() 12116() 5792() 5798() 4604() 10349() 8662() 10355() 3159() 7660() 9754() 2909() 5205() 6338() 4648() 7563() 3192() 7693() 3194() 7578() 5238() 10412() 10416() 4685() 8480() 3858() 8482() 10435() 3235() 7743() 4708() 4709() 4710() 4715() 10202() 4716() 10209() 10211() 8523() 10221() 7770() 10222() 7772() 7398() 8536() 4744() 10231() 10232() 9873() 10235() 10236() 8546() 4500() 4502() 4503() 4506() 8556() 10254() 10255() 10511() 4516() 7813() 2642() 3062() 4532() 4535() 4793() 7463() 7464() 4809() 4555() 7847() 11731() 8984() 6896() 4828() 10315()
+'Provost': 87 hits: 7866() 4832() 3721() 2221() 7247() 9269() 9721() 9977() 6083() 5425() 8651() 7907() 7910() 5451() 8238() 2743() 5573() 7211() 10021() 7930() 12611() 9614() 7940() 10034() 4260() 9620() 7315() 10400() 6680() 8711() 9087() 3839() 7959() 6156() 5243() 12642() 8728() 10171() 4291() 7976() 7977() 9110() 7978() 9111() 5264() 3232() 4697() 13393() 2561() 10188() 5533() 8075() 7752() 11896() 5926() 4331() 4332() 12264() 8788() 9453() 3455() 7406() 8546() 9468() 9469() 5334() 8122() 3651() 9894() 2631() 6850() 9212() 2651() 4927() 8150() 4928() 6872() 4545() 2663() 9676() 7467() 7137() 4418() 9244() 4566() 3105() 9539()
+'Shreveport': 64 hits: 6902() 4578() 4579() 4580() 9723() 9724() 9725() 9726() 9727() 9755() 9758() 10383() 9769() 7936() 14028() 51() 7940() 7941() 55() 7947() 7949() 7951() 5608() 7960() 6998() 5501() 4672() 7967() 4681() 5272() 10445() 4703() 10450() 10195() 10451() 8763() 10201() 8769() 4859() 10469() 4475() 4742() 8912() 4745() 8913() 4494() 4495() 10238() 9466() 4895() 8930() 10249() 10254() 4514() 4516() 8953() 4542() 4550() 8982() 9685() 8986() 4567() 9249() 4570()
+'Congress': 68 hits: 7869() 8628() 8452() 4187() 9720() 9721() 9292() 6323() 8670() 8671() 8672() 5201() 8677() 9758() 14015() 8692() 5477() 10082() 9621() 3798() 13364() 8728() 10109() 5627() 5514() 5515() 13088() 9110() 7345() 9111() 13092() 7985() 5529() 13102() 3589() 7626() 2094() 5043() 76() 10217() 8022() 6804() 5059() 8905() 6762() 9875() 9876() 8920() 4891() 8048() 8810() 7800() 7099() 4379() 9198() 9199() 4928() 8586() 7123() 4935() 8162() 9674() 8423() 8424() 8425() 9685() 9693() 7863()
+'Crook': 88 hits: 4575() 7493() 9004() 3721() 10325() 9008() 4589() 4590() 10337() 4595() 10338() 10339() 9021() 10342() 8651() 4606() 3163() 4631() 4634() 4641() 4645() 10404() 11584() 4667() 9644() 10172() 8488() 12226() 9829() 4706() 7742() 7748() 11635() 8515() 9850() 4074() 3907() 11655() 11656() 10226() 10227() 10228() 7780() 3919() 10237() 10498() 10243() 10244() 10245() 10246() 10247() 8932() 10510() 10518() 10519() 10264() 10521() 4523() 10522() 10523() 10524() 4527() 10526() 4528() 4786() 10274() 8958() 7827() 4538() 4539() 8963() 10282() 4541() 8968() 10288() 4802() 11721() 4805() 8599() 4810() 4558() 4814() 4559() 4819() 4822() 4824() 4825() 4829()
+'freight': 34 hits: 4001() 4009() 8667() 9061() 10027() 7955() 9091() 3841() 10168() 5014() 5016() 7612() 4045() 5922() 12002() 11230() 11907() 7773() 12454() 7782() 10241() 12026() 7420() 7421() 3935() 13171() 14148() 7804() 12318() 5370() 5374() 8594() 12785() 3998()
+requests 6
+7614 | Page 370 | {} | 640 P. M.  Philada. Jan. 4. 1864 . / Hon. Edwin / M Stanton Secy of War / Washn when Major Genl Cadwallader  / was closeted with you Dec / the twenty first probably he / told you there were some / arms stored at the clothing / House of Charles Stokes the / property of Dr Seegur as / he had been informed by / Mr Franklin when Genl Cadwallader / & myself left Washington on / the cars he suggested the / propriety of securing those arms / I replied trust my discretion / & I pledge you my / honor nothing will be moved / until further orders from you / when he left me the / next morning I was on / the N. Y. car Express train / & so far although Genl / Cadwallader suggested the propriety of / stationing a sentry in front / of Mr Stokes' store nothing / 
+7615 | Page 371 | {} | has been removed belonging to / Dr Seegur The developments in  / reference to Dr Seegur in / N. Y. of course you know / as you have ordered him / & all connected with him / sent to fort Lafayette this / morning Mr Taylor in the / firm of Charles Stokes handed / me the following statement viz, / Jany fourth Eighteen sixty four / J. H Carl ten hundred / & two Race St Philada / called at the store about / the Carbines says he had / a conversation with Mrs Seegur / on Saturday in New York says / he has been acting as / agent for Dr Seegur for / a long time says the / Dr ordered him to dispose / of the carbines also Mr / Seegur wishes him to dispose / of them says also that / he met with Barrios? in  / 
+9873 | Page 207 | {} | No 1  3 pm / Van Duzer Nashville  Wash. Oct. 20. 1864. / Growl harsh Imogene for lady ---- It is wicked / here that for - rest is weighing both Pa Duke  / Key & Drill ---- If by the assistance of / Kearney & lavender you could drive him waxy it / would relieve that part torch Country from all danger / Jacob /  /  / No 1 / Capt Van Duzer Nashv.  Wash. Oct. 21. 1864 / Grapes harrow plug Elizabeth lantern So long as / for - rest holds buffet he weighs Several very / important Vernons ---- Please consult Kidnap as to / best means of getting rid of him Jonah /  /  / Beckwith City Pt  Washn Oct 21st 1864  / Katy Oliver Brown Belly As it is manifest that no  / wedge can at present be taken from Negus Princeton and / as the vessels collected at Banjo are wanted else where / and in valve enormous cost for demun age I have  / directed Spark Rucker to use them for other purposes Pike / they canby collected a gain in a week or French / days if required yacht Nothing say tis factory from Bremen   / stop I can form no clear I dear talbot corn / ditch on of affairs from Watsons rec'd here paws shark / Curt is seems toby retrenching near Dragon but I hear / nothing of Meed Harding or Mowers quitman yard No action / yet as to change of Polks yawl Lady howes Sam / 
+9755 | Page 89 | {} | S. P. Kimber  Wash'n June 7th 1864 / Happy June Downing Imogene For Mastiff Tulip / What is the guage Talbot Hero and / Monroe Walnut Stanhope In the annual Watson / of Norris Brown January Ludlow Perkins Allen / Directors Watson no grading between Monroe and / Shreveport Yacht It is not likely that / any work has been done upon it / since this rebellion yardstick It is Prentiss / Andrew and Allen quarter Sylvans from Holly / to Monroe Wiley Meigs Buggy damp again /  /  / S. P. Kimber  Washington DC June 10th 1864 / Hunter June French Gertrude For Mastiff tulip The Belgrade / yoke day Webbs are ordered to Traction and those / from Alias to Daniel for such disposition as you  / deem best yacht Your attention is respectfully called to / the necessity of dis mounting poor Pekin Waynes so / as to completely ream mount the better Allens yardstick / It will not be possible to supply them all / with ream mounts tulip Your attention is also called / to re Whistling Waylands the companies of which have / been separated Welch Lady Please time all your dispatches / 
+9758 | Page 92 | {} | Agnew period All shops are now pressed for / Locomotives & rolling stock to supply Fortune persia / & if Congress orders the building talbot Rubens / Bourbon Warsaw as is now contemplated pike it / will absorb most talbot iron rail that cauly / purchased yacht to build & put in operation / the entire road to Sleeve port will cost / not less than Andrew or Caldwell millions of / dollars & will require Baker or Dayton months / time tulip Many things have risen Palmer per / cent shylock last Brooks months & are still / rising It is very difficult to procure enough / skilled walnut mechanics even for repairs yacht Consider / these matters well also how far water weasel / on the Washita may be made available Cupid /  /  / JW Wallack Indianapolis  Wash June 12th 1864  / For Govr Brough Indianapolis period Judge / Advocate Burnett advises the arrest & / trial of the publishers of the / Cincin Enquirer period The Govt is / ready to do so at once / but the President trusts to your / judgement & wishes to know whether / you deem it expedient period A / simple yes or no from you / will enable us to act without / imposing any responsibility upon you Answer / soon signed Edwin M Stanton Secy / 
+requests 5
