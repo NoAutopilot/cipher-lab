@@ -1,5 +1,7 @@
 # Outside review of transcription measurement — 10 October 2026
 
+Citations checked 10 Oct 2026 00:39 UTC by SO-TX-CITE: 6 confirmed (R1-R6; R5 and R6 for existence and title only), 0 differ, 1 unreachable (R7); scorer findings and cases 5-6 reproduced 5 of 5; see research/SO-TX-TRANSCRIPTION-2026-10-10-CITES.tsv
+
 Scope: image-to-sign transcription only. No cipher solution attempted. This is an assessment and proposed preregistration, not an executed recognition experiment.
 
 Reviewed snapshot: `0dc3cf4bd4eed5bd562913cf0cdde3d657e5ac68`. All eight previously fetched file blobs below were checked against that commit and matched. TX-PROGRAM was also read first. The scorer blob was `5cba25bcc70d55d010ab79ce1ad4924c60aa8556`. Repository access succeeded through the GitHub connector when the web reader failed.
