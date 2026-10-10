@@ -25,6 +25,7 @@ def shuffled(key, seed):
         for w, v in zip(ws, vals): out[w] = v
     return out
 def hdr_facts(lines):
+    lines = [l for l in lines if not re.match(r"^\(?\s*No\.? ?\d", l)]  # header remnants of the next entry (image-read, p9874/p9913): "( No 1 ) 1230 Pm", "No 1  5 PM"
     txt = " ".join(lines)
     t = None
     for m in re.finditer(r"(?<![\w.])(\d{1,2}[.:]?\d{0,2}\s*[AaPp][Mm]\b|\b12\s*M\b)", txt):
