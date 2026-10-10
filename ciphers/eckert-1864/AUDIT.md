@@ -14913,3 +14913,76 @@ the War* (1879, `annalsofwar00philrich`).
 Requests: hdl.huntington.org 17 (11 CISOSEARCHALL incl. 1 dropped and 1 retry, 6 item info); be-api.us.archive.org 20; archive.org 9 (6 djvu, 1 metadata,
 2 advancedsearch; the Bancroft djvu "item not available"); www.loc.gov 6 search (1 IncompleteRead, not retried) + 16 page/full-text; www.googleapis.com 6;
 api.core.ac.uk 2; api.openalex.org 2; talk.zooniverse.org 7; www.zooniverse.org 1. For orchestrator (account-4).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGERN2-4)
+
+Second verifier AUD2-LEDGERN2-4 (account 4, for the orchestrator (account-4); row queued by FV-N2d for LANE LEDGER-N2 (account 1), re-tagged from account 3),
+10 Oct 2026, 03:37-03:4x UTC by `date -u`; a separate session and account from the reader N2R-3 and the first auditor FV-N2d (account 1); this session had not
+read or audited this entry before. Scope: **N2-HF** only (mssEC 18 p.147, pointer 9813/0, 6 Aug 1864, Quartermaster General to Brig. Gen. Ingalls); N2-HB and
+N2-HC (N1) not re-audited, per the row. Nothing decoded beyond key look-ups. Every code word was looked up again in key-no2.md: Anna = 2 AM (time word), Palermo =
+Brig. General, Vermont = Quarter Master, Whimper = Telegraph (-ed), Baron = Baltimore, Grammar = Philadelphia, Girdle = New York, Waltz = Steam, Swindle = Move,
+Gilbert = 12, Graham = 13, Dwight = 1000, Summer = Men, Bridle = City Point, Superb = Movement, Shark = General, Loomis = 19, Seward = 1000, Squash = Infantry,
+Norris = 30, Zebra = 1000, Stomach = Necessary, Supper = Movement, Bunyan = Monroe, Welch = Signature, Yacht = Period: all H and all match. Two derived forms
+have no row of their own: "whimpered" (Whimper + -ed; the row says "(-ed, -ing)") and "waltzers" (Waltz = Steam + -ers): H by the rows' own inflection rule.
+"Buggy" = "Quarter[?] Master General" carries a doubt mark in the key row itself; the same row reads "Quartermaster General" against print in N2-HB (Grant Papers
+vol. 12 note, FV-N2d), so the value holds. "crabs" has no row: unread, M. "Acton" is the key's value for the code word Flag, not a code word: the leaf has the
+plain word "flags" (FV-N2d's eye check), so the decoder's "[Acton [sic, ? Action]]'s" is its slip, as FV-N2d said. Key source: `period`. No spec exists for
+eckert-1864, so `judge_plaintext.py` was not run. Re-derivation: `python3 ciphers/eckert-1864/decode_no2.py --check` -> "reading-no2.md is current", exit 0.
+Image: not re-checked (FV-N2d eye-checked all 14 lines at 2400 px). Committed (`ms18/`): `aud2_n2_4_gb.py` + `.out`, `aud2_n2_4_gb_qmg.py` + `.out`, `aud2_n2_4_hdl.py` + `.out`; OR I/42 pt 2
+djvu (`warofrebellion422unit`, sha256 a8256afaf8b20e02..., = or_volumes.tsv) read in scratch.
+
+### 1. Families FV-N2d did not cover, and what this pass did
+| Family | FV-N2d | This pass |
+|---|---|---|
+| OR I/42 pt 2, the same-day Meigs-Ingalls traffic | "near p.66", "near pp.76-77", headings 5-7 Aug | Grepped on the djvu text (Rucker/Kucker, 19,000, 30,000, truce boats, capacity, INGALLS, MEIGS) and pp.66 and 76-77 read. p.66: QMG's Office, Washington 6 Aug 1864, Meigs to "Brig. Gen. R. Ingalls, Chief Quartermaster, City Point": "General Rucker says do not send the ambulances until after the 300 wagons ... Georgianna, Kennebec, Balloon, and Charleston leave Baltimore this morning for City Point" -- a different telegram. p.77 (page-number OCR ambiguous, 76/77): Ingalls to Meigs, City Point 7 Aug noon (received 9 p.m.): "Some few ambulances were shipped before the receipt of your dispatch of 2 p. m. yesterday ... I sent lists of transports, with statement of capacity for carrying troops, by mail this morning ... enough for a corps of 25,000 men, with twelve batteries of artillery". The volume index lists Rucker at pp.66 and 125 only (his name OCRs as "Kucker"/"Eucker", so the index, not a body grep, finds him); p.125 read: Ingalls to the QMG, City Point 12 Aug 2 p.m., 667 wagons and teams shipped and reported to D. H. Rucker (other). No "19,000"; one "30,000" (p.249, "30,000 or 40,000 men" on a road, other); no "truce boats". **Not in OR I/42 pt 2** |
+| Holder full text (CONTENTdm, all pointers) | 13 queries (incl. 'flag truce boats Monroe', 'steamboats Baltimore Philadelphia') | 6 more + 3 verbose re-runs (9 requests): 'Rucker' 120 (incl. own 9813), 'urgent necessity' 7, 'readyness' 1 (own), 'truce boats' 4, 'Rucker capacity' 7, 'Ingalls transports' 19; every hit of the four narrow queries read from its returned title and opening lines: other telegrams (1863, Jan-Feb 1865, May and Nov 1864, Fort Monroe and City Point pages), none dated 5-8 Aug 1864 except own 9813 (positive control). **No clear copy, received copy or answer at another pointer** |
+| G3 phrase pass (Google Books, keyed, country=US) | 4 quoted phrases, totals plus snippets | 11 queries, snippets read (control '"single and separate command will"' -> OR 1891, Pond 1883: passed): '"flag of truce boats and the boats about"', '"estimated by General Rucker"', '"capacity of 19,000 infantry"', '"kept in readiness for any necessary movement"', '"sent them all to City Point"', '"room for over 30,000 men"', and four keyword forms (Meigs Ingalls steamboats ... "30,000 men"; Meigs Ingalls "flag-of-truce boats"; QMG report 1865 Rucker steamers; Ingalls "capacity for carrying troops") -> none of N2-HF's wording. Only hits on the subject: Ingalls's 7 Aug reply (OR I/42 pt 2, House documents 1893; the control for the family) and, weak lead, Risch, *Quartermaster Support of the Army* (1962, full view), snippet "New York to obtain, if he could, 200 additional sailing vessels ... 30,000 men (later changed to 60,000) and grain for 35,000 animals" -- sailing vessels and animals, not steamboats for City Point; page not read |
+| Quartermaster General's annual report 1865 | not searched | Google Books snippets only (`aud2_n2_4_gb_qmg.out`): control '"Cossack" "Collyer" side-wheel steamer quartermaster' -> the report (`PhNAAAAAYAAJ`, 1865) and its reprints (passed, AUD2-LEDGERN2-1's vessel table); three subject queries (Sixth Corps transported Washington City Point steamers 1864; Rucker steamboats Baltimore Philadelphia New York; flag-of-truce boats Fort Monroe transports) -> the report not among the top hits of any. A snippet miss is weak (top-10, token match); the narrative text stays **unread** |
+| OR ser. III vol. 4 | `warofrebellionco0004genf` | IA metadata re-checked: vol. 4, dated 1900 = ser. III vol. 4 (ser. II vol. 4 is 1899), so FV-N2d's III/4 zeros are on the right volume (unlike the DLI copies AUD2-LEDGERN2-3 found mis-titled) |
+| Unreachable / not searched | ORN, NARA RG 92/107, Meigs and Ingalls papers, QMG 1865 report, press, HathiTrust, JSTOR | still not read: the Quartermaster General's annual report of 1865 as text (OR III/5; no good IA text, AUD2-LEDGERN2-3; snippets above), ORN ser. I vol. 10, NARA RG 92 (Telegrams Sent by the QMG, the probable clear copy) and RG 107, Meigs papers (LC), the press of 6-10 Aug 1864, HathiTrust full text (Cloudflare); Risch 1962 page not read; JSTOR rows queued (s.4) |
+
+### 2. Findings
+- **No copy, quotation or printed text of N2-HF found** in any family above. FV-N2d's "not located" holds.
+- **The external depth check is a check of setting, not of the telegram's words.** Ingalls's 7 Aug reply does not quote or cite N2-HF; the dispatch he names
+  ("your dispatch of 2 p. m. yesterday") is the ambulance telegram printed on p.66, and his capacity figure (25,000 men, twelve batteries) is his own count of the
+  transports at City Point, not N2-HF's 19,000 or 30,000. What the print does confirm, independently of the key: on 6 Aug 1864 Meigs and Ingalls were exchanging
+  telegrams about steamers from Baltimore to City Point with Rucker as the Washington source (p.66), and about the troop capacity of the transports (p.77) --
+  the subject, the correspondents, Baltimore (Baron) and City Point (Bridle) of N2-HF. D3 is kept on that footing (30 H of 31, the one gap a filler-like
+  unread word, the setting checked in print); the numbers 12-13,000, 19,000 and 30,000 are read from the key (H) but **unchecked externally**. status.json
+  `depth_check` rewritten to say so.
+- **Time word.** Anna = 2 AM by the key; the same-day printed dispatch was sent at 2 p.m. (Ingalls's reply) and is a different text. The hour stays M; do not
+  write "sent at 2 a.m." as fact.
+- **Pending fixes (FV-N2d s.5) not yet applied:** ciphertext-no2.txt still says "leaf not eye-checked" and "'Acton's of truce boats' is the key's value for
+  'flags' (M)", and reading-no2.md still prints "[Acton [sic, ? Action]]'s of truce". FIX-N2a ran before FV-N2d, so these need a FIX job (one line in s.4);
+  status.json `completeness` already treats "flags" as plain.
+- Safe sentence (status.json `line`) checked against the reading: exact (steamers already at City Point estimated at 19,000; room for over 30,000 when the
+  ordered boats arrive; "for any necessary movement"). Title "Brig. Gen. Rufus Ingalls": the first name is from OR (I), the ledger has "In galls"; acceptable as
+  identification. No over-claim found in AUDIT (FV-N2d), status.json or the SO prompt beyond the depth-check wording above.
+
+### 3. Class (rule 10) and depth (rule 4a)
+| ID | N | key | depth | % code-word groups H/C | basis |
+|---|---|---|---|---|---|
+| N2-HF | **N3** (kept) | period | **D3** (kept; external check = same-day printed Meigs-Ingalls traffic, OR I/42 pt 2 pp.66 and 77, which confirms correspondents, subject, Baltimore and City Point, not the troop figures) | 96.8 (30 H of 31; crabs M) | not located after FV-N2d and s.1 |
+
+- Not N4: the QMG 1865 report (snippets only), ORN, NARA RG 92/107, the Meigs papers, the press and HathiTrust unread; JSTOR rows open. Not D4: no fresh rule-7 re-derivation
+  session; one M token; the figures unchecked outside the key.
+- Safe sentence (unchanged): "Read with War Department Cipher No. 2 (period key): on 6 Aug 1864 the Quartermaster General told Brig. Gen. Ingalls that he had
+  telegraphed to Baltimore, Philadelphia and New York for more steamboats, enough with those already sent to City Point to give room for over 30,000 men, to be
+  kept ready for any movement; not located in print (searched 10 Oct 2026)."
+- Depth sentence (unchanged; Meigs as the Quartermaster General is identification from the office, I): "Meigs's office gathered more steamboats from three
+  ports so that transports for over 30,000 men would be ready for any movement from City Point."
+- Unsafe: "first", "new", "unpublished", "never printed"; "not in the Official Records" (ser. III vol. 5 not read on a good text); "sent at 2 a.m."; "Ingalls's
+  reply confirms the 30,000 figure" (his figure is 25,000 and his own); "Meigs signed it" as H.
+
+### 4. Postmortem and fixes
+- FV-N2d's class, reading and depth stand. Its one over-statement: the depth check called Ingalls's reply "the answer to N2-HF's capacity figures"; the reply
+  answers the same subject but names a different dispatch and gives its own figure. Corrected in status.json `depth_check`; `audit_status` "two audits",
+  `audit_refs` + this section, `gap` updated. SO prompt PROMPT-chatgpt-n2-hf.md: "WHERE WE HAVE LOOKED" line extended (row stays queued: class and reading
+  unchanged).
+- For a FIX job (not applied here, a verifier does not edit the reading): FV-N2d s.5's N2-HF items -- "Acton's of truce" -> plain "flags of truce"
+  (per-entry exception), "leaf not eye-checked" -> "leaf eye-checked on crops (FV-N2d), matches", and add Ingalls's 7 Aug reply and Meigs's p.66 telegram to
+  the entry note as context.
+- For the next searcher: the QMG annual report of 1865 (OR III/5) on a good text; NARA RG 92 "Telegrams Sent by the Quartermaster General" (the probable clear
+  copy; owner-side or a reproduction order); Risch 1962 at the "200 additional sailing vessels" passage.
+- JSTOR-QUEUE.tsv (2 rows): (i) Meigs AND Ingalls AND Rucker AND steamboats AND "City Point" AND 1864; (ii) "flag of truce boats and the boats about".
+Requests: hdl.huntington.org 9 (9 CISOSEARCHALL), all 200; archive.org 2 (1 djvu, 1 metadata), all 200; www.googleapis.com 15 (11 + 4), all 200. For orchestrator (account-4).

@@ -12,7 +12,7 @@ THE ITEM
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key-no2.md, search log
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (FV-N2d)").
 
-WHERE WE HAVE LOOKED: Official Records ser. I vols 37 pt 2, 40 pt 3, 42 pt 2, 43 pt 1 and ser. III vol. 4 (5-7 Aug 1864 headings and phrases); The Papers of U. S. Grant vol. 11 (full-text phrases); Google Books and Internet Archive phrase search; the Huntington's CONTENTdm full-text search.
+WHERE WE HAVE LOOKED: Official Records ser. I vols 37 pt 2, 40 pt 3, 42 pt 2, 43 pt 1 and ser. III vol. 4 (5-7 Aug 1864 headings and phrases); The Papers of U. S. Grant vol. 11 (full-text phrases); Google Books and Internet Archive phrase search; the Huntington's CONTENTdm full-text search; a second check (10 Oct 2026) re-read Official Records ser. I vol. 42 pt 2 pp.66 and 76-77 (Meigs to Ingalls 6 Aug, on ambulances and Baltimore steamers; Ingalls to Meigs 7 Aug noon, on transport capacity -- neither is this telegram), ran more Google Books phrases with snippets read, Google Books snippets aimed at the Quartermaster General's annual report of 1865, and six more holder full-text queries.
 
 WHERE WE HAVE NOT YET LOOKED PROPERLY (start here)
 - National Archives RG 92 and RG 107 (telegrams sent by the Quartermaster General); the Meigs papers (Library of Congress) and the Ingalls papers; the Quartermaster General's annual report for 1865; Official Records of the Union and Confederate Navies; the press of 6-12 Aug 1864; HathiTrust; JSTOR.

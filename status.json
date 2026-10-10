@@ -12267,9 +12267,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-N2d)'"
+        "AUDIT.md '## AUDIT (FV-N2d)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGERN2-4)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-N2d verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -12290,7 +12291,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): the Quartermaster General to Brig. Gen. Rufus Ingalls, 6 Aug 1864: steamboats from Baltimore, Philadelphia and New York, room for over 30,000 men (N2-HF)",
       "line": "Read with War Department Cipher No. 2 (period key): on 6 Aug 1864 the Quartermaster General told Brig. Gen. Ingalls that he had telegraphed to Baltimore, Philadelphia and New York for more steamboats, enough with those already sent to City Point to give room for over 30,000 men, to be kept ready for any movement; not located in print (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-N2d); not N4: ORN, NARA RG 92/RG 107, Meigs/Ingalls papers, QMG 1865 report, the Aug 1864 press, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGERN2-4)",
+      "gap": "N3 two audits (FV-N2d, AUD2-LEDGERN2-4); not N4: QMG 1865 report (snippets only), ORN, NARA RG 92/RG 107, Meigs papers, the Aug 1864 press, HathiTrust not searched; JSTOR rows queued; FV-N2d s.5 fixes (flags plain, leaf eye-checked) pending a FIX job",
       "depth": "D3",
       "completeness": "30 H of 31 code-word groups (1 M: crabs); 'flags' plain (decoder slip); Anna = 2 AM time word unverified",
       "phrases": [
@@ -12301,7 +12302,7 @@
         "Huntington mssEC 18 (obj 10074) p.147, pointer 9813, N2-HF"
       ],
       "depth_sentence": "Meigs's office gathered more steamboats from three ports so that transports for over 30,000 men would be ready for any movement from City Point.",
-      "depth_check": "code clause: to swindle Gilbert or Graham Dwight summer = to move 12 or 13,000 men; external: Ingalls to Meigs 7 Aug 1864 noon (OR I/42 pt 2 near pp.76-77, lists of transports with troop capacity) (D3)",
+      "depth_check": "code clause: to swindle Gilbert or Graham Dwight summer = to move 12 or 13,000 men; external (setting, not the figures): same-day printed Meigs-Ingalls traffic, OR I/42 pt 2 p.66 (Meigs to Ingalls 6 Aug: Rucker, steamers leaving Baltimore for City Point) and p.77 (Ingalls to Meigs 7 Aug noon: lists of transports with troop capacity, his own figure 25,000) -- confirms correspondents, subject, Baltimore, City Point; 19,000 and 30,000 are key-read (H), unchecked in print (D3, AUD2-LEDGERN2-4)",
       "depth_note": "30 H of 31 code-word groups (1 M: crabs); 'flags' plain (decoder slip)"
     },
     {
