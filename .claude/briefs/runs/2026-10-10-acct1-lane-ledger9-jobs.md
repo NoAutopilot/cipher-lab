@@ -71,3 +71,39 @@ check the entry number first; skip and say so if already filed), 9674/1, 10005/2
 For 10005/2, 10027/2, 10020/2 (May-June 1865) test the book share first and write "no book in hand" if none reads. IDs from E361 (fetch first; take the next free
 one if taken). NOTES "## MS18-R6 (10 Oct 2026, account 1, for LANE LEDGER)" with a per-row line "in print (vol/page) / holder clear copy (pointer) / not located
 (sources searched by date)", Remaining gaps / Escalation, gaps_check, decode --check. No audits. Unit ~0.25 per row.
+
+---
+
+# Wave 2 (written 10 Oct 2026 00:2x UTC; seven_day allowed_warning on every worker, continuing per lane-common-blast; lane ~16 workers + ~1.5 orchestrator at writing)
+By get_session: FIX-FM17 1.17, FV-MS18j 6.62 (E351 E355 E356 N3 D3; AUD2-LEDGER-34), FV-MS18k 6.04 (E359 N1 OR I/37 pt 1 p.589; E357 N3 D2; AUD2-LEDGER-35),
+MS18-R6 2.09 (E361-E370: 7 printed, E366 E369 E370 not located). Wave 1 15.92. First verifiers ran ~2.2-3.0 per entry this wave: caps below use 2.5.
+
+## FIX-FM18 (Sonnet 5.5; cap $2, box 60 min, no network)
+Exactly the FIX-FM17 method (wave 1). Sources: AUDIT.md s.5 of "## AUDIT (FV-MS18j)" (Herald / Fox / Wilson read as key rows where the clear word stands, E356
+line 2 omits "ordered to", flank = plank = 2, Knox = Butler) and "## AUDIT (FV-MS18k)" (fit shoe = Fitzhugh, Elgin = Grant M, E357 No 2 label conflict note, E359 header
+OR I/37 pt 1 p.589). Carry class/header changes into status.json and SO prompts per rule 10. NOTES "## FIX-FM18 (10 Oct 2026, account 1, for LANE LEDGER)"; decode
+--check exit 0 (all three); depth_check; file_shrink_guard.
+
+## FV-MS18l (Opus 5.5, first verifier, separate from every reader; cap $7.5, box 110 min): E366, E369, E370
+Exactly "## FV-MS18j" (wave 1). Rows (NOTES "## MS18-R6" says what was read by date):
+- E366 (10005/2, 8 May 1865, to Caldwell at Richmond: arrest Wm Boulware, send under guard to the Judge Advocate): the reader names holder clear witnesses 7905 and
+  8728 -- open both FIRST; if either is a clear copy of this telegram the entry is N0 by holder copy, say so and stop work on it;
+- E369 (10020/2, 24 May 1865, to H. F. Lines at Macon: arrest Thomas J. Paxton/Parton Campbell, send to Thomas at Nashville; OR I/49 pt 2 by date on page images,
+  ser. II vol. 8; names M);
+- E370 (9836/1, 7 Sept 1864, Horner at New York: how many 'spartons' by rail beyond Sherman's command; the code word is open -- test it against key.md before the
+  print search; OR I/38 pt 5, I/39 pt 2 by date).
+AUDIT.md "## AUDIT (FV-MS18l)". N3+ D2+: WORK-QUEUE `AUD2-LEDGER-36` (next free if taken; account-3, Opus 5.5, cap 2.5 per entry). Unit ~2.5 per entry.
+
+## FV-MS18m (Opus 5.5, first verifier; cap $4, box 90 min): N1 confirms of E361-E365, E367, E368 + the image check MS18-R6 skipped
+Exactly "## FV-MS18e" of the ledger8 jobs file: find each printed message on the IA page image (leaf named; narrow E363's pp.386-389 and E365's pp.368-370 to the page),
+diff word for word against the reading (date, hour, sender, addressee, body), classify N0/N1 with key source `period`; one CISOSEARCHALL each on a rare word (holder
+copies outrank print as N0 evidence). MS18-R6 left 7 leaves not eye-checked: eye-check each of these entries' own lines on its leaf (tools/iiif_lines.py --image,
+crops to scratch) and list any transcription slip. AUDIT.md "## AUDIT (FV-MS18m)"; no status.json/SO rows for N1; fixes in s.5. Unit ~0.5 per entry.
+
+## MS18-R7 (Sonnet 5.5, reader; cap $3.5, box 110 min): 10 more mssEC 18 No. 1 rows + one mssEC 19 row
+Method exactly "## MS18-R6" (wave 1). Rows, in clean-ms18.tsv order after 9836/1: 9842/1, 9907/1, 9878/1, 9673/1, 10061/0 (20 Oct 1865: test the book share first,
+"no book in hand" if none reads -- the handoff lists no Oct 1865 book), 10013/0 (undated), 9774/1, 9820/3 (its pointer is in ciphertext.txt: check the entry number,
+skip if filed), 9759/1, 9732/1 (spares 10048/1, 10003/2). Then one received-ledger row: mssEC 19 p.364 pointer 9258/2 (27 July 1865, the Memphis/Ryan case; found
+by AUD2-LEDGER-33) -- extract and decode it the way the mssEC 19 readers did (NOTES names their scripts) and file it with the next ID. IDs from E371 (fetch first; take
+the next free one if taken). NOTES "## MS18-R7 (10 Oct 2026, account 1, for LANE LEDGER)" with the per-row line; Remaining gaps / Escalation; gaps_check; decode
+--check. No audits. Unit ~0.25 per row.
