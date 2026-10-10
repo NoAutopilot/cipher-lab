@@ -63,3 +63,28 @@ Held for wave 2: first verifiers on the rest of the unaudited filings (1865: E50
 E566 E569 E571 E574 E577 E506 E508 E521; 1864: E441 E472 E465 E447 E442 E474 E471 E470 E468 E443 E473 E445 E469 E466 E446 E448); a FIX job on wave 1's s.5.
 
 (12:47 UTC 10 Oct by date -u: wave 1 spawned with source_url: FV-L15a session_01WNiDGdC52vxM1PiiB8Rcw8, FV-L15b session_01JHZ65eV5Fe3DSuTujnfSc4, FV-L15c session_01EEFyxEGFkG9NEjAqivwrCh, FV-L15d session_011HBDTUbE69JkJPExoyA9j8, FV-L15n session_01CFSNt8CD3vxPQzKNBLP61e, R-5855 session_013HSZrwAokYtQpqFJzHaaKx.)
+
+---
+
+# Wave 2 (written 10 Oct 2026 13:2x UTC by date -u; lane workers 20.0 done + FV-L15a/b live)
+By get_session: R-5855 0.98 (5855/1 plain/no clause, not filed), FV-L15n 3.69 (E537 E544 E565 N1; E171 N3 -> N1, OR I/43 pt 1 p.860), FV-L15d 8.18 (E573 E557
+N1; E539 E528 E500 E517 N3 D3; AUD2-LEDGER15-4), FV-L15c 7.14 (E551 E552 E529 E513 N1, E515 N2, E549 N3 D3; AUD2-LEDGER15-3). Lesson: of 12 entries
+audited, 7 had a **holder clear copy at another Huntington pointer** (the Washington clear books, pointers ~7680-7830 and 8500-8660) or print -- found in the
+first ~20 CISOSEARCHALL queries. An Opus verifier at ~1.3/entry spends most of that on entries a cheap sweep settles. So the rest go through a Sonnet sweep first.
+
+## CLEAR-SWEEP (Sonnet 5.5; cap $4, box 120 min; hdl <= 160 requests in takes of <= 40, archive.org/be-api <= 60, googleapis <= 60)
+Entries (40): 1865 E509 E511 E514 E518 E526 E527 E542 E543 E546 E548 E550 E553 E554 E558 E562 E564 E566 E569 E571 E574 E577 E506 E508 E521; 1864 E441
+E472 E465 E447 E442 E474 E471 E470 E468 E443 E473 E445 E469 E466 E446 E448. Per entry, from its derived reading block in reading.md: (a) holder clear copy --
+CISOSEARCHALL (documented `CISOSEARCHALL^TERM^all^and` form, sixth segment 1) on two rare plain words or names of the body plus the date, all collections the
+FV-L15c/d sections used (read "## AUDIT (FV-L15c)" / "(FV-L15d)" s.1 for their exact query form and the pointer ranges that hit); for each candidate pointer one
+dmGetItemInfo and a word-for-word diff of its transcription against the reading (control 9678 once per take); (b) print -- grep the OR/ORN parts on disk
+(print/or_volume_map.tsv true labels) by date window +-3 days on two letters-only phrases (ms18_l14b_print.py method), one IA whole-collection be-api phrase query,
+Grant Papers 13 by Google Books (lesson (1)) and Grant Papers 14 on IA (`papersofulyssess0014gran`, be-api) for 1865 entries, for 1864 entries OR ser. I parts
+by date (fetch a missing part's _djvu.txt once, <= 4, add to the map). Output `ciphers/eckert-1864/fortmonroe/clear_sweep.tsv` (entry, pointer, date,
+clear_copy pointer/page or -, print vol/page or -, shared run length, verdict: CLEAR / PRINT / NEAR (different message, same day) / NONE) with a control row
+(E552 -> 7749 and E557 -> 7768 must hit; E549 must not). No grade change, no AUDIT edit: CLEAR/PRINT rows are N1 candidates for a confirming verifier, NONE rows go
+to full first verifiers. NOTES "## CLEAR-SWEEP (10 Oct 2026, account 1, for LANE LEDGER-15)". file_shrink_guard. Report what was found and where it was not found;
+do not classify novelty. Stop before starting an entry that would cross 80% of cap or box; list the unswept ones.
+
+Held for wave 3: one N1-confirm verifier (Opus, FV-L15n method) on CLEAR/PRINT rows; full first verifiers (Opus, 6 per session) on NONE rows by H count; FIX-L15
+(Sonnet) on FV-L15a/b/c/d/n s.5.
