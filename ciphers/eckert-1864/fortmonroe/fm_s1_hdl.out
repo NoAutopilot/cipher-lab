@@ -1,0 +1,22 @@
+control 9678 'Inspector difficulty Evidence Nashville': 1 hits: 9678
+F1 5785/1 'Newbern McDougall': 0 hits: 
+F2 5799/0 'Schoonmaker Patrick Caldwell': 1 hits: 5799
+F3 5816/2 'Baird instruments': 1 hits: 5816
+F4 5583/2 'Dunn Cherry Stone': 5 hits: 11330 5583 14048 12487 12324
+F5 5827/0 'Saugus Cole': 2 hits: 5813 5827
+F6 5647/0 'Gillmore Culpepper': 14 hits: 4576 4586 4587 4588 4592 4593 4597 5651 10201 10237 4543 4556 4561 4562
+F7 5793/1 'Manhattan wharf Bates': 1 hits: 5793
+F8 5636/2 'Clarke staff North Carolina': 0 hits: 
+F9 5822/2 'Demolay': 2 hits: 5822 5851
+F10 5731/0 'Rand Bliss Cowan Ryan': 2 hits: 11877 5731
+img 5785
+img 5799
+img 5816
+img 5583
+img 5827
+img 5647
+img 5793
+img 5636
+img 5822
+img 5731
+requests 21

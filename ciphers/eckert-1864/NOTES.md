@@ -5971,3 +5971,65 @@ lines in ciphertext.txt; manuscript lines untouched; idempotent, `--dry` reports
 `decode.py --write`; `decode.py`, `decode_no2.py`, `decode_no9.py --check` all exit 0. status.json: no row exists for E402-E430 (none N3+ D2+), unchanged;
 no SECOND-OPINIONS-QUEUE row (none N3+). `tools/depth_check.py` exit 0 (unique solves 163). NOTES "## MS18-R9" E402 print gap and "## MS18-R11" E430
 print-page gap are closed by the audits; the E403 gap stays (next: OR ser. II vol. 7 / ser. III vol. 4 by page and the Ferry-Donohue commission record, ~$0.4).
+
+## FM-S1 (10 Oct 2026, account 1, for LANE LEDGER-13)
+
+Ten short 1864 rows of the Fort Monroe ledger (Huntington object 5952 = mssEC 25), none filed (grep of pointer/entry in `ciphertext*.txt`, NOTES.md at 08:5x UTC: the other entries on pointers 5785, 5799, 5816, 5822, 5827 are different rows, E280, E187, E251, E265/E293, E296). **Nothing is filed, no E/N2/O9 ID used, no key or reading edited**: all ten are Step-0 hits (ruling of the ledger10 jobs file, Wave 3), and the pre-registered short-row rule applies (no clause forced). Scripts and outputs in `fortmonroe/`: `fm_s1_dump.py` + `fm_s1_entries.txt`, `fm_s1.py` (shares and five decodes per row), `fm_s1_step0.py/.out`, `fm_s1_printcheck.py/.out`, `fm_s1_beapi.py/.out`, `fm_s1_hdl.py/.out`. Novelty not classified (rule 10).
+
+**Intake / prior-work.** `intake_gate_check.py eckert-1864`: partial (line 3) -- edition/page or full-text-search citation found within 6 lines (exit 0, from the brief; not re-run beyond that). `prior_work.py eckert-1864 --item-spec ... --read --offline` (row 5785/1 as the spec): exit 4, owed = a target-level live-claim LEAD (FIX-FM21, names the slug, not this unit), one LOOK (look.tsv crop), two UNCHECKED (no folio key); aaymeloglu cache UNCHECKED-NET. Same shape as FM-R7a; the by-hand checks below stand in.
+
+**Shares and book (FM-PRE scorer at HEAD, s1/s2/s9).** 5785/1 .30/.33/.10; 5799/0 .22/.26/.09; 5816/2 .29/.25/.11; 5583/2 .22/.19/.04; 5827/0 .29/.32/.19; 5647/0 .38/.29/.17; 5793/1 .23/.27/.05; 5636/2 .42/.46/.15; 5822/2 .33/.30/.11; 5731/0 .17/.04/0. Shares do not pick the book. Book = the one under which the words give sense: No. 1 for F1-F9 (No. 2 and No. 9 give names and verbs that do not fit: "Jeff Davis", "Ohio", "Killed"); F10 is plain English, H0 under every book. The H count of a meaning-shuffled copy of No. 1 equals the true count on every row (`fm_s1.py --show`: e.g. F1 H8/H8, F8 H12/H12), so an H-count control cannot fail by construction and licenses nothing; sense is the criterion, and sense is the only evidence for the book.
+
+**Step 0 (a)/(b)/(c)** (ms18/step0_ordered.py functions, page JSON of the row's own pointer on disk; (b) = p95 of 20 shuffles of the matched window): all ten HIT, which here means the holder transcription of the page carries the plain words in order -- the transcription is the cipher text itself, so a hit says the plain words were never enciphered, not that a clear copy exists.
+
+| row | (a) LCS/n | (b) p95 | (c) key-dependent words not in the transcription |
+|---|---|---|---|
+| 5785/1 | .741 (20/27) | .370 | general, grant, newbern, thirteen |
+| 5799/0 | 1.000 (13/13) | .462 | none |
+| 5816/2 | .783 (18/23) | .304 | butler, general, major, porter, tomorrow |
+| 5583/2 | .846 (22/26) | .385 | baltimore, butler, general, humboldt |
+| 5827/0 | .667 (14/21) | .333 | mile, porter, six, telegraph, tomorrow |
+| 5647/0 | .611 (11/18) | .333 | butler, culpepper, force, general, gillmore, major |
+| 5793/1 | .810 (17/21) | .381 | secretary, today, war |
+| 5636/2 | .500 (12/24) | .250 | captain, carolina, general, grant, major, north, rebel, report, troops, virginia |
+| 5822/2 | .800 (12/15) | .400 | colonel, division, mcminnville |
+| 5731/0 | 1.000 (23/23) | .391 | none |
+
+**Holder search (CISOSEARCHALL p16003coll11, all pointers; 23 requests, 21 + 2 re-queries; positive control "Inspector difficulty Evidence Nashville" returned 9678, 1 hit).** Query words were chosen from the plain words of each row, and for F1 and F8 the first query used a key-dependent word (Newbern, North Carolina) that is not in any ledger transcription, so it was rerun on plain words. Results: F1 "Horner McDougall": only 5785. F2 "Schoonmaker Patrick Caldwell": only 5799. F3 "Baird instruments": only 5816. F4 "Dunn Cherry Stone": 5 hits, none a copy of this telegram; 11330 (1 May 1864, Dunn to Eckert, "Go Cherrystone at once"), 14048 (15 Aug, Mr Dunn operator at Cherrystone), 12487 (17 June, message to Mr Dunn), 12324 (Dunn at Cherry Stone) are siblings that place W. A. Dunn as operator at Cherrystone. F5 "Saugus Cole": 5813 (1 Dec, O'Brien: monitors Saugus, Canonicus, Mahopac to fill up with coal) is a sibling, not a copy. F6 "Gillmore Culpepper": 14 hits, one is a **holder clear copy: pointer 4592 (obj 4849, p.151), "Culpepper 4 pm 2d May Maj Gen Butler. What is the late news from Gen Gillmore? what number of his force is yet to arrive US Grant"**. F7 "Manhattan wharf Bates": only 5793. F8 "Clarke staff just returned": **holder clear copy pointer 10279 (obj 10550, p.137), "Ft Monroe Apl 28th 1864 ... Lt Gen Grant Capt Clarke of my staff has just returned from NC reports NC relieved from Rebel troops that have gone to Va Maj Gen BF Butler 1130 am"**. F9 "Demolay": 5851 (a vessel list naming DeMolay), sibling. F10 "Rand Bliss Cowan Ryan": **holder clear copy pointer 11877 (Eckert's received leaf 356, 6 June 1864 8 PM, "An office needed at West Pt I want Rand here Bliss also Please keep Cowan & Ryan at West Pt until some other office is ready ... Bickford")**; the ledger row is itself plain English.
+
+**Print.** Phrase grep over 177 cached volumes (`fm_s1_printcheck.out`) plus nine be-api queries without identifier (`fm_s1_beapi.out`: one phrase hit, rejected: "yellow fever is prevailing to considerable extent in Vera Cruz", Illinois State Register 1846, a different text and year; the F5 and F9 hits are surname index pages and a county history, rejected as not the phrase). Two prints found: F8 = OR I/33 (IA `warofrebellion33unit`, OCR page header "1009") Butler to Grant, Fort Monroe 28 April 1864, "Captain Clarke, of my staff, has just returned from North Carolina. Reports North Carolina relieved from rebel troops that have gone to Virginia", and Butler's Correspondence IV (IA `privateofficialc04butl`) p.142 of the OCR running head, same words; F6 = Butler's Correspondence IV p.157 (OCR running head), "From General Grant, Cipher. By Telegraph from Culpepper, May 2nd, 1864. To Maj. Gen. Butler. What is the latest news from General Gillmore? State what number of his force is yet to arrive. U. S. Grant", word for word with the decode (the page numbers are the OCR running heads, not eye-checked on a scan). F5 "U. S. S. Saugus" occurs in ORN I/10 (June 1864 reports on the Trent's Reach shot), a different telegram. Otherwise not located: 177 cached OR/ORN/Butler/Grant volumes by phrase, and the be-api queries above; Butler Corr. III-V and Grant Papers 10-12 were not searched for F1, F2, F3, F5, F7, F9 beyond that.
+
+**Per-row line** (in print / holder clear copy / not located / step-0 skip / no book in hand):
+
+| row | line |
+|---|---|
+| 5785/1 | step-0 skip; No. 1, H8, "yellow fever is prevailing to considerable extent at Newbern N. C., I have thought best to notify you at once", 1 Oct 1864 Sheldon to John Horner NY for Surgeon Charles McDougall (flora = Newbern is the same key word as E280, 30 Sept); not located in print, no holder clear copy |
+| 5799/0 | step-0 skip; No. 1, H3; plain: Patrick (Hd Qrs A.P., 29 Oct) asks Sheldon to forward a copy of all dispatches sent north signed Schoonmaker, which is the question E187 (5799/1) answers; not located in print, no holder clear copy |
+| 5816/2 | step-0 skip; No. 1, H7; Butler's Hd Qrs, O'Brien to Sheldon, 6 Dec, Mr Baird will arrive tomorrow morning, send him here with his instruments (Hendron/Hendron plain); not located |
+| 5583/2 | step-0 skip; No. 1, H4 but "Cherry"= Humboldt is a plain place name (Cherrystone, siblings 11330 etc.), so M; 12 Mar 1864 Sheldon to Eckert: Butler (Knox) wants to know if the operator at Cherrystone is the same W. A. Dunn formerly employed in the American office at Baltimore; holder siblings only; not located in print |
+| 5827/0 | step-0 skip; No. 1, H11 but a clause of "will start down at early ..." and ordnance/Saugus words only; 10 Dec Beckwith City Point to Sheldon, for Porter, U.S.S. Saugus ... sibling 5813; not located; short, the middle is not read |
+| 5647/0 | **in print** (Butler's Correspondence IV p.157, word for word) **and holder clear copy 4592**; step-0 skip; No. 1 H8 |
+| 5793/1 | step-0 skip; No. 1, H3, 15 Oct 1864 Eckert to Dealy, Fort Monroe: be at the wharf when the Manhattan arrives from Washington with the Secretary of War on board, tell no one; "grapes with brutus" = Washington/Secretary of War is M (two keyed words, no print or sibling to test the sense); not located |
+| 5636/2 | **in print** (OR I/33 p.1009; Butler Corr. IV p.142, word for word) **and holder clear copy 10279**; step-0 skip; No. 1 H12 |
+| 5822/2 | step-0 skip; No. 1, H8, but "paradise"= McMinnville and "viola" = Colonel are not sense; 8 Dec O'Brien to Sheldon, "every thing is shipped ... and the DeMolay leave here at daylight" is the readable clause, and DeMolay is a vessel (sibling 5851); recorded as too short to read a clause with confidence; not located |
+| 5731/0 | no book needed: plain English, H0 under every book; **holder clear copy 11877** (Eckert's received leaf, 6 June 1864), and the ledger row itself is clear; step-0 skip |
+
+**Image check.** Pages of 5785, 5799, 5816 read at 2400 px (full page, own entries only): every line matches the transcription (e.g. 5785 "Charles McDougall france / zodiac Yell oh fever is prevailing to considerable"; 5799 "for ward", "Scoon maker walrus M R Patrick"; 5816/2 "Mr Baird sly will arrive at appear whelp"). The other seven page images are on disk in the scratch directory only (not committed); their lines are graded from the transcription and are not eye-checked.
+
+**Verdict for filing.** File nothing. Rows a later job could take, if the owner wants plain-word-plus-key entries rather than step-0 skips: none (every row is a hit). Rows with a (c) word the transcription does not give: F1 Newbern/thirteen, F4 Baltimore, F6 Gillmore (in print), F8 North Carolina/Virginia (in print), F9 none read.
+
+## Remaining gaps (FM-S1, 10 Oct 2026)
+Read so far: ten of ten examined; none filed (all Step-0 hits).
+- Seven page images (5583, 5827, 5647, 5793, 5636, 5822, 5731) not eye-checked - blocker: not-attempted; they are on disk only in the scratch directory, not committed; next: re-fetch and read at 2400 px, ~$0.3, only if a later job files these rows
+- F7 5793/1 "grapes with brutus" - blocker: open-codes; the Washington/Secretary of War reading rests on two key rows with no sibling to test it; next: Butler Corr. V and Stanton movements of 15 Oct 1864 by be-api, ~$0.2
+- F9 5822/2 first clause - blocker: open-codes; paradise and viola read as McMinnville and Colonel, which is not sense; next: sibling 5851 vessel list and 8 Dec Butler IV window, ~$0.2
+
+## Escalation (FM-S1, 10 Oct 2026)
+- [x] siblings: 5813, 5851, 11330, 14048, 12487, 12324 seen, not filed.
+- [x] clear-pages: all-pointer CISOSEARCHALL with control; copies found for F6, F8, F10.
+- [x] known-keys: three books, five decodes per row, shuffled copy (count control non-discriminating by construction, read by sense).
+- [x] print: 177 cached volumes, 9 be-api; two prints found (F6, F8).
+- [n/a] key-rebuild: no key row edited.
+- [x] image-check: three of ten pages read at 2400 px; the other seven are a named optional step above.
+- [n/a] retry: nothing failed except the first F1 and F8 queries, which used key-dependent words and were rerun on plain words.
+Verdict: keep going (three small internal steps, named above, ~$0.7 in all; nothing is blocked from outside).
