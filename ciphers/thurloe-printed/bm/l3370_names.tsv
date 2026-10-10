@@ -1,0 +1,20 @@
+code	birch_gloss	sheet_value	verdict	n_occ	note
+104	B1:Ch. St. x2 | B1:Ch. Stew. x3 | B1:K. Charles x1 | B2:Ch. St x2 | B2:Ch. Stew x3 | B2:K. Charles x1	K. Charles	agree-referent	12	in l3370
+105	B1:don John x1 | B2:don John x1	Don John	agree	2	in l3370
+106	B1:D. York x1 | B1:d. York x1 | B2:D. York x1 | B2:d. York x1	Duke of york	agree-referent	4	in l3370
+109	B1:Dunkirk x3 | B2:Dunkirk x3	Ships belonging to Dunkirk	agree	6	in l3370
+110	B1:Oftend x5 | B2:Oſtend x5	Ships belonging to Ostend	agree	10	in l3370
+111	B1:Bruges x1 | B2:Bruges x1	Bruges	agree	2	in l3370
+112	B1:Bruxels x1 | B2:Bruxels x1	Bruxels	agree	2	in l3370
+113	B1:Ormond x1 | B1:Ormond, Hyde x1 | B2:Ormond x2	Ormond	agree	4	in l3370
+115	B1:Don John? x1 | B2:Don John x1	Rochester	disagree	2	in l3370; both passes read 'Don John' over 115 (crop l3370_p31_L01.jpg, row 'Loven. Don John quarters'), the sheet has 105 = Don John and 115 = Rochester: rule-4 data conflict
+118	B1:Newburgh x1 | B2:Newburgh x1	Newbrugh	agree-referent	2	in l3370
+119	B1:Midleton x3 | B2:Middleton x2 | B2:Midleton x1	Middleton	agree	6	in l3370; includes a misread spelling within 0.75 similarity (M)
+120	B1:Hyde x1 | B2:Hyne? x1	Hyde	agree	2	in l3370; includes a misread spelling within 0.75 similarity (M)
+123	B1:d. Gloucefter x1 | B1:d. of Gloucefter x1 | B2:d. Gloceſter x1 | B2:d. of Glouceſter x1	Duke of Glocester	agree-referent	4	in l3370
+131	B1:Conde x1 | B2:Conde x1	Conde	agree	2	in l83274
+169	B1:arms x1 | B2:arms x1		sheet-silent	2	in l3370; span 'arms' with the sheet's letters - + [169] + mes does not fit exactly (period spelling 'armes' would give 169 = 'ar'; M)
+173	B1:Ormond x1 | B2:Ormond x1		sheet-silent	2	in l86815; 173 not on the sheet; the sheet's 113 = Ormond is the same referent (HYPOTHESES.md FIX-THURBM2 item b)
+191	B1:^(span interior) x1 | B2:^(span interior) x1		sheet-silent	2	in l3370; span 'great' with the sheet's letters gr + [191] + t: 191 = 'ea' (M, single span)
+481	B1:Mar x1 | B2:Mar x1		sheet-silent	2	in l83274; 481 not on the sheet; gloss 'Mar' is a fragment before 71 (l.83274 row 2)
+733	B1:Sir Mar. Lang. x1 | B2:Sir Mar. Lang. x1		sheet-silent	2	in l86815; 733 is not on the sheet; the sheet's 133 = Sr Mar: Langdale is the same referent as Birch's 'Sir Mar. Lang.' one digit apart (lead, M: a printed 7 for 1, or two codes)

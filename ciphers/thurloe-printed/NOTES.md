@@ -3255,3 +3255,32 @@ Read so far: l.44535 151 of 151 group values H (period key sheet); 143 of 151 (9
 - [x] image-check: code 8 answered by the period sheet (8 = b)
 - [x] retry: none needed
 Verdict: keep going: 3 internal gaps; cheapest next: l.3370 name pairing against the period sheet, ~$0.5
+
+## THUR-3370 (LANE FAMILY-A2s, account 2, worker Sonnet 5.5, 10 Oct 2026 17:21-17:2x UTC by date -u)
+Question: do Birch's printed word/name glosses in l.3370 (Bruges, 11 Feb 1657) agree with the period key sheet BL Add MS 4166 f.117 names 102-139? Disk only, no host request.
+**Prior work.** `prior_work.py thurloe-printed --item-spec 'shelfmark=Birch 1742 vol 6 l.3370;date=1657-02-11;sender=Blank Marshall;recipient=Thurloe' --step-type align --fetch`: exit 4; 12 own-work LEADs, all this folder's own live claims (THUR-B146, THUR-V6, THUR-BM, THUR-BM2, AUD2, FIX-THURBM/2, the lane, THUR-AGENTS, this job), none covers a name pairing of l.3370 (THUR-BM2 listed the codes only, NOTES "Remaining gaps"); 4 UNCHECKED (Tomokiyo and solver caches: no folio or R-id, aaymeloglu cache not on disk; Birch itself, no window found) -- unchecked, not cleared; no host fetched.
+**Method.** `bm/l3370_names.py [--check]` (rule 7; exit 0) reads the two blind gloss passes `bm/passes/l3370_B1/B2.tsv` and `bm/key_period_f117.tsv`, writes `bm/l3370_names.tsv`. Codes 481 and 733 do not occur in l.3370: they are in l.83274 and l.86815 (same for 173 and 131), taken from those letters' passes. key_blankmarshall_7.tsv not touched. Eye check on crop `bm/crops/l3370_p31_L01.jpg` (115) and `l3370_p32_L01.jpg` (191, 120, 123, 104).
+**Result (19 codes; every verdict is gloss against sheet, grade C where agree, M where noted).**
+- agree (text): 105 Don John, 109 Dunkirk, 110 Ostend, 111 Bruges, 112 Bruxels, 113 Ormond, 119 Middleton, 120 Hyde (B2 "Hyne?" is a misread, M), 131 Conde (l.83274).
+- agree-referent (same person, text differs): 104 (sheet K. Charles; Birch prints "Ch. Stew."/"Ch. St." five times and "K. Charles" once in l.3370, both passes), 106 D. York, 123 d. of Gloucester, 118 Newburgh/Newbrugh.
+- disagree: **115**: both passes read "Don John" over 115 (eye-checked on the crop, row "Loven. Don John quarters"); the sheet has 115 = Rochester and 105 = Don John. Rule-4 data conflict, logged in HYPOTHESES.md with both witnesses, not settled; 115 stays M in any letter that uses it.
+- sheet silent: 169, 191 (the sheet stops at 139 for names), 173, 481, 733. Span check from the sheet's own letters: 191 in "great" = g r [191] t gives "ea" (M, one span); 169 in "arms" = [169] m e s: the sheet's letters spell "armes", not "arms", so 169 = "ar" only if the gloss is read in period spelling (M). 733 "Sir Mar. Lang." matches the sheet's 133 Sr Mar: Langdale, one digit apart: a lead (printed 7 for 1, or two codes), not a value. 173 Ormond is the known 113/173 conflict (HYPOTHESES.md).
+- Not found: no Birch gloss for 102, 103, 107, 108, 114, 116, 117, 121, 122, 124-130, 132, 134-139 in l.3370 (codes not used); no sheet row above 139, so no sheet witness for 169, 191, 481, 733, 173.
+Counts: 15 of 19 codes have a sheet witness; 9 agree in text, 4 in referent, 1 disagrees (115), 5 silent. Control: this is a lookup against a key sheet, not a decode; no matched control applies and none is claimed.
+
+## Remaining gaps (THUR-3370, 10 Oct 2026; replaces the FIX-THURBM2 list)
+Read so far: l.44535 151 of 151 group values H (period key sheet); 143 of 151 (94.7%) give the intended letter; 5 groups M. l.3370 names: 13 of 15 sheet-backed codes agree with Birch's print (9 text, 4 referent); 115 conflicts.
+- N4 for l.44535: Akkerman 2018 pp.222-223 and notes, Alan Marshall 2023's Blanck Marshall entries - blocker: waiting-on LOCAL-QUEUE L77; in copyright, needs a page read in a person's browser
+- Code 115 (Birch "Don John" vs sheet Rochester) and 733/133 - blocker: needs-physical-access (a second witness: the sheet image re-read at 115 and 133, and a Blank-Marshall letter of the same date using either code); not an untried step for this folder
+- Jephson (ll.65973, 76999, 86578) and Meadowe (l.75081) glossed letters - blocker: not-attempted; unchanged since THUR-V6; next: align as one Jephson pool and one Meadowe item (Meadowe's period key is BL Add MS 4166 f.102-103, DECODE R4890), ~$2
+- The vol 6 Downing-Lockhart and vol 4 Blake control-miss letters - blocker: not-attempted; unchanged since THUR-B146; next: align as key_blake/key_lockhart pool extensions, ~$1.5
+
+## Escalation (THUR-3370, 10 Oct 2026)
+- [x] siblings: seven Blank-Marshall letters aligned (THUR-BM2)
+- [x] clear-pages: l.44535 clear rows restored (FIX-THURBM)
+- [x] known-keys: the period key sheet compared value by value; l.3370 names paired (THUR-3370)
+- [x] print: Birch's gloss is the key source
+- [x] key-rebuild: gate7 PASS
+- [x] image-check: code 8 answered by the period sheet (8 = b); 115 read on the l.3370 crop
+- [x] retry: none needed
+Verdict: keep going: 2 internal gaps (Jephson/Meadowe, Downing-Lockhart/Blake), cheapest next: Jephson pool alignment, ~$2
