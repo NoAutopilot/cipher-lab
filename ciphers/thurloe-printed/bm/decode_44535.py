@@ -10,11 +10,15 @@ python3 decode_44535.py [DJVU] [--check]
 - FIX-THURBM (10 Oct 2026): LABELS relabels key codes after the alignment (123 = D. Gloucester, both glossed witnesses); slips.tsv
   regrades single groups of this letter to M (row, pos, grade, note, intended word shown in brackets after word_end); clear_rows.tsv
   restores the clear-text rows that carry no group (after_row, after_pos, text), taken from the page by V-THURBM's eye check.
+- FIX-THURBM2 (10 Oct 2026): key_period_f117.tsv (the period key sheet BL Add MS 4166 f.117, DECODE R4897, read by AUD2-FAMILY-A2r-1)
+  is the key source for every group whose value it states: such groups are graded H (rule 4) unless slips.tsv regrades them to M (the
+  encipherment slips, which are the encipherer's, not key gaps). Key code 9 follows the sheet (b, H) where B1|B2 split s|b (SHEET_FIX).
 --check: recompute and exit 1 if any committed output differs (the control is skipped and not compared when DJVU is absent).
 """
 import csv, math, os, random, subprocess, sys, tempfile, collections
 H = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.abspath(os.path.join(H, '..', '..', '..'))
 LABELS = {123: 'D. Gloucester'}
+SHEET_FIX = {9: 'b'}
 LETTERS = ['l40469', 'l65889', 'l77385', 'l89881']
 sys.path.insert(0, H)
 def norm(s):
@@ -43,13 +47,25 @@ def build():
     for v, lab in LABELS.items():
         if v in key:
             key[v] = (lab, key[v][1]); rows = [('\t'.join([r.split('\t')[0], lab] + r.split('\t')[2:]) if r.split('\t')[0] == str(v) else r) for r in rows]
+    for v, lab in SHEET_FIX.items():
+        key[v] = (lab, 'H'); rows = [('\t'.join([r.split('\t')[0], lab] + r.split('\t')[2:5] + ['H', 'period key sheet BL Add MS 4166 f.117 (DECODE R4897): ' + lab + '; B1|B2 split ' + r.split('\t')[1]]) if r.split('\t')[0] == str(v) else r) for r in rows]
     return key, '\n'.join(rows) + '\n'
+
+def sheet_values():
+    return {int(r['value']): r for r in tsv_rows('key_period_f117.tsv')}
+
+def tok_grade(v, key, sheet, slip):
+    if slip: return slip['grade']
+    if v is None or v not in key: return 'unread'
+    if v in sheet and (v >= 100 or norm(sheet[v]['meaning']) == norm(key[v][0])): return 'H'
+    return key[v][1]
 
 def tsv_rows(name):
     p = os.path.join(H, name)
     return list(csv.DictReader(open(p), delimiter='\t')) if os.path.exists(p) else []
 
 def decode(key, toks):
+    sheet = sheet_values()
     slips = {(r['row'], r['pos']): r for r in tsv_rows('slips.tsv')}
     after = {}
     for r in tsv_rows('clear_rows.tsv'): after.setdefault((r['after_row'], r['after_pos']), []).append(r['text'])
@@ -61,7 +77,7 @@ def decode(key, toks):
         v = int(r['token']) if r['token'].isdigit() else None
         m, g = key.get(v, ('[' + r['token'] + ']', 'unread'))
         sl = slips.get((r['row'], r['pos']))
-        if sl: g = sl['grade']
+        g = tok_grade(v, key, sheet, sl)
         tsv.append(f"{r['row']}\t{r['pos']}\t{r['token']}\t{m}\t{g}")
         out.append(m.upper() if v is not None and v < 100 and g not in ('unread', 'M') else (m if g == 'M' and v is not None and v < 100 else '<' + m + '>'))
         if (r['row'], r['pos']) in ends: out.append('[' + ends[(r['row'], r['pos'])] + ']')
@@ -103,9 +119,9 @@ def main():
     toks = list(csv.DictReader(open(os.path.join(H, 'l44535_ciphertext.tsv')), delimiter='\t'))
     tsv, out = decode(key, toks)
     N = [r for r in toks if r['kind'] == 'N']
-    sg = {(r['row'], r['pos']): r['grade'] for r in tsv_rows('slips.tsv')}
-    g = collections.Counter(sg.get((r['row'], r['pos'])) or key.get(int(r['token']), ('', 'unread'))[1] for r in N)
-    summ = f"groups {len(N)}; C {g['C']}; M {g['M']}; unread {g['unread']}; coverage {(g['C']+g['M'])/len(N):.3f}\n"
+    sg = {(r['row'], r['pos']): r for r in tsv_rows('slips.tsv')}; sheet = sheet_values()
+    g = collections.Counter(tok_grade(int(r['token']) if r['token'].isdigit() else None, key, sheet, sg.get((r['row'], r['pos']))) for r in N)
+    summ = f"groups {len(N)}; H {g['H']}; C {g['C']}; M {g['M']}; unread {g['unread']}; coverage {(g['H']+g['C']+g['M'])/len(N):.3f}\n"
     txt = ' '.join(out) + '\n\n' + summ
     outs = {'key_blankmarshall.tsv': keytxt, 'reading_l44535.tsv': tsv, 'reading_l44535.txt': txt}
     if args and os.path.exists(args[0]):

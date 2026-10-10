@@ -14853,8 +14853,8 @@
       "phrases": [
         "Birch 1742 vol 6 p.374, l.44535, Blank Marshall"
       ],
-      "completeness": "151/151 group values H at face value (period key sheet BL Add MS 4166 f.117 = rebuilt print-gloss key on every group; AUD2-FAMILY-A2r-1); 144/151 give the intended letter; committed decode files still grade C 145 + M 6 (FIX-THURBM), regrade recommended in AUDIT 2 s.2",
-      "unresolved_spans": "'mepllow' (48 20 63 printed; follow?) unsettled, groups graded M; tyemselues (94) and nany (54) groups graded M, intended word I; preuennted (52 52) and dew heeret (80) slips intended word I",
+      "completeness": "151/151 group values read from the period key sheet BL Add MS 4166 f.117 (DECODE R4897), graded H (rule 4): H 146, M 5, C 0, unread 0 (FIX-THURBM2, 10 Oct 2026; `bm/decode_44535.py --check` exit 0); the sheet equals the rebuilt print-gloss key on every group; 143/151 give the intended letter",
+      "unresolved_spans": "'mepllow' (48 20 63 printed; follow?) unsettled, groups graded M; tyemselues (94) and nany (54) groups graded M, intended word I; preuennted (52 52) and dew heeret (80) slips are H at face value, intended word I",
       "audit_refs": [
         "AUDIT.md '## AUDIT (V-THURBM, l.44535)'",
         "AUDIT.md '## AUDIT 2 (AUD2-FAMILY-A2r-1, l.44535; second adversarial audit)'"
@@ -14862,9 +14862,9 @@
       "audit_status": "two audits",
       "superseded_by": "",
       "fields_source": "thurloe-printed/AUDIT.md '## AUDIT 2 (AUD2-FAMILY-A2r-1, l.44535; second adversarial audit)' sections 4-5",
-      "reading_version": "FIX-THURBM 10 Oct 2026 (bm/decode_44535.py --check exit 0 with bm/slips.tsv and bm/clear_rows.tsv; clear rows restored in bm/reading_l44535.txt; THUR-BM2 FIX items 1, 2, 3, 6 applied, 4, 5, 7 no change)",
+      "reading_version": "FIX-THURBM2 10 Oct 2026 (bm/decode_44535.py --check exit 0: groups H 146, M 5; period key sheet bm/key_period_f117.tsv is the key source; code-8 slip row dropped, key code 9 = b; bm/audit_period_key.py --check exit 0)",
       "depth": "D3",
-      "depth_pct": 95.4,
+      "depth_pct": 94.7,
       "decode_status": "Partially decrypted",
       "depth_unread": {
         "names_codes": "0",
@@ -14874,7 +14874,7 @@
       "depth_check": "print-gloss key gated leave-one-letter-out (PREREG-THURBM, PASS both blind passes, pooled 0.871/0.861); shuffled-key 4-gram control on l.44535 -1.007 vs p95 -1.431; decoded words complete the clear sentences at every group; external: Birch vol 6 intelligence letter of June 1657 (Gloucester a volunteer with Caracena for the summer); period key sheet BL Add MS 4166 f.117 (DECODE R4897) gives the committed value for all 151 groups (bm/audit_period_key.py --check, AUD2-FAMILY-A2r-1)",
       "depth_by": "V-THURBM verifier (account 2); confirmed by AUD2-FAMILY-A2r-1 second verifier (account 1)",
       "depth_date": "10 Oct 2026",
-      "depth_note": "group values H 151/151 at face value (period sheet); 144/151 (95.4%) give the intended letter; 7 slip groups (94 tyemselues, 54 nany, 52 52 preuennted, 80 dew heeret: intended letter I; 48 20 63 mepllow: M); code 8 in debts = b on the sheet (FIX-THURBM's M on it contradicted); not D4 (inferred letters; no fresh-session re-derivation from the sheet)",
+      "depth_note": "group values read from the period sheet, H 146 / M 5 of 151 groups; 143/151 (94.7%) are H and give the intended letter (8 slip groups: 94 tyemselues, 54 nany and 48 20 63 mepllow graded M; 52 52 preuennted and 80 dew heeret H at face value, intended letter I); code 8 in debts = b on the sheet (H, no slip); not D4 (inferred letters; no fresh-session re-derivation from the sheet); tools/depth_check.py exit 0, entry stays D3",
       "gap": "N3 two audits (V-THURBM, AUD2-FAMILY-A2r-1, 10 Oct 2026): for N4 read Akkerman 2018 Invisible Agents pp.222-223 and notes, and Alan Marshall 2023's Blanck Marshall entries; MS. Rawl. A. 51 f.238 not seen (unpublished, does not bear on N4); JSTOR rows queued"
     },
     {

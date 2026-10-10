@@ -1422,3 +1422,24 @@ reading of noisy glosses; the period sheet shows 8 = b, so the regrade under-cla
 between Tomokiyo's text and the sheet, not a gap in our key: the sheet has 113 Ormond. Propagated in this session: status.json (this row),
 `second-opinions/PROMPT-chatgpt-bm44535.md` (one sentence added; the SO-THURLOE-BM44535 queue row quotes no counts), NOTES "## AUD2-FAMILY-A2r-1".
 Second-opinion files: none filed yet for this item.
+
+## Revision after AUDIT (FIX-THURBM2, 10 Oct 2026; rule 10 propagation)
+
+Applies the regrade recommended in "## AUDIT 2 (AUD2-FAMILY-A2r-1 ...)" section 2 (solver-side files only; disk only, no image fetched, no search). No new
+class: **N3, key period, two audits, unchanged.**
+- Reading: `bm/decode_44535.py --check` exit 0. The period key sheet `bm/key_period_f117.tsv` (BL Add MS 4166 f.117, DECODE R4897, read by AUD2-FAMILY-A2r-1)
+  is now the key source for every group whose value it states: letters only where the sheet's letter equals the key's, name codes by sheet membership.
+  The code-8 row is dropped from `bm/slips.tsv` ("debts" carries no slip). Key code 9 = b (H, period sheet) in `bm/key_blankmarshall.tsv`; `key_blankmarshall_7.tsv`
+  (a generated gate file) already had 9 = b and keeps its 8 = t|b split against the sheet's b, noted in HYPOTHESES.md. `bm/audit_period_key.py --check` exit 0
+  (92 -> 93 letter codes agree; the s|b line is gone).
+- Grades (rule 4), group level: **H 146, M 5, C 0, unread 0** (was C 145, M 6; FIX-THURBM). M = the encipherment slips 94 in "tyemselues", 54 in "nany" and
+  the three groups 48 20 63 in "mepllow" (their sheet values give a non-word: the encipherer's slips, not key gaps). "preuennted" (52 52) and "dew heeret"
+  (80) are H at face value, intended word I (unchanged). No S.
+- Depth: 143 of 151 groups (**94.7%**) are H and give the intended letter (8 slip groups: 94, 54, 48 20 63, 52 52, 80). AUDIT 2 s.5 counted 7 slip groups and
+  144 (95.4%); the group count is 8, so 143 / 94.7% stands (as in FIX-THURBM). `tools/depth_check.py` after the edit: "unique solves (N3+ and D2+): 201 -- D4 5,
+  D3 142, D2 54; not counted D0/D1: 19; legacy ungraded: 0" (exit 0); the entry stays **D3**. Outward wording: "largely deciphered (about 95%)".
+- Safe sentence: unchanged in wording and meaning (it already says the period key sheet is the key and all 151 groups decode, five words carrying slips). Unsafe
+  sentence unchanged.
+- Rule 4 data conflicts logged in HYPOTHESES.md (135 chsturat vs Sr Edw. Walker; Ormond 113 vs 173), none in l.44535.
+- Propagated: status.json (completeness, unresolved_spans, reading_version, depth_pct, depth_note); `second-opinions/PROMPT-chatgpt-bm44535.md` (grade sentence);
+  the SO-THURLOE-BM44535 queue row quotes no counts (no change); WORK-QUEUE row AUD2-FAMILY-A2r-1 quotes no counts (no change).
