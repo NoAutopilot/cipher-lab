@@ -20,6 +20,15 @@ The recipe in full (exclusions, oo handling, flags) is build_vivonne_confirm2.py
 
     python3 benchmark-tx/build_vivonne_f102r.py           # (re)build, print counts + control + sha256
     python3 benchmark-tx/build_vivonne_f102r.py --check   # rebuild in memory; exit 1 if truth, sha256 or outputs are stale
+    python3 benchmark-tx/build_vivonne_f102r.py --start 550 [--check]   # DV1d re-anchored item vivonne1573-f102r-dev2
+
+--start S (TXE2-VIV102-REANCHOR, PREREG-txeng2-16 DV1d, 10 Oct 2026): the f.102r stretch alone is aligned (same DP, band 400)
+to the W=2700-letter window of tx/dec_norm.txt starting at offset S -- S = s*, the argmax of the registered scan
+benchmark-tx/txeng2/viv102reanchor/scan.py, ANCHORED there against a selection-fair null -- instead of taking its stretch of the
+j0-anchored whole-stream alignment; everything else (key forcing, exclusions, flags, control) is unchanged. The item id becomes
+vivonne1573-f102r-dev2 (new truth, sha256 and outputs dir); the dev item and its truth stay on disk untouched (withdrawn). The
+f.102v+f.103r stretch keeps j0's alignment; the build prints the gap (or overlap) in dec_norm where the two segments meet.
+Without --start the build is byte-identical to DV1's.
 """
 import difflib, hashlib, json, os, random, re, sys
 
@@ -39,6 +48,13 @@ ODIR = os.path.join(OUT, 'outputs', ITEM)
 WIN, WMIN = 8, 0.5
 DEC_PAGES = ('f105v', 'f106r', 'f106v', 'f107r', 'f107v', 'f108r', 'f108v')
 COLS = 'line\tpos\tref_sign\ttruth\tplain\tstatus\tflag\n'
+START, W_START = None, 2700
+if '--start' in sys.argv:
+    START = int(sys.argv[sys.argv.index('--start') + 1])
+    ITEM = 'vivonne1573-f102r-dev2'
+    TRUTH = os.path.join(OUT, ITEM + '.truth.tsv')
+    SHA = TRUTH + '.sha256'
+    ODIR = os.path.join(OUT, 'outputs', ITEM)
 
 
 def raw_tokens(path):
@@ -144,6 +160,16 @@ def build():
     amap, dec = align(seq, let, pub)
     i0 = next(k for k, t in enumerate(stream) if t[0] == 'f102r')
     i1 = next(k for k, t in enumerate(stream) if t[0] == 'f102v')
+    meet = ''
+    if START is not None:  # DV1d: re-anchor the f.102r stretch alone at dec_norm offset START (window W_START letters)
+        j_v = j0 + min(amap[k] for k in range(i1, len(stream)) if k in amap)  # first f.102v letter under j0's alignment
+        let = allet[START:START + W_START]
+        cmask = clerk_mask(len(allet))[START:START + W_START]
+        am_seg, _ = align(seq[i0:i1], let, pub)
+        amap = {k + i0: j for k, j in am_seg.items()}
+        j_r = START + max(amap.values())  # last f.102r letter under the re-anchored alignment
+        meet = ('meet: f.102r (start %d) last aligned dec_norm letter %d; f.102v (j0 %d) first aligned letter %d; %s %d letters'
+                % (START, j_r, j0, j_v, 'gap' if j_v - j_r - 1 >= 0 else 'overlap', abs(j_v - j_r - 1)))
 
     def ok(k):  # aligned, keyed: does the decoded value equal the aligned letter?
         return dec[k] >= 0 and k in amap and dec[k] == let[amap[k]]
@@ -227,12 +253,17 @@ def build():
     hdr = ('# Vivonne 1573 (BnF fr.16105 f.102r, Saint-Gouard to Charles IX) dev item, split=dev: clerk period '
            'decipherment (ff.104r-108v) under the published Tomokiyo key (C rows); built by benchmark-tx/'
            'build_vivonne_f102r.py (TXP-VIV102, PREREG-txeng2-13 DV1). Same hand as confirm2: dev only, never eval/confirm.\n# %s\n' % ctrl)
+    if START is not None:
+        hdr = ('# Vivonne 1573 (BnF fr.16105 f.102r, Saint-Gouard to Charles IX) dev item dev2, split=dev: clerk period '
+               'decipherment (ff.104r-108v) under the published Tomokiyo key (C rows), f.102r re-anchored at dec_norm offset %d '
+               '(build_vivonne_f102r.py --start %d; TXE2-VIV102-REANCHOR, PREREG-txeng2-16 DV1d). Same hand as confirm2: dev only, '
+               'never eval/confirm.\n# %s\n# %s\n' % (START, START, ctrl, meet))
     body = hdr + COLS + ''.join('\t'.join(str(x) for x in r) + '\n' for r in rows)
     outs = {}
     for name, path in (('committed', 'f102r_rec.tsv'), ('passA', 'f102r_passA.tsv'), ('passB', 'f102r_passB.tsv')):
         outs[name] = 'line\tpos\tsign\n' + ''.join('f102r_%s\t%d\t%s\n' % (line, i + 1, t)
                                                    for line, toks in raw_tokens(os.path.join(TX, path)) for i, t in enumerate(toks))
-    return body, outs, nex, ctrl, rows
+    return body, outs, nex, ctrl + ('\n' + meet if meet else ''), rows
 
 
 def main():

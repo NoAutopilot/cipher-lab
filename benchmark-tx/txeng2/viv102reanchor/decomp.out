@@ -1,0 +1,27 @@
+(3) F48 decomposition, dev2, unflagged positions 679
+passZ_dv1: flagged-excluded 84/679 = 0.124 | position errors 43/679 = 0.063 | insertions 41/1827 read = 0.022 | check ok
+passA_dv1: flagged-excluded 97/679 = 0.143 | position errors 65/679 = 0.096 | insertions 32/1813 read = 0.018 | check ok
+passB_dv1: flagged-excluded 65/679 = 0.096 | position errors 31/679 = 0.046 | insertions 34/1811 read = 0.019 | check ok
+(4) passZ_dv1 insertions by line / half / zone
+line	ins	s1	s2	inside	seam	outside	plain-word line
+f102r_L01	1	1	0	1	0	0	yes
+f102r_L03	1	1	0	0	0	1	
+f102r_L05	1	0	1	0	1	0	
+f102r_L06	2	2	0	0	0	2	
+f102r_L07	1	1	0	0	0	1	
+f102r_L09	1	0	1	0	0	1	
+f102r_L10	2	2	0	0	0	2	
+f102r_L13	1	0	1	0	0	1	
+f102r_L17	5	1	4	0	0	5	
+f102r_L18	1	1	0	1	0	0	
+f102r_L22	1	1	0	0	0	1	
+f102r_L24	1	1	0	0	0	1	
+f102r_L26	3	0	3	0	0	3	
+f102r_L27	2	0	2	0	0	2	
+f102r_L28	1	0	1	0	0	1	
+f102r_L30	3	2	1	0	0	3	
+f102r_L33	2	2	0	0	0	2	
+f102r_L34	3	0	3	0	0	3	yes
+f102r_L35	1	0	1	0	0	1	
+f102r_L37	8	6	2	0	2	6	yes
+total insertions 41: plain-word lines 12, seam/overlap (other lines) 2, elsewhere 27; s1 21 s2 20; lines with any 20 of 36
