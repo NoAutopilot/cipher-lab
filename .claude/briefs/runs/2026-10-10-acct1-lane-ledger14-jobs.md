@@ -77,3 +77,5 @@ open): exactly "## FV-MS18p" of the ledger10 jobs file (IA page image or be-api 
 step 0 information only. A citation that does not hold moves the entry to the full verifier search above within the cap, else names it for wave 3.
 
 Held for wave 3: FIX-L14 (Sonnet, apply the three audits' s.5 through decode.py's entry-note mechanism); readers' unfiled print rows need nothing.
+
+(10:2x UTC 10 Oct by date -u: wave 2 spawned with source_url: FV-L14a session_01T1tzkPQSNFYkrTDHvSj2Xs, FV-L14b session_01KdvrGyY4Dci2Pr5Eg2QBpX, FV-L14c session_016xotCHKtD6jCnB5jsuVJCk.)
