@@ -72,3 +72,48 @@ orchestrator's error. FV-MS18p ran: 5.97 by get_session, E379 relay frame N3 D3,
 ## N2R-5 (Sonnet 5.5, reader; cap $3.5, box 110 min): the next 10 unread rows guessed Cipher No. 2
 Exactly "## N2R-4". Rows: 9678/0 9757/1 9724/0 9771/0 9804/1 9727/0 9765/2 9780/0 9876/0 9764/2. IDs: the next free two-letter block after N2R-4's
 (fetch first; N2R-4 takes N2-IA..; take N2-JA.. and check). NOTES "## N2R-5 (10 Oct 2026, account 1, for LANE LEDGER-10)". hdl token: take/release.
+
+---
+
+# Wave 3 (last planned; written 10 Oct 2026 05:1x UTC by date -u; seven_day allowed_warning on every worker)
+By get_session: FIX-FM20 2.20, HTX-SWEEP 0.79 (44/53 flagged on bag-of-words -- too weak), FV-O9b 4.68 (O9-DA DD DF N1 D1 by step 0), MS18-R8 3.08 (E382-E391; 4 OR,
+6 not located: E383 E384 E385 E386 E387 E389), N2R-4 2.18 (N2-IA..IJ; 6 not located: IA IB IC ID IG IH), N2R-5 2.59 (N2-JA..JJ; 3 not located: JG JH JI).
+Lane ~24 of 60 incl. FV-MS18p 5.97 and the 0.57 lost on wave 1's missing checkout.
+
+**Step-0 ruling (orchestrator, 05:1x 10 Oct; replaces the wave-1 bar; answers N2R-5's flag and FV-O9b's FLAG).** These ledger telegrams are written mostly in plain
+words with code words for names, places and numbers, often with the plain words in their own order; the holder's public transcription of the ledger page
+therefore carries whatever was not enciphered. Precedent (D2V-E74, 8 Oct; AUD2-LEDGER-38, 10 Oct): when the holder transcription already gives the body in
+reading order, the plaintext is known (N1, key `period`, `text: known`), and depth counts only what the key adds. Measure, per entry, from disk:
+ (a) ordered overlap = longest common subsequence of content words (stop words dropped; one case; numbers as words; the reading's own expansions) between
+     the decoded body and the holder transcription of that entry's lines, / decoded content words;
+ (b) control = the same LCS against the transcription's words shuffled within the entry, 20 draws, p95;
+ (c) key-dependent words = decoded content words that are NOT in the transcription at all (code meanings, transposed-out words recovered), count and list.
+ Step-0 hit = (a) >= 0.5 AND (a) > (b). A hit is N1 for the body; if (c) names a person, place, unit or number the transcription does not give, the entry may
+ still carry a counted contribution ONLY for those words (state them; depth from them alone, normally D1). Plain words count as public (N2R-5: yes).
+ Paste (a), (b), (c) per entry. If the transcription for the entry's lines is absent on disk, say so -- never fetch more than the one page JSON.
+
+## STEP0-RULE (Opus 5.5, verifier, separate from every reader and first verifier of these entries; cap $5.5, box 90 min, disk only)
+Apply the ruling retroactively to the 53 entries of ms18/htx_sweep.tsv plus O9-DA DD DF (as a check of FV-O9b) and the six controls E74, E378, E381 (known N1
+by holder transcription; must hit) and three entries you choose that are route-transposed (word order scrambled in the cipher; must NOT hit by (a), state
+how you know they are transposed). Script it as ciphers/eckert-1864/ms18/step0_ordered.py writing ms18/step0_ordered.tsv. If any control misbehaves, stop:
+report the method as not separating, change no grade. Otherwise write AUDIT.md "## AUDIT (STEP0-RULE, third audit where one exists)" with a per-entry line
+(a/b/c, verdict "body known in holder transcription" yes/no, N-class proposed). For entries whose N3 rests on this account's first audit only (no AUDIT 2),
+set status.json to the proposed class with `text: known` where N1, and withdraw their SO rows / AUD2 WORK-QUEUE rows (rule 10 propagation). For entries
+already second-audited (account 4), change nothing in status.json: post one ROOM line listing them "for orchestrator (account-4) and the VERIFY lane: third-audit
+proposal". The 10 entries with no page JSON (57xx pointers) are listed, not fetched.
+
+## FV-N2e (Opus 5.5, first verifier; cap $6.5, box 100 min): N2-IA IB IC ID IG IH
+Exactly "## FV-N2a" of the ledger-n2 jobs file, with the Step-0 ruling above first (an entry that hits needs only the (c) check and a short line: ~0.5).
+WORK-QUEUE AUD2-LEDGER10-<next free n> for N3+ D2+ (account-4 tag).
+
+## FV-MS18q (Opus 5.5, first verifier; cap $6.5, box 100 min): E383 E384 E385 E386 E387 E389
+Exactly "## FV-MS18l" of the ledger9 jobs file, Step-0 ruling first. E385 is struck through and marked "Not sent" on the leaf: classify it as an unsent draft
+(say so in the safe sentence). AUD2 row as FV-N2e.
+
+## FV-N2f (Opus 5.5, first verifier; cap $3.5, box 70 min): N2-JG JH JI
+As FV-N2e; N2R-5 says hdl 10442 is Ingalls's reply to JG's 11.30 a.m. dispatch: read it first.
+
+## N2R-6 (Sonnet 5.5, reader; cap $2.8, box 100 min): the last 9 unread rows guessed Cipher No. 2
+Exactly "## N2R-4", with the Step-0 ruling of Wave 3 in place of the wave-1 step 0 (a hit: file nothing, say "body in holder transcription", list (c)).
+Rows: 9848/0 9811/0 9688/0 9729/1 9697/0 9850/2 9908/2 9798/1 9832/1. IDs: the next free block after N2-J* (fetch first). NOTES "## N2R-6 (10 Oct 2026, account 1,
+for LANE LEDGER-10)".
