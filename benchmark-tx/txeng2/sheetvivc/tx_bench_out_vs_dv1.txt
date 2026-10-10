@@ -1,0 +1,30 @@
+vivonne1573-f102r-dev2 [dev] as measured: err_true(0.75-indel align) 0.272 (335/1234) | standard SER (unit-cost Levenshtein) 0.271 (334/1234): S 267 D 19 I 48 | wrong 266 deleted 20 inserted 49 | excluded 614 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 266/1214 = 0.219 | coverage 1214/1234 = 0.984
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.146 (180/1234) | standard SER 0.145 (179/1234)
+paired passZ_tl.tsv vs passZ_dv1.tsv on vivonne1573-f102r-dev2 [as measured]: 36 lines; lines improved 12, worsened 10, tied 14; line sign test p = 0.8318; unit-cost edits base 337 -> output 334 over 1234 scored signs | beside, sign-level position McNemar: 1234 common scored signs; base wrong 299, output wrong 286; fixed 32, broken 19; exact p = 0.0919
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.128 (87/679) | standard SER (unit-cost Levenshtein) 0.127 (86/679): S 32 D 6 I 48 | wrong 32 deleted 6 inserted 49 | excluded 1169 | lines missing 0 (0 signs counted deleted) [555 flagged] | position errors 38/679 = 0.056 | insertions 49 / read 1841 = 0.027
+    reader abstentions 0 | accepted-token error 32/673 = 0.048 | coverage 673/679 = 0.991
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.127 (86/679) | standard SER 0.125 (85/679)
+paired passZ_tl.tsv vs passZ_dv1.tsv on vivonne1573-f102r-dev2 [flagged excluded (truth-verifier flags only)]: 36 lines; lines improved 12, worsened 11, tied 13; line sign test p = 1.0000; unit-cost edits base 80 -> output 86 over 679 scored signs | beside, sign-level position McNemar: 679 common scored signs; base wrong 43, output wrong 38; fixed 18, broken 13; exact p = 0.4731
+  top confusions (truth value <- read): s<-d x26, q<-{curl} x12, a<-S x9, r<-y x9, a<-m x7, u<-m x7, e<-2 x7, c<-<deleted> x6
+split dev: err_true(0.75-indel align) 0.271 (335/1234) | standard SER 0.271 (334/1234)
+vivonne1573-f102r-dev2 [dev] as measured: err_true(0.75-indel align) 0.262 (323/1234) | standard SER (unit-cost Levenshtein) 0.261 (322/1234): S 269 D 19 I 34 | wrong 267 deleted 20 inserted 36 | excluded 614 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 267/1214 = 0.220 | coverage 1214/1234 = 0.984
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.133 (164/1234) | standard SER 0.132 (163/1234)
+paired passA_tl.tsv vs passZ_dv1.tsv on vivonne1573-f102r-dev2 [as measured]: 36 lines; lines improved 16, worsened 10, tied 10; line sign test p = 0.3269; unit-cost edits base 337 -> output 322 over 1234 scored signs | beside, sign-level position McNemar: 1234 common scored signs; base wrong 299, output wrong 287; fixed 32, broken 20; exact p = 0.1263
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.107 (73/679) | standard SER (unit-cost Levenshtein) 0.106 (72/679): S 32 D 6 I 34 | wrong 31 deleted 6 inserted 36 | excluded 1169 | lines missing 0 (0 signs counted deleted) [555 flagged] | position errors 37/679 = 0.054 | insertions 36 / read 1830 = 0.020
+    reader abstentions 0 | accepted-token error 31/673 = 0.046 | coverage 673/679 = 0.991
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.106 (72/679) | standard SER 0.105 (71/679)
+paired passA_tl.tsv vs passZ_dv1.tsv on vivonne1573-f102r-dev2 [flagged excluded (truth-verifier flags only)]: 36 lines; lines improved 13, worsened 10, tied 13; line sign test p = 0.6776; unit-cost edits base 80 -> output 72 over 679 scored signs | beside, sign-level position McNemar: 679 common scored signs; base wrong 43, output wrong 37; fixed 19, broken 13; exact p = 0.3771
+  top confusions (truth value <- read): s<-d x27, q<-{curl} x12, a<-S x11, e<-2 x9, r<-y x9, a<-m x7, u<-m x7, a<-d x5
+split dev: err_true(0.75-indel align) 0.262 (323/1234) | standard SER 0.261 (322/1234)
+vivonne1573-f102r-dev2 [dev] as measured: err_true(0.75-indel align) 0.276 (340/1234) | standard SER (unit-cost Levenshtein) 0.274 (338/1234): S 266 D 27 I 45 | wrong 263 deleted 29 inserted 48 | excluded 614 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 263/1205 = 0.218 | coverage 1205/1234 = 0.977
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.152 (188/1234) | standard SER 0.151 (186/1234)
+paired passB_tl.tsv vs passZ_dv1.tsv on vivonne1573-f102r-dev2 [as measured]: 36 lines; lines improved 12, worsened 10, tied 14; line sign test p = 0.8318; unit-cost edits base 337 -> output 338 over 1234 scored signs | beside, sign-level position McNemar: 1234 common scored signs; base wrong 299, output wrong 292; fixed 24, broken 17; exact p = 0.3489
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.134 (91/679) | standard SER (unit-cost Levenshtein) 0.130 (88/679): S 36 D 7 I 45 | wrong 36 deleted 7 inserted 48 | excluded 1169 | lines missing 0 (0 signs counted deleted) [555 flagged] | position errors 43/679 = 0.063 | insertions 48 / read 1833 = 0.026
+    reader abstentions 0 | accepted-token error 36/672 = 0.054 | coverage 672/679 = 0.990
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.131 (89/679) | standard SER 0.127 (86/679)
+paired passB_tl.tsv vs passZ_dv1.tsv on vivonne1573-f102r-dev2 [flagged excluded (truth-verifier flags only)]: 36 lines; lines improved 12, worsened 10, tied 14; line sign test p = 0.8318; unit-cost edits base 80 -> output 88 over 679 scored signs | beside, sign-level position McNemar: 679 common scored signs; base wrong 43, output wrong 43; fixed 12, broken 12; exact p = 1.0000
+  top confusions (truth value <- read): s<-d x26, q<-{curl} x10, a<-S x9, r<-y x9, c<-<deleted> x8, a<-m x7, u<-m x7, a<-<deleted> x6
+split dev: err_true(0.75-indel align) 0.276 (340/1234) | standard SER 0.274 (338/1234)
