@@ -1,0 +1,94 @@
+entries 124 vols ['officialrecords15unkngoog', 'officialrecordso0022unse']
+4960 *01 Feb*  Washington Feby 1 18 45 {'officialrecords15unkngoog': 2, 'officialrecordso0022unse': 2} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4960 *02 Feb*  Feby 2 ' 62 Genl Lan 97 {'officialrecords15unkngoog': 2, 'officialrecordso0022unse': 2} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4960 *02 Feb*  Feb 2 ' 62 Genl Land 32 {'officialrecords15unkngoog': 4, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4961 *02 Feb*  Feb 2 ' 62 [Rosecran 40 {'officialrecords15unkngoog': 3, 'officialrecordso0022unse': 2} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4961 *02 Feb*  Feb 2 ' 62 Brig Genl 77 {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4962 *05 Feb*  Feb 5 ' 62 Genl Land 136 {'officialrecords15unkngoog': 4, 'officialrecordso0022unse': 3} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4969 *07 Feb*  Sent Feby 7th 1862 A 60 {'officialrecords15unkngoog': 3, 'officialrecordso0022unse': 3} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4969 *07 Feb*  Sent Feby 7th 1862 . 41 {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4969 *07 Feb*  Sent Feby 7th 1862 P 56 {'officialrecords15unkngoog': 3, 'officialrecordso0022unse': 3} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4972 *08 Feb*  Genl JA Dix Feb 8 '  87 {'officialrecords15unkngoog': 3, 'officialrecordso0022unse': 3} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4972 *08 Feb*  Feb 8 ' 62 [Buell] I 39 {'officialrecords15unkngoog': 2, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4973 *08 Feb*  10 PM. Feb 8 ' 62 .  57 {'officialrecords15unkngoog': 3, 'officialrecordso0022unse': 2} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4973 *08 Feb*  Feb 8 ' 62 [Halleck] 31 {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4973 *08 Feb*  Feb 8 ' 62 Genl Land 87 {'officialrecords15unkngoog': 2, 'officialrecordso0022unse': 4} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4975 *09 Feb*  Major Gen John A Dix 69 {'officialrecords15unkngoog': 5, 'officialrecordso0022unse': 4} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4975 *09 Feb*  Brig Genl Buell Feby 45 {'officialrecords15unkngoog': 11, 'officialrecordso0022unse': 11} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4976 *10 Feb*  Feb 10 ' 62 For [Hun 110 {'officialrecords15unkngoog': 7, 'officialrecordso0022unse': 4} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4978 *12 Feb*  Sent Feby 12th 1862  90 {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4979 *12 Feb*  6 PM Feb 12 ' 62 [Ha 34 {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4979 *13 Feb*  Feb 13 62 To - Gen J 89 {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 4} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4982 *14 Feb*  Feb 14 ' 62 2 PM [Ha 53 {'officialrecords15unkngoog': 4, 'officialrecordso0022unse': 6} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4982 *14 Feb*  Feb 14 ' 62 For [Lan 45 {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 0} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4982 *14 Feb*  Feb 14 ' 62. 11 PM [ 51 {'officialrecords15unkngoog': 3, 'officialrecordso0022unse': 3} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4983 *14 Feb*  Feb 14 . 62 For Humb 99 {'officialrecords15unkngoog': 6, 'officialrecordso0022unse': 9} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4984 *15 Feb*  Feb 15 " 62 [Halleck 32 {'officialrecords15unkngoog': 2, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4984 *02 Mar*  March 2d 1862 For [R 45 {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4985 *15 Feb*  Gen J Hooker Feb 15  172 {'officialrecords15unkngoog': 8, 'officialrecordso0022unse': 10} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4992 *16 Feb*  Feb 16 " 62 <deletio 57 {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4992 *16 Feb*  F. Swain Cairo Feb 1 35 {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 11} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4992 *16 Feb*  Feb 16 " 62 For [Bue 45 {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 0} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4995 *07 Feb*  Feb 7 ' 62 [Buell] T 53 {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4995 *17 Feb*  February 17th 1862 [ 141 {'officialrecords15unkngoog': 6, 'officialrecordso0022unse': 6} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4996 *18 Feb*  Gen J Hooker Feb 18  107 {'officialrecords15unkngoog': 3, 'officialrecordso0022unse': 3} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4997 *18 Feb*  For Gen Wool, [Buell 68 {'officialrecords15unkngoog': 3, 'officialrecordso0022unse': 3} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4997 *18 Feb*  Feb 18 ' 62 Please f 69 {'officialrecords15unkngoog': 3, 'officialrecordso0022unse': 3} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4998 *18 Feb*  Feby 18th 1862. For  47 {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4998 *18 Feb*  Feb 18 ' 1862 Gen Jo 41 {'officialrecords15unkngoog': 3, 'officialrecordso0022unse': 0} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4998 *18 Feb*  Maj Gen JA Dix - Bal 35 {'officialrecords15unkngoog': 2, 'officialrecordso0022unse': 2} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4999 *19 Feb*  Feb 19 " 62 [Thomas  86 {'officialrecords15unkngoog': 3, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5000 *19 Feb*  Feb 19 ' 62 For [Lan 104 {'officialrecords15unkngoog': 2, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5000 *19 Feb*  For A G McKelvey car 62 {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5002 *19 Feb*  Major RM Copeland AA 41 {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 6} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5005 *20 Feb*  Feb 20th 62 For [Lan 117 {'officialrecords15unkngoog': 2, 'officialrecordso0022unse': 3} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5005 *20 Feb*  Fby 20th 1862 [Halle 46 {'officialrecords15unkngoog': 2, 'officialrecordso0022unse': 4} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5008 *21 Feb*  Feb 21 ' 62 Gen Hein 65 {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 2} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5009 *21 Feb*  General Sedgwick Feb 100 {'officialrecords15unkngoog': 10, 'officialrecordso0022unse': 7} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5013 *21 Feb*  Capt JC Dunne Feby 2 42 {'officialrecords15unkngoog': 2, 'officialrecordso0022unse': 0} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5014 *23 Feb*  Gen JA Dix Feb 23 '  122 {'officialrecords15unkngoog': 14, 'officialrecordso0022unse': 7} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5015 *23 Feb*  Feb 23 " 62 For [Lan 194 {'officialrecords15unkngoog': 8, 'officialrecordso0022unse': 9} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5016 *23 Feb*  for your command you 31 {'officialrecords15unkngoog': 4, 'officialrecordso0022unse': 2} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5016 *23 Feb*  Sent Feby 23d 1862 W 98 {'officialrecords15unkngoog': 5, 'officialrecordso0022unse': 5} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5017 *23 Feb*  Brig Genl Hooker . F 102 {'officialrecords15unkngoog': 5, 'officialrecordso0022unse': 5} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5018 *23 Feb*  Genl J Hooker Feb 23 103 {'officialrecords15unkngoog': 2, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5021 *24 Feb*  Genl Sedgwick - Pool 60 {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5021 *25 Feb*  Feb 25th 62 [Lander] 94 {'officialrecords15unkngoog': 5, 'officialrecordso0022unse': 3} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5022 *25 Feb*  Genl NP Banks Februa 71 {'officialrecords15unkngoog': 2, 'officialrecordso0022unse': 3} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5022 *25 Feb*  Feb 25 ' 62 For Gen  43 {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5024 *25 Feb*  Feb 25 " 62 For [Lan 38 {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 0} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5024 *25 Feb*  Feb 25 " 62 For [Lan 74 {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 0} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5025 *25 Feb*  Gen NP Banks Feb 25t 80 {'officialrecords15unkngoog': 4, 'officialrecordso0022unse': 2} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5025 *25 Feb*  Gen Hooker Feb 25 "  63 {'officialrecords15unkngoog': 6, 'officialrecordso0022unse': 3} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5028 *27 Feb*  Feb 27th 62 Gen Mccl 124 {'officialrecords15unkngoog': 3, 'officialrecordso0022unse': 3} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5028 *27 Feb*  Sent Feby 27th 1862  59 {'officialrecords15unkngoog': 2, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5029 *27 Feb*  Col Colburn Sandy Ho 202 {'officialrecords15unkngoog': 7, 'officialrecordso0022unse': 4} shuf {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 1}
+5030 *27 Feb*  method is adopted it 67 {'officialrecords15unkngoog': 3, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5030 *27 Feb*  5 P. M Washington Fe 21 {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5030 *27 Feb*  For Genl Hooker Camp 28 {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 2} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5031 *27 Feb*  Feby 27th 62. For R  63 {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 2} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5031 *28 Feb*  sent Feb 28 Genl McC 28 {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 0} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5031 *28 Feb*  Feb 28 '62 62 [McCle 38 {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 2} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5032 *01 Mar*  Mar 1 62 [Lander] Yo 87 {'officialrecords15unkngoog': 3, 'officialrecordso0022unse': 0} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5035 *03 Mar*  March 3 ' 62 For [Ro 173 {'officialrecords15unkngoog': 3, 'officialrecordso0022unse': 3} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5036 *03 Mar*  Maj Gen NP Banks Mar 46 {'officialrecords15unkngoog': 2, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5038 *04 Mar*  Genl. Heintzleman Ma 145 {'officialrecords15unkngoog': 7, 'officialrecordso0022unse': 7} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 1}
+5039 *05 Mar*  March 5 62 For Capt  37 {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5041 *07 Mar*  Maj Gen Dix Baltimor 90 {'officialrecords15unkngoog': 6, 'officialrecordso0022unse': 6} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5043 *09 Mar*  Genl Dix Baltimore M 95 {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 3} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5044 *09 Mar*  Genl J Hooker March  103 {'officialrecords15unkngoog': 3, 'officialrecordso0022unse': 2} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5045 *09 Mar*  Halls Hill 9th Capt  78 {'officialrecords15unkngoog': 4, 'officialrecordso0022unse': 2} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5045 *09 Mar*  Genl JE Wool Ft Monr 39 {'officialrecords15unkngoog': 2, 'officialrecordso0022unse': 2} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5048 *09 Mar*  Mch 13 62 For [McCle 140 {'officialrecords15unkngoog': 5, 'officialrecordso0022unse': 3} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5051 *16 Mar*  March 16th 1862. 2-1 44 {'officialrecords15unkngoog': 6, 'officialrecordso0022unse': 5} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5051 *16 Mar*  March 16th 1862 - 2- 46 {'officialrecords15unkngoog': 6, 'officialrecordso0022unse': 5} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5051 *16 Mar*  Maj Gen John A Dix M 30 {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 0} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5054 *21 Mar*  March 21 ' 62 Gen J  62 {'officialrecords15unkngoog': 2, 'officialrecordso0022unse': 2} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5054 *22 Mar*  March 22nd 1862 Head 50 {'officialrecords15unkngoog': 2, 'officialrecordso0022unse': 2} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5056 *22 Mar*  LC Weir Washington M 118 {'officialrecords15unkngoog': 6, 'officialrecordso0022unse': 4} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5056 *27 Mar*  F. Stuart , Seminary 66 {'officialrecords15unkngoog': 4, 'officialrecordso0022unse': 4} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5102 *05 Jul*  Jul 5th 62 For Thurl 63 {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5102 *05 Jul*  Jul 5th 62 For Senio 75 {'officialrecords15unkngoog': 5, 'officialrecordso0022unse': 6} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5103 *06 Jul*  Jul 6 " 62 For [McCl 192 {'officialrecords15unkngoog': 8, 'officialrecordso0022unse': 9} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5104 *13 Jul*  July 13 " 62 For Gen 77 {'officialrecords15unkngoog': 1, 'officialrecordso0022unse': 0} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5104 *13 Jul*  July 13 " 62 For Gen 32 {'officialrecords15unkngoog': 2, 'officialrecordso0022unse': 1} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}

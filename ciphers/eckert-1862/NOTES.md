@@ -2514,3 +2514,42 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%); this job ad
 - [ ] image-check: OR 52 pt 1 page image for Camden; next: IA reader by a person or the Hathi copy, ~USD 0.5
 - [x] retry: residue_decode.py --check rerun clean, current; stale cause explained
 Verdict: keep going: 2 internal gaps; cheapest next: check the Camden second occurrence in the ledger text, ~USD 0.5
+
+## E62-CAM (10 Oct 2026, account 1, for LANE LEDGER-11)
+Worker E62-CAM, 05:48-05:5x UTC by date -u, cap USD 2. Status unchanged (partial). Rule 10: found / not found only, no novelty class. Prior-work lines (by hand;
+tools/prior_work.py cannot run on this folder, no items.tsv row, as E62-STALE/E62-CHECK2): own work = E62-STALE and E62-CHECK2 sections above; ROOM claims on eckert-1862: none live.
+Intake gate: `eckert-1862: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. No key.md edit; residue_decode.py not rerun (nothing regenerated).
+(1) Camden, from print/residue/readings.md (the 58-page decode on disk; no hdl request). Camden -> Thomas occurs once in 13-15 Feb: page 4982, 14 Feb 11 PM, McClellan to Buell
+("Where is [Thomas] & where Carter", the E62-CHECK2 print witness). The 13 and 15 Feb entries (pages 4979, 4983-4985) contain no Camden. The only other Camden token in the decode
+is page 4998, 18 Feb, an arrest order ("For William Rabe W S Marshall <deletion>Nugget</deletion> <insertion>Camden</insertion> a man named Harold and Lady Secure ...", signed L Thomas,
+Adjt Genl): a volunteer-marked insertion over a struck word, not decoded by the dated rule; "Thomas" in that sentence would not read (Thomas would be the object of "For"), so it is
+a second Camden token with no value: not a second Thomas witness. Not found: a second Camden=Thomas occurrence 13-15 Feb. Camden stays one occurrence, M; unchanged.
+(2) Merlin, same source. Merlin tokens in the decoded pages: 7 Feb (page 4969, "operations in M[Merlin] [Virginia]" read Virginia, matches key.md OR 7 p.584) and 25 Feb (page 5021,
+Lander, "on the [Virginia] side", the Maryland witness OR 51 pt 1 p.537). The ledger Merlin tokens are rendered with the key value in readings.md, so a grep for the word
+finds only the raw ciphertext.txt line 14 ("western Merlin"); by value, [Virginia] occurs on 7 Feb and 25 Feb only, [Maryland] never. No third Merlin line in Feb-Jul pages in the decode.
+Not found: a Merlin line that splits Maryland from Virginia by line or date beyond the 25 Feb entry already logged (HYPOTHESES.md). Not resolved; key.md unchanged.
+(3) ORN Ser. I vols. 22 and 23, archive.org `_djvu.txt` (IA ids officialrecordso0022unse, 2.85 MB, and officialrecords15unkngoog, "ser.1:v.23", 2.39 MB). All 124 residue entries against both
+by shared word runs, entry word-shuffled as control (seed 1862): print/residue_print/orn/ngram_orn.py (4-grams: almost every entry hits both volumes, formula phrases such as "the Secretary of
+War", shuffled 0-1; not a discriminating gate) and longest_run.py (longest shared run, flag >= 7 words; results in longest_run_results.txt). Longest runs: only 5 entries reach 7+ words
+(4975 9 Feb Buell 7/7, 4983 14 Feb Humbolt 5/7 "to the gallant officers and men under", 4995 17 Feb 7/5, 5014 23 Feb Dix 7/5, 4992 16 Feb Swain-Foote 0/9 "with what force do you return i send nearly");
+shuffled 0 everywhere. Found: the 16 Feb McClellan-to-Foote entry (no M token; the one CHECK2 already placed in OR 52 pt 1) also in ORN vol. 22 (9-word run). Not found: the 14 Feb 2 PM
+Halleck entry (Myrtle, Mary; page 4982) as a whole (longest run 5, "as soon as possible the"), the 16 and 19 Feb Scott entries (Ingress), the 14 Feb Humbolt entry as a whole (7-word run is a
+formula sentence of thanks), in ORN vols. 22-23. The page images of ORN not read. OR ser. I vol. 7's Halleck-McClellan pages: not re-searched (GAPS113 already ran vols. 7, 9-12 with or_match.py).
+Requests: archive.org 3 (advancedsearch 1, `_djvu.txt` 2), hdl.huntington.org 0. Subagents: 0.
+
+## Remaining gaps (E62-CAM, 10 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%); this job adds no reading.
+- Myrtle, Mary, Ingress, Humboldt single-day rows - blocker: no-key-material; vols. 5, 52 pt 1 and ORN 22-23 give no witness; next: ORN vol. 21 and 24 (Gulf/Atlantic, probably out of subject), Halleck Papers or the Friedman copy of Cipher No. 4 via the owner's desk runner, ~USD 1
+- Camden = Thomas on 14 Feb (OR 52 pt 1 p. 209 header) - blocker: open-codes; no second Camden 13-15 Feb in the decode; 18 Feb Camden is an undecoded insertion token; next: image check of 4998 Camden insertion (does the key range 16-21 Feb value Thomas fit "For William Rabe ... Camden"?), ~USD 0.4
+- Merlin = Maryland vs Virginia - blocker: open-codes; two Merlin tokens only (7 and 25 Feb), no third to split; next: Merlin occurrences in the June pages by value (5079, 5083) already logged; none new
+- object 9660, 8472 and 6254 entries - blocker: no-key-material; as E62-9660
+
+## Escalation (E62-CAM)
+- [x] siblings: no new sibling
+- [x] clear-pages: none
+- [ ] known-keys: Cipher No. 4 copy in the Friedman Collection; next: owner's desk runner, ~USD 1
+- [x] print: ORN vols. 22-23 run (found: Foote 16 Feb only); OR vol. 7 done in GAPS113
+- [n/a] key-rebuild: nothing added, key.md unchanged
+- [ ] image-check: 4998 Camden insertion, ~USD 0.4
+- [n/a] retry: nothing failed to rerun
+Verdict: keep going: 2 internal gaps; cheapest next: image check of the 4998 Camden insertion, ~USD 0.4

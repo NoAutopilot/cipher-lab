@@ -1,0 +1,5 @@
+4975 *09 Feb*  Brig Genl Buell Fe 45 {'officialrecords15unkngoog': 7, 'officialrecordso0022unse': 7} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4983 *14 Feb*  Feb 14 . 62 For Hu 99 {'officialrecords15unkngoog': 5, 'officialrecordso0022unse': 7} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4992 *16 Feb*  F. Swain Cairo Feb 35 {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 9} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+4995 *17 Feb*  February 17th 1862 141 {'officialrecords15unkngoog': 7, 'officialrecordso0022unse': 5} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
+5014 *23 Feb*  Gen JA Dix Feb 23  122 {'officialrecords15unkngoog': 7, 'officialrecordso0022unse': 5} shuf {'officialrecords15unkngoog': 0, 'officialrecordso0022unse': 0}
