@@ -1,0 +1,2 @@
+statistic	real	shuffle_mean	shuffle_p95	shuffle_max	above_p95	corpus_letters
+mean_log10_4gram	-1.0069	-1.5572	-1.4313	-1.3519	True	2342130
