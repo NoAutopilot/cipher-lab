@@ -1,0 +1,17 @@
+{
+ "passage_letters": 498,
+ "segments": [
+  {
+   "k": 0,
+   "letters": 498,
+   "ratio": 0.6707,
+   "offset": 2697,
+   "end": 3195,
+   "null_max": 0.3153,
+   "null_p95": 0.2791,
+   "margin_vs_max": 0.3554,
+   "null_n": 200,
+   "head": "quantalapaixquetonditquilzueul"
+  }
+ ]
+}
