@@ -2735,5 +2735,17 @@ Geo D Sheldon Ft Monroe please ascertain immed'y if [Maj Gen B. F. Butler] has [
 
 Code-word tokens: H 4.
 
-Totals over the 434 entries: H 7420, C 113, I 39, M 67, S 21, U 10.
+**E622 | Page 72 | 5616 | mssEC 25 (obj 5952, pointer 5616; the head of the telegram is on pointer 5615 and is NOT read here), 20 Apr 1864 (date placed from the page 5614 and 5616/1 headers), Washington to Ft Monroe, signed T. T. Eckert (446 pd): a list of steamers and tows by name with times, 'total propellers 2200 & 40 tons 2800 men', '50 canal barges average capacity 150 men', '8 steam tugs', 'send steamers to Chesapeake City to meet and escort the tows down the Bay' (FM-UND; row 5616/0; tail of a longer telegram; transcription only, page image not eye-checked)**
+
+{time: 10 PM} [Adjt Genl. U.S.] [,] May flower a sea steamer [,] leader [,] [Ram] [,] Cahill [,] New York [,] Briarly [,] May Flower [,] Beverly [,] {time: 9 AM} [.] total propellers [2200] & [40] tons [2800] [Men] [.] , [50] canal barges average capacity [150] [Men] [.] [8] steam tugs [,] Hutchins Delany Palmer Tempest Ajax {time: 6.30 PM} Freeman Vatterland & [Atlanta] [.] send steamers to cheese a peak city to meet & Escort the tows down the Bay  {tail: [signed] meigs [Qr Master Genl U.S.] translate [,] & every time 446 pd TT Eckert}
+
+Code-word tokens: H 37.
+
+**E623 | Page 112 | 5656 | mssEC 25 (obj 5952, pointer 5656), 5 May 1864 Ft Monroe, Sheldon (to Baltimore, addressee 'season' as in E310, not decoded, M): W. W. Shore is in Baltimore somewhere, was some time ago ordered out of the Department; he is to be caught, arrested and sent to Butler under guard; the evidence is in hand; he is the correspondent of the World from Baltimore as he was from here; the General telegraphed three days ago to arrest him and nothing has been heard since; if necessary a man who knows him can be sent (John I. Davenport, Lieut., Bureau of Information, as read, M) (FM-UND; row 5656/0 first telegram; transcription only, page image not eye-checked)**
+
+[Monroe] May fifth {time: 12.30} for season [Baltimore] [.] W. W. Shore is in [Baltimore] somewhere he was some time ago ordered out of this Dept. [.] I want him caught and [Arrest (-ed, -ing)]ed and sent to me under guard [.] Have the evidence against him [.] he is the Corresp't of the [Valley] from Balto as he was from here [.] the General [Telegraph (-ed, -ing)]d you three days ago to arrest him Since which we have heard nothing [.] I presume you did not get the dispatch [.] can send you if necessary a man who knows him  {tail: [signed] [Maj Genl U.S. Grant] I Davenport Lieut office bureau of [Information] very warm here today Yours Geo. D. Sheldon}
+
+Code-word tokens: H 17.
+
+Totals over the 436 entries: H 7474, C 113, I 39, M 67, S 21, U 10.
 <!-- decode.py: derived block ends -->

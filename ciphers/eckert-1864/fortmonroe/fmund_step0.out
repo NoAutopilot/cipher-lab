@@ -1,0 +1,23 @@
+entry	row	key	window	a	lcs/n	b_p95	hit	c	c_key_meanings
+U1	5568/0	no1	0	0.944	17/18	0.389	HIT	1	rapidan
+U1	5568/0	no1shuf7	0	0.944	17/18	0.389	HIT	1	pontoon
+U2	5575/0	no1	0	0.800	8/10	0.500	HIT	2	rapidan skirmish
+U2	5575/0	no1shuf7	0	0.800	8/10	0.500	HIT	2	bragg pontoon
+U3	5616/0	no1	0	0.655	36/55	0.218	HIT	15	adjutant atlanta eight fifty general men ram thousand two
+U3	5616/0	no1shuf7	0	0.643	36/56	0.214	HIT	16	eight etowah fifty general major ohio ord thousand two weldon
+U4	5656/0	no1	0+1	0.361	69/191	0.105	-	90	advance army baltimore capture cavalry city corps eighteen eleven gillmore grant gunboat jasper monroe point rebel regiment river signed smith suffolk surprise telegraph ten troops valley washington west white williamsburg yorktown
+U4	5656/0	no1shuf7	0+1	0.340	69/203	0.094	-	97	burnside capture chattahoochee city cleve colonel defeat delaware eighteen eleven elizabeth fortifications fortify front gordon gordonsville granger gunboat help huntsville information itercept jno junction lebanon logan natchez orange pickets porter post retreat sheriden sherman sic signed tallahatchie telegraph ten van washburne winchester
+U5	5658/0	no1	0	0.667	60/90	0.167	HIT	27	butler department enemy fight fought general grant ing major nineteen president report seven six telegraph troops two wounded
+U5	5658/0	no1shuf7	0	0.645	60/93	0.161	HIT	31	abandon baltimore brigadier camp demoralize diversion division general geo goldsboro hiawassie huntsville lockwood major movement nineteen palmer prss roanoke seven six thomas two west winchester written
+U6	5689/0	no1	0	0.612	85/139	0.137	HIT	54	brigade butler colonel corps defense effect engineer force general grant james lee major men navy position post potomac rebel report roddy secretary smith ten thousand tomorrow transportation troops twenty valley
+U6	5689/0	no1shuf7	0	0.634	85/134	0.142	HIT	47	alexandria attack brigade camp cleve cleveland corinth danger diversion division ford gap general goldsboro help hill impregnable junction kingsport lines lynchburg major ohio pearl post report retreat schofield scouts shelbyville staff telegraph ten thomas thousand twenty unserviceable valley van washington
+U7	5759/0	no1	0	0.333	16/48	0.146	-	31	army breckenridge cavalry charlottesville city command corps division elizabeth follow four gordonsville jones lynchburg nine point rail rebel reinforce report richmond road thousand troops two valley way
+U7	5759/0	no1shuf7	0+1	0.279	17/61	0.131	-	40	advance alabama baltimore brigadier delaware donelson effective favorable foster front general grant gun heavy huntsville jefferson lebanon lockwood nine orange petersburg prss retreat sherman smith suffolk talladega thousand track two west written
+U8	5842/0	no1	0	0.643	9/14	0.429	HIT	5	defeat fort ten twelve wounded
+U8	5842/0	no1shuf7	0	0.529	9/17	0.353	HIT	8	galveston goldsboro pearl roanoke secretary state ten twelve
+U9	5902/0	no1	0	0.467	14/30	0.200	-	16	advance confederate front general hood major reinforcements river schofield sherman troops
+U9	5902/0	no1shuf7	0	0.583	14/24	0.250	HIT	10	effective florida general gillmore loudon mile offensive tombigbee trenton
+U10	5914/0	no1	0	0.750	21/28	0.286	HIT	7	brigade defense four general transportation troops washington
+U10	5914/0	no1shuf7	0	0.724	21/29	0.276	HIT	8	atlanta four general impregnable junction longstreet movement palmer
+U11	5951/0	no1	0	1.000	18/18	0.500	HIT	0	
+U11	5951/0	no1shuf7	0	1.000	18/18	0.500	HIT	0	
