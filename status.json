@@ -14164,9 +14164,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L15d)'"
+        "AUDIT.md '## AUDIT (FV-L15d)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER15-4)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-L15d verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -14174,7 +14175,7 @@
       "date": "10 Oct 2026",
       "kind": "reading",
       "claim_scope": "completed-reading",
-      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L15d)' section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER15-4)' section 4",
       "reading_version": "FM65 readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L15d) s.3 (fixes pending in s.5)",
       "unresolved_spans": "none",
       "depth_unread": {
@@ -14182,12 +14183,12 @@
         "other": "0"
       },
       "depth_pct": 100.0,
-      "grade": "N3",
-      "plaintext_novelty": "N3",
-      "mapping_novelty": "N3",
+      "grade": "N2",
+      "plaintext_novelty": "N2",
+      "mapping_novelty": "N2",
       "title": "Eckert 1864 (Fort Monroe ledger): Hd. Qrs. Army of the James to Sheldon, Fort Monroe, for Captain Lynch, ordnance ship St. Lawrence, 23 Jan 1865: Commander Wm. A. Parker asks for the 900-pound torpedoes with insulating wire by the Phlox (E539)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 23 Jan 1865, from Army of the James headquarters, Commander Wm. A. Parker, commanding the Fifth Division, asked Captain Lynch on the ordnance ship St. Lawrence near Norfolk, through Sheldon at Fort Monroe, to send immediately by the Phlox the large 900-pound torpedoes with insulating wire, for which he had immediate use; not located in the Official Records ser. I vols. 46-47, ORN ser. I vols. 11-12, Butler's correspondence vol. V, Grant Papers vols. 13-14 by Google Books snippet, or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L15d), weak: the substance is in the holder clear text of Lynch's forward (8538), a different telegram; not N4: Grant Papers vols. 13-14 by Google Books snippets only, NARA RG 45/74 unread",
+      "line": "Read at grade H with War Department Cipher No. 1: Commander Wm. A. Parker's telegram of 23 Jan 1865 to Captain Lynch on the ordnance ship St. Lawrence, asking for the 900-pound torpedoes with insulating wire by the Phlox; its substance is in clear in the Huntington's own Washington book (pointer 8538, Lynch's relay to the Bureau of Ordnance of 24 Jan), and Lynch's answer is printed in ORN ser. I vol. 11 p.634; Parker's own wording and this cipher copy were not found in print (searched 10 Oct 2026).",
+      "gap": "N2: second audit AUD2-LEDGER15-4 (10 Oct 2026) lowered N3 -> N2: substance in clear in the Huntington's public transcription of pointer 8538 (Lynch's relay to Wise, 24 Jan 1865: 900-pound torpedoes with insulating wire required by Comdr Parker, 5th Division, for immediate use); Lynch's answer printed ORN I/11 p.634; Parker's own wording not located",
       "depth": "D3",
       "completeness": "13 H of 13 code-word groups (\"saint\" plain: St. Lawrence; \"William\" plain: Wm. A. Parker)",
       "phrases": [
@@ -14199,15 +14200,17 @@
       ],
       "depth_sentence": "On 23 Jan 1865, from Army of the James headquarters, Commander Wm. A. Parker, commanding the Fifth Division, asked Captain Lynch on the ordnance ship St. Lawrence near Norfolk, through Sheldon at Fort Monroe, to send immediately by the Phlox the large 900-pound torpedoes with insulating wire, for which he had immediate use.",
       "depth_check": "code: Pony Prolong = 900, Polkaer = Commander, Farmer = Norfolk read passim; external (non-statistical): holder 8538 (Washington clear book p.60), Lynch to Wise 24 Jan 1865, '12 torpedoes of nine hundred pounds each with insulating wire are required by Comdr Parker Comdg 5th Divn James river for immediate use'; ORN I/11 p.634 Lynch to Parker 24 Jan, 'Comdg. Fifth Division'",
-      "depth_note": "13 H of 13 code-word groups (\"saint\" plain: St. Lawrence; \"William\" plain: Wm. A. Parker)"
+      "depth_note": "13 H of 13 code-word groups (\"saint\" plain: St. Lawrence; \"William\" plain: Wm. A. Parker)",
+      "text": "known"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L15d)'"
+        "AUDIT.md '## AUDIT (FV-L15d)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER15-4)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-L15d verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -14228,7 +14231,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Fort Monroe (Sheldon) to S. H. Beckwith, City Point, for Brig. Gen. Ingalls, 12 Jan 1865: no forage vessels; the Ariel and General Sedgwick arrived from Baltimore with troops (E528)",
       "line": "Read at grade H with War Department Cipher No. 1: on 12 Jan 1865 Fort Monroe told Brig. Gen. Ingalls at City Point that no forage vessels had come since Captain James telegraphed that day, that the Ariel and the General Sedgwick had arrived from Baltimore with troops, and that it did not know what others were coming or why they were delayed; not located in the Official Records ser. I vols. 46-47, ORN ser. I vols. 11-12, Butler's correspondence vol. V, Grant Papers vols. 13-14 by Google Books snippet, or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L15d); not N4: Grant Papers vols. 13-14 by Google Books snippets only, NARA RG 92/107 unread, OR I/46 pt 2 read in OCR",
+      "gap": "N3 two audits (FV-L15d, AUD2-LEDGER15-4: kept); not N4: Grant Papers vols. 13-14 by Google Books snippets only, NARA RG 92/107 unread, OR I/46 pt 2 read in OCR",
       "depth": "D3",
       "completeness": "14 H + 1 M of 15 code-word groups (Webster: signature mark or Col. R. C. Webster, M)",
       "phrases": [
@@ -14246,9 +14249,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L15d)'"
+        "AUDIT.md '## AUDIT (FV-L15d)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER15-4)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-L15d verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -14269,7 +14273,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Fort Monroe to Col. R. M. Newport, chief quartermaster, Baltimore, 3 Jan 1865: no anchor and chain in time, so the Baltic will not go on the expedition (E500)",
       "line": "Read at grade H with War Department Cipher No. 1: on 3 Jan 1865 Capt. William L. James at Fort Monroe told Colonel Newport, chief quartermaster at Baltimore, that as he could not furnish an anchor and chain in time, the steamer Baltic would not be sent on the expedition and Newport need not send to New York for them; not located in the Official Records ser. I vols. 46-47, ORN ser. I vols. 11-12, Butler's correspondence vol. V, Grant Papers vols. 13-14 by Google Books snippet, or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L15d); not N4: Grant Papers vols. 13-14 by Google Books snippets only, NARA RG 92/107 unread, OR I/46 pt 2 read in OCR",
+      "gap": "N3 two audits (FV-L15d, AUD2-LEDGER15-4: kept); not N4: Grant Papers vols. 13-14 by Google Books snippets only, NARA RG 92/107 unread, OR I/46 pt 2 read in OCR",
       "depth": "D3",
       "completeness": "11 H of 11 code-word groups (\"Sampson\", \"anchor\", \"Baltic\", \"William\" plain)",
       "phrases": [
@@ -14287,9 +14291,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L15d)'"
+        "AUDIT.md '## AUDIT (FV-L15d)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER15-4)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-L15d verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -14310,7 +14315,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Fort Monroe to J. W. Sampson, Baltimore, for Col. R. M. Newport, 6 Jan 1865: the Quartermaster General countermands any order sending the Baltic to Monroe; she is to embark troops (E517)",
       "line": "Read at grade H with War Department Cipher No. 1: on 6 Jan 1865 Fort Monroe passed to Colonel R. M. Newport at Baltimore the Quartermaster General's order that if the Baltic had been ordered to Monroe the order was countermanded and she should embark troops as before ordered; not located in the Official Records ser. I vols. 46-47, ORN ser. I vols. 11-12, Butler's correspondence vol. V, Grant Papers vols. 13-14 by Google Books snippet, or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L15d); not N4: Grant Papers vols. 13-14 by Google Books snippets only, NARA RG 92/107 unread, OR I/46 pt 2 read in OCR",
+      "gap": "N3 two audits (FV-L15d, AUD2-LEDGER15-4: kept); not N4: Grant Papers vols. 13-14 by Google Books snippets only, NARA RG 92/107 unread, OR I/46 pt 2 read in OCR",
       "depth": "D3",
       "completeness": "10 H + 1 S + 1 M of 12 code-word groups (\"Sampson\", \"Baltic\" plain; \"tremble urn\" M)",
       "phrases": [

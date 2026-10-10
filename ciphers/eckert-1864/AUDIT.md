@@ -18446,3 +18446,91 @@ is msg 2: CLEAR. UNCHECKED-NET: aaymeloglu cache not on disk (no ledger telegram
   `PROMPT-chatgpt-e505.md` reading line updated to this audit's readings (rule 10 propagation); WORK-QUEUE AUD2-LEDGER15-2 -> done.
 - Requests: hdl.huntington.org 14 (11 CISOSEARCHALL incl control, 1 dropped and retried once, 2 IIIF pages; all 200 bar the drop); www.googleapis.com 17
   (1.6 s apart); be-api.us.archive.org 8 (1.8 s); www.loc.gov 2; api.openalex.org 3, api.semanticscholar.org 3, api.crossref.org 3.
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER15-4)
+
+Second verifier AUD2-LEDGER15-4 (account 1, Opus 5.5, for the orchestrator (owner account), WORK-QUEUE row AUD2-LEDGER15-4), 10 Oct 2026,
+13:41-14:0x UTC by `date -u`; a separate session from the readers FM65-A, FM65-B, FM65-C, FM65-D and the first verifier FV-L15d, not protecting
+their conclusions. Scope: **E539** (5885/1), **E528** (5870/0), **E500** (5847/2 + 5848/0), **E517** (5861/1), first audit "## AUDIT (FV-L15d)"
+(E573 and E557 are N1 there and not re-audited). Nothing decoded; every code group looked up again in key.md. Key source: `period` (War
+Department Cipher No. 1). Step 0 not used (non-test on mssEC 25). Intake gate (13:4x): `eckert-1864: partial (line 3) -- edition/page or
+full-text-search citation found within 6 lines`, exit 0. No spec, so `judge_plaintext.py` was not run. Scripts and raw output (committed,
+`fortmonroe/`): `aud2_l15_4_hdl.py` (+ `.out`, `_hdl2.out`), `aud2_l15_4_gb.py` (+ `.out`), `aud2_l15_4_beapi.py` (+ `.out`),
+`aud2_l15_4_schol.py` (+ `.out`); the ORN I/11 and OR I/46 pt 2 reads below were run on the cached djvu texts in `sources/ia-fulltext/print-check`.
+
+### 1. Prior work (prior-work-step.md, civil-war adapter)
+`tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<pointer>;date=..;sender=..;recipient=..' --step-type
+second-audit --offline`, all four: exit 4. 1-own LEADs: the target-level live claims FM-F1 (09:29, step-0 skips), FIX-L14 (11:29, mssEC 18/19)
+and CLEAR-SWEEP (13:25, the 40 unaudited filings): none covers these four. 4-editions LEADs: E528 `warofrebellion014602rootrich` window "... to
+be fitted up here if necessary U S Grant Lieutenant General City Point" and E517 the same volume's "... Baltimore" windows (read in s.2 by the
+volume's own index and by date: CLEAR for these telegrams); E500 `warofrebellion33unit` index line "Jonesville ... Jan 3, 1864" (another year:
+CLEAR). UNCHECKED-NET: aaymeloglu cache not on disk (a Huntington ledger telegram is not in its scope); OR parts not on disk (the Jan 1865
+telegrams are in I/46 pt 2, on disk).
+
+### 2. Families added by this audit
+| Family | Result |
+|---|---|
+| ORN ser. I vol. 11 (`officialrecordso0011unse`), pp.620-690 by running head, plus the volume index | **Index:** "Lynch, Dominick. Correspondence with Parker, W. A. . 634"; "Parker, William A. ... Correspondence with ... Lynch, D. . 634" -- the volume prints only Lynch's 24 Jan answer to Parker, not Parker's request. Pages 632-635 read whole (Parker to Porter twice and to Gibbon, Aiken's Landing, 23 Jan; Lynch to Parker 24 Jan; the Trent's Reach telegrams of 24 Jan); KWIC "torpedo" over pp.632-690 (Massasoit log, the court-martial of Parker pp.662ff.): no 900-pound torpedoes, no Phlox, no insulating wire. "Phlox" occurs only in squadron lists and pp.188, 193, 723 (other subjects). **Not printed.** |
+| OR ser. I vol. 46 pt 2 by index and date | Index: "Baltic, Steamer. Mentioned 51, 66, 106"; "Ariel, Steamer. Mentioned 51, 66, 106, 114, 842". Every page read: p.51 (5 Jan, the order sending the Baltic from Monroe to Baltimore), p.66 (Wise "Has the Baltic left?" and Newport "The Baltic left for Fort Monroe last night", 7 Jan), p.106 (Morgan's P.S., 12 Jan: "The Baltic went up yesterday to Annapolis, ready for sea. She ought to take a brigade on board"), p.114 (the Ariel and Sedgwick men off to sea), p.842 (another month). **None is E500, E517 or E528.** |
+| OR I/46 pt 1, I/46 pt 3, I/47 pt 2, Butler Corr. V (on disk) | "Baltic": I/46 pt 1 0; I/47 pt 2 index "Baltic, Steamer. Mentioned 151" (late Jan 1865: papers brought by the Baltic to Sherman; the construction corps on the Baltic: other items); Butler V index "Baltic" pp.151-500, all 1864 hospital-transport and first-expedition items plus Davenport's Norfolk letter (p.500, Fort Fisher news): none of the four. "Phlox", "Ariel" in Butler V: 0. |
+| Huntington CONTENTdm full text (hdl takes 13:5x, 16 CISOSEARCHALL + 3 dmGetItemInfo, after AUD2-LEDGER15-2's and -3's releases; words FV-L15d did not query; control 9678 returned) | **No clear copy of any of the four.** 'Parker torpedoes' -> 5886 (Lynch's cipher forward), 8538 (its clear copy); 'Phlox Lynch' -> 5885 own only; 'Phlox torpedoes' 0; 'nine hundred torpedoes' -> 8538 only; 'Lawrence Parker' -> 5885 own, 10045 (another subject). 'Ingalls Ariel' -> 7681, 7682, 5849, 5854, 5858, 8514; 'Sedgwick arrived troops' 0; 'forage vessels Ingalls' -> 1863 and Mar 1865 items (7828, Ingalls to Rucker 20 Mar). 'Baltic expedition' -> 1862 items only; 'Baltic anchor' -> 5847 own, 5865, 8508, 3095 (1862); 'Baltic Newport' -> 5847, 5858, 5861 own, 5865, 5866, 7693, 8508, 8511, 9153; 'countermanding Baltic' -> 5865 only; 'Baltic embark' -> 8152 (1862); 'Baltic Annapolis' -> 5865, 5866, 5868, 7693, 8508, 3135 (1862), 5822 (Dec 1864); 'Meigs Baltic' -> 3099 (1862). dmGetItemInfo read whole: **7681** (Washington clear book p.23): "Fortress Monroe Va Jan 3. 1865 430 P. M. for Br Gen Ingalls ---- I have ordered the Steamers CC Leary, Ariel, & Victor to report to Col Newport Balto. ---- By direction Chf Qr Mr Sigd Wm L. James Capt. a Q M" -- the clear copy of the sibling 5849, same signer and day as E500, a different telegram; **8508** (p.30): Newport, Baltimore 6 Jan 3 PM, for the QMG, the Baltic at Swann Point needs an anchor and chain and 750 tons of coal, "I ordered her anchor yesterday morning but can stop the shipment" (the clear copy of the sibling 5865's first part), then "Ft Monroe Jan 6. 1865 ... Dated 1.30 PM Mrs Ellen H. Stanton Washn ---- arrived here safely will remain until tomorrow morning & then start for Savannah Edwin M Stanton" (the clear copy of 5861/2, the row after E517 on the same leaf); **8511** (p.33): Newport 7 Jan, "the Baltic left for Ft. Monroe last night" (= OR p.66). |
+| Same-ledger siblings (page JSONs on disk, holder transcription) | E517's order was received and acted on: **5865** (Newport, Baltimore 6 Jan, cipher; the holder's transcription leaves "I have just dispatched another tug to Baltic counter man ding the order to proceed to animal [Monroe]" readable in plain words) and **5868 = E525** (Newport 7 Jan: "the baltic got off for animal before I could counter manned the order given from grapes [Washington]"). Both are other telegrams (Newport's reports, in cipher): context, not copies. E500: **5849** (= 7681) and 5858 (5 Jan, the Ariel, Victor, Illinois, Sedgwick and Baltic sent to Newport), context. |
+| Google Books API (keyed, `country=US`, 12 queries incl. control; Grant Papers vol. 13 control '"Suwo Nada" "half an hour" intitle:Grant' hit `mnRjmhe3QLoC`) | No snippet from the four Grant Papers ids for any of the four entries. E539 queries returned ORN I/11 p.634 (two scans, known) and torpedo histories (Confederate torpedoes, *Civil War at Sea* 1962) without the request. E500 '"William L. James" quartermaster "Fort Monroe" Baltic': 20th-century registers only. E517 three queries (countermanded/Meigs; Annapolis brigade; intitle:Grant): 0. |
+| IA be-api, whole collection (control '"Suwo Nada"' in OR I/46 pt 2: hit) | 7 queries: '"Phlox" "torpedoes" Parker Lynch 1865' -> ORN I/11 and I/12 contents pages only; '"insulating wire" "St. Lawrence" Lynch' -> unrelated (1958-72 trade journals); '"Ariel" "Sedgwick" Ingalls forage "City Point" 1865' -> OR I/46 pt 2 Jan 1 telegrams to Ingalls (other items); '"Baltic" Newport anchor chain "New York" expedition 1865' 0; '"William L. James" Baltic' -> unrelated; '"Baltic" Newport countermanded Monroe 1865' -> regimental diaries of 1861-62 voyages on the Baltic (Weld; Wayland); '"embark troops as before ordered"' 0. |
+| Open indexes (`aud2_l15_4_schol.out`: OpenAlex keyed 5, Semantic Scholar keyed 5, CrossRef 5) | Nothing on these telegrams (Parker/Trent's Reach, Lynch, the Baltic, Newport, Meigs/Stanton at Fort Monroe): titles off subject. |
+| JSTOR | 8 rows appended to JSTOR-QUEUE.tsv (both families per entry: names AND date with a subject word; bare quoted phrases of the period wording); they never block a class. |
+| Not reached | NARA RG 45 (Navy area file), RG 74 (Bureau of Ordnance letters received from Lynch), RG 92 (QMG letters and telegrams), RG 107; Grant Papers vols. 13-14 page text (snippet search only); OR ser. III vol. 5 (the QMG's 1865 report: transports); Meigs's own papers and diary (LC). |
+
+### 3. Readings and grades, checked
+Every code group of the four looked up again in key.md (section 3-6 rows): E539 Mary 6.30 PM, Princess Captain, Polka Command-er/-ing, Farmer
+Norfolk, Pony Prolong 9 x 100 = 900, Yoke Signature, Plaster 5 + Prescott Diversion (= Fifth Division, the clerk's homophone, C-supported by
+8538 "Comdg 5th Divn" and ORN p.634 "Comdg. Fifth Division"); collisions Saint (= Force) and William (= 100) are plain (St. Lawrence; Wm. A.
+Parker). E528 Jennie 3.30 PM, Palate Brigadier General, Shade Forage, Princess Captain, Wreathe Telegraph-ed, Wedge Today, Shelter General,
+Baptism Baltimore, Whisky Troops, Paradise Colonel, Vinton Quartermaster; "Webster" between Paradise and Vinton = the name (Col. R. C. Webster,
+Quartermaster at Monroe), as the sibling 5866's close "walrus Are see Webb Stir pandora vincent" spells it out: M stands (the signature
+reading is also possible). E500 Animal Monroe, Henrietta 2.30 PM, Pebble 3, Pandora Colonel, Vinton Quartermaster, Baptism Baltimore, Zebra
+period, Weasel Steam-er, Roman Expedition, France New York, Walrus Signature; Sampson (= Ferry), Anchor (= Donelson), Baltic (=
+Chattahoochee), William (= 100) plain. E517 Animal/Appian Monroe, Jennie 3.30 PM, Paradise Colonel, Vinton Quartermaster, Baptism Baltimore,
+Unity/Zebra period, Quorum Embark, Whisky Troops, Youth Signature, Bender Qr Master Genl U.S., Tremble North; Sampson, Baltic plain; "urn" M.
+**FV-L15d's counts stand: E539 H 13/13, E528 H 14 + M 1, E500 H 11/11, E517 H 10 + S 1 + M 1.** One addition for E517's header ("on board weasler
+tremble urn animal"): the next row on the same leaf (5861/2) is Stanton's own telegram from Fort Monroe, 6 Jan 1.30 PM, "will remain until
+tomorrow morning & then start for Savannah" (clear copy 8508), so the telegram signed Qr Master Genl U.S. from on board a steamer at Monroe
+that day fits the QMG travelling with the Secretary's party; that is an inference (grade I for "sent from on board a steamer at Fort Monroe"),
+and the steamer's name ("[North]urn") stays M. Code clause (depth bar): Baptism = Baltimore, Vinton = Quartermaster, Animal/Appian = Monroe,
+Whisky = Troops read in the siblings 5849, 5854, 5858, 5865, 5866, 5868 and passim; Pony Prolong = 900 in 5886 (and 8538's clear "nine hundred").
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | text | depth | basis |
+|---|---|---|---|---|---|
+| E539 | **N2** (lowered from N3) | period | substance known (holder 8538) | D3 (kept: H 13/13; external holder 8538, ORN I/11 p.634) | **the whole content the key carries is in clear in the Huntington's public transcription of pointer 8538** (Washington clear book p.60, Lynch to Wise, Norfolk 24 Jan 1865): "12 torpedoes of nine hundred pounds each with insulating wire are required by Comdr Parker Comdg 5th Divn James river for immediate use" -- 900 pounds, insulating wire, Commander Parker, Fifth Division, immediate use. E539 is Parker's request that Lynch relays the next day (the E49 / E54 / E72 / N2-BL precedent of this file, and AUD2-LEDGER14-1's E600 today: a relay or original whose substance is known elsewhere is N2, not "N3 weak"). Not in 8538: "by the Phlox", the address to Lynch on the St. Lawrence near Norfolk, the hour. Parker's own wording not located (ORN I/11 index: only Lynch's answer, p.634). No prior mapping of this ciphertext found. |
+| E528 | **N3** (kept; weak: the arrival clause is in print, the forage clause and the "what others are to come" clause are not) | period | not known | D3 (kept) | not located after FV-L15d and s.2; OR I/46 pt 2 pp.105-106 (Morgan, same day) prints the arrival of the Ariel and the Sedgwick only |
+| E500 | **N3** (kept) | period | not known | D3 (kept; context added: holder 7681, James to Ingalls the same afternoon) | not located after FV-L15d and s.2; OR I/46 pt 2 index: the Baltic only on pp.51, 66, 106 |
+| E517 | **N3** (kept) | period | not known | D3 (kept; context added: siblings 5865 and 5868 = E525, Newport carrying out and then reporting the late countermand) | not located after FV-L15d and s.2; OR I/46 pt 2 index as for E500 |
+- **Not N4 (E528, E500, E517):** NARA RG 92 (QMG telegrams sent and received, Jan 1865) and RG 107 unread; Grant Papers vols. 13-14 by snippet only;
+  OR ser. III vol. 5 not searched; OR I/46 pt 2 read in OCR (by index and date: a misprinted index page would be missed).
+- **Safe sentences.** E528, E500, E517: FV-L15d's stand (s.4 of that section). E539 (N2): "Read at grade H with War Department Cipher No. 1:
+  Commander Wm. A. Parker's telegram of 23 Jan 1865 to Captain Lynch on the ordnance ship St. Lawrence, asking for the 900-pound torpedoes with
+  insulating wire by the Phlox; its substance is in clear in the Huntington's own Washington book (pointer 8538, Lynch's relay to the Bureau of
+  Ordnance of 24 Jan), and Lynch's answer is printed in ORN ser. I vol. 11 p.634; Parker's own wording and this cipher copy were not found in
+  print (searched 10 Oct 2026)."
+- **Unsafe:** any N3 wording for E539 ("not located" without naming 8538); any "first", "new", "unpublished" for the four; "Meigs" as a reading
+  in E517 (the signer is the code word Bender = Qr Master Genl U.S.; his presence at Monroe is an inference).
+- **Depth sentences:** E539 FV-L15d's (D3 kept). E517 may add: "Colonel Newport sent a tug after the Baltic with the countermand but she had
+  already left for Monroe (Newport, 6-7 Jan, rows 5865 and 5868)." E500 may add: "That afternoon James also sent the Leary, the Ariel and the
+  Victor to Newport (holder 7681)."
+
+### 5. Postmortem, leads and propagation
+- Failure: FV-L15d saw that E539's substance is in the holder's clear text of Lynch's forward and wrote "N3 (weak)" instead of applying the
+  file's N2 line for a telegram whose substance is known elsewhere (E49, E54, E72, N2-BL; E600 today). The same "N3 weak" shape is in FV-L15a's
+  E541 (message 2 relayed in ORN I/11 p.634), E575 (answered point by point in print) and E576 (summarised by Ord in print): **lead for the
+  AUD2 rows of those entries**, not ruled here (outside scope).
+- No over-claiming word ("new", "first", "unpublished") in the readers', FV-L15d's or the SO prompts' text for these four.
+- For a FIX job (not applied here; reading.md is decode.py output): E539 header "N2, substance in holder 8538"; E517 header "on board steamer
+  [North]urn (M) at Monroe; siblings 5865, 5868 = E525; Stanton's telegram 5861/2 = holder 8508"; E500 header "context holder 7681 (5849)".
+  FV-L15d's s.5 fixes stand.
+- Propagated: status.json E539 -> grade/plaintext/mapping N2, text "known" (substance), gap and line from s.4; E539 E528 E500 E517 ->
+  audit_status "two audits", audit_refs + this section; SECOND-OPINIONS-QUEUE.tsv SO-ECKERT-E539 withdrawn (N2); WORK-QUEUE AUD2-LEDGER15-4 -> done.
+- Requests: hdl.huntington.org 19 (16 CISOSEARCHALL incl control, 3 dmGetItemInfo; all 200, no drop); www.googleapis.com 12 (1.6 s apart);
+  be-api.us.archive.org 8 (1.8 s); api.openalex.org 5, api.semanticscholar.org 5, api.crossref.org 5; no archive.org downloads (all print read
+  from the cache on disk).
+For the orchestrator (owner account) and LANE LEDGER-15 (account 1).
