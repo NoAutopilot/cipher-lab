@@ -15885,9 +15885,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L17a)'"
+        "AUDIT.md '## AUDIT (FV-L17a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER17-1)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-L17a verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -15907,8 +15908,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Hd. Qrs. 2nd Division, 19th Corps (Bvt. Maj. Gen. C. Grover), via Fort Monroe, to Rawlins at City Point, 15 Jan 1865 9.30 AM: the division has but 40 rounds of ammunition, shall I take more (E585)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 15 Jan 1865 at 9.30 a.m. Fort Monroe passed to General Rawlins, chief of staff at City Point, a message from the headquarters of the 2nd Division, 19th Corps: the division had only 40 rounds of ammunition -- should it take more? -- signed C. Grover, brevet major general commanding; not located in the Official Records ser. I vols. 46 and 47, ORN ser. I vols. 11-12, Butler's correspondence vol. V, J. E. O'Brien's Telegraphing in Battle (1910) or the Huntington's full-text search (searched 10 Oct 2026, one audit); The Papers of Ulysses S. Grant vol. 13 not yet searched.",
-      "gap": "N3 one audit (FV-L17a); not N4: The Papers of Ulysses S. Grant vol. 13 not searched (Google Books 429), NARA RG 92/107 unread, JSTOR not queued",
+      "line": "Read at grade H with War Department Cipher No. 1: on 15 Jan 1865 at 9.30 a.m. Fort Monroe passed to General Rawlins, chief of staff at City Point, a message from the headquarters of the 2nd Division, 19th Corps: the division had only 40 rounds of ammunition -- should it take more? -- signed C. Grover, brevet major general commanding; not located in the Official Records ser. I vols. 46 and 47, ORN ser. I vols. 11-12, Butler's correspondence vol. V, J. E. O'Brien's Telegraphing in Battle (1910) or the Huntington's full-text search (searched 10 Oct 2026, two audits), nor in OR I/46 pt 2 read by date, OR I/47 pt 2, Butler's correspondence vol. V read by date or the Huntington's Washington clear books for the same days; The Papers of Ulysses S. Grant vol. 13 not yet searched.",
+      "gap": "N3 two audits (FV-L17a, AUD2-LEDGER17-1); not N4: The Papers of Ulysses S. Grant vol. 13 not searched (Google Books 429 to three sessions, no IA full text), NARA RG 92/107 unread, JSTOR not queued",
       "depth": "D3",
       "completeness": "15 H of 15 code-word groups (\"polking\" = commanding, \"polka\" = command)",
       "phrases": [
@@ -15926,9 +15927,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L17a)'"
+        "AUDIT.md '## AUDIT (FV-L17a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER17-1)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-L17a verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -15948,8 +15950,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Sheldon, Fort Monroe, to S. H. Beckwith at City Point, 6 Jan 1865: the River Queen left about 11 AM with General Butler on board, gone up the James (E581)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 6 Jan 1865 G. D. Sheldon at Fort Monroe told S. H. Beckwith at City Point that the River Queen had left about 11 a.m. that day with General Butler on board, and that the colonel had told him Butler had gone up the James and that he himself was going the same way at once; not located in the Official Records ser. I vols. 46 and 47, ORN ser. I vols. 11-12, Butler's correspondence vol. V, J. E. O'Brien's Telegraphing in Battle (1910) or the Huntington's full-text search (searched 10 Oct 2026, one audit); The Papers of Ulysses S. Grant vol. 13 not yet searched.",
-      "gap": "N3 one audit (FV-L17a); not N4: The Papers of Ulysses S. Grant vol. 13 not searched (Google Books 429), NARA RG 92/107 unread, JSTOR not queued",
+      "line": "Read at grade H with War Department Cipher No. 1: on 6 Jan 1865 G. D. Sheldon at Fort Monroe told S. H. Beckwith at City Point that the River Queen had left about 11 a.m. that day with General Butler on board, and that the colonel had told him Butler had gone up the James and that he himself was going the same way at once; not located in the Official Records ser. I vols. 46 and 47, ORN ser. I vols. 11-12, Butler's correspondence vol. V, J. E. O'Brien's Telegraphing in Battle (1910) or the Huntington's full-text search (searched 10 Oct 2026, two audits), nor in OR I/46 pt 2 read by date, OR I/47 pt 2, Butler's correspondence vol. V read by date or the Huntington's Washington clear books for the same days; The Papers of Ulysses S. Grant vol. 13 not yet searched.",
+      "gap": "N3 two audits (FV-L17a, AUD2-LEDGER17-1); not N4: The Papers of Ulysses S. Grant vol. 13 not searched (Google Books 429 to three sessions, no IA full text), NARA RG 92/107 unread, JSTOR not queued",
       "depth": "D2",
       "completeness": "6 H + 1 plain of 7 (\"queen\" plain, River Queen)",
       "phrases": [

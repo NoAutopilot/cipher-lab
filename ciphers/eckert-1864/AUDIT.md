@@ -20624,3 +20624,112 @@ dates; none is a telegram to Senator Sherman), `Goldsboro Newbern` 0. **No clear
   429, UNCHECKED" for E594 is superseded by the be-api vol. 14 search (s.1); "Canby is shipped" is superseded (s.4).
 - Filing (orchestrator's call): E589, E590, E592, E593 are RULING (iii) rows (D1).
 - Requests this session: hdl.huntington.org 25 (all 200); be-api about 22 (2 x 502, one unrecovered); archive.org 6 (two 500); googleapis 2 (both 429).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER17-1)
+
+Second verifier AUD2-LEDGER17-1 (account 1, Opus 5.5, WORK-QUEUE row AUD2-LEDGER17-1, for LANE LEDGER-17), 10 Oct 2026, 18:41-19:0x UTC by `date -u`;
+a separate session from the reader (FM-S65A), from FIX-L17c and from the first verifier (FV-L17a), not protecting any of them. Items: **E585** (p.328,
+ptr 5872/2, Fort Monroe 15 Jan 1865, Hd. Qrs. 2nd Div. 19th Corps (Grover) via Sheldon and Beckwith to Rawlins) and **E581** (p.318, ptr 5862/0, Fort
+Monroe 6 Jan 1865, Sheldon to Beckwith); mssEC 25 = Huntington object 5952, War Department Cipher No. 1. Claim under audit: AUDIT (FV-L17a) s.4 -- both N3,
+key period; E585 D3, E581 D2. Nothing decoded beyond key look-ups in key.md. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Step 0 not
+used. Intake gate (18:4x UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Prior work (18:5x UTC,
+after the holder take: late, as FV-L17a's was): `tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=5872|5862;date=..;
+sender=..;recipient=..' --step-type second-audit --offline`, exit 0 for both, verdict plaintext UNCHECKED-NET; the three LEAD rows are target-level live
+claims (CLEAR-SWEEP, FIX-L17a, OR-CACHE2) naming the slug and no unit, none covering these pointers; the tool's write to prior-work.tsv was reverted (as
+AUD2-LEDGER16-1/-4 did). Scripts (`fortmonroe/`, outputs beside them): `aud2_l17_1_hdl.py` (+ `.out`), `aud2_l17_1_beapi.py` (+ `.out`),
+`aud2_l17_1_gb.py` (+ `.out`). The OR I/46 pt 2, I/47 pt 2, ORN I/11-12 (`officialrecords*`), Butler Corr. V and O'Brien reads were run inline on the
+cached djvu texts in `sources/ia-fulltext/print-check/`, not committed as scripts.
+
+### 1. Key, image
+- **Key re-check, every code word, key.md:** E585 Eugenia = 9.30 AM (TIME page), Snake = Head Quarters (p.21 l.7), Plank = 2, Quitman / Quincy = Division
+  (p.19 l.20 R / L), Hope = 19, Pelton = Corps (p.19 l.8), Palate = Brigadier General (p.18 l.20), Borgia = Chief of Staff (p.10 l.26), Unity = Period,
+  Leg = 40, Olive = Ammunition (p.18 l.12), Tappan = Major (p.22 l.3), Shelby = General (p.21 l.5), Polka = Command (-ed, -ing) (p.19 l.14; "polking" =
+  commanding, FV-L17a s.3 upheld). E581 Fanny = 11 AM (TIME page), Wedge = Today (p.24 l.2), Knave = Maj Gen B. F. Butler (p.16 l.27, one of the three
+  hand-added key lines), Pekin = Comma (p.19 l.7), Pandora = Colonel (p.19 l.4), Bergen = James (p.10 l.14); "Queen" = Danger (p.19 l.19) is a collision
+  in the vessel name "River queen", read plain (FV-L17a upheld). **Counts agree with FV-L17a: E585 H 15 of 15 code words; E581 H 6 + 1 plain of 7.**
+- **Image eye check this session** (IIIF 2400 px, pointers 5862 and 5872, whole leaf at 1200 px and the graded lines cropped at native width): both rows
+  match ciphertext.txt word for word, in a ruled 7-column (5862) and 9-column (5872) grid read row by row. Two notes FV-L17a did not record: (a) 5862's
+  dateline reads "Ft Monroe Jan. 6. 1864" with the final 4 written over as 5 (a new-year slip corrected on the leaf; the neighbouring entries are January
+  1865, E521 on 5861 is 6 Jan 1865); (b) on 5872 **both** Division words of E585 are overwritten in darker ink -- "quitman" (l.1, over a word with a
+  different vowel) as well as "Quincy" (l.2, FV-L17a's note) -- so the two Division slots are the corrected words of the page; both read Division under
+  either key line, and nothing else in the row is retouched. The reading stands.
+
+### 2. Search (families FV-L17a did not cover first, then its own re-checked)
+- **Holder full text** (CONTENTdm p16003coll11, CISOSEARCHALL, all pointers, 10 fresh queries, none of FM-S65A's or FV-L17a's; control 'Inspector difficulty
+  Evidence Nashville' -> 9678; one take 18:4x-18:5x UTC, 29 requests, one dropped connection re-fetched once): 'Grovers division Monroe' 0, 'Nineteenth
+  Corps Monroe' 0, 'Second Division Nineteenth' 0, 'Grover Savannah' 0, 'take more ammunition' 2 (**5345** = Meade to Halleck, 24 Sept 1863, "Shall the
+  troops leaving tomorrow take any more ammunition than the forty rounds in their boxes" -- the same question shape fifteen months earlier, another
+  telegram; 2181 other), 'River Queen' 12 (5862 own; 7742 / 7744 Feb 1865 Hampton Roads conference; the rest 1863-64 or other), 'Butler on board' 6
+  (other dates), 'Butler left Monroe' 31 (none of 6 Jan 1865: 7679 Grant on the Wilmington expedition and Butler, 7716 Weitzel 16 Jan, the rest 1864),
+  'going same way' 9 (5862 own; the rest other), 'Sheldon Butler' 58 (none of 6 Jan 1865). **No clear copy of either.**
+- **Washington clear books walked by date (dmGetItemInfo)**: 7699-7709 (pp.41-51, 15-18 Jan 1865) and 8518-8522 (pp.40-44, 13-16 Jan 1865). Neither row
+  is there, as expected for a Fort Monroe-City Point message. Context in clear: **7700** (p.42) Fort Monroe 15 Jan 10 PM to Eckert, relaying Terry's
+  13 Jan dispatch to "Br Gen John A. Rawlins Chf. Stf." (the clear copy of the Terry dispatch on 5874/0, not of E585) -- confirming Rawlins's rank and
+  title as E585's "palate ... borgia" give them; **7702** (p.44) Fort Monroe 16 Jan 10.30 AM to Bowers, "Steamer California leaves here 12 oclock"
+  (printed OR I/46 pt 2 p.141 under 15 Jan 10.30 a.m.; the holder dates it 16 Jan); **8521** Army of the James soundings for Butler, 15-16 Jan. The 6 Jan pages 8508-8510 were
+  walked by AUD2-LEDGER16-1 (no copy of E521's exchange there; not re-fetched).
+- **OR ser. I vol. 46 pt 2 read by date, 12-16 Jan 1865** (cached `warofrebellion014602rootrich`; every message naming Grover, the 19th Corps, Morgan,
+  ammunition or Fort Monroe): pp.105-107 Grant to Morgan 12 Jan ("Have any of the vessels loaded with troops from Baltimore made their appearance yet?"),
+  Morgan to Rawlins 12 Jan 1 p.m. (1,500 men ashore at Newport News), **Grant to Morgan 12 Jan 1 p.m. (p.106): "All troops arriving at Fort Monroe from
+  General Sheridan's army will proceed, as fast as the vessels can get on coal, water, and rations, to Savannah, Ga., and report to Major-General
+  Sherman"**, Morgan's letter with the order to Washburn, 1st Brig., 2d Div., 19th Corps ("If the division commander comes in the meanwhile he can do as he
+  pleases"; "Copy for General Rawlins, chief of staff", p.107) -- FV-L17a's pp.106-107 citation is exact; Terry's 13 Jan dispatch asking for 300,000
+  rounds; the 15 Jan Terry-Abbot "small ammunition" exchange (other); Fort Monroe 15 Jan 10.30 a.m. to Bowers (California). **E585 is not printed**, nor
+  any Grover or 19th Corps message of 14-16 Jan, nor E586 (Rawlins's answer). **pp.55-56: Sheridan to Stanton, Winchester 6 Jan 12.30 p.m., "The men have
+  fully forty rounds of ammunition on their persons"** -- the print of holder 7687, which FV-L17a cited from the holder only; the corroboration is printed.
+- **OR ser. I vol. 47 pt 2** (`warofrebellion431unit`, title page I/47 pt 2 per print/or_volume_map.tsv): p.90-91 Sherman, Savannah 19 Jan, "General Grover
+  arrived yesterday"; Sherman to Foster 19 Jan (Grover's division turned over to Foster). Grover therefore sailed from Fort Monroe after 15 Jan and reached
+  Savannah on the 18th: the date, place and destination of E585's question fit the print; the question itself is not printed.
+- **E581, OR I/46 pt 2 read by date 5-8 Jan** (every message naming Butler, the River Queen, Sheldon or Beckwith): Butler to Stanton 5 Jan (report);
+  "General Butler, Fort Monroe" 5 Jan 1.30 p.m. (Hunton relieved Corse); Grant to Lincoln 6 Jan (Butler's removal); Halleck 7 Jan, General Orders No. 1
+  and Special Orders No. 5 (Butler relieved, Ord temporarily), Grant 8 Jan (delivered). "River Queen" in the volume: only 2-3 Feb 1865 (Hampton Roads
+  conference) and the index (pp.352, 360, 472). **E581 is not printed.** **ORN** (`officialrecords*` on disk): River Queen only March 1865 (Lincoln to City
+  Point). **Butler, Private and Official Correspondence vol. V**, read by date 5-9 Jan: White to Butler from Fort Monroe 5 Jan, Butler to Stanton 5 Jan,
+  Grant to Lincoln 6 Jan, Butler to Parton 7 Jan, the 7-8 Jan relief orders, Butler at Fortress Monroe 8 and 9 Jan; the "River Queen" index entry (p.533)
+  is February 1865. None gives Butler's movement of 6 Jan. **O'Brien, Telegraphing in Battle** pp.180-181 re-read: 5 Jan "General Butler went to Fort
+  Monroe"; 6 Jan "General Butler not yet returned"; FV-L17a's quotations exact. A mild tension, not a contradiction: O'Brien, at Army of the James
+  headquarters, records Butler not back on 6 Jan, while E581 has him leaving Fort Monroe at 11 a.m. that day on a boat going up the James (a passage of
+  several hours; the diary line need not be written at night). E581's "gone up the James" is the colonel's report, not Sheldon's sight.
+- **The Papers of Ulysses S. Grant vol. 13: unreachable, third session running.** Google Books API (keyed, country=US; `aud2_l17_1_gb.py`): the control
+  query answered HTTP 429, one retry after 25 s answered 429, run stopped (FV-L17a 17:3x and AUD2-LEDGER17-2 18:47 met the same). IA be-api:
+  `papersofulyssess0013gran` and `papersofulysses0013gran` answer 0 hits for 'Grover' (control `papersofulyssess0014gran` 'Cashier' hit), so no IA full
+  text of vol. 13 exists under those ids; whole-collection phrase queries for E585/E581: 4 of 5 answered 502, one retry pair after 25 s, 2 still 502
+  (stopped); the one answered ('"River Queen" "General Butler on board"', 8 hits) is the 27-28 Aug 1861 Hatteras narrative and the March 1865 Lincoln
+  voyage, other.
+- **Unreachable / not searched:** Grant Papers vol. 13 (above; the publisher's PDF was Cloudflare-challenged to AUD2-LEDGER16-1); NARA RG 92/107/108;
+  JSTOR (not queued: no JSTOR family is likely to print a 40-word operator telegram); HathiTrust full text; the press (neither row is press-shaped).
+
+### 3. Classes (rule 10) and depth (rule 4a)
+
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E585 | **N3 (upheld)** | period | **D3 (upheld)**: H 15 of 15 code words, no unread token; external non-statistical check: Sheridan 6 Jan 1865 "fully forty rounds of ammunition on their persons" (holder 7687, printed OR I/46 pt 2 pp.55-56), Grant's 12 Jan order sending Sheridan's troops at Fort Monroe on to Savannah and Morgan forwarding the 1st Brig., 2d Div., 19th Corps (pp.105-107), Grover at Savannah 18 Jan (OR I/47 pt 2 p.90) | no prior plaintext or decipherment located after both audits' searches; not N4 (Grant Papers 13 unread) |
+| E581 | **N3 (upheld)** | period | **D2 (upheld)**: H 6 + 1 plain of 7; the clause "[11 AM] [today] with [Butler] on board, [Colonel] told me he had gone up [James]" reads with four adjacent key words and does not survive the shuffled-key control (FM-S65A); external context only (O'Brien pp.180-181, E521 the question), not a check of the text | no prior plaintext or decipherment located; not N4 (Grant Papers 13 unread) |
+
+- **Caveat on E585's D3 (recorded, not a downgrade):** the shuffled-key control (FM-S65A) leaves the numerals 2, 19 and 40 standing, so "40 rounds"
+  agreeing with Sheridan's "fully forty rounds" is corroboration of content, not evidence for the key; the key-separable part is the unit line
+  (Head Quarters / Division / Corps / Brigadier General / Chief of Staff / Ammunition / Major General commanding), which no shuffle keeps and which the
+  print independently places at Fort Monroe that week. Depth stays D3 on the period key (H) and the printed external check.
+- **Safe sentences** (unchanged from FV-L17a s.4 except the searched list): append to each "; nor in OR I/46 pt 2 read by date, OR I/47 pt 2, Butler's
+  correspondence vol. V read by date or the Huntington's Washington clear books for the same days (second audit, 10 Oct 2026); The Papers of Ulysses S.
+  Grant vol. 13 not yet searched".
+- **Unsafe** for both: "first", "new", "unpublished", "never printed", "previously unread"; for E581 any sentence saying Sheldon saw Butler go up the James
+  (the colonel told him); for E585 any sentence implying the 40-round figure confirms the key.
+- **Depth sentences** (FV-L17a's, upheld): E585 "On 15 Jan 1865 Grover's 2nd Division, 19th Corps, at Fort Monroe reported it had only 40 rounds of
+  ammunition and asked Rawlins whether to take more." E581 "On 6 Jan 1865 Fort Monroe reported that the River Queen had left about 11 a.m. with General
+  Butler on board, bound up the James."
+
+### 4. Postmortem
+No over-claim found in AUDIT (FV-L17a) for these two rows. Corrections and additions: (1) the "fully 40 rounds" corroboration is printed (OR I/46 pt 2
+pp.55-56), not only a holder copy; (2) both Division words of E585 are overwritten on the leaf, not only "Quincy"; (3) E581's dateline is a corrected 1864;
+(4) Grant Papers vol. 13 remains the one named family unread for both, now after three sessions' attempts (Google Books 429 throughout 17:3x-18:5x UTC,
+no IA full text, PDF challenged) -- a LOCAL-QUEUE or owner-desk read of vol. 13 by date (6 and 15 Jan 1865) is the step that could move either row to
+N4 or N1. Like FV-L17a, this session ran the prior-work tool after its first network take, not before.
+
+### 5. For a FIX job (not applied here)
+- **E585:** FV-L17a s.5 stands ("polking" -> [Command]ing, H; lift M on "Eugenia Snake ... pelton"); add to the entry note: "both Division words
+  (quitman l.1, Quincy l.2) overwritten in darker ink on the leaf (AUD2-LEDGER17-1)"; status/AUDIT line: corroboration printed OR I/46 pt 2 pp.55-56.
+- **E581:** FV-L17a s.5 stands ("River [Danger]" -> River Queen, plain; lift M on "Fanny", "gown" = gone); add to the entry note: "dateline 1864 corrected
+  to 1865 on the leaf (AUD2-LEDGER17-1)"; header "(read from the transcription, no image)" -> image-read by FV-L17a and AUD2-LEDGER17-1.
+- Requests this session: hdl.huntington.org 29 (one dropped connection, re-fetched once; rest 200); be-api 10 (6 x 502, of which 2 after one retry);
+  googleapis 2 (both 429); archive.org 0.
