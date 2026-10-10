@@ -6703,3 +6703,9 @@ Row 5855/1 (mssEC 25, obj 5952, pointer 5855, entry 1 on the page; 4 Jan 1865, F
 - Not searched, so not claimed: OR ser. I/46 pt 1 and pt 3, ORN I/11-12, the newspapers of the day.
 - Requests this session: hdl.huntington.org 4; googleapis 4; IA 0 (disk only).
 - Novelty not classified (rule 10).
+
+## FV-L15d (10 Oct 2026, account 1, for LANE LEDGER-15)
+First audit of E539 E528 E500 E573 E557 E517: AUDIT.md "## AUDIT (FV-L15d)" (E573 N1, ORN I/12 p.66 + holder clear copy 7823; E557 N1, holder clear
+copy 7768; E539 E528 E500 E517 N3 D3, status.json one audit, SO-ECKERT-E539/E528/E500/E517 queued, WORK-QUEUE AUD2-LEDGER15-4). Suggestion (not done):
+file the cipher row 5886/0 (Ft Monroe 24 Jan 1865, Lynch to Wise, the forward of E539); its clear copy is holder 8538, so it is an N1 filing. Also check
+every "Maj. Eckert , Washington" row for the header word "Washington" decoded as [Volunteer] (E557, E529, E558; AUDIT (FV-L15d) s.5).

@@ -17497,3 +17497,185 @@ OPINIONS-QUEUE.tsv SO-ECKERT-E171 withdrawn (N1). E537, E544, E565: N1, so no st
 leaves the entry for a full verifier: every citation held.
 Requests: www.googleapis.com 5 (`fvl15n_gb.py`, 1.6 s apart); hdl.huntington.org 9 (4 IIIF leaf images, 4 CISOSEARCHALL, 1 dmGetItemInfo, 3.2 s
 apart, under two takes released in ROOM); archive.org 0 (cache only).
+
+## AUDIT (FV-L15d)
+
+Verifier FV-L15d (account 1, for LANE LEDGER-15), 10 Oct 2026, 12:52-13:3x UTC by `date -u`; a separate session from the readers FM65-A, FM65-B,
+FM65-C, FM65-D, FM65-E and FM65-F, not protecting their conclusions. Scope: **E539** (NOTES "## FM65-D"), **E528** ("## FM65-C"), **E500**
+("## FM65-A"), **E573** ("## FM65-F"), **E557** ("## FM65-E"), **E517** ("## FM65-B"); ciphertext.txt, War Department Cipher No. 1, Fort Monroe
+ledger mssEC 25 = Huntington object 5952, January-March 1865. Nothing decoded beyond key look-ups in key.md. Key source for all six: `period`. No spec
+exists for eckert-1864, so `judge_plaintext.py` was not run. Intake gate: `eckert-1864: partial (line 3) -- edition/page or full-text-search citation
+found within 6 lines`. Prior work (`tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<pointer>;date=..;sender=..;
+recipient=..' --step-type audit --offline`): exit 4 for each; the two own-work LEADs are target-level live claims (FM-F1 09:29, FIX-L14 11:29) that
+cover other rows (FM-F1 filed step-0 skips, FIX-L14 is mssEC 18/19), not these six; the E500 and E517 edition LEADs are index lines of OR I/33 for
+1864 ("Jonesville ... Jan 3, 1864"), rejected; UNCHECKED-NET = the OR parts not on disk, covered below by the ones that matter for Jan-Mar 1865.
+**Step 0 is a non-test on mssEC 25 (Wave 2 RULING, STEP0-KEYCTL)**: nothing below is classed from step 0. Scripts (all in `fortmonroe/`, outputs
+beside them): `fv_l15d_hdl.py` (+ `.out`, `_ctrl.out`: 16 CONTENTdm full-text queries across all pointers of p16003coll11 plus the control query
+'Inspector difficulty Evidence Nashville' -> 9678, then pages 5885 5870 5847 5848 5930 5907 5861 at 2400 px to scratch), `fv_l15d_print.py`
+(+ `.out`: letters-only phrase grep over the 184 cached print-check volumes -- incl. OR I/46 pt 2 `warofrebellion014602rootrich`, I/47 pt 2
+`warofrebellion431unit`, Butler Corr. V `privateofficialc05butl` -- plus ORN I/11 `officialrecordso0011unse` and **ORN I/12
+`officialrecords10librgoog`** fetched to scratch (`officialrecordso0012unse_djvu.txt` and its hocr text again answered 500; the Google-scan copy's
+title page reads "SERIES I -- VOLUME 12", North Atlantic Blockading Squadron from 1 Feb 1865 plus South Atlantic 1861-62), with KWIC for the ship and
+officer names), `fv_l15d_gb.py` (+ `.out`: 12 Google Books API queries, keyed, `country=US`, two per entry beyond FIX-FM65's two, plus the E531
+in-volume control, which hit Grant Papers vol. 13 `mnRjmhe3QLoC`), `fv_l15d_beapi.py` (+ `.out`: IA be-api whole-collection phrase queries, control
+'"Suwo Nada"' in OR I/46 pt 2 = hit).
+
+### 1. Duplicates, image
+- **Duplicate diff:** pointers 5885, 5870, 5847/5848, 5930, 5907, 5861 against every `###` header in ciphertext*.txt (mssEC 18, 19, 25 and the No. 2
+  and No. 9 files) and status.json: the near neighbours are different telegrams -- E541 (5887/0, Wise's 24 Jan reply to Lynch), E515 (5858, the
+  Ariel-Victor-Illinois-Sedgwick list of 5 Jan), E519/E520/E525 (the Baltic of 7 Jan), E530 (13 Jan sailing), E571 (5929, Glisson of 13 Mar). **No
+  duplicate.** Not filed anywhere: the cipher row 5886/0 (Ft Monroe 24 Jan, Lynch to Wise, "Flood torpedoes of pony prolong pounds each with insulating
+  wire are required by polkaer Parker ...") -- the forward of E539, whose clear copy is holder 8538 (one-line suggestion in NOTES).
+- **Image eye check this session, every graded line** (page images at 2400 px; strips of the entry region at 0.58-0.67 scale; the ruled-grid pages
+  give `iiif_lines.py` too few bands, as FV-FM10a and FV-FM65a found): 5885 lower row (E539, header "Hd. Qrs. A. J. Jan. 23-1865" + 8 lines + R.
+  O'Brien), 5870 row 0 (E528, header + 5 lines + Sheldon), 5847 last row + **5848 row 0** (E500, header + 3 lines on p.303 and 2 lines on p.304), 5930
+  row 1 (E573, header + 4 lines + Sheldon), 5907 last row (E557, header + 5 lines + Sheldon), 5861 row 1 (E517, header + 5 lines + Sheldon). **The
+  transcription matches the image word for word on all six** (E539 "Ship saint Lawrence near farmer Unity", "large tar pee does of pony prolong
+  pounds ach pedlar wich insulating wire", "yoke William ah Parker polkaer plaster Prescott etc etc etc"; E528 "No Shade vessels Since princess James
+  wreathe of wedge", "paradise Webster Vinton"; E500 "unable to furnish anchor & chain in time for weaseler Baltic", p.304 "be sent on the roman
+  consequently you need not send to france for them walrus William L. James"; E573 "money tour Lehigh in from Brandy", "Cherub abacus Glisten
+  pilgrim Senior Officer"; E557 "Sub squdron torpid owes mentioned in Bureaux letter of harsh person ultimo", "They are decided for"; E517 "on board
+  weasler tremble urn animal Jennie", "Counter man dead zebra Let her quorum whiskey as before ordered youth Bender").
+- **E500 spans two pages.** Its last two lines are p.304 row 0 (pointer 5848), above the City Point 2.25 PM entry. The E500 header names only p.303 /
+  5847 and says "no image": fix in s.5.
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; hdl token 13:00-13:04 UTC, control 9678
+returned): Phlox 1 (5885 own); insulating 4 (5885 own, **5886**, **8538**, 7306 = 1863); "Lawrence torpedoes" 2 (5887, **9943**); "Lynch torpedoes" 8
+(5886, 5887, **7768**, 8538, 9943, **9944**, 4675, 5721); "Ariel Sedgwick" 9 (5870 own; 5854, 5858, 5866, 5871 = siblings; **7682**, **8511**,
+**8514**, **9153**); "forage vessels" 7 (none Jan 1865 Fort Monroe); "anchor chain" 4 (5847 own; 5865, **8508**, 5819 = 1864); "Baltic countermanded" 1
+(5861 own); "Counter man dead" 5 (5861 own; 4276-77 = 1863, 9113, 9151 = other subjects); Montauk 21, Lehigh 20, Kinston 13, Glisson 8 (incl.
+**7823**, 7818, 7802, 8622); submarine 11 (**9944**); "torpid owes" 2 (5907 own, 5908 = Lynch to Radford, 16 Feb); "Wise Bureau" 13 (**7768**, 5886,
+5887, 9943 ...). KWIC read for every bold pointer:
+- **E557: clear copy at 7768** (Page 110 of the Washington clear book): "Ft Monroe Feby 16th 1865 Norfolk 16th for Comdr HA Wise Chief Bu Washn Sub
+  marine Torpedoes mentioned in Bureau letter of 25th ulto have not been recd they are decided for immediate use on James river. 14 in addition to
+  these 6 are also required ---- D Lynch Comdr &c". Every clause of E557 is there, in order, with the same numbers (16, 25, 14, 6), "decided" included.
+  The reader's single long query ('Lynch Bureau letter ultimo immediate use squadron') returned only the own page; 'Wise Bureau' finds it.
+- **E573: clear copy at 7823** (Page 165): "Fort Monroe Mch 14th 1865 7 pm for Secy Navy ---- Monitor Lehigh in from Charleston and will go up the
+  James river immy ---- No news of the Montauk ---- our troops in possession of Kinston NC Glissen Capt Senior officer".
+- E539: no copy of Parker's request. 8538 (Page 60) is **Lynch's forward of it** to Wise, Norfolk 24 Jan 1865: "12 torpedoes of nine hundred pounds
+  each with insulating wire are required by Comdr Parker Comdg 5th Divn James river for immediate use signed D Lynch Comdr & Inspector of Ord"
+  (= the unfiled cipher row 5886/0); 9943 is Wise's reply (= E541); 9944 Wise to Adm. Gregory, 25 Jan, for buoyant and submarine torpedoes to Lynch.
+  A different telegram (Lynch's words, not Parker's), so context, not a copy.
+- E528: no copy. 8514 (Page 36) Newport, Baltimore 11 Jan: "The 'Ariel' and 'Sedgwick' were loaded yesterday and have sailed"; 7682 (Page 24) and 9153
+  the 5 Jan orders. E528 is the arrival report at Fort Monroe on the 12th.
+- E500: no copy. 8508 (Page 30) Newport, Baltimore 6 Jan, the Baltic at Swann Point "requires an anchor and chain and seven hundred and fifty tons of
+  coal ... get the anchor from NY" (FM65-B's antecedent for E517 too).
+- E517: no copy. 9153 (Page 259, the 5 Jan order: "Ariel ... Sedgwick ... Victor and Baltic are ordered from Appian [Monroe] to Baptism [Baltimore]");
+  8511 (Page 33) Newport 7 Jan, "the Baltic left for Ft. Monroe last night".
+
+**Print** (OR I/46 pt 2 read in djvu text with page from the running heads; ORN I/11, I/12 phrase grep and KWIC; Butler Corr. V, OR I/47 pt 2 on disk):
+- **E573 is printed: ORN ser. I vol. 12 p.66** (running heads p.66 / p.67 bracket the text in `officialrecords10librgoog`; Google Books snippets of
+  the same page from three other scans, `iFJIAAAAYAAJ`, `oX9AAQAAMAAJ`, `Q-5uZpZFqd8C`): "[Telegram.] Fort Monroe, Va., March 14, 1865 -- 7 p.m.
+  (Received 7:30 p.m.) Monitor Lehigh in from Charleston and will go up the James River immediately. No news of the Montauk. Our troops in possession
+  of Kinston, N. C. O. S. Glisson, Captain and Senior Officer. Hon. Gideon Welles, Secretary of Navy." Word-for-word against the derived reading
+  block: identical except the reading's "[Maj Gen S. A. Hurlbut]" for "Lehigh" (a key collision, s.3), "money tour" for "Monitor" (phonetic, plain),
+  "Kingston" (the key's spelling) for "Kinston", "Glisten" for "Glisson". Martha = 7 PM agrees with the printed hour. The FM65-F reader searched 183
+  volumes without ORN I/12, which had never been on disk.
+- E557: not in ORN I/12 by phrase ("submarine torpedoes", "25th ultimo", "Inspector of Ordnance": no 1865 hit; Lynch occurs only in the volume's
+  Confederate-squadron lists, so the Google scan's OCR of the 1865 part was checked by the E573 positive hit on p.66); be-api '"submarine torpedoes" Lynch Wise "James River"' 0. Located only as the holder copy.
+- E539: **not printed**; ORN I/11 p.634 prints the antecedent and the answer, each a different telegram: Parker to Gibbon, Aiken's Landing, 23 Jan
+  1865 ("some large torpedoes be sunk in the river near them"), and Lynch to Parker, U. S. Ship St. Lawrence off Norfolk, 24 Jan ("The Bureau of
+  Ordnance can not furnish the torpedoes required, and desires to be informed whether those on board the Stromboli or those captured from the rebels
+  will not answer. D. Lynch, Commander and Inspector of Ordnance. Commander W. A. Parker ... Comdg. Fifth Division North Atlantic Squadron,
+  Headquarters Army of the James"). Phrase grep: "insulating wire", "900", "Phlox", "immediate use" 0 in ORN I/11 Jan 1865 pages; be-api
+  '"900 pounds each" torpedoes insulating' only unrelated hits (1934 motor-boating, 1942 Financial Post, an ordnance report on furnaces), two other
+  queries answered 502 and were not retried.
+- E528: not printed. OR I/46 pt 2 pp.105-106 Morgan to Rawlins, Fort Monroe 12 Jan 1865: "Two steamers -- the Ariel (973 men) and the Sedgwick (496
+  men) -- have arrived" (a different telegram, the commissary's); pp.51-52 the 5 Jan order; pp.65-66 Newport, 7 Jan. Phrase grep "no forage vessels",
+  "any reason for delay", "what others are to come" 0; be-api '"Ariel and General Sedgwick"', '"no forage vessels"' 0.
+- E500: not printed. OR I/46 pt 2 p.90 (Terry's GO No. 3, 10 Jan, FV-FM65a) lists the expedition's transports without the Baltic, agreeing with "she
+  will not be sent on the expedition"; pp.51-52 (5 Jan) the Baltic ordered to Baltimore instead. Phrase grep "anchor and chain" hits only ORN volumes
+  in other contexts (KWIC read, rejected); be-api '"will not be sent on the expedition"' 0, '"anchor and chain" Baltic expedition Newport' only
+  unrelated hits (1854 Times, a yacht magazine, a ship-builder's biography).
+- E517: not printed. OR I/46 pt 2 pp.51-52 the War Department's 5 Jan order to Newport (the Baltic among the vessels ordered from Fort Monroe to
+  Baltimore); pp.65-66 Wise for the QMG, 7 Jan, "Has the Baltic left?", and Newport, "The Baltic left for Fort Monroe last night". Phrase grep
+  "consider the order countermanded", "Let her embark troops", "If the Baltic has been ordered" 0; be-api '"Let her embark troops"' 0,
+  '"Baltic" "consider the order" countermanded Newport' only unrelated hits (1904-07 newspapers, a Harper's history, a marine-insurance digest).
+- **Grant Papers vols. 13-14** (Google Books, two more queries per entry, control hit): no snippet from the four volume ids for any of the six.
+  E573's queries returned only the ORN p.66 snippets above.
+- **Unreachable / not searched:** OR I/46 pts 1 and 3 and I/47 pt 1 (not on disk; the Jan-Mar telegrams are in pt 2 and I/47 pt 2), NARA RG 45
+  (Navy area files), RG 74 (Bureau of Ordnance letters), RG 92, RG 107; Chronicling America and the IA newspapers (no press dispatch among the six);
+  JSTOR. Two be-api queries for E539 answered 502 (not retried).
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+Key collisions found by look-up in key.md (a plain word on the page that is also a code word): these tokens are **plain**, not H, and the readers' H
+counts include them. "Grade" counts code-word groups (time words included, as the readers count them).
+- **E539:** "saint" (= Force, p.20) in "Ord Ship saint Lawrence" is plain: the ordnance ship **St. Lawrence** (holder 8538 and ORN I/11 p.634, "U. S.
+  Ship St. Lawrence, Off Norfolk"); the reading's "[Force] Lawrence" is a misfire. "William" (= 100, p.24) in "William ah Parker" is plain: **Wm. A.
+  Parker**, Commander (ORN I/11 p.634). "plaster Prescott" = 5 + Diversion (p.19) = **Fifth Division** (the clerk's homophone; ORN p.634 "Comdg. Fifth
+  Division"; holder 8538 "Comdg 5th Divn"): H, sense C-supported. Mary = 6.30 PM, princess = Captain, polkaing/polkaer = Command-ing/-er, farmer =
+  Norfolk, pony prolong = 900 (8538 "nine hundred pounds each"), yoke = signature: H. **H 13 of 13** (reader 15, less 2 plain). The header's "(the row
+  has 'William ah Parker' and 'Diversion' for Division, M)" can drop the M for both: plain name and Fifth Division.
+- **E528:** "James" in "princess James" is plain (Capt. William L. James, A.Q.M., E500's signer); "Ring galls" plain (Ingalls, as the reader says).
+  "paradise Webster Vinton" closes the telegram: **Webster = Signature (p.23) stands H as a mark, but the group may be the name R. C. Webster, Colonel
+  and Quartermaster at Fort Monroe** (holder 7682 "Col R. C. Webster"; E520 is Webster to Ingalls by the same route): **M**, as FV-FM65a ruled for E519
+  and E534. Jennie = 3.30 PM, palate = Brigadier General, Shade = Forage, wreathe = Telegraph-ed, wedge = Today, Shelter = General (the steamer General
+  Sedgwick), baptism = Baltimore, Whisky = Troops: H. **H 14 + M 1 of 15.**
+- **E500:** four collisions: "Sampson" (= Ferry) in the address J. W. Sampson; **"anchor" (= Donelson, p.9) in "anchor & chain"** -- the reading's
+  "[Donelson] & chain" is a misfire (the header already says anchor); "Baltic" (= Chattahoochee) the steamer; "William" (= 100) in "William L. James".
+  All four plain. Animal = Monroe, Henrietta = 2.30 PM, pebble = 3, pandora = Colonel, vinton = Quartermaster, Baptism = Baltimore, weaseler =
+  Steamer, roman = Expedition, france = New York, walrus = signature: H. **H 11 of 11** (reader 15, less 4 plain). The address "Animal ... for pandora
+  Newport sheaf vinton Baptism" = [Monroe] ... for Colonel Newport, Chief Quartermaster, Baltimore (sheaf = chief, plain-phonetic).
+- **E573:** "Lehigh" (= Maj Gen S. A. Hurlbut, p.17) is plain: **the monitor Lehigh** (print: "Monitor Lehigh in from Charleston"; the page has
+  "money tour Lehigh", money = Monitor, phonetic); the reading's "[Maj Gen S. A. Hurlbut]" and the header's "[Maj. Gen. Hurlbut] ... (M)" are wrong.
+  "Glisten" = Glisson, plain, spelling. Martha = 7 PM, Burton = Secretary of Navy, growl = Washington, zodiac/zebra/unity = period, Brandy =
+  Charleston, Bergen windpipe = James River, torch = Of the, whisky = Troops, Cherub abacus = Kinston, North Carolina, pilgrim = Captain: H and **C**
+  against the print. **C 13 of 13** (reader H 14, less "Lehigh").
+- **E557:** "[Volunteer]" after "Maj. Eckert ," is the header's plain "Washington" (= Volunteer, p.24) read as a code word: plain (the same misfire
+  stands in E529 and E558: s.5). "Sub squdron torpid owes" = **Submarine torpedoes** (clear copy 7768 "Sub marine Torpedoes"; the header's M can go).
+  Farmer gift = Norfolk 16, polkaer = Commander x2, growl = Washington, harsh person = 25, Bergen windsor = James River, unity = period, female = 14,
+  plague = 6, yoke = signature: H and **C** against the clear copy. **C 13 of 13** (reader H 14, less the header word). "decided" is the period text
+  (the clear copy has it), not a reading error.
+- **E517:** "Sampson" (= Ferry) and "Baltic" (= Chattahoochee) plain (the reader flagged Baltic). "on board weasler tremble urn": weasler = steamer
+  (plain-phonetic), tremble = North (p.22) H, "urn" plain -- **"[North]urn" is unexplained** (a steamer's name, e.g. Northerner, is a guess): **M**.
+  "Are M Newport" = R. M. Newport (plain). Animal/Appian = Monroe, Jennie = 3.30 PM, paradise = Colonel, vinton = Quartermaster, baptism = Baltimore,
+  unity/zebra = period, quorum = Embark, youth = signature, Bender = Qr Master Genl U.S.: H; whiskey = Troops: S (KEY-TW). **H 10 + S 1 + M 1 of 12**
+  (reader H 14 + S 1, less 2 plain, 1 H -> M). The "Counter man dead" = countermanded (plain-phonetic) reads with 9153 and 8511: the Baltic, ordered
+  from Monroe to Baltimore on 5 Jan, had left Baltimore for Monroe on the night of the 6th (Newport, 7 Jan), so the countermand came late (E525).
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E539 | **N3** (weak: the substance is in the holder's clear text of Lynch's forward, 8538) | period | **D3** (H 13/13; external: holder 8538 Lynch to Wise 24 Jan, "12 torpedoes of nine hundred pounds each with insulating wire are required by Comdr Parker Comdg 5th Divn James river for immediate use"; ORN I/11 p.634 Lynch to Parker 24 Jan, the Bureau cannot furnish the torpedoes, "Comdg. Fifth Division") | Parker's own telegram not located in print, clear copy or decipherment |
+| E528 | **N3** | period | **D3** (H 14 + M 1 of 15; external: OR I/46 pt 2 pp.105-106 Morgan, Fort Monroe 12 Jan, the Ariel and the Sedgwick have arrived; holder 8514 Newport 11 Jan, they sailed from Baltimore) | no prior plaintext or decipherment located |
+| E500 | **N3** | period | **D3** (H 11/11; external: OR I/46 pt 2 p.90 GO No. 3, the expedition's transports without the Baltic; holder 8508 Newport 6 Jan, the Baltic needs an anchor and chain, to be had from New York) | no prior plaintext or decipherment located |
+| E573 | **N1** | period, text known | D3 (C 13/13 against the print; D4 not claimed: no fresh rule-7 re-derivation) | **printed, ORN ser. I vol. 12 p.66** (Glisson to Welles, 14 Mar 1865, 7 p.m.); holder clear copy 7823 |
+| E557 | **N1** | period, text known | D3 (C 13/13 against the clear copy) | **holder clear copy at another pointer: 7768** (Washington clear book p.110, Lynch to Wise, 16 Feb 1865) |
+| E517 | **N3** | period | **D3** (H 10 + S 1 + M 1 of 12; external: holder 9153 / OR I/46 pt 2 pp.51-52 the 5 Jan order sending the Baltic from Monroe to Baltimore; holder 8511 / pp.65-66 Newport 7 Jan, "the Baltic left for Fort Monroe last night") | no prior plaintext or decipherment located |
+
+- Not N4 for any N3: Grant Papers vols. 13-14 searched by Google Books snippets only, NARA RG 45/74/92/107 unread, OR I/46 pt 2 read in OCR.
+- D2+ clause check (rule 4a, depth bar): each N3 has a contiguous H stretch past the authentication distance plus code values that read in two or more
+  contexts (Whisky = Troops, Baptism = Baltimore, Vinton = Quartermaster, Animal/Appian = Monroe, passim in mssEC 25) and the true sentence below.
+- **Safe sentences** (each: "Read at grade H with War Department Cipher No. 1 ...; not located in the Official Records ser. I vols. 46-47, ORN ser. I
+  vols. 11-12, Butler's correspondence vol. V, Grant Papers vols. 13-14 by Google Books snippet, or the Huntington's full-text search (searched 10 Oct
+  2026)"): E539: "on 23 Jan 1865, from Army of the James headquarters, Commander Wm. A. Parker, commanding the Fifth Division, asked Captain Lynch on
+  the ordnance ship St. Lawrence near Norfolk, through Sheldon at Fort Monroe, to send immediately by the Phlox the large 900-pound torpedoes with
+  insulating wire, for which he had immediate use." E528: "on 12 Jan 1865 Fort Monroe told Brig. Gen. Ingalls at City Point that no forage vessels had
+  come since Captain James telegraphed that day, that the Ariel and the General Sedgwick had arrived from Baltimore with troops, and that it did not know
+  what others were coming or why they were delayed." E500: "on 3 Jan 1865 Capt. William L. James at Fort Monroe told Colonel Newport, chief
+  quartermaster at Baltimore, that as he could not furnish an anchor and chain in time, the steamer Baltic would not be sent on the expedition and
+  Newport need not send to New York for them." E517: "on 6 Jan 1865 Fort Monroe passed to Colonel R. M. Newport at Baltimore the Quartermaster
+  General's order that if the Baltic had been ordered to Monroe the order was countermanded and she should embark troops as before ordered."
+  E573 (N1): "Glisson's telegram of 14 Mar 1865 is printed in ORN ser. I vol. 12 p.66; this ledger row is its cipher copy, read with Cipher No. 1, every
+  code word agreeing with the print." E557 (N1): "Lynch's telegram of 16 Feb 1865 to the Bureau of Ordnance is in clear in the Huntington's own
+  Washington book (pointer 7768); this ledger row is its cipher copy, every code word agreeing."
+  Depth sentences (D3) = the N3 clauses without the search tail.
+- **Unsafe:** any "first", "new", "unpublished" for any of the six; any N3 wording for E573 or E557; "Hurlbut" in E573; "Force Lawrence", "100 A.
+  Parker" or "Diversion" as a reading in E539; "Donelson" in E500; "Ferry" for Sampson in E500/E517.
+
+### 5. Fixes for the next FIX job (not applied here; reading.md is decode.py output)
+E539: "saint" plain (St. Lawrence), not [Force]; "William" plain (Wm. A. Parker), not [100]; "plaster Prescott" = Fifth Division (H, C-supported);
+header: drop the two M's, add ORN I/11 p.634 and holder 8538 as context; image-read whole by FV-L15d. E528: "James" plain (already plain); Webster M
+(signature or Col. R. C. Webster); header "(name not in the row)" -> "signed [Col. R. C.] Webster, Quartermaster (M)"; add OR I/46 pt 2 pp.105-106 and
+holder 8514. E500: "Sampson", "anchor", "Baltic", "William" plain (not [Ferry], [Donelson], [Chattahoochee], [100]); header: the row runs onto **p.304,
+pointer 5848 row 0**, image-read by FV-L15d (not "no image"). **E573: class N1 -- header and reading: "Lehigh" plain (the monitor Lehigh), not [Maj Gen S.
+A. Hurlbut]; "[Secretary of the Navy at Washington] (M)" -> C; cite ORN I/12 p.66 and holder 7823.** **E557: class N1 -- header: "[submarine torpedoes]
+... M" -> C (clear copy 7768, "Sub marine Torpedoes"); the "[Volunteer]" after "Maj. Eckert ," is the plain header word Washington (also in E529,
+E558: check every "Maj. Eckert , Washington" row).** E517: "Sampson", "Baltic" plain; "tremble urn" M. All six: header may say "image-read by FV-L15d,
+matches the transcription".
+Requests: hdl.huntington.org 25 (17 CONTENTdm queries incl. control, 1 dmGetItemInfo, 7 IIIF pages; one take 13:00-13:04 UTC, all 200); archive.org
+6 (metadata 1, advancedsearch 1, djvu 4: ORN I/11 200, `officialrecordso0012unse` 500, its hocr 500, `officialrecords12librgoog` = ORN I/20,
+`officialrecords12unkngoog` = ORN I/19, `officialrecords10librgoog` = ORN I/12 200), 2 s apart; be-api.us.archive.org 11, 1.8 s apart (2 x 502);
+www.googleapis.com 13, 1.6 s apart.
+For LANE LEDGER-15 (account 1).
