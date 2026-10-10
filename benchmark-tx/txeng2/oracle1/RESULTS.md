@@ -298,3 +298,55 @@ fd7f1e6a09274bddd7906cd16b566e9ec7d55fefce9f2e561f69e9bc8272aa35  sorter/focus.t
 f146df0b3dcaf6da758ee045940d0eaab4be164abb0f9d1763f89a6bb405d57b  build.sh
 ```
 Openings of eval truth: 0. No read, no truth, no pass opened.
+
+## OL1-PAGE per hand (PREREG-txeng2-21 "OL1-PAGE, the next rule", da5f3d10a; TXE2-OL1PAGE worker, account-4, Opus 5.5; 10 Oct 2026 03:05-03:0x UTC by date -u)
+
+Read-free, nothing re-cut: `split_per_hand.py` splits the re-cut inputs above into sorter/<hand>/ (signs, labels, marks, focus,
+pages.json, cipher_lines.tsv); on the luzerne inputs only, EVERY box (all 445, sign and mark) is padded 4 px a side, clamped to its crop,
+before the tile is cut and measured. Same piles, marks (--marks), focus notes and lede as the combined page (lede says "one hand"; title
+"Oracle boxes (<hand>): verify the cuts"). Plain `tools/sorter_preflight.py <page> --cipher-lines sorter/<hand>/cipher_lines.tsv
+--pages-json sorter/<hand>/pages.json`, gate untouched. Build: `build.sh` (last block).
+
+**sorter/oracle_boxes_vivonne.html** -- 541 tiles, 99 focus, 2.29 MB -- preflight: PASS
+```
+PASS template: ok, Fix the cut present, marker 2026-10-09.4
+PASS answerable: 99 focus tiles, 2 named piles of 2, 0 unanswerable
+PASS right line: 541 tiles; 0 tile(s) off the cipher lines, 24 of 24 listed lines have tiles; shape: 1 wide (>2.5x median 51 px), 6 strip-height boxes, 4 ink outside 3-60% of 541 measured; 11 = 2.0% (limit 5%)
+PASS contact sheet: 24 tiles -> sorter/vivonne/oracle_boxes_vivonne.preflight.png (seed 20261006)
+PASS colour: tokens, tints, box colours and person-facing text pass tools/cvd_check.py
+preflight: PASS
+```
+**sorter/oracle_boxes_birago.html** -- 343 tiles, 33 focus, 2.14 MB -- preflight: PASS
+```
+PASS template: ok, Fix the cut present, marker 2026-10-09.4
+PASS answerable: 33 focus tiles, 2 named piles of 2, 0 unanswerable
+PASS right line: 343 tiles; 0 tile(s) off the cipher lines, 36 of 36 listed lines have tiles; shape: 0 wide (>2.5x median 65 px), 3 strip-height boxes, 11 ink outside 3-60% of 343 measured; 14 = 4.1% (limit 5%)
+PASS contact sheet: 24 tiles -> sorter/birago/oracle_boxes_birago.preflight.png (seed 20261006)
+PASS colour: tokens, tints, box colours and person-facing text pass tools/cvd_check.py
+preflight: PASS
+```
+**sorter/oracle_boxes_luzerne.html** -- 445 tiles, 83 focus, 0.89 MB -- preflight: PASS
+```
+PASS template: ok, Fix the cut present, marker 2026-10-09.4
+PASS answerable: 83 focus tiles, 2 named piles of 2, 0 unanswerable
+PASS right line: 445 tiles; 0 tile(s) off the cipher lines, 11 of 11 listed lines have tiles; shape: 0 wide (>2.5x median 19 px), 0 strip-height boxes, 12 ink outside 3-60% of 445 measured; 12 = 2.7% (limit 5%)
+PASS contact sheet: 24 tiles -> sorter/luzerne/oracle_boxes_luzerne.preflight.png (seed 20261006)
+PASS colour: tokens, tints, box colours and person-facing text pass tools/cvd_check.py
+preflight: PASS
+```
+Counts match the lane's expectation from per-hand medians (vivonne 11/541, birago 14/343); luzerne 31 -> 12 of 445 after the uniform pad.
+The combined page sorter/oracle_boxes_sorter.html (FAIL 6.9%, above) stays withheld. Folder benchmark-tx/txeng2/oracle1/ is 30 MB
+(sorter/ 25 MB); the combined page + its JSON (9.6 MB) are the obvious thing to drop if the folder must shrink -- left for the lane.
+
+sha256 (committed with this section):
+```
+5416ec4d798b90a7d37eedd982cdc81324af2b26d213a7c6b679735dcbf3cfd4  sorter/oracle_boxes_vivonne.html
+741f38a735a17e85767e51ce77cf37c1de1d9c0c0fc0209fb61b34e79d5be593  sorter/oracle_boxes_birago.html
+444292ea74e7ea43868265a68fcda0bbe8daa6559518c557fa0a41bd16079811  sorter/oracle_boxes_luzerne.html
+eae68e3beeb72aa133194f06e6222471635d9ad03047e719ce3bb28004aadeca  sorter/vivonne/oracle_boxes_vivonne.json
+ad3e4dddd49f79e39b048b802006ca6a78f6b0e34b1d3486b7f146930deb0baf  sorter/birago/oracle_boxes_birago.json
+3b4cbb6ba639969c48fcea8cfef50558335bca2ac6c84e998a15a2f481085884  sorter/luzerne/oracle_boxes_luzerne.json
+7a0e82d807f8c4b8cf6b33abd8a496a42a728040078aacf6f9a08303f6d88e9c  split_per_hand.py
+60514db02a24178d2642ef8d005a708bce32af3028e7990dc860fae55356c839  build.sh
+```
+Openings of eval truth: 0. No read, no truth, no pass opened. Nothing published (the orchestrator publishes for L74).
