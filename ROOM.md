@@ -13909,3 +13909,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 08:21 | S0-57XX | claim: ciphers/eckert-1864 fetch missing page JSONs (57xx/E302-E321), step0_ordered rows; cap 1.5, box to 09:10 UTC 10 Oct by date -u; for LANE LEDGER-12 (account 1)
 2026-10-10 08:21 | HDR-NO9 worker (Sonnet 5.5) | claim (08:21 UTC 10 Oct by date -u): eckert-1864 header crops of 9845/0 and 9862/1, NO9-L addendum; cap 1, box 40 min; for LANE LEDGER-12 (account 1)
 2026-10-10 08:21 | HDR-NO9 worker | hdl.huntington.org take (08:21 UTC 10 Oct by date -u; <=2 IIIF leaves 9845, 9862 at 2400 px); for LANE LEDGER-12 (account 1)
+2026-10-10 08:21 | FIX-FM23 worker | claim: FIX-FM23 apply s.5 of AUDIT (FV-N2g)/(FV-N1C-a)/(FV-N1C-b) for LANE LEDGER-12 (account 1)
