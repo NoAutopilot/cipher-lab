@@ -1,0 +1,4 @@
+entry	pointer	all_overlap	code_overlap	code_words	control_all_p95	step0
+O9-DA	9709	0.941 (32/34)	0.500	washington colonel	0.059	clear-copy
+O9-DD	9687	0.826 (38/46)	0.000	major quartermaster new york sec war quartermaster general	0.043	cipher transcription (not a clear copy)
+O9-DF	9699+9700	0.809 (55/68)	0.154	washington captain quartermaster new york maine sailing vessels harbor new york quartermaster general	0.074	cipher transcription (not a clear copy)

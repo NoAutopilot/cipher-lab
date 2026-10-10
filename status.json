@@ -12807,6 +12807,132 @@
       "depth_sentence": "That evening Fox ordered Brady arrested and sent to Fort Lafayette with General Dix's help.",
       "depth_check": "code clause: place him in husband Call upon Agate for Assistance Atlas = Fort La Fayette ... General Dix ... Fox; external: holder 4491 ('put in Ft Lafayette ... have Gen Dix instructed'); second audit: holder 10193 (Olcott's 3.35 PM reply 'with a Navy operation'), which precedes this 9.30 PM order",
       "depth_note": "5 H of 5 code words"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-O9b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-O9b verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Non-decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-O9b)' section 4",
+      "reading_version": "O9R-1 10 Oct 2026 (reading-no9.md), grades as in AUDIT (FV-O9b) s.3 (transcription fixes in s.5 pending a FIX job)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 9): Col. H. S. Olcott in Washington to R. C. Morgan at his New York office, 19 Apr 1864: send Fox the full names of Simpson, Barlow, Heustis, Hunter and Kilsey; ask at the Brooklyn Navy Yard whether the master painter has absconded (O9-DA)",
+      "line": "Re-read with War Department Cipher No. 9 (three code words; the message is in clear in the Huntington's public transcription of the ledger): on 19 Apr 1864 Col. H. S. Olcott, in Washington, told R. C. Morgan at his New York office to send Fox the full names of Simpson, Barlow, Heustis, Hunter and Kilsey and to ask at the Brooklyn Navy Yard whether the master painter had absconded; the key supplies the place, the hour and Olcott's rank. Plaintext already public (N1); the telegram not located in print (searched 10 Oct 2026).",
+      "gap": "N1 one audit (FV-O9b, 10 Oct 2026): step 0, body clear in the holder transcription of pointer 9709 (0.941); key adds place, hour, rank; leaf eye-checked: 'Can'/'Canon' are plain 'Care'/'Spl Comr' (FIX job, AUDIT (FV-O9b) s.4 s.5); holder 4551 is the office's next-day answer (context)",
+      "depth": "D1",
+      "completeness": "3 H of 3 code-word groups after the leaf fix (2 M as filed); message clear in the holder's transcription",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.49, pointer 9709, O9-DA"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.49, pointer 9709, O9-DA",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.49, pointer 9709, O9-DA"
+      ],
+      "depth_sentence": "Olcott had his New York office send Fox the full names of the men he wanted arrested, and the office sent six names the next day (holder 4551).",
+      "depth_check": "D2V-E74 depth ruling (body code words only; address, date, time, signature excluded): no body code word (Pagan dateline, Viola hour, Vesper rank); holder 4551 stands as context",
+      "depth_note": "3 H of 3 code-word groups after the leaf fix (2 M as filed); message clear in the holder's transcription",
+      "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-O9b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-O9b verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Non-decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-O9b)' section 4",
+      "reading_version": "O9R-1 10 Oct 2026 (reading-no9.md), grades as in AUDIT (FV-O9b) s.3 (transcription fixes in s.5 pending a FIX job)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 9): Quartermaster General Meigs to Major Van Vliet, New York, 16 Mar 1864 11 AM: reserve accommodation on the transport Fulton for Miss Dix's official visit to the Department of the South, and three staterooms; hold the Fulton (O9-DD)",
+      "line": "Re-read with War Department Cipher No. 9 (six code words; the message is in clear in the Huntington's public transcription of the ledger): at 11 a.m. on 16 Mar 1864 Quartermaster General Meigs told Major Van Vliet, quartermaster at New York, to reserve accommodation on the transport Fulton for Miss Dix, who expected the Secretary of War's authority for an official visit to the Department of the South, to reserve three staterooms for officers, and not to let the Fulton sail until further advised; the key supplies the hour, the addressee's rank and office, 'Secretary of War' and Meigs's title. Plaintext already public (N1); the telegram not located in print (searched 10 Oct 2026).",
+      "gap": "N1 one audit (FV-O9b, 10 Oct 2026): step 0, body clear in the holder transcription of pointer 9687 (0.826); key adds hour, rank, office, Secretary of War, QMG; leaf eye-checked (label (9), 11 am; holder omits 'mark'); NYT 1 Apr 1864 context",
+      "depth": "D1",
+      "completeness": "6 H of 6 code-word groups; message clear in the holder's transcription",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.27, pointer 9687, O9-DD"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.27, pointer 9687, O9-DD",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.27, pointer 9687, O9-DD"
+      ],
+      "depth_sentence": "Meigs held the transport Fulton at New York for Dorothea Dix's official visit to the Department of the South.",
+      "depth_check": "D2V-E74 depth ruling (body code words only; address, date, time, signature excluded): body code word Arabia (Secretary of War) only; NYT 1 Apr 1864 (Fulton from Port Royal with Miss Dix) stands as context",
+      "depth_note": "6 H of 6 code-word groups; message clear in the holder's transcription",
+      "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-O9b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-O9b verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Non-decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-O9b)' section 4",
+      "reading_version": "O9R-1 10 Oct 2026 (reading-no9.md), grades as in AUDIT (FV-O9b) s.3 (transcription fixes in s.5 pending a FIX job)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "3",
+        "other": "1"
+      },
+      "depth_pct": 69.2,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 9): Quartermaster General Meigs to Captain S. L. Brown, New York, 9 Apr 1864 12.30 PM: forage on time, no expensive steamers, ship hay at once on sailing vessels, one large propeller from New York (O9-DF)",
+      "line": "Re-read with War Department Cipher No. 9 (the message is in clear in the Huntington's public transcription of the ledger except some code words): at 12.30 p.m. on 9 Apr 1864 Quartermaster General Meigs told Captain S. L. Brown, quartermaster at New York, to have the forage at a place left unread on time, to avoid expensive steamers, to ship hay at once on good sailing vessels rather than send steamers to Maine for it, and to dispatch one large propeller from New York; three place words are unread. Plaintext largely public (N1); the telegram not located in print (searched 10 Oct 2026).",
+      "gap": "N1 one audit (FV-O9b, 10 Oct 2026): step 0, body clear in the holder transcription of pointers 9699-9700 (0.809); key adds hour, ranks, Maine, sailing vessels, Harbor, New York; Muss, Mud, Willow unread (M); leaves eye-checked (pencil interlinear words not read)",
+      "depth": "D1",
+      "completeness": "9 H of 13 code-word groups (Muss, Mud, Willow unread, Abbott M); message clear in the holder's transcription",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) pp.39-40, pointer 9699-9700, O9-DF"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) pp.39-40, pointer 9699-9700, O9-DF",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) pp.39-40, pointer 9699-9700, O9-DF"
+      ],
+      "depth_sentence": "Meigs told Brown to move hay by sailing vessel rather than by expensive steamers.",
+      "depth_check": "D2V-E74 depth ruling (body code words only; address, date, time, signature excluded): body code words Cadmus, swallow, Saffron, Merlin H, Muss, Mud, Willow M -- no clause above the authentication distance",
+      "depth_note": "9 H of 13 code-word groups (Muss, Mud, Willow unread, Abbott M); message clear in the holder's transcription",
+      "text": "known"
     }
   ],
   "lanes": [

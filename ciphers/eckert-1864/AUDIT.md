@@ -15136,3 +15136,149 @@ Requests: archive.org 12 (6 page_numbers.json + 6 page images) + 2 djvu (warofre
 hdl.huntington.org 11 (6 CISOSEARCHALL, 5 IIIF), all 200; www.googleapis.com 2; be-api.us.archive.org 1; www.loc.gov 5 (1 cut off and one retry
 with --http1.1), tile.loc.gov 1 (partial transfer, OCR read to the cut); chroniclingamerica.loc.gov 1 (308 to loc.gov). seven_day allowed_warning
 not observed by me. For LANE LEDGER-10 (account 1).
+
+## AUDIT (FV-O9b)
+
+Verifier FV-O9b (account 1, for LANE LEDGER-10), 10 Oct 2026, 04:33-04:5x UTC by `date -u`; a separate session from the readers O9-BOOK and O9R-1 and from
+FV-O9a, not protecting their conclusions. Scope: first audits of **O9-DA** (9709/1), **O9-DD** (9687/1) and **O9-DF** (9699/1, continued on 9700) in
+`ciphertext-no9.txt` (Cipher No. 9 = the older vocabulary of mssEC 67; Washington sent ledger mssEC 18 = Huntington object 10074). Nothing decoded beyond
+key look-ups in key-no9.md (and key.md / key-no2.md for the book check). Key source for all three: `period`. `decode_no9.py --check` -> "reading-no9.md is
+current" (exit 0, 04:3x). No spec for eckert-1864, so `judge_plaintext.py` was not run by me (O9R-1's run: FAIL -1.094, reported there). Intake gate (04:3x):
+`eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Scripts: `ms18/fv_o9b_step0.py` (+ `.out`),
+`ms18/fv_o9b_step0_leads.py` (+ `.out`), `ms18/fv_o9b_grep.py` (+ `.out`), `ms18/fv_o9b_hdl.py` (+ `.out`), `ms18/fv_o9b_fts.py` (+ `.out`),
+`ms18/fv_o9b_gb.py` (+ `.out`). Images and crops to scratch, not committed.
+
+### 0. Step 0: is the body clear in the holder's own transcription? (LANE LEDGER-10 lesson, AUD2-LEDGER-38 / E378)
+`ms18/fv_o9b_step0.py`, disk only (sources/mssEC18/p<pointer>.json), the FV-MS18p instrument on reading-no9.md: `all` = decoded content words found in
+order in the transcription / decoded content words; `code` = meanings of the code groups found in the transcription; control = `all` against 20 random
+other mssEC 18 pages, p95.
+| ID | pointer | all overlap | code overlap | control p95 | step 0 |
+|---|---|---|---|---|---|
+| O9-DA | 9709 | 0.941 (32/34) | 0.500 (1/2; the hit is 'Washington' in the NEXT entry's dateline on the same page, so 0/2 on its own entry) | 0.059 | **body clear in holder transcription** |
+| O9-DD | 9687 | 0.826 (38/46) | 0.000 | 0.043 | **body clear in holder transcription** |
+| O9-DF | 9699+9700 | 0.809 (55/68) | 0.154 (2/13: 'New York' found elsewhere on the pages) | 0.074 | **body clear in holder transcription** |
+All three pass the brief's test (>= half the decoded content words, in order) by a wide margin over the control. The reason is structural, the same as
+E378's (AUD2-LEDGER-38): these No. 9 entries were sent largely in plain words, and the code replaces only the place, the hour, ranks and offices and a few
+nouns, so the Huntington's public transcription of the ledger page already carries the message; the meanings the key adds are 0 of 2, 0 of 6 and about 0 of
+13 in that transcription. Per the brief, all three are step-0 items: **N1 (key `period`, text known), depth at most what the key adds.**
+Lead for the orchestrator (not a re-audit; `ms18/fv_o9b_step0_leads.py`): the same figures for FV-O9a's four No. 9 entries are O9-DC 0.830 (39/47, code 0.000),
+O9-DE 0.640 (16/25, 0.000), O9-DH 0.684 (13/19, 0.167), O9-DI 0.400 (6/15, 0.000). By the brief's threshold O9-DC, O9-DE and O9-DH are the same shape
+as these three and as E378 and stand at N3 in AUDIT (FV-O9a) and AUDIT 2 (AUD2-LEDGERN2-5); O9-DI is below the threshold. FV-MS18p's tool also required
+`code` >= 0.5 for a clear copy (its E376 at all 0.588 was filed "cipher transcription"), which no No. 9 entry can meet: the two readings of the rule disagree
+exactly on entries like these. Which reading governs is the orchestrator's call; I applied the brief's wording, as AUD2-LEDGER-38 did for E378.
+
+### 1. Book call re-tested on the leaf, and the image check
+Leaves 9709, 9687, 9699, 9700 fetched at IIIF 2400 px (scratch) and every line of the three entries read on crops against the holder transcription.
+- **O9-DA (9709):** header "John Horner (N.Y.) Wash'n D.C. Apr. 19th 1864", no label, no header time (confirmed). Body word for word as the holder EXCEPT two
+  groups O9R-1 graded as unread code words: the leaf reads "R C Morgan **Care** Vesper Olcott" (holder "Can"; = care of [Colonel] Olcott) and the last line
+  reads "Olcott **Spl Comr &c**" (holder "$pd Canon & C"; = Special Commissioner &c, the style Olcott signs in holder 4551: "H S - Ol cott special
+  Commissioner &c"). Neither is a code group: O9-DA has no unread token. "Brooklyn Yard" (singular) and "Haestis" are as the holder has them.
+- **O9-DD (9687):** header "Jno Horner N.Y. (9) Washn Mar 16th 1864 11 am" (label **(9)**, time 11 am, confirmed). Body word for word as the holder, except the
+  last line reads "sig MC Meigs Aragon **mark** Confidential": the holder omits "mark". "Mark" has no row in key-no9.md (No. 2 tables Mark = July); as
+  read it is plain ("mark [it] Confidential"), M until a key row says otherwise.
+- **O9-DF (9699-9700):** header "John Horner N.Y. (9) Wash'n Apr 9th 1864 12.30 Pm" (label **(9)**, time 12.30 PM, confirmed). Body word for word as the
+  holder (Muss, Cadmus, swallow, Mud Saffron, Merlin, Willow, Abbott all so on the leaf), except the line the holder gives as "period You are in changes in
+  charge" reads on the leaf "period You are in Charge" (one "in", no "changes"; the doubling is the holder's). The leaf also carries, in a lighter pencil
+  hand, words and digits written over and under the ledger words, which the holder transcription leaves out: under the last line of 9699 "much ... 4 ... 2
+  ... design ... man ... 6", over 9700's lines "small", "worthless", "game", "return", "late", "against", "here" and digits 2-9, under the signature "up",
+  "Foster", "message", "yates", and below it "139 w chg Q.M.G." and "No 10 N.Y." with a further word or two. Not interpreted here (a verifier does not
+  decode): "139 w chg Q.M.G." looks like the operator's word count and charge to the Quartermaster General; the interlinear words and numbers are a lead for a
+  reader, not a reading.
+**Book.** Every code word was looked up in all three books:
+- O9-DA: Pagan = Washington (No. 9) agrees with the plain dateline; No. 1 Battery, No. 2 Artillery. Vesper = Colonel (No. 9; Olcott is "Col." in holder 10202
+  and 7423), No. 1 Position, No. 2 Re-enforcements. Viola = 12.30 PM in No. 9 and No. 1 (no header time to test). No label. **No. 9, on two words**, the
+  weakest of the three book calls but the only reading under which the address line makes sense.
+- O9-DD: label (9); Francis = 11 AM = the header's 11 am under No. 9 only (No. 1 12, No. 2 12.30 AM); "Village Van Vleet Vincent Midas" = Major Van Vleet,
+  Quartermaster, New York (No. 1 Pontoon ... Quartermaster ... Heintzelman, No. 2 Rebel ... Rifle Pits ... Kelly); Arabia = Secretary of War (No. 1
+  Connecticut, No. 2 Big Black); Aragon = Quartermaster General beside the plain signature "MC Meigs" (No. 1 Missouri, No. 2 Kanawha). **No. 9.**
+- O9-DF: label (9); Viola = 12.30 PM = the header time (No. 9 and No. 1; No. 2 12 midnight); Vulcan Vinton Midas = Captain ... Quartermaster ... New York (No. 1
+  Pending ... Quartermaster ... Heintzelman, No. 2 Resist ... Rations ... Kelly); "ship it instantly upon good swallow" = sailing vessels, set against "do not
+  use steamers" (No. 1 Invest, No. 2 Light); Cadmus = Maine as the place steamers would go "after hay" (No. 1 Dalton, No. 2 Corinth); Saffron = Harbor in "[Mud]
+  Harbor has a deep entrance" (No. 1 Fortify, No. 2 Force); Merlin = New York (No. 1/No. 2 Heintzelman/Kelly); Abbott, the tail, is the printed pair word of
+  Aragon (key-no9.md "Abbot/Aragon" = Quartermaster General) spelt with tt beside "M C Meigs". **No. 9**, on header and sense together.
+Key rows second-eyed: none re-read on mssEC 67 images by me (only pp.[22] and [24] are on disk, and FV-O9a re-read the five rows on them that these entries
+share: Venus/Vesper, Village, Vincent/Vinton). Rows used here and not second-eyed: Pagan/Pagoda, Virtue/Vulcan, Camden/Cadmus, Saffron/Sable,
+Stanley/Swallow, Merlin, Arabia, Abbot/Aragon, the TIME page; each is corroborated by its context above (datelines, header times, Meigs's signature,
+the steamers/sailing-vessels contrast), not by a second read of the key page.
+
+### 2. Holder's full text, duplicates and print
+**Huntington CONTENTdm** (p16003coll11; one take 04:3x, 17 requests: 12 CISOSEARCHALL, 1 item info, 4 IIIF; all 200): 'Simpson Barlow' 1 (9709),
+'master Painter' 1 (9709), 'Painter absconded' 1 (9709), 'Olcott Morgan' 4 (9709; 10202 = R. C. Morgan "in charge" to Col. Olcott, 27 Mar 1864; 4477
+Olcott to Fox 25 Feb 1864; 7423 Morgan to Olcott Oct 1863: all other telegrams), 'Fulton Dix' 8 (9687; the rest 1863 Fulton steamer/Gen. Dix/A. Fulton
+press agent items, none this), 'Fulton state rooms' 1 (9687), 'Van Vliet Fulton' 2 (7275 Jul 1863, 7726 Jan 1865: other), 'Brown forage' 4 and 'Brown hay' 7
+(9699 and 1864-65 forage telegrams to/from Col. S. L. Brown, 9733 = 7 May 1864, 9899 = 25 Nov 1864, 9960 = 18 Feb 1865: other telegrams of the same
+office), 'hay sailing vessels' 0, 'large propeller' 1 (9700), 'Muss' 16 (other ledger pages using the code word; not opened). Positive control: each own
+pointer found. **No clear copy of any of the three at another pointer.**
+**The incoming side (FV-O9a's lead): holder 4551** (dmGetItemInfo; "Page 110", received 2.35 PM, New York 20 Apr 1864, "For Capt Fox full names are David
+Heustis Samuel M Simpson Richard D Barlon James Hunter Chas T Kilsey William Atkinson the latter has gone to New Orleans for his health for thirty days the
+others are all here and they should all be arrested now for Stover has a heavy amount of triplicates ready to pass ... I will see to the siezure of those
+Books & papers that Wilson requires signed H S - Ol cott special Commissioner &c"): this is the New York office doing the next day what O9-DA asked of it --
+the same five names (Simpson, Barlow/Barlon, Haestis/Heustis, Hunter, Kilsey) sent "for Capt Fox", with Wilson named in both. Context (I), not a copy:
+it confirms the address line (Olcott's office, Fox) and the sense, not the code words.
+**Duplicate diff:** the on-disk text of mssEC 18 and mssEC 19 is the page JSON already searched by the CONTENTdm query (all pointers); no second copy.
+**Print** (disk: every IA djvu text in sources/ia-fulltext/print-check, 171 files, of which the war-of-rebellion items are IA warofrebellion33unit, 352unit, 361unit,
+362unit, 372unit, 403unit, 431unit (= OR I/47 pt 2 per FIX-FM16), 432unit, 452unit, 0207rootrich and officialrecordso0009/0010/0015/0021unse (volume
+numbers not re-checked by me), plus Butler's Private and Official Correspondence IV-V and Baker's History of the Secret Service:
+letters-only grep for 22 phrases from the three bodies, `ms18/fv_o9b_grep.out`): no body phrase in any volume ("forty thousand bushels of grain", "quantity
+of forage to be placed", "do not use steamers", "reserve accommodations", "three state rooms", "master painter", "full names of" ... 0 in the OR volumes;
+the 'olcott', 'van vliet', 'miss dix' hits are other documents). IA be-api (all items; `ms18/fv_o9b_fts.out`): "quantity of forage to be placed" 0,
+"forty thousand bushels of grain and seven hundred tons of hay" 0 (the 8 Apr sibling 9699/0), "one large propeller" 146 (none 1864), '"master painter"
+"absconded" Brooklyn' 1045 (none this), '"Heustis" "Simpson" "Kilsey"' 92 (genealogies, none 1864), '"Miss Dix" "Fulton" "Department of the South"' 499:
+**New York Times 1 Apr 1864** (IA `sim_new-york-times_the-new-york-times_1864-04-01_13_3907`, snippet): "Arrived. U.S. steam transport Fulton, from Port
+[Roy]al ... George Gale, Miss Dix, Mrs. Hooker" -- Miss Dix came back from the Department of the South on the Fulton at the end of March: context for O9-DD
+(I), not the telegram. "reserve accommodations on the Fulton" and '"Olcott" "Heustis"' answered 502 twice (one retry each, then stopped: unreachable this
+session). Google Books (key, country=US; 4 queries, `ms18/fv_o9b_gb.out`): 0 relevant.
+- **All three -> not located** in print (the telegram texts); context for O9-DA (holder 4551) and O9-DD (NYT 1 Apr 1864).
+- Not searched: OR I/35 pt 1 and I/33's Department of the South correspondence beyond the cached volume, OR III/4, ORN, the Meigs, Fox and Olcott papers,
+  Dix's papers, NARA RG 92 (QMG letters sent) and RG 107, the New York press of 16 Mar-1 Apr 1864 page by page, HathiTrust, JSTOR. For an N1 item these do
+  not change the class (the text is already public in the holder transcription); they would matter only for N0 (a printed decipherment), not expected.
+
+### 3. Grades and readings (reading-no9.md as of this audit; no change proposed to any code value)
+- **O9-DA:** Pagan = Washington, Viola = 12.30 PM, Vesper = Colonel: **H 3**. The two M tokens 'Can' and 'Canon' are transcription errors of plain "Care" and
+  "Spl Comr" (s.1): after the fix the entry has **H 3 of 3**, no unread token. Reading: "[Washington] Apr. nineteenth [12.30 PM]. For R. C. Morgan, care [Colonel]
+  Olcott, ninety-three Franklin St. Send immediately to Secy. Fox full names of Simpson, Barlow, Haestis, Hunter, Kilsey. Then enquire at Brooklyn Yard if master
+  Painter has absconded. All right here. Probably return with Wilson tonight. H. S. Olcott, Spl. Comr. &c." Body code words (D2V-E74 ruling: address, date,
+  time and signature excluded): none.
+- **O9-DD:** Francis = 11 AM, Village = Major, Vincent = Quartermaster, Midas = New York, Arabia = Secretary of War, Aragon = Quartermaster General: **H 6 of
+  6**; "mark" (holder omits it) plain as read, M if ever shown a code word. Body code words: Arabia (Secretary of War) only.
+- **O9-DF:** Pagan = Washington, Viola = 12.30 PM, Vulcan = Captain, Vinton = Quartermaster, Midas = New York, Cadmus = Maine, Swallow = Sailing Vessels,
+  Saffron = Harbor, Merlin = New York: **H 9**; Muss, Mud, Willow unread and Abbott (the Aragon pair word, double t) **M 4** (9 of 13 cipher tokens H, 69%).
+  Body code words: Muss (M), Cadmus (H), swallow (H), Mud (M), Saffron (H), Merlin (H), Willow (M): 4 of 7 H.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | class | key | depth | % cipher tokens H/C/S | basis | safe sentence |
+|---|---|---|---|---|---|---|
+| O9-DA Olcott (Washington) to R. C. Morgan, New York, 19 Apr 1864 | **N1** | period | D1 | 60 as filed (3 H, 2 M); 100 (3 of 3) after the s.1 fix | body clear in the Huntington's public transcription (step 0: 0.941); the key adds the place, the hour and Olcott's rank; holder 4551 is the office's next-day answer (context) | "Re-read with War Department Cipher No. 9 (three code words; the message is in clear in the Huntington's public transcription of the ledger): on 19 Apr 1864 Col. H. S. Olcott, in Washington, told R. C. Morgan at his New York office to send Fox the full names of Simpson, Barlow, Heustis, Hunter and Kilsey and to ask at the Brooklyn Navy Yard whether the master painter had absconded; the key supplies the place, the hour and Olcott's rank. Plaintext already public (N1); the telegram not located in print (searched 10 Oct 2026)." |
+| O9-DD Meigs to Maj. Van Vliet, New York, 16 Mar 1864 11 AM | **N1** | period | D1 | 100 (6 H) | body clear in the holder transcription (0.826); the key adds the hour, the addressee's rank and office, "Secretary of War" and Meigs's title; NYT 1 Apr 1864 (Miss Dix back on the Fulton from Port Royal) is context | "Re-read with War Department Cipher No. 9 (six code words; the message is in clear in the Huntington's public transcription of the ledger): at 11 a.m. on 16 Mar 1864 Quartermaster General Meigs told Major Van Vliet, quartermaster at New York, to reserve accommodation on the transport Fulton for Miss Dix, who expected the Secretary of War's authority for an official visit to the Department of the South, to reserve three staterooms for officers, and not to let the Fulton sail until further advised; the key supplies the hour, the addressee's rank and office, 'Secretary of War' and Meigs's title. Plaintext already public (N1); the telegram not located in print (searched 10 Oct 2026)." |
+| O9-DF Meigs to Capt. S. L. Brown, New York, 9 Apr 1864 12.30 PM | **N1** | period | D1 | 69 (9 H, 4 M) | body clear in the holder transcription (0.809); the key adds the place, hour, ranks and offices and the nouns Maine, sailing vessels, Harbor, New York; three place words unread | "Re-read with War Department Cipher No. 9 (the message is in clear in the Huntington's public transcription of the ledger except some code words): at 12.30 p.m. on 9 Apr 1864 Quartermaster General Meigs told Captain S. L. Brown, quartermaster at New York, to have the forage at a place left unread on time, to avoid expensive steamers, to ship hay at once on good sailing vessels rather than send steamers to Maine for it, and to dispatch one large propeller from New York; three place words are unread. Plaintext largely public (N1); the telegram not located in print (searched 10 Oct 2026)." |
+
+None is N3, so no SECOND-OPINIONS-QUEUE row and no WORK-QUEUE AUD2 row is filed (the brief files one for N3+ D2+ only). Depth (D2V-E74 ruling, as for E378:
+body code words only; address, date, time, signature excluded): O9-DA none -> D1 (the key's words are dateline, hour and rank: scattered words; the external
+check, holder 4551, stands as context); O9-DD Arabia only -> D1; O9-DF Cadmus, swallow, Saffron, Merlin H and Muss, Mud, Willow unread, no clause above the
+authentication distance -> D1 ("fragments read" is the outward word for the cipher part; the message itself is readable from the holder page). Depth
+sentences (my own, true and specific): O9-DA -- "Olcott had his New York office send Fox the full names of the men he wanted arrested, and the office sent six
+names the next day (holder 4551)." O9-DD -- "Meigs held the transport Fulton at New York for Dorothea Dix's official visit to the Department of the South."
+O9-DF -- "Meigs told Brown to move hay by sailing vessel rather than by expensive steamers." Unsafe: "first", "new", "unpublished", "never printed";
+"deciphered" for the message (it is public in clear; only the code words are read); any value for Muss, Mud, Willow or the pencil interlinear words of
+9699-9700; "Haestis = Heustis" as a reading (holder 4551 spells it Heustis: context, I); "the master painter had absconded" (it is a question); "Miss Dix
+sailed on the Fulton under this order" (NYT shows her returning on the Fulton; the order's execution is not shown); "Fox was Secretary" (the ledger's
+"Secy Fox"; he was Assistant Secretary of the Navy).
+
+### 5. Postmortem and fixes for a FIX job (not applied here)
+Failure: O9R-1 filed O9-DA's "Can" and "Canon" as unread code groups from the holder text without opening the leaf it had fetched; both are plain words
+("Care", "Spl Comr &c"). It missed holder 4551 (the reply to O9-DA) and did not apply step 0 (the lesson postdates it). Its book calls stand.
+Corrections (a verifier does not edit ciphertext-no9.txt or reading-no9.md):
+- O9-DA: "R C Morgan Can Vesper" -> "R C Morgan Care Vesper"; "Olcott $pd Canon & C" -> "Olcott Spl Comr &c"; drop `graded: Can:M`, `graded: Canon:M`;
+  header "(holder transcription, leaf not eye-checked; leaf 9709 fetched to scratch, not read)" -> "(leaf eye-checked on crops, FV-O9b: two holder misreadings
+  corrected)"; note: add "holder 4551 (New York, 20 Apr 1864, for Capt Fox: the full names David Heustis, Samuel M Simpson, Richard D Barlon, James Hunter,
+  Chas T Kilsey, William Atkinson; Wilson named) is the office's answer: context, I"; header class "N1 (FV-O9b: clear in holder transcription)".
+- O9-DD: last line "sig MC Meigs Aragon Confidential" -> "sig MC Meigs Aragon mark Confidential" with `plain: mark` (the holder omits it); header "leaf not
+  eye-checked" -> "leaf eye-checked (FV-O9b): label (9), 11 am"; note: add NYT 1 Apr 1864 (Fulton arrived from Port Royal with Miss Dix: context, I).
+- O9-DF: "period You are in changes in charge" -> "period You are in Charge" (the holder's doubling); header "leaf not eye-checked" -> "leaves 9699-9700
+  eye-checked (FV-O9b): label (9), 12.30 PM"; note: the pencil interlinear words and digits and "139 w chg Q.M.G." / "No 10 N.Y." on 9699-9700, not in the
+  holder transcription and not read (s.1).
+- NOTES "## O9R-1" per-row lines for DA, DD, DF: add "N1 by step 0 (FV-O9b)" and, for DA, "Unread: 0 after the leaf (Can, Canon = Care, Spl Comr)".
+- For the orchestrator: O9-DC, O9-DE, O9-DH pass the same step-0 threshold (s.0); E376 was treated the other way by FV-MS18p's two-figure rule.
+
+Requests: hdl.huntington.org 17 (12 CISOSEARCHALL, 1 item info, 4 IIIF 2400 px; all 200, shared token take/release in ROOM); be-api.us.archive.org 11 (8 + 3
+retries; 4 answered 502, each retried once); www.googleapis.com/books 4 (all 200). seven_day allowed_warning not observed by me. For LANE LEDGER-10 (account 1)
