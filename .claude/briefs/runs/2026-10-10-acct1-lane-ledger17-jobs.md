@@ -74,3 +74,39 @@ Held for wave 2: FIX-L17b on FV-L16a's six + E447 E471 E474 after AUD2-LEDGER16-
 5-6) on what FM-S65A/B and FM-UND file; verifier on any OR-CACHE2 lead.
 
 (16:46 UTC 10 Oct by date -u: wave 1 spawned with source_url: FM-S65A session_01WDfyAjcGSadPWfNfb8HznQ, FM-S65B session_01VH54ZLoF8vbYjJi1WexTyb, FM-UND session_011zrx8sfAw6GegrqRCCHfvL, FIX-L17a session_01WAdCUNcVhMoWCkyVpoDvvT, OR-CACHE2 session_01EkWBz2ENJQ9KF6KGCDQyEK.)
+
+---
+
+# Wave 2 (written 10 Oct 2026 17:2x UTC by date -u; lane ~10.3 workers + orchestrator of 60)
+By get_session: FIX-L17a 1.31 (16 entries fixed, fixl17a_apply.py), OR-CACHE2 1.67 (20 parts fetched, 210 N3 entries grepped, no lead), FM-UND 2.13 (E622 = 5616/0,
+E623 = 5656/0 tel 1 filed; 5 clear copies, 4 print; gaps: E622 head, 5658/0 tel 2), FM-S65A 2.68 (E581 E582 E583 E585 E586 E587 filed; E582 E583 E586 thin);
+FM-S65B live. AUD2-LEDGER16-1 and -5 posted done (17:02, 17:15).
+
+## FV-L17a (Opus 5.5, first verifier, separate from every reader; cap $8, box 120 min)
+Exactly "## FV-L16a, FV-L16b, FV-L16c, FV-L16d" of the ledger16 jobs file (all-pointer CONTENTdm clear-copy search FIRST with three FRESH queries per entry, not
+the reader's; duplicate diff against mssEC 18/19/25; OR I/46 pts 1-3 and I/47 pts 1-2 by date, ORN I/11-12, Grant Papers 13 (Google Books ids) and 14 (be-api),
+Butler Corr. V where Butler is a party, O'Brien 1910 for Wilmington / Army of the James, the press of the day for press-shaped text, G3 with decoded phrases,
+eye-check every graded line on crops with tools/iiif_lines.py --image; step 0 never a reason for N1; depth per rule 4a / tools/depth_check.py /
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md; diff any print against the derived reading block; reading fixes in AUDIT s.5, not the reading) on FM-S65A's
+six filings, by H count: E581 E585 E587, then the thin E582 E583 E586 (too short for a clause -> say D0/D1 and spend little). Read NOTES "## FM-S65A" first,
+including its shuffled-key control lines. AUDIT.md "## AUDIT (FV-L17a)". status.json/SO rows for N3+ only, audit_status "one audit"; depth_check;
+file_shrink_guard. On N3+ D2+ append WORK-QUEUE `AUD2-LEDGER17-1` (fetch first; next free number if taken), tagged account-1, Opus 5.5, cap 2.5 per entry, box 30
+per entry + 30; name it in ROOM for the orchestrator (owner account). Stop starting a new entry at 80% of cap and name the rest.
+
+## FIX-L17b (Sonnet 5.5; cap $2, box 60 min, no network)
+Exactly "## FIX-L17a" above, applying s.5 of AUDIT.md "## AUDIT (FV-L16a)" (E509 E511 E514 E521 E508 E506), "## AUDIT (FV-L16e)" for E447 E471 E474 only, and the
+two second-audit sections "## AUDIT 2 (second adversarial, AUD2-LEDGER16-1)" and "## AUDIT 2 (second adversarial, AUD2-LEDGER16-5)" (whatever they changed:
+depth, dates, senders, readings -- e.g. E474 "Frances fever" = Francis). Extend fixl17a_apply.py or write an idempotent fixl17b_apply.py. Check each fix is not
+already applied. The key.md Topsy/Francis rows FIX-L17a held: leave key.md unedited, note it again under "## FIX-L17b" if these sections touch it. decode x3
+--write/--check exit 0; status.json depth fields match the second audits; NOTES "## FIX-L17b (10 Oct 2026, account 1, for LANE LEDGER-17)"; depth_check;
+gaps_check; file_shrink_guard on every touched file.
+
+## FM-UND2 (Sonnet 5.5, reader; cap $1.5, box 50 min)
+FM-UND's two read gaps (NOTES "## FM-UND" Remaining gaps 1-2), method as FM-S65A: (1) E622's head -- page 5614 from l.20 ("Washington Apr 20 1864") and page
+5615, under No. 1, joined to E622 as one entry (same telegram; ciphertext.txt E622 extended, not a second ID, unless the head proves a separate telegram:
+then E625); holder queries (three fresh, all pointers) and print check on the head's clause first; (2) 5658/0 telegram 2 (O'Brien to Eckert, Jamestown 9 May
+1864 3.30 AM): the No. 1 decode is in fortmonroe/fmund.out; holder queries were run by FM-UND (none); run the print check by phrase (OR I/36 pt 2 by date 9 May,
+Butler Corr. IV, be-api whole-collection), then file it as E624 under the Wave 2 RULING with the shuffled-key control line. NOTES "## FM-UND2 (10 Oct 2026,
+account 1, for LANE LEDGER-17)"; update FM-UND's Remaining gaps lines to "done (FM-UND2)"; gaps_check; decode x3 --check; file_shrink_guard.
+
+Held for wave 3: FV-L17b on FM-S65B's filings + E622 (with head) E623 E624, sized when FM-S65B posts done.
