@@ -6761,6 +6761,33 @@ No counted result (nothing at N3+/D2+); one NEAR row added.
   checked: dupuy452, august-van-saksen, wvo-hessen-1564/WVO 1068, fr3669-bethune all lack an unread sibling for the rebuilt key).
 Left, runnable: the Pusterla and Duke next steps above (~$8-12 together); Marcolino f.143 after Battioni.
 
+## LANE LEDGER-13 handoff (session_0144M5B5m1zmnBKpUbs32YxK, account 1, second blast lane beside LEDGER-12/-14), 10 October 2026 (08:40-11:3x UTC by date -u; closed: Fort Monroe scope spent after four waves, lane about 52 of 60; five_hour allowed, seven_day allowed_warning throughout)
+
+Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261010-0840; jobs .claude/briefs/runs/2026-10-10-acct1-lane-ledger13-jobs.md (waves 1-4).
+Scope: eckert-1864 Fort Monroe ledger only (mssEC 25, obj 5952). 16 workers 44.99 + orchestrator ~7.0 by get_session. IDs used E440-E577 (+O9-DL/DM); E578-E599 free.
+- **Book test (BOOK-FM65):** Cipher No. 1 reads the 1865 Fort Monroe rows (10/10 test rows Jan-Mar, clause gate vs 3 meaning-shuffled copies); No. 2/No. 9 none.
+  FM-PRE's "1865: no book in hand" blocker is lifted for this ledger.
+- **Step 0 is a non-test (BOOK-FM65, FM-S2, STEP0-KEYCTL):** the holder transcription of a row is its cipher copy; meaning-shuffled keys hit as often as the book
+  (FM 61/66/64 vs 66 of 72; mssEC 18/19: 0 of 80 recorded hits book-only, shuffles 46/46/49 of STEP0-RULE's 51). Lane ruling (jobs file wave 2): on mssEC 25 a row
+  is unfiled only for a holder clear copy, print, plain/no clause. Proposed general ruling in NOTES "## STEP0-KEYCTL" -- NOT applied to any grade; for the VERIFY
+  lane / owner-account orchestrator (LANE LEDGER-14 applies the filing rule to mssEC 18).
+- **Read and filed:** all 81 clean 1865 rows (FM65-A..F) and the 44 leftover 1864 rows (FM-R9, FM-S1..S3, FM-F1): about 80 entries (E441-E474, E500-E577 part, E521,
+  O9-DL/DM); the rest in print (OR I/46-47, Butler IV-V, Grant Papers 14), holder clear copies (7681 7682 7702 7782 7784 8508 8511 8531 8538 8650 10266 10279 11877
+  4592), plain or too short.
+- **First audits (FV-FM65a/b) + second audits (owner account, AUD2-LEDGER13-1/-2):** N3 D3 two audits -- E502 E504 E507 (D2->D3) E512 E519 E520 E532 E534 E535
+  (key period; residual gap: Grant Papers vol. 13 reached by snippet only, never page by page; RG 107 not reached). N1 -- E516 E530 E531 (Grant Papers vol. 13
+  notes). FIX-FM65 applied all three audits' s.5.
+- **Lesson:** Grant Papers vols. 13-14 are not on IA, so be-api never reaches them; they print Jan-Feb 1865 Fort Monroe/City Point telegrams from the telegrams
+  themselves. FIX-FM65 swept the 51 unaudited 1865 filings by Google Books snippet (controls E530 E531 hit): E537 E544 E565 hit (N1 candidates).
+**Next** (costs this lane: Sonnet reader ~0.2/row; Opus first audit ~1.3/entry, FV-FM65b ran 1.5; Sonnet FIX ~1.5):
+1. First verifiers (Opus, ~1.3/entry, 6 per session) on the ~60 unaudited Fort Monroe filings, by H count, after confirming E537 E544 E565 as N1 first (~0.4 each):
+   E441-E474 group (1864), E500 E505 E506 E508 E509 E511 E513-E515 E517 E518 E521 E525-E529 E536-E577. Every verifier runs the Grant Papers 13/14 snippet route.
+2. Read row 5855/1 (31 words, never read; Webster to Dodge 4 Jan 1865, reply to E507 msg 2; AUD2-LEDGER13-2 lead), ~0.3.
+3. VERIFY lane / owner-account orchestrator: rule on STEP0-KEYCTL's proposed ruling (step-0-only N1/D1 calls on mssEC 18/19 and S0-57XX E302-E320 re-examined).
+4. Fort Monroe residue: the 75 print-likely 1865 rows and ~250 print-likely 1864 rows are known-text by design (light guardrail); 11 undated entries unexamined.
+5. Blocked (unchanged): 8472, 6254, 9660 (no book in hand; Cipher No. 4 Friedman copy needs a desk browser, LOCAL-QUEUE); 5943/1 no book reads a clause.
+Light-guardrail share (known-text work): the N1 finds came inside ordinary reading and first audits; about a tenth of worker spend.
+
 ## LANE LEDGER-12 handoff (session_011R8J939oZMVV2ZyZZ2LS3W, account 1, blast refill after LEDGER-10/-11), 10 October 2026 (07:40-09:2x UTC by date -u; closed: backlog spent after three waves, lane about 33.3 of 60; five_hour allowed, seven_day allowed_warning throughout)
 
 Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261010-0740; jobs .claude/briefs/runs/2026-10-10-acct1-lane-ledger12-jobs.md (waves 1-3). Continued LEDGER-10 next 2-5 and
