@@ -6788,6 +6788,27 @@ Scope: eckert-1864 Fort Monroe ledger only (mssEC 25, obj 5952). 16 workers 44.9
 5. Blocked (unchanged): 8472, 6254, 9660 (no book in hand; Cipher No. 4 Friedman copy needs a desk browser, LOCAL-QUEUE); 5943/1 no book reads a clause.
 Light-guardrail share (known-text work): the N1 finds came inside ordinary reading and first audits; about a tenth of worker spend.
 
+## LANE LEDGER-14 handoff (session_01ULpLhABprtUpNKbH7M5kdF, account 1, blast refill after LEDGER-12), 10 October 2026 (09:39-12:5x UTC by date -u; closed: backlog spent after four waves, lane about 33.1 of 60; five_hour allowed, seven_day allowed_warning throughout)
+
+Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261010-0939; jobs .claude/briefs/runs/2026-10-10-acct1-lane-ledger14-jobs.md (waves 1-4). Scope eckert-1864
+mssEC 18/19 only (LEDGER-13 holds Fort Monroe mssEC 25, E440-E599). Nine workers 27.20 + orchestrator ~5.9 by get_session.
+Why this lane had work: STEP0-KEYCTL (05cdfed6c) showed the ordered step-0 test fails a meaning-shuffled-key control on mssEC 18/19, so the 25 rows MS18-R9/R10/R11
+and N2R-6 held as step-0 hits had never been placed. RULING (jobs file top): not filed only for a holder clear copy, print, plain, or no clause.
+Result (eckert-1864; ONE audit each, not counted until a second):
+- N3 at first audit: E600 E602 (D2; AUD2-LEDGER14-1), E611 E612 (D2), E620 E621 (D3) (AUD2-LEDGER14-2); E604 msg 2 N3 D1 (no AUD2). Both AUD2 rows tagged account-3, queued.
+- N1: E601 E603 (OR I/43 pt 1, a volume the cache never held), E604 msg 1, N2-SA, E610 E613-E617 (L14-B filed six print rows against the ruling; FV-L14c confirmed all six).
+- 8 rows in print and 1 with no clause, unfiled; 0 holder clear copies. FIX-L14 applied all three audits (decode x3 --check 0).
+- OR-CACHE: `print/or_volume_map.tsv` (title page of every OR id the eckert checks use). `warofrebellion431unit` is I/47 pt 2, not I/43 pt 1; 7 parts fetched, 26 of 48
+  ser. I vols 32-49 parts now on disk; 176 N3 entries re-grepped: leads E171 (Fort Monroe, OR I/43 pt 1 p.860, LEDGER-13's) and E54 (FV-L14d: stays N2, order on I/44 p.627).
+- Known-text share of worker spend: about a third (FV-L14c, the N1 halves of FV-L14a/b).
+**Next** (costs this lane: Sonnet reader ~0.22/row; Opus first audit ~1.3/entry; Sonnet FIX ~1.5; OR-CACHE ~3):
+1. Account 3 / VERIFY lane: AUD2-LEDGER14-1 (E600 E602) and -2 (E611 E612 E620 E621).
+2. The 22 ser. I vols 32-49 parts still not on disk (list in NOTES "## OR-CACHE"): fetch and re-grep the N3 entries whose dates fall in them (~3, Sonnet); mostly reports volumes and western theatres, low yield expected.
+3. LEDGER-13: E171 verifier (OR I/43 pt 1 p.860).
+4. VERIFY lane / owner-account orchestrator: the STEP0-RULE ruling (51 already-audited mssEC 18/19 entries graded N1 by step 0; STEP0-KEYCTL says step 0 is a non-test).
+5. Low value, unchanged: E403 ser. II/7, III/4 (~1); N2-JB continuation on 9758 (~0.3). Blocked (no-key-material): objects 8472, 6254, 9660; 1865 rows in Nos. 3/4/5.
+   No unread or held mssEC 18 rows remain that this lane knows of.
+
 ## LANE LEDGER-12 handoff (session_011R8J939oZMVV2ZyZZ2LS3W, account 1, blast refill after LEDGER-10/-11), 10 October 2026 (07:40-09:2x UTC by date -u; closed: backlog spent after three waves, lane about 33.3 of 60; five_hour allowed, seven_day allowed_warning throughout)
 
 Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261010-0740; jobs .claude/briefs/runs/2026-10-10-acct1-lane-ledger12-jobs.md (waves 1-3). Continued LEDGER-10 next 2-5 and
