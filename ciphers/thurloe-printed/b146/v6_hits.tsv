@@ -1,0 +1,11 @@
+line_first	leaf	printed_page	cipher_numerals_on_page	printed_interlinear_gloss	heading_sender_recipient_date_as_seen	note
+25671	215	212	no	n/a	Consul Maynard to secretary Thurloe (plain French-news prose; no date on this page)	OCR numerals were page noise; key_blake match in hits.tsv was a coincidence of words (Gen. Blake in the prose)
+40469	341	338	yes	yes (spaced letters and names above numerals; some codes starred, unglossed)	Blank-Marshall at Bruges ("A letter of intelligence from mr. Blank-Marshall at Bruges"), June 17th 1657, signed Jo. Wardi; recipient not printed on this page	~16 numeral lines
+44535	377	374	yes	no (numerals inline in running prose, no interlinear row)	Blank-Marshall at Bruges, 8th July 1657 [N.S.], signed Mar. S.; recipient not printed on this page	only cipher block of the ten with no gloss under it; ~8 numeral lines
+65889	553	550	yes	yes	Blank Marshall ("A letter of intelligence from col. Blank Marshall"); letter opens on p.549 (not fetched), signed Blank Marshall; date not on this page	~9 numeral lines
+65973	554	551	yes	yes	Major-general Jephson to secretary Thurloe, Wismar 6th Oct. 1657 (heading at foot of p.550, leaf 553)	~7 numeral lines
+74562	625	622	yes (3-digit codes 105 112 130 134 139 141 142 165 in a French letter)	yes (names printed above the codes: Amsterdam, Cromwel, protecteur ...)	French letter "Ce 30 Nov. 1657 [N.S.]", sender and recipient on p.621 (not fetched); the Broghill to Montague letter on the same page (Youghall 20 Nov. 1657) is plain English	hit is not a Broghill cipher; key_montagu match coincidental
+75081	629	626	yes	yes	Phil. Meadowe, Copenhagen 22 Nov. 1657 (two cipher passages near the top and foot of the letter; recipient "Sir", heading on p.625 not fetched)	~6 numeral lines
+76999	646	643	yes	yes	Major-general Jephson to secretary Thurloe (letter ends on p.644); date not on this page	~25 numeral lines
+77385	648	645	yes (begins at page foot, continues overleaf)	yes (the two lines on this page)	Blank-Marshall, 10th Dec. 1657 [N.S.]; letter continues on p.646 (not fetched)	2 numeral lines on this page
+89881	759	756	yes	yes	Blank Marshall at Bruges, 3d Febr. new style 1658, signed B. M., "Sir"	~20 numeral lines, densest of the ten
