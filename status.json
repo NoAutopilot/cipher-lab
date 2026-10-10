@@ -11761,9 +11761,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-MS18j)'"
+        "AUDIT.md '## AUDIT (FV-MS18j)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-34)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-MS18j verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -11802,9 +11803,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-MS18j)'"
+        "AUDIT.md '## AUDIT (FV-MS18j)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-34)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-MS18j verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -11843,9 +11845,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-MS18j)'"
+        "AUDIT.md '## AUDIT (FV-MS18j)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-34)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-MS18j verifier (account 1)",
       "depth_date": "10 Oct 2026",
