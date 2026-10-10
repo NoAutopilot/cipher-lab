@@ -1,0 +1,12 @@
+P1 nouvelles forces aux rebelles|nouuellesforcesauxrebelles
+P2 portugal en flandres|portugalenflandres
+P3 secours ... conte de Montgommery|secoursprisparlecontedemontgommer
+P4 Montgommery + belle isle|montgommer|belleisle
+P5 prince d'Orange se deffendra|princedorangesedeffendra
+P6 tant que le roy vivra|tantqueleroyuiura
+P7 la paix du Turc|lapaixdeturc|
+P8 reconciliation + orange|reconciliation|orange
+P9 flamans + pardon|flamans|pardon
+P10 la rochelle + montgommery|rochelle|montgommer
+CTL Gachard-quoted plain: le dernier de may feut jure|dernierdemaiefeuiure
+CTL2 St Hyeronyme prince de Castille|hieronime|castille
