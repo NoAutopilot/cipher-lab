@@ -17852,3 +17852,219 @@ Requests: hdl.huntington.org 29 (control 9678 once, 22 CISOSEARCHALL, 6 IIIF pag
 downloads: 3 x 200, ORN I/12 x 500; 1 retry ORN I/12 djvu 500; ORN I/12 page_numbers 200, hocr_searchtext 500, hocr_pageindex 500; files metadata 1;
 advancedsearch 1), 2 s apart; be-api.us.archive.org 16 (4 x 502, 2 retried once), 1.8 s apart; googleapis.com 26, 1.6 s apart.
 For LANE LEDGER-15 (account 1).
+
+## AUDIT (FV-L15b)
+
+Verifier FV-L15b (Opus 5.5, account 1, for LANE LEDGER-15), 10 Oct 2026, 12:51-13:3x UTC by `date -u`; a separate session from the readers
+FM65-A, FM65-C, FM65-D, FM65-E and FM65-F (account 1), not protecting their conclusions. Scope: **E545, E560, E505, E567, E525, E572** (NOTES
+"## FM65-A", "## FM65-C", "## FM65-D", "## FM65-E", "## FM65-F"); ciphertext.txt, Cipher No. 1, Fort Monroe ledger mssEC 25 = Huntington object
+5952, January-March 1865. Nothing decoded beyond key look-ups in key.md. Key source for all six: `period`. Intake gate re-run 13:15 UTC: `eckert-1864:
+partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Step 0 is a non-test on mssEC 25 (Wave 2 RULING, STEP0-KEYCTL)
+and was not used for any class. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Scripts (all in `fortmonroe/`, outputs beside
+them): `fv_l15b_print.py` (+ `.out`: letters-only phrase grep over the 184 cached print-check volumes, which include OR I/45 pt 2, I/46 pt 2 and
+I/47 pt 2 (`warofrebellion431unit`, true label I/47 pt 2 per `print/or_volume_map.tsv`), plus KWIC for names in those three; no OR part fetched),
+`fv_l15b_gb.py` / `fv_l15b_gb2.py` (+ `.out`: 33 Google Books API queries, keyed, `country=US`, two positive controls first), `fv_l15b_beapi.py`
+(+ `.out`: 12 whole-collection be-api queries, control first, three answered 502; and 3 loc.gov Chronicling America searches, 14-25 Mar 1865),
+`fv_l15b_beapi2.py` (+ `.out`: 3 be-api queries inside `papersofulyssess0014gran`, 1 more whole-collection retry (502), 1 IA advancedsearch for
+the Grant Papers volumes), `fv_l15b_loc.py` (+ `.out`: chroniclingamerica.loc.gov `ocr.txt` answered 403 on all 7 pages; host not retried),
+`fv_l15b_loc2.py` (+ `.out`: the same pages' text via www.loc.gov resource JSON -> tile.loc.gov full text), `fv_l15b_hdl.py` (+ `.out`: 17 CONTENTdm
+full-text queries across all pointers of p16003coll11 incl. control 9678, then pages 5889 5915 5851 5920 5868 5929 at 2400 px to scratch, under the
+hdl token 13:09-13:1x UTC).
+
+### 1. Duplicates, prior work, image
+- **Duplicate diff:** pointers 5889 5915 5851 5920 5868 5929 against every `###` header in ciphertext*.txt and the ls*_entries files: each pointer
+  carries its own row and same-page rows that are other telegrams (E504 = 5851/0, Capt. W. L. James's list of steamers for Col. Bradley, of which
+  E505 msg 1 is Webster's covering reply). Word grep of Champion, Fay it ville, commence work, Annapolis where, opera tour, Yorktown/Hastings,
+  Kentucky/Aurora, G. W. Schofield, other service across ciphertext*.txt: only **E558** (5912/1, 22 Feb, Ord requires an office at Yorktown), the
+  antecedent E560 answers, and unrelated 1864 entries. **No duplicate in the ledgers.** None of the six is in status.json before this section.
+- **Prior work** (by hand, civil-war adapter; `tools/prior_work.py` takes items.tsv rows, which these are not): own work (pointers grepped in
+  ciphertext*, NOTES, AUDIT, status.json: only the FM65 filings, the BOOK-FM65 prediction table and FIX-FM65's snippet sweep); no class on any of
+  the six before this section; Tomokiyo and cached solver files hold no Eckert ledger items; aaymeloglu not cloned (UNCHECKED-NET, as every FV-FM
+  audit).
+- **Image eye check this session, every line of all six entries** (whole pages at 2400 px, autocontrasted, read at 1100 px; one 960 px crop for the
+  E560 signer's initial; scratch only). **The transcription matches the image word for word on all six**, with one exception: **E560's signer is
+  "William L. James" on the page** (a looped script capital L, the same letter as "Lieut" on p.345), not "William D. James" as transcribed; the
+  holder's clear copy 8605 has "Wm L James" (s.2). Also confirmed: E545 "Send plug pagan with each quincy", "It wilby targuin [tarquin] to bring",
+  "and nothing for nothing more"; E505 msg 2 "in addie shun tooth / weasel ears named inure wreate shelter rawlins wishes / utah send to this venon
+  [verion] plug torch bessie / going wayworn ... heifer furnished ... no wales wilbey required honor Howell"; E567 "plank Rabbits", "flat palmyra",
+  "long coming. / sent 2.35 P.M. Dealy"; E525 "princess yoke Are M new port . pandora vincent / J. W. Sampson"; E572 "for See See Full turn American
+  office Baptism", "Kennebecs oyster reached Hannibal ditto on the fence / instant", "youth no yoke of course not sent". The readers' "transcription
+  only" caveats (E505) and the unread-image state of the other five are now closed.
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; 17 queries, control 'Inspector difficulty
+Evidence Nashville' -> 9678 returned): **three holder clear copies located**, all in the holder's clear telegram books (parent objects 8066 and
+8886, the received clear books of earlier audits):
+- **E545 = pointer 7731** (object 8066, Page 73): "1010 am 10.10 am Ft Monroe Jany 27th 1865 Ft Monroe. to Lt Col G. W. Schofield Willards Washn
+  ---- Send one battery with such Division & let the others follow when convenient sig JM Schofield another to Lieut Col Boyd a Qr Mr Willards Washn
+  ---- It will be necessary to bring transportation from Wash'n to follow the troops. If good mules cannot be obtained in Wash'n ask authority to
+  bring those. from Ky sig J. M Schofield Maj Gen" (queries 'Schofield battery division follow', 'Boyd Willards Schofield'). Diffed against the
+  reading block: every word agrees; the holder's "such Division" is its transcriber's reading where the cipher copy has "each quincy" (the cipher's
+  "each" stands); the cipher's tail "and nothing for nothing more" is operator chatter not on the clear copy.
+- **E560 = pointer 8605** (object 8886, Page 127): "11.40 am Fort Monroe Feby 24 1865 Chief QrMr Office Ft Monroe 24th for George D Sheldon &c ,
+  Sir The Maj Genl Comdg has directed that a telegraph station be established at Yorktown Va without delay . Please take the necessary steps to
+  provide a Battery and Operator and establish the office as speedily as practicable . very Respy your Obt Servt ---- Wm L James Capt a QrMr and
+  actg Chief QrMr . forgoing respectfully forwarded to Maj Eckert Asst Supt &c Washn (sig) GD Sheldon" (queries 'Yorktown telegraph station',
+  'Yorktown operator battery'). Word for word with the reading, including "polking" = Comdg and "pagan" = Battery (a telegraph battery: the
+  reader's note calling [Battery] a slip is wrong) and "Hastings Alba" = Yorktown Va.
+- **E572 = pointer 7822** (object 8066, Page 164): "1.30 P. M 12. M Fort Monroe Va Mar. 14th Ft Monroe 14th for C. C Fulton Am'n Office Balto ----
+  The Steam ship Champion arrived here from Wilmington N. C. this morning & brings the intelligence that Gen Sherman & his forces had reached
+  Fayetteville NC intact. The scout of Sherman's Army reached Wilmington NC on the 11th inst. but the Champion sailing the same day no particulars
+  could be obtained sig No sig" (queries 'Champion Fayetteville', 'Fulton American'). Word for word; the cipher's "ditto" after Hannibal is the
+  clear copy's second "NC"; "youth no yoke" = "sig No sig". The addressee is C. C. Fulton of the Baltimore *American*: a press dispatch.
+- No clear copy of E505, E567 or E525: 'Rawlins steamer other service', 'best going steamers', 'coal no rations required', 'engines flat cars
+  Wright', 'Baltic Annapolis troops', 'mules Kentucky authority', 'James Acting Chief Quartermaster' 0; 'Wright commence work' 5920 (own) and 5921
+  (the next ledger page: W. W. Wright's own follow-up asking for more men, a different text); 'Baltic countermand' 5868 (own); 'Newport Baltic coal'
+  5865 (ledger p.321, an earlier Newport cipher row), 5866 (E520's page), 8508 (clear, Newport 6 Jan: the Ariel, Victor and Illinois coaling, the
+  Baltic's anchor), 9153 (5 Jan, other text) -- context, none E525's text.
+
+**Print:**
+- **E567 -> IN PRINT: N1.** *The Papers of Ulysses S. Grant*, vol. 14 (Feb 21-Apr 30, 1865; ed. J. Y. Simon, 1985), in a note after a document
+  cited "O.R., I, xlvii, part 2, 559-60": "On Feb. 25, Schofield telegraphed to USG. 'Please have two engines and some flat cars sent here at once,
+  so that Col Wright can commence work. None have arrived at this place or Newburn.' ALS (telegram sent--transmitted ...". Google Books API
+  snippets (volume `DVLPEPsH1_oC`, PARTIAL; `1D8fAQAAMAAJ`, NO_PAGES; queries `"two engines" Schofield Wilmington intitle:Grant`, `"None have arrived
+  at this place" intitle:Grant`, `"Col Wright can commence work" intitle:Grant`, `"two engines and some flat cars" Schofield telegram received`,
+  `fv_l15b_gb.out`, `fv_l15b_gb2.out`) and **IA be-api inside `papersofulyssess0014gran`** (3 snippets, `fv_l15b_beapi2.out`; also the
+  whole-collection query `"Col Wright can commence work"` -> that item only). **Page not read** (lending-only; be-api gives no page). The print
+  agrees with the reading block word for word ([2] [Engine]s, flat [Cars], [Colonel] Wright, [Newbern]), and with the row's date line (Hamlet
+  February harsh person = Wilmington, February 25; sent from Monroe 5 Mar 2.35 PM). The editors printed from the sent telegram (ALS), not from a
+  decipherment of this ledger, so N1, not N0. **Lesson (1) of the ledger15 jobs file is half wrong: Grant Papers vol. 14 is on Internet Archive**
+  (`papersofulyssess0014gran`; advancedsearch lists vols. 1-12 and 14-18, no 13) and its be-api snippets work; FIX-FM65's two-query Google Books
+  sweep missed this hit (query-bound, as its own controls said).
+- **E505 msg 1 -> IN PRINT: N1.** OR I/46 pt 2 p.21 (`warofrebellion014602rootrich`, cache; be-api whole collection 7 copies): "FORT MONROE,
+  January 5 [3, OCR; between 3 Jan items], 1865--7 p. m. Capt. WILLIAM T. HOWELL, Assistant Quartermaster: Steamers all ready coaled and loaded with
+  proper rations. The list will be handed you, stating capacity, &c., of each. R. C. WEBSTER, Colonel." Diffed: word for word, time 7 PM = Martha.
+  (FV-FM65b cited the same print as E502's external check; it is this row's message.) FIX-FM65's Google Books sweep had no hit for E505 (the OR, not
+  Grant Papers, prints it).
+- **E505 msg 2 -> no print located.** Phrase grep "one of the best going steamers", "best going steamers", "in addition to the steamers named",
+  "no rations will be required", "send to this place one of" 0 in 184 volumes; "for other service" and "with good supply of coal" hit other texts
+  (I/47 pt 2: Allen, Louisville, 14 Jan, six transports "with good supply of coal and ten days' stores"; generic), rejected; be-api `"one of the
+  going steamers"` 0; Google Books 2 queries + FIX-FM65's 2: 0.
+- **E545 -> settled: the FIX-FM65 near-miss is a different telegram, and the telegram itself is not located in print** (its clear copy is at the
+  holder, above). The vol. 13 snippet ("... batteries of Schofields Corps be left behind. I think however it may be advisable for him to bring two
+  companies of Artillerests to each Division to be fitted up here if necessary." ALS (telegram sent), Mitten Collection, InHi) is **Grant to Halleck,
+  City Point, 12 Jan 1865, 11 a.m.**, printed OR I/45 pt 2 p.573 ("You may direct the batteries of Schofield's corps to be left behind. I think,
+  however, it may be advisable for him to bring two companies of artillerists to each division, to be fitted up here, if necessary.") -- another
+  sender, date and text; Halleck's relay to Thomas follows it (p.573). Context printed: OR I/47 pt 2 pp.213-214, Special Orders No. 18, Hdqrs Army
+  of the Ohio, Washington, 2 Feb 1865 (modifying the embarkation orders of 26 Jan): "One battery will move with each division, if practicable ... The
+  remaining artillery wagons and animals will follow the troops as soon as suitable transports can be provided"; and an order sending "Lieut. Col.
+  J. F. Boyd, chief quartermaster Twenty-third Army Corps ... to Washington, D. C., for the purpose of organizing field transportation"; OR I/45 pt 2,
+  Schofield to Whipple, Columbia 2 Jan 1865, on the mules "I had to obtain ... from Kentucky". Phrase grep "send one battery with each division",
+  "let the others follow when convenient", "if good mules cannot be obtained", "bring those from Kentucky" 0; be-api 1 phrase 0 (1 answered 502
+  twice); Google Books 6 queries: only the 12 Jan Grant telegram, and Grant Papers' "G. W. Schofield ... Brvt. Brig. Genl." signing for the general
+  (vol. 14) and "G. W. Schofield (my brother)" (a later volume) -- the addressee is the general's brother, Lt. Col. George W. Schofield.
+- **E560 -> no print located** (clear copy at the holder, above). Phrase grep "station be established at Yorktown", "office at Yorktown", "battery
+  and operator", "William D James" 0; OR I/46 pt 2 names "Capt. W. L. James, assistant quartermaster" (brevet list, 1 Jan 1865), which confirms the
+  signer's initial; Google Books 2 queries: Quartermaster General's 1895 reports only, rejected.
+- **E572 -> press of the day: substance printed, other wording.** The Associated Press dispatch "Fortress Monroe, March 14.--The steamer [steamship]
+  Champion, Capt. Wilson, arrived here this morning, and brought the first definite intelligence respecting the movements of Gen. Sherman and his
+  forces. On the morning of the 11th instant, the date of the sailing of the Champion, several scouts of Gen. Sherman arrived at Wilmington, N. C.,
+  with the news that his army had reached Fayetteville, N. C. ..." is printed in the Washington *Evening Star* 16 Mar 1865 p.1, the *Daily National
+  Intelligencer* 16 Mar p.3, and in a variant ("The steamer Champion arrived here this morning from Wilmington. She left Wilmington on the 11th inst.
+  ...") in the *New-York Daily Tribune* 16 Mar p.4 and *New York Herald* 16 Mar p.1 (Chronicling America OCR via loc.gov, `fv_l15b_loc2.out`).
+  Diffed against E572: same news, different text (no "intact", no "no particulars could be obtained"; E572 is Sheldon's own dispatch to Fulton).
+  The Baltimore *American* of 15 Mar 1865, where Fulton would have printed it, is not in Chronicling America (Baltimore holds only *Der Wecker*
+  there) and was not reached. Since the holder's clear copy 7822 is the plaintext of this very telegram, the class is N1 regardless.
+- **E525 -> no print of the telegram located.** Context printed, diffed: OR I/46 pt 2, Newport (Baltimore) 7 Jan 1865 6 p.m.: "The Baltic left for
+  Fort Monroe last night", and Morgan (Fort Monroe) 12 Jan, P.S.: "The Baltic went up yesterday to Annapolis, ready for sea. She ought to take a
+  brigade on board" -- different texts, but the second confirms what E525 asks for (coal her at Monroe and return her to Annapolis for troops); the
+  5 Jan order (p.51) sends the Baltic to Baltimore, the order Newport could not countermand. Phrase grep "the Baltic got off for Monroe", "before I
+  could countermand the order", "return to Annapolis", "where she can take troops", "it is impossible for her to come up here", "let me know what
+  orders you give her" 0; be-api 2 phrases 0; Google Books 2 + FIX-FM65 2: 0.
+- **Controls:** be-api `"Steamers all ready coaled and loaded with proper rations"` 7 hits (OR I/46 pt 2 copies); Google Books `"sailed in perfect
+  order" intitle:Grant` returns Grant Papers vol. 13 (control passes); `"Steamers all ready coaled" intitle:Grant` returns nothing in Grant Papers --
+  expected, that text is in the OR, not in Grant's papers (not a failed control).
+- **Unreachable or not searched:** chroniclingamerica.loc.gov `ocr.txt` (403, read through loc.gov instead), be-api 3 queries 502, Grant Papers vol.
+  13 page by page (not on IA), vol. 14 page by page (lending-only), the Baltimore *American* for March 1865, NARA RG 107, ORN I/11-12 (not fetched
+  this session; none of the six is a navy telegram), JSTOR.
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+Decoder counts include key rows that misfire on plain words; corrected counts below. "Webster" is plain (Col. R. C. Webster) wherever it is the
+name, as FV-FM65b ruled for the January rows.
+- **E545:** two messages, Fort Monroe 27 Jan 1865 10.10 AM (clear copy 7731), Maj. Gen. J. M. Schofield to Lt. Col. G. W. Schofield at Willard's
+  Hotel, Washington, and to Lt. Col. J. F. Boyd, chief quartermaster, at Willard's. Plain: G. W. Schofield (the general's brother), Boyd, willards;
+  "a vinton" = A. Q. M. (clear copy "a Qr Mr"; C); "wilby" = will be. Code groups Animal, paradise, growl x3, grapes, unity x3,
+  plug, pagan, quincy, ramble, yoke, King, pandora, vinton, tarquin, wherry, rampant, whistle, Aurora, walrus, Kitten: **C 24 of 24** (every one
+  agrees with the clear copy). "and nothing for nothing more" operator chatter, not counted.
+- **E560:** Fort Monroe 24 Feb 1865 (clear copy 8605, 11.40 AM): Capt. **William L. James**, A. Q. M. and acting chief quartermaster, Fort Monroe,
+  to Sheldon, forwarded by Sheldon to Maj. Eckert. Plain, decoder misfires: "Washington" in the address (decoded [Volunteer]), "William" (decoded
+  [100]); "Sheaf" = Chief (phonetic, plain). Code groups vintons, animal, harsh, penny, Tappan, Shelby, polking (= Comdg: no key row, C by the clear
+  copy), wreathe, Hastings, Alba, unity x2, pagan, zodiac, yoke x2, pilgrim, vincent x2, Taunton, growl: **C 21 of 21**. "pagan" = Battery is right
+  (a telegraph battery), not a slip.
+- **E505:** msg 1 "[7 PM] for [Captain] William T. Howell, A[ssistant] [Quartermaster]. [Steam]ers all ready coaled and loaded with proper [rations].
+  The list will be handed you, stating capacity, &c., of each. R. C. Webster, [Colonel]. Geo. D. Sheldon." -- **C 7** (Martha, pilgrim, vincent,
+  unity, wayworn, Wales, pandora; print OR I/46 pt 2 p.21); webster and William plain (decoder misfires). msg 2 "City Point Jan'y 3/65 [9.30 PM]
+  [Colonel] Webster. In addition to [steam]ers named in your [wreate], [General] Rawlins wishes you to send to this [venon] [one] [of the] best going
+  [steam]ers that you have [,] for other service. Please have her furnished with good supply of coal; no [rations] will be required. [honor] Howell.
+  S. H. Beckwith." -- **sender Capt. Howell** (the reader's "Beckwith to Sheldon" names the operators); bessie = best, heifer = have her, addie shun
+  tooth = addition to, utah = you to (phonetic, plain). Code groups Rosetta, paradise, unity, weasel, shelter, plug, torch, pedlar, zebra, Wales:
+  **H 10**; wreate ("list"? by sense), venon/verion ("place"), honor (signature position): **M 3**. Row total C 7 + H 10 + M 3 of 20.
+- **E567:** "[Wilmington] February [25] [by way of] [Monroe] [2.30 PM] March [5] for [Maj. Gen. U. S. Grant], [City Point]. Please have [two]
+  [engines] and some flat [cars] sent here at once so that [Colonel] Wright can commence work. None have arrived at this place or [Newbern].
+  [Signed] [Maj. Gen. J. M. Schofield]. long coming. sent 2.35 P.M. Dealy. Geo. D. Sheldon." Addressee **Grant** (C by print: "Schofield telegraphed
+  to USG"), not "Grant/Rawlins (M)". Grades: **C 10** (harsh, person, Japan, plank, Rabbits, palmyra, pandora, fortune, walrus, Kiss: print shows each
+  meaning), **H 8** (Hamlet, peasant, appian, Henrietta, plaster, black, unity, zodiac); 100% H/C. "Wright" is Col. W. W. Wright, military railroads
+  (OR I/47 pt 2: "Col. W. W. Wright, New Berne", Gum Swamp 6 Mar), plain.
+- **E525:** "Baltimore Jan. 7/65 [3 PM] [7] for [Colonel] R. C. Webster ("Are see Webster"), Chief [Quartermaster]. The Baltic got off for [Monroe]
+  before I could countermand the order given from [Washington] to send her there. She had better coal there and return to Annapolis where she can
+  take [troops]. It is impossible for her to come up here. Let me know what orders you give her. [princess] [signed] R. M. Newport, [Colonel],
+  [Quartermaster]. J. W. Sampson." -- Col. R. M. Newport, chief quartermaster at Baltimore (his printed signature, OR I/46 pt 2: "R. M. Newport,
+  Colonel and Quartermaster"), to Webster; Sampson is the Baltimore operator. Plain, decoder misfires: Webster ([signed]), baltic ([Chattahoochee]),
+  Sampson ([Ferry]); "sheaf" = chief. Code groups Baptism, Imogene, plunder, paradise, vinton, zodiac x2, animal, grapes, zebra, whinny, yoke, pandora,
+  vincent: **H 14**; princess (the Captain row, but Newport was a colonel): **M 1**; 93.3% H.
+- **E572:** "Ft Monroe Mar 14 1865, Maj. Eckert, Washington. [Monroe] [14] for C. C. Fulton, American office, [Baltimore]. The [steam] ship Champion
+  arrived here from [Wilmington] [North Carolina] this morning and brings the intelligence that [Gen. Sherman] and his [forces] had reached
+  Fayetteville [N. C.] intact. The [scout]s of [Sherman]'s [army] reached [Wilmington] [N. C.] on the [11th] instant, but the Champion sailing the
+  same day no particulars could be obtained. [Signature]: no [signature], of course not sent." Code groups Animal, female, Baptism, unity, weasel,
+  Hamlet, abacus x2, Kitchen, saints, zebra, wolfs, Kennebecs, oyster, Hannibal, fence, youth, plus "ditto" (= N. C., by the clear copy): **C 18 of
+  18**.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E545 | **N1** | period | **D3** (C 24 of 24, all agreeing with the clear copy; external non-statistical: the holder's clear copy 7731, and OR I/47 pt 2 pp.213-214 SO 18 "one battery will move with each division ... the remaining artillery ... will follow"; no fresh rule-7 re-derivation, so not D4) | plaintext of this very telegram in the holder's public transcription of the clear copy, pointer 7731 (Huntington object 8066); not located in print. FIX-FM65's Grant Papers 13 near-miss is Grant to Halleck, 12 Jan 1865 (OR I/45 pt 2 p.573), a different telegram |
+| E560 | **N1** | period | **D3** (C 21 of 21; external: clear copy 8605; OR I/46 pt 2 names Capt. W. L. James, A. Q. M.) | plaintext in the holder's public transcription of the clear copy, pointer 8605 (object 8886) |
+| E505 | **N1** (msg 1); msg 2 **N3** | period | msg 1 **D3** (C 7 of 7, print agrees word for word); msg 2 **D2** (H 10 + M 3, 76.9%; code clause [General] Rawlins ... [one] [of the] best going [steam]ers read with the period key; no external check of msg 2's own content) | msg 1 printed OR I/46 pt 2 p.21 (1896); msg 2 no prior plaintext or decipherment located after the search in s.2 |
+| E567 | **N1** | period | **D3** (C 10 + H 8 of 18, 100%; print agrees word for word) | plaintext printed in The Papers of Ulysses S. Grant vol. 14 (1985), from the sent telegram; our reading an independent re-decipherment |
+| E525 | **N3** | period | **D3** (H 14 + M 1 of 15, 93.3%; external non-statistical: OR I/46 pt 2, Morgan 12 Jan P.S., the Baltic went up to Annapolis ready for sea to take a brigade; Newport 7 Jan 6 p.m., the Baltic left for Fort Monroe last night) | no prior plaintext or decipherment located after the search in s.2 |
+| E572 | **N1** | period | **D3** (C 18 of 18; external: clear copy 7822; the AP dispatch of the same day prints the same news) | plaintext in the holder's public transcription of the clear copy, pointer 7822 (object 8066); the same news in different words in the press of 16 Mar 1865 |
+
+- **Under the lane RULING** a row with a holder clear copy at another pointer or located in print is not filed; E545, E560, E567, E572 and E505
+  msg 1 would have stayed unfiled had the readers found these copies. They stay in the files as N1 re-decipherments (as E189, E230, E234), not as
+  results.
+- Not N4 for E525 or E505 msg 2: Grant Papers vol. 13 by Google Books snippets only (not on IA), NARA RG 107 not reached, the Baltimore press not
+  reached.
+- **Safe sentences.** E545: "Read with War Department Cipher No. 1: Schofield's two telegrams from Fort Monroe of 27 Jan 1865 to his brother Lt. Col.
+  G. W. Schofield and to Lt. Col. J. F. Boyd in Washington (one battery with each division; bring transportation, and mules from Kentucky if needed);
+  the Huntington holds a clear copy (pointer 7731), with which our reading agrees." E560: "Read with War Department Cipher No. 1: Capt. William L.
+  James's request of 24 Feb 1865 for a telegraph station at Yorktown, as Sheldon forwarded it to Eckert; the Huntington holds a clear copy (pointer
+  8605), with which our reading agrees." E505: "Read at grade H with War Department Cipher No. 1: message 1, Webster to Capt. Howell, 3 Jan 1865, is
+  printed in the Official Records (ser. I vol. 46 pt 2 p.21); message 2, the same evening, Capt. Howell at City Point asked Col. Webster at Fort Monroe,
+  for Rawlins, to send one of his best going steamers there for other service, with coal and no rations; message 2 was not located in the Official
+  Records, Grant's papers or the Huntington's full-text search (searched 10 Oct 2026)." E567: "Read with War Department Cipher No. 1: Schofield's
+  telegram to Grant from Wilmington, 25 Feb 1865, asking for two engines and flat cars so that Col. Wright could commence work; its text is already
+  printed in The Papers of Ulysses S. Grant, vol. 14 (1985), and our reading agrees with it." E525: "Read at grade H with War Department Cipher No. 1:
+  on 7 Jan 1865 Col. R. M. Newport at Baltimore told Col. R. C. Webster at Fort Monroe that the Baltic had left for Monroe before he could
+  countermand Washington's order, and that she had better coal there and return to Annapolis to take troops, as she could not come up to Baltimore;
+  not located in the Official Records (ser. I vol. 46 pt 2 prints Newport's and Morgan's other telegrams about the Baltic) or the Huntington's
+  full-text search (searched 10 Oct 2026)." E572: "Read with War Department Cipher No. 1: Sheldon's press dispatch of 14 Mar 1865 to C. C. Fulton
+  of the Baltimore American (the Champion's arrival, Sherman at Fayetteville); the Huntington holds a clear copy (pointer 7822), with which our
+  reading agrees."
+- **Unsafe:** any "first", "new", "unpublished" for any of the six; E545, E560, E567, E572 or E505 msg 1 as anything but already known; "Beckwith to
+  Sheldon" as the sender of E505 msg 2; "William D. James".
+
+### 5. Fixes for the next FIX job (not applied here; reading.md is decode.py output)
+All: headers "transcription only" (E505) -> eye-checked FV-L15b; `plain-at: webster#n` (E505 x2, E525). E545: header note "clear copy 7731
+(Huntington object 8066); not filed under the RULING had it been found"; "a vinton" = a Qr Mr (clear copy); addressee G. W. Schofield = the
+general's brother (plain, not M). E560: transcription and header "William D. James" -> "William L. James" (image, clear copy 8605, OR I/46 pt 2);
+`plain-at: washington#1` (address line), `plain-at: william#1`; "polking" = Comdg (C, gloss); entry note "pagan [Battery] is a slip (M)" -> correct
+(telegraph battery); header note "clear copy 8605 (object 8886)". E505: header msg 2 sender -> Capt. Howell (S. H. Beckwith operator); `plain-at:
+william#1`; glosses bessie = best, heifer = have her, addie shun tooth = addition to, utah = you to; wreate, venon/verion, honor M; msg 1 "C: OR I/46
+pt 2 p.21" (already in the note). E567: header addressee -> Maj. Gen. U. S. Grant (print), note "in print: Grant Papers vol. 14 (IA
+papersofulyssess0014gran; Google Books DVLPEPsH1_oC)"; Wright = Col. W. W. Wright. E525: `plain-at: baltic#1`, `plain-at: sampson#1`; header sender
+R. M. Newport, Colonel and Quartermaster, Baltimore, to Col. R. C. Webster (both identified, not M); "princess" M. E572: header "[received/entered]
+... ([Baltimore] as a place word, M)" -> "for C. C. Fulton, American office, Baltimore" (C, clear copy 7822); "ditto" = N. C. (C); tail "youth no
+yoke" = "sig No sig". Jobs-file lesson (1): Grant Papers vol. 14 is on IA (`papersofulyssess0014gran`, lending; be-api snippets work); vol. 13 is
+not. Requests: hdl.huntington.org 23 (17 CONTENTdm queries incl. control, 6 IIIF pages), all 200; www.googleapis.com 33; be-api 15 (3 answered
+502, one of them retried once, still 502); archive.org 1 (advancedsearch); www.loc.gov 9 (3 searches, 6 resource JSON, one of them by curl); tile.loc.gov
+6 (one by curl, five by script); chroniclingamerica.loc.gov 7 (all 403, host then left alone).

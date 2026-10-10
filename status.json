@@ -14364,6 +14364,88 @@
       "depth_sentence": "On 2 Feb 1865 the War Department telegraph office told Eckert, then at Fort Monroe, that General Schofield had asked Colonel Stager for a cipher operator to go with him next day to North Carolina and would soon need a construction corps and some operators; Stager referred the matter to Eckert, and the office asked whether the party should be chosen to meet Schofield at Fort Monroe and whether Mack and his party should get ready to leave with the material.",
       "depth_check": "code: Kingdom/Kitten/King = Schofield (three key pages), penfield = Cipher, abacus = North Carolina, pelton = Corps, animal = Monroe; external (non-statistical): OR I/47 pt 2 pp.189-190 Grant and Halleck 31 Jan 1865, Schofield to pass Fort Monroe, North Carolina made a department under him; row 5898/0 of the same ledger, Eckert at Fort Monroe for the Hampton Roads conference, 3 Feb",
       "depth_note": "15 H of 15 code-word groups"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L15b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L15b verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L15b)' section 4",
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "reading_version": "FM65-C 10 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-L15b) section 3",
+      "unresolved_spans": "'princess' (the Captain row; Newport was a colonel, M); 'Webster', 'baltic', 'Sampson' plain (decoder misfires)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "1"
+      },
+      "depth_pct": 93.3,
+      "title": "Eckert 1864 (Fort Monroe ledger): Col. R. M. Newport, Baltimore, to Col. R. C. Webster, Fort Monroe, 7 Jan 1865: the Baltic left for Monroe before the order could be countermanded; coal her there and return her to Annapolis for troops (E525)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 7 Jan 1865 Col. R. M. Newport at Baltimore told Col. R. C. Webster at Fort Monroe that the Baltic had left for Monroe before he could countermand Washington's order, and that she had better coal there and return to Annapolis to take troops, as she could not come up to Baltimore; not located in the Official Records (ser. I vol. 46 pt 2 prints Newport's and Morgan's other telegrams about the Baltic) or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L15b); 'princess' M; not N4: Grant Papers vol. 13 by Google Books snippets only (not on IA), NARA RG 107 not reached, the Baltimore press not reached",
+      "depth": "D3",
+      "completeness": "14 H + 1 M of 15 code-word tokens",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.324, pointer 5868, E525"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.324, pointer 5868, E525",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.324, pointer 5868, E525"
+      ],
+      "depth_sentence": "On 7 Jan 1865 Col. R. M. Newport, chief quartermaster at Baltimore, told Col. R. C. Webster at Fort Monroe that the steamer Baltic had left for Monroe before he could countermand the order from Washington, and asked that she coal there and go back to Annapolis to take troops.",
+      "depth_check": "external non-statistical: OR I/46 pt 2, Morgan (Fort Monroe) 12 Jan P.S., the Baltic went up to Annapolis ready for sea to take a brigade; Newport 7 Jan 6 p.m., the Baltic left for Fort Monroe last night; diffed: different texts",
+      "depth_note": "14 H + 1 M of 15 code-word tokens"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L15b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L15b verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "message 2 only (message 1 printed, OR I/46 pt 2 p.21: N1)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L15b)' section 4",
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "reading_version": "FM65-A 10 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-L15b) section 3",
+      "unresolved_spans": "msg 2: 'wreate', 'venon/verion', 'honor' (M); msg 1 is C by print",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "3"
+      },
+      "depth_pct": 76.9,
+      "title": "Eckert 1864 (Fort Monroe ledger): Capt. W. T. Howell, City Point, to Col. R. C. Webster, Fort Monroe, 3 Jan 1865 9.30 PM: for Rawlins, send one of the best going steamers here for other service, with coal, no rations (E505 msg 2)",
+      "line": "Read at grade H with War Department Cipher No. 1: message 1 of this row, Webster to Capt. Howell, 3 Jan 1865, is printed in the Official Records (ser. I vol. 46 pt 2 p.21); message 2, the same evening, Capt. Howell at City Point asked Col. Webster at Fort Monroe, for Rawlins, to send one of his best going steamers there for other service, with coal and no rations; message 2 was not located in the Official Records, Grant's papers or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "msg 2 N3 one audit (FV-L15b), D2 (H 10 + M 3); msg 1 N1 (OR I/46 pt 2 p.21); not N4: Grant Papers vol. 13 by Google Books snippets only (not on IA), NARA RG 107 not reached",
+      "depth": "D2",
+      "completeness": "msg 2: 10 H + 3 M of 13 code-word tokens; msg 1: 7 C of 7 (print)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.307, pointer 5851, E505"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.307, pointer 5851, E505",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.307, pointer 5851, E505"
+      ],
+      "depth_sentence": "On the evening of 3 Jan 1865 Capt. Howell at City Point asked Col. Webster at Fort Monroe, for General Rawlins, to send one of his best going steamers to City Point for other service, furnished with coal, no rations being required.",
+      "depth_check": "code clause read with the period key ([General] Rawlins ... [one] [of the] best going [steam]ers, [rations]); no external check of message 2's own content",
+      "depth_note": "msg 2: 10 H + 3 M of 13 code-word tokens"
     }
   ],
   "lanes": [
