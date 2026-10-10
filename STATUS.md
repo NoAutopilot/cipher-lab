@@ -5925,6 +5925,41 @@ Left (next lane): eckert-1864 No 2 entries pp.86-182 of no2-candidates.tsv (~37 
 by D12-E2/E3 rates; N2-AI/N2-AJ/N2-R N4 needs RG 92/393/107 or the OR Supplement (owner-side or LOCAL-QUEUE); eckert-1862 `ec18_align.py --rows`
 still stale, cause untested (~1); 9877 Hurlbut token stays M.
 
+## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261010-0909, session_012hc8DarhcArSYEVNFRGewc, account 2), 10 October 2026 (closed 10:1x UTC: in-scope cheap supply spent, lane ~19.9 of 60)
+
+Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-10-ytbiz-family-0909-jobs.md (lane tag FAMILY-A2p).
+Started from the 0510 handoff next list and a fresh next_steps --hot-only read; every in-scope hot row re-read in its dated sections (wallis,
+Suriname, Manteuffel, hessen-daenemark, la-garde, pro3055, hellen R1049, decode-1411, jvn/oldenbarnevelt-2442, decode-4450 (needs Gallica
+fr.2988 f.4-6), vanbeuningen (all printed, no unread sibling): done, retired or gated). Gate 0a: SESSION-SWEEP-account-2 stale-claimed since
+5 Oct, proceeded. Workers 5 in 2 waves (09:18-10:0x UTC; Opus 3, Sonnet 2; all ledgered from get_session, archived): 15.08; orchestrator ~4.8.
+Account 2 seven_day `allowed_warning` throughout (continued per blast rules). No Gallica probe. Known-text share: FAM-BNEPRINT 0.67 (~4%).
+
+Results:
+- antt-linhares-chave (FAM-LINCAL 4.76): PREREG-LINCAL first; 1897 px row labeller PASS 4/4 on held-out key-sheet columns; 83/2 r19 = Cagar,
+  241/3 r15 = Jus labelled, both stay M (a person's count of 241/3 decides jus/justa); --check exit 0.
+- bne20211-ferdinand-1478 (FAM-BNEDEC 5.89, FAM-BNEPRINT 0.67): period decipherment of f.1r re-cut (pitch ~24 px, --follow-slope), 2 blind
+  passes 26.6% agreement, reconciled 12/15 lines doubt < 1/3 (M). Paz y Melia, El cronista Alonso de Palencia (1914; gbooks 7q9CAAAAYAAJ,
+  IA elcronistaalonso0000unse) prints a run matching decipherment lines D02-D14 (7/21 in-volume phrase probes; controls pos 1/1, neg 0/2):
+  the letter's plaintext is in print, page unread (LOCAL-QUEUE row filed). The printed text is now a known-plaintext crib for the key rebuild
+  once ASKS 143 settles the cipher alphabet. No novelty claim; no AUDIT written (no reading of ours is claimed).
+- costabili-modena-1491 (FAM-COSCREM 2.34): Cremonini n.1 (1486 reconstruction) vs R1166: 1/11 C labels agree vs null p95 2 -> FAIL,
+  different design; key unchanged.
+- oldenbarnevelt-brederode-1605 (FAM-OBRSG 1.42): Den Tex (dbnl) read, no cipher note; the Resolutien footnote numbers S.G. 5888/5968 are
+  old numbering; the Liassen Hoogduytschlandt (6034/6035) where the 17 Oct 1604 original would sit are not digitised (needs-physical-access).
+No N3+ D2+ item, so no AUD2 row and no SO row change.
+
+**next** (for the next LANE FAMILY incarnation):
+1. bne20211-ferdinand-1478: when the LOCAL-QUEUE page read lands, set the reconciled decipherment against the 1914 print (normalise per
+   PX-BRODEC first), ~$1; then, after ASKS 143, align cipher vs print (interlinear_align.py, ~$3). A verifier only if a reading is claimed.
+2. oldenbarnevelt-brederode-1605: 11851 rest (~$1.5, low prior: an outgoing register) or the 390 unlooked scans of inv. 6017 (~$3, low
+   prior after 0/195); the Hoogduytschlandt liassen are a copy-order question for the owner.
+3. antt-linhares-chave: a person's count of 241/3 (jus/justa); nothing cloud-side.
+4. Carried: decode-1411 (ASKS 120), ASKS 161 sorters, rah-salazar HTRC EF rerun (~$0.2), es132 f.93-95 and decode-4450 f.2/f.4 (Gallica
+   lane), Manteuffel 199/321 (~$5 each, low yield), Brochado letter 134 (ASKS 108).
+Pricing: Opus jobs 0.94-1.47x cap (BNEDEC over: 4 fixed-y passes discarded before --follow-slope); Sonnet 0.45-0.57x. Briefing lesson: name
+--follow-slope for a slanted block in a re-cut brief.
+Excluded this incarnation: eckert-* and Huntington ledgers (LANE LEDGER), Gallica fetches, Armstrong/Debosnys/Birago.
+
 ## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261010-0510, session_01TYpGVg4dqTawYWtDfvXvGq, account 2), 10 October 2026 (closed 08:4x UTC: lead followed to the end of its cheap steps, lane ~24.7 of 60)
 
 Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-10-ytbiz-family-0510-jobs.md (lane tag FAMILY-A2o).
