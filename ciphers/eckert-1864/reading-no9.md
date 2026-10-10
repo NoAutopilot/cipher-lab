@@ -452,5 +452,17 @@ Code-word tokens: H 5, M 5.
 
 Code-word tokens: H 5, M 2.
 
-Totals over the 57 entries: H 426, C 0, I 0, M 18.
+**O9-DL | Page 3 | 5547 | mssEC 25 (obj 5952, pointer 5547), 3 Feb 1864 New York, J. J. Peck (Syracuse) via Horner to Sheldon at Ft Monroe, for B. F. Butler, Fort Monroe: yours received; I await your orders by telegraph; will leave at once if you deem it necessary; have written you (FM-S3; row 5547/1; old vocabulary; transcription only)**
+
+Geo D Sheldon "F" Syracuse third for [B. F. Butler] [(Fort) Monroe] yours received I await you orders by telegraph will leave at once if you deem it necessary have written you signed J J Peck [Maj. Gen.] John Horner
+
+Code-word tokens: H 3.
+
+**O9-DM | Page 2 | 5546 | mssEC 25 (obj 5952, pointer 5546), 3 Feb 1864 Washington, Eckert to Sheldon, for B. F. Butler: telegraph directly to Maj. Gen. [Hedge Wick, a pun on Sedgwick, M] now in command of the Army of the Potomac in regard to any cooperation; signed by Halleck's word (applause, M) (FM-S3; row 5546/0; old vocabulary; transcription only)**
+
+Geo D Sheldon F for [B. F. Butler] please [Telegraphs] directly to [Maj. Gen.] Hedge [Equipage] now in command of [Army] of the [Potomac] in regard to any cooper ration sign [Halleck] T. T. Eckert
+
+Code-word tokens: H 7.
+
+Totals over the 59 entries: H 436, C 0, I 0, M 18.
 <!-- decode.py: derived block ends -->

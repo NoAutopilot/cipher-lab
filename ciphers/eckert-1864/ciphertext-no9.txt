@@ -926,3 +926,25 @@ in this respect sig Abortion easy
 variant: Clara=Clara:M
 graded: easy:M
 note: O9R-1: No. 9 (header words decide, not the coherence number: bigram coherence per word-pair, No. 1 / No. 2 / No. 9; -7.989/-6.992/-6.373; -6.680/-6.735/-6.413; ms18/o9r1_coherence.out, a weak instrument at this length, O9-BOOK's finding repeated). Book test: label '(9)' (read on the crop); Pagan = Washington; 'Vernon' = Maj. Gen. (print: Major-General Steele, agrees), 'youth' = troops, 'waggish' = arrest, 'Abortion' = Halleck (H). Printed OR I/34 pt 2 (IA warofrebellion013402rootrich; 'Washington, D. C., March 14, 1864 - 10.30 p. m., Major-General Steele, Little Rock, Ark.', Halleck as General-in-Chief, the item ends on p.602 before the head of p.603): word for word apart from 'come and' / 'command'. Print-match instrument: No. 9 5/5 word tokens, No. 1 0/4, No. 2 0/6, shuffled No. 9 max 2 of 20 seeds, p95 1. TIME-WORD CONFLICT: Clara = 10.30 AM in key-no9.md against the printed 10.30 p.m.: the hour agrees to the half hour, the meridian does not (Susan = 10.30 PM, O9-DE); graded M (variant); No. 1/No. 2 read Clara as 5.30 AM. Bigram coherence puts No. 9 first (-6.373 against shuffled No. 9 -6.413 and No. 2 -6.992): beats No. 1/2 and, by 0.04, the shuffled No. 9 control (not a margin). Unread by the table: 'easy' (tail filler, 1 token, M).
+
+### O9-DL | Page 3 | 5547 | mssEC 25 (obj 5952, pointer 5547), 3 Feb 1864 New York, J. J. Peck (Syracuse) via Horner to Sheldon at Ft Monroe, for B. F. Butler, Fort Monroe: yours received; I await your orders by telegraph; will leave at once if you deem it necessary; have written you (FM-S3; row 5547/1; old vocabulary; transcription only)
+New York Feb. 3 . 1864
+Geo D Sheldon "F"
+Syracuse third for Audit Hammock yours
+received I await you orders by
+telegraph will leave at once if
+you deem it necessary have written
+you signed J J Peck Vernon
+John Horner
+note: FM-S3 Step 0 (fm_s3_step0.py, run under No. 1; as information, a hit on mssEC 25 is a non-test): (a) 0.739 (17/23), (b) p95 0.304, HIT under No. 1 (No. 1 reads Audit as Rapidan and gives no sense). Book: No. 9 (Audit = B. F. Butler, Hammock = (Fort) Monroe, Vernon = Maj. Gen., all H; the shares picked No. 2, sense picks No. 9, the same Feb 1864 'Audit' address as the unfiled sibling 5569/1 and O9-DM (5546/0)). Holder CISOSEARCHALL 'Peck Syracuse Horner': 2 hits, own pointer and 4424 (not opened). Not located in print (grep over 177 volumes: 'J J Peck' occurs in other dispatches, rejected).
+
+### O9-DM | Page 2 | 5546 | mssEC 25 (obj 5952, pointer 5546), 3 Feb 1864 Washington, Eckert to Sheldon, for B. F. Butler: telegraph directly to Maj. Gen. [Hedge Wick, a pun on Sedgwick, M] now in command of the Army of the Potomac in regard to any cooperation; signed by Halleck's word (applause, M) (FM-S3; row 5546/0; old vocabulary; transcription only)
+Washington Feby 3 . 1864
+Geo D Sheldon F
+for audit please supper directly
+to Vernon Hedge Wick now
+in command of Walpole of
+the gem in regard to
+any cooper ration sign applause
+T. T. Eckert
+note: FM-S3 Step 0 (fm_s3_step0.py, run under No. 1; as information, a hit on mssEC 25 is a non-test): (a) 0.550 (11/20), (b) p95 0.300, HIT under No. 1 (No. 1 reads Audit as Rapidan; no sense). Book: No. 9 (Audit = B. F. Butler, supper = Telegraphs, Vernon = Maj. Gen., Walpole = Army, gem = Potomac, applause = Halleck: H7). 'Hedge Wick' is not a key row (M, pun reading Sedgwick, who commanded the Army of the Potomac during Meade's absence of early Feb 1864 only if the date holds: not checked). Holder CISOSEARCHALL 'cooper ration': 14 hits, own pointer plus 13 others not opened. Not located in print (grep over 177 volumes: none for the phrases).

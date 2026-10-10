@@ -6085,3 +6085,69 @@ and 0/6, and hit under all three shuffles because they are mostly plain telegram
    control as the gate (book hit and every shuffle miss). The key-only variant is kept only as a book check on the dateline, never as a known-text check.
 
 Not done: no image read (disk only); no clear-copy search; nothing filed; no grade, class, depth, status.json or AUDIT.md change.
+
+## FM-S3 (10 Oct 2026, account 1, for LANE LEDGER-13)
+
+Twenty short 1864 Fort Monroe rows (Huntington object 5952 = mssEC 25), none filed before (grep of pointer/row in `ciphertext*.txt`, NOTES.md at 09:2x UTC; E164, E229, E254, E271, E278, E284, E285 sit on the same pointers but are other rows; E278 is the answer to row 5829/1). Intake gate (brief, 08:43 UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Prior-work step: by-hand only (sibling entries per pointer, holder all-pointer search, 177-volume print grep); `prior_work.py` not run. **Filed 6: E471-E474 (No. 1), O9-DL and O9-DM (No. 9)**; novelty not classified (rule 10). Scripts and outputs in `fortmonroe/`: `fm_s3_dump.py`, `fm_s3_entries.txt`, `fm_s3.py` (shares + five decodes), `fm_s3_step0.py/.out`, `fm_s3_hdl.py/.out`, `fm_s3_hdl2.out`, `fm_s3_printcheck.py/.out`, `fm_s3_file.py`.
+
+**Ruling applied (LEDGER-13 Wave 2):** step 0 pasted as information only; a row is not filed if (i) holder clear copy, (ii) in print, (iii) plain / no book reads a clause / too short.
+Step 0 (a)/(b) per row is in `fm_s3_step0.out` (No. 1 and one meaning-shuffled No. 1, seed 7): 18 of 20 HIT under No. 1, and the shuffled copy HITs on the same rows (e.g. 5546/0 .550 vs .524, 5830/0 .667 vs .727): the non-test the ruling names. Only 5720/2 and 5669/1 miss, both because the decode contains the printed phrase in other words.
+
+**Holder layer** (CISOSEARCHALL p16003coll11, all pointers; control 'Inspector difficulty Evidence Nashville' returned 9678; 21 requests + 6 dmGetItemInfo, 27 in all, all 200): no clear copy of any of the 20 rows. Opened: 4562 (23 Apr, Grant on ironclads, different telegram), 8171 (Nov 1862), 4642 (20 May, different telegram), 9221 (1865), 5861, 5873 (Jan 1865). Unopened hit lists: 5547/1 (4424), 5546/0 (13 other pointers on 'cooper ration'), 5720/2 (2924 4443 5298 3650), 5804/2 (8171 opened). 5577/0, 5672/1, 5669/1, 5830/0, 5828/1, 5590/0 returned 0 hits (their words are hyphenated or spelt differently in the volunteer text; a miss, not a verdict).
+
+**In print (ii), phrase grep over 177 cached volumes, OCR page numbers only:**
+- 5720/2: OR I/36 pt 3 (`warofrebellion363unit`), Halleck to Commanding Officer Fort Monroe and Yorktown, 31 May 1864 1 p.m.: "All pontoon bridges at Fortress Monroe or Yorktown, or which may arrive at these places, will be sent to Major-General Butler, Bermuda Hundred." No. 1 reads Command-ing, Monroe, Yorktown; Knox = Butler (C by print).
+- 5672/1: Butler's Private and Official Correspondence IV (`privateofficialc04butl`), Halleck 14 May 1864 8.45 p.m., "Lieutenant-General Grant desires that you will have the Richmond and Danville railroad cut, if possible" (page header 208 follows the text).
+- 5669/1: same volume, Grant to Halleck 13 May 1864, "Please telegraph General Butler to have the Richmond and Danville road cut if possible", citing OR I/36 pt 2 p.697.
+- 5641/0: same volume, Grant 1 May 1864 from Culpepper, "Have any more iron-clads reached you? Has General Gillmore arrived?" (the pair of E271).
+- 5804/2: Butler's Correspondence V (`privateofficialc05butl`), Butler to Webster 4 Nov 1864 "Do you need more transportation to New York? Answer immediately" (running head 312 follows; p.311-312 not read on the page).
+- 5830/0: OR I/42 pt 3 (`warofrebellion423unit`) p.982 by the OCR header, Porter to Welles, Fort Monroe 13 Dec 1864 1.30 p.m., "I shall leave here for Beaufort in an hour".
+- 5800/2: same volume, Butler to Grant, Fort Monroe 1 Nov 1864 5.35 p.m. (the OCR reads "17"; the next document is dated 1 Nov), "Dispatch received. Will start in an hour."
+Page numbers are OCR running heads, not read on the page image; the printed OR page of 5720/2 and 5800/2 is not read. The 'by the other line' hit for 5679/0 and the 'J J Peck' hits for 5547/1 were rejected (other dispatches).
+
+**Per-row line.**
+| row | line |
+|---|---|
+| 5720/2 | in print (OR I/36 pt 3); not filed |
+| 5547/1 | **filed O9-DL** (No. 9: Audit = Butler, Hammock = (Fort) Monroe; Peck awaits orders) |
+| 5569/1 | not filed: plain (a map of Richmond could not be procured, Baldwin to Sheldon, 9 Feb 1864), one code word (Audit = Butler under No. 9, M), too short for a clause from code tokens |
+| 5546/0 | **filed O9-DM** (No. 9, H7; "Hedge Wick" M) |
+| 5577/0 | **filed E471** (No. 1, H8) |
+| 5673/1 | not filed: plain apart from telegram, date and time words (O'Brien, 15 May: you used the wrong route, corrected here); no content word rests on the key |
+| 5672/1 | in print (Butler Corr. IV); not filed |
+| 5641/0 | in print (Butler Corr. IV); not filed |
+| 5804/2 | in print (Butler Corr. V); not filed |
+| 5669/1 | in print (Butler Corr. IV, OR I/36 pt 2 p.697); not filed |
+| 5664/2 | not filed: Stager's key-edit order ("in No. 1 cipher erase the name of Hurlbut and insert Canby"), plain but the cipher/number words; a key check, as FM-S2's 5680/2, not a reading (Hurlbut/Canby names are plain) |
+| 5679/0 | **filed E472** (No. 1, H12) |
+| 5830/0 | in print (OR I/42 pt 3 p.982); not filed |
+| 5633/1 | **filed E473** (No. 1, H7, M for most) |
+| 5798/1 | not filed: key-edit order ("make following addition in No. 1 cipher: for 'for' rest Halifax and hospital"), a key check; the rest plain |
+| 5833/2 | not filed: too short (Butler has gone to sea, left about 12, Birney's message too late; H3) |
+| 5828/1 | not filed: too short, no sense beyond Norfolk/Shepley/tomorrow (H7, M) |
+| 5829/1 | **filed E474** (No. 1, H8; sibling E278 answers it) |
+| 5800/2 | in print (OR I/42 pt 3); not filed |
+| 5590/0 | not filed: too short (H3) |
+
+**Book.** Shares (`fm_s3.py`) pick No. 2 for four rows (5547/1, 5569/1, 5672/1, 5673/1) and No. 1/No. 9 elsewhere; they do not decide. Sense does: No. 9 for the 3 Feb 1864 'Audit' rows (5547/1, 5546/0; "Audit" = Butler, Vernon = Maj. Gen.), No. 1 elsewhere, as the brief's "test No. 1 first" for the five best_book 9 rows: No. 1 gives nonsense for Audit (Rapidan) and reads 5720/2 correctly only because the row is in print. The count control (meaning-shuffled No. 1 gives the same H as the true key on every row, `fm_s3.py --show`) cannot fail by construction and licenses nothing; sense is the criterion.
+
+**Grades.** Filed readings (decoder, per row): E471 H8, E472 H12, E473 H7, E474 H8, O9-DL H3, O9-DM H7; C 0, S 0; M by hand for numerals/times and the address words as stated in each header. No D2 claim: none carries a verifier sentence. Transcription only: no page image was read for any of the six (blind to line-level errors in the volunteer text). Checks: `decode.py`, `decode_no2.py`, `decode_no9.py --check` exit 0.
+
+**Requests.** hdl.huntington.org 27 (21 CISOSEARCHALL incl. control, 6 dmGetItemInfo), 0 be-api, all 200, 3.5 s apart; one token take (posted 09:21 while FM65-B held an earlier take, honoured by waiting; re-posted after its release).
+
+## Remaining gaps (FM-S3, 10 Oct 2026)
+Read so far: 20 of 20 examined; 6 filed, 7 in print, 2 key-edit orders, 5 plain or too short.
+- Six filed rows have no page-image check - blocker: not-attempted; the box and cap went to the holder and print layers first; next: IIIF 2400 px read of pointers 5546 5547 5577 5633 5679 5829, ~$0.4
+- Unopened holder hit lists for 5547/1 (4424), 5546/0 (13 pointers), 5720/2 - blocker: not-attempted; they need a second token take that this job did not budget; next: dmGetItemInfo on those, ~$0.1
+- Printed pages of 5804/2, 5830/0, 5800/2, 5720/2 not read on the page - blocker: not-attempted; only OCR running heads were read from the cache; next: be-api snippet or djvu page read, ~$0.1
+- E473 and E474 first clauses - blocker: open-codes; the opening words rest on no sibling or print; next: sibling window by date (26 Apr, 13 Dec), ~$0.2
+
+## Escalation (FM-S3, 10 Oct 2026)
+- [x] siblings: E278 (answers 5829/1), O9-CA/CB neighbours, holder 4562 4642 5861 5873 9221 8171 seen.
+- [x] clear-pages: all-pointer CISOSEARCHALL on every row with control; no clear copy.
+- [x] known-keys: three books plus shuffled copy per row.
+- [x] print: 177 cached volumes; no be-api whole-collection phrase query run (budget); a miss is a search result only.
+- [n/a] key-rebuild: no key row was edited by this job.
+- [ ] image-check: six filed rows not read on the leaf (named gap above).
+- [n/a] retry: no request failed so none was retried.
+Verdict: keep going: 4 internal gaps; cheapest next: unopened holder hit lists (5547/1, 5546/0, 5720/2), ~$0.1

@@ -4598,3 +4598,40 @@ have arrived yet walrus Jay W. Shaffer
 paradise and chief of staff fine morning
 Geo D Sheldon
 note: FM-S2: Step 0 (fm_s2_step0.py): (a) 0.385 (5/13), (b) p95 0.308, MISS; (c) key-dependent words: five, general, New Orleans, troops, twenty, Washington. The time reads 10.15 AM (feeble = 10, ghost = 15; the decoder prints [25], a numeral-combination quirk; the sibling 5768/2 header says 10.15 AM). whiskey = Troops is S (key row), supported by sibling 5768/1 'troops arriving from New Orleans'. Indian = General-in-Chief is H but an odd address for 10 July 1864 (Halleck was Chief of Staff): M for who is meant. Not in print: phrase grep over 164 cached volumes, Huntington CISOSEARCHALL (no clear copy), be-api: none located.
+
+### E471 | Page 33 | 5577 | mssEC 25 (obj 5952, pointer 5577), 3 Mar 1864 Ft Monroe, Sheldon to Maj. Eckert, Washington: number 1 cipher received today; send no ciphers till the cable is repaired; nothing heard from Kilpatrick (kill pat trick, plain) up to 1 PM today (FM-S3; row 5577/0; transcription only)
+Ft. Monroe March 3d 1864
+Maj Eckert Di
+number plunge Pembroke received Wedge unity
+send no penfields till cable is
+repaired zodiac nothing heard from kill
+pat trick up to Harriet Wharf
+Geo D. Sheldon
+note: FM-S3 Step 0 (fm_s3_step0.py, run under No. 1; as information, a hit on mssEC 25 is a non-test): (a) 0.810 (17/21), (b) p95 0.333, HIT (shuffled-key copy 0.810 HIT). No. 1 H8: plunge = 1, Pembroke = Cipher, penfields = Ciphers, Wedge = today (all H, M for the sense of the numeral-and-time words); the rest is plain. Not located in print (phrase grep over 177 cached volumes; no be-api run), Huntington CISOSEARCHALL 'cable repaired Patrick': 0 hits. Short: the code words carry only noun and number words.
+
+### E472 | Page 135 | 5679 | mssEC 25 (obj 5952, pointer 5679), 20 May 1864 1.30 PM Ft Monroe, Sheldon to the Quartermaster General (Meigs), Washington: has Sheridan left the James; must we forage him by the other line (FM-S3; row 5679/0; transcription only)
+Washington May 20 . 1864
+Geo D Sheldon
+Ft. Monroe
+Hannah harrow for pandora big animal
+unity has Nabob stomach the Bergen
+must we shade him by the
+othel line star Walrus Belcher pleasant
+note: FM-S3 Step 0 (fm_s3_step0.py, run under No. 1; as information, a hit on mssEC 25 is a non-test): (a) 0.533 (8/15), (b) p95 0.333, HIT (shuffled-key copy 0.533 HIT). No. 1 H12: Sheriden, Left, James, Forage, Colonel/Monroe, Qr Master Genl. Sense is the check (Sheridan's raid, May 1864), M for the addressee and the sign-off. Holder CISOSEARCHALL 'Sheridan Forage James': 1 hit, pointer 4642 (20 May 1864, Ft Monroe to QM Gen: Sheridan at White House wants ponton train, rations, forage): a different telegram on the same subject and day, not a copy. Not located in print (grep over 177 volumes: 'by the other line' occurs only in a 6 Oct 1864 Halleck dispatch, rejected).
+
+### E473 | Page 89 | 5633 | mssEC 25 (obj 5952, pointer 5633), 26 Apr 1864 Ft Monroe, Sheldon to R. O'Brien at Norfolk, for Captain Clark: [new regime, Edgar's name]; why [publish] Edgar's name; stop your exchanges, this was against orders [Butler] (FM-S3; row 5633/1; transcription only)
+Ft Monroe Apr 26 . 1864
+R OBrien Norfolk
+for princess Clark new Regime famish unity
+why publish Edgars name sugar Stop your
+Exchanges Zodiac this was against orders Knox
+Geo D Sheldon
+note: FM-S3 Step 0 (fm_s3_step0.py, run under No. 1; as information, a hit on mssEC 25 is a non-test): (a) 0.700 (14/20), (b) p95 0.350, HIT (shuffled-key copy 0.560 HIT). No. 1 H7 but the Norfolk, Butler and number words are M; the clause 'stop your exchanges, this was against orders' is plain. No. 2 reads Knox = Butler (H4, C1); the book is chosen by sense, not by share. Holder CISOSEARCHALL 'Exchanges against orders Clark Norfolk': own pointer only. Not located in print (grep over 177 volumes: none).
+
+### E474 | Page 285 | 5829 | mssEC 25 (obj 5952, pointer 5829), 13 Dec 1864 City Point, Ingalls (chief quartermaster) via S. H. Beckwith to Sheldon at Ft Monroe, for Col. Webster (chief QM Fort Monroe): has General Butler's fleet left yet; the question E278 (5829/2, same page, Webster's reply of 1 PM: most of the fleet left during last night) answers (FM-S3; row 5829/1; transcription only)
+City Point Dec. 13 - 1864
+Geo. D. Sheldon FT Monroe
+Frances fever paradise arsey webster chief vincent .
+has Knox fleet stomach yet youth Ingalls
+S. H. Beckwith
+note: FM-S3 Step 0 (fm_s3_step0.py, run under No. 1; as information, a hit on mssEC 25 is a non-test): (a) 0.667 (6/9), (b) p95 0.444, HIT (shuffled-key copy 0.750 HIT). No. 1 H8; the first clause (Frances fever paradise arsey) is M ('New York's 13 Colonel' does not read; the address to Webster is plain). Sense support is the sibling E278 on the same page, not the key. Holder CISOSEARCHALL 'Ingalls Webster fleet': own pointer only. Not located in print (grep over 177 volumes: none).

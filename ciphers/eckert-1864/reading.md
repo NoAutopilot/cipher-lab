@@ -2177,5 +2177,29 @@ Code-word tokens: H 31, C 2, M 1.
 
 Code-word tokens: H 11, S 1.
 
-Totals over the 341 entries: H 6006, C 94, I 25, M 46, S 19, U 10.
+**E471 | Page 33 | 5577 | mssEC 25 (obj 5952, pointer 5577), 3 Mar 1864 Ft Monroe, Sheldon to Maj. Eckert, Washington: number 1 cipher received today; send no ciphers till the cable is repaired; nothing heard from Kilpatrick (kill pat trick, plain) up to 1 PM today (FM-S3; row 5577/0; transcription only)**
+
+Maj Eckert Di number [1] [Cipher] received [Today] [.] send no [Cipher]'s till cable is repaired [.] nothing heard from kill pat trick up to {time: 1 PM} [Today] Geo D. Sheldon
+
+Code-word tokens: H 8.
+
+**E472 | Page 135 | 5679 | mssEC 25 (obj 5952, pointer 5679), 20 May 1864 1.30 PM Ft Monroe, Sheldon to the Quartermaster General (Meigs), Washington: has Sheridan left the James; must we forage him by the other line (FM-S3; row 5679/0; transcription only)**
+
+Geo D Sheldon Ft. Monroe {time: 1.30 PM} [20] for [Colonel] big [Monroe] [.] has [P. H. Sheriden] [Left] the [James] must we [Forage (-ed, -ing)] him by the othel line [?]  {tail: [signed] [Qr Master Genl U.S.] pleasant}
+
+Code-word tokens: H 12.
+
+**E473 | Page 89 | 5633 | mssEC 25 (obj 5952, pointer 5633), 26 Apr 1864 Ft Monroe, Sheldon to R. O'Brien at Norfolk, for Captain Clark: [new regime, Edgar's name]; why [publish] Edgar's name; stop your exchanges, this was against orders [Butler] (FM-S3; row 5633/1; transcription only)**
+
+R OBrien Norfolk for [Captain] Clark new Regime [Norfolk] [.] why [100] Edgars name [?] Stop your Exchanges [.] this was against orders [Maj Gen B. F. Butler] Geo D Sheldon
+
+Code-word tokens: H 7.
+
+**E474 | Page 285 | 5829 | mssEC 25 (obj 5952, pointer 5829), 13 Dec 1864 City Point, Ingalls (chief quartermaster) via S. H. Beckwith to Sheldon at Ft Monroe, for Col. Webster (chief QM Fort Monroe): has General Butler's fleet left yet; the question E278 (5829/2, same page, Webster's reply of 1 PM: most of the fleet left during last night) answers (FM-S3; row 5829/1; transcription only)**
+
+Geo. D. Sheldon FT Monroe [New York]'s [13] [Colonel] arsey  {tail: [signed] chief [Quartermaster] . has [Maj Gen B. F. Butler] fleet [Left] yet [signed] Ingalls S. H. Beckwith}
+
+Code-word tokens: H 8.
+
+Totals over the 345 entries: H 6041, C 94, I 25, M 46, S 19, U 10.
 <!-- decode.py: derived block ends -->
