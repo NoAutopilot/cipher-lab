@@ -117,3 +117,16 @@ As FV-N2e; N2R-5 says hdl 10442 is Ingalls's reply to JG's 11.30 a.m. dispatch: 
 Exactly "## N2R-4", with the Step-0 ruling of Wave 3 in place of the wave-1 step 0 (a hit: file nothing, say "body in holder transcription", list (c)).
 Rows: 9848/0 9811/0 9688/0 9729/1 9697/0 9850/2 9908/2 9798/1 9832/1. IDs: the next free block after N2-J* (fetch first). NOTES "## N2R-6 (10 Oct 2026, account 1,
 for LANE LEDGER-10)".
+
+---
+
+# Wave 4 (written 10 Oct 2026 06:0x UTC by date -u; lane ~40.5 of 60)
+By get_session: STEP0-RULE 3.29 (controls behave: E74/E378/E381 hit, a real wire-order route and two book-route constructions miss; 51/57 hit; E379 -> N1 D1),
+FV-N2e 4.94 (IA IB ID IG IH N1; IC N3 D3, AUD2-LEDGER10-4), FV-MS18q 2.00 (E383-E389 all N1 D1; E385 unsent draft), FV-N2f 2.93 (JG JI N1; JH N3 D2,
+AUD2-LEDGER10-3), N2R-6 1.57 (4 step-0 hits not filed; N2-KA..KE filed, KA KB KC not located).
+
+## FIX-FM21 (Sonnet 5.5; cap $2.5, box 60 min, no network)
+Exactly FIX-FM20, for: leaf fixes of "## AUDIT (FV-O9b)" (DA Can/Canon = plain Care/Spl Comr; DD adds mark; DF in Charge), "(FV-N2e)" s.2 (IG Bear mew day Douglas
+= Bermuda Hundred; IB Shelby = shall be; IC rebellion plain; ID Weldon/McCallum plain), "(FV-N2f)" s.3 (plain business/George/reward/question/Yard; JG
+Palermo=Nashville M), "(FV-MS18q)" s.5 (MS18-R8 step-0 sentence superseded) and "(STEP0-RULE)" s.5 if any. decode x3 --write/--check exit 0; status.json/SO per
+rule 10; NOTES "## FIX-FM21 (10 Oct 2026, account 1, for LANE LEDGER-10)"; depth_check; file_shrink_guard.
