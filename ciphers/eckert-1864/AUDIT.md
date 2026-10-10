@@ -14399,3 +14399,65 @@ workers: `sources/ia-fulltext/print-check/warofrebellion431unit_djvu.txt.gz` is 
 Requests: hdl.huntington.org 20 (10 CISOSEARCHALL, 10 item info), all 200; archive.org 2 (djvu texts, 200); be-api.us.archive.org 17 (all answered);
 www.googleapis.com 8; www.loc.gov 5 search (1 IncompleteRead, not retried) + 8 page/full-text (all 200); api.semanticscholar.org 2 (2 x 429, not retried);
 api.core.ac.uk 2; api.openalex.org 2.
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER-34)
+
+Second verifier AUD2-LEDGER-34 (account 4, Opus 5.5, for the orchestrator (account-4); row queued by FV-MS18j for LANE LEDGER (account 1), re-tagged from
+account 3), 10 Oct 2026, 02:23-02:4x UTC by `date -u`; a separate session and account from the reader MS18-R5 and the first auditor FV-MS18j (account 1);
+this session had not read or audited E351, E355 or E356 before. Scope: **E351, E355, E356** (first audit "## AUDIT (FV-MS18j)"). Nothing decoded beyond
+key look-ups. Key source: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Re-derivation: `python3 ciphers/eckert-1864/
+decode.py --check` -> "reading.md is current" (the reading already carries FIX-FM18's application of FV-MS18j s.5). Image: not re-checked (FV-MS18j cut
+and eye-checked every line at 2400 px). Committed (`ms18/`): `aud2_ledger34_hdl.py` + `.out` (CONTENTdm), `aud2_ledger34_iafts.py` + `.out` (IA be-api,
+43 queries), `aud2_ledger34_gb.py` + `.out` (Google Books, `country=US`, key, 24 queries). Six JSTOR-QUEUE.tsv rows (two families per entry).
+
+### 1. Families FV-MS18j named as unsearched, and what this pass did
+| Family | Result |
+|---|---|
+| *Confidential Correspondence of Gustavus Vasa Fox* (1918-19), IA `confidentialcorr01foxg`, `confidentialcorr02foxg`, djvu text grepped | 'Stiner' 0, 'Olcott' 0, 'Goodman' 0, 'Cluer' 0, 'Fort(ress) Monroe' 0. 'Herald' 8: the nearest, vol. 1 (Goldsborough to Fox, Norfolk, 4 June 1862), complains of "the correspondent of the Herald ... at Fort Monroe", two years earlier, and Stiner is not named. Butler-Fox letters in vol. 1 are Feb.-Mar. 1862. **Neither telegram is printed there.** |
+| OR ser. III vol. 4 (Jan. 1864-Apr. 1865), readable Cornell text `cu31924079575373` (title page "SERIES III -- VOLUME IV") | 'Olcott' 0, 'Goodman' 0, 'Stiner' 0, 'Fortress Monroe' 0: **E356, E355 not there.** |
+| OR ser. III vol. 5 (1865-66), readable Cornell text `cu31924079575381` (FV-MS18j had only the unreadable DLI scan) | 'Bodle' 0; 'minors' 10, none this telegram (index "Minors. Enlistment, etc., 130"; Provost Marshal General's narrative on writs of habeas corpus for deserters, 1863, p.752-753); 'habeas' 21: the nearest is Stanton's indorsement of 5 Apr 1866 on C. R. Woods (Mobile): "In respect to writs of habeas corpus, they should be obeyed without resistance by military authority unless otherwise instructed upon special facts" -- the same policy four months later, a different text. 'illegally enlisted' 0. **E351 not there.** |
+| *Papers of Ulysses S. Grant* (IA be-api, no login) | vol. 12 (Aug.-Nov. 1864) 'Stiner' 0 (indexed: "Fortress Monroe" "Herald" answers with another passage); vol. 10 (Jan.-May 1864) 'Olcott' 0; vols. 15-16 (1865-66) '"habeas corpus" "minors"' 0, 'Bodle' 0. |
+| *Collected Works of Abraham Lincoln* vol. 7 (`collectedworksof0007royp_u5u8`) | 'Olcott' 0, 'Goodman' 0 (indexed: "navy yard" "Boston" answers with the front matter); index vol. 'Stiner' 0. |
+| ORN, Butler Correspondence | covered by FV-MS18j (ORN I/9-10, Butler IV-V on page images); not repeated. Positive control here: be-api '"calculated to give information to the enemy"' in `privateofficialc05butl` -> 1 (Butler to Stiner, 9 Oct 1864, p.245). |
+| Huntington catalogue notes (dmGetItemInfo, every non-empty field) | 10065: keywords "tel823 : habeas corpus", tel822-823; 9863: "tel380 : Rockville", tel378-380 (no keyword for E355); 9729: "tel124 : Goodman", tel122-124. Zooniverse ids only, **no printed-edition citation on any of the three.** New CISOSEARCHALL queries (Cluer, Clancey, Goodman Boston, Woolley minors, Sands Kirkland, Stiner Herald, minors habeas): the first and its one retry after 25 s closed without response; stopped per the good-citizen rule, **not run**. |
+| Press of the day | **E351:** Chronicling America (loc.gov JSON) 'minors habeas corpus Hancock', 25 Nov-20 Dec 1865: 5 pages; read the *Baltimore Daily Commercial* of **12 Dec 1865, p.1** (full text, tile.loc.gov): Judge Alexander, City Circuit Court, Baltimore, on 11 Dec ordered the discharge of Luther S. Sands and Alexander Kirkland, "held by General Woolley as deserters", under 17 and enlisted without the father's consent; counsel appeared "on behalf of the Government"; "General Woolley complied with the order, and the boys were restored to their parents". A habeas corpus case for enlisted minors at Baltimore nine days after E351, with the military complying: **context consistent with the telegram, not a print of it.** **E356:** 'Cluer navy yard', 15 Apr-15 June 1864: 67 pages, top 8 titles unrelated; 'Olcott Goodman navy yard' 0. **E355:** the New York Herald of 6 Oct 1864 is still not read (not in Chronicling America, FV-MS18j). |
+| Modern literature (Google Books 24, IA be-api) | **E355:** Crouthamel, *Bennett's New York Herald* and Starr, *Reporters for the Union* both discuss Stiner and Butler; J. Cutler Andrews, *The North Reports the Civil War* (1955; IA `northreportscivi0000andr`, lending, djvu 403) quotes Stiner to the Herald's managing editor and a Fox-to-Butler letter -- the latter is Fox's of **31 May 1864** ("I am glad to see that you have brought up all standing -- Gillmore's ..."), printed in Butler IV (Google Books snippet of Butler IV), not E355; '"information the enemy"' in Andrews 0. None of the three is read page by page (be-api gives item-level hits only, so co-occurrence of Stiner and Fox there is not established). **E356:** the *Guide to Federal Archives Relating to the Civil War* (Munden and Beers 1962) lists NARA letters sent to "Olcott, Wilson, Goodman, and Chandler, Feb.-Dec. 1864 ... separately bound in 4 volumes" (Navy special judge advocates in the fraud cases): context for the cast (Wilson, Goodman), not the telegram. J. M. Siegel, *Origins of the Navy Judge Advocate General's Corps* (1997) snippet "Goodman was signed on as a spec[ial ...]": not readable here. **E351:** nothing. |
+| G3 phrase search on the decoded text (IA be-api global, exact) | '"all the information the enemy wants"' 0; '"bring back any witness"' 2 (London Times / Sunday Times 1874, Tichborne case: not this); '"habeas corpus in case of minors"' 2 (Massachusetts General Laws index, 1823: not this); '"William H. Stiner"' 323 (Herald and later business items; none the telegram). |
+| Web search (3 queries) | nothing on Fox-Stiner Oct. 1864, the Olcott-Goodman telegram, or Hancock / minors Dec. 1865 beyond the above. |
+| Unreachable / not searched | HathiTrust full text (Cloudflare, cloud); JSTOR (six rows queued, never blocking); the New York Herald of 6-12 Oct 1864; the Baltimore *Sun* and *American* of 1-15 Dec 1865 page by page; the Boston press of May 1864; Fox's papers (NYHS) and NARA RG 45 (the Olcott/Wilson/Goodman letters), RG 107 (telegrams sent), RG 94, RG 393 (Middle Department); Andrews, Crouthamel, Starr and Siegel page by page. |
+
+### 2. Findings
+- **No copy, quotation or printed text of E351, E355 or E356 found.** The holder has no duplicate (FV-MS18j s.1) and its catalogue records cite no edition.
+- **E351:** the policy it states (writs not to be resisted) is printed in a later War Department text (OR III/5, 5 Apr 1866), and a Baltimore case of exactly
+  this kind was decided against the army on 11 Dec 1865 with Gen. Woolley complying (Baltimore Daily Commercial, 12 Dec 1865). Both are context; neither is
+  this telegram. Not N2.
+- **E355:** Butler's rebuke of 9 Oct (Butler V p.245) remains the only printed trace; nothing found prints Fox's own words. Not N2.
+- **E356:** the cast (Olcott, Wilson, Goodman as the Navy Department's fraud-case counsel in 1864) is confirmed by the NARA guide; nothing prints the
+  telegram. Not N2.
+- **Counts.** reading.md gives E356 "Code-word tokens: H 11"; FV-MS18j s.3 says "H 12 of 12", but its own list (Growl, Pebble, Reliance, Paradise,
+  Frog, Zebra / zodiac / unity, France, Yoke, Buxton) is 11 groups, as are the reading line's bracketed substitutions. **H 11 of 11** is right; FV-MS18j's
+  "12" is a miscount (status.json, which takes no count, is unaffected; depth 100% unchanged). E351 H 14 and E355 H 17 + M 1 match the reading.
+- No over-claim found in FV-MS18j's classes, depths or safe sentences (the E356 "12" is a counting slip, not a claim). One wording precision: E355's safe sentence gives the reporter as "William H.
+  Stiner" (the print's form); the telegram writes "Wm H Stiner". Both are the same man; the sentence stands.
+
+### 3. Class (rule 10) and depth (rule 4a)
+| ID | N | key | depth | % code groups H/C/S | basis | safe sentence |
+|---|---|---|---|---|---|---|
+| E351 Townsend for the Secretary of War to Maj. Gen. Hancock (via Bodle), Baltimore, 2 Dec 1865 | **N3** (kept) | period | **D3** (kept; external check strengthened: Baltimore Daily Commercial 12 Dec 1865 p.1) | 100 (14 H) | not located: FV-MS18j's families + Fox CC, OR III/4-5 readable text, Grant 15-16, holder catalogue, Chronicling America, IA phrase search | "Read at grade H with War Department Cipher No. 1: on 2 Dec 1865 the Adjutant General's office told General Hancock at Baltimore, for the Secretary of War, not to resist habeas corpus writs for minors, to defend the cases without counsel unless a special point arose, and to report the officers who had illegally enlisted the discharged minors; not located in print (searched 10 Oct 2026)." |
+| E355 Fox to Maj. Gen. B. F. Butler, 7 Oct 1864 | **N3** (kept) | period | **D3** (kept) | 94 (17 H + 1 M time word) | not located: as FV-MS18j + Fox CC, OR III/4, Grant 12, IA phrase search, Andrews / Crouthamel / Starr item-level | FV-MS18j's, unchanged: "Read at grade H with War Department Cipher No. 1: on 7 Oct 1864 Assistant Secretary of the Navy G. V. Fox complained to General Butler that the New York Herald's Fort Monroe reporter William H. Stiner was printing naval movements, 'about all the information the enemy wants'; Butler's rebuke to Stiner of 9 Oct is printed in his Correspondence vol. 5 p.245; the telegram was not located in print (searched 10 Oct 2026)." |
+| E356 Fox to Col. H. S. Olcott (via Horner), New York, 3 May 1864 | **N3** (kept) | period | **D3** (kept) | 100 (11 H; FV-MS18j's "12" a miscount, s.2) | not located: as FV-MS18j + Fox CC, OR III/4, Grant 10, Lincoln CW 7, IA phrase search, Chronicling America | FV-MS18j's, unchanged: "Read at grade H with War Department Cipher No. 1: on 3 May 1864 Fox told Col. Olcott that the Boston commandant was ordered to bring back a discharged witness and that the former judge advocate Goodman would report to him and Wilson so the Boston and New York Navy Yard cases could go forward; not located in print (searched 10 Oct 2026)." |
+
+Not N4 for any: HathiTrust, JSTOR (rows open), the New York, Baltimore and Boston press of the days page by page, Fox's papers, the NARA series in s.1 and
+the four monographs page by page are unsearched. Not D4: no fresh rule-7 re-derivation session. Depth sentences: FV-MS18j's, unchanged. Unsafe for all three:
+"first", "new", "unpublished", "never printed", "previously unread"; for E351 also "the telegram that freed Sands and Kirkland" (no link shown); for E355
+"Andrews quotes it" (not read); for E356 "Wilson is Nathaniel Wilson" (likely from the NARA guide, not shown by the telegram).
+
+### 4. Postmortem and fixes
+- FV-MS18j's classes, counts (except E356: 11 groups, not 12), depths and safe sentences stand; its "not searched" list was accurate, and this pass found no
+  print in the families it named.
+- Applied here: status.json E351, E355, E356 `audit_status` "two audits" and `audit_refs` + this section. SECOND-OPINIONS-QUEUE rows unchanged (no class,
+  sentence or count changed). For the next FIX job: nothing in reading.md (its H 11 is right); add to NOTES "## MS18-R5" context: OR III/5 (Stanton, 5 Apr 1866) and
+  Baltimore Daily Commercial 12 Dec 1865 p.1 for E351; NARA guide (Olcott, Wilson, Goodman) for E356.
+
+Requests: hdl.huntington.org 5 (3 item info 200; 2 CISOSEARCHALL closed without response); archive.org 13 (7 advancedsearch, 6 djvu texts: 4 200, 1 401,
+1 403); be-api.us.archive.org 43; googleapis.com 24; www.loc.gov 4; chroniclingamerica.loc.gov 2 (HTML stubs); tile.loc.gov 1; web search 3.
