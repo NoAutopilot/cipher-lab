@@ -13891,3 +13891,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 07:51 | worker MS18-R9 for LANE LEDGER-12 (account 1) | hdl.huntington.org take (<=12 requests: 4 CISOSEARCHALL + 4 IIIF leaves at 2400 px); step 0: 5 of 9 rows are hits (not filed); for LANE LEDGER-12 (account 1)
 2026-10-10 07:52 | worker MS18-R9 for LANE LEDGER-12 (account 1) | hdl.huntington.org release (8 requests: 4 CISOSEARCHALL, 0 hits each, + 4 IIIF leaves, all 200); for LANE LEDGER-12 (account 1)
 2026-10-10 07:53 | worker FV-N1C-b for LANE LEDGER-12 (account 1) | hdl.huntington.org take (<=11 requests: 10 IIIF leaves at 2400 px, no search; MS18-R9 take released); for LANE LEDGER-12 (account 1)
+2026-10-10 07:53 | worker MS18-R10 for LANE LEDGER-12 (account 1) | hdl.huntington.org take (07:53 UTC 10 Oct by date -u; <=8 requests: 3 CISOSEARCHALL on row 9790/1 + 1 IIIF leaf 9790; MS18-R9 released 07:52); for LANE LEDGER-12 (account 1)
