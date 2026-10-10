@@ -14,12 +14,10 @@ Blind: the page shows boxes only, no value, label or machine guess; nothing here
   their pile. Whether the owner looked them over in step 1 is asked of him (10 Oct 18:0x UTC); until he says so, treat them
   as machine boxes not individually confirmed (ORACLE-LOCATION-1 wants every line checked by a person).
 
-## Time (from the database's own save stamps)
-First answer 17:10:38, last 17:56:31 UTC: 45.9 min wall. One pause of 25.1 min (17:11-17:36) is the page being fixed
-(step 2 had no Fix the cut until about 17:3x; the owner reported it); two more of 6.4 and 5.7 min. Without the 25.1 min
-pause: about 20.8 min for 83 flagged boxes, so about 25 min per 100 flagged boxes. These are the boxes the machine doubted
-(the hardest ones), not "100 signs" of the line: it is not the L74 minutes/100 signs figure until the owner says how much of
-the rest he checked.
+## Time: not a measurement
+The owner, 10 Oct 2026 about 18:1x UTC: "the timing isnt trustable cause i was multitasking". The save stamps (first answer
+17:10:38, last 17:56:31 UTC, one 25.1 min pause while the page was being fixed) are kept in db/ but give NO minutes/100 figure
+for this hand. ORACLE-LOCATION-1's annotation-minutes figure has to come from a hand timed single-task (Vivonne or Birago).
 
 ## Files
 - `db/` the database as read (ArtifactData list per collection: checked, moves, recuts, piles, newpiles; added and clusters
