@@ -5925,6 +5925,43 @@ Left (next lane): eckert-1864 No 2 entries pp.86-182 of no2-candidates.tsv (~37 
 by D12-E2/E3 rates; N2-AI/N2-AJ/N2-R N4 needs RG 92/393/107 or the OR Supplement (owner-side or LOCAL-QUEUE); eckert-1862 `ec18_align.py --rows`
 still stale, cause untested (~1); 9877 Hurlbut token stays M.
 
+## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261010-0209, session_01JchHuak89yQ8Ac1iDRfMRY, account 2), 10 October 2026 (closed 04:1x UTC: in-scope runnable supply worked, lane ~34.2 of 60)
+
+Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-10-ytbiz-family-0209-jobs.md (lane tag FAMILY-A2n).
+Started from the 2312 handoff (supply reported spent) and a fresh next_steps --hot-only read. Gate 0a: SESSION-SWEEP-account-2 stale-claimed
+since 5 Oct, proceeded. Workers 9 in 4 waves (02:17-03:51 UTC; Opus 7, Sonnet 2; all ledgered from get_session, archived): 27.15;
+orchestrator ~7.0. Account 2 seven_day `allowed_warning` throughout (continued per blast rules). No Gallica probe. Known-text share ~0.
+
+Results:
+- jan-van-nassau-1572-75 (JVN-GLY, 2.71): Opus reading crops directly passed all five same-hand controls (the Sonnet reader of JVN-104 failed
+  them); gate YES: long-s before 104, ch between 104 and 146, applied at M; --check exit 0. Blind check owed to the owner's sign sorter
+  (images/jvn_gly). 140 vs 110 now 3 vs 4 readers, tsv keeps 140.
+- na-oldenbarnevelt-2442-1605 (OLD-O2 9.00, OLD-WB 1.53, V-OLD-O5 2.73): masked re-cut cut pass splits to 18.2%; S words 87 -> 165, digit S
+  18.0% (34.6% boundary-insensitive), key ranks 1/120; longest S stretch 13 registered / 17 boundary-insensitive = the sign-agreement ceiling,
+  under floor 24.2; es1600 judge FAIL. AUDIT 6: N3 carried, key ours, D1 kept (depth_pct 9.0 -> 18.0), eye check 20/20.
+- oldenbarnevelt-brederode-1605 (OBRED-6016, 1.32): NA 1.01.02 inv. 6016 orders 351-624 at stride 3, 92 scans, controls 10/10: no cipher,
+  key or gloss.
+- decode-1411-hhsta-vienna-1600 (D1411-P6 2.35 Q, D1411-P6b 4.81, D1411-POOL 1.80): p.6 read (73 of 133 a further copy of p.2), independent
+  N=60 no PASS; pooled p.4+p.5+p.6 independent N=308: T21r 0.513 beats shuffle p99 0.458 but is 0.100 under the gloss bar 0.613 -> FAIL;
+  rule 3 third-attempt clause applied to the coverage-vs-gloss gate (untestable by this instrument, not refuted).
+- POOLS survey (0.90): research/POOLS-FAMILY-2026-10-10.tsv; its top rows were stale (thurloe P25-28, wvo-11008 R2, wvo-hessen all done or
+  owner-blocked) -- check each row's dated sections before briefing from it.
+No N3+ D2+ item, so no AUD2 row and no SO row change.
+
+**next** (for the next LANE FAMILY incarnation):
+1. decode-1411: the noise-matched gloss bar D1411-POOL named (re-derive the 0.613 bar at the independent material's own transcription noise,
+   pre-registered, disk only, ~$1.5); p.7/p.8 reads only after that, and only with a different gate (rule 3 clause).
+2. na-oldenbarnevelt-2442-1605: D2 needs a person's sign sort on the L4/L7 masked crops (sign disagreements bound the stretch); propose an
+   ASKS/sorter row via the account-3 orchestrator; no further machine pass.
+3. jan-van-nassau-1572-75: the 104 glyphs' blind check on the sign sorter (images/jvn_gly) -- same sorter round as item 2.
+4. oldenbarnevelt-brederode-1605: 182 unlooked scans in 351-624 and orders 1-259 of inv. 6016, ~$1.5 each half, low prior after 0/92.
+5. Carried: es132 f.93-95 (Gallica lane), Manteuffel codes 199/321 (~$5 each, low yield), rah-salazar HTRC EF rerun (still
+   PrimaryUnavailableException 02:22 UTC), Clinton sibling cipher pages (text known, key check, ~$4.5 a page, guardrail share), Brochado
+   letter 134 (ASKS 108), Linhares column count (person).
+Pricing: Opus jobs ran 0.4-1.1x cap. Briefing lessons: DECODE --fetch takes the absolute filesrv URL
+(https://de-crypt.org/decrypt-custom/filesrv/?file=...); an Opus worker reading crops itself can pass glyph controls a Sonnet subagent fails.
+Excluded this incarnation: eckert-* and Huntington ledgers (LANE LEDGER-N2), Gallica fetches, Armstrong/Debosnys/Birago.
+
 ## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261009-2312, session_01WCSXR7Z6hu4DFE38HAkdCJ, account 2), 10 October 2026 (closed 00:5x UTC: in-scope cheap supply spent, lane ~25.7 of 60)
 
 Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-09-ytbiz-family-2312-jobs.md. Started from the
