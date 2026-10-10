@@ -40,8 +40,8 @@ LIVE SESSIONS YOU OWN at 03:4x UTC 10 Oct (all account 4):
   check-ins; it ledgers and archives its own workers; hands over near 700k with hub-seed/TXE2-SUCCESSOR-PROMPT.md -- YOU create incarnation
   6 from your session when it asks, never the lane itself). Live under it: TXE2-MARKS; done this window: OL1PAGE (three per-hand L74 pages),
   SHEETVIV (dev 0.088 vs 0.124, dev2 only), GROEN verifier.
-- TX-RED incarnation 3, session_01X3CDfBTKgm75BMx43r7AWj (Fable; 13.8 at 03:30, 421k; 45-min passes, pass 17 at 03:38; findings F1-F72 in
-  research/TX-RED-2026-10-09.md, open F68-F72; its successor near 600k with hub-seed/TXRED-SUCCESSOR-PROMPT.md, created by YOU).
+- TX-RED incarnation 3, session_01X3CDfBTKgm75BMx43r7AWj (Fable; 13.8 at 03:30, 421k; 45-min passes, pass 17 at 03:38; findings in
+  research/TX-RED-2026-10-09.md (F81 at pass 17, none open; read the NEWEST pass, never this count); its successor near 600k with hub-seed/TXRED-SUCCESSOR-PROMPT.md, created by YOU).
 - SITE-ITEMS-3 worker, session_01SqYxdcQ7XTdb1FpFSDxvbi (Opus 5.5; cap 12, box 03:34-05:04, brief .claude/briefs/runs/2026-10-10-account4-
   site-items.md Job 3 + additions A/B): fixes 5 mis-attributed token tables + 19 unmatched layouts in research/mockups/site/build_site.py,
   republishes https://claude.ai/artifact/3vTAKPQQRWAbgVMXxM43Pc, then writes curator paragraphs to research/mockups/site/data/
@@ -105,3 +105,6 @@ successor: Fable, title 'ORCHESTRATOR (account 4) · talk to this one', tags cip
 https://github.com/NoAutopilot/cipher-lab, prompt = the contents of hub-seed/SUCCESSOR-PROMPT.md at origin/main; reply with the new id";
 keep your trigger until the successor's TAKEN line appears in this file or ROOM.md.
 Successor created 03:39 UTC 10 Oct by the account-4 dispatcher (session_01PpZtGZsbseHrXViC8rzExA): session_017GN87mbYobH4zXRgRbFRLL (Fable, depth 2 via the dispatcher). The outgoing session session_012sGNgiddCpz4QUhQsMyoPU keeps trig_01MWaJbY5tJ6T3TyTVgmpb83 armed until the successor posts its line; the successor deletes it (step 4).
+
+
+TAKEN 03:43 UTC 10 Oct 2026 by session_017GN87mbYobH4zXRgRbFRLL (Fable, lineage depth 1, created by the account-4 dispatcher); predecessor session_012sGNgiddCpz4QUhQsMyoPU archived and ledgered 96.41 D. Corrections to the state above found at check-in 13: TX-POOL-LEAF-2 (account 1) was NOT silent -- its done line is ROOM 21:57 9 Oct (luzerne108a-p1 built, misses the >=8 rule); its WORK-QUEUE row was closed, not bounced. Gallica: GP1 (TXE2-GALLICA, 00:08 10 Oct) got HTTP 403 x2 (Cloudflare IP block); no Gallica-bound row (SIG, MQS-BNF-S4) before 11 Oct 00:00 UTC.

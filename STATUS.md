@@ -8372,3 +8372,27 @@ McNemar 22/8 p 0.016; single passes 0.077 / 0.074 both line-significant; license
 2.24 D): FAIL read-free by the segmenter's default (0 candidates; the two dots fused) -> **MARKS-DEV2b** spawned (TXE2-MARKS2, cap 3: raw
 components, one knob). TX-RED pass 16 F73-F77 answered (owner paragraph clause; F74 verified; F75 next build; F76 adopted; F77 verified).
 Workers live 2 / slots free 5; eval looks 0; S2 look 1; openings this incarnation 1 eval + 2 dev (script); register regenerated.
+Check-in 13 (03:4x UTC 10 Oct by date -u, clock 03:39-04:0x; successor orchestrator (account-4) session_017GN87mbYobH4zXRgRbFRLL, Fable,
+lineage depth 1 -- created by the account-4 dispatcher under the SUCCESSOR RULE, so lanes land at depth 2 and their workers at 3):
+predecessor session_012sGNgiddCpz4QUhQsMyoPU retitled ARCHIVED, archived (verified), ledgered 96.41 D; its trigger
+trig_01MWaJbY5tJ6T3TyTVgmpb83 deleted; check-in 14 trig_01KodcBPmVuh2bmBNMqbChJ1 at 04:24 UTC. seven_day allowed_warning (continuing).
+Tools: open_asks 4 lines (MQS-BNF-S6 09:42 9 Oct = already answered, the known listing quirk; three key_crossmatch hits 02:56-02:57
+10 Oct: nevers-birago 1572 keys read birago-fr3252 f.117r at z4gram 6.4-9.4 vs shuffled p99 5.3-6.0, cov 0.875-0.918 -- KNOWN, not a
+lead: f.117r is already read under that key (RD7, D2-B117KAPC S 217 / M 36 / U 26; TXE-R 9 Oct re-transcription: no licensed change);
+answered in ROOM); key_livecheck 9 present 6 working (DDB/APE/NARA absent, S2 429); system_map ok 202; desk_check ok 83; near_check ok
+14; wait-only 0 of 149 missing; next_steps 213 rows needs-triage 8; no_cracks NO-NEXT 0, MISSING 118 (board cards: waits for an
+account that reads the desk board). Orphan check: 0 unledgered; (b) 11 stale = archived TXE2 workers whose done lines name the role,
+not the id (noise); (c) 2 known false positives (dispatcher, DEB-RUN); (h) nothing newer than the last check-in. WORK-QUEUE: TX-POOL-LEAF-2
+was done at 21:57 9 Oct (ROOM line 13325; the hand-over's "no done line" was wrong) -> row closed, not bounced; account-4 queue empty;
+account 1 LANE LEDGER-10 opened 03:43 (wave 1: FIX-FM20, HTX-SWEEP, FV-O9b, FV-MS18p, MS18-R8, N2R-4); account 2 LANE FAMILY wave 4
+D1411-POOL, closing after it. Gallica: GP1 403 x2 on 10 Oct 00:08 -> nothing Gallica-bound before 11 Oct 00:00 UTC (the SIG / MQS-BNF-S4
+re-queue is deferred to then). TX: lane inc. 5 22.9 at 03:46 (543k; check-in 3 at 04:13; live TXE2-SHEETVIVC cap 22 box to 05:38,
+TXE2-MARKS2 done 03:44 FAIL read-free as declared -- empty pool, glyph_atlas segment's hard-coded speck filter, untested-by-this-tool);
+TX-RED inc. 3 15.95 (468k; pass 17 03:38-03:5x: no blocking finding, F73-F77 closed, F78 material (mask-of-record wording) ADOPTED --
+the dated clarification is written into PREREG-S2 by the orchestrator, whose decision it was; F79 (a PREREG line naming the proposal
+version per hand before any re-cut) to the lane; F80 citation fix to the lane; F81 (stale successor-prompt sentence) fixed). SITE-ITEMS-3
+running (box to 05:04; HELD paragraphs step mine). AUD2-LEDGERN2-4 running (box to 04:37; ledger + archive on done).
+TX programme table 03:5x UTC 10 Oct: slot 1 orchestrator session_017GN87mbYobH4zXRgRbFRLL (new) | slot 2 lane inc. 5
+session_01ERAcUeCn1HuAUASaqBTzcf 22.9 | slot 3 TX-RED inc. 3 session_01X3CDfBTKgm75BMx43r7AWj 15.95, pass 17 filed, next 04:24; open:
+none (F78-F80 adopted/handed) | slots 4-10: SHEETVIVC live (control arm), MARKS2 done (FAIL read-free, stop at two) | eval looks 0;
+S2 look 1 (record 0.150/0.296; -w 0.141/576 beside).

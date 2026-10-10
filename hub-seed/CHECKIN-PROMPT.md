@@ -209,3 +209,9 @@ WIT-GROEN is "could only confirm, never contradict" (84 of 182 confirmed vs null
 rule) -- never "0 conflicts". F75: the L74 pages' pile names ("sign box"/"mark box") stand for this run (owner mid-run); geometry names next
 build. MARKS-DEV2b (session_015gKdxtkRzXU8Vyun593ed5, cap 3) is rule 3's second attempt on raw components. Lane ledgered OL1PAGE 2.81,
 SHEETVIV 14.20, MARKS 2.24.
+STATE DELTA 03:5x UTC 10 Oct (successor session_017GN87mbYobH4zXRgRbFRLL, depth 1, trigger trig_01KodcBPmVuh2bmBNMqbChJ1 at 04:24): predecessor
+archived and ledgered (96.41). Corrections: TX-POOL-LEAF-2 was done 21:57 9 Oct (row closed, not bounced); Gallica blocked at the IP level
+(GP1 00:08 10 Oct) -- nothing Gallica-bound before 11 Oct 00:00 UTC. key_crossmatch's nevers-birago -> birago-fr3252 f.117r hits are a
+known fit (f.117r already read under the 1572 key), answered. TX-RED pass 17: no blocker; F78 clause written into PREREG-S2 by the
+orchestrator. Live on account 4: lane inc. 5 (SHEETVIVC under it), TX-RED inc. 3, SITE-ITEMS-3 (box to 05:04, HELD step), AUD2-LEDGERN2-4
+(box to 04:37). Account-4 queue empty. Orphan (b) rows naming archived TXE2 workers are noise (done lines carry the role, not the id).
