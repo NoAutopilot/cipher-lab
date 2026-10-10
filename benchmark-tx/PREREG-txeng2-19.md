@@ -116,3 +116,26 @@ verifier. Reads no truth file, no output file. Output: benchmark-tx/txeng2/witan
 (shared with WIT-ANCHOR). Openings: 0.
 
 ## WIT-GROEN result (dated 01:5x UTC 10 Oct by date -u; run 01:21-01:3x): NOT SUPPORTED by the gate as declared -- the clean part (370 letters) aligns at dec_norm 8937-9307 with ratio 0.787 against a selection-fair null max 0.330 (margin 0.457, passes) but ends 247 letters before dec_norm's end (fails the 150-letter condition). The gate's wording was the lane's error: it named the clean part where it meant the passage; the damaged part follows contiguously (9270-9459, ratio 0.651, margin 0.270) and the whole passage ends 95 letters before the end, inside 150, the remainder being the clerk's own date and subscription. Recorded as a post-hoc reading beside the failed gate, never as a pass: the clerk-independent copy places the dispatch's closing passage at the end of dec_norm, consistent with N5-VIVK's end anchor, and agrees with the clerk's closing text at 0.79. No rebuild, no re-score, no flag change. benchmark-tx/txeng2/witanchor/RESULTS.md.
+
+## OL1-MANIFEST: owner-facing rules for the box-verify pass, written into the final registration text before the minutes figure (lane incarnation 5, session_01ERAcUeCn1HuAUASaqBTzcf, 10 Oct 2026 03:4x UTC by date -u; from the owner's first 20 tiles on the Vivonne page, relayed by the orchestrator 03:31; the pages: vivonne https://claude.ai/artifact/B861DYeshrbaHbghGo3YNZ (the fresh copy the owner works), birago, luzerne as L74 lists them)
+These rules bind the owner's pass on all three hands and the reference's reading of its output; they change no box and no gate:
+(R1) **Long-tailed signs.** A sign whose tail swings under its neighbours (g, the tz ligature) is one sign; where the machine's valley split cut
+    the tail off (f102r_L03_b031b/c: one g in two pieces by the 2.6x split rule), the owner marks BOTH pieces Bad cut and the reference records
+    one sign spanning both boxes. In the reference build the two pieces are merged by the owner's Bad-cut pair, never left as two signs.
+(R2) **Joined pairs.** Two signs written without a pen lift (tz + x, f102r_L06_b026) are not decidable by eye without the key: the owner SKIPS
+    them. A skip on such a box is recorded in its own class, "joined pair?", counted separately in the registration and in every RESULTS line
+    (never folded into reader abstention or into "not a sign"); the reference holds the box as one UNRESOLVED unit whose sign count is open
+    (1 or 2), and the scorer treats its positions as unscorable in both arms (a declared mask, reported with its count), so neither arm is
+    charged or credited there. The key is consulted on these boxes only after the visual reference is frozen, as a separate audit (the review's
+    section 4 "Reference"), and that audit may record the count but never changes the mask.
+(R3) **Slivers and bleed-through.** A box whose main sign is whole with a sliver of a neighbour or a faint bleed-through mark inside it is KEEP (the
+    orchestrator's instruction to the owner); a second dark, deliberate stroke the owner cannot assign is SKIP, recorded as "unassigned stroke",
+    counted separately like (R2), and the box is held unresolved the same way.
+Reading of the output: accept = the box is one whole sign; Bad cut = the owner's recut or merge pair stands as the reference box; Not a letter =
+no sign (speck, bleed, plain text); "joined pair?" and "unassigned stroke" = unresolved, masked in both arms, counted. The minutes per 100 signs
+are timed on the fresh Vivonne copy's first 100 and complete the registration when the owner reports; the box-proposal step's cost is OL1-BOXES
+3.33 + OL1-PAGE 2.81 (TXE2 ledger rows), the sorter page the product.
+Note for the NEXT box-proposal build (not applied to the published pages; the owner has started on Vivonne, birago carries no split piece and
+luzerne 10 of 445): the over-wide split rule tests the chosen ink valley for a descender crossing before cutting -- a valley column whose ink
+below the line's baseline band is connected to the left piece's component is a tail, not a gap, and the cut moves to the next valley or is not
+made. Recorded here so the second oracle pass or the atlas recipe carries it.
