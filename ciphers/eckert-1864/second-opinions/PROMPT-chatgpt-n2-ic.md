@@ -12,10 +12,10 @@ THE ITEM
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key-no2.md, search log
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (FV-N2e)").
 
-WHERE WE HAVE LOOKED: Official Records ser. I vol. 34 pts 3-4 (text, 6-8 June 1864 and the gauge correspondence); the Huntington's CONTENTdm full-text search; Google Books phrase search.
+WHERE WE HAVE LOOKED: Official Records ser. I vol. 34 pts 3-4 (text, 6-8 June 1864 and the gauge correspondence); the Huntington's CONTENTdm full-text search; Google Books phrase search; second audit (10 Oct 2026): Official Records ser. III vol. 4 (full text, no gauge or Vicksburg-Monroe telegram); Huntington full text for "guage"/"gauge" (Canby's 24 June 1864 telegram to the QMG giving the gauge is holder pointer 10451); Google Books for the railroad's mileage and its January 1861 report.
 
 WHERE WE HAVE NOT YET LOOKED PROPERLY (start here)
-- Official Records ser. III vol. 4 (Quartermaster General's correspondence and annual report, 1864); M. C. Meigs Papers and E. R. S. Canby papers; NARA RG 92 (Quartermaster General, letters and telegrams sent, 1864) and RG 107; histories of U.S. Military Railroads and of the Vicksburg, Shreveport and Texas Railroad; the railroad's annual reports (about 1859-61); HathiTrust; JSTOR.
+- M. C. Meigs Papers and E. R. S. Canby papers; NARA RG 92 (Quartermaster General, letters and telegrams sent, 1864) and RG 107; histories of U.S. Military Railroads and of the Vicksburg, Shreveport and Texas Railroad; the railroad's annual reports (about 1859-61); HathiTrust; JSTOR.
 
 HOW TO REPORT (this part is the same for every label)
 - Write your answer as one Markdown file in the repository github.com/NoAutopilot/cipher-lab at the path

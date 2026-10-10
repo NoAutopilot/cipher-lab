@@ -15733,3 +15733,77 @@ precedents differ most.
 - Propagated (rule 10): status.json N2-JH -> N1, `text: known`, D1, two audits; SECOND-OPINIONS-QUEUE.tsv SO-ECKERT-N2-JH -> withdrawn; WORK-QUEUE
   AUD2-LEDGER10-3 -> done. No over-claiming sentence in NOTES.md, reading-no2.md or ciphertext-no2.txt (all say "not located"; none says new). FV-N2f's
   section is left as written (history).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER10-4)
+
+Second verifier AUD2-LEDGER10-4 (owner account, for the orchestrator (owner account); row queued by FV-N2e for LANE LEDGER-10 (account 1), account-4 tag),
+10 Oct 2026, 06:27-06:4x UTC by `date -u`. This is a separate session and account from the reader N2R-4 and the first auditor FV-N2e (account 1), and this session had not
+read or audited this entry before. Scope: **N2-IC** only (mssEC 18 p.89, pointer 9755/0, 7 June 1864, Washington, to Maj. Gen. Canby). Nothing decoded beyond key
+look-ups. Every code word was looked up again in key-no2.md, and all match the decoder: Happy = Washington, Downing = 7, Imogene = 3.30 PM, Mastiff = Canby, Tulip/Yacht/Yardstick =
+Period, Talbot = Of the, Hero/Holly = Vicksburg, Walnut = Rail-road, Stanhope = Interrogation, Watson = Report, Norris = 30, Brown = 1, Ludlow = 18, Perkins = 60,
+Allen = 1, Prentiss = 70, Andrew = 4, Sylvan(s) = Mile(s), Wiley = Signature, Buggy = Quarter[?] Master General. Key source: `period`. There is no spec for eckert-1864, so
+`judge_plaintext.py` was not run. Re-derivation: `decode_no2.py --check` gives "reading-no2.md is current" (exit 0). Image: not re-checked (FV-N2e eye-checked leaf 9755 at
+2400 px). Committed under `ms18/`: `aud2_l10_4_gb.py` + `.out`, `aud2_l10_4_gb2.py` + `.out`, `aud2_l10_4_hdl.py` + `.out`, `aud2_l10_4_hdl2.py` + `.out`. Two
+received-ledger transcriptions (10451, 10469) and the OR III/4 djvu text were read in scratch.
+
+### 0. Step 0 (Wave-3 ruling), recomputed from disk
+`ms18/fv_n2e_step0.py` was re-run after FIX-FM21 made 'rebellion' plain. N2-IC now gives (a) **0.472 (17/36)** against (b) shuffle p95 0.250: **no hit** (below the 0.5 bar). The step-0 miss
+holds, but the margin is thin. The holder transcription by itself already gives the questions in clear: 'What is the guage ... and Monroe', 'no grading between Monroe and
+Shreveport', 'It is not likely that any work has been done upon it since this rebellion', and the signer's name **Meigs** (the ledger writes 'Wiley Meigs Buggy' =
+Signature Meigs QMG, so the name is plain and only the title is code). (c) The words the key adds: Washington, Canby, Vicksburg (x2), Railroad, Report (x2), the
+report date, 74, a, miles, Quartermaster General. N3 stands for the mapping and for these key-added words. The safe sentence must not imply that the whole
+content was unknown.
+
+### 1. Families FV-N2e did not cover, and what this pass did
+| Family | FV-N2e | This pass |
+|---|---|---|
+| OR ser. III vol. 4 | not searched | IA `warofrebellionco0004genf` djvu (dated 1900 = III/4, per AUD2-LEDGERN2-4) grepped: 'gauge', 'no grading', 'Vicksburg and Monroe', 'Vicksburg to Monroe' 0; 'Shreveport' 1 (Sherman, spring 1864, other); no Meigs-Canby hit. **Not in III/4** |
+| OR I/34 pt 4 text re-grep | 6-8 June windows, gauge correspondence | djvu `013404rootrich` answered 503 twice (one retry after 25 s, then stopped). FV-N2e's I/34 result stands unrepeated. Google Books (keyed, country=US) queries 'Meigs Canby gauge Vicksburg Monroe railroad June 1864' -> OR I/34 hits only on the Engineer Brigade's 23 June letter to the QMG and Meigs's 17 June telegram (control '"I have telegraphed you twice to inform me of the gauge"' -> OR 1891 and House documents 1892: passed) |
+| Holder full text (CONTENTdm, all pointers) | 3 words AND ('Vicksburg Monroe gauge' 0, 'Vicksburg Monroe railroad', control) | 6 queries: 'guage' 16, 'gauge' 25, 'grading Shreveport' 1 (own 9755), 'Directors report Monroe' 0, 'Meigs Canby railroad' 1 (7815, Grant to Meigs 9 Mar 1865: send no railroad material to Canby), control 'rebellion guage annual' -> 9755 (passed). Hits near the date read: **10451** (received ledger p.309: Canby, New Orleans 24 June 1864, to the QMG: 'The guage of the Vicksburg & Shreveport Road is the same as that of the N Orleans and Opelousas & the N Orleans & Jackson road'), which is Canby's answer to the gauge question; **10469** (p.327: Canby to Halleck 23 June, the road's reconstruction, 'three locomotives of the same gauge'); 9769 (29 June, other). **No clear copy or repeat of N2-IC**. 12 requests, take/release posted |
+| G3 phrase pass, extended | 4 phrases | 7 more quoted or keyword forms (`aud2_l10_4_gb.out`): '"gauge of the Vicksburg and Monroe railroad"', '"no grading between Monroe"', '"not likely that any work has been done upon it"', '"74 1/4 miles" Vicksburg Monroe', '"seventy-four and a quarter" Vicksburg Monroe', and two Grant-Papers-shaped keyword queries -> **none of N2-IC's wording** (the top hits are 1880s Signal Office river gauges, city council grading, and the like). Hardie's 13 June telegram (N2-IE) **is** printed (OR, '"expediency of the expense is so much doubted"'), which confirms the phrase route works on this traffic |
+| The railroad's own figures (external, key-independent) | not searched | (i) Canby's 28 May letter (holder 10383) is printed: OR 1891 / House documents 1892, '"a distance of 148 miles. The road to Monroe, 52 miles, has been in operation"'. The **52 is Canby's own printed figure**, not a holder mis-transcription. (ii) *Records and Briefs of the U.S. Supreme Court* (1904, `UCMrAAAAYAAJ`): '**seventy-four miles** from the Ouchita river at Monroe to the Mississippi river opposite Vicksburg', matching the key's Prentiss Andrew = 70 + 4. Poor's/Manual of the Railroads (1868-78): Delta (opposite Vicksburg) to Monroe 72-73 miles, gauge **5 feet 6 inches** (the gauge Meigs gives on 17 June). (iii) A company report of **January 1861** exists: *Confederate Neckties* (1989) cites 'Vicksburg, Shreveport and Texas Railroad, January 1861, p.3' (snippet, page not seen), and Poor's 1880 gives the road's opening to Monroe as January 1861 |
+| Unreachable / not searched | -- | Still not read: Meigs papers (LC), Canby papers, NARA RG 92 (QMG telegrams sent, the probable clear copy) and RG 107, the VS&T report of January 1861 itself, HathiTrust full text (Cloudflare), The Papers of Ulysses S. Grant vol. 11 notes (Google Books snippets only; the Meigs-Canby-Grant railroad question was referred to Grant on 13 June, so a note there could quote N2-IC: **the main residual risk**). JSTOR: 2 rows queued (s.4) |
+
+### 2. Findings
+- **No print, copy or decipherment of N2-IC found.** FV-N2e's "not located" holds.
+- **Report date read wrongly by both the decoder and FV-N2e.** 'of Norris Brown January Ludlow Perkins Allen Directors' = 30 1 January 18 60 1. Under key-no2.md s.7 ("consecutive
+  numeral words combine the English way"), that is **'31 January 1861'**, read the way 'Prentiss Andrew' = 74 is read in the same entry. The decoder's '[79]'
+  (18 + 60 + 1 summed) breaks that rule, and FV-N2e's '18[5]9?' guess has no basis. Every token is H from the fly-leaf numerals page. The year fits two things: the
+  railroad's January 1861 report (s.1 iii), and the clause that follows, 'not likely that any work has been done upon it since this rebellion'. **Correction for a FIX
+  job:** per-entry exception or a decoder fix giving 'annual Report of 31 January 1861 [of the] Directors'. The five tokens then go M -> H, and code-word coverage goes 20/25 -> 25/25.
+  status.json `depth_pct` stays 80 until that FIX passes `--check` (rule 7).
+- **74 1/4 vs 52.** The printed 74-mile Monroe-to-river figure (1904) and Poor's 72-73 from Delta support the key's 74. Canby's 52 is printed as his own, so the disagreement
+  is between the two correspondents, not between our reading and the record. 'It is 74 1/4 miles' is Meigs's figure as read. Canby's '52 in operation' may be the part then
+  usable. This is unresolved and stays recorded.
+- **External check strengthened.** Canby's reply on the gauge (holder 10451, 24 June 1864, 'The guage of the Vicksburg & Shreveport Road is the same as ...') and Meigs's
+  17 June 'telegraphed you twice' (OR I/34 pt 4 pp.424-425) bracket N2-IC as one of the two gauge telegrams. The railroad's mileage and gauge in Poor's are checks
+  independent of the key on the content.
+- **Signer.** 'Meigs' is plain on the leaf. Only 'Quartermaster General' is code (Buggy, H). FV-N2e's "signed (decoded) Meigs ... (M)" is too low for the name. For the FIX job:
+  "signed Meigs (plain), Quartermaster General (Buggy)".
+- No over-claim found in status.json `line` or in the SO prompt beyond the report-date wording ('[31?] January [?]' in the SO prompt is cautious and left as is; the FIX
+  job carries 1861 into it per rule 10 when the reading changes).
+
+### 3. Class (rule 10) and depth (rule 4a)
+| ID | N | key | depth | % code-word groups H | basis |
+|---|---|---|---|---|---|
+| N2-IC | **N3** (kept) | period | **D3** (kept; 80% as filed, 100% once the report-date FIX passes --check; external checks: OR I/34 pt 4 pp.424-425, holder 10451 and 10383, and the railroad's printed mileage and gauge) | 80 as filed (20 H of 25) | not located after FV-N2e and s.1. Step 0 is a near miss (0.472), so the plain-word questions are public in the holder transcription |
+
+- Not N4: Grant Papers vol. 11 notes, the Meigs and Canby papers and NARA RG 92/107 are unread; JSTOR rows are open. Not D4: no fresh rule-7 session, and the report-date fix is pending.
+- Safe sentence: "Re-read with War Department Cipher No. 2 (period key): on 7 June 1864 Meigs, Quartermaster General, asked Canby the gauge of the Vicksburg and Monroe
+  Railroad, citing the Directors' annual report (read as of 31 January 1861) for no grading between Monroe and Shreveport, and gave the distance from Vicksburg
+  to Monroe as 74 1/4 miles. The questions themselves are legible in the Huntington's transcription, and the key adds the railroad, the report and the figures. Not located
+  in print (searched 10 Oct 2026)."
+- Unsafe: "first", "new", "unpublished", "never printed"; "not in the Official Records" (I/34 pt 4 was not re-read this pass; the Grant Papers notes are unread); "Canby's
+  52 miles is a transcription error"; "the whole message was unknown".
+
+### 4. Postmortem and fixes
+- FV-N2e's class and depth stand. Its errors were the report-date guess ('18[5]9?', should be 1861 by the key's own numeral rule) and the signer's name graded M (it is plain).
+  Propagated here: status.json `audit_status` "two audits", `audit_refs`, `gap`, `line` (step-0 qualifier), `depth_check` (+ 10451, mileage). SO prompt "WHERE WE HAVE LOOKED"
+  extended and III/4 struck from the unlooked list (the row stays queued: class unchanged).
+- For a FIX job (not applied here, because a verifier does not edit the reading): the report date '[31] January [79]' -> '31 January 1861' (and check decode_no2.py's numeral
+  combiner for 18 + tens elsewhere); signer 'Meigs' plain; then depth_pct 100 and the SO prompt's '[31?] January [?]'.
+- Lesson: a year written as 'eighteen | sixty | one' must be read the English way, not summed. Any other entry where the decoder printed a numeral above 31 for a year
+  slot deserves a grep (not done: outside this row).
+- JSTOR-QUEUE.tsv (2 rows): (i) Meigs AND Canby AND gauge AND "Vicksburg" AND Monroe AND 1864; (ii) "no grading between Monroe and Shreveport".
+Requests: hdl.huntington.org 12 (6 CISOSEARCHALL + 6 dmGetItemInfo), all 200; archive.org 3 (III/4 djvu 200; I/34 pt 4 djvu 503 x2); www.googleapis.com 19 (12 + 7), all 200.
+For orchestrator (owner account).
