@@ -88,3 +88,5 @@ do not classify novelty. Stop before starting an entry that would cross 80% of c
 
 Held for wave 3: one N1-confirm verifier (Opus, FV-L15n method) on CLEAR/PRINT rows; full first verifiers (Opus, 6 per session) on NONE rows by H count; FIX-L15
 (Sonnet) on FV-L15a/b/c/d/n s.5.
+
+(13:21 UTC 10 Oct by date -u: CLEAR-SWEEP spawned with source_url, session_01FTb56jd2XxxowjDwpv3H4s.)
