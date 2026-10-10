@@ -55,3 +55,25 @@ Held for wave 2: first verifiers (Opus, separate sessions, ~1.4/entry, CLAUDE.md
 "not located"; AUD2-LEDGER14-<n> WORK-QUEUE rows (account-3 tag) for N3+ D2+; a FIX job on the audits' s.5.
 
 (09:4x UTC 10 Oct by date -u: wave 1 spawned with source_url: L14-A session_01EjyUGmdtU5rKhYXogNeNsb, L14-B session_019KG1CDAcmR826HphyHC8P9, L14-C session_017A3ak76bcEddQEQhfQ2g4Z.)
+
+---
+
+# Wave 2 (written 10 Oct 2026 10:3x UTC by date -u; lane workers 5.61 by get_session)
+Wave 1 by get_session: L14-A 1.93 (E600-E604 filed, all not located; 9793/0 9806/2 in print; 9835/1 no clause), L14-B 1.91 (E610-E617 filed; E611 E612 not
+located; E610 E613-E617 filed with print citations, which the RULING says should have stayed unfiled -- a verifier confirms N1 or not), L14-C 1.77 (E620 E621
+N2-SA filed, not located; 6 in print, unfiled). All filed rows are transcription-conditional (leaves mostly not opened).
+
+Verifier method for all three jobs: exactly "## FV-MS18r" of .claude/briefs/runs/2026-10-10-acct1-lane-ledger12-jobs.md (and what it points back to: the
+CLAUDE.md verifier template, depth per .claude/briefs/runs/2026-10-08-acct3-depth-bar.md, G3 re-search with decoded phrases, one IA whole-collection phrase
+query on Grant Papers and Butler Correspondence before "not located", leaf eye-check of the filed lines on the IIIF image under the hdl token), **except that
+the Step-0 ruling is NOT used**: per this lane's RULING (top of file) a step-0 hit is information only and never by itself a reason for N1. AUDIT.md
+"## AUDIT (FV-L14a)" etc.; AUD2-LEDGER14-<n> WORK-QUEUE rows only at N3+ D2+ (account-3 tag), named in ROOM. s.5 corrections are written for a FIX job;
+do not apply them. Verifiers never hold the hdl token at the same time as each other or a LEDGER-13 worker.
+
+## FV-L14a (Opus 5.5, first verifier, separate from every reader; cap $7.5, box 110 min): E600 E601 E602 E603 E604 (not located; reader NOTES "## L14-A")
+## FV-L14b (Opus 5.5, first verifier; cap $7.5, box 110 min): E611 E612 (reader "## L14-B"), E620 E621 N2-SA (reader "## L14-C")
+## FV-L14c (Opus 5.5, first verifier, N1 confirm; cap $3.5, box 80 min): E610 E613 E614 E615 E616 E617 (reader "## L14-B" print citations; E617 date conflict
+open): exactly "## FV-MS18p" of the ledger10 jobs file (IA page image or be-api snippet, word-for-word diff against the derived reading block, leaf eye-check),
+step 0 information only. A citation that does not hold moves the entry to the full verifier search above within the cap, else names it for wave 3.
+
+Held for wave 3: FIX-L14 (Sonnet, apply the three audits' s.5 through decode.py's entry-note mechanism); readers' unfiled print rows need nothing.
