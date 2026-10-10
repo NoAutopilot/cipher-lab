@@ -114,3 +114,18 @@ counterpart) from images on disk (tools/iiif_lines.py --image, pasted), one blin
 (ES132-AUDIT's planted-tile method; the control must reach its 0.80 catch gate or the look is a non-test and nothing is applied). Apply only
 settlements the control licenses; re-run the folder's decode/--check and report every token that moved (M stays M unless the gate licenses).
 NOTES "## ES132-40"; gaps_check.py. If a reading changes, carry it into AUDIT.md per rule 10's propagation paragraph.
+
+## Wave 3 (00:3x UTC 10 Oct)
+Wave 2 (7.23): MANT-0151 207 second witness agrees (le Gr. Chancelier), side lead 66 = Alefeld; SUR-DENSE 0 cipher in 130 scans; LIN-BFSP3
+13/13 answered, no 1808-12 hit; ES132-40 blocked (f.93-95 duplicate images not on disk; Gallica out of this lane's scope -> handoff). The
+in-scope cheap supply is spent after this job; the lane closes when it reports.
+
+### MANT-66 (Opus, cap 2, box 45 min, disk only; a session separate from MANT-0151): sachsstaatsarchiv-manteuffel-1712 code 66 key conflict
+MANT-0151's side note (NOTES ~lines 4362-4373): both blind passes read 'Alefeld' over the group starting 66 on 0151 L (66.8.44.1.2.12.120) and the
+right page opens '66. avoit ose' with 'Alefeld' above; key.tsv has 66 = a (letter range, note 'Angleterre'). (1) List every 66 in the folder's
+committed transcriptions/decodes with context, the gloss over it where one exists, sender/recipient/date/direction of the letter. (2) From the
+committed 0151 crops only, decide where the 'Alefeld' gloss sits (over 66, over 44, or over the whole group) with two blind Sonnet looks
+(decoys planted). (3) Classify: 66 doubles as a name code (data conflict -- CLAUDE.md rule 4's conflict paragraph: record the witnesses per
+value in HYPOTHESES.md, grade 66 M where the letter's direction/date does not match a witness), or the gloss belongs to 44/the group (no
+conflict). Never resolve by the more frequent value. key.tsv changes only to record the conflict note, never the value; decode_key.py --check
+after; NOTES "## MANT-66"; gaps_check.py.
