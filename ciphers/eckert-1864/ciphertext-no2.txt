@@ -1702,3 +1702,183 @@ he last proposed yardstick A whim from you might
 decide him Tulip Veterans of Franklin Pelham repeated to
 an apple is yawl Lady Spunky Shark Chief Staff
 note: N2R-3: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .47/.76/.22); No. 1 reads 'Lee's Jones Enoch ... Maj Gen Joseph Hooker', no clause; No. 2 reads the clause; the cipher time word 10.30 AM = the header hour under No. 1 and No. 2 alike (not selective), the decoded day 15 = header day under No. 2 only (shuffle 22 of 200). IN PRINT: OR I/34 pt 2 (IA warofrebellion013402rootrich) pp.609-610, Washington, March 15, 1864 -- 10.30 a. m., Halleck to Lieut. Gen. Grant, Nashville, word for word ('A dispatch just received from General Banks, dated March 6. He expects to effect a junction with Sherman's forces on Red River by the 17th. He desires that positive orders be sent to General Steele to move in conjunction with them for Red River with all his available forces. Sherman and Banks are of opinion that Steele can do much more than make a mere demonstration, as he last proposed. A telegram from you might decide him. Veterans of the Ninth Corps ordered to Annapolis.'); grade C against the print (the OCR reads the headers 610 mid-telegram, the telegram begins on p.609).
+
+### N2-JA | Page 18 | 9678 | mssEC 18 (obj 10074, pointer 9678; printed page 12), 20 Feb 1864 1 PM Washington (ledger header 'S H Beckwith Nashville, Washn Feby 20th 1864'; Sent ledger, entry 0 of the leaf), to Maj. Gen. U. S. Grant at Nashville, signed H. W. Halleck: I know of no law authorizing an inspector to send for persons and take evidence unless such persons, not military, are willing to attend, but the difficulty can be avoided by the order of a court of inquiry by the President of one or more members; if you want such a court telegraph who you want on it; (the ledger adds 'Is it cold with you') (N2R-5; row 9678/0; holder transcription, leaf not eye-checked)
+SH Beckwith Nashville ----  Washn Feby 20th 1864
+Hang Hannah Balaam Oliver For Crowd Tulip
+I know of no law author = rising
+an Inspector to send for persons and
+take Evidence unless such persons pike not
+military pike are willing to attend Yardstick
+but this difficulty can be avoided by
+the order of a Court of Inquiry
+by the President of one or more
+members tulip If you want such a
+Court whimper who you want on it
+Lamb Behead Is it cold with you
+note: N2R-5: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .30/.33/.07); No. 1 reads 'Kirby Smith ... Knoxville ... Clarksburg', no consistent clause; No. 2 reads the whole clause, decoded day 20 = header day (No. 1: day not matched; 200-seed shuffle of No. 2: day 6 of 200). Bigram coherence No.1 / No.2 / No.9 = -6.335 / -5.634 / -7.148, shuffled No. 2 x3 -6.080/-6.078/-6.025 (ms18/n2r5_coherence.out). IN PRINT: OR I/32 pt 2 (IA warofrebellion322unit) p.432 (the page header 433 follows the next telegram, so this one closes p.432; leaf not opened), 'Washington, D. C., February 20, 1864 -- 1 p. m. Maj. Gen. U. S. Grant, Nashville, Tenn.: I know of no law authorizing an inspector to send for persons and take evidence unless such persons, not military, are willing to attend; but the difficulty can be avoided by the order of a court of inquiry by the President, of one or more members. If you want such a court, telegraph who you want on it. H. W. Halleck, General-in-Chief': word for word; grade C against the print for the decoded clause; the decoded time 1 PM = the print's 1 p.m. The ledger has 'Is it cold with you' after the signature (not in the print; the Sent ledger's own aside). The signature is decoded twice ('H W Halleck', 'Maj Gen H W Halleck').
+
+### N2-JB | Page 97 | 9757 | mssEC 18 (obj 10074, pointer 9757; printed page 91), 11 June 1864 4 PM Washington (ledger header 'Kimber Washn June 11 1864'; entry 1 of the leaf), to Maj. Gen. Canby at Vicksburg ('Mastiff', decoded Canby), signed (the print) H. W. Halleck: Brigadier-General Bailey, being in your command, can be assigned as you may desire; the same applies to Major-General Reynolds; to meet your demand for general officers of rank Major-Generals Granger, McCook and Hurlbut will be ordered to report to you; the Secretary of War authorizes you to assign them to any duty you wish or, if you do not deem them available, to send them back to report to the Adjutant-General of the Army; the Thirteenth Corps has been temporarily abolished; I do not think it will be possible to open the railroad farther west than Monroe, and even for that distance it will be necessary that you procure much of your material from the abandoned roads east of the Mississippi (the holder transcription ends here) (N2R-5; row 9757/1; holder transcription, leaf not eye-checked)
+Kimber  Washn June 11 1864
+Julia Hawkins for Mastiff Hero tulip Palermo Bailey
+being in your princeton can be assigned as
+you may desire pause The same applies in
+regard to Maxim ditto To meet your demand
+for shark officers of rank pike Lester McCook
+& Hurlbut will be ordered to Watson to
+you tulip The Costume authorizes you to assign
+them to any duty you wish or if
+you do not deem them available to send
+them back to Watson to Adjt spark talbot
+Peru Yacht The Hudson pelton has been temporarily
+abolished ditto I do not think it will
+be possible to open the Walpole further world
+than Monroe and even for that distance it
+will be stomach that you procure much of
+your material from the oiled weakness Roland talbot
+note: N2R-5: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .43/.49/.18); No. 1 reads 'Maj Gen B. M. Prentiss ... Johnston ... Casualties', no clause; No. 2 reads the whole clause, decoded day 11 = header day (200-seed shuffle: 16 of 200). Coherence -6.074 / -5.546 / -7.097, shuffled No. 2 x3 -6.608/-6.034/-6.699. IN PRINT: OR I/34 pt 4 (IA warofrebellion013404rootrich) p.304 (the next page header, 305, falls after the next General Orders; leaf not opened), 'Washington, D. C., June 11, 1864 -- 4 p. m. (Received 21st.) Major-General Canby, Vicksburg: Brigadier-General Bailey, being in your command, can be assigned as you may desire. The same applies in regard to Major-General Reynolds. To meet your demand for general officers of rank Major-Generals Granger, McCook, and Hurlbut will be ordered to report to you. The Secretary of War authorizes you to assign them to any duty you wish, or if you do not deem them available to send them back to report to Adjutant-General of the Army. The Thirteenth Corps has been temporarily abolished. I do not think it will be possible to open the railroad farther west than Monroe, and even for that distance it will be necessary that you procure much of your material from the abandoned roads east of the Mississippi River. ... H. W. Halleck': word for word through the end of the transcription; grade C against the print. Differences (M, key rows against the print): the decoder gives 'Campbell W B' for Bailey and 'Lookout Valley' for 'desire' (code values that do not read here), and 'Has been sent' for the print's 'rank'; the print continues past the holder transcription (locomotives, $4,000,000, the Washita).
+
+### N2-JC | Page 64 | 9724 | mssEC 18 (obj 10074, pointer 9724; printed page 58), 27 April 1864 10.30 AM Washington ('Wash'n D. C. Apr. 27th 1864', Capt. C. S. Bulkley, New Orleans; entry 0 of the leaf, ledger '(2)'), to Maj. Gen. Banks, Department of the Gulf, via Cairo ('Banks', 'Hurry this to Cherub without delay'), signed H. W. Halleck, Chief of Staff: Lieutenant-General Grant directs that on receipt of this order you return yourself immediately to New Orleans and make preparations to carry out his previous instructions the moment your troops return; the troops in the field are to be left under command of the senior officer, with instructions, if Shreveport has been taken and a junction formed with Steele, to leave Steele with all of Smith's troops, if necessary, and the navy to hold the line of Red River; if you have failed to secure Red River to Shreveport you will direct the officer left in command to see the gunboats safely out of Red River as soon as possible and then return all the troops rapidly to where they belong, Steele returning to and holding the line of the Arkansas; a copy of this dispatch will be sent to Steele via Little Rock with instructions to communicate with you as early as possible (N2R-5; row 9724/0; holder transcription, leaf not eye-checked)
+Capt C. S. Bulkley N. Orleans ( 2 )  Wash'n D. C. Apr. 27th 1864
+Happy April Nelson Downing Elizabeth For Lapland Banjo
+Madrid directs that on the receipt of this
+order you will return your self imm'y to
+Ginger and make prepar rations to carry out
+his previous instructions the moment your widow return
+to that place Tulip The wedge in the
+field will be left under Princeton of the
+senior Officer with instructions if Shreveport has been
+taken and Sulphur formed with Nutmeg to leave
+Nutmeg with all of Spark Nuptials wharf if
+necessary and the Navy to hold the line
+of Altar yacht If when this is received
+you shall have failed to accomplish the object
+of your campaign by securing Altar to Shreveport
+Pike you will direct the officer left in
+Princeton to see the Sheffields safely out of Altar Panther
+possible and then return all the Widow rapidly to where
+they belong Pike Nutmeg returning to and holding the line
+Talbot Adam Tulip a copy of this despatch will be
+sent to Nutmeg via Little Rock with instructions to Plant
+with you as early as possible yard H W
+Halleck Chief of Staff Hurry this to Cherub without delay
+note: N2R-5: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .38/.43/.09); No. 1 reads 'Lee ... Maj Gen Joseph Hooker ... Alexandria ... Maj Gen O. O. Howard', no clause; No. 2 reads the whole clause, decoded date 'Apr 27' = header date (200-seed shuffle of No. 2: day 3 of 200). Coherence -6.121 / -5.712 / -6.607, shuffled No. 2 x3 -5.775/-5.624/-5.955 (the bigram score does not separate No. 2 from its shuffles on this entry: the print match below is the test). IN PRINT: OR I/34 pt 3 (IA warofrebellion013403rootrich) pp.306-307 (page header 307 inside the telegram), 'Washington, April 27, 1864 -- 11.35 a. m. Major-General Banks, Department of the Gulf, via Cairo, Ill.: Lieutenant-General Grant directs that, on the receipt of this order, you will return yourself immediately to New Orleans, and make preparations to carry out his previous instructions the moment your troops return to that place. ... H. W. Halleck, Major-General, Chief of Staff': word for word; grade C against the print. Differences: the decoded time 10.30 AM against the print's 11.35 a.m. (the ledger's hour is not the dispatch hour; not a key edit), 'Chief of [Station]' for 'Staff' (key row, M), 'prepar [Hill]'s' for 'preparations' (the ledger splits the word, M).
+
+### N2-JD | Page 111 | 9771 | mssEC 18 (obj 10074, pointer 9771; printed page 105), 3 July 1864 4 PM Washington (ledger header 'FT Bickford, Washn 330 pm July 3d 1864'; entry 0 of the leaf), F. T. Bickford (operator), to Lieut. Gen. Grant at City Point ('Magic'), signed H. W. Halleck: General Sigel reports that Early, Breckinridge and Jackson, with Mosby's guerrillas, are said to be moving from Staunton down the Shenandoah Valley; I ordered General Hunter up to the line of the railroad but he has replied to none of my telegrams and has made no report of his operations or present condition; Sigel has been ordered to telegraph directly to him to inform him of the condition of affairs and to ask for instructions; it is possible that Hunter is marching by Beverly and Moorefield or Romney, which would account for his not answering dispatches; the three principal officers on the line of the road are Sigel, Stahel and Max Weber; you can therefore judge what probability there is of a good defense if the enemy should attack the line in force (N2R-5; row 9771/0; holder transcription, leaf not eye-checked)
+FT Bickford  Washn 330 pm July 3d 1864
+Julia Benton for Magic tulip Neptune watsons that Early Ingot
+& Jackson with Mose by guerillas are said toby swindling
+from Stand on down the Apollo wrangle yacht I repeated
+Meriden up tooth line talbot warner but he has replied
+to none of my whiffs and has made no watson
+of his religion or present condition pause Neptune repeated to
+Whiff directly to him to in form him Talbot condition
+of affairs and to ask for instructions tulip It is
+possible that Meriden is raining by Beverly and Moorefield or
+Romney which would account for his not answering despatches yacht
+The Austin principal radicals on the line Talbot weakness are
+Neptune Nugget and Max Weber tulip you can there fore
+judge what probability there is of a good defence if
+the Robin should Pardon the line in Salem yawl Lady
+note: N2R-5: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .44/.54/.22); No. 1 reads 'Benton for [Maj Gen O. O. Howard] ... [S. P. Lee] ... guerillas', no consistent clause; No. 2 reads the whole clause, decoded day 3 = header day (200-seed shuffle: 15 of 200); the decoded hour 4 PM differs from the header's 3.30 pm (the print's hour is 4 p.m.). Coherence -6.560 / -6.809 / -8.110, shuffled No. 2 x3 -7.392/-7.282/-7.485 (No. 1 scores higher than No. 2 on the bigram model for this entry; No. 2 beats every shuffle; the print match is the test). IN PRINT: OR I/37 pt 2 (IA warofrebellion372unit) p.15, 'Washington, July 3, 1864 -- 4 p. m. Lieutenant-General Grant, City Point, Va.: General Sigel reports that Early, Breckinridge, and Jackson, with Mosby's guerrillas, are said to be moving from Staunton down the Shenandoah Valley. I ordered General Hunter up to the line of the railroad, but he has replied to none of my telegrams, and has made no report of his operations or present condition. Sigel has been ordered to telegraph directly to him ... The three principal officers on the line of the road are Sigel, Stahel, and Max Weber. You can, therefore, judge what probability there is of a good defense if the enemy should attack the line in force. H. W. Halleck, Major-General and Chief of Staff': word for word; grade C against the print. Differences (M): the decoder gives 'Spears J.G.' for 'Jackson' and '[Threaten (-ed, -ing)]er' for the name 'Weber' (the decoder splits it), and the ledger's 'Mose' for 'Mosby's' is a plain misspelling.
+
+### N2-JE | Page 144 | 9804 | mssEC 18 (obj 10074, pointer 9804; printed page 138), 30 July 1864 3 AM Chambersburg, Pa. (ledger header 'Wash July 30. 1864'; entry 1 of the leaf), D. N. Couch (decoded 'Couch D N' as the tail), to Maj. Gen. Halleck: General Averell informs me that the enemy commenced crossing at McCoy's Ferry at daylight on the 29th and continued up to 11 a.m. the same day with cavalry, artillery and infantry; commenced crossing at Williamsport at 10 a.m. with cavalry, at Falling Waters at the same time with cavalry and trains, at Shepherdstown with cavalry at the same time; Averell was forced to fall back to Greencastle, where he now is with his whole force; the camp fires of the enemy are about four miles south of Greencastle; they have shown a column toward Leitersburg and about 600 have advanced to Mercersburg, where they drove my pickets back to Bridgeport, in the rear of Saint Thomas; it will thus be seen that the enemy is moving in three columns (N2R-5; row 9804/1; holder transcription, leaf not eye-checked)
+Wash July 30. 1864.
+Chambers - burg Alice Mark ogden to cupid ---- Lafitte
+informs me that the robin commenced pocketing at McCoy's
+Salmon at day light Nelson Franklin inst & continued
+up to Fanny Same day with pedlar pagan &
+sugar pike Commenced pocketing at Wm Sport at Emily
+with pekin & at falling Waters oxide Same time
+with pedlar & whigs pike at Shepherds - town with
+pekin oxide Same time ---- lafitte was sainted to
+shaker to Green Castle where he now is with
+his whole Salem ---- The pauline fires talbot racine
+are about Andrew Sylvans wick of Green Castle They
+have shown a laugh wheedle Leiters - burg & about
+Clarke Snyder have patented to Mercers burg where they
+raymond my trades to Beacon sligo virtue of St
+Thomas ---- It will thus be seen that the
+raven is Swindling in Austin laughs windy lobster End
+note: N2R-5: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .46/.54/.22); No. 1 reads 'Chambersburg ... Jacksonville ... Thomas informs me', a partial clause; No. 2 reads the whole clause, decoded day 30 = header day (the No. 1 read also matches 30: both Y here; 200-seed shuffle of No. 2: day 24 of 200, the weakest margin of the ten). Coherence -7.093 / -6.620 / -8.680, shuffled No. 2 x3 -7.449/-7.576/-7.581. IN PRINT: OR I/37 pt 2 (IA warofrebellion372unit) p.523, 'Chambersburg, Pa., July 30, 1864 -- 3 a. m. (Received 3.30 a. m.) Major-General Halleck, Chief of Staff: General Averell informs me that the enemy commenced crossing at McCoy's Ferry at daylight 29th instant, and continued up to 11 a. m. same day, with cavalry, artillery, and infantry. ... It will thus be seen that the enemy is moving in three columns. D. N. Couch, Major-General': word for word; grade C against the print; the decoded time 3 AM = the print's 3 a.m. Differences (M): '[Killing] [Rear]' for the print's 'in the rear' and the unread ledger word 'windy' before the signature, as the decoder prints them.
+
+### N2-JF | Page 67 | 9727 | mssEC 18 (obj 10074, pointer 9727; printed page 61), 30 April 1864 3 PM Washington ('S. H. Beckwith (2) Wash'n D. C. Apr. 30th 1864'; entry 0 of the leaf), to Lieut. Gen. Grant at Culpeper, signed H. W. Halleck: as some time may elapse before trans-Mississippi affairs are definitely decided upon, had I not better telegraph to Cairo and Little Rock, modifying my telegram of the 27th, to the effect that no troops will be withdrawn from the operations against Shreveport and on Red River, and that those operations will be continued under the direction of the senior officer in command in the field until further orders; it appears that Major-General Hurlbut claims that Special Orders No. 150, War Department, do not relieve him from command of the Sixteenth Army Corps, and that he is still exercising command over General Washburn; shall I not telegraph him that he is relieved from all command and will repair to his home in Illinois (N2R-5; row 9727/0; holder transcription, leaf not eye-checked)
+S. H. Beckwith ( 2 )  Wash'n D. C. Apr. 30th 1864
+Ogden Genesis Jennie For chart tulip as some time may
+elapse be fore Trans Berlin affairs are definitely decided up
+on Pike had I not better whiff to Blubber and
+Little Rock modifying my whim Talbot Nelson Downing to the
+effect that no wedge trifle telegraphed from Religion against Shreve -
+port and on Altar and that those Religious trifle continued
+under direction talbot Radical Senior in Princeton Shylock Opinion till
+further repeats yards It appears that Mastiff claims that Special
+Repeats number Allen. Davis Palmer War quotient do not relieve
+him from Prospect talbot Knapp Persia Pelton Pike and that
+he is still exercising Princeton over Oyster yard shall I
+not whiff to him that he is relieved from all
+Prospect and will repair to his home in Agate Lady
+note: N2R-5: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .38/.57/.10); No. 1 reads 'Ogden Genesis ... Knoxville ... Red River', no consistent clause; No. 2 reads the whole clause, decoded date '30 April' = header day (200-seed shuffle: 13 of 200). Coherence -7.352 / -5.799 / -8.248, shuffled No. 2 x3 -7.212/-6.539/-7.164 (No. 2 beats every column by 0.26 or more). IN PRINT: OR I/34 pt 3 (IA warofrebellion013403rootrich) p.357 (the page header 358 follows Grant's reply, so the telegram is on p.357; leaf not opened), 'Washington, April 30, 1864 -- 3.15 p. m. Lieutenant-General Grant, Culpeper, Va.: As some time may elapse before trans-Mississippi affairs are definitely decided upon, had I not better telegraph to Cairo and Little Rock, modifying my telegram of the 27th, to the effect that no troops will be withdrawn from the operations against Shreveport and on Red River, and that those operations will be continued under the direction of the senior officer in command in the field until further orders? It appears that Major-General Hurlbut claims that Special Orders, No. 150, War Department, do not relieve him from command of the Sixteenth Army Corps, and that he is still exercising command over General Washburn. Shall I not telegraph him that he is relieved from all command, and will repair to his home in Illinois? H. W. Halleck': word for word; grade C against the print. Differences (M): the decoder gives 'Canby Ed R S' where the print has Hurlbut (the key's value for that name code reads Canby here: a candidate conflict for HYPOTHESES.md, not a key edit), and 'Religious' (a ledger spelling) for 'operations'.
+
+### N2-JG | Page 105 | 9765 | mssEC 18 (obj 10074, pointer 9765; printed page 99), 25 June 1864 11.30 AM Washington ('SH Beckwith, Washn 1130 AM June 25th 64'; entry 2 of the leaf), to Brig. Gen. Ingalls, Chief Quartermaster (the ledger 'Palermo In Gauls Chief', decoded 'Nashville's Chief Quarter Master'), signed (decoded) the Quartermaster General (M): some time since I directed all the ocean steamers in service at New York and Philadelphia not actively employed to be sent to the James to await such service as might be required; I am not advised precisely what steamers are now at Hampton Roads and City Point; give the necessary directions to cause all such that can possibly be spared from service in front of Richmond to repair at once to New Orleans and report to the Quartermaster at that city for orders to bring troops north; (the ledger adds 'Do you want some blankets') (N2R-5; row 9765/2; holder transcription, leaf not eye-checked)
+SH Beckwith  Washn 1130 AM June 25th 64
+Florence Oliver Dayton for Palermo In Gauls Chief
+Vermont tulip Some time since I directed all
+the ocean waltzers in service at Girdle and
+Grammar not actively employed toby sent to the
+Abbot to await such service as might be
+required stop I am not advised precisely what
+Waltzers are now at Hampton weakness and Brimstone
+Stop Ewell give the stomach directions to cause
+all such that can possibly be spared from
+service talbot pern before Horace to repair at
+once to Ginger and Watson to the Vermont
+at that pontiac for repeats to bring widow
+spoon wiley Buggy Do you want some blankets
+note: N2R-5: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .39/.39/.18); No. 1 reads 'Oliver Dayton for [Casualties] ... St Louis ... Minnesota', no clause; No. 2 reads the whole clause, decoded time 11.30 AM = the header hour under No. 1 and No. 2 alike (shuffle of No. 2: 4 of 200, not selective between the books) and decoded day 25 = header day under No. 2 only (shuffle 4 of 200). Coherence -6.977 / -5.519 / -7.067, shuffled No. 2 x3 -6.612/-6.512/-6.622. Not located in print: OR I/35 pt 2, I/36 pts 1-3, I/37 pt 1, I/40 pts 2-3 and I/42 cached volumes, letters-only phrase grep on four clauses of the reading and the 24-26 June date window with steamers/New Orleans/James/Hampton: only Halleck to Foster 28 June (OR I/35 pt 2: 'send such available ocean steamers as may be in your department to New Orleans'), the same subject but a different text. Holder clear copy: see NOTES '## N2R-5'.
+
+### N2-JH | Page 120 | 9780 | mssEC 18 (obj 10074, pointer 9780; printed page 114), 8 July 1864 11 PM Washington ('F. T. Bickford, Wash'n D. C. July 8th 1864'; entry 0 of the leaf), to Hon. C. A. Dana (decoded 'Dana C A'), signed (decoded) the Secretary of War (M): I would be glad to have you return immediately as the pressure of business in the department requires your assistance; Lew Wallace reports tonight that the enemy are moving in strong force near Urbana, threatening Washington and Georgetown, apparently about 20,000 strong, consisting of Early and Breckinridge's forces; Halleck reports that he has no force that can take the field and that he has so notified Grant; Urbana is about 30 miles from Washington; Hunter's force has not yet left Parkersburg (N2R-5; row 9780/0; holder transcription, leaf not eye-checked)
+F. T. Bickford  Wash'n D. C. July 8th 1864
+Hang July Fisher Susan For Pollux Tulip I
+would be glad to have you return imm'y
+as the pressure of business in the Quotient
+requires your assistance yacht Opal Watsons tonight that
+the Rabbit are Swindling in Strong saint near
+Urbana wheedle happy and George Town apparently about
+Nelson Dwight strong consisting of Early and Ingots
+Saints tulip Lady Watsons that he has no
+Salem that can take the field and that
+he has so notified Madrid Yacht Urbana is
+about Norris sylvans from Huron yardstick Meridens Saint
+has not yet left Parkersburg Yawl Beach end
+note: N2R-5: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .49/.57/.26); No. 1 reads 'Kirby Smith ... Pollux ... Drove in our pickets', no consistent clause; No. 2 reads the whole clause, decoded date 'July 8' = header date and decoded time 11 PM (200-seed shuffle: day 14 of 200). Coherence -6.452 / -6.214 / -7.936, shuffled No. 2 x3 -6.732/-6.864/-6.986. The 8 July facts agree with the print: OR I/37 pt 2 (IA warofrebellion372unit) in the 8 July telegrams around pp.119-128 (pages not pinned), Wallace to Halleck 8 p.m. from Frederick ('Breckinridge, with strong column, moving down the Washington pike toward Urbana'), Halleck to Grant 10.30 p.m. ('some 20,000 or 30,000'), Hunter at Cumberland that day. Not located in print as this telegram (signer and addressee are decoded values): the cached OR volumes (I/37 pts 1-2 and I/43) have no text for 'Urbana is about thirty miles from Washington', 'has not yet left Parkersburg' or 'pressure of business in the department'; the 7-9 July window with Wallace/Urbana/Parkersburg gave only the Wallace and Halleck telegrams above.
+
+### N2-JI | Page 216 | 9876 | mssEC 18 (obj 10074, pointer 9876; printed page 210), 24 Oct 1864 8 PM Washington ('Caldwell, Washn Oct 24th 64 8 P.M'; entry 0 of the leaf; the ledger tail 'No 2 11 am'), to Maj. Gen. G. G. Meade (decoded 'Meade G G'; M), signed (decoded) the Secretary of War (M): the cases of 'Me I g S' and 'Barn Yard' (names the ledger writes as spelled letters) do come within the principle involved, and that of 'Me I g s' appears to me to be more doubtful than any of the others; unless it shall appear that the appointments are clearly in conflict with law I shall make them, giving the act of Congress the most liberal construction as a meritorious service, and leaving the question to be finally determined by the Senate on the confirmation (N2R-5; row 9876/0; holder transcription, leaf not eye-checked)
+Caldwell  Washn Oct 24th 64 8 P.M
+Nancy Nelson Baker for Mohawk yacht The
+cases of Me I g S and
+Barn Yard do come with in the
+principle involved and that of Me I
+g s appears to me toby more
+doubt full than any Talbot others stick
+unless it shall appear that the appointments
+are clearly in conflict with law I
+shall make them Pike giving tooth act
+of Congress the most liberal construction as
+a merry tory us reward of public
+service and leaving the question toby finally
+determined by the Senate on the confirmation Comb
+No 2  11 am
+note: N2R-5: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .22/.26/.06); the weakest of the ten: a short entry of mostly plain words (shares .22/.26/.06). No. 1 reads 'Parke ... Drove in our pickets', no clause; No. 2 reads the whole clause, decoded day 24 = header day under No. 2 only (shuffle 3 of 200); bigram coherence No.1 / No.2 / No.9 = -6.547 / -6.579 / -7.108 (No. 1 is 0.03 above No. 2; No. 2 is not above its shuffles), so the book is carried by the day match and the clause, not by the bigram test. Not located in print: cached OR I/41 pt 4, I/42 pts 2-3 and I/43 date windows 23-25 Oct for appointments/Senate/law/construction, and a letters-only grep of four clauses: no hit; the names spelled 'Me I g S' and 'Barn Yard' were not resolved (a reader's guess is not made). Holder clear copy: see NOTES '## N2R-5'.
+
+### N2-JJ | Page 104 | 9764 | mssEC 18 (obj 10074, pointer 9764; printed page 98), 24 June 1864 11 AM Washington ('SH Beckwith, Hd Qrs Washn June 24th 1864'; entry 2 of the leaf), to Lieut. Gen. Grant at Bermuda Hundred ('Magic'), signed Maj. Gen. H. W. Halleck: as stated in my former dispatch, General Stahel was sent back by General Hunter to collect troops and escort to him a train of ammunition; Stahel is nearly ready to start but has no information as to where he can find Hunter; should your information be such that you deem Stahel's expedition too perilous to be undertaken, please telegraph to that effect; otherwise he will proceed to do the best he can up the Shenandoah Valley (N2R-5; row 9764/2; holder transcription, leaf not eye-checked)
+SH Beckwith Hd Qrs  Washn June 24th 1864
+Fanny Luke Oliver Baker to Magic tulip As stated in
+my former despatch Nugget was sent back by Meriden to
+collect whack and escort to him a whig of palate
+sticks Nugget is nearly ready to start but has no
+spencer as to where he can find Meriden yard Should
+your spencer be such that you deem Nuggets ripley too
+perilous toby undertaken please whiff to that Roanoke otherwise he
+will proceed the best he can up the Apollo wrangle
+Welch Cupid
+note: N2R-5: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .38/.54/.22); No. 1 reads 'Luke Oliver Baker to [Maj Gen O. O. Howard] ... Available ... Maj Gen E. O. C. Ord', no consistent clause; No. 2 reads the whole clause, decoded date 'June 24' = header day (200-seed shuffle: 4 of 200). Coherence -6.619 / -6.654 / -7.805, shuffled No. 2 x3 -6.575/-7.346/-6.287 (the bigram model does not separate No. 2 from No. 1 or from one shuffle on this entry; the print match is the test). IN PRINT: OR I/37 pt 1 (IA warofrebellion371unit) p.670 (the page header 670 precedes the telegram), 'Washington, June 24, 1864 -- 11.30 a. m. Lieutenant-General Grant, Bermuda Hundred, Va.: As stated in my former dispatch, Major-General Stahel was sent back by General Hunter to collect troops and escort to him a train of ammunition. General Stahel is nearly ready to start, but has no information as to where he can find General Hunter. Should your information be such that you deem General Stahel's expedition too perilous to be undertaken, please telegraph to that effect. Otherwise he will proceed to do the best he can up the Shenandoah Valley. H. W. Halleck, Major-General and Chief of Staff': word for word; grade C against the print. Differences (M): the decoded hour 11 AM against the print's 11.30 a.m.; 'McLamores Cove' for 'dispatch' and 'Harrison' for 'collect' are key values that do not read here.

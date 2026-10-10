@@ -1,0 +1,11 @@
+row | header time / day | time agrees (book 1/2/9) | day agrees (1/2/9) | shuffled book 2: time / day agree of 200 | shuffled book 1: time / day
+Z1 N2R-5, row 9678/0 | None / 20 | NT/NT/NT | n/Y/n | 0 / 6 | 0 / 3
+Z2 N2R-5, row 9757/1 | None / 11 | NT/NT/NT | n/Y/n | 0 / 16 | 0 / 0
+Z3 N2R-5, row 9724/0 | None / 27 | NT/NT/NT | n/Y/n | 0 / 3 | 0 / 0
+Z4 N2R-5, row 9771/0 | 3.30 PM / 3 | n/n/n | n/Y/n | 3 / 15 | 9 / 0
+Z5 N2R-5, row 9804/1 | None / 30 | NT/NT/NT | Y/Y/n | 0 / 24 | 0 / 10
+Z6 N2R-5, row 9727/0 | None / 30 | NT/NT/NT | n/Y/n | 0 / 13 | 0 / 9
+Z7 N2R-5, row 9765/2 | 11.30 AM / 25 | Y/Y/n | n/Y/n | 4 / 4 | 4 / 0
+Z8 N2R-5, row 9780/0 | None / 8 | NT/NT/NT | n/Y/n | 0 / 14 | 0 / 0
+Z9 N2R-5, row 9876/0 | None / 24 | NT/NT/NT | n/Y/n | 0 / 3 | 0 / 0
+Z10 N2R-5, row 9764/2 | None / 24 | NT/NT/NT | n/Y/n | 0 / 4 | 0 / 0
