@@ -49,3 +49,11 @@ Cost: workers about 25 (box proposals 3, second image pass 4, adjudication 3, si
 time, reported separately; B is never called automated. Openings: 0 (a new reference).
 
 Costs this round: 8 (TOOL-SCORER-FIX). Eval looks this round: 0. Openings: TOOL-SCORER-FIX 1 (corrected audit).
+
+## Order change (lane, 10 Oct 2026 00:3x UTC by date -u; the orchestrator's addendum from TX-RED pass 11 F50, BEFORE the corrected audit)
+TOOL-SCORER-FIX's corrected-audit step (3) is HELD until PREREG-txeng2-18 SCAN-103 reports: a read-free window scan of the f.103r
+S2 truth's alignment (the scan DV1c ran on f.102r) decides which truth the audit uses. Decision rule (the orchestrator's): if the
+registered alignment is the best over the window by the same margin test f.102r used, the S2 record stands and the audit uses the
+existing truth; if not, a NEW f.103r truth is built read-free from the witness at the best offset by a separate PREREG'd job, the old
+truth file kept, and the frozen passZ_S2b is re-scored ONCE beside the record 0.150 / 0.296 (look count unchanged; a corrected
+audit, never a new look). The tool work (steps 1-2) proceeds now.
