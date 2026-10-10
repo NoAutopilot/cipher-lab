@@ -14757,3 +14757,85 @@ match ciphertext-no2.txt token for token). Committed (`ms18/`): `aud2_ledgern2_2
   whether the short forms of Yardstick (p.25 l.23 R) are H, which moves N2-FA back over the D3 line.
 Requests: hdl.huntington.org 14 (12 CISOSEARCHALL, 2 item info), all 200; be-api.us.archive.org 28 (all answered); www.googleapis.com 11; www.loc.gov 6
 search + 30 page/full-text (one IncompleteRead); api.semanticscholar.org 2; api.core.ac.uk 2; api.openalex.org 2. For orchestrator (account-4).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGERN2-3)
+
+Second verifier AUD2-LEDGERN2-3 (account 4, for the orchestrator (account-4); row queued by FV-N2c for LANE LEDGER-N2 (account 1), re-tagged from account 3),
+10 Oct 2026, 02:37-03:0x UTC by `date -u`; a separate session and account from the reader N2R-2 and the first auditor FV-N2c (account 1); this session had not
+read or audited these entries before. Scope: **N2-GA** (mssEC 18 p.208, pointer 9874/1, 22 Oct 1864), **N2-GC** (p.247, 9913/0, 10 Dec 1864), **N2-GI** (p.248,
+9914/1, 14 Dec 1864); N2-GH (N1) not re-audited, per the row. Nothing decoded beyond key look-ups; every code word of the three entries was looked up again in
+key-no2.md and matches its row (Pharoah = December, Arnold/Brooks = 2, Moses = August, Ogden = 30, Brown/Allen = 1, Norris = 30, Wedlock = Tomorrow, Wafer =
+River, Bridle = City Point, Woodbury = Monday, Florida = Martinsburg, Negus = Sheridan P H, Monarch = Meade G G, all H; Repeat, whim, Yancy C). "mustache" has
+no row (nearest Musket/Music/Muss, none fits): it stays unread. "Relay" before "house" is plain (Relay House, Md.), as FV-N2c said: the key row Relay = Effect
+gives no sense there. Key source: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Re-derivation: `python3
+ciphers/eckert-1864/decode_no2.py --check` -> "reading-no2.md is current", exit 0 (after FIX-N2a). Image: not re-checked (FV-N2c eye-checked all three leaves at
+2400 px). Committed (`ms18/`): `aud2_n2_3_beapi.py` + `.out`, `aud2_n2_3_gb.py` + `.out`, `aud2_n2_3_gb13.py` + `.out` (+ `aud2_n2_3_gb13_intitle.out`, the
+failed first run), `aud2_n2_3_vol13.py` + `.out`, `aud2_n2_3_hdl.py` + `.out`; OR and III-series djvu texts read in scratch (ids below).
+
+### 1. Families FV-N2c did not cover, and what this pass did
+| Family | FV-N2c | This pass |
+|---|---|---|
+| Grant Papers vol. 13 (16 Nov 1864-20 Feb 1865: N2-GC, N2-GI) | "be-api: 'Brice paymaster', '"Relay House"', 'paymasters "Sixth Corps"', 'paymasters "City Point" unpaid' 0" | **Those zeros are non-tests.** `papersofulyssess0013gran` does not exist on IA: its metadata call returns empty and the control words 'Nashville' and 'Butler' (certain in that volume) return 0 (`aud2_n2_3_vol13.out`); IA advancedsearch lists vols 1-12 and 14-20 only (as LS4-V2a and AUD2-LEDGERN2-1 found). Replaced by **Google Books snippet search**, which reaches vol. 13 (`mnRjmhe3QLoC`, 1985, PARTIAL): control '"come this way if possible on your return"' -> vol. 13 (2 hits). Then 'Brice paymasters Grant', 'Brice paymaster December 1864', '"Relay House" paymasters', 'paymasters "Sixth Corps" unpaid', 'paymasters Meade "City Point" December 1864 Brice', 'Brice Sheridan paymasters', '"acting paymaster general"': no vol. 13 snippet among the top 10 of any (Grant Papers hits were vols. 1, 16, 18 on Brice as Paymaster General after the war). A snippet miss is weak (top-10, token match only). The `intitle:` form returned 0 even for the control (first run, kept as `_intitle.out`). MSU Scholars Junction PDFs: not tried (Cloudflare 403 recorded three times on 8-9 Oct) |
+| Grant Papers vol. 12 (N2-GA) | 3 multi-word queries | single words: 'Brice' 0, 'paymasters' 1 (a letter on an officer telling his plans to paymasters, other), 'Forsyth Martinsburg' 1 (other); the volume is indexed (control hits) |
+| OR ser. III vol. 4 (1864-65) and vol. 5 (1865-66, the Paymaster General's reports) | III/4 partial (two DLI copies) | **Not reliably searched.** IA `waroftherebellio026242mbp` and `in.ernet.dli.2015.155283`, both titled "Series III Vol IV", open "ADDITIONS AND CORRECTIONS ... SERIES II -- VOLUME IV": they are ser. II vol. 4 (1862, prisoners; 0 lines with 1864). `in.ernet.dli.2015.165571` ("Series III Vol V") is OCR noise (289 occurrences of "the" in 362,354 tokens). HathiTrust holds III/4 (`mdp.49015002001270`) and III/5 (`mdp.49015002001304`) by the Bibliographic API (OCLC 427057); the HTRC Extracted Features API answered HTTP 500 ("No primary node is available"), the same failure POOLS logged four times tonight; not retried |
+| OR ser. I, Dec 1864 headings | I/43 pt 2, I/45 pt 2, I/42 pt 3 by keyword | re-read I/43 pt 2 (on disk) by every dated heading 21-26 Oct and 8-16 Dec 1864 carrying escort/pay/Relay/Brice, and I/42 pt 3 (`warofrebellion423unit`) and I/45 pt 2 for paid/payment/muster-rolls: none is any of the three telegrams or a reply. Context only (I): I/43 pt 2 p.461, Martinsburg 24 Oct, Seward's order for an escort brigade for "the train" next morning; p.765, Kernstown 9 Dec, two brigades of the Second Division, Sixth Corps, leave the Valley for Washington; p.722, Cumberland 1 Dec (Kelley): "The paymaster had better come up and pay them" (Rust's brigade, other) |
+| Paymaster General's annual report (31 Oct 1865) | not searched | Google Books lists it (`ki0aAAAAMAAJ`, *Annual Reports of the War Department* 1866, ALL_PAGES) but page text is not reachable from the cloud (books.google.com page view blocked); IA `annualreportsec09deptgoog` is the 1866 report (year to 30 June 1866): 'Relay House', 'Sixth Corps', '31st of August' 0, Brice only as signature. **Unread** |
+| Printed correspondence | not searched | Google Books snippets: *Private and Official Correspondence of Gen. Benjamin F. Butler* vol. 5 (`vnNJAQAAMAAJ`): Butler to "Major Brice, Paymaster Gen'l", 12 Dec 1864 1.30 PM (Fort Fisher expedition pay, other); *Collected Works of Abraham Lincoln* vol. 8 (`OKsnAQAAMAAJ`): "Brice was appointed paymaster general as of November 29, 1864" (context for N2-GC and N2-GI's signature, I). Meade's *Life and Letters* vol. 2 and Sheridan's papers not read |
+| Holder full text (CONTENTdm, all pointers) | 12 queries | 7 more (10 requests): 'Paymaster' 12, 'Paymaster General' 5, 'Pay master' 18, 'safe guard' 10, 'Paymasters City Point' 1 (8651, read by FV-N2c), 'funds escort' 0, 'Nineteenth Corps paymasters' 0; every hit's title and opening line read from the query result: none dated 21-26 Oct or 9-16 Dec 1864 except own 9874 (positive control) |
+| G3 phrase pass (IA whole-text and Google Books) | 12 Google Books queries | Google Books 12 more (control '"requisite ammunition and supplies with the column"' -> Grant Papers vol. 10, passed): '"escort at Martinsburg" paymasters', '"funds for the payment of the Nineteenth"', '"paymasters may be sent"', '"notified by telegraph in cipher" paymasters', '"unpaid since the 31st of August" 1864', '"two regiments of the Sixth Corps" unpaid', '"paymasters will leave to-morrow" "City Point"' and 5 others: generic hits only. IA whole-text be-api (no identifier) 10 phrases: none of these texts; **its control failed** ('"requisite ammunition and supplies"' returned 8 unrelated hits, not Grant Papers vol. 10), so whole-IA misses are weak |
+| Unreachable / not searched | -- | OR III/4-5 on a good text; Grant Papers vol. 13 page by page; the PMG report 1865 text; NARA RG 99/107/108; Sheridan's and Meade's papers; HathiTrust full text (Cloudflare); the press pages; JSTOR (rows queued, s.4) |
+
+### 2. Findings
+- **No copy, quotation or printed text of N2-GA, N2-GC or N2-GI found** in any family above. FV-N2c's "not located" holds for all three, with one correction to
+  its own search log: its Grant Papers vol. 13 searches were run against an IA identifier that does not exist, so they tested nothing; the replacement here
+  (Google Books snippets, control passed) is weaker than a full-text search and the volume stays partly open.
+- **Over-reading in the safe sentences (N2-GC, N2-GI): "unpaid since 31 August".** The telegrams say "unpaid to August 31" (Widow unpaid to Moses Ogden Brown;
+  Waynes ... unpaid to Norris Allen of Aug). Union troops were mustered and paid "to" a date; troops "unpaid to 31 August" are owed the pay for the period
+  ending 31 August, which says nothing about a payment since that date. "Unpaid since 31 August" (and FV-N2c's depth sentence "had not been paid since the end
+  of August") reverses the sense. Corrected here in status.json `line` and `depth_sentence` and in the SO prompt titles to "unpaid to 31 August".
+- **N2-GI depth sentence adds context the telegram does not carry.** "Two Sixth Corps regiments back at Petersburg from the Valley" -- the telegram names
+  neither Petersburg nor the Valley (the Sixth Corps' return is OR context, I). Replaced (s.3).
+- **N2-GC counts after FIX-N2a.** The decode now gives H 14, C 2, I 2, M 1 = 16 H/C of 19 code-word tokens (84.2%); status.json still had FV-N2c's pre-fix "17
+  H/C of 20" (85.0). Updated. N2-GA (H 19 of 19) and N2-GI (H 14, C 1 = 15 of 15) agree with status.json.
+- **Cross-check that holds:** N2-GC's "order of [December] [2]" and N2-GI's "the Secys order of [2] inst" (Pharoah Brooks / Arnold, two key rows) and both
+  telegrams' "unpaid to [31] [August]" read the same in two telegrams four days apart; Lincoln's Collected Works (vol. 8) dates Brice's appointment as
+  Paymaster General "as of November 29, 1864", consistent with both December telegrams coming from his office. N2-GA's depth check (holder 9100, the same-day
+  clear order to Stevenson) re-read on disk (`sources/mssEC19/p9100.json`): "Pay masters with large a mount of funds will leave here Monday Mng for Sheridans
+  army ---- Please direct an escort to be in waiting to insure protection of the funds to Martinsburg Sig BW Brice Actg Pm Genl" -- holds; OR I/43 pt 2 pp.370-
+  373 name the 14 Oct captors as "part of Mosby's command" (Stevenson to Stanton), so FV-N2c's depth sentence for N2-GA is supported.
+- No other over-claim found. The N2-GA safe sentence is exact.
+
+### 3. Class (rule 10) and depth (rule 4a)
+| ID | N | key | depth | % code-word tokens H/C | basis |
+|---|---|---|---|---|---|
+| N2-GA | **N3** (kept) | period | **D3** (kept: 19 H of 19; external non-statistical: holder 9100, same-day clear order; OR I/43 pt 2 pp.370-373, 471-472) | 100 | not located after FV-N2c and s.1 |
+| N2-GC | **N3** (kept) | period | **D2** (kept: clause "Pay masters ready togoto for pay ment of your widows unpaid to Moses ogden brown"; code value December 2 / the 2nd inst in two telegrams; no external content check) | 84.2 (16 of 19; 2 I, 1 M) | not located after FV-N2c and s.1 |
+| N2-GI | **N3** (kept) | period | **D2** (kept: clause "Paymrs will leave wedlock by wafer for bridle"; no external content check -- the Sixth Corps' return from the Valley is context, not a check of these words) | 100 (15 of 15) | not located after FV-N2c and s.1 |
+
+- Not N4 for any: OR ser. III vols 4-5 (no good text reachable), Grant Papers vol. 13 (snippets only), the Paymaster General's 1865 report, NARA RG 99/107/108,
+  Sheridan's and Meade's papers, HathiTrust and the press unread; JSTOR rows open. Not D4: no fresh rule-7 re-derivation session; N2-GC keeps 2 I and 1 M.
+- **Safe sentences (status.json `line`):** N2-GA unchanged. N2-GC: "Read at grade H with War Department Cipher No. 2 (period key): on 10 Dec 1864 B. W. Brice
+  told Sheridan that paymasters were ready to pay his troops not yet paid to 31 August and, under the Secretary of War's order of 2 December, asked to be told by
+  cipher telegram when they could be sent to Relay House; not located in print (searched 10 Oct 2026)." N2-GI: "Read at grade H with War Department Cipher No.
+  2 (period key): on 14 Dec 1864 B. W. Brice told Meade that, under the Secretary's order of the 2nd, two paymasters would leave next day by river for City
+  Point to pay two regiments of the Sixth Corps not yet paid to 31 August; not located in print (searched 10 Oct 2026)."
+- **Depth sentences:** N2-GA unchanged. N2-GC (revised): "In December 1864 Brice told Sheridan his paymasters were ready to pay troops still owed their pay
+  to 31 August, and asked for word in cipher before sending them to Relay House." N2-GI (revised): "Brice sent two paymasters by river to City Point to pay two
+  Sixth Corps regiments still owed their pay to 31 August."
+- **Unsafe:** "first", "new", "unpublished", "never printed"; "unpaid since 31 August" / "not paid since August" (the text says unpaid *to* 31 August); "not in
+  the Official Records" (ser. III vols 4-5 not read on a good text); "not in the Grant Papers" (vol. 13 searched by snippets only); "the Sixth Corps regiments
+  had just come back from the Valley" as part of the reading (context, I); "the Secretary's order of 2 December said X" (not located).
+
+### 4. Postmortem and fixes
+- FV-N2c's classes, readings and depths stand. Its errors: a search log entry that tested nothing (Grant Papers vol. 13 on a non-existent IA id, with no
+  positive control for that volume) -- the lesson LS4-V2a and AUD2-LEDGERN2-1 had already logged for this series; and a paraphrase ("unpaid since") that reversed
+  the meaning of a pay term. Applied here: status.json N2-GA, N2-GC, N2-GI `audit_status` "two audits", `audit_refs` + this section, `gap`; N2-GC and N2-GI
+  `line`, `depth_sentence`, `depth_check` (GI); N2-GC `completeness` and `depth_pct` 84.2; SO prompts PROMPT-chatgpt-n2-gc.md / -gi.md title line "unpaid
+  since" -> "not yet paid to", and their "WHERE WE HAVE LOOKED" lines corrected for Grant Papers vol. 13 (SO rows stay queued: class and reading unchanged).
+- For the next reader of these entries: Grant Papers vol. 13 page by page (owner's machine or MSU Scholars Junction from a browser), OR III/4 on HathiTrust
+  (owner's machine), the Paymaster General's report of 31 Oct 1865 (Google Books `ki0aAAAAMAAJ`, full view, from a browser).
+- JSTOR-QUEUE.tsv (6 rows): (i) Brice AND paymasters AND Martinsburg AND escort AND 1864; (ii) "sufficient escort at Martinsburg"; (i) Brice AND paymasters
+  AND "Relay House" AND Sheridan AND 1864; (ii) "paymasters ready to go"; (i) Brice AND paymasters AND "City Point" AND "Sixth Corps" AND 1864; (ii) "two
+  regiments of the Sixth Corps".
+Requests: hdl.huntington.org 10 (10 CISOSEARCHALL), all 200; be-api.us.archive.org 22 (all answered); archive.org 16 (5 djvu texts, 7 metadata, 4
+advancedsearch); www.googleapis.com 30 (12 + 9 + 9); catalog.hathitrust.org 3; data.htrc.illinois.edu 1 (HTTP 500, not retried). For orchestrator (account-4).

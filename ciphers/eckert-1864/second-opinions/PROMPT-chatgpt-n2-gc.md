@@ -12,7 +12,7 @@ THE ITEM
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key-no2.md, search log
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (FV-N2c)"; its section 5 lists corrections not yet applied to the reading file).
 
-WHERE WE HAVE LOOKED: Official Records ser. I vols 43 pt 2 and 45 pt 2 (9-11 Dec 1864 by text and dated headings; "Relay House"); Papers of U. S. Grant vol. 13 (full-text search); Google Books phrase search; Chronicling America (8-20 Dec 1864, hits not read page by page); the Huntington's CONTENTdm full-text search.
+WHERE WE HAVE LOOKED: Official Records ser. I vols 43 pt 2 and 45 pt 2 (9-11 Dec 1864 by text and dated headings; "Relay House"); Papers of U. S. Grant vol. 13 (not on the Internet Archive; Google Books snippet search only, 10 Oct 2026); Google Books phrase search; Chronicling America (8-20 Dec 1864, hits not read page by page); the Huntington's CONTENTdm full-text search.
 
 WHERE WE HAVE NOT YET LOOKED PROPERLY (start here)
 - the Secretary of War's order of 2 Dec 1864 on paying troops (War Department general or special orders, Dec 1864); NARA RG 99 (Paymaster General) and RG 107; Sheridan's papers; Official Records ser. III vols 4-5 and the Paymaster General's 1865 report; the Washington and Baltimore press of 10-20 Dec 1864; HathiTrust; JSTOR.
@@ -21,7 +21,7 @@ HOW TO REPORT (this part is the same for every label)
 - Write your answer as one Markdown file in the repository github.com/NoAutopilot/cipher-lab at the path
   `ciphers/eckert-1864/second-opinions/chatgpt-n2-gc-<UTC date>.md`. Do not touch any other file. Do not commit to `main`:
   create a branch named `second-opinion/SO-ECKERT-N2-GC` and open a pull request from it, titled exactly
-  `[SO-ECKERT-N2-GC] second opinion: Brice to Sheridan: paymasters ready for troops unpaid since 31 August, to be sent to Relay House on word in cipher, 10 Dec 1864`.
+  `[SO-ECKERT-N2-GC] second opinion: Brice to Sheridan: paymasters ready for troops not yet paid to 31 August, to be sent to Relay House on word in cipher, 10 Dec 1864`.
 - The first lines of the file must be this header, filled in:
       label: SO-ECKERT-N2-GC
       model: <your model name and version>
