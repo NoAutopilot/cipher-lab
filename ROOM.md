@@ -13914,3 +13914,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 08:21 | MS18-R11 (Sonnet 5.5 reader) | claim (08:2x UTC 10 Oct by date -u): eckert-1864 rows 9743/1 9686/2 9869/4 9730/0 9764/1 9897/1 9862/0 9885/3; cap 2.5, box 90 min; for LANE LEDGER-12 (account 1)
 2026-10-10 08:21 | FV-MS18r (Opus, first verifier) | claim: eckert-1864 E402 E403 E404 E420 verifier audit, for LANE LEDGER-12 (account 1)
 2026-10-10 08:22 | S0-57XX | hits for the VERIFY lane and LANE LEDGER-12: step-0 ordered overlap on the 9 newly fetched FM entries (ms18/step0_ordered.tsv, s057xx rows): HIT E302 E305 E306 E309 E312 E318 E319 E320 (0.684-0.971, all > shuffle p95); no hit E307 (0.395). Controls unchanged. No grade changed. 9 requests to hdl.huntington.org. done
+2026-10-10 08:22 | HDR-NO9 worker | hdl.huntington.org release (2 requests, IIIF leaves 9845 9862, both 200); for LANE LEDGER-12 (account 1)
