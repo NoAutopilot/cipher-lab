@@ -56,6 +56,15 @@ fv-o9b	O9-DA	9709	1	0.972	35/36	0.333	0.333	HIT	1	colonel
 fv-o9b	O9-DD	9687	1	0.837	41/49	0.245	0.286	HIT	8	general major new quartermaster secretary war york	
 fv-o9b	O9-DF	9699+9700	1+2	0.844	65/77	0.221	0.234	HIT	12	captain general harbor maine new quartermaster sailing vessels york	
 positive	E74	9071	2	0.958	23/24	0.333	0.375	HIT	1		publicnation
+s057xx	E302	5697	1	0.684	80/117	0.179	0.188	HIT	36	cross depot destroy general grant guard mile point position rail road thirty twelve way west williamsburg yorktown	ed
+s057xx	E305	5740	0	0.822	74/90	0.189	0.200	HIT	13	army cipher city destroy force guard james join south way west	
+s057xx	E306	5744	1	0.695	73/105	0.171	0.181	HIT	29	butler city david fort general grant guard head hunter mile necessary point quarters report sheriden three tomorrow two west yorktown	
+s057xx	E307	5777	1+2	0.395	32/81	0.160	0.160	-	41	newbern norfolk six telegraph two way	absence back boat cent charge dangerously end every forward gaughey get hasten hospital house ill important mack off opera pause paws pay please possible ready reply return send take tore water
+s057xx	E309	5786	0	0.810	17/21	0.381	0.381	HIT	4	colonel quartermaster steam	ers
+s057xx	E312	5746	1	0.938	30/32	0.312	0.344	HIT	2	river south	
+s057xx	E318	5709	1	0.843	59/70	0.229	0.229	HIT	10	chief general guard men point regiment report soon west yorktown	
+s057xx	E319	5695	2	0.744	32/43	0.256	0.256	HIT	11	cross mile open point river west yorktown	
+s057xx	E320	5702	0	0.971	66/68	0.235	0.250	HIT	2	cipher	
 transposed	E321 vs 5781 foot (real wire order)	5781	2	0.208	5/24	0.292	0.333	-	9	north river south	cab caldwell channel laid take
 pair-check	E321 vs 5782 (reading order)	5782	0	0.875	21/24	0.333	0.375	HIT	3	north river south	
 transposed	E378 wire order (route p.3, 7 cols, constructed)	9820	2R	0.222	4/18	0.389	0.389	-	3	dana telegraph two	

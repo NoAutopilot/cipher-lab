@@ -1993,7 +1993,7 @@ A pre-filter of Huntington object 5952, a ranking with stated error rates, not a
 Every verdict below is conditional on the Huntington volunteer transcription (rule 2): no page image was opened. Intake gate for eckert-1864:
 `partial (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (pasted in the brief, 17:4x UTC). Scripts and tables in
 `fortmonroe/` (`fm_entries.py`, `fm_prefilter.py`, `fm_control.py`, `fm_net.py`, `fm_final.py`; outputs `entries-fm.tsv`, `prefilter-fm.tsv`,
-`prefilter-fm-final.tsv`, `clean-fm.tsv`, `fm_control.txt`); page text in `sources/fortmonroe/p<pointer>.json` (411 files, 1.7 MB); small response caches in
+`prefilter-fm-final.tsv`, `clean-fm.tsv`, `fm_control.txt`); page text in `sources/fortmonroe/p<pointer>.json` (420 files, 1.7 MB; 411 + 9 fetched by S0-57XX, 10 Oct 2026); small response caches in
 `sources/ia-fulltext/print-check/fm/`. The segmenter is `entries_mssEC19.py` with three new options (`--pages-dir`, `--prefix`, `--titled-pages`; the default mode
 re-ran byte for byte against the HEAD version on all 15 columns, 893 rows, 0 differing).
 
@@ -5621,3 +5621,14 @@ All nine leaves eye-checked at 2400 px; the KE leaf carries a period pencil "No 
 plain words read through key rows -- JB Bailey/desire/rank, JC rations/despatch, JD Jackson/Weber/despatches, JJ collect/despatch, KD opinion; JE Sligo vs print
 "in the" (M); JF Mastiff -> Canby where the print has Hurlbut (M, KEY lane); **N2-JB continues on pointer 9758 (ledger p.92, 15 lines), not filed**. No status.json,
 SO or AUD2 row (nothing at N3).
+
+## S0-57XX (10 Oct 2026, account 1, for LANE LEDGER-12)
+Worker S0-57XX, 08:2x-08:3x UTC by `date -u`. Fetched the nine page JSONs AUDIT (STEP0-RULE) s.4 listed as missing: CONTENTdm `dmGetItemInfo/p16003coll11/<pointer>/json`
+(hdl.huntington.org, descriptive UA, 3.3 s apart, 9 requests, no errors) for pointers 5697 5740 5744 5777 5786 5746 5709 5695 5702 (E302 E305 E306 E307 E309 E312 E318 E319 E320),
+saved as `sources/fortmonroe/p<pointer>.json` (title + transc, same shape as the others; manifest = the count in the fortmonroe line above, now 420).
+`ms18/step0_ordered.py` gained one target list (`s057xx`) and now prints the S0-57XX line; its controls are unchanged (positives hit, transposed miss). Nine rows appended to
+`ms18/step0_ordered.tsv`. The three FV-O9b rows (O9-DA/DD/DF) were left as filed: a re-run reads reading-no9.md as FIX-FM21 later changed it and gives slightly different numbers
+(0.892/0.820/0.842, still HIT); not re-filed here. No grade, status.json or AUDIT change.
+Result (ruling: hit = (a) >= 0.5 and (a) > (b)): **8 of 9 hit** -- E302 0.684, E305 0.822, E306 0.695, E309 0.810, E312 0.938, E318 0.843, E319 0.744, E320 0.971.
+**E307 does not hit** (0.395, 32/81 vs 0.160, window 1+2): 27 plain spelling variants absent, so the holder transcription of 5777 differs in wording from the decode; stays as audited.
+Hits are a proposal for the third audit, not a grade (rule 10); key meanings in (c) are in the TSV.

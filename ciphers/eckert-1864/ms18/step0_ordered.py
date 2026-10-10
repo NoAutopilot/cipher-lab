@@ -106,6 +106,8 @@ def measure(e, allw, codew, wins, seed):
 EXTRA = {"O9-DF": [9699, 9700]}
 sweep = [l.split("\t")[0] for l in open(os.path.join(HERE, "htx_sweep.tsv")).read().split("\n")[1:] if l.strip()]
 targets = [("sweep", e) for e in sweep] + [("fv-o9b", e) for e in ("O9-DA", "O9-DD", "O9-DF")] + [("positive", "E74")]
+# S0-57XX (LEDGER-12, 10 Oct 2026): the nine FM entries whose page JSON was fetched after STEP0-RULE listed them as missing
+targets += [("s057xx", e) for e in ("E302", "E305", "E306", "E307", "E309", "E312", "E318", "E319", "E320")]
 rows = []; missing = []
 for kind, e in targets:
     p, line = ents[e]; pages = EXTRA.get(e, [p])
@@ -134,5 +136,7 @@ print("transposed controls:", [(r["entry"], round(r["a"], 3), r["hit"]) for r in
 ok = all(r["hit"] for r in pos) and len(pos) == 3 and not any(r["a"] >= 0.5 for r in tr)
 print("controls behave:", ok)
 sw = [r for r in rows if r["kind"] in ("sweep", "fv-o9b", "positive")]
+nw = [r for r in rows if r["kind"] == "s057xx"]
+print("S0-57XX:", len(nw), "measured;", sum(r["hit"] for r in nw), "hit; not hit:", " ".join(r["entry"] for r in nw if not r["hit"]))
 print(len(sw), "entries measured;", sum(r["hit"] for r in sw), "hit; not hit:", " ".join(r["entry"] for r in sw if not r["hit"]))
 print("no page JSON on disk (listed, not fetched):", missing)
