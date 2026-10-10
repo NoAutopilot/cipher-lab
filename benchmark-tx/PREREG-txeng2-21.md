@@ -239,3 +239,64 @@ the whole page, never applied to flagged tiles alone; (3) the plain `tools/sorte
 posted in ROOM with its five check lines and "preflight: PASS" for the orchestrator to publish; a page that still FAILS is WITHHELD and its
 residual reported by class -- it is not forced through, and no further rule is written in this line. Expected from the worker's own counts
 (per-hand medians, no pad): vivonne about 11 of 541 (2.0%), birago about 14 of 343 (4.1%), luzerne 31 of 445 (7.0%) before the pad.
+
+## SHEET-VIV result (lane, dated 03:3x UTC 10 Oct by date -u; TXE2-SHEETVIV session_01FzgBuZsxgdNLndWYNWJPui, 14.20 D, done 03:13; read per TX-RED F76)
+**dev FAIL as declared**: passZ_sv 0.088 (60/679) flagged-excluded, SER 0.085 (S 24 D 5 I 29), visual-ID 0.083, vs passZ_dv1 0.124 (84/679):
+lines improved 16 / worsened 8 / tied 12, line sign test **p 0.1516 (not < 0.05)**; unit-cost edits **80 -> 58 (0.725x; the >= 20% fall is met)**;
+position McNemar beside fixed 22 / broken 8, p 0.016; as measured 0.246 vs 0.276 (lines 21/7/8, p 0.0125). Single passes beside: passA_sv
+0.077 (lines 18/7/11, p 0.043, edits 51), passB_sv 0.074 (18/4/14, p 0.004, edits 49) -- F76 (i) met in the RESULTS. Agreement 89.8% (DV1b
+86.1%); 10 Opus reads, 12 Sonnet packets, 189/189 rows viewed, crops 86/86 by the access log, 0 calls outside the allowlist; passZ_sv
+617286fd6 sha256 dbceb0dd6ed80ff6d62e9a29371a8ecea5718790d4040d1b484a1122faf587c0. Licenses nothing (the declared line-level endpoint did not
+reach p < 0.05 at 36 lines; its power was declared unsimulated). F76 (ii), stated: the baseline is ONE run and the 20% condition is not
+bounded by a same-sheet replicate (DV1b's own passes differ by 23% in edits). Confound the worker named: the [PLAIN:...] sentence (Amendment 9
+(24)) entered with the sheet, so the insertion fall (41 -> 31) is not the sheet's alone. Every figure moved the declared way; under rule 3's
+second-attempt clause one further run that changes the one thing the result could not separate is allowed: SHEET-VIV-C below. Openings: eval 0,
+dev 1.
+
+## SHEET-VIV-C The text-list control arm under SHEET-VIV's protocol on dev2 -- the same-protocol replicate F76 asks for, isolating the sheet form (TXE2-SHEETVIVC; Opus 5.5 worker, Opus 5.5 readers, Sonnet packets; cap 22; box 120 min; dev only)
+Nearest prior: SHEET-VIV (above: pictured sheet + [PLAIN:] sentence, passZ_sv 0.088 / 58 edits), DV1b / TXE2-VIV102-BASE (text-list sheet,
+"skip" plain stretches, passZ_dv1 0.124 / 80 edits; passA_dv1 0.141, passB_dv1 0.096), X21 / X21b (reader-model arms, the two-arm shape).
+What is different: a third run on the same leaf that differs from SHEET-VIV in the SHEET ONLY -- sheet_SIGNS_dv1.md (the text list) with
+SHEET-VIV's reader_task otherwise byte-identical (the [PLAIN:...] sentence, the 250 px overlap sentence, "do not resize", the same 74
+crops, 5 calls per pass, two blind Opus passes, reconcile, DISAGREE packets <= 16 rows, access logs per F63) -- so passZ_sv vs passZ_tl is
+the sheet-form effect with the [PLAIN:] confound removed, and passZ_tl vs passZ_dv1 (two text-list runs differing by the [PLAIN:] sentence
+and run noise) bounds the same-sheet spread F76 (ii) asked for. Score: ONE tx_bench run on dev2 as SHEET-VIV's step 2 with --paired
+passZ_sv.tsv (the treatment), the as-measured run beside, and the same files once more --paired passZ_dv1.tsv (one invocation per pairing,
+never merged, F52); value-level with visual-ID beside; per item (dev2 only). Declared reading (no gate word beyond these): the sheet-form
+effect STANDS if passZ_tl's unit-cost edits on the 679 are >= 1.25x passZ_sv's (58 -> >= 73) AND lines worsened > improved for passZ_tl vs
+passZ_sv (sign-test p reported; p < 0.05 the declared bar for "stands at the line level", else "stands on edits only"); the effect is NOT
+DISTINGUISHABLE from run spread if |edits(passZ_tl) - edits(passZ_dv1)| >= |edits(passZ_sv) - edits(passZ_tl)|. What a STANDS licenses: a
+sheet-form recommendation for THIS hand (the folder's reader brief) and the second-hand PREREG (two runs per arm on a leaf of another hand with
+a drawn key), never S1, never any f.103r step (the S2 look is spent; f.103r is not touched). Readers never see truth, decodes, passZ_sv,
+passZ_dv1, other passes or the pictured sheet. Output benchmark-tx/txeng2/sheetvivc/ (RESULTS.md, every hash, "Openings of eval truth: 0",
+"dev openings: 1"). Cost: SHEET-VIV ran 14.20 under cap 22; cap 22, box 120, 80% stop 96 min / 17.6.
+
+## MARKS-DEV2 result (lane, dated 03:3x UTC; TXE2-MARKS session_013GkktFvp1XsphJQr7Aupnf, 2.24 D, done 03:05)
+**FAIL read-free as declared, by construction of the segmenter setting:** 0 candidates on 37 lines (1,698 boxes under the OL1-BOXES recipe,
+only 30 under 0.35 x the median sign height, none a stacked stroke-free pair); 84 ':' truth positions by script; recall 0.000; the registered
+triple 679 / 43 / 41 reproduced. Diagnosis from the segmenter's documented parameters (no image viewed): `glyph_atlas.py segment` default
+merges x-overlapping components with a vertical gap under 0.6 x the median height (--merge-vgap) and drops sides under 0.12 x it (--min-area),
+so the two dots of a ':' come out as one box or none -- the two-component rule was never shown two components. Logged "untested at the
+segmenter's default" (not a design negative); one further attempt changing that one knob is MARKS-DEV2b. Openings: eval 0, dev 1 (script).
+
+## MARKS-DEV2b The same ':' rule on raw components (TXE2-MARKS2; Opus 5.5; cap 3; box 40 min; read-free; rule 3's second attempt, the one knob the first run diagnosed)
+Nearest prior: MARKS-DEV2 (above), OL1-BOXES (the recipe), X19 (blanket flags, retired). What is different: components from
+`tools/glyph_atlas.py segment --merge-vgap 0.0 --min-area 0.03` (no merge; sides down to 0.03 x the median height kept), everything else
+byte-identical to MARKS-DEV2 (rule.py, score.py, the mapping by x-order, recall/precision against the 84 ':' truth positions by script, lift
+vs 200 within-line shuffles, the doubt list). The candidate pool is reported first (boxes, boxes under 0.35 x median, stacked pairs) so a
+third empty run is visible as the tool's limit. Gate as MARKS-DEV2 (recall >= 0.70 at precision >= 0.50 AND lift > null p95 -> candidate
+instrument; else FAIL read-free). A second FAIL retires the two-component rule for this hand under rule 3's third-attempt clause ("untested-
+by-this-tool" if the pool is still empty, a negative if candidates exist and miss); a single-component ':' shape test on merged boxes would
+be a different instrument with its own PREREG. Output benchmark-tx/txeng2/marks2/. Openings: eval 0, dev 1 (script). Cost: MARKS ran 2.24;
+cap 3, box 40, 80% stop 32 min / 2.4.
+
+## TX-RED pass 16 answers (lane, 03:3x UTC 10 Oct by date -u)
+F73 adopted: the owner paragraph's Groen sentence gains "it could only confirm, never contradict, so the other 98 stay doubtful"; the
+orchestrator's line is theirs (told). F74 verified: the row-11 note was corrected in c29543f04 (02:54:18); grep for the stale hash finds only
+the dated note that names it as the pre-flag build. F75 adopted for the next build (piles named by geometry: "box" / "small box under 0.35 x
+the line height"); the three published pages are not rebuilt mid-L74 unless the orchestrator says the owner has not started (offered). F76
+adopted: (i) and (ii) are in SHEET-VIV's RESULTS and the result line above; (iii) SHEET-VIV-C is the same-protocol replicate, then the
+second hand. F77: the claims (02:59-03:00) follow the addenda commit (02:54:18) in history, and TXE2-SHEETVIV's reader_task.txt was committed
+(a1635d222) before its first read, per its RESULTS step 1.
+
+Costs this check-in: TXE2-SHEETVIVC 22, TXE2-MARKS2 3. Eval looks: 0. S2 looks: 1. Openings: SHEET-VIV-C 0 eval / 1 dev; MARKS-DEV2b 0 / 1.

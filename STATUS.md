@@ -8355,3 +8355,13 @@ truth, record on CA-S2, -w beside); F71 adopted (PREREG in its own commit, hash 
 the pictured SH-VIV sheet in DV1b's recipe on dev2, line-level gate, power clean 1.000 / noisy0.1 0.871 at E 84) and MARKS-DEV2 (TXE2-MARKS, cap 4:
 the ':' mark detector's read-free half) spawned. BENCHMARK-TX row 11's stale sha note corrected (truth untouched). Workers live 3 / slots free 4;
 eval looks 0; S2 look 1; openings this incarnation 1 (the -w re-score); register regenerated.
+03:0x-03:3x (check-in 2): the orchestrator's decisions of 03:0x on file (comparison mask of record = confirm2-w; per-hand oracle pages published as
+each passes; SHEET-VIV and MARKS run). TXE2-OL1PAGE (2.81 D): stopped at 6.9% as the amendment required, then per-hand pages PASS the plain
+preflight (vivonne 2.0%, birago 4.1%, luzerne 2.7% with a uniform 4 px pad); published PRIVATE by the orchestrator 03:10, L74 row updated with
+the links; the combined page removed from the tree (in history), folder 30 -> 19 MB. **SHEET-VIV (TXE2-SHEETVIV 14.20 D): dev FAIL as declared,
+every figure the declared way** -- passZ_sv 0.088 (60/679) vs passZ_dv1 0.124; lines 16/8/12 p 0.15 (bar 0.05); edits 80 -> 58 (0.725x);
+McNemar 22/8 p 0.016; single passes 0.077 / 0.074 both line-significant; licenses nothing; F76's replicate question and the [PLAIN:] confound
+-> **SHEET-VIV-C** spawned (TXE2-SHEETVIVC, cap 22: the text-list sheet under SHEET-VIV's protocol, reading declared). MARKS-DEV2 (TXE2-MARKS
+2.24 D): FAIL read-free by the segmenter's default (0 candidates; the two dots fused) -> **MARKS-DEV2b** spawned (TXE2-MARKS2, cap 3: raw
+components, one knob). TX-RED pass 16 F73-F77 answered (owner paragraph clause; F74 verified; F75 next build; F76 adopted; F77 verified).
+Workers live 2 / slots free 5; eval looks 0; S2 look 1; openings this incarnation 1 eval + 2 dev (script); register regenerated.
