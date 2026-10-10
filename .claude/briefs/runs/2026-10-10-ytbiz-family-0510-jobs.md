@@ -100,3 +100,33 @@ Read ONLY NOTES "## OBRED-0259", the folder head (what is established about no. 
    if its help shows a fit; no decode, no key.
 6. NOTES "## OBRED-187", Remaining gaps / Escalation / Verdict, gaps_check.py. If the overlap clears its control, end with one line asking the
    lane for a design_prior / pooled-attack step (do not start it). Report what was found and where it was not found; do not classify novelty.
+
+## Wave 3 result (06:2x UTC)
+OBRED-187 (4.40): 187 = P. Brederode, Stettin, 17 Oct 1604, to the griffier of the States General (M); not printed in Veenendaal II (no.89 -> no.90);
+postscript 59 groups, two blind passes 59/59 (ciphertext_187.tsv, 49 H-read, 10 M); PREREG 774b4ccb1: S = 26 shared values with no. 92 vs uniform
+mean 7.42 / band-matched 8.72 (p = 0.0001 both), negatives p95 8 and 6 -> clears: consistent with one code list (M), not a reading.
+
+## Wave 4 (06:5x UTC 10 Oct)
+
+### OBRED-S1 (Sonnet, cap 3, box 100 min, NA <= 180 requests): inv. 6016 orders 1-259, every unlooked scan
+Read ONLY NOTES "## OBRED-0259", "## OBRED-187" and the gaps. Same sheet method as OBRED-0259 (METS 1 request; IIIF `/full/400,/0/default.jpg`,
+>= 2.0 s apart, NA take/release), now for the 173 scans of 1-259 not yet looked at (all orders not in images/6016_screen_0001_0259.tsv and not
+186-188), 186-188 excluded. Controls on every sheet: CTRL-CIPHER (inv. 2016 scan 31), CTRL-PLAIN (order 261) AND a third, CTRL-PS = a 400 px
+reduction of scan 187 itself (made locally from images/na_101_02_6016_p0187_native.jpg, no request) -- the Dutch three-digit postscript is the
+shape to catch; a sheet where any control is miscalled is re-sheeted. 1200 px re-looks only where a numeral run, table or gloss shows (<= 8).
+Output `images/6016_screen_s1.tsv`; for each hit: docket/date/sender by eye (M) and the 1200 px image committed. No transcription. NOTES
+"## OBRED-S1", gaps updated, gaps_check. Report counts and every hit; where it was not found.
+
+### OBRED-DP (Opus, cap 3, box 75 min, disk + huygens <= 15 requests): pooled structure of no. 92 + the 187 postscript, and a print check
+Read ONLY NOTES head (no. 92 established facts), "## OBRED-187", ciphertext.txt, ciphertext_187.tsv, obred187/. No decode claims, no key.
+1. Print check for a period decipherment (huygens take/release): Resolutiën der Staten-Generaal (Huygens retroboeken, the volume for 1604-1605)
+   for Brederode's letters of Oct 1604 and Feb 1605 and any "cijfer"/"ontcijferd"/"dechiffr" near them; one positive control query that must hit
+   (e.g. a known Brederode mission entry). Record route, queries, hits.
+2. `python3 tools/design_prior.py` on the pooled tokens (paste command + top lines) and on each text alone.
+3. Structure, script `obred187/structure.py` with `--check`: no. 92's code tokens as runs in clear-text context (run length, preceding/following
+   clear words); 187's runs; shared bigrams/trigrams of code values across the two texts vs a shuffled-order control (order-dependent statistic,
+   so the control can differ -- rule 3); value range per run length (single codes for names vs runs that may spell words/syllables); whether
+   any no. 92 run's context makes a crib (a run standing where a name or number is grammatically required). Write the hypotheses about the
+   design (nomenclator with name codes + a syllable/letter table?) as a ranked list with the test each needs and its matched control.
+4. NOTES "## OBRED-DP", gaps updated, gaps_check. Name the next attack step and its cost; do not start it. Report what was found and where it
+   was not found; do not classify novelty.
