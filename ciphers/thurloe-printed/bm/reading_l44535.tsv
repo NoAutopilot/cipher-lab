@@ -1,7 +1,7 @@
 row	pos	token	meaning	grade
 1	2	104	chst	C
 2	2	112	bruxell	C
-2	3	123	chdglocester	C
+2	3	123	D. Gloucester	C
 2	4	27	g	C
 2	5	56	o	C
 2	6	18	e	C
@@ -54,7 +54,7 @@ row	pos	token	meaning	grade
 6	6	94	y	C
 6	8	16	d	C
 6	9	21	e	C
-6	10	8	b	C
+6	10	8	b	M
 6	11	78	t	C
 6	12	75	s	C
 6	14	17	d	C
@@ -78,7 +78,7 @@ row	pos	token	meaning	grade
 7	12	22	e	C
 7	13	70	r	C
 7	15	80	t	C
-7	16	94	y	C
+7	16	94	y	M
 7	17	18	e	C
 8	1	48	m	C
 8	2	76	s	C
@@ -129,14 +129,14 @@ row	pos	token	meaning	grade
 12	11	88	w	C
 12	12	35	i	C
 12	13	44	l	C
-12	14	48	m	C
-12	15	20	e	C
-12	16	63	p	C
+12	14	48	m	M
+12	15	20	e	M
+12	16	63	p	M
 12	17	45	l	C
 12	18	46	l	C
 12	19	59	o	C
 12	20	86	w	C
-13	2	54	n	C
+13	2	54	n	M
 13	3	4	a	C
 13	4	55	n	C
 13	5	96	y	C

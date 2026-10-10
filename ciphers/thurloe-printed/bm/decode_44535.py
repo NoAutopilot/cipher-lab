@@ -7,10 +7,14 @@ python3 decode_44535.py [DJVU] [--check]
 - decode bm/l44535_ciphertext.tsv -> bm/reading_l44535.tsv (per token, grade) and bm/reading_l44535.txt.
 - control (needs DJVU, the bim_ vol 6 djvu text): English 4-gram score of the decode's letter stream vs 200 shuffled-key decodes;
   corpus = vol 6 OCR lines with no digit, outside the Blank-Marshall windows (bm/bm_letters.tsv). Writes bm/control_l44535.tsv.
+- FIX-THURBM (10 Oct 2026): LABELS relabels key codes after the alignment (123 = D. Gloucester, both glossed witnesses); slips.tsv
+  regrades single groups of this letter to M (row, pos, grade, note, intended word shown in brackets after word_end); clear_rows.tsv
+  restores the clear-text rows that carry no group (after_row, after_pos, text), taken from the page by V-THURBM's eye check.
 --check: recompute and exit 1 if any committed output differs (the control is skipped and not compared when DJVU is absent).
 """
 import csv, math, os, random, subprocess, sys, tempfile, collections
 H = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.abspath(os.path.join(H, '..', '..', '..'))
+LABELS = {123: 'D. Gloucester'}
 LETTERS = ['l40469', 'l65889', 'l77385', 'l89881']
 sys.path.insert(0, H)
 def norm(s):
@@ -36,17 +40,32 @@ def build():
             key[v] = (m1[0], 'C'); rows.append(f'{v}\t{m1[0]}\t{kind}\t{m1[1]}\t{m2[1]}\tC\tBirch 1742 vol 6 printed gloss, both blind passes agree')
         else:
             key[v] = (m1[0] or m2[0], 'M'); rows.append(f'{v}\t{m1[0]}|{m2[0]}\t{kind}\t{m1[1]}\t{m2[1]}\tM\tB1|B2 meanings differ or one pass lacks the code')
+    for v, lab in LABELS.items():
+        if v in key:
+            key[v] = (lab, key[v][1]); rows = [('\t'.join([r.split('\t')[0], lab] + r.split('\t')[2:]) if r.split('\t')[0] == str(v) else r) for r in rows]
     return key, '\n'.join(rows) + '\n'
 
+def tsv_rows(name):
+    p = os.path.join(H, name)
+    return list(csv.DictReader(open(p), delimiter='\t')) if os.path.exists(p) else []
+
 def decode(key, toks):
+    slips = {(r['row'], r['pos']): r for r in tsv_rows('slips.tsv')}
+    after = {}
+    for r in tsv_rows('clear_rows.tsv'): after.setdefault((r['after_row'], r['after_pos']), []).append(r['text'])
+    ends = {(r['word_end_row'], r['word_end_pos']): r['intended'] for r in slips.values() if r.get('intended')}
     out, tsv = [], ['row\tpos\ttoken\tmeaning\tgrade']
     for r in toks:
         if r['kind'] != 'N':
-            out.append(r['token']); continue
+            out.append(r['token']); out.extend(after.get((r['row'], r['pos']), [])); continue
         v = int(r['token']) if r['token'].isdigit() else None
         m, g = key.get(v, ('[' + r['token'] + ']', 'unread'))
+        sl = slips.get((r['row'], r['pos']))
+        if sl: g = sl['grade']
         tsv.append(f"{r['row']}\t{r['pos']}\t{r['token']}\t{m}\t{g}")
-        out.append(m.upper() if v is not None and v < 100 and g != 'unread' else '<' + m + '>')
+        out.append(m.upper() if v is not None and v < 100 and g not in ('unread', 'M') else (m if g == 'M' and v is not None and v < 100 else '<' + m + '>'))
+        if (r['row'], r['pos']) in ends: out.append('[' + ends[(r['row'], r['pos'])] + ']')
+        out.extend(after.get((r['row'], r['pos']), []))
     return '\n'.join(tsv) + '\n', out
 
 def stream(key, toks):
@@ -84,7 +103,8 @@ def main():
     toks = list(csv.DictReader(open(os.path.join(H, 'l44535_ciphertext.tsv')), delimiter='\t'))
     tsv, out = decode(key, toks)
     N = [r for r in toks if r['kind'] == 'N']
-    g = collections.Counter(key.get(int(r['token']), ('', 'unread'))[1] for r in N)
+    sg = {(r['row'], r['pos']): r['grade'] for r in tsv_rows('slips.tsv')}
+    g = collections.Counter(sg.get((r['row'], r['pos'])) or key.get(int(r['token']), ('', 'unread'))[1] for r in N)
     summ = f"groups {len(N)}; C {g['C']}; M {g['M']}; unread {g['unread']}; coverage {(g['C']+g['M'])/len(N):.3f}\n"
     txt = ' '.join(out) + '\n\n' + summ
     outs = {'key_blankmarshall.tsv': keytxt, 'reading_l44535.tsv': tsv, 'reading_l44535.txt': txt}

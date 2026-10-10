@@ -1296,3 +1296,23 @@ Two file-level corrections listed in 2a (reading .txt omits clear rows; code 123
 changes any value used in l.44535, this section, the status.json row and SO-THURLOE-BM44535 must be updated together.
 SECOND-OPINIONS-QUEUE.tsv row SO-THURLOE-BM44535 filed (prompt `second-opinions/PROMPT-chatgpt-bm44535.md`); WORK-QUEUE.tsv row
 AUD2-FAMILY-A2r-1 (account-3) filed for the second adversarial audit.
+
+## Revision after AUDIT (FIX-THURBM, 10 Oct 2026; rule 10 propagation)
+
+Applies the "Corrections to the solver's files" (i) and (ii) of "## AUDIT (V-THURBM, l.44535)" and THUR-BM2's proposed FIX list items 1, 2, 3 and
+6 (NOTES "## THUR-BM2 proposed FIX list"), using V-THURBM's eye check (151/151 groups = print); items 4, 5 and 7 need no change. No new search,
+no new class: **N3, key period, one audit, unchanged.**
+- Reading: `bm/decode_44535.py --check` exit 0. `bm/reading_l44535.txt` now keeps the clear rows that carry no group ("But will first come hither.
+  But truly I am partly confident he will give us the", "for he is not", from `bm/clear_rows.tsv`); the first and last clear rows of the page
+  without groups are still not in the disk transcription. Key code 123 is labelled "D. Gloucester" (`LABELS` in the decode script).
+- Grades (rule 4), group level: **C 145, M 6, unread 0** (was C 151). M: 94 in "tyemselues" (row 7 pos 16), 48 20 63 in "mepllow" (row 12 pos
+  14-16), 54 in "nany" (row 13 pos 2), code 8 in "debts" (row 6 pos 10; `bm/slips.tsv`). Intended words in brackets are I: themselues, many;
+  "follow?" unsettled. "preuennted" (52 52) and "dew heeret" (80) stay C at group level, their intended words I (no change).
+- Depth: 143 of 151 groups (**94.7%**; was 95.4%) are C and give the intended letter (the 145 C groups less the 52-52 and 80 slips).
+  `tools/depth_check.py` after the edit: "unique solves (N3+ and D2+): 185 -- D4 5, D3 130, D2 50; not counted D0/D1: 19; legacy ungraded: 0"
+  (exit 0); the entry stays **D3**. Outward wording: "largely deciphered (about 95%)".
+- Safe sentence: unchanged in meaning ("all 151 groups decode, five words carrying slips in the printed cipher"); read it with the grades above:
+  145 groups at C and 6 at M. Unsafe sentence unchanged.
+- Propagated: status.json (completeness, unresolved_spans, reading_version, depth_pct, depth_note); `second-opinions/PROMPT-chatgpt-bm44535.md`
+  (grade sentence added; SO-THURLOE-BM44535 row quotes no counts); WORK-QUEUE row AUD2-FAMILY-A2r-1 quotes no counts and still points the second
+  auditor at the THUR-BM2 FIX list (now applied, NOTES "## FIX-THURBM").

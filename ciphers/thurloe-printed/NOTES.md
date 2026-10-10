@@ -3176,3 +3176,28 @@ Read so far: l.44535 151 of 151 groups decoded at C (100%) from the four-letter 
 - [ ] image-check: the l.44535 slip groups and code 8 on their crops
 - [x] retry: none needed (no 429/403)
 Verdict: keep going: 3 internal gaps; cheapest next: after V-THURBM, eye check of l.44535 rows 6, 7, 13 and code 8, ~$1
+
+## FIX-THURBM (LANE FAMILY-A2r, account 2, worker Sonnet, 10 Oct 2026 15:51-16:0x UTC by date -u)
+Applied V-THURBM's file corrections (i), (ii) and THUR-BM2's FIX items 1, 2, 3, 6 to l.44535 (AUDIT.md "## Revision after AUDIT (FIX-THURBM, 10 Oct 2026; rule 10 propagation)"). Disk only, no image fetched.
+- `bm/decode_44535.py` gains `LABELS` (123 = D. Gloucester), `bm/slips.tsv` (group-level regrades with the intended word in brackets, I) and `bm/clear_rows.tsv` (the two clear rows without groups); `--check` exit 0, all four outputs regenerated.
+- Grades, rule 4 (group level): **C 145, M 6, unread 0** (was C 151). M = 94 in tyemselues, 48 20 63 in mepllow, 54 in nany, code 8 in debts. No H (period key rebuilt from print), no S.
+- Items 4 (52 52), 5 (80), 7 (code 9 not in this letter) unchanged. Depth 143/151 = 94.7% (was 95.4%), D3 per `tools/depth_check.py` (exit 0). status.json and PROMPT-chatgpt-bm44535.md updated; SO row and AUD2-FAMILY-A2r-1 quote no counts.
+**Where it was not found.** The page's first and last clear rows (before "occasion", after "AWAY ... PREUEN[N]TED") are not in the disk transcription and not restored; code 8's occurrences in ll.3370, 77385, 89881 were not eye-checked for 8/3/18 confusions; no new search, no N-class change (N3).
+
+## Remaining gaps (FIX-THURBM, 10 Oct 2026; replaces the THUR-BM2 list for l.44535)
+Read so far: l.44535 145 of 151 groups at C (96.0%), 6 at M; 143 of 151 (94.7%) give the intended letter.
+- Second adversarial audit of l.44535 - blocker: waiting-on the AUD2-FAMILY-A2r-1 auditor's reply (WORK-QUEUE.tsv row, claimed); two hats, a solver may not audit
+- Code 8 in ll.3370, 77385, 89881 (8/3/18 confusions) and the 113/173 Ormond conflict - blocker: not-attempted; outside the FIX brief's no-new-image rule; next: eye-check those groups on their crops against key_blankmarshall_7.tsv, ~$1
+- l.3370 word-code pairing (codes 109-191, 481, 733) - blocker: not-attempted; the aligner's chunks for single-occurrence word codes are fragments; next: hand-pair l.3370's name glosses to their code groups, ~$1
+- Jephson (ll.65973, 76999, 86578) and Meadowe (l.75081) glossed letters - blocker: not-attempted; unchanged since THUR-V6; next: align as one Jephson pool and one Meadowe item, ~$2
+- The vol 6 Downing-Lockhart and vol 4 Blake control-miss letters - blocker: not-attempted; unchanged since THUR-B146; next: align as key_blake/key_lockhart pool extensions, ~$1.5
+
+## Escalation (FIX-THURBM, 10 Oct 2026)
+- [x] siblings: seven Blank-Marshall letters aligned (THUR-BM2)
+- [x] clear-pages: l.44535 clear rows named by V-THURBM restored
+- [x] known-keys: Tomokiyo's BL Add MS 4166 f.117 named by V-THURBM, not compared value by value (second audit)
+- [x] print: Birch's gloss is the key source
+- [x] key-rebuild: gate7 PASS
+- [ ] image-check: code 8 in ll.3370, 77385, 89881
+- [x] retry: none needed
+Verdict: keep going: 4 internal gaps; cheapest next: code 8 eye check on three crops, ~$1

@@ -14847,17 +14847,17 @@
       "phrases": [
         "Birch 1742 vol 6 p.374, l.44535, Blank Marshall"
       ],
-      "completeness": "151/151 groups C at face value; 144/151 give the intended letter (7 slip groups I/M)",
-      "unresolved_spans": "'mepllow' (48 20 63 printed; follow?) unsettled; slips tyemselues, nany, preuennted, dew heeret graded I",
+      "completeness": "145/151 groups C, 6 M (5 slip groups + code 8 in debts) at face value; 143/151 C groups give the intended letter (2 further C groups are encipherer slips, intended letter I)",
+      "unresolved_spans": "'mepllow' (48 20 63 printed; follow?) unsettled, groups graded M; tyemselues (94) and nany (54) groups graded M, intended word I; preuennted (52 52) and dew heeret (80) slips intended word I",
       "audit_refs": [
         "AUDIT.md '## AUDIT (V-THURBM, l.44535)'"
       ],
       "audit_status": "one audit",
       "superseded_by": "",
       "fields_source": "thurloe-printed/AUDIT.md '## AUDIT (V-THURBM, l.44535)' sections 3-3a",
-      "reading_version": "THUR-BM 10 Oct 2026 (bm/decode_44535.py --check, commit bd6d47855), clear rows restored in AUDIT; THUR-BM2 FIX list pending (rule 10 propagation if applied)",
+      "reading_version": "FIX-THURBM 10 Oct 2026 (bm/decode_44535.py --check exit 0 with bm/slips.tsv and bm/clear_rows.tsv; clear rows restored in bm/reading_l44535.txt; THUR-BM2 FIX items 1, 2, 3, 6 applied, 4, 5, 7 no change)",
       "depth": "D3",
-      "depth_pct": 95.4,
+      "depth_pct": 94.7,
       "decode_status": "Partially decrypted",
       "depth_unread": {
         "names_codes": "0",
@@ -14867,7 +14867,7 @@
       "depth_check": "print-gloss key gated leave-one-letter-out (PREREG-THURBM, PASS both blind passes, pooled 0.871/0.861); shuffled-key 4-gram control on l.44535 -1.007 vs p95 -1.431; decoded words complete the clear sentences at every group; external: Birch vol 6 intelligence letter of June 1657 (Gloucester a volunteer with Caracena for the summer)",
       "depth_by": "V-THURBM verifier (account 2)",
       "depth_date": "10 Oct 2026",
-      "depth_note": "group values 151/151 C; 7 slip groups in the printed cipher (eye-checked) give I/M intended letters; not D4 (inferred letters, re-derivation by a session that had seen the reading)",
+      "depth_note": "group values 145 C + 6 M of 151 (slip groups tyemselues 94, mepllow 48 20 63, nany 54 and code 8 in debts graded M, FIX-THURBM 10 Oct 2026); 143/151 C groups give the intended letter (preuennted 52 52 and dew heeret 80 stay C at group level, intended letter I); not D4 (inferred letters, re-derivation by a session that had seen the reading)",
       "gap": "N3 one audit (V-THURBM, 10 Oct 2026): not read -- Akkerman 2018 pp.222-223, Firth, Underdown, BHO, Bodleian MS. Rawl. A.; Tomokiyo's figure and BL Add MS 4166 f.117 not compared value by value (113/173 Ormond conflict, not in this letter); JSTOR rows queued; second audit AUD2-FAMILY-A2r-1"
     },
     {

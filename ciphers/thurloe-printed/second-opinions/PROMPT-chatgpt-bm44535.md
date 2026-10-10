@@ -16,7 +16,7 @@ THE ITEM
   he will give us the SLIP that are here; for he is not ABLE to PAY the DEBTS, that is DEW HEERE[T], that most of THEM that ARE
   HEER must and will shift for T[H]EMSELUES; yet [Hyde], and some few of [Charles Stuart] his SERUANTS stayes to FACE it OUT
   just as they did AT CULLOINE. ... them that comes AWAY. SAYS that the REST WIL MEPLLOW [follow?] and truly I think [M]ANY
-  will, if not PREUEN[N]TED." Five words carry slips that are in the printed cipher itself (checked on the page image).
+  will, if not PREUEN[N]TED." Five words carry slips that are in the printed cipher itself (checked on the page image). Grades after FIX-THURBM (10 Oct 2026): 145 of the 151 groups are graded C and 6 M (the groups of tyemselues, mepllow and nany, and code 8 in DEBTS); the key code 123 is the Duke of Gloucester.
 - Key: rebuilt from Birch's own printed decipherments of four other Blank Marshall letters in the same volume (pp.338, 550,
   645-646, 756). The cipher system is already known: Satoshi Tomokiyo reconstructs it (cryptiana.web.fc2.com/code/thurloe.htm,
   section "Blank Marshall (1656-1658)") and names the period key, British Library Add MS 4166 f.117 (DECODE record 4897).
