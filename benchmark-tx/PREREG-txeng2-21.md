@@ -225,3 +225,17 @@ fails on shape after the rules, the worker STOPS and reports the residual by cla
 is touched; the lane and the orchestrator decide the next rule in a further dated line. Everything else in OL1-PAGE (read-free, no
 publish, RESULTS section, "Openings 0", cap 4, box 45) stands. Published only by the orchestrator after a ROOM line carrying "preflight:
 PASS" with the five check lines.
+
+## OL1-PAGE, the next rule (lane, 10 Oct 2026 03:0x UTC by date -u; after TXE2-OL1PAGE's STOP at 6.9% (92 of 1,329; ba4e26349) under the amendment; the gate untouched)
+Residual by class (the worker's table, oracle1/RESULTS.md "## OL1-PAGE"): wide 44 -- 43 of them under 2.5x their OWN hand's median width and
+flagged only because the gate pools one median (41 px) across three hands whose medians are 51, 65 and 11 px; strip-height 9 -- all
+sign+mark unions (6 vivonne, 3 birago); ink over 60% 46 -- 31 on luzerne (median sign width 11 px: a dense glyph fills its box), 11 birago,
+4 vivonne, 13 of the 46 over only by the gate's embedded-JPEG measure. Rule, declared now: (1) ONE SORTER PAGE PER HAND (three pages:
+oracle_boxes_vivonne.html, oracle_boxes_birago.html, oracle_boxes_luzerne.html, each with its own data JSON, pages.json, cipher_lines.tsv,
+focus) -- the gate's median is then the hand's own, which is what the gate's docstring means by "the median sign width" (a single letter's
+page); the owner also works one hand at a time, as L74 times the first 100 signs; (2) on the luzerne page only, every box (not a selected
+subset) is padded uniformly by 4 px a side before the tile is cut and measured -- a presentation parameter for an 11-px hand, declared for
+the whole page, never applied to flagged tiles alone; (3) the plain `tools/sorter_preflight.py` is run on each page; a page that PASSES is
+posted in ROOM with its five check lines and "preflight: PASS" for the orchestrator to publish; a page that still FAILS is WITHHELD and its
+residual reported by class -- it is not forced through, and no further rule is written in this line. Expected from the worker's own counts
+(per-hand medians, no pad): vivonne about 11 of 541 (2.0%), birago about 14 of 343 (4.1%), luzerne 31 of 445 (7.0%) before the pad.
