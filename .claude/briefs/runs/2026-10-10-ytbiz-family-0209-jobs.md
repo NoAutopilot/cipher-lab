@@ -98,3 +98,29 @@ Crops as AM-D1411P5 (pasted commands, crops committed), two blind Sonnet passes 
 tools/reconcile_passes.py, one reconciliation unit. Score; an S grade only on a registered PASS on independent (unmasked) numerals that also
 reaches the leaf's own gloss coverage (the AM-D1411V bar). NOTES "## D1411-P6", Remaining gaps/Escalation, gaps_check.py. If p.6 PASSes, end
 with one line asking the lane for a verifier. Report what was found and where it was not found; do not classify novelty.
+
+## Wave 3 (03:1x UTC 10 Oct)
+Wave 2: OLD-WB WB S share 0.448 rank 1/120, longest stretch 17 = sign-agreement ceiling < 24.2; OBRED-6016 0 cipher in 92 scans (orders
+351-624, stride 3); D1411-P6 stopped on the orchestrator's brief error (relative --fetch name -> 404), PREREG + score_p6.py on main (b42c67c7d).
+Hosts this wave: de-crypt.org (D1411-P6b only, ONE browser login). V-OLD-O5 disk only.
+
+### D1411-P6b (Opus worker, Sonnet subagents, cap 5.5, box 100 min, ONE DECODE login): decode-1411-hhsta-vienna-1600 p.6 numerals, resumed
+As "### D1411-P6" above, resumed from NOTES "## D1411-P6 step" (~line 817): the PREREG (d1411p6/PREREG-D1411P6.md) and score_p6.py are
+already on main -- do NOT rewrite them; re-run the scorer on p.5 and reproduce 0.5882 first. Fetch with the ABSOLUTE filesrv URL:
+`NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 1411 <scratch> --fetch 'https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1411_I6600_P6.png' --max-files 1`
+and check the saved file is a real PNG (not the forbidden.png placeholder, sha1 035489a0...; compare images/manifest.json's sha1 for P6 if
+listed). If that one login does not yield the image, stop: one ROOM flag, no second login. Then crops, two blind Sonnet passes, reconcile,
+score exactly as registered. NOTES "## D1411-P6b", Remaining gaps/Escalation, gaps_check.py. A PASS that also reaches the gloss coverage bar ->
+one line asking the lane for a verifier. Report what was found and where it was not found; do not classify novelty.
+
+### V-OLD-O5 (Opus, verifier, cap 3.5, box 60 min, disk only): na-oldenbarnevelt-2442-1605 leaves 4/5/7 re-grade after OLD-O2 and OLD-WB
+Step (o5). A verifier session: you did not produce these readings. CLAUDE.md "Verifier brief (template)" steps 3a-5 only (the novelty search for
+this letter is on file in AUDIT 3/4; do not redo it unless a reading changed in a way that adds a phrase -- then a phrase search on the new
+words). Read AUDIT.md "AUDIT 3", "AUDIT 4", NOTES sections 24 (OLD-O2) and 25 (OLD-WB) and both PREREGs. (1) Re-derive: run the folder's
+decode `--check` and OLD-WB's scorer; confirm the S shares and the 17-digit stretch independently (your own short script is fine). (2) Eye-check
+20 S-graded words on the masked crops, chosen by a fixed rule you write down first (e.g. every 8th S word). (3) Depth under
+.claude/briefs/runs/2026-10-08-acct3-depth-bar.md: does any clause (a stretch above the AD, a code value reading in two contexts) now hold?
+Give depth_pct and D-level with the check used. (4) Write AUDIT.md "## AUDIT 6 (V-OLD-O5)" with N-class carried (or changed, with reason), key
+`ours`, depth, one safe and one unsafe sentence, and carry any change into status.json's row and the SO-OLDEN-2442-L457 SECOND-OPINIONS-QUEUE
+row (rule 10 propagation). If N3+ and D2+, add the WORK-QUEUE row AUD2-FAMILYA2N-1 for a second audit on account 3 (lane-common-blast
+"Results"). Rule 10 wording only.
