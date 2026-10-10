@@ -5231,3 +5231,11 @@ Read so far: 9 of 9 rows handled (5 filed, 4 step-0 hits not filed); 2 of the 5 
 - [ ] image-check: no leaf opened (see gaps).
 - [n/a] retry: no retry needed.
 Verdict: keep going: 4 internal gaps; cheapest next: the Grant Papers date pass for the three unlocated rows and the leaf check, ~$1
+
+## FV-N2e (first audit of N2-IA IB IC ID IG IH, 10 Oct 2026, account 1)
+First audit in AUDIT.md "## AUDIT (FV-N2e)" (05:18-05:3x UTC by `date -u`). Step-0 ruling: IB, ID, IG hit (body known in the holder transcription, N1);
+IA, IC, IH miss. G3 phrase search found IA and IH printed word for word in The Papers of Ulysses S. Grant vol. 10 and IB in vol. 12 (N1; N2R-4's "not
+located" rested on be-api 502s). N2-IC (Meigs to Canby, 7 June 1864, the Vicksburg and Monroe railroad gauge) N3 D3, not located; SO-ECKERT-N2-IC and
+WORK-QUEUE AUD2-LEDGER10-4 queued. For a FIX job (AUDIT (FV-N2e) s.2, not edited into the reading): IG 'Bear mew day Douglas' = Bermuda Hundred (not
+Bridgeport); IB 'Shelby' = shall be (not Harbor), '[1]' = first; IC 'rebellion' plain (not Importance), report-date numerals M; ID 'Weldon'/'McCallum'
+are plain hotels/George(town). The N2R-4 gap "6 unlocated rows" is closed by this audit for all six. for LANE LEDGER-10 (account 1)

@@ -15564,3 +15564,100 @@ Controls:
 
 Postmortem: the first audits of these entries applied step 0 as "is the holder copy a clear copy" (code words decoded in the transcription); the
 ruling asks the narrower question "is the body's wording already public in order", which these mostly-plain ledger telegrams almost always answer yes.
+
+## AUDIT (FV-N2e)
+
+Verifier FV-N2e (account 1, for LANE LEDGER-10), 10 Oct 2026, 05:18-05:3x UTC by `date -u`; a separate session from the reader N2R-4 and from every other
+first verifier, not protecting the reader's conclusions. Scope: first audits of **N2-IA** (9701/0), **N2-IB** (9850/1), **N2-IC** (9755/0), **N2-ID**
+(9898/2), **N2-IG** (9906/0), **N2-IH** (9739/2) in `ciphertext-no2.txt` (Cipher No. 2; Washington sent ledger mssEC 18 = Huntington object 10074). Nothing
+decoded beyond key look-ups in key-no2.md. Key source for all six: `period`. `decode_no2.py --check` current (exit 0, 05:2x). No spec for eckert-1864, so
+`judge_plaintext.py` was not run. Intake gate (05:1x): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+Scripts: `ms18/fv_n2e_step0.py` (+ `.out`), `ms18/fv_n2e_hdl.py` (+ `.out`), `ms18/fv_n2e_hdl2.py` (+ `.out`), `ms18/fv_n2e_gb.py` (+ `.out`). OR djvu texts
+and the two leaf images to scratch, not committed.
+
+### 0. Step-0 ruling (Wave 3, orchestrator 05:1x 10 Oct), from disk
+`ms18/fv_n2e_step0.py`: (a) LCS of content words (stop words dropped, one case, digits as words) between the decoded body of reading-no2.md (header markup and
+the tail's unbracketed check words dropped) and the holder transcription of the entry's own lines (N2R-4's blocks in `ms18/n2r4_entries.txt`, each line checked
+to be in sources/mssEC18/p<pointer>.json: True for all six); (b) the same against the entry's transcription words shuffled, 20 draws, p95; (c) decoded content
+words absent from the transcription.
+| ID | pointer | (a) ordered | (b) shuffle p95 | hit | (c) key-dependent words (by hand, decoder misreads of plain words removed) |
+|---|---|---|---|---|---|
+| N2-IA | 9701 | 0.385 (15/39) | 0.205 | no | (23) Grant, Maryland, Infantry, Regiment, 12 Corps, Slocum, Baltimore, Troops from the West, West Virginia, Transportation, Burnside, Battery, Army of the Potomac, Halleck |
+| N2-IB | 9850 | 0.575 (23/40) | 0.225 | **yes** | Grant, important, Heintzelman (twice), Rosecrans, Hooker, Major General, Secretary of War ('Harbor' is a misread, see s.2) |
+| N2-IC | 9755 | 0.444 (16/36) | 0.250 | no | (16) Washington, Canby, of the, Vicksburg (twice), Railroad, Report (twice), the report-date numerals, 74, a (quarter), miles, Quartermaster General |
+| N2-ID | 9898 | 0.625 (25/40) | 0.250 | **yes** | 23 (day), Colonel, city (twice), 21 (St), Pennsylvania (Ave), Captain, commanding ('Weldon' for 'hotels' and 'McCallum' for 'George' are decoder misreads of plain words: the reader's own prose reads 'hotels', 'Georgetown') |
+| N2-IG | 9906 | 0.500 (14/28) | 0.250 | **yes** | Grant, will be, Hundred ('Bear mew day Douglas' = Ber-mu-da Hundred, s.2), Monroe, General (Rucker), to-day, 3 PM, Brig. General, Quartermaster |
+| N2-IH | 9739 | 0.393 (11/28) | 0.250 | no | (17) May 19, Grant, commands (twice), departments, of the, Arkansas, Banks, Reynolds, tomorrow, Dana |
+Hits: IB, ID, IG -> body known in the holder transcription (N1, key `period`, `text: known`); counted contribution only for the (c) words. Misses: IA, IC, IH
+-> full first audit below. All three misses turned out to be printed or not by G3 (s.1), which the step-0 test cannot see.
+
+### 1. Search log (prior-work step, one line per check)
+- own work: pointers grepped in ciphertext*.txt / NOTES.md / AUDIT.md (N2R-4's line holds; 9759 = E379 and N2-IE are other entries of other leaves); no live ROOM claim.
+- holder clear copy (all-pointer CONTENTdm, p16003coll11, CISOSEARCHALL 3 words, `ms18/fv_n2e_hdl.out`; positive controls 'Veteran detained purpose' -> 9701,
+  'Shreveport grading Directors' -> 9755, 'combined Gulf duty' -> 9739, all three returned their own row): IA 'Maryland veteran regiment' 0, 'Slocum Baltimore
+  veteran' 0; IC 'Vicksburg Monroe gauge' 0, 'Vicksburg Monroe railroad' -> 2696 (Dix, Fort Monroe 1863, unrelated), 4681 (Canby to Halleck 28 May 1864,
+  troops), **10383** (HdQrs Div. of West Miss., Vicksburg 28 May 1864, received 3 June 11.50 am, Canby to the Quartermaster General: the reconstruction of the
+  railroad from Vicksburg to Shreveport, 148 miles; 'the road to Monroe fifty two miles has been in operation ... the remainder has been graded') -- the
+  letter N2-IC answers, not a copy of it; IH 'Canby Hurlbut Reynolds' 0, 'Banks Reynolds relieved' -> 10284, 10286 (Grant to Halleck 29-30 Apr on the
+  trans-Mississippi command; context, not copies). No clear copy of IA, IC, IH. 14 requests, take/release posted.
+- OR by date + both correspondents (IA djvu texts to scratch): IA OR I/33 (warofrebellion33unit) 8-10 Apr and 'detained in Baltimore', '3d Maryland',
+  'another battery': 0 (the 9 Apr dispatches printed are Grant, Hunt, Williams, Humphreys, Sheridan). IC OR I/34 pts 3-4 (013403/013404rootrich) 6-8 June
+  and 'gauge', 'no grading', 'Vicksburg to Monroe', '74': not printed; context printed: Meigs to Canby 17 June 1.30 p.m., I/34 pt 4 pp.424-425 ('I have
+  telegraphed you twice to inform me of the gauge'), Canby to the QMG 24 June (p.523), Meigs to Bailey 29 June (p.586, Grant decides not to repair). IH OR I/36
+  pt 2 (warofrebellion362unit) 18-20 May (Halleck to Grant 19 May 10 p.m. is a different text), I/34 pts 3-4 'Reynolds' with Banks/Canby/Hurlbut: not printed;
+  context: Grant to Halleck 29-30 Apr (I/34 pt 3 pp.253, 332).
+- Grant Papers via IA be-api (papersofulyssess0010gran): HTTP 502 on three quoted queries and JSON errors on three unquoted ones, 05:2x; one retry not made
+  (replaced by Google Books, below). Unreachable.
+- **G3 decoded-phrase pass (Google Books API, country=US, `ms18/fv_n2e_gb.out`, 12 queries):**
+  - IA '"detained in Baltimore a few days"' -> **The Papers of Ulysses S. Grant, vol. 10 (January 1-May 31, 1864), ed. J. Y. Simon** (Google Books
+    7DAAxfRuXKoC, PARTIAL, ISBN 0809309807; also mD4fAQAAMAAJ, NO_PAGES): '... detained in Baltimore a few days for a special purpose. If it is intended to
+    bring more troops from the west here or to West Virginia, it would save transportation to take this one. Genl ...' -- the decoded text word for word. Page not given by the snippet.
+  - IH '"Canby and not Hurlbut"' -> the same volume: '... Canby and not Hurlbut who commands the combined departments of the Gulf & Arkansas. Hurlbut is not on
+    duty. Banks is to be relieved & Reynolds appointed to command the department. The or[der] ...' -- word for word. Page not given.
+  - IB '"vacant major-generalship for Crook"' -> **The Papers of Ulysses S. Grant, vol. 12** (5euuFDTkXacC, PARTIAL): '... vacant Major Generalship for Crook
+    but I am disposed to muster out Heintzleman and make a vacancy. Crook shall have the first [t]hat occurs. Duval will shall be appointed promoted immediately.
+    Edwin M Stanton Secy of War' -- the decoded text, with the print's own strike-outs; it names the signer Stanton (decoded 'Secretary of War': agrees).
+  - IC: '"no grading between Monroe and Shreveport"', '"any work has been done upon it since"', '"gauge of the Vicksburg and Monroe"', '"seventy-four and a
+    quarter miles"': no hit on this telegram. ID: '"searched for the man Buyers"', '"21st street and Pennsylvania avenue" Buyers': no hit. IG: '"assembled at
+    Bermuda Hundred instead of"', '"cause General Rucker to be notified"': no hit.
+- Not searched: OR ser. III vol. 4 (QMG), Meigs and Canby papers, NARA RG 92/107, the Washington press of the day, HathiTrust full text, JSTOR (rows not
+  queued: IC is the only N3 item and its second audit carries them); IA leaf, IB/ID/IH leaves not opened (IA, IB, IH are checked by print).
+
+### 2. Leaf check and reading corrections (for a FIX job; not edited into the reading by me)
+Leaves 9755 and 9906 fetched at IIIF 2400 px (scratch) and the entries read against the holder transcription: both word for word as the holder.
+- **N2-IG:** the leaf reads 'as sem bled at Bear mew day Douglas in steady of at Bunyan Stanhope': Bear (= Bridgeport by key-no2.md) here spells the
+  syllable *Ber*, so 'Bear mew day Douglas' = **Bermuda Hundred** (Douglas = 100 -> 'Hundred'), and the clause is 'should they not be assembled at Bermuda
+  Hundred instead of at [Fort] Monroe' -- Ingalls, 5 Dec 1864, on the vessels being made ready (the season of the first Fort Fisher expedition, which sailed
+  from Fort Monroe; this is context, not a check). 'Bridgeport' in reading-no2.md is wrong (I, phonetic reading over the key value).
+- **N2-IC:** 'since this rebellion yardstick' -- 'rebellion' is plain on the leaf; the decoder's '[Importance]' is a misread of a plain word. The span
+  'of Norris Brown January Ludlow Perkins Allen Directors' (decoded '[31] January [79] Directors') is M: a report date ('31 January 18[5]9'?) is likely
+  but not settled. Canby's letter (holder 10383) gives 'the road to Monroe fifty two miles' where N2-IC decodes '74 and a quarter miles from Vicksburg to
+  Monroe': a disagreement on the number, recorded, not resolved (the 52 may be the part in operation).
+- **N2-IB:** 'Crook shall have the [1] that occurs' -- print 'the first'; 'Duval [Harbor] promoted' -- print 'Duval shall be promoted': 'Shelby' is 'shall be'
+  phonetically, not Harbor. **N2-ID:** 'Weldon' and 'McCallum D C' in the decode are plain 'hotels' and 'George' (town) (the reader's prose already reads them so).
+
+### 3. Classification (rule 10) and depth (rule 4a)
+| ID | N-class | key | text | prior print (earliest found) | depth | safe sentence |
+|---|---|---|---|---|---|---|
+| N2-IA | **N1** | period | known | Grant Papers vol. 10, ed. Simon (page not seen) | D1 | Re-read with War Department Cipher No. 2; the telegram (Halleck to Grant, 9 Apr 1864, a veteran Maryland regiment held at Baltimore) is printed in The Papers of Ulysses S. Grant, vol. 10. |
+| N2-IB | **N1** | period | known | Grant Papers vol. 12 (page not seen); body also clear in the holder transcription (step 0) | D1 | Re-read with Cipher No. 2; Stanton's 25 Sept 1864 telegram to Grant on Heintzelman, Hooker and Crook is printed in The Papers of Ulysses S. Grant, vol. 12. |
+| N2-IC | **N3** | period | -- | none located (s.1) | **D3 (about 80%)** | Re-read with Cipher No. 2: on 7 June 1864 Meigs asked Canby the gauge of the Vicksburg and Monroe railroad, said the Directors' report showed no grading between Monroe and Shreveport, and put Vicksburg to Monroe at 74 1/4 miles; no prior print or decipherment located (searched 10 Oct 2026). |
+| N2-ID | **N1** (body); key-only words counted | period | known | none located for the key-only words | D1 | Re-read with Cipher No. 2; the message (Leet to Sharpe, 23 Nov 1864, hotels searched for Buyers) is largely clear in the Huntington's transcription; the key adds 'the corner of 21st Street and Pennsylvania Avenue' and 'Captain' Potts. |
+| N2-IG | **N1** (body); key-only words counted | period | known | none located for the key-only words | D1 | Re-read with Cipher No. 2; Ingalls's 5 Dec 1864 telegram is largely clear in the Huntington's transcription; the key and the spelling give the places, Bermuda Hundred instead of Fort Monroe. |
+| N2-IH | **N1** | period | known | Grant Papers vol. 10 (page not seen) | D1 | Re-read with Cipher No. 2; the 19 May 1864 telegram to Grant (Canby, not Hurlbut, commands the Gulf and Arkansas; Banks to be relieved) is printed in The Papers of Ulysses S. Grant, vol. 10. |
+Unsafe sentences (all six): 'first decipherment', 'previously unread', 'new' or 'unpublished' -- IA, IB and IH are in print word for word; ID and IG are
+public in the holder transcription; IC is N3 only.
+N2-IC depth: 26 code-word tokens as filed; 'rebellion' is plain (25 remain); the five report-date tokens (Norris, Brown, Ludlow, Perkins, Allen) M, the rest
+H: 20/25 = 80%, gaps are numerals. Code clause: 'What is the guage Talbot Hero and Monroe Walnut' = 'What is the gauge of the Vicksburg and Monroe Railroad';
+'It is Prentiss Andrew and Allen quarter Sylvans from Holly to Monroe' = 'It is 74 and a quarter miles from Vicksburg to Monroe'. External, non-statistical:
+Meigs to Canby 17 June 1864 (OR I/34 pt 4 pp.424-425: 'I have telegraphed you twice to inform me of the gauge') and Canby to the QMG 28 May (holder 10383,
+the railroad to Shreveport) fix the sender, the addressee, the subject and the date range. depth_sentence: 'Meigs had asked Canby for the gauge of the
+Vicksburg and Monroe railroad before 17 June 1864, when he wrote that he had telegraphed twice for it (OR I/34 pt 4 pp.424-425).' D3, not D4 (no fresh rule-7
+re-derivation, the date numerals M).
+SO row SO-ECKERT-N2-IC queued; second audit AUD2-LEDGER10 (account-4 tag) queued for N2-IC (N3 D3).
+
+### 4. Postmortem
+N2R-4's 'not located' was wrong for three of six (IA, IB, IH printed in the Grant Papers): the be-api route answered 502 and its Grant Papers search was
+counted as 0; a Google Books phrase query on the decoded wording found all three. Lesson already in the brief (G3 is the filter that works); add: when be-api
+is down, the Grant Papers check is unrun, not 0. Over-claims to correct: none outward; reading-no2.md 'Bridgeport' (IG), '[Harbor]' (IB), '[Importance]' (IC),
+'[Weldon]'/'[McCallum D C]' (ID) for the FIX job. for LANE LEDGER-10 (account 1)

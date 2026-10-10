@@ -13060,6 +13060,257 @@
       "depth_check": "Wave 3 Step-0 ruling: body known in holder transcription; no body code word (date, addressee, signer only) (D1)",
       "depth_note": "10 H, 2 I of 12 code-word groups filed; the 2 I are plain words; body clear in the holder's transcription",
       "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-N2e)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-N2e verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Non-decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-N2e)' section 3",
+      "reading_version": "N2R-4 10 Oct 2026 (reading-no2.md), grades as in AUDIT (FV-N2e) s.3 (decoder misreads pending a FIX job, s.2)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): Halleck to Grant at Culpeper, 9 Apr 1864, 1.30 p.m.: a veteran Maryland regiment of the Twelfth Corps held at Baltimore could go West; Burnside to get another battery (N2-IA)",
+      "line": "Re-read with War Department Cipher No. 2: Halleck's telegram of 9 Apr 1864 to Grant at Culpeper on a veteran Maryland regiment of the Twelfth Corps held at Baltimore. Already printed in The Papers of Ulysses S. Grant, vol. 10 (N1); found by phrase search 10 Oct 2026.",
+      "gap": "N1 one audit (FV-N2e, 10 Oct 2026): printed word for word in Grant Papers vol. 10 (Google Books 7DAAxfRuXKoC; page not seen); step-0 miss 0.385; reader's 'not located' was a be-api 502",
+      "depth": "D1",
+      "completeness": "25 code-word groups H; text printed",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.35, pointer 9701, N2-IA"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.35, pointer 9701, N2-IA",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.35, pointer 9701, N2-IA"
+      ],
+      "depth_sentence": "The telegram is printed in The Papers of Ulysses S. Grant, vol. 10.",
+      "depth_check": "N1: depth limited to a re-decipherment of printed text (D1)",
+      "depth_note": "",
+      "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-N2e)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-N2e verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Non-decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-N2e)' section 3",
+      "reading_version": "N2R-4 10 Oct 2026 (reading-no2.md), grades as in AUDIT (FV-N2e) s.3 (decoder misreads pending a FIX job, s.2)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): Stanton to Grant, 25 Sept 1864: remove Heintzelman and perhaps Rosecrans; Hooker; no vacant major-generalship for Crook; Duval promoted (N2-IB)",
+      "line": "Re-read with War Department Cipher No. 2: Stanton's telegram of 25 Sept 1864 to Grant on Heintzelman, Rosecrans, Hooker, Crook and Duval. Body clear in the Huntington's transcription and printed in The Papers of Ulysses S. Grant, vol. 12 (N1).",
+      "gap": "N1 one audit (FV-N2e, 10 Oct 2026): Step-0 hit 0.575 vs shuffle p95 0.225; printed in Grant Papers vol. 12 (5euuFDTkXacC; page not seen); '[Harbor]' = 'shall be' and '[1]' = 'first' per the print (FIX job)",
+      "depth": "D1",
+      "completeness": "18 code-word groups H, 1 misread (Shelby = shall be); text printed",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.184, pointer 9850, N2-IB"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.184, pointer 9850, N2-IB",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.184, pointer 9850, N2-IB"
+      ],
+      "depth_sentence": "The telegram is printed, signed Edwin M. Stanton, in The Papers of Ulysses S. Grant, vol. 12.",
+      "depth_check": "Wave 3 Step-0 ruling hit and print: D1",
+      "depth_note": "",
+      "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-N2e)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-N2e verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-N2e)' section 3",
+      "reading_version": "N2R-4 10 Oct 2026 (reading-no2.md), grades as in AUDIT (FV-N2e) s.3 (decoder misreads pending a FIX job, s.2)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 80.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): Meigs to Canby, 7 June 1864: the gauge of the Vicksburg and Monroe railroad; no grading between Monroe and Shreveport; 74 1/4 miles Vicksburg to Monroe (N2-IC)",
+      "line": "Re-read with War Department Cipher No. 2: on 7 June 1864 Meigs, Quartermaster General, asked Canby the gauge of the Vicksburg and Monroe railroad, noted that the Directors' report showed no grading between Monroe and Shreveport and put Vicksburg to Monroe at 74 1/4 miles. No prior print or decipherment located (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-N2e, 10 Oct 2026): step-0 miss 0.444 vs p95 0.250; not in OR I/34 pts 3-4 by date; holder 10383 (Canby to the QMG, 28 May) is the letter it answers; Meigs's 17 June telegram (OR I/34 pt 4 pp.424-425) says he had telegraphed twice for the gauge; second audit queued",
+      "depth": "D3",
+      "completeness": "25 code-word groups (1 filed group is plain 'rebellion'): H 20, M 5 (report-date numerals)",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.89, pointer 9755, N2-IC"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.89, pointer 9755, N2-IC",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.89, pointer 9755, N2-IC"
+      ],
+      "depth_sentence": "Meigs had asked Canby for the gauge of the Vicksburg and Monroe railroad before 17 June 1864, when he wrote that he had telegraphed twice for it (OR I/34 pt 4 pp.424-425).",
+      "depth_check": "code clause: What is the guage Talbot Hero and Monroe Walnut = what is the gauge of the Vicksburg and Monroe Railroad; It is Prentiss Andrew and Allen quarter Sylvans from Holly to Monroe = 74 and a quarter miles from Vicksburg to Monroe; external: OR I/34 pt 4 pp.424-425 and holder 10383 (D3)",
+      "depth_note": ""
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-N2e)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-N2e verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Non-decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-N2e)' section 3",
+      "reading_version": "N2R-4 10 Oct 2026 (reading-no2.md), grades as in AUDIT (FV-N2e) s.3 (decoder misreads pending a FIX job, s.2)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): Leet to Sharpe, 23 Nov 1864, 10.30 a.m.: the hotels of Washington and Georgetown searched for the man Buyers (N2-ID)",
+      "line": "Re-read with War Department Cipher No. 2 (the message is largely clear in the Huntington's transcription): Leet told Sharpe the hotels of Washington and Georgetown had been searched for Buyers without result; the key supplies the corner of 21st Street and Pennsylvania Avenue and Captain Potts's rank. Plaintext already public (N1); not located in print (searched 10 Oct 2026).",
+      "gap": "N1 one audit (FV-N2e, 10 Oct 2026): Step-0 hit 0.625 vs p95 0.250; key-only words 21st St, Pennsylvania Ave, Captain, city, commanding; 'Weldon'/'McCallum' are plain 'hotels'/'George' (FIX job)",
+      "depth": "D1",
+      "completeness": "13 code-word groups, 2 are plain words misread by the decoder; body clear in the holder transcription",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.232, pointer 9898, N2-ID"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.232, pointer 9898, N2-ID",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.232, pointer 9898, N2-ID"
+      ],
+      "depth_sentence": "Captain Potts's detectives searched every hotel in Washington and Georgetown for Buyers, and none stood at 21st Street and Pennsylvania Avenue.",
+      "depth_check": "Wave 3 Step-0 ruling: body known in holder transcription; depth from the key-only words (D1)",
+      "depth_note": "",
+      "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-N2e)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-N2e verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Non-decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-N2e)' section 3",
+      "reading_version": "N2R-4 10 Oct 2026 (reading-no2.md), grades as in AUDIT (FV-N2e) s.3 (decoder misreads pending a FIX job, s.2)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): Ingalls to Grant, 5 Dec 1864, 11 a.m.: the vessels will be ready; assemble them at Bermuda Hundred instead of Fort Monroe? (N2-IG)",
+      "line": "Re-read with War Department Cipher No. 2 (the message is largely clear in the Huntington's transcription): Ingalls told Grant the vessels would be ready and asked whether they should not be assembled at Bermuda Hundred instead of Fort Monroe, Rucker to be told; the key and the spelling give the places. Plaintext already public (N1); not located in print (searched 10 Oct 2026).",
+      "gap": "N1 one audit (FV-N2e, 10 Oct 2026): Step-0 hit 0.500 vs p95 0.250; 'Bear mew day Douglas' = Bermuda Hundred, not Bridgeport (leaf checked; FIX job)",
+      "depth": "D1",
+      "completeness": "12 code-word groups H, 1 lowered to I (Bear = Ber-, phonetic); body clear in the holder transcription",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.240, pointer 9906, N2-IG"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.240, pointer 9906, N2-IG",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.240, pointer 9906, N2-IG"
+      ],
+      "depth_sentence": "Ingalls proposed assembling the vessels at Bermuda Hundred rather than at Fort Monroe, with Rucker in Washington to be told.",
+      "depth_check": "Wave 3 Step-0 ruling: body known in holder transcription; depth from the key-only words (D1)",
+      "depth_note": "",
+      "text": "known"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-N2e)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-N2e verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Non-decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-N2e)' section 3",
+      "reading_version": "N2R-4 10 Oct 2026 (reading-no2.md), grades as in AUDIT (FV-N2e) s.3 (decoder misreads pending a FIX job, s.2)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): to Grant, 19 May 1864, 8.30 p.m.: Canby, not Hurlbut, commands the Gulf and Arkansas; Banks to be relieved, Reynolds to command (N2-IH)",
+      "line": "Re-read with War Department Cipher No. 2: the 19 May 1864 telegram to Grant that Canby, not Hurlbut, commands the combined departments of the Gulf and Arkansas and that Banks is to be relieved by Reynolds. Already printed in The Papers of Ulysses S. Grant, vol. 10 (N1); found by phrase search 10 Oct 2026.",
+      "gap": "N1 one audit (FV-N2e, 10 Oct 2026): printed word for word in Grant Papers vol. 10 (7DAAxfRuXKoC; page not seen); step-0 miss 0.393; reader's 'not located' was a be-api 502",
+      "depth": "D1",
+      "completeness": "16 code-word groups H; text printed",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.73, pointer 9739, N2-IH"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.73, pointer 9739, N2-IH",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.73, pointer 9739, N2-IH"
+      ],
+      "depth_sentence": "The telegram is printed in The Papers of Ulysses S. Grant, vol. 10.",
+      "depth_check": "N1: depth limited to a re-decipherment of printed text (D1)",
+      "depth_note": "",
+      "text": "known"
     }
   ],
   "lanes": [

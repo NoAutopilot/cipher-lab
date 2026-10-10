@@ -1,0 +1,7 @@
+entry	pointer	block_in_page_json	a_ordered	b_shuffle_p95	step0_hit	c_count	c_words
+N2-IA	9701	True	0.385 (15/39)	0.205	no	23	lieut gen grant maryland infantry regiment twelve corps slocum baltimore troops west west virginia transportation burnside battery army potomac signed maj genl halleck
+N2-IB	9850	True	0.575 (23/40)	0.225	yes	15	lieut gen grant important heintzelman rosecrans hooker jos major general heintzelman harbor signed secretary war
+N2-IC	9755	True	0.444 (16/36)	0.250	no	16	washington canby ed vicksburg rail road report thirty seventy nine report importance seventy mile vicksburg signed
+N2-ID	9898	True	0.625 (25/40)	0.250	yes	13	colonel weldon city mccallum weldon pennsylvania captain command ed ing ing city signed
+N2-IG	9906	True	0.500 (14/28)	0.250	yes	12	lieut gen grant bridgeport hundred monroe general signed brig general quarter master
+N2-IH	9739	True	0.393 (11/28)	0.250	no	17	lieut gen grant command ed ing department arkansas banks reynolds command ed ing department tomorrow signed dana
