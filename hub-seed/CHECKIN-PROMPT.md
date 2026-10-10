@@ -162,3 +162,4 @@ incarnation from its own session. NEXT: when inc. 4 sends "ready for incarnation
 session with hub-seed/TXE2-SUCCESSOR-PROMPT.md, delete the hourly routine, archive inc. 4. TX-RED inc. 2 (554k) successor likewise from here.
 Owner decision 00:5x: his ChatGPT runner runs its own experiments (second-opinions/prompt-2026-10-10-tx-external-experimenter.md; collation
 section in TX-PROGRAM.md). f.102r re-anchored as dev2 (ANCHORED, margin 0.149). SCAN-103 still running (box to 01:19).
+STATE DELTA 01:1x UTC 10 Oct: owner approved the mock-ups and asked to "ship the rest with navigation": SITE-SHIP-1 session_015sBp2f6xX1u5twHVendJZz (cap 12, box to 03:12) builds research/mockups/site/; on its done line publish the folder as a private multi-file artifact and give the owner the link (public placement not decided: his 9 Oct word was no public posting). TXE2 inc4 hourly routine id trig_017AmCfxWB82wt4gwHVVToVB (delete when inc. 5 is created from here).
