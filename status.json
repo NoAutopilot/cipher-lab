@@ -12982,32 +12982,33 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-N2f)'"
+        "AUDIT.md '## AUDIT (FV-N2f)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER10-3)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth_by": "FV-N2f verifier (account 1)",
+      "depth_by": "AUD2-LEDGER10-3 verifier (owner account)",
       "depth_date": "10 Oct 2026",
-      "decode_status": "Partially decrypted",
+      "decode_status": "Non-decrypted",
       "date": "10 Oct 2026",
       "kind": "reading",
       "claim_scope": "completed-reading",
-      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-N2f)' section 4",
-      "reading_version": "N2R-5 10 Oct 2026 (reading-no2.md), grades as in AUDIT (FV-N2f) s.3 (decoder misreads of plain words pending a FIX job)",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER10-3)' section 4",
+      "reading_version": "N2R-5 10 Oct 2026 (reading-no2.md) with FIX-FM21 (business, George plain)",
       "unresolved_spans": "",
       "depth_unread": {
         "names_codes": "0",
         "other": "0"
       },
       "depth_pct": 94.1,
-      "grade": "N3",
-      "plaintext_novelty": "N3",
-      "mapping_novelty": "N3",
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
       "title": "Eckert 1864 (Washington sent ledger, Cipher No. 2): War Department to C. A. Dana, 8 July 1864, 11 p.m.: return at once; Wallace reports about 20,000 under Early and Breckinridge near Urbana (N2-JH)",
-      "line": "Read at grade H with War Department Cipher No. 2: at 11 p.m. on 8 July 1864 a War Department telegram (signer read as the Secretary of War) recalled C. A. Dana to Washington, passing on Lew Wallace's report of about 20,000 men under Early and Breckinridge near Urbana and Halleck's word that he had no force to take the field; not located in print (searched 10 Oct 2026); Dana's printed dispatch of 9 July (OR I/40 pt 3 p.111) repeats the news and says he is leaving for Washington.",
-      "gap": "N3 one audit (FV-N2f, 10 Oct 2026); Step-0 ruling miss (0.458 vs 0.167); not N4: Grant Papers vol. 11, Stanton and Dana Papers (LC), NARA RG 107, press of 9-11 July, Google Books, G3, JSTOR not searched; D3 pending a leaf eye-check; second audit AUD2-LEDGER10 row queued; SO-ECKERT-N2-JH queued",
-      "depth": "D2",
-      "completeness": "32 H of 34 code-word groups filed (2 are plain words the decoder misread: business, George; FIX job)",
+      "line": "Re-read with War Department Cipher No. 2 (the plain words of the message are in the Huntington's public transcription of the ledger): at 11 p.m. on 8 July 1864 a War Department telegram (signer read as the Secretary of War, M) asked C. A. Dana to return to Washington at once; the key supplies the names and numbers -- Lew Wallace's report of about 20,000 men under Early and Breckinridge near Urbana, Halleck's word that he had no force to take the field and had told Grant, 30 miles, and Hunter not yet gone from Parkersburg. Plaintext already public (N1); not located in print as a telegram (searched 10 Oct 2026); Dana's printed dispatch of 9 July (OR I/40 pt 3 p.111) repeats the news.",
+      "gap": "N1: second audit AUD2-LEDGER10-3 (10 Oct 2026) lowered N3 -> N1 and D2 -> D1: on the reading as fixed by FIX-FM21 the Wave 3 Step-0 ruling hits (ordered overlap 0.510 vs shuffle p95 0.204; FV-N2f's 0.458 was measured before the fix); the body is in the Huntington public transcription of pointer 9780; the key's counted contribution is the names and numbers (Dana, Wallace, enemy, force, 20,000, Breckinridge, Halleck, Grant, 30 miles, Hunter). Narrowest hit of the ruling and an E78-shape case: flagged to the orchestrator",
+      "depth": "D1",
+      "completeness": "32 H of 32 code-word groups (FIX-FM21); body plain in the holder's transcription",
       "phrases": [
         "Huntington mssEC 18 (obj 10074) p.114, pointer 9780, N2-JH"
       ],
@@ -13015,9 +13016,10 @@
       "documents": [
         "Huntington mssEC 18 (obj 10074) p.114, pointer 9780, N2-JH"
       ],
-      "depth_sentence": "Dana was recalled from Grant's headquarters on the night of 8 July with Wallace's estimate of 20,000 men near Urbana, and printed his own repeat of that estimate the next day as he left for Washington.",
-      "depth_check": "code clause: Opal Watsons tonight that the Rabbit are Swindling in Strong saint near Urbana ... Nelson Dwight strong = Wallace reports tonight that the enemy are moving in strong force near Urbana ... 20000 strong; external (non-statistical): Dana to Burnside, City Point 9 July 1864, OR I/40 pt 3 p.111 (D2; D3 pending leaf eye-check)",
-      "depth_note": "32 H of 34 code-word groups filed (2 are plain words the decoder misread: business, George; FIX job)"
+      "depth_sentence": "On 8 July 1864 the War Department recalled C. A. Dana to Washington at once (sense readable from the holder's public transcription; the key adds Wallace's 20,000 under Early and Breckinridge near Urbana, Halleck, Grant and Hunter).",
+      "depth_check": "Wave 3 Step-0 ruling (ms18/aud2_n2jh_step0.py): hit 0.510 vs 0.204; key-read words (c) are scattered names and numbers, no clause above the authentication distance; external context Dana to Burnside, 9 July 1864, OR I/40 pt 3 p.111",
+      "depth_note": "32 H of 32 code-word groups (FIX-FM21); body plain in the holder's transcription",
+      "text": "known"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",

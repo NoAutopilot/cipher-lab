@@ -15661,3 +15661,75 @@ N2R-4's 'not located' was wrong for three of six (IA, IB, IH printed in the Gran
 counted as 0; a Google Books phrase query on the decoded wording found all three. Lesson already in the brief (G3 is the filter that works); add: when be-api
 is down, the Grant Papers check is unrun, not 0. Over-claims to correct: none outward; reading-no2.md 'Bridgeport' (IG), '[Harbor]' (IB), '[Importance]' (IC),
 '[Weldon]'/'[McCallum D C]' (ID) for the FIX job. for LANE LEDGER-10 (account 1)
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER10-3)
+
+Second verifier AUD2-LEDGER10-3 (owner-account session, Opus 5.5, for the orchestrator (owner account) and LANE LEDGER-10 (account 1); WORK-QUEUE row
+AUD2-LEDGER10-3), 10 Oct 2026, 06:27-06:3x UTC by `date -u`; a separate session from the reader N2R-5, the first verifier FV-N2f, STEP0-RULE and FIX-FM21;
+this session had not read or audited N2-JH before. Scope: **N2-JH** (9780/0, mssEC 18 p.114) only. Nothing decoded beyond key look-ups. Key source: `period`.
+`decode_no2.py --check` -> "reading-no2.md is current" (exit 0, 06:33). Intake gate (06:33): `eckert-1864: partial (line 3) -- edition/page or full-text-search
+citation found within 6 lines`. No spec for eckert-1864, so `judge_plaintext.py` was not run. Image: not fetched (the brief's one-page-JSON limit; disk JSON used).
+Script `ms18/aud2_n2jh_step0.py` (+ `.out`, reproducible, fixed seeds), which reuses `ms18/step0_ordered.py`'s own functions (exec of its lines 1-105, so
+STEP0-RULE's TSV is untouched).
+
+### 1. Step 0 re-measured on the current reading (the test FV-N2f's figure no longer describes)
+FV-N2f measured (a) = 0.458 on the reading as N2R-5 filed it, where the decoder had turned two plain words into code ('business' -> [Browns Ferry], 'George' of
+'George Town' -> [McCallum D C]). FV-N2f's own s.3 asked a FIX job to make them plain, and FIX-FM21 (164659b) did. Neither re-ran step 0 afterwards. Here,
+with the Wave 3 Step-0 ruling as implemented by STEP0-RULE (window = best block/pair of 9780's transcription; block 0 chosen, the entry itself):
+| reading | (a) ordered | (b) shuffle p95, 20 | b2 sel.-matched p95 | shuffle p95 / max, 200 draws | hit |
+|---|---|---|---|---|---|
+| current (post FIX-FM21) | **0.510 (25/49)** | 0.204 | 0.224 | 0.204 / 0.224 | **yes** |
+| pre-fix (two code tokens restored; check on FV-N2f's 0.458) | 0.460 (23/50) | 0.180 | 0.200 | 0.200 / 0.220 | no |
+(c) on the current reading, 21 decoded content words absent from the transcription; key meanings among them: Dana, Wallace (Lew), report x2, enemy, move,
+force x4, towards, 20000 (twenty thousand), Breckinridge, Halleck, Grant, 30 (thirty) mile, Washington, Department, Hunter. Plain/spelling: 'ing' (a fragment
+of '[Move]ing', which only lowers (a)).
+Sensitivity (stated because the hit is close to the gate): dropping the decoder fragment 'ing' gives 25/48 = 0.521; not crediting the match between the
+decoded origin word [Washington] (code 'Hang') and the clerk's header "Wash'n" gives 24/49 = 0.490 (24/48 = 0.500, still >= 0.5, with both changes). The header
+is part of the holder's public transcription and does give the place, so the credited figure stands; the call is a narrow hit, not a wide one.
+**N2-JH is a Step-0 hit** under the lane's ruling: the body is in reading order in the Huntington's public transcription of pointer 9780 ("I would be glad
+to have you return imm'y as the pressure of business in the [..] requires your assistance ... tonight that the [..] are [..] in Strong [..] near Urbana [..]
+and George Town apparently about [..] strong consisting of Early and [..] ... that he has no [..] that can take the field and that he has so notified [..]
+... Urbana is about [..] from [..] ... has not yet left Parkersburg").
+
+### 2. What the key adds (the counted contribution) and the E78-shape question
+Unlike E74/E378/E381, the code words here carry the telegram's factual core: who reports (Wallace, Halleck), what (the enemy moving in force), how many
+(20,000; Early and Breckinridge's forces), to whom it was notified (Grant), the distance (30 miles from Washington), whose force has not left Parkersburg
+(Hunter), and the addressee (Dana). Before 10 Oct that was the E78 shape (clear words public, content words code: "N3, weak, kept", AUDIT (LS4-V2a) s.1,
+E78 row). The Wave 3 ruling replaced that judgement with the mechanical gate and states the outcome for a hit with such (c) words: N1 for the body, a counted
+contribution ONLY for those words, depth from them alone. Applied here; flagged in s.5 for the orchestrator because this is the entry where the two
+precedents differ most.
+
+### 3. Print families (second pass; requests: IA be-api 8, Google Books 2; no Huntington request, the hdl token was not taken)
+| Family | FV-N2f | This pass |
+|---|---|---|
+| Grant Papers vol. 11 (IA `papersofulyssess0011gran`, be-api full text) | not searched | "pressure of business" 0; "glad to have you return" unreachable (a JSON error, then 502 on the one retry: not a negative); "requires your assistance" 0; "not yet left Parkersburg" 0; "Urbana is about" 0; positive control 'Dana Urbana' 1 hit (the volume's Dana telegrams of 13-24 July and index): the volume answers, no copy of this telegram |
+| Google Books (key, country=US) | not searched | "pressure of business in the department requires your assistance" 339 loose matches, none 1864 War Department (top 10 read: Department of State Bulletin, Congressional Record, Parliamentary Papers ...); '"have you return immediately" Dana 1864' 172, top 10 OR/House documents on other matters |
+| OR I/37 pt 2, I/40 pt 3, Dana Recollections (disk) | phrase grep, no hit; external check I/40 pt 3 p.111 | not repeated; FV-N2f's external check stands as context |
+| Not searched | Stanton Papers and Dana Papers (LC), NARA RG 107, the Washington press of 9-11 July, G3, JSTOR | the same; none can move an N1 that rests on the holder's own transcription upward, so no JSTOR row is queued |
+
+### 4. Class (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| N2-JH War Department (signer read as the Secretary of War, M) to C. A. Dana, Washington 8 July 1864 11 PM | **N1** (lowered from N3; text known: the body is in the Huntington's public transcription of pointer 9780) | period | **D1** (lowered from D2) | Step-0 hit 0.510 vs 0.204 on the current reading (s.1); the key's contribution is counted only for the (c) words of s.2 |
+- **Depth.** Read from the (c) words alone (the ruling), the key yields scattered names and numbers -- Dana, Wallace, 20,000, Breckinridge, Halleck, Grant,
+  30 miles, Hunter -- and no stretch of key-read words above the authentication distance: D1. FV-N2f's D2 clause ("[Wallace] [reports] tonight that the
+  [enemy] are [moving] in strong [force] near Urbana") is mostly plain words public in the holder's transcription; the external check (Dana to Burnside, 9
+  July, OR I/40 pt 3 p.111: Wallace, Urbana, 20,000, Early, Dana leaving for Washington) still confirms four key values (Wallace, 20000, the recall, Dana) and
+  stays recorded as context.
+- **Safe sentence:** "Re-read with War Department Cipher No. 2 (the plain words of the message are in the Huntington's public transcription of the ledger): at
+  11 p.m. on 8 July 1864 a War Department telegram (signer read as the Secretary of War, M) asked C. A. Dana to return to Washington at once; the key supplies
+  the names and numbers -- Lew Wallace's report of about 20,000 men under Early and Breckinridge near Urbana, Halleck's word that he had no force to take the
+  field and had told Grant, 30 miles, and Hunter not yet gone from Parkersburg. Plaintext already public (N1); not located in print as a telegram (searched
+  10 Oct 2026); Dana's printed dispatch of 9 July (OR I/40 pt 3 p.111) repeats the news."
+- **Unsafe:** "first decipherment", "unread", "N3" for the body; "Stanton recalled Dana" as fact (signer M).
+
+### 5. Postmortem and propagation
+- Failure: a correction recommended by the first audit (s.3 of FV-N2f) changed the very figure the first audit's class rested on, and nobody re-ran step 0
+  after FIX-FM21 applied it. Lesson for the lane: any FIX job that turns a decoded code token into a plain word re-runs the step-0 measure for that entry
+  in the same commit (`ms18/step0_ordered.py`'s functions; this section's script is the one-entry form).
+- For the orchestrator: N2-JH is the narrowest hit of the ruling (0.510) and the clearest E78-shape case under it (s.2). The class here follows the
+  ruling as written; if the orchestrator wants the E78-shape exception back for entries whose (c) words carry the content, this is the test case, and the
+  outcome would be "N3, weak" with the same D1/D2 question -- a ruling, not a verifier's call.
+- Propagated (rule 10): status.json N2-JH -> N1, `text: known`, D1, two audits; SECOND-OPINIONS-QUEUE.tsv SO-ECKERT-N2-JH -> withdrawn; WORK-QUEUE
+  AUD2-LEDGER10-3 -> done. No over-claiming sentence in NOTES.md, reading-no2.md or ciphertext-no2.txt (all say "not located"; none says new). FV-N2f's
+  section is left as written (history).
