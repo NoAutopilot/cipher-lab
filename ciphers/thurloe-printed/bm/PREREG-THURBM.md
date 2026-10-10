@@ -1,4 +1,4 @@
-# PREREG-THURBM -- Blank-Marshall (Bruges) key, Birch 1742 vol 6 (written 10 Oct 2026, 14:4x UTC by date -u, before any score)
+# PREREG-THURBM -- Blank-Marshall (Bruges) key, Birch 1742 vol 6 (written 10 Oct 2026, 14:2x UTC by date -u, before any score; header time corrected from a mistyped 14:4x, pushed e2315088b 14:25:59 UTC)
 
 Job: THUR-BM, LANE FAMILY-A2r (account 2). Brief: .claude/briefs/runs/2026-10-10-ytbiz-family-1410-jobs.md "### THUR-BM".
 Letters: four glossed Blank-Marshall letters in Birch 1742 vol 6 (bim_ copy, djvu lines 40469 p.338, 65889 p.550, 77385 pp.645-646,
