@@ -18534,3 +18534,88 @@ Whisky = Troops read in the siblings 5849, 5854, 5858, 5865, 5866, 5868 and pass
   be-api.us.archive.org 8 (1.8 s); api.openalex.org 5, api.semanticscholar.org 5, api.crossref.org 5; no archive.org downloads (all print read
   from the cache on disk).
 For the orchestrator (owner account) and LANE LEDGER-15 (account 1).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER15-1)
+
+Second verifier AUD2-LEDGER15-1 (account 1, session_01DnjpLff3z1hifmA2addZBE, Opus 5.5, for LANE LEDGER-15; WORK-QUEUE row AUD2-LEDGER15-1), 10 Oct
+2026, 13:41-14:1x UTC by `date -u`; a separate session from the readers FM65-D, FM65-E, FM65-F and the first verifier FV-L15a, not protecting their
+conclusions. Scope: **E555, E568, E541, E576, E575** (first audit "## AUDIT (FV-L15a)"; E536 is N1 there and not re-audited). Nothing decoded; every
+code group looked up again in key.md. Key source: `period` (War Department Cipher No. 1, key.md). Step 0 not used (non-test on mssEC 25, Wave 2 RULING).
+No spec, so `judge_plaintext.py` was not run. Intake gate (13:43 UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found
+within 6 lines`. Scripts and outputs (committed, `fortmonroe/`): `aud2_l15_1_hdl.py` (+ `.out`), `aud2_l15_1_beapi.py` / `aud2_l15_1_beapi2.py` (+ `.out`),
+`aud2_l15_1_gb.py` (+ `.out`), `aud2_l15_1_print.py` (+ `.out`), `aud2_l15_1_schol.py` (+ `.out`). Four texts added to the print-check cache
+(`sources/ia-fulltext/print-check/`): ORN ser. I vol. 12 (`officialrecords10librgoog`, added to `print/or_volume_map.tsv`), Plum vol. II
+(`militarytelegraph02plumrich`), J. E. O'Brien, *Telegraphing in Battle* (1910, `telegraphinginba00obri`), G. H. Gordon, *A War Diary of Events*
+(1882, `wardiaryevents00gordrich`).
+
+### 1. Prior work (prior-work-step.md, civil-war adapter)
+- `tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<pointer>;date=..;sender=..;recipient=..' --step-type second-audit`,
+  all five: exit 4. Specific holds: three target-level live claims of other jobs (FM-F1, FIX-L14, CLEAR-SWEEP) -- checked, none names these five rows
+  (CLEAR-SWEEP's 40 entries exclude them): CLEAR. For E575/E576 four edition LEADs on Gordon, 14-16 Mar 1865, in OR I/46 pts 1-3: every Gordon/Ord
+  telegram of 14-16 Mar in pts 2-3 read in the djvu text (s.2). UNCHECKED-NET: 1864 OR volumes not on disk, irrelevant to 1865.
+
+### 2. Families added by this audit
+| Family | Result |
+|---|---|
+| The Papers of Ulysses S. Grant vol. 14 in full text (IA `papersofulyssess0014gran`, lending-only, be-api inside the item; FV-L15a had snippets only). Controls `"organize a force of cavalry"` (Grant to Ord, 15 Mar) and `"Sumner's cavalry"` hit | **Boyle 0, "Broad Ford" 0, Nansemond 0, Emerick 0, "carry pontoons" 0, "O'Brien" 0, "construction parties" 0, "double line" 0, Stromboli 0, "mule teams" 0.** Hits read and rejected: Blackwater (index 113n-114n, 172n: Ord's 16 Mar telegram "The Blackwater a Branch of the Chowan ... can not be forded except near the Army of the Potomac -- a Cavalry would have to have a ferry or pontoons", the summary FV-L15a cites from OR I/46 pt 3 p.9, printed here from the original; trade by the Blackwater, other); Nottoway, Suffolk (Sumner's later raid from Suffolk, 1 Apr); Gordon (index 90n, 162n-63n: Gordon to Grant 5 and 12 Mar, deserters, other); Morehead, telegraph/Goldsboro, operators (Sherman, Schofield, Dana: other texts); Meagher ("the fragments brought here by Meagher", Schofield, other). |
+| Grant Papers vol. 13, Google Books (keyed, country=US), 12 new queries plus the control `"six vessels" Oriental` (hit) | No snippet for E555 (`"Blodget" Annapolis ice`, `"Meagher's division"`, `Rucker "Schofield's corps"`, `"Twenty-third Corps" Rucker Annapolis`, `"2,500" Rucker "to-morrow morning"`, `"staff officers" "mule teams"`, `Halleck "Fort Monroe" "Feb. 9" Rucker`), E541 (`Stromboli`, `Lynch torpedoes "St. Lawrence"`, `"Nevada" Rucker recruits`) or E568 (two). The one vol. 13 hit, "Meagher has lost his men ... Division are just arriving at Morehead", is another telegram. **The 5904/0 note** (FV-L15a's snippet, re-read): Halleck to Grant, "Rucker thinks you will have difficulty with ice in the Potomac. If you come by Annapolis, you had better telegraph to Capt Blodget ... ALS (telegram sent), DNA, RG 107, Telegrams Collected (Bound)" -- the row above E555, printed; E555 itself is not in any snippet over 13 queries in two audits. |
+| ORN ser. I vol. 12 (2 Feb-3 Aug 1865), full text, **first time reached** (`officialrecordso0012unse` still HTTP 500; the Michigan copy `officialrecords10librgoog` served) | No copy of any of the five. Nansemond = the tug Nansemond (other); Gordon, G. H. = Porter to Gordon on fishing, 15 Apr (p.116, other); the Blackwater, Suffolk and Colonel Sumner's expedition up the Chowan to Murfreesboro and Winton, 3-7 Apr 1865 (pp.~102-103) -- the raid E575/E576 were preparing, a month later: context. Stromboli, Nottoway, Boyle (as guide), Broad Ford, Meagher, Nevada: 0. |
+| OR I/46 pts 2-3, every Gordon/Ord telegram of 14-16 Mar (djvu text, KWIC) | FV-L15a's reading stands: Ord to Gordon 14 Mar 9 p.m. ("How many cavalry can you spare"), Gordon 15 Mar 12 m. (encloses Lewis's: ferry at South Quay destroyed; "I have no pontoons"), Gordon 15 Mar 6.30 p.m. (p.993, the reply to E575: "A man named Boyle ... is now at City Point ... I have sent for him"; "The river is about 200 yards wide at South Quay"), Grant 15 Mar 10.30 a.m. ("Sumner's cavalry is ordered to Norfolk"), Ord 16 Mar 8.30 a.m. (pt 3 p.9). **Note for E576**: it says "I have just seen the guide Boyle", so it postdates Gordon's 6.30 p.m. telegram, which has Boyle away at City Point; E576 is Gordon's follow-up of the evening of 15 Mar (Broad Ford, 125 yards), the source of Ord's next-morning summary. Not printed. |
+| Plum, *The Military Telegraph during the Civil War* vol. II (1882), full text | Narrative only: Wilmington office opened 23 Feb, lines restored toward Goldsboro, O'Brien praised in Eckert's report; operators at Goldsboro (John E. O'Brien) and Morehead City. No telegram of the five. |
+| **J. E. O'Brien, *Telegraphing in Battle* (1910)**, full text (the E549 second audit's open lead) | **E568: Richard O'Brien's own war diary, "Wilmington, North Carolina, Sunday, February 26th. -- Arrived at Fort Fisher 8 a.m. and Wilmington 11 A.M. Sent order to Major Eckert for one hundred miles of material, twenty operators, twenty instruments, eight construction men, tools, etc." (p.218, running heads 218/219 checked); 27 Feb: "John is out with a company of soldiers trying to string a line to Fort Fisher ... Russia left with my dispatches at 3 p.m."; 23 Feb, John's letter: "General Schofield wants a line to Fort Fisher at once."** -- the request E568 carries, in summary; the telegram's own words are not printed ("diggers", "shovels", "double line", "difficulty of getting", "hurry the operators": 0). Where the diary says "twenty instruments" E568 has "20 relays", confirming FV-L15a's call that "relays" is plain here, not Relay = Evacuate. Boyle, Stromboli, Meagher, Sumner, Broad Ford, Nottoway: 0 or other. |
+| G. H. Gordon, *A War Diary of Events in the War of the Great Rebellion, 1863-1865* (1882), full text (the sender of E576, the addressee of E575) | Lewis's raids of 10 Mar and "a few days later ... destroyed the enemy's ferry across the Blackwater at South Quay, and found it perfectly easy to make a dash on the bridge across the Nottoway" (context, = the Lewis telegram in OR). Boyle 0, Broad Ford 0, no Ord telegram of 15 Mar. |
+| Huntington CONTENTdm full text (hdl token 13:57-13:59, 19 CISOSEARCHALL incl. control -> 9678; words FV-L15a did not query) | **No clear copy of any of the five.** `double line` 10 (5923 own; 7843 = Grant, 27 Mar, "double the enemy"; others 1862-64), `construction parties` 7 (5923 own; others 1863-64), `operators instruments` 2 (5923 own; 13107 other), `OBrien Wilmington` 2 (4647 May 1864; 8818 Aug 1865, other), `Nevada recruits` 1 (8529, the New York telegram FV-L15a cites), `Stromboli` 4 and `ordnance yard torpedoes` 2 (5887 own, 9943 = E85, 9134/5815 Dec 1864), `sea going vessels` 11 (8506 Ingalls 5 Jan, 9928 3 Jan: other), `regimental staff officers` 1 and `ships arrive loaded` 1 (5904 own only), `Nansemond gunboats` 10 and `water gunboats Suffolk` 4 (1862-63 siege of Suffolk), `Broad Ford` 1 (5818 = Dec 1864, a signature "breed ford"), `Nottoway bridges` 1 (1863); `Fisher Goldsboro`, `Schofield directs line`, `Sumner Norfolk cavalry` 0. |
+| IA be-api whole collection, 10 phrase variants | `"double line from Morehead"` 0, `"guide Boyle"` 0, `"102 horse ambulances"` 0, `"steamer Nevada" recruits` 0, `"Broad Ford" Blackwater` (English places), `"torpedoes of the kind"` 65 (20th-century, rejected), `"difficulty of getting operators"` 15 (modern), `"Meagher's division" "Annapolis" Rucker`, `"construction parties" Goldsboro Wilmington operators`, `"Stromboli" torpedoes Lynch`: other texts. |
+| Open indexes (OpenAlex keyed, CrossRef, Semantic Scholar keyed; 5 queries each, 3 S2 429s) | Nothing on the Fort Monroe ledger or these telegrams. |
+| JSTOR | 6 rows appended to JSTOR-QUEUE.tsv (both families); they never block a class. |
+| Not reached | NARA RG 92, 107, 393; OR ser. III vols. 4-5; the Ord Papers; Grant Papers vol. 13 page by page (the publisher's PDF is Cloudflare-blocked, AUD2-LEDGER13-2; not retried); HathiTrust full text. |
+
+### 3. Image eye check and grades, checked
+- Page images 5904, 5887, 5923, 5931, 5933 (hdl take 2, 2400 px), overview of each and line crops of the disputed lines with `tools/iiif_lines.py --image`
+  (5933 lines 3-6, 5904 lines 1-3). **The transcription matches the image on all five**, including every token FV-L15a ruled on: "Glass ring, alls
+  forwarded Jerseys sweden" and "spartans promise Kisses pelton" (5904; "promise" stands where FV-L15a marks it M), "Harriet paradise Webster vincent
+  Animal weaseler Nevada" (5887, written in seven columns and read row by row), "harsh relays harrow Operators", "pension hatchets" (5923), "Banks torch
+  nancy moaned", "if summers panama" (5931), "the Black water canby pocketed", "without villager zebra", "Broad rusty", "The windsor there" (5933, the
+  faint words read on the crops). One plain-word slip: 5931 line 6 reads **"party say plaster publish"**, transcribed "sacy" (the "say 500 cavalry" of
+  FV-L15a's paraphrase; s.5).
+- Every code group of the five looked up again in key.md (a script over ciphertext.txt): all agree with FV-L15a s.3 (e.g. Kiss = Schofield, Quitman
+  = Division, Pagan = Battery, Spartan/Spafford = Horse, Peru = As soon as, Whelp = Tomorrow, Palsy = Brigadier General; Tappan = Major, King =
+  Schofield, Camargo/Census = Goldsboro, Fortune = Newbern, Wine = 100, Pension = 4; Polka = Command, Weasel/Wayworn = Steam, Wafer = Recruits, Nutmeg
+  = Available, Walpole = Rebel, Saxon = From the; Meriden = Ord, Rape = Expedition, Pocket = Cross, Oyster/Attica = Army/Potomac, Rusty = Ford, Windsor =
+  River, Patent = Bridge; Sharon/Shannon = Gunboat, Panama/Pacific = Cavalry, Village = Pontoon, Plum = Cross, Lucy = 5 PM, Ghost = 15) and the
+  collisions FV-L15a resolved (Webster, Saint, Ordnance, Black, Summer, Nancy, Relay, Hatchet: plain) -- O'Brien's diary now independently backs
+  "relays" as plain. Counts recounted: E555 H 51 + M 2, E568 H 35, E541 H 25 + M 1, E576 H 27 + M 1, E575 H 24 -- FV-L15a's figures stand.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E555 | **N3** (kept; weak as FV-L15a) | period | **D3** (kept) | not located after FV-L15a and s.2; the sibling 5904/0 is the printed row |
+| E568 | **N3** (kept; its request is summarised in print, its text not) | period | **D3** (raised from D2: external non-statistical check of content -- R. O'Brien's diary, Wilmington, 26 Feb 1865, "Sent order to Major Eckert for one hundred miles of material, twenty operators, twenty instruments, eight construction men, tools, etc.", J. E. O'Brien, *Telegraphing in Battle*, 1910, p.218; H 35 of 35) | not located after FV-L15a and s.2 |
+| E541 | **N3** (kept; weak as FV-L15a) | period | **D3** (kept) | not located after FV-L15a and s.2 |
+| E576 | **N3** (kept; weak as FV-L15a) | period | **D3** (kept) | not located after FV-L15a and s.2; Ord's summary also in a Grant Papers vol. 14 note |
+| E575 | **N3** (kept; weak as FV-L15a) | period | **D3** (kept) | not located after FV-L15a and s.2 |
+- **Not N4:** E555, E541: Grant Papers vol. 13 by snippets only (not on IA), NARA RG 92/107 unread. E568: OR ser. III vols. 4-5 (the Military
+  Telegraph's reports) and NARA RG 107 unread; the sender's own family memoir now read (it summarises the order). E575, E576: NARA RG 393 (Department
+  of Virginia) and the Ord Papers unread (Grant Papers vol. 14 cites "Ord Papers" for these very telegrams). The principal printed editions are now
+  covered in full text for the three March items, but the class does not move on that alone.
+- **Safe sentences:** FV-L15a's five stand, each tail extended with "ORN ser. I vol. 12, The Papers of Ulysses S. Grant vol. 14 (full text)". E568 may
+  add: "R. O'Brien's own diary for 26 Feb 1865 records sending this order in summary (J. E. O'Brien, Telegraphing in Battle, 1910, p.218)." E576 may
+  add: "it follows Gordon's printed 6.30 p.m. telegram of the same day, which has Boyle still at City Point."
+- **Unsafe:** "first", "new", "unpublished", "never printed"; for E568 "not in print" without saying the diary summarises it; "not in Grant's papers"
+  for E555/E541 without "snippet search".
+- **Depth sentences** (D2+): FV-L15a's stand; E568 adds its check: "On 26 Feb 1865 O'Brien asked Eckert for 20 relays, 20 operators and two
+  construction parties for Schofield's lines from Wilmington and Morehead City to Goldsboro; his diary that day records the same order."
+
+### 5. Postmortem, leads and propagation
+- No over-claim found in FV-L15a or in the folder's files for these five; one family it could not reach (ORN I/12) and two it read only by snippet
+  (Grant Papers 14) are now read in full text, and one live lead from the E549 audit (O'Brien 1910) turns out to bear on E568. No reading revised.
+- **For the FIX job (FV-L15a s.5, not applied here):** add to E575 "sacy" -> "say" (plain; 5931 line 6, image); E576 note: after Gordon's 6.30 p.m.
+  telegram of 15 Mar (OR I/46 pt 2 p.993); E568 note: O'Brien's diary, *Telegraphing in Battle* p.218 (26 Feb, "Sent order to Major Eckert ..."; 27 Feb
+  "Russia left with my dispatches" -- by sea to Fort Monroe, wired there on 5 Mar).
+- **Lead:** *Telegraphing in Battle* (IA `telegraphinginba00obri`, full text now cached) prints Richard O'Brien's diary for Jan-Apr 1865 and letters of
+  Eckert and John O'Brien; any Fort Monroe or Army of the James telegram of O'Brien's in this ledger (E549 and others) should be checked against it.
+- Propagated: status.json E555 E568 E541 E576 E575 -> audit_status "two audits", audit_refs + this section, gap and line updated, E568 depth D3 with its
+  check (`tools/depth_check.py --strict` exit 0); the five second-opinion prompts' "where we have looked" lists updated (ORN I/12, Grant Papers 14 full
+  text, Plum II, O'Brien 1910; E568 notes the diary), rows SO-ECKERT-E555/E568/E541/E576/E575 stay queued; WORK-QUEUE AUD2-LEDGER15-1 -> done.
+- Requests: hdl.huntington.org 24 (19 CISOSEARCHALL + 5 IIIF, all 200); be-api.us.archive.org 39; archive.org 11 (one reset, one 500);
+  www.googleapis.com 13; api.openalex.org 5, api.crossref.org 5, api.semanticscholar.org 5 (three 429).

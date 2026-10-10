@@ -12,10 +12,10 @@ THE ITEM
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key.md, search log
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (FV-L15a)").
 
-WHERE WE HAVE LOOKED: Official Records ser. I vols. 46 pts 1-3 and 47 pt 2 and ORN ser. I vol. 11 (full text, by phrase and by name); Butler's Private and Official Correspondence vol. V; The Papers of Ulysses S. Grant vols. 13-14 by Google Books snippet search; Internet Archive full-text search across all collections; Chronicling America; the Huntington's CONTENTdm full-text search across the whole Eckert collection.
+WHERE WE HAVE LOOKED: Official Records ser. I vols. 46 pts 1-3 and 47 pt 2 and ORN ser. I vols. 11-12 (full text, by phrase and by name; vol. 12 from the Internet Archive copy officialrecords10librgoog); Butler's Private and Official Correspondence vol. V; The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search and vol. 14 in full text (Internet Archive papersofulyssess0014gran); Internet Archive full-text search across all collections; Chronicling America; the Huntington's CONTENTdm full-text search across the whole Eckert collection; Plum, The Military Telegraph during the Civil War vol. II (1882), and J. E. O'Brien, Telegraphing in Battle (1910), in full text (second audit, 10 Oct 2026). O'Brien's diary for Sunday 26 Feb 1865 (Telegraphing in Battle p.218) records the order in summary only ("one hundred miles of material, twenty operators, twenty instruments, eight construction men, tools, etc."); the telegram's text is not printed there.
 
 WHERE WE HAVE NOT YET LOOKED PROPERLY (start here)
-- ORN ser. I vol. 12; The Papers of Ulysses S. Grant vols. 13-14 notes page by page; NARA RG 92, 107 and 393; Google Books; HathiTrust; JSTOR; newspapers of the following week.
+- The Papers of Ulysses S. Grant vol. 13 notes page by page; NARA RG 92, 107 and 393; Google Books; HathiTrust; JSTOR; newspapers of the following week.
 
 HOW TO REPORT (this part is the same for every label)
 - Write your answer as one Markdown file in the repository github.com/NoAutopilot/cipher-lab at the path
