@@ -20824,3 +20824,88 @@ every code group is C from the clear copy. FV-L17c's s.3 readings (season = Lew 
 - Requests: hdl.huntington.org 23 (19 CONTENTdm queries incl. control, one dropped connection not retried; 1 item record; 3 IIIF leaves); archive.org 12
   (5 _djvu.txt GETs: 3 x 500/404, one retry after 25 s 200); be-api.us.archive.org 18 (5 x 502); www.loc.gov 8; googleapis 0.
 For the orchestrator (owner account) and LANE LEDGER-17 (account 1).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER17-2)
+
+Second verifier AUD2-LEDGER17-2 (account 1, session_01RgGEo7nkLzsFiLC8djWyp5, Opus 5.5, for the orchestrator (owner account), WORK-QUEUE row
+AUD2-LEDGER17-2), 10 Oct 2026, 18:42-19:2x UTC by `date -u`; a separate session from the reader FM-S65B and the first verifier FV-L17b, not
+protecting their conclusions. Scope: **E594** (5941/2) and **E591** (5908/0), first audit "## AUDIT (FV-L17b)" (E589 E590 E592 E593 there are D1,
+not re-audited). Nothing decoded; code groups re-looked up in key.md. Key source: `period` (War Department Cipher No. 1). Step 0 not used (non-test
+on mssEC 25). Intake gate (18:4x): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0. No
+spec, so `judge_plaintext.py` was not run. Scripts and raw output (committed, `fortmonroe/`): `aud2_l17_2_prior.out`, `aud2_l17_2_hdl.out` (run
+with `fv_l17b_hdl.py`, queries in s.2), `aud2_l17_2_gb.py` (+ `.out`), `aud2_l17_2_beapi.py` (+ `.out`). Sherman's Memoirs vol. 2 (IA
+`thememoirsofgene05853gut`, Project Gutenberg text of vol. II part 4) and John Sherman's Recollections vol. 1 (IA `johnshermansreco01sheruoft`,
+title page "VOLUME I", London, Sampson Low 1895) were read from scratch copies, not committed. ORN I/12 (`officialrecords10librgoog`, running head
+"N W R -- VOL 12") was read by date from the cached print-check text.
+
+### 1. Prior work (prior-work-step.md, civil-war adapter)
+`tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=5941|5908;date=..;sender=..;recipient=..' --step-type
+second-audit --offline` (18:4x, before the first network request): exit 4 each. The step LEADs are the three target-level live claims
+(CLEAR-SWEEP 13:25, FIX-L17a 16:50, OR-CACHE2 16:51), none covering a second audit of these two. E594's 4-editions LEADs are OR I/46 pt 3,
+I/47 pts 1 and 3 windows of 26-28 Mar 1865: the I/47 pt 3 pp.32-33 companions FV-L17b already read (Sherman to Grant, to Stanton, Stanton's
+reply) and Grant's report ("visited me at City Point on the 27th of March"), none this telegram. E591: CLEAR on the editions on disk; Tomokiyo
+LEAD is louisxiv.htm (another subject). UNCHECKED-NET: `warofrebellion014702rootrich` (an I/47 pt 2 copy; OR-CACHE2 holds that part as
+`warofrebellion431unit`) and the aaymeloglu repository (no cache). The tool's write to prior-work.tsv was reverted.
+
+### 2. Families added by this audit
+| Family | Result |
+|---|---|
+| **Sherman, Memoirs (1875) vol. 2, ch. XXIII** (Gutenberg text, whole chapter read for 25-31 Mar 1865) | **E594's sending and purpose are printed by its sender:** "We put to sea at once and steamed up the coast, reaching Fortress Monroe on the morning of the 27th, where I landed and telegraphed to my brother, Senator Sherman, at Washington, inviting him to come down and return with me to Goldsboro. We proceeded on up James River to City Point, which we reached the same afternoon." Same chapter: the return "took on board my brother, Senator Sherman, and Mr. Edwin Stanton" (page not taken from this text). |
+| **John Sherman, Recollections of Forty Years (1895) vol. 1, pp.353-354** (running head "354 RECOLLECTIONS") | The recipient's side: "In the latter part of March, I was invited by General Sherman, then on a visit to Grant near Petersburg, Virginia, to go with him to Goldsboro, North Carolina, where his army was then encamped. ... We joined General Sherman at Fortress Monroe and accompanied him on the steamer 'Bat' to Newbern and thence by rail to Goldsboro." The invitation is paraphrased; the telegram's words are not given. |
+| J. S. Barnes, With Lincoln in 1865 (IA `presidententersc00barn`, be-api in-item) | "Senator Sherman": 1 hit, the Bat's run "taking back with me Senator Sherman and Mr. Stanton ... landed Senator Sherman and Mr. Stanton" (the return, after 28 Mar); "John Sherman" query returned no JSON (be-api error), unchecked. Context only. |
+| Huntington CONTENTdm full text (one hdl take 18:5x, after AUD2-LEDGER17-1's release; control 'Inspector Inquiry evidence' -> 9678; 12 fresh queries, none of FM-S65B's or FV-L17b's; **the code words queried too**, so a received copy at Washington transcribed with the same arbitraries would hit) | **No copy of either at another pointer.** E594: 'Shear man grapes' -> 5941 own; 'tussey Jupiter' -> own; 'Kitchen Wednesday' -> 4305 (June 1863), 5937 (press despatch of the Cincinnati Commercial correspondent, Mar 1865: other), own; 'census peasant flora' -> 5938 (the same press despatch, continued: other), own; 'Senator Sherman' 0; 'Goldsboro Wednesday' -> 8642 (Sherman, Laurel Hill 8 Mar), 8656 (the press despatch in clear), 7844 (24 Mar, from the steamer Russia at Fort Monroe for the Secretary of War: other). E591: 'Farmer Radford' and 'Radford Ironsides' -> 5886 (24 Jan, E539/E541 chain) and own; 'torpid owes' -> 5907 (E557, the sister) and own; 'harrow squadron' -> own, 9170, 5715 (other dates); 'Lynch Inspector Ordnance' -> own; 'submarine torpedoes' -> **9944**, a Washington clear book, 25 Jan 1865, Wise (Chief, Bureau of Ordnance) to Admiral Gregory, New York: "Send immedy by Express to Comdr Lynch at [Norfolk] ... buoyant torpedoes ... submarine torpedoes to contain ... pds of powder" -- the January supply to Lynch, not E591; it confirms "Sub[marine]" as the Bureau's own term for these torpedoes. |
+| ORN ser. I vol. 12 by date, 13-21 Feb 1865 (cached text) | p.17-18: Radford, New Ironsides off Bermuda Hundred, 13 Feb (torpedo launch sunk) and the 14 Feb 4.15 p.m. telegram to Wise ("I have made a requisition for 20 torpedoes that will stand immersion. Wanted now."), as FV-L17b; Welles to Radford 16 Feb ("Commanding James River Division, Bermuda Hundred, Va.": remain at the front); Macomb 15 Feb (New Berne: "I wrote to day to the Bureau of Ordnance for the torpedoes", another district); Jones' Landing 18 Feb ("The Ironsides left for Norfolk early this morning"). **No Lynch telegram or letter is printed in the volume** (no Union Lynch in its text; the three Lynch hits are the Confederate flag officer). E591 not printed. |
+| Google Books API (keyed, `country=US`) | Control '"six vessels" Oriental' HTTP 429, one retry after 25 s, 429 again; run stopped (2 requests). **The Papers of Ulysses S. Grant vol. 13 is still unchecked** for E591 (third session running). |
+| IA be-api whole collection (control '"Wait at Fort Monroe until I get there"' hit 7 OR copies after one 502) | '"expect to go back to Goldsboro"' 0; '"Senator Sherman" "Old Point" Wednesday Goldsboro' 639, 1890s-1916 N.C. newspapers, off subject; '"John Sherman" "Fortress Monroe" "Bat" Newbern 1865' -> Barnes (above), others off subject; '"Dominick Lynch" torpedoes' and '"submarine torpedoes" Radford Lynch': off subject (1818 papers, 20th-century navy). **Unchecked (502 twice):** '"telegraphed to my brother, Senator Sherman"', '"no torpedoes on hand" Bureau'. |
+| JSTOR | 4 rows appended to JSTOR-QUEUE.tsv (both families); they never block a class. |
+| Not reached | NARA RG 107 (telegrams received at the War Department, 27 Mar 1865: the Washington copy of E594), RG 45 (Navy: Lynch, Radford); Grant Papers vol. 13 (429); Sherman's Home Letters (1909) and the press of 28-31 Mar 1865; HathiTrust full text; open indexes (FV-L16e and AUD2-LEDGER16-2/3 found them off subject for these ledgers). |
+
+### 3. Readings and grades, checked
+- **E594:** every code group re-looked up: Animal Monroe, grapes Washington, Jupiter Grant, black City Point, census Goldsboro, peasant By the way of,
+  flora Newbern, vernon Point, Kitchen Sherman. FV-L17b's **9 of 9 H/C** stands. The printed narratives agree with the reading on every point they
+  touch (Fortress Monroe, the 27th, to Senator Sherman at Washington, City Point, Goldsboro, Newbern), and differ in one: the Memoirs call it an
+  invitation "to come down and return with me", the telegram as read gives the itinerary only (the invitation implied, and answered the same evening:
+  Stanton, OR I/47 pt 3 p.33, "Your brother, Senator Sherman, will start at 8 o'clock this evening to meet you at City Point"). The Memoirs put the
+  landing in the morning; the ledger's "sent 1.40 PM" is the Fort Monroe office's sending time, after the 1.10 PM (Grant) and 1.30 PM (Stanton) rows
+  on the same leaf: no conflict.
+- **E591 -- correction: "Burr Muddy" reads.** It is the clerk's phonetic spelling of **Bermuda**, already established on this ledger (E293, 8 Dec
+  1864, "Burr muddy to paradise Webster" = Bermuda [Hundred] to [Colonel] Webster, AUDIT "phonetic plain"; E243 "Burr muddy wines" 10 Dec 1864):
+  the clerk splits the word because **Bermuda is itself a key row** (key.md: Bermuda = White River). FV-L17b's "Burr unread (M)" and "Muddy = key
+  row, line indicator: 5 lines (route word)" are withdrawn: Muddy sits mid-line inside the address, not in an indicator position, and "New Ironsides,
+  Bermuda" is the address the print itself uses ("U. S. S. New Ironsides, Bermuda Hundred, February 14, 1865"; Welles to Radford "Bermuda Hundred,
+  Va.", 16 Feb). **Grades: Farmer, plaster, quincy, zodiac, wrangled, harrow, squadron, youth, polkaer, polking = 10 H/C; Burr Muddy = Bermuda I
+  (plain-phonetic, E293 precedent) = 10 H/C + 1 I of 11, nothing unread.** The rest of FV-L17b's s.4 for E591 stands (Polking = commanding;
+  Sub [Marine] = submarine, now also supported by holder 9944, Wise's own "submarine torpedoes" to Lynch on 25 Jan).
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | text | depth | basis |
+|---|---|---|---|---|---|
+| E594 | **N3 -> N2** (`plaintext_novelty` N2, `mapping_novelty` N3; not counted) | period | **substance known**: the sender's Memoirs vol. 2 ch. XXIII name this telegram (Fortress Monroe, morning of 27 Mar 1865, to Senator Sherman at Washington) and its purpose (to come down and return with him to Goldsboro); the recipient's Recollections vol. 1 pp.353-354 the same, with the route by Fortress Monroe, the Bat and Newbern | D3 (kept; external now also the two memoirs) | the words are not printed, but the precedent on this ledger for a telegram whose sending and substance a party's own diary or memoir records is N2 (E28, AUD2-LS-B: Welles's Diary; E600, AUD2-LEDGER14-1: Stahr). E283 (N3 held) differs: there the print paraphrased the order's effect without naming the telegram as sent; here the sender himself names it |
+| E591 | **N3** (kept) | period | not known | **D3** (kept; completeness raised to 10 H/C + 1 I of 11, nothing unread; depth_pct 90.9) | not located after FV-L17b and s.2; ORN I/12 prints the demand (Radford 14 Feb) and nothing from Lynch |
+- **Not N4 (E591):** Grant Papers vol. 13 unsearched (Google Books 429 in three sessions), NARA RG 45 unread, two be-api queries unchecked (502).
+- **Safe sentences.** E591: FV-L17b's, with "New Ironsides, Bermuda [Hundred]" in the address and "ORN ser. I vol. 12 read by date 13-21 Feb" among the
+  places not located. **E594 (replaces FV-L17b's):** "Read at grade H with War Department Cipher No. 1: on 27 Mar 1865 at 1.40 p.m. Fort Monroe sent
+  to Washington a telegram from Maj. Gen. W. T. Sherman to his brother, Senator John Sherman: 'I am going to see General Grant at City Point and
+  expect to go back to Goldsboro by way of Newbern from Old Point on Wednesday.' Sherman's Memoirs (1875, vol. 2, ch. XXIII) record that he landed
+  at Fortress Monroe that morning and telegraphed his brother inviting him to come down and return with him to Goldsboro, and John Sherman's
+  Recollections (1895, vol. 1, pp.353-354) record the invitation and the journey; the telegram's own words were not located in print (Official
+  Records ser. I vols. 46-47, ORN ser. I vols. 11-12, Grant Papers vol. 14 by full-text search, The Sherman Letters 1894, the Internet Archive's and
+  the Huntington's full-text search, 10 Oct 2026)."
+- **Unsafe:** for E594, any sentence that the telegram or its content was unknown, or "not in print" without the two memoirs; any novelty word for
+  either; for E591, "Burr unread" or "Muddy, a line indicator".
+
+### 5. Postmortem, leads and propagation
+- FV-L17b's two errors. (1) E594: its gap named John Sherman's Recollections and Sherman's Memoirs as unread and still set N3; both print the
+  telegram's sending and gist. Lesson (the AUD2-LS-B lesson again): when a telegram is a party's personal message (to family, to a patron), read the
+  sender's and the recipient's memoirs **by date** before N3 -- here two IA texts, four requests. (2) E591: a split plain word ("Burr Muddy") was
+  looked up row by row; before an M on a two-word plain span, grep ciphertext*.txt and AUDIT.md for the same span (E293 had it).
+- For a FIX job (not applied here; reading.md is decode.py output): **E591: entry note so "Burr Muddy" reads Bermuda (plain-phonetic, I, as
+  E293), header address "Commodore William Radford commanding the 5th Division, New Ironsides, Bermuda [Hundred]"**; FV-L17b s.6 for E591 otherwise
+  stands (drop its "Burr M"). **E594: header N2 note naming Sherman's Memoirs vol. 2 ch. XXIII and John Sherman's Recollections vol. 1 pp.353-354**;
+  FV-L17b s.6 for E594 otherwise stands. Entry stays filed (lane ruling, 10 Oct: no entry is removed).
+- Propagated: status.json E594 -> grade N2, plaintext_novelty N2, audit_status "two audits", line/gap/depth_check; E591 -> audit_status "two audits",
+  completeness, depth_unread, unresolved_spans, line; SECOND-OPINIONS-QUEUE.tsv SO-ECKERT-E594 **withdrawn (N2)** (E28 precedent), SO-ECKERT-E591 kept
+  queued and its prompt's reading line corrected (rule 10: a revision carried into a queued SO prompt); WORK-QUEUE AUD2-LEDGER17-2 -> done.
+- Requests: hdl.huntington.org 13 (all 200; one take); www.googleapis.com 2 (both 429); archive.org 8 (one 500); be-api.us.archive.org 14 (6 x 502,
+  two queries unchecked).
+For the orchestrator (owner account) and LANE LEDGER-17 (account 1).

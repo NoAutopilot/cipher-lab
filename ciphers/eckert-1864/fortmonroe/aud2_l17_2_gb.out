@@ -1,0 +1,3 @@
+control | "six vessels" Oriental | HTTP 429 (attempt 1 )
+control | "six vessels" Oriental | HTTP 429 (attempt 2 )
+STOP at first unrecovered error

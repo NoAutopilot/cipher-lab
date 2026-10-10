@@ -16054,9 +16054,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L17b)'"
+        "AUDIT.md '## AUDIT (FV-L17b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER17-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-L17b verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -16064,7 +16065,7 @@
       "date": "10 Oct 2026",
       "kind": "reading",
       "claim_scope": "completed-reading",
-      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L17b)' section 5",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER17-2)' section 4",
       "reading_version": "FM-S65B reader 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L17b) s.4 (fixes pending in s.6)",
       "unresolved_spans": "see AUDIT (FV-L17b) s.4",
       "depth_unread": {
@@ -16072,12 +16073,12 @@
         "other": "0"
       },
       "depth_pct": 100.0,
-      "grade": "N3",
-      "plaintext_novelty": "N3",
+      "grade": "N2",
+      "plaintext_novelty": "N2",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Maj. Gen. W. T. Sherman, via Fort Monroe, to the Hon. John Sherman, 27 Mar 1865 1.40 PM: going to see Grant at City Point, back to Goldsboro by way of Newbern from Old Point on Wednesday (E594)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 27 Mar 1865 at 1.40 p.m. Fort Monroe sent to Major Eckert in Washington a telegram from Maj. Gen. W. T. Sherman for the Hon. John Sherman: 'I am going to see General Grant at City Point and expect to go back to Goldsboro by way of Newbern from Old Point on Wednesday'; not located in the Official Records ser. I vols. 46 and 47, ORN ser. I vols. 11-12, Butler's correspondence vols. IV-V, J. E. O'Brien's Telegraphing in Battle (1910), the Internet Archive's full-text search or the Huntington's full-text search (searched 10 Oct 2026, one audit); The Sherman Letters (1894) has no letter of these dates; John Sherman's Recollections vol. 1 not yet searched.",
-      "gap": "N3 one audit (FV-L17b); not N4: John Sherman's Recollections vol. 1 and Sherman's Memoirs not read, Grant Papers 14 by IA full-text search only, NARA RG 107 unread, JSTOR not queued",
+      "line": "Read at grade H with War Department Cipher No. 1: on 27 Mar 1865 at 1.40 p.m. Fort Monroe sent to Washington a telegram from Maj. Gen. W. T. Sherman to his brother, Senator John Sherman: 'I am going to see General Grant at City Point and expect to go back to Goldsboro by way of Newbern from Old Point on Wednesday.' Sherman's Memoirs (1875, vol. 2, ch. XXIII) record that he landed at Fortress Monroe that morning and telegraphed his brother inviting him to come down and return with him to Goldsboro, and John Sherman's Recollections (1895, vol. 1, pp.353-354) record the invitation and the journey; the telegram's own words were not located in print (Official Records ser. I vols. 46-47, ORN ser. I vols. 11-12, Grant Papers vol. 14 by full-text search, The Sherman Letters 1894, the Internet Archive's and the Huntington's full-text search, 10 Oct 2026; two audits).",
+      "gap": "N2, not counted: substance in Sherman's Memoirs vol. 2 ch. XXIII and John Sherman's Recollections vol. 1 pp.353-354 (AUD2-LEDGER17-2); SO-ECKERT-E594 withdrawn",
       "depth": "D3",
       "completeness": "9 of 9 code-word tokens H/C (Census = Goldsboro, Black = City Point C from OR I/47 pt 3 p.33 via the printed 5941/1; Kitchen = Sherman C via holder 8561)",
       "phrases": [
@@ -16088,16 +16089,17 @@
         "Huntington mssEC 25 (obj 5952) p.397, pointer 5941, E594"
       ],
       "depth_sentence": "On 27 Mar 1865 Sherman, passing Fort Monroe, telegraphed his brother John Sherman that he was going to see Grant at City Point and expected to return to Goldsboro by way of Newbern from Old Point on Wednesday.",
-      "depth_check": "code: Animal = Monroe, Grapes = Washington, Jupiter = Grant, Black = City Point, Census = Goldsboro, Peasant = By the way of, Flora = Newbern, Vernon = Point, Kitchen = Sherman; external (non-statistical): OR I/47 pt 3 pp.32-33 -- Sherman at Old Point 27 Mar en route to City Point to see Grant, returning to Goldsborough; Stanton's 6.55 p.m. reply 'Your brother, Senator Sherman, will start at 8 o'clock this evening to meet you at City Point'; the clause does not survive the reader's meaning-shuffled key (FM-S65B, seed 7)",
-      "depth_note": "FV-L17b: depth per rule 4a and the 8 Oct depth bar; see AUDIT (FV-L17b) s.5"
+      "depth_check": "code: Animal = Monroe, Grapes = Washington, Jupiter = Grant, Black = City Point, Census = Goldsboro, Peasant = By the way of, Flora = Newbern, Vernon = Point, Kitchen = Sherman; external (non-statistical): OR I/47 pt 3 pp.32-33 -- Sherman at Old Point 27 Mar en route to City Point to see Grant, returning to Goldsborough; Stanton's 6.55 p.m. reply 'Your brother, Senator Sherman, will start at 8 o'clock this evening to meet you at City Point'; the clause does not survive the reader's meaning-shuffled key (FM-S65B, seed 7); Sherman, Memoirs vol. 2 ch. XXIII (landed at Fortress Monroe the morning of the 27th and telegraphed his brother at Washington) and John Sherman, Recollections vol. 1 pp.353-354 (AUD2-LEDGER17-2)",
+      "depth_note": "FV-L17b, kept by AUD2-LEDGER17-2 (D3); see AUDIT 2 (AUD2-LEDGER17-2) s.4"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L17b)'"
+        "AUDIT.md '## AUDIT (FV-L17b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER17-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-L17b verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -16105,22 +16107,22 @@
       "date": "10 Oct 2026",
       "kind": "reading",
       "claim_scope": "completed-reading",
-      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L17b)' section 5",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER17-2)' section 4",
       "reading_version": "FM-S65B reader 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L17b) s.4 (fixes pending in s.6)",
-      "unresolved_spans": "see AUDIT (FV-L17b) s.4",
+      "unresolved_spans": "none (AUD2-LEDGER17-2: 'Burr Muddy' = Bermuda); fixes pending: AUDIT (FV-L17b) s.6 and AUDIT 2 (AUD2-LEDGER17-2) s.5",
       "depth_unread": {
         "names_codes": "0",
-        "other": "1"
+        "other": "0"
       },
       "depth_pct": 90.9,
       "grade": "N3",
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): D. Lynch, Norfolk, via Fort Monroe, to Commodore William Radford commanding the 5th Division (New Ironsides), 16 Feb 1865: no torpedoes on hand, 20 submarine torpedoes asked of the Bureau of Ordnance (E591)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 16 Feb 1865 Fort Monroe passed to S. H. Beckwith at City Point, for Commodore William Radford commanding the 5th Division, New Ironsides, a message from Norfolk signed D. Lynch, commander and inspector of ordnance: no torpedoes on hand; he had telegraphed the Bureau of Ordnance for 20 submarine torpedoes and would forward them immediately on receipt; not located in the Official Records ser. I vols. 46 and 47, ORN ser. I vols. 11-12, Butler's correspondence vols. IV-V, J. E. O'Brien's Telegraphing in Battle (1910), the Internet Archive's full-text search or the Huntington's full-text search (searched 10 Oct 2026, one audit); The Papers of Ulysses S. Grant vol. 13 not yet searched.",
-      "gap": "N3 one audit (FV-L17b); not N4: The Papers of Ulysses S. Grant vol. 13 not searched (Google Books 429), ORN by grep only, NARA RG 45 unread, JSTOR not queued",
+      "line": "Read at grade H with War Department Cipher No. 1: on 16 Feb 1865 Fort Monroe passed to S. H. Beckwith at City Point, for Commodore William Radford commanding the 5th Division, New Ironsides, Bermuda [Hundred], a message from Norfolk signed D. Lynch, commander and inspector of ordnance: no torpedoes on hand; he had telegraphed the Bureau of Ordnance for 20 submarine torpedoes and would forward them immediately on receipt; not located in the Official Records ser. I vols. 46 and 47, ORN ser. I vols. 11-12, Butler's correspondence vols. IV-V, J. E. O'Brien's Telegraphing in Battle (1910), ORN ser. I vol. 12 read by date 13-21 Feb, the Internet Archive's full-text search or the Huntington's full-text search (searched 10 Oct 2026, two audits); The Papers of Ulysses S. Grant vol. 13 not yet searched.",
+      "gap": "N3 two audits (FV-L17b, AUD2-LEDGER17-2); not N4: The Papers of Ulysses S. Grant vol. 13 not searched (Google Books 429 in three sessions), NARA RG 45 unread, two IA full-text queries unchecked (502)",
       "depth": "D3",
-      "completeness": "10 of 11 code-word tokens H/C ('polking' = commanding; 'Burr' M)",
+      "completeness": "10 H/C + 1 I of 11 code-word tokens ('polking' = commanding; 'Burr Muddy' = Bermuda, plain-phonetic I, as E293); nothing unread",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.364, pointer 5908, E591"
       ],
@@ -16130,7 +16132,7 @@
       ],
       "depth_sentence": "On 16 Feb 1865 Lynch at Norfolk told Radford he had no torpedoes on hand and had telegraphed the Bureau of Ordnance for 20 submarine torpedoes, to be forwarded on receipt.",
       "depth_check": "code: Farmer = Norfolk, Plaster = 5, Quincy = Division, Polka(ing) = Commanding, wrangled = telegraphed, Harrow = 20, Squadron = Marine (Sub-marine), Polkaer = Commander, Youth = Signature; external (non-statistical): ORN I/12, Radford, New Ironsides, 14 Feb 1865, requisition for 20 torpedoes 'that will stand immersion'; holder clear copy 7768 of Lynch's same-day telegram to Wise (E557), 'Sub marine Torpedoes'; the reader's meaning-shuffled key reads 5, Division, 20 as Rail Road, Winchester, B. F. Kelly",
-      "depth_note": "FV-L17b: depth per rule 4a and the 8 Oct depth bar; see AUDIT (FV-L17b) s.5"
+      "depth_note": "FV-L17b, kept by AUD2-LEDGER17-2 (D3, nothing unread); see AUDIT 2 (AUD2-LEDGER17-2) s.4"
     }
   ],
   "lanes": [

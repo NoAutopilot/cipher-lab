@@ -1,0 +1,35 @@
+eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines
+exit 0
+  plaintext LEAD          4-editions    [adhoc-085eea:4-editions:0b8f38] edition-hit warofrebellion361unit: 2 window(s), null at +-30 days [1, 1]; open the page, then --record: ched little rock on the 2d a mistake a i smith s command reached cotile landing march 28 chap xl
+  plaintext LEAD          4-editions    [adhoc-085eea:4-editions:3fa063] edition-hit warofrebellion381unit: 2 window(s), null at +-30 days [1, 1]; open the page, then --record: assigned to the command of a mistake a i smith s command reached cotile landing march 28 the atl
+  plaintext LEAD          4-editions    [adhoc-085eea:4-editions:737f2d] edition-hit warofrebellion461unit: 2 window(s), null at +-30 days [1, 0]; open the page, then --record: tions for furnishing supplies to them perfected uisited me at city point on the 27th of march an
+  plaintext LEAD          4-editions    [adhoc-085eea:4-editions:b7ac20] edition-hit warofrebellion463unit: 20 window(s), null at +-30 days [0, 28]; open the page, then --record: hich he made yesterday on our lines u s grant lieutenant general washington e c march 26 1865 
+  plaintext LEAD          4-editions    [adhoc-085eea:4-editions:069078] edition-hit warofrebellion471unit: 12 window(s), null at +-30 days [7, 149]; open the page, then --record: to goldsborough fiue miles march 25 changed camp to front one mile intrenching march 26 lay i
+  plaintext LEAD          4-editions    [adhoc-085eea:4-editions:439a35] edition-hit warofrebellion014703rootrich: 50 window(s), null at +-30 days [0, 102]; open the page, then --record: f satisfactory to yourself p m b young maior genera i com manning city point ua march 
+  plaintext LEAD          4-editions    [adhoc-085eea:4-editions:f1c2f9] edition-hit warofrebellion481unit: 9 window(s), null at +-30 days [9, 4]; open the page, then --record: ing post capt b b campbell asst adit gen i district of la fourehe thibodeaux la march 26 29 1865
+  plaintext LEAD          4-editions    [adhoc-085eea:4-editions:7f9fb8] edition-hit warofrebellion491unit: 1 window(s), null at +-30 days [0, 2]; open the page, then --record: no 98 lieut iohn w bennett c s nauy commanding steamer nashuille of operations march 27 april 11
+  plaintext LEAD          4-editions    [adhoc-085eea:4-editions:55a9df] edition-hit warofrebellion492unit: 2 window(s), null at +-30 days [0, 48]; open the page, then --record: ua tenn n c ga miss ala w fla headquarters district of tennessee nashuille tenn march 26 1865 c
+  plaintext UNCHECKED-NET 4-editions    [adhoc-085eea:4-editions:95e0f9] not on disk (warofrebellion014702rootrich); --network fetches the djvu text
+  plaintext CLEAR         4-editions    [adhoc-085eea:4-editions:f96526] date +-1 day and both correspondents searched, control hit, no window: warofrebellion322unit warofrebellion33unit warofrebellion013403rootrich warofrebellion013404rootrich warofrebellion351unit warofr
+  holds: specific 16 (LEAD 16); generic 2 (UNCHECKED-NET 2)
+  verdict plaintext: LEAD
+  verdict step: LEAD
+exit 4: owed before this step: LEAD adhoc-085eea:1-own:277ec2, LEAD adhoc-085eea:1-own:3694c3, LEAD adhoc-085eea:1-own:d42c6d
+exit 0
+prior_work eckert-1864 item adhoc-1d727d (shelfmark=Huntington mssEC 25; folio=5908; date=1865-02-16) step second-audit @ origin/main 251fc8461 (2026-10-10T18:42)
+  step      LEAD          1-own         [adhoc-1d727d:1-own:277ec2] live-claim (target-level: names the slug, no unit; check it does not cover this item) (5.3 h, no done line): 2026-10-10 13:25 | CLEAR-SWEEP worker (Sonnet 5.5) | claim (13:25 UTC 10 Oct by date -u, bo
+  step      LEAD          1-own         [adhoc-1d727d:1-own:d42c6d] live-claim (target-level: names the slug, no unit; check it does not cover this item) (1.9 h, no done line): 2026-10-10 16:50 | FIX-L17a worker | claim: FIX-L17a, eckert-1864 apply s.5 of FV-L16b/c/d 
+  step      LEAD          1-own         [adhoc-1d727d:1-own:3694c3] live-claim (target-level: names the slug, no unit; check it does not cover this item) (1.9 h, no done line): 2026-10-10 16:51 | OR-CACHE2 (Sonnet 5.5) | claim (16:5x UTC 10 Oct by date -u): fetch the 
+  plaintext LEAD          3-tomokiyo    [adhoc-1d727d:3-tomokiyo:f54616] date-match (date + correspondent, not a shelfmark: open it): sources/cryptiana/web/louisxiv.htm (text line 110) The War of the Reunions (1683-1684) (Wikipedia [https://en.wikipedia.org/wiki/War_of_the
+  plaintext UNCHECKED-NET 3-solver      [adhoc-1d727d:3-solver:c79056] unsolved-ciphers (github.com/aaymeloglu/unsolved-ciphers): no cache on disk, not searched; pass --clone <local clone> to search it
+  plaintext CLEAR         3-solver      [adhoc-1d727d:3-solver:a7793a] no cached solver file names this unit: sources/cyphersolver, sources/cyphersolver-site, sources/bourdeau
+  plaintext UNCHECKED-NET 4-editions    [adhoc-1d727d:4-editions:95e0f9] not on disk (warofrebellion014702rootrich); --network fetches the djvu text
+  plaintext CLEAR         4-editions    [adhoc-1d727d:4-editions:f96526] date +-1 day and both correspondents searched, control hit, no window: warofrebellion321unit warofrebellion322unit warofrebellion323unit warofrebellion33unit warofrebellion013401rootrich warofrebellio
+  holds: specific 4 (LEAD 4); generic 2 (UNCHECKED-NET 2)
+  verdict plaintext: LEAD
+  verdict step: LEAD
+exit 4: owed before this step: LEAD adhoc-1d727d:1-own:277ec2, LEAD adhoc-1d727d:1-own:3694c3, LEAD adhoc-1d727d:1-own:d42c6d
+exit 0
+ M ciphers/eckert-1864/prior-work.tsv
+
+[exited with code 0]
