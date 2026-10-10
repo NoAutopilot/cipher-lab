@@ -3,8 +3,8 @@
 
 python3 bm_gate7.py [--check]
 Reads bm/passes/<line>_B<k>.tsv for the seven glossed Blank-Marshall letters of Birch 1742 vol 6; a gloss word spanning several
-groups is on the span's first group with '^' on the rest (l3370 is glossed by words). Writes bm/<line>_pairs_B<k>.tsv for the three
-added letters (the four THUR-BM pairs files are rewritten identically by the same rule), trains per fold with
+groups is on the span's first group with '^' on the rest (l3370 is glossed by words). Writes bm/pairs7/<line>_pairs_B<k>.tsv for all seven
+letters (THUR-BM's own bm/<line>_pairs_B<k>.tsv are left as they are; tokens here lose a trailing dot), trains per fold with
 tools/interlinear_align.py align (default --floor 100), scores against the held-out letter's own per-group gloss, shuffled-key
 control 200 draws (seeds 0..199). Writes bm/gate7.tsv and bm/key_blankmarshall_7.tsv; --check exits 1 if either is stale.
 """
@@ -53,7 +53,7 @@ def write_pairs(L, k, rows):
     byrow = collections.OrderedDict()
     for r in rows:
         byrow.setdefault(r['row'], []).append(r)
-    p = os.path.join(H, f'{L}_pairs_{k}.tsv')
+    os.makedirs(os.path.join(H, 'pairs7'), exist_ok=True); p = os.path.join(H, 'pairs7', f'{L}_pairs_{k}.tsv')
     txt = 'plain_line\tplain_raw\tcipher_line\tcipher_raw\n'
     for rid, rs in byrow.items():
         if not any(r['kind'] == 'N' for r in rs):

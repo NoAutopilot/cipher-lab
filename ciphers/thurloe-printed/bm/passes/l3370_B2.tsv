@@ -29,7 +29,7 @@ row	pos	kind	token	gloss
 2	11	N	4	^
 2	12	N	54	^
 2	13	N	16	^
-3	1	N	75	fhipping
+3	1	N	75	ſhipping
 3	2	N	31	^
 3	3	N	36	^
 3	4	N	61	^
@@ -37,14 +37,14 @@ row	pos	kind	token	gloss
 3	6	N	52	^
 3	7	N	29	^
 3	8	N	109	Dunkirk
-3	9	N	110	Oftend
+3	9	N	110	Oſtend
 4	1	N	46	lives
 4	2	N	39	^
 4	3	N	81	^
 4	4	N	21	^
 4	5	N	76	^
-4	6	N	110	Oftend
-5	1	N	24	freely admitted to go there without paffes
+4	6	N	110	Oſtend
+5	1	N	24	freely admitted to go there without paſſes
 5	2	N	69	^
 5	3	N	21	^
 5	4	N	22	^
@@ -83,9 +83,9 @@ row	pos	kind	token	gloss
 6	16	N	76	^
 6	17	N	20	^
 6	18	N	73	^
-6	19	N	104	Ch. Stew.
+6	19	N	104	Ch. Stew
 7	1	N	109	Dunkirk
-7	2	N	63	proclamations of?
+7	2	N	63	proclamations of
 7	3	N	69	^
 7	4	N	60	^
 7	5	N	10	^
@@ -101,7 +101,7 @@ row	pos	kind	token	gloss
 8	1	N	57	^
 8	2	N	26	^
 8	3	N	105	don John
-8	4	N	64	ports opened?
+8	4	N	64	ports opened
 8	5	N	56	^
 8	6	N	70	^
 8	7	N	80	^
@@ -112,8 +112,8 @@ row	pos	kind	token	gloss
 8	12	N	62	^
 8	13	N	20	^
 8	14	N	52	^
-8	15	N	19	^
-8	16	N	17	^
+8	15	N	19	
+8	16	N	17	
 9	1	N	30	governor
 9	2	N	58	^
 9	3	N	82	^
@@ -122,8 +122,8 @@ row	pos	kind	token	gloss
 9	6	N	55	^
 9	7	N	60	^
 9	8	N	84	^
-9	9	N	69	^
-9	10	N	110	Oftend
+9	9	N	69	
+9	10	N	110	Oſtend
 9	11	N	57	obey
 9	12	N	7	^
 9	13	N	18	^
@@ -133,8 +133,8 @@ row	pos	kind	token	gloss
 10	3	N	14	^
 10	4	N	19	^
 10	5	N	71	^
-10	6	N	104	Ch. Stew.
-10	7	N	76	foldiers
+10	6	N	104	Ch. Stew
+10	7	N	76	ſoldiers?
 11	1	N	58	^
 11	2	N	83	^
 11	3	N	46	^
@@ -142,9 +142,9 @@ row	pos	kind	token	gloss
 11	5	N	35	^
 11	6	N	22	^
 11	7	N	72	^
-11	8	N	74	^
-11	9	N	104	Ch. St.
-11	10	N	78	thoufand
+11	8	N	74	
+11	9	N	104	Ch. St
+11	10	N	78	thouſand
 11	11	N	32	^
 11	12	N	60	^
 11	13	N	84	^
@@ -156,7 +156,7 @@ row	pos	kind	token	gloss
 12	4	N	70	^
 12	5	N	50	^
 12	6	N	18	^
-12	7	N	75	^
+12	7	N	75	
 12	8	N	71	recruits
 12	9	N	21	^
 12	10	N	11	^
@@ -165,7 +165,7 @@ row	pos	kind	token	gloss
 12	13	N	77	^
 12	14	N	19	^
 12	15	N	73	^
-13	1	N	74	ftarve
+13	1	N	74	ſtarve
 13	2	N	80	^
 13	3	N	4	^
 13	4	N	72	^
@@ -183,16 +183,16 @@ row	pos	kind	token	gloss
 14	7	N	21	^
 14	8	N	22	^
 14	9	N	16	^
-14	10	N	77	amunition
+14	10	N	77	amunition?
 14	11	N	36	^
-14	12	N	56	^
-14	13	N	55	bread?
+14	12	N	56	bread?
+14	13	N	55	^
 14	14	N	9	^
 14	15	N	70	^
 14	16	N	18	^
 14	17	N	4	^
 14	18	N	17	^
-15	1	N	123	d. of Gloucefter
+15	1	N	123	d. of Glouceſter
 16	1	N	65	quarters?
 16	2	N	85	^
 16	3	N	4	^
@@ -201,14 +201,14 @@ row	pos	kind	token	gloss
 16	6	N	18	^
 16	7	N	70	^
 16	8	N	73	^
-16	9	N	46	Loven?
+16	9	N	46	Loven
 16	10	N	57	^
 16	11	N	82	^
 16	12	N	89	^
 16	13	N	54	^
-16	14	N	115	Don John?
-16	15	N	80	^
-16	16	N	20	quarters?
+16	14	N	115	Don John
+16	15	N	80	quarters
+16	16	N	20	^
 16	17	N	72	^
 16	18	N	74	^
 16	19	N	4	Antwerp
@@ -239,10 +239,10 @@ row	pos	kind	token	gloss
 19	1	N	104	K. Charles
 19	2	N	112	Bruxels
 21	1	N	109	Dunkirk
-21	2	N	110	Oftend
+21	2	N	110	Oſtend
 22	1	N	118	Newburgh
-22	2	N	119	Midleton
-22	3	N	2	Amfterdam
+22	2	N	119	Middleton
+22	3	N	2	Amſterdam
 22	4	N	50	^
 22	5	N	74	^
 22	6	N	80	^
@@ -251,12 +251,12 @@ row	pos	kind	token	gloss
 22	9	N	15	^
 22	10	N	2	^
 22	11	N	49	^
-23	1	N	75	fhips
+23	1	N	75	ſhips
 23	2	N	31	^
 23	3	N	35	^
 23	4	N	61	^
 23	5	N	18	^
-23	6	N	74	^
+23	6	N	74	
 23	7	N	34	Holland
 23	8	N	56	^
 23	9	N	44	^
@@ -265,13 +265,13 @@ row	pos	kind	token	gloss
 23	12	N	54	^
 23	13	N	16	^
 23	14	N	1091	Dunkirk
-24	1	N	110	and Oftend
-24	2	N	119	Midleton
+24	1	N	110	and Oſtend
+24	2	N	119	Middleton
 25	1	N	27	great
 25	2	N	69	^
 25	3	N	191	^
 25	4	N	77	^
-25	5	N	50	minifters
+25	5	N	50	miniſters
 25	6	N	37	^
 25	7	N	54	^
 25	8	N	38	^
@@ -280,7 +280,7 @@ row	pos	kind	token	gloss
 25	11	N	20	^
 25	12	N	70	^
 26	1	N	75	^
-26	2	N	74	ftate
+26	2	N	74	ſtate
 26	3	N	77	^
 26	4	N	4	^
 26	5	N	78	^
@@ -290,9 +290,9 @@ row	pos	kind	token	gloss
 26	9	N	48	^
 26	10	N	19	^
 26	11	N	44	^
-26	12	N	113	Ormond, Hyde
-26	13	N	120	^
-26	14	N	21	Edward Nicholas?
+26	12	N	113	Ormond
+26	13	N	120	Hyne?
+26	14	N	21	Edward Nicholas
 26	15	N	14	^
 26	16	N	89	^
 26	17	N	5	^
@@ -306,16 +306,16 @@ row	pos	kind	token	gloss
 27	6	N	44	^
 27	7	N	3	^
 27	8	N	73	^
-27	9	N	13	^
+27	9	N	13	ſecretary
 27	10	N	71	^
-27	11	N	20	fecretary?
+27	11	N	20	^
 27	12	N	80	^
 27	13	N	5	^
 27	14	N	72	^
 27	15	N	38	^
 27	16	N	18	^
 28	1	N	106	d. York
-28	2	N	11	court again
+28	2	N	11	court again?
 28	3	N	60	^
 28	4	N	81	^
 28	5	N	69	^
@@ -327,9 +327,9 @@ row	pos	kind	token	gloss
 28	11	N	5	^
 28	12	N	4	^
 28	13	N	18	^
-28	14	N	104	Ch. St.
-28	15	N	123	d. Gloucefter
-29	1	N	62	princefs royal
+28	14	N	104	Ch. St
+28	15	N	123	d. Gloceſter
+29	1	N	62	princeſs royal
 29	2	N	70	^
 29	3	N	37	^
 29	4	N	52	^
@@ -361,22 +361,22 @@ row	pos	kind	token	gloss
 31	8	N	52	^
 31	9	N	14	^
 31	10	N	18	^
-31	11	N	33	
-31	12	N	20	
-31	13	N	21	
-31	14	N	72	
-31	15	N	104	Ch. Stew.
+31	11	N	33	^
+31	12	N	20	^
+31	13	N	21	^
+31	14	N	72	^
+31	15	N	104	Ch. Stew
 31	16	N	64	privy
 31	17	N	70	^
-32	1	N	35	council
+32	1	N	35	council?
 32	2	N	81	^
 32	3	N	36	^
 32	4	N	18	^
 32	5	N	11	^
 32	6	N	57	^
 32	7	N	83	^
-32	8	N	54	^
-32	9	N	10	^
-32	10	N	18	^
-32	11	N	45	^
-32	12	N	46	^
+32	8	N	54	
+32	9	N	10	
+32	10	N	18	
+32	11	N	45	
+32	12	N	46	

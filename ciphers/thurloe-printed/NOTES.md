@@ -3106,3 +3106,73 @@ Read so far: l.44535 151 of 151 groups decoded at C (100%) from a key rebuilt fr
 - [ ] image-check: the slip groups of l.44535 on its crops
 - [x] retry: none needed (no 429/403)
 Verdict: keep going: 5 internal gaps; cheapest next: eye check of the l.44535 slip groups, ~$1, then a verifier for the reading
+
+## THUR-BM2 (LANE FAMILY-A2r, account 2, worker Opus 5.5, 10 Oct 2026 15:04-15:2x UTC by date -u)
+Brief: .claude/briefs/runs/2026-10-10-ytbiz-family-1410-jobs.md "### THUR-BM2". Question: do the three further glossed Blank-Marshall letters (ll.3370, 83274, 86815) hold the THUR-BM key under the same pre-registered gate, and what do they say about l.44535's slip groups and code 9. key_blankmarshall.tsv, reading_l44535.*, AUDIT.md and status.json NOT touched (V-THURBM audits them).
+**Prior work.** `prior_work.py thurloe-printed --item-spec 'shelfmark=Birch 1742 vol 6 ll.3370 83274 86815;date=1657-02-11;sender=Blank;recipient=Marshall' --step-type key --fetch`: exit 4, owed 6 own-work LEADs (live claims THUR-B146, THUR-V6, the lane, THUR-BM, V-THURBM, this job), all recorded CLEAR in prior-work.tsv (no earlier job transcribed or aligned these three letters; THUR-BM only listed them); 4 UNCHECKED rows (Tomokiyo/solver caches: no folio or R-id; editions: Birch itself, which is the source). Check 1 by hand: ROOM.md, this folder, AUDIT.md, HYPOTHESES.md, WORK-QUEUE.tsv name 3370 / 83274 / 86815 only in THUR-BM's list (bm/bm_letters.tsv).
+**Route.** archive.org 8 requests, all 200 (take/release lines in ROOM): the bim_ vol 6 djvu text (sha1 f4140c05..., = b146/manifest.tsv) and leaves n32, n33 (pp.31-32, l.3370), n701 (p.698, l.83274), n732, n733 (pp.729-730, l.86815) at w2000, plus n34, n35 (fetched on a page guess of leaf = page + 3; in this part of the volume leaf = page + 1; unused). Page images in scratch, crops committed.
+**Letters.** l.3370 "A letter of intelligence from Mr. Blank Marshall", Bruges 11 Feb 1657 [N.S.], signed John Williams, pp.31-32: dotted numerals inside prose, the gloss printed as whole words and names over each numeral run (e.g. "England" over 19.52.27.44.2.53.14). l.83274 Bruges, last Dec 1657 new style, signed J. H., p.698, letter-by-letter gloss; the last two numeral rows (after "the 94 58 ...") carry no printed gloss. l.86815 the Hague, 14 Jan 1658 N.S., signed B. M., pp.729-730 incl. a postscript line, letter-by-letter gloss.
+**Crop step (pasted; several re-cuts because the first regions clipped text, every final crop's edges eye-checked).** `python3 tools/iiif_lines.py --image n32.jpg --out ciphers/thurloe-printed/bm/crops --prefix l3370_p31 --region 120,1650,1300,1260 --lines-per-crop 40 --max-width 2000 --quality 80`; the same options with `n33 l3370_p32 720,540,1312,920 (lines-per-crop 30)`, `n701 l83274_p698 720,1860,1312,700 (30)`, `n732 l86815_p729 60,2030,1300,880`, `n733 l86815_p730 680,520,1352,310 --top-margin 60`, `n733 l86815_p730b 680,950,1352,110` (6 strip crops, one per page region, bm/crops/manifest.json). One crop per page region rather than 4-line strips: with this printed pitch the 4-line band edges fell through gloss rows (debug overlay), cutting a gloss from its numerals.
+**Transcription.** Two independent blind Sonnet passes per letter on the crops (no key shown; bm/passes/<line>_B1.tsv, _B2.tsv; one call per letter per pass, the two-page letters' crops in one call). Numerals B1 vs B2: l.83274 220/220 identical; l.86815 357 vs 356, B2 dropped one group (row 4 "80", present on the crop and in B1) and it was restored in B2's numerals only (gloss column untouched); l.3370 380/380 identical. Both l.3370 passes took the page-32 margin "56." (A.D. 1656) as a group (row 20, no gloss): removed from both passes. Printed oddities kept as printed: "1091" (Dunkirk gloss; reads as 109 + a stray 1) and "191" (in "great") on p.32, "481" (gloss "Mar") on p.698, "733" (gloss "Sir Mar. Lang.") on p.730. Glosses not reconciled before scoring (V-BRANDT rule).
+**Gate (PREREG-THURBM2.md pushed e67ccdae2, 15:13:12 UTC, before any score; rule of PREREG-THURBM.md unchanged, pool seven letters; `bm/bm_gate7.py --check` exit 0; `bm/gate7.tsv`).** l.3370's word glosses: a span's word is spread one letter per group only when its letter count equals the span's group count (all < 100), otherwise the span is excluded (`excluded` column: 205 groups B1, 138 B2).
+
+| pass | held out | glossed | covered | agree letters (n) | agree codes (n) | agree all | shuffle p95 |
+|---|---|---|---|---|---|---|---|
+| B1 | l3370 | 168 | 154 | 0.929 (141) | 0.462 (13) | 0.890 | 0.091 |
+| B1 | l40469 | 120 | 118 | 0.848 (112) | 0.500 (6) | 0.831 | 0.076 |
+| B1 | l65889 | 158 | 157 | 0.877 (154) | 0.333 (3) | 0.866 | 0.076 |
+| B1 | l77385 | 608 | 605 | 0.876 (595) | 0.400 (10) | 0.868 | 0.076 |
+| B1 | l83274 | 189 | 189 | 0.658 (184) | 0.400 (5) | 0.651 | 0.069 |
+| B1 | l86815 | 356 | 354 | 0.912 (351) | 0.333 (3) | 0.907 | 0.076 |
+| B1 | l89881 | 445 | 445 | 0.915 (437) | 0.250 (8) | 0.903 | 0.074 |
+| B2 | l3370 | 228 | 213 | 0.864 (198) | 0.467 (15) | 0.836 | 0.085 |
+| B2 | l40469 | 123 | 121 | 0.852 (115) | 0.500 (6) | 0.835 | 0.074 |
+| B2 | l65889 | 158 | 157 | 0.877 (154) | 0.333 (3) | 0.866 | 0.076 |
+| B2 | l77385 | 603 | 600 | 0.839 (590) | 0.400 (10) | 0.832 | 0.077 |
+| B2 | l83274 | 189 | 189 | 0.576 (184) | 0.400 (5) | 0.571 | 0.063 |
+| B2 | l86815 | 356 | 354 | 0.897 (351) | 0.333 (3) | 0.893 | 0.079 |
+| B2 | l89881 | 444 | 444 | 0.927 (436) | 0.250 (8) | 0.914 | 0.077 |
+
+Pooled held-out agreement 0.862 (B1, 2022 covered groups) and 0.839 (B2, 2078): **PASS** on both passes, every fold above its own shuffled-key p95 (shuffle means 0.037-0.042). The three added letters are read by a key trained on the other six at 0.89/0.84 (l.3370), 0.65/0.57 (l.83274) and 0.91/0.89 (l.86815). l.83274 is the weak fold: its gloss is set in small letters crowded against the right margin and both readers reported "ll" ligatures and margin glosses they placed by letter count, so part of its gap is likely gloss-to-group placement, not the key (not settled; the gloss is the known answer and was not reconciled).
+**Seven-letter key (`bm/key_blankmarshall_7.tsv`, separate file; `interlinear_align.py align` on all seven letters once per pass).** 117 codes: 112 agree between B1 and B2 (grade C), 5 differ (M). Against key_blankmarshall.tsv (105 codes): 11 codes added (65 q, 109 Dunkirk, 111 [Bruges; the aligner's chunk "es" is a fragment], 115 [Antwerp; chunk "donjohnquar" is a misalignment], 118 Newburgh, 169 [arms; chunk "ar"], 173 Ormond, 191 and 481 (printed oddities, chunks "ea", "ma"), 733 Sir Mar. Lang.; 110 Ostend, 119 Middleton at M only by spelling Oftend/Otend, Midleton/Middleton); the single-chunk word codes from l.3370 are alignment fragments, not readings, and would need a hand pairing before use. Changes of an existing code: **9** s|b (M) -> b (C, 3+3); **8** b (C) -> t|b (M); 112 and 123 C -> M on spelling only (Bruffels/Brussels; d. Gloucefter/Ch. d. Glocester). Every other letter code 1-97 keeps its THUR-BM meaning.
+
+**Per-group witness counts for l.44535's slip codes (known answers from the seven letters' printed glosses, B1/B2 each; `bm_gate7.py`'s answers()):**
+- 94 (y): y in all seven letters (B1: 1+1+2+3+1+3+5 = 16; one "a" in l.86815, one "i" in B2 of l.77385); never h.
+- 48 (m): m in five letters (B1 15), "l" once (l.77385, both passes).
+- 20 (e): e in all seven (B1 45+), scattered a/n/r/s singletons (l.77385, l.83274).
+- 63 (p): p in five letters (B1 12), "r" once (l.83274).
+- 54 (n): n in all seven (B1 31), o/t singletons in l.83274.
+- 52 (n): n in all seven (B1 47), "m" once in l.77385, "p" once in l.83274.
+- 80 (t): t in all seven (B1 29), "n" once in l.65889.
+- 8: t (l.3370, both), n (l.40469, both), b/t/c (l.77385), g/r (l.89881): no stable meaning across the seven.
+- 9: s in l.65889 (both passes), b in l.89881 (both); no occurrence in the three added letters; the seven-letter alignment picks b.
+
+## THUR-BM2 proposed FIX list for l.44535 (NOT applied; for the orchestrator to schedule after V-THURBM, rule 10 propagation)
+1. "tyemselues" (row 7 pos 16, 94=y): the seven letters confirm 94 = y, never h, so this is not a key gap. Either a transcription slip on p.374 (94 for 34 = h; 3/9 in this type) or an encipherment slip. Proposed: eye check of row 7 pos 16 on bm/crops/l44535_p374_L0*.jpg; if the print shows 94, grade the group M (encipherment slip, "them" by context, I); if 34, correct the ciphertext. No key change.
+2. "wil mepllow" (row 12 pos 14-16: 48 m, 20 e, 63 p): all three values confirmed by the witnesses (m 15, e 45+, p 12). No single-code change gives a word ("will follow" needs three changes), so not a key gap; proposed: grade the three groups M and leave the words unread, pending an eye check.
+3. "nany" (row 13 pos 2, 54=n): 54 = n confirmed in all seven letters, so "many" is not a key value; proposed: eye check for 51 (m) misprinted or misread as 54; otherwise M (encipherment slip).
+4. "preuennted" (row 13 pos 12-13, 52 52): 52 = n confirmed; the doubled n is the encipherer's spelling, no fix.
+5. "dew heeret" (row 6 pos 22, 80=t): 80 = t confirmed (t 29, one n); the "t" is not a key gap; proposed: no change (word division in the rendering only).
+6. Code 8 in "debts" (row 6 pos 10): THUR-BM's four letters gave b (C); the seven letters give no stable meaning (t, n, b, c, g, r by group). Proposed: regrade this one group from C to M ("b" by context, I) until 8's occurrences in ll.3370, 77385, 89881 are eye-checked for 8/3/18 confusions.
+7. Code 9 (s|b in key_blankmarshall.tsv): does not occur in l.44535, so the reading is unaffected; the extra letters add no 9, the 7-letter alignment picks b (l.89881) over s (l.65889). Proposed: leave M in key_blankmarshall.tsv.
+Net effect if all proposals were applied: l.44535 C 151 -> C at most 147-149 with 2-4 groups M; no word of the committed reading changes value.
+
+**Where it was not found.** No printed decipherment checked for l.44535 (outside this brief; THUR-BM did pp.374-375). l.3370's word glosses were not paired by hand to their code groups, so codes 109-191 from it carry alignment chunks, not settled names. The slip groups were not eye-checked on l.44535's crops here (left to V-THURBM / a scheduled step, to avoid a second reader of the audited reading in parallel). No novelty class assigned.
+
+## Remaining gaps (THUR-BM2, 10 Oct 2026; replaces the THUR-BM list)
+Read so far: l.44535 151 of 151 groups decoded at C (100%) from the four-letter key; the seven-letter key confirms every slip code's value; 4 slip words unsettled.
+- Proposed FIX list for l.44535 (items 1, 3, 6: eye check of rows 6, 7, 13 on bm/crops/l44535_p374_L0*.jpg, then regrade) - blocker: waiting-on the V-THURBM verifier's reply (its AUDIT.md section); a change during the audit is a rule 10 propagation the lane orchestrator schedules
+- A verifier for the l.44535 reading - blocker: waiting-on the V-THURBM verifier's reply (AUDIT.md, session_01EtqGPrXQojmRY354jk7BRJ); two hats, a solver may not audit
+- l.3370 word-code pairing (codes 109-191, 481, 733 from word glosses) and code 8's occurrences - blocker: not-attempted; the aligner's chunks for single-occurrence word codes are fragments; next: hand-pair l.3370's name glosses to their code groups and eye-check code 8 in ll.3370, 77385, 89881, ~$1
+- Jephson (ll.65973, 76999, 86578) and Meadowe (l.75081) glossed letters - blocker: not-attempted; unchanged since THUR-V6; next: align as one Jephson pool and one Meadowe item, ~$2
+- The vol 6 Downing-Lockhart and vol 4 Blake control-miss letters - blocker: not-attempted; unchanged since THUR-B146; next: align as key_blake/key_lockhart pool extensions, ~$1.5
+
+## Escalation (THUR-BM2, 10 Oct 2026)
+- [x] siblings: all seven glossed Blank-Marshall letters of vol 6 aligned (bm/gate7.tsv)
+- [x] clear-pages: l.3370, 83274, 86815 pages read; their clear text is the gloss
+- [x] known-keys: key_blankmarshall.tsv extended into key_blankmarshall_7.tsv (separate file)
+- [x] print: Birch's own gloss is the key source; no other print sought (outside brief)
+- [x] key-rebuild: seven-letter gate PASS both passes
+- [ ] image-check: the l.44535 slip groups and code 8 on their crops
+- [x] retry: none needed (no 429/403)
+Verdict: keep going: 3 internal gaps; cheapest next: after V-THURBM, eye check of l.44535 rows 6, 7, 13 and code 8, ~$1
