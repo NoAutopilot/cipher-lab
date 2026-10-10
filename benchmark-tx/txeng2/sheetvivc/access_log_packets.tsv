@@ -1,0 +1,144 @@
+label	agent	tool	target	ok
+P01	a56ab4a709e436143	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P01_task.txt	ok
+P01	a56ab4a709e436143	Read	/home/user/cipher-lab/benchmark-tx/txeng2/viv102base/sheet_SIGNS_dv1.md	ok
+P01	a56ab4a709e436143	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P01_queue.tsv	ok
+P01	a56ab4a709e436143	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L01_s1.jpg	ok
+P01	a56ab4a709e436143	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L01_s2.jpg	ok
+P01	a56ab4a709e436143	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L02_s1.jpg	ok
+P01	a56ab4a709e436143	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L02_s2.jpg	ok
+P01	a56ab4a709e436143	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L03_s1.jpg	ok
+P01	a56ab4a709e436143	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L03_s2.jpg	ok
+P01	a56ab4a709e436143	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L04_s1.jpg	ok
+P01	a56ab4a709e436143	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L04_s2.jpg	ok
+P01	a56ab4a709e436143	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L05_s1.jpg	ok
+P01	a56ab4a709e436143	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L05_s2.jpg	ok
+P01	a56ab4a709e436143	Bash	Bash write script; paths named: /home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets	OUTSIDE
+P01	a56ab4a709e436143	SubagentHandback	(reply) {"message": "Rows: 16. Rows with viewed = yes: 16.\nOutput file: /home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/pac	ok
+P02	aaf7828eb40f6bc63	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P02_task.txt	ok
+P02	aaf7828eb40f6bc63	Read	/home/user/cipher-lab/benchmark-tx/txeng2/viv102base/sheet_SIGNS_dv1.md	ok
+P02	aaf7828eb40f6bc63	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P02_queue.tsv	ok
+P02	aaf7828eb40f6bc63	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L05_s1.jpg	ok
+P02	aaf7828eb40f6bc63	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L05_s2.jpg	ok
+P02	aaf7828eb40f6bc63	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L06_s1.jpg	ok
+P02	aaf7828eb40f6bc63	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L06_s2.jpg	ok
+P02	aaf7828eb40f6bc63	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L07_s1.jpg	ok
+P02	aaf7828eb40f6bc63	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L07_s2.jpg	ok
+P02	aaf7828eb40f6bc63	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L08_s1.jpg	ok
+P02	aaf7828eb40f6bc63	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L08_s2.jpg	ok
+P02	aaf7828eb40f6bc63	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L09_s1.jpg	ok
+P02	aaf7828eb40f6bc63	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L09_s2.jpg	ok
+P02	aaf7828eb40f6bc63	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L10_s1.jpg	ok
+P02	aaf7828eb40f6bc63	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L10_s2.jpg	ok
+P02	aaf7828eb40f6bc63	Bash	Bash write script; paths named: /home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets	OUTSIDE
+P02	aaf7828eb40f6bc63	SubagentHandback	(reply) {"message": "Rows: 16. Rows with viewed = yes: 16.\nCrop files opened (all in /home/user/cipher-lab/ciphers/fr16104-vivo	ok
+P03	a01384b50bd75a22f	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P03_task.txt	ok
+P03	a01384b50bd75a22f	Read	/home/user/cipher-lab/benchmark-tx/txeng2/viv102base/sheet_SIGNS_dv1.md	ok
+P03	a01384b50bd75a22f	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P03_queue.tsv	ok
+P03	a01384b50bd75a22f	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L10_s1.jpg	ok
+P03	a01384b50bd75a22f	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L10_s2.jpg	ok
+P03	a01384b50bd75a22f	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L11_s1.jpg	ok
+P03	a01384b50bd75a22f	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L11_s2.jpg	ok
+P03	a01384b50bd75a22f	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L12_s1.jpg	ok
+P03	a01384b50bd75a22f	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L12_s2.jpg	ok
+P03	a01384b50bd75a22f	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L13_s1.jpg	ok
+P03	a01384b50bd75a22f	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L13_s2.jpg	ok
+P03	a01384b50bd75a22f	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L15_s1.jpg	ok
+P03	a01384b50bd75a22f	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L15_s2.jpg	ok
+P03	a01384b50bd75a22f	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L16_s1.jpg	ok
+P03	a01384b50bd75a22f	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L16_s2.jpg	ok
+P03	a01384b50bd75a22f	Bash	Bash write script; paths named: /home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets	ok
+P03	a01384b50bd75a22f	SubagentHandback	(reply) {"message": "Row count: 16. Rows with viewed = yes: 16.\n\nOutput file: /home/user/cipher-lab/benchmark-tx/txeng2/sheetv	ok
+P04	a72c858ec42c23909	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P04_task.txt	ok
+P04	a72c858ec42c23909	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P04_queue.tsv	ok
+P04	a72c858ec42c23909	Read	/home/user/cipher-lab/benchmark-tx/txeng2/viv102base/sheet_SIGNS_dv1.md	ok
+P04	a72c858ec42c23909	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L17_s1.jpg	ok
+P04	a72c858ec42c23909	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L17_s2.jpg	ok
+P04	a72c858ec42c23909	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L18_s1.jpg	ok
+P04	a72c858ec42c23909	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L18_s2.jpg	ok
+P04	a72c858ec42c23909	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L19_s1.jpg	ok
+P04	a72c858ec42c23909	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L19_s2.jpg	ok
+P04	a72c858ec42c23909	Write	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P04_out.tsv	ok
+P04	a72c858ec42c23909	SubagentHandback	(reply) {"message": "Rows: 16. Rows with viewed = yes: 16.\nCrops opened (all in /home/user/cipher-lab/ciphers/fr16104-vivonne-s	ok
+P05	a099b79cfc19a1c6e	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P05_task.txt	ok
+P05	a099b79cfc19a1c6e	Read	/home/user/cipher-lab/benchmark-tx/txeng2/viv102base/sheet_SIGNS_dv1.md	ok
+P05	a099b79cfc19a1c6e	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P05_queue.tsv	ok
+P05	a099b79cfc19a1c6e	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L19_s1.jpg	ok
+P05	a099b79cfc19a1c6e	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L19_s2.jpg	ok
+P05	a099b79cfc19a1c6e	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L20_s1.jpg	ok
+P05	a099b79cfc19a1c6e	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L20_s2.jpg	ok
+P05	a099b79cfc19a1c6e	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L21_s1.jpg	ok
+P05	a099b79cfc19a1c6e	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L21_s2.jpg	ok
+P05	a099b79cfc19a1c6e	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L22_s1.jpg	ok
+P05	a099b79cfc19a1c6e	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L22_s2.jpg	ok
+P05	a099b79cfc19a1c6e	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L23_s1.jpg	ok
+P05	a099b79cfc19a1c6e	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L23_s2.jpg	ok
+P05	a099b79cfc19a1c6e	Bash	Bash write script; paths named: /home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets P05_out.tsv	ok
+P05	a099b79cfc19a1c6e	SubagentHandback	(reply) {"message": "Rows: 16. Rows with viewed = yes: 14 (the two L19 rows, cols 55 and 56, are viewed = no because I could not	ok
+P06	a12aa080d7601c10c	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P06_task.txt	ok
+P06	a12aa080d7601c10c	Read	/home/user/cipher-lab/benchmark-tx/txeng2/viv102base/sheet_SIGNS_dv1.md	ok
+P06	a12aa080d7601c10c	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P06_queue.tsv	ok
+P06	a12aa080d7601c10c	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L23_s1.jpg	ok
+P06	a12aa080d7601c10c	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L23_s2.jpg	ok
+P06	a12aa080d7601c10c	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L24_s1.jpg	ok
+P06	a12aa080d7601c10c	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L24_s2.jpg	ok
+P06	a12aa080d7601c10c	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L25_s1.jpg	ok
+P06	a12aa080d7601c10c	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L25_s2.jpg	ok
+P06	a12aa080d7601c10c	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L26_s1.jpg	ok
+P06	a12aa080d7601c10c	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L26_s2.jpg	ok
+P06	a12aa080d7601c10c	Bash	Bash write script; paths named: /home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets	ok
+P06	a12aa080d7601c10c	SubagentHandback	(reply) {"message": "Rows: 16\nRows with viewed = yes: 16\nCrop files opened (all in /home/user/cipher-lab/ciphers/fr16104-vivon	ok
+P07	a983ab95c0979de3f	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P07_task.txt	ok
+P07	a983ab95c0979de3f	Read	/home/user/cipher-lab/benchmark-tx/txeng2/viv102base/sheet_SIGNS_dv1.md	ok
+P07	a983ab95c0979de3f	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P07_queue.tsv	ok
+P07	a983ab95c0979de3f	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L26_s1.jpg	ok
+P07	a983ab95c0979de3f	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L26_s2.jpg	ok
+P07	a983ab95c0979de3f	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L27_s1.jpg	ok
+P07	a983ab95c0979de3f	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L27_s2.jpg	ok
+P07	a983ab95c0979de3f	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L28_s1.jpg	ok
+P07	a983ab95c0979de3f	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L28_s2.jpg	ok
+P07	a983ab95c0979de3f	Bash	Bash write script; paths named: /home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets	ok
+P07	a983ab95c0979de3f	SubagentHandback	(reply) {"message": "Row count: 16. Rows with viewed = yes: 16.\n\nCrop files opened:\n- /home/user/cipher-lab/ciphers/fr16104-v	ok
+P08	a43173895c3352867	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P08_task.txt	ok
+P08	a43173895c3352867	Read	/home/user/cipher-lab/benchmark-tx/txeng2/viv102base/sheet_SIGNS_dv1.md	ok
+P08	a43173895c3352867	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P08_queue.tsv	ok
+P08	a43173895c3352867	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L28_s1.jpg	ok
+P08	a43173895c3352867	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L28_s2.jpg	ok
+P08	a43173895c3352867	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L29_s1.jpg	ok
+P08	a43173895c3352867	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L29_s2.jpg	ok
+P08	a43173895c3352867	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L30_s1.jpg	ok
+P08	a43173895c3352867	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L30_s2.jpg	ok
+P08	a43173895c3352867	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L31_s1.jpg	ok
+P08	a43173895c3352867	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L31_s2.jpg	ok
+P08	a43173895c3352867	Bash	Bash write script; paths named: /home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets	ok
+P08	a43173895c3352867	SubagentHandback	(reply) {"message": "Row count: 16. Rows with viewed = yes: 16.\n\nCrop files opened (all in /home/user/cipher-lab/ciphers/fr161	ok
+P09	aea7c236705d47ef3	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P09_task.txt	ok
+P09	aea7c236705d47ef3	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P09_queue.tsv	ok
+P09	aea7c236705d47ef3	Read	/home/user/cipher-lab/benchmark-tx/txeng2/viv102base/sheet_SIGNS_dv1.md	ok
+P09	aea7c236705d47ef3	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L31_s1.jpg	ok
+P09	aea7c236705d47ef3	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L31_s2.jpg	ok
+P09	aea7c236705d47ef3	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L32_s1.jpg	ok
+P09	aea7c236705d47ef3	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L32_s2.jpg	ok
+P09	aea7c236705d47ef3	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L33_s1.jpg	ok
+P09	aea7c236705d47ef3	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L33_s2.jpg	ok
+P09	aea7c236705d47ef3	Bash	Bash write script; paths named: /home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets	ok
+P09	aea7c236705d47ef3	SubagentHandback	(reply) {"message": "Rows: 16. Rows with viewed = yes: 16.\nCrop files opened (all under /home/user/cipher-lab/ciphers/fr16104-v	ok
+P10	a2e9f94cdb9c132ef	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P10_task.txt	ok
+P10	a2e9f94cdb9c132ef	Read	/home/user/cipher-lab/benchmark-tx/txeng2/viv102base/sheet_SIGNS_dv1.md	ok
+P10	a2e9f94cdb9c132ef	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P10_queue.tsv	ok
+P10	a2e9f94cdb9c132ef	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L34_s1.jpg	ok
+P10	a2e9f94cdb9c132ef	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L34_s2.jpg	ok
+P10	a2e9f94cdb9c132ef	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L35_s1.jpg	ok
+P10	a2e9f94cdb9c132ef	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L35_s2.jpg	ok
+P10	a2e9f94cdb9c132ef	Bash	Bash write script; paths named: /home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets	ok
+P10	a2e9f94cdb9c132ef	SubagentHandback	(reply) {"message": "Rows: 16. Rows with viewed = yes: 16.\nCrop files opened:\n/home/user/cipher-lab/ciphers/fr16104-vivonne-sp	ok
+P11	aded2d4f870981a13	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P11_task.txt	ok
+P11	aded2d4f870981a13	Read	/home/user/cipher-lab/benchmark-tx/txeng2/viv102base/sheet_SIGNS_dv1.md	ok
+P11	aded2d4f870981a13	Read	/home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets/P11_queue.tsv	ok
+P11	aded2d4f870981a13	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L35_s1.jpg	ok
+P11	aded2d4f870981a13	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L35_s2.jpg	ok
+P11	aded2d4f870981a13	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L36_s1.jpg	ok
+P11	aded2d4f870981a13	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L36_s2.jpg	ok
+P11	aded2d4f870981a13	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L37_s1.jpg	ok
+P11	aded2d4f870981a13	Read	/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L37_s2.jpg	ok
+P11	aded2d4f870981a13	Bash	Bash write script; paths named: /home/user/cipher-lab/benchmark-tx/txeng2/sheetvivc/packets	ok
+P11	aded2d4f870981a13	SubagentHandback	(reply) {"message": "Row count: 16. Rows with viewed = yes: 16 (many verdicts are conf L).\n\nCrop files opened:\n- /home/user/c	ok
