@@ -70,3 +70,33 @@ subagent. Re-look at 1200 px (at most 6 requests) only where a sheet shows a num
 five Escalation rungs marked "not assessed" ([x]/[ ]/[n/a] with the section that settles each; leave [ ] with a named next step where nothing
 does), refresh Remaining gaps / Verdict, gaps_check.py. NOTES "## OBRED-0259". Report what was found and where it was not found (limits as
 OBRED-6016 states them); do not classify novelty.
+
+## Wave 2 result (05:5x UTC)
+OBRED-0259 (1.29): 87 scans, controls 9/9; **scan 187 (inv. 6016, archive pencil "143") = a Dutch letter signed "P. Brederode", dated 17 Oct
+1604, the no. 92 sign-off formula, with a postscript of about 80 numeral groups** (images/na_101_02_6016_p0187_1200.jpg, _numerals_zoom.jpg).
+Orchestrator's own look at the zoom (not a transcription, M): values 97, 108, 110, 217, 289, 337, 409, 420, 433, 440 appear in both the
+187 block and no. 92's printed groups -- a possible shared code, unmeasured.
+
+## Wave 3 (06:1x UTC 10 Oct)
+
+### OBRED-187 (Opus worker, Sonnet subagents, cap 5, box 90 min, NA <= 8 requests, huygens <= 10): oldenbarnevelt-brederode-1605, the scan-187 postscript
+Read ONLY NOTES "## OBRED-0259", the folder head (what is established about no. 92), ciphertext.txt, and "## Remaining gaps"/"## Escalation".
+1. Prior work first (prior-work-step.md; paste output): is the 17 Oct 1604 Brederode letter printed? Veenendaal deel II (GS 108) and deel I/III
+   via the Huygens retroboeken full-text search (`retroboeken/oldenbarnevelt`, terms "17 october 1604", "Brederode", "Stettin", and the clear
+   phrase you read); the editor's preface says no. 92 is the only cipher piece in deel II, so record whether the 1604 letter is printed and if
+   its postscript is omitted, marked or deciphered. Also grep the folder and DECODE notes for "1604". A printed decipherment = stop after step 3
+   and say so (N0 material, key source).
+2. Fetch scans 186, 187, 188 at native size from service.archief.nl IIIF (METS base as OBRED-0259; NA take/release; 3-6 requests). 186/188:
+   does the letter or the code continue? Commit what is cited (JPEG, folder under 30 MB).
+3. Read the clear letter of 187 (date, place -- "Stettin"?, addressee, content in two lines) by eye at native size, grade M.
+4. Crop the numeral block (paste `tools/iiif_lines.py --image <187 native> --out images/p187_lines ...`), two blind Sonnet passes on line crops only
+   (not told no. 92 or any value), one reconciliation unit by you on the crops -> `ciphertext_187.tsv` (line, pos, group, grade H-read/M), the
+   clear insertion ("oock bestaen dat dits"?) kept as text.
+5. PREREG-OBRED187.md pushed in its own commit BEFORE computing it: the overlap statistic between the set of 187 values and no. 92's printed
+   values (ciphertext.txt groups only), against a control that can differ: values drawn from a model of the same range and size (e.g. uniform
+   over 1..max of the two, and a resample matched to 187's own value histogram shape), 10,000 draws, p-value; plus the same statistic against
+   1-2 unrelated three-digit code texts of the period on disk (e.g. a DECODE 1600s key's code range or another folder's code numbers) as a
+   negative. Report numbers; a shared-code claim is only "consistent with" at M, never a reading. Run `tools/key_design.py` on the pooled values
+   if its help shows a fit; no decode, no key.
+6. NOTES "## OBRED-187", Remaining gaps / Escalation / Verdict, gaps_check.py. If the overlap clears its control, end with one line asking the
+   lane for a design_prior / pooled-attack step (do not start it). Report what was found and where it was not found; do not classify novelty.
