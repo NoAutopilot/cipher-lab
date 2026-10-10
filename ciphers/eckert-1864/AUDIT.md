@@ -13670,6 +13670,82 @@ text, headings read around each date):
 - **N2-FE:** **H 25, C 1** (Repeat = Order); "Roof us In galls" = Rufus Ingalls (plain), Palestine = Brig. General, Vermont = Quarter Master (H); "writ
   earned" = retained (plain split); "How are you" operators' chatter: **26 of 26** code groups H/C.
 
+## AUDIT (FV-N2b)
+
+Verifier FV-N2b (account 1, for LANE LEDGER-N2), 10 Oct 2026, 01:22-01:4x UTC by `date -u`; a separate session from the readers N2R-1 and N2R-2, not protecting
+their conclusions. Scope: first audits of **N2-FH** (mssEC 18 p.250, pointer 9916, entry 2, 17 Dec 1864), **N2-GE** (same leaf, entry 1, 16 Dec 1864) and
+**N2-GF** (mssEC 18 p.56, pointer 9722, entry 1, 25 Apr 1864), all Cipher No. 2 in ciphertext-no2.txt (`decode_no2.py --check` exit 0). Nothing decoded beyond
+key look-ups in key-no2.md. Key source for all three: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Intake gate (01:2x):
+`eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Prior work (`tools/prior_work.py eckert-1864 --item-spec
+'item_id=N2-FH;ptr=9916/2;date=1864-12-17' --step-type audit --offline`, same for N2-GE 9916/1 1864-12-16 and N2-GF 9722/1 1864-04-25): exit 4 each, verdict step
+LEAD, every LEAD an own-work line of this repository (the readers' filings), none an earlier audit of these entries. Scripts: `ms18/fv_n2b_hdl.py` (+
+`fv_n2b_hdl.out`, `fv_n2b_info.out`), Google Books phrase pass `ms18/fv_n2b_gb.out`. For LANE LEDGER-N2 (account 1).
+
+### 0. What the readers missed
+- **N2-GE is in print.** OR ser. I vol. 41 pt 4 p.869 (IA `warofrebellion414unit`, read on the page image, leaf n874): "Washington, December 16, 1864 -- 1.20 p.m.
+  (Received 26th.) Major-General Canby, New Orleans: General: The arrival of Sherman's army at Savannah renders it unnecessary that you should keep supplies and
+  troops to meet him on the Gulf coast. The Quartermaster-General has ordered the supplies in vessels at Pensacola to Hilton Head. The others will be at your
+  disposal. H. W. Halleck, Major-General and Chief of Staff." Word for word with the reading; Canby's reply of 27 Dec (holder 8504) is printed on p.940 of the same
+  volume. N2R-2 listed "OR I/41 pt 4 not searched": that was the volume. "flora's pern" is **Sherman's army** (Flora = Maj Gen W T Sherman, H; the written word is
+  "pern" or "peru" on the leaf, Peru = Army, H by key, C by print); the reading's "the arrival of the 'Savannah'" left these two groups unread. Print hour 1.20 p.m.,
+  ledger 1.30 PM (Harriet = 1.30 PM): a one-figure difference, the ledger's own.
+- **N2-GF has its answer in the holder.** Pointer **4569** (mssEC 18 received, p.128): "Recd 6 10 PM / Maj Eckert Hdqrs A. P Apl 25th 1864 4 PM For Gen Augur the
+  regiment of Cavalry can be sent but I would prefer not doing so if you can get along without it Gen Meade" -- Meade's reply to this telegram, the same day.
+  The leaf (image) carries a pencilled "2 30 Pm" over the date line, not in the Huntington transcription; the time word Jennie = 3 PM (H). "collecting",
+  "Collected" and "business" are **plain** words here; the decoder pushed them through the proper-name page (Collect = Harrison, Business = Browns Ferry) and the
+  reading prints "[Harrison]ing corn", "[Harrison]ed", "this [Browns Ferry]" (the Princess/trade shape of AUDIT (FV-MS18o) s.5 again). "Stephen" (key: Left) reads
+  as "in the" by sense ("horses &c [in the] vicinity of Upperville"): M.
+- **N2-FH has its sequel in the holder.** Pointer **9142/0** (already filed as **N2-CJ**, audited in AUDIT section 3 table above "Not located: N2-CE, N2-CJ, N2-CK"):
+  Emerick at City Point, Washington 18 Dec 1864, to "Pearl Bradley chief Vermont": "The orders given at first in relation to the transports for [Sherman] will be
+  carried out. Have such of the boats named as are in the [James] sent off as directed without delay to their destination", signed "Rue Two In galls" -- the
+  follow-up to N2-FH; neither reader nor N2-CJ's audit tied the two. On the leaf, the last line reads "trinity [over struck point] **walch** Rufus In Galls Chf vermont
+  Palermo &c": the Huntington transcription (and so ciphertext-no2.txt) omits "walch", read as **Welch = Signature** (H row, M on the spelling). "Marshal" (left
+  unread) is the date: Marshall = 17 (fly leaf, H row; M on the spelling) = 17 Dec. "wilby" is written "willy" (not in the key; "will be" by sense, M);
+  "tooth" not in the key (M, unread). Palermo = Brigadier General (Ingalls's rank).
+
+### 1. Duplicates and image (own entries, IIIF 2400 px; line crops via `tools/iiif_lines.py --image ... --region`, crops to scratch)
+- **Duplicate diff:** the holder's full text finds 'Cossack Collyer', 'Manhattan Crescent', 'Hero Jersey vessels' only on 9916, and 'Mosby Upperville',
+  'Upperville Warrenton' only on 9722 (s.2); `entries-mssEC19.tsv` has no 16-17 Dec 1864 Canby or Bradley entry and no 25 Apr 1864 Meade entry. 9142/0 (N2-CJ) is
+  a different telegram (18 Dec, other words). **No duplicate.**
+- **9916 (p.250):** both entries match the transcription line by line, except N2-FH's last line ("walch" omitted; "wilby" is "willy") and the header label
+  "No V." over N2-GE (N2R-2 already noted). **9722 (p.56):** matches line by line; the label "no 2" is circled beside "Caldwell"; "2 30 Pm" pencilled above the date.
+
+### 2. Holder's full text, siblings and print
+**Huntington CONTENTdm** (p16003coll11, CISOSEARCHALL, all pointers; one hdl take 01:2x-01:3x, 18 requests: 9 queries, 7 item infos, 2 IIIF): 'Cossack Collyer'
+1 (9916); 'Bradley Ingalls' 2 (5854 = Sheldon, Fort Monroe, 4 Jan 1865, other; 9142 = N2-CJ, s.0); 'Manhattan Crescent' 1 (9916); 'Hero Jersey vessels' 1 (9916);
+'Pensacola Hilton Head' 6 (8504 = Canby's reply, s.0; 9879, 8926, 8927, 9893 no Pensacola/Hilton Head passage on reading, other; 9916); 'Canby Sherman Savannah' 0;
+'Mosby Upperville' 1 (9722); 'Upperville Warrenton' 1 (9722); 'Augur Meade regiment cavalry' 1 (4569 = Meade's reply, s.0). Positive controls: own pages hit on
+every own-word query. None is a clear copy of N2-FH, N2-GE or N2-GF.
+
+**Print** (archive.org djvu texts to scratch: OR I/44 `warofrebellion44unit`, I/41 pt 4 `warofrebellion414unit`, I/42 pt 3 `warofrebellion423unit`; I/33 and
+I/45 pt 2 from sources/ia-fulltext/print-check; page images via `page/n<leaf>`):
+- **N2-GE -> in print**, OR I/41 pt 4 p.869 (s.0; image read).
+- **N2-FH -> not located.** 'Cossack' 0 in I/44, I/42 pt 3, I/41 pt 4, I/45 pt 2; 'Collyer' only "Allen Collyer" (I/41 pt 4, other); 'Hero of Jersey', 'G. W.
+  Bradley' 0; Ingalls in I/44 one mention (p.755 index line, other). Google Books phrase pass: '"Guide, Cossack"' hits only the OR's 1861 Port Royal fleet list
+  (other); '"Hero of Jersey" Savannah' only a North Carolina roster (hospital ship, Oct 1864, other).
+- **N2-GF -> not located.** OR I/33 date window 24-26 Apr 1864 (pp.~975-986): no Augur-Meade item on Mosby; the context is printed: p.985 Tyler to Taylor (Fairfax
+  C. H., 26 Apr, received 6.15 p.m.): "I can start between 500 and 600 and as many infantry on Thursday as proposed"; p.315 Augur's report of Lowell's "Scout from
+  Vienna toward Upperville, April 28-May 1, 1864": "the cavalry scout sent out on Thursday ... Leesburg, Upperville, Paris, Bloomfield, Union, and Rectortown. No
+  force but Mosby was found" (djvu text; p.315 and p.985 not read on the page image). Google Books '"Mosby is collecting corn"' and '"vicinity of Upperville"
+  Augur Meade regiment': no print of this telegram (Lowell's Leesburg corn report, Mosby histories, other).
+- Not searched: OR ser. III vol. 4 (Quartermaster General's 1864-65 report, vessel lists), ORN (army transports to Savannah), Meigs papers, NARA RG 92/RG 107,
+  Grant Papers vol. 13 (N2-FH; the readers ran vols 10 and 13 by be-api for GF/GE only), the press of 17-20 Dec 1864, HathiTrust, JSTOR.
+
+### 3. Grades and readings (reading-no2.md as of this audit)
+- **N2-GE:** Yellow = Friday, Johnson = 16, Mastiff = Canby, Flora = Sherman, pern/Peru = Army, hebrew = Savannah, widows = Troops, burglar = Quartermaster
+  General, Wiley = Signature, lamb = Halleck, Harriet = 1.30 PM: **11 code groups, 9 H by the decoder + 2 (Flora, pern) H by key, all 11 C against the print.**
+- **N2-FH:** Minnie = 7 PM, Revenue = Lieutenant, Paxton = Colonel, Vermont = Quartermaster (x3), Waltzer = Steam(er), Watson = Report (x2), fortune = Sherman,
+  tulip = period, talbot = Of the, Shylock = In the, Abbot = James, spit = Near, Hebrew = Savannah, trinity = Point, Palermo = Brigadier General: **19 H**;
+  Marshal (17), walch (Signature), willy (will be), tooth (unread): **4 M**. 19 of 23 = 82.6% H. Reading: "Washington, Dec. 17, 1864, 7 PM. Lieut. Col. G. W.
+  Bradley, Chief Quartermaster: The steamers Guide, Cossack, T. Collyer, Escort, Louise, Hero of Jersey, Manhattan and Crescent are ordered to report to General
+  Sherman. Any of the above-named vessels which are in the James will be ordered to report as directed at or near Savannah [tooth] chief quartermaster at that
+  point. [Signature] Rufus Ingalls, Chief Quartermaster, Brigadier General." The addressee's station (City Point) is from N2-CJ's header (I).
+- **N2-GF:** monarch = Meade, silvers = Horses, Wayne = Regiment, pekin = Cavalry, prospect = Command, Yancy = Wednesday, Yankee = Thursday, Quack = Destroy,
+  Stanhope = Interrogation, Lantern = Augur, Jennie = 3 PM: **11 H**; Stephen (key Left, "in the" by sense) **1 M**: 11 of 12 = 91.7%. Plain: collecting, Collected,
+  business (not key words here). Reading: "Washington, Apr. 25, 1864, 3 PM. Hd Qrs Army of the Potomac. Meade: Mosby is collecting corn, horses &c. in the vicinity
+  of Upperville. Can you send a regiment of cavalry from Warrenton to meet a command I will send on Wednesday or Thursday next to break up this business and to
+  take and destroy the supplies collected? Augur."
+
 ### 4. Classes (rule 10) and depth (rule 4a)
 | ID | class | key | depth | % code groups H/C/S | basis | safe sentence |
 |---|---|---|---|---|---|---|
@@ -13709,3 +13785,38 @@ which finds 10443 for N2-FB. Corrections (a verifier does not edit ciphertext-no
 
 Requests: hdl.huntington.org 13 (10 CISOSEARCHALL, 3 IIIF 2400 px; all 200); archive.org 6 djvu (all 200) + 1 advancedsearch; be-api.us.archive.org 11 (all
 answered). Queued: WORK-QUEUE `AUD2-LEDGERN2-1` (N2-FA, N2-FB, N2-FE), SO-ECKERT-N2-FA, SO-ECKERT-N2-FB, SO-ECKERT-N2-FE. For LANE LEDGER-N2 (account 1)
+
+| N2-GE Halleck to Canby, New Orleans, 16 Dec 1864 | **N1** | period | D3 | 100 (11 C against print) | plaintext printed OR I/41 pt 4 p.869 (1891); our reading is an independent re-decipherment of the ledger copy | "The War Department's cipher copy of Halleck's telegram of 16 Dec 1864 to Canby (supplies at Pensacola to go to Hilton Head after Sherman reached Savannah), read with Cipher No. 2, agrees word for word with the text printed in the Official Records, ser. I vol. 41 pt 4 p.869." |
+| N2-FH Ingalls to Lt. Col. G. W. Bradley, 17 Dec 1864 | **N3** | period | D3 | 82.6 (19 H of 23) | not located: OR I/41 pt 4, I/42 pt 3, I/44, I/45 pt 2 (vessel names, 16-18 Dec windows), Google Books phrases, holder full text; holder 9142/0 (N2-CJ) is the 18 Dec sequel, not a copy | "Read with War Department Cipher No. 2 (period key): on 17 Dec 1864 Rufus Ingalls ordered eight steamers, among them the Guide, Cossack and Manhattan, to report to Sherman at or near Savannah, those in the James included; not located in print (searched 10 Oct 2026)." |
+| N2-GF Augur to Meade, 25 Apr 1864 | **N3** | period | D3 | 91.7 (11 H of 12) | not located: OR I/33 24-26 Apr window, Google Books phrases, holder full text, Grant Papers vol. 10 (reader); holder 4569 is Meade's reply | "Read with War Department Cipher No. 2 (period key): on 25 Apr 1864 Augur asked Meade for a cavalry regiment from Warrenton to join a force he would send on Wednesday or Thursday to break up Mosby's collecting of corn and horses near Upperville; Meade's reply of the same day is in the Huntington's Eckert papers; not located in print (searched 10 Oct 2026)." |
+
+Not N4 for N2-FH or N2-GF: OR ser. III vol. 4, ORN, NARA RG 92/107, the Meigs and Ingalls papers, the Dec 1864 press, HathiTrust, JSTOR unsearched. Unsafe: "first",
+"new", "unpublished", "never printed"; for N2-GE anything beyond N1 (it is in the OR); "Bradley was at Savannah" (City Point by N2-CJ's header, I); "the Hero of
+Jersey belonged to Jeff Davis" (decoder slip); "Augur's raid of 28 April answered this telegram" (p.315 is context, I). Depth checks (D3: >=80% of code groups
+H/C/S plus an external non-statistical check): N2-GE -- the OR print (p.869) and Canby's reply (holder 8504, OR p.940). N2-FH -- code clause "Minnie Marshal Revenue
+Paxton GW Bradley Chief Vermont" = 7 PM, 17, Lieutenant Colonel G. W. Bradley, Chief Quartermaster; external: holder 9142/0 (18 Dec, "the transports for Sherman ...
+the boats named as are in the James"). N2-GF -- code clause "can you send a Wayne of pekin from Warrenton to meet a prospect" = a regiment of cavalry ... a command;
+external: holder 4569 (Meade, 25 Apr 4 PM: "the regiment of Cavalry can be sent but I would prefer not"). Depth sentences (my own): N2-FH -- "Ingalls ordered eight named army steamers, including any then in the James, to report to Sherman at or near Savannah."
+N2-GF -- "Augur planned a
+midweek strike at Mosby's corn and horse gathering around Upperville and asked Meade for a cavalry regiment from Warrenton; Meade said he would rather not send it."
+N2-GE -- "Halleck told Canby that Sherman's arrival at Savannah freed him from holding supplies and troops for him on the Gulf coast."
+
+### 5. Postmortem and fixes for a FIX job (not applied here)
+Failure: N2R-2 left OR I/41 pt 4 unsearched for a Halleck-to-Canby telegram (the Gulf volume for Nov-Dec 1864) and so filed a printed item as "not located"; both
+readers stopped the holder search at the clear-copy question and did not open the reply hits (4569, and 9142 already filed as N2-CJ). The decoder again turned
+plain words into proper-name key words (Collect, Business). Corrections (a verifier does not edit ciphertext-no2.txt or reading-no2.md):
+- N2-GE header/note: "not located" -> "IN PRINT: OR I/41 pt 4 p.869 (IA warofrebellion414unit, leaf n874), Halleck to Canby, Washington 16 Dec 1864 1.20 p.m.,
+  word for word; C against the print; Canby's reply (holder 8504) printed p.940"; "the arrival of the (decoded) 'Savannah'" -> "the arrival of Sherman's army at
+  Savannah" (flora = Sherman, pern = Peru = Army). NOTES "## N2R-2" per-row line for 9916/1 likewise.
+- N2-FH: ciphertext-no2.txt last line add "walch" after the insertion (image): "<deletion>point</deletion> <insertion>trinity</insertion> walch Rufus In Galls Chf
+  vermont Palermo &c"; "wilby" -> "willy"; header: date "17" from Marshal (= Marshall, 17, M), "[Signature]" from walch (= Welch, M), Palermo = Brigadier General;
+  note: sequel 9142/0 = N2-CJ (18 Dec). N2-CJ's note: add "sequel to N2-FH (9916/2, 17 Dec)".
+- N2-GF: header add "ledger pencil 2.30 PM" (image); reading per-entry mechanism (no key edit): **collecting, Collected, business plain** (not Harrison / Browns
+  Ferry); Stephen M ("in the"); note: holder 4569 = Meade's reply (25 Apr 4 PM); OR I/33 p.985 (Tyler, 26 Apr, "on Thursday as proposed") and p.315 (Lowell's scout
+  of 28 Apr-1 May to Upperville) as context.
+- KEY lane: the decoder should not apply proper-name-page rows (Collect, Business) where the plain word makes the sense (now with Princess/trade, at least five
+  entries of this shape).
+
+Requests: hdl.huntington.org 18 (9 CISOSEARCHALL, 7 item info, 2 IIIF 2400 px; all 200); archive.org 3 djvu + 2 page_numbers.json + 3 page images (all 200; the first
+three djvu calls returned 302 without -L and were re-issued with -L); www.googleapis.com/books 4 (all 200).
+Queued: WORK-QUEUE `AUD2-LEDGERN2-1` (N2-FH, N2-GF), SO-ECKERT-N2-FH, SO-ECKERT-N2-GF. No status.json/SO row for N2-GE (N1). For LANE LEDGER-N2 (account 1).

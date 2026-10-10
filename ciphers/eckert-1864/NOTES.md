@@ -4717,3 +4717,24 @@ Read so far: 9 of 9 rows filed; 6 graded C against the print, 3 (N2-HB, HC, HF) 
 - [ ] image-check: one of nine leaves checked in part (see gaps).
 - [x] retry: none needed.
 Verdict: keep going: 3 internal gaps; cheapest next: the leaf check of the two unprinted leaves and the OR page numbers, ~$1
+## FV-N2b (10 Oct 2026, account 1, for LANE LEDGER-N2)
+First verifier FV-N2b, 01:22-01:4x UTC by `date -u`; AUDIT.md "## AUDIT (FV-N2b)". **N2-GE: N1** -- printed OR I/41 pt 4 p.869 (Halleck to Canby, 16 Dec 1864
+1.20 p.m., word for word; "flora's pern" = Sherman's army), read on the IA page image; N2R-2's "not located" is wrong (the volume was unsearched). **N2-FH: N3 D3**
+(19 H of 23; the leaf has "walch" (= Welch, Signature) omitted from the transcription; holder 9142/0 = N2-CJ is its 18 Dec sequel). **N2-GF: N3 D3** (11 H of 12;
+holder 4569 = Meade's same-day reply; collecting/Collected/business are plain, not the key's Harrison/Browns Ferry). Fixes for a FIX job in AUDIT s.5. Queued
+WORK-QUEUE AUD2-LEDGERN2-1 (N2-FH, N2-GF), SO-ECKERT-N2-FH, SO-ECKERT-N2-GF. For LANE LEDGER-N2 (account 1).
+
+## Remaining gaps (FV-N2b, 10 Oct 2026)
+Read so far: 3 of 3 entries audited; N2-GE N1 (in print), N2-FH and N2-GF N3 D3, one audit each.
+- N2-FH, N2-GF second audit and the unsearched families (OR ser. III vol. 4, ORN, NARA RG 92/107/393, Meigs/Ingalls/Augur papers, the press, HathiTrust, JSTOR) - blocker: waiting-on the answer of the VERIFY lane to WORK-QUEUE.tsv row AUD2-LEDGERN2-1; a second audit is a separate session (rule 10)
+- AUDIT (FV-N2b) s.5 corrections to ciphertext-no2.txt / reading-no2.md (N2-GE in print, N2-FH "walch", N2-GF plain words) - blocker: not-attempted; a verifier does not edit the reading; next: a FIX job applies s.5 and re-runs decode_no2.py --write/--check, ~$1
+
+## Escalation (FV-N2b, 10 Oct 2026)
+- [n/a] siblings: same-leaf rows 9916/0-2 and 9722/0-1 checked; the sequel 9142/0 (N2-CJ) and replies 4569, 8504 tied in.
+- [x] clear-pages: all-pointer CISOSEARCHALL on 9 queries + 7 item reads; no clear copy; own pages hit as positive controls.
+- [x] known-keys: key-no2.md (period) read for every code group.
+- [x] print: OR I/33, I/41 pt 4, I/42 pt 3, I/44, I/45 pt 2 by date and name; N2-GE found on p.869 (image).
+- [ ] key-rebuild: not needed (period key).
+- [x] image-check: 9916 and 9722 eye-checked at 2400 px with line crops.
+- [ ] retry: none owed.
+Verdict: keep going: 1 internal gaps; cheapest next: the FIX job for AUDIT (FV-N2b) s.5, ~$1
