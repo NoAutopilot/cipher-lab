@@ -1,0 +1,65 @@
+# NA 1.01.02 inv. 6016 image order 187 (leaf 143r), postscript under the signature of P. Brederode, Stettin 17 Oct 1604.
+# Two blind Sonnet passes on images/p187_lines/p187_L01-L05.jpg (OBRED-187, 10 Oct 2026), reconciled by the worker on the crops.
+# grade: H-read = both passes agree, high confidence; M = a pass flagged it low or the reconciler doubts the shape. Not decoded.
+line	pos	group	grade	passA	passB	note
+1	1	577	H-read	577	577	
+1	2	457	H-read	457	457	
+1	3	289	H-read	289	289	
+1	4	217	H-read	217	217	
+1	5	97	H-read	97	97	
+1	6	108	H-read	108	108	
+1	7	121	H-read	121	121	
+1	8	265	M	265	265	
+1	9	481	H-read	481	481	
+1	10	48	M	48	48	overline over 48 313
+1	11	313	H-read	313	313	overline over 48 313
+1	12	120	H-read	120	120	
+1	13	34	H-read	34	34	
+1	14	276	H-read	276	276	
+1	15	228	H-read	228	228	
+2	1	40	H-read	40	40	
+2	2	320	H-read	320	320	
+2	3	84	H-read	84	84	
+2	4	529	H-read	529	529	
+2	5	433	H-read	433	433	
+2	6	337	H-read	337	337	
+2	7	492	H-read	492	492	
+2	8	110	H-read	110	110	
+2	9	132	H-read	132	132	
+2	10	444	M	444	444	444 and 440 run together; heavy 4 at the join, possibly overwritten
+2	11	440	M	440	440	see 444
+2	12	336	H-read	336	336	
+2	13	751	M	751	751	
+2	14	128	H-read	128	128	
+2	15	329	H-read	329	329	
+3	1	119	H-read	119	119	
+3	2	144	H-read	144	144	
+3	3	100	H-read	100	100	
+3	4	139	H-read	139	139	
+3	5	440	H-read	440	440	
+3	6	611	H-read	611	611	
+3	7	114	H-read	114	114	
+3	8	342	H-read	342	342	
+3	9	80	H-read	80	80	
+3	10	193	H-read	193	193	
+3	11	461	M	461	461	faint ink
+3	12	126	H-read	126	126	
+3	13	409	H-read	409	409	
+3	14	[Ick hebbe]	M	text	text	clear words in plain hand, kept as text; passes: A '[Joh ??]'/'[oock verstaen dat dits]', B '[Joh sob?]'/'[oock verstaen dat dix?]'; reconciler reads 'Ick hebbe' (L3 end, faded) and 'oock verstaen dat dits' (M)
+4	1	[oock verstaen dat dits]	M	text	text	clear words in plain hand, kept as text; passes: A '[Joh ??]'/'[oock verstaen dat dits]', B '[Joh sob?]'/'[oock verstaen dat dix?]'; reconciler reads 'Ick hebbe' (L3 end, faded) and 'oock verstaen dat dits' (M)
+4	2	623	H-read	623	623	
+4	3	553	M	553	553	
+4	4	349	H-read	349	349	
+4	5	359	H-read	359	359	
+4	6	335	M	335	335	
+4	7	105	M	105	105	
+4	8	40	H-read	40	40	
+4	9	137	H-read	137	137	
+4	10	420	H-read	420	420	
+5	1	330	H-read	330	330	
+5	2	36	H-read	36	36	
+5	3	450	M	450	450	middle digit 5 or 9 (both passes 450)
+5	4	474	H-read	474	474	
+5	5	44	H-read	44	44	
+5	6	142	H-read	142	142	
+5	7	470	H-read	470	470	
