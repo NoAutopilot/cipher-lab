@@ -14532,3 +14532,84 @@ Key source for all three: `period`. No spec exists for eckert-1864, so `judge_pl
   Navy Journal* (Google Books snippets) before leaving an identity at M.
 Requests: hdl.huntington.org 14 (8 CISOSEARCHALL, 6 item info), all 200; archive.org 9 advancedsearch + 5 metadata + 5 djvu downloads; be-api.us.archive.org 22;
 www.googleapis.com 23; www.loc.gov 6 search + 10 page/full-text. No 429, no challenge, no retry loop.
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER-36)
+Second verifier AUD2-LEDGER-36 (account 4, Opus 5.5, for the orchestrator (account-4); row queued by LANE LEDGER-9 (account 1) for account 3, run on
+account 4 because account 3 was silent), 10 Oct 2026, 02:23-02:42 UTC by `date -u`; a separate session and account from the reader MS18-R6 and the first
+auditor FV-MS18l (account 1); this session had not read or audited E366, E369 or E370 before. Scope: **E366, E369, E370** only. Nothing decoded beyond key
+look-ups in key.md. Key source for all three: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Re-derivation: `python3
+ciphers/eckert-1864/decode.py --check` -> "reading.md is current" (02:2x, after FIX-FM18 applied FV-MS18l s.5). Image: not re-checked (FV-MS18l and
+FV-MS18m eye-checked the three leaves at 2400 px). Committed (`ms18/`): `aud2_ledger36_search.py` + `aud2_ledger36_gb.out` (Google Books 14),
+`aud2_ledger36_misc.out` (Chronicling America 6, IA advancedsearch 5, IA be-api global 3, S2/CORE/OpenAlex 3 each), `aud2_ledger36_gb2.py` + `.out`
+(Google Books 14 follow-ups, Steers's volume and the decoded phrases), `aud2_ledger36_ca_pages.py` + `aud2_ledger36_ca_pages.out`,
+`aud2_ledger36_ca_pages2.out` (11 named Chronicling America pages), `aud2_ledger36_be.out` (IA be-api, Papers of Andrew Johnson vol. 8),
+`aud2_ledger36_hdl.py` + `aud2_ledger36_hdl.out` (Huntington CONTENTdm 12 queries, 5 item infos; host dropped 2 connections); IA djvu full texts of OR I/39 pt 2 (`warofrebellion392unit`), OR I/49 pt 2
+(`warofrebellion492unit`) and McCallum's reports (`unitedstatesmili00unit`, `reportsofbvtbrig00unit`) fetched to scratch and grepped (not committed); six
+JSTOR-QUEUE.tsv rows.
+
+### 1. Families FV-MS18l did not cover, and what this pass did
+| Family | FV-MS18l | This pass |
+|---|---|---|
+| Steers, *The Lincoln Assassination: The Evidence* (2009/2010, `GvYpUeuPPrAC`) at the page (E366) | one snippet (Bingham's request) | 6 restricted Google Books queries (`aud2_ledger36_gb.out`, `_gb2.out`). Two snippets only, both from M599 papers: Bingham's request ("arrest & bring here the above named Wm. Boulware, near King & Queen C.H. John A. Bingham") and an informant's statement ("Boulware King & Queens county 5 miles west said to me, he was authorized by Secretary James A. Seddon CSA to say to ..."). Queries pairing Boulware with Dana, Halleck, "Judge Advocate General" or "Norwell" return no snippet from this volume. **Page still unseen**: snippet view only; the volume is not on IA as text (IA has only Steers's *Lincoln Assassination Encyclopedia*, `lincolnassassina0000stee`). Steers abstracts the assassination evidence files (M599); the Dana telegram itself would sit in RG 107 (telegrams sent) or Halleck's received file, not in M599, so a print of E366 there is possible but not indicated. |
+| NARA M599 (assassination investigation files) (E366) | not searched | **unreachable**: not on an open host from the cloud (Fold3 is subscription; NARA catalog search needs a key). Logged, not searched. |
+| Press of the day (Chronicling America), E366 | not searched | 'Boulware arrested' May-June 1865: 3 pages; 2 read: **Evening Star (Washington) 15 May 1865 p.2**: "Mr. Wm. Boulware, of Virginia, well known as a leading citizen of the tide water region of that State, reached here yesterday under arrest, by order of the authorities at this point"; **Alexandria Gazette 22 May 1865 p.2**: "Mr. William Boulware, of lower Virginia, recently arrested, has been released." Neither prints the telegram; both are independent witnesses of the outcome E366 ordered (arrival in Washington under arrest on 14 May; release by 22 May). 'Boulware King Queen' 0. |
+| Thomas's and Wilson's papers; OR I/49 pt 2 beyond 24 May (E369) | 24 May on page images, index | OR I/49 pt 2 whole volume djvu text: no "T. J. Campbell" / "Thomas J. Campbell", no Campbell near Knoxville/Augusta/receiver/confiscat (only Campbell County, Tenn., 25 May). Papers of Andrew Johnson vol. 8 (May-Aug 1865, `papersofandrewjo0008unse`, be-api): '"T. J. Campbell"' 0, '"Thomas J. Campbell"' 0, 'Boulware' 0; positive control 'Johnson' answers. Thomas's and Wilson's own papers (not printed as editions; manuscript): **not searched**. |
+| Augusta / Knoxville / Nashville press, May-Aug 1865 (E369) | not searched | Chronicling America has no Augusta paper for 1865 in these results; 3 queries ('Campbell arrested Augusta Knoxville' 15, 'Campbell confiscating Knoxville' 24, 'Campbell receiver Knoxville arrested' 4 pages); 9 pages read (Brownlow's Knoxville Whig 24 May, 5 July, 9 Aug; Daily National Intelligencer 29 May, 21 July; Chicago Tribune 25, 27 May; Nashville Daily Union 11 July): no T. J. Campbell, no arrest of the Knoxville receiver. The Augusta *Chronicle* / *Constitutionalist* May-June 1865 page by page: **unreachable** here (not in Chronicling America). |
+| McCallum's 1866 Report and OR ser. III vol. 5 (E370) | not searched | McCallum's *Report* (1866), both IA editions (`unitedstatesmili00unit`, `reportsofbvtbrig00unit`) by djvu text: Whiton named once ("W. H. Whiton, in charge April 1, 1862, to July 1, 1865"), no Masury, no forage-and-horses passage tied to Sherman or Sept 1864. OR ser. III vol. 5 prints the same report (Google Books snippet `lkQC9H7NLykC`: "Whiton, in charge of the office, Washington, D. C."): covered by the same text. |
+| OR I/39 pt 2, 5-15 Sept 1864 by text, related correspondence (E370) | 5-9 Sept by text and index | **Related, not a copy**: OR I/39 pt 2 **p.365** (djvu text, running head checked; page image not read): Halleck to Sherman, Washington, 12 Sept 1864, 1 p.m.: "Is your want of cavalry horses so pressing as to require an extra supply ... Can your railroad supply forage to a greatly increased number of horses in your army?"; and Sherman's answer, 12 Sept 11 p.m. ("I do not think that I need at this time cavalry horses in undue proportion"). That is Head Quarters Army's same question put to Sherman five days after E370 put it to the Military Railroads: an independent printed witness of the content, a different text, sender and addressee. Google Books '"forage can be supplied by rail"' 3: all Hardee (Confederate), unrelated. |
+| NARA RG 92 (Military Railroads), RG 107 (E370, all) | not searched | **unreachable** from the cloud (no NARA key; not digitised as text). |
+| Huntington CONTENTdm, new queries (all pointers) | 9 queries | 13 more queries (12 answered; 'Boulware arrest' dropped once, answered on the one retry): 'Norwell' 1 (10005, E366's own page: positive control); 'Boulware released' 0; 'Boulware arrest' 1 (7905 = FV-MS18l's); 'Campbell Augusta' 2 (7935, 8756); 'Campbell arrested' 1 (7869); 'Campbell Knoxville' 2 (7542, 8756); 'Augusta arrest' 3 (7901, 7913, 8756); 'Lines Macon' 24 (sent and received May-June 1865, incl. 10020 = E369's own page); 'McCallum forage' 3 (7497, 3724, 8695); 'forage horses Sherman' 2 (5442, 4692); 'horses Sherman rail' 0; 'Whiton McCallum' 6 (9836 own, 7774, 9190, 7804, 7856, 7857); 'Masury Whiton' 1 (9836 own). Item records read (4; the fifth request, 7928, was dropped by the host and not retried): **7935** (Richmond 28 May, Halleck to Grant: 'Stevens Hunter and Campbell' = the peace commissioners, J. A. Campbell, another man; and Macon 26 May on telegraph accounts 'from Augusta to N Orleans'); **7869** (Richmond 15 Apr: Ord on Campbell and Hunter, J. A. Campbell again); **7901** (Greensboro 8 May: paroled rebels at Augusta; Raleigh 9 May: Schofield on arresting Vance); **7913** (Macon 13 May: Wilson, 'Gen Molineaux reports from Augusta' = the officer commanding there; and **Nashville 13 May 9 PM, Thomas to the Secretary of War**: Tennessee bank officers and state archives at Augusta, 'I would suggest orders be sent to the officer in command at Augusta to immy arrest the above named parties': the same channel and form as 8756 eleven days later, context for E369, not a copy). Not read: 7928, 7931, 8695, 7497, 7774, 9190, 7804 (host load; stopped per the good-citizen rule). **No clear copy of E366, E369 or E370 at another pointer** among the hits read; the McCallum/Whiton hits are unread item records, so a holder answer to E370 is not excluded. |
+| Google Books / IA full text, decoded phrases (all three) | 6 GB + 3 be-api | 28 Google Books queries (country=US, key): '"arrest William Boulware"' (the 1840s chargé d'affaires to Naples, another man or the same before the war; none 1865), '"Secretary of War directs that you arrest"' 5 (other arrests: correspondents at Hilton Head, A. S. Johnston), '"confiscating officer for the rebel government"' (generic hits only), '"for how many horses" forage rail Sherman 1864' (the Halleck item above), '"horses in excess of" Sherman forage rail 1864 McCallum' 0; IA be-api global '"William Boulware"', '"Thomas J. Campbell" confiscating', '"Masury and Whiton" McCallum' (the last 0). No text of any of the three telegrams. |
+| S2, CORE, OpenAlex | not searched | 3 each: nothing on Boulware's 1865 arrest, Campbell, or the 1864 forage question. |
+| HathiTrust full text | not searched | **unreachable** from the cloud (Cloudflare; CLAUDE.md host table). |
+| JSTOR | not queued | 6 rows queued (JSTOR-QUEUE.tsv, 10 Oct 2026): family (i) for each entry (Boulware + King and Queen + 1865; T. J. Campbell + Knoxville + receiver; Whiton + McCallum + forage) and family (ii) bare phrases ("Norwell Rest"; "confiscating officer for the Rebel Government"; "in excess of those now in Sherman" / "forage can be supplied by rail"); never blocking. |
+
+### 2. Findings
+- **No copy, quotation or printed text of E366, E369 or E370 found.** The press of 15 and 22 May 1865 prints the *outcome* of E366 (Boulware brought to
+  Washington under arrest on 14 May, released by 22 May); OR I/39 pt 2 p.365 prints Halleck's own version of E370's question to Sherman on 12 Sept 1864.
+  Both are prints of events or of related texts, not of these telegrams: neither makes N1 or N2.
+- **E366 outcome extended.** With holder 7905 (10 May, orders given), 8728 (13 May, captured), the Evening Star (14 May, arrived in Washington under arrest)
+  and the Alexandria Gazette (22 May, released), the arrest E366 ordered is witnessed from order to release; the informant's statement in Steers (Boulware
+  said to be authorized by Seddon) is the likely ground. Add to E366's context note (I-grade context, not in the telegram's text).
+- **E369 grades in the committed reading differ from FV-MS18l s.3.** reading.md gives "Code-word tokens: H 21, M 1" with the M on **Chant** (ciphertext
+  `variant: chant=Chart:M`) and "Harsh female" rendered [34] at H; FV-MS18l graded Chant H (C by 8756) and female M. Either way 21 of 22, so depth and %
+  stand; the reading's header also hedges the hour ("8.30 or 4.30 PM, M") and the signer ("[Secretary of War, M]") although Nelly = 8.30 PM and Indigo =
+  Secretary of War are H key rows (key.md TIME page (315); p.16 l.5 (333) L). An under-claim, not an over-claim: for a FIX job (s.4).
+- **E370 grades.** reading.md gives "H 15, M 1" (the M is 'spartons', `variant: spartons=Spartan:M`); FV-MS18l s.3 and status.json's completeness say
+  "H 16 of 16". The committed count is 15 H + 1 M = 94% H; D2 stands (D2 does not turn on the %). status.json completeness corrected below.
+- **Risk to the classes.** E366: Steers's volume at the page (snippet view only) and M599 are the one place a print of the telegram could plausibly sit;
+  not indicated by any snippet. E369: Thomas's papers and the Augusta press are unread (the holder's 7913 shows Thomas used the same channel on 13 May
+  for another Augusta arrest; Molineux then commanded at Augusta). E370: RG 92 / RG 107 and the holder's unread McCallum/Whiton items (7497, 8695, 7774,
+  9190, 7804) are unread; one of them could be McCallum's answer. None of these is likely to print
+  the telegrams' text, but none is excluded, so none is N4.
+
+### 3. Class (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E366 | **N3** (kept) | period | **D3** (kept: H 16 of 16 code-word groups, 1 filler unread, decode --check current; external non-statistical: holder 7905, 8728, and now the Evening Star 15 May 1865 p.2 and Alexandria Gazette 22 May 1865 p.2) | not located in print after the families of s.1 and FV-MS18l s.2; Steers at the page and M599 unread |
+| E369 | **N3** (kept) | period | **D3** (kept: 21 H of 22 code-word groups, 1 M, decode --check current; external: holder 8756, Thomas's request of the same day) | not located: OR I/49 pt 2 whole volume by text, Papers of Andrew Johnson vol. 8, Chronicling America; Thomas's papers and the Augusta press unread |
+| E370 | **N3** (kept) | period | **D2** (kept: 15 H + 1 M of 16; a full clause reads; the related Halleck-Sherman exchange of 12 Sept (OR I/39 pt 2 p.365) is a printed witness of the same question but put by another sender to another addressee, so it is context, not a check of this telegram's content: not raised to D3 without the depth check's own external confirmation of *this* text) | not located: OR I/38 pt 5, I/39 pt 2 (5-15 Sept), McCallum's 1866 Report / OR ser. III vol. 5; RG 92 unread |
+
+Safe sentences (kept from FV-MS18l, with the searched date updated):
+- E366: "Read at grade H with War Department Cipher No. 1: on 8 May 1865 Assistant Secretary of War C. A. Dana told General Halleck at Richmond, for the
+  Secretary of War, to arrest William Boulware, whose estate lay five or six miles from King and Queen Court House, and send him to Washington under guard
+  to the Judge Advocate General; Halleck's acknowledgement (10 May) and report of the capture (13 May) are in the Huntington's received ledgers, and the
+  Washington press reported his arrival under arrest on 14 May; the telegram was not located in print (searched 10 Oct 2026, two audits)."
+- E369: "Read at grade H with War Department Cipher No. 1: on 24 May 1865 the War Department ordered the officer commanding at Augusta to arrest Thomas J.
+  Campbell, the Confederate confiscating officer at Knoxville, and send him under guard to General Thomas at Nashville, as Thomas had asked that
+  afternoon; not located in print (searched 10 Oct 2026, two audits)."
+- E370: "Read at grade H with War Department Cipher No. 1: on 7 Sept 1864 W. H. Whiton of the Military Railroads office asked Col. McCallum at New York,
+  for army headquarters, for how many horses beyond those in Sherman's command forage could be supplied by rail; Halleck put the same question to
+  Sherman on 12 Sept (Official Records); this telegram was not located in print (searched 10 Oct 2026, two audits)."
+Unsafe for all three: "first", "new", "unpublished", "never printed", "previously unread". Not N4: Steers at the page, M599, RG 107, RG 92, Thomas's
+papers, the Augusta press, HathiTrust; JSTOR rows open (never blocking). Not D4: no fresh rule-7 re-derivation session.
+
+### 4. Postmortem and fixes for a FIX job (not applied here)
+Failure: none in the classes. FV-MS18l's search was sound; its gaps were the ones it named. Two small inconsistencies between AUDIT (FV-MS18l) s.3 and the
+committed reading after FIX-FM18: (a) E369's M sits on Chant in the committed reading (variant line) but on female in the audit; the header still hedges
+the hour and signer that are H key rows; (b) E370's committed count is H 15 + M 1, the audit and status.json said H 16. Fixes for a FIX job: E369 header
+"(hour 8.30 PM, Nelly, H)" and "signed Secretary of War (Indigo, H)"; decide whether Chant (C by 8756) or female (a slip) carries the M and make reading.md,
+ciphertext variant and status.json agree; E366 context note: add Evening Star 15 May 1865 p.2 and Alexandria Gazette 22 May 1865 p.2; E370 context note:
+add OR I/39 pt 2 p.365 (Halleck to Sherman, 12 Sept 1864, the same question). status.json: audit_status "two audits" and gap lines updated here; E370
+completeness corrected to the committed count here.
+Requests: googleapis.com 28; loc.gov 26 (6 Chronicling America searches, 20 page/OCR requests, 1 cut short); archive.org 9 (5 advancedsearch, 4 djvu texts); be-api.us.archive.org 8; api.semanticscholar.org 3; api.core.ac.uk 3; api.openalex.org 3; hdl.huntington.org 17 attempts at 3.3 s (15 answered, 2 dropped by the host). No 429, no challenge page.

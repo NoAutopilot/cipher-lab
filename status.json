@@ -11887,9 +11887,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-MS18l)'"
+        "AUDIT.md '## AUDIT (FV-MS18l)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-36)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-MS18l verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -11909,8 +11910,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Washington sent ledger): C. A. Dana to Maj. Gen. Halleck at Richmond, 8 May 1865: arrest William Boulware near King and Queen Court House and send him under guard to the Judge Advocate General (E366)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 8 May 1865 Assistant Secretary of War C. A. Dana told General Halleck at Richmond, for the Secretary of War, to arrest William Boulware, whose estate lay five or six miles from King and Queen Court House, and send him to Washington under guard to the Judge Advocate General; Halleck's acknowledgement (10 May) and report of the capture (13 May) are in the Huntington's received ledgers; the telegram was not located in print (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-MS18l); not N4: Steers, The Lincoln Assassination: The Evidence (Bingham's request, snippet only, page unseen), NARA M599, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGER-36)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 8 May 1865 Assistant Secretary of War C. A. Dana told General Halleck at Richmond, for the Secretary of War, to arrest William Boulware, whose estate lay five or six miles from King and Queen Court House, and send him to Washington under guard to the Judge Advocate General; Halleck's acknowledgement (10 May) and report of the capture (13 May) are in the Huntington's received ledgers, and the Washington press reported his arrival under arrest on 14 May; the telegram was not located in print (searched 10 Oct 2026, two audits).",
+      "gap": "N3 two audits (FV-MS18l, AUD2-LEDGER-36); not N4: Steers, The Lincoln Assassination: The Evidence at the page (snippet view only), NARA M599 and RG 107, HathiTrust not read; JSTOR rows queued (not blocking)",
       "depth": "D3",
       "completeness": "16 H of 16 code-word groups (2 C-supported by holder 7905); 1 filler unread; rest plain",
       "phrases": [
@@ -11928,9 +11929,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-MS18l)'"
+        "AUDIT.md '## AUDIT (FV-MS18l)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-36)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-MS18l verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -11950,8 +11952,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Washington sent ledger): Secretary of War to the officer commanding at Augusta via Lines at Macon, 24 May 1865: arrest Thomas J. Campbell, Confederate confiscating officer at Knoxville, and send him to Thomas at Nashville (E369)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 24 May 1865 the War Department ordered the officer commanding at Augusta to arrest Thomas J. Campbell, the Confederate confiscating officer at Knoxville, and send him under guard to General Thomas at Nashville, as Thomas had asked that afternoon; not located in print (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-MS18l); not N4: Thomas's papers, the Augusta press May-June 1865, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGER-36)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 24 May 1865 the War Department ordered the officer commanding at Augusta to arrest Thomas J. Campbell, the Confederate confiscating officer at Knoxville, and send him under guard to General Thomas at Nashville, as Thomas had asked that afternoon; not located in print (searched 10 Oct 2026, two audits).",
+      "gap": "N3 two audits (FV-MS18l, AUD2-LEDGER-36); not N4: Thomas's papers, the Augusta press May-June 1865, HathiTrust not read; JSTOR rows queued (not blocking)",
       "depth": "D3",
       "completeness": "21 H (3 C-supported by holder 8756) + 1 M (day word) of 22 code-word groups; rest plain",
       "phrases": [
@@ -11969,9 +11971,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-MS18l)'"
+        "AUDIT.md '## AUDIT (FV-MS18l)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-36)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-MS18l verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -11986,15 +11989,15 @@
         "names_codes": "0",
         "other": "0"
       },
-      "depth_pct": 100.0,
+      "depth_pct": 93.8,
       "grade": "N3",
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Washington sent ledger): W. H. Whiton to Col. D. C. McCallum at New York, 7 Sept 1864: for how many horses beyond those in Sherman's command can forage be supplied by rail (E370)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 7 Sept 1864 W. H. Whiton of the Military Railroads office asked Col. McCallum at New York, for army headquarters, for how many horses beyond those in Sherman's command forage could be supplied by rail; not located in print (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-MS18l); not N4: McCallum's 1866 Report, OR ser. III vol. 5, NARA RG 92, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGER-36)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 7 Sept 1864 W. H. Whiton of the Military Railroads office asked Col. McCallum at New York, for army headquarters, for how many horses beyond those in Sherman's command forage could be supplied by rail; Halleck put the same question to Sherman on 12 Sept (Official Records); this telegram was not located in print (searched 10 Oct 2026, two audits).",
+      "gap": "N3 two audits (FV-MS18l, AUD2-LEDGER-36); not N4: NARA RG 92 / RG 107, the Huntington's unread McCallum/Whiton items (7497, 8695, 7774, 9190, 7804), HathiTrust not read; JSTOR rows queued (not blocking)",
       "depth": "D2",
-      "completeness": "16 H of 16 code-word groups; rest plain",
+      "completeness": "15 H + 1 M ('spartons' = Spartan, the clerk's spelling) of 16 code-word groups, as committed in reading.md; rest plain",
       "phrases": [
         "Huntington mssEC 18 (obj 10074) p.170, pointer 9836, E370"
       ],
@@ -12004,7 +12007,7 @@
       ],
       "depth_sentence": "In September 1864 army headquarters asked the Military Railroads how many more horses than Sherman already had could be fed by rail.",
       "depth_check": "code clause: for how many spartons in excess of those now in Kidnap polka shade can be supplied by rail = horses ... Sherman's command forage; no external content check found (D2)",
-      "depth_note": "16 H of 16 code-word groups; rest plain"
+      "depth_note": "15 H + 1 M ('spartons' = Spartan, the clerk's spelling) of 16 code-word groups, as committed in reading.md; rest plain"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
