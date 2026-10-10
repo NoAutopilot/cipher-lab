@@ -13,6 +13,12 @@ VOL = {  # id on disk -> true series/volume/part (title page, or_volume_map.tsv)
  'warofrebellion384unit': 'I/38 pt 4', 'warofrebellion385unit': 'I/38 pt 5', 'warofrebellion392unit': 'I/39 pt 2',
  'warofrebellion393unit': 'I/39 pt 3', 'warofrebellion431unit': 'I/47 pt 2 (mislabelled 43.1)'}
 D = 'sources/ia-fulltext/print-check/'
+# OR-CACHE2 (10 Oct 2026): `or_cache_hits.py --map ID [ID...]` greps the named ids instead, labels from or_volume_map.tsv, writes or_cache2_*.tsv
+OUT = ''
+if len(sys.argv) > 2 and sys.argv[1] == '--map':
+    import csv
+    lab = {r['ia_id']: 'I/%s%s' % (r['true_volume'], (' pt ' + r['true_part']) if r['true_part'] else '') for r in csv.DictReader(open('ciphers/eckert-1864/print/or_volume_map.tsv'), delimiter='\t')}
+    VOL = {i: lab[i] for i in sys.argv[2:]}; OUT = 'or_cache2_'
 R = {}
 for f in ('reading.md', 'reading-no2.md', 'reading-no9.md'):
     t = open('ciphers/eckert-1864/' + f, errors='replace').read()
@@ -34,13 +40,18 @@ for r in s['results']:
     w = words(R.get(m.group(1), '')) if m else []
     ent.append((m.group(1) if m else '?', grp, d.group(0) if d else '', w))
 def runs(w, sh):
-    best = cur = 0; at = -1; bi = -1
+    """Longest run of consecutive entry words that also stands consecutively in the volume. sh maps each 5-gram to ALL its positions
+    (OR-CACHE2, 10 Oct 2026: the first version kept only the first position per 5-gram and chained shingles from different places, so a
+    boilerplate 5-gram such as 'are ordered to report to' joined unrelated passages into a false run of 10; it never missed a real run)."""
+    best = 0; bi = -1; bp = -1; live = {}   # live: volume position of the shingle at entry index i-1 -> run length so far
     for i in range(len(w) - K + 1):
-        if tuple(w[i:i + K]) in sh:
-            cur += 1
-            if cur > best: best, bi = cur, i - cur + 1
-        else: cur = 0
-    return (best + K - 1 if best else 0), bi
+        nxt = {}
+        for p in sh.get(tuple(w[i:i + K]), ()):
+            n = live.get(p - 1, 0) + 1
+            nxt[p] = n
+            if n > best: best, bi, bp = n, i - n + 1, p - n + 1
+        live = nxt
+    return (best + K - 1 if best else 0), bi, bp
 rnd = random.Random(1); hits = []; summ = []
 for v, lab in VOL.items():
     raw = gzip.open(D + v + '_djvu.txt.gz', 'rt', errors='replace').read()
@@ -48,23 +59,23 @@ for v, lab in VOL.items():
     pos = {}
     cnt = {}
     for i in range(len(tw) - K + 1):
-        pos.setdefault(tuple(tw[i:i + K]), i); cnt[tuple(tw[i:i + K])] = cnt.get(tuple(tw[i:i + K]), 0) + 1
+        pos.setdefault(tuple(tw[i:i + K]), []).append(i)
     real = ctl = 0; n = 0
     for tag, grp, d, w in ent:
         if len(w) < MINRUN + 2: continue
         n += 1
-        L, bi = runs(w, pos)
+        L, bi, bp = runs(w, pos)
         if L >= MINRUN:
-            real += 1; i = pos[tuple(w[bi:bi + K])]; off = tok[i].start()
+            real += 1; i = bp; off = tok[i].start()
             pg = re.findall(r'(?m)^\s*(\d{1,4})\s*$', raw[max(0, off - 6000):off]); ctxt = re.sub(r'\s+', ' ', raw[off:off + 140])
-            hits.append((tag, grp, d, v, lab, pg[-1] if pg else '?', L, len(w), cnt[tuple(w[bi:bi + K])], ctxt))
+            hits.append((tag, grp, d, v, lab, pg[-1] if pg else '?', L, len(w), len(pos[tuple(w[bi:bi + K])]), ctxt))
         sw = w[:]; rnd.shuffle(sw)
         if runs(sw, pos)[0] >= MINRUN: ctl += 1
     summ.append((v, lab, n, real, ctl))
-with open('ciphers/eckert-1864/print/or_cache_hits.tsv', 'w') as f:
+with open('ciphers/eckert-1864/print/' + (OUT + 'hits.tsv' if OUT else 'or_cache_hits.tsv'), 'w') as f:
     f.write('entry\tgroup\tentry_date\tvolume_id\ttrue_volume\tpage_guess\tshared_run_words\tentry_words\tfirst_5gram_occurrences_in_volume\thit_text\n')
     for h in sorted(hits, key=lambda x: (x[3], -x[6], x[8])): f.write('\t'.join(map(str, h)) + '\n')
-with open('ciphers/eckert-1864/print/or_cache_summary.tsv', 'w') as f:
+with open('ciphers/eckert-1864/print/' + (OUT + 'summary.tsv' if OUT else 'or_cache_summary.tsv'), 'w') as f:
     f.write('volume_id\ttrue_volume\tentries_tested\treal_hits\tshuffled_control_hits\n')
     for r in summ: f.write('\t'.join(map(str, r)) + '\n')
 print('entries', len(ent), 'with text', sum(1 for e in ent if e[3]))
