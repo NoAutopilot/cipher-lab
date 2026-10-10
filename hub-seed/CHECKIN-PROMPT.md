@@ -155,3 +155,10 @@ frozen S2/DV1b HELD until SCAN-103 (f.103r truth window scan, box to 01:19) repo
 whether the truth moved. WVO-153-KEY-2: one pilot band only, rest PARKED (21 bands ~USD 126). TX-RED inc. 2 at 554k: spawn its successor
 from its brief (.claude/briefs/runs/ tx-red file) when it passes ~600k. Lane inc. 3 at 572k (hand-over ~700k). TX-POOL-LEAF-2 (account 1)
 overdue 3h+, flagged twice.
+STATE DELTA 00:5x UTC 10 Oct: LANE TX-ENGINEER-2 incarnation 4 = session_01GukpgU1yBAfju3zg6g8ayG, created by inc. 3 and stuck at lineage
+depth 8 (cannot spawn, re-arm or hand over). Stopgap: orchestrator-armed hourly routine into it (list_triggers: "TXE2 inc4 hourly check-in");
+it names workers as WORK-QUEUE TX-* rows for the :34 dispatcher. Rule written to TX-PROGRAM.md: the orchestrator creates every lane/TX-RED
+incarnation from its own session. NEXT: when inc. 4 sends "ready for incarnation 5" (after the corrected audit), create inc. 5 from this
+session with hub-seed/TXE2-SUCCESSOR-PROMPT.md, delete the hourly routine, archive inc. 4. TX-RED inc. 2 (554k) successor likewise from here.
+Owner decision 00:5x: his ChatGPT runner runs its own experiments (second-opinions/prompt-2026-10-10-tx-external-experimenter.md; collation
+section in TX-PROGRAM.md). f.102r re-anchored as dev2 (ANCHORED, margin 0.149). SCAN-103 still running (box to 01:19).

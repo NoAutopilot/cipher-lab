@@ -20,6 +20,12 @@ The product the owner needs: an unseen hand read at <= 5% (today 8.8% on Spinell
 | 2 | LANE TX-ENGINEER-2 -- runs the experiment queue, pre-registers, ledgers its workers | Fable | the orchestrator; successor incarnation at ~700k context | its own send_later (30-45 min) |
 | 3 | TX-RED -- the adversarial reviewer, outside the lane, never one of its workers | Fable | the orchestrator; successor at ~600k context | its own send_later (45 min) |
 | 4-10 | experiment / build workers (one PREREG'd experiment or one benchmark item each) | Opus 5.5 or Fable | the lane, refilled from the register as each closes; the dispatcher if the lane is down (WORK-QUEUE TX-* rows) | one job, then done |
+Lineage-depth rule (10 Oct 2026 00:5x UTC, after incarnation 4 landed at depth 8 and could neither spawn, re-arm nor hand over --
+the LANE V10 shape of 26 Sept 2026): every lane and TX-RED incarnation is created by the orchestrator from its own session (depth
+5 -> 6), never by the outgoing incarnation; the outgoing one writes its hand-over, says "ready for incarnation N+1" by send_message, and
+the orchestrator creates the successor, deletes any stopgap routine and archives the predecessor. A session at depth 8 is woken by an
+orchestrator-armed hourly routine (create_trigger with persistent_session_id) and names its workers as WORK-QUEUE TX-* rows for the
+dispatcher until the orchestrator replaces it.
 Refill rule: the lane keeps 5-7 workers live while the register has a runnable row; a slot freed by a done line is refilled
 at the lane's next check-in, never left for the hour. Spawning stops only on `allowed_warning` past one check-in or `rejected`
 (BUDGETS.md), and resumes at the reset.
