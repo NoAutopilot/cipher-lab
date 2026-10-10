@@ -96,3 +96,25 @@ three extra witnesses say -- as a proposed FIX list in NOTES, NOT applied: do no
 status.json (V-THURBM is auditing the committed reading in parallel; a change after its audit is a rule 10 propagation the orchestrator
 schedules). NOTES "## THUR-BM2", Remaining gaps / Escalation / Verdict, gaps_check.py. Units: 3 letters x 2 passes ~0.8 + reconcile ~0.5 +
 gate ~0.5 + floor 1.5 = ~5.5. Report what was found and where it was not found; do not classify novelty.
+
+## Wave 2 results (costs by get_session)
+- V-THURBM 5.24 / 6: N3 (one audit), D3 95.4%, key period; all 151 groups eye-checked = print (slips are in Birch's printed cipher); Tomokiyo
+  has reconstructed the Blank Marshall cipher (period key BL Add MS 4166 f.117, DECODE R4897) -- no prior decipherment of l.44535 located.
+  Corrections listed, not edited: reading .txt omits clear rows; code 123 = D. Gloucester; 113/173 Ormond conflict. SO-THURLOE-BM44535,
+  AUD2-FAMILY-A2r-1 (account 3), 5 JSTOR rows. Commit 40fbdeaf8.
+- THUR-BM2 10.81 / 6 (1.80x over: priced per letter, the 2 passes + reconcile + 7-fold gate at Opus rates were not): gate7 PASS 0.862/0.839;
+  key_blankmarshall_7.tsv 117 codes (112 C, 5 M); FIX list items 1-7 in NOTES (not applied). Commit d75cd80a4.
+
+## Wave 3 (15:5x UTC 10 Oct)
+
+### FIX-THURBM (Sonnet, cap 2.5, box 60 min, disk only): thurloe-printed l.44535 corrections + rule 10 propagation
+Apply, and only apply: (a) V-THURBM's "Corrections to the solver's files" (i) and (ii) in AUDIT.md "## AUDIT (V-THURBM, l.44535)": regenerate
+bm/reading_l44535.txt so it keeps the clear-text rows (edit bm/decode_44535.py's rendering, then `--check` exit 0), and relabel key code 123
+to D. Gloucester in bm/key_blankmarshall.tsv; (b) THUR-BM2's FIX list (NOTES "## THUR-BM2 proposed FIX list") using V-THURBM's eye check
+(all 151 groups = print): items 1, 2, 3 -> the slip groups graded M (encipherment slips; context word in brackets as I), item 6 -> code 8 in
+row 6 pos 10 C->M, items 4, 5, 7 no change. Record the new rule 4 counts. (c) Rule 10 propagation: an "## Revision after AUDIT (FIX-THURBM,
+10 Oct 2026; rule 10 propagation)" section in AUDIT.md with the new counts and the corrected safe sentence if its wording changes; the
+SO-THURLOE-BM44535 row in SECOND-OPINIONS-QUEUE.tsv and the folder's status.json entry (depth_pct; run tools/depth_check.py and paste it; the
+depth class may stay D3 only if the tool says so); the AUD2-FAMILY-A2r-1 row's brief text if it quotes counts. (d) NOTES "## FIX-THURBM",
+Remaining gaps / Escalation / Verdict, gaps_check.py; file_shrink_guard on every touched file. No new class, no new search, no other target.
+Units: edits + checks ~1.5, floor ~0.5.
