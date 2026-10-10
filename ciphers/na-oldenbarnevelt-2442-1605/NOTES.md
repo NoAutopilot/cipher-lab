@@ -1701,6 +1701,52 @@ addendum, depth under the bar), ~$2.5; the stretch is held down by word-level M 
 joins tokens, not by sign disagreement alone -- a pre-registered word-boundary-insensitive S test (match the sign string across
 token boundaries) would be the next instrument, ~$1, before any third pass (none allowed by the 10% rule).
 
+## 25. OLD-WB, 10 Oct 2026: word-boundary-insensitive S test on leaves 4/5/7 (OLD-O2's named instrument) -- stretch capped by sign disagreement at 17 digits; status stays open
+
+Brief: `.claude/briefs/runs/2026-10-10-ytbiz-family-0209-jobs.md`, "### OLD-WB" (account 2, LANE FAMILY-A2n, 02:44 UTC start by
+date -u). Prereg `transcription/PREREG_OLD-WB.md`, pushed in its own commit (491578eae, checked on origin/main) before any score.
+Disk only: no host requests, no vision, no third pass. Script `scripts/wb_stest.py` (reads OLD-O2's committed reconciliation,
+passes, key and lexicon; writes `depth/wb_tokens_OLDWB.tsv`; `--check` exit 0).
+
+**Rule (prereg items 1-4).** Each reconciled line's sign string (OLD-O4 normaliser, boundaries dropped) is aligned by one
+minimum-edit alignment to the best-matching line of each blind pass (boundaries dropped there too); a cipher token is
+sign-agreed when every one of its signs aligns to an identical sign in BOTH passes. It is covered when its decode is a lexicon
+word (V.S. counts) or it lies in a 2-3 cipher-token window, all sign-agreed, whose joined decode segments completely into lexicon
+words (pieces >= 2 letters or a/e/i/o/u). S = sign-agreed AND covered.
+
+**Target (fixed B/C1 key):**
+```
+L4: cipher words 376 S 165 M 211 (sign-agreed 170); digits 750, S 266 (35.5%)
+L5: cipher words 111 S  39 M  72 (sign-agreed  39); digits 217, S  65 (30.0%)
+L7: cipher words 242 S 110 M 132 (sign-agreed 115); digits 512, S 180 (35.2%)
+L4+L5+L7: cipher words 729 S 314 M 415 (sign-agreed 324); digits 1479, S 511 (34.6%)   [OLD-O2 token rule: S 165, 18.0%]
+longest S stretch L4 13 digits [con migo como amigo i en secreto]; L5 9 [todo gene ro de reparo];
+                  L7 17 [de chaues el coste del manteo i los quarenta]
+pooled 17 digits; floor 24.2; AD with 415 M words 795 digits
+diagnostic ceiling (sign-agreed tokens, lexicon ignored): longest 17 digits
+```
+**Matched control (prereg item 6; the same 120 vowel-map permutations as OLD-O2):**
+```
+S share L4+L7 (V.S. excl.): target 0.448, rank 1 of 120; 119 perms mean 0.400, max 0.435 (2=u3=o4=a7=i8=e); 119/119 below
+longest S stretch pooled:  target 17, rank 46 of 120 (ties counted against); 119 perms mean 14.2, max 17; 74/119 below
+```
+Read: the S share passes its mark, but the margin over the best wrong key is 0.013 (OLD-O2's token rule: 0.039) -- the
+segmentation clause covers wrong-key decodes almost as readily, so most of the share gain is sign agreement, which no key
+changes. The stretch MISSES its pass mark (rank 46): at 17 digits it equals the sign-agreement ceiling, which 45 of the 119
+wrong keys also reach. Of the 415 M tokens, 405 are M because a sign disagrees between the passes and only 10 because the
+lexicon fails to cover them. **So OLD-O2's diagnosis is answered:** removing the word-boundary penalty doubles the S share
+(18.0% -> 34.6% of digits) but lengthens the longest stretch only from 13 to 17 digits, and no lexicon rule on these passes can go
+past 17, because the stretch is broken by sign disagreements between the two masked passes, not by token splits. 17 < 24.2 (floor)
+and << 795 (AD). The verifier decides depth; on these numbers the D2 cipher clause is not met by this instrument.
+
+Reading files unchanged: the registered grades in `reading_L457*.{txt,tsv}` stay OLD-O2's (prereg item 7; no grade under the
+registered reading rule changed), so no `--check` re-run of the reading was needed (`decode_L457.py --check` exit 0 regardless).
+
+**Verdict: open** (unchanged; a verifier classifies). Next step: (o5) verifier re-grade of leaves 4/5/7 under OLD-O2's grades,
+with this section's numbers beside them, ~$2.5. A longer stretch now needs fewer sign disagreements, i.e. a person's sign sort on
+the L4/L7 masked crops (the 10% rule bars a third machine pass), not a further scoring rule: the boundary-insensitive instrument is
+spent at 17 digits on these passes.
+
 ## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, R13-OLDSEG, R14-OLDF, R14-OLDF2 and R15-OLDUV, 6 Oct 2026)
 
 - [done 6 Oct 2026, R15-OLDV2] Action that depended on nobody: (v2) a verifier carries the R15-OLDUV reading change (B37/49/55/76 u/v naming) into AUDIT.md and
