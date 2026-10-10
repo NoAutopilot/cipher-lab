@@ -5311,3 +5311,52 @@ Read so far: book called for 10 of 10 tested rows (1 No. 1, 1 No. 2, 8 none in h
 - [ ] image-check: not done (disk only); labels as transcribed.
 - [n/a] retry: no step failed, so nothing to retry.
 Verdict: keep going: 3 internal gaps; cheapest next: cut the Fuller 28 May entry from the 10023/1 segment and hand it to a No. 2 reader, ~$0.5
+
+## MS65-R1 (10 Oct 2026, account 1, for LANE LEDGER-11)
+
+Nine 1865 rows of the sent ledger mssEC 18 (Huntington object 10074, `ms18/clean-ms18.tsv`) guessed No. 1, read with the Step-0 ruling first (LEDGER-10 jobs file, Wave 3). Scripts `ms18/ms65_r1_extract.py`, `ms65_r1.py` (book shares + meaning-shuffled control, output `ms65_r1_controls.txt`), `ms65_r1_step0.py` (output `ms65_r1_step0.out`), `ms65_r1_hdl.py` (`ms65_r1_hdl.out`), `ms65_r1_file.py`. IDs: E400, E401 (E392-E399 left for LANE LEDGER-10; origin's last filed was E391 at 05:50 UTC). `decode.py --write` then `--check` "reading.md is current"; `decode_no2.py --check`, `decode_no9.py --check` current.
+
+Prior-work (by hand; `tools/prior_work.py` not run, no items.tsv for this ledger). (1) Intake gate 10 Oct 2026 05:4x UTC: `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0. (2) Own work: the nine pointers/entries grepped in ciphertext*.txt, NOTES.md, ROOM.md at 05:4x UTC: no earlier filing or live claim (10058 is named in E375's neighbours only). (3) Holder: 5 CISOSEARCHALL queries over all pointers (`ms65_r1_hdl.out`), for Y4 only: 'McCausland arrest Point Pleasant' 0, 'McCausland Emory Cumberland' 10030 (own page, the control) and 7953, 'Gallipolis Kanawha farm' 0, 'Emory Cumberland Smith Kanawha' 0, 'Isaac Surratt Baltimore' 0 (a second control that did not return 8012 under this wording: unchecked for that wording). 7953 is the Cumberland reply of 16 June 1865, not a clear copy. (4) Print: OR I/46 pt 3, I/47 pt 3, I/48 pt 2, I/49 pt 2 on the IA djvu text (scratch): phrase grep and 13-15 June 1865 date windows. The newspaper of the day was not searched.
+
+**Step-0 ruling per row (a = ordered LCS of decoded content words vs the entry's own transcription, b = within-entry shuffle p95, c = decoded words not in the transcription).**
+| row | id | a | b p95 | hit | (c) |
+|---|---|---|---|---|---|
+| 10019/1 (24 May 1865, Thomas copy for Wilson at Macon) | Y1 | 0.558 (58/104) | 0.173 | yes | 30: 2000 5000 available carolina cavalry command ed er gen genl geo georgia hurlbut infantry ing maj men mississippi movement nashville north regiment river sheriden south thomas three troops twenty wilson |
+| 10060/0 (18 Oct 1865, Briscoe court-martial questions) | Y2 | 0.640 (55/86) | 0.174 | yes | 20: army brigadier colonel command destroy ed er follow general hundred ing nine ninety one pennsylvania secretary soon telegraph volunteer war |
+| 10039/0 (26 June 1865) | Y3 -> E400 | 0.431 (31/72) | 0.153 | no | 32 |
+| 10030/2 (14 June 1865) | Y4 -> E401 | 0.458 (33/72) | 0.181 | no | 19 |
+| 10062/0 (21 Oct 1865, Emory, posse comitatus for the election) | Y5 | 0.848 (39/46) | 0.261 | yes | 7: eighteen general major point troops virginia west |
+| 10008/0 (14 May 1865, Lines at Macon, secure the prisoner) | Y6 | 0.722 (26/36) | 0.250 | yes | 9: augusta colonel force fourteen point president report savannah washington |
+| 10046/1 (30 July 1865, Spinner Treas. to Root at Memphis) | Y7 | 0.571 (12/21) | 0.286 | yes | 9: ed ing memphis right roddy telegraph thirty three washington |
+| 10065/1 (23 Nov 1865, Grant to Logan, Mexico commission) | Y8 | 0.919 (34/37) | 0.297 | yes | 1: maj (the message is written in plain words) |
+| 10058/0 (13 Oct 1865, Van Duzer at Nashville) | Y9 | 0.689 (42/61) | 0.197 | yes (plain filler words) | 13: 1000 battle ed effect gen genl grant ing maj picket prentiss shelbyville signed |
+For Y9 the decoder put the whole body in its `{tail:}` field, so the script scores the tail text too.
+
+**Book per row (whole-entry vocabulary share No.1/No.2/No.9; `ms65_r1_controls.txt`).** Y1 .47/.35/.16, Y2 .31/.27/.15, Y3 .58/.54/.09, Y4 .48/.51/.22 (No. 2 ahead by 3 points; sense reads No. 1), Y5 .26/.23/.11, Y6 .41/.43/.18 (sense No. 1: Savannah, Charleston, Raleigh), Y7 .44/.38/.24, Y8 .17/.26/.00 (plain message), Y9 .25/.27/.08. The meaning-shuffled No. 1 gives the same H count (within 2) on every row, so the count control cannot fail and licenses nothing; sense decides. Y1-Y8 read as No. 1 by sense (clauses given in the filing notes or, for the Step-0 hits, in `ms65_r1_controls.txt`). Y9 (10058/0): no book reads it. No. 1 gives only H9; the groups Webster Whitney Gardner Matilda, Vomit bronze Girdle orthodox jingle chapin purple, potash, frosted fulcrum, mastiff stay unread in all three books and in the shuffled copies, and the decoder's 'pardon' = [Battle] turns a plain word into a slip. The plain remainder reads ('Hold on to houses until ... from Wheel to give them up ... pardon means restoration of property or only that portion which has been libeled ... If John Porter field is in ... War Office ... Broadway'), so the book of its code groups is "no book in hand" (compare E375 of 20 Oct 1865, which read No. 1 cleanly; 10058/0 does not).
+
+**Per-row line.**
+- 10019/1, 10060/0, 10062/0, 10008/0, 10046/1, 10065/1: step-0 skip (body in holder transcription; nothing filed, nothing searched); No. 1 by sense.
+- 10058/0: step-0 skip for the plain body; no book in hand for its code groups.
+- 10039/0 (E400): in print, OR I/47 pt 3 (to Schofield), I/48 pt 2 (to Sheridan), I/49 pt 2 (to Thomas, near running head p.1035); pages not read from images. Clause for clause C (Grant, Washington 26 June 1865 3.30 p.m., private property / Treasury Department / surrender of the rebel armies; the same order of 26 May 1865 8.30 p.m. to Capt. J. R. Gilmore is OR I/47 pt 3 p.573).
+- 10030/2 (E401): not located in print (OR I/46 pt 3: McCausland only in the index at p.507 and one cavalry mention; 26 dated headings for 13-15 June 1865, two with terms, neither it; ser. II and the press not searched); holder 7953 is the 16 June Cumberland reply, context.
+
+Image check: leaves 10039 and 10030 fetched at 2400 px (2 IIIF images, scratch, not committed): the top of 10039 (printed page 373: operator header, Sullivan, Fuller, first lines) and the whole of E401's entry on 10030 (from 'for Tappan Shelby' to 'how are you', signed 'C W Clark Junior A A G') match the transcription line by line. The seven unfiled rows were not eye-checked.
+
+Grades: decoder No. 1 reading E400 H43 C0 I0 M0, E401 H31 C0 I0 M0 (both from the key; the print makes E400's clauses C by comparison); names noted M (the signer of E400 is the print's Grant, the ledger gives only the signature code; McCausland's given name). No S, no I. No judge spec exists for this ledger (rule 7: none run). Requests: hdl.huntington.org 7 (5 CISOSEARCHALL, 2 IIIF), two takes, both released; archive.org 4 djvu downloads (all 200), no 429, no retry. Depth and novelty not classified (rule 10). seven_day allowed_warning not observed by me.
+
+## Remaining gaps (MS65-R1, 10 Oct 2026)
+Read so far: nine of nine rows through Step-0; two filed (E400 printed, E401 not located); seven are step-0 skips whose body is in the holder transcription (Y9 also unread in its code groups).
+- E401 print - blocker: not-attempted; OR I/46 pt 3 text only, no ser. II, no Gallipolis or Point Pleasant press, no McCausland biographies; next: Chronicling America / Google Books phrase search 'McCausland' June 1865 Point Pleasant, ~$0.3
+- E400 page numbers (I/47 pt 3, I/48 pt 2, I/49 pt 2) - blocker: not-attempted; running heads only; next: IA page read, ~$0.1
+- 10058/0 code groups - blocker: no-key-material; no book in hand reads the Webster/Whitney/Vomit/bronze/orthodox groups of 13 Oct 1865; next: BOOK-65-style header-word test against Oct 1865 siblings, ~$0.3
+- Y1 Y2 Y5-Y8 (seven step-0 skips) names and numbers in (c) - blocker: not-attempted; ruling says file nothing; next: a contribution count if the Step-0 owner asks, ~$0.2
+
+## Escalation (MS65-R1, 10 Oct 2026)
+- [x] siblings: 7953 (Cumberland reply) read from the search result; neighbouring entries on the nine leaves not read.
+- [x] clear-pages: CISOSEARCHALL, 5 queries for E401 (own-page control returned; a second control wording missed).
+- [x] known-keys: three books plus meaning-shuffled copies (count control non-discriminating by construction, read by sense).
+- [x] print: four OR volumes' text, phrase grep plus date windows; E400 printed three times, E401 not located.
+- [n/a] key-rebuild: no key row edited; decoder slips (pardon = [Battle], oakumed = [Arrest]) not key edits.
+- [x] image-check: E400 (top) and E401 (whole entry) eye-checked on 2400 px crops.
+- [x] retry: none needed.
+Verdict: keep going: 3 internal gaps; cheapest next: IA page read for E400's three page numbers, ~$0.1

@@ -2129,5 +2129,17 @@ Code-word tokens: H 19, S 1.
 
 Code-word tokens: H 20, C 1.
 
-Totals over the 333 entries: H 5795, C 81, I 25, M 41, S 18, U 10.
+**E400 | Page 379 | 10039 | mssEC 18 (obj 10074, pointer 10039; printed page 373), 26 June 1865 Washington (hour 3.30 PM), Capt. J. R. Gillmore at Washington (operator header), Jno C Sullivan at Nashville and W. G. Fuller at New Orleans (operators), copy to Schofield (Raleigh), Gillmore (Charleston), Thomas (Nashville), Sheridan (New Orleans), signed [U. S. Grant, M]: commanding officers of North Carolina, South Carolina, Georgia, Alabama, Florida, Mississippi, Louisiana and Texas are instructed that whilst they are not to endanger private property by efforts to seize that heretofore claimed by the so-called Confederate States, they will aid the officers of the Treasury Department in protecting and bringing to market that already in Government possession or included in the surrender of the rebel armies; printed OR I/47 pt 3, I/48 pt 2, I/49 pt 2 (MS65-R1; row 10039/0; leaf image-read at 2400 px (own lines))**
+
+Jno C Sullivan Nashville W. G. Fuller New Orleans [Washington] {time: 3.30 PM} [26] copy to [Maj Genl J. M. Schofield] [Raleigh] [,] [Gen Q. A. Gillmore] [Charleston] [,] [Maj Gen Geo. H. Thomas] [Nashville] and [P. H. Sheriden] [New Orleans] [.] [Command = Er (-ed, -ing)]ing officers of [North Carolina] [,] [South Carolina] [,] [Georgia] [,] [Alabama] [,] [Florida] [,] [Mississippi] ditto [Louisiana] and [Texas] are instructed whilst they are not to endanger private property by efforts to seize that hen to [4] claimed by the so called confederate states will aid the officers [Of the] treasure I [Department] in protecting & bringing to mark it that already in [Government] possession or which was included [In the] [Surrender (-ed, -ing)] [Of the] [Rebel] [Army]'s  {tail: [signed] [Maj Genl U.S. Grant] ["] forward to [Command = Er (-ed, -ing)]ers named [signed] U. S G}
+
+Code-word tokens: H 43.
+
+**E401 | Page 370 | 10030 | mssEC 18 (obj 10074, pointer 10030; printed page 364), 14 June 1865 12.30 AM Washington, to Geo K. Smith at Cumberland Md, for Maj. Gen. W. H. Emory commanding Department of West Virginia, signed by order of Maj. Gen. Hancock, C. W. Clark Jr. A.A.G.: by direction of the President you will cause the rebel General McCausland to be arrested and held until further orders; he is reported to be at his farm opposite Point Pleasant, West Virginia, at the mouth of the Great Kanawha, four miles above Gallipolis; the commanding officer of the post of Gallipolis or Point Pleasant might be best to entrust with the duty of arresting McCausland; not located in print; Cumberland reply of 16 June in holder 7953 (MS65-R1; row 10030/2; leaf image-read at 2400 px (own lines))**
+
+Geo K. Smith Cumberland Md for [Major] [General] W. H. Emory [Command = Er (-ed, -ing)]ing [Department] [West] [Virginia] [.] by direction [Of the] [President of the U.S.] you will cause the [Rebel] [General] Mac Cause land to be [Arrest (-ed, -ing)]ed and held until further orders [.] He is [Report]ed to be now at his farm opposite [Point] Pleasant [West] [Virginia] at the mouth [Of the] great [Kanawha] [River] [4] [Mile]'s above Gallipolis [.] The [Command = Er (-ed, -ing)]ing officer [Of the] [Post] of Gallipolis or [Point] pleasant might be the best to intrust with the duty of [Arrest (-ed, -ing)]ing Mack Cause Land by order of [Major] [General] Hancock  {tail: [signed] C W Clark Junior A A G how are you}
+
+Code-word tokens: H 31.
+
+Totals over the 335 entries: H 5869, C 81, I 25, M 41, S 18, U 10.
 <!-- decode.py: derived block ends -->
