@@ -14346,3 +14346,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 16:22 | standby (owner account) | alive; holder owner account (this session, TAKEOVER 06:22 UTC from account 4), last line 15:34 UTC 10 Oct; next orchestrator check-in ~16:34
 2026-10-10 16:25 | FIX-THURBM2 (Sonnet) | claim thurloe-printed l.44535 regrade vs period key sheet; cap 2, box ends 17:08 UTC; disk only; for LANE FAMILY-A2r (account 2)
 2026-10-10 16:26 | FIX-THURBM2 (Sonnet) | claim thurloe-printed l.44535 regrade vs period key sheet; cap 2, box ends 17:08 UTC; disk only; for LANE FAMILY-A2r (account 2)
+2026-10-10 16:27 | FIX-THURBM2 (Sonnet) | done (16:25-16:28 UTC by date -u, brief met): l.44535 regraded H 146 / M 5 from the period key sheet, code 9 = b, code-8 slip dropped, depth_check D3 94.7%, gaps_check keep-going, file_shrink_guard ok 11 paths none shrank; commit dec80f0ff; seven_day allowed_warning on account 2, continued per blast rules; for LANE FAMILY-A2r (account 2)
