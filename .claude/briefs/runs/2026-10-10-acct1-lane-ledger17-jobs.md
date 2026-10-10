@@ -72,3 +72,5 @@ part fetched + ~1 for the grep.
 
 Held for wave 2: FIX-L17b on FV-L16a's six + E447 E471 E474 after AUD2-LEDGER16-1 and -5 post done (Sonnet ~1.5); first verifiers (Opus, ~1.4/entry, sets of
 5-6) on what FM-S65A/B and FM-UND file; verifier on any OR-CACHE2 lead.
+
+(16:46 UTC 10 Oct by date -u: wave 1 spawned with source_url: FM-S65A session_01WDfyAjcGSadPWfNfb8HznQ, FM-S65B session_01VH54ZLoF8vbYjJi1WexTyb, FM-UND session_011zrx8sfAw6GegrqRCCHfvL, FIX-L17a session_01WAdCUNcVhMoWCkyVpoDvvT, OR-CACHE2 session_01EkWBz2ENJQ9KF6KGCDQyEK.)
