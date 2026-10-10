@@ -15282,3 +15282,81 @@ Corrections (a verifier does not edit ciphertext-no9.txt or reading-no9.md):
 
 Requests: hdl.huntington.org 17 (12 CISOSEARCHALL, 1 item info, 4 IIIF 2400 px; all 200, shared token take/release in ROOM); be-api.us.archive.org 11 (8 + 3
 retries; 4 answered 502, each retried once); www.googleapis.com/books 4 (all 200). seven_day allowed_warning not observed by me. For LANE LEDGER-10 (account 1)
+
+## AUDIT (FV-MS18q)
+
+Verifier FV-MS18q (account 1, for LANE LEDGER-10), 10 Oct 2026, 05:18-05:2x UTC by `date -u`; a separate session from the reader MS18-R8 and from every
+other reader or verifier of these entries, not protecting their conclusions. Scope: first audits of **E383** (10048/1), **E384** (9885/1), **E385** (9887/0),
+**E386** (9841/0), **E387** (10055/0), **E389** (9903/1), all mssEC 18 (Huntington object 10074), Cipher No. 1, filed by MS18-R8 (NOTES "## MS18-R8").
+Brief: ledger10 jobs "## FV-MS18q" = "## FV-MS18l" method with the Wave 3 **Step-0 ruling first**; an entry that hits needs only the (c) check. Intake gate
+(05:1x): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Nothing decoded; no network request (no hdl take).
+Key source for all six: `period`. Script: `ms18/fv_ms18q_step0.py` (+ `.out`), disk only.
+
+### 0. Step 0 under the ruling (ordered LCS vs within-entry shuffle)
+(a) = LCS of content words (stop words dropped, one case, numbers as one token) between the decoded body (reading.md; {date}/{time} dropped, {tail} kept) and
+the holder transcription of the entry's OWN lines (sources/mssEC18/p<pointer>.json; every line of the entry's ciphertext.txt block found verbatim in the page
+transcription), / decoded content words. (b) = the same LCS against that transcription's words shuffled within the entry, 20 draws, p95. (c) = decoded content
+words not in the entry's transcription at all. Controls (known N1 by holder transcription, AUD2-LEDGER-38) run through the identical code first:
+| ID | pointer | (a) ordered | (b) shuffle p95 | hit | (c) key-dependent words (as scored) |
+|---|---|---|---|---|---|
+| E378 (control) | 9820 | 0.750 (18/24) | 0.333 | yes (must hit: does) | dana two telegraph signed secretary war (2 lines not verbatim: spacing) |
+| E381 (control) | 9258 (mssEC 19) | 0.724 (21/29) | 0.310 | yes (must hit: does) | washington brigadier general telegraph communicate secretary war |
+| E383 | 10048 | 0.797 (47/59) | 0.237 | **yes** | washington maj gen slocum nineteen force telegraph president signed secretary war jackson (12) |
+| E384 | 9885 | 0.735 (36/49) | 0.224 | **yes** | washington maj gen jno dix hundred new york five five five secretary war (13) |
+| E385 | 9887 | 0.548 (23/42) | 0.238 | **yes** | maj gen jno dix troops maj gen butler army command er troops fort point command er er (17) |
+| E386 | 9841 | 0.722 (26/36) | 0.278 | **yes** | maj gen butler gun 1000 bowling green lee signed president (10) |
+| E387 | 10055 | 0.619 (26/42) | 0.238 | **yes** | washington captain washington telegraph 21 signed secretary war captain washington signed brigadier general (13) |
+| E389 | 9903 | 0.692 (27/39) | 0.231 | **yes** | washington captain 45 new york 6700 20 hundred captain monroe brigadier general (12) |
+All six hit ((a) >= 0.5 and (a) > (b)) by 0.31-0.56 over the shuffle. The method separates on this ledger in the sense the ruling asks: both controls hit, and
+the within-entry shuffle sits at 0.22-0.33. (The route-transposed must-not-hit controls are STEP0-RULE's job, not run here.) Reason, the same as E378's:
+these No. 1 entries were sent mostly in plain words in reading order; the code covers addressee, places, ranks, offices, numbers and a few nouns, so the
+Huntington's public transcription of each page already carries the message.
+
+### 1. What the key adds, per entry ((c) cleaned)
+Scored (c) words that are not key contributions: 'washington' where the transcription has the abbreviation "Wash'n"/"Washn" in the dateline (notation, the
+PX-BRODEC lesson), and decoder slips where a plain word in the transcription was read as a key row (MS18-R8's list; none is a contribution). What remains:
+- **E383:** addressee [Maj. Gen. H. W. Slocum] ('Myrtle'), date of Sharkey's proclamation [19] (M: number row; 19 Aug 1865 is the known date of the
+  proclamation, context), place [Jackson] ('chapel'), [forces], [report/telegraph], [President of the U.S.], [Secretary of War]. Persons/places/numbers: Slocum,
+  Jackson, 19.
+- **E384:** addressee [Maj. Gen. John A. Dix] ('Kunkle'), [New York], signature [Secretary of War] (M). Slips, not contributions: [100] for plain
+  'publish', [5] x3 for plain 'person(s)'. Persons/places: Dix, New York.
+- **E385:** addressee [Dix] ('Kasson'), [New York] ('France', M), [Maj. Gen. B. F. Butler] ('Knaves'), [army], [troops] x2, [command(er)] x2, [forts], [points].
+  Persons/places: Dix, Butler, New York.
+- **E386:** addressee [Butler] ('Knox', M), [guns] ('shoals'), signature [President U.S.] ('webster Bologna', M). Slips: [1000] for plain 'promise', [Bowling
+  Green] for plain 'bear', [Lee] for plain 'happy'. Persons: Butler, Lincoln as signer (both M).
+- **E387:** [Captain] x2 ('pilgrim', 'princess'), [Washington] x2 ('grapes', 'growl') as destination, date [21] ('harrow plug', M), [telegram], [Secretary
+  of War], [Brigadier General] (Baker's rank). Alberger, Odell, Baker, Lynchburg's operator header are clear in the transcription; the affair itself is public in
+  holder clear telegrams 8823/8004 (MS18-R8). Numbers: 21.
+- **E389:** [Captain] x2, address number [45] (M), [New York] ('France', M), quantities [6700] and [20] (M), [100] pounds, [Fort Monroe] ('Appian'), [Brigadier
+  General] (Dyer's rank). Edson, Dyer, 'saxe', 'flour' are clear in the transcription. Places/numbers: New York, Fort Monroe, 6700, 20, 45, 100 (all M).
+None of these is a stretch: in every entry the key-dependent words are isolated single words or names inside plain clauses, no run of key-read words reaches
+the authentication distance, and no code value is shown reading in two contexts by this audit. Depth from them alone: **D1** for each.
+
+### 2. Classification (rule 10; depth rule 4a)
+| ID | N (body) | key | text | depth | safe sentence |
+|---|---|---|---|---|---|
+| E383 | **N1** | period | known | D1 | "The body of Eckert's 2 Sept 1865 telegram on Gov. Sharkey's militia proclamation stands in plain words in the Huntington's own transcription of mssEC 18 (pointer 10048); the period key adds only the addressee (Slocum), Jackson and the date 19 -- fragments read." |
+| E384 | **N1** | period | known | D1 | "The 2 Oct 1864 telegram on registering soldiers' proxies at the New York election is legible in plain words in the Huntington's transcription (pointer 9885); the key adds the addressee Dix, New York and the signature -- fragments read." |
+| E385 | **N1** | period | known | D1 | "An unsent draft (struck through, 'Not sent') of 3 Nov 1864 to Dix about Butler's troops in New York is legible in plain words in the Huntington's transcription (pointer 9887); the key adds Dix, Butler, New York and the military nouns -- fragments read; the telegrams actually sent differ (OR I/43 pt 2 pp.535-536)." |
+| E386 | **N1** | period | known | D1 | "The 13 Sept 1864 message on the Ames guns is legible in plain words in the Huntington's transcription (pointer 9841); the key adds 'guns' and the addressee and signer (Butler, the President, both uncertain) -- fragments read." |
+| E387 | **N1** | period | known | D1 | "Eckert's and L. C. Baker's 23 Sept 1865 replies to Alberger and Odell at Lynchburg are legible in plain words in the Huntington's transcription (pointer 10055); the key adds Washington, the date 21, ranks and offices -- fragments read." |
+| E389 | **N1** | period | known | D1 | "A. B. Dyer's 2 Dec 1864 order for flour sacks to be sent to Captain Edson is legible in plain words in the Huntington's transcription (pointer 9903); the key adds New York, Fort Monroe and the quantities (uncertain) -- fragments read." |
+Unsafe for all six: "deciphered", "first decipherment", "previously unread", or any N3 wording -- the plain text is public in the holder's transcription.
+E385 is classified as an **unsent draft** (one diagonal stroke and 'Not sent' on the leaf, per MS18-R8's image read and the transcription's last line 'Not sent').
+No novelty search was run on the (c) words: at D1 they do not reach the N3+ D2+ bar for an AUD2 row, and the ruling counts them only as fragments.
+
+### 3. Consequences
+- status.json: none of the six had a row; none added (N1, rule 10 template "status.json/SO rows for N3+ only"). No SECOND-OPINIONS-QUEUE row; no WORK-QUEUE
+  AUD2 row (none is N3+ D2+).
+- The print/holder ladder of "## FV-MS18l" was not run: under the ruling a hit needs only the (c) check. MS18-R8's "Remaining gaps" print items for these six
+  (OR III/4, Sept 1865 sources, E385 neighbours, E387 holder item pages, leaf lines not eye-checked) are no longer needed for classification; they would bear only
+  on the (c) words' M grades (names, numbers), which is a KEY/FIX job, not an audit.
+
+### 4. Postmortem / s.5 fixes for a later FIX job
+- One-line postmortem: MS18-R8's own step 0 (`ms18_r8_step0.py`) already showed 0.51-0.83 for these six and still filed them "no row clear in the holder
+  transcription", because it applied FV-MS18p's stricter `code >= 0.5` reading; under the Wave 3 ruling every one is N1. No over-claiming outward sentence
+  exists (none had a status.json row).
+- NOTES "## MS18-R8" step-0 sentence "no row clear in the holder transcription" -> add "superseded by AUDIT (FV-MS18q): E383 E384 E385 E386 E387 E389 hit the
+  Wave 3 Step-0 ruling (N1, body known in holder transcription)". Its "Remaining gaps" items for these six can be marked [retired] for classification.
+- MS18-R8's E382, E388, E390, E391 (printed, not in this audit's scope) have step-0 figures 0.65, 0.16, 0.41, 0.57 by the reader's instrument: a lead for
+  STEP0-RULE / FV-MS18p's successor, not classified here.
