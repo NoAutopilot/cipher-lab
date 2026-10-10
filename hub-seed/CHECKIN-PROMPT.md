@@ -186,3 +186,4 @@ ledger, archive, rebuild + republish, create SITE-ITEMS-3 from here and re-set i
 Oracle sorter page FAILS preflight (14% tiles): publish for L74 only after the lane posts "preflight: PASS". Dispatcher spawned
 AUD2-LEDGERN2-1/-2/-3/-5 (ledger + archive on done). TX-POOL-LEAF-2 bounce at 03:40 if still silent. LESSON: never run two Bash calls in
 parallel when one changes directory (02:53: a cd persisted into the other call and STATUS.md was not found).
+STATE DELTA 03:0x UTC 10 Oct: site republished (version 3) at https://claude.ai/artifact/3vTAKPQQRWAbgVMXxM43Pc after the clean rebuild (310 pages: 180 items, 117 people); a republish over 255 files must be split into two publishes to the same url (assets + items 001-130 + removals, then items 131+ and people); removed paths are passed as null. LESSON: build_site.py does not clean its output dir -- rm -rf items/ people/ before a rebuild or stale renumbered pages linger.
