@@ -56,3 +56,37 @@ other two books; check the ledger's own header word/book label on the page text 
 the share). Write a table row x book (count, control p95) to NOTES "## O9-BOOK (10 Oct 2026, account 1, for LANE LEDGER-N2)" and the verdict per row:
 No. 9 / No. 2 / No. 1 (hand to LANE LEDGER) / none in hand. File nothing; the readers of wave 2 file. Also say, for the remaining 16 rows, which book the
 header words predict. Report what was found and where it was not found.
+
+---
+
+# Wave 2 (written 10 Oct 2026 01:2x UTC by date -u; seven_day allowed_warning on every worker, continuing per lane-common-blast)
+By get_session: N2R-1 2.41 (N2-FA..FJ; 6 in OR, 4 not located), N2R-2 3.09 (N2-GA..GJ; 4 in OR, 6 not located; 9871/1, 9871/2 no clause under any book),
+O9-BOOK 3.15 (No. 9 reads 9709/1 9808/2 9673/0, 9845/0 header only; 9880/2 9772/0 read No. 1, handed to LANE LEDGER; 9926/1 "No 3", 9830/1 "No 13" none in
+hand; 9694/2 conflict, 9699/0 undecided; shuffled-key bigram instrument weak, 3/10 -- the header words decide). Wave 1 8.65.
+
+## FV-N2a, FV-N2b, FV-N2c (Opus 5.5, first verifiers, separate from every reader; cap $2.5 per entry, box 100 min)
+Method exactly "## FV-MS18l" of .claude/briefs/runs/2026-10-10-acct1-lane-ledger9-jobs.md (= the FV-FM9a / FV-FM6 chain: all-pointer CONTENTdm clear-copy
+search FIRST, duplicate diff across mssEC 18/19/25, OR I-III and ORN by date + both correspondents on page images, Grant Papers via IA be-api, press of the
+day, G3 with decoded phrases, rare-name OR grep; eye-check of the leaf against the holder transcription; CLAUDE.md verifier template incl. rule 4a depth),
+for Cipher No. 2 entries in ciphertext-no2.txt (`decode_no2.py --check`). Write "## AUDIT (FV-N2a)" etc. in AUDIT.md, status.json rows, SO rows for N3+,
+and for N3+ D2+ one WORK-QUEUE row AUD2-LEDGERN2-<n> (account-3 tag; this lane is account 1, which read and first-audited) for the VERIFY lane; corrections
+in s.5 for a FIX job, never edited into the reading by you. Each NOTES/AUDIT line ends "for LANE LEDGER-N2 (account 1)".
+- FV-N2a (cap 7.5): N2-FA (9879/0, 30 Oct 1864, Caldwell to the Nymph: Seymour's agents, ballot-box stuffer; a same-day sibling Dana to Patrick is in print
+  with different wording -- test N2 against it), N2-FB (9767/1, 26 June 1864, hospital transports, Ingalls), N2-FE (9905/1, 3 Dec 1864, Sixth Corps shipping).
+- FV-N2b (cap 7.5): N2-FH (9916/2, 17 Dec 1864, vessels to Sherman at Savannah), N2-GE (9916/1, 16 Dec 1864, Halleck to Canby, Pensacola to Hilton Head;
+  holder clear reply 8504 -- read it first), N2-GF (9722/1, 25 Apr 1864, Augur to Meade, Mosby near Upperville).
+- FV-N2c (cap 10): N2-GH (9725/0, 27 Apr 1864, Burnside to Grant, column to Fairfax; OR I/33 Grant to Meade 27 Apr 8.30 a.m. names the move -- test N2),
+  N2-GA (9874/1, 22 Oct 1864), N2-GC (9913/0, 10 Dec 1864), N2-GI (9914/1, 14 Dec 1864) -- the three Brice paymaster telegrams: read them together, look for
+  the Paymaster General's printed reports and OR III/4 for each.
+
+## N2R-3 (Sonnet 5.5, reader; cap $3.5, box 110 min): 10 more rows guessed Cipher No. 2
+Exactly N2R-1, with N2R-2's day-word test beside the shuffled-key coherence (the decoded time/day word must equal the header's). Rows: 9791/1 (325 words: one
+unit = 2 rows), 9839/0, 9807/1, 9888/1, 9873/3, 9813/0, 9840/0, 9774/3 (pointer 9774 has E-ids from LANE LEDGER: check the entry number), 9687/0 (spares
+9848/1, 9876/1, 9691/0). IDs N2-HA, N2-HB, ... NOTES "## N2R-3 (10 Oct 2026, account 1, for LANE LEDGER-N2)".
+
+## O9R-1 (Sonnet 5.5, reader; cap $3.5, box 110 min): 10 rows O9-BOOK assigned or predicted to Cipher No. 9
+Method of N2R-1 with `decode_no9.py` and ciphertext-no9.txt (follow the O9-BA/O9-BB convention for mssEC 18 rows); key-no9.md is a SAMPLE table: unread
+groups stay [?] at grade M, never guessed; the header words (label, Pagan/Pagoda place word, time word = header time) are the book test -- paste them per row,
+and file a row only if they agree with No. 9 and the decoded body has at least one clause. Rows: 9709/1, 9808/2, 9673/0 (O9-BOOK verdicts), 9687/1, 9684/1,
+9699/1, 9803/0, 9684/0, 9735/0, 9686/1 (header predictions). Read NOTES "## O9-BOOK" first (its decodes are in ms18/o9book.out). IDs O9-DA, O9-DB, ...
+NOTES "## O9R-1 (10 Oct 2026, account 1, for LANE LEDGER-N2)". Count per row how many tokens the sample table leaves unread.
