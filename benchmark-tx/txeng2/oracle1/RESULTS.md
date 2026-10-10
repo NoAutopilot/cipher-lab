@@ -241,3 +241,60 @@ f1f24d696f59ca449b6df55d90df8c5ae7912cd53a075426422d4aaa3f5c9ce7  benchmark-tx/t
 Folder total: 16M (under 30 MB). Commit hash: in the ROOM done line (this file is committed with the outputs).
 
 Openings of eval truth: 0. No read, no truth, no pass opened. Nothing published: the orchestrator publishes, and only after the preflight question above is settled.
+
+## OL1-PAGE (PREREG-txeng2-21 "OL1-PAGE amended", TXE2-OL1PAGE worker, account-4, Opus 5.5; 10 Oct 2026 02:59-03:0x UTC by date -u)
+
+Read-free: no reader call, no vision call on any crop, no truth, no key, no decode, no pass output, no label from any read. Inputs:
+the committed boxes/boxes_all.tsv and the crop images only. Step (i) of the original OL1-PAGE (a `--box-verify` mode) was withdrawn
+by the amendment before any tool was touched: tools/sorter_preflight.py and its tests are unchanged.
+
+**Re-cut** (`recut_ol1_boxes.py`, rules in its docstring, in the PREREG's order; medians per hand over kind=sign widths: vivonne 51 px,
+birago 65 px, luzerne 11 px; every change a row of boxes/boxes_recut.tsv):
+| rule | vivonne1573-f102r | birago1572-no87 | luzerne108a-p1 |
+|---|---|---|---|
+| (1) split over-wide (pieces) | 33 | 0 | 10 |
+| (2) strip-height trimmed / dropped | 14 / 0 | 11 / 0 | 0 / 0 |
+| (3) ink under 3% dropped | 0 | 0 | 0 |
+| (3) ink over 60% padded 2 px | 16 | 11 | 48 |
+| marks attached to a sign (--marks) / left alone (`mark box`) | 46 / 3 | 24 / 3 | 42 / 10 |
+Page: 1,329 tiles (1,313 `sign box`, 16 `mark box`), 215 focus tiles with a geometric note only, lede = L74's instruction plus "The two
+piles are only the machine's cut kind (a sign box, or a small mark with no sign in reach), not a reading."; seed note replaced as in
+OL1-BOXES. 4.66 MB (under 16 MB).
+
+**Plain preflight** (`python3 tools/sorter_preflight.py sorter/oracle_boxes_sorter.html --cipher-lines sorter/cipher_lines.tsv --pages-json sorter/pages.json`):
+```
+PASS template: ok, Fix the cut present, marker 2026-10-09.4
+PASS answerable: 215 focus tiles, 2 named piles of 2, 0 unanswerable
+FAIL right line: 1329 tiles; 0 tile(s) off the cipher lines, 71 of 71 listed lines have tiles; shape: 44 wide (>2.5x median 41 px), 9 strip-height boxes, 46 ink outside 3-60% of 1329 measured; 92 = 6.9% (limit 5%)
+PASS contact sheet: 24 tiles -> sorter/oracle_boxes_sorter.preflight.png (seed 20261006)
+PASS colour: tokens, tints, box colours and person-facing text pass tools/cvd_check.py
+preflight: FAIL
+```
+cvd_check (`sorter_preflight.py --cvd` on the page): PASS colour: tokens, tints, box colours and person-facing text pass tools/cvd_check.py.
+
+**STOPPED per the amendment** (shape still over 5% after the rules): no further rule improvised, no gate touched, nothing published.
+Residual by class and hand (92 tiles = 6.9%; a tile can carry more than one class):
+| hand | tiles | flagged | wide | strip-height | ink > 60% |
+|---|---|---|---|---|---|
+| vivonne1573-f102r | 541 | 40 (7.4%) | 31: 30 under 2.5x the HAND median (flagged only by the gate's POOLED median, 41 px), 1 widened past it by an attached mark | 6, all mark unions (a sign + its attached mark span the strip) | 4: 1 padded and still over; 3 under 60% by the re-cut's measure, over by the gate's (embedded JPEG) |
+| birago1572-no87 | 343 | 21 (6.1%) | 13, all under 2.5x the hand median (pooled-median only) | 3, all mark unions | 11, padded and still over (2 with a mark) |
+| luzerne108a-p1 | 445 | 31 (7.0%) | 0 | 0 | 31: 21 padded and still over (5 with a mark), 10 under 60% by the re-cut's measure, over by the gate's |
+For the lane's decision (observations, not rules applied): 43 of 44 wide flags come from the gate pooling widths across hands where the
+PREREG's rules are per hand; 9 strip-height flags are created by the --marks union, not by any sign box; 34 ink flags are small dense
+glyphs a 2 px pad does not bring under 60% (luzerne's median width is 11 px), 13 more differ only between the crop and the embedded
+JPEG measure.
+
+sha256 (committed in the same commit as this section):
+```
+92eb9a7a5424cc64fef3397baf00ee1d78a6304718bcd24042a4df7419f8a591  sorter/oracle_boxes_sorter.html
+9bad5ad205a21aea71d3961a4cd7e4758342ec15f8557f0fbfb92bab40ed2f79  sorter/oracle_boxes_sorter.json
+e81262cb3055a42f9a5641b2c7e2a104dd3b45be5983ac5c186b71020742e457  sorter/signs.tsv
+2d04145ff68529ad404d6ad198167efbd68fcdddaaa407268c7df99f01e6523d  sorter/labels.tsv
+525c8eb881897619b10b6d1719e5c0330d0aa251260ce097eedf5517064efa1e  sorter/marks.tsv
+fd7f1e6a09274bddd7906cd16b566e9ec7d55fefce9f2e561f69e9bc8272aa35  sorter/focus.tsv
+81298643849f1bdcf32f6495830bb6acddfb6dbf9898389b36ab9aab31ce189f  boxes/boxes_recut.tsv
+926241e24bc53bec24a0b2a9c5501f425b06680d4b187ed7380f5ed8a63a650e  boxes/boxes_recut_all.tsv
+7079f30588f8162c989d50da2036e6b997d00d98f898940d2a71024f0ee0e1c7  recut_ol1_boxes.py
+f146df0b3dcaf6da758ee045940d0eaab4be164abb0f9d1763f89a6bb405d57b  build.sh
+```
+Openings of eval truth: 0. No read, no truth, no pass opened.

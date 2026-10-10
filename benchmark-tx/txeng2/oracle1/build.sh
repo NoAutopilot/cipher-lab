@@ -10,20 +10,23 @@ for h in vivonne1573-f102r birago1572-no87 luzerne108a-p1; do
   python3 tools/glyph_atlas.py segment $args --out $T/$h > /dev/null
 done
 python3 $O/build_ol1_boxes.py $T
-python3 tools/sign_sorter.py --signs $D/signs.tsv --labels $D/labels.tsv --pages $D/pages.json \
+# OL1-PAGE amended (PREREG-txeng2-21, TXE2-OL1PAGE): re-cut by the declared per-hand geometric rules, piles = cut kind only.
+python3 $O/recut_ol1_boxes.py
+python3 tools/sign_sorter.py --signs $D/signs.tsv --labels $D/labels.tsv --pages $D/pages.json --marks $D/marks.tsv \
+  --focus $D/focus.tsv --focus-note "These boxes were changed by a geometric rule (split, trimmed, padded, or a detached mark joined to its sign). Check each cut first." \
   --title "Oracle boxes: verify the cuts" \
-  --lede "Verify the machine-proposed sign boxes and their reading order on these 35 lines (3 hands). For each box: accept it, or mark it a bad cut and move, split or merge it with Fix the cut; add a box where a sign has none. Never read a value. Time the first 100 signs and write minutes per 100 signs in the result before continuing; stop at 1,500 signs." \
+  --lede "Verify the machine-proposed sign boxes and their reading order on these 35 lines (3 hands). For each box: accept it, or mark it a bad cut and move, split or merge it with Fix the cut; add a box where a sign has none. Never read a value. Time the first 100 signs and write minutes per 100 signs in the result before continuing; stop at 1,500 signs. The two piles are only the machine's cut kind (a sign box, or a small mark with no sign in reach), not a reading." \
   --tile-quality 70 --out $D/oracle_boxes_sorter.html --data-out $D/oracle_boxes_sorter.json --no-preflight
-# The tool's blind seed note says the tiles were "first piled by our readers' labels"; here no reader ran (one neutral pile),
-# so the note is replaced by a true one in both outputs (the only edit to the tool's output; no value, label or guess added).
-python3 - "$D/oracle_boxes_sorter.html" "$D/oracle_boxes_sorter.json" <<'PY'
+# The tool's blind seed note says the tiles were "first piled by our readers' labels"; here no reader ran (piles = the machine's
+# cut kind), so the note is replaced by a true one in both outputs (the only edit to the tool's output; no value, label or guess added).
+python3 - "$D/oracle_boxes_sorter.html" "$D/oracle_boxes_sorter.json" <<'PY2'
 import sys
 old = 'first piled by our readers’ labels; this page shows no key values and no decode choices, so what you decide is blind.'
-new = 'all in one pile, unsorted: no reader, no label and no machine guess went into this page, so what you decide is blind.'
+new = 'piled only by the machine’s cut kind (sign box, mark box): no reader, no label and no machine guess of a value went into this page, so what you decide is blind.'
 for p in sys.argv[1:]:
     s = open(p, encoding='utf-8').read(); n = 0
     for o in (old, old.replace('\u2019', '\\u2019')):
-        n += s.count(o); s = s.replace(o, new)
+        n += s.count(o); s = s.replace(o, new if o == old else new.replace('\u2019', '\\u2019'))
     open(p, 'w', encoding='utf-8').write(s); print(p, 'seed note replaced', n)
-PY
-python3 tools/sorter_preflight.py $D/oracle_boxes_sorter.html --cipher-lines $D/cipher_lines.tsv --pages-json $D/pages.json || true
+PY2
+python3 tools/sorter_preflight.py $D/oracle_boxes_sorter.html --cipher-lines $D/cipher_lines.tsv --pages-json $D/pages.json
