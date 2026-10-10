@@ -6033,3 +6033,55 @@ Read so far: ten of ten examined; none filed (all Step-0 hits).
 - [x] image-check: three of ten pages read at 2400 px; the other seven are a named optional step above.
 - [n/a] retry: nothing failed except the first F1 and F8 queries, which used key-dependent words and were rerun on plain words.
 Verdict: keep going: 3 internal gaps; cheapest next: F9 5822/2 sibling 5851 vessel list and 8 Dec Butler IV window, ~$0.2
+
+## STEP0-KEYCTL (10 Oct 2026, account 1, for LANE LEDGER-13)
+
+Question (LANE LEDGER-13 jobs file, Wave 1): does the Wave 3 Step-0 ruling (STEP0-RULE) survive a meaning-shuffled-KEY control on mssEC 18/19, as
+BOOK-FM65 found it does not on mssEC 25? Worker STEP0-KEYCTL (Opus), 09:19-09:2x UTC by `date -u`, disk only, 0 network requests. Intake gate (09:23 UTC):
+`eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Scripts `ms18/step0_keyctl.py` (-> `ms18/step0_keyctl.tsv`)
+and `ms18/step0_keyctl_null.py` (-> `ms18/step0_keyctl_null.tsv`); both exec `ms18/step0_ordered.py`'s functions unchanged (body, words, lcs, blocks,
+windows, measure) and decode each entry with `decode.decode_entry` as `derive()` does, under the entry's book (the ciphertext file it is filed in) and under
+three meaning-shuffled copies of that book (`book_fm65.py`'s `shuffled()`, seeds 1-3: the 'word' rows' meanings permuted, numbers kept). Key-only (a) = the
+ordered content words of the bracketed code meanings only, LCS against the window the true book chose, / their count. Survives (brief's definition) =
+book hit AND s1-s3 all miss, OR key-only book > key-only of every shuffle. Nothing filed; no status.json, AUDIT.md, ciphertext, reading or grade changed.
+
+**Why the control fails here too.** The mssEC 18/19 holder transcription is the cipher copy, as on mssEC 25: p9889 (E325's page) "Jennie person for Moon
+unity . The Indigo directs the odor at Emily on Monday morning next ...", p9071 (E74's page) "Francis French Belly Hadn't the new squash webbs ...". Step 0's
+(a) measures the plain words the decode keeps from the cipher copy, which no key change touches.
+
+| set | entries | book hits (recorded) | s1 / s2 / s3 hit, of those | book hit, all 3 shuffles miss | key-only beats all 3 | survive (brief) | key-only beats 20-seed p95 with LCS >= 3 |
+|---|---|---|---|---|---|---|---|
+| STEP0-RULE mssEC 18/19 (incl. positives E74 E378 E381) | 57 | 51 | 46 / 46 / 49 | 0 | 27 | 27 | 9 |
+| S0-57XX Fort Monroe E302-E320 | 9 | 8 | 8 / 8 / 8 | 0 | 2 (E305 E309) | 2 | 0 |
+| MS18-R9 recorded hits | 6 | 6 | 5 / 5 / 5 (one fewer than R9's own run: 9835/1 9877/1 hit HHH) | 0 | 4 | 4 | 2 (9793/0 9826/0) |
+| MS18-R10 recorded hits | 8 | 8 | 8 / 7 / 7 | 0 | 5 | 5 | 2 (9733/1 9802/1) |
+| MS18-R11 recorded hits | 7 | 7 | 7 / 7 / 7 | 0 | 1 (9686/2) | 1 | 0 |
+| **all recorded hits** | **80** | **80** | | **0** | **39** | **39** | **13** |
+
+Per entry (a) book / s1 s2 s3 / key-only book vs s1-s3 are in `ms18/step0_keyctl.tsv` (one row per entry, filed misses run too and marked). Book-side (a)
+reproduces step0_ordered.tsv exactly on 29 of 66 rows, within 0.05 on 56 and within 0.091 on all, with the same hit/miss on all 66 (decode re-derived from today's ciphertext*.txt and keys, where
+step0_ordered.py read reading*.md; same functions). MS18-R9 used its own word functions; under step0_ordered's, 9877/3 (filed E403) reads 0.500 HIT and
+the six recorded hits stay hits. Survivors by the brief's definition (all by key-only; none by the shuffled-hit criterion): STEP0-RULE E326 E335 E340 E347
+E349 E350 E351 E355 E356 E357 E358 E374 E375 E381 N2-AI N2-BJ N2-BL N2-BN N2-BZ N2-CK N2-FA N2-GA N2-GC N2-R O9-AH O9-DC O9-DA; S0-57XX E305 E309; R9
+9793/0 9826/0 9806/2 9777/1; R10 9823/3 9787/1 9733/1 9802/1 9874/2; R11 9686/2.
+
+**The key-only survivors are not a known-text signal.** With 3 shuffles a 1-token key-only LCS (e.g. 1/16 vs 0, 0, 0) "beats every shuffle"; 26 of the 39
+survivors match 1-2 meaning tokens. Against 20 shuffled copies (p95) and an LCS of at least 3, 13 remain, and the meaning tokens that match the holder window
+are, on all 13, the dateline and numbers: [Washington] matching the header's "Washn" (11 of 13), number meanings matching digits written in the header or
+copy (E379 hundred/four/thousand; 9826/0 five/eight/hundred/thousand; 9733/1 seven/thousand/hundred/sixty), and a few place names the copy also writes plain
+(Cairo E335, Memphis E358, City Point N2-CK, Nashville 9802/1). That is evidence that the book reads the dateline right -- a book check -- not evidence that
+the body's plaintext is already transcribed anywhere. The positive controls show the same: E74 and E378 ("N1 by holder transcription") score key-only 0/3
+and 0/6, and hit under all three shuffles because they are mostly plain telegrams, not because the holder gives their clear text.
+
+**Proposed revised ruling (for the VERIFY lane and the owner-account orchestrator; not applied here).**
+1. On mssEC 18, 19 and 25 the holder transcription is the cipher copy, so Step 0 (a) cannot fail differently under a meaning-shuffled key (rule 3, the
+   orthogonal-control clause): 80 of 80 recorded hits keep hitting under at least one shuffle and 0 hit only under the true book. Step 0 is a non-test on
+   these ledgers -- a hit says nothing about known text and a miss nothing about novelty.
+2. "Body in holder transcription" is withdrawn as a reason not to file. The 21 MS18-R9/R10/R11 hits and BOOK-FM65's 66 Fort Monroe hits revert to reader
+   material, filed with the ordinary prior-work step (print, holder clear-copy CISOSEARCHALL, decipherment ledgers, same-leaf siblings).
+3. The D1 depths and N1 classes that rest on a step-0 hit alone (FIX-FM23: "D1 for the step-0 hits"; S0-57XX's eight; STEP0-RULE's 51) are re-examined by the
+   VERIFY lane against a clear-text source; where none is located the step-0 hit is not a reason to hold them at N1/D1.
+4. Replacement for step 0 where a clear copy exists: run the same LCS against the clear copy (a print, a holder decipherment), keeping the meaning-shuffled-key
+   control as the gate (book hit and every shuffle miss). The key-only variant is kept only as a book check on the dateline, never as a known-text check.
+
+Not done: no image read (disk only); no clear-copy search; nothing filed; no grade, class, depth, status.json or AUDIT.md change.
