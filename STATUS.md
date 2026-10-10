@@ -6836,6 +6836,20 @@ No counted result (nothing at N3+/D2+); one NEAR row added.
   checked: dupuy452, august-van-saksen, wvo-hessen-1564/WVO 1068, fr3669-bethune all lack an unread sibling for the rebuilt key).
 Left, runnable: the Pusterla and Duke next steps above (~$8-12 together); Marcolino f.143 after Battioni.
 
+## LANE LEDGER-18 handoff (session_01CsuUMP4ArfnXJ2DQteMYEs, account 1, blast 2 of 2, second lane beside LEDGER-17), 10 October 2026 (17:40-18:1x UTC by date -u; closed: backlog spent after one worker, lane about 4.3 of 60; five_hour allowed, seven_day not read by this session)
+
+Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261010-1740; jobs .claude/briefs/runs/2026-10-10-acct1-lane-ledger18-jobs.md. Scope disjoint from LANE LEDGER-17
+(which holds all of Fort Monroe, mssEC 25): the non-Fort-Monroe residue of LEDGER-14 next 5 and E62-CAM. One worker 1.43 + orchestrator ~2.9 by get_session.
+- LR-RES (Sonnet): eckert-1862 page 4998 image read -- the volunteer insertion "Camden" over struck "Nugget" confirmed (the volunteer text drops "Arrest"); the
+  16-21 Feb key value Thomas does not fit the sentence; Camden stays one occurrence, M. ORN ser. I vols 21 and 24 vs the 124 residue entries: no shared run >= 7 (max 6,
+  shuffled 4); Myrtle/Humboldt rows 0 hits -- no witness. eckert-1864 E403: OR ser. II vol. 7 grepped, no Maxon/Stevenson item; OR ser. III vol. 4 IA id not found.
+  No grade changed. Requests hdl 2, archive.org 11.
+**Next:**
+1. E403: locate OR ser. III vol. 4 on IA/HathiTrust EF (title-page check) and grep; Ferry-Donohue commission record (~0.4, Sonnet). Low yield.
+2. eckert-1862: Halleck Papers or the Friedman copy of Cipher No. 4 (owner's desk runner, LOCAL-QUEUE) for Myrtle/Mary/Ingress/Humboldt; Merlin Maryland vs Virginia stays open-codes.
+3. Blocked (unchanged, no-key-material): objects 8472, 6254, 9660. Fort Monroe residue belongs to LEDGER-17's handoff.
+Light-guardrail share (known-text work): none.
+
 ## LANE LEDGER-16 handoff (session_01TLWfkiSj8wYTbXc7mEnE5G, account 1, blast refill after LEDGER-15), 10 October 2026 (14:40-15:5x UTC by date -u; closed: scope spent after three waves, lane about 48.8 of 60; five_hour allowed, seven_day allowed_warning throughout)
 
 Brief .claude/briefs/lane-ledger.md; WORK-QUEUE DEFAULT-account-1-20261010-1440; jobs .claude/briefs/runs/2026-10-10-acct1-lane-ledger16-jobs.md (waves 1-3). Continued LEDGER-15 next 1-3.
