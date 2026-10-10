@@ -16475,3 +16475,203 @@ not [Monroe]'s ("150 animals"). All six: header may say "image-read by FV-FM65a,
 Requests: hdl.huntington.org 25 (19 CONTENTdm queries, 1 dropped and not retried; 6 IIIF pages; one take 10:12-10:15 UTC); archive.org 9 djvu downloads
 (6 x 200, 1 x 503, 1 x 401, 1 x 500), 2 s apart; be-api.us.archive.org 20, 1.8 s apart.
 For LANE LEDGER-13 (account 1).
+## AUDIT (FV-FM65b)
+
+Verifier FV-FM65b (account 1, for LANE LEDGER-13), 10 Oct 2026, 10:03-10:4x UTC by `date -u`; a separate session from the readers FM65-A,
+FM65-B and FM65-C (account 1), not protecting their conclusions. Scope: **E502, E507, E512, E520, E530, E532** (NOTES "## FM65-A", "## FM65-B",
+"## FM65-C"); ciphertext.txt, Cipher No. 1, Fort Monroe ledger mssEC 25 = Huntington object 5952, January 1865. Nothing decoded beyond key look-ups
+in key.md. Key source for all six: `period`. Step 0 is a non-test on mssEC 25 (Wave 2 RULING, STEP0-KEYCTL) and was not used for any class. No spec
+exists for eckert-1864, so `judge_plaintext.py` was not run. Scripts (all in `fortmonroe/`, outputs beside them): `fv_fm65b_hdl.py` (+ `.out`,
+`_hdl2.out`: 21 CONTENTdm full-text queries across all pointers of p16003coll11 incl. control 9678, then pages 5849 5852 5856 5866 5871 5877 at
+2400 px to scratch), `fv_fm65b_print.py` (+ `.out`: letters-only phrase grep over the 177 cached print-check volumes plus five texts fetched to
+scratch -- OR I/46 pts 1-3 `warofrebellion461unit` `462unit` `463unit`, OR I/47 pt 2 `warofrebellion014702rootrich` (`472unit` answered 503),
+ORN I/11 `officialrecordso0011unse` (`0012unse` answered 500) -- plus KWIC for the ship and officer names), `fv_fm65b_beapi.py` (+ `.out`: 14
+whole-collection be-api queries, no identifier, control first), `fv_fm65b_gb.py` / `fv_fm65b_gb2.py` (+ `_gb.out`, `_gb2.out`, `_gb3.out`,
+`_gb4.out`: 34 Google Books API queries, keyed, `country=US`, incl. two in-volume controls for Grant Papers vol. 13), `fv_fm65b_loc.py`
+(+ `.out`: 3 Chronicling America queries, January 1865).
+
+### 1. Duplicates, prior work, image
+- **Duplicate diff:** pointers 5849 5852 5856 5866 5871 5877 against every `###` header in ciphertext*.txt and the ls*_entries files: each
+  pointer carries only its own row's entry and same-page rows that are other telegrams (E506 = 5852/1, E519 = 5866/0, E529 = 5871/0, E534 =
+  5877/2). Word grep of the ship names (Winants, Hancox, Russia, Ashland, Illinois) and of 'mule teams', 'perfect order', 'commissary' across
+  ciphertext*.txt: only the antecedent **E511** (5855/2, Rawlins asks for two light-draft steamers like the Hancox and the Winants), which
+  E512 answers, and unrelated 1864 entries. **No duplicate.** None of the six is in status.json.
+- **Prior work** (by hand, civil-war adapter; `tools/prior_work.py` takes items.tsv rows, which these are not): own work (pointers grepped in
+  ciphertext*, NOTES, AUDIT, status.json: only the FM65-A/B/C filings and the BOOK-FM65 prediction table); no AUDIT.md or status.json class
+  on any of the six before this section; Tomokiyo and cached solver files hold no Eckert ledger items; aaymeloglu not cloned (UNCHECKED-NET,
+  as every FV-FM audit).
+- **Image eye check this session, every line of all six entries** (`tools/iiif_lines.py --image ... --lines-per-crop 3` found no lines in the
+  faint pencil on any of the six pages, so autocontrasted fixed strips of three to six lines were cut instead; scratch only). **The
+  transcription matches the image word for word on all six**, including E502 "Katy pebble for pandora Webster stop shelter Rawlins Berry",
+  "thats festus the weasels", "cooling and watering", "surface that ewill", "toby", "soons the versailles", "whisky wayworn will / Carry tattoo
+  send up yoke William Tea Howell pilgrim"; E507 "Imogene for Howell unity all the weaselers / named had left here before pony AM / wedge yoke
+  Are See Webster paradise Vinton" and "Lucy too paradise are see webster / animal unity if the weaster [weasler] Russia ... by direction of
+  Knave South Dodge"; E512 "Burr Moody or / black", "Are C Webster pandora", "youth dodger" (the image has "uses", not "use", in "for your
+  uses"); E520 "Minnie for palate ring galls zebra", "Banditti at Rebecca January pebble", "Sarah January penny", "walrus Are see Webb Stir
+  pandora Vincent"; E530 "person / prolong and plunge spit pedlar Ariel pony publish and / murder pebble spit pekin and Ashland peach wine ditto /
+  ditto spit have sailed in perfect order Mr Morgan."; E532 "Katy paradise webb Stir unity Whig for / penny promise men pedlar mansion pekin
+  pledge / mule teams complete ditto ghost days wales". The readers' "transcription only" / "text only" / "no image was read" caveats on all six
+  are now closed. Pages 308, 312 and 333 are written in a ruled grid of seven columns; read row by row the text is in sentence order (no route
+  to undo).
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; under the hdl token 10:06-10:1x UTC; 21
+queries, control 'Inspector difficulty Evidence Nashville' -> 9678 returned; one dropped connection retried once after 25 s): Morgan commissary 3
+(5849 own; **5846** = Rawlins to Morgan, City Point 3 Jan 11.25 AM, the cipher copy of OR I/46 pt 2 p.21's 10.30 a.m. telegram, a different
+text; 8342 = 1863), coaling watering 0, ready to receive 40 (5849 own; the rest not read one by one), troops each
+steamer 2 (4666 = 1864, 7746 = Feb 1865, other texts), Russia flag ship 1 (5852 own), flag ship 93 (not read one by one; the narrower 'Russia flag ship' returns only 5852), steamer Russia 2 (5941, 7844: March 1865, other texts), Eliza Hancox 2 and Winants 3 (5855 = E511's antecedent, 5856 own; 5925 = a
+later Bradley telegram), Porter tug 2 (5856 own; 2566 other), hardly capable 1 (own), Seneca Bermuda 2 (own; 5964 other), Ariel Sedgwick
+Victor Illinois 6 (**7682** = Ingalls, Fort Monroe 4 Jan 5.30 PM, clear: "the Ariel, Illinois, Gen. Sedgwick, Victor & Baltic are ordered to
+Balto"; **8511** = Newport, Baltimore 7 Jan 6 PM, clear: "The Ariel, Illinois, Victor & Genl Sedgwick now here ... the Baltic left for Ft.
+Monroe last night"; **9153** = Washington 5 Jan, the Ariel/Illinois/Sedgwick/Victor/Baltic order in cipher; 5854, 5858, 5866 own rows: all
+context, none E520's text), Baltic Baltimore morning 3 (5866 own; 5861 = E517/8508 antecedent; 3095 = 1862), sailed perfect order 1 (5871 own;
+the next row on the page, 5871/2, is Morgan's Victor telegram), Ashland Sedgwick 2 (own; 8511 above), mule teams 10 (5877 own; 9151 = 3 Jan 1865 cipher about teams, 7844 Sherman March 1865, 8052 and 8386 other texts; 5904, 5940, 9957, 13005, 13424 not read one by one), Bradley transportation 0, days rations water coal 1 (6900 = 1863). **No holder clear copy of any of the six located.**
+
+**Print:**
+- **E530 -> IN PRINT: N1.** *The Papers of Ulysses S. Grant*, vol. 13 (Nov 16, 1864 - Feb 20, 1865; ed. J. Y. Simon, Southern Illinois
+  University Press, 1985), in a note: "On the same day, Morgan wrote to Rawlins. 'Two steamers, the 'Ariel' 973 men and the 'Sedgwick' 496 men,
+  have arrived ...'" followed by the 13 Jan telegram: "... 'Sedgwick' five hundred and one men, 'Ariel' nine hundred and seventy three men and
+  'Ashland' two hundred and seventy men have sailed in perfect order -- ALS (telegram sent), DNA, RG 107, Telegrams Collected (Unbound);
+  telegram received, ibid.", and next "The Steamer Victor with three hundred and seventy five (375) men has sailed -- All right -- Plenty of
+  Hard [bread]" (= the next ledger row, 5871/2). Google Books API snippets only (volume `mnRjmhe3QLoC`, PARTIAL; `ij8fAQAAMAAJ`, NO_PAGES),
+  queries `"sailed in perfect order" intitle:Grant` and `"two hundred and seventy men" Ashland intitle:Grant` (`fv_fm65b_gb2.out`); **page not
+  read** (Grant Papers vol. 13 is not on Internet Archive: the advancedsearch listing has vols. 1-12 and 14-18, no 13). The print agrees with
+  the decode on every numeral (501, 973) and supplies Ashland's 270 (the cipher's "peach wine ditto ditto" = 2, 100, then "ditto ditto"
+  repeating the line above's 70: C by print) and the signer, Morgan (the row's "Mr Morgan" = M. R. Morgan, Lieut. Col. and C. S., who signs the
+  12 Jan letter in OR I/46 pt 2 p.106). The editors printed from the sent and received telegrams, not from a decipherment of this ledger, so
+  the class is N1 (plaintext published; our reading an independent re-decipherment), not N0.
+- **E502 -> no print of the telegram located.** Context printed, diffed, different texts: OR I/46 pt 2 p.21, Rawlins to Lt. Col. M. R. Morgan,
+  City Point 3 Jan 10.30 a.m. (number of vessels and men provisioned; = holder 5846 in cipher), and **Fort Monroe [3 or 5, OCR] Jan 7 p.m., R. C.
+  Webster, Colonel, to Capt. William T. Howell, Assistant Quartermaster: "Steamers all ready coaled and loaded with proper rations. The list will
+  be handed you, stating capacity, &c., of each"** -- the reply to E502, which confirms both correspondents (Howell at City Point, Webster at
+  Fort Monroe), the coaling and the rations; p.24, Grant orders Col. Dodge to accompany Terry as quartermaster. Phrase grep "turn them over to
+  Colonel Morgan", "chief commissary to be loaded", "inform him as soon as the vessels are ready to receive them", "what number of troops each
+  steamer", "which you have been and are now coaling and watering" 0 in 182 volumes; "coaling and watering" hits only OR I/46 pt 1 (Mobile Bay,
+  June 1865) and Butler Corr. V (Beaufort, December 1864), rejected; "are ready for service" hits OR I/32 pt 3 and ORN I/21, rejected (other
+  texts). be-api whole collection `"turn them over to Colonel Morgan"`, `"what number of troops each steamer"` 0.
+- **E507 -> no print of the telegram located.** Context printed: OR I/46 pt 2 pp.34-35, Col. Geo. S. Dodge, Chief QM Army of the James,
+  Bermuda Hundred 4 Jan, to Col. R. C. Webster, Chief QM, Fort Monroe: list of the boats coming up the river for 8,500 men, "send the Ben De
+  Ford for headquarters boat"; p.90, Terry's sailing order lists the transport Russia in the fleet (ORN I/11 index: "Russia, U. S. Army
+  transport", pp.431, 569). Phrase grep "all the steamers named had left here before", "if the steamer Russia is at Monroe", "in time for a
+  flag ship", "send her here in time" 0; "steamer Russia" hits OR I/47 pt 2 (17 Jan, Hilton Head; Feb, mails), rejected. be-api `"all the
+  steamers named had left"`, `"if the steamer Russia is at"`, `"in time for a flag ship"` 0.
+- **E512 -> no print of the telegram located.** Context printed: OR I/46 pt 2 p.90 (= ORN I/11), Terry's orders: "Probably the steam-tug Eliza
+  Hancox will be sent to the Atlantic to receive the troops ... The Hancox, however, must not be waited for" -- the Hancox went with the
+  expedition, as E512's first message says; Butler Corr. V pp.439-440, the Winants and the Porter (tug) with the December fleet. Phrase grep
+  "Eliza Hancox has already been sent", "Winants is hardly capable", "the Seneca at Bermuda", "have the Winants in order", "also the tug D D
+  Porter", "bring down a tug to-morrow" 0; be-api 3 phrases 0; Google Books `"Winants" intitle:Grant`, `"Eliza Hancox" intitle:Grant` 0.
+- **E520 -> no print of the telegram located.** Context: holder clear copies 7681 (3 Jan, Ingalls: Leary, Ariel, Victor to report to Col. Newport,
+  Baltimore), 7682 and 8511 (above); OR I/46 pt 2 p.51, Washington 5 Jan 10.10 a.m. to Col. R. M. Newport: "Ariel, Illinois, General Sedgwick,
+  Victor, and Baltic are ordered from Fort Monroe to Baltimore"; pp.65-66, Grant to Wallace 7 Jan 10 p.m.: "Vessels were sent from Fort Monroe
+  to Baltimore on the 3d instant". Phrase grep "were all ordered to Baltimore", "I have not heard from them since except the Baltic", "which was
+  at Baltimore this morning", "Ariel General Sedgwick Victor and Illinois" 0; be-api 2 phrases 0; Google Books 2 queries: only OR I/46 pt 2 p.51
+  (the 5 Jan order), rejected as a different text.
+- **E532 -> no print of the telegram located.** Context printed, **diffed**: OR I/46 pt 2 p.152, Rawlins to Col. R. C. Webster, Chief QM, Fort
+  Monroe, City Point 16 Jan: coal, water and provision the returning steamers, fifteen days' rations, "Vessels sufficient to carry 4,000 men and 50
+  six-mule teams are required" -- the order E532 follows up, in other words and from another sender (Rawlins, not Bradley; no question about the
+  arrival time); p.165, 17 Jan, the same order countermanded "except as to the teams". Phrase grep "fifty six-mule teams complete", "what time can
+  this transportation report here" 0; "mule teams complete" hits `warofrebellion013403rootrich` (Red River, May 1864) and `warofrebellion431unit` (wagons for Morehead City, 1865), rejected (other texts); be-api `"what time
+  can this transportation"` 0, `"mule teams complete" Bradley` 10 (1909 newspapers), rejected. (The digit phrases "4000 men", "Ariel 973" are
+  void under the letters-only grep and were read by KWIC instead.)
+- **be-api control:** `"Steamers all ready coaled and loaded with proper rations"` 7 hits (OR I/46 pt 2 copies) -- the whole-collection route
+  works for this volume. **Google Books controls in Grant Papers vol. 13:** `"Two steamers" Ariel Sedgwick intitle:Grant` and the E530 query
+  both return the volume's snippet; the other 22 Grant-Papers-restricted queries, for the other five entries, return nothing relevant (`_gb3.out`, `_gb4.out`).
+  A snippet search, weaker than reading the volume.
+- **Press of the day:** Chronicling America (loc.gov), January 1865: "Winants Hancox" 0, "Sedgwick Ariel Ashland sailed" 0, "steamer Russia flag
+  ship" read error (not retried); be-api whole collection covers IA's newspapers (all 0 above). None of the six is a press telegram.
+- **Unreachable or not searched:** OR I/47 pt 2 `warofrebellion472unit` (503; read in the `014702rootrich` copy instead), ORN I/12 (500), Grant
+  Papers vol. 13 page by page (not on IA; Google Books snippets only), NARA RG 107, JSTOR.
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+Decoder counts include key rows that misfire on plain words; corrected counts below. A recurring decoder slip on all six: **"Webster" is
+plain** (Col. R. C. Webster, Chief QM, Fort Monroe: OR I/46 pt 2 pp.21, 34, 152, 165), not the key row Webster = Signature; the precedent fix is
+`plain-at: webster#n` (E193, E220). "Webb Stir" / "webb Stir" is the same name split (E520, E532), not Webb = Reinforcements.
+- **E502:** the reader's header has sender and request wrong. The page reads: [4.30 PM, Katy; header 4.35 PM] [3] "for Colonel Webster: General
+  Rawlins, Chief of Staff to Lieut. Gen. Grant, directs me [to] inform you that as fast as [festus] the steamers which you have been and are now
+  coaling and watering under the instructions received from General Ingalls, Chief Quartermaster, are ready for service, you will turn them over
+  to Colonel Morgan, Chief Commissary, to be loaded with [the] required number [of] rations, and that you inform him as soon as the vessels are
+  ready to receive them. General Rawlins wishes [to] know what number [of] troops [each] steamer will carry. [tattoo] send up. Signed William T.
+  Howell, Captain. S. H. Beckwith." So: **Capt. William T. Howell, A. Q. M., City Point, to Col. R. C. Webster, Fort Monroe, by direction of
+  Rawlins**, Beckwith operator (Webster's printed reply is addressed to Capt. William T. Howell, OR I/46 pt 2 p.21). Plain, not code: Webster
+  ([signed] -> plain), William ([100] -> plain, Howell's first name). **whisky = Troops is H** (key p.24 l.7), not S as the entry note says (the S
+  row is the spelling "Whiskey"). "stop" plain; "tattoo" in no key row: unread, M 1. Code groups: Katy, pebble, pandora, shelter x2, Berry,
+  Juno, weasels (Steam), vincent, pedlar, paradise, wales, shelby, whisky, wayworn, yoke, pilgrim: **H 17**, M 1 (tattoo); 94.4% H.
+- **E507:** msg 1 "[3 PM] for Howell. All the steamers named had left here before [9] AM [today]. Signed R. C. Webster, Colonel, Quartermaster.
+  Geo. D. Sheldon." -- sender Webster (Sheldon operator). msg 2 "Hd. Qrs. A. J. [5 PM] to Colonel R. C. Webster, Monroe. If the steamer Russia is
+  at Monroe please send [her] here [in] time for a flag ship, by direction of [Maj. Gen. Butler]. South Dodge. R. O'Brien." Plain: Webster x2,
+  Dodge ([McMinnville] -> plain, Col. Geo. S. Dodge, Chief QM Army of the James), flag ([11] -> plain, "flag ship"). **"weasler" (msg 2) is the
+  key row Weasel = Steam, H**, which the decoder leaves plain (it reads msg 1's "weaselers" as [Steam]ers). "South" before Dodge is in no key row;
+  by E512's "youth dodger" it stands where the signature word should be: M 1 (signed Dodge, inferred). Code groups: Imogene, unity x2, weaselers,
+  pony, wedge, yoke, paradise x2, Vinton, Lucy, animal x2, weasler, pekin, Knave: **H 16**, M 1 (South); 94.1% H.
+- **E512:** msg 1 "[9 PM] for [Captain] William T. Howell, A[ssistant] [Quartermaster]. The Eliza Hancox has already been sent to [Colonel] Dodge for
+  that purpose. The Winants is hardly capable of going. I think the Seneca at Bermuda [Burr Moody] or [City Point] would be much better. R. C.
+  Webster, [Colonel]. Geo. D. Sheldon." msg 2 "Hd. Qrs. A. J. Jan 4/65 [10.30 PM] to [Colonel] Webster, [Monroe]. Please have the Winants in order
+  to go with [expedition], also the tug D. D. Porter. Will try [to] bring down a tug [tomorrow] for your uses. [Signed] Dodge[r]. R. O'Brien." --
+  msg 1 is Webster's (Sheldon operator), msg 2 is Dodge's (O'Brien operator; the reader's "signed R. O'Brien" names the operator). Plain: William,
+  dodge, Seneca (decoded [Fear]), Webster x2. Code groups: Rosalie, pilgrim, vincent, unity, paradise x2, black, pandora, Reliance, animal, zebra,
+  rape, pedlar, zodiac, whelp, youth: **H 16**, 100% of code groups H; "dodger" = Dodge plain-phonetic (M). Image "uses", transcription "use".
+- **E520:** "[7.30 PM] for [Brigadier General] Ingalls [ring galls]. The Ariel, [General] Sedgwick, Victor and Illinois were all ordered to
+  [Baltimore] at [10 PM] January [3] and the Baltic at [11 PM] January [4]. I have not heard from them since except the Baltic, which was at
+  [Baltimore] this morning. [Signed] R. C. Webster, [Colonel], [Quartermaster]. [Geo. D. Sheldon]." -- sender Webster, Sheldon operator. Plain:
+  Baltic x2 ([Chattahoochee] -> plain), Webb ([Reinforcements] -> plain, "Webb Stir" = Webster). Code groups: Minnie, palate, zebra, pekin,
+  Shelter, pedlar, Banditti, Rebecca, pebble, Sarah, penny, Baptism, walrus, pandora, vincent: **H 15**, 100%. The dates agree with 7681 (3 Jan)
+  and 7682 (4 Jan, Baltic added).
+- **E530:** "[12] for [Brigadier General] Rawlins, [Chief of Staff]. The Sedgwick [501] [men], Ariel [973] [men], and Ashland [2] [100] ditto ditto
+  [men] have sailed in perfect order. M. R. Morgan. Geo. D. Sheldon." -- **"Mr Morgan" is the signature M. R. Morgan** (Lt. Col. and C. S.), not
+  a mention; numerals Sedgwick 501 and Ariel 973 are **C** by Grant Papers vol. 13 (above; the reader's "M, 496 vs 501" compared with the 12 Jan
+  arrival figure, a different count); Ashland 270 by print, the cipher giving 2, 100 and "ditto ditto" for the 70 (C). Plain: Ashland ([Alabama]
+  -> plain). Code groups: Francis, palsy, berry, zebra, person, prolong, plunge, spit x3, pedlar, pony, publish, murder, pebble, pekin, peach,
+  wine: **H 18**, plus "ditto ditto" **C 2**: 100% H/C.
+- **E532:** "[4.30 PM] [Colonel] Webster [webb Stir]. [Transportation] for [4] [1000] men, [50], [6] mule teams complete, ditto [15] days [rations],
+  water and coal. What time can this [transportation] [report] here? Answer. [Signed] G. W. Bradley, [Colonel] and Chief [Quartermaster]. End. S. H.
+  Beckwith." -- Bradley (Chief QM, City Point) to Webster, Beckwith operator. Plain: webb ([Reinforcements] -> plain). "ditto" is in no key row
+  (perhaps "with"): M 1. Code groups: Katy, paradise, unity x2, Whig, penny, promise, pedlar, mansion, pekin, pledge, ghost, wales, wherry, wick,
+  yoke, pandora, Vinton: **H 18**, M 1; 94.7% H. Every numeral agrees with the printed order of the same day (4,000 men, 50 six-mule teams, 15
+  days).
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E502 | **N3** | period | **D3** (H 17 + M 1, 94.4%; external non-statistical: Webster's printed reply to Capt. William T. Howell, OR I/46 pt 2 p.21, steamers coaled and loaded with rations, list of capacity to follow) | no prior plaintext or decipherment located after the search in s.2 |
+| E507 | **N3** | period | **D2** (H 16 + M 1, 94.1%; code clause: Weasel = Steam, Animal = Monroe, Knave = Butler read passim; context only -- the Russia in Terry's fleet, Dodge's same-day printed letter to Webster -- no check of this telegram's own content) | no prior plaintext or decipherment located after the search in s.2 |
+| E512 | **N3** | period | **D3** (H 16 of 16 code groups; external non-statistical: Terry's printed orders send the Eliza Hancox with the expedition, OR I/46 pt 2 p.90 = ORN I/11; E511 asks the question) | no prior plaintext or decipherment located after the search in s.2 |
+| E520 | **N3** | period | **D3** (H 15 of 15; external non-statistical: holder clear copies 7681 and 7682, 3 and 4 Jan, and OR I/46 pt 2 pp.51, 65-66 -- the same vessels ordered to Baltimore on the 3rd, the Baltic added on the 4th) | no prior plaintext or decipherment located after the search in s.2 |
+| E530 | **N1** | period | **D3** (H 18 + C 2, 100%; print agrees on every numeral; no fresh rule-7 re-derivation, so not D4) | plaintext printed in The Papers of Ulysses S. Grant vol. 13 (1985), from the sent and received telegrams; our reading an independent re-decipherment |
+| E532 | **N3** | period | **D3** (H 18 + M 1, 94.7%; external non-statistical: Rawlins to Webster the same day, OR I/46 pt 2 p.152, and the 17 Jan countermand p.165 -- the same 4,000 men, 50 six-mule teams, 15 days) | no prior plaintext or decipherment located after the search in s.2 |
+
+- Not N4 for any: Grant Papers vol. 13 searched by Google Books snippets only (not on IA, page by page not read), NARA RG 107 not reached, ORN
+  I/12 unreachable, the press only partly searched.
+- **Safe sentences.** E502: "Read at grade H with War Department Cipher No. 1: on 3 Jan 1865 Capt. William T. Howell at City Point told Col. R.
+  C. Webster at Fort Monroe, by Rawlins's direction, to turn the steamers he was coaling and watering over to Col. Morgan, chief commissary, for
+  rations as each became ready, and asked how many troops each would carry; Webster's reply is printed in the Official Records (ser. I vol. 46 pt
+  2 p.21), this telegram was not located there, in Grant's papers or in the Huntington's full-text search (searched 10 Oct 2026)." E507: "Read at
+  grade H with War Department Cipher No. 1: on 4 Jan 1865 Webster at Fort Monroe told Capt. Howell that all the steamers named had left before 9
+  that morning, and Army of the James headquarters asked Webster, by Butler's direction, to send the steamer Russia up in time to serve as a flag
+  ship; not located in the Official Records (ser. I vol. 46 pt 2) or the Huntington's full-text search (searched 10 Oct 2026)." E512: "Read at
+  grade H with War Department Cipher No. 1: on 4 Jan 1865 Webster at Fort Monroe told Capt. Howell that the Eliza Hancox had gone to Col. Dodge and
+  the Winants was hardly fit to go, and Dodge asked Webster that night to have the Winants and the tug D. D. Porter ready to go with the expedition;
+  not located in the Official Records (ser. I vol. 46 pt 2 prints the Hancox in Terry's orders) or the Huntington's full-text search (searched 10
+  Oct 2026)." E520: "Read at grade H with War Department Cipher No. 1: on 7 Jan 1865 Webster at Fort Monroe told Gen. Ingalls that the Ariel,
+  General Sedgwick, Victor and Illinois had been ordered to Baltimore on the night of 3 January and the Baltic on the 4th, and that only the Baltic
+  had been heard from; not located in the Official Records (ser. I vol. 46 pt 2) or the Huntington's full-text search, which holds the 3 and 4 Jan
+  orders in clear (searched 10 Oct 2026)." E530: "Read at grade H with War Department Cipher No. 1: Lt. Col. M. R. Morgan's telegram to Rawlins
+  from Fort Monroe, 13 Jan 1865 (the Sedgwick, Ariel and Ashland have sailed in perfect order); its text is already printed in The Papers of
+  Ulysses S. Grant, vol. 13 (1985), and our reading agrees with it." E532: "Read at grade H with War Department Cipher No. 1: on 16 Jan 1865 Col.
+  G. W. Bradley at City Point asked Col. Webster at Fort Monroe when transportation for 4,000 men and 50 six-mule teams, with fifteen days'
+  rations, water and coal, could report there; Rawlins's order of the same day is printed in the Official Records (ser. I vol. 46 pt 2 p.152),
+  this telegram was not located there or in the Huntington's full-text search (searched 10 Oct 2026)."
+- **Unsafe:** any "first", "new", "unpublished" for any of the six; E530 as anything but in print; "for Gen. Rawlins by direction of Gen.
+  Grant" (E502) or "signed R. O'Brien" (E512 msg 2) as the sender.
+
+### 5. Fixes for the next FIX job (not applied here; reading.md is decode.py output)
+All six: `plain-at: webster#n` for every "Webster" (R. C. Webster), `plain-at: webb#n` where "Webb Stir" is the name (E520, E532); headers
+"transcription only" / "text only" -> eye-checked FV-FM65b. E502: `plain-at: william#1`; header sender/addressee -> Capt. William T. Howell,
+City Point, to Col. R. C. Webster, Fort Monroe, by direction of Rawlins (Beckwith operator); entry note "whisky = Troops is S" -> H (p.24 l.7);
+"festus" = as fast as (note); "tattoo" unread (M). E507: plain-at dodge, flag; read msg 2 "weasler" as Weasel = Steam (H; a gloss or a key
+variant row, as msg 1's "weaselers"); "South" M (signature position); header: msg 1 from R. C. Webster, msg 2 from Col. Dodge by Butler's
+direction. E512: plain-at william, dodge, seneca; header: msg 1 Webster to Capt. Howell, msg 2 Dodge to Webster (O'Brien operator);
+transcription "use" -> "uses" (image). E520: plain-at baltic x2; header sender R. C. Webster (Sheldon operator); "ring galls" = Ingalls. E530:
+plain-at ashland; "Mr Morgan" = signature M. R. Morgan; numerals 501/973 C and "ditto ditto" = 70 C by Grant Papers vol. 13; header note "in
+print (Grant Papers 13)"; the next row **5871/2** (Victor, 375 men, plenty of hard bread, signed Morgan) is printed in the same note: do not
+file it as unlocated. E532: "ditto" M; addressee Col. R. C. Webster (print). Requests: hdl.huntington.org 27 (21 CONTENTdm queries incl. control
+and one retry, 6 IIIF pages), all 200 bar one dropped connection; archive.org 7 djvu downloads (472unit 503, ORN 0012 500, five 200) + 2 advancedsearch (ORN, Grant Papers); be-api 14; www.googleapis.com 34; www.loc.gov 3 (one read error).
