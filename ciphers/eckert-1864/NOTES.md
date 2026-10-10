@@ -7040,3 +7040,20 @@ Read so far: no reading added; E403 stays N3 D1, not located.
 - [n/a] image-check: nothing to check (E403's leaf was read in MS18-R9)
 - [x] retry: one 403 on a guessed id, not retried (a guess, not a transient)
 Verdict: keep going: 2 internal gaps; cheapest next: resolve and grep OR ser. III vol. 4 for E403, ~USD 0.2
+
+## FIX-L17c (10 Oct 2026, account 1, for LANE LEDGER-17)
+
+No network. `ciphers/eckert-1864/fixl17c_apply.py` (idempotent; reuses `fixl15_apply.run()`; a re-run reports 0 changed) applies s.5 of AUDIT (FV-L17a) for E582 E583 E586 E587, s.4-s.6 of AUDIT (FV-L17b) for E589 E590 E592 E593, s.5 of AUDIT (FV-L17c) for E624, and the lane ruling of 10 Oct 2026, to ciphertext.txt as header edits, decoder directive lines and one `note: FIX-L17c` line per entry. No transcription line was changed. reading*.md only by `decode.py --write`.
+
+- Decode `decode.py`, `decode_no2.py`, `decode_no9.py`: `--write` then `--check` exit 0 (reading.md changed; reading-no2.md and reading-no9.md unchanged).
+- Reading changes: E582 'Melan' = Logan (C), 'peach' = to (C); E587 'an Apple is' = Annapolis (C, merged), sender Grant not Eckert, addressee Brig. Gen. I. N. Palmer; E583 header 1,287 men, 'weasler' graded M; E590 addressee and signer M lifted to H, 'fit' graded M; E592 header '[Monroe] [20]' as the dateline (M as to role); E593 'Canby is Shoed on' = can be issued on and 'Wilby Sausage factory' = will be satisfactory (five tokens graded I); E624 `plain: Bermuda` replaced by 'rosaile' = 9 PM (C) and Bermuda graded C (White River as deciphered at the time; referent Bermuda Landing, I; code-word tokens H 6, C 2). E586 and E589: header notes only.
+- Lane ruling applied: E582 E587 (print) and E624 (holder clear copy 10308) stay filed with N1 header notes naming the print or pointer; E583 E586 E589 E590 E592 E593 stay filed at D1 with the note "too short for a clause above the authentication distance (FV-L17a/b)". No entry was removed from ciphertext.txt. The auditors' "recommend not filed" for E583 E586 E589 E590 E592 E593 is recorded in each note and overruled by the lane ruling.
+- status.json checked: no row (N3 or otherwise) exists for E582 E583 E586 E587 E589 E590 E592 E593 E624, so none is N3 and no edit was needed; no SECOND-OPINIONS-QUEUE row exists for them. `tools/depth_check.py --strict` exits 0.
+- Not touched, by the brief: E581 E585 (AUD2-LEDGER17-1), E591 E594 (-2), E622 E623 (-3). Their s.5 goes to the FIX job after the second audits, including E591 'polking' = [Command]ing (and 'Sub [Marine]' = submarine), E622 'pioneer [306]' -> [256], the 'Briggs' -> Biggs spelling and the list tokens graded C, and E623's Lew Wallace / World / John I. Davenport corrections.
+- key.md not edited. FV-L17b's header note for E594 (printed companions) and the NOTES "## FM-S65A" / "## FM-S65B" / "## FM-UND2" supersession lines were not rewritten; the superseding statements are the FIX-L17c entry notes (E624: FM-UND2's "no clear copy" and FM-UND's "3 holder queries hit 5658, 9734 only" are superseded by holder clear copy 10308).
+
+### Remaining gaps
+- [ ] E581 E585 E591 E594 E622 E623: s.5 of FV-L17a/b/c not applied, held for the second audits (AUD2-LEDGER17-1, -2, -3); next: the FIX job after they post, ~$1.5, no network.
+
+### Escalation
+Verdict: parked. The one open step is waiting on a named WORK-QUEUE row (AUD2-LEDGER17-1, -2, -3); nothing else here is untried.

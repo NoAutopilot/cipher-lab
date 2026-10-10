@@ -2753,17 +2753,17 @@ S. H. Beckwith City Point River [Danger] left about {time: 11 AM} [Today] with [
 
 Code-word tokens: H 7.
 
-**E582 | Page 318 | 5862 | mssEC 25 (obj 5952, pointer 5862), 6 Jan 1865 City Point 8.30 PM, S. H. Beckwith to Sheldon at Ft Monroe, from Grant for the Secretary of War at Monroe: [a name, unread 'Melan'] or Ord either will be good [men] to relieve Gen. Foster (FM-S65A; row 5862/2; read from the transcription, no image)**
+**E582 | Page 318 | 5862 | mssEC 25 (obj 5952, pointer 5862), 6 Jan 1865 City Point 8.30 PM, S. H. Beckwith to Sheldon at Ft Monroe, from Grant for the Secretary of War (Stanton) at Monroe: General Logan ('Melan', C by print) or Ord either will be good men to relieve Gen. Foster (peach = 2 = 'to', the print's 'to relieve') (FM-S65A; row 5862/2; image-read by FV-L17a, matches the transcription; N1: plaintext printed OR I/47 pt 2 p.18, Grant to Stanton, 6 Jan 1865 8.30 p.m.; the reading is the printed text; stays filed with this note under the lane ruling of 10 Oct 2026)**
 
-Geo. D. Sheldon Ft Monroe [City Point] {time: 8.30 PM} [6] for [Secretary of War] [Monroe] [.] Melan or [Maj Gen E. O. C. Ord] either wilby good [Men] [2] relieve [Maj Gen J. G. Foster]  {tail: [signed] [Maj Genl U.S. Grant] S. H. Beckwith}
+Geo. D. Sheldon Ft Monroe [City Point] {time: 8.30 PM} [6] for [Secretary of War] [Monroe] [.] [Logan] or [Maj Gen E. O. C. Ord] either wilby good [Men] [to] relieve [Maj Gen J. G. Foster]  {tail: [signed] [Maj Genl U.S. Grant] S. H. Beckwith}
 
-Code-word tokens: H 12.
+Code-word tokens: H 11, C 2.
 
-**E583 | Page 328 | 5872 | mssEC 25 (obj 5952, pointer 5872), 13 Jan 1865 Ft Monroe 8 PM, Sheldon to S. H. Beckwith at City Point, for Brig. Gen. Rawlins, Chief of Staff: [an unread word 'weasler'] the Illinois goes to sea at 11 o'clock with 1200 and 87 [men]; all right; signed Morgan (FM-S65A; row 5872/0; read from the transcription, no image)**
+**E583 | Page 328 | 5872 | mssEC 25 (obj 5952, pointer 5872), 13 Jan 1865 Ft Monroe 8 PM, Sheldon to S. H. Beckwith at City Point, for Brig. Gen. Rawlins, Chief of Staff: [an unread word 'weasler', M] the Illinois goes to sea at 11 o'clock with 1,287 men (12 / 100 / 80 / 7 / Men: 'forbid William and Mother postpone spit'); all right; signed Morgan (FM-S65A; row 5872/0; image-read by FV-L17a, matches the transcription; D1, N3 plaintext not located; stays filed at D1 under the lane ruling of 10 Oct 2026: too short for a clause above the authentication distance (FV-L17a/b); no entry removed)**
 
 S. H. Beckwith City Point {time: 8 PM} for [Brigadier General] Rawlins [Chief of Staff] [.] weasler Illinois goes to see at [11] o'clock with [1200] and [87] [Men] all right Morgan Geo. D. Sheldon
 
-Code-word tokens: H 10.
+Code-word tokens: H 10, M 1.
 
 **E585 | Page 328 | 5872 | mssEC 25 (obj 5952, pointer 5872), 15 Jan 1865 Ft Monroe 9.30 AM, Sheldon to S. H. Beckwith at City Point, for Brig. Gen. Rawlins, Chief of Staff, from Hd. Qrs. 2nd Division, 19th Corps: the division has but 40 rounds of ammunition, shall I take more; C. Grover, Bvt. Maj. Gen., commanding (FM-S65A; row 5872/2; read from the transcription, no image)**
 
@@ -2771,29 +2771,29 @@ S. H. Beckwith City Point {time: 9.30 AM} [Head Quarters] [2] [Division] [19] [C
 
 Code-word tokens: H 14.
 
-**E586 | Page 330 | 5874 | mssEC 25 (obj 5952, pointer 5874), 15 Jan 1865 City Point 3.30 PM, S. H. Beckwith to Sheldon at Ft Monroe, from Rawlins: Bvt. Maj. Gen. Grover's 40 rounds of ammunition will answer, you need not wait to get more (FM-S65A; row 5874/1; read from the transcription, no image; about 16 words)**
+**E586 | Page 330 | 5874 | mssEC 25 (obj 5952, pointer 5874), 15 Jan 1865 City Point 3.30 PM, S. H. Beckwith to Sheldon at Ft Monroe, from Rawlins: Bvt. Maj. Gen. Grover's 40 rounds of ammunition will answer, you need not wait to get more (FM-S65A; row 5874/1; image-read by FV-L17a, matches the transcription; about 16 words; D1, N3 plaintext not located; stays filed at D1 under the lane ruling of 10 Oct 2026: too short for a clause above the authentication distance (FV-L17a/b); no entry removed; the answer to E585)**
 
 Geo. D. Sheldon Brevet [Major] [General] Grovers [40] rounds of [Ammunition] will answer [,] you needn't wait to get more Rawlins S. H. Beckwith
 
 Code-word tokens: H 5.
 
-**E587 | Page 339 | 5883 | mssEC 25 (obj 5952, pointer 5883), 21 Jan 1865 Washington 3 PM, T. T. Eckert to Sheldon at Ft Monroe, for Gen. Palmer: wait at Monroe until I get there; I will leave [a place unread] at 5 AM tomorrow; signed Eckert (FM-S65A; row 5883/2; read from the transcription, no image; answers Palmer's own 1 PM telegram of 21 Jan from Ft Monroe, holder pointer 7718, p.60)**
+**E587 | Page 339 | 5883 | mssEC 25 (obj 5952, pointer 5883), 21 Jan 1865 Washington 3 PM, Lieut. Gen. U. S. Grant (the Washington office, T. T. Eckert, closes the row) to Sheldon at Ft Monroe, for Brig. Gen. I. N. Palmer, commanding the District of North Carolina: wait at Monroe until I get there; I will leave Annapolis at 5 AM tomorrow; signed U. S. Grant ('John') (FM-S65A; row 5883/2; image-read by FV-L17a, matches the transcription; N1: plaintext printed OR I/46 pt 2 p.198, Grant to I. N. Palmer, 21 Jan 1865, received 3 p.m.; stays filed with this note under the lane ruling of 10 Oct 2026; answers Palmer's own 1 PM telegram of 21 Jan from Ft Monroe, holder pointer 7718, p.60)**
 
-Geo. D. Sheldon Ft Monroe [Washington] {time: 3 PM} [21] for [Gen J. M. Palmer] [.] wait at [Monroe] until I get there [,] I will lave an [Sumter] is at {time: 5 AM} [Tomorrow] [Maj Genl U.S. Grant] T. T. Eckert
+Geo. D. Sheldon Ft Monroe [Washington] {time: 3 PM} [21] for [Brig. Gen. I. N. Palmer] [.] wait at [Monroe] until I get there [,] I will lave [Annapolis] at {time: 5 AM} [Tomorrow] [Maj Genl U.S. Grant] T. T. Eckert
 
-Code-word tokens: H 12.
+Code-word tokens: H 11, C 1.
 
-**E589 | Page 348 | 5892 | mssEC 25 (obj 5952, pointer 5892), City Point 2 Feb 1865 12.50 AM, S. H. Beckwith to Geo. D. Sheldon at Ft Monroe: the steamer Monohansett will leave for Monroe about 1 AM; Major E[ckert?] wishes (you) to meet him on arrival (FM-S65B; row 5892/1; short, 15 tokens)**
+**E589 | Page 348 | 5892 | mssEC 25 (obj 5952, pointer 5892), City Point 2 Feb 1865 12.50 AM, S. H. Beckwith to Geo. D. Sheldon at Ft Monroe: the steamer Monohansett will leave for Monroe about 1 AM; Major E[ckert?] wishes (you) to meet him on arrival (FM-S65B; row 5892/1; short, 15 tokens; image-read by FV-L17b; D1, N3 plaintext not located; stays filed at D1 under the lane ruling of 10 Oct 2026: too short for a clause above the authentication distance (FV-L17a/b); no entry removed)**
 
 1250 A. M. Geo. D. Sheldon Ft Monroe Monohansett will leave for [Monroe] about {time: 1 AM} [Major] E wishes euta meat him on arrival S. H. Beckwith
 
 Code-word tokens: H 3.
 
-**E590 | Page 352 | 5896 | mssEC 25 (obj 5952, pointer 5896), City Point 2 Feb 1865 3.30 PM, to Geo. D. Sheldon at Ft Monroe, addressed to the Secretary of State (the decoder's reading of the address group 'Byron', M): 'I have sent the letter referred to in our dispatch by the hands of a staff officer to be delivered to you. I retained no copy'; signed (Grant, decoded from the closing groups 'walrus Juno', M) / S. H. Beckwith (FM-S65B; row 5896/0; 22 tokens)**
+**E590 | Page 352 | 5896 | mssEC 25 (obj 5952, pointer 5896), City Point 2 Feb 1865 3.30 PM, to Geo. D. Sheldon at Ft Monroe, addressed to the Secretary of State (address group 'Byron', a key row, H; Seward at Fort Monroe, OR I/46 pt 2 pp.352-353): 'I have sent the letter referred to in our dispatch by the hands of a staff officer to be delivered to you. I retained no copy'; signed Grant ('Juno', a key row, H, after 'walrus' = Signature) / S. H. Beckwith (FM-S65B; row 5896/0; 22 tokens; image-read by FV-L17b; D1, N3 plaintext not located; stays filed at D1 under the lane ruling of 10 Oct 2026: too short for a clause above the authentication distance (FV-L17a/b); no entry removed)**
 
 Geo D. Sheldon Ft Monroe {time: 3.30 PM} [Secretary of State] I have sent the letter referred to inure dispatch by the hands of a staff officer to be delivered to you. I retained no copy fit  {tail: [signed] [Maj Genl U.S. Grant]'s H. Beckwith}
 
-Code-word tokens: H 4.
+Code-word tokens: H 4, M 1.
 
 **E591 | Page 364 | 5908 | mssEC 25 (obj 5952, pointer 5908), Ft Monroe 16 Feb 1865, Geo. D. Sheldon to S. H. Beckwith at City Point, relaying from Norfolk (D. Lynch, Commander and Inspector of Ordnance): for Commodore William Radford, commanding the 5th Division (the row has '100 Radford', '5', 'Division', read from the code words), New Ironsides: no torpedoes on hand; have telegraphed the Bureau of Ordnance for 20; (submarine) squadron will forward immediately on receipt (FM-S65B; row 5908/0; 37 tokens)**
 
@@ -2801,17 +2801,17 @@ S. H. Beckwith City Point [Norfolk] for Comma door William Radford polking [5] [
 
 Code-word tokens: H 9.
 
-**E592 | Page 366 | 5910 | mssEC 25 (obj 5952, pointer 5910), Ft Monroe 20 Feb 1865, Geo. D. Sheldon to Maj. Eckert, Washington, 'for approval': from Monroe, 20 (units not given) for Camman and Company, New York: sell gold to fall (below?) ...; signed W. Cooper, 'he is naval officer' (FM-S65B; row 5910/1; short, 18 tokens)**
+**E592 | Page 366 | 5910 | mssEC 25 (obj 5952, pointer 5910), Ft Monroe 20 Feb 1865, Geo. D. Sheldon to Maj. Eckert, Washington, 'for approval': from [Monroe] [20], most likely the dateline of the private telegram (Fort Monroe, the 20th; M as to its role), for Camman and Company, New York: sell gold to fall (below?) ...; signed W. Cooper, 'he is naval officer' (FM-S65B; row 5910/1; short, 18 tokens; image-read by FV-L17b; D1, N3 plaintext not located; stays filed at D1 under the lane ruling of 10 Oct 2026: too short for a clause above the authentication distance (FV-L17a/b); no entry removed)**
 
 Maj. Eckert Washington For approval [Monroe] [20] for Camman and Company [New York] [.] Sell gold to fall  {tail: [signed] W. Cooper he is naval officer Geo. D. Sheldon}
 
 Code-word tokens: H 5.
 
-**E593 | Page 392 | 5936 | mssEC 25 (obj 5952, pointer 5936), City Point 22 Mar 1865 7.30 PM, S. H. Beckwith to Geo D. Sheldon at Ft Monroe, for (Captain James, as the decoder reads the address groups, M): 'The ponchos are not on hand at present but Canby is shipped on (Sheridan's?) arrival here if that will suffice; Ingalls' (FM-S65B; row 5936/2; 21 tokens)**
+**E593 | Page 392 | 5936 | mssEC 25 (obj 5952, pointer 5936), City Point 22 Mar 1865 7.30 PM, S. H. Beckwith to Geo D. Sheldon at Ft Monroe, for Captain James ('princess Bergen' = Captain, James: a person or 'Captain, James River' stays M): 'The ponchos are not on hand at present but can be issued on [Sheridan]'s arrival here if that will be satisfactory; Ingalls' ('Canby is Shoed on' = can be issued on and 'Wilby Sausage factory' = will be satisfactory, plain sound-alikes, I; not General Canby) (FM-S65B; row 5936/2; 21 tokens; image-read by FV-L17b; D1, N3 plaintext not located; stays filed at D1 under the lane ruling of 10 Oct 2026: too short for a clause above the authentication distance (FV-L17a/b); no entry removed)**
 
 Geo D. Sheldon , Ft Monroe , {time: 7.30 PM} for [Captain] [James] Stop the ponchos are not on hand at present but Canby is Shoed on [P. H. Sheriden]'s are rival here if that Wilby Sausage factory Ingalls S. H. Beckwith
 
-Code-word tokens: H 4.
+Code-word tokens: H 4, I 5.
 
 **E594 | Page 397 | 5941 | mssEC 25 (obj 5952, pointer 5941), Ft Monroe 27 Mar 1865, sent 1.40 PM, Geo. D. Sheldon to Maj. Eckert, Washington, for the Honorable John Sherman (the plain name 'Shear man' as transcribed): 'I am going to see (Grant) at City Point and expect to go back to Goldsboro by way of Newbern from Old Point on Wednesday'; signed 'Kitchen' = Maj. Gen. W. T. Sherman (the same code word is C-checked in row 5896/1, whose holder clear copy 8561 reads 'from Gen Sherman' where the cipher has 'Kitchen') (FM-S65B; row 5941/2; 28 tokens)**
 
@@ -2819,11 +2819,11 @@ Maj. Eckert , Washington [Monroe] to Honorable John Shear man [Washington] I am 
 
 Code-word tokens: H 9.
 
-**E624 | Page 114 | 5658 | mssEC 25 (obj 5952, pointer 5658), 9 May 1864 3.30 AM Jamestown, R. O'Brien to Maj. Eckert (second telegram of row 5658/0; the first, Eckert to Butler, 8 May 1864, is in print in Butler Corr. IV and is not filed): I left General Butler's headquarters 5 miles from Bermuda Landing, all quiet and ready to move in the morning; [cavalry expedition crossing] at Harrison's Landing to join us; I will start tomorrow; all working fine; will endeavor to keep you posted (FM-UND2; row 5658/0 telegram 2; thin, about 40 words, 6 key-row tokens; transcription only, page image not eye-checked)**
+**E624 | Page 114 | 5658 | mssEC 25 (obj 5952, pointer 5658), 9 May 1864 3.30 AM Jamestown, R. O'Brien to Maj. Eckert (second telegram of row 5658/0; the first, Eckert to Butler, 8 May 1864, is in print in Butler Corr. IV and is not filed): I left General Butler's headquarters 5 miles from White River Landing at 9 PM (as deciphered at the time, C by the clear copy 10308; the place meant was very probably Bermuda Landing, I), all quiet and ready to move in the morning; West's [Cavalry] [Expedition] [crossing] at Harrison's Landing to join us; I will start tomorrow; all working fine; will endeavor to keep you posted (FM-UND2; row 5658/0 telegram 2; thin, about 40 words, 6 key-row tokens; transcription only, page image not eye-checked by FM-UND2; N1: holder clear copy 10308 (Page 166), which FM-UND2 and FM-UND did not find; stays filed with this note under the lane ruling of 10 Oct 2026, FV-L17c)**
 
-Maj Eckert Di I left [Maj Gen B. F. Butler] head quarters [5] miles from Bermuda landing rosaile all quit and ready to move in morning [.] wests [Cavalry] [Expedition] [Cross (-ed, -ing)]ing at Harris sons landing to join us I will start line tomorrow all working fine will endeavor to keep you posted R OBrien
+Maj Eckert Di I left [Maj Gen B. F. Butler] head quarters [5] miles from [White River] landing [9 PM] all quit and ready to move in morning [.] wests [Cavalry] [Expedition] [Cross (-ed, -ing)]ing at Harris sons landing to join us I will start line tomorrow all working fine will endeavor to keep you posted R OBrien
 
-Code-word tokens: H 6.
+Code-word tokens: H 6, C 2.
 
-Totals over the 449 entries: H 7707, C 113, I 40, M 69, S 21, U 10.
+Totals over the 449 entries: H 7705, C 118, I 45, M 71, S 21, U 10.
 <!-- decode.py: derived block ends -->
