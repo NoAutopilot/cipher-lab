@@ -20044,3 +20044,143 @@ aaymeloglu repository (no cache). The tool's write to prior-work.tsv was reverte
 - Requests: hdl.huntington.org 16 (15 CISOSEARCHALL incl control, 1 IIIF; all 200; one take); www.googleapis.com 18 (11 + 7 retry; 12 x 503);
   be-api.us.archive.org 7 (1.8 s; 2 x 502); no archive.org downloads.
 For the orchestrator (owner account) and LANE LEDGER-16 (account 1).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER16-1)
+
+Second verifier AUD2-LEDGER16-1 (account 1, Opus 5.5, WORK-QUEUE row AUD2-LEDGER16-1, for LANE LEDGER-16), 10 Oct 2026, 16:43-17:2x UTC by `date -u`;
+a separate session from the readers (FM65-A, FM65-B, FM65-D), from CLEAR-SWEEP and from the first verifier (FV-L16a), not protecting any of them.
+Items: **E509** (p.310, ptr 5854/0), **E511** (p.311, ptr 5855/2), **E514** (p.314, ptr 5858/0), **E521** (p.317, ptr 5861/2, second message), **E508**
+(p.309, ptr 5853/1), **E506** (p.308, ptr 5852/1); mssEC 25 = Huntington object 5952, War Department Cipher No. 1, 4-6 Jan 1865 (the second Fort Fisher
+expedition). Claim under audit: AUDIT (FV-L16a) s.4 -- all six N3, key period; E509 E511 E514 E521 D3, E508 E506 D2. Nothing decoded beyond key look-ups in
+key.md. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Step 0 not used. Intake gate (re-run 17:1x): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Prior work:
+`tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<ptr>;date=..;sender=..;recipient=..' --step-type second-audit
+--offline`, all six, exit 4 for all six; the owed LEADs (1-own:ddc30c FIX-L14, 1-own:277ec2 CLEAR-SWEEP, 1-own:d42c6d FIX-L17a, 1-own:3694c3 OR-CACHE2) are target-level live claims naming the slug and no unit (none covers these rows: FIX-L17a applies FV-L16b/c/d, OR-CACHE2 fetches OR parts); UNCHECKED-NET is the generic list of OR parts not on disk, none of them a Jan 1865 Virginia part (run at 17:1x, after the holder take; the tool's writes to prior-work.tsv were reverted, as AUD2-LEDGER16-4 did).
+Scripts (`fortmonroe/`, outputs beside them): `aud2_l16_1_hdl.py` (+ `.out`: CONTENTdm full text, 13 fresh queries + control, dmGetItemInfo 8505-8511,
+6 IIIF pages at 2400 px to scratch), `aud2_l16_1_gb.py` (+ `.args`, `.out`, `_retry.args`, `_retry.out`), `aud2_l16_1_beapi.py` (+ `.out`),
+`aud2_l16_1_loc.py` (+ `.out`). The OR I/46 pt 2 date read, the ORN I/11 / OR I/46 pt 1 / Butler Corr. V / Plum window greps and the O'Brien re-read were run
+inline on the cached djvu texts (`sources/ia-fulltext/print-check/`), not committed as scripts.
+
+### 1. Key, image
+- **Key re-check, every code word, key.md:** E509 Lucy = 5 PM (TIME page), Pandora = Colonel (p.19 l.4), Zebra / Unity / Zodiac = Period, Knox / Knave =
+  Butler (p.16 l.27), Wreathe = Telegraph (p.24 l.9), Wicoff = West (p.24 l.17), John = Grant (p.16 l.11); E511 Laura = 5.30 PM, Peach = 2, Pedlar / Pekin =
+  Comma (p.19 l.7), Person = 5, Shelby = General (p.21 l.5), Animal / Appian = Monroe (p.9 l.22), Nutmeg = Available (p.18 l.7), Walrus = Signature (p.23
+  l.18); E514 Harriet = 1 PM, Pandora, Pebble Prolong = 3 x 100 = 300, Mandate = 50, Whinny = Troops (p.24 l.7), Whig = Transportation (p.24 l.5), Windpipe =
+  River (p.23 l.14), Weasel(-er) / Wayworn(-er) = Steam (p.23 l.23), Yoke = Signature (p.24 l.25); E506 Harriet, Penny = 4, Shelby, Weasel, Wick(-ed) =
+  Report (p.23 l.12), Yoke; E508 Imogene = 3 PM, Pilgrim = Captain (p.18 l.26), Vincent = Quartermaster (p.22 l.24), Unity, Blubber = City Point (p.11 l.15),
+  Feeble = 10, Walrus; E521 Knox, Stomach = Left (p.21 l.24), Animal, Unity. "Ditto" (E511) and "Orcey" (E509) are not key entries (M, as FV-L16a); the
+  collisions FV-L16a found (Dodge = McMinnville, Webster = Signature, William = 100, Webb = Reinforcements, all plain names here) are upheld: each sits in
+  an address or signature slot in the image. **Counts agree with FV-L16a: E509 H 12 + M 1, E511 H 12 + M 1, E514 H 12, E521 H 4, E508 H 7, E506 H 6.**
+- **Image eye check this session** (IIIF 2400 px, all six pages, read in halves at 1400 px): the six rows match ciphertext.txt word for word, as FV-L16a
+  found, including the layout. Headers confirmed: 5854 "Ft Monroe Jan 4/65" over "R. O'Brien Hd Qrs. A. J." (E509 **sent to** O'Brien, FV-L16a s.1 upheld);
+  5855 row 2 "Laura Webster unity peach light draft steamers ..." to "walrus William Tea Howl / S. H. Beckwith"; 5858 "City Point Jan. 5/65 / Sheldon Ft
+  Monroe", "Harriet pandora Webb steer unity" (the column numbers 1-10 pencilled over the grid); 5852 row 1 "City Point Jan 4/65 / Geo D Sheldon Ft
+  Monroe"; 5853 row 1 "Ft Monroe Jan 4/65 / S. H. Beckwith City Point", "Walrus Webster &c." on the last line, signed Geo. D. Sheldon; 5861 row 2 "City
+  Point Jan'y 6 1865 / Geo D Sheldon Ft Monroe", a six-column grid read row by row, signed S. H. Beckwith. **5852/0** (not filed), headed "Hd Qrs A. J. Jan
+  4/65 / Geo D Sheldon Ft Monroe", signed R. O'Brien, is a seven-column route grid whose words include "Bende Ford", "send her", "paradise Dodge": Dodge's
+  first message, the antecedent of E509 (FV-L16a s.1 upheld).
+
+### 2. Search (families FV-L16a did not cover first)
+- **OR ser. I vol. 46 pt 2 by date, 3-7 Jan 1865** (cached `warofrebellion014602rootrich`, whitespace-normalised; every message in pp.20-60 naming Webster,
+  Dodge, Ingalls, Howell, Beckwith, Sheldon, a vessel of the six or a quartermaster subject read in full): pp.21-23 the Berrien-Grant boats (3 Jan), Webster to
+  Howell 7 p.m. ("Steamers all ready coaled ..."), the Rawlins-Morgan exchange of 3 and 5 Jan (Morgan 5 Jan 5.30 p.m.: "General Ingalls has asked for the
+  spare transportation to be sent to Baltimore"); p.24 Grant to Butler 3 Jan 6 p.m. ("Order Colonel Dodge to report to Major-General Terry ... as
+  quartermaster"); pp.34-35 Dodge to Webster (FV-L16a); p.35 Comstock to Terry 4 Jan ("The hospital steamers fitted up are at Savannah"); p.46 Grant to
+  Vogdes 5 Jan ("I will be in Norfolk this evening"); p.46 Terry's General Orders Nos. 1-2, 5 Jan (Dodge chief quartermaster of the expedition; the
+  vessels to leave Hampton Roads at 4 a.m. on the 6th); Parker for Grant to Morgan 7 Jan (provision sea-going vessels at Fort Monroe). **None of the six is
+  printed**, and no Ingalls-Webster or Beckwith-Sheldon telegram of 4-6 Jan is; the one Webster-Howell telegram printed (p.21, OCR "January 5", 7 p.m.) is E505's first message (FV-L16a: = 3 Jan), not one of the six.
+- **OR ser. I vol. 46 pt 1** (reports; KWIC on every vessel of the six): the C. C. Leary only in Abbot's report (p.166: reported 8 a.m. 7 Jan, loaded with
+  the siege train, "my headquarters on the Leary"), the Montauk only in May 1865 (p.143). **ORN ser. I vol. 11** (4-8 Jan windows): Commander Howell of the
+  Nereus (another Howell), nothing else. **Butler, Private and Official Correspondence vol. V**, read by date for its 4-7 Jan letters: Comstock's orders,
+  James W. White to Butler from Fort Monroe 5 Jan, Butler to Stanton 5 Jan (leave to publish his report), Grant to Lincoln 6 Jan ("Learning that the
+  Secretary left Washington yesterday ..."), Grant's orders of 7 Jan relieving Butler: **none of the six**. **Plum, Military Telegraph vol. II**: nothing in
+  the Jan 1865 windows. **J. E. O'Brien, Telegraphing in Battle** pp.179-181 re-read: FV-L16a's quotations are exact (4 Jan "Colonel Dodge making
+  arrangements with Colonel Webster ... in cipher"; 5 Jan "General Butler went to Fort Monroe"; 6 Jan "General Butler not yet returned"; 8 Jan relieved).
+- **Holder full text** (CONTENTdm p16003coll11, CISOSEARCHALL, all pointers, 13 fresh queries; control 'Inspector difficulty Evidence Nashville' -> 9678):
+  'Alliance Metropolis' 1, 'Ainsworth copy' 1, 'Montauk Bradley' 1 (5854 own), 'Leary description' 1, 'Leary Montauk coal' 1 (5853 own), 'Winants' 3
+  (5855, 5856 = E512, 5925 = Mar 1865 other), 'Blackstone dispense' 1 (5858 own), 'three hundred fifty troops' 26 (other telegrams: 7724 = Ingalls 25 Jan
+  1865 "three hundred and fifty employees of the R'l R'd", other; the rest other years), 'Butler bound' 1 (10253, other), 'Butler inquired' 0, 'headquarters
+  boat Dodge' 0, 'Jamestown reported steamers' 1 (4711 = June 1864, other), 'Beckwith Butler Monroe' 13 (none of 4-6 Jan 1865; **8491**, below). **No clear
+  copy of any of the six.**
+- **Washington clear book walked by date, pointers 8505-8511 (pp.27-33, 5-7 Jan 1865, dmGetItemInfo):** no copy of any of the six (these are local
+  Monroe-City Point messages, as FV-L16a expected). Context in clear: **8506** (p.28) Rawlins to Townsend, City Point 5 Jan, "Gen'l Grant has gone to Ft
+  Monroe"; Ingalls to Meigs and to Rucker, 5 Jan 4.30 PM, "most all of our sea going vessels are now at Ft Monroe and Baltimore **for special service**" --
+  the same officer, the same afternoon and the same phrase as E514 (1 PM: "the C. C. Leary is required for special service"); **8508** (p.30) the clear copy of
+  5861/2's first message (Stanton at Fort Monroe 6 Jan, to his wife, FM65-B) and Newport's Baltic report; **8509** Stanton to Dana, Fort Monroe 6 Jan 6.30 PM,
+  "We arrived here safely this afternoon"; **8510** Elias Smith 7 Jan; **8511** Newport, Baltimore 7 Jan. E521's inquiry (6 Jan) falls on the day the
+  Secretary of War reached Fort Monroe while Grant's request for Butler's removal was before the President (Butler Corr. V; OR I/46 pt 2 p.52).
+- **Pointer 8491** (Washington clear book p.13, 29 Dec 1864, in clear): "1155 PM City Point Dec 29/64 Please ascertain why Asst Secy Fox didnt meet Gen Grant
+  at Ft Monroe to day as per appointment ---- Keep the knowledge of this inquiry from him please Beckwith": the same operator asking Fort Monroe, a week
+  earlier, for the same kind of discreet inquiry with the same closing caution as E521 ("don't mention that I enquired"). A parallel, not E521's text.
+- **The Papers of Ulysses S. Grant vol. 13 page by page: unreachable.** The publisher's open PDF (scholarsjunction.msstate.edu, usg-volumes/13,
+  `viewcontent.cgi?article=1012`) answered a Cloudflare 403 challenge to one curl request (stopped; earlier sessions met the same on vols. 13 and 31). The
+  volume landing page answers 200. **Google Books API** (keyed, country=US): 19 queries aimed at vol. 13's index entries (Webster, Ralph C.; Dodge, George S.;
+  Howell, William T.; Beckwith, Samuel H.; Sheldon, George D.; Ingalls with "Jan. 5, 1865"; Montauk, Blackstone, Leary, Alliance) and at other books; 15
+  answered HTTP 503, one retry of those 15 after 30 s at 3 s apart, 13 answered 503 again (stopped; AUD2-LEDGER16-5 was querying the same host at the same
+  minutes, so the two sessions overlapped there). Answered: 'Hancox intitle:Grant' 0; '"light draft" steamers Rawlins 1865 intitle:Grant' -> vol. 13
+  snippet on light-draft steamers for Sherman's army on the Ogeechee (another telegram, Dec 1864); '"Ben De Ford" "Western Metropolis"' -> House Documents
+  1867 (government steamers list), *History of American Steam Navigation* (1908, chartered steam vessels), and *The Medical and Surgical History of the War of
+  the Rebellion* (1870): "Western Metropolis ... capacity, four hundred ... Ben De Ford and S. N. Spaulding, were sent to City Point" -- **the Western
+  Metropolis and the Ben De Ford were hospital transports**, which supports FV-L16a's "Horse spittal boat [West] win Metropolis" = the hospital boat Western
+  Metropolis (context, not a C grade); '"C. C. Leary" Blackstone 1865' and '"Western Metropolis" Alliance Montauk 1865' noise. **The vol. 13 index entries for
+  the six correspondents were not reached**: unchecked.
+- **IA be-api whole collection** (control "Suwo Nada" 909): '"Ben De Ford" Ainsworth' 80 (OR supplement/Record and Pension Office prefaces, 1862-63 South
+  Carolina uses of the Ben De Ford: other), 'Hancox Winants Rawlins' 390 (OR I/40 pts 1-2 copies, 1864, "We have ready dispatch-boats Winants and Hancox":
+  another telegram), '"Blackstone" "medical department" steamer 1865' (noise), '"three hundred and fifty troops" "river steamer"' 16 (other texts),
+  '"steamers named in your dispatch"' 0, '"answers the description" Leary' (noise), '"Western Metropolis" "Ben De Ford" hospital 1865' 0, 'Beckwith "Butler"
+  "left Monroe"' (noise); '"Montauk" "C. C. Leary"' and '"has left Monroe"' answered 502 (not retried). **None of the six.**
+- **Press, 5-12 Jan 1865** (Chronicling America through the www.loc.gov JSON API): '"General Butler" "Fortress Monroe"' 18 page hits, 'Butler Fortress
+  Monroe relieved' 17 (the relief of 8 Jan reported from the 10th), '"Western Metropolis"' 3 (NY Daily Tribune 5 Jan p.1, Baltimore Wecker and Ellsworth
+  American 6 Jan), '"Ben De Ford"' 0, 'Leary steamer Fortress Monroe' 0, 'Beckwith telegraph Butler' 4 (Chicago Tribune pages); the API returns page hits
+  with no usable snippet for most, and the pages were not read in full: **partial**. Nothing seen carries the text of any of the six; none of the six is
+  press-shaped.
+- **JSTOR:** three rows queued in JSTOR-QUEUE.tsv ('"Ben De Ford" AND "Western Metropolis" AND 1865'; '"C. C. Leary" AND "Fort Fisher"'; 'Beckwith AND Butler AND
+  "Fort Monroe" AND "January 1865"'); they do not block a class.
+- **Unreachable / not searched:** Grant Papers vol. 13 page by page (PDF Cloudflare; Books API 503s); NARA RG 92 (Webster-Dodge-Ingalls QM correspondence)
+  and RG 107/108 (no catalog API key; search unusable, CLAUDE.md host table); HathiTrust full text (Cloudflare); the 5-12 Jan newspapers read page by page.
+
+### 3. Corrections to AUDIT (FV-L16a)
+- **No class, grade or depth correction.** FV-L16a's reading corrections (s.3: the E511/E506 signature-tail structure error, Webb steer = Webster and
+  Wayworn = Steam in E514, Walrus restored in E508, Wicoff = West in E509, the plain names Dodge / Webster / William) are each confirmed on the image and in
+  key.md.
+- **E509:** upheld; "hospital boat Western Metropolis" now supported in print (Medical and Surgical History, 1870: the Western Metropolis and the Ben De Ford
+  as hospital transports), beside the Grant Papers 13 index line FV-L16a cited.
+- **E514:** upheld, strengthened: holder 8506 (Ingalls, 5 Jan 4.30 PM, in clear) uses "special service" for the sea-going vessels held at Fort Monroe the
+  same afternoon -- the phrase of E514's Leary clause, from the same sender.
+- **E521:** upheld; FV-L16a's s.3 and safe sentence do not say that E521 is the **second message of row 5861/2**, whose first message (Stanton to his wife,
+  Fort Monroe 6 Jan) has its clear copy at 8508 (FM65-B's note): the FIX job should carry that into the header note. New context: 8491 (Beckwith's discreet
+  inquiry about Fox, 29 Dec 1864, "Keep the knowledge of this inquiry from him") and 8509 (Stanton at Fort Monroe 6 Jan afternoon).
+- **E511, E508, E506:** upheld in full.
+
+### 4. Classes, depth, key
+
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E509 | **N3** (weak, confirmed, second audit: the request it answers is printed, OR I/46 pt 2 pp.34-35) | period (War Department Cipher No. 1, key.md = mssEC 41) | **D3** (H 12 + M 1 of 13; external: OR I/46 pt 2 pp.34-35; O'Brien pp.179-180; Medical and Surgical History 1870, Western Metropolis a hospital transport) | no prior plaintext or decipherment located after both audits |
+| E511 | **N3** (confirmed) | period | **D3** (H 12 + M 1 of 13; external: OR I/46 pt 2 p.90; ORN I/11 pp.~574-575) | no prior plaintext or decipherment located after both audits |
+| E514 | **N3** (confirmed) | period | **D3** (H 12 of 12; external: OR I/46 pt 2 p.22; OR I/46 pt 1 p.166; holder 8506, Ingalls 5 Jan 4.30 PM, sea-going vessels at Monroe "for special service") | no prior plaintext or decipherment located after both audits |
+| E521 | **N3** (confirmed) | period | **D3** (H 4 of 4; external: O'Brien pp.180-181; OR I/46 pt 2 p.52; holder 8509, Stanton at Fort Monroe 6 Jan; parallel 8491) | no prior plaintext or decipherment located after both audits |
+| E508 | **N3** (confirmed) | period | **D2** (H 7 of 7; external corroborates the ship only: OR I/46 pt 1 p.166) | no prior plaintext or decipherment located after both audits |
+| E506 | **N3** (confirmed) | period | **D2** (H 6 of 6; external context only; reply E507 in the ledger) | no prior plaintext or decipherment located after both audits |
+
+- **Not N4 for any:** The Papers of Ulysses S. Grant vol. 13 not read page by page (the publisher's PDF is Cloudflare-challenged; Books API index queries
+  answered 503); NARA RG 92/107/108 unreachable; the newspapers of 5-12 Jan not read page by page; OR read in OCR; three JSTOR rows queued.
+- **Depth:** unchanged. E508 and E506 stay D2: every code word H, but no external check of their own content. D4 for none: no fresh rule-7 re-derivation in a
+  separate session.
+- **Safe sentences:** FV-L16a's six (s.4), with this tail replacing FV-L16a's: "; not located in the Official Records ser. I vols. 42 and 46 (vol. 46 pt 2
+  read by date for 3-7 Jan), ORN ser. I vol. 11, Butler's correspondence vol. V, Plum's Military Telegraph vol. II, J. E. O'Brien's Telegraphing in Battle
+  (1910), Google Books, Internet Archive full-text search, The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, or the Huntington's
+  full-text search and its Washington clear book for 5-7 Jan (searched 10 Oct 2026, two audits)".
+- **Unsafe:** any "first", "new", "unpublished", "never printed"; "O'Brien sent E509"; "Grant Papers vol. 13 does not print it" (not read page by page).
+
+### 5. Postmortem and propagation
+- FV-L16a's classes, grades and depth hold; its one omission was E521's place as the second message of a row whose first message has a clear copy (8508),
+  which FM65-B had recorded. Its "not searched" list is now worked except Grant Papers vol. 13 page by page (unreachable twice over) and NARA.
+- For the FIX job (s.5 of FV-L16a, plus): E521 header note "second message of row 5861/2; the first (Stanton to Mrs Stanton, 6 Jan) = holder 8508; parallel
+  8491 (Beckwith 29 Dec 1864)"; E514 context "holder 8506, Ingalls 5 Jan 4.30 PM, 'for special service'"; E509 context "Western Metropolis a hospital transport
+  (Medical and Surgical History, 1870)"; all six "image-read again by AUD2-LEDGER16-1, matches".
+- Propagated: status.json E509 E511 E514 E521 E508 E506 -> audit_status "two audits", audit_refs + this section, gap, line tail, depth_check (E509 E514 E521);
+  SO prompts PROMPT-chatgpt-e509/e511/e514/e521/e508/e506 "where we have looked" extended (rows SO-ECKERT-E5xx stay queued, not yet posted); JSTOR-QUEUE 3
+  rows; WORK-QUEUE AUD2-LEDGER16-1 -> done.
+- Requests: hdl.huntington.org 27 (14 CONTENTdm queries incl. control, 7 dmGetItemInfo, 6 IIIF pages; one take, all 200); www.googleapis.com 34 (19 + one
+  retry of 15; 29 answered 503; overlapped AUD2-LEDGER16-5's take on the same host); be-api.us.archive.org 11 (9 x 200, 2 x 502); www.loc.gov 6 (200);
+  scholarsjunction.msstate.edu 3 (2 HTML pages 200, the PDF 403 Cloudflare, stopped). For LANE LEDGER-16 (account 1).
