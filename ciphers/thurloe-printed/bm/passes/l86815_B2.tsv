@@ -82,23 +82,24 @@ row	pos	kind	token	gloss
 4	5	N	78	a
 4	6	N	1	n
 4	7	N	55	t
-4	8	W	we	
-4	9	W	all	
-4	10	N	29	g
-4	11	N	59	o
-4	12	N	77	t
-4	13	N	32	h
-4	14	N	18	e
-4	15	N	72	r
-4	16	N	78	е
-4	17	N	60	to?
-4	18	N	51	m
-4	19	N	84	u
-4	20	N	75	f
-4	21	N	79	t
-4	22	N	19	e
-4	23	N	69	r
-4	24	N	104	Ch.Stuart
+4	8	N	80	
+4	9	W	we	
+4	10	W	all	
+4	11	N	29	g
+4	12	N	59	o
+4	13	N	77	t
+4	14	N	32	h
+4	15	N	18	e
+4	16	N	72	r
+4	17	N	78	e
+4	18	N	60	to?
+4	19	N	51	m
+4	20	N	84	u
+4	21	N	75	f
+4	22	N	79	t
+4	23	N	19	e
+4	24	N	69	r
+4	25	N	104	Ch.Stuart
 5	1	W	makes	
 5	2	W	us	
 5	3	W	heer	
@@ -390,7 +391,7 @@ row	pos	kind	token	gloss
 16	20	N	54	n
 16	21	N	30	g
 16	22	N	32	h
-16	23	N	21	е
+16	23	N	21	e
 16	24	N	22	e
 16	25	N	72	r
 17	1	N	23	f
