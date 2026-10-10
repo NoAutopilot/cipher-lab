@@ -19736,3 +19736,74 @@ The 8 Feb OR I/46 pt 2 window that the 5902 LEADs point to was read again in ful
 - Requests: hdl.huntington.org 21 (16 CISOSEARCHALL + 5 IIIF, all 200); be-api.us.archive.org 12 (all 200); www.googleapis.com 30 (all 200);
   archive.org 0 (all texts from the print-check cache on disk); api.openalex.org 5, api.crossref.org 5.
 For LANE LEDGER-16 (account 1).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER16-3)
+
+Second verifier AUD2-LEDGER16-3 (account 1, Opus 5.5, for the orchestrator (owner account), WORK-QUEUE row AUD2-LEDGER16-3), 10 Oct 2026,
+15:42-16:1x UTC by `date -u`; a separate session from the readers FM65-E and FM65-F and the first verifier FV-L16c, not protecting their
+conclusions. Scope: **E564** (5918/1), **E574** (5931/0), **E558** (5912/1), **E569** (5924/0), first audit "## AUDIT (FV-L16c)" (E566 and E577
+are N1 there and not re-audited). Nothing decoded; every code group looked up again in key.md. Key source: `period` (War Department Cipher No. 1).
+Step 0 not used (non-test on mssEC 25). Intake gate (15:4x): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found
+within 6 lines`, exit 0. No spec, so `judge_plaintext.py` was not run. Scripts and raw output (committed, `fortmonroe/`): `aud2_l16_3_hdl.py`
+(+ `_hdl.out`, `_hdl2.out`, `_hdl3.out`), `aud2_l16_3_print.py` (KWIC over the cached IA texts; run inline, hits quoted below), `aud2_l16_3_gb.py`
+(+ `_gb.out` Grant Papers mode, `_g3.out` G3 mode), `aud2_l16_3_gb2.py` (+ `.out`), `aud2_l16_3_beapi.py` (+ `.args`, `.out`), `aud2_l16_3_schol.py`
+(+ `.out`), `aud2_l16_3_prior.out`.
+
+### 1. Prior work (prior-work-step.md, civil-war adapter)
+`tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<pointer>;date=..;sender=..;recipient=..' --step-type
+second-audit --offline`, all four: exit 0 (run at 15:5x, after the holder take; it is offline and read nothing the take depended on). 1-own LEADs:
+the target-level live claims FIX-L14 (11:29) and CLEAR-SWEEP (13:25), neither covering these four: CLEAR. 4-editions LEADs: 5918 in
+`warofrebellion014602rootrich` ("you give the instructions for the pilots ... Gibbon ... City Point March 5" = OR I/46 pt 2 pp.813-814, Gibbon's
+gunboats, read in s.2: another telegram, CLEAR); 5918 and 5924 in `warofrebellion33unit` (Kilpatrick's raid, Feb-Mar 1864; Kelley, Fort Monroe 6 Mar
+1864: another year, CLEAR). UNCHECKED-NET: the generic 1864 OR list (these are 1865 telegrams; I/46 pts 1-3 on disk). The tool's write to
+prior-work.tsv was reverted (not this job's file).
+
+### 2. Families added by this audit
+| Family | Result |
+|---|---|
+| Huntington CONTENTdm full text (one hdl take 15:4x-15:5x, after FV-L16e's release; control 9678 returned 9678; 17 fresh queries, none of CLEAR-SWEEP's or FV-L16c's) | **No clear copy of any of the four.** E558: 'Ord requires office' 0, 'Quartermaster Department operators' 0, 'operators Yorktown Sheldon' -> 11422, 11921 (May 1865: Sheldon wants repair tools at Williamsburg and Jamestown; other items). E564: 'two pilots Navy' -> 4217 (1863, Charleston ironclads), 'Chief Quartermaster pilots' 0, 'pilots furnished' 0, 'Monadnock pilots' 0. E569: 'Mrs Ord' -> 7851 (2 Apr 1865, for Mrs Lincoln), 'telegraph office moved' -> 4729, 13477 (other), 'office confidential Sheldon' -> 5924 own, 9275 (Sept 1865: another dispute about not disturbing an office, in cipher), 'Ord room' 0. E574: 'Secretary War Fortress Monroe tonight' -> 2173 (1862), 'Stanton River Queen' 0, 'Secretary War City Point boat' 0, 'Sheldon board boat' -> 5931 own and four other years, 'deliver person Secretary' 0, 'Dealy Secretary' 0. |
+| Washington clear book of pointers 8478 + page, dmGetItemInfo date-walk of the pages FV-L16c named as not walked | **8622-8627 (pp.144-149, 5-7 Mar) read whole**: 8622 Glisson to the Secretary of the Navy, Fort Monroe 5 Mar 10 a.m. ("The monitors are expected every moment from Cape fear and I shall send them up the river immediately", = ORN I/12 pp.59-60) and Grant's 5 Mar news; 8623-8624 Dodge (Chief QM, Dept N.C.) and W. W. Wright from Wilmington via Fort Monroe; 8625-8627 Grant, Hancock and Reynolds, 6-7 Mar. **No E569** (and, as expected, no E564: City Point traffic, not to Washington). The other book (7658 + page) for 5-6 Mar: 7804 (p.146, 5 Mar, Winchester) adds nothing to FV-L16c's 7805-7808. Mid-March pages, to place 15-16 Mar for E574: 7823 (p.165, 14 Mar: Glisson, "Monitor Lehigh in from Charleston and will go up the James river immy"), 7825 (p.167), 7832, 7835 (21-23 Mar), 8642, 8644 (14 Mar), 8651, 8654 (21-24 Mar). Both books are received books (traffic for Washington); E574 is Eckert's own outgoing telegram, whose copy would be in a Washington sent book, not walked. |
+| OR ser. I vol. 46 pt 2 by index (`warofrebellion014602rootrich`) | Index: "Bradley, George W. Correspondence with Abbot, Henry L 63; Grant, U. S 980; Ingalls, Rufus 6; **James, William L 908**"; "James, William L. Correspondence with George W. Bradley 908. Mentioned 814". **p.908 read:** two telegrams "FORT MONROE, March 9, 1865 -- 1.30 p. m. Col. GEORGE W. BRADLEY, Chief Quartermaster" signed "WILLIAM L. JAMES, Captain and Assistant Quartermaster" (the Concord to go with Roberts's new expedition; lighter boats wanted in place of the Trembler). The editors printed this James-to-Bradley series for 9 Mar, **not the 4 Mar telegram (E564)**; it confirms the sender (Capt. William L. James, A.Q.M., Fort Monroe) and the channel. p.814 (Bowers to Gibbon, 7 Mar: "The pilots are ready ... call on Colonel Bradley") as FV-L16c. KWIC `pilots?` over pts 2-3 and ORN I/12: only pp.813-814 and other subjects. Pt 2 ends at 15 Mar: its 15 Mar pages (Grant to Stanton on the Richmond papers; Gordon to Ord, Norfolk) carry nothing on the Secretary's journey. |
+| OR I/46 pt 3, ORN I/12, Bates, Plum II, O'Brien 1910, Gordon 1882 (on disk) | `River\s+Queen`: pt 3 0; pt 2 pp.352-353, 360, 472 (Hampton Roads, Feb); ORN I/12 pp.77-78, 82, 175-176 (Lincoln's trip from 23 Mar); Bates pp.65, 333, 343, 353, 355 (the same): **none on 15 Mar**. Pt 3 'Secretary ... left/arrived/will' only p.28 (18 Mar, as FV-L16c). Plum II: Sheldon chief at Fort Monroe and W. J. Dealy an operator there (pp.131, 260-261, 315): context for E574's "you or Dealy"; nothing on a Yorktown office in Feb 1865 or on moving the Fort Monroe office. O'Brien p.193 (1 Feb 1865: "General Ord wants me to place my operators under oath"): Ord and the telegraph, another matter. 'Mrs. Ord' 0 in all six. |
+| Google Books API (keyed, `country=US`, 30 requests incl. control; control E531 '"six vessels" Oriental' hit vol. 13 `mnRjmhe3QLoC`) | Grant Papers 13/14 mode, 13 fresh queries: E558, E564 0; E569 index pages only. **E574 context in Grant Papers 14** (`DVLPEPsH1_oC` / `1D8fAQAAMAAJ`), note to Grant to Stanton, City Point 14 Mar 1865 3 p.m. (ALS, DNA RG 107): Stanton's reply ending "... see you on this & other matters tomorrow"; "On March 15, USG telegraphed to Maj. Gen. Edward O. C. Ord. 'The Secy. of War will be here tomorrow If all is quiet on ...'"; "[March] 16, Brig. Gen. John A. Rawlins telegraphed to Ord. 'Secretary Stanton is ...'" (snippets; the page was not read whole). G3 mode: Meade, *Life and Letters* (Google Books record dated 1994, `iOoXAQAAMAAJ`), "March 16, 1865. To-day Mr. Stanton and lady, with a select party ..."; Lincoln *Collected Works* (River Queen, 23 Mar); nothing for E558, E564, E569. |
+| IA be-api, whole collection (7 queries; control '"Suwo Nada"' hit) | '"pilots for monitors"' 0; '"furnish the Navy with"' 528, none 1865; '"office at Yorktown" Ord 1865' genealogies (the clerk's office); '"Mrs. Ord" "telegraph office"' the April River Queen episode (Badeau; Mrs. Lincoln), another event; '"River Queen" Stanton "Fort Monroe" March 15' Lincoln's Writings contents (late March); '"Secretary of War left" "City Point" March 1865' nothing on 15 Mar. |
+| Open indexes (`aud2_l16_3_schol.out`: OpenAlex keyed 5, Semantic Scholar keyed 5 (one 429, not retried), CrossRef 5) | Titles off subject. |
+| Image (2 leaves at 2400 px this session, 5918 and 5931) | **The transcription matches the leaf** for E564 ("Rebecca for paradise George W Bradley Chief Vinton black / unity I am entirely out of Pilots ... peach pilots wedge / for Monitors to go up Bergens windsor pilgrim James"; the leaf has "Bergens", which is Bergen) and E574 (seven ruled columns, read across: "... in person stop / name of boat is windsor queen stop / T. T. Eckert"). E558 and E569 not re-fetched (FV-L16c's eye check of 5912 and 5924 stands). |
+| JSTOR | 8 rows appended to JSTOR-QUEUE.tsv (both families: names/date with a subject word; bare quoted phrases "entirely out of pilots", "wants the room for some purpose of her own", "deliver anything you may receive in person", "office at Yorktown"); they never block a class. |
+| Not reached | NARA RG 107 (telegrams collected; the sent books), RG 92 (QMG, Bradley and James); the Washington sent books in the Huntington collection; Grant Papers vol. 14 pages around the 14 Mar note read whole (snippets only); Stanton's and Ord's papers; HathiTrust full text. |
+
+### 3. Readings and grades, checked
+Every code group looked up again in key.md: E564 Rebecca 10 PM, Paradise Colonel, Vinton Quartermaster, Black City Point, Unity period, Peach 2,
+Wedge Today, Bergen James, Windsor River, Pilgrim Captain; Pilot (= Capture, p.18 l.25) is plain twice, as FV-L16c says ("entirely out of Pilots",
+"two pilots", for monitors); "James" after Pilgrim is plain (the name: OR p.908 confirms Capt. William L. James, A.Q.M.). E574 Brutus Secretary of War,
+Stomach Left, Harriet 1 PM, Black City Point, Sarah 11 PM, Zebra/Zodiac period, Windsor River; Person (= 5) and Queen (= Danger) plain, as FV-L16c
+says (the leaf's "in person stop", "windsor queen stop"). E558 Mentor Maj Gen Ord, Polka Command (polking = commanding), Hastings and Haven Yorktown
+(both on p.15 l.6, L and R), Vinton Quartermaster, Quadrant Department, Zodiac/Zebra period. E569 Unity, Zebra x2 period, Polka (commanding),
+Orbit At the, Mentor Ord, Youth Signature; "Washington" in the address line plain (lesson 8). **FV-L16c's counts stand: E564 H 10/10, E574 H 8/8,
+E558 H 8/8, E569 H 7/7.** No reading change beyond FV-L16c's s.5 (not applied here; reading.md is decode.py output).
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | text | depth | basis |
+|---|---|---|---|---|---|
+| E564 | **N3** (kept) | period | not known | D3 (kept; external added: OR I/46 pt 2 p.908, James to Bradley 9 Mar, same correspondents) | not located after FV-L16c and s.2; the OR prints James's 9 Mar telegrams to Bradley but not this one |
+| E574 | **N3** (kept; weak: the Secretary's visit to City Point on 16-18 Mar is in print, its hour, boat and the Fort Monroe arrangement are not) | period | not known | D3 (kept; external added: Grant Papers 14 note, Grant to Ord 15 Mar "The Secy. of War will be here tomorrow"; Meade, 16 Mar, "Mr. Stanton and lady") | the code words carry Secretary of War, left, 1 PM, City Point, 11 PM, River; print carries only that he was expected at City Point the next day (the E539 N2 line is "the whole content the key carries", not met) |
+| E558 | **N3** (kept) | period | not known | D3 (kept) | not located after FV-L16c and s.2 |
+| E569 | **N3** (kept; weak, mostly clear on the page) | period | not known | D2 (kept) | not located after FV-L16c and s.2; the Washington clear book 8622-8627 now walked |
+- **Not N4 (all four):** NARA RG 107 / RG 92 and the Washington sent books unread; Grant Papers 13-14 by snippet only; Ord's and Stanton's papers unread.
+- **Safe sentences.** FV-L16c's stand for E558, E564 and E569, with the source list as status.json gives it. E574: FV-L16c's, plus: "Stanton's visit to
+  City Point is known (Grant to Ord, 15 Mar, in The Papers of Ulysses S. Grant vol. 14); the hour, the boat and the Fort Monroe arrangement were not
+  found in print." E564 may add: "The Official Records print two other telegrams from James to Bradley, of 9 Mar (ser. I vol. 46 pt 2 p.908)."
+- **Unsafe:** any "first", "new", "unpublished" for the four; "the Secretary's visit was not known" for E574; "captured" for pilots in E564; "Danger"
+  or "in 5" in E574; "Volunteer" for the address word in E569.
+
+### 5. Postmortem, leads and propagation
+- No over-claim found in FV-L16c's section, the readers' text or the four SO prompts' safe sentences. FV-L16c's one gap (the 8622-8626 walk) is
+  closed: no clear copy. The OR index entry for James (p.908) was a family FV-L16c's phrase grep could not reach (other wording); a by-correspondent
+  index read is the cheap cross-check for every Fort Monroe quartermaster telegram (lead, not ruled here).
+- For a FIX job (not applied here): FV-L16c's s.5 for these four stands; E564 header may add "context OR I/46 pt 2 p.908 (James to Bradley, 9 Mar)";
+  E574 header may add "the visit: Grant Papers 14 note to Grant to Stanton 14 Mar (Grant to Ord 15 Mar)".
+- Propagated: status.json E558 E564 E569 E574 -> audit_status "two audits", audit_refs + this section, gap; SECOND-OPINIONS-QUEUE.tsv rows
+  SO-ECKERT-E558/E564/E569/E574 kept queued (classes unchanged); WORK-QUEUE AUD2-LEDGER16-3 -> done.
+- Requests: hdl.huntington.org 35 (18 CISOSEARCHALL incl control, 15 dmGetItemInfo, 2 IIIF; all 200, no drop; one take); www.googleapis.com 30
+  (1.6 s apart); be-api.us.archive.org 7 (1.8 s); api.openalex.org 5, api.semanticscholar.org 5, api.crossref.org 5; no archive.org downloads.
+For the orchestrator (owner account) and LANE LEDGER-16 (account 1).

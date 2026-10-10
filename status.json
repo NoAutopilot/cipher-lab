@@ -14669,9 +14669,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L16c)'"
+        "AUDIT.md '## AUDIT (FV-L16c)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER16-3)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-L16c verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -14692,7 +14693,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Captain James at Fort Monroe to Col. G. W. Bradley, Chief Quartermaster, City Point, 4 Mar 1865: entirely out of pilots after furnishing the Navy two for the monitors going up the James River (E564)",
       "line": "Read at grade H with War Department Cipher No. 1: at 10 p.m. on 4 Mar 1865 Captain James at Fort Monroe told Colonel G. W. Bradley, Chief Quartermaster at City Point, that he was entirely out of pilots, having had to give the Navy two pilots that day for the monitors going up the James River; not located in the Official Records ser. I vol. 46 pts 1-3 and vol. 47 pt 2, ORN ser. I vols. 11-12, Gordon's War Diary (1882), Plum's Military Telegraph vol. 2, O'Brien's Telegraphing in Battle (1910), The Papers of Ulysses S. Grant vols. 13-14 (Google Books snippets; vol. 14 also IA full text) or the Huntington's full-text search and its Washington clear books for the dates (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L16c); not N4: Grant Papers 13-14 page by page, NARA RG 107 telegram books, the Washington clear book pointers 8622-8626 and the sent books, Ord's and Stanton's papers unread",
+      "gap": "N3 two audits (FV-L16c, AUD2-LEDGER16-3: kept); not N4: Grant Papers 13-14 page by page, NARA RG 107 telegram books, the Washington sent books (clear book 8622-8627 walked by AUD2-LEDGER16-3: no clear copy), Ord's and Stanton's papers unread",
       "depth": "D3",
       "completeness": "10 H of 10 code-word groups (decoder 12: the two plain \"pilots\" collide with key row Pilot = Capture, AUDIT s.3/s.5)",
       "phrases": [
@@ -14710,9 +14711,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L16c)'"
+        "AUDIT.md '## AUDIT (FV-L16c)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER16-3)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-L16c verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -14732,8 +14734,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Eckert, Washington, to Sheldon at Fort Monroe, 15 Mar 1865: the Secretary of War left at 1 p.m. for City Point on the River Queen; Sheldon or Dealy to board her about 11 p.m. and deliver his messages in person (E574)",
-      "line": "Read at grade H with War Department Cipher No. 1: at 1.30 p.m. on 15 Mar 1865 Eckert told Sheldon at Fort Monroe that the Secretary of War had left Washington at 1 p.m. for City Point and would reach Fort Monroe about 11 that night on the River Queen, and that Sheldon or Dealy should go on board and deliver in person anything received for him; not located in the Official Records ser. I vol. 46 pts 1-3 and vol. 47 pt 2, ORN ser. I vols. 11-12, Gordon's War Diary (1882), Plum's Military Telegraph vol. 2, O'Brien's Telegraphing in Battle (1910), The Papers of Ulysses S. Grant vols. 13-14 (Google Books snippets; vol. 14 also IA full text) or the Huntington's full-text search and its Washington clear books for the dates (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L16c); not N4: Grant Papers 13-14 page by page, NARA RG 107 telegram books, the Washington clear book pointers 8622-8626 and the sent books, Ord's and Stanton's papers unread",
+      "line": "Read at grade H with War Department Cipher No. 1: at 1.30 p.m. on 15 Mar 1865 Eckert told Sheldon at Fort Monroe that the Secretary of War had left Washington at 1 p.m. for City Point and would reach Fort Monroe about 11 that night on the River Queen, and that Sheldon or Dealy should go on board and deliver in person anything received for him; not located in the Official Records ser. I vol. 46 pts 1-3 and vol. 47 pt 2, ORN ser. I vols. 11-12, Gordon's War Diary (1882), Plum's Military Telegraph vol. 2, O'Brien's Telegraphing in Battle (1910), The Papers of Ulysses S. Grant vols. 13-14 (Google Books snippets; vol. 14 also IA full text) or the Huntington's full-text search and its Washington clear books for the dates (searched 10 Oct 2026). Stanton's visit to City Point is known (Grant to Ord, 15 Mar, in The Papers of Ulysses S. Grant vol. 14); the hour, the boat and the Fort Monroe arrangement were not found in print.",
+      "gap": "N3 two audits (FV-L16c, AUD2-LEDGER16-3: kept); not N4: Grant Papers 13-14 page by page, NARA RG 107 telegram books, the Washington sent books (clear book 8622-8627 walked by AUD2-LEDGER16-3: no clear copy), Ord's and Stanton's papers unread",
       "depth": "D3",
       "completeness": "8 H of 8 code-word groups (decoder 10: \"person\" and \"queen\" are plain, key rows Person = 5 and Queen = Danger misfire)",
       "phrases": [
@@ -14751,9 +14753,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L16c)'"
+        "AUDIT.md '## AUDIT (FV-L16c)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER16-3)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-L16c verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -14774,7 +14777,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Sheldon at Fort Monroe to Eckert, Washington, 22 Feb 1865: General Ord commanding requires a telegraph office at Yorktown at once, and one is asked for at the Quartermaster's Department; can Eckert supply the operators (E558)",
       "line": "Read at grade H with War Department Cipher No. 1: on 22 Feb 1865 Sheldon asked Eckert for operators, General Ord commanding requiring a telegraph office at Yorktown at once (the more imperative) and an office being asked for at the Quartermaster's Department at Fort Monroe; not located in the Official Records ser. I vol. 46 pts 1-3 and vol. 47 pt 2, ORN ser. I vols. 11-12, Gordon's War Diary (1882), Plum's Military Telegraph vol. 2, O'Brien's Telegraphing in Battle (1910), The Papers of Ulysses S. Grant vols. 13-14 (Google Books snippets; vol. 14 also IA full text) or the Huntington's full-text search and its Washington clear books for the dates (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L16c); not N4: Grant Papers 13-14 page by page, NARA RG 107 telegram books, the Washington clear book pointers 8622-8626 and the sent books, Ord's and Stanton's papers unread",
+      "gap": "N3 two audits (FV-L16c, AUD2-LEDGER16-3: kept); not N4: Grant Papers 13-14 page by page, NARA RG 107 telegram books, the Washington sent books (clear book 8622-8627 walked by AUD2-LEDGER16-3: no clear copy), Ord's and Stanton's papers unread",
       "depth": "D3",
       "completeness": "8 H of 8 code-word groups (decoder 7: \"polking\" = [Command]ing is H, AUDIT s.3/s.5)",
       "phrases": [
@@ -14792,9 +14795,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L16c)'"
+        "AUDIT.md '## AUDIT (FV-L16c)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER16-3)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-L16c verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -14815,7 +14819,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Sheldon at Fort Monroe to Eckert, Washington, 6 Mar 1865: please answer about moving the telegraph office; it is believed to be at the instigation of Mrs. Ord, who wants the room (E569)",
       "line": "Read at grade H with War Department Cipher No. 1 (most of the telegram is in clear on the page): on 6 Mar 1865 Sheldon asked Eckert to answer about moving the Fort Monroe telegraph office, objecting that the office could then be moved for the convenience of any commanding officer, and that the whole matter was believed to be at the instigation of Mrs. Ord, who wanted the room for a purpose of her own; he marked it confidential; not located in the Official Records ser. I vol. 46 pts 1-3 and vol. 47 pt 2, ORN ser. I vols. 11-12, Gordon's War Diary (1882), Plum's Military Telegraph vol. 2, O'Brien's Telegraphing in Battle (1910), The Papers of Ulysses S. Grant vols. 13-14 (Google Books snippets; vol. 14 also IA full text) or the Huntington's full-text search and its Washington clear books for the dates (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L16c); not N4: Grant Papers 13-14 page by page, NARA RG 107 telegram books, the Washington clear book pointers 8622-8626 and the sent books, Ord's and Stanton's papers unread",
+      "gap": "N3 two audits (FV-L16c, AUD2-LEDGER16-3: kept); not N4: Grant Papers 13-14 page by page, NARA RG 107 telegram books, the Washington sent books (clear book 8622-8627 walked by AUD2-LEDGER16-3: no clear copy), Ord's and Stanton's papers unread",
       "depth": "D2",
       "completeness": "7 H of 7 code-word groups (most of the telegram is in clear on the page; header word Washington plain, lesson 8)",
       "phrases": [

@@ -1,0 +1,40 @@
+  step      LEAD          1-own         [adhoc-b85e78:1-own:ddc30c] live-claim (target-level: names the slug, no unit; check it does not cover this item) (4.4 h, no done line): 2026-10-10 11:29 | FIX-L14 worker | claim: FIX-L14 (apply FV-L14a/b/c corrections, eckert-1
+  step      LEAD          1-own         [adhoc-b85e78:1-own:277ec2] live-claim (target-level: names the slug, no unit; check it does not cover this item) (2.5 h, no done line): 2026-10-10 13:25 | CLEAR-SWEEP worker (Sonnet 5.5) | claim (13:25 UTC 10 Oct by date -u, bo
+  plaintext CLEAR         3-tomokiyo    [adhoc-b85e78:3-tomokiyo:80d907] cached mirror (sources/cryptiana/web, snapshot 19 Sept 2026) names no folio of this unit; terms ['25', '1865']
+  plaintext CLEAR         3-solver      [adhoc-b85e78:3-solver:a7793a] no cached solver file names this unit: sources/cyphersolver, sources/cyphersolver-site, sources/bourdeau
+  plaintext UNCHECKED-NET 4-editions    [adhoc-b85e78:4-editions:95e0f9] not on disk (warofrebellion321unit warofrebellion013401rootrich warofrebellion013402rootrich warofrebellion351unit warofrebellion381unit warofrebellion382unit warofrebellion383unit warofrebellion391un
+  plaintext CLEAR         4-editions    [adhoc-b85e78:4-editions:f96526] date +-1 day and both correspondents searched, control hit, no window: warofrebellion322unit warofrebellion323unit warofrebellion33unit warofrebellion013403rootrich warofrebellion013404rootrich warofr
+exit 0
+  step      LEAD          1-own         [adhoc-651aea:1-own:ddc30c] live-claim (target-level: names the slug, no unit; check it does not cover this item) (4.4 h, no done line): 2026-10-10 11:29 | FIX-L14 worker | claim: FIX-L14 (apply FV-L14a/b/c corrections, eckert-1
+  step      LEAD          1-own         [adhoc-651aea:1-own:277ec2] live-claim (target-level: names the slug, no unit; check it does not cover this item) (2.5 h, no done line): 2026-10-10 13:25 | CLEAR-SWEEP worker (Sonnet 5.5) | claim (13:25 UTC 10 Oct by date -u, bo
+  plaintext CLEAR         3-tomokiyo    [adhoc-651aea:3-tomokiyo:80d907] cached mirror (sources/cryptiana/web, snapshot 19 Sept 2026) names no folio of this unit; terms ['25', '1865']
+  plaintext CLEAR         3-solver      [adhoc-651aea:3-solver:a7793a] no cached solver file names this unit: sources/cyphersolver, sources/cyphersolver-site, sources/bourdeau
+  plaintext LEAD          4-editions    [adhoc-651aea:4-editions:0329a6] edition-hit warofrebellion33unit: 3 window(s), null at +-30 days [0, 0]; open the page, then --record: ua affair at feb 28 1864 see richmond ua kilpatrick s expedition against feb 28 march 4 1864 repo
+  plaintext LEAD          4-editions    [adhoc-651aea:4-editions:fffaad] edition-hit warofrebellion014602rootrich: 5 window(s), null at +-30 days [0, 0]; open the page, then --record: you giue the instructions for the pilots ino gibbon maior general city point ua march 5 1
+exit 0
+  step      LEAD          1-own         [adhoc-3fae13:1-own:ddc30c] live-claim (target-level: names the slug, no unit; check it does not cover this item) (4.4 h, no done line): 2026-10-10 11:29 | FIX-L14 worker | claim: FIX-L14 (apply FV-L14a/b/c corrections, eckert-1
+  step      LEAD          1-own         [adhoc-3fae13:1-own:277ec2] live-claim (target-level: names the slug, no unit; check it does not cover this item) (2.5 h, no done line): 2026-10-10 13:25 | CLEAR-SWEEP worker (Sonnet 5.5) | claim (13:25 UTC 10 Oct by date -u, bo
+  plaintext CLEAR         3-tomokiyo    [adhoc-3fae13:3-tomokiyo:80d907] cached mirror (sources/cryptiana/web, snapshot 19 Sept 2026) names no folio of this unit; terms ['25', '1865']
+  plaintext CLEAR         3-solver      [adhoc-3fae13:3-solver:a7793a] no cached solver file names this unit: sources/cyphersolver, sources/cyphersolver-site, sources/bourdeau
+  plaintext LEAD          4-editions    [adhoc-3fae13:4-editions:5df38f] edition-hit warofrebellion33unit: 3 window(s), null at +-30 days [0, 0]; open the page, then --record: f kelley brigadier general chap xlu correspondence etc union 649 fort monroe ua march 6 1864 rece
+  plaintext UNCHECKED-NET 4-editions    [adhoc-3fae13:4-editions:95e0f9] not on disk (warofrebellion321unit warofrebellion013401rootrich warofrebellion013402rootrich warofrebellion351unit warofrebellion381unit warofrebellion382unit warofrebellion383unit warofrebellion391un
+exit 0
+  step      LEAD          1-own         [adhoc-0c08ca:1-own:ddc30c] live-claim (target-level: names the slug, no unit; check it does not cover this item) (4.5 h, no done line): 2026-10-10 11:29 | FIX-L14 worker | claim: FIX-L14 (apply FV-L14a/b/c corrections, eckert-1
+  step      LEAD          1-own         [adhoc-0c08ca:1-own:277ec2] live-claim (target-level: names the slug, no unit; check it does not cover this item) (2.5 h, no done line): 2026-10-10 13:25 | CLEAR-SWEEP worker (Sonnet 5.5) | claim (13:25 UTC 10 Oct by date -u, bo
+  plaintext CLEAR         3-tomokiyo    [adhoc-0c08ca:3-tomokiyo:80d907] cached mirror (sources/cryptiana/web, snapshot 19 Sept 2026) names no folio of this unit; terms ['25', '1865']
+  plaintext CLEAR         3-solver      [adhoc-0c08ca:3-solver:a7793a] no cached solver file names this unit: sources/cyphersolver, sources/cyphersolver-site, sources/bourdeau
+  plaintext UNCHECKED-NET 4-editions    [adhoc-0c08ca:4-editions:95e0f9] not on disk (warofrebellion321unit warofrebellion013401rootrich warofrebellion013402rootrich warofrebellion351unit warofrebellion381unit warofrebellion382unit warofrebellion383unit warofrebellion391un
+  plaintext CLEAR         4-editions    [adhoc-0c08ca:4-editions:f96526] date +-1 day and both correspondents searched, control hit, no window: warofrebellion322unit warofrebellion323unit warofrebellion33unit warofrebellion013403rootrich warofrebellion013404rootrich warofr
+exit 0
+ M JSTOR-QUEUE.tsv
+ M ciphers/eckert-1864/prior-work.tsv
+?? ciphers/eckert-1864/fortmonroe/aud2_l16_3_beapi.args
+?? ciphers/eckert-1864/fortmonroe/aud2_l16_3_g3.out
+?? ciphers/eckert-1864/fortmonroe/aud2_l16_3_gb.out
+?? ciphers/eckert-1864/fortmonroe/aud2_l16_3_gb.py
+?? ciphers/eckert-1864/fortmonroe/aud2_l16_3_gb2.out
+?? ciphers/eckert-1864/fortmonroe/aud2_l16_3_gb2.py
+?? ciphers/eckert-1864/fortmonroe/aud2_l16_3_hdl.out
+?? ciphers/eckert-1864/fortmonroe/aud2_l16_3_hdl.py
+
+[exited with code 0]
