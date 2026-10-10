@@ -4860,3 +4860,27 @@ Read so far: the ten corrected entries now stand at H/C/I/M counts above (FA 14 
 - [x] image-check: FV-N2a/b/c eye-checked the leaves; the two transcription edits (walch, willy) come from the FV-N2b crops.
 - [x] retry: no network used.
 Verdict: keep going: 2 internal gaps; cheapest next: OR III/4 and ORN phrase grep for FA FH GF GC, ~$0.3
+
+## FV-O9a (10 Oct 2026, account 1, for LANE LEDGER-N2)
+First verifier FV-O9a (01:57-02:2x UTC by `date -u`), separate from O9-BOOK and O9R-1: first audits of O9-DC (9673/0), O9-DE (9684/1), O9-DH and O9-DI (9684/0) in
+AUDIT.md "## AUDIT (FV-O9a)". Book call re-tested on the leaf crops: No. 9 for all four (labels "9", "(9)", "No 9" on three headers; Susan and Francis equal the
+header times only under No. 9). All four N3 (not located in print); depth D3 for DC, DH, DI and D2 for DE (6 of 8 tokens H, 'dam bore' unread). Holder 4491
+(Olcott to Fox, 8 Mar 1864) is the request O9-DH/DI answer; 4551 answers O9-DA (lead for its auditor); O9-DC's ship is the Marcia C. Day (Ile a Vache return,
+NYT 21 Mar 1864). Corrections for a FIX job in the AUDIT's s.5. Queued: WORK-QUEUE AUD2-LEDGERN2-5; SO-ECKERT-O9DC, -O9DE, -O9DH, -O9DI. Scripts
+`ms18/fv_o9a_hdl.py`, `fv_o9a_fts.py`, `fv_o9a_gb.py`, `fv_o9a_file.py`. For LANE LEDGER-N2 (account 1)
+
+## Remaining gaps (FV-O9a, 10 Oct 2026)
+Read so far: 24 of 26 cipher tokens H (92%) over the four entries (DC 7/7, DE 6/8, DH 6/6, DI 5/5); 2 M ('dam bore'); the rest of each entry is plain words.
+- O9-DE 'dam bore' unread (2 tokens after the signature, M) - blocker: not-attempted; not in the key-no9.md sample table, possibly operators' chatter; next: look the two words up on the mssEC 67 pages beyond the sample table (key-rebuild read), ~$0.5
+- N4 searches for all four (Fox and Olcott papers, Fox Confidential Correspondence vol. 1, congressional Navy-fraud reports, NY press Feb-Mar 1864) - blocker: waiting-on the answer of the VERIFY lane to WORK-QUEUE.tsv row AUD2-LEDGERN2-5; a second audit is a separate session (rule 10)
+- context notes (4491, 4551, Welles, Marcia C. Day) not yet in ciphertext-no9.txt - blocker: not-attempted; a verifier does not edit the reading; next: a FIX job applying AUDIT (FV-O9a) s.5 through decode_no9.py's note lines, ~$1.0
+
+## Escalation (FV-O9a, 10 Oct 2026)
+- [x] siblings: same-leaf telegrams read together (DH, DI, DE) and the holder's incoming side searched (4491, 4551, 4732, 10189).
+- [x] clear-pages: every line of leaves 9673 and 9684 eye-checked on crops against the holder text.
+- [x] known-keys: No. 1, No. 2 and No. 9 values compared for every code word; five key rows second-eyed on mssEC 67 images.
+- [x] print: OR II/6 downloaded and searched; be-api, Google Books, Welles vol. I.
+- [ ] key-rebuild: 'dam bore' not looked up in mssEC 67 (planned step above).
+- [x] image-check: leaves 9673 and 9684 at 2400 px.
+- [n/a] retry: no failed request.
+Verdict: keep going: 2 internal gaps; cheapest next: the FIX job for s.5 notes, ~$1.0

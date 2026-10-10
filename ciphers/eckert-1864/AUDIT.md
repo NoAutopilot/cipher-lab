@@ -13976,3 +13976,150 @@ calls; 2 djvu texts of the III/4 candidates, the first one 404 under the guessed
 metadata of the Grant Papers item); www.googleapis.com/books 13; www.loc.gov 3 (after 3 x 404 on the retired chroniclingamerica.loc.gov search URL).
 Queued: WORK-QUEUE `AUD2-LEDGERN2-3` (N2-GA, N2-GC, N2-GI), SO-ECKERT-N2-GA, SO-ECKERT-N2-GC, SO-ECKERT-N2-GI. No status.json/SO row for N2-GH (N1). For LANE
 LEDGER-N2 (account 1).
+
+## AUDIT (FV-O9a)
+
+Verifier FV-O9a (account 1, for LANE LEDGER-N2), 10 Oct 2026, 01:57-02:2x UTC by `date -u`; a separate session from the readers O9-BOOK and O9R-1, not
+protecting their conclusions. Scope: first audits of **O9-DC** (9673/0), **O9-DE** (9684/1), **O9-DH** and **O9-DI** (9684/0, two telegrams on one pointer) in
+`ciphertext-no9.txt` (Cipher No. 9 = the older vocabulary of mssEC 67, Washington sent ledger mssEC 18 = Huntington object 10074). Nothing decoded beyond key
+look-ups in key-no9.md (and key.md / key-no2.md for the book check). Key source for all four: `period` (key-no9.md is a SAMPLE table read from mssEC 67; every
+code word in these four entries has a tabled H row). `decode_no9.py --check` -> "reading-no9.md is current" (exit 0, 01:58). No spec exists for eckert-1864,
+so `judge_plaintext.py` was not run by me (O9R-1's run against specs/eckert-1862.json: FAIL -1.094, reported there). Intake gate (01:57): `eckert-1864: partial
+(line 3) -- edition/page or full-text-search citation found within 6 lines`. Scripts: `ms18/fv_o9a_hdl.py` (+ `.out`), `ms18/fv_o9a_fts.py` (+ `.out`, be-api,
+incl. the Welles-diary queries), `ms18/fv_o9a_gb.py` (+ `.out`). Images and crops to scratch, not committed.
+
+### 0. Book call re-tested on the leaf (the brief's first step), and what the readers missed
+**Book.** Re-read on IIIF 2400 px crops of leaves 9673 and 9684 (all four entries, every line):
+- O9-DC: header "John Horner 9 / Washn Feby 5th 1864" (label **9** on the leaf); first body word Pagan = Washington under No. 9 (No. 1: Battery, No. 2:
+  Artillery, as the first word of a dateline both are nonsense); "Village Van Vliet Vincent Merlin" = Major Van Vliet, Quartermaster, New York under No. 9 only
+  (No. 1 Pontoon/Quartermaster/Heintzelman, No. 2 Rebel/Rifle Pits/Kelly B F); tail Aragon = Quartermaster General agrees with the plain "sig M C Meigs" (No. 1
+  Missouri, No. 2 Kanawha).
+- O9-DE: header "John Horner N.Y. (9) / Washn Mar 10th 10 30 PM 1864" (label **(9)**); time word Susan = 10.30 PM = the header's own time under No. 9 only
+  (No. 1 11.30 PM, No. 2 11 PM).
+- O9-DH: header "John Horner / Washn Mar 9th 1864 11 am" (no label, confirmed); Francis = 11 AM = the header time under No. 9 only (No. 1 12, No. 2 12.30 AM).
+- O9-DI: header "Wash. D. C. / John Horner N.Y. "No 9" / mar. 9th 1864" (label **No 9** written over the header, confirmed); no header time. Under No. 1 the
+  body would read "place him in [Jeff Davis] / Call upon [Ohio] for Assistance / [Magruder]", under No. 2 "[Tuscumbia] ... [Illinois] ... [White R]".
+Two of two header times agree with the No. 9 time word (a random time word matches about 1 in 48); three of four headers carry a written "9". **No. 9 stands
+for all four**, on header words, not on the coherence number (which O9R-1 itself reported as weak).
+**Key rows, second eye.** Five of the rows these entries use were re-read on the committed mssEC 67 images (ciphers/eckert-1862/images/mssEC67_p1742.jpg,
+p1744.jpg): Venus/Vesper = Colonel, Vienna/Village = Major, Vincent/Vinton = Quartermaster (p.[22] ll.20-24), Wedge/Wharf = Subsistence, Wadding/Waggish =
+Arrest (p.[24] ll.2, 11): all five as key-no9.md tables them. The other rows (Pagan/Pagoda p.[18], Merlin/Midas p.[17], Atlas and Aragon p.[9], Agate p.[10],
+Hosanna/Husband p.[15], Walpole/Walnut p.[23], the TIME page) were not re-read here (images not on disk); each is corroborated externally below (Washington
+by the datelines, New York and Fort La Fayette and Dix by holder 4491, Fox by Welles, Quartermaster General by Meigs's plain signature, the time words by the
+header times).
+**What the readers missed** (all four were filed "not located", correctly as to print, but without the holder's incoming side):
+- **O9-DH / O9-DI:** the holder has the request they answer: pointer **4491** (received, "8.40 P.M. New York Mar. 8th 1864 ... For Capt Fox or Secy of Navy
+  Wash'n efforts already making to release our men on bail dont listen to any terms what ever case is atrocious Officials compromised mistrust every one at
+  present Capt Fox should come on papers Show Edwin L Brady is connected with savage in a thirty thousand dollars Steamboat send me order to arrest him and
+  put in Ft Lafayette or Fort Warren have Gen Dix instructed as before sig H S Olcott Agent Navy Dept"). Fox's 11 AM question of 9 March (O9-DH: Navy or
+  Army matter?) and his 9.30 PM order (O9-DI: arrest Edwin L. Brady, place him in [Fort La Fayette], call upon [Dix]) answer it point by point; Husband = (Fort)
+  La Fayette, Agate = Jno. A. Dix and Midas = New York are thereby confirmed by an independent text (context, not a copy).
+- **O9-DE:** Stover was a convicted Navy contractor held in Fort Lafayette, and permits to visit him were in dispute: Diary of Gideon Welles vol. I (1911)
+  pp.524-525, 15 Feb 1864 ("Mr. Sedgwick ... wished a pass to visit Stover, the convict in Fort Lafayette ... I gave a permit, however, to Colonel Olcott, and
+  Baker ... Colonel Olcott telegraphs me that he visited Stover at Fort Lafayette, and found Sedgwick with him by permission of General Dix"); 7 Mar
+  (pp.536-537: Fox "has special charge of the matter", Olcott's arrests of Scofield, Savage and Raymond and the seizure of their books and papers); 10-12 Mar
+  (pp.539-540: Olcott "expected here to-morrow", arrives 12 Mar and is with Fox all day). The telegram's "no permits will be issued until we have held
+  consultation" sits between those entries. Holder **4732** (Olcott to Fox, New York 20 June 1864: "Stover's pardon had been obtained") confirms Stover as a
+  prisoner. IA be-api (`H. D. Stover`, `Edwin L. Brady`): both men are Navy Department contractors in the printed 1863-64 contract lists (e.g. IA
+  `messageof7368presideunit`, Message of the President ... Navy contracts, 1863).
+- **O9-DC:** "Maria C Day" (so on the leaf, crop read) is the ship **Marcia C. Day**, the transport the government chartered in Feb 1864 to bring the
+  surviving colonists back from the Île à Vache (Haiti); she landed them at Alexandria on 20 March: New York Times 21 Mar 1864 ("Accordingly the ship Marcia C.
+  Day was sent to the Isle of Avache during the month ..."; IA `sim_new-york-times_the-new-york-times_1864-03-21_13_3897`, be-api snippet), Pittsburgh Post 24
+  Mar 1864 ("the ship Maria C. Day, arrived from the Isle of A-Vache, at Alexandria"; IA `per_the-pittsburgh-post_the-pittsburgh-post_1864-03-24_1`). That is
+  the "special expedition" whose cost was to be kept apart and "reimbursed if desirable" (I, context: a colonization voyage the War Department ran for
+  another account). The same NYT page carries an advertisement signed "Stewart Van Vliet, Major and Quartermaster": Village Vincent = Major ... Quartermaster
+  at New York agrees.
+- **O9-DA (outside my scope, a lead for its auditor):** holder **4551** (Olcott to Fox, New York 20 Apr 1864, received 2.35 PM: "full names are David Heustis
+  Samuel M Simpson Richard D Barlon James Hunter Chas T Kilsey William Atkinson ... Stover has a heavy amount of triplicates ready to pass") answers O9-DA's
+  19 Apr request for the "full names of Simpson" and others.
+
+### 1. Duplicates and image
+- **Duplicate diff:** on-disk page text of mssEC 18, mssEC 19 and the Fort Monroe pages (`sources/`) grepped for Stover, Brady, "C Day", "special expedition",
+  Olcott/Ol cott/Olcutt, Husband, Atlas: own pages only, or other telegrams (mssEC 19 p.8909 = O9-O, Fox to Olcott 6 Mar 1864, arrest Schofield, Savage and
+  Raymond: a sibling of the same campaign, not a copy; mssEC 18 p.9843, fortmonroe p.5572, mssEC 19 p.9207: other Olcott telegrams). **No duplicate.**
+- **Leaf 9673 (p.7, first entry, 13 lines) and leaf 9684 (p.18, all three entries, 7 + 6 + 6 lines):** crops of every line match the holder transcription
+  word for word ("Maria / C Day", "Wedge Dept", "Meigs Aragon warm cloudy like rain"; "Francis . For . Venus . Ol cott / Midas Is Brady connected with";
+  "Ed- win L. Bra- dy & place him in husband / Call upon Agate for Assistance / Atlas"; "Pagoda Susan tenth For Venus H. S. / Ol = cutt Midas Seize all the
+  books ... sig Atlas dam bore"). The O9R-1 notes "leaf not eye-checked" (DC, DE) are now answered.
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm** (p16003coll11, CISOSEARCHALL, all pointers; one take 02:0x, 12 requests: 10 queries, 2 IIIF): 'Stover' 3 (4732, 4551, 9684), 'Brady
+Olcott' 2 (**4491**, 9684), 'Brady arrested' 2 (9600, 5489: Mrs Brady at Martinsburg, Nov 1863, other), 'Maria Day' 1 (9673), 'Marcia Day' 0, 'Van Vliet
+expedition' 4 (9382 Oct 1862, 8937 Apr 1864, 4537 Apr 1864: other expeditions; 9673), 'Vache' 0, 'Stover books papers' 2 (4551, 9684), 'Olcott Lafayette' 2
+(10189 = Olcott 6 Mar 1864, the Schofield/Savage/Raymond arrests; 4491), 'separate distinct account' 1 (9673). Positive control: each own pointer found. **No
+clear copy of any of the four at another pointer.**
+**Print** (archive.org djvu to scratch; letters-only grep; headings around each date read):
+- OR ser. II vol. 6 (June 1863-Mar 1864, IA `warofrebellion0206rootrich`, not in O9R-1's cache, downloaded here): Brady 0, Stover 0, Olcott 0 (the volume is
+  prisoners of war; Lafayette 35 hits, none these men). OR ser. II vol. 7 and the OR ser. I volumes O9R-1 cached: 0 (reader's grep, not repeated).
+- Diary of Gideon Welles vol. I (IA `diaryofgideonwel01well_0`, full text read 15 Feb-12 Mar 1864): context above; Brady 0; no telegram text quoted.
+- IA be-api, all items: "special expedition may be known" 0, "Brady connected with a Navy" 0, "no permits will be issued until" 75 (none 1864, a stock phrase),
+  "Edwin L. Brady" 159 (contract lists, patents, 1873 Virginius affair; no 1864 arrest), "H. D. Stover" 575 (contract lists, 1865 NYT court reports),
+  "Stover" "Olcott" "Fort Lafayette" (Welles only), "Van Vliet" "Marcia C. Day" 15 (NYT 21 Mar 1864 only for 1864), "Meigs" "Marcia C. Day" 95 (the Duke
+  Rubenstein catalogue's Edward L. Hartz papers name Hartz as commander of the Marcia C. Day sent by Meigs: a holding, not this telegram), "Olcott" "Brady"
+  "Fort Lafayette" 0 relevant.
+- Google Books (key, country=US; 4 queries): '"Marcia C. Day" Meigs "Van Vliet"' 3 (none relevant), '"Brady" "Navy operation" Fox Olcott' 12 (none), '"Stover"
+  "no permits" Fox Olcott 1864' 0, '"Edwin L. Brady" arrested 1864' 116 (none relevant in the first 10).
+- **All four -> not located** in print.
+- Not searched: ORN (operations, unlikely for a fraud arrest), OR ser. III vol. 4 (readable text not on IA, FV-MS18o), the Fox papers (New-York Historical
+  Society) and Fox's Confidential Correspondence vol. 1 (the reader searched vol. 2 only), the Olcott papers, the Hartz papers (Duke, Rubenstein), NARA RG 45 /
+  RG 92 / RG 107 (M473), House/Senate documents on the Navy-contract frauds (1864-65) and on the Île à Vache return (Interior Department reports), the New York
+  press of 9-15 Mar 1864 page by page, HathiTrust, JSTOR.
+
+### 3. Grades and readings (reading-no9.md as of this audit; no change proposed to any code value)
+- **O9-DC:** Pagan = Washington, Henrietta = 4 PM, Village = Major, Vincent = Quartermaster, Merlin = New York, Wedge = Subsistence, Aragon = Quartermaster
+  General: **H 7 of 7**. Reading: "[Washington] Feb. fifth [4 PM], for [Major] Van Vliet, [Quartermaster], [New York]. Let all expenses incurred in charter and
+  outfit and victualling, manning, sailing, loading, including stores and rations from [Subsistence] Dept., put on board [the] Maria [= Marcia] C. Day be kept in
+  a separate and distinct account, so that the cost of this special expedition may be known and reimbursed if desirable when completed. Sig. M. C. Meigs,
+  [Quartermaster General]." Tail "warm cloudy like rain": operators' weather note (plain).
+- **O9-DE:** Pagoda = Washington, Susan = 10.30 PM, Venus = Colonel, Midas = New York, Husband = (Fort) La Fayette, Atlas = G. V. Fox: **H 6**; "dam bore" after
+  the signature unread, **M 2** (6 of 8 cipher tokens H, 75%). Reading: "[Washington] [10.30 PM] tenth. For [Colonel] H. S. Olcott, [New York]. Seize all the
+  books & papers of H. D. Stover, now prisoner in [Fort La Fayette]. No permits will be issued until we have held consultation. Sig. [G. V. Fox]. [dam bore]."
+- **O9-DH:** Francis = 11 AM, Venus = Colonel, Midas = New York, Walnut = Army, wadding = arrest, Atlas = G. V. Fox: **H 6 of 6**. Reading: "[11 AM] For [Colonel]
+  Olcott, [New York]. Is Brady connected with a Navy operation or [Army]? If the former, this Dept. will [arrest] him; if the latter, the War Dept. should take
+  it up. (Sig.) [G. V. Fox]."
+- **O9-DI:** Sarah = 9.30 PM, Vesper = Colonel, Husband = (Fort) La Fayette, Agate = Jno. A. Dix, Atlas = G. V. Fox: **H 5 of 5**. Reading: "[9.30 PM] for
+  [Colonel] Olcott. Arrest Edwin L. Brady & place him in [Fort La Fayette]. Call upon [General Dix] for assistance. [G. V. Fox]."
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | class | key | depth | % cipher tokens H/C/S | basis | safe sentence |
+|---|---|---|---|---|---|---|
+| O9-DC Meigs to Van Vliet, 5 Feb 1864 | **N3** | period | D3 | 100 (7 H) | not located: OR I volumes cached (O9R-1), OR II/6 and II/7, be-api all IA, Google Books, holder full text; the voyage itself is in the press (NYT 21 Mar 1864) | "Read at grade H with the older War Department vocabulary (Cipher No. 9, Huntington mssEC 67): on 5 Feb 1864 Quartermaster General Meigs told Major Van Vliet at New York to keep every cost of chartering, fitting out and victualling the Marcia C. Day in a separate account, so that this special expedition could be reimbursed; not located in print (searched 10 Oct 2026)." |
+| O9-DE Fox to Olcott, 10 Mar 1864 10.30 PM | **N3** | period | D2 | 75 (6 H, 2 M) | not located: as O9-DC; Welles's diary (vol. I pp.524-525, 536-540) gives the context, not the text; holder 4732 | "Read at grade H with Cipher No. 9 (period key): on 10 Mar 1864 G. V. Fox told Col. H. S. Olcott at New York to seize the books and papers of the contractor H. D. Stover, then a prisoner in Fort Lafayette, and said no permits would be issued until they had consulted; not located in print (searched 10 Oct 2026)." |
+| O9-DH Fox to Olcott, 9 Mar 1864 11 AM | **N3** | period | D3 | 100 (6 H) | not located: as O9-DC; holder 4491 is Olcott's request of 8 Mar | "Read at grade H with Cipher No. 9 (period key): at 11 a.m. on 9 Mar 1864 G. V. Fox asked Col. Olcott whether Brady's case was a Navy or an Army matter, saying the Navy would arrest him in the first case and the War Department should act in the second; not located in print (searched 10 Oct 2026)." |
+| O9-DI Fox to Olcott, 9 Mar 1864 (9.30 PM by the time word) | **N3** | period | D3 | 100 (5 H) | not located: as O9-DC; holder 4491 asks for exactly this order | "Read at grade H with Cipher No. 9 (period key): on the evening of 9 Mar 1864 G. V. Fox ordered Col. Olcott to arrest Edwin L. Brady, place him in Fort Lafayette and call on General Dix for assistance, answering Olcott's request of 8 March (Huntington Eckert papers, pointer 4491); not located in print (searched 10 Oct 2026)." |
+
+Not N4 for any: the Fox and Olcott papers, Fox's Confidential Correspondence vol. 1, NARA RG 45/92/107, the congressional documents on the Navy-contract frauds
+and the Île à Vache return, the New York press of Feb-Mar 1864 page by page, HathiTrust and JSTOR unsearched. Unsafe: "first", "new", "unpublished", "never
+printed"; "Brady was arrested" (the order is read; its execution is not shown here); "Stover was guilty" (Welles calls him a convict: say "convicted
+contractor" only with Welles cited); "the Marcia C. Day expedition was paid by the Interior Department" (I, context: the telegram says only "reimbursed if
+desirable"); "9.30 PM" for O9-DI as a header fact (it is the time word, H by the key, not on the header); any value for "dam bore". Depth checks (D3: >=80%
+cipher tokens H/C/S plus an external non-statistical check; D2: a code value reading in two contexts and a true specific sentence): O9-DC -- code clause "Pagan
+Feby fifth Henrietta for Village Van Vliet Vincent Merlin" = Washington ... 4 PM, for Major Van Vliet, Quartermaster, New York; external: NYT 21 Mar 1864 (the
+Marcia C. Day sent to the Île à Vache; "Stewart Van Vliet, Major and Quartermaster" on the same page). O9-DE -- Husband = (Fort) La Fayette and Atlas = Fox read
+in two contexts (O9-DE, O9-DI) and Venus ... Midas in two (O9-DE, O9-DH); external: Welles vol. I pp.524-525, 536-540 and holder 4732; 75% < 80%, so D2. O9-DH --
+code clause "Francis For Venus Ol cott Midas" = 11 AM, Colonel Olcott, New York (time word = header time); external: holder 4491. O9-DI -- code clause "place
+him in husband Call upon Agate for Assistance Atlas" = Fort La Fayette ... General Dix ... Fox; external: holder 4491 ("put in Ft Lafayette ... have Gen Dix
+instructed"). Depth sentences (my own): O9-DC -- "Meigs had the cost of the ship sent to bring the Île à Vache colonists home kept on a separate account so it
+could be charged back." O9-DE -- "Fox had the jailed contractor Stover's books and papers seized and froze visiting permits until Olcott came to Washington to
+consult." O9-DH -- "Fox, asked by Olcott to have Edwin L. Brady arrested, first asked whether the case belonged to the Navy or the Army." O9-DI -- "That evening
+Fox ordered Brady arrested and sent to Fort Lafayette with General Dix's help."
+
+### 5. Postmortem and fixes for a FIX job (not applied here)
+Failure: O9R-1 filed all four "not located" after searching print and the holder only for clear copies of the outgoing text; it did not search the holder for the
+incoming side (4491 is Olcott's request answered by O9-DH/DI; 4551 answers O9-DA), did not identify the ship in O9-DC, and wrote "170 cached volumes" for a
+cache of 171 files of which about ten are OR volumes (OR ser. II vol. 6, the volume for Feb-Mar 1864, was not among them). Its book calls and grades stand.
+Corrections (a verifier does not edit ciphertext-no9.txt or reading-no9.md):
+- O9-DC header: "(holder transcription, leaf not eye-checked)" -> "(leaf eye-checked on crops, FV-O9a: matches)"; "put on board [the] Maria C. Day" -> add "(=
+  the ship Marcia C. Day, sent in Feb 1864 to bring back the Île à Vache colonists; NYT 21 Mar 1864, Pittsburgh Post 24 Mar 1864: context, I)"; "Major Van Vliet"
+  -> "Major Stewart Van Vliet". Note: "170 cached volumes" -> "the OR volumes in sources/ia-fulltext/print-check (about ten) plus OR II/6 (FV-O9a): 0".
+- O9-DE header: "leaf not eye-checked; ... this entry not" -> "leaf eye-checked on crops (FV-O9a): matches, label (9), header 10 30 PM"; note: add Welles,
+  Diary vol. I pp.524-525, 536-540 (Stover a convict in Fort Lafayette, visiting permits; Olcott to consult with Fox 12 Mar) and holder 4732 as context.
+- O9-DH description: "is [E. L.] Brady connected" -> "is [Edwin L.] Brady connected (named in Olcott's request, holder 4491, 8 Mar 1864 8.40 PM)"; note: add
+  4491 as the message answered.
+- O9-DI note: add "answers holder 4491 (Olcott, 8 Mar: arrest Edwin L. Brady, put him in Ft Lafayette, have Gen Dix instructed): Husband and Agate agree".
+- O9-DA (for its first verifier): holder 4551 (Olcott to Fox, 20 Apr 1864) answers its "full names of Simpson"; open it first.
+- NOTES "## O9R-1" per-row lines for DC, DE, DH, DI: add the holder replies/requests above and "OR II/6 searched (FV-O9a): 0".
+
+Requests: hdl.huntington.org 12 (10 CISOSEARCHALL, 2 IIIF 2400 px; all 200); archive.org 2 djvu (OR II/6, Welles vol. I) + 2 metadata (one 'not found' for a
+guessed OR III/4 id); be-api.us.archive.org 16 (all answered); www.googleapis.com/books 4 (all 200). Queued: WORK-QUEUE `AUD2-LEDGERN2-5` (O9-DC, O9-DE, O9-DH,
+O9-DI), SO-ECKERT-O9DC, SO-ECKERT-O9DE, SO-ECKERT-O9DH, SO-ECKERT-O9DI. For LANE LEDGER-N2 (account 1)

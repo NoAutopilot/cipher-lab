@@ -12534,6 +12534,170 @@
       "depth_sentence": "Two Sixth Corps regiments back at Petersburg from the Valley were still unpaid since August when Brice sent two paymasters down the river to City Point.",
       "depth_check": "code clause: Paymrs will leave wedlock by wafer for bridle = paymasters will leave tomorrow by river for City Point; the ledger's own 'No 2' and '3 Pm' agree with the book and Jennie = 3 PM; no external content check (D2)",
       "depth_note": "15 H/C of 15 code-word groups; rest plain"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-O9a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-O9a verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-O9a)' section 4",
+      "reading_version": "O9R-1 10 Oct 2026 (reading-no9.md), grades as in AUDIT (FV-O9a) s.3 (context notes in s.5 pending a FIX job)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 9): Quartermaster General Meigs to Major Van Vliet, New York, 5 Feb 1864: keep all costs of the Marcia C. Day (the Ile a Vache return voyage) in a separate account for reimbursement (O9-DC)",
+      "line": "Read at grade H with the older War Department vocabulary (Cipher No. 9, Huntington mssEC 67): on 5 Feb 1864 Quartermaster General Meigs told Major Van Vliet at New York to keep every cost of chartering, fitting out and victualling the Marcia C. Day in a separate account, so that this special expedition could be reimbursed; not located in print (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-O9a); not N4: Official Records ser. III vol. 4; the Meigs papers (Library of Congress) and Quartermaster General letter books (NARA RG 92); the Edward L. Hartz papers (Duke, Rubenstein Library); the Interior Department and congressional documents on the Ile a Vache return (1864); the New York press of Feb 1864; HathiTrust; JSTOR not searched; second audit queued (AUD2-LEDGERN2-5)",
+      "depth": "D3",
+      "completeness": "7 H of 7 code words; the rest plain; ship name plain (Maria C Day on the leaf = Marcia C. Day, I)",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.7, pointer 9673, O9-DC"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.7, pointer 9673, O9-DC",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.7, pointer 9673, O9-DC"
+      ],
+      "depth_sentence": "Meigs had the cost of the ship sent to bring the Ile a Vache colonists home kept on a separate account so it could be charged back.",
+      "depth_check": "code clause: Pagan Feby fifth Henrietta for Village Van Vliet Vincent Merlin = Washington ... 4 PM, for Major Van Vliet, Quartermaster, New York; external: New York Times 21 Mar 1864 (the Marcia C. Day sent to the Isle of Avache; 'Stewart Van Vliet, Major and Quartermaster' on the same page)",
+      "depth_note": "7 H of 7 code words; the rest plain; ship name plain (Maria C Day on the leaf = Marcia C. Day, I)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-O9a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-O9a verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-O9a)' section 4",
+      "reading_version": "O9R-1 10 Oct 2026 (reading-no9.md), grades as in AUDIT (FV-O9a) s.3 (context notes in s.5 pending a FIX job)",
+      "unresolved_spans": "dam bore",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "2"
+      },
+      "depth_pct": 75.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 9): G. V. Fox to Col. H. S. Olcott, New York, 10 Mar 1864 10.30 PM: seize the books and papers of H. D. Stover, prisoner in Fort Lafayette; no permits until consultation (O9-DE)",
+      "line": "Read at grade H with Cipher No. 9 (period key): on 10 Mar 1864 G. V. Fox told Col. H. S. Olcott at New York to seize the books and papers of the contractor H. D. Stover, then a prisoner in Fort Lafayette, and said no permits would be issued until they had consulted; not located in print (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-O9a); not N4: the Fox papers (New-York Historical Society) and Fox, Confidential Correspondence vol. 1; the Olcott papers; NARA RG 45; the congressional reports on the Navy-contract frauds (1864-65); the New York press of 9-15 Mar 1864; HathiTrust; JSTOR not searched; second audit queued (AUD2-LEDGERN2-5)",
+      "depth": "D2",
+      "completeness": "6 H of 8 cipher tokens; 'dam bore' after the signature unread (M 2)",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.18, pointer 9684, O9-DE"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.18, pointer 9684, O9-DE",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.18, pointer 9684, O9-DE"
+      ],
+      "depth_sentence": "Fox had the jailed contractor Stover's books and papers seized and froze visiting permits until Olcott came to Washington to consult.",
+      "depth_check": "Husband = (Fort) La Fayette and Atlas = Fox read in two contexts (O9-DE, O9-DI), Venus ... Midas in two (O9-DE, O9-DH); external: Diary of Gideon Welles vol. I (1911) pp.524-525, 536-540 and holder 4732; 75% of cipher tokens H, under the D3 line",
+      "depth_note": "6 H of 8 cipher tokens; 'dam bore' after the signature unread (M 2)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-O9a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-O9a verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-O9a)' section 4",
+      "reading_version": "O9R-1 10 Oct 2026 (reading-no9.md), grades as in AUDIT (FV-O9a) s.3 (context notes in s.5 pending a FIX job)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 9): G. V. Fox to Col. H. S. Olcott, New York, 9 Mar 1864 11 AM: is Brady connected with a Navy operation or the Army? (O9-DH)",
+      "line": "Read at grade H with Cipher No. 9 (period key): at 11 a.m. on 9 Mar 1864 G. V. Fox asked Col. Olcott whether Brady's case was a Navy or an Army matter, saying the Navy would arrest him in the first case and the War Department should act in the second; not located in print (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-O9a); not N4: the Fox papers (New-York Historical Society) and Fox, Confidential Correspondence vol. 1; the Olcott papers; NARA RG 45 and RG 107; the congressional reports on the Navy-contract frauds (1864-65); the New York press of 9-15 Mar 1864; HathiTrust; JSTOR not searched; second audit queued (AUD2-LEDGERN2-5)",
+      "depth": "D3",
+      "completeness": "6 H of 6 code words; time word = header time",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.18, pointer 9684, O9-DH"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.18, pointer 9684, O9-DH",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.18, pointer 9684, O9-DH"
+      ],
+      "depth_sentence": "Fox, asked by Olcott to have Edwin L. Brady arrested, first asked whether the case belonged to the Navy or the Army.",
+      "depth_check": "code clause: Francis For Venus Ol cott Midas = 11 AM, Colonel Olcott, New York (time word = the header's 11 am); external: holder 4491 (Olcott to Fox, 8 Mar 1864 8.40 PM, asking for Edwin L. Brady's arrest)",
+      "depth_note": "6 H of 6 code words; time word = header time"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-O9a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-O9a verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-O9a)' section 4",
+      "reading_version": "O9R-1 10 Oct 2026 (reading-no9.md), grades as in AUDIT (FV-O9a) s.3 (context notes in s.5 pending a FIX job)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger, Cipher No. 9): G. V. Fox to Col. H. S. Olcott, New York, 9 Mar 1864 (9.30 PM by the time word): arrest Edwin L. Brady, place him in Fort Lafayette, call on General Dix (O9-DI)",
+      "line": "Read at grade H with Cipher No. 9 (period key): on the evening of 9 Mar 1864 G. V. Fox ordered Col. Olcott to arrest Edwin L. Brady, place him in Fort Lafayette and call on General Dix for assistance, answering Olcott's request of 8 March (Huntington Eckert papers, pointer 4491); not located in print (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-O9a); not N4: the Fox papers (New-York Historical Society) and Fox, Confidential Correspondence vol. 1; the Olcott papers; the Dix papers; NARA RG 45 and RG 107; the New York press of 10-15 Mar 1864 (an arrest of a New York oil contractor); HathiTrust; JSTOR not searched; second audit queued (AUD2-LEDGERN2-5)",
+      "depth": "D3",
+      "completeness": "5 H of 5 code words",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.18, pointer 9684, O9-DI"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.18, pointer 9684, O9-DI",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.18, pointer 9684, O9-DI"
+      ],
+      "depth_sentence": "That evening Fox ordered Brady arrested and sent to Fort Lafayette with General Dix's help.",
+      "depth_check": "code clause: place him in husband Call upon Agate for Assistance Atlas = Fort La Fayette ... General Dix ... Fox; external: holder 4491 ('put in Ft Lafayette ... have Gen Dix instructed')",
+      "depth_note": "5 H of 5 code words"
     }
   ],
   "lanes": [
