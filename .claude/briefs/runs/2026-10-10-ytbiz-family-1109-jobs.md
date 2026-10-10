@@ -76,3 +76,35 @@ gaps_check.py. Report what was found and where it was not found; do not classify
 Intake gate (11:3x UTC, pasted before spawning): thurloe-printed, sachsstaatsarchiv-manteuffel-1712, costabili-modena-1491,
 na-suriname-map-1781 each "partial -- edition/page or full-text-search citation found within 6 lines", exit 0. ROOM: no live claim on
 any of the four (last: costabili FAM-COSCREM done 09:2x, Suriname SUR-DENSE done 00:12, Manteuffel MANT-66 done 00:3x).
+- THUR-B146 2.13 / 2.5 (Sonnet): Birch vols 1/4/6, 108 numeral groups (b146/hits.tsv); vol 3 control 10/10, 15/18 known windows overall;
+  OCR read of 11: 4 printed gloss (key-source pairs), 3 inline no-gloss (Dutch ambassadors 1652-53, family on file), 4 symbol noise; no keyed
+  correspondent run without gloss; `ia_numeral_runs.py --inline-run` added with offline test. archive.org 6.
+- MANT-Y49 5.63 / 3.5 (Opus, 1.61x over): PREREG b11237295; 77 gloss-fixed slots, 2 blind passes, gate PASS (BA 0.883/0.862 vs p99 0.59) but
+  the 8 gloss-wants-9 transcribed-4 slots read 4 in both passes -> y-glyph untested-by-this-tool (2nd blind-read attempt); 0063 A1 tok2 7->9 M.
+- COS-1167 2.95 / 3 (Opus): R1167 P2 L1-20/P3 cut into 10 cipher spans with group counts (align/cos1167_spans.tsv); copy P5/P6 not fetched
+  (--max-files spent on thumbnails + P1-P4); completeness not established.
+- SUR-MRICH 3.64 / 4.5 (Opus): no m-rich glossed page on disk; PREREG 58e514904; power at f 0.50 +23 lines 0.467/0.333, +117 0.633/0.500,
+  +234 0.900/0.850 -> gate FAIL, no transcription; ~120-235 more glossed lines (~$40-60, a campaign) needed.
+Wave 1 total 14.35; orchestrator 3.28 at 12:15.
+
+## Wave 2 (12:2x UTC 10 Oct)
+Hosts this wave: de-crypt.org ("DECODE": COS-1167B only, ONE browser login); archive.org ("IA": THUR-V6 only, <= 30 requests).
+
+### COS-1167B (Opus, cap 2.5, box 60 min, DECODE one login): costabili-modena-1491, finish COS-1167 -- copy P5/P6 against the 10 spans
+Read ONLY NOTES "## COS-1167" and align/cos1167_spans.tsv, align/cos1167_ref.py. ONE DECODE login fetching ONLY R1167's P5 and P6 full-size
+pages (COS-1167's own lesson: thumbnails count against --max-files under --guess-fullsize; name the pages explicitly with the tool's page
+option, check `node tools/decode_browser_login.js --help` first); scratch only, sha1s into the manifest, never commit the saved HTML, scrub the
+account name. Transcribe only the copy words needed to bound each of the 10 spans (one Sonnet pass on line crops + your own check; this is
+text known from the copy, no key work), compute copy_words and the groups/word ratio per span against the reference range COS-1167 already
+set (0.615-1.053), and flag spans outside it. No key or grade change. NOTES "## COS-1167B", Remaining gaps / Escalation / Verdict,
+gaps_check.py. Report what was found and where it was not found; do not classify novelty.
+
+### THUR-V6 (Sonnet, cap 2, box 60 min, IA <= 30): thurloe-printed, image check of the 8 Birch vol 6 hits THUR-B146 could not read in OCR
+The folder Verdict's cheapest next (THUR-B146: "IA availability check and crops of the 8 vol 6 hits, ~$1.5"). Read ONLY NOTES "## THUR-B146"
+and b146/hits.tsv. For the bim_ vol 6 item: availability check (no login), then for each of the 8 hits (ll.25671, 74562, 75081, 77385,
+40469, 44535, 65889, 89881, plus Jephson 65973, 76999 if the budget allows) fetch the one page image once (IIIF or the item's page-image
+route), crop the numeral block with `tools/iiif_lines.py --image` (paste the command), and answer per hit only: is it cipher numerals, is a
+printed decipherment/interlinear gloss beside it, sender/recipient/date from the heading. One page per Sonnet call. No decoding, no
+transcription of the numerals. A cipher block with no printed decipherment under a correspondent of a folder key: one ROOM flag line for the
+lane. Commit crops under 3 MB with a manifest. NOTES "## THUR-V6", Remaining gaps / Escalation / Verdict, gaps_check.py. Report what was
+found and where it was not found; do not classify novelty.
