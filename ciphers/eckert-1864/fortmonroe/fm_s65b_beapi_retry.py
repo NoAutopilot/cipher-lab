@@ -6,7 +6,7 @@ UA = {'User-Agent': 'cipher-lab research script (contact via repository)'}
 Q = [(None, '"referred to in our dispatch" "staff officer" "retained no copy" Grant Seward'),
  (None, 'Cammann gold "Sell gold" naval officer Cooper Sheldon Eckert approval'),
  (None, 'ponchos "not on hand" Canby Sheridan Ingalls March 1865')]
-time.sleep(25)  # one retry after the 502s of fm_s65b_beapi2.out, then stop
+time.sleep(1)  # one retry after the 502s of fm_s65b_beapi2.out, then stop
 import sys
 
 n = 0

@@ -6211,3 +6211,70 @@ at Animal until I get there pekin I
 will lave an Apple is at Cora whelp John
 T. T. Eckert
 note: FM-S65A: FM-S65A step 0 (fms65a_step0.py; information only, a non-test on this ledger per the wave-2 RULING and BOOK-FM65): 0.474 (9/19) / b 0.316 MISS (window of 3 blocks; information only). Key words (H): Washington, 21, Monroe, Tomorrow, Grant; 'Gen J. M. Palmer' is the key's reading (the antecedent at 7718 is signed J. W. Palmer, Br Gen Comdg Dist of NC: M for the initial); 'Sumter' for the plain-word slot after 'will lave an' and 'Cora whelp John' are M. Support (C): 7718 (Palmer at Ft Monroe 1 pm 21 Jan, come from Newbern to consult Gen Grant; 'As the Lieut Genl is in Washn I would beg you to enquire whether he desires to see me and whether I had better wait here until his return') reads as the telegram this row answers. Shuffled-key control (fms65a_ctl.out, BOOK-FM65 seeds 1-3): 'for [Maj Gen Geo. H. Thomas] wait at [Help] until I get there' (s1), '[Hill] ... wait at [Pearl]' (s2), '[Maj Gen B. F. Butler] wait at [Maj Genl U.S. Grant]' (s3): the Palmer / Monroe clause does not survive. Holder: CISOSEARCHALL 'Eckert wait Monroe Palmer tomorrow' -> 7718 (the antecedent) only, two other queries 0 hits: not a clear copy of this reply; print: none (OR I/46 pt 2 and 3, Grant Papers 14 via be-api 0 hits). Image not read (transcription only, rule 2); the BOOK (No. 1) is by sense and BOOK-FM65; not novelty-classified (rule 10).
+
+### E589 | Page 348 | 5892 | mssEC 25 (obj 5952, pointer 5892), City Point 2 Feb 1865 12.50 AM, S. H. Beckwith to Geo. D. Sheldon at Ft Monroe: the steamer Monohansett will leave for Monroe about 1 AM; Major E[ckert?] wishes (you) to meet him on arrival (FM-S65B; row 5892/1; short, 15 tokens)
+City Point Feb. 2 - 1865
+1250 A. M.
+Geo. D. Sheldon Ft Monroe
+Monohansett will leave for animal
+about ann Taunton E wishes
+euta meat him on arrival
+S. H. Beckwith
+note: FM-S65B (10 Oct 2026, account 1, for LANE LEDGER-17): book No. 1 per BOOK-FM65 (share table and the five decodes of the row in fm_s65b.out; the clause does not survive the meaning-shuffled copy: its code words read other values there). Step 0 (fm_s65b_step0.py, information only on mssEC 25 under the Wave 2 ruling): No. 1 (a) 0.882 (15/17) vs (b) p95 0.471, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.882 vs 0.471, HIT. Short (3 H: 'animal' = Monroe, the header time group 1 AM, 'Taunton' = [Major]). 'euta' is plain as transcribed (M); the addressee of the wish and whose 'E' is meant are not read (the decoder's [Major] before 'E' is M: Major Eckert is a guess). No context checked. Not located in print: exact phrases in 211 cached volumes (OR/ORN, Butler) none; the steamer name occurs in the index of OR I/36 pt 2 and I/40 pt 3 (1864 transport references), unrelated; be-api 'Monohansett Eckert meet him Beckwith': none; Google Books Grant Papers vols. 13-14 'Monohansett': none (one 503 not retried). No holder clear copy (CISOSEARCHALL 'Monohansett Taunton Beckwith', 'Monohansett Eckert meet arrival City Point': 5892 only; 'Monohansett steamer Fort Monroe leave 1 AM': none).
+
+### E590 | Page 352 | 5896 | mssEC 25 (obj 5952, pointer 5896), City Point 2 Feb 1865 3.30 PM, to Geo. D. Sheldon at Ft Monroe, addressed to the Secretary of State (the decoder's reading of the address group 'Byron', M): 'I have sent the letter referred to in our dispatch by the hands of a staff officer to be delivered to you. I retained no copy'; signed (Grant, decoded from the closing groups 'walrus Juno', M) / S. H. Beckwith (FM-S65B; row 5896/0; 22 tokens)
+City Point Feb. 2 / 65
+Geo D. Sheldon Ft Monroe
+Jennie Byron I have sent the letter
+referred to inure dispatch by the hands
+of a staff officer to be delivered
+to you. I retained no copy fit
+walrus Juno -  S. H. Beckwith
+note: FM-S65B (10 Oct 2026, account 1, for LANE LEDGER-17): book No. 1 per BOOK-FM65 (share table and the five decodes of the row in fm_s65b.out; the clause does not survive the meaning-shuffled copy: its code words read other values there). Step 0 (fm_s65b_step0.py, information only on mssEC 25 under the Wave 2 ruling): No. 1 (a) 0.889 (16/18) vs (b) p95 0.444, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.941 vs 0.471, HIT. 4 H: time word (Jennie = 3.30 PM), the address group (Secretary of State, M), the closing pair. The body is plain English. The address reading (Secretary of State) is a key-row hit on the address group and is M; the date is that of the Hampton Roads peace-conference week, from general knowledge, not checked here; nothing here proves the addressee or the letter meant. Print: Grant Papers vol. 13 (Google Books mnRjmhe3QLoC) returned a Feb 1865 snippet on Seward's telegrams to Grant (fm_s65b_gb_run1.out), a different telegram; the row's own wording not located: exact phrases ('letter referred to in our dispatch', 'retained no copy') in 211 cached volumes none; be-api whole-collection phrase query for it got HTTP 502 twice (UNCHECKED). No holder clear copy (CISOSEARCHALL 'letter referred to dispatch staff officer retained no copy': 5896 only; two Seward-wording queries: none).
+
+### E591 | Page 364 | 5908 | mssEC 25 (obj 5952, pointer 5908), Ft Monroe 16 Feb 1865, Geo. D. Sheldon to S. H. Beckwith at City Point, relaying from Norfolk (D. Lynch, Commander and Inspector of Ordnance): for Commodore William Radford, commanding the 5th Division (the row has '100 Radford', '5', 'Division', read from the code words), New Ironsides: no torpedoes on hand; have telegraphed the Bureau of Ordnance for 20; (submarine) squadron will forward immediately on receipt (FM-S65B; row 5908/0; 37 tokens)
+Ft Monroe Feb 16 / 65
+plain: William Ordnance
+S. H. Beckwith City Point
+Farmer for Comma door William Radford polking
+plaster quincy New Iron sides Burr Muddy
+zodiac No torpid owes on hand have
+wrangled the Bureau of Ordnance for harrow
+Sub squadron will forward immed'y on receipt
+youth D Lynch polkaer and Inspector Ord.
+Geo D. Sheldon
+note: FM-S65B (10 Oct 2026, account 1, for LANE LEDGER-17): book No. 1 per BOOK-FM65 (share table and the five decodes of the row in fm_s65b.out; the clause does not survive the meaning-shuffled copy: its code words read other values there). Step 0 (fm_s65b_step0.py, information only on mssEC 25 under the Wave 2 ruling): No. 1 (a) 0.714 (20/28) vs (b) p95 0.286, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.667 vs 0.267, HIT. 11 H. Several are key rows firing on plain words (William -> [100], Ordnance -> [After the], Sub -> [Marine]; M by hand). 'farmer' = Norfolk (as in E539 and E541). The '20' and '5 Division' readings fit the print: Radford's own telegram of 14 Feb 1865 4.15 PM to Chief of Bureau of Ordnance Wise, 'I have made a requisition for 20 torpedoes that will stand immersion. Wanted now.' (ORN I/11, in officialrecords10librgoog, cached) and the Parker/Lynch chain of E539, E541 (24 Jan). That print is the demand; this row is the reply and is not located in print (exact phrases, 211 volumes: none; be-api 'Radford New Ironsides torpedoes Lynch Bureau of Ordnance' none; Grant Papers: not hit, two Google Books 503s). Holder: CISOSEARCHALL 'Radford New Ironsides torpedoes Lynch' returned 5886 only (the 24 Jan row, a different telegram); two further queries: none.
+
+### E592 | Page 366 | 5910 | mssEC 25 (obj 5952, pointer 5910), Ft Monroe 20 Feb 1865, Geo. D. Sheldon to Maj. Eckert, Washington, 'for approval': from Monroe, 20 (units not given) for Camman and Company, New York: sell gold to fall (below?) ...; signed W. Cooper, 'he is naval officer' (FM-S65B; row 5910/1; short, 18 tokens)
+Ft Monroe Feb  20 / 65
+unjoin: approval
+plain-at: washington#1
+Maj. Eckert  Washington
+For approval - Animal harsh for Camman and
+Company frog unity Sell gold to fall
+yoke W. Cooper he is naval officer
+Geo. D. Sheldon
+note: FM-S65B (10 Oct 2026, account 1, for LANE LEDGER-17): book No. 1 per BOOK-FM65 (share table and the five decodes of the row in fm_s65b.out; the clause does not survive the meaning-shuffled copy: its code words read other values there). Step 0 (fm_s65b_step0.py, information only on mssEC 25 under the Wave 2 ruling): No. 1 (a) 0.667 (8/12) vs (b) p95 0.417, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.727 vs 0.455, HIT. 5 H, two of them the dispatch header ('Washington' decoded [Volunteer] is the known header slip, plain-at washington#1). 'Animal' = Monroe, 'harsh' = 20 (number, units not given), 'frog' = New York, 'yoke' = signature word. The clause is a private money order sent through the military telegraph 'for approval' by Eckert; the tail 'to fall' is cut and M. Not located in print (exact phrases none in 211 volumes; be-api phrase query HTTP 502 twice, UNCHECKED; Google Books 'Cammann gold sell Cooper naval officer' no hit, one 503). No holder clear copy (CISOSEARCHALL 'Camman Company gold Cooper naval officer', 'sell gold fall approval Eckert Cooper': 5910 only; 'Cammann gold sell fall Cooper': none).
+
+### E593 | Page 392 | 5936 | mssEC 25 (obj 5952, pointer 5936), City Point 22 Mar 1865 7.30 PM, S. H. Beckwith to Geo D. Sheldon at Ft Monroe, for (Captain James, as the decoder reads the address groups, M): 'The ponchos are not on hand at present but Canby is shipped on (Sheridan's?) arrival here if that will suffice; Ingalls' (FM-S65B; row 5936/2; 21 tokens)
+City Point Mar 22 / 65
+Geo D. Sheldon , Ft Monroe ,
+Minnie for princess Bergen Stop the ponchos
+are not on hand at present but
+Canby is Shoed on nabobs are rival
+here if that Wilby Sausage factory Ingalls
+S. H. Beckwith
+note: FM-S65B (10 Oct 2026, account 1, for LANE LEDGER-17): book No. 1 per BOOK-FM65 (share table and the five decodes of the row in fm_s65b.out; the clause does not survive the meaning-shuffled copy: its code words read other values there). Step 0 (fm_s65b_step0.py, information only on mssEC 25 under the Wave 2 ruling): No. 1 (a) 0.842 (16/19) vs (b) p95 0.421, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.727 vs 0.364, HIT. 4 H, address and 'nabobs' = P. H. Sheridan (decoder; the possessive is M). 'Canby is Shoed on' is read as plain-word sound-alikes by the clerk ('Shoed' for 'shipped'/'sent'?, M); 'Wilby Sausage factory' = 'will be sufficient'. Context only (M): Sheridan reached City Point 26 Mar 1865; Ingalls was chief quartermaster there. Not located in print (exact phrases in 211 volumes: none; be-api phrase queries HTTP 502 twice, UNCHECKED; Google Books query 503). No holder clear copy (CISOSEARCHALL 'ponchos not on hand Canby Ingalls', 'ponchos Canby Sausage Ingalls Shoed': 5936 only).
+
+### E594 | Page 397 | 5941 | mssEC 25 (obj 5952, pointer 5941), Ft Monroe 27 Mar 1865, sent 1.40 PM, Geo. D. Sheldon to Maj. Eckert, Washington, for the Honorable John Sherman (the plain name 'Shear man' as transcribed): 'I am going to see (Grant) at City Point and expect to go back to Goldsboro by way of Newbern from Old Point on Wednesday'; signed 'Kitchen' = Maj. Gen. W. T. Sherman (the same code word is C-checked in row 5896/1, whose holder clear copy 8561 reads 'from Gen Sherman' where the cipher has 'Kitchen') (FM-S65B; row 5941/2; 28 tokens)
+Ft Monroe Mar 27 / 65
+unjoin: kitchen
+plain: John Honorable
+plain-at: washington#1
+Maj. Eckert , Washington
+Animal to Honorable John Shear man grapes I am
+going tussey Jupiter at black and expect toggo back
+to census peasant flora from Old vernon on Wednesday
+Kitchen -
+sent 1.40 PM Dealy  Geo. D. Sheldon
+note: FM-S65B (10 Oct 2026, account 1, for LANE LEDGER-17): book No. 1 per BOOK-FM65 (share table and the five decodes of the row in fm_s65b.out; the clause does not survive the meaning-shuffled copy: its code words read other values there). Step 0 (fm_s65b_step0.py, information only on mssEC 25 under the Wave 2 ruling): No. 1 (a) 0.529 (18/34) vs (b) p95 0.265, HIT; under one meaning-shuffled No. 1 copy (seed 7) (a) 0.581 vs 0.258, HIT. 'Animal' = Monroe, 'grapes' = Washington, 'Jupiter' = Grant, 'black' = City Point, 'census' = Goldsboro, 'peasant' = by the way of, 'flora' = Newbern, 'vernon' read Point; 'John' and 'Honorable' are plain (key-row misfires, plain: lines). The reading as W. T. Sherman to his brother Senator John Sherman fits Sherman's own trip to City Point from Goldsboro in late March 1865 (general knowledge, not checked here); the clause is graded M as a whole since 'Shear man' is a plain name and the sender is read by the signer code word only. Not located in print: exact phrases in 211 volumes none; be-api whole-collection 'going to see Grant City Point Goldsboro Newbern Old Point Wednesday' and 'Sherman letters brother Senator Fort Monroe March 27 1865 Goldsboro Old Point': 0 hits each; Google Books for Grant Papers vol. 14 HTTP 429 (UNCHECKED). The Sherman family letters (Thorndike 1894) were not opened. No holder clear copy (CISOSEARCHALL 'Sherman John Sherman Goldsboro Newbern Old Point Wednesday' and two others: none).

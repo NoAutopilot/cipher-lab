@@ -2783,5 +2783,41 @@ Geo. D. Sheldon Ft Monroe [Washington] {time: 3 PM} [21] for [Gen J. M. Palmer] 
 
 Code-word tokens: H 12.
 
-Totals over the 442 entries: H 7534, C 113, I 39, M 67, S 21, U 10.
+**E589 | Page 348 | 5892 | mssEC 25 (obj 5952, pointer 5892), City Point 2 Feb 1865 12.50 AM, S. H. Beckwith to Geo. D. Sheldon at Ft Monroe: the steamer Monohansett will leave for Monroe about 1 AM; Major E[ckert?] wishes (you) to meet him on arrival (FM-S65B; row 5892/1; short, 15 tokens)**
+
+1250 A. M. Geo. D. Sheldon Ft Monroe Monohansett will leave for [Monroe] about {time: 1 AM} [Major] E wishes euta meat him on arrival S. H. Beckwith
+
+Code-word tokens: H 3.
+
+**E590 | Page 352 | 5896 | mssEC 25 (obj 5952, pointer 5896), City Point 2 Feb 1865 3.30 PM, to Geo. D. Sheldon at Ft Monroe, addressed to the Secretary of State (the decoder's reading of the address group 'Byron', M): 'I have sent the letter referred to in our dispatch by the hands of a staff officer to be delivered to you. I retained no copy'; signed (Grant, decoded from the closing groups 'walrus Juno', M) / S. H. Beckwith (FM-S65B; row 5896/0; 22 tokens)**
+
+Geo D. Sheldon Ft Monroe {time: 3.30 PM} [Secretary of State] I have sent the letter referred to inure dispatch by the hands of a staff officer to be delivered to you. I retained no copy fit  {tail: [signed] [Maj Genl U.S. Grant]'s H. Beckwith}
+
+Code-word tokens: H 4.
+
+**E591 | Page 364 | 5908 | mssEC 25 (obj 5952, pointer 5908), Ft Monroe 16 Feb 1865, Geo. D. Sheldon to S. H. Beckwith at City Point, relaying from Norfolk (D. Lynch, Commander and Inspector of Ordnance): for Commodore William Radford, commanding the 5th Division (the row has '100 Radford', '5', 'Division', read from the code words), New Ironsides: no torpedoes on hand; have telegraphed the Bureau of Ordnance for 20; (submarine) squadron will forward immediately on receipt (FM-S65B; row 5908/0; 37 tokens)**
+
+S. H. Beckwith City Point [Norfolk] for Comma door William Radford polking [5] [Division] New Iron sides Burr Muddy [.] No torpid owes on hand have [Telegraph (-ed, -ing)]d the Bureau of Ordnance for [20] Sub [Marine] will forward immed'y on receipt  {tail: [signed] D Lynch [Command = Er (-ed, -ing)]er and Inspector Ord. Geo D. Sheldon}
+
+Code-word tokens: H 9.
+
+**E592 | Page 366 | 5910 | mssEC 25 (obj 5952, pointer 5910), Ft Monroe 20 Feb 1865, Geo. D. Sheldon to Maj. Eckert, Washington, 'for approval': from Monroe, 20 (units not given) for Camman and Company, New York: sell gold to fall (below?) ...; signed W. Cooper, 'he is naval officer' (FM-S65B; row 5910/1; short, 18 tokens)**
+
+Maj. Eckert Washington For approval [Monroe] [20] for Camman and Company [New York] [.] Sell gold to fall  {tail: [signed] W. Cooper he is naval officer Geo. D. Sheldon}
+
+Code-word tokens: H 5.
+
+**E593 | Page 392 | 5936 | mssEC 25 (obj 5952, pointer 5936), City Point 22 Mar 1865 7.30 PM, S. H. Beckwith to Geo D. Sheldon at Ft Monroe, for (Captain James, as the decoder reads the address groups, M): 'The ponchos are not on hand at present but Canby is shipped on (Sheridan's?) arrival here if that will suffice; Ingalls' (FM-S65B; row 5936/2; 21 tokens)**
+
+Geo D. Sheldon , Ft Monroe , {time: 7.30 PM} for [Captain] [James] Stop the ponchos are not on hand at present but Canby is Shoed on [P. H. Sheriden]'s are rival here if that Wilby Sausage factory Ingalls S. H. Beckwith
+
+Code-word tokens: H 4.
+
+**E594 | Page 397 | 5941 | mssEC 25 (obj 5952, pointer 5941), Ft Monroe 27 Mar 1865, sent 1.40 PM, Geo. D. Sheldon to Maj. Eckert, Washington, for the Honorable John Sherman (the plain name 'Shear man' as transcribed): 'I am going to see (Grant) at City Point and expect to go back to Goldsboro by way of Newbern from Old Point on Wednesday'; signed 'Kitchen' = Maj. Gen. W. T. Sherman (the same code word is C-checked in row 5896/1, whose holder clear copy 8561 reads 'from Gen Sherman' where the cipher has 'Kitchen') (FM-S65B; row 5941/2; 28 tokens)**
+
+Maj. Eckert , Washington [Monroe] to Honorable John Shear man [Washington] I am going tussey [Maj Genl U.S. Grant] at [City Point] and expect toggo back to [Goldsboro] [By the way of] [Newbern] from Old [Point] on Wednesday [Maj Gen W. T. Sherman] sent 1.40 PM Dealy Geo. D. Sheldon
+
+Code-word tokens: H 9.
+
+Totals over the 448 entries: H 7568, C 113, I 39, M 67, S 21, U 10.
 <!-- decode.py: derived block ends -->

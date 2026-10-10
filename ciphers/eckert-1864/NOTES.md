@@ -6916,3 +6916,49 @@ Read so far: 6 of 11 filed (E581 E582 E583 E585 E586 E587); 2 in print or holder
 - [ ] image-check: not run; next above.
 - [x] retry: one 502 on be-api not retried (the Grant Papers query in question was not material).
 Verdict: keep going: 4 internal gaps; cheapest next: clear-page sweep of the Washington books by date, ~$0.4
+
+## FM-S65B (10 Oct 2026, account 1, for LANE LEDGER-17)
+
+Eleven short 1865 Fort Monroe rows (Huntington object 5952 = mssEC 25), pointers 5892-5942, rows never read before (grep of pointer/entry in ciphertext*.txt, NOTES.md, AUDIT.md at 16:5x UTC: only 5896/2 = E549, a different row). Book No. 1 per BOOK-FM65 (the share table put 5892/1, 5896/0 close to No. 2, but the No. 2 decode of every row gives nothing: `fm_s65b.out`, five decodes per row incl. one meaning-shuffled copy of No. 1 and of No. 2). Text as transcribed by the volunteers; no page image read (rule 2): every statement is conditional on the transcription. Intake gate (16:5x UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Prior-work step (`tools/prior_work.py ... --step-type read`, ad hoc item): exit 4 with five target-level live-claim LEADs (FIX-L14, CLEAR-SWEEP, FIX-L17a, OR-CACHE2, FM-UND; none names these pointers), a LOOK and UNCHECKED rows for the leaf/solver caches (no folio key); the folder's own grep above is the own-work check. Step 0 (`fm_s65b_step0.out`, information only under the Wave 2 ruling): HIT on all 11 rows under No. 1 and under the shuffled copy alike (a non-test here).
+
+| row | per-row line |
+|---|---|
+| 5892/1 | **filed E589** / not located in print / no holder clear copy / short (3 H: Monroe, 1 AM, Major) |
+| 5893/1 | **plain** (Bates: Did the Bruno come with the Bolivia, answer quick, Eckert): the 4 H are key rows firing on steamer names and a header word; no clause to read |
+| 5896/0 | **filed E590** / not located in print (be-api whole-collection phrase query UNCHECKED, HTTP 502 twice) / no holder clear copy / addressee 'Secretary of State' and signer Grant are M |
+| 5896/1 | **holder clear copy 8561** (page 83, Washington clear book: 4 PM, Ft Monroe 2 Feb 1865, 'for Gen Schofield Washn or Annapolis ... sig John F Anderson Maj & A. D. C.') **and in print**, OR I/47 pt 2 p.213 (`warofrebellion431unit`, letters-only phrase hit): not filed. The decode matches the clear copy token for token on the code words: 4 PM, Schofield, Washington, Sherman ('Kitchen'), Tomorrow, Major |
+| 5908/0 | **filed E591** / the reply to Radford's 14 Feb requisition (ORN I/11 in `officialrecords10librgoog`: 'I have made a requisition for 20 torpedoes that will stand immersion. Wanted now.', Radford to Wise); the row's own wording not located / no holder clear copy (5886 is the 24 Jan row) / 11 H, several misfires |
+| 5910/1 | **filed E592** / not located (be-api UNCHECKED, 502 twice) / no holder clear copy / 4 H, clause short |
+| 5914/2 | **in print**: Grant Papers vol. 14 (Google Books ids DVLPEPsH1_oC and 1D8fAQAAMAAJ, snippet 'Gordon's Commission has not yet been adjourned I think it will be advisable to call before it the Cashier of the National Bank Norfolk', 7 of 7 query words; page not read): not filed. The decode reads 10 AM, 'Of the' and Norfolk; 'Farmer' = Norfolk is the key's, the print says the same |
+| 5928/2 | **plain**: 'I can only suggest an immediate change of operators at Hamlet', no code word (0 H under all three books): not filed |
+| 5936/2 | **filed E593** / not located (be-api UNCHECKED, 502 twice) / no holder clear copy / 4 H, clause thin (M) |
+| 5941/2 | **filed E594** / not located in print (be-api whole-collection 0 hits on two queries; Google Books vol. 14 HTTP 429, UNCHECKED; the Sherman family letters not opened) / no holder clear copy / 8 H incl. the signer 'Kitchen' = Sherman, which the clear copy 8561 supports (C check on the code word) |
+| 5942/1 | **too short to read a clause**: 10 tokens, 2 H (Maine's, Secretary of War), garbled plain words; not filed |
+
+IDs E589-E594 used; E595-E599 unused.
+
+**Meaning-shuffled control (seed 7, `fm_s65b.out`).** Under the shuffled copy of No. 1 the plain words are unchanged and every code word reads another value: E589 'animal' -> [Newbern] not [Monroe] ('about 1 AM' survives only because the time rows are not meaning-shuffled); E590 [Arizona] for [Secretary of State]; E591 [Rail Road]/[New Hampshire]/[Winchester]/[B. F. Kelly] in the places where No. 1 gives Norfolk, 5, Division, 20; E592 [Ford (-ed, -ing)] for [New York]; E593 [Encountered enemy in strong force] [Valley] for [Captain] [James]; E594 [Newbern]/[Diversion]/[Gunboat]/[Suffolk]/[Burnside] for Monroe, Grant, City Point, Goldsboro, Sherman. The coherent clause is therefore carried by the true book's code words, not by the plain text alone, except E590, whose body is plain English (the code words only give time, address and signer, M).
+
+**Print check, with what I rejected.** Letters-only phrase grep over 211 cached volumes (`fm_s65b_printcheck.out`): one real hit (5896/1, OR I/47 pt 2, above); 'Cashier of the National Bank' in Butler's Private and Official Correspondence vol. V (`privateofficialc05butl`) read in context (a 1860s letter about a certificate from the cashier of a National Bank, Pres. Cole, Capt. Johnson) and rejected as a different matter. Loose co-occurrence (`fm_s65b_cooc.out`): Monohansett occurs only in 1864 transport orders and indexes (OR I/36 pt 2, I/40 pt 3), rejected; Radford/torpedo/Ironsides windows in ORN I/10-11 and OR I/46 pt 2 read in context: Radford's 14 Feb requisition (above), his 13 Feb sinking report and a 17 Feb OR I/46 pt 2 line on a flag-of-truce boat blown up by a rebel torpedo, different messages. IA be-api whole-collection (`fm_s65b_beapi.out`, `fm_s65b_beapi2.out`, `fm_s65b_beapi3.out`): the first query, a positive control by accident of content ('dispatches for you from Major-General Sherman'), hit the Anderson telegram in the OR volumes (`warofrebellion431unit`, `warofrebellionco0047unit`) and `cu31924085376618`; Monohansett, Radford/torpedoes, Sherman/Goldsboro/Old Point queries 0 hits; the Seward, Cammann and ponchos queries got HTTP 502 on both tries, so those three whole-collection checks did not run. Google Books (`fm_s65b_gb_run1.out`, `fm_s65b_gb_run2.out`): control E531 hit vol. 13; only 5914/2 (vol. 14) hit; vol. 13 returned a Seward-telegram snippet for 5896/0 that is a different telegram; the rest HTTP 503 / 429, not retried beyond once.
+
+**Grades (decoder, H per token; C only by the clear copy 8561 for the Kitchen/Sherman group):** E589 H3, E590 H4, E591 H11, E592 H4, E593 H4, E594 H8. Several are key rows firing on plain words (E591 Sub -> [Marine], Ordnance and William are `plain:`; E594 John, Honorable `plain:`; header 'Washington' `plain-at: washington#1` on E592/E594, the known slip). `decode.py --write` then `--check`, `decode_no2.py --check`, `decode_no9.py --check` exit 0. Page numbers in the headers are the holder's titles ('Page 348' etc.), read from `sources/fortmonroe/p<pointer>.json`.
+
+**Requests.** hdl.huntington.org about 30 (25 CISOSEARCHALL + control 9678 hit, 1 dmGetItemInfo 8561, one connection drop on 5941/2a retried once by the script, the last four queries re-run in a second batch), 3.3 s apart; googleapis 5 answered of 26 sent (21 HTTP 503, 2 HTTP 429), stopped; be-api 22 requests with 8 HTTP 502, one retry round (3 more 502), stopped; archive.org none (all cached).
+
+## Remaining gaps (FM-S65B, 10 Oct 2026)
+Read so far: 11 rows examined; 6 filed (E589-E594), 1 clear copy and in print (5896/1), 1 in print (5914/2), 2 plain (5893/1, 5928/2), 1 too short (5942/1).
+- Whole-collection be-api phrase checks for E590 (Seward), E592 (Cammann), E593 (ponchos) - blocker: not-attempted; be-api answered HTTP 502 twice; next: one 3-query pass when be-api answers, ~$0.05
+- Grant Papers vol. 14 snippet sweep for E589, E591, E593, E594 and the page of the 5914/2 hit - blocker: not-attempted; googleapis answered 503/429 on 10 Oct; next: retry later under a googleapis take, ~$0.1
+- Sherman's family letters (Thorndike 1894) for E594 and Grant Papers vol. 14 p. for 27 Mar 1865 - blocker: not-attempted; not opened this session, budget spent on holder and print passes; next: one IA full-text check of `shermanletterscor00sher`-type id after a title-page check, ~$0.1
+- Image check of pages 348, 352, 364, 366, 392, 397 - blocker: not-attempted; text only, no image fetched; next: one 2400 px look per page under the hdl token, ~$0.9
+- E550 (5897/0): its clear copy is 8561, which FM65-D did not find - blocker: not-attempted; outside this brief (a verifier's correction of E550's per-row line); next: one line in AUDIT for E550, ~$0.05
+
+## Escalation (FM-S65B, 10 Oct 2026)
+- [x] siblings: 5896/1 and 5897/0 share the clear copy 8561; 5908/0 follows the 24 Jan torpedo chain (E539, E541) and Radford's 14 Feb requisition.
+- [x] clear-pages: all-pointer CISOSEARCHALL on every row (3 fresh queries on each filed candidate); clear copy 8561 found.
+- [x] known-keys: No. 1 per BOOK-FM65; No. 1 / No. 2 / No. 9 and shuffled copies compared on every row.
+- [x] print: 211 volumes exact and loose; be-api and Google Books partly (see gaps).
+- [n/a] key-rebuild: no key row edited.
+- [ ] image-check: no image read.
+- [x] retry: 502/503/429 retried once per rule, then stopped.
+Verdict: keep going: 5 internal gaps; cheapest next: the three-query be-api pass, ~$0.05
