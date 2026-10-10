@@ -5565,3 +5565,50 @@ Read so far: three of nine rows filed (E402-E404); six step-0 hits left unfiled 
 - [x] image-check: four leaves, whole filed entries read.
 - [x] retry: none needed.
 Verdict: keep going: 5 internal gaps; cheapest next: OR I/43 pt 1 and I/42 pt 3 page-image windows for E402 and E403, ~$0.4
+
+## MS18-R10 (10 Oct 2026, account 1, for LANE LEDGER-12)
+
+Job: nine unread `ms18/clean-ms18.tsv` best_book 1 rows of the sent ledger mssEC 18 (Huntington object 10074): 9823/3 9865/1 9787/1 9733/1 9883/0 9802/1 9790/1 9874/2 9779/0. Worker MS18-R10 (Sonnet), 07:46-08:0x UTC by `date -u`. Under the Wave 3 Step-0 ruling eight rows are step-0 hits and are **not filed** ("body in holder transcription"); one row (9790/1) missed step 0 and is filed as **E420** (`ciphertext.txt`; `ms18/ms18_r10_file.py`; `decode.py --write` then `--check` "reading.md is current"; `decode_no2.py --check`, `decode_no9.py --check` current). Working files: `ms18/ms18_r10_extract.py`, `ms18_r10_entries.txt`, `ms18_r10.py` + `ms18_r10_controls.txt`, `ms18_r10_step0.py/.out`, `ms18_r10_print.py/.out`, `ms18_r10_hdl.py/.out`. No row read No. 2 or No. 9.
+
+Intake gate (re-run 10 Oct 2026 07:5x UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+**Prior-work step (by hand, one line per check).** (1) own work: the nine row ids grepped in `ciphertext*.txt`, NOTES.md and AUDIT.md before work: none filed; the pointers 9733, 9779, 9865, 9874, 9883 appear in AUDIT/NOTES only as other entries of the same leaf (9874/1 = N2-GA; 9779/1 and 9780 read earlier; 9733 a forage sibling) and ROOM.md had no live claim on any of the nine. (2) Huntington transcription of the same pointer: step 0 below. (3) OR by date + addressee: only for the filed row (cached OR I/35 pt 2, I/36 pt 1, I/37 pts 1-2, I/40 pt 3 window 13-14 July 1864; 177 cached volumes phrase-grepped); not searched for the eight step-0 hits (nothing filed). (4) civil-war adapter / same-leaf siblings / newspaper of the day: not run (cap; reader files nothing for a hit).
+
+**Step 0 (Wave 3 ruling; `ms18_r10_step0.py` calls `step0_ordered.py`'s functions unchanged; (a) ordered LCS of content words, decoded No. 1 body vs the best window of the page transcription, / decoded content words; (b) same LCS against the window shuffled, 20 draws, p95; (c) decoded content words absent from the window; hit = (a) >= 0.5 and (a) > (b)).**
+| row | (a) ordered overlap | (b) p95 | hit | (c) key-dependent words (count; key meanings) |
+|---|---|---|---|---|
+| 9823/3 (19 Aug 1864 11.30 AM, McCaine at Charlestown Va; Cavalry to Muddy Branch to scout) | 0.679 (19/28) | 0.250 | HIT | 8; cavalry illinois major river scout surrender; plain absent: ed parsonlion |
+| 9865/1 (13 Oct 1864, Van Duzer to Thomas at Nashville: Pope's old regiments, Hood; with a second message for Wilson) | 0.583 (35/60) | 0.183 | HIT | 24; army confederate force general geo grant hood indiana kentucky major ohio regiment schofield tennessee thomas two |
+| 9787/1 (11 July 1864, McCaine for Hunter: junction with Howe, Wright at Edwards Ferry) | 0.619 (39/63) | 0.190 | HIT | 24; david enemy ferry force general harpers heavy hunter junction major maryland meantime potomac rear retreat soon |
+| 9733/1 (7 May 1864 11 AM, Horner for Capt. S. L. Brown: forage to Monroe, tons of hay) | 0.662 (43/65) | 0.215 | HIT | 17; captain colonel department fifty forage monroe new quartermaster three twenty virginia york |
+| 9883/0 (1 Nov 1864, for Gen. Robt Allen at Louisville: Capt. Ferry to Memphis, signed Qr Master Genl) | 0.630 (29/46) | 0.217 | HIT | 17; brigadier captain general louisville memphis quartermaster report secretary war; plain absent: ed |
+| 9802/1 (27 July 1864, Van Duzer for Gov. Johnston at Nashville: Gillem and Carl Schurz) | 0.846 (33/39) | 0.282 | HIT | 4; general johnston today |
+| 9790/1 -> filed E420 | 0.439 (18/41) | 0.195 | - | 21; david enemy ferry follow force front general hunter junction major men nineteen rebel river road twelve twenty valley |
+| 9874/2 (22 Oct 1864, Horner for Col. Brown and Maj. Van Vliet: shipments of supplies, Hilton Head) | 0.776 (38/49) | 0.245 | HIT | 11; city colonel department general major master point quartermaster; plain absent: hilton |
+| 9779/0 (8 July 1864 10 PM, McCaine for Hunter: positions of forces, Breckenridge crossed the Monocacy) | 0.524 (22/42) | 0.190 | HIT | 20; advance breckenridge cross david enemy ferry force general harpers hunter major movement position potomac report; plain absent: ed ing |
+
+Eight hits, nothing filed: 9823/3, 9865/1, 9787/1, 9733/1, 9883/0, 9802/1, 9874/2, 9779/0 -- **body in holder transcription**. Of their (c) words, the ones that name a person, place, unit or number the transcription does not give (a counted contribution for a verifier, D1 at most, not a reader's filing): 9823/3 Illinois (the '[8] [Illinois] Cavalry'), Major (Tappan's rank, M); 9865/1 Thomas, Schofield, Grant, Hood, Ohio, Indiana, Kentucky, Tennessee, Nashville (the transcription gives the code words, not the names); 9787/1 Hunter, Howe, Maryland Heights, Harpers Ferry, Potomac; 9733/1 Monroe, Virginia, Colonel Biggs, 27,000 bushels and 350 tons (numbers, M), Capt. S. L. Brown; 9883/0 Allen, Louisville, Memphis, Secretary of War (M); 9802/1 Johnston; 9874/2 Brown, Van Vliet, City Point; 9779/0 Hunter, Harpers Ferry, Breckenridge. The ruling's 0.5 line cuts a continuum: 9779/0 sits at 0.524 and the one miss, 9790/1, at 0.439 (and is in print, below).
+
+**Book per row (whole-entry vocabulary share No.1 / No.2 / No.9; `ms18_r10.py`).** 9823/3 .42/.28/.11; 9865/1 .43/.37/.17; 9787/1 .48/.47/.27; 9733/1 .44/.30/.14; 9883/0 .35/.39/.14; 9802/1 .30/.28/.18; 9790/1 .58/.46/.38; 9874/2 .22/.27/.08; 9779/0 .52/.41/.20. The share is not discriminating on 9787/1 (within 0.01 of No. 2), 9883/0 (No. 2 higher by 0.04), 9802/1 (0.02) and 9874/2 (No. 2 higher by 0.05); the meaning-shuffled copies read the same H count as No. 1 (e.g. 9790/1 H28 vs H29), so the count control cannot fail and licenses nothing: every row was read by sense (No. 1 reads Hunter, Wright, Thomas, Quartermaster, Monroe as clauses; No. 2 and No. 9 read Butler/Cairo/Rifle-pits nonsense), as in MS18-R8.
+
+**Filed row E420 (9790/1, 13 July 1864 3 PM, Halleck to Hunter, enemy left our front, Wright by the River road with 12,000 men): in print, OR I/37 pt 2 (IA warofrebellion372unit), word for word, C; page 291 or 292 by the OCR running head, not read on a page image.** Phrase grep over 177 cached volumes: six of eight phrases found, all in warofrebellion372unit only ('seem to be moving toward Edwards Ferry', 'form a junction with him at that place', 'about the same as that you encountered in the valley', 'left our front in the night'); 'over 20,000' and 'why so slow' (a ledger null group) not as written. The same sentence is also in the printed Halleck to Ord of 13 July 4 p.m. ('The enemy left here last night, and seems to be moving toward Edwards Ferry'), a related telegram, not this one. Phrase grep: none in warofrebellion403unit (OR I/40 pt 3), whose 13-14 July headings carry other telegrams. Image check: leaf 9790 at 2400 px (scratch), the whole entry read on the crop: the transcription matches line by line; 'stephen world' = [In the] [Valley] by the key. Grades E420: H 28, C 1 by the decoder, the print makes the body C by comparison; names noted M (Halleck's name is the print's); no I.
+
+**Holder clear-copy search (one take, 5 requests: 4 CISOSEARCHALL, p16003coll11, all pointers; positive control 'Inspector Inquiry evidence' returned 9678).** Three queries on clear words of E420 returned 0 hits. Not run for the eight step-0 hits (their body is the holder's own transcription). No clear copy of E420.
+
+Requests: hdl.huntington.org 5 (4 CISOSEARCHALL, 1 IIIF leaf, all 200, one take released); other hosts 0 (cached OR text only). No judge spec exists for this ledger (rule 7: none run).
+
+## Remaining gaps (MS18-R10, 10 Oct 2026)
+Read so far: 9 of 9 rows handled (1 filed, 8 step-0 hits not filed); the one filed row is graded C against the print.
+- E420 printed page (291 or 292) - blocker: not-attempted; OCR running head only; next: IA page read of OR I/37 pt 2, ~$0.1
+- the eight step-0 hits' (c) words (names of Thomas, Schofield, Hood, Hunter, Brown, Van Vliet, Allen, Johnston, Breckenridge and the numbers) - blocker: not-attempted; they are a verifier's counted contribution under the ruling, not a reader's filing; next: a first verifier decides, ~$0.3 per entry
+- eye check of the leaves for the eight step-0 hits - blocker: not-attempted; cap; next: `tools/iiif_lines.py --image` crops, ~$0.2 each
+
+## Escalation (MS18-R10, 10 Oct 2026)
+- [x] siblings: same-leaf rows are other telegrams (9874/1 = N2-GA, 9779/1, 9885 and others); one entry per leaf read; no sibling clears a gap.
+- [x] clear-pages: page text for all nine rows read on disk (sources/mssEC18); hdl clear-copy search on the filed row (3 queries + control), none.
+- [x] known-keys: No. 1, No. 2, No. 9 and a meaning-shuffled copy on every row (count control non-discriminating by construction, read by sense).
+- [x] print: 177 cached volumes phrase-grepped and the 13-14 July 1864 window searched for the filed row: found in OR I/37 pt 2.
+- [n/a] key-rebuild: no key row edited.
+- [x] image-check: the filed row's leaf read on the whole entry; the eight step-0 hits not opened (nothing filed).
+- [x] retry: none needed.
+Verdict: keep going: 3 internal gaps (E420 page number; a verifier's counted (c) words for 8 hits; eye checks); cheapest next: IA page read for E420, ~$0.1

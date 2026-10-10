@@ -2159,5 +2159,11 @@ Code-word tokens: H 20.
 
 Code-word tokens: H 48, C 1.
 
-Totals over the 338 entries: H 5953, C 84, I 25, M 41, S 18, U 10.
+**E420 | Page 130 | 9790 | mssEC 18 (obj 10074, pointer 9790; printed page 124), 13 July 1864 Washington (hour 3 PM), R. R. McCaine (operator), for Maj. Gen. David Hunter, signed [Halleck] (ledger 'why so slow' after the signature words; print H. W. Halleck, Major-General and Chief of Staff): the enemy left our front in the night and seem to be moving toward Edwards Ferry; General Wright will follow by the River road with about 12,000 men; it is hoped that your forces and those of General Howe will form a junction with him at that place; the rebel force is probably about the same as that you encountered in the Valley and is estimated at over 20,000; printed OR I/37 pt 2 (before the head of Boreman's letter, p.291 or 292) (MS18-R10; row 9790/1; leaf image-read at 2400 px (whole entry))**
+
+[Washington] {date: Apr 4} {time: 8 PM} For [Maj Gen W. T. Sherman] [Nashville] [.] The [11] and [12] [Corps] will be consolidated in to the first [Corps] [Maj Gen Joseph Hooker] [Command = Er (-ed, -ing)]ing [.] [Maj Gen O. O. Howard] will [Command = Er (-ed, -ing)] the [4] [Corps] [,] [Maj Genl J. M. Schofield] the [23] [.] Relieve [Maj Gen Gordon Granger] [,] as sign [Maj Gen H. W. Slocum] to [Command = Er (-ed, -ing)] [Vicksburg] District and Newton to a [Division] or whereever else you think best  {tail: [signed] [Maj Genl U.S. Grant] Do not split No 5 NY}
+
+Code-word tokens: H 30.
+
+Totals over the 339 entries: H 5983, C 84, I 25, M 41, S 18, U 10.
 <!-- decode.py: derived block ends -->
