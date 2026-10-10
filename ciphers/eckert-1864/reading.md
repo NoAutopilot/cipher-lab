@@ -2309,5 +2309,65 @@ Geo D Sheldon Ft Monroe {time: 5.30 PM}  {tail: [signed] [.] [2] light draft ste
 
 Code-word tokens: H 14.
 
-Totals over the 363 entries: H 6335, C 94, I 25, M 46, S 20, U 10.
+**E525 | Page 324 | 5868 | mssEC 25 (obj 5952, pointer 5868), 7 Jan 1865 Baltimore, received at Ft Monroe (header 'Geo D. Sheldon Ft Monroe Va.'): the Baltic left for Monroe before the order given from Washington could be countermanded; coal her there and return her to Annapolis for troops; it is impossible for her to come up here; reads as signed R. M. Newport, Colonel and Quartermaster (FM65-C; row 5868/0)**
+
+Geo D. Sheldon Ft Monroe Va. [Baltimore] {time: 3 PM} [7] for [Colonel] Are see  {tail: [signed] sheaf [Quartermaster] [.] the [Chattahoochee] got off for [Monroe] before I could counter manned the order given from [Washington] to send her there [.] she had better coal there and return to Annapolis where she can take [Troops] [.] it is impossible for her the come up here let me know what orders you give her [Captain] [signed] are M new port . [Colonel] [Quartermaster] J. W. [Ferry]}
+
+Code-word tokens: H 18.
+
+**E526 | Page 323 | 5867 | mssEC 25 (obj 5952, pointer 5867), 9 Jan 1865 Ft Monroe, Sheldon to J. H. Emerick, City Point: 'Add to [Ingalls'] message' (plain 'ring galls'): no other vessels of forage here; no troops arrived nor sailed; has not seen General Abbott; by direction of the Quartermaster, signed William L. James, Captain and A.Q.M. (M for the signature) (FM65-C; row 5867/2; short, 34 tokens)**
+
+J. H. Emerick City Point Add to ring galls message after no other vessels of [Forage (-ed, -ing)] here [.] No [Troops] arrived nor sailed [.] Have not seen [General] Abbott [.] By direction Sheaf [Quartermaster]  {tail: [signed] [100] L James [Captain] A. [Quartermaster] Geo. D. Sheldon}
+
+Code-word tokens: H 10, S 1.
+
+**E527 | Page 325 | 5869 | mssEC 25 (obj 5952, pointer 5869), 12 Jan 1865 Ft Monroe, Sheldon to Maj. Eckert, Washington: 'The following is forwarded to the War Department for approval': a telegram from Eastville, January 11, to Major George J. Carney, Supt. of Negro affairs, Norfolk: [Butler] is relieved, I think I will resign, what are you going to do; signed Frank J. White, Lieut. [Colonel] and A.A.G. (FM65-C; row 5869/1)**
+
+Maj. Eckert , Wash'n. The [Follow (-ed, -ing)]ing is forwarded to war [Department] for approval [.] East ville January [11] to [Major] George J Carney Supt. [Artillery] affairs [Norfolk] [.] [Maj Gen B. F. Butler] is relieved I think I will resign ditto What are you going to do  {tail: [signed] Frank J [Report] Lieut. [Colonel] and A A G Janeway July August and finis . Geo. D. Sheldon}
+
+Code-word tokens: H 12.
+
+**E528 | Page 326 | 5870 | mssEC 25 (obj 5952, pointer 5870), 12 Jan 1865 Ft Monroe, Sheldon to S. H. Beckwith, City Point, for [Brig. Gen.] Ingalls (plain 'Ring galls'): no forage vessels since Captain James telegraphed of today; the Ariel and General Sedgwick have arrived from Baltimore with troops; I do not know what others are to come nor any reason for delay; signed by a Colonel and Quartermaster (name not in the row) (FM65-C; row 5870/0)**
+
+S. H. Beckwith City Point {time: 3.30 PM} for [Brigadier General] Ring galls [.] No [Forage (-ed, -ing)] vessels Since [Captain] James [Telegraph (-ed, -ing)] of [Today] [.] The Ariel and [General] Sedgwick have arrived from [Baltimore] with [Troops] [.] I do not know what others are to come nor any reason for delay [Colonel]  {tail: [signed] [Quartermaster] Geo. D. Sheldon}
+
+Code-word tokens: H 15.
+
+**E529 | Page 327 | 5871 | mssEC 25 (obj 5952, pointer 5871), 12 Jan 1865 Ft Monroe, Sheldon to Maj. Eckert, Washington, for the Secretary of the Navy: Mr. Ericsson writes he has the Department's approbation for the Puritan's shaft being put in here; shall I get ours out; the blockade runner arrived 4 PM; Niagara and a second vessel to leave Beaufort Wednesday night; buoys lighted; weather favourable; signed John Rodgers (plain 'John Rod jars'; the decoder prints [Maj Genl U.S. Grant] for 'John', a misfire) (FM65-C; row 5871/0)**
+
+Maj. Eckert [Volunteer] [Norfolk] [13] for [Secretary of Navy] [Washington] [.] mister Ericsson writes he has [Department]'s approbation for puritans Shaft being put in here [.] Shall I get ours out [.] Block Aid runner {time: 4 PM} arrived [.] [D. D. Porter] and [Army] to leave [Beaufort] Wednesday night pause buoys toby lighted pause weather here favor able since  {tail: [signed] [Maj Genl U.S. Grant] Rod jars {time: 9.30 AM} Geo. D. Sheldon}
+
+Code-word tokens: H 17.
+
+**E530 | Page 327 | 5871 | mssEC 25 (obj 5952, pointer 5871), 13 Jan 1865 Ft Monroe, Sheldon to S. H. Beckwith, City Point, for [Brig. Gen.] Rawlins, Chief of Staff: the Sedgwick (500 and 1 men), Ariel (900 and 73 men) and Ashland (200 and ... men) have sailed in perfect order, Mr. Morgan (FM65-C; row 5871/1)**
+
+S. H. Beckwith City Point {time: 12} for [Brigadier General] Rawlins [Chief of Staff] [.] The Sedgwick [500] and [1] [Men] [,] Ariel [900] and [73] [Men] [,] and [Alabama] [200] ditto ditto [Men] have sailed in perfect order Mr Morgan . Geo. D. Sheldon
+
+Code-word tokens: H 19.
+
+**E531 | Page 329 | 5873 | mssEC 25 (obj 5952, pointer 5873), 15 Jan 1865 Ft Monroe, Sheldon to S. H. Beckwith, City Point, for [General] Rawlins [Chief of Staff]: the Oriental (700 and 78 men) has sailed; the Suwo Nada (900 and 30 men) will start in half an hour; this makes 6 vessels, 5100 and 9 men, all as ordered; Mr. Morgan, [Colonel], &c. (FM65-C; row 5873/1)**
+
+S. H. Beckwith City Point {time: 4 PM} [General] Rawlins [Chief of Staff] [.] weasler Oriental [700] and [78] [Men] has sailed [.] The Survo Nada [900] and [30] [Men] will start in half an hour This makes [6] vassals [5100] and [9] [Men] all as ordered Mr. Morgan [Colonel] &c. Geo. D. Sheldon
+
+Code-word tokens: H 22.
+
+**E532 | Page 333 | 5877 | mssEC 25 (obj 5952, pointer 5877), 16 Jan 1865 City Point, S. H. Beckwith to Sheldon at Ft Monroe: [to the Chief Quartermaster, Colonel Webster (the row's 'webb Stir', M)] transportation for 4000 men, 50 six-mule teams complete, with 15 days' rations, water and coal; what time can this transportation be here, answer; signed G. W. Bradley, Colonel and Chief Quartermaster; S. H. Beckwith (FM65-C; row 5877/0)**
+
+Geo. D. Sheldon Ft Monroe {time: 4.30 PM} [Colonel] [Reinforcements] Stir [.] [Transportation] for [4000] men [,] [50] [,] [6] mule teams complete ditto [15] days [Rations] water and coal [.] what time can this [Transportation] [Report] here answer  {tail: [signed] G. W Bradley [Colonel] and Chief [Quartermaster] end S. H. Beckwith}
+
+Code-word tokens: H 19.
+
+**E534 | Page 333 | 5877 | mssEC 25 (obj 5952, pointer 5877), 16 Jan 1865, two messages in one row: (1) Ft Monroe, Sheldon to S. H. Beckwith, City Point, for Colonel G. W. Bradley: the Dupont, Thames, Haze and Sentinel are all we have; these are sufficient for [1300] men and the teams; cannot say when I can obtain the remainder; have you nothing at City Point; signed a Colonel and Quartermaster; (2) City Point, Beckwith to Sheldon, for Colonel M. P. Small, C.S., Monroe: General Grant directs that you put 15 days' rations on such vessels as the Quartermaster designates; the Quartermaster will inform you how many men each vessel will carry; ditto me as each vessel is rationed and the number of men; Mr. Morgan, Lieut. [Colonel]; S. H. Beckwith (FM65-C; row 5877/2)**
+
+S. H. Beckwith City Point {time: 7 PM} for [Colonel] G. W. Bradley [.] Dupont Thames Haze and Sentinel are all we have [.] These are sufficient forth teams and [1300] [Men] [.] Cannot say when I can obtain the remainder ditto Have you nothing at [City Point]  {tail: [signed] [Colonel] and [Quartermaster] Geo. D. Sheldon City Point 16 / 65 Geo. D Sheldon Ft Monroe {time: 8.30 PM} [Colonel] M. P Small C S [Monroe] [.] [Maj Genl U.S. Grant] directs that you put [15] days [Rations] on such vessels as the [Quartermaster] desegrates [.] the [Quartermaster] will [Information] you how many [Men] each vassal will Carry [.] ditto me as each vassal is [Rations] Ed and the number of [Men] for which shes ditto [signed] Mr Morgan Lieut. [Colonel] S. H. Beckwith}
+
+Code-word tokens: H 29.
+
+**E535 | Page 334 | 5878 | mssEC 25 (obj 5952, pointer 5878), 17 Jan 1865 Ft Monroe, Sheldon to S. H. Beckwith, City Point, for [Brig. Gen.] J. A. Rawlins: 3 of the vessels returned from the expedition disabled; enough are here to carry 3500 men, 50 wagons and animals; more expected; every effort will be made to have all the vessels ready by tomorrow noon; the Quartermaster at City Point will be telegraphed when each vessel leaves here; will the Fort Fisher news change your instructions in regard to mortars, troops or ammunition; signature block as filed 'Horace Porter Lieut [Colonel] and A.D.C.' (who speaks the clause is M) (FM65-C; row 5878/1; BOOK-FM65 test row: clause reused, not re-derived)**
+
+S. H. Beckwith City Point {time: 11 AM} for [Brigadier General] J. A Rawlins [Chief of Staff] [.] [3] [Of the] vessels returned [From the] [Expedition] disabled [.] enough are here to Carry [3500] [Men] [50] wagons and [100] and [50] [Monroe]'s [.] more expected [.] every effort wilby made to have all the vessels that are here ready by tomorrow noon [.] The [Quartermaster] at [City Point] wilby [Telegraph (-ed, -ing)]d when each vessel leaves here [.] will the [Fort] Fisher news change your instructions in regard tooth mortars [Troops] or [Ammunition]  {tail: [signed] [Weldon] Porter Lieut [Colonel] and A D See . Geo. D. Sheldon City Point Jan. / 65 Geo. D. Sheldon Ft Monroe}
+
+Code-word tokens: H 31.
+
+Totals over the 373 entries: H 6527, C 94, I 25, M 46, S 21, U 10.
 <!-- decode.py: derived block ends -->
