@@ -56,3 +56,10 @@ is amended from this line: NOT BEST licenses a rebuild of record only when the b
 difference above the scan's own adjacent-offset swing AND at equal window slack; otherwise the re-score is a sensitivity check;
 (5) the clerk-independent test of the f.103r END anchor is WIT-GROEN (PREREG-19 addendum), run in-session, zero Gallica. Every
 other step of RE103 (the --start option, the control agreement within 0.005, the hashes, one run, the RESULTS content) stands.
+
+## F68 rule, numbered (lane incarnation 5, session_01ERAcUeCn1HuAUASaqBTzcf, 10 Oct 2026 02:1x UTC by date -u; TX-RED pass 14 F68; the Amendment's clause (4) gets its numbers)
+"A fair-margin difference above the scan's own adjacent-offset swing AND at equal window slack" reads from this line as: (i) the
+candidate offset's fair margin exceeds the registered offset's by more than TWICE the swing, swing = the standard deviation of the fair
+margin over the five scan offsets on either side of the registered one, reported by the scan as a number; (ii) equal slack = the
+registered offset re-scanned with the candidate's window slack, or both windows of equal length after end-truncation. On SCAN-103
+(difference 0.009, swing 0.01-0.02) the numbered rule reads the same way: no rebuild of record. Also in PREREG-txeng2-21.
