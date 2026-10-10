@@ -2225,7 +2225,7 @@ J. W. [Ferry] Baltimore {time: 3.30 PM} for [Colonel] Are M Newport Sheaf [Quart
 
 Code-word tokens: H 16.
 
-**E516 | Page 316 | 5860 | mssEC 25 (obj 5952, pointer 5860), City Point 6 Jan 1865 10 AM, S. H. Beckwith to Sheldon at Ft Monroe: last night a large package of papers containing Gen. Butler's report of the Wilmington expedition was lost from an overcoat pocket -- the only two places the coat was off were the theatre and the hotel kept by Mr Phillips; please have inquiries made at both (FM65-B; row 5860/1; text only)**
+**E516 | Page 316 | 5860 | mssEC 25 (obj 5952, pointer 5860), City Point 6 Jan 1865 10 AM, S. H. Beckwith to Sheldon at Ft Monroe: last night a large package of papers containing Gen. Butler's report of the Wilmington expedition was lost from an overcoat pocket -- the only two places the coat was off were the theatre and the hotel kept by Mr Phillips; please have inquiries made at both (FM65-B; row 5860/1; image-read at 2400 px, the entry's lines match the transcription)**
 
 Geo D Sheldon Ft Monroe {time: 10 AM} [6] [Brigadier General] Shipley [Norfolk] [.] last night I lost some place [,] from my overcoat [Cross (-ed, -ing)] [,] a large package of papers containing [Maj Gen B. F. Butler]'s [Report] [Of the] [Wilmington] [Expedition] [.] the only [2] places I had my coat off was [At the] theatre & [At the] [Longstreet] Kept by Mr Phillips [.] willow be good enough to have inquiries maid at both places and weather one the result  {tail: [signed] [Maj Genl U.S. Grant] didn't travel very much SH Beckwith}
 

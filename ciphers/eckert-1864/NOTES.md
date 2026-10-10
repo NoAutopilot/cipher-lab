@@ -6199,3 +6199,48 @@ Read so far: 9 of 12 filed (E500 E502 E504-E509 E511); 2 holder clear copies (58
 - [ ] image-check: not run; next above.
 - [x] retry: IA 503 retried once.
 Verdict: keep going: 4 internal gaps; cheapest next: image crop of pointer 5851, ~$0.4
+
+## FM65-B (10 Oct 2026, account 1, for LANE LEDGER-13)
+
+Twelve 1865 Fort Monroe rows (Huntington object 5952 = mssEC 25), pointers 5856-5866, book No. 1 per BOOK-FM65 (its prediction table lists each as No. 1 by month or header; step-0 figures there: 5856/1 0.650/0.250, 5857/1 0.673/0.245, 5858/0 0.738/0.262, 5858/1 0.500/0.233, 5860/1 0.691/0.218, 5860/2 0.571/0.257, 5861/1 0.562/0.281, 5861/2 0.769/0.269, 5864/1 0.667/0.256, 5866/0 0.646/0.229, 5866/2 0.606/0.242; 5856/0 is a BOOK-FM65 test row, No. 1 weak). Under the wave-2 RULING a step-0 hit is a non-test on this ledger. Intake gate (09:2x UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Own work: no row in ciphertext*.txt before this job (grep). Text as transcribed by the volunteers; image read for page 316 only (E516 and the unfiled 5860/2). Novelty not classified (rule 10). Scripts and outputs in `fortmonroe/`: `fm65b_dump.py`, `fm65b.py` + `fm65b_controls.txt` (three books + shuffled copies), `fm65b_step0.py/.out` (book and one meaning-shuffled copy), `fm65b_hdl.py/.out`, `fm65b_hdl2.py/.out`, `fm65b_printcheck.py/.out`, `fm65b_cooc.py/.out`, `fm65b_beapi.py/.out`, `fm65b_file.py`, `fm65b_9153.txt`. Prior-work tool not run separately; its checks were done by hand: own work (grep), holder pointers (CISOSEARCHALL), print (below).
+
+**Step 0 (a)/(b) and the shuffled-copy step 0, information only:** all 12 rows HIT under No. 1 (a 0.50-0.77 vs p95 0.25-0.40) and all 12 HIT under the meaning-shuffled copy (0.53-0.83): the non-test BOOK-FM65 described, reproduced (`fm65b_step0.out`).
+
+| row | filed | per-row line |
+|---|---|---|
+| 5856/0 | **E512** | not located in print; no holder clear copy (hits 5855, 5856 = neighbour page and own page); No. 1 weak (one clause); M: [McMinnville], Seneca read [Fear] (misfire); Winants, Eliza Hancox, Seneca are steamers (IA Bard / OR I/40 pt 2 mention the boats only) |
+| 5856/1 | no | **no book reads a clause in the row's own word order** (No. 1 gives [New York] ... [Secretary of War] ... nonsense; shuffles equal). Same message at **pointer 9153 block 1** (Washington telegram book p.259, 5 Jan 1865 10 AM, cipher words in sentence order): No. 1 decode `[Washington] 10 AM [5] for Horn Simeon Draper Collector of [New York] on board steamer Grenada [Monroe]. am ready to leave here but want to know your arrangements. what invited [persons] have you and how many can I take. I shall want [Qr Master Genl] and Surgeon [General] ... [signed Secretary of War] Has [..] arrived answer quick` (H 14, M for the tail). 40 of the row's 48 words occur in 9153's 56, in a different order and with different filler words: a second encipherment or transposition of one message; not a clear copy. Lead (M): Stanton's 5-6 Jan trip to Savannah (see 5861/2) |
+| 5857/1 | **E513** | not located; no clear copy (query 'Binney Brice' hits 5829 and 9913, Dec 1864 Brice/Binney cipher copies, other telegrams) |
+| 5858/0 | **E514** | not located; no clear copy |
+| 5858/1 | **E515** | not located; no clear copy; C support for the addressee from 8508 ('RM Newport Col & chf qm'); 9153 block 2 (same vessels ordered to Baltimore, a different telegram) |
+| 5860/1 | **E516** | not located; no clear copy; image-read, transcription confirmed; context only: Grant to Leet 8 Jan, OR I/46 pt 2 p.68 / Butler Corr. V p.476, a different telegram |
+| 5860/2 | no | **in print**: OR ser. I vol. 47 pt 2, 'Fort Monroe, Va., January 6, 1865 -- 2.30 p.m. (Received 6.10 p.m.) Bvt. Brig. Gen. D. C. McCallum, Superintendent of Military Railroads: The Secretary of War directs that you proceed without delay to report in person to General Sherman at Savannah, or wherever he may be found. E. D. Townsend' (IA `warofrebellion014702rootrich`, `warofrebellion431unit` whose djvu header reads 'V.47 .2' although earlier repo notes call that id I/43 pt 1, and two more copies via be-api; page ~106 inferred from the djvu running head, page image not read). Matches word for word, including 2.30 PM; image page 316 read |
+| 5861/1 | **E517** | not located; no clear copy; antecedent 8508 (Baltic at Swann Point) |
+| 5861/2 | no | **first message: holder clear copy, pointer 8508** (Page 30, '620 PM Ft Monroe Jan 6. 1865 ... Mrs Ellen H. Stanton Washn arrived here safely will remain until tomorrow morning & then start for Savannah Edwin M Stanton'): C check on No. 1 (Brutus = Secretary of War, 'Germany' = Savannah). **Second message (Beckwith to Sheldon, 'ascertain if Butler has left Monroe') has no clear copy and is not in print; it is unfiled only because the ruling holds a row that has a clear copy** -- see gaps |
+| 5864/1 | **E518** | not located; no clear copy; 8510 is Elias Smith's own request to Dana, a different telegram |
+| 5866/0 | **E519** | not located; no clear copy; 8508 is the antecedent (Newport 3.45 PM) and confirms Baltic and Annapolis coal |
+| 5866/2 | **E520** | not located; no clear copy; 7682 (Ingalls 4 Jan) is a related different telegram |
+
+**Print check, with what I rejected.** Phrase grep over 177 cached volumes (`fm65b_printcheck.out`): hits for 5860/2 (above), for 'General Butler's report of the Wilmington expedition' (Butler Corr. V, the 8 Jan Grant telegram, different text, rejected), 'keep me posted' and 'I have not heard from them since' (generic phrases in many volumes, rejected after reading none carries the row's content). Co-occurrence search (`fm65b_cooc.out`): Winants/Hancox in OR I/40 pt 2 (13 June 1864 boat list) and Butler's Dec 1864 fleet orders (Winants, Porter tug, Baltic): context, not the text; the other co-occurrence lines are empty. IA be-api whole-collection (13 queries incl. a positive control, 1.8 s apart): control returned 7 hits (OR I/47 pt 2 copies); 'Winants is hardly capable', 'not mustered for December', 'consider the order as countermanded', 'Elias Smith Tribune', 'soonest ship troops', and the Wilmington-package query returned 0; the loose queries returned unrelated books (Bard steamer catalogues confirming Eliza Hancox, Amanda Winants and Seneca as steamers; a law journal for 'dispense with Blackstone'), all rejected. Not covered: OR I/46 pts 1-3 by page, ORN I/11-12, Butler Corr. V, Grant Papers 13-14 page by page (only the be-api snippets above), the press of the day beyond be-api: so 'not located' is a search result only.
+
+**Grades (decoder, H per token; no C beyond the checks above):** E512 H21, E513 H17, E514 H12, E515 H16 (header-side counts in reading.md), E516 H21, E517 H14, E518 H16 of 33 content words (approx), E519 H22, E520 H18; M by hand as listed in each entry's note (plain words read by key rows: Baltic -> [Chattahoochee] in E515/E517/E519/E520, Hotel -> [Longstreet], Amos -> [New York], Seneca -> [Fear]). `decode.py --write` then `--check`, `decode_no2.py --check`, `decode_no9.py --check` exit 0.
+
+**Requests.** hdl.huntington.org 25 (16 CISOSEARCHALL incl. control 9678 once, 7 dmGetItemInfo, 2 IIIF), all 200; one take line overlapped FM65-C's open take for 0 requests and was withdrawn in ROOM; be-api 25 (two sets, both 1.8 s apart).
+
+## Remaining gaps (FM65-B, 10 Oct 2026)
+Read so far: 9 of 12 rows filed (E512-E520), 1 in print (5860/2), 1 first-message clear copy (5861/2), 1 without a clause in its own order (5856/1).
+- 5861/2 second message (Beckwith asks whether Butler has left Monroe) - blocker: not-attempted; ruling holds a row with a clear copy but the clear copy covers only the first message; next: orchestrator rules whether to file the second message as E521, ~$0.05
+- 5856/1 and pointer 9153 blocks 1-2 - blocker: not-attempted; 9153 reads under No. 1 (X1/X2 in `fm65b_9153.txt`) but is outside this brief's rows; next: file 9153 blocks as entries and test whether 5856/1 is a word transposition of 9153 block 1, ~$0.4
+- E512 first message (McMinnville, Seneca) and E514 (Leary, Blackstone) - blocker: open-codes; unread code words in the opening; next: sibling window by date (4-5 Jan) with 5855/5854 rows from FM65-A, ~$0.2
+- image check of pages 312-314, 317, 320, 322 - blocker: not-attempted; text only for those eight filed rows; next: one 2400 px look per page under the hdl token, ~$0.6
+- print pages: OR I/47 pt 2 p.106 page image, OR I/46 and ORN by page - blocker: not-attempted; outside this brief's cap; next: djvu page read, ~$0.1
+
+## Escalation (FM65-B, 10 Oct 2026)
+- [x] siblings: 5855, 5866 pages, 9153, 8508, 8510, 7682, 5829, 9913 seen.
+- [x] clear-pages: all-pointer CISOSEARCHALL on every row; clear copies 8508 (first half of 5861/2).
+- [x] known-keys: three books plus shuffled copies per row.
+- [x] print: 177 cached volumes, be-api whole-collection with a positive control; hits rejected as listed.
+- [n/a] key-rebuild: no key row edited.
+- [x] image-check: page 316 only.
+- [n/a] retry: no step failed.
+Verdict: keep going: 5 internal gaps; cheapest next: orchestrator ruling on 5861/2's second message, ~$0.05
