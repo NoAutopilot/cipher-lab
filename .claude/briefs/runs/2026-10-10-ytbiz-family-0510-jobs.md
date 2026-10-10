@@ -130,3 +130,20 @@ Read ONLY NOTES head (no. 92 established facts), "## OBRED-187", ciphertext.txt,
    design (nomenclator with name codes + a syllable/letter table?) as a ranked list with the test each needs and its matched control.
 4. NOTES "## OBRED-DP", gaps updated, gaps_check. Name the next attack step and its cost; do not start it. Report what was found and where it
    was not found; do not classify novelty.
+
+## Wave 4 results (07:0x UTC)
+OBRED-S1 (1.97): inv. 6016 orders 1-259, 170 unlooked scans at 400 px, controls 51/51: no further numeral block; 111 = Brederode, Hanau 22 Sept
+1603 (plain). OBRED-DP (2.52): Resolutien S.G. XIII: 39 Brederode hits (control passes), no cipher/decipherment note; design_prior excludes
+letter-for-letter and pure code (multi-sign nearest); PREREG ae9dd4a8d: G2 PASS -- all 33 no. 92 values >= 600 stand alone (name band ~588-751,
+p = 0.0001); G1 FAIL -- one shared ordered pair (529 433), p = 0.092; lower table 30-507 (146 tokens, 113 distinct) spells words; crib test
+unfalsifiable at N = 180 -> the gap is too-short; next = more text in this code.
+
+## Wave 5 (07:3x UTC 10 Oct)
+
+### OBRED-S2 (Sonnet, cap 3, box 100 min, NA <= 190 requests): inv. 6016 orders 351-624, every unlooked scan
+As OBRED-S1 exactly (three controls per sheet incl. CTRL-PS from scan 187; 400 px, >= 2.0 s; NA take/release; <= 8 re-looks at 1200 px), for the
+182 scans of 351-624 not in images/6016_screen.tsv. Output `images/6016_screen_s2.tsv`; every hit with docket/date/sender (M) and its 1200 px
+image committed. Read ONLY NOTES "## OBRED-6016", "## OBRED-S1" and the gaps. NOTES "## OBRED-S2", gaps updated, gaps_check. Then (same NA take,
+<= 12 more requests): for each of inv. 6017-6024 ("Liassen Agent Brederode", 1.01.02, 1614-1637) and the 1605 Swiss-mission dossier (find its
+invnr in the 1.01.02 EAD on disk or one catalogue request), record digitised y/n, METS id and scan count from the item page's embedded
+drupal-settings-json (CLAUDE.md host table) -- a table `nl_brederode_lias.tsv`, no image fetches. Report counts and every hit.
