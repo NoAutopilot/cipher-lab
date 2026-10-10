@@ -61,3 +61,5 @@ LEDGER-15)"; decode x3 --check exit 0; file_shrink_guard. Report what was found 
 
 Held for wave 2: first verifiers on the rest of the unaudited filings (1865: E509 E511 E514 E518 E526 E527 E542 E543 E546 E548 E550 E553 E554 E558 E562 E564
 E566 E569 E571 E574 E577 E506 E508 E521; 1864: E441 E472 E465 E447 E442 E474 E471 E470 E468 E443 E473 E445 E469 E466 E446 E448); a FIX job on wave 1's s.5.
+
+(12:47 UTC 10 Oct by date -u: wave 1 spawned with source_url: FV-L15a session_01WNiDGdC52vxM1PiiB8Rcw8, FV-L15b session_01JHZ65eV5Fe3DSuTujnfSc4, FV-L15c session_01EEFyxEGFkG9NEjAqivwrCh, FV-L15d session_011HBDTUbE69JkJPExoyA9j8, FV-L15n session_01CFSNt8CD3vxPQzKNBLP61e, R-5855 session_013HSZrwAokYtQpqFJzHaaKx.)
