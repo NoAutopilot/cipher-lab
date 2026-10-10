@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L30	48	n	L	yes	hooked loop form between tz and tz#
+f102r_L30	49	6	L	yes	looped descender shape
+f102r_L31	8	b	M	yes	barred b after m
+f102r_L31	9	r	L	yes	r-like stroke before y
+f102r_L31	11	NONE	L	yes	only one r before y s
+f102r_L31	17	r	M	yes	r y s trigram after x
+f102r_L31	19	NONE	M	yes	single r in trigram
+f102r_L31	26	o	M	yes	closed loop o
+f102r_L31	36	r	M	yes	r y s after #
+f102r_L31	38	NONE	M	yes	single r
+f102r_L31	45	r	M	yes	r y s after #
+f102r_L31	47	NONE	M	yes	single r
+f102r_L31	49	g	M	yes	g with tail after s
+f102r_L32	3	c	L	yes	open c after m
+f102r_L32	5	S	L	yes	tall long-s stroke before #
+f102r_L32	11	Z	L	yes	x-like looped sign between m

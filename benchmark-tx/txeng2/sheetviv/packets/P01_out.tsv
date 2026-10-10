@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L01	2	:	L	yes	small dot after x, faint
+f102r_L01	5	l	M	yes	loop l before n o n
+f102r_L01	26	L	M	yes	angular L after c
+f102r_L01	29	r	M	yes	humped r before y m
+f102r_L01	32	e	M	yes	e-like loop before s
+f102r_L01	37	r	M	yes	r ligature before y m
+f102r_L01	40	z	M	yes	z-like with bar after y m
+f102r_L02	4	r	M	yes	r before y m a
+f102r_L02	10	t	M	yes	crossed t shape
+f102r_L02	11	tz	L	yes	t-with-curl shape
+f102r_L02	21	z	M	yes	barred z not R
+f102r_L02	31	p	M	yes	descender p
+f102r_L02	38	R	M	yes	tilde-topped r after f
+f102r_L03	15	r	M	yes	two-hump r before y s
+f102r_L03	40	3	L	yes	barless 3-shape
+f102r_L04	3	r	M	yes	r before y m

@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L08	32	y	M	yes	descending tail like y
+f102r_L08	37	g	M	yes	g with descender before x
+f102r_L09	48	b	L	yes	looped stroke before #
+f102r_L10	5	s	M	yes	s shape after apostrophe mark
+f102r_L10	17	#	L	yes	hatching after H suggests separate #
+f102r_L10	18	{ampersand-like}	L	yes	ampersand-like curl before colon
+f102r_L10	25	n	M	yes	n with bar after d
+f102r_L10	26	3	M	yes	curled 3 shape
+f102r_L10	38	3	L	yes	descending hook, 3-like
+f102r_L10	45	p	M	yes	p-like stroke after g
+f102r_L12	4	x	M	yes	x cross after p
+f102r_L12	13	@	M	yes	large curl before m r d
+f102r_L12	36	R	L	yes	R with tail after j
+f102r_L12	37	d	L	yes	small d-like loop
+f102r_L13	7	#	M	yes	two hatch signs after g
+f102r_L13	19	@	M	yes	curl then a, @ shape

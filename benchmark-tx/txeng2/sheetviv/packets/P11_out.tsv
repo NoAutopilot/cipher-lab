@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L32	15	r	M	yes	v-shaped r after m
+f102r_L32	17	r	M	yes	r-like ligature after y
+f102r_L32	19	Z	M	yes	curly z, no vertical bar
+f102r_L32	26	x	M	yes	crossed x shape
+f102r_L32	43	c	M	yes	small open c
+f102r_L32	45	g	M	yes	g with tail
+f102r_L33	12	m	M	yes	three humps
+f102r_L33	19	L	M	yes	L shape before swash
+f102r_L33	20	{tilde}	M	yes	long swash
+f102r_L33	36	Z	M	yes	curly Z
+f102r_L34	13	Z	M	yes	curly z
+f102r_L34	32	g	M	yes	g with tail
+f102r_L34	35	H	M	yes	double hash-like H
+f102r_L35	14	m	L	yes	humped m/n small
+f102r_L35	18	x	L	yes	x-like stroke before x
+f102r_L35	24	b	M	yes	b with top flick

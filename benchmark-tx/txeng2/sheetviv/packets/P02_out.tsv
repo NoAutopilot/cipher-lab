@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L04	6	g	M	yes	tailed loop before s, g-like
+f102r_L04	11	3	M	yes	z with tail no bar
+f102r_L04	13	r	M	yes	r then y ligature
+f102r_L04	30	3	M	yes	tailed z shape
+f102r_L04	34	3	M	yes	tailed z after H
+f102r_L04	43	r	M	yes	r before y
+f102r_L05	22	r	M	yes	r stroke before y present
+f102r_L05	25	g	M	yes	tailed loop like g
+f102r_L05	39	m	L	yes	humped minim shape
+f102r_L05	43	r	M	yes	r before y
+f102r_L05	50	R	L	yes	line-end looped tilde stroke
+f102r_L07	14	c	L	yes	open small round hook
+f102r_L07	17	r	M	yes	r before y
+f102r_L08	3	r	M	yes	r before y
+f102r_L08	24	r	M	yes	r before y
+f102r_L08	30	3	M	yes	tailed z before m

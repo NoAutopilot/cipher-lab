@@ -1,0 +1,17 @@
+line	col	sign	conf	viewed	note
+f102r_L18	50	s	M	yes	small slanted s before tz
+f102r_L19	11	S	L	yes	tall s-like stroke after #
+f102r_L19	12	:	M	yes	two dots after s
+f102r_L19	15	a	M	yes	round a-like body before tz
+f102r_L19	29	x	L	yes	x after tz, crowded
+f102r_L19	31	a	L	yes	a-like hooked sign before #
+f102r_L19	39	NONE	M	yes	only one dot pair after x
+f102r_L19	46	NONE	M	yes	only one dot pair after x
+f102r_L20	9	NONE	M	yes	one dot pair only
+f102r_L20	35	S	L	yes	tall S-like curved stroke
+f102r_L20	36	@	M	yes	loop with curl
+f102r_L20	53	tz	M	yes	tz-like sign at right edge
+f102r_L21	1	a	M	yes	round a-like at line start
+f102r_L21	11	e	L	yes	loop e-like no vertical bar
+f102r_L21	28	n	L	yes	humped n-like before g
+f102r_L21	36	R	M	yes	hooked R-like stroke
