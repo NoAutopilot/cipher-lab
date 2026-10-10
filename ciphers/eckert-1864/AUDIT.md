@@ -12819,3 +12819,130 @@ Johnson vols 8-9; the inline queries are named in s.1); two JSTOR-QUEUE.tsv rows
 Requests: hdl.huntington.org 24 (12 CISOSEARCHALL, 11 item info, 1 RemoteDisconnected retried once after 20 s), all answered 200 after the retry;
 www.googleapis.com 22; www.loc.gov 6 search + 14 page/full-text (all 200); archive.org 2 (advancedsearch); be-api.us.archive.org 6 (all answered);
 api.semanticscholar.org 2 (1 x 429, not retried); api.core.ac.uk 2; api.openalex.org 2.
+
+## AUDIT (FV-MS18k)
+
+Verifier FV-MS18k (account 1, for LANE LEDGER), 9-10 Oct 2026, 23:53-00:1x UTC by `date -u`; a separate session from the reader MS18-R5, not protecting
+its conclusions. Scope: first audits of **E357** and **E359** (NOTES "## MS18-R5"; ciphertext.txt, Cipher No. 1, Washington sent ledger mssEC 18 = Huntington
+object 10074). Nothing decoded beyond key look-ups in key.md / key-no2.md. Key source for both: `period`. No spec exists for eckert-1864, so
+`judge_plaintext.py` was not run. Intake gate (23:5x): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+Prior work (`tools/prior_work.py eckert-1864 --item-spec 'item_id=E357;ptr=9825;date=1864-08-19;sender=Leet;recipient=Bowers' --step-type audit --offline`,
+and the same for E359 ptr=9753 date=1864-06-04 Halleck/Wallace): exit 4, verdict step LEAD, all eight LEADs target-level own-work ROOM claims (this lane's
+FV/R/FIX workers), none covering these two pointers; plaintext UNCHECKED-NET (fetched by hand below). Script: `ms18/fv_ms18k_hdl.py` (+ `.out`).
+
+### 0. The reader's print misses
+MS18-R5 called E359 "not located" and named its near miss, "Halleck to Schoepf 4 June 1864 ... report to General Augur", as a different telegram. E359 **is
+printed**, word for word bar two words, in OR ser. I vol. 37 pt 1 p.589 (`warofrebellion371unit`), a volume not in the reader's grep cache; the reader looked
+for it in I/36 pt 3 and I/37 pt 2. The Schoepf telegram (OR I/37 pt 1 p.589, 12.15 p.m.) is a third, separate message: it concerns the **Fifth** Maryland at
+Fort Delaware, and its companion order to Wallace (OR I/37 pt 1 p.590, "Washington, June 4, 1864--11 p.m. ... send one regiment of Ohio 100-days' men to
+Fort Delaware to relieve the Fifth Maryland") is the **first entry on E359's own ledger page** (9753, "JW Sampson Balto Wash June 4 1864 / Fanny pension for
+Season ... send plug whip of Abner publish days spit to Angel to relieve the plaster acton wharton", holder transcription; not read here). So: not one order
+sent twice; three telegrams of 4 June on the same troop shift (1st Md Veteran Cavalry and Battery D to Augur = E359; the Fifth Maryland relieved at Fort
+Delaware = the 9753 first entry and the Schoepf telegram). E357 is not printed in the volumes searched (s.2).
+
+### 1. Duplicates and image (own entry, IIIF 2400 px; line crops by `tools/iiif_lines.py --image`)
+- **Duplicate diff:** mssEC 19 (`entries-mssEC19.tsv` + `sources/mssEC19/p*.json`) grepped by date (19-20 Aug 1864; 3-5 June 1864) and by
+  Leet/Bowers/Wallace/Augur: 9050/1 (Beckwith City Pt, label No 2, Wash. Aug 20 1864) is the Loudoun County Quakers telegram; 8978/1 and 8979 (Beckwith,
+  4 June 1864) are other telegrams. Pointers 9825/9753 occur only in their own headers and the MS18-R5 notes (and E345, the second entry on 9825).
+  **No duplicate.**
+- **E357 (9825, p.159; ten line crops e357_L01-L10, scratch):** transcription matches line by line. The label **"No 2."** is written above "Beckwith City Pt"
+  (confirmed); the hour "2 PM" above the date. "up<struck>to</struck> to" as filed; "Swindled" is written above the line between "had" and "Early";
+  "badly be Eating" is the clerk's split of "beaten"; "fit shoe" (line 6) is clear and is **"Fitz-hugh" written by sound** (s.3).
+- **E359 (9753, p.87; crops e359_L01-L08 + the last line by hand):** matches. The tail after "Webster Jacob" is in lighter ink: "tell w[?] see B as
+  directed" -- the second word is one letter, w or n, not legible; an operator's note, not in the print (graded nothing).
+
+### 2. Holder's full text, siblings and print
+**Huntington CONTENTdm** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; one hdl take 00:03-00:05 UTC 10 Oct, 17 requests, all 200:
+8 queries, 7 item records, 2 page images). Positive control for E357: 'Wednesday Early prisoners' and 'Leet Bowers Early' both hit **9825** (its own page).
+E359's own page 9753 hit no query ('veteran Battery Augur', 'Wallace Battery Augur', 'important points Augur', 'Maryland Veteran Cavalry'): the holder
+transcribes the ledger's code words (Pagan for Battery, pacific for Cavalry), so these queries are non-tests for a sent-ledger copy; print settles E359
+anyway. 'badly beaten prisoners' 0. Records read:
+- **4687** (received, Baltimore 5 June 1864 11.45 a.m., Lew Wallace to Halleck): "The first Md veteran volunteer Cavalry and Battery D first Md artillery
+  leave here this morning to report to Genl Augur at Washn. four of the companies of the Cavalry are mounted and will march from the Relay House. The Battery
+  has horses but no guns" -- **the answer to E359** (also printed in OR I/36 pt 3, "Baltimore, June 5, 1864. (Received 12 m.)", OCR text only, page not read), an independent witness, not a copy.
+- 9059 (Leet to Bowers, 29 Aug 1864, No 1; printed OR I/42 pt 2 p.567 and I/43 pt 1 p.952): the same correspondents ten days later, another telegram.
+- 7582 (Meade, 21 Dec 1863: "It was reported at Orange C. H. that Averill had ... beaten Imboden"), 5832 (Sheldon/Beckwith, Dec 1864), 4465 (Sedgwick,
+  7 Feb 1864), 10528 (Grant, 26 July 1864): other telegrams.
+- FV-MS18j (ROOM 00:02) opened 7943, 4514, 10419: nothing for E357/E359.
+
+**Print** (archive.org djvu texts to scratch: OR I/43 pt 1 `warofrebellion431unit_0`, I/36 pt 3 `warofrebellion363unit`, I/37 pt 1 `warofrebellion371unit`,
+I/42 pt 2 `warofrebellion422unit`; cached I/43 pt 2 `warofrebellion432unit`, I/37 pt 2 `warofrebellion372unit`):
+- **E359 -> printed OR ser. I vol. 37 pt 1 p.589** (leaf n612, head 589, read on the page image): "JUNE 4, 1864. Major-General WALLACE, Baltimore: The First
+  Maryland Veteran Volunteer Cavalry, and Battery D, First Maryland Light Artillery, will be sent to Washington to report to Major-General Augur. As the force
+  in your department is much weakened, it will be necessary for you to concentrate it as much as possible by occupying only the more important points.
+  H. W. HALLECK, Major-General and Chief of Staff." The ledger has no "for you" ("it will be [Necessary] to [Concentrate] it") and "General Augur" for
+  "Major-General Augur"; otherwise word for word. The print gives no hour; the ledger's time word Jennie = 3.30 PM (H). Below it on p.589: Lawrence (Wallace's
+  AAG) to Kenly and Tyler the same day, passing the order on ("Orders from War Department to send the First Maryland Veteran Volunteer Cavalry, and Battery
+  D ... to Washington without delay").
+- **E357 -> not located.** Leet to Bowers in the indexes: OR I/42 pt 2 index p.1384 (read on the page image, leaf n1389): "Leet, George K. Correspondence
+  with Theodore S. Bowers ... 471, 567" (= 25 and 29 Aug 1864); OR I/43 pt 1 index (OCR text; the page-number map answered HTTP 500 and was not retried):
+  "Leet ... Correspondence with Theodore S. Bowers 760, 952" (= Bowers to Leet 10 Aug; Leet to Bowers 29 Aug); Leet to Sheridan 25 Aug p.906. Full-text grep
+  of I/42 pt 2, I/43 pt 1, I/43 pt 2 for 'no other information' (only Leet 11 Oct and McEntee 6 Aug), 'Wednesday last', 'joined Early', 'lost/losing all
+  his artillery', 'badly beaten', Orange Court-House near cavalry/beaten/artillery, every LEET signature and every Washington 19-20 Aug header: no 19 Aug
+  Leet telegram. Nearest: Halleck to Grant, 19 Aug 1864 10 a.m. (I/42 pt 2 p.291: "One of General Augur's scouts insists that Longstreet's corps and
+  Fitzhugh Lee's cavalry have passed through Culpeper on their way to join Early"); Sharpe/City Point to McEntee, 20 Aug (I/42 pt 2 p.330: "news from
+  Orange Court-House from our own men up to Wednesday morning last. No troops had passed ..."): the same scout network and the same Wednesday cut-off, other
+  telegrams. **Grant Papers vol. 12** (`papersofulyssess0012gran`, be-api full text): positive control '"no troops had moved to or from the Valley"' (Leet,
+  25 Aug) hits it and seven OR copies; '"joined Early" Leet' finds only the 29 Aug Leet telegram in a note; '"badly beaten" Orange' 0; '"Wednesday last"
+  Early' 0; 'Leet "Orange C"' returned 502, not retried. IA full text, all items: '"cavalry had been badly beaten"' 4 (an English Civil War journal and a
+  modern Sheridan book quoting Sheridan, not this); '"no other troops than those already reported"' 0; '"rumored at Orange"' 0;
+  '"Lee's cavalry had been badly beaten"' 0.
+- Not searched for E357: NARA RG 107 (telegrams sent) and RG 108 (Grant's HQ, telegrams received), the Bureau of Military Information files (RG 393),
+  Grant Papers vol. 12 page by page around 19-20 Aug, the press of 20-25 Aug 1864, HathiTrust, JSTOR.
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+- **E357 (not located):** decoder H 17 stand: Grapes = Washington, Helen = 2 PM (= the ledger's own hour note), Hunkey = 19 (= the header's date),
+  Paradise = Colonel, Blubber = City Point, unity = period, Spit = Men, wick = Report, Whinny = Troops, wick(ed) = Reported, Swindle(d) = Joined, Stomach =
+  Left, Feather = Orange C.H., Hunter('s) = Lee('s), panama = Cavalry, nuptial = Artillery, Smeden (= Sweden, the clerk's m/w) = Information. Two readings to
+  correct:
+  (a) **"fit shoe" = Fitzhugh** (plain, by sound, like "cus toddy", "opera rating"): the rumour is that **Fitzhugh Lee's cavalry** had been badly beaten, not
+  Lee's; the reading prints "fit shoe [Lee]'s". Graded plain (not a code group); context: Fitzhugh Lee's division had just joined Early (Sheridan's and
+  Halleck's 19 Aug telegram above); OR I/43 pt 1 carries scout reports of fights with Wickham's (Fitz Lee's) cavalry near Front Royal in mid-August, not
+  dated or page-read here, so which action the rumour reflects is not settled; the Wednesday before Friday 19 Aug is 17 Aug;
+  (b) **"Elgins" is not plain**: no key.md row; key-no2.md has Elgin = Oglesby, nonsense here. In E225 (FV-FM5b) Elgin is the addressee where the print says
+  "telegraphed to USG", graded I there. Here "Elgin's men report" = **Grant's men** (the scouts Grant's headquarters ran out of Washington; cf. Bowers to Leet,
+  10 Aug, OR I/43 pt 1 p.760, "the men sent by Colonel Sharpe") reads in a second context: **M** (two contexts, no key row; not H).
+  **H 17 + M 1** of 18 code groups; plain rest; the header's "[scouts]" -> "Grant's men (Elgin, M)".
+- **Rule 4 label-versus-sense conflict (recorded, not settled):** the ledger's own label over E357 is **"No 2."** (image-confirmed). Only No. 1 reads: under
+  No. 2 Elgin = Oglesby, Sweden = Join, and the other groups give Butler/Cairo/Oglesby for Orange C.H./Lee's cavalry/artillery (MS18-R5). The HEAD share does
+  not pick (.39/.37). Witnesses: for No. 1, the sense of all 17 groups and the 19 Aug date/hour words; for No. 2, the clerk's label only. Not settled by the
+  share or by the count; for HYPOTHESES.md (a KEY job): label slip by the clerk, or a No. 2 page whose vocabulary coincides with No. 1 -- the second is excluded
+  by the No. 2 decode's nonsense.
+- **E359 (OR I/37 pt 1 p.589):** decoder **H 21 + C 1** stand and are confirmed by the print: Jennie = 3.30 PM, Pension = 4, Submit = Maj. Gen. Lew Wallace
+  (C, via E8; the reader's header "[Lew Wallace, M]" -> **C**, print), Plug = 1 (twice), Acton = Maryland, Washington = Volunteer, pacific = Cavalry, Pagan =
+  Battery, Stagger = Light, negro = Artillery, growl = Washington, white = Report, Shelter = General, unity, Salem = Force, Quadroon = Department, "week ended"
+  = weakened (plain, by sound), Tartar = Necessary, pine = Concentrate, vernons = Points, Webster = signature, Jacob = General-in-Chief (print signs Halleck,
+  Chief of Staff; title as keyed). Tail "tell w/n? see B as directed": operator's note, M, not in print. No gap.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | class | key | depth | % code groups H/C/S | basis | safe sentence |
+|---|---|---|---|---|---|---|
+| E357 Leet to Bowers, City Point, 19 Aug 1864 2 p.m. | **N3** | period | D2 | 94 (17 H + 1 M of 18) | not located: OR I/42 pt 2 and I/43 pt 1 (indexes + full text), I/43 pt 2, Grant Papers 12 (be-api, positive control), IA full text, the holder's full text (positive control) | "Read at grade H with War Department Cipher No. 1: on 19 Aug 1864 Capt. George K. Leet in Washington telegraphed Lt. Col. T. S. Bowers at City Point that Grant's scouts reported no troops had joined or left Early up to the previous Wednesday, and that Fitzhugh Lee's cavalry was rumoured at Orange Court House to have been badly beaten, losing all its artillery and many prisoners; this telegram was not located in the Official Records or the Grant Papers (searched 10 Oct 2026)." |
+| E359 Halleck to Wallace, Baltimore, 4 June 1864 3.30 p.m. | **N1** (text known) | period | D3 | 100 (21 H + 1 C) | printed OR I/37 pt 1 p.589, read on the IA page image | "An independent re-decipherment, read with War Department Cipher No. 1, of Halleck's telegram to Wallace of 4 June 1864 sending the 1st Maryland Veteran Cavalry and Battery D to Augur, printed in OR ser. I vol. 37 pt 1 p.589." |
+
+Not N4 for E357: NARA RG 107/108/393, Grant Papers 12 page by page, the press, HathiTrust, JSTOR unsearched. Unsafe for E357: "first", "new",
+"unpublished", "never printed", "Lee's cavalry" (it is Fitzhugh Lee's). Depth: E357 **D2**, not D3 -- 94% of code groups H, but no external check of the
+content: the print supplies only the frame (the same scouts, the same Wednesday cut-off, Fitzhugh Lee's arrival in the Valley), not the telegram or its
+rumour; code clause above the authentication distance: "Feather Wednesday that fit shoe hunters panama had been badly be Eating losing all his nuptial" =
+at Orange C.H. Wednesday that Fitzhugh Lee's cavalry had been badly beaten, losing all his artillery (Feather, Hunter, panama, nuptial all H), with Hunkey =
+19 and Helen = 2 PM equal to the ledger's own date and hour notes. E359 **D3**: the print, near word for word (D4 would need a fresh rule-7 re-derivation).
+Depth sentences (my own): E357 -- "On 19 Aug 1864 Grant's adjutant in Washington passed to City Point a scout report that Early had received no new troops
+and a rumour from Orange Court House that Fitzhugh Lee's cavalry had been badly beaten." E359 -- "On 4 June 1864 Halleck ordered Wallace to send the 1st
+Maryland Veteran Cavalry and Battery D from Baltimore to Augur at Washington and to hold only the important points of his weakened department."
+
+### 5. Postmortem and fixes for a FIX job (not applied here)
+Failure: MS18-R5 called E359 "not located" and its near miss "a different telegram"; E359 is in OR I/37 pt 1 p.589, two items above that near miss, in a
+volume the reader did not grep. Cause: I/37 pt 1 (May-June 1864, Shenandoah/Middle Department) not in the cached phrase set for a 4 June Baltimore
+telegram; the same "wrong or missing volume" shape as E343/E352. Corrections (a verifier does not edit ciphertext.txt or reading.md):
+- E359 header: signer **H. W. Halleck, Chief of Staff** (Jacob = General-in-Chief as keyed); addressee **Maj. Gen. Lew Wallace, Baltimore** (Submit, C);
+  add "printed OR I/37 pt 1 p.589 (no hour in print; ledger 3.30 PM; ledger omits 'for you')"; tail "tell w/n? see B as directed" (M). Note that the first
+  entry on 9753 is Halleck to Wallace 4 June 11 p.m. (Fort Delaware / Fifth Maryland; OR I/37 pt 1 p.590), not read; and 4687 is Wallace's answer (5 June).
+- E357 header and reading: "[scouts]" -> **Elgin('s) = Grant('s) (M; cf. E225)**; "fit shoe [Lee]'s" -> **Fitzhugh Lee's** (plain, by sound); "be Eating" ->
+  beaten (plain); grades H 17 + M 1. Keep the ledger label "No 2" and add the rule-4 conflict note (s.3) to HYPOTHESES.md for a KEY job.
+- NOTES "## MS18-R5": "Not located ... E359" is wrong (above); "Halleck to Schoepf ... is a different telegram" stands, but the order is not one sent twice.
+- KEY lesson: Elgin now reads in two No. 1 contexts as Grant (E225 print, E357 sense); a KEY job may add it to key.md as an unlisted value at grade M with
+  both witnesses, never H.
+
+Requests: hdl.huntington.org 17 (8 CISOSEARCHALL, 7 item info, 2 IIIF 2400 px), all 200; archive.org 9 (4 djvu texts, 3 page_numbers -- 2 x 200, 1 x 500
+not retried -- 2 page images), be-api.us.archive.org 10 (8 answered, 1 x 502 retried once and answered, 1 x 502 not retried). Queued: WORK-QUEUE
+`AUD2-LEDGER-35` (E357), SO-ECKERT-E357.

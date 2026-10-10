@@ -4247,3 +4247,29 @@ Read so far: ten of ten filed (E361-E370); seven printed (OR), three not located
 - [ ] image-check: two leaves of nine eye-checked; seven not (above); next: crops of the seven, ~$0.8.
 - [x] retry: one 503 retried once (OR I/43 pt 3 id, not needed).
 Verdict: keep going: 5 internal gaps; cheapest next: crops and eye check of the seven unread leaves, ~$0.8
+
+## FV-MS18k (10 Oct 2026, account 1, for LANE LEDGER)
+First verifier of E357 and E359 (AUDIT.md "## AUDIT (FV-MS18k)"). **E359 is printed** OR I/37 pt 1 p.589 (Halleck to Wallace, Baltimore, 4 June 1864: 1st
+Md Veteran Volunteer Cavalry and Battery D to Augur; read on the IA page image, leaf n612; the ledger omits "for you"): N1 D3. The reader's near miss (Halleck
+to Schoepf) is a third telegram of the same day; the first entry on E359's own page (9753) is Halleck to Wallace 4 June 11 p.m. (Fort Delaware, OR I/37 pt 1
+p.590), and holder 4687 is Wallace's 5 June answer. **E357 N3 D2**: not located (OR I/42 pt 2 and I/43 pt 1 indexes list Leet-Bowers only on 10, 25, 29 Aug;
+full text of I/42 pt 2, I/43 pts 1-2; Grant Papers 12 via be-api with a positive control; IA full text; holder full text with a positive control).
+Reading fixes for a FIX job: "fit shoe" = Fitzhugh (Fitzhugh Lee's cavalry, not Lee's); "Elgins" = Grant's (M; cf. E225); the ledger's "No 2" label vs No. 1
+sense recorded per rule 4. `AUD2-LEDGER-35` queued (E357); SO-ECKERT-E357 queued.
+
+## Remaining gaps (FV-MS18k, 10 Oct 2026)
+Read so far: E357 and E359 audited (E359 N1 by print on the page image; E357 N3 D2); both ledger pages eye-checked on crops at 2400 px.
+- E357 second audit and the unsearched families (NARA RG 107/108/393, Grant Papers 12 page by page, press 20-25 Aug 1864, HathiTrust, JSTOR) - blocker: waiting-on the answer of the VERIFY lane to WORK-QUEUE.tsv row AUD2-LEDGER-35; a second audit is a separate session on account 3
+- the header and reading fixes of AUDIT (FV-MS18k) s.5 (Fitzhugh, Elgin = Grant M, E359 print and signer) - blocker: not-attempted; a verifier does not edit ciphertext.txt or reading.md; next: a FIX job, ~$1
+- E357 label "No 2" vs No. 1 sense, and Elgin = Grant (two contexts), as HYPOTHESES.md rows - blocker: not-attempted; key questions belong to the KEY lane; next: a KEY job, ~$1
+- E357 depth D3 - blocker: not-attempted; needs an external check of the content (a received copy at City Point, Grant Papers note, RG 108); next: Grant Papers 12 pp. for 19-20 Aug on page images, ~$0.5
+
+## Escalation (FV-MS18k, 10 Oct 2026)
+- [x] siblings: 9753 first entry (Fort Delaware order, printed p.590), 4687 (Wallace's answer), 9059 (Leet to Bowers 29 Aug) read; 9825/2 is E345.
+- [x] clear-pages: all-pointer CISOSEARCHALL on 8 queries (E357 positive control hit its own page; E359's own page not hit, the holder transcribes code words) + 7 item reads, no clear copy.
+- [x] known-keys: key.md and key-no2.md rows checked for every graded token; E357's No 2 label conflict recorded, not settled.
+- [x] print: E359 found and read on the page image; E357 not located in six OR volumes, Grant Papers 12 (full text) and IA.
+- [n/a] key-rebuild: no key row edited; fixes listed in AUDIT s.5.
+- [x] image-check: both entries eye-checked on line crops.
+- [x] retry: be-api 502 once retried; archive.org page map 500 not retried.
+Verdict: keep going: 3 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18k) s.5, ~$1

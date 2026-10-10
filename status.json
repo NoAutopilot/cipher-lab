@@ -11593,6 +11593,47 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-MS18k)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-MS18k verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-MS18k)' section 4",
+      "reading_version": "MS18-R5 9 Oct 2026 (reading.md), grades as in AUDIT (FV-MS18k) s.3 (Elgin = Grant M; 'fit shoe' = Fitzhugh, plain)",
+      "unresolved_spans": "",
+      "depth_unread": {
+        "names_codes": "1",
+        "other": "0"
+      },
+      "depth_pct": 94.4,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Washington sent ledger): Capt. George K. Leet to Lt. Col. T. S. Bowers, City Point, 19 Aug 1864: no troops joined or left Early; rumour at Orange C.H. that Fitzhugh Lee's cavalry was badly beaten (E357)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 19 Aug 1864 Capt. George K. Leet in Washington telegraphed Lt. Col. T. S. Bowers at City Point that Grant's scouts reported no troops had joined or left Early up to the previous Wednesday, and that Fitzhugh Lee's cavalry was rumoured at Orange Court House to have been badly beaten, losing all its artillery and many prisoners; this telegram was not located in the Official Records or the Grant Papers (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-MS18k); not N4: NARA RG 107/108/393, Grant Papers vol. 12 page by page, the press of 20-25 Aug 1864, HathiTrust, JSTOR not searched; the ledger labels the entry 'No 2' but only No. 1 reads (rule-4 conflict recorded, not settled)",
+      "depth": "D2",
+      "completeness": "17 H + 1 M of 18 code-word groups (rest plain)",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.159, pointer 9825, E357"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.159, pointer 9825, E357",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.159, pointer 9825, E357"
+      ],
+      "depth_sentence": "On 19 Aug 1864 Grant's adjutant in Washington passed to City Point a scout report that Early had received no new troops and a rumour from Orange Court House that Fitzhugh Lee's cavalry had been badly beaten.",
+      "depth_check": "code clause: Feather = Orange C.H., Hunter's = Lee's, panama = Cavalry, nuptial = Artillery ('at Orange C.H. Wednesday that Fitzhugh Lee's cavalry had been badly beaten, losing all his artillery'); Hunkey = 19 and Helen = 2 PM equal the ledger's own date and hour notes; no external check of the content (print gives only the frame: OR I/42 pt 2 pp.291, 330), so D2 not D3",
+      "depth_note": "17 H + 1 M of 18 code-word groups (rest plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
         "AUDIT.md '## AUDIT (FV-MS18g)'",
         "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-32)'"
       ],
