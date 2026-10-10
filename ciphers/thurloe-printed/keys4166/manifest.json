@@ -1,0 +1,163 @@
+{
+ "fetched": "2026-10-10 17:43-17:45 UTC by date -u, THUR-MEAD, one browser login (tools/decode_browser_login.js --listen), 13 requests after login",
+ "images": [
+  {
+   "record": "R4890",
+   "image": "IMG_R4890_I28428_P1.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4890_I28428_P1.jpg",
+   "status": 200,
+   "bytes_served": 13255041,
+   "sha1_served": "757f0f213d997e17cc60d6c30be5638b11d5e60b",
+   "size": [
+    7265,
+    10288
+   ],
+   "role": "f.102r blank (folio number only)",
+   "committed": null,
+   "committed_note": "not committed (folder 30 MB rule); re-fetch from url with one DECODE browser login (tools/decode_browser_login.js)"
+  },
+  {
+   "record": "R4890",
+   "image": "IMG_R4890_I28428_P2.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4890_I28428_P2.jpg",
+   "status": 200,
+   "bytes_served": 14842849,
+   "sha1_served": "f604285c925d3e977413044d55a8ed63471ae009",
+   "size": [
+    7246,
+    10328
+   ],
+   "role": "f.102v sheet left half: letter table A-X + words A-W, headed \"Sr Ph: Meadow[es]\"",
+   "committed": "images/IMG_R4890_I28428_P2.jpg",
+   "committed_bytes": 4233653,
+   "committed_note": "re-encoded JPEG q60 at native size"
+  },
+  {
+   "record": "R4890",
+   "image": "IMG_R4890_I28428_P3.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4890_I28428_P3.jpg",
+   "status": 200,
+   "bytes_served": 15770123,
+   "sha1_served": "06aceabd269e781a1629f2b2cc01df8aa341fc32",
+   "size": [
+    7240,
+    10252
+   ],
+   "role": "f.103r sheet right half: letter table Z, words V-Z, names 539-614, \"To uncypher\" table 1-104",
+   "committed": "images/IMG_R4890_I28428_P3.jpg",
+   "committed_bytes": 4563809,
+   "committed_note": "re-encoded JPEG q60 at native size"
+  },
+  {
+   "record": "R4890",
+   "image": "IMG_R4890_I28428_P4.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4890_I28428_P4.jpg",
+   "status": 200,
+   "bytes_served": 12609568,
+   "sha1_served": "e0a7d19a3d447897fc9e034d81cd26136dd7e9e1",
+   "size": [
+    7246,
+    10328
+   ],
+   "role": "f.103v endorsement \"Cypher with Sr Ph. Meadowes\"",
+   "committed": null,
+   "committed_note": "not committed (folder 30 MB rule); re-fetch from url with one DECODE browser login (tools/decode_browser_login.js)"
+  },
+  {
+   "record": "R4891",
+   "image": "IMG_R4891_I28433_P2.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4891_I28433_P2.jpg",
+   "status": 200,
+   "bytes_served": 14760875,
+   "sha1_served": "2c11e48f79051c465c901a84ad4f81567b9f68c3",
+   "size": [
+    7246,
+    10328
+   ],
+   "role": "f.104v/105r second copy (left half), as R4890",
+   "committed": "images/IMG_R4891_I28433_P2.jpg",
+   "committed_bytes": 4164161,
+   "committed_note": "re-encoded JPEG q60 at native size"
+  },
+  {
+   "record": "R4891",
+   "image": "IMG_R4891_I28433_P3.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4891_I28433_P3.jpg",
+   "status": 200,
+   "bytes_served": 13758812,
+   "sha1_served": "ddfae72de6aadade08ad9428ef7119cbea8e581e",
+   "size": [
+    7246,
+    10328
+   ],
+   "role": "second copy (right half), as R4890",
+   "committed": "images/IMG_R4891_I28433_P3.jpg",
+   "committed_bytes": 3651762,
+   "committed_note": "re-encoded JPEG q60 at native size"
+  },
+  {
+   "record": "R4896",
+   "image": "IMG_R4896_I28462_P2.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4896_I28462_P2.jpg",
+   "status": 200,
+   "bytes_served": 15094914,
+   "sha1_served": "b539f727b78201f8931c04f7943799008fba3e76",
+   "size": [
+    7246,
+    10328
+   ],
+   "role": "Downing sheet (fetch only, not read)",
+   "committed": "images/IMG_R4896_I28462_P2.jpg",
+   "committed_note": "re-encoded JPEG q45 at native size (folder kept under 30 MB); fetch only, not read",
+   "committed_bytes": 3397028
+  },
+  {
+   "record": "R4896",
+   "image": "IMG_R4896_I28462_P3.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4896_I28462_P3.jpg",
+   "status": 200,
+   "bytes_served": 13333339,
+   "sha1_served": "54bffb4f5131b9967bca19d8a76d422cc9591392",
+   "size": [
+    7246,
+    10328
+   ],
+   "role": "Downing sheet (fetch only, not read)",
+   "committed": "images/IMG_R4896_I28462_P3.jpg",
+   "committed_note": "re-encoded JPEG q45 at native size (folder kept under 30 MB); fetch only, not read",
+   "committed_bytes": 2721346
+  },
+  {
+   "record": "R4895",
+   "image": "IMG_R4895_I28457_P2.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4895_I28457_P2.jpg",
+   "status": 200,
+   "bytes_served": 13510298,
+   "sha1_served": "0b7b636c6b22a17f6980c17d553c7e6c0f7e4c9e",
+   "size": [
+    7246,
+    10328
+   ],
+   "role": "Downing sheet second copy (fetch only, not read)",
+   "committed": "images/IMG_R4895_I28457_P2.jpg",
+   "committed_note": "re-encoded JPEG q45 at native size (folder kept under 30 MB); fetch only, not read",
+   "committed_bytes": 2779118
+  },
+  {
+   "record": "R4895",
+   "image": "IMG_R4895_I28457_P3.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4895_I28457_P3.jpg",
+   "status": 200,
+   "bytes_served": 16954952,
+   "sha1_served": "c56089a500816478070d7318ef09ad17a1e74a73",
+   "size": [
+    7246,
+    10328
+   ],
+   "role": "Downing sheet second copy (fetch only, not read)",
+   "committed": "images/IMG_R4895_I28457_P3.jpg",
+   "committed_note": "re-encoded JPEG q45 at native size (folder kept under 30 MB); fetch only, not read",
+   "committed_bytes": 4065370
+  }
+ ]
+}
