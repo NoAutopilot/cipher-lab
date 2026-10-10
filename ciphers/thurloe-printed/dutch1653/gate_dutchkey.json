@@ -1,0 +1,109 @@
+{
+ "draws": 1000,
+ "fold_p308": {
+  "coverage": 1.0,
+  "ctrl_max": -1.3755,
+  "ctrl_mean": -1.5476,
+  "ctrl_p95": -1.4819,
+  "decode": -1.0457,
+  "frac_ctrl_ge_decode": 0.0,
+  "letters": 86,
+  "supports": true
+ },
+ "fold_p339": {
+  "coverage": 0.9865,
+  "ctrl_max": -1.4748,
+  "ctrl_mean": -1.5488,
+  "ctrl_p95": -1.5053,
+  "decode": -0.9478,
+  "frac_ctrl_ge_decode": 0.0,
+  "letters": 220,
+  "supports": true
+ },
+ "fold_p351": {
+  "coverage": 0.9878,
+  "ctrl_max": -1.4002,
+  "ctrl_mean": -1.549,
+  "ctrl_p95": -1.4641,
+  "decode": -1.1325,
+  "frac_ctrl_ge_decode": 0.0,
+  "letters": 81,
+  "supports": true
+ },
+ "gate_p351": {
+  "PASS": true,
+  "coverage": 0.9878,
+  "ctrl_max": 0.4321,
+  "ctrl_mean": 0.2681,
+  "ctrl_p95": 0.3457,
+  "decode": 0.9753,
+  "frac_ctrl_ge_decode": 0.0,
+  "per_run": {
+   "1": [
+    18,
+    18
+   ],
+   "10": [
+    4,
+    4
+   ],
+   "11": [
+    10,
+    11
+   ],
+   "2": [
+    11,
+    11
+   ],
+   "3": [
+    5,
+    5
+   ],
+   "4": [
+    3,
+    4
+   ],
+   "5": [
+    6,
+    6
+   ],
+   "7": [
+    10,
+    10
+   ],
+   "8": [
+    6,
+    6
+   ],
+   "9": [
+    6,
+    6
+   ]
+  },
+  "tokens": 82
+ },
+ "matched_control_p108": {
+  "codes": 8,
+  "ctrl_max": -1.443,
+  "ctrl_mean": -1.549,
+  "ctrl_p95": -1.499,
+  "decode": -0.948,
+  "frac_ctrl_ge_decode": 0.0,
+  "letters": 128,
+  "separates": true,
+  "source_first20": "echteruertrouweickua",
+  "tokens": 136
+ },
+ "p435": {
+  "beats_max": false,
+  "coverage": 0.9412,
+  "ctrl_max": -1.4419,
+  "ctrl_mean": -1.5432,
+  "ctrl_p95": -1.4837,
+  "decode": -1.5672,
+  "frac_ctrl_ge_decode": 0.75,
+  "letters": 128
+ },
+ "prereg": "6f9dbc5f7",
+ "seed": 20261010
+}
