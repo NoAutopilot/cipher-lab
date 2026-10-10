@@ -135,3 +135,26 @@ Consolidates the E323 (FIX-FM13), E334 (FIX-FM15) and E345 (FV-MS18f) notes abov
 - **Verdict rule per row.** C names K and B does not name another book -> No. K; B names K and C is silent -> "No. K by header, body unread"; B and C name
   different books -> "conflict"; neither -> "none in hand". Nothing filed. The other 26 1865 rows: book predicted from header words only, no gate.
 - **Script.** book65.py (this folder); output book65.out.
+
+## BOOK-FM65 pre-registration (10 Oct 2026, 08:49 UTC by date -u; account 1, for LANE LEDGER-13; written before any decode)
+
+- **Question.** Does any book in hand (No. 1 key.md, No. 2 key-no2.md, No. 9 key-no9.md) read the 1865 rows of the Fort Monroe ledger (mssEC 25,
+  `fortmonroe/clean-fm.tsv`, 81 clean rows: Jan 48, Feb 15, Mar 18)? FM-PRE gap item 2. Own-work grep (08:4x UTC): no pointer >= 5847 is in reading*.md or
+  ciphertext*.txt, and none of the ten test pairs is in NOTES.md or AUDIT.md.
+- **Test rows (10, the brief's).** 5854/1 5856/0 5878/1 5886/0 (Jan), 5897/0 5904/1 5905/0 (Feb), 5918/0 5924/0 5936/0 (Mar).
+- **Text.** Volunteer transcription on disk (sources/fortmonroe/p<pointer>.json) cut by fortmonroe/fm_entries.py (default FM ledger); no image (rule 2:
+  every call conditional on that text).
+- **Instrument B (header first).** Label above or in the header ("No 1" ...), opening place word (Laura/Happy/Hunter/Pagan... = Washington in the book
+  that has it), time word against the header's written time under each book.
+- **Instrument C (the gate).** Decode under No. 1, No. 2, No. 9 and a meaning-shuffled copy of each (word-kind meanings permuted among the book's own
+  word-kind rows; seeds 1, 2, 3). A book reads a row only if its decode carries a coherent clause of >= 4 consecutive tokens including >= 2 code-word
+  meanings that make sense with the plain words around them (rule 4a, above the authentication distance), the clause is stated, and no shuffled copy
+  and no other book gives a comparable clause on the same tokens. Instrument A (O9-BOOK bigram count) beside it, supplementary only (an H-count or
+  bigram-count control ties a shuffled key by construction or nearly so). Can the control differ? A shuffle changes only meanings; a clause is a
+  property of meanings, so yes.
+- **Verdict per row.** C names K and B does not name another -> No. K; B names K, C silent -> "No. K by header, body unread"; B and C differ -> conflict;
+  neither -> none in hand. **Month rule (brief):** a month in which no test row reads in any book in hand -> that month's rows "blocked, no-key-material",
+  and the prediction step stops for that month.
+- **Prediction (other 71 rows).** Book from header words / labels / time words only (instrument B), no gate; for every row predicted to a book in hand,
+  `ms18/step0_ordered.py`'s functions (a) ordered overlap, (b) shuffle p95, hit = a >= 0.5 and a > b, against the decode under the predicted book, read
+  by script only. Nothing filed. Script `book_fm65.py`; output `book_fm65.out`.
