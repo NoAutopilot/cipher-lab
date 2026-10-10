@@ -14842,37 +14842,38 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "key": "period",
-      "line": "Birch prints this intelligence letter with 151 cipher groups and no decipherment. A key rebuilt from Birch's printed decipherments of four other Blank Marshall letters (a cipher Tomokiyo has reconstructed; period key BL Add MS 4166 f.117) decodes all 151 groups: Charles Stuart still at Brussels, the Duke of Gloucester to the field, debts at Bruges, Hyde and a few servants staying to face it out as at Cologne; five words carry slips in the printed cipher. No prior decipherment of this letter located (searched 10 Oct 2026; one audit).",
+      "line": "Birch prints this intelligence letter (original Bodleian MS. Rawl. A. 51 f.238) with 151 cipher groups and no decipherment. Read with the period key sheet for this cipher (BL Add MS 4166 f.117, DECODE R4897), which agrees on every group with a key rebuilt from Birch's printed decipherments of four other Blank Marshall letters, all 151 groups decode: Charles Stuart still at Brussels, the Duke of Gloucester to the field, debts at Bruges, Hyde and a few servants staying to face it out as at Cologne; five words carry slips in the cipher as printed. No prior decipherment of this letter located (searched 10 Oct 2026; two audits).",
       "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md",
-      "document_id": "Birch 1742, Thurloe State Papers vol. 6 p.374 (IA bim_ vol 6 leaf 377, djvu l.44535); Bodleian MS. Rawl. A.",
+      "document_id": "Birch 1742, Thurloe State Papers vol. 6 p.374 (IA bim_ vol 6 leaf 377, djvu l.44535); Bodleian MS. Rawl. A. 51 f.238 (Macray's Rawlinson index)",
       "documents": [
         "Birch 1742, Thurloe State Papers vol. 6 p.374 (Blank Marshall, Bruges, 8 July 1657 N.S.)"
       ],
       "phrases": [
         "Birch 1742 vol 6 p.374, l.44535, Blank Marshall"
       ],
-      "completeness": "145/151 groups C, 6 M (5 slip groups + code 8 in debts) at face value; 143/151 C groups give the intended letter (2 further C groups are encipherer slips, intended letter I)",
+      "completeness": "151/151 group values H at face value (period key sheet BL Add MS 4166 f.117 = rebuilt print-gloss key on every group; AUD2-FAMILY-A2r-1); 144/151 give the intended letter; committed decode files still grade C 145 + M 6 (FIX-THURBM), regrade recommended in AUDIT 2 s.2",
       "unresolved_spans": "'mepllow' (48 20 63 printed; follow?) unsettled, groups graded M; tyemselues (94) and nany (54) groups graded M, intended word I; preuennted (52 52) and dew heeret (80) slips intended word I",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (V-THURBM, l.44535)'"
+        "AUDIT.md '## AUDIT (V-THURBM, l.44535)'",
+        "AUDIT.md '## AUDIT 2 (AUD2-FAMILY-A2r-1, l.44535; second adversarial audit)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "fields_source": "thurloe-printed/AUDIT.md '## AUDIT (V-THURBM, l.44535)' sections 3-3a",
+      "fields_source": "thurloe-printed/AUDIT.md '## AUDIT 2 (AUD2-FAMILY-A2r-1, l.44535; second adversarial audit)' sections 4-5",
       "reading_version": "FIX-THURBM 10 Oct 2026 (bm/decode_44535.py --check exit 0 with bm/slips.tsv and bm/clear_rows.tsv; clear rows restored in bm/reading_l44535.txt; THUR-BM2 FIX items 1, 2, 3, 6 applied, 4, 5, 7 no change)",
       "depth": "D3",
-      "depth_pct": 94.7,
+      "depth_pct": 95.4,
       "decode_status": "Partially decrypted",
       "depth_unread": {
         "names_codes": "0",
         "other": "0"
       },
       "depth_sentence": "Blank Marshall writes from Bruges on 8 July 1657 [N.S.] that Charles Stuart, still at Brussels, cannot pay the debts owed at Bruges, so that most of his people there must shift for themselves, while Hyde and a few servants stay to face it out as they did at Cologne.",
-      "depth_check": "print-gloss key gated leave-one-letter-out (PREREG-THURBM, PASS both blind passes, pooled 0.871/0.861); shuffled-key 4-gram control on l.44535 -1.007 vs p95 -1.431; decoded words complete the clear sentences at every group; external: Birch vol 6 intelligence letter of June 1657 (Gloucester a volunteer with Caracena for the summer)",
-      "depth_by": "V-THURBM verifier (account 2)",
+      "depth_check": "print-gloss key gated leave-one-letter-out (PREREG-THURBM, PASS both blind passes, pooled 0.871/0.861); shuffled-key 4-gram control on l.44535 -1.007 vs p95 -1.431; decoded words complete the clear sentences at every group; external: Birch vol 6 intelligence letter of June 1657 (Gloucester a volunteer with Caracena for the summer); period key sheet BL Add MS 4166 f.117 (DECODE R4897) gives the committed value for all 151 groups (bm/audit_period_key.py --check, AUD2-FAMILY-A2r-1)",
+      "depth_by": "V-THURBM verifier (account 2); confirmed by AUD2-FAMILY-A2r-1 second verifier (account 1)",
       "depth_date": "10 Oct 2026",
-      "depth_note": "group values 145 C + 6 M of 151 (slip groups tyemselues 94, mepllow 48 20 63, nany 54 and code 8 in debts graded M, FIX-THURBM 10 Oct 2026); 143/151 C groups give the intended letter (preuennted 52 52 and dew heeret 80 stay C at group level, intended letter I); not D4 (inferred letters, re-derivation by a session that had seen the reading)",
-      "gap": "N3 one audit (V-THURBM, 10 Oct 2026): not read -- Akkerman 2018 pp.222-223, Firth, Underdown, BHO, Bodleian MS. Rawl. A.; Tomokiyo's figure and BL Add MS 4166 f.117 not compared value by value (113/173 Ormond conflict, not in this letter); JSTOR rows queued; second audit AUD2-FAMILY-A2r-1"
+      "depth_note": "group values H 151/151 at face value (period sheet); 144/151 (95.4%) give the intended letter; 7 slip groups (94 tyemselues, 54 nany, 52 52 preuennted, 80 dew heeret: intended letter I; 48 20 63 mepllow: M); code 8 in debts = b on the sheet (FIX-THURBM's M on it contradicted); not D4 (inferred letters; no fresh-session re-derivation from the sheet)",
+      "gap": "N3 two audits (V-THURBM, AUD2-FAMILY-A2r-1, 10 Oct 2026): for N4 read Akkerman 2018 Invisible Agents pp.222-223 and notes, and Alan Marshall 2023's Blanck Marshall entries; MS. Rawl. A. 51 f.238 not seen (unpublished, does not bear on N4); JSTOR rows queued"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",

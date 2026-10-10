@@ -1316,3 +1316,109 @@ no new class: **N3, key period, one audit, unchanged.**
 - Propagated: status.json (completeness, unresolved_spans, reading_version, depth_pct, depth_note); `second-opinions/PROMPT-chatgpt-bm44535.md`
   (grade sentence added; SO-THURLOE-BM44535 row quotes no counts); WORK-QUEUE row AUD2-FAMILY-A2r-1 quotes no counts and still points the second
   auditor at the THUR-BM2 FIX list (now applied, NOTES "## FIX-THURBM").
+
+## AUDIT 2 (AUD2-FAMILY-A2r-1, l.44535; second adversarial audit)
+
+Second verifier AUD2-FAMILY-A2r-1 (account 1, session_01LDBjVgcwQMwVvtqqTLWpeM; 10 Oct 2026, 15:42-16:1x UTC by date -u), a different account
+and session from the solver (THUR-BM), the first verifier (V-THURBM, account 2) and FIX-THURBM. Brief: WORK-QUEUE row AUD2-FAMILY-A2r-1 and
+`.claude/briefs/verifier.md`. **Claim under audit:** "## AUDIT (V-THURBM, l.44535)" (N3 one audit, D3, key period) as revised by
+"## Revision after AUDIT (FIX-THURBM ...)" (C 145, M 6). prior_work.py step-type audit: exit 4, the one owed LEAD was this job's own claim,
+recorded CLEAR (prior-work.tsv); 3 UNCHECKED rows (Tomokiyo/solver caches by unit, editions) are covered by hand below.
+
+**1. The period key sheet (the family V-THURBM did not compare).** DECODE R4897 (BL Add MS 4166 f.117, "BLANK Marshall"; f.117v endorsed
+"Cypher with Blank Marshal") full-size images fetched after one browser login (`tools/decode_browser_login.js 4897 --guess-fullsize`; images in
+scratch, not committed; sha1 8611ed426ad0... P1, b1b62167d924... P2). The sheet, read on rotated native crops by this session, is
+transcribed in `bm/key_period_f117.tsv`: A 1-5, B 6-9, C 10-13, D 14-17, E 18-22, F 23-26, G 27-30, H 31-34, I/J 35-39, K 40-43, L 44-47,
+M 48-51, N 52-55, O 56-60, P 61-64, Q 65-68, R 69-72, S 73-76, T 77-80, V 81-85, W 86-89, X 90-93, Y 94-97, Z 98-101; names 102-139
+(102 K. of France ... 104 K. Charles, 105 Don John, 106 Duke of York, 109/110 ships of Dunkirk/Ostend, 111 Bruges, 112 Bruxels, 113 Ormond,
+115 Rochester, 118 Newbrugh, 119 Middleton, 120 Hyde, 121 Gerrard, 123 Duke of Glocester, 124-139 Goring ... Carnabye, incl. 131 Conde, 133
+Sr Mar. Langdale, 135 Sr Edw. Walker). Tomokiyo's figure `marshall.jpg` (cryptiana, fetched once) gives the same letter table (1-99).
+`bm/audit_period_key.py --check` (exit 0; output `bm/audit_period_key.out`):
+- `key_blankmarshall.tsv`: 92 of 93 letter codes agree with the sheet; the one difference is code 9 (ours s|b, sheet **b**). `key_blankmarshall_7.tsv`:
+  93 of 94; the difference is code 8 (ours t|b, sheet **b**).
+- **l.44535: all 151 groups are on the sheet; all 145 letter groups have the sheet's value in the committed reading; the 6 name groups are 104
+  K. Charles (x3; Birch's glosses "Ch. St."), 112 Bruxels, 120 Hyde, 123 Duke of Glocester; 0 mismatches.** The rebuilt key reads this letter
+  exactly as the period key does.
+- Conflicts outside this letter (rule 4, data conflict, logged not settled): code 135 is "chsturat" in our key (print gloss) and Sr Edw. Walker on
+  the sheet; 115 Rochester on the sheet vs an alignment fragment in key_7; 173 = Ormond in Tomokiyo's text and key_7 (one gloss) is not on the
+  sheet, which gives Ormond 113 (so V-THURBM's 113/173 note is a sheet-vs-print question, not a key gap); 143, 169, 191, 481, 733 are off the sheet
+  (733 is probably a print slip for 133 Langdale; THUR-BM2 already marks 191/481/733 as printed oddities).
+
+**2. Effect on the grades and the THUR-BM2 / FIX-THURBM regrades (rule 10 propagation check).**
+- Rule 4: every group value of l.44535 is now read from a key source: **H 151 at face value** (was C 145 + M 6). The print gloss key (C) and the
+  period sheet (H) agree on all 151.
+- FIX-THURBM's M on code 8 in "debts" (THUR-BM2 FIX item 6, "no stable meaning across the seven") is **contradicted**: the sheet gives 8 = b, so
+  "debts" carries no slip and the group is H. The "code 8 eye check in ll.3370, 77385, 89881" gap is answered by the sheet (8 = b); those letters'
+  t/n/c/g/r glosses over 8 are gloss-placement noise or encipherer slips, not a second value.
+- FIX items 1 and 3 (94 in tyemselues, 54 in nany): eye-checked again by this session on `bm/crops/l44535_p374_L02.jpg`: the print has "80 g4 18"
+  (old-style 9) and "for he is not 2 7 | 46 20" (two groups, a then b: ABLE). British History Online's transcription of p.374 (`thurloe-papers/
+  vol6/pp362-375`, fetched once) prints "27 46 20" and "80 84 18": both BHO keying errors against the page image (BHO's numerals otherwise agree
+  with ours on the other 148 of our 151 groups). 94 = y and 54 = n on the sheet: these are slips in the printed cipher (or the manuscript), not key gaps.
+- So, at the level of the intended letter: **144 of 151 groups (95.4%)** are H and give the intended letter; 7 groups are H at face value with the
+  intended letter inferred (94 tyemselues -> h, I; 54 nany -> m, I; 52 52 preuennted, I; 80 dew heeret, I) or unsettled (48 20 63 "mepllow", M).
+- Recommended file change (not made here; the decode script is the solver side): drop the code-8 row from `bm/slips.tsv` and grade the 151 group
+  values H citing `bm/key_period_f117.tsv` in `bm/decode_44535.py`; set key_blankmarshall.tsv code 9 to b (sheet). The reading's words do not change.
+
+**3. Rule 10 search, the families V-THURBM did not read (10 Oct 2026, 15:45-16:0x UTC).**
+- (a) **Holding archive catalogue.** Macray, *Catalogi codicum ... Bodleianae* pars V fasc. 2 index (IA `catalogicodicumm52bodl`, djvu text):
+  "Marshall, Blanck, an agent for Cromwell in the Netherlands ... Letters of intelligence [for Thurloe], addressed to R. Richardson through W. Rowe;
+  1656-8, originals, A. 41 ... 60; copies ...; signed John Williams, 11 Feb. 1657, A. 47. 16. **signed Mar. S.; 8 July, 1657, A. 51. 238.** signed
+  Marg. Smith ...; signed John Harrisson ...". The original of l.44535 is **Bodleian MS. Rawl. A. 51, f. 238** (Birch's and BHO's margin "Vol. li.
+  p.238" agree). The index notes no decipherment for it. The leaf itself was not seen (bot-checked catalogue host; MS not known to be digitised):
+  whether Thurloe's office interlined a decipherment is still unknown (unpublished, so it does not bear on N3/N4).
+- (b) **British History Online**, Thurloe vol. 6 pp.362-375: prints the letter with the numerals and no decipherment, no editorial note.
+- (c) **Eva Scott, *The Travels of the King* (1907)** (IA `travelsofkingcha00scotuoft`, full text): identifies Blank Marshall as Michael Deane
+  (p.154) and cites Thurloe vols iv-vii generally; no quotation of the 8 July 1657 letter, no decipherment (greps for the letter's phrases: 0).
+- (d) **Firth, *Last Years of the Protectorate* (1909)** vols 1-2 (IA `lastyearsofprote01firt`, `lastyearsofprote02firt`): no Blank/Blanck
+  Marshall, no citation of Thurloe vi. 374 (the one "vi. 375" is a Fauconberg citation of 1658).
+- (e) **Underdown, *Royalist Conspiracy* (1960)** (IA `royalistconspira0000unde_a1p7`, lending-only, be-api full-text search): "Blanck Marshall" 0,
+  "Michael Deane" 0; "Bruges" hits are other spies; no trace of this letter.
+- (f) **Calendar of the Clarendon State Papers vol. IV (Routledge 1932)** (IA `calendarofclaren04bodluoft`): begins Dec 1657, so July 1657 lies in
+  vol. III (V-THURBM read it: nothing). Context only: a Blanck Marshall letter of May 1658 (Clarendon MS 58 ff.49-50) is calendared as "An
+  intercepted letter; deciphered cipher", endorsed by Hyde: the Royalist side read some of this correspondent's cipher in 1658. No July 1657 item.
+- (g) **Steinman, *Althorp Memoirs* (1869)** and Lord George Scott, *Lucy Walter* (1947, snippet): they quote Blank Marshall's letter of 26 Aug
+  1658 (Thurloe vii. 337), a different letter; Scott says Steinman "was able to read" its cypher. Context: other Blank Marshall cipher passages
+  have been read before; not this one.
+- (h) **Regesta diplomatica historiae Danicae** (1870, Google Books snippets of several copies): calendars this letter ("MAR. S. (= BLANK-
+  MARSHALL) ... om Samlingen af en anseelig dansk Armee i Naerheden af Bremen. Bruges, in this 8th of July (N.S.). J. Thurloe, State papers vol.
+  [vi]") -- an abstract of the letter's clear-text news about the Danish army near Bremen only; no cipher content.
+- (i) **Akkerman, *Invisible Agents* (2018) pp.222-223**: not read at page level. HathiTrust Bibliographic API by both ISBNs (9780198823018,
+  9780198849421): no record, so no HathiTrust EF either; Google Books volume rV9gDwAAQBAJ (PARTIAL) matches "Invisible Agents" "Blanck Marshall"
+  but returns no snippet. Tomokiyo, who cites these pages, reports only the endorsements and the Margaret Smith identification.
+  **Alan Marshall, *Intelligence and Espionage in the English Republic* (MUP 2023)** (Google Books QiqgEAAAQBAJ, PARTIAL/SAMPLE) and **Peacock,
+  "Cromwell's 'Spymaster'?", *The Seventeenth Century* 35 (2020) 3-30** (CORE record 52649821, no full text): not read.
+- (j) **Solver repositories**, cloned shallow this session: `aaymeloglu/unsolved-ciphers` has only the DECODE catalogue row for R4897 (key);
+  `dbourdeau/cyphersolver` `targets/thurloe/` applied "Marshall 1656-58" (harvested from cryptiana) to four other Thurloe pieces (1653-56), not
+  to this letter. **DECODE**: the Decrypted records on disk (`sources/decode/records-decrypted-2026-09-24.tsv`, 1360 rows) have no Bodleian
+  or Oxford holder; their BL Add MS 4166 items of 1657 are Henry Cromwell (R4880) and Gookin (R4881-82) per Tomokiyo, not Blank Marshall.
+- (k) Google Books API (keyed, country=US): 13 queries ("Blanck Marshall"; "Blank Marshall" Thurloe; ... Bruges 1657; "Mar. S." Bruges 1657
+  Thurloe; "Margaret Smith" "Blanck Marshall"; "Blank Marshall" cipher; "Michael Deane" Thurloe Bruges 1657; Akkerman/Marshall/Peacock titles):
+  hits are Birch, CSPD, the Clarendon calendars, Macray, Eva Scott, Todd 2000 (snippet: a July 1657 Bruges letter "concerning the King's troops",
+  not this text), Fea 1902 (the Aug 1658 letter), the Regesta Danica; no decipherment of this letter. OpenAlex 3, Semantic Scholar 2, CORE 2:
+  nothing on Blank Marshall beyond the two titles in (i). JSTOR: V-THURBM's 5 rows stand; no new row (Akkerman and Marshall 2023 are books).
+- Requests: archive.org 13 (advancedsearch 5, djvu 6, be-api 4; take/release lines), de-crypt.org 1 login + 5 files, cryptiana 2, BHO 2, Google
+  Books 17, OpenLibrary 1, HathiTrust catalog 2, OpenAlex 3, Semantic Scholar 2, CORE 2, OAPEN 1 (non-JSON), github.com 2 shallow clones.
+
+**4. Class.** **N3 confirmed, two audits.** Not yet N4: the principal editions (Birch, BHO, CSPD, Clarendon calendars III-IV, Nicholas IV, the
+Danish Regesta), the holding archive's catalogue (Macray: Rawl. A. 51 f.238, no decipherment noted) and the project pages (Tomokiyo, DECODE,
+both solver repositories) are now covered, but the principal study of this agent, **Akkerman 2018 pp.222-223 (with its notes)**, has not been read
+at page level, nor Alan Marshall 2023's index entries for Blanck Marshall. If both come back without a decipherment of the 8 July 1657 letter,
+this item goes to N4 without another audit (the P4 precedent, "## N4 decision, P4"). Key source: **`period`**, now on two independent grounds:
+rebuilt from Birch's printed period decipherments of four sibling letters, and identical to the period key sheet BL Add MS 4166 f.117 on every
+group of this letter. Text: not known in print (only its clear-text news is abstracted in the 1870 Danish Regesta).
+- **Safe sentence:** "Birch (1742, vol. 6 p.374) prints Blank Marshall's intelligence letter from Bruges of 8 July 1657 [N.S.] (original Bodleian
+  MS. Rawl. A. 51 f.238) with 151 cipher groups and no decipherment; read with the period key sheet for his cipher (BL Add MS 4166 f.117, DECODE
+  R4897), which agrees with a key rebuilt from Birch's printed decipherments of four other Blank Marshall letters, all 151 groups decode, five words
+  carrying slips in the cipher as printed; no prior decipherment of this letter located (N3, two audits)."
+- **Unsafe sentence:** "We cracked Blank Marshall's cipher and produced the first decipherment of a previously unread spy letter."
+
+**5. Depth (rule 4a).** Group values H 151/151 at face value; **144/151 (95.4%) give the intended letter at H**; 7 slip groups (intended letter I for 4, M for the 3
+groups of "mepllow"); no name or code group unread. **D3 confirmed**, now with a non-statistical external check (the period key sheet). Not D4: 7 groups'
+intended letters are inferred or unsettled, and no fresh session has re-derived the reading from the spec and the sheet alone (this session had
+seen the reading). Outward wording: "largely deciphered (about 95%)". Sentence unchanged (V-THURBM's, verified against the decode).
+
+**6. Postmortem.** No over-claim in the outward sentences. Two corrections: (i) FIX-THURBM's M on code 8 rests on THUR-BM2's "no stable meaning"
+reading of noisy glosses; the period sheet shows 8 = b, so the regrade under-claims (item 2 above). (ii) V-THURBM's 113/173 Ormond "conflict" is
+between Tomokiyo's text and the sheet, not a gap in our key: the sheet has 113 Ormond. Propagated in this session: status.json (this row),
+`second-opinions/PROMPT-chatgpt-bm44535.md` (one sentence added; the SO-THURLOE-BM44535 queue row quotes no counts), NOTES "## AUD2-FAMILY-A2r-1".
+Second-opinion files: none filed yet for this item.

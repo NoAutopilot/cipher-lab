@@ -1,0 +1,41 @@
+key_blankmarshall.tsv: letter codes agreeing with the sheet 92; differing or name codes 12; not on sheet 1
+  9: ours s|b / sheet b
+  104: ours chst / sheet K. Charles (name)
+  105: ours donjohn / sheet Don John (name)
+  106: ours dyork / sheet Duke of york (name)
+  112: ours bruxell / sheet Bruxels (name)
+  113: ours ormond / sheet Ormond (name)
+  120: ours hyde / sheet Hyde (name)
+  121: ours gerard / sheet Gerrard (name)
+  123: ours D. Gloucester / sheet Duke of Glocester (name)
+  131: ours conde / sheet Conde (name)
+  133: ours langdale / sheet Sr Mar: Langdale (name)
+  135: ours chsturat / sheet Sr Edw: Walker (name)
+  not on sheet: 143=chsteward
+key_blankmarshall_7.tsv: letter codes agreeing with the sheet 93; differing or name codes 18; not on sheet 6
+  8: ours t|b / sheet b
+  104: ours chst / sheet K. Charles (name)
+  105: ours donjohn / sheet Don John (name)
+  106: ours dyork / sheet Duke of york (name)
+  109: ours dunkirk / sheet Ships belonging to Dunkirk (name)
+  110: ours oftend|otend / sheet Ships belonging to Ostend (name)
+  111: ours es / sheet Bruges (name)
+  112: ours bruffels|brussels / sheet Bruxels (name)
+  113: ours ormond / sheet Ormond (name)
+  115: ours donjohnquar / sheet Rochester (name)
+  118: ours newburgh / sheet Newbrugh (name)
+  119: ours midleton|middleton / sheet Middleton (name)
+  120: ours hyde / sheet Hyde (name)
+  121: ours gerard / sheet Gerrard (name)
+  123: ours dgloucefter|chdglocester / sheet Duke of Glocester (name)
+  131: ours conde / sheet Conde (name)
+  133: ours langdale / sheet Sr Mar: Langdale (name)
+  135: ours chsturat / sheet Sr Edw: Walker (name)
+  not on sheet: 143=chsteward, 169=ar, 173=ormond, 191=ea, 481=ma, 733=sirmarlang
+l.44535: groups 151; on the sheet 151; letter groups with the same value as the committed reading 145; name groups 6; mismatches 0
+  name group 1.2 104: sheet 'K. Charles' / reading 'chst'
+  name group 2.2 112: sheet 'Bruxels' / reading 'bruxell'
+  name group 2.3 123: sheet 'Duke of Glocester' / reading 'D. Gloucester'
+  name group 3.5 104: sheet 'K. Charles' / reading 'chst'
+  name group 8.9 120: sheet 'Hyde' / reading 'hyde'
+  name group 8.11 104: sheet 'K. Charles' / reading 'chst'

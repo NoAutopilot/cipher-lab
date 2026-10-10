@@ -3201,3 +3201,32 @@ Read so far: l.44535 145 of 151 groups at C (96.0%), 6 at M; 143 of 151 (94.7%) 
 - [ ] image-check: code 8 in ll.3370, 77385, 89881
 - [x] retry: none needed
 Verdict: keep going: 4 internal gaps; cheapest next: code 8 eye check on three crops, ~$1
+
+## AUD2-FAMILY-A2r-1 (second verifier, account 1, Opus 5.5, 10 Oct 2026 15:42-16:1x UTC by date -u)
+Second adversarial audit of l.44535: AUDIT.md "## AUDIT 2 (AUD2-FAMILY-A2r-1, l.44535; second adversarial audit)". N3 confirmed (two audits), D3,
+key period. The period key sheet BL Add MS 4166 f.117 (DECODE R4897) is transcribed in `bm/key_period_f117.tsv` and checked by
+`bm/audit_period_key.py --check` (exit 0): it gives the committed value for all 151 groups of l.44535 (145 letters; 104 K. Charles, 112 Bruxels,
+120 Hyde, 123 Duke of Glocester), code 8 = b and code 9 = b. The original is Bodleian MS. Rawl. A. 51 f.238 (Macray's index).
+**Proposed FIX (verifier's recommendation, not applied; solver-side files):** in `bm/slips.tsv` drop the code-8 row (debts has no slip); grade the
+151 group values H in `bm/decode_44535.py` citing `bm/key_period_f117.tsv`; set code 9 to b in `bm/key_blankmarshall.tsv`. Then re-run
+`--check` and propagate (AUDIT 2 s.2 already states the H grades; status.json `completeness` names the pending regrade).
+Conflicts logged (rule 4, not settled, not in l.44535): 135 chsturat (print gloss) vs Sr Edw. Walker (sheet); 173 Ormond (Tomokiyo, one gloss) vs
+113 Ormond (sheet); 115 Rochester (sheet) vs an alignment fragment.
+
+## Remaining gaps (AUD2-FAMILY-A2r-1, 10 Oct 2026; replaces the FIX-THURBM list)
+Read so far: l.44535 151 of 151 group values from the period key sheet (H at face value); 144 of 151 (95.4%) give the intended letter.
+- N4 for l.44535: Akkerman 2018 Invisible Agents pp.222-223 and notes, Alan Marshall 2023's Blanck Marshall entries - blocker: not-attempted; in copyright, not on HathiTrust, Google Books gives no snippet from the cloud; next: a page read in a person's browser (LOCAL-QUEUE row for the orchestrator to file), ~$0.5
+- Regrade l.44535 to H from the period sheet and drop the code-8 slip row (FIX above) - blocker: not-attempted; solver-side file edit after this audit; next: a short FIX job running decode_44535.py --check and audit_period_key.py --check, ~$0.5
+- l.3370 word-code pairing (codes 109-191, 481, 733) - blocker: not-attempted; the aligner's chunks for single-occurrence word codes are fragments; next: pair l.3370's name glosses with key_period_f117.tsv's names 102-139 instead of the aligner's fragments, ~$0.5
+- Jephson (ll.65973, 76999, 86578) and Meadowe (l.75081) glossed letters - blocker: not-attempted; unchanged since THUR-V6; next: align as one Jephson pool and one Meadowe item (Meadowe's period key is BL Add MS 4166 f.102-103, DECODE R4890), ~$2
+- The vol 6 Downing-Lockhart and vol 4 Blake control-miss letters - blocker: not-attempted; unchanged since THUR-B146; next: align as key_blake/key_lockhart pool extensions, ~$1.5
+
+## Escalation (AUD2-FAMILY-A2r-1, 10 Oct 2026)
+- [x] siblings: seven Blank-Marshall letters aligned (THUR-BM2)
+- [x] clear-pages: l.44535 clear rows restored (FIX-THURBM)
+- [x] known-keys: the period key sheet BL Add MS 4166 f.117 compared value by value (bm/audit_period_key.py)
+- [x] print: Birch's gloss is the key source; BHO's transcription compared (two BHO keying errors)
+- [x] key-rebuild: gate7 PASS
+- [x] image-check: code 8 answered by the period sheet (8 = b); l.44535 rows 5-7 re-checked on the crops
+- [x] retry: none needed
+Verdict: keep going: 5 internal gaps; cheapest next: the l.44535 H regrade FIX job, ~$0.5
