@@ -94,3 +94,24 @@ Consolidates the E323 (FIX-FM13), E334 (FIX-FM15) and E345 (FV-MS18f) notes abov
   (x3), E323 (prints, all Washington outgoing to western posts: St Louis x2, Sherman's HQ) and E55 (the office's own interlineation, Washington to Louisville).
   Proposed key.md wording in NOTES.md "## KEY-CANBY". **Applied 10 Oct 2026 (FIX-FM17):** key.md carries the date condition as a note under the four unchanged rows; E55, E323, E334, E345 re-graded to Canby, C (print), by per-entry `gloss:`; still a rule-4 conflict record, with these witnesses, not a majority decision. Script: none (a lookup over ciphertext.txt and AUDIT.md; the counts are re-derivable with
   `grep -n -i -w -E "leghorn|legends?|lehigh|leopard" ciphertext.txt`).
+
+## O9-BOOK pre-registration (10 Oct 2026, 00:58 UTC by date -u; account 1, for LANE LEDGER-N2; written before any decode)
+
+- **Question.** Which book in hand (No. 1 key.md, No. 2 key-no2.md, No. 9 key-no9.md) reads ten 1864 mssEC 18 rows the share guessed No. 9:
+  9926/1, 9880/2, 9709/1, 9772/0, 9694/2, 9699/0, 9808/2, 9845/0, 9830/1, 9673/0 (pointer/entry_on_page of ms18/entries-ms18.tsv).
+- **Text.** The volunteer transcription on disk (sources/mssEC18/p<pointer>.json), entry cut from its header line to its last line as
+  entries-ms18.tsv gives them. Transcription-conditional (rule 2); no image fetched unless the time word cannot be read from the text.
+- **Instrument A (gate, the brief's).** Score = coherent-word count: a word-kind code token whose meaning (first/last word) forms, with the
+  read word on either side (decode._read_word, same book), a word bigram seen >= 2 times in the OR text on disk (sources/ia-fulltext/print-check/
+  warofrebellion*_djvu + officialrecordso*_djvu, lowercased [a-z]+). Controls: each book's key with its word-kind meanings permuted among its own
+  word-kind rows, seeds 1-3 (9 shuffled runs per row). A book "reads" a row only if its score is strictly above all 9 shuffled scores and strictly
+  above both other books. Supplementary (not the gate): 20-seed p95 per book. Control check (rule 3, can the control differ?): a shuffled key keeps
+  the set of code tokens and changes only meanings, and the score depends on meanings, so the control can fail differently from the target.
+  Known leak: the OR volumes on disk may print some of these very telegrams; that favours the true book only, and the gate still needs it to beat
+  the other books' readings, so it can produce a false "none" but not a wrong book.
+- **Instrument B (NOTES "Book assignment note (rule 3)": the header word decides).** Read on the page text: a pencilled book mark ("9", "( 9 )",
+  "No 9") in the header; the opening place word (Pagan/Pagoda = Washington in No. 9; Battery in No. 1, Artillery in No. 2); the time word against the
+  header's written time under each book.
+- **Verdict rule per row.** No. K if B points to K and A does not name a different book; if A names K and B is silent, No. K; if A and B name
+  different books, "conflict -- none filed"; neither, "none in hand". A row that reads No. 1 is handed to LANE LEDGER, not filed. Nothing is filed by O9-BOOK.
+- **Script.** o9book.py (this folder); output o9book.out.
