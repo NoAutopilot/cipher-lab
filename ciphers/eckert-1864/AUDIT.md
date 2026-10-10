@@ -14461,3 +14461,74 @@ the four monographs page by page are unsearched. Not D4: no fresh rule-7 re-deri
 
 Requests: hdl.huntington.org 5 (3 item info 200; 2 CISOSEARCHALL closed without response); archive.org 13 (7 advancedsearch, 6 djvu texts: 4 200, 1 401,
 1 403); be-api.us.archive.org 43; googleapis.com 24; www.loc.gov 4; chroniclingamerica.loc.gov 2 (HTML stubs); tile.loc.gov 1; web search 3.
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER-37)
+
+Second verifier AUD2-LEDGER-37 (account 4, for the orchestrator (account-4); row queued by LANE LEDGER incarnation 9 (account 1), re-tagged from account 3),
+10 Oct 2026, 02:24-02:4x UTC by `date -u`; a separate session and account from the reader MS18-R7 and the first auditor FV-MS18n (account 1); this session had
+not read or audited E371, E374 or E375 before. Scope: **E371, E374, E375**. Nothing decoded; no image re-check (FV-MS18n eye-checked every line at 2400 px).
+Key source for all three: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Committed (`ms18/`): `aud2_ledger37_hdl.py` + `.out`,
+`aud2_ledger37_info.out` (8 CONTENTdm queries, 6 item infos); `aud2_ledger37_ia.py` + `.out` (IA advancedsearch 9, be-api 22); `aud2_ledger37_search.py` + `.out`
+(Google Books 12, Chronicling America 6); `aud2_ledger37_gb2.out` (11 Google Books follow-ups, run inline, queries in the file); `aud2_ledger37_ca_pages.py` + `.out`
+(5 named Chronicling America pages); two JSTOR-QUEUE.tsv rows.
+
+### 1. Families FV-MS18n did not cover, and what this pass did
+| Family | FV-MS18n | This pass |
+|---|---|---|
+| Huntington CONTENTdm, single rare words (all pointers) | 10 queries | 8 more: Ferry 712 (Harper's Ferry noise; not opened); Terry quartermaster 0; **Robt Allen 9** (4602, 9842 own, 8359, 4745, 9883, 8380, 8414, 8415, 8612); **Whiton 12** (incl. 9673 own, 9836 = E370, 9098); Isaac Surrat 3 (8012, 8015, 8830); Surrat Baltimore 1 (8012); Bodle Baltimore 1 (8012); Devrux 0. Item info: 8359 (15 Sept **1863**, Allen at St Louis), 8380 (29 Sept 1863), 8414/8415 (21-22 Oct 1863, Allen's St Louis telegrams) -- the same day-month as E371 a year earlier, other texts; 9098 (21 Oct 1864, Whiton to Adna Anderson, other); 8015 (23 Oct 1865, Sheridan: the informant on Isaac Surratt is Attril of Matamoros, Spires just arrived; context for E375). **No duplicate or clear copy of any of the three** |
+| OR ser. III vol. 4 (QMG papers 1864-65) | "not on IA under any identifier found", not searched | Two IA items titled "Series III Vol IV" (`waroftherebellio026242mbp`, `in.ernet.dli.2015.165578`, and `.155283`) are **Series II vol. IV** (prisoners, 1862) mislabelled -- text checked; `in.ernet.dli.2015.171703` is Ser. III vol. IV but its OCR is degraded and partial (1.6 MB; 'Meigs' 2 hits in a volume of the QMG's correspondence): Ferry 3 (all "ferry" boats), Louisville 22, 'Louisville funds' 0, Devereux 0. **Not a usable search; OR III/4 stays unsearched**. `in.ernet.dli.2015.165571` (Ser. III vol. V): OCR unusable (McCallum 0) |
+| E371: the colonel's identity (Army registers, AGO orders) | open: Ferry or Terry, M | **Resolved by print.** Google Books snippets: *Army and Navy Official Gazette* (1864-65; `9b1OAQAAMAAJ`, `dQpJAQAAIAAJ`, also *Army and Navy Journal* `3x4_AQAAMAAJ`): "Special Orders No. 279, Adjutant General's Office, August 24, 1864. Colonel J. H. Ferry. [To Louisville, Kentucky.] To enter at once upon his duties as chief quartermaster depot at [Louisville]"; `ePkVZ9RSsacC`: "Captain J. H. FERRY. [To Memphis, Tennessee.] Relieved from duty as Chief Quartermaster of Depot at Louisville, Kentucky, with rank of Colonel. To proceed to Memphis, Tennessee, to report to Colonel R. E. Clary" (order number and date not shown in the snippet; a nearby snippet on the same page names "Special Orders, No. 306, Adjutant General's Office, September 16", which would fit -- **not established**). House Executive Documents 1865 (`G5sFAAAAQAAJ`): "J. H. Ferry. Chief quartermaster principal depot, Louisville, Ky." (officers assigned under the act of 4 July 1864); Official Army Register 1866: Capt. John H. Ferry, A.Q.M. (brevet), May 27, 1865; Senate Documents 1895: "quartermaster at Louisville, Capt. John H. Ferry"; House report 1877 (44th Cong.): relief of "John H. Ferry, late captain and assistant quartermaster of volunteers, in his accounts". So the plain name is **Ferry**, the man **Capt. John H. Ferry, A.Q.M. of volunteers, acting with the rank of colonel as chief quartermaster of the Louisville depot from 24 Aug 1864**, relieved soon after -- every circumstance of E371, none of its text. *Mereness Calendar* (`b1sPAQAAMAAJ`, `zFUPAQAAMAAJ`, snippet only): a QMG's Office entry to "Robert Allen, Louisville, Ky." near "Ferry to E. M. Stanton" -- **unread; the most likely printed calendar of the same correspondence** |
+| E371: press | Louisville press unsearched | Chronicling America 'Colonel Ferry quartermaster' (Sept 1864-Mar 1865) 437, 'Ferry quartermaster Louisville' 180, 'Terry quartermaster Louisville' 25 page hits; titles read (Nashville Daily Union, NY Tribune, Evening Star, Chicago Tribune...); no Louisville title in the hits; not read at the page (rank-dependent, weak) |
+| E374: railroad histories | Weber via be-api (snippets) | Weber, *Northern Railroads* (`northernrailroad0000webe`): 'Devereux' -> Gettysburg 1863 passages; 'Anderson Nashville' -> McCallum calling on Anderson at Nashville; no 6 Feb 1864 telegram. Abdill: not on IA. Google Books '"Devereux" "go West" Stanton 1864 McCallum', '"Whiton" McCallum 1864 telegram', '"Devereux" Stanton "not willing" 1864': 0 relevant (Biographical Cyclopaedia 1887 prints a Stanton letter to "J. H. Devereux, Superintendent, Alexandria", snippet, other text). Chronicling America 'Devereux Anderson McCallum' (25 Jan-15 Mar 1864) 0 |
+| E375: the Surratt trial record and Baker | not searched | IA be-api: *Trial of John H. Surratt* (1867) vols 1-2 (`trialofjohnhsurr01surr`, `...02surr`): 'close watch' 0 and 0; 'Isaac Surratt' only incidental Surratt hits; the 1868 House message (`trialofjohnhsurr00unit`) 'Isaac Surratt' 0. L. C. Baker, *History of the United States Secret Service* (1867, `historyofuniteds00bake`): **prints Sheridan's intelligence** ("Isaac Surratt, another son of Mrs. Surratt, left Monterey, Mexico ..." = holder 8828's text), 'close watch' 0, 'Surratt Baltimore' only Mrs. Surratt passages -- Baker printed the warning, not Eckert's 20 Oct answer or his own 19 Oct report. *Papers of Andrew Johnson* vol. 9 (`papersofandrewjo0009john`): prints the same warning ("I have information deemed reliable that Isaac Surratt ... left Monterey") at p.228 with a note on Isaac D. Surratt (1841-1907); 'close watch' 0, 'Eckert' only other Sept 1865 matters, 'Surratt Baltimore watch' 0 |
+| E375: press | Chronicling America 3 queries (titles) | 2 more (18 and 38 page hits, 15 Oct-31 Dec 1865); 5 pages read in OCR (Baltimore Daily Commercial, NY Tribune 28 Oct p.1; Evening Star 25 and 27 Oct p.2; Intelligencer 28 Oct p.3): the Surratt house furniture sale, **no Isaac Surratt report and no telegram**. Google Books: *The Catholics and Mrs. Mary Surratt* (2008, snippet): "Isaac reached Baltimore, he was arrested ... The story was sensational copy" -- the press did report his Baltimore arrival or arrest (pages not found here); NY Times Index (1966 reprint) has an Isaac Surratt entry (no snippet) |
+| Google Books phrase tests | 6 | 12 + 11 (s.1 rows above included): '"keep a very close watch" Surratt' 111 (Harper's Weekly 1867: "close watch on him. This surveillance was maintained for nearly a year" -- John H. Surratt in Europe, other; trial reprints), '"Isaac Surratt" Eckert 1865' (NYT Index only), '"withdraw" "all Government funds" quartermaster 1864 Meigs Allen' 0 relevant, '"withdraw" Ferry funds Louisville Allen Meigs September 1864' 0: **no hit prints any of the three telegrams** |
+| JSTOR | not queued | 2 rows: (i) Ferry + Louisville + quartermaster + 1864 + (Meigs OR Allen); (ii) bare phrase "keep a very close watch on the man referred to"; never blocking |
+| Unreachable / not searched | -- | OR ser. III vol. 4 readable text (no usable IA OCR; HathiTrust Cloudflare; Cornell's Making of America now routes to HathiTrust); the Mereness Calendar at the page; NARA RG 92 (Ferry's file, QMG letters sent), RG 107 (telegrams sent), M599; the Louisville and Baltimore press page by page; Baker's papers; HathiTrust; NARA catalog (no key) |
+
+### 2. Findings
+- **No copy, quotation or printed text of E371, E374 or E375 found.** The holder has no duplicate (s.1). Print has the *circumstances* of all three -- Ferry's
+  appointment and relief at Louisville (AGO orders, 1864-65), Anderson's appointment at Nashville (McCallum's report, Weber), the Isaac Surratt warning (Baker 1867,
+  Papers of Andrew Johnson vol. 9) -- none of the telegrams. Events, not texts: no N2 or N1.
+- **E371 colonel identified:** "Ferry" (not Terry), Capt. John H. Ferry, assistant quartermaster of volunteers, chief quartermaster of the Louisville depot with
+  rank of colonel by AGO S.O. No. 279 (24 Aug 1864), then relieved and sent to Memphis (order date not established; possibly S.O. No. 306, 16 Sept 1864, the day
+  after E371). Grade of the identification: I (by print, outside E371's text); the plain word "Ferry" itself stays as read. This is an external, non-statistical
+  check of E371's content (a colonel Ferry was chief quartermaster of the Louisville depot in Sept 1864), which FV-MS18n lacked: depth **D2 -> D3**.
+- **Risk to the classes.** E371: the *Mereness Calendar* snippet (QMG to Robert Allen, Louisville; "Ferry to E. M. Stanton") may calendar this order or its
+  paper twin -- a calendar summary of a QMG letter would be N2/N1-relevant; read it before any N4. E375: the press story of Isaac Surratt's arrival or arrest in
+  Baltimore (Oct 1865) may quote the exchange; not found here.
+- FV-MS18n's statement "OR ser. III vol. 4 is not on the Internet Archive under any identifier found" is corrected: it is there (`in.ernet.dli.2015.171703`) but
+  its OCR is too degraded to search, and two items so titled are Ser. II vol. IV. The family stays unsearched either way.
+
+### 3. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E371 | **N3** (kept) | period | **D3** (raised from D2: H 14 of 14 code groups; external non-statistical: AGO S.O. No. 279, 24 Aug 1864, and the later relief order, Army and Navy Official Gazette; House Ex. Doc. 1865 roster "J. H. Ferry, chief quartermaster principal depot, Louisville") | not located after FV-MS18n's search and s.1 |
+| E374 | **N3** (kept) | period | **D3** (kept) | not located; Weber, Google Books, Chronicling America add nothing |
+| E375 | **N3** (kept) | period | **D3** (kept; context strengthened: holder 8015, Baker 1867 and PAJ vol. 9 print the warning) | not located; Surratt trial 1867, Baker 1867, PAJ vol. 9 have no 'close watch' |
+
+- Not N4 for any: OR ser. III vol. 4 readable text and the Mereness Calendar (E371), NARA RG 92/107, the Louisville and Baltimore press page by page, Baker's
+  papers, HathiTrust; JSTOR rows open. Not D4: no fresh rule-7 re-derivation session.
+- **Safe sentences:**
+  - E371: "Read at grade H with War Department Cipher No. 1: on 15 Sept 1864 the Quartermaster General, for the Secretary of War, ordered Brig. Gen. Robert Allen
+    at Louisville to withdraw at once all Government funds from Colonel Ferry (Capt. John H. Ferry, acting chief quartermaster of the Louisville depot since
+    24 Aug 1864, by printed Adjutant General's orders); the telegram itself was not located in print (searched 10 Oct 2026)."
+  - E374: FV-MS18n's, unchanged.
+  - E375: FV-MS18n's, unchanged.
+- Depth sentence E371 (mine, replacing FV-MS18n's): "In mid-September 1864 the War Department had Robert Allen take all Government money out of the hands of
+  John H. Ferry, the colonel it had put in charge of the Louisville quartermaster depot three weeks before." E374, E375: FV-MS18n's, unchanged.
+- **Unsafe:** "first", "new", "unpublished", "previously unread"; "Colonel Terry" (the name is Ferry); "Ferry was relieved on 16 Sept 1864" (order date not
+  established); "Ferry was dismissed for fraud" (nothing read says why); "Baker printed Eckert's answer" (he printed the warning only).
+
+### 4. Postmortem and fixes (for the next FIX job; reading.md and ciphertext.txt not edited here)
+- FV-MS18n's classes and counts stand; its one gap was the colonel's identity, left at "Ferry or Terry" without an army-register or AGO-orders search, and a
+  misstatement about OR III/4's absence from IA. Applied here: status.json E371/E374/E375 `audit_status` "two audits", `audit_refs` + this section, `gap`; E371
+  `depth` D3, `depth_check`, `depth_sentence`, `line` (safe sentence above); SO prompt PROMPT-chatgpt-e371.md context line (Ferry identified) -- the
+  SECOND-OPINIONS-QUEUE rows are unchanged (no class or count changed).
+- **ciphertext.txt / reading.md E371 header (FIX job):** "Colonel Ferry [or Terry, M]" -> "Colonel Ferry [= Capt. John H. Ferry, A.Q.M. vols., chief quartermaster
+  Louisville depot with rank of colonel, AGO S.O. 279, 24 Aug 1864; relieved and sent to Memphis, order date not established; I by print, AUD2-LEDGER-37]".
+- AUDIT (FV-MS18n) s.2 "OR ser. III vol. 4 ... not on the Internet Archive" -> "on IA as in.ernet.dli.2015.171703 with unusable OCR" (a FIX job's dated note).
+- Lesson: for a named officer in a quartermaster or staff telegram, search the AGO special orders as printed in the *Army and Navy Official Gazette* / *Army and
+  Navy Journal* (Google Books snippets) before leaving an identity at M.
+Requests: hdl.huntington.org 14 (8 CISOSEARCHALL, 6 item info), all 200; archive.org 9 advancedsearch + 5 metadata + 5 djvu downloads; be-api.us.archive.org 22;
+www.googleapis.com 23; www.loc.gov 6 search + 10 page/full-text. No 429, no challenge, no retry loop.

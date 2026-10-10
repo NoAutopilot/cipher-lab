@@ -12096,17 +12096,18 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-MS18n)'"
+        "AUDIT.md '## AUDIT (FV-MS18n)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-37)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth_by": "FV-MS18n verifier (account 1)",
+      "depth_by": "AUD2-LEDGER-37 second verifier (account 4)",
       "depth_date": "10 Oct 2026",
       "decode_status": "Partially decrypted",
       "date": "10 Oct 2026",
       "kind": "reading",
       "claim_scope": "completed-reading",
-      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-MS18n)' section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-37)' section 3 (FV-MS18n section 4 otherwise)",
       "reading_version": "MS18-R7 10 Oct 2026 (reading.md), grades as in AUDIT (FV-MS18n) s.3 (corrections in s.5 pending a FIX job)",
       "unresolved_spans": "",
       "depth_unread": {
@@ -12118,9 +12119,9 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Washington sent ledger): Quartermaster General Meigs to Brig. Gen. Robert Allen at Louisville, 15 Sept 1864: withdraw all Government funds from Colonel Ferry of the quartermaster's depot (E371)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 15 Sept 1864 the Quartermaster General, for the Secretary of War, ordered Brig. Gen. Robert Allen at Louisville to withdraw at once from Colonel Ferry (or Terry) of the quartermaster's depot there all Government funds under his control; not located in print (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-MS18n); not N4: OR ser. III vol. 4 (not on IA), Quartermaster General's papers (NARA RG 92), Louisville press Sept 1864, HathiTrust, JSTOR not searched; colonel's name Ferry/Terry M; second audit queued (AUD2-LEDGER-37)",
-      "depth": "D2",
+      "line": "Read at grade H with War Department Cipher No. 1: on 15 Sept 1864 the Quartermaster General, for the Secretary of War, ordered Brig. Gen. Robert Allen at Louisville to withdraw at once all Government funds from Colonel Ferry (Capt. John H. Ferry, acting chief quartermaster of the Louisville depot since 24 Aug 1864, by printed Adjutant General's orders); the telegram itself was not located in print (searched 10 Oct 2026).",
+      "gap": "N3 two audits (FV-MS18n, AUD2-LEDGER-37); not N4: OR ser. III vol. 4 (IA OCR unusable), Mereness Calendar entry (snippet only), Quartermaster General's papers (NARA RG 92), Louisville press Sept 1864, HathiTrust, JSTOR not searched; colonel identified by print as Capt. John H. Ferry (AGO S.O. 279, 24 Aug 1864), I; second audit AUD2-LEDGER-37 kept N3 (10 Oct 2026)",
+      "depth": "D3",
       "completeness": "14 H of 14 code-word groups; rest plain (names M)",
       "phrases": [
         "Huntington mssEC 18 (obj 10074) p.176, pointer 9842, E371"
@@ -12129,17 +12130,18 @@
       "documents": [
         "Huntington mssEC 18 (obj 10074) p.176, pointer 9842, E371"
       ],
-      "depth_sentence": "In mid-September 1864 the War Department had the chief quartermaster at Louisville strip a depot colonel of all the Government money in his hands.",
-      "depth_check": "code clause: The Brutus directs that you with draw from Pandora Ferry chief Vintons quotient of Dragon all shark funds = the Secretary of War directs that you withdraw from Colonel Ferry, chief quartermaster's depot of Louisville, all Government funds; no external check of the content found (D2)",
-      "depth_note": "14 H of 14 code-word groups; rest plain; colonel's name Ferry or Terry (M)"
+      "depth_sentence": "In mid-September 1864 the War Department had Robert Allen take all Government money out of the hands of John H. Ferry, the colonel it had put in charge of the Louisville quartermaster depot three weeks before.",
+      "depth_check": "code clause: The Brutus directs that you with draw from Pandora Ferry chief Vintons quotient of Dragon all shark funds = the Secretary of War directs that you withdraw from Colonel Ferry, chief quartermaster's depot of Louisville, all Government funds; external (non-statistical): AGO Special Orders No. 279, 24 Aug 1864 (Colonel J. H. Ferry to Louisville as chief quartermaster depot) and the later order relieving Capt. J. H. Ferry 'from duty as Chief Quartermaster of Depot at Louisville, with rank of Colonel' (Army and Navy Official Gazette 1864-65), House Ex. Doc. 1865 roster (D3, AUD2-LEDGER-37)",
+      "depth_note": "14 H of 14 code-word groups; rest plain; colonel = Capt. John H. Ferry (I, by print)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-MS18n)'"
+        "AUDIT.md '## AUDIT (FV-MS18n)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-37)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-MS18n verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -12160,7 +12162,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Washington sent ledger): W. H. Whiton to Col. D. C. McCallum at Nashville, 6 Feb 1864: the Secretary of War will not let Devereux go West; A. Anderson has left for Nashville (E374)",
       "line": "Read at grade H with War Department Cipher No. 1: on 6 Feb 1864 W. H. Whiton telegraphed Col. McCallum at Nashville that the Secretary of War would not let J. H. Devereux leave his duties to go West and that A. Anderson had left for Nashville; not located in print (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-MS18n); not N4: railroad histories (Weber, Abdill) at the page, NARA RG 92 Military Railroads, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGER-37)",
+      "gap": "N3 two audits (FV-MS18n, AUD2-LEDGER-37); not N4: railroad histories (Weber, Abdill) at the page, NARA RG 92 Military Railroads, HathiTrust, JSTOR not searched; second audit AUD2-LEDGER-37 kept N3 (10 Oct 2026)",
       "depth": "D3",
       "completeness": "11 H of 11 code-word groups (1 C by header); rest plain",
       "phrases": [
@@ -12178,9 +12180,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-MS18n)'"
+        "AUDIT.md '## AUDIT (FV-MS18n)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER-37)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-MS18n verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -12201,7 +12204,7 @@
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Washington sent ledger): Thomas T. Eckert to Brig. Gen. L. C. Baker at Baltimore, 20 Oct 1865: keep a very close watch on the man referred to (Isaac Surratt) (E375)",
       "line": "Read at grade H with War Department Cipher No. 1: on 20 Oct 1865 Thomas T. Eckert, for the Secretary of War, answered General Baker's report that Isaac Surratt was in Baltimore by asking him to keep a very close watch on the man; not located in print (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-MS18n); not N4: John H. Surratt trial record (1867), L. C. Baker's papers and History of the U.S. Secret Service at the page, Baltimore Sun Oct 1865, NARA M599, HathiTrust, JSTOR not searched; second audit queued (AUD2-LEDGER-37)",
+      "gap": "N3 two audits (FV-MS18n, AUD2-LEDGER-37); not N4: L. C. Baker's papers (his 1867 History, the 1867 Surratt trial record and Papers of Andrew Johnson vol. 9 full-text searched: warning printed, telegram not), Baltimore press on Isaac Surratt's arrival, Baltimore Sun Oct 1865, NARA M599, HathiTrust, JSTOR not searched; second audit AUD2-LEDGER-37 kept N3 (10 Oct 2026)",
       "depth": "D3",
       "completeness": "11 H of 11 code-word groups (3 C by header); 'watch' plain; rest plain",
       "phrases": [
