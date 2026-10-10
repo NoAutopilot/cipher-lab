@@ -1514,3 +1514,165 @@ wagons & mules & taking about Perkins samples yard The
 number trifle Continued wherry to verify raven vomit after which
 Watkins will return wind Lady
 note: N2R-1: No. 2 (bigram coherence per word-pair, No. 1 / No. 2 / No. 9; shuffled No. 2 x3 = -7.941/-6.854/-8.058; -7.773/-7.425/-7.859; ms18/n2r1_coherence.out; the H count cannot separate a key from its meaning-shuffled copy, ms18/n2r1.out). Printed OR I/37 pt 2 (IA warofrebellion372unit; Halleck to Grant, Washington 18 July 1864 12.30 p.m., after the running head 374): word for word; C against the print. Differences: the ledger has 'Genl Watkins' for the print's 'General Wright' (the decoder gives [Right], a key row, M for the code-versus-name question, not a key edit); 'The number trifle Continued' where the print has 'The pursuit will be continued' (the ledger's 'number' is a code group read here as the plain word; the decoder shows 'The number [Will be] Continued'); 'Perkins samples' = 60 prisoners (key). 'Lady' tail = Halleck (key).
+
+### N2-HA | Page 131 | 9791 | mssEC 18 (obj 10074, pointer 9791; printed page 125), 13 July 1864 11 PM Washington (the ledger's header time 11 PM; Sent ledger, entry 1 of the leaf; entry 0 of the same pointer is E354), signed C. A. Dana (the print), to Lieut. Gen. Grant at City Point ('Crossed'): since my dispatch of last evening to Rawlins there have debarked here of the Sixth Corps 1,689 men and of the Nineteenth Corps 3,560 men, 800 of the Nineteenth landed Monday; Emory has reported in person; the head of Wright's column passed Fort Reno at 5 PM moving out on the Rockville road, his own two divisions and the Nineteenth Corps troops, in all about 15,000 men; Lowell's cavalry about 750; Wright will move on with all practicable energy but is inferior in numbers (N2R-3; row 9791/1; holder transcription, leaf not eye-checked)
+Wash. July 13. 1864 11 PM
+Happy mark Hudson Susan for Crossed tulip Since my dispatch
+of last eve'g to Shark Rawlins there have debarked here
+talbot Dawson Pelham Johnson Snyder & tucker Ellsworth Summer &
+talbot Morgan Pelton Norris Caldwell Douglas & Perkins Summer ----
+as Italy remember Edwards Davis Summer talbot Morgan Pelton were
+landed on Woodbury ---- Spark Emory has also reptd in
+person & says that the remainder of Arnold Queens of
+his pelham are close at hand ---- The head of
+Spark Watkins laugh passed Saco Reno at laura swindling out
+on the Rockville weakens ---- His Salem consists of his
+own Arnold quakers & talbot wedges talbot Morgan pelten in
+all about Jones Smith Summers ---- Pearl Lowell's pedlar which
+is serving with him amounts to abt Cushing Davis &
+Palmer Summer ---- Watkins will Swindle on with all ursa
+energy but as yet his prospect is inferior in numbers
+note: N2R-3: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .40/.63/.18); No. 1 reads 'Hudson ... Movement Dawson Corps ... Impregnable', no clause; No. 2 reads the whole clause, decoded time 11 PM = the header hour and day 13 = the header day (No. 1: 11.30 PM, day not matched; 200-seed shuffle of No. 2: time 4 of 200, day 45 of 200). IN PRINT: OR I/37 pt 2 (IA warofrebellion372unit) pp.259-260, War Department 13 July 1864, 11 p.m., C. A. Dana to Lieut. Gen. Grant, City Point, word for word ('Since my dispatch of last evening to General Rawlins there have debarked here of the Sixth Corps 1,689 men, and of the Nineteenth Corps 3,560 men. ... The head of General Wright's column passed Fort Reno at 5 p. m., moving out on the Rockville road ... Colonel Lowell's cavalry, which is serving with him, amounts to about 750 men'); grade C against the print for every decoded clause; the decoder's '[1600] & [89]' = 1,689, '[3500] & [60]' = 3,560, '[Eastport] at hand' = 'close at hand' (M for the code word), 'Ewell' for 'Edwards' (the print names Edwards Ferry elsewhere; here the print reads 'As you will remember' for the code group, M).
+
+### N2-HB | Page 179 | 9839 | mssEC 18 (obj 10074, pointer 9839; printed page 173), 12 Sept 1864 8 PM Washington, S. H. Beckwith (operator), to Lieut. Gen. Grant at City Point, signed (decoded) the Quartermaster General (M): Colonel Bingham and the other inspectors have been ordered to report here for instructions; as soon as Bingham arrives he will be sent on the inspection of the Little Rock route unless some other suitable officer reports; Rutherford, chief of one division of this office, has been sent away by the Secretary of War on a special tour of inspection; Biggs cannot be spared; Carr was nominated for promotion as chief quartermaster of the Department of the Arkansas; difficulty in supplying troops at Fort Smith and above; wagon transportation asked from Fort Leavenworth for 1,200 tons a month; the cost this winter will be enormous; they report it impracticable to supply Fort Smith and Gibson by the river; nearly impracticable to supply them by wagon from Fort Hawkinsworth (N2R-3; row 9839/0; leaf 9839 (printed p.173) read at 2400 px: header and lines 1-13 agree with the holder transcription, the rest holder transcription only)
+to Beckwith  Washn Sept 12th 1864
+8 pm for Magic tulip Paxton Bingham & the other
+Inspectors have alben repeated to Watson here for
+instructions panther Pearl Bingham arrives he wilby sent on
+the inspection talbot route to Little Rock unless somother
+suitable radical watsons and is despatched there earlier yard
+As Paxton Rutherford chief of allen talbot quakers of
+this office rank away blithe Costume upon a special
+tour of Inspection to quicken Pearl Biggs now would
+too much cripple us here stick Paxton Carr was
+nominated for promotion as chief vermont quotient talbot Asp
+upon watsons of Inspect - ors which are contradicted by
+watsons since received yard I fear that there trifle
+difficulty in seasoning widows at Saco Smith & above
+that trinity stick They ask for wagon weasel from
+saco Leavenworth for Hoffman Snyder tons per month yacht
+The cost & difficulty of seasoning this quantity by
+wagons over such route this winter trifle enormous tulip
+at such expense should the present tinker of wharf
+on the upper Adam be maintained stanhope They watson
+it impracticable to season saco Smith & Gibson blithe
+wafer stick It seems to me nearly impracticable to
+season them by wagon from Saco Hawkins = worth welch
+Buggy Quantrell was owled wherry at Indian = apple = is
+note: N2R-3: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .30/.47/.14); No. 1 reads 'Maj Gen O. O. Howard ... Resist ... Camp Bingham', no clause; No. 2 reads the clause; the day (12th) is plain text in the header only, so the day/time test is not testable here (the control row for this entry reads n/n/n and 0 of 200 shuffles for time; ignore). The context is the Quartermaster's reply to Grant's 11 Sept 1864 10.30 a.m. request for 'a good, competent inspecting officer' for the Department of Arkansas, 'Either Colonel Biggs or Bingham would be good officers' (OR I/41 pt 3, IA warofrebellion413unit, p.157: Grant to Halleck; Judson D. Bingham and Herman Biggs both appear in its index at p.157). Not located in print as this telegram: see NOTES '## N2R-3'. The tail 'Quantrell was arrested today at Indianapolis' (Quantrell = the key's value for a name; M) is a second sentence the reader has not tested.
+
+### N2-HC | Page 147 | 9807 | mssEC 18 (obj 10074, pointer 9807; printed page 141), 2 Aug 1864 Washington (the ledger header '(No 2)'; cipher time word 2.30 PM), S. H. Beckwith (operator), to Lieut. Gen. Grant at City Point: Grover's command of the Nineteenth Corps landed last night; a few companies of Torbert's cavalry are arriving; the transportation of troops in small steamers is slow; several days before Sheridan's division is all landed; as it now stands Wright commands the Sixth Corps, Emory the Nineteenth, Crook the troops of the Department of West Virginia, and Averell and Duffy the cavalry, Hunter being in general command of the whole; if Sheridan is not placed in general command I think he should take all the cavalry but not the Sixth Corps; to make that and the cavalry a single and separate command will ... (N2R-3; row 9807/1; holder transcription, leaf not eye-checked)
+Beckwith (No 2)  Wash. D. C. Aug 2. 1864
+City Pt
+Henrietta Brooks for chart tulip Grover's princeton of morgan pelton
+landed last night & has N pauline on the weak
+Knees Wheedle Rocke ville ---- A few Cos of Torberts
+pedlar are arriving ---- The Weasel of widows in small
+Waltzers is slow <deletion>withdraw</deletion> <insertion>Translate</insertion> & I presume that several days
+will elapse before Negus Queen is all landed ---- as
+it now stands Watkins prospects the Dawson pelton pike Emory
+the Morgan pick Augusta the wedge of quotient of Walker
+Bermuda & lafitte & Duffy the pekin pickerel meriden being
+in shark prospect talbot whole ---- If Negus is not
+placed in spark princeton I think he shld take all
+the pekin but not the Dawson pelham ---- To make
+that & the pedlar a single & separate Comd will
+note: N2R-3: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .45/.52/.16); the same ledger leaf's entry 0 is N2-FF (1 Aug 1864, N2R-1). No. 1 reads 'Brooks for [Knoxville] ... [Demoralize] of morgan', no clause; No. 2 reads the clause, decoded day 2 = header day (shuffle 14 of 200); 'Hotly [?]' for the ledger's 'presume' is a key mismatch (M). The time word 2.30 PM is the key's value for the header's tail, no hour in the header (not testable). Not located in print: see NOTES '## N2R-3'. The entry breaks off at 'will' in the holder transcription: its end is on the next leaf or not transcribed (not read).
+
+### N2-HD | Page 228 | 9888 | mssEC 18 (obj 10074, pointer 9888; printed page 222), 5 Nov 1864 Washington (ledger header; cipher time word 1 PM), S. H. Beckwith (operator), to Maj. Gen. Grant at City Point, signed Maj. Gen. H. W. Halleck: Price's affair will be over in the course of the next ten days and Reynolds' troops can then be withdrawn from Arkansas; Steele's effective force is about 20,000; Sherman thinks a movement from the Mississippi toward Selma, cutting the Mobile and Ohio Railroad by which Beauregard's army is supplied, will be more advantageous than any operations on the coast; if you are of the same opinion Canby's instructions should be to that effect; for the present all Canby's efforts should be directed to prevent Kirby Smith from sending reinforcements across the river to assist Beauregard against Thomas (N2R-3; row 9888/1; holder transcription, leaf not eye-checked)
+Beckwith City Pt  Washn Nov 5th 1864
+Hannah Dayton For Bellows stick I think from present
+appearances that Knells affair willby over Shylock course talbot
+next Elliot days and that Maxims wharf Can then
+be with drawn from Asp yard Nutmegs Richland saint
+is now about Nelson Dwight yacht Fortune thinks that
+a surgery from the Aurora wheedle Harvard cutting the
+Galway and Biscay walnut by which Inks Peru is
+now supplied will be more advantageous to him than
+any religion on the Coast Tulip If you are
+talbot same opinion Mastiffs instructions should be to that
+Effect Yacht For the present I think all of
+Mastiffs efforts should be directed to prevent Jargon from
+sending the intended venus across the wafer to assist
+Ida and Kossuth against Falcon wiley Cupid good day
+note: N2R-3: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .50/.56/.20); No. 1 reads 'Maj Genl Wilson's affair ... Newbern'; No. 2 reads the clause, decoded day 5 = header day (shuffle 10 of 200) and time 1 PM (the ledger header has no hour). IN PRINT, with a date difference: OR I/41 pt 4 (IA warofrebellion414unit) near pp.421-424 (the page header preceding the telegram reads 424; leaf not opened), 'Washington, November 4, 1864 -- 12.30 p. m. Lieutenant-General Grant, City Point, Va.: I think from present appearances that Price's affair will be over in the course of the next ten days, and that Reynolds' troops can then be withdrawn from Arkansas. Steele's effective force is now about 20,000. Sherman thinks that a movement from the Mississippi River toward Selma, cutting the Mobile and Ohio Railroad, by which Beauregard's army is now supplied, will be more advantageous to him than any operations on the coast. If you are of the same opinion, General Canby's inst[ructions]...' Grade C against the print for the decoded clauses; the ledger entry is dated 5 Nov and the print 4 Nov 12.30 p.m. (an hour the ledger does not carry): the verifier decides whether this is the same telegram or a repeat, and the date difference is the reader's open question. The tail names the decoded Kossuth (a name code, M).
+
+### N2-HE | Page 213 | 9873 | mssEC 18 (obj 10074, pointer 9873; printed page 207), 21 Oct 1864 Washington (ledger header; cipher time word 4.30 PM), S. H. Beckwith (operator), to Maj. Gen. Grant at City Point, signed H. W. Halleck: no troops can at present be taken from Sheridan's command and the vessels collected at Alexandria are wanted elsewhere and involve enormous cost for demurrage, so I have directed General Rucker to use them for other purposes, they can be collected again in a week or ten days; nothing satisfactory from Missouri; I can form no clear idea of the condition of affairs from reports received here; Curtis seems to be fighting near Independence but I hear nothing of Rosecrans, A. J. Smith's or Mower's divisions; no action yet as to change of commanders (N2R-3; row 9873/3; holder transcription, leaf not eye-checked)
+Beckwith City Pt  Washn Oct 21st 1864
+Katy Oliver Brown Belly As it is manifest that no
+wedge can at present be taken from Negus Princeton and
+as the vessels collected at Banjo are wanted else where
+and in valve enormous cost for demun age I have
+directed Spark Rucker to use them for other purposes Pike
+they canby collected a gain in a week or French
+days if required yacht Nothing say tis factory from Bremen
+stop I can form no clear I dear talbot corn
+ditch on of affairs from Watsons rec'd here paws shark
+Curt is seems toby retrenching near Dragon but I hear
+nothing of Meed Harding or Mowers quitman yard No action
+yet as to change of Polks yawl Lady howes Sam
+note: N2R-3: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .31/.41/.13); No. 1 reads 'Oliver Brown [Culpepper] ... [Jno A. Dahlgren] ... Chickamauga', no clause; No. 2 reads the clause, decoded day 21 = header day (shuffle 6 of 200); the ledger carries 'Manifest' struck and 'Execute' written (the decoder takes 'Execute'; the print reads 'manifest': M for that word). Same pointer as E330 (20 Oct 1864 3 PM, Halleck to Thomas, entry 2 or 3 of the same leaf). IN PRINT: OR I/41 pt 4 (IA warofrebellion414unit) p.153, Washington, Oct. 21, 1864, Halleck to Lieut. Gen. Grant at City Point, word for word ('As it is manifest that no troops can at present be taken from General Sheridan's command, and as the vessels collected at Alexandria are wanted elsewhere, and involve enormous cost for demurrage, I have directed General Rucker to use them for other purposes. They can be collected again in a week or ten days if required. Nothing satisfactory from Missouri. I can form no clear idea of the condition of affairs from reports received here. General Curtis seems to be fighting near Independence, but I hear nothing of Rosecrans, A. J. Smith's or Mower's divisions. No action yet as to change of commanders.'); grade C against the print.
+
+### N2-HF | Page 153 | 9813 | mssEC 18 (obj 10074, pointer 9813; printed page 147), 6 Aug 1864 Washington, F. T. Bickford (operator), to Brig. Gen. Ingalls (Quartermaster, City Point; decoded 'Quarter Master', the addressee 'Palermo In galls' = Ingalls), signed (decoded) the Quartermaster General (M): I have telegraphed to secure in Baltimore, Philadelphia and New York steamboats in addition to those now employed to move 12 or 13,000 men; we had here waiting orders and sent them all to City Point when the present movement began, steamers estimated by General Rucker to have a capacity of 19,000 infantry; when those now ordered arrive there will be room for over 30,000 men; this is to be kept in readiness for any necessary movement; in case of urgent necessity the flag-of-truce boats and the boats about Fort Monroe will of course be used (N2R-3; row 9813/0; holder transcription, leaf not eye-checked)
+Bickford  Washn Aug 6th 1864
+Anna for Palermo In galls vermont stop I have
+whimpered to secure in Baron Grammar & Girdle waltz
+boats in addition to what are now employed to
+swindle Gilbert or Graham Dwight summer stop we had
+here waiting orders & sent them all to Bridle
+when the present superb began waltzers which were estimated
+by shark Rucker to have a capacity of Loomis
+Seward squash yard when these now ordered arrive there
+wilby waymom for over Norris zebra summer yacht This
+is toby kept in readyness for any stomach supper
+yard In case of urgent necessity the flags of
+truce boats & the boats about Bunyan mill of
+Course be used in this work welch Buggy crabs
+note: N2R-3: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .35/.43/.21); same pointer as E327 (6 Aug 1864, Cavalry Bureau telegram to Hunter, entry 1 of the leaf); this entry is entry 0. No. 1 reads 'Casualties In galls Pursue ... Baton Rouge Tuscumbia & Shelbyville ... Chattanooga'; No. 2 reads the clause. The ledger header has no hour and the day is plain text (day/time not testable here; the control row reads n/n/n, ignore). 'Acton's of truce boats' is the key's value for 'flags' (M). Not located in print: see NOTES '## N2R-3'. OR I/40 pt 2 and pt 3 and I/42 pt 2 date windows 5-7 Aug for steamers/Rucker/capacity 19,000 gave only Meigs's 7 Aug telegram about Wilson's division embarking (a different text).
+
+### N2-HG | Page 180 | 9840 | mssEC 18 (obj 10074, pointer 9840; printed page 174), 13 Sept 1864 Washington (ledger header; cipher time word 11.30 AM), S. H. Beckwith (operator), to Lieut. Gen. Grant at City Point: in accordance with your previous instructions I directed General A. J. Smith to take charge of the expedition against Price and Co. and to select his own line of operations after consulting with Rosecrans and others; I so informed Rosecrans and directed him to assist Smith; Smith answered that he would wait for further news from Price before deciding but thought it probable that he would move by St. Louis and Rolla; is it now your wish that these orders be countermanded and that Smith report for orders to Rosecrans; before acting on your telegram of yesterday I wish you to understand precisely what orders have already been given (N2R-3; row 9840/0; holder transcription, leaf not eye-checked)
+Beckwith  Washn Sept 13th 1864
+Florence Hudson Crowd tulip In accordance with your previous
+instructions tommie I directed Harding to take charge talbot
+ripley against Knell & Co & to select his
+own line of religion after consulting with Mud &
+others unity I so spencered Mud & directed him
+to assist Harding all he could stick Nuptial answered
+that he would wait for further new of Knell
+before deciding but thought it probable that he would
+swindle by Holland and Rolla yard Is it now
+your wish that these repeats be counter summered &
+that Nuptial Watson for ditto to Mud Stanhope Before
+acting on your whiff of yesterday I wish you
+to understand precisely what repeats have already been given
+note: N2R-3: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .36/.41/.12); No. 1 reads 'Hudson [Knoxville] ... Harding ... Maj Genl Wilson & Co'; No. 2 reads the clause, decoded day 13 = header day (shuffle 6 of 200), time 11.30 AM (the key's value for the sent hour; the ledger header has no hour). The decoded 'Lieut Gen U.S. Grant' fills the addressee slot; the signature (Halleck) is not in the transcription. IN PRINT: OR I/41 pt 3 (IA warofrebellion413unit) near p.170, 'Washington, September 13, 1864 -- 11.30 a. m. Lieutenant-General Grant, City Point, Va.: In accordance with your previous instructions to me I directed General A. J. Smith to take charge of the expedition against Price & Co., and to select his own line of operations after consulting with General Rosecrans and others. I so informed General Rosecrans, and directed him to assist Smith all he could. Smith answered that he would wait for further news from Price before deciding, but thought it probable that he would move by Saint Louis and Rolla. Is it now your wish that these orders be countermanded, and that Smith report for orders to General Rosecra[ns]...'; word for word; grade C against the print (page from the nearest preceding page header, leaf not opened).
+
+### N2-HH | Page 114 | 9774 | mssEC 18 (obj 10074, pointer 9774; printed page 108), 6 July 1864 Washington (ledger header; cipher time word 2 PM), S. H. Beckwith (operator), to Lieut. Gen. Grant at City Point, signed H. W. Halleck: General Howe has reached Harper's Ferry ('Chum') with his command; Sigel is expecting an attack today; most of Hunter's forces have reached Parkersburg and are coming forward; it is believed that Ewell's corps under Early is in the Valley; it is reported that Sigel abandoned a large amount of public stores at Martinsburg without making any defense; as that place was without fortifications and only a mere outpost it is difficult to understand why the stores were taken from the depot at Harper's Ferry (N2R-3; row 9774/3; holder transcription, leaf not eye-checked)
+SH Beckwith  Wash'n D. C. July 6th 1864
+Helen Madrid tulip Shark Home has reached Chum
+with his princeton yard Neptune is expecting an
+parson wherry yard most of Meridens saints have
+reached Parker bourg and are coming pack tulip
+It is believed that Italy pelton under Early
+is shylock wrangle yacht It is watsoned that
+Neptune oiled a large amount of public stores
+at Flint without making any defense tulip As
+that place was without suggest & only a
+mere Taylor it is difficult to understand why
+the stores were take from the Queenly at
+note: N2R-3: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .43/.50/.20); same pointer as E377 (5 July 1864 4 PM, Halleck to Hunter, entry 2 of the leaf); this entry is 3 and breaks off at 'depot at' in the holder transcription. No. 1 reads 'Maj Gen O. O. Howard ... Government Home ... Chum', no clause; No. 2 reads the clause. IN PRINT: OR I/37 pt 2 (IA warofrebellion372unit) p.79, Washington, July 6, 1864 -- 2 p. m. (received 7th), Halleck to Lieut. Gen. Grant, City Point, word for word ('General Howe has reached Harper's Ferry with his command. Sigel is expecting an attack to-day. Most of Hunter's forces have reached Parkersburg, and are coming forward. It is believed that Ewell's corps, under Early, is in the Valley. It is reported that Sigel abandoned a large amount of public stores at Martinsburg, without making any defense. As that place was without fortifications, and only a mere outpost, it is difficult to understand why the stores were taken from the depot at Harper's Ferry.'); grade C against the print. The key's 'Chum' = Harper's Ferry and 'Home' = Howe are the ledger's own spellings of two code words; the code word 'Chum' is the key's value for a place name (a candidate attested here against the print: M for that single value).
+
+### N2-HI | Page 27 | 9687 | mssEC 18 (obj 10074, pointer 9687; printed page 21), 15 March 1864 10.30 AM Washington, S. H. Beckwith (operator), to Lieut. Gen. Grant at Nashville, signed H. W. Halleck, Major-General, Chief of Staff: a despatch just received from Banks, dated 6 March, says he expects to effect a junction with Sherman's forces on Red River by the 17th; he desires that positive orders be sent to Steele to move in conjunction with them for Red River with all his available forces; Sherman and Banks are of opinion that Steele can do much more than make a mere demonstration as he last proposed; a telegram from you might decide him; veterans of the Ninth Corps ordered to Annapolis (N2R-3; row 9687/0; holder transcription, leaf not eye-checked)
+S. H. Beckwith ( 2 )  Washn Mar 15th 1864 1030 Am
+Hunters Jones Enoch Elizabeth To Chart A Despatch just
+received from Lapland dated Enoch Clarke He expects to
+Relay a Sulphur with Fortunes Saints on Altar by
+the Lewis tulip He desires that positive repeats be
+sent to Nutmeg to Swindle in con Sulphur with
+them for Altar with all his Optic Salem yacht
+Flora & Cherub are of opinion that Nutmeg can
+do much more than make a mere Randolph as
+he last proposed yardstick A whim from you might
+decide him Tulip Veterans of Franklin Pelham repeated to
+an apple is yawl Lady Spunky Shark Chief Staff
+note: N2R-3: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .47/.76/.22); No. 1 reads 'Lee's Jones Enoch ... Maj Gen Joseph Hooker', no clause; No. 2 reads the clause; the cipher time word 10.30 AM = the header hour under No. 1 and No. 2 alike (not selective), the decoded day 15 = header day under No. 2 only (shuffle 22 of 200). IN PRINT: OR I/34 pt 2 (IA warofrebellion013402rootrich) pp.609-610, Washington, March 15, 1864 -- 10.30 a. m., Halleck to Lieut. Gen. Grant, Nashville, word for word ('A dispatch just received from General Banks, dated March 6. He expects to effect a junction with Sherman's forces on Red River by the 17th. He desires that positive orders be sent to General Steele to move in conjunction with them for Red River with all his available forces. Sherman and Banks are of opinion that Steele can do much more than make a mere demonstration, as he last proposed. A telegram from you might decide him. Veterans of the Ninth Corps ordered to Annapolis.'); grade C against the print (the OCR reads the headers 610 mid-telegram, the telegram begins on p.609).
