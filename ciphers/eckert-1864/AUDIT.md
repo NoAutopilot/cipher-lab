@@ -16159,3 +16159,114 @@ SECOND-OPINIONS row, no WORK-QUEUE AUD2-LEDGER12 row from this audit.**
 Requests: archive.org 19 (7 page_numbers.json + 12 page images, 3 off-by-two wrong leaves among them) + 6 by curl for the 3 right leaves (3 unfollowed 302s, then 3 followed to 200);
 hdl.huntington.org 15 (8 CISOSEARCHALL + 7 IIIF), one take, released, all 200, no drop. seven_day allowed_warning: seen in the brief, continued per
 lane-common-blast. For LANE LEDGER-12 (account 1).
+
+## AUDIT (FV-MS18r)
+
+Verifier FV-MS18r (account 1, for LANE LEDGER-12), 10 Oct 2026, 08:21-08:4x UTC by `date -u`; a separate session from the readers MS18-R9 and MS18-R10
+and from every other reader or verifier of these entries, not protecting their conclusions. Scope: first audits of **E402** (9811/1), **E403** (9877/3)
+(both filed "not located in print"), **E404** (9882/0, filed printed OR I/41 pt 4 p.389) and **E420** (9790/1, filed printed OR I/37 pt 2 p.291 or 292),
+all mssEC 18 (Huntington object 10074), Cipher No. 1. Brief: ledger12 jobs "## FV-MS18r" (E402/E403 = FV-MS18q method; E404/E420 = FV-MS18p method), the
+Wave 3 Step-0 ruling first. Intake gate (08:2x): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+Key source for all four: `period`. Nothing decoded; no file other than this section changed.
+
+### 0. Step 0 (Wave 3 ruling), re-run
+`ms18/ms18_r9_step0.py` and `ms18/ms18_r10_step0.py` (both call `step0_ordered.py`'s functions) re-run from disk at 08:3x; output identical to the committed
+`.out` files for these rows:
+| ID | row | (a) ordered overlap | (b) shuffle p95 | hit | (c) key-dependent words |
+|---|---|---|---|---|---|
+| E402 | 9811/1 | 0.381 (16/42) | 0.167 | no | 17: david fifty five gen genl grant head hunter maj ord point quarters rail right road transportation washington |
+| E403 | 9877/3 | 0.310 (9/29) | 0.172 | no | 16: arrest brigadier command department ed eight er general ing mchenry new president report telegraph twenty york |
+| E404 | 9882/0 | 0.442 (50/113) | 0.133 | no | 44 (Thomas, Rosecrans, A. J. Smith, Rawlins, Hood, Grant, St Louis, Nashville, Savannah, Michigan, Ohio, ...) |
+| E420 | 9790/1 | 0.439 (18/41) | 0.195 | no | 21: david enemy ferry follow force front general hunter junction major men nineteen rebel river road twelve twenty valley |
+No hit: the body is not known from the holder transcription for any of the four; the print (s.1) decides E402, E404 and E420.
+
+### 1. Print search and diff
+**FV-N2g lesson applied (re-read the reader's own print-check output).** `ms18_r9_printcheck.out` has, for X1 (E402), the phrases "Grant will leave here
+for" and "what point he should come for that purpose" at **none** and "furnish transportation for"/"Comstock" at many volumes (common words; the reader
+read the date windows, which carry other Aug 4-5 traffic: OR I/42 pt 2 Grant "will spend a day or two with the army under General Hunter"); for X4 (E403)
+"report to this Department by telegraph" in OR ser. I/2 vol. 7 and I/36 pt 2 (stock phrase, other messages) -- the reader's "not located" in the cached
+volumes stands; no hit line was mis-rejected. The cache simply lacked the edition that prints E402.
+- **E402 -- PRINTED (N1).** IA full-text search (be-api, whole collection) on "what point he should come for that purpose" returns one item,
+  `papersofulyssess0011gran` (Simon, ed., *The Papers of Ulysses S. Grant* vol. 11, Southern Illinois University Press), whose editorial note quotes the
+  telegram: Comstock, "Grants H. Q. Winder Building," telegraphed to "Maj. Gen. Hunter or Maj Gen Wright Near Monacacy." "Gen. Grant will leave here for Gen.
+  Hunters Hd Qrs about 3 P. M. by rail road. Will you inform me to what point he should come for that purpose and furnish transportation for five from that
+  point to [our] Gen Hunters Hd. Qrs." ALS (telegram sent) -- assembled from five overlapping be-api snippets (queries "what point he should come for that
+  purpose", "Gen. Hunters Hd Qrs about 3", "Maj. Gen Wright Near Monacacy", "telegraphed to Maj. Gen. Hunter or", "from that point"). The item is
+  lending-only (availability API refused), so **no page number and no page image**: be-api's page_num (534) is not a page locator (CLAUDE.md access playbook).
+  Diff against the reading: every plain clause matches; **two of the reader's bracketed code readings are wrong by the print**: the second addressee
+  'Wesley' = **Wright** (Maj. Gen. H. G. Wright), not unread; the destination 'Mackerals' (inserted over struck 'Meridens', leaf) = **Gen. Hunter's** [Hd
+  Qrs], not Ord's; [5] = **five** confirmed; 'Mutton' = Hunter confirmed (it reads Hunter again in E420's address, same operator McCaine). The ledger's own
+  hour 10.40 AM is not in the snippets. OR I/43 pt 1 (fetched to scratch, `warofrebellion014301rootrich`, letters-only grep and the 5 Aug 1864 date
+  window: seven 5 Aug items to/about Hunter, none this one) does not print it.
+- **E403 -- NOT LOCATED.** Searched: the 177 cached OR/ORN and edition texts (grep "Maxon": only Benton, *Voting in the Field*, below); OR I/43 pt 1
+  (fetched); IA full-text across the whole collection on "arrest Maxon", "Stephen Maxon", "Maxon, State agent", "Amos Maxon", "arrest Stephen Maxon",
+  "Maxon" + Stevenson/Dana/McHenry/Harper's Ferry/ballots (0 relevant). Holder: CISOSEARCHALL "Maxon" (p16003coll11, all pointers) -> 1 hit, 9877 itself
+  (this entry's own page); positive control 'Inspector Inquiry evidence' -> 9678. **Context found, not the telegram:** the press of 2 and 9 Nov 1864
+  (Lewistown Gazette 2 Nov, Raftsman's Journal 9 Nov, IA `xt7jsx64773s`) and Benton, *Voting in the Field* (cached), report testimony in the New York
+  soldier-vote forgery case that "the idea of forging these papers was first suggested by a man named **Stephen Maxon**", a Democratic agent from the
+  western part of New York State. This corroborates the plain-word name and the "State agent" of the ledger (both plain on the leaf), not the key words.
+  Not searched (log): OR ser. II vol. 7 and ser. III vol. 4 by page; the Ferry-Donohue military-commission record; Dana's papers; the Baltimore and New
+  York press 28 Oct-1 Nov 1864 by page; Google Books (not run). So N3, not N4.
+- **E404 -- PRINTED (N1, confirmed on the page image).** OR I/41 pt 4 **p.389** (IA `warofrebellion414unit`, `/page/n394`, running head offset checked on
+  n397 = p.392), "Washington, November 1, 1864 -- 11.30 a. m. Major-General Thomas, Nashville, Tenn.", signed "H. W. Halleck, Major-General and Chief of
+  Staff". Word-for-word diff: date, hour, addressee and every clause of the reading's body match, with two differences, both the reading's: (i) the reading
+  header **omits the clause** "but as they had a long march before reaching railroad or steam-boat transportation, we may not hear of them for some days"
+  (it is on the leaf and in the transcription: "but as they had a long march before reaching weldon or weasel boat whig we may not hear of them for some
+  days"); (ii) signature: print "Major-General and Chief of Staff", reading "General in Chief" (Halleck was Chief of Staff from March 1864). Spelling only:
+  re-enforcements / reinforcements, Clifton, Savannah, or Nashville (order as read).
+- **E420 -- PRINTED (N1, confirmed on the page image).** OR I/37 pt 2 **p.291** (IA `warofrebellion372unit`, `/page/n296`; n297 carries running head
+  292), after De Russy's Arlington message and before the Cumberland letter to Governor Boreman: "Washington, July 13, 1864 -- 3 p. m. Major-General
+  Hunter: The enemy left our front in the night, and seem to be moving toward Edwards Ferry. General Wright will follow by the River road with about 12,000
+  men. It is hoped that your forces and those of General Howe will form a junction with him at that place. The rebel force is probably about the same as
+  that you encountered in the Valley, and is estimated at over 20,000. H. W. HALLECK, Major-General and Chief of Staff." Word for word identical to the
+  reading's body; hour 3 p.m. = the key's 'Imogene' (the leaf header has no written hour); the ledger tail 'why so slow' is not in the print (operator's
+  remark or null group). Page is 291, not "291 or 292".
+
+### 2. Leaf eye-check (IIIF 2400 px to scratch, not committed)
+- 9811 (E402): the entry's lines read on a crop of the leaf: header "McCaine Wash. Aug 5 1864 10.40 am / Monocacy Junc."; "for Mutton or Wesley";
+  "Meridens" struck and "Mackerel(s)" written above (the insertion reads "Mackerel" on the leaf; the transcription's final -s is doubtful); the rest matches
+  the transcription.
+- 9877 (E403): all six lines match the transcription; "Steven son" and "Stephen Maxon" are **plain** on the leaf (the reading brackets Stevenson as [M];
+  it is plain), "No 1" over the operator name, "9 30 am".
+- 9790 (E420): whole entry read on the downscaled leaf; matches the transcription line by line; no hour in the header.
+- 9882 (E404): leaf fetched but **not eye-read by me** (cap); the reader read the whole entry at 2400 px and the transcription matches the print clause for
+  clause (s.1), so no slip that matters to the N-class is open.
+
+### 3. Classification (rule 10; depth rule 4a)
+| ID | N | key | text | depth | safe sentence |
+|---|---|---|---|---|---|
+| E402 | **N1** | period | known | D1 | "Comstock's 5 Aug 1864 telegram announcing Grant's 3 p.m. rail trip to Hunter's headquarters at Monocacy is printed in Simon's Papers of Ulysses S. Grant vol. 11 (editorial note); the ledger copy read with the period key is an independent re-reading, which the print corrects on two code words (Wright, Hunter's)." |
+| E403 | **N3** | period | not known | D1 | "Read at grade H with War Department Cipher No. 1: on 28 Oct 1864 a message over Assistant Secretary Dana's name ordered Stevenson to [arrest] Stephen Maxon, State agent, and send him to [Fort McHenry], [by order of the President]; not found in the cached OR/ORN volumes, OR I/43 pt 1, IA full text or the Huntington's clear copies, searched 10 Oct 2026 -- fragments read." |
+| E404 | **N1** | period | known | D1 | "Halleck's 1 Nov 1864 11.30 a.m. telegram to Thomas on the reinforcements for Nashville is printed in OR I/41 pt 4 p.389; the ledger copy, read with the period key, matches it." |
+| E420 | **N1** | period | known | D1 | "Halleck's 13 July 1864 3 p.m. telegram to Hunter (Wright following the enemy toward Edwards Ferry) is printed word for word in OR I/37 pt 2 p.291." |
+Unsafe: "deciphered", "first decipherment", "previously unread" for any of the four; for E403, any wording above "fragments read".
+**E403 depth reasoning.** Not a Step-0 hit (0.310), and no print, so the body is not known; but the name, "State agent", "if within the limits of your",
+"send him imm'y to", "to this", "by", "By order", "Assistant" and "How do you like our cipher" are plain on the leaf. The key adds isolated single code
+words inside plain clauses -- [Brigadier General] ('Harsh Platina'), [arrest] ('Oakum'), [command] ('Polka'), [Fort McHenry] ('Alamo'), [report]
+('Wick'), [Department] ('Quadrant'), [telegraph] ('wrangle'), [the President], [C. A. Dana] and [Secretary of War] in the signature -- the FV-MS18q
+standard: no run of key-read words reaches the authentication distance, no code value is shown here reading in two contexts by this audit. **D1**. The
+press context (Maxon in the forgery testimony) corroborates the plain-word identification, not the key words, so it does not lift the depth. At N3 D1 no
+AUD2 row and no status.json/SO row (the lane's bar is N3+ D2+); a later verifier could argue D2 if 'Oakum' = arrest and 'Alamo' = Fort McHenry are shown
+reading in other contexts with a control.
+
+### 4. Postmortem
+The reader's "not located" for E402 came from a search confined to the cached OR/ORN texts; the Grant Papers (Simon) volumes were not in that cache, and
+a single IA whole-collection phrase query on the most distinctive plain clause found it. The same query costs one request: it belongs before any "not
+located" verdict for a Grant-staff telegram (already the FV-MS18d/j method's "Grant Papers via IA be-api", which the readers' brief did not require).
+
+### 5. Corrections (for a FIX job; not applied here)
+1. E402 header/entry note: second addressee 'Wesley' = [Maj. Gen. H. G. Wright] (C, by the print, Simon vol. 11); destination 'Mackerals' = [Gen. Hunter's]
+   (C, by the print), replacing "the decoder reads Ord's, M"; [5] -> five (C); "not located in print" -> "printed, Simon, Papers of U. S. Grant vol. 11,
+   editorial note (page not read; lending-only item), text C"; the inserted word reads "Mackerel" on the leaf (transcription "Mackerals"), M.
+2. E403: 'Steven son' is plain on the leaf: "[Brig. Gen.] Stevenson [M]" -> "[Brig. Gen.] Stevenson" (name plain, rank by key); add the context note
+   (Stephen Maxon named in the New York soldier-vote forgery testimony, press 2 Nov 1864; Benton, Voting in the Field), as context, not as print of this
+   telegram.
+3. E404: add the omitted clause "but as they had a long march before reaching rail road or steam boat transportation, we may not hear of them for some
+   days" to the reading header; signature "General in Chief" -> "Major-General and Chief of Staff" (print); page p.389 confirmed on the image (n394).
+4. E420: "p.291 or 292" -> **p.291** (page image, n296); 'why so slow' not in the print (note).
+5. NOTES "## MS18-R9" Remaining gaps: the E402 print gap is closed (Simon vol. 11); the E403 gap stays (next: OR ser. II vol. 7 / ser. III vol. 4 by
+   page and the Ferry-Donohue commission record, ~$0.4).
+
+Requests: hdl.huntington.org 7 (3 CISOSEARCHALL incl. control, 4 IIIF leaves; one take, released, all 200, no drop); archive.org 13 (1 advancedsearch,
+1 djvu.txt, 2 page_numbers.json, 7 page images, 1 availability, plus 1 page_numbers re-use) and be-api.us.archive.org 16 full-text queries, 1.6 s apart.
+seven_day allowed_warning: seen in the brief, continued per lane-common-blast. For LANE LEDGER-12 (account 1).
