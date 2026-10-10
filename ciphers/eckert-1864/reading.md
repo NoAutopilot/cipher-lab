@@ -2201,5 +2201,59 @@ Geo. D. Sheldon FT Monroe [New York]'s [13] [Colonel] arsey  {tail: [signed] chi
 
 Code-word tokens: H 8.
 
-Totals over the 345 entries: H 6041, C 94, I 25, M 46, S 19, U 10.
+**E512 | Page 312 | 5856 | mssEC 25 (obj 5952, pointer 5856), 4 Jan 1865, Ft Monroe: two messages in one segment -- Sheldon to S. H. Beckwith at City Point (9 PM; the steamers Eliza Hancox and Winants, a Capt. Howell, QM) and a second, 10.30 PM, Hd Qrs A.J. to Sheldon (have the Winants in order to go with the expedition, tug D. D. Porter), signed R. O'Brien (FM65-B; row 5856/0; text only)**
+
+S. H. Beckwith City Point {time: 9 PM} for [Captain] [100] Tea Howell a [Quartermaster] [.] The Eliza Hancox has already been sent to [Colonel] [McMinnville] forth purpose The winants is hardly capable of going I think the [Fear] at Burr Moody or [City Point] would be much better Are C  {tail: [signed] [Colonel] Geo. D. Sheldon Hd. Qrs. A. J. 4 / 65 Geo. D. Sheldon {time: 10.30 PM} to [Colonel] [signed] [Monroe] [.] please have the winants in order to go with [Expedition] [,] also the tug D D porter [.] will Try bring down a tug [Tomorrow] for your use [signed] dodger R. O'Brien}
+
+Code-word tokens: H 21.
+
+**E513 | Page 313 | 5857 | mssEC 25 (obj 5952, pointer 5857), 5 Jan 1865 1 PM Ft Monroe, Sheldon to Maj. Eckert at Washington: Binney (chief additional paymaster, Norfolk) to Brig. Gen. B. W. Brice, Paymaster General -- Gen. Butler orders payment of company and field officers of a second expedition who were not mustered for 31 December; Binney declined as opposed to law and General Orders and asks authority to pay except on muster rolls (FM65-B; row 5857/1; text only)**
+
+Maj. Eckert [Volunteer] [Norfolk] [5] for [Brigadier General] Brice Pay Master [General] [Washington] [.] [Maj Gen B. F. Butler] orders payment to Company and whipal officers of a second [Expedition] [.] They were not mustard for December [31] ditto I have declined as opposed to law and [General] orders [.] Can Authority be had for paying Company and field officers except on Must her rolls [?]  {tail: [signed] [New York] Binney Chief add Pay Master Geo. D. Sheldon}
+
+Code-word tokens: H 17.
+
+**E514 | Page 314 | 5858 | mssEC 25 (obj 5952, pointer 5858), City Point 5 Jan 1865 (1 PM), S. H. Beckwith to Sheldon at Ft Monroe, for a colonel: some 350 troops have no transportation and will be sent in a river steamer, to be put aboard in time to sail with the rest; a Dr/Mr Leary is required for special service, Blackstone can be dispensed with and turned over to the medical department; signed Ingalls, Beckwith (FM65-B; row 5858/0; text only)**
+
+Sheldon Ft Monroe {time: 1 PM} [Colonel] [Reinforcements] steer [.] there are some [300] and [50] [Troops] for whom there is no [Transportation] they wilbey sent in [River] [Steam]er at once to your place please have them pat on see going way worner in time to sale with the rest the see C Leary is required for special surface of you Can dispense with Blackstone you may turner over tooth medical Department  {tail: [signed] Ingalls S. H. Beckwith}
+
+Code-word tokens: H 12.
+
+**E515 | Page 314 | 5858 | mssEC 25 (obj 5952, pointer 5858), Ft Monroe 5 Jan 1865, Sheldon to J. W. Sampson at Baltimore, for Col. R. M. Newport, chief quartermaster: the Ariel, Victor, Illinois, Gen. Sedgwick and Baltic were sent to report to you by order of the Quartermaster General; by direction of the chief QM; signed Capt. William L. James, QM (FM65-B; row 5858/1; text only)**
+
+J. W. [Ferry] Baltimore {time: 3.30 PM} for [Colonel] Are M Newport Sheaf [Quartermaster] [Baltimore] [.] The Ariel victor Illinois [General] Sedgwick and [Chattahoochee] were sent to [Report] to you by order of [Qr Master Genl U.S.] [.] By direction Sheaf [Quartermaster]  {tail: [signed] [100] L James [Captain] and a [Quartermaster] end Geo D Sheldon}
+
+Code-word tokens: H 16.
+
+**E516 | Page 316 | 5860 | mssEC 25 (obj 5952, pointer 5860), City Point 6 Jan 1865 10 AM, S. H. Beckwith to Sheldon at Ft Monroe: last night a large package of papers containing Gen. Butler's report of the Wilmington expedition was lost from an overcoat pocket -- the only two places the coat was off were the theatre and the hotel kept by Mr Phillips; please have inquiries made at both (FM65-B; row 5860/1; text only)**
+
+Geo D Sheldon Ft Monroe {time: 10 AM} [6] [Brigadier General] Shipley [Norfolk] [.] last night I lost some place [,] from my overcoat [Cross (-ed, -ing)] [,] a large package of papers containing [Maj Gen B. F. Butler]'s [Report] [Of the] [Wilmington] [Expedition] [.] the only [2] places I had my coat off was [At the] theatre & [At the] [Longstreet] Kept by Mr Phillips [.] willow be good enough to have inquiries maid at both places and weather one the result  {tail: [signed] [Maj Genl U.S. Grant] didn't travel very much SH Beckwith}
+
+Code-word tokens: H 21.
+
+**E517 | Page 317 | 5861 | mssEC 25 (obj 5952, pointer 5861), Ft Monroe 6 Jan 1865, Sheldon to J. W. Sampson at Baltimore, for Col. R. M. Newport, chief quartermaster: if the Baltic has been ordered to Monroe consider the order countermanded; let her embark troops as before ordered; signed by the Quartermaster General (FM65-B; row 5861/1; text only)**
+
+J. W [Ferry] Baltimore on board weasler [North] urn [Monroe] {time: 3.30 PM} for [Colonel] Are M Newport Sheaf [Quartermaster] [Baltimore] [.] If the [Chattahoochee] hasbin ordered to [Monroe] consider the order as Counter man dead [.] Let her [Embark (-ed, -ing)] [Troops] as before ordered  {tail: [signed] [Qr Master Genl U.S.] Geo D. Sheldon}
+
+Code-word tokens: H 14, S 1.
+
+**E518 | Page 320 | 5864 | mssEC 25 (obj 5952, pointer 5864), Ft Monroe 7 Jan 1865, Sheldon to S. H. Beckwith at City Point, for Brig. Gen. Ingalls, chief QM: Mr Elias Smith, correspondent of the New York Tribune, desires permission to go on the next boat joining the expedition; please inform me if Gen. Grant will permit him to pass (FM65-B; row 5864/1; text only)**
+
+S. H. Beckwith City Point {time: 9.30 AM} for [Brigadier General] ringals sheaf [Quartermaster] [.] Mr Elias Smith Correspond aint [New York] Tribune desires permission togo on next boot joining the [Expedition] Please inform me if [Maj Genl U.S. Grant] will permit me to pass him and oblige  {tail: [signed] [Colonel] [signed] [Quartermaster] , Gen D. Sheldon}
+
+Code-word tokens: H 11.
+
+**E519 | Page 322 | 5866 | mssEC 25 (obj 5952, pointer 5866), Ft Monroe 7 Jan 1865 (12.30), Sheldon to J. W. Sampson at Baltimore, for Col. Newport, chief QM: adopt whatever method will soonest ship troops on the Baltic; use your own judgment after seeing the captain; coal may be at Annapolis but is more readily had at Baltimore, and she cannot approach the docks at Annapolis; by order of the Quartermaster General (FM65-B; row 5866/0; text only)**
+
+J. W. [Ferry] Baltimore [Monroe] {time: 12.30} [7] for [Colonel] Are M. Newport Chief [Quartermaster] [Baltimore] [.] Adopt whatever method will soonest ship [Troops] on the [Chattahoochee] [.] you must use your own judgment after seeing the [Captain] [.] Perhaps there may be Coal at Annapolis but I presume it canby taken more readily at [Baltimore] than Annapolis [.] She cannot approach the docks at Annapolis [.] By Order [Qr Master Genl U.S.]  {tail: [signed] Are See [signed] [Colonel] [Quartermaster] [Department] Geo. D. Sheldon}
+
+Code-word tokens: H 22.
+
+**E520 | Page 322 | 5866 | mssEC 25 (obj 5952, pointer 5866), Ft Monroe 7 Jan 1865, Sheldon to S. H. Beckwith at City Point, for Brig. Gen. Ingalls: the Ariel, Gen. Sedgwick, Victor and Illinois were all ordered to Baltimore at 10 PM 3 January and the Baltic at 11 PM 4 January; nothing heard since except that the Baltic was at Baltimore this morning (FM65-B; row 5866/2; text only)**
+
+S. H. Beckwith City Point {time: 7.30 PM} for [Brigadier General] ring galls [.] The Ariel [,] [General] Sedgwick [,] victor and Illinois were all ordered to [Baltimore] at {time: 10 PM} January [3] and the [Chattahoochee] at {time: 11 PM} January [4] I have not heard from them since except the [Chattahoochee] which was at [Baltimore] this morning  {tail: [signed] Are see [Reinforcements] Stir [Colonel] [Quartermaster] Geo. D. Sheldon}
+
+Code-word tokens: H 18.
+
+Totals over the 354 entries: H 6193, C 94, I 25, M 46, S 20, U 10.
 <!-- decode.py: derived block ends -->

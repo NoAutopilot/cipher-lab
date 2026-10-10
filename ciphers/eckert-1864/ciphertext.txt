@@ -4635,3 +4635,126 @@ Frances fever paradise arsey webster chief vincent .
 has Knox fleet stomach yet youth Ingalls
 S. H. Beckwith
 note: FM-S3 Step 0 (fm_s3_step0.py, run under No. 1; as information, a hit on mssEC 25 is a non-test): (a) 0.667 (6/9), (b) p95 0.444, HIT (shuffled-key copy 0.750 HIT). No. 1 H8; the first clause (Frances fever paradise arsey) is M ('New York's 13 Colonel' does not read; the address to Webster is plain). Sense support is the sibling E278 on the same page, not the key. Holder CISOSEARCHALL 'Ingalls Webster fleet': own pointer only. Not located in print (grep over 177 volumes: none).
+
+### E512 | Page 312 | 5856 | mssEC 25 (obj 5952, pointer 5856), 4 Jan 1865, Ft Monroe: two messages in one segment -- Sheldon to S. H. Beckwith at City Point (9 PM; the steamers Eliza Hancox and Winants, a Capt. Howell, QM) and a second, 10.30 PM, Hd Qrs A.J. to Sheldon (have the Winants in order to go with the expedition, tug D. D. Porter), signed R. O'Brien (FM65-B; row 5856/0; text only)
+Ft Monroe Jan 4 / 65
+S. H. Beckwith
+City Point
+Rosalie for pilgrim William Tea Howell a vincent unity
+The Eliza Hancox has already been sent to paradise
+dodge forth purpose The winants is hardly capable of
+going I think the Seneca at Burr Moody or
+black would be much better Are C Webster pandora
+Geo. D. Sheldon
+Hd. Qrs. A. J. 4 / 65
+Geo. D. Sheldon
+Reliance to paradise Webster animal zebra
+please have the winants in order
+to go with rape pedlar also
+the tug D D porter zodiac
+will Try bring down a tug
+whelp for your use youth dodger
+R. O'Brien
+note: FM65-B: Step 0 (fm65b_step0.py, step0_ordered.py's functions): (a) 0.708 (34/48), (b) p95 0.250, HIT; under a meaning-shuffled copy of No. 1 (seed 7) (a) 0.694, also HIT: on mssEC 25 the holder transcription is the cipher copy itself, so a step-0 hit is a non-test (RULING, LEDGER-13 jobs wave 2) and does not hold the row. Book: No. 1 (BOOK-FM65: No. 1 reads all ten tested 1865 rows; this row predicted No. 1 from its month and header). Holder (CISOSEARCHALL, all pointers, control 9678 returned): no clear copy of this row. Print: not located (phrase grep over 177 cached volumes, loose co-occurrence search, IA be-api whole-collection queries; a search result, not a verdict). BOOK-FM65 test row, No. 1 (weak: one clause, two code meanings): 'please have the Winants in order to go with [expedition], also the tug D. D. Porter, will try bring down a tug [tomorrow] for your use'. M by hand: [McMinnville] (dodge) is not a Fort Monroe place; 'Seneca' (plain, a steamer) is read [Fear] by a key row -- a misfire on plain text; Winants, Eliza Hancox and Seneca are steamers (IA: Bard, steam vessels of the Hudson; Winants and Hancox as dispatch boats of the Army of the James, OR I/40 pt 2). Not in print: the 13 June 1864 and Jan 1865 Butler fleet orders mention the boats, not this text.
+
+### E513 | Page 313 | 5857 | mssEC 25 (obj 5952, pointer 5857), 5 Jan 1865 1 PM Ft Monroe, Sheldon to Maj. Eckert at Washington: Binney (chief additional paymaster, Norfolk) to Brig. Gen. B. W. Brice, Paymaster General -- Gen. Butler orders payment of company and field officers of a second expedition who were not mustered for 31 December; Binney declined as opposed to law and General Orders and asks authority to pay except on muster rolls (FM65-B; row 5857/1; text only)
+1 P. M. Ft Monroe Jan. 5 / 65
+Maj. Eckert Washington
+Farmer person for palate Brice Pay Master Shelby growl
+zodiac Knox orders payment to Company and whipal officers
+of a second rape unity They were not mustard
+for December laugh plug ditto I have declined as
+opposed to law and shelter orders zebra Can Authority
+be had for paying Company and field officers except
+on Must her rolls star yoke Amos Binney Chief
+add Pay Master  Geo. D. Sheldon
+note: FM65-B: Step 0 (fm65b_step0.py, step0_ordered.py's functions): (a) 0.667 (26/39), (b) p95 0.308, HIT; under a meaning-shuffled copy of No. 1 (seed 7) (a) 0.634, also HIT: on mssEC 25 the holder transcription is the cipher copy itself, so a step-0 hit is a non-test (RULING, LEDGER-13 jobs wave 2) and does not hold the row. Book: No. 1 (BOOK-FM65: No. 1 reads all ten tested 1865 rows; this row predicted No. 1 from its month and header). Holder (CISOSEARCHALL, all pointers, control 9678 returned): no clear copy of this row. Print: not located (phrase grep over 177 cached volumes, loose co-occurrence search, IA be-api whole-collection queries; a search result, not a verdict). M by hand: 'Amos' (plain) is read [New York] by a key row (misfire); [Norfolk] [5] opening is the sender's place and date; 'whipal' = field (plain-ish). Context, not a copy: Brice to Sheldon, 12 Dec 1864, on Binney's payments (pointers 5829 and 9913, cipher copies, not clear).
+
+### E514 | Page 314 | 5858 | mssEC 25 (obj 5952, pointer 5858), City Point 5 Jan 1865 (1 PM), S. H. Beckwith to Sheldon at Ft Monroe, for a colonel: some 350 troops have no transportation and will be sent in a river steamer, to be put aboard in time to sail with the rest; a Dr/Mr Leary is required for special service, Blackstone can be dispensed with and turned over to the medical department; signed Ingalls, Beckwith (FM65-B; row 5858/0; text only)
+City Point Jan. 5 / 65
+Sheldon
+Ft Monroe
+Harriet pandora Webb steer unity there are some pebble prolong
+and mandate whinny for whom there is no whig they
+wilbey sent in windpipe weaseler at once to your place
+please have them pat on see going way worner in
+time to sale with the rest the see C Leary
+is required for special surface of you Can dispense with
+Blackstone you may turner over tooth medical Department yoke Ingalls
+S. H. Beckwith
+note: FM65-B: Step 0 (fm65b_step0.py, step0_ordered.py's functions): (a) 0.744 (29/39), (b) p95 0.256, HIT; under a meaning-shuffled copy of No. 1 (seed 7) (a) 0.744, also HIT: on mssEC 25 the holder transcription is the cipher copy itself, so a step-0 hit is a non-test (RULING, LEDGER-13 jobs wave 2) and does not hold the row. Book: No. 1 (BOOK-FM65: No. 1 reads all ten tested 1865 rows; this row predicted No. 1 from its month and header). Holder (CISOSEARCHALL, all pointers, control 9678 returned): no clear copy of this row. Print: not located (phrase grep over 177 cached volumes, loose co-occurrence search, IA be-api whole-collection queries; a search result, not a verdict). M by hand: the opening [Colonel] [Reinforcements] (Harriet pandora) names the addressee only by code; 'Leary' and 'Blackstone' plain names, roles inferred (M).
+
+### E515 | Page 314 | 5858 | mssEC 25 (obj 5952, pointer 5858), Ft Monroe 5 Jan 1865, Sheldon to J. W. Sampson at Baltimore, for Col. R. M. Newport, chief quartermaster: the Ariel, Victor, Illinois, Gen. Sedgwick and Baltic were sent to report to you by order of the Quartermaster General; by direction of the chief QM; signed Capt. William L. James, QM (FM65-B; row 5858/1; text only)
+Ft Monroe Jan. 5 / 65
+J. W. Sampson Baltimore
+Jennie for paradise Are M Newport Sheaf
+vincent Baptism unity The Ariel victor Illinois
+Shelter Sedgwick and Baltic were sent to
+wick to you by order of Belcher
+zodiac By direction Sheaf vinton walrus William
+L James pilgrim and a vinton end
+Geo D Sheldon
+note: FM65-B: Step 0 (fm65b_step0.py, step0_ordered.py's functions): (a) 0.500 (11/22), (b) p95 0.273, HIT; under a meaning-shuffled copy of No. 1 (seed 7) (a) 0.524, also HIT: on mssEC 25 the holder transcription is the cipher copy itself, so a step-0 hit is a non-test (RULING, LEDGER-13 jobs wave 2) and does not hold the row. Book: No. 1 (BOOK-FM65: No. 1 reads all ten tested 1865 rows; this row predicted No. 1 from its month and header). Holder (CISOSEARCHALL, all pointers, control 9678 returned): no clear copy of this row. Print: not located (phrase grep over 177 cached volumes, loose co-occurrence search, IA be-api whole-collection queries; a search result, not a verdict). C support for the addressee: pointer 8508 (clear, Baltimore 6 Jan 1865) is signed 'RM Newport Col & chf qm'. M by hand: 'Baltic' (plain) is read [Chattahoochee] by a key row (misfire); pointer 9153 block 2 (Washington cipher copy, 5 Jan) orders the same five vessels from Monroe to Baltimore (decode: Ariel, Illinois, Sedgwick, Victor, Baltic) -- a different telegram, context only.
+
+### E516 | Page 316 | 5860 | mssEC 25 (obj 5952, pointer 5860), City Point 6 Jan 1865 10 AM, S. H. Beckwith to Sheldon at Ft Monroe: last night a large package of papers containing Gen. Butler's report of the Wilmington expedition was lost from an overcoat pocket -- the only two places the coat was off were the theatre and the hotel kept by Mr Phillips; please have inquiries made at both (FM65-B; row 5860/1; text only)
+City Point Jany 6 1865
+Geo D Sheldon Ft Monroe
+Emily plague palate Shipley Farmer unity last night I
+lost some place pedlar from my overcoat pocket pekin
+a large package of papers containing Knaves wick torch
+Hamlet rape zodiac the only peach places I had
+my coat off was optic theatre & orbit Hotel
+Kept by Mr Phillips unity willow be good enough
+to have inquiries maid at both places and weather
+one the result youth Japan didn't travel very much
+SH Beckwith
+note: FM65-B: Step 0 (fm65b_step0.py, step0_ordered.py's functions): (a) 0.717 (33/46), (b) p95 0.239, HIT; under a meaning-shuffled copy of No. 1 (seed 7) (a) 0.647, also HIT: on mssEC 25 the holder transcription is the cipher copy itself, so a step-0 hit is a non-test (RULING, LEDGER-13 jobs wave 2) and does not hold the row. Book: No. 1 (BOOK-FM65: No. 1 reads all ten tested 1865 rows; this row predicted No. 1 from its month and header). Holder (CISOSEARCHALL, all pointers, control 9678 returned): no clear copy of this row. Print: not located (phrase grep over 177 cached volumes, loose co-occurrence search, IA be-api whole-collection queries; a search result, not a verdict). M by hand: plain 'Hotel' is read [Longstreet] by a key row (misfire; orbit = [At the]); [Shipley] is not read (the addressee of the header); the tail 'didn't travel very much' is plain. Context, not a copy: Grant to Capt. Leet, 8 Jan 1865 10 PM, 'Send back General Butler's report of the Wilmington expedition ... I wish to change the indorsement' (OR I/46 pt 2 p.68; Butler Corr. V p.476) -- a different telegram.
+
+### E517 | Page 317 | 5861 | mssEC 25 (obj 5952, pointer 5861), Ft Monroe 6 Jan 1865, Sheldon to J. W. Sampson at Baltimore, for Col. R. M. Newport, chief quartermaster: if the Baltic has been ordered to Monroe consider the order countermanded; let her embark troops as before ordered; signed by the Quartermaster General (FM65-B; row 5861/1; text only)
+Ft Monroe Jan. 6 / 65
+J. W Sampson Baltimore
+on board weasler tremble urn animal Jennie for
+paradise Are M Newport Sheaf vinton baptism unity
+If the Baltic hasbin ordered to Appian consider
+the order as Counter man dead zebra Let
+her quorum whiskey as before ordered youth Bender
+Geo D. Sheldon
+note: FM65-B: Step 0 (fm65b_step0.py, step0_ordered.py's functions): (a) 0.615 (16/26), (b) p95 0.269, HIT; under a meaning-shuffled copy of No. 1 (seed 7) (a) 0.533, also HIT: on mssEC 25 the holder transcription is the cipher copy itself, so a step-0 hit is a non-test (RULING, LEDGER-13 jobs wave 2) and does not hold the row. Book: No. 1 (BOOK-FM65: No. 1 reads all ten tested 1865 rows; this row predicted No. 1 from its month and header). Holder (CISOSEARCHALL, all pointers, control 9678 returned): no clear copy of this row. Print: not located (phrase grep over 177 cached volumes, loose co-occurrence search, IA be-api whole-collection queries; a search result, not a verdict). M by hand: 'Baltic' (plain) is read [Chattahoochee] by a key row (misfire); pointer 8508 (clear, Baltimore 6 Jan 1865 3.45 PM, Newport to the QM General) reports the Baltic at Swann Point needing an anchor, chain and 750 tons of coal -- the antecedent situation, a different telegram.
+
+### E518 | Page 320 | 5864 | mssEC 25 (obj 5952, pointer 5864), Ft Monroe 7 Jan 1865, Sheldon to S. H. Beckwith at City Point, for Brig. Gen. Ingalls, chief QM: Mr Elias Smith, correspondent of the New York Tribune, desires permission to go on the next boat joining the expedition; please inform me if Gen. Grant will permit him to pass (FM65-B; row 5864/1; text only)
+Ft Monroe Jan 7 / 65
+S. H. Beckwith City Point
+Eugenia for palate ringals sheaf vincent unity Mr
+Elias Smith Correspond aint france Tribune desires permission
+togo on next boot joining the rape Please
+inform me if Judah will permit me to
+pass him and oblige walrus pandora Webster Vinton ,
+Gen D. Sheldon
+note: FM65-B: Step 0 (fm65b_step0.py, step0_ordered.py's functions): (a) 0.727 (24/33), (b) p95 0.303, HIT; under a meaning-shuffled copy of No. 1 (seed 7) (a) 0.828, also HIT: on mssEC 25 the holder transcription is the cipher copy itself, so a step-0 hit is a non-test (RULING, LEDGER-13 jobs wave 2) and does not hold the row. Book: No. 1 (BOOK-FM65: No. 1 reads all ten tested 1865 rows; this row predicted No. 1 from its month and header). Holder (CISOSEARCHALL, all pointers, control 9678 returned): no clear copy of this row. Print: not located (phrase grep over 177 cached volumes, loose co-occurrence search, IA be-api whole-collection queries; a search result, not a verdict). Context, not a copy: pointer 8510 (clear, Ft Monroe 7 Jan 1865 9 AM) is Elias Smith's own request to C. A. Dana at Washington for War Department permission to go on the expedition. M by hand: 'Gen D. Sheldon' is the transcription's reading of Geo. D. Sheldon; the sign-off [Colonel] [signed] [Quartermaster] is code.
+
+### E519 | Page 322 | 5866 | mssEC 25 (obj 5952, pointer 5866), Ft Monroe 7 Jan 1865 (12.30), Sheldon to J. W. Sampson at Baltimore, for Col. Newport, chief QM: adopt whatever method will soonest ship troops on the Baltic; use your own judgment after seeing the captain; coal may be at Annapolis but is more readily had at Baltimore, and she cannot approach the docks at Annapolis; by order of the Quartermaster General (FM65-B; row 5866/0; text only)
+Ft Monroe Jan. 7 / 65
+J. W. Sampson
+Baltimore
+Animal viola postpone for pandora Are M. Newport Chief
+vinton Baptism zodiac Adopt whatever method will soonest ship
+whist on the Baltic zodiac you must use your
+own judgment after seeing the pilgrim zebra Perhaps there
+may be Coal at Annapolis but I presume it
+canby taken more readily at Banditti than Annapolis zebra
+She cannot approach the docks at Annapolis unity By
+Order Belcher walrus Are See Webster paradise vinton quadrant
+Geo. D. Sheldon
+note: FM65-B: Step 0 (fm65b_step0.py, step0_ordered.py's functions): (a) 0.700 (28/40), (b) p95 0.275, HIT; under a meaning-shuffled copy of No. 1 (seed 7) (a) 0.692, also HIT: on mssEC 25 the holder transcription is the cipher copy itself, so a step-0 hit is a non-test (RULING, LEDGER-13 jobs wave 2) and does not hold the row. Book: No. 1 (BOOK-FM65: No. 1 reads all ten tested 1865 rows; this row predicted No. 1 from its month and header). Holder (CISOSEARCHALL, all pointers, control 9678 returned): no clear copy of this row. Print: not located (phrase grep over 177 cached volumes, loose co-occurrence search, IA be-api whole-collection queries; a search result, not a verdict). Antecedent (clear, pointer 8508): Newport to the QM General, Baltimore 6 Jan 1865 3.45 PM, the captain of the Baltic reports his vessel at Swann Point, cannot come nearer, needs an anchor and chain and 750 tons of coal, five days to coal at Annapolis ('Shall I order her to NY'). This is the reply and confirms the vessel is the Baltic and that 'Banditti' = Baltimore (H). M by hand: plain 'Baltic' read [Chattahoochee] (misfire).
+
+### E520 | Page 322 | 5866 | mssEC 25 (obj 5952, pointer 5866), Ft Monroe 7 Jan 1865, Sheldon to S. H. Beckwith at City Point, for Brig. Gen. Ingalls: the Ariel, Gen. Sedgwick, Victor and Illinois were all ordered to Baltimore at 10 PM 3 January and the Baltic at 11 PM 4 January; nothing heard since except that the Baltic was at Baltimore this morning (FM65-B; row 5866/2; text only)
+Ft Monroe Jan. 7 - 1865
+S. H. Beckwith City Point
+Minnie for palate ring galls zebra The Ariel pekin
+Shelter Sedgwick pedlar victor and Illinois were all ordered
+to Banditti at Rebecca January pebble and the Baltic
+at Sarah January penny I have not heard from
+them since except the Baltic which was at Baptism
+this morning walrus Are see Webb Stir pandora vincent.
+Geo.  D. Sheldon
+note: FM65-B: Step 0 (fm65b_step0.py, step0_ordered.py's functions): (a) 0.640 (16/25), (b) p95 0.280, HIT; under a meaning-shuffled copy of No. 1 (seed 7) (a) 0.640, also HIT: on mssEC 25 the holder transcription is the cipher copy itself, so a step-0 hit is a non-test (RULING, LEDGER-13 jobs wave 2) and does not hold the row. Book: No. 1 (BOOK-FM65: No. 1 reads all ten tested 1865 rows; this row predicted No. 1 from its month and header). Holder (CISOSEARCHALL, all pointers, control 9678 returned): no clear copy of this row. Print: not located (phrase grep over 177 cached volumes, loose co-occurrence search, IA be-api whole-collection queries; a search result, not a verdict). Context, not a copy: pointer 7682 (clear, Ft Monroe 4 Jan 1865 5.30 PM, Ingalls to the QM General) 'the Ariel, Illinois, Gen. Sedgwick, Victor & Baltic are ordered to Balto; these vessels can carry 4,000 men'. M by hand: plain 'Baltic' read [Chattahoochee] (misfire).

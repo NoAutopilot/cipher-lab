@@ -1,0 +1,25 @@
+entry	row	book	window	a	lcs/n	b_p95	b2_p95	hit	c	c_key_meanings	c_plain_absent
+F1	5856/0	no1	0+1	0.708	34/48	0.250	0.229	HIT	11	captain colonel expedition fear hundred mcminnville quartermaster signed tomorrow	
+F1	5856/0	no1shuf	0+1	0.694	34/49	0.224	0.224	HIT	15	artillery bowling chief coosa green gunboat hundred newbern pensacola signed staff troops tullahoma	
+F2	5856/1	no1	2	0.667	10/15	0.400	0.467	HIT	4	new secretary war york	
+F2	5856/1	no1shuf	2	0.769	10/13	0.462	0.538	HIT	3	colonel ford movement	
+F3	5857/1	no1	1	0.667	26/39	0.308	0.308	HIT	10	brigadier butler expedition general norfolk thirty volunteer	
+F3	5857/1	no1shuf	1	0.634	26/41	0.293	0.293	HIT	12	danger effect general movement offensive palmer pensacola rail road thirty thomas	
+F4	5858/0	no1	0	0.744	29/39	0.256	0.282	HIT	10	colonel fifty hundred reinforcements river steam three transportation troops	er
+F4	5858/0	no1shuf	0	0.744	29/39	0.256	0.282	HIT	10	atlanta available cleveland fifty government hundred impregnable offensive three	er
+F5	5858/1	no1	1	0.500	11/22	0.273	0.318	HIT	10	chattahoochee colonel ferry general master quartermaster report	
+F5	5858/1	no1shuf	1	0.524	11/21	0.286	0.333	HIT	10	after camp chickamauga coosa general movement pickens surrender troops washburne	
+F6	5860/1	no1	1	0.717	33/46	0.239	0.283	HIT	12	brigadier butler cross expedition general longstreet major norfolk report two wilmington	
+F6	5860/1	no1shuf	1	0.647	33/51	0.216	0.255	HIT	17	alexandria burnside camp farragut general goldsboro louisa major offensive palmer parke pensacola rail road two	
+F7	5860/2	no1	2	0.571	20/35	0.257	0.257	HIT	12	adjutant brigadier general rail road savannah secretary sherman volunteer war	
+F7	5860/2	no1shuf	2	0.645	20/31	0.290	0.290	HIT	9	colonel effect general hanover magruder offensive ord reinforcements vicksburg	
+F8	5861/1	no1	1	0.615	16/26	0.269	0.346	HIT	7	chattahoochee colonel embark ferry north quartermaster troops	
+F8	5861/1	no1shuf	1	0.533	16/30	0.233	0.300	HIT	14	after chickamauga columbus fortify fredk general hill major newbern pickens steele troops washburne	
+F9	5861/2	no1	2+3	0.769	40/52	0.269	0.269	HIT	8	butler general left savannah secretary tomorrow volunteer war	
+F9	5861/2	no1shuf	2+3	0.741	40/54	0.241	0.241	HIT	12	chief corps effect general movement newbern palmer selma staff thomas	
+F10	5864/1	no1	1	0.727	24/33	0.303	0.364	HIT	7	brigadier expedition grant major new quartermaster york	
+F10	5864/1	no1shuf	1	0.828	24/29	0.310	0.345	HIT	5	coosa florence meridian offensive pensacola	
+F11	5866/0	no1	0	0.700	28/40	0.275	0.275	HIT	9	captain chattahoochee colonel ferry general master quartermaster troops	
+F11	5866/0	no1shuf	0	0.692	27/39	0.256	0.282	HIT	10	chickamauga cleveland general newbern pickens post surrender treasury tullahoma washburne	
+F12	5866/2	no1	2	0.640	16/25	0.280	0.320	HIT	9	baltimore brigadier chattahoochee four general three	
+F12	5866/2	no1shuf	2	0.640	16/25	0.280	0.320	HIT	9	four general movement offensive pickens three treasury washburne	
