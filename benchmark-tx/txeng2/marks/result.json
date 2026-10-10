@@ -1,0 +1,308 @@
+{
+ "item": "vivonne1573-f102r-dev2",
+ "truth_sha256": "007a8be9a280ff441f0da22eec66276fd36c808fe9a7ab57990e3ddaccb11714",
+ "pass_sha256": "e5081ff031a69a7b1bcbd02995c58d81a7618030b33f9c45b39c9fed0762c4a0",
+ "candidates_sha256": "523226c5d1d447ed47a94528639f5469b72808f0f1a62fcecadae4561f0e9ea2",
+ "recall_precision_pm1": {
+  "colon_positions": 84,
+  "candidates": 0,
+  "matched": 0,
+  "recall": 0.0,
+  "precision": null
+ },
+ "recall_precision_exact": {
+  "colon_positions": 84,
+  "candidates": 0,
+  "matched": 0,
+  "recall": 0.0,
+  "precision": null
+ },
+ "count_triples": {
+  "no_map": {
+   "unflagged": 679,
+   "position_errors": 43,
+   "insertions": 41
+  },
+  "norm_map": {
+   "unflagged": 679,
+   "position_errors": 33,
+   "insertions": 41
+  }
+ },
+ "registered_triple": {
+  "unflagged": 679,
+  "position_errors": 43,
+  "insertions": 41
+ },
+ "map_used": "no_map",
+ "errors": 84,
+ "errors_near": 0,
+ "share_errors_near": 0.0,
+ "unflagged_near": 0,
+ "share_positions_near": 0.0,
+ "lift": null,
+ "null": {
+  "n": 200,
+  "seed": 20261010,
+  "p95": null,
+  "max": null,
+  "mean": 0.0
+ },
+ "per_line": [
+  {
+   "line": "f102r_L01",
+   "positions": 55,
+   "boxes": 46,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L02",
+   "positions": 56,
+   "boxes": 52,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L03",
+   "positions": 52,
+   "boxes": 47,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L04",
+   "positions": 52,
+   "boxes": 51,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L05",
+   "positions": 51,
+   "boxes": 42,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L06",
+   "positions": 47,
+   "boxes": 48,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L07",
+   "positions": 50,
+   "boxes": 43,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L08",
+   "positions": 49,
+   "boxes": 40,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L09",
+   "positions": 50,
+   "boxes": 43,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L10",
+   "positions": 47,
+   "boxes": 41,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L11",
+   "positions": 49,
+   "boxes": 45,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L12",
+   "positions": 53,
+   "boxes": 57,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L13",
+   "positions": 53,
+   "boxes": 41,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L15",
+   "positions": 49,
+   "boxes": 45,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L16",
+   "positions": 57,
+   "boxes": 46,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L17",
+   "positions": 52,
+   "boxes": 45,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L18",
+   "positions": 52,
+   "boxes": 50,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L19",
+   "positions": 55,
+   "boxes": 51,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L20",
+   "positions": 53,
+   "boxes": 39,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L21",
+   "positions": 51,
+   "boxes": 44,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L22",
+   "positions": 49,
+   "boxes": 48,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L23",
+   "positions": 54,
+   "boxes": 49,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L24",
+   "positions": 52,
+   "boxes": 46,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L25",
+   "positions": 56,
+   "boxes": 46,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L26",
+   "positions": 54,
+   "boxes": 53,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L27",
+   "positions": 50,
+   "boxes": 41,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L28",
+   "positions": 51,
+   "boxes": 43,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L29",
+   "positions": 57,
+   "boxes": 51,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L30",
+   "positions": 52,
+   "boxes": 48,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L31",
+   "positions": 55,
+   "boxes": 45,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L32",
+   "positions": 50,
+   "boxes": 44,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L33",
+   "positions": 51,
+   "boxes": 46,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L34",
+   "positions": 40,
+   "boxes": 42,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L35",
+   "positions": 52,
+   "boxes": 44,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L36",
+   "positions": 51,
+   "boxes": 46,
+   "units": null,
+   "candidates": 0
+  },
+  {
+   "line": "f102r_L37",
+   "positions": 41,
+   "boxes": 45,
+   "units": null,
+   "candidates": 0
+  }
+ ],
+ "verdict": "FAIL read-free",
+ "openings_eval_truth": 0,
+ "dev_openings": 1
+}
