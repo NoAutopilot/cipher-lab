@@ -1,3 +1,5 @@
+Sensitivity check of the f.103r anchor (TX-RED F64): the existing confirm2 truth remains the truth of record.
+
 # RE103 (TX-RE103, PREREG-txeng2-20 section RE103): STOPPED at step 3 -- build control outside SCAN-103's tolerance; no re-score
 
 Worker TX-RE103 (account-4, Opus 5.5, session_01LpVC17SHaMND2FjAvtq9Xm), 10 Oct 2026 01:15-01:2x UTC by date -u, for LANE
