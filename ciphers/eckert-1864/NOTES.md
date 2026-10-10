@@ -5724,3 +5724,35 @@ Read so far: 8 of 8 rows handled (1 filed, 7 step-0 hits not filed); the filed r
 - [x] image-check: the filed row's leaf read on the whole entry; the seven hit leaves not opened (nothing filed).
 - [x] retry: none needed.
 Verdict: keep going: 3 internal gaps (E430 page numbers; counted (c) words for 7 hits; eye checks); cheapest next: IA page read for E430, ~$0.1
+
+## FM-R9 (10 Oct 2026, account 1, for LANE LEDGER-13)
+
+Four clean 1864 Fort Monroe rows (Huntington object 5952 = mssEC 25) that no entry named: 5752/0 5699/1 5707/0 5650/0. Re-grep of pointer/entry in `ciphertext*.txt` and NOTES at 08:5x UTC: none filed. 5752/0 is not part of E256 (5752/1): different header (54 w, "Ft Monroe", signed Sheldon, "received 5.30 AM" tail) against E256's "Fortress Monroe" 88 w entry; the two share no cipher words. Step-0 ruling run first (`fortmonroe/fm_r9_step0.py`, calls `ms18/step0_ordered.py`'s functions unchanged; output `fm_r9_step0.out`). Disk only: no hdl.huntington.org request, no token taken, no network. Nothing filed; `ciphertext*.txt`, `reading*.md` untouched. Novelty not classified (rule 10).
+
+**Book (HEAD share scorer s1/s2/s9, `fm_r9_controls.txt`, five decodes per row incl. meaning-shuffled copies).** 5752/0 .41/.41/.205; 5699/1 .254/.286/.143; 5707/0 .207/.121/.069; 5650/0 .121/.212/.03. Shares do not pick the book (5752/0 tie; 5699/1 puts No. 2 ahead). By sense: No. 1 reads 5752/0 (Dana to the Secretary of War, City Point, "Hancock ... render W. F. Smith any aid ... Richmond papers ... planning the James"), 5699/1 (Eckert to Sheldon: operators reached Monroe, "how wide is River at Yorktown ... West Point ... dread necessity for use of cable") and 5707/0 (O'Brien: office at Head Quarters, at Gillmore's, at Bermuda landing, City Point connected by cable; here "Bermuda landing" is plain, No. 1's White River is the E313-type misreading). No. 2, No. 9 and shuffled copies give Cheatham/Cairo/Aquia Creek style nonsense. 5650/0: no book reads a clause (No. 1 H2, No. 2 H3, No. 9 H1: chaff, pilgrim, grove, lading, Smith unread). The count control (shuffled copy H = true H) cannot fail by construction, as in FM-R7a; sense is the discriminator.
+
+**Step 0 (a = ordered LCS, b = shuffled p95, c = key-dependent words absent from the page transcription).** Book that reads, or No. 1 where none does:
+| row | book | (a) | (b) p95 | hit | (c) |
+|---|---|---|---|---|---|
+| 5752/0 | No. 1 | 0.636 (21/33) | 0.273 | YES | 12: secretary, war, Dana, City Point, Smith, Richmond, James, fifteen, attack, volunteer |
+| 5699/1 | No. 1 | 0.787 (48/61) | 0.230 | YES | 12: Alexandria, Monroe-side River, Yorktown, West Point, Point, General-in-Chief, Cipher, fourteen, nine |
+| 5707/0 | No. 1 | 0.785 (51/65) | 0.231 | YES | 9: Gillmore, City Point, White River (slip), Head Quarters, Williamsburg |
+| 5650/0 | no book | 0.943 (33/35) under No. 1; 0.914 No. 2; 0.971 No. 9 | 0.314 | YES (plain words, any book) | 1-2 words only |
+All four are step-0 hits: body in holder transcription (plain words carry the telegram; the code words are a few names and numbers). Per the ruling a reader files nothing for a hit and does not search print.
+
+**Per-row line.** 5752/0: step-0 skip (c names Dana, Secretary of War, City Point, W. F. Smith; lead only: Dana's 16 June dispatches via Jamestown Island, OR I/40 pt 1 pp.20-22 per the E256 note, not checked). 5699/1: step-0 skip. 5707/0: step-0 skip. 5650/0: step-0 skip and no book in hand (no clause above the authentication distance under any book). Holder clear copy: not searched (hit rows). Not located: not claimed.
+
+## Remaining gaps (FM-R9, 10 Oct 2026)
+Read so far: 0 of 4 filed; 4 of 4 step-0 hits.
+- (c) words of 5752/0, 5699/1, 5707/0 (Dana, City Point, Yorktown, West Point, Gillmore) - blocker: not-attempted; ruling says a verifier decides what (c) adds; next: first verifier on (c) of the three, ~$0.5 per row
+- 5650/0 code words (chaff, pilgrim, grove, lading, Smith) - blocker: open-codes; no book in hand; next: 3-5 May 1864 Yorktown / Bermuda Hundred landing siblings (Snow to Sheldon) by date, ~$0.2
+
+## Escalation (FM-R9, 10 Oct 2026)
+- [x] siblings: E256 (5752/1) distinct from 5752/0; 5699/0 and 5707/1 neighbours not read here.
+- [n/a] clear-pages: step-0 hit rows are not searched.
+- [x] known-keys: three books plus meaning-shuffled copies per row.
+- [n/a] print: not run for hits.
+- [n/a] key-rebuild: no key row edited.
+- [ ] image-check: not run, nothing filed.
+- [n/a] retry: nothing failed, so no retry needed.
+Verdict: keep going: 2 internal gaps; cheapest next: 5650/0 sibling window by date, ~$0.2
