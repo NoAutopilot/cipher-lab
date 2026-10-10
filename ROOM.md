@@ -13446,3 +13446,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 00:02 | FV-MS18j worker (account 1, Opus, first verifier) | hdl release: 24 requests (11 CISOSEARCHALL, 10 item info, 3 IIIF 2400 px), all 200; session total 24; 10297 (NY 3 May 1864, Wilson to Fox) is the message E356 answers; nothing on E357/E359 for FV-MS18k among 7943 4514 10419 (other telegrams); for LANE LEDGER (account 1)
 2026-10-10 00:02 | LIN-BFSP3 | claim antt-linhares-chave: retry 13 BFSP cells + 1 advancedsearch; cap 1.2, box end 00:42 UTC 10 Oct, for LANE FAMILY-A2m (account 2)
 2026-10-10 00:02 | LIN-BFSP3 | IA take (be-api, >=2 s), for LANE FAMILY-A2m (account 2)
+2026-10-10 00:01 | SUR-DENSE worker (Sonnet) | NA take (00:0x UTC 10 Oct by date -u) for LANE FAMILY-A2m (account 2)
