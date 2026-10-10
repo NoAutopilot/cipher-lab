@@ -1770,7 +1770,7 @@ Report what was found and where it was not found; novelty not classified.
 ## Remaining gaps (JVN-GLY, 10 Oct 2026)
 Read so far: 22 of 28 letter tokens H/C/S in 5551 (78.6%, D3-5551 recount; unchanged: the two glyphs added by JVN-GLY are clear tokens at M)
 - 140/145/146 values in 5551 - blocker: waiting-on ASKS row 48 (the Marburg HStAM reply, MAIL-3) for a list-A witness carrying these codes; 4613/4615 carry none (JVN-104), 5550/5557 carry 140/145 unglossed
-- glyph after 103 ("vff"), and 140 vs 110 - blocker: not-attempted; JVN-GLY read the 104 glyphs (YES at M) but these two are ungated single-reader calls (rſ-like; 110 low-medium vs 4 readers 140); next: the owner's sign sorter on images/jvn_gly X1-X7 (piles for ſ, looped ſ, ch, 1, 4), ~$0.5 to build the page
+- glyph after 103 ("vff"), and 140 vs 110 - blocker: waiting-on ASKS 161 (sign sorter built 10 Oct 2026, SORT-A2o, `sorter/a2o/`, preflight PASS, backlog); JVN-GLY read the 104 glyphs (YES at M) but these two are ungated single-reader calls (rſ-like; 110 low-medium vs 4 readers 140)
 - 136 null vs 'vingt' - blocker: open-codes; settles only with another list-A occurrence (4613's one 136 is the 'uingt' source)
 - line-end word L2-21 (was L2-19) beyond the edge - blocker: illegible; cut by the leaf (D3-5551)
 
@@ -1780,6 +1780,18 @@ Read so far: 22 of 28 letter tokens H/C/S in 5551 (78.6%, D3-5551 recount; uncha
 - [x] known-keys: key.tsv, key_full, key_4614/5801/7205/7206 checked by D3-5551; no C/H value for the three codes
 - [x] print: Groen IV/V/Supplement and Gachard III read (check-solved 25 Sept 2026); nothing for 5551's cipher lines
 - [retired] key-rebuild: band instruments char-LM, word-segmentation, interlinear_align and local-window read retired for this band (Lodewijk GAPS28-39)
-- [ ] image-check: the 104 glyphs read by a control-passing reader (JVN-GLY, YES at M); still owed: the owner's sign sorter on images/jvn_gly for the glyph after 103 and 140/110, and as a blind check of the two M tokens
+- [ ] image-check: the 104 glyphs read by a control-passing reader (JVN-GLY, YES at M); still owed: the owner's sign sorter on images/jvn_gly for the glyph after 103 and 140/110, and as a blind check of the two M tokens -- waiting-on ASKS 161 (page built, `sh ciphers/jan-van-nassau-1572-75/sorter/a2o/build.sh OUT`)
 - [x] retry: D3-5551 two passes, JVN-104 third pass, JVN-GLY control-first pass
-Verdict: keep going: 2 internal gaps; cheapest next: owner's sign sorter page on images/jvn_gly X1-X7, ~$0.5
+Verdict: keep going: 1 internal gap; cheapest next: the owner's sign sort on the built page (ASKS 161, backlog); apply with tools/sign_sorter_apply.py after the export
+
+## SORT-A2o: sorter inputs for the JVN-GLY glyph questions (10 Oct 2026, account 2, LANE FAMILY-A2o)
+Worker SORT-A2o (Sonnet, disk only, 05:2x UTC by date -u). Prior-work check 1 (own work): grep of ROOM.md, NOTES.md, ASKS.md for a sorter on `images/jvn_gly` or JVN-GLY X1-X7 found none (the only sorters are ASKS 145-147/155 for other targets). Built `sorter/a2o/` (`cut.py`, `build.sh`, `cipher_lines.tsv`, `signs.tsv`, `labels.tsv`, `focus.tsv`, `fit_recut.tsv`): 40 tiles on the seven detail crops X1-X7 (X3 and X7_140 are line 2 of the cipher and hand-tiled after the ink-group cut split cursive digits badly; X1, X2, X4, X5, X6 are comparison words of the same page); 11 focus tiles (X3 around 103-104-146, X7_140 the 140/110 group); starting piles are value-blind shape clusters (no key, no value, no machine label; default blind mode, never `--show-values`). `tools/sorter_preflight.py` output:
+```
+PASS template: ok, Fix the cut present, marker 2026-10-09.4
+PASS answerable: 11 focus tiles, 5 named piles of 6, 0 unanswerable
+PASS right line: 40 tiles; 0 tile(s) off the cipher lines, 7 of 7 listed lines have tiles; shape: 0 wide, 0 strip-height boxes, 0 ink outside 3-60% of 40 measured; 0 = 0.0% (limit 5%)
+PASS contact sheet: 24 tiles beside their line strips (seed 20261006)
+PASS colour: pass tools/cvd_check.py
+preflight: PASS
+```
+Not published (account-3 orchestrator publishes; ASKS 161). Limits: a few boxes are rough on the cursive words (owner fixes with Fix the cut); the tiles are the person's question, not a reading. No reading, no decode.

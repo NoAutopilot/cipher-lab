@@ -1756,3 +1756,15 @@ spent at 17 digits on these passes.
   image, no re-judge). Step (e) ran on 6 Oct 2026 (R13-OLDSEG, section 17: all four windows
   FAIL, not concentrated in the OLD-PASS2 lines; deepest where the M/I tokens are). Step (d') ran on 6 Oct 2026 (R12-OLDCORP, section 16: es1600, FAIL by 0.140). Step (a') ran on 6 Oct 2026 (section 13) and stopped at the 10% split rule; its successor waits on
   the owner's sorter, seeded 6 Oct 2026 (R7-OLDSORT, `sorter/`, section 14) and re-cut on the cipher lines only (R7-OLDFIX, section 15).
+
+## 26. SORT-A2o, 10 Oct 2026: sign sorter inputs for the OLD-O2 line crops of leaves 4 and 7 (account 2, LANE FAMILY-A2o); status stays open
+Worker SORT-A2o (Sonnet, disk only). Prior-work check 1 (own work): ROOM.md, NOTES.md and ASKS.md grepped for a sorter on the OLD-O2 crops / L4, L7 tiles: none (ASKS 147's sorter is blocks A/C2, f.54/f.56, `sorter/`, untouched). Built `sorter/a2o/` (`cut.py`, `build.sh`, `cipher_lines.tsv`, `signs.tsv`, `labels.tsv`, `clusters.tsv`, `focus.tsv`, `fit_recut.tsv`, `region.json`): the four levelled OLD-O2 regions (`images/crops_O2/rot_*.jpg`) stacked, one flat trace per line through its manifest centre, ink-group tiles by `tools/sorter_recut.py` (2537 tiles on 75 lines; the page keeps the focus tiles and two neighbours each side, 358 tiles on 27 lines, to stay phone-sized); 80 focus tiles at the places where the two OLD-O2 blind passes (`passL_OLDO2_{L4,L7}_{A,B}`) differ (edit alignment per line, at most 3 per line, most-split lines first; the tile is found by proportional position, so a focus tile is within about a sign of the split); starting piles value-blind shape clusters, no value or machine label on the page. Preflight:
+```
+PASS template: ok, Fix the cut present, marker 2026-10-09.4
+PASS answerable: 80 focus tiles, 30 named piles of 30, 0 unanswerable
+PASS right line: 358 tiles; 0 tile(s) off the cipher lines; shape: 7 wide, 1 strip-height boxes, 4 ink outside 3-60% of 358 measured; 12 = 3.4% (limit 5%)
+PASS contact sheet: 24 tiles beside their line strips (seed 20261006)
+PASS colour: pass tools/cvd_check.py
+preflight: PASS
+```
+Waiting-on ASKS 161 (backlog, never blocking): the person's sign sort, then `tools/sign_sorter_apply.py`; the sign disagreements that bound the longest S stretch (13 digits, section 24; 17 digits, section 25) are what it settles. Escalation image-check line: sorter built, waiting-on ASKS 161. Status: open (unchanged). No reading, no decode.
