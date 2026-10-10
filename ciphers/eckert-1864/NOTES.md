@@ -4418,3 +4418,71 @@ Read so far: E366, E369, E370 audited (N3 D3, N3 D3, N3 D2); all three ledger pa
 - [x] image-check: all three entries eye-checked on line crops.
 - [x] retry: none needed except 9983 (not retried by the one-retry rule's spirit: not needed for the verdict).
 Verdict: keep going: 3 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18l) s.5, ~$1
+
+## O9-BOOK (10 Oct 2026, account 1, for LANE LEDGER-N2)
+
+Question: which book in hand reads the 1864 mssEC 18 rows that `ms18/clean-ms18.tsv` guesses as Cipher No. 9 (best_book 9; 26 rows)? Pre-registered in
+HYPOTHESES.md "## O9-BOOK pre-registration" (00:52 UTC) before any decode. Script `o9book.py` (entries cut by `fortmonroe/fm_entries.py` with
+FM_LEDGER=ms18, decode.py machinery unchanged), output `o9book.out` (`--show --headers`). Text: the volunteer transcription on disk
+(sources/mssEC18/p<pointer>.json); no image fetched, so every call below is conditional on that text (rule 2). Requests: 0 network. Nothing filed.
+
+Instrument A (the brief's gate): coherent-word count = word-kind code tokens whose meaning makes, with the read word on either side, a word bigram seen
+>= 2 times in the OR text on disk (13 OR/ORN `_djvu` files in sources/ia-fulltext/print-check); controls = each book with its word-kind meanings permuted,
+seeds 1-3 (gate: beat all 9 shuffled runs and both other books), 20-seed p95 reported beside. Instrument B (NOTES "Book assignment note (rule 3)"): the
+book label on the page, the opening place word (Pagan/Pagoda = Washington in No. 9; Battery in No. 1; Artillery in No. 2) and the time word against the
+header's written time.
+
+| row | date | A: No.1 / shuf3max / p95 | A: No.2 / shuf3max / p95 | A: No.9 / shuf3max / p95 | A call | B (page text) | verdict (pre-registered rule) |
+|---|---|---|---|---|---|---|---|
+| 9926/1 | 31 Dec 1864 | 3 / 7 / 8 | 5 / 8 / 6 | 3 / 5 / 4 | none | label "No 3  230 pm." above the header (Oct 1864-Jan 1865 pages put the book number above each entry: 9880 "No 1", 9927 "No 2."); colour words (Pine black, Carmine Nevada red, venus pink, Globe purple) no book in hand keys | **none in hand** (No. 3) |
+| 9880/2 | 31 Oct 1864 | 12 / 11 / 12 | 11 / 9 / 11 | 6 / 8 / 8 | No. 1 | label "No 1" above the header; siblings on the leaf "D Byington No 1", "SH Beckwith No 2"; No. 1 reads Halleck to Rosecrans: "[General] Curtis telegraphs that you have ordered the [troops] back from the pursuit of Price, directing [General] McNeil to Rolla and [General] Sanborn to Springfield. The orders of [Grant] and [Lehigh] are that the pursuit must be continued to [Arkansas] or until you meet the forces of [Steele] or [Reynolds]" | **No. 1 -- handed to LANE LEDGER** |
+| 9709/1 | 19 Apr 1864 | 1 / 1 / 1 | 1 / 1 / 1 | 0 / 1 / 1 | none | Pagan Apr nineteenth Viola: No. 9 = [Washington] 19 Apr 12.30 PM (No. 1 [Battery], No. 2 [Artillery]); "Can Vesper Olcott" = [Colonel] Olcott under No. 9 only (H. S. Olcott; No. 1 Position, No. 2 Re-enforcements); no header time to check | **No. 9** (B; A silent: 1 code word in the body) |
+| 9772/0 | 3 Jul 1864 | 11 / 9 / 9 | 7 / 4 / 9 | 3 / 3 / 4 | No. 1 | no label, no header time (Nancy = 8 PM No. 1/2, 3.30 PM No. 9); No. 1 reads Stanton(?) to J. W. Garrett: "[Hunter] has been under orders [3] days ago to move his [force]s up ... Dangers [cavalry] should have been up before now. [signed] [Secretary of War]". The segment also carries two following Gilmore/Chambersburg entries (1.25 AM 4 July) which the segmenter joined; the call rests on the first entry's words (Mutton, pebble, saints, pacific, Brutus) | **No. 1 -- handed to LANE LEDGER** |
+| 9694/2 | 5 Apr 1864 | 6 / 5 / 7 | 7 / 6 / 8 | 6 / 3 / 5 | No. 2 | header "( 9 )", 3 PM; Pagan Apr 5th Helen = [Washington] 3 PM under No. 9 (No. 1/2: 2 PM); No. 9 reads Meigs to Van Vliet: "For [Major] Van Vleet [New York] ... transport colored [troops] ... orders from [Maj. Gen.] Gillmore ... any other [steam boats] in [New York] ... sign [Quartermaster General]" | **conflict -- none filed** (rule); A's No. 2 lead is 7 vs 6 on function-word bigrams ("for_[Rebel]_van", "to_[Carr]_to") and No. 9 beats its own controls (6 > 3, p95 5) |
+| 9699/0 | 8 Apr 1864 | 4 / 5 / 5 | 5 / 4 / 5 | 4 / 2 / 3 | none | header "N. York ----", no label, no time; Minnie = 2.30 PM (No. 9), 7.30 PM (No. 1), 7 PM (No. 2); No. 9 reads "For [Captain] S. L. Brown assistant [Quartermaster] ... Call upon [Major] Van Vliet" (No. 1: [Pending] Brown, [Pontoon] Van Vliet); sibling 9699/1 on the same leaf is "( 9 )" | **undecided** (neither instrument decides by the rule; the clause leans No. 9) |
+| 9808/2 | 3 Aug 1864 | 4 / 3 / 4 | 4 / 4 / 4 | 0 / 1 / 1 | none | header 4 PM; Henrietta = 4 PM under No. 9 (No. 1/2: 2.30 PM); body nearly plain ("Cumberland valley" read as a code word by all three books is the plain word) | **No. 9** (B time word; A silent) |
+| 9845/0 | 18 Sep 1864 | 3 / 6 / 6 | 5 / 7 / 7 | 1 / 3 / 3 | none | header "11 A. M."; Francis = 11 AM under No. 9 (No. 1: 12, No. 2: 12.30 AM); but the body is not read by No. 9 either: "received from quarrel Sherman" gives [Pemberton] under No. 9, tappan/quorum/blanchard/taunton/Shylock are not in the No. 9 sample table | **No. 9** by the rule (B time word; A silent), body unread: the time word and the body disagree, so treat as No. 9 header only |
+| 9830/1 | 2 Sep 1864 | 5 / 5 / 6 | 4 / 4 / 5 | 0 / 1 / 1 | none | label "No 13  1.30 pm" above the header (book No. 13 or a serial, not read here); no time word at the opening; Bologna = [Heintzelman] under No. 9 does not fit a Boston arrest order; no book reads Biped/Dryden/nutmeg/Judah | **none in hand** |
+| 9673/0 | 5 Feb 1864 | 4 / 3 / 3 | 4 / 3 / 5 | 5 / 1 / 3 | No. 9 | header "John Horner 9"; Pagan Feby fifth Henrietta = [Washington] 5 Feb 4 PM; No. 9 reads Meigs to Van Vliet: "for [Major] Van Vliet [Quartermaster] [New York] ... rations from [Subsistence] Dept ... sig M C Meigs [Quartermaster General]" | **No. 9** (A and B agree) |
+
+Instrument A's own discrimination is weak at these lengths: the true book beats every shuffled run on only 3 of 10 rows, shuffled maxima reach 5-8 on
+the long rows, and on 9694/2 it ranks the wrong book first on function-word bigrams ("for_X_van", "in_X_period"). The header words (label, place word,
+time word) did the work, as the 8 Oct note says. Summary: No. 9 on 4 rows (9709/1, 9808/2, 9845/0 header only, 9673/0), No. 1 on 2 (9880/2, 9772/0:
+handed to LANE LEDGER, not filed), none in hand on 2 (9926/1 "No 3", 9830/1 "No 13"), conflict 1 (9694/2), undecided 1 (9699/0).
+
+The other 16 rows by header words alone (o9book.py --headers; no gate, a prediction for the wave-2 readers, not a verdict):
+- No. 9, label and time word agree: 9687/1 ("( 9 )", Francis = 11 AM = header 11 AM), 9684/1 ("( 9 )", Pagoda Susan = Washington 10.30 PM = header 1030 PM),
+  9699/1 ("( 9 )", Pagan Viola = Washington 12.30 PM = header), 9803/0 (Pagan Lucy = Washington 9 PM = header 9 P. M.; no label), 9684/0 (Francis = 11 AM =
+  header; Venus Olcott = [Colonel] Olcott).
+- No. 9 by label or place word, no header time to check: 9735/0 (header "9", Pagan Hannah = Washington 2 PM), 9686/1 ("( 9 )", Pagan Clara = Washington
+  10.30 AM), 9706/1 (Horner N. Y., Helen = 3 PM, Agate = [Jno. A. Dix]).
+- No. 9 or No. 2 by time word: 9679/0 (header 12 M; Gertrude = 12 noon under No. 9 and No. 2, 12.30 under No. 1; "For John A Kene..." reads plain only under No. 9).
+- Already assigned: 9731/2 is 9731.89 of LS3-R9's note (pencilled "No 9", 2.20 PM, Minnie = 2.30 PM; OR I/37 pt 1 about p.390); its opening is a clear
+  line ("Send following mesg in cipher").
+- No book word in the header (clear opening): 9725/1 ("No 32" above, "For Commanding Officer Little Rock"), 9762/1 and 9761/0 (Meysenburg, "For General
+  Stahl"), 9775/1 (Gilman, "Washn July Sixth Three P."). The body decides.
+- Time word disagrees with all three books: 9862/1 (header "6 P. m"; Ida Emily = 10 AM No. 1/2, 7 AM No. 9) and 9770/2 (header 1030 am; Dorothy = 8.30 AM
+  No. 1/2, 4 AM No. 9): predicted none in hand unless the header time is the filing time.
+
+Not done: no image was fetched (the labels "No 3", "No 13" and "No 1" are as the volunteer transcription gives them); no reading was filed; no print search.
+Prior-work: `tools/prior_work.py eckert-1864 --item-spec ... --step-type decode --offline` per row, see below.
+Prior-work lines (offline, 00:55-00:58 UTC by date -u; ad-hoc register rows not kept): 9880/2, 9709/1, 9772/0, 9699/0, 9808/2, 9845/0 "verdict plaintext: UNCHECKED,
+step: LEAD (exit 4: own-work LEADs owed before a decode step)"; 9926/1, 9694/2, 9830/1, 9673/0 "verdict plaintext: KNOWN (exit 2)" -- the KNOWN rows are
+cryptiana date matches about other ciphers (habsburg.htm, valle.htm 1583), not these telegrams; 5-civil-war "KNOWN-PART: clear words public in the holder
+transcription, code words not"; 4-editions "UNCHECKED: no sender/recipient in the spec". The wave-2 readers own the per-row prior-work and print steps.
+
+## Remaining gaps (O9-BOOK, 10 Oct 2026)
+Read so far: book called for 8 of 10 tested rows (4 No. 9, 2 No. 1, 2 none in hand), 1 conflict, 1 undecided; 16 further rows predicted from header words only.
+- 9694/2 conflict and 9699/0 undecided - blocker: not-attempted; instrument A is weak at this length; next: a wave-2 reader decodes both under No. 9 against the print (Meigs to Van Vliet, Apr 1864, OR I/35 pt 2 or ser. III) and an image check of the header, ~$0.5
+- 9926/1 ("No 3"), 9830/1 ("No 13") - blocker: no-key-material; Cipher No. 3 and a No. 13 are not in hand; next: none until a book is found
+- 9845/0 body words (quarrel, tappan, quorum, blanchard, taunton, Shylock) - blocker: not-attempted; the No. 9 table is a sample (key-no9.md header); next: read those rows from mssEC 67 if printed there, ~$0.5
+
+## Escalation (O9-BOOK, 10 Oct 2026)
+- [n/a] siblings: same-leaf header labels used (9880, 9927, 9699/1).
+- [x] clear-pages: page text read for every header and the line above it.
+- [x] known-keys: all three books in hand run on all ten rows, with 3 + 20 shuffled copies each.
+- [ ] print: not in this brief; the wave-2 readers search print.
+- [n/a] key-rebuild: no key row edited.
+- [ ] image-check: not done (disk only); labels as transcribed.
+- [n/a] retry: no step failed, so nothing to retry.
+Verdict: keep going: 2 internal gaps; cheapest next: a wave-2 reader on 9694/2 and 9699/0 under No. 9 with the print, ~$0.5
