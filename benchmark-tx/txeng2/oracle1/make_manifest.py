@@ -15,8 +15,10 @@ CANDIDATES = {
     # hand: (line ids in order, glob pattern with {line})
     'vivonne1573-f102r': ([f'f102r_L{i:02d}' for i in range(1, 38)],
                           'ciphers/fr16104-vivonne-spain-1572/images/c105_{line}_s*.jpg'),
-    'birago1572-no87': ([f'f178r_L{i:02d}' for i in range(1, 4)] + [f'f178v_L{i:02d}' for i in range(1, 24)]
-                        + [f'f179r_L{i:02d}' for i in range(1, 4)],
+    # REDRAWN 10 Oct 2026 01:2x UTC (TX-RED F67, the orchestrator's decision of 01:1x): no.87's candidates are the dev_tune lines
+    # f178v_L01-L12 ONLY (exactly 12, so all enter, no sampling); the first manifest (sha256 d12f6cd9..., 4cc8017d9) drew 7 eval-pool
+    # lines (f178v L19/L20/L21/L23, f179r L01/L03, f178r L02) and is superseded before any annotation; eval_heldout and f178r untouched.
+    'birago1572-no87': ([f'f178v_L{i:02d}' for i in range(1, 13)],
                         'ciphers/nevers-birago-fr3251-1572/harvest/{folio}/{line}_s*.jpg'),
     'luzerne108a-p1': ([f'p1_L{i:02d}' for i in range(1, 12)],
                        'benchmark-tx/txpool/luzerne108a/crops/{line}.jpg'),

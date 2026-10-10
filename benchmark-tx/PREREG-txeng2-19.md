@@ -87,3 +87,30 @@ clerk text in that span and about the seam, never about the cipher reads. Gate, 
 at an offset within 100 letters of the string-search placement (2669); else NOT ANCHORED, numbers reported. Nothing is rebuilt
 or re-scored by this job; a consequence for dev2 or confirm2 would be a separate PREREG. Reads no truth file, no output file.
 Output: benchmark-tx/txeng2/witanchor/ (wit_anchor.py, result.json, RESULTS.md). Openings: 0.
+
+## OL1-MANIFEST redrawn (dated 01:2x UTC 10 Oct by date -u; TX-RED pass 13 F67 and F66, the orchestrator's decision of 01:1x; BEFORE any annotation -- none had started)
+The first manifest (sha256 d12f6cd9d3afb04d625a636ebeeab6cad8d69f9d1971abd1168fc8862172d513, 4cc8017d9) sampled no.87 from all 29
+lines and drew 7 eval-pool lines (f178v L19/L20/L21/L23, f179r L01/L03, f178r L02): spending them in two arms of fresh reads plus a
+human reference would expose the eval pool. Redrawn: no.87's candidate list is the dev_tune unit f178v_L01-L12 only (exactly 12,
+all enter, no sampling); f.102r's 12 and luzerne's 11 are unchanged; eval_heldout and f178r untouched. luzerne108a-p1's split is
+changed eval -> dev by a dated line in BENCHMARK-TX.tsv (F66; it carried 0 pool errors, the eval pool stays 29). The manifest of
+record is now the recommitted benchmark-tx/txeng2/oracle1/manifest.tsv (sha256 in manifest.tsv.sha256); the superseded one is
+in git history only. L74 resumes on this commit.
+
+## WIT-GROEN Groen van Prinsterer IV pp.90*-91* as the clerk-independent test of the f.103r end anchor (added 01:2x UTC 10 Oct by date -u, BEFORE the run; TX-RED pass 13 F64 and strategy item 1; the orchestrator's decision of 01:1x; run by the lane, read-free)
+Nearest prior: WIT-ANCHOR (above: the method, Gachard p.428 vs dec_norm), WIT-VIV (found the Groen witness: letter 63, "St. Goard
+au Roi Charles IX: Madrid, 8 juin (MS. P. Sup. G. H. 228, vol. 79a)", the closing Emperor passage printed from a DIFFERENT
+manuscript copy than BnF fr.16105), SCAN-103 (the f.103r stretch is end-anchored to the clerk's closing paragraph; registered span
+dec_norm 6655-9554), N5-VIVK (the end anchor's origin). What is different: Gachard's quotation is a reading of the same clerk
+decipherment dec_norm transcribes, so WIT-ANCHOR tests dec_norm's transcription; Groen's text is independent of the clerk, so it
+tests the clerk's own closing text and the END anchor itself. Method as WIT-ANCHOR: the passage pulled by script from the on-disk OCR
+(sources/ia-fulltext/print-check/archivesoucorre03housgoog_djvu.txt.gz, from "L'Empereur fait asseurément" to "remédier ses
+affaires"), normalised with the same fold, split into its p.90* part (clean OCR) and its p.91* part (OCR visibly damaged:
+"rêcoiHÙlKalioniTecqiKS", "TouUoir"; reported separately, never pooled with the clean part); each part's best window over dec_norm
+by SequenceMatcher ratio (step 10, refined at step 1), 200 letter-shuffled copies of the clean part (50 of the damaged part) each
+taking its own best window as the selection-fair null. Gate, declared: the end anchor is SUPPORTED if the clean part's best window
+ends within 150 letters of dec_norm's end (9554) AND ratio - null max >= 0.03; NOT SUPPORTED otherwise, numbers reported. Also
+reported, no gate: the ratio inside the window (a measure of clerk-vs-other-copy agreement on the closing text, bounded above by
+OCR quality). Nothing is rebuilt or re-scored; a consequence for the f.103r flags in the closing stretch is a later PREREG with a
+verifier. Reads no truth file, no output file. Output: benchmark-tx/txeng2/witanchor/wit_groen.py, result_groen.json, RESULTS.md
+(shared with WIT-ANCHOR). Openings: 0.

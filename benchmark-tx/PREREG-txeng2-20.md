@@ -40,3 +40,19 @@ effect: `sh benchmark-tx/txeng2/scorerfix/run_audit.sh` (default item), outputs 
 and extended once RE103 lands. Openings: 1 (confirm2, the existing truth) + 1 (dev2).
 
 Costs this round: TX-RE103 6. Eval looks this round: 0. S2 looks: 1 (unchanged). Openings: RE103 1, CA-S2 2.
+
+## Amendment (lane incarnation 4, 01:2x UTC 10 Oct 2026 by date -u; TX-RED pass 13 F64, the orchestrator's binding decision of 01:1x; BEFORE TX-RE103 has built or scored anything -- the worker was told the relabel directly by the orchestrator)
+SCAN-103's NOT BEST is not evidence of a wrong f.103r offset: the registered offset R = 6655 is off the scan grid with no window
+slack (its window equals its own 2,899-letter span) while s = 6500 has 155 letters of slack and the free-start DP scores higher
+with more room; the two fair margins (0.0357 vs 0.0267) differ by 0.009, less than the scan's adjacent-offset swing (0.01-0.02 at 50
+shuffles); R is rank 1 of 201 at every point. What the scan shows is a truth weakly supported everywhere on its plateau (fair margin
+about 0.03 against 0.149 for the re-anchored sibling), a truth-support question, not an anchor error. Therefore: (1) the EXISTING
+f.103r truth (vivonne1573-f103r-confirm2) STAYS the truth of record; (2) CA-S2 (the fixed scorer on it, on file 01:12) IS the
+corrected audit of the one look; (3) TX-RE103's build at 6500 and its one re-score run as a DECLARED SENSITIVITY CHECK beside the
+record -- item id vivonne1573-f103r-confirm2-s6500 kept, BENCHMARK-TX split column "sensitivity", never a replacement, never
+pooled, never a figure of record; its reading is "how much the S2 figures move under a 155-letter shift of the truth's alignment",
+written beside both numbers as a small shift of a weakly supported truth, never as a large correction; (4) the F50 decision rule
+is amended from this line: NOT BEST licenses a rebuild of record only when the best offset beats the registered one by a fair-margin
+difference above the scan's own adjacent-offset swing AND at equal window slack; otherwise the re-score is a sensitivity check;
+(5) the clerk-independent test of the f.103r END anchor is WIT-GROEN (PREREG-19 addendum), run in-session, zero Gallica. Every
+other step of RE103 (the --start option, the control agreement within 0.005, the hashes, one run, the RESULTS content) stands.
