@@ -1,0 +1,20 @@
+# BNE MSS/20211/123 f.1r (= DECODE R1172 P1), lower cursive block: period decipherment of the cipher block. FAM-BNEDEC, 10 Oct 2026.
+# Source crop: images/r1172_p1_decipherment_block.jpg; line crops images/dec_lines/ (tools/iiif_lines.py --centres ... --follow-slope 120, pitch ~24 px at 1114 px page width).
+# Reconciled by the worker (Opus) from the crops, using blind passes A2/B2 (Sonnet, corrected crops) as aids. CAVEAT: the reconciler had read the 5 Oct unreconciled passes (period_decipherment_passes.tsv) before reconciling, so this is not blind; words that the 10 Oct passes did not support and the crop does not show clearly carry "?".
+# agreement = share of the line's reconciled words found (exact, case-folded) anywhere in pass A2 or B2 for the same half (passes misnumber lines, so per-line alignment is not possible; B2 lines 9-15 truncated). doubt = share of the line's words marked "?". Not a reading of the cipher; grade nothing above M from this file.
+line	text	agreement	doubt
+D01	porq sabe v. alteza lo q yo en otra? le scrivi? en dias passados q aqstas? demostraciones? q el dicho	0.65	0.24
+D02	charles fazia de reduzir se eran? fictas? y no porq en ello tuviesse? voluntat? y siguiendo? me v. s.	0.63	0.29
+D03	por su carta de treze del dicho mes de setiembre despachada q su secretario? coloma? sera assi	0.71	0.12
+D04	entodar? y saberlo verdaderament soy maravillado de lo q por aquesta carta me scrive? del screvir?	0.62	0.19
+D05	q he fecho al dicho charles me par? se sigue q v. alteza mando? siempre y beneficio?	0.59	0.19
+D06	y reposo al regno de navarra q por no venir en effecto la reducion del dicho charles	0.59	0.00
+D07	q poniendo? yo en dias passados scrito? al dicho q no recibiesse ninguno de los agramon-	0.62	0.12
+D08	teses? en su favor? le pareçio? de necesidad? assi fazer por usar? de vna? dar? de el?	0.47	0.53
+D09	dicho q de [struck] y entretener? mas otros? de aql regno ? ? ?	0.64	0.36
+D10	hoy sta fasta ser remediadas por v. alteza q por mi? como a ? por q? ? familias?	0.88	0.29
+D11	al dicho q de en recebir ninguno de los agramonteses en su favor? q fasta?	0.47	0.15
+D12	mas negros q el dicho charles parezca? puede? ser v. alteza q si siempre?	0.57	0.23
+D13	alguna empresa? de q se reduzir al servicio? de aqlla no solamente charles darteida?	0.43	0.23
+D14	da mas todos los otros de aql regno non solo no lo destorbaria mas con todas mis fuerças lo	0.53	0.00
+D15	procuraria? q ? ? ?	0.50	0.80
