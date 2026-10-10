@@ -53,16 +53,18 @@ Observation for the lane (not changed here): BENCHMARK-TX.tsv row 11 notes cite 
 ## Files and hashes
 | commit | file | sha256 |
 |---|---|---|
-| a67d3b028 | benchmark-tx/build_vivonne_confirm2.py | d998a8f08a0044fcdab431c3f780e3ccc0e6ed2fad4758819f74eb747bcfcae8 |
-| a67d3b028 | benchmark-tx/txeng2/witflags/wit_flags.py | d3febb531ba9c4559d5f6a9cb50315bf7ffe1385e09f3c6684c0b29a08bb264c |
-| a67d3b028 | benchmark-tx/txeng2/witflags/offsets.tsv | 099e789ff7360cd97ce81b05adb8723c5de299aae68bf0fd71d1bac1faf8b66e |
-| 206ec284d | benchmark-tx/txeng2/witflags/controls.json | ddb2ef0804eb6e1513781a32b56ad2d6b09f1929e45a2e952e0a1d9ccb1205e7 |
-| 206ec284d | benchmark-tx/txeng2/witflags/ceiling.tsv | b8c63bb4fc4a4e9be5ee64916164bca969fe06878088bfaff45ac13ce5bd3f68 |
-| 206ec284d | benchmark-tx/txeng2/witflags/result.json | dccc479ce63175faa151fc05aed82d530beb78d9410cb72cfb577791ece7e470 |
-| 206ec284d | benchmark-tx/vivonne1573-f103r-confirm2.witness.tsv | bdea44f9da63017b2b824e74572566453dd2fa265ab564732b7dea7bd13ae445 |
-| da6b4abb2 | benchmark-tx/vivonne1573-f103r-confirm2-w.truth.tsv | 3523f652bebc846430ffcb609be0c6212747cdb6365abf244a3390448a44da51 |
-| da6b4abb2 | benchmark-tx/vivonne1573-f103r-confirm2-w.truth.tsv.sha256 | 936f3a19dd67636b9e4aacdf97bd32e6e4fec4132f18d094ad2886ba8487b496 |
-| da6b4abb2 | benchmark-tx/outputs/vivonne1573-f103r-confirm2-w/*.tsv (6) | = SHA256SUMS.prescore |
-| da6b4abb2 | BENCHMARK-TX.tsv (row vivonne1573-f103r-confirm2-w) | 183ce158c5b6cf2eb61023b98c4531aa9d6b62ff4b12b19001b2982f69c03b8f |
+| 97b7198ad | benchmark-tx/build_vivonne_confirm2.py | d998a8f08a0044fcdab431c3f780e3ccc0e6ed2fad4758819f74eb747bcfcae8 |
+| 97b7198ad | benchmark-tx/txeng2/witflags/wit_flags.py | d3febb531ba9c4559d5f6a9cb50315bf7ffe1385e09f3c6684c0b29a08bb264c |
+| 97b7198ad | benchmark-tx/txeng2/witflags/offsets.tsv | 099e789ff7360cd97ce81b05adb8723c5de299aae68bf0fd71d1bac1faf8b66e |
+| 705c0da7a | benchmark-tx/txeng2/witflags/controls.json | ddb2ef0804eb6e1513781a32b56ad2d6b09f1929e45a2e952e0a1d9ccb1205e7 |
+| 705c0da7a | benchmark-tx/txeng2/witflags/ceiling.tsv | b8c63bb4fc4a4e9be5ee64916164bca969fe06878088bfaff45ac13ce5bd3f68 |
+| 705c0da7a | benchmark-tx/txeng2/witflags/result.json | dccc479ce63175faa151fc05aed82d530beb78d9410cb72cfb577791ece7e470 |
+| 705c0da7a | benchmark-tx/vivonne1573-f103r-confirm2.witness.tsv | bdea44f9da63017b2b824e74572566453dd2fa265ab564732b7dea7bd13ae445 |
+| 7981f017f | benchmark-tx/vivonne1573-f103r-confirm2-w.truth.tsv | 3523f652bebc846430ffcb609be0c6212747cdb6365abf244a3390448a44da51 |
+| 7981f017f | benchmark-tx/vivonne1573-f103r-confirm2-w.truth.tsv.sha256 | 936f3a19dd67636b9e4aacdf97bd32e6e4fec4132f18d094ad2886ba8487b496 |
+| 7981f017f | benchmark-tx/outputs/vivonne1573-f103r-confirm2-w/*.tsv (6) | = SHA256SUMS.prescore |
+| 7981f017f | BENCHMARK-TX.tsv (row vivonne1573-f103r-confirm2-w) | 183ce158c5b6cf2eb61023b98c4531aa9d6b62ff4b12b19001b2982f69c03b8f |
+
+Commit hashes are those on origin/main after the push rebase. RESULTS.md first version a32994a57 (sha256 69bf33d249c65f527d1baae0c1bd0e1f361dabdacd8bbef44b41e71693bf6f07); this hash-corrected version is the next commit.
 
 Verdict: measured: INFORMATIVE (84 confirmed)
