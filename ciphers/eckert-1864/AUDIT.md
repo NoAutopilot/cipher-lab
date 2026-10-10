@@ -20184,3 +20184,141 @@ inline on the cached djvu texts (`sources/ia-fulltext/print-check/`), not commit
 - Requests: hdl.huntington.org 27 (14 CONTENTdm queries incl. control, 7 dmGetItemInfo, 6 IIIF pages; one take, all 200); www.googleapis.com 34 (19 + one
   retry of 15; 29 answered 503; overlapped AUD2-LEDGER16-5's take on the same host); be-api.us.archive.org 11 (9 x 200, 2 x 502); www.loc.gov 6 (200);
   scholarsjunction.msstate.edu 3 (2 HTML pages 200, the PDF 403 Cloudflare, stopped). For LANE LEDGER-16 (account 1).
+
+## AUDIT (FV-L17a)
+
+Verifier FV-L17a (account 1, for LANE LEDGER-17), 10 Oct 2026, 17:25-18:0x UTC by `date -u`; a separate session from the reader FM-S65A, not
+protecting its conclusions. Scope: FM-S65A's six filings (NOTES "## FM-S65A"), by H count **E585 (H14) E582 (H12) E587 (H12) E581 (H7)**, then the thin
+**E583 (H10, numbers) E586 (H5)**; ciphertext.txt, War Department Cipher No. 1, Fort Monroe ledger mssEC 25 = Huntington object 5952, 6-21 Jan 1865.
+Nothing decoded beyond key look-ups in key.md. Key source for all six: `period`. No spec for eckert-1864, so `judge_plaintext.py` was not run. Intake gate
+(17:4x UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. **Step 0 is a non-test on mssEC 25**:
+nothing below is classed from step 0. Prior-work tool (`prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=pointer
+5862|5872|5874;...' --step-type audit`, run 17:4x UTC, **after** the holder and print passes, not before them as the brief orders: late): exit 0 each,
+verdict step LEAD; the three LEAD rows are target-level live claims (CLEAR-SWEEP, FIX-L17a, OR-CACHE2) that name the slug and no unit and cover none of
+these pointers; plaintext UNCHECKED (generic rows: Tomokiyo and solver repositories by unit, not searched by hand: unchecked, not clear).
+Scripts: `fortmonroe/fv_l17a_hdl.py` (+ `.out`: control + 18 CISOSEARCHALL queries across all pointers, four IIIF leaves at 2400 px to scratch),
+`fv_l17a_print.py` (+ `.out`: letters-only phrase grep + KWIC over the 211 cached print-check volumes incl. OR I/46 pts 1-3, I/47 pt 2, ORN I/11-12,
+Butler Corr. V, O'Brien 1910, Plum vol. 2), `fv_l17a_gb.py` (+ `.out`: Google Books, all 429, below).
+
+### 1. Duplicates, image
+- **Duplicate diff** (pointers 5862, 5872, 5874, 5883 and the subjects Grover / Illinois / River Queen / relieve Foster / leave Annapolis against every
+  `###` header in ciphertext*.txt and reading*.md, mssEC 18/19/25): no duplicate. Neighbouring rows of the same exchanges: **E521** (5861/2, Beckwith
+  asks whether Butler has left Monroe and whither bound) is the question **E581** answers; **5863/0** (unfiled, Stanton at Monroe to Grant, 6 Jan 5 PM:
+  Mrs. Foster wants the general sent to Baltimore for an operation on his leg; is there a good man to assign) is the question **E582** answers; **5862/1**
+  (unfiled, Grant to Stanton 5.30 PM, Foster to organize colored troops) sits between them; **E585**'s question is answered by **E586** (5874/1);
+  **5883/1** (Sheldon to Eckert, 20 Jan, "have a car at Anna police for me ... to take me to [Washington]", unfiled) is Grant's own travel request before
+  **E587**. E530/E531 (Sedgwick, Oriental, 13-15 Jan) are sister sailing reports of E583, other ships.
+- **Image eye check this session, every graded line** (IIIF leaves at 2400 px from hdl.huntington.org; `tools/iiif_lines.py --image` found no line
+  bands on these pale pencil leaves at the default and at `--ink 215`, so PIL region crops of the same files were read instead): 5862 (E581 four lines +
+  Sheldon; E582 header + two lines + Beckwith), 5872 (E583 three lines; E585 three lines), 5874 (E586 three lines; the Terry dispatch's close read for
+  "Tappan Shelby polking"), 5883 (E587 header + three lines + "T. T. Eckert"). **The transcription matches the image on all six**, including "River
+  queen" (lower-case q), "Melan or Meriden", "willby good spit peach", "weasler Illinois / goes to see at flag o'clock with forbid / William and Mother
+  postpone spit", "will lave an Apple is at Cora whelp John". One note: in E585 l.2 "Quincy" is written over another word (darker ink); the overwrite
+  reads Quincy (= Division, H) and the reading stands.
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm** (p16003coll11, CISOSEARCHALL, all pointers; one take 17:2x-17:3x UTC, 23 requests, all 200; control 'Inspector difficulty
+Evidence Nashville' -> 9678; queries fresh, none of FM-S65A's): `River Queen Butler` 0, `Queen board Butler` 0, `Butler gone James` 3 (other years),
+`relieve Foster` 8 (**5863** = Stanton's question, above; 8562 = Grant 2 Feb 1865, Sherman asks Foster relieved, other; the rest 1863-64), `Steele Ord`
+3 / `Prentiss Ord Foster` 0 (other), `Illinois sea` 1 (**8514** = Newport, Baltimore 11 Jan: "The Illinois and Ala will take their troops today"),
+`steamer Illinois` 2 (5858 own ledger, 8508 Newport 6 Jan, "The Ariel, Victor, and Illinois are here coaling"), `Illinois Morgan` 4 (own pointer and
+other years), `Grover ammunition` / `40 rounds Grover` 1 (**7687** = Sheridan's Winchester 6 Jan 1865 to the Secretary of War: Grover's division of the
+19th Corps, 4,500 strong, left Stevenson's Depot for Baltimore and Fort Monroe; "The men have fully 40 rounds of ammunition on their persons"),
+`forty rounds` 7 (other years), `Grovers rounds` 1 / `rounds will answer` 2 (own pointer; 8369 other), `need not wait more` 1 (1862, other), `leave
+Annapolis` 27 (**7717** = clear copy of 5883/1: Grant, Ft Monroe 20 Jan 6 PM, "Please have the QrMr notified to have a car at Annapolis for me at 7 AM
+in the morning to take me to Washn"; 7744 = 3 Feb 1865 River Queen to Annapolis, other), `Annapolis Palmer` 5 / `Palmer Grant Monroe` 4 (**7718** =
+Palmer's own question of 21 Jan 1 PM, as FM-S65A found; the rest other). **No clear copy of any of the six** at another pointer.
+**Print** (phrase grep and KWIC, `fv_l17a_print.out`; pages from OCR running heads):
+- **E582 is in print: OR ser. I vol. 47 pt 2, p.18** (running head "Chap. LIX. Correspondence, etc. Union. 19" follows; IA `warofrebellion431unit`):
+  "City Point, Va., January 6, 1865 -- 8.30 p. m. Hon. E. M. Stanton, Secretary of War, Fort Monroe: General Logan or Ord, either, will be good men to
+  relieve Foster. U. S. Grant, Lieutenant-General." The same page prints Stanton's question (Fort Monroe, 6 Jan 5 p.m., "Mrs. Foster wants the general
+  to be sent to Baltimore for an operation on his leg ..." = holder 5863/0) and Grant's 5.30 p.m. telegram (= 5862/1). The decode reads the print word
+  for word; **"Melan" = Logan** (an unkeyed spelling or a clerk's slip; not in key.md; the print supplies it, C).
+- **E587 is in print: OR ser. I vol. 46 pt 2, p.198** (running head "Chap. LVIII. Correspondence, etc. Union. 199" follows; IA
+  `warofrebellion014602rootrich`): "War Department, Washington City, January 21, 1865. (Received 3 p. m.) Brig. Gen. I. N. Palmer, Fort Monroe, Va.:
+  Wait at Fort Monroe until I get there. I will leave Annapolis at 5 a. m. to-morrow. U. S. Grant, Lieutenant-General." Printed just after Palmer's
+  question (= holder 7718) and Stanton's 7 p.m. "General Grant has started this evening on his return. You will wait for him." The row reads it: "an
+  Apple is" = **Annapolis** (as FV-L15m's E550 "An Apple is"), not [Sumter]; "John" = [Grant] is the signature; the sender is Grant, not Eckert.
+- **E581: not printed.** Its circumstance is: O'Brien, Telegraphing in Battle pp.180-181 (FV-L16a, read: Butler went to Fort Monroe 5 Jan, not returned
+  6 Jan, relieved 8 Jan); E521 (same ledger) asks the question. "River Queen ... Butler" and the January 1865 KWIC give no 6 Jan print.
+- **E583: not printed.** Context in OR I/46 pt 2: Newport, Baltimore, 12 Jan 11.30 a.m., "The Illinois, Victor, and Ashland are loaded and under orders
+  to sail" (p.~112, OCR running head 111 precedes); Lt. Col. M. R. Morgan, Chief Commissary, at Fort Monroe 12 Jan forwarding Grover's brigades, "Copy for General Rawlins, chief of
+  staff" (pp.106-107, running head 107 inside it) -- the "Morgan" who signs E583 to Rawlins. Holder 8514 (above). Corroboration of the ship and the man, not of the text.
+- **E585: not printed.** Context: holder 7687 (Sheridan, 6 Jan: Grover's 2nd Division, 19th Corps, men with 40 rounds on their persons, embarking at
+  Baltimore for Fort Monroe); OR I/46 pt 2 Morgan 12 Jan (1st Brig., 2d Div., 19th Corps landing at Newport News by Grant's order); OR I/47 pt 2 p.90
+  (Sherman, Savannah 19 Jan: "General Grover arrived yesterday"). The external text gives the same unit and the same number (40 rounds) independently.
+- **E586: not printed.** It answers E585.
+- Phrase grep, other hits read and rejected: `forty rounds of ammunition` (36 volumes, generic), `Second Division Nineteenth Corps` (other dates),
+  `either would be good` (OR I/46 pt 2, another sentence), `to relieve General Foster` (Halleck 6 Feb 1865, Gillmore sent), `gone up James` /
+  `himself was going` (ORN I/9, I/11, other), `but 40 rounds` (other years).
+- **Google Books** (Grant Papers vol. 13): `fv_l17a_gb.py` sent 19 keyed queries (country=US) and **every one returned HTTP 429**; the script did not
+  stop at the first 429 (my error; logged in ROOM, no retry, host left alone). **The Papers of Ulysses S. Grant vol. 13 is unchecked by this audit.**
+  Correction to NOTES "## FM-S65A": it says vol. 13 "ends 31 Dec 1864, before all eleven dates"; vol. 13 carries January 1865 matter (FV-L16a's vol. 13
+  snippet pp.488-89 of a January hospital-steamer exchange; FM-S65B's control E531, 15 Jan 1865, hit vol. 13, ROOM 17:05), so it is the right volume
+  for all eleven rows and was not searched by the reader either.
+- **IA be-api**: not used this session (the reader's 12 calls covered Grant Papers 14, which is the wrong volume for these dates).
+- **Unreachable / not searched:** Grant Papers 13 (429); ORN I/11-12 read by grep only; NARA RG 92/107/108; JSTOR; HathiTrust full text; the press.
+
+### 3. Grade and reading corrections (reading.md as of this audit; key look-ups in key.md)
+- **E581:** "River [Danger]" -> **River Queen** (plain vessel name, lower-case "queen" on the leaf; Queen = Danger is a collision): H 7 -> H 6 + 1 plain.
+  "gown" = gone (plain-phonetic). "Fanny" = 11 AM, "wedge" = today, "Knave" = Butler, "pandora" = Colonel, "Bergen" = James all H. FM-S65A's M on
+  "Fanny" and "gown" is lifted (time word H; "gown" a spelling).
+- **E582:** "Melan" -> **Logan** (C from OR I/47 pt 2 p.18); "wilby" = will be; "spit" = Men (H; the print: "good men"); "peach" = 2 = "to" (the print:
+  "to relieve") -- not [2]; "youth" = Signature, "Jersey" = Grant. With the print, H 11 + C 1 of 12.
+- **E583:** "weasler" unread (also 5883/0 "on weasler frog" and 5883/2 "Libby weasler Shelly Lyon"; not in key.md; M). "forbid William and Mother
+  postpone spit" = 12 / 100 / 80 / 7 / Men = **1,287 men** (twelve hundred and eighty-seven); "see" = sea (plain-phonetic). Numerals tie under the
+  shuffled-key control (FM-S65A), so the control cannot separate the book here; only "palsy" (Brigadier General), "borgia" (Chief of Staff), "spit" (Men)
+  are separable.
+- **E585:** "polking" = commanding (the "polka" = Command family plus -ing: "polka" = command in 5863/0, "Is there any good man that can be assigned to
+  that polka" = command, OR I/47 pt 2 p.18 "that command"; and "Brevet Tappan Shelby polking" closes Terry's 5874/0 dispatch, "Alfred H Terry Brevet
+  Major General commanding"): M -> H. "Eugenia Snake plank quitman hope pelton" = 9.30 AM / Head Quarters / 2 / Division / 19 / Corps: all H; FM-S65A's M
+  on these is lifted. H 15 of 15.
+- **E586:** H 5 as read; the rest plain.
+- **E587:** "[Sumter] is" -> **Annapolis** ("an Apple is", plain-phonetic, C from OR I/46 pt 2 p.198; lift the M); the signature [Maj Genl U.S. Grant]
+  (John, H) is the sender: **Grant to Palmer**, not "signed Eckert" (Eckert's name closes the row as the Washington office). "mock" = Gen J. M. Palmer is
+  the key sheet's label; the referent is **Brig. Gen. I. N. Palmer**, commanding the District of North Carolina (the print; holder 7718 "J. W."). H 11 +
+  C 1 of 12.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E582 | **N1** | period | D3 (H 11 + C 1 of 12; the print agrees word for word) | plaintext printed, OR I/47 pt 2 p.18 (Grant to Stanton, 6 Jan 1865 8.30 p.m.); under the Wave 2 RULING (ii) this row is **not filed** |
+| E587 | **N1** | period | D3 (H 11 + C 1 of 12; the print agrees word for word) | plaintext printed, OR I/46 pt 2 p.198 (Grant to I. N. Palmer, 21 Jan 1865, received 3 p.m.); RULING (ii): **not filed** |
+| E585 | **N3** | period | **D3** (H 15 of 15 after s.3; external non-statistical: holder 7687, Sheridan 6 Jan 1865, Grover's 2nd Div., 19th Corps, "fully 40 rounds of ammunition on their persons", bound via Baltimore for Fort Monroe; OR I/46 pt 2 pp.106-107 Morgan at Fort Monroe forwarding the division's 1st Brigade to Newport News) | no prior plaintext or decipherment located; not N4: Grant Papers 13 unchecked (429) |
+| E581 | **N3** | period | **D2** (H 6 + 1 plain of 7; the clause "[11 AM] [today] with [Butler] on board, [Colonel] told me he had gone up [James]" reads and does not survive the shuffled-key control; external only context: O'Brien pp.180-181, E521 the question) | no prior plaintext or decipherment located; not N4 (Grant Papers 13 unchecked) |
+| E583 | N3 (plaintext not located) | period | **D1** (the content is plain words and numerals that read the same under every shuffled key; the separable key words are a title and "Men"; no clause above the authentication distance) | thin: under RULING (iii) "too short for a clause above the authentication distance" -- **recommend not filed** (orchestrator's call) |
+| E586 | N3 (plaintext not located) | period | **D1** (H 5, no two adjacent: "Brevet [Major] [General] Grovers [40] rounds of [Ammunition] will answer"; the clause is plain; corroborated only as the answer to E585) | thin: RULING (iii) -- **recommend not filed** (orchestrator's call) |
+
+- Not N4 for any: The Papers of Ulysses S. Grant vol. 13 (the Grant-headquarters edition for these dates) not searched (Google Books 429, the reader
+  searched vol. 14); NARA RG 92/107/108, JSTOR and HathiTrust full text not searched; OR pages from OCR running heads.
+- **Safe sentences** (each ends "; not located in the Official Records ser. I vols. 46 and 47, ORN ser. I vols. 11-12, Butler's correspondence vol. V,
+  O'Brien's Telegraphing in Battle or the Huntington's full-text search (searched 10 Oct 2026); The Papers of Ulysses S. Grant vol. 13 not yet
+  searched"; read at grade H with War Department Cipher No. 1):
+  - E585: "on 15 Jan 1865 at 9.30 a.m. Fort Monroe passed to General Rawlins, chief of staff at City Point, a message from the headquarters of the 2nd
+    Division, 19th Corps: the division had only 40 rounds of ammunition -- should it take more? -- signed C. Grover, brevet major general commanding."
+  - E581: "on 6 Jan 1865 G. D. Sheldon at Fort Monroe told S. H. Beckwith at City Point that the River Queen had left about 11 a.m. that day with General
+    Butler on board, and that the colonel had told him Butler had gone up the James and that he himself was going the same way at once."
+  - E582 and E587 (N1): "War Department Cipher No. 1 text of Grant's telegram printed in the Official Records ser. I vol. 47 pt 2 p.18 [E582] / vol. 46
+    pt 2 p.198 [E587]; the Fort Monroe ledger copy reads the printed text."
+- **Unsafe** for all: "first", "new", "unpublished", "never printed"; for E587, any sentence naming Eckert as the sender; for E582 and E587, any sentence
+  implying the plaintext was unknown.
+- **Depth sentences** (D2+): E585 "On 15 Jan 1865 Grover's 2nd Division, 19th Corps, at Fort Monroe reported it had only 40 rounds of ammunition and
+  asked Rawlins whether to take more." E581 "On 6 Jan 1865 Fort Monroe reported that the River Queen had left about 11 a.m. with General Butler on
+  board, bound up the James."
+
+### 5. For a FIX job (not applied here)
+- **E582 and E587: not filed** under the Wave 2 RULING (ii) (print located at vol/page); FIX marks them as the printed-text rows, keeps the reading
+  with the corrections below, and drops any status/SO row (none was written).
+- **E581:** "River [Danger]" -> River Queen (plain); lift M on "Fanny", "gown" (= gone).
+- **E582:** "Melan" -> Logan (C, OR I/47 pt 2 p.18); "[2]" (peach) -> "to"; header "[a name, unread 'Melan']" -> General Logan.
+- **E583:** "[1200] and [87]" -> 1,287 (12 / 100 / 80 / 7); "see" = sea; "weasler" M (three occurrences in mssEC 25, see s.3). Filing: RULING (iii).
+- **E585:** "polking" -> [Command]ing (H, "polka" = command; lift M); lift M on "Eugenia Snake ... pelton" (all H).
+- **E586:** filing: RULING (iii).
+- **E587:** "[Sumter] is" -> Annapolis (C); header "signed Eckert" -> **signed U. S. Grant** (Eckert = Washington office); "Gen. J. M. Palmer" ->
+  **Brig. Gen. I. N. Palmer**; "I will leave [a place unread]" -> I will leave Annapolis at 5 a.m. tomorrow.
+- **NOTES "## FM-S65A"**: "Grant Papers 13 ... vol. 13 ends 31 Dec 1864, before all eleven dates" is wrong (vol. 13 carries January 1865); its
+  "E582 ... not located" and "E587 ... not located" are superseded (s.2).
+- Unfiled rows met, all printed (N1 if ever filed): **5862/1** (Grant to Stanton 6 Jan 5.30 p.m., OR I/47 pt 2 p.18); **5863/0** (Stanton to Grant 6 Jan
+  5 p.m., same page); **5883/1** (Grant to the Secretary of War, 20 Jan, car at Annapolis; holder clear copy 7717; OR I/46 pt 2 under 20 Jan, KWIC, page not pinned).
+- Requests this session: hdl.huntington.org 23 (all 200); googleapis 19 (all 429); be-api 0; archive.org 0.
