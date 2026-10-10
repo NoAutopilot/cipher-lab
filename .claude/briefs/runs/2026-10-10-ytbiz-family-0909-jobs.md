@@ -76,3 +76,28 @@ for Oct 1604 - mid 1605; for each digitised one, METS + IIIF 400 px contact-shee
 most 6). NA take/release lines; >= 2.0 s apart. Output `images/sg_<inv>_screen.tsv` and the table of which inventory numbers were looked at.
 A numeral hit: transcribe nothing; 1200 px crop committed and one ROOM flag line for the lane. NOTES "## OBRED-SG", Remaining gaps /
 Escalation / Verdict, gaps_check.py. Report what was found and where it was not found; do not classify novelty.
+
+## Wave 1 results (09:4x UTC, costs by get_session)
+FAM-LINCAL 4.76: PREREG-LINCAL first, held-out 4/4 PASS; 83/2 r19 Cagar, 241/3 r15 Jus labelled, both stay M (a person's count of 241/3
+decides jus/justa). FAM-BNEDEC 5.89: decipherment re-cut (pitch ~24 px with --follow-slope), 2 blind passes 26.6% agreement, reconciled 12/15
+lines doubt < 1/3 (M); print rung: "reposo al regno de navarra" in Paz y Melia 1914 (IA elcronistaalonso0000unse, gbooks 7q9CAAAAYAAJ), page
+unread. FAM-COSCREM 2.34: Cremonini n.1 1/11 vs null p95 2, FAIL (different design). FAM-OBRSG 1.42: Den Tex no cipher note; the
+Resolutien footnote numbers are old numbering; the Hoogduytschlandt liassen (6034/6035) are not digitised.
+
+## Wave 2 (09:5x UTC 10 Oct)
+
+### FAM-BNEPRINT (Sonnet, cap 1.5, box 50 min, Google Books API + be-api only): bne20211-ferdinand-1478, is the decipherment's text in Paz y Melia 1914?
+Prior-work check 5 for the reconciled period decipherment. Read ONLY NOTES "## BNE-DEC29" (FAM-BNEDEC's section: the phrases, print-check.tsv),
+`period_decipherment_reconciled.tsv`, "## Remaining gaps" and "## Escalation". Question: does Paz y Melia, *El cronista Alonso de Palencia*
+(1914) print this letter (Ferdinand, Trujillo, Dec 1478) or its deciphered passage, and on which page? Route (no page images from the cloud:
+books.google page view is blocked; IA is lending/print-disabled): (1) Google Books API volume 7q9CAAAAYAAJ (`&country=US&key=$GOOGLE_BOOKS_KEY`,
+never print the key): read its accessInfo (viewability; a full-view volume may expose a text or pdf link -- try it once); then `volumes?q=`
+searches restricted to that volume id for 8-10 distinct phrases from the reconciled lines (lowest doubt first, 3-5 words each, original
+spelling and one normalised variant) and record each searchInfo.textSnippet; (2) be-api fts on `elcronistaalonso0000unse` for the same phrases
+(snippets only; page_num is not a page). Positive control: the known hit "reposo al regno de navarra" must return; negative control: 2 phrases
+from an unrelated 1478 Castilian letter text (or the decipherment's lines shuffled into nonsense 4-grams) must not. Score: share of the
+decipherment's phrases found, against the controls. Outcome lines: "printed (N of M phrases, snippets quoted, page if any snippet shows it)",
+"partly quoted", or "one phrase only". If a person's page read is still needed to settle it, draft ONE LOCAL-QUEUE.tsv row (rebase first;
+the row format from the file's header; the IA reader page, the phrases to check) rather than an ASKS row. Do NOT classify novelty and do not
+edit AUDIT.md: write the finding into NOTES "## BNE-PRINT", update the print rung / Remaining gaps / Verdict, gaps_check.py, and one ROOM flag
+line asking the lane for a verifier if >= 3 phrases hit. Requests: googleapis <= 25, be-api <= 15, 1.5 s apart.
