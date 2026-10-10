@@ -1,0 +1,10 @@
+CTL-ID | "Garrett" | baltimoreohioinc0000summ
+E621 | "Koontz" | baltimoreohioinc0000summ
+E621 | "Harper's Ferry" arms October 1864 | baltimoreohioinc0000summ
+CTL-ID2 | "Garrett" | TheBaltimoreAndOhioRailroadInTheCivilWar
+E621 | "Koontz" | TheBaltimoreAndOhioRailroadInTheCivilWar
+E621 | arms "Harper's Ferry" Halleck delayed | TheBaltimoreAndOhioRailroadInTheCivilWar
+CTL-ID3 | "forage" | executivedocumen7359unit
+E611 | "Biggs" | executivedocumen7359unit
+E611 | "Fort Monroe" forage daily | executivedocumen7359unit
+E611 | "27,000 bushels" | executivedocumen7359unit

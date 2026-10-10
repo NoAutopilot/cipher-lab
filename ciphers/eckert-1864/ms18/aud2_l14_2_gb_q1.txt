@@ -1,0 +1,28 @@
+# controls first (Grant Papers route, E531/E516 known in vol. 13)
+"six vessels" Oriental intitle:Grant
+# E621 Halleck to Garrett 7 Oct 1864
+"arms were sent from here to Harper's Ferry"
+"see if they have been delayed on the railroad"
+"should be no delay" Garrett Halleck "Harper's Ferry" arms 1864
+Garrett Halleck arms "Harper's Ferry" October 1864 intitle:Baltimore
+"Koontz" Halleck arms "Harper's Ferry" Garrett
+"arms" "Harper's Ferry" Garrett Halleck intitle:Grant
+# E620 Dana to Dix 15 Nov 1864
+"Beverly Tucker" "Niagara Falls" Odell
+"Beverly Tucker" Odell Dana Dix 1864
+"John Odell" detective Tucker
+"I do not know Odell"
+"Beverly Tucker will cross"
+"Tucker" "Niagara" Dana Dix "Fort Lafayette" 1864 telegram
+# E612 QMG to Allen 1 Nov 1864
+"Captain Ferry" Memphis arrest 1864 quartermaster
+"Captain Ferry" "Robert Allen" Louisville
+"not satisfied with your conduct" Allen Meigs
+"Ferry" quartermaster Louisville arrested 1864 Stanton Memphis
+# E611 QMG to S. L. Brown 7 May 1864
+"S. L. Brown" forage "New York" 1864 Meigs
+"Captain S. L. Brown" forage
+"27,000 bushels" "350 tons" forage
+"daily shipments of forage" Monroe
+"no recent accumulation" forage
+Meigs forage "Fort Monroe" Biggs May 1864 "60,000 animals"

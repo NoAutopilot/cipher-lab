@@ -13993,9 +13993,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L14b)'"
+        "AUDIT.md '## AUDIT (FV-L14b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER14-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-L14b verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -14016,7 +14017,7 @@
       "depth_pct": 96.9,
       "title": "Eckert 1864 (mssEC 18): Quartermaster General's office to Capt. S. L. Brown, New York, 7 May 1864: daily forage shipments to Fort Monroe, 27,000 bushels of grain and 350 tons of hay, consigned to Col. Biggs (E611)",
       "line": "Read at grade H with War Department Cipher No. 1: on 7 May 1864 the Quartermaster General's office told Capt. S. L. Brown in New York that daily forage shipments to Fort Monroe should average 27,000 bushels of grain and 350 tons of hay, consigned to Col. Biggs; not found in the cached OR/ORN volumes, OR I/36 pts 2-3, IA full text or Google Books (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L14b); not N4: OR ser. III vol. 4 unsearched (lending-only), NARA RG 92 QMG letters-sent not reached, press not searched",
+      "gap": "N3 two audits (FV-L14b, AUD2-LEDGER14-2); not N4: OR ser. III vol. 4 unsearched (lending-only), NARA RG 92 QMG letters-sent not reached, press not searched",
       "depth": "D2",
       "completeness": "31 H + 1 M of 32 code-word tokens",
       "phrases": [
@@ -14034,11 +14035,12 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L14b)'"
+        "AUDIT.md '## AUDIT (FV-L14b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER14-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth_by": "FV-L14b verifier (account 1)",
+      "depth_by": "AUD2-LEDGER14-2 verifier (owner account)",
       "depth_date": "10 Oct 2026",
       "decode_status": "Partially decrypted",
       "date": "10 Oct 2026",
@@ -14049,16 +14051,16 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "reading_version": "L14-B/L14-C 10 Oct 2026 (reading.md), corrections in AUDIT (FV-L14b) section 5 not yet applied",
-      "unresolved_spans": "signature span 'M see Me Eggs' (M)",
+      "unresolved_spans": "none; signature span 'M see Me Eggs' = M. C. Meigs by phonetic split (I)",
       "depth_unread": {
         "names_codes": "0",
         "other": "1"
       },
       "depth_pct": 94.1,
       "title": "Eckert 1864 (mssEC 18): Quartermaster General's office to Brig. Gen. Robert Allen, Louisville, 1 Nov 1864: the Secretary of War is not satisfied with your conduct; Captain Ferry not yet sent to Memphis under arrest (E612)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 1 Nov 1864 the Quartermaster General's office told Brig. Gen. Robert Allen at Louisville that the Secretary of War was not satisfied with his conduct, since Captain Ferry had not been sent to Memphis and arrested as ordered; not found in OR I/39 pt 3, the cached OR volumes, IA full text or Google Books (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L14b); not N4: OR ser. III vol. 4 unsearched, NARA RG 92 / RG 107 not reached, Louisville press of Nov 1864 not searched by page",
-      "depth": "D2",
+      "line": "Read at grade H with War Department Cipher No. 1, signed (by a phonetic split) M. C. Meigs, Quartermaster General: on 1 Nov 1864 his office told Brig. Gen. Robert Allen at Louisville that the Secretary of War was not satisfied with his conduct, since Captain J. H. Ferry, relieved at Louisville and ordered to Memphis by Special Orders No. 309 of 17 Sept 1864, had not gone and had not been arrested as directed; not found in OR I/39 pt 3, the cached OR volumes, IA full text, Google Books or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 two audits (FV-L14b, AUD2-LEDGER14-2); not N4: the Mereness Calendar (1971) entry on Stanton to Robert Allen about Ferry is an unread lead (snippet only), NARA RG 92/107 not reached",
+      "depth": "D3",
       "completeness": "16 H + 1 M of 17 code-word tokens",
       "phrases": [
         "Huntington mssEC 18 (obj 10074) p.217, pointer 9883, E612"
@@ -14067,28 +14069,29 @@
       "documents": [
         "Huntington mssEC 18 (obj 10074) p.217, pointer 9883, E612"
       ],
-      "depth_sentence": "On 1 Nov 1864 Meigs's office reproached Allen at Louisville for not sending Captain Ferry to Memphis under arrest as Stanton had ordered days before.",
-      "depth_check": "code clause: Indigo/India = Secretary of War, Drum/Drill = Memphis, Dragon = Louisville read in other filed entries; context only (Captain Ferry, Quartermaster of Transportation at Louisville, Louisville Daily Journal 5 and 7 Jan 1864) (D2)",
+      "depth_sentence": "On 1 Nov 1864 Meigs's office rebuked Allen at Louisville because Captain Ferry, relieved there in September and ordered to Memphis, had still not gone, and Stanton's order to arrest him had not been reported as carried out.",
+      "depth_check": "code clause: Drill = Memphis C by print in E330, Drum = Memphis in six other entries, Dragon = Louisville in E107/E146; external non-statistical check of content: Special Orders No. 309, AGO, 17 Sept 1864, relieving Captain J. H. Ferry as Chief Quartermaster of Depot at Louisville and sending him to Memphis (Army and Navy Official Gazette, snippet, three copies), QMG report 'John H. Ferry, until October, 1864' (D3)",
       "depth_note": "16 H + 1 M of 17 code-word tokens"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L14b)'"
+        "AUDIT.md '## AUDIT (FV-L14b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER14-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth_by": "FV-L14b verifier (account 1)",
+      "depth_by": "AUD2-LEDGER14-2 verifier (owner account)",
       "depth_date": "10 Oct 2026",
-      "decode_status": "Partially decrypted",
+      "decode_status": "Non-decrypted",
       "date": "10 Oct 2026",
       "kind": "reading",
       "claim_scope": "completed-reading",
       "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L14b)' section 4",
-      "grade": "N3",
-      "plaintext_novelty": "N3",
-      "mapping_novelty": "N3",
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
       "reading_version": "L14-B/L14-C 10 Oct 2026 (reading.md), corrections in AUDIT (FV-L14b) section 5 not yet applied",
       "unresolved_spans": "none among code words; 'Niagara' and 'John' are clear on the leaf (decoder's D. D. Porter and Grant wrong)",
       "depth_unread": {
@@ -14097,9 +14100,9 @@
       },
       "depth_pct": 100.0,
       "title": "Eckert 1864 (mssEC 18): Assistant Secretary Dana to Maj. Gen. Dix, 15 Nov 1864, 10 PM: Beverly Tucker will cross at Niagara Falls on Thursday morning; John Odell may be relied upon to arrest him (E620)",
-      "line": "Read with War Department Cipher No. 1 (time, addressee, punctuation and signature are code; the body is in clear): on 15 Nov 1864 at 10 PM Assistant Secretary Dana told General Dix that Beverly Tucker would cross at Niagara Falls on Thursday morning and asked for an officer to help John Odell arrest him; not found in OR ser. II vol. 7 (which prints the next day's arrest order), IA full text or Google Books (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L14b); not N4: Dix and Dana papers, NARA RG 107, the Baker papers and the New York press of Nov 1864 not searched",
-      "depth": "D3",
+      "line": "Dana's 15 Nov 1864 10 PM telegram to Dix on Beverly Tucker's expected crossing at Niagara Falls is in clear in the Huntington's public transcription of the ledger (mssEC 18 p.231); the period key adds only the hour, Dix as addressee and Dana as signer. The next day's arrest order is printed in OR ser. II vol. 7 p.1132.",
+      "gap": "body in clear in the holder public transcription (N1, AUD2-LEDGER14-2, D2V-E74 line); no novelty",
+      "depth": "D1",
       "completeness": "9 H of 9 code-word tokens (body in clear)",
       "phrases": [
         "Huntington mssEC 18 (obj 10074) p.231, pointer 9897, E620"
@@ -14109,16 +14112,18 @@
         "Huntington mssEC 18 (obj 10074) p.231, pointer 9897, E620"
       ],
       "depth_sentence": "On 15 Nov 1864 Dana told Dix that the Confederate agent Beverly Tucker would cross at Niagara Falls on Thursday and asked for an officer to help John Odell arrest him; the next day Dana ordered Odell to make the arrest.",
-      "depth_check": "code clause: Kasson = Dix, Image = Dana read in other filed entries (C by print in E142); external non-statistical check of content: Baker, History of the U.S. Secret Service (1867), Odell to arrest Tucker at Niagara under Dix's order; OR ser. II vol. 7 p.1132 (the 16 Nov order); the leaf's own 10.15 PM follow-up (D3)",
-      "depth_note": "9 H of 9 code-word tokens (body in clear)"
+      "depth_check": "no body code word (time, date, address, signature, punctuation only), so no code clause under the depth bar; external context Baker 1867, OR II/7 p.1132 (D1, lowered from D3 by AUD2-LEDGER14-2)",
+      "depth_note": "9 H of 9 code-word tokens (body in clear)",
+      "text": "known"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L14b)'"
+        "AUDIT.md '## AUDIT (FV-L14b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER14-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-L14b verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -14139,7 +14144,7 @@
       "depth_pct": 90.9,
       "title": "Eckert 1864 (mssEC 18): Halleck to J. W. Garrett, Baltimore and Ohio Railroad, 7 Oct 1864, 4 PM: arms sent to Harper's Ferry on the 5th have not arrived; see whether delayed on the railroad (E621)",
       "line": "Read with War Department Cipher No. 1: on 7 Oct 1864 at 4 PM Halleck asked J. W. Garrett of the Baltimore and Ohio to find out why arms sent from Washington to Harper's Ferry on the afternoon of the 5th had not arrived; the affair is printed in OR I/43 pt 2 (6 and 10 Oct), this telegram was not found there, in IA full text or Google Books (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L14b); not N4: Garrett papers (B&O Museum / Maryland Historical Society), NARA RG 107 and the Ordnance letters-sent not reached",
+      "gap": "N3 two audits (FV-L14b, AUD2-LEDGER14-2); not N4: Garrett papers (B&O Museum / Maryland Historical Society), NARA RG 107 and the Ordnance letters-sent not reached",
       "depth": "D3",
       "completeness": "10 H + 1 M of 11 code-word tokens",
       "phrases": [

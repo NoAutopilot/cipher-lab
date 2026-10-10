@@ -1,0 +1,13 @@
+E611 | "Fortress Monroe" forage grain hay May | executivedocumen7359unit | 0
+E611 | "S. L. Brown" "forage division" | executivedocumen7359unit | 0
+CTL-G10 | "Biggs" | papersofulyssess0010gran | 0
+E611 | forage Monroe "bushels of grain" hay | papersofulyssess0010gran | 0
+E611 | "S. L. Brown" | papersofulyssess0010gran | 0
+CTL-G12 | "Garrett" | papersofulyssess0012gran | 1
+  id papersofulyssess0012gran
+    Garrard, Kenner (U.S. Army), 1947, 196n, 197n {{{Garrett}}}, John W. (Baltimore and Ohio Railroad), 327n Gary
+E621 | "Harper's Ferry" arms Garrett October | papersofulyssess0012gran | 0
+E620 | "Beverly Tucker" | papersofulyssess0012gran | 0
+E620 | "Beverly Tucker" | papersofulyssess0013gran | 0
+E612 | "Ferry" Memphis Allen quartermaster | papersofulyssess0012gran | 0
+be-api requests 10

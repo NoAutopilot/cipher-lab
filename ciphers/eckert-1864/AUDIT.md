@@ -17297,3 +17297,86 @@ No. 1 key; no prior plaintext or decipherment located after the searches logged 
   `second-opinions/PROMPT-chatgpt-e602.md` (signer Meigs, Sigel, Grant Papers vol. 11 searched). E602's SO row stays queued.
 - Requests: hdl.huntington.org 13 (one take, 3.3 s apart, all 200); archive.org 12 (advancedsearch 4, metadata 6, djvu 2) + be-api 28 (1.9 s apart);
   www.googleapis.com 57 (1.6 s apart).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER14-2)
+
+Second verifier AUD2-LEDGER14-2 (owner-account session, Opus 5.5, for the orchestrator (owner account), WORK-QUEUE row AUD2-LEDGER14-2), 10 Oct 2026,
+11:32-12:0x UTC by `date -u`; a separate session from the readers L14-B and L14-C and the first verifier FV-L14b, which had read or audited none of these
+entries. Scope: **E611** (9733/1), **E612** (9883/0), **E620** (9897/1), **E621** (9862/0), first audit "## AUDIT (FV-L14b)" (N2-SA is N1 there and
+not re-audited). Nothing decoded; every code group of the four looked up again in key.md. Key source: `period` (War Department Cipher No. 1, key.md).
+Step 0 information only (LEDGER-14 RULING). Intake gate (11:3x): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found
+within 6 lines`, exit 0. No spec, so `judge_plaintext.py` was not run. Scripts and raw output (committed, `ms18/`): `aud2_l14_2_gb.py` (+ `_gb_q1..q3.txt`,
+`_gb.out`, `_gb2.out`, `_gb3.out`), `aud2_l14_2_beapi.py` (+ `_q1..q6.txt`, `_beapi1..6.out`), `aud2_l14_2_hdl.py` (+ `.out`), `aud2_l14_2_schol.py` (+ `.out`).
+
+### 1. Prior work (prior-work-step.md checks 1, 3, 4)
+`tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 18;folio=<pointer>;date=..;sender=..;recipient=..' --step-type second-audit`,
+all four: exit 4, LEAD 4-5, UNCHECKED-NET 2. The four 1-own LEADs are target-level live claims (FIX-FM21, FM-F1, FIX-L14, OR-CACHE): FIX-L14 applies
+FV-L14b s.5 to these entries (no reading change bears on a class here) and OR-CACHE may return OR hits for them (a hit goes to a verifier; none was in
+ROOM at 11:5x). The 4-editions LEADs are name-window hits in other affairs (E612: `warofrebellion323unit`, Meigs on shipments "since the 1st of November",
+another year; E620: `warofrebellion414unit`, District of the Frontier orders, Fort Smith, 16 Nov 1864): CLEAR. UNCHECKED-NET: aaymeloglu cache not on disk
+(a Huntington ledger telegram is not in its scope) and 1864 OR volumes not on disk (s.2 reaches the right ones by other routes).
+
+### 2. Families added by this audit
+| Family | Result |
+|---|---|
+| Huntington CONTENTdm full text (hdl token 11:49-11:50, after AUD2-LEDGER14-1's release; 7 CISOSEARCHALL, all pointers, words FV-L14b did not query; control 9678 returned) | No clear copy of any of the four. 'Odell Bunker' -> 9124, 9897 (known, FV-L14b s.1). 'Brown forage' -> **9699** (p.33, 8-9 Apr 1864, John Horner N.Y.: "For Virtue S. L. Brown assistant Vincent ... Send forty thousand bushels of grain and seven hundred tons of hay to mud ... Confidential signed Meigs"): same office, operator and addressee as E611, a month earlier (the Pensacola order the readers' OR hit printed), context for E611's signer and form, not a copy. 'Biggs forage' -> Biggs's own May-June 1864 reports from Fort Monroe and the James (10317, 10364, 10442, 4711) and Biggs at Chattanooga (4626-4642, another Biggs): none is E611. 'Ferry Memphis', 'Ferry Louisville' -> Harpers/Kelly's Ferry items; 4015 (Chattanooga, late 1863) names "Capt Ferry shipping Commissary Louisville": context only. 'arms Harpers Ferry arrived' 0. |
+| IA be-api, whole collection (control FV-MS18r's phrase -> `papersofulyssess0011gran`, passed) | E612 '"J. H. Ferry" Memphis Louisville 1864' -> `sim_armed-forces-journal_1864-09-17_2_4`: "Adjutant-General's Office, August 24, 1864. Colonel J. H. Ferry. [To Louisville, Kentucky.] To enter at once upon ..." (context, s.3). Every other query (E611 'S. L. Brown' forage, Biggs bushels; E612 Ferry/Allen/Stanton, 'not satisfied with your conduct'; E620 Odell/Tucker/Niagara, 'sufficient discretion' Niagara; E621 Koontz, 'arms were sent from here', Garrett/Halleck/delayed): no copy of any of the four (OR I/37 pt 2 July Garrett items, novels, Grant Papers indexes). |
+| Grant Papers (Simon) by be-api inside the volume | Vol. 10 (control 'Meigs' hit; vol. 10's own 'Biggs' returned 0): forage+Monroe, 'S. L. Brown' 0. Vol. 12 (control 'Garrett' -> index "Garrett, John W. (Baltimore and Ohio Railroad), 327n", the only Garrett entry): 'Koontz', '"John W. Garrett"', 'Harper's Ferry arms Garrett', 'Beverly Tucker', Ferry Memphis Allen 0. Vols. 13, 14 'Beverly Tucker' 0 (no in-volume control run for 13-14, weak). Google Books `intitle:Grant` (control '"six vessels" Oriental' -> vol. 13 passed): Tucker/Odell, arms/Harper's Ferry/Garrett 0. Grant is party to none of the four; the volumes' indexes do not carry them. |
+| Baltimore and Ohio histories (E621) | Summers, *The Baltimore and Ohio in the Civil War* (IA `baltimoreohioinc0000summ`, in-volume control 'Garrett' hit): 'Koontz', 'Harper's Ferry' arms October 1864 0. IA `TheBaltimoreAndOhioRailroadInTheCivilWar` (1944): in-volume control 0, unsearchable. Google Books `intitle:Baltimore` and 'Summers': no Halleck-Garrett October 1864 arms item. |
+| Google Books at large (keyed, `country=US`; 46 queries incl. the intitle ones, three files) | **E612 context, s.3:** Army and Navy Official Gazette (three copies, snippets): "Special Orders, No. 309, Adjutant General's Office, September 17, 1864. Captain J. H. FERRY. [To Memphis, Tennessee.] Relieved from duty as Chief Quartermaster of Depot at Louisville, Kentucky, with rank of Colonel."; QMG annual report (Report of the Secretary of War 1865-66, and an 1898 OR volume, snippet): at Louisville "John H. Ferry, until October, 1864, since which time Captain J. R. Del Vecchio"; Blair, *With Malice Toward Some* (2014), note citing "John H. Ferry to George B. McClellan, Office Chief Quartermaster Depot, Louisville, Ky., October 3, 1864, reel 52, fr. 257, GBMP" (the election-season context; snippet only, the text around the note not reached); *The Mereness Calendar* (1971; calendar of federal records on the upper Mississippi valley): a snippet joining "E. M. Stanton to Robert Allen, Louisville ... Ferry ... Secretary of War" next to a 1864 March 8 heading -- **lead, unread** (no full view; the entry's date and content not established; it may calendar this order or an earlier Stanton-Allen item). E621: OR I/43 pt 2 Halleck to Garrett 10 Oct (Koontz) confirmed by snippet in three copies; no 7 Oct item. E620: House Report (Trade with Rebellious States, 1865) prints Baker's testimony (Odell, Niagara, "Odell had an order from General Dix"); OR II/7 p.1132 (16 Nov order) again; no 15 Nov Dana-Dix telegram. E611: ORN (S. L. Brown, "acting quartermaster, office of forage and river transportation"), OR (Brown "chief of the forage division" ordered to send forage daily to Port Royal, Dec 1864), Brown's own 1865-66 report: context only. |
+| Brown's report in the QMG annual report (IA `executivedocumen7359unit`, in-volume control 'forage' hit) | 'Biggs' (officer lists only), 'Fortress Monroe' forage grain hay May, '"S. L. Brown" "forage division"', '"27,000 bushels"' 0. |
+| Open indexes (`aud2_l14_2_schol.out`: OpenAlex keyed 5, Semantic Scholar 5 (three 429, no retry), CrossRef 5) | Nothing on these telegrams or the ledger (Milroy, Garrett biographies, Meigs and the QM Department by title only). |
+| JSTOR | 8 rows appended to JSTOR-QUEUE.tsv (both families: names AND date; bare quoted phrases); they never block a class. |
+| Not reached | OR ser. III vol. 4 (lending-only; the main residual risk for E611), NARA RG 92 / RG 107 letter and telegram books, the Mereness Calendar entry itself, Blair 2014 page text, Dix and Dana papers, Garrett papers (B&O Museum / MdHS), the press of the day by page. |
+
+### 3. Readings and grades, checked
+Every code group of the four looked up again in key.md and agrees with FV-L14b: E611 Growl Washington, Postpone 7, Fanny 11 AM, Princess Captain, Vinton/Vincent
+Quartermaster, Shade/Shaker Forage, Frog New York, Appian/Animal Monroe, Harsh Plunder Promise = 20 + 7, x 1000 = 27,000, Pebble Publish Mansion = 3 x 100 + 50
+= 350, Paradise Colonel, Quadrant Department, Alba Virginia, Melody Waldo = 60 x 1000 = 60,000, Yoke signature, Bender Qr Master Genl; E612 Harriet 1 PM, Palsy
+Brigadier General, Vinton Quartermaster, Dragon Louisville, Indigo/India/Infant Secretary of War, Pilgrim/Princess Captain, Drum/Drill Memphis, Wick Report;
+E620 Rebecca 10 PM, Ghost 15, Kasson Dix, Sugar interrogation, Webster signature, Image Dana; E621 Julia 4 PM, Niggard Arms, Cancer Harpers Ferry, Torch Of
+the, Person 5, Wick(ed) Report(ed), Welch Rail Road, Walrus signature, Jonah General-in-Chief. Counts stand (E611 31 H + 1 M, E612 16 H + 1 span, E620 9 H,
+E621 10 H + 1 M). One addition: **E612's signature span 'M see Me Eggs' is a phonetic split of "M. C. Meigs"** (the ledger's device, key.md s.1: "Tap = pay
+han = nick"), before 'Bender' = Qr Master Genl U.S.: signer M. C. Meigs, grade I (inferred from the split, agreeing with the H signature word), no longer
+an unexplained M span.
+Code clause (depth bar: a value reading sensibly in >= 2 independent contexts), checked here in the other entries, not only counted: Shade = Forage in E90
+(20 May 1864, to Biggs at Fort Monroe), Appian = Monroe in 40 other entries; Drill = Memphis in E330 (C by print, OR, Halleck to Thomas 20 Oct 1864), Drum =
+Memphis in six others, Dragon = Louisville in E107/E146 (to the Louisville operator); Cancer = Harpers Ferry in E34 (to the Harper's Ferry operator), Welch =
+Rail Road in 15 others. So E611, E612 and E621 meet the clause; FV-MS18r's D1 for E403 rested on no value being shown in two contexts by that audit, which
+is not the case here. **E620 has no body code word** (Rebecca, Ghost, Kasson, Image, Webster, Sugar and the stops are time, date, address, signature and
+punctuation; Niagara and John Odell are clear on the leaf): no clause.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | text | depth | basis |
+|---|---|---|---|---|---|
+| E611 | **N3** (kept; weak, the body is largely clear in the holder's public transcription, but the key carries the content: forage, Monroe, 27,000, 350, Colonel, Chief Quartermaster, Department of Virginia, 60,000) | period | not known | **D2** (kept: clause Shade/Appian; no check of this telegram's own content; 9699 is the same office's earlier order, context) | not located after FV-L14b and s.2 |
+| E612 | **N3** (kept; weak as E611: Secretary of War, Captain, Memphis, Report, Louisville are code) | period | not known | **D3** (raised from D2: 16 H of 17 code tokens + the signature span now I; external non-statistical check of content: S.O. No. 309, AGO, 17 Sept 1864, relieving Captain J. H. Ferry as Chief Quartermaster of Depot at Louisville and sending him to Memphis (Army and Navy Official Gazette, snippet, three copies), and the QMG report's "John H. Ferry, until October, 1864" at Louisville) | not located after FV-L14b and s.2; the Mereness Calendar lead is open |
+| E620 | **N1** (lowered from N3: the body is in clear in the Huntington's public transcription of pointer 9897; the key adds only the hour, the date, the addressee Dix and the signer Dana -- the D2V-E74 line, applied to E76, E81, E82 in this file) | period | known (holder transcription) | **D1** (lowered from D3: no body code word, so no clause; the external checks, Baker 1867 and OR II/7 p.1132, do not replace the clause under the depth bar) | s.3 |
+| E621 | **N3** (kept; weak: Arms, Harpers Ferry, of the 5th, reported, Rail Road are code) | period | not known | **D3** (kept: clause Cancer/Welch; external check OR I/43 pt 2 pp.303, 336, the p.336 text confirmed in three copies by snippet) | not located after FV-L14b and s.2 |
+- **Not N4 (E611, E612, E621):** OR ser. III vol. 4 (E611) and NARA RG 92/107 unread; for E612 the Mereness Calendar entry is an unread lead that could
+  calendar this very order (if it does, E612 moves to N2: the content summarized in print, no prior mapping of this ciphertext); for E621 the Garrett papers.
+- **Safe sentences.** E611 and E621: FV-L14b's stand. E612: "Read at grade H with War Department Cipher No. 1, signed (by a phonetic split) M. C. Meigs,
+  Quartermaster General: on 1 Nov 1864 his office told Brig. Gen. Robert Allen at Louisville that the Secretary of War was not satisfied with his conduct,
+  since Captain J. H. Ferry, relieved at Louisville and ordered to Memphis by Special Orders No. 309 of 17 Sept 1864, had not gone and had not been arrested
+  as directed; this telegram was not found in OR I/39 pt 3, the cached OR volumes, IA full text, Google Books or the Huntington's full-text search (searched
+  10 Oct 2026) -- largely deciphered (about 94% of code words)." E620: "Dana's 15 Nov 1864 10 PM telegram to Dix on Beverly Tucker's expected crossing at
+  Niagara Falls is in clear in the Huntington's public transcription of the ledger (mssEC 18 p.231); the period key adds only the hour, Dix as addressee and
+  Dana as signer. The next day's arrest order is printed in OR ser. II vol. 7 p.1132."
+- **Unsafe:** any "first", "new", "unpublished"; for E620 any class above N1 or "partially/largely deciphered"; for E612 "not in print" without naming the
+  open Mereness lead.
+- **Depth sentences (own):** E612 "On 1 Nov 1864 Meigs's office rebuked Allen at Louisville because Captain Ferry, relieved there in September and ordered
+  to Memphis, had still not gone, and Stanton's order to arrest him had not been reported as carried out." E611 and E621: FV-L14b's.
+
+### 5. Postmortem, leads and propagation
+- Failure: FV-L14b classed E620 N3 D3 after noting that its body is in clear ("the body is in clear, only time/addressee/signature code") without applying
+  the file's own mostly-clear line (D2V-E74; E76, E81, E82) -- the sixth time in this file; prior_work.py's KNOWN-PART flag did not fire because the
+  item-spec carries no body text. Lesson kept as before: for a mostly-clear entry, ask first what the key adds.
+- No over-claim in the readers' or FV-L14b's wording ("new", "first" absent); s.4 corrections are for a FIX job, not applied here (decode.py entry notes):
+  E620 header "N1, body clear in the holder transcription"; E612 signature "M see Me Eggs" = M. C. Meigs (I), context S.O. 309 / QMG report / Blair note;
+  E611 context sibling 9699 (8-9 Apr 1864, Meigs to Brown).
+- **Leads:** (1) the Mereness Calendar entry (Stanton to Robert Allen, Louisville, on Ferry): a LOCAL-QUEUE or desk read of the volume (G. K. Hall 1971,
+  Google Books b1sPAQAAMAAJ, snippet view only); (2) OR ser. III vol. 4 for E611 (as FV-L14b); (3) OR-CACHE's hits, if any, for E611/E612/E621.
+- Propagated: status.json E611 E612 E620 E621 -> audit_status "two audits", audit_refs + this section; E620 grade/novelty N1, text known, depth D1, line and
+  gap; E612 depth D3, depth_check, line; SECOND-OPINIONS-QUEUE.tsv SO-ECKERT-E620 withdrawn (N1); WORK-QUEUE AUD2-LEDGER14-2 -> done.
+- Requests: hdl.huntington.org 7 (all 200); be-api.us.archive.org 45 (2.2 s apart; one 502 retried once); archive.org 2 (advancedsearch); www.googleapis.com
+  46 (1.6 s apart); api.openalex.org 5, api.semanticscholar.org 5 (three 429), api.crossref.org 5.

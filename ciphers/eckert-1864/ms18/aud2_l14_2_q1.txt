@@ -1,0 +1,13 @@
+CTL | "what point he should come for that purpose"
+E612 | "Ferry" "Robert Allen" Memphis Stanton arrest
+E612 | "J. H. Ferry" Memphis Louisville 1864
+E612 | "Ferry" "not satisfied with your conduct"
+E612 | Mereness calendar Ferry Allen Louisville
+E621 | "Koontz" "Harper's Ferry" arms Garrett
+E621 | "arms were sent from here" Garrett
+E621 | Garrett Halleck "arms" "Harper's Ferry" "delayed"
+E620 | "Odell" "Tucker" "Niagara" Dix 1864
+E620 | "John Odell" "Beverly Tucker"
+E620 | "sufficient discretion" "Niagara"
+E611 | "S. L. Brown" forage "Fort Monroe" May 1864
+E611 | "Biggs" forage "until further orders" bushels grain tons hay Monroe
