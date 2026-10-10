@@ -1,0 +1,88 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BnF Espagnol 144 f.22 (Espagnol 142-144, TOME III), instruction to the Baron de </title><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#55565c;--rule:#d9d6cf;--card:#ffffff;--accent:#0b3d91;--accent2:#8a4b00;--tint:#eef2fa}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#141518;--fg:#ececef;--muted:#a9abb3;--rule:#33353b;
+ --card:#1c1e22;--accent:#9cc2ff;--accent2:#f2b46b;--tint:#1f2633}}
+:root[data-theme="dark"]{--bg:#141518;--fg:#ececef;--muted:#a9abb3;--rule:#33353b;--card:#1c1e22;--accent:#9cc2ff;--accent2:#f2b46b;--tint:#1f2633}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 Georgia,"Iowan Old Style","Palatino Linotype",serif}
+main{max-width:980px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:1.9rem;line-height:1.2;margin:.2em 0 .3em}
+h2{font-size:1.3rem;margin:1.8em 0 .5em;border-bottom:1px solid var(--rule);padding-bottom:.2em}
+h3{font-size:1.05rem;margin:1.2em 0 .3em}
+a{color:var(--accent)}
+nav.top{font:14px/1.4 system-ui,sans-serif;display:flex;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--rule);padding-bottom:8px}
+.lede{color:var(--muted);max-width:44em}
+.mock{font:13px/1.4 system-ui,sans-serif;border:2px dashed var(--accent2);color:var(--fg);padding:8px 12px;margin:12px 0}
+.counts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:16px 0}
+.count{background:var(--card);border:1px solid var(--rule);padding:10px 12px}
+.count b{display:block;font-size:1.7rem;font-family:system-ui,sans-serif}
+.count span{font:13px/1.35 system-ui,sans-serif;color:var(--muted)}
+.item{background:var(--card);border:1px solid var(--rule);border-left:4px solid var(--accent);padding:10px 14px;margin:10px 0}
+.item h3{margin:0 0 4px}
+.meta{font:13px/1.45 system-ui,sans-serif;color:var(--muted);margin:2px 0}
+.meta b{color:var(--fg);font-weight:600}
+.gist{margin:6px 0 0}
+.gist em{font:12px system-ui,sans-serif;color:var(--muted);font-style:normal}
+blockquote{margin:8px 0;padding:8px 12px;background:var(--tint);border-left:4px solid var(--accent2)}
+dl{display:grid;grid-template-columns:minmax(120px,190px) 1fr;gap:6px 14px;font:14px/1.45 system-ui,sans-serif}
+dt{color:var(--muted)} dd{margin:0;overflow-wrap:anywhere}
+.small{font:13px/1.45 system-ui,sans-serif;color:var(--muted)}
+details summary{cursor:pointer;color:var(--accent);font:14px system-ui,sans-serif}
+section.page{border-top:3px double var(--rule);margin-top:40px;padding-top:8px}
+.filters{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;font:14px system-ui,sans-serif;margin:12px 0}
+.filters select{font:inherit;padding:2px 4px;max-width:260px}
+table.cat{width:100%;border-collapse:collapse;font:14px/1.4 system-ui,sans-serif}
+table.cat th{text-align:left;border-bottom:2px solid var(--rule);padding:6px 6px;font-weight:600}
+table.cat td{border-bottom:1px solid var(--rule);padding:6px;vertical-align:top}
+blockquote.claim{font-size:1.08rem}
+details{border:1px solid var(--rule);background:var(--card);margin:6px 0;padding:6px 10px}
+details .det{font:14px/1.5 system-ui,sans-serif;padding:4px 0}
+code{font:13px ui-monospace,Menlo,monospace;background:var(--tint);padding:1px 4px;overflow-wrap:anywhere}
+@media (max-width:760px){table.cat thead{display:none}table.cat tr{display:block;border:1px solid var(--rule);background:var(--card);margin:8px 0;padding:4px 8px}
+ table.cat td{display:block;border:0;padding:2px 0}table.cat td:empty{display:none}table.cat td::before{content:attr(data-l) ": ";color:var(--muted);font-size:12px}}
+@media (max-width:560px){dl{grid-template-columns:1fr}dt{margin-top:6px}h1{font-size:1.5rem}}
+
+figure.cipher{margin:14px 0;background:var(--card);border:1px solid var(--rule);padding:8px}
+figure.cipher img{display:block;width:100%;height:auto;background:#fff}
+figcaption{font:12px/1.4 system-ui,sans-serif;color:var(--muted);margin-top:6px}
+.strip{display:flex;flex-wrap:wrap;gap:3px;margin-top:8px}
+.tk{display:inline-flex;flex-direction:column;align-items:center;min-width:34px;padding:2px 3px 0;border:1px solid var(--rule);border-bottom-width:5px;background:var(--bg)}
+.tk .cs{font:12px ui-monospace,Menlo,monospace;color:var(--muted)}
+.tk .pv{font:600 14px Georgia,serif}
+.tk .gr{font:10px system-ui,sans-serif;color:var(--muted)}
+.en{font:italic 15px/1.4 Georgia,serif;margin:8px 0 2px;padding-left:8px;border-left:3px solid var(--rule)}
+.en .k{font:normal 11px system-ui,sans-serif;margin-bottom:2px}.en.none{font:12px system-ui,sans-serif;color:var(--muted)}
+.k.layer{margin-top:8px}
+.legend{font:12px system-ui,sans-serif}.lg{border-bottom:4px solid;padding:0 4px;margin-right:6px}
+.ctx{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:6px;font:14px system-ui,sans-serif;background:var(--tint);padding:8px 10px}
+.k{color:var(--muted);font-size:12px;display:block}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}.two h3{margin:.8em 0 .3em}
+ul.tl{list-style:none;padding:0;margin:0;font:14px/1.45 system-ui,sans-serif}ul.tl li{margin:3px 0}
+.cx{font-size:11px;color:var(--muted);border:1px solid var(--rule);padding:0 4px}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 6px}
+.badge{font:13px system-ui,sans-serif;border:1px solid var(--accent);padding:2px 8px;text-decoration:none;color:var(--fg)}
+.bar{display:flex;height:12px;border:1px solid var(--rule)}.bar span{display:block}
+img.thumb{display:block;max-width:220px;height:auto;margin-bottom:3px;background:#fff}
+ul.links{font:14px/1.6 system-ui,sans-serif;padding-left:18px}
+@media (max-width:640px){.two{grid-template-columns:1fr}}
+
+nav.site{font:14px/1.4 system-ui,sans-serif;display:flex;gap:6px 14px;flex-wrap:wrap;align-items:center;padding:10px 0;
+ border-bottom:2px solid var(--rule)}
+nav.site a{text-decoration:none;padding:2px 0}nav.site a[aria-current=page]{font-weight:700;border-bottom:2px solid currentColor}
+nav.site .brand{font-weight:700;margin-right:6px;color:inherit}
+.crumbs{font:13px/1.4 system-ui,sans-serif;color:var(--muted);margin:10px 0 0}.crumbs a{color:inherit}
+.pager{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:14px/1.4 system-ui,sans-serif;margin:16px 0;
+ padding:10px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.pager a{max-width:46%}.pager .mid{text-align:center}
+.backlink{font:14px system-ui,sans-serif;border:1px solid var(--rule);border-left:4px solid var(--accent2);padding:8px 12px;margin:12px 0}
+.evidence{font:14px/1.5 system-ui,sans-serif;border:1px solid var(--rule);border-left:4px solid var(--accent);padding:8px 14px;margin:18px 0}
+.evidence ul{margin:6px 0 0;padding-left:20px}
+footer.site{font:12px/1.5 system-ui,sans-serif;color:var(--muted);border-top:1px solid var(--rule);margin-top:40px;padding-top:10px}
+.qf{font:inherit;padding:4px 8px;min-width:260px;max-width:100%}
+ul.browse{list-style:none;padding:0}ul.browse li{margin:8px 0;padding:6px 0;border-bottom:1px solid var(--rule)}
+ul.browse .one{display:block;color:var(--muted);font-size:.95em}
+.toc{font:14px system-ui,sans-serif;display:flex;flex-wrap:wrap;gap:6px 14px}
+.door{border-top:3px double var(--rule);margin-top:36px;padding-top:6px}
+.dsum{border:1px solid var(--rule);padding:10px 14px;margin:16px 0}
+@media (max-width:560px){.qf{min-width:0;width:100%}.pager a{max-width:100%}}
+</style></head><body><main><nav class="site" aria-label="Site"><a class="brand" href="../index.html">What the cipher said</a><a href="../index.html">Exhibit</a><a href="../all-readings.html" aria-current=page>All readings</a><a href="../browse/century.html">By century</a><a href="../browse/archive.html">By archive</a><a href="../browse/language.html">By language</a><a href="../how-to-read.html">How to read</a><a href="../credits.html">Credits</a></nav><p class="crumbs"><a href="../index.html">Home</a> &rsaquo; <a href="../all-readings.html">All readings</a> &rsaquo; BnF Espagnol 144 f.22 (Espagnol 142-144, TOME III), ...</p><p class="mock">Private preview for review. Not published, not linked from anywhere.</p><div class="pager"><a rel="prev" href="019-jan-van-nassau-1572-75-jan-van-nassau-to-william-of-orange-dillenburg.html">&larr; Jan van Nassau to William of Orange, Dillenburg, ...</a><span class="mid">20 of 165 &middot; <a href="../all-readings.html">All readings</a></span><a rel="next" href="021-ceppo-nevers-fr3251-1570s-bnf-fr-3251-f-11r-lodovico-birago-to-the-duk.html">BnF fr.3251 f.11r, Lodovico Birago to the Duke ... &rarr;</a></div><h1>BnF Espagnol 144 f.22 (Espagnol 142-144, TOME III), instruction to the Baron de Mercy, Barneton, 6 June 1648: 521 numeric code tokens read by homophonic cryptanalysis with a matched control</h1><h2>The claim</h2><blockquote class="claim">Partly legible Spanish under our key. 25 Sept 19:19 UTC: N3, key ours (AUDIT.md); second audit 20:39 kept N3; shuffled-stream control and blind eye-check done (R7); queued. Raised to N4 28 Sept. Communicated: note sent to the BnF Département des Manuscrits 1 Oct 2026, reply pending.</blockquote><p class="small">From the results register; no matching safe sentence was found in AUDIT.md for this entry, so read the audit before quoting it.</p><p class="gist">The instruction tells Mercy to go to Cleves to see the Elector of Brandenburg and his High Chamberlain and to propose raising three thousand infantry in two or three regiments in that country. <em>(interpretation: the verifier's English paraphrase of the read passage)</em></p><h2>The letter</h2><dl><dt>Held</dt><dd>Bibliothèque nationale de France<br><span class="small">BnF Espagnol 144 f.22r-v (Gallica btv1b10035717h, canvases 58-59), instruction to Mercy, Barneton, 6 June 1648</span></dd><dt>Language</dt><dd>Spanish</dd><dt>Manuscript image</dt><dd><a href="https://archivesetmanuscrits.bnf.fr/ark">https://archivesetmanuscrits.bnf.fr/ark</a></dd><dt>Outcome</dt><dd>Fragments read</dd><dt>Search result</dt><dd>N4: No prior decipherment located; the principal editions, catalogues and project pages were searched (unpublished or archival work is not excluded). <a class="small" href="../how-to-read.html#n-class">what this means</a></dd><dt>Depth</dt><dd>fragments read <a class="small" href="../how-to-read.html#depth">what this means</a></dd><dt>Key</dt><dd>key recovered by us <a class="small" href="../how-to-read.html#key">what this means</a></dd></dl><h2>The proof</h2><p class="small">Open each line for the evidence. Nothing is hidden; the repository holds every file.</p><details><summary>Signs read, by grade: S 496, M 26 (of 522)</summary><div class="det"><p>H read from a key of the time or a published key; C from a known plain text; S by cryptanalysis that beat a matched control; M uncertain; I inferred or repaired; U not read.</p><p class="small">Counted by the decode script over every cipher token; the reading and its per-token grades are in the repository.</p></div></details><details><summary>How the reading regenerates</summary><div class="det"><ul><li>Transcription: <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/espagnol142-mercy-1648/ciphertext.tsv">ciphertext.tsv</a>, <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/espagnol142-mercy-1648/ciphertext_draft.tsv">ciphertext_draft.tsv</a></li><li>Key: <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/espagnol142-mercy-1648/key.tsv">key.tsv</a></li><li>Reading: <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/espagnol142-mercy-1648/reading.txt">https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/espagnol142-mercy-1648/reading.txt</a></li></ul><p>Run <code>python3 tools/decode_key.py ciphers/espagnol142-mercy-1648 --check</code> from a clone of the repository: it rebuilds the reading from the transcription and the key, and exits with an error if the committed reading is stale.</p></div></details><details><summary>The control it had to beat</summary><div class="det"><ul><li>anneal beats the matched control by 167-181 points on 4+ seeds</li><li>shuffled-stream control target -1154.3 vs shuffles -1488.5 vs control -1336.2</li><li>design-matched exact-profile control (H1) puts the target inside the real-text band, the 167-181 gap was over a non-matched control</li><li>shuffled-stream control and blind eye-check done (R7)</li></ul><p class="small">A reading counts only beside a matched control: the same method run on shuffled keys or a synthetic text of the same kind, with both numbers reported.</p></div></details><details><summary>Audits: two audits, each by a separate session</summary><div class="det"><p>Each audit was written by a session that did not make the reading and tried to find it already in print. Audit entries in this folder are dated 6 June 1648, 25 Sept 2026, 1 Oct 2026.</p><p><b>Searched</b> (from this folder's audit log; the full log is in <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/espagnol142-mercy-1648/AUDIT.md">AUDIT.md</a>):</p><ul><li>Not N4:** principal families are only partly covered. Acta Pacis Westphalicae&#x27;s full-text search was down</li><li>Retry APW full-text search (Mercy, Barneton, Warneton, Sumiller) when the site&#x27;s backend recovers.</li><li>independently re-tried this session): Acta Pacis Westphalicae full-text search; Google Books &quot;search within this</li><li>Desenclos check, 4 Oct 2026: no hit. Searched 17 open full texts of the 36 items in sources/desenclos/2026-10-04/bibliography.tsv (HAL PDFs, DSpace Tartu HistoCrypt 2024/2025 PDFs, OpenEdition HTML; built from HAL, theses.fr, OpenAlex, Sema</li></ul><p><b>Unreachable or blocked</b>:</p><ul><li>(HTTP 505 on every query, including a control term) and so is unreachable, not negative; Lonchay-Cuvelier IV</li><li>family | searched / unreachable | what | result</li><li>(a) Acta Pacis Westphalicae (apw.digitale-sammlungen.de) | *<i>unreachable</i>* | search form found (/search/query.html?q=), Anubis cleared with browser tool; backend returned &quot;Error 505 Internal Server Error&quot; for every query incl. control &quot;Mu</li><li>(a/c) CODOIN vols 82-84 (Münster plenipotentiaries 1643-48) | *<i>unreachable</i>* | IA advancedsearch, 3 query variants over the CODOIN run on IA: tomos 2, 4-8, 13... 74 present, 82-84 absent under every title form | not searched; owner/HathiTr</li><li>(e) HathiTrust | bibliographic + EF API reached; full text/page images unreachable from the cloud (Cloudflare) | as above</li><li>(g) Semantic Scholar (keyed) | 3 of 5 queries answered, 2 unreachable (429; one retried once, one not retried) | abbé de Mercy 1648; Leopold Wilhelm Brandenburg 1648; duchesse de Chevreuse 1648 Espagne | nothing relevant</li><li>at all. No Barneton/Warneton anywhere. *<i>Negative at token level</i>* (the first audit logged 82-84 unreachable).</li><li>(2) Acta Pacis Westphalicae full text | *<i>unreachable</i>* | browser tool past Anubis; q=Mercy -&gt; &quot;Error 505&quot; twice, 60 s apart (subagent), after &#x27;s 505 at ~20:10 | not searched (II B structurally ends 19 May 1648; II A/II C 1648 volumes not</li><li>(5) Semantic Scholar (keyed) | 4 of 5 answered, 1 unreachable (429 after one retry) | subset of the above | nothing relevant</li><li>(5) Persée | *<i>unreachable</i>* | search page is client-rendered; curl returns no query-specific data (3 attempts) | not searched</li></ul></div></details><details><summary>Whose key, and credit</summary><div class="det"><p>key recovered by us. Credits for published keys are on the <a href="../credits.html">credits page</a>.</p></div></details><p class="small">Repository folder: <a href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/espagnol142-mercy-1648">ciphers/espagnol142-mercy-1648</a> &middot; result recorded 25 Sept 2026.</p><div class="pager"><a rel="prev" href="019-jan-van-nassau-1572-75-jan-van-nassau-to-william-of-orange-dillenburg.html">&larr; Jan van Nassau to William of Orange, Dillenburg, ...</a><span class="mid">20 of 165 &middot; <a href="../all-readings.html">All readings</a></span><a rel="next" href="021-ceppo-nevers-fr3251-1570s-bnf-fr-3251-f-11r-lodovico-birago-to-the-duk.html">BnF fr.3251 f.11r, Lodovico Birago to the Duke ... &rarr;</a></div><footer class="site">Private preview, 10 October 2026. Readings graded per CLAUDE.md rule 4; novelty classes per rule 10 (verifier's verdict). Nothing here is called first, new or unpublished. <a href="../sitemap.html">Sitemap</a></footer></main></body></html>

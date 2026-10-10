@@ -1,0 +1,88 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>La Luzerne to Destouches, Philadelphia 16 Jan 1781 (Huntington mssDE 108(A)): pa</title><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#55565c;--rule:#d9d6cf;--card:#ffffff;--accent:#0b3d91;--accent2:#8a4b00;--tint:#eef2fa}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#141518;--fg:#ececef;--muted:#a9abb3;--rule:#33353b;
+ --card:#1c1e22;--accent:#9cc2ff;--accent2:#f2b46b;--tint:#1f2633}}
+:root[data-theme="dark"]{--bg:#141518;--fg:#ececef;--muted:#a9abb3;--rule:#33353b;--card:#1c1e22;--accent:#9cc2ff;--accent2:#f2b46b;--tint:#1f2633}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 Georgia,"Iowan Old Style","Palatino Linotype",serif}
+main{max-width:980px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:1.9rem;line-height:1.2;margin:.2em 0 .3em}
+h2{font-size:1.3rem;margin:1.8em 0 .5em;border-bottom:1px solid var(--rule);padding-bottom:.2em}
+h3{font-size:1.05rem;margin:1.2em 0 .3em}
+a{color:var(--accent)}
+nav.top{font:14px/1.4 system-ui,sans-serif;display:flex;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--rule);padding-bottom:8px}
+.lede{color:var(--muted);max-width:44em}
+.mock{font:13px/1.4 system-ui,sans-serif;border:2px dashed var(--accent2);color:var(--fg);padding:8px 12px;margin:12px 0}
+.counts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:16px 0}
+.count{background:var(--card);border:1px solid var(--rule);padding:10px 12px}
+.count b{display:block;font-size:1.7rem;font-family:system-ui,sans-serif}
+.count span{font:13px/1.35 system-ui,sans-serif;color:var(--muted)}
+.item{background:var(--card);border:1px solid var(--rule);border-left:4px solid var(--accent);padding:10px 14px;margin:10px 0}
+.item h3{margin:0 0 4px}
+.meta{font:13px/1.45 system-ui,sans-serif;color:var(--muted);margin:2px 0}
+.meta b{color:var(--fg);font-weight:600}
+.gist{margin:6px 0 0}
+.gist em{font:12px system-ui,sans-serif;color:var(--muted);font-style:normal}
+blockquote{margin:8px 0;padding:8px 12px;background:var(--tint);border-left:4px solid var(--accent2)}
+dl{display:grid;grid-template-columns:minmax(120px,190px) 1fr;gap:6px 14px;font:14px/1.45 system-ui,sans-serif}
+dt{color:var(--muted)} dd{margin:0;overflow-wrap:anywhere}
+.small{font:13px/1.45 system-ui,sans-serif;color:var(--muted)}
+details summary{cursor:pointer;color:var(--accent);font:14px system-ui,sans-serif}
+section.page{border-top:3px double var(--rule);margin-top:40px;padding-top:8px}
+.filters{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;font:14px system-ui,sans-serif;margin:12px 0}
+.filters select{font:inherit;padding:2px 4px;max-width:260px}
+table.cat{width:100%;border-collapse:collapse;font:14px/1.4 system-ui,sans-serif}
+table.cat th{text-align:left;border-bottom:2px solid var(--rule);padding:6px 6px;font-weight:600}
+table.cat td{border-bottom:1px solid var(--rule);padding:6px;vertical-align:top}
+blockquote.claim{font-size:1.08rem}
+details{border:1px solid var(--rule);background:var(--card);margin:6px 0;padding:6px 10px}
+details .det{font:14px/1.5 system-ui,sans-serif;padding:4px 0}
+code{font:13px ui-monospace,Menlo,monospace;background:var(--tint);padding:1px 4px;overflow-wrap:anywhere}
+@media (max-width:760px){table.cat thead{display:none}table.cat tr{display:block;border:1px solid var(--rule);background:var(--card);margin:8px 0;padding:4px 8px}
+ table.cat td{display:block;border:0;padding:2px 0}table.cat td:empty{display:none}table.cat td::before{content:attr(data-l) ": ";color:var(--muted);font-size:12px}}
+@media (max-width:560px){dl{grid-template-columns:1fr}dt{margin-top:6px}h1{font-size:1.5rem}}
+
+figure.cipher{margin:14px 0;background:var(--card);border:1px solid var(--rule);padding:8px}
+figure.cipher img{display:block;width:100%;height:auto;background:#fff}
+figcaption{font:12px/1.4 system-ui,sans-serif;color:var(--muted);margin-top:6px}
+.strip{display:flex;flex-wrap:wrap;gap:3px;margin-top:8px}
+.tk{display:inline-flex;flex-direction:column;align-items:center;min-width:34px;padding:2px 3px 0;border:1px solid var(--rule);border-bottom-width:5px;background:var(--bg)}
+.tk .cs{font:12px ui-monospace,Menlo,monospace;color:var(--muted)}
+.tk .pv{font:600 14px Georgia,serif}
+.tk .gr{font:10px system-ui,sans-serif;color:var(--muted)}
+.en{font:italic 15px/1.4 Georgia,serif;margin:8px 0 2px;padding-left:8px;border-left:3px solid var(--rule)}
+.en .k{font:normal 11px system-ui,sans-serif;margin-bottom:2px}.en.none{font:12px system-ui,sans-serif;color:var(--muted)}
+.k.layer{margin-top:8px}
+.legend{font:12px system-ui,sans-serif}.lg{border-bottom:4px solid;padding:0 4px;margin-right:6px}
+.ctx{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:6px;font:14px system-ui,sans-serif;background:var(--tint);padding:8px 10px}
+.k{color:var(--muted);font-size:12px;display:block}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}.two h3{margin:.8em 0 .3em}
+ul.tl{list-style:none;padding:0;margin:0;font:14px/1.45 system-ui,sans-serif}ul.tl li{margin:3px 0}
+.cx{font-size:11px;color:var(--muted);border:1px solid var(--rule);padding:0 4px}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 6px}
+.badge{font:13px system-ui,sans-serif;border:1px solid var(--accent);padding:2px 8px;text-decoration:none;color:var(--fg)}
+.bar{display:flex;height:12px;border:1px solid var(--rule)}.bar span{display:block}
+img.thumb{display:block;max-width:220px;height:auto;margin-bottom:3px;background:#fff}
+ul.links{font:14px/1.6 system-ui,sans-serif;padding-left:18px}
+@media (max-width:640px){.two{grid-template-columns:1fr}}
+
+nav.site{font:14px/1.4 system-ui,sans-serif;display:flex;gap:6px 14px;flex-wrap:wrap;align-items:center;padding:10px 0;
+ border-bottom:2px solid var(--rule)}
+nav.site a{text-decoration:none;padding:2px 0}nav.site a[aria-current=page]{font-weight:700;border-bottom:2px solid currentColor}
+nav.site .brand{font-weight:700;margin-right:6px;color:inherit}
+.crumbs{font:13px/1.4 system-ui,sans-serif;color:var(--muted);margin:10px 0 0}.crumbs a{color:inherit}
+.pager{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:14px/1.4 system-ui,sans-serif;margin:16px 0;
+ padding:10px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.pager a{max-width:46%}.pager .mid{text-align:center}
+.backlink{font:14px system-ui,sans-serif;border:1px solid var(--rule);border-left:4px solid var(--accent2);padding:8px 12px;margin:12px 0}
+.evidence{font:14px/1.5 system-ui,sans-serif;border:1px solid var(--rule);border-left:4px solid var(--accent);padding:8px 14px;margin:18px 0}
+.evidence ul{margin:6px 0 0;padding-left:20px}
+footer.site{font:12px/1.5 system-ui,sans-serif;color:var(--muted);border-top:1px solid var(--rule);margin-top:40px;padding-top:10px}
+.qf{font:inherit;padding:4px 8px;min-width:260px;max-width:100%}
+ul.browse{list-style:none;padding:0}ul.browse li{margin:8px 0;padding:6px 0;border-bottom:1px solid var(--rule)}
+ul.browse .one{display:block;color:var(--muted);font-size:.95em}
+.toc{font:14px system-ui,sans-serif;display:flex;flex-wrap:wrap;gap:6px 14px}
+.door{border-top:3px double var(--rule);margin-top:36px;padding-top:6px}
+.dsum{border:1px solid var(--rule);padding:10px 14px;margin:16px 0}
+@media (max-width:560px){.qf{min-width:0;width:100%}.pager a{max-width:100%}}
+</style></head><body><main><nav class="site" aria-label="Site"><a class="brand" href="../index.html">What the cipher said</a><a href="../index.html">Exhibit</a><a href="../all-readings.html" aria-current=page>All readings</a><a href="../browse/century.html">By century</a><a href="../browse/archive.html">By archive</a><a href="../browse/language.html">By language</a><a href="../how-to-read.html">How to read</a><a href="../credits.html">Credits</a></nav><p class="crumbs"><a href="../index.html">Home</a> &rsaquo; <a href="../all-readings.html">All readings</a> &rsaquo; La Luzerne to Destouches, Philadelphia 16 Jan 1781 ...</p><p class="mock">Private preview for review. Not published, not linked from anywhere.</p><div class="pager"><a rel="prev" href="014-oxenstierna-gustav-adolf-1632-gustav-ii-adolf-to-axel-oxenstierna-n-rn.html">&larr; Gustav II Adolf to Axel Oxenstierna, Nürnberg 23 ...</a><span class="mid">15 of 165 &middot; <a href="../all-readings.html">All readings</a></span><a rel="next" href="016-huntington-blathwayt-madrid-1728-blathwayt-papers-addenda-madrid-and-p.html">Blathwayt papers addenda, Madrid and Port Ste Marie ... &rarr;</a></div><h1>La Luzerne to Destouches, Philadelphia 16 Jan 1781 (Huntington mssDE 108(A)): partial reading with a key rebuilt from three sibling letters&#x27; contemporary decipherments</h1><h2>The claim</h2><blockquote class="claim">mssDE 108(A), La Luzerne to Destouches, 16 Jan 1781, is the original of a letter whose duplicate in the same collection (mssDE 108(B)) carries Destouches&#x27;s own contemporary decipherment; a copy is in AAE, CP États-Unis vol. 15 (Idzerda, Lafayette Papers 3:319). Our partial key reading of 108(A) (C 347, M 157, U 215 of 719) agrees with it where checked and is superseded by it (N0).</blockquote><p class="small">The verifier's safe sentence, quoted from <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/huntington-luzerne-destouches-1781/AUDIT.md">AUDIT.md</a>.</p><h2>The letter</h2><dl><dt>From</dt><dd>La Luzerne</dd><dt>To</dt><dd>Destouches</dd><dt>Place</dt><dd>Philadelphia</dd><dt>Date</dt><dd>16 Jan 1781</dd><dt>Held</dt><dd>Huntington Library<br><span class="small">Huntington mssDE 108(A)</span></dd><dt>Manuscript image</dt><dd>linked from the folder's NOTES.md</dd><dt>Outcome</dt><dd>Contributions</dd><dt>Search result</dt><dd>N0: Already known: this item&#x27;s plain text and its decipherment were already on record. <a class="small" href="../how-to-read.html#n-class">what this means</a></dd></dl><h2>The proof</h2><p class="small">Open each line for the evidence. Nothing is hidden; the repository holds every file.</p><details><summary>Signs read, by grade: C 410, M 163, U 146 (of 719)</summary><div class="det"><p>H read from a key of the time or a published key; C from a known plain text; S by cryptanalysis that beat a matched control; M uncertain; I inferred or repaired; U not read.</p><p class="small">Counted by the decode script over every cipher token; the reading and its per-token grades are in the repository.</p></div></details><details><summary>How the reading regenerates</summary><div class="det"><ul><li>Transcription: <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/huntington-luzerne-destouches-1781/ciphertext.tsv">ciphertext.tsv</a>, <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/huntington-luzerne-destouches-1781/ciphertext_decipher.tsv">ciphertext_decipher.tsv</a></li><li>Key: <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/huntington-luzerne-destouches-1781/key.tsv">key.tsv</a>, <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/huntington-luzerne-destouches-1781/key_conflicts.tsv">key_conflicts.tsv</a>, <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/huntington-luzerne-destouches-1781/key_tomokiyo.tsv">key_tomokiyo.tsv</a>, <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/huntington-luzerne-destouches-1781/key_yale_crosscheck.tsv">key_yale_crosscheck.tsv</a></li><li>Reading: <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/huntington-luzerne-destouches-1781/reading_108A.txt">https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/huntington-luzerne-destouches-1781/reading_108A.txt</a></li></ul><p>Run <code>python3 tools/decode_key.py ciphers/huntington-luzerne-destouches-1781 --check</code> from a clone of the repository: it rebuilds the reading from the transcription and the key, and exits with an error if the committed reading is stale.</p></div></details><details><summary>The control it had to beat</summary><div class="det"><p>No control figure is recorded on the register row; the audit file gives the checks used.</p></div></details><details><summary>Audits: one audit, each by a separate session</summary><div class="det"><p>Each audit was written by a session that did not make the reading and tried to find it already in print. Audit entries in this folder are dated 24 Sept 2026.</p><p><b>Searched</b> (from this folder's audit log; the full log is in <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/huntington-luzerne-destouches-1781/AUDIT.md">AUDIT.md</a>):</p><ul><li>fols....)&quot; (be-api full-text snippets on archive.org lafayetteinageof03lafa; folio numbers cut off in the snippet</li><li>Family | Searched | Result</li><li>(a) Stevens&#x27;s Facsimiles | not searched (coverage mostly 1773-83 diplomatic, no full-text copy used) | not searched</li></ul><p><b>Unreachable or blocked</b>:</p><ul><li>(g) OpenAlex, Semantic Scholar | one attempt each | 429, unreachable</li></ul></div></details><details><summary>Whose key, and credit</summary><div class="det"><p>not recorded. Credits for published keys are on the <a href="../credits.html">credits page</a>.</p></div></details><p class="small">Repository folder: <a href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/huntington-luzerne-destouches-1781">ciphers/huntington-luzerne-destouches-1781</a> &middot; result recorded 24 Sept 2026.</p><div class="pager"><a rel="prev" href="014-oxenstierna-gustav-adolf-1632-gustav-ii-adolf-to-axel-oxenstierna-n-rn.html">&larr; Gustav II Adolf to Axel Oxenstierna, Nürnberg 23 ...</a><span class="mid">15 of 165 &middot; <a href="../all-readings.html">All readings</a></span><a rel="next" href="016-huntington-blathwayt-madrid-1728-blathwayt-papers-addenda-madrid-and-p.html">Blathwayt papers addenda, Madrid and Port Ste Marie ... &rarr;</a></div><footer class="site">Private preview, 10 October 2026. Readings graded per CLAUDE.md rule 4; novelty classes per rule 10 (verifier's verdict). Nothing here is called first, new or unpublished. <a href="../sitemap.html">Sitemap</a></footer></main></body></html>

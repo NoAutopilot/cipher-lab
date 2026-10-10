@@ -1,0 +1,415 @@
+#!/usr/bin/env python3
+"""build_site.py -- one private preview site: the exhibit as the front door, the full catalogue behind it (SITE-SHIP-1, 10 Oct 2026).
+
+PRIVATE MOCK-UP. Nothing this writes is published; the owner decides later whether and where (owner, 10 Oct 2026 01:0x UTC: "ship the
+rest, along with useful navigation"). Writing under docs/ (the GitHub Pages folder) is refused, as tools/build_catalogue.py refuses it.
+
+It calls the two approved builders rather than copying them: tools/build_catalogue.py (items, index, item pages, how-to-read, credits,
+readings worth attention) and research/mockups/exhibit/build_exhibit2.py (the three displays). This script adds only the site shell:
+one top bar on every page, breadcrumbs, prev/next in catalogue order, "Back to the display" and "See the evidence" cross-links, a text
+filter on All readings, three browse pages (century, holding archive, language), a sitemap and a footer.
+
+Outputs (default --out research/mockups/site/): index.html (front door: three displays with their three-layer lines, then All readings),
+exhibit/<slug>.html, items/<file>.html, all-readings.html, browse/{century,archive,language}.html, attention.html, how-to-read.html,
+credits.html, sitemap.html, assets/ (exhibit crops, catalogue crops, portraits copied from research/mockups/exhibit/portraits/ at build
+time, so files the desk runner drops there fill the faces on the next build). With --preview FILE, one self-contained page (front door
+with images embedded; item links relative into the site folder). All paths relative, none with a leading slash.
+
+Usage: python3 research/mockups/site/build_site.py [--out DIR] [--preview FILE] [--date "10 October 2026"]
+"""
+import argparse
+import base64
+import html
+import json
+import os
+import re
+import shutil
+import sys
+import time
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+sys.path.insert(0, os.path.join(ROOT, "research", "mockups", "exhibit"))
+os.chdir(ROOT)  # both builders read repository-relative paths
+import build_catalogue as C  # noqa: E402
+import build_exhibit2 as X  # noqa: E402
+
+B = X.B
+E = html.escape
+EXHIBIT_DIR = os.path.join(ROOT, "research", "mockups", "exhibit")
+CAT_IMG = os.path.join(ROOT, "research", "mockups", "catalogue", "img")
+
+# Which catalogue items each display rests on (title substrings, all must match). The first is the display's main item.
+DISPLAY_ITEMS = {
+    "washington-1864": [("to John A. Kennedy", "30 Nov 1864"), ("C. A. Dana to Wallace", "7 Nov 1864"),
+                        ("Turner for the Secretary of War to Dix", "26 May 1864")],
+    "breda-torgau-1561": [("Elector August to Orange, Torgau 18 Nov 1561",), ("WVO 53",)],
+    "berlin-1712": [("frame 0391",)],
+}
+# Language where the catalogue loader finds none in specs/: taken from what the display builders show the reading in (Eckert:
+# English code words; Manteuffel and Gramont: French; August: German) or from the spec's own free-text "language" field. Everything
+# else is "not recorded", never guessed.
+LANG_FALLBACK = {"eckert-1864": "English", "eckert-1862": "English", "sachsstaatsarchiv-manteuffel-1712": "French",
+                 "august-van-saksen-1561-64": "German", "fr2980-gramont": "French"}
+FORBIDDEN = re.compile(r"first decipherment|previously unread|newly (?:recovered|read|deciphered)|\bunpublished\b|never (?:been )?printed",
+                       re.I)
+
+CAVEAT = re.compile(r"(?:internal or )?unpublished (?:or archival )?work (?:is )?not excluded", re.I)
+
+SITE_CSS = """
+nav.site{font:14px/1.4 system-ui,sans-serif;display:flex;gap:6px 14px;flex-wrap:wrap;align-items:center;padding:10px 0;
+ border-bottom:2px solid var(--rule)}
+nav.site a{text-decoration:none;padding:2px 0}nav.site a[aria-current=page]{font-weight:700;border-bottom:2px solid currentColor}
+nav.site .brand{font-weight:700;margin-right:6px;color:inherit}
+.crumbs{font:13px/1.4 system-ui,sans-serif;color:var(--muted);margin:10px 0 0}.crumbs a{color:inherit}
+.pager{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:14px/1.4 system-ui,sans-serif;margin:16px 0;
+ padding:10px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.pager a{max-width:46%}.pager .mid{text-align:center}
+.backlink{font:14px system-ui,sans-serif;border:1px solid var(--rule);border-left:4px solid var(--accent2);padding:8px 12px;margin:12px 0}
+.evidence{font:14px/1.5 system-ui,sans-serif;border:1px solid var(--rule);border-left:4px solid var(--accent);padding:8px 14px;margin:18px 0}
+.evidence ul{margin:6px 0 0;padding-left:20px}
+footer.site{font:12px/1.5 system-ui,sans-serif;color:var(--muted);border-top:1px solid var(--rule);margin-top:40px;padding-top:10px}
+.qf{font:inherit;padding:4px 8px;min-width:260px;max-width:100%}
+ul.browse{list-style:none;padding:0}ul.browse li{margin:8px 0;padding:6px 0;border-bottom:1px solid var(--rule)}
+ul.browse .one{display:block;color:var(--muted);font-size:.95em}
+.toc{font:14px system-ui,sans-serif;display:flex;flex-wrap:wrap;gap:6px 14px}
+.door{border-top:3px double var(--rule);margin-top:36px;padding-top:6px}
+.dsum{border:1px solid var(--rule);padding:10px 14px;margin:16px 0}
+@media (max-width:560px){.qf{min-width:0;width:100%}.pager a{max-width:100%}}
+"""
+
+TEXT_FILTER_JS = """<script>
+(function(){var q=document.getElementById('q'),f=document.querySelectorAll('select[data-f]');
+function go(){var v={},t=(q&&q.value||'').toLowerCase().split(/\\s+/).filter(Boolean),n=0;f.forEach(function(s){v[s.dataset.f]=s.value});
+document.querySelectorAll('tr[data-century]').forEach(function(r){var txt=(r.dataset.text||r.textContent).toLowerCase();
+var ok=Object.keys(v).every(function(k){return !v[k]||r.dataset[k]===v[k]})&&t.every(function(w){return txt.indexOf(w)>=0});
+r.hidden=!ok;if(ok)n++});var s=document.getElementById('shown');if(s)s.textContent=n}
+f.forEach(function(s){s.addEventListener('change',go)});if(q)q.addEventListener('input',go);})();
+</script>"""
+
+NAV = [("index.html", "Exhibit"), ("all-readings.html", "All readings"), ("browse/century.html", "By century"),
+       ("browse/archive.html", "By archive"), ("browse/language.html", "By language"), ("how-to-read.html", "How to read"),
+       ("credits.html", "Credits")]
+
+
+def top_bar(prefix, current):
+    return ('<nav class="site" aria-label="Site"><a class="brand" href="%sindex.html">What the cipher said</a>' % prefix
+            + "".join(f'<a href="{prefix}{h}"{" aria-current=page" if t == current else ""}>{E(t)}</a>' for h, t in NAV) + "</nav>")
+
+
+def crumbs(prefix, trail):
+    parts = [f'<a href="{prefix}index.html">Home</a>'] + [f'<a href="{prefix}{h}">{E(t)}</a>' if h else E(t) for t, h in trail]
+    return '<p class="crumbs">' + " &rsaquo; ".join(parts) + "</p>"
+
+
+def footer(date, prefix):
+    return (f'<footer class="site">Private preview, {E(date)}. Readings graded per CLAUDE.md rule 4; novelty classes per rule 10 '
+            '(verifier\'s verdict). Nothing here is called first, new or unpublished. '
+            f'<a href="{prefix}sitemap.html">Sitemap</a></footer>')
+
+
+def shell(title, body, prefix, current, trail, date, desc="", exhibit=False):
+    """The one wrapper every page uses. Catalogue CSS first, exhibit CSS after (exhibit pages only), site CSS last."""
+    css = C.CSS + C.CSS_V2 + ((B.CSS + X.CSS2) if exhibit else "") + SITE_CSS
+    js = f"<script>{B.JS}</script>" if exhibit else ""
+    return ('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+            f'<title>{E(title)}</title>' + (f'<meta name="description" content="{E(desc)}">' if desc else "")
+            + f'<style>{css}</style></head><body><main>{top_bar(prefix, current)}{crumbs(prefix, trail) if trail else ""}'
+            '<p class="mock">Private preview for review. Not published, not linked from anywhere.</p>'
+            f'{body}{footer(date, prefix)}</main>{js}</body></html>\n')
+
+
+def load():
+    st = json.load(open("status.json", encoding="utf-8"))
+    results, targets = st.get("results", []), st.get("targets", [])
+    ns = C.board_rules()
+    items = C.build_items(results, ns)
+    for it in items:
+        if not it["lang"]:
+            it["lang"] = LANG_FALLBACK.get(it["folder"]) or spec_language(it["folder"])
+    return items, ns, results, targets
+
+
+def spec_language(fold):
+    for p in sorted(os.listdir("specs")) if os.path.isdir("specs") else []:
+        if not p.endswith(".json"):
+            continue
+        try:
+            sp = json.load(open(os.path.join("specs", p), encoding="utf-8"))
+        except (ValueError, OSError):
+            continue
+        if fold not in json.dumps(sp.get("source", "")) + json.dumps(sp.get("folder", "")) + json.dumps(sp.get("target", "")):
+            continue
+        m = re.match(r"\s*(Italian|French|German|Spanish|Portuguese|English|Latin|Dutch)\b", str(sp.get("language") or ""))
+        if m:
+            return m.group(1)
+    return ""
+
+
+def find_item(items, subs):
+    return next((it for it in items if all(s.lower() in it["title"].lower() for s in subs)), None)
+
+
+def display_map(items):
+    out = {}
+    for slug, wants in DISPLAY_ITEMS.items():
+        got = [find_item(items, w) for w in wants]
+        out[slug] = [g for g in got if g]
+    return out
+
+
+def selection_lines():
+    """item quote from SELECTION.md's table (column 'the one thing the reading says'), keyed by its own text."""
+    p = os.path.join(EXHIBIT_DIR, "SELECTION.md")
+    quotes = []
+    for line in open(p, encoding="utf-8") if os.path.exists(p) else []:
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) >= 7 and cells[0].isdigit():
+            m = re.search(r'"([^"]{20,})"', cells[6])
+            if m:
+                quotes.append(m.group(1))
+    return quotes
+
+
+def one_line(it, quotes):
+    gist = it["gist"] or ""
+    norm = lambda s: re.sub(r"\W+", " ", s).lower().strip()
+    g = norm(gist)
+    for q in quotes:
+        head = norm(q.split("...")[0])[:60]
+        if len(head) > 25 and head in g:
+            return q, "from SELECTION.md"
+    return C.ten_words(gist, 30) or C.ten_words(it["title"], 14), "the depth sentence"
+
+
+def century_of(it):
+    y = C.year_of(it)
+    return (f"{(y - 1) // 100 + 1}th century", y) if y else ("undated", None)
+
+
+def copy_assets(out):
+    a = os.path.join(out, "assets")
+    for src, dst in ((os.path.join(EXHIBIT_DIR, "img"), "exhibit-img"), (CAT_IMG, "cat-img"),
+                     (os.path.join(EXHIBIT_DIR, "portraits"), "portraits")):
+        d = os.path.join(a, dst)
+        if os.path.isdir(d):
+            shutil.rmtree(d)
+        if os.path.isdir(src):
+            shutil.copytree(src, d)
+        else:
+            os.makedirs(d, exist_ok=True)
+
+
+def emb(path):
+    with open(path, "rb") as f:
+        mime = "image/png" if path.endswith(".png") else "image/jpeg"
+        return f"data:{mime};base64," + base64.b64encode(f.read()).decode()
+
+
+def display_section(d, img, pdir, evidence_links):
+    body = X.display_html(d, img, pdir)
+    body = body.replace(" their pages are not shown here.", " their pages are linked under “See the evidence” below.")
+    ev = ('<div class="evidence"><b>See the evidence.</b> The item pages this display rests on, each with its claim, grades, audits '
+          'and links:<ul>' + "".join(f'<li><a href="{h}">{E(t)}</a></li>' for t, h in evidence_links) + "</ul></div>")
+    return body.replace("<h2>Faces</h2>", ev + "<h2>Faces</h2>", 1) if "<h2>Faces</h2>" in body else body + ev
+
+
+def door_html(img, href_display, href_item, dmap):
+    """Front door: the exhibit intro, then each display's headline and its three-layer lines (behind a reveal)."""
+    out = [X.intro(img, href_display)]
+    for d in X.DISPLAYS:
+        fix = [(img(s), t, a, b) for s, t, a, b in d["lines"]]
+        ev = " &middot; ".join(f'<a href="{href_item(it)}">see the evidence</a>' for it in dmap.get(d["slug"], [])[:1])
+        out.append(f'<div class="dsum" id="door-{d["slug"]}"><div class="kicker">{E(d["kicker"])}</div><h2 style="margin-top:4px">'
+                   f'<a href="{href_display(d)}">{E(d["title"])}</a></h2><p class="headline">{E(d["headline"])}</p>'
+                   f'<button data-reveal="door-r-{d["slug"]}" aria-expanded="false">Show the lines: cipher, as read, English</button>'
+                   f'<div id="door-r-{d["slug"]}" class="reveal" style="margin-top:12px">{B.legend()}{X.lines_html(fix, d["lang"])}</div>'
+                   f'<p class="small"><a href="{href_display(d)}">Open the display</a>' + (f" &middot; {ev}" if ev else "") + "</p></div>")
+    return "".join(out)
+
+
+def readings_index(items, ns, results, targets, href, inline=False):
+    body = C.index_body(items, ns, results, targets, href, inline=inline)
+    # one row's searchable text: sender, recipient, year, archive, language, class, depth are already its cells; add the N-class words
+    box = ('<label class="small">Find <input id="q" class="qf" type="search" placeholder="sender, recipient, year, archive, '
+           'language, class, depth" aria-label="Filter the readings"></label> ')
+    body = body.replace('<div class="filters">', '<div class="filters">' + box, 1)
+    body = body.replace(C.FILTER_JS, TEXT_FILTER_JS)
+    body = body.replace("<h1>Cipher letters read from the archives</h1>", '<h1 id="all">All readings</h1>', 1)
+    if not inline:
+        body = body.replace('src="img/', 'src="assets/cat-img/')
+    # language: the catalogue writes it from it["lang"], already filled with the fallback in load()
+    return body
+
+
+def browse_page(items, kind, quotes, href):
+    groups = {}
+    for it in items:
+        if kind == "century":
+            k, _ = century_of(it)
+        elif kind == "archive":
+            k = C.archive_of(it) or "holder not matched to an archive name"
+        else:
+            k = it["lang"] or "language not recorded"
+        groups.setdefault(k, []).append(it)
+    if kind == "century":
+        order = sorted(groups, key=lambda k: (k == "undated", int(re.match(r"\d+", k).group()) if k[0].isdigit() else 0))
+    else:
+        order = sorted(groups, key=lambda k: (-len(groups[k]), k))
+    head = {"century": "By century", "archive": "By holding archive", "language": "By language"}[kind]
+    note = {"century": "Century from the year in the item's title or shelfmark.",
+            "archive": "Holding archive matched from the item's shelfmark and title.",
+            "language": "Language as the item's spec or its display records it; “not recorded” where neither says."}[kind]
+    out = [f"<h1>{head}</h1><p class=\"small\">{note} Under each link: what the reading says, quoted from the exhibit's selection notes "
+           "where they cover the item, otherwise the verifier's depth sentence (an interpretation).</p>",
+           '<p class="toc">' + " ".join(f'<a href="#g{i}">{E(k)} ({len(groups[k])})</a>' for i, k in enumerate(order)) + "</p>"]
+    for i, k in enumerate(order):
+        lis = []
+        for it in sorted(groups[k], key=lambda it: (C.year_of(it) or 9999, it["file"])):
+            line, _src = one_line(it, quotes)
+            lis.append(f'<li><a href="{href(it)}">{E(C.ten_words(it["title"], 16))}</a><span class="one">{E(line)}</span></li>')
+        out.append(f'<h2 id="g{i}">{E(k)} <span class="small">({len(groups[k])})</span></h2><ul class="browse">{"".join(lis)}</ul>')
+    return "".join(out)
+
+
+def write_site(out, date):
+    if os.path.abspath(out).startswith(os.path.abspath("docs") + os.sep) or os.path.abspath(out) == os.path.abspath("docs"):
+        sys.exit("refused: docs/ is the GitHub Pages folder; the site is a private preview (owner, 10 Oct 2026)")
+    items, ns, results, targets = load()
+    dmap = display_map(items)
+    item_display = {it["file"]: d for d in X.DISPLAYS for it in dmap.get(d["slug"], [])}
+    quotes = selection_lines()
+    for sub in ("exhibit", "items", "browse"):
+        os.makedirs(os.path.join(out, sub), exist_ok=True)
+    copy_assets(out)
+    pages = []
+
+    def w(rel, html_):
+        p = os.path.join(out, rel)
+        os.makedirs(os.path.dirname(p), exist_ok=True)
+        open(p, "w", encoding="utf-8").write(html_)
+        pages.append(rel)
+
+    # front door
+    door = door_html(lambda p: "assets/exhibit-" + p, lambda d: f"exhibit/{d['slug']}.html", lambda it: "items/" + it["file"], dmap)
+    idx = readings_index(items, ns, results, targets, lambda it: "items/" + it["file"])
+    w("index.html", shell("What the cipher said", door + f'<section class="door">{idx}</section>', "", "Exhibit", None, date,
+                          "Three cipher displays, then every audited reading (private preview).", exhibit=True))
+    w("all-readings.html", shell("All readings", idx, "", "All readings", [("All readings", "")], date))
+    # displays
+    for d in X.DISPLAYS:
+        ev = [(it["title"], "../items/" + it["file"]) for it in dmap.get(d["slug"], [])]
+        body = display_section(d, lambda p: "../assets/exhibit-" + p, "../assets/portraits/", ev)
+        w(f"exhibit/{d['slug']}.html", shell(d["short"] + " cipher display", body, "../", "Exhibit",
+                                             [("Exhibit", "index.html"), (d["short"], "")], date, d["headline"], exhibit=True))
+    # items
+    for i, it in enumerate(items):
+        sc = C.showcase_for(it)
+        body = C.item_body_v2(it, sc, "../how-to-read.html") if sc else C.item_body(it, "../how-to-read.html", "../credits.html")
+        body = body.replace('src="../img/', 'src="../assets/cat-img/')
+        prev_, next_ = (items[i - 1] if i else None), (items[i + 1] if i + 1 < len(items) else None)
+        pager = ('<div class="pager">'
+                 + (f'<a rel="prev" href="{prev_["file"]}">&larr; {E(C.ten_words(prev_["title"], 8))}</a>' if prev_ else "<span></span>")
+                 + f'<span class="mid">{i + 1} of {len(items)} &middot; <a href="../all-readings.html">All readings</a></span>'
+                 + (f'<a rel="next" href="{next_["file"]}">{E(C.ten_words(next_["title"], 8))} &rarr;</a>' if next_ else "<span></span>")
+                 + "</div>")
+        d = item_display.get(it["file"])
+        back = (f'<p class="backlink">This reading is shown in the exhibit: <a href="../exhibit/{d["slug"]}.html">Back to the display '
+                f'&ldquo;{E(d["short"])}&rdquo;</a></p>') if d else ""
+        w("items/" + it["file"], shell(it["title"][:80], back + pager + body + pager, "../", "All readings",
+                                       [("All readings", "all-readings.html"), (C.ten_words(it["title"], 8), "")], date))
+    # browse
+    for kind, label in (("century", "By century"), ("archive", "By archive"), ("language", "By language")):
+        w(f"browse/{kind}.html", shell(label, browse_page(items, kind, quotes, lambda it: "../items/" + it["file"]), "../", label,
+                                       [(label, "")], date))
+    # reference pages
+    nw = "".join(f"<dt>N{k}</dt><dd>{E(v)}</dd>" for k, v in C.NWORDS.items())
+    w("how-to-read.html", shell("How to read", C.HOWTO.format(nw=nw), "", "How to read", [("How to read", "")], date))
+    w("credits.html", shell("Credits", C.CREDITS.format(keys=E(C.keys_credit(items))) + PORTRAIT_CREDIT, "", "Credits",
+                            [("Credits", "")], date))
+    w("attention.html", shell("Readings worth attention", C.attention_body(items, lambda it: "items/" + it["file"]), "", "",
+                              [("Readings worth attention", "")], date))
+    # sitemap last, listing every page including itself
+    pages.append("sitemap.html")
+    groups = [("Exhibit", [p for p in pages if p == "index.html" or p.startswith("exhibit/")]),
+              ("Catalogue", [p for p in pages if p in ("all-readings.html", "attention.html") or p.startswith("browse/")]),
+              ("Reference", [p for p in pages if p in ("how-to-read.html", "credits.html", "sitemap.html")]),
+              ("Item pages (catalogue order)", [p for p in pages if p.startswith("items/")])]
+    titles = {"items/" + it["file"]: it["title"] for it in items}
+    titles.update({f"exhibit/{d['slug']}.html": d["short"] + " (display)" for d in X.DISPLAYS})
+    sm = [f"<h1>Sitemap</h1><p class=\"small\">{len(pages)} pages.</p>"]
+    for g, ps in groups:
+        sm.append(f"<h2>{E(g)} ({len(ps)})</h2><ul>" + "".join(f'<li><a href="{p}">{E(titles.get(p, p))}</a></li>' for p in ps) + "</ul>")
+    pages.pop()
+    w("sitemap.html", shell("Sitemap", "".join(sm), "", "", [("Sitemap", "")], date))
+    return items, dmap, pages
+
+
+PORTRAIT_CREDIT = ('<h2>Portraits</h2><p>Faces in the displays are public-domain paintings and prints from Wikimedia Commons, named with '
+                   'artist, date and licence in <code>assets/portraits/manifest.tsv</code> once a file arrives; until then each face '
+                   'is a labelled placeholder. No non-free image is used.</p>')
+
+
+def write_preview(path, out, date):
+    """One self-contained front door: displays with embedded images, then All readings; item links point into the site folder."""
+    items, ns, results, targets = load()
+    dmap = display_map(items)
+    rel = os.path.relpath(out, os.path.dirname(os.path.abspath(path)) or ".").replace(os.sep, "/").rstrip("/") + "/"
+    img = lambda p: emb(os.path.join(EXHIBIT_DIR, p))
+    door = door_html(img, lambda d: f"{rel}exhibit/{d['slug']}.html", lambda it: rel + "items/" + it["file"], dmap)
+    idx = C.index_body(items, ns, results, targets, lambda it: rel + "items/" + it["file"], inline=True)
+    box = ('<label class="small">Find <input id="q" class="qf" type="search" placeholder="sender, recipient, year, archive, '
+           'language, class, depth" aria-label="Filter the readings"></label> ')
+    idx = idx.replace('<div class="filters">', '<div class="filters">' + box, 1).replace(C.FILTER_JS, TEXT_FILTER_JS)
+    idx = idx.replace("<h1>Cipher letters read from the archives</h1>", '<h1 id="all">All readings</h1>', 1)
+    for a in ("attention.html", "how-to-read.html"):
+        idx = idx.replace(f'href="{a}"', f'href="{rel}{a}"')
+    html_ = shell("What the cipher said (preview)", door + f'<section class="door">{idx}</section>', rel, "Exhibit", None, date,
+                  "Three cipher displays, then every audited reading (private preview, single file).", exhibit=True)
+    html_ = html_.replace(f'href="{rel}index.html">Exhibit', 'href="#top">Exhibit')
+    open(path, "w", encoding="utf-8").write(html_)
+    return len(html_)
+
+
+def rule10_hits(out):
+    hits = []
+    for dp, _, fs in os.walk(out):
+        for f in fs:
+            if f.endswith(".html"):
+                txt = open(os.path.join(dp, f), encoding="utf-8").read()
+                txt = re.sub(r"<footer.*?</footer>", "", txt, flags=re.S)
+                txt = re.sub(r"<[^>]+>", " ", re.sub(r"<(style|script)[^>]*>.*?</\1>", "", txt, flags=re.S))
+                txt = CAVEAT.sub(" ", txt)  # the N4 definition's own caveat is a limit, not a claim
+                for m in FORBIDDEN.finditer(txt):
+                    hits.append((os.path.relpath(os.path.join(dp, f), out), txt[max(0, m.start() - 60):m.end() + 40].strip()))
+    return hits
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0], formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--out", default="research/mockups/site/")
+    ap.add_argument("--preview", default="")
+    ap.add_argument("--date", default=time.strftime("%-d %B %Y", time.gmtime()))
+    a = ap.parse_args(argv)
+    for p in (a.out, a.preview):
+        if p and (os.path.abspath(p) + os.sep).startswith(os.path.abspath("docs") + os.sep):
+            sys.exit("refused: docs/ is the GitHub Pages folder; the site is a private preview (owner, 10 Oct 2026)")
+    items, dmap, pages = write_site(a.out, a.date)
+    msg = f"site: {len(pages)} pages ({len(items)} item pages, {len(X.DISPLAYS)} displays) -> {a.out}"
+    missing = [s for s, w in DISPLAY_ITEMS.items() if len(dmap.get(s, [])) < len(w)]
+    if missing:
+        msg += "; display items not matched: " + ", ".join(missing)
+    if a.preview:
+        msg += f"; preview {a.preview} ({write_preview(a.preview, a.out, a.date) // 1024} KB)"
+    hits = rule10_hits(a.out)
+    msg += (f"; rule-10 phrase hits: {len(hits)}, all in item pages' quoted audit logs" if hits and all(h[0].startswith("items/")
+            for h in hits) else f"; rule-10 phrase hits: {len(hits)}")
+    print(msg)
+    for h in hits[:10]:
+        print("  rule-10:", h[0], "::", h[1])
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

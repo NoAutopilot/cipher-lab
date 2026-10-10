@@ -1,0 +1,88 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Elector August to Orange, Torgau 18 Nov 1561, cipher enclosure (WVO 57, KHA A 11</title><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#55565c;--rule:#d9d6cf;--card:#ffffff;--accent:#0b3d91;--accent2:#8a4b00;--tint:#eef2fa}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#141518;--fg:#ececef;--muted:#a9abb3;--rule:#33353b;
+ --card:#1c1e22;--accent:#9cc2ff;--accent2:#f2b46b;--tint:#1f2633}}
+:root[data-theme="dark"]{--bg:#141518;--fg:#ececef;--muted:#a9abb3;--rule:#33353b;--card:#1c1e22;--accent:#9cc2ff;--accent2:#f2b46b;--tint:#1f2633}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 Georgia,"Iowan Old Style","Palatino Linotype",serif}
+main{max-width:980px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:1.9rem;line-height:1.2;margin:.2em 0 .3em}
+h2{font-size:1.3rem;margin:1.8em 0 .5em;border-bottom:1px solid var(--rule);padding-bottom:.2em}
+h3{font-size:1.05rem;margin:1.2em 0 .3em}
+a{color:var(--accent)}
+nav.top{font:14px/1.4 system-ui,sans-serif;display:flex;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--rule);padding-bottom:8px}
+.lede{color:var(--muted);max-width:44em}
+.mock{font:13px/1.4 system-ui,sans-serif;border:2px dashed var(--accent2);color:var(--fg);padding:8px 12px;margin:12px 0}
+.counts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:16px 0}
+.count{background:var(--card);border:1px solid var(--rule);padding:10px 12px}
+.count b{display:block;font-size:1.7rem;font-family:system-ui,sans-serif}
+.count span{font:13px/1.35 system-ui,sans-serif;color:var(--muted)}
+.item{background:var(--card);border:1px solid var(--rule);border-left:4px solid var(--accent);padding:10px 14px;margin:10px 0}
+.item h3{margin:0 0 4px}
+.meta{font:13px/1.45 system-ui,sans-serif;color:var(--muted);margin:2px 0}
+.meta b{color:var(--fg);font-weight:600}
+.gist{margin:6px 0 0}
+.gist em{font:12px system-ui,sans-serif;color:var(--muted);font-style:normal}
+blockquote{margin:8px 0;padding:8px 12px;background:var(--tint);border-left:4px solid var(--accent2)}
+dl{display:grid;grid-template-columns:minmax(120px,190px) 1fr;gap:6px 14px;font:14px/1.45 system-ui,sans-serif}
+dt{color:var(--muted)} dd{margin:0;overflow-wrap:anywhere}
+.small{font:13px/1.45 system-ui,sans-serif;color:var(--muted)}
+details summary{cursor:pointer;color:var(--accent);font:14px system-ui,sans-serif}
+section.page{border-top:3px double var(--rule);margin-top:40px;padding-top:8px}
+.filters{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;font:14px system-ui,sans-serif;margin:12px 0}
+.filters select{font:inherit;padding:2px 4px;max-width:260px}
+table.cat{width:100%;border-collapse:collapse;font:14px/1.4 system-ui,sans-serif}
+table.cat th{text-align:left;border-bottom:2px solid var(--rule);padding:6px 6px;font-weight:600}
+table.cat td{border-bottom:1px solid var(--rule);padding:6px;vertical-align:top}
+blockquote.claim{font-size:1.08rem}
+details{border:1px solid var(--rule);background:var(--card);margin:6px 0;padding:6px 10px}
+details .det{font:14px/1.5 system-ui,sans-serif;padding:4px 0}
+code{font:13px ui-monospace,Menlo,monospace;background:var(--tint);padding:1px 4px;overflow-wrap:anywhere}
+@media (max-width:760px){table.cat thead{display:none}table.cat tr{display:block;border:1px solid var(--rule);background:var(--card);margin:8px 0;padding:4px 8px}
+ table.cat td{display:block;border:0;padding:2px 0}table.cat td:empty{display:none}table.cat td::before{content:attr(data-l) ": ";color:var(--muted);font-size:12px}}
+@media (max-width:560px){dl{grid-template-columns:1fr}dt{margin-top:6px}h1{font-size:1.5rem}}
+
+figure.cipher{margin:14px 0;background:var(--card);border:1px solid var(--rule);padding:8px}
+figure.cipher img{display:block;width:100%;height:auto;background:#fff}
+figcaption{font:12px/1.4 system-ui,sans-serif;color:var(--muted);margin-top:6px}
+.strip{display:flex;flex-wrap:wrap;gap:3px;margin-top:8px}
+.tk{display:inline-flex;flex-direction:column;align-items:center;min-width:34px;padding:2px 3px 0;border:1px solid var(--rule);border-bottom-width:5px;background:var(--bg)}
+.tk .cs{font:12px ui-monospace,Menlo,monospace;color:var(--muted)}
+.tk .pv{font:600 14px Georgia,serif}
+.tk .gr{font:10px system-ui,sans-serif;color:var(--muted)}
+.en{font:italic 15px/1.4 Georgia,serif;margin:8px 0 2px;padding-left:8px;border-left:3px solid var(--rule)}
+.en .k{font:normal 11px system-ui,sans-serif;margin-bottom:2px}.en.none{font:12px system-ui,sans-serif;color:var(--muted)}
+.k.layer{margin-top:8px}
+.legend{font:12px system-ui,sans-serif}.lg{border-bottom:4px solid;padding:0 4px;margin-right:6px}
+.ctx{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:6px;font:14px system-ui,sans-serif;background:var(--tint);padding:8px 10px}
+.k{color:var(--muted);font-size:12px;display:block}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}.two h3{margin:.8em 0 .3em}
+ul.tl{list-style:none;padding:0;margin:0;font:14px/1.45 system-ui,sans-serif}ul.tl li{margin:3px 0}
+.cx{font-size:11px;color:var(--muted);border:1px solid var(--rule);padding:0 4px}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 6px}
+.badge{font:13px system-ui,sans-serif;border:1px solid var(--accent);padding:2px 8px;text-decoration:none;color:var(--fg)}
+.bar{display:flex;height:12px;border:1px solid var(--rule)}.bar span{display:block}
+img.thumb{display:block;max-width:220px;height:auto;margin-bottom:3px;background:#fff}
+ul.links{font:14px/1.6 system-ui,sans-serif;padding-left:18px}
+@media (max-width:640px){.two{grid-template-columns:1fr}}
+
+nav.site{font:14px/1.4 system-ui,sans-serif;display:flex;gap:6px 14px;flex-wrap:wrap;align-items:center;padding:10px 0;
+ border-bottom:2px solid var(--rule)}
+nav.site a{text-decoration:none;padding:2px 0}nav.site a[aria-current=page]{font-weight:700;border-bottom:2px solid currentColor}
+nav.site .brand{font-weight:700;margin-right:6px;color:inherit}
+.crumbs{font:13px/1.4 system-ui,sans-serif;color:var(--muted);margin:10px 0 0}.crumbs a{color:inherit}
+.pager{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:14px/1.4 system-ui,sans-serif;margin:16px 0;
+ padding:10px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.pager a{max-width:46%}.pager .mid{text-align:center}
+.backlink{font:14px system-ui,sans-serif;border:1px solid var(--rule);border-left:4px solid var(--accent2);padding:8px 12px;margin:12px 0}
+.evidence{font:14px/1.5 system-ui,sans-serif;border:1px solid var(--rule);border-left:4px solid var(--accent);padding:8px 14px;margin:18px 0}
+.evidence ul{margin:6px 0 0;padding-left:20px}
+footer.site{font:12px/1.5 system-ui,sans-serif;color:var(--muted);border-top:1px solid var(--rule);margin-top:40px;padding-top:10px}
+.qf{font:inherit;padding:4px 8px;min-width:260px;max-width:100%}
+ul.browse{list-style:none;padding:0}ul.browse li{margin:8px 0;padding:6px 0;border-bottom:1px solid var(--rule)}
+ul.browse .one{display:block;color:var(--muted);font-size:.95em}
+.toc{font:14px system-ui,sans-serif;display:flex;flex-wrap:wrap;gap:6px 14px}
+.door{border-top:3px double var(--rule);margin-top:36px;padding-top:6px}
+.dsum{border:1px solid var(--rule);padding:10px 14px;margin:16px 0}
+@media (max-width:560px){.qf{min-width:0;width:100%}.pager a{max-width:100%}}
+</style></head><body><main><nav class="site" aria-label="Site"><a class="brand" href="../index.html">What the cipher said</a><a href="../index.html">Exhibit</a><a href="../all-readings.html" aria-current=page>All readings</a><a href="../browse/century.html">By century</a><a href="../browse/archive.html">By archive</a><a href="../browse/language.html">By language</a><a href="../how-to-read.html">How to read</a><a href="../credits.html">Credits</a></nav><p class="crumbs"><a href="../index.html">Home</a> &rsaquo; <a href="../all-readings.html">All readings</a> &rsaquo; Elector August to Orange, Torgau 18 Nov 1561, ...</p><p class="mock">Private preview for review. Not published, not linked from anywhere.</p><p class="backlink">This reading is shown in the exhibit: <a href="../exhibit/breda-torgau-1561.html">Back to the display &ldquo;Breda &amp; Torgau, 1561&rdquo;</a></p><div class="pager"><a rel="prev" href="006-august-van-saksen-1561-64-august-of-saxony-cipher-enclosure-of-1561-64.html">&larr; August of Saxony, cipher enclosure of 1561-64 (WVO ...</a><span class="mid">7 of 165 &middot; <a href="../all-readings.html">All readings</a></span><a rel="next" href="008-fr2980-gramont-gramont-to-villandry-rome-20-may-1530-bnf-fr-2980-f-29r.html">Gramont to Villandry, Rome, 20 May 1530 (BnF ... &rarr;</a></div><h1>Elector August to Orange, Torgau 18 Nov 1561, cipher enclosure (WVO 57, KHA A 11/XIV B/41-6)</h1><h2>The claim</h2><blockquote class="claim">The cipher enclosure of Elector August&#x27;s letter to Orange, Torgau 18 Nov 1561 (KHA A 11/XIV B/41-6; WVO 57), reads with the key of Orange&#x27;s 1562 cipher (C 247, M 53 of 300 signs) as secret news that the Emperor had asked August to elect Maximilian King of the Romans. No prior decipherment or printed plaintext was located in the sources listed in AUDIT.md (24 Sept 2026); Demandt&#x27;s regest of the letter (HessJb 38, nr. 113) summarises only the clear text. August&#x27;s minute in Dresden (with a &#x27;Zettel&#x27;) has not been seen.</blockquote><p class="small">The verifier's safe sentence, quoted from <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/august-van-saksen-1561-64/AUDIT.md">AUDIT.md</a>.</p><p class="gist">August tells Orange in confidence that the Emperor has recently, through a formal embassy, asked him to elect his son Maximilian King of the Romans in the Emperor&#x27;s own lifetime, and that the other Electors will be asked the same. <em>(interpretation: the verifier's English paraphrase of the read passage)</em></p><h2>The letter</h2><dl><dt>From</dt><dd>Elector August</dd><dt>To</dt><dd>Orange</dd><dt>Place</dt><dd>Torgau</dd><dt>Date</dt><dd>18 Nov 1561</dd><dt>Held</dt><dd>Royal House Archive, The Hague<br><span class="small">KHA A 11/XIV B/41-6 p3 (WVO 57), August to Orange, Torgau 18 Nov 1561 (cipher enclosure)</span></dd><dt>Language</dt><dd>German</dd><dt>Manuscript image</dt><dd><a href="https://resources.huygens.knaw.nl/media/wvo/images/00000-00999/00057.pdf">https://resources.huygens.knaw.nl/media/wvo/images/00000-00999/00057.pdf</a></dd><dt>Printed edition</dt><dd>none for this letter</dd><dt>Outcome</dt><dd>Recovered passages</dd><dt>Search result</dt><dd>N4: No prior decipherment located; the principal editions, catalogues and project pages were searched (unpublished or archival work is not excluded). <a class="small" href="../how-to-read.html#n-class">what this means</a></dd><dt>Depth</dt><dd>largely deciphered (about 98% of the cipher text) <a class="small" href="../how-to-read.html#depth">what this means</a></dd><dt>Key</dt><dd>period key, rebuilt by us from a decipherment or key sheet of the time <a class="small" href="../how-to-read.html#key">what this means</a></dd></dl><h2>The proof</h2><p class="small">Open each line for the evidence. Nothing is hidden; the repository holds every file.</p><details><summary>Signs read, by grade: C 294, M 7 (of 301)</summary><div class="det"><p>H read from a key of the time or a published key; C from a known plain text; S by cryptanalysis that beat a matched control; M uncertain; I inferred or repaired; U not read.</p><p class="small">Counted by the decode script over every cipher token; the reading and its per-token grades are in the repository.</p></div></details><details><summary>How the reading regenerates</summary><div class="det"><ul><li>Transcription: <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/august-van-saksen-1561-64/ciphertext_124.tsv">ciphertext_124.tsv</a>, <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/august-van-saksen-1561-64/ciphertext_126.tsv">ciphertext_126.tsv</a>, <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/august-van-saksen-1561-64/ciphertext_153.tsv">ciphertext_153.tsv</a>, <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/august-van-saksen-1561-64/ciphertext_53.tsv">ciphertext_53.tsv</a></li><li>Key: <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/august-van-saksen-1561-64/key.tsv">key.tsv</a>, <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/august-van-saksen-1561-64/key_153.tsv">key_153.tsv</a>, <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/august-van-saksen-1561-64/key_53.tsv">key_53.tsv</a>, <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/august-van-saksen-1561-64/key_74.tsv">key_74.tsv</a></li><li>Reading: <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/august-van-saksen-1561-64/reading_57.txt">https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/august-van-saksen-1561-64/reading_57.txt</a></li></ul><p>Run <code>python3 tools/decode_key.py ciphers/august-van-saksen-1561-64 --check</code> from a clone of the repository: it rebuilds the reading from the transcription and the key, and exits with an error if the committed reading is stale.</p></div></details><details><summary>The control it had to beat</summary><div class="det"><p>No control figure is recorded on the register row; the audit file gives the checks used.</p></div></details><details><summary>Audits: two audits, each by a separate session</summary><div class="det"><p>Each audit was written by a session that did not make the reading and tried to find it already in print. Audit entries in this folder are dated 16 Sept 1564, 24 Sept 2026, 3 Oct 2026, 6 Oct 2026.</p><p><b>Searched</b> (from this folder's audit log; the full log is in <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/august-van-saksen-1561-64/AUDIT.md">AUDIT.md</a>):</p><ul><li>or printed plaintext was located in Groen van Prinsterer, Gachard, Rachfahl or a full-text phrase search (24 Sept</li><li>Groen 1st ser. t.I by date | an earlier DBNL full-text check re-run for the 1564 section (DBNL groe009arch01, 1 request) | no letter of 16 Sept 1564; confirmed</li><li>or a full-text phrase search (AUDIT.md, 24 Sept 2026). Orange&#x27;s minute in the KHA (A11-XIVi-04-26), recorded with</li><li>retroboeken viewer willem_den_eerste, its own full-text search and its page OCR, 24 Sept 2026):</li><li>or in a full-text phrase search (AUDIT.md, 24 Sept 2026). Demandt&#x27;s regest of the letter (HessJb 38, nr. 113) covers</li><li>(2) Does nr. 113 print, paraphrase or summarise the cipher passage? | *<i>No.</i>* WVO&#x27;s &quot;excerpt&quot; is the witness type: the Dillenburg archivists&#x27; 18th-century extracts (Wiesbaden 171 M fol. 4, 40), which Demandt printed as regests. Nr. 113 summ</li></ul><p><b>Unreachable or blocked</b>:</p><ul><li>OpenAlex answered 429. See section 4.</li><li>Böttiger, Vermählung Oraniens mit Anna von Sachsen (Hist. Taschenbuch 1836); Kretzschmar on Anna of Saxony | unreachable | IA advancedsearch by title: no item found | not seen</li><li>Demandt, Nassau-oranische Korrespondenzen (HessJb 38-39) | not applicable / unreachable | WVO cites it for 57 only, not 126 | not seen</li><li>Japikse (Collectie Japikse, KHA) | unreachable | unpublished 20th-c. copy | not seen</li><li>KHA minute A 11/XIV I/4 nr. 26 | unreachable | not imaged | not seen; see 2.3</li><li>Scholarship: OpenAlex | unreachable | HTTP 429 on first call | not searched</li><li>two of the open-index families (OpenAlex, Semantic Scholar) answered 429.</li><li>behind Cloudflare (1 request, 403 challenge, stopped). This audit checked it through the HTRC Extracted Features</li><li>Böttiger, Vermählung Oraniens mit Anna (Hist. Taschenbuch 1836) | IA advancedsearch by title and by year | no item; unreachable</li><li>Kruse (Anna von Sachsen literature) | IA search; CrossRef | no text; unreachable</li></ul></div></details><details><summary>Whose key, and credit</summary><div class="det"><p>period key, rebuilt by us from a decipherment or key sheet of the time. Credits for published keys are on the <a href="../credits.html">credits page</a>.</p></div></details><p class="small">Repository folder: <a href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/august-van-saksen-1561-64">ciphers/august-van-saksen-1561-64</a> &middot; result recorded 24 Sept 2026.</p><div class="pager"><a rel="prev" href="006-august-van-saksen-1561-64-august-of-saxony-cipher-enclosure-of-1561-64.html">&larr; August of Saxony, cipher enclosure of 1561-64 (WVO ...</a><span class="mid">7 of 165 &middot; <a href="../all-readings.html">All readings</a></span><a rel="next" href="008-fr2980-gramont-gramont-to-villandry-rome-20-may-1530-bnf-fr-2980-f-29r.html">Gramont to Villandry, Rome, 20 May 1530 (BnF ... &rarr;</a></div><footer class="site">Private preview, 10 October 2026. Readings graded per CLAUDE.md rule 4; novelty classes per rule 10 (verifier's verdict). Nothing here is called first, new or unpublished. <a href="../sitemap.html">Sitemap</a></footer></main></body></html>
