@@ -5452,3 +5452,50 @@ Not applied: the IC report-date tokens as M in the decoder (would split a numera
 Propagation (rule 10): status.json N2-JG (Gauls, not Palermo) and N2-IG (11 H, 1 M) completeness/depth_note updated; O9-DA, -DD, -DF, N2-IB, -IC, -ID, -JH, -JI rows already carried the audit-corrected figures; SO-ECKERT-N2-IC and -N2-JH prompts checked by grep for the old forms (none present); no SO row exists for the N1 entries. AUDIT.md not edited.
 
 Decode: `decode.py --check`, `decode_no2.py --check`, `decode_no9.py --check` each "is current", exit 0.
+
+## MS65-R2 (10 Oct 2026, account 1, for LANE LEDGER-11)
+
+Job: the ten 1865 rows of `ms18/clean-ms18.tsv` that BOOK-65 assigned or predicted (10014/1 No. 1, 10012/1 No. 2, the W. G. Fuller 28 May entry inside 10023/1 No. 2, 10006/0 10040/0 10034/2 10028/2 No. 2, 10007/1 10006/1 No. 1 or No. 2, 10040/1), Step-0 ruling first (LEDGER-10 jobs, Wave 3). Worker MS65-R2 (Sonnet), 06:31-06:38 UTC by `date -u`. Scripts `ms18/ms65_r2_extract.py` (the Fuller entry is cut from the Sullivan segment at its own header line), `ms65_r2_step0.py` (arg no1|no2; output `ms65_r2_step0.out`), `ms65_r2.py` (book shares + meaning-shuffled copies, `ms65_r2_controls.txt`), `ms65_r2_control.py` (time/day agreement vs 200 meaning-shuffled copies, `.out`), `ms65_r2_coherence.py` (`.out`, trained without OR I/47 pt 3), `ms65_r2_hdl.py` (`.out`), `ms65_r2_file.py`. IDs: N2-MA, N2-MB (N2-L/N2-M are single ids; ciphertext-no2.txt had no N2-MA at 06:4x UTC). `decode_no2.py --write` then `--check`, `decode.py --check`, `decode_no9.py --check` all "current", exit 0.
+
+Prior-work (by hand; `tools/prior_work.py` not run, no items.tsv for this ledger). (1) Intake gate 10 Oct 2026 06:3x UTC: `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0. (2) Own work: the ten pointer/entry pairs grepped in ciphertext*.txt, NOTES.md, AUDIT.md, ROOM.md: BOOK-65's key test only (nothing filed, no live claim). (3) Holder: 4 CISOSEARCHALL queries, for Z4/Z5 only (`ms65_r2_hdl.out`): 'Vance arrest Schofield Raleigh Wash' 0 (not control-shaped: 'arrest' is coded on the own page), 'Chamberlain Isaacs and company July 1865' 0 (the page writes 'Chamber lain'), 'McCausland Emory Cumberland' 10030 + 7953 (the known positive control, MS65-R1's), 'Zebulon Vance' 10006 only (the own page; no clear copy elsewhere). (4) Print: OR I/47 pt 3 (IA warofrebellion014703rootrich) and I/49 pt 2 (warofrebellion492unit) full text, letters-only phrase grep; Z4 printed, Z5 not located. The press of the day not searched.
+
+**Step-0 ruling per row (a = ordered LCS of decoded content words vs the entry's own transcription, b = within-entry shuffle p95, c = decoded words not in the transcription), under the book BOOK-65 named; Z7-Z9 under both books.**
+| row | id | book | a | b p95 | hit | (c) |
+|---|---|---|---|---|---|---|
+| 10014/1 (21 May 1865, Sheldon Ft Monroe) | Z1 | No. 1 | 0.654 (17/26) | 0.269 | yes | 8: chief er five galveston general huntsville monroe steam |
+| 10012/1 (19 May, O'Brien Raleigh, No 2) | Z2 | No. 2 | 0.608 (45/74) | 0.189 | yes | 26: augusta breckenridge carolina davis ed general georgia information ing jeff lynchburg men necessary nineteen north officer one order report secretary supply telegraph two war washington wilson |
+| Fuller 28 May (cut from 10023/1) | Z3 | No. 2 | 0.621 (41/66) | 0.197 | yes | 23: adjutant alabama banks canby command department division ed eight florida general ing louisiana mask mississippi president station twenty tyners washington watched west withdrawn |
+| 10006/0 (8 May) | Z4 | No. 2 | 0.323 (10/31) | 0.194 | **no** | 18 |
+| 10040/0 (11 July) | Z5 | No. 2 | 0.455 (10/22) | 0.227 | **no** | 8 |
+| 10034/2 (19 June, Gilmore Hilton Head) | Z6 | No. 2 | 0.558 (24/43) | 0.233 | yes | 17: beauregard city colonel ed four general june nineteen officer order rebel report savannah secretary six war washington |
+| 10028/2 (3 June, Fuller) | Z7 | No. 2 / No. 1 | 0.692 / 0.638 | 0.231 / 0.213 | yes / yes | No. 2: arms cavalry couch force kirby men sheridan smith texas three west |
+| 10007/1 (10 May, Caldwell Richmond) | Z8 | No. 2 / No. 1 | 0.783 / 0.655 | 0.304 / 0.241 | yes / yes | No. 2: chief colonel department general ten |
+| 10006/1 (9 May, Eddy Ft Monroe) | Z9 | No. 2 / No. 1 | 0.706 / 0.758 | 0.235 / 0.273 | yes / yes | No. 2: carr colonel ed gen grant guard lieut position rear valley |
+| 10040/1 (13 July, W. H. Fuller) | Z10 | No. 2 / No. 1 | 0.771 / 0.889 | 0.250 / 0.267 | yes / yes | No. 2: ascertain canby chickamunga ed heights ing lookout sic three valley |
+Under the ruling eight of ten rows are step-0 hits (body in holder transcription; plain words carry most of them, and the hit holds under whichever book is tried, so it is the page text, not a key): **not filed**. The (c) words of Z2, Z3 and Z6 under No. 2 name places and officers the transcription does not give (Z2 Augusta Georgia, Charlotte N.C. context, Breckenridge to Jeff Davis, Secretary of War; Z3 Canby, Banks, Mississippi/Alabama/Florida/Key West, Louisiana, the Adjutant General; Z6 Savannah, Beauregard); they are M (word shapes of the decoder, not eye-checked) and are left to a contribution count only if the Step-0 owner asks.
+
+**Book per row (`ms65_r2_controls.txt`, whole-entry vocabulary share No.1/No.2/No.9).** Z1 .51/.49/.17, Z2 .28/.39/.12, Z3 .39/.48/.17, Z4 .46/.64/.14, Z5 .42/.52/.23, Z6 .36/.45/.14, Z7 .44/.47/.16, Z8 .35/.35/.12, Z9 .28/.24/.10, Z10 .20/.23/.05. The count cannot fail against a meaning-shuffled copy (same codes resolve), so sense decides. Time/day agreement against 200 shuffled copies (`ms65_r2_control.out`): header day equals the decoded No. 2 day on Z3 (shuffled 6/200), Z4 (7/200), Z5 (10/200), Z6 (14/200, plus the time 2 PM, shuffled 2/200), Z7 (9/200), Z8 (5/200, plus 10.30 AM, 2/200); shuffled No. 1 0-4/200 time, 0/200 day. Z1 and Z9 have no No. 2 day or time agreement (Z1's header 21 May is not decoded under any book: the read is by clause).
+
+**Per-row line.**
+- Z1 10014/1, Z2 10012/1, Z3 Fuller 28 May (10023/1), Z6 10034/2, Z7 10028/2, Z8 10007/1, Z9 10006/1, Z10 10040/1: step-0 skip (body in holder transcription; nothing filed, nothing searched). BOOK-65's calls hold as to book where the decode gives a clause (Z1 No. 1; Z2, Z3, Z6, Z7 No. 2); Z8, Z9, Z10 are plain-word bodies that read in either book and are not assigned. The Sullivan entries in the 10014/1 and 10023/1 segments read in no book (BOOK-65) and are unchanged.
+- Z4 10006/0 (N2-MA): not a step-0 hit; **in print**, OR I/47 pt 3 p.441, Grant to Schofield, 8 May 1865 11 p.m., clause for clause (C); also Schofield to Cox 9 May, p.452. No. 2 beats No. 1, No. 9 and the shuffled copies on coherence (-5.233 vs -6.693 best shuffle).
+- Z5 10040/0 (N2-MB): not a step-0 hit; **not located** (OR I/49 pt 2, holder, 4 queries). Reading thin: the clause resolves under No. 2 (July 4, Important, Cipher) and the day agrees (10/200 shuffled), but the coherence control does NOT pass (No. 2 -7.451 vs a shuffled No. 2 at -6.455 and No. 1 at -7.349), so the clause is held on sense alone; filed, graded M beyond the plain words.
+
+Grades: N2-MA H16 C2 I0 M0 from the decoder, C by comparison with the print; N2-MB H16 C0 I0 M0, clause beyond plain words M (control mixed). No S. No judge spec exists for this ledger (rule 7: none run). No leaf image opened (rule 2: every call conditional on the volunteer transcription; the two filed rows are not eye-checked). Requests: hdl.huntington.org 4 (CISOSEARCHALL, all 200), one take released; archive.org 4 requests for 2 djvu files (2 x 302 without -L, then 2 x 200 with -L; no 429); no other host. Depth and novelty not classified (rule 10). seven_day allowed_warning not observed by me.
+
+## Remaining gaps (MS65-R2, 10 Oct 2026)
+Read so far: ten of ten rows through Step-0; two filed (N2-MA printed, N2-MB not located, reading thin); eight step-0 skips whose body is in the holder transcription.
+- N2-MB print and clause - blocker: not-attempted; OR I/49 pt 2 only, no ser. II/III, no press of July 1865; next: ser. II/III and Chronicling America phrase search 'Chamberlain Isaacs', ~$0.3
+- N2-MA page confirm - blocker: not-attempted; p.441 from running heads only; next: IA page read, ~$0.1
+- Z2 Z3 Z6 (c) place/officer words - blocker: not-attempted; ruling files nothing; next: a contribution count if the Step-0 owner asks, ~$0.2
+- leaf images for N2-MA, N2-MB - blocker: not-attempted; both rows read from the holder transcription alone; next: 2 IIIF crops at 2400 px, ~$0.4
+
+## Escalation (MS65-R2, 10 Oct 2026)
+- [x] siblings: 10006/1 and 10040/1 (same leaves) tested; the Sullivan entries stay unread (BOOK-65).
+- [x] clear-pages: CISOSEARCHALL, 4 queries (known control returned for McCausland; the two target-shaped queries not control-shaped, stated).
+- [x] known-keys: three books plus meaning-shuffled copies; coherence control run for the two filed rows (Z4 passes, Z5 fails).
+- [x] print: OR I/47 pt 3 and I/49 pt 2 full text, phrase grep; Z4 printed.
+- [n/a] key-rebuild: no key row edited; decoder slips (close = [Eastport]) noted, not key edits.
+- [ ] image-check: leaves for N2-MA and N2-MB not opened.
+- [x] retry: none needed.
+Verdict: keep going: 4 internal gaps; cheapest next: IA page read for N2-MA's page, ~$0.1

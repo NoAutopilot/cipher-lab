@@ -1311,5 +1311,17 @@ Code-word tokens: H 14.
 
 Code-word tokens: H 16, C 1.
 
-Totals over the 148 entries: H 3518, C 126, I 119, M 11.
+**N2-MA | Page 346 | 10006 | mssEC 18 (obj 10074, pointer 10006; printed page 340), 8 May 1865 11 PM Washington ('R O'Brien Raleigh NC, Wash May 8 1865'; entry 0 of the leaf), to Maj. Gen. J. M. Schofield at Raleigh N.C., signed [Lieut. Gen. U. S. Grant]: by direction of the President you will at once arrest Zebulon B. Vance, late [rebel governor] of North Carolina, and send him to Washington under close guard; please acknowledge receipt of this order; printed OR I/47 pt 3 p.441 (MS65-R2; row 10006/0; holder transcription, leaf not eye-checked)**
+
+[Washington] [May] [8] {time: 11 PM} for [Schofield] [Raleigh] [.] By direction [Of the] [President of U.S.] you will at once [Arrest (-ed, -ing)] Zebulon B Vance late [Rebel] [Government] of [North Carolina] and send him to [Washington] under [Eastport] [Guard (-ed, -ing)] please acknowledge receipt of this [Order] [Lieut Gen U.S. Grant]
+
+Code-word tokens: H 16, C 2.
+
+**N2-MB | Page 380 | 10040 | mssEC 18 (obj 10074, pointer 10040; printed page 374), 11 July 1865 Washington ('Richd O Brien, Wash July 11 1865'; entry 0 of the leaf), signed Thos T Eckert (addressee not decoded): your letter of [4 July] received; [the Chamberlain, Isaacs and Company] telegraph is [important]; where do they live; what is the date of [the] telegraph to them; answer in [cipher] (MS65-R2; row 10040/0; holder transcription, leaf not eye-checked; reading thin, control mixed)**
+
+[Washington] [July] [11] {time: 2.30 PM} [.] Letter [July] [4] recd [.] the Chamber lain Isaacs and company [Telegraph (-ed, -ing)] is [Important] [.] where do they live [?] what is the date of [Telegraph (-ed, -ing)] to them  {tail: [signed] All stone [?] answer in [Cipher] Thos T Eckert}
+
+Code-word tokens: H 16.
+
+Totals over the 150 entries: H 3550, C 128, I 119, M 11.
 <!-- decode.py: derived block ends -->

@@ -1,0 +1,4 @@
+trained on 21 OR volumes, 9228751 words, vocab 94396; excluded ['warofrebellion014703rootrich']
+row	no1	no2	no9	no2shuf(1,2,3)	no1shuf(1,2,3)	no2_beats_all
+Z4	-7.075	-5.233	-7.797	-6.693/-7.549/-7.901	-6.919/-7.174/-7.719	True
+Z5	-7.349	-7.451	-8.696	-6.455/-7.680/-7.450	-7.888/-7.854/-7.678	False

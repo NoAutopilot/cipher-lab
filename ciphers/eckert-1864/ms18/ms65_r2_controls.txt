@@ -1,0 +1,110 @@
+Z1 tokens=35 no1=18(0.51) no2=17(0.49) no9=6(0.17)
+  no1: H16 C0 I0 M0
+    {time: 10.30 AM} [General-in-Chief] [Monroe] [.] The women & [Huntsville] may be sent back [In the] [Steam]er [Galveston] The navy can take care [Of the] prisoners that were tobey taken blithe [Galveston] [.] Permit no plation by any [Of the] party with [5]s out side  {tail: [signed] [Secretary of War] sour [Sumter] tree}
+  no2: H15 C0 I0 M0
+    {time: 10.30 AM} [Hill] [Tennessee] [1000] The women & [Grenada] may be sent back [Killing] [Transportation]er [Danville] The navy can take care [Pursue (-ed, -ing)] prisoners that were tobey taken blithe [Danville] [Sunday] Permit no plation by any [Pursue (-ed, -ing)] party with persons out side [Surrendered] [Chalmers] sour [Tennessee] tree
+  no9: H6 C0 I0 M0
+    {time: 8 AM} Jacob Animal [Movement] The women & children may be sent back [Scouting Party] [Reconnoissance]er Clyde The navy can take care torch prisoners that were tobey taken blithe Clyde [Movement] Permit no plation by any torch party with persons out side [Killed] Infant sour apple tree
+  no1shuf: H16 C0 I0 M0
+    {time: 10.30 AM} [Army] [Newbern] [.] The women & [Fredericksburg] may be sent back [Pearl] [Available]er [River] The navy can take care [Goldsboro] prisoners that were tobey taken blithe [River] [.] Permit no plation by any [Goldsboro] party with [5]s out side  {tail: [signed] [Jacksonville] sour [Transportation] tree}
+  no2shuf: H15 C0 I0 M0
+    {time: 10.30 AM} [Huntsville] [Wheeler] [1000] The women & [Hill] may be sent back [Etowah] [Front]er [Decherd] The navy can take care [Unite (-ed, -ing)] prisoners that were tobey taken blithe [Decherd] [Carter S.P.] Permit no plation by any [Unite (-ed, -ing)] party with persons out side [Captain] [Across] sour [Brigade] tree
+Z2 tokens=114 no1=32(0.28) no2=45(0.39) no9=14(0.12)
+  no1: H26 C0 I0 M0
+    [Lee] Job Morgan {time: 12} for are Be Bullock [Augusta] [Pearl] copy to Charlotte [Holston] Julip L F Bates and Allen or Arnold loyal [Impregnable] who heard the speech at Charlotte should be sent here immy to [Resist] tooth [Jefferson] Yard Find the origin all [Transport (-ed, -ing)] from [President of the U.S.] to [Maj Genl U.S. Grant] if possible and send by Bates stick apply ditto [Government] Marengo rainy radical hoken season the want forney funds or other aid [Left] to bring ditto [Impregnable] here [Drove 
+  no2: H33 C2 I3 M0
+    [Washington] [May] [19] {time: 12.30 PM} for are Be Bullock [Augusta] [Georgia] copy to Charlotte [North Carolina] Julip L F Bates and [1] or [2] loyal [Men] who heard the speech at Charlotte should be sent here immy to [Report] tooth [Secretary of War] [.] Find the origin all [Telegraph (-ed, -ing)] from [Breckenridge] to [Jeff Davis] if possible and send by Bates [.] apply ditto [General] [Wilson] rainy [Officer] hoken [Supply] the want forney funds or other aid [Necessary] to bring ditto [Men] here [.] I thank y
+  no9: H14 C0 I0 M0
+    Happy Job Morgan {time: 11.30 PM} for are Be Bullock Bigelow [Halleck] copy to Charlotte Bedford Julip L F Bates and Allen or Arnold loyal [Skirmishers] who heard the speech at Charlotte should be sent here immy to [Casualties] tooth costume Yard Find the origin all [Threaten] from Ingrate to Japan if possible and send by Bates stick apply ditto [Mortars] Marengo rainy radical hoken season the want forney funds or other aid [Transportation] to bring ditto [Skirmishers] here [Hd. Qrs.] I thank you forth [Rifled Guns
+  no1shuf: H26 C0 I0 M0
+    [Talladega] Job Morgan {time: 12} for are Be Bullock [Cleveland] [Jasper] copy to Charlotte [Walker] Julip L F Bates and Allen or Arnold loyal [Breckenridge] who heard the speech at Charlotte should be sent here immy to [Skirmish (-ed, -ing)] tooth [Surround (-ed, -ing)] Yard Find the origin all [Flank (-ed, -ing)] from [Skirmish (-ed, -ing)] to [Grand Junction] if possible and send by Bates stick apply ditto [Georgia] Marengo rainy radical hoken season the want forney funds or other aid [Selma] to bring ditto [Bre
+  no2shuf: H35 C0 I3 M0
+    [Davis J.C] [President of U.S.] [19] {time: 12.30 PM} for are Be Bullock [Overtook (or taking) the Enemy] [Jones] copy to Charlotte [Surprising] Julip L F Bates and [1] or [2] loyal [Unsuccessful] who heard the speech at Charlotte should be sent here immy to [Tuscaloosa] tooth [Grenada] [.] Find the origin all [Subsist (-ed, -ing)] from [Washington] to [Valley] if possible and send by Bates [.] apply ditto [Defend (-ed, -ing) [#]] [Marietta] rainy [Baltimore] hoken [McPherson J B] the want forney funds or other aid
+Z3 tokens=71 no1=28(0.39) no2=34(0.48) no9=12(0.17)
+  no1: H24 C0 I0 M0
+    [Lee] Nelson Fisher {time: 9 PM} for [Maj Gen B. M. Prentiss] [Drove in our pickets] The [Cleveland] will transmit an order changing in some respects the military [Demoralize (-ed, -ing)] in your [Danger] [Drove in Enemys pickets] [Red River] [Arkansas] [Big Sandy] and Key [Valley] are added to your [Depot] to which you are assigned and [Maj Gen Joseph Hooker] relieved [Drove in our pickets] The [Jasper] directs me to express his wish that the military authorities render all proper assistance to the civil authoriti
+  no2: H29 C1 I0 M0
+    [Washington] [28] {time: 9.30 PM} for [Canby Ed R S] [.] The [Adjutant General] will transmit an order changing in some [Mask]'s the military [Command (-ed, -ing)] in your [Division] [.] [Mississippi] [Alabama] [Florida] and Key [West] are added to your [Department] to which you are assigned and [Banks N P] relieved [.] The [President U.S.] directs me to [Tyners Station] his wish that the military authorities render all proper assistance to the civil authorities in the state of [Louisiana] and not interfere with or
+  no9: H12 C0 I0 M0
+    Happy Nelson Fisher {time: 5.30 PM} for Mastiff [Hd. Qrs.] The Basket will transmit an order changing in some respects the military Princeton in your Queen [Reinforcements] Berlin Archery [Halleck] and Key [Rear] are added to your [Joe Johnston] to which you are assigned and Lapland relieved [Hd. Qrs.] The college directs me to express his wish that the military authorities render all proper assistance to the civil authorities in the state of [B. F. Butler] and not interfere with or control its action further than 
+  no1shuf: H24 C0 I0 M0
+    [Talladega] Nelson Fisher {time: 9 PM} for [Guard (-ed, -ing)] [Maj Gen W. B. Franklin] The [Projectile] will transmit an order changing in some respects the military [Troops] in your [Force] [Adjt Genl. U.S.] [Maj Gen N. P. Banks] [Surrender (-ed, -ing)] [Lebanon] and Key [Maj Gen W. T. Sherman] are added to your [Fork] to which you are assigned and [Fort Valley] relieved [Maj Gen W. B. Franklin] The [Troops] directs me to express his wish that the military authorities render all proper assistance to the civil aut
+  no2shuf: H29 C1 I0 M0
+    [Davis J.C] [28] {time: 9.30 PM} for [Unite (-ed, -ing)] [.] The [Menace (-ed, -ing)] will transmit an order changing in some [Washington]'s the military [Macon] in your [Line of battle] [.] [Warrenton] [Johnston] [Subsistence] and Key [Cruft J [?]] are added to your [Invest (-ed, -ing)] to which you are assigned and [Outflank (-ed, -ing)] relieved [.] The [East] directs me to [Connecticut] his wish that the military authorities render all proper assistance to the civil authorities in the state of [New York] and no
+Z4 tokens=28 no1=13(0.46) no2=18(0.64) no9=4(0.14)
+  no1: H12 C0 I0 M0
+    [Lee] Job Fisher {time: 11.30 PM} for Monkey [West Point] [.] By direction [Movement] [" " Treasury] you will at once [Advance (-ed, -ing)] Zebulon B Vance late [Pontoon] [Gap] of [Holston] and send him to [Kirby Smith] under close [Guard (-ed, -ing)] please acknowledge receipt of this repeat [Knoxville]
+  no2: H16 C2 I0 M0
+    [Washington] [May] [8] {time: 11 PM} for [Schofield] [Raleigh] [.] By direction [Of the] [President of U.S.] you will at once [Arrest (-ed, -ing)] Zebulon B Vance late [Rebel] [Government] of [North Carolina] and send him to [Washington] under [Eastport] [Guard (-ed, -ing)] please acknowledge receipt of this [Order] [Lieut Gen U.S. Grant]
+  no9: H4 C0 I0 M0
+    Happy Job Fisher {time: 10.30 PM} for Monkey Homer tulip By direction talbot Barnard you will at once orchard Zebulon B Vance late [Major] [Pickets] of Bedford and send him to hang under close [Mortar Boats] please acknowledge receipt of this repeat Crowd
+  no1shuf: H11 C1 I0 M0
+    [Talladega] Job Fisher {time: 11.30 PM} for Monkey [south] [.] By direction [Major] [Road] you will at once [Maj Gen Gordon Granger] Zebulon B Vance late [Maj Gen H. W. Slocum] [General-in-Chief] of [Walker] and send him to [Gordonsville] under close [Orange C.H.] please acknowledge receipt of this repeat [As soon as]
+  no2shuf: H18 C0 I0 M0
+    [Davis J.C] [President of U.S.] [8] {time: 11 PM} for [City Point] [Ord E O C] [.] By direction [Lebanon] [Equipment] you will at once [Loss Losing] Zebulon B Vance late [Marmaduke] [McPherson J B] of [Surprising] and send him to [Louisville] under [Crook S [?]] [Transportation] please acknowledge receipt of this [From the] [Grand Junction]
+Z5 tokens=31 no1=13(0.42) no2=16(0.52) no9=7(0.23)
+  no1: H9 C0 I0 M0
+    [Lee] Mark Hawkins {time: 2.30 PM} [.] Letter Mark Baker recd [Drove in our pickets] the Chamber lain Isaacs and company [Troops] is republic [.] where do they live [In the meantime] what is the date of [Transport (-ed, -ing)] to them [Road] All stone [In the meantime] answer in [Cut off] Thos T Eckert
+  no2: H16 C0 I0 M0
+    [Washington] [July] [11] {time: 2.30 PM} [.] Letter [July] [4] recd [.] the Chamber lain Isaacs and company [Telegraph (-ed, -ing)] is [Important] [.] where do they live [?] what is the date of [Telegraph (-ed, -ing)] to them  {tail: [signed] All stone [?] answer in [Cipher] Thos T Eckert}
+  no9: H7 C0 I0 M0
+    Hunter Mark Hawkins {time: 4 PM} tulip Letter Mark Baker recd [Hd. Qrs.] the Chamber lain Isaacs and company [Threaten] is republic tulip where do they live [Regiment] what is the date of [Threaten] to them [Enemy] All stone [Regiment] answer in pigeon Thos T Eckert
+  no1shuf: H8 C1 I0 M0
+    [Our scouts report] Mark Hawkins {time: 2.30 PM} [.] Letter Mark Baker recd [Maj Gen W. B. Franklin] the Chamber lain Isaacs and company [Telegraph (-ed, -ing)] is republic [.] where do they live [Maj Gen B. F. Butler] what is the date of [Flank (-ed, -ing)] to them [telegraphed] All stone [Maj Gen B. F. Butler] answer in [General] Thos T Eckert
+  no2shuf: H16 C0 I0 M0
+    [Fight (-ing, Fought) [#]] [Hill] [11] {time: 2.30 PM} [.] Letter [Hill] [4] recd [.] the Chamber lain Isaacs and company [Valley] is [Threaten (-ed, -ing)] [.] where do they live [?] what is the date of [Subsist (-ed, -ing)] to them  {tail: [signed] All stone [?] answer in [Memphis] Thos T Eckert}
+Z6 tokens=56 no1=20(0.36) no2=25(0.45) no9=8(0.14)
+  no1: H16 C0 I0 M0
+    [Lee] {time: 2 PM} Luke Morgan for [Camp] York Provost Marshal The [Jefferson] directs that you send Andrew trunks and Clarke boxes be longing tooth [Pontoon] [Government] [President of the U.S.] and [Resist]ed toby inure care to this [Command = Er (-ed, -ing)] under charge of an radical who will be responsible for their safe delivery yard [Resist] receipt of this repeat name of radical sent with the parcels and date of their depart your from [Williamsburg] [Encountered enemy in strong force] E D Town send Lal <ins
+  no2: H20 C3 I1 M0
+    [Washington] {time: 2 PM} [June] [19] for [Colonel] York Provost Marshal The [Secretary of War] directs that you send [4] trunks and [6] boxes be longing tooth [Rebel] [General] [Beauregard] and [Report]ed toby inure care to this [City] under charge of an [Officer] who will be responsible for their safe delivery [.] [Report] receipt of this [Order] name of [Officer] sent with the parcels and date of their depart your from [Savannah]  {tail: [signed] E D Town send Lal <insertion>assistant</insertion> [Adjutant Gener
+  no9: H8 C0 I0 M0
+    Happy {time: 3 PM} Luke Morgan for pearl York Provost Marshal The costume directs that you send Andrew trunks and Clarke boxes be longing tooth [Major] [Mortars] [Abingdon] and [Casualties]ed toby inure care to this pontiac under charge of an radical who will be responsible for their safe delivery yard [Casualties] receipt of this repeat name of radical sent with the parcels and date of their depart your from Hebrew [Recruits] E D Town send Lal <insertion>assistant</insertion> basket pearl Yorks address Hebrew [Hal
+  no1shuf: H15 C1 I0 M0
+    [Talladega] {time: 2 PM} Luke Morgan for [Fredericksburg] York Provost Marshal The [Surround (-ed, -ing)] directs that you send Andrew trunks and Clarke boxes be longing tooth [Maj Gen H. W. Slocum] [Georgia] [Beaufort] and [Skirmish (-ed, -ing)]ed toby inure care to this [Maj. Gen. Lew Wallace (Baltimore)] under charge of an radical who will be responsible for their safe delivery yard [Skirmish (-ed, -ing)] receipt of this repeat name of radical sent with the parcels and date of their depart your from [Defeat (-ed
+  no2shuf: H23 C0 I1 M0
+    [Davis J.C] {time: 2 PM} [Echols] [19] for [Martinsburg] York Provost Marshal The [Grenada] directs that you send [4] trunks and [6] boxes be longing tooth [Marmaduke] [Defend (-ed, -ing) [#]] [Post] and [Tuscaloosa]ed toby inure care to this [Press] under charge of an [Baltimore] who will be responsible for their safe delivery [.] [Tuscaloosa] receipt of this [From the] name of [Baltimore] sent with the parcels and date of their depart your from [Surrender]  {tail: [signed] E D Town send Lal <insertion>assistant</
+Z7 tokens=45 no1=20(0.44) no2=21(0.47) no9=7(0.16)
+  no1: H14 C0 I0 M0
+    {time: 11 AM} Benton [Jno A. Dahlgren] [.] It is probable a large [Force] of [,] [Maj Gen Gordon Granger] required in [Sequatchie] yard If enough cannot be obtained [In the meantime] [Valley] let me know andy will send all that is required from here I want Custer & Merritt left in [Sequatchie] forth present yard The whole state should be scoured to pick up [Maj Genl A. E. Burnside]'s [Impregnable] & the [At the]'s carried home by them [Road] [Knoxville]
+  no2: H16 C0 I2 M0
+    {time: 11 AM} [3] [Sheridan P H] [.] It is probable a large [Force] of [Cavalry] [Couch D N] required in [Texas] [.] If enough cannot be obtained [In the] [West] let me know andy will send all that is required from here I want Custer & Merritt left in [Texas] forth present [.] The whole state should be scoured to pick up [Kirby Smith]'s [Men] & the [Arms]'s carried home by them  {tail: [signed] [Lieut Gen U.S. Grant]}
+  no9: H7 C0 I0 M0
+    {time: 9 AM} Benton [Richmond] tulip It is probable a large [Flotilla] of pedlar lobster required in Belgium yard If enough cannot be obtained [Regiment] [Rear] let me know andy will send all that is required from here I want Custer & Merritt left in Belgium forth present yard The whole state should be scoured to pick up Jargons [Skirmishers] & the orbits carried home by them [Enemy] Chart
+  no1shuf: H14 C0 I0 M0
+    {time: 11 AM} Benton [Montgomery] [.] It is probable a large [Attack (-ed, -ing)] of [,] [Capture (-ed, -ing)] required in [New York] yard If enough cannot be obtained [Wounded] [Ford (-ed, -ing)] let me know andy will send all that is required from here I want Custer & Merritt left in [New York] forth present yard The whole state should be scoured to pick up [Baltimore]'s [Breckenridge] & the [J. M. Palmer]'s carried home by them [Unite (-ed, -ing)] [Guard (-ed, -ing)]
+  no2shuf: H16 C0 I2 M0
+    {time: 11 AM} [3] [Danville] [.] It is probable a large [Baton Rouge] of [Ferrero [?] E] [Flank (-ed, -ing) [#]] required in [Capture (-ed, -ing)] [.] If enough cannot be obtained [Destroy (-ed, -ing)] [Chattanooga] let me know andy will send all that is required from here I want Custer & Merritt left in [Capture (-ed, -ing)] forth present [.] The whole state should be scoured to pick up [Jeff Davis]'s [Unsuccessful] & the [Sumter]'s carried home by them  {tail: [signed] [Rhodes]}
+Z8 tokens=26 no1=9(0.35) no2=9(0.35) no9=3(0.12)
+  no1: H7 C0 I0 M0
+    {time: 10.30 AM} French [Nashville] You are authorized to order [Camp] Single ton [Cut off] Ward Lamon or any body else you think proper out of your [Depot] and to enforce your order by such means as you may deem expedient [Encountered enemy in strong force] [Jefferson]
+  no2: H8 C0 I0 M0
+    {time: 10.30 AM} [10] [General in Chief] You are authorized to order [Colonel] Single ton [,] Ward Lamon or any body else you think proper out of your [Department] and to enforce your order by such means as you may deem expedient  {tail: [signed] [Secretary of War]}
+  no9: H3 C0 I0 M0
+    {time: 8 AM} French Embrace You are authorized to order Paxton Single ton pike Ward Lamon or any body else you think proper out of your [Joe Johnston] and to enforce your order by such means as you may deem expedient [Recruits] Costume
+  no1shuf: H7 C0 I0 M0
+    {time: 10.30 AM} French [Jones] You are authorized to order [Chattanooga] Single ton [Entrench (-ed, -ing)] Ward Lamon or any body else you think proper out of your [Fork] and to enforce your order by such means as you may deem expedient [Tennessee] [Surround (-ed, -ing)]
+  no2shuf: H8 C0 I0 M0
+    {time: 10.30 AM} [10] [Corinth] You are authorized to order [Force] Single ton [,] Ward Lamon or any body else you think proper out of your [Invest (-ed, -ing)] and to enforce your order by such means as you may deem expedient  {tail: [signed] [Grenada]}
+Z9 tokens=29 no1=8(0.28) no2=7(0.24) no9=3(0.10)
+  no1: H6 C0 I0 M0
+    {time: 4 PM} Evans Annapolis hound [Volunteered] of [Telegraph (-ed, -ing)] [Offensive]ed I know of no shuffle which changes your loath in any particular horse [Knoxville] is in verge lousy with Incubus whilst you [Camp] consequently instructions plough him multiply upward Bless No 2 2 P. M.
+  no2: H7 C0 I0 M0
+    {time: 4 PM} Evans [Carr] hound [Rear Guard] of [Valley] [Position]ed I know of no shuffle which changes your loath in any particular horse [Lieut Gen U.S. Grant] is in verge lousy with Incubus whilst you [Colonel] consequently instructions plough him multiply upward Bless No 2 2 P. M.
+  no9: H3 C0 I0 M0
+    {time: 7 PM} Evans Annapolis hound [Treasonable] of [Intercept] tinkered I know of no shuffle which changes your loath in any particular horse Crowd is in verge lousy with Incubus whilst you pearl consequently instructions plough him multiply upward Bless No 2 2 P. M.
+  no1shuf: H6 C0 I0 M0
+    {time: 4 PM} Evans Annapolis hound [Marietta] of [Winchester] [Maj Gen Geo. H. Thomas]ed I know of no shuffle which changes your loath in any particular horse [As soon as] is in verge lousy with Incubus whilst you [Fredericksburg] consequently instructions plough him multiply upward Bless No 2 2 P. M.
+  no2shuf: H7 C0 I0 M0
+    {time: 4 PM} Evans [Breckenridge] hound [Mask] of [Success] [Holston]ed I know of no shuffle which changes your loath in any particular horse [Grand Junction] is in verge lousy with Incubus whilst you [Martinsburg] consequently instructions plough him multiply upward Bless No 2 2 P. M.
+Z10 tokens=44 no1=9(0.20) no2=10(0.23) no9=2(0.05)
+  no1: H4 C0 I0 M0
+    Impress Stewart Benton {time: 1 PM} for amount harness horse I would like you to go tooth Rio Grande in [5] foray few [Maj Gen B. M. Prentiss]'s & manage affairs there accord powder to your judge ment what you have done seems so well that I desire to change nothing giraffe Do you not think it advise able to trammel bewilder from loath in forge rat if so trammel him upright [Delaware] How are things down there
+  no2: H7 C0 I0 M0
+    Impress Stewart [3] {time: 1.30 PM} for amount [Ascertain-ed-ing] horse I would like you to go tooth Rio Grande in person foray few [Canby Ed R S]'s & manage affairs there accord [Heights] to your judge ment what you have done seems so well that I [Lookout Valley] to change nothing giraffe Do you not think it advise able to trammel bewilder from loath in forge rat if so trammel him upright [Chickamunga [sic]] How are things down there
+  no9: H2 C0 I0 M0
+    Impress Stewart Benton {time: 1 PM} for amount harness horse I would like you to go tooth Rio Grande in person foray few mastiffs & manage affairs there accord powder to your judge ment what you have done seems so well that I desire to change nothing giraffe Do you not think it advise able to trammel bewilder from loath in forge rat if so trammel him upright [Sec. of the Navy] How are things down there
+  no1shuf: H4 C0 I0 M0
+    Impress Stewart Benton {time: 1 PM} for amount harness horse I would like you to go tooth Rio Grande in [5] foray few [Guard (-ed, -ing)]'s & manage affairs there accord powder to your judge ment what you have done seems so well that I desire to change nothing giraffe Do you not think it advise able to trammel bewilder from loath in forge rat if so trammel him upright [Athens] How are things down there
+  no2shuf: H7 C0 I0 M0
+    Impress Stewart [3] {time: 1.30 PM} for amount [Crittenden] horse I would like you to go tooth Rio Grande in person foray few [Unite (-ed, -ing)]'s & manage affairs there accord [Produce] to your judge ment what you have done seems so well that I [Ohio] to change nothing giraffe Do you not think it advise able to trammel bewilder from loath in forge rat if so trammel him upright [Pursuit] How are things down there

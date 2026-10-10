@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+"""MS65-R2: file Z4 (10006/0) and Z5 (10040/0) of ms65_r2_entries.txt into ../ciphertext-no2.txt as N2-MA, N2-MB. The other eight rows are Step-0 hits
+(Z1-Z3, Z6-Z10 under the book(s) tested) and are NOT filed (body in holder transcription). Usage: ms65_r2_file.py [--dry]  Idempotent. Holder transcription only (no leaf opened)."""
+import re, sys
+from pathlib import Path
+HERE = Path(__file__).resolve().parent
+HOLDER = "holder transcription, leaf not eye-checked"
+MAP = {
+ "Z4": ("N2-MA", f"Page 346 | 10006 | mssEC 18 (obj 10074, pointer 10006; printed page 340), 8 May 1865 11 PM Washington ('R O'Brien Raleigh NC, Wash May 8 1865'; entry 0 of the leaf), to Maj. Gen. J. M. Schofield at Raleigh N.C., signed [Lieut. Gen. U. S. Grant]: by direction of the President you will at once arrest Zebulon B. Vance, late [rebel governor] of North Carolina, and send him to Washington under close guard; please acknowledge receipt of this order; printed OR I/47 pt 3 p.441 (MS65-R2; row 10006/0; {HOLDER})",
+  ["note: MS65-R2: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .46/.64/.14; No. 1 reads 'Lee ... West Point ... Kirby Smith ... Knoxville', no clause). Step-0 (ordered LCS of the No. 2 decode vs the entry's own transcription): a 0.323 (10/31), shuffle p95 0.194, (c) 18 words: not a hit. Coherence (bigram log-prob, trained without the volume that prints it): No. 2 -5.233 vs No. 1 -7.075, No. 9 -7.797, shuffled No. 2 -6.693/-7.549/-7.901, shuffled No. 1 -6.919/-7.174/-7.719: No. 2 beats all. Decoded day 8 = header day (day-agreement control: 7 of 200 meaning-shuffled No. 2 copies agree, shuffled No. 1 0 of 200). IN PRINT, clause for clause (C): OR I/47 pt 3 (IA warofrebellion014703rootrich), Grant to Schofield, 'Washington, D. C., May 8, 1865 - 11 p. m. (Received 9th)', 'By direction of the President you will at once arrest Zebulon B. Vance, late rebel governor of North Carolina, and send him to Washington under close guard. Please acknowledge receipt of this order. U. S. Grant, Lieutenant-General', p.441 (running head); Schofield's relay to Cox, Raleigh 9 May, p.452. Decoder slips noted M: 'close' read [Eastport] (the plain word is 'close saddle'), 'late village Sharper' read [Rebel] [Government] where the print has 'rebel governor'. The 'May' and '8' are decoded from 'Happy Job' (the ledger writes the date plain in the header)."]),
+ "Z5": ("N2-MB", f"Page 380 | 10040 | mssEC 18 (obj 10074, pointer 10040; printed page 374), 11 July 1865 Washington ('Richd O Brien, Wash July 11 1865'; entry 0 of the leaf), signed Thos T Eckert (addressee not decoded): your letter of [4 July] received; [the Chamberlain, Isaacs and Company] telegraph is [important]; where do they live; what is the date of [the] telegraph to them; answer in [cipher] (MS65-R2; row 10040/0; {HOLDER}; reading thin, control mixed)",
+  ["note: MS65-R2: No. 2 (whole-entry vocabulary share No.1 / No.2 / No.9 = .42/.52/.23; No. 1 reads 'Drove in our pickets ... Cut off', no clause). Step-0: a 0.455 (10/22), shuffle p95 0.227, (c) 8 words: not a hit (below 0.5). Day-agreement: decoded day 11 = header day; 10 of 200 meaning-shuffled No. 2 copies agree (5%), shuffled No. 1 0 of 200. Coherence control does NOT pass: No. 2 -7.451 vs No. 1 -7.349, shuffled No. 2 -6.455/-7.680/-7.450 (a shuffled copy scores higher), so the clause is held on sense and the day check only. M for [4 July], [Important], [Cipher] and the (?) addressee. Not located in print: OR I/49 pt 2 (IA warofrebellion492unit) has Chamberlain at four lines (a captain, a city-court judge, two index entries; none about a July 1865 telegraph) and no 'Isaacs'; holder CISOSEARCHALL 'Chamberlain Isaacs and company July 1865' 0 hits (the page itself writes 'Chamber lain', so the wording is not control-shaped). Eckert (the signer) appears in the volume only at the index line and one distribution line."]),
+}
+blocks = {}; cur = None
+for ln in (HERE/"ms65_r2_entries.txt").read_text(encoding="utf-8").splitlines():
+    m = re.match(r"### (Z\d+) \|", ln)
+    if m: cur = m.group(1); blocks[cur] = []; continue
+    if cur and ln.strip(): blocks[cur].append(ln)
+p = HERE.parent/"ciphertext-no2.txt"; txt = p.read_text(encoding="utf-8")
+add = [f"### {nid} | {desc}\n" + "\n".join(blocks[k] + notes) + "\n" for k, (nid, desc, notes) in MAP.items() if f"### {nid} |" not in txt]
+if add and "--dry" not in sys.argv: p.write_text(txt.rstrip("\n") + "\n\n" + "\n".join(add), encoding="utf-8")
+print(("would add " if "--dry" in sys.argv else "added ") + str(len(add)))
