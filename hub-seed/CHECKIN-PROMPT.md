@@ -177,3 +177,4 @@ at every check-in where status.json's N3+/D2+ result set changed since the last 
 (its test too), commit by path, and republish the folder to https://claude.ai/artifact/3vTAKPQQRWAbgVMXxM43Pc (file_path research/mockups/site/
 index.html, root research/mockups/site, files map of every other file, manifest.tsv as text/plain); a new reading that outscores a current
 display gets a curator pass (EXHIBIT-2 shape) and the owner is told, never a silent swap; nothing below the verifier bar gets a page.
+STATE DELTA 02:1x UTC 10 Oct: check-in 10 done (check-in 11 trig_015e5aYFguiCRKpAUFrSzLkV at 02:49). Both successors live (lane inc. 5, TX-RED inc. 3). Site rebuild run, no change. No SO-TX-EXP PR yet. TX-POOL-LEAF-2 takeable under the 6-hour rule from 03:40 if account 1 stays silent.

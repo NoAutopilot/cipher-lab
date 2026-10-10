@@ -7916,6 +7916,18 @@ TX programme table 01:2x UTC 10 Oct: slot 1 orchestrator | slot 2 lane inc. 4 se
 | slot 3 TX-RED inc. 2 session_019mC2iYWnDXZQipquND2vZE 24.3, 631k, pass 14 at 01:58 then hand-over; open F47-F49, F53-F67 | slots 4-10:
 SCAN103 done, RE103 stopped, SCORERFIX done, CA-S2 done, WIT-ANCHOR done, WIT-GROEN live; TX-POOL-LEAF-2 (account 1) overdue | eval looks 0;
 S2 look 1 (record stands under the fixed scorer).
+Check-in 10 (02:0x UTC 10 Oct by date -u, clock 02:08-02:1x; orchestrator (account-4) session_012sGNgiddCpz4QUhQsMyoPU, 70.1 at 02:08, context 521k):
+five_hour allowed; seven_day allowed_warning (continuing). Successions done from this session per the lineage-depth rule: lane inc. 5
+session_01ERAcUeCn1HuAUASaqBTzcf (claim 02:07, send_later confirmed, check-in 02:44; inc. 4 ledgered 22.28 D, archived, its hourly routine
+deleted) and TX-RED inc. 3 session_01X3CDfBTKgm75BMx43r7AWj (claim 02:05, passes from 15, findings from F70; inc. 2 ledgered 28.33 D, archived).
+F65 closed (eval-eligibility line in TX-PROGRAM's collation rule). Site: standing rebuild duty run (status.json changed 01:42): build_site.py
++ test ok, 177 pages, 0 file changes (the 01:42 audits added nothing at N3+/D2+), no republish needed; artifact
+https://claude.ai/artifact/3vTAKPQQRWAbgVMXxM43Pc unchanged. No [SO-TX-EXP-*] PR yet (open PRs: 69, 70 only). TX-POOL-LEAF-2 (account 1)
+claimed 21:40, 4h28m, flagged three times, no answer; the six-hour stale rule allows anyone to take it from 03:40. ledger_check line 1115
+outcome B (another lane's). Check-in 11 trig_015e5aYFguiCRKpAUFrSzLkV at 02:49 UTC.
+TX programme table 02:0x UTC 10 Oct: slot 1 orchestrator | slot 2 lane inc. 5 session_01ERAcUeCn1HuAUASaqBTzcf (depth 6) | slot 3 TX-RED inc. 3
+session_01X3CDfBTKgm75BMx43r7AWj, pass 15 due; open F68, F69 | slots 4-10: refilling from runnable rows (verifier pass on the closing-stretch
+flags vs Groen; ORACLE-LOCATION-1 after L74) | eval looks 0; S2 look 1 (record 0.150/0.296 stands; CA-S2 SER 0.134/0.288).
 
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
