@@ -1,0 +1,20 @@
+{
+ "files": [
+  {
+   "file": "r1172_p1_decipherment_block.jpg",
+   "source": "DECODE record 1172 (de-crypt.org), full-size image IMG_R1172_I5878_P1.png (1114x1520, sha1 11442cec6e3e..., same as BNE-DECODE 9 Oct 2026 table); = BNE MSS/20211/123 f.1r",
+   "region_xywh_in_source": [
+    100,
+    1120,
+    1014,
+    392
+   ],
+   "content": "lower cursive block, 15-line period decipherment of the cipher block",
+   "format": "JPEG q92",
+   "bytes": 148035,
+   "sha1": "44aaddb82a09aec6a727d35795db3aa5ce37a491",
+   "fetched": "10 Oct 2026 09:23 UTC, one DECODE browser login (FAM-BNEDEC)",
+   "line_crops": "dec_lines/ (tools/iiif_lines.py --centres, see dec_lines/manifest.json)"
+  }
+ ]
+}
