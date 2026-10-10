@@ -14123,3 +14123,135 @@ Corrections (a verifier does not edit ciphertext-no9.txt or reading-no9.md):
 Requests: hdl.huntington.org 12 (10 CISOSEARCHALL, 2 IIIF 2400 px; all 200); archive.org 2 djvu (OR II/6, Welles vol. I) + 2 metadata (one 'not found' for a
 guessed OR III/4 id); be-api.us.archive.org 16 (all answered); www.googleapis.com/books 4 (all 200). Queued: WORK-QUEUE `AUD2-LEDGERN2-5` (O9-DC, O9-DE, O9-DH,
 O9-DI), SO-ECKERT-O9DC, SO-ECKERT-O9DE, SO-ECKERT-O9DH, SO-ECKERT-O9DI. For LANE LEDGER-N2 (account 1)
+
+## AUDIT (FV-N2d)
+
+Verifier FV-N2d (account 1, for LANE LEDGER-N2), 10 Oct 2026, 01:59-02:1x UTC by `date -u`; a separate session from the reader N2R-3, not protecting its
+conclusions. Scope: first audits of **N2-HB** (9839/0), **N2-HC** (9807/1), **N2-HF** (9813/0) in `ciphertext-no2.txt` (War Department Cipher No. 2,
+Washington sent ledger mssEC 18 = Huntington object 10074). Nothing decoded beyond key look-ups in key-no2.md. Key source for all three: `period`.
+`decode_no2.py --check` -> "reading-no2.md is current" (exit 0). No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Intake gate (01:59):
+`eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Prior work (`tools/prior_work.py eckert-1864 --item-spec
+'item_id=N2-Hx;ptr=...;date=...' --step-type audit --offline`, one per entry): verdict step LEAD each, every LEAD this lane's own filing (N2R-3); the run's
+ad-hoc prior-work.tsv rows were reverted. Scripts: `ms18/fv_n2d_hdl.py` (+ `.out`), `ms18/fv_n2d_beapi.py` (+ `.out`), `ms18/fv_n2d_g3.py` (+ `.out`); OR
+djvu texts to scratch. Book: No. 2 stands for all three by sense under the key rows (N2R-3's clause test), and for N2-HB and N2-HC by the print below.
+
+### 0. What the reader missed
+- **N2-HC is in print, twice.** OR I/37 pt 2 p.573 (IA `warofrebellion372unit`, a volume N2R-3 lists as searched): "Washington, August 2, 1864 -- 2.30 p. m.
+  Lieutenant-General Grant, City Point, Va.: Grover's command of the Nineteenth Corps landed last night, and has encamped on the road toward Rockville. A few
+  companies of Torbert's cavalry are arriving. The transportation of troops in small steamers is slow work, and I presume that several days will elapse before
+  Sheridan's division is all landed. As it now stands, Wright commands the Sixth Corps, Emory the Nineteenth, Crook the troops of the Department of West
+  Virginia, and Averell and Duffie the cavalry, Hunter being in general command of the whole. If Sheridan is not placed in general command, I think he should
+  take all the cavalry, but not the Sixth Corps. To make that and the cavalry a single and separate command will, in my opinion, be a very bad arrangement. If
+  Sheridan is placed in general command I presume Hunter will again ask to be relieved. Whatever you decide upon I shall endeavor to have done. H. W. HALLECK".
+  Also Papers of U. S. Grant vol. 11 (IA `papersofulyssess0011gran`, be-api: "Gen. Henry W. Halleck telegraphed to USG. 'Grover's command of 19th corps landed
+  last night and has encamped ...'"; page not read). The entry does **not** break off: its last four lines are at the head of the next leaf, **9808** ("in my
+  opinion be a very bad arrangement ---- If Negus is placed in Shark Comd I presume Meriden will again ask tobe relieved ---- what ever you decide upon I shall
+  endeavor to have done lamb meridiens snake Fredk"), which matches the print. The pencil "230 Pm" over the 9807 header line is this entry's sent time
+  (= the print's 2.30 p.m. and the cipher time word Henrietta = 2.30 PM, both C); N2-FF's header puts it in N2-FF's tail, which is wrong.
+- **N2-HB is in print** in Papers of U. S. Grant vol. 12 (IA `papersofulyssess0012gran`, be-api snippets), the editors' note to USG to Meigs of 12 Sept 1864:
+  "On Sept. 12, 8:30 P.M., Meigs telegraphed to USG. 'Col Bingham & the other Inspectors have all been ordered ... inspection to detach Col Biggs now would too
+  much cripple us here -- Col Carr was nominated for promotion ... troops at Fort Smith & above that point. They ask for wagon transportation from Fort
+  Leavenworth for twelve ... They report it impracticable to supply Fort Smith & Gibson by the River It seems to me nearly impracticable to supply them by wagon
+  from Fort Leavenworth --' ALS (telegram sent), DNA, RG 107, Telegrams ..." (page not read: the IA copy is lending-only and be-api gives no page). It settles
+  sender (Meigs, the Quartermaster General: C), "alben" = all been, "Saco Hawkins = worth" = Fort Leavenworth, and the close of the telegram at
+  "Leavenworth". Grant's request it answers is dated 12 Sept, no hour (OR I/41 pt 3 p.157, Grant to Meigs), not "11 Sept 10.30 a.m." as N2R-3 wrote.
+  The ledger's plain "8 pm" is the print's 8:30 P.M. (the ledger hour, half an hour off).
+- **N2-HB tail:** after the signature "welch Buggy" (Signature, Quartermaster General: H) the ledger continues "Quantrell was owled wherry at Indian = apple = is"
+  (= Quantrell was arrested today at Indianapolis; Owl, Wherry H). It is not in Meigs's printed text; it is an addition after the signature (an operator's
+  line or a second item), its source and truth untested: M, outside the telegram.
+- **N2-HF:** the decoder's "[Acton [sic, ? Action]]'s of truce" is its own slip on the plain word "flags" (key-no2.md row Flag = Acton): the leaf reads "the
+  flags of truce boats", plain. "mill" on the leaf is "will" (plain slip, I); "wilby waymom/wayrom" = will be room (plain split, I).
+
+### 1. Duplicates and image (own leaves, IIIF 2400 px, crops via `tools/iiif_lines.py --image ... --ink 200 --region 0,0,2399,2800`, crops to scratch)
+- **Duplicate diff:** the on-disk page text of mssEC 18, mssEC 19 and the Fort Monroe pages was grepped for the distinctive words ("Bingham", "Rutherford",
+  "Gilbert or Graham", "Torberts", "Rocke ville", "Leavenworth", "Loomis", "Bunyan"): own pages only, or other telegrams using the same key words. **No
+  duplicate.**
+- **N2-HB (9839, p.173):** crops of lines 14-24 (N2R-3 checked 1-13): match the transcription word for word ("saco Leavenworth for Hoffman Snyder tons per
+  month yacht", "trifle enormous tulip", "season saco Smith & Gibson blithe wafer stick", "saco Hawkins=worth welch / Buggy Quantrell was owled wherry at
+  Indian=apple= is"). **N2-HC (9807 p.141 and 9808 p.142):** header "Beckwith (No 2) Wash. D. C. Aug 2. 1864 / City Pt" with pencil "230 Pm" above;
+  "slow ~~withdraw~~ Translate &" (Translate = Work, H; the print's "slow work": C), "I presume" plain; 9808 lines 1-4 as quoted above. **N2-HF (9813,
+  p.147):** all 14 lines: match ("Anna for Palermo In galls vermont", "Loomis / Seward squash", "Norris zebra summer", "the flags of / truce boats & the boats
+  about Bunyan mill of / Course be used in this work welch Buggy crabs").
+
+### 2. Holder's full text, siblings and print
+**Huntington CONTENTdm** (p16003coll11, CISOSEARCHALL, all pointers; one take 02:03-02:0x, 17 requests: 13 queries, 4 IIIF): 'Bingham inspection Little Rock',
+'Leavenworth tons', 'Biggs Bingham', 'Quantrell Indianapolis' -> 9839 only; 'Rutherford inspection' 9839 + 4859 (1866, other); 'Fort Smith Gibson wagon' 0;
+'Grover Rockville', 'single separate' -> 9807 only; 'Hunter relieved Sheridan' 0; 'capacity infantry' 7303, 3265; 'flag truce boats Monroe' 7202, 4359;
+'transports capacity' 7670, 8511; 'steamboats Baltimore Philadelphia' 0 -- every other hit read from its returned transcription: other telegrams. Positive
+controls: the own pages hit. No clear copy of any of the three at another pointer; no received copy of Grant's or Ingalls's answers.
+
+**Print** (archive.org djvu texts to scratch: OR I/37 pt 2, I/40 pt 3, I/41 pt 3, I/42 pt 2, I/43 pt 1 (`warofrebellion431unit_0`), ser. III vol. 4
+(`warofrebellionco0004genf`); letters-only phrase grep and the dated headings 5-7 Aug and 11-14 Sept read; Grant Papers vols. 11-12 by be-api with a positive
+control each; Google Books (keyed, country=US) and be-api over all IA for N2-HF phrases with N2-HC's printed phrase as control (found: OR, Pond 1883)):
+- **N2-HC -> IN PRINT** OR I/37 pt 2 p.573 and Grant Papers vol. 11 (above).
+- **N2-HB -> IN PRINT** Grant Papers vol. 12, note (above); not in OR I/41 pt 3, I/42 pt 2 or III/4 ('Bingham', 'cripple us', 'special tour', 'tons per month' 0).
+- **N2-HF -> not located.** OR I/42 pt 2: Meigs to Ingalls 6 Aug 1864 (near p.66: "General Rucker says do not send the ambulances until after the 300 wagons
+  ... Georgianna, Kennebec, Balloon, and Charleston leave Baltimore this morning") is a different telegram the same day; **Ingalls to Meigs, City Point 7 Aug
+  noon, received 9 p.m.** (near pp.76-77): "I sent lists of transports, with statement of capacity for carrying troops, by mail this morning ... enough for a
+  corps of 25,000 men" -- the answer to N2-HF's capacity figures. I/37 pt 2: Meigs to Ingalls 1 Aug 12 noon pp.559-560 (= N2-FF, already C). I/40 pt 3, I/43 pt
+  1, III/4: 0 for 'flag of truce boats', 'capacity of 19,000', 'steamboats in addition', '30,000 men'. Grant Papers vol. 11 be-api 0 ('flag of truce boats',
+  Rucker '19,000', 'truce boats' Monroe Meigs). Google Books and be-api all-IA phrase queries: 0 relevant (Google Books' totals of 300+ are unquoted noise;
+  snippets checked).
+- Not searched: ORN, NARA RG 92 and RG 107 (Telegrams Sent by the Quartermaster General, the probable clear copy), the Meigs papers (LC), the Ingalls papers,
+  the Quartermaster General's 1865 report, the press of 6-10 Aug 1864, HathiTrust, JSTOR.
+
+### 3. Grades and readings (reading-no2.md as of this audit; corrected readings for the FIX job, not edited here)
+- **N2-HB:** decoder H 53, C 2, I 5; against the Grant Papers text the telegram's clauses are C as far as the snippets reach (Bingham ... ordered;
+  detach Biggs ... cripple us; Carr ... promotion; Fort Smith & above that point; wagon transportation from Fort Leavenworth for twelve [hundred: Hoffman
+  Snyder = 1200, H/C]; Fort Smith & Gibson by the River; by wagon from Fort Leavenworth). Slips: "Saco Smith" twice is plain Fort Smith, not the decoder's
+  [Fort] [100] (Smith = 100 is a numeral row; I); "Hawkins = worth" = Leavenworth (C by the print; the decoder's "Hawkinsworth"); the after-signature
+  Quantrell sentence M.
+- **N2-HC:** decoder H 40; every clause C against OR I/37 pt 2 p.573 (Watkins = Right for "Wright", Augusta = Crook, Walker Bermuda = West Virginia, lafitte =
+  Averell, meriden = Hunter, Negus Queen = Sheridan's division, Translate = work); "I presume" plain (decoder's "Hotly [?]" a slip); "N pauline" = encamped
+  (N + Camp, C by the print); "pick", "pickerel" are fillers the print does not carry; the 9808 continuation unread by the decoder (plain except Negus, Shark,
+  Meriden: H, C by print).
+- **N2-HF:** code groups Anna (2 AM, the sent-hour word; no hour in the header, M as time), Palermo = Brig. General, vermont = Quarter Master, whimpered =
+  Telegraphed, Baron Grammar Girdle = Baltimore Philadelphia New York, waltz = Steam, swindle = Move, Gilbert or Graham Dwight summer = 12 or 13,000 men,
+  Bridle = City Point, superb = Movement, waltzers = Steamers, Shark = General, Loomis Seward squash = 19,000 Infantry, Norris zebra summer = 30,000 men,
+  stomach supper = Necessary Movement, Bunyan = Monroe, welch Buggy = Signature, Quartermaster General: **H 30 of 31** (crabs unread, M); "flags" plain
+  (decoder slip); Rucker, Ingalls plain. Reading: "[2 AM?] For Brig. Gen. Ingalls, Quartermaster. I have telegraphed to secure in Baltimore, Philadelphia and
+  New York steamboats in addition to what are now employed to move 12 or 13,000 men. We had here waiting orders and sent them all to City Point when the
+  present movement began steamers which were estimated by General Rucker to have a capacity of 19,000 infantry. When these now ordered arrive there will be
+  room for over 30,000 men. This is to be kept in readiness for any necessary movement. In case of urgent necessity the flag of truce boats and the boats about
+  [Fort] Monroe will of course be used in this work. [Signed] Quartermaster General. [crabs]".
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | class | key | depth | % code groups H/C/S | basis | safe sentence |
+|---|---|---|---|---|---|---|
+| N2-HC Halleck to Grant, 2 Aug 1864 2.30 PM | **N1** | period | D3 | 100 (40 H, C against print) | plaintext printed OR I/37 pt 2 p.573 (1891) and Grant Papers vol. 11 (note); our reading is an independent re-decipherment of the ledger copy | "The War Department's cipher copy of Halleck's telegram of 2 Aug 1864 2.30 p.m. to Grant (Grover's troops landed; Sheridan should not take the Sixth Corps as a separate command), read with Cipher No. 2, agrees with the text printed in the Official Records, ser. I vol. 37 pt 2 p.573." |
+| N2-HB Meigs to Grant, 12 Sept 1864 8 PM | **N1** | period | D3 | 96 (decoder H 53 + C 2 of 57 code groups after the Fort Smith slips; Quantrell sentence M outside the telegram) | plaintext printed from the sent telegram (DNA RG 107) in The Papers of U. S. Grant vol. 12, editors' note to USG to Meigs 12 Sept 1864; page not read | "The War Department's cipher copy of Meigs's telegram of 12 Sept 1864 to Grant (Bingham to inspect the Little Rock route; Fort Smith and Gibson hard to supply), read with Cipher No. 2, agrees with the text the Papers of U. S. Grant vol. 12 prints from the sent copy in the National Archives." |
+| N2-HF Quartermaster General to Ingalls, 6 Aug 1864 | **N3** | period | D3 | 96.8 (30 H of 31) | not located: OR I/37 pt 2, I/40 pt 3, I/42 pt 2 (5-7 Aug headings), I/43 pt 1, III/4, Grant Papers vol. 11 (be-api), Google Books and IA phrases, holder full text; Ingalls's 7 Aug answer printed (I/42 pt 2 near pp.76-77), this telegram not | "Read with War Department Cipher No. 2 (period key): on 6 Aug 1864 the Quartermaster General told Brig. Gen. Ingalls that he had telegraphed to Baltimore, Philadelphia and New York for more steamboats, enough with those already sent to City Point to give room for over 30,000 men, to be kept ready for any movement; not located in print (searched 10 Oct 2026)." |
+
+Not N4 for N2-HF: ORN, NARA RG 92/RG 107, the Meigs and Ingalls papers, the Quartermaster General's 1865 report, the Aug 1864 press, HathiTrust and JSTOR
+unsearched. Unsafe: "first", "new", "unpublished", "never printed"; anything beyond N1 for N2-HB and N2-HC; "Quantrill was arrested at Indianapolis" (an
+untested line after the signature); "Meigs signed N2-HF" as H (the signer is the Quartermaster General by key; Meigs is inference from the office, I).
+Depth checks (D3: >=80% code groups H/C/S plus an external non-statistical check): N2-HC -- the print (OR I/37 pt 2 p.573), clause "Henrietta Brooks for chart"
+= 2.30 PM, 2, for Lieut. Gen. Grant matching the printed heading. N2-HB -- the Grant Papers print from DNA RG 107, clause "Saco Leavenworth for Hoffman Snyder
+tons per month" = Fort Leavenworth for 1,200 tons per month ("twelve" in print). N2-HF -- code clause "to swindle Gilbert or Graham Dwight summer" = to move
+12 or 13,000 men; external: Ingalls's reply of 7 Aug noon (OR I/42 pt 2 near pp.76-77, lists of transports with their troop capacity). Depth sentences (my
+own): N2-HC -- "Halleck told Grant the Valley troops were landing slowly and advised against making Sheridan's cavalry and the Sixth Corps a separate
+command." N2-HB -- "Meigs told Grant he would send Bingham to inspect the Little Rock supply line and warned that Fort Smith and Gibson could hardly be
+supplied by river or wagon." N2-HF -- "Meigs's office gathered more steamboats from three ports so that transports for over 30,000 men would be ready for
+any movement from City Point."
+
+### 5. Postmortem and fixes for a FIX job (not applied here)
+Failure: N2R-3 listed OR I/37 pt 2 as searched yet missed N2-HC on p.573 (headed "2.30 p.m.", the time word it had decoded); its be-api zeros on Grant Papers vol.
+12 used long AND queries ('Bingham ... Little Rock') where two- and three-word phrases find N2-HB; it called N2-HC broken off without opening the next leaf.
+Corrections (a verifier does not edit ciphertext-no2.txt or reading-no2.md):
+- N2-HC header/note: "not located" -> "IN PRINT: OR I/37 pt 2 p.573 (IA warofrebellion372unit), Halleck to Grant, Washington 2 Aug 1864 2.30 p.m., word for
+  word; also Grant Papers vol. 11 (note); C against the print"; add "signed H. W. Halleck"; "breaks off at 'will'" -> "continues on 9808 lines 1-4 (in my
+  opinion be a very bad arrangement ... endeavor to have done lamb meridiens snake Fredk)": add those four lines to the entry; ledger pencil "230 Pm" is this
+  entry's (sent time); reading: "[Hotly [?]]" -> plain "presume"; "N [Camp]" = encamped (C). NOTES "## N2R-3" per-row line for 9807/1 likewise.
+- N2-FF header: drop "the tail adds '230 Pm'" (the pencil belongs to N2-HC's header).
+- N2-HB header/note: "not located" -> "IN PRINT: Papers of U. S. Grant vol. 12, note to USG to Meigs 12 Sept 1864 (from the sent telegram, DNA RG 107), 'On
+  Sept. 12, 8:30 P.M., Meigs telegraphed to USG ...', page not read"; "signed (decoded) the Quartermaster General (M)" -> "signed M. C. Meigs, Quartermaster
+  General (Buggy H; C by the print)"; "Fort Hawkinsworth" -> "Fort Leavenworth (Hawkins = worth, C by print)"; reading: "[Fort] [100]" -> plain "Fort Smith"
+  (both places; per-entry plain-word exception, no key edit); note: Grant's request is OR I/41 pt 3 p.157, dated 12 Sept (no hour), not 11 Sept 10.30 a.m.; the
+  Quantrell line after the signature is outside the printed telegram, M.
+- N2-HF: reading "[Acton [sic, ? Action]]'s of truce" -> plain "flags of truce" (per-entry exception); note: Ingalls's 7 Aug noon reply (OR I/42 pt 2 near
+  pp.76-77) and Meigs's other 6 Aug telegram (near p.66) as context; "leaf not eye-checked" -> "leaf eye-checked on crops (FV-N2d), matches".
+- KEY lane: the decoder again applies key rows to plain words (Flag, Smith, Hotly for presume): at least eight entries of this shape across FV-N2a..d.
+
+Requests: hdl.huntington.org 17 (13 CISOSEARCHALL, 4 IIIF 2400 px; all 200); archive.org 5 djvu (all 200); be-api.us.archive.org 21 (all answered);
+www.googleapis.com/books 7 (all 200). Queued: WORK-QUEUE `AUD2-LEDGERN2-4` (N2-HF), SO-ECKERT-N2-HF. No status.json/SO row for N2-HB, N2-HC (N1). For LANE
+LEDGER-N2 (account 1).

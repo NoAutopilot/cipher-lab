@@ -4884,3 +4884,28 @@ Read so far: 24 of 26 cipher tokens H (92%) over the four entries (DC 7/7, DE 6/
 - [x] image-check: leaves 9673 and 9684 at 2400 px.
 - [n/a] retry: no failed request.
 Verdict: keep going: 2 internal gaps; cheapest next: the FIX job for s.5 notes, ~$1.0
+
+## FV-N2d (10 Oct 2026, account 1, for LANE LEDGER-N2)
+First verifier FV-N2d (separate from the reader N2R-3), 01:59-02:2x UTC by `date -u`; AUDIT.md "## AUDIT (FV-N2d)". **N2-HC: N1** -- printed OR I/37 pt 2 p.573
+(Halleck to Grant, 2 Aug 1864 2.30 p.m., word for word) and Grant Papers vol. 11; the entry continues on leaf 9808 lines 1-4 (not broken off); the pencil
+"230 Pm" is its sent time, not N2-FF's. **N2-HB: N1** -- printed from the sent telegram (DNA RG 107) in Papers of U. S. Grant vol. 12, note to USG to Meigs
+12 Sept 1864 ("On Sept. 12, 8:30 P.M., Meigs telegraphed ..."; page not read); "Hawkins = worth" = Leavenworth; the Quantrell line after the signature is
+outside the printed text (M). **N2-HF: N3 D3** (30 H of 31; "flags" plain, decoder slip); Ingalls's 7 Aug noon reply on transport capacity printed OR I/42 pt 2
+near pp.76-77. All three leaves eye-checked on crops. N2R-3's "not located" was wrong for 2 of 3. Fixes for a FIX job in AUDIT s.5. Queued WORK-QUEUE
+AUD2-LEDGERN2-4 (N2-HF), SO-ECKERT-N2-HF, status.json row for N2-HF. For LANE LEDGER-N2 (account 1).
+
+## Remaining gaps (FV-N2d, 10 Oct 2026)
+Read so far: 3 of 3 entries audited; N2-HB and N2-HC N1 (in print), N2-HF N3 D3, one audit.
+- N2-HF second audit and the unsearched families (NARA RG 92/RG 107, Meigs/Ingalls papers, QMG 1865 report, ORN, the Aug 1864 press, HathiTrust, JSTOR) - blocker: waiting-on the answer of the VERIFY lane to WORK-QUEUE.tsv row AUD2-LEDGERN2-4; a second audit is a separate session (rule 10)
+- AUDIT (FV-N2d) s.5 corrections to ciphertext-no2.txt / reading-no2.md (N2-HB and N2-HC in print, N2-HC 9808 continuation, N2-FF pencil time, Fort Smith/flags plain) - blocker: not-attempted; a verifier does not edit the reading; next: a FIX job applies s.5 and re-runs decode_no2.py --write/--check, ~$1
+- N2-HB page number in Grant Papers vol. 12 - blocker: not-attempted; the IA copy is lending-only; next: a LOCAL-QUEUE row for the owner's runner (Grant Papers vol. 12, search "cripple us here"), ~$0.1
+
+## Escalation (FV-N2d, 10 Oct 2026)
+- [x] siblings: same-leaf rows 9807/0 (N2-FF), 9808 continuation and 9813/1 (E327) read; Ingalls's printed replies tied in.
+- [x] clear-pages: all-pointer CISOSEARCHALL on 13 queries with positive controls; disk grep of mssEC 18/19 and Fort Monroe pages; no clear copy.
+- [x] known-keys: every code group checked in key-no2.md (s.3 of the audit).
+- [x] print: OR I/37 pt 2, I/40 pt 3, I/41 pt 3, I/42 pt 2, I/43 pt 1, III/4; Grant Papers vols. 11-12 by be-api; Google Books and IA phrases; N2-HB and N2-HC found.
+- [n/a] key-rebuild: no key row edited; fixes listed in AUDIT s.5.
+- [x] image-check: all three leaves (and 9808) eye-checked on crops at 2400 px.
+- [x] retry: none needed.
+Verdict: keep going: 2 internal gaps; cheapest next: the FIX job for AUDIT (FV-N2d) s.5, ~$1
