@@ -6752,3 +6752,13 @@ Entries (10): E550 E543 E571 E465 E562 E542 E548 E166 E215 E250.
 - Checked, nothing to add: FV-L15m filed all seven N1, so `status.json` and `SECOND-OPINIONS-QUEUE.tsv` carry no row for E542 E548 E550 E562 E465 E543 E571 (grep 0/0), none stale. E571's Grant Papers vol. 14 page is still unresolved.
 
 Remaining gaps: none opened by this job.
+
+## FV-L16d (10 Oct 2026, account 1, for LANE LEDGER-16)
+
+First audit of E441 E472 E442 E473 E469 E466 (Fort Monroe 1864): AUDIT.md "## AUDIT (FV-L16d)". All six N3 (E472 = received copy of E90, class as E90);
+depth D3 for E441 E472 E442 E473, D2 for E469 E466; fixes for the next FIX job in its s.5.
+- One-line suggestion (not done here, brief does not name it): file **row 5679/1** (Fort Monroe 20 May 1864 6 PM, Biggs to the Quartermaster General,
+  "Laura harsh for Belcher unity your dispatch received ... Youth Big Chief Vinton"): the cipher copy of OR I/36 pt 3 pp.29-30 and holder 4642, N1 once
+  filed; the NOTES table that lists 5679/0 as "filed E472" has no line for 5679/1.
+- One-line suggestion: OR I/36 pt 3 (on disk) prints the Eckert-Sheldon-O'Brien line-building telegrams of 27-31 May 1864 (pp.262, 281-282, 321-322,
+  417, 424); the 1864 Fort Monroe rows of 26 May-12 Jun not yet audited should be diffed against it before any reading (E90's audit searched pt 2 only).

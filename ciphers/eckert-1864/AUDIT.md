@@ -18923,3 +18923,181 @@ washington#1` (lesson 8), "polking" = [Command]ing, "off I sir" = officer, "Corn
 Requests: hdl.huntington.org 40 (control 9678 once, 16 CISOSEARCHALL, 17 dmGetItemInfo, 6 IIIF pages; 2 dropped connections retried once after 25 s;
 one take 15:0x UTC); be-api.us.archive.org 19 (6 x 502, 5 retried once), 1.8 s apart; googleapis.com 26, 1.6 s apart; archive.org 0.
 For LANE LEDGER-16 (account 1).
+
+## AUDIT (FV-L16d)
+
+Verifier FV-L16d (account 1, for LANE LEDGER-16), 10 Oct 2026, 14:48-15:2x UTC by `date -u`; a separate session from the readers FM-R9, FM-S2,
+FM-S3 and FM-F1 and from CLEAR-SWEEP, not protecting their conclusions. Scope: **E441** (FM-F1 from FM-R9), **E472** (FM-S3), **E442** (FM-F1 from
+FM-R9), **E473** (FM-S3), **E469** (FM-F1 from FM-S2), **E466** (FM-F1 from FM-S2); ciphertext.txt, War Department Cipher No. 1, Fort Monroe ledger
+mssEC 25 = Huntington object 5952, April-May 1864 (Butler / Bermuda Hundred). Nothing decoded beyond key look-ups in key.md. Key source for all six:
+`period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Intake gate: `eckert-1864: partial (line 3) -- edition/page or full-text-search
+citation found within 6 lines`. Prior work (`tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<pointer>;date=..;sender=..;
+recipient=..' --step-type audit --offline`): exit 4 for each; the three own-work LEADs (261bc7, 277ec2, ddc30c) are target-level live claims of this lane's
+other workers, not these six rows; the E441 edition LEAD (OR I/36 pt 3 window "argo twenty nine geo s dodge captain and assistant quartermaster") is Dodge's
+27 May transport return on p.262, a different telegram, but the same page prints E442's antecedent (s.2); UNCHECKED-NET = OR parts not on disk, none of
+them for Apr-May 1864 Virginia (I/33 and I/36 pts 1-3 are on disk). **Step 0 is a non-test on mssEC 25**: nothing below is classed from step 0. Scripts
+(all in `fortmonroe/`, outputs beside them): `fv_l16d_hdl.py` (+ `.out`: 17 CONTENTdm full-text queries across all pointers of p16003coll11, three fresh
+per entry, none of CLEAR-SWEEP's, plus the control 'Inspector difficulty Evidence Nashville' -> 9678; then pages 5699 5679 5707 5633 5720 5638 at
+2400 px to scratch), `fv_l16d_print.py` (+ `.out`: letters-only phrase grep over the 191 cached print-check volumes -- incl. OR I/33, I/36 pts 1-3,
+Butler Corr. IV-V, Plum vol. 2, J. E. O'Brien 1910 -- and KWIC for the rare names), `fv_l16d_gb.py` (+ `.out`: 8 Google Books API phrase queries, keyed,
+`country=US`, control '"Butler favors crossing at Yorktown"' hit three OR I/36 pt 3 scans), `fv_l16d_beapi.py` (+ `.out`: IA be-api whole-collection
+phrase queries, control '"Suwo Nada"' in OR I/46 pt 2).
+
+### 1. Duplicates, image
+- **Duplicate diff** (pointers 5699, 5679, 5707, 5633, 5720, 5638 and the subjects against every `###` header in ciphertext*.txt, and the mssEC 18/19
+  page JSONs on disk): **E472 = E90** (mssEC 19 p.73, pointer 8965, "Hannah Harrow for Pandora Biggs Animal unity Has Nabob Stomach the Bergen must we
+  shade him by the other line Star Walrus Belcher Pleasant"): Washington's sent copy of the telegram E472 records as received at Fort Monroe, word for word
+  (E472 "big" = Biggs, "othel" = other). One telegram, two IDs; E90 was first-audited N3 (weak) D3 (AUDIT "## AUDIT (LS4-V1a)", row "E90 QMG office to Col.
+  Biggs"); E472 takes the same class (s.4). The other five: no other header carries their text; their neighbours are siblings of the same
+  correspondence, not copies -- E319 (5695, Sheldon to Eckert 27 May: distances across the York at Yorktown, the answer to E441's width questions), E318
+  (5709, Eckert to Sheldon 28 May: the Gloucester route is best), E302 (5697), E214/E281/E320 (Eckert to Sheldon 27 May), E224 (5701), E242 (5682,
+  O'Brien 21 May: "Collings at ..., Homan ..."), the O'Brien 28 May rows on 5712/5713 ("I send Homan & Collings with ... relays"). mssEC 19 pp.79-82
+  (8971-8974, 26-29 May) carry no copy of E441 (Eckert's operator telegrams are not entered there).
+- **Not filed anywhere: row 5679/1** (the lower row of E472's page, "Fortress Monroe May 20/64 Maj Eckert Di Laura harsh for Belcher unity your dispatch
+  received zodiac Nabobs pontiac is at White House wants Vienna train ... Youth Big Chief Vinton"): the cipher copy of Biggs's 6 PM reply to E472/E90,
+  whose clear text is holder 4642 (mssEC 11 p.201) and **printed in OR ser. I vol. 36 pt 3 pp.29-30** ("Fort Monroe, Va., May 20, 1864--6 p. m. ...
+  Your dispatch received. General Sheridan's command is at the White House; wants pontoon train, rations and forage ... HERMAN BIGGS, Chief
+  Quartermaster"). An N1 row for a reader to file (one-line suggestion in NOTES); it also confirms "big" = Biggs (the signature "Youth Big Chief Vinton").
+- **Image eye check this session, every graded line** (page images at 2400 px, read at 1000 px overview and contrast-stretched strips; the ruled 7-column
+  grid gives `iiif_lines.py` too few bands, as FV-FM10a found): 5699 lower row (E441, header "Washn May 27 . 1864 Geo D Sheldon Ft Monroe" + 13 lines +
+  T. T. Eckert), 5679 row 0 (E472, header + 4 lines), 5707 row 0 (E442, header "Hd Qrs Genl Butler May 27 1864 Maj Eckert Di 11.30 PM" + 10 lines +
+  R OBrien), 5633 last row (E473, header + 3 lines + Sheldon), 5720 row 0 (E469, header + 4 lines + R OBrien), 5638 row 0 (E466, header + 4 lines +
+  Sheldon). **The transcription matches the image on all six**, including E441 "cable also how wide is Martha pony / it Hagar Sugar I dread necessity
+  for", E442 "at Bermuda landing wants blubber connected by cable", E473 "for princess Clark new Regime famish unity / Why publish Edgars name sugar Stop
+  your / Exchanges Zodiac this was against orders Knox", E469 "private minnie harsh pony zodiac I here / heavy & continuous firing about ghost miles /
+  from here in direction of battery patent" (the page has "pony"; the transcription's "poney" is a spelling slip, not a different word), E466 "I referred
+  your wrangle about Dunn to / Knox he returns it endorsed violet I".
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; hdl token 14:5x-15:0x UTC, control 9678 returned;
+CLEAR-SWEEP's 2-4 queries per entry not repeated): 'Operators Alexandria delayed' 0; 'suggestions adopt route' 1 (5699 own); 'wide Yorktown wire' 0;
+'Biggs Sheridan James' 1 (**4642**); 'Sheridan forage line' 1 (13704, an operator's 1865 complaint, other subject); 'Gillmore office cable' 0; 'repairer
+fine wire' 1 (5707 own); 'Jamestown island report duty' 1 (5707 own); 'New Regime' 3 (5633 own; **8711**; 13561); 'Regime Clark' 2 (5633 own, **8711**);
+'publish Edgar' 0; 'heavy continuous firing' 2 (5720 own; 13584 = Nashville, Dec 1864); 'firing Grant reached' 0; 'Bottoms Bridge firing' 1 (10400,
+an Army of the Potomac report of June 1864, other subject); 'Dunn endorsed' 1 (5638 own); 'know of none' 19 (KWIC read for Dunn/Butler/Knox/"word
+against": only 5638 own); 'Dunn settled' 1 (5638 own). KWIC read for every bold pointer:
+- **E472: 4642** is Biggs's clear reply (above), the context E90's audit already used; not E472's own words.
+- **E473: 8711** (Page 233, 1865, Ord forwarding Gordon at Norfolk): "will any thing be done with Clark and Brown of the new regime shall I give up such
+  type & materials ..." -- Clark of the New Regime, the Norfolk newspaper, a year later; context for "Captain Clark, New Regime, Norfolk", not a copy.
+  13561 (a New York message "To E H Hall office new Regime . Norfolk", Dec [1862?]) is context for the paper only.
+- E441, E442, E469, E466: **no clear copy at another pointer**.
+
+**Print** (OR ser. I vols. 33 and 36 pts 1-3 read in djvu text with pages from the running heads; Butler Corr. IV-V, Plum vol. 2, J. E. O'Brien 1910 on
+disk; Google Books and IA be-api as G3):
+- **E441: not printed.** OR I/36 pt 3 prints the correspondence round it: p.281 Sheldon to Butler, Fort Monroe 28 May ("We must run telegraph to reach
+  Grant. Two routes are in view; by the old road from Williamsburg direct to White House ... or across at Yorktown and up north side York River, crossing
+  the Mattapony to West Point ...") and Sheldon to Butler the same day ("Since sending my dispatch **General Halleck has given his opinion** that the north
+  side of York River is best route") -- the General-in-Chief's opinion E441 says Eckert will get before deciding; pp.281-282 Sheldon to Eckert, Carr's
+  view of the Gloucester-West Point line; p.262 Butler to Sheldon 28 May (route across the York at Gloucester Point to West Point); p.321 Caldwell to
+  Eckert, Army of the Potomac, 29 May: "**Your dispatch of 27th has been shown to General Grant**, who says [the] line need not be extended farther than
+  White House". Phrase grep "boat probably delayed", "the suggestions are good", "will adopt the route", "chance for poles", "necessity for use of cables",
+  "how wide is the river at Yorktown": 0 in all 191 volumes; "No. 14 wire" hits 20 volumes, none of them OR I/36; "answer quick" in I/36 pt 3 is
+  Eckert's p.262 order to O'Brien (above) and a Butler order of 5 June. Google Books
+  '"boat probably delayed"', '"dread necessity for use of cables"': no 1864 hit.
+- **E472 (= E90): not printed**; OR I/36 pt 3 pp.29-30 prints Biggs's answer (above) and p.30 his note to Shaffer the same day (Sheridan at White House,
+  rations and one day's forage sent to West Point). The E90 audit searched OR I/36 pt 2 only; pt 3 (20 May-12 Jun) is where the answer is. Phrase grep
+  "has Sheridan left the James", "forage him by the other line", "must we forage him": 0; "by the other line" hits OR I/43 pt 2 only (other telegram).
+- **E442: not printed.** OR I/36 pt 3 **p.262 prints its antecedent**: Eckert to R. O'Brien, Butler's Headquarters, Washington 27 May ("I want you to
+  prepare for work in direction of White House from Williamsburg without delay ... Confer with Sheldon as to plans and route to build upon. Answer
+  quick. You must use all the arbitraries in your cipher ..."), to which E442 is the 11.30 PM answer ("Yours received ... party will go to Williamsburg via
+  Jamestown island"); p.322 Sheldon to Eckert 29 May: "J. M. Palmer and party, **with Homan and Collins, arrived at Jamestown** last night". Plum vol. 2
+  names J. W. Collings as O'Brien's assistant with Butler and C. A. Homan at Fort Monroe. Phrase grep "one at Bermuda landing", "connected by cable", "one
+  mile of cable", "little fine wire", "Homan and Collings": 0; "via Jamestown Island" (Butler IV, OR I/36 pts 1-3, one each: the routing line of other
+  telegrams, e.g. Meigs and Barnard, Bermuda Hundred 23 May) and "construction party" hit other texts.
+- **E473: not printed.** Butler Corr. IV p.339 (an order printed there that an officer found in Norfolk without leave "have his name published ... three times
+  in the New Regime newspaper") and p.309 (index "New Regime, the, 309, 339") show the New Regime as the Norfolk paper under the department's control; OR I/33 (GO No. 31, Fort Monroe 16 Mar 1864)
+  names Capt. George P. Edgar, aide-de-camp -- a possible "Edgar", M. Phrase grep "why publish", "Edgar's name", "Stop your exchanges", "this was against
+  orders": 0 (the "New Regime" hits are the phrase "new regime(nts)" elsewhere, KWIC read). Google Books '"Stop your exchanges"' 0, '"New Regime" Edgar
+  Butler Clark' only modern noise.
+- **E469: not printed.** Phrase grep "heavy and continuous firing" hits OR I/32 pt 2, I/43 pts 1-2 (I/43: Cedar Creek and Harper's Ferry,
+  Sept-Oct 1864, KWIC read; I/32 pt 2 not read, Jan-Feb 1864 West); "it may be Grant", "Grant
+  has reached there" 0. Context: Lee to Welles, Farrar's Island 31 May 1.45 PM (OR I/36 pt 3 p.424 by running head): "Heard considerable cannonading for one
+  hour last evening and four hours this morning in the direction of Richmond" -- the evening of 30 May, so it matches E469 only if the row's own date
+  word (s.3) is a slip.
+- **E466: not printed.** Phrase grep "I know of none" hits other letters only (KWIC read); "do not believe a word against him", "appears settled",
+  "about Dunn" 0. Butler IV (May 1864) has a John M. Dunn, assessor at Norfolk; the reader's operator Dunn (E446, Cherrystone; holder 13561 "W A Dunn
+  Cherrystone") is the likelier: the identity stays M.
+- **Butler Corr. IV-V** (Butler a party in E473 and E466 and named in E441, E442): none of the six by phrase or name (KWIC for Dunn, Edgar, Biggs, New Regime above).
+- **IA be-api whole collection** (control "Suwo Nada" in OR I/46 pt 2 = hit): 10 queries, none locating any of the six: '"boat probably delayed"' 0;
+  '"forage him by the other line"' 0; '"Homan and Collings"' 0; '"No. 14 wire" Yorktown cable' (radio and engineering journals), '"chance for poles"'
+  (Polish politics), '"via Jamestown Island" cable "City Point" O'Brien' (OR routing lines of June 1864 telegrams), '"Edgar's name"' (Poe biographies,
+  fiction), '"heavy and continuous firing" O'Brien' (1900-1918 newspapers), '"do not believe a word against him"' (a 1950 review and its reprints):
+  KWIC read, all other texts; '"New Regime" Norfolk Clark 1864' answered 502, not retried.
+- **Grant Papers:** the brief's vols. 13-14 are 1865; for these 1864 rows only E469 names Grant, and vol. 10 (May 1864) was not searched page by page
+  (not on IA in full text; snippet search by Google Books found nothing for the E469 phrase).
+- **Unreachable / not searched:** NARA RG 107 (telegrams received), RG 92 (QMG letters), Butler Papers at LC beyond the printed Corr.; Chronicling
+  America for the New Regime (no press dispatch among the six; the paper's 1864 issues not searched); JSTOR.
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+Key collisions found by look-up in key.md (a plain word on the page that is also a code word) are **plain**, not H, and the readers' H counts include
+some of them. "Grade" counts code-word groups (time and punctuation words included, as the readers count them).
+- **E441:** "Martha pony" in "how wide is Martha pony / it Hagar" is **plain-phonetic "Mattapony"** (the clerk's split, as "pay monkey" = Pamunkey on 5679/1
+  and mssEC 19 p.82, "money tour" = monitor), not Martha = 7 PM and pony = 9; "it" = at: "how wide is [the] Mattapony at West Point?" -- the river
+  Sheldon's 28 May route crosses "to West Point" (OR I/36 pt 3 p.281). Sense **M** (one occurrence), but the reading's "{time: 7 PM} [9] it [West Point]"
+  is a misfire. Animal = Monroe, stomach = Left, banjo = Alexandria, pembroke = Cipher, indians = General-in-Chief, windpipe = River, haven = Yorktown,
+  female = 14, Vernon = Point, Hagar = West Point, zebra/zodiac = period, star/sugar = interrogation: H. **H 14 of 14** (reader 16, less Martha and pony).
+- **E472:** as E90: Hannah = 1.30 PM, harrow = 20, pandora = Colonel, animal = Monroe, unity = period, Nabob = Sheridan, stomach = Left, Bergen = James,
+  shade = Forage, star = interrogation, Walrus = signature, Belcher = QMG: **H 12 of 12**; "big" plain = Biggs (E90 "Biggs"); "pleasant" filler. **The
+  header is wrong on direction**: the row is headed "Washington May 20 . 1864 / Geo D Sheldon / Ft. Monroe" -- a telegram received at Fort Monroe from
+  the Quartermaster General's office for Lt. Col. Herman Biggs, chief quartermaster, not "Sheldon to the Quartermaster General"; the reading line
+  "for [Colonel] big [Monroe]" = for Colonel Biggs, Monroe.
+- **E442:** "Bermuda" (= White River, p.10) in "at Bermuda landing" is **plain**: the Bermuda (Hundred) landing; the reading's "[White River] landing" is a
+  misfire (the header's "[Bermuda]" is right). "homan & Collings" plain names (operators C. A. Homan and J. W. Collings, Plum vol. 2). Knox = Butler,
+  snake = Head Quarters, maxims = Gillmore, blubber = City Point x2, Hebrew = Williamsburg (C-supported: Eckert's p.262 order "from Williamsburg"),
+  zodiac/unity = period: H. **H 8 of 8** (reader 9, less Bermuda).
+- **E473:** "publish" (= 100, p.25) in "why publish Edgars name" is **plain** (the reading's "why [100] Edgars name" is a misfire; the header already says
+  publish). "new Regime" plain = the Norfolk newspaper The New Regime (Butler IV p.339; holder 8711 "Clark and Brown of the new regime"). Princess =
+  Captain, famish = Norfolk, unity/zodiac = period, sugar = interrogation, Knox = Butler (the closing word, the order's author): H. **H 6 of 6** (reader
+  7, less publish). The header's "[new regime, Edgar's name]" and "[publish]" can lose the brackets: read "for Captain Clark, New Regime, Norfolk: why
+  publish Edgar's name? Stop your exchanges. This was against orders. [Butler]". Edgar's identity M.
+- **E469:** "minnie harsh pony" = 7.30 PM, **29** (harsh 20 + pony 9: No. 1 writes the day as numeral words after the time word, as "Emily harsh plague"
+  = 26 May on mssEC 19 p.79), not "[20] poney" with an unread word; **the telegram is dated the 29th** while the ledger header says May 30 (the receiving
+  date, or a slip: M). Zodiac = period, ghost = 15, patent = Bridge, Jupiter = Grant: H. "battery [Bridge]" = a place "... Bridge" in the direction of the
+  firing; Bottom's Bridge on the Chickahominy is a guess (M). **H 7 of 7** (reader 6, plus pony).
+- **E466:** "Dunn" (= blind word, p.4) is plain, the name (the reader treated it so). Wrangle = Telegraph, Knox = Butler, violet/virgin = quotation: H.
+  **H 4 of 4.** Dunn's identity M.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E441 | **N3** | period | **D3** (H 14/14; external: OR I/36 pt 3 p.281 Sheldon 28 May, the two routes and "General Halleck has given his opinion that the north side of York River is best route"; p.321 Caldwell 29 May, "Your dispatch of 27th has been shown to General Grant"; sibling E319, Sheldon's answer on the York widths) | no prior plaintext or decipherment located |
+| E472 | **N3** (weak, = E90) | period | **D3** (H 12/12; external: OR I/36 pt 3 pp.29-30, Biggs's 6 PM answer; holder 4642) | same telegram as E90 (mssEC 19 p.73); its own words not located; the answer printed |
+| E442 | **N3** | period | **D3** (H 8/8; external: OR I/36 pt 3 p.262, Eckert's order of 27 May that E442 answers; p.322 Sheldon 29 May, Palmer's party "with Homan and Collins" at Jamestown) | no prior plaintext or decipherment located |
+| E473 | **N3** | period | **D3** (H 6/6; external: Butler Corr. IV p.339, the New Regime as the Norfolk paper under Butler's orders; holder 8711, "Clark and Brown of the new regime") | no prior plaintext or decipherment located |
+| E469 | **N3** | period | **D2** (H 7/7; code clause Jupiter = Grant passim; no external check of the firing on the 29th) | no prior plaintext or decipherment located |
+| E466 | **N3** | period | **D2** (H 4/4; code clause Knox = Butler passim; no external check) | no prior plaintext or decipherment located |
+
+- Not N4 for any: Grant Papers vol. 10 and NARA RG 107/92 unread, OR I/36 pt 3 read in OCR, the New Regime's 1864 issues not searched.
+- D2+ clause check (rule 4a, depth bar): every row has a code clause -- a value reading sensibly in two or more independent contexts (Knox = Butler,
+  Jupiter = Grant, Famish = Norfolk, Hagar = West Point in E441, E302 and 5679/1, Maxim = Gillmore in E242 and E442, Blubber = City Point, passim in
+  mssEC 19/25) -- plus the true sentence below. E469 and E466 are mostly plain text; their code words are time, numbers, punctuation and two names, so
+  D3 is not claimed without an external check.
+- **Safe sentences** (each: "Read at grade H with War Department Cipher No. 1 ...; not located in the Official Records ser. I vols. 33 and 36, Butler's
+  correspondence vols. IV-V, Plum's Military Telegraph vol. II, Google Books or the Huntington's full-text search (searched 10 Oct 2026)"):
+  E441: "on 27 May 1864 Eckert told Sheldon at Fort Monroe that the operators had left Alexandria the day before, that Sheldon's suggested route was good
+  and would be adopted after the General-in-Chief's opinion, and asked how wide the river was at Yorktown, whether a No. 14 wire could be stretched
+  across there or a cable was needed, and how wide the Mattapony was at West Point, as he dreaded the need for cables." E472: "the Quartermaster
+  General's 1.30 PM telegram of 20 May 1864 to Lt. Col. Biggs at Fort Monroe asking whether Sheridan had left the James and whether he must be foraged by
+  the other line is entered here as received; Washington's sent copy is E90." E442: "at 11.30 PM on 27 May 1864 O'Brien at Butler's headquarters answered
+  Eckert that Butler wanted offices at his headquarters, at Gillmore's and at the Bermuda landing and City Point connected by cable, and that a
+  construction party with Homan and Collings would go next day to Williamsburg by way of Jamestown Island." E473: "on 26 Apr 1864 Fort Monroe told
+  Captain Clark of the New Regime at Norfolk, through O'Brien, to stop his exchanges and asked why the paper had published Edgar's name, against orders,
+  over Butler's name." E469: "on the evening of 29 [or 30] May 1864 O'Brien at Butler's headquarters told Eckert privately that he heard heavy continuous
+  firing about fifteen miles off and that Grant might have reached there." E466: "on 29 Apr 1864 Sheldon told Eckert that Butler had returned Eckert's
+  telegram about Dunn endorsed 'I know of none and do not believe a word against him', which appeared to settle it."
+  Depth sentences = the same clauses without the search tail.
+- **Unsafe:** any "first", "new", "unpublished" for any of the six; "Sheldon to the Quartermaster General" for E472; "7 PM" or "9" in E441; "White
+  River" in E442; "100" in E473; "20 May" / "[20]" as E469's day.
+
+### 5. Fixes for the next FIX job (not applied here; reading.md is decode.py output)
+E441: "Martha pony" plain-phonetic = Mattapony (M sense), not {time: 7 PM} [9]; "it" = at; header: drop "garbled by the decoder's time and number rows",
+read "how wide is [the] Mattapony at West Point (M)"; image-read by FV-L16d. **E472: header direction -> "20 May 1864 1.30 PM Washington, the
+Quartermaster General (Meigs) to Lt. Col. Herman Biggs, chief quartermaster, Fort Monroe (received)"; add "received copy of E90 (mssEC 19 p.73, pointer
+8965)"; "big" = Biggs (plain); cite OR I/36 pt 3 pp.29-30 for the answer.** E442: "Bermuda" plain (Bermuda landing), not [White River]; drop the header's
+M for the landing; cite OR I/36 pt 3 p.262 (antecedent) and p.322. E473: "publish" plain, not [100]; "new Regime" plain = the New Regime, Norfolk; header
+as in s.3. E469: "harsh pony" = 29 (H), not [20] + "poney"; header date -> "29 May 1864 7.30 PM (ledger header 30 May)"; transcription "poney" ->
+"pony" (image). E466: none beyond "image-read by FV-L16d". **New row for a reader: 5679/1, Biggs to the QMG 20 May 1864 6 PM, cipher copy of OR I/36 pt 3
+pp.29-30 / holder 4642 (N1 when filed).** All six: header may say "image-read by FV-L16d, matches the transcription".
+Requests: hdl.huntington.org 24 (18 CONTENTdm queries incl. control, 6 IIIF pages; one take 14:5x-15:0x UTC, all 200);
+www.googleapis.com 9 (1.6 s apart, all 200); be-api.us.archive.org 11 (1.8 s apart, 1 x 502); archive.org 0 (every OR volume used was on disk).
+For LANE LEDGER-16 (account 1).

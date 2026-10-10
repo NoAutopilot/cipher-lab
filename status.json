@@ -14869,6 +14869,211 @@
       "depth_date": "10 Oct 2026",
       "depth_note": "group values 151/151 C; 7 slip groups in the printed cipher (eye-checked) give I/M intended letters; not D4 (inferred letters, re-derivation by a session that had seen the reading)",
       "gap": "N3 one audit (V-THURBM, 10 Oct 2026): not read -- Akkerman 2018 pp.222-223, Firth, Underdown, BHO, Bodleian MS. Rawl. A.; Tomokiyo's figure and BL Add MS 4166 f.117 not compared value by value (113/173 Ormond conflict, not in this letter); JSTOR rows queued; second audit AUD2-FAMILY-A2r-1"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L16d)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L16d verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16d)' section 4",
+      "reading_version": "FM-R9/FM-S2/FM-S3/FM-F1 readers (reading.md), grades as in AUDIT (FV-L16d) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "\"Martha pony\" = Mattapony (M)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Eckert to Sheldon, Fort Monroe, 27 May 1864: the telegraph route to Grant, river widths at Yorktown and West Point, cable or poles (E441)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 27 May 1864 Eckert told Sheldon at Fort Monroe that the operators had left Alexandria the day before, that Sheldon's suggested route was good and would be adopted after the General-in-Chief's opinion, and asked how wide the river was at Yorktown, whether a No. 14 wire could be stretched across there or a cable was needed, and how wide the Mattapony was at West Point, as he dreaded the need for cables; not located in the Official Records ser. I vols. 33 and 36, Butler's correspondence vols. IV-V, Plum's Military Telegraph vol. II, J. E. O'Brien's Telegraphing in Battle (1910), Google Books, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L16d); not N4: Grant Papers vol. 10, NARA RG 107/92 unread, OR I/36 read in OCR",
+      "depth": "D3",
+      "completeness": "14 H of 14 code-word groups (\"Martha pony\" plain-phonetic = Mattapony, M sense)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.155, pointer 5699, E441"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.155, pointer 5699, E441",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.155, pointer 5699, E441"
+      ],
+      "depth_sentence": "On 27 May 1864 Eckert told Sheldon at Fort Monroe that the operators had left Alexandria the day before, that Sheldon's suggested route was good and would be adopted after the General-in-Chief's opinion, and asked how wide the river was at Yorktown, whether a No. 14 wire could be stretched across there or a cable was needed, and how wide the Mattapony was at West Point, as he dreaded the need for cables.",
+      "depth_check": "code: Hagar = West Point (E441, E302, 5679/1), Animal = Monroe, Knox-family passim; external (non-statistical): OR I/36 pt 3 p.281 Sheldon 28 May, the two routes and 'General Halleck has given his opinion that the north side of York River is best route'; p.321 Caldwell 29 May, 'Your dispatch of 27th has been shown to General Grant'",
+      "depth_note": "14 H of 14 code-word groups (\"Martha pony\" plain-phonetic = Mattapony, M sense)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L16d)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L16d verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16d)' section 4",
+      "reading_version": "FM-R9/FM-S2/FM-S3/FM-F1 readers (reading.md), grades as in AUDIT (FV-L16d) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "none",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): O'Brien at Butler's headquarters to Eckert, 27 May 1864 11.30 PM: offices for Butler, Gillmore and the Bermuda landing, a cable to City Point, the party to Williamsburg (E442)",
+      "line": "Read at grade H with War Department Cipher No. 1: at 11.30 PM on 27 May 1864 O'Brien at Butler's headquarters answered Eckert that Butler wanted offices at his headquarters, at Gillmore's and at the Bermuda landing and City Point connected by cable, and that a construction party with Homan and Collings would go next day to Williamsburg by way of Jamestown Island; not located in the Official Records ser. I vols. 33 and 36, Butler's correspondence vols. IV-V, Plum's Military Telegraph vol. II, J. E. O'Brien's Telegraphing in Battle (1910), Google Books, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L16d); not N4: Grant Papers vol. 10, NARA RG 107/92 unread, OR I/36 read in OCR",
+      "depth": "D3",
+      "completeness": "8 H of 8 code-word groups (\"Bermuda\" plain: the Bermuda landing)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.163, pointer 5707, E442"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.163, pointer 5707, E442",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.163, pointer 5707, E442"
+      ],
+      "depth_sentence": "At 11.30 PM on 27 May 1864 O'Brien at Butler's headquarters answered Eckert that Butler wanted offices at his headquarters, at Gillmore's and at the Bermuda landing and City Point connected by cable, and that a construction party with Homan and Collings would go next day to Williamsburg by way of Jamestown Island.",
+      "depth_check": "code: Knox = Butler, Blubber = City Point, Maxim = Gillmore (E242, E442) passim; external (non-statistical): OR I/36 pt 3 p.262 Eckert to O'Brien 27 May, the order this answers ('prepare for work in direction of White House from Williamsburg'); p.322 Sheldon 29 May, Palmer's party 'with Homan and Collins, arrived at Jamestown'",
+      "depth_note": "8 H of 8 code-word groups (\"Bermuda\" plain: the Bermuda landing)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L16d)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L16d verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16d)' section 4",
+      "reading_version": "FM-R9/FM-S2/FM-S3/FM-F1 readers (reading.md), grades as in AUDIT (FV-L16d) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "Edgar's identity (M)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Fort Monroe to Captain Clark of the New Regime, Norfolk, 26 Apr 1864: why publish Edgar's name, stop your exchanges, against orders (E473)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 26 Apr 1864 Fort Monroe told Captain Clark of the New Regime at Norfolk, through O'Brien, to stop his exchanges and asked why the paper had published Edgar's name, against orders, over Butler's name; not located in the Official Records ser. I vols. 33 and 36, Butler's correspondence vols. IV-V, Plum's Military Telegraph vol. II, J. E. O'Brien's Telegraphing in Battle (1910), Google Books, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L16d); not N4: Grant Papers vol. 10, NARA RG 107/92 unread, OR I/36 read in OCR",
+      "depth": "D3",
+      "completeness": "6 H of 6 code-word groups (\"publish\" plain)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.89, pointer 5633, E473"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.89, pointer 5633, E473",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.89, pointer 5633, E473"
+      ],
+      "depth_sentence": "On 26 Apr 1864 Fort Monroe told Captain Clark of the New Regime at Norfolk, through O'Brien, to stop his exchanges and asked why the paper had published Edgar's name, against orders, over Butler's name.",
+      "depth_check": "code: Knox = Butler, Famish = Norfolk, Princess = Captain passim; external (non-statistical): Butler Corr. IV pp.309, 339, the New Regime as the Norfolk paper under the department's orders; holder 8711 (1865) 'Clark and Brown of the new regime'",
+      "depth_note": "6 H of 6 code-word groups (\"publish\" plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L16d)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L16d verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16d)' section 4",
+      "reading_version": "FM-R9/FM-S2/FM-S3/FM-F1 readers (reading.md), grades as in AUDIT (FV-L16d) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "the date (29 or 30 May) and the place \"... Bridge\" (M)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): O'Brien at Butler's headquarters to Eckert, private, 29-30 May 1864: heavy continuous firing fifteen miles off, Grant may have reached there (E469)",
+      "line": "Read at grade H with War Department Cipher No. 1: on the evening of 29 (or 30) May 1864 O'Brien at Butler's headquarters told Eckert privately that he heard heavy continuous firing about fifteen miles off and that Grant might have reached there; not located in the Official Records ser. I vols. 33 and 36, Butler's correspondence vols. IV-V, Plum's Military Telegraph vol. II, J. E. O'Brien's Telegraphing in Battle (1910), Google Books, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L16d); not N4: Grant Papers vol. 10, NARA RG 107/92 unread, OR I/36 read in OCR",
+      "depth": "D2",
+      "completeness": "7 H of 7 code-word groups (day 29 by the code; ledger header 30 May)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.176, pointer 5720, E469"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.176, pointer 5720, E469",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.176, pointer 5720, E469"
+      ],
+      "depth_sentence": "On the evening of 29 (or 30) May 1864 O'Brien at Butler's headquarters told Eckert privately that he heard heavy continuous firing about fifteen miles off and that Grant might have reached there.",
+      "depth_check": "code: Jupiter = Grant passim (E9, E16, E30 ...); no external check of the firing",
+      "depth_note": "7 H of 7 code-word groups (day 29 by the code; ledger header 30 May)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L16d)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L16d verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16d)' section 4",
+      "reading_version": "FM-R9/FM-S2/FM-S3/FM-F1 readers (reading.md), grades as in AUDIT (FV-L16d) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "Dunn's identity (M)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Sheldon to Eckert, 29 Apr 1864: Butler endorses the telegram about Dunn, \"I know of none and do not believe a word against him\" (E466)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 29 Apr 1864 Sheldon told Eckert that Butler had returned Eckert's telegram about Dunn endorsed \"I know of none and do not believe a word against him\", which appeared to settle it; not located in the Official Records ser. I vols. 33 and 36, Butler's correspondence vols. IV-V, Plum's Military Telegraph vol. II, J. E. O'Brien's Telegraphing in Battle (1910), Google Books, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L16d); not N4: Grant Papers vol. 10, NARA RG 107/92 unread, OR I/36 read in OCR",
+      "depth": "D2",
+      "completeness": "4 H of 4 code-word groups",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.94, pointer 5638, E466"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.94, pointer 5638, E466",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.94, pointer 5638, E466"
+      ],
+      "depth_sentence": "On 29 Apr 1864 Sheldon told Eckert that Butler had returned Eckert's telegram about Dunn endorsed \"I know of none and do not believe a word against him\", which appeared to settle it.",
+      "depth_check": "code: Knox = Butler, Wrangle = Telegraph passim; no external check",
+      "depth_note": "4 H of 4 code-word groups"
     }
   ],
   "lanes": [
