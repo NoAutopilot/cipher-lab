@@ -206,3 +206,22 @@ superseded for the read-free half by this line (the oracle date is the owner's).
 
 Costs this check-in: TXE2-OL1PAGE 4, TXE2-SHEETVIV 22, TXE2-MARKS 4. Eval looks: 0. S2 looks: 1 (unchanged). Openings: WIT-FLAGS step 6 1
 (the lane); SHEET-VIV 0 eval / 1 dev; MARKS-DEV2 0 eval / 1 dev; OL1-PAGE 0.
+
+## OL1-PAGE amended (lane, 10 Oct 2026 03:0x UTC by date -u; the orchestrator's message of 02:52: "re-cut ... re-run the preflight ... then I publish"; the gate stays, the proposals change; BEFORE TXE2-OL1PAGE had changed any tool)
+Step (i) is WITHDRAWN: no `--box-verify` mode is added to tools/sorter_preflight.py -- a mode that lets the page pass by reporting what the
+gate counts would be gate-shopping on a page whose shape count is real (bad cuts are bad proposals, and they cost the owner's minutes).
+Instead the proposals are re-cut by declared, read-free, per-hand geometric rules (all medians per hand, kind=sign boxes only), applied in
+this order and logged per box (boxes_recut.tsv: box_id, rule, from, to): (1) over-wide -- a box wider than 2.5x the hand's median sign width
+is split at the k-1 deepest valleys of its column ink profile into k = round(width / median width) boxes; (2) strip-height -- a box touching
+both the top and bottom edge of its crop is trimmed to the rows of its own ink inside the line's core band (between the 5th and 95th
+percentile rows of the line's ink profile); if it still touches both edges it is dropped as a neighbour-line intrusion and listed; (3) ink
+outliers -- a box with ink under 3% is dropped (blank or speck); a kind=mark box is not a tile of its own: it goes to the sorter through
+`--marks` attached to the sign box it overlaps in x (else the nearest sign centre within one median width), so the tile is cut around the
+union and the mark stays visible (the sorter's own mechanism; the review's "retain small disconnected marks" is kept in marks.tsv and in the
+tile); a mark with no sign in reach stays its own box and is listed; a kind=sign box over 60% ink is padded 2 px a side and re-measured.
+Then `tools/sorter_preflight.py` as it stands must PASS: piles = `sign box` (and, where any mark stayed alone, `mark box`); focus = every
+box a rule changed (split piece, trimmed, mark-attached union) with a geometric note only; lede as before. If the plain preflight still
+fails on shape after the rules, the worker STOPS and reports the residual by class and hand -- no further rule is improvised and no gate
+is touched; the lane and the orchestrator decide the next rule in a further dated line. Everything else in OL1-PAGE (read-free, no
+publish, RESULTS section, "Openings 0", cap 4, box 45) stands. Published only by the orchestrator after a ROOM line carrying "preflight:
+PASS" with the five check lines.
