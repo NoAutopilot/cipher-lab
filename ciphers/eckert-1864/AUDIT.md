@@ -17200,3 +17200,100 @@ Requests: hdl.huntington.org 13 (6 CISOSEARCHALL incl. control, 6 IIIF attempts 
 be-api.us.archive.org 38 (2.2 s apart); archive.org 10 (2 djvu texts, 1 refused djvu 403, 1 page_numbers.json, 1 page image, 2 advancedsearch, 3
 metadata calls); www.googleapis.com 8 (1.6 s apart). seven_day allowed_warning: seen in the brief, continued per lane-common-blast. For LANE LEDGER-14
 (account 1).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER14-1)
+
+Second verifier AUD2-LEDGER14-1 (owner-account session session_01Th953ozWUfP49VmixpfhWB, Opus 5.5, for the orchestrator (owner account); WORK-QUEUE row
+AUD2-LEDGER14-1), 10 Oct 2026, 11:32-11:5x UTC by `date -u`; a separate session from the reader L14-A and the first verifier FV-L14a; this session had read
+or audited neither entry before. Scope: **E600, E602** (first audit "## AUDIT (FV-L14a)"). Nothing decoded; every code word of both entries looked up again in
+key.md. Key source: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Step 0 not used (LEDGER-14 RULING). Scripts and outputs
+(committed, `ms18/`): `aud2_l14_1_gb.py` ... `gb5` (+ `.out`; 57 Google Books API queries, keyed, `country=US`, positive controls first: "those who join
+Mosby are exempt" -> OR I/43 pt 1 + Williamson; "transportation waiting at Locust Point" -> OR I/37 pt 2, both passed), `aud2_l14_1_beapi.py` (+ `.out`, 15
+be-api queries incl. two in-volume controls), `aud2_l14_1_beapi2.out` (10 in-volume queries on Stahr 2017), `aud2_l14_1_hdl.py` (+ `.out`, Huntington).
+
+### 1. E600 -- substance in print (lowers N3 -> N2)
+- **Stahr, *Stanton: Lincoln's War Secretary* (New York, 2017)**, IA `stantonlincolnsw0000stah` (be-api full text; printdisabled, page not read). Body:
+  "... Delaware depend upon the result." Stanton sent messages to Grant and other generals asking them to send Delaware troops home on furlough to vote.
+  Grant reluctantly agreed but asked Stanton to keep the furloughs ..." Note: "**Stanton to Wallace, Oct. 26, 1864, M473 (furlough Delaware cavalry)**;
+  Cannon to Stanton, Oct. 27, 1864, Edwin Stanton Papers, LC, box 43, image 50 (furlough Delaware cavalry); Grant to Stanton, Nov. 1, 1864, OR ...". M473 is
+  NARA's microfilm of the Secretary of War's telegrams sent (Stahr's key: "telegrams sent from the secretary's office"), i.e. the clear copy of this order.
+  Stahr paraphrases; he does not quote the wording.
+- **OR I/43 pt 2 p.484** (cached `warofrebellion432unit`, title page verified by FV-L14a), the reply: "Baltimore, October 28, 1864. (Received 1.05 p. m.)
+  General E. D. Townsend: General: Is it possible to make arrangements by which the First Delaware Cavalry, now guarding the fords of the Potomac in the
+  neighborhood of the mouth of the Monocacy, can be relieved temporarily by other troops? If this can be done by some command from Major-General Augur or by
+  detachments from General Sheridan, the request of Governor Cannon can be complied with. Please submit the matter to the Secretary of War. LEW. WALLACE".
+  p.485 prints Cannon to Wallace, 28 Oct (troops at the polls; FV-L14a's context). FV-L14a saw p.485 but not p.484. The printed reply names the unit
+  E600 encodes (America panama = Delaware Cavalry) and its addressee (Submit = Wallace).
+- Secondary: Hancock, *Delaware during the Civil War* (1961) and *Delaware History* (1958, 1964), snippets: a Delaware Unionist asked that the Delaware
+  regiments "be granted a short furlough at the time of the election, for we cannot carry the state without them"; Miller, *States at War* vol. 4 (2015)
+  summarises Wallace's p.484 telegram. None quotes E600's wording (snippet view only).
+- **Wording not located:** OR I/43 pt 2 26-31 Oct read through (no War Department telegram to Wallace on the Delaware furlough is printed); OR ser. III
+  vol. 4: the only IA copy (`in.ernet.dli.2015.171703`) is OCR-poor and stops about July 1864, `in.ernet.dli.2015.165578` is in fact ser. II vol. 4 (title
+  page) -- **III/4 for Oct 1864 remains unsearched**; Grant Papers vol. 12 in-volume ('"Delaware cavalry"', 'furlough vote Delaware', '"go home and vote"': 0;
+  control '"Delaware"' hit); IA whole collection and Google Books (s. ms18 outputs): only the items above, regimental histories and Maryland 1862.
+- **Date:** Stahr's M473 date is 26 Oct; the ledger leaf reads 27 Oct. Either the clear copy and the ledger differ by a day (written vs sent) or there were two
+  telegrams; M473 unread, so not settled. N2 holds either way: the substance (Stanton directs Wallace to furlough the Delaware cavalry to vote) is in print.
+- Holder (CISOSEARCHALL, all pointers, under the hdl token 11:4x-11:5x UTC): control 'Schermerhorn Maxon Amos State agent' -> 9877 (passed); 'Delaware
+  cavalry furlough' 0, 'Cannon Delaware' 0, 'go home vote furlough' -> 5576 only (Fort Monroe, 1 Mar 1864, Sheldon on furloughing men to vote: a different
+  telegram). No holder clear copy.
+
+### 2. E600 -- leaf and key re-check (corrections for a FIX job; not applied here)
+- **Leaf 9877 eye-checked whole** (IIIF 2400 px, scratch): every word of the transcription is on the leaf; header "No 1 / Sampson Balt / Wash Oct. 27. 1864"
+  with "11 am" above it, as FV-L14a says. **But the cipher's own time word 'florence' = 11.30 AM (key.md TIME page, H).** The next entry on the same leaf
+  (Glass, Nashville) shows the same half-hour offset: header "11.30 am", time word 'francis' = 12. So the header hour and the time word differ by a ledger
+  convention, not a slip; FIX-L14's "11 AM" is right for the header but the reading should say "11 AM (header); time word 11.30 AM (H)", not drop the time word.
+- **Grades the reading under-states:** 'submit' = Maj. Gen. Lew Wallace (Baltimore) is a key row of grade C (key.md; the E168 period telegram also adds
+  Season/Submit = Wallace) and is the addressee in the text (`florence submit`), not "[Wallace, M]"; 'Infant' = Secretary of War is H (key.md p.16 l.5),
+  not "[Secretary of War, M]". 'America' = Delaware, 'Panama' = Cavalry, 'torch' = of the, 'plug' = 1, 'Ordnance' = After the, 'plunge' = 1, 'pontiac' =
+  Command, 'Whig' = Transportation, 'pekin'/'pedlar' = comma: all H, as decoded. 'leghorn' (= Hurlbut, sense "can be") stays M. Count: 13 H + 1 C + 1 M of 15
+  code-word tokens (the time word now counted), 93%.
+
+### 3. E602 -- not located; signer read
+- **Signer:** 'walrus bender' = Signature + **Qr Master Genl U.S.** (key.md p.10 l.24, H), i.e. **M. C. Meigs**. The reading has "signed [bender, unread]";
+  the decoder missed the row (cf. E5 and E179, where Bender = Meigs is already read). The order is Meigs's own to his Baltimore quartermaster.
+- **'Endless' = Maj. Gen. Franz Sigel** (period key rows added by the E168 telegram, FV-MS18): "as Sigel is reported not to have lost wagons" -- fits Sigel's
+  withdrawal from Martinsburg to Maryland Heights, 3-6 July. FV-L14a left it unread.
+- Other code words re-checked (all H, as decoded): Grapes (blind word), Emily = 10 AM, Vinton = Quartermaster, Baptism/Banditti = Baltimore, Shelby/Shelter =
+  General, platina purple = 8 1000, Spit = Men, Optic/Orbit = At the, Pekin = comma, Cancer/Camel = Harpers Ferry, Watkins = Rear, Attica = Potomac, Whig =
+  Transportation, Torch = Of the, Shaker = Forage, Dagger = Martinsburg, Stomach = Left, Walnut(s) = Rebel(s), Walrus = Signature. FV-L14a's misfires stand
+  (Locust plain, Hunter(s) plain -> the key's Lee is wrong here, M; 'animals' plain). 'francis' after 'Banditti above' stays unread (Francis is a time word
+  for 12; out of place). Count: 25 H + 3 M of 28 code-word tokens (89%).
+- **Print:** OR I/37 pt 2 (7-8 July read in context: Halleck 7 July, Garrett's four telegrams, "Colonel Thomas has just effected arrangement", Lawrence to
+  Ricketts p.111-112) -- not this text; OR I/37 pt 1 and I/40 pts 2-3, letters-only grep 'locustpoint', 'largetrain', 'withoutambulances',
+  'forageatmartinsburg', 'embarrassoperations': only unrelated hits (I/37 pt 1, a Third Division report: "disembarked at Baltimore on the morning of the
+  8th at Locust Point"). **Grant Papers vol. 11** (`papersofulyssess0011gran`, June-Aug 1864, be-api in-volume; control '"Ricketts"' hit): '"Locust Point"' 0,
+  '"without ambulances"' 0, 'Meigs Ricketts Baltimore' and '"Martinsburg" forage' hit only other telegrams (Grant's 20,000 men; Sigel's Martinsburg reports).
+  Google Books (12 queries, incl. '"Locust Point" Ricketts Meigs 1864', '"too many animals and wagons"', '"Hunter's large train"', 'Meigs "Captain Thomas"
+  Baltimore July 1864 Ricketts'): nothing relevant. IA whole collection (3 queries): 0 relevant.
+- Holder: 'embarrass operations wagons' -> 9778 (the row's own continuation), 'Hunters large train' -> 9777 (own), 'forage Martinsburg rebels' -> 6660
+  (Feb 1862, Banks) and 5236 (1863, North Mountain), 'Ricketts steamers' -> 4789 (Grant to Halleck, 10 July 1864): none is a clear copy.
+- **Not searched / unreachable:** Meigs's letterbooks and telegrams sent (NARA RG 92, unpublished), RG 107 M473; the Baltimore press of 7-9 July 1864; the
+  Supplement to the OR; HathiTrust full text (Cloudflare). N3 holds.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E600 | **N2** (lowered from N3) | period | **D3** (raised from D2: 13 H + 1 C + 1 M of 15, 93%; external, non-statistical: OR I/43 pt 2 p.484, Wallace's reply naming the First Delaware Cavalry and the Governor's request, and Stahr's note "Stanton to Wallace ... (furlough Delaware cavalry)" -- both check the key-dependent words Delaware Cavalry, Wallace, Secretary of War; leaf eyed whole; no fresh rule-7 re-derivation, so not D4) | substance known (Stahr 2017, from the M473 clear copy; OR I/43 pt 2 p.484 reply); wording not located |
+| E602 | **N3** (kept) | period | **D2** (kept: 25 H + 3 M of 28, 89%; signer now read (Meigs, H); no external check of this telegram's own words -- Garrett's and Ingalls's telegrams are context) | no prior plaintext or decipherment located after FV-L14a and s.3 |
+
+Depth sentences (own): E600 -- on 27 Oct 1864 the Secretary of War told General Wallace at Baltimore to furlough such of the 1st Delaware Cavalry as were in
+his command after 1 November, with transportation both ways, so they could go home and vote, if the service allowed. E602 -- on 7 July 1864 Quartermaster
+General Meigs told Capt. Thomas at Baltimore that Ricketts's division, about 8000 men without ambulances or wagons, would arrive by steamer, to be landed at
+Locust Point and forwarded to Harper's Ferry.
+Safe sentences: E600 -- "read with the period Cipher No. 1 key; the substance is known (Stahr 2017, citing the War Department's clear copy, NARA M473; Wallace's
+reply in OR I/43 pt 2 p.484); its wording was not located in print". Unsafe: "no prior plaintext located" (as first audited). E602 -- "read with the period Cipher
+No. 1 key; no prior plaintext or decipherment located after the searches logged in AUDIT.md (FV-L14a, AUD2-LEDGER14-1)". Unsafe: "first", "previously unread"
+(needs N4: RG 92 unread).
+
+### 5. Postmortem and corrections
+- Failure (E600): FV-L14a read OR I/43 pt 2 p.485 (Cannon) but not the facing p.484 (Wallace's reply), and searched for the order's wording, not for who later
+  cited it; the scholarship family (a Stanton biography citing M473) was the one that held the substance. Lesson: for a Secretary of War telegram, run an in-volume
+  be-api search of the Stanton biographies (Stahr 2017; Thomas and Hyman 1962) by unit and date before N3.
+- Corrections for a FIX job (FIX-L14 ran before this audit; these are new): E600 header line in ciphertext.txt / reading.md: addressee **Maj. Gen. Lew Wallace
+  (Submit, C)**, signer **Secretary of War (Infant, H)**, time "11 AM (header); time word Florence 11.30 AM (H)", "not located in print" -> "substance in print:
+  Stahr 2017 (M473 note, 26 Oct); Wallace's reply OR I/43 pt 2 p.484". E602: signer **[Quartermaster General U.S. = M. C. Meigs] (bender, H)**; 'Endless' ->
+  **[Sigel]** (H, E168 rows); NOTES "## L14-A" rows 9877/1 and 9777/1 verdict lines to these classes.
+- Applied here: status.json E600 (N2, D3, two audits) and E602 (N3 kept, D2, two audits, line and gap); SECOND-OPINIONS-QUEUE SO-ECKERT-E600 withdrawn (N2);
+  `second-opinions/PROMPT-chatgpt-e602.md` (signer Meigs, Sigel, Grant Papers vol. 11 searched). E602's SO row stays queued.
+- Requests: hdl.huntington.org 13 (one take, 3.3 s apart, all 200); archive.org 12 (advancedsearch 4, metadata 6, djvu 2) + be-api 28 (1.9 s apart);
+  www.googleapis.com 57 (1.6 s apart).

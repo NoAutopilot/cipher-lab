@@ -13909,20 +13909,21 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L14a)'"
+        "AUDIT.md '## AUDIT (FV-L14a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER14-1)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth_by": "FV-L14a verifier (account 1)",
+      "depth_by": "AUD2-LEDGER14-1 verifier (owner account)",
       "depth_date": "10 Oct 2026",
       "decode_status": "Partially decrypted",
       "date": "10 Oct 2026",
       "kind": "reading",
       "claim_scope": "completed-reading",
-      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L14a)' section 4",
-      "grade": "N3",
-      "plaintext_novelty": "N3",
-      "mapping_novelty": "N3",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER14-1)' section 4",
+      "grade": "N2",
+      "plaintext_novelty": "N2",
+      "mapping_novelty": "N2",
       "reading_version": "L14-A 10 Oct 2026 (reading.md), grades and readings as corrected in AUDIT (FV-L14a) section 3",
       "unresolved_spans": "'leghorn' (sense 'can be', decoded Hurlbut, M)",
       "depth_unread": {
@@ -13931,10 +13932,10 @@
       },
       "depth_pct": 92.9,
       "title": "Eckert 1864 (War Department sent ledger mssEC 18): Washington to Sampson at Baltimore, 27 Oct 1864: furlough the [1st Delaware Cavalry] to go home and vote (E600)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 27 Oct 1864 the War Department told Baltimore to give the [1st Delaware Cavalry] in the command furloughs, with transportation both ways, to go home and vote, if the public service allowed; not located in the Official Records (ser. I vol. 43 pt 2) or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L14a); header time 11 AM (not 11.30, s.3); 'leghorn' M; not N4: Baltimore press, OR ser. III vol. 4 by page and Lincoln/Stanton papers not searched by page",
-      "depth": "D2",
-      "completeness": "12 H + 1 C + 1 M of 14 code-word tokens",
+      "line": "Read at grade H with War Department Cipher No. 1: on 27 Oct 1864 (header 11 AM; time word 11.30 AM) the Secretary of War told Maj. Gen. Lew Wallace at Baltimore to give such of the 1st Delaware Cavalry as were in his command a furlough after 1 Nov to go home and vote, with transportation both ways, if the public service allowed. The substance is known: Stahr, Stanton: Lincoln's War Secretary (2017), cites 'Stanton to Wallace, Oct. 26, 1864, M473 (furlough Delaware cavalry)' and says Stanton asked his generals to send Delaware troops home on furlough to vote; Wallace's reply of 28 Oct asking that the First Delaware Cavalry be relieved so that Governor Cannon's request could be met is printed in OR I/43 pt 2 p.484. The telegram's own wording was not located in print (searched 10 Oct 2026).",
+      "gap": "N2: second audit AUD2-LEDGER14-1 (10 Oct 2026) lowered N3 -> N2: substance in print (Stahr 2017, note citing NARA M473 clear copy dated 26 Oct; OR I/43 pt 2 p.484 Wallace's reply); wording not located; the M473 copy's date (26 Oct) vs the ledger's 27 Oct not settled (M473 unread)",
+      "depth": "D3",
+      "completeness": "13 H + 1 C + 1 M of 15 code-word tokens (Florence time word H; Submit = Wallace C; Infant = Secretary of War H; 'leghorn' M)",
       "phrases": [
         "Huntington mssEC 18 (obj 10074) p.211, pointer 9877, E600"
       ],
@@ -13942,25 +13943,26 @@
       "documents": [
         "Huntington mssEC 18 (obj 10074) p.211, pointer 9877, E600"
       ],
-      "depth_sentence": "On 27 Oct 1864 the War Department told Baltimore to give the [1st Delaware Cavalry] in the command furloughs, with transportation both ways, to go home and vote, if the service allowed.",
-      "depth_check": "code clause: Whig = Transportation and Pekin = comma read in E532 and passim; context only (Middle Dept. General Orders No. 107, 2 Nov 1864, OR I/43 pt 2), no external check of this telegram's own words (D2)",
-      "depth_note": "12 H + 1 C + 1 M of 14 code-word tokens"
+      "depth_sentence": "On 27 Oct 1864 the Secretary of War told General Wallace at Baltimore to furlough such of the 1st Delaware Cavalry as were in his command after 1 November, with transportation both ways, so they could go home and vote, if the service allowed.",
+      "depth_check": "external, non-statistical: OR I/43 pt 2 p.484 (Wallace to Townsend, 28 Oct 1864, received 1.05 p.m.) asks to relieve the First Delaware Cavalry so Governor Cannon's request can be complied with -- the reply to this order; Stahr 2017 note: Stanton to Wallace, furlough Delaware cavalry (M473). The code words America panama (Delaware Cavalry), Submit (Wallace) and Infant (Secretary of War) agree with both. Leaf 9877 eye-checked whole (D3)",
+      "depth_note": "13 H + 1 C + 1 M of 15 code-word tokens (Florence time word H; Submit = Wallace C; Infant = Secretary of War H; 'leghorn' M)"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L14a)'"
+        "AUDIT.md '## AUDIT (FV-L14a)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER14-1)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth_by": "FV-L14a verifier (account 1)",
+      "depth_by": "AUD2-LEDGER14-1 verifier (owner account)",
       "depth_date": "10 Oct 2026",
       "decode_status": "Partially decrypted",
       "date": "10 Oct 2026",
       "kind": "reading",
       "claim_scope": "completed-reading",
-      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L14a)' section 4",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER14-1)' section 4",
       "grade": "N3",
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
@@ -13972,8 +13974,8 @@
       },
       "depth_pct": 88.5,
       "title": "Eckert 1864 (War Department sent ledger mssEC 18): Washington to Capt. Thomas, Asst Quartermaster at Baltimore, 7 July 1864: land Ricketts's division at Locust Point and forward it to Harper's Ferry (E602)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 7 July 1864 Washington told Capt. Thomas at Baltimore that Ricketts's division, about 8000 men without ambulances or wagons, would arrive by steamer, to be landed at Locust Point and forwarded to Harper's Ferry, and that wagons were not to be multiplied; not located in the Official Records (ser. I vol. 37 pts 1-2, vol. 40 pts 2-3) or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-L14a); leaf header 'June 7' read as 7 July (M); continuation on leaf 9778 not image-read; not N4: Meigs letterbooks (RG 92), Baltimore press not searched",
+      "line": "Read at grade H with War Department Cipher No. 1: on 7 July 1864 Quartermaster General M. C. Meigs (code signature 'bender') told Capt. Thomas, assistant quartermaster at Baltimore, that Ricketts's division, about 8000 men without ambulances or wagons, would arrive by steamer, to be landed at Locust Point and forwarded to Harper's Ferry; Hunter's and Sigel's trains should leave enough transportation on the Potomac. Not located in print (OR I/37 pts 1-2, I/40 pts 2-3, Grant Papers vol. 11, Google Books, IA full text) or as a clear copy in the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 kept at second audit AUD2-LEDGER14-1 (10 Oct 2026); signer read: 'bender' = Qr Master Genl U.S. (key.md H) = Meigs; 'Endless' = Sigel (FV-MS18 ruling); not N4: Meigs letterbooks (NARA RG 92) and Baltimore press of 7-9 July not searched",
       "depth": "D2",
       "completeness": "23 H + 3 M of 26 code-word tokens",
       "phrases": [
@@ -13983,7 +13985,7 @@
       "documents": [
         "Huntington mssEC 18 (obj 10074) p.111, pointer 9777, E602"
       ],
-      "depth_sentence": "On 7 July 1864 Washington told Capt. Thomas at Baltimore that Ricketts's division, about 8000 men without ambulances or wagons, would arrive by steamer, to be landed at Locust Point and forwarded to Harper's Ferry.",
+      "depth_sentence": "On 7 July 1864 Quartermaster General Meigs told Capt. Thomas at Baltimore that Ricketts's division, about 8000 men without ambulances or wagons, would arrive by steamer, to be landed at Locust Point and forwarded to Harper's Ferry.",
       "depth_check": "code clause: Whig = Transportation, Shelby/Shelter = General read passim; context only (Garrett's 7 July telegrams, OR I/37 pt 2: transportation waiting at Locust Point, Colonel Thomas arranging the transports), no external check of this telegram's own words (D2)",
       "depth_note": "23 H + 3 M of 26 code-word tokens"
     },

@@ -1,0 +1,22 @@
+control 9678 | Schermerhorn Maxon Amos State agent | 1 | 9877
+E600 | Delaware cavalry furlough | 0 | 
+E600 | go home vote furlough | 1 | 5576
+E600 | Cannon Delaware | 0 | 
+E602 | embarrass operations wagons | 1 | 9778
+E602 | Hunters large train | 1 | 9777
+E602 | forage Martinsburg rebels | 2 | 6660 5236
+E602 | Ricketts steamers | 1 | 4789
+leaf 9877 509059 bytes
+requests 9
+## 5576 | Page 32 
+    vote : Ft. Monroe March 1st / 64 Maj Eckert Di Arabia an agent is here from Claudius endorsed by Senator Clark who desires that I shall send home about four hundred Clarence men on fur low to vote at the Election period I can spare them for ten or fifteen days but they have no other claim to go shall I send them period all veterans have gone Abbey Gertrude Geo D Sheldon Ft. Monroe Mar 1st 1864 John Horner New York for William Lee Chief dete
+## 6660 | Page 79 
+    Martinsburg : forage for artillery and cavalry horses being the bulk of my train . passed the men in review today & addressed them we are in the best possible condition for a fight Humboldt Frederick 23d Recd Feb 23 ' 62 Gen RB Marcy Rebels have withdrawn from Martinsburg to Winchester . report is that a Genl movement towards Richmond is contemplated another that Jackson moves on Romney . report of Faulkners Speech confirmed parties intrusted with affair of bridges are at work . all our force on the River is ready
+    forage : I can . I have any number of beef cattle on which to subject my men . baggage is cut down to the minimum . forage for artillery and cavalry horses being the bulk of my train . passed the men in review today & addressed them we are in the best possible condition for a fight Humboldt Frederick 23d Recd Feb 23 ' 62 Gen RB Marcy Rebels have withdrawn from Martin
+## 5236 | Page 104 
+    Martinsburg : Recd. 12.30 P.M. 9 A.M. North Mountain Va 26, 1863 Brig Gen. Cullam Chief of staff My cavalry occupied Martinsburg yesterday found no enemy in arms period there is quite a number of sick and wounded officers and men who have been paroled period my Cavalry Scouting party sent up the valley west of North Mountain went as far as White = hall within Eight Miles of W
+    forage : mber of sick and wounded officers and men who have been paroled period my Cavalry Scouting party sent up the valley west of North Mountain went as far as White = hall within Eight Miles of Winchester Captured some stragglers but did not fall in with Forage trains period A messenger came in last night from Winchester and reports the rebels had all left that place but four Companies; that there were one hundred and forty of our sick and wounded left there without subsistence or medical stores period I
+## 4789 | Page 348 
+    Ricketts : 9. <deletion>45</deletion> pm Grants Hd Qrs July 10th 1864 1230 pm July 10th Gen Halleck I have sent No troops to Balto except Ricketts Div. and the dis - mounted Cavalry , 2 Divisions , The balance of the 6th Corps are now on their way to Washn , The advance having sailed at 10 am . The remainder are embarking and starting as fast as the steamers are loaded . I have sent Gen Ord to
+    steamer : have sent No troops to Balto except Ricketts Div. and the dis - mounted Cavalry , 2 Divisions , The balance of the 6th Corps are now on their way to Washn , The advance having sailed at 10 am . The remainder are embarking and starting as fast as the steamers are loaded . I have sent Gen Ord to Wash . I would give more for him as a Commander in the field than most of the Genls Now in Maryland probably it will be well to send him to Balto to Command and hold the place forcing into service for the purpos
+requests 4 more (13 total)
