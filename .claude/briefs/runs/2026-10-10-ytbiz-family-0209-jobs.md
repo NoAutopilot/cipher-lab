@@ -59,3 +59,42 @@ NOTES last section); if it answers 200 with data, run the rerun (~$0.2) and reco
 Output: `research/POOLS-FAMILY-2026-10-10.tsv` (one row per unread letter, ranked by: key in hand, images on disk, signs, cost) and a 10-line
 summary at the top of a sibling .md naming the top 5 runnable rows with a one-line cheap step and cost each. Push. Report the top 5 in the
 final paragraph.
+
+## Wave 2 (02:5x UTC 10 Oct)
+Wave 1 results: JVN-GLY gate YES at M (blind check to the sign sorter); OLD-O2 S 87->165 words, longest S stretch 13 < AD floor 24.2;
+POOLS research/POOLS-FAMILY-2026-10-10.tsv (rows 1-4 stale on check: thurloe P25-28 done R8-THUR25, wvo-11008 R2 done W11008-R2, wvo-hessen
+waits on the owner's sorter; heinsius-hermitage already listed the deciphered letters -> REQUEST.md). Intake gate 02:5x UTC exit 0:
+oldenbarnevelt-brederode-1605 open, decode-1411-hhsta-vienna-1600 open. Hosts this wave: service.archief.nl / www.nationaalarchief.nl ("NA":
+OBRED-6016 only, <= 120 requests, >= 1.9 s); de-crypt.org (D1411-P6 only, ONE browser login, tools/decode_browser_login.js). OLD-WB disk only.
+
+### OLD-WB (Opus, cap 2, box 50 min, disk only): na-oldenbarnevelt-2442-1605, word-boundary-insensitive S test (OLD-O2's named instrument)
+Read NOTES section 24 (OLD-O2) and its PREREG only. OLD-O2: "the stretch is held down by word-level M on short function words where one pass
+splits or joins tokens, not by sign disagreement alone -- a pre-registered word-boundary-insensitive S test (match the sign string across token
+boundaries) would be the next instrument, ~$1". Write PREREG-OLD-WB.md (own commit, pushed and checked on origin/main before scoring): the S
+rule on the concatenated sign string per line (both passes agree on the sign and the fixed key decodes it into a lexicon word or a run that a
+lexicon segmentation covers, define it exactly), the longest contiguous S stretch statistic, and the SAME 120 permuted-key control OLD-O2 used,
+which CAN differ from the target on this statistic (state why). Report the target's longest stretch and S share against the control's
+distribution and against the AD floor 24.2 digits; no new vision, no third pass (the 10% rule). The verifier decides depth; you report numbers.
+NOTES "## 25. OLD-WB", reading files only if a grade changes under the registered rule (then `--check`). Report what was found and where it was
+not found; do not classify novelty.
+
+### OBRED-6016 (Sonnet, cap 2, box 70 min, NA take/release, <= 120 requests, >= 1.9 s): oldenbarnevelt-brederode-1605, inv. 6016 sibling screen
+The Verdict's cheapest next (NOTES ~lines 781-846; read only those). Contact sheets of NA 1.01.02 inv. 6016 from image order 261 onward at
+~400 px (IIIF via service.archief.nl; read the item page's drupal-settings-json for the scan list, CLAUDE.md NA row), looking for a
+Brederode-side cipher letter with a period gloss or decipherment (three-digit unmarked groups as in no. 92). Seed every contact sheet with one
+known cipher scan of this folder (positive control) and one plain scan; a sheet whose control is missed is a non-test, re-look it. Every hit:
+one scan at >= 1200 px, say glossed yes/no, date/sender if legible. Write images/6016_screen.tsv (scan, call, control) and NOTES
+"## OBRED-6016" with counts and the hits; no transcription. Stop the scan at the end of the Brederode run or at 80% of the cap/box. Remaining
+gaps / Escalation / Verdict, gaps_check.py after.
+
+### D1411-P6 (Opus worker, Sonnet subagents, cap 6.5, box 110 min, ONE DECODE login): decode-1411-hhsta-vienna-1600 p.6 numerals
+The Verdict's cheapest next. Read NOTES "## AM-D1411P5", "## AM-D1411V" and the Remaining gaps/Escalation only (~lines 656-833). Exactly the
+AM-D1411P5 method on p.6 (IMG_R1411_I6600_P6.png): PREREG-D1411P6.md + score_p6.py (a copy of d1411p5's scorer, paths changed) pushed in their
+own commit and checked on origin/main BEFORE the image is opened, registering T21r primary with h12/h22 beside, the permuted controls p.5 used,
+and the copy mask (d1411v/rescore_v.py copy_mask: numbers aligning to already-read pages are excluded before scoring; state the alignment rule).
+Re-run the scorer on p.5 first and reproduce AM-D1411V's numbers (independent p.5 0.588) before touching p.6. One DECODE browser login
+(`tools/decode_browser_login.js 1411 --fetch IMG_R1411_I6600_P6.png --max-files 1`), sha1 against images/manifest.json, image not committed.
+Crops as AM-D1411P5 (pasted commands, crops committed), two blind Sonnet passes (one call each, crops only, opposite orders),
+tools/reconcile_passes.py, one reconciliation unit. Score; an S grade only on a registered PASS on independent (unmasked) numerals that also
+reaches the leaf's own gloss coverage (the AM-D1411V bar). NOTES "## D1411-P6", Remaining gaps/Escalation, gaps_check.py. If p.6 PASSes, end
+with one line asking the lane for a verifier. Report what was found and where it was not found; do not classify novelty.
