@@ -3787,7 +3787,7 @@ Where it was not found: no cipher in the sampled scans of 370, 371, 378, 379, 38
 - [x] [SUR-372, 9 Oct 2026: done -- run 0183-0195 closed, glossed line by line (N0), key test: Nieuw sheet reads; see ## SUR-372] 372: fetch 0183 and 0195 (2 requests) to close the run; one full-res (>=1500 px) scan of 0189 to read the date, heading and any
   gloss; then prior-work step and check-solved on the letter before any transcription; ~$1.
 - [x] [SUR-266, 9 Oct 2026: done at 24 scans per inventory (120 scans), no cipher found; see ## SUR-266] 266-270 (1739-42) 1-in-15: not attempted (request cap); next: 4 item pages + about 40 scans, ~$1.5.
-- [ ] 370, 371, 378-380 at a denser stride (every 10th, about 330 scans) in a separate session with its own request budget; ~$3.
+- [x] [SUR-DENSE, 10 Oct 2026: done at 26 scans per inventory (130 scans, 1-in-13 to 1-in-34), no cipher found; see ## SUR-DENSE] 370, 371, 378-380 at a denser stride (every 10th, about 330 scans) in a separate session with its own request budget; ~$3.
 Verdict: keep going.
 
 ## SUR-372 (9 Oct 2026, account 2, Opus worker for LANE FAMILY-A2l; 21:45-22:01 UTC by date -u)
@@ -3925,3 +3925,48 @@ open in the SUR-GOV list. Request counts: www.nationaalarchief.nl 5, service.arc
 
 Where it was not found: no cipher in the 120 sampled scans of inv. 266-270 (power above). Not a novelty statement.
 Verdict for this item: brief met, no candidate; the target's own Verdict line is unchanged ("keep going").
+
+## SUR-DENSE (10 Oct 2026, account 2, Sonnet worker for LANE FAMILY-A2m; 00:02-00:3x UTC by date -u)
+Job: denser thumbnail screen of NA 1.05.03 inv. 370, 371, 378, 379, 380 (governor's incoming letters 1780, 1783-84), SUR-GOV's third open step. Output
+`sources/na-1.05.03/2026-10-09/screen_gov_dense.tsv` (130 rows), scripts and fetch log in `passes/sur_dense/` (getitem.py, fetch.py, sheets.py, look.py,
+plan.tsv, fetch.log), 35 contact sheets and five 1200 px looks in `images/sur_dense/` (re-saved at JPEG quality 30/45, 2.7 MB; the 400 px scans and
+viewer JSONs stayed in scratch and regenerate with those scripts).
+
+**Prior work (rule 1 / prior-work step).** `tools/prior_work.py na-suriname-map-1781 --item-spec ... --step-type lookup`, exit 4: its four LEADs are
+claim lines (SUR-GOV 21:01, SUR-372 21:45, SUR-266 23:23, this job), not prior readings; tomokiyo/solver/edition rows UNCHECKED (no volume or pointer,
+image screen, no reading; `--fetch` not run, no network row owed here). Own work: SUR-GOV's open step "370, 371, 378-380 denser stride" and SUR-266's
+"Not done" paragraph name this step as not run; no cipher passage in 370, 371, 378-380 is named in this folder, the EAD snapshot or LEDGER. Check 5 not
+owed (no decode).
+
+**Method.** Item pages for the five inventories (5 requests, viewer JSON DIGITALIZED; scans 812, 665, 444, 1051, 341 = 3,313), then IIIF `full/400,/0/default.jpg`,
+26 scans per inventory at an even stride (fetch.py: `int(step*k+0.37*step)+1`, moved forward past any order already in screen_gov.tsv, so no scan is
+re-looked), one at a time at 1.95 s, all HTTP 200. Contact sheets of 4 sampled scans plus **two controls on every one of the 35 sheets**: the known cipher
+scan 373_0693 (from disk, 0 requests; slot 3) and one plain scan (370_0043, plain Dutch prose, slot 6). Both controls were visible on 35 of 35 sheets, so no
+sheet is a non-test at "a page like 373_0693 would show as a light, fine-hand page of short strings between interlinear spacing". **Control caveat (as in SUR-266, not
+hidden):** the cipher control sat in a known slot, so "read" means visible as the page to compare against, not found blind; at 400 px 373_0693 is not
+strongly different from a dense Dutch hand, which is why five dense scans were taken to 1200 px.
+
+**Brief deviation (named).** Every 10th scan of 3,313 is about 330 scans; the 150-request cap allows 140 scans at most after the 5 item pages. The sample is
+1-in-13 (341-scan inv. 380) to 1-in-40 (1051-scan inv. 379) per inventory, 26 each. **Power:** a one- or two-scan passage like 373_0693 is caught with probability
+about 3-8 percent per such passage at these strides; a run of 11-13 scans (inv. 372's) would be caught with probability about 30-60 percent per inventory
+(inv. 380 highest, 379 lowest). So "none" is "none in the sampled scans", not "none in the inventory".
+
+**Counts (scans looked at -> cipher yes / possible resolved at 1200 px / no), added to the SUR-GOV 22 per inventory.**
+| inv | years | scans | SUR-DENSE sampled | cipher yes | possible (1200 px) | no | looked at in all (SUR-GOV + SUR-DENSE) |
+|---|---|---|---|---|---|---|---|
+| 370 | 1780 Jan-Mar | 812 | 26 | 0 | 0 | 26 | 48 |
+| 371 | 1780 Apr-Jun | 665 | 26 | 0 | 1 (0087, plain Dutch, passenger/ship complaint) | 26 | 48 |
+| 378 | 1783 Jul-Oct | 444 | 26 | 0 | 1 (0076, plain French clear letter on the Dutch-French relation) | 26 | 48 |
+| 379 | 1784 Jan-Jun | 1051 | 26 | 0 | 1 (0015, plain Dutch prose, naval retreat) | 26 | 48 |
+| 380 | 1784 Jul-Oct | 341 | 26 | 0 | 2 (0097, 0137: plain Dutch, numbered articles / paragraphs VII-IX) | 26 | 48 |
+Other scans noted but not cipher: 378_0024 and 378_0041 and 379_0743 (dense hands / lists, read as Dutch at 400 px, not taken to 1200 px, graded "no"
+with that reading limit); 371_0522 (dense hand, Dutch, "no"). Follow-ups +-5: none owed (no hit). Glossed yes/no: n/a, no cipher run found (the 1200 px looks
+were taken on the possibles). **Unglossed cipher runs: none; no unread candidate from 370, 371, 378-380.**
+NA requests: www.nationaalarchief.nl 5, service.archief.nl 135 (130 at 400 px + 5 at 1200 px), 140 in all; every one HTTP 200, no 429, no challenge.
+
+Where it was not found: no cipher in the 130 sampled scans of inv. 370, 371, 378, 379, 380 (power above); with SUR-GOV's 110 scans of the same five, 240
+scans of 3,313 (7 percent) have been looked at in these inventories. Not a novelty statement.
+
+**Remaining gaps / next.** The only open image-screen cell for this family is more of the same stride; a fourth pass at the same instrument is not the
+next step. Named next: inv. 372's run (SUR-372, glossed, N0) stays the pool; for a new candidate go by the EAD's own text (scope notes mentioning
+'cijfer' / 'chiffre' for 1780-84 letters) rather than another thumbnail stride. Verdict for this item: brief met, no candidate; the target's own Verdict line is unchanged ("keep going").
