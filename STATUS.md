@@ -5925,6 +5925,48 @@ Left (next lane): eckert-1864 No 2 entries pp.86-182 of no2-candidates.tsv (~37 
 by D12-E2/E3 rates; N2-AI/N2-AJ/N2-R N4 needs RG 92/393/107 or the OR Supplement (owner-side or LOCAL-QUEUE); eckert-1862 `ec18_align.py --rows`
 still stale, cause untested (~1); 9877 Hurlbut token stays M.
 
+## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261010-1709, session_01CWL2QHKvh44Ynngqh4eVJf, account 2), 10 October 2026 (closed 20:2x UTC: in-scope supply worked to new-material blockers, lane ~53.8 of 60)
+
+Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-10-ytbiz-family-1709-jobs.md (lane tag FAMILY-A2s).
+Started from the 1410 handoff next items 2-3 (thurloe-printed: unglossed Blank Marshall letters under the period key f.117; other Add MS 4166
+agents); a fresh next_steps --hot-only read found no other in-scope runnable row not done or gated. Gate 0a: SESSION-SWEEP-account-2
+stale-claimed since 5 Oct, proceeded. Workers 13 in 7 waves (17:16-20:07 UTC; Opus 6, Sonnet 7; all ledgered from get_session, archived):
+45.62; orchestrator ~8.2. Over cap: THUR-BM3 9.68/8, THUR-MEAD 6.79/5.5, DUTCH-KEY 8.66/7 (all ~1.2x; vision + Opus floor). Account 2
+seven_day `allowed_warning` throughout (continued per blast rules). No Gallica probe. Known-text share ~25% (THUR-3370, V-DUTCH's N0/N1 items,
+the p.351 gate) -- over the one-fifth guide because the Dutch pages turned out to be stated-decipherable in the edition.
+
+Results (all ciphers/thurloe-printed):
+- Blank Marshall: no further unglossed letter in Birch vols 5-7 (THUR-BM3: vol 6's eight units are clear text; vol 7's seven BM cipher
+  letters all glossed). l.83274's two unglossed rows: 29 groups H 28 M 1 under f.117 ("the yong hair of Spayn with bonefyrs and other
+  trickl"), control a non-test at 28 letters. l.3370 names vs f.117: 9 agree, 4 referent, conflict 115 (Birch Don John vs sheet Rochester).
+- Add MS 4166 census (bm/agents_4166.tsv, 38 rows): only Blank Marshall, Meadowe and Downing tie to a sheet by heading. Meadowe sheet R4890
+  transcribed (keys4166/key_period_meadowe_f102.tsv, 189 codes H 166 M 23; word list left; 5 sheet-internal conflicts); l.69008 is Jephson,
+  glossed. R4896 (Downing) images on disk, not read.
+- Birch vols 1/4/5/6/7 census (bm/census_v5v7_all.tsv 148 groups, b146/census_v146.tsv): every imaged Downing (15/15), Jephson, Lockhart,
+  Gookin, Broghill, Montagu, Fauconberg passage is printed with a gloss; one unglossed passage: vol 6 l.19092 Bamfylde p.160 (~24 numerals;
+  glossed Bamfylde siblings exist).
+- Dutch 1653 (dutch1653/): THUR-DUTCH found De Witt's key printed in Brieven van Johan de Witt I (Japikse after Fruin) p.72; DUTCH-KEY read it
+  from the image, PREREG gate PASS on Birch I p.351 (0.975 vs p95 0.346); p.340 (223 tok, 218 H) and p.308/309 (86 H) beat controls.
+  V-DUTCH (first verifier): p.340 N0 D3 (Dutch printed by Nedermeyer van Rosenthal, Bijdragen X p.291, cited, not reached), p.351 N1 D3,
+  p.308/309 N2 D1; key `published`. Boreel p.435 (closed-negative at both solver repositories) NOT read by this key under a matched control
+  (the letter says the envoys switched to a cipher Boreel sent) -- a negative for this key only. DUTCH-MORE: pp.301/418 too short; pp.324/383/
+  466/486 are J. Peterson letters, not the envoys; codes_over_100.tsv. No N3+ item, so no AUD2 row and no SO row.
+
+**next** (for the next LANE FAMILY incarnation):
+1. thurloe-printed l.44535: when LOCAL-QUEUE L77 answers, a verifier re-rules N3/N4 (~$1.5).
+2. Vol 6 l.19092 Bamfylde (~24 numerals, unglossed): rebuild a key from the glossed Bamfylde siblings (vol 6 l.68904 p.576; vol 4 pp.194-195,
+   231-232 partly glossed) as THUR-BM did, then read l.19092 (~$4; small, likely below the authentication distance -- low priority).
+3. Dutch 1653: locate the 1723-25 printed "Brieven ... tusschen ... De Witt ende de gevolmaghtigden" / 1725 Verbael on IA (~$0.5) for the
+   27 June and 22 Aug Dutch (pp.301/418 known answers) and Nijhoff's Bijdragen X (p.340's printed Dutch; Google Books quota was spent 10 Oct).
+   Boreel p.435/p.454: no-key-material (Boreel's cipher; Nationaal Archief liassen Frankrijk/Engeland 1653 as Bourdeau's gap names).
+4. Meadowe word list (R4890 ~105-538, ~$3.5) and Downing sheet R4896 (~$3-4) only if an unglossed Meadowe/Downing letter is found; none was
+   in Birch vols 1-7 (21 Downing vol 7 groups "not classed, prior strongly glossed").
+5. Carried: costabili a1 (known text), Suriname m|n campaign, Manteuffel y-glyph (person), bne20211 / oldenbarnevelt / linhares / decode-1411 /
+   ASKS 161 (person-gated), rah-salazar EF rerun (~$0.2), decode-4450 f.2/f.4 test (needs a Gallica fetch of fr.2988 f.4r-6r).
+Pricing lesson: vision census jobs priced at 0.12-0.3 per leaf look ran close (Sonnet) but Opus census/sheet jobs ran ~1.2x: price Opus
+vision at ~0.6 per look plus the 1.5 floor.
+Excluded this incarnation: eckert-* and Huntington ledgers (LANE LEDGER-16/17), Gallica fetches, Armstrong/Debosnys/Birago.
+
 ## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261010-1410, session_01YGgwSiFSAd7MrSZekcvBL6, account 2), 10 October 2026 (closed 16:5x UTC: the one unread lead followed to two audits, lane ~34 of 60)
 
 Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-10-ytbiz-family-1410-jobs.md (lane tag FAMILY-A2r).
