@@ -91,3 +91,16 @@ read the header (book label, time word) and write the No. 9 book call for each i
 
 (08:19 UTC 10 Oct by date -u: wave 2 spawned with source_url: FV-MS18r session_01CXQMDaCTduUo8KJmfBkFDo, MS18-R11 session_019Uiw5ZjKovLPq4Db1PKCAi, FIX-FM23
 session_01X1cz8coPgpXQJyahaiGHtG, S0-57XX session_01DAazHZS5hJPjKWGu7FFmph, HDR-NO9 session_01MP9srFvpRKvXFXmsWFsUdX.)
+
+---
+
+# Wave 3 (last planned; written 10 Oct 2026 08:5x UTC by date -u; lane workers ~25.7 + orchestrator)
+By get_session: FV-MS18r 4.27 (E402 N1 by Grant Papers 11; E403 N3 D1; E404 E420 N1 D1), MS18-R11 0.92 (7 step-0 hits; E430 filed), FIX-FM23 1.59, S0-57XX 0.68
+(8 FM step-0 hits, all already second-audited: proposal for the VERIFY lane, no grade change), HDR-NO9 0.63. Every best_book 1 row of clean-ms18.tsv is now read.
+
+## FV-MS18s (Opus 5.5, first verifier, separate from every reader; cap $2.5, box 60 min): E430
+Exactly "## FV-MS18r" (Step-0 ruling first; FV-MS18r's lesson: one IA whole-collection phrase query on the Grant Papers and Butler Correspondence before
+"not located"). Reader: NOTES "## MS18-R11" (Grant's Germanna Ford message printed OR I/36 pt 1 and Butler Corr. IV; Halleck relay short form OR I/36 pt 2 p.391).
+AUDIT.md "## AUDIT (FV-MS18s)"; AUD2-LEDGER12-<n> only at N3+ D2+ (account-3 tag). Then, in the same session, apply your own s.5 AND s.5 of "## AUDIT (FV-MS18r)"
+through decode.py's entry-note mechanism (FIX-FM20 method: never hand-edit reading*.md; decode x3 --write/--check exit 0; status.json/SO per rule 10; NOTES
+"## FIX-FM24 (10 Oct 2026, account 1, for LANE LEDGER-12)"; depth_check; file_shrink_guard). The correction step is mechanical; your audit verdict is written first.
