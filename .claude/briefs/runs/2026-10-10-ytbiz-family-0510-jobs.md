@@ -52,3 +52,21 @@ the tool requires it for a blind build. File ONE ASKS.md row (rebase first; next
 focus tiles first, minutes estimate, "backlog, never blocking", and that sign_sorter_apply.py is the follow-up; one ROOM `flag:` line for the
 account-3 orchestrator naming the row. Update each folder's Remaining gaps blocker to "waiting-on ASKS <n>" and its Escalation image-check
 line; gaps_check.py on both. Report what was built and the preflight output; no reading, no decode.
+
+## Wave 1 results (05:3x UTC)
+D1411-NBAR (2.67 by get_session): NON-TEST at the central error rate 0.123 (noisy-bar p05 0.4935 vs noisy-shuffle p99 0.4968); the decision
+turns on the reconciled error rate, which needs a person-settled sample (ASKS 120). p.7 is not opened. SORT-A2o (1.77): two blind sorter builds,
+preflight PASS, ASKS 161, flagged for the account-3 orchestrator.
+
+## Wave 2 (05:4x UTC 10 Oct)
+
+### OBRED-0259 (Sonnet, cap 2, box 75 min, NA <= 95 requests): oldenbarnevelt-brederode-1605, inv. 6016 orders 1-259 sheet screen
+The folder Verdict's cheapest next. Read ONLY NOTES "## OBRED-6016", "## Remaining gaps", "## Escalation" and the TX-KEYS lines it cites.
+Same method as OBRED-6016 exactly: one METS request, then IIIF `/full/400,/0/default.jpg` for every third scan 1, 4, ..., 259 (87 requests,
+>= 2.0 s apart, descriptive UA, NA take/release ROOM lines), contact sheets of ten seeded with the same two disk controls (CTRL-CIPHER inv. 2016
+scan 31, CTRL-PLAIN inv. 6016 order 261); a sheet whose controls are not both called right is a non-test and is re-sheeted. Your own eye, no
+subagent. Re-look at 1200 px (at most 6 requests) only where a sheet shows a numeral run, table or interlinear gloss. Output
+`images/6016_screen_0001_0259.tsv`, commit any 1200 px looks. Then, disk only and from the folder's own dated sections (no new step), fill the
+five Escalation rungs marked "not assessed" ([x]/[ ]/[n/a] with the section that settles each; leave [ ] with a named next step where nothing
+does), refresh Remaining gaps / Verdict, gaps_check.py. NOTES "## OBRED-0259". Report what was found and where it was not found (limits as
+OBRED-6016 states them); do not classify novelty.
