@@ -70,3 +70,14 @@ Hosts are busy with four verifiers: take tokens in turn, never overlap. WORK-QUE
 of cap and name the rest. FV-L16d's lead (unfiled row 5679/1 = printed OR I/36 pt 3 pp.29-30 + holder 4642) is known text: do not read it.
 
 (15:04 UTC: FV-L16e spawned, session_01FEHG5YkPHYvZi4YoPaYDyv.)
+
+---
+
+# Wave 3 (written 10 Oct 2026 15:4x UTC by date -u; FIX-L16 0.73, FV-L16c 7.39, FV-L16d 9.56, FV-L16b 8.59, FV-L16e 7.78 done; FV-L16a live)
+
+## FIX-L16b (Sonnet 5.5; cap $1.5, box 50 min, no network)
+Exactly "## FIX-L16" above (entry-note mechanism, idempotent apply script, never hand-edit reading*.md), applying s.5 of AUDIT.md "## AUDIT (FV-L16c)" and
+"## AUDIT (FV-L16e)" ONLY to the entries no second audit holds: E566 E577 (FV-L16c) and E468 E470 E443 E445 E446 E448 (FV-L16e), including N1/N2 header notes.
+Do NOT touch any entry named in a WORK-QUEUE AUD2-LEDGER16-<n> row (E518 E527 E526 E546 E553 E554 E564 E574 E558 E569 E441 E472 E442 E473 E469 E466 E447 E471
+E474) nor FV-L16a's six: their s.5 goes to the FIX after the second audits (next incarnation). decode x3 --write/--check exit 0; NOTES "## FIX-L16b (10 Oct
+2026, account 1, for LANE LEDGER-16)"; depth_check; gaps_check; file_shrink_guard on every touched file.
