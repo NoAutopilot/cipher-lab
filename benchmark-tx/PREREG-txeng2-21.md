@@ -331,3 +331,34 @@ sheet-form recommendation for THIS hand (the folder's reader brief uses the pict
 PREREG (two runs per arm on a leaf of another hand with a drawn key). Never S1, never any f.103r step. The line-level test's power at 36 lines
 is the open measurement problem (TX-RED checklist (e)): three runs on this leaf gave p 0.15 / 0.26 / 1.0 while edits moved 80 / 58 / 86 --
 the second-hand PREREG quotes it and declares an edit-total endpoint with a paired line bootstrap beside the sign test. Openings: eval 0, dev 1.
+
+## SHEET-H2 The sheet-form test on a second hand: Birago 1572 no.87 dev_tune, pictured sheet vs a value-blind text list, two runs per arm (TXE2-SHEETH2; Opus 5.5 worker, Opus 5.5 readers, Sonnet packets; cap 24; box 150 min; dev only; written 04:0x UTC 10 Oct 2026 by date -u, pushed BEFORE the spawn)
+Nearest prior: SHEET-VIV and SHEET-VIV-C (the sheet-form effect on the Saint-Gouard hand: pictured 58 edits vs text list 86 / 80, the two text-list
+runs 6 apart; stands on edits only), DV1b (the protocol), TX-SHEET / passE_sheet and X1b (sheet instruments on no.87: a sheet variant and a grown
+sheet, both for the same hand's own tiles -- here nothing is added to the inventory; the 51 cells are the same in both arms), M24 (feature-first
+reading protocol, retired -- not this: the text-list arm matches shapes to a described inventory exactly as DV1b's Vivonne readers did), X21 /
+X21b (two-arm reader designs, run order randomised). What is different: the SAME 51-cell inventory given in two forms to the same reader pipeline
+on a second hand, in the degradation direction (no.87's readers have the pictured sheet today, so the text list can only add errors and has no
+ceiling), with TWO runs per arm so the between-arm gap is read against the within-arm spread (TX-RED F76's yardstick) -- the design the
+Vivonne result licensed. Protocol, fixed: (1) unit = dev_tune (benchmark-tx/txeng/units/README.md: f178v_L01-L12, 343 signs; today's baseline
+labels_dev_tune.tsv, E 12), crops ciphers/nevers-birago-fr3251-1572/harvest/f178v/f178v_L01..L12_s{1,2,3}.jpg ONLY (L13-L23 in the same folder are
+eval_heldout lines: never opened, never named in a task); (2) arm P = today's sign_sheet_blind_1572.png with blind_pass_brief_1572.md as is; arm T =
+the same 51 cells (T10..T98) as a value-blind TEXT LIST: one 3-8 word shape description per cell written by the worker from the sheet image alone
+(no truth, no key, no pass, no decode consulted; committed with sha256 BEFORE any read), the brief otherwise byte-identical but for the sheet
+reference and "match each sign to the cell whose description fits"; (3) four runs P1, P2, T1, T2 in an order drawn with random.Random(20261010)
+and recorded; each run = two blind Opus 5.5 passes in fresh contexts (one call per <= 6 lines, "do not resize", the folder's overlap sentence),
+tools/reconcile_passes.py --keep-alts, DISAGREE rows to fresh Sonnet packets of <= 16 rows with every crop viewed and the tool-call access log
+committed (F63), passZ assembled as sheetviv/assemble_z.py does; every output committed with sha256 BEFORE its score; (4) score each passZ ONCE:
+`tools/tx_bench.py passZ_<run>.tsv --bench BENCHMARK-TX.tsv --item birago1572-no87 --coverage-diagnostic --exclude-flagged --strict --paired
+benchmark-tx/txeng/units/labels_dev_tune.tsv` -- `--coverage-diagnostic` is declared here because the unit covers 12 of the item's 29 truth lines
+(missing lines listed, not charged, under the mode's own name); one invocation per output, never merged; value-level headline, visual-ID beside.
+Endpoints, declared: PRIMARY = the mean unit-cost edit total per arm on the unflagged dev_tune positions; **sheet form matters on this hand if
+mean(T) >= 1.25 x mean(P) AND |mean(T) - mean(P)| > max(|P1 - P2|, |T1 - T2|)**; "NOT DISTINGUISHABLE from run spread" otherwise, with every
+number. Beside, not gated: position McNemar P1 vs T1 and P2 vs T2; the 12-line counts (under-powered by construction -- the Vivonne leaf's 36
+lines read p 0.15 / 0.26 / 1.0 while edits moved 80 / 58 / 86; TX-RED checklist (e)); per-run agreement; tx_power at E 12 (a clean 30% fixer
+passes p < 0.05 in 0.106 of draws, Amendment 2 F1) quoted as why no p-value is the gate here. What it licenses: if the effect stands on both hands
+(Vivonne 86 vs 58, and here), the reader-brief rule "a hand with a drawn key gets a pictured sheet cut from the drawings before any read" enters
+TRANSCRIPTION.md's pipeline text and the S3 live-letter briefs -- never the Today column (S1/S2 only), never S1, never an eval look. Readers never
+see truth, decodes, key values, labels_dev_tune, other passes or the other arm's sheet. Output benchmark-tx/txeng2/sheeth2/ (RESULTS.md, every
+hash, "Openings of eval truth: 0", "dev openings: 4 (by script)"). Cost: per run about 4 Opus reads + 2-3 packets (SHEET-VIV's rate per line);
+4 runs + the text list: cap 24, box 150 min, 80% stop 120 min / 19.2, stop before a RUN that would cross either (a run is the unit).
