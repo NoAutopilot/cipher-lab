@@ -90,3 +90,27 @@ groups stay [?] at grade M, never guessed; the header words (label, Pagan/Pagoda
 and file a row only if they agree with No. 9 and the decoded body has at least one clause. Rows: 9709/1, 9808/2, 9673/0 (O9-BOOK verdicts), 9687/1, 9684/1,
 9699/1, 9803/0, 9684/0, 9735/0, 9686/1 (header predictions). Read NOTES "## O9-BOOK" first (its decodes are in ms18/o9book.out). IDs O9-DA, O9-DB, ...
 NOTES "## O9R-1 (10 Oct 2026, account 1, for LANE LEDGER-N2)". Count per row how many tokens the sample table leaves unread.
+
+---
+
+# Wave 3 (last planned; written 10 Oct 2026 01:5x UTC by date -u; seven_day allowed_warning on every worker)
+By get_session: FV-N2a 6.38 (N2-FA FB FE N3 D3; AUD2-LEDGERN2-2), FV-N2b 5.64 (N2-GE N1 OR I/41 pt 4 p.869; N2-FH GF N3 D3; AUD2-LEDGERN2-1), FV-N2c 7.20
+(N2-GH N1 Grant Papers 10; GA N3 D3, GC GI N3 D2; AUD2-LEDGERN2-3), N2R-3 2.17 (N2-HA..HI, 6 printed, HB HC HF not located), O9R-1 3.45 (O9-DA..DK all No. 9 by
+header words; 4 printed, 7 not located; H 57 M 20; judge FAIL -1.094). Workers 33.49 + orchestrator ~3.5. Remaining under cap ~23: caps below sum 17.
+
+## FIX-N2a (Sonnet 5.5; cap $2.5, box 60 min, no network)
+Exactly the FIX-FM16/FIX-FM18 method (ledger8/ledger9 jobs files; FIX-FM11 is the full statement) for Cipher No. 2: apply s.5 of "## AUDIT (FV-N2a)", "(FV-N2b)",
+"(FV-N2c)" to ciphertext-no2.txt through decode_no2.py's existing entry-note mechanism (the missed name Felix McCloskey, Fifth Corps and the Dana signature
+in N2-FA; FB/FE fixes; "walch" omitted from the N2-FH transcription after the leaf; plain words collecting/business, Relay House; Pharoah Brooks = December 2
+as each audit words it); never hand-edit reading-no2.md; `decode_no2.py --write` then `--check`, exit 0 (also decode.py, decode_no9.py --check). Carry each
+change into status.json and the SO prompt rows per rule 10. NOTES "## FIX-N2a (10 Oct 2026, account 1, for LANE LEDGER-N2)": change, grade before/after,
+check output; depth_check; file_shrink_guard.
+
+## FV-N2d (Opus 5.5, first verifier; cap $7.5, box 100 min): N2-HB (9839/0), N2-HC (9807/1), N2-HF (9813/0)
+Exactly "## FV-N2a" of Wave 2. Read NOTES "## N2R-3" first. WORK-QUEUE row AUD2-LEDGERN2-4 for N3+ D2+ (account-3 tag).
+
+## FV-O9a (Opus 5.5, first verifier; cap $7, box 100 min): O9-DC (9673/0), O9-DE (9684/1), O9-DH + O9-DI (9684/0, two telegrams on one pointer)
+Exactly "## FV-N2a" for Cipher No. 9 entries (ciphertext-no9.txt, `decode_no9.py --check`); key-no9.md is a SAMPLE table and the book call rests on header
+words (label, Pagan/Pagoda, time word): re-test the book call yourself on the leaf before grading anything; unread groups stay M; rule 4a depth honestly
+(short entries, H 5-7 each). Read NOTES "## O9-BOOK" and "## O9R-1" first. WORK-QUEUE row AUD2-LEDGERN2-5 for N3+ D2+ (account-3 tag). The other not-located
+O9 rows (DA DD DF) are left for the next incarnation.
