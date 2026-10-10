@@ -1,0 +1,139 @@
+line	pos	token	gloss	note
+p6L_L01_a	1	18	o	
+p6L_L01_a	2	58?		
+p6L_L01_a	3	88?		
+p6L_L01_a	4	61?		
+p6L_L01_a	5	2?		
+p6L_L01_a	6	92?	e	
+p6L_L01_a	7	7?		
+p6L_L01_a	8	21?	x	
+p6L_L01_b	1	33	e	
+p6L_L01_b	2	41	n	
+p6L_L02_b	1	7	c?	
+p6L_L02_b	2	48?	u	
+p6L_L02_b	3	93	2	
+p6L_L02_b	4	13	1	
+p6L_L02_b	5	11?		
+p6L_L03_a	1	53	a	
+p6L_L03_a	2	6		
+p6L_L03_a	3	70?		
+p6L_L03_b	1	31	c	
+p6L_L03_b	2	12	5	
+p6L_L03_b	3	81	e	
+p6L_L03_b	4	37	1	
+p6L_L03_b	5	23	+	
+p6L_L05_b	1	11		
+p6L_L05_b	2	5?		
+p6L_L05_b	3	3?		
+p6L_L05_b	4	46		
+p6L_L05_b	5	95?		
+p6M_L01_a	1	19	h?	
+p6M_L01_a	2	53?	a	
+p6M_L01_b	1	5?		
+p6M_L01_b	2	1?		
+p6M_L01_b	3	9?	2?	
+p6M_L02_b	1	45	2?	
+p6R_L01_a	1	60		
+p6R_L01_a	2	18		
+p6R_L01_a	3	20		
+p6R_L01_a	4	86		
+p6R_L01_a	5	9		
+p6R_L01_b	1	7		
+p6R_L01_b	2	53?		
+p6R_L01_b	3	19?		
+p6R_L02_a	1	61?		
+p6R_L02_a	2	99?		
+p6R_L02_a	3	48?		
+p6R_L02_a	4	20?		
+p6R_L02_a	5	29		
+p6R_L02_a	6	21		
+p6R_L02_b	1	6		
+p6R_L02_b	2	42		
+p6R_L02_b	3	65?		
+p6R_L03_a	1	20	5?	
+p6R_L03_a	2	18	o	
+p6R_L03_b	1	92		
+p6R_L03_b	2	32	3?	
+p6R_L03_b	3	5?		
+p6R_L03_b	4	71?		
+p6R_L03_b	5	33		
+p6R_L03_b	6	46		
+p6R_L03_b	7	7		
+p6R_L03_b	8	77?		
+p6R_L04_b	1	31?		
+p6R_L04_b	2	29		
+p6R_L04_b	3	19		
+p6R_L04_b	4	95?		
+p6R_L04_b	5	53?		
+p6R_L04_b	6	13		
+p6R_L04_b	7	65?		
+p6R_L05_a	1	96		
+p6R_L05_a	2	28?		
+p6R_L05_a	3	68		
+p6R_L05_a	4	31		
+p6R_L05_a	5	14		
+p6R_L05_a	6	64		
+p6R_L05_a	7	29		
+p6R_L05_b	1	47?		
+p6R_L05_b	2	42		
+p6R_L05_b	3	30		
+p6R_L05_b	4	15?		
+p6R_L05_b	5	54?		
+p6R_L06_a	1	96		
+p6R_L06_a	2	23		
+p6R_L06_a	3	33		
+p6R_L06_a	4	17		
+p6R_L06_a	5	22		
+p6R_L06_a	6	65?		
+p6R_L06_a	7	81		
+p6R_L06_b	1	12		
+p6R_L06_b	2	66		
+p6R_L06_b	3	24?		
+p6R_L06_b	4	62		
+p6R_L06_b	5	81		
+p6R_L06_b	6	17		
+p6R_L10_a	1	22		
+p6R_L10_a	2	33		
+p6R_L10_b	1	46		
+p6R_L10_b	2	20		
+p6R_L10_b	3	13		
+p6R_L10_b	4	90		
+p6R_L10_b	5	17		
+p6R_L10_b	6	9		
+p6R_L12_a	1	77?		
+p6R_L12_a	2	11?		
+p6R_L12_a	3	52?		
+p6R_L12_a	4	37?		
+p6R_L12_a	5	21?		
+p6R_L12_b	1	54?		
+p6R_L12_b	2	65?		
+p6R_L14_a	1	2		intext?
+p6R_L14_b	1	4?		
+p6R_L14_b	2	66		
+p6R_L14_b	3	88		
+p6R_L14_b	4	40		
+p6R_L14_b	5	9		
+p6R_L14_b	6	13		
+p6R_L14_b	7	22		
+p6R_L15_a	1	7		
+p6R_L15_a	2	34		
+p6R_L15_a	3	25?		
+p6R_L15_a	4	24		
+p6R_L15_a	5	20		
+p6R_L15_a	6	72		
+p6R_L15_b	1	90		
+p6R_L15_b	2	17		
+p6R_L15_b	3	53		
+p6R_L15_b	4	12		
+p6R_L15_b	5	41		
+p6R_L15_b	6	81		
+p6R_L15_b	7	65?		
+p6R_L16_a	1	8		
+p6R_L16_a	2	57?		
+p6R_L16_a	3	91?		
+p6R_L16_a	4	82?		
+p6X_L01_b	1	31?		
+p6X_L01_b	2	72		
+p6X_L01_b	3	4?		
+p6X_L01_b	4	47?		
+p6X_L01_b	5	91?		

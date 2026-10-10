@@ -1,0 +1,139 @@
+line	position	sign	gloss	confidence	alt	why
+p6L_L01_a	1	18	o	H		agree
+p6L_L01_a	2	58		M		agree-flagged
+p6L_L01_a	3	88		M		agree-flagged
+p6L_L01_a	4	61		M		agree-flagged
+p6L_L01_a	5	2		M	B:72	differ
+p6L_L01_a	6	92	e	M		agree-flagged
+p6L_L01_a	7	7		M	B:71	differ
+p6L_L01_a	8	21	x	M		agree-flagged
+p6L_L01_b	1	33	e	H		agree
+p6L_L01_b	2	41	n	H		agree
+p6L_L02_b	1	7	c?	H		agree
+p6L_L02_b	2	48	u	M		agree-flagged
+p6L_L02_b	3	93	2	H		agree
+p6L_L02_b	4	13	1	H		agree
+p6L_L02_b	5	11		M	B:-	gap
+p6L_L03_a	1	53	a	H		agree
+p6L_L03_a	2	6		M		agree-flagged
+p6L_L03_a	3	70		M		agree-flagged
+p6L_L03_b	1	31	c	H		agree
+p6L_L03_b	2	12	5	H		agree
+p6L_L03_b	3	81	e	H		agree
+p6L_L03_b	4	37	1	H		agree
+p6L_L03_b	5	23	+	H		agree
+p6L_L05_b	1	11		H		agree
+p6L_L05_b	2	5		M	B:51	differ
+p6L_L05_b	3	3		M		agree-flagged
+p6L_L05_b	4	46		H		agree
+p6L_L05_b	5	95		M		agree-flagged
+p6M_L01_a	1	19	h?	M		agree-flagged
+p6M_L01_a	2	53	a	M		agree-flagged
+p6M_L01_b	1	5		M	B:-	gap
+p6M_L01_b	2	1		M	B:54	differ
+p6M_L01_b	3	9	2?	M		agree-flagged
+p6M_L02_b	1	45	2?	H		agree
+p6R_L01_a	1	60		H		agree
+p6R_L01_a	2	18		H		agree
+p6R_L01_a	3	20		H		agree
+p6R_L01_a	4	86		H		agree
+p6R_L01_a	5	9		H		agree
+p6R_L01_b	1	7		H		agree
+p6R_L01_b	2	53		M	B:83	differ
+p6R_L01_b	3	19		M		agree-flagged
+p6R_L02_a	1	61		M		agree-flagged
+p6R_L02_a	2	99		M		agree-flagged
+p6R_L02_a	3	48		M		agree-flagged
+p6R_L02_a	4	20		M		agree-flagged
+p6R_L02_a	5	29		H		agree
+p6R_L02_a	6	21		H		agree
+p6R_L02_b	1	6		M		agree-flagged
+p6R_L02_b	2	42		H		agree
+p6R_L02_b	3	65		M		agree-flagged
+p6R_L03_a	1	20	5?	H		agree
+p6R_L03_a	2	18	o	M		agree-flagged
+p6R_L03_b	1	92		H		agree
+p6R_L03_b	2	32	3?	H		agree
+p6R_L03_b	3	5		M		agree-flagged
+p6R_L03_b	4	71		M		agree-flagged
+p6R_L03_b	5	33		H		agree
+p6R_L03_b	6	46		H		agree
+p6R_L03_b	7	7		H		agree
+p6R_L03_b	8	77		M		agree-flagged
+p6R_L04_b	1	31		M		agree-flagged
+p6R_L04_b	2	29		H		agree
+p6R_L04_b	3	19		H		agree
+p6R_L04_b	4	95		M		agree-flagged
+p6R_L04_b	5	53		M		agree-flagged
+p6R_L04_b	6	13		H		agree
+p6R_L04_b	7	65		M		agree-flagged
+p6R_L05_a	1	96		H		agree
+p6R_L05_a	2	28		M		agree-flagged
+p6R_L05_a	3	68		H		agree
+p6R_L05_a	4	31		H		agree
+p6R_L05_a	5	14		H		agree
+p6R_L05_a	6	64		H		agree
+p6R_L05_a	7	29		M		agree-flagged
+p6R_L05_b	1	47		M		agree-flagged
+p6R_L05_b	2	42		H		agree
+p6R_L05_b	3	30		H		agree
+p6R_L05_b	4	15		M	B:25	differ
+p6R_L05_b	5	54		M		agree-flagged
+p6R_L06_a	1	96		H		agree
+p6R_L06_a	2	23		H		agree
+p6R_L06_a	3	33		H		agree
+p6R_L06_a	4	17		H		agree
+p6R_L06_a	5	22		H		agree
+p6R_L06_a	6	65		M		agree-flagged
+p6R_L06_a	7	81		M		agree-flagged
+p6R_L06_b	1	12		H		agree
+p6R_L06_b	2	66		H		agree
+p6R_L06_b	3	24		M		agree-flagged
+p6R_L06_b	4	62		H		agree
+p6R_L06_b	5	81		H		agree
+p6R_L06_b	6	17		H		agree
+p6R_L10_a	1	22		H		agree
+p6R_L10_a	2	33		H		agree
+p6R_L10_b	1	46		H		agree
+p6R_L10_b	2	20		H		agree
+p6R_L10_b	3	13		H		agree
+p6R_L10_b	4	90		H		agree
+p6R_L10_b	5	17		H		agree
+p6R_L10_b	6	9		H		agree
+p6R_L12_a	1	77		M		agree-flagged
+p6R_L12_a	2	11		M	B:21	differ
+p6R_L12_a	3	52		M	B:54	differ
+p6R_L12_a	4	37		M	B:77	differ
+p6R_L12_a	5	21		M		agree-flagged
+p6R_L12_b	1	54		M	B:57	differ
+p6R_L12_b	2	65		M		agree-flagged
+p6R_L14_a	1	2		H		agree
+p6R_L14_b	1	4		M		agree-flagged
+p6R_L14_b	2	66		H		agree
+p6R_L14_b	3	88		H		agree
+p6R_L14_b	4	40		M		agree-flagged
+p6R_L14_b	5	9		H		agree
+p6R_L14_b	6	13		H		agree
+p6R_L14_b	7	22		H		agree
+p6R_L15_a	1	7		H		agree
+p6R_L15_a	2	34		H		agree
+p6R_L15_a	3	25		M		agree-flagged
+p6R_L15_a	4	24		H		agree
+p6R_L15_a	5	20		H		agree
+p6R_L15_a	6	72		H		agree
+p6R_L15_b	1	90		M		agree-flagged
+p6R_L15_b	2	17		H		agree
+p6R_L15_b	3	53		H		agree
+p6R_L15_b	4	12		H		agree
+p6R_L15_b	5	41		H		agree
+p6R_L15_b	6	81		H		agree
+p6R_L15_b	7	65		M		agree-flagged
+p6R_L16_a	1	8		H		agree
+p6R_L16_a	2	57		M		agree-flagged
+p6R_L16_a	3	91		M		agree-flagged
+p6R_L16_a	4	82		M	B:84	differ
+p6X_L01_b	1	31		M	B:37	differ
+p6X_L01_b	2	72		M	B:77	differ
+p6X_L01_b	3	4		M		agree-flagged
+p6X_L01_b	4	47		M		agree-flagged
+p6X_L01_b	5	91		M		agree-flagged

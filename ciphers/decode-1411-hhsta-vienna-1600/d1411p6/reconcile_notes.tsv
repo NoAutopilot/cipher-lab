@@ -1,0 +1,21 @@
+line	col	settled	note
+p6L_L01_a	2	drop	both passes split one group "88" into 58|88; crop shows six groups 18 88 61 2 97 21 on this half; M
+p6L_L01_a	3	88	settled from crop: the looped-top 8 then 8 (the passes' "58" is the first 8); M
+p6L_L01_a	5	2	settled from crop: z-form 2 alone, comma after; M
+p6L_L01_a	6	97	settled from crop: 9 then hooked 7 written as one group (both passes split 92|7); M
+p6L_L01_a	7	drop	the "7" both passes read here is the second digit of 97 (col 6); M
+p6L_L02_b	5	81	settled from crop: group cut by the page edge, 8 then 1 visible; A read 11, B nothing; M
+p6L_L05_b	2	53	settled from crop: r-form 5 then 3 (A 5|3, B 51|3); M
+p6L_L05_b	3	drop	second digit of 53 (col 2); M
+p6M_L01_b	1	drop	A's "5" is the r-form stroke of the group in col 2; M
+p6M_L01_b	2	85	settled from crop: 8 then r-form 5 (A 5|1, B 54); 81 not excluded; M
+p6R_L01_b	2	53	settled from crop: r-form 5 then 3 (A 53, B 83); M
+p6R_L05_b	4	15	settled from crop: 1 then r-form 5 (A 15, B 25); M
+p6R_L12_a	2	11	settled from crop: two minim-form 1s (A 11, B 21); M
+p6R_L12_a	3	57	settled from crop: r-form 5 then hooked 7 (A 52, B 54); M
+p6R_L12_a	4	17	settled from crop: hooked-top 1 then 7 (A 37, B 77); M
+p6R_L12_b	1	57	settled from crop: r-form 5 then hooked 7, as col 3 of _a (A 54, B 57); M
+p6R_L16_a	4	89	settled from crop: 8 then the y-form 9 (as in the 29 groups; A 82, B 84); M
+p6X_L01_b	1	35	settled from crop: 3 then r-form 5 (A 31, B 37); M
+p6X_L01_b	2	77	settled from crop: two hooked 7s (A 72, B 77); M
+p6R_L14_a	1	intext	"Den 2. adi" -- a date in the clear text (both passes flagged intext?)
