@@ -5153,3 +5153,108 @@ canon cuss and Saugus are ready
 for service walrus polkaer park Kerr
 R OBrien
 note: FM-F1 Step 0 (fm_f1_step0.py, run under No. 1; as information, a hit on mssEC 25 is a non-test): (a) 0.800 (12/15), (b) p95 0.467, HIT (shuffled-key copy 0.800 HIT). No. 1 H8: 8 AM, D. D. Porter, Telegraph (-ed), 3, Commander. The monitor names are plain on the page; the signature 'Commander Parker' is M. Antecedent: pointer 5813 (cipher copy, not a clear copy); sibling E474 (13 Dec) concerns the same fleet. Holder CISOSEARCHALL (FM-S2): no clear copy. Print: be-api whole-collection returned Porter's 28 Nov 1864 'Move the Saugus and Canonicus up to Dutch Gap' (ORN ser. I vol. 11) and a modern monitor history, both different texts (rejected); this telegram not located. Transcription only (no image check). 
+
+### E600 | Page 217 | 9877 | mssEC 18 (obj 10074, pointer 9877; printed page 211), 27 Oct 1864 Washington (11.30 AM), Sampson at Baltimore (operator, label No. 1), for [Maj. Gen. Lew Wallace at Baltimore, M], signed [Secretary of War, M]: you will please give such [1st Delaware Cavalry, M] as are in your command a furlough [after the 1st day of Nov, M] of sufficient time to enable them to go home and vote, with transportation going and returning, provided the same [can be, M] done without prejudice to the public service; not located in print (L14-A; row 9877/1)
+Sampson Balt  Wash Oct. 27 1864
+florence submit ---- You will please give
+such torch plug America panama as
+are in your pontiac a fur lough
+ordnance plunge dayof Nov of suf
+ficient time tenable them togo home
+& vote pekin with Whig going
+& returning pedlar provided the same
+leghorn done without prejudice to the public service
+Infant
+No 1  11.30 am
+note: L14-A: No. 1 by sense and by whole-entry vocabulary share (.38/.31/.08): No. 1 (No. 2 and No. 9 read 'Chickamunga [sic]', 'Battery', 'Buford': nonsense). Step 0 as information only (a hit on mssEC 18 is a non-test: STEP0-KEYCTL, 05cdfed6c; meaning-shuffled-key copies read the same H count, so the count control cannot fail and sense decides): (a) 0.583 (28/48), (b) p95 0.188, HIT; (c) 16 key-dependent words (Baltimore, Lew Wallace, Hurlbut [slip for the provided-clause word], Delaware cavalry, command, secretary of war, transportation). Filed under the LEDGER-14 ruling (not located in print, no holder clear copy, a clause above the authentication distance). Leaf not image-read by this worker; transcription as the holder gives it (rule 2). The unit and the officer addressed are code-word readings (M). Not located in print: cached OR/ORN/Lincoln/Butler volumes (177), phrase grep 'of sufficient time to enable them to go home and vote', 'without prejudice to the public service' none, 27-28 Oct 1864 date windows with furlough + vote/Wallace/Hurlbut 0 with terms; IA be-api whole-collection quoted-phrase query: only Ohio furlough histories and Lincoln's 14 Nov 1864 Hurlbut letter about voting (different text, rejected). Holder CISOSEARCHALL (p16003coll11, all pointers, 10 Oct 2026): 'furlough' returns the row's own leaf among 56; 'furlough vote Delaware' 0.
+
+### E601 | Page 166 | 9826 | mssEC 18 (obj 10074, pointer 9826; printed page 160), 25 Aug 1864 Washington (10.30 PM), R. R. McCaine (operator), for [P. H. Sheridan, M], signature word unread ('Nicarangua'): among the [prisoners] brought in by [Major] Wait is one well known to me as a reliable Union man who has heretofore given me valuable information; he is from Upperville and says he heard no talk there of the rebel army intending to move this way; says they are conscripting everybody there capable of bearing arms, those who join Mosby being exempt from conscription [into] Lee's army; by this means Mosby can command between 800 and 1000 men; to get information from Laughters [Gap] would require a force able to manage Mosby, whose headquarters are on the route there; small parties will be picked up; I will send the 8th Illinois Cavalry again to that vicinity as soon as it can move, and will send with it one of the regiments' [..] from Falls Church; to clean out Loudoun County and destroy the crops there will require a much larger force than I can send; the horses of the 8th Illinois have to be shod before they can move; I will let you know tomorrow when they will move; I have a man at Middleburg who is employed to give me the earliest information of any movement of the rebels in this direction; not located in print (L14-A; row 9826/0)
+RR McCaine  Washn Aug 25th 1864
+Reliance Nabob unity Among the persons brought in by Tappan
+Wait is plug well known to me asa reliable wisdom
+man who has heretofore given me valuable sweden zebra He
+is from Upper will says he heard no talk there
+torch walpole oyster intending to tanner this way pekin says
+they are corn stripping every body there capable of bearing
+niggard pedlar those who swindle Moseby are exempt from swindling
+Hunter Opal stop By this means Mosby can polka between
+paddle publish & a waldo spit zodiac To get sweden
+from Laughters Sharper would require a saint able to manage
+<insertion>(mosby)</insertion> Syksey whose silver are on the route there zebra Small
+parties wilby pickt up zodiac Ile send the Platina Andover
+Pacific again to that vicinity peru it can talbot &
+will send with it plunge torch whips utopia very small
+utopia from Falls Church zebra To clean out Durham Co
+& question the crops there will require a much larger
+Salem than I can send stop I will do all
+I can however unity The spaffords torch paddle Andover have
+toby shod before they can tanner unity I will let
+uno whelp when they will tanner unity I have a
+man at Middle = bug who is employed to give me
+the earliest sutton of any tanner torch walnut in this
+direction I trust he will not deceive me webster Nicarangua
+note: L14-A: No. 1 by sense and by whole-entry vocabulary share (.44/.35/.16): No. 1 (No. 2 and No. 9 read 'Schenck', 'Bridgeport', 'Steam Boats': nonsense). Step 0 as information only (a hit on mssEC 18 is a non-test: STEP0-KEYCTL, 05cdfed6c; meaning-shuffled-key copies read the same H count, so the count control cannot fail and sense decides): (a) 0.619 (91/147), (b) p95 0.136, HIT; (c) 34 key-dependent words (Sheridan, Mosby, Lee, Loudon, Illinois, cavalry, army, numbers). Filed under the LEDGER-14 ruling. Leaf not image-read by this worker. Slips (M, no key edit): 'Bowling Green' for the word before 'ing' (conscripting), 'Join' for the verb 'are exempt from [joining]', 'Laughters' [Gap] (the plain place word is 'Laughters'; the decoder's Gap is the following code word), the addressee and the unnamed commander are code-word readings (M). The sender of the report is not named in the clear (sign-off code word 'Nicarangua'). Not located in print: cached volumes, phrase grep 'capable of bearing arms' (many volumes, none with the Mosby/Wait context), 'Mosby can' none; 25-26 Aug 1864 date windows with Mosby + Sheridan/Wait 0 with terms; IA be-api quoted-phrase queries returned only Mosby bibliographies (rejected). Holder CISOSEARCHALL (p16003coll11, all pointers, 10 Oct 2026): 'stripping' returns the row's own leaf plus 9087 (a different 'corn stripping' message of 4 Oct 1864, Beckwith, rejected), 6208/8194 ('stripping Washington', Dec 1862, rejected), 6318, 9983; 'Mosby exempt Upperville conscripting' 0.
+
+### E602 | Page 117 | 9777 | mssEC 18 (obj 10074, pointer 9777; printed page 111), 7 July 1864 Washington (10 AM; the clerk wrote 'June 7' on the leaf, the neighbouring items are 6 and 7 July and the content is Ricketts's division of 6-7 July, M), Sampson at Baltimore (operator), for Capt. [Thomas], Asst [Quartermaster] [Vinton, M], signed [bender, unread]: General Ricketts with about 8000 men will begin to arrive at Baltimore [to-morrow / above Francis, unread]; let the steamers be met and landed at [Locust] Point Depot, have everything in readiness to forward them to [Harpers Ferry]; they are without ambulances and wagons and if any are needed they can be sent from this Depot at the proper time; say to General Ricketts however that as Hunters [the decoder's 'Lee's' is a slip, M] large train was sent to the rear when he moved forward, and as 'Endless' [unread] is reported not to have lost wagons, it is supposed that there must be now on the Potomac at and above Harpers Ferry more than enough transportation for all the necessities of this campaign; a great part of the forage collected at Martinsburg is believed to have been left to fall into the hands of the rebels, and it is not well to embarrass operations by collecting too many animals and wagons (the entry runs from printed page 111, leaf 9777, onto 112, leaf 9778; the last four lines read from the holder transcription of 9778, not image-read); not located in print (L14-A; row 9777/1)
+Sampson Balto.  Wash June 7 1864
+Grapes Emily for Capt Thomas Asst Vinton Baptism
+= Shelby Ricketts with about platina purple spit
+will begin to arrive at Banditti above francis
+= Let the Stmrs be met & land
+optic Locust Pt Depot pekin have everything in
+readiness to forward them to cancer = They
+are without ambulances & wagons & if any
+are needed they can orbit proper time be
+sent from this Depot = Lay to Shelby
+Ricketts however that as Shelter Hunters large train
+was sent to the Watkins when he moved
+forward & as Endless is reported not to
+have lost wagons it is supposed that there
+must be now on the Attica at &
+above Camel more than Enough Whig for all
+the necessities of this campaign = Great part
+torch shaker collected at Dagger is believed to
+have been Stomach to fall into the hands
+torch Walnuts & it is not well to
+embarrass operations by collecting too many animals &
+wagons walrus bender - - - - -
+note: L14-A: No. 1 by sense and by whole-entry vocabulary share (.38/.39/.12): No. 1 by sense (No. 2 is 0.01 higher on the share and reads 'Dana N J T', 'Baton Rouge', 'Butler' addressee: nonsense; No. 9 reads 'Transports', 'Projectiles'). Step 0 as information only (a hit on mssEC 18 is a non-test: STEP0-KEYCTL, 05cdfed6c; meaning-shuffled-key copies read the same H count, so the count control cannot fail and sense decides): (a) 0.718 (51/71) on the first leaf, (b) p95 0.197, HIT; the full entry (88 content tokens, H26) was decoded here with the continuation. Filed under the LEDGER-14 ruling. Image read of leaf 9777 (2000 px, scratch): printed 111, header 'Sampson Balto. Wash. June 7. 1864' on the leaf and the entry runs to the foot of the page ('is believed to'); the text of the lines matches the transcription. Same-event print: Ingalls (Chief Quartermaster, City Point) to Meigs, 6 July 1864, 'Ricketts' division of about 5,000 infantry ... embarking for Harper's Ferry by Baltimore. No wagons or ambulances are taken. If any should happen to be needed, please direct some to be sent from the Washington depot' is printed OR I/37 pt 2 p.80-81 area (cached djvu; the Meigs-to-Thomas forward with the forage paragraph is not that text), and the holder's own pointer 4774 (p.333 of another ledger) carries that Ingalls text. Context only (M). Slips (M): 'Banks' for the word before 'Pt Depot' (Locust), 'Lee' for 'Hunter's' (the plain word is Hunters), 'Monroe' for 'animals'. Not located in print: phrase grep 'large train was sent to the rear', 'will begin to arrive at Baltimore', 'without ambulances and wagons' none; 6-8 July 1864 windows with Ricketts + Baltimore/Vinton/Thomas: only the Ingalls/Meigs and Grant dispatches. Holder CISOSEARCHALL (p16003coll11, all pointers, 10 Oct 2026): 'ambulances Ricketts' returns the row's own leaf and 4774 (the Ingalls text, a different message); 'Ricketts ambulances wagons Banks Depot' 0.
+
+### E603 | Page 163 | 9823 | mssEC 18 (obj 10074, pointer 9823; printed page 157), 19 Aug 1864 Washington (11.30 AM), McCaine (operator, label No. 1) at Charlestown Va, for [the recipient code 'bobby', unread], signed [Orgirldrillbore screw cut, a code signature, unread]: I have just received your dispatch of 10 PM yesterday; the 8th Illinois Cavalry will all be at Muddy Branch wharf and start immediately on their scout as you have directed; the river meanwhile will be watched by a provisional battalion of cavalry under Major [Tappan], 'fry' [unread]; [Sazeel [unclear on the leaf]] with his regiment is on the upper Rappahannock and will return by the gaps; I get the rumor from a rebel scout that Longstreet in [5, decoder reading, M] passed with a large number of troops this [Gordonsville] last Monday last Monday; you probably know by this time if the report be true; I will inform you of what the enemy are doing this side the 'tankards' [unread] (the entry runs from printed page 157, leaf 9823, onto 158, leaf 9824; the last nine lines read from the holder transcription of 9824, not image-read); not located in print (L14-A; row 9823/3)
+McCaine Charlestown Va  Wash. Aug. 19 1864
+Grapes aug hunkey florence bobby unity I have
+just recd your dispatch of rebecca Yesterday zebra
+The platina Andover Cavy will all beat Muddy
+Branch whf & start immy on their wolf
+as you have directed ---- The windsor meanwhile
+will be watched by a prov'l parson - lion of
+pacific under Tappan fry ---- <unclear>Sazeel</unclear> with his
+whip is on the upper amen & will
+return by the Sharpers ---- I get the
+rum - or from a Walnut weld that hoax
+in person passed with a large number of
+whiffs this Catawba last Mon - day ---- You
+probly know by this time if the white
+be true ---- I will inform you of
+what the rome are doing this side the
+tankards sig Or - girl - drill - bore screw cut
+note: L14-A: No. 1 by sense and by whole-entry vocabulary share (.39/.35/.17): No. 1 (No. 2 reads 'Etowah', 'Subsistence', 'Battery': nonsense; No. 9 reads 'Andover', 'Flank'). Step 0 as information only (a hit on mssEC 18 is a non-test: STEP0-KEYCTL, 05cdfed6c; meaning-shuffled-key copies read the same H count, so the count control cannot fail and sense decides): (a) 0.679 (19/28) on the first leaf, (b) p95 0.250, HIT (first leaf only); the full entry (69 content tokens, H24) was decoded here. Filed under the LEDGER-14 ruling. Image read of leaf 9823 (2000 px, scratch): printed 157; header 'McCaine Charlestown Va Wash. Aug. 19 1864, 11.30 am, No. 1'; the entry ends at the foot of the leaf with 'Sazeel with his' and continues on 158. Slips (M): 'Surrender' for the plain 'watched' (the decode's Surrender is the clear word 'watched' mis-hit; the page reads 'will be watched by a prov'l parsonlion of pacific under Tappan fry'), 'Illinois' reads the code word after 'platina', the sign-off is a run of code words, the addressee code is unread. Same leaf, same date: a Beckwith message (City Point, 10.10 AM) and a McCaine No. 1 message about 'Hotels pelton & Fitz Hugh' passing through [Bellows to Surgery Early] = a related report of 19 Aug 1864 from the same wire, not read here. Not located in print: phrase grep 'Muddy Branch wharf', 'start immediately on their scout' none; 19-20 Aug 1864 date windows with Muddy Branch + scout/cavalry 0 with terms; IA be-api: 'Muddy Branch' + cavalry quotations returned only OR front-matter/skirmish indexes (rejected). Holder CISOSEARCHALL (p16003coll11, all pointers, 10 Oct 2026): 'parsonlion' 0 (a clerk's word-division, not a word).
+
+### E604 | Page 205 | 9865 | mssEC 18 (obj 10074, pointer 9865; printed page 199), 13 Oct 1864 Washington (12 noon), Capt. J. C. Van Duzer (operator) for Maj. Gen. [Geo. H. Thomas at Nashville], signed [General-in-Chief Halleck, M]: two old regiments from General Pope and several new regiments from Ohio and Indiana are on their way to Nashville; [Maj. Gen. Schofield] and Kent are ordered to send you everything that can be spared from Kentucky; put yourself in communication with them; [General Grant] directs that you collect your forces and be prepared to meet [Hood] wherever he may present himself on the Tennessee, and that you take the supplies of the country without compunction, by thus supplying your own army [we] will leave none for him; another message, same date, for [Maj. Gen.] J. H. Wilson at Nashville: the Ordnance Department wants the report on imperfections in Spencer carbines which you promised me some weeks since, signed [C. A. Dana, M] (No. 2); not located in print (L14-A; row 9865/1)
+JC Van Duzer Nashville  Washington Oct 13th 1864
+Francis forlorn to Lantern zebra Plank old whips from
+Shelby Pope and several new Wharton from Abner and
+Alden are on their way to empress zebra King
+and Kent are ordered to send you every thing
+that canbe spared from Aurora zodiac Put yourself in
+platation with them John directs that you collect your
+saints and be prepared to meet Handle where ever
+he may present himself on the Bethel & that
+you take the supplies torch country with out compunction
+By thus supplying your own oyster Ewill leave none
+for him webster Jacob another same date for Shelter
+JH Wilson embrace unity The ordnance Quadroon want
+the wick on imperfections in Spencer Carbines which you
+promised me some weeks since signed Image ----
+( No 2 )
+note: L14-A: No. 1 by sense and by whole-entry vocabulary share (.43/.37/.17): No. 1 (No. 2 and No. 9 read nonsense). Step 0 as information only (a hit on mssEC 18 is a non-test: STEP0-KEYCTL, 05cdfed6c; meaning-shuffled-key copies read the same H count, so the count control cannot fail and sense decides): (a) 0.583 (35/60), (b) p95 0.183, HIT; (c) 24 key-dependent words (Thomas, Schofield, Grant, Hood, Ohio, Indiana, Kentucky, Tennessee, Nashville, regiment). Filed under the LEDGER-14 ruling. Leaf not image-read by this worker. Context in print (not this text): Halleck to Grant, City Point, 13 Oct 1864 'I have directed Schofield to send to Thomas everything that can be spared from Kentucky' is printed OR I/43 pt 2 (cached warofrebellion432unit), and Halleck to Schofield, Louisville, 9 Oct 1864 (OR I/39 pt 3) is the 9 Oct instruction: the same movement, not the same words. Slips (M): 'Kent' is plain on the page ('Kent' for Kentucky is the clerk's word), the second message's body words 'Has, or have been, reinforced' for 'Spencer' (the page word is Spencer), the signer is a code word (Dana is a decoder reading, M). Not located in print: phrase grep 'old regiments from General Pope', 'be prepared to meet Hood', 'present himself on the Tennessee' none in the cached volumes; OR I/39 pt 3 (IA id warofrebellion0039unse_03pt) be-api queries on 'old regiments Pope Thomas Nashville Schofield' and 'present himself Hood collect forces Thomas' 0 hits (OCR variants possible; limitation); IA whole-collection quoted-phrase queries returned only unrelated Schofield passages. Holder CISOSEARCHALL (p16003coll11, all pointers, 10 Oct 2026): query 'platation' returns the row's own leaf and 9866 (its neighbour on the same page) among 9; none a clear copy.

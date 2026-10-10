@@ -6331,3 +6331,25 @@ Read so far: 11 of 15 filed (E441-E443, E445-E448, E466, E468-E470); 1 in print 
 - [ ] image-check: nine of eleven filed rows not image-read; next above.
 - [n/a] retry: nothing failed, so no retry was needed.
 Verdict: keep going: 3 internal gaps; cheapest next: E448 15 Oct 1864 Manhattan/Stanton window by be-api, ~$0.2
+
+## L14-A (10 Oct 2026, account 1, for LANE LEDGER-14)
+Worker L14-A (Sonnet), 09:51-10:1x UTC by `date -u`. Job: the eight No. 1 rows MS18-R9/R10 held as step-0 hits (9835/1 9877/1 9793/0 9826/0 9806/2 9777/1 9823/3 9865/1), under the LEDGER-14 RULING (a step-0 hit is a non-test, STEP0-KEYCTL; file unless a holder clear copy exists, the row is in print, it is plain, or it is too short for a clause). Intake gate: `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Prior-work step (by hand): own work (the eight ids grepped in ciphertext*.txt, NOTES.md: only the MS18-R9/R10 held-row lines); holder CISOSEARCHALL all pointers (below); cached OR/ORN/Lincoln/Butler volumes (177) by phrase and date window; IA be-api whole-collection quoted-phrase queries; same-leaf siblings (9778, 9824 read for the runs-on entries). Scripts: `ms18/l14a*.py`, outputs `l14a_*.out`, `l14a_controls.txt` (book per row and the controls), `l14a_entries.txt`.
+Step 0 (as information only; figures from MS18-R9/R10, reproduced by no new run): 9835/1 (a) .692 (b) .308; 9877/1 .583/.188; 9793/0 .490 (.556 with the continuation)/.123; 9826/0 .619/.136; 9806/2 .638/.162; 9777/1 .718/.197; 9823/3 .679/.250; 9865/1 .583/.183 -- all HIT, so none a test (rule 3).
+| row | verdict | book / sense | where |
+|---|---|---|---|
+| 9835/1 (Armond, 6 Sept 1864, 30 tokens) | **no clause**: not filed | No. 1 and No. 2 tie on share (.37/.37); the cipher words read as slips (surrender, cavalry for the plain 'watch', 'Pacific'); the only key-dependent words are telegraph and the signature; the readable clause is plain on the page | holder 'mischief Pacific coast associates' returns only 9835; IA be-api quotes 0 |
+| 9877/1 -> **E600** | filed | No. 1 (.38/.31/.08) | not located: sources by date (L14-A, in E600) |
+| 9793/0 | **in print**, not filed | No. 1 | Halleck to Hunter, Washington 14 July 1864 12 m, OR I/37 pt 2 p.815 (cached djvu text, word for word 'Rockville road ... Edwards Ferry ... encumbered with a large amount of plunder ... Offutt's Cross-Roads'; not eyed on the page image); holder 'Offutts' hits 9793 and 2995 (a 1862 McClellan text, rejected) |
+| 9826/0 -> **E601** | filed | No. 1 (.44/.35/.16) | not located: sources by date |
+| 9806/2 | **in print**, not filed | No. 1 | Halleck to Hunter, Washington 31 July 1864 9.30 p.m., OR I/37 pt 2 p.537 (item before the running head 538), word for word ('any rebel force at Noland's Ferry beyond a few guerrillas ... We trust mainly to you and General Couch'); not eyed on the page image |
+| 9777/1 -> **E602** | filed (entry runs onto 9778) | No. 1 by sense | not located; the Ingalls-to-Meigs 6 July text, a different message, is printed OR I/37 pt 2 |
+| 9823/3 -> **E603** | filed (entry runs onto 9824) | No. 1 by sense | not located |
+| 9865/1 -> **E604** | filed | No. 1 (.43/.37/.17) | not located |
+Findings that other readers may want: (1) the leaf for 9777/1 reads 'June 7' but is the 7 July 1864 telegram (neighbours 6-7 July; Ricketts's division embarked 6 July): the date window in the earlier print check ('June') was therefore wrong for this row, corrected here; (2) the extractor stops at the leaf end: 9777/1 and 9823/3 both run onto the next leaf and the continuation lines (5 and 9 lines) come from the holder transcription of 9778/9824, not eyed; the first-leaf Step-0 figures cover the short part only; (3) 9793/0 and 9806/2 are Halleck-to-Hunter and are in print, which the held-row lines predicted only for 9793/0. Image reads: leaves 9823 and 9777 (2000 px, scratch); the other filed leaves not eyed (rule 2: negatives and graded readings are conditional on the holder transcription, M on every slip noted in the E600-E604 notes). No grade counts beyond decode.py's own (H 13+60+26+24+32, C 1+0+0+0+0 in order E600 E601 E602 E603 E604 under No. 1; sense, not H count, selected the book).
+Requests: hdl.huntington.org 17 + 8 + 5 (two takes, one for the three leaf images and two item-info reads, all 200); IA be-api 12 + 3; cached volumes read from disk.
+### Remaining gaps (L14-A, 10 Oct 2026)
+- [ ] E600-E604, 9835/1: first verifier (N-class) for the filed rows; the in-print rows 9793/0 and 9806/2 want a page-image read of OR I/37 pt 2 pp.815 and 537 (IA warofrebellion372unit). Owner: verifier lane; ~$1.4/entry.
+- [retired] a further step-0 pass on these rows (STEP0-KEYCTL: non-test).
+### Escalation (L14-A)
+Done within the brief; 9835/1 stays unread (no clause); Verdict: keep going (verifiers for E600-E604; page-image reads for the two in-print rows).
+
