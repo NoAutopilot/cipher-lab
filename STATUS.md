@@ -7949,6 +7949,25 @@ outcome B (another lane's). Check-in 11 trig_015e5aYFguiCRKpAUFrSzLkV at 02:49 U
 TX programme table 02:0x UTC 10 Oct: slot 1 orchestrator | slot 2 lane inc. 5 session_01ERAcUeCn1HuAUASaqBTzcf (depth 6) | slot 3 TX-RED inc. 3
 session_01X3CDfBTKgm75BMx43r7AWj, pass 15 due; open F68, F69 | slots 4-10: refilling from runnable rows (verifier pass on the closing-stretch
 flags vs Groen; ORACLE-LOCATION-1 after L74) | eval looks 0; S2 look 1 (record 0.150/0.296 stands; CA-S2 SER 0.134/0.288).
+Check-in 11 (02:4x UTC 10 Oct by date -u, clock 02:49-03:0x; orchestrator (account-4) session_012sGNgiddCpz4QUhQsMyoPU, 74.9 at 02:49, context 563k):
+five_hour allowed; seven_day allowed_warning (continuing). COUNTED RESULTS: the second-audit stall is cleared -- AUD2-LEDGER-34..38 all done
+02:37-02:43 (ledgered 5.44/3.35/5.03/4.60/4.44, archived): E351 E355 E356 E366 E369 E371 N3 D3, E357 E370 N3 D2 kept; E378 E381 LOWERED to N1
+D1 (message in clear in the Huntington transcription of its own page; the over-claim the second audit exists to catch), E346 flagged for a
+third audit, E371 flagged as possibly a summary of the order (read before any N4). 10 Oct: 25 results, 12 counted, 11 one audit, 2 N1;
+all time counted 152 (was 136 at 02:19). The account-4 dispatcher spawned AUD2-LEDGERN2-1/-2/-3/-5 at 02:35 for the account-1 N2 rows (live).
+SITE: SITE-ITEMS-1 done 02:30 (4.80 D, ledgered, archived): item_page() with the four sections, 107->114 people pages; rebuilt from here
+after the 02:43 audits: 304 pages (177 items, 3 displays, 114 people), English pending 171 of 177, tiers 1: 139 / 2: 7 / 3: 4 / unscored 27;
+committed b0c0e76df; republished to https://claude.ai/artifact/3vTAKPQQRWAbgVMXxM43Pc. SITE-ITEMS-2 spawned from here
+(session_018TmUuorh5t7gYk3EhPtF5N, cap 25, box to 05:20); SITE-ITEMS-3 still held. TX: lane inc. 5 8.9 at 02:49, 320k; TXV-GROEN done 02:25
+(clerk-split positions 8937-9459: 182 of 323 scored, CONFIRM/CONFLICT/NO-EVIDENCE clean 65/0/49, damaged 19/0/49 -- zero conflicts with the
+printed Groen copy; step 6 re-score is the lane's); TXE2-OL1BOXES done 02:22 (1,412 boxes on 35 lines) but the sorter page FAILS
+sorter_preflight (198 of 1412 tiles, 14.0% vs 5% limit): NOT published for L74; lane told to re-cut. TX-RED inc. 3 pass 15 at 02:15 (9.6):
+no blocker; F70 (three stale "being built" claims need dated corrections), F71, F72 (three ungated cheap steps); F68/F69 open. No
+[SO-TX-EXP-*] PR. TX-POOL-LEAF-2 (account 1) 5h09m, bounce at 03:40. desk_check gramont-jstor-waive date-heuristic unchanged. Check-in 12
+trig_01RGVEn9pU1qWSy56TANypW8 at 03:30 UTC.
+TX programme table 02:4x UTC 10 Oct: slot 1 orchestrator | slot 2 lane inc. 5 session_01ERAcUeCn1HuAUASaqBTzcf 8.9 | slot 3 TX-RED inc. 3
+session_01X3CDfBTKgm75BMx43r7AWj 9.6, pass 16 due ~03:00; open F68-F72 | slots 4-10: TXV-GROEN done, OL1BOXES done (preflight FAIL, re-cut
+owed), END-CIPHER in-lane | eval looks 0; S2 look 1 (record stands).
 
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
