@@ -629,3 +629,74 @@ prior_work.py's DONE for this item was a false match on the leaves 4/5/7 audit, 
 reading file's `#` header (twice now on this target) -- a tool issue for the parent, not fixed here; (2) L16 `h4237` is likely
 `h4b3t7` "habito" (solver lane). SO row: `SO-OLDEN-2442-L10` queued with `second-opinions/PROMPT-chatgpt-L10.md` (N3, CLAUDE.md
 verifier rule). D1, so no WORK-QUEUE AUD2 row (brief: AUD2-FAMILY-1 only at N3+ and D2+).
+
+## AUDIT 6 (V-OLD-O5): leaves 4/5/7 (ff.59v-62r) re-graded after OLD-O2 and OLD-WB (NOTES sections 24-25)
+
+Verifier V-OLD-O5 (account 2, LANE FAMILY-A2n, Opus), 10 Oct 2026, 03:13-03:2x UTC by `date -u`. Brief
+`.claude/briefs/runs/2026-10-10-ytbiz-family-0209-jobs.md` "### V-OLD-O5" (step (o5)). Separate from OLD-O2 and OLD-WB (the
+readers/scorers) and from AUDIT 3-5; not protecting any of them. No key, ciphertext, transcription, grade or reading changed.
+Disk only, no host requests. Claim under audit: NOTES 24's re-grade (729 cipher words, H 0 C 0 S 165 M 564; digit S 266/1479 =
+18.0%; longest S stretch 13 digits) and NOTES 25's boundary-insensitive figures (digit S 511/1479 = 34.6%; longest 17 digits;
+control S share rank 1/120, stretch rank 46/120). Novelty search not redone: no decoded word changed (OLD-O2 and OLD-WB changed
+grades only), so AUDIT 3/4's phrase searches stand.
+
+### 6a. Re-derivation
+- `python3 scripts/decode_L457.py --check` -> `committed reading matches a fresh run; {'clear': 70, 'M': 564, 'S': 165}`, exit 0.
+- `python3 scripts/wb_stest.py` -> reproduces NOTES 25 to the digit (L4/L5/L7 S 266/65/180 digits, pooled 511/1479 = 34.6%;
+  longest 13/9/17, pooled 17 "de chaues el coste del manteo i los quarenta"; control S share 0.448 rank 1/120, max wrong key
+  0.435; stretch rank 46/120, 45 wrong keys tie at 17).
+- Own script `depth/vold05_recount.py --check` (reads the committed token files only; exit 0): OLD-O2 grades L4 143/750, L5
+  31/217, L7 92/512, pooled 266/1479 (18.0%), longest 13 digits ("con migo como amigo i en secreto"); OLD-WB grades pooled
+  511/1479 (34.6%), longest 17. Agrees with both sections.
+- Robustness (same script): OLD-WB's sign-agreement step re-run with the opposite alignment tie-break (ins > del > diag instead
+  of diag > del > ins): sign-agreed cipher tokens 329 (OLD-WB 324), sign-agreement ceiling 20 digits (OLD-WB 17). Even this more
+  favourable alignment cannot reach the floor of 24.2 digits, so the result does not hinge on OLD-WB's tie rule.
+
+### 6b. Eye check (20 S words; rule committed first, b0ccb6929, `depth/VOLD05_eyecheck_rule.md`)
+Rule: the 7th, 14th, ... S-graded cipher token on L4+L7 in `reading_L457_tokens.tsv` order (145 S tokens), first 20; viewed on
+the masked O2 line crops (`images/crops_O2/`), sign by sign. Picks: L4a_05 737, L4a_13 c4rt4s, L4b_01 l7, L4b_10 n7, L4b_11 3,
+L4b_14 s8cr8t7, L4b_16 d2d4r, L4b_18 q28, L4b_22 p7r, L4b_26 37, L4b_28 2n4, L4b_30 c4rt4, L7b_01 ch4, L7b_05 d8m4s, L7b_08 p7r,
+L7b_11 m8, L7b_15 8n, L7b_19 h8ch7, L7b_21 v8r4, L7b_23 d8l. **20/20 agree with the image; 0 disagree; 0 cannot tell.** Every
+O2 crop viewed held the reconciled line it is named for (the OLD-SIBS line-identity fault is gone). Key-aware verifier: a check of
+sign identity, not a blind read; it regrades nothing. The S grade is therefore conservative rather than generous on this sample.
+Incidental, not graded: L7b_23 shows `ch428s` clearly ("chaues").
+
+### 6c. Depth (rule 4a, under `.claude/briefs/runs/2026-10-08-acct3-depth-bar.md`)
+- Cipher clause: a contiguous H/C/S stretch longer than the AD. Registered grades (OLD-O2): longest 13 digits. Boundary-
+  insensitive instrument (OLD-WB): 17 digits, which is also its sign-agreement ceiling and is matched by 45 of 119 wrong vowel maps
+  (rank 46/120), so as a stretch it does not discriminate the key. Opposite tie-break ceiling: 20. All are below the folder's
+  small-liberty floor (24.2 digits) and far below the AD with every M word counted (1078 digits under OLD-O2's 564 M; 795 under
+  OLD-WB's 415 M). **Not met.**
+- Code clause: n/a (no code values in this design).
+- **Ruling: D1 kept** ("fragments read") for leaves 4/5/7. depth_pct **18.0** (S digits 266/1479 under the registered OLD-O2
+  grades; up from 9.0 in AUDIT 3/4); the boundary-insensitive share 34.6% is reported beside it as a separate instrument, not
+  the registered grade. depth_unread: 1213 digit tokens M (564 words), almost all ordinary words, not names. depth_check:
+  "longest S stretch 13 digits registered / 17 boundary-insensitive (= sign-agreement ceiling; 20 with the opposite tie-break)
+  vs floor 24.2 and AD 795-1078 digits; S share control rank 1/120 both instruments; stretch control rank 46/120; eye check 20/20".
+  decode_status: "fragments read" (L4/L5/L7). The letter as a whole keeps B/C1's D2 (AUDIT 2).
+- Why D1 is not a negative: the reading's quality on the image (6b, AUDIT 3a) is higher than the grades show; the stretch is
+  capped by sign disagreements between the two masked machine passes (OLD-WB: 405 of 415 M tokens are sign-disagreement M), and
+  the 10% rule bars a third machine pass. The named way up is a person's sign sort on the L4/L7 masked crops (NOTES 25), then a
+  re-grade; no further scoring rule on these passes can pass 17-20 digits.
+- Verifier's sentence (AUDIT 3c's, still not required at D1): *the writer says that, finding himself pressed, he made a signature
+  of V.S. on a sheet of paper as best he could and had a servant write out the substance of the letter, telling the servant that
+  V.S. had left him some signatures in blank.*
+
+### 6d. Class
+**N3 carried** (leaves 4/5/7): no reading changed, so AUDIT 3/4's search and reasons for not N4 stand unchanged. **Key: ours.**
+Text: not known in print. N3 with D1: no second-audit WORK-QUEUE row (that needs D2+).
+
+| item | class | depth | prior plaintext | prior decipherment | key | evidence | confidence |
+|---|---|---|---|---|---|---|---|
+| inv. 2442, leaves 4/5/7 (ff.59v-62r), 729 cipher words | **N3** (carried) | **D1** (18.0% S digits; longest S run 13 registered / 17 boundary-insensitive < floor 24.2) | none located | none located | ours | cryptanalytic, fixed B/C1 key, masked re-cut + two blind passes (18.2% split), S share control rank 1/120; eye check 20/20; judge es1600 FAIL -1.017 vs real_p05 -0.818 | moderate on novelty; reading verified by eye on sampled tokens, graded fragments only |
+
+- **Safe sentence:** "Folios 59v-62r of the same Senisteros letter (Nationaal Archief 3.01.14 inv. 2442) read as Spanish under the
+  vowel-digit key we recovered from its other passages; about a fifth of the cipher is graded as read, in fragments. No prior
+  decipherment or print was located after the search logged in AUDIT.md (N3)."
+- **Unsafe sentence:** "Folios 59v-62r are now partially deciphered (about 35%)." (D2 wording at D1; 34.6% is a separate,
+  boundary-insensitive instrument whose stretch does not beat its wrong-key control, not the registered grade.)
+
+### 6e. Postmortem and propagation
+No over-claim in NOTES 24-25: both keep status open, report the stretch below the floor and leave depth to the verifier.
+Propagation (rule 10): class and depth unchanged, reading unchanged -> no edit to status.json (it carries no row for this target;
+the orchestrator's) or to the `SO-OLDEN-2442-L457` row and its prompt (whose "only partly graded as secure" still holds).
