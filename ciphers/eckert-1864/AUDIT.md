@@ -13589,3 +13589,123 @@ edit ciphertext.txt or reading.md):
 Requests: hdl.huntington.org 19 (10 CISOSEARCHALL, 6 item info, 3 IIIF 2400 px), archive.org 9 (3 djvu texts, 6 metadata/advancedsearch), be-api.us.archive.org 7,
 www.loc.gov 3, googleapis.com 6. No 429, no challenge, no retry loop.
 Queued: WORK-QUEUE `AUD2-LEDGER-37` (E371, E374, E375), SO-ECKERT-E371, SO-ECKERT-E374, SO-ECKERT-E375.
+
+## AUDIT (FV-N2a)
+
+Verifier FV-N2a (account 1, for LANE LEDGER-N2), 10 Oct 2026, 01:22-01:4x UTC by `date -u`; a separate session from the reader N2R-1, not protecting its
+conclusions. Scope: first audits of **N2-FA** (9879/0), **N2-FB** (9767/1), **N2-FE** (9905/1) in `ciphertext-no2.txt` (War Department Cipher No. 2,
+Washington sent ledger mssEC 18 = Huntington object 10074). Nothing decoded beyond key look-ups in key-no2.md (and key.md for the book check). Key source for
+all three: `period`. `decode_no2.py --check` -> "reading-no2.md is current" (exit 0). No spec exists for eckert-1864, so `judge_plaintext.py` was not run.
+Intake gate (01:22): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Prior work (`tools/prior_work.py
+eckert-1864 --item-spec 'item_id=N2-Fx;ptr=...;date=...' --step-type audit --offline`, one per entry): exit 4 each, verdict step LEAD, every LEAD an own-work
+line of this lane (N2R-1's filing and notes), none an earlier audit of these entries. Scripts: `ms18/fv_n2a_hdl.py` (+ `fv_n2a_hdl.out`), `ms18/fv_n2a_fts.py`.
+Book: N2R-1's coherence table (No. 2 beats No. 1, No. 9 and three shuffled copies of each on all three rows) is one reader's instrument; the check used here is
+sense under the key rows: under key.md (No. 1) Rodney = Entrench, which cannot make "will arrive ... and will be Rodneyed at once"; under No. 2 Rodney = Embark
+[#] and the clause reads. No. 2 stands for all three.
+
+### 0. What the reader missed
+- **N2-FA:** the names are not unread. "Felix Mack Clos Rey" (plain, split phonetically; the leaf has "Rey"/"Ry", not "Key") is **Felix McCloskey**, a Tammany
+  Hall operative with the Army of the Potomac in the 1864 soldier vote (Z. A. Fry, *A Republic in the Ranks*, 2020, p.174 and index "McCloskey, Felix, 174";
+  IA `republicinranks0000zach`, be-api snippet: "Felix McCloskey, a Tammany Hall operative and likely the agent ..."). "Commission ear" is "Commissioner"
+  (one man, not "they hold a commission"); "tooth Dayton Pem Pelham" is "to the 5 [Pem] Corps" = **to the Fifth Corps** (Dayton = 5, Pelham = Corps, H) --
+  which is why the telegram goes to **Nymph = Warren G K** (key-no2.md p.19 l.10 R, **H**, not "[Warren?, M]"), commanding the Fifth Corps. "Pem" stays
+  unread (M; the reader's "one of them" is not on the page). The signature is not unresolved: "talbot Combs yawl See A Day nay assist ant Brach" = "of the
+  Secretary of War, signed **C. A. Dana**, Assistant [Secretary]" (plain phonetic, I; "Brach" unread), then the operators' "how look now".
+- **N2-FB:** the leaf has the plain word **"presume"** (crop, line 5); the decoder's "[Hotly [?]]" is its own slip, not a ciphertext word (the reader noted
+  it). The holder has the **clear reply**: pointer **10443** (received, "1220 am 28th / HdQrs June 27 1864 City Point 730 pm ... QM Genl I shall be able to
+  place only two or three vessels at the disposal of the Medical Dept here capable of going to sea ... Gen Grant thinks it important that the Ocean Steamers
+  heretofore ordered shall go to N. Orleans ... it would seem necessary to increase the number of hospital transports for the Army of the Potomac sig Rufus
+  Ingalls"), printed OR I/40 pt 2 pp.463-464 (IA `warofrebellion402unit`). It answers N2-FB point by point and settles sender and addressee: Meigs,
+  Quartermaster General (tail "Wiley Buggy" decoded Quartermaster General, now C by the reply) to Ingalls at City Point. Same day in print: Ingalls to Meigs
+  26 June 9 a.m. (ocean steamers ordered to New Orleans) and McParlin to Barnes 26 June (over 6,000 patients at City Point, additional transports
+  imperative), OR I/40 pt 2 pp.432-433: the Surgeon General's advice N2-FB passes on.
+- **N2-FE:** the weekday words are H, not M: Wedlock = Tomorrow (p.25 l.1 L) and Young = Tuesday (p.25 l.21 L), and they agree with print: Sheridan,
+  Kernstown 3 Dec 1864 2 p.m., "The Third Division of the Sixth Corps left Stephenson's Depot at 12.30 p.m. to-day for Washington" (OR I/43 pt 2 p.730, IA
+  `warofrebellion432unit`) -- arriving "tomorrow afternoon"; Rawlins to Meade, City Point 4 Dec, "The advance of the Sixth Corps is now debarking here" (OR
+  I/42 pt 3 p.794); Sheridan to Grant and Halleck 4 Dec asking to keep Getty's (Second) division a few days (I/43 pt 2 p.739), after this telegram's
+  "Second Division will arrive Tuesday".
+
+### 1. Duplicates and image (own leaves, IIIF 2400 px, line crops via `tools/iiif_lines.py --image`, to scratch)
+- **Duplicate diff:** the on-disk page text of mssEC 18, mssEC 19 and the Fort Monroe pages (`sources/`) was grepped for each entry's distinctive cipher and
+  clear words ("Mack Clos", "Surgeon shark", "hospital weans", "Rodneyed", "Pearl Bradley"): own pages only, or other telegrams using the same key words
+  (mssEC 19 p8899, p9142; mssEC 18 p9930; fortmonroe p5877). The holder's full text finds 'ballot stuffer' only on 9879. **No duplicate.**
+- **N2-FA (9879, p.213, first entry):** five crops, all 13 lines: matches the transcription word for word ("Felix Mack Clos Ry", "tooth Dayton / Pem
+  Pelham", "first rate", "See / A Day nay assist ant Brach how look now"). **N2-FB (9767, p.101, second entry):** header "10 pm Washn June 26 1864",
+  crops of lines 4-12: matches ("presume" plain; "wilcox are removed tulip Waltzers from Granada will go to Ginger pike one service or duty must wait upon the
+  other wiley Buggy Sandwich", the last word small). **N2-FE (9905, p.239, second entry):** crops of all 7 lines: matches ("Jennie Benton For Palermo Raw lins
+  Chief Of Satan yacht", "Rodneyed", "Wedlock after noon", "young Stick", "Pearl Bradley", "Roof us In galls Palestine Chif Vermont How are you").
+
+### 2. Holder's full text, siblings and print
+**Huntington CONTENTdm** (p16003coll11, CISOSEARCHALL, all pointers; one take 01:29-01:3x, 13 requests: 10 queries, 3 IIIF): 'McCloskey' 0, 'Closkey' 0,
+'ballot stuffer' 1 (9879), 'Seymour Warren' 2 (3260 Mar, 10309 May 1864: other), 'Seymour agents ballots' 0, 'hospital transports' 3 (2918, 10394 other;
+**10443** the reply to N2-FB), 'accumulation sick wounded' 0, 'Surgeon General transports' 1 (6707, 1862), 'Sixth Corps embarked' 0, 'Bradley Rawlins
+Ingalls' 0. Positive control: 'ballot stuffer' finds the own page. No clear copy of any of the three at another pointer.
+
+**Print** (archive.org djvu texts to scratch: OR I/36 pt 3, I/40 pts 2-3, I/42 pt 3, I/43 pt 2, I/45 pt 1; letters-only phrase grep and date windows on the
+text, headings read around each date):
+- **N2-FA -> not located.** I/42 pt 3: the index's Horatio Seymour entries (pp.164-173, 237, 435, 455, 470) are Dana to Patrick 30 Oct (pp.435-436, "agents
+  of Governor Seymour here and in Baltimore have been detected in ... gross frauds and forgeries"), Dana to Butler 31 Oct (p.455, Crocker and McQuade) and
+  Stanton to Grant 1 Nov (p.470): same campaign, same author, other addressees and wording; no Warren item on the subject 29 Oct-1 Nov; 'Closkey',
+  'stuffer' 0 in the volume. be-api over all IA: "credibly reported to this Department" 0; "McCloskey" "ballot-box stuffer" 234 hits, none 1864 (a reflex
+  of the common phrase); Fry 2020 (above) names McCloskey in context, not this telegram.
+- **N2-FB -> not located.** I/40 pt 2: 25-28 June headings read; Meigs's own telegram is not printed (phrases 'great accumulation', 'hospital transports
+  fit', 'New Orleans service', 'wait upon the other', 'Medical Department until' 0); Ingalls's replies and McParlin's report are (above). I/36 pt 3: 0.
+  be-api over all IA: "hospital transports" "New Orleans service" 0; "great accumulation of sick and wounded" 17 hits, all Peninsular War (Wellington).
+- **N2-FE -> not located.** I/42 pt 3 and I/43 pt 2, 2-4 Dec headings read: Ingalls and Bradley absent; the Sixth Corps movement is printed from other hands
+  (above). be-api "Third Division will arrive here to-morrow" "Sixth Corps" 0.
+- Not searched: OR ser. III vol. 4 (readable text not on IA, FV-MS18o), Papers of U. S. Grant vols. 11-13 (be-api ids unverified, N2R-1), the Meigs papers
+  (LC), the Warren papers (New York State Library), NARA RG 92 and RG 107 (M473, telegrams sent by the Secretary of War: the probable clear copies), the
+  Washington and New York press of 31 Oct-8 Nov 1864 (N2-FA), HathiTrust, JSTOR.
+
+### 3. Grades and readings (reading-no2.md as of this audit; corrected readings for the FIX job, not edited here)
+- **N2-FA:** Happy = Washington, Hannah = 1 PM, Ogden = 30, Nymph = Warren G K, yacht/yard/stick = periods, watsoned = Report(ed), Quotient = Department,
+  Bengal = New York, Dayton = 5, Pelham = Corps, Alkali = California, talbot = Of the, Combs = Secretary of War, yawl = signed: **H 14 of 14** code groups (the
+  decoder's I 2 are its fillers); plain names McCloskey (I, phonetic split + Fry), Dana (I), "Pem" unread (M), "first rate" plain (sense "prevent", I).
+  Reading: "Washington, Oct 30, 1864, 1 PM. For [Maj. Gen.] Warren. It is credibly reported to this Department that Felix McCloskey, commissioner from
+  Governor Seymour of New York to distribute ballots &c to the Fifth Corps, [Pem] is an old ballot-box stuffer from California and is probably engaged in
+  frauds and forgeries like those in which other agents of Governor Seymour have been detected here. Please take such measures as you may judge advisable to
+  [prevent] any such criminal operations. By order of the Secretary of War, C. A. Dana, Assistant [Secretary]."
+- **N2-FB:** **H 28** by the decoder minus the slip on plain "presume" (= 27 code groups H), "See/Lee? Magic" M (the decoder's Grant U S, one row), tail
+  "Wiley Buggy" = Quartermaster General (H; sender confirmed C by 10443), "Sandwich" unread M: about **27 of 29** code groups H/C (93%).
+- **N2-FE:** **H 25, C 1** (Repeat = Order); "Roof us In galls" = Rufus Ingalls (plain), Palestine = Brig. General, Vermont = Quarter Master (H); "writ
+  earned" = retained (plain split); "How are you" operators' chatter: **26 of 26** code groups H/C.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | class | key | depth | % code groups H/C/S | basis | safe sentence |
+|---|---|---|---|---|---|---|
+| N2-FA Dana for the Secretary of War to Warren, 30 Oct 1864 | **N3** | period | D3 | 100 (14 H) | not located: OR I/42 pt 3 (Seymour index, 29 Oct-1 Nov headings), be-api all IA, holder full text; Dana to Patrick and to Butler (I/42 pt 3 pp.435, 455) are siblings in other words; Fry 2020 p.174 names McCloskey | "Read at grade H with War Department Cipher No. 2: on 30 Oct 1864 C. A. Dana, for the Secretary of War, warned Maj. Gen. G. K. Warren that Felix McCloskey, Governor Seymour's commissioner to distribute ballots in the Fifth Corps, was reported to be an old ballot-box stuffer from California, and told him to prevent any fraud; not located in print (searched 10 Oct 2026)." |
+| N2-FB Meigs to Ingalls, 26 June 1864 10 PM | **N3** | period | D3 | 93 (27 of 29) | not located: OR I/36 pt 3, I/40 pt 2 (25-28 June), be-api all IA, holder full text; Ingalls's reply (holder 10443 = OR I/40 pt 2 pp.463-464) printed, this telegram not | "Read at grade H with War Department Cipher No. 2: on 26 June 1864 the Quartermaster General told Brig. Gen. Ingalls that sea-going steamers in the James or at Fort Monroe should serve the Medical Department until the wounded at City Point were removed, ahead of the New Orleans service; Ingalls's reply of 27 June is printed in the Official Records; this telegram not located in print (searched 10 Oct 2026)." |
+| N2-FE Ingalls to Rawlins, 3 Dec 1864 | **N3** | period | D3 | 100 (25 H, 1 C) | not located: OR I/42 pt 3, I/43 pt 2, I/45 pt 1 (2-4 Dec headings), be-api, holder full text; the movement is printed from Sheridan and Rawlins | "Read at grade H with War Department Cipher No. 2: on 3 Dec 1864 Ingalls at Washington told Rawlins that the First Division of the Sixth Corps had embarked, the Third would arrive the next afternoon and embark at once and the Second on Tuesday; not located in print (searched 10 Oct 2026)." |
+
+Not N4 for any: OR ser. III vol. 4, Grant Papers vols. 11-13, the Meigs and Warren papers, NARA RG 92/RG 107 (M473), the 1864 press page by page, HathiTrust
+and JSTOR unsearched. Unsafe: "first", "new", "unpublished", "never printed"; "McCloskey was a ballot-box stuffer" (the telegram reports an allegation);
+"Meigs wrote" as H (the signer is the Quartermaster General by key and reply: C, the person is inference unless the office is meant); for N2-FA "Pem" as a
+second agent. Depth checks (D3: >=80% code groups H/C/S, an external non-statistical check): N2-FA -- code clause "Happy Hannah Ogden for Nymph" = Washington,
+1 PM, 30, for Warren; "to the Dayton Pelham" = Fifth Corps; external: Fry 2020 p.174 (McCloskey, Tammany operative with the army, 1864) and Dana's same-week
+telegrams on Seymour's agents (OR I/42 pt 3 pp.435-436, 455). N2-FB -- code clause "Surgeon shark advises me of great accumulation of sick and wilkes at
+Brimstone" = Surgeon General ... sick and wounded at City Point; external: holder 10443 / OR I/40 pt 2 pp.463-464 answering it. N2-FE -- code clause "The
+Benton Quaker will arrive here Wedlock after noon" = Third Division ... tomorrow afternoon; external: Sheridan 3 Dec 2 p.m. (OR I/43 pt 2 p.730) and Rawlins 4
+Dec (OR I/42 pt 3 p.794). Depth sentences (my own): N2-FA -- "A week before the 1864 election the War Department told Warren that the Seymour ballot
+commissioner for his Fifth Corps was said to be a California ballot-box stuffer and should be watched." N2-FB -- "Meigs put the sea-going steamers at City
+Point at the service of the wounded ahead of the New Orleans troop lift, and Ingalls answered next day that only two or three could go to sea and Grant
+wanted the steamers for New Orleans." N2-FE -- "As the Sixth Corps came back from the Valley, Ingalls reported from Washington that its divisions were being
+shipped to City Point one after another."
+
+### 5. Postmortem and fixes for a FIX job (not applied here)
+Failure: N2R-1 graded a key-row addressee (Nymph = Warren G K) and the weekday words as M where key-no2.md gives H, left a plainly spelled name and signature
+"unresolved", inferred "one of them" where the page has a singular commissioner and "Pem", and did not run the holder's search on the clear reply's words,
+which finds 10443 for N2-FB. Corrections (a verifier does not edit ciphertext-no2.txt or reading-no2.md):
+- N2-FA header: "to [Warren, G. K.?, M] at Nymph (a yacht-type address group)" -> "for Maj. Gen. G. K. Warren (Nymph, H; yacht = period)"; "[Felix Mack, Clos
+  Rey: names/groups unread] hold a commission" -> "Felix McCloskey (plain, 'Felix Mack Clos Rey', I; Fry 2020 p.174), commissioner"; add "to the Fifth Corps
+  (Dayton Pelham, H)"; "one of them is" -> "[Pem, M] is"; "signature groups not resolved (M)" -> "By order of the Secretary of War, C. A. Dana, Assistant
+  [Secretary] (plain phonetic, I)". Note: add Dana to Butler 31 Oct (OR I/42 pt 3 p.455) beside Dana to Patrick as same-week siblings.
+- N2-FB header: "tail group read as the Quartermaster General (Meigs, M)" -> "from the Quartermaster General (Wiley Buggy, H; C by the reply, holder 10443 =
+  OR I/40 pt 2 pp.463-464)"; reading: "[Hotly [?]]" -> plain "presume" (a per-entry plain-word exception, no key edit); note: add the reply and McParlin to
+  Barnes 26 June (OR I/40 pt 2 pp.432-433) as context, I/36 pt 3 and I/40 pt 2 read by date.
+- N2-FE note: "M for the weekday words, the shuffle floor for a day-name match is high" -> "Wedlock = Tomorrow and young = Tuesday H, agreeing with Sheridan 3
+  Dec 2 p.m. (OR I/43 pt 2 p.730) and Rawlins 4 Dec (OR I/42 pt 3 p.794)"; header "signature group read, M for the identity" -> "signed Rufus Ingalls (plain),
+  Brig. Gen., Chief Quartermaster (Palestine, Vermont H)".
+- All three: "leaf not eye-checked" -> "leaf eye-checked on crops (FV-N2a), matches the transcription".
+
+Requests: hdl.huntington.org 13 (10 CISOSEARCHALL, 3 IIIF 2400 px; all 200); archive.org 6 djvu (all 200) + 1 advancedsearch; be-api.us.archive.org 11 (all
+answered). Queued: WORK-QUEUE `AUD2-LEDGERN2-1` (N2-FA, N2-FB, N2-FE), SO-ECKERT-N2-FA, SO-ECKERT-N2-FB, SO-ECKERT-N2-FE. For LANE LEDGER-N2 (account 1)
