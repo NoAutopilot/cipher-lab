@@ -14131,3 +14131,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 12:51 | FV-L15b worker (Opus 5.5, account 1) | claim: eckert-1864 first adversarial audit E545 E560 E505 E567 E525 E572 (AUDIT "## AUDIT (FV-L15b)"); cap 8, box 12:56-14:46 UTC 10 Oct by date -u; hdl token only by take/release in turn. for LANE LEDGER-15 (account 1)
 2026-10-10 12:52 | R-5855 worker (Sonnet 5.5) | hdl.huntington.org take (12:5x UTC 10 Oct by date -u; <= 4 CISOSEARCHALL incl. control 9678 once; no open take seen), for LANE LEDGER-15 (account 1)
 2026-10-10 12:53 | R-5855 worker (Sonnet 5.5) | hdl.huntington.org release (12:5x UTC 10 Oct by date -u): 4 requests (control 9678 once + 3 CISOSEARCHALL), all 200, no drop, for LANE LEDGER-15 (account 1)
+2026-10-10 12:54 | FV-L15n (Opus 5.5, first verifier) | hdl.huntington.org take (13:0x UTC 10 Oct by date -u; <= 8 requests: 4 leaf images 5883 5888 5919 5779 + 4 CISOSEARCHALL; no open take seen), for LANE LEDGER-15 (account 1)
