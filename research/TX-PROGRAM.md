@@ -53,3 +53,11 @@ runs an experiment, never edits a PREREG, RESULTS, truth or key file.
    to the gate: no TRANSCRIPTION.md "Today" move without S1/S2; no eval look without a dev pass; the one-sentence "what is
    different" on every PREREG. 4. Carry the owner's view: the report (OWNER REPORT FORMAT) leads with experiments run / dev
    passes / eval looks / S1-S5 state / open red-team findings, in plain words.
+
+## Outside experimenter (owner's decision, 10 Oct 2026 00:5x UTC)
+The owner's ChatGPT runner may run its own experiments on the benchmark, dev items only, under
+`second-opinions/prompt-2026-10-10-tx-external-experimenter.md` (pre-registration first, our fixed scorer, exposure ledger, no truth edits,
+one `[SO-TX-EXP-<id>]` PR per experiment, "do not merge"). Collation: a PR-LAND worker copies the files to `benchmark-tx/ext/<id>/`;
+TX-RED grades the PR in its next pass as it grades ours; the lane adds one `research/TX-REGISTER.tsv` row with `campaign=external`;
+any eval/confirm score it needs is run once by the lane under the lane's look budget, never by the runner. Its results are evidence of
+the same grade as ours when the ledger is complete, and "untested-by-this-tool" when it is not.
