@@ -1,0 +1,99 @@
+{
+ "fold_p301": {
+  "ctrl_max": -0.8512,
+  "ctrl_mean": -1.5437,
+  "ctrl_p95": -1.342,
+  "decode": -0.973,
+  "frac_ctrl_ge_decode": 0.001,
+  "letters": 10,
+  "power_50": 0.62,
+  "supports": false,
+  "verdict": "non-test at this N"
+ },
+ "fold_p301_p418_pooled": {
+  "ctrl_max": -1.3169,
+  "ctrl_mean": -1.5455,
+  "ctrl_p95": -1.4237,
+  "decode": -1.2163,
+  "frac_ctrl_ge_decode": 0.0,
+  "letters": 32,
+  "power_50": 1.0,
+  "supports": true
+ },
+ "fold_p418": {
+  "ctrl_max": -1.2183,
+  "ctrl_mean": -1.5464,
+  "ctrl_p95": -1.4065,
+  "decode": -1.3473,
+  "frac_ctrl_ge_decode": 0.015,
+  "letters": 22,
+  "power_50": 1.0,
+  "supports": false,
+  "verdict": "does not beat control max"
+ },
+ "ocr_screen_p431": {
+  "beats_max": false,
+  "ctrl_max": -1.2581,
+  "ctrl_mean": -1.5544,
+  "ctrl_p95": -1.4042,
+  "decode": -1.6328,
+  "frac_ctrl_ge_decode": 0.794,
+  "letters": 15
+ },
+ "ocr_screen_p454": {
+  "beats_max": false,
+  "ctrl_max": -1.1278,
+  "ctrl_mean": -1.5494,
+  "ctrl_p95": -1.3751,
+  "decode": -1.5147,
+  "frac_ctrl_ge_decode": 0.432,
+  "letters": 10
+ },
+ "ocr_screen_p500": {
+  "beats_max": false,
+  "ctrl_max": -1.4074,
+  "ctrl_mean": -1.546,
+  "ctrl_p95": -1.4731,
+  "decode": -1.5749,
+  "frac_ctrl_ge_decode": 0.751,
+  "letters": 131
+ },
+ "ocr_screen_p521": {
+  "beats_max": false,
+  "ctrl_max": -1.4144,
+  "ctrl_mean": -1.5454,
+  "ctrl_p95": -1.4709,
+  "decode": -1.5058,
+  "frac_ctrl_ge_decode": 0.195,
+  "letters": 98
+ },
+ "ocr_screen_p575": {
+  "beats_max": false,
+  "ctrl_max": -1.1727,
+  "ctrl_mean": -1.5451,
+  "ctrl_p95": -1.4183,
+  "decode": -1.7551,
+  "frac_ctrl_ge_decode": 0.989,
+  "letters": 22
+ },
+ "ocr_screen_p581": {
+  "beats_max": false,
+  "ctrl_max": -1.3579,
+  "ctrl_mean": -1.5487,
+  "ctrl_p95": -1.4489,
+  "decode": -1.592,
+  "frac_ctrl_ge_decode": 0.749,
+  "letters": 43
+ },
+ "ocr_screen_vandeperre_pooled": {
+  "beats_max": false,
+  "ctrl_max": -1.4194,
+  "ctrl_mean": -1.5465,
+  "ctrl_p95": -1.4884,
+  "decode": -1.5702,
+  "frac_ctrl_ge_decode": 0.748,
+  "letters": 309,
+  "power_50": 1.0
+ },
+ "prereg": "1b786dc0b"
+}

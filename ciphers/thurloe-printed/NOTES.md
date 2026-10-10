@@ -3589,3 +3589,62 @@ Read so far: the p.72 key; Birch I pp.308, 309, 340, 351 under it (gate PASS on 
 - [x] image-check: all six leaves read from the page image, crops committed
 - [x] retry: first crop set clipped line starts; recut and re-passed
 Verdict: keep going: 3 internal gaps; cheapest next: decode the remaining vol 1 Dutch pages under the gated key (pp.304, 316-317, 324, 383), ~$3
+## DUTCH-MORE (LANE FAMILY-A2s, account 2, worker Opus 5.5, 10 Oct 2026 19:55-20:0x UTC by date -u)
+Brief: .claude/briefs/runs/2026-10-10-ytbiz-family-1709-jobs.md "### DUTCH-MORE". Question: do the other Birch vol 1 Dutch cipher pages read under the printed De Witt 1653 key (Brieven van Johan de Witt I, ed. Japikse after Fruin, p.72), each under its own control? Credit: the key and the statement that it serves Beverning's June letters are the edition's (p.92 n.2); Aymeloglu (unsolved-ciphers vande-perre-1653) reads the Vande Perre runs with his own alphabet; nothing copied.
+
+**Order note.** The prior-work runs (step 0) were run after the transcription passes, not before; the PREREG's "20:2x UTC" heading is wrong, `date -u` read 19:58 when it was pushed (1b786dc0b, before any score). Both are my slips.
+
+**Prior work (step 0).** `prior_work.py thurloe-printed --item-spec 'shelfmark=Birch 1742 vol 1 p.<301|418|316>;sender=..;recipient=..;date=..' --step-type decode --fetch`: exit 4, exit 4, exit 4 (the LEAD rows are `1-own` target-level live claims of other THUR jobs and of this job; none decodes these runs). Owed rows recorded with `--record`: Tomokiyo dutch.htm CLEAR (no decipherment; nothing for pp.301/316/418); solver repositories CLEAR (THUR-DUTCH greps: Aymeloglu Vande Perre runs only, Bourdeau p.435 only); leaves n330/n331/n447 CLEAR (no printed decipherment of the runs); editions CONTEXT (Birch is itself the edition, English with numerals; the De Witt edition pp.91-112 prints no Dutch for 27 June or 22 Aug). Check 1 by hand: no ROOM line, NOTES, AUDIT, HYPOTHESES or WORK-QUEUE row decodes pp.301 or 418 (DUTCH-KEY did pp.308/309, 340, 351, 435). G3 for p.301: UNCHECKED (a single 10-letter word is not a searchable phrase; `--reading` extracted none).
+
+**The brief's units, as found (vol 1 djvu text, IA, sha1 ac831b5b = b146/manifest.tsv).** pairs_census.tsv's page column and headings are a header parse and mislead for four rows:
+| brief unit | what Birch prints there | key-family unit? |
+|---|---|---|
+| p.304 | the edition's "Thurloe I p. 30·1" is p.301: Beverning to De Witt, London 17/27 June 1653 (leaf n330, page number seen) | yes: 1 run, 10 tokens; codes 289 135 190 171 128 (p.301), 170 (p.302) |
+| pp.316-317 | the four envoys to Griffier Ruysch, 4 July 1653 (edition p.92 n.2's letter) | codes only: one code, 128, Birch gloss "Denmark" (OCR); the letter says the envoys altered the cipher that day |
+| p.324 (census l.30055; page 326) | letter of intelligence from J. Peterson in Holland to Thurloe, English, codes to ~600, partly glossed by Birch | no: not the envoys' correspondence |
+| p.383 (l.34747) | J. Peterson again (De Witt's 8 Aug letter on the same page has no cipher) | no |
+| p.466 (l.41244) | J. Peterson, Sept 1653 | no |
+| p.486 (l.42893) | Peterson in Holland, Oct 1653 | no |
+| p.418 (l.37383, census "Beverning to Nieuport") | Beverning to Nieuport at the Hague, Westminster 22 Aug 1653 (leaf n447, page number seen) | yes: 3 runs, 22 tokens; codes 296 297 298 329 369 373 434 |
+| pp.431, 500, 521, 575, 581 | Vande Perre (7 = most frequent; Aymeloglu's alphabet) | screened from the OCR only |
+| p.454 | Boreel 13 Sept (168 116 11 16 ...), Boreel's own cipher (p.435 family) | screened from the OCR only |
+The four Peterson rows are a different correspondent and code (Thurloe's own agent, 3-digit, Birch glosses some groups); not transcribed, not decoded; flagged here so pairs_census.tsv is not read as four Dutch-family pages.
+
+**Route and counts.** archive.org: 4 requests (vol 1 djvu text once; leaves n330, n331, n447 at w2000), all 200, >= 2 s apart; take/release lines in ROOM. No other host. Leaves kept in scratch (re-fetch `https://archive.org/download/collectionofstat01thur/page/n<leaf>_w2000.jpg`); crops committed: `dutch1653/crops/p301_*`, `p302_*`, `p418_*`, `p418b_*`, `p418top_*` (crop step: `tools/iiif_lines.py --image v1_n330.jpg --out dutch1653/crops --region 15,3300,2430,840 --prefix p301 --lines-per-crop 2`; n331 region 15,180,2430,260 prefix p302; n447 regions 15,330,2430,1000 prefix p418, 15,1330,2430,560 prefix p418b; p418top (15,250,2430,90) caught only the header, so 297/369 on p.418 line 1 rest on pass A + OCR).
+
+**Ciphertext.** Pass A = one Sonnet call on 10 line crops, blind, no key (`dutch1653/passes/dutchmore_passA_sonnet.tsv`); pass B = my eye read (`dutchmore_passB_eye.tsv`). A = B on all 32 in-key tokens and every code > 100: `ct_p301.tsv` 24 5 37 14 7 34 29 38 22 19; `ct_p418.tsv` run 1 66 63 37 15 6 26 16 (pass A doubt: "15 6" might be "156"), run 2 51 16 12 58 29 26 52 17 64 53, run 3 66 63 38 17 61.
+
+**Scores (PREREG-DUTCHMORE, 1b786dc0b, pushed before any score; `dutchmore_score.py --check`, `dutchmore_score.json`).** Model and 1000 permutations exactly DUTCH-KEY's (letter 4-gram on the edition's held-in pages + nl16, era-bracketing, not era-matched).
+| unit | letters | decode | ctrl p95 | ctrl max | share of shuffles >= decode | power at N (50 synthetic) | pre-registered verdict |
+|---|---|---|---|---|---|---|---|
+| p.301 | 10 | -0.973 | -1.342 | -0.851 | 0.001 | 0.62 | non-test at this N |
+| p.418 | 22 | -1.347 | -1.407 | -1.218 | 0.015 | 1.00 | does not beat control max |
+| p.301+p.418 pooled (reported, not a gate) | 32 | -1.216 | -1.424 | -1.317 | 0.000 | 1.00 | (would support; not pre-registered, not used) |
+| OCR screen Vande Perre pp.431/500/521/575/581 pooled | 309 | -1.570 | -1.488 | -1.419 | 0.748 | 1.00 | De Witt key does not read them |
+| OCR screen p.454 Boreel | 10 | -1.515 | -1.375 | -1.128 | 0.432 | - | below p95 |
+Per Vande Perre page (OCR): 431 -1.633, 500 -1.575, 521 -1.506, 575 -1.755, 581 -1.592, each below its p95.
+
+**Readings (rule 4; `decode_dutch.py --check` OK; earlier readings byte-identical).** `decode_dutch.py` now takes page names (`python3 decode_dutch.py p301 p418`), NAMES gains p301/p418.
+- p.301 (10 tokens, 10 M, 0 H): "handalinge" (= handelinge, "negotiation", with 7 a for e), where Birch's English has "a great accroachment about our [run]". Graded M, not H: the fold is a non-test at N=10, so the reading rests on the English context only.
+- p.418 (22 tokens, all '-', not read): per the PREREG, the page did not beat its control max; no reading is claimed. For the record only (not graded, not a reading): the key's letters give "zyneaie", "secuiiteyt", "zynex" against Birch's English "I spoke with [run 1] in the Latin tongue", "chiefly of [run 2]", "whether [run 3] did understand"; whether these are misprinted "Zyn Excie"/"securiteyt"/"Zyn Ex[cie]" is the question the control could not license at this N.
+- Codes > 66: `dutch1653/codes_over_100.tsv` (16 rows: pp.301, 302, 316, 340, 351, 418), all M; the 128 conflict (Birch p.316 "Denmark", edition p.111 Danzig, the French Hague intelligencer "council of state") is logged in HYPOTHESES.md, not settled. Birch p.301 prints "The council of state." over "289 of 135".
+**Where it was not found / not done.** No Dutch text for 27 June or 22 Aug in the De Witt edition pages on disk; Brieven V (1723-25) and the Verbael not read; the edition pages naming p.418 (p.104 n.3) not read for a Dutch extract beyond the OCR scan. No verifier flag: no page beat its control with a clause above the authentication distance. Nothing classified for novelty.
+
+## Remaining gaps (DUTCH-MORE, 10 Oct 2026; replaces the DUTCH-KEY list for the vol 1 Dutch pages)
+Read so far: the p.72 key on Birch I pp.301, 308, 309, 340, 351 (p.301 at M only), p.418 tested and not read at N=22, p.435 and the Vande Perre/Boreel runs not read by this key; codes > 66 listed.
+- Birch I p.418 (22 Aug 1653, 22 tokens) fails its control at this N - blocker: too-short; the fold at 22 letters does not license the decode; next only with new material: the Dutch of Beverning's 22 Aug letter (Brieven V 1723-25 or the Verbael 1725, which the edition cites) as a known answer
+- Birch I p.301 (27 June, 10 tokens) is a non-test at N=10 - blocker: too-short; graded M on the English context; next only with new material: the Dutch of the 17/27 June letter (Brieven V / Verbael)
+- Brieven V (1723-25) and the 1725 Verbael not located on IA or Google Books - blocker: not-attempted; outside this brief's host list (V-DUTCH holds the print search); next: an IA advancedsearch for "Brieven geschreven ende gewisselt" 1723 and a be-api phrase check, ~$0.5
+- Birch I p.340 known-answer check (Nijhoff Bijdragen X p.291) - blocker: waiting-on V-DUTCH's reply (the first verifier's AUDIT.md, ROOM claim 19:52 UTC 10 Oct 2026); it is searching for the volume in this window
+- Code 128 data conflict and codes 170, 289/135, 296-298, 329, 369, 373, 434, 190, 171 unread - blocker: no-key-material; the envoys' altered 4 July list is not on file; next only with new material (the Nationaal Archief liassen Engeland 1653 cipher, as Bourdeau's gap names)
+- p.435 Boreel and p.454 Boreel: not read by this key - blocker: no-key-material; Boreel's new cipher is not on file
+
+## Escalation (DUTCH-MORE, 10 Oct 2026)
+- [x] siblings: every vol 1 Dutch-family row of pairs_census.tsv placed; 2 key-family pages decoded, 6 OCR-screened, 4 re-attributed to J. Peterson
+- [x] clear-pages: none on file for 27 June or 22 Aug
+- [x] known-keys: the printed p.72 key applied with controls
+- [ ] print: Brieven V / Verbael not located (V-DUTCH holds the print search this window)
+- [n/a] key-rebuild: a printed key was used, nothing rebuilt
+- [x] image-check: leaves n330, n331, n447 read; crops committed
+- [x] retry: p418top crop missed line 1; 297/369 taken from pass A + OCR and marked so
+Verdict: keep going: 1 internal gap; cheapest next: locate Brieven V (1723-25) / the 1725 Verbael on IA for the Dutch of 27 June and 22 Aug, ~$0.5

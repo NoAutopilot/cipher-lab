@@ -1,0 +1,11 @@
+file	numbers
+p301_L03_s1.jpg	289 135
+p301_L04_s1.jpg	190 171
+p301_L05_s1.jpg	128 | 24 5 37 14 7 34 29 38 22 19
+p302_L02_s1.jpg	170
+p418_L02_s1.jpg	66 63 37 15 6 26 16
+p418_L03_s1.jpg	51 16 12 58 29 26 52 17 64 53
+p418_L07_s1.jpg	66 63 38 17 61
+p418b_L04_s1.jpg	297 | 373 296
+p418b_L05_s1.jpg	434 329
+# worker eye read 10 Oct 2026; 297 and 369 on p.418 l.1 not eye-read (crop missed the line; pass A and the OCR agree)
