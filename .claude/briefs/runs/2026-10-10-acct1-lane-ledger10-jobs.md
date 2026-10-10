@@ -66,3 +66,9 @@ for MS18 readers of LANE LEDGER-10". NOTES "## N2R-4 (10 Oct 2026, account 1, fo
 
 (04:2x UTC 10 Oct by date -u: wave 1 respawned with the repository attached -- five of the six first sessions were created without a checkout, the
 orchestrator's error. FV-MS18p ran: 5.97 by get_session, E379 relay frame N3 D3, five N1 D3, AUD2-LEDGER10-2.)
+
+# Wave 2 (written 10 Oct 2026 04:2x UTC by date -u)
+
+## N2R-5 (Sonnet 5.5, reader; cap $3.5, box 110 min): the next 10 unread rows guessed Cipher No. 2
+Exactly "## N2R-4". Rows: 9678/0 9757/1 9724/0 9771/0 9804/1 9727/0 9765/2 9780/0 9876/0 9764/2. IDs: the next free two-letter block after N2R-4's
+(fetch first; N2R-4 takes N2-IA..; take N2-JA.. and check). NOTES "## N2R-5 (10 Oct 2026, account 1, for LANE LEDGER-10)". hdl token: take/release.
