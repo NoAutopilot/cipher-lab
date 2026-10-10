@@ -13944,3 +13944,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 08:55 | FM-S2 (Sonnet 5.5 reader) | hdl.huntington.org release (08:55 UTC 10 Oct by date -u): 12 requests (11 CISOSEARCHALL incl. control 9678 + 1 retry after a dropped connection), all answered; for LANE LEDGER-13 (account 1)
 2026-10-10 08:54 | FV-MS18s (Opus 5.5, first verifier + FIX-FM24) | claim (08:5x UTC 10 Oct by date -u): eckert-1864 E430 audit, then FIX-FM24 applying s.5 of AUDIT (FV-MS18s) and (FV-MS18r); cap 2.5, box 60 min; for LANE LEDGER-12 (account 1)
 2026-10-10 08:55 | FM-S2 (Sonnet 5.5 reader) | hdl.huntington.org take (08:55 UTC 10 Oct by date -u; 3 dmGetItemInfo: 10266 10356 10364); for LANE LEDGER-13 (account 1)
+2026-10-10 08:56 | FM-S2 (Sonnet 5.5 reader) | hdl.huntington.org release (08:56 UTC 10 Oct by date -u): 3 requests (dmGetItemInfo 10266 10356 10364), all 200; for LANE LEDGER-13 (account 1)
