@@ -115,3 +115,23 @@ Consolidates the E323 (FIX-FM13), E334 (FIX-FM15) and E345 (FV-MS18f) notes abov
 - **Verdict rule per row.** No. K if B points to K and A does not name a different book; if A names K and B is silent, No. K; if A and B name
   different books, "conflict -- none filed"; neither, "none in hand". A row that reads No. 1 is handed to LANE LEDGER, not filed. Nothing is filed by O9-BOOK.
 - **Script.** o9book.py (this folder); output o9book.out.
+
+## BOOK-65 pre-registration (10 Oct 2026, 05:48 UTC by date -u; account 1, for LANE LEDGER-11; written before any decode)
+
+- **Question.** Which book in hand (No. 1 key.md, No. 2 key-no2.md, No. 9 key-no9.md) reads ten 1865 mssEC 18 rows of ms18/clean-ms18.tsv guessed
+  No. 9 (10047/1, 10025/1, 10013/1, 10059/1, 10014/1, 10051/0, 10052/0) or No. 2 (10012/1, 10023/1, 10045/0)? Own-work grep (05:4x UTC): none of the
+  ten pointer/entry pairs is in ciphertext*.txt, NOTES.md, AUDIT.md or the last 1,500 ROOM lines (10013/0, 10025/2 are other entries of the same leaves).
+- **Text.** The volunteer transcription on disk (sources/mssEC18/p<pointer>.json), cut by fortmonroe/fm_entries.py (FM_LEDGER=ms18) as O9-BOOK did;
+  transcription-conditional (rule 2); no image unless a page JSON is missing.
+- **Instrument B (first, the header).** Label above the header ("No 1", "( 9 )" ...), opening place word (Pagan/Pagoda = Washington in No. 9; Battery No. 1;
+  Artillery No. 2), time word against the header's written time under each book.
+- **Instrument C (the gate, the brief's: sense / clause).** Decode under No. 1, No. 2, No. 9 and under one meaning-shuffled copy of each (word-kind
+  meanings permuted among the book's own word-kind rows; seeds 1, 2, 3 = 9 shuffled decodes per row). A book "reads" the row only if its decode carries a
+  coherent clause of at least four consecutive tokens including at least two code-word meanings that make sense together with the plain words around them
+  (rule 4a: above the authentication distance for a code of this size, every liberty counted), the clause is stated, and no shuffled decode and no other
+  book gives a comparable clause on the same tokens. Instrument A (O9-BOOK's bigram count) is reported beside as supplementary only: an H-count or
+  bigram-count control ties a shuffled key by construction or nearly so (ledger-n2 lesson), so counts decide nothing.
+  Can the control differ? A shuffled copy keeps every code token and changes only meanings, and a clause is a property of meanings, so yes.
+- **Verdict rule per row.** C names K and B does not name another book -> No. K; B names K and C is silent -> "No. K by header, body unread"; B and C name
+  different books -> "conflict"; neither -> "none in hand". Nothing filed. The other 26 1865 rows: book predicted from header words only, no gate.
+- **Script.** book65.py (this folder); output book65.out.

@@ -5239,3 +5239,75 @@ located" rested on be-api 502s). N2-IC (Meigs to Canby, 7 June 1864, the Vicksbu
 WORK-QUEUE AUD2-LEDGER10-4 queued. For a FIX job (AUDIT (FV-N2e) s.2, not edited into the reading): IG 'Bear mew day Douglas' = Bermuda Hundred (not
 Bridgeport); IB 'Shelby' = shall be (not Harbor), '[1]' = first; IC 'rebellion' plain (not Importance), report-date numerals M; ID 'Weldon'/'McCallum'
 are plain hotels/George(town). The N2R-4 gap "6 unlocated rows" is closed by this audit for all six. for LANE LEDGER-10 (account 1)
+
+## BOOK-65 (10 Oct 2026, account 1, for LANE LEDGER-11)
+
+Question: which book in hand (No. 1 key.md, No. 2 key-no2.md, No. 9 key-no9.md) reads ten 1865 rows of `ms18/clean-ms18.tsv` that the share guesses as
+No. 9 (10047/1 10025/1 10013/1 10059/1 10014/1 10051/0 10052/0) or No. 2 (10012/1 10023/1 10045/0)? Pre-registered in HYPOTHESES.md "## BOOK-65
+pre-registration" (05:48 UTC) before any decode. Script `book65.py` (o9book.py with the new rows, `--shufshow` printing the shuffled-copy decodes),
+output `book65.out` (`--show --shufshow --headers`). Text: the volunteer transcription on disk (sources/mssEC18/p<pointer>.json); no image fetched, so every
+call is conditional on that text (rule 2). Requests: 0 network. Nothing filed.
+Intake gate (05:47 UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Own work (by hand, 05:4x UTC):
+none of the ten pointer/entry pairs is in ciphertext*.txt, NOTES.md, AUDIT.md or the last 1,500 ROOM lines (10013/0 = E376 and 10025/2 are other entries
+of the same leaves). `tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 18;folio=<ptr/entry>;date=..' --step-type decode --offline`
+for 10014/1, 10012/1, 10023/1 (05:5x UTC): "verdict plaintext: LOOK, step: LEAD (exit 4)" -- the generic own-work LEADs of this folder and the leaf LOOK,
+the same holds O9-BOOK met; a key test files nothing, and the reader who files a row owns its per-row prior-work and print steps.
+
+Gate (instrument C, the brief's): a book reads a row only if its decode carries a coherent clause (>= 4 tokens, >= 2 code meanings) that none of its 3
+shuffled copies and no other book gives. Instrument A (O9-BOOK's bigram count; book / shuffled max of 3 / 20-seed p95) is beside it, supplementary only.
+
+| row | date, header | A No.1 | A No.2 | A No.9 | B (page text) | C: clause | verdict |
+|---|---|---|---|---|---|---|---|
+| 10047/1 | 12 Aug 1865, Gross New Orleans | 3/4/5 | 5/6/8 | 0/1/1 | label "No 4  630 pm" above the header; Mary = 6.30 PM under No. 1 and No. 2 (No. 9 12 midnight) | none: Parson, feather, quail, fawn, Abigail unread in every book (No. 1 [Battle] J. M. [Right], No. 2 [Attack] [Siege]) | **none in hand** (No. 4 label) |
+| 10025/1 | 30 May 1865, J. C. Sullivan Nashville | 2/4/4 | 5/5/5 | 1/1/1 | "930 am" above; Flora is a time word in no book | No. 9 only: "Separate the [Cavalry] whose time expires" (Relay = Cavalry, one code meaning; shuffles give Cannon, Rail Road, Fall Back); Palestine, Harness, Kossuth, Tinker, Madeira unread in all three | **none in hand** (Sullivan series, below); No. 9's Relay = Cavalry is a lead, not a reading |
+| 10013/1 | 20 May 1865, "4 JC Sullivan Nashv ... 12 M" | 3/4/4 | 3/5/6 | 1/3/2 | "4" before the header (siblings on the leaf: "No 1 Capt RC Clowry" = E376, read No. 1); Henrietta = 2.30 PM (No. 1/2), 4 PM (No. 9) against 12 M | none: "recuperate ... their pilgrims" reads [Captain]s (No. 1), [Battled]s (No. 2), unread (No. 9) where the sense wants horses | **none in hand** (No. 4 label) |
+| 10059/1 | 18 Oct 1865, A. H. Caldwell | 6/5/5 | 5/6/7 | 2/3/3 | no label, no header time; Cornelia = 6.30 AM (No. 1/2), 12.30 AM (No. 9) | none: the court-martial questions about J. C. Briscoe are plain; neuralgia, galway dublin, Clifton, joyful read nonsense or not at all in every book | **none in hand** |
+| 10014/1 | 21 May 1865, G. D. Sheldon Ft Monroe | 7/8/8 | 5/9/13 | 5/6/6 | no label, no header time; Elizabeth = 10.30 AM (No. 1/2), 8 AM (No. 9) | **No. 1**: "[for] Sheldon (?) ... Animal = [Monroe] [.] The women & [children?] may be sent back [in the] [steam]er Clyde [.] The navy can take care [of the] prisoners that were taken ... Permit no [communication] by any [of the] party with persons outside. [signed] [Secretary of War]" (Torch = Of the twice, Sligo Weaseler = in the steamer, Walrus Infant = signed Secretary of War); No. 2 [Pursue] prisoners, No. 9 unread; shuffles [Ohio]/[Beaufort]/[Burnside] prisoners. Clyde is the plain steamer name (No. 1 decodes it as [Galveston]; leave it plain); Jacob, Animal and "children" (plain on the page) as the volunteer gives them | **No. 1** (C; B silent). The segment also carries the leaf's next entry, J. C. Sullivan Nashville 21 May (Hannah = 1.30 PM No. 1): unread in every book (Sullivan series) |
+| 10051/0 | 9 Sept 1865, no addressee | 5/5/9 | 9/6/9 | 4/4/5 | no label; Wheel is a time word in no book; colour words Red, crimson, Scarlet, blue, purple, Carmine as stops (9926/1, label "No 3", has the same) | none: No. 1 "[Meade] to visit", No. 2 "[Longstreet] to visit"; Rabbit, Kindle, Justify unread | **none in hand** (colour-word book; A's No. 2 call is a function-word artefact) |
+| 10052/0 | 17 Sept 1865, D. H. Bates Boston | 5/4/4 | 2/3/5 | 2/3/3 | no label; Delia = 7.30 AM (No. 1/2), 2 AM (No. 9); colour words (Red, purple, scarlet, Brass) | none: heating contract (boilers, radiators) plain; Insanity, Ragged, Cozzens read nonsense in every book | **none in hand** (colour-word book; A's No. 1 call is noise) |
+| 10012/1 | 19 May 1865, "No 2 R. O'Brien Raleigh" | 9/9/10 | 19/11/12 | 4/6/7 | label "No 2", "1230 Pm" above; Happy Job Morgan = [Washington] [May] [19] under No. 2; Topsy = 12.30 PM under No. 2 (No. 1: 12, No. 9: 11.30 PM) | **No. 2**: "[Augusta] [Georgia] copy to Charlotte [North Carolina] ... L. F. Bates and [one] or [two] loyal [men] who heard the speech at Charlotte should be sent here immy to [report] to [Secretary of War]. Find the original [telegram] from [Breckenridge] to [Jeff Davis] if possible ... By [order] [of the] [Secretary of War] [signed] Thoms Tack cart [Major] & A.D.C."; shuffles give "[Tyners Station] to [-]", "[Kilpatrick] to [Shellmound]"; No. 1 "[President] to [Grant]" with the rest nonsense | **No. 2** (B and C agree) |
+| 10023/1 | 28 May 1865, J. C. Sullivan | 13/19/19 | 21/15/18 | 6/9/9 | "9.30 P. m" above; Rachael is a time word in no book | none for the Sullivan entry (Salmon, Baptize, Harlot, Impress unread). The segment also carries the next entry, W. G. Fuller New Orleans 28 May 9.30 PM: **No. 2** reads it (Happy Nelson Fisher Rosalie = [Washington] [28] 9.30 PM): "for [Canby] [.] The [Adjutant General] will transmit an order changing in some respects the military [command] in your [division]. [Mississippi], [Alabama], [Florida] and Key [West] are added to your [Department] to which you are assigned and [Banks] relieved. The [President] directs me to express his wish that the military authorities render all proper assistance to the civil authorities in the state of [Louisiana] ..."; shuffles "[Harker] [Mask] [Communicate] and Key [Feint]" | Sullivan entry: **none in hand**; the Fuller entry beside it (entry 2 of the leaf or later, not cut separately by fm_entries): **No. 2** |
+| 10045/0 | 29 July 1865, Col Babcock Saratoga | 9/8/9 | 7/7/9 | 0/1/1 | no label; Webster read [signed] (No. 1) or [Surrounding] (No. 2): not a place word in any book; colour words scarlet, crimson, brass, pink, purple, silver, bronze | none: the barracks/officer accounting (narrow ... gossip) unread; No. 1's [Butler], [Porter], [Granger] are scatter | **none in hand** (colour-word book) |
+
+**Summary.** Read: No. 1 on 1 row (10014/1, Stanton (?) to Sheldon at Fort Monroe, 21 May 1865, about the party on the steamer Clyde); No. 2 on 1 row
+(10012/1) plus the Fuller 28 May entry merged into the 10023/1 segment; none in hand on 8 (the No. 9 guess reads none of its seven rows). Instrument A agreed
+with C only where C found a clause (10012/1, 10023 segment); its other non-"none" calls (10051/0 No. 2, 10052/0 and 10045/0 No. 1) are on rows no book
+reads, the function-word false positives O9-BOOK met. The rows not in hand fall in two families the page text names: **"No 4" rows** (labels on 10047/1,
+10013/1, 10020/3, 10031/1, 10041/3; the J. C. Sullivan Nashville series 10013/1, 10014/1 part 2, 10020/3, 10023/1, 10025/1 shares Conquer/Conquor, Palestine,
+Relay, Fayette, pilgrims, Elk, Welch; openings Implore/Indian/Impress) and **colour-word rows** (Red, crimson, Scarlet, purple, bronze, Carmine as stops;
+openings Wheel/Webster; labels "No 5" on 10053/1, 10041/2, 10063/1, 10061/2, 10062/2 and "No 3" on 9926/1, 10017/2). The 1865 traffic beyond May is
+largely in books Nos. 3, 4 and 5, none of which is in hand. Relay = [Cavalry] under No. 9 makes sense in two Sullivan contexts (10025/1 "Separate the
+cavalry whose time expires", 10014/1 part 2 "to replace the cavalry [we] lose by discharge") and nothing else there reads in No. 9: one code word in two
+contexts is D1 at most, a lead that No. 4 may share that line's meaning with No. 9, not a reading.
+
+**The other 26 1865 rows by header words alone** (`book65.py --headers`; no gate, a prediction for the readers, not a verdict):
+- No. 2 (place word Happy/Hunter = [Washington] with date under No. 2): 10006/0 (Happy Job Fisher = Washington May 8; 11 PM), 10040/0 (Hunter Mark Hawkins =
+  Washington July 11, 2.30 PM), 10034/2 (label "2", Happy Helen = Washington 2 PM = header "2 Pm"), 10028/2 (label "2", Fanny = 11 AM; Benton = [3] = June 3d).
+- No. 1 or No. 2 (time word only, No. 9 excluded): 10007/1 (Elizabeth = 10.30 AM = header "1030 AM"; Embrace = [Nashville] No. 1, [General in Chief] No. 2;
+  10014/1, same time word, read No. 1), 10006/1 (Julia = 4 PM No. 1/2, 7 PM No. 9; no header time).
+- No. 4 (label or Sullivan/Implore-Indian-Impress opening): 10041/3 ("no 4", Implore), 10020/3 ("No 4", Sullivan, Indian), 10031/1 ("4", Indian),
+  10040/1 (W. H. Fuller, Impress; Harriet = 1 PM No. 1/9, 1.30 PM No. 2, no header time).
+- No. 5 (label) or the colour-word family (Wheel/Webster opening): 10053/1 ("No 5"), 10041/2 ("no 5", wheel), 10063/1 ("No 5", Bronze), 10061/2 ("(No 5)"),
+  10062/2 ("No. 5."), 10057/1, 10054/1, 10044/1, 10066/2 (Wheel), 10058/1, 10057/0 (Webster), 10047/2 (Rampant.Scarlet), 10060/1 (Seiberg N. O., Matilda).
+- No. 3 (label): 10017/2 ("No 3.", Sheldon Ft M., Matilda).
+- Clear opening, body decides: 10046/2 ("I am directed by spunky"), 10044/0 ("Your letter jingle fowler instant"; jingle also in colour-word rows).
+
+Not done: no image fetched (labels "No 2", "No 4", "No 5", "No 3" as the volunteer transcription gives them); no reading filed; no print search; no shuffled
+or A run on the 26 prediction rows.
+
+## Remaining gaps (BOOK-65, 10 Oct 2026)
+Read so far: book called for 10 of 10 tested rows (1 No. 1, 1 No. 2, 8 none in hand) plus the Fuller 28 May entry merged into the 10023/1 segment (No. 2); 26 further rows predicted from header words only.
+- 10014/1 (No. 1) and 10012/1 (No. 2) unfiled - blocker: not-attempted; a key test files nothing; next: a LANE LEDGER-11 reader files both with per-row prior-work and print, ~$1.5
+- W. G. Fuller 28 May 1865 entry inside the 10023/1 segment - blocker: not-attempted; fm_entries.py merges it with the Sullivan entry; next: cut it as its own row and hand to a No. 2 reader, ~$0.5
+- No. 2 predictions 10006/0 10040/0 10034/2 10028/2 - blocker: not-attempted; header words only; next: a No. 2 reader, ~$1.5
+- rows in books Nos. 3, 4 and 5 (8 tested rows here, about 20 of the predictions) - blocker: no-key-material; no book No. 3, 4 or 5 in hand; next: none until a book is found
+
+## Escalation (BOOK-65, 10 Oct 2026)
+- [n/a] siblings: same-leaf header labels used (10013 "No 1" = E376; 10025 "No 10").
+- [x] clear-pages: page text read for every header and the line above it.
+- [x] known-keys: all three books in hand run on all ten rows, with 3 + 20 shuffled copies each.
+- [ ] print: not in this brief; the readers search print.
+- [n/a] key-rebuild: no key row edited.
+- [ ] image-check: not done (disk only); labels as transcribed.
+- [n/a] retry: no step failed, so nothing to retry.
+Verdict: keep going: 3 internal gaps; cheapest next: cut the Fuller 28 May entry from the 10023/1 segment and hand it to a No. 2 reader, ~$0.5
