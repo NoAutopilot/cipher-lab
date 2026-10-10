@@ -4848,8 +4848,8 @@ Already in place before this job (no change needed): status.json rows and second
 Checks: `decode_no2.py --check` "reading-no2.md is current"; `decode.py --check` "reading.md is current"; `decode_no9.py --check` "reading-no9.md is current" (all exit 0). depth_check: 139 unique solves, no new failure. Not done: key-lane item (decoder applying proper-name rows to plain words) stays with the KEY lane.
 ## Remaining gaps (FIX-N2a, 10 Oct 2026)
 Read so far: the ten corrected entries now stand at H/C/I/M counts above (FA 14 H 7 I 2 M; FB 25 H 1 C; FH 17 H 2 M; GF 10 H 1 C 1 M; GC 14 H 2 C 2 I 1 M); names plain.
-- OR ser. III vol. 4, ORN and NARA RG 107/92 not searched for FA, FH, GF, GC - blocker: not-attempted; next: download the volumes and phrase-grep, ~$0.3
-- decoder applies proper-name key rows to plain words (Collect, Business, Relay) - blocker: waiting-on KEY lane; entries are fixed by per-entry notes meanwhile
+- OR ser. III vol. 4, ORN and NARA RG 107/92 not searched for FA, FH, GF, GC - blocker: not-attempted; not searched in this no-network job; next: download the volumes and phrase-grep, ~$0.3
+- decoder applies proper-name key rows to plain words (Collect, Business, Relay) - blocker: not-attempted; key-lane change, entries are fixed by per-entry notes meanwhile; next: KEY lane rule for plain-word contexts, ~$0.5
 
 ## Escalation (FIX-N2a, 10 Oct 2026)
 - [x] siblings: same-leaf and same-week siblings carried from the audits into headers.
@@ -4859,4 +4859,4 @@ Read so far: the ten corrected entries now stand at H/C/I/M counts above (FA 14 
 - [n/a] key-rebuild: no key row edited.
 - [x] image-check: FV-N2a/b/c eye-checked the leaves; the two transcription edits (walch, willy) come from the FV-N2b crops.
 - [x] retry: no network used.
-Verdict: keep going: 1 internal gap; cheapest next: OR III/4 and ORN phrase grep for FA FH GF GC, ~$0.3
+Verdict: keep going: 2 internal gaps; cheapest next: OR III/4 and ORN phrase grep for FA FH GF GC, ~$0.3
