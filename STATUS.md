@@ -7881,6 +7881,24 @@ TX programme table 00:4x UTC 10 Oct: slot 1 orchestrator | slot 2 lane inc. 3 se
 TX-RED inc. 2 session_019mC2iYWnDXZQipquND2vZE 20.6, context 554k, pass 13 at 01:11; open F47-F49, F53-F63 | slots 4-10: SCORERFIX tool done
 (audit held), SCAN103 live, VIV102-REANCHOR live, GALLICA probe, VIVWIT done; TX-POOL-LEAF-2 (account 1) overdue | eval looks 0; S2 look 1
 (TAKEN; corrected audit pending SCAN-103).
+Check-in 9 (01:2x UTC 10 Oct by date -u, clock 01:26-01:3x; orchestrator (account-4) session_012sGNgiddCpz4QUhQsMyoPU, 63.0 at 01:26, context 412k):
+five_hour allowed; seven_day allowed_warning (continuing). OWNER 01:0x: "the site is sufficient as is; ship the rest, with useful navigation" ->
+SITE-SHIP-1 done 01:26 (3.34 D, ledgered, archived): research/mockups/site/ 177 pages, 4,712 links 0 broken, 5.8 MB, published private
+(link in the ROOM line); public placement NOT decided (his 9 Oct word stands). TX: SCAN-103 NOT BEST by the declared gate but TX-RED F64
+showed the gate compared unequal slack -> record f.103r truth STANDS; CA-S2 under the fixed scorer reproduces 0.150/0.296 (standard SER
+0.134/0.288, lines missing 0); TX-RE103 (1.99 N, ledgered, archived) stopped at its own control gate, sensitivity check not re-declared; the
+forced 6500 alignment is the record alignment within 26 letters (F64 concrete). F67: oracle manifest redrawn from dev_tune (sha256
+978322f6...), luzerne108a-p1 flipped to dev; L74 resumed for the owner. WIT-ANCHOR ANCHORED (Gachard p.428 at dec_norm 2697-3195, ratio
+0.671 vs null max 0.315); WIT-GROEN running. Lane inc. 4 (depth 8, hourly routine trig_017AmCfxWB82wt4gwHVVToVB) 20.6, context 403k; inc. 5
+to be created from here on its "ready" message. TX-RED inc. 2 at 631k (24.3): told to finish pass 14 (01:58), write the hand-over and say
+"ready for incarnation 3"; inc. 3 to be created from here. WVO-153-KEY-2 done 00:51 (6.48 D, ledgered, archived): 153 is key_98 System B
+(26/26 classes), lines 1-9 keyed, rest parked. Owner's ChatGPT runner: standing experimenter prompt given (second-opinions/prompt-2026-10-10-
+tx-external-experimenter.md); no [SO-TX-EXP-*] PR yet. TX-POOL-LEAF-2 (account 1) still claimed, 3h46m, flagged twice, no answer. desk_check
+still flags gramont-jstor-waive (date heuristic; unchanged). Check-in 10 trig_019QMHyNNwA8PNa1KbEjoaLF at 02:07 UTC.
+TX programme table 01:2x UTC 10 Oct: slot 1 orchestrator | slot 2 lane inc. 4 session_01GukpgU1yBAfju3zg6g8ayG 20.6 (depth 8, hourly routine)
+| slot 3 TX-RED inc. 2 session_019mC2iYWnDXZQipquND2vZE 24.3, 631k, pass 14 at 01:58 then hand-over; open F47-F49, F53-F67 | slots 4-10:
+SCAN103 done, RE103 stopped, SCORERFIX done, CA-S2 done, WIT-ANCHOR done, WIT-GROEN live; TX-POOL-LEAF-2 (account 1) overdue | eval looks 0;
+S2 look 1 (record stands under the fixed scorer).
 
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:
