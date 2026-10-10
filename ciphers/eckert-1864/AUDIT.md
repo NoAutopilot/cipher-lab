@@ -16270,3 +16270,62 @@ located" verdict for a Grant-staff telegram (already the FV-MS18d/j method's "Gr
 Requests: hdl.huntington.org 7 (3 CISOSEARCHALL incl. control, 4 IIIF leaves; one take, released, all 200, no drop); archive.org 13 (1 advancedsearch,
 1 djvu.txt, 2 page_numbers.json, 7 page images, 1 availability, plus 1 page_numbers re-use) and be-api.us.archive.org 16 full-text queries, 1.6 s apart.
 seven_day allowed_warning: seen in the brief, continued per lane-common-blast. For LANE LEDGER-12 (account 1).
+
+## AUDIT (FV-MS18s)
+
+Verifier FV-MS18s (account 1, for LANE LEDGER-12), 10 Oct 2026, 08:53-09:1x UTC by `date -u`; a separate session from the reader MS18-R11 and from every
+other reader or verifier of this entry, not protecting its conclusions. Scope: first audit of **E430** (9730/0, mssEC 18, Huntington object 10074, Cipher
+No. 1), filed "Grant's text printed; the sent form as a whole not located". Brief: ledger12 jobs "## FV-MS18s" (= FV-MS18r method, Step-0 ruling first).
+Intake gate (08:5x): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0. Key source: `period`.
+Nothing decoded; the FIX step (FIX-FM24, NOTES) follows this section.
+
+### 0. Step 0 (Wave 3 ruling), re-run
+`ms18/ms18_r11_step0.py` re-run from disk: row 9730/0 (a) 0.091 (1/11), (b) shuffle p95 0.091, **no hit**; (c) 10 key-dependent words (army butler cross
+general grant major rapidan ...). Identical to the committed `.out`. The body is not known from the holder transcription; the print (s.1) decides.
+
+### 1. Print search and diff (page images, IA, w1600)
+- **Grant's message: OR I/36 pt 1 p.1** (IA `warofrebellion361unit`, `/page/n22`, footer "1 R R--VOL XXXVI, PT I (1)"), head of Grant's report no. 1:
+  "Germanna Ford, May 4, 1864. (Received 1.50 p. m.) The crossing of Rapidan effected. Forty-eight hours now will demonstrate whether the enemy intends
+  giving battle this side of Richmond. Telegraph Butler that we have crossed the Rapidan. U. S. Grant ... Maj. Gen. H. W. Halleck, Chief of Staff." Also
+  widely reprinted (IA be-api whole-collection phrase query "Telegraph Butler that we have crossed": Humphreys, Badeau, Stanton biographies, 10 items).
+- **Halleck's cover: OR I/36 pt 2 p.391** (IA `warofrebellion362unit`, `/page/n402`, running head 391 on the image): "Washington, D. C., May 4, 1864--2 p. m.
+  Major-General Butler, Fort Monroe, Va.: General Grant's army has crossed the Rapidan. H. W. Halleck, Major-General and Chief of Staff." The ledger
+  hour is 2.30 PM; the ledger signature decodes [General-in-Chief] (Halleck was Chief of Staff from March 1864, as in E404).
+- **Both parts as received by Butler: Butler, Private and Official Correspondence vol. IV p.161** (IA `privateofficialc04butl`, `/page/n172`; the item
+  ends on p.161, nothing on p.162): "From General Grant -- Message from Sparta, two [2] a.m., Ford, May 4th / For Maj. Gen. Halleck, Washington / The
+  crossing of the Rapidan effected. Forty eight (48) hours now will demonstrate ... Telegraph Maj. Gen. Butler that we have crossed the Rapidan. Lt. Gen.
+  Grant", then "From General Halleck -- Cipher. By Telegraph from Washington, 3 p.m., May 4, 1864 / To Maj. Gen. Butler / Lt. General Grant Comd'g has
+  crossed the Rapidan. Maj. Genl. Halleck". So the reader's "the sent form as a whole is not located" is too strict: Butler's printed papers carry the
+  relayed Grant message in the ledger's own frame ("message from [Germanna] Ford, May 4, for Halleck") beside Halleck's cover line. The printed heading
+  "Message from Sparta, two [2] a.m., Ford" looks like a garbled rendering of the ledger's "message From Germ ana Rusty May Pension" (Germanna Ford, May
+  4) -- a remark, **M**, not checked against Butler's received copy.
+- Diff of the reading against the prints: every plain clause matches word for word. Code words the prints settle: 'Judah's' = [Grant]'s (key.md Judah =
+  Grant, H; the decoder left it because of the possessive), 'Inland' = [Halleck] (no key row; C by Butler IV "For Maj. Gen. Halleck"), 'Know' = [Butler]
+  (key.md Knox = Butler; 'Know' is a one-letter slip, I, C by the prints "Telegraph [Maj. Gen.] Butler"). 'Chinamen' (tail) has no print counterpart (M,
+  null or check word). Hours: ledger 2.30 PM, OR 2 p.m., Butler's received copy 3 p.m. (not resolved; the ledger is the sent copy).
+- Rejected hits (lesson of FV-N2g): `ms18_r11_print.out`'s 4 May date-window lines in 361/362 other than these are other telegrams; none rejected wrongly.
+
+### 2. Leaf eye-check
+The reader read leaf 9730 whole at 2400 px. Not re-fetched (cap; no hdl token taken): the print matches every plain clause of the transcription, so no
+transcription slip that matters to the N-class is open.
+
+### 3. Classification (rule 10; depth rule 4a)
+| ID | N | key | text | depth | safe sentence |
+|---|---|---|---|---|---|
+| E430 | **N1** | period | known | D1 | "Halleck's 4 May 1864 telegram to Butler that Grant's army had crossed the Rapidan, relaying Grant's Germanna Ford message, is printed in OR I/36 pt 2 p.391 (cover, 2 p.m.), OR I/36 pt 1 p.1 (Grant's message) and Butler's Private and Official Correspondence vol. IV p.161 (both parts as received); the ledger copy read with the period key is an independent re-reading." |
+Unsafe: "deciphered", "first decipherment", "previously unread", "unpublished relay". Depth D1: text known in print; the key-read words are names and
+single code words inside plain clauses. No AUD2 row, no SO row, no status.json row (N1).
+
+### 4. Postmortem
+The reader searched the right volumes and found every printed part, then set the bar at an identical single printed telegram; the ledger copy is the
+sent form of what Butler's papers print as received in two items. A relay frame with its relayed message printed beside it in the recipient's papers is
+"printed (as received, in parts)", not "not located".
+
+### 5. Corrections (applied in FIX-FM24, this session)
+1. E430 header: Butler Corr. IV "pp.161-162 by OCR" -> **p.161 (page image)**; OR I/36 pt 1 "page not read" -> **p.1 (page image)**; OR I/36 pt 2 p.391 "by
+   OCR running heads" -> **p.391 (page image), printed 2 p.m.**; "not located as such" -> printed in two parts as received (Butler IV p.161).
+2. E430 reading: Judah's -> [Grant]'s (H, possessive), Inland -> [Halleck] (C), Know -> [Butler] (I slip for Knox, C by print); Chinamen M.
+3. NOTES "## MS18-R11" Remaining gaps: the E430 print-page gap is closed.
+
+Requests: archive.org 7 (3 page_numbers.json, 4 page images), be-api.us.archive.org 2 full-text queries, 1.6 s apart; hdl.huntington.org 0.
+For LANE LEDGER-12 (account 1).
