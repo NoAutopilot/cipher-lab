@@ -15962,6 +15962,88 @@
       "depth_sentence": "On 6 Jan 1865 Fort Monroe reported that the River Queen had left about 11 a.m. with General Butler on board, bound up the James.",
       "depth_check": "code: Fanny = 11 AM, wedge = Today, Knave = Butler, pandora = Colonel, Bergen = James; the clause does not survive the shuffled-key control (FM-S65A); external context only: O'Brien, Telegraphing in Battle pp.180-181 (Butler at Fort Monroe 5-6 Jan); E521 (5861/2) asks the question",
       "depth_note": "FV-L17a: depth per rule 4a and the 8 Oct depth bar; see AUDIT (FV-L17a) s.4"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L17c)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L17c verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L17c)' section 4",
+      "reading_version": "FM-UND / FM-UND2 readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L17c) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "see AUDIT (FV-L17c) s.3",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3 (relay); N2 (vessel list, OR I/33 p.915)",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Eckert for Meigs to Lt. Col. Biggs at Fort Monroe, Washington 20 Apr 1864 4 PM: orders for the expedition fleet gathering in the Potomac, with Wise's vessel list (E622)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 20 Apr 1864 Eckert relayed to Fort Monroe, for Lieut. Col. Biggs, Meigs's orders for the Fort Monroe expedition fleet: Captain Wise had gone to New York and would join Biggs at Monroe to help manage the fleet; General Rucker would send an officer down the Potomac to stop the vessels gathering there and send them on to Monroe; Biggs should send a vessel into the bay to turn back those bound for the Potomac; and steamers should go to Chesapeake City to escort the tows down the bay. The vessel list in the same telegram is Wise's of 19 April, printed in the Official Records ser. I vol. 33 p.915; not located in the Official Records ser. I vols. 33 and 36, Butler's correspondence vol. IV or the Huntington's full-text search (searched 10 Oct 2026, one audit).",
+      "gap": "relay N3, vessel-list part N2 (OR I/33 p.915; holder clear copy 4546-4548 of Wise's own telegram), one audit (FV-L17c); not N4: Grant Papers vol. 10, OR ser. III vol. 4, NARA RG 92 unread",
+      "depth": "D3",
+      "completeness": "179 code-word groups H or C after AUDIT (FV-L17c) s.3/s.5 (Pioneer 256 by the image; list figures C from OR I/33 p.915)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.70-72, pointers 5614-5616, E622"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.70-72, pointers 5614-5616, E622",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.70-72, pointers 5614-5616, E622"
+      ],
+      "depth_sentence": "On 20 Apr 1864 Meigs, through Eckert, ordered the vessels gathering in the Potomac for Butler's expedition sent on to Fort Monroe and steamers sent to Chesapeake City to escort the tows down the bay.",
+      "depth_check": "code: Attica = Potomac, animal/Appian = Monroe, frog = New York, princess/pilgrim = Captain, zebra/zodiac/Pekin/unity = stops, Roman = Expedition, numerals p.25 rows; external (non-statistical): OR I/33 p.915 and holder clear copy 4546-4548 (Wise to Meigs, 19 Apr 1864) agree with all 34 side-wheeler figures, the tug and barge figures and the propeller totals (2,240 tons, 2,800 men); O9-Z (book No. 9, 8937-8938) puts Wise at the Astor House, New York, on 20 Apr",
+      "depth_note": "FV-L17c: depth per rule 4a and the 8 Oct depth bar; see AUDIT (FV-L17c) s.4"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L17c)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L17c verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L17c)' section 4",
+      "reading_version": "FM-UND / FM-UND2 readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L17c) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "see AUDIT (FV-L17c) s.3",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Fort Monroe to Maj. Gen. Lew Wallace at Baltimore, 5 May 1864: arrest W. W. Shore, the New York World's correspondent, and send him to Butler under guard (E623)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 5 May 1864 Fort Monroe told General Lew Wallace at Baltimore that W. W. Shore, the New York World's correspondent, was somewhere in Baltimore and that Butler wanted him arrested and sent to him under guard; Butler's earlier order of 1 May had brought no answer; not located in the Official Records ser. I vols. 33 and 36, Butler's correspondence vol. IV or the Huntington's full-text search (searched 10 Oct 2026, one audit).",
+      "gap": "N3 one audit (FV-L17c); not N4: the Baltimore and New York press of May 1864, NARA RG 393 (Middle Department) unread; D2 held below D3 (content words plain), second audit to decide",
+      "depth": "D2",
+      "completeness": "17 code-word groups H or C after AUDIT (FV-L17c) s.3 (season = Lew Wallace C; world plain; John I. Davenport plain)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.112, pointer 5656, E623"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.112, pointer 5656, E623",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.112, pointer 5656, E623"
+      ],
+      "depth_sentence": "On 5 May 1864 Fort Monroe asked General Lew Wallace at Baltimore to arrest W. W. Shore, the New York World's correspondent, and send him to Butler under guard.",
+      "depth_check": "code: baptism = Baltimore, oakumed = Arrested, wrangled = Telegraphed, Sweden = Information, Appian = Monroe, viola = 12.30, season = Lew Wallace (E168 supplement; E310 gloss); external (non-statistical): holder clear copy 10291 of E310 (Butler, 1 May 1864, to Lew Wallace: Shore, correspondent of the N. Y. World at Baltimore, to be arrested and sent to him)",
+      "depth_note": "FV-L17c: depth per rule 4a and the 8 Oct depth bar; see AUDIT (FV-L17c) s.4"
     }
   ],
   "lanes": [

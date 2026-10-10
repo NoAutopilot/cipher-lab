@@ -20322,3 +20322,136 @@ Palmer's own question of 21 Jan 1 PM, as FM-S65A found; the rest other). **No cl
 - Unfiled rows met, all printed (N1 if ever filed): **5862/1** (Grant to Stanton 6 Jan 5.30 p.m., OR I/47 pt 2 p.18); **5863/0** (Stanton to Grant 6 Jan
   5 p.m., same page); **5883/1** (Grant to the Secretary of War, 20 Jan, car at Annapolis; holder clear copy 7717; OR I/46 pt 2 under 20 Jan, KWIC, page not pinned).
 - Requests this session: hdl.huntington.org 23 (all 200); googleapis 19 (all 429); be-api 0; archive.org 0.
+
+## AUDIT (FV-L17c)
+
+Verifier FV-L17c (account 1, for LANE LEDGER-17), 10 Oct 2026, 17:53-18:2x UTC by `date -u`; a separate session from the readers FM-UND and FM-UND2, not
+protecting their conclusions. Scope: **E622** (5614 l.21-5616/0, 20 Apr 1864, with the head FM-UND2 joined), **E623** (5656/0 tel 1, 5 May 1864), **E624**
+(5658/0 tel 2, 9 May 1864, thin); ciphertext.txt, War Department Cipher No. 1, Fort Monroe ledger mssEC 25 = Huntington object 5952. Nothing decoded beyond
+key look-ups in key.md. Key source for all three: `period`. No spec for eckert-1864, so `judge_plaintext.py` was not run. Intake gate (FV-L17a's 17:4x run,
+same day, file unchanged since for this purpose): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`.
+**Step 0 is a non-test on mssEC 25**: nothing below is classed from step 0. Prior-work step: by hand as FM-UND2 (own-work grep of pointers 5614-5616, 5656,
+5658, 9712-9713, 9734, 10308, 4546-4548 and the subjects Shore / Rucker / Wise / Van Vliet / Harrison's Landing in ciphertext*.txt headers and NOTES; no live
+ROOM claim on these rows); `tools/prior_work.py` not run (its folio key does not fit a pointer, as FM-S65A and FM-UND2 found): unchecked, not clear.
+Scripts: `fortmonroe/fv_l17c_hdl.py` (+ `fv_l17c_hdl.out`, `fv_l17c_items.out`, `fv_l17c_items2.out`: control + 11 CISOSEARCHALL across all pointers,
+5 dmGetItemInfo, 5 IIIF leaves at 2400 px to scratch), `fv_l17c_print.py` (+ `.out`: 29 fresh letters-only phrases over the 211 cached print-check volumes,
+incl. OR I/33, I/36 pts 1-3, I/37, ser. II vol. 7, Butler Corr. III-V, O'Brien 1910, Plum vol. 2), `fv_l17c_beapi.py` (+ `.out`, s.2).
+
+### 1. Duplicates, image
+- **Duplicate diff** (pointers and subjects against every `###` header of ciphertext*.txt and reading*.md, mssEC 18/19/25): no duplicate filed. The mssEC 18
+  cipher copies 9712-9713 (E622) and 9734 (5658/0 tel 1) are unfiled; the holder text of 9713 ("Total Propellers Harsh Peach Publish and Leg tons Harrow
+  Platina William spit ... Steam tugs Pekin Hutchins Delany Palmer Tempest Ajax Many Freeman Vatterland and Bishop zebra Send Steamers to Cheese a peake city
+  to meet and escort the tons down the bay Yoke") agrees with 5616 word for word except "Many"/"Mary" and "tons"/"tows". Sister rows, not copies: **O9-Z**
+  (8937-8938, Meigs to Capt. G. D. Wise at the Astor House, New York, 20 Apr 1864 2 PM, book No. 9: "communicate at once with Major Van Vliet who has already
+  chartered a number of vessels for the expedition ... all the vessels should reach Monroe by the twenty fourth"), **O9-X** (8933, Meigs to Van Vliet 19 Apr
+  noon: "Order all vessels not already sailed to proceed to Hampton Roads and report to Lieutenant Colonel Biggs"), **O9-AA** (8939), **E294** (5616/1, Biggs's
+  answer on the same leaf, 20 Apr), **E310** (5644, 1 May 1864, Butler to Lew Wallace, the arrest order E623 refers to; holder clear copy 10291).
+- **Image eye check this session** (IIIF leaves 5614, 5615, 5616, 5656, 5658 at 2400 px from hdl.huntington.org; `tools/iiif_lines.py --image` found 0 line
+  bands on these pale leaves, as FV-L17a found, so PIL region crops of the same files were read):
+  - 5615 (the list): **the transcription doubles a word**. The leaf reads "Zebra Pioneer plank prolong Mandate / plague tons plaster William spit": one
+    "Mandate", not "mandate Mandate". With one Mandate, Pioneer = plank prolong mandate plague = 2 x 100 + 50 + 6 = **256 tons**, which is the print
+    (OR I/33 p.915) and the holder clear copy 4546 ("Pioneer two hundred fifty six tons five hundred men"). FM-UND2's M on "pioneer [306]" is a transcription
+    slip, not an enciphering error: lift it. George Weems "pension publish leg pony" = 449 (print 449; the holder clear copy 4546 has "five hundred forty
+    nine", its own slip).
+  - 5616: matches the transcription, except the last line reads "yoke meigs Bender translate Pekin & **pedlar** every time"; the transcription drops "pedlar".
+  - 5656: matches the transcription word for word (E623, eleven lines, "season", "oakumed", "wrangled", "webster John I Davenport", "Sweden").
+  - 5614, 5658: read at page scale only for the line layout (head of E622; the E624 lines), no disagreement seen; not cropped.
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm** (p16003coll11, CISOSEARCHALL, all pointers; two takes 17:56-18:0x UTC, 22 requests, all 200; control 'Inspector difficulty
+Evidence Nashville' -> 9678; queries fresh, none of FM-UND's or FM-UND2's): `escort tows Bay` 1 (5616 own), `canal barges capacity` 4 (9713 = mssEC 18 cipher
+copy; 10241 = Van Vliet to Meigs, Philadelphia 18 Apr, other; 8933 = O9-X; 5616 own), `Tempest Ajax Bishop` 3 (9713, 5616, **4547**), `ferry boats tugs
+Biggs` 0, `Shore Baltimore World` 3 (5644 = E310; 5656 own; **10291**), `Davenport Shore` 1 / `Shore arrest guard` 1 / `correspondent World Balto` 1 (5656 own),
+`Harrisons landing join` 2 (5658 own; **10308**), `Bermuda landing quiet` 0, `OBrien Jamestown working fine` 2 (5658; **10308**). Item records read:
+- **10308 (Page 166) is a holder clear copy of E624**: "4.15 AM 9th Maj Eckert ---- Jamestown Va May 9/64 I left Gen Butler Head Quarters five miles from White
+  River Landing 9 PM all quiet and ready to move in morning ---- Wests Cavalry Expedition crossing at Harrisons Landing to join us I will start line tomorrow all
+  working fine will endeavor to keep you posted R OBrien". FM-UND's two queries missed it.
+- **4546-4548 (Pages 105-107) are a holder clear copy of the vessel list, but of Wise's own telegram**: "9. P. M Philadelphia 19th April Brigadier General Meigs
+  Q M G Washington Side wheel boats John a Warner six hundred tons twelve hundred men ... fifty Canal barges average Capacity one hundred and fifty men - should
+  Judge I have comfortable transportation for twenty thousand men ... will leave early tomorrow for new York George D Wise Capt and A Q. M". It carries none of
+  E622's head (Meigs's instructions to Biggs) or its close (the propeller totals, the Chesapeake City order); it is the source the relay copies, not a copy of
+  the relay.
+- **10291 (Page 149)** is the clear copy of E310 (Butler, Ft Monroe 1 May 1864, "For Gen Liu Wallace Correspondant of the N. Y. World at Baltimore & also from
+  Ft Monroe is WW Shore whom I sent away from this Dept ---- Please arrest him and send him to me ---- I have found in the Richmond papers that his articles are
+  giving aid and comfort to the Enemy sig BF Butler"): the earlier telegram E623 says went unanswered. Not a copy of E623.
+- No clear copy of E622 (the relay) or of E623 at another pointer.
+**Print** (`fv_l17c_print.out`, letters-only, 211 volumes; KWIC read by hand; pages from OCR running heads):
+- **E622's vessel list is printed: OR ser. I vol. 33, p.915** (IA `warofrebellion33unit`; the running head "Chap. XLV.] 915 CORRESPONDENCE, ETC. UNION." stands
+  directly above it): "Philadelphia, Pa., April 19, 1864. (Received 9 p.m.) Brig. Gen. M. C. Meigs, Quartermaster-General: Side-wheel boats: John A. Warner
+  (600 tons), 1,200 men; ... Kingston (400 tons), 500 men. Propellers: Rebecca Barton (350 tons), 400 men; ... Emma (185 tons), 200 men. Steam-tugs: Hutchins,
+  Delaney, Palmer, Tempest, Ajax, Mary Freeman, Vatterlin, Bishop; 50 canal barges, average capacity, 150 men. Should judge I had comfortable transportation for
+  20,000 men ... GEO. D. WISE, Captain and Assistant Quartermaster." **Numeral diff** (decode after the s.1 image fix against the print): all 17 side-wheelers'
+  tons and men agree (34 numbers; Kingston "same" = 400/500); the cipher drops the propellers' individual figures and gives their total, "[2200] & [40] tons
+  [2800] [Men]", which is the printed sum (2,240 tons; 2,800 men, summed here); 8 tugs, 50 barges, 150 men agree. Order differs once (cipher Jefferson before
+  Portsmouth; print and 4546 Portsmouth before Jefferson). Spelling: cipher "Briarly", print "Brayerly"; "Vatterland" / "Vatterlin".
+- **E622's head (Meigs to Biggs) is not printed** in OR I/33: the 20 Apr 1864 Washington telegrams there (Halleck to Butler 11 a.m., to Meade, Augur, Pope,
+  Hunt) do not include it; Meigs's 16 Apr order to Wise (OR I/33, "all that are now in service ... should be assembled in the Potomac") is its antecedent.
+  Fresh phrases ('stop all bound for the Potomac', 'Chesapeake City to meet', 'escort the tows', 'Van Vliet's list', 'ferry boats and three tugs', 'send a
+  vessel into the bay', 'list of charters', 'chartered for the expedition') none; 'management of the fleet' hits five unrelated volumes. Butler Corr. IV: Biggs
+  and Rucker named elsewhere, nothing of 20 Apr.
+- **E623 is not printed**: 'W. W. Shore', 'Shore is in Baltimore', 'correspondent of the World', 'I want him caught', 'three days ago to arrest him', 'did not
+  get the dispatch', 'a man who knows him' none; 'ordered out of this department' (OR I/35 pt 2, Hagood, other); 'evidence against him' (nine volumes, generic).
+  No person "Shore" in Butler Corr. IV or OR I/33, I/36 pts 1-3 (grep). E310 (the 1 May antecedent) was not looked for in print here.
+- **E624 is not printed** (fresh phrases none; '5 miles from Bermuda' = OR I/36 pt 2, another report, "4 miles"; 'keep you posted' generic). Butler Corr. IV
+  p.166 prints Butler's 6 May order sending O'Brien to Jamestown Island (context only). The holder clear copy decides it (RULING (i)).
+- **be-api**: s.2a below.
+- **Unreachable / not searched:** The Papers of Ulysses S. Grant vol. 10 (Apr-May 1864); OR ser. III vol. 4 (Quartermaster correspondence; LR-RES, LEDGER-18,
+  could not resolve its IA id today); NARA RG 92 (Quartermaster General letters sent); the press of the day (Baltimore, New York World) for E623; JSTOR;
+  HathiTrust full text.
+
+### 3. Grade and reading corrections (reading.md as of this audit; key look-ups in key.md)
+- **E622:** "pioneer [306]" -> **[256]** (image: one Mandate; drop the transcription's second "mandate"); lift the M. "Briggs" (header and list close) =
+  **Lieut. Col. Herman Biggs**, Chief Quartermaster at Fort Monroe (9712 reads Biggs; OR I/33 index "Biggs, Herman"; E294 on the same leaf): a name spelling,
+  M -> plain. The list's numerals and names are corroborated by the print and the holder clear copy of Wise's telegram: grade them C from known plaintext
+  (rule 4; the plaintext is the source text the relay copies, the mapping is ours). The head's key words ([Captain], [New York], [Monroe] x4, [Potomac] x3,
+  [General], [Expedition], [Major], [Baltimore], [Philadelphia], [Washington], [Ferry], [3]) stay H; "New York" for Wise is supported independently by O9-Z
+  (book No. 9, Wise at the Astor House 20 Apr). The tail brace "yoke meigs Bender" = [signed] Meigs [Qr Master Genl] is Meigs's own message closing the
+  relay; "translate Pekin & [pedlar] every time" (image) is an operator's note ("translate & every time", sense unclear, M). After s.5: no M in the body
+  except "Briarly"/"Vatterland" spellings (plain names).
+- **E623:** addressee "season" = **Maj. Gen. Lew Wallace** at Baltimore (key supplement E168 "Lewis to season"; E310's gloss `season=Maj_Gen_Lew_Wallace:C`;
+  clear copy 10291 "For Gen Liu Wallace"): M -> C. "the [Valley]" -> **the World** (the New York World newspaper, plain; 10291 "Correspondant of the N. Y.
+  World"; the key row world = Valley is a collision). The tail "webster John I Davenport Lieut office bureau of [Information]": "webster" = stop (as E310's
+  gloss `webster=Stop:C`), and **John I. Davenport** is a plain name (Lieut. John I. Davenport, Butler's Bureau of Information), not "[signed] [Maj Genl U.S.
+  Grant] I Davenport": the decoder's John = Grant is a collision. "[Monroe] May fifth [12.30]" (Appian, viola), "[Baltimore]" x2 (baptism), "[Arrest]ed"
+  (oakumed), "[Telegraph]ed" (wrangled), "[Information]" (Sweden), stops (unity) all H. "three days ago": the antecedent E310/10291 is dated 1 May, four days
+  before 5 May (as written; not a reading error).
+- **E624:** the holder clear copy reads "five miles from **White River** Landing **9 PM**" and "**Wests** Cavalry Expedition": rosaile = 9 PM (C), wests =
+  West's (plain name, C), Knox = Butler, person = 5, pacific = Cavalry, roman = Expedition, pluming = crossing (H, the clear copy agrees). FM-UND2's
+  `plain: Bermuda` is contradicted by the period decipherment, which applied the key row Bermuda = White River; the place meant was very probably Bermuda
+  Landing (E164), so the row records both: as deciphered at the time "White River" (C), the referent Bermuda Landing (I).
+
+### 4. Classes (rule 10) and depth (rule 4a)
+
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E624 | **N1** | period | D3 (H 6 + C 2, the clear copy agrees word for word) | holder clear copy at another pointer, 10308 (Page 166); under the Wave 2 RULING (i) this row is **not filed** |
+| E622 | **N3** for the relay (head and close); the **vessel list** part is **N2** (plaintext printed OR I/33 p.915 and held in clear at 4546-4548 as Wise's own telegram of 19 Apr; no prior mapping of this ciphertext to it located) | period | **D3** (code tokens H or C after s.3/s.5; external non-statistical: the print and holder 4546-4548 agree with all 34 side-wheeler figures, the tug and barge figures and the propeller totals; O9-Z independently puts Wise in New York on 20 Apr) | the relay's own text (Meigs's orders to Biggs: Wise to join at Monroe; Rucker's officer to stop the vessels gathering in the Potomac; a vessel into the bay; the Chesapeake City escort) not located in print or as a clear copy; not N4 (Grant Papers 10, OR ser. III vol. 4, NARA RG 92 unread). RULING: stays filed (the print is of another message) |
+| E623 | **N3** | period | **D2** (all 17 code tokens H or C after s.3, and holder 10291 is an external non-statistical check of the subject; but the content words are plain English, the key carries only Baltimore / arrested / telegraphed / Information, so D3 is not given: second audit to decide) | no prior plaintext or decipherment located; not N4 (the Baltimore and New York press of May 1864, OR ser. II vol. 7 by name only, NARA RG 393 Middle Department unread) |
+
+- **Safe sentences** (read at grade H with War Department Cipher No. 1; each ends "; not located in the Official Records ser. I vols. 33 and 36, Butler's
+  correspondence vol. IV or the Huntington's full-text search (searched 10 Oct 2026, one audit)"):
+  - E622: "on 20 Apr 1864 Eckert relayed to Fort Monroe, for Lieut. Col. Biggs, Meigs's orders for the Fort Monroe expedition fleet: Captain Wise had gone to
+    New York and would join Biggs at Monroe to help manage the fleet; General Rucker would send an officer down the Potomac to stop the vessels gathering there
+    and send them on to Monroe; Biggs should send a vessel into the bay to turn back those bound for the Potomac; and steamers should go to Chesapeake City to
+    escort the tows down the bay. The vessel list in the same telegram is Wise's of 19 April, printed in the Official Records ser. I vol. 33 p.915."
+  - E623: "on 5 May 1864 Fort Monroe told General Lew Wallace at Baltimore that W. W. Shore, the New York World's correspondent, was somewhere in Baltimore
+    and that Butler wanted him arrested and sent to him under guard; Butler's earlier order of 1 May had brought no answer."
+  - E624 (N1): "the Fort Monroe ledger's cipher copy of O'Brien's 9 May 1864 Jamestown telegram reads the Huntington's own clear copy (pointer 10308)."
+- **Unsafe** for all: "first", "new", "unpublished", "never printed"; for E622, any sentence presenting the vessel list as unknown; for E624, any sentence implying
+  the plaintext was unknown.
+- **Depth sentences**: E622 (D3) "On 20 Apr 1864 Meigs, through Eckert, ordered the vessels gathering in the Potomac for Butler's expedition sent on to Fort
+  Monroe and steamers sent to Chesapeake City to escort the tows down the bay." E623 (D2) "On 5 May 1864 Fort Monroe asked General Lew Wallace at Baltimore
+  to arrest W. W. Shore, the New York World's correspondent, and send him to Butler under guard."
+
+### 5. For a FIX job (not applied here)
+- **E624: not filed** under the Wave 2 RULING (i) (holder clear copy 10308). Header: add "holder clear copy 10308 (Page 166)"; restore `Bermuda` as the key
+  row (White River, C from 10308; referent Bermuda Landing, I); rosaile = 9 PM (C); wests = West's (plain). NOTES "## FM-UND2": its "no clear copy" for this
+  telegram and FM-UND's "3 holder queries hit 5658, 9734 only" are superseded.
+- **E622:** ciphertext.txt 5615 line "tons plague wine spit zebra pioneer plank prolong mandate Mandate": delete the second "Mandate" (image) -> Pioneer [256];
+  5616 last line: insert "pedlar" after "Pekin &" (image); "Briggs" -> Biggs in the header and the `plain:` line (name); mark the list tokens C (OR I/33 p.915;
+  holder 4546-4548); header: "the vessel list is Wise to Meigs, Philadelphia 19 Apr 1864 (OR I/33 p.915; holder clear copy 4546-4548); the relay text is
+  not located". NOTES "## FM-UND2" "pioneer [306] ... M" is superseded (transcription slip).
+- **E623:** header addressee "season ... not decoded, M" -> Maj. Gen. Lew Wallace, Baltimore (C, E168/E310/10291); "[Valley]" -> World (plain); tail
+  "[signed] [Maj Genl U.S. Grant] I Davenport" -> "[.] John I. Davenport, Lieut., Office Bureau of [Information]" (`plain: John` or a gloss as E310's);
+  header note: the 1 May order it refers to is E310 (clear copy 10291).
+- Requests this session: hdl.huntington.org 22 (all 200); be-api see s.2a; googleapis 0; archive.org 0.
