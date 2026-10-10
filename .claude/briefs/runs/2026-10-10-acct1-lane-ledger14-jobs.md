@@ -127,3 +127,5 @@ reading block, and rule under the G3 SUBSTANCE rule of .claude/briefs/prior-work
 "SUBSTANCE: N3 -> N2" line): keep, N2 (parallel order printed, this mapping not), or N1. Step 0 information only. AUDIT.md "## AUDIT (FV-L14d)"; if the class
 changes, update status.json and any SECOND-OPINIONS-QUEUE.tsv / WORK-QUEUE AUD2 row for E54 per rule 10 (propagation). file_shrink_guard; depth_check.
 Report what was found. Do not touch E171 (LANE LEDGER-13's).
+
+(12:1x UTC 10 Oct by date -u: wave 4 spawned with source_url: FV-L14d session_01FCdpgdRZA5GsRE1JHhZm4a.)
