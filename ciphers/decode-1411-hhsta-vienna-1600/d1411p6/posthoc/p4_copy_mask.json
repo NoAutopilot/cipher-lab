@@ -1,0 +1,162 @@
+{
+ "gloss_cover": 0.6129,
+ "copy_alignment": {
+  "p1": {
+   "blocks_ge4": 8,
+   "equal_in_blocks": 71,
+   "spans": [
+    [
+     "p4Ra_L07",
+     "p4Rc_L03",
+     40
+    ],
+    [
+     "p4Rc_L05",
+     "p4Rc_L05",
+     5
+    ],
+    [
+     "p4Rc_L06",
+     "p4Rc_L10",
+     34
+    ]
+   ]
+  },
+  "p1gloss": {
+   "blocks_ge4": 6,
+   "equal_in_blocks": 42,
+   "spans": [
+    [
+     "p4Ra_L02",
+     "p4Ra_L03",
+     25
+    ],
+    [
+     "p4Ra_L04",
+     "p4Ra_L06",
+     24
+    ]
+   ]
+  },
+  "p2": {
+   "blocks_ge4": 1,
+   "equal_in_blocks": 8,
+   "spans": [
+    [
+     "p4Rc_L11",
+     "p4Rc_L12",
+     8
+    ]
+   ]
+  },
+  "p3": {
+   "blocks_ge4": 0,
+   "equal_in_blocks": 0,
+   "spans": []
+  }
+ },
+ "N_all": 248,
+ "N_masked": 136,
+ "all": {
+  "N": 248,
+  "de1600_real_cover_p05": 0.871,
+  "T21r": {
+   "cover": 0.5806,
+   "shuffled_p99": 0.4516,
+   "shuffled_ge": 0,
+   "shifted_max": 0.3669,
+   "minus_gloss": -0.0323,
+   "verdict": "controls beaten, below gloss"
+  },
+  "T21r_h12": {
+   "cover": 0.5847,
+   "shuffled_p99": 0.4476,
+   "shuffled_ge": 0,
+   "shifted_max": 0.3589,
+   "minus_gloss": -0.0282,
+   "verdict": "controls beaten, below gloss"
+  },
+  "T21r_h22": {
+   "cover": 0.5403,
+   "shuffled_p99": 0.4597,
+   "shuffled_ge": 0,
+   "shifted_max": 0.3831,
+   "minus_gloss": -0.0726,
+   "verdict": "controls beaten, below gloss"
+  },
+  "gloss_T21r": {
+   "n": 42,
+   "matches": 25,
+   "control_p99": 8,
+   "agrees": true
+  }
+ },
+ "independent": {
+  "N": 112,
+  "de1600_real_cover_p05": 0.8482,
+  "T21r": {
+   "cover": 0.4286,
+   "shuffled_p99": 0.4732,
+   "shuffled_ge": 14,
+   "shifted_max": 0.3839,
+   "minus_gloss": -0.1843,
+   "verdict": "controls not beaten"
+  },
+  "T21r_h12": {
+   "cover": 0.4464,
+   "shuffled_p99": 0.4464,
+   "shuffled_ge": 3,
+   "shifted_max": 0.3839,
+   "minus_gloss": -0.1665,
+   "verdict": "controls not beaten"
+  },
+  "T21r_h22": {
+   "cover": 0.4107,
+   "shuffled_p99": 0.4554,
+   "shuffled_ge": 15,
+   "shifted_max": 0.3482,
+   "minus_gloss": -0.2022,
+   "verdict": "controls not beaten"
+  },
+  "gloss_T21r": {
+   "n": 42,
+   "matches": 25,
+   "control_p99": 8,
+   "agrees": true
+  }
+ },
+ "copy": {
+  "N": 136,
+  "de1600_real_cover_p05": 0.8529,
+  "T21r": {
+   "cover": 0.6838,
+   "shuffled_p99": 0.5368,
+   "shuffled_ge": 0,
+   "shifted_max": 0.4044,
+   "minus_gloss": 0.0709,
+   "verdict": "PASS"
+  },
+  "T21r_h12": {
+   "cover": 0.6765,
+   "shuffled_p99": 0.5147,
+   "shuffled_ge": 0,
+   "shifted_max": 0.3824,
+   "minus_gloss": 0.0636,
+   "verdict": "PASS"
+  },
+  "T21r_h22": {
+   "cover": 0.6324,
+   "shuffled_p99": 0.5368,
+   "shuffled_ge": 0,
+   "shifted_max": 0.4044,
+   "minus_gloss": 0.0195,
+   "verdict": "PASS"
+  },
+  "gloss_T21r": {
+   "n": 0,
+   "matches": 0,
+   "control_p99": 0,
+   "agrees": false
+  }
+ }
+}
