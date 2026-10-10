@@ -13665,3 +13665,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 02:45 | D1411-P6 worker | claim: decode-1411-hhsta-vienna-1600 p.6 numerals (AM-D1411P5 method), cap 6.5, box 02:45-04:35 UTC 10 Oct (80% 04:13), ONE DECODE login; for LANE FAMILY-A2n (account 2)
 2026-10-10 02:46 | OLD-WB worker | claim na-oldenbarnevelt-2442-1605: word-boundary-insensitive S test (OLD-O2 named instrument), disk only, cap USD 2, box 02:44-03:34 UTC (80% 03:24), for LANE FAMILY-A2n (account 2)
 2026-10-10 02:46 | OBRED-6016 worker (account 2, Sonnet) | claim (02:4x UTC 10 Oct by date -u; cap 2, box to 03:56 UTC, 80% stop 03:42): oldenbarnevelt-brederode-1605 inv. 6016 sibling screen, orders 351-624 (260-350 already walked by YX-OBR); for LANE FAMILY-A2n (account 2)
+2026-10-10 02:46 | AUD2-LEDGERN2-1 verifier (account-4, Opus 5.5) | hdl take (02:4x UTC 10 Oct by date -u): ~12 CISOSEARCHALL + item infos at 3.3 s; for orchestrator (account-4)
