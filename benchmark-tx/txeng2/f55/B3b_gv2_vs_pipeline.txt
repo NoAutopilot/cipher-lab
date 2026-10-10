@@ -1,0 +1,8 @@
+gunther8246-p2 [eval] as measured: err_true(0.75-indel align) 0.051 (16/317) | standard SER (unit-cost Levenshtein) 0.051 (16/317): S 15 D 0 I 1 | wrong 15 deleted 0 inserted 1 | excluded 55 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 15/317 = 0.047 | coverage 317/317 = 1.000
+paired passZ_gv2.tsv vs passZ_pipeline.tsv on gunther8246-p2 [as measured]: 25 lines; lines improved 4, worsened 5, tied 16; line sign test p = 1.0000; unit-cost edits base 15 -> output 16 over 317 scored signs | beside, sign-level position McNemar: 317 common scored signs; base wrong 15, output wrong 15; fixed 6, broken 6; exact p = 1.0000
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.020 (6/305) | standard SER (unit-cost Levenshtein) 0.020 (6/305): S 5 D 0 I 1 | wrong 5 deleted 0 inserted 1 | excluded 67 | lines missing 0 (0 signs counted deleted) [12 flagged] | position errors 5/305 = 0.016 | insertions 1 / read 373 = 0.003
+    reader abstentions 0 | accepted-token error 5/305 = 0.016 | coverage 305/305 = 1.000
+paired passZ_gv2.tsv vs passZ_pipeline.tsv on gunther8246-p2 [flagged excluded (truth-verifier flags only)]: 25 lines; lines improved 2, worsened 3, tied 20; line sign test p = 1.0000; unit-cost edits base 5 -> output 6 over 305 scored signs | beside, sign-level position McNemar: 305 common scored signs; base wrong 5, output wrong 5; fixed 4, broken 4; exact p = 1.0000
+  top confusions (truth value <- read): s<-Ib x3, f<-x x2, c<-d6 x2, h<-aa x1, e<-v x1, e<-NEW:f-with-bars x1, e<-ps x1, d<-NEW:d-crossed x1
+split eval: err_true(0.75-indel align) 0.050 (16/317) | standard SER 0.050 (16/317)

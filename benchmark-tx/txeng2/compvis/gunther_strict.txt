@@ -1,0 +1,45 @@
+=== passZ_gv2 (scored alone)
+gunther8246-p2 [eval] as measured: err_true(0.75-indel align) 0.051 (16/317) | standard SER (unit-cost Levenshtein) 0.051 (16/317): S 15 D 0 I 1 | wrong 15 deleted 0 inserted 1 | excluded 55 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 15/317 = 0.047 | coverage 317/317 = 1.000
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.032 (10/317) | standard SER 0.032 (10/317)
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.020 (6/305) | standard SER (unit-cost Levenshtein) 0.020 (6/305): S 5 D 0 I 1 | wrong 5 deleted 0 inserted 1 | excluded 67 | lines missing 0 (0 signs counted deleted) [12 flagged] | position errors 5/305 = 0.016 | insertions 1 / read 373 = 0.003
+    reader abstentions 0 | accepted-token error 5/305 = 0.016 | coverage 305/305 = 1.000
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.020 (6/305) | standard SER 0.020 (6/305)
+  top confusions (truth value <- read): s<-Ib x3, f<-x x2, c<-d6 x2, h<-aa x1, e<-v x1, e<-NEW:f-with-bars x1, e<-ps x1, d<-NEW:d-crossed x1
+split eval: err_true(0.75-indel align) 0.050 (16/317) | standard SER 0.050 (16/317)
+=== passA (scored alone)
+gunther8246-p2 [eval] as measured: err_true(0.75-indel align) 0.051 (16/317) | standard SER (unit-cost Levenshtein) 0.051 (16/317): S 15 D 0 I 1 | wrong 15 deleted 0 inserted 1 | excluded 55 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 15/317 = 0.047 | coverage 317/317 = 1.000
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.035 (11/317) | standard SER 0.035 (11/317)
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.020 (6/305) | standard SER (unit-cost Levenshtein) 0.020 (6/305): S 5 D 0 I 1 | wrong 5 deleted 0 inserted 1 | excluded 67 | lines missing 0 (0 signs counted deleted) [12 flagged] | position errors 5/305 = 0.016 | insertions 1 / read 373 = 0.003
+    reader abstentions 0 | accepted-token error 5/305 = 0.016 | coverage 305/305 = 1.000
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.020 (6/305) | standard SER 0.020 (6/305)
+  top confusions (truth value <- read): o<-Ib+ x2, t<-d6 x2, c<-d6 x2, o<-th x2, h<-aa x1, e<-th x1, f<-NEW:x-dotted x1, o<-of x1
+split eval: err_true(0.75-indel align) 0.050 (16/317) | standard SER 0.050 (16/317)
+=== passB (scored alone)
+gunther8246-p2 [eval] as measured: err_true(0.75-indel align) 0.054 (17/317) | standard SER (unit-cost Levenshtein) 0.054 (17/317): S 16 D 0 I 1 | wrong 16 deleted 0 inserted 1 | excluded 55 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 16/317 = 0.051 | coverage 317/317 = 1.000
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.025 (8/317) | standard SER 0.025 (8/317)
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.020 (6/305) | standard SER (unit-cost Levenshtein) 0.020 (6/305): S 5 D 0 I 1 | wrong 5 deleted 0 inserted 1 | excluded 67 | lines missing 0 (0 signs counted deleted) [12 flagged] | position errors 5/305 = 0.016 | insertions 1 / read 373 = 0.003
+    reader abstentions 0 | accepted-token error 5/305 = 0.016 | coverage 305/305 = 1.000
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.020 (6/305) | standard SER 0.020 (6/305)
+  top confusions (truth value <- read): s<-Ib x3, o<-th x3, c<-d6 x2, h<-aa x1, o<-Ib+ x1, g<-b x1, e<-th x1, f<-NEW:x-with-curled-left-arm-and-dots x1
+split eval: err_true(0.75-indel align) 0.054 (17/317) | standard SER 0.054 (17/317)
+=== passZ_pipeline (scored alone)
+gunther8246-p2 [eval] as measured: err_true(0.75-indel align) 0.047 (15/317) | standard SER (unit-cost Levenshtein) 0.047 (15/317): S 15 D 0 I 0 | wrong 15 deleted 0 inserted 0 | excluded 55 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 15/317 = 0.047 | coverage 317/317 = 1.000
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.032 (10/317) | standard SER 0.032 (10/317)
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.016 (5/305) | standard SER (unit-cost Levenshtein) 0.016 (5/305): S 5 D 0 I 0 | wrong 5 deleted 0 inserted 0 | excluded 67 | lines missing 0 (0 signs counted deleted) [12 flagged] | position errors 5/305 = 0.016 | insertions 0 / read 372 = 0.000
+    reader abstentions 0 | accepted-token error 5/305 = 0.016 | coverage 305/305 = 1.000
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.016 (5/305) | standard SER 0.016 (5/305)
+  top confusions (truth value <- read): t<-d6 x2, c<-d6 x2, o<-th x2, h<-aa x1, o<-Ib+ x1, g<-b x1, e<-th x1, f<-NEW:x-dotted x1
+split eval: err_true(0.75-indel align) 0.047 (15/317) | standard SER 0.047 (15/317)
+=== committed (scored alone)
+gunther8246-p2 [eval] as measured: err_true(0.75-indel align) 0.038 (12/317) | standard SER (unit-cost Levenshtein) 0.038 (12/317): S 12 D 0 I 0 | wrong 12 deleted 0 inserted 0 | excluded 55 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 12/317 = 0.038 | coverage 317/317 = 1.000
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.000 (0/317) | standard SER 0.000 (0/317)
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.000 (0/305) | standard SER (unit-cost Levenshtein) 0.000 (0/305): S 0 D 0 I 0 | wrong 0 deleted 0 inserted 0 | excluded 67 | lines missing 0 (0 signs counted deleted) [12 flagged] | position errors 0/305 = 0.000 | insertions 0 / read 372 = 0.000
+    reader abstentions 0 | accepted-token error 0/305 = 0.000 | coverage 305/305 = 1.000
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.000 (0/305) | standard SER 0.000 (0/305)
+  top confusions (truth value <- read): o<-th x3, s<-Ib x2, f<-x x2, c<-d6 x2, e<-th x1, o<-or x1, i<-Ib x1
+split eval: err_true(0.75-indel align) 0.038 (12/317) | standard SER 0.038 (12/317)

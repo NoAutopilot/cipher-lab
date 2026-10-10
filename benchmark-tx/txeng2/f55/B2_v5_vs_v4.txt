@@ -1,0 +1,8 @@
+spinelli-c1519-confirm [confirm] as measured: err_true(0.75-indel align) 0.067 (13/193) | standard SER (unit-cost Levenshtein) 0.067 (13/193): S 10 D 0 I 3 | wrong 10 deleted 0 inserted 3 | excluded 66 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 10/193 = 0.052 | coverage 193/193 = 1.000
+paired passZ_v5.tsv vs passZ_v4.tsv on spinelli-c1519-confirm [as measured]: 10 lines; lines improved 3, worsened 3, tied 4; line sign test p = 1.0000; unit-cost edits base 11 -> output 13 over 193 scored signs | beside, sign-level position McNemar: 193 common scored signs; base wrong 8, output wrong 10; fixed 2, broken 4; exact p = 0.6875
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.058 (11/191) | standard SER (unit-cost Levenshtein) 0.058 (11/191): S 8 D 0 I 3 | wrong 8 deleted 0 inserted 3 | excluded 68 | lines missing 0 (0 signs counted deleted) [2 flagged] | position errors 8/191 = 0.042 | insertions 3 / read 254 = 0.012
+    reader abstentions 0 | accepted-token error 8/191 = 0.042 | coverage 191/191 = 1.000
+paired passZ_v5.tsv vs passZ_v4.tsv on spinelli-c1519-confirm [flagged excluded (truth-verifier flags only)]: 10 lines; lines improved 3, worsened 3, tied 4; line sign test p = 1.0000; unit-cost edits base 9 -> output 11 over 191 scored signs | beside, sign-level position McNemar: 191 common scored signs; base wrong 6, output wrong 8; fixed 2, broken 4; exact p = 0.6875
+  top confusions (truth value <- read): i<-HOOK x3, u<-KEY_U_V2 x2, t<-TEE x1, i<-EIGHT x1, p<-THREE x1, s<-KEY_SS x1, n<-EIGHT x1
+split confirm: err_true(0.75-indel align) 0.067 (13/193) | standard SER 0.067 (13/193)
