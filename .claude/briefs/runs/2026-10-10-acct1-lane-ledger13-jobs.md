@@ -59,7 +59,7 @@ NOTES "## FM-S1 (10 Oct 2026, account 1, for LANE LEDGER-13)" / "## FM-S2 (...)"
 decode x3 --check exit 0. No audits. Unit ~0.2 per row. FM-S1 and FM-S2 never hold the hdl token at the same time. Held for wave 2: the other 20 short rows
 (5720/2 5547/1 5569/1 5546/0 5577/0 best_book 9; 5673/1 5672/1 5641/0 5804/2 5669/1 5664/2 5679/0 5830/0 5633/1 5798/1 5833/2 5828/1 5829/1 5800/2 5590/0).
 
-(08:45 UTC 10 Oct by date -u: wave 1 spawned with source_url: BOOK-FM65 session_01L1JBbw4Zcn7kDhqDocdSUE, FM-R9 session_01NhUBdr3wGVNmw1FTEoY6vZ.)
+(08:45 UTC 10 Oct by date -u: wave 1 spawned with source_url: BOOK-FM65 session_01L1JBbw4Zcn7kDhqDocdSUE, FM-R9 session_01NhUBdr3wGVNmw1FTEoY6vZ; 08:46 FM-S1 session_01F5CS712fjJ3AoxT2BpcgxR, FM-S2 session_01RkNbt9S8hDrkqQaH6Ud92M.)
 
 Held for wave 2: readers on the 1865 rows BOOK-FM65 assigns (step-0 misses only, ~0.25/row, batches of 10); first verifiers on anything filed "not located"
 (Opus, ~1.4/entry; AUD2-LEDGER13-<n> rows for N3+ D2+, tagged account-3); a FIX job on the audits' s.5.
