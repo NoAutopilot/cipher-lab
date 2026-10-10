@@ -135,3 +135,5 @@ orchestrator (owner account). Never hold one host's token at the same time as ea
 
 Held for wave 4: FIX-L17c (Sonnet, ~1.5, no network) on s.5 of FV-L17a, FV-L17b, FV-L17c -- including the unfile/N1 header notes for E582 E587 and the
 not-filed recommendation for E583 E586 (RULING iii) -- for entries not under a live AUD2 row.
+
+(17:49 UTC 10 Oct by date -u: wave 3 spawned with source_url: FV-L17b session_012BEuPWoDVqNEjuFY4GqGLT, FV-L17c session_011mhE9fqXzv5spWgwkRTyLK.)
