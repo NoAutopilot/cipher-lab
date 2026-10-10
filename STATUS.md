@@ -8082,7 +8082,7 @@ column + the error map of both pools, read-free, cap 4). Ideas register v2: rese
 | SH-VIV Tomokiyo-drawing sheet (TXE2-VIVSHEET) | sheet_tomokiyo_v1: 40/40 committed labels, value-blind, no reader | n/a; openings 0 | product for a later leaf of this hand | 3.53 |
 | TOOL-2RATE (TXE2-2RATE) | tool: position_rate + insertion_rate beside err_true; S2 0.108 + 0.011 reproduced | n/a; openings 1 (tool check) | tool option added | 1.96 |
 | Outside review 10 Oct (research/SO-TX-TRANSCRIPTION-2026-10-10.md; orchestrator 00:3x) | scorer faults reproduced: missing lines uncharged, paired population differs from the rate's, insertion repairs invisible; flag kinds conflated; 'bracket' not bounds | | adopted: Amendment 9 (18)-(22); bracket wording withdrawn (dated); TOOL-SCORER-FIX + corrected audit; ORACLE-LOCATION-1 a candidate (desk step LOCAL-QUEUE L74) | lane |
-| round 16-17 live 00:3x: GP1 Gallica probe (TXE2-GALLICA, cap 6), DV1d re-anchor (TXE2-VIV102-REANCHOR, cap 8), WIT-VIV (TXE2-VIVWIT, cap 3), TOOL-SCORER-FIX (TXE2-SCORERFIX, cap 8) | | openings SCORER-FIX 1 (corrected audit) | running | caps 6/8/3/8 |
+| round 16-17 live 00:3x: GP1 Gallica probe (TXE2-GALLICA, cap 6), DV1d re-anchor (TXE2-VIV102-REANCHOR, cap 8), WIT-VIV (TXE2-VIVWIT, cap 3), TOOL-SCORER-FIX (TXE2-SCORERFIX session_01HmbSfw8Vp2GLH21ETx7j8u, cap 8, spawned 00:35) | | openings SCORER-FIX 1 (corrected audit) | running | caps 6/8/3/8 |
 
 ### Hand-over to incarnation 2 (lane, 9 Oct 2026 17:5x UTC by date -u; at ~60% context, per the brief's ~700k line)
 State for the successor: the programme is standing (research/TX-PROGRAM.md; brief Amendment 1). Gate in force: PREREG-txeng2-0
