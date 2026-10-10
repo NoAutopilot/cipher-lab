@@ -90,3 +90,18 @@ Held for wave 3: one N1-confirm verifier (Opus, FV-L15n method) on CLEAR/PRINT r
 (Sonnet) on FV-L15a/b/c/d/n s.5.
 
 (13:21 UTC 10 Oct by date -u: CLEAR-SWEEP spawned with source_url, session_01FTb56jd2XxxowjDwpv3H4s.)
+
+---
+
+# Wave 3a (written 10 Oct 2026 13:4x UTC by date -u; lane workers 41.04 done + CLEAR-SWEEP live; orchestrator 3.83)
+FV-L15b 7.87 (E545 E560 E572 E567 N1, E505 msg 1 N1 / msg 2 N3 D2, E525 N3 D3; AUD2-LEDGER15-2), FV-L15a 13.17, 65% over cap (E536 N1; E555 E541 E576 E575 N3
+D3 weak, E568 N3 D2; AUD2-LEDGER15-1). Correction to lesson (1): Grant Papers vol. 14 IS on IA (`papersofulyssess0014gran`); vol. 13 is not.
+Over-cap lesson: FV-L15a ran a full G3 + press pass on every entry after its holder pass; a verifier stops at 80% of cap even mid-entry and names the rest.
+
+## FIX-L15 (Sonnet 5.5; cap $3, box 80 min, no network)
+Exactly FIX-L14's method (ledger14 jobs file "## FIX-L14", FIX-FM20/FIX-FM65 entry-note mechanism, never hand-edit reading*.md, an idempotent
+`fixl15_apply.py`): apply s.5 (or the corrections section each names) of AUDIT.md "## AUDIT (FV-L15a)", "(FV-L15b)", "(FV-L15c)", "(FV-L15d)", "(FV-L15n)" --
+header/addressee/signer/time-word fixes, the key collisions each lists (Berrien, Binney, Whiting, St Lawrence, Lehigh monitor, Sumner/Nansemond etc.), N1
+header notes. Do NOT touch an entry whose AUD2-LEDGER15-<n> second audit has started (grep ROOM for its claim): leave that entry's s.5 for the next FIX and say
+so. decode x3 --write/--check exit 0; status.json/SO already written by the verifiers (check, do not duplicate); NOTES "## FIX-L15 (10 Oct 2026, account 1, for
+LANE LEDGER-15)"; depth_check; gaps_check; file_shrink_guard on every touched file.
