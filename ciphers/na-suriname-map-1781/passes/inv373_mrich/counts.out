@@ -1,0 +1,14 @@
+373_0744L	pool	inv373_0744_blind_sb/A	lines 21	letters 772	m 22	n 84	m per line 1.05	m per 100 letters 2.85
+373_0744L	pool	inv373_0744_blind_sb/B	lines 21	letters 768	m 21	n 84	m per line 1.00	m per 100 letters 2.73
+373_0744R	pool	inv373_0744R_blind/A	lines 22	letters 737	m 23	n 86	m per line 1.05	m per 100 letters 3.12
+373_0744R	pool	inv373_0744R_blind/B	lines 22	letters 733	m 21	n 89	m per line 0.95	m per 100 letters 2.86
+373_0745L	pool	inv373_0745L_blind/A	lines 22	letters 757	m 19	n 67	m per line 0.86	m per 100 letters 2.51
+373_0745L	pool	inv373_0745L_blind/B	lines 22	letters 763	m 19	n 69	m per line 0.86	m per 100 letters 2.49
+373_0745R	pool	inv373_0745R_blind/A	lines 23	letters 742	m 9	n 91	m per line 0.39	m per 100 letters 1.21
+373_0745R	pool	inv373_0745R_blind/B	lines 23	letters 740	m 10	n 88	m per line 0.43	m per 100 letters 1.35
+373_0702	out	inv373_0702_r13	lines 42	letters 1571	m 33	n 177	m per line 0.79	m per 100 letters 2.10
+373_0730	out	inv373_0730_r13	lines 11	letters 520	m 14	n 50	m per line 1.27	m per 100 letters 2.69
+373_0746	out	inv373_0746_r14	lines 27	letters 843	m 16	n 88	m per line 0.59	m per 100 letters 1.90
+373_0758R	out	inv373_0758_r14	lines 11	letters 310	m 8	n 42	m per line 0.73	m per 100 letters 2.58
+373_0692R/0693L	out	inv373_0693_r10 (pass A gloss rows)	lines 13	letters 390	m 11	n 40	m per line 0.85	m per 100 letters 2.82
+372_0189R	out	sur372 (R gloss rows, B where R lacks)	lines 13	letters 585	m 16	n 66	m per line 1.23	m per 100 letters 2.74
