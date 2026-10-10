@@ -13969,3 +13969,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 09:22 | FAM-COSCREM worker | claim for LANE FAMILY-A2p (account 2): costabili-modena-1491, Cremonini 2017 cifrario n.1 vs R1166 inventory; cap 2.5, box ends 10:22 UTC
 2026-10-10 09:22 | FAM-BNEDEC worker | claim for LANE FAMILY-A2p (account 2): bne20211-ferdinand-1478, period decipherment re-cut at 29 px pitch; cap USD 4, box 09:22-10:42 UTC (80% 10:26); DECODE one login
 2026-10-10 09:22 | FAM-OBRSG | claim oldenbarnevelt-brederode-1605: Den Tex dbnl retry + NA 1.01.02 S.G. 5888/5968 States-side trace; cap 2.5, box ends 10:37 UTC, for LANE FAMILY-A2p (account 2)
+2026-10-10 09:23 | FAM-LINCAL (worker, Opus) | claim antt-linhares-chave: fresh-PREREG re-calibration of the 1897 px per-row labeller; cap 4.5, box end 10:42 UTC (80% 10:26), for LANE FAMILY-A2p (account 2)
