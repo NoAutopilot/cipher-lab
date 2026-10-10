@@ -13699,9 +13699,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM65b)'"
+        "AUDIT.md '## AUDIT (FV-FM65b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER13-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM65b verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -13722,7 +13723,7 @@
       "depth_pct": 94.4,
       "title": "Eckert 1864 (Fort Monroe ledger): Capt. W. T. Howell, City Point, to Col. R. C. Webster, Fort Monroe, 3 Jan 1865: by Rawlins's direction, turn the coaled steamers over to Col. Morgan for rations; how many troops each will carry (E502)",
       "line": "Read at grade H with War Department Cipher No. 1: on 3 Jan 1865 Capt. William T. Howell at City Point told Col. R. C. Webster at Fort Monroe, by Rawlins's direction, to turn the steamers he was coaling and watering over to Col. Morgan, chief commissary, for rations as each became ready, and asked how many troops each would carry; Webster's reply is printed in the Official Records (ser. I vol. 46 pt 2 p.21), this telegram was not located there, in Grant's papers or in the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-FM65b); reader's header corrected (sender Howell, addressee Webster); 'tattoo' unread (M); not N4: Grant Papers vol. 13 by Google Books snippets only (not on IA; in-volume control passed), NARA RG 107 not reached, ORN I/12 unreachable, press partly searched",
+      "gap": "N3 two audits (FV-FM65b, AUD2-LEDGER13-2); reader's header corrected (sender Howell, addressee Webster); 'tattoo' unread (M); not N4: Grant Papers vol. 13 by Google Books snippets only (not on IA; publisher PDF Cloudflare 403; intitle controls passed, AUD2-LEDGER13-2), NARA RG 107 not reached, ORN I/12 searched by be-api (AUD2-LEDGER13-2), press partly searched",
       "depth": "D3",
       "completeness": "17 H + 1 M of 18 code-word tokens",
       "phrases": [
@@ -13733,18 +13734,19 @@
         "Huntington mssEC 25 (obj 5952) p.305, pointer 5849, E502"
       ],
       "depth_sentence": "On 3 Jan 1865 Capt. William T. Howell at City Point, by Rawlins's direction, told Col. R. C. Webster at Fort Monroe to hand the steamers he was coaling and watering over to Col. Morgan, the chief commissary, for loading with rations, and asked how many troops each would carry.",
-      "depth_check": "external non-statistical: Webster's printed reply to Capt. William T. Howell, 'Steamers all ready coaled and loaded with proper rations' (OR I/46 pt 2 p.21); Rawlins to Morgan the same morning (p.21; holder 5846 in cipher)",
+      "depth_check": "external non-statistical: Webster's printed reply to Capt. William T. Howell, 'Steamers all ready coaled and loaded with proper rations' (OR I/46 pt 2 p.21); Rawlins to Morgan the same morning (p.21; holder 5846 in cipher); also OR I/46 pt 2 p.21 dated 3 Jan 1865 7 p.m. on the page image, and p.22 Rawlins to Morgan 3 Jan 2 p.m.: 'Captain Howell ... has been directed to so instruct the quartermaster at Fort Monroe' (AUD2-LEDGER13-2)",
       "depth_note": "17 H + 1 M of 18 code-word tokens"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM65b)'"
+        "AUDIT.md '## AUDIT (FV-FM65b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER13-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
-      "depth_by": "FV-FM65b verifier (account 1)",
+      "depth_by": "AUD2-LEDGER13-2 second verifier (owner account)",
       "depth_date": "10 Oct 2026",
       "decode_status": "Partially decrypted",
       "date": "10 Oct 2026",
@@ -13763,8 +13765,8 @@
       "depth_pct": 94.1,
       "title": "Eckert 1864 (Fort Monroe ledger): Col. R. C. Webster, Fort Monroe, to Capt. Howell, and Army of the James headquarters to Webster, 4 Jan 1865: the steamers had left before 9 AM; send the Russia up in time for a flag ship (E507)",
       "line": "Read at grade H with War Department Cipher No. 1: on 4 Jan 1865 Webster at Fort Monroe told Capt. Howell that all the steamers named had left before 9 that morning, and Army of the James headquarters asked Webster, by Butler's direction, to send the steamer Russia up in time to serve as a flag ship; not located in the Official Records (ser. I vol. 46 pt 2) or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-FM65b); 'weasler' in msg 2 = Weasel/Steam (H) left plain by the decoder; 'South' M; not N4: Grant Papers vol. 13 by Google Books snippets only (not on IA; in-volume control passed), NARA RG 107 not reached, ORN I/12 unreachable, press partly searched",
-      "depth": "D2",
+      "gap": "N3 two audits (FV-FM65b, AUD2-LEDGER13-2); 'weasler' in msg 2 = Weasel/Steam (H) left plain by the decoder; 'South' M; not N4: Grant Papers vol. 13 by Google Books snippets only (not on IA; publisher PDF Cloudflare 403; intitle controls passed, AUD2-LEDGER13-2), NARA RG 107 not reached, ORN I/12 searched by be-api (AUD2-LEDGER13-2), press partly searched",
+      "depth": "D3",
       "completeness": "16 H + 1 M of 17 code-word tokens",
       "phrases": [
         "Huntington mssEC 25 (obj 5952) p.308, pointer 5852, E507"
@@ -13774,16 +13776,17 @@
         "Huntington mssEC 25 (obj 5952) p.308, pointer 5852, E507"
       ],
       "depth_sentence": "On 4 Jan 1865 Webster at Fort Monroe reported that all the steamers named had left before 9 that morning, and Army of the James headquarters asked him, by Butler's direction, to send the steamer Russia up in time to serve as a flag ship.",
-      "depth_check": "code clause: Weasel = Steam, Animal = Monroe, Knave = Butler read passim; context only (the Russia in Terry's fleet, OR I/46 pt 2 p.90; Dodge to Webster 4 Jan, pp.34-35), no external check of this telegram's own content (D2)",
+      "depth_check": "external non-statistical: Webster's reply to Dodge, Ft Monroe 4 Jan 1865 7.30 PM, in the Huntington's transcription of ledger row 5855/1 ('The Russia is disabled and will not be ready before Friday'); msg 1 answers E505 msg 2 ('steamers named', 3 Jan); context OR I/46 pt 2 pp.34-35, 90 (D3, raised from D2 by AUD2-LEDGER13-2)",
       "depth_note": "16 H + 1 M of 17 code-word tokens"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM65b)'"
+        "AUDIT.md '## AUDIT (FV-FM65b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER13-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM65b verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -13804,7 +13807,7 @@
       "depth_pct": 100.0,
       "title": "Eckert 1864 (Fort Monroe ledger): Col. R. C. Webster, Fort Monroe, to Capt. Howell, and Col. Dodge to Webster, 4 Jan 1865: the Eliza Hancox sent, the Winants hardly fit; have the Winants and the tug D. D. Porter ready for the expedition (E512)",
       "line": "Read at grade H with War Department Cipher No. 1: on 4 Jan 1865 Webster at Fort Monroe told Capt. Howell that the Eliza Hancox had gone to Col. Dodge and the Winants was hardly fit to go, and Dodge asked Webster that night to have the Winants and the tug D. D. Porter ready to go with the expedition; not located in the Official Records (ser. I vol. 46 pt 2 prints the Hancox in Terry's orders) or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-FM65b); msg 1 is Webster's (Sheldon operator), msg 2 Dodge's (O'Brien operator); not N4: Grant Papers vol. 13 by Google Books snippets only (not on IA; in-volume control passed), NARA RG 107 not reached, ORN I/12 unreachable, press partly searched",
+      "gap": "N3 two audits (FV-FM65b, AUD2-LEDGER13-2); msg 1 is Webster's (Sheldon operator), msg 2 Dodge's (O'Brien operator); not N4: Grant Papers vol. 13 by Google Books snippets only (not on IA; publisher PDF Cloudflare 403; intitle controls passed, AUD2-LEDGER13-2), NARA RG 107 not reached, ORN I/12 searched by be-api (AUD2-LEDGER13-2), press partly searched",
       "depth": "D3",
       "completeness": "16 H of 16 code-word groups",
       "phrases": [
@@ -13822,9 +13825,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM65b)'"
+        "AUDIT.md '## AUDIT (FV-FM65b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER13-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM65b verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -13845,7 +13849,7 @@
       "depth_pct": 100.0,
       "title": "Eckert 1864 (Fort Monroe ledger): Col. R. C. Webster, Fort Monroe, to Gen. Ingalls, 7 Jan 1865: the Ariel, General Sedgwick, Victor, Illinois and Baltic ordered to Baltimore on 3-4 Jan; only the Baltic heard from (E520)",
       "line": "Read at grade H with War Department Cipher No. 1: on 7 Jan 1865 Webster at Fort Monroe told Gen. Ingalls that the Ariel, General Sedgwick, Victor and Illinois had been ordered to Baltimore on the night of 3 January and the Baltic on the 4th, and that only the Baltic had been heard from; not located in the Official Records (ser. I vol. 46 pt 2) or the Huntington's full-text search, which holds the 3 and 4 Jan orders in clear (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-FM65b); sender R. C. Webster (Sheldon operator); not N4: Grant Papers vol. 13 by Google Books snippets only (not on IA; in-volume control passed), NARA RG 107 not reached, ORN I/12 unreachable, press partly searched",
+      "gap": "N3 two audits (FV-FM65b, AUD2-LEDGER13-2); sender R. C. Webster (Sheldon operator); not N4: Grant Papers vol. 13 by Google Books snippets only (not on IA; publisher PDF Cloudflare 403; intitle controls passed, AUD2-LEDGER13-2), NARA RG 107 not reached, ORN I/12 searched by be-api (AUD2-LEDGER13-2), press partly searched",
       "depth": "D3",
       "completeness": "15 H of 15 code-word groups",
       "phrases": [
@@ -13863,9 +13867,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-FM65b)'"
+        "AUDIT.md '## AUDIT (FV-FM65b)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGER13-2)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-FM65b verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -13886,7 +13891,7 @@
       "depth_pct": 94.7,
       "title": "Eckert 1864 (Fort Monroe ledger): Col. G. W. Bradley, City Point, to Col. R. C. Webster, Fort Monroe, 16 Jan 1865: transportation for 4,000 men and 50 six-mule teams with 15 days' rations; what time can it report here (E532)",
       "line": "Read at grade H with War Department Cipher No. 1: on 16 Jan 1865 Col. G. W. Bradley at City Point asked Col. Webster at Fort Monroe when transportation for 4,000 men and 50 six-mule teams, with fifteen days' rations, water and coal, could report there; Rawlins's order of the same day is printed in the Official Records (ser. I vol. 46 pt 2 p.152), this telegram was not located there or in the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 one audit (FV-FM65b); 'ditto' M; not N4: Grant Papers vol. 13 by Google Books snippets only (not on IA; in-volume control passed), NARA RG 107 not reached, ORN I/12 unreachable, press partly searched",
+      "gap": "N3 two audits (FV-FM65b, AUD2-LEDGER13-2); 'ditto' M; not N4: Grant Papers vol. 13 by Google Books snippets only (not on IA; publisher PDF Cloudflare 403; intitle controls passed, AUD2-LEDGER13-2), NARA RG 107 not reached, ORN I/12 searched by be-api (AUD2-LEDGER13-2), press partly searched",
       "depth": "D3",
       "completeness": "18 H + 1 M of 19 code-word tokens",
       "phrases": [

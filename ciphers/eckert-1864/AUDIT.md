@@ -16986,3 +16986,73 @@ located in print" (as filed).
 - status.json rows E600 and E602 written (N3 D2, audit_status "one audit"), SO prompts `second-opinions/PROMPT-chatgpt-e600.md`, `-e602.md` and
   their SECOND-OPINIONS-QUEUE rows; WORK-QUEUE `AUD2-LEDGER14-1` (account-3, Opus 5.5, cap 5) for the second audit. No rows for the N1 entries.
 - Requests: hdl.huntington.org 10 (one take, 3.3 s apart); archive.org 4 (advancedsearch 2, djvu 2) + be-api 14 (1.9 s apart); www.googleapis.com 6.
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER13-2)
+
+Second verifier AUD2-LEDGER13-2 (owner-account session session_01598DGXLoWfsg4xUXKcyTEW, Opus 5.5, for the orchestrator (owner account), WORK-QUEUE row
+AUD2-LEDGER13-2), 10 Oct 2026, 10:31-10:5x UTC by `date -u`; a separate session from the readers FM65-A, FM65-B, FM65-C and the first verifier FV-FM65b
+(the owner account is the account-1 label in work_queue.py, as for AUD2-LEDGER10-3 and AUD2-LEDGER13-1; this session had read or audited none of the five).
+Scope: **E502, E507, E512, E520, E532** (first audit "## AUDIT (FV-FM65b)"; E530 is N1 there and not re-audited). Nothing decoded; every code word looked
+up again in key.md. Key source: `period` (War Department Cipher No. 1, key.md). Step 0 not used (non-test on mssEC 25, Wave 2 RULING). No spec, so
+`judge_plaintext.py` was not run. Scripts and outputs (committed, `fortmonroe/`): `aud2_l13_2_hdl.py` (+ `.out`), `aud2_l13_2_gb.py` / `aud2_l13_2_gb2.py`
+(+ `.out`), `aud2_l13_2_beapi.py` (+ `.out`), `aud2_l13_2_schol.py` (+ `.out`), `aud2_l13_2_seneca.out`.
+
+### 1. Prior work (prior-work-step.md checks 1, 3, 5)
+- `tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<pointer>;date=..;sender=..;recipient=..' --step-type second-audit`
+  (the five are not items.tsv rows), all five: exit 4, "holds: specific 2 (LEAD 2); generic 2 (UNCHECKED-NET 2)". The two LEADs are target-level live
+  claims of other jobs (FIX-FM21 leaf fixes on O9b/N2e/N2f; FM-F1 filing other Fort Monroe rows) that do not cover these five: CLEAR. The UNCHECKED-NET row
+  lists 1864 OR volumes (I/32-38) not on disk, irrelevant to January 1865; the right volume, OR I/46 pt 2, was read in full text this session (s.2).
+- Own work after the first audit: entries filed since (E536-E580, E600 onward, ciphertext-no2/no9) grepped for the ship and officer names: no duplicate.
+  Two siblings matter: **E505** (5851/1, Webster's reply to E502) and the unfiled short row **5855/1** (s.2, E507).
+
+### 2. Families added by this audit
+| Family | Result |
+|---|---|
+| Huntington CONTENTdm full text (hdl token 10:36-10:4x; 18 CISOSEARCHALL, all pointers, words FV-FM65b did not query, control 9678 returned) | No clear copy of any of the five. **5855 (p.311) holder text: "Ft Monroe Jan 4 / 65 R. O'Brien Hd. Qrs. A. J. Minnie paradise Georges Dodge unity The Russia is disabled and will not be ready before fry day Are See Webster pandora"** = row 5855/1 (31 words, never read or filed): Webster's 7.30 PM reply to E507's second message. 5848 (p.304): the cipher copy of Rawlins to Morgan, 3 Jan 2 p.m. (OR I/46 pt 2 p.22). 5865, 5868, 8508, 7693, 8511, 8516 (Baltic at Swann Point 6 Jan, "got off for Monroe" 7 Jan, to Annapolis 10 Jan; Illinois, Victor, Ashland loaded 12 Jan): context for E520, other texts. 9917, 8580, 9812, 8386, 13005, 5822, 3135, 5651, 5941: other texts. |
+| OR I/46 pt 2 full text (`warofrebellion462unit` djvu, 1 download) + page image p.21 (`warofrebellion014602rootrich` n26) | **p.21 on the image: "FORT MONROE, January 3, 1865--7 p.m. Capt. WILLIAM T. HOWELL, Assistant Quartermaster: Steamers all ready coaled and loaded with proper rations ..." -- the OCR's "January 5" is a misread 3** (FV-FM65b's "[3 or 5, OCR]" settled; the ledger copy E505 also reads 3 Jan). **p.22, Rawlins to Morgan, City Point 3 Jan 2 p.m.: "Captain Howell, assistant quartermaster, has been directed to so instruct the quartermaster at Fort Monroe. Ration them same as others ..."** -- the printed record of the instruction E502 carries (a different text: Rawlins to Morgan). p.152 and p.165 re-read: FV-FM65b's E532 diff stands; p.164, Rawlins to Ord 17 Jan, "Fifty six-mule teams will be sent from here to-morrow evening to General Terry" (context, other text). Russia: only p.90 (Terry's order of sailing) and the index; Winants 0; Hancox p.90 only; Seneca, Steamer p.954 (other date); Baltic pp.51, 66, 106 only. |
+| Grant Papers vol. 13 (1985), Google Books snippets: 31 intitle:Grant exact-phrase queries (`gb2`), controls `"six vessels" Oriental` and `"enquiries made at both places"` (E531, E516 in vol. 13) both returned the volume | No hit in vol. 13 for any decoded phrase of the five ("which you have been and are now", "instructions received from General Ingalls", "what number of troops", "had left here before", "in time for a flag", "steamer Russia", "Russia is disabled", "hardly capable of going", "tug D. D. Porter", "bring down a tug", "the Winants", "Eliza Hancox", "ordered to Baltimore", "except the Baltic", "heard from them since", "Victor and Illinois", "mule teams complete", "what time can this", "transportation for four thousand", Bradley Webster "mule teams" ...); hits only in other volumes on other matters. ISBN-restricted queries (`isbn:0809311976`, `gb`, 24): controls Ariel Sedgwick and "perfect order" pass, but **Ashland and Baltic, both printed in the volume's notes, return 0** -- the ISBN route has incomplete recall and its zeros are not counted. |
+| Grant Papers vol. 13 page by page | **Unreachable:** the publisher's open PDF (scholarsjunction.msstate.edu, usg-volumes/31, `viewcontent.cgi?article=1030`) answers a Cloudflare 403 to curl and to `tools/browser_fetch.js --binary` (3 attempts, its own retry); web.archive.org CDX reset the connection twice (one retry after 20 s). |
+| ORN ser. I vol. 12 (`officialrecordso0012unse`, djvu 500 to FV-FM65b) by be-api inside the item | Controls Wilmington, Malvern hit; Winants, Hancox, "steamer Russia", "Webster quartermaster Monroe" 0. |
+| IA be-api whole collection, new variants | "Russia is disabled" 8 (Crimean/1900s press, rejected), "Winants is hardly" 0, "Baltic which was at Baltimore" 0, "transportation for 4,000 men" 0, "fifty six-mule teams" 75 (OR I/46 pt 2 p.164 copies, OR I/50 Arizona trains, Rebellion Record 1864, memoirs: rejected, other texts). |
+| Google Books at large (`gb`, 9 unrestricted) | Army and Navy Journal 1865, Porter's Special Order No. 10, "Flag Ship Malvern, January 9, 1865": the Russia in the transports' line (context for E507); Report of the Secretary of War / QMG 1865-66: the Winants and Eliza Hancox in the chartered-vessel lists (context for E512); OR I/46 pt 2 p.51 (5 Jan order, known). No copy of any of the five. |
+| Open indexes (OpenAlex, Semantic Scholar, CrossRef; 6 queries each, one S2 429) | Nothing on the Fort Monroe ledger or these telegrams. |
+| JSTOR | 8 rows appended to JSTOR-QUEUE.tsv (both families: names AND date; bare quoted phrases); they never block a class. |
+| Not reached | NARA RG 107 (Telegrams Collected, the editors' source), Grant Papers vol. 13 page by page, Chronicling America (FV-FM65b's 3 queries not repeated). |
+
+### 3. Readings and grades, checked
+Every code group of the five looked up again in key.md: all agree with FV-FM65b s.3 (Katy 4.30 PM, Pebble 3, Pandora / Paradise Colonel, Shelter / Shelby
+General, Berry Chief of Staff, Juno Grant, Weasel / Wayworn Steam, Vincent / Vinton Quartermaster, Pedlar / Pekin comma, Wales Rations, Whisky Troops (H,
+p.24 l.7), Yoke / Youth / Walrus Signature, Pilgrim Captain; Imogene 3 PM, Unity / Zebra / Zodiac period, Pony 9, Wedge Today, Lucy 5 PM, Animal Monroe, Knave
+Butler; Rosalie 9 PM, Black City Point, Reliance 10.30 PM, Rape Expedition, Whelp Tomorrow; Minnie 7.30 PM, Palate Brigadier General, Banditti / Baptism
+Baltimore, Rebecca 10 PM, Sarah 11 PM, Penny 4; Whig / Wherry Transportation, Promise 1000, Mansion 50, Pledge 6, Ghost 15, Wick Report). Counts recounted: E502
+H 17 + M 1, E507 H 16 + M 1, E512 H 16, E520 H 15, E532 H 18 + M 1 -- FV-FM65b's figures stand. Its plain-word calls (Webster, Webb Stir, William, Dodge,
+flag, Baltic, Ashland) and the header fixes are confirmed by the print (s.2: p.21 names Capt. William T. Howell and R. C. Webster). Notes: E502's time word
+Katy = 4.30 PM while the clerk's header says 4.35 PM (header kept, note only). E512 "Seneca" as a vessel is inferred (I): no army steamer Seneca was located
+for January 1865 (OR I/46 pt 2 p.954 has a steamer Seneca at another date; `aud2_l13_2_seneca.out` 0), though the decoder's [Fear] gives no sense.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E502 | **N3** (kept) | period | **D3** (kept; external check now two printed telegrams: Webster's reply, OR I/46 pt 2 p.21, 3 Jan 7 p.m. on the page image, and Rawlins to Morgan 3 Jan 2 p.m., p.22, "Captain Howell ... has been directed to so instruct the quartermaster at Fort Monroe") | not located after FV-FM65b and s.2 |
+| E507 | **N3** (kept) | period | **D3** (raised from D2: external non-statistical check of msg 2's own content, the holder transcription of row 5855/1, Webster to Dodge 4 Jan 7.30 PM, "The Russia is disabled and will not be ready before Friday"; msg 1's "steamers named" answers E505 msg 2, 3 Jan 9.30 PM) | not located after FV-FM65b and s.2 |
+| E512 | **N3** (kept) | period | **D3** (kept) | not located after FV-FM65b and s.2 |
+| E520 | **N3** (kept) | period | **D3** (kept; holder 5865, 5868, 8508 add the Baltic's movements 6-7 Jan) | not located after FV-FM65b and s.2 |
+| E532 | **N3** (kept) | period | **D3** (kept) | not located after FV-FM65b and s.2 |
+- **Not N4:** Grant Papers vol. 13 searched by snippet only (controls passed for the intitle route; its notes print telegrams of this very ledger, E530 E531
+  E516, so this is the main residual risk, highest for E532 and E520, which address Rawlins's and Ingalls's business), NARA RG 107 not reached.
+- **Safe sentences:** FV-FM65b's five stand, with E502's tail amended to: "... Webster's reply of 3 Jan 7 p.m. and Rawlins's note that Howell had been
+  directed to instruct the Fort Monroe quartermaster are printed in the Official Records (ser. I vol. 46 pt 2 pp.21-22); this telegram was not located there,
+  in Grant's papers (snippet search) or in the Huntington's full-text search (searched 10 Oct 2026)." E507 may add: "Webster's reply that the Russia was
+  disabled is in the same ledger (pointer 5855)."
+- **Unsafe:** any "first", "new", "unpublished"; "not in Grant's papers" without "snippet search"; E502's printed reply dated 5 Jan.
+
+### 5. Postmortem, leads and propagation
+- No over-claim found in FV-FM65b; one open point closed (p.21 date, image) and one depth raised (E507) on new holder evidence. Nothing in NOTES.md,
+  reading.md or the five SO prompts says new or first; the SO prompts need no change (no reading revised).
+- **Lead for LANE LEDGER-13 / the next reader wave:** row **5855/1** (4 Jan 1865, Webster to Col. Dodge, 31 words, 'clean-offline', never read): almost all
+  plain in the holder text; file or record it with E507 as its antecedent. FIX job (FV-FM65b s.5) unchanged; add "E502 external: OR I/46 pt 2 p.21 is 3 Jan
+  (image), p.22 Rawlins 2 p.m." to the E502 note.
+- Propagated: status.json E502 E507 E512 E520 E532 -> audit_status "two audits", audit_refs + this section, E507 depth D3 with its check, E502 depth_check
+  and the five `gap` lines updated; WORK-QUEUE AUD2-LEDGER13-2 -> done.
+- Requests: hdl.huntington.org 18 (all 200); www.googleapis.com 65 (1.6 s apart); archive.org 2 (one djvu, one page image) + be-api 12; scholarsjunction.msstate.edu
+  4 (2 HTML 200, 1 curl 403, 1 browser 3x 403); web.archive.org 2 (reset); api.openalex.org 6, api.semanticscholar.org 6 (one 429), api.crossref.org 6.
