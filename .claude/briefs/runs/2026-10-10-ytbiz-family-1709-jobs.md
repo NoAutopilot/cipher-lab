@@ -168,3 +168,46 @@ say so (Birch glosses Downing systematically; the remaining 21 are then "not cla
 in place through `bm/v57_final.py` (its --check must stay exit 0; add the new evidence as image rows) and write NOTES "## THUR-V7LOOK" with any
 unglossed passage under a key in hand (Downing R4896) ranked by numerals. Do not transcribe or decode. Units: ~12-16 leaf fetches + ~12 strip
 looks at ~0.12; stop before a look crossing 80% of cap. Report what was found and where it was not found; do not classify novelty.
+
+## Wave 4 results (costs by get_session)
+- THUR-V7LOOK 1.94 / 2.5 (Sonnet): 13 more groups image-read, all glossed (8 Downing, 3 "headingless" = Fauconberg to H. Cromwell p.413,
+  vol 5 l.15486 = Montagu p.179); stop rule hit; 21 Downing groups "not classed, prior strongly glossed". Birch vols 5-7: no unglossed
+  passage under a key in hand found.
+
+## Wave 5 (18:5x UTC 10 Oct)
+Hosts this wave: resources.huygens.knaw.nl ("huygens"): THUR-DUTCH only, >= 2.1 s, <= 60 requests, take/release. archive.org ("IA"): THUR-V146
+only, <= 30 requests, take/release.
+
+### THUR-DUTCH (Sonnet, cap 3, box 100 min, huygens <= 60; github.com sparse clones <= 2): thurloe-printed, Birch vol 1 Dutch 1653 cipher letters -- premise check against the De Witt editions
+Context: Birch 1742 vol 1 prints intercepted 1653 Dutch letters with numeral cipher (b146/hits.tsv vol 1 rows with "Beverning/Vande Perre 1653
+family" in on_file). LANDSCAPE.md row 43: "Dutch ciphers 1653, Beverning and Vande Perre to Boreel" closed-negative by both solver repositories;
+Aymeloglu recovered the alphabet of Vande Perre's letters to de Bruyne (unsolved-ciphers/vande-perre-1653, cyphersolver/thurloe). Tomokiyo:
+sources/cryptiana/web/dutch.htm. Question: does a printed clear text exist for any of these cipher letters (the Dutch side kept deciphered or
+plain copies: Japikse's Brieven van/aan Johan de Witt, Huygens retroboeken `dewitt`), which would make them known-plaintext pairs for a key
+(recovery, grade C) and open the closed-negative Boreel letters to a key-in-hand read?
+Step 0: `python3 tools/prior_work.py thurloe-printed --item-spec 'shelfmark=Birch 1742 vol 1 Dutch ambassadors 1653;sender=Beverning;recipient=De Witt;date=1653-08-08' --step-type lookup --fetch`,
+paste with exit code; check 1 by hand (grep Beverning, Perre, Boreel, Nieuport, 1653 in this folder, ROOM, CATALOG, LANDSCAPE, sources/).
+Step 1 (disk + 2 sparse clones): list every vol 1 Dutch cipher passage from b146/hits.tsv (djvu line, page, heading, date, numerals) -> the IA
+vol 1 djvu text if needed is `collectionofstat01thur` (sha1 in b146/manifest.tsv; fetch once only if not on disk, 1 IA request, after THUR-V146's
+release or before its take -- read ROOM). Sparse-clone (grep only, never copy code: Aymeloglu has no licence) `aaymeloglu/unsolved-ciphers`
+path `vande-perre-1653` and `dbourdeau/cyphersolver` path `targets/thurloe` (or whatever path holds it); record what each read, which letters,
+their key and their negative, with the commit hash.
+Step 2 (huygens): in Brieven van Johan de Witt deel 1 and Brieven aan Johan de Witt deel 1 (retroboeken `dewitt`; sources/huygens/NOTES.md
+gives the search route), search each Birch letter by correspondent pair and date (+-1 day, Old/New Style) and by a distinctive clear phrase
+from Birch's own English summary or clear part; positive control: one 1653 letter you know is printed there (say which). Record per letter:
+printed clear text yes/no (edition, page, note "uit cijfer"/"gedechiffreerd"/plain copy), or the edition's own footnote on a cipher.
+Output `dutch1653/pairs_census.tsv` (birch_vol, djvu_line, page, date, sender, recipient, numerals, gloss_in_birch, solver_state,
+edition_hit, edition_page, note) and NOTES "## THUR-DUTCH" ranking candidate pairs (cipher in Birch + clear text in the edition) by numerals,
+with the cheapest next step (transcription + interlinear_align) and cost. Do not transcribe or decode. Units: clones ~0.3, ~20-40 huygens
+queries + OCR page reads ~1.5. Report what was found and where it was not found; do not classify novelty.
+
+### THUR-V146 (Sonnet, cap 2.5, box 80 min, IA <= 30): thurloe-printed, image-class the unclassed Birch vol 1/4/6 numeral windows (non-Blank-Marshall)
+Read NOTES "## THUR-B146", "## THUR-V6", "## THUR-AGENTS", `b146/hits.tsv`, `b146/v6_hits.tsv`, `bm/census_v6v7.tsv`, the page-to-leaf method in
+"## THUR-BM3"/"## THUR-V7LOOK" (read the printed page number first, then move by the difference).
+Step 0: prior_work.py `--item-spec 'shelfmark=Birch 1742 vols 1 4 6 numeral passages;recipient=Thurloe' --step-type lookup --fetch`, paste it.
+Units, in this order: vol 6 Jephson ll.68655, 75347; Bampfield 19092, 68904; Hague 41201, 94181; Gookin? 4076 (109 numerals); vol 4 hits in
+b146/hits.tsv with numerals >= 20 (Broghill 4057 first); vol 1 non-Dutch hits with numerals >= 20 (the Dutch 1653 rows belong to THUR-DUTCH:
+skip them). One strip per unit (`tools/iiif_lines.py --image`), one Sonnet call or eye read: cipher yes/no, gloss printed yes/no/partial,
+correspondent. Output `b146/census_v146.tsv` and NOTES "## THUR-V146": any unglossed cipher passage, its correspondent, and whether a glossed
+sibling pool of the same correspondent exists in Birch (the THUR-BM route: rebuild a key from glossed siblings, then read the unglossed one).
+Do not transcribe or decode. Stop at 80% of cap. Report what was found and where it was not found; do not classify novelty.
