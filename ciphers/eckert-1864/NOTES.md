@@ -4833,3 +4833,30 @@ Read so far: 57 of 77 code-word tokens at H (74%) over the 11 blocks, 20 M, 0 C;
 - [ ] image-check: five of ten leaves read at the header only (planned step above).
 - [x] retry: the one be-api 502 retried once (HTTP 200).
 Verdict: keep going: 4 internal gaps; cheapest next: ORN and OR ser. III vol. 4 phrase grep for the seven unlocated entries, ~$0.3
+
+## FIX-N2a (10 Oct 2026, account 1, for LANE LEDGER-N2)
+Applied s.5 of AUDIT (FV-N2a), (FV-N2b), (FV-N2c) to ciphertext-no2.txt through decode.py's per-entry note lines (merge/gloss/plain/graded/cut-after); no key row edited, reading-no2.md only regenerated. Code-word tokens before -> after:
+- N2-FA: H 14, I 2 -> H 14, I 7, M 2. Felix McCloskey, Commissioner, "prevent", C. A. Dana, Assistant [Secretary] glossed I (plain phonetic); Pem and Brach graded M; header: Warren (Nymph H), Fifth Corps, Dana siblings (OR I/42 pt 3 pp.435-436, 455).
+- N2-FB: H 28 -> H 25, C 1. "presume" plain (the Hotly slip gone); Wiley Buggy = Quartermaster General C by the reply (holder 10443, OR I/40 pt 2 pp.463-464).
+- N2-FE: unchanged (H 25, C 1, I 2; the weekday words were already H in the derived block); header only (print: OR I/43 pt 2 p.730, I/42 pt 3 p.794).
+- N2-FH: H 19 -> H 17, M 2. Transcription: "walch" added before "Rufus In Galls" and "wilby" -> "willy" (audit FV-N2b, from the leaf; the only two transcription edits); "Hero of Jersey" plain (decoder slip removed, audit unsafe-sentence list); walch = Welch and Marshal = 17 (Marshall) glossed M.
+- N2-GF: H 14, C 1 -> H 10, C 1, M 1. collecting/Collected/business plain (Harrison x2, Browns Ferry gone); Stephen = "in the" M; header: ledger pencil 2.30 PM, holder 4569 reply.
+- N2-GC: H 15, C 2, I 2 -> H 14, C 2, I 2, M 1. Relay House plain x2; Pharoah = December H; mustache unread M; Negus = Sheridan stated H.
+- N2-GE: H 9 -> H 9, C 2 (flora's = Sherman's, pern = Army, C against OR I/41 pt 4 p.869); header now "IN PRINT".
+- N2-GH: unchanged counts; "No 32" (next entry's label) cut; header "IN PRINT" (Grant Papers vol. 10 note). N2-GA, N2-GI: header notes only (holder sibling 9100; eye-checked).
+Already in place before this job (no change needed): status.json rows and second-opinions/PROMPT-chatgpt-n2-{fa,fb,fe,ga,gc,gf,gi}.md carry the corrected readings and counts; only PROMPT-chatgpt-n2-fh.md changed (walch = Welch M, willy, 17 Marshall M).
+Checks: `decode_no2.py --check` "reading-no2.md is current"; `decode.py --check` "reading.md is current"; `decode_no9.py --check` "reading-no9.md is current" (all exit 0). depth_check: 139 unique solves, no new failure. Not done: key-lane item (decoder applying proper-name rows to plain words) stays with the KEY lane.
+## Remaining gaps (FIX-N2a, 10 Oct 2026)
+Read so far: the ten corrected entries now stand at H/C/I/M counts above (FA 14 H 7 I 2 M; FB 25 H 1 C; FH 17 H 2 M; GF 10 H 1 C 1 M; GC 14 H 2 C 2 I 1 M); names plain.
+- OR ser. III vol. 4, ORN and NARA RG 107/92 not searched for FA, FH, GF, GC - blocker: not-attempted; next: download the volumes and phrase-grep, ~$0.3
+- decoder applies proper-name key rows to plain words (Collect, Business, Relay) - blocker: waiting-on KEY lane; entries are fixed by per-entry notes meanwhile
+
+## Escalation (FIX-N2a, 10 Oct 2026)
+- [x] siblings: same-leaf and same-week siblings carried from the audits into headers.
+- [x] clear-pages: holder clear copies (10443, 4569, 9100) already cited by the audits.
+- [x] known-keys: key-no2.md rows applied as the audits state (Nymph, Negus, Pharoah, Wedlock, Young H).
+- [ ] print: OR III/4, ORN, NARA unsearched (planned step above).
+- [n/a] key-rebuild: no key row edited.
+- [x] image-check: FV-N2a/b/c eye-checked the leaves; the two transcription edits (walch, willy) come from the FV-N2b crops.
+- [x] retry: no network used.
+Verdict: keep going: 1 internal gap; cheapest next: OR III/4 and ORN phrase grep for FA FH GF GC, ~$0.3
