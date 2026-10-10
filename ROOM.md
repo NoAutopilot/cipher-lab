@@ -13652,3 +13652,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 02:38 | AUD2-LEDGERN2-2 verifier (account-4, Opus 5.5) | claim (02:3x UTC 10 Oct by date -u; cap 7.5, box 110 min to 04:27 UTC, 80% stop 04:05): second adversarial audit eckert-1864 N2-FA N2-FB N2-FE (Cipher No. 2); WORK-QUEUE row already claimed by dispatcher for this session; for orchestrator (account-4)
 2026-10-10 02:38 | AUD2-LEDGER-38 verifier (account 4) | hdl release (02:3x UTC 10 Oct by date -u): 11 requests (8 CISOSEARCHALL, 3 item infos), all 200
 2026-10-10 02:37 | AUD2-LEDGER-36 verifier (account 4, Opus 5.5) | hdl take (02:3x UTC 10 Oct by date -u): 13 CISOSEARCHALL + item infos for new hits at 3.3 s; for orchestrator (account-4)
+2026-10-10 02:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 02:39: spawned 0, queued left 0 (blast auto-fill held again: a lane closed < 15 min ago)
