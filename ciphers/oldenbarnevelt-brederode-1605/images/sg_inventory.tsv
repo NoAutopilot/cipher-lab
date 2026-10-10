@@ -1,0 +1,13 @@
+inv	series	dates	digitised	scans	looked_at	note
+30	Registers ordinaris minuut-resoluties	1604	y	-	no	printed Resolutien XIII OR already searched (OBRED-DP)
+31	Registers ordinaris minuut-resoluties	1605	y	-	no	as 30
+4909	Liassen Loopende ingekomen ordinaris brieven algemeen	1604 Sep-Dec	n	0	-	no dao in EAD
+4910	Liassen Loopende (as above)	1605 Jan-Jul	n	0	-	no dao
+6034	Liassen Hoogduytschlandt ingekomen ordinaris vorstelijke personen, gezanten	1604	n	0	-	no dao; the natural home of a German-sent letter
+6035	Liassen Hoogduytschlandt (as above)	1605	n	0	-	no dao
+6701	Liassen Emden en Oostfriesland	1604	y	-	no	off topic
+6702	Liassen Emden en Oostfriesland	1605	y	-	no	off topic
+11851	Brievenboeken: registers ingekomen ordinarisbrieven diverse plaatsen	1604	y	733	probe 12 scans at 900px + 45 at 700px (596-640)	copies of letters in full, chronological; scan 560 Sept, 620 about 23-26 Oct, 680 Dec 1604
+11852	Brievenboeken (as above)	1605	y	522	no	METS fetched only
+5888	(Liassen Engelandt, 1621-1624)	1621-1624	y	-	no	the RGP footnote number R.A. S.G. 5888/5968 does not match this toegang numbering (5888 = 1621-24; 5968 = 1749-50)
+12569.38	Swiss-mission dossier	1605	n	0	-	OBRED-S2
