@@ -3440,3 +3440,29 @@ Read so far: vols 5 and 7 swept (148 groups, control 10/10); 7 groups image-read
 - [ ] image-check: 29 Downing groups and the headingless groups remain
 - [x] retry: none needed (15 requests, all 200)
 Verdict: keep going: 4 internal gaps; cheapest next: a page-located sample of 8 more Downing leaves, ~$1
+
+## THUR-V7LOOK (LANE FAMILY-A2s, account 2, worker Sonnet 5.5, 10 Oct 2026 18:25-18:3x UTC by date -u)
+Brief: .claude/briefs/runs/2026-10-10-ytbiz-family-1709-jobs.md "### THUR-V7LOOK". Question: are the unclassed Downing, headingless vol 7 and vol 5 l.15486 numeral groups printed with a gloss? Nothing decoded or transcribed.
+**Prior work (step 0).** `prior_work.py thurloe-printed --item-spec 'shelfmark=Birch 1742 vol 7 Downing numeral passages;sender=George Downing;recipient=Thurloe' --step-type lookup --fetch`: exit 4 (12 own-work live claims on the slug, none covering these looks; 5 editions LEADs = Birch itself; Tomokiyo/solver UNCHECKED, no volume/R-id in the item spec). The 12 own-work rows recorded CLEAR (`prior-work.tsv`); rerun without --fetch: step verdict CLEAR, exit 0. Check 1 by hand: THUR-V57 NOTES list these groups as "not image-read".
+**Route.** archive.org, 18 requests (two were 302s because the first curl lacked -L; rest 200, 2 s apart; take/release in ROOM; no login): vol 7 `collectionofstat07thur` leaves n418-n421, n319, n422, n423, n425, n173, n259, n234, n235, n447, n438, n127; vol 5 `collectionofstat05thur` n138, n184. Crop step (pasted): `python3 tools/iiif_lines.py --image <leaf>.jpg --out ciphers/thurloe-printed/bm/v7lookcrops --prefix <v7_nNNN|v5_nNNN> --lines-per-crop 16 --max-width 2000 --quality 70`; only the strips actually read are kept in `bm/v7lookcrops/` (the other crops regenerate from the same command on `https://archive.org/download/<id>/page/n<leaf>_w2000.jpg`; its manifest.json still lists them); read by eye (no model call): one strip per leaf, plus a 800 px stacked contact of the s1 strips for leaves where the cipher position was unknown.
+**Page location.** vol 7 leaf = printed page + 7 (confirmed on n418/419/420/421/319/425/173/259/234/127: p.411, 412, 413, 414, 312, 418, 166, 252, 227, 120); vol 5 leaf = page + 5 (n138 = p.133, n184 = p.179). The census page column ("~") was off by 2-50 pages; counting header lines from the nearest OCR'd page number (anchor 311/312, 414) landed on the right page except for a few (38068: guessed p.416/417 first, p.418 was right; l.15486: census said p.130, it is p.179). Three fetched leaves (n422 p.415, n423 p.416, n138 p.133) were relocation misses and carry no cipher.
+**Result: 13 groups read by image, 13 printed with an interlinear gloss.** Headingless vol 7 groups ll.37197, 37263, 37730 are not headingless: they are the cipher of Lord Fauconberg to H. Cromwell (heading at the top of p.413, ends top of p.414, dated Sept. 28 1658), numeral rows each over a letter-by-letter gloss row; the Fauconberg letter is the folder's P16-P24 family, not a Downing letter. Vol 5 l.15486: Montagu to Thurloe, 3 July 1656, p.179, whole-word/letter gloss over code runs. Downing, vol 7, eight groups all glossed: ll.27331 (p.312), 38068 (p.418), 14646 (p.166), 22027 (p.252), 19680 (pp.227-228), 40158 (p.440), 39378 (p.431, located by date and heading), 10092 (p.120, located by the phrase "I fent into Flanders" of l.10264, the same page, also glossed). With THUR-V57's seven, **15 of 15 imaged Downing vol 7 windows are glossed**; stop rule met (all 8 sampled glossed): the remaining 21 Downing groups are "not classed, prior strongly glossed". Gloss form varies: letter-by-letter (Fauconberg), whole words or phrases above code runs (Downing 1658), syllables (l.27331).
+`bm/census_v5v7_all.tsv` updated through `bm/v57_final.py` (--check exit 0): 20 image rows (7 + 13), 15 known, 8 ocr-probable, 105 unknown.
+**Unglossed passage under a key in hand, ranked by numerals: none found.** (Per-row exceptions: runs of single bare codes inside glossed rows, e.g. p.227 leaf; not counted as a passage.)
+**Where it was not found.** No unglossed Downing passage in the 8 groups read. Not read: ll.50919 (175), 40158's later pages, the 21 unclassed Downing groups, vol 5 Lockhart groups. l.37197 and l.37263 are placed on p.413 by span (between the heading at l.36387 and l.37730), not matched row by row; l.10092 and 39378 were located by phrase/date, not by their heading strip; every strip read is in `bm/v7lookcrops/`. Nothing graded; no novelty class assigned.
+
+## Remaining gaps (THUR-V7LOOK, 10 Oct 2026; supersedes the vols 5/7 items of THUR-V57)
+Read so far: vols 5 and 7 swept; 20 groups image-read, all glossed; 15 known to the folder; 105 not classed.
+- 21 Downing vol 7 groups not image-classed - blocker: not-attempted; stop rule (15 of 15 glossed) says prior strongly glossed; next: only if a Downing letter shows a printed blank, one leaf per group, ~$0.1 each
+- Downing period key sheet R4896/R4895 not transcribed - blocker: not-attempted; worth it only if an unglossed Downing passage turns up (none in 15 windows); next: read R4896 P2-P3, ~$3
+- Vol 5 Lockhart/Montagu groups (about 17) not image-classed - blocker: not-attempted; no Lockhart key in Add MS 4166, so an unglossed one has no key to decode under; next: one leaf each, ~$0.1
+
+## Escalation (THUR-V7LOOK, 10 Oct 2026)
+- [x] siblings: vols 5 and 7 swept (V57)
+- [x] clear-pages: 13 leaf looks, 13 groups classed glossed
+- [x] known-keys: groups matched to Add MS 4166 by heading
+- [x] print: Birch's interlinear gloss seen in 15 of 15 imaged Downing windows
+- [n/a] key-rebuild: nothing was decoded by this job
+- [ ] image-check: 21 Downing groups, vol 5 Lockhart groups
+- [x] retry: none needed
+Verdict: keep going: 3 internal gaps, none likely to yield an unglossed key-in-hand passage; cheapest next: leave Downing, take the next target in NEXT-STEPS
