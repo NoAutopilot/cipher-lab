@@ -43,3 +43,7 @@ For the lane (not acted on; a brief change is the lane's): matching SCAN-103 wou
 own control convention. Either is a new declaration before any re-run, never a retune here.
 
 Cost: one builder --check x3, one build, one diagnostic; no subagents, no network.
+
+Amendment of 01:2x (PREREG-20, relabel to a declared sensitivity check): read after the stop; it keeps "the control agreement
+within 0.005", so the STOP stands under it. No relabel message reached this worker before the build; the item was never
+registered under either split.
