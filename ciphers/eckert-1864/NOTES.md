@@ -4938,3 +4938,11 @@ Read so far: E372, E373, E376, E377, E380 audited N1 D3; E379 quoted part N1, re
 - [x] image-check: all five leaves MS18-R7 left eye-checked at 2400 px.
 - [x] retry: one loc.gov fetch retried once (--http1.1); IA djvu 500 on warofrebellion392unit not retried (not needed).
 Verdict: keep going: 3 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18p) s.7, ~$1
+
+## HTX-SWEEP (10 Oct 2026, account 1, for LANE LEDGER-10)
+Step-0 test (holder page transcription vs decoded body) run retroactively: `ms18/htx_sweep.py` -> `ms18/htx_sweep.tsv`. Set: every E300+ / N2-* / O9-* entry whose AUDIT.md rows ever name N3 (a superset: later lowerings are not filtered), plus E346; 53 entries scored. Overlap = LCS of decoded content words in the holder transcription / decoded content words (stop-words out, one case, period abbreviations expanded); control = same figure against 20 random other pages (mssEC 18+19 pooled), p95; flag = overlap > p95 and >= 0.5. Disk only; no grade changed.
+- **44 of 53 flagged** (overlap 0.50-0.89 against control p95 0.04-0.12). Positive controls behave: E378, E381, O9-AI, O9-AJ (already lowered to N1 for a clear holder copy) all flag, as does E346.
+- **Warning on specificity:** the flag alone is weak. A cipher-page transcription already carries the plain words (FV-MS18p step 0: E372/E376/E380 reach 0.42-0.60 yet are cipher transcriptions). Only E356 also has the decoded code-group meanings in the transcription (`code_overlap` >= 0.5, 0.789 overall) -- the strong lead. The other 43 are leads needing the verifier's eye on the page JSON, not findings. Highest overlaps (>= 0.70): E335 E340 E346 E347 E349 E351 E356 E358 E378 N2-BK N2-BM N2-BN N2-BZ N2-CJ N2-FA N2-GA N2-R O9-AH O9-AK O9-DC O9-DE O9-DH (plus the four known above).
+- Not flagged (overlap < p95 or < 0.5): E326 E369 E370 E375 E379 N2-AJ N2-BY N2-FE O9-DI.
+- **Missing page JSON (not scored, for a fetch job):** E302 (ptr 5697), E305 (5740), E306 (5744), E307 (5777), E309 (5786), E312 (5746), E318 (5709), E319 (5695), E320 (5702), E321 (5782) -- pointers 57xx-5786 are not in sources/mssEC18 or mssEC19.
+- Caveat: AUDIT.md class parsing is by table-row regex; an entry with a later lowering is still in the set.
