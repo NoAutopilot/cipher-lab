@@ -6588,3 +6588,67 @@ Read so far: 12 rows plus E521 filed (E536 E537 E539 E541-E546 E548-E550, E521);
 - [ ] image-check: no image read; filed from the volunteer transcription (rule 2: conditional on it).
 - [x] retry: no step failed.
 Verdict: keep going: 4 internal gaps; cheapest next: orchestrator ruling on the first message of 5885/0, ~$0.05
+
+## FIX-FM65 (10 Oct 2026, account 1, for LANE LEDGER-13)
+
+Worker FIX-FM65 (Sonnet 5.5), claim 10:53 UTC by `date -u`. Part 1: Google Books API snippet sweep of The Papers of Ulysses S. Grant vols. 13 and 14 (volume ids mnRjmhe3QLoC and ij8fAQAAMAAJ = vol. 13, Nov 1864-Feb 1865; DVLPEPsH1_oC and 1D8fAQAAMAAJ = vol. 14, Feb-Apr 1865; found from AUD2-LEDGER13-1's runs, `fortmonroe/aud2_l13_1_gb6.out`) for the 51 filed 1865 Fort Monroe entries not first-audited (E500-E577 minus the twelve FV-FM65a/b entries). Method: `fortmonroe/fixfm65_gb.py` (`country=US`, key from the environment, never printed, 1.6 s apart), two queries per entry, each `<distinctive names/numbers/phrase> intitle:Grant`, a hit being a snippet returned from one of the four volume ids. Output `fortmonroe/fixfm65_gb.out` (controls: `fixfm65_gb_ctrl.out`). Requests: www.googleapis.com 106 (4 control + 102 sweep); no other host. A hit is an N1 candidate for the next first verifier, not a grade change; a no hit is a search result (a snippet search sees only what the API returns for a query, not the page text), never a novelty verdict (rule 10).
+
+**Positive controls (run first):** E531 (`"six vessels" Oriental`, `"Suwo Nada" "half an hour"`) HIT both queries, vol. 13 mnRjmhe3QLoC, snippet 'Oriental ... seven hundred & seventy eight (778) men has sailed ... Suwo Nada ... 930 ... six vessels, 5109 men, all as ordered'; E530 (`"sailed in perfect order"`) HIT, vol. 13 mnRjmhe3QLoC and ij8fAQAAMAAJ; the long variant `"sailed in perfect order" Fort Fisher` returned no hit (total 4, none in the four ids): a query adding a word the print does not carry misses, so a no hit below is query-bound.
+
+| Entry | Result (volume; snippet or note) | Queries |
+|---|---|---|
+| E500 | no hit | 2 |
+| E505 | no hit | 2 |
+| E506 | no hit | 2 |
+| E508 | no hit | 2 |
+| E509 | no hit | 2 |
+| E511 | no hit | 2 |
+| E513 | no hit | 2 |
+| E514 | no hit | 2 |
+| E515 | no hit | 2 |
+| E517 | no hit | 2 |
+| E518 | no hit | 2 |
+| E521 | no hit | 2 |
+| E525 | no hit | 2 |
+| E526 | no hit | 2 |
+| E527 | no hit | 2 |
+| E528 | no hit | 2 |
+| E529 | no hit | 2 |
+| E536 | no hit | 2 |
+| E537 | **HIT** (v13; cov 5/6) ... Flag of Truce Steamer is now in James River . If Mr. Blair arrives during its stay I can send him through to ... Ord . &quot; Please notify Col. Mul- ford on Steamer New York to remain at Varina until Mr. Blair arrives and is  | 2 |
+| E539 | no hit | 2 |
+| E541 | no hit | 2 |
+| E542 | no hit | 2 |
+| E543 | no hit | 2 |
+| E544 | **HIT** (v13; cov 5/6) ... Palmer ( Cipher ) City Point , Va , Jan. 26th 1865 [ 10:30 a.m. ] Brig . Gen . I. N. Palmer , New Bern N. C. All asked for by you has been ordered . Not less than 6000 men ... O.R. , I , xlvi , part 2 , 271 . On Jan. 20 , 1865 | 4 |
+| E545 | **near-miss (different telegram)** (v13; cov 3/5) ... batteries of Schofields Corps be left behind . I think however it may be advisable for him to bring two companies of Artillerests to each Division to be fitted up here if necessary . &quot; ALS ( telegram sent ) , Mitten Colle | 2 |
+| E546 | no hit | 2 |
+| E548 | no hit | 2 |
+| E549 | no hit | 2 |
+| E550 | no hit | 2 |
+| E551 | no hit | 2 |
+| E552 | no hit | 2 |
+| E553 | no hit | 2 |
+| E554 | no hit | 2 |
+| E555 | no hit | 2 |
+| E557 | no hit | 2 |
+| E558 | no hit | 2 |
+| E560 | no hit | 2 |
+| E562 | no hit | 2 |
+| E564 | no hit | 2 |
+| E565 | **HIT** (v14; cov 4/6) ... Roberts , 139th N. Y. , telegraphed to Lt. Col. Theodore S. Bowers . &quot; I cannot find the Scout that was to report to me this morning . Will be ready to proceed in two hours . Shall I go without him ? &quot; Telegram recei | 4 |
+| E566 | no hit | 2 |
+| E567 | no hit | 2 |
+| E568 | no hit | 2 |
+| E569 | no hit | 2 |
+| E571 | no hit | 2 |
+| E572 | no hit | 2 |
+| E573 | no hit | 2 |
+| E574 | no hit | 2 |
+| E575 | no hit | 2 |
+| E576 | no hit | 2 |
+| E577 | no hit | 2 |
+
+**Hits: E537, E544, E565** (N1 candidates for the next first verifier). E537: vol. 13 prints 'Please notify Col. Mulford on Steamer New York to remain at Varina until Mr. Blair arrives and is passed through the lines' (ALS telegram sent, DNA RG 107) -- the entry's header names the same telegram (20 Jan 1865, Hd Qrs A. J. to Ft Monroe, for Maj. Gen. Ord); E544: vol. 13 prints Grant to Brig. Gen. I. N. Palmer, New Bern, 26 Jan 1865 10:30 a.m. 'All asked for by you has been ordered. Not less than 6000 men ...' (OR I/46 pt 2 p.271 cited); E565: vol. 14 prints Col. S. H. Roberts, 139th N.Y., to Lt. Col. T. S. Bowers, 'I cannot find the Scout that was to report to me this morning ... Shall I go without him?' (received 11:30 a.m.). E545 returned a snippet from vol. 13 about Schofield's batteries and 'each Division' that is a different telegram (Grant: two companies of artillerists to each division), not a copy; it stays no hit. Snippets give no page number; the volume itself (a person's copy or LOCAL-QUEUE) is the next step for each hit. Entries E536, E538-E543, E546-E550 etc. with no hit may still be in print under wording the headers do not carry (the headers are summaries, not the clear text).
+
+**Part 2 (no network).** `fixfm65_apply.py` carries AUDIT s.5 of 'AUDIT (FV-FM65a)' and 'AUDIT 2 ... AUD2-LEDGER13-1' (E504 E516 E519 E531 E534 E535; FV-FM65a's '5 Jan' for E504 stays withdrawn: header 3 Jan, C context OR I/46 pt 2 p.22 3 Jan 5.30 p.m.) and of 'AUDIT (FV-FM65b)' with AUD2-LEDGER13-2 (done line 10:50 UTC 10 Oct; E502 E507 E512 E520 E530 E532) into ciphertext.txt as header edits, decoder lines (`plain:`, `plain-at:`, `variant:`, `graded:`) and one `note: FIX-FM65 (10 Oct 2026` line per entry; reading.md only by `decode.py --write` (FIX-FM20 method). Grades stay the key's (H) -- the audits' 'code groups C by print' for E516, E531 and E530 is recorded in the notes, not re-graded, since decode.py grades by source and every group already reads H. Not applied: row 5871/2 and the 5855/1 lead (not filed; 5871/2 is in print), status.json and SO rows (the audits already set them). One transcription line corrected on the image's authority (E512 'use' -> 'uses', FV-FM65b s.5), stated in the entry note.

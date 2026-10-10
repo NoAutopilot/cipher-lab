@@ -2201,11 +2201,11 @@ Geo. D. Sheldon FT Monroe [New York]'s [13] [Colonel] arsey  {tail: [signed] chi
 
 Code-word tokens: H 8.
 
-**E512 | Page 312 | 5856 | mssEC 25 (obj 5952, pointer 5856), 4 Jan 1865, Ft Monroe: two messages in one segment -- Sheldon to S. H. Beckwith at City Point (9 PM; the steamers Eliza Hancox and Winants, a Capt. Howell, QM) and a second, 10.30 PM, Hd Qrs A.J. to Sheldon (have the Winants in order to go with the expedition, tug D. D. Porter), signed R. O'Brien (FM65-B; row 5856/0; text only)**
+**E512 | Page 312 | 5856 | mssEC 25 (obj 5952, pointer 5856), 4 Jan 1865, Ft Monroe: two messages in one segment -- Sheldon to S. H. Beckwith at City Point (9 PM; the steamers Eliza Hancox and Winants, a Capt. Howell, QM) and a second, 10.30 PM, Hd Qrs A.J. to Sheldon (have the Winants in order to go with the expedition, tug D. D. Porter), signed R. O'Brien (message 1 Webster to Capt. Howell, message 2 Col. Dodge to Webster, O'Brien operator; eye-checked by FV-FM65b; FM65-B; row 5856/0)**
 
-S. H. Beckwith City Point {time: 9 PM} for [Captain] [100] Tea Howell a [Quartermaster] [.] The Eliza Hancox has already been sent to [Colonel] [McMinnville] forth purpose The winants is hardly capable of going I think the [Fear] at Burr Moody or [City Point] would be much better Are C  {tail: [signed] [Colonel] Geo. D. Sheldon Hd. Qrs. A. J. 4 / 65 Geo. D. Sheldon {time: 10.30 PM} to [Colonel] [signed] [Monroe] [.] please have the winants in order to go with [Expedition] [,] also the tug D D porter [.] will Try bring down a tug [Tomorrow] for your use [signed] dodger R. O'Brien}
+S. H. Beckwith City Point {time: 9 PM} for [Captain] William Tea Howell a [Quartermaster] [.] The Eliza Hancox has already been sent to [Colonel] dodge forth purpose The winants is hardly capable of going I think the Seneca at Burr Moody or [City Point] would be much better Are C Webster [Colonel] Geo. D. Sheldon Hd. Qrs. A. J. 4 / 65 Geo. D. Sheldon {time: 10.30 PM} to [Colonel] Webster [Monroe] [.] please have the winants in order to go with [Expedition] [,] also the tug D D porter [.] will Try bring down a tug [Tomorrow] for your uses  {tail: [signed] dodger R. O'Brien}
 
-Code-word tokens: H 21.
+Code-word tokens: H 16.
 
 **E513 | Page 313 | 5857 | mssEC 25 (obj 5952, pointer 5857), 5 Jan 1865 1 PM Ft Monroe, Sheldon to Maj. Eckert at Washington: Binney (chief additional paymaster, Norfolk) to Brig. Gen. B. W. Brice, Paymaster General -- Gen. Butler orders payment of company and field officers of a second expedition who were not mustered for 31 December; Binney declined as opposed to law and General Orders and asks authority to pay except on muster rolls (FM65-B; row 5857/1; text only)**
 
@@ -2225,11 +2225,11 @@ J. W. [Ferry] Baltimore {time: 3.30 PM} for [Colonel] Are M Newport Sheaf [Quart
 
 Code-word tokens: H 16.
 
-**E516 | Page 316 | 5860 | mssEC 25 (obj 5952, pointer 5860), City Point 6 Jan 1865 10 AM, S. H. Beckwith to Sheldon at Ft Monroe: last night a large package of papers containing Gen. Butler's report of the Wilmington expedition was lost from an overcoat pocket -- the only two places the coat was off were the theatre and the hotel kept by Mr Phillips; please have inquiries made at both (FM65-B; row 5860/1; image-read at 2400 px, the entry's lines match the transcription)**
+**E516 | Page 316 | 5860 | mssEC 25 (obj 5952, pointer 5860), City Point 6 Jan 1865 10 AM, S. H. Beckwith to Sheldon at Ft Monroe, for Brig. Gen. Shepley, Norfolk ('Shipley' as written = Shepley): last night a large package of papers containing Gen. Butler's report of the Wilmington expedition was lost from an overcoat pocket -- the only two places the coat was off were the theatre and the hotel kept by Mr Phillips; please have inquiries made at both (in print, Grant Papers vol. 13; FM65-B; row 5860/1; image-read at 2400 px, the entry's lines match the transcription)**
 
-Geo D Sheldon Ft Monroe {time: 10 AM} [6] [Brigadier General] Shipley [Norfolk] [.] last night I lost some place [,] from my overcoat [Cross (-ed, -ing)] [,] a large package of papers containing [Maj Gen B. F. Butler]'s [Report] [Of the] [Wilmington] [Expedition] [.] the only [2] places I had my coat off was [At the] theatre & [At the] [Longstreet] Kept by Mr Phillips [.] willow be good enough to have inquiries maid at both places and weather one the result  {tail: [signed] [Maj Genl U.S. Grant] didn't travel very much SH Beckwith}
+Geo D Sheldon Ft Monroe {time: 10 AM} [6] [Brigadier General] Shipley [Norfolk] [.] last night I lost some place [,] from my overcoat pocket [,] a large package of papers containing [Maj Gen B. F. Butler]'s [Report] [Of the] [Wilmington] [Expedition] [.] the only [2] places I had my coat off was [At the] theatre & [At the] Hotel Kept by Mr Phillips [.] willow be good enough to have inquiries maid at both places and weather one the result  {tail: [signed] [Maj Genl U.S. Grant] didn't travel very much SH Beckwith}
 
-Code-word tokens: H 21.
+Code-word tokens: H 18, M 1.
 
 **E517 | Page 317 | 5861 | mssEC 25 (obj 5952, pointer 5861), Ft Monroe 6 Jan 1865, Sheldon to J. W. Sampson at Baltimore, for Col. R. M. Newport, chief quartermaster: if the Baltic has been ordered to Monroe consider the order countermanded; let her embark troops as before ordered; signed by the Quartermaster General (FM65-B; row 5861/1; text only)**
 
@@ -2243,17 +2243,17 @@ S. H. Beckwith City Point {time: 9.30 AM} for [Brigadier General] ringals sheaf 
 
 Code-word tokens: H 11.
 
-**E519 | Page 322 | 5866 | mssEC 25 (obj 5952, pointer 5866), Ft Monroe 7 Jan 1865 (12.30), Sheldon to J. W. Sampson at Baltimore, for Col. Newport, chief QM: adopt whatever method will soonest ship troops on the Baltic; use your own judgment after seeing the captain; coal may be at Annapolis but is more readily had at Baltimore, and she cannot approach the docks at Annapolis; by order of the Quartermaster General (FM65-B; row 5866/0; text only)**
+**E519 | Page 322 | 5866 | mssEC 25 (obj 5952, pointer 5866), Ft Monroe 7 Jan 1865 (12.30), Sheldon to J. W. Sampson at Baltimore, for Col. Newport, chief QM: adopt whatever method will soonest ship troops on the Baltic; use your own judgment after seeing the captain; coal may be at Annapolis but is more readily had at Baltimore, and she cannot approach the docks at Annapolis; by order of the Quartermaster General (FM65-B; row 5866/0; image-read whole by FV-FM65a, matches the transcription)**
 
-J. W. [Ferry] Baltimore [Monroe] {time: 12.30} [7] for [Colonel] Are M. Newport Chief [Quartermaster] [Baltimore] [.] Adopt whatever method will soonest ship [Troops] on the [Chattahoochee] [.] you must use your own judgment after seeing the [Captain] [.] Perhaps there may be Coal at Annapolis but I presume it canby taken more readily at [Baltimore] than Annapolis [.] She cannot approach the docks at Annapolis [.] By Order [Qr Master Genl U.S.]  {tail: [signed] Are See [signed] [Colonel] [Quartermaster] [Department] Geo. D. Sheldon}
+J. W. Sampson Baltimore [Monroe] {time: 12.30} [7] for [Colonel] Are M. Newport Chief [Quartermaster] [Baltimore] [.] Adopt whatever method will soonest ship [Troops] on the Baltic [.] you must use your own judgment after seeing the [Captain] [.] Perhaps there may be Coal at Annapolis but I presume it canby taken more readily at [Baltimore] than Annapolis [.] She cannot approach the docks at Annapolis [.] By Order [Qr Master Genl U.S.]  {tail: [signed] Are See Webster [Colonel] [Quartermaster] [Department] Geo. D. Sheldon}
 
-Code-word tokens: H 22.
+Code-word tokens: H 19, M 1.
 
-**E520 | Page 322 | 5866 | mssEC 25 (obj 5952, pointer 5866), Ft Monroe 7 Jan 1865, Sheldon to S. H. Beckwith at City Point, for Brig. Gen. Ingalls: the Ariel, Gen. Sedgwick, Victor and Illinois were all ordered to Baltimore at 10 PM 3 January and the Baltic at 11 PM 4 January; nothing heard since except that the Baltic was at Baltimore this morning (FM65-B; row 5866/2; text only)**
+**E520 | Page 322 | 5866 | mssEC 25 (obj 5952, pointer 5866), Ft Monroe 7 Jan 1865, R. C. Webster via Sheldon (operator) to S. H. Beckwith at City Point, for Brig. Gen. Ingalls: the Ariel, Gen. Sedgwick, Victor and Illinois were all ordered to Baltimore at 10 PM 3 January and the Baltic at 11 PM 4 January; nothing heard since except that the Baltic was at Baltimore this morning (eye-checked by FV-FM65b; FM65-B; row 5866/2)**
 
-S. H. Beckwith City Point {time: 7.30 PM} for [Brigadier General] ring galls [.] The Ariel [,] [General] Sedgwick [,] victor and Illinois were all ordered to [Baltimore] at {time: 10 PM} January [3] and the [Chattahoochee] at {time: 11 PM} January [4] I have not heard from them since except the [Chattahoochee] which was at [Baltimore] this morning  {tail: [signed] Are see [Reinforcements] Stir [Colonel] [Quartermaster] Geo. D. Sheldon}
+S. H. Beckwith City Point {time: 7.30 PM} for [Brigadier General] ring galls [.] The Ariel [,] [General] Sedgwick [,] victor and Illinois were all ordered to [Baltimore] at {time: 10 PM} January [3] and the Baltic at {time: 11 PM} January [4] I have not heard from them since except the Baltic which was at [Baltimore] this morning  {tail: [signed] Are see Webb Stir [Colonel] [Quartermaster] Geo. D. Sheldon}
 
-Code-word tokens: H 18.
+Code-word tokens: H 15.
 
 **E500 | Page 303 | 5847 | mssEC 25 (obj 5952, pointer 5847), 3 Jan 1865 Ft Monroe 2.30 PM, Sheldon (operator J. W. Sampson) to Col. Newport, chief quartermaster, Baltimore: as the anchor and chain cannot be furnished in time for the steamer Baltic she will not be sent on the expedition, so Newport need not send to New York for them; signed Wm L. James, Capt. AQM (FM65-A; row 5847/2; read from the transcription, no image)**
 
@@ -2261,17 +2261,17 @@ J. W. [Ferry] Baltimore [Monroe] {time: 2.30 PM} [3] for [Colonel] Newport sheaf
 
 Code-word tokens: H 15.
 
-**E502 | Page 305 | 5849 | mssEC 25 (obj 5952, pointer 5849), 3 Jan 1865 City Point 4.35 PM, S. H. Beckwith to Sheldon at Ft Monroe, for Gen. Rawlins by direction of Gen. Grant: the steamers coaled and watered under Gen. Ingalls's instructions are ready for service; turn them over to Col. Morgan, chief commissary, to be loaded with the required rations and tell him when the vessels are ready to receive them; Rawlins wishes to know what number of troops each steamer will carry (FM65-A; row 5849/1; transcription only)**
+**E502 | Page 305 | 5849 | mssEC 25 (obj 5952, pointer 5849), 3 Jan 1865 City Point 4.35 PM, Capt. William T. Howell to Col. R. C. Webster at Ft Monroe, by direction of Gen. Rawlins (Beckwith operator; headed 'Geo. D. Sheldon Ft Monroe'): the steamers coaled and watered under Gen. Ingalls's instructions are ready for service; turn them over to Col. Morgan, chief commissary, to be loaded with the required rations and tell him when the vessels are ready to receive them; Rawlins wishes to know what number of troops each steamer will carry (FM65-A; row 5849/1; eye-checked by FV-FM65b)**
 
-Geo. D. Sheldon Ft Monroe {time: 4.30 PM} [3] for [Colonel]  {tail: [signed] stop [General] Rawlins [Chief of Staff] to [Maj Genl U.S. Grant] directs me inform you thats festus the [Steam]'s which you've been and are now cooling and watering under the instructions received from [General] in gals Chief [Quartermaster] [,] are ready for surface that ewill turn them over to [Colonel] Morgan Chief commissary toby loaded with required number [Rations] and that you inform him soons the versailles are ready to receive them [General] Rawlins wishes Know what No [Troops] [Steam] will Carry tattoo send up [signed] [100] Tea Howell [Captain] S. H. Beckwith}
+Geo. D. Sheldon Ft Monroe {time: 4.30 PM} [3] for [Colonel] Webster stop [General] Rawlins [Chief of Staff] to [Maj Genl U.S. Grant] directs me inform you thats festus the [Steam]'s which you've been and are now cooling and watering under the instructions received from [General] in gals Chief [Quartermaster] [,] are ready for surface that ewill turn them over to [Colonel] Morgan Chief commissary toby loaded with required number [Rations] and that you inform him soons the versailles are ready to receive them [General] Rawlins wishes Know what No [Troops] [Steam] will Carry tattoo send up  {tail: [signed] William Tea Howell [Captain] S. H. Beckwith}
 
-Code-word tokens: H 19.
+Code-word tokens: H 17, M 1.
 
-**E504 | Page 307 | 5851 | mssEC 25 (obj 5952, pointer 5851), 3 Jan 1865 Ft Monroe 6.30 PM, Sheldon to Beckwith at City Point, for Capt. Howell, AQM: the steamers ordered to report to Col. Bradley are the Euterpe, H. Livingston, Gen. Lyon, Varuna, A. Dupont, Prometheus, Thames, Idaho, DeMolay, McClellan, Champion, Weybossett and Towanda; the Atlantic, rationed for 1400 troops, is ready but draws too much water to go up; by direction of the chief quartermaster, Wm L. James (FM65-A; row 5851/0; transcription only)**
+**E504 | Page 307 | 5851 | mssEC 25 (obj 5952, pointer 5851), 3 Jan 1865 Ft Monroe 6.30 PM, Sheldon to Beckwith at City Point, for Capt. Howell, AQM: the steamers ordered to report to Col. Bradley are the Euterpe, H. Livingston, Gen. Lyon, Varuna, A. Dupont, Prometheus, Thames, Idaho, DeMolay, McClellan, Champion, Weybossett and Towanda; the Atlantic, rationed for 1400 troops, is ready but draws too much water to go up; by direction of the chief quartermaster, Wm L. James (FM65-A; row 5851/0; image-read whole by FV-FM65a, matches the transcription)**
 
-S. H. Beckwith City Point {time: 6.30 PM} for [Captain] [100] Tea Howell a [Quartermaster] [.] The [Steam]ers ordered to [Report] to [Colonel] Bradley are the Euterpe [,] H. Livingston [,] [General] Lyon comma Varuna [,] A Dupont [,] Prometheus Thames Idaho DeMolay M'Clellan Champion Weybossett and Towanda [.] The Atlantic [Rations] shunned for [1400] [Troops] is ready draws too much water togo up [.] By direction Chief [Quartermaster]  {tail: [signed] [100] L. James [Captain] and a [Quartermaster] end. Geo. D. Sheldon}
+S. H. Beckwith City Point {time: 6.30 PM} for [Captain] William Tea Howell a [Quartermaster] [.] The [Steam]ers ordered to [Report] to [Colonel] Bradley are the Euterpe [,] H. Livingston [,] [General] Lyon comma Varuna [,] A Dupont [,] Prometheus Thames Idaho DeMolay M'Clellan Champion Weybossett and Towanda [.] The Atlantic [Rations] shunned for [1400] [Troops] is ready draws too much water togo up [.] By direction Chief [Quartermaster]  {tail: [signed] William L. James [Captain] and a [Quartermaster] end. Geo. D. Sheldon}
 
-Code-word tokens: H 24.
+Code-word tokens: H 22.
 
 **E505 | Page 307 | 5851 | mssEC 25 (obj 5952, pointer 5851), two telegrams, 3 Jan 1865: (1) Ft Monroe 7 PM, Sheldon to Beckwith for Capt. Howell, AQM, from Col. R. C. Webster: steamers all ready coaled and loaded with proper rations, the list stating capacity of each will be handed you; (2) City Point 9.30 PM, Beckwith to Sheldon: Gen. Rawlins wishes one of the going steamers sent to this place for other service, with a good supply of coal, no rations required (FM65-A; row 5851/1; transcription only)**
 
@@ -2285,11 +2285,11 @@ Geo. D. Sheldon Ft Monroe {time: 1 PM} [4]  {tail: [signed] stop [General] ran l
 
 Code-word tokens: H 8.
 
-**E507 | Page 308 | 5852 | mssEC 25 (obj 5952, pointer 5852), two telegrams, 4 Jan 1865: (1) Ft Monroe 3 PM, Sheldon to Beckwith for Howell: all the steamers named had left here before 9 AM today, signed R. C. Webster, Col. QM; (2) Hd. Qrs. Army of the James 5 PM, R. O'Brien to Sheldon for Col. Webster: if the steamer Russia is at Monroe please send her here in time for a flag ship, by direction of Gen. Butler (FM65-A; row 5852/2; transcription only)**
+**E507 | Page 308 | 5852 | mssEC 25 (obj 5952, pointer 5852), two telegrams, 4 Jan 1865: (1) Ft Monroe 3 PM, from R. C. Webster, Col. QM, via Sheldon to Beckwith for Howell: all the steamers named had left here before 9 AM today; (2) Hd. Qrs. Army of the James 5 PM, R. O'Brien to Sheldon for Col. Webster, from Col. Dodge by direction of Gen. Butler: if the steamer Russia is at Monroe please send her here in time for a flag ship (FM65-A; row 5852/2; eye-checked by FV-FM65b)**
 
-S H. Beckwith City Point {time: 3 PM} for Howell [.] all the [Steam]ers named had left here before [9] AM [Today]  {tail: [signed] Are See [signed] [Colonel] [Quartermaster] Geo. D. Sheldon Hd. Qrs. A. J. Geo D Sheldon Ft Monroe {time: 5 PM} too [Colonel] are see [signed] [Monroe] [.] if the weasler Russia is at [Monroe] please send here time for a [11] ship [,] by direction of [Maj Gen B. F. Butler] South [McMinnville] R. O'Brien}
+S H. Beckwith City Point {time: 3 PM} for Howell [.] all the [Steam]ers named had left here before [9] AM [Today]  {tail: [signed] Are See Webster [Colonel] [Quartermaster] Geo. D. Sheldon Hd. Qrs. A. J. Geo D Sheldon Ft Monroe {time: 5 PM} too [Colonel] are see webster [Monroe] [.] if the [Steam] Russia is at [Monroe] please send here time for a flag ship [,] by direction of [Maj Gen B. F. Butler] South Dodge R. O'Brien}
 
-Code-word tokens: H 19.
+Code-word tokens: H 16, M 1.
 
 **E508 | Page 309 | 5853 | mssEC 25 (obj 5952, pointer 5853), 4 Jan 1865 Ft Monroe, Sheldon to Beckwith for Capt. Howell, AQM, from Webster: the C. C. Leary is just in and leaves immediately for City Point, she answers the description you required and has ten days' coal; if you can spare the Montauk we need her here (FM65-A; row 5853/1; transcription only; about 28 words)**
 
@@ -2339,35 +2339,35 @@ Maj. Eckert [Volunteer] [Norfolk] [13] for [Secretary of Navy] [Washington] [.] 
 
 Code-word tokens: H 17.
 
-**E530 | Page 327 | 5871 | mssEC 25 (obj 5952, pointer 5871), 13 Jan 1865 Ft Monroe, Sheldon to S. H. Beckwith, City Point, for [Brig. Gen.] Rawlins, Chief of Staff: the Sedgwick (500 and 1 men), Ariel (900 and 73 men) and Ashland (200 and ... men) have sailed in perfect order, Mr. Morgan (FM65-C; row 5871/1)**
+**E530 | Page 327 | 5871 | mssEC 25 (obj 5952, pointer 5871), 13 Jan 1865 Ft Monroe, Sheldon to S. H. Beckwith, City Point, for [Brig. Gen.] Rawlins, Chief of Staff: the Sedgwick (500 and 1 men), Ariel (900 and 73 men) and Ashland (200 and ... men) have sailed in perfect order, Mr. Morgan (in print, Grant Papers 13; FM65-C; row 5871/1)**
 
-S. H. Beckwith City Point {time: 12} for [Brigadier General] Rawlins [Chief of Staff] [.] The Sedgwick [500] and [1] [Men] [,] Ariel [900] and [73] [Men] [,] and [Alabama] [200] ditto ditto [Men] have sailed in perfect order Mr Morgan . Geo. D. Sheldon
+S. H. Beckwith City Point {time: 12} for [Brigadier General] Rawlins [Chief of Staff] [.] The Sedgwick [500] and [1] [Men] [,] Ariel [900] and [73] [Men] [,] and Ashland [200] ditto ditto [Men] have sailed in perfect order Mr Morgan . Geo. D. Sheldon
 
-Code-word tokens: H 19.
+Code-word tokens: H 18.
 
-**E531 | Page 329 | 5873 | mssEC 25 (obj 5952, pointer 5873), 15 Jan 1865 Ft Monroe, Sheldon to S. H. Beckwith, City Point, for [General] Rawlins [Chief of Staff]: the Oriental (700 and 78 men) has sailed; the Suwo Nada (900 and 30 men) will start in half an hour; this makes 6 vessels, 5100 and 9 men, all as ordered; Mr. Morgan, [Colonel], &c. (FM65-C; row 5873/1)**
+**E531 | Page 329 | 5873 | mssEC 25 (obj 5952, pointer 5873), 15 Jan 1865 Ft Monroe, Sheldon to S. H. Beckwith, City Point, for [General] Rawlins [Chief of Staff]: the Oriental (700 and 78 men) has sailed; the Suwo Nada (900 and 30 men) will start in half an hour; this makes 6 vessels, 5100 and 9 men, all as ordered; Mr. Morgan, [Colonel], &c. (signer M. R. Morgan, 4 PM; in print, Grant Papers vol. 13; FM65-C; row 5873/1)**
 
 S. H. Beckwith City Point {time: 4 PM} [General] Rawlins [Chief of Staff] [.] weasler Oriental [700] and [78] [Men] has sailed [.] The Survo Nada [900] and [30] [Men] will start in half an hour This makes [6] vassals [5100] and [9] [Men] all as ordered Mr. Morgan [Colonel] &c. Geo. D. Sheldon
 
 Code-word tokens: H 22.
 
-**E532 | Page 333 | 5877 | mssEC 25 (obj 5952, pointer 5877), 16 Jan 1865 City Point, S. H. Beckwith to Sheldon at Ft Monroe: [to the Chief Quartermaster, Colonel Webster (the row's 'webb Stir', M)] transportation for 4000 men, 50 six-mule teams complete, with 15 days' rations, water and coal; what time can this transportation be here, answer; signed G. W. Bradley, Colonel and Chief Quartermaster; S. H. Beckwith (FM65-C; row 5877/0)**
+**E532 | Page 333 | 5877 | mssEC 25 (obj 5952, pointer 5877), 16 Jan 1865 City Point, S. H. Beckwith to Sheldon at Ft Monroe: [to the Chief Quartermaster, Colonel Webster (the row's 'webb Stir', M)] transportation for 4000 men, 50 six-mule teams complete, with 15 days' rations, water and coal; what time can this transportation be here, answer; signed G. W. Bradley, Colonel and Chief Quartermaster; S. H. Beckwith (addressee Col. R. C. Webster, in print; eye-checked by FV-FM65b; FM65-C; row 5877/0)**
 
-Geo. D. Sheldon Ft Monroe {time: 4.30 PM} [Colonel] [Reinforcements] Stir [.] [Transportation] for [4000] men [,] [50] [,] [6] mule teams complete ditto [15] days [Rations] water and coal [.] what time can this [Transportation] [Report] here answer  {tail: [signed] G. W Bradley [Colonel] and Chief [Quartermaster] end S. H. Beckwith}
+Geo. D. Sheldon Ft Monroe {time: 4.30 PM} [Colonel] webb Stir [.] [Transportation] for [4000] men [,] [50] [,] [6] mule teams complete ditto [15] days [Rations] water and coal [.] what time can this [Transportation] [Report] here answer  {tail: [signed] G. W Bradley [Colonel] and Chief [Quartermaster] end S. H. Beckwith}
 
-Code-word tokens: H 19.
+Code-word tokens: H 18, M 1.
 
-**E534 | Page 333 | 5877 | mssEC 25 (obj 5952, pointer 5877), 16 Jan 1865, two messages in one row: (1) Ft Monroe, Sheldon to S. H. Beckwith, City Point, for Colonel G. W. Bradley: the Dupont, Thames, Haze and Sentinel are all we have; these are sufficient for [1300] men and the teams; cannot say when I can obtain the remainder; have you nothing at City Point; signed a Colonel and Quartermaster; (2) City Point, Beckwith to Sheldon, for Colonel M. P. Small, C.S., Monroe: General Grant directs that you put 15 days' rations on such vessels as the Quartermaster designates; the Quartermaster will inform you how many men each vessel will carry; ditto me as each vessel is rationed and the number of men; Mr. Morgan, Lieut. [Colonel]; S. H. Beckwith (FM65-C; row 5877/2)**
+**E534 | Page 333 | 5877 | mssEC 25 (obj 5952, pointer 5877), 16 Jan 1865, two messages in one row: (1) Ft Monroe, Sheldon to S. H. Beckwith, City Point, for Colonel G. W. Bradley: the Dupont, Thames, Haze and Sentinel are all we have; these are sufficient for [1300] men and the teams; cannot say when I can obtain the remainder; have you nothing at City Point; signed a Colonel and Quartermaster; (2) City Point, Beckwith to Sheldon, for Colonel M. P. Small, C.S., Monroe: General Grant directs that you put 15 days' rations on such vessels as the Quartermaster designates; the Quartermaster will inform you how many men each vessel will carry; ditto me as each vessel is rationed and the number of men; Mr. Morgan, Lieut. [Colonel]; S. H. Beckwith (message 2 is on p.334, pointer 5878 row 0, above E535; image-read whole by FV-FM65a, matches the transcription; FM65-C; row 5877/2)**
 
-S. H. Beckwith City Point {time: 7 PM} for [Colonel] G. W. Bradley [.] Dupont Thames Haze and Sentinel are all we have [.] These are sufficient forth teams and [1300] [Men] [.] Cannot say when I can obtain the remainder ditto Have you nothing at [City Point]  {tail: [signed] [Colonel] and [Quartermaster] Geo. D. Sheldon City Point 16 / 65 Geo. D Sheldon Ft Monroe {time: 8.30 PM} [Colonel] M. P Small C S [Monroe] [.] [Maj Genl U.S. Grant] directs that you put [15] days [Rations] on such vessels as the [Quartermaster] desegrates [.] the [Quartermaster] will [Information] you how many [Men] each vassal will Carry [.] ditto me as each vassal is [Rations] Ed and the number of [Men] for which shes ditto [signed] Mr Morgan Lieut. [Colonel] S. H. Beckwith}
+S. H. Beckwith City Point {time: 7 PM} for [Colonel] G. W. Bradley [.] Dupont Thames Haze and Sentinel are all we have [.] These are sufficient forth teams and [1300] [Men] [.] Cannot say when I can obtain the remainder ditto Have you nothing at [City Point] Webster [Colonel] and [Quartermaster] Geo. D. Sheldon City Point 16 / 65 Geo. D Sheldon Ft Monroe {time: 8.30 PM} [Colonel] M. P Small C S [Monroe] [.] [Maj Genl U.S. Grant] directs that you put [15] days [Rations] on such vessels as the [Quartermaster] desegrates [.] the [Quartermaster] will [Information] you how many [Men] each vassal will Carry [.] ditto me as each vassal is [Rations] Ed and the number of [Men] for which shes ditto Webster Mr Morgan Lieut. [Colonel] S. H. Beckwith
+
+Code-word tokens: H 27, M 2.
+
+**E535 | Page 334 | 5878 | mssEC 25 (obj 5952, pointer 5878), 17 Jan 1865 Ft Monroe, Sheldon to S. H. Beckwith, City Point, for [Brig. Gen.] J. A. Rawlins: 3 of the vessels returned from the expedition disabled; enough are here to carry 3500 men, 50 wagons and animals; more expected; every effort will be made to have all the vessels ready by tomorrow noon; the Quartermaster at City Point will be telegraphed when each vessel leaves here; will the Fort Fisher news change your instructions in regard to mortars, troops or ammunition; signature block as filed 'Horace Porter Lieut [Colonel] and A.D.C.' (who speaks the clause is M) (image-read whole by FV-FM65a, matches the transcription; FM65-C; row 5878/1; BOOK-FM65 test row: clause reused, not re-derived)**
+
+S. H. Beckwith City Point {time: 11 AM} for [Brigadier General] J. A Rawlins [Chief of Staff] [.] [3] [Of the] vessels returned [From the] [Expedition] disabled [.] enough are here to Carry [3500] [Men] [50] wagons and [100] and [50] animals [.] more expected [.] every effort wilby made to have all the vessels that are here ready by tomorrow noon [.] The [Quartermaster] at [City Point] wilby [Telegraph (-ed, -ing)]d when each vessel leaves here [.] will the [Fort] Fisher news change your instructions in regard tooth mortars [Troops] or [Ammunition]  {tail: [signed] Horace Porter Lieut [Colonel] and A D See . Geo. D. Sheldon City Point Jan. / 65 Geo. D. Sheldon Ft Monroe}
 
 Code-word tokens: H 29.
-
-**E535 | Page 334 | 5878 | mssEC 25 (obj 5952, pointer 5878), 17 Jan 1865 Ft Monroe, Sheldon to S. H. Beckwith, City Point, for [Brig. Gen.] J. A. Rawlins: 3 of the vessels returned from the expedition disabled; enough are here to carry 3500 men, 50 wagons and animals; more expected; every effort will be made to have all the vessels ready by tomorrow noon; the Quartermaster at City Point will be telegraphed when each vessel leaves here; will the Fort Fisher news change your instructions in regard to mortars, troops or ammunition; signature block as filed 'Horace Porter Lieut [Colonel] and A.D.C.' (who speaks the clause is M) (FM65-C; row 5878/1; BOOK-FM65 test row: clause reused, not re-derived)**
-
-S. H. Beckwith City Point {time: 11 AM} for [Brigadier General] J. A Rawlins [Chief of Staff] [.] [3] [Of the] vessels returned [From the] [Expedition] disabled [.] enough are here to Carry [3500] [Men] [50] wagons and [100] and [50] [Monroe]'s [.] more expected [.] every effort wilby made to have all the vessels that are here ready by tomorrow noon [.] The [Quartermaster] at [City Point] wilby [Telegraph (-ed, -ing)]d when each vessel leaves here [.] will the [Fort] Fisher news change your instructions in regard tooth mortars [Troops] or [Ammunition]  {tail: [signed] [Weldon] Porter Lieut [Colonel] and A D See . Geo. D. Sheldon City Point Jan. / 65 Geo. D. Sheldon Ft Monroe}
-
-Code-word tokens: H 31.
 
 **E441 | Page 155 | 5699 | mssEC 25 (obj 5952, pointer 5699), 27 May 1864 Washington, T. T. Eckert to Sheldon at Ft Monroe (received): the operators should have reached Monroe, left Alexandria yesterday, boat probably delayed; your cipher received, suggestions good, will adopt the route after the General-in-Chief's opinion; how wide is the river at Yorktown, can a No. 14 wire be stretched across at that point or will it need cable; also how wide at West Point; dread the necessity of cables; chance for poles on the route (FM-F1, filed from FM-R9; row 5699/1)**
 
@@ -2735,5 +2735,5 @@ Geo D Sheldon Ft Monroe please ascertain immed'y if [Maj Gen B. F. Butler] has [
 
 Code-word tokens: H 4.
 
-Totals over the 434 entries: H 7531, C 99, I 25, M 46, S 21, U 10.
+Totals over the 434 entries: H 7504, C 99, I 25, M 53, S 21, U 10.
 <!-- decode.py: derived block ends -->
