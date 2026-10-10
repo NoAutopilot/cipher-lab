@@ -1,0 +1,56 @@
+{
+ "section": "PREREG-txeng2-21 WIT-FLAGS",
+ "window": [
+  8937,
+  9459
+ ],
+ "scored_in_window": 323,
+ "clerk_split_in_window": 182,
+ "clerk_agreed_in_window": 141,
+ "alignment": {
+  "p90_clean": {
+   "ratio": 0.7865,
+   "offset": 8937,
+   "end": 9307,
+   "letters": 370
+  },
+  "p91_damaged": {
+   "ratio": 0.6508,
+   "offset": 9270,
+   "end": 9459,
+   "letters": 189
+  }
+ },
+ "ceiling": {
+  "hits": 125,
+  "of": 141,
+  "share": 0.8865
+ },
+ "null": {
+  "clean_n": 200,
+  "clean_max": 6,
+  "clean_p95": 0,
+  "clean_mean": 0.18,
+  "damaged_n": 50,
+  "damaged_max": 3,
+  "damaged_p95": 0,
+  "damaged_mean": 0.1,
+  "paired_max": 6,
+  "paired_p95": 3,
+  "gate_null_max": 9
+ },
+ "verdicts_by_part": {
+  "clean": {
+   "CONFIRM": 65,
+   "NO-EVIDENCE": 49
+  },
+  "damaged": {
+   "CONFIRM": 19,
+   "NO-EVIDENCE": 49
+  }
+ },
+ "confirm": 84,
+ "conflict": 0,
+ "no_evidence": 98,
+ "gate": "INFORMATIVE"
+}
