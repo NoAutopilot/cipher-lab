@@ -1,0 +1,16 @@
+vol	djvu_line	printed_page	leaf	correspondent_date	numerals	gloss_printed	glossed_sibling_pool
+6	4076	37	n38	Vincent Gookin (From mr. Vincent Gookin) to Thurloe, 1656	~109	yes (nearly every run glossed, letter-spaced/whole words)	Gookin: no folder key; glossed sibling = this letter only
+6	19092	160	n163	Col. Bamfylde (letter of intelligence), 1657	~24	NO: numerals inline, no gloss on the page	Bamfylde 1657: glossed sibling l.68904 p.576 (Oct 25/Nov 3 1657, sender inferred from djvu heading) and 1655 partial siblings vol 4 pp.194,231
+6	41201	345	n348	Lockhart to Thurloe (the 'Hague' heading of hits.tsv is a neighbour)	~24	yes (partial: most runs glossed above)	Lockhart: glossed
+6	68655	574-575	n577	Jephson to Thurloe, Wismar 24 Oct 1657	~169	yes (letter-by-letter and whole words over every run)	Jephson pool: ll.65973,76999,86578 glossed (V6/B146)
+6	68904	576	n579	letter of intelligence (Bamfylde per djvu heading; heading on p.575 not seen), dated Oct 25 / Nov 3 1657	~110	yes (two runs read; runs mostly letter-spaced glosses; a few codes bare)	Bamfylde
+6	75347	629	n632	Jephson to Thurloe, from Oct/Nov 1657 (letter opens p.628 foot)	~114	yes (partial: runs glossed; some bare codes between)	Jephson
+6	94181	794	n797	Kingston to Lawrence, Paris 22 Feb 1658 [N.S.] (the 'Hague' heading is the next letter, clear)	~34	partial (about half the runs glossed; bare codes 5 16 15 15, 20 5 30 33, 404 111 etc.)	Kingston: no folder key
+4	4057	49	n56	Broghill to Thurloe, Edenburgh 22 Sept 1655	~48	yes (every run glossed, spaced letters or words)	Broghill: this letter only in the sample
+4	15927	194	n197	Col. Bamfylde (letter of intelligence), 1655, begins p.194 foot (Minard letter above is clear)	~81 per hits.tsv (page shows ~35 on this half)	partial (names set over a few codes; most runs bare on this page; continues p.195, not seen)	Bamfylde 1655 pool: pp.194-195, 231-232 (vol xxxii pp.423, 733)
+4	18102	221	n224	Ri. Baynard to ? (hits.tsv: 'Haynes' is the next letter, clear)	~45	partial (glossed words over about 12 of 20 runs; 5 runs bare: '2. 36. 26. 24', '62. 8. 43. 2: 8. 6. 5. 4. 27. 40. 6. 36. 4. 25. 37', '2. 3. 25. 37. 36')	Baynard: no folder key; this letter only
+4	19043	231	n234	Monck to Thurloe 20/22 Nov 1655: no numerals on p.231; Bamfylde letter (vol xxxii p.733) at foot, cipher begins	(not counted)	partial on the two lines seen (Rou/en over 88,36,48,72,30); remainder is on p.232, not fetched	Bamfylde 1655
+4	25718	~305	n308	Aldworth to Thurloe: NOT LOCATED (p.305 shows Dec 1655 intercepted plain letter and Dorset commissioners; no cipher)		not classed	unlocated
+4	51370	570	n577	Mountagu to Thurloe (Blake at Portsmouth), 1655	~42	yes (names over the runs; 'captaine Lyons' letter-spaced)	Mountagu: folder key_montagu exists; glossed
+4	46866	526		The physician to the council	28	not attempted (IA allowance)	
+1	(non-Dutch hits)			vol 1 hits >=20 numerals other than the Dutch 1653 rows		not attempted: collectionofstat01thur djvu text answered HTTP 500 twice (no line->page map without it)	
