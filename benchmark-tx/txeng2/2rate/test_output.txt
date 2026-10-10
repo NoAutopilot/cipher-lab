@@ -1,0 +1,3 @@
+tx_bench: the output covers no benchmark line
+ok
+rc=0

@@ -35,6 +35,11 @@ err_true). A change is adopted on the paired count, never on two overlapping Wil
 position: alignment-, clerk- or key-doubtful; `corrected:<class>` means the truth was corrected and stays scored). With the
 switch each item prints both figures side by side, as measured first and flagged excluded second (flagged rows are counted
 as excluded, never dropped silently); without it the flag column is ignored. Never report the second figure alone.
+Two-rate decomposition (TOOL-2RATE, 10 Oct 2026, TX-RED F48): under --exclude-flagged the flagged-excluded err_true keeps
+ALL line insertions in its numerator over unflagged positions only, so it mixes two rates. The same line therefore appends
+`position errors P/U = r` (wrong + deleted at unflagged positions over unflagged positions) and `insertions I / read R = r`
+(insertions over the output's sign count on the covered truth lines); --json carries them in flagged_excluded as
+position_errors, position_rate, inserted, read and insertion_rate. No existing number or field changes.
 Exit 0 always on a clean score; exit 2 on bad input.
 """
 import argparse, csv, json, math, os, sys
@@ -114,7 +119,7 @@ def score_item(truth_rows, out_lines):
     by_line = defaultdict(list)
     for r in truth_rows:
         by_line[r['line']].append(r)
-    res = {'scored': 0, 'wrong': 0, 'deleted': 0, 'inserted': 0, 'excluded': 0, 'lines_missing': [],
+    res = {'scored': 0, 'wrong': 0, 'deleted': 0, 'inserted': 0, 'excluded': 0, 'read': 0, 'lines_missing': [],
            'per_value': defaultdict(lambda: [0, 0]), 'confusions': Counter()}
     for ln, rows in by_line.items():
         rows.sort(key=lambda r: float(r['pos']))
@@ -123,6 +128,7 @@ def score_item(truth_rows, out_lines):
             continue
         ref = [r['ref_sign'] for r in rows]
         ts = [set(filter(None, r['truth'].split('|'))) for r in rows]
+        res['read'] += len(out_lines[ln])
         prev_scored = False
         for ri, osg in align(ref, ts, out_lines[ln]):
             if ri is None:
@@ -271,6 +277,10 @@ def main(argv=None):
             fk, fn, fe, flo, fhi = summarise(fres)
             report[-1]['flagged_excluded'] = {'err_true': round(fe, 4), 'wilson95': [round(flo, 4), round(fhi, 4)],
                                               'errors': fk, 'scored': fn, 'flagged': n - fn}
+            pe = fres['wrong'] + fres['deleted']
+            report[-1]['flagged_excluded'].update(
+                position_errors=pe, position_rate=round(pe / fn, 4) if fn else None, inserted=fres['inserted'],
+                read=fres['read'], insertion_rate=round(fres['inserted'] / fres['read'], 4) if fres['read'] else None)
     if not report:
         print('tx_bench: the output covers no benchmark line', file=sys.stderr); return 2
     split_rows = {}
@@ -289,7 +299,10 @@ def main(argv=None):
             f = r['flagged_excluded']
             print('  as measured %.3f (%d/%d) | flagged excluded %.3f (%d/%d) 95%% %.3f-%.3f [%d flagged]'
                   % (r['err_true'], r['errors'], r['scored'], f['err_true'], f['errors'], f['scored'],
-                     f['wilson95'][0], f['wilson95'][1], f['flagged']))
+                     f['wilson95'][0], f['wilson95'][1], f['flagged'])
+                  + ' | position errors %d/%d = %.3f | insertions %d / read %d = %.3f'
+                  % (f['position_errors'], f['scored'], f['position_rate'] or 0.0, f['inserted'], f['read'],
+                     f['insertion_rate'] or 0.0))
         if r['top_confusions']:
             print('  top confusions (truth value <- read):', ', '.join(r['top_confusions']))
     for s, r in sorted(split_rows.items()):
