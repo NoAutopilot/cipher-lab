@@ -19807,3 +19807,161 @@ E558 H 8/8, E569 H 7/7.** No reading change beyond FV-L16c's s.5 (not applied he
 - Requests: hdl.huntington.org 35 (18 CISOSEARCHALL incl control, 15 dmGetItemInfo, 2 IIIF; all 200, no drop; one take); www.googleapis.com 30
   (1.6 s apart); be-api.us.archive.org 7 (1.8 s); api.openalex.org 5, api.semanticscholar.org 5, api.crossref.org 5; no archive.org downloads.
 For the orchestrator (owner account) and LANE LEDGER-16 (account 1).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER16-4)
+
+Second verifier AUD2-LEDGER16-4 (account 1, Opus 5.5, WORK-QUEUE row AUD2-LEDGER16-4, for LANE LEDGER-16), 10 Oct 2026, 15:42-16:3x UTC by `date -u`;
+a separate session from the readers (FM-R9, FM-S2, FM-S3, FM-F1), from CLEAR-SWEEP and from the first verifier (FV-L16d), not protecting any of them.
+Items: **E441** (p.155, ptr 5699/1), **E472** (p.135, ptr 5679/0), **E442** (p.163, ptr 5707/0), **E473** (p.89, ptr 5633/1), **E469** (p.176, ptr 5720/0),
+**E466** (p.94, ptr 5638/0); mssEC 25 = Huntington object 5952, War Department Cipher No. 1, Apr-May 1864. Claim under audit: AUDIT (FV-L16d) s.4 -- all six
+N3, key period; E441 E472 E442 E473 D3, E469 E466 D2. Nothing decoded beyond key look-ups in key.md. No spec exists for eckert-1864, so
+`judge_plaintext.py` was not run. Step 0 not used. Intake gate (re-run 15:4x): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation
+found within 6 lines`. Prior work: `tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<ptr>;date=..;sender=..;recipient=..'
+--step-type second-audit --offline` exit 4 for all six; the owed LEADs (1-own:277ec2, 1-own:ddc30c) are target-level live claims of this lane's other jobs,
+not these rows; UNCHECKED-NET is the generic list of OR parts not on disk, none of them Apr-May 1864 Virginia; the tool's write to prior-work.tsv was reverted.
+Scripts (`fortmonroe/`, outputs beside them): `aud2_l16_4_or.py` (+ `.out`, window index only: date-window read of the cached OR I/36 pt 3, I/33, ORN I/9-10
+djvu texts), `aud2_l16_4_hdl.py` (+ `.out`: CONTENTdm full text, 13 fresh queries incl. control, 6 IIIF pages at 2400 px to scratch),
+`aud2_l16_4_beapi.py` (+ `.out`; `aud2_l16_4_beapi2.out`, `aud2_l16_4_beapi3.out` from the same loop run inline with identifier queries),
+`aud2_l16_4_gb.py` (+ `.out`). Peirpoint's *Letter* (1864) `_djvu.txt` read in scratch, not committed.
+
+### 1. Key, image
+- **Key re-check, every code word, key.md:** E441 Animal = Monroe (p.9 l.22), Stomach = Left (p.21 l.24), Banjo = Alexandria (p.11 l.5), Zebra / Zodiac =
+  Period, Pembroke = Cipher (p.19 l.9), Indians = Indian = General-in-Chief (p.16 l.8), Windpipe = River (p.23 l.14), Haven = Yorktown (p.15 l.6), Star /
+  Sugar = Interrogation (p.21 l.14), Female = 14, Vernon = Point (p.22 l.19), Hagar = West Point (p.15 l.1); E472 Hannah = 1.30 PM, Harrow = 20, Pandora =
+  Colonel, Animal, Unity, Nabob = P. H. Sheridan (p.18 l.1), Stomach, Bergen = James (p.10 l.14), Shade = Forage (p.20 l.26), Star, Walrus = Signature,
+  Belcher = QMG (p.10 l.24); E442 Knox = Butler (p.16 l.27), Snake = Head Quarters (p.21 l.7), Maxims = Maxim = Gillmore (p.17 l.25), Blubber = City Point
+  (p.11 l.15) x2, Hebrew = Williamsburg (p.15 l.4), Zodiac, Unity; E473 Princess = Captain (p.18 l.26), Famish = Norfolk (p.13 l.26), Unity, Sugar, Zodiac,
+  Knox; E469 Minnie = 7.30 PM, Harsh = 20, Pony = 9, Zodiac, Ghost = 15, Patent = Bridge (p.18 l.23), Jupiter = Grant (p.16 l.12); E466 Wrangle = Telegraph
+  (p.24 l.9), Knox, Violet / Virgin = Quotation (p.22 l.25). **Counts agree with FV-L16d: H 14, 12, 8, 6, 7, 4.**
+- **Collision check** (every body word against key.md, script inline): besides FV-L16d's three (E441 Martha + pony, E442 Bermuda = White River, E473
+  publish = 100, all plain, upheld), the body words that are key entries are route line indicators or route blind words -- answer (3 lines p.2), must
+  (4 lines p.6), line (4 lines p.5), office (3 lines p.7), little (5 lines p.5), mile (9 lines p.5), battery (blind word, route p.2), Dunn (blind word,
+  route p.4) -- all read in place as plain English in row-by-row grids, so none is an indicator; E472's header "Washington" (= Volunteer) is the place
+  heading, not body. No change to any grade.
+- **Image eye check this session** (IIIF 2400 px, all six pages, read whole at 1200 px and in region crops): the six rows match ciphertext.txt word for
+  word, as FV-L16d found; E469's page has "pony" (transcription "poney"); E442 line 9 opens with a short word read "it" (could be "at"; "it will require"
+  stands). Headers confirmed: 5699 "Wash'n May 27 . 1864 / Geo D Sheldon Ft Monroe"; 5679 "Washington May 20 . 1864 / Geo D Sheldon Ft Monroe"; 5707 "Hd
+  Qrs Genl Butler May 27 . 1864 / Maj Eckert Di 11.30 PM"; 5633 "Ft Monroe Apr 26 . 1864 / R OBrien Norfolk"; 5720 "Gen Butlers Hd Qrs May 30 1864 /
+  Maj Eckert Di"; 5638 "Ft Monroe Apr 29 . 1864 / Maj Eckert Di". **On 5720 the next row (5720/1, not filed) is headed "Hd Qrs Genl Butler May 30 /
+  7.30 P.M." in clear** -- the same day as E469's ledger header and the same minute as E469's time word Minnie (s.3).
+
+### 2. Search (families FV-L16d did not cover first)
+- **OR ser. I vol. 36 pt 3 by date, 26-31 May 1864** (cached `warofrebellion363unit`; every message heading in the window whose body carries a telegraph,
+  route, firing or operator word, 290 windows indexed; pages read in full: 261-263, 280-282, 312-324, 364-365, 414-417, 423-424): **none of E441, E442,
+  E469 is printed.** New context: **p.262 Butler to Sheldon, Headquarters 28 May**: the route "across the York at Gloucester Point, thence up to West Point,
+  **thence across the Mattapony between the two rivers**" -- the river E441 asks the width of, supporting FV-L16d's "Martha pony" = Mattapony; p.321-322
+  Sheldon to Eckert 29 May (Bickford's party to West Point; Palmer at Yorktown "ferrying his train across river on a barge"); p.417 Sheldon to Butler 31
+  May (building party 17 miles beyond Gloucester Point); p.424 Sheldon to Eckert 31 May (Homan's report of rebel pickets) -- the outcome of the route E441
+  and E442 plan. **p.415 Butler to Stanton, 31 May 6.30 p.m.: "Yesterday all day heavy firing in the direction of Mechanicsville. Six refugees from
+  Richmond report Grant on Mechanicsville turnpike, 6 miles from Richmond, yesterday. They heard the firing, and that Grant was driving Lee."** -- the
+  same firing and the same inference as E469, dated to 30 May. May 20 windows (pp.20-30): only Biggs's 6 p.m. answer (p.29, FV-L16d) and Butler's
+  report that Sheridan is at White House (p.29); no copy of the QMG's 1.30 p.m. telegram (E472).
+- **OR ser. I vol. 33, 24-30 Apr 1864** (cached `warofrebellion33unit`, 150 windows): nothing on Dunn, Edgar, the New Regime or newspaper exchanges (the
+  "regime" windows are "regiment"); a Butler dispatch names "Captain Clarke, of my staff" back from North Carolina (a name only). **ORN ser. I vol. 9 (24-30
+  Apr) and vol. 10 (29-31 May)** (cached `officialrecordso0009unse`, `officialrecordso0010unse`): nothing for E473, E466 or E469.
+- **The Papers of Ulysses S. Grant vol. 10** (Jan-May 1864; IA `papersofulyssess0010gran`, be-api full text by identifier; the search reads the volume:
+  "Eckert" hits the note "On May 14, Maj. Thomas T. Eckert ... telegraphed to USG" and the index): "Sheldon" only Lionel A. Sheldon (Ohio Vols.); "O'Brien"
+  0; "dispatch of 27th" 0; "heavy and continuous firing" 0; "firing" only other days; "Mattapony telegraph" only index lines. **None of the six.**
+- **Holder full text** (CONTENTdm p16003coll11, CISOSEARCHALL, all pointers, 13 fresh queries; control 'Inspector difficulty Evidence Nashville' -> 9678):
+  'Edgar name' 0; 'Clark exchanges' 1 (5633 own); 'Regime publish' 1 (own); 'Dunn Butler' 2 (13561 = W A Dunn Cherrystone, insulators, Dec [1862?]; 5709 =
+  E318, Eckert's 28 May route telegram, "Dunn" there = done); 'Dunn Cherrystone' 34 (the operator's own traffic; **5637**, below); 'Mattapony wide' 0;
+  'Yorktown cable wire' 0; 'Williamsburg Jamestown party' 4 (other years); 'Sheridan left James' 6 (July 1864, other); 'firing miles direction' 9 (5720 own;
+  4611, 4613 = May 1864 clear-book press reports of Butler's and the Potomac army's fighting, other texts); 'Grant reached there' 22 (none May 1864 Butler);
+  'Bermuda landing cable' 1 (5707 own). **No clear copy of any of the six.** **Pointer 5637 (p.93, the page facing E466), rows 0-1, plain language, 28 Apr
+  1864:** Eckert to Sheldon, "is there any reason why done [Dunn] should not resume his dutch [duty] at cherries stone ... as yet I have not had any proof
+  of disloyalty have you", and Sheldon's reply, "I have not seen a particle of evidence that he is disloyal nor do I think he is Knave [Butler] expressed
+  same opinion to me ... He made considerable trouble by not promptly attending to the cable boxes": **the antecedent of E466** (NOTES "siblings" listed
+  these rows, not read). Not E466's text.
+- **The New Regime, 1864** (the Norfolk paper): Chronicling America (loc.gov JSON API) carries no 1864 issue -- its Norfolk titles are the Day Book (from
+  July 1865) and the Norfolk Post (1865); phrase queries ('"new regime" edgar', '"new regime" exchanges norfolk', '"new regime" clark norfolk', 1864) return
+  other papers only. chroniclingamerica.loc.gov answered a Cloudflare 403 once (not retried). The 1864 issues were not located online: **unchecked**.
+- **IA be-api whole collection** (control "Suwo Nada" 909): '"how wide is the Mattapony"' 0, '"dread the necessity"' 563 (other texts), '"office at
+  Gillmore"' 6 (a town directory), '"one at Bermuda landing"' 0, '"stop your exchanges"' 1 (a 1920s trade paper), '"know of none and do not believe"' 13
+  (other texts), '"it may be that Grant has reached"' 0, '"New Regime" Norfolk 1864 Edgar' -> two context sources, read by identifier:
+  - **Peirpoint, *Letter of Governor Peirpoint ... on the subject of abuse of military power in the command of General Butler* (Washington, 1864; IA
+    `letterofgovernor00pier`, `_djvu.txt` read in full; reprinted in *Southern Unionist Pamphlets and the Civil War*, 1999, per Google Books):** pp.39-41
+    "THE NEW REGIME. This is the title of a new daily newspaper, published in Norfolk under the auspices of General Butler ... **Then Captain Clark, one of
+    General Butler's staff, was detailed with a civilian from Boston to edit the paper**" ("Pay of Captain Clarke"); p.35 an endorsement signed "H. C.
+    CLARK, Captain and A. D. C." (24 Feb 1864); pp.30-31 Captain Edgar seizing the poor-fund association's assets (22 Mar 1864). **E473's "Captain Clark,
+    New Regime" is Captain H. C. Clark, Butler's aide-de-camp and the paper's editor.** Not E473's text.
+  - ***Virginia Magazine of History and Biography* 122 (2014), supplement** (IA `sim_virginia-magazine-of-history-and-biography_fall-2014_122_supplement`,
+    be-api snippets only): Butler's arrest of the Rev. George D. Armstrong; "Captain George P. Edgar, an aide-de-camp to provost marshal Charles M.
+    Whelden" questioned him; "the clergyman's initial questioning by Captain Edgar appeared in the New York Times"; the notes cite "New Regime, 12 and 29
+    Mar. 1864, and **26 Apr. 1864**" -- the day of E473 ("why publish Edgar's name? Stop your exchanges. This was against orders"). Inside the item
+    "telegram" 0, "exchanges" 0, "against orders" 0: the article was not read in full and is not known to quote the telegram. Context, not print.
+- **Google Books API** (keyed, country=US; 9 requests, 3 answered HTTP errors and were not retried; control '"Butler favors crossing at Yorktown"' hit OR
+  I/36 pt 3): '"New Regime" "Captain Clark" Butler Norfolk' -> the Peirpoint reprint (above) and a 1976 book ("conducted by an able captain on his staff, a
+  man named Clark"); '"Captain Edgar" Armstrong Norfolk 1864' -> *The Rebellion Record* (1865): "Captain George P. Edgar was ordered to the headquarters of
+  Major-General Butler to investigate into the condition of the poor"; '"New Regime" Edgar Armstrong Butler' noise; '"Mattapony" Eckert telegraph Sheldon
+  1864' -> OR I/36 pt 3 pp.262, 281 (known); 'Dunn Cherrystone operator disloyal' 0. Errors: '"H. C. Clark" "New Regime"', '"heavy and continuous firing"
+  Butler 1864 Grant', '"Bermuda landing" "City Point" cable telegraph 1864'.
+- **JSTOR:** three rows queued in JSTOR-QUEUE.tsv ('"New Regime" AND Edgar AND Norfolk AND 1864'; '"why publish Edgar's name"'; '"Dunn" AND Cherrystone AND
+  telegraph AND 1864'); they do not block a class.
+- **Unreachable / not searched:** NARA RG 107 (telegrams received) and RG 92 (no catalog API key; search unusable, CLAUDE.md host table); the New Regime's
+  1864 issues (not digitised in Chronicling America; holdings not located); the Butler Papers at LC beyond the printed Corr.; OR I/36 pt 1 (reports) for 30
+  May; HathiTrust full text (Cloudflare); the VMHB 2014 article in full.
+
+### 3. Corrections to AUDIT (FV-L16d)
+- **E469, date: FV-L16d s.3 "the telegram is dated the 29th" and its s.5 fix "header date -> 29 May 1864 7.30 PM" are not upheld.** Three independent
+  pointers favour **30 May**: the ledger header (May 30); the next row on the same page, 5720/1, headed "Hd Qrs Genl Butler May 30 / 7.30 P.M." in clear
+  (E469's time word Minnie = 7.30 PM, the same minute); and Butler's dispatch of 31 May, 6.30 p.m. (OR I/36 pt 3 p.415), "Yesterday all day heavy firing in
+  the direction of Mechanicsville ... Grant on Mechanicsville turnpike" (Lee's p.424 "last evening" also = 30 May). "harsh pony" = 20 + 9 = 29 stays H as
+  key values, but its meaning is **M** (the day code disagrees with the ledger date; a clerk's or sender's slip, or not a day at all -- unresolved). For the
+  FIX job: header stays "30 May 1864 7.30 PM"; mark "harsh pony" as "[29] (M: conflicts with the ledger date 30 May)"; the "poney" -> "pony"
+  transcription fix stands; the place "battery [Bridge]" stays M (Mechanicsville lies by Meadow Bridge and Mechanicsville Bridge on the Chickahominy; a guess,
+  not a reading).
+- **E441:** FV-L16d's "Martha pony" = Mattapony is **strengthened** by OR I/36 pt 3 p.262 (Butler's route "across the Mattapony between the two rivers");
+  sense still M (one occurrence, a clerk's phonetic split). Upheld.
+- **E472:** upheld in full (= E90; header direction "QMG's office to Lt. Col. Biggs, received", "big" = Biggs).
+- **E442:** upheld in full ("Bermuda" plain, Hebrew = Williamsburg).
+- **E473:** upheld; addressee identified: "Captain Clark" = **Capt. H. C. Clark, aide-de-camp on Butler's staff, editor of the New Regime** (Peirpoint
+  pp.35, 39-41); "Edgar" = most likely **Capt. George P. Edgar**, aide to the provost marshal at Norfolk (VMHB 2014; Peirpoint pp.30-31; *Rebellion Record*),
+  whose name reached print in the Armstrong affair: identity M -> **supported** (context, not a C grade: no text names him in E473's connection).
+- **E466:** "Dunn" = the operator at Cherrystone (W. A. Dunn, holder 13561), **now supported** by the facing page 5637/0-1: Eckert's 28 Apr question
+  about Dunn's loyalty and Sheldon's answer that Butler "expressed same opinion" -- E466 is the next day's report of Butler's written endorsement.
+  FV-L16d's "Dunn's identity M" -> supported (context).
+
+### 4. Classes, depth, key
+
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E441 | **N3** (confirmed, second audit) | period (War Department Cipher No. 1, key.md = mssEC 41) | **D3** (H 14/14; external: OR I/36 pt 3 pp.262, 281, 321) | no prior plaintext or decipherment located after both audits |
+| E472 | **N3** (weak, = E90; confirmed) | period | **D3** (H 12/12; external: OR I/36 pt 3 pp.29-30; holder 4642) | same telegram as E90; its own words not located; the answer printed |
+| E442 | **N3** (confirmed) | period | **D3** (H 8/8; external: OR I/36 pt 3 pp.262, 322) | no prior plaintext or decipherment located after both audits |
+| E473 | **N3** (confirmed) | period | **D3** (H 6/6; external: Peirpoint 1864 pp.35, 39-41, Capt. H. C. Clark editing the New Regime; VMHB 122 (2014) supplement, Capt. George P. Edgar, New Regime 26 Apr 1864 cited; Butler Corr. IV p.339) | no prior plaintext or decipherment located; the 1864 New Regime itself unchecked |
+| E469 | **N3** (confirmed) | period | **D2** (H 7/7 as key values, "harsh pony" sense M; external fits the ledger date only: OR I/36 pt 3 p.415) | no prior plaintext or decipherment located |
+| E466 | **N3** (confirmed) | period | **D3** (raised from D2; H 4/4; external: facing page 5637/0-1, Eckert 28 Apr on Dunn's loyalty and Sheldon's report of Butler's opinion) | no prior plaintext or decipherment located |
+
+- **Not N4 for any:** NARA RG 107/92 unreachable; the New Regime's 1864 issues unchecked (E473); the VMHB 2014 article read in snippets only; OR read in OCR;
+  three JSTOR rows queued.
+- **Depth:** E466 is raised to D3: every cipher token H, no unread name or code, and a non-statistical external check in a text the readers had not used
+  (5637, the same correspondence a day earlier, in clear). E469 stays D2: its external check matches only if the ledger date is right, and the place
+  ("battery [Bridge]") is unread. D4 for none: no fresh rule-7 re-derivation in a separate session.
+- **Safe sentences** (replacing FV-L16d's where they differ; tail for all six: "not located in the Official Records ser. I vols. 33 and 36, ORN ser. I vols.
+  9-10, The Papers of Ulysses S. Grant vol. 10, Butler's correspondence vols. IV-V, Plum's Military Telegraph vol. II, J. E. O'Brien's Telegraphing in Battle
+  (1910), Google Books, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026, two audits)"):
+  E473: "on 26 Apr 1864 Fort Monroe told Captain [H. C.] Clark of the New Regime at Norfolk, Butler's aide and the paper's editor, through O'Brien, to
+  stop his exchanges and asked why the paper had published Edgar's name, against orders, over Butler's name." E469: "at 7.30 PM on 30 May 1864 (the day
+  code reads 29) O'Brien at Butler's headquarters told Eckert privately that he heard heavy continuous firing about fifteen miles off and that Grant might
+  have reached there; Butler reported the same firing to Stanton the next day (Official Records ser. I vol. 36 pt 3 p.415)." E466: "on 29 Apr 1864
+  Sheldon told Eckert that Butler had returned Eckert's telegram about Dunn, the operator at Cherrystone, endorsed 'I know of none and do not believe a word
+  against him', which appeared to settle it." E441, E472, E442: FV-L16d's, with the tail above.
+- **Unsafe:** any "first", "new", "unpublished"; "29 May" as E469's date; "Captain Clark wrote" or "Edgar was the provost marshal" (Whelden was; Edgar his
+  aide); "the New Regime printed this telegram".
+
+### 5. Postmortem and propagation
+- FV-L16d's classes and grades hold; its one over-reach was re-dating E469 from the day code alone against the ledger header without reading the same
+  page's next row or Butler's dispatch of the 31st. Its own "not searched" list (Grant Papers vol. 10, the New Regime, OR I/36 pt 3 by date) is now worked
+  except the New Regime's issues and NARA.
+- New rows for a reader (one line each, not filed here): **5720/1** (O'Brien to Eckert, 30 May 1864 7.30 PM, a deserter's report naming the Holcomb Legion and
+  Colquitt's [command, code word unread here]; cipher, unfiled); 5637/0-1 are plain language (no cipher entry needed; cite as E466's antecedent).
+- For the FIX job (s.5 of FV-L16d as amended here): E469 keeps 30 May (s.3); E473 header "for Captain [H. C.] Clark, [editor of the] New Regime" and Edgar
+  = Capt. George P. Edgar (supported); E466 "Dunn = the Cherrystone operator (antecedent 5637/0-1)"; E441 cite OR I/36 pt 3 p.262; all six "image-read
+  again by AUD2-LEDGER16-4, matches".
+- Propagated: status.json E441 E442 E473 E469 E466 -> audit_status "two audits", audit_refs + this section, gap, line (E473 E469 E466), depth E466 D3;
+  E90's row gains this section in audit_refs (E472 is its received copy); SO prompts PROMPT-chatgpt-e441/e442/e473/e469/e466 "where we have looked"
+  extended (rows SO-ECKERT-E441..E466 stay queued, not yet posted); JSTOR-QUEUE 3 rows; WORK-QUEUE AUD2-LEDGER16-4 -> done.
+- Requests: hdl.huntington.org 19 (13 CONTENTdm queries incl. control, 6 IIIF pages; one take, all 200); be-api.us.archive.org 29 (three takes, all 200;
+  note: AUD2-LEDGER16-2 and AUD2-LEDGER16-3 posted be-api takes at 15:53 and 15:57 while one of this session's takes was open, so the hosts saw two
+  sessions at once for about a minute each); archive.org 2 (Peirpoint metadata + djvu, 200); www.googleapis.com 9 (6 x 200, 3 errors), 1.6 s apart;
+  www.loc.gov 5 (JSON API, 200); chroniclingamerica.loc.gov 1 (403 Cloudflare, stopped). For LANE LEDGER-16 (account 1).

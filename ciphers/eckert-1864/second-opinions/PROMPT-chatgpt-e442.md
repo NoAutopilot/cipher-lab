@@ -12,7 +12,7 @@ THE ITEM
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key.md, search log
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (FV-L16d)").
 
-WHERE WE HAVE LOOKED: Official Records ser. I vols. 33 and 36 pts 1-3 (full text, by phrase and by name); Butler's Private and Official Correspondence vols. IV-V; Plum, The Military Telegraph during the Civil War vol. II (1882), and J. E. O'Brien, Telegraphing in Battle (1910), in full text; Google Books by phrase; Internet Archive full-text search across all collections; the Huntington's CONTENTdm full-text search across the whole Eckert collection (searched 10 Oct 2026, first audit FV-L16d).
+WHERE WE HAVE LOOKED: Official Records ser. I vols. 33 and 36 pts 1-3 (full text, by phrase and by name); Butler's Private and Official Correspondence vols. IV-V; Plum, The Military Telegraph during the Civil War vol. II (1882), and J. E. O'Brien, Telegraphing in Battle (1910), in full text; Google Books by phrase; Internet Archive full-text search across all collections; the Huntington's CONTENTdm full-text search across the whole Eckert collection (searched 10 Oct 2026, first audit FV-L16d). Second audit (AUD2-LEDGER16-4, 10 Oct 2026): Official Records ser. I vol. 36 pt 3 read by date 26-31 May; The Papers of Ulysses S. Grant vol. 10 (Internet Archive full-text search); the Huntington's full-text search again with fresh words; Google Books (keyed).
 
 WHERE WE HAVE NOT YET LOOKED PROPERLY (start here)
 - NARA RG 107; Butler Papers at the Library of Congress; Google Books and HathiTrust full view; JSTOR; telegraphers' memoirs and the Society of the U.S. Military Telegraph Corps publications.
