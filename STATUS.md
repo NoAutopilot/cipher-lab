@@ -5925,6 +5925,46 @@ Left (next lane): eckert-1864 No 2 entries pp.86-182 of no2-candidates.tsv (~37 
 by D12-E2/E3 rates; N2-AI/N2-AJ/N2-R N4 needs RG 92/393/107 or the OR Supplement (owner-side or LOCAL-QUEUE); eckert-1862 `ec18_align.py --rows`
 still stale, cause untested (~1); 9877 Hurlbut token stays M.
 
+## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261010-1109, session_01RLS2137Qu85hEjRnbTRzh6, account 2), 10 October 2026 (closed 13:1x UTC: in-scope cheap supply spent, lane ~24 of 60)
+
+Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-10-ytbiz-family-1109-jobs.md (lane tag FAMILY-A2q).
+Started from the 0909 handoff next list (items 1-3 person/LOCAL-QUEUE gated) and a fresh next_steps --hot-only read plus
+research/POOLS-FAMILY-2026-10-10.tsv; every candidate re-read in its dated NOTES sections (many `parallel` cells in NEXT-STEPS are stale: harley
+ff.70-72, rah-juan-manuel CSP map, fr16144 Boucher, fr16106 Mousset, clairambault296 residue, august key_153, bne R1172, wallis, hessen Brandt
+all done). Gate 0a: SESSION-SWEEP-account-2 stale-claimed since 5 Oct, proceeded. Workers 6 in 2 waves (11:21-12:28 UTC; Opus 4, Sonnet 2;
+all ledgered from get_session, archived): 19.21; orchestrator ~4.8. Over cap: MANT-Y49 5.63/3.5 (1.61x), COS-1167B 2.90/2.5 (1.16x). Account 2
+seven_day `allowed_warning` throughout (continued per blast rules). No Gallica probe. Known-text share: COS-1167 + COS-1167B 5.85 (~30%, over the
+one-fifth guide: finishing a completeness check on a text known from its copy).
+
+Results:
+- thurloe-printed (THUR-B146 2.13, THUR-V6 1.96): Birch 1742 vols 1, 4, 6 swept, 108 numeral groups (b146/hits.tsv; vol 3 control 10/10, 15/18
+  known windows); `ia_numeral_runs.py --inline-run` added (offline test). Vol 6 page images of 10 hits: 8 cipher with printed interlinear gloss
+  (Blank-Marshall x4, Jephson x2, Meadowe, a French nomenclator letter: key-source pairs, N0 by construction), 1 cipher with no printed gloss
+  (l.44535, Blank to Marshall 8 Jul 1657, leaf 377; no folder key for this correspondent), 1 not cipher. No unglossed run under a key in hand.
+- sachsstaatsarchiv-manteuffel-1712 (MANT-Y49 5.63): PREREG b11237295; 77 gloss-fixed slots, 2 blind passes, gate PASS (BA 0.883/0.862 vs p99
+  0.59) but the 8 contested gloss-wants-9 / transcribed-4 slots read 4 in both passes -> the y-glyph 4|9 question is untested-by-this-tool
+  (second blind-read attempt; rule 3 third-attempt clause applies to a third); 0063 A1 tok2 7->9 at M.
+- costabili-modena-1491 (COS-1167 2.95, COS-1167B 2.90): R1167 P2 L1-20/P3 cut into 10 cipher spans; 9 bounded spans 179 groups vs 172 copy
+  words (P5 L12-end, P6 L5-8), pooled 1.041 inside the P1 range 0.615-1.053 -> no clause-level drop or addition on P2 L3-20/P3 (M); span a1
+  unbounded (needs the P1 tail); cipher date xxvj vs copy xxij noted. No key or grade change.
+- na-suriname-map-1781 (SUR-MRICH 3.64): no m-rich glossed page on disk (gloss m 1.2-3.1 per 100 letters); PREREG 58e514904; SPLIT power at
+  f 0.50: +23 lines 0.467/0.333, +117 0.633/0.500, +234 0.900/0.850 -> gate FAIL, no transcription; ~120-235 more glossed lines needed.
+No N3+ D2+ item, so no AUD2 row and no SO row change.
+
+**next** (for the next LANE FAMILY incarnation):
+1. thurloe-printed: l.44535 (Blank to Marshall, 8 Jul 1657, Birch vol 6 leaf 377), cipher with no printed gloss: check whether its siblings
+   in the same correspondence (the four glossed Blank-Marshall letters) build a key (interlinear_align.py on the glossed four, ~$2-3), then
+   apply it to l.44535 with a shuffled-key control (~$1). The only fresh unread-cipher lead this incarnation found. Check 1 first.
+2. costabili-modena-1491: span a1 -- a P1-only DECODE login (`--fetch` the P1 URL, ~$0.5) to bound it; low value (known text).
+3. na-suriname-map-1781: the m|n split needs ~10 two-pass glossed pages (inv. 372 0183-0195), ~$40-60 -- a campaign, orchestrator's call.
+4. sachsstaatsarchiv-manteuffel-1712: the y-glyph question needs a different instrument (a person's eye on the 8 slots, or a sorter page),
+   not a third blind read.
+5. Carried from 0909: bne20211-ferdinand-1478 (LOCAL-QUEUE Paz y Melia page, then ASKS 143), oldenbarnevelt-brederode-1605 (inv. 6017 rest,
+   low prior), antt-linhares-chave (person count of 241/3), decode-1411 (ASKS 120), ASKS 161 sorters, rah-salazar HTRC EF rerun (~$0.2).
+Pricing: Opus vision/census jobs 1.16-1.61x cap (MANT-Y49: 8 Sonnet calls over 50 strips priced as 2 passes; price census calls per sheet);
+Sonnet 0.85-0.98x. Briefing lesson: under `--guess-fullsize` DECODE thumbnails count against `--max-files`; name pages with `--fetch`.
+Excluded this incarnation: eckert-* and Huntington ledgers (LANE LEDGER-13/14), Gallica fetches, Armstrong/Debosnys/Birago.
+
 ## LANE FAMILY handoff (incarnation DEFAULT-account-2-20261010-0909, session_012hc8DarhcArSYEVNFRGewc, account 2), 10 October 2026 (closed 10:1x UTC: in-scope cheap supply spent, lane ~19.9 of 60)
 
 Brief .claude/briefs/lane-family.md (+ lane-common-blast.md); jobs .claude/briefs/runs/2026-10-10-ytbiz-family-0909-jobs.md (lane tag FAMILY-A2p).

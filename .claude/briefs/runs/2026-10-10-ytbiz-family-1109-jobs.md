@@ -108,3 +108,8 @@ printed decipherment/interlinear gloss beside it, sender/recipient/date from the
 transcription of the numerals. A cipher block with no printed decipherment under a correspondent of a folder key: one ROOM flag line for the
 lane. Commit crops under 3 MB with a manifest. NOTES "## THUR-V6", Remaining gaps / Escalation / Verdict, gaps_check.py. Report what was
 found and where it was not found; do not classify novelty.
+
+## Wave 2 results (costs by get_session)
+- COS-1167B 2.90 / 2.5: 9 bounded spans 179 groups vs 172 copy words, pooled 1.041 in range; no clause-level drop/addition (M); a1 unbounded.
+- THUR-V6 1.96 / 2: 10 vol 6 hits by image: 8 glossed cipher, 1 unglossed cipher (l.44535 Blank-Marshall 8 Jul 1657, no folder key), 1 not cipher.
+Lane closed 13:1x UTC: workers 19.21, orchestrator ~4.8; handoff in STATUS.md.
