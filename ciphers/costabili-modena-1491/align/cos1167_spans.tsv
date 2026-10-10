@@ -1,15 +1,15 @@
 span	page	lines (this worker's count; P2 crop region y 860-2760 of IMG_R1167_I5858_P2.png, see images/cos1167/)	left_anchor (clear in the cipher letter)	right_anchor (clear in the cipher letter)	cipher_groups (this worker, contact/strip scale, M)	copy_words	groups_per_word	flag (vs reference range, align/cos1167_ref.py)
-a1	P2	L01-L02	(P1's last clear words, not read this job)	le qualle	19	pending (copy P5 lower half not on disk)			not bounded on the left this job
--	P2	L02-L03	clear run "le qualle tum se repusino ecc." (reading M)		0	-	-	anchor only
-a3	P2	L03-L04	tum se repusino ecc.	como ho dicto de sopra (L04; "er" before it may be clear et)	9	pending		
-a4	P2	L04-L07	de sopra s.	no mi li sono	27	pending		
--	P2	L07-L08	clear run "no mi li sono po se retenono p.nte ma lo ho habuto da" (reading M)		0	-	-	anchor only
-a5	P2	L08-L09	ho habuto da	& da mi m.te me ni acorgio p li modi che io vedo. & credo che	6	pending		
-a6	P2	L10-L11	& credo che	s. non resta po de mandare	7	pending		
-a7	P2	L11-L15	de mandare	mi fredo alcuno	39	pending		
-a8	P2	L15-L19	mi fredo alcuno	s'retrovosi a la persona de sua M.ta	37	pending		
-a9	P2	L20	persona de sua M.ta	copy P6 L1 "li furono donate" (end of this span per D4-COST3's anchor; not clear in the cipher)	6	pending (copy P5 end + "li furono donate")		
+a1	P2	L01-L02	(P1's last clear words, not read this job)	le qualle	19	117	0.162	not bounded: P1 cipher tail uncounted; copy words are an upper bound	not bounded on the left this job
+-	P2	L02-L03	"clear run ""le qualle tum se repusino ecc."" (reading M)"		0	-	-	anchor only
+a3	P2	L03-L04	tum se repusino ecc.	"como ho dicto de sopra (L04; ""er"" before it may be clear et)"	9	8	1.125	above range
+a4	P2	L04-L07	de sopra s.	no mi li sono	27	25	1.080	above range
+-	P2	L07-L08	"clear run ""no mi li sono po se retenono p.nte ma lo ho habuto da"" (reading M)"		0	-	-	anchor only
+a5	P2	L08-L09	ho habuto da	& da mi m.te me ni acorgio p li modi che io vedo. & credo che	6	5	1.200	above range
+a6	P2	L10-L11	& credo che	s. non resta po de mandare	7	6	1.167	above range
+a7	P2	L11-L15	de mandare	mi fredo alcuno	39	39	1.000	in range
+a8	P2	L15-L19	mi fredo alcuno	s'retrovosi a la persona de sua M.ta	37	40	0.925	in range
+a9	P2	L20	persona de sua M.ta	"copy P6 L1 ""li furono donate"" (end of this span per D4-COST3's anchor; not clear in the cipher)"	6	6	1.000	in range
 w1-w2	P2	L21-L27	D4-COST3 (done: w1 48/32 groups vs 52 words, w2 13/9 vs 14)	succedessono ad	-	-	-	done by D4-COST3
-b1	P3	L01-L04	copy P6 L5 "succedessono ad" (end of P2)	le qualle cosse mi significo a V.ra Ex.tia a cio che	35	pending (copy P6 L5-end not on disk)		
-b2	P3	L05-L06	a cio che	ne la	13	pending		
--	P3	L06-L07	clear run "ne la cui gr.a di continuo basando sue mane mi ricomando Strig. xxvj decembre 1491" (closing, all clear)		0	-	-	anchor only
+b1	P3	L01-L04	"copy P6 L5 ""succedessono ad"" (end of P2)"	le qualle cosse mi significo a V.ra Ex.tia a cio che	35	32	1.094	above range
+b2	P3	L05-L06	a cio che	ne la	13	11	1.182	above range
+-	P3	L06-L07	"clear run ""ne la cui gr.a di continuo basando sue mane mi ricomando Strig. xxvj decembre 1491"" (closing, all clear)"		0	-	-	anchor only
