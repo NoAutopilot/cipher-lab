@@ -598,3 +598,4 @@ FIX-N2IC-DATE	account-1	.claude/briefs/runs/2026-10-10-acct1-lane-ledger10-jobs.
 DEFAULT-account-1-20261010-0740	account-1	.claude/briefs/lane-ledger.md	Opus 5.5	60	600	done 2026-10-10 09:20	2026-10-10 07:40	auto-fill: blast 1 of 2 until 2026-10-10 18:00
 DEFAULT-account-1-20261010-0840	account-1	.claude/briefs/lane-ledger.md	Opus 5.5	60	600	claimed session_0144M5B5m1zmnBKpUbs32YxK 2026-10-10 08:40	2026-10-10 08:40	auto-fill: blast 2 of 2 until 2026-10-10 18:00
 DEFAULT-account-2-20261010-0909	account-2	.claude/briefs/lane-family.md	Opus 5.5	60	600	claimed session_012hc8DarhcArSYEVNFRGewc 2026-10-10 09:09	2026-10-10 09:09	auto-fill: blast 1 of 1 until 2026-10-10 18:00
+DEFAULT-account-1-20261010-0939	account-1	.claude/briefs/lane-ledger.md	Opus 5.5	60	600	claimed session_01ULpLhABprtUpNKbH7M5kdF 2026-10-10 09:40	2026-10-10 09:39	auto-fill: blast 2 of 2 until 2026-10-10 18:00
