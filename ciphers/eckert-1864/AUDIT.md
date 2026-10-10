@@ -14839,3 +14839,76 @@ failed first run), `aud2_n2_3_vol13.py` + `.out`, `aud2_n2_3_hdl.py` + `.out`; O
   regiments of the Sixth Corps".
 Requests: hdl.huntington.org 10 (10 CISOSEARCHALL), all 200; be-api.us.archive.org 22 (all answered); archive.org 16 (5 djvu texts, 7 metadata, 4
 advancedsearch); www.googleapis.com 30 (12 + 9 + 9); catalog.hathitrust.org 3; data.htrc.illinois.edu 1 (HTTP 500, not retried). For orchestrator (account-4).
+## AUDIT 2 (second adversarial, AUD2-LEDGERN2-5)
+
+Second verifier AUD2-LEDGERN2-5 (account 4, for the orchestrator (account-4); row queued by FV-O9a for LANE LEDGER-N2 (account 1), re-tagged from account 3),
+10 Oct 2026, 02:37-03:0x UTC by `date -u`; a separate session and account from the readers O9-BOOK and O9R-1 and from the first auditor FV-O9a (account 1);
+this session had not read or audited these entries before. Scope: **O9-DC** (9673/0), **O9-DE** (9684/1), **O9-DH** and **O9-DI** (9684/0). Nothing decoded
+beyond key look-ups. Key source: `period` (key-no9.md, a SAMPLE table read from mssEC 67). No spec exists for eckert-1864, so `judge_plaintext.py` was not run.
+Re-derivation: `python3 ciphers/eckert-1864/decode_no9.py --check` -> "reading-no9.md is current" (exit 0, 02:39). Intake gate (02:39): `eckert-1864: partial
+(line 3) -- edition/page or full-text-search citation found within 6 lines`. Image not re-checked (FV-O9a eye-checked every line of leaves 9673 and 9684 on
+2400 px crops). Committed (`ms18/`): `aud2_ledgern2_5_fts.py` + `.out` (IA be-api, 14 queries), `aud2_ledgern2_5_murphy.out` (6 identifier-scoped be-api),
+`aud2_ledgern2_5_search.py` + `.out` (Chronicling America 6, Google Books 6, CORE 2, OpenAlex 2), `aud2_ledgern2_5_ca_pages.py` + `.out` (8 named pages),
+`aud2_ledgern2_5_hdl.py`, `aud2_ledgern2_5_hdl2.py` + `aud2_ledgern2_5_hdl.out` (11 CONTENTdm queries, 6 item infos), `aud2_ledgern2_5_talk.py` + `.out`
+(Zooniverse Talk, project 2125). Full texts read to scratch (archive.org djvu): Garrison, *John Shaw Billings: a memoir* (1915, `johnshawbillings00garriala`);
+US Congressional Serial Set vol. of Senate Reports 38th Cong. 1st sess. (`unitedstatescon662offigoog`, incl. Rep. Com. No. 99, Select Committee on Naval
+Supplies, 1864); *Confidential Correspondence of Gustavus Vasa Fox* vols 1 and 2 (1918-19, `confidentialcorr01foxg`, `confidentialcorr02foxg`); *The Annals of
+the War* (1879, `annalsofwar00philrich`).
+
+### 1. Families FV-O9a did not cover, and what this pass did
+| Family | FV-O9a | This pass |
+|---|---|---|
+| Holder, incoming side of the Olcott telegrams (all pointers) | 10 queries; found 4491 (Olcott's request of 8 Mar) and 4732, 4551 | 11 more ('victualling', 'reimbursed expedition', 'Van Vliet Day', 'Billings', 'Avache', 'Navy operation', 'Brady Lafayette' (dropped once, 1 retry after 20 s: 4491 only), 'Stover consultation', 'Olcott Fox', 'Dix Brady'); item info 4491 (re-read: FV-O9a's quotation is exact) and five 'Olcott Fox' hits. **New: holder 10193** (Washington received book "Page 51", the book that holds E311's clear copy): "3.35 PM New York Mar 9th 1864 ... For G. V. Fox, Washn, with a Navy operation patent compressed air to protect machinery but principally to fill his pockets (sig) H. S. Olcott Special Comn'r Navy Dept" -- **Olcott's answer to O9-DH's 11 AM question** ("Is Brady connected with a Navy operation or [Army]?"), received about four and a half hours later and before O9-DI's 9.30 PM arrest order. **Holder 4492** ("Page 51" of 4491's book): "4.45 P. M New York Mar 10th 1864 ... for G. V. Fox ... Cant possibly come tonight may perhaps tomorrow night ... Hiram Ketchum & other lawyers want to see prisoners as counsel I have promised to get your instructions by tomorrow sig H S Olcott Special Comnr" -- **the request O9-DE (10.30 PM the same day) answers**: "no permits will be issued until we have held consultation". **Holder 10194** (11 Mar 2.30 PM, Olcott to Fox: "Telegram received ... I wont give any names until we meet tomorrow") acknowledges; **10203** (28 Mar 11 AM: "the plot to release Stovey") and 4477 (25 Feb, Scofield, Savage, Raymond) are siblings of the campaign. **No clear copy of any of the four** ('victualling' and 'reimbursed expedition' 9673 only; 'Navy operation' 10 hits, 9684 and 10193 the only Olcott ones) |
+| Fox's *Confidential Correspondence* vol. 1 | not searched (reader searched vol. 2 by be-api) | vols 1 and 2 full text grepped: Olcott 0, Stover 0, Brady 0, Lafayette 0 (positive control Welles: many hits in each) |
+| Congressional documents on the Navy-contract frauds | not searched | Senate Rep. Com. No. 99, 38th Cong. 1st sess. (1864), Select Committee on Naval Supplies (in `unitedstatescon662offigoog`) grepped for Olcott, Stover, Brady, Fox, Lafayette, telegra-, permit, "books and papers": H. D. Stover's contracts and his conviction ("he is in Fort Lafayette ... a conviction under a charge of attempting to bribe George H. Jacobs, jr."), Edwin L. Brady as a rival bidder (whale oil, Charlestown; sperm oil, New York at $1.49), "the investigation under Colonel Olcott, ordered by the Navy Department, in Boston"; **no Fox-Olcott telegram printed** |
+| Olcott's own account | not searched | H. S. Olcott, "The War's Carnival of Fraud", *Annals of the War* (1879) pp.705-723: Stover "convicted by court-martial ... I was ordered to visit and confer with him in Fort Lafayette"; "Within ten days General Dix ... had arrested every member of this infamous ring ... and turned over their books and papers to me for examination"; prints Fox's letter of 18 Feb 1864 ("now first published") and an extract of Fox's report to Welles; **Brady not named, no telegram of 9-10 Mar quoted**. Olcott biographies (Murphy, *Hammer on the Mountain* 1972 and *Yankee Beacon of Buddhist Light* 1988, be-api by identifier): Brady 0, Stover 0 |
+| Île à Vache return (O9-DC) | NYT 21 Mar, Pittsburgh Post 24 Mar 1864; GB 4 | Garrison, *John Shaw Billings* (1915) pp.71-73: Billings, from Bedloe's Island, ordered on board the Marcia C. Day "then lying in the harbour of New York ... a ship of about 1,000 tons ... the hold had been cleared out and fitted up roughly with two story wooden bunks", sealed orders, "the Secretary of the Interior sent the Marcia C. Day to bring them back" (context for "charter and outfit", "special expedition" and "reimbursed if desirable"; not the telegram). New-York Daily Tribune 22 Mar 1864 p.5 (the same paragraph as NYT 21 Mar). be-api: '"Marcia C. Day" Meigs charter' 60, '"Ile a Vache" Meigs "Marcia"' 36, '"Isle a Vache" "Marcia C. Day"' 4, '"Marcia C. Day" "Van Vliet"' 15: secondary works (Nicolay and Hay; Frederic Bancroft's Ile a Vache essay in Cook's 1957 edition, djvu not available; Randall, *Lincoln the President*, index; Garrison; reference chronologies) and shipping lists; **none quotes Meigs's 5 Feb telegram**. Google Books 3 more ('"Marcia C. Day" "separate and distinct account"', '"special expedition" "Marcia C. Day" Meigs', '"Van Vliet" "Marcia C. Day" 1864 charter'): index entries and noise only. OpenAlex: two articles on the colony (Boyd, "Abraham Lincoln and Negro Colonization: the Ile A'Vache, Hayti Experience"; "Île à Vache and Colonization: the Tragic End of Lincoln's 'Suicidal Folly'"), not read (JSTOR rows queued, below) |
+| New York and national press, Feb-Apr 1864 (Chronicling America) | not searched | 6 searches ('Stover Fort Lafayette books papers' 41, 'Brady arrested Fort Lafayette navy' 7, 'Olcott Brady arrest' IncompleteRead (not retried), 'Marcia C. Day' 27, 'Isle a Vache Van Vliet' 0, 'Stover permits Fort Lafayette' 36); 8 candidate pages read by OCR (NY Herald 16 Mar p.3, 9 Apr p.4; NY Tribune 22 Mar p.5, 24 Mar p.4, 26 Mar p.6; Cleveland Morning Leader 28 Mar p.1; Chicago Tribune 20 Mar p.2; Evening Star 21 Mar p.1): the Brady hits are M. B. Brady the photographer and James T. Brady the lawyer; **no paper prints any of the four telegrams or names Edwin L. Brady's arrest** (OCR-dependent, a weak negative) |
+| Decoding the Civil War Talk (Zooniverse) | not searched | 6 keyword searches: 'Olcott' 7 comments (holder clear telegrams, among them 4491; none decodes a Fox telegram), 'Van Vliet' 5 (one "#coded for #horner_john from #van_vliet" is mssEC 18 p.106, another telegram), 'Stover', 'Marcia', 'Atlas Fox' 0, 'Brady arrest' 1 (other). **No volunteer decipherment of these entries found** |
+| Scholarship | GB only | CORE 2, OpenAlex 2: the two Île à Vache articles above; nothing on Olcott's 1864 Navy investigation |
+| Unreachable / not searched | -- | Fox papers (New-York Historical Society); Olcott papers; Meigs papers (LC); NARA RG 45, RG 92 (QMG letters sent), RG 107 (M473); OR ser. III vol. 4 (no readable IA text, FV-MS18o); House documents on the Navy-contract frauds and Grimes's Senate exhibit; Secretary of the Interior's report 1864 on the colony; HathiTrust (Cloudflare); JSTOR (rows queued, never blocking); the two Île à Vache articles; Magness and Page, *Colonization after Emancipation* (2011) |
+
+### 2. Findings
+- **No copy, quotation or printed text of any of the four found.** The nearest printed texts are context: Welles's diary (FV-O9a), Olcott's *Annals* essay
+  (the ring's books and papers turned over to him; Stover in Fort Lafayette), Senate Rep. Com. No. 99 (Stover convicted and in Fort Lafayette; Edwin L. Brady a
+  Navy bidder), Garrison's Billings memoir (the Marcia C. Day fitted out at New York).
+- **Two holder telegrams FV-O9a did not find corroborate the readings point by point** (context, not copies):
+  - O9-DH (11 AM, 9 Mar) asks whether Brady is connected "with a Navy operation or [Army]"; Olcott's reply at 3.35 PM (10193) begins "with a Navy operation":
+    he repeats Fox's own words and answers "Navy". O9-DI's arrest order at 9.30 PM (time word Sarah) follows the reply, as "If the former this Dept will
+    [arrest] him" said it would. This checks Walnut = Army and wadding = arrest in sense (a Navy/Army alternative, then a Navy arrest), and the order of the
+    two time words (Francis 11 AM before Sarah 9.30 PM).
+  - O9-DE (10.30 PM, 10 Mar) answers 4492 (4.45 PM the same day: Olcott cannot come tonight, perhaps tomorrow night; lawyers want to see the prisoners as
+    counsel; he has promised to get Fox's instructions by tomorrow): "no permits will be issued until we have held consultation". Welles (pp.539-540) has
+    Olcott arrive on 12 Mar; 10194 (11 Mar: "until we meet tomorrow") agrees.
+- **Book call:** unchanged (No. 9 on header words; FV-O9a s.0). The new texts add nothing on Pagan/Pagoda or the time words beyond the order above.
+- **Corrections to FV-O9a:** none to class, counts or depth. Its s.0 list of holder texts gains 10193 (O9-DH answered) and 4492 (O9-DE answers it); its
+  "Not searched" list loses Fox's Confidential Correspondence vol. 1, the Senate naval-supplies report, the press (Chronicling America) and Talk.
+
+### 3. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | % H/C/S | basis |
+|---|---|---|---|---|---|
+| O9-DC | **N3** (kept) | period | **D3** (kept) | 100 (7 H) | not located after FV-O9a and s.1; external check NYT 21 Mar 1864 (FV-O9a), + Garrison 1915 pp.71-73 |
+| O9-DE | **N3** (kept) | period | **D2** (kept) | 75 (6 H, 2 M "dam bore") | not located; external checks Welles I pp.524-540, holder 4732, + holder 4492 (the request answered), Annals of the War pp.717-718; under the D3 line on token share only |
+| O9-DH | **N3** (kept) | period | **D3** (kept) | 100 (6 H) | not located; external checks holder 4491 + **holder 10193** (Olcott's reply quoting "with a Navy operation") |
+| O9-DI | **N3** (kept) | period | **D3** (kept) | 100 (5 H) | not located; external checks holder 4491 + 10193 (the reply that precedes the order) |
+
+- Not N4 for any: the Fox, Olcott and Meigs papers, NARA RG 45/92/107, OR III/4, the House fraud documents, the Interior report, HathiTrust and JSTOR
+  (queued) remain unsearched. Not D4: no fresh rule-7 re-derivation session; O9-DE keeps 2 M tokens.
+- **Safe sentences:** FV-O9a's stand for O9-DC and O9-DE. O9-DH, refined: "Read at grade H with Cipher No. 9 (period key): at 11 a.m. on 9 Mar 1864
+  G. V. Fox asked Col. Olcott whether Brady's case was a Navy or an Army matter, saying the Navy would arrest him in the first case and the War Department
+  should act in the second; Olcott's reply that afternoon ('with a Navy operation ...', Huntington Eckert papers, pointer 10193) is in clear in the holder's
+  received book; the telegram itself was not located in print (searched 10 Oct 2026)." O9-DI: FV-O9a's sentence stands.
+- **Unsafe:** as FV-O9a ("first", "new", "unpublished", "never printed"; "Brady was arrested"; any value for "dam bore"), and "Olcott's reply is a copy of
+  O9-DH" (it is the answer, not the text).
+
+### 4. Postmortem and fixes (for the next FIX job; reading-no9.md and ciphertext-no9.txt not edited here)
+- FV-O9a's classes, counts and depths stand; no over-claim found in its section, status.json or the four SO prompts. Applied here: status.json rows
+  `audit_status` "two audits", `audit_refs` + this section, `gap`; O9-DH `line` (refined safe sentence) and O9-DH/O9-DI/O9-DE `depth_check` (+ 10193 / 4492).
+  The SO prompts and SECOND-OPINIONS-QUEUE rows are unchanged (no class, count or reading change).
+- ciphertext-no9.txt notes (FIX job): O9-DH "answered by Olcott 9 Mar 3.35 PM, holder 10193 ('with a Navy operation ...')"; O9-DI "after Olcott's reply
+  (10193)"; O9-DE "answers holder 4492 (Olcott, 10 Mar 4.45 PM: lawyers want to see prisoners; instructions asked); context Olcott, Annals of the War (1879)
+  pp.717-718, Senate Rep. Com. No. 99 (38th Cong. 1st sess.)"; O9-DC "context Garrison, John Shaw Billings (1915) pp.71-73". Plus FV-O9a s.5 still pending.
+- JSTOR-QUEUE.tsv: 4 rows appended (two family (i), two family (ii)), never blocking.
+Requests: hdl.huntington.org 17 (11 CISOSEARCHALL incl. 1 dropped and 1 retry, 6 item info); be-api.us.archive.org 20; archive.org 9 (6 djvu, 1 metadata,
+2 advancedsearch; the Bancroft djvu "item not available"); www.loc.gov 6 search (1 IncompleteRead, not retried) + 16 page/full-text; www.googleapis.com 6;
+api.core.ac.uk 2; api.openalex.org 2; talk.zooniverse.org 7; www.zooniverse.org 1. For orchestrator (account-4).

@@ -4872,7 +4872,8 @@ NYT 21 Mar 1864). Corrections for a FIX job in the AUDIT's s.5. Queued: WORK-QUE
 ## Remaining gaps (FV-O9a, 10 Oct 2026)
 Read so far: 24 of 26 cipher tokens H (92%) over the four entries (DC 7/7, DE 6/8, DH 6/6, DI 5/5); 2 M ('dam bore'); the rest of each entry is plain words.
 - O9-DE 'dam bore' unread (2 tokens after the signature, M) - blocker: not-attempted; not in the key-no9.md sample table, possibly operators' chatter; next: look the two words up on the mssEC 67 pages beyond the sample table (key-rebuild read), ~$0.5
-- N4 searches for all four (Fox and Olcott papers, Fox Confidential Correspondence vol. 1, congressional Navy-fraud reports, NY press Feb-Mar 1864) - blocker: waiting-on the answer of the VERIFY lane to WORK-QUEUE.tsv row AUD2-LEDGERN2-5; a second audit is a separate session (rule 10)
+- N4 searches for all four: the second audit (AUDIT.md '## AUDIT 2 (second adversarial, AUD2-LEDGERN2-5)', 10 Oct 2026) covered Fox Confidential Correspondence vols 1-2, Senate Rep. Com. No. 99 (Naval Supplies), Olcott's Annals of the War essay, the press via Chronicling America and Zooniverse Talk (all N3 kept); still unsearched: the Fox, Olcott and Meigs papers, NARA RG 45/92/107, OR III/4, the House fraud documents, HathiTrust - blocker: needs-physical-access (manuscript papers and NARA record groups); JSTOR waiting-on JSTOR-QUEUE.tsv rows of 10 Oct 2026 (eckert-1864, four rows from AUD2-LEDGERN2-5)
+- context notes (10193, 4492, Garrison 1915, Annals of the War, Senate Rep. Com. No. 99) from the second audit not yet in ciphertext-no9.txt - blocker: not-attempted; a verifier does not edit the reading; next: the same FIX job, AUDIT 2 (AUD2-LEDGERN2-5) s.4, ~$0.3
 - context notes (4491, 4551, Welles, Marcia C. Day) not yet in ciphertext-no9.txt - blocker: not-attempted; a verifier does not edit the reading; next: a FIX job applying AUDIT (FV-O9a) s.5 through decode_no9.py's note lines, ~$1.0
 
 ## Escalation (FV-O9a, 10 Oct 2026)
