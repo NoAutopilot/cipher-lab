@@ -6762,3 +6762,17 @@ depth D3 for E441 E472 E442 E473, D2 for E469 E466; fixes for the next FIX job i
   filed; the NOTES table that lists 5679/0 as "filed E472" has no line for 5679/1.
 - One-line suggestion: OR I/36 pt 3 (on disk) prints the Eckert-Sheldon-O'Brien line-building telegrams of 27-31 May 1864 (pp.262, 281-282, 321-322,
   417, 424); the 1864 Fort Monroe rows of 26 May-12 Jun not yet audited should be diffed against it before any reading (E90's audit searched pt 2 only).
+
+## FV-L16e (10 Oct 2026, account 1, for LANE LEDGER-16)
+
+First audit of E447 E471 E474 E470 E468 E443 E445 E446 E448 (Fort Monroe 1864, Mar and Oct-Dec): AUDIT.md "## AUDIT (FV-L16e)". E468 **N1** (printed
+OR I/42 pt 3 p.735, Butler Corr. V p.369, Grant Papers vol. 13: Grant to Butler, 28 Nov 1864); E470 **N2** (substance in Parker's letter of the same day,
+ORN I/11 p.116); E447 N3 D3, E471 and E474 N3 D2; E443 E445 E446 E448 N3 (weak) D1, too short for a clause from the key. All nine image-read, transcription
+matches. Fixes for the next FIX job in its s.5 (E447 Colhoun; E474 webster plain; E443 John and fever plain; E446 Cherry plain; E448 wharf plain; E468
+header). Second audit queued as WORK-QUEUE AUD2-LEDGER16-5 (E447 E471 E474).
+- One-line suggestion (not done here, brief does not name it): file **row 5577/1** (Ft Monroe 3 Mar 1864, "for Bruns the following despatch received from
+  my aid at Saints ... Kilpatrick ... Dahlgren ... Cook ... Litchfield ... Spear"): Butler's 8 p.m. telegram to Stanton, printed OR I/33 p.197 -- N1 once
+  filed (known text, a key check, not a reading).
+- One-line suggestion: file **row 5793/2** (Washington 15 Oct 1864, Eckert to Sheldon "J": the Secretary of War left Washington at noon for City Point on
+  board the Manhattan; he will pass Jamestown Island early tomorrow morning), E448's companion; check OR I/42 pt 3 for Stanton's City Point visit of 16 Oct
+  1864 before reading.

@@ -1,0 +1,19 @@
+warofrebellion014602rootrich | "Suwo Nada" | 1
+     ['warofrebellion014602rootrich'] | Quartermaster-General : Can also obtain the {{{Suwo Nada}}}— 1,200 men, and sixteen feet loaded; she
+     ['warofrebellion014602rootrich'] | three detached from Fort Monroe, and the {{{Suwo Nada}}}, on her way from New York, will be able
+(all) | "Saugus" "will start down" Colhoun | 0
+(all) | "send no ciphers till" | 0
+(all) | "has General Butler's fleet left" | ERR HTTP Error 502: Bad Gateway
+(all) | "yellow fever is prevailing to considerable extent at" | ERR HTTP Error 502: Bad Gateway
+(all) | "have him sent here with his instruments" | 0
+(all) | "Dunn formerly employed" | 5
+     ['sim_freeman_the-freeman_1901-08-03_14_31'] | remain un- til the heated term is over. S. {{{Dunn, formerly employed}}} in the American plan of the Peabody hotel
+     ['janesville-daily-gazette-1907-04-09'] | vFriends; ' .Friends .of Mliss- Margaret .{{{Dunn, formerly employed}}}.- in -the Geo. D. Simpson store, who recently
+     ['sim_textile-world_1900-11_19_5'] | on ot OSS Wamsutta Mills, New Bedford {{{Dunn, formerly employed}}} River Mills, Taunton, Mass position nig
+     ['sim_textile-world_1906-12_32_3'] | overseer of spinning at Trion, Ga. I. N. {{{Dunn, formerly employed}}} at Warrensville, S. C., has accepted the
+(all) | "don't fail to be at the wharf" | ERR HTTP Error 502: Bad Gateway
+be-api requests 8
+# single retry after 25 s of the three 502s
+(all) retry | "has General Butler's fleet left" | 0
+(all) retry | "yellow fever is prevailing to considerable extent at" | 0
+(all) retry | "don't fail to be at the wharf" | 0

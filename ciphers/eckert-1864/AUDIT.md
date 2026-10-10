@@ -19281,3 +19281,192 @@ from Hd Qrs Army of the James (Ord, operator Emerick) to Gordon via Sheldon at F
 "image-read by FV-L16b, matches the transcription" (E518 except "Gen" for "Geo.").
 Requests: hdl.huntington.org 31 (control 9678 once, 25 CISOSEARCHALL incl. one dropped connection retried once after 25 s, 1 dmGetItemInfo 8510, 5 IIIF pages; one take 15:03-15:1x UTC); googleapis.com 50 (Google Books API, 1.6 s apart); be-api.us.archive.org 13 (2 x 502 on one query, one retry), 1.8 s apart; archive.org 0 (all OR/ORN/Butler/Gordon/O'Brien texts read from the print-check cache on disk).
 For LANE LEDGER-16 (account 1).
+
+## AUDIT (FV-L16e)
+
+Verifier FV-L16e (account 1, for LANE LEDGER-16), 10 Oct 2026, 15:05-16:0x UTC by `date -u`; a separate session from the readers FM-S1, FM-S2,
+FM-S3 and FM-F1, not protecting their conclusions. Scope: **E447** (NOTES "## FM-F1", from FM-S1), **E471** ("## FM-S3"), **E474** ("## FM-S3"),
+**E470** (FM-F1 from FM-S2), **E468** (FM-F1 from FM-S2), **E443** (FM-F1 from FM-S1), **E445** (FM-F1 from FM-S1), **E446** (FM-F1 from FM-S1), **E448**
+(FM-F1 from FM-S1); ciphertext.txt, War Department Cipher No. 1, Fort Monroe ledger mssEC 25 = Huntington object 5952, March and October-December 1864.
+CLEAR-SWEEP had left all nine NONE (fortmonroe/clear_sweep.tsv). Nothing decoded beyond key look-ups in key.md (`fv_l16e_keylook.py`, `.out`). Key
+source for all nine: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Intake gate: `eckert-1864: partial (line 3) --
+edition/page or full-text-search citation found within 6 lines`. Prior work (`tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington
+mssEC 25;folio=<pointer>;date=..;sender=..;recipient=..' --step-type audit --offline`): verdict step LEAD for each; the three LEADs are target-level live
+claims (FM-F1 09:29, FIX-L14 11:29, CLEAR-SWEEP 13:25) that cover filing, mssEC 18/19 fixes and the two-word clear sweep, not a first audit of these
+nine; UNCHECKED-NET = the aaymeloglu repository (no cache) and the OR parts not on disk (the ones that matter for Mar 1864 and Oct-Dec 1864 Virginia --
+OR I/33, I/42 pt 3, ORN I/9-11, Butler Corr. IV-V -- are on disk and were read). **Step 0 is a non-test on mssEC 25 (STEP0-KEYCTL)**: nothing below is
+classed from step 0. Scripts (all in `fortmonroe/`, outputs beside them): `fv_l16e_hdl.py` (+ `.out`: 27 fresh CONTENTdm full-text queries across all
+pointers of p16003coll11, none of CLEAR-SWEEP's, plus the control 'Inspector difficulty Evidence Nashville' -> 9678; pages 5827 5577 5829 5814 5810
+5785 5816 5583 5793 at 2400 px to scratch), `fv_l16e_print.py` (+ `.out`: letters-only phrase grep over the 191 cached print-check volumes, incl. OR
+I/33, I/42 pts 2-3, ORN I/9-12, Butler Corr. IV-V, Plum vol. II, J. E. O'Brien 1910, Bates 1907), `fv_l16e_kwic.py` (KWIC with running heads),
+`fv_l16e_gb.py` (+ `.out`: 15 Google Books API queries, keyed, `country=US`, control = E468's printed phrase, which hit Grant Papers vol. 13
+`mnRjmhe3QLoC` / `ij8fAQAAMAAJ`), `fv_l16e_beapi.py` (+ `.out`: IA be-api whole-collection phrase queries, control '"Suwo Nada"' in OR I/46 pt 2).
+
+### 1. Duplicates, image
+- **Duplicate diff:** pointers 5827, 5577, 5829, 5814, 5810, 5785, 5816, 5583, 5793 against every `###` header in ciphertext*.txt (mssEC 18, 19, 25, No. 2,
+  No. 9) and status.json: the near neighbours are different telegrams -- E185 (5824/2, Sheldon's forward of Porter's order to Colhoun, 10 Dec: E447's
+  antecedent), E278 (5829/2, Webster's 1 PM reply to E474), E280 (5785/0, Sheldon to Eckert 30 Sept, yellow fever at Newport barracks), E466 (5638/0,
+  Butler on Dunn, 29 Apr). **No duplicate.** Not filed anywhere: **5577/1** (Ft Monroe 3 Mar 1864, Sheldon to Eckert, "for Bruns the following despatch
+  received from my aid at Saints ... Kilpatrick ... Dahlgren ... Cook ... Litchfield ... Spear") -- it is Butler's 8 p.m. telegram to Stanton, **printed
+  OR I/33 p.197** (known text; one-line suggestion in NOTES); **5793/2** (Washington 15 Oct 1864, Eckert to Sheldon "J", holder transcription: "the secret
+  airy of war Edwin M S. left Washington at noon today for City point on board the man hattan ... he will pass Jamestown Island early tomorrow morning
+  Dealy can post you"), E448's companion.
+- **Image eye check this session, every graded line** (page images at 2400 px; strips of the entry region; the ruled grid gives `iiif_lines.py` too few
+  bands, as FV-FM10a and FV-L15d found): 5827 row 0 (E447), 5577 row 0 (E471), 5829 row 1 (E474), 5814 row 0 (E470), 5810 row 1 (E468, "For Knox"
+  interlinear above "Elizabeth"), 5785 row 1 (E443), 5816 row 2 (E445, crop at 1500 px: the steamer's name is written "Hendron"), 5583 row 2 (E446),
+  5793 row 1 (E448). **The transcription matches the image word for word on all nine.**
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; hdl token 15:13-15:2x UTC, control 9678 returned;
+three or more fresh queries per entry, none of CLEAR-SWEEP's): Colhoun 1 (**5824** = E185); "Saugus Porter" 0; "start down" 24 (5813, 5827 own, others
+other dates); "Webster fleet" 9, "Knox fleet" 11, "Butlers fleet" 3 (5829 own; 5832-5842 siblings of 13-15 Dec; none a clear copy); "cable repaired" 20,
+"Kilpatrick Sheldon" 17 (5574-5582 = siblings of 2-5 Mar 1864, 5577 own); "send no ciphers" 149 (no Mar 1864 copy); Canonicus 13 (5813, 5814 own, 5820,
+5822 = other telegrams; **5818** Porter to Parker 6 Dec, "keep the three monitors ready", context); "ready for service" 48, "Parker monitors" 1 (5818);
+"Monroe all day" 149, "all day tomorrow" 83, "meet you and the Admiral" 3 (4253, 4401 = 1863, 12085 = another subject); McDougall 4 (5785 own, 13925,
+13927, 14005 = other subjects), "Horner yellow" 4, "yellow fever" 6 (5784/5785 own page and E280; 13060, 11583, 7962, 4904 other); Baird 20 (5816 own;
+9015 = 1864 Washington, another man), "City of Hudson" 13 (none 6 Dec 1864 with Baird), "instruments Porter" 0; "Dunn Butler" 2 (**13561** Buell, New
+Castle: "send by first Express to WA Dunn Cherrystone a Box of about 75 Insulators"; 5709 Eckert 28 May 1864), "American office" 16, "Cherrystone Butler"
+4 (none Mar 1864 Dunn); Manhattan 17 (5793 own; others other dates), "Secretary of War wharf" 0, "Bates posted" 2 (5793 own, 6191). **No clear copy of
+any of the nine at another pointer.** KWIC read for every bold pointer:
+- **E447 antecedent at 5824 (= E185):** "S. H. Beckwith City Point Polkaer E. are Colhoun you S. Ironic lad Saugus Black zebra wick Tommy with your vassal
+  without delay at Hemp town wileys walrus Niagara Imogene" -- Porter's order (3 PM) to Commander E. R. Colhoun, U.S. ironclad Saugus, at City Point, to
+  come with his vessel without delay to Hampton Roads. E447 is Colhoun's reply. The holder writes the name **Colhoun**, settling the reader's "E. R.
+  Cole hound" (s.3).
+- E446: 13561 confirms a W. A. Dunn at Cherrystone in 1864 (different message).
+
+**Print** (OR I/33, I/42 pt 3, ORN I/9 and I/11, Butler Corr. V, Plum vol. II, J. E. O'Brien 1910 read in djvu text with page from the running heads):
+- **E468 is printed, three times:** **OR ser. I vol. 42 pt 3 p.735**: "City Point, Va., November 28, 1864 -- 10.30 a.m. Major-General Butler, Fortress
+  Monroe: Will you be at Fort Monroe to-morrow? If so, I will meet you and the admiral there at 3 p.m. U. S. Grant, Lieutenant-General." (Butler's 11.40
+  a.m. answer follows on p.736); **Butler, Private and Official Correspondence vol. V (1917) p.369**: "From General Grant Cipher. City Point, Nov. 28th 1864
+  To Maj. Gen'l. B. F. Butler, Comd'g. Will you be at Ft. Monroe all day tomorrow? If so I will meet you and the Admiral there at 3 p.m. U. S. Grant, Lt.
+  General"; **The Papers of Ulysses S. Grant vol. 13** (Google Books snippet, `mnRjmhe3QLoC` / `ij8fAQAAMAAJ`, page not shown in the snippet): the same
+  text, with the source note "ALS (telegram sent), CSmH; telegram received, DLC-Benjamin F. Butler. O.R., I, xlii, part 3, 7[35]" -- the holder of the
+  sent original is the Huntington itself. Word for word against the derived reading block: "Elizabeth" = 10.30 a.m. agrees with the printed hour,
+  "animal" = Monroe, "Alday" = all day (Butler V and Grant Papers; OR drops it), "whelp" = to-morrow, "sugar" = ?, "meat" = meet, "admire all" = admiral,
+  "Imogene" = 3 p.m., "John" = Grant: every code word agrees.
+- **E470: the substance is printed, in Parker's letter of the same day:** ORN ser. I vol. 11 p.116, Wm. A. Parker, U.S.S. Monitor Onondaga, Dutch Gap, 1
+  Dec 1864, to Porter: "Your telegraphic dispatch of this date relative to the three monitors, Saugus, Canonicus, and Mahopac, was received here at 6:40
+  o'clock a.m. to-day. I have to report that the three monitors above named are ready for immediate service." E470 (8 AM, by Butler's headquarters wire)
+  is the telegraphic answer to the same dispatch, in other words; the letter, not the telegram, is in print. Same shape as E539 (AUD2-LEDGER15-4: N2).
+- E447: not printed. ORN I/11 has Colhoun's Saugus reports of 5-6 Dec (pp.145-147) and Nichols, Mendota, 15 Dec (p.194): "our success in getting the
+  Saugus afloat at meridian yesterday ... she at once proceeded on her way to the roads" (the run down the James that E447 announces). Phrase grep "start
+  down at daylight", "miles above City Point", "will start down" 0 for Dec 1864; be-api '"Saugus" "will start down" Colhoun' (s.2 be-api line).
+- E471: not printed. **OR I/33 p.197** prints Butler's telegram of the same evening, "Fort Monroe, Va., March 3, 1864 -- 8 p.m. (Received 8.40 a.m., 4th.)
+  The following dispatch received from my aide at Fort Magruder ...: Arrived all safe. General Kilpatrick is here ..." (= the unfiled row 5577/1 on E471's
+  page) -- after E471's "nothing heard from Kilpatrick up to 1 PM today", and received in Washington next morning, which fits E471's cable break. Phrase
+  grep "cable is repaired", "send no ciphers", "nothing heard from Kilpatrick" 0.
+- E474: not printed. OR I/42 pt 3 prints the fleet's departure only from the Confederate side (pp.1278-1279: "The fleet left Old Point Friday
+  for Wilmington", Whiting, 18 Dec), not Ingalls's question; phrase grep "Butler's fleet left", "has the fleet left", "fleet left yet" 0 in Union correspondence.
+- E443: not printed. OR I/42 pt 3 p.1153 (Whiting, Confederate, Wilmington): "I have late reports from New Berne. Yellow fever violent there and at
+  Beaufort and Morehead City" -- the epidemic E443 reports. Phrase grep "yellow fever is prevailing", "notify you at once" (3 hits, other contexts), "McDougall"
+  occurs in OR I/32 pts 2-3, I/34 pt 3, I/46 pts 1 and 3 and ORN I/9 (counts only, all other dates by volume; not this telegram).
+- E445: not printed. "with his instruments" hits only Baker 1867, Plum vol. II (Vicksburg) and O'Brien 1910 (Huyck, June 1864); "City of Hudson" only O'Brien
+  1910 (1865 diary) and OR I/40 pt 3; "Mr. Baird" 0 in ORN I/11 and Butler V for Dec 1864.
+- E446: not printed. **ORN ser. I vol. 9 p.527**: the capture of the army tug Titan, information "gained from William H. Dunn, the telegraph operator at
+  Cherrystone at the time of the occurrence, on Saturday morning, March 5" (1864) -- the event that makes Butler ask, a week later, who the Cherrystone
+  operator is. Plum, Military Telegraph vol. II, lists "W. A. Dunn" among the operators of the Maryland line to Cherrystone; OR I/40 pt 3 (July 1864)
+  prints a telegram signed "W. A. Dunn, S. C. Burns, Operators" at Cherrystone. The telegram itself: phrase grep "W. A. Dunn formerly", "American office"
+  0.
+- E448: not printed. Bates 1907 and Plum vol. II name W. J. Dealy as operator at Fort Monroe; "Secretary of War on board" hits only Seward 1891 (1862
+  context, rejected). The companion 5793/2 (above) gives the facts behind E448's code words in clear in the holder's transcription.
+- **Grant Papers** (Google Books, 15 queries, control hit): no snippet from vols. 13-14 for any of the eight others. Butler Corr. V by phrase: E468 only.
+- **IA be-api whole collection** (control '"Suwo Nada"' in OR I/46 pt 2 = hit): '"Saugus" "will start down" Colhoun' 0, '"send no ciphers till"' 0,
+  '"has General Butler's fleet left"' 0 (after one 502 and one retry), '"yellow fever is prevailing to considerable extent at"' 0 (same), '"have him sent
+  here with his instruments"' 0, '"Dunn formerly employed"' 5 (1900-07 newspapers and trade journals, other men, rejected), '"don't fail to be at the
+  wharf"' 0 (same).
+- **Unreachable / not searched:** OR I/42 pts 1-2 by phrase only where cached (pt 2 cached, pt 1 not), I/43, NARA RG 107 (telegrams), RG 92, RG 45; Grant
+  Papers vol. 12 (Aug-Nov 1864) beyond the Google Books snippets; Chronicling America and the IA newspapers (no press dispatch among the nine); JSTOR;
+  aaymeloglu/unsolved-ciphers (no cache).
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+Key collisions found by look-up in key.md (`fv_l16e_keylook.out`; a plain word on the page that is also a code or indicator word): those tokens are
+**plain**, not H, and the readers' H counts include some of them. "Grade" counts code-word groups (time words included, as the readers count them);
+"body" code words exclude the address, date, time and signature, as D2V-E74 counted for E74/E81-E84.
+- **E447:** "Cole hound" = **E. R. Colhoun**, Commander of the Saugus (holder 5824 "E. are Colhoun"; ORN I/11 pp.145-147 "Edmd. R. Colhoun, Commander"):
+  plain name, the reader's M for "E. R. Cole" and for "hound" can go; "polkaer" = Command-er, H. "early delight" = early daylight (plain-phonetic, the
+  reader's sense; the derived block leaves it plain, rightly). Pledge = 6, Spoons = Miles, black = City Point, Rosetta = 9.30 PM, Niagara = D. D. Porter,
+  unity = period, wrangle = telegram, whelp = tomorrow, youth = signature, Sarah = 11 PM: H. **H 11 of 11**; body code words 6.
+- **E471:** plunge = 1, Pembroke = Cipher, Wedge = today, unity/zodiac = period, penfields = Ciphers, Harriet = 1 PM, Wharf = today: H. "repaired",
+  "nothing", "kill" are line-indicator words of the No. 1 book read as plain, rightly. "kill pat trick" = Kilpatrick (plain-phonetic). **H 8 of 8**; body
+  code words 5 (1, Cipher, today, Ciphers, today).
+- **E474:** "paradise arsey webster chief vincent" = **Colonel R. C. Webster, chief Quartermaster**: "webster" here is the addressee's name (E278 on the
+  same page is signed by him; holder 7682 "Col R. C. Webster"), **plain, not [Signature]**; arsey = R. C. (plain-phonetic). paradise = Colonel, vincent =
+  Quartermaster, Knox = Maj Gen B. F. Butler, stomach = Left, youth = signature: H. "Frances fever" (= [New York]'s [13]) does not read: **M x2** (as the
+  reader). **H 5 + M 2 of 7** (reader H 8, less "webster"). Body code words 2 (Butler, Left); stomach = Left reads again in Webster's reply E278 ("most of
+  the fleet [left] during last night").
+- **E470:** Deborah = 8 AM, Niagara = D. D. Porter, zebra/zodiac = period, wrangle = telegram, pebble = 3, walrus = signature, polkaer = Command-er: H, and
+  C in sense against ORN I/11 p.116 ("Your telegraphic dispatch", "the three monitors", "Wm. A. Parker, Commanding Fifth Division"). "park Kerr" = **Parker**
+  (plain): the reader's M on the signature can go. Monitor names plain. **H 8 of 8.**
+- **E468:** printed; every code word **C**: Knox (interlinear "For Knox") = Butler, Elizabeth = 10.30 AM, animal = Monroe, whelp = to-morrow, sugar = ?,
+  Imogene = 3 PM, youth = signature, John = Grant. "Alday" = **all day** (plain; Butler V and Grant Papers "all day tomorrow"), "beat" = be at
+  (plain-phonetic), "meat" = meet, "admire all" = admiral (plain-phonetic); "Monday miller" stands for the printed "Will you" and is unexplained by the key
+  (**M**, plain words or an arbitrary/blind pair); "about" after "John" is unexplained (M, a check or blind word). **C 8 of 8 code words** (+ 2 M plain
+  groups). The header's summary "[if so] I will meet you [at Monroe] tomorrow at 10.30 AM and the Admiral there at 3 PM" misplaces the hour: 10.30 AM is
+  the time of sending (print "10.30 a.m."); the sender is Grant (Beckwith is the City Point operator).
+- **E443:** "John" in "John Horner New York" is the addressee's first name (John Horner, operator at New York, Plum vol. II), **plain, not [Maj Genl U.S.
+  Grant]**; **"fever" in "Yell oh fever" is plain** (yellow fever; E280 on the same page writes "fever" plain three times), not [13]; "McClellan" is the
+  signer's name (E. McClellan), plain, not a blind word. Appian = Monroe, fanny = 11 AM, plug = 1, france = New York, zodiac = period, flora = Newbern: H.
+  **H 6 of 6** (reader H 8, less 2 plain). Body code word 1 (Newbern); the body is otherwise clear on the page.
+- **E445:** Libby = 6 PM, Niagara = D. D. Porter, zebra = period, whelp = tomorrow, pedlar x2 = comma: H; Knave = Maj Gen B. F. Butler in the sign-off
+  position of a Butler's-headquarters telegram: **M** (as the reader). "appear" is a line-indicator word read as plain; "sly", "furies" and "Hendron" (as
+  written; the City of Hudson, the regular Norfolk-Fort Monroe steamer, is a guess) unread: M. **H 6 + M 1 of 7 code-word groups**; body code word 1
+  (tomorrow).
+- **E446:** **"Cherry" in "Cherry Stone" is plain** (Cherrystone), not [Humboldt]: the reader flagged it M, it is a collision; "Dunn" (blind word) and
+  "answer" (line indicator) plain. Knox = Butler, Stephen = In the, Banditti = Baltimore: H. **H 3 of 3** (reader H 4, less Cherry). Body code words 3.
+- **E448:** "Washington" in the date line is plain (= Volunteer by collision); **"wharf" is plain ("be at wharf"), not [Today]** -- the reader's M can be
+  resolved; "board" and "Bates" (blind words) plain: on board, D. H. Bates. grapes = Washington, brutus = Secretary of War: H, both read in clear in the
+  companion 5793/2 ("the secret airy of war Edwin M S. left Washington ... on board the man hattan"). **H 2 of 2** (reader H 3, less "wharf"). Body code
+  words 2.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E468 | **N1** | period, text known | D3 (C 8/8 against the print; D4 not claimed: two plain groups unexplained, no fresh rule-7 re-derivation) | **printed: OR ser. I vol. 42 pt 3 p.735; Butler Corr. vol. V p.369; Grant Papers vol. 13** (Grant to Butler, City Point, 28 Nov 1864 10.30 a.m.; Grant Papers cites the sent original as CSmH) |
+| E470 | **N2** (the substance is printed in Parker's letter of the same day, ORN I/11 p.116; this telegram's text is not) | period | D2 (H 8/8; external: ORN I/11 p.116) | E539 precedent (AUD2-LEDGER15-4): substance in another document of the same day |
+| E447 | **N3** | period | **D3** (H 11/11, body 6; external: holder 5824 = E185, Porter's order to Colhoun to come down to Hampton Roads; ORN I/11 p.194 Nichols 15 Dec, the Saugus afloat and on her way to the roads) | no prior plaintext or decipherment located |
+| E471 | **N3** | period | **D2** (H 8/8, body 5: Pembroke/penfields = Cipher in two contexts; external: OR I/33 p.197 Butler's 8 p.m. telegram of the same day, Kilpatrick arrived, received in Washington next morning) | no prior plaintext or decipherment located |
+| E474 | **N3** | period | **D2** (H 5 + M 2 of 7; body 2; stomach = Left reads again in E278, Webster's reply on the same page) | no prior plaintext or decipherment located |
+| E443 | **N3** (weak: the body is clear on the page except Newbern; on the D2V-E74 line it would be N1, but the 10 Oct ruling for mssEC 25 needs print, a clear copy at another pointer or a decipherment for N1) | period | **D1** (H 6/6 but one body code word: no clause from the key; external: OR I/42 pt 3 p.1153, yellow fever at New Berne) | no prior plaintext or decipherment located |
+| E445 | **N3** (weak, same reason) | period | **D1** (H 6 + M 1 of 7; one body code word; sly, furies, Hendron unread) | no prior plaintext or decipherment located |
+| E446 | **N3** (weak: three body code words) | period | **D1** (H 3/3: Butler, in the, Baltimore -- too short for a clause past the authentication distance; external: ORN I/9 p.527 William H. Dunn, Cherrystone operator, 5 Mar 1864; Plum vol. II and OR I/40 pt 3, W. A. Dunn at Cherrystone) | no prior plaintext or decipherment located |
+| E448 | **N3** (weak: two body code words, both in clear in the companion 5793/2) | period | **D1** (H 2/2; no clause from the key) | no prior plaintext or decipherment located |
+
+- Not N4 for any N3: Grant Papers vols. 12-13 searched by Google Books snippets only, NARA RG 107/92/45 unread, OR read in OCR, OR I/42 pt 1 not on disk.
+- D2+ clause check (rule 4a, depth bar): E447 has a contiguous code stretch past the authentication distance ("[6] [Miles] above [City Point] ... [telegram]
+  just received; will start down at early daylight [tomorrow]") with values that read passim (Black = City Point, Niagara = Porter, Whelp = tomorrow);
+  E471 and E474 carry their clause on a code value that reads in a second context (Pembroke/penfields; stomach in E278) plus an external check. E443,
+  E445, E446, E448 are **too short for a clause** (one to three body code words): D1, as the brief foresaw for E446 and E448.
+- **Safe sentences** ("Read at grade H with War Department Cipher No. 1 ...; not located in the Official Records ser. I vols. 33 and 42 pt 3, ORN ser. I
+  vols. 9 and 11, Butler's correspondence vol. V, Plum's Military Telegraph vol. II, J. E. O'Brien's Telegraphing in Battle, Google Books, Internet
+  Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026)"): E447: "on 10 Dec 1864 Commander E. R. Colhoun of the monitor
+  Saugus, six miles above City Point, told Admiral Porter through City Point and Fort Monroe that his telegram was just received and that he would start
+  down at early daylight tomorrow." E471: "on 3 Mar 1864 Sheldon at Fort Monroe told Eckert that the No. 1 cipher had been received that day, asked him to
+  send no ciphers until the cable was repaired, and reported nothing heard from Kilpatrick up to 1 PM." E474: "on 13 Dec 1864 Brig. Gen. Ingalls at City
+  Point asked Col. R. C. Webster, chief quartermaster at Fort Monroe, whether General Butler's fleet had left yet." E443: "on 1 Oct 1864 Fort Monroe told
+  Surgeon Charles McDougall, through John Horner at New York, that yellow fever was prevailing to a considerable extent at New Berne, N.C." E445: "on 6 Dec
+  1864 Butler's headquarters told Admiral Porter through Fort Monroe that a Mr Baird would arrive the next morning and asked that he be sent on with his
+  instruments." E446: "on 12 Mar 1864 Sheldon told Eckert that General Butler wished to know whether the operator at Cherrystone was the W. A. Dunn formerly
+  employed in the American office at Baltimore." E448: "on 15 Oct 1864 Eckert told Dealy at Fort Monroe to be at the wharf when the Manhattan arrived from
+  Washington with the Secretary of War on board, and not to mention his coming." E468 (N1): "Grant's telegram of 28 Nov 1864 10.30 a.m. to Butler is
+  printed in OR ser. I vol. 42 pt 3 p.735, Butler's correspondence vol. V p.369 and the Grant Papers vol. 13; this ledger row is its received cipher copy
+  at Fort Monroe, read with Cipher No. 1, every code word agreeing with the print." E470 (N2): "Parker's report of 1 Dec 1864 that the monitors Mahopac,
+  Canonicus and Saugus were ready is printed as his letter in ORN ser. I vol. 11 p.116; this ledger row is the telegram, in other words, read with Cipher
+  No. 1." Depth sentences = the N3 clauses without the search tail.
+- **Unsafe:** any "first", "new", "unpublished" for any of the nine; any N3 wording for E468 or E470; "Cole hound" as a name or "hound" as a code word in
+  E447; "[Signature]" for Webster in E474; "[Maj Genl U.S. Grant]" or "[13]" in E443; "[Humboldt]" in E446; "[Today]" for wharf in E448; "I will meet you
+  tomorrow at 10.30 AM" in E468.
+
+### 5. Fixes for the next FIX job (not applied here; reading.md is decode.py output)
+E447: signature "E. R. Colhoun, Commander" (plain name, "Cole hound" = Colhoun; holder 5824); header: drop "E. R. Cole" and the M's; add E185 (5824) as the
+antecedent and ORN I/11 p.194; image-read by FV-L16e. E471: header may add OR I/33 p.197 (Butler's 8 p.m. telegram, = unfiled row 5577/1) as context;
+image-read by FV-L16e. **E474: "webster" plain (Col. R. C. Webster), not [Signature]**; "Frances fever" M; header unchanged otherwise. **E470: class N2 --
+header: signature "Commander [Wm. A.] Parker" plain, drop M; cite ORN I/11 p.116.** **E468: class N1 -- header: "Grant to Butler, 10.30 AM: will you be
+at Fort Monroe all day tomorrow? If so I will meet you and the Admiral there at 3 PM" (Beckwith operator); "Alday" plain = all day, "beat" = be at;
+"Monday miller", "about" M; cite OR I/42 pt 3 p.735, Butler Corr. V p.369, Grant Papers vol. 13.** **E443: "John" plain (John Horner), not [Maj Genl U.S.
+Grant]; "fever" plain, not [13]; header: drop "the address Maj Genl Grant (an address-line artefact, M)" and "13 for fever".** E445: Knave M stays; "Hendron"
+as written (image, FV-L16e). **E446: "Cherry" plain (Cherrystone), not [Humboldt]**; cite ORN I/9 p.527 (Titan, William H. Dunn) as context. **E448:
+"wharf" plain, not [Today]**; "Washington" in the date line plain; cite the companion 5793/2. All nine: header may say "image-read by FV-L16e, matches
+the transcription". Unfiled rows (one-line suggestions, NOTES): 5577/1 (printed OR I/33 p.197, known text), 5793/2 (clear on the page, E448's companion).
+Requests: hdl.huntington.org 37 (28 CONTENTdm queries incl. control, 9 IIIF pages; one take 15:13-15:2x UTC, all 200); www.googleapis.com 15, 1.6 s apart,
+all 200; be-api.us.archive.org 11, 1.8 s apart (3 x 502, one retry each, answered); archive.org 0 (every volume read from the cache on disk).
+For LANE LEDGER-16 (account 1).
