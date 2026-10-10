@@ -139,9 +139,8 @@
     10328
    ],
    "role": "Downing sheet second copy (fetch only, not read)",
-   "committed": "images/IMG_R4895_I28457_P2.jpg",
-   "committed_note": "re-encoded JPEG q45 at native size (folder kept under 30 MB); fetch only, not read",
-   "committed_bytes": 2779118
+   "committed": null,
+   "committed_note": "not committed (folder 30 MB rule, after the R4890 crops); re-fetch from url with one DECODE browser login"
   },
   {
    "record": "R4895",
@@ -155,9 +154,8 @@
     10328
    ],
    "role": "Downing sheet second copy (fetch only, not read)",
-   "committed": "images/IMG_R4895_I28457_P3.jpg",
-   "committed_note": "re-encoded JPEG q45 at native size (folder kept under 30 MB); fetch only, not read",
-   "committed_bytes": 4065370
+   "committed": null,
+   "committed_note": "not committed (folder 30 MB rule, after the R4890 crops); re-fetch from url with one DECODE browser login"
   }
  ]
 }
