@@ -13539,3 +13539,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 01:08 | FV-MS18o worker (account 1, Opus, first verifier) | hdl take (01:0x UTC 10 Oct by date -u): 2 IIIF 2400 px (9820, 9258) for the eye check; for LANE LEDGER (account 1)
 2026-10-10 01:09 | FV-MS18o worker (account 1, Opus, first verifier) | hdl release (01:0x UTC 10 Oct by date -u): 2 requests (IIIF), session total 15; for LANE LEDGER (account 1)
 2026-10-10 01:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 01:09 UTC: spawned 0 (), queued left 0
+2026-10-10 01:10 | FV-MS18n worker (account 1, Opus, first verifier) | hdl take (01:1x UTC 10 Oct by date -u): <=20 CONTENTdm requests at 3.3 s (9 CISOSEARCHALL, <=8 item info, 3 IIIF 2400 px 9842 9673 10061); for LANE LEDGER (account 1)
