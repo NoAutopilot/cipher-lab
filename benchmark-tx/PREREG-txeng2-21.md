@@ -316,3 +316,18 @@ number comes from a new confirm item"); nothing for the lane to add. F79 adopted
 as published; no re-cut planned; minutes per 100 recorded per hand with its version). F80 adopted: dated note in txeng2/sheetviv/RESULTS.md
 citing c29543f04 (02:54:18) as SHEET-VIV's PREREG push. F81 is the orchestrator's successor prompt; the reader-display check (F14 shape) goes
 into the next reader brief as a confirmation the reader gives, not a rule it is told -- noted for SHEET-VIV-C's successor briefs.
+
+## SHEET-VIV-C result (lane, dated 03:5x UTC 10 Oct by date -u; TXE2-SHEETVIVC session_01Ca32sSF3hYD6TLqMsyeyjb, 15.44 D, done 03:52)
+**The sheet-form effect STANDS (on edits only; line level p 0.2632, not < 0.05); NOT "not distinguishable from run spread".** passZ_tl (text
+list + [PLAIN:]) 0.128 (87/679) flagged-excluded, SER 0.127 (S 32 D 6 I 48), visual-ID 0.125; as measured 0.272. Pairing 1 vs passZ_sv
+(pictured): lines improved 7 / worsened 13 / tied 16, p 0.2632; edits 58 -> 86 (condition 1: 86 >= 73 met; condition 2: 13 > 7 met, p not
+< 0.05 -> "stands on edits only"); McNemar 7 / 16 p 0.093. Pairing 2 vs passZ_dv1 (two text-list runs): lines 12 / 11 / 13, p 1.0; edits
+80 -> 86; McNemar 18 / 13 p 0.47. Spread test: |86 - 80| = 6 vs |58 - 86| = 28, not met. The [PLAIN:] confound reads small (80 -> 86 edits,
+insertions 41 -> 49), so SHEET-VIV's insertion fall (41 -> 31) goes with the pictured sheet on this one replicate. Agreement 90.6% (higher than
+the pictured arm's 89.8% at lower accuracy: agreement is not accuracy). 10 Opus reads, 11 Sonnet packets, 174/176 rows viewed (2 L19 rows not
+located, conf L), crops 88/88 by log, 3 checker OUTSIDE flags adjudicated as the reader's own writes, 0 files outside the named set.
+passZ_tl 6012cc631 sha256 8c8948ae864d881c176c0c6380a7b10dae363cc30b01a3e3744fc18511425ec7; RESULTS adcd7f0fe. **Licenses** (as declared): a
+sheet-form recommendation for THIS hand (the folder's reader brief uses the pictured sheet from here; a dev finding) and the second-hand
+PREREG (two runs per arm on a leaf of another hand with a drawn key). Never S1, never any f.103r step. The line-level test's power at 36 lines
+is the open measurement problem (TX-RED checklist (e)): three runs on this leaf gave p 0.15 / 0.26 / 1.0 while edits moved 80 / 58 / 86 --
+the second-hand PREREG quotes it and declares an edit-total endpoint with a paired line bootstrap beside the sign test. Openings: eval 0, dev 1.

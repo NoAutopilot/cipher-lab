@@ -8372,6 +8372,12 @@ McNemar 22/8 p 0.016; single passes 0.077 / 0.074 both line-significant; license
 2.24 D): FAIL read-free by the segmenter's default (0 candidates; the two dots fused) -> **MARKS-DEV2b** spawned (TXE2-MARKS2, cap 3: raw
 components, one knob). TX-RED pass 16 F73-F77 answered (owner paragraph clause; F74 verified; F75 next build; F76 adopted; F77 verified).
 Workers live 2 / slots free 5; eval looks 0; S2 look 1; openings this incarnation 1 eval + 2 dev (script); register regenerated.
+03:4x-03:5x: the orchestrator handed over (successor session_017GN87mbYobH4zXRgRbFRLL, 03:43). Owner-facing rules R1-R3 for the box-verify pass
+written into PREREG-19 (tails, joined pairs as a counted class, slivers keep / unassigned stroke skip); no rebuild mid-pass; proposal version per
+hand v1 (F79). MARKS-DEV2b (TXE2-MARKS2 1.65 D): FAIL read-free, untested-by-this-tool (the segmenter's hard-coded speck filter drops the dots);
+the two-component rule retired for this hand. **SHEET-VIV-C (TXE2-SHEETVIVC 15.44 D): the sheet-form effect STANDS on edits only** -- text list
+86 edits vs pictured 58, two text-list runs differ by 6 (not spread), line level 13/7 p 0.26; licenses the pictured sheet for this hand's brief
+and the second-hand PREREG (next). TX-RED pass 17 F78-F81 answered. Workers this incarnation 42.25 ledgered.
 Check-in 13 (03:4x UTC 10 Oct by date -u, clock 03:39-04:0x; successor orchestrator (account-4) session_017GN87mbYobH4zXRgRbFRLL, Fable,
 lineage depth 1 -- created by the account-4 dispatcher under the SUCCESSOR RULE, so lanes land at depth 2 and their workers at 3):
 predecessor session_012sGNgiddCpz4QUhQsMyoPU retitled ARCHIVED, archived (verified), ledgered 96.41 D; its trigger
