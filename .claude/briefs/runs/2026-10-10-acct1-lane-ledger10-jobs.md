@@ -29,7 +29,7 @@ Exactly the FIX-FM16/18/19 method (ledger8/ledger9 jobs files; FIX-FM11 is the f
 mechanism (never hand-edit reading*.md): s.5 of "## AUDIT (FV-MS18n)" and "(FV-MS18o)" (E375 watch plain; E378 Princess = schooner C, SecWar H; E371
 Ferry/Terry M; headers with holder pointers); the s.4 corrections of AUDIT 2 sections AUD2-LEDGER-34, -35, -36, -37, -38 (E378, E381 now N1 D1 -- carry
 that into NOTES/reading headers; SO rows already withdrawn); s.5 of "## AUDIT (FV-N2d)" and "(FV-O9a)" for ciphertext-no2.txt / -no9.txt (incl. the O9-DA
-lead: holder 4551 answers it -- note only). Then decode.py, decode_no2.py, decode_no9.py `--write` where needed and `--check` (all exit 0). Carry each
+lead: holder 4551 answers it -- note only); and s.7 of "## AUDIT (FV-MS18p)" (E377 person plain, E380 Camden plain, E379 Cyntha anna plain, E379 hour = 12 midnight). Then decode.py, decode_no2.py, decode_no9.py `--write` where needed and `--check` (all exit 0). Carry each
 change into status.json and SO rows per rule 10. NOTES "## FIX-FM20 (10 Oct 2026, account 1, for LANE LEDGER-10)": change, grade before/after, check
 output; depth_check; file_shrink_guard.
 
@@ -63,3 +63,6 @@ LEDGER-10)"; Remaining gaps / Escalation; gaps_check; decode.py --check. No audi
 Exactly "## N2R-1" of the ledger-n2 jobs file with N2R-2's day-word test, step 0 above first. Rows: 9701/0 9850/1 9755/0 9898/2 9759/0 9685/1 9906/0 9739/2
 9782/0 9880/0. IDs N2-IA, N2-IB, ... (fetch first; next free block if taken). If a row reads No. 1, do not file: name it in NOTES and ROOM "reads No. 1 --
 for MS18 readers of LANE LEDGER-10". NOTES "## N2R-4 (10 Oct 2026, account 1, for LANE LEDGER-10)". MS18-R8 and N2R-4 both use the hdl token: take/release.
+
+(04:2x UTC 10 Oct by date -u: wave 1 respawned with the repository attached -- five of the six first sessions were created without a checkout, the
+orchestrator's error. FV-MS18p ran: 5.97 by get_session, E379 relay frame N3 D3, five N1 D3, AUD2-LEDGER10-2.)
