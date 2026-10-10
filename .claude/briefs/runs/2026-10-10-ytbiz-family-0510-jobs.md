@@ -147,3 +147,18 @@ image committed. Read ONLY NOTES "## OBRED-6016", "## OBRED-S1" and the gaps. NO
 <= 12 more requests): for each of inv. 6017-6024 ("Liassen Agent Brederode", 1.01.02, 1614-1637) and the 1605 Swiss-mission dossier (find its
 invnr in the 1.01.02 EAD on disk or one catalogue request), record digitised y/n, METS id and scan count from the item page's embedded
 drupal-settings-json (CLAUDE.md host table) -- a table `nl_brederode_lias.tsv`, no image fetches. Report counts and every hit.
+
+## Wave 5 result (07:5x UTC)
+OBRED-S2 (2.02): inv. 6016 orders 351-624, 182 scans, controls 57/57: no numeral block; all 624 scans of 6016 now looked at -- scan 187 is the only
+cipher text besides no. 92's original (Holland 2613, elsewhere). nl_brederode_lias.tsv: 6017-6024 all digitised (4,826 scans, METS ids on file);
+Swiss dossier 12569.38 not digitised.
+
+## Wave 6 (08:1x UTC 10 Oct)
+
+### OBRED-S3 (Sonnet, cap 3, box 100 min, NA <= 205 requests): inv. 6017 (1614-1617), stride-3 sheet screen
+Same sheet method and three controls as OBRED-S1 (CTRL-CIPHER, CTRL-PLAIN, CTRL-PS from scan 187), METS from nl_brederode_lias.tsv (row 6017,
+1 request), IIIF 400 px for scans 1, 4, ..., 583 (195 requests, >= 2.0 s, NA take/release), <= 8 re-looks at 1200 px where a numeral run,
+table or gloss shows. Output `images/6017_screen.tsv`. For each numeral hit: docket/date/sender (M), the 1200 px image committed, and a by-eye
+list of up to 20 legible values (M) so the lane can decide on an OBRED-187-style transcription + overlap test; do not transcribe or test.
+Read ONLY NOTES "## OBRED-S1", "## OBRED-S2" and the gaps. NOTES "## OBRED-S3", gaps updated, gaps_check. Report counts and every hit; where
+it was not found (every third scan only).
