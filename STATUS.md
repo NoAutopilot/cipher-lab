@@ -8266,3 +8266,25 @@ trig_017AmCfxWB82wt4gwHVVToVB and archives this session; incarnation 5 ledgers i
 final registration on L74 (then the box-proposal worker); DET-RELEASED behind the oracle boxes; the Groen-flags verifier pass on the
 closing stretch (a PREREG with a verifier, flags only through the build's flag column); RE103b optional; the segmentation instrument
 after the oracle run; external [SO-TX-EXP] rows as they land.
+
+### Incarnation 5 (session_01ERAcUeCn1HuAUASaqBTzcf, from 02:00 UTC 10 Oct 2026 by date -u; lineage depth 6, created by the orchestrator from its own session; send_later works, check-ins 30-45 min)
+02:0x-02:1x: hand-over read (STATUS Incarnation 4, PREREG-19/20, Amendment 9 (29)-(47), TX-RED pass 14, the outside review); ROOM claim 535c929cb. PREREG-txeng2-21
+(8212de547, 02:11:19; register --check OK): **WIT-FLAGS** -- TXV-GROEN session_01BxDzNbsyn3pYZ5xaRnAw9j (Opus 5.5, cap 6, box 60): a verifier pass on
+the f.103r closing stretch's clerk-split flags against Groen's clerk-independent text (dec_norm 8937-9459), ceiling + selection-fair shuffled-null
+controls BEFORE any flag, INFORMATIVE / NON-TEST gate declared, CONFIRM clears the automatic clerk-split flag only (never an align-conflict), a NEW
+item vivonne1573-f103r-confirm2-w through build_vivonne_confirm2.py --witness (old truth kept; truth/plain byte-identical); the lane then re-scores
+passZ_S2b ONCE under the new mask beside the record 0.150 / 0.296 and CA-S2 (a corrected audit, never a second look; the truth of record stays
+confirm2; the mask of record for any later comparison is the orchestrator's decision before any such comparison). **OL1-BOXES** -- TXE2-OL1BOXES
+session_01ALSUNe5oFQU9kqKJMmYXYW (Opus 5.5, cap 5, box 60): machine-proposed boxes, reading order, Okabe-Ito blind overlays with the unmarked crop
+beside, and the owner's blind sorter page (one neutral pile, no value/label/guess) on the 35 manifest lines (sha256 978322f6, never re-sampled),
+read-free, counts compared to nothing -- run BEFORE L74 because L74's own text asks the owner to verify machine-proposed boxes (the first-jobs
+list's order reversed; said in PREREG-21, ROOM and to the orchestrator); the orchestrator publishes the page when it lands. **END-CIPHER** (F69,
+in-session, read-free): committed L36-L37 decoded (72 keyed letters) vs Groen's passage ratio 0.417 at the null's p95 (max 0.444), window 18
+letters from the passage's end; vs dec_norm's tail margin 0.056 at the end -- NOT ANCHORED by its gate, untestable at 72 letters by this method,
+the cipher side of the end anchor stays untested. F68 numbered (PREREG-20/21), F69 adopted (ideas register pass-14 rows). Register 143 rows.
+State: eval pool 29; dev 37 + dev2 84; gate p < 0.05 at >= 24; eval looks 0; S2 look 1 (record 0.150 / 0.296; CA-S2 0.150 / 0.296, SER 0.134 /
+0.288 beside; sensitivity check untested; RE103 closed); openings this incarnation 0 so far (WIT-FLAGS will add 2); workers live 2 / slots free 5
+(no further runnable row: DET-RELEASED behind the oracle boxes, the segmentation instrument behind the oracle run, Gallica on L75 with a cloud
+re-probe not before 11 Oct 00:00 UTC, RE103b optional and not re-declared); no [SO-TX-EXP-*] PR open; red-team findings open: none (F65 the
+orchestrator's, done 02:03). Owner-side with the orchestrator: L74 (after the box proposals land), L75, the 17 Spinelli feed tiles, the 20-tile
+sorter session.
