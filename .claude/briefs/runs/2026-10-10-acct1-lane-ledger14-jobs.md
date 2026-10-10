@@ -79,3 +79,34 @@ step 0 information only. A citation that does not hold moves the entry to the fu
 Held for wave 3: FIX-L14 (Sonnet, apply the three audits' s.5 through decode.py's entry-note mechanism); readers' unfiled print rows need nothing.
 
 (10:2x UTC 10 Oct by date -u: wave 2 spawned with source_url: FV-L14a session_01T1tzkPQSNFYkrTDHvSj2Xs, FV-L14b session_01KdvrGyY4Dci2Pr5Eg2QBpX, FV-L14c session_016xotCHKtD6jCnB5jsuVJCk.)
+
+---
+
+# Wave 3 (written 10 Oct 2026 11:2x UTC by date -u; lane workers 21.26 by get_session)
+Wave 2 by get_session: FV-L14a 5.35 (E601 E603 N1 D3 in OR I/43 pt 1; E604 msg 1 N1, msg 2 N3 D1; E600 E602 N3 D2; AUD2-LEDGER14-1), FV-L14b 6.87 (N2-SA N1;
+E611 E612 N3 D2, E620 E621 N3 D3; AUD2-LEDGER14-2), FV-L14c 3.43 (E610 E613-E617 all N1 D3; E617 date settled 14 Mar 1864).
+FV-L14a flag (ROOM 10:49): the readers' print cache labels IA `warofrebellion431unit` as OR I/43 pt 1, but its title page is I/47 pt 2; I/43 pt 1 (Aug-Sept
+1864, Shenandoah) was never searched under that label, and two of five "not located" rows were printed there. Other unlabelled files (`013404rootrich`,
+`0207rootrich`, `33unit`, `423unit`) show no title in ms18/fv_l14a_voltitles.txt. eckert-1862/ec18/or_volumes.tsv uses `warofrebellion431unit_0` for 43.1.
+
+## FIX-L14 (Sonnet 5.5; cap $2.5, box 70 min, no network)
+Exactly FIX-FM20's method (as FIX-FM23 in the ledger12 jobs file): apply s.5 (or the corrections section each names) of AUDIT.md "## AUDIT (FV-L14a)",
+"(FV-L14b)", "(FV-L14c)" through the decode scripts' entry-note mechanism (never hand-edit reading*.md): E600 time 11 AM, Kent = Burbridge, Tappan = Major,
+Fry plain, Laughters = Snickers, E617 date 14 Mar 1864 and the ledger/print variant note, the 9743 "them" slip, header/addressee fixes, readers' NOTES
+verdict lines updated to the audits' classes. decode x3 --write/--check exit 0; status.json/SO per rule 10 (the verifiers wrote the rows; check, do not
+duplicate); NOTES "## FIX-L14 (10 Oct 2026, account 1, for LANE LEDGER-14)"; depth_check; file_shrink_guard. Not N2-IC; no Fort Monroe entry.
+
+## OR-CACHE (Sonnet 5.5; cap $3, box 90 min; archive.org only, <= 60 requests, 1.5 s apart)
+(1) Find every place the eckert print checks get their OR volume list (grep `warofrebellion` ids in ciphers/eckert-1864/**/*.py, *.tsv, prior-work.tsv,
+eckert-1862/ec18/or_volumes.tsv, tools/data/prior_editions.tsv). (2) For each distinct IA id, read the title page from IA metadata (`/metadata/<id>`, title and
+volume fields) or the first 3,000 characters of `_djvu.txt`, and write `ciphers/eckert-1864/print/or_volume_map.tsv` (id, claimed volume where a file
+claims one, true series/volume/part, date range, source of the truth). List every id whose claim is wrong and every 1864-65 ser. I volume (32-49 all parts)
+with NO correct id in any list, and find the correct IA id for each missing one (advancedsearch, title "war of the rebellion" + volume). (3) For each
+volume that was mislabelled or missing, grep it (letters-only phrase, the readers' `ms18_l14b_print.py` method) for every eckert-1864 entry now graded
+N3 at first or second audit (status.json / AUDIT.md) whose date falls in that volume's range -- mssEC 18/19 entries and, report-only, Fort Monroe
+entries (LANE LEDGER-13's; do not edit them, list them in ROOM for LEDGER-13). Output `print/or_cache_hits.tsv` (entry, volume, page, shared run, hit
+text) with a shuffled-entry control count per volume. No grade change, no AUDIT edit: hits go to a verifier. NOTES "## OR-CACHE (10 Oct 2026, account 1,
+for LANE LEDGER-14)"; if the shared print-check scripts read a wrong mapping, fix the id in the script and say which. Report what was found and where it was
+not found.
+
+Held for wave 4: a first verifier (Opus) on OR-CACHE's hits (N3 -> N1 where the print holds); AUD2 rows already queued need nothing from this lane.
