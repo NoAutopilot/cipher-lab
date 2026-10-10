@@ -118,3 +118,23 @@ SO-THURLOE-BM44535 row in SECOND-OPINIONS-QUEUE.tsv and the folder's status.json
 depth class may stay D3 only if the tool says so); the AUD2-FAMILY-A2r-1 row's brief text if it quotes counts. (d) NOTES "## FIX-THURBM",
 Remaining gaps / Escalation / Verdict, gaps_check.py; file_shrink_guard on every touched file. No new class, no new search, no other target.
 Units: edits + checks ~1.5, floor ~0.5.
+
+## Wave 3 results (costs by get_session)
+- FIX-THURBM 1.09 / 2.5 (Sonnet): reading regenerated with clear rows (--check 0), code 123 = D. Gloucester, C 145 / M 6, depth_check D3 94.7%,
+  AUDIT revision + status.json + SO prompt propagated. Commit 4d134bc18.
+- AUD2-FAMILY-A2r-1 (account 1, session_01LDBjVgcwQMwVvtqqTLWpeM; ledgered by account 1): N3 confirmed (two audits), D3, key period; period key
+  sheet BL Add MS 4166 f.117 (DECODE R4897) transcribed to bm/key_period_f117.tsv: all 151 groups on it, all 145 letter groups = committed
+  values, 8 = b, 9 = b, 123 Duke of Glocester; recommends regrade to H at face value (not applied). Original Bodleian MS. Rawl. A. 51 f.238.
+  N4 owes Akkerman 2018 pp.222-223 + Marshall 2023 (LOCAL-QUEUE L77, filed by the lane orchestrator).
+
+## Wave 4 (16:2x UTC 10 Oct)
+
+### FIX-THURBM2 (Sonnet, cap 2, box 45 min, disk only): thurloe-printed l.44535 regrade against the period key sheet + rule 10 propagation
+Apply, and only apply, the regrade AUD2-FAMILY-A2r-1 recommends in AUDIT.md "## AUDIT 2" and NOTES (grep "AUD2-FAMILY-A2r-1"): groups whose
+value bm/key_period_f117.tsv states are graded H (read from a key source, rule 4) in bm/decode_44535.py; drop the code-8 row from the slip list
+(the sheet gives 8 = b, so "debts" is H); set key code 9 = b in bm/key_blankmarshall.tsv (and in key_blankmarshall_7.tsv if it disagrees, noting
+the witness); the encipherment-slip groups stay M where the sheet's value gives a non-word (they are the encipherer's slips, not key gaps); log
+135 (chsturat vs sheet Walker) and 113/173 Ormond as rule 4 data conflicts in HYPOTHESES.md if not already there. `--check` exit 0; new rule 4
+counts; tools/depth_check.py pasted; "## Revision after AUDIT (FIX-THURBM2, 10 Oct 2026; rule 10 propagation)" in AUDIT.md; status.json and
+the SO-THURLOE-BM44535 row updated if they quote counts or grades; NOTES "## FIX-THURBM2", Remaining gaps / Escalation / Verdict, gaps_check.py;
+file_shrink_guard on every touched file. No class change, no search, no other target. Units ~1, floor ~0.5.
