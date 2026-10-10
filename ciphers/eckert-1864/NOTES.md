@@ -6857,3 +6857,62 @@ Read so far: 2 of 11 undated rows filed (E622, E623); 4 clear copies and 3 print
 - [ ] image-check: E622 and E623 are transcription only; image check of 5616 and 5656 ~$0.3
 - [x] retry: n/a-no failed request
 Verdict: keep going: 3 internal gaps; cheapest next: 5658/0 telegram 2, ~$0.3
+
+## FM-S65A (10 Oct 2026, account 1, for LANE LEDGER-17)
+
+Eleven short 1865 rows of the Fort Monroe ledger (Huntington object 5952 = mssEC 25): 5845/2 5857/2 5858/2 5862/0 5862/2 5872/0 5872/1 5872/2 5874/1 5883/2 5892/0 (IDs E578-E588 fixed by row; E578 E579 E580 E584 E588 are not filed). Text: the volunteer transcription on disk (`sources/fortmonroe/p<pointer>.json`); no image was read (rule 2), so every reading and every negative here is conditional on the transcription. Book: No. 1 for all eleven (shares in `fortmonroe/fms65a_decode.out`; 5857/2 and 5872/1 had the highest No. 2 / near-tied shares but the sense of the decode decided, as in FM65-A; No. 2 and No. 9 give names and verbs that do not fit). All eleven were decoded on disk (book selection and reading, no network) before the holder queries, not after them as the brief orders; the holder query words below were chosen from the transcription and the No. 1 decode, so the queries are not independent of the decode.
+
+**Intake gate (16:5x UTC 10 Oct):** `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+**Prior-work step** (`tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=pointer 5862;date=1865-01-06;...' --step-type read --fetch`, run at 17:1x UTC, after the holder pass and not before it: late): exit 4, verdict step LEAD. The four LEAD rows are target-level live ROOM claims (FIX-L14, CLEAR-SWEEP, FIX-L17a, OR-CACHE2) that name the slug and no unit; none covers these pointers (own-work grep at the start: the eleven pointer/entry pairs appear in no NOTES, AUDIT, reading or fortmonroe/*.txt|tsv file; FM-S65B and FM-UND hold disjoint rows). UNCHECKED rows (Tomokiyo, solver repositories by unit; the tool has no folio key for a pointer) were not searched by hand either: unchecked, not clear; LOOK row (no leaf-gloss check recorded for the leaf) answered by the holder queries and the three dmGetItemInfo calls (7718 7741 8558). Civil-war adapter, by hand: holder CISOSEARCHALL (below), OR ser. I vols 46-47 by date + addressee and ORN on disk (below), Grant Papers 14 via be-api, O'Brien 1910 and Plum vol. 2 on disk, the press of the day not searched (unchecked).
+
+**Step 0 (`fms65a_step0.out`, information only; a non-test on mssEC 25, never a reason to file or to drop):** HIT on 9 of 11 under No. 1; MISS on 5872/2 (a 0.423 vs b 0.231, no HIT; window of 2 blocks) and 5883/2 (a 0.474 vs b 0.316, no HIT, window of 3 blocks). The same ledger's key-shuffle control (BOOK-FM65, STEP0-KEYCTL) shows these hits tie shuffled copies.
+
+**Holder layer (CISOSEARCHALL p16003coll11, all pointers; control 'Inspector difficulty Evidence Nashville' -> 9678; one take 17:0x UTC, 37 requests, all 200, 3.3 s apart; three queries per row, `fms65a_hdl.out`):**
+- 5892/0 -> **clear copy at pointer 8558 (Page 80, Washington clear telegram book)**: '430 AM 2d Fort Monroe, 1130 PM The President ---- Arrived at ten this evening ---- Richmond party not here ---- I remain here ---- sig Trouble north Seaford, Wm H Seward, Secy of State'. The cipher row is the relay of Seward's telegram to Lincoln ('Maj. Eckert, Washington', 1 Feb 1865); the decode reads it.
+- 5883/2 -> pointer 7718 (Page 60) is not a clear copy of this reply but its antecedent: J. W. Palmer, Br Gen Comdg Dist of NC, Ft Monroe 21 Jan 1865 1 pm to the Secretary of War, asking whether Grant, in Washington, wants to see him or whether he should wait at Monroe.
+- The 5892/0 query 'Seward Richmond party not here' also hit 7741 (Page 83, 2 Feb 1865 telegrams of Eckert and Seward): the next day's page, a different message.
+- 5845/2 queries hit only other cipher pointers (5823 5691 5708 5735 5743 5746 5824 5833 5591 5857 5731 5774) and 5872/1 and 5872/2 queries hit only their own pointer or neighbours (5845 5869 5872): no clear copy. All other rows 0 hits.
+- Not found: a holder clear copy for the other ten rows. This is a search result on 33 queries (3 per row), not a negative about the pages (the Washington clear books ~7680-7830 and 8500-8660 were not paged through).
+
+**Print (disk, letters-only phrase grep over 211 volumes, `fms65a_printcheck.out`, read again line by line below; be-api 12 requests, `fms65a_beapi.out`).** Volumes included OR ser. I vol. 46 pts 1-3 and vol. 47 pts 1 and 3 (`warofrebellion014602rootrich` is pt 2, `014703rootrich` pt 3), O'Brien 1910 (`telegraphinginba00obri`), Plum vol. 2, Butler's Correspondence V. Grant Papers 14 through be-api, 5 queries, 0 hits (one 502 not retried). Grant Papers 13 and Google Books were not used: vol. 13 ends 31 Dec 1864, before all eleven dates; ORN I/11-12 not searched (no IA OCR id on file): unchecked. Hit lines I rejected: 'all ready', 'I remain here', '1,200 men', 'Ord or', 'the end is not yet' (a May 1865 rhetoric in pt 3, not this message), 'I will leave an', 'General Butler on board' (vol. 40 pt 3, Dec 1864); 'to relieve General Foster' hits only Halleck's 6 Feb 1865 telegram (OR I/46 pt 2) and older volumes, and 'either would be good' only Grant's 21 Feb 1865 West Virginia telegram.
+- **5857/2 is in print: OR I/46 pt 2 p.38, 'War Department, Washington City, January 5, 1865 -- 12.30 p. m. Lieutenant-General Grant, Fortress Monroe: Your instructions will be given to Sheridan. I expect to leave here this afternoon for Fortress Monroe, and thence to Savannah with Collector Draper. Edwin M. Stanton' (page from the running headers 37 and 39 around it; OCR header, a verifier should confirm). The row (City Point 5 Jan, Sheldon relaying Stanton, 'collect or drake' = Collector Draper, 'per webster') reads it word for word.
+- **5892/0 is in print: OR I/46 pt 2 p.510 (OCR header '511' follows), 'Fort Monroe, Va., February 1, 1865 -- 11.30 p. m. The President of the United States: Arrived at 10 this evening. Richmond party not here. I remain here. William H. Seward.'**
+
+| row | ID | per-row line |
+|---|---|---|
+| 5845/2 | E578 | **too short**: 17 cipher words, 'All ready' plus O'Brien / Webster / Sheldon signatures; the key words (Butler, Colonel, Quartermaster) are guesses under a shuffle that gives equally nonsensical names; no clause above the authentication distance; no clear copy; not in print |
+| 5857/2 | E579 | **in print (OR I/46 pt 2 p.38)**, Stanton to Grant 5 Jan 1865 12.30 p.m.; not filed; the decode (Grant, Sheridan, Monroe, Savannah, Secretary of War) is the printed text, C-type support for No. 1 on this row |
+| 5858/2 | E580 | **too short**: 'it is for [Grant] who [left] for [Monroe] about 11.30 PM, Steamer Martin', about 11 words, four key words, none of the shuffled copies reads; one clause below the distance; not located in holder or print; next step named under Remaining gaps |
+| 5862/0 | E581 | **filed**; not located; Sheldon to Beckwith, 6 Jan: the River Queen left about 11 AM with Gen. Butler on board, the Colonel said he had gone up the James |
+| 5862/2 | E582 | **filed**, thin; not located; Grant (via Beckwith) to the Secretary of War at Monroe: [Melan] or Ord either would be good to relieve Foster |
+| 5872/0 | E583 | **filed**, thin (the numbers 11 / 1200 / 87 read the same under every shuffle); not located; the Illinois goes to sea at 11 o'clock with 1200 and 87 men (the Illinois was loaded and under orders to sail on 12 Jan, OR I/46 pt 2, Newport to Thomas) |
+| 5872/1 | E584 | **plain**: 'nothing has arrived [today] and the end is not yet' for Rawlins, signed Morgan; only 'today', the rank and the signature are cipher words; nine plain words are not a clause any book reads; not located; not filed |
+| 5872/2 | E585 | **filed**; not located; 2nd Division, 19th Corps, Grover: has but 40 rounds of ammunition, shall I take more |
+| 5874/1 | E586 | **filed**, thin (about 16 words); not located; Rawlins answers E585: Grover's 40 rounds will answer, do not wait for more |
+| 5883/2 | E587 | **filed**; not located (antecedent holder 7718); Eckert in Washington to Palmer at Monroe: wait at Monroe until I get there, I will leave at 5 AM tomorrow |
+| 5892/0 | E588 | **holder clear copy, pointer 8558 (Page 80), and in print (OR I/46 pt 2 p.510)**; not filed |
+
+**Shuffled-key control (`fms65a_ctl.out`, BOOK-FM65's `shuffled()` seeds 1-3, the six filed rows plus 5845/2 5857/2 5858/2 5872/1 5892/0 for comparison).** On each filed row the clause carried by key words does not survive any of the three shuffled copies (names and verbs become 'Kingsport', 'Selma', '[Pontoon]', '[Louisville]'); what survives is the plain frame and the numbers. On E583 the numbers 11 / 1200 / 87 are identical under every copy, so the control cannot separate the book there (the key words 'Brigadier General', 'Chief of Staff', 'Men' are the only separable ones). The H counts tie by construction (rule 3) and are not used. On the five rows not filed: 5857/2 and 5892/0 are the printed texts under No. 1 and give names and places under the shuffles that do not occur in the printed text (Savannah -> Dalton / Fredericksburg), which is the one place in this job where No. 1 beats a shuffle against an independent reference.
+
+**Grades (decoder counts, then by hand).** Decoder, filed rows: E581 H 7; E582 H 12; E583 H 10; E585 H 14; E586 H 5; E587 H 12 (H 60; S 0, C 0, I 0, M 0 by the decoder). By hand, M: E581 'Fanny' and 'gown'; E582 'Melan', 'wilby', 'spit' (read [Men]), 'peach'; E583 'weasler', 'forbid William and Mother postpone'; E585 'polking' (commanding), the headquarters cipher words 'Eugenia Snake', 'quitman hope pelton'; E587 'Gen J. M. Palmer' (the holder gives J. W. Palmer), the slot after 'will lave an' ('Sumter'), 'Cora whelp John'. C (support, not a clear copy): E587 by pointer 7718. No S.
+
+**Requests.** hdl.huntington.org 37 (34 CISOSEARCHALL incl. control, 3 dmGetItemInfo 7718 7741 8558; the take was posted for 34 and the 3 info calls were added in the release line); be-api 12 (11 x 200, 1 x 502); archive.org 0; googleapis 0.
+
+## Remaining gaps (FM-S65A, 10 Oct 2026)
+Read so far: 6 of 11 filed (E581 E582 E583 E585 E586 E587); 2 in print or holder clear copy (5857/2, 5892/0); 3 not filed as too short or plain (5845/2, 5858/2, 5872/1).
+- Image check of any filed row - blocker: not-attempted; needs the hdl token and a crop of pointers 5862, 5872, 5874, 5883; next: `tools/iiif_lines.py` crop of 5872 (E583 E585, the unread 'weasler' and the headquarters line), ~$0.5
+- Unread cipher words ('Melan' E582, 'weasler' E583, 'Cora whelp John' E587, 'quitman hope pelton' E585) - blocker: open-codes; the words are in no key row; next: sibling window by date (5862 on 6 Jan, 5872 on 13-15 Jan) and, for E582, the Washington clear book page for 6-7 Jan, ~$0.3
+- Clear copies for E581 E582 E583 E585 E586 E587 beyond the 33 queries - blocker: not-attempted; the Washington clear books ~7680-7830 and 8500-8660 were not paged; next: dmGetItemInfo on the pages dated 6-7, 13 and 15, 21 Jan, ~$0.4
+- ORN I/11-12 and the press of the day not searched - blocker: not-attempted; no IA OCR id on file for ORN; next: find the ids (a worker with the archive.org token), ~$0.3
+- The three unfiled short rows (5845/2, 5858/2, 5872/1) - blocker: too-short; a larger block of the same sender and day would be needed to read a clause; next: none cheap
+
+## Escalation (FM-S65A, 10 Oct 2026)
+- [x] siblings: same-day neighbours 5862/5872 considered; 5845 5857 5858 read by the holder queries.
+- [x] clear-pages: all-pointer CISOSEARCHALL on every row, three queries each; clear copy 8558; antecedent 7718.
+- [x] known-keys: No. 1 and the meaning-shuffled copies (seeds 1-3) per row.
+- [x] print: 211 volumes on disk, be-api Grant Papers 14; two rows in print.
+- [n/a] key-rebuild: no key row edited (misfires logged as M).
+- [ ] image-check: not run; next above.
+- [x] retry: one 502 on be-api not retried (the Grant Papers query in question was not material).
+Verdict: keep going: 4 internal gaps; cheapest next: clear-page sweep of the Washington books by date, ~$0.4

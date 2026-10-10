@@ -1,0 +1,121 @@
+F1 tokens=17 no1=8(0.47) no2=5(0.29) no9=4(0.24)
+  no1: H7 C0 I0 M0
+    R. O'Brien Butlers Hd Q'rs. {time: 5.30 PM} for [Maj Gen B. F. Butler] [.] All ready  {tail: [signed] are see [Reinforcements] stir [Colonel] and [Quartermaster] Geo D. Sheldon}
+  no2: H5 C0 I0 M0
+    R. O'Brien Butlers Hd Q'rs. {time: 5 PM} for Knox unity All ready [Surrendered] are see [Regiment] stir [Casualties] and [Rations] Geo D. Sheldon
+  no9: H4 C0 I0 M0
+    R. O'Brien Butlers Hd Q'rs. {time: 10 PM} for Knox unity All ready [Killed] are see [Defensive] stir pandora and [Quartermaster] Geo D. Sheldon
+  no1shuf: H7 C0 I0 M0
+    R. O'Brien Butlers Hd Q'rs. {time: 5.30 PM} for [Maj Gen Geo. H. Thomas] [.] All ready  {tail: [signed] are see [Offensive] stir [Cleveland] and [Chickamauga] Geo D. Sheldon}
+  no2shuf: H5 C0 I0 M0
+    R. O'Brien Butlers Hd Q'rs. {time: 5 PM} for Knox unity All ready [Captain] are see [Station] stir [Banks N P] and [Steele Fdk] Geo D. Sheldon
+F2 tokens=21 no1=7(0.33) no2=10(0.48) no9=2(0.10)
+  no1: H7 C0 I0 M0
+    Geo. D. Sheldon Ft Monroe {time: 12.30} [Maj Genl U.S. Grant] Instructions Wilbey given to [P. H. Sheriden] I expect tullever this afternoon for [Monroe] and thence to [Savannah] with collect or drake per  {tail: [signed] [Secretary of War]}
+  no2: H9 C0 I0 M0
+    Geo. D. Sheldon Ft Monroe {time: 12 midnight PM} [Imboden] Instructions Wilbey given to [Schenck R C] I expect tullever this afternoon for [Tennessee] and thence to [Murfreesboro] with [Harrison] or [Lauman J G] per [Surrounding] [Delaware]
+  no9: H2 C0 I0 M0
+    Geo. D. Sheldon Ft Monroe {time: 12.30 PM} John Instructions Wilbey given to Nabob I expect tullever this afternoon for animal and thence to garter with collect or drake per [Killed] Brutus
+  no1shuf: H7 C0 I0 M0
+    Geo. D. Sheldon Ft Monroe {time: 12.30} [Diversion] Instructions Wilbey given to [Pemberton] I expect tullever this afternoon for [Newbern] and thence to [Hanover] with collect or drake per  {tail: [signed] [Movement]}
+  no2shuf: H9 C0 I0 M0
+    Geo. D. Sheldon Ft Monroe {time: 12 midnight PM} [Communicate (-ed, -ing)] Instructions Wilbey given to [Maine] I expect tullever this afternoon for [Wheeler] and thence to [June] with [Murfreesboro] or [Drove in our Pickets] per [Tuckers Station] [Drove in our Pickets]
+F3 tokens=11 no1=4(0.36) no2=4(0.36) no9=2(0.18)
+  no1: H4 C0 I0 M0
+    G. D. Sheldon Ft Monroe it is for [Maj Genl U.S. Grant] who [Left] for [Monroe] about {time: 11.30 PM} Steamer Martin S. H. B.
+  no2: H4 C0 I0 M0
+    G. D. Sheldon Ft Monroe it is for [Jeff Davis] who [Necessary] for [Tennessee] about {time: 11 PM} Steamer Martin S. H. B.
+  no9: H2 C0 I0 M0
+    G. D. Sheldon Ft Monroe it is for Jersey who [Transportation] for animal about {time: 10.30 PM} Steamer Martin S. H. B.
+  no1shuf: H4 C0 I0 M0
+    G. D. Sheldon Ft Monroe it is for [Kingsport] who [Selma] for [Newbern] about {time: 11.30 PM} Steamer Martin S. H. B.
+  no2shuf: H4 C0 I0 M0
+    G. D. Sheldon Ft Monroe it is for [Cincinnati] who [Williamsburg] for [Wheeler] about {time: 11 PM} Steamer Martin S. H. B.
+F4 tokens=26 no1=9(0.35) no2=8(0.31) no9=2(0.08)
+  no1: H7 C0 I0 M0
+    S. H. Beckwith City Point River [Danger] left about {time: 11 AM} [Today] with [Maj Gen B. F. Butler] on board [,] [Colonel] told me he had gown up [James] and that himself was going same way imed'y yours Geo D Sheldon
+  no2: H6 C0 I0 M0
+    S. H. Beckwith City Point River [Division] left about {time: 11 AM} [Troops] with Knave on board [Cavalry] [Casualties] told me he had gown up [Pennsylvania] and that himself was going same way imed'y yours Geo D Sheldon
+  no9: H2 C0 I0 M0
+    S. H. Beckwith City Point River queen left about {time: 9 AM} [Subsistence] with Knave on board pekin pandora told me he had gown up Bergen and that himself was going same way imed'y yours Geo D Sheldon
+  no1shuf: H7 C0 I0 M0
+    S. H. Beckwith City Point River [Force] left about {time: 11 AM} [Equip] with [Alexandria] on board [,] [Cleveland] told me he had gown up [Valley] and that himself was going same way imed'y yours Geo D Sheldon
+  no2shuf: H6 C0 I0 M0
+    S. H. Beckwith City Point River [Line of battle] left about {time: 11 AM} [Cumberland Gap] with Knave on board [Jasper] [Banks N P] told me he had gown up [Nashville] and that himself was going same way imed'y yours Geo D Sheldon
+F5 tokens=22 no1=12(0.55) no2=9(0.41) no9=5(0.23)
+  no1: H12 C0 I0 M0
+    Geo. D. Sheldon Ft Monroe [City Point] {time: 8.30 PM} [6] for [Secretary of War] [Monroe] [.] Melan or [Maj Gen E. O. C. Ord] either wilby good [Men] [2] relieve [Maj Gen J. G. Foster]  {tail: [signed] [Maj Genl U.S. Grant] S. H. Beckwith}
+  no2: H9 C0 I0 M0
+    Geo. D. Sheldon Ft Monroe [Cairo] {time: 8.30 PM} plague for [Chalmers] [Tennessee] unity Melan or [Hunter D] either wilby good [Near] peach relieve [Gillmore Q A] [Saturday] [Jeff Davis] S. H. Beckwith
+  no9: H5 C0 I0 M0
+    Geo. D. Sheldon Ft Monroe [W. S. Sherman] {time: 4.30 PM} plague for Indigo animal unity Melan or Meriden either wilby good [Transports] peach relieve [Mobile] [Troops] Jersey S. H. Beckwith
+  no1shuf: H12 C0 I0 M0
+    Geo. D. Sheldon Ft Monroe [Red River] {time: 8.30 PM} [6] for [Goldsboro] [Newbern] [.] Melan or [Volunteered] either wilby good [Ohio] [2] relieve [Rome]  {tail: [signed] [Kingsport] S. H. Beckwith}
+  no2shuf: H9 C0 I0 M0
+    Geo. D. Sheldon Ft Monroe [Saturday] {time: 8.30 PM} plague for [Bear] [Wheeler] unity Melan or [Successful] either wilby good [Surround] peach relieve [Major] [Hardee] [Cincinnati] S. H. Beckwith
+F6 tokens=24 no1=11(0.46) no2=7(0.29) no9=3(0.12)
+  no1: H10 C0 I0 M0
+    S. H. Beckwith City Point {time: 8 PM} for [Brigadier General] Rawlins [Chief of Staff] [.] weasler Illinois goes to see at [11] o'clock with [1200] and [87] [Men] all right Morgan Geo. D. Sheldon
+  no2: H7 C0 I0 M0
+    S. H. Beckwith City Point {time: 8 PM} for [Ammunition] Rawlins [Secretary of State] unity weasler [Smith W.F] goes to see at [Acton [sic, ? Action]] o'clock with forbid William and Mother postpone [Near] all right [19] Geo. D. Sheldon
+  no9: H3 C0 I0 M0
+    S. H. Beckwith City Point {time: 3.30 PM} for [Yorktown] Rawlins borgia unity weasler Illinois goes to see at flag o'clock with forbid William and Mother postpone [Transports] all right Morgan Geo. D. Sheldon
+  no1shuf: H10 C0 I0 M0
+    S. H. Beckwith City Point {time: 8 PM} for [Holly Springs] Rawlins [Rear Guard] [.] weasler Illinois goes to see at [11] o'clock with [1200] and [87] [Ohio] all right Morgan Geo. D. Sheldon
+  no2shuf: H7 C0 I0 M0
+    S. H. Beckwith City Point {time: 8 PM} for [Reverse] Rawlins [Saunders] unity weasler [Defeat (-ed, -ing) [#]] goes to see at [Repulse] o'clock with forbid William and Mother postpone [Surround] all right [19] Geo. D. Sheldon
+F7 tokens=20 no1=7(0.35) no2=7(0.35) no9=4(0.20)
+  no1: H6 C0 I0 M0
+    S. H. Beckwith City Point {time: 3.30 PM} for [General] Rawlins [Chief of Staff] [.] nothing has arrived [Today] and the end is not yet  {tail: [signed] M. Are Morgan Lieut paradis See S. Geo D. Sheldon}
+  no2: H6 C0 I0 M0
+    S. H. Beckwith City Point {time: 3 PM} for [Harbor] Rawlins [Secretary of State] unity nothing has arrived [Troops] and the end is not yet [Surrendered] M. Are [19] Lieut paradis See S. Geo D. Sheldon
+  no9: H4 C0 I0 M0
+    S. H. Beckwith City Point {time: 6 PM} for [Projectiles] Rawlins borgia unity nothing has arrived [Subsistence] and the end is not yet [Killed] M. Are Morgan Lieut paradis See S. Geo D. Sheldon
+  no1shuf: H6 C0 I0 M0
+    S. H. Beckwith City Point {time: 3.30 PM} for [Danger] Rawlins [Rear Guard] [.] nothing has arrived [Equip] and the end is not yet  {tail: [signed] M. Are Morgan Lieut paradis See S. Geo D. Sheldon}
+  no2shuf: H6 C0 I0 M0
+    S. H. Beckwith City Point {time: 3 PM} for [Secretary of War] Rawlins [Saunders] unity nothing has arrived [Cumberland Gap] and the end is not yet [Captain] M. Are [19] Lieut paradis See S. Geo D. Sheldon
+F8 tokens=26 no1=14(0.54) no2=12(0.46) no9=4(0.15)
+  no1: H14 C0 I0 M0
+    S. H. Beckwith City Point {time: 9.30 AM} [Head Quarters] [2] [Division] [19] [Corps] for [Brigadier General] Rawlins [Chief of Staff] [.] [Division] has but [40] rounds of [Ammunition] Shall I take more C Grover Brevet [Major] [General] polking Geo. D. Sheldon
+  no2: H11 C0 I0 M0
+    S. H. Beckwith City Point {time: 9.30 AM} [Head Quarters] plank [Diversion] hope [Corps] for [Ammunition] Rawlins [Secretary of State] unity [Danger] has but leg rounds of [Farragut D G] Shall I take more C Grover Brevet [Our pickets] [Harbor] [Commander]ing Geo. D. Sheldon
+  no9: H4 C0 I0 M0
+    S. H. Beckwith City Point {time: 6 AM} [Regulars] plank quitman hope pelton for [Yorktown] Rawlins Borgia unity Quincy has but leg rounds of olive Shall I take more C Grover Brevet Tappan [Projectiles] polking Geo. D. Sheldon
+  no1shuf: H14 C0 I0 M0
+    S. H. Beckwith City Point {time: 9.30 AM} [Potomac] [2] [Advance (-ed, -ing)] [19] [Fortifications] for [Offensive] Rawlins [Rear Guard] [.] [New Hampshire] has but [40] rounds of [Petersburg] Shall I take more C Grover Brevet [Secretary of War] [Danger] polking Geo. D. Sheldon
+  no2shuf: H11 C0 I0 M0
+    S. H. Beckwith City Point {time: 9.30 AM} [Arizona] plank [Wounded] hope [Madison] for [Defeat (-ed, -ing)] Rawlins [Saunders] unity [Milledgeville] has but leg rounds of [Tennessee] Shall I take more C Grover Brevet [Opelika] [Secretary of War] [Suffolk]ing Geo. D. Sheldon
+F9 tokens=17 no1=7(0.41) no2=5(0.29) no9=1(0.06)
+  no1: H5 C0 I0 M0
+    Geo. D. Sheldon Brevet [Major] [General] Grovers [40] rounds of [Ammunition] will answer [,] you needn't wait to get more Rawlins S. H. Beckwith
+  no2: H4 C0 I0 M0
+    Geo. D. Sheldon Brevet [Our pickets] [Helping] Grovers lampoon rounds of [Farragut D G] will answer [Cavalry] you needn't wait to get more Rawlins S. H. Beckwith
+  no9: H1 C0 I0 M0
+    Geo. D. Sheldon Brevet Tappan [Projectiles] Grovers lampoon rounds of olive will answer pekin you needn't wait to get more Rawlins S. H. Beckwith
+  no1shuf: H5 C0 I0 M0
+    Geo. D. Sheldon Brevet [Secretary of War] [Movement] Grovers [40] rounds of [Petersburg] will answer [,] you needn't wait to get more Rawlins S. H. Beckwith
+  no2shuf: H4 C0 I0 M0
+    Geo. D. Sheldon Brevet [Opelika] [Tar R] Grovers lampoon rounds of [Tennessee] will answer [Jasper] you needn't wait to get more Rawlins S. H. Beckwith
+F10 tokens=21 no1=13(0.62) no2=9(0.43) no9=4(0.19)
+  no1: H12 C0 I0 M0
+    Geo. D. Sheldon Ft Monroe [Washington] {time: 3 PM} [21] for [Gen J. M. Palmer] [.] wait at [Monroe] until I get there [,] I will lave an [Sumter] is at {time: 5 AM} [Tomorrow] [Maj Genl U.S. Grant] T. T. Eckert
+  no2: H9 C0 I0 M0
+    Geo. D. Sheldon Ft Monroe [Maj Gen B. F. Butler] {time: 3.30 PM} Harsh plug for mock [1000] wait at [Tennessee] until I get there [Cavalry] I will lave an [Tennessee] is at {time: 5 AM} [Throw] [Imboden] T. T. Eckert
+  no9: H4 C0 I0 M0
+    Geo. D. Sheldon Ft Monroe Growl {time: 5 PM} Harsh plug for mock [Movement] wait at Animal until I get there pekin I will lave an Apple is at {time: 9.30 AM} [Surrounded] John T. T. Eckert
+  no1shuf: H12 C0 I0 M0
+    Geo. D. Sheldon Ft Monroe [Gen J. M. Palmer] {time: 3 PM} [21] for [Feint] [.] wait at [Newbern] until I get there [,] I will lave an [Transportation] is at {time: 5 AM} [Chief of Staff] [Diversion] T. T. Eckert
+  no2shuf: H9 C0 I0 M0
+    Geo. D. Sheldon Ft Monroe [Aquia Creek] {time: 3.30 PM} Harsh plug for mock [1000] wait at [Wheeler] until I get there [Jasper] I will lave an [Brigade] is at {time: 5 AM} [Point] [Communicate (-ed, -ing)] T. T. Eckert
+F11 tokens=24 no1=11(0.46) no2=9(0.38) no9=5(0.21)
+  no1: H11 C0 I0 M0
+    Maj. Eckert [Volunteer] {time: 11.30 PM} for [President U.S.] [Washington] [.] arrived at [10] this evening [.] [Richmond] party not here [.] I remain here  {tail: [signed] . [Secretary of State] trouble North Seaford Geo D. Sheldon}
+  no2: H9 C0 I0 M0
+    Maj. Eckert [Wounded] {time: 11 PM} for [Davidson J W] [Maj Gen B. F. Butler] unity arrived at [Conasauga River] this evening unity [Mobile] party not here [Sunday] I remain here [Saturday] . [Monroe] trouble North Seaford Geo D. Sheldon
+  no9: H5 C0 I0 M0
+    Maj. Eckert [Traitor] {time: 10.30 PM} for [Heintzelman] grapes unity arrived at federal this evening unity Galway party not here [Movement] I remain here [Troops] . Bunyan trouble North Seaford Geo D. Sheldon
+  no1shuf: H11 C0 I0 M0
+    Maj. Eckert [Effect (-ed, -ing)] {time: 11.30 PM} for [Hiawassie] [Colonel] [.] arrived at [10] this evening [.] [Tuscaloosa] party not here [.] I remain here  {tail: [signed] . [Maj Gen J. G. Foster] trouble North Seaford Geo D. Sheldon}
+  no2shuf: H9 C0 I0 M0
+    Maj. Eckert [Martinsburg] {time: 11 PM} for [Augusta] [Follow (-ed, -ing) [#]] unity arrived at [Winchester] this evening unity [Stanley D S] party not here [Carter S.P.] I remain here [Hardee] . [Finding] trouble North Seaford Geo D. Sheldon

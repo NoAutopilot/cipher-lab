@@ -2747,5 +2747,41 @@ Code-word tokens: H 37.
 
 Code-word tokens: H 17.
 
-Totals over the 436 entries: H 7474, C 113, I 39, M 67, S 21, U 10.
+**E581 | Page 318 | 5862 | mssEC 25 (obj 5952, pointer 5862), 6 Jan 1865 Ft Monroe, Sheldon to S. H. Beckwith at City Point: the River Queen left about 11 AM today with Gen. Butler on board; the Colonel told me he had gone up the James and that he himself was going the same way immediately; signed Geo. D. Sheldon (FM-S65A; row 5862/0; read from the transcription, no image)**
+
+S. H. Beckwith City Point River [Danger] left about {time: 11 AM} [Today] with [Maj Gen B. F. Butler] on board [,] [Colonel] told me he had gown up [James] and that himself was going same way imed'y yours Geo D Sheldon
+
+Code-word tokens: H 7.
+
+**E582 | Page 318 | 5862 | mssEC 25 (obj 5952, pointer 5862), 6 Jan 1865 City Point 8.30 PM, S. H. Beckwith to Sheldon at Ft Monroe, from Grant for the Secretary of War at Monroe: [a name, unread 'Melan'] or Ord either will be good [men] to relieve Gen. Foster (FM-S65A; row 5862/2; read from the transcription, no image)**
+
+Geo. D. Sheldon Ft Monroe [City Point] {time: 8.30 PM} [6] for [Secretary of War] [Monroe] [.] Melan or [Maj Gen E. O. C. Ord] either wilby good [Men] [2] relieve [Maj Gen J. G. Foster]  {tail: [signed] [Maj Genl U.S. Grant] S. H. Beckwith}
+
+Code-word tokens: H 12.
+
+**E583 | Page 328 | 5872 | mssEC 25 (obj 5952, pointer 5872), 13 Jan 1865 Ft Monroe 8 PM, Sheldon to S. H. Beckwith at City Point, for Brig. Gen. Rawlins, Chief of Staff: [an unread word 'weasler'] the Illinois goes to sea at 11 o'clock with 1200 and 87 [men]; all right; signed Morgan (FM-S65A; row 5872/0; read from the transcription, no image)**
+
+S. H. Beckwith City Point {time: 8 PM} for [Brigadier General] Rawlins [Chief of Staff] [.] weasler Illinois goes to see at [11] o'clock with [1200] and [87] [Men] all right Morgan Geo. D. Sheldon
+
+Code-word tokens: H 10.
+
+**E585 | Page 328 | 5872 | mssEC 25 (obj 5952, pointer 5872), 15 Jan 1865 Ft Monroe 9.30 AM, Sheldon to S. H. Beckwith at City Point, for Brig. Gen. Rawlins, Chief of Staff, from Hd. Qrs. 2nd Division, 19th Corps: the division has but 40 rounds of ammunition, shall I take more; C. Grover, Bvt. Maj. Gen., commanding (FM-S65A; row 5872/2; read from the transcription, no image)**
+
+S. H. Beckwith City Point {time: 9.30 AM} [Head Quarters] [2] [Division] [19] [Corps] for [Brigadier General] Rawlins [Chief of Staff] [.] [Division] has but [40] rounds of [Ammunition] Shall I take more C Grover Brevet [Major] [General] polking Geo. D. Sheldon
+
+Code-word tokens: H 14.
+
+**E586 | Page 330 | 5874 | mssEC 25 (obj 5952, pointer 5874), 15 Jan 1865 City Point 3.30 PM, S. H. Beckwith to Sheldon at Ft Monroe, from Rawlins: Bvt. Maj. Gen. Grover's 40 rounds of ammunition will answer, you need not wait to get more (FM-S65A; row 5874/1; read from the transcription, no image; about 16 words)**
+
+Geo. D. Sheldon Brevet [Major] [General] Grovers [40] rounds of [Ammunition] will answer [,] you needn't wait to get more Rawlins S. H. Beckwith
+
+Code-word tokens: H 5.
+
+**E587 | Page 339 | 5883 | mssEC 25 (obj 5952, pointer 5883), 21 Jan 1865 Washington 3 PM, T. T. Eckert to Sheldon at Ft Monroe, for Gen. Palmer: wait at Monroe until I get there; I will leave [a place unread] at 5 AM tomorrow; signed Eckert (FM-S65A; row 5883/2; read from the transcription, no image; answers Palmer's own 1 PM telegram of 21 Jan from Ft Monroe, holder pointer 7718, p.60)**
+
+Geo. D. Sheldon Ft Monroe [Washington] {time: 3 PM} [21] for [Gen J. M. Palmer] [.] wait at [Monroe] until I get there [,] I will lave an [Sumter] is at {time: 5 AM} [Tomorrow] [Maj Genl U.S. Grant] T. T. Eckert
+
+Code-word tokens: H 12.
+
+Totals over the 442 entries: H 7534, C 113, I 39, M 67, S 21, U 10.
 <!-- decode.py: derived block ends -->
