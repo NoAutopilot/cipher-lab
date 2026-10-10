@@ -4298,3 +4298,19 @@ Read so far: E351, E355, E356 audited (N3 D3 each); all three ledger pages eye-c
 - [x] image-check: all three entries eye-checked on line crops.
 - [x] retry: none needed (two archive.org texts 403/503, replaced by other copies; not retried).
 Verdict: keep going: 2 internal gaps; cheapest next: the FIX job for AUDIT (FV-MS18j) s.5, ~$1
+
+## FIX-FM18 (10 Oct 2026, account 1, for LANE LEDGER)
+
+Worker FIX-FM18, 00:25-00:3x UTC by `date -u`, offline. Carries AUDIT.md s.5 of "## AUDIT (FV-MS18j)" and "## AUDIT (FV-MS18k)" into ciphertext.txt headers, notes and per-entry decoder lines (`variant:`, `plain:`, `plain-at:`, `gloss:`); no key.md row touched; reading.md only via `decode.py --write`. Classes are the audits' (E351/E355/E356/E357 N3, E359 N1) and untouched.
+
+| Entry | Change | Decoder before -> after |
+|---|---|---|
+| E351 | "flank" = Plank = 2 (`variant: flank=Plank`, date now Dec 2); header names Barton = Adjt Genl, signer Townsend | H 13 -> H 14 |
+| E355 | addressee Maj. Gen. B. F. Butler (Knox), "In the New York Herald of the 6th"; Herald and Fox plain (`plain:`), not Herald = Ewell / Fox = Philadelphia; Rosalie = 9 PM as M (`variant`); the second "Ewell" is phonetic "you'll", not graded; context Butler V p.245 | H 20 -> H 17, M 1 |
+| E356 | line 2 gains "ordered to" after "Boston" (image per AUDIT s.5; the one transcription edit, original in git history); Wilson and Fox plain, not Wilson = West / Fox = Philadelphia; holder 10297 context | H 13 -> H 11 |
+| E357 | "Elgins" = Grant's (`gloss` M, not H; second context beside E225); "fit shoe" = Fitzhugh and "be Eating" = beaten stated in header and note as plain sound-alikes, not graded; ledger label "No 2" vs No. 1 sense recorded as a rule-4 data conflict, not settled | H 17 -> H 17, M 1 |
+| E359 | header: signer H. W. Halleck, Chief of Staff; addressee Maj. Gen. Lew Wallace; printed OR I/37 pt 1 p.589 (reader's "not located" withdrawn in the header); first entry on 9753 (OR I/37 pt 1 p.590) and holder 4687 named; tail "tell w/n?" | none (H 21, C 1) |
+
+Counts: E356 reads H 11 by the decoder against the audit's "H 12 of 12 code groups" (the audit counts the period punctuation code groups); status.json's completeness text is the audit's, left as is. Per-entry H changes: E351 +1, E355 -3, E356 -2, E357 0 (M +1 already counted); corpus totals not recomputed here.
+
+Decode: `decode.py --check` "reading.md is current"; `decode_no2.py --check`, `decode_no9.py --check` current, exit 0. `tools/depth_check.py` 139 unique solves (D4 5, D3 92, D2 42), exit 0. Propagation (rule 10): status.json rows for E351/E355/E356/E357 and PROMPT-chatgpt-e351/e355/e356/e357.md already carry the corrected readings and counts; E359 (N1) has no status row or SO prompt by design. Not done: HYPOTHESES.md rule-4 note for the E357 "No 2" label and the Elgin = Grant M record (a KEY job's, named in AUDIT FV-MS18k s.5); NOTES "## MS18-R5" wording on E359 is superseded here, not edited.
