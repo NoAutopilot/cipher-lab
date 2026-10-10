@@ -933,19 +933,86 @@ a blind transcription of the numeral block, and a pre-registered overlap test ag
 - Where it was not found: no decipherment of either text on the leaves 142-144, in Veenendaal II, or in the folder's DECODE notes; the 173 unlooked
   scans of orders 1-259 other than 186/188 were not looked at.
 
-## Remaining gaps (OBRED-187, 10 Oct 2026)
+## OBRED-DP (10 Oct 2026, 06:5x-07:1x UTC by date -u, account 2, Opus)
+
+Brief: pooled structure of no. 92 + the scan-187 postscript, and a print check. No decode, no key; nothing below is a reading.
+
+- **Print check, Resolutiën der Staten-Generaal XIII OR (1604-1606, GS 101)** (Huygens retroboeken/statengeneraal, `searchText`, `source_id=13OR`;
+  10 requests to resources.huygens.knaw.nl, all 200, take/release in ROOM). Queries: `Brederode` 39 hits (positive control: it returns the
+  known p.101 entry, Oldenbarnevelt communicating Brederode's letter of 21 Feb 1605, and p.104, Brederode's letter of 22 June 1604 from
+  Frankfurt read 1 July -- the route works); `Stettin` 8 hits (p.114 Bogislaw of Pommern, p.640, the rest index pages -- no Brederode letter
+  from Stettin); `ontcijferd` 0, `dechiffr` 0, `cyffer` 0, `cijffer` 0 (`cijfer` 1 and `sleutel` 1, both off-topic, were run on 25 Sept, see
+  "Key route" section 4). Pages 104, 108, 111 (the Oct-Dec 1604 Brederode entries) read in full from the OCR page text: 14 Oct a Brandenburg
+  letter of 15 June received, 29 Oct and 11-19 Nov the Margrave's visit and an instruction to write to Brederode, 23 Nov a procuration for
+  Brederode; **no receipt of a 17 Oct 1604 Stettin letter is minuted on these pages, and no "met het cijfer", decipherment or key note sits
+  near any Brederode entry of Oct 1604-Feb 1605.** Not found here: a period decipherment of either text. Not searched: the S.G. archive
+  files the footnotes cite (R.A., S.G. 5888, 5968), which are archive items, not print.
+- **design_prior.py** (`python3 tools/design_prior.py ciphers/oldenbarnevelt-brederode-1605/obred187/tokens_{pooled,92,187}.txt --no-write`;
+  token files written from `overlap.py`'s extractors):
+  - pooled, 180 tokens, 130 distinct: multi-sign d=0.73 (envelope 0.26, null_p05 0.27) -> not above null; letter-for-letter d=1.90 excluded;
+    mixed d=2.28 excluded; code d=3.07 excluded; shuffled-input false-positive rate 0.065; fine (advisory) nomenclator 1.09, homophonic 1.14,
+    syllabary 1.36; nearest key huntington-luzerne-destouches-1781 (syllabary) d=0.20.
+  - no. 92 alone, 121/99: multi-sign d=0.32 (env 0.27, null_p05 0.11) -> not above null; letter-for-letter, code, mixed excluded; fp 0.085;
+    fine: syllabary 0.32, nomenclator 0.93, homophonic 1.00.
+  - 187 alone, 59/57: multi-sign d=0.79 not above null; code and mixed not above null; letter-for-letter excluded; fp 0.140; fine: syllabary 0.79.
+  Reading: every run excludes one-sign-per-letter and code-number designs and leaves the multi-sign class (homophonic / nomenclator / syllabary,
+  which the tool cannot separate) nearest; the pooled multi-sign distance sits outside its own printed envelope yet the tool prints "not above
+  null" rather than "excluded" -- reported as printed, not investigated (a one-line question for the tool's owner).
+- **Structure** (`obred187/structure.py`, `--check` OK, output `obred187/structure.json`; gates pre-registered in `obred187/PREREG-OBREDDP.md`,
+  pushed in its own commit ae9dd4a8d before scoring):
+  - Runs. no. 92 splits into 43 runs at the clear words: 34 single tokens and 9 runs of 4-15 (8, 4, 8, 12, 6, 13, 15, 11, 10); 187 is two runs
+    (43 and 16) either side of the clear insertion "[Ick hebbe] ... [oock verstaen dat dits]".
+  - **G2 (names stand alone): PASS.** All 33 no. 92 tokens >= 600 stand as single-token runs (H = 1.000) against a value permutation over the
+    same run structure (mean 0.281, p99 0.424, p = 0.0001). The single tokens span 588-741 (34 tokens; 97% >= 600) and occupy name slots by
+    grammar ("van den 671 van den 611 ende 612", "617 is op ghisterenavont alhier angelandt", "advijs dat 588 aen 628 geschreeven heeft").
+    Grade M: a nomenclator name band about 588-751. In 187 three band values sit inside the long run (611, 623, 751-M) -- names inside a spelled sentence.
+  - **G1 (shared order): FAIL.** One ordered pair is shared across the texts, 529 433 (no. 92 run "577 102 481 529 433 ..." and 187 L2
+    "84 529 433 337"), against an order permutation of each text (mean 0.097, p99 1.0, p = 0.0923); no shared trigram. The control can differ
+    (order-dependent statistic). "No shared order above chance at N=180", not a design exclusion. Descriptive: both texts' long runs open with
+    577 (no. 92 "Van 577 102 481 ...", 187 L1 "577 457 289 ...").
+  - Value range by run length: long runs (6+) 142 tokens, values 30-507 except 3 band values (hundreds 0:17, 100:36, 200:18, 300:25, 400:35,
+    500:8, 600+:3); runs of 2-5 (one run, 4 tokens) 110-433. Pooled long-run tokens 146, 113 distinct: no value occurs more than 3 times
+    (108, 433, 440, 40 three times each).
+  - Crib slots in no. 92 (grade I, grammatical inference only; the word candidates are illustrations, not tested): "hij neffens [8] bevel heeft
+    om met 741 daer van te handelen" ([8] = a person or office, co-subject); "datter oock noch [4] van de zijde van 611 ende 612 ... sal
+    gefourneert werden" ([4] = what is furnished: a sum or troops); "dat hij XLII [12] belooft heeft ... ende hoewel die quota wel wat meer
+    bedraecht" ([12] after a Roman numeral = a promised amount; XLII may itself be part of the sum); "636 ende [6] sullen oock 12 off 13.000
+    doen" ([6] = a second contributing party beside the name code 636, spelled out, so not in the name band); "dat hij [11] uyt sijn voornempste
+    [10] lichten mach" ([11] = what may be raised -- men or money; [10] = a plural noun after "sijn voornempste", e.g. towns, offices or
+    subjects); "Van [13] ende [15] ende is vermeent ... sich tot sulx te begeven" (two spelled stretches, the first a source of news).
+  - Ranked design hypotheses (each with its test and matched control):
+    1. **Nomenclator: a name band (~588-751, single codes) + a lower table (~30-507) that spells words** -- supported by G2 and the
+       grammar of the slots. Test that remains: none needed for the band; the lower table is the question below.
+    2. Lower table = **letter-level homophonic** (~480 values over ~24 letters, ~20 homophones each; run length = letter count). Fits the
+       near-absence of repeats (146 tokens, 113 distinct) and a 10-group run in a one-noun slot. Test: run-length vs word-length fit over the
+       crib slots, and a value-band x letter-class test once a crib holds. Matched control: synthetic Dutch letter-homophonic, ~480 values,
+       N=146 in runs of the same lengths, corpus era-matched (no 17c Dutch prose corpus checked this pass -- confirm tools/data first).
+    3. Lower table = **syllabary** (letters + syllables, run length < letter count). design_prior's fine tier puts syllabary nearest for both
+       texts (advisory, not calibrated). Test and control: as 2 with a syllable table; the 10-group run in a one-noun slot fits 2 better than 3.
+    4. Lower table = **word code** (one group per word): unlikely -- an 8-group co-subject and a 10-group noun after "sijn voornempste" would
+       be 8-10 words. Control: synthetic word-code text, same N and run lengths.
+  - Unicity: at ~20 homophones per letter, 146 spelled tokens with 113 distinct values make any crib nearly unfalsifiable (a value seen once
+    can take any letter); this is the editor's own "te weinig vergelijkingsmateriaal" in numbers. A crib attack at N=180 would test nothing
+    until more text in the same table exists.
+- Where it was not found: no decipherment, key or "met het cijfer" note in Resolutiën XIII OR around either letter (above); no shared
+  ordered sequence beyond one pair between the two texts.
+- Next attack step (not started): more ciphertext in the same table first -- OBRED-S1's stride-1 screen of inv. 6016 orders 1-259 (live,
+  account 2) and the 351-624 screen; then, if a third text appears, a run-length/crib consistency test of hypothesis 2 against its matched
+  synthetic control, about $3 (Opus, disk only). Without more material, the crib test is a non-test at this N.
+
+## Remaining gaps (OBRED-DP, 10 Oct 2026)
 Read so far: unmeasured; nothing decoded -- no. 92 (121 groups) and the scan-187 postscript (59 groups, transcribed this pass) are both unread; they share 26 values, above chance (OBRED-187)
-- no. 92 and the 187 postscript, pooled (180 tokens, about 130 distinct values) - blocker: not-attempted; the shared-list evidence is new this pass and the brief stops before an attack; next: lane decides a design_prior / pooled-attack step on the two texts with a matched control at N=180, ~$3
+- no. 92 and the 187 postscript, pooled (180 tokens, 130 distinct values) - blocker: too-short; OBRED-DP: name band 588-751 stands alone (G2 PASS), the spelled lower table has 146 tokens over 113 distinct values and no shared order beyond one pair (G1 FAIL), so a crib test is unfalsifiable at this N; more text in the same table is the step (the 6016 screens below)
 - the 173 unlooked scans of NA 1.01.02 inv. 6016 orders 1-259 - blocker: not-attempted; stride-3 screen only; next: 400 px sheets at stride 1 around 187 (orders 181-193 first: further Brederode letters of 1604 in the same hand and code), ~$1.5
 - the 182 unlooked scans of NA 1.01.02 inv. 6016 orders 351-624 - blocker: not-attempted; stride-3 sampling found no cipher; next: two more sessions of 400 px sheets, ~$1.5 each
-- States-side trace of the 17 Oct 1604 letter (Resolutiën der Staten-Generaal XIII, Oct-Nov 1604; the griffier's papers) - blocker: not-attempted; outside this brief's named sources; next: Huygens retroboeken/statengeneraal search "Brederode" + "Stettin" in Deel 13, ~$0.5
+- States-side trace of the 17 Oct 1604 letter (the griffier's papers, R.A. S.G. 5888/5968 files) - blocker: not-attempted; Resolutiën XIII OR searched (OBRED-DP: no receipt minuted Oct-Dec 1604, no cipher note); next: NA 1.01.02 S.G. 5888 inventory look for Oct-Nov 1604 Brederode originals, ~$1
 
-## Escalation (OBRED-187, 10 Oct 2026)
+## Escalation (OBRED-DP, 10 Oct 2026)
 - [ ] siblings: scan 187 is a second code text sharing 26 values with no. 92 (OBRED-187); further 1604 Brederode letters may sit in the unlooked scans of orders 1-259; next: stride-1 sheets of 181-193, then the rest
 - [x] clear-pages: the clear letter of 142r-143r read by eye (OBRED-187: Stettin, 17 Oct 1604, to the griffier of the States General, on the Brandenburg negotiation); it carries no gloss of the code
 - [x] known-keys: the 10 Aug 1598 Van Aerssen slip excluded for no. 92 by design (R10-OBRED98); Buzanval syllabary inv. 2028 excluded (R9-OBRED4); DECODE 1600s and Palatine/Hessian keys screened (OLD-DKEY, R8-OBRED2, R9-OBRED3); the 187 values fall in the same 1-751 range as no. 92 and add no key
-- [x] print: no. 92 settled by "Search log", "Web and blog check", "Premise check"; the 17 Oct 1604 letter is not in Veenendaal II (OBRED-187, nos. 89 -> 90)
-- [ ] key-rebuild: the pooled two-text attack is now the named step (overlap gate cleared, OBRED-187); next: design_prior.py and a pooled family run with a matched control at N=180, ~$3
+- [x] print: no. 92 settled by "Search log", "Web and blog check", "Premise check"; the 17 Oct 1604 letter is not in Veenendaal II (OBRED-187, nos. 89 -> 90); Resolutiën S.G. XIII OR has no decipherment, key or "met het cijfer" note near the Oct 1604 or Feb 1605 Brederode entries (OBRED-DP)
+- [ ] key-rebuild: design_prior and structure done (OBRED-DP: multi-sign class nearest, name band 588-751 PASS, shared order FAIL); a crib/run-length test of the letter-homophonic hypothesis waits on a third text; next: after the 6016 screens, the crib consistency test with a synthetic matched control, ~$3
 - [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv is two blind passes agreeing 59/59 on native crops (OBRED-187)
 - [ ] retry: the Den Tex biography (dbnl.org) retry named in "Open" above has not been run (TLS-failed twice, 25 Sept 2026); next: one retry from a fresh container, ~$0.3
-Verdict: keep going: 4 internal gaps; cheapest next: the pooled no. 92 + 187 attack (design_prior first), ~$3
+Verdict: keep going: 3 internal gaps; cheapest next: stride-1 sheets of inv. 6016 orders 181-193 (OBRED-S1, live), ~$1.5
