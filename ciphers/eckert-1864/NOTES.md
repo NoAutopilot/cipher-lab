@@ -5132,7 +5132,7 @@ Ten more No. 1 rows of the sent ledger mssEC 18 (Huntington object 10074, `ms18/
 
 **Prior-work checks (by hand; `tools/prior_work.py` not run, no items.tsv for this ledger).** (1) Intake gate 10 Oct 2026 04:47 UTC: `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0. (2) Own work: the ten pointers grepped in `ciphertext*.txt` before filing: none present in `ciphertext.txt`; 9880 appears in `ciphertext-no2.txt` as N2-IJ (9880/0, Halleck to Grant 3 PM 31 Oct 1864, a different entry on the same leaf, N2R-4's, not this one). (3) Holder (step 0 and clear-copy): see below. (4) Print: OR I/32 pt 3, I/37 pt 2, I/41 pt 3, I/41 pt 4, I/42 pt 2, I/42 pt 3, I/43 pt 2, I/45 pt 2, I/49 pt 2 by date plus the cached OR volumes, in `ms18_r8_printcheck.out` and `ms18_r8_date.out`. (5) Same-leaf siblings: listed per row in the `ciphertext.txt` notes.
 
-**Step 0 (holder transcription of the page against the decoded body).** `ms18_r8_step0.py` (same two figures as `fv_ms18p_step0.py`): decoded content words vs the page transcription (LCS, "all"), decoded code-group meanings vs the transcription ("code"), control = `all` against 20 other pages (p95). Overlap (content words shared / decoded content words; code-group figure): E382 36/55 (code 0.214), E383 39/47 (0.143), E384 35/44 (0.000), E385 23/45 (0.125), E386 25/32 (0.000), E387 13/20 (0.200), E388 8/50 (0.000), E389 25/33 (0.125), E390 21/51 (0.000), E391 13/23 (0.000); control p95 0.04-0.10. The `all` figure is high because the ledger writes many plain words between the code words; the `code` figure is 0.00-0.21 on every row, so no page transcription carries the body in clear: none is a step-0 skip, and all ten are filed.
+**Step 0 (holder transcription of the page against the decoded body).** `ms18_r8_step0.py` (same two figures as `fv_ms18p_step0.py`): decoded content words vs the page transcription (LCS, "all"), decoded code-group meanings vs the transcription ("code"), control = `all` against 20 other pages (p95). Overlap (content words shared / decoded content words; code-group figure): E382 36/55 (code 0.214), E383 39/47 (0.143), E384 35/44 (0.000), E385 23/45 (0.125), E386 25/32 (0.000), E387 13/20 (0.200), E388 8/50 (0.000), E389 25/33 (0.125), E390 21/51 (0.000), E391 13/23 (0.000); control p95 0.04-0.10. The `all` figure is high because the ledger writes many plain words between the code words; the `code` figure is 0.00-0.21 on every row, so no page transcription carries the body in clear: none is a step-0 skip, and all ten are filed. **Superseded by AUDIT (FV-MS18q), applied by FIX-FM21 (10 Oct 2026): E383 E384 E385 E386 E387 E389 hit the Wave 3 Step-0 ruling (ordered LCS above the within-entry shuffle p95: N1, body known in the holder transcription); the 'no row clear in the holder transcription' reading above used FV-MS18p's stricter code >= 0.5 bar.**
 
 **Book per row (whole-entry vocabulary share No.1/No.2/No.9).** E382 .42/.38/.15; E383 .31/.26/.12; E384 .34/.22/.08; E385 .38/.33/.21; E386 .35/.23/.15; E387 .51/.40/.17; E388 .70/.52/.09; E389 .47/.23/.13; E390 .51/.44/.29; E391 .29/.30/.12. The share is not discriminating on E382, E385, E390 (within 0.06 of No. 2) and E391 (No. 2 higher by 0.01); the matched control (meaning-shuffled copies of No. 1 and No. 2, seed 7) gives the same H count by construction, so the count cannot fail and licenses nothing: every row was read by sense (No. 1 reads clauses, No. 2, No. 9 and the shuffled copies read nonsense), recorded in `ms18_r8_controls.txt`. The two September 1865 rows (E383 2 Sept, E387 23 Sept) have no HEAD share row in `key-share-1865.tsv`; the whole-entry share stands and both read clause for clause with No. 1, so "no book in hand" was not needed.
 
@@ -5426,3 +5426,29 @@ Read so far: 0 of 9 rows filed (all nine are Step-0 hits; their bodies are in th
 - [ ] image-check: not done (disk and holder transcription only).
 - [n/a] retry: no step failed.
 Verdict: keep going: 4 internal gaps; cheapest next: test the three misfit No. 9 values of 9845/0 at every occurrence with decode_key.py --try, ~$0.5
+
+
+## FIX-FM21 (10 Oct 2026, account 1, for LANE LEDGER-10)
+
+Worker FIX-FM21, 06:0x-06:2x UTC by `date -u`, offline (git only). Carries AUDIT.md s.5 of "(FV-O9b)", s.2 of "(FV-N2e)", s.3 of "(FV-N2f)" and s.4 of "(FV-MS18q)" into ciphertext-no9.txt / ciphertext-no2.txt as `<del>/<ins>` marks, entry-note lines (`plain:`, `variant:`, `gloss:`) and `note:` lines; reading-no2.md and reading-no9.md only by `decode_no2.py --write` / `decode_no9.py --write`. "(STEP0-RULE)" has no fix section (s.4 is findings and propagation: no reading change).
+
+| Entry | Change | Decoder before -> after |
+|---|---|---|
+| O9-DA | leaf: "Can" -> "Care", "$pd Canon & C" -> "Spl Comr &c" (marked del/ins); `plain: care spl comr`; `graded: Can:M`, `graded: Canon:M` dropped; header "leaf eye-checked", N1 by step 0; note: holder 4551 is the office's answer (context, I) | H 3, M 2 -> H 3 |
+| O9-DD | leaf: "mark" before "Confidential" added (ins) + `plain: mark`; header leaf eye-checked, N1; note NYT 1 Apr 1864 (context, I) | H 6 -> H 6 |
+| O9-DF | leaf: "in changes in charge" -> "in Charge" (del/ins); header leaves eye-checked, N1; note: the pencil interlinear words and "139 w chg Q.M.G." / "No 10 N.Y." on 9699-9700, not transcribed, not read | H 9, M 4 -> H 9, M 4 |
+| N2-IB | `plain: shelby` (was [Harbor]); note: [1] vs print "first" not changed | H 18, I 2 -> H 17, I 2 |
+| N2-IC | `plain: rebellion` (was [Importance]); note: the five report-date tokens are M in the audit's 20/25, not graded in the decoder (Allen recurs in "Allen quarter"); 74 1/4 vs holder 10383 "fifty two" recorded | H 26 -> H 25 |
+| N2-ID | `plain: hotels hotel george` (were [Weldon], [McCallum D C]); the second "hotel" ("no hotel at corner") is the same plain word | H 17, I 1 -> H 14, I 1 |
+| N2-IG | `plain: bear mew day` + `gloss: douglas=Hundred:M` (Bermuda Hundred; was Bridgeport, 100) | H 16 -> H 14, M 1 |
+| N2-JG | `variant: gauls=Gauls:M`. **Discrepancy with the audit:** it names "Palermo" as the token that decodes Nashville; in this entry's decode Palermo reads [Brig. General] and the token reading [Nashville] is "Gauls" (of "In Gauls"), so the M grade is on Gauls. Audit text not edited (a verifier's file) | H 25, C 1 -> H 24, C 1, M 1 |
+| N2-JH | `plain: business george` (were [Browns Ferry], [McCallum D C]) | H 34 -> H 32 |
+| N2-JI | `plain: reward question yard` (were [Follow], [Defend], a stop) | H 10, I 2 -> H 8, I 1 |
+
+Totals: decode_no2.py "H 3530, C 126, I 120, M 9" -> **H 3518, C 126, I 119, M 11**; decode_no9.py "H 426, C 0, I 0, M 20" -> **H 426, C 0, I 0, M 18**; decode.py unchanged. MS18-R8's step-0 sentence in "## MS18-R8" marked superseded by FV-MS18q (E383 E384 E385 E386 E387 E389: N1, body known in the holder transcription); its Remaining-gaps print items are no longer needed for classification and were left as written (gaps format).
+
+Not applied: the IC report-date tokens as M in the decoder (would split a numeral run and hit "Allen" elsewhere); the IB "[1]" vs "first"; Weldon/McCallum key rows (a KEY job).
+
+Propagation (rule 10): status.json N2-JG (Gauls, not Palermo) and N2-IG (11 H, 1 M) completeness/depth_note updated; O9-DA, -DD, -DF, N2-IB, -IC, -ID, -JH, -JI rows already carried the audit-corrected figures; SO-ECKERT-N2-IC and -N2-JH prompts checked by grep for the old forms (none present); no SO row exists for the N1 entries. AUDIT.md not edited.
+
+Decode: `decode.py --check`, `decode_no2.py --check`, `decode_no9.py --check` each "is current", exit 0.

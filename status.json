@@ -12965,7 +12965,7 @@
       "line": "Re-read with War Department Cipher No. 2 (the message is largely in clear in the Huntington's public transcription of the ledger): at 11.30 a.m. on 25 June 1864 the Quartermaster General told Ingalls to send every ocean steamer that could be spared from before Richmond to New Orleans to bring troops north; the key supplies the ports, the river and the units, and Ingalls's reply the next morning (holder 10442) confirms it. Plaintext already public (N1); the telegram not located in print (searched 10 Oct 2026).",
       "gap": "N1 one audit (FV-N2f, 10 Oct 2026): Step-0 ruling hit, ordered overlap 0.533 vs shuffle p95 0.200; key adds 28 words (ports, river, units); holder 10442/10443 (Ingalls's clear reply) confirm hour, sender, steamers, the James, New Orleans; 'Palermo' = Nashville is M (FIX job)",
       "depth": "D1",
-      "completeness": "26 code-word groups filed (H 25, C 1), 1 lowered to M (Palermo); body largely clear in the holder's transcription",
+      "completeness": "26 code-word groups filed (H 25, C 1), 1 lowered to M (Gauls, which reads [Nashville]; the audit named Palermo, FIX-FM21); body largely clear in the holder's transcription",
       "phrases": [
         "Huntington mssEC 18 (obj 10074) p.99, pointer 9765, N2-JG"
       ],
@@ -12975,7 +12975,7 @@
       ],
       "depth_sentence": "Ingalls had the ocean steamers in the James ordered to New Orleans within hours of the Quartermaster General's 11.30 a.m. telegram (holder 10442).",
       "depth_check": "Wave 3 Step-0 ruling: body known in holder transcription; depth from the key-dependent words alone (steamers, New Orleans, the James), checked against holder 10442/10443 (D1)",
-      "depth_note": "26 code-word groups filed (H 25, C 1), 1 lowered to M (Palermo); body largely clear in the holder's transcription",
+      "depth_note": "26 code-word groups filed (H 25, C 1), 1 lowered to M (Gauls, which reads [Nashville]; the audit named Palermo, FIX-FM21); body largely clear in the holder's transcription",
       "text": "known"
     },
     {
@@ -13257,7 +13257,7 @@
       "line": "Re-read with War Department Cipher No. 2 (the message is largely clear in the Huntington's transcription): Ingalls told Grant the vessels would be ready and asked whether they should not be assembled at Bermuda Hundred instead of Fort Monroe, Rucker to be told; the key and the spelling give the places. Plaintext already public (N1); not located in print (searched 10 Oct 2026).",
       "gap": "N1 one audit (FV-N2e, 10 Oct 2026): Step-0 hit 0.500 vs p95 0.250; 'Bear mew day Douglas' = Bermuda Hundred, not Bridgeport (leaf checked; FIX job)",
       "depth": "D1",
-      "completeness": "12 code-word groups H, 1 lowered to I (Bear = Ber-, phonetic); body clear in the holder transcription",
+      "completeness": "14 code-word groups H, 1 M (Douglas read as the word Hundred), 'Bear mew day' plain (Bermuda; FIX-FM21); body clear in the holder transcription",
       "phrases": [
         "Huntington mssEC 18 (obj 10074) p.240, pointer 9906, N2-IG"
       ],

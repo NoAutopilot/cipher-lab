@@ -1201,19 +1201,19 @@ Code-word tokens: H 38, C 4, I 3.
 
 {time: 11.30 AM} [25] for [Brig. General] In [Nashville]'s Chief [Quarter Master] [.] Some time since I directed all the ocean [Steam]ers in service at [New York] and [Philadelphia] not actively employed toby sent to the [James] to await such service as might be required stop I am not advised precisely what [Steam]ers are now at Hampton [Road] and [City Point] Stop Ewell give the [Necessary] directions to cause all such that can possibly be spared from service [Of the] pern before [Richmond] to repair at once to [New Orleans] and [Report] to the [Quarter Master] at that [City] for [Order]'s to bring [Troops] [North]  {tail: [signed] [Quarter[?] Master General] Do you want some blankets}
 
-Code-word tokens: H 25, C 1.
+Code-word tokens: H 24, C 1, M 1.
 
 **N2-JH | Page 120 | 9780 | mssEC 18 (obj 10074, pointer 9780; printed page 114), 8 July 1864 11 PM Washington ('F. T. Bickford, Wash'n D. C. July 8th 1864'; entry 0 of the leaf), to Hon. C. A. Dana (decoded 'Dana C A'), signed (decoded) the Secretary of War (M): I would be glad to have you return immediately as the pressure of business in the department requires your assistance; Lew Wallace reports tonight that the enemy are moving in strong force near Urbana, threatening Washington and Georgetown, apparently about 20,000 strong, consisting of Early and Breckinridge's forces; Halleck reports that he has no force that can take the field and that he has so notified Grant; Urbana is about 30 miles from Washington; Hunter's force has not yet left Parkersburg (N2R-5; row 9780/0; holder transcription, leaf not eye-checked)**
 
-[Washington] {date: July 8} {time: 11 PM} For [Dana C A] [.] I would be glad to have you return imm'y as the pressure of [Browns Ferry] in the [Department] requires your assistance [.] [Wallace Lew] [Report]'s tonight that the [Enemy] are [Move (-ed, -ing)]ing in Strong [Force] near Urbana [Towards] [Washington] and [McCallum D C] Town apparently about [20000] strong consisting of Early and [Breckenridge]'s [Force]'s [.] [H W Halleck] [Report]'s that he has no [Force] that can take the field and that he has so notified [Grant U S] [.] Urbana is about [30] [Mile]'s from [Washington] [.] [Hunter D]'s [Force] has not yet left Parkersburg  {tail: [signed] [Secretary of War] end}
+[Washington] {date: July 8} {time: 11 PM} For [Dana C A] [.] I would be glad to have you return imm'y as the pressure of business in the [Department] requires your assistance [.] [Wallace Lew] [Report]'s tonight that the [Enemy] are [Move (-ed, -ing)]ing in Strong [Force] near Urbana [Towards] [Washington] and George Town apparently about [20000] strong consisting of Early and [Breckenridge]'s [Force]'s [.] [H W Halleck] [Report]'s that he has no [Force] that can take the field and that he has so notified [Grant U S] [.] Urbana is about [30] [Mile]'s from [Washington] [.] [Hunter D]'s [Force] has not yet left Parkersburg  {tail: [signed] [Secretary of War] end}
 
-Code-word tokens: H 34.
+Code-word tokens: H 32.
 
 **N2-JI | Page 216 | 9876 | mssEC 18 (obj 10074, pointer 9876; printed page 210), 24 Oct 1864 8 PM Washington ('Caldwell, Washn Oct 24th 64 8 P.M'; entry 0 of the leaf; the ledger tail 'No 2 11 am'), to Maj. Gen. G. G. Meade (decoded 'Meade G G'; M), signed (decoded) the Secretary of War (M): the cases of 'Me I g S' and 'Barn Yard' (names the ledger writes as spelled letters) do come within the principle involved, and that of 'Me I g s' appears to me to be more doubtful than any of the others; unless it shall appear that the appointments are clearly in conflict with law I shall make them, giving the act of Congress the most liberal construction as a meritorious service, and leaving the question to be finally determined by the Senate on the confirmation (N2R-5; row 9876/0; holder transcription, leaf not eye-checked)**
 
-{time: 8 PM} [24] for [Meade G G] [.] The cases of Me I g S and Barn [.] do come with in the principle involved and that of Me I g s appears to me toby more doubt full than any [Of the] others [.] unless it shall appear that the appointments are clearly in conflict with law I shall make them [,] giving tooth act of Congress the most liberal construction as a merry tory us [Follow (-ed, -ing) [#]] of public service and leaving the [Defend (-ed, -ing) [#]] toby finally determined by the Senate on the confirmation [Secretary of War] No 2 11 am
+{time: 8 PM} [24] for [Meade G G] [.] The cases of Me I g S and Barn Yard do come with in the principle involved and that of Me I g s appears to me toby more doubt full than any [Of the] others [.] unless it shall appear that the appointments are clearly in conflict with law I shall make them [,] giving tooth act of Congress the most liberal construction as a merry tory us reward of public service and leaving the question toby finally determined by the Senate on the confirmation [Secretary of War] No 2 11 am
 
-Code-word tokens: H 10, I 2.
+Code-word tokens: H 8, I 1.
 
 **N2-JJ | Page 104 | 9764 | mssEC 18 (obj 10074, pointer 9764; printed page 98), 24 June 1864 11 AM Washington ('SH Beckwith, Hd Qrs Washn June 24th 1864'; entry 2 of the leaf), to Lieut. Gen. Grant at Bermuda Hundred ('Magic'), signed Maj. Gen. H. W. Halleck: as stated in my former dispatch, General Stahel was sent back by General Hunter to collect troops and escort to him a train of ammunition; Stahel is nearly ready to start but has no information as to where he can find Hunter; should your information be such that you deem Stahel's expedition too perilous to be undertaken, please telegraph to that effect; otherwise he will proceed to do the best he can up the Shenandoah Valley (N2R-5; row 9764/2; holder transcription, leaf not eye-checked)**
 
@@ -1229,21 +1229,21 @@ Code-word tokens: H 25.
 
 **N2-IB | Page 190 | 9850 | mssEC 18 (obj 10074, pointer 9850; printed page 184), 25 Sept 1864 Washington, S. H. Beckwith (operator), to Lieut. Gen. Grant, signed (decoded) the Secretary of War (M): it is important to remove Heintzelman from any function and perhaps Rosecrans; have you any objection to Hooker being assigned to the place of one of them; there is no vacant major-general's place for Crook but I am disposed to muster out Heintzelman and make a vacancy; Crook shall have the one that occurs; Duval promoted immediately (N2R-4; row 9850/1; holder transcription, leaf not eye-checked)**
 
-{time: 8 PM} [20] Dalon For [Lieut Gen U.S. Grant] [.] It is [Important] to remove [Heintzelman S P] from any function and perhaps [Rosecrans W S] [.] Have you any objection to [Hooker Jos] being assigned to the place of [1] of them [?] There is no vacant [Major] [General] ship for Crook but I am disposed to muster out [Heintzelman S P] and make a vacancy [.] Crook shall have the [1] that occurs [.] Duval [Harbor] promoted immedy  {tail: [signed] [Secretary of War] good}
+{time: 8 PM} [20] Dalon For [Lieut Gen U.S. Grant] [.] It is [Important] to remove [Heintzelman S P] from any function and perhaps [Rosecrans W S] [.] Have you any objection to [Hooker Jos] being assigned to the place of [1] of them [?] There is no vacant [Major] [General] ship for Crook but I am disposed to muster out [Heintzelman S P] and make a vacancy [.] Crook shall have the [1] that occurs [.] Duval Shelby promoted immedy  {tail: [signed] [Secretary of War] good}
 
-Code-word tokens: H 18, I 2.
+Code-word tokens: H 17, I 2.
 
 **N2-IC | Page 95 | 9755 | mssEC 18 (obj 10074, pointer 9755; printed page 89), 7 June 1864 Washington (cipher time word 3.30 PM), S. P. Kimber (operator), to Maj. Gen. Canby, signed (decoded) Meigs, Quartermaster General (M): what is the gauge of the Vicksburg and Monroe railroad; in the annual report of the Directors there is no grading between Monroe and Shreveport; it is not likely that any work has been done upon it since this rebellion; it is 74 and a quarter miles from Vicksburg to Monroe (N2R-4; row 9755/0; holder transcription, leaf not eye-checked)**
 
-[Washington] {date: June 7} {time: 3.30 PM} For [Canby Ed R S] [.] What is the guage [Of the] [Vicksburg] and Monroe [Rail-road] [?] In the annual [Report] of [31] January [79] Directors [Report] no grading between Monroe and Shreveport [.] It is not likely that any work has been done upon it since this [Importance] [.] It is [74] and [1] quarter [Mile]'s from [Vicksburg] to Monroe  {tail: [signed] Meigs [Quarter[?] Master General] damp again}
+[Washington] {date: June 7} {time: 3.30 PM} For [Canby Ed R S] [.] What is the guage [Of the] [Vicksburg] and Monroe [Rail-road] [?] In the annual [Report] of [31] January [79] Directors [Report] no grading between Monroe and Shreveport [.] It is not likely that any work has been done upon it since this rebellion [.] It is [74] and [1] quarter [Mile]'s from [Vicksburg] to Monroe  {tail: [signed] Meigs [Quarter[?] Master General] damp again}
 
-Code-word tokens: H 26.
+Code-word tokens: H 25.
 
 **N2-ID | Page 238 | 9898 | mssEC 18 (obj 10074, pointer 9898; printed page 232), 23 Nov 1864 10.30 AM Washington, to Col. G. H. Sharpe (decoded; the ledger 'G H Sharp'), signed G. K. Leet (the ledger's own signature): all the hotels in this city and Georgetown have been searched for the man Buyers without avail; there is no hotel at the corner of 21st Street and Pennsylvania Avenue; Captain Potts commanding detectives and patrols will make every effort to find Buyers but thinks he is not in the city (N2R-4; row 9898/2; holder transcription, leaf not eye-checked)**
 
-{time: 10.30 AM} [23] for [Colonel] G H Sharp [.] All the union [Weldon]'s in this [City] and [McCallum D C] town hafbin searched forth man Buyers but with out avail Theres no [Weldon] at corner of [21] St and [Pennsylvania] ave [.] [Captain] Potts [Command (-ed, -ing)]ing detectives & Patrols will make every effort to find Buyers but thinks he snot [In the] [City]  {tail: [signed] G K Leet}
+{time: 10.30 AM} [23] for [Colonel] G H Sharp [.] All the union hotels in this [City] and George town hafbin searched forth man Buyers but with out avail Theres no hotel at corner of [21] St and [Pennsylvania] ave [.] [Captain] Potts [Command (-ed, -ing)]ing detectives & Patrols will make every effort to find Buyers but thinks he snot [In the] [City]  {tail: [signed] G K Leet}
 
-Code-word tokens: H 17, I 1.
+Code-word tokens: H 14, I 1.
 
 **N2-IE | Page 99 | 9759 | mssEC 18 (obj 10074, pointer 9759; printed page 93), 13 June 1864 8 PM Washington, to Maj. Gen. Canby at Vicksburg, signed Col. J. A. Hardie (decoded 'Colonel Hardie'): with regard to the subject of your telegram of the 4th instant to Meigs, the supply of stock and materials for the repair of the railroad from Vicksburg to Monroe, I am directed by the Secretary of War to say that the expediency of the expense is so much doubted that it has been referred to Lieutenant General Grant (N2R-4; row 9759/0; holder transcription, leaf not eye-checked)**
 
@@ -1259,9 +1259,9 @@ Code-word tokens: H 16, C 1.
 
 **N2-IG | Page 246 | 9906 | mssEC 18 (obj 10074, pointer 9906; printed page 240), 5 Dec 1864 11 AM Washington, S. H. Beckwith (operator), to Lieut. Gen. Grant, signed Rufus Ingalls, Brig. General, Quartermaster (the ledger's own 'Roof us In galls'): the vessels will be ready; should they not be assembled at Bridgeport (M for the place name) instead of at Monroe (M); if so please cause General Rucker to be notified; I shall leave at 3 PM to-day (N2R-4; row 9906/0; holder transcription, leaf not eye-checked)**
 
-{time: 11 AM} [5] For [Lieut Gen U.S. Grant] The vassails [Will be] ready [,] Should they not be as sem bled at [Bridgeport] mew day [100] in steady of at [Monroe] [?] If so please cause [General] Rucker toby notified [.] I shall leave at {time: 3 PM} [To day]  {tail: [signed] Roof us In galls [Brig. General] [Quarter Master]}
+{time: 11 AM} [5] For [Lieut Gen U.S. Grant] The vassails [Will be] ready [,] Should they not be as sem bled at Bear mew day [Hundred] in steady of at [Monroe] [?] If so please cause [General] Rucker toby notified [.] I shall leave at {time: 3 PM} [To day]  {tail: [signed] Roof us In galls [Brig. General] [Quarter Master]}
 
-Code-word tokens: H 16.
+Code-word tokens: H 14, M 1.
 
 **N2-IH | Page 79 | 9739 | mssEC 18 (obj 10074, pointer 9739; printed page 73), 19 May 1864 8.30 PM Washington (the ledger's '( 2 )' header), S. H. Beckwith (operator), to Lieut. Gen. Grant, signed (decoded) C. A. Dana (M): it is Canby and not Hurlbut who commands the combined departments of the Gulf and Arkansas; Hurlbut is not on duty; Banks is to be relieved and Reynolds appointed to command the department; the order will be issued tomorrow (N2R-4; row 9739/2; holder transcription, leaf not eye-checked)**
 
@@ -1311,5 +1311,5 @@ Code-word tokens: H 14.
 
 Code-word tokens: H 16, C 1.
 
-Totals over the 148 entries: H 3530, C 126, I 120, M 9.
+Totals over the 148 entries: H 3518, C 126, I 119, M 11.
 <!-- decode.py: derived block ends -->
