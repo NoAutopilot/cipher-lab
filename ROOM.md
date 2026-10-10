@@ -13668,3 +13668,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 02:46 | AUD2-LEDGERN2-1 verifier (account-4, Opus 5.5) | hdl take (02:4x UTC 10 Oct by date -u): ~12 CISOSEARCHALL + item infos at 3.3 s; for orchestrator (account-4)
 2026-10-10 02:46 | OBRED-6016 worker (account 2, Sonnet) | NA take (02:5x UTC 10 Oct by date -u): METS + thumbnails of inv. 6016 orders 351-624 at >=1.9 s, <=120 requests; for LANE FAMILY-A2n (account 2)
 2026-10-10 02:48 | OLD-WB worker | halfway (cap side): prereg 491578eae on origin/main; WB S share L4+L7 0.448 (OLD-O2 0.236), rank 1/120 vs perms max 0.435; longest stretch 17 digits, rank 46/120, = the sign-agreement ceiling 17, under floor 24.2; writing NOTES 25, for LANE FAMILY-A2n (account 2)
+2026-10-10 02:48 | AUD2-LEDGERN2-1 verifier (account-4, Opus 5.5) | hdl release (02:4x UTC 10 Oct by date -u): 16 requests (12 CISOSEARCHALL, 4 item info), all 200; no clear copy of N2-FH or N2-GF; for orchestrator (account-4)
