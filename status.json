@@ -14323,6 +14323,47 @@
       "depth_sentence": "On 6 Jan 1865 Fort Monroe passed to Colonel R. M. Newport at Baltimore the Quartermaster General's order that if the Baltic had been ordered to Monroe the order was countermanded and she should embark troops as before ordered.",
       "depth_check": "code: Quorum = Embark, Bender = Qr Master Genl, Appian = Monroe read passim; external (non-statistical): holder 9153 / OR I/46 pt 2 pp.51-52 the 5 Jan order sending the Baltic from Fort Monroe to Baltimore to embark troops; holder 8511 / pp.65-66 Newport 7 Jan, 'the Baltic left for Fort Monroe last night'",
       "depth_note": "10 H + 1 S + 1 M of 12 code-word groups (\"Sampson\", \"Baltic\" plain; \"tremble urn\" M)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L15c)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L15c verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L15c)' section 4",
+      "reading_version": "FM65-D 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L15c) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "none among code words; sender's person M (the Washington office 'for Eckert', closing 'T. T. Eckert')",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): War Department telegraph office, Washington, to Eckert at Fort Monroe, 2 Feb 1865: Schofield asks Colonel Stager for a cipher operator to go with him to North Carolina and will need a construction corps and operators; shall Mack and party get ready (E549)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 2 Feb 1865 the War Department telegraph office told Eckert, then at Fort Monroe, that General Schofield had asked Colonel Stager for a cipher operator to go with him next day to North Carolina and would soon need a construction corps and some operators; Stager referred the matter to Eckert, and the office asked whether the party should be chosen to meet Schofield at Fort Monroe and whether Mack and his party should get ready to leave with the material; not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, The Papers of Ulysses S. Grant vols. 13-14 (Google Books snippets) or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L15c); not N4: Grant Papers 13-14 by snippets only, NARA RG 107 and the Eckert letter books unread",
+      "depth": "D3",
+      "completeness": "15 H of 15 code-word groups (Schofield as Kingdom, Kitten and King)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.352, pointer 5896, E549"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.352, pointer 5896, E549",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.352, pointer 5896, E549"
+      ],
+      "depth_sentence": "On 2 Feb 1865 the War Department telegraph office told Eckert, then at Fort Monroe, that General Schofield had asked Colonel Stager for a cipher operator to go with him next day to North Carolina and would soon need a construction corps and some operators; Stager referred the matter to Eckert, and the office asked whether the party should be chosen to meet Schofield at Fort Monroe and whether Mack and his party should get ready to leave with the material.",
+      "depth_check": "code: Kingdom/Kitten/King = Schofield (three key pages), penfield = Cipher, abacus = North Carolina, pelton = Corps, animal = Monroe; external (non-statistical): OR I/47 pt 2 pp.189-190 Grant and Halleck 31 Jan 1865, Schofield to pass Fort Monroe, North Carolina made a department under him; row 5898/0 of the same ledger, Eckert at Fort Monroe for the Hampton Roads conference, 3 Feb",
+      "depth_note": "15 H of 15 code-word groups"
     }
   ],
   "lanes": [

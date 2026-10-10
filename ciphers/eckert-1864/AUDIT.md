@@ -17679,3 +17679,176 @@ Requests: hdl.huntington.org 25 (17 CONTENTdm queries incl. control, 1 dmGetItem
 `officialrecords12unkngoog` = ORN I/19, `officialrecords10librgoog` = ORN I/12 200), 2 s apart; be-api.us.archive.org 11, 1.8 s apart (2 x 502);
 www.googleapis.com 13, 1.6 s apart.
 For LANE LEDGER-15 (account 1).
+
+## AUDIT (FV-L15c)
+
+Verifier FV-L15c (account 1, for LANE LEDGER-15), 10 Oct 2026, 12:52-13:3x UTC by `date -u`; a separate session from the readers FM65-B, FM65-C,
+FM65-D and FM65-E, not protecting their conclusions. Scope: **E513, E515** (NOTES "## FM65-B"), **E529** ("## FM65-C"), **E549** ("## FM65-D"), **E551,
+E552** ("## FM65-E"); ciphertext.txt, War Department Cipher No. 1, Fort Monroe ledger mssEC 25 = Huntington object 5952, January-February 1865. Nothing
+decoded beyond key look-ups in key.md. Key source for all six: `period`. No spec exists for eckert-1864, so `judge_plaintext.py` was not run. Intake gate:
+`eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. **Step 0 is a non-test on mssEC 25** (Wave 2 RULING,
+STEP0-KEYCTL): nothing below is classed N1 from step 0; the four N1s rest on a holder clear copy at another pointer or on print, located this session.
+- **Prior work** (`tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<pointer>;date=..;sender=..;recipient=..'
+  --step-type audit`; the six are not items.tsv rows): all six exit 4, "holds: specific 2 (LEAD 2); generic 2 (UNCHECKED-NET 2)". The two LEADs are
+  target-level live claims of other jobs (FM-F1's filing claim of 09:29; the same pair every FV-FM65/FV-L14 audit met) that do not cover these six: CLEAR.
+  UNCHECKED-NET is the generic 1864 OR list; the right 1865 volumes were read this session (s.2). The tool's writes to prior-work.tsv were reverted
+  (not this job's file to change).
+- Scripts: `fortmonroe/fv_l15c_hdl.py` (+ `fv_l15c_hdl.out`, `fv_l15c_hdl2.out`: CONTENTdm full text, all pointers, control 9678 first, six page
+  images at 2400 px to scratch), `fortmonroe/fv_l15c_print.py` (+ `.out`: letters-only phrase grep, 187 volumes = the 184 cached print-check texts with
+  OR I/46 pt 2 and I/47 pt 2 (IA `warofrebellion431unit`, per or_volume_map.tsv), plus OR I/46 pts 1 and 3 and ORN I/11 downloaded to scratch;
+  KWIC for rare names), `fortmonroe/fv_l15c_gb.py` (+ `fv_l15c_gb.out` Grant Papers 13/14 mode, `fv_l15c_g3.out` unrestricted G3 mode; control
+  E531 `"six vessels" Oriental` hit vol. 13 mnRjmhe3QLoC in both), `fortmonroe/fv_l15c_beapi.py` (+ `.out`: IA be-api by identifier and whole
+  collection).
+
+### 1. Duplicates, image
+- **Duplicate diff:** pointers 5857, 5858, 5871, 5896, 5898, 5899 against every `###` header in ciphertext*.txt: their other headers are other rows of
+  the same pages (E514 = 5858/0, E530 = 5871/1-2); no other header names the Binney pay question, the five Baltimore vessels by QMG order, Ericsson
+  and the Puritan, Schofield's operators, the Rhode Island patrol or the Dumbarton. E254 (5829, Brice to Sheldon, 12 Dec 1864, pay via Binney) and E542
+  (5887, the Saugus, "turner back Berrien") are siblings, different telegrams. **No duplicate in our files.** One duplicate in the holder's files:
+  **E551 has a second cipher copy at pointer 9953 (p.287 of the Washington sent ledger, "No 1. Sheldon Ft Monroe Va Wash. Feby 4 1865 fanny for
+  Berrien famish Arthur peach Wessells exclusive ...", not filed in ciphertext*.txt)**; it writes "Berrien" and "Cape fear" in clear.
+- **Image eye check this session, every graded line** (2400 px page images, region crops at 0.62-0.7 scale; the ruled pages give `iiif_lines.py` too few
+  bands, as FV-FM10a and FV-FM65a found): 5857 row 1 (E513, header "1 P.M. Ft Monroe Jan. 5/65" + 8 lines + Sheldon), 5858 row 1 (E515, header + 6
+  lines + Sheldon), 5871 row 0 (E529, header "Ft Monroe Jan. 12/65" + 7 lines), 5896 row 2 (E549, header "Washington Feb. 2/65" + 12 lines in seven
+  ruled columns), 5898 row 1 (E551, header "Washington Feb. 4 1865" + 7 lines + T. T. Eckert), 5899 row 0 (E552, header + 6 lines + Sheldon).
+  **The transcription matches the image word for word on all six** (E513 "Company and whipal officers", "mustard", "laugh plug ditto", "star yoke Amos
+  Binney Chief add Pay Master"; E515 "Shelter Sedgwick and Baltic", "walrus William L James pilgrim and a vinton end"; E529 "quadrants approbation
+  for puritans Shaft", "Block Aid runner Julia arrived", "Niagara and Opal to leave basement Wednesday"; E549 "pandora stagers for penfield operator",
+  "Kitten torch fact", "Mack and party"; E551 "Fanny for Berrying famish arthur / peach wessells exclusive torch Aaron", "K penri to Keep seneca";
+  E552 "she had been promised to / ditto door Bell", "Jay M. Berrying polkant").
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm full text** (p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; hdl token 12:57-12:59 UTC, 29 requests,
+control 9678 returned 9678): Ericsson 14, "Puritan shaft" 0, "buoys lighted" 2 (5871 own; **7696**), Binney 4 (5857 own; 5829, 9913 = Dec 1864; **8505**),
+"mustered December" 33, "muster rolls" 2 (**8505**; 8762 other), "Ariel Illinois" 9 and "Victor Sedgwick" 7 (5858 own; 5854, 5865, 5866, 7682, 8508,
+8511, 8514, 9153 = other telegrams about the same vessels), Dumbarton 2 and "Cambridge Tuesday" 2 (5899 own; **7749**), Berrien 6 (5850, 5886, 5887,
+9693, 9942, **9953**), "exclusive yard" 6 (5898 own; **9953**; others other senses), "patrol Henry" 0, "Cape Fear patrol" 0, "construction corps
+operators" 0, "cipher operator Schofield" 0, "Mack party material" 4 (5896 own; 5713/5716/5744 = 1864), stagers 8 (5896 own; others other dates),
+"operator Schofield" 0, "Kingdom abacus" 1 (own), "report Quartermaster General Ariel Sedgwick Baltic" 0, Perrien 1 (**7749**).
+**Three holder clear copies located, each in the Washington clear book of received telegrams, January-February 1865 (pointers 7681-8540):**
+- **E529 = 7696 (p.38):** "Ft Monroe Jany 13th 1865 Norfolk. 13th for Secy Navy Wash'n. Mr Ericsson writes he has Departments approbation for Puitanco
+  shaft being put in here ---- Shall I get ours out. Blockaderunner Julia arrived Adml Porter & Army to leave Beaufort Wednesday night, Buoys to be
+  lighted, weather here favorable since ---- John Rodgers 930 AM".
+- **E513 = 8505 (p.27):** "2 PM Ft Monroe Va Jany 5th 1865 Norfolk 5th for Br Genl Pay Master Genl Washn . Gen Butler orders payment to & Regimental
+  Officers of a 2nd Expedition . They were not mustered for Dec 31st . I have declined as opposed to law & Genl orders . can authority be had for paying
+  copany & field officers except on muster rolls ? ---- Amos Binney Chf".
+- **E552 = 7749 (p.91):** "520 P. M. Ft Monroe Va Feb 4. 65 Norfolk for Sec Navy ---- Sir : ---- Telegram recd we have but one vessel, the Dumbarton ,
+  ready & she had been promised to Commo. Bell to convey him up the James river ---- the Cambridge will be available on Tuesday next ---- J. M Perrien
+  Comdt".
+- No clear copy of E515, E549 or E551 (E551's 9953 is a cipher copy, s.1).
+
+**Print:**
+- **E551 is printed: ORN ser. I vol. 12** (North Atlantic Blockading Squadron, from 1 Feb 1865), Welles to Berrien, 4 Feb 1865: "... Are there two vessels,
+  exclusive of the Rhode Island, at the yard or in the roads, available to patrol from Cape Henry to Cape Fear River whilst troops are moving south?
+  GIDEON WELLES, Secretary of the Navy. Captain J. M. BERRIEN, U. S. Navy, ..." -- located by IA be-api in `officialrecordso0012unse`
+  (`"exclusive of the Rhode Island"`, 1 hit, snippet "1865. Are there two vessels, exclusive of the Rhode Island, at the yard or in the roads") and
+  by the Google Books API in three ORN copies (iFJIAAAAYAAJ 1901, oX9AAQAAMAAJ, Q-5uZpZFqd8C; `fv_l15c_g3.out`). **Page not resolved:** the item's
+  `_djvu.txt` answered 500 (one retry, 500 again; LEDGER-13 also met 500), and its `_hocr_searchtext.txt.gz` and `_hocr_pageindex.json.gz` 500 too;
+  `_page_numbers.json` answered 200 but cannot be tied to an offset without the text. Not read on the page image.
+- E552 (Berrien's reply) is **not** in ORN I/12 by be-api in the same identifier: `"promised to Commodore Bell"` 0, `Dumbarton` only the vessel list and
+  a 23 Feb report, `"Commodore Bell"` only the 1863 West Gulf heading (the identifier's index works: the E551 hit is the positive control).
+- E529 and E513: not in print on disk (ORN I/11 `Puritan` 0, `John Rodgers` 0, `Julia` 0; OR I/46 pts 1-3, Butler V: phrase grep none, "second
+  expedition" hits in Butler V and OR are Butler's Fort Fisher report, other text); Grant Papers vol. 13 (Google Books, `fv_l15c_gb.out`):
+  `"Amos Binney" paymaster Norfolk 1865` hits vol. 13 with a different telegram (Binney to Grant, a paymaster with $20,000 for Fort Fisher); be-api whole
+  collection `"except on muster rolls"` 0, `"Ericsson writes he has"` 0 (after one 502 and one retry).
+- E515: not printed as such. **Its substance is printed:** OR I/46 pt 2 p.51 (IA `warofrebellion014602rootrich`, page from the running head), Meigs to
+  Col. R. M. Newport, Chief Quartermaster, Baltimore, War Department 5 Jan 1865 10.15 a.m.: "Ariel, Illinois, General Sedgwick, Victor, and Baltic are
+  ordered from Fort Monroe to Baltimore; should be there this morning ..." (= holder 9153, the sent copy); p.66 Newport 7 Jan 6 p.m.: "The Ariel,
+  Illinois, Victor, and General Sedgwick, now here, can carry 3,000 men ... The Baltic left for Fort Monroe last night"; holder 8508 (Newport 6 Jan) "The
+  Ariel, Victor, and Illinois are here coaling". E515 is Fort Monroe's report to Newport that the same five were sent by that order -- the G3 SUBSTANCE
+  shape (the E49/E54/E72 precedent, AUDIT "G3 SUBSTANCE" ruling): a parallel order printed, E515's own text not. Google Books `"William L. James" Ariel
+  Illinois Baltic` 0 in Grant Papers; be-api `"sent to report to you by order of the Quartermaster"` 0.
+- E549: not printed. Context: OR I/47 pt 2 pp.189-190 (IA `warofrebellion431unit`, per or_volume_map.tsv), Grant to Halleck, City Point 31 Jan 1865,
+  "Please inform me when General Schofield will leave Washington. I want to send his instructions to Fort Monroe by a staff officer"; Halleck, 31 Jan
+  8.30 p.m., "General Schofield will leave with first detachment from Alexandria ... Will telegraph in time to have dispatches reach Schofield at Fort
+  Monroe"; Grant to Schofield, 31 Jan, North Carolina to be erected into a department under him. Phrase grep (`"called on Colonel Stager"`,
+  `"construction corps and some operators"`, `"Mack and party"`) none; `"refers the matter to you"` hits other text; Grant Papers 13/14 by Google Books
+  0 (two queries beyond FIX-FM65's two); G3 `Schofield Stager "cipher operator" Eckert February 1865` only a 1963 article on Stager's operators in
+  general; be-api whole collection `"cipher operator to go with him"` 0 (after one 502 and one retry). Eckert himself was at Fort Monroe for the
+  Hampton Roads conference (row 5898/0 of the same leaf, 3 Feb: "the conference has closed and both parties preparing to return"), which is why the
+  message goes "for Eckert" to Fort Monroe.
+- **Unreachable / not searched:** ORN I/12 full text (500, above; reached only by be-api and Google Books snippets); Grant Papers 13-14 page by page
+  (snippets only); NARA RG 107 and RG 45 (Navy) telegram books; Welles's diary; the press (none of the six is a press dispatch); JSTOR; HathiTrust
+  full text.
+
+### 3. Grade and reading corrections (reading.md as of this audit)
+Key collisions found by look-up in key.md, confirmed on the image and, where one exists, by the clear copy or the print: these tokens are **plain**, not H.
+- **E551:** "Berrying" is the name **Berrien** (Capt. John M. Berrien, Commanding Navy Yard, Norfolk: ORN I/11 Porter's orders of Nov-Dec 1864; the
+  cipher copy 9953 and E542 write "Berrien"), not [Chief of Staff]ing (Berry, key p.10). "arthur" = **"Are there"** (phonetic; the print opens "Are
+  there two vessels"), so the telegram is a **question** from the Secretary of the Navy to Berrien, not a statement; "R" = are. **H 16 of 16** code
+  groups (reader 17, less Berrying), every one agreeing with the ORN print (C): Fanny = 11 AM, famish = Norfolk, peach = 2, torch Aaron = of the Rhode
+  Island, optic = at the, sligo wileys = in the Roads, nutmeg = Available, seneca windpipe = Fear River, whiff = Troops, tannering = moving, waxy =
+  South, walrus Buxton = [signed] Secretary of the Navy (Welles). "K penri"/"Keep" = Cape Henry/Cape (I, phonetic, C).
+- **E552:** "promised" is plain on the page and in 7749, not [1000]d (Promise = 1000, numerals p.25); "Berrying" = Berrien (as E551), and "polkant" =
+  **Comdt** (Polka = Command + "ant", phonetic; 7749 "J. M Perrien Comdt"), so the unread signature is **J. M. Berrien, Commandant** (Navy Yard,
+  Norfolk). "ditto door Bell" = **Commo. Bell** (7749; "ditto" here is not a key word); "wranglam" = Telegram (Wrangle = Telegraph + "am", C); "wilby"
+  = will be. The sender is Berrien at Norfolk (Farmer), relayed by Sheldon, answering E551 the same day. **H 13 of 13** (reader 15, less promised and
+  Berrying), all C by 7749 (one = plug, James River = Bergen windsor, Available = nutmeg, Sec Navy = Buxton). Time: 7749 has 5.20 P.M.
+- **E529:** "John" is plain (**John Rodgers**, 7696; the reader flagged the [Grant] misfire). "Julia" stands H by the key as 4 PM, but the period clear
+  copy reads "Blockaderunner Julia arrived": **M** (the ship's name in 7696; a time word in mid-text would be unusual). Date: **13 Jan 1865** -- "Farmer
+  fever" = Norfolk 13 and 7696 "Jany 13th"; the ledger's date line says Jan. 12. "Burton" = Secretary of Navy (H; 7696 "for Secy Navy"); quadrants =
+  Department's, Niagara and Opal = Adml Porter and Army, basement = Beaufort, Eugenia = 9.30 AM: all C by 7696. **H 15 + M 1 of 16** (reader 17, less
+  John).
+- **E513:** "Amos" is plain (**Amos Binney**, 8505), not [New York] (Amos = New York). "whipal" = **Regimental** (Whip = Regiment, key p.23, + "al";
+  8505 "Regimental Officers"): H, not plain. Knox = Butler, rape = Expedition, laugh plug = 31, palate ... Shelby = Brig Genl ... Genl: all C by 8505.
+  **H 17 of 17** (reader 17, less Amos, plus whipal). Time: the ledger says 1 P.M., 8505 says 2 PM (M, which clock). The addressee's name "Brice" is
+  in the cipher copy only (8505 omits it).
+- **E515:** "Sampson" (= Ferry) in the address is plain (J. W. Sampson, the Baltimore operator; FV-FM65a found the same in E519), "Baltic" (=
+  Chattahoochee) is plain (the steamer; OR p.51), "William" (= 100) is plain (Capt. William L. James, A.Q.M.; FV-FM65a, E504). **H 13 of 13** (reader 16,
+  less 3): Jennie = 3.30 PM, paradise = Colonel, Sheaf vincent/vinton = Chief Quartermaster, Baptism = Baltimore, Shelter = General, wick = Report,
+  Belcher = Qr Master Genl, walrus, pilgrim = Captain, a vinton = A.Q.M.
+- **E549:** no collision; Schofield is written with three different code words (Kingdom, Kitten, King), each = Maj Genl J. M. Schofield on its own
+  key page, which is an internal check. pandora = Colonel (Stager), penfield = Cipher, whelp = Tomorrow, abacus = North Carolina, pelton = Corps,
+  paradise = Colonel, torch = Of the, animal = Monroe. **H 15 of 15.** "hymn" = him, "bayou" = by you or to (plain-phonetic, I). Who sends: the header
+  is "Washington Feb. 2/65 ... for Eckert" with the closing "T. T. Eckert" -- the War Department office to Eckert at Fort Monroe under the office's
+  signature: **M** for the sender's person.
+
+### 4. Classes (rule 10) and depth (rule 4a)
+
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E513 | **N1** | period | D3 (H 17/17; C: holder clear copy 8505) | plaintext in the holder's public transcription of the Washington clear copy, mssEC 25 p.27 (pointer 8505) |
+| E515 | **N2** | period | D3 (H 13/13; external: OR I/46 pt 2 p.51 Meigs's order of the same five vessels; p.66 Newport 7 Jan) | substance printed (Meigs to Newport, OR I/46 pt 2 p.51); E515's own text and mapping not located |
+| E529 | **N1** | period | D3 (H 15 + M 1 of 16; C: holder clear copy 7696) | plaintext in the holder's public transcription of the Washington clear copy, p.38 (pointer 7696) |
+| E549 | **N3** | period | **D3** (H 15/15; external: OR I/47 pt 2 pp.189-190 Grant/Halleck 31 Jan, Schofield to pass Fort Monroe for North Carolina; row 5898/0 Eckert at Fort Monroe 3 Feb) | no prior plaintext or decipherment located |
+| E551 | **N1** | period | D3 (H 16/16, all agreeing with print) | printed, ORN ser. I vol. 12 (Welles to Berrien, 4 Feb 1865; page not resolved, s.2) |
+| E552 | **N1** | period | D3 (H 13/13; C: holder clear copy 7749) | plaintext in the holder's public transcription of the Washington clear copy, p.91 (pointer 7749) |
+
+- **N1 is not "nothing gained":** for E551 the ledger shows how the Navy's own question went to Norfolk through the War Department's cipher and
+  Fort Monroe (and the cipher copy 9953 in Washington); for E552 and E529 the clear copies were already public, the key reading only confirms them.
+  No status.json, SO or WORK-QUEUE row for any N1/N2 (brief: N3+ only).
+- **E549 not N4:** Grant Papers 13-14 by snippets only, NARA RG 107 unread, the Eckert papers' own letter books and Bates's *Lincoln in the Telegraph
+  Office* (on disk, `lincolnintelegra00bates`; phrase grep none) not read for Schofield's party.
+- **Safe sentences.**
+  E549 (N3): "Read at grade H with War Department Cipher No. 1: on 2 Feb 1865 the War Department telegraph office told Eckert, then at Fort Monroe, that
+  General Schofield had asked Colonel Stager for a cipher operator to go with him next day to North Carolina and would soon need a construction corps
+  and some operators; Stager referred the matter to Eckert, and the office asked whether the party should be chosen to meet Schofield at Fort Monroe
+  and whether Mack and his party should get ready to leave with the material. Not located in the Official Records ser. I vols. 46-47, ORN ser. I
+  vol. 11, The Papers of Ulysses S. Grant vols. 13-14 (Google Books snippets) or the Huntington's full-text search (searched 10 Oct 2026)."
+  E551 (N1): "The Secretary of the Navy's 4 Feb 1865 question to Capt. J. M. Berrien at Norfolk (two vessels besides the Rhode Island to patrol from
+  Cape Henry to Cape Fear River while troops moved south) is printed in ORN ser. I vol. 12; the Fort Monroe ledger holds its War Department cipher
+  copy, and the period key reads it the same."
+  E552 / E529 / E513 (N1): "Berrien's reply of 4 Feb 1865 (the Dumbarton promised to Commodore Bell; the Cambridge available Tuesday) / John
+  Rodgers's of 13 Jan 1865 to the Secretary of the Navy (Ericsson and the Puritan's shaft; the blockade runner Julia; Porter and the Army to leave
+  Beaufort) / Binney's of 5 Jan 1865 to the Paymaster General (Butler's order to pay officers not mustered for 31 December) is in clear in the
+  Huntington's public transcription of the Washington clear book (mssEC 25 pp.91 / 38 / 27); the period key reads the Fort Monroe cipher copy the same."
+  E515 (N2): "E515 (Fort Monroe to Col. Newport, 5 Jan 1865) reports the sailing of the five vessels that Meigs's order of the same day, printed in
+  OR I/46 pt 2 p.51, sent to Baltimore; E515's own text and decipherment were not located in print."
+- **Unsafe:** any "first", "new", "unpublished" for any of the six; N3 for E551, E552, E529 or E513; "Chief of Staff" or "Jay M." for Berrien; "promised
+  1000" in E552; E529 dated 12 Jan or signed by Grant; "New York Binney"; "Ferry", "Chattahoochee" or "100" in E515; E551 as a statement rather than
+  a question.
+
+### 5. Fixes for the next FIX job (not applied here; reading.md is decode.py output)
+E551: "Berrying" plain (Capt. J. M. Berrien, Comdt Navy Yard Norfolk), not [Chief of Staff]ing; "arthur" = "Are there" (I, C by print); header: a
+question from the Secretary of the Navy (Welles) to Berrien at Norfolk, printed ORN I/12 (page to resolve), second cipher copy holder 9953 (p.287);
+class N1. E552: "promised" plain, not [1000]d; "Berrying polkant" = Berrien Comdt (plain name + Polka = Command, phonetic); "ditto door Bell" = Commo.
+Bell; header: from Berrien at Norfolk for the Secretary of the Navy, 5.20 P.M., clear copy 7749 (p.91); class N1. E529: "John" plain (already noted);
+"Julia" M (blockade runner Julia per 7696); header date 13 Jan 1865 (Fever = 13; 7696), from John Rodgers at Norfolk (7696 gives no rank); clear copy 7696 (p.38);
+class N1. E513: "Amos" plain (Amos Binney), not [New York]; "whipal" = [Regiment]al (H); clear copy 8505 (p.27), 2 PM; class N1. E515: "Sampson",
+"Baltic", "William" plain; header: substance in OR I/46 pt 2 p.51 (Meigs) and p.66 (Newport); class N2. E549: sender M (the office for Eckert); header
+context OR I/47 pt 2 pp.189-190. All six: "image-read by FV-L15c, matches the transcription". Suggestion (not briefed): file holder 9953 (E551's cipher
+copy in the Washington sent ledger) as a cross-reference in E551's note, not as a new entry.
+Requests: hdl.huntington.org 29 (control 9678 once, 22 CISOSEARCHALL, 6 IIIF pages; one take 12:57-12:59 UTC, no drop); archive.org 10 (4 djvu
+downloads: 3 x 200, ORN I/12 x 500; 1 retry ORN I/12 djvu 500; ORN I/12 page_numbers 200, hocr_searchtext 500, hocr_pageindex 500; files metadata 1;
+advancedsearch 1), 2 s apart; be-api.us.archive.org 16 (4 x 502, 2 retried once), 1.8 s apart; googleapis.com 26, 1.6 s apart.
+For LANE LEDGER-15 (account 1).
