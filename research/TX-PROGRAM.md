@@ -67,3 +67,7 @@ one `[SO-TX-EXP-<id>]` PR per experiment, "do not merge"). Collation: a PR-LAND 
 TX-RED grades the PR in its next pass as it grades ours; the lane adds one `research/TX-REGISTER.tsv` row with `campaign=external`;
 any eval/confirm score it needs is run once by the lane under the lane's look budget, never by the runner. Its results are evidence of
 the same grade as ours when the ledger is complete, and "untested-by-this-tool" when it is not.
+Eval eligibility (TX-RED F65, 10 Oct 2026 02:0x UTC): the runner reaches this repository through a connector and can open any file, so
+an outside experiment is collated only after a repository grep of its files and its calls/ directory finds no eval, confirm or confirm2
+item name and no path under those items' folders, and its EXPOSURE.md lists none; an instrument it designed after any such exposure is
+dev/regression evidence only, never a candidate for an eval look, and the register row says so.
