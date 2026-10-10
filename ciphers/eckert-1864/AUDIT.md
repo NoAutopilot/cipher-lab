@@ -18274,3 +18274,90 @@ I/47 pt 2, ORN I/11, Butler Corr. V; OR I/46 pts 1, 3 and ORN I/11 fetched into 
 - **E576**: "[City Point] water" -> Blackwater (plain); "villager" -> [Pontoon]s (M); header "[bridging]" -> pontoons; Ord's summary OR I/46 pt 3 p.9.
 - Unfiled holder rows met: **5932** (Gordon's 6.30 p.m. reply in cipher, OR I/46 pt 2 p.993: N1 if ever filed) and **9957** row 1 (E555's Washington
   copy in "#3"; reading it is an independent cross-check of E555).
+
+## AUDIT 2 (second adversarial, AUD2-LEDGER15-3)
+
+Second verifier AUD2-LEDGER15-3 (account 1, Opus 5.5, WORK-QUEUE row AUD2-LEDGER15-3, for LANE LEDGER-15), 10 Oct 2026, 13:42-14:0x UTC by `date -u`; a
+separate session from the reader (FM65-D) and from the first verifier (FV-L15c), not protecting either. Item: **E549** only (mssEC 25 = Huntington object
+5952, p.352, pointer 5896, row 2; War Department Cipher No. 1; Washington 2 Feb 1865 to Geo. D. Sheldon at Fort Monroe "for Eckert", closing "T. T.
+Eckert"). Claim under audit: AUDIT (FV-L15c) s.4, "E549 N3, period, D3 (H 15/15)". Nothing decoded beyond key look-ups in key.md. No spec exists for
+eckert-1864, so `judge_plaintext.py` was not run. Step 0 not used. Scripts: `fortmonroe/aud2_l15_3_hdl.py` (+ `.out`), `fortmonroe/aud2_l15_3_gb.py`
+(+ `.out`); Plum vol. 2 and the OR greps were inline python over the downloaded / cached `_djvu.txt` (Plum text in scratch, not committed).
+
+### 1. Key, image
+- **Key re-check, every code word, key.md:** Kingdom / Kitten / King = Maj Genl J. M. Schofield (p.16 ll.20-21, three separate rows), Pandora and
+  Paradise = Colonel (p.19 l.4), Penfield = Cipher (p.19 l.9), Whelp = Tomorrow (p.24 l.4), Abacus = North Carolina (p.9 l.13), Pelton = Corps (p.19
+  l.8), Torch = Of the (p.22 l.10), Animal = Monroe (p.9 l.22), Unity / Zebra / Zodiac = Period (pp.22, 24): **15 of 15 agree with FV-L15c.** Collision
+  check of every plain word of the body against key.md: only "meet" and "answer" are key entries, and only as route line indicators (8 lines p.5; 3
+  lines p.2); here both read in place as plain English in an 11-row, 7-column grid, so neither is an indicator: plain stands. "stagers", "mack",
+  "operator(s)", "construction", "party", "material", "selected" are not key words. **No collision; H 15/15 confirmed.**
+- **Image eye check this session** (IIIF 2400 px, pointer 5896, two region crops of row 2): header "Washington Feb. 2/65", "Geo. D. Sheldon Ft
+  Monroe", the 11 ruled lines read row by row ("for Eckert unity Kingdom has Called on / pandora stagers for penfield operator to go / with hymn whelp to
+  abacus and says / he will in a short time need / Construction pelton and some operators zebra paradise / refers matter to you and has informed /
+  Kitten torch fact zodiac can you have / the party selected bayou meet King at / animal to accompany him and shall I / have mack and party get ready to /
+  leave together with the material unity answer"), signature "T. T. Eckert". **Matches ciphertext.txt word for word.**
+
+### 2. Search (independent of FV-L15c; families FV-L15c did not cover first)
+- **Holder full text** (CONTENTdm p16003coll11, `CISOSEARCHALL`, suppressfulltext=1, all pointers; hdl takes 13:44-13:45 and 13:5x UTC, 14 requests,
+  control 9678 returned 9678): "Mack party" 8 (5896 own; 5713/5716/5722/5744 = May-June 1864 Bermuda Hundred; 13009, 13439, 12776 = 1864), "Mack
+  material" 6 (5896 own; 7870; others 1864), "party selected" 2 (5896 own; 9856 = Oct 1864, other), "Schofield operators" 1 (7842 = O'Brien at Kinston
+  22 Mar 1865), "Mack Schofield" 1 (10511, Sherman 1864, "Mack Cook", other), "Schofield accompany" 3 (8349 1863; 8538, 8549 = Grant on Schofield and
+  Fort Fisher, other telegrams), "Stager Schofield" 4 (all 1863), "construction corps" 14 (none Feb 1865 about Schofield's party), "cipher operator" 31
+  (none 2-3 Feb 1865), "Schofield Monroe operator" 0, "Schofield Carolina operator" 0, "operators Newbern" 0. **No clear copy, no second cipher copy, no
+  reply from Eckert located** (the Washington sent ledger, where E551's cipher copy 9953 sits, gave no hit on these words). Context found: **7870**
+  (Washington clear book, Fort Monroe relay of R. O'Brien, Goldsboro 14 Apr 1865: "have started Mack home will try to let Wortman & DeForrest go soon")
+  and **7842** (O'Brien, Kinston 22 Mar 1865, asking for operators): Mack and O'Brien's party were in North Carolina with Schofield in March-April 1865,
+  which is what E549 asks to set in motion.
+- **Plum, *The Military Telegraph during the Civil War* (1882) vol. 2** (IA `militarytelegraph02plumrich`, `_djvu.txt` downloaded once, full grep):
+  p.274 "Next month General Schofield arrived ... Richard O'Brien, chief operator with General Butler, and a party of telegraphers were sent with
+  Schofield to take charge of the telegraphs in this new field"; p.278 the operators in North Carolina (Wortman, DeForrest, Clarke, Sponagle and
+  others; running heads 277/278 in the OCR). "Mack" 0, "Mack and party" 0, "construction corps and" 0, "cipher operator" 13 (none about Schofield's request). **The outcome is printed as a
+  historian's summary; E549's text, its request and its persons (Stager's referral, Mack) are not.** Not the G3 SUBSTANCE shape (that needs a printed
+  parallel order whose content the telegram relays; Plum prints neither an order nor the request): N3 stands.
+- **OR ser. I vol. 47 pt 2** (IA `warofrebellion431unit`, cache; or_volume_map.tsv true label): the index's only Eckert entry, **p.205**: "Fort Monroe,
+  Va., February 2, 1865 -- 1 p.m. ... Hon. Edwin M. Stanton ... Major Anderson, bearer of dispatches from General Sherman to General Schofield, leaves
+  for Annapolis ... T. T. ECKERT": a second external check that Eckert was at Fort Monroe on E549's date (E550 is Anderson's own telegram). "Stager" 0
+  in the volume and its index; "operator(s)" near "Schofield" 0; "Mack" 2 (other); p.393 Eckert's note on a Dodge dispatch (11 Feb, other). OR I/46 pt
+  2 (cache): "Stager" 0, "Mack" 0; Eckert 31 (the Hampton Roads mission, 30 Jan-3 Feb), none on operators for Schofield.
+- **Google Books API** (keyed, country=US, 15 requests, 1.6 s apart): `"construction corps and some operators"`, `"cipher operator to go with him"`,
+  `"refers the matter to you" Schofield`: 0 relevant (generic matches); `Schofield Stager "cipher operator" 1865` 1 (1937 book, general); `"Mack and
+  party"` 10, one Civil War title: **J. E. O'Brien, *Telegraphing in Battle* (1910), lqpD3-Li_0EC, no snippet** -- a lead (the book's "Mack and party"
+  is most likely the May 1864 Jamestown party of holder 5713, O'Brien being with the Army of the James), **not read**: IA `telegraphinginba00obri`
+  `_djvu.txt` answered connection reset (one try; archive.org was resetting at 13:46 and 13:5x, three resets, after which one Plum download succeeded).
+  Intitle-restricted queries (Plum, Telegraphing in Battle) 0.
+- **IA be-api whole collection** (2 phrases, after a positive control `"exclusive of the Rhode Island"` 10 hits): `"Mack and party get ready"` 0,
+  `"called on Colonel Stager for a cipher operator"` 0.
+- **Not searched / unreachable:** O'Brien, *Telegraphing in Battle* (1910) full text (lead above; connection reset); OR ser. III vols. 4-5 (Stager's
+  annual reports; not on disk, not fetched this session); NARA RG 107 telegram books; the Eckert papers' letter books; Grant Papers 13-14 page by page;
+  Schofield, *Forty-Six Years in the Army* (1897); newspapers (E549 is not a press dispatch); JSTOR; HathiTrust full text.
+
+### 3. Class, depth, key
+
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E549 | **N3** (confirmed, second audit) | period (War Department Cipher No. 1, key.md = mssEC 41) | **D3** (H 15/15; external: OR I/47 pt 2 pp.189-190 and p.205; Plum II pp.274, 278; holder 7870/7842) | no prior plaintext or decipherment located after both audits' searches |
+
+- **Not N4:** O'Brien 1910 unread (a live lead), OR ser. III unread, NARA RG 107 and Grant Papers 13-14 page by page unread.
+- **Depth D3, not D4:** every cipher token H, no residue, but no rule-7 fresh re-derivation in a separate session yet and the external checks are
+  context (date, place, outcome), not a text of the telegram.
+- **Safe sentence (adds to FV-L15c's):** "Read at grade H with War Department Cipher No. 1: on 2 Feb 1865 the War Department telegraph office told
+  Eckert, then at Fort Monroe, that General Schofield had asked Colonel Stager for a cipher operator to go with him next day to North Carolina and would
+  soon need a construction corps and some operators, and asked whether Mack and his party should get ready to leave with the material. Plum's history
+  of the Military Telegraph (1882, vol. 2 p.274) records that Richard O'Brien and a party of telegraphers were sent with Schofield; the telegram itself
+  was not located in the Official Records ser. I vols. 46-47, ORN ser. I vol. 11, Plum, The Papers of Ulysses S. Grant vols. 13-14 (Google Books snippets)
+  or the Huntington's full-text search (searched 10 Oct 2026)."
+- **Unsafe:** any "first", "new", "unpublished"; "Stager wrote" (the office signs "T. T. Eckert"; sender's person M, as FV-L15c); "O'Brien was chosen
+  by this telegram" (Plum names him, E549 names no operator).
+
+### 4. Postmortem and propagation
+- FV-L15c's class, depth and grades hold; its search was sound but did not read the Military Telegraph's own histories, which its own SO prompt named
+  as the place to start. Plum is now read (context, not print); O'Brien 1910 and OR ser. III remain.
+- Reading: no fix. FV-L15c s.5 "E549: sender M; header context OR I/47 pt 2 pp.189-190" stands; add for the FIX job: "context also OR I/47 pt 2 p.205
+  (Eckert at Fort Monroe 2 Feb 1 p.m.), Plum II p.274, holder 7870 (Mack in North Carolina to 14 Apr 1865)".
+- Propagated: status.json E549 -> audit_status "two audits", audit_refs + this section, gap and depth_check updated, line unchanged in substance;
+  `second-opinions/PROMPT-chatgpt-e549.md` "where we have looked" now lists Plum vol. 2 and names O'Brien 1910 as the start (row SO-ECKERT-E549 stays
+  queued, prompt not yet posted); WORK-QUEUE AUD2-LEDGER15-3 -> done.
+- Requests: hdl.huntington.org 14 (13 + 1 IIIF; two takes, no drop; control 9678 once; note: AUD2-LEDGER15-2 posted a take at 13:44 in the same minute
+  as this session's first take, so the two overlapped by about a minute); archive.org 6 (1 advancedsearch reset + 1 retry reset, 1 metadata 200, 1
+  advancedsearch 200, Plum djvu 502 then 200, O'Brien djvu reset), >= 2 s apart; be-api.us.archive.org 3 (1 control + 2 phrases), 2 s apart;
+  googleapis.com 15, 1.6 s apart; gutendex.com 1. For LANE LEDGER-15 (account 1).

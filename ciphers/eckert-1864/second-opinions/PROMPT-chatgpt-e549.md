@@ -12,10 +12,10 @@ THE ITEM
   key https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/key.md, search log
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/eckert-1864/AUDIT.md (section "AUDIT (FV-L15c)").
 
-WHERE WE HAVE LOOKED: Official Records ser. I vols. 46 pts 1-3 and 47 pt 2 and ORN ser. I vol. 11 (full text, by phrase and by name); Butler's Private and Official Correspondence vol. V; Bates, Lincoln in the Telegraph Office (full text, by phrase); The Papers of Ulysses S. Grant vols. 13-14 (Google Books snippet search only); Internet Archive full-text search across all collections; the Huntington's CONTENTdm full-text search across the whole Eckert collection.
+WHERE WE HAVE LOOKED: Official Records ser. I vols. 46 pts 1-3 and 47 pt 2 and ORN ser. I vol. 11 (full text, by phrase and by name); Butler's Private and Official Correspondence vol. V; Bates, Lincoln in the Telegraph Office (full text, by phrase); The Papers of Ulysses S. Grant vols. 13-14 (Google Books snippet search only); Internet Archive full-text search across all collections; the Huntington's CONTENTdm full-text search across the whole Eckert collection; Plum, The Military Telegraph during the Civil War (1882) vol. 2 (full text: p.274 says only that Richard O'Brien and a party of telegraphers were sent with Schofield; no Mack, no Stager referral).
 
 WHERE WE HAVE NOT YET LOOKED PROPERLY (start here)
-- Histories of the U.S. Military Telegraph (Plum, The Military Telegraph during the Civil War, 1882; O'Brien's and Stager's reports) for the operators and construction corps sent with Schofield to North Carolina in February 1865; OR ser. III vols. 4-5 (the Military Telegraph's annual reports); NARA RG 107 telegram books; the Papers of Ulysses S. Grant vols. 13-14 page by page; newspapers of February 1865; Google Books; HathiTrust; JSTOR.
+- J. E. O'Brien, Telegraphing in Battle (1910), which Google Books shows contains the words "Mack and party" (context not seen); Stager's and O'Brien's reports for the operators and construction corps sent with Schofield to North Carolina in February 1865; OR ser. III vols. 4-5 (the Military Telegraph's annual reports); NARA RG 107 telegram books; the Papers of Ulysses S. Grant vols. 13-14 page by page; newspapers of February 1865; Google Books; HathiTrust; JSTOR.
 
 HOW TO REPORT (this part is the same for every label)
 - Write your answer as one Markdown file in the repository github.com/NoAutopilot/cipher-lab at the path
