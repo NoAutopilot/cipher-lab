@@ -7016,3 +7016,27 @@ Read so far: E622 extended to the whole telegram (H 179), E624 filed (thin); FM-
 - [ ] image-check: not tried; ~$0.4 as above
 - [x] retry: one 502 retried once after 25 s
 Verdict: keep going: 4 internal gaps; cheapest next: the printed page eye-check, ~$0.1
+
+## LR-RES (10 Oct 2026, account 1, for LANE LEDGER-18)
+Worker LR-RES (Sonnet 5.5), unit 3 of 3, 17:5x-18:0x UTC by `date -u`. Status unchanged (partial). Rule 10: found / not found only; no grade or key change. Prior-work (by hand): own work = "## MS18-R9" print paragraph and AUDIT.md E403 ("not located"; the E403 gap named in "## FV-MS18" as next: OR ser. II vol. 7 / ser. III vol. 4 by page); ROOM claims on E403: none live; fortmonroe/ not touched.
+**E403 (9877/3, 28 Oct 1864, arrest of Stephen Maxon, Stevenson, McHenry, Dana).**
+- OR ser. II vol. 7: IA `warofrebellion0207rootrich` `_djvu.txt` (4.9 MB), title page read ("SERIES II VOLUME VII", Government Printing Office 1899). Letters-only, spacing-tolerant greps: Maxon 0 (also Maxen, Donahue, Donohoe, Donohue 0); "State agent" 0; "soldier vote" 0; "Amos" only Amos Kendall, Putnam, Eaton, Smith (index and text); "Stevenson" only Pemberton's staff (Vicksburg), R. R. Stevenson and Thomas Stevenson index lines and a 6 Aug 1864 statement note, no Oct 1864 item; "within the limits of your command" 1 (line 5831, a different clause about quarters) and "report to this Department by telegraph" 1 (line 10706), neither the entry. Fort McHenry 8 lines; the only Oct 1864 one is Stanton to Brig. Gen. Morris, Fort McHenry, 27 Oct 1864 (about visitors to prisoners), a neighbouring item of another sender and subject, not a witness. "Military commission" 16 (the volume's prisoner-trial material). Not found: the E403 text or a Maxon arrest order in OR II/7, whose subject is prisoners and political prisoners; the miss is a search result (the same volume's Oct 28 1864 pages print a Bureau of Military Justice letter to Seward, unrelated).
+- OR ser. III vol. 4: the id was not resolved. `warofrebellion0304rootrich` (guessed from the ser. 3 vols. 1-2 pattern `warofrebellion030Nrootrich`) answered 403 "Item not available"; an advancedsearch on `identifier:warofrebellion03*` lists only ser. 3 vols. 1-2 and "v.3"; two candidate ids `warofrebellionco0004unit` / `warofrebellionco0004vari`, title pages by Range GET, both read "SERIES I VOLUME IV" (not ser. III). Not searched: OR ser. III vol. 4. Next: a title-page-checked id for ser. III vol. 4 (the series' 1864 volume, correspondence), e.g. via HathiTrust bibliographic API or Cornell's `cu31924077...` ids, then the same greps, ~USD 0.2.
+- The Ferry-Donohue commission record, Dana's papers, the Baltimore and New York press 28 Oct-1 Nov 1864, Google Books: not run (as AUDIT.md logged; Google Books API 429 for the host in ROOM at 17:31).
+Requests: archive.org 7 (3 advancedsearch, 2 `_djvu.txt` GETs [one 200, one 403], 2 Range GETs; one advancedsearch was made before its ROOM take and is counted in the release line); hdl 0. Subagents: 0.
+
+### Remaining gaps (LR-RES unit 3)
+Read so far: no reading added; E403 stays N3 D1, not located.
+- OR ser. III vol. 4 for E403 - blocker: not-attempted; id not resolved; next: find the title-page-checked ser. III vol. 4 id and grep it for Maxon, Stevenson, Dana 28 Oct 1864, ~USD 0.2
+- Ferry-Donohue commission record, NY and Baltimore press 28 Oct-1 Nov 1864 - blocker: not-attempted; next: a phrase search of the press on the Library of Congress or IA, ~USD 0.3
+- E403 unread codes ("Amos" name word, Fort McHenry reading) - blocker: open-codes; stay M
+
+### Escalation (LR-RES unit 3)
+- [x] siblings: none new
+- [x] clear-pages: none
+- [x] known-keys: No. 1 only
+- [x] print: OR II/7 read (not found); ser. III vol. 4 id not found, step stays open
+- [n/a] key-rebuild: no key edit
+- [n/a] image-check: nothing to check (E403's leaf was read in MS18-R9)
+- [x] retry: one 403 on a guessed id, not retried (a guess, not a transient)
+Verdict: keep going: 2 internal gaps; cheapest next: resolve and grep OR ser. III vol. 4 for E403, ~USD 0.2
