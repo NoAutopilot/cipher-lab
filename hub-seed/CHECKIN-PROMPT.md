@@ -171,3 +171,9 @@ sensitivity check not re-declared. TX-RED inc. 2 asked to hand over after pass 1
 and archive it. Lane inc. 5 likewise on "ready for incarnation 5". WVO-153-KEY-2 done (153 = key_98 System B; rest parked). L74 resumed.
 STATE DELTA 01:3x UTC 10 Oct: preview site published private https://claude.ai/artifact/3vTAKPQQRWAbgVMXxM43Pc (republish with the same file_path research/mockups/site/index.html + root + files map after any rebuild; manifest.tsv needs contentType text/plain).
 STATE DELTA 02:0x UTC 10 Oct: lane inc. 5 = session_01ERAcUeCn1HuAUASaqBTzcf (created from here); inc. 4 ledgered 22.28, archived, routine deleted. TX-RED inc. 3 still to create on its ready message (brief .claude/briefs/runs/2026-10-09-account4-tx-red.md + hub-seed/TXRED-SUCCESSOR-PROMPT.md).
+STATE DELTA 02:0x UTC 10 Oct: TX-RED inc. 3 = session_01X3CDfBTKgm75BMx43r7AWj (created from here; inc. 2 ledgered 28.33 by the archive reading, archived).
+Lane inc. 5 = session_01ERAcUeCn1HuAUASaqBTzcf. F65 closed in TX-PROGRAM. STANDING DUTY (owner 02:0x: "we'll add more as we find more"):
+at every check-in where status.json's N3+/D2+ result set changed since the last site build, run `python3 research/mockups/site/build_site.py`
+(its test too), commit by path, and republish the folder to https://claude.ai/artifact/3vTAKPQQRWAbgVMXxM43Pc (file_path research/mockups/site/
+index.html, root research/mockups/site, files map of every other file, manifest.tsv as text/plain); a new reading that outscores a current
+display gets a curator pass (EXHIBIT-2 shape) and the owner is told, never a silent swap; nothing below the verifier bar gets a page.
