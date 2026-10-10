@@ -107,3 +107,32 @@ skip if filed), 9759/1, 9732/1 (spares 10048/1, 10003/2). Then one received-ledg
 by AUD2-LEDGER-33) -- extract and decode it the way the mssEC 19 readers did (NOTES names their scripts) and file it with the next ID. IDs from E371 (fetch first; take
 the next free one if taken). NOTES "## MS18-R7 (10 Oct 2026, account 1, for LANE LEDGER)" with the per-row line; Remaining gaps / Escalation; gaps_check; decode
 --check. No audits. Unit ~0.25 per row.
+
+---
+
+# Wave 3 (written 10 Oct 2026 00:5x UTC; seven_day allowed_warning on every worker, continuing per lane-common-blast; lane ~30.4 workers + ~3 orchestrator at writing; the last planned wave)
+By get_session: FIX-FM18 0.86, FV-MS18l 6.54 (E366 E369 N3 D3, E370 N3 D2; AUD2-LEDGER-36), FV-MS18m 4.39 (E361-E365 E367 E368 N1 D3; slips in s.6), MS18-R7 2.70
+(E371-E381: 5 printed + E379 quoted dispatch printed; E371 E374 E375 E378 E381 not located). Wave 2 14.49.
+
+## FIX-FM19 (Sonnet 5.5; cap $2, box 60 min, no network)
+Exactly the FIX-FM18 method (wave 2). Sources: AUDIT.md s.5 of "## AUDIT (FV-MS18l)" (Chant = Chart, spartons = Spartan = Horse, shade = Forage, King and Queen
+C.H. clear, Dana signer, holder 7905/8728/8756 header notes) and s.6 of "## AUDIT (FV-MS18m)" (E367 transcription drops "tannering" -- ciphertext.txt may be corrected
+ONLY because FV-MS18m eye-checked it on the leaf: cite the crop/canvas in a dated note; E367 date 24 not 20; E364 header "June" inserted; Wooster/darling/persons plain;
+OR page headers). status.json / SO propagation; decode --check x3 exit 0; depth_check; file_shrink_guard; NOTES "## FIX-FM19 (10 Oct 2026, account 1, for LANE LEDGER)".
+
+## FV-MS18n (Opus 5.5, first verifier, separate from every reader; cap $7.5, box 110 min): E371, E374, E375
+Exactly "## FV-MS18j" (wave 1); NOTES "## MS18-R7" says what was read by date.
+- E371 (9842/1, 15 Sept 1864, Meigs to Allen at Louisville: withdraw all Government funds from Col. Ferry; OR I/39 pt 2 and III/4 by date; Ferry appears in E352 too);
+- E374 (9673/1, 6 Feb 1864, to McCallum at Nashville: Devereux, Anderson, signed Whiton; OR I/32 pt 2 by date, Military Railroad reports, III/4);
+- E375 (10061/0, 20 Oct 1865, Eckert to Baker at Baltimore: watch the man referred to; holder clear 8012 (Isaac Surratt in Baltimore) is context -- open it and say
+  whether it is a clear copy or the subject; also test the book (Oct 1865: the handoff had no book in hand -- the reader read it with No. 1; confirm by sense against
+  No. 2/No. 9 and the shuffled key); Baltimore press Oct 1865, Surratt trial records).
+AUDIT.md "## AUDIT (FV-MS18n)". N3+ D2+: WORK-QUEUE `AUD2-LEDGER-37` (next free if taken; account-3, Opus 5.5, cap 2.5 per entry). Unit ~2.5 per entry.
+
+## FV-MS18o (Opus 5.5, first verifier; cap $5, box 90 min): E378, E381
+Exactly "## FV-MS18j" (wave 1), on:
+- E378 (9820/3, 16 Aug 1864, to Horner at New York for Dana: the Princess may be released, send detectives along; Keith's message -- the Keith / Halifax affair of
+  E346 and holder 9816/9817 (AUDIT 2, AUD2-LEDGER-31): read those as context; names M, H 8 only -- say whether D2 is reachable);
+- E381 (mssEC 19 p.364, 9258/2, 27 July 1865, to Barton at Memphis: action in respect to Ryan approved; send forward the witness -- the E358 case; AUDIT 2
+  (AUD2-LEDGER-33) lists the press and Katz 1982 already searched; check the mssEC 19 received-ledger duplicate and holder 10043/2 first).
+AUDIT.md "## AUDIT (FV-MS18o)". N3+ D2+: WORK-QUEUE `AUD2-LEDGER-38` (next free if taken). Unit ~2.5 per entry.
