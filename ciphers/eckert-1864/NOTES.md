@@ -4508,6 +4508,40 @@ Not applied: E362 header label "(1)" and E370 "Kidnaps" (optional in the audit);
 
 Decode: `decode.py --check`, `decode_no2.py --check`, `decode_no9.py --check` each "reading ... is current", exit 0.
 
+## FIX-FM20 (10 Oct 2026, account 1, for LANE LEDGER-10)
+
+Worker FIX-FM20, 04:3x UTC by `date -u`, offline (git only). Carries AUDIT.md s.5 of "(FV-MS18n)", "(FV-MS18o)", "(FV-N2d)", "(FV-O9a)", the s.4 corrections of AUDIT 2 AUD2-LEDGER-34 .. -38 and s.7 of "(FV-MS18p)" into ciphertext.txt / ciphertext-no2.txt / ciphertext-no9.txt as headers, per-entry decoder lines (`plain:`, `variant:`, `gloss:`, `merge:`) and `note:` lines; reading*.md only by `decode*.py --write`. No key row touched; classes and depths are the verifiers' (E378 and E381 N1 D1 per AUD2-LEDGER-38; the SO rows were already withdrawn).
+
+**Transcription edits (each from an audit's image read, marked `<del>/<ins>` and in git history):** E378 line 2 "wrangler" -> "wrangles" and the doubled "The the" -> "The" (FV-MS18o s.5, leaf eye-checked); N2-HC gains the four lines it was thought to lack (they are the head of leaf 9808, quoted whole in FV-N2d s.0; the audit does not record the line breaks, so they are entered as one line). E374 "Devereux" is NOT edited: FV-MS18n read the crop as "Devrux" or "Deverux" (ambiguous), so the reconciled spelling stays with a dated note (plain text, decodes the same).
+
+| Entry | Change | Decoder before -> after |
+|---|---|---|
+| E371 | header: Colonel Ferry = Capt. John H. Ferry, A.Q.M. vols. (AGO S.O. 279, 24 Aug 1864; I by print, AUD2-LEDGER-37; supersedes the Ferry/Terry hedge); note | H 14 -> H 14 |
+| E372 | `plain: hudsons`; signer Major-General and Chief of Staff; leaf eye-checked, print on the page image (FV-MS18p) | H 14 -> H 14 |
+| E373 | `variant: francis=Francis:M` (time word 12 vs print 1.40 a.m.) | H 15 -> H 14, M 1 |
+| E374 | Devereux = J. H. Devereux, Anderson = Adna Anderson (I, context 8898); Devrux/Deverux dated note | H 11 -> H 11 |
+| E375 | `plain: watch` (key row Surrender had been applied); header L. C. Baker [Elsee = L. C., M], the man = Isaac Surratt (8012), context 8828/8830 | H 12 -> H 11 |
+| E376 | `plain: pipe` (Pope); leaf eye-checked | H 18 -> H 18 |
+| E377 | `plain: person` (key row 5 had been applied); Polka/"direction" noted, not changed | H 12, C 1 -> H 11, C 1 |
+| E378 | `plain: princess trade` (rows Captain, Outflank had been applied); "wrangles" = Telegraph; header 6 PM, Dana (Insanity H), signer walrus Bruno H, schooner Princess (C by holder), "not located" -> N1 (AUD2-LEDGER-38) | H 8 -> H 7 (the audit's H 7) |
+| E379 | `plain: anna` (the spurious {time: 2 AM} on "Cyntha anna" is gone); header hour "12 m" -> 12 midnight | H 48 -> H 47 (the audit's table says 48 after correction; it kept the spurious time token in the count; the decoder's 47 is used in status.json) |
+| E380 | `plain: camden` (key row Dalton had been applied); pencil annotations noted, untranscribed | H 33 -> H 32 |
+| E381 | header 11 AM (fanny), signer Secretary of War (Brutus H), context 7976/7978, "not located" -> N1 (AUD2-LEDGER-38) | H 12 -> H 12 |
+| E358 | note: 9258/2 = E381 and 7978 answers E381 as well | none |
+| N2-FF | header: the "230 Pm" tail remark withdrawn | none |
+| N2-HB | `plain: smith` (key row 100), `gloss: hawkinsworth=Leavenworth:C`; header: signer M. C. Meigs, Leavenworth; IN PRINT Grant Papers vol. 12 (note) | H 53, C 2, I 5 -> H 51, C 3, I 5 |
+| N2-HC | `plain: presume opinion endeavor`; `merge: n+pauline` + `gloss: npauline=encamped:C`; four lines from 9808 added; header: IN PRINT OR I/37 pt 2 p.573, signed Halleck | H 40 -> H 43, C 1 |
+| N2-HF | `plain: flags` (key row Acton had been applied); leaf eye-checked on crops | H 30, I 2 -> H 29, I 2 |
+| O9-DC, -DE, -DH, -DI, -DA | headers and notes only: Marcia C. Day (context, I), Stewart Van Vliet, leaf eye-checked, Edwin L. Brady, 4491 answered by DH/DI, Welles Diary, O9-DA's 4551 lead (note only); OR II/6 searched: 0 | none |
+
+Totals: decode.py "H 5606, C 80, I 25, M 40, S 17, U 10" -> **H 5600, C 80, I 25, M 41, S 17, U 10**; decode_no2.py "H 2966, C 106, I 107, M 9" -> **H 2966, C 108, I 107, M 9** (N2-HB -2 H +1 C, N2-HC +3 H +1 C, N2-HF -1 H); decode_no9.py unchanged.
+
+Not applied (the audits' own optional or out-of-scope items): FV-MS18p's "Sabine/Saline" and "shelter/Shetter" stay notes (no transcription edit); the E379 day word, E375 day word "Larch" and the key questions (person = 5, Camden = Dalton, Polka, Princess/Trade/Flag/Smith/Hotly rows: now at least a dozen entries of this plain-word shape) belong to the KEY lane; unfiled siblings 9047/0, 10061/1, 8898/1 are readers' rows; the 9732 pencil annotations and holder 9734 are leads. AUDIT (FV-MS18n) s.2's "OR III/4 not on IA" is superseded by AUD2-LEDGER-37 (on IA as in.ernet.dli.2015.171703, OCR unusable); the cache label for `warofrebellion431unit_djvu.txt.gz` (OR I/47 pt 2) is a tools note. AUD2-LEDGER-34 and -36 name only FIX-job context notes (E351/E355/E356 "MS18-R5" context, E366 and E370 context lines) and E369's M question, already settled in FIX-FM19. The AUD2-LEDGER-34/-35/-36 context lines (E351, E356, E357, E366, E370) and E369's header/M decision are `note:` lines on those entries (E369: the M stays on Chant in the decoder, on the day word in the audit and status.json; see its note).
+
+Propagation (rule 10): status.json E379 completeness/depth_note (47 H) and N2-HF gap/completeness/depth_pct updated; SO prompts E371, E374, E375, E379, N2-HF and O9-DC already carry the corrected wording (checked by grep for the old forms); E378 and E381 SO rows already `withdrawn`; N2-HB, N2-HC and the other N1 rows have no status.json or SO row. AUDIT.md was not edited (a verifier's file).
+
+Decode: `decode.py --check`, `decode_no2.py --check`, `decode_no9.py --check` each "reading ... is current", exit 0.
+
 ## N2R-1 (10 Oct 2026, account 1, for LANE LEDGER-N2)
 
 Worker N2R-1 (Sonnet), 00:50-01:1x UTC by `date -u`. Rows: the first ten best_book 2 rows of ms18/clean-ms18.tsv (9879/0 9767/1 9690/0 9680/1 9905/1 9807/0 9782/2 9916/2 9690/2 9798/0), filed as N2-FA..N2-FJ in ciphertext-no2.txt; `decode_no2.py --write` then `--check` exit 0, `decode.py --check` exit 0. None of the ten pointers was in ciphertext*.txt, NOTES or AUDIT before (grep, 00:5x UTC). Spares: 9874/1 is N2-GA (N2R-2 filed it first, skipped); 9871/2 is a plain-English entry that no book reads (coherence No. 2 -8.123 vs No. 1 -7.547), not filed. Scripts: ms18/n2r1_extract.py, n2r1.py, n2r1_coherence.py, n2r1_hdl.py, n2r1_printcheck.py, n2r1_beapi.py, n2r1_file.py; outputs n2r1_coherence.out, n2r1_printcheck.out, n2r1_beapi.out.

@@ -398,7 +398,7 @@ Code-word tokens: H 3, M 2.
 
 Code-word tokens: H 1, M 4.
 
-**O9-DC | Page 13 | 9673 | mssEC 18 (obj 10074, pointer 9673; printed page 7), 5 Feb 1864 Washington (cipher time word Henrietta = 4 PM; the ledger header has none), John Horner (operator, label '9' after his name), Meigs (signed M. C. Meigs, Quartermaster General) to Major Van Vliet, Quartermaster, New York: let all expenses incurred in charter and outfit and victualling, manning, sailing, loading, including stores and rations from the Subsistence Department, put on board [the] Maria C. Day be kept in a separate and distinct account so that the cost of this special expedition may be known and reimbursed if desirable when completed; tail 'warm cloudy like rain' is a weather note (O9R-1; row 9673/0; holder transcription, leaf not eye-checked)**
+**O9-DC | Page 13 | 9673 | mssEC 18 (obj 10074, pointer 9673; printed page 7), 5 Feb 1864 Washington (cipher time word Henrietta = 4 PM; the ledger header has none), John Horner (operator, label '9' after his name), Meigs (signed M. C. Meigs, Quartermaster General) to Major Stewart Van Vliet, Quartermaster, New York: let all expenses incurred in charter and outfit and victualling, manning, sailing, loading, including stores and rations from the Subsistence Department, put on board [the] Maria C. Day (= the ship Marcia C. Day, sent in Feb 1864 to bring back the Ile a Vache colonists; NYT 21 Mar 1864, Pittsburgh Post 24 Mar 1864: context, I) be kept in a separate and distinct account so that the cost of this special expedition may be known and reimbursed if desirable when completed; tail 'warm cloudy like rain' is a weather note (O9R-1; row 9673/0; leaf eye-checked on crops, FV-O9a: matches)**
 
 [Washington] Feby fifth {time: 4 PM} for [Major] Van Vliet [Quartermaster] [New York] period Let all expenses incurred in charter and out fit and victualling manning sailing loading including Stores and rations from [Subsistence] Dept put on board Maria C Day be kept in a separate and distinct account so that the cost of this special expedition may be known and reimbursed if desirable when completed sig M C Meigs [Quartermaster General] warm cloudy like rain
 
@@ -410,7 +410,7 @@ Code-word tokens: H 7.
 
 Code-word tokens: H 6.
 
-**O9-DE | Page 24 | 9684 | mssEC 18 (obj 10074, pointer 9684; printed page 18), 10 Mar 1864 Washington 10.30 PM (cipher time word Susan = 10.30 PM = the header's own '1030 P. M.'; label '( 9 )'), John Horner N. Y. (operator), G. V. Fox (sig 'Atlas') to Colonel H. S. Olcott, New York: seize all the books and papers of H. D. Stover now prisoner in Fort La Fayette; no permits will be issued until we have held consultation; tail 'dam bore' unread (O9R-1; row 9684/1; holder transcription, leaf not eye-checked; leaf 9684 fetched, top half (O9-DH, O9-DI) read, this entry not)**
+**O9-DE | Page 24 | 9684 | mssEC 18 (obj 10074, pointer 9684; printed page 18), 10 Mar 1864 Washington 10.30 PM (cipher time word Susan = 10.30 PM = the header's own '1030 P. M.'; label '( 9 )'), John Horner N. Y. (operator), G. V. Fox (sig 'Atlas') to Colonel H. S. Olcott, New York: seize all the books and papers of H. D. Stover now prisoner in Fort La Fayette; no permits will be issued until we have held consultation; tail 'dam bore' unread (O9R-1; row 9684/1; holder transcription, leaf eye-checked on crops, FV-O9a: matches, label (9), header 10 30 PM)**
 
 [Washington] {time: 10.30 PM} tenth For [Colonel] H. S. Olcutt [New York] Seize all the books & papers of H. D. Stover now prisoner in [(Fort) La Fayette] period no permits will be issued until we have held con sult a tion sig [G. V. Fox] dam bore
 
@@ -428,7 +428,7 @@ Code-word tokens: H 9, M 4.
 
 Code-word tokens: H 4, M 1.
 
-**O9-DH | Page 24 | 9684 | mssEC 18 (obj 10074, pointer 9684; printed page 18), 9 Mar 1864 Washington 11 AM (cipher time word Francis = 11 AM = the header's own '11 A.M'; no label on this header), John Horner (operator), G. V. Fox (sig 'Atlas') to Colonel Olcott, New York: is [E. L.] Brady connected with a Navy operation or [Army]? if the former this Department will arrest him, if the latter the War Department should take it up (O9R-1; row 9684/0; header and first lines read on a 2400 px crop)**
+**O9-DH | Page 24 | 9684 | mssEC 18 (obj 10074, pointer 9684; printed page 18), 9 Mar 1864 Washington 11 AM (cipher time word Francis = 11 AM = the header's own '11 A.M'; no label on this header), John Horner (operator), G. V. Fox (sig 'Atlas') to Colonel Olcott, New York: is [Edwin L.] Brady connected (named in Olcott's request, holder 4491, 8 Mar 1864 8.40 PM) with a Navy operation or [Army]? if the former this Department will arrest him, if the latter the War Department should take it up (O9R-1; row 9684/0; header and first lines read on a 2400 px crop)**
 
 {time: 11 AM} For [Colonel] Ol cott [New York] Is Brady connected with a Navy operation or [Army] If the former this Dept will [Arrest] him If the latter the War Dept should take it up (sig) [G. V. Fox]
 
