@@ -6788,3 +6788,21 @@ hides the token, so a `gloss:` directive could not act; recorded in the entry no
 E474 and FV-L16a's six, and E546/E569's `plain-at: washington#1`.
 Checks: decode.py, decode_no2.py, decode_no9.py `--write` then `--check` all exit 0; second apply run changes nothing; status.json and SECOND-OPINIONS-QUEUE.tsv
 carry no row for these eight (none stale); gaps_check eckert-1864 OK keep-going (exit 0).
+
+## FIX-L17a (10 Oct 2026, account 1, for LANE LEDGER-17)
+
+No network. `ciphers/eckert-1864/fixl17a_apply.py` (idempotent; reuses `fixl15_apply.run()`; re-run reports 0 changed) applies s.5 of AUDIT (FV-L16b) for E518 E527 E526 E546 E553 E554, AUDIT (FV-L16c) for E564 E574 E558 E569, AUDIT (FV-L16d) for E441 E472 E442 E473 E469 E466, as amended by AUDIT 2 AUD2-LEDGER16-2, -3 and -4, to ciphertext.txt as header edits, decoder directives, two one-word line fixes ('Gen D. Sheldon' -> 'Geo. D. Sheldon' in E518; 'harsh poney' -> 'harsh pony' in E469, both image-checked by the audits, old readings kept in the entry notes) and one `note: FIX-L17a` line per entry. reading*.md only by `decode.py --write`. Not touched: FV-L16a's six, E447 E471 E474 (second audits live; FIX-L17b).
+
+- Decode `decode.py`, `decode_no2.py`, `decode_no9.py`: `--write` then `--check` exit 0 (reading.md, reading-no2.md, reading-no9.md current).
+- Reading changes (code-word counts): E473 H 6; E518 H 10 + I 1; E526 H 9 + I 1 + S 1; E527 H 10; E546 H 8 (washington#1 and 'Hotel' plain); E554 H 7 + I 1 + M 2 ('12 midnight' H, 'Vogdes' I, 'obtain' x2 M); E564 H 10; E574 H 8 + I 1; E558 H 8 + I 1; E569 H 7 + I 3 (washington#1); E441 H 14 + M 1 (Mattapony M); E442 H 8; E469 H 7 ('harsh pony' = 29 as key values; header stays 30 May, sense M, FV-L16d's re-dating to 29 May not upheld); E472 header direction (QMG office to Biggs, received copy of E90), no reading change; E553 and E466 header only.
+- status.json depth fields checked against the second audits, no stale row: E466 D3, E469 D2, E473 D3, E441 D3, E442 D3, E518 D3, E526 D2, E553 D3, E554 D2, E564 D3, E574 D3, E558 D3, E569 D2, E527 D3, E546 D3 (all "two audits"). `tools/depth_check.py --strict` exits 0.
+- Held, not applied: AUD2-LEDGER16-2's proposal to edit key.md (Topsy -> '12 midnight', Francis -> '12 noon', the TIME page's own parentheses). It would re-render all 5 Topsy and 44 Francis entries in the ledger; E554 takes the midnight reading as an entry-level gloss instead. Next: a job that regenerates the readings and re-checks each Francis/Topsy entry.
+- Not applied (no s.5 text for them in these sections): AUD2-LEDGER16-2's leads (the 'Contraband Trade during the Last Year of the Civil War' article for the Gordon commission; Army and Navy Journal 1865 on the Negro Affairs superintendent; RG 107/RG 94 commission report) and FV-L16d's unfiled row 5679/1 (known text, OR I/36 pt 3 pp.29-30), and AUD2-LEDGER16-4's row 5720/1 (cipher, unfiled): rows for a reader.
+- The E441 FM-F1 note's phrase "garbled by the decoder's time and number rows" is withdrawn by the entry's FIX-L17a note; the original note line is not rewritten.
+
+### Remaining gaps
+- Key.md Topsy/Francis time-word rows (above): one outside step, none blocked from outside the session; next: regenerate and re-check 49 entries, ~$1.
+- Rows for a reader: 5720/1 (O'Brien to Eckert 30 May 1864 7.30 PM, cipher, unfiled).
+
+### Escalation
+Verdict: keep going (FIX-L17b takes the FV-L16a, E447 E471 E474 entries after their second audits).
