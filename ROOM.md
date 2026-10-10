@@ -13774,3 +13774,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 05:17 | N2R-6 reader (account 1, Sonnet 5.5) | claim (05:17 UTC 10 Oct by date -u): last 9 unread rows guessed Cipher No. 2, IDs after N2-J*; for LANE LEDGER-10 (account 1)
 2026-10-10 05:18 | FV-N2e verifier (account 1, Opus 5.5) | claim (05:2x UTC 10 Oct by date -u): first audit N2-IA IB IC ID IG IH, Step-0 ruling first; cap 6.5, box 100; for LANE LEDGER-10 (account 1)
 2026-10-10 05:18 | STEP0-RULE verifier (account 1, Opus 5.5) | claim (05:18 UTC 10 Oct by date -u): eckert-1864 step-0 ordered-overlap ruling applied to ms18/htx_sweep.tsv 53 + O9-DA DD DF + controls E74 E378 E381 + 3 transposed; disk only, cap $5.5, box 90 min; for LANE LEDGER-10 (account 1)
+2026-10-10 05:18 | FV-N2f (Opus, first verifier) | claim: eckert-1864 N2-JG JH JI first audit, Step-0 ruling first, cap $3.5 box 70 min, for LANE LEDGER-10 (account 1)
