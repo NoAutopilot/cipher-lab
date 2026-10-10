@@ -6962,3 +6962,21 @@ Read so far: 11 rows examined; 6 filed (E589-E594), 1 clear copy and in print (5
 - [ ] image-check: no image read.
 - [x] retry: 502/503/429 retried once per rule, then stopped.
 Verdict: keep going: 5 internal gaps; cheapest next: the three-query be-api pass, ~$0.05
+
+## FIX-L17b (10 Oct 2026, account 1, for LANE LEDGER-17)
+
+No network. `ciphers/eckert-1864/fixl17b_apply.py` (idempotent; reuses `fixl15_apply.run()`; a re-run reports 0 changed) applies s.5 of AUDIT (FV-L16a) for E509 E511 E514 E521 E508 E506 and of AUDIT (FV-L16e) for E447 E471 E474, as amended by AUDIT 2 AUD2-LEDGER16-1 (the six) and AUD2-LEDGER16-5 (the three), to ciphertext.txt as header edits, decoder directive lines and one `note: FIX-L17b` line per entry. No transcription line was changed. reading*.md only by `decode.py --write`.
+
+- Decode `decode.py`, `decode_no2.py`, `decode_no9.py`: `--write` then `--check` exit 0 (reading.md changed; reading-no2.md and reading-no9.md unchanged).
+- Reading changes: E509 'Dodge' and the closing 'Webster' plain, 'Orcey' graded M, header direction now Webster (via Sheldon) to R. O'Brien for Col. Dodge; E511 and E506 'Webster' (addressee) and 'William' plain, so the message is read as text and the tail is only the signature (E511 'ditto' graded M); E514 'Webb steer' = Webster plain, 'way worner' = [Steam]er (H); E508 'here -' unjoined so 'Walrus' (Signature) is read, 'Webster' and 'William' plain; E447 'Cole hound' plain (Colhoun), header signature E. R. Colhoun; E474 'Frances' = Francis (entry-level variant, I) giving {time: 12} [13], 'webster' plain; E521 and E471 header only.
+- status.json depth fields checked against the second audits, no stale row: E509 D3 92.3, E511 D3 92.3, E514 D3 100, E521 D3 100, E508 D2 100, E506 D2 100, E447 D3 100, E471 D3 100 (AUD2-LEDGER16-5), E474 D2 85.7 (all "two audits"). `tools/depth_check.py --strict` exits 0. No status.json edit was needed.
+- key.md left unedited: neither section proposes a key.md change; AUD2-LEDGER16-5 takes Frances = Francis as an entry-level variant (E200 precedent), which is what the E474 note does. The Topsy/Francis time-word rows FIX-L17a held (AUD2-LEDGER16-2) are still held; the E474 variant does not touch them.
+- Not applied: FV-L16a's unfiled rows 5853/0 (printed, OR I/46 pt 2 pp.34-35) and 5852/0 (rows for a reader); FV-L16e's unfiled rows 5577/1 (printed OR I/33 p.197) and 5793/2. FV-L16e's s.5 for E470 E468 E443 E445 E446 E448 was applied by FIX-L16b, not here.
+- The step-0 sentences in the E474 and E447 notes ('No. 1 H8', 'first clause M') are superseded by the FIX-L17b notes; the original note lines are not rewritten.
+
+### Remaining gaps
+- Unfiled rows 5852/0 (Dodge to Webster, Ben De Ford, not located in print) and 5853/0 (printed) - blocker: not-attempted; next: a reader decision under the Wave 2 RULING, ~$0.3.
+- Rows 5577/1 and 5793/2 are known text / clear on the page - blocker: plain, no step owed.
+
+### Escalation
+Verdict: keep going (rows for a reader above; the Topsy/Francis key.md rows from FIX-L17a remain held).

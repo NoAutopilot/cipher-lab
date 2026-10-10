@@ -2177,7 +2177,7 @@ Code-word tokens: H 31, C 2, M 1.
 
 Code-word tokens: H 10, S 1.
 
-**E471 | Page 33 | 5577 | mssEC 25 (obj 5952, pointer 5577), 3 Mar 1864 Ft Monroe, Sheldon to Maj. Eckert, Washington: number 1 cipher received today; send no ciphers till the cable is repaired; nothing heard from Kilpatrick (kill pat trick, plain) up to 1 PM today (FM-S3; row 5577/0; transcription only)**
+**E471 | Page 33 | 5577 | mssEC 25 (obj 5952, pointer 5577), 3 Mar 1864 Ft Monroe, Sheldon to Maj. Eckert, Washington: number 1 cipher received today; send no ciphers till the cable is repaired; nothing heard from Kilpatrick (kill pat trick, plain) up to 1 PM today (FM-S3; row 5577/0; image-read by FV-L16e, matches the transcription; the first No. 1 entry on the ledger (entries before it read with No. 9; AUD2-LEDGER16-5); context OR I/33 p.197, Butler's 8 p.m. telegram, = unfiled row 5577/1)**
 
 Maj Eckert Di number [1] [Cipher] received [Today] [.] send no [Cipher]'s till cable is repaired [.] nothing heard from kill pat trick up to {time: 1 PM} [Today] Geo D. Sheldon
 
@@ -2195,11 +2195,11 @@ R OBrien Norfolk for [Captain] Clark new Regime [Norfolk] [.] why publish Edgars
 
 Code-word tokens: H 6.
 
-**E474 | Page 285 | 5829 | mssEC 25 (obj 5952, pointer 5829), 13 Dec 1864 City Point, Ingalls (chief quartermaster) via S. H. Beckwith to Sheldon at Ft Monroe, for Col. Webster (chief QM Fort Monroe): has General Butler's fleet left yet; the question E278 (5829/2, same page, Webster's reply of 1 PM: most of the fleet left during last night) answers (FM-S3; row 5829/1; transcription only)**
+**E474 | Page 285 | 5829 | mssEC 25 (obj 5952, pointer 5829), 13 Dec 1864 12 M City Point, Ingalls (chief quartermaster) via S. H. Beckwith to Sheldon at Ft Monroe, for Col. Webster (chief QM Fort Monroe): has General Butler's fleet left yet; the question E278 (5829/2, same page, Webster's reply of 1 PM: most of the fleet left during last night) answers (FM-S3; row 5829/1; image-read by FV-L16e and AUD2-LEDGER16-5, matches the transcription; 'Frances' = Francis = 12 (TIME page), E200 precedent; H 6 + I 1 of 7)**
 
-Geo. D. Sheldon FT Monroe [New York]'s [13] [Colonel] arsey  {tail: [signed] chief [Quartermaster] . has [Maj Gen B. F. Butler] fleet [Left] yet [signed] Ingalls S. H. Beckwith}
+Geo. D. Sheldon FT Monroe {time: 12} [13] [Colonel] arsey webster chief [Quartermaster] . has [Maj Gen B. F. Butler] fleet [Left] yet  {tail: [signed] Ingalls S. H. Beckwith}
 
-Code-word tokens: H 8.
+Code-word tokens: H 6, I 1.
 
 **E512 | Page 312 | 5856 | mssEC 25 (obj 5952, pointer 5856), 4 Jan 1865, Ft Monroe: two messages in one segment -- Sheldon to S. H. Beckwith at City Point (9 PM; the steamers Eliza Hancox and Winants, a Capt. Howell, QM) and a second, 10.30 PM, Hd Qrs A.J. to Sheldon (have the Winants in order to go with the expedition, tug D. D. Porter), signed R. O'Brien (message 1 Webster to Capt. Howell, message 2 Col. Dodge to Webster, O'Brien operator; eye-checked by FV-FM65b; FM65-B; row 5856/0)**
 
@@ -2213,9 +2213,9 @@ Maj. Eckert Washington [Norfolk] [5] for [Brigadier General] Brice Pay Master [G
 
 Code-word tokens: H 16.
 
-**E514 | Page 314 | 5858 | mssEC 25 (obj 5952, pointer 5858), City Point 5 Jan 1865 (1 PM), S. H. Beckwith to Sheldon at Ft Monroe, for a colonel: some 350 troops have no transportation and will be sent in a river steamer, to be put aboard in time to sail with the rest; a Dr/Mr Leary is required for special service, Blackstone can be dispensed with and turned over to the medical department; signed Ingalls, Beckwith (FM65-B; row 5858/0; text only)**
+**E514 | Page 314 | 5858 | mssEC 25 (obj 5952, pointer 5858), City Point 5 Jan 1865 (1 PM), Brig. Gen. Ingalls (operator S. H. Beckwith) to Sheldon at Ft Monroe, for Colonel Webster, chief quartermaster, Fort Monroe: some 350 troops have no transportation and will be sent in a river steamer, to be put aboard in time to sail with the rest; the C. C. Leary is required for special service, Blackstone can be dispensed with and turned over to the medical department; signed Ingalls, Beckwith (FM65-B; row 5858/0; image-read by FV-L16a and AUD2-LEDGER16-1, matches the transcription; context OR I/46 pt 2 p.22, OR I/46 pt 1 p.166, holder 8506, Ingalls 5 Jan 4.30 PM, 'for special service')**
 
-Sheldon Ft Monroe {time: 1 PM} [Colonel] [Reinforcements] steer [.] there are some [300] and [50] [Troops] for whom there is no [Transportation] they wilbey sent in [River] [Steam]er at once to your place please have them pat on see going way worner in time to sale with the rest the see C Leary is required for special surface of you Can dispense with Blackstone you may turner over tooth medical Department  {tail: [signed] Ingalls S. H. Beckwith}
+Sheldon Ft Monroe {time: 1 PM} [Colonel] Webb steer [.] there are some [300] and [50] [Troops] for whom there is no [Transportation] they wilbey sent in [River] [Steam]er at once to your place please have them pat on see going [Steam]er in time to sale with the rest the see C Leary is required for special surface of you Can dispense with Blackstone you may turner over tooth medical Department  {tail: [signed] Ingalls S. H. Beckwith}
 
 Code-word tokens: H 12.
 
@@ -2279,11 +2279,11 @@ S. H. Beckwith City Point {time: 7 PM} for [Captain] William Tea Howell a [Quart
 
 Code-word tokens: H 18, I 2.
 
-**E506 | Page 308 | 5852 | mssEC 25 (obj 5952, pointer 5852), 4 Jan 1865 City Point 1 PM, S. H. Beckwith to Sheldon at Ft Monroe, from Gen. Rawlins: wishes to know if the steamers named in your dispatch have started for this point yet; they have not been reported from Jamestown (FM65-A; row 5852/1; transcription only; about 25 words)**
+**E506 | Page 308 | 5852 | mssEC 25 (obj 5952, pointer 5852), 4 Jan 1865 City Point 1 PM, Capt. W. T. Howell (operator S. H. Beckwith) to Col. Webster at Ft Monroe, for Gen. Rawlins: wishes to know if the steamers named in your dispatch have started for this point yet; they have not been reported from Jamestown (FM65-A; row 5852/1; image-read by FV-L16a and AUD2-LEDGER16-1, matches the transcription; about 25 words; answered by E507)**
 
-Geo. D. Sheldon Ft Monroe {time: 1 PM} [4]  {tail: [signed] stop [General] ran lines wishes to know if the [Steam] ears named inure dispatch have started yet for this point they haven't yet been [Report]ed from James town [signed] [100] tea Howl S. H. Beckwith}
+Geo. D. Sheldon Ft Monroe {time: 1 PM} [4] Webster stop [General] ran lines wishes to know if the [Steam] ears named inure dispatch have started yet for this point they haven't yet been [Report]ed from James town  {tail: [signed] William tea Howl S. H. Beckwith}
 
-Code-word tokens: H 8.
+Code-word tokens: H 6.
 
 **E507 | Page 308 | 5852 | mssEC 25 (obj 5952, pointer 5852), two telegrams, 4 Jan 1865: (1) Ft Monroe 3 PM, from R. C. Webster, Col. QM, via Sheldon to Beckwith for Howell: all the steamers named had left here before 9 AM today; (2) Hd. Qrs. Army of the James 5 PM, R. O'Brien to Sheldon for Col. Webster, from Col. Dodge by direction of Gen. Butler: if the steamer Russia is at Monroe please send her here in time for a flag ship (FM65-A; row 5852/2; eye-checked by FV-FM65b)**
 
@@ -2291,23 +2291,23 @@ S H. Beckwith City Point {time: 3 PM} for Howell [.] all the [Steam]ers named ha
 
 Code-word tokens: H 16, M 1.
 
-**E508 | Page 309 | 5853 | mssEC 25 (obj 5952, pointer 5853), 4 Jan 1865 Ft Monroe, Sheldon to Beckwith for Capt. Howell, AQM, from Webster: the C. C. Leary is just in and leaves immediately for City Point, she answers the description you required and has ten days' coal; if you can spare the Montauk we need her here (FM65-A; row 5853/1; transcription only; about 28 words)**
+**E508 | Page 309 | 5853 | mssEC 25 (obj 5952, pointer 5853), 4 Jan 1865 Ft Monroe, Sheldon to Beckwith for Capt. W. T. Howell, AQM, from Col. Webster: the C. C. Leary is just in and leaves immediately for City Point, she answers the description you required and has ten days' coal; if you can spare the Montauk we need her here (FM65-A; row 5853/1; image-read by FV-L16a and AUD2-LEDGER16-1, matches the transcription; about 28 words)**
 
-S. H. Beckwith City Point {time: 3 PM} for [Captain] [100] Tea Howell a [Quartermaster] [.] The See See Leary is just in and leaves immed'y for [City Point] She answers the description you required and has [10] days Cole If you can spare the Montauk we need her hereWalrus  {tail: [signed] &c. Geo. D. Sheldon}
+S. H. Beckwith City Point {time: 3 PM} for [Captain] William Tea Howell a [Quartermaster] [.] The See See Leary is just in and leaves immed'y for [City Point] She answers the description you required and has [10] days Cole If you can spare the Montauk we need her here  {tail: [signed] Webster &c. Geo. D. Sheldon}
 
-Code-word tokens: H 8.
+Code-word tokens: H 7.
 
-**E509 | Page 310 | 5854 | mssEC 25 (obj 5952, pointer 5854), 4 Jan 1865 Hd Qrs. Army of the James 5 PM, R. O'Brien to Sheldon for Col. Dodge: the Bendford is not here, the full list was sent to Gen. Butler this morning and Ainsworth has a copy; since then I have been ordered to send the C. C. Leary and she has gone; the Montauk is there, and if you need her telegraph Bradley at once; no other vessel here except the Alliance and the hospital boat Metropolis; the boats sent thus far fully comply with the orders of [Grant]; signed Sheldon (FM65-A; row 5854/0; transcription only)**
+**E509 | Page 310 | 5854 | mssEC 25 (obj 5952, pointer 5854), 4 Jan 1865 Ft Monroe 5 PM (via Sheldon), from Col. R. C. Webster to R. O'Brien at Hd Qrs. Army of the James, for Col. George S. Dodge: the Ben De Ford is not here, the full list was sent to Gen. Butler this morning and Ainsworth has a copy; since then I have been ordered to send the C. C. Leary and she has gone; the Montauk is there, and if you need her telegraph Bradley at once; no other vessel here except the Alliance and the hospital boat [West]ern Metropolis (the hospital steamer, H); the boats sent thus far fully comply with the orders of [Grant]; signed Webster (the signer's plain name; Sheldon the operator) (FM65-A; row 5854/0; image-read by FV-L16a and AUD2-LEDGER16-1, matches the transcription; answers Dodge's request printed OR I/46 pt 2 pp.34-35 (= holder 5853/0, unfiled); O'Brien, Telegraphing in Battle pp.179-180; Western Metropolis a hospital transport, Medical and Surgical History 1870)**
 
-R. O'Brien Hd Qrs. A. J. {time: 5 PM} for [Colonel] Georges [McMinnville] [.] The Bende Ford is not here [.] Full list was cento [Maj Gen B. F. Butler] this Am [.] Ainsworth has copy with him [.] Since sending the list to [Maj Gen B. F. Butler] I hevbin ordered to send the See See Leary and She has gone [.] The Montauk is there and few need her [Telegraph (-ed, -ing)] Bradley at once There is no other Verseille here except the Alliance and the Horse spittal boat [West] win Metropolis The boots sent thus far fully comply with the orders of [Maj Genl U.S. Grant] Orcey  {tail: [signed] Geo. D. Sheldon}
+R. O'Brien Hd Qrs. A. J. {time: 5 PM} for [Colonel] Georges Dodge [.] The Bende Ford is not here [.] Full list was cento [Maj Gen B. F. Butler] this Am [.] Ainsworth has copy with him [.] Since sending the list to [Maj Gen B. F. Butler] I hevbin ordered to send the See See Leary and She has gone [.] The Montauk is there and few need her [Telegraph (-ed, -ing)] Bradley at once There is no other Verseille here except the Alliance and the Horse spittal boat [West] win Metropolis The boots sent thus far fully comply with the orders of [Maj Genl U.S. Grant] Orcey Webster Geo. D. Sheldon
 
-Code-word tokens: H 14.
+Code-word tokens: H 12, M 1.
 
-**E511 | Page 311 | 5855 | mssEC 25 (obj 5952, pointer 5855), 4 Jan 1865 City Point 5.30 PM, S. H. Beckwith to Sheldon at Ft Monroe, from Gen. Rawlins: two light-draft steamers, not over five feet, suitable for going with the other vessels and standing rough weather, will be required, to be held in readiness at Monroe, boats like the Eliza Hancox and the Winants will answer; a good supply of coal only is required; inform me whether these vessels [are available]; signed Howell (FM65-A; row 5855/2; transcription only)**
+**E511 | Page 311 | 5855 | mssEC 25 (obj 5952, pointer 5855), 4 Jan 1865 City Point 5.30 PM, Capt. W. T. Howell (operator S. H. Beckwith) to Col. Webster at Ft Monroe, for Gen. Rawlins: two light-draft steamers, not over five feet, suitable for going with the other vessels and standing rough weather, will be required, to be held in readiness at Monroe, boats like the Eliza Hancox and the Winants will answer; a good supply of coal only is required; inform me whether these vessels [are available]; signed W. T. Howell (FM65-A; row 5855/2; image-read by FV-L16a and AUD2-LEDGER16-1, matches the transcription; context OR I/46 pt 2 p.90, ORN I/11 pp.~574-575)**
 
-Geo D Sheldon Ft Monroe {time: 5.30 PM}  {tail: [signed] [.] [2] light draft steamers [,] not over [5] feet [,] suitable for going with the other verseilles and standing rough weather wilby required and [General] rawlins wishes them helden readiness at [Monroe] stop boots similar tooth Eliza hancox and a winants will answer purpose [.] if they arrat [Monroe] or near there he wishes them held in readiness and prepared at once forth service required stop a good supply coal only wilby required on them please inform me if these vassals ditto [Available] [signed] [100] Tea Howl S. H. Beckwith}
+Geo D Sheldon Ft Monroe {time: 5.30 PM} Webster [.] [2] light draft steamers [,] not over [5] feet [,] suitable for going with the other verseilles and standing rough weather wilby required and [General] rawlins wishes them helden readiness at [Monroe] stop boots similar tooth Eliza hancox and a winants will answer purpose [.] if they arrat [Monroe] or near there he wishes them held in readiness and prepared at once forth service required stop a good supply coal only wilby required on them please inform me if these vassals ditto [Available]  {tail: [signed] William Tea Howl S. H. Beckwith}
 
-Code-word tokens: H 14.
+Code-word tokens: H 12, M 1.
 
 **E525 | Page 324 | 5868 | mssEC 25 (obj 5952, pointer 5868), 7 Jan 1865 Baltimore, received at Ft Monroe (header 'Geo D. Sheldon Ft Monroe Va.'): the Baltic left for Monroe before the order given from Washington could be countermanded; coal her there and return her to Annapolis for troops; it is impossible for her to come up here; from Col. R. M. Newport, Colonel and Quartermaster, Baltimore (his printed signature, OR I/46 pt 2) to Col. R. C. Webster, Chief Quartermaster, Fort Monroe (both identified, not M; the operator is J. W. Sampson) (FM65-C; row 5868/0; image-read by FV-L15b and AUD2-LEDGER15-2; N3 D3; context holder 7693 (Newport 10 Jan), OR I/46 pt 2 Meigs 5 Jan and Wise 7 Jan 10.30 a.m.)**
 
@@ -2399,7 +2399,7 @@ Maj Eckert Di [Maj Gen B. F. Butler] desires to know if the wrangler at Cherry S
 
 Code-word tokens: H 3.
 
-**E447 | Page 283 | 5827 | mssEC 25 (obj 5952, pointer 5827), 10 Dec 1864 City Point, S. H. Beckwith to Sheldon at Ft Monroe (received), for D. D. Porter: U.S.S. Saugus, six miles above City Point; telegram just received, will start down at [daylight?] tomorrow; E. R. Cole, Commander; 11 PM (FM-F1, filed from FM-S1; row 5827/0)**
+**E447 | Page 283 | 5827 | mssEC 25 (obj 5952, pointer 5827), 10 Dec 1864 City Point, S. H. Beckwith to Sheldon at Ft Monroe (received), for D. D. Porter: U.S.S. Saugus, six miles above City Point; telegram just received, will start down at early daylight tomorrow; E. R. Colhoun, Commander of the Saugus; 11 PM (FM-F1, filed from FM-S1; row 5827/0; image-read by FV-L16e, matches the transcription; antecedent E185 (holder 5824, Porter's order to Colhoun); context ORN I/11 p.194, the Saugus aground on the way down, afloat 14 Dec)**
 
 Geo. D. Sheldon Ft Monroe Us S Saugus [6] [Mile]'s above [City Point] {time: 9.30 PM} for [D. D. Porter] [.] [Telegraph (-ed, -ing)] just received will start down at early delight [Tomorrow]  {tail: [signed] E. R Cole hound [Command = Er (-ed, -ing)]er {time: 11 PM} S. H. Beckwith}
 
@@ -2729,7 +2729,7 @@ Maj. Eckert , Washington [Monroe] for [Captain] Blodget a [Quartermaster] anna p
 
 Code-word tokens: H 9.
 
-**E521 | Page 317 | 5861 | mssEC 25 (obj 5952, pointer 5861), City Point 6 Jan 1865 to Geo. D. Sheldon at Ft Monroe: 'please ascertain immediately if [Butler] has left Monroe, and if so when and when bound; don't mention that I enquired; keep me posted'; S. H. Beckwith (FM65-D, from FM65-B's decode of row 5861/2, second message only; short, about 24 tokens)**
+**E521 | Page 317 | 5861 | mssEC 25 (obj 5952, pointer 5861), City Point 6 Jan 1865 to Geo. D. Sheldon at Ft Monroe: 'please ascertain immediately if [Butler] has left Monroe, and if so when and when bound; don't mention that I enquired; keep me posted'; S. H. Beckwith (FM65-D, from FM65-B's decode of row 5861/2, second message only; short, about 24 tokens; image-read by FV-L16a and AUD2-LEDGER16-1, matches the transcription; the first message of row 5861/2 (Stanton to Mrs Stanton, 6 Jan) = holder 8508; parallel 8491 (Beckwith's discreet inquiry, 29 Dec 1864); context holder 8509, OR I/46 pt 2 p.52, O'Brien pp.180-181)**
 
 Geo D Sheldon Ft Monroe please ascertain immed'y if [Maj Gen B. F. Butler] has [Left] [Monroe] & if so when & when bound [.] don't mention that I enquired keep me posted S. H. Beckwith
 
@@ -2819,5 +2819,5 @@ Maj. Eckert , Washington [Monroe] to Honorable John Shear man [Washington] I am 
 
 Code-word tokens: H 9.
 
-Totals over the 448 entries: H 7568, C 113, I 39, M 67, S 21, U 10.
+Totals over the 448 entries: H 7559, C 113, I 40, M 69, S 21, U 10.
 <!-- decode.py: derived block ends -->
