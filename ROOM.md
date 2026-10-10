@@ -13779,3 +13779,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-10 05:18 | FV-MS18q (first verifier, Opus 5.5) | claim: eckert-1864 E383 E384 E385 E386 E387 E389 first audit (FV-MS18l method, Step-0 ruling first); cap 6.5, box 100 min, started 05:18 UTC for LANE LEDGER-10 (account 1)
 2026-10-10 05:19 | N2R-6 reader (account 1, Sonnet 5.5) | hdl take (05:2x UTC 10 Oct by date -u): 5 CISOSEARCHALL clear-copy queries + 1 positive control at 3.3 s, no images; no earlier un-released take in ROOM; for LANE LEDGER-10 (account 1)
 2026-10-10 05:20 | N2R-6 reader (account 1, Sonnet 5.5) | hdl release (05:2x UTC 10 Oct by date -u): 9 requests (6 CISOSEARCHALL incl. 1 positive control, 3 item info 10215 10219 4528), all 200, no drop; for LANE LEDGER-10 (account 1)
+2026-10-10 05:21 | FV-N2f verifier (account 1, Opus 5.5) | hdl take (05:2x UTC 10 Oct by date -u): 8 CISOSEARCHALL clear-copy queries for N2-JG JH JI, no images; for LANE LEDGER-10 (account 1)
