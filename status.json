@@ -13986,6 +13986,170 @@
       "depth_sentence": "On 7 July 1864 Washington told Capt. Thomas at Baltimore that Ricketts's division, about 8000 men without ambulances or wagons, would arrive by steamer, to be landed at Locust Point and forwarded to Harper's Ferry.",
       "depth_check": "code clause: Whig = Transportation, Shelby/Shelter = General read passim; context only (Garrett's 7 July telegrams, OR I/37 pt 2: transportation waiting at Locust Point, Colonel Thomas arranging the transports), no external check of this telegram's own words (D2)",
       "depth_note": "23 H + 3 M of 26 code-word tokens"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L14b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L14b verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L14b)' section 4",
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "reading_version": "L14-B/L14-C 10 Oct 2026 (reading.md), corrections in AUDIT (FV-L14b) section 5 not yet applied",
+      "unresolved_spans": "'Animals' in the 60,000 clause written in clear but also a code word (M)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "1"
+      },
+      "depth_pct": 96.9,
+      "title": "Eckert 1864 (mssEC 18): Quartermaster General's office to Capt. S. L. Brown, New York, 7 May 1864: daily forage shipments to Fort Monroe, 27,000 bushels of grain and 350 tons of hay, consigned to Col. Biggs (E611)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 7 May 1864 the Quartermaster General's office told Capt. S. L. Brown in New York that daily forage shipments to Fort Monroe should average 27,000 bushels of grain and 350 tons of hay, consigned to Col. Biggs; not found in the cached OR/ORN volumes, OR I/36 pts 2-3, IA full text or Google Books (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L14b); not N4: OR ser. III vol. 4 unsearched (lending-only), NARA RG 92 QMG letters-sent not reached, press not searched",
+      "depth": "D2",
+      "completeness": "31 H + 1 M of 32 code-word tokens",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.67, pointer 9733, E611"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.67, pointer 9733, E611",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.67, pointer 9733, E611"
+      ],
+      "depth_sentence": "On 7 May 1864, as Grant's army moved south, Washington told its New York forage officer to ship grain and hay daily to Fort Monroe because about 60,000 animals hitherto fed from Washington would be supplied via Monroe.",
+      "depth_check": "code clause: Appian/Animal = Monroe, Shade = Forage read in other filed entries; context only (Lt. Col. Herman Biggs chief quartermaster at Fort Monroe, OR I/36 pts 2-3), no external check of this telegram's own content (D2)",
+      "depth_note": "31 H + 1 M of 32 code-word tokens"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L14b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L14b verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L14b)' section 4",
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "reading_version": "L14-B/L14-C 10 Oct 2026 (reading.md), corrections in AUDIT (FV-L14b) section 5 not yet applied",
+      "unresolved_spans": "signature span 'M see Me Eggs' (M)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "1"
+      },
+      "depth_pct": 94.1,
+      "title": "Eckert 1864 (mssEC 18): Quartermaster General's office to Brig. Gen. Robert Allen, Louisville, 1 Nov 1864: the Secretary of War is not satisfied with your conduct; Captain Ferry not yet sent to Memphis under arrest (E612)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 1 Nov 1864 the Quartermaster General's office told Brig. Gen. Robert Allen at Louisville that the Secretary of War was not satisfied with his conduct, since Captain Ferry had not been sent to Memphis and arrested as ordered; not found in OR I/39 pt 3, the cached OR volumes, IA full text or Google Books (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L14b); not N4: OR ser. III vol. 4 unsearched, NARA RG 92 / RG 107 not reached, Louisville press of Nov 1864 not searched by page",
+      "depth": "D2",
+      "completeness": "16 H + 1 M of 17 code-word tokens",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.217, pointer 9883, E612"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.217, pointer 9883, E612",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.217, pointer 9883, E612"
+      ],
+      "depth_sentence": "On 1 Nov 1864 Meigs's office reproached Allen at Louisville for not sending Captain Ferry to Memphis under arrest as Stanton had ordered days before.",
+      "depth_check": "code clause: Indigo/India = Secretary of War, Drum/Drill = Memphis, Dragon = Louisville read in other filed entries; context only (Captain Ferry, Quartermaster of Transportation at Louisville, Louisville Daily Journal 5 and 7 Jan 1864) (D2)",
+      "depth_note": "16 H + 1 M of 17 code-word tokens"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L14b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L14b verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L14b)' section 4",
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "reading_version": "L14-B/L14-C 10 Oct 2026 (reading.md), corrections in AUDIT (FV-L14b) section 5 not yet applied",
+      "unresolved_spans": "none among code words; 'Niagara' and 'John' are clear on the leaf (decoder's D. D. Porter and Grant wrong)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "title": "Eckert 1864 (mssEC 18): Assistant Secretary Dana to Maj. Gen. Dix, 15 Nov 1864, 10 PM: Beverly Tucker will cross at Niagara Falls on Thursday morning; John Odell may be relied upon to arrest him (E620)",
+      "line": "Read with War Department Cipher No. 1 (time, addressee, punctuation and signature are code; the body is in clear): on 15 Nov 1864 at 10 PM Assistant Secretary Dana told General Dix that Beverly Tucker would cross at Niagara Falls on Thursday morning and asked for an officer to help John Odell arrest him; not found in OR ser. II vol. 7 (which prints the next day's arrest order), IA full text or Google Books (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L14b); not N4: Dix and Dana papers, NARA RG 107, the Baker papers and the New York press of Nov 1864 not searched",
+      "depth": "D3",
+      "completeness": "9 H of 9 code-word tokens (body in clear)",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.231, pointer 9897, E620"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.231, pointer 9897, E620",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.231, pointer 9897, E620"
+      ],
+      "depth_sentence": "On 15 Nov 1864 Dana told Dix that the Confederate agent Beverly Tucker would cross at Niagara Falls on Thursday and asked for an officer to help John Odell arrest him; the next day Dana ordered Odell to make the arrest.",
+      "depth_check": "code clause: Kasson = Dix, Image = Dana read in other filed entries (C by print in E142); external non-statistical check of content: Baker, History of the U.S. Secret Service (1867), Odell to arrest Tucker at Niagara under Dix's order; OR ser. II vol. 7 p.1132 (the 16 Nov order); the leaf's own 10.15 PM follow-up (D3)",
+      "depth_note": "9 H of 9 code-word tokens (body in clear)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L14b)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L14b verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L14b)' section 4",
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "reading_version": "L14-B/L14-C 10 Oct 2026 (reading.md), corrections in AUDIT (FV-L14b) section 5 not yet applied",
+      "unresolved_spans": "tail 'she went on to tell' (M); the following '(Cal) 6 P.m' is the next entry's header",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "1"
+      },
+      "depth_pct": 90.9,
+      "title": "Eckert 1864 (mssEC 18): Halleck to J. W. Garrett, Baltimore and Ohio Railroad, 7 Oct 1864, 4 PM: arms sent to Harper's Ferry on the 5th have not arrived; see whether delayed on the railroad (E621)",
+      "line": "Read with War Department Cipher No. 1: on 7 Oct 1864 at 4 PM Halleck asked J. W. Garrett of the Baltimore and Ohio to find out why arms sent from Washington to Harper's Ferry on the afternoon of the 5th had not arrived; the affair is printed in OR I/43 pt 2 (6 and 10 Oct), this telegram was not found there, in IA full text or Google Books (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L14b); not N4: Garrett papers (B&O Museum / Maryland Historical Society), NARA RG 107 and the Ordnance letters-sent not reached",
+      "depth": "D3",
+      "completeness": "10 H + 1 M of 11 code-word tokens",
+      "phrases": [
+        "Huntington mssEC 18 (obj 10074) p.196, pointer 9862, E621"
+      ],
+      "document_id": "Huntington mssEC 18 (obj 10074) p.196, pointer 9862, E621",
+      "documents": [
+        "Huntington mssEC 18 (obj 10074) p.196, pointer 9862, E621"
+      ],
+      "depth_sentence": "On 7 Oct 1864 Halleck asked Garrett to trace arms sent by rail to Harper's Ferry on the 5th that had not arrived; they arrived on the 8th (OR I/43 pt 2).",
+      "depth_check": "code clause: Cancer = Harpers Ferry, Niggard = Arms read in other filed entries; external non-statistical check of content: OR I/43 pt 2 p.303 (Halleck to Stevenson 6 Oct, arms forwarded yesterday; not arrived) and p.336 (Halleck to Garrett 10 Oct: arms shipped on the 5th reached Harper's Ferry on the 8th) (D3)",
+      "depth_note": "10 H + 1 M of 11 code-word tokens"
     }
   ],
   "lanes": [

@@ -1,0 +1,10 @@
+E620d | "Odell" "Beverly Tucker"
+E620e | "Beverly Tucker" Dix Dana 1864 Niagara
+E620f | "cross at Niagara Falls" Tucker
+E620g | "Tucker will cross"
+E621c | Garrett Halleck "Harper's Ferry" "have not arrived"
+E621d | "arms" "Harper's Ferry" "afternoon of the 5th"
+E612c | "Captain Ferry" Memphis quartermaster 1864
+E612d | Meigs Allen "Captain Ferry"
+E611d | "Colonel Biggs" forage "Fort Monroe" 1864 Meigs
+E611e | "60,000 animals" forage Washington Meigs

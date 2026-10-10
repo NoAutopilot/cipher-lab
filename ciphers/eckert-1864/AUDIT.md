@@ -17056,3 +17056,147 @@ for January 1865 (OR I/46 pt 2 p.954 has a steamer Seneca at another date; `aud2
   and the five `gap` lines updated; WORK-QUEUE AUD2-LEDGER13-2 -> done.
 - Requests: hdl.huntington.org 18 (all 200); www.googleapis.com 65 (1.6 s apart); archive.org 2 (one djvu, one page image) + be-api 12; scholarsjunction.msstate.edu
   4 (2 HTML 200, 1 curl 403, 1 browser 3x 403); web.archive.org 2 (reset); api.openalex.org 6, api.semanticscholar.org 6 (one 429), api.crossref.org 6.
+
+## AUDIT (FV-L14b)
+
+Verifier FV-L14b (account 1, for LANE LEDGER-14), 10 Oct 2026, 10:34-10:5x UTC by `date -u`; a separate session from the readers L14-B and L14-C and
+from every other reader or verifier of these entries, not protecting their conclusions. Scope: first audits of **E611** (9733/1), **E612** (9883/0)
+(reader L14-B), **E620** (9897/1), **E621** (9862/0) (reader L14-C), all mssEC 18 (Huntington object 10074), Cipher No. 1, and **N2-SA** (9850/2,
+Cipher No. 2, reader L14-C); all five filed "not located". Brief: ledger14 jobs "## FV-L14b" (= ledger12 "## FV-MS18r" method; under this lane's RULING
+step 0 is information only). Intake gate (10:34): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`,
+exit 0. Key source for all five: `period`. Nothing decoded; no file other than this section, status.json, WORK-QUEUE.tsv, SECOND-OPINIONS-QUEUE.tsv,
+`second-opinions/PROMPT-chatgpt-e6{11,12,20,21}.md` and `ms18/fvl14b_*` changed. Scripts and raw output: `ms18/fvl14b_beapi.py` (+ `_q1..q4.txt`,
+`_beapi1..4.out`), `ms18/fvl14b_gb.py/.out`, `ms18/fvl14b_hdl.py/.out`.
+
+### 0. Step 0 (information only under the LEDGER-14 RULING)
+As recorded by the readers (NOTES "## L14-B", "## L14-C"; not re-run, the ruling makes them non-tests): E611 (a) 0.662 / (b) p95 0.215 hit; E612 0.630 /
+0.217 hit; E620 0.765 / 0.353 hit; E621 0.579 / 0.316 hit; N2-SA 0.500 / 0.250 hit. Nothing below rests on them.
+
+### 1. Holder layer (CONTENTdm, p16003coll11, all pointers, one take; `fvl14b_hdl.out`)
+Control 'Inspector Inquiry evidence' -> 9678 (pass). New rare-word queries (different words from the readers'): 'Biggs grain hay accumulation' -> 9733
+only; 'Ferry Allen satisfied conduct' -> 9883 only; 'Garrett delayed arrived' -> 9862 only; 'frauds inefficiencies Indian Territory' -> 9850 only;
+'Tucker Odell' -> **9124** and 9897. Item info on 9124 (mssEC 19, page 230): three entries, none a copy of E620 -- E44 (15 Nov 8.30 PM to 'Niagara' at
+Hampton Roads, another affair), E142 (16 Nov 11.30 PM, Dana to John Odell care of Bunker: arrest Beverly Tucker, turn him over to Dix for Fort Lafayette,
+filed, printed OR ser. II vol. 7 p.1132) and row 9124/1 (16 Nov, Horner N.Y., "For Kasson ... It is of the greatest consequence that Tucker should be
+arrested if possible ... No trouble or expense should be spared", unfiled, clear except addressee and signature). These are the sequel to E620, not
+clear copies. No holder clear copy of any of the five.
+
+### 2. Print search
+**Readers' own print-check output re-read (FV-N2g lesson).** `l14c_beapi.out`: the whole-collection control (the 9764/1 phrase with a comma) returned 0,
+and the reader rightly called whole-collection misses weak; the 9850/2 query used the plural 'frauds and inefficiencies' plus three names, which the
+print does not carry (it prints the singular). My control (FV-MS18r's 'what point he should come for that purpose') **passed** in whole-collection
+mode, so my whole-collection misses below are real misses for that phrase. `ms18_l14b_print.out`: the one E611 phrase hit (OR I/32 pt 3, Meigs to Grant
+8 Apr 1864, 40,000 bushels / 700 tons to Pensacola) is correctly rejected; no hit line was mis-rejected.
+- **N2-SA -- PRINTED (N1, confirmed on the page image).** IA be-api whole collection, '"Kirby Smith, Price" "full discretion"' -> eight items, all OR
+  I/41 pt 3 copies (`warofrebellion413unit`, `warofrebellion014103rootrich`, ...). OR I/41 pt 3 **p.373** (IA `warofrebellion413unit`, `/page/n376`,
+  running head 373 on the image), after Halleck to Grant 26 Sept 11.15 a.m. (Seymour unfit; "General Canby has also been directed to send an
+  inspector"): "Washington, September 26, 1864. Maj. Gen. E. R. S. Canby: An officer of rank and experience should be sent by you to investigate
+  alleged frauds and inefficiency in Arkansas, and especially at Fort Smith and the Indian Territory. General Grant has given Smith full discretion to
+  act with his command as he may deem best against Kirby Smith, Price & Co. H. W. Halleck, Major-General." Canby's reply (New Orleans 5 Oct, "Your
+  dispatch of the 26th ultimo ... The irregularities at Fort Smith") is in the same volume (OCR p.579-580) and Halleck's letter of 28 Sept (pp.434-435)
+  refers back to it. Word-for-word diff: every clause matches. Code words the print settles (No. 2, all H in key-no2.md and now C): Asp = Arkansas,
+  Saco = Fort, Madrid = Grant, Nuptial = Smith (A. J. Smith), prospect = command, Jargon = Kirby Smith, Knell = Price, Famish tulip = Canby, signature
+  Halleck. **Two decoder misreads of plain words:** 'rank' (plain on the leaf and in print) is decoded '[Has been sent]'; 'Smith' after 'Saco' (plain)
+  is decoded '[100]'. Leaf 'inefficiences' (sic), print 'inefficiency'. The print has no hour (ledger 'Topsy'); the print's signature is "H. W.
+  Halleck, Major-General". The reader's in-volume be-api query inside the same identifier missed only because of the plural.
+- **E611 -- NOT LOCATED.** Searched: the 177 cached volumes (readers' grep, re-read); OR I/36 pt 2 (cached) by name: Biggs's correspondence with the
+  Quartermaster-General's Office is indexed at pp.587, 647, 803, 833, the earliest of which is Meigs to Biggs 9 May 9.30 p.m. -- no 7 May item, no
+  item to S. L. Brown; OR I/36 pt 3 (cached) Biggs 31 mentions, all 20 May onward; IA be-api whole collection (control passed): '"Biggs" "350 tons of
+  hay"', '"shipments of forage" Monroe Biggs', '"S. L. Brown" forage Biggs 1864', '"Colonel Biggs" forage "Fort Monroe" 1864 Meigs', '"60,000 animals"
+  forage Washington Meigs', '"S. L. Brown" quartermaster forage "New York"', '"bushels of grain" "tons of hay" "Fort Monroe" daily 1864': no item
+  carries the telegram (hits are 1888 Reno papers, QM annual-report tables, OR vol. 36 headings); Google Books (keyed, country=US) '"daily shipments of
+  forage"', '"barely sufficient for daily wants" forage': no relevant item. OR ser. III vol. 4 (`warofrebellion0304rootrich`) is lending-only and its
+  in-volume be-api control ('"Quartermaster-General"') returned 0, so that volume is **unsearched**, not negative. Context only: Lt. Col. Herman Biggs
+  was chief quartermaster at Fort Monroe in May 1864 (OR I/36 pt 2 p.587, pt 3 passim, forwarding forage to Bermuda Hundred).
+- **E612 -- NOT LOCATED.** Searched: cached volumes ('Captain Ferry' only in OR I/36 pt 2, a Company I officer, unrelated); OR I/39 pt 3 (fetched to
+  scratch, `warofrebellion393unit`): no Captain Ferry, no Robert Allen telegram, 'not satisfied' once (Rousseau, unrelated); be-api whole collection
+  '"Captain Ferry" Memphis Allen Louisville' 0, '"not satisfied with your conduct" Ferry' (novels only), '"Captain Ferry" Memphis quartermaster 1864',
+  'Meigs Allen "Captain Ferry"' 0, '"Captain Ferry" arrested Louisville', '"Ferry" quartermaster Memphis "Robert Allen" 1864', '"Captain Ferry" Stanton';
+  Google Books '"not satisfied with your conduct" Ferry Allen', '"Captain Ferry" Memphis Allen' (an OR formal report praising "Captain Ferry" under
+  Allen, Memphis to the Yazoo, an earlier year: context, not this telegram). **Context found:** the Louisville Daily Journal of 5 and 7 Jan 1864 (IA
+  `xt75736m2t0s`, `xt73ff3kzv7s`) names "Captain Ferry, Quartermaster of Transportation at Louisville" among quartermasters in a contractors' case: the
+  plain name and post fit the reading (Allen was chief quartermaster at Louisville). Not the telegram.
+- **E620 -- NOT LOCATED (the telegram); its sequel is printed.** OR ser. II vol. 7 (cached, `warofrebellion0207rootrich`) **p.1132** prints Dana's next
+  order, 16 Nov 1864 11.30 p.m., "John Odell: (Care of Bunker, New York.) You are hereby directed to arrest Beverly Tucker wherever found within the
+  United States and hand him over to General Dix, to be confined in Fort Lafayette. By order of the President: C. A. Dana" (= E142); the volume index has
+  Tucker, Beverly, only at 1132 and no 15 Nov Dana-Dix item. OR I/43 pt 2 (cached): no Tucker/Odell. Be-api whole collection: '"Beverly Tucker" "Niagara
+  Falls" Odell', '"officer of sufficient discretion" Tucker' 0, '"John Odell" Tucker', '"Odell" "Beverly Tucker"', '"Beverly Tucker" Dix Dana 1864
+  Niagara', '"cross at Niagara Falls" Tucker', '"Tucker will cross"' 0; inside `deathtotraitorss0000moge` (Mogelever, Death to Traitors, a Baker
+  biography) and `teachingchildtor0000bond`: both narrate the Odell-Tucker plan, neither snippet quotes this telegram ('"sufficient discretion"' 0);
+  Google Books '"Beverly Tucker will cross"', '"officer of sufficient discretion" Odell': no relevant item. **Context found, a check of this telegram's
+  content:** L. C. Baker, History of the United States Secret Service (1867; cached `histsecretservice00bakerich`), testimony: "I was to have met Tucker
+  at St. Catharine's, opposite Niagara Falls ... I took one of my detectives, by the name of John Odell ... Odell had an order from General Dix, for the
+  arrest of these parties: when Tucker came across the bridge with me he was to arrest us both." The leaf itself carries, 15 minutes later (10.15 PM,
+  same operator, signed 'Image' = Dana), "Who is John Odell and where is he to be found? Where is Bunker & what is Bunker's first name" (unfiled sibling,
+  9897/2) -- the reading's "I do not know Odell" in the sender's own next message.
+- **E621 -- NOT LOCATED (the telegram); the affair is printed.** OR I/43 pt 2 (cached, `warofrebellion432unit`): Halleck to Brig. Gen. J. D. Stevenson,
+  Harper's Ferry, 6 Oct 1864 4.10 p.m., "Ordnance Department says that arms were forwarded to you yesterday. Please report their arrival, or if there has
+  been unnecessary delay"; Stevenson's reply the same day, "The ordnance officer reports the arms not arrived; expects them to-night" (OCR p.303); and
+  Halleck to J. W. Garrett, Camden Station, 10 Oct 1864, "Arms shipped from here on the 5th did not reach Harper's Ferry till the 8th -- three days. It
+  appears that this delay was caused by your agent here, Mr. Koontz ..." (p.336 by the volume index, Garrett correspondence with War Department; page image
+  not read). The index lists Garrett at 114, 126, 150, 159, 160, 213, 274, 336, 417 ...: nothing between 6 and 10 Oct, so the 7 Oct telegram is not in
+  I/43 pt 2; OR I/43 pt 1 (cached) has no Garrett item in early October. Be-api whole collection '"arms were sent from here to Harper's Ferry"' 0,
+  'Garrett "Harper's Ferry" arms "delayed on the railroad"' 0, two looser queries (July 1864 Harper's Ferry items only); Google Books '"arms were sent
+  from here to Harper"', '"have been delayed on the railroad" Garrett': no relevant item.
+Not searched for any of the four (log): OR ser. III vol. 4 (lending-only, unsearchable here), NARA RG 92 / RG 107 letter and telegram books, the
+Quartermaster General's letters-sent, Dix papers, Stanton papers, the Washington/New York/Louisville/Baltimore press of the day by page, HathiTrust
+full text (Cloudflare), JSTOR. So N3, not N4.
+
+### 3. Leaf eye-check (IIIF 2400 px, downscaled to scratch; not committed)
+- 9733 (E611, page 67, second entry): every line matches the transcription, header "John Horner / Wash'n May 7th 1864 11 a.m."; "Mark this
+  Confidential" at the end. The first entry (Sheldon, 6 May) is another telegram.
+- 9883 (E612, page 217, first entry): matches line by line; the header has no hour and no operator name (the reading's "hour 1 PM" is the code word
+  'Harriet', key).
+- 9897 (E620, page 231, first entry): matches line by line; a pencilled "10 PM" over the header agrees with 'Rebecca' = 10 PM; "Niagara Falls" and "John
+  Odell" are written in clear in the body. Second entry (10.15 PM) as quoted above; third, S. H. Beckwith 16 Nov, another affair.
+- 9862 (E621, page 196, first entry): matches; the entry ends "walrus Jonah she went on to tell"; the transcription's following '"(Cal)" ... 6 P.m' is
+  the **header of the next entry** (Gen. Wright, San Francisco, Washn D.C. Oct 7 1864, 6 P.M.), not a service note of E621.
+- 9850 (N2-SA, page 184, second entry): matches; "#2" is written over "Kimber" (the ledger's own Cipher No. 2 label, agreeing with the book used);
+  "No 1 ... 9 am" belongs to the **next entry's header** (Eddy, Atlanta, No. 1, Wash. Sept 27 1864 9 a.m.), not a service note of N2-SA.
+No transcription slip that changes a reading.
+
+### 4. Classification (rule 10; depth rule 4a and the acct3 depth bar)
+Code clause, for all four N3 entries: the code values carrying each reading recur and read sensibly in other filed entries (counts over
+`ciphertext.txt`): Appian/Animal = Monroe (20/28 entries), Shade = Forage (3), Indigo/India = Secretary of War (7/3), Drum/Drill = Memphis (6/2),
+Dragon = Louisville (7), Kasson = Dix (5; also 9124/1 "For Kasson ... Tucker should be arrested", and Kunkle = Dix C by print in E142), Image = Dana
+(6; C by print in E142), Cancer = Harpers Ferry (5, spot-checked: Thayer's escort, Sheridan copies, ammunition 'to Harpers Ferry'). Percentages are
+of cipher (code-word) tokens; words written in clear are not counted.
+| ID | N | key | text | depth | basis | safe sentence |
+|---|---|---|---|---|---|---|
+| N2-SA | **N1** | period | known | D3 | 14 H code groups (+2 decoder misreads of plain 'rank', 'Smith'); 8 C by the print; external check = OR I/41 pt 3 p.373 | "Halleck's 26 Sept 1864 telegram to Canby ordering an inspection of alleged frauds in Arkansas, at Fort Smith and in the Indian Territory is printed in OR I/41 pt 3 p.373; the ledger copy, read with the period key (Cipher No. 2), matches it." |
+| E611 | **N3** | period | not known | D2 | 31 H + 1 M of 32 (96.9%; 'Animals' in "about 60,000 animals" is clear-or-code, M); code clause above; context only (Biggs chief QM at Fort Monroe, OR I/36), no check of this telegram's own content | "Read at grade H with War Department Cipher No. 1: on 7 May 1864 the Quartermaster General's office told Capt. S. L. Brown in New York that daily forage shipments to Fort Monroe should average 27,000 bushels of grain and 350 tons of hay, consigned to Col. Biggs; not found in the cached OR/ORN volumes, OR I/36 pts 2-3, IA full text or Google Books, searched 10 Oct 2026 -- partially deciphered (about 97% of code words)." |
+| E612 | **N3** | period | not known | D2 | 16 H + 1 M span (signature 'M see Me Eggs') of 17 (94.1%); code clause above; context only (Captain Ferry, QM of transportation at Louisville, press Jan 1864) | "Read at grade H with War Department Cipher No. 1: on 1 Nov 1864 the Quartermaster General's office told Brig. Gen. Robert Allen at Louisville that the Secretary of War was not satisfied with his conduct, since Captain Ferry had not been ordered to Memphis and arrested as directed; not found in OR I/39 pt 3, the cached OR volumes, IA full text or Google Books, searched 10 Oct 2026 -- partially deciphered (about 94% of code words)." |
+| E620 | **N3** | period | not known | D3 | 9 H of 9 code groups (100%; 'Niagara' and 'John' are clear on the leaf, the decoder's D. D. Porter and Grant are wrong); external non-statistical check of content: Baker (1867) on Tucker at Niagara Falls and Odell's arrest order from Dix, OR II/7 p.1132 (next day's order), the leaf's own 10.15 PM follow-up | "Read with War Department Cipher No. 1 (time, addressee, punctuation and signature are code; the body is in clear): on 15 Nov 1864 at 10 PM Assistant Secretary Dana told General Dix that Beverly Tucker would cross at Niagara Falls on Thursday morning and asked for an officer to help John Odell arrest him; not found in OR ser. II vol. 7 (which prints the next day's arrest order), IA full text or Google Books, searched 10 Oct 2026 -- largely deciphered (code words 9 of 9), in a mostly clear telegram." |
+| E621 | **N3** | period | not known | D3 | 10 H + 1 M span ('she went on to tell') of 11 (90.9%); external non-statistical check: OR I/43 pt 2 pp.303, 336 (arms forwarded 5 Oct, not arrived 6 Oct, arrived 8 Oct; Halleck to Garrett 10 Oct) | "Read with War Department Cipher No. 1: on 7 Oct 1864 at 4 PM Halleck asked J. W. Garrett of the Baltimore and Ohio to find out why arms sent from Washington to Harper's Ferry on the afternoon of the 5th had not arrived; the affair is printed in OR I/43 pt 2 (6 and 10 Oct), this telegram was not found there, in IA full text or Google Books, searched 10 Oct 2026 -- largely deciphered (about 91% of code words)." |
+Unsafe for all five: "deciphered", "first decipherment", "previously unread", "unpublished"; for N2-SA anything above N1.
+Depth sentences (own, written from the reading; D2/D3): E611 "On 7 May 1864, as Grant's army moved south, Washington told its New York forage officer
+to ship grain and hay daily to Fort Monroe because about 60,000 animals hitherto fed from Washington would be supplied via Monroe." E612 "On 1 Nov 1864
+Meigs's office reproached Allen at Louisville for not sending Captain Ferry to Memphis under arrest as Stanton had ordered days before." E620 "On 15 Nov
+1864 Dana told Dix that the Confederate agent Beverly Tucker would cross at Niagara Falls on Thursday and asked for an officer to help John Odell arrest
+him; the next day Dana ordered Odell to make the arrest." E621 "On 7 Oct 1864 Halleck asked Garrett to trace arms sent by rail to Harper's Ferry on the
+5th that had not arrived; they arrived on the 8th (OR I/43 pt 2)."
+Rule-4a note: D2/D3 here follow the lane's practice (FV-FM65b, FV-L14c: per cent of code-word tokens; an external check of the telegram's own content
+for D3, context only holds D2). Under FV-MS18r's stricter reading (no run of key-read words reaches the authentication distance in a mostly-clear
+telegram) all four would be D1; the code clause is met by the recurring values above, not by a run. Flagged for the second verifier, not settled here.
+
+### 5. Corrections (for a FIX job; not applied here)
+1. N2-SA header: "not located" -> **printed, OR I/41 pt 3 p.373 (page image, IA warofrebellion413unit n376), text C**; 'rank' plain (decoder '[Has
+   been sent]' wrong), 'Smith' after Fort plain (decoder '[100]' wrong); Nuptial = A. J. Smith, Madrid = Grant, Asp = Arkansas, Jargon = Kirby Smith,
+   Knell = Price C by print; "inefficiencies" -> leaf 'inefficiences', print 'inefficiency'; "'No 1 9 AM' is a service note" -> it is the next entry's
+   header (Eddy, Atlanta, 27 Sept 9 a.m.); "#2" over Kimber on the leaf.
+2. E620 header: "[Niagara] (M)" -> Niagara plain on the leaf (decoder's D. D. Porter wrong); "John Odell" plain (decoder's Grant wrong); signature
+   [C. A. Dana] H (Image; C via E142's print), addressee [Dix] H (Kasson); add context: sequel printed OR II/7 p.1132 (= E142), Baker 1867 testimony;
+   sibling 9897/2 (10.15 PM, "Who is John Odell ... Bunker's first name") unfiled.
+3. E621: the transcription tail '" (Cal) " 6 P. m' is the next entry's header (Wright, San Francisco), not E621's service note; add context OR I/43
+   pt 2 (Halleck-Stevenson 6 Oct, Halleck-Garrett 10 Oct p.336).
+4. E611: '[60000] [Monroe]'s' -> "60,000 animals" (Animals written in clear, M) "will probably be supplied hereafter via [Monroe]"; leaf header
+   "Wash'n May 7th 1864 11 a.m." confirmed.
+5. E612: add context (Captain Ferry, Quartermaster of Transportation at Louisville, Louisville Daily Journal 5 and 7 Jan 1864); leaf has no hour or
+   operator ('Harriet' = the hour word).
+6. NOTES "## L14-B" / "## L14-C" Remaining gaps: the N2-SA print gap and the five leaf eye-checks are closed; E611 next: OR ser. III vol. 4 by page
+   (owner's IA loan or HathiTrust, a LOCAL-QUEUE row) and NARA RG 92 QMG letters-sent, ~$0.3.
+
+Requests: hdl.huntington.org 13 (6 CISOSEARCHALL incl. control, 6 IIIF attempts for 5 leaves with one dropped connection retried once, 1 item-info);
+be-api.us.archive.org 38 (2.2 s apart); archive.org 10 (2 djvu texts, 1 refused djvu 403, 1 page_numbers.json, 1 page image, 2 advancedsearch, 3
+metadata calls); www.googleapis.com 8 (1.6 s apart). seven_day allowed_warning: seen in the brief, continued per lane-common-blast. For LANE LEDGER-14
+(account 1).

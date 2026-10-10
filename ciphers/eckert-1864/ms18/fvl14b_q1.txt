@@ -1,0 +1,14 @@
+control | "what point he should come for that purpose"
+E611a | "Biggs" "350 tons of hay"
+E611b | "shipments of forage" Monroe Biggs
+E611c | "S. L. Brown" forage Biggs 1864
+E612a | "Captain Ferry" Memphis Allen Louisville
+E612b | "not satisfied with your conduct" Ferry
+E620a | "Beverly Tucker" "Niagara Falls" Odell
+E620b | "officer of sufficient discretion" Tucker
+E620c | "John Odell" Tucker
+E621a | "arms were sent from here to Harper's Ferry"
+E621b | Garrett "Harper's Ferry" arms "delayed on the railroad"
+N2SAa | "frauds and inefficiencies"
+N2SAb | "alleged frauds" "Fort Smith" Canby Halleck
+N2SAc | "Kirby Smith, Price" "full discretion"
