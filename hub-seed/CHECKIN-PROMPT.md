@@ -169,3 +169,4 @@ STATE DELTA 01:2x UTC 10 Oct: check-in 9 done (check-in 10 trig_019QMHyNNwA8PNa1
 sensitivity check not re-declared. TX-RED inc. 2 asked to hand over after pass 14 (01:58): create inc. 3 FROM THIS SESSION from
 .claude/briefs/runs/2026-10-09-account4-tx-red.md + hub-seed/TXRED-SUCCESSOR-PROMPT.md on its "ready" message, ledger (cost by get_session)
 and archive it. Lane inc. 5 likewise on "ready for incarnation 5". WVO-153-KEY-2 done (153 = key_98 System B; rest parked). L74 resumed.
+STATE DELTA 01:3x UTC 10 Oct: preview site published private https://claude.ai/artifact/3vTAKPQQRWAbgVMXxM43Pc (republish with the same file_path research/mockups/site/index.html + root + files map after any rebuild; manifest.tsv needs contentType text/plain).
