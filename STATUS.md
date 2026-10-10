@@ -7806,6 +7806,20 @@ sessions are TX-ENGINEER-2's own round 3-7 workers (the lane ledgers and archive
 TX programme table 23:2x UTC: slot 1 orchestrator | slot 2 lane inc. 3 session_01P46fwsU5VTc1oJiV1sayg5 15.6 at 23:22, context 410k, check-in 23:26
 | slot 3 TX-RED inc. 2 session_019mC2iYWnDXZQipquND2vZE 12.9, pass 9 at 22:59 (F43-F46), pass 10 at 23:37; open F38-F46 | slots 4-10: DV1b done
 (VIV102-BASE); TX-POOL-LEAF-2 (account 1) live | eval looks 0; S2 look 1 (TAKEN).
+Check-in 7 (00:0x UTC 10 Oct by date -u, clock 00:04-00:1x; orchestrator (account-4) session_012sGNgiddCpz4QUhQsMyoPU, 52.1 at 00:04, context 245k
+after a compaction): five_hour allowed; seven_day allowed_warning on account-4 workers (continuing). WVO-1068-KEY done 00:01 (14.80 D-, 1.48x cap:
+the brief's per-call estimate was 4x low for gloss+cipher bands; ledgered, archived): siblings/key_1068.tsv 64 classes (59 keyed), H 170 M 62 of
+232 signs on 10 cipher lines; shuffle-consistency 0.979 vs p95 0.356 PASS; concordance vs key_1069 10/17 (p95 2) PASS, vs f.23 13/20 (p95 3)
+PASS; 1127 untouched. WVO-153-KEY re-priced as WVO-153-KEY-2 (cap 12) for the :34 dispatcher (the first row was bounced by my own mis-flag,
+record kept). TX: lane inc. 3 18.4 at 00:04, context 458k, check-in 2 at 23:31 (DV1b ledgered 18.38 D), DV1c anchor verdict UNANCHORED (f.102r
+truth beats shuffle by 0.003; re-anchor proposed), SH-VIV sheet done; TX-RED inc. 2 15.2, pass 10 at 23:41 (F43-F46 closed, F47-F49 open),
+next 00:24; TX-POOL-LEAF-2 (account 1) claimed 21:40 with no done line at 2h24m on a 120-min box -- flagged in ROOM for LANE LEDGER
+(account 1) to get_session. Checks: desk ok, near ok, system_map ok, retired 1 of 214 (known, suriname row), ledger_check flags line 1115
+outcome 'B' (another lane's row, left for its owner). Owner asked (00:0x) for a ChatGPT prompt on the transcription tests: written to
+second-opinions/prompt-2026-10-10-tx-external-opinion.md and given. PR 70 unmerged. Check-in 8 trig_01YKtzUinwQyaCjpkeAkser8 at 00:45 UTC.
+TX programme table 00:0x UTC 10 Oct: slot 1 orchestrator | slot 2 lane inc. 3 session_01P46fwsU5VTc1oJiV1sayg5 18.4, check-in 3 due | slot 3
+TX-RED inc. 2 session_019mC2iYWnDXZQipquND2vZE 15.2, pass 11 at 00:24; open F47-F49 | slots 4-10: DV1c done (UNANCHORED), SH-VIV done;
+TX-POOL-LEAF-2 (account 1) overdue | eval looks 0; S2 look 1 (TAKEN).
 
 ## LANE TX-ENGINEER handoff (session_015pFTECNKte4KHbEeDW5LwU, account 4, Fable, campaign), 9 October 2026 (06:48 UTC by date -u, live; cap 60, box to 16:48, 80% line 14:48; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer.md: engineer the transcription pipeline on BENCHMARK-TX (no model swap:

@@ -144,3 +144,8 @@ the segmentation PREREG is the lane's next step -- tell the owner when its first
 lines + set 2); ASKS 160 waits on the owner. Orchestrator context 765k at 23:22: write hub-seed/SUCCESSOR-PROMPT.md's TAKEN line for a successor
 and hand over before ~850k (next check-in if past 820k).
 STATE DELTA 23:4x UTC 9 Oct: container restarted 23:4x (nothing lost; the guard scan had already posted clean). Dispatcher 23:35 spawned WVO-1068-KEY session_01Vw4NDEo8HgDpYPLpo8h63Q (box to 01:39 UTC; ledger + archive on its done line); WVO-153-KEY stays queued until that done line. Lane inc. 3 check-in 2 posted 23:31 (DV1b ledgered 18.38 D; DV1c anchor + SH-VIV sheet workers live); TX-RED pass 10 at 23:41 (F43-F46 closed).
+STATE DELTA 00:0x UTC 10 Oct: check-in 7 done (check-in 8 trig_01YKtzUinwQyaCjpkeAkser8 at 00:45). WVO-1068-KEY done and ledgered (14.80 D-;
+key_1068.tsv, controls PASS); WVO-153-KEY-2 (cap 12) queued for the :34 dispatcher (WVO-153-KEY bounced by a mis-flag, record kept). DV1c:
+f.102r truth UNANCHORED (beats shuffle by 0.003) -- the 0.199 dev figure is provisional; watch for the lane's re-anchor PREREG and the
+segmentation PREREG. TX-POOL-LEAF-2 flagged overdue to LANE LEDGER (account 1). Owner given the ChatGPT prompt (second-opinions/prompt-2026-10-10-
+tx-external-opinion.md); if he pastes the answer back, hand it to the lane and TX-RED as a second opinion. Orchestrator context 245k (compacted).
