@@ -1,0 +1,336 @@
+{
+ "N_all_p6": 133,
+ "N_masked": 73,
+ "copy_mask": {
+  "p1": {
+   "blocks_ge4": 0,
+   "equal_in_blocks": 0,
+   "spans": []
+  },
+  "p1gloss": {
+   "blocks_ge4": 0,
+   "equal_in_blocks": 0,
+   "spans": []
+  },
+  "p2": {
+   "blocks_ge4": 8,
+   "equal_in_blocks": 70,
+   "spans": [
+    [
+     "p6R_L01_a",
+     "p6R_L02_a",
+     9
+    ],
+    [
+     "p6R_L02_b",
+     "p6R_L05_a",
+     26
+    ],
+    [
+     "p6R_L06_a",
+     "p6R_L06_a",
+     4
+    ],
+    [
+     "p6R_L06_b",
+     "p6R_L14_b",
+     25
+    ],
+    [
+     "p6R_L15_a",
+     "p6R_L15_b",
+     9
+    ]
+   ]
+  },
+  "p3": {
+   "blocks_ge4": 0,
+   "equal_in_blocks": 0,
+   "spans": []
+  },
+  "p4": {
+   "blocks_ge4": 0,
+   "equal_in_blocks": 0,
+   "spans": []
+  },
+  "p5": {
+   "blocks_ge4": 0,
+   "equal_in_blocks": 0,
+   "spans": []
+  }
+ },
+ "N": 60,
+ "n_M": 35,
+ "residue_counts": {
+  "12": 2,
+  "21": 4,
+  "22": 3
+ },
+ "calibration": {
+  "lexicon_words": 10487,
+  "gloss_cover": 0.6129,
+  "real_cover_p05": 0.8,
+  "real_cover_median": 0.9167,
+  "real_p05_4gram": -0.9237,
+  "null_p99_4gram": -1.6814
+ },
+ "T21r": {
+  "cover": 0.5,
+  "shuffled_p99": 0.5167,
+  "shuffled_mean": 0.3821,
+  "shuffled_ge": 9,
+  "shifted_max": 0.4833,
+  "shifted_ge": 0,
+  "minus_gloss": -0.1129,
+  "fourgram": -1.909,
+  "beats_controls": false,
+  "PASS": false,
+  "verdict": "not supported on p.6 (conditional on the transcription)"
+ },
+ "T21r_h12": {
+  "cover": 0.5167,
+  "shuffled_p99": 0.5167,
+  "shuffled_mean": 0.3707,
+  "shuffled_ge": 4,
+  "shifted_max": 0.4667,
+  "shifted_ge": 0,
+  "minus_gloss": -0.0962,
+  "fourgram": -1.835,
+  "beats_controls": false,
+  "PASS": false,
+  "verdict": "not supported on p.6 (conditional on the transcription)"
+ },
+ "T21r_h22": {
+  "cover": 0.45,
+  "shuffled_p99": 0.5333,
+  "shuffled_mean": 0.3678,
+  "shuffled_ge": 29,
+  "shifted_max": 0.4667,
+  "shifted_ge": 2,
+  "minus_gloss": -0.1629,
+  "fourgram": -1.9446,
+  "beats_controls": false,
+  "PASS": false,
+  "verdict": "not supported on p.6 (conditional on the transcription)"
+ },
+ "letter_tests": {
+  "12": {
+   "n": 2,
+   "cover_top5": [
+    "h",
+    "m",
+    "w",
+    "s",
+    "d"
+   ],
+   "fourgram_top5": [
+    "b",
+    "h",
+    "r",
+    "w",
+    "m"
+   ],
+   "rank_cover": {
+    "h": 1,
+    "s": 4
+   },
+   "rank_fourgram": {
+    "h": 2,
+    "s": 6
+   },
+   "verdict": "undecided"
+  },
+  "21": {
+   "n": 4,
+   "cover_top5": [
+    "b",
+    "i",
+    "r",
+    "t",
+    "l"
+   ],
+   "fourgram_top5": [
+    "r",
+    "n",
+    "m",
+    "u",
+    "h"
+   ],
+   "rank_cover": {
+    "r": 3,
+    "z": 24
+   },
+   "rank_fourgram": {
+    "r": 1,
+    "z": 20
+   },
+   "verdict": "undecided"
+  },
+  "22": {
+   "n": 3,
+   "cover_top5": [
+    "e",
+    "i",
+    "u",
+    "a",
+    "y"
+   ],
+   "fourgram_top5": [
+    "e",
+    "l",
+    "g",
+    "r",
+    "o"
+   ],
+   "rank_cover": {
+    "h": 19,
+    "s": 8
+   },
+   "rank_fourgram": {
+    "h": 13,
+    "s": 6
+   },
+   "verdict": "undecided"
+  }
+ },
+ "pooled_p3_p4_p5_p6_descriptive": {
+  "N": 885,
+  "12": {
+   "n": 47,
+   "cover_top5": [
+    "i",
+    "t",
+    "a",
+    "s",
+    "d"
+   ],
+   "fourgram_top5": [
+    "h",
+    "t",
+    "r",
+    "u",
+    "s"
+   ],
+   "rank_cover": {
+    "h": 6,
+    "s": 4
+   },
+   "rank_fourgram": {
+    "h": 1,
+    "s": 5
+   }
+  },
+  "22": {
+   "n": 51,
+   "cover_top5": [
+    "i",
+    "t",
+    "a",
+    "s",
+    "e"
+   ],
+   "fourgram_top5": [
+    "n",
+    "s",
+    "e",
+    "t",
+    "i"
+   ],
+   "rank_cover": {
+    "h": 15,
+    "s": 4
+   },
+   "rank_fourgram": {
+    "h": 17,
+    "s": 2
+   }
+  }
+ },
+ "gloss_agreement": {
+  "n_glossed": 11,
+  "T21r": {
+   "matches": 9,
+   "rate": 0.8182,
+   "control_p99": 3,
+   "control_ge": 0,
+   "agrees": true
+  },
+  "T21r_h12": {
+   "matches": 8,
+   "rate": 0.7273,
+   "control_p99": 3,
+   "control_ge": 0,
+   "agrees": true
+  },
+  "T21r_h22": {
+   "matches": 9,
+   "rate": 0.8182,
+   "control_p99": 3,
+   "control_ge": 0,
+   "agrees": true
+  },
+  "pairs": [
+   [
+    33,
+    "e",
+    "e"
+   ],
+   [
+    41,
+    "n",
+    "n"
+   ],
+   [
+    7,
+    "c",
+    "c"
+   ],
+   [
+    48,
+    "u",
+    "u"
+   ],
+   [
+    93,
+    "2",
+    "r"
+   ],
+   [
+    13,
+    "i",
+    "i"
+   ],
+   [
+    53,
+    "a",
+    "a"
+   ],
+   [
+    31,
+    "c",
+    "c"
+   ],
+   [
+    12,
+    "s",
+    "s"
+   ],
+   [
+    81,
+    "e",
+    "e"
+   ],
+   [
+    45,
+    "2",
+    "r"
+   ]
+  ]
+ },
+ "all_p6_descriptive": {
+  "N": 133,
+  "T21r": 0.5038,
+  "T21r_h12": 0.5188,
+  "T21r_h22": 0.4286
+ }
+}

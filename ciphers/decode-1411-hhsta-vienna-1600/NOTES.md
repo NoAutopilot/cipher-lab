@@ -855,20 +855,80 @@ pairs all sit in the independent part and still agree with T21r (25/42 vs value-
 far, p.3 (no copy found, 0.563 vs p99 0.463) and p.5 independent (0.588 vs p99 0.537) beat their controls and stay below the gloss;
 p.4 independent does not beat them. p.4's grades were already all M; nothing is regraded (rule 7: committed files untouched).
 
-## Remaining gaps (AM-D1411P5, 7 Oct 2026)
-Read so far: 0 cipher numbers at S (AM-D1411V withdrew AM-D1411P5's 114 p.5 S grades: the PASS rests on a copy of the p.2 text T21r was built on; independent p.5 numerals beat controls but stay 0.025 below the gloss); p.1 gloss pairs C 54 of 62; f.184 gloss pairs M 10; p.4 gloss pairs M 42; p.5 gloss pairs M 26; other numbers M
+## D1411-P6b step: p.6 numerals, two blind passes, frozen T21r (+ h variants), copy mask over p.1-p.5 (10 Oct 2026, account 2)
+
+Brief D1411-P6b (LANE FAMILY-A2n, account 2), resuming D1411-P6. PREREG `d1411p6/PREREG-D1411P6.md` and `d1411p6/score_p6.py` unchanged
+since b42c67c7d (checked: no diff against origin/main before the score). `score_p6.py --reproduce-p5` re-run first: p.5 independent N=136,
+T21r 0.5882, h12 0.5882, h22 0.5441, "OK" (exit 0).
+
+Image: one DECODE browser login, `tools/decode_browser_login.js 1411 <scratch> --fetch
+'https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R1411_I6600_P6.png' --max-files 1`: a real 4608x3456 PNG, sha1 0f597628...
+= images/manifest.json (not the placeholder); not committed (30 MB rule); the saved record page was deleted unread. Requests: de-crypt.org
+3 (login flow, record page, 1 image).
+
+The leaf (prior-work 2-leaf, recorded KNOWN-PART): unlike p.5, p.6 is mostly clear German with cipher groups set in the lines. Left
+page: numeral groups on lines 1-3 and 5 and two left-margin lines, with **interlinear gloss letters above most of them**; line 4 and
+lines 6-7 carry only dates/quantities in the clear text (not cut); the lower left page is show-through. Right page (f.187): groups on
+lines 1-6, 10, 12, 14-16, no gloss; plus one strip of the next sheet at the foot (p6X_L01, "... 35 77, 4, 47, 91"). Not cut: the gutter
+note beside right line 1 and the other leaves showing at the edges.
+
+Crops: line centres from an adaptive-threshold row profile (ink = pixel < 40-px box-blur - 35, as AM-D1411P5), per quarter-width column
+on the right page because its lines slope ~40 px across the page, checked on an overlay and two contact sheets; three placements fixed
+before the passes (L05 too high, R03 took R02's numbers in its top margin, L02 cut at the page edge). `iiif_lines.py --image ... --dry-run`
+found 0 lines at its default ink threshold on this low-contrast scan, so the committed step is `python3 d1411p6/cut_halves.py
+IMG_R1411_I6600_P6.png images/d1411p6_crops` reading `d1411p6/lines.tsv` (18 lines, 36 half-line crops, 2x LANCZOS; pushed 6d7e1257d
+before the passes).
+
+Two blind Sonnet passes, one call each, crops only, opposite orders (`d1411p6/passA.tsv` 138 numbers, `passB.tsv` 136, after dropping
+the "-" rows for crops without numbers). `tools/reconcile_passes.py` (`d1411p6/rec/`): 123/138 agree (89.1%), 15 splits; gloss agreement
+3/12 aligned. One reconciliation unit (`d1411p6/reconcile_notes.tsv`, two crop sheets): 15 splits settled, mostly the r-form 5 (53, 57,
+15, 35), 77/72, 11/21, 89 (y-form 9), 85 (or 81) in the margin; **plus a common-mode split both passes made**: p6L_L01_a "88" read 58|88
+and "97" read 92|7, p6L_L05_b "53" read 5|3 (or 51|3) -- merged from the crop before the score (the AM-D1411P5 split lesson, here inside
+a crop rather than at the _a/_b boundary); "Den 2." (R14) set in-text. `d1411p6/make_numbers.py --check` regenerates
+`d1411p6/numbers.tsv`: **133 cipher numbers, 59 M, 12 glossed** (pushed b0b58e6b4 before the score).
+
+**Copy mask: 73 of 133 masked, all against p.2** (8 blocks >= 4, 70 equal inside them): spans p6R_L01_a-L02_a (9), L02_b-L05_a (26),
+L06_a (4), L06_b-L14_b (25), L15_a-L15_b (9). So most of the right page (f.187) is a further copy of p.2 text, as the p.5 left page
+was (the third copy of already-read text found, after p.5L and p.4R). Nothing aligned to p.1, the p.1 gloss, p.3, p.4 or p.5.
+**Independent N = 60** (left page 25, margin 5, foot strip 5, right page 25): exactly the registered floor (N < 60 = NON-TEST), so it
+is a test, and a fragile one -- one more merge in the reconciliation would have made it a NON-TEST.
+
+**Score (`d1411p6/score_p6.py`, `--check` exits 0; de1600 coverage; seed 1411), independent N=60:**
+
+| table | cover | shuffled p99 / mean (n >= real of 200) | shifted max (n >=) | minus gloss (0.613) | 4-gram | PASS |
+|---|---|---|---|---|---|---|
+| T21r | 0.500 | 0.517 / 0.382 (9) | 0.483 (0) | -0.113 | -1.909 | no |
+| T21r_h12 | 0.517 | 0.517 / 0.371 (4) | 0.467 (0) | -0.096 | -1.835 | no |
+| T21r_h22 | 0.450 | 0.533 / 0.368 (29) | 0.467 (2) | -0.163 | -1.945 | no |
+
+de1600 real windows at N=60: coverage p05 0.800, median 0.917. All 133 (descriptive, copy included): T21r 0.504, h12 0.519, h22 0.429.
+**Pre-registered verdict: no PASS; T21r does not beat its order shuffle on p.6's independent numerals (0.500 vs p99 0.517) and sits
+0.113 below the leaf's own gloss -- "not supported on p.6", conditional on the transcription.** It does beat every shifted rule.
+Letter tests: residues 12 (n=2), 21 (n=4), 22 (n=3) all undecided (too few). 
+
+**Gloss agreement (Addendum A): 11 pass-agreed gloss pairs on the independent set; T21r matches 9/11 against value-shuffled tables
+p99 3 (0 of 10,000 >= 9) -- agrees** (h12 8/11, h22 9/11), a fourth gloss leaf. The gloss pairs sit on the left page, so the leaf's
+gloss supports T21r letter by letter while the coverage statistic on 60 numbers does not separate from its shuffle.
+
+Token grades (rule 4): no PASS, so **S 0, M 133** of 133 p.6 numbers; H 0, C 0, I 0. Earlier pages' files untouched.
+Vision: 2 Sonnet subagent calls (36 crops each) + 1 reconciliation unit (2 crop sheets) + worker placement views (overview, 3 ruler
+views, 1 overlay, 3 contact sheets). Status unchanged: open. Report: found as above; not found: any p.6 span aligning to p.1, p.3, p.4
+or p.5; no PASS. Novelty not classified.
+
+## Remaining gaps (AM-D1411P5, 7 Oct 2026; D1411-P6b, 10 Oct 2026)
+Read so far: 0 cipher numbers at S (AM-D1411V withdrew AM-D1411P5's 114 p.5 S grades: the PASS rests on a copy of the p.2 text T21r was built on; independent p.5 numerals beat controls but stay 0.025 below the gloss); p.1 gloss pairs C 54 of 62; f.184 gloss pairs M 10; p.4 gloss pairs M 42; p.5 gloss pairs M 26; p.6 gloss pairs M 11 (D1411-P6b, no PASS); other numbers M
 - p.5 left page = second copy of p.2 (13 of 95 aligned numbers differ) - blocker: waiting-on ASKS row 120 (a person's read); D1A-D1411 (8 Oct) settled 2 of 13 (57, 17) and found 1 genuine copy variant (12/22) by a blind per-number tile read with a passed exemplar control (30/31); the other 10 stay unsettled for this machine instrument (both reads unsure or matching neither candidate) -- the 10 tiles (d1a/settled.tsv, montages d1a/montage/) can join the person's read of ASKS row 120
-- unglossed numerals p.3, p.4, p.5 right page (f.186) - blocker: not-attempted; independent pages stay 0.025-0.07 below the leaf's own gloss in coverage (p.5 independent 0.588, AM-D1411V), and p.4's independent part (112 numbers; its right page copies p.1/p.1 gloss, D1411-P6 post-hoc) does not beat its order shuffle; next: read p.6 numerals (IMG_R1411_I6600_P6.png) under the already-pushed d1411p6/PREREG-D1411P6.md and score_p6.py (copy mask over p.1-p.5, p.5 reproduced) -- one DECODE login with the ABSOLUTE filesrv URL (D1411-P6's login fetched nothing: relative file name -> 404), crops, two blind passes, ~$5
+- unglossed numerals p.3, p.4, p.5 right page, p.6 - blocker: not-attempted; independent material stays below the leaf's own gloss in coverage (p.3 0.563, p.5 independent 0.588) and p.4 independent and p.6 independent (D1411-P6b, 10 Oct: N=60 after 73 of 133 masked as a copy of p.2; T21r 0.500 vs shuffled p99 0.517) do not beat their order shuffle, while p.6's gloss agrees with T21r 9/11 (p99 3); next: read p.7 numerals under a copy of the p.6 PREREG and scorer (copy mask now over p.1-p.6; the measured 60-number pages are at the NON-TEST floor, so pool independent numerals across p.6-p.8 in a registered pooled test rather than another single-page gate), one DECODE login with the absolute filesrv URL, ~$5 per page
 - p.4 4/5 residual (25 of 83 tiles unsettled, la2/applied.tsv) - blocker: waiting-on ASKS row 120 (a person's read; the 25 tiles can be added to that read or to a sign-sorter focus list); machine re-reads retired for this question
 - gloss letter identities (z/r at 21, n/u, residue 14) - blocker: waiting-on ASKS row 120 (a person's read of the gloss); p.5 adds 26 pairs; residue 12 = h now favoured by p.5's letter test
-- pages 7-12 numerals - blocker: not-attempted; full-size images re-fetchable with one DECODE login; next: after p.6, the same two-pass step per page, ~$6 each
+- pages 7-12 numerals - blocker: not-attempted; full-size images re-fetchable with one DECODE login (absolute filesrv URL works, D1411-P6b); next: p.7 then p.8 the same two-pass step per page, ~$5 each, then the pooled independent test
 
-## Escalation (AM-D1411P5, 7 Oct 2026)
-- [x] siblings: GAPS136/GAPS137 checked the Ferdinand III posts and the Kopal Cyffra nova key (inconsistent sign class); p.5 left page found to be a second copy of p.2 (AM-D1411P5)
+## Escalation (AM-D1411P5, 7 Oct 2026; D1411-P6b, 10 Oct 2026)
+- [x] siblings: GAPS136/GAPS137 checked the Ferdinand III posts and the Kopal Cyffra nova key (inconsistent sign class); p.5 left page found to be a second copy of p.2 (AM-D1411P5); p.6 right page a further copy of p.2 (D1411-P6b)
 - [x] clear-pages: clear words around the cipher read in GAPS137; context words used only as post-hoc observation
 - [x] known-keys: Cyffra nova ad Poloniam tested in GAPS137, inconsistent at step 1
 - [ ] print: no printed edition of this letter located yet; planned print_check of the post-hoc words once a verifier accepts a PASS
 - [x] key-rebuild: period gloss table (GAPS141), residue rule (GAPS146), residue 21 = r (DEF1-1411, D4-1411P3, R12A-D1411P4), residue 12 = h favoured on p.5 and T21r_h12 PASS on p.5 (AM-D1411P5) voided by AM-D1411V: in-sample copy of p.2; independent p.5 below gloss
 - [x] image-check: D1A-D1411 (8 Oct) per-number tile comparison of the 13 p.2/p.5 copy differences: 2 settled, 1 genuine variant, 10 unsettled (control 30/31); remainder to a person's read (ASKS row 120)
 - [retired] retry: the de17/de1600 4-gram language judge as gate, retired by GAPS157 third-attempt clause; also retired for the p.4 4/5 look-alike: machine re-read by a Sonnet shape reader (line crops R12A-D1411LA, then per-number tiles D07-D1411), a person's read is the remaining route
-Verdict: keep going: 2 internal gaps; cheapest next: read p.6 numerals under the pushed d1411p6/PREREG-D1411P6.md (copy mask over p.1-p.5) with one DECODE login using the absolute filesrv URL, ~$5 (the gate for any S grade is a PASS on independent numerals); the p.2/p.5 copy differences were compared by D1A-D1411 (2 settled, 10 to a person's read, ASKS row 120)
+Verdict: keep going: 2 internal gaps; cheapest next: read p.7 (and p.8) numerals under a copy of the p.6 PREREG with the copy mask over p.1-p.6 and register a pooled independent-numeral test across p.6-p.8 (p.6 alone: N=60, at the floor, no PASS; gloss agrees 9/11), ~$5 per page; the p.2/p.5 copy differences go to a person's read (ASKS row 120)
