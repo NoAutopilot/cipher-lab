@@ -1000,19 +1000,35 @@ Brief: pooled structure of no. 92 + the scan-187 postscript, and a print check. 
   account 2) and the 351-624 screen; then, if a third text appears, a run-length/crib consistency test of hypothesis 2 against its matched
   synthetic control, about $3 (Opus, disk only). Without more material, the crib test is a non-test at this N.
 
+## OBRED-S1 (10 Oct 2026, 06:50-07:1x UTC by date -u, account 2, Sonnet)
+
+Brief: stride-1 contact-sheet screen of the scans of NA 1.01.02 inv. 6016 image orders 1-259 that OBRED-0259 did not look at (not in `images/6016_screen_0001_0259.tsv`, not 186-188).
+
+- Prior-work step: `prior_work.py ... --step-type read --fetch` exit 4 (3 LEAD = live claims of OBRED-0259, OBRED-187 and this job, 1 LOOK, 2 UNCHECKED, 2 UNCHECKED-NET); the six non-net rows recorded CLEAR in `prior-work.tsv` (no unit-keyed prior work on orders 1-259 beyond OBRED-0259/187); the two -NET rows (aaymeloglu cache, edition) stay with the folder's Premise check and OBRED-187 check 4. Check 5 not applicable (nothing decoded).
+- Scope count: 259 - 87 sampled by OBRED-0259 - 186 and 188 = **170** scans (the brief's 173 counted 186-188 and 3 more); every order 1-259 is now either sampled, sheeted here, or one of 186-188 (read at native size by OBRED-187): `images/6016_screen_s1.tsv` (170 rows).
+- Route: METS (1 request), then IIIF `/full/400,/0/default.jpg` for each of the 170 scans (2.1 s apart, descriptive User-Agent) and `/full/1200,/0/default.jpg` for five. service.archief.nl requests: **176** (1 METS, 170, 5), cap 180, all HTTP 200, no 403/429/challenge. NA take/release lines in ROOM.md.
+- Method: 17 contact sheets (ten scans each) from `images/6016_screen_s1_sheetkey.json`; every sheet carries three disk controls placed by a seeded shuffle, tile letters not scan numbers (the key was opened only after a sheet's calls were noted): CTRL-CIPHER = inv. 2016 scan 31, CTRL-PLAIN = inv. 6016 order 261, CTRL-PS = scan 187 itself reduced to 400 px wide (no request; the Dutch three-digit postscript shape). One reader, this worker's own eye, no subagent. **Control calls: 17 of 17 sheets read the cipher control as figure-groups, the plain control as running prose and CTRL-PS as the dense numeral block under a signature (51/51), so no sheet is a non-test or re-sheeted.** Per-sheet notes: `images/6016_screen_s1_sheetcalls.txt`.
+- Result: **no numeral-code page, key table or interlinear decipherment seen on any of the 170 scans.** Five scans re-looked at 1200 px because a sheet showed a small block, a signed letter or marginal numerals; all plain, Glossed: no, committed as `images/na_101_02_6016_p00NN_1200.jpg`:
+  - 17: a German memorial (1602 by the leaf's head, M) naming Petrus Brederode as the States' agent in Germany, with an upside-down address slip; plain.
+  - 111: a Dutch letter from Hanau dated 22 September 1603 (M), signed P. Brederode, two folded leaves, no numerals, right leaf blank; a Brederode letter in the same series as the Stettin one, plain.
+  - 224: German treaty articles numbered 11-27 (the marginal numerals are article numbers); plain.
+  - 225: French "Articles du traicte" for the ambassador in France (England/Spain), two columns; plain.
+  - 227: a Latin address to a prince-bishop (Heinrich Julius of Brunswick, M) and French text on the left leaf; plain.
+  Not re-looked: scans 230 and 231 (dark marginal-note blocks beside Latin text, read as clear-word marginalia on the sheet view).
+- Where it was not found, and the limits: no second numeral postscript in 1-259 beyond scan 187 at this resolution; 400 px sheets show a numeral run of the controls' density, and a block of a dozen groups or fewer inside prose could escape (the CTRL-PS block is about 59 groups); one reader; the cipher control is a French letter of 1598 and the postscript control is the target's own scan, so the postscript shape is covered but a table or key slip of another shape is covered only by the French control; orders 351-624 remain at stride 3 (OBRED-6016). Not a negative for the series elsewhere; a negative for these 170 scans at this resolution.
+
 ## Remaining gaps (OBRED-DP, 10 Oct 2026)
 Read so far: unmeasured; nothing decoded -- no. 92 (121 groups) and the scan-187 postscript (59 groups, transcribed this pass) are both unread; they share 26 values, above chance (OBRED-187)
 - no. 92 and the 187 postscript, pooled (180 tokens, 130 distinct values) - blocker: too-short; OBRED-DP: name band 588-751 stands alone (G2 PASS), the spelled lower table has 146 tokens over 113 distinct values and no shared order beyond one pair (G1 FAIL), so a crib test is unfalsifiable at this N; more text in the same table is the step (the 6016 screens below)
-- the 173 unlooked scans of NA 1.01.02 inv. 6016 orders 1-259 - blocker: not-attempted; stride-3 screen only; next: 400 px sheets at stride 1 around 187 (orders 181-193 first: further Brederode letters of 1604 in the same hand and code), ~$1.5
 - the 182 unlooked scans of NA 1.01.02 inv. 6016 orders 351-624 - blocker: not-attempted; stride-3 sampling found no cipher; next: two more sessions of 400 px sheets, ~$1.5 each
 - States-side trace of the 17 Oct 1604 letter (the griffier's papers, R.A. S.G. 5888/5968 files) - blocker: not-attempted; Resolutiën XIII OR searched (OBRED-DP: no receipt minuted Oct-Dec 1604, no cipher note); next: NA 1.01.02 S.G. 5888 inventory look for Oct-Nov 1604 Brederode originals, ~$1
 
 ## Escalation (OBRED-DP, 10 Oct 2026)
-- [ ] siblings: scan 187 is a second code text sharing 26 values with no. 92 (OBRED-187); further 1604 Brederode letters may sit in the unlooked scans of orders 1-259; next: stride-1 sheets of 181-193, then the rest
+- [x] siblings: scan 187 is a second code text sharing 26 values with no. 92 (OBRED-187); the stride-1 screen of orders 1-259 (OBRED-S1, 170 scans, controls 51/51) found no third numeral block; orders 351-624 are still stride 3 (see the gap above)
 - [x] clear-pages: the clear letter of 142r-143r read by eye (OBRED-187: Stettin, 17 Oct 1604, to the griffier of the States General, on the Brandenburg negotiation); it carries no gloss of the code
 - [x] known-keys: the 10 Aug 1598 Van Aerssen slip excluded for no. 92 by design (R10-OBRED98); Buzanval syllabary inv. 2028 excluded (R9-OBRED4); DECODE 1600s and Palatine/Hessian keys screened (OLD-DKEY, R8-OBRED2, R9-OBRED3); the 187 values fall in the same 1-751 range as no. 92 and add no key
 - [x] print: no. 92 settled by "Search log", "Web and blog check", "Premise check"; the 17 Oct 1604 letter is not in Veenendaal II (OBRED-187, nos. 89 -> 90); Resolutiën S.G. XIII OR has no decipherment, key or "met het cijfer" note near the Oct 1604 or Feb 1605 Brederode entries (OBRED-DP)
 - [ ] key-rebuild: design_prior and structure done (OBRED-DP: multi-sign class nearest, name band 588-751 PASS, shared order FAIL); a crib/run-length test of the letter-homophonic hypothesis waits on a third text; next: after the 6016 screens, the crib consistency test with a synthetic matched control, ~$3
 - [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv is two blind passes agreeing 59/59 on native crops (OBRED-187)
 - [ ] retry: the Den Tex biography (dbnl.org) retry named in "Open" above has not been run (TLS-failed twice, 25 Sept 2026); next: one retry from a fresh container, ~$0.3
-Verdict: keep going: 3 internal gaps; cheapest next: stride-1 sheets of inv. 6016 orders 181-193 (OBRED-S1, live), ~$1.5
+Verdict: keep going: 2 internal gaps; cheapest next: the Den Tex retry (~$0.3) or the stride-1 sheets of inv. 6016 orders 351-624 (~$1.5 each, two sessions; OBRED-S1 for 1-259 found nothing)

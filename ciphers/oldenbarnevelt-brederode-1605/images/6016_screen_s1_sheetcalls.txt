@@ -1,0 +1,17 @@
+1 controls K=cipher G=plain H=PS ok; others no cipher
+2 controls E=cipher A=plain G=PS ok; J=dense small dark block on left leaf (candidate relook); others no cipher
+3 controls J=cipher C=plain L=PS ok; no cipher (H small docket slip, plain)
+4 controls A=cipher J=plain C=PS ok; no cipher (H small slip plain; D,I,L,M dense columns plain)
+5 controls J=cipher F=plain M=PS ok; no cipher (A short letter with signature, no numerals)
+6 controls A=cipher K=plain G=PS ok; no cipher
+7 controls A=cipher G=plain M=PS ok; no cipher (D,F,K small sealed address slips plain)
+8 controls J=cipher K=plain E=PS ok; B=signed letter plus faint small note block on right leaf (candidate relook, low); others no cipher
+9 controls M=cipher K=plain E=PS ok; no cipher (F French letter plain prose; I cover; J blank)
+10 controls C=cipher E=plain K=PS ok; no cipher
+11 controls H=cipher K=plain I=PS ok; C,G=column lists of names/titles in clear (plain words, no numerals); others no cipher
+12 controls A=cipher H=plain M=PS ok; no cipher
+13 controls C=cipher M=plain L=PS ok; no cipher (G short note with signature, no numerals)
+14 controls L=cipher M=plain G=PS ok; no cipher (ornate chancery letters, sealed slips, plain)
+15 controls C=cipher L=plain H=PS ok; A=numbered articles list with margin numerals (candidate relook); I=right leaf with marginal numbered short items (candidate); J=small block lower-left of left leaf (candidate); F short letter with signature; others no cipher
+16 controls F=cipher E=plain A=PS ok; B,K=dark marginal-note blocks beside Latin text (marginalia, candidate low); no cipher
+17 controls B=cipher M=plain A=PS ok; no cipher (Latin text, slips)
