@@ -1,0 +1,56 @@
+== E509
+  plaintext UNCHECKED-NET 4-editions    [adhoc-d20e88:4-editions:0ae422] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion014702rootrich): djvu text not fetched (max-requests (item) reached); lending-only volumes need the be-api
+  plaintext UNCHECKED-NET 4-editions    [adhoc-d20e88:4-editions:5bb7c6] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion014703rootrich): djvu text not fetched (max-requests (item) reached); lending-only volumes need the be-api
+  plaintext UNCHECKED-NET 4-editions    [adhoc-d20e88:4-editions:415ea7] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion481unit): djvu text not fetched (max-requests (item) reached); lending-only volumes need the be-api snippe
+  plaintext UNCHECKED-NET 4-editions    [adhoc-d20e88:4-editions:7b6f12] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion482unit): djvu text not fetched (max-requests (item) reached); lending-only volumes need the be-api snippe
+  plaintext UNCHECKED-NET 4-editions    [adhoc-d20e88:4-editions:3c4170] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion491unit): djvu text not fetched (max-requests (item) reached); lending-only volumes need the be-api snippe
+  plaintext UNCHECKED-NET 4-editions    [adhoc-d20e88:4-editions:29d713] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion492unit): djvu text not fetched (max-requests (item) reached); lending-only volumes need the be-api snippe
+  plaintext UNCHECKED-NET 6-g3          [adhoc-d20e88:6-g3:98f147] most blocking of 6 phrases: 'For Colonel George Dodge The' ia-global: not searched (max-requests (item) reached);
+  plaintext UNCHECKED-NET 6-g3          [adhoc-d20e88:6-g3:cdb804] most blocking of 6 phrases: 'For Colonel George Dodge The' gbooks: not searched (max-requests (item) reached);
+  holds: specific 7 (LEAD 7); generic 17 (UNCHECKED-NET 17)
+  verdict plaintext: LEAD
+  verdict step: LEAD
+exit 4: owed before this step: LEAD adhoc-d20e88:1-own:261bc7, LEAD adhoc-d20e88:1-own:277ec2, LEAD adhoc-d20e88:1-own:ddc30c, LEAD adhoc-d20e88:6-g3:05a2b8, LEAD adhoc-d20e88:6-g3:38d5cf, LEAD adhoc-d20e88:6-g3:78bfca, LEAD adhoc-d20e88:6-g3:b9549f, UNCHECKED-NET adhoc-d20e88:4-editions:0a5e32, UNC
+== E511
+  plaintext UNCHECKED-NET 4-editions    [adhoc-d663ce:4-editions:0ae422] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion014702rootrich): djvu text not fetched (max-requests (item) reached); lending-only volumes need the be-api
+  plaintext UNCHECKED-NET 4-editions    [adhoc-d663ce:4-editions:5bb7c6] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion014703rootrich): djvu text not fetched (max-requests (item) reached); lending-only volumes need the be-api
+  plaintext UNCHECKED-NET 4-editions    [adhoc-d663ce:4-editions:415ea7] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion481unit): djvu text not fetched (max-requests (item) reached); lending-only volumes need the be-api snippe
+  plaintext UNCHECKED-NET 4-editions    [adhoc-d663ce:4-editions:7b6f12] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion482unit): djvu text not fetched (max-requests (item) reached); lending-only volumes need the be-api snippe
+  plaintext UNCHECKED-NET 4-editions    [adhoc-d663ce:4-editions:3c4170] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion491unit): djvu text not fetched (max-requests (item) reached); lending-only volumes need the be-api snippe
+  plaintext UNCHECKED-NET 4-editions    [adhoc-d663ce:4-editions:29d713] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion492unit): djvu text not fetched (max-requests (item) reached); lending-only volumes need the be-api snippe
+  plaintext UNCHECKED-NET 6-g3          [adhoc-d663ce:6-g3:a96d6f] most blocking of 6 phrases: 'Two light draft steamers not' ia-global: not searched (max-requests (item) reached);
+  plaintext UNCHECKED-NET 6-g3          [adhoc-d663ce:6-g3:2c616e] most blocking of 6 phrases: 'Two light draft steamers not' gbooks: not searched (max-requests (item) reached);
+  holds: specific 4 (LEAD 4); generic 11 (UNCHECKED-NET 11)
+  verdict plaintext: LEAD
+  verdict step: LEAD
+exit 4: owed before this step: LEAD adhoc-d663ce:1-own:261bc7, LEAD adhoc-d663ce:1-own:277ec2, LEAD adhoc-d663ce:1-own:ddc30c, LEAD adhoc-d663ce:6-g3:98e21f, UNCHECKED-NET adhoc-d663ce:4-editions:0ae422, UNCHECKED-NET adhoc-d663ce:4-editions:29d713, UNCHECKED-NET adhoc-d663ce:4-editions:3c4170, UNCH
+== E514
+  plaintext CLEAR         6-g3          [adhoc-ac0e85:6-g3:6670e5] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion014702rootrich): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-ac0e85:6-g3:66af36] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion014703rootrich): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-ac0e85:6-g3:f2274e] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion481unit): 6 decoded phrases, no hit
+  plaintext UNCHECKED-NET 4-editions    [adhoc-ac0e85:4-editions:7b6f12] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion482unit): djvu text not fetched (max-requests (item) reached); lending-only volumes need the be-api snippe
+  plaintext UNCHECKED-NET 4-editions    [adhoc-ac0e85:4-editions:3c4170] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion491unit): djvu text not fetched (max-requests (item) reached); lending-only volumes need the be-api snippe
+  plaintext UNCHECKED-NET 4-editions    [adhoc-ac0e85:4-editions:29d713] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion492unit): djvu text not fetched (max-requests (item) reached); lending-only volumes need the be-api snippe
+  plaintext UNCHECKED-NET 6-g3          [adhoc-ac0e85:6-g3:a68c53] most blocking of 6 phrases: 'Colonel Webster There are some' ia-global: not searched (max-requests (item) reached);
+  plaintext UNCHECKED-NET 6-g3          [adhoc-ac0e85:6-g3:4da3be] most blocking of 6 phrases: 'Colonel Webster There are some' gbooks: not searched (max-requests (item) reached);
+  holds: specific 3 (LEAD 3); generic 6 (UNCHECKED-NET 6)
+  verdict plaintext: UNCHECKED-NET
+  verdict step: LEAD
+exit 4: owed before this step: LEAD adhoc-ac0e85:1-own:261bc7, LEAD adhoc-ac0e85:1-own:277ec2, LEAD adhoc-ac0e85:1-own:ddc30c, UNCHECKED-NET adhoc-ac0e85:4-editions:29d713, UNCHECKED-NET adhoc-ac0e85:4-editions:3c4170, UNCHECKED-NET adhoc-ac0e85:4-editions:7b6f12, UNCHECKED-NET adhoc-ac0e85:4-editio
+== E506
+  plaintext CLEAR         6-g3          [adhoc-dc88c8:6-g3:6670e5] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion014702rootrich): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-dc88c8:6-g3:66af36] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion014703rootrich): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-dc88c8:6-g3:f2274e] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion481unit): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-dc88c8:6-g3:63f45a] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion482unit): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-dc88c8:6-g3:6dd3c0] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion491unit): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-dc88c8:6-g3:f58301] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion492unit): 6 decoded phrases, no hit
+  plaintext LEAD          6-g3          [adhoc-dc88c8:6-g3:99251b] most blocking of 6 phrases: 'to know if the steamers' ia-global: 2 item(s); northwestdigestv0000unse_d5p5 (Northwest Digest – vol. 16, no. 01 (January and Fe); isbn_9780859050357 (The Ghosts of Hameli
+  plaintext UNCHECKED-NET 6-g3          [adhoc-dc88c8:6-g3:6ba32d] most blocking of 6 phrases: 'General Rawlins wishes to know' gbooks: not searched (max-requests (item) reached);
+  holds: specific 11 (LEAD 10, SUBSTANCE 1); generic 1 (UNCHECKED-NET 1)
+  verdict plaintext: LEAD
+  verdict step: LEAD
+exit 4: owed before this step: LEAD adhoc-dc88c8:1-own:261bc7, LEAD adhoc-dc88c8:1-own:277ec2, LEAD adhoc-dc88c8:1-own:ddc30c, LEAD adhoc-dc88c8:6-g3:154eb1, LEAD adhoc-dc88c8:6-g3:1dae8d, LEAD adhoc-dc88c8:6-g3:50c9ec, LEAD adhoc-dc88c8:6-g3:7bd8df, LEAD adhoc-dc88c8:6-g3:93b608, LEAD adhoc-dc88c8:
+== E508
+Terminated
+== E521
+Terminated

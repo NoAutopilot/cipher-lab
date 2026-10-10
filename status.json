@@ -15607,6 +15607,252 @@
       "depth_sentence": "On 15 Oct 1864 Eckert told Dealy at Fort Monroe to be at the wharf when the Manhattan arrived from Washington with the Secretary of War on board, and not to mention his coming.",
       "depth_check": "too short for a clause from the key (two body code words); both read in clear in the companion row 5793/2 (Eckert to Sheldon, same day: the Secretary of War left Washington on board the Manhattan)",
       "depth_note": "2 H of 2 code-word groups (wharf plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L16a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L16a verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16a)' section 4",
+      "reading_version": "FM65 readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L16a) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "see AUDIT (FV-L16a) s.3 (M tokens)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 92.3,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Webster, Fort Monroe, to Col. Dodge at Army of the James headquarters, 4 Jan 1865 5 PM: the Ben De Ford is not here; the full list went to Butler; the C. C. Leary sent; the Montauk there; only the Alliance and the Western Metropolis at Monroe (E509)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 4 Jan 1865 at 5 p.m. Fort Monroe (Col. R. C. Webster) answered Col. George S. Dodge at Army of the James headquarters that the Ben De Ford was not there, that the full list of boats had gone to General Butler that morning with a copy held by Ainsworth, that the C. C. Leary had since been sent, that the Montauk was there if wanted (telegraph Bradley at once), that no other vessel was at Monroe but the Alliance and the hospital boat Western Metropolis, and that the boats sent so far fully complied with General Grant's orders; not located in the Official Records ser. I vols. 42 and 46, ORN ser. I vol. 11, Butler's correspondence vol. V, The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, O'Brien's Telegraphing in Battle or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L16a), weak: the request it answers is printed (Dodge to Webster, OR I/46 pt 2 pp.34-35 = holder 5853/0) and O'Brien's diary (Telegraphing in Battle pp.179-180) records the cipher exchange; not N4: Grant Papers vol. 13 by snippets only, NARA RG 92/107 unread",
+      "depth": "D3",
+      "completeness": "12 H + 1 M of 13 code-word groups (\"Dodge\", final \"Webster\" plain names; \"Orcey\" M)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.310, pointer 5854, E509"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.310, pointer 5854, E509",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.310, pointer 5854, E509"
+      ],
+      "depth_sentence": "On 4 Jan 1865 Webster told Dodge the Ben De Ford was not at Fort Monroe and the full list of boats had gone to Butler that morning.",
+      "depth_check": "code: Knox/Knave = Butler, wreathe = Telegraph, Wicoff = West(ern Metropolis), John = Grant; external (non-statistical): OR I/46 pt 2 pp.34-35 Dodge to Webster, 4 Jan, 'Please send me a full and complete list of the boats ... If possible, send the Ben De Ford for headquarters boat'; O'Brien, Telegraphing in Battle pp.179-180, 4 Jan, 'Colonel Dodge making arrangements with Colonel Webster ... in cipher'; p.211 Ainsworth captain of the port at Fort Monroe",
+      "depth_note": "12 H + 1 M of 13 code-word groups (\"Dodge\", final \"Webster\" plain names; \"Orcey\" M)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L16a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L16a verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16a)' section 4",
+      "reading_version": "FM65 readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L16a) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "see AUDIT (FV-L16a) s.3 (M tokens)",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 92.3,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Howell, City Point, for Rawlins, to Webster at Fort Monroe, 4 Jan 1865 5.30 PM: two light-draft steamers, not over five feet, like the Eliza Hancox and the Winants, to be held ready at Monroe (E511)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 4 Jan 1865 at 5.30 p.m. Captain W. T. Howell at City Point told Colonel Webster at Fort Monroe that General Rawlins required two light-draft steamers, drawing not over five feet, able to go with the other vessels and stand rough weather, held in readiness at Monroe with a good supply of coal -- boats like the Eliza Hancox and the Winants would answer -- and asked whether they were available; not located in the Official Records ser. I vols. 42 and 46, ORN ser. I vol. 11, Butler's correspondence vol. V, The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, O'Brien's Telegraphing in Battle or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L16a); not N4: Grant Papers vol. 13 by snippets only, NARA RG 92/107 unread",
+      "depth": "D3",
+      "completeness": "12 H + 1 M of 13 code-word groups (\"Webster\", \"William\" plain; \"ditto\" M)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.311, pointer 5855, E511"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.311, pointer 5855, E511",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.311, pointer 5855, E511"
+      ],
+      "depth_sentence": "On 4 Jan 1865 Rawlins asked for two light-draft steamers drawing not over five feet, like the Eliza Hancox and the Winants, to be held ready at Fort Monroe.",
+      "depth_check": "code: peach = 2, person = 5, shelby = General, animal/appian = Monroe, nutmeg = Available; external (non-statistical): OR I/46 pt 2 p.90 Terry's order, the steam-tug Eliza Hancox with the fleet; ORN I/11 pp.~574-575 the army tug Eliza Hancox at Fort Fisher, 13 Jan",
+      "depth_note": "12 H + 1 M of 13 code-word groups (\"Webster\", \"William\" plain; \"ditto\" M)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L16a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L16a verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16a)' section 4",
+      "reading_version": "FM65 readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L16a) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "none",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Ingalls, City Point, to Col. Webster at Fort Monroe, 5 Jan 1865 1 PM: 350 troops without transportation sent down by river steamer to sail with the rest; the C. C. Leary wanted for special service; the Blackstone may go to the medical department (E514)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 5 Jan 1865 at 1 p.m. General Ingalls told Colonel Webster at Fort Monroe that some 350 troops for whom there was no transportation would be sent down in a river steamer at once, to be put on a sea-going steamer in time to sail with the rest; that the C. C. Leary was required for special service; and that if he could dispense with the Blackstone he might turn her over to the medical department; not located in the Official Records ser. I vols. 42 and 46, ORN ser. I vol. 11, Butler's correspondence vol. V, The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, O'Brien's Telegraphing in Battle or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L16a); not N4: Grant Papers vol. 13 by snippets only, NARA RG 92/107 unread",
+      "depth": "D3",
+      "completeness": "12 H of 12 code-word groups (\"Webb steer\" = Webster plain-phonetic; \"way worner\" = Steam(er) H)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.314, pointer 5858, E514"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.314, pointer 5858, E514",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.314, pointer 5858, E514"
+      ],
+      "depth_sentence": "On 5 Jan 1865 Ingalls sent 350 troops without transportation down to Fort Monroe by river steamer to be put on a sea-going steamer.",
+      "depth_check": "code: pebble prolong and mandate = 350, whinny = Troops, whig = Transportation, windpipe = River, weaseler/wayworn = Steam(er); external (non-statistical): OR I/46 pt 2 p.22 Rawlins, 3 Jan, troops of a vessel too large to go up 'will be sent to Fort Monroe in river transports'; OR I/46 pt 1 p.166 the C. C. Leary reporting 7 Jan for Abbot's siege train",
+      "depth_note": "12 H of 12 code-word groups (\"Webb steer\" = Webster plain-phonetic; \"way worner\" = Steam(er) H)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L16a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L16a verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16a)' section 4",
+      "reading_version": "FM65 readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L16a) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "none",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Howell, City Point, for Rawlins, to Webster at Fort Monroe, 4 Jan 1865 1 PM: have the steamers named started? none reported from Jamestown (E506)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 4 Jan 1865 at 1 p.m. Captain W. T. Howell at City Point told Colonel Webster at Fort Monroe that General Rawlins wished to know whether the steamers named in his dispatch had started, as they had not been reported from Jamestown; not located in the Official Records ser. I vols. 42 and 46, ORN ser. I vol. 11, Butler's correspondence vol. V, The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, O'Brien's Telegraphing in Battle or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L16a), short (6 code groups); not N4: Grant Papers vol. 13 by snippets only, NARA RG 92/107 unread; the ledger's own reply is E507",
+      "depth": "D2",
+      "completeness": "6 H of 6 code-word groups (\"Webster\", \"William\" plain)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.308, pointer 5852, E506"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.308, pointer 5852, E506",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.308, pointer 5852, E506"
+      ],
+      "depth_sentence": "On 4 Jan 1865 Rawlins asked whether the steamers named had started, as none had been reported from Jamestown.",
+      "depth_check": "code clause: [General] ran lines (Rawlins) wishes to know if the [steam]ers named in your dispatch have started yet for this point, they haven't yet been [report]ed from James town; external: context only (OR I/46 pt 2 pp.21-22 the fleet's sailing, 3 Jan) and the ledger's reply E507",
+      "depth_note": "6 H of 6 code-word groups (\"Webster\", \"William\" plain)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L16a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L16a verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16a)' section 4",
+      "reading_version": "FM65 readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L16a) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "none",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Webster, Fort Monroe, to Capt. Howell at City Point, 4 Jan 1865 3 PM: the C. C. Leary just in and leaving for City Point with ten days' coal; send the Montauk if you can spare her (E508)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 4 Jan 1865 at 3 p.m. Colonel Webster at Fort Monroe told Captain W. T. Howell, quartermaster at City Point, that the C. C. Leary was just in and leaving at once for City Point, that she answered the description required and had ten days' coal, and that Monroe needed the Montauk if City Point could spare her; not located in the Official Records ser. I vols. 42 and 46, ORN ser. I vol. 11, Butler's correspondence vol. V, The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, O'Brien's Telegraphing in Battle or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L16a), short (7 code groups); not N4: Grant Papers vol. 13 by snippets only, NARA RG 92/107 unread",
+      "depth": "D2",
+      "completeness": "7 H of 7 code-word groups (\"William\", \"Webster\" plain; \"Walrus\" = Signature added)",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.309, pointer 5853, E508"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.309, pointer 5853, E508",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.309, pointer 5853, E508"
+      ],
+      "depth_sentence": "On 4 Jan 1865 Webster reported the C. C. Leary in at Fort Monroe and leaving for City Point with ten days' coal.",
+      "depth_check": "code clause: The C. C. Leary is just in and leaves immediately for [City Point] she answers the description you required and has [10] days coal; external: the ship's movement only (OR I/46 pt 1 p.166, the Leary at Broadway Landing 7 Jan), not the text",
+      "depth_note": "7 H of 7 code-word groups (\"William\", \"Webster\" plain; \"Walrus\" = Signature added)"
+    },
+    {
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
+      "key": "period",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (FV-L16a)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "depth_by": "FV-L16a verifier (account 1)",
+      "depth_date": "10 Oct 2026",
+      "decode_status": "Partially decrypted",
+      "date": "10 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "completed-reading",
+      "fields_source": "eckert-1864/AUDIT.md '## AUDIT (FV-L16a)' section 4",
+      "reading_version": "FM65 readers 10 Oct 2026 (reading.md), grades as in AUDIT (FV-L16a) s.3 (fixes pending in s.5)",
+      "unresolved_spans": "none",
+      "depth_unread": {
+        "names_codes": "0",
+        "other": "0"
+      },
+      "depth_pct": 100.0,
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "title": "Eckert 1864 (Fort Monroe ledger): Beckwith, City Point, to Sheldon at Fort Monroe, 6 Jan 1865: find out at once whether General Butler has left Monroe, when and where bound; don't mention who asked (E521)",
+      "line": "Read at grade H with War Department Cipher No. 1: on 6 Jan 1865 S. H. Beckwith at City Point asked G. D. Sheldon at Fort Monroe to find out at once whether General Butler had left Monroe, and if so when and where bound, not to mention who had asked, and to keep him posted; not located in the Official Records ser. I vols. 42 and 46, ORN ser. I vol. 11, Butler's correspondence vol. V, The Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, O'Brien's Telegraphing in Battle or the Huntington's full-text search (searched 10 Oct 2026).",
+      "gap": "N3 one audit (FV-L16a), short (4 code groups); not N4: Grant Papers vol. 13 by snippets only, NARA RG 107 unread",
+      "depth": "D3",
+      "completeness": "4 H of 4 code-word groups",
+      "phrases": [
+        "Huntington mssEC 25 (obj 5952) p.317, pointer 5861, E521"
+      ],
+      "document_id": "Huntington mssEC 25 (obj 5952) p.317, pointer 5861, E521",
+      "documents": [
+        "Huntington mssEC 25 (obj 5952) p.317, pointer 5861, E521"
+      ],
+      "depth_sentence": "On 6 Jan 1865 Beckwith asked Sheldon to find out quietly whether General Butler had left Fort Monroe.",
+      "depth_check": "code: Knox = Butler, stomach = Left, animal = Monroe; external (non-statistical): O'Brien, Telegraphing in Battle pp.180-181, 5 Jan 'General Butler went to Fort Monroe', 6 Jan 'General Butler not yet returned'; OR I/46 pt 2 p.52 Grant to Lincoln, 6 Jan, asking for Butler's removal",
+      "depth_note": "4 H of 4 code-word groups"
     }
   ],
   "lanes": [

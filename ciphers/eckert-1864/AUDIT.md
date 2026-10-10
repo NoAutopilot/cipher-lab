@@ -19470,3 +19470,175 @@ the transcription". Unfiled rows (one-line suggestions, NOTES): 5577/1 (printed 
 Requests: hdl.huntington.org 37 (28 CONTENTdm queries incl. control, 9 IIIF pages; one take 15:13-15:2x UTC, all 200); www.googleapis.com 15, 1.6 s apart,
 all 200; be-api.us.archive.org 11, 1.8 s apart (3 x 502, one retry each, answered); archive.org 0 (every volume read from the cache on disk).
 For LANE LEDGER-16 (account 1).
+
+## AUDIT (FV-L16a)
+
+Verifier FV-L16a (account 1, for LANE LEDGER-16), 10 Oct 2026, 14:47-15:1x UTC by `date -u`; a separate session from the readers FM65-A, FM65-B and
+FM65-D, not protecting their conclusions. Scope: **E509, E511, E506, E508** (NOTES "## FM65-A"), **E514** ("## FM65-B"), **E521** ("## FM65-D");
+ciphertext.txt, War Department Cipher No. 1, Fort Monroe ledger mssEC 25 = Huntington object 5952, 4-6 Jan 1865 (the second Fort Fisher expedition
+fitting out at Fort Monroe and Bermuda Hundred). CLEAR-SWEEP filed all six NONE (fortmonroe/clear_sweep.tsv); its NONE is a search result, so every query
+below is fresh (not CLEAR-SWEEP's). Nothing decoded beyond key look-ups in key.md. Key source for all six: `period`. No spec exists for eckert-1864, so
+`judge_plaintext.py` was not run. Intake gate (14:48 UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6
+lines`. **Step 0 is a non-test on mssEC 25**: nothing below is classed from step 0. Prior-work tool (`prior_work.py eckert-1864 --item-spec
+'shelfmark=Huntington mssEC 25;folio=<pointer>;date=..;sender=..;recipient=..' --step-type audit`, all six, 14:58-15:02 UTC): exit 4 for each; the
+specific holds are three target-level live claims (FM-F1, FIX-L14, CLEAR-SWEEP) that name the slug and no unit (checked: none covers these rows beyond
+CLEAR-SWEEP's own NONE, ledgered); edition rows UNCHECKED-NET (parts not on disk, none of them a Jan 1865 part) or CLEAR.
+G3 (`--reading <decoded body> --network --max-requests 6`, 15:11-15:49 UTC; `fortmonroe/fv_l16a_g3.out`, rows in prior-work.tsv): E509 LEAD on 'at once There is no' (four OR volumes, generic, outside the date window: rejected); E511 LEAD 'only will be required on' (OR I/37 pt 1, 1864: rejected); E514 no specific hit; E506 SUBSTANCE 'They have not yet been' in OR I/46 pt 2 = Parke, 21 Jan 1865, deserters not yet reported (p.194, read: another text, rejected) and LEADs on the same generic phrase; E508 and E521 timed out at 400 s, nothing returned. The tool's whole-collection and Google Books rows came back UNCHECKED-NET (request cap); the hand searches of s.2 are the G3 of record.
+Scripts: `fortmonroe/fv_l16a_hdl.py` (+ `.out`: 22 CONTENTdm full-text queries across all pointers, six page images at 2400 px to scratch),
+`fv_l16a_print.py` (+ `.out`: letters-only phrase grep and KWIC over the 191 cached print-check volumes incl. OR I/42 pt 3, I/46 pts 1-3, I/47 pt 2,
+ORN I/11-12, Butler Corr. IV-V and O'Brien, Telegraphing in Battle), `fv_l16a_gb.py`, `fv_l16a_gb2.py` (+ `.out`: Google Books on Grant Papers 13/14),
+`fv_l16a_beapi.py` (+ `.out`: IA be-api whole collection).
+
+### 1. Duplicates, image
+- **Duplicate diff** (pointers 5852-5855, 5858, 5861 and the subjects against every `###` header in ciphertext*.txt, mssEC 18/19/25): no duplicate.
+  The other rows of the same leaves are other telegrams of the same exchange: 5852/0 (Dodge to Webster, "is steamer Ben De Ford at Monroe? if so send
+  her ... at once", unfiled) and 5853/0 (Dodge to Webster, 2.55 PM, "send me full and complete list of boats coming up ... when they left Monroe and amount
+  of coal and water each has aboard", unfiled; **printed**, OR I/46 pt 2 pp.34-35, below) are the antecedents of **E509**; E507 (5852/2, Webster via
+  Sheldon to Howell, "all the steamers named had left here before 9 AM") answers **E506**; E512 (5856, Hancox and Winants) answers **E511**. E85-style
+  second copies: none (these are Monroe-City Point-Bermuda Hundred local messages; no Washington-book copy found, s.2).
+- **Image eye check this session, every graded line** (IIIF leaves at 2400 px, read at 1200 px halves): 5854 (E509, header + 10 lines + Sheldon), 5855
+  (E511, 9 lines + Beckwith), 5852 (E506, header + 5 lines; rows 0 and 2 read for s.1), 5853 (E508, 6 lines + "Walrus Webster &c." + Sheldon; row 0 read),
+  5858 (E514, header + 7 lines + Beckwith), 5861 (E521, header + 4 lines + Beckwith). **The transcription matches the image on all six**, including
+  "Lucy for pandora Georges Dodge zebra The Bende Ford", "boat Wicoff win Metropolis", "John Orcey Webster" (5854), "these vassals ditto Nutmeg walrus
+  William Tea Howl" (5855), "Harriet penny Webster stop shelby ran lines" (5852), "Harriet pandora Webb steer unity", "see going way worner", "the see C
+  Leary" (5858), "Walrus Webster &c." on its own line (5853). **E509's leaf header reads "Ft Monroe Jan 4/65" (place and date, top right) over "R. O'Brien
+  Hd Qrs. A. J." (addressee)**, the layout of E508 ("Ft Monroe Jan 4/65 / S. H. Beckwith City Point"): E509 was **sent from Fort Monroe to O'Brien**, not
+  by O'Brien (s.5).
+
+### 2. Holder's full text and print
+**Huntington CONTENTdm** (p16003coll11, CISOSEARCHALL, suppressfulltext=1, all pointers; hdl take 14:52-14:55 UTC, 28 requests): `Deford` 5 (5852,
+5853, 5854 = this exchange; 5823 = Dec 1864, Barnes taking the Western Metropolis, Baltic and B. Deford; 10218 = Port Royal, other), `De Ford` 3 (other
+years), `complete list boats` 1 (5853/0, Dodge's request in cipher), `comply with the orders` 5 (5854 own; four other telegrams), `Hancox` 2 (5855,
+5856), `light draft` 38 / `rough weather` 11 / `five feet` 46 (5855 own; the rest other years and subjects), `river steamer` 41, `special service` 29,
+`medical department` 15 (5858 own; 8530 = 23 Jan 1865 Ingalls, other), `sea going steamer` 1 (8530, other), `Jamestown` 163 / `started yet` 24 (5852
+own; others other), `Rawlins steamers` 3 (5855 own; 8506 = Rawlins 5 Jan, exchange of prisoners and forage, other; 8749 = 1865 Mobile), `ten days coal` 4
+(1862-64, other), `spare the Montauk` 4 (5853 own; Apr 1864 coal, other), `answers the description` 1 (own), `Butler left Monroe` 31 (none on 6 Jan 1865
+but own), `keep me posted` 9 (5861 own; others other), `ascertain immediately Butler` 0, `mention that I` 33 (5861 own; others other). **No clear copy of
+any of the six** at another pointer.
+**Print** (phrase grep and KWIC, `fv_l16a_print.out`; pages from OCR running heads unless "read" is said):
+- **E509: not printed; its request is printed.** OR I/46 pt 2 **pp.34-35** (read): "Chief Quartermaster's Office, Army of the James, Bermuda Hundred,
+  Va., January 4, 1865. Col. R. C. Webster, Chief Quartermaster, Fort Monroe: Please send me a full and complete list of the boats that are coming up the
+  river to transport 8,500 men and two batteries, when they left Fort Monroe, and the amount of coal and water each has on board ... If possible, send
+  the Ben De Ford for headquarters boat. Let me know all the particulars of your actions at Fort Monroe. Geo. S. Dodge, Colonel and Chief Quartermaster."
+  (= holder 5853/0 in cipher). E509 answers it point by point: the Ben De Ford is not here; the full list went to Butler this morning, Ainsworth has a
+  copy. **J. E. O'Brien, Telegraphing in Battle (1910), pp.179-180** (Richard O'Brien's diary, read): "Wednesday, January 4th. -- ... Very busy all day
+  with ciphers. Colonel Dodge making arrangements with Colonel Webster, quartermaster at Fort Monroe, in cipher, for Terry's expedition." -- E509 is one
+  of those ciphers, received by O'Brien at Army of the James headquarters. p.211: "Captain Ainsworth, who was captain of the port at Fort Monroe" (=
+  E509's Ainsworth). OR I/46 pt 2 p.63: "Col. G. W. Bradley, Chief Quartermaster, City Point" (= "telegraph Bradley"). Grant Papers vol. 13 index
+  (Google Books snippet, mnRjmhe3QLoC): "Ben De Ford (hospital steamship), 119n, 488-89", "Western Metropolis (hospital steam-ship), 488-89" -- the
+  snippet of pp.488-89 ("Western Metropolis or Ben De Ford are in the James River I learn that both boats went to Alexandria several days ago") is a
+  later exchange, not E509; it fixes "[West] win Metropolis" = the hospital steamer Western Metropolis.
+- **E521: not printed; its circumstance is printed.** O'Brien, Telegraphing in Battle **pp.180-181** (read): "Thursday, January 5th. -- General Butler
+  went to Fort Monroe ... Friday, January 6th. -- ... General Butler not yet returned ... Sunday, January 8th. -- ... Butler is relieved". Grant to
+  Lincoln, City Point, 6 Jan 1865 1 p.m., "I wrote a letter to the Secretary of War ... asking to have General Butler removed from command" (OR I/46
+  pt 2 **p.52**; Butler Corr. V pp.~471-472, "Telegram in Cipher"): Beckwith, Grant's operator, asks Fort Monroe the same day, quietly, whether Butler
+  has left Monroe and whither bound.
+- **E514: not printed.** OR I/46 pt 2 **p.22** (read), Rawlins to Morgan, 3 Jan 2 p.m.: "If any vessel is so large it can not get up here, the troops
+  it is to carry will be sent to Fort Monroe in river transports" -- the procedure E514 applies to 350 troops on 5 Jan. OR I/46 pt 1 **p.166** (Abbot's
+  siege-train report, read in KWIC): "The propeller C. C. Leary, 841 tons, reported at 8 a.m. on January 7, and my ordnance officers at once began loading
+  her" -- the Leary's "special service". OR I/46 pt 2 **p.90**, Terry's sailing order of 10 Jan: the transport list ends "Russia, Blackstone" (the
+  Blackstone sailed with the fleet; whether she was turned over to the medical department first is not shown).
+- **E508: not printed.** Context: Abbot (above), the Leary loading the siege train at Broadway Landing on 7 Jan; OR I/46 pt 2 p.21, Webster to Capt.
+  William T. Howell, A.Q.M., "January 5 [OCR; = 3 Jan, E505 message 1], 7 p.m." ("Steamers all ready coaled and loaded ... The list will be handed you"; another telegram) fixes "William Tea
+  Howell a vincent" = Capt. William T. Howell, A.Q.M.
+- **E511: not printed.** OR I/46 pt 2 **p.90** (Terry's landing order: "Probably the steam-tug Eliza Hancox will be sent to the Atlantic to receive the
+  troops"); ORN I/11 pp.~574-575 (ship logs, 13-14 Jan: "the army tug Eliza Hancox spoke us, desiring us to send boats to land intrenching tools"): the
+  Hancox went with the expedition as E511 required. The Winants: Butler Corr. V p.439 (the December expedition), other.
+- **E506: not printed.** Context OR I/46 pt 2 pp.21-22 (Rawlins-Morgan exchange of 3 Jan on the fleet's sailing and coaling).
+- Phrase grep (53 phrases): hits read and rejected -- `light draft(-draught) steamers`, `Eliza Hancox`, `Winants` (other dates, or the landing order
+  above), `350 troops` (the letters-only grep drops digits: every volume), `keep me posted` (generic, other senders), `when bound` (other years),
+  `Western Metropolis` (OR I/36, 1864).
+- **Google Books** (Grant Papers 13/14, FIX-FM65's four volume ids; control `"six vessels" Oriental` hit vol. 13): 18 ANDed queries (3 per entry) 0;
+  8 short queries: only the vol. 13 index and pp.488-89 snippet above, and `"has left Fort Monroe"` -> a vol. 13 snippet "left here this morning & will
+  reach Fort Monroe during the afternoon on his way to Ft Fisher" (another telegram: rejected). No snippet of any of the six.
+- **IA be-api** whole collection: the identifier control `"Suwo Nada"` (OR I/46 pt 2) answered 502 twice, so no control this session; the index answered OR/ORN items for other queries (`"light draft steamers" "Eliza Hancox"` -> warofrebellion431unit = OR I/47 pt 2, Terry's corps embarking on light-draft steamers at Federal Point, Mar 1865, other; officialrecordso0011unse = the ORN I/11 logs above), which shows OR and ORN texts are in the index, a weaker substitute. `"Western Metropolis" Alliance Montauk` (modern Chicago books, other), `"Eliza Hancox" Winants` (Bard ship-painting catalogues, the Merchant Steam Vessels list: the two boats, not the telegram), `"in time to sail with the rest"` (other texts), `"over to the medical department" Blackstone` (other), `"reported from Jamestown"` (Jamestown, N.Y., other; first try 502), `"Leary" "ten days coal"` (other), `"mention that I inquired"` (fiction: rejected), `"C. C. Leary is just in"` 0, `"if General Butler has left"` 0; `"Ben De Ford is not here"` 502 twice (not located by this route).
+- **Unreachable / not searched:** Grant Papers 13 page by page (snippets only); NARA RG 92 (Quartermaster consolidated file, the Webster-Dodge-Ingalls
+  correspondence), RG 107/108; JSTOR; HathiTrust full text. ORN I/11 read by grep only.
+
+### 3. Grade and reading corrections (reading.md as of this audit; key look-ups in key.md)
+- **E509:** two collisions. "Dodge" (key Dodge = McMinnville, p.13) in "for pandora Georges Dodge" is the plain name: **for Colonel George S. Dodge**
+  (OR I/46 pt 2 p.35 "Geo. S. Dodge, Colonel and Chief Quartermaster"; holder 5852/0, 5853/0 "paradise Dodge"). "Webster" (= Signature, p.23) closing the
+  text is the signer's name, Col. R. C. Webster (Dodge's request was to him; E508 "Walrus Webster"), not a signature word: plain (the decoder's
+  "{tail: [signed]" lands on the same place, harmless). "Wicoff win Metropolis" = [West]ern Metropolis, the hospital steamer (Grant Papers 13 index):
+  **H** for Wicoff (the reader's M is lifted). "Bende Ford" = the Ben De Ford (Dodge's request; plain), "See See Leary" = the C. C. Leary, "Horse spittal"
+  = hospital, "few need" = if you need, "Verseille" = vessel, "boots" = boats (plain-phonetic, I). "John Orcey": John = Grant (H, "the orders of
+  [General Grant]"); "Orcey" unread: **M**. Lucy = 5 PM, pandora = Colonel, Knox / Knave = Butler, wreathe = Telegraph, zebra / unity / zodiac = periods:
+  H. **H 12 + M 1 of 13** (reader H 14, less Dodge and Webster, plus Orcey).
+- **E511:** two collisions. "Webster" (= Signature) in "Laura Webster unity" is the addressee: 5.30 PM, [to Colonel] Webster -- the reading opens a
+  "{tail: [signed]" there and puts the whole message inside the signature tail (the E541 structure error of FV-L15a s.3). "William" (= 100, p.24) in
+  "walrus William Tea Howl" is the initial: [signed] W. T. Howell (Capt. William T. Howell, A.Q.M., OR I/46 pt 2 p.21). "ditto" before "Nutmeg" (= Available)
+  is unexplained ("if these vessels [are] available"): **M**. Laura = 5.30 PM, peach = 2, pedlar / pekin = comma, person = 5, shelby = General, animal /
+  appian = Monroe, nutmeg = Available, walrus = Signature, unity / zebra = periods: H. "shelby rawlins" = General Rawlins (plain name). **H 12 + M 1
+  of 13** (reader 14, less Webster and William, plus ditto).
+- **E514:** one collision and one missed code word. "Webb" (= Reinforcements, p.23) in "Harriet pandora Webb steer" is half of the phonetic split
+  **Webb steer = Webster** (the clerk's disguise of a name that is itself a code word; the same split "webb Stir" in E532): "1 PM, [for] Colonel Webster",
+  plain-phonetic (I). "way worner" in "see going way worner" is **Wayworn = Steam** (p.23) + -er: "sea-going [steam]er" (H; the reader left it plain).
+  "the see C Leary" = the C. C. Leary, "special surface" = special service, "turner over tooth" = turn [her] over to (plain-phonetic). Harriet = 1 PM,
+  pandora = Colonel, pebble prolong and mandate = 300 and 50 (= 350), whinny = Troops, whig = Transportation, windpipe = River, weaseler = Steam(er), yoke =
+  Signature, unity = period: H. Signed "Ingalls" = Brig. Gen. R. Ingalls, chief quartermaster (plain). **H 12 of 12** (reader 12, less Webb, plus wayworn).
+- **E506:** two collisions. "Webster" in "Harriet penny Webster stop" is the addressee (1 PM, 4th, [to] Webster), read as "{tail: [signed]" -- the whole
+  message again inside the tail (structure error, s.5). "William" in "yoke William tea Howl" = W. T. Howell (initial, plain). "ran lines" = Rawlins
+  (plain-phonetic), "inure" = in your. Harriet = 1 PM, penny = 4 (the date), shelby = General, weasel = Steam, wick(ed) = Report(ed), yoke = Signature:
+  H. **H 6 of 6** (reader 8, less Webster and William).
+- **E508:** "William" in "pilgrim William Tea Howell a vincent" is the initial (Captain W. T. Howell, a Quartermaster), read [100]: plain. "Walrus" on the
+  last line is glued to "here" in the reading ("hereWalrus") and not decoded: it is **Walrus = Signature** (H, one token added); "Webster" after it is the
+  signer's name (plain), read [signed]. Imogene = 3 PM, pilgrim = Captain, vincent = Quartermaster, unity = period, blubber = City Point, feeble = 10,
+  walrus = Signature: H. "Cole" = coal (plain). **H 7 of 7** (reader 8, less William and Webster, plus Walrus).
+- **E521:** Knox = Butler, stomach = Left, animal = Monroe, unity = period: H; the rest plain. No collision. **H 4 of 4.**
+
+### 4. Classes (rule 10) and depth (rule 4a)
+
+| ID | N | key | depth | basis |
+|---|---|---|---|---|
+| E509 | **N3** (weak: the request it answers is printed, OR I/46 pt 2 pp.34-35, and O'Brien's diary records the cipher exchange) | period | **D3** (H 12 + M 1 of 13; external non-statistical: OR I/46 pt 2 pp.34-35 Dodge's request for the full list and the Ben De Ford; O'Brien, Telegraphing in Battle pp.179-180, 4 Jan "Colonel Dodge making arrangements with Colonel Webster ... in cipher"; p.211 Ainsworth captain of the port) | no prior plaintext or decipherment located |
+| E511 | **N3** | period | **D3** (H 12 + M 1 of 13; external: OR I/46 pt 2 p.90 Terry's order, the steam-tug Eliza Hancox with the fleet; ORN I/11 pp.~574-575 the army tug Eliza Hancox at Fort Fisher, 13 Jan) | no prior plaintext or decipherment located |
+| E514 | **N3** | period | **D3** (H 12 of 12; external: OR I/46 pt 2 p.22 Rawlins, troops of a vessel too large to go up "will be sent to Fort Monroe in river transports"; OR I/46 pt 1 p.166 the C. C. Leary reporting 7 Jan for the siege train) | no prior plaintext or decipherment located |
+| E521 | **N3** | period | **D3** (H 4 of 4; external: O'Brien, Telegraphing in Battle pp.180-181, Butler went to Fort Monroe 5 Jan and had not returned 6 Jan; OR I/46 pt 2 p.52 Grant to Lincoln 6 Jan asking for Butler's removal) | no prior plaintext or decipherment located |
+| E508 | **N3** | period | **D2** (H 7 of 7; the clause "the C. C. Leary is just in and leaves immediately for City Point ... has ten days' coal" reads; external only that the Leary was in the James by 7 Jan, OR I/46 pt 1 p.166: corroboration of the ship's movement, not of the text) | no prior plaintext or decipherment located |
+| E506 | **N3** | period | **D2** (H 6 of 6; the clause reads; external only context: OR I/46 pt 2 pp.21-22 the fleet's sailing, and the ledger's own reply E507) | no prior plaintext or decipherment located |
+
+- Not N4 for any: Grant Papers vol. 13 by snippet only; NARA RG 92/107/108, JSTOR and HathiTrust full text not searched; OR pages from OCR running heads.
+- **Safe sentences** (each ends "; not located in the Official Records ser. I vols. 42 and 46, ORN ser. I vol. 11, Butler's correspondence vol. V, The
+  Papers of Ulysses S. Grant vol. 13 by Google Books snippet search, O'Brien's Telegraphing in Battle or the Huntington's full-text search (searched
+  10 Oct 2026)"; read at grade H with War Department Cipher No. 1):
+  - E509: "on 4 Jan 1865 at 5 p.m. Fort Monroe (Col. R. C. Webster) answered Col. George S. Dodge at Army of the James headquarters that the Ben De Ford
+    was not there, that the full list of boats had gone to General Butler that morning with a copy held by Ainsworth, that the C. C. Leary had since been
+    sent, that the Montauk was there if wanted (telegraph Bradley at once), that no other vessel was at Monroe but the Alliance and the hospital boat
+    Western Metropolis, and that the boats sent so far fully complied with General Grant's orders."
+  - E511: "on 4 Jan 1865 at 5.30 p.m. Captain W. T. Howell at City Point told Colonel Webster at Fort Monroe that General Rawlins required two light-draft
+    steamers, drawing not over five feet, able to go with the other vessels and stand rough weather, held in readiness at Monroe with a good supply of
+    coal -- boats like the Eliza Hancox and the Winants would answer -- and asked whether they were available."
+  - E514: "on 5 Jan 1865 at 1 p.m. General Ingalls told Colonel Webster at Fort Monroe that some 350 troops for whom there was no transportation would be
+    sent down in a river steamer at once, to be put on a sea-going steamer in time to sail with the rest; that the C. C. Leary was required for special
+    service; and that if he could dispense with the Blackstone he might turn her over to the medical department."
+  - E521: "on 6 Jan 1865 S. H. Beckwith at City Point asked G. D. Sheldon at Fort Monroe to find out at once whether General Butler had left Monroe, and if
+    so when and where bound, not to mention who had asked, and to keep him posted."
+  - E508: "on 4 Jan 1865 at 3 p.m. Colonel Webster at Fort Monroe told Captain W. T. Howell, quartermaster at City Point, that the C. C. Leary was just in
+    and leaving at once for City Point, that she answered the description required and had ten days' coal, and that Monroe needed the Montauk if City
+    Point could spare her."
+  - E506: "on 4 Jan 1865 at 1 p.m. Captain W. T. Howell at City Point told Colonel Webster at Fort Monroe that General Rawlins wished to know whether the
+    steamers named in his dispatch had started, as they had not been reported from Jamestown."
+- **Unsafe** for all: "first", "new", "unpublished", "never printed"; for E509, any sentence giving O'Brien as the sender.
+- **Depth sentences** (D2+): E509 "On 4 Jan 1865 Webster told Dodge the Ben De Ford was not at Fort Monroe and the full list of boats had gone to Butler
+  that morning." E511 "On 4 Jan 1865 Rawlins asked for two light-draft steamers drawing not over five feet, like the Eliza Hancox and the Winants, to be
+  held ready at Fort Monroe." E514 "On 5 Jan 1865 Ingalls sent 350 troops without transportation down to Fort Monroe by river steamer to be put on a
+  sea-going steamer." E521 "On 6 Jan 1865 Beckwith asked Sheldon to find out quietly whether General Butler had left Fort Monroe." E508 "On 4 Jan 1865
+  Webster reported the C. C. Leary in at Fort Monroe and leaving for City Point with ten days' coal." E506 "On 4 Jan 1865 Rawlins asked whether the
+  steamers named had started, as none had been reported from Jamestown."
+
+### 5. For a FIX job (not applied here)
+- **E509**: header: **from Fort Monroe (Col. R. C. Webster, via Sheldon) to R. O'Brien at Hd Qrs. Army of the James, for Col. George S. Dodge**, 4 Jan
+  1865 5 PM -- not "R. O'Brien to Sheldon"; "[McMinnville]" -> Dodge (plain name); "[West] win Metropolis" -> Western Metropolis (H, hospital steamer;
+  lift the M); "Bende Ford" = Ben De Ford; final "Webster" = the signer's name (plain), not a signature word; "Orcey" M. Header note: answers Dodge's
+  request printed OR I/46 pt 2 pp.34-35 (= holder 5853/0, unfiled); O'Brien pp.179-180.
+- **E511**: "{tail: [signed]" opens at "Webster" (the addressee): the message body is outside the tail, which is "walrus William Tea Howl" = [signed]
+  W. T. Howell; "[100]" -> W. (initial, plain); "ditto" M. Header: from Capt. W. T. Howell for Gen. Rawlins, to Col. Webster.
+- **E506**: same structure error -- "Webster" after "Harriet penny" is the addressee (1 PM, 4th, to Webster), tail only "yoke William tea Howl" = [signed]
+  W. T. Howell; "[100]" -> W. (plain); "ran lines" = Rawlins (plain-phonetic).
+- **E514**: "[Reinforcements] steer" -> Webster (plain-phonetic "Webb steer", as E532); "way worner" -> [Steam]er (H, Wayworn); header "for a colonel" ->
+  for Colonel Webster, chief quartermaster, Fort Monroe; signed Ingalls.
+- **E508**: "hereWalrus" -> "here [signed]" (Walrus = Signature, H); "Webster" after it = signer's name (plain), not [signed]; "[100] Tea Howell" -> W. T.
+  Howell (plain).
+- **E521**: none.
+- Unfiled holder rows met: **5853/0** (Dodge to Webster, 4 Jan 2.55 PM, in cipher; printed OR I/46 pt 2 pp.34-35: N1 if ever filed) and **5852/0** (Dodge
+  to Webster, "is steamer Ben De Ford at Monroe?", the first of the pair; not located in print by this audit).
