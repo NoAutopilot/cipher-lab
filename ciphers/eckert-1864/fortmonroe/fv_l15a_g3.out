@@ -1,0 +1,53 @@
+== E555
+  plaintext UNCHECKED-NET 4-editions    [adhoc-53e3ce:4-editions:0ae422] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion014702rootrich): djvu text not fetched (max-requests (item) reached); lending-only volumes need the be-api
+  plaintext UNCHECKED-NET 4-editions    [adhoc-53e3ce:4-editions:5bb7c6] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion014703rootrich): djvu text not fetched (max-requests (item) reached); lending-only volumes need the be-api
+  plaintext UNCHECKED-NET 4-editions    [adhoc-53e3ce:4-editions:415ea7] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion481unit): djvu text not fetched (max-requests (item) reached); lending-only volumes need the be-api snippe
+  plaintext UNCHECKED-NET 4-editions    [adhoc-53e3ce:4-editions:7b6f12] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion482unit): djvu text not fetched (max-requests (item) reached); lending-only volumes need the be-api snippe
+  plaintext UNCHECKED-NET 4-editions    [adhoc-53e3ce:4-editions:3c4170] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion491unit): djvu text not fetched (max-requests (item) reached); lending-only volumes need the be-api snippe
+  plaintext UNCHECKED-NET 4-editions    [adhoc-53e3ce:4-editions:29d713] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion492unit): djvu text not fetched (max-requests (item) reached); lending-only volumes need the be-api snippe
+  plaintext UNCHECKED-NET 6-g3          [adhoc-53e3ce:6-g3:7ef2ba] most blocking of 6 phrases: 'Geo D Sheldon Washington 12' ia-global: not searched (max-requests (item) reached);
+  plaintext UNCHECKED-NET 6-g3          [adhoc-53e3ce:6-g3:1d3009] most blocking of 6 phrases: 'Geo D Sheldon Washington 12' gbooks: not searched (max-requests (item) reached);
+  holds: specific 3 (LEAD 3); generic 14 (UNCHECKED-NET 14)
+  verdict plaintext: LEAD
+  verdict step: LEAD
+exit 4: owed before this step: LEAD adhoc-53e3ce:1-own:261bc7, LEAD adhoc-53e3ce:1-own:ddc30c, LEAD adhoc-53e3ce:6-g3:f0917a, UNCHECKED-NET adhoc-53e3ce:4-editions:0ae422, UNCHECKED-NET adhoc-53e3ce:4-editions:29d713, UNCHECKED-NET adhoc-53e3ce:4-editions:3c4170, UNCHECKED-NET adhoc-53e3ce:4-editions:3dfea0, UNCHECKED-NET adhoc-53e3ce:4-editions:415ea7, UNCHECKED-NET adhoc-53e3ce:4-editions:5bb7c6, UNCHECKED-NET adhoc-53e3ce:4-editions:7b6f12, UNCHECKED-NET adhoc-53e3ce:4-editions:8fd6d3, UNCHECKED-NET adhoc-53e3ce:4-editions:b87cc4, UNCHECKED-NET adhoc-53e3ce:4-editions:cca101, UNCHECKED-NET adhoc-53e3ce:4-editions:e6fc62, UNCHECKED-NET adhoc-53e3ce:4-editions:eb5b60, UNCHECKED-NET adhoc-53e3ce:6-g3:1d3009, UNCHECKED-NET adhoc-53e3ce:6-g3:7ef2ba
+== E568
+  plaintext CLEAR         6-g3          [adhoc-ef3445:6-g3:6670e5] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion014702rootrich): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-ef3445:6-g3:66af36] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion014703rootrich): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-ef3445:6-g3:f2274e] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion481unit): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-ef3445:6-g3:63f45a] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion482unit): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-ef3445:6-g3:6dd3c0] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion491unit): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-ef3445:6-g3:f58301] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion492unit): 6 decoded phrases, no hit
+  plaintext UNCHECKED-NET 6-g3          [adhoc-ef3445:6-g3:a179fd] most blocking of 6 phrases: 'Maj Eckert Volunteer Wilmington February' ia-global: not searched (max-requests (item) reached);
+  plaintext UNCHECKED-NET 6-g3          [adhoc-ef3445:6-g3:69c50e] most blocking of 6 phrases: 'Maj Eckert Volunteer Wilmington February' gbooks: not searched (max-requests (item) reached);
+  holds: specific 2 (LEAD 2); generic 2 (UNCHECKED-NET 2)
+  verdict plaintext: UNCHECKED-NET
+  verdict step: LEAD
+exit 4: owed before this step: LEAD adhoc-ef3445:1-own:261bc7, LEAD adhoc-ef3445:1-own:ddc30c, UNCHECKED-NET adhoc-ef3445:6-g3:69c50e, UNCHECKED-NET adhoc-ef3445:6-g3:a179fd
+== E541
+  plaintext CLEAR         6-g3          [adhoc-466ce4:6-g3:6670e5] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion014702rootrich): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-466ce4:6-g3:66af36] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion014703rootrich): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-466ce4:6-g3:f2274e] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion481unit): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-466ce4:6-g3:63f45a] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion482unit): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-466ce4:6-g3:6dd3c0] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion491unit): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-466ce4:6-g3:f58301] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion492unit): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-466ce4:6-g3:8d86ea] most blocking of 6 phrases: 'Geo D Sheldon Ft Monroe' ia-global: no hits;
+  plaintext LEAD          6-g3          [adhoc-466ce4:6-g3:9926cf] most blocking of 6 phrases: 'Geo D Sheldon Ft Monroe' gbooks: 319 volume(s); Z14IAbhLzlMC The War of the Rebellion: v. 1-53 [seria 1891; drM9AAAAYAAJ The War of the Rebellion 1891; dRRKcjRlkrwC House 
+  holds: specific 3 (LEAD 3); generic 0 (none)
+  verdict plaintext: LEAD
+  verdict step: LEAD
+exit 4: owed before this step: LEAD adhoc-466ce4:1-own:261bc7, LEAD adhoc-466ce4:1-own:ddc30c, LEAD adhoc-466ce4:6-g3:9926cf
+== E576
+== E575
+  plaintext CLEAR         6-g3          [adhoc-96dddf:6-g3:6670e5] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion014702rootrich): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-96dddf:6-g3:66af36] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion014703rootrich): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-96dddf:6-g3:f2274e] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion481unit): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-96dddf:6-g3:63f45a] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion482unit): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-96dddf:6-g3:6dd3c0] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion491unit): 6 decoded phrases, no hit
+  plaintext CLEAR         6-g3          [adhoc-96dddf:6-g3:f58301] War of the Rebellion: Official Records, ser. I vols 32-49 (1864-65 operations) (warofrebellion492unit): 6 decoded phrases, no hit
+  plaintext LEAD          6-g3          [adhoc-96dddf:6-g3:c5731b] most blocking of 6 phrases: 'no Point on the Banks' ia-global: 26 item(s); onehundredprizeq00mile (The one hundred prize questions in Canadian histor); onehundredprizeq00mile_0 (The one hundred prize 
+  plaintext LEAD          6-g3          [adhoc-96dddf:6-g3:69d6d8] most blocking of 6 phrases: 'Geo D Sheldon Ft Monroe' gbooks: 319 volume(s); Z14IAbhLzlMC The War of the Rebellion: v. 1-53 [seria 1891; drM9AAAAYAAJ The War of the Rebellion 1891; dRRKcjRlkrwC House 
+  holds: specific 5 (LEAD 5); generic 0 (none)
+  verdict plaintext: LEAD
+  verdict step: LEAD
+exit 4: owed before this step: LEAD adhoc-96dddf:1-own:261bc7, LEAD adhoc-96dddf:1-own:277ec2, LEAD adhoc-96dddf:1-own:ddc30c, LEAD adhoc-96dddf:6-g3:69d6d8, LEAD adhoc-96dddf:6-g3:c5731b

@@ -18079,7 +18079,7 @@ partial (line 3) -- edition/page or full-text-search citation found within 6 lin
 nothing below is classed from step 0. Prior-work tool (`prior_work.py --item-spec ... --step-type audit`, all six): exit 4, the only specific holds two
 target-level live claims (FM-F1, FIX-L14) that name other rows (checked: not these); edition rows UNCHECKED-NET or CLEAR; for E575/E576 an edition LEAD in
 OR I/46 pt 2 (Gordon/Ord, 14-15 Mar) = the Gordon reply settled in s.2 below. G3 (`--reading <decoded body> --network --max-requests 12`, five non-N1
-entries): `fortmonroe/fv_l15a_g3.out`.
+entries; 13:16-13:45 UTC): `fortmonroe/fv_l15a_g3.out` -- E555 LEAD 'Troops will sail from here' = OR I/40 pt 3 (July 1864, near match, outside the date window: rejected); E541 and E575 LEAD on the header phrase 'Geo D Sheldon Ft Monroe' (the operator's name across the OR: rejected) and E575 'no Point on the Banks' (a Canadian history quiz book: rejected); E568 UNCHECKED-NET (request cap reached); E576 timed out at 400 s, nothing returned. The tool spends its 12 requests on djvu fetches and header phrases; the hand searches of s.2 are the G3 of record.
 Scripts: `fortmonroe/fv_l15a_hdl.py` (+ `.out`: 26 CONTENTdm full-text queries across all pointers incl. control -> 9678, 4 item infos, six page
 images at 2400 px to scratch), `fv_l15a_print.py` (+ `.out`: letters-only phrase grep over 187 cached print-check volumes incl. OR I/46 pts 1-3,
 I/47 pt 2, ORN I/11, Butler Corr. V; OR I/46 pts 1, 3 and ORN I/11 fetched into the cache this session and added to `print/or_volume_map.tsv`),
