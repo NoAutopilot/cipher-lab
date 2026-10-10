@@ -376,6 +376,8 @@ def write_site(out, date):
 # (5) the interest tier is a data attribute only (score >= 2 adds an empty "Context" slot for SITE-ITEMS-3, nothing else changes).
 
 ENGLISH_TSV = os.path.join(HERE, "data", "english_lines.tsv")  # written by SITE-ITEMS-2: item, line id, original, english, grades, date
+CONTEXT_TSV = os.path.join(HERE, "data", "context_paragraphs.tsv")  # SITE-ITEMS-3 curator paragraphs, held for the orchestrator's read
+CONTEXT_FLAG = os.path.join(HERE, "data", "context_approved")  # created by the orchestrator; until then the Context slot stays a placeholder
 PENDING_EN = "English line: pending (SITE-ITEMS-2)"
 ECKERT_READINGS = ("reading.md", "reading-no2.md", "reading-no9.md")
 BLOCK = re.compile(r"^\*\*([A-Z0-9][A-Z0-9-]*) \| [^\n]*\*\*\n\n(.+?)\n\n(Code-word tokens:[^\n]*)", re.M | re.S)
@@ -528,6 +530,19 @@ def token_rows(it, path):
             and os.path.basename(path) == "reading_tokens.tsv":
         return []
     return out
+
+
+def context_paragraphs():
+    """{item: (hook, context, sources)} from CONTEXT_TSV, only once CONTEXT_FLAG exists (the orchestrator has read them)."""
+    if "ctx" not in _cache:
+        out = {}
+        if os.path.exists(CONTEXT_FLAG) and os.path.exists(CONTEXT_TSV):
+            for ln in open(CONTEXT_TSV, encoding="utf-8"):
+                c = ln.rstrip("\n").split("\t")
+                if len(c) >= 4 and c[0] != "item" and not c[0].startswith("#"):
+                    out[c[0]] = (c[1], c[2], c[3])
+        _cache["ctx"] = out
+    return _cache["ctx"]
 
 
 def english_lines():
@@ -804,8 +819,14 @@ def item_page(it, sc, dsp, pfx, people_href):
     out.append('<section class="part" id="who"><h2>Who, where, when</h2>' + "".join(who) + "</section>")
     out.append(f'<section class="part" id="how"><h2>How we know</h2>{badge_block(it, pfx)}</section>')
     if sel and sel["score"] is not None and sel["score"] >= 2:
-        out.append('<section class="part" id="context"><h2>Context</h2><p class="ctxslot" data-pending="context">Context: to be '
-                   'written from printed sources on file, labelled context (SITE-ITEMS-3).</p></section>')
+        cx = context_paragraphs().get(it["file"][:-5])
+        if cx:
+            out.append(f'<section class="part" id="context"><h2>Context</h2><p class="says1">{E(cx[0])}</p>'
+                       f'<p><span class="k">Context (from printed sources and the audit, not from the cipher)</span>{E(cx[1])}</p>'
+                       f'<p class="small">Sources: {E(cx[2])}.</p></section>')
+        else:
+            out.append('<section class="part" id="context"><h2>Context</h2><p class="ctxslot" data-pending="context">Context: to be '
+                       'written from printed sources on file, labelled context (SITE-ITEMS-3).</p></section>')
     out.append("</article>")
     return "".join(out), pend, names, sel
 

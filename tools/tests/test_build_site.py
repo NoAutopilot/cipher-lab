@@ -170,6 +170,12 @@ def main():
         print(f"ok: item pages carry the four sections; English pending on {pend_en} item pages; people index {len(people)} pages; "
               "interest tiers " + ", ".join(f"{k}: {v}" for k, v in sorted(tiers.items())))
         print(f"ok: {check_tokens(out)} token tables each on their own item page; known cases {len(KNOWN)}/{len(KNOWN)}")
+        flag = os.path.join(os.path.dirname(SCRIPT), "data", "context_approved")
+        held = sum('data-pending="context"' in open(os.path.join(out, "items", f), encoding="utf-8").read()
+                   for f in os.listdir(os.path.join(out, "items")))
+        if not os.path.exists(flag) and held != tiers.get("2", 0) + tiers.get("3", 0):
+            fail(f"curator paragraphs shown before data/context_approved exists ({held} slots held)")
+        print(f"ok: Context slots held {held} (flag {'present' if os.path.exists(flag) else 'absent'})")
 
 
 if __name__ == "__main__":
