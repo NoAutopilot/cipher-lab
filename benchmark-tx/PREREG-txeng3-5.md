@@ -1,4 +1,4 @@
-# PREREG-txeng3-5 BOXES: do the owner's corrected boxes lower err_true against the machine's boxes? (TXE3-5; account 3; Fable worker session_014KPMCN7x6L5GsRgRFKMCLr; written 06:2x UTC 11 Oct 2026 by date -u, before any arm was classified or scored)
+# PREREG-txeng3-5 BOXES: do the owner's corrected boxes lower err_true against the machine's boxes? (TXE3-5; account 3; Fable worker session_014KPMCN7x6L5GsRgRFKMCLr; written 06:0x UTC 11 Oct 2026 by date -u (clock read 06:01), before any arm was classified or scored)
 
 Brief: one of ten TXE3 experiments (account-3 parent session_0198Cv8ypBfBVfRToKVWx33M, owner's ask 11 Oct 2026). Cap USD 15, box
 05:47-07:47 UTC, 80% line 07:23 / 12.00. Nearest prior: OL1-BOXES / OL1-PAGE (benchmark-tx/txeng2/oracle1/: the machine boxes the
