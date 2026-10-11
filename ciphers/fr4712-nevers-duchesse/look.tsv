@@ -15,3 +15,25 @@ utc	item_id	look_row_id	role	folio	canvas	image	source	status
 2026-10-11 06:17	adhoc-b017d4	adhoc-b017d4:2-leaf:881488	unit			f10_L03_s2.jpg	manifest	owed
 2026-10-11 06:17	adhoc-b017d4	adhoc-b017d4:2-leaf:881488	unit			f10_L04_s1.jpg	manifest	owed
 2026-10-11 06:17	adhoc-b017d4	adhoc-b017d4:2-leaf:881488	unit			f10_L04_s2.jpg	manifest	owed
+2026-10-11 18:56	adhoc-4707f0	adhoc-4707f0:2-leaf:3ca102	unit			f10_L01_s1.jpg	manifest	owed
+2026-10-11 18:56	adhoc-4707f0	adhoc-4707f0:2-leaf:3ca102	unit			f10_L01_s2.jpg	manifest	owed
+2026-10-11 18:56	adhoc-4707f0	adhoc-4707f0:2-leaf:3ca102	unit			f10_L02_s1.jpg	manifest	owed
+2026-10-11 18:56	adhoc-4707f0	adhoc-4707f0:2-leaf:3ca102	unit			f10_L02_s2.jpg	manifest	owed
+2026-10-11 18:56	adhoc-4707f0	adhoc-4707f0:2-leaf:3ca102	unit			f10_L03_s1.jpg	manifest	owed
+2026-10-11 18:56	adhoc-4707f0	adhoc-4707f0:2-leaf:3ca102	unit			f10_L03_s2.jpg	manifest	owed
+2026-10-11 18:56	adhoc-4707f0	adhoc-4707f0:2-leaf:3ca102	unit			f10_L04_s1.jpg	manifest	owed
+2026-10-11 18:56	adhoc-4707f0	adhoc-4707f0:2-leaf:3ca102	unit			f10_L04_s2.jpg	manifest	owed
+2026-10-11 18:57	adhoc-945b59	adhoc-945b59:2-leaf:2b05cf	cipher-page	10r		f10_L01_s1.jpg	manifest	owed
+2026-10-11 18:57	adhoc-945b59	adhoc-945b59:2-leaf:2b05cf	facing	9v			folio arithmetic	owed
+2026-10-11 18:57	adhoc-945b59	adhoc-945b59:2-leaf:2b05cf	before-2	9r			folio arithmetic	owed
+2026-10-11 18:57	adhoc-945b59	adhoc-945b59:2-leaf:2b05cf	after-1	10v		f10_L01_s1.jpg	manifest	owed
+2026-10-11 18:57	adhoc-945b59	adhoc-945b59:2-leaf:2b05cf	after-2	11r			folio arithmetic	owed
+2026-10-11 18:57	adhoc-945b59	adhoc-945b59:2-leaf:2b05cf	after-3	11v			folio arithmetic	owed
+2026-10-11 18:57	adhoc-945b59	adhoc-945b59:2-leaf:2b05cf	after-4	12r			folio arithmetic	owed
+2026-10-11 18:57	adhoc-945b59	adhoc-945b59:2-leaf:2b05cf	unit			f10_L01_s2.jpg	manifest	owed
+2026-10-11 18:57	adhoc-945b59	adhoc-945b59:2-leaf:2b05cf	unit			f10_L02_s1.jpg	manifest	owed
+2026-10-11 18:57	adhoc-945b59	adhoc-945b59:2-leaf:2b05cf	unit			f10_L02_s2.jpg	manifest	owed
+2026-10-11 18:57	adhoc-945b59	adhoc-945b59:2-leaf:2b05cf	unit			f10_L03_s1.jpg	manifest	owed
+2026-10-11 18:57	adhoc-945b59	adhoc-945b59:2-leaf:2b05cf	unit			f10_L03_s2.jpg	manifest	owed
+2026-10-11 18:57	adhoc-945b59	adhoc-945b59:2-leaf:2b05cf	unit			f10_L04_s1.jpg	manifest	owed
+2026-10-11 18:57	adhoc-945b59	adhoc-945b59:2-leaf:2b05cf	unit			f10_L04_s2.jpg	manifest	owed
