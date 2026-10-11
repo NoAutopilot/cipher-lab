@@ -21,6 +21,12 @@ Pre-registered before any re-read (SFZ-LOOK, 9 Oct 2026, ~14:0x UTC):
   * the lattice decode + judge are rerun only if a target tile's label changes under the tool's reconcile rule.
   python3 ciphers/sforza-pusterla-1447-f13/lookalike/build.py
 Writes lookalike/{passC.tsv,agreement.tsv,tiles_target.tsv,tiles_all.tsv,confusion_f13.tsv} and prints counts.
+
+SFZ-LOOK2 (11 Oct 2026): `--look2` runs the same adapter on the next four decode-relevant pairs (NOTES.md Remaining gaps,
+gap 2): So/go, 8/g, h/h-, a/ze, with the reference sequence = pass D (pass C after S8; differs from C only at S8's 10
+settled tiles, none in these pairs) and outputs in lookalike/look2/ (S8's files untouched; same rules, same seed 7, same
+control design: A = reference, conf H, up to 3 per label, candidates = the label and its pair partner).
+  python3 ciphers/sforza-pusterla-1447-f13/lookalike/build.py --look2
 """
 import csv, collections, os, random, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -28,8 +34,15 @@ TGT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(TGT, '..', '..', 'tools'))
 from lookalike_pass import _align  # noqa: E402
 
-PAIRS = [frozenset(p) for p in (('T=', 'b-'), ('d', 'g'), ('q', 'V'), ('q=', 'V'))]
-PARTNER = {'T=': 'b-', 'b-': 'T=', 'd': 'g', 'g': 'd', 'q': 'V', 'V': 'q', 'q=': 'V'}
+LOOK2 = '--look2' in sys.argv
+if LOOK2:
+    PAIRS = [frozenset(p) for p in (('So', 'go'), ('8', 'g'), ('h', 'h-'), ('a', 'ze'))]
+    PARTNER = {'So': 'go', 'go': 'So', '8': 'g', 'g': '8', 'h': 'h-', 'h-': 'h', 'a': 'ze', 'ze': 'a'}
+    REF, OUTD, RUN = 'ciphertext_f13_passD.tsv', os.path.join(HERE, 'look2'), 'sfzlook2'
+else:
+    PAIRS = [frozenset(p) for p in (('T=', 'b-'), ('d', 'g'), ('q', 'V'), ('q=', 'V'))]
+    PARTNER = {'T=': 'b-', 'b-': 'T=', 'd': 'g', 'g': 'd', 'q': 'V', 'V': 'q', 'q=': 'V'}
+    REF, OUTD, RUN = 'ciphertext_f13_passC.tsv', HERE, 'sfzlook'
 
 
 def load(fn):
@@ -52,7 +65,7 @@ def load(fn):
 
 
 def main():
-    A, B, C = (load(f'ciphertext_f13_pass{x}.tsv') for x in 'ABC')
+    A, B = (load(f'ciphertext_f13_pass{x}.tsv') for x in 'AB'); C = load(REF)
     ag, pc, tiles, ctrl_pool = [], [], [], collections.defaultdict(list)
     conf_cnt = collections.Counter()
     for ln, toks in C.items():
@@ -72,11 +85,11 @@ def main():
             hit = [p for p in PAIRS if (x and frozenset((x, lab)) == p) or (alt and frozenset((lab, alt)) == p)]
             if hit:
                 cand = sorted(set(hit[0]) | labs)
-                tiles.append(dict(run='sfzlook', passage=ln, pos=i, passC=lab, A=x or '', B=lab, status='split',
+                tiles.append(dict(run=RUN, passage=ln, pos=i, passC=lab, A=x or '', B=lab, status='split',
                                   why='split', kind='target', candidates=','.join(cand), before=ctx_b, after=ctx_a,
                                   passB_record=y or '', altC=alt))
             elif x == lab and lab in PARTNER and cf == 'H' and not alt:
-                ctrl_pool[lab].append(dict(run='sfzlook', passage=ln, pos=i, passC=lab, A=x, B=lab, status='split',
+                ctrl_pool[lab].append(dict(run=RUN, passage=ln, pos=i, passC=lab, A=x, B=lab, status='split',
                                            why='control', kind='control', candidates=','.join(sorted((lab, PARTNER[lab]))),
                                            before=ctx_b, after=ctx_a, passB_record=y, altC=alt))
     rnd = random.Random(7)
@@ -86,7 +99,8 @@ def main():
     allt = tiles + ctrl
     rnd.shuffle(allt)   # interleave so position in the montage never marks a control
     def w(name, rows):
-        with open(os.path.join(HERE, name), 'w', newline='') as o:
+        os.makedirs(OUTD, exist_ok=True)
+        with open(os.path.join(OUTD, name), 'w', newline='') as o:
             d = csv.DictWriter(o, fieldnames=list(rows[0]), delimiter='\t', lineterminator='\n'); d.writeheader(); d.writerows(rows)
     w('passC.tsv', pc); w('agreement.tsv', ag); w('tiles_target.tsv', tiles); w('tiles_all.tsv', allt)
     w('confusion_f13.tsv', [dict(label_a=k[0], label_b=k[1], n=n) for k, n in conf_cnt.most_common()])
