@@ -1,0 +1,36 @@
+{
+ "birago1572-f152r": {
+  "map": "rescore/f152r_box_token_labelaware.tsv",
+  "mapped_tokens": 87,
+  "A1_ne_A2": 19,
+  "A0a_ne_A2": 42,
+  "A2_ne_null": {
+   "min": 77,
+   "mean": 83.2,
+   "max": 87
+  },
+  "A1_ne_lineread": 39,
+  "A2_ne_lineread": 36,
+  "posthoc_A2x_ne_A2": 1,
+  "posthoc_A2x_ne_A1": 19,
+  "A1_atlas_tokens_changed_by_map": 7,
+  "A2_atlas_tokens_changed_by_map": 7
+ },
+ "birago1572-no87": {
+  "map": "atlas/no87_box_token_labelaware.tsv",
+  "mapped_tokens": 700,
+  "A1_ne_A2": 122,
+  "A0a_ne_A2": 284,
+  "A2_ne_null": {
+   "min": 628,
+   "mean": 668.9,
+   "max": 686
+  },
+  "A1_ne_lineread": 287,
+  "A2_ne_lineread": 271,
+  "posthoc_A2x_ne_A2": 21,
+  "posthoc_A2x_ne_A1": 118,
+  "A1_atlas_tokens_changed_by_map": 147,
+  "A2_atlas_tokens_changed_by_map": 143
+ }
+}
