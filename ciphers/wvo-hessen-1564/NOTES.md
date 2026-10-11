@@ -974,3 +974,162 @@ Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 ro
 - [x] image-check: the 33 tiles eye-read blind with a reference strip, decoy gate PASS 8/10 (FAM-WVOH, PREREG-FAM-WVOH.md); 12 tiles to AGREE, k03 split and k08 cuts to sorter/focus.tsv
 - [ ] retry: re-alignment after the owner's sorter pass on the five FAM-WVOH focus rows (k03 split, k08 cuts), ~$1.5
 Verdict: keep going: 2 internal gaps; cheapest next: the owner's sorter pass on the five sorter/focus.tsv rows from FAM-WVOH, then re-run the realign/ alignment, ~$1.5
+
+## Owner's answers 11 Oct 2026 (sorter, FAM-WVOH questions)
+
+Account-3 parent workflow, 11 Oct 2026, 02:4x-03:1x UTC by date -u. Stages: apply and re-align (parent stages), then an
+independent check and this record (a separate stage that did not run the first two). No network, no subagent; one look at
+a montage of crops of `images/01109_p3_400full.jpg` (scratch only, not committed).
+
+**What the owner answered.** He wrote "Oranje 1564 Sign Sorter - done" (about 02:4x UTC). The page was republished at 01:09 UTC
+on sorter template 2026-10-09.5 with the 8 Oct focus rows. It already held his 6 Oct answers. The page's database, read again
+into `sorter/db/`, holds 95 moves, 7 checked, 44 recuts and 23 new piles. That is 2 new moves and 7 new checks; the other 93
+moves, the recuts and the new piles are byte-identical to the 6 Oct copies. The new answers were saved between 02:40:04 and
+02:40:46 UTC.
+- Kept in their piles ("checked"): f23_C01_01_025 k08, f23_C05_01_005 k08, f23_C09_01_025 k03, f23_C03_01_021 k20,
+  f23_C05_01_004 k03, f23_C07_01_013 k23, f23_C04_01_008 k08.
+- Moved: f23_C06_01_024 k13 -> k13-d, and f23_C09_01_029 k11 -> k12.
+- The FAM-WVOH questions (Remaining gaps, 8 Oct), answered by shape:
+  - The closed-loop "ze"-like form (f23_C02_01_014, f23_C09_01_025): own sign, or part of k03? Answer: part of k03.
+    C02_01_014 was moved there on 6 Oct, and C09_01_025 was kept there on 11 Oct.
+  - The k08 tiles f23_C01_01_025 and f23_C05_01_005: one sign or two? Answer: one sign each, kept in k08, no bad cut.
+  - f23_C06_01_009, bad cut? No new answer. It was re-cut and moved to k03 on 6 Oct and stays there. (See the
+    duplicate-tile finding below.)
+
+**Apply (independently re-derived).** Command, from the repository root (D=ciphers/wvo-hessen-1564/sorter):
+```
+python3 -I tools/sign_sorter_apply.py --labels $D/labels.tsv --db $D/db --out $D/settled_labels.tsv \
+  --summary $D/sorter_summary.json --recuts-out $D/recuts.tsv
+-> {"tiles": 258, "mode": "blind", "by_status": {"kept": 163, "moved": 85, "merged": 0, "not-letter": 0, "aside": 6,
+    "bad-cut": 4}, "signs_before": 28, "signs_after": 48, "recuts": 44}   exit 0
+```
+- The check stage ran it again from a separate copy of the db into scratch. `settled_labels.tsv`, `sorter_summary.json` and
+  `recuts.tsv` came out byte-identical to the apply stage's output, and `recuts.tsv` is unchanged from the 6 Oct commit.
+- The apply stage confirmed this is the 6 Oct command. Run with the 6 Oct tool version (a6b2258a8) on the 6 Oct db, it
+  rebuilds commit a5a8cc3da's three files byte-identically.
+- Settled-label changes on sid/old_sign/new_sign/status: **2 of 258 tiles**. f23_C06_01_024 goes from k13 kept to k13-d
+  moved, and f23_C09_01_029 from k11 kept to k12 moved. The 7 checked tiles are already in the piles named.
+- Two format changes from the current tool (MQS-SORTER, 9 Oct 2026): a fifth column `mode` (= blind on all 258 rows), and
+  summary keys `confirmed_tiles` and `mode`. Blind is correct here: there is no --page or --key-family, and
+  `tools/data/sorter_families.tsv` has no WVO family.
+
+**settled/ rebuilt on the new labels.** This was added by the check stage; the parent's file list did not include it.
+- Why (rule 7): `settled/make_key.py` reads `sorter/settled_labels.tsv`. Left alone, the committed `settled/` files would not
+  be what the script writes from the committed inputs.
+- Run: `python3 settled/make_key.py`, then `tools/decode_key.py ciphers/wvo-hessen-1564/settled`. The `decode.json` header now
+  names the 11 Oct answers.
+- Key: no key value or grade changed (still 24 C / 23 M). Only the tile counts moved: k11 is c, M, 9 tiles, 3/8; k12 is e, C,
+  8 tiles, 6/7, others g:1; k13 has 12 tiles and k13-d 8.
+- `--check`: `tokens 257: C 203, M 32, U 22`, "reading up to date", exit 0 (was C 202, M 33, U 22).
+- Tile level against the R10 gloss letters:
+  - AGREE stays 159.
+  - C conflicts go from 22 to 23. f23_C09_01_029 now reads e at C, but R10's alignment put g over it, while the re-alignment
+    puts e over it.
+  - C unaligned stays 21.
+- `realign/run.py real` was then re-run so that `realign/tile_letters.tsv` reads the rebuilt `settled/compare.tsv`. Only that
+  file's settled_sign, value_before and grade_before columns changed, on the same 2 rows; every other realign file was unchanged.
+
+**Re-alignment on the 11 Oct labels.** The 4th run of `tools/interlinear_align.py` on this leaf, with PREREG-WVO-REALIGN and
+PREREG-R9 parameters unchanged. It is licensed by new material (the owner's labels), not a tuning.
+- Re-run by the check stage from an independent copy (`run.py real` + `run.py control 300`): every `realign/` output
+  byte-identical to the re-align stage's.
+- `decode_key.py ciphers/wvo-hessen-1564/realign --check`: `tokens 257: C 192, M 42, U 23`, "reading up to date", exit 0.
+
+| figure (realign/figures.json) | 7 Oct (6 Oct labels) | 11 Oct labels |
+|---|---|---|
+| C tiles agreeing with the gloss letter (AGREE) | 159/257 | **160/257** |
+| C tiles | 192 | 192 |
+| C conflict / C unaligned | 19 / 14 | 18 / 14 |
+| CONSISTENT key rows | 22 | 22 |
+| key rows C / M | 22 / 25 | 22 / 25 |
+
+- Exactly 4 tiles changed:
+  - f23_C06_01_024 went from unaligned to agree (m).
+  - f23_C06_01_023 (k13-d) went from agree to unaligned. The aligner gave its m to the neighbour.
+  - f23_C09_01_029 went from unaligned to agree (e).
+  - f23_C09_01_031 (k03) went from a conflict (e) to unaligned.
+- No key value or grade changed. k03 t went from 6/10 to 6/9, k12 e from 6/6 to 7/7, and k11 c stays at 5/8.
+- The key-check stream changed in two places: C06 "w e i m i a h l" -> "w e i m m a h l", and C09 "... g c t t" -> "... g e t t".
+- Rule 4 counts (realign/): H 0, C 192, S 0, M 42 valued + 13 blank, I 0, 10 aside/bad-cut ungraded, 1 clear (E.L.).
+  No H or C from a key source: the C grades come from the leaf's own period gloss.
+
+**Controls.**
+- PREREG-WVO-REALIGN within-row label permutation (300 draws, seed 1564, full pipeline per draw), before -> after:
+  - AGREE: real 159 -> 160; mean 3.34 -> 3.32; p95 9; max 19; p 0.0033 (the 1/301 floor).
+  - CONSISTENT: real 22; mean 1.38 -> 1.37; p95 3.
+  - C: real 192; mean 5.20 -> 5.14; p95 14.
+- PREREG-R9 derangement (`--shuffle 1000 --seed 1564`, the tool's own tally): real 25; mean 2.428 -> 2.327; p95 5; max 7;
+  p 0.001.
+- Reading: the agreement beats chance (real 160 > p95 9). The +1 over 159 is a difference, not gated, as the PREREG says.
+- The permutation can vary the statistic, because it breaks the link between sign label and letter.
+- FAM-WVOH's own decoy gate (8/10 PASS, 8 Oct) was not re-run. It needs a new vision read.
+
+**FAM-WVOH eye letters carried onto the new alignment.** This is a projection, not a new eye read.
+- Of the now 32 non-agreeing C tiles: 15 CONFLICT, 12 AGREE, 4 NONE, and 1 never read as a target (f23_C06_01_023).
+- Eye-adjusted AGREE is 172/257 (160 + 12), was 171/257.
+- The 15 conflicts by pile: k11 4, k03 3, k08 3, k14 2, k13 1, k13-d 1, k01 1.
+- Both tiles the owner moved were FAM-WVOH CONFLICTs. Each one's blind eye letter (m and e) now equals its new key value, so
+  for these two tiles the owner's sort, the aligner and the 8 Oct eye read agree.
+
+**What the answers settle.**
+- The k03 and k08 answers confirm the existing labels. So FAM-WVOH's two sorting explanations do not hold: the k03 pile does
+  not mix two shapes, and the two k08 tiles are not merged cuts.
+- The four tiles they were meant to explain remain conflicts, in both counts: f23_C02_01_014 and f23_C09_01_025 in k03, and
+  f23_C01_01_025 and f23_C05_01_005 in k08. The aligner and the 8 Oct eye read both put gloss i over all four.
+- k03 = t (6/9 aligned) and k08 = h (9/11) stay at C under the PREREG rule.
+- What causes the i over these four tiles is not settled. Three causes fit two occurrences per sign equally: a second value
+  for the sign, a slip by the glossing hand, or a one-place offset. No key value changed.
+- f23_C09_01_025 sits after a duplicate pair in its own row (next paragraph), so an offset is possible there. The other three
+  are in rows with no duplicate pair.
+
+**Duplicate tiles from the 6 Oct recuts (found by this check).** `sorter/signs_recut.tsv` holds the tile boxes after the
+owner's re-cuts. Scanning it for overlapping boxes on the same row finds 7 pairs of adjacent tiles whose boxes overlap at IoU
+0.60-0.88; the smaller box is 0.88-1.00 covered. No other pair overlaps above IoU 0.11. The scan:
+```
+python3 -c "import csv,itertools,collections as C;g=C.defaultdict(list)
+[g[r['page']].append(r) for r in csv.DictReader(open('ciphers/wvo-hessen-1564/sorter/signs_recut.tsv'),delimiter='\t')]
+b=lambda r:[int(float(r[k])) for k in 'xywh']
+for p,L in g.items():
+  for r,s in itertools.combinations(L,2):
+    (x,y,w,h),(u,v,W,H)=b(r),b(s);i=max(0,min(x+w,u+W)-max(x,u))*max(0,min(y+h,v+H)-max(y,v));o=i/(w*h+W*H-i)
+    o>0.5 and print(r['sid'],s['sid'],round(o,2))"
+```
+One look at a montage, by one worker (grade M): it shows both the original boxes and the re-cut boxes. In each pair, the two
+original boxes were halves of one written sign, and both halves were re-cut to the whole sign. So 7 written signs are counted
+twice in the 257-token stream:
+- Same pile (5 pairs): C03 018/019 (k23), C04 022/023 (k13), C06 023/024 (k13-d since the 11 Oct move), C07 023/024 (k13),
+  C09 031/033 (k03).
+- Different piles (2 pairs): C06 009/010 (k03 / k23) and C09 018/019 (k23 / k03). So the answer to "C06_01_009 bad cut?" goes
+  further than the 6 Oct move: the re-cut made it the same written sign as f23_C06_01_010, which is in k23. One sign stands in
+  two piles.
+- Effect on the counts: 6 of the 32 non-agreeing C tiles are one copy of a pair (C04_022 and C09_033 in conflict; C06_009,
+  C06_023, C07_023 and C09_031 unaligned).
+- Effect on the stream: the doubled letters "w e i m m a h l" (C06) and "a w e i i m a" (C07) under the gloss word "zweimahl",
+  which has one m and one i, are these duplicates.
+- Prediction for the next step, not a result (no run was made on a deduplicated stream): with one copy dropped, C06 would read
+  "w e i m a h l", and "d i e a d e r n" if the k23 copy is kept. C07 would read "w e i m a", and C09 "f r u c h t e r" if
+  the k03 copy is kept. That matches the gloss's "zweimahl" (twice), "die adern" and "erfrucht".
+
+Not done here: no new eye read, no key change, no run on a deduplicated stream. status.json, depth, AUDIT.md and the
+top-level key are untouched: no key value changed, and the reading of record is the gloss itself.
+- Reproducibility: `d2wvo/build_montage.py` and `famwvoh/build.py` assert the 7 Oct counts (33 targets / 159 agree) on
+  `realign/tile_letters.tsv`, so they now stop by design. They, and D4-WVO's `d4wvo/crib_test.py` (which reads `settled/`),
+  reproduce at commit 7388bfe53, the last commit before these 11 Oct files.
+- Follow-up suggestion (tools; not this job): `tools/sign_sorter_apply.py` does not flag a re-cut box that covers another
+  tile's box. A flag at IoU > 0.5, with an offline test, would have caught these 7 pairs at apply time.
+
+## Remaining gaps (finish-or-blocker pass, 11 Oct 2026)
+Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 row pairs glossed, three audits); key per the owner's settled signs, rebuilt on his 11 Oct answers (settled/key.tsv 24 C / 23 M, decode C 203, M 32, U 22); re-aligned AGREE 160/257 (within-row control p95 9), eye-adjusted 172/257 (FAM-WVOH letters carried over, not a new read); decode_key top-level, settled/ and realign/ --check exit 0
+- duplicate tiles from the 6 Oct recuts (7 pairs counted twice; 6 of the 32 non-agreeing C tiles, the doubled m/i of "zweimahl" in C06 and C07) - blocker: not-attempted; found by this check (overlap scan of sorter/signs_recut.tsv plus one look, grade M); next: drop one copy of each of the 5 same-pile pairs from the token stream (a dated dedupe list in realign/, PREREG note first), put the 2 cross-pile pairs (C06 009/010, C09 018/019, k03 vs k23) to the owner as focus rows, then re-run realign/run.py real + control 300 under PREREG-WVO-REALIGN as corrected material, ~$1
+- gloss i over k03 (f23_C02_01_014, f23_C09_01_025) and k08 (f23_C01_01_025, f23_C05_01_005) - blocker: open-codes; the owner confirms the shapes (11 Oct), so these are not sorting errors; two occurrences per sign, key rule keeps t and h at C, and no context separates a second value from a gloss slip or an offset (C09_01_025 to be re-looked after the dedupe step above)
+- k11 in "taush" (C07 idx 14) - blocker: open-codes; k11 is c at C in realign/ (5/8) and M in settled/ (3/8), and the FAM-WVOH eye reads of its target tiles disagree (four conflicts remain, no common letter)
+
+## Escalation (11 Oct 2026)
+- [x] siblings: 174 key leaf (NX-WVO174; R9-WVOX concordance FAIL 0/7), 1069 key (R9-WVOX PASS 8/18); the 14 neighbouring WVO PDFs fetched and looked at, no cipher rows or blocks (D2-WVO)
+- [x] clear-pages: f.23's own interlinear gloss transcribed, reconciled, aligned, verified, re-aligned and re-verified (R9-WVOALIGN, R10-WVOTX, R10-WVOV, WVO-REALIGN, NZ-WVOV)
+- [x] known-keys: key_174_nomenclator.tsv and key_1069.tsv compared by shape concordance with a permutation control (R9-WVOX)
+- [x] print: Groen I read (1107 printed, 1109 absent); Demandt II nr. 292 not found as a scan (R8-WVO1111); gloss phrase searches, no hit (R9-WVOV, R10-WVOV)
+- [x] key-rebuild: settled/ and realign/ rebuilt on the owner's 11 Oct answers (no key value changed); k28 verified by eye (NZ-WVOV); crib test (D4-WVO)
+- [x] image-check: owner's sorter pass on the FAM-WVOH focus rows done (11 Oct: k03 'ze' form is k03, k08 tiles one sign each); the 7 overlapping recut pairs looked at once in a montage (this check)
+- [ ] retry: the 11 Oct re-alignment is done (AGREE 159 -> 160, control p95 9); next: re-run on a stream with the duplicate recut tiles removed, ~$1
+Verdict: keep going: 3 internal gaps; cheapest next: drop the duplicate recut tiles (5 same-pile pairs; 2 cross-pile pairs to the owner) and re-run realign/ under PREREG-WVO-REALIGN, ~$1

@@ -163,7 +163,7 @@ f23_C06_01_020	C06	19	w	k02	w	M	k02	kept	w	C
 f23_C06_01_021	C06	20	e	k26	e	C	k26	kept	e	C
 f23_C06_01_022	C06	21	i	k23	i	C	k23	kept	i	C
 f23_C06_01_023	C06	22		k13	k	M	k13-d	moved	m	C
-f23_C06_01_024	C06	23		k13	k	M	k13	kept	i	C
+f23_C06_01_024	C06	23		k13	k	M	k13-d	moved	m	C
 f23_C06_01_025	C06	24		k18	a	C	k18	kept	a	C
 f23_C06_01_026	C06	25	m	k23	i	C	k08	moved	h	C
 f23_C06_01_027	C06	26	a	k01	l	M	k01	kept	l	C
@@ -245,7 +245,7 @@ f23_C09_01_024	C09	22		k08	h	M	k22	moved	d	C
 f23_C09_01_025	C09	23		k03	t	C	k03	kept	t	C
 f23_C09_01_027	C09	24	d	k21	n	C	k21-b	moved	d	M
 f23_C09_01_028	C09	25	i	k23	i	C	k19	moved	g	C
-f23_C09_01_029	C09	26	g	k11	a	M	k11	kept	c	M
+f23_C09_01_029	C09	26	g	k11	a	M	k12	moved	e	C
 f23_C09_01_031	C09	27	e	k20	n	C	k03	moved	t	C
 f23_C09_01_033	C09	28	d	k02	w	M	k03	moved	t	C
 f23_C10_01_002	C10	0	w	k21	n	C	k02	moved	w	C

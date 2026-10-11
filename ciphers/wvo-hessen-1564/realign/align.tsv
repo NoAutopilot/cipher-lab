@@ -162,8 +162,8 @@ C06	18	@X01019	code	X01019		z	agrees
 C06	19	@k02	code	k02		w	agrees
 C06	20	@k26	code	k26		e	agrees
 C06	21	@k23	code	k23		i	agrees
-C06	22	@k13-d	code	k13-d		m	agrees
-C06	23	@k13	code	k13			null-or-unaligned
+C06	22	@k13-d	code	k13-d			null-or-unaligned
+C06	23	@k13-d	code	k13-d		m	agrees
 C06	24	@k18	code	k18		a	agrees
 C06	25	@k08	code	k08			null-or-unaligned
 C06	26	@k01	code	k01			null-or-unaligned
@@ -245,8 +245,8 @@ C09	22	@k22	code	k22		d	agrees
 C09	23	@k03	code	k03		i	conflict:t
 C09	24	@k21-b	code	k21-b			null-or-unaligned
 C09	25	@k19	code	k19		g	agrees
-C09	26	@k11	code	k11			null-or-unaligned
-C09	27	@k03	code	k03		e	conflict:t
+C09	26	@k12	code	k12		e	agrees
+C09	27	@k03	code	k03			null-or-unaligned
 C09	28	@k03	code	k03		d	conflict:t
 C10	0	@k02	code	k02		w	agrees
 C10	1	@k20-c	code	k20-c		o	single

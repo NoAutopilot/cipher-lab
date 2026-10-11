@@ -3,7 +3,8 @@ sign-mixes-letters	k01	l:4,a:1,f:1
 sign-mixes-letters	k03	t:5,i:1,e:1,d:1
 sign-mixes-letters	k06	e:5,o:1,z:1
 sign-mixes-letters	k08	h:8,i:2,c:1,m:1,u:1
-sign-mixes-letters	k11	c:3,a:2,u:1,v:1,h:1,g:1
+sign-mixes-letters	k11	c:3,a:2,u:1,v:1,h:1
+sign-mixes-letters	k12	e:6,g:1
 sign-mixes-letters	k13	i:7,w:2,e:1,k:1
 sign-mixes-letters	k14	r:8,i:1,v:1
 sign-mixes-letters	k16	u:6,v:2,r:1,n:1,t:1
@@ -15,7 +16,7 @@ letter-over-signs	c	k11:3,k08:1
 letter-over-signs	d	k22:13,k03:1,k21-b:1
 letter-over-signs	e	k26:18,k12:6,k06:5,k13:1,k03:1,k17:1
 letter-over-signs	f	k24:3,k01:1
-letter-over-signs	g	k19:4,k11:1
+letter-over-signs	g	k19:4,k12:1
 letter-over-signs	h	k08:8,k11:1,k18-b:1
 letter-over-signs	i	k13:7,k23:6,k08:2,k14:1,k03:1,k19:1
 letter-over-signs	k	k13-e:2,k13:1,k13-c:1,k13-b:1

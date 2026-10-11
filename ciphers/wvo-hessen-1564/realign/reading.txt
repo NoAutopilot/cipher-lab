@@ -1,14 +1,14 @@
 # wvo-hessen-1564 f.23, sorter tile stream labelled by the owner's settled signs (sorter/settled_labels.tsv,
-# 6 Oct 2026); the leaf's own interlinear gloss re-aligned on those signs (WVO-REALIGN, 7 Oct 2026, realign/run.py, PREREG-R9
-# parameters) and the key rebuilt from it. A check on the key, not a reading: the period decipherment is the gloss itself
-# (r9align/gloss_reconciled.tsv). Aside/bad-cut tiles are X-*, ungraded. Grades: C 192, M 42, U 23.
+# 6 Oct 2026, with the owner's 11 Oct 2026 answers); the leaf's own interlinear gloss re-aligned on those signs (WVO-REALIGN,
+# 7 Oct 2026, re-run 11 Oct 2026 on the 11 Oct labels, realign/run.py, PREREG-R9 parameters) and the key rebuilt from it.
+# A check on the key, not a reading: the period decipherment is the gloss itself (r9align/gloss_reconciled.tsv). Aside/bad-cut tiles are X-*, ungraded. Grades: C 192, M 42, U 23.
 C01	w i r k o n n e n c a c h E.L. i n f r e u n d t l h c h [X-aside]
 C02	e n c e [k21] u t r a u e n n t t u e r h a l t e n [k04] d a s w i r [X-aside]
 C03	s e h d h e r [k22-c] a u s o a e i i p i i u n g e [X-bad-cut] n e e b o m [X-aside] [X-aside]
 C04	[k25-c] [k02-b] m [k08-b] e n [k20-b] h a e [k17] n d a s d i e [k03-b] i i n s o [X-aside]
 C05	h e f t h g k r a n c b w o r d e n s e i d a s
-C06	m a [k28-c] n e i r d t i e a [k28-b] d e r n a [X-bad-cut] w e i m i a h l [X-bad-cut] [X-aside]
+C06	m a [k28-c] n e i r d t i e a [k28-b] d e r n a [X-bad-cut] w e i m m a h l [X-bad-cut] [X-aside]
 C07	s c h l a g e n u n d i a u c h [X-bad-cut] a w e i i m a c l
 C08	p u r g i e r e n m u s s e n d e r m a s s e n
-C09	d a s [k28-b] s i e i r e r f r u c h i t e r l e d t [k21-b] g c t t
+C09	d a s [k28-b] s i e i r e r f r u c h i t e r l e d t [k21-b] g e t t
 C10	w o r d e n s e i

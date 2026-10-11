@@ -1,8 +1,8 @@
 {
  "C": 192,
  "CONSISTENT": 22,
- "C_agree": 159,
- "C_conflict": 19,
+ "C_agree": 160,
+ "C_conflict": 18,
  "C_unaligned": 14,
  "M_blank": 13,
  "M_valued": 42,

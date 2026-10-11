@@ -162,8 +162,8 @@ f23_C06_01_019	C06	18	X-bad-cut	z	z		U		U
 f23_C06_01_020	C06	19	k02	w	w	w	C	w	C
 f23_C06_01_021	C06	20	k26	e	e	e	C	e	C
 f23_C06_01_022	C06	21	k23	i	i	i	C	i	M
-f23_C06_01_023	C06	22	k13-d		m	m	C	m	C
-f23_C06_01_024	C06	23	k13			i	C	i	C
+f23_C06_01_023	C06	22	k13-d			m	C	m	C
+f23_C06_01_024	C06	23	k13-d		m	m	C	m	C
 f23_C06_01_025	C06	24	k18		a	a	C	a	C
 f23_C06_01_026	C06	25	k08	m		h	C	h	C
 f23_C06_01_027	C06	26	k01	a		l	C	l	C
@@ -245,8 +245,8 @@ f23_C09_01_024	C09	22	k22		d	d	C	d	C
 f23_C09_01_025	C09	23	k03		i	t	C	t	C
 f23_C09_01_027	C09	24	k21-b	d		d	M		M
 f23_C09_01_028	C09	25	k19	i	g	g	C	g	C
-f23_C09_01_029	C09	26	k11	g		c	M	c	C
-f23_C09_01_031	C09	27	k03	e	e	t	C	t	C
+f23_C09_01_029	C09	26	k12	g	e	e	C	e	C
+f23_C09_01_031	C09	27	k03	e		t	C	t	C
 f23_C09_01_033	C09	28	k03	d	d	t	C	t	C
 f23_C10_01_002	C10	0	k02	w	w	w	C	w	C
 f23_C10_01_003	C10	1	k20-c	o	o	o	M	o	M
