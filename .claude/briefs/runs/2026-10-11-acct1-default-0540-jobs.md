@@ -79,3 +79,18 @@ judge output pasted into NOTES.md (rule 7). Write "## MAT-F179 (11 Oct 2026)" in
 Verdict, gaps_check passes. Report what was found and where it was not found; do not classify novelty. Units: table 2 looks (~1.5 each)
 + 2 pass units (~1.5 each; a pass over > 8 lines is 2 calls, price it) + 1 reconciliation + CPU = ~7.5; stop before a unit that would
 cross 80% of cap or box.
+
+## Wave 1b (05:5x UTC 11 Oct)
+
+### COS-1167C (Opus, cap 2, box 50 min): costabili-modena-1491, R1167 span a1 count
+The folder's Verdict cheapest next (NOTES.md l.214): "R1167 span a1, count P1's cipher groups after 'usando formalmente / questo
+termine' (one DECODE login fetching P1 only, ~$0.5)". Read "## COS-1167B (10 Oct 2026)" (l.625 on) first: it bounded the other 9 spans
+against the clear copy P5/P6 (pooled ratio 1.041, in range) and left a1 at "19 (+ P1 tail, uncounted)" vs 117 copy words. Intake gate
+(paste `python3 tools/intake_gate_check.py costabili-modena-1491` first; nonzero exit = stop). Host: de-crypt.org only, ONE browser login
+(`NODE_PATH=$(npm root -g) node tools/decode_browser_login.js` with `--guess-fullsize` per the CLAUDE.md host table), fetch R1167 P1
+only, image to scratch, record sha1 in images_manifest.tsv as COS-1167B did; scrub the account name from any saved page. Crop the P1
+tail lines after "questo termine" with `tools/iiif_lines.py --image ... --out <scratch>/crops` (pasted), count cipher groups with two blind
+counts (one Opus, one Sonnet subagent on the line crops), the count rule exactly COS-1167B's; settle disagreements from the crops. Write
+the a1 row into COS-1167B's span table style under "## COS-1167C (11 Oct 2026)": groups, copy words, ratio, in or out of COS-1167B's
+range 0.615-1.053, and the pooled 10-span ratio; no reading claimed. Refresh Remaining gaps / Escalation / Verdict; gaps_check passes.
+Report what was found and where it was not found; do not classify novelty. Units: 2 count calls + 1 settle at ~0.5 each.
