@@ -86,3 +86,9 @@ centre x; detached marks are attached to the sign below by the tool and are NOT 
   dropped first and the top-1 comparison is reported alone, saying so.
 - No subagent and no model read anywhere in this design (kNN only); the account's rate-limit status at start was
   `allowed_warning` (BUDGETS.md scaling rule: no new workers), which this design satisfies.
+
+## Amendment 1 (11 Oct 2026 06:1x UTC by date -u, before any score was read)
+
+f102r_L14 has no truth rows in vivonne1573-f102r-dev2.truth.tsv (the item's 36 truth lines are L01-L13, L15-L37); it is
+dropped from the test set, leaving 13 scored test lines (662 truth positions). The train set is unchanged. Discovered by
+tx_bench's own line-id validation on the first scoring call, which was aborted; no figure had been printed.
