@@ -84,7 +84,7 @@ Cap USD 15 / 2 h from 05:47 UTC (box ends 07:47, 80% line 07:23 UTC / USD 12). D
 configuration after the dev choice is written here; no re-tuning after an eval number is seen. Stop before starting a unit that
 would cross 80% of either figure. No follow-ups.
 
-## Dated addition 1 (06:1x UTC 11 Oct by date -u, after the dev runs, BEFORE any eval run)
+## Dated addition 1 (06:0x UTC 11 Oct by date -u -- the clock read 06:00:25 at commit; after the dev runs, BEFORE any eval run)
 Dev choice under the fixed rule (dev_tune, pile, x; base C 14/338 = 0.0414): lattice err_true at k=20 is 0.0207 (7 wrong) at
 lam 1 and 0.0296 (10 wrong) at lam 4, so **eval uses lam 1** (the live sorter's default). Nothing else was tuned. Dev numbers
 for the record (pile, x): disagree 9 / 7 / 6 / 6 wrong at k 10 / 20 / 50 / 100, to 3% at 6, to 2% at 28; lattice 10 / 7 / 7 / 2,
