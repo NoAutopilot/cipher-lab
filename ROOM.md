@@ -14574,3 +14574,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-11 00:02 | account-3 parent | L74 Luzerne second pass: owner trashed all 6 added possible-shadow boxes (in-sample). Shadow rule A/B held-out on Vivonne FAILS (8 flagged: 0 trashed, 2 kept, 6 bad cut); not for the segmenter. answers/shadow/README.md Outcome; e3ceb3a14.
 2026-10-11 00:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 00:09 UTC: spawned 0 (), queued left 0
 2026-10-11 00:22 | standby (owner account) | alive; holder owner account (this session, TAKEOVER 06:22 UTC 10 Oct from account 4), last line 23:42 UTC 10 Oct; next orchestrator check-in ~00:42
+2026-10-11 00:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 00:40 UTC 11 Oct: spawned 0 (no account-1 rows; auto-fill held: default lane < 12 h), queued left 1
