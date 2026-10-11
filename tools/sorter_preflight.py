@@ -52,7 +52,12 @@ last line names it under "not checked"):
               17 px; a mouse 5 px) on every kind of tile the page has (pile, check-mark, '?', waiting '2', "Check these first", "Most
               useful first", tray, tray question, step-2 card picture, put line, count, padding and name, step-2 big sign, cluster
               offer) open the sign's card and move nothing; a tap takes the sign out to the tray (or does the box's own tap) and never
-              opens the card; a tap during a re-render makes one move and no card; a mouse hold on the trash x trashes nothing; no
+              opens the card; a tap during a re-render makes one move and no card, and with the page held busy 0.6 s by a re-render
+              (template 2026-10-09.6; Debosnys, Lancosme and Juan Manuel take 0.4-0.8 s) a quick tap whose lift is sent at 120 ms but
+              handled late is still a tap (three tries) and a press lifted at 550 ms a hold (two tries); on the phones (adversarial
+              check, 11 Oct 2026) a quick tap on a page busy until just past the hold time is a tap, a tray tap never acts on a sign
+              another device's take-out slid under the finger, and a hold on a step-2 card name re-rendered after it is armed opens
+              the pile; a mouse hold on the trash x trashes nothing; no
               tap switch on the page; a mouse drag onto another pile still moves a tile; zero page errors. Round 2 (10 Oct 2026),
               on the phones: a quick swipe that starts on a tray tile or on the step-2 big sign moves nothing (a finger never drags
               them); lifting the finger after a hold presses nothing in the card that opened under it (the "Move this tile to…"

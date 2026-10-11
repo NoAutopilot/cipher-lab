@@ -10,7 +10,7 @@ tools/sorter_recut.py into deskewed strips r_L01-r_L03, built with --region, for
 Template 2026-10-09.1: plain, refs and cluster are built with --no-focus-to-tray (the in-pile layout the older tests drive);
 OUT_DIR/tray.html is plain on the default (the focus tiles start in the "Taken out" tray), for test_focus_tray.js, with tray_rank.html
 (a "Most useful first" box with tiles of its own), tray_rank_in.html (a rank box that only repeats the focus tiles) and cluster_tray.html
-(--auto-clusters on the default)."""
+(--auto-clusters on the default) and tray_key.html (the default plus --key box: the box-check key, template 2026-10-09.6)."""
 import subprocess, sys
 from pathlib import Path
 from PIL import Image, ImageDraw
@@ -49,6 +49,7 @@ subprocess.run(base + ['--rank', str(out / 'rank.tsv'), '--out', str(out / 'tray
 (out / 'rank_in.tsv').write_text('sid\tscore\talt\twhy\np1_02\t9\tX\tY or X?\np1_05\t5\tY\tX or Y?\n')   # every rank tile also a focus tile
 subprocess.run(base + ['--rank', str(out / 'rank_in.tsv'), '--out', str(out / 'tray_rank_in.html')], check=True)   # tray: the rank box is not shown
 subprocess.run(base + ['--auto-clusters', '2', '--out', str(out / 'cluster_tray.html')], check=True)   # tray + provisional shape groups (cluster offer)
+subprocess.run(base + ['--key', 'box', '--out', str(out / 'tray_key.html')], check=True)   # tray + the box-check key (template 2026-10-09.6, test_s2_fix.js)
 
 # region.html (SORTER-PAGEVIEW, 4 Oct 2026): three sloped lines on one region image, recut into deskewed strips, "Whole page" view
 sys.path.insert(0, str(ROOT / 'tools')); import numpy as np, sorter_recut as sr

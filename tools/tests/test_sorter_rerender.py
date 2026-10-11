@@ -44,6 +44,25 @@ with tempfile.TemporaryDirectory() as d:
     rc = rr.main([str(d / 'off.html'), '--out', str(d / 'on.html'), '--focus-to-tray'])
     check('...and the flag still overrides it', rc == 0 and 'const OPTS = {"focusToTray": true};' in (d / 'on.html').read_text())
     check('page_opts: reads the OPTS line, None for a page without one', rr.page_opts(off) == {'focusToTray': False} and rr.page_opts('<html>') is None)
+    # template 2026-10-09.6: the box-check key is a page option too (OPTS.key = 'box'), set by --key box, kept on a re-render
+    rc = rr.main([str(d / 'old.html'), '--out', str(d / 'key.html'), '--key', 'box'])
+    key = (d / 'key.html').read_text()
+    check('--key box: a page built without the key gains it (OPTS key box), DATA unchanged',
+          rc == 0 and rr.page_opts(key) == {'focusToTray': True, 'key': 'box'} and rr.extract(key)[0] == got[0])
+    rc = rr.main([str(d / 'key.html'), '--out', str(d / 'key2.html')])
+    check('re-rendering a key page with no flag keeps the key', rc == 0 and rr.page_opts((d / 'key2.html').read_text()).get('key') == 'box')
+    rc = rr.main([str(d / 'key.html'), '--out', str(d / 'key3.html'), '--no-focus-to-tray'])
+    check('...and keeps it when only the other option changes', rc == 0 and rr.page_opts((d / 'key3.html').read_text()) == {'focusToTray': False, 'key': 'box'})
+    rc = rr.main([str(d / 'key.html'), '--out', str(d / 'nokey.html'), '--key', 'none'])
+    check('--key none takes it off (no key in OPTS)', rc == 0 and 'key' not in rr.page_opts((d / 'nokey.html').read_text()))
+    rc = rr.main([str(d / 'nokey.html'), '--out', str(d / 'nokey2.html')])
+    check('a page without the key re-renders without it (must not add a key nobody asked for)', rc == 0 and 'key' not in rr.page_opts((d / 'nokey2.html').read_text()))
+    # a page hand-patched by the 10 Oct 2026 scratch script box_key.py: its <style id="boxKeyCss"> block marks it; the re-render keeps the key
+    (d / 'patched.html').write_text(old.replace('</p>\n<script>', '</p><style id="boxKeyCss">#boxKey{}</style><details id="boxKey" open></details>\n<script>'))
+    rc = rr.main([str(d / 'patched.html'), '--out', str(d / 'patched2.html')])
+    p2 = (d / 'patched2.html').read_text()
+    check('a box_key.py-patched page (no OPTS line) keeps its key on the re-render, and the old patch block is not carried over',
+          rc == 0 and rr.page_opts(p2) == {'focusToTray': True, 'key': 'box'} and 'id="boxKeyCss"' not in p2 and p2.count('id="boxKey"') == 1)
     (d / 'bad.html').write_text('<html>no data</html>')
     check('page with no DATA line refused (exit 2)', rr.main([str(d / 'bad.html'), '--out', str(d / 'x.html')]) == 2)
 print('ALL PASS' if not fails else f'{fails} FAILED'); sys.exit(1 if fails else 0)
