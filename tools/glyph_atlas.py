@@ -56,6 +56,15 @@ segment  Per page: background-normalised binarisation (grey closing divides out 
          leaf) is cut at the leaf's scale; "pool" takes the median of the pages' own medians. pages.json then records
          the shared value. Catches: a speck-dominated crop of a leaf whose other crops share one scale. Must NOT change:
          a page whose own median already equals the shared value (identical boxes). Offline test: test_glyph_atlas.py.
+         --split-wide W [--split-piece P] [--split-random SEED] (TXE3-6 UNIT, 11 Oct 2026; default mode only): after the
+         x-overlap merge, a sign box wider than W x the page's median sign height is split into max(2, round(w / (P x mh)))
+         pieces (P default 1.0) at the column-ink minimum within +-0.35 piece of each equal-width cut -- the --cursive
+         step-5 rule made available for a joining hand boxed by connected components (Vivonne 1573: 516 pen-unit boxes
+         against 610 signs on 12 lines). --split-random SEED puts the same number of cuts at uniformly random columns
+         instead (each at least 0.2 piece from the edges and from each other): the rule-3 control that must score worse
+         than the ink-minimum cut if cutting at sign boundaries is what helps. Catches: a joined pair twice the median
+         width -> two boxes. Must NOT change: a page with no box wider than W (identical output to the default).
+         Offline test: test_glyph_atlas.py.
 cluster  HOG (9 orientations, 8x8 cells, 2x2 blocks) of the bitmaps plus log relative height and width, PCA(40),
          k-means with a deliberate over-split (fixed seed), as carpi cluster.py; marks clustered separately.
          --split s52:3 re-splits a mixed cluster (labels 52.0 52.1 52.2). Writes DIR/clusters.tsv and DIR/sheet_signs_NN.png / sheet_marks.png contact sheets (row label "k:count").
@@ -190,6 +199,29 @@ def _dashed_rect(img, x, y, w, h, col, t, dash=None):
         cv2.line(img, (x + w, ya), (x + w, yb), col, t)
 
 
+def _wide_cuts(col, w, k, rnd=None, min_gap=0):
+    """Column cut points (0 < c < w) dividing a w-wide ink-column profile `col` into k pieces: at the ink minimum within
+    +-0.35 piece of each equal-width cut (the --cursive step-5 rule), or with `rnd` at sorted uniform random columns at
+    least `min_gap` apart and from the edges (the --split-random control)."""
+    step = w / k
+    if rnd is not None:
+        lo, hi = int(min_gap), int(w - min_gap)
+        for _ in range(200):
+            cs = sorted(int(v) for v in rnd.uniform(lo, hi, k - 1))
+            if hi > lo and all(b - a >= min_gap for a, b in zip([0] + cs, cs + [w])):
+                return cs
+        return [int(round(j * step)) for j in range(1, k)]     # degenerate box: equal spacing
+    cuts = [0]
+    for j in range(1, k):
+        c0 = int(j * step - 0.35 * step)
+        c1 = int(j * step + 0.35 * step)
+        c0, c1 = max(cuts[-1] + 1, c0), min(w - 1, c1)
+        if c1 <= c0:
+            continue
+        cuts.append(c0 + int(np.argmin(col[c0:c1])))
+    return cuts[1:]
+
+
 def segment_page(name, path, box, a):
     grey = np.array(Image.open(path).convert('L'))
     if box:
@@ -236,6 +268,26 @@ def segment_page(name, path, box, a):
                     continue
             merged.append(dict(c))
         merged = [c for c in merged if c['h'] >= 0.3 * mh or c['w'] >= 0.6 * mh]  # specks, dots of i
+        sw = getattr(a, 'split_wide', 0) or 0
+        if sw > 0:
+            # --split-wide: a box wider than sw x mh is cut into pieces (pen units -> sign units); see the docstring
+            piece_px = max(1.0, (getattr(a, 'split_piece', 1.0) or 1.0) * mh)
+            rnd = getattr(a, '_split_rng', None)
+            split = []
+            for c in merged:
+                if c['w'] <= sw * mh:
+                    split.append(c)
+                    continue
+                sub = np.isin(lab[c['y']:c['y'] + c['h'], c['x']:c['x'] + c['w']], c['ids']).astype(np.uint8)
+                k = max(2, int(round(c['w'] / piece_px)))
+                cuts = _wide_cuts(sub.sum(axis=0).astype(float), c['w'], k, rnd, 0.2 * piece_px)
+                for u, v in zip([0] + cuts, cuts + [c['w']]):
+                    rows = np.where(sub[:, u:v].any(axis=1))[0]
+                    if not len(rows):
+                        continue
+                    split.append(dict(x=c['x'] + u, y=c['y'] + int(rows[0]), w=v - u, h=int(rows[-1] - rows[0] + 1),
+                                      ids=c['ids'], split_from=c['x']))
+            merged = split
         for k, c in enumerate(merged):
             sub = np.isin(lab[c['y']:c['y'] + c['h'], c['x']:c['x'] + c['w']], c['ids']).astype(np.uint8)
             signs.append(dict(sid=f'{name}_{li + 1:02d}_{k + 1:03d}', page=name, line=li + 1, pos=k + 1,
@@ -415,6 +467,9 @@ def cmd_segment(a):
     os.makedirs(os.path.join(a.out, 'crops'), exist_ok=True)
     allS, allM, scale = [], [], {}
     a.shared_mh = None
+    a._split_rng = np.random.default_rng(a.split_random) if getattr(a, 'split_random', None) is not None else None
+    if getattr(a, 'split_wide', 0) and a.cursive:
+        sys.exit('--split-wide applies to the default (non --cursive) mode only; --cursive has --split-w/--piece')
     if a.median_h:
         if a.cursive:
             sys.exit('--median-h applies to the default (non --cursive) mode only')
@@ -1171,6 +1226,9 @@ def main(argv=None):
     s.add_argument('--split-w', type=float, default=4.0, help='--cursive: split a group wider than this x xh (4.0)')
     s.add_argument('--piece', type=float, default=2.8, help='--cursive: an over-wide group is split into round(width / (this x xh)) pieces (2.8)')
     s.add_argument('--strip-max', type=float, default=6.0, help='--cursive: a page taller than this x the median sign height is cut into line bands first (6)')
+    s.add_argument('--split-wide', type=float, default=0.0, help='default mode: split a merged sign box wider than this x median height into pieces at column-ink minima (0 = off; TXE3-6)')
+    s.add_argument('--split-piece', type=float, default=1.0, help='--split-wide: pieces = max(2, round(width / (this x median height))) (1.0)')
+    s.add_argument('--split-random', type=int, default=None, help='--split-wide: cut at uniformly random columns with this seed instead of ink minima (the rule-3 control)')
     s.add_argument('--debug', action='store_true')
     c = sp.add_parser('cluster')
     c.add_argument('--out', required=True)

@@ -303,6 +303,43 @@ def main():
                '--median-h', 'pool')
     assert 'pool' in out6 and pj(d6 + '/pool')['s']['median_h'] == mh_c, out6
     assert len([r for r in sigs(d6 + '/pool') if r['page'] == 's']) == 20
+
+    # --split-wide (TXE3-6 UNIT, 11 Oct 2026): a line of 10 signs (50 px wide, 60 px tall boxes) where signs 3+4 and 7+8+9
+    # are joined by a baseline bar into one connected component each. Default mode (pen units) must give 7 boxes; with
+    # --split-wide 1.5 (sign units) 10, the cuts at the bars' ink minima (inside the bar, not through a box);
+    # --split-random with the same k must also give 10 boxes but with at least one cut moved off the minimum;
+    # must NOT change: a page with no wide box gives byte-identical signs.tsv with the option on.
+    d7 = os.path.join(d, 'split')
+    img7 = np.full((200, 1100), 235, np.uint8)
+    for k in range(10):
+        x = 60 + k * 100
+        cv2.rectangle(img7, (x, 70), (x + 50, 130), 20, 5)
+    for a_, b_ in ((2, 3), (6, 8)):                      # joining bars along the baseline, 3 px thick
+        cv2.line(img7, (60 + a_ * 100 + 50, 128), (60 + b_ * 100, 128), 20, 3)
+    p7 = os.path.join(d7, 'joined.png'); os.makedirs(d7, exist_ok=True); cv2.imwrite(p7, img7)
+    run('segment', '--page', f'j={p7}', '--out', d7 + '/pen')
+    pen = sigs(d7 + '/pen')
+    assert len(pen) == 7, [(r['x'], r['w']) for r in pen]
+    SP = ('--split-wide', '1.5', '--split-piece', '1.4')     # sign pitch 100 px over a 60-66 px median height
+    run('segment', '--page', f'j={p7}', '--out', d7 + '/sign', *SP)
+    sgn = sigs(d7 + '/sign')
+    assert len(sgn) == 10, [(r['x'], r['w']) for r in sgn]
+    xs = sorted(int(r['x']) + int(r['w']) for r in sgn)[:-1]
+    bars = [(60 + a_ * 100 + 50, 60 + b_ * 100) for a_, b_ in ((2, 3), (6, 7), (7, 8))]
+    cut_in_bar = [any(lo <= e <= hi + 1 for lo, hi in bars) for e in xs]
+    assert sum(cut_in_bar) >= 3, list(zip(xs, cut_in_bar))      # the three joins cut inside their bars
+    assert all(int(r['pos']) == i + 1 for i, r in enumerate(sorted(sgn, key=lambda r: int(r['x'])))), 'pos order'
+    run('segment', '--page', f'j={p7}', '--out', d7 + '/rand', *SP, '--split-random', '3')
+    rnd7 = sigs(d7 + '/rand')
+    assert len(rnd7) == 10, len(rnd7)
+    assert [r['x'] for r in rnd7] != [r['x'] for r in sgn], 'random cuts must move'
+    run('segment', '--page', f'j={p7}', '--out', d7 + '/rand_b', *SP, '--split-random', '3')
+    assert [r['x'] for r in sigs(d7 + '/rand_b')] == [r['x'] for r in rnd7], 'seeded: reproducible'
+    run('segment', '--page', f'c={pc}', '--out', d7 + '/clean_on', *SP)
+    assert key(sigs(d7 + '/clean_on'), 'c') == key(sigs(d6 + '/own'), 'c'), 'no wide box: unchanged'
+    rc7 = subprocess.run([sys.executable, TOOL, 'segment', '--cursive', '--page', f'j={p7}', '--out', d7 + '/cur',
+                          *SP], capture_output=True, text=True)
+    assert rc7.returncode != 0 and 'default (non --cursive) mode only' in (rc7.stderr + rc7.stdout), rc7
     print('ok')
 
 
