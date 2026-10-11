@@ -85,3 +85,16 @@ judged the same way: a foreign-key text that key60 should NOT read). Arm (i) (>=
 as F143-DEC's brief above (PREREG pushed first, crop step pasted, two blind passes on the target lines, judge with the named corpus and the
 fold-spread caveat). Gate: key60 decode of f.143r above the shuffled p95 AND above the Mayenne reverse-arm decode. If the reverse arm itself
 scores at or above shuffled p95, the judge does not separate key families at this N: log non-test.
+
+## Wave 3 (06:1x UTC 11 Oct)
+
+### THUR-BAMF2 (Opus, cap 3, box 75 min; IA <= 20 with take/release; cryptiana.web.fc2.com <= 4): thurloe-printed, Bamfylde p.160 open codes
+NOTES.md "## THUR-BAMF" and its "## Remaining gaps (THUR-BAMF, 11 Oct 2026)" item 1. Fetch Tomokiyo's Bampfield First Cipher table image (bamp1.jpg,
+from the page sources/cryptiana/web/thurloe.htm links to; and bamp2.jpg if one more request) into ciphers/thurloe-printed/bamf/tomokiyo/
+(credit Tomokiyo, rule 8); compare its letter values with our 51-code table code by code (agree/disagree/absent, as a TSV) -- an
+independent known-answer check on our table, not a replacement. Then look up 937, 745, 356 (word/name codes) and 94 in his table and in
+the other glossed 1655-57 Bamfylde letters of vols 4-6 (djvu headings named in that gap line; numerals near glosses by script, image
+only for a unit that carries one of the four codes, at most 4 leaves). Any value found: grade C (print gloss) or H (period table as
+published), never S by context; re-run bamf/decode_bamf.py with the additions and `--check`. Do not re-score the gate. Update NOTES.md
+section + Remaining gaps; gaps_check must pass. Report what was found and where it was not found; do not classify novelty.
+After THUR-BAMF2: V-BAMF (Opus, verifier, cap 3, box 60): first verifier of the p.160 fragments (rule 10 + rule 4a), briefed separately.
