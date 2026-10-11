@@ -253,3 +253,25 @@ No reading, no grades changed. Requests: gallica.bnf.fr 3 (IIIF).
 
 ## Unread sibling found (SA-G, 7 Oct 2026)
 BnF fr.3988 (btv1b9060634t) canvas 308 is the closing cipher page of the f.143-144 letter (about 12 lines of symbol cipher, then the "Henry" signature); canvases 304-308 are cipher, none glossed, 309 the address leaf. Key: no.60 (tools/keys/key60.tsv). Next step: transcribe 308 with the other pages, ~USD 1. Screen only; keyhunt/2026-10-07-SAG.tsv.
+
+## F143-DEC (11 Oct 2026) -- stopped at the material check, no decode
+F143-DEC (LANE DEFAULT-A2-0509, account 2), 05:22-05:4x UTC 11 Oct 2026 by date -u; brief
+`.claude/briefs/runs/2026-10-11-ytbiz-default-0509-jobs.md` "### F143-DEC". Disk only, 0 network requests.
+- **Material check failed as the brief defines it.** `keyhunt_f143/img/c304_reg.jpg` (3500x700, Gallica canvas 304 region
+  450,1250,3500,700) holds a clear line, then cipher rows that map to KH1-F's numbering as row 6 = L05 ("12 6 // x x ..."),
+  row 7 = L06 ("16 // ..."), row 8 = L07 ("y r f ++ ..."), row 9 = L08 ("q h 3 X /// ..."). L09 ("n~ ⊥ .x. λ ...") falls below
+  the strip's bottom edge: only ascender tops at y ~ 690-700. Lines 6-8 crop legibly; line 9 does not. No other f.143r image is
+  on disk (searched by filename for c304/f143/btv1b9060634t). KH1-F's L09-L14 passes were read from a larger image that was
+  not committed. Following the brief, no crop, PREREG, transcription, decode or score was made.
+- **Second design issue for a re-brief, found while reading:** control arm (ii) cannot be computed as written. The Mayenne
+  1592 table is on disk (`ciphers/fr4715-f61-mayenne-1592/keys/key_mayenne_1592.tsv`, 16 slots: 13 letter symbols +
+  que/qui/pour). Its signs are described in prose, and there is no mapping to key60's tag vocabulary, so a key60-tag
+  transcription of f.143r cannot be "decoded under the Mayenne key" without first building that mapping (a design choice that
+  would itself decide the result). A computable foreign-key arm is the reverse: a key60-tag blind transcription of the Mayenne
+  leaf (`keyhunt_f143/img/m61_reg.jpg`, on disk), decoded with key60 and judged the same way. That costs one more vision unit
+  (~1.5).
+- **Options for the orchestrator** (not run; a worker does not change its own material):
+  (a) use L05-L08 (all four legible in the strip; KH1-F passP covers L05-L08 and passQ L06-L08 as extra existing reads), or
+  (b) commit a canvas-304 region covering L06-L09 (one Gallica request, outside this wave's host list). Either way, replace arm
+  (ii) with the reverse Mayenne arm above. Estimate: 3 vision units (2 f.143r + 1 Mayenne) + 1 reconcile + CPU, about USD 6.
+No status change; no grades changed.
