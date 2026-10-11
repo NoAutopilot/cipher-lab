@@ -657,3 +657,4 @@ Read so far: unmeasured as a reading; f.86 150 tokens C 83 / M 64 / U 3 against 
 - [x] image-check: c268 lines 1-5 look-alike window re-read, 47/47 firm answers with reader A, 0 relabels (this pass); f.86 curl sort (MONLUC-CURL)
 - [n/a] retry: nothing has failed that a plain retry would change
 Verdict: keep going: 3 internal gaps; cheapest next: ff.140-141 look for a Monluc 28 Apr text, ~$1 (when Gallica answers)
+- Rule 7 (labels unchanged): `python3 score_c268.py --check` -> "OK c268 outputs current"; `python3 k07_c268.py --check` -> "k07_c268: OK". Judge not re-run (decode unchanged; last FAIL -1.300 stands).
