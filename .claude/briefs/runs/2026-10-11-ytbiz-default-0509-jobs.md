@@ -62,3 +62,17 @@ The folder's Verdict cheapest next (~$0.5). Read the last "## Remaining gaps" / 
 wanted (the Dutch of 27 June and 22 Aug). IA advancedsearch + metadata only (IA take/release); for each candidate item record identifier,
 title, volume, years, access (full view / lending / printdisabled) and whether its djvu text contains the two dates; fetch the djvu text
 only of a full-view hit and grep it. Write findings in a dated NOTES.md section and update the Remaining gaps line. No reading, no decode.
+
+## Wave 2
+
+### THUR-BAMF (Opus, cap 5, box 100 min, IA <= 25, after THUR-BRV's IA release): thurloe-printed, the Bamfylde pool -> vol 6 l.19092
+STATUS.md "LANE FAMILY handoff (incarnation DEFAULT-account-2-20261010-1709)" next 2 and NOTES.md l.3528-3547 (Bamfylde pool gap). Intake gate
+(pasted): `thurloe-printed: partial (line 2) -- edition/page or full-text-search citation found within 6 lines`, exit 0. Steps: (0) prior work,
+incl. Tomokiyo sources/cryptiana/web/thurloe.htm for any Bamfylde key/sheet; (1) image p.161 of vol 6 (does a printed decipherment follow
+l.19092? if yes, align it and stop with a C-grade note) and the vol 4 p.195/p.232 continuations (b146/manifest.tsv, crop step pasted, one
+Sonnet call per page on strip crops); (2) build a Bamfylde code->meaning table from the glossed siblings (l.68904 p.576, vol 4 pp.194-195,
+231-232) with `tools/interlinear_align.py` (grade C per pair, counts); (3) PREREG-THUR-BAMF.md pushed before the read: coverage of
+l.19092's ~24 numerals by the table vs >= 200 value-shuffled tables and vs a different correspondent's key (key_downing or key_lockhart),
+gate = above shuffled p95 and above the other key; (4) read only if the gate passes, grade per token (rule 4), decode script with
+`--check` (rule 7). Below authentication distance is expected (~24 numerals): say so; a non-test is a valid result. Report what was found
+and where it was not found; do not classify novelty. Units: ~3 vision + CPU.
