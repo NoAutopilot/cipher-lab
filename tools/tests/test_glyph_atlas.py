@@ -56,6 +56,37 @@ def main():
     assert all(r['marks'] == ('o' if r['box'] in marked else '') for r in B)
     assert len(os.listdir(os.path.join(d, 'strips'))) == 6   # 3 lines x 2 parts
 
+    # --boxes (TXE3-5 BOXES, 11 Oct 2026): boxes that are not atlas rows, re-cut from their own image.
+    # Must NOT change: the atlas's own 36 boxes listed as an external file reproduce the stored top-1 (re-cut fidelity).
+    # Catches: a box moved by a person onto a different shape is classified from the new cut, and a box list with
+    # a deleted box yields one row fewer (the cut is the only change); --boxes with --page is refused.
+    bb = os.path.join(d, 'ext_boxes.tsv')
+    with open(bb, 'w') as f:
+        f.write('box_id\tcrop\tx\ty\tw\th\tline\torder\tkind\n')
+        for r in S:
+            f.write(f"{r['sid']}\t{p}\t{r['x']}\t{r['y']}\t{r['w']}\t{r['h']}\tL{r['line']}\t{r['pos']}\tsign\n")
+    bo = os.path.join(d, 'ext_out.tsv')
+    run('classify', '--out', d, '--labels', os.path.join(d, 'labels.json'), '--boxes', bb, '--tsv', bo,
+        '--knn', '3', '--pca-scale', 'shared', '--topk', '2')
+    E = {r['box']: r for r in csv.DictReader(open(bo), delimiter='\t')}
+    assert len(E) == 36 and all(E[r['box']]['code'] == r['code'] for r in B), [(r['box'], r['code'], E[r['box']]['code']) for r in B if E[r['box']]['code'] != r['code']]
+    assert all(E[r['sid']]['line'] == f"L{r['line']}" and E[r['sid']]['pos'] == r['pos'] for r in S)
+    # move: an X-box's cut placed over a B-box's shape reads B; delete: 35 rows
+    xr = next(r for r in S if r['sid'] in marked); br = next(r for r in S if r['sid'] not in marked)
+    with open(bb, 'w') as f:
+        f.write('box_id\tcrop\tx\ty\tw\th\n')
+        f.write(f"moved\t{p}\t{br['x']}\t{br['y']}\t{br['w']}\t{br['h']}\n")
+        for r in S:
+            if r['sid'] not in (xr['sid'], br['sid']):
+                f.write(f"{r['sid']}\t{p}\t{r['x']}\t{r['y']}\t{r['w']}\t{r['h']}\n")
+    run('classify', '--out', d, '--labels', os.path.join(d, 'labels.json'), '--boxes', bb, '--tsv', bo,
+        '--knn', '3', '--pca-scale', 'shared', '--boxes-median-h', str(np.median([float(r['h']) for r in S])))
+    E2 = list(csv.DictReader(open(bo), delimiter='\t'))
+    assert len(E2) == 35 and E2[0]['box'] == 'moved' and E2[0]['code'] == 'B', E2[0]
+    rc = subprocess.run([sys.executable, TOOL, 'classify', '--out', d, '--labels', os.path.join(d, 'labels.json'),
+                         '--boxes', bb, '--page', 'p1', '--tsv', bo], capture_output=True, text=True)
+    assert rc.returncode != 0 and '--boxes' in (rc.stderr + rc.stdout)
+
     # --topk 3 (TX-ATLAS-B72): k1 is the kNN code, k2 the other shape (only two codes + nothing else), d1 <= d2,
     # shares sum to 1 over the voters; --page all adds a page column; --holdout keeps line-1 boxes out of the vote.
     bk = os.path.join(d, 'topk.tsv')

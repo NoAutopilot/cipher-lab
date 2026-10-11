@@ -7,6 +7,14 @@
   python3 tools/glyph_atlas.py atlas --out DIR --from-truth TOKENS.tsv --per 6 --spread --exclude-leaf PAGE [--canonical SHEET.png]
   python3 tools/glyph_atlas.py classify --out DIR --labels labels.json --page PAGE --tsv boxes.tsv [--exclude-page] [--strips DIR2]
         [--jitter 5 --jitter-px 2 --jitter-scale 0.05]   (per-box stability under crop perturbation, TXE-J)
+  python3 tools/glyph_atlas.py classify --out DIR --labels labels.json --boxes BOXES.tsv --tsv out.tsv [--boxes-median-h PX]
+        (TXE3-5 BOXES, 11 Oct 2026: classify boxes that are NOT atlas rows -- a person's corrected cuts, a second
+        segmenter's proposals -- re-cut from their own image into the atlas's fitted feature space, kNN over the atlas;
+        BOXES.tsv columns box_id, crop|image|page, x, y, w, h [, line, order|pos, kind]; rh/rw use --boxes-median-h,
+        default the median h of the file's kind=sign boxes, so two box sets of one hand share one size scale.
+        Catches: the same hand's boxes moved or deleted by a person (the only change is the cut). Must NOT change: a
+        box list equal to the atlas's own boxes on the same image reproduces the stored top-1 (re-cut fidelity).
+        Offline test: tools/tests/test_glyph_atlas.py.)
   python3 tools/glyph_atlas.py crop --image PAGE.jpg --box x0,y0,x1,y1[:label] [--box ...] --dest DIR [--scale 4]
   python3 tools/glyph_atlas.py crop --out DIR --sid ID [--sid ...] --dest DIR2 [--scale 4]
 
@@ -797,7 +805,10 @@ def cmd_classify(a):
     cl = {(r['kind'], r['id']): r['cluster'] for r in read(a.out, 'clusters.tsv')}
     bm = np.load(os.path.join(a.out, 'bitmaps.npz'))['signs']
     jit = getattr(a, 'jitter', 0) or 0
-    if jit:
+    boxes_in = getattr(a, 'boxes', None)
+    if boxes_in and jit:
+        sys.exit('--boxes and --jitter together are not supported')
+    if jit or boxes_in:
         X, proj = feats(bm, rows, pca_scale=a.pca_scale, project=True)
     else:
         X = feats(bm, rows, pca_scale=a.pca_scale)
@@ -814,8 +825,12 @@ def cmd_classify(a):
             sys.exit('--only-train-labels needs --train-labels')
         held |= np.array([r['sid'] not in tl for r in rows])
     lab[held] = '_held'                     # never a vote, never a cluster code
+    if boxes_in and a.page:
+        sys.exit('--boxes classifies the boxes in BOXES.tsv; do not pass --page')
+    if not boxes_in and not a.page:
+        sys.exit("classify needs --page NAME|all or --boxes BOXES.tsv")
     allp = a.page == 'all'
-    tgt = [i for i, r in enumerate(rows) if allp or r['page'] == a.page]
+    tgt = [] if boxes_in else [i for i, r in enumerate(rows) if allp or r['page'] == a.page]
     if allp and a.exclude_page:
         sys.exit('--exclude-page needs one --page, not all')
     # --exclude-page: the target page's own boxes never vote. Without it, an unlabelled new page's boxes are each
@@ -829,14 +844,18 @@ def cmd_classify(a):
     cand = np.where(ok)[0]
     pool = min(len(cand), max(a.knn + 1, a.pool if a.topk > 1 else 0))
     nn = NearestNeighbors(n_neighbors=pool).fit(X[cand])
-    d, ix = nn.kneighbors(X[tgt])
-    ix = cand[ix]
+    if tgt:
+        d, ix = nn.kneighbors(X[tgt])
+        ix = cand[ix]
     def vote(dist, idx, i):
         pairs = [(x, j) for x, j in zip(dist, idx) if j != i]
         votes = collections.Counter()
         for x, j in pairs[:a.knn]:
             votes[lab[j]] += 1 / (x + 1e-6)
         return pairs, votes
+
+    if boxes_in:
+        return classify_boxes(a, boxes_in, nn, cand, lab, proj, vote)
 
     jres = {}
     if jit:
@@ -909,6 +928,75 @@ def cmd_classify(a):
               f'{sum(r["k1_0"] == r["code"] for r in out)}/{len(out)} (re-cut fidelity)')
     if a.strips and not allp:
         strips(a, out, [m for m in mrows.values() if m['page'] == a.page])
+
+
+def classify_boxes(a, path, nn, cand, lab, proj, vote):
+    """--boxes (TXE3-5 BOXES, 11 Oct 2026): kNN-classify boxes that are not atlas rows. Each box is re-cut from its
+    own image (column crop|image|page: a file path, or a name in pages.json) with jitter_tiles's unjittered re-cut
+    (binarise at --jitter-rel, keep the components touching the window's central half, 48x48 bitmap), projected into the
+    atlas's fitted feature space and voted on by the atlas's labelled boxes exactly as a stored box is. rh/rw are
+    h/mh, w/mh with mh = --boxes-median-h, else the median h of the file's kind=sign boxes (all boxes if no kind
+    column), printed. Output columns as classify's, cluster_code empty, marks empty; line/pos from the file's
+    line and order|pos columns when present, else the image name and file order."""
+    rows = list(csv.DictReader(open(path), delimiter='\t'))
+    if not rows:
+        sys.exit(f'--boxes: {path} is empty')
+    col = next((c for c in ('crop', 'image', 'page') if c in rows[0]), None)
+    if not col or not all(k in rows[0] for k in 'xywh'):
+        sys.exit('--boxes: needs columns box_id, crop|image|page, x, y, w, h')
+    sign_rows = [r for r in rows if r.get('kind', 'sign') == 'sign'] or rows
+    mh = float(a.boxes_median_h) if a.boxes_median_h else float(np.median([float(r['h']) for r in sign_rows]))
+    pages = {}
+    pj = os.path.join(a.out, 'pages.json')
+    if os.path.exists(pj):
+        pages = json.load(open(pj))
+    inks, tiles = {}, []
+    for r in rows:
+        src = r[col]
+        if src not in inks:
+            img_path = pages.get(src, {}).get('image', src) if not os.path.exists(src) else src
+            g = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
+            if g is None:
+                sys.exit(f'--boxes: cannot read image {img_path!r} for {src!r}')
+            k = binarise(g, a.jitter_rel)
+            inks[src] = cv2.morphologyEx(k, cv2.MORPH_OPEN, np.ones((2, 2), np.uint8)) if min(g.shape) > 2500 else k
+        rr = dict(x=int(float(r['x'])), y=int(float(r['y'])), w=max(1, int(float(r['w']))), h=max(1, int(float(r['h']))))
+        tiles.append(jitter_tiles(inks[src], rr, mh, 0, 0, 0.0, np.random.default_rng(0))[0])
+    Q = proj(np.array([t[0] for t in tiles]), [t[1] for t in tiles], [t[2] for t in tiles])
+    dq, iq = nn.kneighbors(Q)
+    iq = cand[iq]
+    out = []
+    for n, r in enumerate(rows):
+        pairs, votes = vote(dq[n], iq[n], -1)
+        dd = [x for x, _ in pairs[:a.knn]]
+        best = max(votes, key=votes.get)
+        line = r.get('line') or os.path.splitext(os.path.basename(r[col]))[0]
+        pos = r.get('order') or r.get('pos') or str(n + 1)
+        row = dict(page=r[col], line=line, box=r.get('box_id') or r.get('sid') or f'b{n + 1}', pos=pos,
+                   x=int(float(r['x'])), y=int(float(r['y'])), w=int(float(r['w'])), h=int(float(r['h'])), code=best,
+                   dist=f'{dd[0]:.3f}', share=f'{votes[best] / sum(votes.values()):.2f}', cluster_code='', marks='',
+                   kind=r.get('kind', 'sign'))
+        if a.topk > 1:
+            near = {}
+            for x, j in pairs:
+                near.setdefault(lab[j], x)
+            tot = sum(votes.values())
+            rank = sorted(votes, key=lambda c: -votes[c]) + sorted((c for c in near if c not in votes), key=near.get)
+            for k in range(a.topk):
+                c = rank[k] if k < len(rank) else ''
+                row[f'k{k + 1}'] = c
+                row[f'd{k + 1}'] = f'{near[c]:.3f}' if c else ''
+                row[f's{k + 1}'] = f'{votes.get(c, 0) / tot:.2f}' if c else ''
+        out.append(row)
+    cols = ['page', 'line', 'box', 'pos', 'x', 'y', 'w', 'h', 'code', 'dist', 'share', 'cluster_code', 'marks', 'kind']
+    if a.topk > 1:
+        cols += [f'{v}{k + 1}' for k in range(a.topk) for v in 'kds']
+    with open(a.tsv, 'w') as f:
+        f.write('\t'.join(cols) + '\n')
+        for r in out:
+            f.write('\t'.join(str(r[c]) for c in cols) + '\n')
+    print(f'--boxes {path}: {len(out)} boxes classified from {len(inks)} image(s), median_h {mh:.1f}; '
+          f'{sum(r["code"] != "_" for r in out)} cipher codes')
 
 
 def train_labels(path, rnd=None, known=None):
@@ -1113,7 +1201,11 @@ def main(argv=None):
     k = sp.add_parser('classify')
     k.add_argument('--out', required=True)
     k.add_argument('--labels', required=True)
-    k.add_argument('--page', required=True, help="the page whose boxes are classified, or 'all'")
+    k.add_argument('--page', help="the page whose boxes are classified, or 'all' (or give --boxes)")
+    k.add_argument('--boxes', help='TXE3-5: classify these boxes (TSV box_id, crop|image|page, x, y, w, h [, line, '
+                   'order|pos, kind]) re-cut from their own image, instead of atlas rows; see the docstring')
+    k.add_argument('--boxes-median-h', type=float, help='--boxes: median sign height (px) for the size features '
+                   '(default: the median h of the file\'s kind=sign boxes)')
     k.add_argument('--tsv', required=True, help='output box list')
     k.add_argument('--knn', type=int, default=5)
     k.add_argument('--pca-scale', choices=['unit', 'shared'], default='unit')
