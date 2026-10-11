@@ -274,8 +274,10 @@ class FastScorer:
         self.L -= dL
 
 
-def anneal_solve_fast(toks, model, pool_words, pool_weights, rng, iters=ITERS, restarts=RESTARTS):
-    """anneal_solve with FastScorer; identical move set, schedule and acceptance rule."""
+def anneal_solve_fast(toks, model, pool_words, pool_weights, rng, iters=ITERS, restarts=RESTARTS, temp_scale="mean"):
+    """anneal_solve with FastScorer; identical move set, schedule and acceptance rule. temp_scale='total' (MCC-SWEEP
+    addendum) multiplies the mean-score change by the scored n-gram count before the Metropolis test, so the same
+    2.0 -> 0.05 schedule acts on total log10 P (a move's size no longer shrinks as 1/length); objective unchanged."""
     code_types = sorted(set(v for k, v in toks if k == "code"))
     best_assign, best_score = None, -1e18
     for r in range(restarts):
@@ -291,7 +293,10 @@ def anneal_solve_fast(toks, model, pool_words, pool_weights, rng, iters=ITERS, r
             if new == fs.assign[c]:
                 continue
             sc, info = fs.propose(c, new)
-            if sc >= cur or rng.random() < math.exp((sc - cur) / T):
+            d = sc - cur
+            if temp_scale == "total":
+                d *= max(1, fs.L - fs.n + 1)
+            if sc >= cur or rng.random() < math.exp(d / T):
                 cur = sc
                 if cur > local_best:
                     local_best, local_assign = cur, dict(fs.assign)
@@ -365,6 +370,8 @@ def main():
     ap.add_argument("--fast", action="store_true", help="incremental scorer (same objective)")
     ap.add_argument("--selftest", action="store_true", help="check FastScorer against the full scorer, then exit")
     ap.add_argument("--gate", type=float, default=0.5)
+    ap.add_argument("--temp-scale", choices=["mean", "total"], default="mean",
+                    help="--fast only: Metropolis test on the mean-score change (bMCC4) or on it x n-gram count")
     ap.add_argument("--null", action="store_true",
                     help="also run each control with its code-token order shuffled among the code slots (rng 2000+seed)")
     a = ap.parse_args()
@@ -448,7 +455,11 @@ def control_sweep(a, real_toks, words, frequent, pool_words, pool_weights, model
     import time
     n = a.n_tokens or len(real_toks)
     kinds_seq = tile_kinds(real_toks, n)
-    solve = anneal_solve_fast if a.fast else anneal_solve
+    if a.fast:
+        def solve(*args):
+            return anneal_solve_fast(*args, temp_scale=a.temp_scale)
+    else:
+        solve = anneal_solve
     runs, used_codes = [], set()
     for seed in [int(x) for x in a.seeds.split(",")]:
         crng = random.Random(1000 + seed)  # bMCC4's control seeding
@@ -477,7 +488,7 @@ def control_sweep(a, real_toks, words, frequent, pool_words, pool_weights, model
         print(json.dumps(row), file=sys.stderr)
     recs = [r["recovery"] for r in runs]
     mean = sum(recs) / len(recs)
-    out = {"mode": "control-only", "n_tokens": n, "fast": a.fast, "pool_size": POOL_N, "freq_n": FREQ_N,
+    out = {"mode": "control-only", "n_tokens": n, "fast": a.fast, "temp_scale": a.temp_scale, "pool_size": POOL_N, "freq_n": FREQ_N,
            "runs": runs, "recovery_mean": mean, "recovery_range": [min(recs), max(recs)],
            "token_recovery_mean": sum(r["token_recovery"] for r in runs) / len(runs),
            "pool_ceiling_types_mean": sum(r["pool_ceiling_types"] for r in runs) / len(runs),

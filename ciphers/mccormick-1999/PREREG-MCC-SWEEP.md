@@ -39,3 +39,14 @@ not evidence that length does not help.
 - Conditional extension (declared now, run only if no N <= 8,000 reads on the token criterion and the cap allows):
   N = 32,000, 3 seeds, same settings; reported as an extension, not moving the criteria.
 - The target stays `open` (rule 5) whatever the outcome; NEAR.md row edited only to stay consistent.
+
+## Addendum 1 (11 Oct 2026, 19:5x UTC by date -u; pushed before the addendum's scores are computed)
+The pre-registered sweep above ran (132/500/2,000/8,000 x 3 seeds) and the control read at no N on either criterion.
+Diagnosis, measured on the generator (500 random moves per N, no recovery computed): the Metropolis test compares the
+change in the MEAN 4-gram score against T = 2.0 -> 0.05; the median move changes the mean by 2.4e-3 at 132 tokens and
+4.1e-5 at 8,000, so a typical worsening move is accepted with p = 0.95 (132) to 0.999 (8,000) even at the coldest
+step. The search is a random walk at every length, bMCC4's own 132-token run included. Diagnostic re-run, declared
+now: same lengths, seeds, iterations, null and criteria, with `--temp-scale total` (the mean change multiplied by
+the scored n-gram count before the test; objective unchanged). Same outcome wording as above. This is the same
+instrument with one setting changed (attempt 2 of the token/nomenclator anneal); if it still reads at no N, the
+outcome is "untestable by this instrument (as designed) at N <= 8,000", and the 32,000 extension is not run.
