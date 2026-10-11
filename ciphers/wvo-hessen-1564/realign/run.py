@@ -2,6 +2,8 @@
 """WVO-REALIGN (7 Oct 2026): re-run the f.23 gloss alignment on the owner's settled signs (PREREG-WVO-REALIGN.md).
   python3 realign/run.py real       pairs, alignment (+ PREREG-R9 derangement control), key, tile figures -> realign/
   python3 realign/run.py control N  N within-row label permutations, seed 1564, full pipeline -> realign/control.json
+  --drop LIST --out DIR   (WVO-DEDUP, 11 Oct 2026, PREREG-WVO-DEDUP.md) drop the sids in LIST's drop_sid column from the
+                          token stream and write every output under DIR instead of realign/; nothing else changes
 Run from the target folder or anywhere."""
 import csv, json, os, random, subprocess, sys, tempfile
 from collections import Counter, defaultdict
@@ -15,6 +17,14 @@ order = defaultdict(list)
 for r in rd('r9align/tile_order.tsv'):
     order[r['row']].append(r['sid'])
 CLEAR = 'f23_C01_01_014'
+O = D
+if '--drop' in sys.argv:
+    k = sys.argv.index('--drop'); lst = sys.argv[k + 1]; del sys.argv[k:k + 2]
+    drop = {r['drop_sid'] for r in csv.DictReader(open(os.path.join(T, lst)), delimiter='\t') if r['drop_sid']}
+    for r in order:
+        order[r] = [x for x in order[r] if x not in drop]
+if '--out' in sys.argv:
+    k = sys.argv.index('--out'); O = os.path.join(T, sys.argv[k + 1]); del sys.argv[k:k + 2]
 
 
 def label(sid):
@@ -74,13 +84,14 @@ def pipeline(labs, out, shuffle=0):
 
 if sys.argv[1] == 'real':
     labs = {r: [label(s) for s in order[r]] for r in rows}
-    fig, key, al, log = pipeline(labs, D, shuffle=1000)
-    with open(os.path.join(D, 'key.tsv'), 'w') as f:
+    os.makedirs(O, exist_ok=True)
+    fig, key, al, log = pipeline(labs, O, shuffle=1000)
+    with open(os.path.join(O, 'key.tsv'), 'w') as f:
         f.write('code\tvalue\tgrade\tsource\tnote\n')
         for sg in sorted(key):
             f.write('%s\t%s\t%s\tf.23 gloss re-aligned on settled signs (WVO-REALIGN)\t%s\n' % ((sg,) + key[sg]))
     old = {r['sid']: r for r in rd('settled/compare.tsv')}
-    with open(os.path.join(D, 'tile_letters.tsv'), 'w') as f, open(os.path.join(D, 'ciphertext.tsv'), 'w') as g:
+    with open(os.path.join(O, 'tile_letters.tsv'), 'w') as f, open(os.path.join(O, 'ciphertext.tsv'), 'w') as g:
         f.write('sid\trow\tidx\tsettled_sign\tgloss_letter_r10\tgloss_letter_realign\tvalue_before\tgrade_before\tvalue_after\tgrade_after\n')
         g.write('line\tpos\tsign\tconf\n')
         for a in al:
@@ -95,7 +106,7 @@ if sys.argv[1] == 'real':
             g.write('%s\t%d\t%s\t\n' % (a['cipher_line'], int(a['idx']) + 1, sign))
             f.write('\t'.join([sid, a['cipher_line'], a['idx'], o['settled_sign'], o['gloss_letter'], a['plain_chunk'],
                                o['settled_value'], o['settled_grade'], v, gr]) + '\n')
-    json.dump(fig, open(os.path.join(D, 'figures.json'), 'w'), indent=1, sort_keys=True)
+    json.dump(fig, open(os.path.join(O, 'figures.json'), 'w'), indent=1, sort_keys=True)
     print(json.dumps(fig, sort_keys=True)); print(log.strip().splitlines()[-3:])
 else:
     n = int(sys.argv[2]); rng = random.Random(1564); draws = []
@@ -111,11 +122,11 @@ else:
             labs[r] = L
         fig, *_ = pipeline(labs, tmp)
         draws.append(fig)
-    real = json.load(open(os.path.join(D, 'figures.json')))
+    real = json.load(open(os.path.join(O, 'figures.json')))
     out = {'seed': 1564, 'n': n}
     for k in ('C_agree', 'CONSISTENT', 'C'):
         xs = sorted(d.get(k, 0) for d in draws)
         out[k] = {'real': real.get(k, 0), 'mean': round(sum(xs) / n, 2), 'p95': xs[int(0.95 * n) - 1 if n >= 20 else -1],
                   'max': xs[-1], 'p': (1 + sum(x >= real.get(k, 0) for x in xs)) / (n + 1), 'draws': xs}
-    json.dump(out, open(os.path.join(D, 'control.json'), 'w'), indent=1)
+    json.dump(out, open(os.path.join(O, 'control.json'), 'w'), indent=1)
     print({k: {kk: vv for kk, vv in v.items() if kk != 'draws'} for k, v in out.items() if isinstance(v, dict)})

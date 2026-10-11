@@ -1118,10 +1118,45 @@ top-level key are untouched: no key value changed, and the reading of record is 
 - Follow-up suggestion (tools; not this job): `tools/sign_sorter_apply.py` does not flag a re-cut box that covers another
   tile's box. A flag at IoU > 0.5, with an offline test, would have caught these 7 pairs at apply time.
 
+## WVO-DEDUP: re-alignment with the duplicate recut tiles dropped (11 Oct 2026, 18:57-19:1x UTC, account 1, LANE DEFAULT-A1-1840)
+Brief: .claude/briefs/runs/2026-10-11-acct1-default-1840-jobs.md, WVO-DEDUP. Prior work: `prior_work.py wvo-hessen-1564 --item-spec
+'folio=23' --step-type align --offline` exit 4 (15 own-work LEAD rows: earlier alignment/image steps and this job's own claim; none ran
+on a deduplicated stream, NOTES l.1113), recorded CLEAR, re-run exit 0, step verdict CLEAR. Disk only, no network requests.
+- PREREG-WVO-DEDUP.md pushed first (fc79b6f85), before any scored run: a change of token stream, not of labels. List:
+  realign/dedupe_2026-10-11.tsv. The 5 same-pile pairs lose the later tile in x order (C03_019, C04_023, C06_024, C07_024,
+  C09_033; same sign either way). The 2 cross-pile pairs (C06 009/010 k03/k23, C09 018/019 k23/k03) stay in the stream and go to
+  sorter/focus.tsv as two owner rows (never blocking; C06_01_009 already had an answered FAM-WVOH row, the new row follows it).
+- Run: `realign/run.py real|control 300 --drop realign/dedupe_2026-10-11.tsv --out realign/dedup` (the option only filters the
+  stream and moves the output; realign/ itself is unchanged, so the d2wvo/famwvoh/d4wvo assertions and realign --check still hold).
+
+| figure | before (realign/, 257 tokens) | after (realign/dedup/, 252 tokens) |
+|---|---|---|
+| AGREE (C tiles = aligned gloss letter) | 160 | 165 |
+| within-row control, 300 draws: mean / p95 / max | 3.32 / 9 / 19 | 3.15 / 8 / 15 |
+| C tiles / C conflict / C unaligned | 192 / 18 / 14 | 200 / 21 / 14 |
+| key signs C / M | 22 / 25 | 24 / 23 |
+| CONSISTENT (derangement 1000: p95) | 22 (3) | 24 (4) |
+
+- Gate (PREREG-WVO-REALIGN, unchanged): real AGREE 165 > control p95 8, p = 0.0033: gain over chance shown on the corrected stream.
+  The +5 is a before/after difference on different token counts, reported, not gated.
+- Key changes from the drop alone (no label edited): k23 M -> C (i, 5/7 on 4 rows; was 5/9); k18-b M -> C (z, 2/3 on 2 rows; was
+  a, 1/1). Values move on five M signs (k03-b, k05-b, k21-b, k27-b, k28-c, each 1-2 occurrences). k03 stays t (6/8), k13 i (8/10).
+- Stream (key letter at C per tile, '.' = not C): C06 "...dern.we.mmahl" -> "...dernz.weimahl"; C07 "...ch..weiimacl" ->
+  "...ch.zweimacl": the doubled m and i under "zweimahl" go, as the 11 Oct note predicted. C09 "...terl.dt.gett" -> "...terl.dt.get".
+  The C conflicts rise by 3 (18 -> 21) as the realigned rows move neighbours; not looked at tile by tile here.
+- C09_01_025 re-look (one look, grade M; crop realign/dedup/C09_01_025_strip.png, x 1800-2200 of sorter/pages/f23_C09.png): the
+  gloss mark over this "ze"-like k03 tile is one short undotted vertical stroke over its left half, between "fed" and an "8"-shaped g;
+  it reads as the gloss i and stands over this tile, not over a neighbour. On the deduplicated stream the aligner leaves this tile
+  unaligned (key t at C). Not settled: second value, gloss slip or offset; the offset reading is weaker after this look.
+- `decode_key.py --check`: top level, settled/, realign/ exit 0. No key.tsv, status.json, AUDIT.md or depth change: the
+  deduplicated run is corrected material in realign/dedup/, not the key of record.
+- Follow-up suggestion (not this job): promote realign/dedup/ to the key of record only after the owner answers the two cross-pile
+  focus rows, then re-run with both copies of each pair settled.
+
 ## Remaining gaps (finish-or-blocker pass, 11 Oct 2026)
 Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 row pairs glossed, three audits); key per the owner's settled signs, rebuilt on his 11 Oct answers (settled/key.tsv 24 C / 23 M, decode C 203, M 32, U 22); re-aligned AGREE 160/257 (within-row control p95 9), eye-adjusted 172/257 (FAM-WVOH letters carried over, not a new read); decode_key top-level, settled/ and realign/ --check exit 0
-- duplicate tiles from the 6 Oct recuts (7 pairs counted twice; 6 of the 32 non-agreeing C tiles, the doubled m/i of "zweimahl" in C06 and C07) - blocker: not-attempted; found by this check (overlap scan of sorter/signs_recut.tsv plus one look, grade M); next: drop one copy of each of the 5 same-pile pairs from the token stream (a dated dedupe list in realign/, PREREG note first), put the 2 cross-pile pairs (C06 009/010, C09 018/019, k03 vs k23) to the owner as focus rows, then re-run realign/run.py real + control 300 under PREREG-WVO-REALIGN as corrected material, ~$1
-- gloss i over k03 (f23_C02_01_014, f23_C09_01_025) and k08 (f23_C01_01_025, f23_C05_01_005) - blocker: open-codes; the owner confirms the shapes (11 Oct), so these are not sorting errors; two occurrences per sign, key rule keeps t and h at C, and no context separates a second value from a gloss slip or an offset (C09_01_025 to be re-looked after the dedupe step above)
+- duplicate tiles from the 6 Oct recuts: the 5 same-pile pairs dropped (WVO-DEDUP, AGREE 165/252 vs control p95 8, realign/dedup/); the 2 cross-pile pairs (C06 009/010, C09 018/019, k03 vs k23) - blocker: waiting-on the owner's answer to the two sorter/focus.tsv rows added 11 Oct (WVO-DEDUP); then re-run realign/run.py with the pairs settled and promote realign/dedup/ to the key of record, ~$1
+- gloss i over k03 (f23_C02_01_014, f23_C09_01_025) and k08 (f23_C01_01_025, f23_C05_01_005) - blocker: open-codes; the owner confirms the shapes (11 Oct), so these are not sorting errors; two occurrences per sign, key rule keeps t and h at C, and no context separates a second value from a gloss slip or an offset (C09_01_025 re-looked 11 Oct, WVO-DEDUP: the gloss stroke is an i over this tile itself, so the offset cause is weaker there)
 - k11 in "taush" (C07 idx 14) - blocker: open-codes; k11 is c at C in realign/ (5/8) and M in settled/ (3/8), and the FAM-WVOH eye reads of its target tiles disagree (four conflicts remain, no common letter)
 
 ## Escalation (11 Oct 2026)
@@ -1131,5 +1166,5 @@ Read so far: the leaf carries its own letter-over-sign decipherment (10 of 10 ro
 - [x] print: Groen I read (1107 printed, 1109 absent); Demandt II nr. 292 not found as a scan (R8-WVO1111); gloss phrase searches, no hit (R9-WVOV, R10-WVOV)
 - [x] key-rebuild: settled/ and realign/ rebuilt on the owner's 11 Oct answers (no key value changed); k28 verified by eye (NZ-WVOV); crib test (D4-WVO)
 - [x] image-check: owner's sorter pass on the FAM-WVOH focus rows done (11 Oct: k03 'ze' form is k03, k08 tiles one sign each); the 7 overlapping recut pairs looked at once in a montage (this check)
-- [ ] retry: the 11 Oct re-alignment is done (AGREE 159 -> 160, control p95 9); next: re-run on a stream with the duplicate recut tiles removed, ~$1
-Verdict: keep going: 3 internal gaps; cheapest next: drop the duplicate recut tiles (5 same-pile pairs; 2 cross-pile pairs to the owner) and re-run realign/ under PREREG-WVO-REALIGN, ~$1
+- [x] retry: re-run on a stream with the 5 same-pile duplicate recut tiles removed (WVO-DEDUP, 11 Oct: AGREE 160/257 -> 165/252, control p95 8)
+Verdict: keep going: 2 internal gaps; cheapest next: the owner's answer to the two cross-pile focus rows (C06 009/010, C09 018/019), then re-run realign/ with them settled, ~$1

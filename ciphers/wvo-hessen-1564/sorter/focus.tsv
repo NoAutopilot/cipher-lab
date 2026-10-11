@@ -27,3 +27,5 @@ f23_C09_01_025	Shape grouping unsure (FAM-WVOH, 8 Oct 2026): same "ze"-like form
 f23_C06_01_009	Bad cut (FAM-WVOH, 8 Oct 2026): 23x22 px fragment left of a "dH"-like sign, filed as k03; the gloss i stands over the sign to its right
 f23_C01_01_025	Cut unsure (FAM-WVOH, 8 Oct 2026): k08 tile spans the II sign plus a following hook; gloss i over its left edge, c over the hook: one sign or two?
 f23_C05_01_005	Cut unsure (FAM-WVOH, 8 Oct 2026): k08 tile spans II plus a trailing hook; gloss i over the left edge: one sign or two?
+f23_C06_01_009	Duplicate cut (WVO-DEDUP, 11 Oct 2026): this k03 tile and f23_C06_01_010 (k23) were re-cut on 6 Oct to the same written sign (boxes overlap, IoU 0.60). Which pile is the one sign: k03, k23, or its own? (both stay in the stream until answered)
+f23_C09_01_018	Duplicate cut (WVO-DEDUP, 11 Oct 2026): this k23 tile and f23_C09_01_019 (k03) were re-cut on 6 Oct to the same written sign (boxes overlap, IoU 0.77). Which pile is the one sign: k23, k03, or its own? (both stay in the stream until answered)
