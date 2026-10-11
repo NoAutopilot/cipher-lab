@@ -30,3 +30,31 @@ Headline, tools/tx_bench.py (tx_bench_atlas.txt, eval split, 15 held-out lines):
 95% 0.128-0.203) vs the committed line reads 0.040 (15/376) on the same lines. Label-blind scorer (score_no87.txt): on 376 held-out no.87 signs, atlas top-1 err_true 0.322 against the line-read
 reconciliation's 0.056 on the same signs (one value map, no exceptions); the truth is outside the atlas top-3 on 0.261.
 The atlas does not replace the line reads on this hand. See NOTES.md "TX-ATLAS-B72" for limits.
+
+## Label-aware box map (BOXMAP-LA, 11 Oct 2026, account 3)
+
+`no87_box_token.tsv` above is label-blind (box widths only) and shifts whole stretches of a line by one token where it
+maps an extra box 1:1: on f178v L06 the owner's NOT-LETTER tile f178v_06_009 takes token 9 and the next tiles land one
+late (TXE3-9 second check, benchmark-tx/txeng3/9/VERIFY.md). It is kept unchanged because it is cited. The replacement is
+
+    python3 ciphers/nevers-birago-fr3251-1572/atlas/no87_map.py --label-aware [--check]
+
+-> `no87_box_token_labelaware.tsv` (sid fol line pos idx sign op split labels status loo_pos old_pos; NO truth column) and
+`no87_box_token_labelaware_lines.tsv` (per line: skipped boxes, ops, tiles moved with old>new position, old 1:1 tiles
+that are no longer one-token). Tool: `tools/box_token_align.py` (same DP and width costs; the owner's sorter statuses --
+not-letter skipped, bad-cut never 1:1 -- and truth-blind labels against the line read L: classify top-3 with every no.87
+page held out, `benchmark-tx/txeng/compare/topk_no87_allheld.tsv`, and the sorter seed pile's family or the owner's pile
+where he moved the tile; lam 1.5; a box whose place changes when its own label is hidden is `unsure`, not `1:1`). Same
+scope as the old map: f178v L01-23 and f179r L01-03 (f178r not mapped).
+
+Truth-free check (label = seed.tsv `atlas`, the tile's atlas k1; read sign at the mapped position): old map 157 of 208
+at 0, 24 at -1, 14 at +1, 0 at +-2, 13 none; new map 188 of 203 at 0, 1 at -1, 2 at +1, 0 at +-2, 12 none (leave-one-out,
+own label hidden: 187 / 2 / 2 / 0 / 12). Cross-checks that do not use the checked label: a run steered by the sorter labels
+alone raises the held-out atlas k1's agreement with the read at the mapped box from 485/695 to 577/688; a run steered by the
+atlas top-3 alone raises the seed family's from 142/201 to 173/196. Tiles moved: 124 on 10 lines (f178v L06 6, L07 2, L09 12,
+L11 18, L13 24, L17 13, L21 17; f179r L01 5, L02 14, L03 13); 16 other lines unchanged. 1:1 700, unsure 3, bad-cut 2, 2:1 25
+pairs, 1:2 13 boxes. Use the new file for any join of sorter tiles or atlas boxes to line-read positions; a result built
+on the old file (X20, TX-ATLAS-B72 naming/scoring, BIR87-ALIGN relabel, TXE3-1/2/7/9/10, the MQS-SHEETS/SORTER tests,
+tx_pair_clf, tx_sorter_curve, tx_taxonomy) rests on shifted joins wherever it touches those 10 lines. The same width DP
+also built `benchmark-tx/txeng/compare/box_pos.tsv` and `benchmark-tx/txeng/pair/dev_tune/box_pos.tsv` (tx_compare.py
+`map`, tx_pair_reread.py), which share the defect and are not rebuilt here.
