@@ -10,7 +10,8 @@ tools/sorter_recut.py into deskewed strips r_L01-r_L03, built with --region, for
 Template 2026-10-09.1: plain, refs and cluster are built with --no-focus-to-tray (the in-pile layout the older tests drive);
 OUT_DIR/tray.html is plain on the default (the focus tiles start in the "Taken out" tray), for test_focus_tray.js, with tray_rank.html
 (a "Most useful first" box with tiles of its own), tray_rank_in.html (a rank box that only repeats the focus tiles) and cluster_tray.html
-(--auto-clusters on the default)."""
+(--auto-clusters on the default). OUT_DIR/family.html and family_plain.html (owner rule R11, 11 Oct 2026): the same tiles in two families,
+one with two piles, on the tray default and with --no-focus-to-tray, for test_family_nav.js."""
 import subprocess, sys
 from pathlib import Path
 from PIL import Image, ImageDraw
@@ -49,6 +50,14 @@ subprocess.run(base + ['--rank', str(out / 'rank.tsv'), '--out', str(out / 'tray
 (out / 'rank_in.tsv').write_text('sid\tscore\talt\twhy\np1_02\t9\tX\tY or X?\np1_05\t5\tY\tX or Y?\n')   # every rank tile also a focus tile
 subprocess.run(base + ['--rank', str(out / 'rank_in.tsv'), '--out', str(out / 'tray_rank_in.html')], check=True)   # tray: the rank box is not shown
 subprocess.run(base + ['--auto-clusters', '2', '--out', str(out / 'cluster_tray.html')], check=True)   # tray + provisional shape groups (cluster offer)
+# family.html / family_plain.html (owner rule R11, 11 Oct 2026: the sign card walks the family): the same tiles in exactly two families,
+# family X with two piles (X, X-DOT) and family Y with one (Y, holding the Y and Z shapes); family.html on the default (questions wait in
+# the tray and are drawn in their piles), family_plain.html with --no-focus-to-tray. test_family_nav.js sets tiles aside itself (db moves).
+remap = {'X': ('X', 'X'), 'X-DOT': ('X-DOT', 'X'), 'Y': ('Y', 'Y'), 'Z': ('Y', 'Y')}
+(out / 'labels_family.tsv').write_text('\n'.join(labels[:1] + ['%s\t%s\t%s' % ((r.split('\t')[0],) + remap[r.split('\t')[1]]) for r in labels[1:]]) + '\n')
+fam = [a if a != str(out / 'labels.tsv') else str(out / 'labels_family.tsv') for a in base]
+subprocess.run(fam + ['--out', str(out / 'family.html')], check=True)
+subprocess.run(fam + ['--no-focus-to-tray', '--out', str(out / 'family_plain.html')], check=True)
 
 # region.html (SORTER-PAGEVIEW, 4 Oct 2026): three sloped lines on one region image, recut into deskewed strips, "Whole page" view
 sys.path.insert(0, str(ROOT / 'tools')); import numpy as np, sorter_recut as sr

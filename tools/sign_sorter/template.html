@@ -235,6 +235,11 @@ body.traypad #offer{bottom:100px}
 #fixBrushRow{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center}
 #fixSave{font-weight:600;background:var(--accent);color:var(--bg);border-color:var(--accent)}
 #viewSeg[hidden],#ctxNbL[hidden]{display:none}
+/* the ends of the card's walk (owner rule R11): the buttons' own words change ("⇤ Start of family", "End of family ⇥") and their outline turns
+   dashed, so an end never shows by a greyed button alone (R07); the line under them says it in words */
+#ctxNav button:disabled{border-style:dashed;opacity:.75}
+#ctxEnd{margin:0;font-weight:600;color:var(--ink)}
+#ctxEnd[hidden]{display:none}
 #viewSeg button{font-size:.82rem;padding:4px 10px}
 .t .trash{position:absolute;left:1px;top:1px;width:22px;height:22px;border-radius:4px;font:700 13px/22px var(--f-body);text-align:center;background:var(--bad);color:var(--on-fill);opacity:0;cursor:pointer;transition:opacity .1s}
 .t:hover .trash,.t:focus-visible .trash{opacity:.9}
@@ -253,7 +258,7 @@ body.traypad #offer{bottom:100px}
    fold on every Armstrong tile, iPhone SE 0 px of it on screen, and the sign in the strip is often smaller than its own 64 px tile) */
 @media (max-width:640px), (max-height:500px){
   #ctx .row.top{order:-8;top:-10px}
-  #ctxNav{order:-7}
+  #ctxNav,#ctxEnd{order:-7}
   #ctxCv{order:-6;scroll-margin-top:56px}
   #ctxBigW{order:-5;padding:4px}
   #ctxFixRow,#fixBox{order:-4}
@@ -389,6 +394,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
       <label class="hint" for="ctxZ">Zoom <input id="ctxZ" type="range" min="1" max="8" value="3"></label>
       <span class="seg" id="viewSeg" role="group" aria-label="What the larger view shows" hidden><button type="button" id="viewPage" aria-pressed="true">Whole page</button><button type="button" id="viewStrip" aria-pressed="false">Line strips</button></span>
       <label class="hint" for="ctxNb" id="ctxNbL"><input id="ctxNb" type="checkbox" checked> Lines above and below</label></div>
+    <p class="hint" id="ctxEnd" hidden></p>
     <div class="row" id="ctxActs"><button type="button" id="ctxOut">Doesn’t belong: take out</button><button type="button" id="ctxKeep">Right pile: keep it</button><select id="ctxDest" aria-label="Move this tile to"><option value="">Move this tile to…</option></select>
       <button type="button" id="ctxNewB">None of these: new sign</button>
       <button type="button" id="ctxUndo">Undo</button><button type="button" id="ctxBad">Bad cut</button><button type="button" id="ctxTrash" title="Not a sign: page edge, shadow, stain (key: Delete)">Trash (not a sign)</button><button type="button" id="ctxAside">Set aside</button><button type="button" id="ctxClose">Close</button></div>
@@ -688,7 +694,7 @@ function tileEl(sid, pid, cls){
   if (it.r && !cls.includes('in')){ b.classList.add('ref'); b.title = sid + ': sorted by you earlier (✓), shown as an example of this pile. If it does not belong, tap to take it out to the tray, like any tile. Hold: open its card.';
     b.setAttribute('aria-label', sid + ': your earlier pick for this pile, tap to take it out to the tray, hold to open its card');
     const g = document.createElement('span'); g.className = 'badge'; g.textContent = '✓'; g.setAttribute('aria-hidden', 'true'); b.append(g);
-    attachPress(b, () => takeOut(sid, b), () => showCtx(sid, pid)); return b; }
+    attachPress(b, () => takeOut(sid, b), () => showFam(sid, pid)); return b; }
   const kept = !fq && focusQ[sid] && checked[sid] && checked[sid] === pid && !cls.includes('out');
   if (kept) b.classList.add('kept');
   const mark = cls.includes('out') ? '×' : cls.includes('in') ? '↪' : fq ? '?' : kept ? '✓' : '';
@@ -696,12 +702,12 @@ function tileEl(sid, pid, cls){
     if (fq || kept){ g.classList.add('ok'); g.removeAttribute('aria-hidden'); g.setAttribute('role', 'button');
       g.title = fq ? 'Looks right: approve it in ' + pid : 'Approved. Tap to undo the approval';
       g.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); approveTile(sid, pid, !fq); }); } }
-  attachPress(b, () => takeOut(sid, b), () => showCtx(sid, pid));
+  attachPress(b, () => takeOut(sid, b), () => showFam(sid, pid));   // a hold walks the family the pile belongs to (owner rule R11)
   if (pid !== 'NOT-LETTER'){ const tr = document.createElement('span'); tr.className = 'trash'; tr.textContent = '\u2715'; tr.setAttribute('role', 'button');
     tr.title = 'Trash: not a sign (page edge, shadow, stain)'; tr.setAttribute('aria-label', 'Trash ' + sid + ': not a sign');
     // a click trashes; a press held 380 ms is a hold like anywhere else: the sign's card opens and nothing is trashed (adversarial
     // check, 10 Oct 2026: holding the ✕ trashed the sign on release). Its press never reaches the tile (no tile hold, no drag).
-    attachPress(tr, e => { e.preventDefault(); e.stopPropagation(); trashTile(sid, pid); }, () => showCtx(sid, pid));
+    attachPress(tr, e => { e.preventDefault(); e.stopPropagation(); trashTile(sid, pid); }, () => showFam(sid, pid));
     tr.addEventListener('pointerdown', e => e.stopPropagation()); tr.addEventListener('click', e => e.stopPropagation()); b.append(tr); }
   pileDrag(b, sid, pid);
   return b;
@@ -769,7 +775,7 @@ function pileEl(p, piles){
     (wait ? ', ' + wait + ' waiting in step 2' : '') + (p.isNew ? ', new pile' : '');
   const chip = document.createElement('span'); chip.className = 'chip' + (status ? ' ' + status : '');
   chip.textContent = status === 'same' ? 'done' : status === 'mark' ? 'not a letter' : status === 'merge' ? 'same as ' + s.merge_into : 'to do';
-  const big = btn('View larger', false, () => { const m = p.members.concat(aside); if (m.length) showCtx(m[0], p.id); });
+  const big = btn('View larger', false, () => { const m = p.members.concat(aside, waitingOf(p.id)); if (m.length) showFam(m[0], p.id); });   // its family, from this pile (R11)
   big.className = 'big'; big.title = 'See this pile’s signs larger, on their lines, one at a time';
   ph.append(nm); if (DATA.nonblind && VAL[p.id]){ const vv = document.createElement('span'); vv.className = 'pval'; vv.textContent = VAL[p.id].v; vv.title = 'Key value (non-blind view)'; ph.append(vv); }
   ph.append(ct, chip, big); el.append(ph); el.id = 'pile_' + domKey(p.id); el.dataset.pile = p.id;
@@ -813,7 +819,7 @@ function waitTileEl(sid){
   b.setAttribute('aria-label', sid + ': question already in the tray, waiting in step 2; hold to open its card');
   const im = document.createElement('img'); im.alt = sid; im.src = imgSrc(sid); im.loading = 'lazy'; im.draggable = false; b.append(im);
   const g = document.createElement('span'); g.className = 'badge'; g.textContent = '2'; g.setAttribute('aria-hidden', 'true'); b.append(g);
-  attachPress(b, () => trayedTap(sid, b), () => showCtx(sid, homeOf[sid], false, outList(), 'waiting to be placed'));
+  attachPress(b, () => trayedTap(sid, b), () => showFam(sid, homeOf[sid]));   // drawn in its pile: a hold walks that family, not the tray (owner rule R11)
   return b;
 }
 function answerIn2(sid){ s2Cur = sid; if (step === 2) renderS2(); else setStep(2); }   // open step 2 on this sign
@@ -896,7 +902,7 @@ function renderTray(){
     const f = outFrom[sid] && outFrom[sid] !== homeOf[sid] ? outFrom[sid] : homeOf[sid];
     b.title = sid + ' (from ' + f + '): tap to put it back'; b.setAttribute('aria-label', 'Put ' + sid + ' back in pile ' + f);
     const im = document.createElement('img'); im.alt = sid; im.src = imgSrc(sid); im.draggable = false; b.append(im);
-    attachPress(b, () => putBack(sid), () => showCtx(sid, homeOf[sid], false, outList(), 'taken out'));
+    attachPress(b, () => putBack(sid), () => showTray(sid));
     trayDrag(b, sid);
     w.append(b); });
   if (outs.length && qs.length) grp('Questions ' + qs.length);
@@ -904,7 +910,7 @@ function renderTray(){
     b.title = sid + ' (question ' + trayOrder[sid] + ', now in pile ' + homeOf[sid] + '): waiting, tap to answer it in step 2';
     b.setAttribute('aria-label', 'Question ' + trayOrder[sid] + ': ' + sid + ', now in pile ' + homeOf[sid] + '; tap to answer it in step 2');
     const im = document.createElement('img'); im.alt = sid; im.src = imgSrc(sid); im.draggable = false; b.append(im);
-    attachPress(b, () => answerIn2(sid), () => showCtx(sid, homeOf[sid], false, outList(), 'waiting to be placed'));
+    attachPress(b, () => answerIn2(sid), () => showTray(sid));
     trayDrag(b, sid);
     w.append(b); });
 }
@@ -1156,7 +1162,7 @@ $('s2Next').onclick = () => { const L = outList(), i = L.indexOf(s2Cur); if (i <
     const dd = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, moved: false, over: null, ghost: null, raf: 0, slop: mouse ? 6 : 18, held: false, touch};
     drag = dd;
     holdStart(e, tile, touch ? 500 : 380, dd.slop, () => { if (drag !== dd || dd.moved || !s2Cur) return; dd.held = true; heldLift();
-      showCtx(s2Cur, homeOf[s2Cur], false, outList(), 'waiting to be placed'); }); });
+      showTray(s2Cur); }); });
   tile.addEventListener('touchmove', e => holdGuard(e), {passive: false});   // a resting fingertip's drift (up to 18 px) stays a hold
   tile.addEventListener('pointermove', e => { const d = drag; if (!d || d.held) return; d.x = e.clientX; d.y = e.clientY;
     if (!d.moved && Math.hypot(d.x - d.sx, d.y - d.sy) > d.slop){ d.moved = true; holdEnd(tile);
@@ -1633,19 +1639,23 @@ $('fixBrushUndo').onclick = () => { if (!fix || !fix.mask.length) return; fix.ma
 $('ctxFix').onclick = () => { if (fix){ fixStop(); $('ctxMsg').textContent = 'Cut not changed.'; showCtx(ctxSid, pileOf(ctxSid), true); } else fixStart(); };
 $('fixCancel').onclick = () => { fixStop(); $('ctxMsg').textContent = 'Cut not changed.'; showCtx(ctxSid, pileOf(ctxSid), true); };
 $('fixReset').onclick = () => { if (fix){ fix.quad = rectQuad(itemBySid[fix.sid].b); fix.mask = []; brushUi(); fixChanged(); } };
-$('fixSave').onclick = () => {
+// Save cut: in a family walk the card then shows the next sign of the family, like a move (owner rule R11: "knock out a whole family with
+// new cuts or moves"); elsewhere it stays on the sign, as before. A split saves its kept part here and stays on the sign (advance false).
+function fixSaveCut(advance){
   if (!fix) return; const sid = fix.sid, q = fix.quad.map(p => p.slice()), mk = fix.mask.map(st => ({r: st.r, pts: st.pts.map(p => p.slice())})), b = quadBox(q), o = itemBySid[sid].b; fixStop();
   const same = (u, v) => JSON.stringify(u) === JSON.stringify(v);
   if (same(q, quadOf(sid)) && same(mk, (recuts[sid] || {}).mask || [])){ $('ctxMsg').textContent = 'The cut is unchanged.'; showCtx(sid, pileOf(sid), true); return; }
   const e = []; e.recut = [sid, recuts[sid] ? {...recuts[sid]} : null]; history.push(e); if (history.length > 200) history.shift(); updateUndo();
   setRecut(sid, same(q, rectQuad(o)) && !mk.length ? null : {x: b[0], y: b[1], w: b[2], h: b[3], quad: q, mask: mk, old: o.slice(), at: stamp()}); saveRecut(sid);
   const m = $('ctxMsg'); m.textContent = (recuts[sid] ? 'Saved the new cut of ' + sid + '.' : 'Back to the first cut of ' + sid + '.') + ' It stays in its pile; Undo takes it back. ';
-  if (moves[sid] === 'BAD-CUT'){ const u = document.createElement('button'); u.type = 'button'; u.id = 'ctxPutBack'; u.textContent = 'Put it back in ' + homeOf[sid];
+  const i = ctxList.indexOf(sid), adv = advance && ctxFam && i >= 0 && i < ctxList.length - 1;
+  if (moves[sid] === 'BAD-CUT'){ const u = document.createElement('button'); u.type = 'button'; u.id = 'ctxPutBack'; u.textContent = 'Put ' + (adv ? sid : 'it') + ' back in ' + homeOf[sid];
     u.onclick = () => { remember([sid]); setDest(sid, homeOf[sid]); render(); showCtx(sid, homeOf[sid], true);   // a move, not an answer: a question tile waits again
       $('ctxMsg').textContent = 'Put ' + sid + ' back in pile ' + homeOf[sid] + '.' + (preTrayed(sid) ? ' Its question is still open: it waits in step 2.' : ''); };
     m.append(u); }
-  showCtx(sid, pileOf(sid), true);
-};
+  if (advance && ctxFam) ctxAdvance(sid); else showCtx(sid, pileOf(sid), true);
+}
+$('fixSave').onclick = () => fixSaveCut(true);
 // ---- Add a missed sign / split a merged box (MQS-SORTER-BOX, 9 Oct 2026; research/MARY-STUART-TALK-2026-10-09.tsv M07, the CTTS
 // transcriber's "box each symbol"). Both reuse the Fix-the-cut box. "Add as a missed sign": the box as edited is saved as an added
 // box (db collection 'added', doc id = <tile>+<n>), the tile's own cut unchanged. "Split": the edited box is saved as the tile's cut
@@ -1672,7 +1682,7 @@ $('fixAdd').onclick = () => {
 $('fixSplit').onclick = () => {
   if (!fix) return; const sid = fix.sid, q = fix.quad.map(p => p.slice()), rest = splitRest(fix.anchor, q);
   if (!rest){ $('fixState').textContent += ' (nothing left to split off: make the box narrower first)'; return; }
-  $('fixSave').onclick();   // the kept part: saved as the tile's cut, with its own Undo step
+  fixSaveCut(false);   // the kept part: saved as the tile's cut, with its own Undo step (the card stays on the sign)
   const id = addBox(sid, rest, [], 'split'), e = []; e.added = id; history.push(e); if (history.length > 200) history.shift(); updateUndo();
   $('ctxMsg').textContent = 'Split ' + sid + ': kept the part you fitted, added the rest as ' + id + '. Undo twice takes both back.'; };
 (function(){   // drag an edge, a corner or the whole box, or paint stray ink, on the line canvas (pointer events: mouse, pen and touch; no page scroll while editing)
@@ -1719,15 +1729,48 @@ $('fixSplit').onclick = () => {
 })();
 let ctxList = [];
 let ctxListName = 'in this pile';
+// Owner rule R11 (tools/data/sorter_owner_requirements.tsv; 11 Oct 2026, Matignon f.110: "When I hit left or right keys while into one of
+// the family, it moves to another symbol, but doesn't seem to be continuining in that family ... when you hit the end of that family unit it
+// stops"). A card opened from a pile in step 1 -- a tile held there (a member, a set-aside tile, a question waiting in step 2 drawn in its
+// pile, the trash x) or "View larger" -- walks THE FAMILY: every tile shown under that family's heading, in the order on screen (its piles
+// top to bottom; in a pile its tiles, then the set-aside ones, then the waiting ones, as drawn). Before, a pile's card stopped at the end of
+// that one pile and never reached the waiting tiles drawn in it, and a waiting tile's card walked the whole tray (13 families on Matignon).
+// The list is fixed when the card opens, so a move, a keep or a saved cut shows the next sign of the same family and never shifts the order;
+// the walk does not wrap: at either end it stops and says so. Cards opened from step 2, the tray, "Check these first" or "Most useful first"
+// walk their own lists as before, and the position line says which list.
+let ctxFam = null;   // the family walk: {label: 'family e', noun: 'family', at: {sid: the pile it was drawn in}, piles: n}; null for any other list
+function famWalk(pid){
+  const pe = document.getElementById('pile_' + domKey(pid)), sec = pe && pe.closest('section.fam'); if (!sec) return null;
+  const at = {}, list = [];
+  sec.querySelectorAll('.pile').forEach(p => p.querySelectorAll(':scope > .tiles > .t[data-sid]').forEach(t => {
+    const s = t.dataset.sid; if (itemBySid[s] && !(s in at)){ at[s] = p.dataset.pile; list.push(s); } }));
+  const h = ((sec.querySelector('h2') || {}).textContent || '') || 'Family ' + pid;   // "Family e", or "Value X" when grouped by value (non-blind)
+  return {list, fam: {label: h.charAt(0).toLowerCase() + h.slice(1), noun: /^Family /.test(h) ? 'family' : 'group', at, piles: new Set(Object.values(at)).size}};
+}
+function showFam(sid, pid){ const w = famWalk(pid);
+  if (w && w.list.includes(sid)) showCtx(sid, pid, false, w.list, w.fam); else showCtx(sid, pid); }   // not drawn: its pile, as before
+// the tray's list (a question in the tray, a sign taken out, the sign being placed in step 2): the questions first, then the signs taken out
+function showTray(sid){ const L = outList(), q = L.filter(preTrayed).length, o = L.length - q;
+  showCtx(sid, homeOf[sid], false, L, q && o ? 'in the tray (' + q + ' question' + (q > 1 ? 's' : '') + ', then ' + o + ' taken out)' : q ? 'questions in the tray' : 'taken out, in the tray'); }
+// the position line, the ends in words, and the ends in the buttons' own text and outline, not a greyed button alone (owner rule R07)
+function ctxNavUi(i){
+  const N = ctxList.length, F = ctxFam, first = i <= 0, last = i >= N - 1, inL = F ? 'in ' + F.label : ctxListName;
+  $('ctxPos').textContent = (i + 1) + ' of ' + N + ' ' + inL + (F && F.piles > 1 && F.at[ctxSid] ? ', pile ' + F.at[ctxSid] : '');
+  const p = $('ctxPrev'), n = $('ctxNext'); p.disabled = first; n.disabled = last;
+  p.textContent = first ? '⇤ Start of ' + (F ? F.noun : 'list') : '← Previous tile'; n.textContent = last ? 'End of ' + (F ? F.noun : 'list') + ' ⇥' : 'Next tile →';
+  const w = F ? inL : 'in this list', e = $('ctxEnd');
+  e.textContent = i < 0 ? '' : N === 1 ? 'The only sign ' + w : first ? 'First sign ' + w : last ? 'Last of ' + N + ' ' + w : ''; e.hidden = !e.textContent; }
+function ctxEndMsg(last){ const F = ctxFam;
+  return F ? (last ? 'Last of ' + ctxList.length + ' in ' + F.label + ' — that ' + F.noun + ' is done.' : 'First sign in ' + F.label + ': there is none before it.')
+    : (last ? 'That was the last tile in this list.' : 'That is the first tile in this list.'); }
 function showCtx(sid, pid, keepList, list, listName){
-  if (!keepList){ ctxList = list ? list.slice() : membersOf(pid).concat(asideOf(pid)); ctxListName = listName || 'in this pile';
+  if (!keepList){ ctxFam = listName && typeof listName === 'object' ? listName : null;
+    ctxList = list ? list.slice() : membersOf(pid).concat(asideOf(pid)); ctxListName = ctxFam ? '' : listName || 'in pile ' + pid;
     $('ctxMsg').textContent = ''; }
   if (fix && fix.sid !== sid) fixStop();
   ctxSid = sid; ctxPid = pid; const it = itemBySid[sid];
   $('ctxBig').src = imgSrc(sid); $('ctxBig').alt = 'Tile ' + sid + ', enlarged';
-  const i = ctxList.indexOf(sid);
-  $('ctxPos').textContent = (i + 1) + ' of ' + ctxList.length + ' ' + ctxListName;
-  $('ctxPrev').disabled = i <= 0; $('ctxNext').disabled = i >= ctxList.length - 1;
+  ctxNavUi(ctxList.indexOf(sid));
   const cur = moves[sid] || homeOf[sid], pre = preTrayed(sid);   // pre: a question tile waiting in step 2 (no move yet; it is in its own pile)
   const dest = $('ctxDest'); dest.length = 1;
   allPiles().filter(q => q.id !== cur).sort((a, b) => ((b.isNew && !SPECIAL.has(b.id)) - (a.isNew && !SPECIAL.has(a.id))) || (a.family === it.fam ? 0 : 1) - (b.family === it.fam ? 0 : 1) || a.id.localeCompare(b.id))
@@ -1749,16 +1792,21 @@ function ctxDiag(){ const c = $('ctxC'), bx = document.querySelector('#ctx .box'
   d.textContent = 'Page build ' + ((document.querySelector('meta[name="sign-sorter-template"]') || {}).content || '?') + ' · view ' + innerWidth + '×' + innerHeight +
     (vv ? ' (visible ' + Math.round(vv.height) + ', zoom ' + vv.scale.toFixed(2) + ')' : '') + ' · dpr ' + devicePixelRatio + ' · phone ' + PHONE +
     ' · strip ' + c.width + '×' + c.height + ' drawn, ' + Math.round(r.height) + ' px shown at y ' + Math.round(r.top) + ' · dialog ' + bx.clientHeight + '/' + bx.scrollHeight; }
-function ctxStep(d){ if (fix) return; const i = ctxList.indexOf(ctxSid) + d; if (i >= 0 && i < ctxList.length){ const s2 = ctxList[i]; showCtx(s2, pileOf(s2), true); } }
+// a step (arrow key, Previous / Next, a sideways swipe): never wraps; past either end nothing moves and the card says so (owner rule R11)
+function ctxStep(d){ if (fix) return; const i = ctxList.indexOf(ctxSid) + d;
+  if (i >= 0 && i < ctxList.length){ const s2 = ctxList[i]; $('ctxMsg').textContent = ''; showCtx(s2, pileOf(s2), true); }
+  else if (ctxList.length){ const t = ctxEndMsg(d > 0); $('ctxMsg').textContent = t; $('ctxEnd').textContent = t; $('ctxEnd').hidden = false; } }   // also under the buttons (in view on a phone)
+// after a decision on the shown sign (a move, set aside, bad cut, trash, keep, a saved cut in a family walk): the next sign of the same
+// fixed list, or, after the last one, stay on it and say the list is done. Appended as text, so a button already in the message stays.
 function ctxAdvance(sid){
-  const i = ctxList.indexOf(sid);
-  if (i >= 0 && i < ctxList.length - 1){ const s2 = ctxList[i + 1]; showCtx(s2, pileOf(s2), true); }
-  else { $('ctxMsg').textContent += ' That was the last tile in this list.'; showCtx(sid, pileOf(sid), true); }
+  const i = ctxList.indexOf(sid), m = $('ctxMsg'), sp = /\S$/.test(m.textContent) ? ' ' : '';
+  if (i >= 0 && i < ctxList.length - 1){ const s2 = ctxList[i + 1]; m.append(sp + 'Showing the next ' + (ctxFam ? 'sign in ' + ctxFam.label : 'tile') + '.'); showCtx(s2, pileOf(s2), true); }
+  else { showCtx(sid, pileOf(sid), true); if (i >= 0){ const t = ctxEndMsg(true); m.append(sp + t); $('ctxEnd').textContent = t; $('ctxEnd').hidden = false; } }
 }
 function ctxMove(to){
   const sid = ctxSid; if (notYet(sid, $('ctxMsg'))) return;
   remember([sid]); setDest(sid, to);
-  $('ctxMsg').textContent = (to === 'OUT' ? 'Took ' + sid + ' out' : 'Moved ' + sid + ' to ' + (to === 'ASIDE' ? 'set aside' : to === 'BAD-CUT' ? 'bad cuts' : to === 'NOT-LETTER' ? 'trash (not a sign)' : to)) + '. Showing the next tile.';
+  $('ctxMsg').textContent = (to === 'OUT' ? 'Took ' + sid + ' out' : 'Moved ' + sid + ' to ' + (to === 'ASIDE' ? 'set aside' : to === 'BAD-CUT' ? 'bad cuts' : to === 'NOT-LETTER' ? 'trash (not a sign)' : to)) + '.';
   render();
   ctxAdvance(sid);
   offerCluster([sid], to);
@@ -1767,7 +1815,7 @@ function ctxKeep(){
   const sid = ctxSid, cur = moves[sid] || homeOf[sid];
   if (notYet(sid, $('ctxMsg'))) return;   // round-2 check, 10 Oct 2026: a keep while loading deleted a saved move
   keepAt(sid, cur);
-  $('ctxMsg').textContent = 'Kept ' + sid + ' in ' + cur + '. Showing the next tile.';
+  $('ctxMsg').textContent = 'Kept ' + sid + ' in ' + cur + '.';
   render(); ctxAdvance(sid);
 }
 $('ctxKeep').onclick = ctxKeep;
@@ -1786,7 +1834,11 @@ $('ctxUndo').onclick = () => { if (fix) fixStop(); const last = undo(); if (!las
   if (one && ctxList.includes(one)){ $('ctxMsg').textContent = 'Undid the last step for ' + one + '. Showing it again.'; showCtx(one, pileOf(one), true); }
   else { $('ctxMsg').textContent = 'Undid the last step (' + (last.length || 1) + (last.length > 1 ? ' tiles).' : ' tile).'); showCtx(ctxSid, pileOf(ctxSid), true); } };
 $('ctxNext').onclick = () => ctxStep(1);
-$('ctxDest').onchange = e => { const v = e.target.value; if (!v) return; if (notYet(ctxSid, $('ctxMsg'))){ e.target.selectedIndex = 0; return; } ctxMove(v); };
+// After a mouse pick in "Move this tile to…" the list kept the focus, and the page skips arrow keys on a list, so the browser's own
+// arrow on a closed list picked its next entry and MOVED the shown sign each time the person pressed Left / Right to walk on (owner
+// rule R11 check, 11 Oct 2026, desktop Chromium). Now a pick gives the focus back to the card, and Left / Right on the list walk the card.
+$('ctxDest').onchange = e => { const v = e.target.value; if (!v) return; e.target.blur(); if (notYet(ctxSid, $('ctxMsg'))){ e.target.selectedIndex = 0; return; } ctxMove(v); };
+$('ctxDest').addEventListener('keydown', e => { if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return; e.preventDefault(); e.target.blur(); ctxStep(e.key === 'ArrowLeft' ? -1 : 1); });
 $('ctxAside').onclick = () => ctxMove('ASIDE');
 $('ctxBad').onclick = () => { if (notYet(ctxSid, $('ctxMsg'))) return; ensureSpecial('BAD-CUT'); ctxMove('BAD-CUT'); };
 $('ctxTrash').onclick = () => { if (notYet(ctxSid, $('ctxMsg'))) return; ensureSpecial('NOT-LETTER'); ctxMove('NOT-LETTER'); };   // tile box cut in the wrong place: parked for recutting
@@ -1837,7 +1889,7 @@ const BOX_TITLE = ' (tap: to the tray; hold: see it large on its line)', BOX_ARI
     const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.title = f.sid + ': ' + f.q + BOX_TITLE;
     b.setAttribute('aria-label', f.sid + BOX_ARIA);
     const im = document.createElement('img'); im.alt = f.sid; im.src = imgSrc(f.sid); im.draggable = false; b.append(im);
-    attachPress(b, () => boxTap(f.sid, b), () => showCtx(f.sid, pileOf(f.sid), false, ids, 'in "Check these first"'));
+    attachPress(b, () => boxTap(f.sid, b), () => showCtx(f.sid, pileOf(f.sid), false, ids, 'questions in "Check these first"'));
     // short caption: the question itself (the part after the last ';', without a [bracketed note]); the full text is in the dialog.
     // Too long for three lines under a tile (Harley 287: twelve captions all read "Odd one out of shape pile kNN (NN tiles…"):
     // the question clause if it is short, else the pile it is in now with a "?" ("k05?"), as the "Most useful first" box does

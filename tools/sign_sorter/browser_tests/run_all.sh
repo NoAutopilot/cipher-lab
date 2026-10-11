@@ -21,5 +21,8 @@ run test_focus_tray test_focus_tray.js "$OUT"   # template 2026-10-09.1: questio
 # and the earlier picks (refs: the check-mark tiles); round 2 (10 Oct 2026): region, whose r_L01-r_L03 line strips exercise R02 (the
 # lines above and below in the card)
 for f in plain tray tray_rank cluster refs region; do run "test_gestures ($f)" test_gestures.js "$OUT/$f.html"; done
+# owner rule R11 (11 Oct 2026, Matignon f.110): the sign card walks the family it was opened in, stops at its ends, and a decision shows
+# the next sign of that family; on the tray build (questions drawn in their piles) and the no-tray build
+for f in family family_plain; do run "test_family_nav ($f)" test_family_nav.js "$OUT/$f.html" "$OUT/test_family_nav_$f.png"; done
 [ -n "$EXTRA" ] && run "test_qa ($EXTRA)" test_qa.js "$EXTRA"
 exit $fail
