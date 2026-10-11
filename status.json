@@ -15472,9 +15472,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L16e)'"
+        "AUDIT.md '## AUDIT (FV-L16e)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-FM16e)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-L16e verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -15490,12 +15491,12 @@
         "other": "0"
       },
       "depth_pct": 100.0,
-      "grade": "N3",
-      "plaintext_novelty": "N3",
-      "mapping_novelty": "N3",
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
       "title": "Eckert 1864 (Fort Monroe ledger): Sheldon, Fort Monroe, to John Horner, New York, for Surgeon Charles McDougall, 1 Oct 1864: yellow fever prevailing at New Berne (E443)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 1 Oct 1864 Fort Monroe told Surgeon Charles McDougall, through John Horner at New York, that yellow fever was prevailing to a considerable extent at New Berne, N.C; not located in the Official Records ser. I vols. 33 and 42 pt 3, ORN ser. I vols. 9 and 11, Butler's correspondence vol. V, Plum's Military Telegraph vol. II, J. E. O'Brien's Telegraphing in Battle, Google Books, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 (weak) one audit (FV-L16e); not N4: Grant Papers vols. 12-13 by Google Books snippets only, NARA RG 107/92/45 unread, OR read in OCR",
+      "line": "Fort Monroe's 1 Oct 1864 telegram to Surgeon Charles McDougall through John Horner at New York, that yellow fever was prevailing to a considerable extent at Newbern, N.C., is in plain words in the Huntington's public transcription of the ledger (mssEC 25 p.241); the period key adds the hour (11 AM), Monroe, New York and the town, Newbern.",
+      "gap": "body in clear in the holder public transcription (N1, AUD2-FM16e, D2V-E74 line; lowered from N3 weak, FV-L16e); no novelty",
       "depth": "D1",
       "completeness": "6 H of 6 code-word groups (John, fever plain); one body code word (Newbern)",
       "phrases": [
@@ -15507,15 +15508,17 @@
       ],
       "depth_sentence": "On 1 Oct 1864 Fort Monroe told Surgeon Charles McDougall, through John Horner at New York, that yellow fever was prevailing to a considerable extent at New Berne, N.C.",
       "depth_check": "too short for a clause from the key (one body code word); external: OR I/42 pt 3 p.1153 Whiting, yellow fever violent at New Berne",
-      "depth_note": "6 H of 6 code-word groups (John, fever plain); one body code word (Newbern)"
+      "depth_note": "6 H of 6 code-word groups (John, fever plain); one body code word (Newbern)",
+      "text": "known"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L16e)'"
+        "AUDIT.md '## AUDIT (FV-L16e)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-FM16e)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-L16e verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -15531,12 +15534,12 @@
         "other": "0"
       },
       "depth_pct": 85.7,
-      "grade": "N3",
-      "plaintext_novelty": "N3",
-      "mapping_novelty": "N3",
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
       "title": "Eckert 1864 (Fort Monroe ledger): Butler's headquarters (R. O'Brien) to Sheldon, Fort Monroe, for Admiral Porter, 6 Dec 1864: Mr Baird arrives tomorrow morning; send him on with his instruments (E445)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 6 Dec 1864 Butler's headquarters told Admiral Porter through Fort Monroe that a Mr Baird would arrive the next morning and asked that he be sent on with his instruments; not located in the Official Records ser. I vols. 33 and 42 pt 3, ORN ser. I vols. 9 and 11, Butler's correspondence vol. V, Plum's Military Telegraph vol. II, J. E. O'Brien's Telegraphing in Battle, Google Books, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 (weak) one audit (FV-L16e); not N4: Grant Papers vols. 12-13 by Google Books snippets only, NARA RG 107/92/45 unread, OR read in OCR",
+      "line": "The 6 Dec 1864 6 PM telegram from Butler's headquarters to Admiral Porter through Fort Monroe, that a Mr Baird would arrive the next morning and should be sent on with his instruments, is in plain words in the Huntington's public transcription (mssEC 25 p.272); the period key adds the hour, Porter and 'tomorrow'.",
+      "gap": "body in clear in the holder public transcription (N1, AUD2-FM16e, D2V-E74 line; lowered from N3 weak, FV-L16e); no novelty",
       "depth": "D1",
       "completeness": "6 H + 1 M of 7 code-word groups (Knave = Butler in sign-off position, M); sly, furies, Hendron unread",
       "phrases": [
@@ -15548,15 +15551,17 @@
       ],
       "depth_sentence": "On 6 Dec 1864 Butler's headquarters told Admiral Porter through Fort Monroe that a Mr Baird would arrive the next morning and asked that he be sent on with his instruments.",
       "depth_check": "too short for a clause from the key (one body code word)",
-      "depth_note": "6 H + 1 M of 7 code-word groups (Knave = Butler in sign-off position, M); sly, furies, Hendron unread"
+      "depth_note": "6 H + 1 M of 7 code-word groups (Knave = Butler in sign-off position, M); sly, furies, Hendron unread",
+      "text": "known"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L16e)'"
+        "AUDIT.md '## AUDIT (FV-L16e)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-FM16e)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-L16e verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -15576,8 +15581,8 @@
       "plaintext_novelty": "N3",
       "mapping_novelty": "N3",
       "title": "Eckert 1864 (Fort Monroe ledger): Sheldon, Fort Monroe, to Maj. Eckert, 12 Mar 1864: General Butler asks whether the Cherrystone operator is the W. A. Dunn of the American office at Baltimore (E446)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 12 Mar 1864 Sheldon told Eckert that General Butler wished to know whether the operator at Cherrystone was the W. A. Dunn formerly employed in the American office at Baltimore; not located in the Official Records ser. I vols. 33 and 42 pt 3, ORN ser. I vols. 9 and 11, Butler's correspondence vol. V, Plum's Military Telegraph vol. II, J. E. O'Brien's Telegraphing in Battle, Google Books, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 (weak) one audit (FV-L16e); not N4: Grant Papers vols. 12-13 by Google Books snippets only, NARA RG 107/92/45 unread, OR read in OCR",
+      "line": "Read at grade H with War Department Cipher No. 1: on 12 Mar 1864 Sheldon told Eckert that General Butler wished to know whether the operator at Cherrystone was the W. A. Dunn formerly employed in the American office at Baltimore; not located in the Official Records ser. I vols. 33 and 42 pt 3, ORN ser. I vols. 9 and 11, Butler's correspondence vol. V, Plum's Military Telegraph vol. II, J. E. O'Brien's Telegraphing in Battle, Google Books, Internet Archive full-text search, the Huntington's full-text search or Butler's correspondence vols. III-V (searched 10-11 Oct 2026).",
+      "gap": "N3 (weak) two audits (FV-L16e, AUD2-FM16e: kept); not N4: NARA RG 107 unread, Google Books unreachable (429) on 11 Oct, Grant Papers vol. 13 not reached, JSTOR rows queued, OR read in OCR",
       "depth": "D1",
       "completeness": "3 H of 3 code-word groups (Cherry plain = Cherrystone)",
       "phrases": [
@@ -15595,9 +15600,10 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "key": "period",
       "audit_refs": [
-        "AUDIT.md '## AUDIT (FV-L16e)'"
+        "AUDIT.md '## AUDIT (FV-L16e)'",
+        "AUDIT.md '## AUDIT 2 (second adversarial, AUD2-FM16e)'"
       ],
-      "audit_status": "one audit",
+      "audit_status": "two audits",
       "superseded_by": "",
       "depth_by": "FV-L16e verifier (account 1)",
       "depth_date": "10 Oct 2026",
@@ -15613,12 +15619,12 @@
         "other": "0"
       },
       "depth_pct": 100.0,
-      "grade": "N3",
-      "plaintext_novelty": "N3",
-      "mapping_novelty": "N3",
+      "grade": "N1",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
       "title": "Eckert 1864 (Fort Monroe ledger): Eckert, Washington, to Dealy, Fort Monroe, 15 Oct 1864: be at the wharf when the Manhattan arrives with the Secretary of War; don't mention his coming (E448)",
-      "line": "Read at grade H with War Department Cipher No. 1: on 15 Oct 1864 Eckert told Dealy at Fort Monroe to be at the wharf when the Manhattan arrived from Washington with the Secretary of War on board, and not to mention his coming; not located in the Official Records ser. I vols. 33 and 42 pt 3, ORN ser. I vols. 9 and 11, Butler's correspondence vol. V, Plum's Military Telegraph vol. II, J. E. O'Brien's Telegraphing in Battle, Google Books, Internet Archive full-text search or the Huntington's full-text search (searched 10 Oct 2026).",
-      "gap": "N3 (weak) one audit (FV-L16e); not N4: Grant Papers vols. 12-13 by Google Books snippets only, NARA RG 107/92/45 unread, OR read in OCR",
+      "line": "Eckert's 15 Oct 1864 telegram telling Dealy at Fort Monroe to be at the wharf when the Manhattan arrived with the Secretary of War, and not to mention his coming, is in plain words in the Huntington's public transcription (mssEC 25 p.249) but for Washington and the Secretary of War, which the next telegram on the same page states in clear.",
+      "gap": "body in clear in the holder public transcription (N1, AUD2-FM16e, D2V-E74 line; lowered from N3 weak, FV-L16e); no novelty",
       "depth": "D1",
       "completeness": "2 H of 2 code-word groups (wharf plain)",
       "phrases": [
@@ -15630,7 +15636,8 @@
       ],
       "depth_sentence": "On 15 Oct 1864 Eckert told Dealy at Fort Monroe to be at the wharf when the Manhattan arrived from Washington with the Secretary of War on board, and not to mention his coming.",
       "depth_check": "too short for a clause from the key (two body code words); both read in clear in the companion row 5793/2 (Eckert to Sheldon, same day: the Secretary of War left Washington on board the Manhattan)",
-      "depth_note": "2 H of 2 code-word groups (wharf plain)"
+      "depth_note": "2 H of 2 code-word groups (wharf plain)",
+      "text": "known"
     },
     {
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",

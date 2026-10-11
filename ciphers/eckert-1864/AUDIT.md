@@ -20909,3 +20909,106 @@ LEAD is louisxiv.htm (another subject). UNCHECKED-NET: `warofrebellion014702root
 - Requests: hdl.huntington.org 13 (all 200; one take); www.googleapis.com 2 (both 429); archive.org 8 (one 500); be-api.us.archive.org 14 (6 x 502,
   two queries unchecked).
 For the orchestrator (owner account) and LANE LEDGER-17 (account 1).
+
+## AUDIT 2 (second adversarial, AUD2-FM16e)
+
+Second verifier AUD2-FM16e (account 1, Opus, for LANE DEFAULT-A1-0540), 11 Oct 2026, 05:54-06:2x UTC by `date -u`; a separate session from the
+readers FM-S1 and FM-F1, the first verifier FV-L16e and the second verifier AUD2-LEDGER16-5, not protecting their conclusions. Scope: **E443** (5785/1),
+**E445** (5816/2), **E446** (5583/2), **E448** (5793/1), status.json results[401]-[404], first audit "## AUDIT (FV-L16e)"; plus item 5, E550's
+per-row line. Nothing decoded; every code group re-looked up in key.md (table rows: Appian 107, Fanny 998, Flora 321, Libby 1012, Whelp 853, Knave
+479, Stephen 726, Banditti 183, Grapes 373, Brutus 154). Key source `period` (War Department Cipher No. 1). Step 0 not used (non-test on mssEC 25).
+No spec, so `judge_plaintext.py` was not run. Scripts and raw output (committed, `fortmonroe/`): `aud2_fm16e_prior.out`, `aud2_fm16e_print.py`
+(+ `.out`), `aud2_fm16e_hdl.out` (run with `fv_l16e_hdl.py`, fresh query list in s.2), `aud2_fm16e_gb.py` (+ `.out`), `aud2_fm16e_beapi.py` (+ `.out`,
+two batches), `aud2_fm16e_oa.py` (+ `.out`).
+
+### 1. Extract and prior work
+| ID | ptr/row | date | sender -> recipient | holder transcription of the row (the public text) | body code words |
+|---|---|---|---|---|---|
+| E443 | 5785/1 (p.241) | 1 Oct 1864 | Sheldon (signed E. McClellan), Ft Monroe -> John Horner, New York, for Surgeon Charles McDougall | "Appian fanny plug for Surgeon Charles McDougall france zodiac Yell oh fever is prevailing to considerable extent at flora N see I have thought best to notify you at once E. McClellan" | 1 (flora = Newbern; "N see" = N.C. in clear) |
+| E445 | 5816/2 (p.272) | 6 Dec 1864 | R. O'Brien, Butler's Hd Qrs -> Sheldon, for Porter | "Libby for Niagara zebra Mr Baird sly will arrive at appear whelp morning pedlar please have him sent here with his instruments pedlar furies etc on city of Hendron Knave" | 1 (whelp = tomorrow) |
+| E446 | 5583/2 (p.39) | 12 Mar 1864 | Sheldon -> Eckert | "Knox desires to know if the wrangler at Cherry Stone is the same W A Dunn formerly employed Employed Stephen American off is at Banditti answer quick I dont know reason" | 3 (Knox = Butler, Stephen = In the, Banditti = Baltimore) |
+| E448 | 5793/1 (p.249) | 15 Oct 1864 | T. T. Eckert, Washington -> Dealy, Ft Monroe | "dont fail to be at wharf when the man hattan arrives from grapes with brutus on board dont mention his coming to any one presume Bates posted you fully etc" | 2 (grapes = Washington, brutus = Secretary of War) |
+
+`tools/prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=<ptr>;date=<YYYY-MM-DD>;sender=..;recipient=..' --step-type
+second-audit --offline`, all four (06:0x UTC, before the first network request): exit 0, verdict plaintext UNCHECKED-NET ("proceed on the residue:
+whole item"); 4-editions CLEAR on the OR parts on disk (date +-1 day, both correspondents, control hit); UNCHECKED-NET = OR parts not on disk and the
+aaymeloglu repository (no cache). The tool's write to prior-work.tsv was reverted (not this job's file).
+
+### 2. Families added by this audit (none of FV-L16e's or CLEAR-SWEEP's queries repeated)
+| Family | Result |
+|---|---|
+| Huntington CONTENTdm full text (p16003coll11, CISOSEARCHALL, suppressfulltext=1, all pointers; control 'Inspector difficulty Evidence Nashville' -> 9678; 18 fresh queries incl. the code words themselves, so a Washington received or sent copy written with the same arbitraries would hit) | **No copy of any of the four at another pointer.** E443: 'flora Appian fanny', 'Surgeon McDougall' -> 5785 own; 'Newbern yellow', 'considerable extent Newbern' 0; 'thought best notify' -> 5785 own, 9805 (another telegram, Chambersburg). E445: 'Baird instruments', 'Hendron', 'Libby Baird' -> 5816 own; 'Baird Porter' 0. E446: 'wrangler Cherry', 'Banditti Stephen' -> 5583 own (+ 9890, 9929, 8996 other telegrams); 'Dunn Cherry' -> 11330 (1 May, W. A. Dunn ordered to Cherrystone "at once"), 14048 (15 Aug, Blunt on "Mr Dunn Opr at Cherrystone"), 12487, 12324 (W. A. Dunn, Cherry Stone, cable); 'Dunn Baltimore' -> 11276 (26 Apr, W. A. Dunn at Baltimore), 13533 (Dec, Buell): context for the man, none this telegram. E448: 'Dealy Manhattan' -> 5793 own; 'Dealy wharf' -> 5790 (= E267, Eckert to Dealy, meet the Secretary at the wharf; and Eckert to Dealy 15 Oct, war news), 5791, 5796 (other Eckert-Dealy telegrams of 15-17 Oct); 'mention his coming' -> 5793 own, 5903 (1865, other); 'posted you fully' -> 5793 own + 5 off subject (9544, 9372, 5012, 8377, 5135). 'brutus grapes' 44 (common pair, not read further). |
+| Print on disk: letters-only phrase grep over 211 cached print-check volumes (`aud2_fm16e_print.out`; 31 phrases, none of fv_l16e_print.py's) | No telegram located. Hits, all read and rejected or context: 'thought best to notify you' OR I/46 pt 3 (1865, other); 'yellow fever at new berne' ORN I/10 (naval hospital broken up, context); 'have him sent here' Butler V (a parole order, other); 'operator at cherrystone' ORN I/9 p.527 (Titan, W. H. Dunn, as FV-L16e) and ORN I/10 / OR I/40 pt 3 (July 1864, other); 'john horner' and 'w j dealy' Plum vol. II operator lists (as FV-L16e); 'e mcclellan', 'r o brien' name hits in OR, other dates. |
+| IA be-api (16 requests; control '"Suwo Nada"' hit; per-volume controls) | **Butler, Private and Official Correspondence vol. III** (`privateofficialc03butl`, not cached; control 'Cherrystone' hit): **p.499, "From General Butler March 9, 1864 W. A. Dunn, Telegraph Operator, Cherrystone, Va. The 'Titan' is destroyed, and you are all safe if you keep ..."** -- Butler wrote to W. A. Dunn at Cherrystone three days before E446; context (it names the operator E446 asks about), not E446; '"American office"' 0 in the volume. **Grant Papers vol. 10** (control 'Kilpatrick' hit): 'Cherrystone' 0. **Vol. 12** (control 'Manhattan' hit, other passages): '"yellow fever"' 0. **Vol. 13** (`papersofulyssess0013gran`): control '"Fort Fisher"' 0, so 'Baird' 0 is **unreachable, not a negative** (identifier not indexed or wrong). Whole collection: '"thought best to notify you at once"' 2 (other matters), '"Baird will arrive"' 16 (press, other men), '"same W. A. Dunn"' 3 (other men), '"don't mention his coming"' 3 (fiction), '"presume Bates has posted you"' 0. |
+| Google Books API (keyed, `country=US`) | **Unreachable**: HTTP 429 on all 12 queries of the first run (the script did not stop at the first 429; logged as a fault of this job) and on the control of the one retry ~6 min later, then stopped. Grant Papers vols. 10-12 by snippet: not reached this session. |
+| Open indexes (OpenAlex 5, Semantic Scholar 3 then 429 stopped, CORE 5) | Off subject; one lead unread: *The Eastern Shore of Virginia in the Civil War* (2006; Cherrystone, the bay cable), a secondary work that may discuss the Cherrystone operators (E446). |
+| JSTOR | 8 rows appended to JSTOR-QUEUE.tsv, two per item: (i) names/date ANDed with a telegram/cipher keyword, (ii) a bare quoted phrase ("yellow fever is prevailing to considerable extent", "have him sent here with his instruments", "the same W. A. Dunn formerly employed", "don't fail to be at the wharf when the Manhattan"); they never block a class. |
+| Not reached | NARA RG 107 (the Washington copies: E446 received, E448 sent), RG 45 (Porter, E445); Grant Papers vol. 13 (be-api control failed; Google Books 429); OR I/42 pt 1; HathiTrust full text. |
+
+### 3. Readings and grades, checked
+- **E443:** FV-L16e's corrections stand ("John" = John Horner, plain; "fever" plain; McClellan the signer). Code groups Appian Monroe, fanny 11 AM, plug 1,
+  france New York, zodiac period, flora Newbern: **H 6 of 6** stands. Body code word 1.
+- **E445:** Libby 6 PM, Niagara D. D. Porter, zebra period, whelp tomorrow, pedlar x2 comma: H; Knave = Butler in the sign-off **M** (as FV-L16e: the
+  sender is R. O'Brien, operator at Butler's headquarters); "appear" a line indicator read plain; sly, furies, "Hendron" unread. **H 6 + M 1 of 7** stands.
+  Context on the same page (5816/1, holder transcription): Beckwith's message about "our other experiment" and ordnance stores the same day (the
+  powder-boat preparations of early Dec 1864); not used for any value.
+- **E446:** Knox Butler, Stephen In the, Banditti Baltimore: **H 3 of 3** stands; "Cherry" plain (Cherrystone), "Dunn" and "answer" plain, as FV-L16e.
+  Holder 11276 (W. A. Dunn writing from Baltimore, 26 Apr 1864) and Butler III p.499 (Butler to W. A. Dunn, Cherrystone, 9 Mar 1864) fit the reading.
+- **E448:** grapes Washington, brutus Secretary of War: **H 2 of 2** stands; "wharf", "board", "Bates" and the date-line "Washington" plain, as FV-L16e.
+  Both values are stated in clear in the companion 5793/2 on the same leaf (holder transcription: "the secret airy of war Edwin M S. left Washington at
+  noon today for City point on board the man hattan"): a C-strength check on both code words. Aside (not a reading change): key.md's introduction (l.18,
+  l.24) calls "Grapes" and "Growl" blind words of 9 columns, but its own table (l.373-374, p.14 l.25 L/R) gives both = Washington, which this entry and
+  the companion confirm; the prose is the error (a one-line lead for the next key.md edit).
+
+### 4. Classes (rule 10) and depth (rule 4a)
+FV-L16e kept E443 and E445 at "N3 (weak)" because "the 10 Oct ruling for mssEC 25 needs print, a clear copy at another pointer or a decipherment for N1".
+That ruling (`.claude/briefs/runs/2026-10-10-acct1-lane-ledger13-jobs.md` l.74-81) is a **filing** rule for readers (which rows go into ciphertext.txt,
+since step 0 cannot test this ledger); it does not set novelty classes. The class question is the D2V-E74 line this file has applied repeatedly (E74, E76,
+E81, E82, E86, E620; the N2-ID/N2-IG shape): when the holder's own public transcription carries the message's plain words and the key adds at most one
+body word (address, date, hour, signature and punctuation excluded), the plaintext is already public: N1, key `period`, `text: known`. The mssEC 25
+ruling's own premise ("on the Fort Monroe ledger the holder transcription of a row IS its cipher copy, mostly plain words") is the same fact. The same
+ruling's clause (iii) would also not have filed rows "too short for a clause above the authentication distance", which FV-L16e found all four to be (D1);
+they stay filed (a filing question for the orchestrator, not a class question).
+| ID | N | key | text | depth | basis |
+|---|---|---|---|---|---|
+| E443 | **N1** (lowered from N3) | period | known (holder transcription of 5785) | D1 (kept) | body public in the Huntington's transcription of pointer 5785 except one code word ("flora" = Newbern, with "N see" = N.C. in clear); the key adds the hour, "1", New York and Newbern |
+| E445 | **N1** (lowered from N3) | period | known (holder transcription of 5816) | D1 (kept) | body public in the transcription of pointer 5816 except one code word (whelp = tomorrow); the key adds the hour, Porter as addressee, tomorrow and the sign-off (M) |
+| E448 | **N1** (lowered from N3) | period | known (holder transcription of 5793) | D1 (kept) | body public in the transcription of pointer 5793 except two code words, and both (Washington, Secretary of War) are written in clear in the companion telegram 5793/2 on the same leaf, same date and sender: the whole plaintext is in the holder's public transcription of the leaf |
+| E446 | **N3** (kept, weak) | period | not known | D1 (kept) | three body code words carry who asks (Butler) and where Dunn was employed (in the ... Baltimore); not located after FV-L16e and s.2; Butler III p.499 (Butler to W. A. Dunn, 9 Mar 1864) and holder 11276 are context, not this telegram |
+- **Not N4 (E446):** NARA RG 107 unread; Google Books unreachable (429) this session; JSTOR rows queued; OR read in OCR.
+- **Safe sentences.** E443 (N1): "Fort Monroe's 1 Oct 1864 telegram to Surgeon Charles McDougall through John Horner at New York, that yellow fever was
+  prevailing to a considerable extent at Newbern, N.C., is in plain words in the Huntington's public transcription of the ledger (mssEC 25 p.241); the
+  period key adds the hour (11 AM), Monroe, New York and the town, Newbern." E445 (N1): "The 6 Dec 1864 6 PM telegram from Butler's headquarters to
+  Admiral Porter through Fort Monroe, that a Mr Baird would arrive the next morning and should be sent on with his instruments, is in plain words in the
+  Huntington's public transcription (mssEC 25 p.272); the period key adds the hour, Porter and 'tomorrow'." E448 (N1): "Eckert's 15 Oct 1864 telegram
+  telling Dealy at Fort Monroe to be at the wharf when the Manhattan arrived with the Secretary of War, and not to mention his coming, is in plain words in
+  the Huntington's public transcription (mssEC 25 p.249) but for Washington and the Secretary of War, which the next telegram on the same page states in
+  clear." E446 (N3): FV-L16e's stands, with the search tail "... the Huntington's full-text search and Butler's correspondence vols. III-V (searched 10-11
+  Oct 2026)".
+- **Unsafe:** any "first", "new", "unpublished", "unread" for any of the four; N3 wording for E443, E445 or E448; "the operator at Cherrystone was W. A.
+  Dunn" as the telegram's answer (E446 asks; the answer is not read); "Mr Baird was a torpedo/powder-boat expert" (no source read says so).
+
+### 5. Item 5: E550's per-row line
+FM65-D's per-row line for E550 (NOTES "## FM65-D", l.6566: "| 5897/0 | **E550** | not located; no clear copy |") is wrong on the clear copy, and FM-S65B's
+gap (NOTES l.6954) is right: the Huntington's transcription of **pointer 8561 (Page 83)**, as fetched by FV-L15m (`fortmonroe/fvl15m_hdl.out`, "## 8561
+title='Page 83'"), carries "710 pm 2d Ft Monroe Feb 2 1865 Capt Blodgett a Q m Annapolis ---- Please inform Gen Schofield should he arrive in annapolis
+tonight that I will be at Annapolis to morrow Fryday morning with important dispatches for him from Gen Sherman J. F Anderson Major & A. D. C.", which is
+E550's leaf text (`sources/fortmonroe/p5897.json`, row 0: "Blodget a vinton anna police zebra Please inform Kitten should he arrive in An apple is tonight
+that I wilby at ditto ditto ditto whelp Fry day morning with important despatches for him from Knapsack yoke Jay F Anderson") word for word; the same page
+8561 also holds the clear copy of 5896/1 (Anderson to Schofield, 4 PM), as FM-S65B found. Per-row line, corrected: **E550 (5897/0): holder clear copy
+8561 (Page 83), word for word; not located in print; N1 (FV-L15m s.4 table, l.18710) -- FM65-D's "no clear copy" superseded.** The NOTES row is annotated
+to point here; the FM-S65B gap is closed by this line.
+
+### 6. Postmortem and propagation
+- FV-L16e's error: a filing ruling read as a novelty rule, so two rows it judged "N1 on the D2V-E74 line" stayed N3 "weak", and E448's companion (which it
+  found and quoted) was not applied to the class. Lesson: on a ledger whose rows are mostly plain words, ask the D2V-E74 question for every row before
+  writing N3, and count a same-leaf companion that states the code words in clear as part of the holder's public text.
+- This job's own fault: the Google Books script did not stop at its first 429 (12 calls at 1.7 s); the one retry was a single call.
+- Propagated: status.json results[401]-[404] -> audit_status "two audits", audit_refs + this section; E443, E445, E448 -> grade/plaintext_novelty/
+  mapping_novelty N1, `text: known`, line = safe sentence, gap; E446 gap updated; depth unchanged (D1, `tools/depth_check.py` run after).
+  SECOND-OPINIONS-QUEUE.tsv: SO-ECKERT-E443, -E445, -E448 **withdrawn (N1)**; SO-ECKERT-E446 kept queued (class unchanged; reading unchanged, so its
+  prompt needs no correction). For a FIX job (not applied here; reading.md is decode.py output): the E443, E445, E448 headers' "N3 weak" -> "N1 (body in
+  the holder transcription)"; FV-L16e's s.5 fixes otherwise stand.
+- Requests: hdl.huntington.org 19 (18 CISOSEARCHALL + control, all 200, 3.2 s apart); www.googleapis.com 13 (all 429); be-api.us.archive.org 16 (1.8 s,
+  no errors; IA take/release in ROOM.md); api.openalex.org 5, api.semanticscholar.org 3 (one 429, stopped), api.core.ac.uk 5.
+For LANE DEFAULT-A1-0540 (account 1).

@@ -6563,7 +6563,7 @@ Fifteen 1865 Fort Monroe rows (Huntington object 5952 = mssEC 25), pointers 5879
 | 5891/1 | no | **plain**: 41 tokens, 2 H ('Cipher', 'Today'), the whole message is plain English (Baldwin to Eckert, 'very sorry I missed train by forgetting cipher book ... too many pupils about office'); no code word to read, held under (iii) |
 | 5895/2 | **E548** | not located; no clear copy; short (7 H) |
 | 5896/2 | **E549** | not located; no clear copy |
-| 5897/0 | **E550** | not located; no clear copy |
+| 5897/0 | **E550** | not located; no clear copy (superseded: holder clear copy 8561, Page 83, word for word -- CLEAR-SWEEP / FV-L15m; AUDIT "## AUDIT 2 (second adversarial, AUD2-FM16e)" s.5, 11 Oct 2026) |
 | 5861/2 second message | **E521** | not located in print; no clear copy (FM65-B's decode of the second message; the first message is the clear copy 8508 and stays unfiled); 4 H tokens in the second message, the clause is short, graded M as a clause |
 
 **Print check, with what I rejected.** Phrase grep over 177 cached volumes (`fm65d_printcheck.out`): one generic hit, 'prepare accordingly' (OR I/42 pt 3, I/45 pt 2 and a Bodleian calendar, a phrase in many volumes, rejected) and 'keep me posted' (many volumes, generic, rejected). Loose co-occurrence (`fm65d_cooc.out`): 5 hits for 'Ord absent several days' / 'Ord take charge headquarters' read in context and rejected (OR I/33 Kilpatrick's 1864 move, OR 41 pt 4 Minnesota troops, OR 43 pt 1 Logan's corps, Baker's detective history, other generic hits), and ORN 'Saugus Monroe Fox' (a Fox telegram on monitors for the Gulf, unrelated). IA be-api whole-collection, three scripts (`fm65d_beapi.py` 20 queries, `fm65d_beapi2.py` 16, `fm65d_beapi3.py` 6, plus `fm65d_beapi4.out` 2 and the control): the **positive control** (quoted OR I/47 pt 2 sentence 'report in person to General Sherman at Savannah' McCallum Townsend) returned 7 hits (`fm65d_beapi_ctl.out`); per-volume queries with identifier returned 0 even for the control, so only the whole-collection queries count. Hits and rejections: 'Fort Fisher is ours' (10 newspaper hits, Porter's dispatch to Welles, 18-21 Jan 1865, rejected: different text); 'until Mr. Blair arrives' (O'Brien's book, a paraphrase, used as context); 'ordered to Portsmouth, New Hampshire, do not wish to go' (Covode investigation, 1860, rejected); 'one battery with each division' (1857-1862 regimental histories, rejected); 'cipher operator Stager Schofield construction corps' (Bates and O'Brien telegraph books, other passages, rejected); 'Annapolis Schofield Sherman' (Bates/Lincoln telegraph books, April 1865 Annapolis trip, rejected); 'Cassandria El Cid Ranger' (dog-show registers, rejected); the rest returned 0 or index entries only. 'take charge of army operations' returned one 1930 periodical, rejected.
@@ -6946,12 +6946,11 @@ IDs E589-E594 used; E595-E599 unused.
 **Requests.** hdl.huntington.org about 30 (25 CISOSEARCHALL + control 9678 hit, 1 dmGetItemInfo 8561, one connection drop on 5941/2a retried once by the script, the last four queries re-run in a second batch), 3.3 s apart; googleapis 5 answered of 26 sent (21 HTTP 503, 2 HTTP 429), stopped; be-api 22 requests with 8 HTTP 502, one retry round (3 more 502), stopped; archive.org none (all cached).
 
 ## Remaining gaps (FM-S65B, 10 Oct 2026)
-Read so far: 11 rows examined; 6 filed (E589-E594), 1 clear copy and in print (5896/1), 1 in print (5914/2), 2 plain (5893/1, 5928/2), 1 too short (5942/1).
+Read so far: 11 rows examined; 6 filed (E589-E594), 1 clear copy and in print (5896/1), 1 in print (5914/2), 2 plain (5893/1, 5928/2), 1 too short (5942/1). The E550 gap (clear copy 8561 missed by FM65-D) is closed: per-row line corrected in AUDIT "## AUDIT 2 (second adversarial, AUD2-FM16e)" s.5 (11 Oct 2026).
 - Whole-collection be-api phrase checks for E590 (Seward), E592 (Cammann), E593 (ponchos) - blocker: not-attempted; be-api answered HTTP 502 twice; next: one 3-query pass when be-api answers, ~$0.05
 - Grant Papers vol. 14 snippet sweep for E589, E591, E593, E594 and the page of the 5914/2 hit - blocker: not-attempted; googleapis answered 503/429 on 10 Oct; next: retry later under a googleapis take, ~$0.1
 - Sherman's family letters (Thorndike 1894) for E594 and Grant Papers vol. 14 p. for 27 Mar 1865 - blocker: not-attempted; not opened this session, budget spent on holder and print passes; next: one IA full-text check of `shermanletterscor00sher`-type id after a title-page check, ~$0.1
 - Image check of pages 348, 352, 364, 366, 392, 397 - blocker: not-attempted; text only, no image fetched; next: one 2400 px look per page under the hdl token, ~$0.9
-- E550 (5897/0): its clear copy is 8561, which FM65-D did not find - blocker: not-attempted; outside this brief (a verifier's correction of E550's per-row line); next: one line in AUDIT for E550, ~$0.05
 
 ## Escalation (FM-S65B, 10 Oct 2026)
 - [x] siblings: 5896/1 and 5897/0 share the clear copy 8561; 5908/0 follows the 24 Jan torpedo chain (E539, E541) and Radford's 14 Feb requisition.
@@ -6961,7 +6960,7 @@ Read so far: 11 rows examined; 6 filed (E589-E594), 1 clear copy and in print (5
 - [n/a] key-rebuild: no key row edited.
 - [ ] image-check: no image read.
 - [x] retry: 502/503/429 retried once per rule, then stopped.
-Verdict: keep going: 5 internal gaps; cheapest next: the three-query be-api pass, ~$0.05
+Verdict: keep going: 4 internal gaps; cheapest next: the three-query be-api pass, ~$0.05
 
 ## FIX-L17b (10 Oct 2026, account 1, for LANE LEDGER-17)
 

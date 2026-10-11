@@ -1,0 +1,15 @@
+CTRL | "meet you and the admiral there" Butler Grant | ERR HTTP Error 429: Too Many Requests
+E443 | "prevailing to considerable extent" "yellow fever" 1864 | ERR HTTP Error 429: Too Many Requests
+E443 | "thought best to notify you at once" yellow fever | ERR HTTP Error 429: Too Many Requests
+E443 | McDougall "medical director" "yellow fever" "New Berne" October 1864 | ERR HTTP Error 429: Too Many Requests
+E445 | "have him sent here with his instruments" | ERR HTTP Error 429: Too Many Requests
+E445 | Baird Porter Butler instruments torpedo December 1864 "Fort Monroe" | ERR HTTP Error 429: Too Many Requests
+E446 | "formerly employed in the American" telegraph Baltimore Dunn | ERR HTTP Error 429: Too Many Requests
+E446 | "Dunn" Cherrystone Butler March 1864 operator Titan | ERR HTTP Error 429: Too Many Requests
+E446 | intitle:"Private and Official Correspondence" Butler Cherrystone Dunn | ERR HTTP Error 429: Too Many Requests
+E448 | "be at the wharf when the Manhattan" | ERR HTTP Error 429: Too Many Requests
+E448 | Stanton Manhattan "City Point" "October 15, 1864" Eckert | ERR HTTP Error 429: Too Many Requests
+E448 | intitle:"Papers of Ulysses S. Grant" Stanton Manhattan "City Point" October 1864 | ERR HTTP Error 429: Too Many Requests
+requests 12
+--- retry (one), control first
+CTRL | "meet you and the admiral there" Butler Grant | ERR HTTP Error 429: Too Many Requests -- stopped

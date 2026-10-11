@@ -1,0 +1,44 @@
+== 5785;date=1864-10-01;sender=Sheldon;recipient=Horner
+prior_work eckert-1864 item adhoc-be1877 (shelfmark=Huntington mssEC 25; folio=5785; date=1864-10-01) step second-audit @ origin/main 6262d9918 (2026-10-11T06:00)
+  plaintext CLEAR         3-tomokiyo    [adhoc-be1877:3-tomokiyo:80d907] cached mirror (sources/cryptiana/web, snapshot 19 Sept 2026) names no folio of this unit; terms ['25', '1864']
+  plaintext UNCHECKED-NET 3-solver      [adhoc-be1877:3-solver:c79056] unsolved-ciphers (github.com/aaymeloglu/unsolved-ciphers): no cache on disk, not searched; pass --clone <local clone> to search it
+  plaintext CLEAR         3-solver      [adhoc-be1877:3-solver:a7793a] no cached solver file names this unit: sources/cyphersolver, sources/cyphersolver-site, sources/bourdeau
+  plaintext UNCHECKED-NET 4-editions    [adhoc-be1877:4-editions:95e0f9] not on disk (warofrebellion014702rootrich); --network fetches the djvu text
+  plaintext CLEAR         4-editions    [adhoc-be1877:4-editions:f96526] date +-1 day and both correspondents searched, control hit, no window: warofrebellion321unit warofrebellion322unit warofrebellion323unit warofrebellion33unit warofrebellion013401rootrich warofrebellio
+  holds: specific 0 (none); generic 2 (UNCHECKED-NET 2)
+  verdict plaintext: UNCHECKED-NET
+exit 0: proceed on the residue: whole item (no KNOWN-PART scope)
+exit 0
+== 5816;date=1864-12-06;sender=OBrien;recipient=Porter
+prior_work eckert-1864 item adhoc-8f0177 (shelfmark=Huntington mssEC 25; folio=5816; date=1864-12-06) step second-audit @ origin/main 6262d9918 (2026-10-11T06:00)
+  plaintext CLEAR         3-tomokiyo    [adhoc-8f0177:3-tomokiyo:80d907] cached mirror (sources/cryptiana/web, snapshot 19 Sept 2026) names no folio of this unit; terms ['25', '1864']
+  plaintext UNCHECKED-NET 3-solver      [adhoc-8f0177:3-solver:c79056] unsolved-ciphers (github.com/aaymeloglu/unsolved-ciphers): no cache on disk, not searched; pass --clone <local clone> to search it
+  plaintext CLEAR         3-solver      [adhoc-8f0177:3-solver:a7793a] no cached solver file names this unit: sources/cyphersolver, sources/cyphersolver-site, sources/bourdeau
+  plaintext UNCHECKED-NET 4-editions    [adhoc-8f0177:4-editions:95e0f9] not on disk (warofrebellion014702rootrich); --network fetches the djvu text
+  plaintext CLEAR         4-editions    [adhoc-8f0177:4-editions:f96526] date +-1 day and both correspondents searched, control hit, no window: warofrebellion321unit warofrebellion322unit warofrebellion323unit warofrebellion33unit warofrebellion013401rootrich warofrebellio
+  holds: specific 0 (none); generic 2 (UNCHECKED-NET 2)
+  verdict plaintext: UNCHECKED-NET
+exit 0: proceed on the residue: whole item (no KNOWN-PART scope)
+exit 0
+== 5583;date=1864-03-12;sender=Sheldon;recipient=Eckert
+prior_work eckert-1864 item adhoc-dc4ef6 (shelfmark=Huntington mssEC 25; folio=5583; date=1864-03-12) step second-audit @ origin/main 6262d9918 (2026-10-11T06:00)
+  plaintext CLEAR         3-tomokiyo    [adhoc-dc4ef6:3-tomokiyo:80d907] cached mirror (sources/cryptiana/web, snapshot 19 Sept 2026) names no folio of this unit; terms ['25', '1864']
+  plaintext UNCHECKED-NET 3-solver      [adhoc-dc4ef6:3-solver:c79056] unsolved-ciphers (github.com/aaymeloglu/unsolved-ciphers): no cache on disk, not searched; pass --clone <local clone> to search it
+  plaintext CLEAR         3-solver      [adhoc-dc4ef6:3-solver:a7793a] no cached solver file names this unit: sources/cyphersolver, sources/cyphersolver-site, sources/bourdeau
+  plaintext UNCHECKED-NET 4-editions    [adhoc-dc4ef6:4-editions:95e0f9] not on disk (warofrebellion014702rootrich); --network fetches the djvu text
+  plaintext CLEAR         4-editions    [adhoc-dc4ef6:4-editions:f96526] date +-1 day and both correspondents searched, control hit, no window: warofrebellion321unit warofrebellion322unit warofrebellion323unit warofrebellion33unit warofrebellion013401rootrich warofrebellio
+  holds: specific 0 (none); generic 2 (UNCHECKED-NET 2)
+  verdict plaintext: UNCHECKED-NET
+exit 0: proceed on the residue: whole item (no KNOWN-PART scope)
+exit 0
+== 5793;date=1864-10-15;sender=Eckert;recipient=Dealy
+prior_work eckert-1864 item adhoc-a96fdc (shelfmark=Huntington mssEC 25; folio=5793; date=1864-10-15) step second-audit @ origin/main 6262d9918 (2026-10-11T06:00)
+  plaintext CLEAR         3-tomokiyo    [adhoc-a96fdc:3-tomokiyo:80d907] cached mirror (sources/cryptiana/web, snapshot 19 Sept 2026) names no folio of this unit; terms ['25', '1864']
+  plaintext UNCHECKED-NET 3-solver      [adhoc-a96fdc:3-solver:c79056] unsolved-ciphers (github.com/aaymeloglu/unsolved-ciphers): no cache on disk, not searched; pass --clone <local clone> to search it
+  plaintext CLEAR         3-solver      [adhoc-a96fdc:3-solver:a7793a] no cached solver file names this unit: sources/cyphersolver, sources/cyphersolver-site, sources/bourdeau
+  plaintext UNCHECKED-NET 4-editions    [adhoc-a96fdc:4-editions:95e0f9] not on disk (warofrebellion014702rootrich); --network fetches the djvu text
+  plaintext CLEAR         4-editions    [adhoc-a96fdc:4-editions:f96526] date +-1 day and both correspondents searched, control hit, no window: warofrebellion321unit warofrebellion322unit warofrebellion323unit warofrebellion33unit warofrebellion013401rootrich warofrebellio
+  holds: specific 0 (none); generic 2 (UNCHECKED-NET 2)
+  verdict plaintext: UNCHECKED-NET
+exit 0: proceed on the residue: whole item (no KNOWN-PART scope)
+exit 0

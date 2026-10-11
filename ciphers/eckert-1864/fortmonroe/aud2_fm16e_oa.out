@@ -1,0 +1,64 @@
+openalex | yellow fever New Berne 1864 epidemic | total 37
+     SARS-CoV-2: Structure, Biology, and Structure-Based Therapeutics Development 2020
+     Recombination, Reservoirs, and the Modular Spike: Mechanisms of Coronavirus Cross-Species Transmission 2009
+     Notes 2020
+     In situ cryo-electron tomography of SARS-CoV-2 replication pore complex and virus assembly 2026
+     Souvenir Cinchona tercentenary celebration and exhibition at the Wellcome Historical Medical Museum ... London 1930
+openalex | Fort Monroe military telegraph 1864 cipher operators | total 4
+     Personal memoirs of U.S. Grant 1885
+     Edwin M Stanton And The Lincoln Assassination 1986
+     Des Moines M. E. Conference Growth 1944
+     The assassination of Abraham Lincoln and its expiation 1909
+openalex | Cherrystone telegraph cable Chesapeake 1864 | total 1
+     The Eastern Shore of Virginia in the Civil War 2006
+openalex | Stanton City Point visit October 1864 Manhattan | total 78
+     XXIV. His Noblest Strain 1864 2020
+     Defense of the Kansas frontier against Indians and outlaws 1864-1869 1932
+     Botanizing in the Mushroom Cities 2012
+     Trinity College Alumni News, October 1946 1946
+     The urban pulpit : evangelicals and the city in New york, 1880-1930 2011
+openalex | Butler Porter December 1864 powder boat Fort Fisher telegraph | total 12
+     Miserable business of war afloat : the August 1864 cruise of the CSS Tallahassee 2009
+     A Peculiar Service: The Chronological Exploits and Evolving Nature of the Confederate States Marine Corps 2019
+     Administration of the Atlantic Blockade 1861-1865 1967
+     The Eastern Shore of Virginia in the Civil War 2006
+     A Mainer From Rockland: Adelbert Ames in the Civil War 2015
+s2 | yellow fever New Berne 1864 epidemic | total 709
+     Epidemic Outbreaks Related to Yellow Fever Viruses. 2025
+     Phylogenetic analysis reveals a new introduction of Yellow Fever virus in São Paulo State, Brazil, 2023. 2023
+     Re‐emergent yellow fever: new faces of an old killer 2019
+     Fast surveillance response reveals the introduction of a new yellow fever virus sub-lineage in 2021, in Minas  2022
+     A Yellow Fever Epidemic: A New Global Health Emergency? 2016
+s2 | Fort Monroe military telegraph 1864 cipher operators | total 0
+s2 | Cherrystone telegraph cable Chesapeake 1864 | ERR HTTP Error 429: 
+core | yellow fever New Berne 1864 epidemic | total 19132299
+     Yellow fever outbreak, Imatong, southern Sudan. 2004
+     For benefit of yellow fever sufferers ... 1878
+     Rate of inter-herd transmission of classical swine fever virus by different types of contact during the 1997-8 2002
+     Modelling the control strategies against dengue in Singapore. 2007
+     United States Designated Yellow Fever Vaccination Centers None
+core | Fort Monroe military telegraph 1864 cipher operators | total 2356924
+     James Monroe Jr., Fort Wachita, to his uncle James Monroe, New York, N.Y., 30 March 1843. 1843
+     John Monroe to James Monroe, April 28, 1805 1805
+     Telegraph, 1864-04-06 1864
+     Telegraph, 1864-11-30 1864
+     Telegraph, 1864-09-07 1864
+core | Cherrystone telegraph cable Chesapeake 1864 | total 375923
+     [Postal Telegraph-Cable Company billing to T. N. Carswell] 1943
+     Telegraph, 1864-04-06 1864
+     Telegraph, 1864-11-30 1864
+     Telegraph, 1864-09-07 1864
+     Telegraph, 1864-02-10 1864
+core | Stanton City Point visit October 1864 Manhattan | total 9498058
+     'A record of achievement'' : October 1920 : Manhattan-Texas Petroleum Co... 1920
+     Russell K. Stanton Letter - October 23, 1864 1864
+     Russell K. Stanton Letter - October 23, 1864 1864
+     Letter (copy): Stanton to J.M. Ashley 2012
+     Records and constitution of the Boston Association, Apr. 3 1855 to June 29th 1855, and also of the Manhattan T 1855
+core | Butler Porter December 1864 powder boat Fort Fisher telegraph | total 3600062
+     The Failed Powder Boat Explosion During the First Attack on Fort Fisher in December 1864. 2020
+     Telegraph, 1864-04-06 1864
+     Telegraph, 1864-11-30 1864
+     Telegraph, 1864-09-07 1864
+     Telegraph, 1864-02-10 1864
+requests {'openalex': 5, 's2': 3, 'core': 5}
