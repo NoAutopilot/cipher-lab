@@ -3855,7 +3855,7 @@ Read so far: Bamfylde p.160 run, letter codes C 22, M 2 (30, 94), U 0; 937 C, 74
 - [x] retry: Google Books 503 retried once after a pause, then stopped
 Verdict: keep going: 8 internal gaps; cheapest next: identify Nijhoff Bijdragen X among the IA bijdragenvoorva* scans (title-page read), ~$0.4
 
-## THUR-NIJ (LANE DEFAULT-A1-1840, account 1, worker Opus 5.5, 11 Oct 2026 19:05-19:2x UTC by date -u)
+## THUR-NIJ (LANE DEFAULT-A1-1840, account 1, worker Opus 5.5, 11 Oct 2026 19:05-19:17 UTC by date -u)
 Brief: .claude/briefs/runs/2026-10-11-acct1-default-1840-jobs.md "### THUR-NIJ". Question: three text/image-route gaps left by THUR-REST: (1) Nijhoff's *Bijdragen* X p.291 among the IA scans; (2) a Van Sypesteyn p.213 image check of the p.351 numerals; (3) one image check of a glossed Bamfylde run for Tomokiyo's 94 = t.
 **Prior work.** `prior_work.py thurloe-printed --item-spec 'shelfmark=Birch 1742 vol 1 p.340;sender=Beverning;recipient=De Witt;date=1653-07-18' --step-type lookup`: exit 4 (LEAD 1-own = this job's own claim; LEAD 4-editions = Birch itself; UNCHECKED tomokiyo, solver x2, Birch window); all six answered with `--record` (CONTEXT/CLEAR, prior-work.tsv). By hand: own work since THUR-REST: none (ROOM read 19:0x UTC).
 **Route and counts.** archive.org 11 requests (advancedsearch 1; djvu text 5: bijdragenvoorva09/10/15/05japigoog, geschiedkundige00sypegoog; metadata 1; `_page_numbers.json` 1, a 404; page images 3: Van Sypesteyn n221 (orientation), n227, n228; vol 5 n505 1); iiif.archive.org 1 (404); be-api.us.archive.org 24 (fts). All other answers were 200. Take and release lines are in ROOM. Image sha1 (first 12): n227 454497e35434, n228 e8a1699e8013.
