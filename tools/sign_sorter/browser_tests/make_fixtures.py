@@ -10,7 +10,13 @@ tools/sorter_recut.py into deskewed strips r_L01-r_L03, built with --region, for
 Template 2026-10-09.1: plain, refs and cluster are built with --no-focus-to-tray (the in-pile layout the older tests drive);
 OUT_DIR/tray.html is plain on the default (the focus tiles start in the "Taken out" tray), for test_focus_tray.js, with tray_rank.html
 (a "Most useful first" box with tiles of its own), tray_rank_in.html (a rank box that only repeats the focus tiles) and cluster_tray.html
-(--auto-clusters on the default) and tray_key.html (the default plus --key box: the box-check key, template 2026-10-09.6)."""
+(--auto-clusters on the default) and tray_key.html (the default plus --key box: the box-check key, template 2026-10-09.6).
+Owner rule R09 (11 Oct 2026, the card's "look around"): OUT_DIR/lines.html, five overlapping line crops t_L01..t_L05 of one synthetic
+page and no region, so the card's "Line strips" view has lines above and below and further lines (n-2, n+2) to slide up and down to;
+the lines are 2400 px long, so the window slides along them even at zoom 3 on a desk (test_pan.js); test_wheel.js (owner rule R10) zooms
+on lines.html, region.html and plain.html.
+OUT_DIR/family.html and family_plain.html (owner rule R11, 11 Oct 2026): the same tiles in two families,
+one with two piles, on the tray default and with --no-focus-to-tray, for test_family_nav.js."""
 import subprocess, sys
 from pathlib import Path
 from PIL import Image, ImageDraw
@@ -50,6 +56,14 @@ subprocess.run(base + ['--rank', str(out / 'rank.tsv'), '--out', str(out / 'tray
 subprocess.run(base + ['--rank', str(out / 'rank_in.tsv'), '--out', str(out / 'tray_rank_in.html')], check=True)   # tray: the rank box is not shown
 subprocess.run(base + ['--auto-clusters', '2', '--out', str(out / 'cluster_tray.html')], check=True)   # tray + provisional shape groups (cluster offer)
 subprocess.run(base + ['--key', 'box', '--out', str(out / 'tray_key.html')], check=True)   # tray + the box-check key (template 2026-10-09.6, test_s2_fix.js)
+# family.html / family_plain.html (owner rule R11, 11 Oct 2026: the sign card walks the family): the same tiles in exactly two families,
+# family X with two piles (X, X-DOT) and family Y with one (Y, holding the Y and Z shapes); family.html on the default (questions wait in
+# the tray and are drawn in their piles), family_plain.html with --no-focus-to-tray. test_family_nav.js sets tiles aside itself (db moves).
+remap = {'X': ('X', 'X'), 'X-DOT': ('X-DOT', 'X'), 'Y': ('Y', 'Y'), 'Z': ('Y', 'Y')}
+(out / 'labels_family.tsv').write_text('\n'.join(labels[:1] + ['%s\t%s\t%s' % ((r.split('\t')[0],) + remap[r.split('\t')[1]]) for r in labels[1:]]) + '\n')
+fam = [a if a != str(out / 'labels.tsv') else str(out / 'labels_family.tsv') for a in base]
+subprocess.run(fam + ['--out', str(out / 'family.html')], check=True)
+subprocess.run(fam + ['--no-focus-to-tray', '--out', str(out / 'family_plain.html')], check=True)
 
 # region.html (SORTER-PAGEVIEW, 4 Oct 2026): three sloped lines on one region image, recut into deskewed strips, "Whole page" view
 sys.path.insert(0, str(ROOT / 'tools')); import numpy as np, sorter_recut as sr
@@ -68,3 +82,22 @@ sr.run(np.array(reg), traces, ['r_L01', 'r_L02', 'r_L03'], cols, cents, rd, rd /
 subprocess.run([sys.executable, str(ROOT / 'tools' / 'sign_sorter.py'), '--signs', str(rd / 'signs.tsv'), '--labels', str(rd / 'labels.tsv'),
                 '--pages', str(rd / 'pages'), '--region', str(rd / 'region.json'), '--title', 'Fixture region sorter', '--lede', 'Synthetic region.',
                 '--out', str(out / 'region.html')], check=True)
+
+# lines.html (owner rule R09, 11 Oct 2026): five line crops of one page, 170 px tall at a 100 px pitch (they overlap, as real line crops
+# do), 31 signs each, no region: the card's line-strip view with neighbour lines, and lines n-2 / n+2 beyond them for a slide up or down
+ld = out / 'lines'; (ld / 'pages').mkdir(parents=True, exist_ok=True)
+LW, LP, LH, NL = 2400, 100, 170, 5
+pg = Image.new('L', (LW, 2 * LH + LP * NL), 248); g = ImageDraw.Draw(pg)
+lrow = 'X Y Z X X-DOT Y X Z X Y X Z X Y X Z X Y X Z X Y X X Z Y X Z X Y Z'.split()
+lsigns, llabels = ['sid\tpage\tx\ty\tw\th'], ['sid\tsign\tfamily']
+for n in range(NL):
+    mid = LH + LP * n; top = mid - LH // 2; name = 't_L%02d' % (n + 1)
+    for i, sg in enumerate(lrow):
+        x = 40 + 76 * i; shapes[sg](g, x, mid - 15)
+        lsigns.append('%s_%02d\t%s\t%d\t%d\t21\t31' % (name, i + 1, name, x, LH // 2 - 15)); llabels.append('%s_%02d\t%s\t%s' % (name, i + 1, sg, 'Z' if sg == 'Z' else 'X'))
+    g.text((8 + 470 * n, mid + 30), 'line %d' % (n + 1), fill=60)
+for n in range(NL):
+    mid = LH + LP * n; pg.crop((0, mid - LH // 2, LW, mid - LH // 2 + LH)).save(ld / 'pages' / ('t_L%02d.png' % (n + 1)))
+(ld / 'signs.tsv').write_text('\n'.join(lsigns) + '\n'); (ld / 'labels.tsv').write_text('\n'.join(llabels) + '\n')
+subprocess.run([sys.executable, str(ROOT / 'tools' / 'sign_sorter.py'), '--signs', str(ld / 'signs.tsv'), '--labels', str(ld / 'labels.tsv'),
+                '--pages', str(ld / 'pages'), '--title', 'Fixture lines sorter', '--lede', 'Synthetic lines.', '--out', str(out / 'lines.html')], check=True)

@@ -198,5 +198,62 @@ with tempfile.TemporaryDirectory() as d:
     finally:
         pf.node_env, _sp.run = real_env, real_run
 
+    # check 7, pan (owner rule R09, 11 Oct 2026: slide the card's picture to look around): the wiring and the SKIP path, offline, as for
+    # check 6 (run_all.sh runs test_pan.js itself on the fixtures; `--probe PAGE` is what this check runs)
+    check('pan test file exists and run_all.sh runs it', os.path.exists(pf.PAN_JS) and
+          'test_pan.js' in (ROOT / 'tools' / 'sign_sorter' / 'browser_tests' / 'run_all.sh').read_text())
+    ok, ls = run(good, str(cl))
+    check('library call (the build): pan not run, says SKIP, listed as not checked, verdict stands',
+          ok and any(l.startswith('SKIP pan (not run by this call') for l in ls) and 'pan' in ls[-1].split('not checked')[-1])
+    ok, ls = pf.run(inputs=str(d), cipher_lines=str(cl), quiet=True, pan=True)
+    check('--inputs (no page): SKIP pan (text inputs, no page)', any(l.startswith('SKIP pan (text inputs') for l in ls))
+    real_env, real_run = pf.node_env, _sp.run
+    try:
+        pf.node_env = lambda: (None, 'no node on PATH')
+        g = pf.check_pan(good)
+        check('pan, no node/playwright: SKIP pan (no node/playwright: ...), never a pass', g[0] is None and g[1].startswith('SKIP pan (no node/playwright: no node on PATH)'))
+        buf = _io.StringIO()
+        with _cl.redirect_stdout(buf):
+            try: pf.main(['--pan', good]); code = 0
+            except SystemExit as e: code = e.code
+        check('--pan PAGE with no node/playwright: prints SKIP, exit 2', code == 2 and buf.getvalue().startswith('SKIP pan'))
+        seen = {}
+        def fake(out, rc):
+            def f(cmd, **kw):
+                seen['cmd'], seen['kw'] = cmd, kw; return _sp.CompletedProcess(cmd, rc, out, '')
+            return f
+        g = pf.check_pan(good, env={}, runner=fake('ok   pan: iPhone 13, a drag ...\nok   pan: "Back to the sign" puts the view back\nok   no page errors\nALL PASS\n', 0))
+        check('pan wiring: node runs test_pan.js --probe on the page, from browser_tests/ (mock_db.js beside it)',
+              seen['cmd'][1] == pf.PAN_JS and seen['cmd'][2] == '--probe' and seen['cmd'][3] == os.path.abspath(good) and seen['kw']['cwd'] == os.path.dirname(pf.PAN_JS))
+        check('pan wiring: all ok -> PASS with the count', g[0] is True and '3 checks' in g[1])
+        g = pf.check_pan(good, env={}, runner=fake('FAIL pan: iPhone 13, a drag 80 px left ... moves the view with the finger\nok   no page errors\n1 FAILED\n', 1))
+        check('pan wiring: a FAIL line -> FAIL, the failing line printed', g[0] is False and '1 of 2 checks FAIL' in g[1] and 'FAIL pan: iPhone 13, a drag 80 px left' in g[1])
+        check('pan wiring: a crash with no FAIL line is a FAIL', pf.check_pan(good, env={}, runner=fake('', 1))[0] is False)
+        check('pan wiring: exit 0 with no ok line is a FAIL', pf.check_pan(good, env={}, runner=fake('ALL PASS\n', 0))[0] is False)
+        def slow(cmd, **kw): raise _sp.TimeoutExpired(cmd, kw.get('timeout'))
+        check('pan wiring: a timeout is a FAIL', pf.check_pan(good, env={}, runner=slow)[0] is False)
+        pf.node_env = lambda: ({}, None)
+        _sp.run = fake('FAIL pan: iPhone 13, a drag ... moves the view with the finger\n1 FAILED\n', 1)
+        ok, ls = run(good, str(cl), pan=True)
+        check('run(pan=True): a pan FAIL fails the preflight, with the failing line', not ok and line(ls, 'pan').startswith('FAIL') and 'FAIL pan: iPhone 13' in line(ls, 'pan'))
+        _sp.run = fake('ok   a\nok   b\nALL PASS\n', 0)
+        buf = _io.StringIO()
+        with _cl.redirect_stdout(buf):
+            try: pf.main(['--pan', good]); code = 0
+            except SystemExit as e: code = e.code
+        check('--pan PAGE: PASS, exit 0', code == 0 and buf.getvalue().startswith('PASS pan'))
+        buf = _io.StringIO()
+        with _cl.redirect_stdout(buf):
+            try: pf.main([good, '--cipher-lines', str(cl)]); code = 0
+            except SystemExit as e: code = e.code
+        check('CLI full run: pan run by default (PASS line), verdict PASS', code == 0 and 'PASS pan:' in buf.getvalue())
+        buf = _io.StringIO()
+        with _cl.redirect_stdout(buf):
+            try: pf.main([good, '--cipher-lines', str(cl), '--no-pan']); code = 0
+            except SystemExit as e: code = e.code
+        check('CLI --no-pan: says SKIP and lists it as not checked', code == 0 and 'SKIP pan (not run' in buf.getvalue() and 'not checked: pan' in buf.getvalue())
+    finally:
+        pf.node_env, _sp.run = real_env, real_run
+
 print('ALL PASS' if not fails else f'{fails} FAILED')
 sys.exit(1 if fails else 0)

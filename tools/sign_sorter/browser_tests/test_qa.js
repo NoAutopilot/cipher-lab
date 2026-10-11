@@ -113,13 +113,13 @@ const workPile = page => page.evaluate(() => basePiles.map(p => p.id).filter(id 
     ok(tag + ': holding a sign opens the larger view on it', await page.isVisible('#ctx') && (await page.textContent('#ctxT')).includes(hs), await page.textContent('#ctxT'));
     ok(tag + ': ...and does not take it out', await page.evaluate(s => moves[s], hs) === undefined);
     ok(tag + ': ...and no browser menu pops up', (await page.evaluate(() => window.__cm)).every(Boolean), JSON.stringify(await page.evaluate(() => window.__cm)));
-    ok(tag + ': ...stepping through that pile', /in this pile/.test(await page.textContent('#ctxPos')));
+    ok(tag + ': ...stepping through its family (owner rule R11)', /^\d+ of \d+ in (family|value) /.test(await page.textContent('#ctxPos')), await page.textContent('#ctxPos'));
     await page.click('#ctxClose');
     await el.locator('.ph .big').click(); ok(tag + ': "View larger" on a pile opens it too', await page.isVisible('#ctx')); await page.click('#ctxClose');
     // 4. decisions in the larger view, walking a list of 7+ tiles (the focus list if long enough, else the biggest pile)
     const fromFocus = F.length >= 7;
     if (fromFocus) await mock.hold(page, page.locator('#focusTiles .t').nth(0)); else await el.locator('.ph .big').click();
-    const L = await page.evaluate(() => ctxList.slice());
+    const L = await page.evaluate(() => ctxList.slice(Math.max(0, ctxList.indexOf(ctxSid))));   // from the sign shown (a family walk can start mid-list)
     ok(tag + ': a list of 7+ tiles to walk (' + (fromFocus ? 'focus' : 'pile ' + pid) + ')', L.length >= 7, L.length);
     const dest = await page.evaluate(() => document.getElementById('ctxDest').options[1].value);
     const cntBefore = await page.evaluate(d => membersOf(d).length, dest);
