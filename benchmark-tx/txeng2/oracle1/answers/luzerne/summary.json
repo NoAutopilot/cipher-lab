@@ -1,10 +1,10 @@
 {
  "tiles": 445,
  "by_status": {
-  "kept": 419,
+  "kept": 413,
   "moved": 0,
   "merged": 0,
-  "not-letter": 25,
+  "not-letter": 31,
   "aside": 0,
   "bad-cut": 1
  },

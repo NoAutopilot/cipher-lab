@@ -109,8 +109,8 @@ p1_L03_b038	sign box	sign box	kept	blind
 p1_L03_b039	sign box	sign box	kept	blind
 p1_L03_b040	sign box	sign box	kept	blind
 p1_L03_b041	sign box	sign box	kept	blind
-p1_L03_b042	mark box	mark box	kept	blind
-p1_L03_b043	mark box	mark box	kept	blind
+p1_L03_b042	mark box	NOT-LETTER	not-letter	blind
+p1_L03_b043	mark box	NOT-LETTER	not-letter	blind
 p1_L04_b001	sign box	sign box	kept	blind
 p1_L04_b002	sign box	sign box	kept	blind
 p1_L04_b003	sign box	sign box	kept	blind
@@ -150,10 +150,10 @@ p1_L04_b037	sign box	sign box	kept	blind
 p1_L04_b038	sign box	sign box	kept	blind
 p1_L04_b039	sign box	sign box	kept	blind
 p1_L04_b040	sign box	sign box	kept	blind
-p1_L04_b041	mark box	mark box	kept	blind
-p1_L04_b042	mark box	mark box	kept	blind
-p1_L04_b043	mark box	mark box	kept	blind
-p1_L04_b044	mark box	mark box	kept	blind
+p1_L04_b041	mark box	NOT-LETTER	not-letter	blind
+p1_L04_b042	mark box	NOT-LETTER	not-letter	blind
+p1_L04_b043	mark box	NOT-LETTER	not-letter	blind
+p1_L04_b044	mark box	NOT-LETTER	not-letter	blind
 p1_L05_b001	sign box	sign box	kept	blind
 p1_L05_b002	sign box	sign box	kept	blind
 p1_L05_b003	sign box	sign box	kept	blind

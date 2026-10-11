@@ -7,12 +7,19 @@ rule R05 and a step-2 "Fix the cut" button added; see LOCAL-QUEUE L74). Owner's 
 Blind: the page shows boxes only, no value, label or machine guess; nothing here was read by a model.
 
 ## What was answered
-- The 83 boxes the build flagged (focus.tsv, step 2, one at a time): all 83 answered, none left.
+- (First read.) The 83 boxes the build flagged (focus.tsv, step 2, one at a time): all 83 answered, none left.
   57 kept in "sign box" (25 of them with the box re-cut first), 25 trashed as not a sign (NOT-LETTER), 1 marked bad cut.
   No split and no added box (db collections `added` and `clusters` empty).
 - The other 362 boxes (not flagged) carry no answer of their own: the apply tool counts them "kept" because they stayed in
   their pile. Whether the owner looked them over in step 1 is asked of him (10 Oct 18:0x UTC); until he says so, treat them
   as machine boxes not individually confirmed (ORACLE-LOCATION-1 wants every line checked by a person).
+
+## Second pass: the 6 possible shadows (read 11 Oct 2026 00:0x UTC)
+After the first read, 6 more boxes were added to step 2 as "Possible shadow ... A sign, or Trash?" (p1_L03_b042-b043,
+p1_L04_b041-b044; see ../shadow/README.md). Owner's word: "Oracle boxes (luzerne): verify the cuts - done". Re-read the same
+database: all 6 trashed (NOT-LETTER, saved 10 Oct 2026 23:56:20-23:56:25 UTC); nothing else changed (checked 57, recuts 25,
+moves 26 -> 32). `db/`, `settled.tsv` and `summary.json` are regenerated from this read with the same command below.
+Totals now: 89 boxes answered, 57 kept (25 re-cut), 31 trashed, 1 bad cut; 356 not individually asked.
 
 ## Time: not a measurement
 The owner, 10 Oct 2026 about 18:1x UTC: "the timing isnt trustable cause i was multitasking". The save stamps (first answer
