@@ -10,6 +10,10 @@ lattice decode, Birago no.87. Read-free: no vision call, no network.
 Lattice: run_conf.prep() + run_conf.lattice() on all 26 lines (f178v L01-23 + f179r L01-03), passC skeleton, confusion_1572,
 no matrix, no stability. Key: harvest/key_1572_sheet.tsv + X_CE = s (key_pins.tsv). LM it16dip, beam 64. f178r lines are
 copied from L (benchmark-tx/outputs/birago1572-no87/labels.tsv) in every arm.
+
+Rescore (11 Oct 2026, measurement correction, RESCORE.md): `--map FILE` joins sorter tiles to positions through FILE instead
+of atlas/no87_box_token.tsv, `--x20 FILE` names arm c2, `--dir DIR` writes every output under DIR instead of this folder.
+With none of the three the run is byte-identical to the committed one.
 """
 import csv, json, random, re, statistics, sys, time
 from collections import defaultdict
@@ -29,6 +33,8 @@ F = ROOT / "ciphers/nevers-birago-fr3251-1572"
 H = RC.H
 L_FILE = ROOT / "benchmark-tx/outputs/birago1572-no87/labels.tsv"
 X20_FILE = ROOT / "benchmark-tx/outputs/birago1572-no87/passX20_owner.tsv"
+MAP_DEFAULT = F / "atlas/no87_box_token.tsv"
+MAP = MAP_DEFAULT
 TRUTH = ROOT / "benchmark-tx/birago1572-no87.truth.tsv"
 OUT = HERE / "outputs"; SC = HERE / "score"
 DEV, EVAL = RC.DEV, RC.EVAL
@@ -67,7 +73,7 @@ def pin_sets():
     for r in tsv(H / "exceptions_f178v.tsv"):
         if "X_CE" in r.get("reason", ""):
             PL[(f"{r['folio']}_{r['line']}", int(r["pos"]))] = "X_CE"
-    box = {r["sid"]: (r["line"], int(r["pos"])) for r in tsv(F / "atlas/no87_box_token.tsv") if r["op"] == "1:1"}
+    box = {r["sid"]: (r["line"], int(r["pos"])) for r in tsv(MAP) if r["op"] == "1:1"}
     PO, kept = {}, {}
     for r in tsv(F / "sorter/no87/owner-sort-2026-10-04/settled_no87.tsv"):
         f1 = fam(r["new_sign"])
@@ -141,8 +147,9 @@ def build():
         t0 = time.time()
         seq, obj = K.viterbi(lat, key, lm, lam, BEAM)
         dt = time.time() - t0
+        mapnote = "" if MAP == MAP_DEFAULT else f"; map {MAP.relative_to(ROOT)}"
         whole_output(OUT / f"pins_{arm}.tsv", lat, seq,
-                     f"TXE3-9 arm {arm}: lattice lam {lam:g} + pins {pn} (benchmark-tx/txeng3/9/run_pins.py build); f178r from L")
+                     f"TXE3-9 arm {arm}: lattice lam {lam:g} + pins {pn} (benchmark-tx/txeng3/9/run_pins.py build); f178r from L{mapnote}")
         with open(HERE / f"decode_{arm}.tsv", "w") as f:
             f.write("line\tpos\ttop1\tchosen\tpinned\n")
             for ((ln, pos), _), a, b in zip(lat, t1, seq):
@@ -309,4 +316,15 @@ def score():
 
 
 if __name__ == "__main__":
+    a = sys.argv[2:]
+    for flag in ("--map", "--x20", "--dir"):
+        if flag in a:
+            v = Path(a[a.index(flag) + 1]).resolve()
+            if flag == "--map":
+                MAP = v
+            elif flag == "--x20":
+                X20_FILE = v
+            else:
+                HERE = v; HERE.mkdir(parents=True, exist_ok=True)
+                OUT = HERE / "outputs"; SC = HERE / "score"; RC.TMP = HERE / "work"
     {"build": build, "score": score}[sys.argv[1]]()

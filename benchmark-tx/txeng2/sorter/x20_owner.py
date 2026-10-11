@@ -21,6 +21,10 @@ codes, and a split pile is a sub-variant the key has not valued. Piles outside t
 nothing. Writes benchmark-tx/outputs/birago1572-no87/passX20_owner.tsv (A then B; B wins where both touch a tile),
 passX20a_family.tsv, passX20b_no87sort.tsv and benchmark-tx/txeng2/sorter/x20_changes.tsv. --check exits 1 if a
 committed file differs from what this run would write (CLAUDE.md rule 7). The truth file is never read here.
+
+Rescore (11 Oct 2026, measurement correction, RESULTS.md "RESCORE"): `--map FILE --tag TAG` joins tiles to no.87 positions
+through FILE instead of atlas/no87_box_token.tsv and writes every output with `_TAG` before its extension (passX20_owner_TAG.tsv,
+x20_changes_TAG.tsv, ...); `--check` with the same two flags checks those files. Without them the run is unchanged.
 """
 import csv, os, re, sys
 from collections import Counter, defaultdict
@@ -43,10 +47,16 @@ def fam(p):
 
 def main():
     check = '--check' in sys.argv
+    a = sys.argv[1:]
+    mp = os.path.abspath(a[a.index('--map') + 1]) if '--map' in a else os.path.join(F, 'atlas/no87_box_token.tsv')
+    tag = ('_' + a[a.index('--tag') + 1]) if '--tag' in a else ''
+    if bool(tag) != ('--map' in a):
+        sys.exit('x20_owner: --map and --tag go together')
+    tg = lambda n: n.replace('.tsv', tag + '.tsv')
     L = tsv(os.path.join(OUT, 'labels.tsv'))
     cl = {r['id']: r['cluster'] for r in tsv(os.path.join(F, 'atlas/clusters.tsv')) if r['kind'] == 'sign'}
     box = {}
-    for r in tsv(os.path.join(F, 'atlas/no87_box_token.tsv')):
+    for r in tsv(mp):
         if r['op'] == '1:1':
             box[r['sid']] = (r['line'], r['pos'])
     pos_cluster = {v: cl[s] for s, v in box.items() if s in cl}
@@ -89,8 +99,10 @@ def main():
             B[k] = f1
 
     def write(name, ch):
-        p = os.path.join(OUT, name)
+        p = os.path.join(OUT, tg(name))
         txt = '# X20 %s (benchmark-tx/txeng2/sorter/x20_owner.py): L with the owner 4 Oct 2026 decisions applied; %d positions changed\n' % (name, len(ch))
+        if tag:
+            txt = txt[:-1] + '; box<->position map %s\n' % os.path.relpath(mp, R)
         txt += 'line\tpos\tsign\n' + ''.join('%s\t%s\t%s\n' % (r['line'], r['pos'], ch.get((r['line'], r['pos']), r['sign'])) for r in L)
         if check:
             return open(p).read() == txt
@@ -105,7 +117,7 @@ def main():
     for k, v in sorted(B.items()):
         rows.append('B\t%s\t%s\t%s\t%s\tno.87 sort moved' % (k[0], k[1], lsign[k], v))
     ctxt = '\n'.join(rows) + '\n'
-    cp = os.path.join(R, 'benchmark-tx/txeng2/sorter/x20_changes.tsv')
+    cp = os.path.join(R, tg('benchmark-tx/txeng2/sorter/x20_changes.tsv'))
     if check:
         ok = ok and open(cp).read() == ctxt
         print('x20_owner --check:', 'current' if ok else 'STALE')
