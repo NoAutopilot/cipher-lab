@@ -1,5 +1,5 @@
 partial
-Verdict: partial -- 6 of f.10r's 37 tokens (S1) carry f.13r's H glosses at grade C (82 82 "D. n.", 21 21 "Berry", 12 12 "b. Pal."; D2-F4712, 8 Oct 2026, applying the owner's ASKS 113 same-writer judgement under PREREG_duchf13.md; pre-registered crib gate met: 6 C >= 3, p 0.029 vs random code sets); the other 31 tokens have no reading (key no.1 a non-test at 37 tokens, DUCH-KEY1B; key no.4 cannot cover f.10r, DUCH-KEY4; f.13r's list is not key no.1, 0/6). The same-writer basis is one person's "I think the same" against our own "leaning different" on the 8-form, and R11A-F4712's blind digit test was a NON-TEST (6 Oct). See "## Remaining gaps" at the end.
+Verdict: partial -- 6 of f.10r's 37 tokens (S1) carry f.13r's H glosses at grade C (82 82 "D. n.", 21 21 "Berry", 12 12 "b. Pal."; D2-F4712, 8 Oct 2026, applying the owner's ASKS 113 same-writer judgement under PREREG_duchf13.md; pre-registered crib gate met: 6 C >= 3, p 0.029 vs random code sets); the other 31 tokens have no reading (key no.1 a non-test at 37 tokens, DUCH-KEY1B; key no.4 cannot cover f.10r, DUCH-KEY4; key no.71 a control-backed negative as an unmarked letter text, F4712-K71 11 Oct 2026; f.13r's list is not key no.1, 0/6). The same-writer basis is one person's "I think the same" against our own "leaning different" on the 8-form, and R11A-F4712's blind digit test was a NON-TEST (6 Oct). See "## Remaining gaps" at the end.
 Gomberville (ed.), *Les Mémoires de M. le duc de Nevers* (1665; Google Books H2eV4wAmIr0C and three other copies) full-text searched by this worker (NV-INTAKE, 3 Oct 2026) via the Books API with `&country=US`: "duchesse ma femme" hits only Nevers' 1593-94 Roman legation speech ("...qu'à la Duchesse ma femme, à mes terres...", also in the *Discours de la legation* 1594) and "Madame ma femme" 0 -- no letter to the duchess with a cipher passage printed there.
 
 # BnF fr.4712 f.10, the duc de Nevers to the duchesse de Nevers, undated: 37-number cipher passage -- NV-09
@@ -471,3 +471,57 @@ Read so far: 6 of 37 f.10r tokens at C under S1 (16%), f13_carry.tsv; 31 tokens 
 - [x] image-check: f.10r read from crops (DUCH-KEY1B), f.13r two blind passes agree on all 34 codes (DUCH-F13); code 40 gloss third model read a NON-TEST (F4712-40), model reader retired for that gloss, owner's eye ASKS 162
 - [x] retry: hand question retried by a blind digit test (R11A-F4712, NON-TEST) and settled by the person's look (ASKS 113)
 Verdict: keep going: 1 internal gaps; cheapest next: leaf census of f.13v onward for a glossed sibling, ~$2 (or key no.71 on f.10r with a matched control, ~$2)
+
+## F4712-K71 (worker for LANE DEFAULT-A1-1840, account 1, 11 Oct 2026, 18:56-19:0x UTC by date -u): key no.71 on f.10r -- control-backed negative
+
+Brief: `.claude/briefs/runs/2026-10-11-acct1-default-1840-jobs.md` "F4712-K71" (the V1-F4712 known-keys rung). Disk only, 0 requests.
+Prior work: `tools/prior_work.py fr4712-nevers-duchesse --item-spec 'shelfmark=BnF fr.4712;folio=10r;canvas=18;date=1592-10-01;...'
+--step-type decode --offline` exit 2: the one KNOWN row is a false hit (sources/cryptiana/web/habsburg.htm l.364, a Habsburg two-part
+code, not this leaf); LEADs are this folder's own done image-check and V1-F4712's audit, neither applied no.71; check 1 (own work):
+no.71 never applied to f.10r (NOTES.md "V1-F4712 AUDIT 2"); checks 3-4 by the intake and both audits (Tomokiyo "undeciphered",
+Gomberville 1665 not printed); check 5 after decode: no reading claimed, nothing to search.
+Pre-registered `PREREG-F4712-K71.md` (commit 990de8d8e, on origin/main before any score).
+
+- **Key copy.** `keys/key_no71.tsv`: the 26 letter rows of `ciphers/birago-fr3252-1571-72/keys/key_fr3995_no71_f133r.tsv` (read only)
+  plus 44 dotted-word / overlined-person rows read by this worker from the same native crop `read_f133r.jpg` (one reader; the
+  18-51 and 60-91 word codes, town codes and the right-hand person codes are cut or off the crop, so unread). The alphabet strip ends
+  with a non-numeric sign, a loop with a cross **above** it, under a curled header (z or &, not settled; M): the same shape as
+  f.10r's line-opening sign (DUCH-KEY1B). A shape match only.
+- **Marks.** f.10r's figures (images/f10b/f10c_L01_s1-s2) show no dot or overline over any code at this crop's resolution; under no.71
+  an unmarked figure is a letter.
+- **Results** (`k71_decode.py`, `--check` OK; `k71_score.tsv`, `k71_decode.tsv`):
+
+| statistic | target | matched control | null / power | gate |
+|---|---|---|---|---|
+| D: S1 numbers on no.71 letter codes (of 37) | **12** | C1 (no.71, read word list) mean 36.0, p01 33; C2 (89 word codes) mean 32.7, p05 29, p01 27 | N0 uniform 8-99 mean 10.2, p95 15 | **INCONSISTENT** (12 < 27 and 29 > 15) |
+| R: fr16 4-gram of the decode vs 200 value-shuffled keys | rank 173 of 201, z -0.97 | power: 20/20 synthetic no.71 texts rank 1 with z >= 3 | -- | **NO SIGNAL** (power passed) |
+
+  Both controls can differ from the target on their statistic (rule 3) and both did. f.10r's letter-code share sits with uniform
+  noise, far below any no.71 text with its marks dropped, and the decode scores worse than most shuffled keys. **Key no.71 does not
+  read f.10r as an unmarked letter text** -- conditional on Tomokiyo's S1 division (digits checked on the leaf) and on the crops
+  showing no marks.
+- Per token (all M, PREREG grading rule): 12 tokens on letter codes, 13 on word/person codes read on the crop (si, ce, quant, car /
+  Royne de Navarre, de, amis, Roy, reistres, bon / Royne mere, dit; each needs a mark the leaf lacks), **12 on unread word/person
+  codes: 82 82 21 59 31 72 69 21 22 19 81 26** (positions 1 2 8 17 18 19 23 25 26 31 36 37).
+- Descriptive: f.13r's H glosses vs no.71 on the three shared read codes -- 12 "b. Pal." vs bon / Royne mere, 54 "Lorm." vs temps,
+  58 "R" vs argent: **0/3 agree**, so f.13r's code list is not no.71 either.
+- Not excluded: an all-code text (every figure a dotted word or overlined name, marks omitted or too faint for this crop). That
+  reading would need the unread word columns and a native-resolution look at the figures for dots/overlines.
+Requests: none. Vision: five looks at on-disk images (the key crop, two f.10r strips, two zooms of the key strip end), no subagent.
+
+## Remaining gaps (F4712-K71, 11 Oct 2026)
+Read so far: 6 of 37 f.10r tokens at C under S1 (16%), f13_carry.tsv; 31 tokens unread
+- f.10r tokens outside f.13r's H-glossed codes (31 of 37) - blocker: no-key-material; key no.1 is a non-test at 37 tokens (DUCH-KEY1B), key no.4 cannot cover f.10r (DUCH-KEY4), key no.71 is a control-backed negative as an unmarked letter text (F4712-K71); the leaves after f.13 are the untried route (Escalation siblings); next: leaf census of f.13v onward, ~$2 (Gallica, waiting on the host)
+- key no.71 as an all-code text (dots/overlines too faint at 1800 px) - blocker: not-attempted; needs the no.71 word columns 18-51/60-91 read and one native-resolution look at f.10r's figures for marks; next: native crops of fr.3995 f.133r word columns and f.10r canvas 18 when Gallica answers, ~$2
+- same-writer basis of the six C carries - blocker: not-attempted; one person's eye vs our 8-form reading, the machine digit test was a NON-TEST; next: a digit-rich f.13r/f.10r comparison or a palaeographer's look, ~$2
+- f.13r code 40 gloss (Vill. vs Lill.) and code 93 conflict - blocker: waiting-on ASKS 162 (the owner's eye on images/f13r/g40 t2/t4 and recon_1/recon_2 tiles 93a/93b); model-reader instrument retired for this gloss (F4712-40 NON-TEST, g40_read.tsv); neither code occurs on f.10r under S1
+
+## Escalation (F4712-K71, 11 Oct 2026)
+- [ ] siblings: leaves after f.13 (f.13v onward, canvas 23+) are unviewed; planned: a leaf census like DUCH-LEAVES
+- [x] clear-pages: ff.9, 11, 12 checked, no cipher (DUCH-LEAVES); f.13r's glossed codes used as the crib (DUCH-F13)
+- [x] known-keys: key no.1 applied (non-test, DUCH-KEY1B), key no.4 tried (design mismatch, DUCH-KEY4), key no.71 applied with matched controls (control-backed negative as a letter text, F4712-K71; all-code reading kept as a gap)
+- [x] print: Gomberville's Mémoires (1665) full-text searched (NV-INTAKE, 3 Oct 2026), no cipher passage printed
+- [n/a] key-rebuild: 37 tokens is far below any cryptanalytic length for a code of this size
+- [x] image-check: f.10r read from crops (DUCH-KEY1B), f.13r two blind passes agree on all 34 codes (DUCH-F13); code 40 gloss third model read a NON-TEST (F4712-40), model reader retired for that gloss, owner's eye ASKS 162
+- [x] retry: hand question retried by a blind digit test (R11A-F4712, NON-TEST) and settled by the person's look (ASKS 113)
+Verdict: keep going: 2 internal gaps; cheapest next: leaf census of f.13v onward for a glossed sibling, ~$2 (Gallica 403 at 18:5x UTC 11 Oct; or the no.71 all-code check with native crops, ~$2)

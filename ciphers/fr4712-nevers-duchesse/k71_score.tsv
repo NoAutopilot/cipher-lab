@@ -1,0 +1,17 @@
+stat	value
+N_tokens	37
+L_target	12
+C1_mean	36.03
+C1_p05	34
+C1_p01	33
+C2_mean	32.73
+C2_p05	29
+C2_p01	27
+N0_mean	10.23
+N0_p95	15
+gate_D	INCONSISTENT
+R_target_score	-1.285
+R_rank_of_201	173
+R_z	-0.97
+R_power_of_20	20
+gate_R	NO SIGNAL
