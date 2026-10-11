@@ -1,0 +1,30 @@
+{
+ "birago1572-f152r": {
+  "mapped_tokens": 90,
+  "A1_ne_A2": 19,
+  "A0a_ne_A2": 44,
+  "A2_ne_null": {
+   "min": 80,
+   "mean": 85.9,
+   "max": 90
+  },
+  "A1_ne_lineread": 46,
+  "A2_ne_lineread": 43,
+  "A2_override_n": 11,
+  "A1_override_n": 5
+ },
+ "birago1572-no87": {
+  "mapped_tokens": 714,
+  "A1_ne_A2": 125,
+  "A0a_ne_A2": 289,
+  "A2_ne_null": {
+   "min": 642,
+   "mean": 682.1,
+   "max": 700
+  },
+  "A1_ne_lineread": 375,
+  "A2_ne_lineread": 362,
+  "A2_override_n": 135,
+  "A1_override_n": 93
+ }
+}
