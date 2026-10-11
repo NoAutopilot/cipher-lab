@@ -122,7 +122,7 @@ strong (post hoc). For a single blind pass, Birago 1571, Debosnys and Florence c
 of half the split, which held on 8 of 13 test leaves). Nothing here bounds a reconciled or sorter-checked transcription,
 and whether a same-hand known answer transfers was not tested.
 
-## Second check (11 Oct 2026, written about 16:4x UTC by the account-3 parent from the second verifier's report; workflow wf_35ed2244-0e6)
+## Second check (11 Oct 2026, written 16:28 UTC by date -u, by the account-3 parent from the second verifier's report; workflow wf_35ed2244-0e6)
 
 A second, independent agent ruled on each objection and non-holds verdict above, re-running the commands itself. Where it disagrees with this file, this section governs.
 

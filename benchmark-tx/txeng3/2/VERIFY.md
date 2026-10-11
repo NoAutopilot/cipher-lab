@@ -225,7 +225,7 @@ already on disk tie six of the seven unflagged floor signs to the crop. The floo
 with the 11 truth-doubt flags set aside. Its one measured result is the share of insertions and deletions (about a fifth of a
 single reader's errors), and that share is not a cap on what better boxes or crops could fix.
 
-## Second check (11 Oct 2026, written about 16:4x UTC by the account-3 parent from the second verifier's report; workflow wf_35ed2244-0e6)
+## Second check (11 Oct 2026, written 16:28 UTC by date -u, by the account-3 parent from the second verifier's report; workflow wf_35ed2244-0e6)
 
 A second, independent agent ruled on each objection and non-holds verdict above, re-running the commands itself. Where it disagrees with this file, this section governs.
 

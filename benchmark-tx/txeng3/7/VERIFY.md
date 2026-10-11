@@ -178,7 +178,7 @@ starting labels. The never-sorted letter was too small to show more than a large
 the labels did harm. Keep the decisions on file so you are never asked twice. The two ways the transcription rule actually uses them
 (cluster-level application, exemplar sheet) are still unmeasured.
 
-## Second check (11 Oct 2026, written about 16:4x UTC by the account-3 parent from the second verifier's report; workflow wf_35ed2244-0e6)
+## Second check (11 Oct 2026, written 16:28 UTC by date -u, by the account-3 parent from the second verifier's report; workflow wf_35ed2244-0e6)
 
 A second, independent agent ruled on each objection and non-holds verdict above, re-running the commands itself. Where it disagrees with this file, this section governs.
 

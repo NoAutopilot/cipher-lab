@@ -164,7 +164,7 @@ control at this size. The second reader did catch most of the real misreads; the
 label at 5 of 7 of them. So "does 5% carry over" is undecided, not refuted, and the weak link on this hand is the
 adjudicator, not the second reader.
 
-## Second check (11 Oct 2026, written about 16:4x UTC by the account-3 parent from the second verifier's report; workflow wf_35ed2244-0e6)
+## Second check (11 Oct 2026, written 16:28 UTC by date -u, by the account-3 parent from the second verifier's report; workflow wf_35ed2244-0e6)
 
 A second, independent agent ruled on each objection and non-holds verdict above, re-running the commands itself. Where it disagrees with this file, this section governs.
 
