@@ -1,0 +1,100 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "t1_L01.jpg",
+   "source_url": "",
+   "source_file": "recon_1.jpg",
+   "box": [
+    620,
+    1215,
+    940,
+    1335
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     60
+    ]
+   },
+   "date": "11 Oct 2026"
+  },
+  {
+   "crop": "t2_L01.jpg",
+   "source_url": "",
+   "source_file": "recon_1.jpg",
+   "box": [
+    1080,
+    1220,
+    1410,
+    1330
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     55
+    ]
+   },
+   "date": "11 Oct 2026"
+  },
+  {
+   "crop": "t3_L01.jpg",
+   "source_url": "",
+   "source_file": "recon_2.jpg",
+   "box": [
+    640,
+    950,
+    1020,
+    1070
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     60
+    ]
+   },
+   "date": "11 Oct 2026"
+  },
+  {
+   "crop": "t4_L01.jpg",
+   "source_url": "",
+   "source_file": "recon_1.jpg",
+   "box": [
+    600,
+    315,
+    1000,
+    435
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     60
+    ]
+   },
+   "date": "11 Oct 2026"
+  }
+ ]
+}
