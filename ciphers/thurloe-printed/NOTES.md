@@ -3648,3 +3648,39 @@ Read so far: the p.72 key on Birch I pp.301, 308, 309, 340, 351 (p.301 at M only
 - [x] image-check: leaves n330, n331, n447 read; crops committed
 - [x] retry: p418top crop missed line 1; 297/369 taken from pass A + OCR and marked so
 Verdict: keep going: 1 internal gap; cheapest next: locate Brieven V (1723-25) / the 1725 Verbael on IA for the Dutch of 27 June and 22 Aug, ~$0.5
+
+## THUR-BRV (LANE DEFAULT-A2-0509, account 2, worker Sonnet 5.5, 11 Oct 2026 05:23-05:4x UTC by date -u)
+Brief: .claude/briefs/runs/2026-10-11-ytbiz-default-0509-jobs.md "### THUR-BRV". Question: are Brieven V (1723-25) and the 1725 *Verbael* on the Internet Archive, and does any hold the Dutch of Beverning's 27 June and 22 Aug 1653 letters (Birch I pp.301, 418)? Nothing was transcribed, decoded or graded; no reading is claimed.
+
+**Prior work (step 0).** `prior_work.py thurloe-printed --item-spec 'shelfmark=Brieven geschreven ende gewisselt 1723-25 / Verbael 1725;sender=Beverning;recipient=De Witt;date=1653-06-27' --step-type lookup --fetch`: exit 4. The one LEAD is this job's own live claim (`1-own`, target-level); the UNCHECKED rows (Tomokiyo and solver caches by unit, Birch window) were answered by THUR-DUTCH, DUTCH-MORE and V-DUTCH (10 Oct 2026) for this question and not re-run; check 1 by hand: the gap is in the DUTCH-MORE Remaining gaps and V-DUTCH's AUDIT.md (family c: "IA title search 0 items"), nothing done on IA beyond that title search.
+
+**Route and counts.** archive.org only: advancedsearch 8 (JSON, fl identifier/title/volume/year/access), metadata 10, `_djvu.txt` 4; 22 requests, >= 1.6 s apart, descriptive UA, all 200, no 429/403/challenge. djvu text kept in scratch (re-fetch `https://archive.org/download/<id>/<id>_djvu.txt`). V-DUTCH's "title search 0 items" is explained: the catalogue title is "Brieven, geschreven ende gewisselt tusschen" (the rest of the title page is absent), found with `title:(brieven gewisselt) AND (witt OR wit OR witte)`; the 1725 French counterpart is under "Lettres et negociations entre Mr. Jean de Witt".
+
+**Candidates (identifier | volume | year | access | text checked).** None carries `access-restricted-item`, a licenseurl or `is_dark`: all are full view (public-domain scans, `_djvu.txt` served).
+| identifier | what | access | djvu text holds 27 June / 22 Aug 1653 Beverning letter? |
+|---|---|---|---|
+| brievengeschreve01witt .. brievengeschreve06witt | Brieven, geschreven ende gewisselt tusschen ... De Witt ... ende de gevolmaghtigden, vols 1-6 (JCB copy; vols 1-2 1723, 3-4 1724, 5-6 1725; 738/716/938/946/610/632 images) | full view | vol 5 and 6 read; vols 1-4 not fetched (their contents by the title page: France, Sweden, Nieuport in England from 18 Dec 1654, 1660-69) |
+| brieven00nethgoog | Brieven, Michigan copy via Google, vol 1 ("EERSTE DEEL", 736 images) | full view | 0 hits for Beverningh; not the 1653 London correspondence |
+| brievendeelwnie00nethgoog | same Michigan set, vols 3-4 ("DERDE DEEL", 936 images), bound with vol 6; its description names the 1727 *Volkoome register* (Scheurleer) "over de ses deelen ... als meede over het verbael door Hieron. van Beverningh, enz. te London gehouden" | full view | 4 Beverningh hits, none dated 1653; not fetched beyond the text grep |
+| brievendeelgvan00nethgoog | a further Michigan volume | metadata empty (no files, no title) | not readable |
+| lettresetnegocia01witt .. 04witt, bub_gb_HyfTxXjGJPAC | *Lettres et negociations ...*, French, 1725 (the note says it holds only the letters of Dutch vols 1-2 in vol 1) | full view | not fetched: the French is not the Dutch wanted |
+**Brieven V is vol 5** ("VYFDE DEEL", brievengeschreve05witt, 610 images, djvu 1.85 MB): "Synde de verdere negociatien van ... C. van Beuningen, N. Kaiser ... in Sweden, Denemarcken ende in Poolen". It holds De Witt's and Van Beuningen's/Keyser's letters of 1653 (about 55 dated 1653 headings, Jan-Dec, Stockholm, Copenhagen, The Hague) and De Witt's letters that mention Beverningh and Nieupoort in London (OCR page 170: "Extract van de Missive by my jongst aen de Heeren Beverningh ende Nieupoort geschreven"; pp.203, 212, 240, 250, 290, 298, 330, 344, 371 on the OCR's page headers, 43 Beverningh hits). **It does not print Beverning's own letters to De Witt**: no 17/27 June or 22 Aug 1653 dated heading, no Beverningh-signed letter; they are named only in letters by De Witt and Van Beuningen ("copye van twee Missiven van den Heer Beverningh uyt Engelandt", p.298). The preface (p.VII) refers the Peace negotiation to "de Voorreden op het Verbael van defe Vredehandeling", so the *Verbael* is a separate publication (Beverningh's journal of the London negotiation, listed in the 1727 *Volkoome register*), not a part of the six volumes.
+**Not found on IA.** The 1725 *Verbael* as its own item: 3 advancedsearch queries (title verbael + date 1700-35; title/subject Beverning(h) 1650-1735; "volkoome register") returned 0 items; the 1727 *Volkoome register* itself is described only inside the Michigan Google scans. The 17/27 June and 22 Aug 1653 Dutch letters themselves: not in vol 5 or 6 (read), vols 1-4 are other legations; so no known answer for Birch I pp.301 and 418 on IA yet. A search result for this window only, not an absence (Google OCR of the Michigan copies is poor and the IA index is by catalogue text).
+**Where I might be wrong.** Dated headings were found by regex on OCR with long-s and noisy digits; a 17 June or 22 Aug heading with a misread digit would be missed. Vols 1-4 and the Michigan scans were not grepped for Beverningh's own letters beyond the counts above; vol 3 ("Nieupoort in Engelandt", from 18 Dec 1654) may reprint earlier London papers.
+
+## Remaining gaps (THUR-BRV, 11 Oct 2026; replaces the "Brieven V / Verbael not located" items of DUTCH-MORE and the print item of THUR-DUTCH)
+Read so far: IA catalogue for the Brieven (6 vols + Michigan set) and French *Lettres et negociations*; vols 5 and 6 text grepped, not read.
+- The 1725 *Verbael* (Beverningh's London journal) is not on IA under its own title - blocker: not-attempted; only IA was in this brief's host list; next: Delpher/Google Books/KB (V-DUTCH holds Delpher) search for "Verbael" Beverningh 1725 and a be-api phrase search over the Michigan scans for "Verbael van Beverningh", ~$0.4
+- Dutch of Beverning's 27 June and 22 Aug 1653 letters (Birch I pp.301, 418) - blocker: not-attempted; vol 5 does not print them and vols 1-4 are other legations, so the text of the other volumes is unread; next: grep vols 1-4 and the Michigan copies' text for "Beverningh" + 1653 (fetch djvu of vols 3, 4 once, ~3 requests) and the Verbael once located, ~$0.3
+- Nijhoff Bijdragen X p.291 and Van Sypesteyn (unchanged, V-DUTCH's open item) - blocker: not-attempted; Google Books quota was spent on 10 Oct 2026; next: Google Books API with country=US after the quota reset, ~$0.3
+
+## Escalation (THUR-BRV, 11 Oct 2026)
+- [x] siblings: unchanged
+- [x] clear-pages: no clear page for 27 June or 22 Aug in Brieven V or VI
+- [x] known-keys: unchanged (p.72 printed key)
+- [x] print: Brieven 1-6 located on IA, full view; vol 5 read for 1653 headings; Verbael not on IA under its title
+- [n/a] key-rebuild: nothing decoded by this job
+- [n/a] image-check: no leaf looked at
+- [x] retry: none needed (22 requests, no errors)
+Verdict: keep going: 3 internal gaps; cheapest next: grep the vol 3/4 text and the Michigan copies for Beverningh's London papers, then locate the Verbael off IA, ~$0.7
+
