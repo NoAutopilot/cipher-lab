@@ -27,7 +27,9 @@
 //   trash x (mouse)      the hover x on a pile tile                  click -> trashed; a 700 ms hold -> its card, nothing trashed
 // Every hold: #ctx opens and the moves, keeps (checked) and tray count are unchanged. Every tap: never opens #ctx, and does what
 // the row says. A re-render while the finger is down (a saved answer arriving): a tap makes exactly one move and no card opens later,
-// a hold opens the card and moves nothing. Also: no visible #modeLook and no page text "Shows it large" (the old tap switch); a mouse
+// a hold opens the card and moves nothing; template 2026-10-09.6, a page busy 0.6 s (render() plus a busy wait, as on Debosnys): a quick
+// tap whose lift is sent 120 ms after the press but handled late is still a tap (three tries), a press whose lift is sent at 550 ms is a
+// hold (two tries) -- tap or hold by the press's own event times, not by when the page gets to them. Also: no visible #modeLook and no page text "Shows it large" (the old tap switch); a mouse
 // drag of a pile tile onto another pile still moves it; zero page errors. Round 2 (10 Oct 2026), phones only: a quick swipe that
 // starts on a tray tile (up, over the piles) or on the step-2 big sign (down, over the cards) is a scroll and moves nothing (it used
 // to drop the sign on whatever it lifted over); a hold on a tile lying where the card's "Move this tile to…" list or Zoom slider will
@@ -226,21 +228,43 @@ async function run(b, dev, opts) {
         await swipeNothing(page, dev, 'the step-2 big sign (' + s2 + '), over the cards', page.locator('#s2Tile'), 0, Math.min(dy, (opts.viewport || {}).height - r.y - 10 || dy), r); }
       await page.evaluate(() => setStep(1));
     } }
-  // 6. a re-render while the finger is down (a saved answer arriving re-draws the piles): a tap makes exactly one move and no card
-  // opens afterwards; a hold still opens the card and moves nothing (adversarial check, 10 Oct 2026: the old element's hold timer was
-  // never cleared, so the tap acted AND the card opened half a second later)
+  // 6. a re-render while the finger is down (a saved answer arriving re-draws the piles; adversarial check, 10 Oct 2026: the old
+  // element's hold timer was never cleared, so the tap acted AND the card opened half a second later). Template 2026-10-09.6 (sweep of
+  // 10 Oct 2026: on Debosnys, Lancosme and Juan Manuel render() takes 0.4-0.8 s): (a) a QUICK TAP ON A SLOW PAGE -- the lift is SENT
+  // 120 ms after the press while a render holds the page for BLOCK_MS (render() plus a busy wait, so the fixture is as slow as
+  // Debosnys), so the page handles it late, after the hold time has passed on the clock. By its own time it is a tap: a finger takes the
+  // sign out once (a mouse click whose press target was replaced is dropped by the browser: at most one move) and the card never opens.
+  // 2026-10-09.5 opened the card on 3 of 9 such taps on Debosnys, 6 of 6 on the plain fixture (the late hold timer ran before the queued
+  // lift). Three tries a device. (b) a GENUINE HOLD during the same render, its lift sent 550 ms after the press and handled late: by its
+  // own time a hold, so the card opens and nothing moves (owner rule R05; the old row, a lift 80 ms after a 0.6 s render, was such a
+  // press, 0.7 s, and the card opening there is right). Two tries. (c) a hold with a render in the middle, lifted at 900 ms.
   { const sid = await pickSid('#list .pile .tiles .t:not(.ref):not(.wait):not(.fq):not(.out):not(.in)');
     if (!sid) skip(`${dev}: no pile tile for the re-render rows`);
     else {
-      const loc = () => page.locator('#list .pile .tiles .t[data-sid="' + sid + '"]').first();
-      await settled(page); let at = await centre(page, loc()); let b0 = await S(page);
-      await press(page, 'down', at.x, at.y); await page.waitForTimeout(40); await page.evaluate(() => render()); await page.waitForTimeout(80);
-      await press(page, 'up', at.x, at.y); await page.waitForTimeout(900); let a = await S(page);
-      // a finger's tap reaches the re-drawn tile (one move); a mouse click whose press target was replaced is dropped by the browser
-      // (no click at all): at most one move, and never the card
-      ok(!a.ctx && (a.tray === b0.tray + 1 && a.moves.includes(JSON.stringify([sid, 'OUT']).slice(1, -1)) || !touch && same(a, b0)),
-        `${dev}: a tap during a re-render ${touch ? 'takes the sign out once' : 'makes at most one move'} and opens no card later`, `card ${a.ctx}, tray ${b0.tray}->${a.tray}`);
-      await closeCard(page); if (a.tray !== b0.tray) await undoLast(page); await page.waitForTimeout(250);
+      const loc = () => page.locator('#list .pile .tiles .t[data-sid="' + sid + '"]').first(), BLOCK_MS = 600;
+      // press at `at`, re-render and hold the page busy for BLOCK_MS from 20 ms after the press, send the lift `liftMs` after the press
+      const blocked = async (at, liftMs) => { const t0 = Date.now(); await press(page, 'down', at.x, at.y);
+        await page.evaluate(B => { window.__blk = null; setTimeout(() => { const t = performance.now(); render(); const r = performance.now() - t; while (performance.now() - t < B);
+          window.__blk = Math.round(r) + '+' + Math.round(performance.now() - t - r); }, 20); }, BLOCK_MS);
+        const w = liftMs - (Date.now() - t0); if (w > 0) await page.waitForTimeout(w);
+        const sent = Date.now() - t0; await press(page, 'up', at.x, at.y); await page.waitForTimeout(BLOCK_MS + 800);
+        return { sent, blk: await page.evaluate(() => window.__blk) }; };
+      let at, b0, a;
+      for (let k = 1; k <= 3; k++) {
+        await settled(page); at = await centre(page, loc()); b0 = await S(page);
+        const r = await blocked(at, 120); a = await S(page);
+        ok(!a.ctx && (a.tray === b0.tray + 1 && a.moves.includes(JSON.stringify([sid, 'OUT']).slice(1, -1)) || !touch && same(a, b0)),
+          `${dev}: a quick tap (lift sent 120 ms after the press) during a ${BLOCK_MS} ms re-render ${touch ? 'takes the sign out once' : 'makes at most one move'} and opens no card (try ${k})`,
+          `card ${a.ctx}, tray ${b0.tray}->${a.tray}, lift sent at ${r.sent} ms, render+wait ${r.blk} ms`);
+        await closeCard(page); if (!same(await S(page), b0)) await undoLast(page); await page.waitForTimeout(250);
+      }
+      for (let k = 1; k <= 2; k++) {
+        await settled(page); at = await centre(page, loc()); b0 = await S(page);
+        const r = await blocked(at, 550); a = await S(page);
+        ok(a.ctx && same(a, b0), `${dev}: a hold (lift sent 550 ms after the press) during a ${BLOCK_MS} ms re-render opens the card and moves nothing (try ${k})`,
+          `card ${a.ctx}, moves ${a.moves === b0.moves ? 'same' : 'CHANGED'}, tray ${b0.tray}->${a.tray}, lift sent at ${r.sent} ms, render+wait ${r.blk} ms`);
+        await closeCard(page); if (!same(await S(page), b0)) await undoLast(page); await page.waitForTimeout(250);
+      }
       await settled(page); at = await centre(page, loc()); b0 = await S(page);
       await press(page, 'down', at.x, at.y); await page.waitForTimeout(200); await page.evaluate(() => render()); await page.waitForTimeout(700);
       await press(page, 'up', at.x, at.y); await page.waitForTimeout(450); a = await S(page);

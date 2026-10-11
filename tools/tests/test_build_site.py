@@ -9,7 +9,12 @@ Builds the whole private preview site into a temp dir from the repository's own 
   - each display page links to at least one item page ("See the evidence");
   - no leading-slash path, no remote script, and no rule-10 phrase in any page the site writes itself (the front door, displays,
     browse pages, sitemap); phrases inside an item page's quoted audit log are reported by the builder, not failed here;
-  - an --out or --preview under docs/ is refused;
+  - an --out or --preview under docs/ is refused without --public (docs/readings included);
+  - (--public, 10 Oct 2026) with --public only an --out under docs/readings/ is accepted: docs/ itself, docs/x, docs/readingsX,
+    a path outside docs/ and any --preview are refused; the public build (made in-process with the module's DOCS pointed at a temp
+    folder, so the test never writes the real docs/) carries no "Private preview" banner or footer on any page, carries the public
+    note and the repository link on every page, resolves every internal link, and shows no held curator paragraph while
+    data/context_approved is absent;
   - (SITE-ITEMS-1) every item page carries the four sections in the display's order (What it says, The reading, Who where when,
     How we know) inside an <article data-interest=...>; a "Context" slot appears only where data-interest is 2 or 3; the
     English-pending marker count and the people-index size are reported; every people/ page is reachable from people/index.html;
@@ -73,6 +78,88 @@ def check_tokens(out, items_dir="items"):
     return n
 
 
+def link_problems(out, pages):
+    """(broken [(page, url)], links checked, pending portrait files) over every internal href/src of `pages` under `out`."""
+    ids = {p: set(IDS.findall(open(os.path.join(out, p), encoding="utf-8").read())) for p in pages}
+    mani_p = os.path.join(out, "assets", "portraits", "manifest.tsv")
+    mani = open(mani_p, encoding="utf-8").read() if os.path.exists(mani_p) else ""
+    broken, checked, pending = [], 0, set()
+    for p in pages:
+        for u in LINK.findall(open(os.path.join(out, p), encoding="utf-8").read()):
+            if re.match(r"(?:https?:|data:|mailto:)", u):
+                continue
+            if u.startswith("/"):
+                broken.append((p, u + " (leading slash)"))
+                continue
+            path, _, frag = u.partition("#")
+            tgt = os.path.normpath(os.path.join(os.path.dirname(p), path)) if path else p
+            checked += 1
+            if not os.path.exists(os.path.join(out, tgt)):
+                # a portrait the desk runner has not dropped yet: allowed only if manifest.tsv names the file (placeholder shows)
+                if tgt.startswith("assets/portraits/") and "\t" + os.path.basename(tgt) in mani:
+                    pending.add(os.path.basename(tgt))
+                else:
+                    broken.append((p, u))
+            elif frag and tgt.endswith(".html") and frag not in ids.get(tgt, set()):
+                broken.append((p, u))
+    return broken, checked, pending
+
+
+def html_pages(out):
+    return [os.path.relpath(os.path.join(dp, f), out) for dp, _, fs in os.walk(out) for f in fs if f.endswith(".html")]
+
+
+def held_paragraphs():
+    """The curator paragraphs' own text (context column, 40+ characters), which must not appear before approval."""
+    p = os.path.join(os.path.dirname(SCRIPT), "data", "context_paragraphs.tsv")
+    out = []
+    for ln in open(p, encoding="utf-8") if os.path.exists(p) else []:
+        c = ln.rstrip("\n").split("\t")
+        if len(c) >= 4 and c[0] != "item" and not c[0].startswith("#") and len(c[2]) >= 40:
+            out.append(html.escape(c[2][:80]))
+    return out
+
+
+def check_public(S, tmp):
+    """--public: path rules (subprocess, real docs/), then one in-process build into a temp docs/readings."""
+    docs = os.path.join(ROOT, "docs")
+    for bad in (["--out", docs], ["--out", os.path.join(docs, "x")], ["--out", os.path.join(docs, "readingsX")],
+                ["--out", os.path.join(tmp, "elsewhere")],
+                ["--out", os.path.join(docs, "readings"), "--preview", os.path.join(tmp, "p.html")]):
+        r = subprocess.run([sys.executable, SCRIPT, "--public"] + bad, capture_output=True, text=True, cwd=ROOT)
+        if r.returncode == 0 or "refused" not in (r.stderr + r.stdout):
+            fail(f"--public did not refuse {bad}")
+    if S.path_refusal(os.path.join(docs, "readings"), "", True) or S.path_refusal(os.path.join(docs, "readings", "sub"), "", True):
+        fail("--public refuses docs/readings")
+    S.DOCS, S.READINGS = os.path.join(tmp, "docs"), os.path.join(tmp, "docs", "readings")
+    out = S.READINGS
+    if S.main(["--public", "--out", out, "--date", "2 January 2000"]):
+        fail("public build failed")
+    pages = html_pages(out)
+    held = held_paragraphs()
+    for p in pages:
+        txt = open(os.path.join(out, p), encoding="utf-8").read()
+        if "Private preview" in txt or 'class="mock">Private preview' in txt:
+            fail(f"public {p}: private-preview banner or footer still present")
+        if S.E(S.PUBLIC_NOTE.split(" see ")[0]) not in txt or f'href="{S.REPO_URL}"' not in txt:
+            fail(f"public {p}: public note or repository link missing")
+        if "Built 2 January 2000." not in txt:
+            fail(f"public {p}: footer date missing")
+        for n in NAV:
+            if f">{n}</a>" not in txt:
+                fail(f"public {p}: top bar lacks {n!r}")
+        if not os.path.exists(os.path.join(os.path.dirname(SCRIPT), "data", "context_approved")):
+            for h in held:
+                if h in txt:
+                    fail(f"public {p}: shows a held curator paragraph")
+    broken, checked, _pending = link_problems(out, pages)
+    if broken:
+        fail(f"public: {len(broken)} broken internal links, e.g. {broken[:5]}")
+    print(f"ok: --public refuses docs/, docs/x, docs/readingsX, a path outside docs/ and --preview; accepts docs/readings; "
+          f"{len(pages)} public pages carry the note and repository link, no private banner, {checked} internal links 0 broken, "
+          f"{len(held)} held curator paragraphs absent")
+
+
 def main():
     with tempfile.TemporaryDirectory() as tmp:
         out = os.path.join(tmp, "site")
@@ -82,12 +169,10 @@ def main():
         if r.returncode:
             fail("build failed: " + r.stderr[-800:])
         print(r.stdout.strip().splitlines()[0])
-        pages = [os.path.relpath(os.path.join(dp, f), out) for dp, _, fs in os.walk(out) for f in fs if f.endswith(".html")]
+        pages = html_pages(out)
         if len(pages) < 10 or "index.html" not in pages or "sitemap.html" not in pages:
             fail(f"too few pages or front door/sitemap missing: {len(pages)}")
-        ids = {p: set(IDS.findall(open(os.path.join(out, p), encoding="utf-8").read())) for p in pages}
-        broken, checked, pending = [], 0, set()
-        mani = open(os.path.join(out, "assets", "portraits", "manifest.tsv"), encoding="utf-8").read()
+        broken, checked, pending = link_problems(out, pages)
         sitemap = open(os.path.join(out, "sitemap.html"), encoding="utf-8").read()
         for p in pages:
             txt = open(os.path.join(out, p), encoding="utf-8").read()
@@ -96,28 +181,14 @@ def main():
                     fail(f"{p}: top bar lacks {n!r}")
             if "Private preview, 1 January 2000." not in txt or "Nothing here is called first, new or unpublished." not in txt:
                 fail(f"{p}: footer line missing")
+            if "Private preview for review. Not published, not linked from anywhere." not in txt:
+                fail(f"{p}: private-preview banner missing without --public")
             if p != "index.html" and 'class="crumbs"' not in txt:
                 fail(f"{p}: breadcrumb missing")
             if re.search(r'<script[^>]+src=', txt):
                 fail(f"{p}: remote or external script")
             if f'href="{p}"' not in sitemap and p != "sitemap.html":
                 fail(f"sitemap does not list {p}")
-            for u in LINK.findall(txt):
-                if re.match(r"(?:https?:|data:|mailto:)", u):
-                    continue
-                if u.startswith("/"):
-                    fail(f"{p}: leading-slash path {u}")
-                path, _, frag = u.partition("#")
-                tgt = os.path.normpath(os.path.join(os.path.dirname(p), path)) if path else p
-                checked += 1
-                if not os.path.exists(os.path.join(out, tgt)):
-                    # a portrait the desk runner has not dropped yet: allowed only if manifest.tsv names the file (placeholder shows)
-                    if tgt.startswith("assets/portraits/") and "\t" + os.path.basename(tgt) in mani:
-                        pending.add(os.path.basename(tgt))
-                    else:
-                        broken.append((p, u))
-                elif frag and tgt.endswith(".html") and frag not in ids.get(tgt, set()):
-                    broken.append((p, u))
             if p.startswith("items/"):
                 if 'rel="next"' not in txt and 'rel="prev"' not in txt:
                     fail(f"{p}: no prev/next")
@@ -161,7 +232,8 @@ def main():
                 continue
             if not os.path.exists(os.path.normpath(os.path.join(tmp, u.partition("#")[0]))):
                 fail(f"preview: broken link {u}")
-        for bad in (["--out", os.path.join(ROOT, "docs", "x")], ["--out", out, "--preview", os.path.join(ROOT, "docs", "p.html")]):
+        for bad in (["--out", os.path.join(ROOT, "docs", "x")], ["--out", os.path.join(ROOT, "docs", "readings")],
+                    ["--out", out, "--preview", os.path.join(ROOT, "docs", "p.html")]):
             r = subprocess.run([sys.executable, SCRIPT] + bad, capture_output=True, text=True, cwd=ROOT)
             if r.returncode == 0 or "refused" not in (r.stderr + r.stdout):
                 fail(f"docs/ not refused for {bad}")
@@ -176,6 +248,7 @@ def main():
         if not os.path.exists(flag) and held != tiers.get("2", 0) + tiers.get("3", 0):
             fail(f"curator paragraphs shown before data/context_approved exists ({held} slots held)")
         print(f"ok: Context slots held {held} (flag {'present' if os.path.exists(flag) else 'absent'})")
+        check_public(S, tmp)
 
 
 if __name__ == "__main__":

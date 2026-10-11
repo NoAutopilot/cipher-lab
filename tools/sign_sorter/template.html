@@ -234,6 +234,22 @@ body.traypad #offer{bottom:100px}
 #fixBrush[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
 #fixBrushRow{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center}
 #fixSave{font-weight:600;background:var(--accent);color:var(--bg);border-color:var(--accent)}
+#s2Fix{font-weight:600}   /* step 2 (template 2026-10-09.6): the card with the box editor on, for the sign being placed */
+/* the box-check key (OPTS.key = "box", template 2026-10-09.6) */
+#boxKey[hidden]{display:none}
+#boxKey{margin:14px 0 0;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:8px 12px}
+#boxKey>summary{cursor:pointer;font-weight:600;padding:2px 0}
+#boxKey .kl{margin:6px 0 2px;font-size:.92rem}
+#boxKey table{border-collapse:collapse;width:100%;font-size:.88rem}
+#boxKey td{border-top:1px solid var(--line);padding:6px 6px;vertical-align:middle}
+#boxKey td.p{width:1%;white-space:nowrap;background:var(--tile);color:var(--tile-ink)}
+#boxKey td.s{font-weight:600;width:28%}
+#boxKey .leg{font-size:.78rem;color:var(--muted);margin:6px 0 0}
+@media (max-width:640px){#boxKey tr{display:grid;grid-template-columns:auto 1fr;gap:2px 8px;border-top:1px solid var(--line);padding:6px 0}
+#boxKey td{border:0;padding:0}
+#boxKey td.p{grid-row:span 2}
+#boxKey td.s{width:auto}
+#boxKey svg{width:auto;height:44px}}
 #viewSeg[hidden],#ctxNbL[hidden]{display:none}
 #viewSeg button{font-size:.82rem;padding:4px 10px}
 .t .trash{position:absolute;left:1px;top:1px;width:22px;height:22px;border-radius:4px;font:700 13px/22px var(--f-body);text-align:center;background:var(--bad);color:var(--on-fill);opacity:0;cursor:pointer;transition:opacity .1s}
@@ -301,6 +317,11 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 <div class="wrap">
   <h1>__TITLE__</h1>
   <p class="lede">__LEDE__</p>
+  <!-- "What to do: a key" for a box-check page (template 2026-10-09.6; page option OPTS.key = "box", tools/sign_sorter.py --key box, kept by
+       tools/sorter_rerender.py; owner, 10 Oct 2026: "add a simple key at the top explaining what to do in different situations with
+       examples"). The drawings are neutral shapes, never a real sign; the machine's box is a solid outline, the box after the fix a
+       dashed one (shape, not colour: the owner is red-green colour-blind). Removed from the page when the option is off. -->
+  <details id="boxKey" open hidden><summary>What to do: a key</summary><p class="kl"><b>Tap</b> a sign = put it aside in the tray. <b>Hold</b> a sign = open its card (large, on its line). Most fixes start with the card&rsquo;s <b>Fix the cut</b> button, which puts handles on the box; <b>Save cut</b>, <b>Add as a missed sign</b> and <b>Split</b> are right under it. Never read what a sign says: only where its box is.</p><p class="kl"><b>Step 2</b> (the boxes the machine was unsure of, one at a time): the first button under the sign is <b>Fix the cut</b>. Save cut or Split there checks the box and brings up the next one; <b>It was right</b> checks it as it is.</p><table><tr><td class="p"><svg viewBox="0 0 80 56" width="80" height="56" role="img" aria-hidden="true"><ellipse cx="40" cy="31" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="28" y="17" width="24" height="28" fill="none" stroke="#0072B2" stroke-width="2"/></svg></td><td class="s">One sign, the box fits it (a little paper round it is fine)</td><td>Leave it. Nothing to do.</td></tr><tr><td class="p"><svg viewBox="0 0 190 56" width="190" height="56" role="img" aria-hidden="true"><path d="M28 19 L28 42 M24 42 L32 42" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><ellipse cx="50" cy="31" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="20" y="16" width="42" height="31" fill="none" stroke="#0072B2" stroke-width="2"/><path d="M84 31 L100 31 M95 26 L100 31 L95 36" fill="none" stroke="currentColor" stroke-width="2"/><g transform="translate(108 0)"><path d="M20 19 L20 42 M16 42 L24 42" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><ellipse cx="42" cy="31" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="14" y="16" width="14" height="31" fill="none" stroke="#0072B2" stroke-width="2"/><rect x="33" y="16" width="20" height="31" fill="none" stroke="#0072B2" stroke-width="2" stroke-dasharray="5 3"/></g></svg></td><td class="s">Two signs in one box</td><td><b>Hold</b> it. In the card press <b>Fix the cut</b> (the box gets handles). Pull its side in (drag it, or tap the <b>Right edge</b> arrows) until it holds only the first sign, then press <b>Split: keep this part, add the rest</b>. The rest becomes its own box.</td></tr><tr><td class="p"><svg viewBox="0 0 190 56" width="190" height="56" role="img" aria-hidden="true"><ellipse cx="40" cy="31" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="26" y="17" width="12" height="28" fill="none" stroke="#0072B2" stroke-width="2"/><rect x="43" y="17" width="12" height="28" fill="none" stroke="#0072B2" stroke-width="2"/><path d="M84 31 L100 31 M95 26 L100 31 L95 36" fill="none" stroke="currentColor" stroke-width="2"/><g transform="translate(108 0)"><ellipse cx="32" cy="31" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="21" y="17" width="23" height="28" fill="none" stroke="#0072B2" stroke-width="2" stroke-dasharray="5 3"/></g></svg></td><td class="s">One sign cut into two boxes</td><td><b>Hold</b> the first piece. In the card press <b>Fix the cut</b>, stretch the box over the whole sign, press <b>Save cut</b>. Then hold the other piece and press <b>Trash (not a sign)</b>: it is part of the first box now.</td></tr><tr><td class="p"><svg viewBox="0 0 190 56" width="190" height="56" role="img" aria-hidden="true"><path d="M36 8 C46 8 46 22 36 26 L36 44" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><rect x="26" y="22" width="26" height="26" fill="none" stroke="#0072B2" stroke-width="2"/><path d="M84 31 L100 31 M95 26 L100 31 L95 36" fill="none" stroke="currentColor" stroke-width="2"/><g transform="translate(108 0)"><path d="M28 8 C38 8 38 22 28 26 L28 44" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><rect x="18" y="4" width="26" height="44" fill="none" stroke="#0072B2" stroke-width="2" stroke-dasharray="5 3"/></g></svg></td><td class="s">The box cuts off part of the sign</td><td><b>Hold</b> it. In the card press <b>Fix the cut</b>, drag the edge out over the missing stroke, press <b>Save cut</b>. Tick <b>Lines above and below</b> to see tall strokes.</td></tr><tr><td class="p"><svg viewBox="0 0 80 56" width="80" height="56" role="img" aria-hidden="true"><ellipse cx="40" cy="31" rx="9" ry="6" fill="currentColor" opacity=".28"/><rect x="28" y="21" width="24" height="20" fill="none" stroke="#0072B2" stroke-width="2"/></svg></td><td class="s">A box on a stain, a blot, the page edge or ink showing through from the back</td><td><b>Hold</b> it and press <b>Trash (not a sign)</b>.</td></tr><tr><td class="p"><svg viewBox="0 0 190 56" width="190" height="56" role="img" aria-hidden="true"><ellipse cx="26" cy="31" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="15" y="17" width="23" height="28" fill="none" stroke="#0072B2" stroke-width="2"/><path d="M54 19 L54 42 M50 42 L58 42" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M84 31 L100 31 M95 26 L100 31 L95 36" fill="none" stroke="currentColor" stroke-width="2"/><g transform="translate(108 0)"><ellipse cx="18" cy="31" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="7" y="17" width="23" height="28" fill="none" stroke="#0072B2" stroke-width="2"/><path d="M46 19 L46 42 M42 42 L50 42" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><rect x="38" y="15" width="16" height="32" fill="none" stroke="#0072B2" stroke-width="2" stroke-dasharray="5 3"/></g></svg></td><td class="s">A sign with no box</td><td><b>Hold</b> the box next to it. In the card press <b>Fix the cut</b>, drag the box onto the sign without one and press <b>Add as a missed sign</b>. The first box stays as it was.</td></tr><tr><td class="p"><svg viewBox="0 0 80 56" width="80" height="56" role="img" aria-hidden="true"><path d="M34 19 L34 42 M30 42 L38 42" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="50" cy="40" r="2.6" fill="currentColor"/><rect x="44" y="33" width="12" height="13" fill="none" stroke="#0072B2" stroke-width="2"/></svg></td><td class="s">A dot or tick in a box of its own (the second pile)</td><td>Standing alone (a full stop, a separator): leave it. Part of a sign: stretch that sign&rsquo;s box over it (row 3), then <b>Trash</b> the dot&rsquo;s own box.</td></tr><tr><td class="p"><svg viewBox="0 0 80 56" width="80" height="56" role="img" aria-hidden="true"><text x="40" y="38" text-anchor="middle" font-size="22" fill="currentColor">?</text><rect x="28" y="17" width="24" height="28" fill="none" stroke="#0072B2" stroke-width="2"/></svg></td><td class="s">Not sure</td><td><b>Tap</b> it: it waits in the tray at the bottom for later.</td></tr></table><p class="leg">In the drawings: the solid outline is the machine&rsquo;s box, the dashed outline is the box after your fix; the shapes stand for any sign. Tap the heading to fold this key away.</p></details>
   <p class="banner" id="banner" hidden></p>
   <div class="how">
     <div><b>Step 1 · Clean each pile</b>Look along a pile. <b style="display:inline;text-transform:none;letter-spacing:0">Tap</b> any sign that is not like the others: it moves to the "Taken out" tray at the bottom. Tap it there to put it back. When a pile looks right, press "This pile is done".</div>
@@ -331,7 +352,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
   </section>
   <section id="s2" hidden aria-label="Step 2: place each sign">
     <h2 class="ftitle">Place each sign</h2>
-    <p class="hint1" id="hint2">Tap the pile the sign belongs to (anywhere on its card)<span class="mouse-only">, or drag the sign onto it</span>. The closest-looking piles come first; for a question, its own pile is first. <b>View pile</b> on a card, or a hold anywhere on a card, opens that pile larger and places nothing. A tap on a small picture is a tap on its pile; <b>hold a small picture</b> to see that one tile larger; <b>hold the sign</b> at the top to see it larger. <span class="mouse-only"><b>Drag a small picture</b> onto another pile to move that one tile. </span><b>Drag a pile's name</b> (✥) onto another pile to merge the whole pile (on a phone: hold the name until it is outlined, then drag; let go without dragging and the pile opens).</p>
+    <p class="hint1" id="hint2">Tap the pile the sign belongs to (anywhere on its card)<span class="mouse-only">, or drag the sign onto it</span>. The closest-looking piles come first; for a question, its own pile is first. <b>View pile</b> on a card, or a hold anywhere on a card, opens that pile larger and places nothing. A tap on a small picture is a tap on its pile; <b>hold a small picture</b> to see that one tile larger; <b>hold the sign</b> at the top to see it larger. <b>Fix the cut</b>, the first button under the sign, opens its card with the box ready to fix: for a question, Save cut or Split there keeps it in its pile and brings up the next. <span class="mouse-only"><b>Drag a small picture</b> onto another pile to move that one tile. </span><b>Drag a pile's name</b> (✥) onto another pile to merge the whole pile (on a phone: hold the name until it is outlined, then drag; let go without dragging and the pile opens).</p>
     <div id="s2Note"><p class="hint" id="s2Msg" aria-live="polite"></p></div>
     <div id="s2Load" class="donebox" hidden><strong>Loading your earlier answers…</strong> <span id="s2LoadT"></span></div>
     <div id="s2Empty" class="donebox" hidden><strong id="s2EmptyH">Nothing waiting to be placed.</strong> <span id="s2EmptyT"></span> <button type="button" id="s2Back">Back to step 1</button></div>
@@ -344,7 +365,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
           <div class="row" id="s2Nav"><button type="button" id="s2Prev">&larr; Previous</button><button type="button" id="s2Next">Skip &rarr;</button></div></div></div>
       </div>
       <div class="cv"><canvas id="s2C"></canvas></div>
-      <div class="row" id="s2Acts" style="margin-top:10px"><button type="button" id="s2Home">Put back where it was</button><button type="button" id="s2New">None of these: new sign</button>
+      <div class="row" id="s2Acts" style="margin-top:10px"><button type="button" id="s2Fix" title="Open this sign's card with its box ready to fix; Save cut or Split there keeps it in its pile and brings up the next">Fix the cut</button><button type="button" id="s2Home">Put back where it was</button><button type="button" id="s2New">None of these: new sign</button>
         <button type="button" id="s2Mark">Not a letter</button><button type="button" id="s2Aside">Set aside</button><button type="button" id="s2Bad">Bad cut</button></div>
       </div>
       <p class="hint" id="s2CardsHint"></p>
@@ -430,6 +451,10 @@ const SPECIAL = new Set(['BAD-CUT', 'NOT-LETTER']);   // page-made piles that ar
 // = one tap, saved as a keep). Nothing is written to the db for this: a waiting tile has no move until the person acts, and a
 // tile with a saved decision (a move, a keep, a legacy set-aside) or one of the person's earlier picks (--refs) never waits.
 const TRAY_ON = !!(OPTS && OPTS.focusToTray);
+// the box-check key (OPTS.key = 'box'; see its block after the lede): shown, folded as the person last left it (per browser, best effort)
+(function(){ const k = document.getElementById('boxKey'); if (!k) return; if (!(OPTS && OPTS.key === 'box')){ k.remove(); return; } k.hidden = false;
+  try { if (localStorage.getItem('boxKeyClosed') === '1') k.open = false; } catch (e) {}
+  k.addEventListener('toggle', () => { try { localStorage.setItem('boxKeyClosed', k.open ? '0' : '1'); } catch (e) {} }); })();
 const trayOrder = {};    // sid -> 1, 2, ...: the question tiles, in the focus box's order, then the rank box's
 if (TRAY_ON) (DATA.focus || []).concat(DATA.rank || []).forEach(f => { const s = f && f.sid;
   if (s && itemBySid[s] && !itemBySid[s].r && !trayOrder[s]) trayOrder[s] = Object.keys(trayOrder).length + 1; });
@@ -559,13 +584,36 @@ document.addEventListener('touchend', e => { if (swallowMouse && e.cancelable) e
 // AND, half a second later, the card opened. The document clears the slot on that pointer's pointerup / pointercancel and on a drift
 // past the slop, wherever the element went. holdStart(e, el, ms, slop, fire, end): fire() when the hold completes; end() whenever the
 // slot is let go (completed, cancelled or replaced).
-let pend = null;   // {id: pointerId, x, y, t0, slop, touch, el, timer, end}
+// A press is a tap or a hold by its OWN clock (template 2026-10-09.6; sweep of 10 Oct 2026 on Debosnys, Lancosme and Juan Manuel, whose
+// render() takes 0.4-0.8 s): a render that holds the main thread delays the hold timer AND queues the finger's lift behind it, and when
+// the page is free again the browser may run the timer first -- a 120 ms tap then opened the card and moved nothing (3 of 9 probes on
+// Debosnys; 6 of 6 on the synthetic page blocked 0.6 s). So the lift decides whenever it is in: its pointerup's timeStamp minus the
+// pointerdown's (when each event happened, not when the page got to it; both on performance.now()'s clock) is the press's length --
+// under the hold time a tap, at or over it a hold (its card opens, nothing moves), however late either event is handled. The timer is set
+// from the pointerdown's own time, and when it comes due it does not fire at once: on time, it waits one more macrotask; LATE (the page
+// was busy: more than HOLD_LATE ms past due) it waits up to HOLD_GRACE ms more, and a lift handled in that time decides by its own time
+// as above. One macrotask was not enough (10 Oct 2026, headless Chromium, synthetic page blocked 0.6 s: the queued lift was handled 3-8
+// ms AFTER the late timer's next macrotask and after one animation frame too, 8 of 8 taps opened the card; with the grace, 8 of 8 taps
+// took the sign out and 8 of 8 lifts sent at 550 ms opened it). A finger still down when the wait ends is a hold. On a browser whose event
+// times are not on that clock (evT says null), a lift handled before the hold fires is a tap, as on 2026-10-09.5.
+const HOLD_LATE = 40, HOLD_GRACE = 100;
+let pend = null;   // {id: pointerId, x, y, t0, ts: the pointerdown's own time or null, ms, slop, touch, el, timer, fire, end}
+const evT = e => { const t = e && e.timeStamp; return typeof t === 'number' && isFinite(t) && t > 0 && Math.abs(performance.now() - t) < 60000 ? t : null; };
 function holdStart(e, el, ms, slop, fire, end){
-  holdEnd(); const p = {id: e.pointerId, x: e.clientX, y: e.clientY, t0: performance.now(), slop, touch: e.pointerType !== 'mouse', el, end, timer: 0};
-  p.timer = setTimeout(() => { if (pend !== p) return; pend = null; if (end) end(); fire(); }, ms); pend = p; }
+  holdEnd(); const now = performance.now(), ts = evT(e);
+  const p = {id: e.pointerId, x: e.clientX, y: e.clientY, t0: now, ts, ms, slop, touch: e.pointerType !== 'mouse', el, fire, end, timer: 0};
+  const due = () => { if (pend !== p) return; const late = performance.now() - (ts === null ? now : ts) - ms;
+    p.timer = setTimeout(() => { if (pend === p) holdFire(p); }, late > HOLD_LATE ? HOLD_GRACE : 0); };   // a lift queued behind a long task goes first
+  p.timer = setTimeout(due, Math.max(0, ms - (ts === null ? 0 : now - ts))); pend = p; }
+function holdFire(p){ pend = null; clearTimeout(p.timer); if (p.end) p.end(); p.fire(); }
 function holdEnd(el){ const p = pend; if (!p || (el && p.el !== el)) return; pend = null; clearTimeout(p.timer); if (p.end) p.end(); }
 document.addEventListener('pointermove', e => { if (pend && e.pointerId === pend.id && Math.hypot(e.clientX - pend.x, e.clientY - pend.y) > pend.slop) holdEnd(); }, true);
-document.addEventListener('pointerup', e => { if (pend && e.pointerId === pend.id) holdEnd(); }, true);
+// the lift: held at least the hold time by the two events' own times -> a hold, even when the timer has not run yet (the page was busy):
+// it fires now, before this pointerup reaches the element, and the lift's click and compatibility mouse events are swallowed as after
+// any hold (heldLift, from fire); else the press was a tap and the slot is let go (its click does the tap)
+document.addEventListener('pointerup', e => { const p = pend; if (!p || e.pointerId !== p.id) return; const t = evT(e);
+  if (p.ts !== null && t !== null && t - p.ts >= p.ms){ holdFire(p); if (swallowMouse){ clearTimeout(swallowT); swallowT = setTimeout(() => { swallowMouse = false; }, 700); } return; }
+  holdEnd(); }, true);
 document.addEventListener('pointercancel', e => { if (pend && e.pointerId === pend.id) holdEnd(); }, true);
 // The browser starts its own pan, and cancels the press, once a resting finger has drifted about 15 px (Chromium, measured on iPhone 13
 // and SE emulation, 10 Oct 2026; WebKit's own threshold is not measured here) -- short of the 18 px a hold allows, so a hold drifting
@@ -1136,6 +1184,23 @@ $('s2Aside').onclick = () => place('ASIDE');
 $('s2Home').onclick = () => { if (s2Cur) place(homeOf[s2Cur]); };
 $('s2Prev').onclick = () => { const L = outList(), i = L.indexOf(s2Cur); if (i > 0){ s2Cur = L[i - 1]; $('s2Msg').textContent = ''; renderS2(); } };
 $('s2Next').onclick = () => { const L = outList(), i = L.indexOf(s2Cur); if (i < L.length - 1){ s2Cur = L[i + 1]; $('s2Msg').textContent = ''; renderS2(); } };
+// Step 2's "Fix the cut" (template 2026-10-09.6; owner, 10 Oct 2026, on a box-check page: "im not seeing fix the cut ... on this page";
+// four pages were hand-patched the same day): it opens the card for the sign being placed with the box editor on. "Save cut" or "Split"
+// there (the cut saved, its own Undo step) checks the box: a question waiting in step 2 is kept in its pile, as "It was right" does (one
+// more Undo step), and the next one comes up; a sign taken out in step 1 stays waiting here for its pile (a fixed cut does not say where
+// it belongs). "Cancel" only stops editing (the card stays open; Fix the cut again, then Save, still checks it); "Close", Esc or a tap
+// outside the card end it: neither changes anything. "Add as a missed sign" leaves the box unchecked (the card stays open).
+let s2FixSid = null;   // the sign whose card step 2's "Fix the cut" opened, while that card is open
+$('s2Fix').onclick = () => { if (!s2Cur) return; const sid = s2Cur;
+  showCtx(sid, pileOf(sid), false, [sid], 'waiting in step 2'); s2FixSid = sid; fixStart();
+  $('ctxMsg').textContent = 'Fit the box to the sign, then press Save cut (or Split if it holds two signs). Close changes nothing.'; };
+function s2FixDone(sid){ if (!sid || sid !== s2FixSid) return;
+  const msg = $('ctxMsg').textContent.trim(), q = !!trayOrder[sid] && (preTrayed(sid) || moves[sid] === 'OUT'), home = homeOf[sid];
+  closeCtx(); if (step !== 2 || where(sid) !== 'OUT') return;
+  s2Cur = sid;
+  if (q){ place(home); if (!answered(sid)) return;   // place() said why not (the saved answers not in yet)
+    $('s2Msg').textContent = msg + ' Box checked: kept in ' + home + ' (Undo takes the keep back first); the next one is up.'; }
+  else { renderS2(); $('s2Msg').textContent = msg + ' It is still waiting here: tap the pile it belongs to.'; } }
 // drag the big sign onto a pile card with a mouse or pen; the page scrolls when the pointer nears an edge.
 // Owner rule R05 (template 2026-10-09.5): a HOLD on the big sign opens its card (large on its line, Fix the cut) and moves nothing;
 // a tap moves nothing either (it is in the tray already) and says so. A finger never drags it (round-2 check, 10 Oct 2026: a quick
@@ -1633,10 +1698,12 @@ $('fixBrushUndo').onclick = () => { if (!fix || !fix.mask.length) return; fix.ma
 $('ctxFix').onclick = () => { if (fix){ fixStop(); $('ctxMsg').textContent = 'Cut not changed.'; showCtx(ctxSid, pileOf(ctxSid), true); } else fixStart(); };
 $('fixCancel').onclick = () => { fixStop(); $('ctxMsg').textContent = 'Cut not changed.'; showCtx(ctxSid, pileOf(ctxSid), true); };
 $('fixReset').onclick = () => { if (fix){ fix.quad = rectQuad(itemBySid[fix.sid].b); fix.mask = []; brushUi(); fixChanged(); } };
-$('fixSave').onclick = () => {
-  if (!fix) return; const sid = fix.sid, q = fix.quad.map(p => p.slice()), mk = fix.mask.map(st => ({r: st.r, pts: st.pts.map(p => p.slice())})), b = quadBox(q), o = itemBySid[sid].b; fixStop();
+// save the box being edited as the tile's cut (its own Undo step) and show the card again; -> the tile's sid (null: nothing was being edited).
+// "Save cut" and the kept part of "Split" both come here; from step 2's "Fix the cut" either one then checks the box (s2FixDone).
+function saveCut(){
+  if (!fix) return null; const sid = fix.sid, q = fix.quad.map(p => p.slice()), mk = fix.mask.map(st => ({r: st.r, pts: st.pts.map(p => p.slice())})), b = quadBox(q), o = itemBySid[sid].b; fixStop();
   const same = (u, v) => JSON.stringify(u) === JSON.stringify(v);
-  if (same(q, quadOf(sid)) && same(mk, (recuts[sid] || {}).mask || [])){ $('ctxMsg').textContent = 'The cut is unchanged.'; showCtx(sid, pileOf(sid), true); return; }
+  if (same(q, quadOf(sid)) && same(mk, (recuts[sid] || {}).mask || [])){ $('ctxMsg').textContent = 'The cut is unchanged.'; showCtx(sid, pileOf(sid), true); return sid; }
   const e = []; e.recut = [sid, recuts[sid] ? {...recuts[sid]} : null]; history.push(e); if (history.length > 200) history.shift(); updateUndo();
   setRecut(sid, same(q, rectQuad(o)) && !mk.length ? null : {x: b[0], y: b[1], w: b[2], h: b[3], quad: q, mask: mk, old: o.slice(), at: stamp()}); saveRecut(sid);
   const m = $('ctxMsg'); m.textContent = (recuts[sid] ? 'Saved the new cut of ' + sid + '.' : 'Back to the first cut of ' + sid + '.') + ' It stays in its pile; Undo takes it back. ';
@@ -1644,8 +1711,9 @@ $('fixSave').onclick = () => {
     u.onclick = () => { remember([sid]); setDest(sid, homeOf[sid]); render(); showCtx(sid, homeOf[sid], true);   // a move, not an answer: a question tile waits again
       $('ctxMsg').textContent = 'Put ' + sid + ' back in pile ' + homeOf[sid] + '.' + (preTrayed(sid) ? ' Its question is still open: it waits in step 2.' : ''); };
     m.append(u); }
-  showCtx(sid, pileOf(sid), true);
-};
+  showCtx(sid, pileOf(sid), true); return sid;
+}
+$('fixSave').onclick = () => s2FixDone(saveCut());
 // ---- Add a missed sign / split a merged box (MQS-SORTER-BOX, 9 Oct 2026; research/MARY-STUART-TALK-2026-10-09.tsv M07, the CTTS
 // transcriber's "box each symbol"). Both reuse the Fix-the-cut box. "Add as a missed sign": the box as edited is saved as an added
 // box (db collection 'added', doc id = <tile>+<n>), the tile's own cut unchanged. "Split": the edited box is saved as the tile's cut
@@ -1672,9 +1740,9 @@ $('fixAdd').onclick = () => {
 $('fixSplit').onclick = () => {
   if (!fix) return; const sid = fix.sid, q = fix.quad.map(p => p.slice()), rest = splitRest(fix.anchor, q);
   if (!rest){ $('fixState').textContent += ' (nothing left to split off: make the box narrower first)'; return; }
-  $('fixSave').onclick();   // the kept part: saved as the tile's cut, with its own Undo step
+  saveCut();   // the kept part: saved as the tile's cut, with its own Undo step
   const id = addBox(sid, rest, [], 'split'), e = []; e.added = id; history.push(e); if (history.length > 200) history.shift(); updateUndo();
-  $('ctxMsg').textContent = 'Split ' + sid + ': kept the part you fitted, added the rest as ' + id + '. Undo twice takes both back.'; };
+  $('ctxMsg').textContent = 'Split ' + sid + ': kept the part you fitted, added the rest as ' + id + '. Undo twice takes both back.'; s2FixDone(sid); };
 (function(){   // drag an edge, a corner or the whole box, or paint stray ink, on the line canvas (pointer events: mouse, pen and touch; no page scroll while editing)
   const c = $('ctxC'); let d = null;
   const at = e => { const m = c._map, r = c.getBoundingClientRect(); const px = (e.clientX - r.left) * m.k, py = (e.clientY - r.top) * m.k;
@@ -1720,6 +1788,7 @@ $('fixSplit').onclick = () => {
 let ctxList = [];
 let ctxListName = 'in this pile';
 function showCtx(sid, pid, keepList, list, listName){
+  if (sid !== s2FixSid) s2FixSid = null;   // another sign's card: step 2's "Fix the cut" no longer applies
   if (!keepList){ ctxList = list ? list.slice() : membersOf(pid).concat(asideOf(pid)); ctxListName = listName || 'in this pile';
     $('ctxMsg').textContent = ''; }
   if (fix && fix.sid !== sid) fixStop();
@@ -1794,7 +1863,7 @@ $('ctxNewB').onclick = () => { if (notYet(ctxSid, $('ctxMsg'))) return; ctxMove(
 document.addEventListener('keydown', e => { if ($('ctx').hidden || e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
   if (e.key === 'Enter' && fix && e.target.tagName !== 'BUTTON'){ e.preventDefault(); $('fixSave').click(); return; }   // owner, 6 Oct 2026: Enter saves the cut
   if (e.key === 'ArrowLeft') ctxStep(-1); if (e.key === 'ArrowRight') ctxStep(1); });
-const closeCtx = () => { if (fix) fixStop(); $('ctx').hidden = true; const o = $('offer'); o.classList.remove('inbox'); document.querySelector('.wrap').append(o); if (!o.hidden) placeOffer(); };
+const closeCtx = () => { s2FixSid = null; if (fix) fixStop(); $('ctx').hidden = true; const o = $('offer'); o.classList.remove('inbox'); document.querySelector('.wrap').append(o); if (!o.hidden) placeOffer(); };
 $('ctxClose').onclick = closeCtx;
 $('ctxX').onclick = closeCtx;
 $('ctx').onclick = e => { if (e.target.id === 'ctx') closeCtx(); };

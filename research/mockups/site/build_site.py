@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 """build_site.py -- one private preview site: the exhibit as the front door, the full catalogue behind it (SITE-SHIP-1, 10 Oct 2026).
 
-PRIVATE MOCK-UP. Nothing this writes is published; the owner decides later whether and where (owner, 10 Oct 2026 01:0x UTC: "ship the
-rest, along with useful navigation"). Writing under docs/ (the GitHub Pages folder) is refused, as tools/build_catalogue.py refuses it.
+PRIVATE MOCK-UP by default. Without --public nothing this writes is published (owner, 10 Oct 2026 01:0x UTC: "ship the rest, along
+with useful navigation"), and writing under docs/ (the GitHub Pages folder) is refused, as tools/build_catalogue.py refuses it.
+--public (owner, 10 Oct 2026 about 22:5x UTC: "Readings site: live yes"): the output must be under docs/readings/ (any other path,
+inside docs/ or not, is refused; --preview is refused, the single-file preview stays the private artifact), and the private-preview
+banner becomes a one-line public note with a link to the repository; the footer's "Private preview, <date>." reads "Built <date>.".
+Nothing else changes: the held curator paragraphs still need data/context_approved, whatever the flag.
 
 It calls the two approved builders rather than copying them: tools/build_catalogue.py (items, index, item pages, how-to-read, credits,
 readings worth attention) and research/mockups/exhibit/build_exhibit2.py (the three displays). This script adds only the site shell:
@@ -16,6 +20,7 @@ time, so files the desk runner drops there fill the faces on the next build). Wi
 with images embedded; item links relative into the site folder). All paths relative, none with a leading slash.
 
 Usage: python3 research/mockups/site/build_site.py [--out DIR] [--preview FILE] [--date "10 October 2026"]
+       python3 research/mockups/site/build_site.py --public --out docs/readings [--date "10 October 2026"]
 """
 import argparse
 import base64
@@ -39,6 +44,13 @@ B = X.B
 E = html.escape
 EXHIBIT_DIR = os.path.join(ROOT, "research", "mockups", "exhibit")
 CAT_IMG = os.path.join(ROOT, "research", "mockups", "catalogue", "img")
+DOCS = os.path.join(ROOT, "docs")  # the GitHub Pages folder (docs/index.html is the board, tools/build_dashboard.py)
+READINGS = os.path.join(DOCS, "readings")  # the only place --public may write
+REPO_URL = "https://github.com/NoAutopilot/cipher-lab"
+PRIVATE_BANNER = '<p class="mock">Private preview for review. Not published, not linked from anywhere.</p>'
+PUBLIC_NOTE = ("Cipher Lab readings: what our agents have read in historical cipher letters, with the evidence. Each reading carries "
+               "its grade; see How to read.")
+SITE = {"public": False}  # set by write_site; read by shell, footer and the front door's description
 
 # Which catalogue items each display rests on (title substrings, all must match). The first is the display's main item.
 DISPLAY_ITEMS = {
@@ -76,6 +88,7 @@ ul.browse .one{display:block;color:var(--muted);font-size:.95em}
 .toc{font:14px system-ui,sans-serif;display:flex;flex-wrap:wrap;gap:6px 14px}
 .door{border-top:3px double var(--rule);margin-top:36px;padding-top:6px}
 .dsum{border:1px solid var(--rule);padding:10px 14px;margin:16px 0}
+.sitenote{font:13px/1.4 system-ui,sans-serif;color:var(--muted);margin:10px 0}.sitenote a{color:inherit}
 @media (max-width:560px){.qf{min-width:0;width:100%}.pager a{max-width:100%}}
 """
 
@@ -103,8 +116,17 @@ def crumbs(prefix, trail):
     return '<p class="crumbs">' + " &rsaquo; ".join(parts) + "</p>"
 
 
+def banner(prefix):
+    """The line under the top bar: the private-preview banner, or with --public the one-line note and the repository link."""
+    if not SITE["public"]:
+        return PRIVATE_BANNER
+    note = E(PUBLIC_NOTE).replace("How to read.", f'<a href="{prefix}how-to-read.html">How to read</a>.')
+    return f'<p class="sitenote">{note} &middot; <a href="{REPO_URL}">Repository</a></p>'
+
+
 def footer(date, prefix):
-    return (f'<footer class="site">Private preview, {E(date)}. Readings graded per CLAUDE.md rule 4; novelty classes per rule 10 '
+    when = f"Built {E(date)}." if SITE["public"] else f"Private preview, {E(date)}."
+    return (f'<footer class="site">{when} Readings graded per CLAUDE.md rule 4; novelty classes per rule 10 '
             '(verifier\'s verdict). Nothing here is called first, new or unpublished. '
             f'<a href="{prefix}sitemap.html">Sitemap</a></footer>')
 
@@ -116,8 +138,27 @@ def shell(title, body, prefix, current, trail, date, desc="", exhibit=False):
     return ('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<title>{E(title)}</title>' + (f'<meta name="description" content="{E(desc)}">' if desc else "")
             + f'<style>{css}</style></head><body><main>{top_bar(prefix, current)}{crumbs(prefix, trail) if trail else ""}'
-            '<p class="mock">Private preview for review. Not published, not linked from anywhere.</p>'
-            f'{body}{footer(date, prefix)}</main>{js}</body></html>\n')
+            f'{banner(prefix)}{body}{footer(date, prefix)}</main>{js}</body></html>\n')
+
+
+def under(path, root):
+    a, r = os.path.abspath(path), os.path.abspath(root)
+    return a == r or a.startswith(r + os.sep)
+
+
+def path_refusal(out, preview, public):
+    """'' when the paths may be written; otherwise the refusal message. Without --public nothing under docs/; with --public the
+    output must be under docs/readings/ (docs/index.html, the board, and the rest of docs/ stay out of reach) and no --preview."""
+    if public:
+        if not under(out, READINGS):
+            return "refused: with --public the output must be under docs/readings/ (owner, 10 Oct 2026: readings site live)"
+        if preview:
+            return "refused: --preview with --public; the single-file preview is the private artifact, build it without --public"
+        return ""
+    for p in (out, preview):
+        if p and under(p, DOCS):
+            return "refused: docs/ is the GitHub Pages folder; without --public the site is a private preview (owner, 10 Oct 2026)"
+    return ""
 
 
 def load():
@@ -285,9 +326,11 @@ def browse_page(items, kind, quotes, href):
     return "".join(out)
 
 
-def write_site(out, date):
-    if os.path.abspath(out).startswith(os.path.abspath("docs") + os.sep) or os.path.abspath(out) == os.path.abspath("docs"):
-        sys.exit("refused: docs/ is the GitHub Pages folder; the site is a private preview (owner, 10 Oct 2026)")
+def write_site(out, date, public=False):
+    why = path_refusal(out, "", public)
+    if why:
+        sys.exit(why)
+    SITE["public"] = public
     items, ns, results, targets = load()
     dmap = display_map(items)
     item_display = {it["file"]: d for d in X.DISPLAYS for it in dmap.get(d["slug"], [])}
@@ -307,7 +350,8 @@ def write_site(out, date):
     door = door_html(lambda p: "assets/exhibit-" + p, lambda d: f"exhibit/{d['slug']}.html", lambda it: "items/" + it["file"], dmap)
     idx = readings_index(items, ns, results, targets, lambda it: "items/" + it["file"])
     w("index.html", shell("What the cipher said", door + f'<section class="door">{idx}</section>', "", "Exhibit", None, date,
-                          "Three cipher displays, then every audited reading (private preview).", exhibit=True))
+                          "Three cipher displays, then every audited reading" + ("." if public else " (private preview)."),
+                          exhibit=True))
     w("all-readings.html", shell("All readings", idx, "", "All readings", [("All readings", "")], date))
     # displays
     for d in X.DISPLAYS:
@@ -917,11 +961,13 @@ def main(argv=None):
     ap.add_argument("--out", default="research/mockups/site/")
     ap.add_argument("--preview", default="")
     ap.add_argument("--date", default=time.strftime("%-d %B %Y", time.gmtime()))
+    ap.add_argument("--public", action="store_true",
+                    help="build the public readings site: --out must be under docs/readings/; public note instead of the banner")
     a = ap.parse_args(argv)
-    for p in (a.out, a.preview):
-        if p and (os.path.abspath(p) + os.sep).startswith(os.path.abspath("docs") + os.sep):
-            sys.exit("refused: docs/ is the GitHub Pages folder; the site is a private preview (owner, 10 Oct 2026)")
-    items, dmap, pages, stats = write_site(a.out, a.date)
+    why = path_refusal(a.out, a.preview, a.public)
+    if why:
+        sys.exit(why)
+    items, dmap, pages, stats = write_site(a.out, a.date, a.public)
     msg = (f"site: {len(pages)} pages ({len(items)} item pages, {len(X.DISPLAYS)} displays, {stats['people']} people pages) -> {a.out}"
            f"; English pending {stats['pending_en']} of {len(items)}; interest tiers "
            + ", ".join(f"{k}: {v}" for k, v in sorted(stats["tiers"].items())))
