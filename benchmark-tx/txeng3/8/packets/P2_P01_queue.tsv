@@ -1,0 +1,5 @@
+line	col	kind	candidates	left_neighbours	right_neighbours
+f178v_L01	12	disagree	T60 | T86	T53 T45 T38	T26 T96 T60
+f178v_L07	13	disagree	T36 | T27	T83 T80 T76	T96 T90 T37
+f178v_L10	30	disagree	T36 | T18	T37 T83 T45	T96 
+f178v_L10	32	disagree	(no sign) | 	T45 T36 T96	
