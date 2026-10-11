@@ -434,3 +434,40 @@ substitution, not a two-digit code -- ruled out by form. Key no.71 (f.7 of this 
 tried on f.10r.
 - [ ] known-keys (added by V1-F4712): key no.71 (fr.3995 Nevers collection; f.7 of this volume, Cabinet Noir's key) on f.10r's 37 numbers,
   with a matched control; ~$2. f.35 (Lasry 2022) ruled out by design.
+
+## F4712-40 (worker for LANE DEFAULT-A1-0540, account 1, 11 Oct 2026, 06:17-06:2x UTC by date -u): f.13r code 40 gloss, third blind read -- NON-TEST
+
+Brief: `.claude/briefs/runs/2026-10-11-acct1-default-0540-jobs.md` "F4712-40". Disk only (0 requests). Pre-registered
+`PREREG-F4712-40.md` (commit 1dcd8b4b8, on origin/main before the read). Tiles cut with `tools/iiif_lines.py --image
+images/f13r/recon_1.jpg --region 620,1215,320,120 --centres 60 --lines-per-crop 1 --top-margin 60 --bottom-margin 60 --prefix t1
+--out images/f13r/g40` (t2: recon_1 1080,1220,330,110 centre 55; t3: recon_2 640,950,380,120; t4: recon_1 600,315,400,120),
+committed in `images/f13r/g40/` (manifest.json). t1 = code 21 (decoy, H "Berry"), t2 = code 40 tile 40b, t3 = code 54 line 15
+(decoy, H "Lorm."), t4 = code 40 tile 40a. One blind Sonnet subagent call, told only "four abbreviated words ... French hand of
+about 1592; transcribe each letter by letter"; no code numbers, no earlier reading, no candidate letters.
+
+Result (`g40_read.tsv`): t1 "Bery" (it added "most plausible: Berry"), t3 "Lasmi-": **both decoys miss** under the
+pre-registered exact-letter rule, so the gate fails and **the read is a NON-TEST**; no vote counted. For the record only: the
+reader gave **R** as the first letter of the main word on both code-40 tiles (t2 "Ril.", t4 "l Rill."), naming V and L only as
+alternatives, so even a passed gate would have given a TIE (neither V nor L). Code 40's gloss stays **M** ("Vill." pass A /
+"Lill." pass B); no key edit, so no decode_key run was needed.
+Per CLAUDE.md rule 3's third-attempt clause (two Opus passes split, this third model read is a non-test), the **model-reader
+instrument is [retired] for this gloss**; the gloss goes to the owner's eye as ASKS 162 (backlog, never blocking).
+Code 93 (report only, not read here): two different glosses on the same code, line 2 "Pari."/"Pon." and line 13
+"Inge?"/"Iuge?" (DUCH-F13, `f13_code_gloss.tsv`); an unresolved data conflict on f.13r, M, and code 93 does not occur on
+f.10r under S1. Neither code 40 nor code 93 limits the f.10r carry.
+
+## Remaining gaps (F4712-40, 11 Oct 2026)
+Read so far: 6 of 37 f.10r tokens at C under S1 (16%), f13_carry.tsv; 31 tokens unread
+- f.10r tokens outside f.13r's H-glossed codes (31 of 37) - blocker: no-key-material; key no.1 is a non-test at 37 tokens (DUCH-KEY1B), key no.4 cannot cover f.10r (DUCH-KEY4), f.13r's M glosses do not reach them; key no.71 (V1-F4712) and the leaves after f.13 are the untried routes (Escalation siblings, known-keys)
+- same-writer basis of the six C carries - blocker: not-attempted; one person's eye vs our 8-form reading, the machine digit test was a NON-TEST; next: a digit-rich f.13r/f.10r comparison or a palaeographer's look, ~$2
+- f.13r code 40 gloss (Vill. vs Lill.) and code 93 conflict - blocker: waiting-on ASKS 162 (the owner's eye on images/f13r/g40 t2/t4 and recon_1/recon_2 tiles 93a/93b); model-reader instrument retired for this gloss (F4712-40 NON-TEST, g40_read.tsv); neither code occurs on f.10r under S1
+
+## Escalation (F4712-40, 11 Oct 2026)
+- [ ] siblings: leaves after f.13 (f.13v onward, canvas 23+) are unviewed; planned: a leaf census like DUCH-LEAVES
+- [x] clear-pages: ff.9, 11, 12 checked, no cipher (DUCH-LEAVES); f.13r's glossed codes used as the crib (DUCH-F13)
+- [ ] known-keys: key no.1 applied (non-test, DUCH-KEY1B), key no.4 tried (design mismatch, DUCH-KEY4); planned: key no.71 (fr.3995; f.7 of this volume) on f.10r's 37 numbers with a matched control, ~$2 (V1-F4712)
+- [x] print: Gomberville's Mémoires (1665) full-text searched (NV-INTAKE, 3 Oct 2026), no cipher passage printed
+- [n/a] key-rebuild: 37 tokens is far below any cryptanalytic length for a code of this size
+- [x] image-check: f.10r read from crops (DUCH-KEY1B), f.13r two blind passes agree on all 34 codes (DUCH-F13); code 40 gloss third model read a NON-TEST (F4712-40), model reader retired for that gloss, owner's eye ASKS 162
+- [x] retry: hand question retried by a blind digit test (R11A-F4712, NON-TEST) and settled by the person's look (ASKS 113)
+Verdict: keep going: 1 internal gaps; cheapest next: leaf census of f.13v onward for a glossed sibling, ~$2 (or key no.71 on f.10r with a matched control, ~$2)

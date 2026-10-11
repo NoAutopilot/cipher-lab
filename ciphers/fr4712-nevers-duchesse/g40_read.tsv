@@ -1,0 +1,5 @@
+tile	source	code	role	settled	reader_transcription	reader_notes	scored_letters	result
+t1	recon_1 tile 21	21	decoy	H Berry	Bery	"most plausible: Berry"; r uncertain (v/u), letter count 4-5 uncertain	bery	MISS (needs berry)
+t2	recon_1 tile 40b	40	target	M Vill./Lill.	Ril.	R uncertain, alt L, S, Pl; best guess "Vill." or "Rill."	r	no vote (gate failed); R is neither V nor L
+t3	recon_2 tile 54b	54	decoy	H Lorm.	Lasmi-	L clear; alts Larmi-, Lasnu-, Sasmi-	lasmi	MISS (needs lorm)
+t4	recon_1 tile 40a	40	target	M Vill./Lill.	l Rill.	R alt K or V; leading small mark l/t; same word as t2	r	no vote (gate failed); R is neither V nor L
