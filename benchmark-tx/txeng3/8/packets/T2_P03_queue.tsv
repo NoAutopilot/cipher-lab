@@ -1,0 +1,17 @@
+line	col	kind	candidates	left_neighbours	right_neighbours
+f178v_L09	27	disagree	T65 | T90	T65 T25 T33	T37 T11
+f178v_L09	29	disagree	T11 | (no sign)	T33 T65 T37	
+f178v_L10	3	disagree	T18 | T98	T53 T86	T76 T92 T19
+f178v_L10	8	disagree	T18 | T98	T92 T19 T58	T85 T53 T27
+f178v_L10	12	disagree	T18 | T98	T85 T53 T27	T55 T60 T55
+f178v_L10	17	disagree	T76 | (no sign)	T60 T55 T15	T86 T70 T58
+f178v_L10	24	disagree	T65 | T90	T27 T60 T45	T33 T19 T24
+f178v_L10	29	disagree	T29 | T83	T19 T24 T37	T45 T36 T27
+f178v_L10	31	disagree	T36 | T98	T37 T29 T45	T27 
+f178v_L10	33	disagree	 | (no sign)	T45 T36 T27	
+f178v_L11	4	disagree	T95 | T51	T26 T33 T19	T76 T92 T45
+f178v_L11	15	disagree	T29 | T83	T37 T33 T45	T86 T80 T19
+f178v_L11	21	disagree	T29 | T83	T19 T24 T19	T51 T37 T63
+f178v_L11	26	disagree	T65 | T90	T37 T63 T80	T55 T53 T86
+f178v_L11	30	disagree	(no sign) | T83	T55 T53 T86	T29 T95
+f178v_L11	31	disagree	T29 | T51	T53 T86 T83	T95

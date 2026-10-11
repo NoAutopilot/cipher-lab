@@ -1,0 +1,169 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	T98	T18	M	circle with stem through; line start
+L01	2	T37		H	circle crossed by bar
+L01	3	T95	T51	M	p-like with crossbar on stem
+L01	4	T19		H	pi
+L01	5	T97	T24	L	reversed-3 joined to epsilon, cross stroke
+L01	6	T52		H	n with hooked tail
+L01	7	T85		H	plus
+L01	8	T95	T51	M	p-like with crossbar
+L01	9	T53		H	infinity
+L01	10	T89		M	loop at foot, stem hooks
+L01	11	T38		M	m curled first stroke
+L01	12	T60	T86	M	hash
+L01	13	T76	T26	L	o with j-like tail
+L01	14	T27		M	l-loop with hooked top
+L01	15	T60		M	hash
+L01	16	T36	T18	M	circle on stem below
+L01	17	T85		H	plus
+L01	18	T54		H	script R
+L01	19	T80		H	script D
+L01	20	T60		H	hash
+L01	21	T37		H	circle crossed by bar
+L01	22	T97	T24	L	reversed-3 joined to epsilon
+L01	23	T92	T50	M	curly w
+L01	24	T25		H	lambda
+L01	25	T85		H	plus
+L01	26	T13		H	m with tilde above
+L01	27	T37		H	circle crossed by bar; line end
+L02	1	T86	T33	M	two verticals on low bar; line start
+L02	2	T19		H	pi
+L02	3	T58		H	script B
+L02	4	T53		H	infinity
+L02	5	T85		H	plus
+L02	6	T63		H	V
+L02	7	T25		M	lambda with hooked apex
+L02	8	T42		H	T with hook right
+L02	9	T49		M	box with stem at left
+L02	10	T37		H	circle crossed by bar
+L02	11	T98	T18	M	circle with stem through
+L02	12	T36	T18	M	circle on stem below
+L02	13	T19		H	pi
+L02	14	T70		H	delta
+L02	15	T60		H	hash
+L02	16	T37		H	circle crossed by bar
+L02	17	T98	T18	M	circle with stem through
+L02	18	T86	T33	M	two verticals on low bar
+L02	19	T81		M	x-like fish shape
+L02	20	T27		M	l-loop
+L02	21	T53		H	infinity
+L02	22	T19		H	pi
+L02	23	T64		H	m
+L02	24	T37		H	circle crossed by bar
+L02	25	T86	T33	M	two short verticals on bar, raised
+L02	26	T53		H	infinity
+L02	27	T19		H	pi; line end
+L03	1	T88		H	small circle; line start
+L03	2	T86	T33	M	two verticals on low bar
+L03	3	T86	T60	M	two verticals one bar, hash-like
+L03	4	T92	T50	M	curly w
+L03	5	T53		H	infinity
+L03	6	T37		H	circle crossed by bar
+L03	7	T76		H	g shape
+L03	8	T19		H	pi
+L03	9	T86	T33	M	two verticals on low bar
+L03	10	T37		H	circle crossed by bar
+L03	11	T98	T18	M	circle with stem through
+L03	12	T25		M	lambda, tick above
+L03	13	T89		M	loop at foot, stem hooks
+L03	14	T97	T24	L	reversed-3 joined to epsilon
+L03	15	T25		H	lambda
+L03	16	T53		H	infinity
+L03	17	T19		H	pi
+L03	18	T11	T97	L	8/5-like knot shape
+L03	19	T60		H	hash
+L03	20	T85		H	plus
+L03	21	T53		H	infinity
+L03	22	T19		H	pi
+L03	23	T37		H	circle crossed by bar
+L03	24	T11	T46	M	8 followed by long-s/5
+L03	25	T60		H	hash
+L03	26	T86	T60	M	two verticals one bar; line end
+L04	1	T90		M	cross over small loop; line start
+L04	2	T25		H	lambda
+L04	3	T86	T33	M	two verticals on low bar
+L04	4	T92	T50	M	curly w
+L04	5	T86	T60	M	two verticals one bar
+L04	6	T76		H	g shape
+L04	7	T89		M	b-like loop at foot
+L04	8	T60		H	hash
+L04	9	T90		M	cross over loop
+L04	10	T37		H	circle crossed by bar
+L04	11	T11	T97	L	8/5-like knot shape
+L04	12	T53		H	infinity
+L04	13	T27		M	l-loop hooked top
+L04	14	T65		M	circle on stem with crossbar below
+L04	15	T19		H	pi
+L04	16	T98	T18	M	circle with stem through
+L04	17	T27		M	l-loop
+L04	18	T54		H	script R
+L04	19	T19		H	pi
+L04	20	T98	T18	M	circle with stem through
+L04	21	T52		H	n hooked tail
+L04	22	T26	T89	L	9-curl joined to b-loop
+L04	23	T60		H	hash
+L04	24	T57		H	diamond with tail
+L04	25	T86	T60	M	two verticals one bar
+L04	26	T60		H	hash
+L04	27	T98	T18	M	circle with stem through
+L04	28	T52		H	n hooked tail; line end
+L05	1	T26	T76	M	q-like curl; line start
+L05	2	T57		H	diamond with tail
+L05	3	T55		M	F-like two bars right
+L05	4	T90	T51	M	cross on stem, loop at foot
+L05	5	T58		H	script B
+L05	6	T37		H	circle crossed by bar
+L05	7	T51		M	small t, hooked foot
+L05	8	T19		H	pi
+L05	9	T13		M	m, tilde above offset right
+L05	10	T25		H	lambda
+L05	11	T60		H	hash
+L05	12	T63		H	V
+L05	13	T89		M	loop at foot, stem hooks
+L05	14	T13		M	m with tilde, dot after
+L05	15	T85		H	plus
+L05	16	T19		H	pi
+L05	17	X_K		H	capital K
+L05	18	T89		M	loop at foot, stem hooks
+L05	19	T76		H	g shape
+L05	20	T25		H	lambda
+L05	21	T19		M	pi with dot above
+L05	22	T60		H	hash
+L05	23	T86	T60	M	two verticals one bar
+L05	24	T26	T89	L	9-curl joined to b-loop
+L05	25	T92	T50	M	curly w
+L05	26	T19		H	pi
+L05	27	T76		H	g shape
+L05	28	T52		H	n hooked tail
+L05	29	T54		H	script R
+L05	30	T37		H	circle crossed by bar
+L05	31	T76		H	g shape; line end
+L06	1	T53		H	infinity; line start
+L06	2	T89		M	loop at foot, stem hooks
+L06	3	T60		H	hash
+L06	4	T86	T60	M	two verticals one bar
+L06	5	T76		H	g shape
+L06	6	T63		H	V
+L06	7	T19		H	pi
+L06	8	T29		H	epsilon then small circle
+L06	9	T24		M	3 shape
+L06	10	T37		H	circle crossed by bar
+L06	11	T86	T33	M	two verticals on low bar
+L06	12	T19		H	pi
+L06	13	T97	T24	L	reversed-3 joined to epsilon
+L06	14	T80		H	script D
+L06	15	T10		H	two circles joined by bar
+L06	16	T37		H	circle crossed by bar
+L06	17	T60		H	hash
+L06	18	T98	T18	M	circle with stem through
+L06	19	T55		M	F-like two bars right
+L06	20	T65		M	circle on stem, crossbar below
+L06	21	T86	T33	M	two short verticals on bar, raised
+L06	22	T76	T27	M	closed loop, long tail left
+L06	23	T80		H	script D
+L06	24	T58		H	script B
+L06	25	T80		H	script D
+L06	26	T15	T97	M	8 followed by 9
+L06	27	T29		H	epsilon then small circle
+L06	28	T63		H	V
+L06	29	T89		M	loop at foot, stem hooks; line end
