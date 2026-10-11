@@ -1,11 +1,11 @@
 # Birch vol 6 p.160 l.19092 (Bamfylde, Paris, April 7/17 1657), decode under the vol 4 1655 gloss table.
-# lower case = C, upper = M, ? = U, [n] = word/name code unread. Gate: gate_bamf.json (PASS); D1 at most.
-[937] | [745]aryesto | [356]sauo? | pentioneoner
-# grades: C 23 M 0 U 1 of 24 letter codes
+# lower case = C, upper = M, ? = U, [n] = word/name code unread, [n=v] word/name code from additions_bamf2.tsv (upper = M). Gate: gate_bamf.json (PASS); D1 at most.
+[937=Mazarin] | [745=SECRET]aryesto | [356]sauoY | pentioneoner
+# grades: C 23 M 1 U 0 of 24 letter codes
 
 code	letter	grade	attested
-937		code	
-745		code	
+937	Mazarin	code-C	additions_bamf2
+745	secret	code-M	additions_bamf2
 12	a	C	6/6
 36	r	C	8/8
 39	y	C	2/2
@@ -13,12 +13,12 @@ code	letter	grade	attested
 20	s	C	6/6
 37	t	C	5/5
 8	o	C	3/3
-356		code	
+356		code-U	
 20	s	C	6/6
 17	a	C	3/3
 72	u	C	3/4
 35	o	C	2/2
-94	?	U	0/0
+94	y	M	additions_bamf2
 62	p	C	3/3
 22	e	C	5/5
 43	n	C	4/4

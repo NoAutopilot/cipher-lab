@@ -1,0 +1,7 @@
+# THUR-BAMF2 (11 Oct 2026): values for p.160 codes outside the 51-code gate table, from Bamfylde letters of Birch vol 5 (First Cipher period).
+# Grades follow PREREG-THUR-BAMF.md: C = attested >= 2 times in the printed gloss, no conflict; M = attested once, or witnesses conflict (rule 4).
+# Image-checked on collectionofstat05thur leaves n670 (p.677) and n505 (p.512); crops bamf/crops/v5p677_*.jpg, v5p512_94gloss.jpg.
+code	value	grade	witnesses
+937	Mazarin	C	Birch vol 5 p.677 (djvu l.55611 'C. Maz.', l.55620 'Maz.', l.55647 'Maz.' per djvu; first two image-checked) -- Bamfylde letter, A.D. 1656
+745	secret	M	Birch vol 5 p.677 (djvu l.55654-5): gloss 'great secret' over '434 745', once; Tomokiyo bamp1.jpg has no entry >= 100 apart from his note (754/755/790/799 the)
+94	y	M	CONFLICT: Birch vol 5 p.512 (djvu l.41980-1) prints 'y' over 94 in 'S l a s s e y e' over '23 47 19 82 83 27 94 22' (once); Tomokiyo bamp1.jpg gives 94 = t (his source instance not identified)

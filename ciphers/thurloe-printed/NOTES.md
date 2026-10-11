@@ -3724,3 +3724,41 @@ Read so far: Bamfylde p.160 run decoded under a gated print-gloss table (C 23, U
 - [ ] image-check: l.68904, p.231 foot, other 1655-57 Bamfylde letters
 - [x] retry: none needed (10 IA requests, no errors)
 Verdict: keep going: 8 internal gaps; cheapest next: verifier pass on the p.160 fragments and a Tomokiyo bamp1.jpg comparison, ~$2
+
+## THUR-BAMF2 (LANE DEFAULT-A2-0509, account 2, worker Opus 5.5, 11 Oct 2026 06:16-06:3x UTC by date -u)
+Brief: .claude/briefs/runs/2026-10-11-ytbiz-default-0509-jobs.md "### THUR-BAMF2". Question: does Tomokiyo's published Bampfield First Cipher table agree with our 51-code print-gloss table, and do codes 937, 745, 356, 94 of the p.160 run (vol 6 l.19092) carry a printed gloss in another 1655-57 Bamfylde letter?
+**Prior work.** THUR-BAMF's step 0 (same day, same item) covers checks 1-4; nothing new since (ROOM.md tail, grep bamf over ciphers/). Tomokiyo's two table images were the open item.
+**Route.** cryptiana.web.fc2.com 4 requests (bamp1.jpg, bamp2.jpg; the first two over http answered 302 to https, refetched over https: 200, image/jpeg); archive.org 6 requests (vol 4 and vol 6 `_djvu.txt`, sha1 = b146/manifest.tsv; vol 5 leaves n517 and n682 fetched on a wrong offset guess and not used; n505 = p.512, n670 = p.677; vol 5 leaf = page - 7 at these pages, not page + 5), 2 s apart, no 429/403, IA take/release in ROOM. Vol 5 djvu from sources/ia-fulltext/thurloe-gz.
+**Step 1, Tomokiyo's tables (credit: Satoshi Tomokiyo, cryptiana.web.fc2.com/code/thurloe.htm#Bampfield; rule 8).** Images in `bamf/tomokiyo/` (bamp1.jpg "Colonel Bampfield's Cipher (1655-June 1657)", 83 codes 2-99; bamp2.jpg "(October-December 1657)", 45 codes), transcribed by eye from upscaled crops into `bamf/tomokiyo/bamp1_table.tsv` and `bamp2_table.tsv` (his "a/b" alternatives and dashes kept). `bamf/compare_tomokiyo.py --check` -> `bamf/compare_bamp1.tsv`: of our 51 codes, **49 agree** with his value (or one of his alternatives) and **2 disagree**: 25 (ours o, 1 gloss, vol 4 p.195 "secret s o f"; his x/e) and 51 (ours e, 2 glosses, p.195 "Digbye", "papest"; his i). Neither code occurs in the p.160 run: all 23 table codes read on p.160 agree with his table. Our tie-excluded codes: 4 (his c/p), 53 (his m/-). 31 of his codes are absent from our table. This is an independent comparison against a published modern key rebuilt by him, not a replacement of our table; the two disagreements are printed-gloss vs his values, kept as conflicts (rule 4), not settled.
+**Step 2, the four codes.** `bamf/scan_codes.py` over vols 4, 5, 6 djvu texts (hits with nearest letter heading, `bamf/scan_codes_hits.tsv`): Bamfylde letters carry 937 eleven times (ten in vol 5 ll.32007-57886, plus the target l.19091), 745 three times besides the target (whose "74.5" OCR the scan misses), 356 only at the target, 94 at vol 5 ll.35701, 41981 and the target. The line above each hit was read for a printed gloss; three units carry one, and both leaves were image-checked (crop step pasted: `tools/iiif_lines.py --image <leaf> --out <scratch>/crops --prefix v5n<leaf> --lines-per-crop 3 --max-width 2400 --prominence 20 --distance 25`; the gloss lines were then cut natively and committed as `bamf/crops/v5p512_94gloss.jpg`, `v5p677_937gloss.jpg`, `v5p677_745gloss.jpg`):
+| code | printed gloss | where | grade (PREREG-THUR-BAMF convention) |
+|---|---|---|---|
+| 937 | "C. Maz." / "Maz." (Mazarin) | vol 5 p.677, Bamfylde letter A.D. 1656, djvu ll.55611, 55620, 55647 (first two seen on the image) | C (>= 2, no conflict) |
+| 745 | "great secret" over "434 745" | vol 5 p.677, djvu l.55655 (image) | M (once) |
+| 94 | "y" in "S l a s s e y e" over "23 47 19 82 83 27 94 22" | vol 5 p.512, djvu l.41981 (image) | M: **conflict** with Tomokiyo's 94 = t (his source instance not identified); recorded, not settled by context |
+| 356 | none found | - | U |
+The p.512 gloss also sets "S" over 23 (our table 23 = g 3/3, Tomokiyo g): logged here, the table not changed. Values in `bamf/additions_bamf2.tsv`; `bamf/decode_bamf.py` reads it for codes absent from the gate table (gate not re-scored: `gate_bamf.py --check` OK).
+**Decode (`bamf/decode_bamf.py --check` OK, `bamf/reading_bamf_p160.txt`).** `[937=Mazarin] | [745=SECRET] a r y e s t o | [356] s a u o Y | p e n t i o n e o n e r`. Letter codes: **C 23, M 1, U 0** of 24; word/name codes: 937 C, 745 M, 356 U. Still 24 letter positions, below any authentication distance (rule 4a): fragments only, for a verifier to grade. No content sentence is claimed here.
+**Where it was not found.** 356: no gloss in any Bamfylde letter of vols 4-6 (it occurs only at the target); Tomokiyo's table image has no entries >= 100 (his text names 108, 754/755/790/799, 820/829/831, 1037, 1038 only). 94 = t: no printed instance of it found in vols 4-6 Bamfylde letters. Vol 4 pages other than pp.194-195, 231-232 and vol 6 p.576 were not imaged; vol 5 Bamfylde letters were read only at the lines above the four codes.
+
+## Remaining gaps (THUR-BAMF2, 11 Oct 2026; replaces the THUR-BAMF list)
+Read so far: Bamfylde p.160 run decoded under the gated print-gloss table plus three vol 5 print glosses (letter codes C 23, M 1; 937 C, 745 M, 356 U); 49 of 51 table codes agree with Tomokiyo's published First Cipher table.
+- Bamfylde p.160 code 356 (word/name code) - blocker: open-codes; no printed gloss in vols 4-6 Bamfylde letters (bamf/scan_codes_hits.tsv), none in Tomokiyo's image; next: Birch vol 7 index and the 1657 Bamfylde letters of vol 6 pp.161-700 at lines with glossed codes 350-360 (alphabetical neighbours), ~$0.5
+- Code 94 conflict (print y, vol 5 p.512, vs Tomokiyo t) and codes 25/51 (print vs Tomokiyo) - blocker: open-codes; one witness each side; next: locate Tomokiyo's instance (his thurloe.htm quoted runs, 2 Nov 1656 and 6 June 1657 letters in vols 5-6) and image it, ~$0.5
+- Verifier grading of the p.160 fragments (D1 candidate) and the "pentioner" dittography - blocker: not-attempted; a solver may not grade its own reading (rule 10); next: V-BAMF verifier session with gate_bamf.json, additions_bamf2.tsv, compare_bamp1.tsv and reading_bamf_p160.txt, ~$3
+- Bamfylde l.68904 (vol 6 p.576, Second Cipher period) table - blocker: not-attempted; not gating for p.160; next: image n579 strip crops, align, compare with bamf/tomokiyo/bamp2_table.tsv, ~$1
+- Vol 4 Aldworth l.25718 and physician l.46866 - blocker: not-attempted; outside this brief; next: one leaf each (Aldworth near n309-n312), ~$0.3
+- Vol 1 non-Dutch hits >=20 numerals (about 12 units) - blocker: not-attempted; IA djvu 500 on 10 Oct 2026; next: retry collectionofstat01thur djvu or the on-disk bim vol 1 copy (sources/ia-fulltext/print-check), then one leaf per unit, ~$1.5
+- The 1725 *Verbael* (Beverningh's London journal) is not on IA under its own title - blocker: not-attempted; outside this brief; next: Delpher/Google Books/KB search, ~$0.5
+- Dutch of Beverning's 27 June and 22 Aug 1653 letters (Birch I pp.301, 418) - blocker: not-attempted; outside this brief; next: grep Brieven vols 1-4 and the Michigan copies, ~$0.4
+- Nijhoff Bijdragen X p.291 and Van Sypesteyn - blocker: not-attempted; Google Books quota spent; next: Google Books API with country=US after the quota reset, ~$0.3
+
+## Escalation (THUR-BAMF2, 11 Oct 2026)
+- [x] siblings: Bamfylde 1655 glossed pages aligned (THUR-BAMF); vol 5 Bamfylde letters scanned for the four codes (THUR-BAMF2)
+- [x] clear-pages: p.161 read, no printed decipherment
+- [x] known-keys: Tomokiyo's First/Second Cipher tables fetched, transcribed and compared (49/51 agree)
+- [x] print: Birch's gloss is the table source; vol 5 glosses for 937, 745, 94
+- [x] key-rebuild: 51-code table from print, gated PASS with control
+- [ ] image-check: l.68904, p.231 foot, Tomokiyo's 94 = t instance
+- [x] retry: none needed (no errors)
+Verdict: keep going: 9 internal gaps; cheapest next: V-BAMF verifier pass on the p.160 fragments, ~$3
