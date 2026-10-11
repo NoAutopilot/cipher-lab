@@ -1,0 +1,49 @@
+run	passage	pos	passC	A	B	status	why	candidates	before	after	noteA	noteB
+c268	L01	7	K39	K39	K19	split	split	K39,K19	K14 K05 K36	K29 K38 K26		
+c268	L01	9	K38	K38	K19	split	split	K38,K19	K36 K39 K29	K26 K39 K36		
+c268	L01	11	K39	K39	K19	split	split	K39,K19	K29 K38 K26	K36 K37 K25		
+c268	L01	19	K39	K39	K19	split	split	K39,K19	W:mihil W:Cur K15	K09 K12 K34		
+c268	L01	21	K12	K12	K01	split	split	K12,K01	K15 K39 K09	K34 K26 K37		
+c268	L01	32	K38	K38	K19	split	split	K38,K19,K63	K12 K26 K12	K10 K08 K33		relabel K38 (MONLUC-RELABEL)
+c268	L02	2	K39	K39	K19	split	split	K39,K19	K26	K36 K30 K41		
+c268	L02	7	K01	K01	K22	split	split	K01,K22	K30 K41 K36	?h_bar K05 K10		
+c268	L02	8	?h_bar	?h_bar	K18	split	split	?h_bar,K18	K41 K36 K01	K05 K10 K22		
+c268	L02	16	K38	K38	K19	split	split	K38,K19,K63	K05 K14 K19	K22 K38 K09		relabel K38 (MONLUC-RELABEL)
+c268	L02	18	K38	K38	K19	split	split	K38,K19,K63	K19 K38 K22	K09 K33 K12		relabel K38 (MONLUC-RELABEL)
+c268	L02	26	?double_slash	?double_slash		single	single	?double_slash	K29 K10 K22	K33 K12 K14		
+c268	L02	28	K12	K12	K22	split	split	K12,K22	K22 ?double_slash K33	K14 ?double_slash K29		
+c268	L02	30	?double_slash	?double_slash		single	single	?double_slash	K33 K12 K14	K29 K26 K12		
+c268	L02	34	?h_bar	?h_bar	K18	split	split	?h_bar,K18	K29 K26 K12	K05 K12 K19		
+c268	L03	10	K38	K38	K19	split	split	K38,K19,K63	K06 K22 K09	K34 K22 K36		relabel K38 (MONLUC-RELABEL)
+c268	L03	19	K36	K36		single	single	K36	K16 K10 K26	K33 K34 K12		
+c268	L03	20	K33	K33		single	single	K33	K10 K26 K36	K34 K12 K05		
+c268	L03	21	K34	K34		single	single	K34	K26 K36 K33	K12 K05 K25		
+c268	L03	22	K12	K12		single	single	K12	K36 K33 K34	K05 K25 K41		
+c268	L03	23	K05	K05		single	single	K05	K33 K34 K12	K25 K41 K62		
+c268	L03	24	K25	K25		single	single	K25	K34 K12 K05	K41 K62 K12		
+c268	L03	25	K41	K41		single	single	K41	K12 K05 K25	K62 K12 K05		
+c268	L03	26	K62	K62		single	single	K62	K05 K25 K41	K12 K05 K62		
+c268	L03	27	K12	K12		single	single	K12	K25 K41 K62	K05 K62 K22		
+c268	L03	28	K05	K05		single	single	K05	K41 K62 K12	K62 K22 K36		
+c268	L03	29	K62	K62		single	single	K62	K62 K12 K05	K22 K36 ?h_bar		
+c268	L03	30	K22	K22		single	single	K22	K12 K05 K62	K36 ?h_bar K15		
+c268	L03	31	K36	K36		single	single	K36	K05 K62 K22	?h_bar K15 K63		
+c268	L03	32	?h_bar	?h_bar		single	single	?h_bar	K62 K22 K36	K15 K63 K59		
+c268	L03	33	K15	K15		single	single	K15	K22 K36 ?h_bar	K63 K59 K12		
+c268	L03	34	K63	K63		single	single	K63	K36 ?h_bar K15	K59 K12		
+c268	L03	35	K59	K59		single	single	K59	?h_bar K15 K63	K12		
+c268	L03	36	K12	K12		single	single	K12	K15 K63 K59			
+c268	L04	14	K38	K38	K19	split	split	K38,K19,K63	K09 K37 K26	K12 K33 K66		relabel K38 (MONLUC-RELABEL)
+c268	L04	19	K22	K22	K19	split	split	K22,K19	K33 K66 K26	K38 K41 K05		
+c268	L04	20	K38	K38	K19	split	split	K38,K19,K63	K66 K26 K22	K41 K05 K12		relabel K38 (MONLUC-RELABEL)
+c268	L04	24	K38	K38		single	single	K38,K63,K19	K41 K05 K12	K26 K22 K25		relabel K38 (MONLUC-RELABEL)
+c268	L04	26	K22	K22	K12	split	split	K22,K12	K12 K38 K26	K25 K36 K05		
+c268	L04	31	K39	K39	K19	split	split	K39,K19	K36 K05 K15	K09 K10 K26		
+c268	L04	36	K38	K38	K19	split	split	K38,K19,K63	K10 K26 K37			relabel K38 (MONLUC-RELABEL)
+c268	L05	3	K13	K13	K14	split	split	K13,K14	K26 K05	K34 K09 K10		
+c268	L05	8	K38	K38	K19	split	split	K38,K19,K63	K09 K10 K41	K09 K36 K05		relabel K38 (MONLUC-RELABEL)
+c268	L05	13	K38	K38	K19	split	split	K38,K19,K63	K36 K05 K12	K12 K05 K30		relabel K38 (MONLUC-RELABEL)
+c268	L05	21	K20	K20	K05	split	split	K20,K05	K40 K12 K05	?double_slash K10 K39		
+c268	L05	22	?double_slash	?double_slash	K43	split	split	?double_slash,K43	K12 K05 K20	K10 K39 K14		
+c268	L05	24	K39	K39	K19	split	split	K39,K19	K20 ?double_slash K10	K14 K09 K33		
+c268	L05	29	K15	K15		single	single	K15	K09 K33 K12	K15 K29 K10		

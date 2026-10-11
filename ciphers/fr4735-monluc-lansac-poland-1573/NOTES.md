@@ -606,3 +606,54 @@ Read so far: unmeasured as a reading; f.86 150 tokens C 83 / M 64 / U 3 against 
 - [x] image-check: f.86 K07 binary curl sort on wider crops, gate PASS (MONLUC-CURL)
 - [n/a] retry: nothing has failed that a plain retry would change
 Verdict: keep going: 4 internal gaps; cheapest next: tools/lookalike_pass.py on c268 passes A/B with K38 as its own label, ~$1
+
+## MONL-LOOK: look-alike pass on c268 passes A/B, K38 as its own label (11 Oct 2026, account 1, Opus, for LANE DEFAULT-A1-1840)
+Brief: .claude/briefs/runs/2026-10-11-acct1-default-1840-jobs.md MONL-LOOK (MONLUC-K38's Verdict "cheapest next"). Disk only (no host
+requests). Subagents: 1 (Sonnet, value-blind window re-read).
+Prior-work step: `python3 tools/prior_work.py fr4735-monluc-lansac-poland-1573 --item-spec 'shelfmark=BnF fr.4735;folio=138;sender=Monluc;recipient=Charles IX' --step-type transcribe --offline`
+-> first run exit 4 (owed: 1-own = this job's own claim; five 4-editions LEADs whose spans are 1525-29, 1570 and 1645-47, not 1573;
+2-leaf LOOK for f.138); recorded CLEAR / CLEAR / CONTEXT (f.139 clear copy c270 compared by MONLUC-KEY test 2 and MONLUC-RELABEL;
+ff.137v/140 not looked at, Gallica 403 this lane); re-run exit 0, step CLEAR, plaintext UNCHECKED-NET (aaymeloglu no local clone).
+Checks 1-4 by hand: (1) own work: NOTES.md read to l.608 and ROOM.md grep "monl" -- no look-alike pass on c268 before this one;
+(2) leaf: as recorded above; (3) solver caches: prior_work CLEAR on sources/cyphersolver*, bourdeau, Tomokiyo mirror; (4) editions:
+Noailles 1867 read by NC-MONL2. Check 5 (after a decode) not owed: no label changed, so no decode changed.
+- **PREREG** `look268/PREREG-MONL-LOOK.md`, pushed in its own commit be998d107 before the re-read (`git log origin/main -1 --` shows it).
+- **Alignment.** `look268/c268_passA_K38.tsv` = pass A with MONLUC-RELABEL's 10 K38 relabels (= committed ciphertext_c268.tsv) vs
+  `passes/c268_passB.tsv`, `tools/reconcile_passes.py` (nw): 182 columns, 129 agree, **53 split (29.1%)**: 26 with both labels, 22 where
+  B has no sign (18 of them B's truncated L03 tail, pos 19-36), 5 where only B has a sign.
+- **Crop step** (pasted): `python3 ciphers/fr4735-monluc-lansac-poland-1573/look268/build_tiles.py` -> "tiles 48 (split 26, single 22);
+  B-only gaps 5; candidate ids 21". It stitches the folder's own MONLUC-KEY sloped line bands (images/c268cipher_L0N_s1/s2.jpg, source x
+  0-1450 and 1350-2800; iiif_lines.py's row profile had split this slanted page wrongly) into `look268/strips/`, and cuts the 21
+  candidate cells from images/keysheet_monluc1_ids.png (ids only) into `look268/candidates.png`. Then
+  `python3 tools/lookalike_pass.py windows --tiles look268/c268_tiles.tsv --passc look268/c268_passC.tsv --crops-glob 'look268/strips/c268_{line}.jpg' --out look268 --run c268_win --status all --desc look268/desc.tsv`
+  -> 48 windows, 8 montages (`look268/win/`, converted to JPEG after the read), the tile's own label never shown, candidates alphabetical.
+- **Re-read** (one Sonnet call, `look268/c268_reread.tsv`): 48 rows, H 38 / M 9 / L 1.
+- **Reconcile** (`lookalike_pass.py reconcile`, fixed 2-of-3 rule): `{"signs": 177, "flagged": 48, "relabelled": 0, "unsettled": 1, "residual": 0.006}`.
+  Every firm re-read (47 of 47) picked reader A's label: 16/16 two-label splits that were not relabels (the K39-vs-K19 tiles went K39 every
+  time, "y with descending tail"), 9/9 + 1 single of the MONLUC-RELABEL K38 tiles ("curl with inner z"; the PREREG's protection clause was
+  not needed), 21/21 B-missing singles. The one L answer (L05:3, A K13 / B K14, re-read K14 at L) stays K13 and is unsettled.
+  No label in ciphertext_c268.tsv changes (`look268/c268_passD_raw.tsv` = passC); decode, grades and judge are unchanged (rule 7 --check below).
+- **Before/after (agreement, not accuracy; LESSONS.md "Look-alike pass"):** c268 lines 1-5 two-reader split 53/182 columns (29.1%) ->
+  after the 2-of-3 fold **6 open of 182 (3.3%)**: 1 unsettled tile + 5 B-only extra signs (not windowed, no passC position). This is not a
+  reader-error figure and licenses no grade: the re-read sided with A everywhere, which an echo would also do although the prompt hides
+  the label (the before/after context labels are passC's), so the 22 single tiles are "two readers", not checked truth.
+- **For the owner (never blocking):** `look268/focus.tsv`, 6 rows (sid<TAB>question) for `tools/sign_sorter.py --focus`: L05:3 K13/K14
+  and the 5 B-only extra signs (L01 after 8 K54, after 17 K15 and K19, L04 after 18 K12, L05 after 14 K05).
+Requests: none to any host. Subagents: 1.
+
+## Remaining gaps (MONL-LOOK, 11 Oct 2026)
+Read so far: unmeasured as a reading; f.86 150 tokens C 83 / M 64 / U 3 against its own gloss, judge FAIL -1.672; c268 lines 1-5 decoded with 10 C-curl tokens relabelled K38 = t (M), ungraded, judge FAIL -1.300; c268 two-reader split 29.1% -> 3.3% open after the look-alike fold (agreement, not accuracy); the 6 open questions are in look268/focus.tsv for the owner's sign sorter, never blocking.
+- a judge that can see this key - blocker: too-short; the glossed material ends at 147 letters and the positive control FAILs at 50, 100 and 147 (judge_n_c172.py)
+- in-volume decipherment of ff.132-138 - blocker: not-attempted; f.139 opening tested and not matched; next: look at ff.140-141 and items 17/18/112-120 for a Monluc 28 Apr text, ~$1 (Gallica 403 on 11 Oct; needs a session where Gallica answers)
+- rest of c268, c264, c258 and f.210 - blocker: not-attempted; the look-alike step is now done for c268 lines 1-5; next: the 3-unit protocol per 5-10 lines once a positive control passes, ~$3 per leaf
+- ff.211-223, f.87 margin, ff.50/56/60/80 - blocker: not-attempted; carried from NC-MONL2; next: one look each, ~$1.5
+
+## Escalation (MONL-LOOK, 11 Oct 2026)
+- [x] siblings: clear sibling leaves ff.131, 140, 209 looked at by NC-MONL2; f.139 compared by MONLUC-KEY
+- [ ] clear-pages: remaining clear leaves untested; planned step: ff.140-141 look
+- [x] known-keys: Tomokiyo's Cipher 1 table applied per cell (MONLUC-KEY), per sign form on f.86 (MONLUC-2) and c268 (MONLUC-K07); the C-curl form matched to the table's K38 (MONLUC-BLIND)
+- [x] print: Noailles vols II-III and Google Books, NC-MONL2, no Monluc decipherment found
+- [x] key-rebuild: C-curl = K38 written on c268 (MONLUC-RELABEL) and on f.86 (MONLUC-K38); key.tsv unchanged
+- [x] image-check: c268 lines 1-5 look-alike window re-read, 47/47 firm answers with reader A, 0 relabels (this pass); f.86 curl sort (MONLUC-CURL)
+- [n/a] retry: nothing has failed that a plain retry would change
+Verdict: keep going: 3 internal gaps; cheapest next: ff.140-141 look for a Monluc 28 Apr text, ~$1 (when Gallica answers)

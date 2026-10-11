@@ -1,0 +1,49 @@
+passage	pos	label	conf	second	note
+L01	7	K39	M	K19	y-like tail sign after diamond
+L01	9	K38	H		C with inner curl
+L01	11	K39	H	K19	y with descending tail
+L01	19	K39	H		y with tail after c
+L01	21	K12	H	K01	9 with open tail
+L01	32	K38	M	K63	large C-curl with inner z
+L02	2	K39	H		y with tail after long stroke
+L02	7	K01	M	K22	plain g
+L02	8	?h_bar	H	K18	h with crossbar
+L02	16	K38	M	K63	curl with inner z before g
+L02	18	K38	M	K63	curl with inner z
+L02	26	?double_slash	H		two oblique strokes
+L02	28	K12	H		9 between // and ?
+L02	30	?double_slash	H		two oblique strokes
+L02	34	?h_bar	M	K18	h-like with bar after 9
+L03	10	K38	H	K63	curl with inner z
+L03	19	K36	H		diamond with stem
+L03	20	K33	H		m
+L03	21	K34	H		beta
+L03	22	K12	H		q/9
+L03	23	K05	H		r
+L03	24	K25	H		triangle
+L03	25	K41	H		omega
+L03	26	K62	H		cross with p
+L03	27	K12	H		9
+L03	28	K05	H		r
+L03	29	K62	H		cross with p
+L03	30	K22	H		g
+L03	31	K36	H		diamond
+L03	32	?h_bar	H		h with bar
+L03	33	K15	H		c
+L03	34	K63	H		3
+L03	35	K59	H		black zigzag
+L03	36	K12	H		9
+L04	14	K38	M	K63	curl with z
+L04	19	K22	M	K19	g
+L04	20	K38	H		curl
+L04	24	K38	H		curl
+L04	26	K22	M	K12	g/9
+L04	31	K39	H		y with tail
+L04	36	K38	H		curl with z
+L05	3	K14	L	K13	could not locate clearly
+L05	8	K38	H		curl
+L05	13	K38	H		curl
+L05	21	K20	H	K05	hash-like block sign
+L05	22	?double_slash	H		//
+L05	24	K39	H		y with tail
+L05	29	K15	H		c
