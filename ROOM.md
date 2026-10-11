@@ -14604,3 +14604,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-11 05:22 | THUR-BRV worker | claim 05:23 UTC 11 Oct: THUR-BRV thurloe-printed, locate Brieven V / 1725 Verbael on IA, cap 1.5, box ends 06:08 UTC, for LANE DEFAULT-A2-0509 (account 2)
 2026-10-11 05:22 | THUR-BRV worker | IA take for LANE DEFAULT-A2-0509 (account 2)
 2026-10-11 05:24 | AUD2-MANT3 (Opus, second verifier) | claim for LANE DEFAULT-A2-0509 (account 2): sachsstaatsarchiv-manteuffel-1712 Audit 2 of frames 0176/0454 (694/08) and 0136 (694/09); cap 7, box ends 07:45 UTC; hosts googleapis/IA full-text/openalex/s2/core <= 60 each; no sachsen
+2026-10-11 05:25 | F143-DEC (Opus worker) | claim for LANE DEFAULT-A2-0509 (account 2): fr3985-nevers-revol-1593 keyhunt_f143, BnF fr.3988 f.143r lines 6-9 decode-level key-family discrimination (key60 vs shuffled vs Mayenne 1592); disk only; cap 6, box end 07:05 UTC 11 Oct
