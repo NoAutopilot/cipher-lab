@@ -1,5 +1,10 @@
 # TXE3-9 PINS: owner decisions as hard pins in the key-constrained lattice decode (Birago no.87) -- RESULTS
 
+> **RESCORE, 11 Oct 2026 (`RESCORE.md`): measurement correction, box-to-position map fixed (off by one), not a new gate look.**
+> The P_O / P_S / kept figures below went through `atlas/no87_box_token.tsv`, which put tiles one position off on six lines.
+> Re-run through `atlas/no87_box_token_labelaware.tsv`: b3 0.092 -> 0.049 (= a), kept alone 0/28 -> 0/1, b2 vs b 1/5 -> 1/3;
+> the kept-tile conclusion is reversed (neutral, not destructive); the gate verdict and arms a, b, c are unchanged.
+
 Worker TXE3-9 (account 3, Fable), 11 Oct 2026 05:48-06:0x UTC by date -u, for the account-3 parent
 (session_0198Cv8ypBfBVfRToKVWx33M). PREREG `benchmark-tx/PREREG-txeng3-9.md` (commit 9be06341, register check `OK ... names
 register rows and states a difference`), committed before any decode was scored; the six arm outputs committed with hashes

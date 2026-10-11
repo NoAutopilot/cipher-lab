@@ -115,3 +115,56 @@ touch no.87, at 4 dev positions, all wrong-way or unscored. eval_heldout: writte
     (units dev_tune / eval_heldout / whole = both unit files and both signal files; --propagate cluster|pile|none;
     with and without --exclude-flagged; 10 seeds, kmax 200 by default)
     python3 benchmark-tx/txeng2/sorter/x20_owner.py --check
+
+## RESCORE (11 Oct 2026, 17:1x UTC by date -u): X20 -- measurement correction: box-to-position map fixed (off by one), not a new gate look
+
+Job x20-and-9 for the account-3 parent (session_0198Cv8ypBfBVfRToKVWx33M). Script-only: no reader, no image, no network beyond
+git. X20 joined the owner's tiles to no.87 positions through `atlas/no87_box_token.tsv`. That map is a DP over box widths that
+never looks at labels, and on f178v L06, L09, L11, L13, L21 and f179r L03 it puts tiles one position off (TXE3-9's second
+check; `benchmark-tx/txeng3/9/RESCORE.md`). **Only the map file changed.** X20 was re-run as committed through
+`atlas/no87_box_token_labelaware.tsv`:
+
+    python3 benchmark-tx/txeng2/sorter/x20_owner.py --map ciphers/nevers-birago-fr3251-1572/atlas/no87_box_token_labelaware.tsv --tag boxmapLA [--check]
+
+The `--map`/`--tag` options are new. Without them the run is unchanged (`--check` current). Outputs go beside the originals
+with a `_boxmapLA` suffix: `passX20_owner_boxmapLA.tsv`, `passX20a_family_boxmapLA.tsv`, `passX20b_no87sort_boxmapLA.tsv` and
+`x20_changes_boxmapLA.tsv`. Scored as before: dev_tune lines only, `tools/tx_bench.py <dev lines> --paired
+benchmark-tx/txeng/units/labels_dev_tune.tsv --exclude-flagged`. The figures are computed by
+`benchmark-tx/txeng3/9/rescore_boxmapLA/rescore_tables.py` (`rescore.json` "x20_dev").
+
+| output | before: as measured | before: flagged excl. | before: paired vs L | **after: as measured** | **after: flagged excl.** | **after: paired vs L** |
+|---|---|---|---|---|---|---|
+| L (labels_dev_tune) | 0.035 (12/343) | 0.021 (7/338) | -- | same | same | -- |
+| passX20_owner | 0.044 (15/343) | 0.030 (10/338) | 0 / 3, p 0.25 | **0.044 (15/343)** | **0.030 (10/338)** | **0 / 3, p 0.25** |
+| passX20a_family | 0.038 (13/343) | 0.024 (8/338) | 0 / 1, p 1.00 | 0.038 (13/343) | 0.024 (8/338) | 0 / 1, p 1.00 |
+| passX20b_no87sort | 0.041 (14/343) | 0.027 (9/338) | 0 / 2, p 0.50 | 0.041 (14/343) | 0.027 (9/338) | 0 / 2, p 0.50 |
+
+The positions L changes go from 6 to 4:
+
+| source | before | after |
+|---|---|---|
+| A family (cluster 62: T95->T65) | f178v L01.8 (wrong, L right) | same |
+| B no.87 sort | L02.8 T42->T60 (wrong, L right); **L11.20 T19->T24 (wrong, L right)**; L12.23 X_A->T85 (unscored); **L13.20 T98->T37 (eval; wrong, L wrong)**; **L21.13 T85->T60 (eval; wrong, L right)** | L02.8 T42->T60 (wrong, L right); **L11.9 T10->T83 (wrong, L right)**; L12.23 X_A->T85 (unscored) |
+
+What moved:
+- L11.20, L13.20 and L21.13 were map shifts. The tiles (f178v_11_018, _13_020, _21_013) actually sit at L11.19, L13.21 and
+  L21.12, where L already carries the owner's sign, so those moves agree with L.
+- L11.9 is new. Tile f178v_11_009 was a 1:2 box under the old map, so X20 never used it. It is now 1:1, and the owner moved it
+  out of T83 into a one-tile pile T83-b, which X20 scores as T83.
+
+On the whole item (taken in TXE3-9 as arm c2, not by X20), the result goes from 0 / 4 (p 0.13) to 0 / 3 (p 0.25). On eval the
+owner's moves now change nothing (c2 eval 16/376 -> 15/376 = L).
+
+**Does the conclusion change?**
+
+The dev figure is the same: 0 fixed, 3 broken, p 0.25, on both masks. The registered prediction ("a few positions move; the
+owner's labels are one strong reader, not truth") holds, with 4 positions moving instead of 6. The sentence "on dev every
+scored move breaks a right L sign" still holds by count, but one of its three breaks has changed. After the fix:
+- one break is X20's own cross-letter cluster rule (L01.8);
+- the two no.87 breaks (L02.8, L11.9) are both tiles the owner separated from a pile into a one-tile split pile (T60-d,
+  T83-b), and X20 scores each as the pile it was separated from.
+
+Every owner no.87 move that changes L is into such a split pile; the third, L12.23 T85-b, is unscored. So the dev result is
+about how split piles are scored at their family as much as about the owner's eye. That scoring rule is a question for the
+lane, not re-scored here: changing it would be a new design, not a re-run. The eval-line breaks attributed to the owner in
+TXE3-9 (L13.20, L21.13) were the map, not the owner.
