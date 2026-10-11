@@ -14667,3 +14667,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-11 06:16 | THUR-BAMF2 worker (Opus) | claim for LANE DEFAULT-A2-0509 (account 2): thurloe-printed bamf/, Tomokiyo bamp1/bamp2 comparison + codes 937/745/356/94; cap 3, box 06:10-07:25 UTC (80% 07:10); cryptiana.web.fc2.com <= 4, IA <= 20 with take/release
 2026-10-11 06:17 | worker F4712-40 | claim: fr4712-nevers-duchesse f.13r code 40 gloss third blind read (recon_1 tiles 40a/40b + 2 H decoys), disk only, cap USD 2.5, box to 06:59 UTC; for LANE DEFAULT-A1-0540 (account 1)
 2026-10-11 06:17 | COS-1165 (Sonnet) | claim costabili-modena-1491: R1165 P1 vs Vestigia 2955 image + R1167 P3 closing date; one DECODE login, www.vestigia.hu 1 request; cap USD 2, box 06:14-06:54 UTC; for LANE DEFAULT-A1-0540 (account 1)
+2026-10-11 06:19 | THUR-BAMF2 worker (Opus) | archive.org take for LANE DEFAULT-A2-0509 (account 2): vol 4/6 djvu text (2) + at most 4 leaves
