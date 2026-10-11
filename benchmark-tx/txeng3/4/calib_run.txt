@@ -1,0 +1,47 @@
+leaf          split rd      x=err2r  A      B      single recon  ratio_s ratio_r hid_s hid_r scored
+no87          eval  Sonnet  0.088   0.066  0.097  0.082  0.0511 0.927   0.58    0.516 0.634 803
+f152r         eval  Opus    0.062   0.082  0.069  0.075  0.0685 1.205   1.096   0.667 0.75  73
+bir1591       eval  Opus    0.194   0.084  0.103  0.094  0.0788 0.483   0.406   0.474 0.562 203
+gunther       eval  Opus    0.027   0.051  0.054  0.052  0.0473 1.951   1.772   0.645 0.667 317
+f36v          dev   Sonnet  0.316   0.312  0.375  0.344  0.4375 1.089   1.385   0.182 0.143 16
+f21v          dev   Sonnet  0.150   0.048  0.053  0.050         0.336           0.105       189
+f87           dev   Sonnet  0.281   0.043  0.130  0.086         0.307           0.0         139
+dint128       dev   Sonnet  0.136   0.353  0.306  0.329  0.3765 2.42    2.766   0.545 0.5   85
+dint98v       dev   Opus    0.165   0.057  0.019  0.038  0.0    0.228   0.0     0.0         53
+dint113       dev   Opus    0.129   0.012  0.025  0.018  0.0    0.143   0.0     0.0         81
+dint89        dev   Opus    0.109   0.079  0.121  0.100  0.0417 0.916   0.382   0.457 0.8   240
+luzerne       dev   Sonnet  0.017   0.094  0.094  0.094  0.0938 5.391   5.388   1.0   1.0   64
+viv102r       dev   Sonnet  0.081   0.194  0.225  0.209         2.569           0.779       1234
+
+[single] n=13 k_med=0.927 k_ls=0.766 ols y=0.061+0.446x | ratios 0.14-5.39 (q10-q90 0.23-2.57) | spearman 0.110 perm p 0.389 (perm q95 0.478) | LOO MAE ratio 0.0900 ols 0.0924 const 0.0866 perm p 0.321 | line-boot k_med (0.7070300751879698, 1.0885416666666667) rho (-0.07142857142857142, 0.4230769230769231) | leaf-boot k_med (0.33578104138851805, 1.9513108614232209) pred ratio (0.14341085271317827, 5.390804597701149)
+
+[recon] n=10 k_med=0.838 k_ls=0.984 ols y=-0.009+1.037x | ratios 0.00-5.39 (q10-q90 0.00-2.77) | spearman 0.164 perm p 0.336 (perm q95 0.535) | LOO MAE ratio 0.1279 ols 0.1324 const 0.1278 perm p 0.761 | line-boot k_med (0.4834252412583032, 1.0566939890710383) rho (-0.04863244349440517, 0.4184137043778615) | leaf-boot k_med (0.38186813186813184, 2.0758593804894234) pred ratio (0.0, 5.390804597701149)
+
+[single_flag] n=13 k_med=0.336 k_ls=0.652 ols y=-0.008+0.692x | ratios 0.00-2.42 (q10-q90 0.00-1.09) | spearman 0.468 perm p 0.040 (perm q95 0.432) | LOO MAE ratio 0.0746 ols 0.0829 const 0.0857 perm p 0.255 | line-boot k_med (0.27296332359623493, 0.5782144723767431) rho (0.18181818181818182, 0.6272358065840317) | leaf-boot k_med (0.22807017543859648, 0.7818181818181819) pred ratio (0.0, 2.420279206465834)
+
+dev-only k_med 0.916 band (0.14341085271317827, 5.390804597701149); eval:
+  no87       x 0.088 true 0.082 pred 0.081 band 0.013-0.474 IN
+  f152r      x 0.062 true 0.075 pred 0.057 band 0.009-0.337 IN
+  bir1591    x 0.194 true 0.094 pred 0.178 band 0.028-1.045 IN
+  gunther    x 0.027 true 0.052 pred 0.024 band 0.004-0.144 IN
+
+gate: {'g1_perm_p_lt_005': False, 'g2_loo_ratio_beats_const': False, 'g3_eval_inside': 4, 'g3_pass': True, 'g4_spread_factor': 11.263182763182764, 'holds': False}
+all pairs: {'n': 22, 'spearman': 0.27110986678382964, 'cluster_boot_rho_ci': (-0.16363636363636364, 0.6)} 
+sens no S-items: {'n': 11, 'k_med': 1.0886637112096262, 'spearman': 0.21818181818181817} LOO ratio 0.08133938457628272 const 0.09819272727272729
+decomp: leaf hidden_rate visible_per_disagree single_pos_err err2r_scored
+   no87      0.0399 0.517 0.0772 0.0722
+   f152r     0.0411 0.5 0.0616 0.0411
+   bir1591   0.0443 0.667 0.0936 0.0739
+   gunther   0.0315 0.688 0.0489 0.0252
+   f36v      0.0625 0.75 0.3438 0.375
+   f21v      0.0053 0.386 0.0503 0.1164
+   f87       0.0 0.5 0.0432 0.0863
+   dint128   0.1412 0.833 0.2588 0.1412
+   dint98v   0.0 0.5 0.0094 0.0189
+   dint113   0.0 0.5 0.0185 0.037
+   dint89    0.0333 0.528 0.0729 0.075
+   luzerne   0.0938  0.0938 0.0
+   viv102r   0.1629 0.713 0.2091 0.0648
+by readers: {'Sonnet': {'n': 8, 'min': 0.307, 'median': 1.2005, 'max': 5.391}, 'Opus': {'n': 14, 'min': 0.143, 'median': 1.4849999999999999, 'max': 3.089}}
+by hand: {'Birago 1572 clerk': {'n': 3, 'min': 0.927, 'median': 1.205, 'max': 1.329}, 'Dinteville 1591': {'n': 1, 'min': 0.483, 'median': 0.483, 'max': 0.483}, 'Oranje secretary 1561': {'n': 1, 'min': 1.951, 'median': 1.951, 'max': 1.951}, 'Ceppo-Nevers': {'n': 6, 'min': 0.307, 'median': 0.9225, 'max': 1.641}, 'Dinteville office': {'n': 6, 'min': 0.143, 'median': 1.668, 'max': 3.089}, 'La Luzerne digits 1781': {'n': 1, 'min': 5.391, 'median': 5.391, 'max': 5.391}, 'Vivonne clerk 1573': {'n': 4, 'min': 1.965, 'median': 2.4635, 'max': 2.851}}
+variants: [{'leaf': 'bir1591', 'item': 'bir1591-f23r-gloss-jk', 'err_2reader': 0.1939, 'single_meas_err': 0.2461, 'R_meas_err': 0.2408, 'scored': 191}, {'leaf': 'dint98v', 'item': 'dint-f98v-gloss-kp', 'err_2reader': 0.1653, 'single_meas_err': 0.5303, 'R_meas_err': 0.5152, 'scored': 66}, {'leaf': 'dint98v', 'item': 'dint-f98v-gloss-kp2', 'err_2reader': 0.1653, 'single_meas_err': 0.3355, 'R_meas_err': 0.3026, 'scored': 76}, {'leaf': 'dint113', 'item': 'dint-f113-gloss-kp', 'err_2reader': 0.129, 'single_meas_err': 0.4648, 'R_meas_err': 0.4648, 'scored': 71}, {'leaf': 'dint113', 'item': 'dint-f113-gloss-kp2', 'err_2reader': 0.129, 'single_meas_err': 0.1867, 'R_meas_err': 0.1867, 'scored': 75}, {'leaf': 'dint89', 'item': 'dint-f89-gloss-kp', 'err_2reader': 0.1092, 'single_meas_err': 0.4327, 'R_meas_err': 0.3901, 'scored': 223}, {'leaf': 'dint89', 'item': 'dint-f89-gloss-kp2', 'err_2reader': 0.1092, 'single_meas_err': 0.1466, 'R_meas_err': 0.1245, 'scored': 249}, {'leaf': 'viv102r', 'item': 'vivonne1573-f102r-dev', 'err_2reader': 0.0814, 'single_meas_err': 0.3418, 'R_meas_err': '', 'scored': 1008}]

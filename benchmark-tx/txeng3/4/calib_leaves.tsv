@@ -1,0 +1,14 @@
+leaf	item	split	hand	readers	lines	scored	err_2reader	err_2reader_scored	A_meas_err	B_meas_err	single_meas_err	single_flag_err	R_meas_err	R_flag_err	ratio_single	ratio_recon	hidden_single	hidden_recon	hidden_rate	visible_per_disagree	single_pos_err
+no87	birago1572-no87	eval	Birago 1572 clerk	Sonnet	29	803	0.088	0.0722	0.066	0.0971	0.0816	0.0688	0.0511	0.0379	0.927	0.58	0.516	0.634	0.0399	0.517	0.0772
+f152r	birago1572-f152r	eval	Birago 1572 clerk	Opus	4	73	0.0625	0.0411	0.0822	0.0685	0.0753	0.0429	0.0685	0.0286	1.205	1.096	0.667	0.75	0.0411	0.5	0.0616
+bir1591	bir1591-f23r-gloss	eval	Dinteville 1591	Opus	8	203	0.1939	0.0739	0.0837	0.1034	0.0936	0.0187	0.0788	0.0	0.483	0.406	0.474	0.562	0.0443	0.667	0.0936
+gunther	gunther8246-p2	eval	Oranje secretary 1561	Opus	25	317	0.0267	0.0252	0.0505	0.0536	0.0521	0.0197	0.0473	0.0164	1.951	1.772	0.645	0.667	0.0315	0.688	0.0489
+f36v	ceppo-f36v-gloss	dev	Ceppo-Nevers	Sonnet	1	16	0.3158	0.375	0.3125	0.375	0.3438	0.3438	0.4375	0.4375	1.089	1.385	0.182	0.143	0.0625	0.75	0.3438
+f21v	ceppo-f21v-S	dev	Ceppo-Nevers	Sonnet	14	189	0.1498	0.1164	0.0476	0.0529	0.0503	0.0503			0.336		0.105		0.0053	0.386	0.0503
+f87	ceppo-f87-S	dev	Ceppo-Nevers	Sonnet	5	139	0.2811	0.0863	0.0432	0.1295	0.0863	0.0863			0.307		0.0		0.0	0.5	0.0432
+dint128	dint-f128-print	dev	Dinteville office	Sonnet	4	85	0.1361	0.1412	0.3529	0.3059	0.3294	0.3294	0.3765	0.3765	2.42	2.766	0.545	0.5	0.1412	0.833	0.2588
+dint98v	dint-f98v-gloss	dev	Dinteville office	Opus	6	53	0.1653	0.0189	0.0566	0.0189	0.0377	0.0377	0.0	0.0	0.228	0.0	0.0		0.0	0.5	0.0094
+dint113	dint-f113-gloss	dev	Dinteville office	Opus	5	81	0.129	0.037	0.0123	0.0247	0.0185	0.0	0.0	0.0	0.143	0.0	0.0		0.0	0.5	0.0185
+dint89	dint-f89-gloss	dev	Dinteville office	Opus	14	240	0.1092	0.075	0.0792	0.1208	0.1	0.0978	0.0417	0.0145	0.916	0.382	0.457	0.8	0.0333	0.528	0.0729
+luzerne	luzerne108a-p1	dev	La Luzerne digits 1781	Sonnet	11	64	0.0174	0.0	0.0938	0.0938	0.0938	0.0	0.0938	0.0	5.391	5.388	1.0	1.0	0.0938		0.0938
+viv102r	vivonne1573-f102r-dev2	dev	Vivonne clerk 1573	Sonnet	36	1234	0.0814	0.0648	0.1937	0.2245	0.2091	0.0206			2.569		0.779		0.1629	0.713	0.2091
