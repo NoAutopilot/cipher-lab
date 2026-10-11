@@ -28,6 +28,17 @@ are then also dropped from the score, tx_bench drop_flagged). Orderings:
   c  random  --seeds random orders (mean and min-max band)
   d  oracle  greedy by net errors removed (fixed - broken) per decision, an upper bound; stops when no decision
              has a positive net (the curve is flat after that)
+  TXE3-1 orders (11 Oct 2026, benchmark-tx/PREREG-txeng3-1.md; the three the live sorter could use for "Check these first"):
+  lattice    --lattice TOPK --key KEY [--lang it16dip | --lattice-corpus FILE] [--lam 1.0]: tools/sign_sorter.py's
+             --rank-lattice value per position (reader weight on the runner-up x decode letters changed when it is forced,
+             value_from_lattice, each line decoded on its own), descending; positions with no alternative last, reading order
+  disagree   the `disagree` column of --signals (passes A and B differ) first, ties in reading order
+  margin     --margin ATLAS_TOPK (glyph_atlas classify --topk: box, d1, d2) with --map: d2 - d1 ascending (the smallest
+             classifier margin first); a box with no k2 is infinitely confident; unmapped positions last, reading order
+  disagree_margin  exploratory: disagree first, ties and the rest by margin
+  --at K [K ...] (default 10 20 50 100) and --thresholds T [T ...] (default 0.03 0.02) set the summary's err_at and
+  to_pct cells; --dump-dir DIR writes each named (non-random) ordering's simulated output at every --at k as
+  <ordering>_k<k>.tsv (line, pos, sign) for tools/tx_bench.py to score with its own interval.
 Output TSV: ordering, k, err_true, wrong, scored, fixed, broken (fixed/broken cumulative vs the base, position-paired);
 for random, one row per k with the mean and the band (err_lo, err_hi). The summary gives decisions-to-2% per ordering
 ("not reached by k=KMAX") and the errors removed by the first 10 and 20 decisions.
@@ -135,16 +146,21 @@ class Sim:
                     broken=sum(1 for q in common if not self.e0[q] and e[q]))
 
 
-def run_order(sim, tiles, orc, kmax):
+def run_order(sim, tiles, orc, kmax, at=(), snaps=None):
     sim.reset()
     rows = [dict(k=0, **sim.score())]
     for i, t in enumerate(tiles[:kmax], 1):
         sim.apply(t, true_sign(sim.state[t], orc[t]))
         rows.append(dict(k=i, **sim.score()))
+        if snaps is not None and i in at:
+            snaps[i] = dict(sim.state)
+    if snaps is not None:
+        for k in at:
+            snaps.setdefault(k, dict(sim.state))
     return rows
 
 
-def run_oracle(sim, show, orc, kmax):
+def run_oracle(sim, show, orc, kmax, at=(), snaps=None):
     """Greedy upper bound: net = fixed - broken per decision, by direct truth-set membership at the aligned rows."""
     sim.reset()
     rows = [dict(k=0, **sim.score())]
@@ -170,7 +186,53 @@ def run_oracle(sim, show, orc, kmax):
             break
         sim.apply(*best)
         rows.append(dict(k=i, **sim.score()))
+        if snaps is not None and i in at:
+            snaps[i] = dict(sim.state)
+    if snaps is not None:
+        for k in at:
+            snaps.setdefault(k, dict(sim.state))
     return rows
+
+
+def lattice_values(topk_path, key_path, lines, lang='it16dip', corpus=None, lam=1.0, beam=64):
+    """{(line, pos str): value} from tools/sign_sorter.py value_from_lattice, one decode per line (TXE3-1)."""
+    import key_decode_lattice as kdl
+    import sign_sorter
+    from judge_plaintext import LANG_CORPORA, NgramModel, read_corpus
+    paths = corpus or LANG_CORPORA.get(lang)
+    if not paths:
+        sys.exit('tx_sorter_curve: no corpus for --lang %r' % lang)
+    lm = kdl.LM(NgramModel([read_corpus(p) for p in paths]))
+    key = kdl.read_key(key_path)
+    by_line = defaultdict(list)
+    for k, c in kdl.read_topk(topk_path):
+        if k[0] in lines:
+            by_line[k[0]].append((k, c))
+    vals = {}
+    for ln, sub in by_line.items():
+        sub.sort(key=lambda kc: kc[0][1])
+        for (line, pos), chosen, alt, pa, changed, val in sign_sorter.value_from_lattice(sub, key, lm, lam, beam):
+            vals[(line, str(pos))] = val
+    return vals
+
+
+def margin_gaps(atlas_topk_path, box_of):
+    """{(line, pos): d2 - d1} for mapped boxes whose k1 is a sign; no k2 -> inf (TXE3-1)."""
+    gaps = {}
+    for r in read_tsv(atlas_topk_path):
+        k = box_of.get(r.get('box'))
+        if k is None or not r.get('k1') or r['k1'] == '_':
+            continue
+        d1, d2 = r.get('d1') or '', r.get('d2') or ''
+        gaps[k] = (float(d2) - float(d1)) if (d1 and d2) else float('inf')
+    return gaps
+
+
+def to_thr(rows, kmax, thr):
+    for r in rows:
+        if err(r) <= thr:
+            return r['k']
+    return 'not reached by k=%d' % kmax
 
 
 def err(r):
@@ -184,7 +246,7 @@ def to2(rows, kmax, thr=0.02):
     return 'not reached by k=%d' % kmax
 
 
-def at(rows, k):
+def at_(rows, k):
     """Errors removed (base wrong - wrong) after k decisions (last row if the curve stopped earlier)."""
     r = rows[min(k, len(rows) - 1)]
     return rows[0]['wrong'] - r['wrong']
@@ -203,6 +265,15 @@ def main(argv=None):
                     help='cluster (PREREG X6, default): the first decision sets every undecided tile of the atlas '
                          'cluster; pile: only the cluster tiles whose current sign equals the shown tile\'s (the '
                          'sorter pile x cluster); none: per tile')
+    ap.add_argument('--lattice', help='TXE3-1: two-pass top-k lattice TSV (line, pos, cand, score) for the lattice order')
+    ap.add_argument('--key', help='key TSV (sign, value) for --lattice')
+    ap.add_argument('--lang', default='it16dip', help='judge_plaintext corpus name for --lattice (default it16dip)')
+    ap.add_argument('--lattice-corpus', nargs='*', help='corpus file(s) instead of --lang (offline test)')
+    ap.add_argument('--lam', type=float, default=1.0, help='lattice prior weight (sign_sorter --rank-lattice default 1.0)')
+    ap.add_argument('--margin', help='TXE3-1: glyph_atlas classify --topk TSV (box, d1, d2) for the margin order; needs --map')
+    ap.add_argument('--at', nargs='+', type=int, default=[10, 20, 50, 100], help='k values for err_at and --dump-dir')
+    ap.add_argument('--thresholds', nargs='+', type=float, default=[0.03, 0.02], help='err_true targets for to_pct')
+    ap.add_argument('--dump-dir', help='write each named ordering\'s output at every --at k here')
     ap.add_argument('--kmax', type=int, default=200)
     ap.add_argument('--seeds', type=int, default=10)
     ap.add_argument('--exclude-flagged', action='store_true')
@@ -221,13 +292,16 @@ def main(argv=None):
     orc = oracle_rows(truth, base)
     keys = {(ln, p) for ln, v in base.items() for p, _ in v}
 
-    cluster_of, dist = {}, {}
-    if a.map and a.clusters:
-        cl = {r['id']: r for r in read_tsv(a.clusters) if r.get('kind', 'sign') == 'sign'}
+    cluster_of, dist, box_of = {}, {}, {}
+    if a.map:
+        cl = {r['id']: r for r in read_tsv(a.clusters) if r.get('kind', 'sign') == 'sign'} if a.clusters else {}
         with open(a.map, newline='') as f:
             for r in csv.DictReader(f, delimiter='\t'):
                 k = (r['line'], r['pos'])
-                if r['op'] != '1:1' or k not in keys or r['sid'] not in cl:
+                if r['op'] != '1:1' or k not in keys:
+                    continue
+                box_of[r['sid']] = k
+                if r['sid'] not in cl:
                     continue
                 cluster_of[k] = cl[r['sid']]['cluster']
                 dist[k] = float(cl[r['sid']].get('dist') or 0)
@@ -239,14 +313,37 @@ def main(argv=None):
         cluster_of = {}
     propagation = bool(cluster_of)
     sim = Sim(truth, base, cluster_of, a.propagate)
-    curves = {}
+    curves, snaps = {}, defaultdict(dict)
+    at = tuple(sorted(set(a.at)))
+    rank = {k: i for i, k in enumerate(show)}          # reading order, the tiebreak everywhere
 
+    dis = {}
     if a.signals:
         n = {}
         for p in a.signals:
             for r in read_tsv(p):
                 n[(r['line'], r['pos'])] = int(r['n_signals'])
-        curves['a_doubt'] = run_order(sim, sorted(show, key=lambda k: -n.get(k, 0)), orc, a.kmax)
+                dis[(r['line'], r['pos'])] = int(r.get('disagree') or 0)
+        curves['a_doubt'] = run_order(sim, sorted(show, key=lambda k: -n.get(k, 0)), orc, a.kmax, at, snaps['a_doubt'])
+        curves['disagree'] = run_order(sim, sorted(show, key=lambda k: (-dis.get(k, 0), rank[k])), orc, a.kmax, at,
+                                       snaps['disagree'])
+    gaps = {}
+    if a.margin:
+        if not box_of:
+            ap.error('--margin needs --map')
+        gaps = margin_gaps(a.margin, box_of)
+        curves['margin'] = run_order(sim, sorted(show, key=lambda k: (gaps.get(k, float('inf')), rank[k])), orc, a.kmax,
+                                     at, snaps['margin'])
+        if dis:
+            curves['disagree_margin'] = run_order(
+                sim, sorted(show, key=lambda k: (-dis.get(k, 0), gaps.get(k, float('inf')), rank[k])), orc, a.kmax, at,
+                snaps['disagree_margin'])
+    if a.lattice:
+        if not a.key:
+            ap.error('--lattice needs --key')
+        vals = lattice_values(a.lattice, a.key, lines, a.lang, a.lattice_corpus, a.lam)
+        curves['lattice'] = run_order(sim, sorted(show, key=lambda k: (-vals.get(k, -1.0), rank[k])), orc, a.kmax, at,
+                                      snaps['lattice'])
     if propagation:
         size = defaultdict(int)
         for k, c in cluster_of.items():
@@ -258,13 +355,22 @@ def main(argv=None):
         first = sorted(rep.values(), key=lambda k: (-size[cluster_of[k]], dist[k]))
         rest = sorted((k for k in show if k not in set(first)),
                       key=lambda k: (-size.get(cluster_of.get(k), 0), dist.get(k, 1e9)))
-        curves['b_size'] = run_order(sim, first + rest, orc, a.kmax)
+        curves['b_size'] = run_order(sim, first + rest, orc, a.kmax, at, snaps['b_size'])
     rnd = []
     for s in range(a.seeds):
         o = list(show)
         random.Random(s).shuffle(o)
         rnd.append(run_order(sim, o, orc, a.kmax))
-    curves['d_oracle'] = run_oracle(sim, show, orc, a.kmax)
+    curves['d_oracle'] = run_oracle(sim, show, orc, a.kmax, at, snaps['d_oracle'])
+    if a.dump_dir:
+        os.makedirs(a.dump_dir, exist_ok=True)
+        for name in curves:
+            for k, st in snaps[name].items():
+                with open(os.path.join(a.dump_dir, '%s_k%d.tsv' % (name, k)), 'w') as f:
+                    f.write('line\tpos\tsign\n')
+                    for ln in sorted(sim.order):
+                        for p in sim.order[ln]:
+                            f.write('%s\t%s\t%s\n' % (ln, p, st[(ln, p)]))
 
     os.makedirs(os.path.dirname(a.out) or '.', exist_ok=True)
     with open(a.out, 'w') as f:
@@ -286,17 +392,32 @@ def main(argv=None):
     sim.reset()
     s0 = sim.score()
     summ.update(base_wrong=s0['wrong'], scored=s0['scored'], base_err=round(err(s0), 4), orderings={})
+    def cell(rows):
+        return dict(err_at={str(k): round(err(rows[min(k, len(rows) - 1)]), 4) for k in at},
+                    wrong_at={str(k): rows[min(k, len(rows) - 1)]['wrong'] for k in at},
+                    to_pct={str(t): to_thr(rows, a.kmax, t) for t in a.thresholds})
     for name, rows in curves.items():
-        summ['orderings'][name] = dict(to_2pct=to2(rows, a.kmax), removed_10=at(rows, 10), removed_20=at(rows, 20),
+        summ['orderings'][name] = dict(to_2pct=to2(rows, a.kmax), removed_10=at_(rows, 10), removed_20=at_(rows, 20),
                                        err_10=round(err(rows[min(10, len(rows) - 1)]), 4),
                                        err_20=round(err(rows[min(20, len(rows) - 1)]), 4),
-                                       broken_20=rows[min(20, len(rows) - 1)]['broken'], steps=len(rows) - 1)
+                                       broken_20=rows[min(20, len(rows) - 1)]['broken'], steps=len(rows) - 1, **cell(rows))
     if rnd:
         t2 = [to2(c, a.kmax) for c in rnd]
+        def band(k):
+            es = [err(c[min(k, len(c) - 1)]) for c in rnd]
+            return [round(min(es), 4), round(sum(es) / len(es), 4), round(max(es), 4)]
+        def med(t):
+            v = sorted(to_thr(c, a.kmax, t) if isinstance(to_thr(c, a.kmax, t), int) else a.kmax + 1 for c in rnd)
+            m = v[len(v) // 2]
+            return m if m <= a.kmax else 'not reached by k=%d (median)' % a.kmax
         summ['orderings']['c_random'] = dict(
-            to_2pct=t2, removed_10_mean=sum(at(c, 10) for c in rnd) / len(rnd),
-            removed_20_mean=sum(at(c, 20) for c in rnd) / len(rnd),
-            removed_20_band=[min(at(c, 20) for c in rnd), max(at(c, 20) for c in rnd)])
+            to_2pct=t2, removed_10_mean=sum(at_(c, 10) for c in rnd) / len(rnd),
+            removed_20_mean=sum(at_(c, 20) for c in rnd) / len(rnd),
+            removed_20_band=[min(at_(c, 20) for c in rnd), max(at_(c, 20) for c in rnd)],
+            err_at_min_mean_max={str(k): band(k) for k in at},
+            to_pct_median={str(t): med(t) for t in a.thresholds},
+            to_pct_reached={str(t): sum(1 for c in rnd if isinstance(to_thr(c, a.kmax, t), int)) for t in a.thresholds},
+            seeds=len(rnd))
     print(json.dumps(summ, indent=1))
     if a.json:
         json.dump(summ, open(a.json, 'w'), indent=1)

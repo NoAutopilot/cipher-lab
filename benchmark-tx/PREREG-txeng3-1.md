@@ -1,4 +1,4 @@
-# PREREG TXE3-1: which questions should the owner's sorter ask first? (account 3, Fable, session_01NGr4EgD9Bhbmri2omj7nn5; written 11 Oct 2026 06:0x UTC by date -u, BEFORE any score)
+# PREREG TXE3-1: which questions should the owner's sorter ask first? (account 3, Fable, session_01NGr4EgD9Bhbmri2omj7nn5; written 11 Oct 2026 05:5x UTC by date -u (committed f03c4f25 at 05:54 UTC; the header first read 06:0x, a typed estimate corrected here under rule 6), BEFORE any score)
 
 One of ten TXE3 transcription experiments launched by the account-3 parent (session_0198Cv8ypBfBVfRToKVWx33M) on 11 Oct 2026.
 Read-free: no image, no reader, no model call; the benchmark truth plays the owner only inside `tools/tx_sorter_curve.py`
@@ -83,3 +83,12 @@ Vivonne box check, 10 Oct 2026 -- a BOX-CHECK rate, not a sorter rate, flagged a
 Cap USD 15 / 2 h from 05:47 UTC (box ends 07:47, 80% line 07:23 UTC / USD 12). Dev first; eval run once per declared
 configuration after the dev choice is written here; no re-tuning after an eval number is seen. Stop before starting a unit that
 would cross 80% of either figure. No follow-ups.
+
+## Dated addition 1 (06:1x UTC 11 Oct by date -u, after the dev runs, BEFORE any eval run)
+Dev choice under the fixed rule (dev_tune, pile, x; base C 14/338 = 0.0414): lattice err_true at k=20 is 0.0207 (7 wrong) at
+lam 1 and 0.0296 (10 wrong) at lam 4, so **eval uses lam 1** (the live sorter's default). Nothing else was tuned. Dev numbers
+for the record (pile, x): disagree 9 / 7 / 6 / 6 wrong at k 10 / 20 / 50 / 100, to 3% at 6, to 2% at 28; lattice 10 / 7 / 7 / 2,
+10, 52; a_doubt 11 / 9 / 5 / 4, 7, 30; margin 12 / 12 / 12 / 10, 99, not reached; disagree_margin 11 / 7 / 6 / 6, 12, 29;
+random 20 seeds min / mean / max err at k=20 0.0296 / 0.0383 / 0.0414, to 3% median 64 (20 of 20 reach), to 2% median 134
+(17 reach); oracle 2 / 5. The dev margin order is the truth-contaminated one (see Material) and still barely moves. The eval
+runs now follow, once per declared configuration (pile, cluster, none; x and m), nothing re-tuned after them.
