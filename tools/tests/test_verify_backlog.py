@@ -40,6 +40,8 @@ RESULTS = {"results": [
      "novelty": "N3", "depth": "D2", "date": "20 Sept 2026", "title": "V three audits"},
     {"link": "https://x/tree/main/ciphers/f-w", "claim_scope": "recovered-passages", "date": "20 Sept 2026",
      "title": "W never audited"},
+    {"link": "https://x/tree/main/ciphers/f-g", "audit_status": "one audit", "claim_scope": "completed-reading",
+     "grade": "N1", "plaintext_novelty": "N1", "depth": "D1", "date": "10 Oct 2026", "title": "G grade-only N1"},
 ]}
 
 
@@ -75,6 +77,8 @@ def test_must_not():
     assert dec["priority"] == "none" and dec["next_action"].startswith("no verifier action")
     k = by(rows, "KnownN0")[0]
     assert k["missing"] == "audit2" and k["priority"] == "low"
+    g = by(rows, "G grade-only N1")[0]  # class carried only in grade/plaintext_novelty (Eckert rows, 11 Oct 2026)
+    assert g["missing"] == "audit2" and g["priority"] == "low"
 
 
 def test_order_and_dates():

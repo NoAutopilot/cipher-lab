@@ -28,7 +28,8 @@ Catches: a reading that sat at one audit or uncounted with no verifier assigned 
 backlog was spread over two registers nobody diffed).
 Must NOT: mark a decided 'not counted' / N0-N2 row as an open count (priority none); list a row whose Audit 1 is not done (Armstrong, '1' = .); list a correction/catalogue-contribution result;
 list a key-to-known-text result with two audits as "counted missing"; drop a status.json result whose folder has no
-PROGRESS.tsv row (it is listed with note 'absent from PROGRESS.tsv'). Offline tests: tools/tests/test_verify_backlog.py.
+PROGRESS.tsv row (it is listed with note 'absent from PROGRESS.tsv'); rank an N1 row whose class sits only in
+`plaintext_novelty`/`grade` (the Eckert shape) as high (11 Oct 2026). Offline tests: tools/tests/test_verify_backlog.py.
 """
 import argparse, csv, datetime, json, re, sys
 
@@ -161,7 +162,9 @@ def build(progress, results):
         a1 = st in ("one audit",) + DONE_A2 or bool(e.get("novelty") or e.get("class") or e.get("audit_refs"))
         if not a1:
             continue
-        cls = e.get("novelty") or e.get("class") or ""
+        # Eckert-style rows carry the class only in plaintext_novelty / grade (DEFAULT-A1-1840, 11 Oct 2026).
+        cls = (e.get("novelty") or e.get("class") or e.get("plaintext_novelty")
+               or (e.get("grade") if re.fullmatch(r"N[0-5]", str(e.get("grade") or "")) else "") or "")
         m2 = st not in DONE_A2
         mc = not e.get("depth") and scope not in NOT_COUNTABLE and cls not in LOW_CLASS
         if not (m2 or mc):
