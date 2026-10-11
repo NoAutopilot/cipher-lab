@@ -1,0 +1,16 @@
+arm	signs	in_key60	letters	S_key60	shuf_mean	shuf_p95	shuf_max	key60_rank_of_1001
+T pass R (fresh, Sonnet) f.143r L05-L08	136	111	192	-1.4224	-1.1248	-0.9940	-0.8805	1001
+  decode: dudicdpouluysinmpabietigluypooanostrebdiaasrilfecdlqueioteficeluynganainostreifinddefssmgbadicredetrialasdiabienrequeitaliensxmunacareenbriormeaadiconsngutelnostreetnnostreogncdnostresobnostre
+T pass P (KH1-F) f.143r L05-L08	195	179	237	-1.6165	-1.1301	-0.9870	-0.9084	1001
+  decode: duceeuussinegbienraisonietiusuoolibdobsriletuplcedebeuofeceequeiuquedepceseuauiogeeiulngilieedesgannouditreebienaussieseugbadicureeeeubienrilsdiaprebquesibienuguaeenbrediceemfudgllgriocsasdiasadicmquensnregdelletngeuounceeulaireagnsnlinc
+T pass Q (KH1-F, report only) f.143r L06-L08	133	119	197	-1.3070	-1.1256	-0.9940	-0.9164	973
+  decode: fecdlqueauxodeficesquilaiodlegauxmddeducdemantouegaconnouditreebiensseuaadicureedbienrialasdiabienreaquebienluenuacoeenbredicdauxlagllugrisermeluydiamedisceonstodenostreteaetnsiuncdtoaireagnsconlic
+M reverse arm fr.4715 f.61r (Mayenne key)	100	49	90	-1.3121	-1.1766	-0.8425	-0.6014	745
+  decode: nostredicaihcacahcaiidirecacaidiicaboncaredinostrecadicadiicacacarecacadidincarecacanostre
+C positive control fr.3986 f.152 passD (no.60)	145	132	221	-1.2943	-1.1290	-0.9641	-0.8175	918
+  decode: quiretsrdsstsrziuzromecontedestpauldeursieuguxdesinquedexnsutrecequitqueuclieditsstusqueguuquequidqueitutaussirecederslesbiysurplusdedisniteetderesseectnsqueendrqueictetnducdemantoueiesessincquesestituguesitudeuxquedezits
+
+gate 1 (non-test if M >= T shuffled p95): M -1.3121 vs p95 R -0.9940, P -0.9870 -> ok
+gate 2 (non-test if C <= its shuffled p95): C -1.2943 vs p95 -0.9641 -> NON-TEST
+gate 3: pass R clears False; pass P clears False
+VERDICT: NON-TEST
