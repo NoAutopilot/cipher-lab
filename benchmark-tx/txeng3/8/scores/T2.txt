@@ -1,0 +1,33 @@
+/usr/bin/python3 /home/user/cipher-lab/tools/tx_bench.py /home/user/cipher-lab/benchmark-tx/txeng3/8/outputs/passZ_T2.tsv /home/user/cipher-lab/benchmark-tx/txeng3/8/reads/T2_passA.tsv /home/user/cipher-lab/benchmark-tx/txeng3/8/reads/T2_passB.tsv --bench /home/user/cipher-lab/BENCHMARK-TX.tsv --item birago1572-no87 --coverage-diagnostic --exclude-flagged --strict --paired /home/user/cipher-lab/benchmark-tx/txeng/units/labels_dev_tune.tsv
+
+COVERAGE DIAGNOSTIC: partial coverage, missing truth lines are listed and not scored, unknown line ids ignored; not the fixed-manifest score
+birago1572-no87 [eval] as measured: err_true(0.75-indel align) 0.195 (67/343) | standard SER (unit-cost Levenshtein) 0.195 (67/343): S 66 D 0 I 1 | wrong 62 deleted 2 inserted 3 | excluded 11 | lines missing 17 (0 signs counted deleted)
+    reader abstentions 1 | accepted-token error 61/340 = 0.179 | coverage 340/343 = 0.991
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.227 (78/343) | standard SER 0.227 (78/343)
+paired passZ_T2.tsv vs labels_dev_tune.tsv on birago1572-no87 [as measured]: 12 lines; lines improved 0, worsened 12, tied 0; line sign test p = 0.0005; unit-cost edits base 12 -> output 67 over 343 scored signs | beside, sign-level position McNemar: 343 common scored signs; base wrong 12, output wrong 64; fixed 3, broken 55; exact p = 0.0000
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.183 (62/338) | standard SER (unit-cost Levenshtein) 0.183 (62/338): S 61 D 0 I 1 | wrong 57 deleted 2 inserted 3 | excluded 16 | lines missing 17 (0 signs counted deleted) [5 flagged] | position errors 59/338 = 0.175 | insertions 3 / read 353 = 0.009
+    reader abstentions 1 | accepted-token error 56/335 = 0.167 | coverage 335/338 = 0.991
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.222 (75/338) | standard SER 0.222 (75/338)
+paired passZ_T2.tsv vs labels_dev_tune.tsv on birago1572-no87 [flagged excluded (truth-verifier flags only)]: 12 lines; lines improved 0, worsened 12, tied 0; line sign test p = 0.0005; unit-cost edits base 7 -> output 62 over 338 scored signs | beside, sign-level position McNemar: 338 common scored signs; base wrong 7, output wrong 59; fixed 3, broken 55; exact p = 0.0000
+  top confusions (truth value <- read): d<-T98 x12, i<-T27 x12, e<-T89 x7, u<-T86 x6, e<-T60 x4, m<-T51 x4, e<-T76 x3, r<-T11 x2
+split eval: err_true(0.75-indel align) 0.195 (67/343) | standard SER 0.195 (67/343)
+birago1572-no87 [eval] as measured: err_true(0.75-indel align) 0.198 (68/343) | standard SER (unit-cost Levenshtein) 0.198 (68/343): S 65 D 2 I 1 | wrong 63 deleted 3 inserted 2 | excluded 11 | lines missing 17 (0 signs counted deleted)
+    reader abstentions 1 | accepted-token error 62/339 = 0.183 | coverage 339/343 = 0.988
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.227 (78/343) | standard SER 0.227 (78/343)
+paired T2_passA.tsv vs labels_dev_tune.tsv on birago1572-no87 [as measured]: 12 lines; lines improved 0, worsened 12, tied 0; line sign test p = 0.0005; unit-cost edits base 12 -> output 68 over 343 scored signs | beside, sign-level position McNemar: 343 common scored signs; base wrong 12, output wrong 66; fixed 3, broken 57; exact p = 0.0000
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.186 (63/338) | standard SER (unit-cost Levenshtein) 0.186 (63/338): S 60 D 2 I 1 | wrong 58 deleted 3 inserted 2 | excluded 16 | lines missing 17 (0 signs counted deleted) [5 flagged] | position errors 61/338 = 0.180 | insertions 2 / read 352 = 0.006
+    reader abstentions 1 | accepted-token error 57/334 = 0.171 | coverage 334/338 = 0.988
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.222 (75/338) | standard SER 0.222 (75/338)
+paired T2_passA.tsv vs labels_dev_tune.tsv on birago1572-no87 [flagged excluded (truth-verifier flags only)]: 12 lines; lines improved 0, worsened 12, tied 0; line sign test p = 0.0005; unit-cost edits base 7 -> output 63 over 338 scored signs | beside, sign-level position McNemar: 338 common scored signs; base wrong 7, output wrong 61; fixed 3, broken 57; exact p = 0.0000
+  top confusions (truth value <- read): i<-T27 x10, r<-T29 x10, e<-T89 x7, p<-T65 x7, d<-T98 x5, e<-T60 x5, m<-T51 x4, e<-T76 x3
+split eval: err_true(0.75-indel align) 0.198 (68/343) | standard SER 0.198 (68/343)
+birago1572-no87 [eval] as measured: err_true(0.75-indel align) 0.190 (65/343) | standard SER (unit-cost Levenshtein) 0.190 (65/343): S 65 D 0 I 0 | wrong 65 deleted 0 inserted 0 | excluded 11 | lines missing 17 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 65/343 = 0.190 | coverage 343/343 = 1.000
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.222 (76/343) | standard SER 0.222 (76/343)
+paired T2_passB.tsv vs labels_dev_tune.tsv on birago1572-no87 [as measured]: 12 lines; lines improved 0, worsened 12, tied 0; line sign test p = 0.0005; unit-cost edits base 12 -> output 65 over 343 scored signs | beside, sign-level position McNemar: 343 common scored signs; base wrong 12, output wrong 65; fixed 2, broken 55; exact p = 0.0000
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.177 (60/338) | standard SER (unit-cost Levenshtein) 0.177 (60/338): S 60 D 0 I 0 | wrong 60 deleted 0 inserted 0 | excluded 16 | lines missing 17 (0 signs counted deleted) [5 flagged] | position errors 60/338 = 0.177 | insertions 0 / read 351 = 0.000
+    reader abstentions 0 | accepted-token error 60/338 = 0.177 | coverage 338/338 = 1.000
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.216 (73/338) | standard SER 0.216 (73/338)
+paired T2_passB.tsv vs labels_dev_tune.tsv on birago1572-no87 [flagged excluded (truth-verifier flags only)]: 12 lines; lines improved 0, worsened 12, tied 0; line sign test p = 0.0005; unit-cost edits base 7 -> output 60 over 338 scored signs | beside, sign-level position McNemar: 338 common scored signs; base wrong 7, output wrong 60; fixed 2, broken 55; exact p = 0.0000
+  top confusions (truth value <- read): i<-T27 x13, d<-T98 x12, u<-T86 x8, e<-T89 x7, e<-T60 x4, m<-T51 x4, per<-T76 x2, r<-T11 x2
+split eval: err_true(0.75-indel align) 0.190 (65/343) | standard SER 0.190 (65/343)
