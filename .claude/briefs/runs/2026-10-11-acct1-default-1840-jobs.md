@@ -101,3 +101,29 @@ Assess each rung from the folder's own files and NEAR.md, CLAUDE.md rule 5 (fini
 clause: mark it [x] with what was done, [retired] with the instrument named, [n/a] with why, or [ ] with a costed next step. No new
 test, no network. Write a dated Remaining gaps / Escalation section per folder and pass `tools/gaps_check.py`; NEAR.md rows edited
 only to keep them consistent (`tools/near_check.py`). Both targets stay open/partial (rule 5).
+
+## Wave 3 (19:4x UTC 11 Oct)
+Each job is the Verdict's cheapest next as written by this lane's own wave 2 (OBRED-11851, NEAR-RUNGS), read 19:4x UTC. Intake gate as
+wave 2 (all exit 0). Caps at >= 3 per the wave-2 lesson; a CPU-bound run is priced as its own unit and not run alongside a second
+CPU job in the same box (CLAUDE.md Usage 6, GOLD-K3).
+
+### OBRED-641 (Opus, cap 4, box 90 min): oldenbarnevelt-brederode-1605, NA inv. 11851 scans 641-700
+OBRED-11851's Verdict: the Nov-Dec 1604 exhibitum window of the 17 Oct 1604 Stettin letter, the same three positive controls, ~60 NA
+requests ("NA take"/"NA release", >= 1.5 s, <= 70 requests). Same method as OBRED-11851 (read its section first). If budget remains under
+80% after 641-700, continue the 6017 stride-1 fill from scan 37, stating scans looked at. A found block: record its scan id and one
+native crop; transcription only if the cap allows two blind passes.
+
+### SALV-DSN (Opus, cap 4, box 120 min): fr2933-salviati-1525 (NEAR), DSN irregular at 96 restarts on the SALV-F56V split, control first
+NEAR-RUNGS's retry rung. Use `tools/family_run.py` (the syllabary/DSN family as LANE R8 ran it; read HYPOTHESES.md and SALV-DIAG first).
+Rule 3, two binding points: (1) control first, the target only if the control mean meets the gate (else CONTROL BELOW GATE, stop);
+(2) SALV-DIAG's lesson -- the control's injected error must bracket the target's own measured transcription error (14.6% pass-to-pass on
+the atlas; state the measured error of the SALV-F56V split if it differs) or the run is a non-test, logged as such. Rule 3's third-
+attempt clause: if this is the third attempt of the same family changing only the restart count, say so and log "untested-by-this-
+tool" rather than tune further. Pre-register gate and error levels (PREREG pushed first). Both numbers into HYPOTHESES.md. Target stays
+partial (rule 5); NEAR row numbers only if they change. Price: one control sweep + one target run, serial.
+
+### MCC-SWEEP (Opus, cap 3, box 90 min): mccormick-1999 (NEAR), token_anneal.py control length sweep
+NEAR-RUNGS's retry rung (NOTES.md l.599-600): control lengths 132 to 8,000 tokens x 3 seeds, no target run unless the control reads at
+132 tokens (the target's N). PREREG first (the read criterion, the gate 0.5 as before or justified otherwise). Report the length at
+which the control first reads; if it never reads at 132, the token/nomenclator family is too-short at the target's N (a blocker, not a
+negative). Disk/CPU only. Target stays open (rule 5); NEAR row updated only to keep it consistent.
