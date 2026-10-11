@@ -232,3 +232,11 @@ split before SALV-F56V**: neither refuted nor confirmed on the further-corrected
 (append-only, CLAUDE.md rule 3/7); this section is the re-label. New runs on the SALV-F56V split are appended
 below, dated after this line. No cm rerun in this job (a separate decision for the parent, per SALV-F56V's own
 brief).
+
+<!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 11 Oct 2026 20:06 | syllabary | N=2939 K=253 restarts=96 corpus=alcuneletteredip00ferr.txt+delleletterefam02seghgoog.txt+lettereinedited00tassgoog.txt+lettereinedited01cibrgoog.txt+lettereineditedi01carouoft.txt+letterescrittea01vanzgoog.txt err=0.064,assign=irregular | 1 | 0.844 (0.825-0.866) | -10395.023 | FAIL language: score=-1.299, null_p99=-1.861, real_p05=-0.91, real_median=-0.826, mode=both, N=3888 | yes (gate 0.6) | LANE DEFAULT-A1-1840 SALV-DSN: DSN irregular 96 restarts, SALV-F56V split, measured err, target seed 1 |
+| 11 Oct 2026 20:26 | syllabary | N=2939 K=253 restarts=96 corpus=alcuneletteredip00ferr.txt+delleletterefam02seghgoog.txt+lettereinedited00tassgoog.txt+lettereinedited01cibrgoog.txt+lettereineditedi01carouoft.txt+letterescrittea01vanzgoog.txt err=0.10,assign=irregular | 1-3 | 0.733 (0.610-0.819) | not run (control-only) | - | yes | LANE DEFAULT-A1-1840 SALV-DSN: bracket control err=0.10, DSN irregular 96 restarts, SALV-F56V split |
+| 11 Oct 2026 20:40 | syllabary | N=2939 K=253 restarts=96 corpus=alcuneletteredip00ferr.txt+delleletterefam02seghgoog.txt+lettereinedited00tassgoog.txt+lettereinedited01cibrgoog.txt+lettereineditedi01carouoft.txt+letterescrittea01vanzgoog.txt err=0.146,assign=irregular | 1-3 | 0.541 (0.417-0.620) | not run (control-only) | - | no | LANE DEFAULT-A1-1840 SALV-DSN: bracket control err=0.146, DSN irregular 96 restarts, SALV-F56V split |

@@ -3557,3 +3557,54 @@ Read so far: unmeasured; no reading of the cipher exists, the folder's families 
 - [x] image-check: passes A/B/C, SALV-SPLIT, SALV2-J1A/B and SALV-F56V; f.56r pass C optional (~$3, strips on disk), not decisive for any open family
 - [ ] retry: DSN irregular at 96 restarts on the SALV-F56V split, control first (bSALI's 24-restart control mean 0.467); the code+mark anneal and wordcode context option stay retired
 Verdict: keep going: 2 internal gaps; cheapest next: DSN irregular retry at 96 restarts on the current split, control first, ~$3
+
+## SALV-DSN: DSN irregular at 96 restarts on the SALV-F56V split (11 Oct 2026, 19:51-20:4x UTC by date -u)
+Worker SALV-DSN (account 1, LANE DEFAULT-A1-1840), brief `.claude/briefs/runs/2026-10-11-acct1-default-1840-jobs.md`
+"### SALV-DSN" (NEAR-RUNGS's retry rung). Disk only, 0 host requests, no subagents, no images. Pre-registered in
+`PREREG-SALV-DSN.md` (commit 6e582d19f, on origin/main before any run).
+Prior work (`tools/prior_work.py ... --step-type decode --offline`, exit 4): three generic holds (leaf gloss, solver caches by
+unit, Tomokiyo by unit) recorded CLEAR in `prior-work.tsv` from Premise check (a)/(b) and the Web and blog check (GF-A2-13,
+3 Oct 2026); the two UNCHECKED-NET rows (aaymeloglu clone, editions table) are covered by the same Premise check (b) clones and
+the check-solved/D2-PRINT4 edition reads; check 1 (own work): no DSN irregular row at 96 restarts or on the SALV-F56V split in
+HYPOTHESES.md before this job.
+Attempt count: third attempt of DSN irregular on this target (R8 DSN 25 Sept at 6/24 restarts, err 0.05; bSALI 26 Sept at 24
+restarts, err 0.064, control below gate), changing mainly the restart count (24 -> 96) on a split 7 tokens / 2 types different.
+Measured error: 6.4% per sign (bSALC pass-C model estimate; SALV-F56V split not re-measured); 14.6% is the raw pre-pass-C
+atlas A/B disagreement, bracketed below.
+
+`tools/family_run.py specs/fr2933-salviati-1525.json --family syllabary --measured-error 0.064 --param assign=irregular
+--restarts 96 --seeds 3 --seed 1 --gate 0.6 --param err=E` (N=2939, K=253, it16 corpus; about 5 min CPU per control seed):
+
+| err | control seed 1/2/3 | control mean | gate 0.6 | target (seed 1) |
+|---|---|---|---|---|
+| 0.064 (measured) | 0.866 / 0.839 / 0.825 | 0.844 | met | score -10395.0, -2.674/symbol; judge FAIL (-1.299 vs real_p05 -0.91, null_p99 -1.861) |
+| 0.10 (bracket, control-only) | 0.610 / 0.819 / 0.770 | 0.733 | met | - |
+| 0.146 (bracket, control-only) | 0.417 / 0.620 / 0.586 | 0.541 | NOT met | - |
+
+Reading of the numbers, as pre-registered: at 96 restarts the control that missed at 24 (bSALI, mean 0.467) clears the gate
+on all three seeds, so the restart count was the limiting setting, not the design; with the control reading 82-87% at the
+measured error the target's decode (-2.674/symbol, the same band as R8's irregular target -2.686 to -2.689; the top two of 96
+restarts differ by 13 nats with no plateau) reads no Italian and the judge FAILs well below real_p05. **Control-backed negative
+for DSN irregular at the 6.4% estimate and up to 10% error; a non-test if the true error is near the pre-pass-C 14.6%**
+(control mean 0.541 there). Rule 3's third-attempt clause does not apply: the control met its gate this time, so this is a
+result, not an untested-by-this-tool row. With DSN2 V1-V3 and DSN regular already control-backed at 6.4% (bSALR/bSALR2), every
+R8 syllabary variant on file now has a control-backed negative at the measured error. Status unchanged (open; rule 5).
+Files: `HYPOTHESES.md` (3 rows, label "LANE DEFAULT-A1-1840 SALV-DSN"), `families/syllabary-1-err=0.064,assign=irregular-
+lanedefaulta1184.txt` (target decode), `PREREG-SALV-DSN.md`, `prior-work.tsv`, `look.tsv`, this section, NEAR.md row.
+Regenerate: the command above with `--param err=0.064` (gated, control + target) and `--param err=0.10` / `0.146` with
+`--control-only`; deterministic seeds.
+
+## Remaining gaps (SALV-DSN, 11 Oct 2026)
+Read so far: unmeasured; no reading of the cipher exists, the folder's families are logged as non-tests or control-backed negatives (HYPOTHESES.md, NEAR-RUNGS and SALV-DSN above)
+- the Phillipps MS 7293 letter book (BL RP 271/2/4, despatches 17 July 1525-15 May 1527), a possible clear register copy - blocker: needs-physical-access; the original was sold in 1968, holder not recorded, BL image service down since 2023 (Premise check (d))
+- f57v's 172 plain-Italian boxes (20 lines, the one leaf SALV-PLAIN3 did not reach) - blocker: not-attempted; crops not committed, regenerated from Gallica by regen_images.sh (Gallica 403 on 11 Oct 18:5x UTC); next: regenerate the f57v renders and crops, two blind passes in halves plus one reconciliation, ~$7
+
+## Escalation (SALV-DSN, 11 Oct 2026)
+- [x] siblings: Premise check (d), 3 Oct 2026: fr.3087 item 90 (3 Oct 1525, two cipher lines per Molini) and siblings.tsv; no decipherment
+- [ ] clear-pages: f57v's 172 plain boxes unread (SALV-PLAIN3 stopped before them); the Phillipps 7293 register copy is needs-physical-access
+- [x] known-keys: LANE R5 B (24 Sept, eight sources) and keytrial.tsv found no fitting key; KEY-OFFICES/KEY-DESIGN re-grepped 11 Oct, nothing added
+- [x] print: CSP Spain III/1 for Oct 1525 read (D2-PRINT4); Desjardins/Canestrini and Molini read earlier; context only
+- [retired] key-rebuild: code+mark anneal control/codemark_curve.py closed after three attempts (SALV2-J2, SALV-CM48, SALV-HAPAX); wordcode context option untested-by-this-tool (SALV-CTX2); every R8 syllabary variant control-backed at 6.4% (DSN irregular by SALV-DSN); reopened only by new material
+- [x] image-check: passes A/B/C, SALV-SPLIT, SALV2-J1A/B and SALV-F56V; f.56r pass C optional (~$3, strips on disk), not decisive for any open family
+- [x] retry: DSN irregular at 96 restarts on the SALV-F56V split (SALV-DSN, 11 Oct): control 0.844 at err 0.064, 0.733 at 0.10, 0.541 at 0.146; target judge FAIL -- control-backed up to 10%, non-test at 14.6%
+Verdict: keep going: 1 internal gap; cheapest next: f57v's plain boxes once Gallica answers (regen_images.sh, two blind passes in halves + reconciliation, ~$7)
