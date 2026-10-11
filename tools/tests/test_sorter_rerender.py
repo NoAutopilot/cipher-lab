@@ -63,6 +63,23 @@ with tempfile.TemporaryDirectory() as d:
     p2 = (d / 'patched2.html').read_text()
     check('a box_key.py-patched page (no OPTS line) keeps its key on the re-render, and the old patch block is not carried over',
           rc == 0 and rr.page_opts(p2) == {'focusToTray': True, 'key': 'box'} and 'id="boxKeyCss"' not in p2 and p2.count('id="boxKey"') == 1)
+    # a page with a whole-page region loads its image from beside the page (adversarial check, 11 Oct 2026, template 09.7): a re-render
+    # into another folder copies it, and a missing image is not passed over in silence
+    rd = dict(data); rd['region'] = {'src': 'old_region.jpg', 'W': 60, 'H': 40, 'lines': {}}
+    (d / 'reg').mkdir(); (d / 'out').mkdir()
+    (d / 'reg' / 'old.html').write_text(old.replace(json.dumps(data).replace('</', '<\\/'), json.dumps(rd).replace('</', '<\\/')))
+    Image.new('L', (60, 40), 200).save(d / 'reg' / 'old_region.jpg')
+    rc = rr.main([str(d / 'reg' / 'old.html'), '--out', str(d / 'out' / 'new.html')])
+    check('region page re-rendered into another folder: its region image is copied beside it', rc == 0 and (d / 'out' / 'old_region.jpg').exists()
+          and rr.extract((d / 'out' / 'new.html').read_text())[0].get('region', {}).get('src') == 'old_region.jpg')
+    (d / 'reg' / 'old_region.jpg').unlink()
+    rc = rr.main([str(d / 'reg' / 'old.html'), '--out', str(d / 'out' / 'new2.html')])
+    check('...an image already beside the new page is enough', rc == 0)
+    (d / 'out2').mkdir()
+    rc = rr.main([str(d / 'reg' / 'old.html'), '--out', str(d / 'out2' / 'new.html')])
+    check('...a region image found nowhere: warned, exit 3 (must not pass in silence)', rc == 3)
+    check('...--allow-missing-region writes it anyway (exit 0)', rr.main([str(d / 'reg' / 'old.html'), '--out', str(d / 'out2' / 'new.html'), '--allow-missing-region']) == 0)
+    check('a page with no region: no region message, exit 0 (must not block)', rr.main([str(d / 'old.html'), '--out', str(d / 'out2' / 'plain.html')]) == 0)
     (d / 'bad.html').write_text('<html>no data</html>')
     check('page with no DATA line refused (exit 2)', rr.main([str(d / 'bad.html'), '--out', str(d / 'x.html')]) == 2)
 print('ALL PASS' if not fails else f'{fails} FAILED'); sys.exit(1 if fails else 0)

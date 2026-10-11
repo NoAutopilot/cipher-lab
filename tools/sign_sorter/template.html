@@ -14,7 +14,11 @@
    tools/data/sorter_owner_requirements.tsv): R09, in a sign's card one finger or a mouse drag on the picture slides the view along the
    line and up and down the page ("Back to the sign" re-centres); R10, Ctrl + mouse wheel (or a trackpad pinch) on the picture zooms it
    around the pointer, in step with the Zoom slider, also while fixing a cut, and the browser page does not zoom; R11, the arrows,
-   Previous / Next and a swipe on the big sign walk the family the card was opened from, in on-screen order, and stop at its ends. */
+   Previous / Next and a swipe on the big sign walk the family the card was opened from, in on-screen order, and stop at its ends.
+   The adversarial checks of 11 Oct 2026 (desktop, phones; browser_tests/test_wheel_edges.js): Ctrl + wheel also with the mouse button held,
+   after a lost release and over the enlarged sign, and in the line strips the card scrolls so the ink under the pointer stays put; Alt /
+   Ctrl / Cmd + arrows are the browser's; Enter saves a cut after a nudge click; iOS gesture events beside a finger pinch are not counted
+   twice; Fix the cut fits a 320 px phone. */
 :root{
   --bg:#f3f1ec; --surface:#fbfaf7; --ink:#24211c; --muted:#6b655b; --line:#d9d4c9;
   /* Colour-blind safe (MQS-SORTER, 9 Oct 2026; Okabe-Ito, tools/cvd_check.py PALETTES['sorter_light'|'dark']): no state is told by hue
@@ -239,9 +243,9 @@ body.traypad #offer{bottom:100px}
 .cv.editing canvas{cursor:crosshair}
 .cv.editing.brush canvas{touch-action:none}
 #fixBox[hidden]{display:none}
-#fixBox{display:grid;gap:8px;border:1px dashed var(--accent);border-radius:6px;padding:8px 10px;background:var(--accent-soft)}
+#fixBox{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;border:1px dashed var(--accent);border-radius:6px;padding:8px 10px;background:var(--accent-soft)}
 #fixBox .nudges{display:flex;flex-wrap:wrap;gap:6px 14px}
-#fixBox .nudges span{display:inline-flex;gap:4px;align-items:center;font-size:.82rem}
+#fixBox .nudges span{display:inline-flex;flex-wrap:wrap;gap:4px;align-items:center;font-size:.82rem}
 #fixBox .nudges button{min-width:40px;min-height:36px;font-size:1rem;padding:2px 8px}
 #fixBox .nudges select{min-height:36px;font-size:.82rem}
 .cv.editing.brush canvas{cursor:cell}
@@ -1940,7 +1944,11 @@ $('fixSplit').onclick = () => {
     d = {h, p, e: edgesOf(fix.quad), q: fix.quad.map(v => v.slice()), t0: performance.now()};
     if (h === 'brush'){ fix.mask.push({r: +$('fixBrushR').value, pts: [[r1(p[0]), r1(p[1])]]}); drawCtx(); }   // one stroke = pointerdown .. pointerup
     else if (h[0] === 'c') $('fixCorner').value = h[1]; });   // the corner arrows follow the corner last dragged
-  c.addEventListener('pointermove', e => { const own = pts.has(e.pointerId); if (own) pts.set(e.pointerId, {x: e.clientX, y: e.clientY});
+  c.addEventListener('pointermove', e => { const own = pts.has(e.pointerId);
+    // a mouse that moves with no button held lost its release (adversarial check, 11 Oct 2026, template 09.7: on a Mac, Ctrl + click opens
+    // the context menu, which takes the mouse-up; the view then followed the bare mouse and Ctrl + wheel stayed dead): end that drag here
+    if (own && e.pointerType === 'mouse' && !e.buttons){ end(e); return; }
+    if (own) pts.set(e.pointerId, {x: e.clientX, y: e.clientY});
     if (pn){ if (own){ e.preventDefault(); panMove(); } return; }
     if (!d){ if (e.pointerType === 'mouse') c.style.cursor = fix ? cursor(hit(e)) : ''; return; }
     if (!fix) return;
@@ -1957,6 +1965,8 @@ $('fixSplit').onclick = () => {
       if (pn.travel > 6) ctxPan.endT = performance.now(); pn = null; c.classList.remove('panning'); return; }
     if (d && d.h === 'brush' && fix){ brushUi(); fixPreview(); } d = null; };
   c.addEventListener('pointerup', end); c.addEventListener('pointercancel', end); c.addEventListener('lostpointercapture', end);
+  c.addEventListener('contextmenu', e => e.preventDefault());   // Ctrl + click on a Mac: no menu over the picture (it would swallow the release)
+  window.addEventListener('blur', () => { [...pts.keys()].forEach(id => end({pointerId: id})); });
   // touch: a finger on the box, an edge or a handle edits, and while the view moves nothing scrolls under it (iOS also needs the
   // touch events cancelled, not only touch-action). When the whole picture is in view already (touch-action pan-y), one finger slides
   // the card as before (owner, 8 Oct 2026: on a phone the whole picture swallowed every swipe, so Save could not be reached).
@@ -1979,16 +1989,36 @@ $('fixSplit').onclick = () => {
     const m = c._map; if (!m || m === m0) return true;
     const px = (X - m.x0) * m.s / m.k, py = ((Y - m.y0) * m.s + m.ha) / m.k;   // where that point is drawn now, in css px of the picture
     const dx = px - cx, dy = py - cy; if (Math.abs(dx) > 0.5 || Math.abs(dy) > 0.5){ ctxPan.x += dx * m.k / m.s; ctxPan.y += dy * m.k / m.s; drawCtx(); }
+    // what the window could not take up (a line strip whose window is the crop's whole height, so the picture itself grows taller; a
+    // window held at the sheet's edge) is taken up by scrolling the card, so the ink under the pointer stays under it on the screen
+    // (adversarial check, 11 Oct 2026: Matignon f.110 in "Line strips", the ink jumped 77-130 css px down with each notch)
+    const m2 = c._map; if (m2){ const r2 = c.getBoundingClientRect(), qy = r2.top + ((Y - m2.y0) * m2.s + m2.ha) / m2.k - e.clientY;
+      if (Math.abs(qy) > 0.5){ let sc = c.parentElement; while (sc && sc !== document.body && !(sc.scrollHeight > sc.clientHeight + 1 && /auto|scroll/.test(getComputedStyle(sc).overflowY))) sc = sc.parentElement;
+        if (sc && sc !== document.body) sc.scrollTop += qy; } }
     return true; };
-  c.addEventListener('wheel', e => { if (!e.ctrlKey) return;   // a plain wheel scrolls (nothing cancelled)
-    e.preventDefault(); if (pn || d) return;   // never mid-drag
+  // With the button held on the picture (the owner's own words: "ctrl+click + mouse scroll"; adversarial check, 11 Oct 2026: the zoom
+  // was refused mid-drag), the zoom happens all the same: a move of the view is drawn up to here, zoomed, and carries on from the
+  // pointer where it is; a drag of the box or a brush stroke works in page pixels, so it simply carries on at the new scale.
+  const zoomHeld = (e, dz) => { if (pn){ if (raf){ cancelAnimationFrame(raf); frame(); } }
+    const r = zoomAt(e, dz); if (pn && pts.size) rebase(); return r; };
+  const onWheel = (e, pe) => { if (!e.ctrlKey) return;   // a plain wheel scrolls (nothing cancelled)
+    e.preventDefault();   // (a drag whose release was lost is ended by the next bare mouse move, above; a wheel's own buttons are not trusted)
     const now = performance.now(); if (now - wT > 400) wAcc = 0; wT = now;
     wAcc += e.deltaY * (e.deltaMode === 1 ? 40 : e.deltaMode === 2 ? 400 : 1);
     const step = Math.abs(e.deltaY) >= 40 || e.deltaMode ? 1 : 0;   // a mouse notch: one step at once; a pinch: accumulate
-    if (step || Math.abs(wAcc) >= 50){ const dz = wAcc < 0 ? 1 : -1; wAcc = 0; zoomAt(e, dz); } }, {passive: false});
+    if (step || Math.abs(wAcc) >= 50){ const dz = wAcc < 0 ? 1 : -1; wAcc = 0; zoomHeld(pe || e, dz); } };
+  c.addEventListener('wheel', e => onWheel(e), {passive: false});
+  // over the enlarged sign above the picture, Ctrl + wheel zooms the picture too (around its middle), never the browser page (adversarial
+  // check, 11 Oct 2026: there the page itself zoomed)
+  $('ctxBigW').addEventListener('wheel', e => { if (!e.ctrlKey) return; const r = c.getBoundingClientRect();
+    onWheel(e, {clientX: r.left + r.width / 2, clientY: Math.max(r.top, Math.min(r.bottom, r.top + r.height / 2))}); }, {passive: false});
   let gs = 1;   // Safari on a Mac: a trackpad pinch arrives as gesturestart / gesturechange (scale), not as a wheel
+  // iOS Safari sends gesture* for a two-finger pinch on the screen too, beside the pointers the R09 pinch already zooms by: then the
+  // gesture events are only cancelled, never stepped, or the same pinch zoomed twice (adversarial check, 11 Oct 2026, simulated iPhone)
+  const touching = () => pts.size > 0 || performance.now() - lastTouch < 400; let lastTouch = -1e9;
+  ['pointerdown', 'pointerup', 'pointercancel'].forEach(t => c.addEventListener(t, e => { if (e.pointerType === 'touch') lastTouch = performance.now(); }, true));
   c.addEventListener('gesturestart', e => { e.preventDefault(); gs = 1; });
-  c.addEventListener('gesturechange', e => { e.preventDefault(); const st = Math.log((e.scale || 1) / gs) / Math.log(1.4);
+  c.addEventListener('gesturechange', e => { e.preventDefault(); if (touching()){ gs = e.scale || 1; return; } const st = Math.log((e.scale || 1) / gs) / Math.log(1.4);
     if (Math.abs(st) >= 1){ zoomAt(e, st > 0 ? 1 : -1); gs = e.scale; } });
   c.addEventListener('gestureend', e => e.preventDefault());
 })();
@@ -2101,17 +2131,23 @@ $('ctxUndo').onclick = () => { if (fix) fixStop(); const last = undo(); if (!las
   if (one && ctxList.includes(one)){ $('ctxMsg').textContent = 'Undid the last step for ' + one + '. Showing it again.'; showCtx(one, pileOf(one), true); }
   else { $('ctxMsg').textContent = 'Undid the last step (' + (last.length || 1) + (last.length > 1 ? ' tiles).' : ' tile).'); showCtx(ctxSid, pileOf(ctxSid), true); } };
 $('ctxNext').onclick = () => ctxStep(1);
+// Enter saves the cut (owner, 6 Oct 2026), but a button clicked with the mouse kept the focus, so Enter pressed it again (an arrow nudged
+// the box once more instead of saving; adversarial check, 11 Oct 2026). A click with a pointer (detail > 0) in the editor gives the focus
+// back; a button reached with Tab keeps it and answers Enter itself, as a keyboard user expects.
+$('fixBox').addEventListener('click', e => { const b = e.target.closest('button'); if (b && e.detail > 0 && b.id !== 'fixSave') b.blur(); });
 // After a mouse pick in "Move this tile to…" the list kept the focus, and the page skips arrow keys on a list, so the browser's own
 // arrow on a closed list picked its next entry and MOVED the shown sign each time the person pressed Left / Right to walk on (owner
 // rule R11 check, 11 Oct 2026, desktop Chromium). Now a pick gives the focus back to the card, and Left / Right on the list walk the card.
 $('ctxDest').onchange = e => { const v = e.target.value; if (!v) return; e.target.blur(); if (notYet(ctxSid, $('ctxMsg'))){ e.target.selectedIndex = 0; return; } ctxMove(v); };
-$('ctxDest').addEventListener('keydown', e => { if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return; e.preventDefault(); e.target.blur(); ctxStep(e.key === 'ArrowLeft' ? -1 : 1); });
+$('ctxDest').addEventListener('keydown', e => { if ((e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') || e.altKey || e.ctrlKey || e.metaKey) return; e.preventDefault(); e.target.blur(); ctxStep(e.key === 'ArrowLeft' ? -1 : 1); });
 $('ctxAside').onclick = () => ctxMove('ASIDE');
 $('ctxBad').onclick = () => { if (notYet(ctxSid, $('ctxMsg'))) return; ensureSpecial('BAD-CUT'); ctxMove('BAD-CUT'); };
 $('ctxTrash').onclick = () => { if (notYet(ctxSid, $('ctxMsg'))) return; ensureSpecial('NOT-LETTER'); ctxMove('NOT-LETTER'); };   // tile box cut in the wrong place: parked for recutting
 $('ctxNewB').onclick = () => { if (notYet(ctxSid, $('ctxMsg'))) return; ctxMove(makePile(pileOf(ctxSid))); };
 document.addEventListener('keydown', e => { if ($('ctx').hidden || e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
   if (e.key === 'Enter' && fix && e.target.tagName !== 'BUTTON'){ e.preventDefault(); $('fixSave').click(); return; }   // owner, 6 Oct 2026: Enter saves the cut
+  // an arrow with Alt, Ctrl or Cmd is the browser's or the system's (Alt + Left is Back), never a step (adversarial check, 11 Oct 2026)
+  if (e.altKey || e.ctrlKey || e.metaKey) return;
   if (e.key === 'ArrowLeft') ctxStep(-1); if (e.key === 'ArrowRight') ctxStep(1); });
 const closeCtx = () => { s2FixSid = null; if (fix) fixStop(); $('ctx').hidden = true; const o = $('offer'); o.classList.remove('inbox'); document.querySelector('.wrap').append(o); if (!o.hidden) placeOffer(); };
 $('ctxClose').onclick = closeCtx;

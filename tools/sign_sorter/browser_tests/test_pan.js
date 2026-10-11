@@ -265,6 +265,11 @@ async function run(b, dev, opts, F, SHOTS) {
 async function probe(b, PAGE) {   // tools/sorter_preflight.py check 'pan' (owner rule R09) on a built page
   const ctx = await b.newContext(prof('iPhone 13')); await mock.install(ctx); const page = await ctx.newPage(); page.on('pageerror', e => errs.push(e.message));
   await page.goto('file://' + path.resolve(PAGE)); await page.waitForFunction(() => typeof ready !== 'undefined' && ready, null, { timeout: 60000 }).catch(() => {}); await page.waitForTimeout(500);
+  // a page built with a whole-page region (DATA.region) must load its image, or every card quietly opens in the strips instead
+  // (adversarial check, 11 Oct 2026: a re-render into another folder left the image behind and this probe still passed in the strips)
+  const reg = await page.evaluate(async () => { if (!REG) return null; regionImg(); for (let i = 0; i < 100 && !regFail && !(regImg && regImg.complete && regImg.naturalWidth); i++) await new Promise(r => setTimeout(r, 100));
+    return { src: REG.src ? String(REG.src).slice(0, 80) : '(embedded)', loaded: !regFail && !!(regImg && regImg.naturalWidth) }; });
+  if (reg) ok(reg.loaded, 'pan: the page\'s whole-page region image loads (' + reg.src + '), so its cards can open in "Whole page"', reg);
   const sids = await page.evaluate(() => { const all = Object.keys(itemBySid), withNb = all.filter(s => nbPages(itemBySid[s].p).every(Boolean)); const pool = withNb.length ? withNb : all;
     const k = Math.max(1, Math.floor(pool.length / 25)); return pool.filter((_, i) => i % k === Math.floor(k / 2)).slice(0, 25); });
   // a tile whose window has room for both drags (tiles with a line above and below first; the opening zoom, then 6 and 8); failing

@@ -23,11 +23,16 @@ kept: its OPTS 'key', or, for a page hand-patched by the 10 Oct 2026 scratch scr
 after the lede, which this re-render drops along with the rest of the old page outside DATA, title and lede), 'box'. The run
 prints which source decided.
 
+A page with a whole-page region (DATA.region.src, sign_sorter.py --region) loads that image from a file beside the page; --out into
+another folder copies it there (same name, since DATA names it), and says so. If the image is not beside OLD.html either, the run
+warns on stderr and exits 3 (adversarial check, 11 Oct 2026, template 09.7: a re-render into another folder quietly lost the Whole page
+view, opened in Line strips, and still passed the preflight). --allow-missing-region writes the page anyway (exit 0, warned).
+
 Exit 2 when the page carries no `const DATA = {...};` line. Offline test: tools/tests/test_sorter_rerender.py.
 Scope: re-renders a page that sign_sorter.py built (any template version); it does NOT re-cut tiles or change piles,
 and it must not be used on a page whose DATA a person edited by hand (it would carry the edit over unchecked).
 """
-import argparse, html, json, os, re, sys
+import argparse, html, json, os, re, shutil, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import sign_sorter  # noqa: E402
@@ -61,6 +66,8 @@ def main(argv=None):
                     'built before 2026-10-09.1)')
     ap.add_argument('--key', choices=sign_sorter.KEYS + ('none',),
                     help='box: the box-check key under the lede; none: no key (default: as OLD.html has it)')
+    ap.add_argument('--allow-missing-region', action='store_true',
+                    help="write the page even when its region image (DATA.region.src) is not beside OLD.html (warned; exit 0)")
     a = ap.parse_args(argv)
     page = open(a.page, encoding='utf-8').read()
     got = extract(page)
@@ -86,10 +93,23 @@ def main(argv=None):
         key, ksrc = None, 'the old page' if old is not None else 'the default'
     out = sign_sorter.render(data, a.title or title, a.lede if a.lede is not None else lede, focus_to_tray=tray, key=key)
     open(a.out, 'w', encoding='utf-8').write(out)
+    rc = 0
+    rsrc = (data.get('region') or {}).get('src')
+    if rsrc and not re.match(r'^(data:|https?:)', rsrc):
+        have = os.path.join(os.path.dirname(os.path.abspath(a.page)), rsrc)
+        want = os.path.join(os.path.dirname(os.path.abspath(a.out)), rsrc)
+        if os.path.exists(want) and (not os.path.exists(have) or os.path.samefile(have, want)):
+            print(f'region image {rsrc}: beside the new page already')
+        elif os.path.exists(have):
+            shutil.copyfile(have, want); print(f'region image {rsrc}: copied beside the new page (publish it with the page)')
+        else:
+            print(f'WARNING: region image {rsrc} is not beside {a.page}: the new page will open in Line strips, without its Whole page view',
+                  file=sys.stderr)
+            rc = 0 if a.allow_missing_region else 3
     n = sum(len(p['items']) for p in data['piles'])
     print(f"{len(data['piles'])} piles, {n} tiles, {len(data.get('focus', []))} focus, focus-to-tray {'on' if tray else 'off'} (from {src}), "
           f"key {key or 'none'} (from {ksrc}), {len(out) // 1024} KB -> {a.out}")
-    return 0
+    return rc
 
 
 if __name__ == '__main__':
