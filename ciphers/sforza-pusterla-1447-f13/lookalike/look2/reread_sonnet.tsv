@@ -1,0 +1,36 @@
+passage	pos	label	conf	second	note
+f13_L07	26	a	L	ze	tailed small a
+f13_L09	17	g	M	8	open lower g
+f13_L12	22	go	L	So	plain-text zone, guess
+f13_L07	16	g	M	8	g with flourish
+f13_L12	5	h-	H	h	h with bar
+f13_L06	30	So	L	go	S-top plus o
+f13_L01	4	ze	M	a	z/2 hook
+f13_L09	11	go	L	So	g-ish plus o
+f13_L06	23	g	M	8	open g
+f13_L09	26	ze	M	a	2-like
+f13_L02	31	h-	M	h	barred h
+f13_L10	28	So	L	go	S plus o
+f13_L06	1	So	L	go	S plus o
+f13_L02	18	So	M	go	S shape plus o
+f13_L05	19	g	M	8	open g
+f13_L06	8	h-	L	h	bar seen
+f13_L03	23	So	L	go	S plus o
+f13_L03	15	g	M	8	open g
+f13_L07	2	h-	M	h	barred h
+f13_L05	7	g	M	8	open g
+f13_L07	28	h	M	h-	plain h
+f13_L10	4	a	M	ze	a with tail
+f13_L12	4	g	M	8	open g
+f13_L02	8	go	L	So	closed loop plus o
+f13_L03	24	h	M	h-	plain h
+f13_L02	3	h	M	h-	plain h
+f13_L05	11	a	M	ze	a with tail
+f13_L05	25	h	M	h-	plain h
+f13_L11	10	h	M	h-	plain h
+f13_L11	3	g	M	8	open g
+f13_L01	1	go	M	So	g with o
+f13_L02	28	ze	M	a	2-like hook
+f13_L02	24	go	M	So	g with o
+f13_L04	8	h	M	h-	plain h
+f13_L09	25	g	M	8	open g

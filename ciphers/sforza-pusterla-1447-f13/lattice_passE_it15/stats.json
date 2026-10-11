@@ -1,0 +1,55 @@
+{
+ "passes": [
+  "ciphertext_f13_passA.tsv",
+  "ciphertext_f13_passB.tsv",
+  "ciphertext_f13_passE.tsv"
+ ],
+ "positions": 356,
+ "gap_majority_columns_dropped": 15,
+ "vote_share_hist": {
+  "3/3": 96,
+  "2/3": 195,
+  "1/3": 65
+ },
+ "positions_with_alternatives": 195,
+ "lam": 1.0,
+ "beam": 64,
+ "n_shuffles": 200,
+ "seed": 13,
+ "moved_off_vote_top1": 64,
+ "unk_positions_chosen": 7,
+ "lattice": {
+  "real": -1.1721,
+  "shuf_mean": -1.4352,
+  "shuf_p95": -1.2941,
+  "shuf_max": -1.2436,
+  "rank": 1
+ },
+ "vote_top1": {
+  "real": -1.64,
+  "shuf_mean": -1.9572,
+  "shuf_p95": -1.7819,
+  "rank": 1
+ },
+ "letters": 365,
+ "letter_distribution": {
+  "e": 57,
+  "a": 52,
+  "o": 42,
+  "i": 41,
+  "t": 27,
+  "r": 21,
+  "c": 21,
+  "l": 16,
+  "m": 16,
+  "d": 16,
+  "s": 13,
+  "n": 13,
+  "h": 11,
+  "g": 7,
+  "v": 5,
+  "p": 4,
+  "f": 3
+ },
+ "shuffle_gate": "PASS"
+}

@@ -1,0 +1,12 @@
+{
+ "judge": {
+  "corpora": [
+   "tools/data/it16dip/bub_gb_laRnTtJmsDAC.txt.gz",
+   "tools/data/it16dip/bub_gb_ZJMxff7r4LUC.txt.gz",
+   "tools/data/it16dip/gri_33125010469852.txt.gz",
+   "tools/data/it16dip/letterediprincip01char.txt.gz",
+   "tools/data/it16dip/letterediprincip02char.txt.gz",
+   "tools/data/it16dip/letterediprincip03char.txt.gz"
+  ]
+ }
+}

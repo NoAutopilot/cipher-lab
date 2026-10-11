@@ -18,7 +18,7 @@ Pre-registered before any decode was run (SFZ-P2, 22:5x UTC 7 Oct 2026), not tun
     (tools/judge_plaintext.py, inline spec {"judge": {"corpora": it16dip}}) PASS against real_p05. Both, or FAIL.
 The shuffle loop can change the statistic: a shuffled key changes every decoded letter and the path the lattice picks.
 
-    python3 ciphers/sforza-pusterla-1447-f13/lattice_decode.py [--check] [--corpus=it15] [--passD]
+    python3 ciphers/sforza-pusterla-1447-f13/lattice_decode.py [--check] [--corpus=it15] [--passD | --passE]
 Writes lattice/{vote.tsv,lattice.tsv,decode.tsv,plain.txt,stats.json}; --check exits 1 if those on disk are stale.
 """
 import collections, json, os, random, statistics, sys, types
@@ -43,6 +43,10 @@ if CORPUS != 'it16dip':
 if '--passD' in sys.argv:
     PASSES = PASSES[:2] + ['ciphertext_f13_passD.tsv']
     OUT = os.path.join(HERE, 'lattice_passD' + ('' if CORPUS == 'it16dip' else f'_{CORPUS}'))
+# --passE (SFZ-LOOK2, 11 Oct 2026): pass C replaced by pass E (pass D after the second look-alike pass, lookalike/look2/).
+if '--passE' in sys.argv:
+    PASSES = PASSES[:2] + ['ciphertext_f13_passE.tsv']
+    OUT = os.path.join(HERE, 'lattice_passE' + ('' if CORPUS == 'it16dip' else f'_{CORPUS}'))
 
 
 def merge_che(seq):
