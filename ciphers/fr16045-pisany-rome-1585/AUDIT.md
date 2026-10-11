@@ -336,7 +336,7 @@ over; no class raised.
 ## AUDIT 5 (V-PISA3, 11 Oct 2026) -- verifier check of the UNA3-PISA carry-over: T47 -> T27 relabel (item C counts reconciled)
 
 Verifier session V-PISA3 (account 2, LANE DEFAULT-A2-0509; brief .claude/briefs/runs/2026-10-11-ytbiz-default-0509-jobs.md "V-PISA3"),
-05:2x UTC by date -u (end in the follow-up line below). I am not UNA3-PISA's session, nor the tile readers (UNA-PISA, PISA-275R), nor any solver on this folder. Disk only,
+05:2x-05:5x UTC by date -u. I am not UNA3-PISA's session, nor the tile readers (UNA-PISA, PISA-275R), nor any solver on this folder. Disk only,
 0 network, 0 subagent calls. Pattern: AUDIT 3 and AUDIT 4. Of the three pages, only f.302v is an audited item (C); f.275r and f.301v are
 checked for consistency and nothing is classed for them.
 
@@ -354,7 +354,7 @@ Checked:
   to date", exit 0, on all three pages (f.275r 623 tokens H 554 / U 69; f.301v 375, H 315 / U 60; f.302v 439, H 378 / U 61). The rule-4
   grade scripts `kp86e/t31_grades.py --grade`, `kp87a/cgrades87.py` and `kp87b/cgrades87b.py` regenerate their grades files with no git
   diff. Readings: `git diff --word-diff` 57cf2d97a..e20db13e8 shows exactly one "m" -> "f" per page.
-- Scorer re-run: `python3 una3_pisa/una3_pisa.py`, re-run from scratch (it reads the _preT27 copies). f.275r reproduces result.json exactly: old 0.6620 (key-shuffle p99 0.4661, order p99 0.4937), relabel 0.6634 (0.4666 / 0.4923), all-T47 0.6620, passes A/B 0.6308 / 0.6590, control 5/5. f.301v and f.302v: re-run in progress at this commit; the committed result.json values (f.301v 0.6561 -> 0.6587 vs p99 0.400 / 0.479; f.302v 0.6072 -> 0.6093 vs 0.393 / 0.463; controls 5/5; G3 3 of 3 f vs 0 of 3 m, una3_pisa/per_token.tsv, which I re-read) stand until the follow-up line below confirms or corrects them.
+- Scorer re-run: `python3 una3_pisa/una3_pisa.py`, re-run from scratch (it reads the _preT27 copies); my 25-min timeout stopped it after f.275r (24.8 CPU-min for one page's 1000+1000 nulls, the control and the 1-of-n draws; nothing it writes was changed: result.json and per_token.tsv are written only at the end). f.275r reproduces result.json exactly: old 0.6620 (key-shuffle p99 0.4661, order p99 0.4937), relabel 0.6634 (0.4666 / 0.4923), all-T47 0.6620, passes A/B 0.6308 / 0.6590, control 5/5. For f.301v and f.302v I recomputed the old and relabelled reconciled scores and the per-token alignment directly with the same imported functions (nw_score, una2_pisa.per_token; no nulls): f.301v 0.6561 -> 0.6587, f.302v 0.6072 -> 0.6093, as committed, and the per-token rows match una3_pisa/per_token.tsv (f.301v L07 o1 and f.302v L07 o29 copy f, not identical under m and identical under f; the UNSETTLED rows unchanged). G3 3 of 3 f vs 0 of 3 m, reproduced. Not re-run here: the f.301v/f.302v key-shuffle and order p99s and controls (committed 0.400 / 0.479 and 0.393 / 0.463, controls 5/5); the relabelled scores clear them by 0.18 and 0.15, and the pre-edit p99s were re-read by AUDIT 3, so G1/G2 stand on the committed figures.
 - Judge (rule 7), re-run: `tools/judge_plaintext.py specs/fr16045-pisany-rome-1585.json --file <reading>` FAILs on f.275r (-1.229;
   null_p99 -1.717, real_p05 -0.928, N=770), f.301v (-1.366; -1.69, -0.959, N=468) and f.302v (-1.391; -1.701, -0.942, N=586), the same
   figures UNA3-PISA logged.
