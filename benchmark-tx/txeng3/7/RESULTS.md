@@ -1,5 +1,12 @@
 # TXE3-7 PROPAGATE results (11 Oct 2026, 05:4x-06:1x UTC by date -u; account 3, worker session_01N6wTuin3FG55h6UUkN9Kpo)
 
+> **RESCORE, 11 Oct 2026 (`RESCORE.md`): measurement correction, box-to-position map fixed (off by one), not a new gate look.**
+> The no.87 figures below went through `atlas/no87_box_token.tsv`, which put boxes one position off on six lines. They have been
+> re-run through `atlas/no87_box_token_labelaware.tsv`. A1 is now 0.343 -> 0.314, and A2 0.329 -> 0.300. A2 vs A1 stays 41 / 33,
+> p 0.42, so the gate is still FAIL on no.87 and on f152r. The override harm shrinks: A1 0 / 11 -> 0 / 0 and A2 0 / 22 -> 0 / 4.
+> The post-hoc X_NEW-l = T19 variant is 45 / 22, p 0.007; it is not a PASS. 62 of the 121 owner-vs-machine label
+> differences look like repairs of start labels that were attached one tile off on five strips.
+
 Prereg `benchmark-tx/PREREG-txeng3-7.md` (c351e72e / ecde11e9) pushed before any score; every arm output committed (65a3c574) before
 `score.py` ran. Disk only: 0 network requests, 0 vision calls, 0 subagents. Scorer: `tools/tx_bench.py --exclude-flagged --paired`
 (the fixed scorer of 10 Oct; the line read of record re-scores 0.069 on f152r where TXP-152's file figure was 0.082).

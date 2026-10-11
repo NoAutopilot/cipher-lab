@@ -1,0 +1,4723 @@
+{
+ "scorer_drift": {
+  "birago1572-f152r:lineread": {
+   "now": [
+    5,
+    73,
+    0,
+    0
+   ],
+   "registered": [
+    5,
+    73,
+    0,
+    0
+   ],
+   "same": true
+  },
+  "birago1572-f152r:A1_atlas": {
+   "now": [
+    28,
+    73,
+    1,
+    20
+   ],
+   "registered": [
+    28,
+    73,
+    1,
+    20
+   ],
+   "same": true
+  },
+  "birago1572-f152r:A2_atlas": {
+   "now": [
+    26,
+    73,
+    4,
+    3
+   ],
+   "registered": [
+    26,
+    73,
+    4,
+    3
+   ],
+   "same": true
+  },
+  "birago1572-f152r:A1_override": {
+   "now": [
+    5,
+    73,
+    0,
+    0
+   ],
+   "registered": [
+    5,
+    73,
+    0,
+    0
+   ],
+   "same": true
+  },
+  "birago1572-f152r:A2_override": {
+   "now": [
+    5,
+    73,
+    0,
+    0
+   ],
+   "registered": [
+    5,
+    73,
+    0,
+    0
+   ],
+   "same": true
+  },
+  "birago1572-no87:lineread": {
+   "now": [
+    41,
+    803,
+    0,
+    0
+   ],
+   "registered": [
+    41,
+    803,
+    0,
+    0
+   ],
+   "same": true
+  },
+  "birago1572-no87:A1_atlas": {
+   "now": [
+    275,
+    803,
+    15,
+    227
+   ],
+   "registered": [
+    275,
+    803,
+    15,
+    227
+   ],
+   "same": true
+  },
+  "birago1572-no87:A2_atlas": {
+   "now": [
+    264,
+    803,
+    41,
+    33
+   ],
+   "registered": [
+    264,
+    803,
+    41,
+    33
+   ],
+   "same": true
+  },
+  "birago1572-no87:A1_override": {
+   "now": [
+    53,
+    803,
+    0,
+    11
+   ],
+   "registered": [
+    53,
+    803,
+    0,
+    11
+   ],
+   "same": true
+  },
+  "birago1572-no87:A2_override": {
+   "now": [
+    64,
+    803,
+    0,
+    22
+   ],
+   "registered": [
+    64,
+    803,
+    0,
+    22
+   ],
+   "same": true
+  }
+ },
+ "registered": {
+  "birago1572-no87": {
+   "lineread": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ]
+   },
+   "A0a_atlas": {
+    "err": 0.1146,
+    "k": 92,
+    "n": 803,
+    "ci": [
+     0.09435167630398426,
+     0.13845932402123448
+    ],
+    "fe_err": 0.1023,
+    "fe_k": 81,
+    "fe_n": 792,
+    "fixed": 185,
+    "broken": 34,
+    "p": 0.0,
+    "lines_improved": 25,
+    "lines_worsened": 1,
+    "line_p": 0.0,
+    "fe_fixed": 185,
+    "fe_broken": 32,
+    "fe_p": 0.0,
+    "confusions": [
+     "s<-T50 x22",
+     "o<-T83 x8",
+     "f<-T37 x5",
+     "t<-T90 x3",
+     "d<-T36 x3",
+     "e<-T85 x3"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv"
+   },
+   "A1_atlas": {
+    "err": 0.3138,
+    "k": 252,
+    "n": 803,
+    "ci": [
+     0.2826772526468289,
+     0.3467419542954011
+    ],
+    "fe_err": 0.3068,
+    "fe_k": 243,
+    "fe_n": 792,
+    "fixed": 15,
+    "broken": 216,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 26,
+    "line_p": 0.0,
+    "fe_fixed": 13,
+    "fe_broken": 216,
+    "fe_p": 0.0,
+    "confusions": [
+     "e<-T60 x24",
+     "a<-T60 x8",
+     "l<-X_NEW x8",
+     "d<-T98 x7",
+     "g<-T33 x6",
+     "a<-T92 x5"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A2_atlas": {
+    "err": 0.3001,
+    "k": 241,
+    "n": 803,
+    "ci": [
+     0.26943742453270203,
+     0.3327149682046085
+    ],
+    "fe_err": 0.2929,
+    "fe_k": 232,
+    "fe_n": 792,
+    "fixed": 41,
+    "broken": 33,
+    "p": 0.416,
+    "lines_improved": 13,
+    "lines_worsened": 7,
+    "line_p": 0.2632,
+    "fe_fixed": 40,
+    "fe_broken": 32,
+    "fe_p": 0.4096,
+    "confusions": [
+     "e<-T60 x24",
+     "a<-T60 x15",
+     "o<-X_NEW x13",
+     "o<-T60 x7",
+     "l<-X_NEW x7",
+     "d<-T98 x7"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv",
+    "vs_lineread": {
+     "fixed": 16,
+     "broken": 209,
+     "p": 0.0,
+     "line_p": 0.0
+    }
+   },
+   "A3s1_atlas": {
+    "err": 0.7186,
+    "k": 577,
+    "n": 803,
+    "ci": [
+     0.6864668886870146,
+     0.7485627379460197
+    ],
+    "fe_err": 0.7197,
+    "fe_k": 570,
+    "fe_n": 792,
+    "fixed": 51,
+    "broken": 287,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 26,
+    "line_p": 0.0,
+    "fe_fixed": 47,
+    "fe_broken": 285,
+    "fe_p": 0.0,
+    "confusions": [
+     "a<-<deleted> x11",
+     "d<-<deleted> x11",
+     "o<-X_NEW x10",
+     "o<-<deleted> x10",
+     "t<-<deleted> x9",
+     "t<-T98 x8"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv"
+   },
+   "A3s2_atlas": {
+    "err": 0.7484,
+    "k": 601,
+    "n": 803,
+    "ci": [
+     0.7172965526497674,
+     0.7772243049758185
+    ],
+    "fe_err": 0.7513,
+    "fe_k": 595,
+    "fe_n": 792,
+    "fixed": 41,
+    "broken": 306,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 26,
+    "line_p": 0.0,
+    "fe_fixed": 38,
+    "fe_broken": 306,
+    "fe_p": 0.0,
+    "confusions": [
+     "e<-<deleted> x14",
+     "r<-<deleted> x13",
+     "o<-<deleted> x11",
+     "e<-T65 x10",
+     "a<-<deleted> x10",
+     "o<-X_NEW x8"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv"
+   },
+   "A3s3_atlas": {
+    "err": 0.7435,
+    "k": 597,
+    "n": 803,
+    "ci": [
+     0.7121458191652494,
+     0.7724598332949112
+    ],
+    "fe_err": 0.7424,
+    "fe_k": 588,
+    "fe_n": 792,
+    "fixed": 42,
+    "broken": 320,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 26,
+    "line_p": 0.0,
+    "fe_fixed": 41,
+    "fe_broken": 319,
+    "fe_p": 0.0,
+    "confusions": [
+     "e<-T88 x20",
+     "a<-T60 x11",
+     "o<-<deleted> x11",
+     "e<-T33 x11",
+     "e<-T24 x10",
+     "d<-X_NEW x9"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv"
+   },
+   "A3s4_atlas": {
+    "err": 0.7758,
+    "k": 623,
+    "n": 803,
+    "ci": [
+     0.7457215365684257,
+     0.8033329494669994
+    ],
+    "fe_err": 0.7753,
+    "fe_k": 614,
+    "fe_n": 792,
+    "fixed": 42,
+    "broken": 311,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 26,
+    "line_p": 0.0,
+    "fe_fixed": 41,
+    "fe_broken": 310,
+    "fe_p": 0.0,
+    "confusions": [
+     "a<-<deleted> x14",
+     "e<-X_NEW x12",
+     "o<-<deleted> x10",
+     "o<-T24 x9",
+     "e<-<deleted> x9",
+     "a<-T80 x9"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv"
+   },
+   "A3s5_atlas": {
+    "err": 0.7372,
+    "k": 592,
+    "n": 803,
+    "ci": [
+     0.7057145680612181,
+     0.7664970779421609
+    ],
+    "fe_err": 0.7386,
+    "fe_k": 585,
+    "fe_n": 792,
+    "fixed": 54,
+    "broken": 296,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 26,
+    "line_p": 0.0,
+    "fe_fixed": 52,
+    "fe_broken": 296,
+    "fe_p": 0.0,
+    "confusions": [
+     "o<-<deleted> x13",
+     "e<-<deleted> x13",
+     "a<-<deleted> x12",
+     "i<-T60 x12",
+     "d<-T60 x11",
+     "a<-T60 x10"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv"
+   },
+   "A3s6_atlas": {
+    "err": 0.7634,
+    "k": 613,
+    "n": 803,
+    "ci": [
+     0.7327803952638108,
+     0.7914860778580511
+    ],
+    "fe_err": 0.7664,
+    "fe_k": 607,
+    "fe_n": 792,
+    "fixed": 52,
+    "broken": 312,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 26,
+    "line_p": 0.0,
+    "fe_fixed": 48,
+    "fe_broken": 311,
+    "fe_p": 0.0,
+    "confusions": [
+     "o<-<deleted> x12",
+     "e<-<deleted> x10",
+     "d<-<deleted> x10",
+     "l<-<deleted> x8",
+     "s<-<deleted> x8",
+     "o<-X_NEW x8"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv"
+   },
+   "A3s7_atlas": {
+    "err": 0.7733,
+    "k": 621,
+    "n": 803,
+    "ci": [
+     0.7431304469920574,
+     0.8009664364606549
+    ],
+    "fe_err": 0.7753,
+    "fe_k": 614,
+    "fe_n": 792,
+    "fixed": 51,
+    "broken": 297,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 26,
+    "line_p": 0.0,
+    "fe_fixed": 47,
+    "fe_broken": 295,
+    "fe_p": 0.0,
+    "confusions": [
+     "o<-<deleted> x13",
+     "n<-<deleted> x12",
+     "i<-<deleted> x11",
+     "r<-<deleted> x11",
+     "a<-X_NEW x10",
+     "s<-<deleted> x10"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv"
+   },
+   "A3s8_atlas": {
+    "err": 0.7584,
+    "k": 609,
+    "n": 803,
+    "ci": [
+     0.7276137331045266,
+     0.78673753485191
+    ],
+    "fe_err": 0.7601,
+    "fe_k": 602,
+    "fe_n": 792,
+    "fixed": 52,
+    "broken": 304,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 26,
+    "line_p": 0.0,
+    "fe_fixed": 50,
+    "fe_broken": 304,
+    "fe_p": 0.0,
+    "confusions": [
+     "o<-<deleted> x14",
+     "d<-<deleted> x13",
+     "a<-<deleted> x12",
+     "e<-X_S x11",
+     "t<-T60 x9",
+     "u<-<deleted> x9"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv"
+   },
+   "A3s9_atlas": {
+    "err": 0.7509,
+    "k": 603,
+    "n": 803,
+    "ci": [
+     0.7198738640728505,
+     0.7796045961354481
+    ],
+    "fe_err": 0.7525,
+    "fe_k": 596,
+    "fe_n": 792,
+    "fixed": 53,
+    "broken": 298,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 26,
+    "line_p": 0.0,
+    "fe_fixed": 51,
+    "fe_broken": 298,
+    "fe_p": 0.0,
+    "confusions": [
+     "d<-<deleted> x13",
+     "i<-<deleted> x12",
+     "a<-<deleted> x11",
+     "t<-T45 x11",
+     "r<-<deleted> x11",
+     "e<-<deleted> x11"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv"
+   },
+   "A3s10_atlas": {
+    "err": 0.7908,
+    "k": 635,
+    "n": 803,
+    "ci": [
+     0.7612994468056109,
+     0.81750065472609
+    ],
+    "fe_err": 0.7891,
+    "fe_k": 625,
+    "fe_n": 792,
+    "fixed": 53,
+    "broken": 314,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 26,
+    "line_p": 0.0,
+    "fe_fixed": 53,
+    "fe_broken": 313,
+    "fe_p": 0.0,
+    "confusions": [
+     "e<-<deleted> x17",
+     "o<-<deleted> x12",
+     "i<-<deleted> x11",
+     "t<-<deleted> x11",
+     "s<-<deleted> x9",
+     "n<-<deleted> x9"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv"
+   },
+   "A3s11_atlas": {
+    "err": 0.721,
+    "k": 579,
+    "n": 803,
+    "ci": [
+     0.6890293557288608,
+     0.7509578734868861
+    ],
+    "fe_err": 0.7222,
+    "fe_k": 572,
+    "fe_n": 792,
+    "fixed": 47,
+    "broken": 272,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 26,
+    "line_p": 0.0,
+    "fe_fixed": 44,
+    "fe_broken": 271,
+    "fe_p": 0.0,
+    "confusions": [
+     "o<-<deleted> x15",
+     "n<-<deleted> x13",
+     "d<-X_NEW x13",
+     "i<-<deleted> x11",
+     "a<-<deleted> x9",
+     "e<-<deleted> x9"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv"
+   },
+   "A3s12_atlas": {
+    "err": 0.7522,
+    "k": 604,
+    "n": 803,
+    "ci": [
+     0.7211630115488854,
+     0.7807942499507696
+    ],
+    "fe_err": 0.7487,
+    "fe_k": 593,
+    "fe_n": 792,
+    "fixed": 52,
+    "broken": 319,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 26,
+    "line_p": 0.0,
+    "fe_fixed": 52,
+    "fe_broken": 317,
+    "fe_p": 0.0,
+    "confusions": [
+     "a<-<deleted> x12",
+     "o<-<deleted> x11",
+     "n<-<deleted> x11",
+     "a<-T33 x9",
+     "a<-T45 x8",
+     "i<-T60 x8"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv"
+   },
+   "A3s13_atlas": {
+    "err": 0.7646,
+    "k": 614,
+    "n": 803,
+    "ci": [
+     0.7340729209085649,
+     0.7926723535046531
+    ],
+    "fe_err": 0.7639,
+    "fe_k": 605,
+    "fe_n": 792,
+    "fixed": 50,
+    "broken": 317,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 26,
+    "line_p": 0.0,
+    "fe_fixed": 48,
+    "fe_broken": 315,
+    "fe_p": 0.0,
+    "confusions": [
+     "o<-<deleted> x17",
+     "e<-T80 x15",
+     "a<-<deleted> x12",
+     "l<-<deleted> x10",
+     "i<-<deleted> x10",
+     "e<-<deleted> x9"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv"
+   },
+   "A3s14_atlas": {
+    "err": 0.7758,
+    "k": 623,
+    "n": 803,
+    "ci": [
+     0.7457215365684257,
+     0.8033329494669994
+    ],
+    "fe_err": 0.7765,
+    "fe_k": 615,
+    "fe_n": 792,
+    "fixed": 60,
+    "broken": 320,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 26,
+    "line_p": 0.0,
+    "fe_fixed": 57,
+    "fe_broken": 318,
+    "fe_p": 0.0,
+    "confusions": [
+     "o<-<deleted> x15",
+     "n<-<deleted> x12",
+     "d<-<deleted> x11",
+     "e<-<deleted> x11",
+     "t<-<deleted> x10",
+     "m<-<deleted> x10"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv"
+   },
+   "A3s15_atlas": {
+    "err": 0.7447,
+    "k": 598,
+    "n": 803,
+    "ci": [
+     0.7134330202838786,
+     0.7736514334676384
+    ],
+    "fe_err": 0.7437,
+    "fe_k": 589,
+    "fe_n": 792,
+    "fixed": 39,
+    "broken": 302,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 26,
+    "line_p": 0.0,
+    "fe_fixed": 38,
+    "fe_broken": 301,
+    "fe_p": 0.0,
+    "confusions": [
+     "e<-T96 x13",
+     "t<-<deleted> x10",
+     "e<-<deleted> x10",
+     "a<-T45 x9",
+     "o<-T60 x9",
+     "a<-T60 x8"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv"
+   },
+   "A3s16_atlas": {
+    "err": 0.726,
+    "k": 583,
+    "n": 803,
+    "ci": [
+     0.6941578353770086,
+     0.7557445990041637
+    ],
+    "fe_err": 0.7285,
+    "fe_k": 577,
+    "fe_n": 792,
+    "fixed": 58,
+    "broken": 303,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 26,
+    "line_p": 0.0,
+    "fe_fixed": 54,
+    "fe_broken": 302,
+    "fe_p": 0.0,
+    "confusions": [
+     "e<-<deleted> x17",
+     "o<-<deleted> x10",
+     "r<-T33 x9",
+     "e<-T19 x9",
+     "e<-T33 x7",
+     "n<-<deleted> x7"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv"
+   },
+   "A3s17_atlas": {
+    "err": 0.7746,
+    "k": 622,
+    "n": 803,
+    "ci": [
+     0.744425809862027,
+     0.8021498748820417
+    ],
+    "fe_err": 0.7753,
+    "fe_k": 614,
+    "fe_n": 792,
+    "fixed": 48,
+    "broken": 313,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 26,
+    "line_p": 0.0,
+    "fe_fixed": 46,
+    "fe_broken": 312,
+    "fe_p": 0.0,
+    "confusions": [
+     "a<-<deleted> x13",
+     "t<-<deleted> x12",
+     "o<-T66 x10",
+     "n<-<deleted> x10",
+     "l<-<deleted> x9",
+     "i<-<deleted> x9"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv"
+   },
+   "A3s18_atlas": {
+    "err": 0.7771,
+    "k": 624,
+    "n": 803,
+    "ci": [
+     0.7470176292497757,
+     0.8045156580770056
+    ],
+    "fe_err": 0.779,
+    "fe_k": 617,
+    "fe_n": 792,
+    "fixed": 45,
+    "broken": 303,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 26,
+    "line_p": 0.0,
+    "fe_fixed": 42,
+    "fe_broken": 302,
+    "fe_p": 0.0,
+    "confusions": [
+     "e<-<deleted> x12",
+     "i<-<deleted> x12",
+     "o<-<deleted> x12",
+     "d<-<deleted> x11",
+     "a<-<deleted> x10",
+     "t<-<deleted> x10"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv"
+   },
+   "A3s19_atlas": {
+    "err": 0.7796,
+    "k": 626,
+    "n": 803,
+    "ci": [
+     0.7496109212462639,
+     0.8068799686632301
+    ],
+    "fe_err": 0.7816,
+    "fe_k": 619,
+    "fe_n": 792,
+    "fixed": 38,
+    "broken": 308,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 26,
+    "line_p": 0.0,
+    "fe_fixed": 35,
+    "fe_broken": 307,
+    "fe_p": 0.0,
+    "confusions": [
+     "a<-<deleted> x13",
+     "e<-<deleted> x11",
+     "n<-<deleted> x10",
+     "e<-T25 x9",
+     "s<-<deleted> x9",
+     "u<-<deleted> x8"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv"
+   },
+   "A3s20_atlas": {
+    "err": 0.736,
+    "k": 591,
+    "n": 803,
+    "ci": [
+     0.704429258492728,
+     0.7653035862192948
+    ],
+    "fe_err": 0.7374,
+    "fe_k": 584,
+    "fe_n": 792,
+    "fixed": 43,
+    "broken": 299,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 26,
+    "line_p": 0.0,
+    "fe_fixed": 40,
+    "fe_broken": 298,
+    "fe_p": 0.0,
+    "confusions": [
+     "a<-<deleted> x17",
+     "o<-T83 x15",
+     "i<-<deleted> x8",
+     "n<-<deleted> x8",
+     "d<-<deleted> x7",
+     "e<-T50 x7"
+    ],
+    "base": "rescore/out/A1_atlas_birago1572-no87.tsv"
+   },
+   "A0a_override": {
+    "err": 0.0722,
+    "k": 58,
+    "n": 803,
+    "ci": [
+     0.056287787803372215,
+     0.09224396861573159
+    ],
+    "fe_err": 0.0593,
+    "fe_k": 47,
+    "fe_n": 792,
+    "fixed": 8,
+    "broken": 25,
+    "p": 0.0046,
+    "lines_improved": 2,
+    "lines_worsened": 14,
+    "line_p": 0.0042,
+    "fe_fixed": 8,
+    "fe_broken": 25,
+    "fe_p": 0.0046,
+    "confusions": [
+     "s<-T50 x23",
+     "e<-T76 x4",
+     "t<-T90 x3",
+     "o<-T83 x3",
+     "d<-T98 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A1_override": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A2_override": {
+    "err": 0.056,
+    "k": 45,
+    "n": 803,
+    "ci": [
+     0.04214313892304911,
+     0.07416420070842254
+    ],
+    "fe_err": 0.0429,
+    "fe_k": 34,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 4,
+    "p": 0.125,
+    "lines_improved": 0,
+    "lines_worsened": 3,
+    "line_p": 0.25,
+    "fe_fixed": 0,
+    "fe_broken": 4,
+    "fe_p": 0.125,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A3s1_override": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A3s2_override": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A3s3_override": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A3s4_override": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A3s5_override": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A3s6_override": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A3s7_override": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A3s8_override": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A3s9_override": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A3s10_override": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A3s11_override": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A3s12_override": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A3s13_override": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A3s14_override": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A3s15_override": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A3s16_override": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A3s17_override": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A3s18_override": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A3s19_override": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   },
+   "A3s20_override": {
+    "err": 0.0511,
+    "k": 41,
+    "n": 803,
+    "ci": [
+     0.03785786114201546,
+     0.06853427332403092
+    ],
+    "fe_err": 0.0379,
+    "fe_k": 30,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ],
+    "base": "../../outputs/birago1572-no87/passC.tsv"
+   }
+  },
+  "birago1572-f152r": {
+   "lineread": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ]
+   },
+   "A0a_atlas": {
+    "err": 0.1918,
+    "k": 14,
+    "n": 73,
+    "ci": [
+     0.11782254045474991,
+     0.29655717053513053
+    ],
+    "fe_err": 0.1714,
+    "fe_k": 12,
+    "fe_n": 70,
+    "fixed": 16,
+    "broken": 5,
+    "p": 0.0266,
+    "lines_improved": 3,
+    "lines_worsened": 1,
+    "line_p": 0.625,
+    "fe_fixed": 15,
+    "fe_broken": 4,
+    "fe_p": 0.0192,
+    "confusions": [
+     "i<-T38 x3",
+     "i<-T17 x2",
+     "e<-T60 x2",
+     "o<-T83 x1",
+     "e<-T36 x1",
+     "s<-T50 x1"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv"
+   },
+   "A1_atlas": {
+    "err": 0.3836,
+    "k": 28,
+    "n": 73,
+    "ci": [
+     0.28050439402671845,
+     0.49826127456945857
+    ],
+    "fe_err": 0.3714,
+    "fe_k": 26,
+    "fe_n": 70,
+    "fixed": 1,
+    "broken": 20,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 4,
+    "line_p": 0.125,
+    "fe_fixed": 0,
+    "fe_broken": 20,
+    "fe_p": 0.0,
+    "confusions": [
+     "e<-T60 x3",
+     "l<-T97 x2",
+     "i<-X_NEW x2",
+     "r<-<deleted> x2",
+     "i<-T36 x1",
+     "a<-<deleted> x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A2_atlas": {
+    "err": 0.3562,
+    "k": 26,
+    "n": 73,
+    "ci": [
+     0.2560433740070725,
+     0.470667157788205
+    ],
+    "fe_err": 0.3429,
+    "fe_k": 24,
+    "fe_n": 70,
+    "fixed": 4,
+    "broken": 3,
+    "p": 1.0,
+    "lines_improved": 2,
+    "lines_worsened": 1,
+    "line_p": 1.0,
+    "fe_fixed": 4,
+    "fe_broken": 3,
+    "fe_p": 1.0,
+    "confusions": [
+     "l<-T97 x2",
+     "r<-<deleted> x2",
+     "e<-T60 x2",
+     "i<-T36 x1",
+     "o<-X_NEW x1",
+     "i<-X_NEW x1"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv",
+    "vs_lineread": {
+     "fixed": 1,
+     "broken": 19,
+     "p": 0.0,
+     "line_p": 0.125
+    }
+   },
+   "A3s1_atlas": {
+    "err": 0.7945,
+    "k": 58,
+    "n": 73,
+    "ci": [
+     0.6882613165474036,
+     0.8713314040622661
+    ],
+    "fe_err": 0.8,
+    "fe_k": 56,
+    "fe_n": 70,
+    "fixed": 7,
+    "broken": 27,
+    "p": 0.0008,
+    "lines_improved": 0,
+    "lines_worsened": 4,
+    "line_p": 0.125,
+    "fe_fixed": 6,
+    "fe_broken": 26,
+    "fe_p": 0.0005,
+    "confusions": [
+     "o<-<deleted> x3",
+     "l<-T60 x2",
+     "n<-<deleted> x2",
+     "r<-T60 x2",
+     "che<-T50 x1",
+     "o<-T65 x1"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv"
+   },
+   "A3s2_atlas": {
+    "err": 0.9178,
+    "k": 67,
+    "n": 73,
+    "ci": [
+     0.8320540661871378,
+     0.9617867700265799
+    ],
+    "fe_err": 0.9286,
+    "fe_k": 65,
+    "fe_n": 70,
+    "fixed": 5,
+    "broken": 28,
+    "p": 0.0001,
+    "lines_improved": 0,
+    "lines_worsened": 4,
+    "line_p": 0.125,
+    "fe_fixed": 5,
+    "fe_broken": 28,
+    "fe_p": 0.0001,
+    "confusions": [
+     "e<-<deleted> x4",
+     "o<-X_NEW x2",
+     "o<-<deleted> x2",
+     "che<-<deleted> x1",
+     "i<-T45 x1",
+     "d<-T66 x1"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv"
+   },
+   "A3s3_atlas": {
+    "err": 0.7808,
+    "k": 57,
+    "n": 73,
+    "ci": [
+     0.6732251787519996,
+     0.8603399734572204
+    ],
+    "fe_err": 0.7857,
+    "fe_k": 55,
+    "fe_n": 70,
+    "fixed": 5,
+    "broken": 30,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 4,
+    "line_p": 0.125,
+    "fe_fixed": 5,
+    "fe_broken": 30,
+    "fe_p": 0.0,
+    "confusions": [
+     "l<-<deleted> x3",
+     "a<-T49 x2",
+     "che<-T92 x1",
+     "o<-T65 x1",
+     "d<-X_NEW x1",
+     "s<-T60 x1"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv"
+   },
+   "A3s4_atlas": {
+    "err": 0.8767,
+    "k": 64,
+    "n": 73,
+    "ci": [
+     0.7819948926528207,
+     0.9337632383595474
+    ],
+    "fe_err": 0.8714,
+    "fe_k": 61,
+    "fe_n": 70,
+    "fixed": 6,
+    "broken": 33,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 4,
+    "line_p": 0.125,
+    "fe_fixed": 6,
+    "fe_broken": 32,
+    "fe_p": 0.0,
+    "confusions": [
+     "r<-<deleted> x3",
+     "o<-T24 x2",
+     "d<-T33 x2",
+     "o<-<deleted> x2",
+     "a<-<deleted> x2",
+     "a<-T83 x2"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv"
+   },
+   "A3s5_atlas": {
+    "err": 0.8767,
+    "k": 64,
+    "n": 73,
+    "ci": [
+     0.7819948926528207,
+     0.9337632383595474
+    ],
+    "fe_err": 0.8714,
+    "fe_k": 61,
+    "fe_n": 70,
+    "fixed": 5,
+    "broken": 30,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 4,
+    "line_p": 0.125,
+    "fe_fixed": 5,
+    "fe_broken": 29,
+    "fe_p": 0.0,
+    "confusions": [
+     "i<-T60 x3",
+     "o<-T60 x2",
+     "d<-T60 x2",
+     "a<-T33 x2",
+     "l<-T53 x2",
+     "e<-<deleted> x2"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv"
+   },
+   "A3s6_atlas": {
+    "err": 0.863,
+    "k": 63,
+    "n": 73,
+    "ci": [
+     0.7658736406081267,
+     0.9238569220037918
+    ],
+    "fe_err": 0.8571,
+    "fe_k": 60,
+    "fe_n": 70,
+    "fixed": 4,
+    "broken": 36,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 4,
+    "line_p": 0.125,
+    "fe_fixed": 4,
+    "fe_broken": 35,
+    "fe_p": 0.0,
+    "confusions": [
+     "s<-T33 x3",
+     "i<-T63 x2",
+     "i<-T54 x2",
+     "l<-<deleted> x2",
+     "che<-T86 x1",
+     "i<-T98 x1"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv"
+   },
+   "A3s7_atlas": {
+    "err": 0.863,
+    "k": 63,
+    "n": 73,
+    "ci": [
+     0.7658736406081267,
+     0.9238569220037918
+    ],
+    "fe_err": 0.8571,
+    "fe_k": 60,
+    "fe_n": 70,
+    "fixed": 2,
+    "broken": 31,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 4,
+    "line_p": 0.125,
+    "fe_fixed": 2,
+    "fe_broken": 30,
+    "fe_p": 0.0,
+    "confusions": [
+     "o<-T60 x2",
+     "l<-T53 x2",
+     "s<-<deleted> x2",
+     "n<-T25 x2",
+     "o<-T65 x2",
+     "che<-T60 x1"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv"
+   },
+   "A3s8_atlas": {
+    "err": 0.9178,
+    "k": 67,
+    "n": 73,
+    "ci": [
+     0.8320540661871378,
+     0.9617867700265799
+    ],
+    "fe_err": 0.9143,
+    "fe_k": 64,
+    "fe_n": 70,
+    "fixed": 4,
+    "broken": 35,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 4,
+    "line_p": 0.125,
+    "fe_fixed": 4,
+    "fe_broken": 34,
+    "fe_p": 0.0,
+    "confusions": [
+     "a<-<deleted> x3",
+     "o<-<deleted> x2",
+     "d<-T45 x2",
+     "s<-<deleted> x2",
+     "o<-T96 x2",
+     "e<-T60 x2"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv"
+   },
+   "A3s9_atlas": {
+    "err": 0.8356,
+    "k": 61,
+    "n": 73,
+    "ci": [
+     0.7342874444391131,
+     0.9033879813719059
+    ],
+    "fe_err": 0.8429,
+    "fe_k": 59,
+    "fe_n": 70,
+    "fixed": 4,
+    "broken": 26,
+    "p": 0.0001,
+    "lines_improved": 0,
+    "lines_worsened": 4,
+    "line_p": 0.125,
+    "fe_fixed": 4,
+    "fe_broken": 26,
+    "fe_p": 0.0001,
+    "confusions": [
+     "o<-<deleted> x3",
+     "o<-T66 x2",
+     "i<-T83 x2",
+     "u<-<deleted> x2",
+     "e<-<deleted> x2",
+     "l<-T81 x2"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv"
+   },
+   "A3s10_atlas": {
+    "err": 0.9041,
+    "k": 66,
+    "n": 73,
+    "ci": [
+     0.8150416221426189,
+     0.9527716456706489
+    ],
+    "fe_err": 0.9286,
+    "fe_k": 65,
+    "fe_n": 70,
+    "fixed": 6,
+    "broken": 38,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 4,
+    "line_p": 0.125,
+    "fe_fixed": 5,
+    "fe_broken": 38,
+    "fe_p": 0.0,
+    "confusions": [
+     "i<-T60 x3",
+     "l<-<deleted> x3",
+     "che<-T33 x2",
+     "o<-T84 x2",
+     "u<-T60 x2",
+     "i<-T85 x2"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv"
+   },
+   "A3s11_atlas": {
+    "err": 0.863,
+    "k": 63,
+    "n": 73,
+    "ci": [
+     0.7658736406081267,
+     0.9238569220037918
+    ],
+    "fe_err": 0.8714,
+    "fe_k": 61,
+    "fe_n": 70,
+    "fixed": 9,
+    "broken": 29,
+    "p": 0.0017,
+    "lines_improved": 0,
+    "lines_worsened": 4,
+    "line_p": 0.125,
+    "fe_fixed": 8,
+    "fe_broken": 28,
+    "fe_p": 0.0012,
+    "confusions": [
+     "a<-T60 x2",
+     "o<-<deleted> x2",
+     "n<-<deleted> x2",
+     "i<-T86 x2",
+     "e<-<deleted> x2",
+     "che<-T98 x1"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv"
+   },
+   "A3s12_atlas": {
+    "err": 0.8493,
+    "k": 62,
+    "n": 73,
+    "ci": [
+     0.7499788763087365,
+     0.9137241179027322
+    ],
+    "fe_err": 0.8429,
+    "fe_k": 59,
+    "fe_n": 70,
+    "fixed": 8,
+    "broken": 33,
+    "p": 0.0001,
+    "lines_improved": 0,
+    "lines_worsened": 4,
+    "line_p": 0.125,
+    "fe_fixed": 8,
+    "fe_broken": 32,
+    "fe_p": 0.0002,
+    "confusions": [
+     "o<-T45 x2",
+     "i<-T60 x2",
+     "o<-<deleted> x2",
+     "i<-<deleted> x2",
+     "o<-T64 x2",
+     "r<-<deleted> x2"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv"
+   },
+   "A3s13_atlas": {
+    "err": 0.9041,
+    "k": 66,
+    "n": 73,
+    "ci": [
+     0.8150416221426189,
+     0.9527716456706489
+    ],
+    "fe_err": 0.9143,
+    "fe_k": 64,
+    "fe_n": 70,
+    "fixed": 5,
+    "broken": 36,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 4,
+    "line_p": 0.125,
+    "fe_fixed": 5,
+    "fe_broken": 36,
+    "fe_p": 0.0,
+    "confusions": [
+     "l<-T60 x3",
+     "e<-<deleted> x3",
+     "i<-<deleted> x2",
+     "a<-T29 x2",
+     "o<-T60 x2",
+     "r<-T80 x2"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv"
+   },
+   "A3s14_atlas": {
+    "err": 0.8493,
+    "k": 62,
+    "n": 73,
+    "ci": [
+     0.7499788763087365,
+     0.9137241179027322
+    ],
+    "fe_err": 0.8429,
+    "fe_k": 59,
+    "fe_n": 70,
+    "fixed": 6,
+    "broken": 29,
+    "p": 0.0001,
+    "lines_improved": 0,
+    "lines_worsened": 4,
+    "line_p": 0.125,
+    "fe_fixed": 6,
+    "fe_broken": 28,
+    "fe_p": 0.0002,
+    "confusions": [
+     "o<-T33 x2",
+     "i<-<deleted> x2",
+     "s<-T33 x2",
+     "e<-<deleted> x2",
+     "che<-T33 x1",
+     "i<-T60 x1"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv"
+   },
+   "A3s15_atlas": {
+    "err": 0.9178,
+    "k": 67,
+    "n": 73,
+    "ci": [
+     0.8320540661871378,
+     0.9617867700265799
+    ],
+    "fe_err": 0.9143,
+    "fe_k": 64,
+    "fe_n": 70,
+    "fixed": 8,
+    "broken": 34,
+    "p": 0.0001,
+    "lines_improved": 0,
+    "lines_worsened": 4,
+    "line_p": 0.125,
+    "fe_fixed": 8,
+    "fe_broken": 33,
+    "fe_p": 0.0001,
+    "confusions": [
+     "o<-<deleted> x3",
+     "i<-T98 x2",
+     "a<-<deleted> x2",
+     "e<-<deleted> x2",
+     "a<-T88 x2",
+     "r<-T60 x2"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv"
+   },
+   "A3s16_atlas": {
+    "err": 0.863,
+    "k": 63,
+    "n": 73,
+    "ci": [
+     0.7658736406081267,
+     0.9238569220037918
+    ],
+    "fe_err": 0.8857,
+    "fe_k": 62,
+    "fe_n": 70,
+    "fixed": 5,
+    "broken": 30,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 4,
+    "line_p": 0.125,
+    "fe_fixed": 4,
+    "fe_broken": 30,
+    "fe_p": 0.0,
+    "confusions": [
+     "i<-<deleted> x2",
+     "o<-T83 x2",
+     "a<-<deleted> x2",
+     "e<-T81 x2",
+     "n<-<deleted> x2",
+     "che<-T18 x1"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv"
+   },
+   "A3s17_atlas": {
+    "err": 0.8356,
+    "k": 61,
+    "n": 73,
+    "ci": [
+     0.7342874444391131,
+     0.9033879813719059
+    ],
+    "fe_err": 0.8571,
+    "fe_k": 60,
+    "fe_n": 70,
+    "fixed": 7,
+    "broken": 30,
+    "p": 0.0002,
+    "lines_improved": 0,
+    "lines_worsened": 4,
+    "line_p": 0.125,
+    "fe_fixed": 6,
+    "fe_broken": 30,
+    "fe_p": 0.0001,
+    "confusions": [
+     "a<-<deleted> x4",
+     "o<-<deleted> x3",
+     "l<-<deleted> x2",
+     "i<-X_NEW x2",
+     "r<-X_NEW x2",
+     "p<-<deleted> x2"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv"
+   },
+   "A3s18_atlas": {
+    "err": 0.8493,
+    "k": 62,
+    "n": 73,
+    "ci": [
+     0.7499788763087365,
+     0.9137241179027322
+    ],
+    "fe_err": 0.8429,
+    "fe_k": 59,
+    "fe_n": 70,
+    "fixed": 5,
+    "broken": 32,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 4,
+    "line_p": 0.125,
+    "fe_fixed": 5,
+    "fe_broken": 31,
+    "fe_p": 0.0,
+    "confusions": [
+     "i<-T60 x3",
+     "a<-T25 x3",
+     "l<-<deleted> x3",
+     "s<-<deleted> x2",
+     "i<-<deleted> x2",
+     "i<-T83 x2"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv"
+   },
+   "A3s19_atlas": {
+    "err": 0.8904,
+    "k": 65,
+    "n": 73,
+    "ci": [
+     0.7983717410229372,
+     0.9434139583898808
+    ],
+    "fe_err": 0.9143,
+    "fe_k": 64,
+    "fe_n": 70,
+    "fixed": 7,
+    "broken": 26,
+    "p": 0.0013,
+    "lines_improved": 0,
+    "lines_worsened": 4,
+    "line_p": 0.125,
+    "fe_fixed": 6,
+    "fe_broken": 26,
+    "fe_p": 0.0005,
+    "confusions": [
+     "s<-<deleted> x3",
+     "e<-<deleted> x3",
+     "r<-<deleted> x3",
+     "i<-T98 x2",
+     "r<-T65 x2",
+     "l<-<deleted> x2"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv"
+   },
+   "A3s20_atlas": {
+    "err": 0.8493,
+    "k": 62,
+    "n": 73,
+    "ci": [
+     0.7499788763087365,
+     0.9137241179027322
+    ],
+    "fe_err": 0.8571,
+    "fe_k": 60,
+    "fe_n": 70,
+    "fixed": 7,
+    "broken": 34,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 4,
+    "line_p": 0.125,
+    "fe_fixed": 7,
+    "fe_broken": 34,
+    "fe_p": 0.0,
+    "confusions": [
+     "o<-X_NEW x3",
+     "i<-X_NEW x2",
+     "i<-T53 x2",
+     "s<-X_NEW x2",
+     "e<-<deleted> x2",
+     "n<-<deleted> x2"
+    ],
+    "base": "out/A1_atlas_birago1572-f152r.tsv"
+   },
+   "A0a_override": {
+    "err": 0.1233,
+    "k": 9,
+    "n": 73,
+    "ci": [
+     0.06623676164045252,
+     0.21800510734717915
+    ],
+    "fe_err": 0.1,
+    "fe_k": 7,
+    "fe_n": 70,
+    "fixed": 1,
+    "broken": 4,
+    "p": 0.375,
+    "lines_improved": 0,
+    "lines_worsened": 2,
+    "line_p": 0.5,
+    "fe_fixed": 0,
+    "fe_broken": 4,
+    "fe_p": 0.125,
+    "confusions": [
+     "i<-T38 x2",
+     "e<-T36 x1",
+     "s<-T50 x1",
+     "d<-T98 x1",
+     "e<-T60 x1",
+     "a<-T52 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A1_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A2_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A3s1_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A3s2_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A3s3_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A3s4_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A3s5_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A3s6_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A3s7_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A3s8_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A3s9_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A3s10_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A3s11_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A3s12_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A3s13_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A3s14_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A3s15_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A3s16_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A3s17_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A3s18_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A3s19_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   },
+   "A3s20_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ],
+    "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+   }
+  }
+ },
+ "f152r_la": {
+  "lineread": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ]
+  },
+  "A0a_atlas": {
+   "err": 0.1507,
+   "k": 11,
+   "n": 73,
+   "ci": [
+    0.08627588209726772,
+    0.25002112369126345
+   ],
+   "fe_err": 0.1286,
+   "fe_k": 9,
+   "fe_n": 70,
+   "fixed": 16,
+   "broken": 5,
+   "p": 0.0266,
+   "lines_improved": 3,
+   "lines_worsened": 1,
+   "line_p": 0.625,
+   "fe_fixed": 15,
+   "fe_broken": 4,
+   "fe_p": 0.0192,
+   "confusions": [
+    "i<-T38 x3",
+    "e<-T60 x2",
+    "i<-T17 x1",
+    "o<-T83 x1",
+    "e<-T36 x1",
+    "s<-T50 x1"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv"
+  },
+  "A1_atlas": {
+   "err": 0.3425,
+   "k": 25,
+   "n": 73,
+   "ci": [
+    0.24394708089529712,
+    0.4567358824995307
+   ],
+   "fe_err": 0.3286,
+   "fe_k": 23,
+   "fe_n": 70,
+   "fixed": 1,
+   "broken": 19,
+   "p": 0.0,
+   "lines_improved": 0,
+   "lines_worsened": 4,
+   "line_p": 0.125,
+   "fe_fixed": 0,
+   "fe_broken": 19,
+   "fe_p": 0.0,
+   "confusions": [
+    "e<-T60 x3",
+    "l<-T97 x2",
+    "i<-X_NEW x2",
+    "i<-T36 x1",
+    "a<-<deleted> x1",
+    "e<-T18 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A2_atlas": {
+   "err": 0.3151,
+   "k": 23,
+   "n": 73,
+   "ci": [
+    0.22003473675403795,
+    0.4285930898398903
+   ],
+   "fe_err": 0.3,
+   "fe_k": 21,
+   "fe_n": 70,
+   "fixed": 4,
+   "broken": 3,
+   "p": 1.0,
+   "lines_improved": 2,
+   "lines_worsened": 1,
+   "line_p": 1.0,
+   "fe_fixed": 4,
+   "fe_broken": 3,
+   "fe_p": 1.0,
+   "confusions": [
+    "l<-T97 x2",
+    "e<-T60 x2",
+    "i<-T36 x1",
+    "o<-X_NEW x1",
+    "i<-X_NEW x1",
+    "i<-T53 x1"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv",
+   "vs_lineread": {
+    "fixed": 1,
+    "broken": 18,
+    "p": 0.0001,
+    "line_p": 0.125
+   }
+  },
+  "A3s1_atlas": {
+   "err": 0.7808,
+   "k": 57,
+   "n": 73,
+   "ci": [
+    0.6732251787519996,
+    0.8603399734572204
+   ],
+   "fe_err": 0.7714,
+   "fe_k": 54,
+   "fe_n": 70,
+   "fixed": 5,
+   "broken": 25,
+   "p": 0.0003,
+   "lines_improved": 0,
+   "lines_worsened": 4,
+   "line_p": 0.125,
+   "fe_fixed": 5,
+   "fe_broken": 24,
+   "fe_p": 0.0005,
+   "confusions": [
+    "o<-<deleted> x3",
+    "l<-T60 x2",
+    "n<-<deleted> x2",
+    "l<-T85 x2",
+    "che<-T50 x1",
+    "o<-T65 x1"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s2_atlas": {
+   "err": 0.8767,
+   "k": 64,
+   "n": 73,
+   "ci": [
+    0.7819948926528207,
+    0.9337632383595474
+   ],
+   "fe_err": 0.8857,
+   "fe_k": 62,
+   "fe_n": 70,
+   "fixed": 5,
+   "broken": 28,
+   "p": 0.0001,
+   "lines_improved": 0,
+   "lines_worsened": 4,
+   "line_p": 0.125,
+   "fe_fixed": 5,
+   "fe_broken": 28,
+   "fe_p": 0.0001,
+   "confusions": [
+    "o<-<deleted> x3",
+    "e<-<deleted> x3",
+    "o<-X_NEW x2",
+    "che<-<deleted> x1",
+    "i<-T45 x1",
+    "d<-T66 x1"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s3_atlas": {
+   "err": 0.7397,
+   "k": 54,
+   "n": 73,
+   "ci": [
+    0.6289029493194099,
+    0.8265794976884607
+   ],
+   "fe_err": 0.7429,
+   "fe_k": 52,
+   "fe_n": 70,
+   "fixed": 5,
+   "broken": 29,
+   "p": 0.0,
+   "lines_improved": 0,
+   "lines_worsened": 4,
+   "line_p": 0.125,
+   "fe_fixed": 5,
+   "fe_broken": 29,
+   "fe_p": 0.0,
+   "confusions": [
+    "a<-T49 x2",
+    "r<-T81 x2",
+    "che<-T92 x1",
+    "o<-T65 x1",
+    "d<-X_NEW x1",
+    "s<-T60 x1"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s4_atlas": {
+   "err": 0.8767,
+   "k": 64,
+   "n": 73,
+   "ci": [
+    0.7819948926528207,
+    0.9337632383595474
+   ],
+   "fe_err": 0.8714,
+   "fe_k": 61,
+   "fe_n": 70,
+   "fixed": 4,
+   "broken": 34,
+   "p": 0.0,
+   "lines_improved": 0,
+   "lines_worsened": 4,
+   "line_p": 0.125,
+   "fe_fixed": 4,
+   "fe_broken": 33,
+   "fe_p": 0.0,
+   "confusions": [
+    "o<-T24 x2",
+    "d<-T33 x2",
+    "o<-<deleted> x2",
+    "a<-<deleted> x2",
+    "a<-T83 x2",
+    "e<-<deleted> x2"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s5_atlas": {
+   "err": 0.8767,
+   "k": 64,
+   "n": 73,
+   "ci": [
+    0.7819948926528207,
+    0.9337632383595474
+   ],
+   "fe_err": 0.8714,
+   "fe_k": 61,
+   "fe_n": 70,
+   "fixed": 4,
+   "broken": 31,
+   "p": 0.0,
+   "lines_improved": 0,
+   "lines_worsened": 4,
+   "line_p": 0.125,
+   "fe_fixed": 4,
+   "fe_broken": 30,
+   "fe_p": 0.0,
+   "confusions": [
+    "o<-T60 x3",
+    "i<-T60 x3",
+    "d<-T60 x2",
+    "a<-T33 x2",
+    "l<-T53 x2",
+    "e<-T60 x2"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s6_atlas": {
+   "err": 0.8356,
+   "k": 61,
+   "n": 73,
+   "ci": [
+    0.7342874444391131,
+    0.9033879813719059
+   ],
+   "fe_err": 0.8286,
+   "fe_k": 58,
+   "fe_n": 70,
+   "fixed": 3,
+   "broken": 35,
+   "p": 0.0,
+   "lines_improved": 0,
+   "lines_worsened": 4,
+   "line_p": 0.125,
+   "fe_fixed": 3,
+   "fe_broken": 34,
+   "fe_p": 0.0,
+   "confusions": [
+    "s<-T33 x3",
+    "i<-T63 x2",
+    "i<-T54 x2",
+    "o<-<deleted> x2",
+    "che<-T86 x1",
+    "i<-T98 x1"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s7_atlas": {
+   "err": 0.863,
+   "k": 63,
+   "n": 73,
+   "ci": [
+    0.7658736406081267,
+    0.9238569220037918
+   ],
+   "fe_err": 0.8571,
+   "fe_k": 60,
+   "fe_n": 70,
+   "fixed": 2,
+   "broken": 31,
+   "p": 0.0,
+   "lines_improved": 0,
+   "lines_worsened": 4,
+   "line_p": 0.125,
+   "fe_fixed": 2,
+   "fe_broken": 30,
+   "fe_p": 0.0,
+   "confusions": [
+    "o<-T60 x3",
+    "l<-T53 x2",
+    "s<-<deleted> x2",
+    "n<-T25 x2",
+    "che<-T60 x1",
+    "i<-T37 x1"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s8_atlas": {
+   "err": 0.9178,
+   "k": 67,
+   "n": 73,
+   "ci": [
+    0.8320540661871378,
+    0.9617867700265799
+   ],
+   "fe_err": 0.9143,
+   "fe_k": 64,
+   "fe_n": 70,
+   "fixed": 3,
+   "broken": 36,
+   "p": 0.0,
+   "lines_improved": 0,
+   "lines_worsened": 4,
+   "line_p": 0.125,
+   "fe_fixed": 3,
+   "fe_broken": 35,
+   "fe_p": 0.0,
+   "confusions": [
+    "a<-<deleted> x3",
+    "e<-T60 x3",
+    "o<-<deleted> x2",
+    "d<-T45 x2",
+    "s<-<deleted> x2",
+    "o<-T96 x2"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s9_atlas": {
+   "err": 0.8356,
+   "k": 61,
+   "n": 73,
+   "ci": [
+    0.7342874444391131,
+    0.9033879813719059
+   ],
+   "fe_err": 0.8429,
+   "fe_k": 59,
+   "fe_n": 70,
+   "fixed": 4,
+   "broken": 26,
+   "p": 0.0001,
+   "lines_improved": 0,
+   "lines_worsened": 4,
+   "line_p": 0.125,
+   "fe_fixed": 4,
+   "fe_broken": 26,
+   "fe_p": 0.0001,
+   "confusions": [
+    "o<-<deleted> x3",
+    "o<-T66 x2",
+    "i<-T83 x2",
+    "u<-<deleted> x2",
+    "e<-<deleted> x2",
+    "r<-<deleted> x2"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s10_atlas": {
+   "err": 0.8904,
+   "k": 65,
+   "n": 73,
+   "ci": [
+    0.7983717410229372,
+    0.9434139583898808
+   ],
+   "fe_err": 0.9143,
+   "fe_k": 64,
+   "fe_n": 70,
+   "fixed": 5,
+   "broken": 37,
+   "p": 0.0,
+   "lines_improved": 0,
+   "lines_worsened": 4,
+   "line_p": 0.125,
+   "fe_fixed": 4,
+   "fe_broken": 37,
+   "fe_p": 0.0,
+   "confusions": [
+    "i<-T60 x3",
+    "l<-<deleted> x3",
+    "che<-T33 x2",
+    "o<-T84 x2",
+    "u<-T60 x2",
+    "i<-T85 x2"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s11_atlas": {
+   "err": 0.8219,
+   "k": 60,
+   "n": 73,
+   "ci": [
+    0.7187805780985462,
+    0.892867279312023
+   ],
+   "fe_err": 0.8143,
+   "fe_k": 57,
+   "fe_n": 70,
+   "fixed": 7,
+   "broken": 29,
+   "p": 0.0003,
+   "lines_improved": 0,
+   "lines_worsened": 4,
+   "line_p": 0.125,
+   "fe_fixed": 7,
+   "fe_broken": 28,
+   "fe_p": 0.0005,
+   "confusions": [
+    "a<-T60 x2",
+    "s<-<deleted> x2",
+    "i<-T86 x2",
+    "e<-<deleted> x2",
+    "che<-T98 x1",
+    "o<-T83 x1"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s12_atlas": {
+   "err": 0.8356,
+   "k": 61,
+   "n": 73,
+   "ci": [
+    0.7342874444391131,
+    0.9033879813719059
+   ],
+   "fe_err": 0.8286,
+   "fe_k": 58,
+   "fe_n": 70,
+   "fixed": 7,
+   "broken": 33,
+   "p": 0.0,
+   "lines_improved": 0,
+   "lines_worsened": 4,
+   "line_p": 0.125,
+   "fe_fixed": 7,
+   "fe_broken": 32,
+   "fe_p": 0.0001,
+   "confusions": [
+    "i<-T60 x3",
+    "o<-<deleted> x2",
+    "i<-<deleted> x2",
+    "o<-T64 x2",
+    "r<-<deleted> x2",
+    "che<-T88 x1"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s13_atlas": {
+   "err": 0.8904,
+   "k": 65,
+   "n": 73,
+   "ci": [
+    0.7983717410229372,
+    0.9434139583898808
+   ],
+   "fe_err": 0.9,
+   "fe_k": 63,
+   "fe_n": 70,
+   "fixed": 4,
+   "broken": 35,
+   "p": 0.0,
+   "lines_improved": 0,
+   "lines_worsened": 4,
+   "line_p": 0.125,
+   "fe_fixed": 4,
+   "fe_broken": 35,
+   "fe_p": 0.0,
+   "confusions": [
+    "l<-T60 x3",
+    "e<-<deleted> x3",
+    "o<-<deleted> x3",
+    "i<-<deleted> x2",
+    "a<-T29 x2",
+    "o<-T60 x2"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s14_atlas": {
+   "err": 0.8493,
+   "k": 62,
+   "n": 73,
+   "ci": [
+    0.7499788763087365,
+    0.9137241179027322
+   ],
+   "fe_err": 0.8429,
+   "fe_k": 59,
+   "fe_n": 70,
+   "fixed": 5,
+   "broken": 31,
+   "p": 0.0,
+   "lines_improved": 0,
+   "lines_worsened": 4,
+   "line_p": 0.125,
+   "fe_fixed": 5,
+   "fe_broken": 30,
+   "fe_p": 0.0,
+   "confusions": [
+    "o<-T33 x3",
+    "i<-<deleted> x2",
+    "e<-<deleted> x2",
+    "e<-T84 x2",
+    "che<-T33 x1",
+    "i<-T60 x1"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s15_atlas": {
+   "err": 0.8904,
+   "k": 65,
+   "n": 73,
+   "ci": [
+    0.7983717410229372,
+    0.9434139583898808
+   ],
+   "fe_err": 0.8857,
+   "fe_k": 62,
+   "fe_n": 70,
+   "fixed": 7,
+   "broken": 34,
+   "p": 0.0,
+   "lines_improved": 0,
+   "lines_worsened": 4,
+   "line_p": 0.125,
+   "fe_fixed": 7,
+   "fe_broken": 33,
+   "fe_p": 0.0,
+   "confusions": [
+    "o<-<deleted> x3",
+    "i<-T98 x2",
+    "a<-<deleted> x2",
+    "a<-T88 x2",
+    "r<-T60 x2",
+    "che<-T65 x1"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s16_atlas": {
+   "err": 0.8356,
+   "k": 61,
+   "n": 73,
+   "ci": [
+    0.7342874444391131,
+    0.9033879813719059
+   ],
+   "fe_err": 0.8571,
+   "fe_k": 60,
+   "fe_n": 70,
+   "fixed": 5,
+   "broken": 30,
+   "p": 0.0,
+   "lines_improved": 0,
+   "lines_worsened": 4,
+   "line_p": 0.125,
+   "fe_fixed": 4,
+   "fe_broken": 30,
+   "fe_p": 0.0,
+   "confusions": [
+    "i<-<deleted> x2",
+    "o<-T83 x2",
+    "a<-<deleted> x2",
+    "e<-T81 x2",
+    "o<-<deleted> x2",
+    "che<-T18 x1"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s17_atlas": {
+   "err": 0.8219,
+   "k": 60,
+   "n": 73,
+   "ci": [
+    0.7187805780985462,
+    0.892867279312023
+   ],
+   "fe_err": 0.8429,
+   "fe_k": 59,
+   "fe_n": 70,
+   "fixed": 6,
+   "broken": 31,
+   "p": 0.0,
+   "lines_improved": 0,
+   "lines_worsened": 4,
+   "line_p": 0.125,
+   "fe_fixed": 5,
+   "fe_broken": 31,
+   "fe_p": 0.0,
+   "confusions": [
+    "a<-<deleted> x4",
+    "l<-<deleted> x2",
+    "o<-T60 x2",
+    "i<-X_NEW x2",
+    "r<-X_NEW x2",
+    "p<-<deleted> x2"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s18_atlas": {
+   "err": 0.863,
+   "k": 63,
+   "n": 73,
+   "ci": [
+    0.7658736406081267,
+    0.9238569220037918
+   ],
+   "fe_err": 0.8571,
+   "fe_k": 60,
+   "fe_n": 70,
+   "fixed": 5,
+   "broken": 34,
+   "p": 0.0,
+   "lines_improved": 0,
+   "lines_worsened": 4,
+   "line_p": 0.125,
+   "fe_fixed": 5,
+   "fe_broken": 33,
+   "fe_p": 0.0,
+   "confusions": [
+    "i<-T60 x4",
+    "a<-T25 x3",
+    "l<-<deleted> x3",
+    "s<-<deleted> x2",
+    "i<-<deleted> x2",
+    "i<-T83 x2"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s19_atlas": {
+   "err": 0.863,
+   "k": 63,
+   "n": 73,
+   "ci": [
+    0.7658736406081267,
+    0.9238569220037918
+   ],
+   "fe_err": 0.8714,
+   "fe_k": 61,
+   "fe_n": 70,
+   "fixed": 3,
+   "broken": 27,
+   "p": 0.0,
+   "lines_improved": 0,
+   "lines_worsened": 4,
+   "line_p": 0.125,
+   "fe_fixed": 3,
+   "fe_broken": 27,
+   "fe_p": 0.0,
+   "confusions": [
+    "e<-<deleted> x3",
+    "s<-<deleted> x2",
+    "i<-T98 x2",
+    "r<-T65 x2",
+    "r<-<deleted> x2",
+    "che<-T53 x1"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s20_atlas": {
+   "err": 0.8219,
+   "k": 60,
+   "n": 73,
+   "ci": [
+    0.7187805780985462,
+    0.892867279312023
+   ],
+   "fe_err": 0.8286,
+   "fe_k": 58,
+   "fe_n": 70,
+   "fixed": 6,
+   "broken": 34,
+   "p": 0.0,
+   "lines_improved": 0,
+   "lines_worsened": 4,
+   "line_p": 0.125,
+   "fe_fixed": 6,
+   "fe_broken": 34,
+   "fe_p": 0.0,
+   "confusions": [
+    "o<-X_NEW x3",
+    "i<-X_NEW x2",
+    "i<-T53 x2",
+    "s<-X_NEW x2",
+    "e<-<deleted> x2",
+    "che<-T53 x1"
+   ],
+   "base": "rescore/out/A1_atlas_birago1572-f152r.tsv"
+  },
+  "A0a_override": {
+   "err": 0.1096,
+   "k": 8,
+   "n": 73,
+   "ci": [
+    0.05658604161011908,
+    0.20162825897706282
+   ],
+   "fe_err": 0.0857,
+   "fe_k": 6,
+   "fe_n": 70,
+   "fixed": 1,
+   "broken": 4,
+   "p": 0.375,
+   "lines_improved": 1,
+   "lines_worsened": 2,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 4,
+   "fe_p": 0.125,
+   "confusions": [
+    "i<-T38 x2",
+    "e<-T36 x1",
+    "s<-T50 x1",
+    "d<-T98 x1",
+    "e<-T60 x1",
+    "a<-T52 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A1_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A2_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A3s1_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A3s2_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A3s3_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A3s4_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A3s5_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A3s6_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A3s7_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A3s8_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A3s9_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A3s10_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A3s11_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A3s12_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A3s13_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A3s14_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A3s15_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A3s16_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A3s17_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A3s18_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A3s19_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  },
+  "A3s20_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "lines_improved": 0,
+   "lines_worsened": 0,
+   "line_p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "../../outputs/birago1572-f152r/passZ_pipeline.tsv"
+  }
+ },
+ "gate": {
+  "no87 corrected map": {
+   "A1": 0.3138,
+   "owner": 0.3001,
+   "gain": 0.0137,
+   "fixed": 41,
+   "broken": 33,
+   "p": 0.416,
+   "line_p": 0.2632,
+   "null_gain_mean": -0.4418,
+   "null_p95": -0.4072,
+   "null_max": -0.4048,
+   "verdict": "FAIL / null"
+  },
+  "f152r registered map": {
+   "A1": 0.3836,
+   "owner": 0.3562,
+   "gain": 0.0274,
+   "fixed": 4,
+   "broken": 3,
+   "p": 1.0,
+   "line_p": 1.0,
+   "null_gain_mean": -0.4815,
+   "null_p95": -0.4109,
+   "null_max": -0.3972,
+   "verdict": "FAIL / null"
+  },
+  "f152r label-aware map (sensitivity)": {
+   "A1": 0.3425,
+   "owner": 0.3151,
+   "gain": 0.0274,
+   "fixed": 4,
+   "broken": 3,
+   "p": 1.0,
+   "line_p": 1.0,
+   "null_gain_mean": -0.5068,
+   "null_p95": -0.4383,
+   "null_max": -0.3972,
+   "verdict": "FAIL / null"
+  }
+ },
+ "posthoc": {
+  "birago1572-f152r registered maps": {
+   "A2x_atlas": {
+    "err": 0.3425,
+    "k": 25,
+    "n": 73,
+    "ci": [
+     0.24394708089529712,
+     0.4567358824995307
+    ],
+    "fe_err": 0.3286,
+    "fe_k": 23,
+    "fe_n": 70,
+    "fixed": 4,
+    "broken": 2,
+    "p": 0.6875,
+    "lines_improved": 2,
+    "lines_worsened": 0,
+    "line_p": 0.5,
+    "fe_fixed": 4,
+    "fe_broken": 2,
+    "fe_p": 0.6875,
+    "confusions": [
+     "l<-T97 x2",
+     "r<-<deleted> x2",
+     "e<-T60 x2",
+     "i<-T36 x1",
+     "i<-X_NEW x1",
+     "i<-T53 x1"
+    ]
+   },
+   "A2x_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ]
+   }
+  },
+  "birago1572-f152r corrected maps": {
+   "A2x_atlas": {
+    "err": 0.3014,
+    "k": 22,
+    "n": 73,
+    "ci": [
+     0.2082244364335746,
+     0.4143758217599039
+    ],
+    "fe_err": 0.2857,
+    "fe_k": 20,
+    "fe_n": 70,
+    "fixed": 4,
+    "broken": 2,
+    "p": 0.6875,
+    "lines_improved": 2,
+    "lines_worsened": 0,
+    "line_p": 0.5,
+    "fe_fixed": 4,
+    "fe_broken": 2,
+    "fe_p": 0.6875,
+    "confusions": [
+     "l<-T97 x2",
+     "e<-T60 x2",
+     "i<-T36 x1",
+     "i<-X_NEW x1",
+     "i<-T53 x1",
+     "a<-T60 x1"
+    ]
+   },
+   "A2x_override": {
+    "err": 0.0685,
+    "k": 5,
+    "n": 73,
+    "ci": [
+     0.02960860206637889,
+     0.15052299331945376
+    ],
+    "fe_err": 0.0286,
+    "fe_k": 2,
+    "fe_n": 70,
+    "fixed": 0,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 0,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 0,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "e<-T36 x1",
+     "d<-T98 x1",
+     "a<-T52 x1",
+     "l<-T64 x1"
+    ]
+   },
+   "A2x_atlas_vs_A2": {
+    "err": 0.3014,
+    "k": 22,
+    "n": 73,
+    "ci": [
+     0.2082244364335746,
+     0.4143758217599039
+    ],
+    "fe_err": 0.2857,
+    "fe_k": 20,
+    "fe_n": 70,
+    "fixed": 1,
+    "broken": 0,
+    "p": 1.0,
+    "lines_improved": 1,
+    "lines_worsened": 0,
+    "line_p": 1.0,
+    "fe_fixed": 1,
+    "fe_broken": 0,
+    "fe_p": 1.0,
+    "confusions": [
+     "l<-T97 x2",
+     "e<-T60 x2",
+     "i<-T36 x1",
+     "i<-X_NEW x1",
+     "i<-T53 x1",
+     "a<-T60 x1"
+    ]
+   }
+  },
+  "birago1572-no87 registered maps": {
+   "A2x_atlas": {
+    "err": 0.3101,
+    "k": 249,
+    "n": 803,
+    "ci": [
+     0.27906314709924696,
+     0.34291965596891416
+    ],
+    "fe_err": 0.303,
+    "fe_k": 240,
+    "fe_n": 792,
+    "fixed": 45,
+    "broken": 23,
+    "p": 0.0103,
+    "lines_improved": 15,
+    "lines_worsened": 6,
+    "line_p": 0.0784,
+    "fe_fixed": 44,
+    "fe_broken": 22,
+    "fe_p": 0.0092,
+    "confusions": [
+     "e<-T60 x23",
+     "a<-T60 x15",
+     "d<-T98 x7",
+     "l<-T60 x7",
+     "o<-T60 x6",
+     "t<-T60 x6"
+    ]
+   },
+   "A2x_override": {
+    "err": 0.0884,
+    "k": 71,
+    "n": 803,
+    "ci": [
+     0.07069046473533554,
+     0.11006570847140046
+    ],
+    "fe_err": 0.0758,
+    "fe_k": 60,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 28,
+    "p": 0.0,
+    "lines_improved": 0,
+    "lines_worsened": 9,
+    "line_p": 0.0039,
+    "fe_fixed": 0,
+    "fe_broken": 28,
+    "fe_p": 0.0,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "r<-T19 x3",
+     "r<-T45 x2"
+    ]
+   }
+  },
+  "birago1572-no87 corrected maps": {
+   "A2x_atlas": {
+    "err": 0.2814,
+    "k": 226,
+    "n": 803,
+    "ci": [
+     0.2514372620539803,
+     0.3135331113129854
+    ],
+    "fe_err": 0.274,
+    "fe_k": 217,
+    "fe_n": 792,
+    "fixed": 45,
+    "broken": 22,
+    "p": 0.0067,
+    "lines_improved": 15,
+    "lines_worsened": 6,
+    "line_p": 0.0784,
+    "fe_fixed": 44,
+    "fe_broken": 21,
+    "fe_p": 0.0059,
+    "confusions": [
+     "e<-T60 x24",
+     "a<-T60 x15",
+     "d<-T98 x7",
+     "o<-T60 x6",
+     "t<-T60 x6",
+     "l<-T60 x6"
+    ]
+   },
+   "A2x_override": {
+    "err": 0.056,
+    "k": 45,
+    "n": 803,
+    "ci": [
+     0.04214313892304911,
+     0.07416420070842254
+    ],
+    "fe_err": 0.0429,
+    "fe_k": 34,
+    "fe_n": 792,
+    "fixed": 0,
+    "broken": 4,
+    "p": 0.125,
+    "lines_improved": 0,
+    "lines_worsened": 3,
+    "line_p": 0.25,
+    "fe_fixed": 0,
+    "fe_broken": 4,
+    "fe_p": 0.125,
+    "confusions": [
+     "s<-T50 x7",
+     "d<-T98 x7",
+     "t<-T90 x3",
+     "e<-T76 x3",
+     "l<-T64 x2",
+     "c<-T92 x1"
+    ]
+   },
+   "A2x_atlas_vs_A2": {
+    "err": 0.2814,
+    "k": 226,
+    "n": 803,
+    "ci": [
+     0.2514372620539803,
+     0.3135331113129854
+    ],
+    "fe_err": 0.274,
+    "fe_k": 217,
+    "fe_n": 792,
+    "fixed": 15,
+    "broken": 0,
+    "p": 0.0001,
+    "lines_improved": 13,
+    "lines_worsened": 0,
+    "line_p": 0.0002,
+    "fe_fixed": 15,
+    "fe_broken": 0,
+    "fe_p": 0.0001,
+    "confusions": [
+     "e<-T60 x24",
+     "a<-T60 x15",
+     "d<-T98 x7",
+     "o<-T60 x6",
+     "t<-T60 x6",
+     "l<-T60 x6"
+    ]
+   }
+  }
+ },
+ "posthoc_gate_shape": {
+  "birago1572-f152r registered maps": {
+   "A1": 0.3836,
+   "owner": 0.3425,
+   "gain": 0.0411,
+   "fixed": 4,
+   "broken": 2,
+   "p": 0.6875,
+   "line_p": 0.5,
+   "null_gain_mean": -0.4815,
+   "null_p95": -0.4109,
+   "null_max": -0.3972,
+   "verdict": "FAIL / null"
+  },
+  "birago1572-f152r corrected maps": {
+   "A1": 0.3425,
+   "owner": 0.3014,
+   "gain": 0.0411,
+   "fixed": 4,
+   "broken": 2,
+   "p": 0.6875,
+   "line_p": 0.5,
+   "null_gain_mean": -0.5068,
+   "null_p95": -0.4383,
+   "null_max": -0.3972,
+   "verdict": "FAIL / null"
+  },
+  "birago1572-no87 registered maps": {
+   "A1": 0.3425,
+   "owner": 0.3101,
+   "gain": 0.0324,
+   "fixed": 45,
+   "broken": 23,
+   "p": 0.0103,
+   "line_p": 0.0784,
+   "null_gain_mean": -0.4228,
+   "null_p95": -0.391,
+   "null_max": -0.3835,
+   "verdict": "TRANSFERS (PASS)"
+  },
+  "birago1572-no87 corrected maps": {
+   "A1": 0.3138,
+   "owner": 0.2814,
+   "gain": 0.0324,
+   "fixed": 45,
+   "broken": 22,
+   "p": 0.0067,
+   "line_p": 0.0784,
+   "null_gain_mean": -0.4418,
+   "null_p95": -0.4072,
+   "null_max": -0.4048,
+   "verdict": "TRANSFERS (PASS)"
+  }
+ },
+ "pooled": {
+  "registered A2 vs A1 (no87 corrected + f152r registered)": {
+   "fixed": 45,
+   "broken": 36,
+   "p": 0.3742
+  },
+  "registered A2 vs A1 (no87 corrected + f152r label-aware)": {
+   "fixed": 45,
+   "broken": 36,
+   "p": 0.3742
+  },
+  "POST HOC A2x vs A1 (corrected maps)": {
+   "fixed": 49,
+   "broken": 24,
+   "p": 0.0046
+  }
+ }
+}
