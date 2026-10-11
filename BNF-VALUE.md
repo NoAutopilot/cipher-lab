@@ -226,3 +226,16 @@ the strongest new material (a held key or a sibling folder) once reproduced. Re-
 
 10 Oct UTC spend on this lane: 0 workers. Next best attempt: unchanged -- Rondinelli page read once Gallica answers
 (~$1, <= 20 requests); R1/R2 reproduction rows; the two desk rows. Re-check once a day.
+
+## Wave 18 (11 Oct 2026, 06:1x UTC by date -u): daily re-check
+
+- Gallica: not probed by this lane. Account 3's parent logged a Cloudflare 403 at 01:03 UTC 11 Oct, its third block
+  since 00:05, so one more request would only add load (good-citizen rule). Rondinelli (fr3613-rondinelli-1590) waits.
+- Bourdeau re-screened at HEAD 843165c (was fcb07b0): the only catalogue changes are items 279 (Cluj) and 296 (TNA
+  SP 53), neither BnF. fr.4698/4700 is still his catalogue 331 candidate -- left to him.
+- Dataset: `holder_dataset.py --check` was stale on one row; refreshed. Still 118 BnF folders, 35 readings, 20 N3+,
+  6 of them D2+.
+- Desk rows (Sega edition; fr.3622 f.91 sign sorter): no answer in ROOM.md since 10 Oct 06:20.
+- Workers: none (account 2 still reports seven_day allowed_warning -> BUDGETS scaling rule).
+
+11 Oct UTC spend on this lane: 0 workers. Next best attempt: unchanged. Re-check once a day.
