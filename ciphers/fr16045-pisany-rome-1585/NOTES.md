@@ -1233,7 +1233,7 @@ Report: found -- with controls 5/5, 5 of the 9 UNSETTLED f.275r T31 tokens settl
 one settles on T31 itself. Not found -- any settle on f.244r (0 of 5), or on 3 f.275r tokens. Requests: none. Subagent calls: 2 Opus.
 
 ## PISA-T475 (11 Oct 2026)
-Brief: .claude/briefs/runs/2026-10-11-acct1-default-1840-jobs.md "PISA-T475" (LANE DEFAULT-A1-1840, account 1), 18:56-19:0x UTC by date -u. Disk only, 0 network.
+Brief: .claude/briefs/runs/2026-10-11-acct1-default-1840-jobs.md "PISA-T475" (LANE DEFAULT-A1-1840, account 1), 18:56-18:5x UTC by date -u. Disk only, 0 network.
 Prior work: `python3 tools/prior_work.py fr16045-pisany-rome-1585 --item-spec 'shelfmark=BnF fr.16045;folio=244r|275r;date=1586-09-17' --step-type transcribe --known-answer gate:PISA-T475-t475 --offline`
 exit 0 (verdict plaintext KNOWN by design, step CLEAR; UNCHECKED-NET rows are the solver-repo clone and editions table, not this compare).
 PREREG pisa_t475/PREREG-PISA-T475.md pushed (e930f30f9) before any reader call. It cut f.244r before any read: its 26 T45/T47/T57 tokens were never
