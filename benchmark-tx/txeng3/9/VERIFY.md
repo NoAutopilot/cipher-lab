@@ -153,3 +153,125 @@ On eval_heldout, a, b and c all score 15/376 (flagged-excluded 10/371). b2 score
 - **Grading:** pinned positions are graded `pin`, never S.
 - **ROOM:** the first done line cited the wrong hash and was corrected at 06:06. The claim line's estimated time was
   corrected at 05:53.
+
+## Second check (11 Oct 2026, written about 16:4x UTC by the account-3 parent from the second verifier's report; workflow wf_35ed2244-0e6)
+
+A second, independent agent ruled on each objection and non-holds verdict above, re-running the commands itself. Where it disagrees with this file, this section governs.
+
+### Rulings on the first verifier's objections
+
+- **partly**: 1. RESULTS' 'pinning them is destructive (33 broken vs a)' misattributes the 33; the kept tiles alone are 0 fixed / 28 broken (b3 vs b2).
+  - Evidence: Re-ran `tools/tx_bench.py --item birago1572-no87 --exclude-flagged --paired` at origin/main c9c20626b.
+- b3 vs a: 4 fixed / 33 broken.
+- b3 vs b2: 0 / 28.
+- b2 vs b: 1 / 5.
+So the attribution point is right: the 33 includes the 5 breaks from the 4 Oct moves.
+
+But 28 is not the settled figure for the kept tiles alone:
+- The arm outputs and the truth file share the same 853 positions (checked line by line), so a direct position lookup is valid here. By that lookup, b3 vs b2 is 0 fixed / 35 broken: 33 at kept pins and 2 through context.
+- Error went from 40/803 to 74/803 (+34).
+
+More important, 32 of the 33 kept-pin breaks are pins whose sign is the clerk-sheet truth one position away (see ruling 11). They measure our box-to-position map, not the seed labels. Neither 33 nor 28 should go to the owner as 'what your kept tiles did'.
+- **agree**: 2a. 'Owner 4 Oct pins (P_O inside b2): 25 scored, 20 right / 5 wrong ... top-1 already right at 24 of 25' are P_LO counts; P_O alone is 18 scored, 13 right / 5 wrong, top-1 right 17, decode right 18.
+  - Evidence: Recounted from pins_P_O.tsv, pins_P_LO.tsv, decode_a.tsv and the truth file:
+- P_O: 19 pins, 18 scored, 13 right / 5 wrong; top-1 right 17; arm a right 18.
+- P_LO: 25 scored, 20 right; top-1 right 24.
+The two sets do not overlap. Only 6 of the 19 P_O pins differ from arm a's sign: the 5 wrong ones plus L12.23, which is unscored.
+- **agree**: 2b. 'the owner's 4 Oct moves at 80% (20/25)' should be 72% (13/18).
+  - Evidence: 13/18 = 72% is the right arithmetic for P_O. But the figure itself is confounded:
+- 3 of the 5 'wrong' moves (L11.20, L13.20, L21.13) equal the truth at the adjacent position, on lines whose kept pins are shifted the same way.
+- 1 (L02.8) is a new one-tile split pile, T60-d, scored as plain T60.
+- 1 (L01.8) is X20's script cluster rule, not a move made on no.87.
+Neither 80% nor 72% measures the owner's accuracy.
+- **agree**: 2c. 'the 40 are seeded pile labels the owner left in place' should be 35 kept + 5 moves.
+  - Evidence: P_S has 197 scored pins and 40 wrong: 35 kept (of 172 scored kept) + 5 P_O + 0 P_L. 32 of the 35 kept 'wrong' equal the truth at position +/-1.
+- **agree**: 3. 'Fixed none' holds only at the pinned positions (L02.9 fixed through context), and the owner paragraph's 'it never changed a neighbouring sign' holds only for P_L at lam 4.
+  - Evidence: I rebuilt the write-over-afterwards arms myself (arm a or a1 with each pin set written over it) and compared them sign by sign with the pinned-inside arms:
+- P_L, lam 4: 0 positions differ.
+- P_LO: 1 (f178v L02.9, X_NEW to T49, truth u; tx_bench 1 fixed / 0 broken).
+- P_S: 7 (tx_bench 1/2).
+- P_L, lam 1: 1 (L05.27, a break).
+Also b2 vs b: 1 fixed (L02.9, context) / 5 broken. The pin that caused the L02.9 fix (L02.8 = T60) is itself one of the 'wrong' pins.
+- **agree**: 4. The near-tie sentence (24 positions, 5 of the errors) is not pre-registered, computed by no committed script, and misleading.
+  - Evidence: Re-derived from base_topk.tsv:
+- 24 lattice positions have a top-2 gap under 0.05.
+- Arm a: 5 of its 32 lattice-line errors are near-ties (direct position lookup). 3 of those 5 are P_L positions.
+- Arm b: 2 of 29 lattice-line errors are near-ties.
+- 7 of the 24 near-ties are P_L pins.
+run_pins.py contains no near-tie or 0.05 computation (grep). 'The remaining errors sit at 24 positions' is false.
+- **agree**: 5. The registered gate was declared unreachable in the prereg, so the null carries no information about pins; both owner claims rest on secondary or exploratory numbers.
+  - Evidence: The PREREG gate section says the gate 'cannot be met by (b)'. On the numbers: 0.0448 + 0.0144 = 0.0592, above both a (0.0486) and c (0.0423). b3 is declared exploratory in the PREREG.
+- **agree**: 6. 'Verdict: null (dev-FAIL ...)' mislabels a gate set on the whole of an eval item.
+  - Evidence: The PREREG names birago1572-no87 'split eval', and the gate is on the whole-no.87 as-measured figure. 'FAIL on the registered whole-item gate' is the right label; 'dev-FAIL' is not.
+- **agree**: 7. Offline tests: 13/14 pass, not 14/14; test_probs_top3_replaces_hml fails, it is pre-existing, and it is unrelated to --pins.
+  - Evidence: pytest on tools/tests/test_key_decode_lattice.py gives 1 failed, 13 passed.
+- The tool and the test file are byte-identical to 4dc3f12f.
+- parse_top3 at 387a9d9f also returns 0.7000000000000001, so the failure is deterministic and predates TXE3-9.
+- test_pins_hold_position_and_report passes.
+- **partly**: 8. Truth row f178v_L02 pos 8 (one of the 5 'broken' owner moves) is flagged corrected:key-doubtful and still scored.
+  - Evidence: The fact is right: flag corrected:key-doubtful, truth T42|T70|T88 = g. tx_bench keeps 'corrected:' rows scored by design (is_flagged).
+
+The doubt does not rescue the pin. It concerns whether T42 can read g instead of m, and the pinned T60 reads n, against a g the flags file calls clear on the clerk sheet.
+
+The real problem is elsewhere: settled_no87.tsv shows this tile's seed was already T60. The owner moved it into a NEW one-tile pile, T60-d, which does not exist among his family-sort piles (T60, T60-b, T60-c only). The harness then scored that pile as plain T60. Reading 'separated from T60' as 'is T60' reverses his signal.
+- **partly**: 9. Rule 3 third-attempt shape: TX-ALTS, TXE-E, TXE-J and TXE3-9 each changed one input to the same no.87 lattice and none passed, so the next attempt needs new material.
+  - Evidence: The advice not to re-run pins on no.87 is sound, and RESULTS says the same.
+
+TXE3-9 should not count as a third failed attempt, though:
+- Its gate was declared unreachable in advance.
+- Its owner and kept arms (P_O, P_S) went through a box-to-position map that is off by one in places.
+- Only P_L was a clean test, and it took all 3 signs available to it.
+
+Log it 'untested by this design', not as another failure of the lattice on no.87.
+- **disagree**: 10. run_pins.py scores by direct position lookup rather than tx_bench alignment (arm a 32 vs 31; b3 68 vs 60); 'a small scorer inconsistency that changes no conclusion'.
+  - Evidence: The gap is not small where it matters. It sits almost entirely in b3, and it is the visible symptom of a bad join:
+- tx_bench finds 7 deletion+insertion pairs in b3 (L06, L09, L11, L13, L21, f179r L03), against 1 in b2.
+- In those runs the pinned signs equal the truth one position over.
+- Of the wrong pins, 32 of 35 kept and 3 of 5 P_O equal the truth at position +/-1. At +/-2 and +/-3 they match only 1-4 of 35, which is chance level. Right pins match +/-1 in 1 of 137.
+- A check that uses no truth agrees: of 208 no.87 sorter tiles with a 1:1 box, the seed label equals the L sign at the mapped position for 157, at position -1 for 24, at +1 for 14, at +/-2 for 0.
+
+The cause: run_pins.py, and X20's x20_owner.py before it, join sorter tile ids to positions through atlas/no87_box_token.tsv. That file is a label-blind DP over box widths only. Example: on L06 it maps tile f178v_06_009, which the owner marked NOT-LETTER, to token 9, and every later tile on that line lands one position late.
+
+This changes conclusions. Kept-alone breaks read 28 by aligner and 35 by position, and both are mostly map shifts.
+- **disagree**: (First verifier's control section) Random pass-A pins 'separate the kept-seed damage from pinning as such, and support the substance of claim 2'.
+  - Evidence: The random pins are placed by passA_at, which uses pass A's own difflib alignment to the skeleton and never touches no87_box_token.tsv. The owner and kept pins do go through that map. So the control cannot vary on the one step that produces most of the owner-set 'wrong' pins (rule 3: a control orthogonal to the cause).
+
+Allowing for the one-position shift, the kept seeds read 137 right at their mapped position plus up to 32 at the adjacent one, out of 172. Chance would give about 5 of those 32, so roughly 95-98% right, comparable to pass A's 94.7%.
+
+The control's 'owner sets worse than random' difference is the map, not the seeds or the owner.
+
+### Final verdict on each claim told to the owner (11 Oct ~07:05 UTC)
+
+- **overstated**: Locking the owner's decisions into the decoder gives the same result as applying them afterwards.
+  - Evidence: Same decoder, pinned inside vs written over afterwards. I rebuilt this from the committed arm outputs and scored it with tx_bench:
+- P_L at lam 4: identical at every position.
+- P_LO (labels + the 4 Oct decisions): 1 neighbour moved (f178v L02.9, a fix).
+- P_S: 7 neighbours moved (1 fixed / 2 broken).
+- P_L at lam 1: 1 neighbour moved (a break).
+
+Only 13 pins differed from the decoder's own choice (7 label pins, 6 owner pins). No arm beat the current reading L: b vs c 4/5, b2 vs c 3/8.
+
+The owner's pins were also placed through atlas/no87_box_token.tsv, which is off by one in places, so P_O is partly not his decisions at the positions he meant. That does not change the inside-vs-after mechanics.
+  - Corrected: On Birago no.87, locking decided signs into the decoder gave almost the same reading as writing them over it afterwards. It was identical for the 7 label rulings; with your 4 Oct decisions added, one neighbouring sign changed (f178v L02.9, for the better). Neither way beat the current reading. One letter only, and only 13 pins differed from what the decoder already chose.
+- **wrong**: A tile he merely left in place must never be counted as a decision (pinning kept tiles broke 33 signs); his 4 Oct moves pinned broke 5 and fixed none.
+  - Evidence: The counts are real outputs of the harness, but they measure our box-to-position map, not the owner's sorting or the seed labels.
+
+The counts:
+- Kept tiles alone: 0 fixed / 28 broken by tx_bench, 0 / 35 by exact position. The 33 was b3 vs a, which includes the moves.
+- The 4 Oct moves: 1 fixed / 5 broken (b2 vs b, p 0.22), not 'fixed none'.
+
+What the breaks are:
+- 32 of the 33 kept-pin breaks are signs equal to the clerk-sheet truth one position away. They run in same-direction stretches per line: L06, L09, L11, L13, L17, L21, f179r L02 and L03.
+- A check that uses no truth shows the same shift: 38 of 208 sorter seed labels equal L's sign one position away, and 0 two positions away.
+- Of the 5 'wrong' moves:
+  - 3 (L11.20 T24, L13.20 T37, L21.13 T60) equal the truth at the adjacent position, on lines shifted the same way.
+  - L02.8 is a new one-tile pile, T60-d, that the owner split out of T60 and the harness scored as T60.
+  - L01.8 is X20's script cluster rule from his sort of other letters (T65 = the truth at pos+1).
+- His 13 other scored moves are all right.
+
+X20 (the 4 Oct decisions applied after: 0 fixed / 4 broken) used the same join (x20_owner.py lines 49-51, 84-87), so it inherits the same problem.
+  - Corrected: Withdrawn as stated. On no.87 the tiles you left in place and 3 of your 5 'wrong' 4 Oct moves mostly carry the clerk sheet's sign for the neighbouring position: our width-only box-to-position map (atlas/no87_box_token.tsv) is off by one on several lines. A fourth is your new pile T60-d scored as plain T60, and the fifth is a cluster rule from your sort of other letters. These numbers say nothing about the quality of your sorting or of the seeds. No rule about kept tiles or moves should rest on them until the map is fixed and the arms re-scored.
+
+### Sentence the parent may give the owner
+
+On Birago no.87, locking your decided signs into the decoder gave practically the same reading as applying them afterwards: identical for the 7 label rulings, and one neighbouring sign changed, for the better, once your 4 Oct moves were added. Neither way improved on the current reading. Please disregard what we told you about your kept tiles and your 4 Oct moves 'breaking' signs: almost every one of those 'wrong' tiles carries the right sign for the position next to it, which shows our tile-to-position map is off by one on several lines. It says nothing about your sorting, and we will fix the map and re-score before drawing any rule from it.

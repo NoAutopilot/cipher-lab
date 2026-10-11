@@ -214,3 +214,127 @@ as X6 had already found."
 (then diff against eval/curve_eval_pile_x_lam1.tsv). The per-seed figures, the paired sign tests and the hybrid order use the
 tool's own `Sim`, `run_order`, `oracle_rows` and `random.Random(seed).shuffle(show)`, seeds 0-19, with no change. The hybrid's
 sort key is `(-disagree, -n_signals, reading order)`.
+
+## Second check (11 Oct 2026, written about 16:4x UTC by the account-3 parent from the second verifier's report; workflow wf_35ed2244-0e6)
+
+A second, independent agent ruled on each objection and non-holds verdict above, re-running the commands itself. Where it disagrees with this file, this section governs.
+
+### Rulings on the first verifier's objections
+
+- **agree**: Re-derivation: every eval and dev curve, summary and k-dump reproduces byte for byte.
+  - Evidence: I re-ran tools/tx_sorter_curve.py at origin/main 7106556de (20 seeds). The eval pile, none and cluster runs (each x and m) and the dev pile x runs at lam 1 and lam 4 all match the committed files byte for byte (cmp). I re-derived the per-seed list itself: pile x to 2% per seed is 145,27,10,68,52,48,21,85,1,15,108,31,59,53,1,43,66,165,68,82, with an upper median of 53. Pile m: 19 of 20 seeds reach 2%, upper median 100, range 26 to not reached. Pile x at k=20, seeds sorted: 4,5,5,5,8,9,9, then 10 eleven times, then 11,11. The disagree flag on eval covers 19 of 371 tiles holding 5 of 10 x errors, and 20 of 376 holding 6 of 15 under m. C and L are identical on the eval lines: 0 of 402 signs differ.
+- **agree**: Claim 1 / RESULTS 'For the owner': '7 vs about 53' quotes the flagged-excluded (x) figure alone; as measured it is 10 vs 100 (breaks TRANSCRIPTION.md:36). The 7 is mostly one five-tile T98-for-T18 pile. The scope is the eval lines only, with an oracle owner.
+  - Evidence: TRANSCRIPTION.md line 36 reads 'Never quote the flagged-excluded figure alone.' Pile m gives disagree to 2% at q10 against a random upper median of 100 (summary_eval_pile_m_lam1.json). My trace of the disagree order (pile x) shows question 7 is tile f178v_L19 pos 6, cluster 102, read T98 where the truth is T18. Pile propagation moved 5 tiles and wrong went from 8 to 3; under m the same question took it from 13 to 8. The x base is 10/371 = 2.7%, so 'under 2%' (the tool tests <=2%, i.e. <=7 wrong) means a net 3 fixed. The unit is eval_heldout (371 x / 376 m of no.87's 803 scored rows). The oracle plays the owner (true_sign from the truth file). X20's real-owner row on dev reads fixed 0 / broken 3 (txeng2/sorter/RESULTS.md:99).
+- **partly**: Claim 2a: 'the lattice ranking did no better than random' is wrong. It missed the bar by one sign in the primary setting, beat 16 of 20 seeds there, and cleared the same bar in pile m, none x, none m and dev.
+  - Evidence: Every number checks:
+- Pile x at k=20: lattice 5 beats 16 seeds, ties 3, loses 1.
+- The other settings (lattice vs random minimum): pile m 7 vs 9, none x 7 vs 8, none m 9 vs 13, dev pile x 7 vs 10. Lattice beats all 20 seeds in each.
+- To 3%: lattice 14 vs 48 (pile m), 14 vs 80 (none m), 10 vs 64 (dev).
+- Paired against disagree at k=20: 3 vs 0 under x (p 0.25) and 4 vs 3 under m (p 1.0).
+
+So the owner sentence is false at the registered endpoint: 5 against a random median of 10 is not 'no better'.
+
+Two cautions the verifier left out:
+1. The PREREG applies the beats-random test only to eval pile x; the other settings only test whether the winner reverses. 'The same registered rule says lattice BEATS random' in those settings applies the rule outside its registered scope. The registered verdict is still 'does not beat random'.
+2. In the primary setting the lattice is at random level outside k=20-50. At k=10 it is 10 wrong, the random maximum (13 ties, 7 seeds better). At k=100 it is 4 against a random mean of 4.3 (beats 8, ties 2, loses 10). Its k=20 edge is one question (q16) hitting the same cluster-102 pile, after q15 broke 2 tiles through a T24-to-T45 pile in cluster 132. That is the same mechanism the verifier used to discount margin.
+
+Its per-tile edge (none x, k=20: 7 vs a minimum of 8) is real but one sign wide.
+- **partly**: RESULTS: lattice 'asked ten questions before a first fix ... both conventions' holds only under x; under m it fixed 3 in its first ten (15 to 12).
+  - Evidence: Literally right. Pile m lattice fixes at q1 (f178v_L13 pos 7), q3 (f178v_L15 pos 24) and q6 (f178v_L21 pos 21), giving 15 to 12. However, all three positions carry truth flag 'alignment-doubtful', so they are not showable under x. On unflagged signs the 'nothing in the first ten' statement holds. Margin fixes nothing before q12 in both conventions, as RESULTS says.
+- **agree**: Claim 2b: 'nor did the classifier-margin order' is overstated. It missed the bar by one sign everywhere, its first 11 questions fixed nothing, it is at random level per tile, and it beat 16-17 of 20 seeds under pile only through hitting the pile at q12.
+  - Evidence: - Margin vs the random minimum: 5 vs 4 (pile x), 10 vs 9 (pile m), 9 vs 8 (none x), 14 vs 13 (none m).
+- Against all 20 seeds at k=20: pile x beats 16, ties 3, loses 1; pile m 17/2/1.
+- Q12 is f178v_L19 pos 6 (cluster 102); under x it took 10 wrong to 5.
+- Per tile it is at random level: none x k=20 beats 11, ties 6, loses 3 (random range 8-10); none m 9/7/4 (range 13-15).
+- One thing the verifier did not mention: under pile x at k=100 margin (1 wrong) beats all 20 seeds. Under pile it is not simply random.
+
+'Overstated' is the right grade. In the primary setting margin and lattice score identically at k=20; they differ only per tile.
+- **partly**: Claim 3a: 'Check these first should list disagreements first' is overstated. The lead over the current doubt feed is 2-3 tiles and not separable from chance. The recommended 'disagreements then the rest of the doubt feed' order was never simulated. In the verifier's exploratory run that hybrid 'matches or beats both components from k=20 on'.
+  - Evidence: Confirmed:
+- Disagree is the registered winner. At k=20 it beats all 20 random seeds in all four non-cluster settings.
+- Paired against a_doubt: 2 vs 0 under x (p 0.5) and 4 vs 1 under m (p 0.375).
+- a_doubt reaches 2% first under pile x (q3 vs q7), and is ahead per tile at k=50/100 (none x 2/1 vs 5/3; none m 5/3 vs 8/5).
+- The tool's disagree order falls back to reading order, so the recommended order was not simulated.
+- I re-ran the hybrid and its figures match: pile x 5/2/2/0 (2% at q2), pile m 9/6/6/3 (2% at q14), none x 6/5/2/0, none m 11/9/5/2.
+
+The verifier's 'matches or beats both components from k=20 on' is false under pile m:
+- k=50 and k=100: hybrid 6 and 3 vs disagree 5 and 2.
+- To 2%: hybrid q14 vs disagree q10.
+
+What does hold (exploratory, unregistered): the hybrid is at or better than the current a_doubt feed everywhere except pile x at k=10 (5 vs 4).
+- **partly**: Claim 3b: 'spread only within its own pile' is overstated. The pile gain is mostly one five-tile pile. Pile propagation also breaks tiles: lattice broke 2 through a T24-to-T45 pile in cluster 132, and 'one random seed ended at 11'. All of it uses an oracle owner.
+  - Evidence: Confirmed, pile vs per tile at k=20 under x: disagree 2 vs 5, lattice 5 vs 7, margin 5 vs 9, a_doubt 4 vs 7. For random orders the mean barely moves (8.85 vs 9.4 under x; 13.75 vs 14.25 under m).
+
+Correction: two random seeds, not one, end at 11 (seeds 5 and 16).
+- Each first showed the one truly-T45 tile of the 3-tile T24 pile in cluster 132.
+- Each broke 2 correct tiles, even with a perfect oracle.
+- The pile is not truth-homogeneous, so a correct decision can still break tiles. That risk is independent of how good the owner is.
+
+'At most within the pile, never whole cluster' is supported. 'Spread within the pile' as a clear gain rests on cluster 102.
+- **agree**: Claim 3c: 'never spread across a whole shape cluster' holds for this atlas on this hand, but it restates X6 rather than adding new evidence.
+  - Evidence: Cluster runs reproduce byte for byte. At k=20 under x:
+- named orders: 35 (lattice) to 65 (b_size, which the verifier omitted from its 35-59 range)
+- random: 30 to 78, mean 45.9
+- base: 10
+
+Under m the named orders are 43-70 against a base of 15. C = L on all 402 eval signs, and the 140-cluster atlas is the same, so the result restates X6 (txeng2/sorter/RESULTS.md:37-42).
+- **agree**: Gate: the questions-to-3% clause was vacuous on the primary convention (x base 2.7%), and this was knowable at registration from X6's published eval x base of 10/371.
+  - Evidence: Every order and all 20 seeds have to_pct 0.03 = 0 in summary_eval_pile_x_lam1.json. X6 RESULTS.md:37 (committed 9 Oct) gives 'eval_heldout x | 10/371 0.027', and C = L there. The PREREG quoted only the whole-leaf C figure (0.038 x), which probably hid this. No verdict changes: lattice and margin fail on the k=20 clause, and disagree passes both.
+- **partly**: Held-out freshness: TXE-O had already measured the disagree flag's precision on these lines, and the PREREG's 'Nearest prior' omits it, so the eval figure re-expresses a known statistic.
+  - Evidence: TXE-O (benchmark-tx/txeng/doubt/measure_eval_heldout.md:8, f1d6eed84, 9 Oct) gives 'disagree | 6/15 | 0.400 | 20/376' on exactly these lines. 'Nearest prior' cites only X6; TXE-O appears in the PREREG only as an LM user under Material. That is a fair caveat: per tile, 5 of 10 errors in 19 tiles predicts the k=20 result. It is not a rule breach. Nothing was tuned on eval, the dev choice (lam 1, 7 vs 10) was committed at 06:00:50 before the eval scores, and TRANSCRIPTION's 'tune on dev, report on eval' was followed.
+- **partly**: Traceability: the ROOM done line cites commit fe169bdb, which is not on origin; the real one is 5192ca9d0. The verifier filed this as rule 7.
+  - Evidence: `git cat-file -t fe169bdb` gives 'Not a valid object name'. 5192ca9d0 (06:07:23 UTC) is the results commit. The fact is right, but rule 7 concerns regenerating readings, and the reading regenerates byte for byte. This is a ROOM-line accuracy nit, not a rule-7 failure.
+- **agree**: Undeclared narrowings: only the pile k-dumps were scored by tx_bench, and the random orders were never dumped.
+  - Evidence: score_dumps.py loops only `for mode in ('pile',)`, and eval/ holds only dump_pile_x_lam1 and dump_pile_m_lam1. The PREREG Endpoint says every k-dump is scored by tools/tx_bench.py. Sim.score calls tx_bench.position_errors, the same function, so the figures are unaffected. This is minor.
+- **agree**: Pre-registration order and cost/box.
+  - Evidence: Commit times:
+- f03c4f252 (PREREG): 05:54:48
+- 93b1b8bd3 (tool + test + Addition 1): 06:00:50, PREREG, test and tool only
+- 5192ca9d0 (results + LEDGER): 06:07:23
+
+The dev outputs were committed with the results, but the dev numbers were already written into Addition 1 at 06:00.
+
+LEDGER.md row 4251 gives 9.76 USD against the 15 USD cap; the work ran 05:47-06:07 against the 2 h box. No novelty words are used.
+
+### Final verdict on each claim told to the owner (11 Oct ~07:05 UTC)
+
+- **overstated**: 1. Showing the owner the reader-disagreement tiles first got no.87 under 2% error in 7 of his decisions; a random order needed about 53.
+  - Evidence: - 7 and 53 are the x figures; as measured they are 10 vs 100 (TRANSCRIPTION.md:36).
+- The scope is the eval lines only (371/376 of 803 signs).
+- The oracle stands in for the owner.
+- The x base is already 2.7%.
+- q7 alone fixed a five-tile T98-for-T18 pile (cluster 102), 8 wrong to 3.
+- Random's range is 1-165 (x) and 26 to never (m).
+  - Corrected: In a simulation on the held-out part of no.87 (about 375 of 803 signs), with the known answer playing you, showing reader-disagreement tiles first reached 2% error in 7 questions with flagged signs excluded and in 10 as measured. Random orders needed a median of about 53 and 100 (ranges 1-165 and 26 to never). Most of the gain was one question that fixed a five-tile T98-for-T18 pile.
+- **wrong**: 2a. The sorter's own 'most useful' (lattice) ranking did no better than random.
+  - Evidence: - At the registered endpoint (eval pile x, k=20) the lattice left 5 wrong against a random median of 10 and mean of 8.9, beating 16 of 20 seeds. It missed only the strict best-of-20 bar (4), by one sign.
+- It beat all 20 seeds at k=20 under pile m, none x, none m and dev.
+- In the primary setting it is at random level at k=10 (it fixed nothing in its first ten unflagged questions) and at k=100 (4 vs mean 4.3).
+- Its k=20 edge there is one pile hit at q16, after it broke 2 at q15.
+- It trails disagree by 3 tiles at k=20, p 0.25.
+  - Corrected: The lattice ranking missed the pre-set bar by one sign in the main setting: it beat most random orders at 20 questions but fixed nothing in its first ten. It trailed the disagreement order by 3 signs, which one leaf cannot separate from chance.
+- **overstated**: 2b. Nor did the classifier-margin order (do better than random).
+  - Evidence: - Per tile it is at random level: none x k=20 9 vs random 8-10; none m 14 vs 13-15.
+- Under pile it beat 16-17 of 20 seeds at k=20, through one pile hit at q12, and all 20 at k=100 under x.
+- Its first 11 questions fixed nothing in either convention.
+- It missed the bar by one sign in every setting.
+  - Corrected: The shape-margin order fixed nothing in its first eleven questions and, deciding tile by tile, did no better than random. With pile spreading it beat most random orders only because one question hit the five-tile T98/T18 pile.
+- **overstated**: 3a. 'Check these first' should list reader-disagreement tiles first.
+  - Evidence: - Disagree is the registered winner at k=20 in all four non-cluster settings, beating all 20 random seeds each time.
+- Its lead over the current doubt feed is 2 vs 0 tiles (x, p 0.5) and 4 vs 1 (m, p 0.375).
+- The current feed is ahead per tile at k=50-100 and reaches 2% sooner under pile x (3 vs 7).
+- The 'then the rest of the doubt feed' order was not tested by TXE3-1. An unregistered re-run of it on already-inspected lines is at or better than the current feed in every cell except pile x k=10, but not uniformly better than disagree alone (pile m k=50/100: 6/3 vs 5/2).
+  - Corrected: Putting reader-disagreement tiles at the top was the best of the registered orders for the first 20 questions on this one leaf, 2-3 signs ahead of the current doubt feed, within chance. Keeping the rest of the doubt feed after them is untested by TXE3-1, though an unregistered re-run suggests it is at least as good as today's feed.
+- **overstated**: 3b. A decision should spread only within its own pile.
+  - Evidence: - Pile beat per-tile for every informed order at k=20 (x: 2 vs 5, 5 vs 7, 5 vs 9, 4 vs 7), mostly through cluster 102.
+- For random orders the mean gain is about 0.5 sign.
+- Even with a perfect oracle, pile spreading broke 2 correct tiles: in the lattice order, and in two random seeds (5 and 16) via a mixed T24/T45 pile in cluster 132.
+- Real-owner wrong calls spreading across a pile are untested.
+  - Corrected: With the known answer playing you, spreading a decision within its pile helped, mostly through one five-tile pile. Even a correct decision broke 2 correct signs when a pile mixed two true signs, and spreading your real decisions is untested. 'At most the pile' is supported; 'always spread within the pile' is not.
+- **holds**: 3c. Never spread a decision across a whole shape cluster.
+  - Evidence: Cluster runs reproduce byte for byte. At k=20 every non-oracle order ends far worse than the base: x named orders 35-65 and random 30-78 vs 10; m 43-70 vs 15. This replicates X6 on the same atlas and the same base signs (C = L, 0 of 402 differ). It is not new evidence.
+  - Corrected: On no.87 with the current 140-cluster atlas, spreading a decision to a whole shape cluster made every order worse, as X6 had already found. Another atlas or hand needs its own check.
+
+### Sentence the parent may give the owner
+
+In a simulation on the held-out part of no.87 (about 375 of its 803 signs), with the known answer standing in for you, putting the tiles where our two readers disagreed first reached 2% error in 7 questions with flagged signs excluded and 10 as measured, against a median of about 53 and 100 for random orders (ranges 1-165 and 26 to never). Most of that was one question that fixed a five-tile T98-for-T18 pile, and it led the current doubt feed by only 2-3 signs at 20 questions. The lattice ranking missed the pre-set bar by one sign while still beating most random orders. Spreading a decision across a whole shape cluster made every order worse, as found before. None of this has yet been tried with your real decisions.
