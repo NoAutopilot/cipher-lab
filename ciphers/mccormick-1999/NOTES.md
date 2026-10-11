@@ -559,3 +559,42 @@ Read so far: unmeasured; no reading of either note is accepted, cheap tests 2-5 
 - [x] image-check: FT4b (3 Oct 2026) read note 2 line 10 against the image
 - [ ] retry: not assessed by D2-PRINT4; the next worker on this folder fills it
 Verdict: keep going: 0 internal gaps; cheapest next: assess the retry rung against NEAR.md's row, ~$0.3
+
+## NEAR-RUNGS: retry rung assessed (11 Oct 2026, 19:2x UTC by date -u; disk only, no test run)
+Worker NEAR-RUNGS (account 1, LANE DEFAULT-A1-1840). Assessment only, from this NOTES.md, HYPOTHESES.md, NEAR.md's row
+and CLAUDE.md rule 3 (third-attempt clause) and rule 5; no network, no new test, no model or image pass.
+- What the retry rung can mean here, family by family:
+  - masc and homophonic (cheap tests 2-3, HYPOTHESES.md rows of 25 Sept): one run each, controls 0.985-0.999 (homophonic
+    vowel-dropped 0.652, seed spread 0.058-0.992); the homophonic false-positive floor (3 target shuffles, -1.81 to -1.90)
+    sits in the same band as the target (-1.48 to -2.33), so the anneal cannot separate the target from its own shuffle.
+    A re-run of either family with more restarts cannot change that: the limit is the statistic, not the setting. No retry.
+  - token/nomenclator anneal (cheap test 4, `specs/cheap-tests/mccormick-1999/token_anneal.py`): one attempt, control
+    0.8% against gate 0.5 at the target's own 132 tokens (99 code types, 92 singletons) -- CONTROL BELOW GATE, a non-test.
+    Rule 3's third-attempt clause is not reached (one attempt, not three), so the instrument is not retired. NEAR.md's own
+    named next step includes the one retry this instrument still owes: a control length sweep (same token scheme, longer
+    synthetic streams) to find the length at which the anneal starts to read its own control. The script has no length
+    option yet (`--out`, `--iters`, `--restarts` only), so the step is: add `--n-tokens`, run the control at e.g. 132, 500,
+    2,000, 8,000 tokens x 3 seeds, no target run unless the control clears 0.5 at 132. Outcome either way is useful: a
+    curve that reads only far above 132 tokens turns this family's gap into `too-short` (an outside blocker), the target
+    stays untested by this family, never refuted.
+  - cheap test 5 (rating the Tsuchimoto and Sadak readings): a rating, not a family; nothing to retry.
+- Not the retry rung: the Gregg/abbreviation-lexicon code-word model (NEAR.md's other option) is a different instrument
+  needing a corpus not on disk (OPEN-mccormick-1999 step 2, 2 Oct); it belongs to key-rebuild and stays a campaign-scale
+  design (~USD 6, Opus), not a cheap retry.
+- Result: retry rung set to [ ] with the length-sweep step (about USD 2, Sonnet, script-only, no vision, no network);
+  status unchanged (open).
+
+## Remaining gaps (NEAR-RUNGS, 11 Oct 2026)
+Read so far: unmeasured; no reading of either note is accepted, cheap tests 2-5 rate the proposed ones
+- a reading of the two notes - blocker: no-key-material; cheap tests 2-5 above are the logged families, and the Cipher Mysteries thread (all 163 comments, D2-PRINT4) adds no key, crib or new ciphertext
+- the token/nomenclator family at the target's 132 tokens (cheap test 4 a non-test, control 0.8% vs gate 0.5) - blocker: not-attempted; one attempt only, rule 3's third-attempt clause not reached (NEAR-RUNGS above); next: control length sweep with token_anneal.py given an --n-tokens option, 3 seeds per length, ~$2
+
+## Escalation (NEAR-RUNGS, 11 Oct 2026)
+- [n/a] siblings: no other note by the same writer is known in public (Leads, Web and blog check)
+- [n/a] clear-pages: no clear text by the writer to align is public
+- [n/a] known-keys: no key of any kind is known for these notes
+- [x] print: Web and blog check (2 Oct) and the full Cipher Mysteries thread (D2-PRINT4); no accepted reading in print
+- [x] key-rebuild: cheap tests 2-4 (masc, homophonic, token/nomenclator) and cheap test 5 (rating the proposed readings) logged above; the Gregg/abbreviation code-word model is the further instrument (no corpus on disk, ~USD 6 Opus design, NEAR.md)
+- [x] image-check: FT4b (3 Oct 2026) read note 2 line 10 against the image
+- [ ] retry: the token/nomenclator anneal's control never read at 132 tokens (one attempt); retry as a control length sweep (NEAR-RUNGS above), masc/homophonic not retried (shuffle floor is the limit, not the setting)
+Verdict: keep going: 1 internal gaps; cheapest next: token_anneal.py control length sweep (132-8,000 tokens x 3 seeds, no target run unless the control reads at 132), ~$2

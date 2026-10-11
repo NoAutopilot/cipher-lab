@@ -3495,3 +3495,65 @@ Read so far: unmeasured; no reading of the cipher exists, the folder's families 
 - [ ] image-check: not assessed by D2-PRINT4; the next worker on this folder fills it
 - [ ] retry: not assessed by D2-PRINT4; the next worker on this folder fills it
 Verdict: keep going: 0 internal gaps; cheapest next: assess the clear-pages/key-rebuild rungs from HYPOTHESES.md and SALV-DIAG, ~$0.5
+
+## NEAR-RUNGS: escalation rungs assessed (11 Oct 2026, 19:2x UTC by date -u; disk only, no test run)
+Worker NEAR-RUNGS (account 1, LANE DEFAULT-A1-1840). Assessment only, from this NOTES.md, HYPOTHESES.md, NEAR.md's row,
+CLAUDE.md rule 3 (third-attempt clause) and rule 5; no network (Gallica answered 403 to the lane's probe at 18:5x UTC,
+so no image route was tried), no new test, no model or image pass.
+- clear-pages. Internal: the plain-Italian boxes are read on 7 of 8 leaves (SALV-PLAIN1-3: 1,048 of 1,050 positions,
+  f54r-f57r). **f57v's 172 plain boxes (20 lines) were never read**: SALV-PLAIN3 stopped before them on its 80% box line;
+  only `plain_crops/f57v/manifest.tsv` is committed, the crops and the two renders (`f57v_ref1600/2400.jpg`) were not
+  (folder-size rule), so the step starts with `./regen_images.sh` from Gallica. Priced from SALV-PLAIN3's own ledger
+  (f57r: two parallel passes ~22 min + reconciliation ~24 min for about a quarter of f57v's boxes; a subagent call costs
+  13-24 min regardless of size): f57v in two halves = 4 pass calls + 1 reconciliation, about USD 7 Sonnet, after Gallica
+  answers again. External: the Phillipps MS 7293 letter book (possible clear register copy) stays needs-physical-access
+  (Premise check (d)). Rung [ ].
+- known-keys. LANE R5 B (24 Sept 2026, eight sources: Cryptiana web, Bourdeau's 81 keys, the other solver diffs, Meister
+  1906, Carte Strozziane, Pieper 1894, OpenAlex, Semantic Scholar) found no Salviati 1525-26 or Clement VII/Giberti-office
+  key; the shape trial (`keytrial.tsv`: Raince 1526 9/36 generic matches, Gramont 1530 8/36, fr.20506 0) gives no Italian.
+  This session re-grepped KEY-OFFICES.tsv and KEY-DESIGN.tsv (11 Oct, disk) for clement/papal/salviati/giberti/nunci: the
+  only papal-context key is Nevers' 1593 Rome embassy (68 years later, French); fr2933's own keytrial row is excluded as a
+  trial. Nothing added since 24 Sept. Rung [x].
+- key-rebuild. Every design family on file has a control-backed result or was closed by rule 3's third-attempt clause:
+  code+mark trigram anneal (`control/codemark_curve.py`, three attempts on the corrected split: SALV2-J2 control below gate,
+  SALV-CM48 control 2 of 3 at 96 restarts vs target -2.627 to -2.643/symbol and judge FAIL, SALV-HAPAX design change
+  indistinguishable, -2.626 to -2.640) -- the NEAR row itself says "new material, not a third design tweak"; syllabary
+  (DSN2 V1-V3 control-backed negatives at the 6.4% measured error; DSN regular weaker negative; DSN irregular a non-test
+  at 6.4%, see retry); `tools/families/wordcode.py` (letter part a control-backed
+  negative; code class non-test; the context option logged untested-by-this-tool after SALV-CTX/SALV-CTX2, "the last
+  attempt with this instrument"). Every row is labelled "on the split before SALV-F56V" (7 tokens, 2 types different);
+  a cm rerun on that split would be a fourth pass of the same instrument on near-identical text, not licensed. No other
+  instrument is named on disk for this design (the MQS lock tool needs confirmed sign values, and there are none).
+  Rung [retired] (DSN irregular's one allowed retry is carried under the retry rung).
+- image-check. Done: passes A/B (14.6% raw disagreement), pass C on f54v/f55r/f56v/f57r (model estimate 6.4% per sign,
+  below the 8-9% crossover), SALV-SPLIT (137 [C] boxes, 98 confirmed against a control), SALV2-J1A/J1B, SALV-F56V. Left:
+  f.56r's 79 disputed boxes are one-reader settled (no pass C; line strips on disk in `strips/f56r_*.jpg`), so the 6.4% is a
+  model estimate, not a measurement. That third read would firm the error figure but cannot reopen key-rebuild (the cm
+  control already runs at CM_ERR 0.07, above the estimate) -- NEAR row: "not decisive ... stays optional". Rung [x], with
+  the f.56r pass C named as optional (~USD 3, one read + settle, strips on disk) should new material reopen a family.
+- retry. The cm anneal (three attempts above) and the wordcode context option (two, then closed) are retired. One family
+  stands at a single below-gate attempt at the measured error: DSN irregular (R8-DSN at 5% error: control 78.3/85.2% on 2
+  seeds, target FAIL; bSALI at 6.4%, 24 restarts: control 0.125/0.553/0.722, mean 0.467, CONTROL BELOW GATE, target not
+  run), both on the old split. SALV-CM48 showed the same shape for cm clear at 96 restarts, so a 96-restart control on the
+  current (SALV-F56V) split is the one retry rule 3 still allows (second attempt at 6.4%, not a third). `tools/family_run.py`
+  syllabary family, control first, target only if 2 of 3 seeds clear 0.6; about USD 3 Sonnet, script-only, about an hour
+  of CPU (bSALI's 24 restarts took about 15 min). Rung [ ].
+- Result: three gaps -- f57v's plain boxes and the DSN irregular retry (internal, not-attempted) and the Phillipps register
+  copy (needs-physical-access).
+  Status unchanged (open).
+
+## Remaining gaps (NEAR-RUNGS, 11 Oct 2026)
+Read so far: unmeasured; no reading of the cipher exists, the folder's families are logged as non-tests or control-backed negatives (HYPOTHESES.md, NEAR-RUNGS above)
+- the Phillipps MS 7293 letter book (BL RP 271/2/4, despatches 17 July 1525-15 May 1527), a possible clear register copy - blocker: needs-physical-access; the original was sold in 1968, holder not recorded, BL image service down since 2023 (Premise check (d))
+- f57v's 172 plain-Italian boxes (20 lines, the one leaf SALV-PLAIN3 did not reach) - blocker: not-attempted; crops not committed, regenerated from Gallica by regen_images.sh (Gallica 403 on 11 Oct 18:5x UTC); next: regenerate the f57v renders and crops, two blind passes in halves plus one reconciliation, ~$7
+- the DSN irregular syllabary at the measured error (bSALI control below gate at 24 restarts, old split) - blocker: not-attempted; second attempt allowed by rule 3 (NEAR-RUNGS retry above); next: family_run.py syllabary assign=irregular at 96 restarts, err 0.064, on the SALV-F56V split, control first, ~$3
+
+## Escalation (NEAR-RUNGS, 11 Oct 2026)
+- [x] siblings: Premise check (d), 3 Oct 2026: fr.3087 item 90 (3 Oct 1525, two cipher lines per Molini) and siblings.tsv; no decipherment
+- [ ] clear-pages: f57v's 172 plain boxes unread (SALV-PLAIN3 stopped before them); the Phillipps 7293 register copy is needs-physical-access
+- [x] known-keys: LANE R5 B (24 Sept, eight sources) and keytrial.tsv found no fitting key; KEY-OFFICES/KEY-DESIGN re-grepped 11 Oct, nothing added
+- [x] print: CSP Spain III/1 for Oct 1525 read (D2-PRINT4); Desjardins/Canestrini and Molini read earlier; context only
+- [retired] key-rebuild: code+mark anneal control/codemark_curve.py closed after three attempts (SALV2-J2, SALV-CM48, SALV-HAPAX); wordcode context option untested-by-this-tool (SALV-CTX2); DSN2 V1-V3 control-backed at 6.4%; reopened only by new material (DSN irregular's retry is under retry)
+- [x] image-check: passes A/B/C, SALV-SPLIT, SALV2-J1A/B and SALV-F56V; f.56r pass C optional (~$3, strips on disk), not decisive for any open family
+- [ ] retry: DSN irregular at 96 restarts on the SALV-F56V split, control first (bSALI's 24-restart control mean 0.467); the code+mark anneal and wordcode context option stay retired
+Verdict: keep going: 2 internal gaps; cheapest next: DSN irregular retry at 96 restarts on the current split, control first, ~$3
