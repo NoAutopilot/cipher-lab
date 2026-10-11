@@ -1,0 +1,449 @@
+diff --git a/tools/glyph_atlas.py b/tools/glyph_atlas.py
+index fa6fa053..865d993f 100644
+--- a/tools/glyph_atlas.py
++++ b/tools/glyph_atlas.py
+@@ -793,6 +793,10 @@ def cmd_crop(a):
+ 
+ 
+ def cmd_classify(a):
++    if getattr(a, "pair", None):
++        return cmd_classify_pair(a)
++    if not a.labels or not (a.page or getattr(a, "boxes", None)):
++        sys.exit("classify: --labels and --page (or --boxes) are required, unless --pair A B")
+     from sklearn.neighbors import NearestNeighbors
+     L = json.load(open(a.labels))
+     over = dict(L.get('override', {}))
+@@ -1144,6 +1148,277 @@ def cmd_match(a):
+         print(line)
+ 
+ 
++# ---------------------------------------------------------------- classify --pair A B (TXE3-10, 11 Oct 2026)
++# A one-pair discriminator on topology: loop (hole) presence and vertical position, skeleton endpoints and where they sit
++# against the loop, ink above/below the loop, a 4x4 ink grid, box geometry (rh rw dy). Pure numpy + PIL. PREREG
++# benchmark-tx/PREREG-txeng3-10.md; prior pair instruments tools/tx_pair_clf.py (X2 pixels+HOG on secure tiles, X2b on
++# dev lines). Pool labels come only from a known answer (dev truth, S-grade secure tokens) or a person's sort; the apply
++# step never reads a truth file. Test: tools/tests/test_glyph_atlas_pair.py.
++PAIR_TS = [round(0.1 * i, 1) for i in range(10)]
++PAIR_MIN_COVER, PAIR_MIN_ACC = 0.5, 0.95
++
++
++def zhang_suen(m):
++    """Thin a boolean mask to a 1-px skeleton (Zhang-Suen 1984)."""
++    im = np.pad(m.astype(np.uint8), 1)
++    while True:
++        changed = False
++        for step in (0, 1):
++            P = [im[1:-1, 1:-1]]
++            sh = [(-1, 0), (-1, 1), (0, 1), (1, 1), (1, 0), (1, -1), (0, -1), (-1, -1)]   # P2..P9 clockwise from N
++            for dy, dx in sh:
++                P.append(im[1 + dy:im.shape[0] - 1 + dy, 1 + dx:im.shape[1] - 1 + dx])
++            B = sum(P[1:])
++            A = sum(((P[i] == 0) & (P[i + 1 if i < 8 else 1] == 1)).astype(np.uint8) for i in range(1, 9))
++            c1 = P[2] * P[4] * P[6] if step == 0 else P[2] * P[4] * P[8]
++            c2 = P[4] * P[6] * P[8] if step == 0 else P[2] * P[6] * P[8]
++            kill = (P[0] == 1) & (B >= 2) & (B <= 6) & (A == 1) & (c1 == 0) & (c2 == 0)
++            if kill.any():
++                im[1:-1, 1:-1][kill] = 0
++                changed = True
++        if not changed:
++            return im[1:-1, 1:-1].astype(bool)
++
++
++def components(m):
++    """4-connected components of a boolean mask -> label array (0 = none), count."""
++    h, w = m.shape
++    lab = np.zeros((h, w), int)
++    n = 0
++    for y in range(h):
++        for x in range(w):
++            if m[y, x] and not lab[y, x]:
++                n += 1
++                st = [(y, x)]
++                lab[y, x] = n
++                while st:
++                    cy, cx = st.pop()
++                    for ny, nx in ((cy - 1, cx), (cy + 1, cx), (cy, cx - 1), (cy, cx + 1)):
++                        if 0 <= ny < h and 0 <= nx < w and m[ny, nx] and not lab[ny, nx]:
++                            lab[ny, nx] = n
++                            st.append((ny, nx))
++    return lab, n
++
++
++def topo_feats(bm, geo=(0.0, 0.0, 0.0), n=32):
++    """bm: 48x48 uint8 ink high; geo: (rh, rw, dy) from signs.tsv -> 1-D feature vector (29)."""
++    from PIL import Image
++    ys, xs = np.nonzero(bm > 64)
++    a = bm[ys.min():ys.max() + 1, xs.min():xs.max() + 1] if len(ys) else bm
++    s = np.asarray(Image.fromarray(((a > 64) * 255).astype(np.uint8)).resize((n, n), Image.BILINEAR), np.float32) / 255
++    M = s > 0.5
++    if not M.any():
++        M[n // 2, n // 2] = True
++    grid = s.reshape(4, n // 4, 4, n // 4).mean(axis=(1, 3)).ravel()
++    bg, nb = components(~M)
++    border = set(np.unique(np.concatenate([bg[0], bg[-1], bg[:, 0], bg[:, -1]]))) - {0}
++    holes = [k for k in range(1, nb + 1) if k not in border]
++    ink = M.sum()
++    if holes:
++        k = max(holes, key=lambda k: (bg == k).sum())
++        hy, hx = np.nonzero(bg == k)
++        n_h, cy, area, top, bot = len(holes), hy.mean() / n, len(hy) / (n * n), hy.min(), hy.max()
++    else:
++        n_h, cy, area, top, bot = 0, 0.5, 0.0, n // 2, n // 2
++    above, below = M[:top].sum() / ink, M[bot + 1:].sum() / ink
++    sk = zhang_suen(M)
++    pad = np.pad(sk.astype(int), 1)
++    nbrs = sum(pad[1 + dy:n + 1 + dy, 1 + dx:n + 1 + dx] for dy in (-1, 0, 1) for dx in (-1, 0, 1) if dy or dx)
++    ep = sk & (nbrs == 1)
++    jn = sk & (nbrs >= 3)
++    ey = np.nonzero(ep)[0]
++    return np.concatenate([grid, [n_h, cy, area, above, below, ep.sum(), jn.sum(), (ey < top).sum(), (ey > bot).sum(),
++                                  sk.sum() / ink], np.asarray(geo, np.float32)]).astype(np.float32)
++
++
++class PairLogit:
++    """L2 logistic regression, class-balanced, Newton steps; features standardised on the training set."""
++    def fit(self, X, y, lam=1.0, it=30):
++        self.mu, self.sd = X.mean(0), X.std(0) + 1e-6
++        Z = np.hstack([np.ones((len(X), 1)), (X - self.mu) / self.sd])
++        w = np.zeros(Z.shape[1])
++        cw = np.where(y == 1, len(y) / (2.0 * max(y.sum(), 1)), len(y) / (2.0 * max((1 - y).sum(), 1)))
++        R = lam * np.eye(Z.shape[1]); R[0, 0] = 0
++        for _ in range(it):
++            p = 1 / (1 + np.exp(-Z @ w))
++            g = Z.T @ (cw * (p - y)) + R @ w
++            H = (Z * (cw * p * (1 - p))[:, None]).T @ Z + R
++            step = np.linalg.solve(H + 1e-6 * np.eye(len(w)), g)
++            w -= step
++            if np.abs(step).max() < 1e-6:
++                break
++        self.w = w
++        return self
++
++    def p1(self, X):
++        Z = np.hstack([np.ones((len(X), 1)), (X - self.mu) / self.sd])
++        return 1 / (1 + np.exp(-Z @ self.w))
++
++
++def pair_lolo(X, y, g, lam):
++    """Leave-one-group-out held-out class-1 probability per tile (0.5 where the fold has one class)."""
++    ph = np.full(len(y), 0.5)
++    for h in sorted(set(g)):
++        tr = g != h
++        if len(set(y[tr])) == 2:
++            ph[~tr] = PairLogit().fit(X[tr], y[tr], lam).p1(X[~tr])
++    return ph
++
++
++def pair_threshold(ph, y):
++    """Smallest t with decided-tile accuracy >= PAIR_MIN_ACC at coverage >= PAIR_MIN_COVER; None -> disabled."""
++    conf, pred = np.abs(2 * ph - 1), (ph > 0.5).astype(int)
++    for t in PAIR_TS:
++        d = conf > t
++        if d.sum() >= PAIR_MIN_COVER * len(y) and (pred[d] == y[d]).mean() >= PAIR_MIN_ACC:
++            return t, float((pred[d] == y[d]).mean()), int(d.sum())
++    return None, float((pred == y).mean()), 0
++
++
++def _pair_truth_lines(path, lines):
++    """Pool step only: truth homophone sets for the named lines (scored, unflagged). Never called for an applied line."""
++    lines = set(lines)
++    out = {}
++    with open(path) as f:
++        rows = [l.rstrip('\n').split('\t') for l in f if not l.startswith('#')]
++    head = rows[0]
++    il, ip, it, ist = (head.index(c) for c in ('line', 'pos', 'truth', 'status'))
++    ifl = head.index('flag') if 'flag' in head else None
++    for r in rows[1:]:
++        if r[il] in lines and r[ist] == 'scored' and not (r[ifl] if ifl is not None and len(r) > ifl else ''):
++            out[(r[il], r[ip])] = set(r[it].split('|'))
++    return out
++
++
++def _pair_map(path, lines=None):
++    with open(path, newline='') as f:
++        r = csv.reader(f, delimiter='\t')
++        head = next(r)
++        ix = [head.index(c) for c in ('sid', 'line', 'pos', 'op')]          # named columns only: never 'truth'
++        return {(row[ix[1]], row[ix[2]]): row[ix[0]] for row in r
++                if row[ix[3]] == '1:1' and (lines is None or row[ix[1]] in lines)}
++
++
++def pair_pool(a, sig, idx, exclude_lines=()):
++    """-> list of (sid, label 0/1, group, source). Labels only from dev truth, S-grade secure tokens, a person's sort."""
++    A, B = a.pair
++    pool, seen = [], set()
++    if a.pool_dev:
++        L = [r for r in read(os.path.dirname(a.pool_dev), os.path.basename(a.pool_dev))]
++        lines = {r['line'] for r in L} - set(exclude_lines)
++        truth = _pair_truth_lines(a.truth, lines)
++        box = _pair_map(a.map, lines)
++        for r in L:
++            k = (r['line'], r['pos'])
++            if r['line'] not in lines or r['sign'] not in (A, B) or k not in box or k not in truth:
++                continue
++            ina, inb = A in truth[k], B in truth[k]
++            if ina != inb and box[k] in idx:
++                pool.append((box[k], int(inb), r['line'], 'dev')); seen.add(box[k])
++    if a.pool_secure:
++        for r in read(os.path.dirname(a.pool_secure), os.path.basename(a.pool_secure)):
++            if r['grade'] == 'S' and r['code'] in (A, B) and r['page'] not in a.exclude_pool_page and r['sid'] in idx \
++                    and r['sid'] not in seen:
++                pool.append((r['sid'], int(r['code'] == B), sig[idx[r['sid']]]['page'], 'sec')); seen.add(r['sid'])
++    if a.pool_owner:
++        om = {r['sid']: r for r in read(os.path.dirname(a.owner_map), os.path.basename(a.owner_map))}
++        for r in read(os.path.dirname(a.pool_owner), os.path.basename(a.pool_owner)):
++            m = om.get(r['sid'])
++            if r['new_sign'] in (A, B) and m and m['box'] and m['dup'] == '0' and float(m['dist_px']) <= 10 \
++                    and m['box'] in idx and m['box'] not in seen and sig[idx[m['box']]]['page'] not in a.exclude_pool_page:
++                pool.append((m['box'], int(r['new_sign'] == B), sig[idx[m['box']]]['page'], 'own')); seen.add(m['box'])
++    return pool
++
++
++def cmd_classify_pair(a):
++    A, B = a.pair
++    sig = read(a.out, 'signs.tsv')
++    idx = {r['sid']: i for i, r in enumerate(sig)}
++    bm = np.load(os.path.join(a.out, 'bitmaps.npz'))['signs']
++    fcache = {}
++
++    def fx(sid):
++        if sid not in fcache:
++            r = sig[idx[sid]]
++            fcache[sid] = topo_feats(bm[idx[sid]], (float(r['rh']), float(r['rw']), float(r['dy'])))
++        return fcache[sid]
++
++    Lu = read(os.path.dirname(a.apply_unit), os.path.basename(a.apply_unit)) if a.apply_unit else []
++    ulines = sorted({r['line'] for r in Lu})
++    if a.loo_lines:
++        if not a.pool_dev or os.path.abspath(a.apply_unit) != os.path.abspath(a.pool_dev):
++            sys.exit('--loo-lines: --apply-unit must be the --pool-dev file itself')
++        folds = [(i + 1, [h], [h]) for i, h in enumerate(ulines)]
++    else:
++        if a.pool_dev and Lu:
++            dl = {r['line'] for r in read(os.path.dirname(a.pool_dev), os.path.basename(a.pool_dev))}
++            if dl & set(ulines):
++                sys.exit('--apply-unit shares lines with --pool-dev: use --loo-lines or another unit')
++        folds = [(0, ulines, [])]
++    box = _pair_map(a.map, set(ulines)) if Lu else {}
++    rep, out, touched = [], [], []
++    for fold, alines, excl in folds:
++        pool = pair_pool(a, sig, idx, excl)
++        y = np.array([p[1] for p in pool], int)
++        g = np.array([p[2] for p in pool])
++        rng = np.random.default_rng(a.seed * 1000 + fold) if a.seed else None
++        if rng is not None and len(y):
++            y = rng.permutation(y)
++        X = np.stack([fx(p[0]) for p in pool]) if pool else np.zeros((0, 29))
++        row = dict(fold=fold, pool_a=int((y == 0).sum()), pool_b=int((y == 1).sum()), groups=len(set(g)), lolo_acc='',
++                   t='', decided='', chance='', shuffled='', enabled=0)
++        model, t = None, None
++        if row['pool_a'] >= 3 and row['pool_b'] >= 3 and row['groups'] >= 2:
++            ph = pair_lolo(X, y, g, a.lam)
++            t, acc, nd = pair_threshold(ph, y)
++            if a.force_t is not None:
++                t, nd = a.force_t, int((np.abs(2 * ph - 1) > a.force_t).sum())
++            row.update(lolo_acc=f'{((ph > 0.5).astype(int) == y).mean():.3f}', chance=f'{max(y.mean(), 1 - y.mean()):.3f}',
++                       t='' if t is None else t, decided=nd, enabled=int(t is not None))
++            if a.shuffle_lolo and fold == folds[0][0]:
++                accs = []
++                for s in range(1, a.shuffle_lolo + 1):
++                    ys = np.random.default_rng(10 ** 6 + s).permutation(y)
++                    accs.append(((pair_lolo(X, ys, g, a.lam) > 0.5).astype(int) == ys).mean())
++                row['shuffled'] = ' '.join(f'{v:.3f}' for v in accs)
++            if t is not None:
++                model = PairLogit().fit(X, y, a.lam)
++        rep.append(row)
++        for r in Lu:
++            if r['line'] not in alines:
++                continue
++            s = sign = r['sign']
++            sid = box.get((r['line'], r['pos']))
++            if model is not None and s in (A, B) and sid in idx:
++                pb = float(model.p1(fx(sid)[None])[0])
++                pp = pb if s == A else 1 - pb
++                m = 2 * pp - 1
++                if m > t:
++                    sign = B if s == A else A
++                touched.append(dict(line=r['line'], pos=r['pos'], sid=sid, L=s, m=f'{m:.3f}', t=t, out=sign))
++            out.append(dict(line=r['line'], pos=r['pos'], sign=sign))
++    cols = ['fold', 'pool_a', 'pool_b', 'groups', 'lolo_acc', 't', 'decided', 'chance', 'enabled', 'shuffled']
++    print(f'--pair {A} {B}: ' + (f'labels permuted seed {a.seed}; ' if a.seed else '') + '\t'.join(cols))
++    for r in rep:
++        print('\t'.join(str(r[c]) for c in cols))
++    if a.report:
++        with open(a.report, 'w') as f:
++            f.write('\t'.join(cols) + '\n' + ''.join('\t'.join(str(r[c]) for c in cols) + '\n' for r in rep))
++    if Lu:
++        order = {(r['line'], r['pos']): i for i, r in enumerate(Lu)}
++        out.sort(key=lambda r: order[(r['line'], r['pos'])])
++        with open(a.tsv, 'w') as f:
++            f.write('line\tpos\tsign\n' + ''.join(f"{r['line']}\t{r['pos']}\t{r['sign']}\n" for r in out))
++        ch = sum(1 for o, r in zip(out, Lu) if o['sign'] != r['sign'])
++        print(f'applied {os.path.basename(a.apply_unit)}: positions {len(out)}, considered {len(touched)}, changed {ch} -> {a.tsv}')
++        if a.touched:
++            with open(a.touched, 'w') as f:
++                tc = ['line', 'pos', 'sid', 'L', 'm', 't', 'out']
++                f.write('\t'.join(tc) + '\n' + ''.join('\t'.join(str(r[c]) for c in tc) + '\n' for r in touched))
++    return 0
++
++
++
+ def main(argv=None):
+     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+     sp = ap.add_subparsers(dest='cmd', required=True)
+@@ -1200,8 +1475,8 @@ def main(argv=None):
+     t.add_argument('--prefer', action='append', help='take exemplars from this page first (a native-resolution page)')
+     k = sp.add_parser('classify')
+     k.add_argument('--out', required=True)
+-    k.add_argument('--labels', required=True)
+-    k.add_argument('--page', help="the page whose boxes are classified, or 'all' (or give --boxes)")
++    k.add_argument('--labels', help='labels.json (not needed with --pair)')
++    k.add_argument('--page', help="the page whose boxes are classified, or 'all' (or give --boxes; not needed with --pair)")
+     k.add_argument('--boxes', help='TXE3-5: classify these boxes (TSV box_id, crop|image|page, x, y, w, h [, line, '
+                    'order|pos, kind]) re-cut from their own image, instead of atlas rows; see the docstring')
+     k.add_argument('--boxes-median-h', type=float, help='--boxes: median sign height (px) for the size features '
+@@ -1232,6 +1507,27 @@ def main(argv=None):
+     k.add_argument('--jitter-seed', type=int, default=1, help='--jitter: RNG seed (1)')
+     k.add_argument('--jitter-rel', type=float, default=0.78, help="--jitter: binarisation rel, as segment's --rel (0.78)")
+     k.add_argument('--max-w', type=int, default=1800, help='cut a line strip into parts under this width (px)')
++    k.add_argument('--pair', nargs=2, metavar=('A', 'B'), help='TXE3-10: one look-alike pair discriminator on topology '
++                   'features (loop position, stroke endpoints, ink grid, box geometry); pool = --pool-dev + --pool-secure + '
++                   '--pool-owner tiles; applied at --apply-unit positions whose sign is A or B; writes --tsv (line pos sign)')
++    k.add_argument('--pool-dev', help="--pair: a units label file (labels_<unit>.tsv) whose positions are labelled by the "
++                   "truth file's homophone set (dev lines only; the truth is read for those lines and never for --apply-unit)")
++    k.add_argument('--pool-secure', help='--pair: secure_tokens.tsv (sid code page grade), grade S, pages not in --exclude-pool-page')
++    k.add_argument('--pool-owner', help="--pair: settled_labels.tsv (sid old_sign new_sign status), a person's sort")
++    k.add_argument('--owner-map', help='--pair: owner_map.tsv (sid atlas_page box dist_px dup) mapping --pool-owner sids to atlas boxes')
++    k.add_argument('--exclude-pool-page', action='append', default=[], help='--pair: atlas page never in the pool (the eval leaves)')
++    k.add_argument('--map', help='--pair: box<->position map (sid fol line pos sign op; the truth column is never read)')
++    k.add_argument('--truth', help='--pair: truth TSV (line pos ref_sign truth plain status flag), read for --pool-dev lines only')
++    k.add_argument('--apply-unit', help='--pair: units label file (line pos sign) to apply to; output --tsv has every position')
++    k.add_argument('--loo-lines', action='store_true', help='--pair: --apply-unit is the --pool-dev file itself; each line is '
++                   'predicted by a pool that excludes that line (its truth never trains the model voting on it)')
++    k.add_argument('--seed', type=int, default=0, help='--pair: > 0 permutes the pool labels (shuffled-label control)')
++    k.add_argument('--shuffle-lolo', type=int, default=0, help='--pair: also report LOGO accuracy for N label permutations')
++    k.add_argument('--lam', type=float, default=1.0, help='--pair: L2 strength of the logistic model (1.0)')
++    k.add_argument('--force-t', type=float, help='--pair: ignore the LOGO threshold rule and apply at this margin (a '
++                   'declared secondary control: lets a shuffled-label model flip at argmax so its fixed/broken can vary)')
++    k.add_argument('--touched', help='--pair: TSV of the positions considered (line pos sid L m t out)')
++    k.add_argument('--report', help='--pair: TSV report (fold pool_a pool_b groups lolo_acc t decided chance shuffled)')
+     m = sp.add_parser('match')
+     m.add_argument('--out', required=True, help='the atlas directory (signs.tsv, bitmaps.npz)')
+     m.add_argument('--page', action='append', help='NAME=IMAGE[@x0,y0,x1,y1]: a candidate leaf, segmented fresh')
+diff --git a/tools/tests/test_glyph_atlas_pair.py b/tools/tests/test_glyph_atlas_pair.py
+new file mode 100644
+index 00000000..d08cbe13
+--- /dev/null
++++ b/tools/tests/test_glyph_atlas_pair.py
+@@ -0,0 +1,111 @@
++#!/usr/bin/env python3
++"""Offline test for tools/glyph_atlas.py classify --pair A B (TXE3-10, 11 Oct 2026). Synthetic 48x48 tiles of two
++look-alike shapes: A = a loop ON TOP of a stem (the Birago T18 'd' shape), B = a loop in the MIDDLE of a stem that
++passes through it (T98 's'); jittered position, radius and stroke. Must catch: pool from secure tokens + a person's sort
++gives leave-one-group-out accuracy >= 0.9 and an enabled threshold; applied to a unit whose labels carry 3 planted
++swaps, it fixes all 3 and breaks none of the 9 correct positions; a position without a 1:1 box keeps its label. Must
++not block / must not pass: the shuffled-label control (--seed 1) reaches no better LOGO accuracy than chance + 0.15
++on this separable set, and an apply unit sharing lines with --pool-dev is refused without --loo-lines. The truth file
++is written with a 'truth' column only for the dev lines, so a read of an applied line's truth would fail loudly."""
++import csv, os, subprocess, sys, tempfile
++import numpy as np
++from PIL import Image, ImageDraw
++
++HERE = os.path.dirname(os.path.abspath(__file__))
++TOOL = os.path.join(HERE, '..', 'glyph_atlas.py')
++
++
++def tile(kind, rng):
++    im = Image.new('L', (48, 48), 0)
++    d = ImageDraw.Draw(im)
++    cx = 24 + int(rng.integers(-3, 4)); r = 7 + int(rng.integers(-1, 2)); t = int(rng.integers(2, 5))
++    if kind == 'A':
++        cy = 11 + int(rng.integers(-2, 3))
++        d.ellipse((cx - r, cy - r, cx + r, cy + r), outline=255, width=t)
++        d.line((cx + r - 1, cy, cx + r - 1, 45), fill=255, width=t)
++    else:
++        cy = 24 + int(rng.integers(-2, 3))
++        d.ellipse((cx - r, cy - r, cx + r, cy + r), outline=255, width=t)
++        d.line((cx, 3, cx, 45), fill=255, width=t)
++    return np.asarray(im, np.uint8)
++
++
++def main():
++    d = tempfile.mkdtemp()
++    rng = np.random.default_rng(7)
++    sids, bms, rows, sec, own, omap = [], [], [], [], [], []
++    pages = ['p1', 'p2', 'p3', 'p4']
++    n = 0
++    for pg in pages:
++        for k in range(16):
++            kind = 'AB'[k % 2]
++            sid = f'{pg}_01_{n:03d}'; n += 1
++            sids.append(sid); bms.append(tile(kind, rng))
++            rh = (1.3 if kind == 'A' else 1.8) + rng.normal(0, 0.1); dy = (0.3 if kind == 'A' else 0.0) + rng.normal(0, 0.1)
++            rows.append([sid, pg, '1', str(k), '0', '0', '30', '40', f'{rh:.3f}', '0.7', f'{dy:.3f}', ''])
++            code = 'TA' if kind == 'A' else 'TB'
++            if pg in ('p1', 'p2'):
++                sec.append([sid, code, pg, 'S', 'L01', str(k)])
++            elif pg == 'p3':
++                own.append([f'o_{sid}', code, code, 'kept']); omap.append([f'o_{sid}', pg, sid, '0', '0'])
++    with open(os.path.join(d, 'signs.tsv'), 'w') as f:
++        f.write('sid\tpage\tline\tpos\tx\ty\tw\th\trh\trw\tdy\tmarks\n' + ''.join('\t'.join(r) + '\n' for r in rows))
++    np.savez(os.path.join(d, 'bitmaps.npz'), signs=np.stack(bms), marks=np.zeros((1, 48, 48), np.uint8))
++    with open(os.path.join(d, 'secure_tokens.tsv'), 'w') as f:
++        f.write('sid\tcode\tpage\tgrade\tpassage\tpos\n' + ''.join('\t'.join(r) + '\n' for r in sec))
++    with open(os.path.join(d, 'settled.tsv'), 'w') as f:
++        f.write('sid\told_sign\tnew_sign\tstatus\n' + ''.join('\t'.join(r) + '\n' for r in own))
++    with open(os.path.join(d, 'owner_map.tsv'), 'w') as f:
++        f.write('sid\tatlas_page\tbox\tdist_px\tdup\n' + ''.join('\t'.join(r) + '\n' for r in omap))
++    # apply unit = page p4 (16 tiles; 12 with a 1:1 box, 4 without), 3 planted swaps among the boxed ones
++    p4 = [r for r in rows if r[1] == 'p4']
++    lab, mp, want = [], [], {}
++    for i, r in enumerate(p4):
++        true = 'TA' if int(r[3]) % 2 == 0 else 'TB'
++        L = true
++        if i in (1, 4, 6):
++            L = 'TB' if true == 'TA' else 'TA'
++        line, pos = 'p4_L01', str(i + 1)
++        lab.append([line, pos, L]); want[(line, pos)] = (true if i < 12 else L)
++        mp.append([r[0], 'p4', line, pos, '1:1' if i < 12 else '2:1'])
++    with open(os.path.join(d, 'labels_u.tsv'), 'w') as f:
++        f.write('line\tpos\tsign\n' + ''.join('\t'.join(r) + '\n' for r in lab))
++    with open(os.path.join(d, 'map.tsv'), 'w') as f:
++        f.write('sid\tfol\tline\tpos\top\n' + ''.join('\t'.join(r) + '\n' for r in mp))
++    base = [sys.executable, TOOL, 'classify', '--pair', 'TA', 'TB', '--out', d, '--pool-secure',
++            os.path.join(d, 'secure_tokens.tsv'), '--pool-owner', os.path.join(d, 'settled.tsv'), '--owner-map',
++            os.path.join(d, 'owner_map.tsv'), '--map', os.path.join(d, 'map.tsv'), '--apply-unit',
++            os.path.join(d, 'labels_u.tsv'), '--tsv', os.path.join(d, 'out.tsv'), '--report', os.path.join(d, 'rep.tsv')]
++    r = subprocess.run(base, capture_output=True, text=True)
++    assert r.returncode == 0, r.stderr
++    rep = list(csv.DictReader(open(os.path.join(d, 'rep.tsv')), delimiter='\t'))[0]
++    assert rep['pool_a'] == '24' and rep['pool_b'] == '24' and rep['groups'] == '3', rep
++    assert float(rep['lolo_acc']) >= 0.9 and rep['enabled'] == '1', rep
++    out = {(x['line'], x['pos']): x['sign'] for x in csv.DictReader(open(os.path.join(d, 'out.tsv')), delimiter='\t')}
++    assert len(out) == 16
++    fixed = sum(out[k] == want[k] and L != want[k] for (k, L) in ((tuple(x[:2]), x[2]) for x in lab))
++    broken = sum(out[k] != want[k] and L == want[k] for (k, L) in ((tuple(x[:2]), x[2]) for x in lab))
++    assert fixed == 3 and broken == 0, (fixed, broken, out)
++    assert all(out[(l, p)] == L for l, p, L in lab[12:]), 'a position without a 1:1 box must keep its label'
++    # shuffled-label control: permuted labels on a separable set give near-chance LOGO accuracy
++    r = subprocess.run(base + ['--seed', '1', '--tsv', os.path.join(d, 'ctrl.tsv'), '--report', os.path.join(d, 'rc.tsv')],
++                       capture_output=True, text=True)
++    assert r.returncode == 0, r.stderr
++    rc = list(csv.DictReader(open(os.path.join(d, 'rc.tsv')), delimiter='\t'))[0]
++    assert float(rc['lolo_acc']) <= float(rc['chance']) + 0.15, rc
++    # --force-t 0: the shuffled model applies at argmax, so its flips can differ from the real model's (rule 3 can-vary)
++    r = subprocess.run(base + ['--seed', '1', '--force-t', '0', '--tsv', os.path.join(d, 'cf.tsv'), '--report',
++                       os.path.join(d, 'rf.tsv')], capture_output=True, text=True)
++    assert r.returncode == 0 and 'considered 12' in r.stdout, (r.stdout, r.stderr)
++    # refusal: an apply unit that shares lines with --pool-dev needs --loo-lines (truth never read for an applied line)
++    with open(os.path.join(d, 'truth.tsv'), 'w') as f:
++        f.write('line\tpos\tref_sign\ttruth\tplain\tstatus\tflag\n')
++    r = subprocess.run(base + ['--pool-dev', os.path.join(d, 'labels_u.tsv'), '--truth', os.path.join(d, 'truth.tsv')],
++                       capture_output=True, text=True)
++    assert r.returncode != 0 and 'loo-lines' in r.stderr + r.stdout, (r.stdout, r.stderr)
++    print('test_glyph_atlas_pair: ok (LOGO acc %s, t %s; fixed 3 broken 0; shuffled %s vs chance %s)'
++          % (rep['lolo_acc'], rep['t'], rc['lolo_acc'], rc['chance']))
++
++
++if __name__ == '__main__':
++    main()
