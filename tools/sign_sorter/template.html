@@ -420,7 +420,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 </div>
 <script>
 const DATA = __DATA__;
-const OPTS = __OPTS__;   // page options baked at build time (tools/sign_sorter.py / tools/sorter_rerender.py): focusToTray
+const OPTS = __OPTS__;   // page options baked at build time (tools/sign_sorter.py / tools/sorter_rerender.py): focusToTray; key ('box': the box-check key)
 const basePiles = DATA.piles;
 const itemBySid = {}, homeOf = {};
 basePiles.forEach(p => p.items.forEach(it => { itemBySid[it.sid] = it; homeOf[it.sid] = p.id; it.fam = p.family; }));
