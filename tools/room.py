@@ -3,7 +3,8 @@
 
 Usage:
   tools/room.py "role: target" "signal text"        append a timestamped line, commit, rebase, push (retries)
-  tools/room.py --start                             worker start: fetch, checkout -B main origin/main, sanity check
+  tools/room.py --start                             worker start: fetch, checkout -B main origin/main (detached if main is
+                                                    checked out in another worktree), sanity check
                                                     (self-heals a stub ROOM.md from git history, see heal_stub_content())
   tools/room.py --push [paths...]                   commit the named paths (already staged or listed) and push with the
                                                     same rebase-and-retry loop, keeping both sides of a ROOM.md conflict
@@ -108,6 +109,30 @@ def heal_stub_content(root=ROOT, ref="origin/main", min_candidate_lines=STUB_LIN
                 appended += 1
     return "\n".join(healed) + "\n", candidate, len(candidate_lines), appended
 
+def main_elsewhere():
+    """True when branch `main` is checked out in a worktree other than this one (WT-MAIN, 11 Oct 2026). `git checkout
+    -B main` here would then move that worktree's branch under its index and working tree: its next commit, built on the
+    moved HEAD from the stale index, silently reverts every change in between (seen 10-11 Oct 2026: a scratch worktree's
+    --push moved the main checkout's main by 169 files). In that case this worktree stays on a detached HEAD instead."""
+    here = os.path.realpath(ROOT)
+    r = sh("git", "worktree", "list", "--porcelain")
+    path = None
+    for line in r.stdout.splitlines():
+        if line.startswith("worktree "):
+            path = os.path.realpath(line[len("worktree "):])
+        elif line == "branch refs/heads/main" and path and path != here:
+            return True
+    return False
+
+def on_main_here():
+    return sh("git", "symbolic-ref", "-q", "HEAD").stdout.strip() == "refs/heads/main"
+
+def to_main(ref):
+    """Put this worktree at ref: on branch main when no other worktree has main, else detached (main_elsewhere)."""
+    if main_elsewhere():
+        return sh("git", "checkout", "-q", "--detach", ref)
+    return sh("git", "checkout", "-q", "-B", "main", ref)
+
 def start():
     sh("git", "fetch", "-q", "origin", "main")
     r = sh("git", "status", "--porcelain")
@@ -119,7 +144,7 @@ def start():
         branch = f"preserve/{stamp}-unpushed-local-history"
         sh("git", "branch", branch, "HEAD")
         print(f"local HEAD had commits not on origin/main; saved to {branch} before resetting. Push it or ask.")
-    sh("git", "checkout", "-q", "-B", "main", "origin/main")
+    to_main("origin/main")
     n = sum(1 for _ in open(ROOM, encoding="utf-8"))
     if n < STUB_LINES:
         print(f"ROOM.md has only {n} lines on origin/main; that is a stub, not the room. "
@@ -141,7 +166,7 @@ def start():
                 break
             print(f"self-heal: push attempt {attempt + 1} failed (code {rc}); re-fetching and retrying")
             sh("git", "fetch", "-q", "origin", "main")
-            sh("git", "checkout", "-q", "-B", "main", "origin/main")
+            to_main("origin/main")
         if not healed_ok:
             print("self-heal could not recover ROOM.md safely (no usable candidate, or the push conflicted "
                   "twice); stop and flag it.")
@@ -349,6 +374,8 @@ def push(message, paths):
     # not only STATUS.md/QUEUE.md's headings.
     shrink_paths = [p if os.path.isabs(p) else os.path.join(ROOT, p) for p in (paths or []) if not p.startswith("-")]
     shrink_watched = {p: line_count_from_ref("origin/main", os.path.relpath(p, ROOT)) for p in shrink_paths}
+    if on_main_here() and main_elsewhere():   # WT-MAIN: a commit here would move the other worktree's main too
+        sh("git", "checkout", "-q", "--detach")
     c = sh("git", "commit", "-q", "-m", message)
     if c.returncode: sys.stderr.write(c.stderr); return 1
     for i in range(5):
@@ -385,7 +412,8 @@ def push(message, paths):
         p = sh("git", "push", "-q", "-u", "origin", "HEAD:main")
         if p.returncode == 0:
             print("pushed " + sh("git", "rev-parse", "--short", "HEAD").stdout.strip())
-            sh("git", "checkout", "-B", "main", "HEAD")
+            if not main_elsewhere():
+                sh("git", "checkout", "-q", "-B", "main", "HEAD")
             return 0
         time.sleep(3 + 2 * i)
     print("push failed five times"); return 6
