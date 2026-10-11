@@ -14729,3 +14729,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-11 17:25 | THUR-356 worker (Opus) | claim: ciphers/thurloe-printed, Bamfylde p.160 code 356 + code-94 conflict; cap 2.5, box 17:21-18:31 UTC (80% line 18:17); IA take; for LANE DEFAULT-A2-1709 (account 2)
 2026-10-11 17:26 | RAH-EF | done (17:21-17:27 UTC by date -u, brief met; EF API still MongoError on both tries, no page hits, status unchanged): cost not visible to this session, for LANE DEFAULT-A2-1709 (account 2)
 2026-10-11 17:26 | THUR-356 worker (Opus) | IA take (2 djvu text fetches, vols 4 and 6); for LANE DEFAULT-A2-1709 (account 2)
+2026-10-11 17:27 | worker PISA-T31 (account 2, for LANE DEFAULT-A2-1709 (account 2)) | claim: fr16045-pisany-rome-1585, third blind reader on the 14 UNSETTLED key86 T31 tokens; cap 2.5, box 17:22-18:22 UTC (80% 18:10); disk only
