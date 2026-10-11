@@ -16143,6 +16143,43 @@
       "depth_sentence": "On 16 Feb 1865 Lynch at Norfolk told Radford he had no torpedoes on hand and had telegraphed the Bureau of Ordnance for 20 submarine torpedoes, to be forwarded on receipt.",
       "depth_check": "code: Farmer = Norfolk, Plaster = 5, Quincy = Division, Polka(ing) = Commanding, wrangled = telegraphed, Harrow = 20, Squadron = Marine (Sub-marine), Polkaer = Commander, Youth = Signature; external (non-statistical): ORN I/12, Radford, New Ironsides, 14 Feb 1865, requisition for 20 torpedoes 'that will stand immersion'; holder clear copy 7768 of Lynch's same-day telegram to Wise (E557), 'Sub marine Torpedoes'; the reader's meaning-shuffled key reads 5, Division, 20 as Rail Road, Winchester, B. F. Kelly",
       "depth_note": "FV-L17b, kept by AUD2-LEDGER17-2 (D3, nothing unread); see AUDIT 2 (AUD2-LEDGER17-2) s.4"
+    },
+    {
+      "date": "11 Oct 2026",
+      "kind": "reading",
+      "claim_scope": "fragments",
+      "title": "Thurloe State Papers (Birch 1742 vol. 6 p.160): Col. Bamfylde's Paris intelligence letter of 7/17 April 1657, short cipher run printed without decipherment, fragments read with a table rebuilt from Birch's printed Bamfylde decipherments",
+      "grade": "N3",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "key": "period",
+      "line": "Birch prints Col. Bamfylde's Paris letter of 7/17 April 1657 with a short cipher run and no decipherment; under a letter table rebuilt from Birch's printed decipherments of Bamfylde's earlier letters (the cipher system Tomokiyo has published), fragments read: 937 = Mazarin, 's a u o [y]' and 'p e n t i o n e [o n e] r'; one name code (356) and the first letter run remain unread. No prior decipherment of this run located (searched 11 Oct 2026; one audit).",
+      "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md",
+      "document_id": "Birch 1742, Thurloe State Papers vol. 6 p.160 (IA bim_ vol 6 leaf n163, djvu l.19092)",
+      "documents": [
+        "Birch 1742, Thurloe State Papers vol. 6 p.160 (Col. Bamfylde, Paris, 7/17 April 1657)"
+      ],
+      "phrases": [
+        "Birch 1742 vol 6 p.160, l.19092, Bamfylde"
+      ],
+      "completeness": "27 cipher tokens: letter codes C 22, M 2 (30, 94), U 0 of 24; word/name codes 937 C (Mazarin), 745 M (secret), 356 U; all tokens C 23, M 3, U 1 (bamf/decode_bamf.py --check exit 0)",
+      "unresolved_spans": "356 unread; 94 = y (print, vol 5 p.512) conflicts with Tomokiyo 94 = t; 'pentioneoner' reads 'pentioner' only by deleting a repeated 'one' (I); 'aryEsto' unread as a word",
+      "audit_refs": [
+        "AUDIT.md '## AUDIT (V-BAMF, Birch vol 6 p.160 l.19092, Bamfylde run)'"
+      ],
+      "audit_status": "one audit",
+      "superseded_by": "",
+      "fields_source": "thurloe-printed/AUDIT.md '## AUDIT (V-BAMF, Birch vol 6 p.160 l.19092, Bamfylde run)' section 4",
+      "reading_version": "V-BAMF 11 Oct 2026 (code 30 C -> M; bamf/decode_bamf.py --check exit 0)",
+      "depth": "D1",
+      "depth_pct": 85.2,
+      "decode_status": "Non-decrypted",
+      "depth_unread": {
+        "names_codes": "1",
+        "other": "0"
+      },
+      "depth_sentence": "",
+      "depth_check": "V-BAMF 11 Oct 2026: no letter stretch reads without a liberty (dittography repair, conflicted 94), 24 letter positions far below the authentication distance; 937 reads in one context only; D1 'fragments read'"
     }
   ],
   "lanes": [

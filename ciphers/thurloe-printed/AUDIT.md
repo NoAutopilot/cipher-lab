@@ -1542,3 +1542,83 @@ only AUDIT.md, JSTOR-QUEUE.tsv and prior-work.tsv). Open: Nedermeyer's Bijdragen
 or the KB's physical copy) would raise p.340's N0 evidence from "cited" to "seen" and give the letter its own known-answer check; status.json: the
 results register carries claimed readings (the l.44535 row is N3); these three items are N0/N1/N2 with a published key, so no results row is added
 here -- the lane orchestrator decides whether a `key: published, text: known` row is wanted.
+
+## AUDIT (V-BAMF, Birch vol 6 p.160 l.19092, Bamfylde run)
+
+First verifier V-BAMF (account 2, for LANE DEFAULT-A2-0509; 11 Oct 2026, 06:36-07:0x UTC by date -u), a session separate from the
+solvers THUR-BAMF and THUR-BAMF2. Brief: `.claude/briefs/runs/2026-10-11-ytbiz-default-0509-jobs.md` "### V-BAMF".
+**Claim under audit:** "the unglossed Bamfylde run of vol 6 p.160 decodes under a print-gloss table gated PASS with control:
+`[937=Mazarin] | [745=SECRET] a r y e s t o | [356] s a u o Y | p e n t i o n e o n e r`, letter codes C 23, M 1, U 0 of 24;
+fragments only" (NOTES "## THUR-BAMF", "## THUR-BAMF2").
+
+**1. The item.** "A letter of intelligence from Col. Bamfylde", Paris, April 7/17 1657 (date line p.161), to Thurloe; Birch,
+*A Collection of the State Papers of John Thurloe* (1742) vol. 6 p.160 (IA `bim_eighteenth-century_a-collection-of-the-stat_thurloe-
+john_1742_6` leaf n163, djvu l.19092). Ciphertext, re-read by me on `bamf/crops/p160u_L01.jpg` and `p160t_L01.jpg`: "There is
+advertisement come to 937, I beleive from out of the 745 12 36 39 30 20 37 8, the 356 20 17 72 35 94, who is his 62 22 43 37 42 61
+43 27 61 43 27 36, that the pope has sollicited him by some of the clergye ... to enter into a leage with the princes of Ittally" --
+identical to `bamf/ct_p160.txt`. 27 cipher tokens: 24 letter codes and 3 word/name codes.
+
+**2. Checks (a)-(c).**
+- (a) PREREG order: `git log` (after `git fetch --deepen`, the clone was shallow) shows `6f963568d` 05:59:19 UTC adding
+  PREREG-THUR-BAMF.md, pairs_vol4.tsv and ct_p160.txt, then `60e59fc6e` 06:01:43 adding gate_bamf.py/.json; none of the three
+  pre-registered files changed since. **Holds.**
+- (b) `bamf/gate_bamf.py --check` OK; `bamf/compare_tomokiyo.py --check` OK; `bamf/decode_bamf.py --check` OK (before and after the
+  correction below). Gate numbers as in NOTES (control folds p 0.006 / 0.005; target S -1.062 vs shuffled p95 -1.279, p 0.001).
+  **Reproduces.** The bCAS/AX-5799 caveat is already in the solver's text (coverage identical under the value shuffle); the
+  Downing/Lockhart comparisons are mostly a coverage difference, as the solver says.
+- (c) Grades, rule 4. **One over-grade corrected:** code 30 (in "aryesto") has e 8, y 1 (Digbye), r 1 (turned) in the vol 4 gloss;
+  PREREG grades C only for a letter "attested >= 2 times consistently", but `decode_bamf.py` used ">= 2 agreeing" (its docstring said
+  "strict majority"). 30 is now **M**. Code 72 (u 3, v 1) stays C: u/v are one letter in the print. Script fixed (UV exception
+  documented in its header), reading regenerated, `--check` OK. Code 94 = y stays M and is a **data conflict** (one print gloss, vol 5
+  p.512 "S l a s s e y e", image-checked by me on `bamf/crops/v5p512_94gloss.jpg`, against Tomokiyo's published 94 = t); the same
+  p.512 gloss also sets S over 23, which the vol 4 table gives as g 3/3 and Tomokiyo as g, so that one witness is itself
+  shaky. Not settled. 937 = Mazarin C: "C. Maz." and "Maz." over 937 on vol 5 p.677, image-checked on `v5p677_937gloss.jpg`.
+  745 = secret M: "great secret" is set over the pair "434 745" (`v5p677_745gloss.jpg`); the split great/secret is an alignment
+  inference, and Tomokiyo gives 754/755/790/799 = the nearby, so 745 stays M. 356 U. The Tomokiyo table agrees with every one of the
+  23 table codes read here (`compare_bamp1.tsv`), which is a cross-check, not an extra grade (his table is itself rebuilt from print).
+  **Corrected counts:** letter codes C 22, M 2 (30, 94), U 0 of 24; word/name codes C 1 (937), M 1 (745), U 1 (356).
+  All 27 tokens: **C 23, M 3, U 1**; H/C/S share 85.2%. No H (no period key sheet located for this cipher; THUR-BAMF found none in BL
+  Add MS 4166) and no S.
+
+**3. Novelty search (d)** (11 Oct 2026, 06:40-06:44 UTC; IA 7, OpenAlex 4, Semantic Scholar 4 (one 429, not retried), CORE 3 (one 500)):
+- Birch itself: p.161 checked by THUR-BAMF (no "same decyphered"); the run's word/name codes searched across vols 4-6 by THUR-BAMF2
+  (`scan_codes_hits.tsv`). Not re-done.
+- Tomokiyo (`sources/cryptiana/web/thurloe.htm#Bampfield` and `bampfld.htm`, on disk): First Cipher table published, quoted runs of
+  2 Nov 1656 and 6 June 1657, **no reading of the 7/17 April 1657 run**; `bampfld.htm` covers 1647-48 only.
+- IA full text (be-api fts): "who is his pensioner" Savoy Mazarin, 0; "advertisement come to" + Mazarin/Savoy/pensioner, 0;
+  "Bamfylde" "April the 7/17 1657", 0; Bampfield + 1657 + Calendar State Papers Domestic + Savoy, 0; "Bamfylde" "pentioner" and
+  "pentioner" Savoy Mazarin 1657 returned only Birch vols 4/6 themselves and unrelated works (term-level, not phrase, hits);
+  Bampfield "duke of Savoy" pensioner Mazarin returned the Nicholas Papers and Milton biographies (term-level co-occurrence).
+- OpenAlex / Semantic Scholar / CORE: Bampfield scholarship found by title -- ODNB "Bampfield, Joseph (1622-1685), army officer and
+  spy" (2004); Marshall, *Intelligence and Espionage in the English Republic c.1600-60* (review 2025); Marshall 2016 review;
+  Thurloe "spymaster" articles (2018/2020); "Diplomacy and the religious question: Mazarin, Cromwell and the treaties of 1655 and
+  1657" (2014). None was read at page level. "Bampfield cipher Thurloe": 0 in OpenAlex and S2.
+- Not reached: CSP Domestic 1656-57 at page level; de Beer's article on Bampfield and Bampfield's *Apologie* (1685) (Tomokiyo's
+  sources); Marshall's book at page level; the Bodleian Rawlinson original; Google Books (not tried, quota). JSTOR-QUEUE.tsv rows
+  appended in both families: (i) "Bampfield" AND "Thurloe" AND "1657" AND ("Savoy" OR "Mazarin") AND (cipher OR intelligence),
+  "Bampfield" AND "pensioner" AND "Savoy"; (ii) the print's own wording "the pope has sollicited him by some of the clergye".
+
+**4. Class and depth.**
+- **N3** for the mapping of this run (no prior plaintext or decipherment of the 7/17 April 1657 run located after the logged
+  search). Not N4: Marshall, de Beer, the *Apologie*, CSPD 1656-57 and the manuscript were not read at page level.
+- **Key source: `period`** (rebuilt by us from Birch's printed period decipherments of Bamfylde's 1655-56 letters), not `ours` as the
+  brief proposed -- the V-THURBM precedent for print-gloss keys in this folder; the cipher system is **known**: Tomokiyo's
+  `published` First Cipher table (credited; rule 8) agrees on all 23 table codes read. "Key identified" would be fair wording for the
+  system, which Tomokiyo already published; nothing here adds to the key.
+- **Depth D1** ("fragments read"). The longest stretch, 62...36 (12 letters, all C), reads "pentioneoner" and becomes "pentioner"
+  only by deleting a repeated "one" (61 43 27), a repair (I); "sauoY" needs the conflicted 94; "aryEsto" reads as no word I can
+  confirm. 24 letter positions sit far below any authentication distance for an ~80-code homophonic table, and no letter clause
+  reads without a liberty. 937 = Mazarin is a single name-code token: it reads in one context here (its vol 5 glosses are the key
+  witness, not a second reading), so the code-material route to D2 is not met. D2 would need 356 read from a gloss and the 94
+  conflict settled, so that "the [356] Savoy, who is his pensioner" reads as a clause.
+- **Safe sentence:** "Birch (1742, vol. 6 p.160) prints Col. Bamfylde's Paris intelligence letter of 7/17 April 1657 with a
+  short cipher run and no decipherment; under a letter table rebuilt from Birch's printed decipherments of Bamfylde's earlier
+  letters (in the cipher system Tomokiyo has published), fragments read: 937 = Mazarin, 's a u o [y]' and 'p e n t i o n e [o n e]
+  r'; one name code (356) and the first letter run remain unread. No prior decipherment of this run located (searched 11 Oct 2026)."
+- **Unsafe sentence:** "Bamfylde's April 1657 cipher is deciphered / reveals the Duke of Savoy as Mazarin's pensioner" (356 is
+  unread, 94 is conflicted, the dittography is a repair; D1 permits only "fragments read").
+- SECOND-OPINIONS-QUEUE: no row (N3 but D1; the brief requires N3+ and D2+).
+
+**5. Postmortem.** One over-grade (code 30 C -> M), caused by the decode script's grade rule differing from the PREREG's
+"consistently"; corrected in `bamf/decode_bamf.py` and `reading_bamf_p160.txt`, and NOTES gets a pointer (rule 10 propagation). The
+brief's key source `ours` is corrected to `period` per the folder's precedent. Neither solver claimed novelty or depth above D1.

@@ -3762,3 +3762,29 @@ Read so far: Bamfylde p.160 run decoded under the gated print-gloss table plus t
 - [ ] image-check: l.68904, p.231 foot, Tomokiyo's 94 = t instance
 - [x] retry: none needed (no errors)
 Verdict: keep going: 9 internal gaps; cheapest next: V-BAMF verifier pass on the p.160 fragments, ~$3
+
+## Revision after AUDIT (V-BAMF, 11 Oct 2026; rule 10 propagation)
+AUDIT.md "## AUDIT (V-BAMF ...)": p.160 code 30 regraded C -> M (gloss e 8, y 1, r 1 is not "consistently" per PREREG-THUR-BAMF.md);
+`bamf/decode_bamf.py` grade rule fixed, `--check` OK. Letter codes now **C 22, M 2, U 0**; all 27 tokens C 23, M 3, U 1. Class N3,
+key source `period` (Tomokiyo's published table agrees), depth **D1** ("fragments read"). The THUR-BAMF2 counts above are superseded.
+
+## Remaining gaps (V-BAMF, 11 Oct 2026; replaces the THUR-BAMF2 list)
+Read so far: Bamfylde p.160 run, letter codes C 22, M 2 (30, 94), U 0; 937 C, 745 M, 356 U; verifier class N3, key source period, depth D1 (AUDIT.md "## AUDIT (V-BAMF ...)").
+- Bamfylde p.160 code 356 (word/name code) - blocker: open-codes; no printed gloss in vols 4-6 Bamfylde letters (bamf/scan_codes_hits.tsv), none in Tomokiyo's image; next: Birch vol 7 index and the 1657 Bamfylde letters of vol 6 pp.161-700 at lines with glossed codes 350-360 (alphabetical neighbours), ~$0.5
+- Code 94 conflict (print y, vol 5 p.512, vs Tomokiyo t) and codes 25/51 (print vs Tomokiyo) - blocker: open-codes; one witness each side; next: locate Tomokiyo's instance (his thurloe.htm quoted runs, 2 Nov 1656 and 6 June 1657 letters in vols 5-6) and image it, ~$0.5
+- Bamfylde l.68904 (vol 6 p.576, Second Cipher period) table - blocker: not-attempted; not gating for p.160; next: image n579 strip crops, align, compare with bamf/tomokiyo/bamp2_table.tsv, ~$1
+- Vol 4 Aldworth l.25718 and physician l.46866 - blocker: not-attempted; outside this brief; next: one leaf each (Aldworth near n309-n312), ~$0.3
+- Vol 1 non-Dutch hits >=20 numerals (about 12 units) - blocker: not-attempted; IA djvu 500 on 10 Oct 2026; next: retry collectionofstat01thur djvu or the on-disk bim vol 1 copy (sources/ia-fulltext/print-check), then one leaf per unit, ~$1.5
+- The 1725 *Verbael* (Beverningh's London journal) is not on IA under its own title - blocker: not-attempted; outside this brief; next: Delpher/Google Books/KB search, ~$0.5
+- Dutch of Beverning's 27 June and 22 Aug 1653 letters (Birch I pp.301, 418) - blocker: not-attempted; outside this brief; next: grep Brieven vols 1-4 and the Michigan copies, ~$0.4
+- Nijhoff Bijdragen X p.291 and Van Sypesteyn - blocker: not-attempted; Google Books quota spent; next: Google Books API with country=US after the quota reset, ~$0.3
+
+## Escalation (V-BAMF, 11 Oct 2026)
+- [x] siblings: Bamfylde 1655 glossed pages aligned (THUR-BAMF); vol 5 Bamfylde letters scanned for the four codes (THUR-BAMF2)
+- [x] clear-pages: p.161 read, no printed decipherment
+- [x] known-keys: Tomokiyo's First/Second Cipher tables fetched, transcribed and compared (49/51 agree)
+- [x] print: Birch's gloss is the table source; vol 5 glosses for 937, 745, 94
+- [x] key-rebuild: 51-code table from print, gated PASS with control
+- [ ] image-check: l.68904, p.231 foot, Tomokiyo's 94 = t instance
+- [x] retry: none needed (no errors)
+Verdict: keep going: 8 internal gaps; cheapest next: 356 gloss search in the 1657 Bamfylde letters of vol 6 pp.161-700 and Tomokiyo's 94 = t instance (D2 would need both), ~$1
