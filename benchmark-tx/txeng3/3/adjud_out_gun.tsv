@@ -1,0 +1,14 @@
+line	col	sign	conf	viewed	note
+L01	1	tau	M	yes	hook with curling tail left of x+
+L02	7	v	M	yes	small v, no loop
+L04	1	b	M	yes	closed bowl with hooked top, as b elsewhere
+L04	14	Ib	L	yes	I with top and bottom bars, stray overbar; ] alternative
+L05	9	g	M	yes	9-like bowl, tail below
+L05	14	NEW:f-struck-by-bar	H	yes	f crossed by long horizontal stroke
+L07	6	NEW:f-struck-by-bar	H	yes	same shape
+L08	17	L	M	yes	bracket open right
+L09	11	NONE	M	yes	only one 44 (struck) visible, it is the right neighbour; no separate sign
+L10	3	b	M	yes	looped b shape
+L13	5	q	M	yes	circle on straight stem
+L13	12	b	M	yes	looped b shape
+L16	4	b	M	yes	looped b shape

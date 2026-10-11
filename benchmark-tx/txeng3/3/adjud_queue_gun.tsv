@@ -1,0 +1,14 @@
+line	col	kind	candidates	left_neighbours	right_neighbours
+L01	1	disagree	- | tau		x+ 34 f
+L02	7	disagree	v | r	aa tau hs	01 m 7
+L04	1	disagree	ro | b		f cc 60
+L04	14	disagree	] | Ib	ps m x	L
+L05	9	disagree	g | phi	f aaa L	m of f
+L05	14	disagree	NEW:f-struck-by-bar | ps	of f oo	
+L07	6	disagree	NEW:f-struck-by-bar | th	58 48 60	f or cc
+L08	17	disagree	x | L	hs f ]	
+L09	11	disagree	NEW:44-struck | -	th 6 aa	44 th ps
+L10	3	disagree	ro | b	60 f	f oo hs
+L13	5	disagree	g | q	m x 60	34 60 44
+L13	12	disagree	ro | b	88x th ob	f or
+L16	4	disagree	ro | b	88 ob oo	f ps th
