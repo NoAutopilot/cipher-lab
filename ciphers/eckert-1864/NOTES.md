@@ -7056,3 +7056,31 @@ No network. `ciphers/eckert-1864/fixl17c_apply.py` (idempotent; reuses `fixl15_a
 
 ### Escalation
 Verdict: parked. The one open step is waiting on a named WORK-QUEUE row (AUD2-LEDGER17-1, -2, -3); nothing else here is untried.
+
+## ECK-S65G (11 Oct 2026, account 1, for LANE DEFAULT-A1-1840)
+
+Brief: the four FM-S65B Remaining gaps. Intake gate (lane, 19:0x UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`. Prior-work step (`prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=pointer 5892|5896|5908|5910|5914|5936|5941;date=1865-02-02..1865-03-27' --step-type lookup --offline`, 18:59 UTC): exit 4, one LEAD (this session's own claim, recorded DONE) and four generic UNCHECKED rows (Tomokiyo and solver caches by unit, editions without a correspondent): not this step's to clear.
+**Check 1 (own work), by hand, before any request:** the verifier FV-L17b (AUDIT.md "## AUDIT (FV-L17b)", 10 Oct 2026, after FM-S65B) and AUD2-LEDGER17-2 had already run three of the four units, so only the residue was run:
+- Unit 1 (be-api whole collection, E590/E592/E593): FV-L17b s.1 ran `"retained no copy"`, `"Camman" gold Norfolk`, `"sell gold" Norfolk 1865`, `"ponchos are not on hand"` (none ours); its one unchecked query, `"ponchos" Ingalls` (502 twice), was run today (`fortmonroe/eck_s65g_beapi.out`): positive control `"dispatches for you from Major-General Sherman"` 8 hits (the OR I/47 pt 2 copies of the Anderson telegram, as on 10 Oct); `"ponchos" Ingalls` 10 hits, the six shown are other (an Inca-textile bulletin, a Rex Stout novel's Pete Ingalls); `ponchos Ingalls Sheridan 1865` 10 hits, the six shown other (regimental histories, a 1907 Armed Forces Journal contract list). E593 not located; four of each ten hits not shown by the API's snippet list.
+- Unit 2 (Grant Papers): vol. 14 (21 Feb-30 Apr 1865) was searched by IA be-api by FV-L17b (`papersofulyssess0014gran`, controls first; no E593 or E594 wording; it prints Sherman's Old Point telegram to Grant = 5941/1). **E589-E592 are dated 2-20 Feb 1865, so their volume is vol. 13, not 14.** Vol. 13 is not on the Internet Archive (advancedsearch for the series, `eck_s65g_find13.out`: vols 1-12 and 14-18 only; `papersofulyssess0013gran` has no metadata, `eck_s65g_meta.out`). Google Books (`eck_s65g_gb.py`, keyed, country=US): HTTP 503 on the control, one request, host stopped (`eck_s65g_gb.out`; googleapis also answered 503/429 to FM-S65B and FV-L17b on 10 Oct and 503 to THUR-REST at 18:01 UTC today, ROOM.md). Vol. 13 stays unchecked.
+  The page of FM-S65B's 5914/2 hit (`eck_s65g_page5914.out`, be-api inside vol. 14, 3 requests): `"Gordon's Commission"` 1 hit with the editors' lead-in, "telegraphed to Ord, first at 10:00 a.m. 'If Gordon's Commission has not yet bee[n] adjourned ...'", so the vol. 14 print gives 5914/2 as Grant's telegram to Ord, the first of the day at 10.00 a.m. (the decode reads 10 AM: consistent); `Gordon commission Norfolk` 0; `"Cashier of the National Bank"` 1 (the same passage). be-api gives no page locator and the IA copy is `printdisabled`/lending (scripts get an obfuscated page), so the page number is still unread.
+- Unit 3 (Sherman family letters, Thorndike 1894, for E594): read by FV-L17b (IA `shermanlettersc00shergoog`): no item between 22 Jan and 6 Apr 1865 (the editor's bridge "The next letter from General Sherman is a short and hurried one of April 6th"); AUD2-LEDGER17-2 then read John Sherman's Recollections vol. 1 pp.353-354 and Sherman's Memoirs vol. 2 ch. XXIII (E594 N2 by FIX-AUD2-L17). Not re-run.
+- Unit 4 (image check of pages 348, 352, 364, 366, 392, 397 = pointers 5892, 5896, 5908, 5910, 5936, 5941): run by FV-L17b s.2 at 2400 px with PIL region crops (`iiif_lines.py --image` found 0 bands on these pale pencil leaves): "The transcription matches the image on all six", header and every graded line. Not re-run.
+No decode change; no AUDIT.md class touched. For the verifier (ROOM line): the vol. 14 lead-in naming Ord as 5914/2's addressee.
+
+**Requests.** archive.org 3 (2 metadata, 1 advancedsearch); be-api 6 (all 200); googleapis 1 (503, stopped); hdl.huntington.org 0.
+
+## Remaining gaps (ECK-S65G, 11 Oct 2026)
+Read so far: 11 rows examined (FM-S65B); 6 filed (E589-E594), 2 in print (5896/1, 5914/2), 2 plain, 1 too short; of FM-S65B's four gaps, three are closed (be-api phrase checks, Sherman letters, image check of the six pages: FV-L17b plus this section) and one is narrowed to vol. 13. FM-S65A's gaps above stand as written there.
+- Grant Papers vol. 13 (2-20 Feb 1865) for E589 E590 E591 E592 - blocker: not-attempted; not on the Internet Archive and googleapis answered 503 on the control (11 Oct) after 503/429 on 10 Oct; next: one keyed googleapis pass with `fortmonroe/eck_s65g_gb.py` under a googleapis take when the host answers, ~$0.1
+- The printed page of 5914/2 in Grant Papers vol. 14 (Grant to Ord, 10.00 a.m.) - blocker: not-attempted; be-api gives no page and the IA copy is lending-only (obfuscated to scripts); next: a LOCAL-QUEUE row for a person to read the page in the IA reader at the 'Gordon's Commission' note, ~$0.05
+
+## Escalation (ECK-S65G, 11 Oct 2026)
+- [x] siblings: 5896/1 and 5897/0 share the clear copy 8561; 5941/1 and the 5940-5941 Stanton row are E594's printed companions (FV-L17b).
+- [x] clear-pages: all-pointer CISOSEARCHALL on every row by FM-S65B, FV-L17b and AUD2-LEDGER17-2; clear copy 8561 only.
+- [x] known-keys: No. 1 per BOOK-FM65; No. 1 / No. 2 / No. 9 and shuffled copies compared on every row (FM-S65B).
+- [ ] print: 211 cached volumes, IA be-api whole collection and Grant Papers 14 done; Grant Papers 13 by Google Books still to run (gap above).
+- [n/a] key-rebuild: no key row edited in this pass.
+- [x] image-check: FV-L17b read all six leaves at 2400 px; transcription matches.
+- [x] retry: googleapis 503 once, stopped per rule; be-api's 502 query of 10 Oct re-run and answered.
+Verdict: keep going: 2 internal gaps; cheapest next: the keyed googleapis pass for Grant Papers vol. 13, ~$0.1
