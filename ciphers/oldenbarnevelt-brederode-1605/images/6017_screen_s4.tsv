@@ -1,0 +1,25 @@
+scan	call	control_cipher_seen	control_plain_seen	control_ps_seen	high_res	note
+2	no cipher	yes	yes	yes		German/Dutch prose
+3	no cipher	yes	yes	yes		German/Dutch prose
+5	no cipher	yes	yes	yes		blank opening
+6	no cipher	yes	yes	yes		address leaf with seal + letter
+8	no cipher	yes	yes	yes		German/Dutch prose
+9	no cipher	yes	yes	yes		German/Dutch prose
+11	no cipher	yes	yes	yes		German/Dutch prose
+12	no cipher	yes	yes	yes		German/Dutch prose
+14	no cipher	yes	yes	yes	region 1400	Dutch letter signed Pieter van Brederode Doctor, 29 March (M); postscript clear words (1400 px region look)
+15	no cipher	yes	yes	yes		German/Dutch prose
+17	no cipher	yes	yes	yes		German/Dutch prose
+18	no cipher	yes	yes	yes		German/Dutch prose
+20	no cipher	yes	yes	yes		German/Dutch prose
+21	no cipher	yes	yes	yes		letter signed P. Brederode, Heidelberg 1614
+23	no cipher	yes	yes	yes		German/Dutch prose
+24	no cipher	yes	yes	yes		letter signed P. Brederode
+26	no cipher	yes	yes	yes		address leaf, endorsement 1614
+27	no cipher	yes	yes	yes		German/Dutch prose
+29	no cipher	yes	yes	yes		blank opening
+30	no cipher	yes	yes	yes		address leaf + letter
+32	no cipher	yes	yes	yes		letter signed Brederode, Heidelberg Aug 1614
+33	no cipher	yes	yes	yes		blank opening
+35	no cipher	yes	yes	yes		German/Dutch prose
+36	no cipher	yes	yes	yes		letter signed Brederode, Aug 1614 (M)
