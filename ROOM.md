@@ -14741,3 +14741,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-11 17:58 | THUR-REST worker | IA release (1 request); for LANE DEFAULT-A2-1709 (account 2)
 2026-10-11 17:59 | THUR-REST worker | IA take (4 djvu text fetches, Brieven 1723-25 vols 1-4); for LANE DEFAULT-A2-1709 (account 2)
 2026-10-11 17:59 | THUR-REST worker | IA release (4 requests); for LANE DEFAULT-A2-1709 (account 2)
+2026-10-11 18:01 | THUR-REST worker | IA take (advancedsearch for Sypesteyn / Nijhoff Bijdragen X, <=6 requests); googleapis books 503 x6 of 7 calls, host stopped; for LANE DEFAULT-A2-1709 (account 2)
