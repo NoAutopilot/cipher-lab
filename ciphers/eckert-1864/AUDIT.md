@@ -20912,7 +20912,7 @@ For the orchestrator (owner account) and LANE LEDGER-17 (account 1).
 
 ## AUDIT 2 (second adversarial, AUD2-FM16e)
 
-Second verifier AUD2-FM16e (account 1, Opus, for LANE DEFAULT-A1-0540), 11 Oct 2026, 05:54-06:2x UTC by `date -u`; a separate session from the
+Second verifier AUD2-FM16e (account 1, Opus, for LANE DEFAULT-A1-0540), 11 Oct 2026, 05:54-06:1x UTC by `date -u`; a separate session from the
 readers FM-S1 and FM-F1, the first verifier FV-L16e and the second verifier AUD2-LEDGER16-5, not protecting their conclusions. Scope: **E443** (5785/1),
 **E445** (5816/2), **E446** (5583/2), **E448** (5793/1), status.json results[401]-[404], first audit "## AUDIT (FV-L16e)"; plus item 5, E550's
 per-row line. Nothing decoded; every code group re-looked up in key.md (table rows: Appian 107, Fanny 998, Flora 321, Libby 1012, Whelp 853, Knave
