@@ -1,0 +1,6 @@
+[
+{"label":"A","q1":"whole","q2":"clean","q3_top1":"T33","q3_conf1":4,"q3_top2":"T60","q3_conf2":1,"hard_pair":false,"q4_word":"seguito","q4_legible":true,"q4_issue":"none","q5":"Two short verticals on a horizontal base line, box fits the sign closely."},
+{"label":"B","q1":"whole","q2":"faint","q3_top1":"T60","q3_conf1":3,"q3_top2":"T86","q3_conf2":3,"hard_pair":true,"q4_word":"contentezza","q4_legible":true,"q4_issue":"none","q5":"Hash-like sign with curved left crossbars and a dot below the left vertical; the box's left edge is close to the preceding sign."},
+{"label":"C","q1":"whole","q2":"clean","q3_top1":"T45","q3_conf1":5,"q3_top2":"T90","q3_conf2":2,"hard_pair":false,"q4_word":"effetto","q4_legible":true,"q4_issue":"none","q5":"Tall stem with a closed loop at the bottom, clearly separate from its neighbours."},
+{"label":"D","q1":"whole","q2":"clean","q3_top1":"T90","q3_conf1":3,"q3_top2":"T45","q3_conf2":2,"hard_pair":true,"q4_word":"et","q4_legible":true,"q4_issue":"ampersand","q5":"Stem with a crossbar at the top and a loop at the bottom, with a base stroke; the clerk writes et as an ampersand."}
+]

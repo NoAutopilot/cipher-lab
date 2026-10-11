@@ -1,0 +1,37 @@
+call	label	tile	crop	box_how	sheet_line	sheet_text	letter_index
+f178r_L02	A	benchmark-tx/txeng3/2/items/f178r_L02/tile_A.png	f178r_L02_s2.jpg	seg-exact	L02	ndea [ch'auesse] piu; a ritornare, a car.la ma solo, andarsene a, turino	5
+f178r_L02	B	benchmark-tx/txeng3/2/items/f178r_L02/tile_B.png	f178r_L02_s2.jpg	seg-exact	L02	ndea [ch'auesse] piu; a ritornare, a car.la ma solo, andarsene a, turino	6
+f178r_L03	A	benchmark-tx/txeng3/2/items/f178r_L03/tile_A.png	f178r_L03_s3.jpg	seg-proportional(46/35)	L03	et tolto [licencia] [struck word] da loro, altezze per incaminarsi, alla uolta, di guase	3
+f178r_L03	B	benchmark-tx/txeng3/2/items/f178r_L03/tile_B.png	f178r_L03_s3.jpg	seg-proportional(46/35)	L03	et tolto [licencia] [struck word] da loro, altezze per incaminarsi, alla uolta, di guase	6
+f178r_L03	C	benchmark-tx/txeng3/2/items/f178r_L03/tile_C.png	f178r_L03_s2.jpg	seg-proportional(46/35)	L02	ndea ch'auesse piu; a ritornare, a car.la ma solo, [andarsene] a, turino	2
+f178r_L03	D	benchmark-tx/txeng3/2/items/f178r_L03/tile_D.png	f178r_L03_s2.jpg	seg-proportional(46/35)	L02	ndea ch'auesse piu; a ritornare, a car.la ma solo, [andarsene] a, turino	4
+f178r_L03	E	benchmark-tx/txeng3/2/items/f178r_L03/tile_E.png	f178r_L03_s3.jpg	seg-proportional(46/35)	L03	[et] tolto licencia [struck word] da loro, altezze per incaminarsi, alla uolta, di guase	2
+f178r_L03	F	benchmark-tx/txeng3/2/items/f178r_L03/tile_F.png	f178r_L03_s2.jpg	seg-proportional(46/35)	L02	ndea ch'auesse piu; a ritornare, a car.la ma solo, [andarsene] a, turino	1
+f178v_L02	A	benchmark-tx/txeng3/2/items/f178v_L02/tile_A.png	f178v_L02_s2.jpg	atlas	L04	[ogna] subito, hauto, questa, noua; si eri, tornato, a carmagnola ne piu, se ne	1
+f178v_L02	B	benchmark-tx/txeng3/2/items/f178v_L02/tile_B.png	f178v_L02_s2.jpg	atlas	L03	et tolto licencia [struck word] da loro, altezze per incaminarsi, alla uolta, di [guase]	5
+f178v_L05	A	benchmark-tx/txeng3/2/items/f178v_L05/tile_A.png	f178v_L05_s1.jpg	atlas	L05	e partito, di modi; che, essendi, [esso,] et l'amossi; e della, oppenione, che sono ima	1
+f178v_L05	B	benchmark-tx/txeng3/2/items/f178v_L05/tile_B.png	f178v_L05_s2.jpg	atlas	L05	e partito, di modi; che, essendi, esso, et l'amossi; e della, [oppenione,] che sono ima	6
+f178v_L05	C	benchmark-tx/txeng3/2/items/f178v_L05/tile_C.png	f178v_L05_s1.jpg	atlas	L05	e partito, di modi; che, essendi, esso, et [l'amossi;] e della, oppenione, che sono ima	1
+f178v_L05	D	benchmark-tx/txeng3/2/items/f178v_L05/tile_D.png	f178v_L05_s1.jpg	atlas	L05	e partito, di modi; che, essendi, [esso,] et l'amossi; e della, oppenione, che sono ima	4
+f178v_L05	E	benchmark-tx/txeng3/2/items/f178v_L05/tile_E.png	f178v_L05_s1.jpg	atlas	L05	e partito, di modi; che, essendi, esso, et [l'amossi;] e della, oppenione, che sono ima	5
+f178v_L05	F	benchmark-tx/txeng3/2/items/f178v_L05/tile_F.png	f178v_L05_s1.jpg	atlas	L05	e partito, di modi; che, essendi, esso, [et] l'amossi; e della, oppenione, che sono ima	2
+f178v_L06	A	benchmark-tx/txeng3/2/items/f178v_L06/tile_A.png	f178v_L06_s2.jpg	atlas	L06	nte nendo, et fauori; [zando,] tutti, li hugonotti et dependendo, principalm=	3
+f178v_L06	B	benchmark-tx/txeng3/2/items/f178v_L06/tile_B.png	f178v_L06_s3.jpg	atlas	L06	nte nendo, et fauori; zando, tutti, li [hugonotti] et dependendo, principalm=	2
+f178v_L09	A	benchmark-tx/txeng3/2/items/f178v_L09/tile_A.png	f178v_L09_s1.jpg	atlas	L08	de [rauelli,] nelle mani, oue la; piu parte de soldati, sono hugonotti egli ne	1
+f178v_L09	B	benchmark-tx/txeng3/2/items/f178v_L09/tile_B.png	f178v_L09_s1.jpg	atlas	L08	[de] rauelli, nelle mani, oue la; piu parte de soldati, sono hugonotti egli ne	2
+f178v_L10	A	benchmark-tx/txeng3/2/items/f178v_L10/tile_A.png	f178v_L10_s1.jpg	atlas	L08	de rauelli, nelle mani, oue la; piu parte [de] soldati, sono hugonotti egli ne	2
+f178v_L10	B	benchmark-tx/txeng3/2/items/f178v_L10/tile_B.png	f178v_L10_s3.jpg	atlas	L09	puo, fare, [cio] che; uole, senza; hauer ero forma di poterli, rimdi, a reper	2
+f178v_L11	A	benchmark-tx/txeng3/2/items/f178v_L11/tile_A.png	f178v_L11_s1.jpg	atlas	L09	puo, fare, cio che; [uole,] senza; hauer ero forma di poterli, rimdi, a reper	4
+f178v_L11	B	benchmark-tx/txeng3/2/items/f178v_L11/tile_B.png	f178v_L11_s1.jpg	atlas	L09	puo, fare, cio che; [uole,] senza; hauer ero forma di poterli, rimdi, a reper	1
+f178v_L13	A	benchmark-tx/txeng3/2/items/f178v_L13/tile_A.png	f178v_L13_s1.jpg	atlas	L10	o, e necessario, che sua ma.ta se uole, assicurare, [questo] paese proueda	6
+f178v_L13	B	benchmark-tx/txeng3/2/items/f178v_L13/tile_B.png	f178v_L13_s3.jpg	atlas	L11	d'altri [a] questi goerni che no siano ne suo fratello, ne dependenti, dal	1
+f178v_L15	A	benchmark-tx/txeng3/2/items/f178v_L15/tile_A.png	f178v_L15_s3.jpg	atlas	L12	ui, et che siano, anche catholici [altrimenti] saremo, sempre, in -	5
+f178v_L15	B	benchmark-tx/txeng3/2/items/f178v_L15/tile_B.png	f178v_L15_s3.jpg	atlas	L12	ui, et che siano, anche [catholici] altrimenti saremo, sempre, in -	1
+f178v_L21	A	benchmark-tx/txeng3/2/items/f178v_L21/tile_A.png	f178v_L21_s3.jpg	atlas	L16	gran [malta] contentezza di questo effetto seguito in franza et [struck]	5
+f178v_L21	B	benchmark-tx/txeng3/2/items/f178v_L21/tile_B.png	f178v_L21_s3.jpg	atlas	L16	gran malta [contentezza] di questo effetto seguito in franza et [struck]	6
+f178v_L22	A	benchmark-tx/txeng3/2/items/f178v_L22/tile_A.png	f178v_L22_s2.jpg	atlas	L16	gran malta contentezza di questo effetto [seguito] in franza et [struck]	4
+f178v_L22	B	benchmark-tx/txeng3/2/items/f178v_L22/tile_B.png	f178v_L22_s1.jpg	atlas	L16	gran malta [contentezza] di questo effetto seguito in franza et [struck]	9
+f178v_L22	C	benchmark-tx/txeng3/2/items/f178v_L22/tile_C.png	f178v_L22_s2.jpg	atlas	L16	gran malta contentezza di questo [effetto] seguito in franza et [struck]	1
+f178v_L22	D	benchmark-tx/txeng3/2/items/f178v_L22/tile_D.png	f178v_L22_s3.jpg	atlas	L16	gran malta contentezza di questo effetto seguito in franza [et] [struck]	2
+f179r_L02	A	benchmark-tx/txeng3/2/items/f179r_L02/tile_A.png	f179r_L02_s3.jpg	atlas	L18	retrenchiamento, sopra questa gente; laudarei piu, [tosto,] brigarsene	1
+f179r_L02	B	benchmark-tx/txeng3/2/items/f179r_L02/tile_B.png	f179r_L02_s1.jpg	atlas	L18	retrenchiamento, sopra [questa] gente; laudarei piu, tosto, brigarsene	3

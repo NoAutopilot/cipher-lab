@@ -1,0 +1,38 @@
+# TXE3-2 scorer key: never shown to a subagent
+call	label	kind	line	pos	plain	truth	reads	flag	err_class	pos_class	seg_edge	band_edge	stroke
+f178r_L02	A	control	f178r_L02	18	e	T45|T66|T86	T45|T45|T45|T45|T45|T45			inner	-	-	-
+f178r_L02	B	floor	f178r_L02	19	s	T57|T92|T95|T98|X_CE	T70|T70|T70|T70|T70|T70		other	inner	-	-	-
+f178r_L03	A	floor	f178r_L03	31	c	T36|T50	T96|<deleted>|<deleted>|T96|<deleted>|<deleted>		other	inner	-	-	-
+f178r_L03	B	floor	f178r_L03	34	c	T36|T50	T90|<deleted>|<deleted>|T90|<deleted>|T53		other	inner	-	-	-
+f178r_L03	C	control	f178r_L03	13	n	T60|T76	T76|T76|T76|T76|T76|T76			inner	-	-	-
+f178r_L03	D	control	f178r_L03	15	a	T37|T85	T37|T37|T37|T37|T37|T37			inner	-	-	-
+f178r_L03	E	floor	f178r_L03	23	t	T27|T53|T65	T90|T90|T90|T90|<deleted>|T90	alignment-doubtful	look-alike	inner	-	-	-
+f178r_L03	F	control	f178r_L03	12	a	T37|T85	T85|T85|T85|T85|T85|T85			inner	-	-	-
+f178v_L02	A	control	f178v_L02	13	o	T19|T52|T55	T19|T19|T19|T19|T19|T19			inner	overlap	in	mid
+f178v_L02	B	floor	f178v_L02	12	e	T45|T66|T86	T36|T36|T36|T36|T36|T36	clerk-doubtful	crop	inner	overlap	cut	mid
+f178v_L05	A	floor	f178v_L05	1	e	T45|T66|T86	T76|T76|T76|T76|T89|T26		crop	first	inner	cut	heavy
+f178v_L05	B	control	f178v_L05	20	i	T25|T52|T80|T96	T25|T25|T25|T25|T25|T25			inner	overlap	in	heavy
+f178v_L05	C	control	f178v_L05	5	l	T13|T51|T58|T95	T58|T58|T58|T58|T58|T58			inner	inner	in	heavy
+f178v_L05	D	control	f178v_L05	3	o	T19|T52|T55	T55|T55|T55|T55|T55|T55			inner	inner	in	heavy
+f178v_L05	E	floor	f178v_L05	9	s	T57|T92|T95|T98|X_CE	T64|T13|T64|T64|T13|T13	clerk-doubtful	thin	inner	overlap	in	thin
+f178v_L05	F	floor	f178v_L05	4	t	T27|T53|T65	T90|T90|T90|T90|T90|T90	alignment-doubtful	look-alike	inner	inner	in	heavy
+f178v_L06	A	control	f178v_L06	17	n	T60|T76	T60|T60|T60|T60|T60|T60			inner	inner	in	mid
+f178v_L06	B	floor	f178v_L06	27	u	T33|T49	T76|T76|T76|T76|T15|T15	alignment-doubtful	other	inner	inner	in	mid
+f178v_L09	A	control	f178v_L09	5	r	T83|T97	T83|T83|T83|T83|T83|T83			inner	inner	in	heavy
+f178v_L09	B	floor	f178v_L09	4	e	T45|T66|T86	T96|T96|T96|T96|T96|T96	clerk-doubtful	other	inner	inner	in	mid
+f178v_L10	A	floor	f178v_L10	4	e	T45|T66|T86	T76|T76|T76|T76|T89|T26		crop	inner	inner	cut	heavy
+f178v_L10	B	control	f178v_L10	32	i	T25|T52|T80|T96	T96|T96|T96|T96|T96|T96			last	inner	in	thin
+f178v_L11	A	floor	f178v_L11	5	e	T45|T66|T86	T76|T76|T76|T76|T89|T76		crop	inner	inner	cut	thin
+f178v_L11	B	control	f178v_L11	2	u	T33|T49	T33|T33|T33|T33|T33|T33			inner	inner	in	heavy
+f178v_L13	A	floor	f178v_L13	7	o	T19|T52|T55	T70|T70|T70|T70|T70|T70	alignment-doubtful	other	inner	inner	near	mid
+f178v_L13	B	control	f178v_L13	26	a	T37|T85	T37|T37|T37|T37|T37|T37			inner	inner	in	thin
+f178v_L15	A	control	f178v_L15	30	i	T25|T52|T80|T96	T80|T80|T80|T80|T80|T80			last	inner	in	thin
+f178v_L15	B	floor	f178v_L15	24	c	T36|T50	T46|T46|T46|T46|T97|<deleted>	alignment-doubtful	thin	inner	inner	in	thin
+f178v_L21	A	floor	f178v_L21	21	a	T37|T85	T76|T76|T76|T76|T89|T76	alignment-doubtful	thin	inner	overlap	in	thin
+f178v_L21	B	control	f178v_L21	27	n	T60|T76	T60|T60|T60|T60|T60|T60			last	inner	cut	thin
+f178v_L22	A	control	f178v_L22	16	u	T33|T49	T33|T33|T33|T33|T33|T33			inner	inner	in	heavy
+f178v_L22	B	floor	f178v_L22	2	z	T10|T38	T60|T60|T60|T60|T60|T60	alignment-doubtful	crop	inner	inner	cut	heavy
+f178v_L22	C	control	f178v_L22	10	e	T45|T66|T86	T45|T45|T45|T45|T45|T45			inner	overlap	near	thin
+f178v_L22	D	floor	f178v_L22	24	t	T27|T53|T65	T90|T90|T45|T90|T90|T90	alignment-doubtful	crop	inner	inner	cut	mid
+f179r_L02	A	control	f179r_L02	28	t	T27|T53|T65	T65|T65|T65|T65|T65|T65			inner	inner	in	mid
+f179r_L02	B	floor	f179r_L02	8	e	T45|T66|T86	T24|T24|X_NEW|T24|T24|T24		thin	inner	inner	in	thin

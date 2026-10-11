@@ -1,0 +1,8 @@
+[
+{"label":"A","q1":"whole","q2":"clean","q3_top1":"T76","q3_conf1":3,"q3_top2":"T26","q3_conf2":2,"hard_pair":true,"q4_word":"esso","q4_legible":true,"q4_issue":"none","q5":"Loop-and-stem sign with a foot bar; box reaches the bottom edge of the crop."},
+{"label":"B","q1":"whole","q2":"clean","q3_top1":"T25","q3_conf1":5,"q3_top2":"T24","q3_conf2":1,"hard_pair":false,"q4_word":"oppenione","q4_legible":true,"q4_issue":"none","q5":"Lambda-shaped sign with a small hook at lower left; a dot follows at the right edge."},
+{"label":"C","q1":"whole","q2":"clean","q3_top1":"T58","q3_conf1":5,"q3_top2":"T80","q3_conf2":2,"hard_pair":false,"q4_word":"lamossi","q4_legible":true,"q4_issue":"none","q5":"B-shaped sign with a small peak at the top of the stem."},
+{"label":"D","q1":"whole","q2":"clean","q3_top1":"T55","q3_conf1":5,"q3_top2":"T78","q3_conf2":2,"hard_pair":false,"q4_word":"esso","q4_legible":true,"q4_issue":"none","q5":"Vertical stem with two horizontal bars to the right."},
+{"label":"E","q1":"whole","q2":"clean","q3_top1":"T64","q3_conf1":4,"q3_top2":"T38","q3_conf2":3,"hard_pair":true,"q4_word":"lamossi","q4_legible":true,"q4_issue":"none","q5":"Cursive m-like sign with a tail on the last stroke; a tilde-like mark sits above the next sign, not this one."},
+{"label":"F","q1":"whole","q2":"clean","q3_top1":"T45","q3_conf1":3,"q3_top2":"T90","q3_conf2":3,"hard_pair":true,"q4_word":"et","q4_legible":true,"q4_issue":"ampersand","q5":"Cross with a bowl at lower right; the clerk writes et as an ampersand-like form."}
+]
