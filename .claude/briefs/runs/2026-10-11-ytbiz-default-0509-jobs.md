@@ -98,3 +98,17 @@ only for a unit that carries one of the four codes, at most 4 leaves). Any value
 published), never S by context; re-run bamf/decode_bamf.py with the additions and `--check`. Do not re-score the gate. Update NOTES.md
 section + Remaining gaps; gaps_check must pass. Report what was found and where it was not found; do not classify novelty.
 After THUR-BAMF2: V-BAMF (Opus, verifier, cap 3, box 60): first verifier of the p.160 fragments (rule 10 + rule 4a), briefed separately.
+
+### V-BAMF (Opus, first verifier, cap 3, box 60 min): thurloe-printed, Birch vol 6 p.160 l.19092 Bamfylde run (Paris, Apr 1657)
+You are a session separate from THUR-BAMF and THUR-BAMF2 (the solvers). CLAUDE.md "Verifier brief (template)" steps 1-5 for this one item,
+plus rule 4a depth. Inputs: NOTES.md "## THUR-BAMF" and "## THUR-BAMF2" sections, PREREG-THUR-BAMF.md, bamf/gate_bamf.json,
+bamf/decode_bamf.py (`--check`), bamf/reading_bamf_p160.txt, bamf/tomokiyo/ (Tomokiyo's tables, credited). Check: (a) PREREG precedes the
+score (git log); (b) the gate and the --check reproduce; (c) per-token grades (C from Birch's gloss, H from Tomokiyo's published table, M for
+94/745, U 356) -- correct any over-grade; the 94 conflict (our y vs Tomokiyo t) is a data conflict (rule 4), not settled by majority;
+(d) novelty: search for this passage's plaintext or a decipherment (Birch itself elsewhere, Tomokiyo's thurloe pages, Firth/Gardiner,
+CSP Domestic 1656-57, Bampfield scholarship -- e.g. Marshall's work on Bampfield -- IA full text, OpenAlex/S2/CORE; Google Books may be at
+its daily quota: log it unreachable, do not retry), JSTOR-QUEUE rows in families (i) and (ii); (e) depth: the run is 24 letter codes,
+below the authentication distance -- D1 expected unless a clause clears it. Write ciphers/thurloe-printed/AUDIT.md "## AUDIT (V-BAMF)"
+with N-class, key source (`ours`: rebuilt from print; Tomokiyo's table `published` as a cross-check), depth, safe and unsafe sentence; add
+the status.json result row via the folder's usual pattern (rule 4a fields; `python3 tools/depth_check.py` after); a SECOND-OPINIONS-QUEUE
+row only if N3+ AND D2+. Do not decode further. Hosts: IA, open indexes (<= 40 each), cryptiana (on disk preferred).
