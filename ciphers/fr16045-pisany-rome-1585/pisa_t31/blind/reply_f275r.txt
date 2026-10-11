@@ -1,0 +1,15 @@
+Q01	best=U	second=O	confidence=low	cross-shaped sign with blob ends, upper-left stroke curling to upper-right blob, tail to lower-left; like a cursive x, faint
+Q02	best=O	second=U	confidence=high	large slanted X with a b/o loop at lower right
+Q03	best=H	second=C	confidence=medium	y- or ŋ-shaped sign with a looped descender, faint, right of an n-like sign
+Q04	best=O	second=U	confidence=high	long diagonal stroke crossed, with an o loop at lower right
+Q05	best=O	second=U	confidence=medium	X with a loop at the right, partly faded
+Q06	best=C	second=H	confidence=medium	y with a large descender loop
+Q07	best=N	second=D	confidence=low	J- or I-shaped sign with a top bar and a left-curling foot, small u at right; no clear table match
+Q08	best=O	second=U	confidence=high	large X with a ʒ/b loop at lower right
+Q09	best=O	second=U	confidence=high	X with an o loop, crossed by a vertical separator stroke
+Q10	best=U	second=O	confidence=high	cursive x, after a slash
+Q11	best=A	second=K	confidence=medium	looped p/ρ shape with a descender
+Q12	best=P	second=H	confidence=high	cursive m with a descender on the last stroke
+Q13	best=O	second=U	confidence=medium	X with an ɔ loop at the right
+Q14	best=S	second=G	confidence=low	d/∂-like looped sign with a curling right tail (looks like "ol")
+Table cells drawn with a circle: A, F, H, I, M, P, Q, V.

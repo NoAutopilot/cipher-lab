@@ -13,7 +13,7 @@ for pg, d, *_ in V.PAGES:
     picks = V.picks_of(pg); assert len(picks) == 1, (pg, picks)
     txt = ''.join('\n' if x is None else f'{x[0]}\t{x[1]}\n'
                   for x in V.relabel(V.U.read(f'{d}/ciphertext_{pg}_preT27.tsv'), pg, picks))
-    dst = f'{d}/ciphertext_{pg}.tsv'
+    dst = f'{d}/ciphertext_{pg}.tsv' if pg != 'f275r' else f'{d}/ciphertext_{pg}_preT31.tsv'  # PISA-T31: pisa_t31/apply_t31.py derives the committed f.275r file from this copy
     if '--check' in sys.argv:
         ok = open(os.path.join(T, dst)).read() == txt; bad += not ok; print(dst, 'up to date' if ok else 'STALE')
     else:

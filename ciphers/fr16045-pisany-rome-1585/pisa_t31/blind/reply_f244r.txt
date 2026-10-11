@@ -1,0 +1,10 @@
+Q01	best=H	second=M	confidence=medium	n-shaped sign with right leg descending and hooking left (ŋ); H cell is circled
+Q02	best=O	second=U	confidence=high	long diagonal stroke from upper left crossed by a short stroke, curl or loop at lower right (Xo)
+Q03	best=P	second=H	confidence=high	m with last leg extended below the line; P cell is circled
+Q04	best=A	second=F	confidence=low	small loop with a tail sweeping down to the left (sideways ρ / ∝); A cell is circled
+Q05	best=C	second=V	confidence=medium	y-shaped sign with a long descender curving left
+Q06	best=A	second=S	confidence=low	tile centre falls between an 8/δ-like sign (left) and a ∝/ρ loop with a left tail (right); I matched the right-hand sign, the left one could be S
+Q07	best=L	second=D	confidence=low	vertical stroke with a crossbar and a loop on the right (crossed t or R-like)
+Q08	best=A	second=G	confidence=low	tile centre falls between a ∝ loop with a tail (left) and a tall S-curve stroke like λ (right); no table cell clearly matches the λ shape
+Q09	best=O	second=U	confidence=high	heavy diagonal stroke crossed by a short stroke, ending in an o-loop at lower right (Xo)
+Q10	best=N	second=J	confidence=low	T-shaped sign (crossbar on top of a vertical stroke), which is N's ⊥ upside down

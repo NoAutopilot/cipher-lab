@@ -164,3 +164,8 @@ No key86 change (running-text gloss, no sign-level value; T40 not covered).
 | hypothesis | instrument | control | target | verdict |
 |---|---|---|---|---|
 | f.275r T45/T47/T57-labelled signs are other table cells (T45 -> u, T47 -> f, T57 -> n) | blind Opus tile vs 22 table cells, UNA-PISA instrument unchanged (una_pisa/, PREREG-PISA-275R.md) | known-answer GK 5/5 on the same call | T57: 4 settle T32, 6 settle T57, 1 unsettled; T47: 1 T27 (f), 1 T31 (m), 1 unsettled; T45: 1 T45, 1 unsettled | key-cell rule not met for any label (T57 6 on its own cell); label-merge again (barred varpi T32 vs open omega T57), 4 T32 relabel candidates; key86 unchanged; next: UNA2-PISA-shape re-score of the 4 on f.275r |
+
+## PISA-T31 third blind reader on the 14 UNSETTLED T31 tokens (11 Oct 2026)
+- UNA-PISA instrument, blind Opus, GK 5/5 (f.244r call) and 5/5 (f.275r call). Settled by two readers (this + R9-PIS2): f.275r T36 x4, T45 x1, T31 x1; f.244r none.
+- Re-score of the 5 other-value relabels on f.275r (key86 unchanged): 0.6634 -> 0.6676, above key-shuffle p99 0.464 / order p99 0.498, control 5/5,
+  4 of 5 identical to the copy under the new value vs 0 under m: PASS, committed (pisa_t31/). key86 T31 = m untouched; one token (L03 i31) settles on T31.

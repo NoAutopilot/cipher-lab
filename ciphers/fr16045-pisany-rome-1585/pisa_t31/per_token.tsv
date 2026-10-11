@@ -1,0 +1,6 @@
+page	line	idx0	pisa_t31	old_label	old_copy	old_identical	new_label	new_copy	new_identical
+f275r	L04	7	T36	T31	-	False	T36	s	True
+f275r	L05	0	T36	T31	s	False	T36	s	True
+f275r	L10	13	T36	T31	e	False	T36	e	False
+f275r	L15	9	T36	T31	s	False	T36	s	True
+f275r	L15	33	T45	T31	o	False	T45	o	True

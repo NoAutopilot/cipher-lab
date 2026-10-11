@@ -1,0 +1,86 @@
+{
+ "err": 0.215,
+ "file": "tx86e/ciphertext_f275r.tsv",
+ "picks": {
+  "L04 i7": "T36",
+  "L05 i0": "T36",
+  "L10 i13": "T36",
+  "L15 i9": "T36",
+  "L15 i33": "T45"
+ },
+ "old": {
+  "tx86e/ciphertext_f275r.tsv": {
+   "tokens": 554,
+   "dropped": 7,
+   "score": 0.6634,
+   "keyshuffle_p99": 0.4666,
+   "order_p99": 0.4923,
+   "above_both": true
+  }
+ },
+ "new": {
+  "pisa_t31/tx/ciphertext_f275r.tsv": {
+   "tokens": 554,
+   "dropped": 7,
+   "score": 0.6676,
+   "keyshuffle_p99": 0.4643,
+   "order_p99": 0.4979,
+   "above_both": true
+  }
+ },
+ "positive_control": {
+  "seeds": [
+   {
+    "seed": 0,
+    "N": 713,
+    "score": 0.6693,
+    "keyshuffle_p99": 0.4514,
+    "order_p99": 0.4658,
+    "pass": true
+   },
+   {
+    "seed": 1,
+    "N": 713,
+    "score": 0.7385,
+    "keyshuffle_p99": 0.4536,
+    "order_p99": 0.4548,
+    "pass": true
+   },
+   {
+    "seed": 2,
+    "N": 713,
+    "score": 0.6861,
+    "keyshuffle_p99": 0.458,
+    "order_p99": 0.452,
+    "pass": true
+   },
+   {
+    "seed": 3,
+    "N": 713,
+    "score": 0.6707,
+    "keyshuffle_p99": 0.4505,
+    "order_p99": 0.4772,
+    "pass": true
+   },
+   {
+    "seed": 4,
+    "N": 713,
+    "score": 0.6803,
+    "keyshuffle_p99": 0.4541,
+    "order_p99": 0.4539,
+    "pass": true
+   }
+  ],
+  "passed": 5,
+  "pass": true
+ },
+ "G1": true,
+ "G2": true,
+ "G3": {
+  "relabelled": 5,
+  "identical_new": 4,
+  "identical_old_m": 0,
+  "pass": true
+ },
+ "PASS": true
+}

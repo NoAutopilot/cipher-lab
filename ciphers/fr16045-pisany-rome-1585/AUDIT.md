@@ -399,3 +399,8 @@ above and are not changed. `tools/depth_check.py` exits 0 after the edit. SECOND
 11 Oct), so nothing changes there. The section 1/3a tables carry an "[11 Oct: ... AUDIT 5]" note; the 5 Oct figures there stay as written.
 Verdict: the relabel is a pre-registered transcription-label change, with key86 untouched; it is consistent with its PREREG and the blind
 call. Carried over; item C counts are reconciled and propagated; N0 / D1 stand.
+
+## Carry-over, PISA-T31 (11 Oct 2026; facts only, for a verifier -- no class or depth change)
+f.275r (not an audited item): 5 T31 tokens relabelled after a blind third read (GK 5/5) and a pre-registered re-score PASS (PREREG-PISA-T31.md, pisa_t31/):
+L04 i7, L05 i0, L10 i13, L15 i9 T31 -> T36 (m -> s); L15 i33 T31 -> T45 (m -> o). f.275r grades C 369 -> 373, M 182 -> 178. Judge FAIL before and after (-1.229 / -1.221).
+No SECOND-OPINIONS-QUEUE row exists for this folder.
