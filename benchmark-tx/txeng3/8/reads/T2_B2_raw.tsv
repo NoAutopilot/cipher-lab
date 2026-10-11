@@ -1,0 +1,184 @@
+passage	pos	sign_id	alt	conf	note
+L07	1	T90		H	line start
+L07	2	T86		H	
+L07	3	T60		H	
+L07	4	T98	T18	M	circle on vertical through it
+L07	5	T86		H	
+L07	6	T60		H	
+L07	7	T63		H	
+L07	8	T19		H	
+L07	9	T90		H	
+L07	10	T83	T29	L	reversed-3 joined to crossed c
+L07	11	T80		H	
+L07	12	T76	T26	M	
+L07	13	T36	T65	M	
+L07	14	T27	T54	M	
+L07	15	T90		H	
+L07	16	T37		H	
+L07	17	T58		H	
+L07	18	T54		H	
+L07	19	T86		H	
+L07	20	T60		H	
+L07	21	T53		H	
+L07	22	T86		H	
+L07	23	T98	T18	M	circle on vertical through it
+L07	24	T85		H	
+L07	25	T13		M	
+L07	26	T37		H	
+L07	27	T36	T65	M	
+L07	28	T85		H	
+L07	29	T92	T50	M	
+L07	30	T37		H	line end
+L08	1	T63		H	line start
+L08	2	T86		H	
+L08	3	T51	T65	M	
+L08	4	T45	T36	M	circle with stem rising above (d-like)
+L08	5	T51	T65	M	
+L08	6	T19		H	
+L08	7	T83	T29	L	reversed-3 joined to crossed c
+L08	8	T85		H	
+L08	9	T60		H	
+L08	10	T92	T50	M	
+L08	11	T80		H	
+L08	12	T64		H	
+L08	13	T37		H	
+L08	14	T33		M	inverted T with two short verticals
+L08	15	T45	T36	M	circle with stem rising above (d-like)
+L08	16	T60		H	
+L08	17	T98	T18	M	circle on vertical through it
+L08	18	T19		H	
+L08	19	T25		H	
+L08	20	T51	T65	M	
+L08	21	T36	T65	M	
+L08	22	T85		H	
+L08	23	T98	T18	M	circle on vertical through it
+L08	24	T65		H	
+L08	25	T45	T36	M	circle with stem rising above (d-like)
+L08	26	T13		M	
+L08	27	T55		H	
+L08	28	T98	T18	M	circle on vertical through it
+L08	29	T27	T54	M	
+L08	30	T11		M	line end
+L09	1	T29		M	line start
+L09	2	T84		H	
+L09	3	T98	T18	M	circle on vertical through it
+L09	4	T27	T54	M	
+L09	5	T83	T29	L	reversed-3 joined to crossed c
+L09	6	T37		H	
+L09	7	T33		M	inverted T with two short verticals
+L09	8	T86		H	
+L09	9	T13		M	
+L09	10	T52		H	
+L09	11	T60		H	
+L09	12	T45	T36	M	circle with stem rising above (d-like)
+L09	13	T13		M	
+L09	14	T86		H	
+L09	15	T54		H	
+L09	16	T37		H	
+L09	17	T60		H	
+L09	18	T80		H	
+L09	19	T19		H	
+L09	20	T49		M	
+L09	21	T86		H	
+L09	22	T58		H	
+L09	23	T85		H	
+L09	24	T90		H	
+L09	25	T25		H	
+L09	26	T33		M	inverted T with two short verticals
+L09	27	T90		H	
+L09	28	T37		H	line end
+L10	1	T53		H	line start
+L10	2	T86		H	
+L10	3	T98	T18	M	circle on vertical through it
+L10	4	T76	T26	M	
+L10	5	T92	T50	M	
+L10	6	T19		H	
+L10	7	T58		H	
+L10	8	T98	T18	M	circle on vertical through it
+L10	9	T85		H	
+L10	10	T53		H	
+L10	11	T27	T54	M	
+L10	12	T98	T18	M	circle on vertical through it
+L10	13	T55		H	
+L10	14	T60		H	
+L10	15	T55		H	
+L10	16	T15		M	
+L10	17	T86		H	
+L10	18	T70		H	
+L10	19	T58		H	
+L10	20	T27	T54	M	
+L10	21	T60		H	
+L10	22	T45	T36	M	circle with stem rising above (d-like)
+L10	23	T90		H	
+L10	24	T33		M	inverted T with two short verticals
+L10	25	T19		H	
+L10	26	T24	T29	M	
+L10	27	T37		H	
+L10	28	T83	T29	L	reversed-3 joined to crossed c
+L10	29	T45	T36	M	circle with stem rising above (d-like)
+L10	30	T98	T18	M	circle on vertical through it
+L10	31	T27	T54	M	line end
+L11	1	T26	T89	L	line start
+L11	2	T33		M	inverted T with two short verticals
+L11	3	T19		H	
+L11	4	T51	T65	M	
+L11	5	T76	T26	M	
+L11	6	T92	T50	M	
+L11	7	T45	T36	M	circle with stem rising above (d-like)
+L11	8	T60		H	
+L11	9	T10		H	
+L11	10	T85		H	
+L11	11	T56	T50	L	
+L11	12	T37		H	
+L11	13	T33		M	inverted T with two short verticals
+L11	14	T45	T36	M	circle with stem rising above (d-like)
+L11	15	T83	T29	L	reversed-3 joined to crossed c
+L11	16	T86		H	
+L11	17	T80		H	
+L11	18	T19		H	
+L11	19	T24	T29	M	
+L11	20	T19		H	
+L11	21	T83	T29	L	reversed-3 joined to crossed c
+L11	22	T51	T65	M	
+L11	23	T37		H	
+L11	24	T63		H	
+L11	25	T80		H	
+L11	26	T90		H	
+L11	27	T55		H	
+L11	28	T53		H	
+L11	29	T86		H	
+L11	30	T83	T29	L	reversed-3 joined to crossed c
+L11	31	T51	T65	M	
+L11	32	T27	T54	M	line end; partly cut at right edge
+L12	1	T97		H	line start
+L12	2	T27	T54	M	
+L12	3	T54		H	
+L12	4	T45	T36	M	circle with stem rising above (d-like)
+L12	5	T63		H	
+L12	6	T27	T54	M	
+L12	7	T37		H	
+L12	8	T97		H	
+L12	9	T86		H	
+L12	10	T76	T26	M	
+L12	11	T19		H	
+L12	12	T86		H	
+L12	13	T60		H	
+L12	14	T86		H	
+L12	15	T36	T65	M	
+L12	16	T45	T36	M	circle with stem rising above (d-like)
+L12	17	T57		H	
+L12	18	T37		H	
+L12	19	T83	T29	L	reversed-3 joined to crossed c
+L12	20	T80		H	
+L12	21	T19		H	
+L12	22	T26	T89	L	
+L12	23	X_A		L	capital A with crossing stroke
+L12	24	T98	T18	M	circle on vertical through it
+L12	25	T45	T36	M	circle with stem rising above (d-like)
+L12	26	T33		M	inverted T with two short verticals
+L12	27	T19		H	
+L12	28	T51	T65	M	
+L12	29	T45	T36	M	circle with stem rising above (d-like)
+L12	30	T37		H	
+L12	31	T57		H	
+L12	32	T27	T54	M	line end; partly cut at right edge

@@ -1,0 +1,16 @@
+line	col	A	B	flagged	crop	both_conf
+L01	2	x+	x+	B		A:H/B:M
+L01	18	sqt	sqt	B		A:H/B:M
+L02	5	tau	tau	A		A:M/B:H
+L02	17	od	od	B		A:H/B:M
+L03	12	ob	ob	B		A:H/B:M
+L08	6	xr	xr	B		A:H/B:M
+L11	1	x	x	AB		A:M/B:L
+L11	2	BLOT	BLOT	AB		A:M/B:L
+L11	13	Ib	Ib	B		A:H/B:M
+L12	5	d6	d6	A		A:M/B:H
+L12	6	x_	x_	B		A:H/B:M
+L13	11	ob	ob	B		A:H/B:M
+L14	12	Ib	Ib	B		A:H/B:M
+L15	12	th	th	B		A:H/B:M
+L16	14	aab	aab	B		A:H/B:M

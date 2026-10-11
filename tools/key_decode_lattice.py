@@ -59,7 +59,18 @@ Subcommands
                from are written in M.tsv's '#' header. --shuffle-offdiag SEED permutes each true row's off-diagonal cells
                (same row mass): the rule-3 control matrix. Prints the top off-diagonal mass.
   decode       topk.tsv --key key.tsv (--lang L | --corpus F...) [--truth truth.tsv] [--shuffles N] [--power-err E]
-               [--out-prefix P] writes P.decode.tsv (line pos top1 chosen value prior changed), P.plain.txt, P.json.
+               [--out-prefix P] writes P.decode.tsv (line pos top1 chosen value prior changed grade_cap pinned),
+               P.plain.txt, P.json.
+               --pins PINS.tsv (TXE3-9, 11 Oct 2026; benchmark-tx/PREREG-txeng3-9.md): a TSV line, pos, sign of decided
+               positions (an owner's sorter decision, a verifier-upheld relabel). At a pinned position the candidate set
+               is replaced by {sign: 1.0} before the Viterbi pass, so the decode may not change it and the language
+               model sees the decided letter in context; every other position is decoded as before. A pin whose sign
+               is not in the key is kept (it costs unk_cost, like any unkeyed candidate). The JSON reports pins read,
+               applied and unmatched (a pin on a position the lattice does not have), and how many pins differ from
+               the lattice top-1; P.decode.tsv marks pinned rows (pinned = 1, grade_cap = the pin's own source grade,
+               never S: the choice there is the decider's, not the key's). Shuffled-key and power controls run with
+               the same pins in place. Lesson it answers: labels were only ever applied after the decode (today's L);
+               a pin is the same decision applied inside it.
 
 Usage (Birago no.87 known-answer, from ciphers/nevers-birago-fr3251-1572/harvest):
   python3 tools/key_decode_lattice.py from-passes f178v/passA.tsv f178v/passB.tsv --ref ciphertext_f178v.tsv \\
@@ -122,6 +133,33 @@ def read_topk(p):
             order.append(k)
         lat[k][r["cand"]] = float(r["score"])
     return [(k, lat[k]) for k in order]
+
+
+def read_pins(p):
+    """{(line, pos): sign} from a TSV with columns line, pos, sign (TXE3-9). Blank signs are skipped."""
+    pins = {}
+    for r in read_tsv(p):
+        s = (r.get("sign") or "").strip()
+        if s:
+            pins[(r["line"], int(r["pos"]))] = s
+    return pins
+
+
+def apply_pins(lat, pins):
+    """Replace the candidate set at every pinned position by {sign: 1.0}; returns (new lattice, stats).
+    stats: read, applied, unmatched (pins on positions the lattice lacks), differ_top1 (pins that differ from the
+    lattice's own top-1 there). Positions without a pin are untouched."""
+    out, applied, differ = [], 0, 0
+    for k, cands in lat:
+        s = pins.get(k)
+        if s is None:
+            out.append((k, cands))
+            continue
+        applied += 1
+        if max(cands.items(), key=lambda kv: kv[1])[0] != s:
+            differ += 1
+        out.append((k, {s: 1.0}))
+    return out, {"read": len(pins), "applied": applied, "unmatched": len(pins) - applied, "differ_top1": differ}
 
 
 # ---------------------------------------------------------------- lattice synthesis
@@ -492,6 +530,10 @@ def truth_err(lat, seq, key, truth):
 
 def cmd_decode(args):
     lat = read_topk(args.topk)
+    pins, pin_stats = {}, None
+    if args.pins:
+        pins = read_pins(args.pins)
+        lat, pin_stats = apply_pins(lat, pins)
     key = read_key(args.key)
     model = load_model(args)
     lm = LM(model, args.unk_cost)
@@ -500,6 +542,8 @@ def cmd_decode(args):
     out = {"positions": len(lat), "lam": args.lam, "beam": args.beam, "bonus": lm.bonus, "unk_cost": lm.unk_cost,
            "changed": sum(1 for a, b in zip(t1, seq) if a != b),
            "score_top1": model.score(text_of(t1, key)), "score_lattice": model.score(text_of(seq, key))}
+    if pin_stats is not None:
+        out["pins"] = pin_stats
     if args.truth:
         truth = {}
         for r in read_tsv(args.truth):
@@ -513,10 +557,12 @@ def cmd_decode(args):
                              args.power_windows, args.power_shuffles, args.seed, args.lam, args.beam)
     if args.out_prefix:
         with open(args.out_prefix + ".decode.tsv", "w", encoding="utf-8") as f:
-            f.write("line\tpos\ttop1\tchosen\tvalue\tprior\tchanged\tgrade_cap\n")
+            f.write("line\tpos\ttop1\tchosen\tvalue\tprior\tchanged\tgrade_cap\tpinned\n")
             for (k, c), a, b in zip(lat, t1, seq):
                 ch = a != b
-                f.write(f"{k[0]}\t{k[1]}\t{a}\t{b}\t{key.get(b, '?')}\t{c.get(b, 0):.3f}\t{int(ch)}\t{'S' if ch else ''}\n")
+                pinned = k in pins
+                cap = "pin" if pinned else ("S" if ch else "")
+                f.write(f"{k[0]}\t{k[1]}\t{a}\t{b}\t{key.get(b, '?')}\t{c.get(b, 0):.3f}\t{int(ch)}\t{cap}\t{int(pinned)}\n")
         Path(args.out_prefix + ".plain.txt").write_text(text_of(seq, key) + "\n", encoding="utf-8")
         Path(args.out_prefix + ".json").write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
     print(json.dumps(out, indent=1))
@@ -677,6 +723,7 @@ def main(argv=None):
     d.add_argument("--power-windows", type=int, default=20); d.add_argument("--power-shuffles", type=int, default=50)
     d.add_argument("--power-len", type=int, default=0, help="synthetic window length in signs (default: the lattice's)")
     d.add_argument("--out-prefix")
+    d.add_argument("--pins", help="TXE3-9: TSV line, pos, sign of decided positions held fixed through the decode")
     a = ap.parse_args(argv)
     {"decode": cmd_decode, "from-passes": cmd_from_passes, "learn-confusion": cmd_learn_confusion}[a.cmd](a)
 

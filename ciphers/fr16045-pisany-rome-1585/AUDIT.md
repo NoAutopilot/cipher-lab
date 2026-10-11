@@ -79,7 +79,7 @@ decipherment; no claim of a new reading") is correct and stands.
 |---|---|---|---|---|---|---|
 | A f.247r | 365 | 236 / 122 / 7 (kp86g/grades_f247r.tsv) | 64.7 | 17 letters | **D1** | known-answer PASS kp86g (0.639 vs key-shuffle p99 0.431 / order p99 0.494, control 5/5 at e 0.268) |
 | B f.275v | 746 | 287 / 444 / 15 (kp86h/grades_f275v.tsv; L17-L20 all M after kp86h/kp86i local FAIL) | 38.5 | 15 letters | **D1** | full page PASS kp86h (0.514 vs 0.391 / 0.469, control 5/5 at e 0.190); L17-L20 FAIL twice |
-| C f.302v | 402 | 227 / 146 / 29 [9 Oct: 232 / 141 / 29, 57.7%, AUDIT 3] (kp87b/grades_f302v.tsv holds the script's 230 / 143; the 3 T31 tokens held at M per HYPOTHESES.md, as NOTES.md reports) | 56.5 | 13 letters | **D1** | known-answer PASS kp87b (0.590 vs 0.389 / 0.464, control 5/5 at e 0.335) |
+| C f.302v | 402 | 227 / 146 / 29 [9 Oct: 232 / 141 / 29, 57.7%, AUDIT 3; 11 Oct: 233 / 140 / 29, 58.0%, AUDIT 5] (kp87b/grades_f302v.tsv holds the script's 230 / 143; the 3 T31 tokens held at M per HYPOTHESES.md, as NOTES.md reports) | 56.5 | 13 letters | **D1** | known-answer PASS kp87b (0.590 vs 0.389 / 0.464, control 5/5 at e 0.335) |
 D1, "fragments read", on all three: the firm (C) tokens are letters scattered between M tokens, the longest unbroken firm
 stretch is 13-17 letters, and for a 73-cell homophonic table at two-reader transcription error 0.18-0.34 the authentication
 distance is of the order of 10^2 letters before liberties; no firm stretch comes near it, and no code value is read in two
@@ -163,7 +163,7 @@ this very item exists, so N0 holds whether or not it was ever printed. Confidenc
 |---|---|---|---|---|
 | A f.247r | 64.7 (C 236/365) | M 122, U 7: mostly ordinary letters, not names/codes | **D1** | longest firm run 17 letters, below the authentication distance; no code value read in two contexts; firm share < 80% |
 | B f.275v | 38.5 (C 287/746) | M 444, U 15 (L17-L20 all M) | **D1** | longest firm run 15 letters; as above |
-| C f.302v | 56.5 (C 227/402, T31 held) [9 Oct: 57.7, C 232/402, AUDIT 3] | M 146, U 29 | **D1** | longest firm run 13 letters; as above |
+| C f.302v | 56.5 (C 227/402, T31 held) [9 Oct: 57.7, C 232/402, AUDIT 3; 11 Oct: 58.0, C 233/402, AUDIT 5] | M 146, U 29 | **D1** | longest firm run 13 letters; as above |
 The C grades are licensed by an aggregate known-answer alignment against the period text, with controls on file (Audit 1, 3a);
 they are scattered letters, not a clause of our own reading, so D2 is not reached. No D2 content sentence is required.
 
@@ -332,3 +332,70 @@ Propagation: status.json carries no f.275r row (results 117-119 are f.247r, f.27
 SECOND-OPINIONS-QUEUE.tsv has no row for this folder (grep, 9 Oct) -- nothing to change.
 Verdict: the relabel is a pre-registered transcription-label change with key86 untouched; consistent with its PREREG and the blind call; carried
 over; no class raised.
+
+## AUDIT 5 (V-PISA3, 11 Oct 2026) -- verifier check of the UNA3-PISA carry-over: T47 -> T27 relabel (item C counts reconciled)
+
+Verifier session V-PISA3 (account 2, LANE DEFAULT-A2-0509; brief .claude/briefs/runs/2026-10-11-ytbiz-default-0509-jobs.md "V-PISA3"),
+05:2x-05:5x UTC by date -u. I am not UNA3-PISA's session, nor the tile readers (UNA-PISA, PISA-275R), nor any solver on this folder. Disk only,
+0 network, 0 subagent calls. Pattern: AUDIT 3 and AUDIT 4. Of the three pages, only f.302v is an audited item (C); f.275r and f.301v are
+checked for consistency and nothing is classed for them.
+
+Checked:
+- PREREG order: una3_pisa/PREREG-UNA3-PISA.md landed alone in 57cf2d97a (20:13:17 UTC 9 Oct). The scorer script followed in 57869de54
+  (20:16:11), the f.275r partial run log in 8713effa1 (20:33:02), and result.json, the relabel, the _preT27 copies, readings and grades in
+  e20db13e8 (20:46:55). The PREREG has no later edits (empty `git diff 57cf2d97a origin/main` on it), so G1-G3 were fixed before any score.
+- Transcription label, not key: key86.tsv and key.tsv show an empty git diff 57cf2d97a..e20db13e8, and no later commit touches them.
+  Each *_preT27.tsv is byte-identical (cmp) to the committed file as it stood at 57cf2d97a. A token diff of _preT27 against the committed
+  file finds exactly one change per page, each T47 -> T27: f.275r L03 o12, f.301v L07 o1, f.302v L07 o29. These are the three, and the only
+  three, una_pisa/result.tsv rows marked SETTLED-T27 (f275r Q15 high, f301v Q13 medium, f302v Q09 high). The 4 UNSETTLED T47 tokens and
+  f.275r L13 o28 (SETTLED-T31) were left as the PREREG says.
+- Reproducibility (rule 7): exit 0 from `una3_pisa/apply_t27.py --check` (all three up to date), `tx86e/apply_t32.py --check`,
+  `tx86e/apply_t36.py --check` and `una2_pisa/apply_t32.py --check`. `tools/decode_key.py ... --key key86.tsv --check` gives "reading up
+  to date", exit 0, on all three pages (f.275r 623 tokens H 554 / U 69; f.301v 375, H 315 / U 60; f.302v 439, H 378 / U 61). The rule-4
+  grade scripts `kp86e/t31_grades.py --grade`, `kp87a/cgrades87.py` and `kp87b/cgrades87b.py` regenerate their grades files with no git
+  diff. Readings: `git diff --word-diff` 57cf2d97a..e20db13e8 shows exactly one "m" -> "f" per page.
+- Scorer re-run: `python3 una3_pisa/una3_pisa.py`, re-run from scratch (it reads the _preT27 copies); my 25-min timeout stopped it after f.275r (24.8 CPU-min for one page's 1000+1000 nulls, the control and the 1-of-n draws; nothing it writes was changed: result.json and per_token.tsv are written only at the end). f.275r reproduces result.json exactly: old 0.6620 (key-shuffle p99 0.4661, order p99 0.4937), relabel 0.6634 (0.4666 / 0.4923), all-T47 0.6620, passes A/B 0.6308 / 0.6590, control 5/5. For f.301v and f.302v I recomputed the old and relabelled reconciled scores and the per-token alignment directly with the same imported functions (nw_score, una2_pisa.per_token; no nulls): f.301v 0.6561 -> 0.6587, f.302v 0.6072 -> 0.6093, as committed, and the per-token rows match una3_pisa/per_token.tsv (f.301v L07 o1 and f.302v L07 o29 copy f, not identical under m and identical under f; the UNSETTLED rows unchanged). G3 3 of 3 f vs 0 of 3 m, reproduced. Not re-run here: the f.301v/f.302v key-shuffle and order p99s and controls (committed 0.400 / 0.479 and 0.393 / 0.463, controls 5/5); the relabelled scores clear them by 0.18 and 0.15, and the pre-edit p99s were re-read by AUDIT 3, so G1/G2 stand on the committed figures.
+- Judge (rule 7), re-run: `tools/judge_plaintext.py specs/fr16045-pisany-rome-1585.json --file <reading>` FAILs on f.275r (-1.229;
+  null_p99 -1.717, real_p05 -0.928, N=770), f.301v (-1.366; -1.69, -0.959, N=468) and f.302v (-1.391; -1.701, -0.942, N=586), the same
+  figures UNA3-PISA logged.
+- Caveat, as the carry-over says: the 1-of-n descriptive nulls are degenerate (n = 4, 2, 4). On f.302v the all-T47 relabel scores higher
+  (0.6115) and the UNSETTLED L09 o8 also aligns to copy f. So, as in AUDITS 3 and 4, the relabel rests on G3 and the blind tile call, not
+  on the score rise, which is +0.0014 to +0.0026 per page. The f.301v token's call was at medium confidence.
+- Prior work: `tools/prior_work.py fr16045-pisany-rome-1585 --item-spec 'shelfmark=BnF fr.16045;folio=302v;date=1587-03-24'
+  --step-type propagate-revision --offline` returned exit 4 (8 LEADs). Seven of them are the folder's own done escalation markers and one is
+  this session's own claim; I recorded all eight CLEAR, and the re-run returned exit 0 (plaintext KNOWN, step CONTEXT).
+
+Item C count reconciliation (the carry-over's open point). The grades file and the audit figures differ only by convention.
+kp87b/grades_f302v.tsv grades three T31 tokens C (L01 p19, L06 p9, L11 p4); Audits 1-3 hold those three at M (HYPOTHESES.md). I
+recounted from the committed file at both states, holding the three T31 tokens at M:
+| state | file (C / M / U) | T31 held (C / M / U) | firm % | longest firm run |
+|---|---|---|---|---|
+| 57cf2d97a (after UNA2-PISA) | 235 / 138 / 29 | 232 / 141 / 29 (= AUDIT 3) | 57.7 | 13 tokens / 16 letters, L09 p22 |
+| HEAD (after UNA3-PISA) | 236 / 137 / 29 | **233 / 140 / 29** | **58.0** | 13 tokens / 16 letters, L09 p22 (unchanged) |
+The only row that changes is L07 p29 (T47 m M -> T27 f C), and it joins a 3-token firm run (L07 p28-p30), far shorter than the longest.
+True counts per item, rule-4 grades:
+- A, f.247r: kp86g/grades_f247r.tsv C 236 / M 122 / U 7 (365 tokens; no C-graded T31 to hold), 64.7%. UNA3-PISA did not touch it.
+- B, f.275v: kp86h/grades_f275v.tsv C 287 / M 444 / U 15 (746; no C-graded T31), 38.5%. Not touched.
+- C, f.302v: C 233 / M 140 / U 29 (402), 58.0%.
+- All items: H 0 and S 0. The folder's audits grade a published-key token as C when it aligns with the known period text and as M
+  otherwise. decode_key's "H" (key-applied) flag in the reading_*_tokens.tsv files is a tool label, not a rule-4 grade, and it is not
+  counted here (the same convention as Audits 1-4).
+
+Depth (rule 4a): the firm share is 58% (< 80%) and the longest firm stretch is 16 letters, far below the authentication distance (of the
+order of 10^2 letters). No code value reads in two contexts. **D1 on item C, unchanged**; A and B are unchanged.
+Novelty: the reading change on item C is one letter ("m" -> "f", L07 "m faire" -> "f faire"). The plaintext source (the leaf's margin
+decipherment and Colbert 16 pt II pp.341-342) and the published key are unchanged. **N0 unchanged**; no class raised.
+
+Safe sentence (item C), current: "Tomokiyo's published table reads the f.302v cipher (24 Mar 1587) at letter level against the leaf's own
+period margin decipherment and the Colbert 16 pt II copy (known-answer PASS, about 58% of tokens confirmed; D1); the plaintext is known from
+those two manuscripts and was not located in print in the editions and full-text indexes searched on 5 Oct 2026 (two audits)." Unsafe: as
+section 5.
+
+Corrections: none to the carry-over's facts. Its item C figures (C 236 / M 137) are the raw grades-file count; the audit-convention count is
+C 233 / M 140, given above, and that is the figure propagated.
+Propagation: status.json results[119] (f.302v): grade counts C 232 / M 141 -> C 233 / M 140 (U 29), depth_pct 57.7 -> 58.0, depth_check
+extended. line ("about 58%"), depth, novelty and audit_status are unchanged. results[117] (f.247r) and [118] (f.275v) agree with the recount
+above and are not changed. `tools/depth_check.py` exits 0 after the edit. SECOND-OPINIONS-QUEUE.tsv has no row for this folder (grep,
+11 Oct), so nothing changes there. The section 1/3a tables carry an "[11 Oct: ... AUDIT 5]" note; the 5 Oct figures there stay as written.
+Verdict: the relabel is a pre-registered transcription-label change, with key86 untouched; it is consistent with its PREREG and the blind
+call. Carried over; item C counts are reconciled and propagated; N0 / D1 stand.

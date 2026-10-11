@@ -1,0 +1,6 @@
+vivonne1573-f102r-dev2 [dev] as measured: err_true(0.75-indel align) 0.849 (354/417) | standard SER (unit-cost Levenshtein) 0.796 (332/417): S 239 D 41 I 52 | wrong 185 deleted 66 inserted 103 | excluded 245 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 185/351 = 0.527 | coverage 351/417 = 0.842
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 1.037 (224/216) | standard SER (unit-cost Levenshtein) 0.861 (186/216): S 111 D 23 I 52 | wrong 86 deleted 35 inserted 103 | excluded 446 | lines missing 0 (0 signs counted deleted) [201 flagged] | position errors 121/216 = 0.560 | insertions 103 / read 653 = 0.158
+    reader abstentions 0 | accepted-token error 86/181 = 0.475 | coverage 181/216 = 0.838
+  top confusions (truth value <- read): t<-<deleted> x12, u<-tz x12, e<-tz x10, a<-<deleted> x9, o<-tz x8, i<-<deleted> x7, a<-tz x7, u<-# x6
+split dev: err_true(0.75-indel align) 0.849 (354/417) | standard SER 0.796 (332/417)

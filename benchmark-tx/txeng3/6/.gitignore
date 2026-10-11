@@ -1,0 +1,7 @@
+seg/*/crops/
+seg/*/bitmaps.npz
+seg/*/signs.tsv
+seg/*/marks.tsv
+seg/*/pages.json
+seg/grid_*/
+cls/

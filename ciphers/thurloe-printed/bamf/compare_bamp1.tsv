@@ -1,0 +1,84 @@
+code	ours	ours_attested	tomokiyo	status
+2	d	1/1	d	agree
+3			i/j	absent_ours
+4			c/p	absent_ours
+5			l	absent_ours
+6	d	2/2	d	agree
+7	c	1/1	c	agree
+8	o	3/3	o	agree
+9			c	absent_ours
+10			b/d	absent_ours
+11	p	2/2	p	agree
+12	a	6/6	a	agree
+13	b	2/2	b	agree
+15			a	absent_ours
+16	d	3/3	d	agree
+17	a	3/3	a	agree
+18	b	1/1	b	agree
+19	a	1/1	a	agree
+20	s	6/6	s	agree
+21	f	2/2	f	agree
+22	e	5/5	e	agree
+23	g	3/3	g	agree
+24	m	2/2	m	agree
+25	o	1/1	x/e	disagree
+26	h	3/3	h	agree
+27	e	2/2	e	agree
+28			g/x	absent_ours
+29			h	absent_ours
+30	e	8/10	e	agree
+31	i	5/5	i	agree
+32	e	3/3	e	agree
+33	f	2/2	f	agree
+34	k	1/1	k	agree
+35	o	2/2	o	agree
+36	r	8/8	r	agree
+37	t	5/5	t	agree
+38			k	absent_ours
+39	y	2/2	y	agree
+40			o	absent_ours
+41	l	4/4	l	agree
+42	i	4/4	i	agree
+43	n	4/4	n	agree
+44	g	3/3	g	agree
+45			p	absent_ours
+46	n	4/4	n	agree
+47			l	absent_ours
+48	o	1/1	o	agree
+49	m	1/1	m	agree
+50	o	2/2	o	agree
+51	e	2/2	i	disagree
+52	n	2/2	n	agree
+53			m/-	absent_ours
+54	l	1/1	l	agree
+55			-	absent_ours
+56	n	2/2	n	agree
+58			-	absent_ours
+59	i	1/1	i	agree
+60			l	absent_ours
+61	o	3/3	o	agree
+62	p	3/3	p	agree
+63			a	absent_ours
+64	r	3/3	r	agree
+65			-	absent_ours
+66	r	2/2	r	agree
+68			h	absent_ours
+70			s	absent_ours
+72	u	3/4	u	agree
+73	w	1/1	w	agree
+74	t	5/5	t	agree
+76			w/u	absent_ours
+80			t	absent_ours
+81			-	absent_ours
+82	s	2/2	s	agree
+83			s	absent_ours
+84			u	absent_ours
+85			o	absent_ours
+86			o/d	absent_ours
+90			-	absent_ours
+92	e	1/1	e	agree
+93	u	1/1	u	agree
+94			t	absent_ours
+97			y	absent_ours
+99			-	absent_ours
+# counts: absent_ours 31, agree 49, disagree 2

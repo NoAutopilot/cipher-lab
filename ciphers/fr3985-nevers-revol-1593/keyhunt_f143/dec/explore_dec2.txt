@@ -1,0 +1,5 @@
+T pass R (fresh, Sonnet) f.143r L05-L08	S_key60 -1.4224	len-class null mean -1.5974 p95 -1.3664	rank 105/1001	multi-letter-value share 0.39
+T pass P (KH1-F) f.143r L05-L08	S_key60 -1.6165	len-class null mean -1.8398 p95 -1.6204	rank 48/1001	multi-letter-value share 0.22
+T pass Q (KH1-F, report only) f.143r L06-L08	S_key60 -1.3070	len-class null mean -1.6272 p95 -1.4324	rank 4/1001	multi-letter-value share 0.40
+M reverse arm fr.4715 f.61r (Mayenne key)	S_key60 -1.3121	len-class null mean -1.3896 p95 -1.0590	rank 423/1001	multi-letter-value share 0.82
+C positive control fr.3986 f.152 passD (no.60)	S_key60 -1.2943	len-class null mean -1.5650 p95 -1.3262	rank 37/1001	multi-letter-value share 0.36

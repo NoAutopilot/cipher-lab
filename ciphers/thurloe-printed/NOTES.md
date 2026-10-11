@@ -3648,3 +3648,143 @@ Read so far: the p.72 key on Birch I pp.301, 308, 309, 340, 351 (p.301 at M only
 - [x] image-check: leaves n330, n331, n447 read; crops committed
 - [x] retry: p418top crop missed line 1; 297/369 taken from pass A + OCR and marked so
 Verdict: keep going: 1 internal gap; cheapest next: locate Brieven V (1723-25) / the 1725 Verbael on IA for the Dutch of 27 June and 22 Aug, ~$0.5
+
+## THUR-BRV (LANE DEFAULT-A2-0509, account 2, worker Sonnet 5.5, 11 Oct 2026 05:23-05:4x UTC by date -u)
+Brief: .claude/briefs/runs/2026-10-11-ytbiz-default-0509-jobs.md "### THUR-BRV". Question: are Brieven V (1723-25) and the 1725 *Verbael* on the Internet Archive, and does any hold the Dutch of Beverning's 27 June and 22 Aug 1653 letters (Birch I pp.301, 418)? Nothing was transcribed, decoded or graded; no reading is claimed.
+
+**Prior work (step 0).** `prior_work.py thurloe-printed --item-spec 'shelfmark=Brieven geschreven ende gewisselt 1723-25 / Verbael 1725;sender=Beverning;recipient=De Witt;date=1653-06-27' --step-type lookup --fetch`: exit 4. The one LEAD is this job's own live claim (`1-own`, target-level); the UNCHECKED rows (Tomokiyo and solver caches by unit, Birch window) were answered by THUR-DUTCH, DUTCH-MORE and V-DUTCH (10 Oct 2026) for this question and not re-run; check 1 by hand: the gap is in the DUTCH-MORE Remaining gaps and V-DUTCH's AUDIT.md (family c: "IA title search 0 items"), nothing done on IA beyond that title search.
+
+**Route and counts.** archive.org only: advancedsearch 8 (JSON, fl identifier/title/volume/year/access), metadata 10, `_djvu.txt` 4; 22 requests, >= 1.6 s apart, descriptive UA, all 200, no 429/403/challenge. djvu text kept in scratch (re-fetch `https://archive.org/download/<id>/<id>_djvu.txt`). V-DUTCH's "title search 0 items" is explained: the catalogue title is "Brieven, geschreven ende gewisselt tusschen" (the rest of the title page is absent), found with `title:(brieven gewisselt) AND (witt OR wit OR witte)`; the 1725 French counterpart is under "Lettres et negociations entre Mr. Jean de Witt".
+
+**Candidates (identifier | volume | year | access | text checked).** None carries `access-restricted-item`, a licenseurl or `is_dark`: all are full view (public-domain scans, `_djvu.txt` served).
+| identifier | what | access | djvu text holds 27 June / 22 Aug 1653 Beverning letter? |
+|---|---|---|---|
+| brievengeschreve01witt .. brievengeschreve06witt | Brieven, geschreven ende gewisselt tusschen ... De Witt ... ende de gevolmaghtigden, vols 1-6 (JCB copy; vols 1-2 1723, 3-4 1724, 5-6 1725; 738/716/938/946/610/632 images) | full view | vol 5 and 6 read; vols 1-4 not fetched (their contents by the title page: France, Sweden, Nieuport in England from 18 Dec 1654, 1660-69) |
+| brieven00nethgoog | Brieven, Michigan copy via Google, vol 1 ("EERSTE DEEL", 736 images) | full view | 0 hits for Beverningh; not the 1653 London correspondence |
+| brievendeelwnie00nethgoog | same Michigan set, vols 3-4 ("DERDE DEEL", 936 images), bound with vol 6; its description names the 1727 *Volkoome register* (Scheurleer) "over de ses deelen ... als meede over het verbael door Hieron. van Beverningh, enz. te London gehouden" | full view | 4 Beverningh hits, none dated 1653; not fetched beyond the text grep |
+| brievendeelgvan00nethgoog | a further Michigan volume | metadata empty (no files, no title) | not readable |
+| lettresetnegocia01witt .. 04witt, bub_gb_HyfTxXjGJPAC | *Lettres et negociations ...*, French, 1725 (the note says it holds only the letters of Dutch vols 1-2 in vol 1) | full view | not fetched: the French is not the Dutch wanted |
+**Brieven V is vol 5** ("VYFDE DEEL", brievengeschreve05witt, 610 images, djvu 1.85 MB): "Synde de verdere negociatien van ... C. van Beuningen, N. Kaiser ... in Sweden, Denemarcken ende in Poolen". It holds De Witt's and Van Beuningen's/Keyser's letters of 1653 (about 55 dated 1653 headings, Jan-Dec, Stockholm, Copenhagen, The Hague) and De Witt's letters that mention Beverningh and Nieupoort in London (OCR page 170: "Extract van de Missive by my jongst aen de Heeren Beverningh ende Nieupoort geschreven"; pp.203, 212, 240, 250, 290, 298, 330, 344, 371 on the OCR's page headers, 43 Beverningh hits). **It does not print Beverning's own letters to De Witt**: no 17/27 June or 22 Aug 1653 dated heading, no Beverningh-signed letter; they are named only in letters by De Witt and Van Beuningen ("copye van twee Missiven van den Heer Beverningh uyt Engelandt", p.298). The preface (p.VII) refers the Peace negotiation to "de Voorreden op het Verbael van defe Vredehandeling", so the *Verbael* is a separate publication (Beverningh's journal of the London negotiation, listed in the 1727 *Volkoome register*), not a part of the six volumes.
+**Not found on IA.** The 1725 *Verbael* as its own item: 3 advancedsearch queries (title verbael + date 1700-35; title/subject Beverning(h) 1650-1735; "volkoome register") returned 0 items; the 1727 *Volkoome register* itself is described only inside the Michigan Google scans. The 17/27 June and 22 Aug 1653 Dutch letters themselves: not in vol 5 or 6 (read), vols 1-4 are other legations; so no known answer for Birch I pp.301 and 418 on IA yet. A search result for this window only, not an absence (Google OCR of the Michigan copies is poor and the IA index is by catalogue text).
+**Where I might be wrong.** Dated headings were found by regex on OCR with long-s and noisy digits; a 17 June or 22 Aug heading with a misread digit would be missed. Vols 1-4 and the Michigan scans were not grepped for Beverningh's own letters beyond the counts above; vol 3 ("Nieupoort in Engelandt", from 18 Dec 1654) may reprint earlier London papers.
+
+## Remaining gaps (THUR-BRV, 11 Oct 2026; replaces the "Brieven V / Verbael not located" items of DUTCH-MORE and the print item of THUR-DUTCH)
+Read so far: IA catalogue for the Brieven (6 vols + Michigan set) and French *Lettres et negociations*; vols 5 and 6 text grepped, not read.
+- The 1725 *Verbael* (Beverningh's London journal) is not on IA under its own title - blocker: not-attempted; only IA was in this brief's host list; next: Delpher/Google Books/KB (V-DUTCH holds Delpher) search for "Verbael" Beverningh 1725 and a be-api phrase search over the Michigan scans for "Verbael van Beverningh", ~$0.4
+- Dutch of Beverning's 27 June and 22 Aug 1653 letters (Birch I pp.301, 418) - blocker: not-attempted; vol 5 does not print them and vols 1-4 are other legations, so the text of the other volumes is unread; next: grep vols 1-4 and the Michigan copies' text for "Beverningh" + 1653 (fetch djvu of vols 3, 4 once, ~3 requests) and the Verbael once located, ~$0.3
+- Nijhoff Bijdragen X p.291 and Van Sypesteyn (unchanged, V-DUTCH's open item) - blocker: not-attempted; Google Books quota was spent on 10 Oct 2026; next: Google Books API with country=US after the quota reset, ~$0.3
+
+## Escalation (THUR-BRV, 11 Oct 2026)
+- [x] siblings: unchanged
+- [x] clear-pages: no clear page for 27 June or 22 Aug in Brieven V or VI
+- [x] known-keys: unchanged (p.72 printed key)
+- [x] print: Brieven 1-6 located on IA, full view; vol 5 read for 1653 headings; Verbael not on IA under its title
+- [n/a] key-rebuild: nothing decoded by this job
+- [n/a] image-check: no leaf looked at
+- [x] retry: none needed (22 requests, no errors)
+Verdict: keep going: 3 internal gaps; cheapest next: grep the vol 3/4 text and the Michigan copies for Beverningh's London papers, then locate the Verbael off IA, ~$0.7
+
+
+## THUR-BAMF (LANE DEFAULT-A2-0509, account 2, worker Opus 5.5, 11 Oct 2026 05:47-06:1x UTC by date -u)
+Brief: .claude/briefs/runs/2026-10-11-ytbiz-default-0509-jobs.md "### THUR-BAMF". Question: does a Bamfylde code table rebuilt from Birch's printed gloss read the unglossed Bamfylde run of vol 6 p.160 (l.19092) under a matched control?
+**Prior work (step 0).** `prior_work.py thurloe-printed --item-spec 'shelfmark=Birch 1742 vol 6 p.160;sender=Bamfylde;recipient=Thurloe' --step-type decode --fetch`: exit 4 (3 own-work LEADs = target-level claims: THUR-BRV, the account-1 lane's exclusion list, this job; 5 editions LEADs = Birch itself; Tomokiyo, solver and leaf rows); all recorded with `--record`. By hand: (1) own work: grep bamf/bampf over ciphers/, ROOM.md, HYPOTHESES.md: only THUR-V146's census and bm/agents_4166.tsv (no key, no alignment). (3) Tomokiyo `sources/cryptiana/web/thurloe.htm#Bampfield`: he publishes a **First Cipher** table for Bampfield 1655 to at least 6 June 1657 (E=22/27/30/32/92; image bamp1.jpg, queued in sources/cryptiana/keys/IMAGE-QUEUE.tsv, **not on disk**, host outside this wave) and a **Second Cipher** for the Frankfurt reports of late 1657 (E=19/23/45/68/75); his text quotes 7 26 15 36 41 20 70 37 30 73 17 64 80 (2 Nov 1656) and the 6 June 1657 run, and gives no reading of the p.160 run. So the key family is already published by Tomokiyo (key source for anything read here: our table is rebuilt from Birch's print, a published key exists). Solver caches on disk: no Bamfylde unit; unsolved-ciphers not on disk (unchecked). (4) Editions: Birch is the source; p.161 imaged.
+**Route.** archive.org 10 requests (vol 4 and vol 6 `_djvu.txt`; leaves vol 6 n163 p.160, n164 p.161, n578, n579; vol 4 n197 p.194, n198 p.195, n234 p.231, n235 p.232), 1.6 s apart, no 429/403 (IA take/release in ROOM). Leaf URLs `https://archive.org/download/<id>/page/n<leaf>_w2000.jpg`, ids as THUR-V146.
+**Step 1.** p.161 (n164): the letter ends "April the 7/17 1657 ... Sir, yours, &c." and the next item is the Amsterdam admiralty to the States-General; **no printed decipherment follows l.19092**. Target run, read by eye on crops `bamf/crops/p160u_L01.jpg`, `p160t_L01.jpg` = djvu OCR = Sonnet blind pass A (second line): "There is advertisement come to 937, I beleive from out of the 745 12 36 39 30 20 37 8, the 356 20 17 72 35 94, who is his 62 22 43 37 42 61 43 27 61 43 27 36, that the pope has sollicited him ..." (`bamf/ct_p160.txt`; 24 codes below 100, 3 word/name codes). Date from the letter's end on p.161: Paris, April 7/17 1657, inside Tomokiyo's First Cipher period.
+**Crop step (pasted).** `tools/iiif_lines.py --image <leaf> --out ciphers/thurloe-printed/bamf/crops --prefix <p> --region <x,y,w,h> --lines-per-crop 4 --max-width 2400 --prominence 20 --distance 25` (p194a, p232a); vol 4 p.195 and p.160 detected no lines and were cut with `--centres` by eye (p195a-d, p160t, p160u). The p.231 foot crop came out blank (region missed) and was deleted: p.231's few glossed codes are not in the table. 11 crops committed (0.8 MB).
+**Step 2, table.** Two Sonnet blind passes (one on p.194-195 strips, one on p.232 + p.160 strips) read the numerals; pass A on p.194-195 transcribed the numerals but did not align the letter-spaced gloss to them, so the gloss-to-code alignment is my eye read on the crops (pass B) checked against the djvu OCR gloss lines; pass A's p.232 alignment agrees with pass B at every code. `tools/interlinear_align.py pairs` on the djvu found only 7 of the ~20 glossed runs (Birch sets the gloss letter-spaced and the OCR merges or drops those lines), so the tool was not used for the table; the pairs are in `bamf/pairs_vol4.tsv` (204 rows, p.194, p.195 and p.232). Builder: one-letter glosses over codes < 100, strict majority; 51 codes enter T. Printed-gloss conflicts kept, not settled (rule 4): 4 = l (Kenelme) vs i (Digby), tie, left out; 53 = M vs f (Mountague f), tie, left out; 30 = e 10 times vs y once (Digbye) and r once (turned); 27 = "em" once in "lemon" (multi-letter, not counted).
+**Step 3, gate (PREREG-THUR-BAMF.md pushed as 6f963568d before any score).** Statistic: mean per-position log10 trigram probability (vol 6 clear English, target letter excluded; `bamf/trigram_v6.json.gz`), uncovered code = log10(1/26). `bamf/gate_bamf.py --check` OK, `bamf/gate_bamf.json`.
+| test | S | null p95 (1000 value shuffles) | p | coverage |
+|---|---|---|---|---|
+| control A: T from p.194-195 (42 codes), held-out p.232 first 24 positions | -1.210 | -1.286 | 0.006 | 17/24 |
+| control B: T from p.232 (35 codes), held-out p.194-195 first 24 positions | -1.252 | -1.302 | 0.005 | 12/24 |
+| **target p.160, T from all (51 codes)** | **-1.062** | -1.279 | 0.001 | 23/24 |
+| key_downing.tsv (7 letter codes) | -1.302 | | | 5/24 |
+| key_lockhart.tsv (6 letter codes) | -1.415 | | | 0/24 |
+Gate **PASS** (control both folds pass; target above shuffled p95 and above both other keys). Caveats: coverage under the value shuffle is identical by construction and is description only; the two other-key comparisons are mostly a coverage difference (5/24 and 0/24), so they say little beyond "not those keys".
+**Step 4, decode (`bamf/decode_bamf.py --check` OK, `bamf/reading_bamf_p160.txt`).** `[937] | [745] a r y e s t o | [356] s a u o ? | p e n t i o n e o n e r`. Grades over the 24 letter codes: **C 23, M 0, U 1** (94 not in T); 937, 745, 356 word/name codes unread (no table for codes >= 100). The third run gives "pentione-one-r": "pentioner" with the trigram 61 43 27 ("one") printed twice (a Birch dittography or a slip in the letter; not settled from the print). The second run gives "sauo" + one unread code after "the 356", in a letter whose first sentence is about the duke and duchess dowager of Savoy. The first run "aryesto" has no reading I can confirm. 24 letter positions is below any authentication distance for a homophonic letter table (rule 4a): this is at most fragments read (D1), for a verifier to grade; no content sentence is claimed here.
+**Where it was not found.** No printed decipherment on p.161; no reading of this run in Tomokiyo's text (his table image not on disk, so our table was not compared with his); no Bamfylde unit in the solver caches on disk. Not done: l.68904 (vol 6 p.576, Oct/Nov 1657, Second Cipher period per Tomokiyo) was not imaged and no table was built from it (not gating per the PREREG); p.231 foot glosses; codes >= 100.
+
+## Remaining gaps (THUR-BAMF, 11 Oct 2026; replaces the Bamfylde items of THUR-V146, keeps THUR-BRV's and THUR-V146's other items)
+Read so far: Bamfylde p.160 run decoded under a gated print-gloss table (C 23, U 1 of 24 letter codes; fragments only); p.161 checked, no printed copy.
+- Bamfylde p.160 codes 937, 745, 356, 94 (word/name codes and one letter code) - blocker: open-codes; no table entry for these codes in the three glossed pages; next: compare with Tomokiyo's First Cipher table bamp1.jpg (cryptiana.web.fc2.com, one fetch) and the other glossed 1655-57 Bamfylde letters in vols 4-6 (djvu headings vol 6 ll.16285-67636, vol 4 ll.10355-14700), ~$1.5
+- Verifier grading of the p.160 fragments (D1 candidate) and the "pentioner" dittography - blocker: not-attempted; a solver may not grade its own reading (rule 10); next: verifier session with gate_bamf.json and reading_bamf_p160.txt, ~$2
+- Bamfylde l.68904 (vol 6 p.576, Second Cipher period) table - blocker: not-attempted; not gating for p.160 and outside this cap; next: image n579 strip crops, align, compare with Tomokiyo's bamp2.jpg, ~$1
+- Vol 4 Aldworth l.25718 and physician l.46866 - blocker: not-attempted; outside this brief; next: one leaf each (Aldworth near n309-n312), ~$0.3
+- Vol 1 non-Dutch hits >=20 numerals (about 12 units) - blocker: not-attempted; IA djvu 500 on 10 Oct 2026; next: retry collectionofstat01thur djvu or the on-disk bim vol 1 copy (sources/ia-fulltext/print-check), then one leaf per unit, ~$1.5
+- The 1725 *Verbael* (Beverningh's London journal) is not on IA under its own title - blocker: not-attempted; outside this brief; next: Delpher/Google Books/KB search, ~$0.5
+- Dutch of Beverning's 27 June and 22 Aug 1653 letters (Birch I pp.301, 418) - blocker: not-attempted; outside this brief; next: grep Brieven vols 1-4 and the Michigan copies, ~$0.4
+- Nijhoff Bijdragen X p.291 and Van Sypesteyn - blocker: not-attempted; Google Books quota spent; next: Google Books API with country=US after the quota reset, ~$0.3
+
+## Escalation (THUR-BAMF, 11 Oct 2026)
+- [x] siblings: Bamfylde 1655 glossed pages (vol 4 pp.194-195, 232) aligned into a table
+- [x] clear-pages: p.161 read, no printed decipherment
+- [x] known-keys: Tomokiyo's First/Second Cipher tables located (not on disk); no period key in BL Add MS 4166 (bm/agents_4166.tsv)
+- [x] print: Birch's gloss is the table source
+- [x] key-rebuild: 51-code table from print, gated PASS with control
+- [ ] image-check: l.68904, p.231 foot, other 1655-57 Bamfylde letters
+- [x] retry: none needed (10 IA requests, no errors)
+Verdict: keep going: 8 internal gaps; cheapest next: verifier pass on the p.160 fragments and a Tomokiyo bamp1.jpg comparison, ~$2
+
+## THUR-BAMF2 (LANE DEFAULT-A2-0509, account 2, worker Opus 5.5, 11 Oct 2026 06:16-06:3x UTC by date -u)
+Brief: .claude/briefs/runs/2026-10-11-ytbiz-default-0509-jobs.md "### THUR-BAMF2". Question: does Tomokiyo's published Bampfield First Cipher table agree with our 51-code print-gloss table, and do codes 937, 745, 356, 94 of the p.160 run (vol 6 l.19092) carry a printed gloss in another 1655-57 Bamfylde letter?
+**Prior work.** THUR-BAMF's step 0 (same day, same item) covers checks 1-4; nothing new since (ROOM.md tail, grep bamf over ciphers/). Tomokiyo's two table images were the open item.
+**Route.** cryptiana.web.fc2.com 4 requests (bamp1.jpg, bamp2.jpg; the first two over http answered 302 to https, refetched over https: 200, image/jpeg); archive.org 6 requests (vol 4 and vol 6 `_djvu.txt`, sha1 = b146/manifest.tsv; vol 5 leaves n517 and n682 fetched on a wrong offset guess and not used; n505 = p.512, n670 = p.677; vol 5 leaf = page - 7 at these pages, not page + 5), 2 s apart, no 429/403, IA take/release in ROOM. Vol 5 djvu from sources/ia-fulltext/thurloe-gz.
+**Step 1, Tomokiyo's tables (credit: Satoshi Tomokiyo, cryptiana.web.fc2.com/code/thurloe.htm#Bampfield; rule 8).** Images in `bamf/tomokiyo/` (bamp1.jpg "Colonel Bampfield's Cipher (1655-June 1657)", 83 codes 2-99; bamp2.jpg "(October-December 1657)", 45 codes), transcribed by eye from upscaled crops into `bamf/tomokiyo/bamp1_table.tsv` and `bamp2_table.tsv` (his "a/b" alternatives and dashes kept). `bamf/compare_tomokiyo.py --check` -> `bamf/compare_bamp1.tsv`: of our 51 codes, **49 agree** with his value (or one of his alternatives) and **2 disagree**: 25 (ours o, 1 gloss, vol 4 p.195 "secret s o f"; his x/e) and 51 (ours e, 2 glosses, p.195 "Digbye", "papest"; his i). Neither code occurs in the p.160 run: all 23 table codes read on p.160 agree with his table. Our tie-excluded codes: 4 (his c/p), 53 (his m/-). 31 of his codes are absent from our table. This is an independent comparison against a published modern key rebuilt by him, not a replacement of our table; the two disagreements are printed-gloss vs his values, kept as conflicts (rule 4), not settled.
+**Step 2, the four codes.** `bamf/scan_codes.py` over vols 4, 5, 6 djvu texts (hits with nearest letter heading, `bamf/scan_codes_hits.tsv`): Bamfylde letters carry 937 eleven times (ten in vol 5 ll.32007-57886, plus the target l.19091), 745 three times besides the target (whose "74.5" OCR the scan misses), 356 only at the target, 94 at vol 5 ll.35701, 41981 and the target. The line above each hit was read for a printed gloss; three units carry one, and both leaves were image-checked (crop step pasted: `tools/iiif_lines.py --image <leaf> --out <scratch>/crops --prefix v5n<leaf> --lines-per-crop 3 --max-width 2400 --prominence 20 --distance 25`; the gloss lines were then cut natively and committed as `bamf/crops/v5p512_94gloss.jpg`, `v5p677_937gloss.jpg`, `v5p677_745gloss.jpg`):
+| code | printed gloss | where | grade (PREREG-THUR-BAMF convention) |
+|---|---|---|---|
+| 937 | "C. Maz." / "Maz." (Mazarin) | vol 5 p.677, Bamfylde letter A.D. 1656, djvu ll.55611, 55620, 55647 (first two seen on the image) | C (>= 2, no conflict) |
+| 745 | "great secret" over "434 745" | vol 5 p.677, djvu l.55655 (image) | M (once) |
+| 94 | "y" in "S l a s s e y e" over "23 47 19 82 83 27 94 22" | vol 5 p.512, djvu l.41981 (image) | M: **conflict** with Tomokiyo's 94 = t (his source instance not identified); recorded, not settled by context |
+| 356 | none found | - | U |
+The p.512 gloss also sets "S" over 23 (our table 23 = g 3/3, Tomokiyo g): logged here, the table not changed. Values in `bamf/additions_bamf2.tsv`; `bamf/decode_bamf.py` reads it for codes absent from the gate table (gate not re-scored: `gate_bamf.py --check` OK).
+**Decode (`bamf/decode_bamf.py --check` OK, `bamf/reading_bamf_p160.txt`).** `[937=Mazarin] | [745=SECRET] a r y e s t o | [356] s a u o Y | p e n t i o n e o n e r`. Letter codes: **C 23, M 1, U 0** of 24; word/name codes: 937 C, 745 M, 356 U. Still 24 letter positions, below any authentication distance (rule 4a): fragments only, for a verifier to grade. No content sentence is claimed here.
+**Where it was not found.** 356: no gloss in any Bamfylde letter of vols 4-6 (it occurs only at the target); Tomokiyo's table image has no entries >= 100 (his text names 108, 754/755/790/799, 820/829/831, 1037, 1038 only). 94 = t: no printed instance of it found in vols 4-6 Bamfylde letters. Vol 4 pages other than pp.194-195, 231-232 and vol 6 p.576 were not imaged; vol 5 Bamfylde letters were read only at the lines above the four codes.
+
+## Remaining gaps (THUR-BAMF2, 11 Oct 2026; replaces the THUR-BAMF list)
+Read so far: Bamfylde p.160 run decoded under the gated print-gloss table plus three vol 5 print glosses (letter codes C 23, M 1; 937 C, 745 M, 356 U); 49 of 51 table codes agree with Tomokiyo's published First Cipher table.
+- Bamfylde p.160 code 356 (word/name code) - blocker: open-codes; no printed gloss in vols 4-6 Bamfylde letters (bamf/scan_codes_hits.tsv), none in Tomokiyo's image; next: Birch vol 7 index and the 1657 Bamfylde letters of vol 6 pp.161-700 at lines with glossed codes 350-360 (alphabetical neighbours), ~$0.5
+- Code 94 conflict (print y, vol 5 p.512, vs Tomokiyo t) and codes 25/51 (print vs Tomokiyo) - blocker: open-codes; one witness each side; next: locate Tomokiyo's instance (his thurloe.htm quoted runs, 2 Nov 1656 and 6 June 1657 letters in vols 5-6) and image it, ~$0.5
+- Verifier grading of the p.160 fragments (D1 candidate) and the "pentioner" dittography - blocker: not-attempted; a solver may not grade its own reading (rule 10); next: V-BAMF verifier session with gate_bamf.json, additions_bamf2.tsv, compare_bamp1.tsv and reading_bamf_p160.txt, ~$3
+- Bamfylde l.68904 (vol 6 p.576, Second Cipher period) table - blocker: not-attempted; not gating for p.160; next: image n579 strip crops, align, compare with bamf/tomokiyo/bamp2_table.tsv, ~$1
+- Vol 4 Aldworth l.25718 and physician l.46866 - blocker: not-attempted; outside this brief; next: one leaf each (Aldworth near n309-n312), ~$0.3
+- Vol 1 non-Dutch hits >=20 numerals (about 12 units) - blocker: not-attempted; IA djvu 500 on 10 Oct 2026; next: retry collectionofstat01thur djvu or the on-disk bim vol 1 copy (sources/ia-fulltext/print-check), then one leaf per unit, ~$1.5
+- The 1725 *Verbael* (Beverningh's London journal) is not on IA under its own title - blocker: not-attempted; outside this brief; next: Delpher/Google Books/KB search, ~$0.5
+- Dutch of Beverning's 27 June and 22 Aug 1653 letters (Birch I pp.301, 418) - blocker: not-attempted; outside this brief; next: grep Brieven vols 1-4 and the Michigan copies, ~$0.4
+- Nijhoff Bijdragen X p.291 and Van Sypesteyn - blocker: not-attempted; Google Books quota spent; next: Google Books API with country=US after the quota reset, ~$0.3
+
+## Escalation (THUR-BAMF2, 11 Oct 2026)
+- [x] siblings: Bamfylde 1655 glossed pages aligned (THUR-BAMF); vol 5 Bamfylde letters scanned for the four codes (THUR-BAMF2)
+- [x] clear-pages: p.161 read, no printed decipherment
+- [x] known-keys: Tomokiyo's First/Second Cipher tables fetched, transcribed and compared (49/51 agree)
+- [x] print: Birch's gloss is the table source; vol 5 glosses for 937, 745, 94
+- [x] key-rebuild: 51-code table from print, gated PASS with control
+- [ ] image-check: l.68904, p.231 foot, Tomokiyo's 94 = t instance
+- [x] retry: none needed (no errors)
+Verdict: keep going: 9 internal gaps; cheapest next: V-BAMF verifier pass on the p.160 fragments, ~$3
+
+## Revision after AUDIT (V-BAMF, 11 Oct 2026; rule 10 propagation)
+AUDIT.md "## AUDIT (V-BAMF ...)": p.160 code 30 regraded C -> M (gloss e 8, y 1, r 1 is not "consistently" per PREREG-THUR-BAMF.md);
+`bamf/decode_bamf.py` grade rule fixed, `--check` OK. Letter codes now **C 22, M 2, U 0**; all 27 tokens C 23, M 3, U 1. Class N3,
+key source `period` (Tomokiyo's published table agrees), depth **D1** ("fragments read"). The THUR-BAMF2 counts above are superseded.
+
+## Remaining gaps (V-BAMF, 11 Oct 2026; replaces the THUR-BAMF2 list)
+Read so far: Bamfylde p.160 run, letter codes C 22, M 2 (30, 94), U 0; 937 C, 745 M, 356 U; verifier class N3, key source period, depth D1 (AUDIT.md "## AUDIT (V-BAMF ...)").
+- Bamfylde p.160 code 356 (word/name code) - blocker: open-codes; no printed gloss in vols 4-6 Bamfylde letters (bamf/scan_codes_hits.tsv), none in Tomokiyo's image; next: Birch vol 7 index and the 1657 Bamfylde letters of vol 6 pp.161-700 at lines with glossed codes 350-360 (alphabetical neighbours), ~$0.5
+- Code 94 conflict (print y, vol 5 p.512, vs Tomokiyo t) and codes 25/51 (print vs Tomokiyo) - blocker: open-codes; one witness each side; next: locate Tomokiyo's instance (his thurloe.htm quoted runs, 2 Nov 1656 and 6 June 1657 letters in vols 5-6) and image it, ~$0.5
+- Bamfylde l.68904 (vol 6 p.576, Second Cipher period) table - blocker: not-attempted; not gating for p.160; next: image n579 strip crops, align, compare with bamf/tomokiyo/bamp2_table.tsv, ~$1
+- Vol 4 Aldworth l.25718 and physician l.46866 - blocker: not-attempted; outside this brief; next: one leaf each (Aldworth near n309-n312), ~$0.3
+- Vol 1 non-Dutch hits >=20 numerals (about 12 units) - blocker: not-attempted; IA djvu 500 on 10 Oct 2026; next: retry collectionofstat01thur djvu or the on-disk bim vol 1 copy (sources/ia-fulltext/print-check), then one leaf per unit, ~$1.5
+- The 1725 *Verbael* (Beverningh's London journal) is not on IA under its own title - blocker: not-attempted; outside this brief; next: Delpher/Google Books/KB search, ~$0.5
+- Dutch of Beverning's 27 June and 22 Aug 1653 letters (Birch I pp.301, 418) - blocker: not-attempted; outside this brief; next: grep Brieven vols 1-4 and the Michigan copies, ~$0.4
+- Nijhoff Bijdragen X p.291 and Van Sypesteyn - blocker: not-attempted; Google Books quota spent; next: Google Books API with country=US after the quota reset, ~$0.3
+
+## Escalation (V-BAMF, 11 Oct 2026)
+- [x] siblings: Bamfylde 1655 glossed pages aligned (THUR-BAMF); vol 5 Bamfylde letters scanned for the four codes (THUR-BAMF2)
+- [x] clear-pages: p.161 read, no printed decipherment
+- [x] known-keys: Tomokiyo's First/Second Cipher tables fetched, transcribed and compared (49/51 agree)
+- [x] print: Birch's gloss is the table source; vol 5 glosses for 937, 745, 94
+- [x] key-rebuild: 51-code table from print, gated PASS with control
+- [ ] image-check: l.68904, p.231 foot, Tomokiyo's 94 = t instance
+- [x] retry: none needed (no errors)
+Verdict: keep going: 8 internal gaps; cheapest next: 356 gloss search in the 1657 Bamfylde letters of vol 6 pp.161-700 and Tomokiyo's 94 = t instance (D2 would need both), ~$1

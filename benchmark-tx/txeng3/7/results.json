@@ -1,0 +1,2911 @@
+{
+ "birago1572-f152r": {
+  "lineread": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ]
+  },
+  "A0a_atlas": {
+   "err": 0.1918,
+   "k": 14,
+   "n": 73,
+   "ci": [
+    0.11782254045474991,
+    0.29655717053513053
+   ],
+   "fe_err": 0.1714,
+   "fe_k": 12,
+   "fe_n": 70,
+   "fe_ci": [
+    0.10087625712010549,
+    0.27616866064982365
+   ],
+   "fixed": 16,
+   "broken": 5,
+   "p": 0.0266,
+   "fe_fixed": 15,
+   "fe_broken": 4,
+   "fe_p": 0.0192,
+   "lines_missing": 0,
+   "confusions": [
+    "i<-T38 x3",
+    "i<-T17 x2",
+    "e<-T60 x2",
+    "o<-T83 x1",
+    "e<-T36 x1"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv"
+  },
+  "A1_atlas": {
+   "err": 0.3836,
+   "k": 28,
+   "n": 73,
+   "ci": [
+    0.28050439402671845,
+    0.49826127456945857
+   ],
+   "fe_err": 0.3714,
+   "fe_k": 26,
+   "fe_n": 70,
+   "fe_ci": [
+    0.26770481600829643,
+    0.4885301518147193
+   ],
+   "fixed": 1,
+   "broken": 20,
+   "p": 0.0,
+   "fe_fixed": 0,
+   "fe_broken": 20,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T60 x3",
+    "l<-T97 x2",
+    "i<-X_NEW x2",
+    "r<-<deleted> x2",
+    "i<-T36 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A2_atlas": {
+   "err": 0.3562,
+   "k": 26,
+   "n": 73,
+   "ci": [
+    0.2560433740070725,
+    0.470667157788205
+   ],
+   "fe_err": 0.3429,
+   "fe_k": 24,
+   "fe_n": 70,
+   "fe_ci": [
+    0.24245827082896973,
+    0.4596066898436051
+   ],
+   "fixed": 4,
+   "broken": 3,
+   "p": 1.0,
+   "fe_fixed": 4,
+   "fe_broken": 3,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "l<-T97 x2",
+    "r<-<deleted> x2",
+    "e<-T60 x2",
+    "i<-T36 x1",
+    "o<-X_NEW x1"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv",
+   "vs_lineread": {
+    "fixed": 1,
+    "broken": 19,
+    "p": 0.0,
+    "fe_fixed": 0,
+    "fe_broken": 19,
+    "fe_p": 0.0
+   }
+  },
+  "A3s1_atlas": {
+   "err": 0.7945,
+   "k": 58,
+   "n": 73,
+   "ci": [
+    0.6882613165474036,
+    0.8713314040622661
+   ],
+   "fe_err": 0.8,
+   "fe_k": 56,
+   "fe_n": 70,
+   "fe_ci": [
+    0.6918313531091291,
+    0.8769537219705008
+   ],
+   "fixed": 7,
+   "broken": 27,
+   "p": 0.0008,
+   "fe_fixed": 6,
+   "fe_broken": 26,
+   "fe_p": 0.0005,
+   "lines_missing": 0,
+   "confusions": [
+    "o<-<deleted> x3",
+    "l<-T60 x2",
+    "n<-<deleted> x2",
+    "r<-T60 x2",
+    "che<-T50 x1"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s2_atlas": {
+   "err": 0.9178,
+   "k": 67,
+   "n": 73,
+   "ci": [
+    0.8320540661871378,
+    0.9617867700265799
+   ],
+   "fe_err": 0.9286,
+   "fe_k": 65,
+   "fe_n": 70,
+   "fe_ci": [
+    0.8434438687669077,
+    0.9691062384897063
+   ],
+   "fixed": 5,
+   "broken": 28,
+   "p": 0.0001,
+   "fe_fixed": 5,
+   "fe_broken": 28,
+   "fe_p": 0.0001,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-<deleted> x4",
+    "o<-X_NEW x2",
+    "o<-<deleted> x2",
+    "che<-<deleted> x1",
+    "i<-T45 x1"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s3_atlas": {
+   "err": 0.7808,
+   "k": 57,
+   "n": 73,
+   "ci": [
+    0.6732251787519996,
+    0.8603399734572204
+   ],
+   "fe_err": 0.7857,
+   "fe_k": 55,
+   "fe_n": 70,
+   "fe_ci": [
+    0.6760859281841939,
+    0.8656141433202156
+   ],
+   "fixed": 5,
+   "broken": 30,
+   "p": 0.0,
+   "fe_fixed": 5,
+   "fe_broken": 30,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "l<-<deleted> x3",
+    "a<-T49 x2",
+    "che<-T92 x1",
+    "o<-T65 x1",
+    "d<-X_NEW x1"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s4_atlas": {
+   "err": 0.8767,
+   "k": 64,
+   "n": 73,
+   "ci": [
+    0.7819948926528207,
+    0.9337632383595474
+   ],
+   "fe_err": 0.8714,
+   "fe_k": 61,
+   "fe_n": 70,
+   "fe_ci": [
+    0.7733503128681549,
+    0.9308597800875773
+   ],
+   "fixed": 6,
+   "broken": 33,
+   "p": 0.0,
+   "fe_fixed": 6,
+   "fe_broken": 32,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "r<-<deleted> x3",
+    "o<-T24 x2",
+    "d<-T33 x2",
+    "o<-<deleted> x2",
+    "a<-<deleted> x2"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s5_atlas": {
+   "err": 0.8767,
+   "k": 64,
+   "n": 73,
+   "ci": [
+    0.7819948926528207,
+    0.9337632383595474
+   ],
+   "fe_err": 0.8714,
+   "fe_k": 61,
+   "fe_n": 70,
+   "fe_ci": [
+    0.7733503128681549,
+    0.9308597800875773
+   ],
+   "fixed": 5,
+   "broken": 30,
+   "p": 0.0,
+   "fe_fixed": 5,
+   "fe_broken": 29,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "i<-T60 x3",
+    "o<-T60 x2",
+    "d<-T60 x2",
+    "a<-T33 x2",
+    "l<-T53 x2"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s6_atlas": {
+   "err": 0.863,
+   "k": 63,
+   "n": 73,
+   "ci": [
+    0.7658736406081267,
+    0.9238569220037918
+   ],
+   "fe_err": 0.8571,
+   "fe_k": 60,
+   "fe_n": 70,
+   "fe_ci": [
+    0.7566136529849488,
+    0.9205114363955629
+   ],
+   "fixed": 4,
+   "broken": 36,
+   "p": 0.0,
+   "fe_fixed": 4,
+   "fe_broken": 35,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T33 x3",
+    "i<-T63 x2",
+    "i<-T54 x2",
+    "l<-<deleted> x2",
+    "che<-T86 x1"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s7_atlas": {
+   "err": 0.863,
+   "k": 63,
+   "n": 73,
+   "ci": [
+    0.7658736406081267,
+    0.9238569220037918
+   ],
+   "fe_err": 0.8571,
+   "fe_k": 60,
+   "fe_n": 70,
+   "fe_ci": [
+    0.7566136529849488,
+    0.9205114363955629
+   ],
+   "fixed": 2,
+   "broken": 31,
+   "p": 0.0,
+   "fe_fixed": 2,
+   "fe_broken": 30,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "o<-T60 x2",
+    "l<-T53 x2",
+    "s<-<deleted> x2",
+    "n<-T25 x2",
+    "o<-T65 x2"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s8_atlas": {
+   "err": 0.9178,
+   "k": 67,
+   "n": 73,
+   "ci": [
+    0.8320540661871378,
+    0.9617867700265799
+   ],
+   "fe_err": 0.9143,
+   "fe_k": 64,
+   "fe_n": 70,
+   "fe_ci": [
+    0.825341230221722,
+    0.9601238734596715
+   ],
+   "fixed": 4,
+   "broken": 35,
+   "p": 0.0,
+   "fe_fixed": 4,
+   "fe_broken": 34,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "a<-<deleted> x3",
+    "o<-<deleted> x2",
+    "d<-T45 x2",
+    "s<-<deleted> x2",
+    "o<-T96 x2"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s9_atlas": {
+   "err": 0.8356,
+   "k": 61,
+   "n": 73,
+   "ci": [
+    0.7342874444391131,
+    0.9033879813719059
+   ],
+   "fe_err": 0.8429,
+   "fe_k": 59,
+   "fe_n": 70,
+   "fe_ci": [
+    0.7401153685651781,
+    0.9099247172401133
+   ],
+   "fixed": 4,
+   "broken": 26,
+   "p": 0.0001,
+   "fe_fixed": 4,
+   "fe_broken": 26,
+   "fe_p": 0.0001,
+   "lines_missing": 0,
+   "confusions": [
+    "o<-<deleted> x3",
+    "o<-T66 x2",
+    "i<-T83 x2",
+    "u<-<deleted> x2",
+    "e<-<deleted> x2"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s10_atlas": {
+   "err": 0.9041,
+   "k": 66,
+   "n": 73,
+   "ci": [
+    0.8150416221426189,
+    0.9527716456706489
+   ],
+   "fe_err": 0.9286,
+   "fe_k": 65,
+   "fe_n": 70,
+   "fe_ci": [
+    0.8434438687669077,
+    0.9691062384897063
+   ],
+   "fixed": 6,
+   "broken": 38,
+   "p": 0.0,
+   "fe_fixed": 5,
+   "fe_broken": 38,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "i<-T60 x3",
+    "l<-<deleted> x3",
+    "che<-T33 x2",
+    "o<-T84 x2",
+    "u<-T60 x2"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s11_atlas": {
+   "err": 0.863,
+   "k": 63,
+   "n": 73,
+   "ci": [
+    0.7658736406081267,
+    0.9238569220037918
+   ],
+   "fe_err": 0.8714,
+   "fe_k": 61,
+   "fe_n": 70,
+   "fe_ci": [
+    0.7733503128681549,
+    0.9308597800875773
+   ],
+   "fixed": 9,
+   "broken": 29,
+   "p": 0.0017,
+   "fe_fixed": 8,
+   "fe_broken": 28,
+   "fe_p": 0.0012,
+   "lines_missing": 0,
+   "confusions": [
+    "a<-T60 x2",
+    "o<-<deleted> x2",
+    "n<-<deleted> x2",
+    "i<-T86 x2",
+    "e<-<deleted> x2"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s12_atlas": {
+   "err": 0.8493,
+   "k": 62,
+   "n": 73,
+   "ci": [
+    0.7499788763087365,
+    0.9137241179027322
+   ],
+   "fe_err": 0.8429,
+   "fe_k": 59,
+   "fe_n": 70,
+   "fe_ci": [
+    0.7401153685651781,
+    0.9099247172401133
+   ],
+   "fixed": 8,
+   "broken": 33,
+   "p": 0.0001,
+   "fe_fixed": 8,
+   "fe_broken": 32,
+   "fe_p": 0.0002,
+   "lines_missing": 0,
+   "confusions": [
+    "o<-T45 x2",
+    "i<-T60 x2",
+    "o<-<deleted> x2",
+    "i<-<deleted> x2",
+    "o<-T64 x2"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s13_atlas": {
+   "err": 0.9041,
+   "k": 66,
+   "n": 73,
+   "ci": [
+    0.8150416221426189,
+    0.9527716456706489
+   ],
+   "fe_err": 0.9143,
+   "fe_k": 64,
+   "fe_n": 70,
+   "fe_ci": [
+    0.825341230221722,
+    0.9601238734596715
+   ],
+   "fixed": 5,
+   "broken": 36,
+   "p": 0.0,
+   "fe_fixed": 5,
+   "fe_broken": 36,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "l<-T60 x3",
+    "e<-<deleted> x3",
+    "i<-<deleted> x2",
+    "a<-T29 x2",
+    "o<-T60 x2"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s14_atlas": {
+   "err": 0.8493,
+   "k": 62,
+   "n": 73,
+   "ci": [
+    0.7499788763087365,
+    0.9137241179027322
+   ],
+   "fe_err": 0.8429,
+   "fe_k": 59,
+   "fe_n": 70,
+   "fe_ci": [
+    0.7401153685651781,
+    0.9099247172401133
+   ],
+   "fixed": 6,
+   "broken": 29,
+   "p": 0.0001,
+   "fe_fixed": 6,
+   "fe_broken": 28,
+   "fe_p": 0.0002,
+   "lines_missing": 0,
+   "confusions": [
+    "o<-T33 x2",
+    "i<-<deleted> x2",
+    "s<-T33 x2",
+    "e<-<deleted> x2",
+    "che<-T33 x1"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s15_atlas": {
+   "err": 0.9178,
+   "k": 67,
+   "n": 73,
+   "ci": [
+    0.8320540661871378,
+    0.9617867700265799
+   ],
+   "fe_err": 0.9143,
+   "fe_k": 64,
+   "fe_n": 70,
+   "fe_ci": [
+    0.825341230221722,
+    0.9601238734596715
+   ],
+   "fixed": 8,
+   "broken": 34,
+   "p": 0.0001,
+   "fe_fixed": 8,
+   "fe_broken": 33,
+   "fe_p": 0.0001,
+   "lines_missing": 0,
+   "confusions": [
+    "o<-<deleted> x3",
+    "i<-T98 x2",
+    "a<-<deleted> x2",
+    "e<-<deleted> x2",
+    "a<-T88 x2"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s16_atlas": {
+   "err": 0.863,
+   "k": 63,
+   "n": 73,
+   "ci": [
+    0.7658736406081267,
+    0.9238569220037918
+   ],
+   "fe_err": 0.8857,
+   "fe_k": 62,
+   "fe_n": 70,
+   "fe_ci": [
+    0.7903556803979788,
+    0.9409394161329739
+   ],
+   "fixed": 5,
+   "broken": 30,
+   "p": 0.0,
+   "fe_fixed": 4,
+   "fe_broken": 30,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "i<-<deleted> x2",
+    "o<-T83 x2",
+    "a<-<deleted> x2",
+    "e<-T81 x2",
+    "n<-<deleted> x2"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s17_atlas": {
+   "err": 0.8356,
+   "k": 61,
+   "n": 73,
+   "ci": [
+    0.7342874444391131,
+    0.9033879813719059
+   ],
+   "fe_err": 0.8571,
+   "fe_k": 60,
+   "fe_n": 70,
+   "fe_ci": [
+    0.7566136529849488,
+    0.9205114363955629
+   ],
+   "fixed": 7,
+   "broken": 30,
+   "p": 0.0002,
+   "fe_fixed": 6,
+   "fe_broken": 30,
+   "fe_p": 0.0001,
+   "lines_missing": 0,
+   "confusions": [
+    "a<-<deleted> x4",
+    "o<-<deleted> x3",
+    "l<-<deleted> x2",
+    "i<-X_NEW x2",
+    "r<-X_NEW x2"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s18_atlas": {
+   "err": 0.8493,
+   "k": 62,
+   "n": 73,
+   "ci": [
+    0.7499788763087365,
+    0.9137241179027322
+   ],
+   "fe_err": 0.8429,
+   "fe_k": 59,
+   "fe_n": 70,
+   "fe_ci": [
+    0.7401153685651781,
+    0.9099247172401133
+   ],
+   "fixed": 5,
+   "broken": 32,
+   "p": 0.0,
+   "fe_fixed": 5,
+   "fe_broken": 31,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "i<-T60 x3",
+    "a<-T25 x3",
+    "l<-<deleted> x3",
+    "s<-<deleted> x2",
+    "i<-<deleted> x2"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s19_atlas": {
+   "err": 0.8904,
+   "k": 65,
+   "n": 73,
+   "ci": [
+    0.7983717410229372,
+    0.9434139583898808
+   ],
+   "fe_err": 0.9143,
+   "fe_k": 64,
+   "fe_n": 70,
+   "fe_ci": [
+    0.825341230221722,
+    0.9601238734596715
+   ],
+   "fixed": 7,
+   "broken": 26,
+   "p": 0.0013,
+   "fe_fixed": 6,
+   "fe_broken": 26,
+   "fe_p": 0.0005,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-<deleted> x3",
+    "e<-<deleted> x3",
+    "r<-<deleted> x3",
+    "i<-T98 x2",
+    "r<-T65 x2"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv"
+  },
+  "A3s20_atlas": {
+   "err": 0.8493,
+   "k": 62,
+   "n": 73,
+   "ci": [
+    0.7499788763087365,
+    0.9137241179027322
+   ],
+   "fe_err": 0.8571,
+   "fe_k": 60,
+   "fe_n": 70,
+   "fe_ci": [
+    0.7566136529849488,
+    0.9205114363955629
+   ],
+   "fixed": 7,
+   "broken": 34,
+   "p": 0.0,
+   "fe_fixed": 7,
+   "fe_broken": 34,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "o<-X_NEW x3",
+    "i<-X_NEW x2",
+    "i<-T53 x2",
+    "s<-X_NEW x2",
+    "e<-<deleted> x2"
+   ],
+   "base": "A1_atlas_birago1572-f152r.tsv"
+  },
+  "A0a_override": {
+   "err": 0.1233,
+   "k": 9,
+   "n": 73,
+   "ci": [
+    0.06623676164045252,
+    0.21800510734717915
+   ],
+   "fe_err": 0.1,
+   "fe_k": 7,
+   "fe_n": 70,
+   "fe_ci": [
+    0.04928867510614623,
+    0.19233122478768055
+   ],
+   "fixed": 1,
+   "broken": 4,
+   "p": 0.375,
+   "fe_fixed": 0,
+   "fe_broken": 4,
+   "fe_p": 0.125,
+   "lines_missing": 0,
+   "confusions": [
+    "i<-T38 x2",
+    "e<-T36 x1",
+    "s<-T50 x1",
+    "d<-T98 x1",
+    "e<-T60 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A1_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A2_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A3s1_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A3s2_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A3s3_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A3s4_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A3s5_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A3s6_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A3s7_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A3s8_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A3s9_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A3s10_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A3s11_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A3s12_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A3s13_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A3s14_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A3s15_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A3s16_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A3s17_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A3s18_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A3s19_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  },
+  "A3s20_override": {
+   "err": 0.0685,
+   "k": 5,
+   "n": 73,
+   "ci": [
+    0.02960860206637889,
+    0.15052299331945376
+   ],
+   "fe_err": 0.0286,
+   "fe_k": 2,
+   "fe_n": 70,
+   "fe_ci": [
+    0.007870446893806289,
+    0.09832443512391814
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T36 x1",
+    "d<-T98 x1",
+    "a<-T52 x1",
+    "l<-T64 x1"
+   ],
+   "base": "passZ_pipeline.tsv"
+  }
+ },
+ "birago1572-no87": {
+  "lineread": {
+   "err": 0.0511,
+   "k": 41,
+   "n": 803,
+   "ci": [
+    0.03785786114201546,
+    0.06853427332403092
+   ],
+   "fe_err": 0.0379,
+   "fe_k": 30,
+   "fe_n": 792,
+   "fe_ci": [
+    0.02665978765738685,
+    0.053559190591551134
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "l<-T64 x2"
+   ]
+  },
+  "A0a_atlas": {
+   "err": 0.1382,
+   "k": 111,
+   "n": 803,
+   "ci": [
+    0.11607633694163512,
+    0.1638318879193537
+   ],
+   "fe_err": 0.1263,
+   "fe_k": 100,
+   "fe_n": 792,
+   "fe_ci": [
+    0.10491974346865536,
+    0.15121363784742564
+   ],
+   "fixed": 189,
+   "broken": 36,
+   "p": 0.0,
+   "fe_fixed": 189,
+   "fe_broken": 34,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x21",
+    "o<-T83 x8",
+    "f<-T37 x4",
+    "t<-T90 x3",
+    "d<-T36 x3"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv"
+  },
+  "A1_atlas": {
+   "err": 0.3425,
+   "k": 275,
+   "n": 803,
+   "ci": [
+    0.31046338224408787,
+    0.3759682543993375
+   ],
+   "fe_err": 0.3359,
+   "fe_k": 266,
+   "fe_n": 792,
+   "fe_ci": [
+    0.3038279447244602,
+    0.36947387815084576
+   ],
+   "fixed": 15,
+   "broken": 227,
+   "p": 0.0,
+   "fe_fixed": 13,
+   "fe_broken": 227,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T60 x23",
+    "a<-T60 x8",
+    "d<-T98 x7",
+    "a<-T92 x6",
+    "l<-X_NEW x6"
+   ],
+   "base": "passC.tsv"
+  },
+  "A2_atlas": {
+   "err": 0.3288,
+   "k": 264,
+   "n": 803,
+   "ci": [
+    0.29715740579678446,
+    0.36200741664172137
+   ],
+   "fe_err": 0.322,
+   "fe_k": 255,
+   "fe_n": 792,
+   "fe_ci": [
+    0.2903557274563292,
+    0.3553024035084257
+   ],
+   "fixed": 41,
+   "broken": 33,
+   "p": 0.416,
+   "fe_fixed": 40,
+   "fe_broken": 32,
+   "fe_p": 0.4096,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T60 x23",
+    "a<-T60 x15",
+    "o<-X_NEW x12",
+    "o<-T60 x7",
+    "d<-T98 x7"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv",
+   "vs_lineread": {
+    "fixed": 16,
+    "broken": 220,
+    "p": 0.0,
+    "fe_fixed": 14,
+    "fe_broken": 220,
+    "fe_p": 0.0
+   }
+  },
+  "A3s1_atlas": {
+   "err": 0.7335,
+   "k": 589,
+   "n": 803,
+   "ci": [
+    0.7018595686334637,
+    0.7629156734958467
+   ],
+   "fe_err": 0.7361,
+   "fe_k": 583,
+   "fe_n": 792,
+   "fe_ci": [
+    0.7043287817593654,
+    0.7656139807200025
+   ],
+   "fixed": 52,
+   "broken": 287,
+   "p": 0.0,
+   "fe_fixed": 47,
+   "fe_broken": 285,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "a<-<deleted> x12",
+    "t<-<deleted> x10",
+    "o<-X_NEW x10",
+    "d<-<deleted> x10",
+    "o<-<deleted> x9"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv"
+  },
+  "A3s2_atlas": {
+   "err": 0.7684,
+   "k": 617,
+   "n": 803,
+   "ci": [
+    0.7379525921543412,
+    0.7962290861329459
+   ],
+   "fe_err": 0.7715,
+   "fe_k": 611,
+   "fe_n": 792,
+   "fe_ci": [
+    0.7409520904001544,
+    0.7993564333060706
+   ],
+   "fixed": 43,
+   "broken": 308,
+   "p": 0.0,
+   "fe_fixed": 40,
+   "fe_broken": 308,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "r<-<deleted> x17",
+    "e<-<deleted> x15",
+    "e<-T65 x12",
+    "o<-<deleted> x11",
+    "a<-<deleted> x8"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv"
+  },
+  "A3s3_atlas": {
+   "err": 0.7572,
+   "k": 608,
+   "n": 803,
+   "ci": [
+    0.7263229185615805,
+    0.7855495481034998
+   ],
+   "fe_err": 0.7563,
+   "fe_k": 599,
+   "fe_n": 792,
+   "fe_ci": [
+    0.7252232301855737,
+    0.7849285387091409
+   ],
+   "fixed": 42,
+   "broken": 317,
+   "p": 0.0,
+   "fe_fixed": 41,
+   "fe_broken": 316,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T88 x21",
+    "e<-T33 x12",
+    "e<-T24 x11",
+    "a<-T60 x10",
+    "i<-<deleted> x9"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv"
+  },
+  "A3s4_atlas": {
+   "err": 0.7833,
+   "k": 629,
+   "n": 803,
+   "ci": [
+    0.7535036593218141,
+    0.8104236344617489
+   ],
+   "fe_err": 0.7841,
+   "fe_k": 621,
+   "fe_n": 792,
+   "fe_ci": [
+    0.7541001739231804,
+    0.8113389787926364
+   ],
+   "fixed": 43,
+   "broken": 311,
+   "p": 0.0,
+   "fe_fixed": 41,
+   "fe_broken": 310,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "a<-<deleted> x14",
+    "e<-X_NEW x14",
+    "o<-<deleted> x9",
+    "e<-<deleted> x9",
+    "a<-T80 x9"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv"
+  },
+  "A3s5_atlas": {
+   "err": 0.746,
+   "k": 599,
+   "n": 803,
+   "ci": [
+    0.7147205418731316,
+    0.7748427131697417
+   ],
+   "fe_err": 0.7475,
+   "fe_k": 592,
+   "fe_n": 792,
+   "fe_ci": [
+    0.7160713797599725,
+    0.776488948828028
+   ],
+   "fixed": 59,
+   "broken": 294,
+   "p": 0.0,
+   "fe_fixed": 57,
+   "fe_broken": 294,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-<deleted> x15",
+    "o<-<deleted> x12",
+    "i<-T60 x11",
+    "a<-T60 x11",
+    "d<-T60 x11"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv"
+  },
+  "A3s6_atlas": {
+   "err": 0.7721,
+   "k": 620,
+   "n": 803,
+   "ci": [
+    0.7418354458502768,
+    0.7997826363110792
+   ],
+   "fe_err": 0.7753,
+   "fe_k": 614,
+   "fe_n": 792,
+   "fe_ci": [
+    0.7448925170036131,
+    0.8029551954054895
+   ],
+   "fixed": 57,
+   "broken": 309,
+   "p": 0.0,
+   "fe_fixed": 53,
+   "fe_broken": 308,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "o<-<deleted> x11",
+    "i<-<deleted> x11",
+    "n<-<deleted> x11",
+    "e<-<deleted> x10",
+    "s<-<deleted> x9"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv"
+  },
+  "A3s7_atlas": {
+   "err": 0.7821,
+   "k": 628,
+   "n": 803,
+   "ci": [
+    0.7522057035873164,
+    0.8092427889048902
+   ],
+   "fe_err": 0.7828,
+   "fe_k": 620,
+   "fe_n": 792,
+   "fe_ci": [
+    0.7527836309870932,
+    0.8101424588277646
+   ],
+   "fixed": 57,
+   "broken": 294,
+   "p": 0.0,
+   "fe_fixed": 54,
+   "fe_broken": 292,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-<deleted> x13",
+    "r<-<deleted> x12",
+    "o<-<deleted> x12",
+    "a<-<deleted> x11",
+    "s<-<deleted> x11"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv"
+  },
+  "A3s8_atlas": {
+   "err": 0.7709,
+   "k": 619,
+   "n": 803,
+   "ci": [
+    0.7405408043581728,
+    0.7985984765118269
+   ],
+   "fe_err": 0.7727,
+   "fe_k": 612,
+   "fe_n": 792,
+   "fe_ci": [
+    0.7422651919151907,
+    0.8005563946919934
+   ],
+   "fixed": 56,
+   "broken": 304,
+   "p": 0.0,
+   "fe_fixed": 54,
+   "fe_broken": 304,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "d<-<deleted> x11",
+    "t<-T60 x11",
+    "a<-<deleted> x11",
+    "e<-X_S x11",
+    "e<-<deleted> x11"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv"
+  },
+  "A3s9_atlas": {
+   "err": 0.7572,
+   "k": 608,
+   "n": 803,
+   "ci": [
+    0.7263229185615805,
+    0.7855495481034998
+   ],
+   "fe_err": 0.7588,
+   "fe_k": 601,
+   "fe_n": 792,
+   "fe_ci": [
+    0.7278411444918771,
+    0.7873367502047561
+   ],
+   "fixed": 57,
+   "broken": 298,
+   "p": 0.0,
+   "fe_fixed": 55,
+   "fe_broken": 298,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "d<-<deleted> x14",
+    "i<-<deleted> x13",
+    "e<-<deleted> x12",
+    "a<-<deleted> x10",
+    "r<-<deleted> x10"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv"
+  },
+  "A3s10_atlas": {
+   "err": 0.7933,
+   "k": 637,
+   "n": 803,
+   "ci": [
+    0.7639011696781522,
+    0.8198565344362612
+   ],
+   "fe_err": 0.7929,
+   "fe_k": 628,
+   "fe_n": 792,
+   "fe_ci": [
+    0.7633271568072432,
+    0.819703436215288
+   ],
+   "fixed": 52,
+   "broken": 311,
+   "p": 0.0,
+   "fe_fixed": 51,
+   "fe_broken": 310,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-<deleted> x17",
+    "i<-<deleted> x12",
+    "t<-<deleted> x11",
+    "o<-<deleted> x11",
+    "r<-<deleted> x11"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv"
+  },
+  "A3s11_atlas": {
+   "err": 0.726,
+   "k": 583,
+   "n": 803,
+   "ci": [
+    0.6941578353770086,
+    0.7557445990041637
+   ],
+   "fe_err": 0.7273,
+   "fe_k": 576,
+   "fe_n": 792,
+   "fe_ci": [
+    0.6952136983727648,
+    0.7571376237998887
+   ],
+   "fixed": 53,
+   "broken": 272,
+   "p": 0.0,
+   "fe_fixed": 50,
+   "fe_broken": 271,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "o<-<deleted> x15",
+    "n<-<deleted> x13",
+    "d<-X_NEW x12",
+    "i<-<deleted> x10",
+    "e<-<deleted> x10"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv"
+  },
+  "A3s12_atlas": {
+   "err": 0.7584,
+   "k": 609,
+   "n": 803,
+   "ci": [
+    0.7276137331045266,
+    0.78673753485191
+   ],
+   "fe_err": 0.7551,
+   "fe_k": 598,
+   "fe_n": 792,
+   "fe_ci": [
+    0.7239147950274286,
+    0.7837239109663271
+   ],
+   "fixed": 58,
+   "broken": 323,
+   "p": 0.0,
+   "fe_fixed": 58,
+   "fe_broken": 321,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "n<-<deleted> x14",
+    "o<-<deleted> x10",
+    "a<-<deleted> x9",
+    "a<-T33 x7",
+    "i<-T60 x7"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv"
+  },
+  "A3s13_atlas": {
+   "err": 0.7733,
+   "k": 621,
+   "n": 803,
+   "ci": [
+    0.7431304469920574,
+    0.8009664364606549
+   ],
+   "fe_err": 0.7727,
+   "fe_k": 612,
+   "fe_n": 792,
+   "fe_ci": [
+    0.7422651919151907,
+    0.8005563946919934
+   ],
+   "fixed": 52,
+   "broken": 313,
+   "p": 0.0,
+   "fe_fixed": 50,
+   "fe_broken": 311,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "o<-<deleted> x16",
+    "e<-T80 x15",
+    "a<-<deleted> x11",
+    "i<-<deleted> x11",
+    "e<-<deleted> x11"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv"
+  },
+  "A3s14_atlas": {
+   "err": 0.7883,
+   "k": 633,
+   "n": 803,
+   "ci": [
+    0.7586993008587601,
+    0.8151431980902282
+   ],
+   "fe_err": 0.7891,
+   "fe_k": 625,
+   "fe_n": 792,
+   "fe_ci": [
+    0.7593703135125173,
+    0.8161210908071364
+   ],
+   "fixed": 65,
+   "broken": 315,
+   "p": 0.0,
+   "fe_fixed": 62,
+   "fe_broken": 313,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "o<-<deleted> x16",
+    "n<-<deleted> x14",
+    "d<-<deleted> x11",
+    "e<-<deleted> x11",
+    "i<-<deleted> x10"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv"
+  },
+  "A3s15_atlas": {
+   "err": 0.7435,
+   "k": 597,
+   "n": 803,
+   "ci": [
+    0.7121458191652494,
+    0.7724598332949112
+   ],
+   "fe_err": 0.7424,
+   "fe_k": 588,
+   "fe_n": 792,
+   "fe_ci": [
+    0.7108491642027915,
+    0.7716589127813721
+   ],
+   "fixed": 46,
+   "broken": 300,
+   "p": 0.0,
+   "fe_fixed": 45,
+   "fe_broken": 299,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-T96 x13",
+    "o<-T60 x9",
+    "a<-<deleted> x9",
+    "t<-<deleted> x9",
+    "s<-<deleted> x8"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv"
+  },
+  "A3s16_atlas": {
+   "err": 0.7435,
+   "k": 597,
+   "n": 803,
+   "ci": [
+    0.7121458191652494,
+    0.7724598332949112
+   ],
+   "fe_err": 0.7475,
+   "fe_k": 592,
+   "fe_n": 792,
+   "fe_ci": [
+    0.7160713797599725,
+    0.776488948828028
+   ],
+   "fixed": 60,
+   "broken": 297,
+   "p": 0.0,
+   "fe_fixed": 56,
+   "fe_broken": 297,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-<deleted> x20",
+    "o<-<deleted> x12",
+    "r<-T33 x9",
+    "e<-T19 x9",
+    "e<-T33 x8"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv"
+  },
+  "A3s17_atlas": {
+   "err": 0.7821,
+   "k": 628,
+   "n": 803,
+   "ci": [
+    0.7522057035873164,
+    0.8092427889048902
+   ],
+   "fe_err": 0.7841,
+   "fe_k": 621,
+   "fe_n": 792,
+   "fe_ci": [
+    0.7541001739231804,
+    0.8113389787926364
+   ],
+   "fixed": 52,
+   "broken": 306,
+   "p": 0.0,
+   "fe_fixed": 49,
+   "fe_broken": 305,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "a<-<deleted> x13",
+    "t<-<deleted> x11",
+    "e<-<deleted> x11",
+    "i<-<deleted> x10",
+    "o<-T66 x9"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv"
+  },
+  "A3s18_atlas": {
+   "err": 0.7858,
+   "k": 631,
+   "n": 803,
+   "ci": [
+    0.7561007115828524,
+    0.8127841847834232
+   ],
+   "fe_err": 0.7879,
+   "fe_k": 624,
+   "fe_n": 792,
+   "fe_ci": [
+    0.7580521783479165,
+    0.8149261630707778
+   ],
+   "fixed": 47,
+   "broken": 308,
+   "p": 0.0,
+   "fe_fixed": 44,
+   "fe_broken": 307,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "e<-<deleted> x13",
+    "a<-<deleted> x10",
+    "a<-T60 x10",
+    "o<-<deleted> x10",
+    "t<-<deleted> x9"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv"
+  },
+  "A3s19_atlas": {
+   "err": 0.792,
+   "k": 636,
+   "n": 803,
+   "ci": [
+    0.7626001098362035,
+    0.8186787929868536
+   ],
+   "fe_err": 0.7929,
+   "fe_k": 628,
+   "fe_n": 792,
+   "fe_ci": [
+    0.7633271568072432,
+    0.819703436215288
+   ],
+   "fixed": 50,
+   "broken": 311,
+   "p": 0.0,
+   "fe_fixed": 48,
+   "fe_broken": 310,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "a<-<deleted> x14",
+    "e<-<deleted> x14",
+    "u<-<deleted> x10",
+    "n<-<deleted> x10",
+    "d<-<deleted> x8"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv"
+  },
+  "A3s20_atlas": {
+   "err": 0.7497,
+   "k": 602,
+   "n": 803,
+   "ci": [
+    0.7185850449814052,
+    0.7784146139355371
+   ],
+   "fe_err": 0.7513,
+   "fe_k": 595,
+   "fe_n": 792,
+   "fe_ci": [
+    0.7199915559364604,
+    0.7801079613544177
+   ],
+   "fixed": 46,
+   "broken": 299,
+   "p": 0.0,
+   "fe_fixed": 43,
+   "fe_broken": 298,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "a<-<deleted> x16",
+    "i<-<deleted> x12",
+    "o<-T83 x11",
+    "e<-T36 x8",
+    "l<-<deleted> x7"
+   ],
+   "base": "A1_atlas_birago1572-no87.tsv"
+  },
+  "A0a_override": {
+   "err": 0.1121,
+   "k": 90,
+   "n": 803,
+   "ci": [
+    0.09208078709322522,
+    0.13577261064928087
+   ],
+   "fe_err": 0.0997,
+   "fe_k": 79,
+   "fe_n": 792,
+   "fe_ci": [
+    0.0807703080623625,
+    0.12258875233357559
+   ],
+   "fixed": 8,
+   "broken": 45,
+   "p": 0.0,
+   "fe_fixed": 8,
+   "fe_broken": 45,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x20",
+    "o<-T83 x5",
+    "e<-<deleted> x5",
+    "e<-T76 x4",
+    "t<-T90 x3"
+   ],
+   "base": "passC.tsv"
+  },
+  "A1_override": {
+   "err": 0.066,
+   "k": 53,
+   "n": 803,
+   "ci": [
+    0.05081243631150348,
+    0.08532531365081873
+   ],
+   "fe_err": 0.053,
+   "fe_k": 42,
+   "fe_n": 792,
+   "fe_ci": [
+    0.03946964838871102,
+    0.0709060846717372
+   ],
+   "fixed": 0,
+   "broken": 11,
+   "p": 0.001,
+   "fe_fixed": 0,
+   "fe_broken": 11,
+   "fe_p": 0.001,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "r<-T45 x2"
+   ],
+   "base": "passC.tsv"
+  },
+  "A2_override": {
+   "err": 0.0797,
+   "k": 64,
+   "n": 803,
+   "ci": [
+    0.06290762378031893,
+    0.1004969403869228
+   ],
+   "fe_err": 0.0669,
+   "fe_k": 53,
+   "fe_n": 792,
+   "fe_ci": [
+    0.051523182094576854,
+    0.08649624287642242
+   ],
+   "fixed": 0,
+   "broken": 22,
+   "p": 0.0,
+   "fe_fixed": 0,
+   "fe_broken": 22,
+   "fe_p": 0.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "r<-T45 x2"
+   ],
+   "base": "passC.tsv"
+  },
+  "A3s1_override": {
+   "err": 0.0511,
+   "k": 41,
+   "n": 803,
+   "ci": [
+    0.03785786114201546,
+    0.06853427332403092
+   ],
+   "fe_err": 0.0379,
+   "fe_k": 30,
+   "fe_n": 792,
+   "fe_ci": [
+    0.02665978765738685,
+    0.053559190591551134
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "l<-T64 x2"
+   ],
+   "base": "passC.tsv"
+  },
+  "A3s2_override": {
+   "err": 0.0511,
+   "k": 41,
+   "n": 803,
+   "ci": [
+    0.03785786114201546,
+    0.06853427332403092
+   ],
+   "fe_err": 0.0379,
+   "fe_k": 30,
+   "fe_n": 792,
+   "fe_ci": [
+    0.02665978765738685,
+    0.053559190591551134
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "l<-T64 x2"
+   ],
+   "base": "passC.tsv"
+  },
+  "A3s3_override": {
+   "err": 0.0511,
+   "k": 41,
+   "n": 803,
+   "ci": [
+    0.03785786114201546,
+    0.06853427332403092
+   ],
+   "fe_err": 0.0379,
+   "fe_k": 30,
+   "fe_n": 792,
+   "fe_ci": [
+    0.02665978765738685,
+    0.053559190591551134
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "l<-T64 x2"
+   ],
+   "base": "passC.tsv"
+  },
+  "A3s4_override": {
+   "err": 0.0511,
+   "k": 41,
+   "n": 803,
+   "ci": [
+    0.03785786114201546,
+    0.06853427332403092
+   ],
+   "fe_err": 0.0379,
+   "fe_k": 30,
+   "fe_n": 792,
+   "fe_ci": [
+    0.02665978765738685,
+    0.053559190591551134
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "l<-T64 x2"
+   ],
+   "base": "passC.tsv"
+  },
+  "A3s5_override": {
+   "err": 0.0511,
+   "k": 41,
+   "n": 803,
+   "ci": [
+    0.03785786114201546,
+    0.06853427332403092
+   ],
+   "fe_err": 0.0379,
+   "fe_k": 30,
+   "fe_n": 792,
+   "fe_ci": [
+    0.02665978765738685,
+    0.053559190591551134
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "l<-T64 x2"
+   ],
+   "base": "passC.tsv"
+  },
+  "A3s6_override": {
+   "err": 0.0511,
+   "k": 41,
+   "n": 803,
+   "ci": [
+    0.03785786114201546,
+    0.06853427332403092
+   ],
+   "fe_err": 0.0379,
+   "fe_k": 30,
+   "fe_n": 792,
+   "fe_ci": [
+    0.02665978765738685,
+    0.053559190591551134
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "l<-T64 x2"
+   ],
+   "base": "passC.tsv"
+  },
+  "A3s7_override": {
+   "err": 0.0511,
+   "k": 41,
+   "n": 803,
+   "ci": [
+    0.03785786114201546,
+    0.06853427332403092
+   ],
+   "fe_err": 0.0379,
+   "fe_k": 30,
+   "fe_n": 792,
+   "fe_ci": [
+    0.02665978765738685,
+    0.053559190591551134
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "l<-T64 x2"
+   ],
+   "base": "passC.tsv"
+  },
+  "A3s8_override": {
+   "err": 0.0511,
+   "k": 41,
+   "n": 803,
+   "ci": [
+    0.03785786114201546,
+    0.06853427332403092
+   ],
+   "fe_err": 0.0379,
+   "fe_k": 30,
+   "fe_n": 792,
+   "fe_ci": [
+    0.02665978765738685,
+    0.053559190591551134
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "l<-T64 x2"
+   ],
+   "base": "passC.tsv"
+  },
+  "A3s9_override": {
+   "err": 0.0511,
+   "k": 41,
+   "n": 803,
+   "ci": [
+    0.03785786114201546,
+    0.06853427332403092
+   ],
+   "fe_err": 0.0379,
+   "fe_k": 30,
+   "fe_n": 792,
+   "fe_ci": [
+    0.02665978765738685,
+    0.053559190591551134
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "l<-T64 x2"
+   ],
+   "base": "passC.tsv"
+  },
+  "A3s10_override": {
+   "err": 0.0511,
+   "k": 41,
+   "n": 803,
+   "ci": [
+    0.03785786114201546,
+    0.06853427332403092
+   ],
+   "fe_err": 0.0379,
+   "fe_k": 30,
+   "fe_n": 792,
+   "fe_ci": [
+    0.02665978765738685,
+    0.053559190591551134
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "l<-T64 x2"
+   ],
+   "base": "passC.tsv"
+  },
+  "A3s11_override": {
+   "err": 0.0511,
+   "k": 41,
+   "n": 803,
+   "ci": [
+    0.03785786114201546,
+    0.06853427332403092
+   ],
+   "fe_err": 0.0379,
+   "fe_k": 30,
+   "fe_n": 792,
+   "fe_ci": [
+    0.02665978765738685,
+    0.053559190591551134
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "l<-T64 x2"
+   ],
+   "base": "passC.tsv"
+  },
+  "A3s12_override": {
+   "err": 0.0511,
+   "k": 41,
+   "n": 803,
+   "ci": [
+    0.03785786114201546,
+    0.06853427332403092
+   ],
+   "fe_err": 0.0379,
+   "fe_k": 30,
+   "fe_n": 792,
+   "fe_ci": [
+    0.02665978765738685,
+    0.053559190591551134
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "l<-T64 x2"
+   ],
+   "base": "passC.tsv"
+  },
+  "A3s13_override": {
+   "err": 0.0511,
+   "k": 41,
+   "n": 803,
+   "ci": [
+    0.03785786114201546,
+    0.06853427332403092
+   ],
+   "fe_err": 0.0379,
+   "fe_k": 30,
+   "fe_n": 792,
+   "fe_ci": [
+    0.02665978765738685,
+    0.053559190591551134
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "l<-T64 x2"
+   ],
+   "base": "passC.tsv"
+  },
+  "A3s14_override": {
+   "err": 0.0511,
+   "k": 41,
+   "n": 803,
+   "ci": [
+    0.03785786114201546,
+    0.06853427332403092
+   ],
+   "fe_err": 0.0379,
+   "fe_k": 30,
+   "fe_n": 792,
+   "fe_ci": [
+    0.02665978765738685,
+    0.053559190591551134
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "l<-T64 x2"
+   ],
+   "base": "passC.tsv"
+  },
+  "A3s15_override": {
+   "err": 0.0511,
+   "k": 41,
+   "n": 803,
+   "ci": [
+    0.03785786114201546,
+    0.06853427332403092
+   ],
+   "fe_err": 0.0379,
+   "fe_k": 30,
+   "fe_n": 792,
+   "fe_ci": [
+    0.02665978765738685,
+    0.053559190591551134
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "l<-T64 x2"
+   ],
+   "base": "passC.tsv"
+  },
+  "A3s16_override": {
+   "err": 0.0511,
+   "k": 41,
+   "n": 803,
+   "ci": [
+    0.03785786114201546,
+    0.06853427332403092
+   ],
+   "fe_err": 0.0379,
+   "fe_k": 30,
+   "fe_n": 792,
+   "fe_ci": [
+    0.02665978765738685,
+    0.053559190591551134
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "l<-T64 x2"
+   ],
+   "base": "passC.tsv"
+  },
+  "A3s17_override": {
+   "err": 0.0511,
+   "k": 41,
+   "n": 803,
+   "ci": [
+    0.03785786114201546,
+    0.06853427332403092
+   ],
+   "fe_err": 0.0379,
+   "fe_k": 30,
+   "fe_n": 792,
+   "fe_ci": [
+    0.02665978765738685,
+    0.053559190591551134
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "l<-T64 x2"
+   ],
+   "base": "passC.tsv"
+  },
+  "A3s18_override": {
+   "err": 0.0511,
+   "k": 41,
+   "n": 803,
+   "ci": [
+    0.03785786114201546,
+    0.06853427332403092
+   ],
+   "fe_err": 0.0379,
+   "fe_k": 30,
+   "fe_n": 792,
+   "fe_ci": [
+    0.02665978765738685,
+    0.053559190591551134
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "l<-T64 x2"
+   ],
+   "base": "passC.tsv"
+  },
+  "A3s19_override": {
+   "err": 0.0511,
+   "k": 41,
+   "n": 803,
+   "ci": [
+    0.03785786114201546,
+    0.06853427332403092
+   ],
+   "fe_err": 0.0379,
+   "fe_k": 30,
+   "fe_n": 792,
+   "fe_ci": [
+    0.02665978765738685,
+    0.053559190591551134
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "l<-T64 x2"
+   ],
+   "base": "passC.tsv"
+  },
+  "A3s20_override": {
+   "err": 0.0511,
+   "k": 41,
+   "n": 803,
+   "ci": [
+    0.03785786114201546,
+    0.06853427332403092
+   ],
+   "fe_err": 0.0379,
+   "fe_k": 30,
+   "fe_n": 792,
+   "fe_ci": [
+    0.02665978765738685,
+    0.053559190591551134
+   ],
+   "fixed": 0,
+   "broken": 0,
+   "p": 1.0,
+   "fe_fixed": 0,
+   "fe_broken": 0,
+   "fe_p": 1.0,
+   "lines_missing": 0,
+   "confusions": [
+    "s<-T50 x7",
+    "d<-T98 x7",
+    "t<-T90 x3",
+    "e<-T76 x3",
+    "l<-T64 x2"
+   ],
+   "base": "passC.tsv"
+  }
+ }
+}

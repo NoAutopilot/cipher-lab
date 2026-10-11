@@ -1,0 +1,7 @@
+vivonne1573-f102r-dev2 [dev] as measured: err_true(0.75-indel align) 0.854 (356/417) | standard SER (unit-cost Levenshtein) 0.813 (339/417): S 248 D 39 I 52 | wrong 192 deleted 63 inserted 101 | excluded 245 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 192/354 = 0.542 | coverage 354/417 = 0.849
+    standard SER line bootstrap 95% (1000 resamples, conditional on this item's 13 lines): 0.764-0.881
+paired rand2.top1.tsv vs sign.top1.tsv on vivonne1573-f102r-dev2 [as measured]: 13 lines; lines improved 3, worsened 7, tied 3; line sign test p = 0.3438; unit-cost edits base 333 -> output 339 over 417 scored signs | beside, sign-level position McNemar: 417 common scored signs; base wrong 255, output wrong 255; fixed 39, broken 39; exact p = 1.0000
+    paired line bootstrap 95% of the SER difference output - base (1000 resamples, conditional on this item's lines): -0.014..0.043
+  top confusions (truth value <- read): u<-tz x11, t<-<deleted> x9, a<-<deleted> x9, u<-m x8, e<-tz x8, a<-m x7, u<-<deleted> x7, a<-tz x6
+split dev: err_true(0.75-indel align) 0.854 (356/417) | standard SER 0.813 (339/417)

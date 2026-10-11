@@ -53,3 +53,55 @@ def test_toy():
 if __name__ == '__main__':
     test_toy()
     print('ok')
+
+
+# TXE3-1 (11 Oct 2026): the lattice / disagree / margin orders, --at / --thresholds cells and --dump-dir.
+# Toy: 6 signs, read has pos 2 wrong (X for A). Signals: only pos 2 disagrees. Atlas top-k: pos 2 has the smallest
+# d2-d1 gap, pos 5 has no k2 (infinite margin, last among mapped), pos 6 is unmapped (after). Lattice: a two-candidate
+# lattice where only pos 2 carries weight on an alternative, so its value is the only positive one and it ranks first.
+# Key: A a, B b, C c, X x (a sign in the key, wrong value) under a tiny corpus of 'abab...' prose.
+SIG2 = 'line\tpos\tsign\tdisagree\tn_signals\n' + ''.join('u_L01\t%d\tS\t%d\t%d\n' % (p, d, d) for p, d in
+                                                           [(1, 0), (2, 1), (3, 0), (4, 0), (5, 0), (6, 0)])
+TOPK_ATLAS = 'page\tline\tbox\tpos\tk1\td1\tk2\td2\n' + ''.join('u\t1\tb%d\t%d\t%s\t%s\t%s\t%s\n' % r for r in
+    [(1, 1, 'A', '2.0', 'B', '5.0'), (2, 2, 'A', '2.0', 'X', '2.1'), (3, 3, 'A', '2.0', 'B', '4.0'),
+     (4, 4, 'B', '2.0', 'A', '3.0'), (5, 5, 'B', '2.0', '', ''), (6, 6, 'C', '2.0', 'A', '2.5')])
+MAP2 = 'sid\tline\tpos\top\n' + ''.join('b%d\tu_L01\t%d\t1:1\n' % (p, p) for p in range(1, 6))   # pos 6 unmapped
+LAT = 'line\tpos\tcand\tscore\n' + ''.join('u_L01\t%d\t%s\t%s\n' % r for r in
+    [(1, 'A', '1.0'), (2, 'X', '0.6'), (2, 'A', '0.4'), (3, 'A', '1.0'), (4, 'B', '1.0'), (5, 'B', '1.0'), (6, 'C', '1.0')])
+KEY = 'sign\tvalue\nA\ta\nB\tb\nC\tc\nX\tx\n'
+
+
+def test_txe3_orders():
+    with tempfile.TemporaryDirectory() as d:
+        for n, t in (('t', TRUTH), ('b', BASE), ('m', MAP2), ('c', CL), ('s', SIG2), ('k', TOPK_ATLAS), ('l', LAT), ('key', KEY)):
+            open('%s/%s.tsv' % (d, n), 'w').write(t)
+        open(d + '/corpus.txt', 'w').write(('aab abba cab bac ' * 200))
+        out = d + '/c.tsv'
+        r = subprocess.run([sys.executable, TOOL, '--truth', d + '/t.tsv', '--base', d + '/b.tsv', '--lines', d + '/b.tsv',
+                            '--map', d + '/m.tsv', '--clusters', d + '/c.tsv', '--signals', d + '/s.tsv', '--margin', d + '/k.tsv',
+                            '--lattice', d + '/l.tsv', '--key', d + '/key.tsv', '--lattice-corpus', d + '/corpus.txt',
+                            '--seeds', '6', '--kmax', '6', '--propagate', 'none', '--at', '1', '3', '--thresholds', '0.5', '0.0',
+                            '--dump-dir', d + '/dump', '--out', out], capture_output=True, text=True, check=True)
+        s = json.loads(r.stdout)
+        o = s['orderings']
+        for name in ('disagree', 'margin', 'disagree_margin', 'lattice'):
+            assert o[name]['wrong_at']['1'] == 0, (name, o[name])          # pos 2 asked first -> fixed at k=1
+            assert o[name]['to_pct']['0.0'] == 1, (name, o[name])
+        # margin order among the rest: pos 5 (no k2) is the last mapped tile, pos 6 (unmapped) after it
+        rows = [l.rstrip('\n').split('\t') for l in open(out) if not l.startswith('#')][1:]
+        assert any(r[0] == 'margin' for r in rows)
+        # random seeds vary on the endpoint (the control can fail differently from the target)
+        bands = o['c_random']['err_at_min_mean_max']
+        assert any(bands[k][0] < bands[k][2] for k in ('1', '3')) and o['c_random']['seeds'] == 6, bands
+        assert o['c_random']['to_pct_reached']['0.0'] <= 6
+        # dumps: one file per named ordering per --at k, scored positions intact
+        assert os.path.exists(d + '/dump/lattice_k1.tsv') and os.path.exists(d + '/dump/margin_k3.tsv')
+        dump = [l.split('\t') for l in open(d + '/dump/disagree_k1.tsv')][1:]
+        assert len(dump) == 6 and dump[1][2].strip() == 'A', dump
+        # a_doubt and d_oracle still present; b_size absent under none
+        assert 'a_doubt' in o and 'd_oracle' in o and 'b_size' not in o
+
+
+if __name__ == '__main__':
+    test_txe3_orders()
+    print('ok txe3')

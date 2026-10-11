@@ -1,0 +1,8 @@
+[
+{"label":"A","q1":"whole","q2":"clean","q3_top1":"T83","q3_conf1":4,"q3_top2":"T81","q3_conf2":2,"hard_pair":false,"q4_word":"licencia","q4_legible":true,"q4_issue":"none","q5":"Curled left and right strokes crossed by a long horizontal bar, matching the T83 shape."},
+{"label":"B","q1":"whole","q2":"clean","q3_top1":"T60","q3_conf1":3,"q3_top2":"T86","q3_conf2":2,"hard_pair":true,"q4_word":"licencia","q4_legible":true,"q4_issue":"none","q5":"The box sits off the sign, to the right of the hash-like sign near the centre, which is the one described."},
+{"label":"C","q1":"whole","q2":"clean","q3_top1":"T83","q3_conf1":4,"q3_top2":"T81","q3_conf2":2,"hard_pair":false,"q4_word":"andavsene","q4_legible":true,"q4_issue":"none","q5":"Same curled sign as A with a heavy blot at the lower left end."},
+{"label":"D","q1":"whole","q2":"clean","q3_top1":"T86","q3_conf1":3,"q3_top2":"T60","q3_conf2":2,"hard_pair":true,"q4_word":"andavsene","q4_legible":true,"q4_issue":"none","q5":"Hash with verticals projecting above and below the two bars; the box is cut off at the bottom of the crop."},
+{"label":"E","q1":"whole","q2":"clean","q3_top1":"T85","q3_conf1":3,"q3_top2":"T51","q3_conf2":2,"hard_pair":true,"q4_word":"et","q4_legible":true,"q4_issue":"ampersand","q5":"Cross with a long descending vertical and a short stub above the bar; the clerk's 'et' is written as an ampersand-like form."},
+{"label":"F","q1":"whole","q2":"clean","q3_top1":"T37","q3_conf1":5,"q3_top2":"T88","q3_conf2":2,"hard_pair":false,"q4_word":"andavsene","q4_legible":true,"q4_issue":"none","q5":"Oval with a horizontal bar through the middle."}
+]

@@ -1,0 +1,185 @@
+passage	pos	sign_id	alt	conf	note
+L07	1	T65		M	circle with crossed stem rising above (inverted Venus); line start
+L07	2	T86		H	two verticals one bar
+L07	3	T60		H	hash
+L07	4	T18	T36	M	stem through circle
+L07	5	T86		H	
+L07	6	T60		H	
+L07	7	T63		H	V
+L07	8	T19		H	pi
+L07	9	T65		M	circle, crossed stem above
+L07	10	T29	T97	M	reversed-3 joined to e shape
+L07	11	T80		H	D
+L07	12	T76	T26	M	9 shape
+L07	13	T36	T18	M	circle on stem
+L07	14	T27	T54	M	l-like loop with hook
+L07	15	T65		M	circle, crossed stem above
+L07	16	T37		H	circle crossed by bar
+L07	17	T58		H	B
+L07	18	T54		H	R
+L07	19	T86		H	
+L07	20	T60		H	
+L07	21	T53		H	infinity
+L07	22	T86		H	
+L07	23	T18	T36	M	stem through circle
+L07	24	T85		H	plus
+L07	25	T13		M	m with tilde, dot below
+L07	26	T37		H	
+L07	27	T36		M	circle on stem
+L07	28	T85		H	
+L07	29	T92	T50	M	rounded w
+L07	30	T37		H	line end
+L08	1	T63		M	v with slight tail; line start
+L08	2	T86		H	
+L08	3	T51		M	t-like dagger with hooked foot
+L08	4	T45		H	circle at base of stem
+L08	5	T51		M	t-like
+L08	6	T19		H	
+L08	7	T29	T97	M	reversed-3 joined to e
+L08	8	T85		H	
+L08	9	T60		H	
+L08	10	T92	T50	M	rounded w
+L08	11	T80		H	
+L08	12	T64		H	plain m
+L08	13	T37		H	dot after
+L08	14	T33	X_NEW	M	two verticals on a baseline
+L08	15	T45		H	
+L08	16	T60		H	
+L08	17	T18		M	
+L08	18	T19		H	
+L08	19	T25		H	lambda
+L08	20	T95	T51	L	p-like with crossbar on stem
+L08	21	T36		M	
+L08	22	T85		H	
+L08	23	T18		M	stem through circle
+L08	24	T65		M	circle with cross below
+L08	25	T45		H	
+L08	26	T13		M	m with small a-like mark above, dot
+L08	27	T55		M	stem with two bars right
+L08	28	T18		M	
+L08	29	T27		M	l-like with tick
+L08	30	T11	T46	M	85; line end
+L09	1	T29		H	epsilon + circle; line start
+L09	2	T84		H	cross over triangle
+L09	3	T18		M	
+L09	4	T27		M	
+L09	5	T29	T97	M	reversed-3 joined to e
+L09	6	T37		H	
+L09	7	T33	X_NEW	M	two verticals on baseline
+L09	8	T86		H	
+L09	9	T13		H	m with tilde, dot
+L09	10	T52		M	n with long tail below
+L09	11	T60		H	
+L09	12	T45		H	
+L09	13	T13		H	
+L09	14	T86		H	
+L09	15	T54		H	
+L09	16	T37		H	
+L09	17	T60		H	
+L09	18	T80		H	
+L09	19	T19		H	
+L09	20	T49		M	box flag on stem
+L09	21	T86		H	
+L09	22	T58		H	
+L09	23	T85		H	
+L09	24	T65		M	circle, crossed stem above
+L09	25	T25		H	
+L09	26	T33	X_NEW	M	two verticals on baseline
+L09	27	T65		M	
+L09	28	T37		H	
+L09	29	T11	T15	L	small 8-like digit cut at edge; line end
+L10	1	T53		H	line start
+L10	2	T86		H	
+L10	3	T18		M	
+L10	4	T76	T26	M	9 shape
+L10	5	T92	T50	M	
+L10	6	T19		H	
+L10	7	T58		H	
+L10	8	T18		M	
+L10	9	T85		H	
+L10	10	T53		H	
+L10	11	T27		M	
+L10	12	T18		M	stem through circle with tick
+L10	13	T55		M	
+L10	14	T60		H	
+L10	15	T55		M	
+L10	16	T15		H	89
+L10	17	T76	T26	M	
+L10	18	T86		H	
+L10	19	T70		H	delta
+L10	20	T58		H	
+L10	21	T27		M	
+L10	22	T60		M	hash with tick above
+L10	23	T45		H	extra tick
+L10	24	T65		M	
+L10	25	T33	X_NEW	M	two verticals on baseline
+L10	26	T19		H	
+L10	27	T24		H	epsilon
+L10	28	T37		H	
+L10	29	T29	T97	M	reversed-3 joined to e
+L10	30	T45		H	
+L10	31	T36	T18	M	
+L10	32	T27		M	
+L10	33	?		L	small double vertical mark at edge; line end
+L11	1	T26	T76	M	q with hooked flourish; line start
+L11	2	T33	X_NEW	M	
+L11	3	T19		H	
+L11	4	T95	T51	L	p with crossbar
+L11	5	T76		M	
+L11	6	T92	T50	M	
+L11	7	T45		H	
+L11	8	T60		H	
+L11	9	T10		H	two circles joined
+L11	10	T85		H	
+L11	11	T56	X_NEW	L	y-like loop with tail
+L11	12	T37		H	
+L11	13	T33	X_NEW	M	
+L11	14	T45		H	
+L11	15	T29	T97	M	
+L11	16	T86		H	
+L11	17	T80		H	
+L11	18	T19		H	
+L11	19	T24		H	
+L11	20	T19		H	
+L11	21	T29	T97	M	
+L11	22	T51		M	t-like
+L11	23	T37		H	
+L11	24	T63		H	
+L11	25	T80		H	
+L11	26	T65		M	
+L11	27	T55		M	
+L11	28	T53		H	
+L11	29	T86		H	
+L11	30	T29	T97	M	
+L11	31	T95	T51	L	crossed p cut at edge; line end
+L12	1	T97		M	8/ampersand-like double loop; line start
+L12	2	T27		M	
+L12	3	T54		H	
+L12	4	T45		H	
+L12	5	T63		H	
+L12	6	T27		M	
+L12	7	T37		H	
+L12	8	T97		M	
+L12	9	T86		H	
+L12	10	T76		M	9 with long tail
+L12	11	T19		H	
+L12	12	T86		H	
+L12	13	T60		H	
+L12	14	T86		H	
+L12	15	T36		M	
+L12	16	T45		H	
+L12	17	T57		H	diamond with tail
+L12	18	T37		H	
+L12	19	T29	T97	M	
+L12	20	T80		H	
+L12	21	T19		H	
+L12	22	T26	T76	M	q with hook
+L12	23	X_A		M	capital A with tick
+L12	24	T18		M	
+L12	25	T45		H	
+L12	26	T33	X_NEW	M	
+L12	27	T19		H	
+L12	28	T95	T51	L	
+L12	29	T45		H	
+L12	30	T37		H	
+L12	31	T57		M	cut at edge; line end

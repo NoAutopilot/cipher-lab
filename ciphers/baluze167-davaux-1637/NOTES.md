@@ -1265,3 +1265,39 @@ blind passes (err_2reader 0.280), letter signs unlabelled; printed as a "Kopie" 
 - [x] image-check: native crops exist for all five bare passages; f.229 passed twice and spot-checked; f.228 mark re-reads closed (SIG-B228B gate FAIL, no further machine mark pass)
 - [x] retry: f.228 re-cut, re-passed, decoded and re-decoded (D1-BAL170, D1-BAL170B, B167-228, SIG-B228, SIG-B228B), grade correction applied (SIG-V228)
 Verdict: keep going: 2 internal gaps; cheapest next: a shape-level control of the f.228/f.229 letter signs against the glossed Baluze 170 leaves (~$3), and the 168 f.246 step once L71 answers
+
+## BAL-SHAPE (11 Oct 2026, account 2, for LANE DEFAULT-A2-0509), 05:22-05:3x UTC by date -u
+Brief: `.claude/briefs/runs/2026-10-11-ytbiz-default-0509-jobs.md` section BAL-SHAPE (shape-level control of the f.228/f.229 letter signs
+against the glossed Baluze 170 leaves; disk only; "if the glossed-leaf crops are not on disk, stop and say so; no Gallica").
+**Stopped at the brief's own disk check, before any PREREG, tile or read; nothing scored, no grade or reading changed.**
+Prior-work step (pasted): `python3 tools/prior_work.py baluze167-davaux-1637 --item-spec 'shelfmark=BnF Baluze 170;folio=228r;date=1640-08-25;sender=Chavigny;recipient=Avaux' --step-type key --offline`
+-> `holds: specific 13 (LEAD 13); generic 2 (UNCHECKED-NET 2)`, exit 4. The 13 LEADs are this folder's own escalation lines, audits and
+this job's claim; none records a shape-level control already run (AUDIT.md l.91 names it as missing). Not `--record`ed: no priced step followed.
+Disk check (what was looked for, where): Baluze 170 is Gallica btv1b90015040. `images/crops/manifest.json` and every image under the folder
+carry only canvases 239, 240, 241 (= f.228r, f.228v-229r, f.229v: the target itself, survey.tsv "interlinear absent"). No crop, strip or
+tile exists for any glossed Baluze 170 leaf (survey.tsv "present": ff.63, 124, 130, 138, 145, 233, 239, 258, 273, 300, 320, 322), and a
+repo-wide search for btv1b90015040 images outside this folder found none (only `sources/gallica-manifests/btv1b90015040.json`, the IIIF
+manifest, which gives canvas ids for a later fetch). The positive control the brief requires therefore cannot be built from disk.
+Glossed material that IS on disk, other volumes: 167 f.157 (gloss.tsv, d2davex exemplars), 168 f.110r (b168f110rG crops), 168 f.166
+(d1bal167 exemplars). Whether any is in the f.228/f.229 hand is not established here; using them would change the brief's design (lane's call).
+Network: none. Subagents: none. Rule 10: no novelty claim made here.
+
+## Remaining gaps (BAL-SHAPE, 11 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 170 f.229r-v: N3, D2 (AUD1-B167). 170 f.228r-v: N3, D2 about 36% (three audits;
+H 56, M 70, I 27, U 1 of 154; fr17 FAIL by 0.038 on the corrected grades, above all 40 shuffled nulls). 168 f.246-247v: transcribed by two
+blind passes (err_2reader 0.280), letter signs unlabelled; printed as a "Kopie" item in the Papiers de Richelieu 1636-1642 volume (snippet).
+- 168 f.246-247v bare passage - blocker: waiting-on LOCAL-QUEUE L71 (owner's browser: does the Papiers de Richelieu item print the cipher passage in clear); next if it does: align the printed text to the two-pass transcription with tools/interlinear_align.py (known plaintext for the f.247 hand), ~$3; if not: the f.247-hand glossed-text search (survey.tsv's d'Avaux-side leaves), ~$3
+- 170 f.228r-v reading depth - blocker: not-attempted; the shape-level control needs native line crops of glossed Baluze 170 leaves, none on disk (BAL-SHAPE); next: a Gallica crop job (tools/iiif_lines.py --ark btv1b90015040, 2-3 glossed Chavigny leaves of 1640, e.g. f.233 c244, f.239 c251, f.258 c270, eye-check the hand matches f.228 first), ~$1.5, then BAL-SHAPE as briefed, ~$4
+- 170 f.228-229 novelty (N3 -> N4) - blocker: waiting-on LOCAL-QUEUE L71 and SO-BAL170-F228 (SECOND-OPINIONS-QUEUE.tsv); the edition's notes are snippet-only from the cloud and a second opinion is owed before N4
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census (N9-BAL found unlisted f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (11 Oct 2026, BAL-SHAPE)
+- [x] siblings: davaux-1633 and DECODE records 2756-2762 checked (Siblings section above)
+- [x] clear-pages: leaf survey done; 170 f.230r is the clear close of the f.228 letter (D1-BAL170)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.229 letter values carried to f.228
+- [ ] print: Avenel, Négociations secrètes, Guébriant, Bougeant, Mercure, Siri, IA, Google Books (UNA3-BAL), OpenAlex, CrossRef done; untried: the Papiers de Richelieu 1636-1642 volume by page (L71)
+- [ ] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); untried: a printed clear text of 168 f.246 (L71), a glossed text in the f.247 hand, and the shape-level control of f.228/f.229 (needs glossed 170 crops, BAL-SHAPE)
+- [ ] image-check: native crops exist for all five bare passages; f.229 passed twice and spot-checked; f.228 mark re-reads closed (SIG-B228B gate FAIL); untried: native crops of the glossed Baluze 170 leaves (none on disk, BAL-SHAPE)
+- [x] retry: f.228 re-cut, re-passed, decoded and re-decoded (D1-BAL170, D1-BAL170B, B167-228, SIG-B228, SIG-B228B), grade correction applied (SIG-V228)
+Verdict: keep going: 2 internal gaps; cheapest next: a Gallica crop job for 2-3 glossed Baluze 170 leaves (~$1.5), then the shape-level control as briefed in BAL-SHAPE (~$4); the 168 f.246 step once L71 answers

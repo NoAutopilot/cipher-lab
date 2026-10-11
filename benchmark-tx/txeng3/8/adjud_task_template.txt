@@ -1,0 +1,10 @@
+You settle doubtful signs in a transcription of a 16th-century cipher letter (a page that is cipher throughout). Use ONLY the files named here; do not open, list or search any other file or directory. You do not know, and must not look up, what any sign means.
+
+{SHEET}
+Line crops for this packet (lines {LINES}): {CROPS}
+{OVERLAP} Each crop holds one written line along its middle; ignore fragments of neighbouring lines at the top and bottom edges. Do not resize, rescale, enhance or re-crop the images.
+Queue (your packet, {N} rows): {DIR}/queue.tsv -- one row per position where two earlier readers disagreed: line, col (the sign's position counting signs from the left of the line, from 1), kind, candidates (the two readings they gave, separated by " | "; "(no sign)" = one reader saw no sign there), left_neighbours and right_neighbours (the agreed signs just before and after it: use them as landmarks to find the position in the crop).
+
+Work row by row. For EACH row: open the crops of its line with your image reader (s1, s2 and s3 of every line in this packet -- view them, do not settle any row without looking), find the sign by its neighbours (and its approximate place: col out of the line's length), compare its shape with the inventory, and choose: one of the candidates; any other cell label (T##) if the shape plainly fits it better; X_NEW (no cell fits) or ? (cannot make out the mark); or NONE if there is no sign there (or it is the same overlap sign already counted). Do not settle any row by a rule (for example "take the first candidate"); every verdict must come from the image. If you could not find or see a row's position, still give your best verdict but set conf L and viewed = no.
+
+Write {DIR}/out.tsv with header line<TAB>col<TAB>sign<TAB>conf<TAB>viewed<TAB>note (conf H/M/L; viewed = yes only if you looked at that line's crops and located this row's sign in them, else no; note = a few words on the shape you saw), one row per queue row, same order ({N} rows). Reply only with: the row count, the number of rows with viewed = yes, and the list of crop files you opened.

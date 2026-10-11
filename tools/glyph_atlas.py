@@ -7,6 +7,14 @@
   python3 tools/glyph_atlas.py atlas --out DIR --from-truth TOKENS.tsv --per 6 --spread --exclude-leaf PAGE [--canonical SHEET.png]
   python3 tools/glyph_atlas.py classify --out DIR --labels labels.json --page PAGE --tsv boxes.tsv [--exclude-page] [--strips DIR2]
         [--jitter 5 --jitter-px 2 --jitter-scale 0.05]   (per-box stability under crop perturbation, TXE-J)
+  python3 tools/glyph_atlas.py classify --out DIR --labels labels.json --boxes BOXES.tsv --tsv out.tsv [--boxes-median-h PX]
+        (TXE3-5 BOXES, 11 Oct 2026: classify boxes that are NOT atlas rows -- a person's corrected cuts, a second
+        segmenter's proposals -- re-cut from their own image into the atlas's fitted feature space, kNN over the atlas;
+        BOXES.tsv columns box_id, crop|image|page, x, y, w, h [, line, order|pos, kind]; rh/rw use --boxes-median-h,
+        default the median h of the file's kind=sign boxes, so two box sets of one hand share one size scale.
+        Catches: the same hand's boxes moved or deleted by a person (the only change is the cut). Must NOT change: a
+        box list equal to the atlas's own boxes on the same image reproduces the stored top-1 (re-cut fidelity).
+        Offline test: tools/tests/test_glyph_atlas.py.)
   python3 tools/glyph_atlas.py crop --image PAGE.jpg --box x0,y0,x1,y1[:label] [--box ...] --dest DIR [--scale 4]
   python3 tools/glyph_atlas.py crop --out DIR --sid ID [--sid ...] --dest DIR2 [--scale 4]
 
@@ -48,6 +56,15 @@ segment  Per page: background-normalised binarisation (grey closing divides out 
          leaf) is cut at the leaf's scale; "pool" takes the median of the pages' own medians. pages.json then records
          the shared value. Catches: a speck-dominated crop of a leaf whose other crops share one scale. Must NOT change:
          a page whose own median already equals the shared value (identical boxes). Offline test: test_glyph_atlas.py.
+         --split-wide W [--split-piece P] [--split-random SEED] (TXE3-6 UNIT, 11 Oct 2026; default mode only): after the
+         x-overlap merge, a sign box wider than W x the page's median sign height is split into max(2, round(w / (P x mh)))
+         pieces (P default 1.0) at the column-ink minimum within +-0.35 piece of each equal-width cut -- the --cursive
+         step-5 rule made available for a joining hand boxed by connected components (Vivonne 1573: 516 pen-unit boxes
+         against 610 signs on 12 lines). --split-random SEED puts the same number of cuts at uniformly random columns
+         instead (each at least 0.2 piece from the edges and from each other): the rule-3 control that must score worse
+         than the ink-minimum cut if cutting at sign boundaries is what helps. Catches: a joined pair twice the median
+         width -> two boxes. Must NOT change: a page with no box wider than W (identical output to the default).
+         Offline test: test_glyph_atlas.py.
 cluster  HOG (9 orientations, 8x8 cells, 2x2 blocks) of the bitmaps plus log relative height and width, PCA(40),
          k-means with a deliberate over-split (fixed seed), as carpi cluster.py; marks clustered separately.
          --split s52:3 re-splits a mixed cluster (labels 52.0 52.1 52.2). Writes DIR/clusters.tsv and DIR/sheet_signs_NN.png / sheet_marks.png contact sheets (row label "k:count").
@@ -182,6 +199,29 @@ def _dashed_rect(img, x, y, w, h, col, t, dash=None):
         cv2.line(img, (x + w, ya), (x + w, yb), col, t)
 
 
+def _wide_cuts(col, w, k, rnd=None, min_gap=0):
+    """Column cut points (0 < c < w) dividing a w-wide ink-column profile `col` into k pieces: at the ink minimum within
+    +-0.35 piece of each equal-width cut (the --cursive step-5 rule), or with `rnd` at sorted uniform random columns at
+    least `min_gap` apart and from the edges (the --split-random control)."""
+    step = w / k
+    if rnd is not None:
+        lo, hi = int(min_gap), int(w - min_gap)
+        for _ in range(200):
+            cs = sorted(int(v) for v in rnd.uniform(lo, hi, k - 1))
+            if hi > lo and all(b - a >= min_gap for a, b in zip([0] + cs, cs + [w])):
+                return cs
+        return [int(round(j * step)) for j in range(1, k)]     # degenerate box: equal spacing
+    cuts = [0]
+    for j in range(1, k):
+        c0 = int(j * step - 0.35 * step)
+        c1 = int(j * step + 0.35 * step)
+        c0, c1 = max(cuts[-1] + 1, c0), min(w - 1, c1)
+        if c1 <= c0:
+            continue
+        cuts.append(c0 + int(np.argmin(col[c0:c1])))
+    return cuts[1:]
+
+
 def segment_page(name, path, box, a):
     grey = np.array(Image.open(path).convert('L'))
     if box:
@@ -228,6 +268,26 @@ def segment_page(name, path, box, a):
                     continue
             merged.append(dict(c))
         merged = [c for c in merged if c['h'] >= 0.3 * mh or c['w'] >= 0.6 * mh]  # specks, dots of i
+        sw = getattr(a, 'split_wide', 0) or 0
+        if sw > 0:
+            # --split-wide: a box wider than sw x mh is cut into pieces (pen units -> sign units); see the docstring
+            piece_px = max(1.0, (getattr(a, 'split_piece', 1.0) or 1.0) * mh)
+            rnd = getattr(a, '_split_rng', None)
+            split = []
+            for c in merged:
+                if c['w'] <= sw * mh:
+                    split.append(c)
+                    continue
+                sub = np.isin(lab[c['y']:c['y'] + c['h'], c['x']:c['x'] + c['w']], c['ids']).astype(np.uint8)
+                k = max(2, int(round(c['w'] / piece_px)))
+                cuts = _wide_cuts(sub.sum(axis=0).astype(float), c['w'], k, rnd, 0.2 * piece_px)
+                for u, v in zip([0] + cuts, cuts + [c['w']]):
+                    rows = np.where(sub[:, u:v].any(axis=1))[0]
+                    if not len(rows):
+                        continue
+                    split.append(dict(x=c['x'] + u, y=c['y'] + int(rows[0]), w=v - u, h=int(rows[-1] - rows[0] + 1),
+                                      ids=c['ids'], split_from=c['x']))
+            merged = split
         for k, c in enumerate(merged):
             sub = np.isin(lab[c['y']:c['y'] + c['h'], c['x']:c['x'] + c['w']], c['ids']).astype(np.uint8)
             signs.append(dict(sid=f'{name}_{li + 1:02d}_{k + 1:03d}', page=name, line=li + 1, pos=k + 1,
@@ -407,6 +467,9 @@ def cmd_segment(a):
     os.makedirs(os.path.join(a.out, 'crops'), exist_ok=True)
     allS, allM, scale = [], [], {}
     a.shared_mh = None
+    a._split_rng = np.random.default_rng(a.split_random) if getattr(a, 'split_random', None) is not None else None
+    if getattr(a, 'split_wide', 0) and a.cursive:
+        sys.exit('--split-wide applies to the default (non --cursive) mode only; --cursive has --split-w/--piece')
     if a.median_h:
         if a.cursive:
             sys.exit('--median-h applies to the default (non --cursive) mode only')
@@ -797,7 +860,10 @@ def cmd_classify(a):
     cl = {(r['kind'], r['id']): r['cluster'] for r in read(a.out, 'clusters.tsv')}
     bm = np.load(os.path.join(a.out, 'bitmaps.npz'))['signs']
     jit = getattr(a, 'jitter', 0) or 0
-    if jit:
+    boxes_in = getattr(a, 'boxes', None)
+    if boxes_in and jit:
+        sys.exit('--boxes and --jitter together are not supported')
+    if jit or boxes_in:
         X, proj = feats(bm, rows, pca_scale=a.pca_scale, project=True)
     else:
         X = feats(bm, rows, pca_scale=a.pca_scale)
@@ -805,9 +871,21 @@ def cmd_classify(a):
     mlab = {m: over.get(m, L['marks'].get(cl.get(('mark', m)), '_')) for m in mrows}
     hold = tuple(a.holdout or ())
     held = np.array([bool(hold) and r['sid'].startswith(hold) for r in rows])
+    if getattr(a, 'only_train_labels', False):
+        # --only-train-labels (TXE3-7 PROPAGATE, 11 Oct 2026): the kNN is built from the person's sorted tiles ALONE --
+        # every box without a --train-labels row is held (never votes, no cluster code), so labels.json contributes
+        # nothing. MQS-CLASSIFY-ROUNDS (9 Oct) layered train labels on top of labels.json and the 309 no.87 tune-tile
+        # overrides out-voted them; this is the design in which the sorted tiles are the only voters.
+        if not a.train_labels:
+            sys.exit('--only-train-labels needs --train-labels')
+        held |= np.array([r['sid'] not in tl for r in rows])
     lab[held] = '_held'                     # never a vote, never a cluster code
+    if boxes_in and a.page:
+        sys.exit('--boxes classifies the boxes in BOXES.tsv; do not pass --page')
+    if not boxes_in and not a.page:
+        sys.exit("classify needs --page NAME|all or --boxes BOXES.tsv")
     allp = a.page == 'all'
-    tgt = [i for i, r in enumerate(rows) if allp or r['page'] == a.page]
+    tgt = [] if boxes_in else [i for i, r in enumerate(rows) if allp or r['page'] == a.page]
     if allp and a.exclude_page:
         sys.exit('--exclude-page needs one --page, not all')
     # --exclude-page: the target page's own boxes never vote. Without it, an unlabelled new page's boxes are each
@@ -821,14 +899,18 @@ def cmd_classify(a):
     cand = np.where(ok)[0]
     pool = min(len(cand), max(a.knn + 1, a.pool if a.topk > 1 else 0))
     nn = NearestNeighbors(n_neighbors=pool).fit(X[cand])
-    d, ix = nn.kneighbors(X[tgt])
-    ix = cand[ix]
+    if tgt:
+        d, ix = nn.kneighbors(X[tgt])
+        ix = cand[ix]
     def vote(dist, idx, i):
         pairs = [(x, j) for x, j in zip(dist, idx) if j != i]
         votes = collections.Counter()
         for x, j in pairs[:a.knn]:
             votes[lab[j]] += 1 / (x + 1e-6)
         return pairs, votes
+
+    if boxes_in:
+        return classify_boxes(a, boxes_in, nn, cand, lab, proj, vote)
 
     jres = {}
     if jit:
@@ -901,6 +983,75 @@ def cmd_classify(a):
               f'{sum(r["k1_0"] == r["code"] for r in out)}/{len(out)} (re-cut fidelity)')
     if a.strips and not allp:
         strips(a, out, [m for m in mrows.values() if m['page'] == a.page])
+
+
+def classify_boxes(a, path, nn, cand, lab, proj, vote):
+    """--boxes (TXE3-5 BOXES, 11 Oct 2026): kNN-classify boxes that are not atlas rows. Each box is re-cut from its
+    own image (column crop|image|page: a file path, or a name in pages.json) with jitter_tiles's unjittered re-cut
+    (binarise at --jitter-rel, keep the components touching the window's central half, 48x48 bitmap), projected into the
+    atlas's fitted feature space and voted on by the atlas's labelled boxes exactly as a stored box is. rh/rw are
+    h/mh, w/mh with mh = --boxes-median-h, else the median h of the file's kind=sign boxes (all boxes if no kind
+    column), printed. Output columns as classify's, cluster_code empty, marks empty; line/pos from the file's
+    line and order|pos columns when present, else the image name and file order."""
+    rows = list(csv.DictReader(open(path), delimiter='\t'))
+    if not rows:
+        sys.exit(f'--boxes: {path} is empty')
+    col = next((c for c in ('crop', 'image', 'page') if c in rows[0]), None)
+    if not col or not all(k in rows[0] for k in 'xywh'):
+        sys.exit('--boxes: needs columns box_id, crop|image|page, x, y, w, h')
+    sign_rows = [r for r in rows if r.get('kind', 'sign') == 'sign'] or rows
+    mh = float(a.boxes_median_h) if a.boxes_median_h else float(np.median([float(r['h']) for r in sign_rows]))
+    pages = {}
+    pj = os.path.join(a.out, 'pages.json')
+    if os.path.exists(pj):
+        pages = json.load(open(pj))
+    inks, tiles = {}, []
+    for r in rows:
+        src = r[col]
+        if src not in inks:
+            img_path = pages.get(src, {}).get('image', src) if not os.path.exists(src) else src
+            g = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
+            if g is None:
+                sys.exit(f'--boxes: cannot read image {img_path!r} for {src!r}')
+            k = binarise(g, a.jitter_rel)
+            inks[src] = cv2.morphologyEx(k, cv2.MORPH_OPEN, np.ones((2, 2), np.uint8)) if min(g.shape) > 2500 else k
+        rr = dict(x=int(float(r['x'])), y=int(float(r['y'])), w=max(1, int(float(r['w']))), h=max(1, int(float(r['h']))))
+        tiles.append(jitter_tiles(inks[src], rr, mh, 0, 0, 0.0, np.random.default_rng(0))[0])
+    Q = proj(np.array([t[0] for t in tiles]), [t[1] for t in tiles], [t[2] for t in tiles])
+    dq, iq = nn.kneighbors(Q)
+    iq = cand[iq]
+    out = []
+    for n, r in enumerate(rows):
+        pairs, votes = vote(dq[n], iq[n], -1)
+        dd = [x for x, _ in pairs[:a.knn]]
+        best = max(votes, key=votes.get)
+        line = r.get('line') or os.path.splitext(os.path.basename(r[col]))[0]
+        pos = r.get('order') or r.get('pos') or str(n + 1)
+        row = dict(page=r[col], line=line, box=r.get('box_id') or r.get('sid') or f'b{n + 1}', pos=pos,
+                   x=int(float(r['x'])), y=int(float(r['y'])), w=int(float(r['w'])), h=int(float(r['h'])), code=best,
+                   dist=f'{dd[0]:.3f}', share=f'{votes[best] / sum(votes.values()):.2f}', cluster_code='', marks='',
+                   kind=r.get('kind', 'sign'))
+        if a.topk > 1:
+            near = {}
+            for x, j in pairs:
+                near.setdefault(lab[j], x)
+            tot = sum(votes.values())
+            rank = sorted(votes, key=lambda c: -votes[c]) + sorted((c for c in near if c not in votes), key=near.get)
+            for k in range(a.topk):
+                c = rank[k] if k < len(rank) else ''
+                row[f'k{k + 1}'] = c
+                row[f'd{k + 1}'] = f'{near[c]:.3f}' if c else ''
+                row[f's{k + 1}'] = f'{votes.get(c, 0) / tot:.2f}' if c else ''
+        out.append(row)
+    cols = ['page', 'line', 'box', 'pos', 'x', 'y', 'w', 'h', 'code', 'dist', 'share', 'cluster_code', 'marks', 'kind']
+    if a.topk > 1:
+        cols += [f'{v}{k + 1}' for k in range(a.topk) for v in 'kds']
+    with open(a.tsv, 'w') as f:
+        f.write('\t'.join(cols) + '\n')
+        for r in out:
+            f.write('\t'.join(str(r[c]) for c in cols) + '\n')
+    print(f'--boxes {path}: {len(out)} boxes classified from {len(inks)} image(s), median_h {mh:.1f}; '
+          f'{sum(r["code"] != "_" for r in out)} cipher codes')
 
 
 def train_labels(path, rnd=None, known=None):
@@ -1075,6 +1226,9 @@ def main(argv=None):
     s.add_argument('--split-w', type=float, default=4.0, help='--cursive: split a group wider than this x xh (4.0)')
     s.add_argument('--piece', type=float, default=2.8, help='--cursive: an over-wide group is split into round(width / (this x xh)) pieces (2.8)')
     s.add_argument('--strip-max', type=float, default=6.0, help='--cursive: a page taller than this x the median sign height is cut into line bands first (6)')
+    s.add_argument('--split-wide', type=float, default=0.0, help='default mode: split a merged sign box wider than this x median height into pieces at column-ink minima (0 = off; TXE3-6)')
+    s.add_argument('--split-piece', type=float, default=1.0, help='--split-wide: pieces = max(2, round(width / (this x median height))) (1.0)')
+    s.add_argument('--split-random', type=int, default=None, help='--split-wide: cut at uniformly random columns with this seed instead of ink minima (the rule-3 control)')
     s.add_argument('--debug', action='store_true')
     c = sp.add_parser('cluster')
     c.add_argument('--out', required=True)
@@ -1105,7 +1259,11 @@ def main(argv=None):
     k = sp.add_parser('classify')
     k.add_argument('--out', required=True)
     k.add_argument('--labels', required=True)
-    k.add_argument('--page', required=True, help="the page whose boxes are classified, or 'all'")
+    k.add_argument('--page', help="the page whose boxes are classified, or 'all' (or give --boxes)")
+    k.add_argument('--boxes', help='TXE3-5: classify these boxes (TSV box_id, crop|image|page, x, y, w, h [, line, '
+                   'order|pos, kind]) re-cut from their own image, instead of atlas rows; see the docstring')
+    k.add_argument('--boxes-median-h', type=float, help='--boxes: median sign height (px) for the size features '
+                   '(default: the median h of the file\'s kind=sign boxes)')
     k.add_argument('--tsv', required=True, help='output box list')
     k.add_argument('--knn', type=int, default=5)
     k.add_argument('--pca-scale', choices=['unit', 'shared'], default='unit')
@@ -1116,6 +1274,9 @@ def main(argv=None):
     k.add_argument('--train-labels', help='TSV box (or sid), code [, round]: a person\'s sorted piles applied as per-box '
                    'overrides on top of labels.json before the kNN vote (human-in-the-loop retrain)')
     k.add_argument('--round', type=int, help='--train-labels: use rows with round <= this (0 = none; default all)')
+    k.add_argument('--only-train-labels', action='store_true',
+                   help='the --train-labels boxes are the ONLY voters: every other box is held and labels.json contributes '
+                        'nothing (TXE3-7, 11 Oct 2026: a kNN from a person\'s sorted tiles alone)')
     k.add_argument('--topk', type=int, default=1, help='also write the k best codes with distance and vote share (3)')
     k.add_argument('--pool', type=int, default=40, help='neighbour pool for codes outside the --knn voters (40)')
     k.add_argument('--holdout', action='append', help='box-id prefix that never votes (repeatable)')

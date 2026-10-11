@@ -56,6 +56,37 @@ def main():
     assert all(r['marks'] == ('o' if r['box'] in marked else '') for r in B)
     assert len(os.listdir(os.path.join(d, 'strips'))) == 6   # 3 lines x 2 parts
 
+    # --boxes (TXE3-5 BOXES, 11 Oct 2026): boxes that are not atlas rows, re-cut from their own image.
+    # Must NOT change: the atlas's own 36 boxes listed as an external file reproduce the stored top-1 (re-cut fidelity).
+    # Catches: a box moved by a person onto a different shape is classified from the new cut, and a box list with
+    # a deleted box yields one row fewer (the cut is the only change); --boxes with --page is refused.
+    bb = os.path.join(d, 'ext_boxes.tsv')
+    with open(bb, 'w') as f:
+        f.write('box_id\tcrop\tx\ty\tw\th\tline\torder\tkind\n')
+        for r in S:
+            f.write(f"{r['sid']}\t{p}\t{r['x']}\t{r['y']}\t{r['w']}\t{r['h']}\tL{r['line']}\t{r['pos']}\tsign\n")
+    bo = os.path.join(d, 'ext_out.tsv')
+    run('classify', '--out', d, '--labels', os.path.join(d, 'labels.json'), '--boxes', bb, '--tsv', bo,
+        '--knn', '3', '--pca-scale', 'shared', '--topk', '2')
+    E = {r['box']: r for r in csv.DictReader(open(bo), delimiter='\t')}
+    assert len(E) == 36 and all(E[r['box']]['code'] == r['code'] for r in B), [(r['box'], r['code'], E[r['box']]['code']) for r in B if E[r['box']]['code'] != r['code']]
+    assert all(E[r['sid']]['line'] == f"L{r['line']}" and E[r['sid']]['pos'] == r['pos'] for r in S)
+    # move: an X-box's cut placed over a B-box's shape reads B; delete: 35 rows
+    xr = next(r for r in S if r['sid'] in marked); br = next(r for r in S if r['sid'] not in marked)
+    with open(bb, 'w') as f:
+        f.write('box_id\tcrop\tx\ty\tw\th\n')
+        f.write(f"moved\t{p}\t{br['x']}\t{br['y']}\t{br['w']}\t{br['h']}\n")
+        for r in S:
+            if r['sid'] not in (xr['sid'], br['sid']):
+                f.write(f"{r['sid']}\t{p}\t{r['x']}\t{r['y']}\t{r['w']}\t{r['h']}\n")
+    run('classify', '--out', d, '--labels', os.path.join(d, 'labels.json'), '--boxes', bb, '--tsv', bo,
+        '--knn', '3', '--pca-scale', 'shared', '--boxes-median-h', str(np.median([float(r['h']) for r in S])))
+    E2 = list(csv.DictReader(open(bo), delimiter='\t'))
+    assert len(E2) == 35 and E2[0]['box'] == 'moved' and E2[0]['code'] == 'B', E2[0]
+    rc = subprocess.run([sys.executable, TOOL, 'classify', '--out', d, '--labels', os.path.join(d, 'labels.json'),
+                         '--boxes', bb, '--page', 'p1', '--tsv', bo], capture_output=True, text=True)
+    assert rc.returncode != 0 and '--boxes' in (rc.stderr + rc.stdout)
+
     # --topk 3 (TX-ATLAS-B72): k1 is the kNN code, k2 the other shape (only two codes + nothing else), d1 <= d2,
     # shares sum to 1 over the voters; --page all adds a page column; --holdout keeps line-1 boxes out of the vote.
     bk = os.path.join(d, 'topk.tsv')
@@ -88,6 +119,20 @@ def main():
     R1 = cl('--train-labels', tl, '--round', '1')
     assert all(r['code'] == ('Z' if r['box'] in marked else 'B') for r in R1), R1
     assert cl('--train-labels', tl, '--round', '2') == base == cl('--train-labels', tl)
+    # --only-train-labels (TXE3-7, 11 Oct 2026): train labels on lines 1-2 only, named Q (box) / Z (X) -- names
+    # labels.json does not know; every line-3 box must come back Q/Z by shape (only the trained tiles vote, labels.json
+    # contributes nothing), every untrained box reads cluster_code _held, and the option without --train-labels exits.
+    tl2 = os.path.join(d, 'train_only.tsv')
+    with open(tl2, 'w') as f:
+        f.write('box\tcode\n')
+        f.write(''.join(f"{s['sid']}\t{'Z' if s['sid'] in marked else 'Q'}\n" for s in S if s['sid'][:6] in ('p1_01_', 'p1_02_')))
+    O = cl('--train-labels', tl2, '--only-train-labels')
+    assert all(r['code'] == ('Z' if r['box'] in marked else 'Q') for r in O), O
+    assert all(r['cluster_code'] == '_held' for r in O if r['box'].startswith('p1_03_')), O
+    assert all(r['cluster_code'] in ('Q', 'Z') for r in O if not r['box'].startswith('p1_03_')), O
+    no = subprocess.run([sys.executable, TOOL, 'classify', '--out', d, '--labels', os.path.join(d, 'labels.json'),
+                         '--page', 'p1', '--tsv', bx, '--only-train-labels'], capture_output=True, text=True)
+    assert no.returncode != 0 and 'needs --train-labels' in no.stderr, no
     with open(tl, 'a') as f:
         f.write('nope_99_001\tX\t1\n')
     bad = subprocess.run([sys.executable, TOOL, 'classify', '--out', d, '--labels', os.path.join(d, 'labels.json'),
@@ -258,6 +303,43 @@ def main():
                '--median-h', 'pool')
     assert 'pool' in out6 and pj(d6 + '/pool')['s']['median_h'] == mh_c, out6
     assert len([r for r in sigs(d6 + '/pool') if r['page'] == 's']) == 20
+
+    # --split-wide (TXE3-6 UNIT, 11 Oct 2026): a line of 10 signs (50 px wide, 60 px tall boxes) where signs 3+4 and 7+8+9
+    # are joined by a baseline bar into one connected component each. Default mode (pen units) must give 7 boxes; with
+    # --split-wide 1.5 (sign units) 10, the cuts at the bars' ink minima (inside the bar, not through a box);
+    # --split-random with the same k must also give 10 boxes but with at least one cut moved off the minimum;
+    # must NOT change: a page with no wide box gives byte-identical signs.tsv with the option on.
+    d7 = os.path.join(d, 'split')
+    img7 = np.full((200, 1100), 235, np.uint8)
+    for k in range(10):
+        x = 60 + k * 100
+        cv2.rectangle(img7, (x, 70), (x + 50, 130), 20, 5)
+    for a_, b_ in ((2, 3), (6, 8)):                      # joining bars along the baseline, 3 px thick
+        cv2.line(img7, (60 + a_ * 100 + 50, 128), (60 + b_ * 100, 128), 20, 3)
+    p7 = os.path.join(d7, 'joined.png'); os.makedirs(d7, exist_ok=True); cv2.imwrite(p7, img7)
+    run('segment', '--page', f'j={p7}', '--out', d7 + '/pen')
+    pen = sigs(d7 + '/pen')
+    assert len(pen) == 7, [(r['x'], r['w']) for r in pen]
+    SP = ('--split-wide', '1.5', '--split-piece', '1.4')     # sign pitch 100 px over a 60-66 px median height
+    run('segment', '--page', f'j={p7}', '--out', d7 + '/sign', *SP)
+    sgn = sigs(d7 + '/sign')
+    assert len(sgn) == 10, [(r['x'], r['w']) for r in sgn]
+    xs = sorted(int(r['x']) + int(r['w']) for r in sgn)[:-1]
+    bars = [(60 + a_ * 100 + 50, 60 + b_ * 100) for a_, b_ in ((2, 3), (6, 7), (7, 8))]
+    cut_in_bar = [any(lo <= e <= hi + 1 for lo, hi in bars) for e in xs]
+    assert sum(cut_in_bar) >= 3, list(zip(xs, cut_in_bar))      # the three joins cut inside their bars
+    assert all(int(r['pos']) == i + 1 for i, r in enumerate(sorted(sgn, key=lambda r: int(r['x'])))), 'pos order'
+    run('segment', '--page', f'j={p7}', '--out', d7 + '/rand', *SP, '--split-random', '3')
+    rnd7 = sigs(d7 + '/rand')
+    assert len(rnd7) == 10, len(rnd7)
+    assert [r['x'] for r in rnd7] != [r['x'] for r in sgn], 'random cuts must move'
+    run('segment', '--page', f'j={p7}', '--out', d7 + '/rand_b', *SP, '--split-random', '3')
+    assert [r['x'] for r in sigs(d7 + '/rand_b')] == [r['x'] for r in rnd7], 'seeded: reproducible'
+    run('segment', '--page', f'c={pc}', '--out', d7 + '/clean_on', *SP)
+    assert key(sigs(d7 + '/clean_on'), 'c') == key(sigs(d6 + '/own'), 'c'), 'no wide box: unchanged'
+    rc7 = subprocess.run([sys.executable, TOOL, 'segment', '--cursive', '--page', f'j={p7}', '--out', d7 + '/cur',
+                          *SP], capture_output=True, text=True)
+    assert rc7.returncode != 0 and 'default (non --cursive) mode only' in (rc7.stderr + rc7.stdout), rc7
     print('ok')
 
 

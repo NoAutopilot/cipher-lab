@@ -1,0 +1,97 @@
+{
+ "positions": 756,
+ "pins": {
+  "P_L": 7,
+  "P_O": 19,
+  "P_LO": 26,
+  "P_S": 205
+ },
+ "pins_by_unit": {
+  "P_L": {
+   "dev_tune": 7,
+   "eval_heldout": 0
+  },
+  "P_O": {
+   "dev_tune": 11,
+   "eval_heldout": 8
+  },
+  "P_LO": {
+   "dev_tune": 18,
+   "eval_heldout": 8
+  },
+  "P_S": {
+   "dev_tune": 95,
+   "eval_heldout": 110
+  }
+ },
+ "arms": {
+  "a": {
+   "pins": "P_none",
+   "lam": 4.0,
+   "pin_stats": null,
+   "changed_vs_top1": 27,
+   "seconds": 0.05,
+   "objective": -329.116
+  },
+  "b": {
+   "pins": "P_L",
+   "lam": 4.0,
+   "pin_stats": {
+    "read": 7,
+    "applied": 7,
+    "unmatched": 0,
+    "differ_top1": 7
+   },
+   "changed_vs_top1": 31,
+   "seconds": 0.03,
+   "objective": -321.892
+  },
+  "b2": {
+   "pins": "P_LO",
+   "lam": 4.0,
+   "pin_stats": {
+    "read": 26,
+    "applied": 26,
+    "unmatched": 0,
+    "differ_top1": 13
+   },
+   "changed_vs_top1": 34,
+   "seconds": 0.03,
+   "objective": -324.214
+  },
+  "b3": {
+   "pins": "P_S",
+   "lam": 4.0,
+   "pin_stats": {
+    "read": 205,
+    "applied": 205,
+    "unmatched": 0,
+    "differ_top1": 50
+   },
+   "changed_vs_top1": 67,
+   "seconds": 0.01,
+   "objective": -339.498
+  },
+  "a1": {
+   "pins": "P_none",
+   "lam": 1.0,
+   "pin_stats": null,
+   "changed_vs_top1": 73,
+   "seconds": 0.03,
+   "objective": -122.612
+  },
+  "b1": {
+   "pins": "P_L",
+   "lam": 1.0,
+   "pin_stats": {
+    "read": 7,
+    "applied": 7,
+    "unmatched": 0,
+    "differ_top1": 7
+   },
+   "changed_vs_top1": 78,
+   "seconds": 0.03,
+   "objective": -121.402
+  }
+ }
+}

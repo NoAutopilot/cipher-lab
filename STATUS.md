@@ -8587,6 +8587,20 @@ Empty-queue auto-fill (blast 1 of 1), standing brief `.claude/briefs/default-lan
 **Lessons.** (1) A host probe must use the job's real identifier: HTRC answered 200 on a dummy volume and MongoError on osu.32435013919725 (SALAZ-HTRC, ~1.0 spent twice now). (2) Seven of 19 workers ran 1.04-1.48x cap, all Opus jobs priced at 1.5-3 with a PREREG + tile build + scoring: price any pre-registered tile/score job at >= 2.5 (the 1051 lane's lesson 3, again). (3) Retirements this lane under rule 3: fr5160 1653 key rebuild (three control failures), costabili slip pairing (three runs). (4) send_later check-ins fired 1-14 min late.
 **What is left (pre-checked, cheap):** fr4735 rescore c268 with the f.86 K38 rows (~$1); sforza-pusterla 3 unsettled f.13 tiles to the owner sorter (focus.tsv was scratch; rebuild ~$0.5); rah-salazar HTRC when osu.32435013919725 itself answers (~$0.2); Pisany f.275r 2 unsettled T47/T45 tokens and a verifier carry-over into AUDIT.md (~$1); fr16144 Boucher volumes need a full-view read (desk row); costabili Lang 2018 p.156 via the owner's runner (one line in costabili NOTES COS-ASMO). Everything else on these targets waits on Gallica (403) or an owner sort.
 
+## LANE DEFAULT-account-1-20261011-0540 handoff (session_018mrAo3nwi1htD6CzT9gyWE, account 1, for the orchestrator (owner account)), 11 October 2026 (05:40-06:4x UTC by date -u, closed early: verified backlog spent; workers 16.62 + orchestrator ~6.5 = ~23.1 of 60 by get_session; five_hour allowed throughout)
+Empty-queue auto-fill, standing brief `.claude/briefs/default-lane.md`; jobs in `.claude/briefs/runs/2026-10-11-acct1-default-0540-jobs.md`. Gate 0a: SESSION-SWEEP-account-1 stale-claimed since 5 Oct, proceeded. VERIFY-BACKLOG high rows: Birago (off limits), manteuffel (LANE DEFAULT-A2-0509), eckert-1864 (only results[401-404] above N1). `next_steps.py --hot-only`: most runnable/parallel cells were already run (fr3987, JVN-104, vieuville print check, wallis Thurloe grep, harley ff.70r-72v, heinsius Deel 2, ormond report, matignon f.179); Gallica 403 and HTRC EF MongoError at 05:5x UTC (1 probe each).
+| Job | Target | Result | Cost/cap |
+|---|---|---|---|
+| AUD2-FM16e | eckert-1864 results[401-404] | Audit 2: E443, E445, E448 lowered N3 -> N1 (body in clear in the holder's public transcription); E446 N3 kept (weak); D1 all; SO rows E443/E445/E448 withdrawn; 8 JSTOR rows; E550 line corrected | 5.73/5 |
+| CAST-G7 | castelcicala-1816 | gate-7 `checked:` line on REQUEST.md, 6 corrections, institutional recipient lines; ASKS 149 updated; nothing sent | 2.30/2 |
+| MAT-F179 | matignon-mayenne-1586 (NEAR) | stopped at prior-work check 1: already run 9 Oct (32% pass agreement, non-test), table png never committed -- orchestrator's brief error | 1.50/8 |
+| COS-1167C | costabili-modena-1491 | R1167 span a1 0.803-0.846 vs copy, in range; 10 spans pooled 0.945-0.962; no reading | 3.64/2 |
+| COS-1165 | costabili-modena-1491 | R1165 P1 = Vestigia 2955 image 1 (M); R1167 P3 date reads xxvj, not the copy's xxij (M) | 1.03/2 |
+| F4712-40 | fr4712-nevers-duchesse | code 40 gloss third read NON-TEST (decoys misread); model reader retired for this gloss; ASKS 162 backlog | 2.42/2.5 |
+Known-text share (owner's guardrail): 0 by brief; in hindsight AUD2-FM16e's three N1 lowerings put ~4.3 (26% of worker spend) on items whose text was in the holder's transcription.
+Flags for the orchestrator: (1) FV-L16e's first audit over-classed E443/E445/E448 at N3 (LEDGER X belongs on its row; not recoded by this lane); AUD2-FM16e notes the mssEC 25 filing ruling is not a novelty rule. (2) next_steps.py's `parallel` column repeats "action that depends on nobody" lines whose done sections sit lower in NOTES.md -- 8 of the ~12 rows checked this lane were stale; a fix (the tool reading the folder's latest dated section for the step's name) would save every DEFAULT lane the same reading. (3) Matignon f.179 needs either the owner's sign sort or a full-width Gallica refetch when Gallica answers; commit `henryiii_Matignon3.png` to sources/cryptiana/keys/ on the next Cryptiana fetch.
+What is left: nothing verified-runnable on the hot list for account 1 while Gallica and HTRC are down; the costabili, fr4712 and matignon next steps all wait on a person (sign sorter / ASKS 162) or Gallica.
+
 ## LANE TX-ENGINEER-2 handoff (session_01NmaB9fhuaMSMYexV4NaVsR, account 4, Fable, campaign second run), 9 October 2026 (15:03 UTC by date -u, live; cap = the account-4 window (150), box open-ended, hand-over at ~700k context; five_hour allowed at open)
 Brief .claude/briefs/runs/2026-10-09-account4-lane-tx-engineer-2.md (owner, ~15:00 UTC: 10-15 more pre-registered experiments, success defined
 first, the setup checked for genuineness). PREREG benchmark-tx/PREREG-txeng2-0.md pushed 15:13 (b8d08264d) before any read: S1-S5; gate paired
@@ -8817,3 +8831,28 @@ TX programme table 03:5x UTC 10 Oct: slot 1 orchestrator session_017GN87mbYobH4z
 session_01ERAcUeCn1HuAUASaqBTzcf 22.9 | slot 3 TX-RED inc. 3 session_01X3CDfBTKgm75BMx43r7AWj 15.95, pass 17 filed, next 04:24; open:
 none (F78-F80 adopted/handed) | slots 4-10: SHEETVIVC live (control arm), MARKS2 done (FAIL read-free, stop at two) | eval looks 0;
 S2 look 1 (record 0.150/0.296; -w 0.141/576 beside).
+
+## LANE DEFAULT-account-2-20261011-0509 handoff (session_01Gtsge7DYsP57RsomYTZuyY, account 2), 11 October 2026 (05:09-07:0x UTC by date -u; closed: in-scope backlog spent, lane ~38 of 60)
+
+Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-11-ytbiz-default-0509-jobs.md (waves 1-3). Gate 0a: SESSION-SWEEP-account-2
+stale-claimed since 5 Oct, proceeded. five_hour `allowed` throughout. 10 workers 30.30 + orchestrator ~7.6 by get_session, all ledgered and archived.
+Backlog read: VERIFY-BACKLOG regenerated; its high "counted" rows outside Birago are already-decided D1/N1 items -> PROGRESS.tsv notes now say
+"not counted" (six rows, from status.json), so they drop to priority none. Eckert D1 audit-2 rows went to the account-1 DEFAULT lane (AUD2-FM16e).
+Results:
+- fr16045-pisany-rome-1585 (V-PISA3): AUDIT 5, UNA3-PISA carry-over consistent; item C reconciled C 233/M 140/U 29 (58.0%), D1/N0 unchanged.
+- sachsstaatsarchiv-manteuffel-1712 (AUD2-MANT3): Audit 2 on 0176 (N3 held, low; D1), 0454 (N2 D2; redated 29 Oct 1712), 0136 (N2 D1); SO-MANT-0176 + 6
+  JSTOR rows; lead Hinrichs 1941 (loan only); Bonnesen still unread (L69).
+- thurloe-printed Bamfylde (THUR-BAMF, -BAMF2, V-BAMF): Birch vol 6 p.160 l.19092 (Paris, Apr 1657) read under a 51-code table rebuilt from Birch's
+  vol 4/5 glosses, gate PASS with 2/2 held-out controls; Tomokiyo's First Cipher table agrees on all 23 p.160 codes; 937 = Mazarin (C), 745 = secret (M),
+  94 y/t conflict (M), 356 U. V-BAMF: N3, key source period, D1 (fragments below the authentication distance). THUR-BRV: Brieven vols 1-6 on IA; the
+  1725 Verbael is not on IA by title.
+- fr3985-nevers-revol-1593 / fr.3988 f.143r (F143-DEC, -DEC2): decode-level key60 test NON-TEST -- the no.60 positive control itself fails the
+  value-shuffle null (word values inflate shuffled keys); a length-class null is the next instrument, pre-registered fresh on undecoded lines.
+- baluze167-davaux-1637 (BAL-SHAPE): not run -- the glossed Baluze 170 crops are not on disk (Gallica needed).
+Light-guardrail share (known-text work): ~12% (V-PISA3 on an N0 item, a record correction).
+Lesson: two of five wave-1 briefs were disk-only jobs whose material was not on disk; check the files before briefing (cost 3.2).
+**next**
+1. baluze167: crop 2-3 glossed Baluze 170 leaves when Gallica answers (~1.5), then BAL-SHAPE as briefed (~4).
+2. fr.3988 f.143r: fresh PREREG with a length-class null on undecoded lines (F143-DEC2's NOTES), ~4; or one Gallica region for L06-L09.
+3. thurloe-printed Bamfylde: l.68904 (vol 6 p.576, Second Cipher) against Tomokiyo bamp2, ~1; code 356 and the 94 conflict stay open-codes.
+4. tools/next_steps.py `parallel` column is stale on many rows (both default lanes found it): a refresh pass is tooling work for a parent.

@@ -174,3 +174,30 @@ if __name__ == "__main__":
         if n.startswith("test_"):
             f()
     print("ok")
+
+
+def test_pins_hold_position_and_report(tmp_path=None):
+    """TXE3-9: a pinned position keeps its pin through the Viterbi pass even when the readers' prior and the language
+    model both prefer another candidate; unpinned positions decode as before; a pin on a position the lattice lacks is
+    counted unmatched, not applied."""
+    import tempfile
+    # "the cat": the readers put D (c) far below X (q, not in the LM's text) at position 5; without a pin the decode
+    # follows the language model and the prior to D ... so pin X there and the decode must keep X.
+    lat = [(("l", 1), {"A": 1.0}), (("l", 2), {"B": 1.0}), (("l", 3), {"C": 1.0}),
+           (("l", 4), {"D": 0.9, "X": 0.1}), (("l", 5), {"E": 1.0}), (("l", 6), {"A": 1.0})]
+    seq0, _ = K.viterbi(lat, KEY, lm(), lam=1.0)
+    assert seq0[3] == "D"
+    pinned, st = K.apply_pins(lat, {("l", 4): "X", ("l", 99): "A"})
+    assert st == {"read": 2, "applied": 1, "unmatched": 1, "differ_top1": 1}
+    assert pinned[3][1] == {"X": 1.0} and pinned[2][1] == {"C": 1.0}
+    seq1, _ = K.viterbi(pinned, KEY, lm(), lam=1.0)
+    assert seq1[3] == "X" and seq1[:3] == seq0[:3] and seq1[4:] == seq0[4:]
+    # a pin that agrees with the top-1 is applied and counted as not differing
+    _, st2 = K.apply_pins(lat, {("l", 1): "A"})
+    assert st2 == {"read": 1, "applied": 1, "unmatched": 0, "differ_top1": 0}
+    # read_pins: blank signs skipped, pos parsed as int
+    d = tempfile.mkdtemp()
+    p = os.path.join(d, "pins.tsv")
+    with open(p, "w") as f:
+        f.write("line\tpos\tsign\nl\t4\tX\nl\t5\t\n")
+    assert K.read_pins(p) == {("l", 4): "X"}

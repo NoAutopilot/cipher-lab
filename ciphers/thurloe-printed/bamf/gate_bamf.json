@@ -1,0 +1,307 @@
+{
+ "control": {
+  "A_train194-195_test232": {
+   "S": -1.2104,
+   "coverage": "17/24",
+   "null_max": -1.1833,
+   "null_mean": -1.4057,
+   "null_p95": -1.2862,
+   "p_emp": 0.006,
+   "pass": true,
+   "table_size": 42
+  },
+  "B_train232_test194-195": {
+   "S": -1.2518,
+   "coverage": "12/24",
+   "null_max": -1.2136,
+   "null_mean": -1.3997,
+   "null_p95": -1.302,
+   "p_emp": 0.005,
+   "pass": true,
+   "table_size": 35
+  }
+ },
+ "control_pass": true,
+ "gate_pass": true,
+ "nshuf": 1000,
+ "other_key_downing.tsv": {
+  "S": -1.3017,
+  "coverage": "5/24",
+  "table_size": 7
+ },
+ "other_key_lockhart.tsv": {
+  "S": -1.415,
+  "coverage": "0/24",
+  "table_size": 6
+ },
+ "prereg": "PREREG-THUR-BAMF.md",
+ "seed": 1657,
+ "table": {
+  "11": {
+   "agree": 2,
+   "letter": "p",
+   "n": 2
+  },
+  "12": {
+   "agree": 6,
+   "letter": "a",
+   "n": 6
+  },
+  "13": {
+   "agree": 2,
+   "letter": "b",
+   "n": 2
+  },
+  "16": {
+   "agree": 3,
+   "letter": "d",
+   "n": 3
+  },
+  "17": {
+   "agree": 3,
+   "letter": "a",
+   "n": 3
+  },
+  "18": {
+   "agree": 1,
+   "letter": "b",
+   "n": 1
+  },
+  "19": {
+   "agree": 1,
+   "letter": "a",
+   "n": 1
+  },
+  "2": {
+   "agree": 1,
+   "letter": "d",
+   "n": 1
+  },
+  "20": {
+   "agree": 6,
+   "letter": "s",
+   "n": 6
+  },
+  "21": {
+   "agree": 2,
+   "letter": "f",
+   "n": 2
+  },
+  "22": {
+   "agree": 5,
+   "letter": "e",
+   "n": 5
+  },
+  "23": {
+   "agree": 3,
+   "letter": "g",
+   "n": 3
+  },
+  "24": {
+   "agree": 2,
+   "letter": "m",
+   "n": 2
+  },
+  "25": {
+   "agree": 1,
+   "letter": "o",
+   "n": 1
+  },
+  "26": {
+   "agree": 3,
+   "letter": "h",
+   "n": 3
+  },
+  "27": {
+   "agree": 2,
+   "letter": "e",
+   "n": 2
+  },
+  "30": {
+   "agree": 8,
+   "letter": "e",
+   "n": 10
+  },
+  "31": {
+   "agree": 5,
+   "letter": "i",
+   "n": 5
+  },
+  "32": {
+   "agree": 3,
+   "letter": "e",
+   "n": 3
+  },
+  "33": {
+   "agree": 2,
+   "letter": "f",
+   "n": 2
+  },
+  "34": {
+   "agree": 1,
+   "letter": "k",
+   "n": 1
+  },
+  "35": {
+   "agree": 2,
+   "letter": "o",
+   "n": 2
+  },
+  "36": {
+   "agree": 8,
+   "letter": "r",
+   "n": 8
+  },
+  "37": {
+   "agree": 5,
+   "letter": "t",
+   "n": 5
+  },
+  "39": {
+   "agree": 2,
+   "letter": "y",
+   "n": 2
+  },
+  "41": {
+   "agree": 4,
+   "letter": "l",
+   "n": 4
+  },
+  "42": {
+   "agree": 4,
+   "letter": "i",
+   "n": 4
+  },
+  "43": {
+   "agree": 4,
+   "letter": "n",
+   "n": 4
+  },
+  "44": {
+   "agree": 3,
+   "letter": "g",
+   "n": 3
+  },
+  "46": {
+   "agree": 4,
+   "letter": "n",
+   "n": 4
+  },
+  "48": {
+   "agree": 1,
+   "letter": "o",
+   "n": 1
+  },
+  "49": {
+   "agree": 1,
+   "letter": "m",
+   "n": 1
+  },
+  "50": {
+   "agree": 2,
+   "letter": "o",
+   "n": 2
+  },
+  "51": {
+   "agree": 2,
+   "letter": "e",
+   "n": 2
+  },
+  "52": {
+   "agree": 2,
+   "letter": "n",
+   "n": 2
+  },
+  "54": {
+   "agree": 1,
+   "letter": "l",
+   "n": 1
+  },
+  "56": {
+   "agree": 2,
+   "letter": "n",
+   "n": 2
+  },
+  "59": {
+   "agree": 1,
+   "letter": "i",
+   "n": 1
+  },
+  "6": {
+   "agree": 2,
+   "letter": "d",
+   "n": 2
+  },
+  "61": {
+   "agree": 3,
+   "letter": "o",
+   "n": 3
+  },
+  "62": {
+   "agree": 3,
+   "letter": "p",
+   "n": 3
+  },
+  "64": {
+   "agree": 3,
+   "letter": "r",
+   "n": 3
+  },
+  "66": {
+   "agree": 2,
+   "letter": "r",
+   "n": 2
+  },
+  "7": {
+   "agree": 1,
+   "letter": "c",
+   "n": 1
+  },
+  "72": {
+   "agree": 3,
+   "letter": "u",
+   "n": 4
+  },
+  "73": {
+   "agree": 1,
+   "letter": "w",
+   "n": 1
+  },
+  "74": {
+   "agree": 5,
+   "letter": "t",
+   "n": 5
+  },
+  "8": {
+   "agree": 3,
+   "letter": "o",
+   "n": 3
+  },
+  "82": {
+   "agree": 2,
+   "letter": "s",
+   "n": 2
+  },
+  "92": {
+   "agree": 1,
+   "letter": "e",
+   "n": 1
+  },
+  "93": {
+   "agree": 1,
+   "letter": "u",
+   "n": 1
+  }
+ },
+ "target": {
+  "S": -1.0624,
+  "coverage": "23/24",
+  "null_max": -1.1415,
+  "null_mean": -1.4542,
+  "null_p95": -1.2789,
+  "p_emp": 0.001,
+  "pass": true,
+  "table_size": 51
+ },
+ "verdict": "PASS"
+}

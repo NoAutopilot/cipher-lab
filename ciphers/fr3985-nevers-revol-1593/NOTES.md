@@ -253,3 +253,62 @@ No reading, no grades changed. Requests: gallica.bnf.fr 3 (IIIF).
 
 ## Unread sibling found (SA-G, 7 Oct 2026)
 BnF fr.3988 (btv1b9060634t) canvas 308 is the closing cipher page of the f.143-144 letter (about 12 lines of symbol cipher, then the "Henry" signature); canvases 304-308 are cipher, none glossed, 309 the address leaf. Key: no.60 (tools/keys/key60.tsv). Next step: transcribe 308 with the other pages, ~USD 1. Screen only; keyhunt/2026-10-07-SAG.tsv.
+
+## F143-DEC (11 Oct 2026) -- stopped at the material check, no decode
+F143-DEC (LANE DEFAULT-A2-0509, account 2), 05:22-05:4x UTC 11 Oct 2026 by date -u; brief
+`.claude/briefs/runs/2026-10-11-ytbiz-default-0509-jobs.md` "### F143-DEC". Disk only, 0 network requests.
+- **Material check failed as the brief defines it.** `keyhunt_f143/img/c304_reg.jpg` (3500x700, Gallica canvas 304 region
+  450,1250,3500,700) holds a clear line, then cipher rows that map to KH1-F's numbering as row 6 = L05 ("12 6 // x x ..."),
+  row 7 = L06 ("16 // ..."), row 8 = L07 ("y r f ++ ..."), row 9 = L08 ("q h 3 X /// ..."). L09 ("n~ ⊥ .x. λ ...") falls below
+  the strip's bottom edge: only ascender tops at y ~ 690-700. Lines 6-8 crop legibly; line 9 does not. No other f.143r image is
+  on disk (searched by filename for c304/f143/btv1b9060634t). KH1-F's L09-L14 passes were read from a larger image that was
+  not committed. Following the brief, no crop, PREREG, transcription, decode or score was made.
+- **Second design issue for a re-brief, found while reading:** control arm (ii) cannot be computed as written. The Mayenne
+  1592 table is on disk (`ciphers/fr4715-f61-mayenne-1592/keys/key_mayenne_1592.tsv`, 16 slots: 13 letter symbols +
+  que/qui/pour). Its signs are described in prose, and there is no mapping to key60's tag vocabulary, so a key60-tag
+  transcription of f.143r cannot be "decoded under the Mayenne key" without first building that mapping (a design choice that
+  would itself decide the result). A computable foreign-key arm is the reverse: a key60-tag blind transcription of the Mayenne
+  leaf (`keyhunt_f143/img/m61_reg.jpg`, on disk), decoded with key60 and judged the same way. That costs one more vision unit
+  (~1.5).
+- **Options for the orchestrator** (not run; a worker does not change its own material):
+  (a) use L05-L08 (all four legible in the strip; KH1-F passP covers L05-L08 and passQ L06-L08 as extra existing reads), or
+  (b) commit a canvas-304 region covering L06-L09 (one Gallica request, outside this wave's host list). Either way, replace arm
+  (ii) with the reverse Mayenne arm above. Estimate: 3 vision units (2 f.143r + 1 Mayenne) + 1 reconcile + CPU, about USD 6.
+No status change; no grades changed.
+
+## F143-DEC2 (11 Oct 2026) -- decode-level family test on fr.3988 f.143r L05-L08: NON-TEST as registered
+F143-DEC2 (LANE DEFAULT-A2-0509, account 2), 05:42-05:5x UTC 11 Oct 2026 by date -u; brief "### F143-DEC2" (orchestrator's
+option (a) + reverse Mayenne arm). Disk only, 0 network requests. PREREG `keyhunt_f143/dec/PREREG-F143-DEC2.md` pushed before
+any read was decoded (599fe77fc). Crops: `tools/iiif_lines.py --image keyhunt_f143/img/c304_reg.jpg --out keyhunt_f143/dec/crops`
+(8 lines; detector L05-L08 = KH1-F's L05-L08, overlay checked) and the same for `m61_reg.jpg` (11 lines), all committed.
+- Reads: fresh blind Sonnet pass R on L05-L08 (136 signs, every row confidence L, the reader's own caveat: L07/L08 partly out
+  of frame), KH1-F's existing passP (195) as the second blind pass, passQ (L06-L08) reported only; blind Sonnet pass M on the
+  Mayenne 1592 leaf fr.4715 f.61r into key60 tags (100 signs, 28 NEW = not in key60, dropped); positive control (added in the
+  PREREG, CPU only): fr.3986 f.152 = leaf 298 passD (no.60 known, 145 signs).
+- Statistic: judge_plaintext NgramModel(fr16) mean log10 4-gram/letter, key60 decode vs 1000 value-shuffled key60 keys
+  (`dec/score_dec2.py`, output `dec/score_dec2.txt`, `--check` exit 0). fr16 fold spread 1.5-71.5% (MQS-LANGS): comparative use only.
+
+| arm | signs | S key60 | shuffled mean | shuffled p95 | key60 rank /1001 |
+|---|---|---|---|---|---|
+| f.143r pass R | 136 | -1.422 | -1.125 | -0.994 | 1001 |
+| f.143r pass P | 195 | -1.617 | -1.130 | -0.987 | 1001 |
+| f.143r pass Q (report) | 133 | -1.307 | -1.126 | -0.994 | 973 |
+| Mayenne reverse arm | 100 | -1.312 | -1.177 | -0.843 | 745 |
+| leaf 298 positive control (no.60) | 145 | -1.294 | -1.129 | -0.964 | 918 |
+
+  Gate 1 ok (Mayenne below f.143r's p95); **gate 2 NON-TEST**: the real no.60 text itself scores below its value-shuffled p95
+  (rank 918/1001). Verdict as registered: **NON-TEST**, neither a pass nor a fail for f.143r. Judge CLI (fr16 spec, all five
+  key60 decodes): FAIL language at every arm (scores -1.29 to -1.62 vs real_p05 about -0.98 to -1.03).
+- Why (EXPLORATORY, computed after the registered verdict, licenses nothing; `dec/explore_dec2.py` -> `dec/explore_dec2.txt`):
+  key60 holds 188 values of 3+ letters (whole words: nostre, bien, dict...) of 354; a free value shuffle hands frequent signs
+  word values whose internal 4-grams are French, so any shuffled key out-scores the true key per letter -- the value-shuffle
+  null cannot fail differently from the target on this statistic (CLAUDE.md rule 3, control that cannot vary on the axis).
+  With values permuted only within length classes (word share held fixed): positive control rank 37/1001 (above p95), passQ
+  4, passP 48 (at p95: -1.617 vs -1.620), pass R 105 (below), Mayenne 423 (inside the null). Raw S across texts is confounded
+  by word-value share (Mayenne 0.82 vs 0.22-0.40), so "above the Mayenne decode" should be judged by rank in each text's own
+  null, not by raw S.
+- Not done: no tokens graded (gate not passed); no reading.
+- Next (different null, needs a fresh PREREG on lines not yet decoded): length-class-preserving value shuffle, arms compared
+  by rank in their own null; held-out material = f.143r L09-L14 (passP rows exist, undecoded; a second pass needs an image of
+  those lines, not on disk -- one Gallica region, outside this wave's hosts) or canvas 305-308. About USD 2.
+No status change; no grades changed.
