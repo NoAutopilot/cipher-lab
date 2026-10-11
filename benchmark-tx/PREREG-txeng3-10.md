@@ -74,3 +74,12 @@ C2 Generalisation: pair T90 (p) / T53 (t), the next-largest confusion (t <- T90 
 Cap USD 15 and 2 h (box 05:47-07:47 UTC, 80% line 07:23); one eval look; no re-tuning after it; no second feature
 set. Dev gate fail -> weak, no eval look, RESULTS.md says so. Never touches BENCHMARK-TX truth, the frozen confirm
 items, or the oracle pages.
+
+## Addendum (06:0x UTC 11 Oct 2026, written after the dev gates and before any eval score; see RESULTS.md)
+1. The registered shuffled-label control (C1) is disabled by the pipeline's own threshold rule for every seed (no permuted
+   model reaches 0.95 decided accuracy), so it flips nothing and cannot vary on fixed/broken. To give rule 3 a control that
+   can differ from the target on that statistic, a declared secondary control was added: the same permuted models applied
+   at argmax (`--force-t 0`), seeds 1-5, outputs `passX30_topo_ctrl{1..5}f_eval_heldout.tsv`. Both forms are reported.
+2. The tool change is kept as `benchmark-tx/txeng3/10/glyph_atlas_pair.patch` (with its offline test), not landed in
+   tools/glyph_atlas.py: TXE3-5 (f3e32015) and TXE3-7 (5552b57e) committed to the same file within the hour (brief rule).
+3. C2 (T90/T53) failed G2 on dev (0 fixed, 2 broken) and was therefore not applied to eval, as registered.
