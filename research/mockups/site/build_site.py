@@ -703,6 +703,7 @@ def reading_section(it, sc, dsp, pfx):
                   '<p class="en none">Reads as letters with gaps: no English is given for this line.</p>')
             if SITE["public"]:  # holder crops are not reproduced: the caption links the holder's page instead
                 pic, credit = "", f'the page at the holder: <a href="{E(sc["image"])}">{E(sc["image"])}</a>'
+                cap = re.sub(r"\s*\(cut from [^)]*\)", "", cap)
             else:
                 pic = "".join(f'<img alt="{E(cap)}" src="{pfx}assets/cat-img/{E(x)}">' for x in imgs)
                 credit = f"our crop &middot; {E(C.LICENCE)}"
@@ -742,8 +743,9 @@ def reading_section(it, sc, dsp, pfx):
         else:
             link = (f' The reading is in the repository: {C.link_or_text(it["reading"])}.' if it["reading"] else "")
             out.append(f'<p class="small" data-pending="original">Graded original: no per-sign table on file for this item.{link}</p>')
-    out.append('<p class="small" data-pending="crop">Cipher crop: not cut for this page (crops are cut from the folder\'s own images '
-               'when an English line is written).</p>')
+    out.append('<p class="small" data-pending="crop">' + ("Cipher image: at the holder, linked as the image source under How we know."
+               if SITE["public"] else "Cipher crop: not cut for this page (crops are cut from the folder's own images when an English "
+               "line is written).") + "</p>")
     if en:
         out.append("".join(f'<p class="en"><span class="k">English (translation, interpretation), line {E(lid)}</span>{E(eng)}</p>'
                            for lid, _o, eng in en))
