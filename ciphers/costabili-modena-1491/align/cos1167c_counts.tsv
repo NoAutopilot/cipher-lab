@@ -1,0 +1,13 @@
+line	crop	count_opus	count_sonnet	settled_cipher	settled_code	clear_words_in_line (M)	note
+P1 tail L03	p1_tail_R1	5	5+1k	4	2	questo termine (before; not counted) / poi in fine	settled from a zoom: lone § and the x-with-mark group are code; "g+q-a" and "+d," two groups
+P1 tail L04	p1_tail_R1/R2	7+1k	9+1k	8	1	-	"cd-o7+ -ab" split at the wider space; lone "x." code
+P1 tail L05	p1_tail_R2	10	10	10	0	-	agree
+P1 tail L06	p1_tail_R2	9	8	8-9	0	-	not settled (join "c-od g+")
+P1 tail L07	p1_tail_R2	9 (incl §)	11+1k	8	1	-	settled from a zoom: "8zyπ-ad+" one group, "πφ" and "ya" two; "§." code
+P1 tail L08	p1_tail_R3	9	8	8-9	0	-	not settled ("qby-aφy-a+")
+P1 tail L09	p1_tail_R3	3+2	2+2	4-5	0	quantunque de poi che partino	not settled (pre-clear 2-3 groups, post-clear 2)
+P1 tail L10	p1_tail_R3	9	10	9-10	0	-	not settled; struck piece not counted
+P1 tail L11	p1_tail_R3	4	4	4	0	p[er] questo facendo, li scrima(?) non a mie(?) da buda	agree; clear words read loosely
+P1 tail L12	p1_tail_R3	4+2	6	6	0	& il p.fato(?) / dice che le cosse	agree
+P1 tail L13	p1_tail_R3	7	6	6-7	0	& simo(?) s.(?)	not settled; last line of P1
+total		80+1k	81+3k	75-80	4		cipher groups after "questo termine" to the end of P1; code groups apart (cos1167_ref.py rule)
