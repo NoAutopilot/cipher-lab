@@ -1,14 +1,15 @@
 # THUR-REST, 11 Oct 2026. Van Sypesteyn, Geschiedkundige bijdragen (1864), Bijlage I (De Witt to Beverning, 's Hage 24 Julij 1653, from the Rijksarchief), printed pp.213-214, vs Birch vol 1 p.351 (ct_p351.tsv).
 # Sypesteyn numerals and parenthesised decipherments from the IA OCR text (geschiedkundige00sypegoog_djvu.txt, sha1 a28dcbc0); not image-checked. His note: the letter "komt voor in Thurloe papers I, p. 351; hoewel het geheimschrift niet is ontcijferd geworden".
-run	birch_ct	sypesteyn_ocr	sypesteyn_gloss	agree	note
-1	45 48 28 38 11 18 50 51 15 14 40 54 4 48 26 16 49 19	45 48 28 38 11 18 50 51 15 14 40 54 4 48 26 16 49 19	Princesse-Douariere	yes	
-2	22 48 8 18 20 60 29 33 34 17 35	22 48 8 18 20 60 29 33 34 17 35	Graef Willem	yes	
-3	25 39 43 12 24	25 39 43 12 24 "	Hooght.	yes	trailing OCR mark
-4	22 48 55 15	22 48 5 55 15	Grave	no	Sypesteyn has 5 (= a under the p.72 key) between 48 and 55: g r a u e; Birch omits it (DUTCH-KEY's "grue" vs "grave")
-5	24 43 39 12 25 52	24 43 39 12 25 "	Hooght.	yes (OCR)	52 OCR'd as a quote mark: not checked
-6	330	330	Prins van Oranje	yes	printed decipherment of code 330 (printed_glosses.tsv, grade C)
-7	14 15 50 26 22 37 17 49 19 38	14 15 50 26 22 371 171 49 19 38	designeren	yes (OCR)	"371 , 171" read as 37, 17 (OCR of the commas)
-8	25 40 40 12 24 53	25 40 40 12 24 ^	Hooght.	yes (OCR)	53 OCR'd as ^
-9	25 40 41 12 25 52	25 40 41 12 25 ^*	Hooght.	yes (OCR)	52 OCR'd as ^*
-10	24 40 20 21	24 140 20 21	hoff	yes (OCR)	"140" read as 40 (OCR of a comma)
-11	25 5 15 48 18 24 41 40 11 25 35	25 5 15 48 18 24 41 40 11 25 "	Haere Hoocht.	yes (OCR)	35 OCR'd as a quote mark
+# THUR-NIJ, 11 Oct 2026: both prints image-checked (Sypesteyn leaves n227/n228 of geschiedkundige00sypegoog = printed pp.213/214, crops/sypesteyn/; Birch crops/p351_L01-L10). ^ = printed superscript. Image result: 6 of 11 runs agree exactly (1, 2, 5, 6, 8, 9), 5 differ (3, 4, 7, 10, 11); THUR-REST's OCR-based 10 of 11 is superseded.
+run	birch_ct	sypesteyn_ocr	sypesteyn_gloss	agree	note	sypesteyn_image	agree_image	note_image
+1	45 48 28 38 11 18 50 51 15 14 40 54 4 48 26 16 49 19	45 48 28 38 11 18 50 51 15 14 40 54 4 48 26 16 49 19	Princesse-Douariere	yes		45 48 28 38 11 18 50 51 15 14 40 54 4 48 26 16 49 19	yes	
+2	22 48 8 18 20 60 29 33 34 17 35	22 48 8 18 20 60 29 33 34 17 35	Graef Willem	yes		22 48 8 18 20 60 29 33 34 17 35	yes	
+3	25 39 43 12 24	25 39 43 12 24 "	Hooght.	yes	trailing OCR mark	25 39 43 12 24 ^53	no	Sypesteyn prints a superscript 53 (= t, p.72 key) after 24: h o o c h t; Birch image ends at 24 (h o o c h)
+4	22 48 55 15	22 48 5 55 15	Grave	no	Sypesteyn has 5 (= a under the p.72 key) between 48 and 55: g r a u e; Birch omits it (DUTCH-KEY's "grue" vs "grave")	22 48 5 55 15	no	image confirms Sypesteyn 5 (= a): g r a u e; Birch image 22 48 55 15
+5	24 43 39 12 25 52	24 43 39 12 25 "	Hooght.	yes (OCR)	52 OCR'd as a quote mark: not checked	24 43 39 12 25 ^52	yes	52 printed superscript in Sypesteyn, full-size in Birch
+6	330	330	Prins van Oranje	yes	printed decipherment of code 330 (printed_glosses.tsv, grade C)	330	yes	
+7	14 15 50 26 22 37 17 49 19 38	14 15 50 26 22 371 171 49 19 38	designeren	yes (OCR)	"371 , 171" read as 37, 17 (OCR of the commas)	14 15 50 26 22 371 171 49 19 38	no	Sypesteyn really prints 371, 171 (image; not OCR of commas as THUR-REST had it); Birch image 37 17 (n e); 371/171 are outside the p.72 letter codes: an extra 1 in Sypesteyn or his source, not settled
+8	25 40 40 12 24 53	25 40 40 12 24 ^	Hooght.	yes (OCR)	53 OCR'd as ^	25 40 40 12 24 ^53	yes	
+9	25 40 41 12 25 52	25 40 41 12 25 ^*	Hooght.	yes (OCR)	52 OCR'd as ^*	25 40 41 12 25 ^52	yes	
+10	24 40 20 21	24 140 20 21	hoff	yes (OCR)	"140" read as 40 (OCR of a comma)	24 140 20 21	no	Sypesteyn really prints 140 (image); Birch image 40 (o); 140 outside the p.72 letter codes, same shape as run 7
+11	25 5 15 48 18 24 41 40 11 25 35	25 5 15 48 18 24 41 40 11 25 "	Haere Hoocht.	yes (OCR)	35 OCR'd as a quote mark	25 5 15 48 18 24 41 40 11 25 ^53	no	Sypesteyn superscript 53 (= t): h o o c h t; Birch image 35 (= m): hoochm; digit order reversed in one of the two prints

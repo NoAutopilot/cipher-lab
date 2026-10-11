@@ -1633,3 +1633,12 @@ brief's key source `ours` is corrected to `period` per the folder's precedent. N
   for the verifier, it is also a prior printed decipherment of the cipher groups of this letter (the class is the verifier's to revisit, not this worker's).
 - p.340's code 330 stays M (the other direction of correspondence; rule 4). No SECOND-OPINIONS-QUEUE.tsv row exists for these items.
   Files: dutch1653/printed_glosses.tsv, decode_dutch.py, reading_p351.tsv, sypesteyn_p351_compare.tsv, codes_over_100.tsv; NOTES.md "## THUR-REST".
+
+## Revision after AUDIT (THUR-NIJ, 11 Oct 2026; rule 10 propagation, solver worker -- no class or depth reassigned)
+- Van Sypesteyn's Bijlage I is now image-checked (IA geschiedkundige00sypegoog leaves n227/n228 = printed pp.213/214; crops
+  dutch1653/crops/sypesteyn/) against Birch p.351's own image (dutch1653/crops/p351_L01-L10). The sentence above, "it agrees with the p.72-key
+  reading on every run", holds for his parenthesised *words*; his *numerals* agree with Birch exactly in 6 of 11 runs (1, 2, 5, 6, 8, 9), not
+  10 of 11 as the OCR comparison had it. The five differences are: runs 3 and 11, where he ends with a superscript 53 (= t) and gets "Hoocht" (Birch run 3
+  ends at 24, "hooch", and run 11 ends 35 = m); run 4, his extra 5 (= a, "grave"), now image-confirmed; runs 7 and 10, where he prints 371, 171 and 140
+  where Birch has 37, 17 and 40, values outside the p.72 key's letter codes. Code 330 = "Prins van Oranje" (grade C) is confirmed on the image
+  ("aff. 330 (Prins van Oranje)"). No reading or key cell changed. Detail: dutch1653/sypesteyn_p351_compare.tsv, NOTES.md "## THUR-NIJ".
