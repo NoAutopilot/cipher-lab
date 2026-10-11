@@ -805,6 +805,14 @@ def cmd_classify(a):
     mlab = {m: over.get(m, L['marks'].get(cl.get(('mark', m)), '_')) for m in mrows}
     hold = tuple(a.holdout or ())
     held = np.array([bool(hold) and r['sid'].startswith(hold) for r in rows])
+    if getattr(a, 'only_train_labels', False):
+        # --only-train-labels (TXE3-7 PROPAGATE, 11 Oct 2026): the kNN is built from the person's sorted tiles ALONE --
+        # every box without a --train-labels row is held (never votes, no cluster code), so labels.json contributes
+        # nothing. MQS-CLASSIFY-ROUNDS (9 Oct) layered train labels on top of labels.json and the 309 no.87 tune-tile
+        # overrides out-voted them; this is the design in which the sorted tiles are the only voters.
+        if not a.train_labels:
+            sys.exit('--only-train-labels needs --train-labels')
+        held |= np.array([r['sid'] not in tl for r in rows])
     lab[held] = '_held'                     # never a vote, never a cluster code
     allp = a.page == 'all'
     tgt = [i for i, r in enumerate(rows) if allp or r['page'] == a.page]
@@ -1116,6 +1124,9 @@ def main(argv=None):
     k.add_argument('--train-labels', help='TSV box (or sid), code [, round]: a person\'s sorted piles applied as per-box '
                    'overrides on top of labels.json before the kNN vote (human-in-the-loop retrain)')
     k.add_argument('--round', type=int, help='--train-labels: use rows with round <= this (0 = none; default all)')
+    k.add_argument('--only-train-labels', action='store_true',
+                   help='the --train-labels boxes are the ONLY voters: every other box is held and labels.json contributes '
+                        'nothing (TXE3-7, 11 Oct 2026: a kNN from a person\'s sorted tiles alone)')
     k.add_argument('--topk', type=int, default=1, help='also write the k best codes with distance and vote share (3)')
     k.add_argument('--pool', type=int, default=40, help='neighbour pool for codes outside the --knn voters (40)')
     k.add_argument('--holdout', action='append', help='box-id prefix that never votes (repeatable)')

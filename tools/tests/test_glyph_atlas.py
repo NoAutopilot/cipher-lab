@@ -88,6 +88,20 @@ def main():
     R1 = cl('--train-labels', tl, '--round', '1')
     assert all(r['code'] == ('Z' if r['box'] in marked else 'B') for r in R1), R1
     assert cl('--train-labels', tl, '--round', '2') == base == cl('--train-labels', tl)
+    # --only-train-labels (TXE3-7, 11 Oct 2026): train labels on lines 1-2 only, named Q (box) / Z (X) -- names
+    # labels.json does not know; every line-3 box must come back Q/Z by shape (only the trained tiles vote, labels.json
+    # contributes nothing), every untrained box reads cluster_code _held, and the option without --train-labels exits.
+    tl2 = os.path.join(d, 'train_only.tsv')
+    with open(tl2, 'w') as f:
+        f.write('box\tcode\n')
+        f.write(''.join(f"{s['sid']}\t{'Z' if s['sid'] in marked else 'Q'}\n" for s in S if s['sid'][:6] in ('p1_01_', 'p1_02_')))
+    O = cl('--train-labels', tl2, '--only-train-labels')
+    assert all(r['code'] == ('Z' if r['box'] in marked else 'Q') for r in O), O
+    assert all(r['cluster_code'] == '_held' for r in O if r['box'].startswith('p1_03_')), O
+    assert all(r['cluster_code'] in ('Q', 'Z') for r in O if not r['box'].startswith('p1_03_')), O
+    no = subprocess.run([sys.executable, TOOL, 'classify', '--out', d, '--labels', os.path.join(d, 'labels.json'),
+                         '--page', 'p1', '--tsv', bx, '--only-train-labels'], capture_output=True, text=True)
+    assert no.returncode != 0 and 'needs --train-labels' in no.stderr, no
     with open(tl, 'a') as f:
         f.write('nope_99_001\tX\t1\n')
     bad = subprocess.run([sys.executable, TOOL, 'classify', '--out', d, '--labels', os.path.join(d, 'labels.json'),
