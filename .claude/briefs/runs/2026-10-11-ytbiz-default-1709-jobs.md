@@ -43,3 +43,15 @@ NOTES.md l.503-506: rerun exactly `python3 tools/htrc_ef_headwords.py osu.324350
 carry the Salazar ciphers' period decipherment or key, list them as the next step (a page read, owner or IA route) with its cost; status
 unchanged unless the folder's own Verdict rule says otherwise; gaps_check if the folder is partial. If the API still errors, one retry after
 60 s, log it, stop.
+
+## Wave 2 (17:5x UTC 11 Oct)
+Gallica still 403 at 17:51 UTC. RAH-EF: the EF API still errors for the real volume (a bogus-id probe answering 200 is not a test).
+
+### THUR-REST (Opus, cap 3, box 75 min): thurloe-printed, the remaining text-route gaps
+NOTES.md "## Remaining gaps" after THUR-356 (read THUR-356's section first). Intake gate as THUR-356 (exit 0). Units, cheapest first, each
+logged as done or blocked: (1) the 94 = t instance: grep british-history.ac.uk's Thurloe vols 5-6 text (2 Nov 1656, 6 June 1657 letters)
+for the cipher run Tomokiyo quotes, ~0.3; (2) vol 1 non-Dutch hits >= 20 numerals: retry collectionofstat01thur djvu once (or the on-disk
+copy), list the units, read none beyond a census line each, ~0.6; (3) Brieven vols 1-4 grep for the Dutch of Beverning's 27 June and 22 Aug
+1653 letters (Birch I pp.301, 418), ~0.4; (4) Google Books API (country=US, key) for Nijhoff Bijdragen X p.291 and Van Sypesteyn, ~0.3.
+No key edits unless a printed gloss of the same table supports one (then rule 7 --check). Hosts: archive.org ("IA", take/release, <= 30),
+www.british-history.ac.uk (<= 15, >= 2 s), googleapis (<= 15). Report what was found and where it was not found; do not classify novelty.
