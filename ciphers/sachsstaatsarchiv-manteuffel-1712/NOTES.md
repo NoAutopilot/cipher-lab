@@ -4452,3 +4452,10 @@ Grades: one token 7 -> 9 at M; no grade raised. Report: found as above; not foun
 Next (suggestion): the y-glyph needs a different instrument -- a person's eye in the sign sorter on the 8 conflict slots plus the 0063 slot02-04
 against this hand's crossed 4s and looped 9s (blind, no gloss), or a shape-measure (glyph_atlas match of the y-slots against known-4/known-9
 exemplars from y49/known.tsv, ~$1 CPU).
+
+## AUD2-MANT3 pointer (11 Oct 2026, second verifier, account 2, LANE DEFAULT-A2-0509)
+Second audit of 694/08 0176, 694/08 0454 and 694/09 0136 -- see AUDIT.md "AUDIT 2 (AUD2-MANT3)". Classes held (0176 N3 low, 0454 N2,
+0136 N2 with the glossed run N0); depth held (D1, D2, D1). Register corrections: 0176 counts after MANT-0177's fix (30 tokens S27 M3 U0),
+0454 dated 29 Oct 1712 (letter No. 88, MANT-0453). New lead for all three: Carl Hinrichs, Friedrich Wilhelm I. (1941; IA bwb_C0-BHF-356,
+loan only) cites Manteuffel's 1712 reports by date; unread here. Bonnesen 1918 still unread (LOCAL-QUEUE L69). JSTOR rows queued (six,
+11 Oct); SO-MANT-0176 queued. Suggestion (not done): a LOCAL-QUEUE row to read Hinrichs' notes for June-July 1712, Oct 1712 and Mar-Apr 1713.

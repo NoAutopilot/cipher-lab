@@ -1916,3 +1916,130 @@ C 24 -> C 23 + M 1 (L05 33, reconciler against both blind passes); totals for th
 Next (not done here): gate (a) on the gutter with the clear rendering as one span, PREREG first (~$0.3; would put the matching gutter
 tokens at C if it PASSes); 207 'le Gr Tres.' second witness. Requests this audit: archive.org 4 (BO I djvu 302 + 200, Droysen IV.1 metadata
 + djvu), be-api.us.archive.org 8 (3 x HTTP 502, one retry, stopped), www.googleapis.com 8, api.openalex.org 1. No 403, 429 or challenge.
+
+## AUDIT 2 (AUD2-MANT3)
+
+Second verifier AUD2-MANT3 (account 2, LANE DEFAULT-A2-0509), 11 Oct 2026, 05:24-06:0x UTC by `date -u`. Brief:
+.claude/briefs/runs/2026-10-11-ytbiz-default-0509-jobs.md "### AUD2-MANT3". I am a session separate from the first verifiers (V-MANT0176,
+V-MANT0454, V-MANT0136) and from every solver on this folder (MANT-0176, MANT-0177, MANT-0454, MANT-0453, MANT-0136, MANT-R07, MANT-NAMES136);
+I had not read these leaves before this job. Items: **A** 694/08 frame 0176 (N3 D1), **B** 694/08 frame 0454 (N2 D2), **C** 694/09 frame 0136
+(N2 D1). Nothing decoded; key.tsv, ciphertexts and readings untouched. No vision call; no sachsen request.
+
+**0. Prior work.** `tools/prior_work.py sachsstaatsarchiv-manteuffel-1712 --item-spec '<shelfmark;folio;date;sender;recipient>'
+--step-type second-audit --fetch`, once per item (C with date 1713-04-15 as a stand-in for "about April 1713"): exit 4 each, the one LEAD
+being this audit's own ROOM claim, recorded CLEAR (rows adhoc-67894a, adhoc-bdd203, adhoc-e26888); tomokiyo and solver caches UNCHECKED (no
+folio key), aaymeloglu UNCHECKED-NET (not cloned), editions UNCHECKED-NET (core-only; done by hand below). Later work on disk since the first
+audits, read before ruling: MANT-0177 (0176 fix: r04 pos 7 is a comma, r01 pos 3 = 26; gate (b) PASS holds -1.277 vs p95 -1.665, 0/1000;
+30 tokens S27 M3 U0; the letter continues on 0177, whose four runs are too short to gate), V-MANTC (0176 r01 '171' vs '17.1' open, leans
+17.1), MANT-0453 (0451-0454 are one letter, No. 88, "Berl. d. 29 oct. 1712", date read from the head line on URL 0451; 0453 r04 reads
+'renoncer' under Stanislas/Roi de Prusse in clear), BONNESEN (snippets only; LOCAL-QUEUE L69 still queued), GB-PHRASE (press of April-May
+1713 a non-test), MANT-NAMES136 (0136 r01 'lolhovel' = Lölhöffel, r02 'ilg' = Ilg[en], both M), MANT-66 (66 = a holds), MANT-Y49 (the
+y-glyph 4|9 untested-by-this-tool).
+
+**1. Re-derivation (rule 7), from the repository root, 11 Oct 2026:** `decode_key.py .../f0176_08 --check` "tokens 30: C 25, M 5 / reading
+up to date"; `.../f0454_08 --check` "tokens 62: C 42, M 20 / up to date"; `.../f0136_09 --check` "tokens 75: C 56, M 18, U 1 / up to date";
+`f0176_08/judge_gate.py --check`, `f0176_08/grade_0176.py --check`, `f0454_08/judge_gate.py --check`, `f0454_08/grade_0454.py --check`,
+`f0136_09/judge_gate.py --check`, `f0136_09/grade_0136.py --a1 --check`: all "up to date", exit 0. The readings are what the first audits saw,
+except 0176 after MANT-0177's owed fix (below).
+
+**2. Novelty search (rule 10), 11 Oct 2026.** Families and what each returned:
+- *Google Books API* (key, country=US): **unreachable** -- HTTP 429 "Quota exceeded ... Queries per day" on the first call and on the retry
+  (5 requests in all); host stopped for the day. Every Google Books family below is therefore carried by the first audits' logs only.
+- *Bonnesen 1918* (GS3SAAAAMAAJ), books.google.com search-within (10 requests): 'Manteuffel' 3 hits (front-matter source list "Manteuffel in
+  Berlin. 1711 Sept.-Nov."; p. 39 Manteuffel's hints that Augustus would buy Prussian help "även till högt pris"; p. 303 the Pomeranian
+  question), but the **positive controls fail**: 'Rozrazewski' 0 and 'Arnold' 0, although the Books API returned both from this very volume on
+  9 Oct (BONNESEN). Search-within serves this volume as a partial index; every 0 below is a non-test: Stanislaus, abdikation, Bernau, Livland,
+  Lölhöffel, Löhlhöffel, Meijerfelt. **Bonnesen remains unread for all three items** (LOCAL-QUEUE L69).
+- *Berner 1901, Aus dem Briefwechsel König Friedrichs I.* (IA ausdembriefwech00fredgoog): `_djvu.txt` and `_hocr_searchtext.txt.gz`
+  HTTP 500 (the third session to get 500 on this item; one try each, stopped). be-api inside the item: control 'Flemming' 1 hit (family
+  letters, as MANT-0177 saw); Bernau 0, Golowkin 0, Meyerfeld 0, Mayer 0, Cüstrin 0, Menzikoff 0 (the two terms that got 5xx on 9 Oct now
+  answer 0). A family correspondence; not the place for a Saxon envoy's report, and none of A's names is in it by full-text search.
+- *Carl Hinrichs, Friedrich Wilhelm I.* (1941; IA bwb_C0-BHF-356, lending only, be-api inside the item, 11 requests). **A lead not in any
+  earlier log of this folder**: Hinrichs cites Manteuffel's 1712 reports by date in his notes ("Manteuffel, 31. Mai 1712 a. a. O.";
+  "Manteuffel, 29. Juni und 23. Oktober"; "Manteuffel, 7. Juni 1712 a. a. O. S. 211"; "Manteuffel, 18. Juni"), mostly through Acta
+  Borussica BO I (the 'S. 211' form) but not only. be-api returns one item-level hit with two snippets, so it can show a term is present, not
+  every place: '"2. Juli 1712"' hits only "Reskript an Bartholdi, 2. Juli 1712" (a Prussian rescript, not this report); 'Bernau' hits "...
+  [mar]schierende sächsische Armee zwischen Biesenthal und Bernau zu besichtigen" (the crown prince reviewing the Saxon army on its march;
+  date not in the snippet); 'Meyerfeld' hits Meyerfeldt reporting the news of Charles XII and offering to meet the enemy at Schwedt (1713-14
+  context); 'Stanislaus' hits the plan that Augustus keep a reduced Poland; '"29. Oktober 1712"' 0, Rozrazewski 0, Lölhöffel 0, Menschikow 0;
+  'Livland' hits a 1700s transit passage. So Hinrichs is a principal secondary built on these very reports; whether he paraphrases 0176,
+  0454 or 0136 cannot be read here (page images are loan-only and obfuscated for scripts, CLAUDE.md item 3). **Unchecked beyond full-text
+  probes.**
+- *IA full text, global (be-api, 9 requests):* '"regarderoit toujours comme un rebelle"' 0 (B's decoded phrase with its clear frame);
+  '"Rozrazewski" Manteuffel' and '"Rozrazewski" Arnold' only 16th-century bishops and catalogues; '"deux colonels" Bernau' and '"Meyerfeld"
+  Bernau' only Napoleonic and Great Northern War-1700 noise; '"Lölhöffel" 1713' returns "Deutsche wissenschaftliche Zeitschrift für Polen" 7
+  (1926-27), printing letters of the Prussian envoy Lölhöffel von Löwensprung from Warsaw in July 1713 (inside the item: 'Manteuffel' only a
+  modern historian, '"April 1713"' 0) -- context for C's r01 name, not C; '"Manteuffel" "23 april 1713"' returns W. Dorwart, *The
+  administrative reforms of Frederick William I* (1953), citing "the Saxon ambassador in Berlin, Baron von Manteuffel, to General Field Marshal
+  Count von Flemming" of about 23 April 1713 on Grumbkow's appointment, and Hinrichs, *Preussen als historisches Problem*, citing Manteuffel 26
+  and 28 Feb 1713 (Acta Borussica p. 312). Neither prints C's Livonia/Porte passage in what the snippets show.
+- *OpenAlex* (8 searches): 'Manteuffel Flemming 1712' 11 works (R. Stuber 2024 on Urbich; "Der Weinkeller als Schlachtfeld" on Manteuffel's
+  Société des antisobres; none on these letters); 'Rozrażewski 1712', 'Rozrazewski Stanislaus Berlin', 'Lölhöffel', 'Meyerfeldt 1712',
+  'Stanislaus Leszczynski abdication 1712 Prussia', 'August II foreign policy 1712 1713 Prussia': nothing on these letters.
+  *CORE* (5): noise or HTTP 500, stopped. *Semantic Scholar* (3): 429 twice, stopped; unchecked.
+- *JSTOR*: six rows appended to JSTOR-QUEUE.tsv (11 Oct 2026), both families per item: A (i) Manteuffel + Meyerfeldt + Bernau 1712, (ii)
+  "bibliotheque de Maier" / "Mayersche Bibliothek"; B (i) Manteuffel + Rozrazewski + Stanislaus 1712, (ii) "regarderoit toujours comme un
+  rebelle"; C (i) Manteuffel + Livonie/Livland + Czar + 1713, (ii) "faire les dictateurs dans le Nord". Rows 457-465 (9 Oct) already cover B's
+  Arnold thread. None answered yet; a queued row does not block a class.
+- Not searched (unreachable or out of this brief's hosts): Bonnesen's page text (HathiTrust and Google page view bot-blocked from the cloud),
+  Hinrichs' page text (loan only), Fama/Mercure July and Oct-Nov 1712, Sbornik RIO (Golovkin's side, April 1713), Polish scholarship on the
+  Rozrażewski mission, aaymeloglu/unsolved-ciphers.
+
+**3. Item A, 694/08 frame 0176 (Manteuffel to Flemming, Berlin 2 July 1712).** Prior plaintext: none located. Prior decipherment: none
+located. The first audit's open families stay open except Berner, which now has a full-text negative on every name in the runs; two
+principal secondaries (Bonnesen 1918, Hinrichs 1941) are built on these reports and are not readable here. **N3 upheld, confidence low**
+(not N4: Bonnesen, Hinrichs and the July 1712 press unread). Key **published** (Krauske 1893, credited). text: unknown.
+Correction, factual: the status.json grade still gives the pre-fix count ("31 tokens: H0 C0 S26 M4 U1"); after MANT-0177's fix (0a781d4e4)
+the item is **30 tokens, S27 M3 U0** by the PREREG grade (key.tsv rows C25 M5), gate (b) PASS -1.277 vs p95 -1.665, 0/1000, and the run is
+'bernau', not 'bernaug'. depth_pct moves 83.9 -> 90.0 (S 27 of 30), reported only.
+**Depth: D1 upheld.** Longest run 11 letters against AD ~127-138; no code value on the leaf; the twice-spelled name is two letter-cipher
+stretches with an open y-glyph (MANT-Y49: untested-by-this-tool). No external check.
+On V-MANT0176's Meyerfeldt hypothesis (M, never stated as read): Hinrichs places a Saxon army on the march "zwischen Biesenthal und Bernau"
+(date not seen), and 0177's clear text has the colonels expected to arrive at Bernau that day. Colonels of the marching Saxon army are an
+alternative reading of the context at least as good as Swedish colonels sent by Meyerfeldt. The hypothesis stays M and is now weaker; it is
+not a key edit. Safe sentence (V-MANT0176's, unchanged in substance): "Manteuffel's letter of 2 July 1712 to Flemming (SHStA Dresden Loc.
+694/08, frame 0176): fragments read in its five short cipher runs with Krauske's 1893 table (statistical gate passed at 32 letters): a name
+read 'Maier(f)' twice, two colonels '(Sp)ald' and 'Horn', and 'Bernau'. No prior decipherment was located in Acta Borussica BO I, Droysen
+IV.1, Berner (1901, full-text search), Google Books, Internet Archive full text or OpenAlex (searched 9 and 11 Oct 2026); Bonnesen (1918) and
+Hinrichs (1941) not read." Unsafe: as V-MANT0176, plus "no prior decipherment exists".
+SECOND-OPINIONS-QUEUE row SO-MANT-0176 appended (N3, verifier duty), prompt second-opinions/PROMPT-chatgpt-MANT0176.md.
+
+**4. Item B, 694/08 frame 0454 (Manteuffel to Flemming, letter No. 88, Berlin 29 Oct 1712).** Prior plaintext or decipherment of the
+cipher spans: none located; the phrase search on the decode ("regarderoit toujours comme un rebelle") 0 in IA full text. The news is printed
+(Droysen IV.1 p. 267, Anm. 511: Arnold's mission and Stanislas's offer to abdicate; Bonnesen pp. 68-70 snippets: Rozrazewski sent to
+Berlin, Stanislas's dealings with Arnold, citing Jablonski to Ilgen 14 Sept 1712). **N2 upheld, confidence medium-low**; Bonnesen, read in
+full, could still lower it to N1. Key **published**. text: unknown (news known).
+Correction, factual: the date. V-MANT0454 gave "mid-Oct to early Nov 1712 (I, by position)"; MANT-0453 read the letter's head on URL 0451,
+"Berl. d. 29 oct. 1712", number 88, and showed 0451-0454 are one letter by continuity. status.json document_id and the safe sentence now say
+29 Oct 1712 (read from the letter's head, worker's eye on a native crop; not re-checked here, no sachsen request).
+**Depth: D2 upheld.** Code clause: 198 Stanislas reads in five independent clear-context sentences on 0454, and MANT-0453 adds a sixth on
+0453 (same letter) plus a second, different-homophone spelling of the 'renonc-' stem ('renoncer', 0453 r04) -- consistent, not counted as a
+second clause. Nothing since (MANT-66, MANT-Y49, V-MANTC) touches a code 0454's runs rest on (66 = a holds; 54 not used; the r08 9 is the
+looped-descender 9, not the y-glyph in question). D3 still out (S 74.2% < 80%, no non-statistical check of the letter runs). V-MANT0454's D2
+sentence stands, with "autumn 1712" read as "29 October 1712". Safe sentence (date corrected): "Krauske's 1893 table applied to Manteuffel's
+letter of 29 October 1712 (Loc. 694/08 ff.360v-361) reads 'rebelle', 'abdiquer', the name Rozrazewski and the agent Arnold in cipher; the
+abdication negotiation and Arnold's mission are printed in Droysen IV.1 p. 267, and Rozrazewski's mission to Berlin is treated in Bonnesen
+(1918), not read here beyond snippets." Unsafe: as V-MANT0454. No SECOND-OPINIONS row (N2).
+
+**5. Item C, 694/09 frame 0136 (Manteuffel to Flemming, P.S., about April 1713).** Prior plaintext: the glossed run r07-r08 carries a period
+interlinear decipherment (N0 for those spans, unchanged). The unglossed fragments ('la Livonie', "n'avoit pl[us]") carry news printed in
+Droysen IV.2 p. 43; no prior mapping located. A Manteuffel-to-Flemming report of about 23 April 1713 is cited by Dorwart (1953) and by
+Bonnesen (snippet seen by MANT-0177, "Manteuffel till Flemming, Berlin 23 april 1713"); 0136's own date is not on the crops, so whether
+either cites *this* letter is unknown -- a lead for the Bonnesen read (L69), not a hit. **N2 upheld (glossed run N0), confidence medium.**
+Key **published**, corroborated by the period gloss. text: partly known.
+**Depth: D1 upheld.** No change to the cipher or code clause: MANT-NAMES136's 'Lölhöffel' (r01) and 'Ilg[en]' (r02) are M crib fits, one
+context each, and do not make a code value read in two contexts. status.json "unresolved_spans" amended to name the two M candidates.
+Safe sentence: V-MANT0136's, unchanged. No SECOND-OPINIONS row (N2).
+
+**6. Postmortem.** (a) No over-claim of novelty found in the three first audits; each kept rule-10 wording. (b) Two register facts had gone
+stale after later work and are corrected in status.json: A's token counts (MANT-0177's fix) and B's date (MANT-0453). (c) Rule-10 gap shared
+by all three: the two principal secondaries on Manteuffel's Berlin reports -- Bonnesen 1918 (Swedish, Dresden sources) and Hinrichs 1941
+(Prussian side, cites the reports by date) -- are unread; Hinrichs was not in any earlier log of this folder. Until one is read, A cannot
+go to N4 and B/C cannot be called "not paraphrased in print". (d) This audit's own limits: Google Books API out of daily quota, Semantic
+Scholar 429; their families rest on the 9 Oct logs.
+Next (suggestions, not done): read Bonnesen pp. 39, 60-80 and the April 1713 pages (LOCAL-QUEUE L69, owner's browser); a LOCAL-QUEUE row for
+Hinrichs, *Friedrich Wilhelm I.* (IA bwb_C0-BHF-356, borrowable), notes for June-July 1712, Oct 1712 and March-April 1713 (Bernau, Meyerfeldt,
+Rozrazewski, Livland); Google Books API phrase rows of this audit's families once the quota resets.
+Requests this audit: www.googleapis.com 5 (all 429), books.google.com 10 (search-within), archive.org 4 (djvu 500, searchtext 500, metadata
+2), be-api.us.archive.org 36 (one 502), api.openalex.org 9, api.core.ac.uk 5 (two 500), api.semanticscholar.org 3 (two 429).
+www.archiv.sachsen.de 0. Vision calls 0.
