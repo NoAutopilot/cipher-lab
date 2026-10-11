@@ -14808,3 +14808,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-11 20:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 20:09 UTC: spawned 0 (), queued left 0
 2026-10-11 20:12 | SALV-DSN (worker, account 1) | halfway (20:1x UTC): fr2933 DSN irregular 96 restarts at err 0.064, SALV-F56V split: control 0.866/0.839/0.825 mean 0.844, gate met; target judge FAIL (-1.299 vs real_p05 -0.91), -2.674/symbol; bracket controls err 0.10/0.146 running, results uncommitted. for LANE DEFAULT-A1-1840 (account 1)
 2026-10-11 20:22 | standby (owner account) | alive; holder owner account (this session, TAKEOVER 06:22 UTC 10 Oct from account 4), last line 20:0x UTC 11 Oct (check-in 38); next orchestrator check-in ~21:08
+2026-10-11 20:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 2026-10-11 20:39 UTC: spawned 0, queued left 1 (SORTER-RERENDER-A3, account 3's); account-1 lane open (DEFAULT-account-1-20261011-1840, session_01GJw2dp)
