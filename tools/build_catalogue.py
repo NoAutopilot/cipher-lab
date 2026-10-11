@@ -52,7 +52,8 @@ CLASSES = [  # (key, heading, one-line explanation)
     ("recovered-passages", "Recovered passages",
      "Cipher passages read inside a document whose clear parts or context were already known."),
     ("completed-reading", "Completed readings",
-     "Short cipher texts (mostly telegrams) read in full."),
+     "Short cipher texts (mostly telegrams) worked from start to end; how much of each reads is its depth "
+     "(most largely or partially deciphered)."),
     ("fragments", "Fragments read",
      "Scattered words and short phrases read; not yet a connected passage."),
     ("key", "Keys to known text",
@@ -71,6 +72,22 @@ NWORDS = {
 }
 NSHORT = {0: "already known", 1: "text in print; read again independently", 2: "text known; mapping not found before",
           3: "no prior reading located", 4: "no prior decipherment located (editions searched)", 5: "confirmed by holder or specialist"}
+# A key to a text already in print carries two classes: the mapping's (the row's N) and the plain text's (READINGS-PUBLIC, 11 Oct 2026:
+# a key item's mapping N3 was shown as "no prior reading located" beside a claim that the letter was printed in 1919).
+KEY_NSHORT = {0: "key already known", 1: "key already in print", 2: "no earlier mapping found", 3: "no prior key located",
+              4: "no prior key located (editions searched)", 5: "key confirmed by holder or specialist"}
+TEXT_NSHORT = {0: "already known", 1: "already in print", 2: "known elsewhere", 3: "no prior plain text located",
+               4: "no prior plain text located (editions searched)", 5: "confirmed by holder or specialist"}
+
+
+def class_labels(it):
+    """[(short label, long words)] for the item's search-result badge(s): one for a reading, two for a key to known text."""
+    n = it["n"]
+    if it["cls"] == "key":
+        t = nval(it["row"], "plaintext_novelty")
+        out = [(f"Key N{n}", KEY_NSHORT[n])] if n is not None else []
+        return out + ([(f"text N{t}", TEXT_NSHORT[t])] if t is not None else [])
+    return [(f"N{n}", NSHORT[n])] if n is not None else []
 DEPTH_WORDS = {0: "key ranked first; nothing reads yet", 1: "fragments read", 2: "partially deciphered",
                3: "largely deciphered", 4: "deciphered"}
 KEY_WORDS = {"ours": "key recovered by us", "period": "period key, rebuilt by us from a decipherment or key sheet of the time",
@@ -81,6 +98,12 @@ LANG = {"fr": "French", "fr16": "French", "fr17": "French", "fr18": "French", "e
 
 # A job name: two or more hyphen-joined parts, capital-led, at least one part with two capitals running (AUDIT2-MANT,
 # N8-GRA2, DEPTH-MH, R9-MANTV). Shelfmarks such as "B/41-42" or "OR I/32" have no such run on both sides of a hyphen.
+# Owner-side request pointers and credential variable names (no values ever reach the register, but the names and the request
+# rows mean nothing to a reader): "ASKS row 17" -> "an owner-side request", "$GOOGLE_BOOKS_KEY" / "S2_KEY" -> "(keyed)"; a
+# "Cost: ..." clause from a search log is dropped (READINGS-PUBLIC, 11 Oct 2026).
+ASKS_ROW = re.compile(r"\bASKS\.?(?:md)?\s+rows?\s+\d+(?:\s*(?:,|and|-)\s*\d+)*")
+CRED = re.compile(r"(?:&\w+=)?\$?\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)*_(?:KEY|PASS|USER|TOKEN|SECRET)\b")
+COST = re.compile(r"\bCost:[^.;]*[.;]?")
 JOB = re.compile(r"\b(?=[A-Z0-9]*[A-Z]{2})[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)+\b|\b[A-Z][A-Z0-9]+-[A-Z][A-Z0-9]*\b")
 SESSION = re.compile(r"session_[A-Za-z0-9]+")
 INTERNAL_WORDS = re.compile(r"\b(?:worker|orchestrator|lane|LANE|cost|USD|account[- ]?\d)\b")
@@ -89,6 +112,9 @@ INTERNAL_WORDS = re.compile(r"\b(?:worker|orchestrator|lane|LANE|cost|USD|accoun
 def sanitize(s):
     """Strip internal job names, session ids and the brackets they leave; keep shelfmarks and edition references."""
     s = SESSION.sub("", s or "")
+    s = ASKS_ROW.sub("an owner-side request", s)
+    s = CRED.sub("(keyed)", s)
+    s = COST.sub("", s)
     s = re.sub(r"\bLANE [A-Z0-9-]+(?:\s*\([^)]*\))?(?:\s+round \d+)?\s*:?\s*", "", s)
     # a bracket whose content is mostly a job reference goes whole: "(DEPTH-MH 8 Oct 2026)", "(R9-MANTV 6 Oct 2026, was 24)"
     def drop_bracket(m):
@@ -180,22 +206,77 @@ def key_words(r):
 _audit_cache, _notes_cache = {}, {}
 
 
+SAFE_LABEL = re.compile(r"(?:\*\*[^*\n]{0,80}?\b[Ss]afe\b[^*\n]{0,120}?\*\*|\b[Ss]afe(?: sentence)?\b[^\n:\"\u201c*]{0,80}:)"
+                        r"[\s:*]*[\"\u201c](.+?)[\"\u201d]", re.S)
+# A group template written once for many items (labels "for each", "(each)", "(all)") or carrying unfilled placeholders
+# ("<print, page>", "<ID>", "pointer <n>", "[or: ...]", "vol./pt, page as above") is never quoted as one item's sentence (READINGS-PUBLIC,
+# 11 Oct 2026: 64 Eckert pages showed such templates, 20 more showed a sibling telegram's sentence).
+GROUP_LABEL = re.compile(r"\b(?:each|all|every)\b", re.I)
+PLACEHOLDER = re.compile(r"<[^<>]{1,40}>|\[or:|\[the cipher's|page as above|vol\./pt\b")
+IDPAT = re.compile(r"\b(?:E\d{1,4}|[A-Z]\d-[A-Z]{1,3}|WVO\s?\d+|mss[A-Z]{2,3}\s?\d+|BLA\s?\d+|frame\s\d{3,4}|f\.\s?\d+[rv]?|no\.\s?\d+|"
+                   r"pointer\s\d{3,5})\b")
+
+
+def item_ids(s):
+    """Item identifiers in a text, normalised (E46 -> e46, 'WVO 5797' -> wvo5797, 'mssBLA 186' -> bla186, 'mssDE 108' -> de108,
+    'f. 29r' -> f29r), plus
+    '#NNNN' for each four- or five-digit number they carry, so a label such as '**5797, safe:**' still names WVO 5797."""
+    out = set()
+    for m in IDPAT.finditer(s or ""):
+        k = re.sub(r"^mss", "", re.sub(r"[\s.]", "", m.group(0)).lower())
+        out.add(k)
+        out |= {"#" + n for n in re.findall(r"\d{4,5}", k)}
+    return out
+
+
+def bare_numbers(s):
+    return {"#" + n for n in re.findall(r"(?<![\d.,])\d{4,5}(?![\d])", s or "")}
+
+
+def _block(txt, a, b):
+    """The bullet, table row or paragraph around txt[a:b]."""
+    starts = [txt.rfind(x, 0, a) for x in ("\n\n", "\n- ", "\n* ", "\n|", "\n#")]
+    st = max(starts) + 1 if max(starts) >= 0 else 0
+    ends = [e for e in (txt.find(x, b) for x in ("\n\n", "\n- ", "\n* ", "\n|", "\n#")) if e >= 0]
+    return txt[st:min(ends) if ends else len(txt)]
+
+
 def safe_sentences(fold):
-    """Every quoted safe sentence in the folder's AUDIT.md, in file order (later = more recent)."""
+    """(AUDIT.md text, [candidate, ...]) in file order (later = more recent). A candidate is a dict: text (the quoted safe sentence),
+    label (the words before the quote), ctx (its bullet, table row or paragraph), pos. Two shapes are read: a labelled quote
+    ('Safe sentence:', 'Safe sentence (current):', '**5797, safe:**', '**BLA 186.** Safe:', '**Safe (unchanged from ...):**') and a
+    table whose header has a 'safe sentence' column (one row per item, the row is the context)."""
     if fold not in _audit_cache:
         p = os.path.join("ciphers", fold, "AUDIT.md")
         txt = open(p, encoding="utf-8").read() if os.path.exists(p) else ""
         out = []
-        # labels seen: 'Safe sentence:', 'Safe sentence (current):', '**5797, safe:**', '**Safe (unchanged from ...):**'
-        lab = re.compile(r"(?:\*\*[^*\n]{0,80}?\b[Ss]afe\b[^*\n]{0,120}?\*\*|\b[Ss]afe sentence\b[^\n:\"\u201c]{0,80}:)"
-                         r"[\s:*]*[\"\u201c](.+?)[\"\u201d]", re.S)
-        for m in lab.finditer(txt):
+        for m in SAFE_LABEL.finditer(txt):
             pre = txt[max(0, m.start() - 3):m.start() + 12].lower()
             if "unsafe" in pre:
                 continue
             c = re.sub(r"\s+", " ", m.group(1)).strip()
             if len(c) >= 60:
-                out.append(c)
+                out.append({"text": c, "label": txt[m.start():m.start(1)], "ctx": _block(txt, m.start(), m.end()), "pos": m.start()})
+        lines, pos = txt.split("\n"), 0
+        offs = []
+        for ln in lines:
+            offs.append(pos)
+            pos += len(ln) + 1
+        col = None
+        for i, ln in enumerate(lines):
+            if not ln.startswith("|"):
+                col = None
+                continue
+            cells = [c.strip() for c in ln.strip().strip("|").split("|")]
+            if i + 1 < len(lines) and re.match(r"\|\s*:?-{3,}", lines[i + 1]):
+                col = next((j for j, c in enumerate(cells) if re.search(r"safe sentence", c, re.I)), None)
+                continue
+            if col is None or re.match(r"\|\s*:?-{3,}", ln) or len(cells) <= col:
+                continue
+            q = re.match(r"[\"\u201c](.+)[\"\u201d]\s*$", cells[col])
+            if q and len(q.group(1)) >= 60:
+                out.append({"text": re.sub(r"\s+", " ", q.group(1)).strip(), "label": "table", "ctx": ln, "pos": offs[i]})
+        out.sort(key=lambda c: c["pos"])
         _audit_cache[fold] = (txt, out)
     return _audit_cache[fold]
 
@@ -204,18 +285,80 @@ def words(s):
     return set(w for w in re.findall(r"[a-z0-9]{3,}", (s or "").lower()))
 
 
-def best_safe_sentence(r):
-    """The AUDIT.md safe sentence that best matches this row (title + register line), or ('', 0)."""
+DEPTH_CLAIMS = [  # (depth a phrase claims, pattern); bare "deciphered" is not a claim ("Thurloe's office deciphered this system")
+    (4, re.compile(r"\b(?:fully deciphered|deciphered in full|read in full|(?:the )?whole (?:of the )?(?:cipher|letter|text) (?:is )?read|"
+                   r"every (?:cipher )?(?:sign|letter|token|group)s? (?:is |are )?read)\b", re.I)),
+    (3, re.compile(r"\blargely deciphered\b", re.I)),
+    (2, re.compile(r"\bpartially deciphered\b|\bcontinuous (?:French|German|English|Latin|Italian|Spanish|Dutch|Portuguese|text|prose)\b",
+                   re.I)),
+]
+
+
+def claimed_depth(s):
+    """The highest depth (rule 4a) a sentence's own wording claims, or None: 'partially deciphered' or 'continuous French' claim D2,
+    'largely deciphered' D3, 'read in full' or 'the whole cipher read' D4."""
+    for d, pat in DEPTH_CLAIMS:
+        if pat.search(s or ""):
+            return d
+    return None
+
+
+def row_depth(r):
+    m = re.match(r"\s*D([0-4])", str(r.get("depth") or ""))
+    return int(m.group(1)) if m else None
+
+
+def over_claims(s, r):
+    """True when the sentence's depth words rank above the row's depth (rule 4a: depth is lowered on any revision, and an older
+    sentence that says more is not quoted)."""
+    d, c = row_depth(r), claimed_depth(s)
+    return d is not None and c is not None and c > d
+
+
+def stated_classes(c):
+    """N-classes a candidate states: in the sentence itself, else in its label and context (bullet or table row)."""
+    own = set(int(x) for x in re.findall(r"\bN([0-5])\b", c["text"]))
+    return own or set(int(x) for x in re.findall(r"\bN([0-5])\b", c["label"] + " " + c["ctx"].replace(c["text"], " ")))
+
+
+def best_safe_sentence(r, n=None, siblings=1, common=frozenset()):
+    """The AUDIT.md safe sentence for this row, or ('', 0). A candidate is dropped when it is a group template or carries a placeholder,
+    when the N-class it states is not the row's (n), when its depth words claim more than the row's depth, and -- in a folder with
+    several catalogue items (siblings > 1) -- unless the item's own identifier (E-number, N2-xx, pointer, frame, folio, no., WVO, BLA)
+    is in the sentence, its label or its bullet/table row. Identifiers most of the folder's items share (`common`: a volume such as
+    mssEC 19) tell nothing and are not used. Where some candidates name the row's own document (document_id's identifier), only
+    those stay. Of the rest, the best word overlap with the title and register line wins, near-ties going to the later (more
+    recent) sentence."""
     _, cands = safe_sentences(folder(r))
     target = words(r.get("line", "")) | words(r.get("title", "")) | words(r.get("document_id", ""))
     def idt(x):  # item identifiers: frame, folio, number, WVO, day+month (years are shared by siblings, so not used)
         ids = set(re.findall(r"\b(?:frame \d{4}|f\.\s?\d+[rv]?|no\.\s?\d+|WVO \d+|E\d+)\b", x))
         ids |= {f"{d} {m[:3].lower()}" for d, m in re.findall(rf"\b(\d{{1,2}}) ({MONTHS})", x)}
         return ids
-    tid = idt(r.get("title", "") + " " + r.get("document_id", ""))
-    # a sentence that names other items (frames, folios, numbers) and none of this one's belongs to a sibling item
-    cands = [c for c in cands if not (idt(c) and tid and not (idt(c) & tid))]
-    scored = [(len(words(c) & target) / len(words(c)), i, c) for i, c in enumerate(cands) if words(c)]
+    own = r.get("title", "") + " " + r.get("document_id", "")
+    tid, mine, docids = idt(own), item_ids(own) - common, item_ids(r.get("document_id", "")) - common
+    names = lambda c, ids: bool((item_ids(c["text"] + " " + c["label"] + " " + c["ctx"])
+                                 | bare_numbers(c["text"] + " " + c["label"] + " " + c["ctx"])) & ids)
+    keep = []
+    for c in cands:
+        t = c["text"]
+        if c["label"] != "table" and GROUP_LABEL.search(c["label"]) or PLACEHOLDER.search(t):
+            continue
+        # a sentence that names other items (frames, folios, numbers) and none of this one's belongs to a sibling item
+        if idt(t) and tid and not (idt(t) & tid):
+            continue
+        st = stated_classes(c)
+        if n is not None and st and n not in st:
+            continue
+        if over_claims(t, r):
+            continue
+        if siblings > 1 and mine and not names(c, mine):
+            continue
+        keep.append(c)
+    if docids and any(names(c, docids) for c in keep):
+        keep = [c for c in keep if names(c, docids)]
+    keep = [c["text"] for c in keep]
+    scored = [(len(words(c) & target) / len(words(c)), i, c) for i, c in enumerate(keep) if words(c)]
     if not scored:
         return "", 0.0
     top = max(sc for sc, _, _ in scored)
@@ -319,9 +462,42 @@ def link_or_text(v):
 
 # ------------------------------------------------------------------ items
 
+def depth_safe_title(title, r):
+    """A title whose wording claims more depth than the row's (rule 4a) is reworded: 'the whole cipher read' -> 'cipher read in
+    part', 'read in full' -> 'read in part', 'fully deciphered' -> 'partly deciphered' (READINGS-PUBLIC, 11 Oct 2026: a D2 item was
+    titled 'the whole cipher read'). Only these D4 phrases are reworded; the register keeps its own title."""
+    d = row_depth(r)
+    if d is None or d >= 4:
+        return title
+    for pat, rep in ((r"\bthe whole cipher read\b", "cipher read in part"), (r"\bwhole cipher read\b", "cipher read in part"),
+                     (r"\bread in full\b", "read in part"), (r"\bfully deciphered\b", "partly deciphered")):
+        title = re.sub(pat, rep, title, flags=re.I)
+    return title
+
+
+def register_note(it):
+    """The line under a claim that is not a quoted safe sentence."""
+    if it.get("register_generated"):
+        return ("Written from the verifier's depth ruling: no safe sentence in AUDIT.md and no line in the results register keeps "
+                "within it.")
+    return "From the results register; no safe sentence in AUDIT.md matched this entry, so read the audit before quoting it."
+
+
+def depth_note(r):
+    """The claim shown when neither a safe sentence nor the register line keeps within the row's depth."""
+    d = row_depth(r)
+    return (f"The verifier's latest ruling puts this reading at depth D{d} ({DEPTH_WORDS[d]}). The earlier sentences on file describe "
+            "more than that ruling allows, so they are not quoted here; AUDIT.md holds them beside the ruling.")
+
+
 def build_items(results, ns):
     memo = load_memo_links()
     items = []
+    counted = [r for r in results if class_of(r, ns)]
+    per_folder = Counter(folder(r) for r in counted)
+    idfreq = Counter((folder(r), i) for r in counted for i in item_ids(r.get("title", "") + " " + r.get("document_id", "")))
+    # an identifier three or more items carry is a volume or a shared page (mssEC 19), not an item; two may share a ledger pointer
+    common = lambda f: frozenset(i for (g, i), k in idfreq.items() if g == f and k >= 3)
     for r in results:
         cls = class_of(r, ns)
         if not cls:
@@ -330,19 +506,22 @@ def build_items(results, ns):
         if any(x in fold.lower() for x in RESTRICTED):
             continue
         n = item_n(r, cls)
-        safe, score = best_safe_sentence(r)
+        safe, score = best_safe_sentence(r, n, per_folder[fold], common(fold))
         links = memo_links_for(r, memo)
         reading, script = reading_and_script(fold, r.get("title", ""))
+        register = sanitize(r.get("line", ""))
+        generated = over_claims(register, r)
         items.append({
             "row": r, "cls": cls, "folder": fold, "n": n,
-            "title": sanitize(r.get("title", "")),
+            "title": depth_safe_title(sanitize(r.get("title", "")), r),
             "holder": sanitize(r.get("document_id", "")),
             "lang": language(fold),
             "depth": depth_words(r),
             "key": key_words(r),
             "gist": sanitize(r.get("depth_sentence", "")),
             "safe": sanitize(safe) if score >= 0.5 else "",
-            "register": sanitize(r.get("line", "")),
+            "register": depth_note(r) if generated else register,
+            "register_generated": generated,
             "audits": [sanitize(a) for a in (r.get("audit_refs") or [])],
             "audit_status": r.get("audit_status", ""),
             "audit_dates": [d for d in audits_on_file(fold) if d],
@@ -527,7 +706,7 @@ def index_body(items, ns, results, targets, href_of, inline=False):
             f'<td data-l="Language">{E(it["lang"])}</td>'
             f'<td data-l="What it says">{thumb(it, inline)}<a href="{E(href_of(it))}">{E(ten_words(it["gist"]) or ten_words(it["title"], 12))}</a></td>'
             f'<td data-l="Outcome">{E(cls_head[it["cls"]])}</td>'
-            f'<td data-l="Search result">{E("N%d" % n if n is not None else "")}</td>'
+            f'<td data-l="Search result">{E(" · ".join(k for k, _ in class_labels(it)))}</td>'
             f'<td data-l="Depth">{E(it["depth"].split(" (")[0])}</td></tr>')
     sel = lambda name, label, opts: (f'<label>{E(label)} <select data-f="{name}"><option value="">all</option>'
                                      + "".join(f'<option value="{E(k)}">{E(lab)} ({c})</option>' for k, lab, c in opts) + "</select></label>")
@@ -540,8 +719,9 @@ def index_body(items, ns, results, targets, href_of, inline=False):
         '<h1>Cipher letters read from the archives</h1>',
         '<p class="lede">Each entry is a historical cipher letter we read, in part or in full. On every item page the claim comes '
         'first, in one plain sentence, and the proof sits directly underneath it: which signs were read and how, the script that '
-        'regenerates the reading, the control it had to beat, the two independent audits that searched for it in print, and links '
-        'to the manuscript image and the printed edition, so that a reader can check each step from their own desk.</p>',
+        'regenerates the reading, the control it had to beat where there is one, its audits that searched for it in print (two for '
+        'every reading; contributions carry one), and links to the manuscript image and the printed edition, so that a reader can '
+        'check each step from their own desk.</p>',
         count_cards(items, ns, results),
         f'<p class="small">Counts are in documents. {tc["open"] + tc["blocked"] + tc["partial"]} targets in work (open, partial or '
         'blocked); only audited results are listed here. <a href="attention.html">Readings worth a historian\'s attention</a> &middot; '
@@ -627,8 +807,7 @@ def item_body(it, howto="how-to-read.html", credits="credits.html"):
                  + (' Some counts in it predate a later revision; the current ones are in the grades below.'
                     if stale_counts(it["safe"], it["register"]) else "") + "</p>")
     else:
-        claim = (f'<blockquote class="claim">{md(it["register"])}</blockquote><p class="small">From the results register; no '
-                 'matching safe sentence was found in AUDIT.md for this entry, so read the audit before quoting it.</p>')
+        claim = f'<blockquote class="claim">{md(it["register"])}</blockquote><p class="small">{E(register_note(it))}</p>'
     out.append('<h2>The claim</h2>' + claim)
     if it["gist"]:
         out.append(f'<p class="gist">{md(it["gist"])} <em>(interpretation: the verifier\'s English paraphrase of the read passage)</em></p>')
@@ -643,7 +822,9 @@ def item_body(it, howto="how-to-read.html", credits="credits.html"):
     row("Manuscript image", link_or_text(it["image"]) or "linked from the folder's NOTES.md")
     row("Printed edition", link_or_text(it["edition"]))
     row("Outcome", E(dict((k, h) for k, h, _ in CLASSES)[it["cls"]]))
-    row("Search result", (E(f"N{n}: {NWORDS[n]}") if n is not None else "") + f' <a class="small" href="{howto}#n-class">what this means</a>')
+    row("Search result", (E(f"N{n}: {NWORDS[n]}") if n is not None and it["cls"] != "key" else
+                          E("; ".join(f"{k}: {w}" for k, w in class_labels(it))))
+        + f' <a class="small" href="{howto}#n-class">what this means</a>')
     row("Depth", E(it["depth"]) + f' <a class="small" href="{howto}#depth">what this means</a>' if it["depth"] else "")
     row("Key", E(it["key"]) + f' <a class="small" href="{howto}#key">what this means</a>' if it["key"] else "")
     out.append("<h2>The letter</h2><dl>" + "".join(dl) + "</dl>")
@@ -750,7 +931,7 @@ def attention_body(items, href_of):
         if it is None:
             continue
         out.append(f'<div class="item"><h3>{E(head)}</h3><p>{E(story)}</p><p class="meta"><b>Search result:</b> '
-                   f'N{it["n"]} &middot; <b>Depth:</b> {E(it["depth"])} &middot; <a href="{E(href_of(it))}">claim and proof</a></p></div>')
+                   f'{E(" · ".join(k for k, _ in class_labels(it)))} &middot; <b>Depth:</b> {E(it["depth"])} &middot; <a href="{E(href_of(it))}">claim and proof</a></p></div>')
     return "".join(out)
 
 
@@ -908,7 +1089,7 @@ def item_body_v2(it, sc, howto="how-to-read.html", inline=False):
     stale = it["safe"] and stale_counts(it["safe"], it["register"])
     out.append(f'<blockquote class="claim">{md(it["safe"] or it["register"])}</blockquote>'
                + ('<p class="small">Counts in this audited sentence were revised since; current counts in the bar below.</p>' if stale else "")
-               + ("" if it["safe"] else '<p class="small">Results-register line: no safe sentence in AUDIT.md matched this entry.</p>'))
+               + ("" if it["safe"] else f'<p class="small">{E(register_note(it))}</p>'))
     if it["gist"]:
         out.append(f'<p class="gist">{md(it["gist"])} <em>(interpretation)</em></p>')
     f, t, place, date = sc["who"]
@@ -921,7 +1102,7 @@ def item_body_v2(it, sc, howto="how-to-read.html", inline=False):
                + "".join(f'<li><b>{E(p)}</b> {E(w)}{ctxmark(c)}</li>' for p, w, c in sc["people"]) + "</ul>"
                + (f'<p class="small">{E(sc["aside"])}</p>' if sc.get("aside") else "") + "</div></div>")
     dates = list(dict.fromkeys(it["audit_dates"]))
-    badges = [f'<a class="badge" href="{howto}#n-class">N{n} {E(NSHORT[n])}</a>' if n is not None else "",
+    badges = [f'<a class="badge" href="{howto}#n-class">{E(k)} {E(w)}</a>' for k, w in class_labels(it)] + [
               f'<a class="badge" href="{howto}#depth">{E(it["depth"])}</a>' if it["depth"] else "",
               f'<a class="badge" href="{howto}#key">{E(it["key"])}</a>' if it["key"] else ""]
     badges += [f'<span class="badge">audit {E(d)}</span>' for d in dates[:2]]
@@ -1002,8 +1183,9 @@ work began; cited, no code used.</dd>
 47 (2023): the method followed for key sheets, nomenclature and pile work.</dd>
 <dt>Published and period keys</dt><dd>{keys}</dd>
 <dt>Holding archives</dt><dd>The Bibliothèque nationale de France (Gallica), the Huntington Library, the Huygens Institute (Willem van
-Oranje correspondence), the Sächsisches Hauptstaatsarchiv Dresden and the other holders named on each item page, whose images are linked,
-never copied.</dd></dl>"""
+Oranje correspondence), the Sächsisches Hauptstaatsarchiv Dresden and the other holders named on each item page, whose images are linked
+from each item page{images}</dd></dl>"""
+IMAGES_PRIVATE = "; the line crops shown in this private mock-up are for review only and are not published."
 
 
 KEY_CREDITS = [  # (pattern, credit) -- a published key is credited when the row or its AUDIT.md key-source lines name its maker
@@ -1041,7 +1223,7 @@ def write_site(out, items, ns, results, targets):
         w(os.path.join("items", it["file"]), page(it["title"][:80], body, nav_prefix="../"))
     nw = "".join(f"<dt>N{k}</dt><dd>{E(v)}</dd>" for k, v in NWORDS.items())
     w("how-to-read.html", page("How to read this", HOWTO.format(nw=nw)))
-    w("credits.html", page("Credits", CREDITS.format(keys=E(keys_credit(items)))))
+    w("credits.html", page("Credits", CREDITS.format(keys=E(keys_credit(items)), images=IMAGES_PRIVATE)))
     w("attention.html", page("Readings worth attention", attention_body(items, lambda it: "items/" + it["file"])))
 
 
@@ -1071,7 +1253,7 @@ def write_mockup(path, items, ns, results, targets, picks):
     body.append('<section class="page" id="not-in-mockup"><p class="small">In the full site every row opens its own item page; this '
                 'single-file mock-up carries three of them.</p></section>')
     body.append(f'<section class="page">{HOWTO.format(nw=nw)}</section>')
-    body.append(f'<section class="page">{CREDITS.format(keys=E(keys_credit(items)))}</section>')
+    body.append(f'<section class="page">{CREDITS.format(keys=E(keys_credit(items)), images=IMAGES_PRIVATE)}</section>')
     html_ = page("Cipher letters read (mock-up)", "".join(body))
     for a_, b_ in (('href="index.html"', 'href="#top"'), ('href="attention.html"', 'href="#attention"'),
                    ('href="how-to-read.html"', 'href="#how"'), ('href="credits.html"', 'href="#credits"'),

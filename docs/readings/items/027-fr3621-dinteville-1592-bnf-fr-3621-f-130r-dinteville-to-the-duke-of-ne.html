@@ -1,0 +1,100 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BnF fr.3621 f.130r, Dinteville to the Duke of Nevers, Langres, 4 July 1592: ciph</title><style>
+:root{--bg:#fbfaf7;--fg:#1d1d1f;--muted:#55565c;--rule:#d9d6cf;--card:#ffffff;--accent:#0b3d91;--accent2:#8a4b00;--tint:#eef2fa}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#141518;--fg:#ececef;--muted:#a9abb3;--rule:#33353b;
+ --card:#1c1e22;--accent:#9cc2ff;--accent2:#f2b46b;--tint:#1f2633}}
+:root[data-theme="dark"]{--bg:#141518;--fg:#ececef;--muted:#a9abb3;--rule:#33353b;--card:#1c1e22;--accent:#9cc2ff;--accent2:#f2b46b;--tint:#1f2633}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 Georgia,"Iowan Old Style","Palatino Linotype",serif}
+main{max-width:980px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:1.9rem;line-height:1.2;margin:.2em 0 .3em}
+h2{font-size:1.3rem;margin:1.8em 0 .5em;border-bottom:1px solid var(--rule);padding-bottom:.2em}
+h3{font-size:1.05rem;margin:1.2em 0 .3em}
+a{color:var(--accent)}
+nav.top{font:14px/1.4 system-ui,sans-serif;display:flex;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--rule);padding-bottom:8px}
+.lede{color:var(--muted);max-width:44em}
+.mock{font:13px/1.4 system-ui,sans-serif;border:2px dashed var(--accent2);color:var(--fg);padding:8px 12px;margin:12px 0}
+.counts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:16px 0}
+.count{background:var(--card);border:1px solid var(--rule);padding:10px 12px}
+.count b{display:block;font-size:1.7rem;font-family:system-ui,sans-serif}
+.count span{font:13px/1.35 system-ui,sans-serif;color:var(--muted)}
+.item{background:var(--card);border:1px solid var(--rule);border-left:4px solid var(--accent);padding:10px 14px;margin:10px 0}
+.item h3{margin:0 0 4px}
+.meta{font:13px/1.45 system-ui,sans-serif;color:var(--muted);margin:2px 0}
+.meta b{color:var(--fg);font-weight:600}
+.gist{margin:6px 0 0}
+.gist em{font:12px system-ui,sans-serif;color:var(--muted);font-style:normal}
+blockquote{margin:8px 0;padding:8px 12px;background:var(--tint);border-left:4px solid var(--accent2)}
+dl{display:grid;grid-template-columns:minmax(120px,190px) 1fr;gap:6px 14px;font:14px/1.45 system-ui,sans-serif}
+dt{color:var(--muted)} dd{margin:0;overflow-wrap:anywhere}
+.small{font:13px/1.45 system-ui,sans-serif;color:var(--muted)}
+details summary{cursor:pointer;color:var(--accent);font:14px system-ui,sans-serif}
+section.page{border-top:3px double var(--rule);margin-top:40px;padding-top:8px}
+.filters{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;font:14px system-ui,sans-serif;margin:12px 0}
+.filters select{font:inherit;padding:2px 4px;max-width:260px}
+table.cat{width:100%;border-collapse:collapse;font:14px/1.4 system-ui,sans-serif}
+table.cat th{text-align:left;border-bottom:2px solid var(--rule);padding:6px 6px;font-weight:600}
+table.cat td{border-bottom:1px solid var(--rule);padding:6px;vertical-align:top}
+blockquote.claim{font-size:1.08rem}
+details{border:1px solid var(--rule);background:var(--card);margin:6px 0;padding:6px 10px}
+details .det{font:14px/1.5 system-ui,sans-serif;padding:4px 0}
+code{font:13px ui-monospace,Menlo,monospace;background:var(--tint);padding:1px 4px;overflow-wrap:anywhere}
+@media (max-width:760px){table.cat thead{display:none}table.cat tr{display:block;border:1px solid var(--rule);background:var(--card);margin:8px 0;padding:4px 8px}
+ table.cat td{display:block;border:0;padding:2px 0}table.cat td:empty{display:none}table.cat td::before{content:attr(data-l) ": ";color:var(--muted);font-size:12px}}
+@media (max-width:560px){dl{grid-template-columns:1fr}dt{margin-top:6px}h1{font-size:1.5rem}}
+
+figure.cipher{margin:14px 0;background:var(--card);border:1px solid var(--rule);padding:8px}
+figure.cipher img{display:block;width:100%;height:auto;background:#fff}
+figcaption{font:12px/1.4 system-ui,sans-serif;color:var(--muted);margin-top:6px}
+.strip{display:flex;flex-wrap:wrap;gap:3px;margin-top:8px}
+.tk{display:inline-flex;flex-direction:column;align-items:center;min-width:34px;padding:2px 3px 0;border:1px solid var(--rule);border-bottom-width:5px;background:var(--bg)}
+.tk .cs{font:12px ui-monospace,Menlo,monospace;color:var(--muted)}
+.tk .pv{font:600 14px Georgia,serif}
+.tk .gr{font:10px system-ui,sans-serif;color:var(--muted)}
+.en{font:italic 15px/1.4 Georgia,serif;margin:8px 0 2px;padding-left:8px;border-left:3px solid var(--rule)}
+.en .k{font:normal 11px system-ui,sans-serif;margin-bottom:2px}.en.none{font:12px system-ui,sans-serif;color:var(--muted)}
+.k.layer{margin-top:8px}
+.legend{font:12px system-ui,sans-serif}.lg{border-bottom:4px solid;padding:0 4px;margin-right:6px}
+.ctx{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:6px;font:14px system-ui,sans-serif;background:var(--tint);padding:8px 10px}
+.k{color:var(--muted);font-size:12px;display:block}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}.two h3{margin:.8em 0 .3em}
+ul.tl{list-style:none;padding:0;margin:0;font:14px/1.45 system-ui,sans-serif}ul.tl li{margin:3px 0}
+.cx{font-size:11px;color:var(--muted);border:1px solid var(--rule);padding:0 4px}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 6px}
+.badge{font:13px system-ui,sans-serif;border:1px solid var(--accent);padding:2px 8px;text-decoration:none;color:var(--fg)}
+.bar{display:flex;height:12px;border:1px solid var(--rule)}.bar span{display:block}
+img.thumb{display:block;max-width:220px;height:auto;margin-bottom:3px;background:#fff}
+ul.links{font:14px/1.6 system-ui,sans-serif;padding-left:18px}
+@media (max-width:640px){.two{grid-template-columns:1fr}}
+
+nav.site{font:14px/1.4 system-ui,sans-serif;display:flex;gap:6px 14px;flex-wrap:wrap;align-items:center;padding:10px 0;
+ border-bottom:2px solid var(--rule)}
+nav.site a{text-decoration:none;padding:2px 0}nav.site a[aria-current=page]{font-weight:700;border-bottom:2px solid currentColor}
+nav.site .brand{font-weight:700;margin-right:6px;color:inherit}
+.crumbs{font:13px/1.4 system-ui,sans-serif;color:var(--muted);margin:10px 0 0}.crumbs a{color:inherit}
+.pager{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:14px/1.4 system-ui,sans-serif;margin:16px 0;
+ padding:10px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.pager a{max-width:46%}.pager .mid{text-align:center}
+.backlink{font:14px system-ui,sans-serif;border:1px solid var(--rule);border-left:4px solid var(--accent2);padding:8px 12px;margin:12px 0}
+.evidence{font:14px/1.5 system-ui,sans-serif;border:1px solid var(--rule);border-left:4px solid var(--accent);padding:8px 14px;margin:18px 0}
+.evidence ul{margin:6px 0 0;padding-left:20px}
+footer.site{font:12px/1.5 system-ui,sans-serif;color:var(--muted);border-top:1px solid var(--rule);margin-top:40px;padding-top:10px}
+.qf{font:inherit;padding:4px 8px;min-width:260px;max-width:100%}
+ul.browse{list-style:none;padding:0}ul.browse li{margin:8px 0;padding:6px 0;border-bottom:1px solid var(--rule)}
+ul.browse .one{display:block;color:var(--muted);font-size:.95em}
+.toc{font:14px system-ui,sans-serif;display:flex;flex-wrap:wrap;gap:6px 14px}
+.door{border-top:3px double var(--rule);margin-top:36px;padding-top:6px}
+.dsum{border:1px solid var(--rule);padding:10px 14px;margin:16px 0}
+.sitenote{font:13px/1.4 system-ui,sans-serif;color:var(--muted);margin:10px 0}.sitenote a{color:inherit}
+main{overflow-wrap:break-word}ul.links a,figcaption a,.holderlink a,.links li,.det li{overflow-wrap:anywhere}
+@media (max-width:560px){.qf{min-width:0;width:100%}.pager a{max-width:100%}}
+
+section.part{margin:22px 0}section.part>h2{font:600 13px system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;
+ color:var(--muted);border-bottom:1px solid var(--rule);padding-bottom:4px}
+.says1{font:19px/1.45 Georgia,serif;margin:6px 0}
+p.orig{font:16px/1.7 Georgia,serif}mark.cw{background:var(--tint);color:inherit;border-bottom:2px solid var(--accent);padding:0 2px}
+.rline{margin:8px 0}.names{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0}
+.names a{font:14px system-ui,sans-serif;border:1px solid var(--rule);padding:2px 8px;text-decoration:none}
+.faces1{display:flex;flex-wrap:wrap;gap:12px}.faces1 .face{width:120px;font:12px/1.3 system-ui,sans-serif}
+.faces1 .pf{position:relative;width:120px;height:140px}.faces1 .pf img,.faces1 .pf svg{position:absolute;inset:0;width:120px;height:140px;object-fit:cover}
+.ctxslot{border:1px dashed var(--rule);padding:8px 12px;color:var(--muted);font:14px system-ui,sans-serif}
+</style></head><body><main><nav class="site" aria-label="Site"><a class="brand" href="../index.html">What the cipher said</a><a href="../index.html">Exhibit</a><a href="../all-readings.html" aria-current=page>All readings</a><a href="../browse/century.html">By century</a><a href="../browse/archive.html">By archive</a><a href="../browse/language.html">By language</a><a href="../how-to-read.html">How to read</a><a href="../people/index.html">People</a><a href="../credits.html">Credits</a></nav><p class="crumbs"><a href="../index.html">Home</a> &rsaquo; <a href="../all-readings.html">All readings</a> &rsaquo; BnF fr.3621 f.130r, Dinteville to the Duke of ...</p><p class="sitenote">Cipher Lab readings: what our agents have read in historical cipher letters, with the evidence. Each reading carries its grade; see <a href="../how-to-read.html">How to read</a>. &middot; <a href="https://github.com/NoAutopilot/cipher-lab">Repository</a></p><div class="pager"><a rel="prev" href="026-nevers-birago-fr3251-1572-bnf-fr-3251-no-90-lodovico-birago-to-the-duk.html">&larr; BnF fr.3251 no.90, Lodovico Birago to the Duke ...</a><span class="mid">27 of 240 &middot; <a href="../all-readings.html">All readings</a></span><a rel="next" href="028-fr3416-nevers-fils-1589-bnf-fr-3416-f-35r-nevers-to-his-son-c-1589-fig.html">BnF fr.3416 f.35r, Nevers to his son, c.1589: ... &rarr;</a></div><article data-interest="unscored" data-thin="no"><h1>BnF fr.3621 f.130r, Dinteville to the Duke of Nevers, Langres, 4 July 1592: cipher passages read with a period key rebuilt from the sibling letter f.128 and its 1882 printed plaintext</h1><section class="part" id="what-it-says"><h2>What it says</h2><p class="says1">A fragments read read at grade N3; the reading is below the content bar.</p><p class="small">Source: no depth sentence on file.</p></section><section class="part" id="reading"><h2>The reading</h2><p class="small" data-pending="original">Graded original: no per-sign table on file for this item.</p><p class="small" data-pending="crop">Cipher image: at the holder, linked as the image source under How we know.</p><p class="en none" data-pending="english">English line: pending</p></section><section class="part" id="who"><h2>Who, where, when</h2><div class="ctx"><div><span class="k">From</span> Dinteville</div><div><span class="k">To</span> the Duke of Nevers</div><div><span class="k">At</span> Langres</div><div><span class="k">Date</span> 4 July 1592</div><div><span class="k">Held</span> Bibliothèque nationale de France</div></div><p class="small">No person or place name is decoded in the cipher text of this item (names in clear, or none).</p></section><section class="part" id="how"><h2>How we know</h2><blockquote class="claim">Class without a reading (D1, fragments read; not counted as a unique solve). Fragmentary reading (our interpretation): keeping the town in the king&#x27;s obedience, the forces outside will serve, provide and withdraw since there is honour to lose; no prior decipherment of the cipher passages located (3 Oct 2026); the letter&#x27;s clear parts are summarised in the 1882 Revue.</blockquote><p class="small">From the results register; no safe sentence in AUDIT.md matched this entry, so read the audit before quoting it.</p><p class="badges"><a class="badge" href="../how-to-read.html#n-class">N3 no prior reading located</a><a class="badge" href="../how-to-read.html#depth">fragments read</a><a class="badge" href="../how-to-read.html#key">period key, rebuilt by us from a decipherment or key sheet of the time</a><span class="badge">two audits: yes</span></p><div class="bar"><span style="width:33.6%;background:#0072b2"></span><span style="width:59.0%;background:#d55e00"></span><span style="width:7.4%;background:#7a7a7a"></span></div><p class="small"><b>C</b> 177 known text &middot; <b>M</b> 311 uncertain &middot; <b>U</b> 39 unread (of 527 signs)</p><ul class="links"><li><a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/fr3621-dinteville-1592/AUDIT.md">AUDIT.md</a> &middot; decode script <a href="https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/fr3621-dinteville-1592/decode.json">decode.json</a> &middot; key file: none in folder &middot; image source <a href="https://gallica.bnf.fr/ark:/12148/btv1b52524472n/f269.item">https://gallica.bnf.fr/ark:/12148/btv1b52524472n/f269.item</a> &middot; <a href="https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr3621-dinteville-1592">folder</a></li><li>Regenerate: <code>python3 tools/decode_key.py ciphers/fr3621-dinteville-1592 --check</code></li><li>Control: 527 tokens: C 177 M 311 U 39, no H, no S (strict rule). f.130 decode fr16 -1.271 vs 0/3000 free and 0/3000 frequency-banded shuffles</li></ul><details><summary>Search log from AUDIT.md (7 search lines, 6 on blocked or unreachable hosts)</summary><div class="det"><ul><li>Solver searches.*<i> Gomberville 1665 seconde partie (Google Books H2eV4wAmIr0C, full-text), Henri IV </i>Lettres</li><li>(a) Searched, no prior decipherment of f.130&#x27;s cipher passages:</li><li>Gomberville, <i>Mémoires du duc de Nevers</i> (1665), seconde partie: already full-text searched by scGOM2 and</li><li>3640 including 3621): IA full-text API (be-api fts, &quot;Lettres de M. de Dinteville&quot;: 42 items), then the OCR of</li><li>Nevers et l&#x27;État royal<i> (2006), and a full-text read of Pérot&#x27;s sources (</i>Correspondance inédite de M. de Dinteville</li><li>Revue de Champagne et de Brie, other volumes.** IA full-text (be-api) for &quot;Langres, 4 juillet 1592&quot; returned 3 items.</li><li>Desenclos check, 4 Oct 2026: no hit. Searched 17 open full texts of the 36 items in sources/desenclos/2026-10-04/bibliography.tsv (HAL PDFs, DSpace Tartu HistoCrypt 2024/2025 PDFs, OpenEdition HTML; built from HAL, theses.fr, OpenAlex, Sema</li></ul><p><b>Unreachable</b></p><ul><li>(c) Unreachable or not done:*<i> JSTOR (cloud-blocked; queued). The two ARCSI PDFs (no extractor). Boltanski, </i>Les ducs de</li><li>52003 | -1.957 / -1.705 / -1.510 (0) | -1.673 / -1.579 / -1.429 (0)</li><li>Boltanski, <i>Les ducs de Nevers et l&#x27;État royal</i> (Droz 2006).** It is in copyright and its full text is not reachable from</li><li>This family is *<i>unreachable</i>*, not negative. It is the main reason this audit holds N3, not N4.</li><li>already known); the two other queries hit 429 and were not retried. *<i>HAL</i>*: &quot;Dinteville&quot; 5 (art history, Guillaume de</li><li>api.semanticscholar.org 3 (2 x 429), api.archives-ouvertes.fr 3, persee.fr 1, arcsi.fr 3 (one 404 on a wrong path).</li></ul></div></details></section></article><div class="pager"><a rel="prev" href="026-nevers-birago-fr3251-1572-bnf-fr-3251-no-90-lodovico-birago-to-the-duk.html">&larr; BnF fr.3251 no.90, Lodovico Birago to the Duke ...</a><span class="mid">27 of 240 &middot; <a href="../all-readings.html">All readings</a></span><a rel="next" href="028-fr3416-nevers-fils-1589-bnf-fr-3416-f-35r-nevers-to-his-son-c-1589-fig.html">BnF fr.3416 f.35r, Nevers to his son, c.1589: ... &rarr;</a></div><footer class="site">Built 11 October 2026. Readings graded per CLAUDE.md rule 4; novelty classes per rule 10 (verifier's verdict). Nothing here is called first, new or unpublished. <a href="../sitemap.html">Sitemap</a></footer></main></body></html>
