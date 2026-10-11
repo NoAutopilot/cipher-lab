@@ -89,3 +89,6 @@ spread unmeasured", with the remaining runs named as the next step at their cost
 ## Step 1 files (committed with this PREREG, before any read): benchmark-tx/txeng3/8/SHA256SUMS_step1.txt
 sheet_text_1572.md, brief_P.md, brief_T.md, run.py, adjud_task_template.txt, access_log.py, plus the hashes of sign_sheet_blind_1572.png,
 blind_pass_brief_1572.md and labels_dev_tune.tsv as found.
+
+## Result (11 Oct 2026 06:1x UTC by date -u; benchmark-tx/txeng3/8/RESULTS.md, 45187fa9e)
+Half run (P2, T2; P1/T1 stopped by the cost rule above): pictured passZ_P2 10 unflagged edits (err_true 0.030 flagged excl. / 0.044 as measured), text-list passZ_T2 62 (0.183 / 0.195); gap 52 against within-run reader spreads of 2-3; agreement 98.9 vs 85.0 percent. Declared 2-run reading: "SHEET-H2 half run: within-arm spread unmeasured"; the effect replicates in direction on the second hand and is 6x. Next: P1 and T1 under this PREREG, about USD 3.3-4 each.
