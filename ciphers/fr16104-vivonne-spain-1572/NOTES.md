@@ -2003,3 +2003,7 @@ folder, benchmark-tx/vivonne1573-f103r-confirm2.truth.tsv, its outputs or benchm
 - prior_work.py: no items.tsv row for f.103r (`--derive` proposed 9 rows, none for ink 40; the pending file was not kept). Novelty is not in
   question for a benchmark item (key published, text a period clerk decipherment); no N-class assigned (rule 10).
 Requests 0; subagent calls 0. Cost: the orchestrator's get_session reading.
+
+## Access log
+
+- 11 Oct 2026 01:03:43 UTC (account-3 parent, L74 whole-page view of f.102r): one request, curl with a browser User-Agent, https://gallica.bnf.fr/iiif/ark:/12148/btv1b9009663p/f105/4320,380,3941,4850/full/0/native.jpg (canvas 105 = f.102r; the region runs to the canvas's right edge, 8261 px per sources/gallica-manifests/btv1b9009663p.json) -> HTTP 403, server cloudflare, 'Attention Required! | Cloudflare' (cf-ray a489f25f2d627be0-IAD), the same block two requests met at 00:05-00:06 UTC; not retried (good-citizen rule); desk fetch queued as LOCAL-QUEUE L78.

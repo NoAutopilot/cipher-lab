@@ -15,7 +15,7 @@ So BAD-CUT here means "could not be judged on this page", not "the box is wrong"
 crop (7 the right edge, others top/bottom): the card shows only the crop, so nothing beyond it can be seen. They need a
 second look with a whole-page view, not a re-cut by rule.
 
-## Joined shapes kept as one box: duplicates to merge (proposed, NOT applied)
+## Joined shapes kept as one box: duplicates to merge (merged 11 Oct, see below)
 Under rule 1 the owner widened each machine piece (…a/…b/…c) of 11 joined shapes to the whole shape, which leaves 2-3
 near-identical boxes per shape (IoU 0.53-0.99 after his re-cuts): f102r_L03_b031, L06_b028, L09_b042, L17_b033, L17_b041,
 L21_b022, L21_b041, L22_b035, L23_b006, L23_b018, L27_b022. One box per shape is what his rule means; the merge waits on his
@@ -24,3 +24,38 @@ check is about.
 
 ## Files
 db/ as read; settled.tsv, summary.json, recuts.tsv from tools/sign_sorter_apply.py (as for ../luzerne/, ../birago/).
+
+## Joined-shape duplicates merged (owner's yes, 11 Oct 2026)
+Asked whether to merge, the owner answered 11 Oct 2026 about 00:2x UTC, verbatim: "Ya, so let say there were two or three
+symbols connected this way. I'd drag the first box over all of them. Then on the next symbol I'd drag its box over them too. So
+some dupes." Recorded 11 Oct about 00:5x UTC by the account-3 parent in merges.tsv (blind: box geometry and pixels only; db/,
+settled.tsv and recuts.tsv are not changed).
+
+- 11 groups, one box each; 28 member boxes, 17 sids absorbed, so 541 boxes become 524.
+- Box used: 3 on the union of the members (L06_b028, L17_b033, L22_b035); 4 on the member both checks named as the better fit
+  (L09_b042 -> b042c, L17_b041 -> b041b, L21_b041 -> b041c, L23_b018 -> b018c); 4 on the largest member and marked
+  second-look, for the owner on the whole-page view (L03_b031, L21_b022, L23_b006, L27_b022).
+- How: the groups were rebuilt from geometry (same 11 as above, none added or dropped): tiles on one line strip join at IoU >= 0.5
+  of their final boxes, or as a/b/c siblings both re-cut by the owner with the smaller box at least half inside the other. Two
+  independent blind image checks then looked at each group's crops (ok, too-wide or unsure): both ok -> the union; both too-wide
+  and naming the same member -> that member's box; anything else -> the largest member box, second-look. No group was put back to
+  separate boxes: the yes covers all 11, only the box differs. Boxes are line-image (strip) pixels, as in recuts.tsv.
+- Corrections to the list above: not every a/b/c piece is a duplicate. L06_b028c, L17_b041a and L21_b022c are other shapes and
+  stay as they are; L22_b035c (bad cut) and L23_b018a (kept) lie inside a re-cut sibling but are left as the owner cut them. Pair
+  IoUs are 0.53-0.99 except in L03_b031 and L23_b006, which join on containment (those pairs at IoU 0.21-0.39).
+- This does not settle whether a joined shape is one sign or several. In the four second-look groups the checks found two shapes
+  with no ink link (L23_b006: only a pale hairline), and one check would keep the left piece as its own box (L03_b031, L21_b022,
+  L23_b006; possibly L27_b022). That question belongs to the separate blind "one sign or several?" pass (the account-3 parent's
+  scratch sorters/second-look/joined/, flags.tsv when it lands) and the box-check team's sign-unit decision.
+- Applying: tools/sorter_apply_recuts.py has no merge step yet, so the box-check lane applies merges.tsv: it drops each absorbed
+  sid and sets keep's box to the row's x y w h.
+
+## One sign or several? Blind check of rule 1 (11 Oct 2026)
+The check the owner invited in rule 1 ran 11 Oct 2026 (two independent blind image passes, crops of each shape and its line,
+counting signs this hand also writes on its own; no values or labels): see joined/ (README.md, shapes.tsv, pass1.tsv,
+pass2.tsv, flags.tsv, flags_summary.txt). Of the 16 joined or wide shapes (the 11 merged groups plus 5 boxes 1.8x or more the
+median width): 1 one sign, 9 likely several, 6 unclear; pass 1 counts 45 signs in the 16 boxes, pass 2 40, same count on 11.
+The passes split on one join, a crossed upright run into a zigzag without a lift (pass 1 counts 2, pass 2 counts 1), and are
+unsure of a second, the eyelet with a back-swept descender (L17_b011, L23_b006, L27_b022). This is a machine reading of shapes,
+not a decision: whether the box reference counts pen units (the owner's convention, kept in merges.tsv) or sign units is the
+box-check team's call with the owner.

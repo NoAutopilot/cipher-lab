@@ -1,0 +1,39 @@
+# merges.tsv -- Vivonne f.102r (L74 box check, ORACLE-LOCATION-1): joined-shape duplicate boxes merged, one box per shape.
+# Written 11 Oct 2026 00:54 UTC by the account-3 parent (session_0198Cv8ypBfBVfRToKVWx33M), blind: box geometry and pixels only; no sign
+# value, label, transcription, key or reading was opened. db/, settled.tsv and recuts.tsv are the owner's answers and are NOT changed.
+# The owner's yes, 11 Oct 2026 about 00:2x UTC, verbatim: "Ya, so let say there were two or three symbols connected this way. I'd
+# drag the first box over all of them. Then on the next symbol I'd drag its box over them too. So some dupes."
+# His rule 1, 10 Oct 2026, verbatim: "If a symbol was connected to other symbols with no lift off of the pen I marked it as a single
+# symbol. Feel free to add a check on these to see if it makes sense or perhaps better if separate."
+# Groups: the 11 joined shapes listed in README.md, rebuilt from geometry (same 11, none added or dropped): two tiles on one line
+# strip join when their final boxes reach IoU >= 0.5, or when a/b/c siblings were both re-cut by the owner and the smaller box lies
+# at least half inside the other. Final box = the re-cut quad's bounding box (recuts.tsv new_*) or, if not re-cut, the machine box.
+# Three machine pieces with a sibling suffix are NOT members (L06_b028c, L17_b041a, L21_b022c: other shapes); two not-re-cut pieces
+# lying inside a re-cut sibling are left as cut (L22_b035c bad cut, L23_b018a kept) -- the owner looked at both.
+# keep = the member first in machine reading order (smallest machine-box centre x); absorbed = the other members.
+# Box choice, from two independent blind image checks (A, B) of each group's crops (verdict ok | too-wide | unsure):
+#   both ok -> the union of the members' boxes (box_from union);
+#   both too-wide and naming the same member as the better fit -> that member's box (box_from member:<sid>);
+#   anything else -> the largest member box by area (box_from largest) and status second-look:
+#   the owner judges it on the whole-page view. No group goes back to separate boxes: his yes covers all 11; only the box differs.
+# check_A, check_B: each pass's verdict and the box it said fits better, in short. Where a pass says the members box two
+# separate shapes (G01, G06, G09, G11) that is the one-or-several question, which this file does not settle (the separate blind
+# pass in sorters/second-look/joined/ and the box-check team's sign-unit decision do).
+# x y w h are source line-image (strip) pixels, the same frame as recuts.tsv new_* and signs.tsv x y w h.
+# The largest members used: G01 f102r_L03_b031c (= the union; a non-rectangular quad in recuts.tsv, x y w h is its bounding box),
+# G06 f102r_L21_b022b (the union is 6 px wider on the left), G09 f102r_L23_b006c (the union is 14 px wider on the left and 7 px
+# on the right), G11 f102r_L27_b022b (= the union).
+# Applying it: tools/sorter_apply_recuts.py has no merge step yet, so the box-check lane applies this file -- it drops each
+# absorbed sid and sets keep's box to x y w h. 541 boxes become 524.
+group	keep	absorbed	x	y	w	h	box_from	check_A	check_B	status
+G01	f102r_L03_b031a	f102r_L03_b031b,f102r_L03_b031c	449	0	155	112	largest	unsure: two shapes with no ink link; if one box, the union with its left edge pulled in to ~473	too-wide: do not merge all three; b031c as its quad for the joined shape, b031b for the separate middle shape	second-look
+G02	f102r_L06_b028a	f102r_L06_b028b	150	12	118	87	union	ok	ok	merged
+G03	f102r_L09_b042a	f102r_L09_b042b,f102r_L09_b042c	1282	0	165	109	member:f102r_L09_b042c	too-wide: use b042c (right edge widened to ~1449)	too-wide: use b042c (or right edge ~1449)	merged
+G04	f102r_L17_b033a	f102r_L17_b033b,f102r_L17_b033c	587	23	151	92	union	ok	ok (b033c is 2 px tighter on the right)	merged
+G05	f102r_L17_b041b	f102r_L17_b041c	1262	31	69	79	member:f102r_L17_b041b	too-wide: use b041b	too-wide: use b041b	merged
+G06	f102r_L21_b022a	f102r_L21_b022b	1205	19	107	74	largest	unsure: two shapes with no ink link; if one box, the union as it is	too-wide: b022b for the joined shape, b022a kept as its own box (separate left shape)	second-look
+G07	f102r_L21_b041a	f102r_L21_b041b,f102r_L21_b041c	1240	20	137	66	member:f102r_L21_b041c	too-wide: use b041c	too-wide: use b041c	merged
+G08	f102r_L22_b035a	f102r_L22_b035b	603	0	184	100	union	ok	ok	merged
+G09	f102r_L23_b006a	f102r_L23_b006b,f102r_L23_b006c	438	0	117	101	largest	unsure: two shapes joined only by a pale hairline; if one box, the union	too-wide: b006c (or 438-562) for the joined shape, b006a kept as its own box (separate left shape)	second-look
+G10	f102r_L23_b018b	f102r_L23_b018c	1263	26	148	74	member:f102r_L23_b018c	too-wide: use b018c (right edge ~1413 for margin)	too-wide: use b018c	merged
+G11	f102r_L27_b022a	f102r_L27_b022b,f102r_L27_b022c	1310	0	138	90	largest	unsure: two shapes with no ink link; if one box, the union (= b022b) as it is	unsure: merge b022b+b022c into b022b; b022a may be the separate loop pair's own box	second-look

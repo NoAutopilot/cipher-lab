@@ -1,0 +1,17 @@
+id	members	pass1	pass2	agree	flag	rule	pass1_alt_count	pass2_alt_count
+f102r_L03_b031	f102r_L03_b031a,f102r_L03_b031b,f102r_L03_b031c	2/high	2/medium	yes	likely several signs	both >=2, both >=medium	-	-
+f102r_L06_b028	f102r_L06_b028a,f102r_L06_b028b,f102r_L06_b028c	4/medium	3/medium	no	likely several signs	both >=2, both >=medium; counts differ 4 vs 3	3	4
+f102r_L09_b042	f102r_L09_b042a,f102r_L09_b042b,f102r_L09_b042c	4/medium	4/low	yes	unclear	both >=2 but low confidence in pass2	3	-
+f102r_L17_b033	f102r_L17_b033a,f102r_L17_b033b,f102r_L17_b033c	3/medium	3/medium	yes	likely several signs	both >=2, both >=medium	2	-
+f102r_L17_b041	f102r_L17_b041b,f102r_L17_b041c	1/high	1/high	yes	one sign	both 1	-	-
+f102r_L21_b022	f102r_L21_b022a,f102r_L21_b022b	2/high	2/high	yes	likely several signs	both >=2, both >=medium	-	-
+f102r_L21_b041	f102r_L21_b041a,f102r_L21_b041b,f102r_L21_b041c	3/medium	3/medium	yes	likely several signs	both >=2, both >=medium	-	-
+f102r_L22_b035	f102r_L22_b035a,f102r_L22_b035b	4/medium	3/medium	no	likely several signs	both >=2, both >=medium; counts differ 4 vs 3	3	-
+f102r_L23_b006	f102r_L23_b006a,f102r_L23_b006b,f102r_L23_b006c	3/low	3/low	yes	unclear	both >=2 but low confidence in pass1+pass2	2	2
+f102r_L23_b018	f102r_L23_b018b,f102r_L23_b018c	3/medium	3/medium	yes	likely several signs	both >=2, both >=medium	-	-
+f102r_L27_b022	f102r_L27_b022a,f102r_L27_b022b,f102r_L27_b022c	4/low	4/low	yes	unclear	both >=2 but low confidence in pass1+pass2	3	3
+f102r_L06_b010	f102r_L06_b010	2/medium	2/high	yes	likely several signs	both >=2, both >=medium	-	-
+f102r_L11_b014	f102r_L11_b014	3/medium	2/high	no	likely several signs	both >=2, both >=medium; counts differ 3 vs 2	2	-
+f102r_L17_b004	f102r_L17_b004	2/low	1/medium	no	unclear	one-vs-several split (2 vs 1)	1	-
+f102r_L17_b011	f102r_L17_b011	3/low	2/medium	no	unclear	both >=2 but low confidence in pass1	2	-
+f102r_L26_b035	f102r_L26_b035	2/medium	2/low	yes	unclear	both >=2 but low confidence in pass2	3	3
