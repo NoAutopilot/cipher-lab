@@ -64,3 +64,40 @@ Correction of record on a leaf whose plaintext is known by the copy letter.
 
 Known-text share (owner's guardrail): THUR-NIJ, WVO-DEDUP and PISA-T475 work on leaves whose text is known, but each corrects a record
 (a transcription or key cell), the guardrail's allowed case; the lane counts them separately and states the share in the close line.
+
+## Wave 2 (19:2x UTC 11 Oct)
+Lesson from wave 1 (PISA-T475 3.15 on cap 2, WVO-DEDUP 2.37 on cap 2): an Opus session's floor is ~1.5 before any work, so a job with
+one vision call or one re-run is capped at >= 3. Read the folder's dated sections AFTER the Remaining gaps block too (ECK-S65G found
+three of its four units already run by a later section). Intake gate, 19:2x UTC: fr4735-monluc-lansac-poland-1573 partial exit 0;
+sforza-pusterla-1447-f13 partial exit 0; oldenbarnevelt-brederode-1605 open exit 0; mccormick-1999 open exit 0; fr2933-salviati-1525
+open exit 0 (each "edition/page or full-text-search citation found within 6 lines").
+
+### MONL-LOOK (Opus, cap 3, box 75 min): fr4735-monluc-lansac-poland-1573, tools/lookalike_pass.py on c268 passes A/B
+The Verdict's cheapest next (NOTES.md "Remaining gaps (MONLUC-K38)"): run `tools/lookalike_pass.py` on `passes/c268_passA.tsv` and
+`passes/c268_passB.tsv` with K38 as its own label (MONLUC-RELABEL/-K38 convention), crops from the folder's own images (crop step
+pasted), then write what machines still split to the sorter's focus.tsv for the owner (never blocking). Disk only. Its 2-of-3
+residual is agreement, not accuracy (LESSONS.md "Look-alike pass"): report the before/after pass disagreement on c268 and do not use
+it as a reader-error figure. If the pass changes labels, re-run `k07_c268.py`/decode with --check and the judge (rule 7), FAIL reported
+as FAIL. Units: setup 0.5, pass ~1.2, re-decode 0.3.
+
+### SFZ-LOOK2 (Opus, cap 3, box 75 min): sforza-pusterla-1447-f13 (NEAR), look-alike pass on f.13's So/go, 8/g, h/h-, a/ze pairs
+The Verdict's cheapest next (NOTES.md "Remaining gaps (SFZ-F42)"; SFZ-LOOK's S8 section is the precedent): same adapter
+(`lookalike/build.py`, add the four PAIRS), same control as S8 (report control k/n), disk only. Then re-run g1p.py and
+lattice_decode.py under the re-pooled key as S8 did, report rank and judge (FAIL as FAIL). Unsettled pairs to `lookalike/focus.tsv` for
+the owner. NEAR.md row: the target stays partial whatever happens (rule 5); update its NEAR row's numbers only if they change.
+
+### OBRED-11851 (Opus, cap 4, box 90 min): oldenbarnevelt-brederode-1605, the rest of NA brievenboek inv. 11851 scans 596-640
+The Verdict's cheapest next (OBRED-SG viewed 13 of 45): look at the remaining 32 scans for a numeral block or a cipher passage in the
+588-751 / 1-751 range of no. 92 (a third text in the same table is the step that unblocks the crib test). Hosts: service.archief.nl /
+www.nationaalarchief.nl only ("NA take"/"NA release" lines, >= 1.5 s, <= 60 requests), route per the CLAUDE.md host table and
+OBRED-SG's own commands. Thumbnail/contact-sheet screen first with OBRED-S1's positive controls (state controls k/n), then a native look
+only at a candidate. If budget remains under 80% after 11851, continue the stride-1 fill of inv. 6017 from where OBRED-S3 stopped,
+stating scans looked at. A found block is transcribed by two blind passes only if the cap allows; otherwise record its scan id.
+
+### NEAR-RUNGS (Opus, cap 2.5, box 60 min): the unassessed escalation rungs of two NEAR targets, disk only
+(a) mccormick-1999: the [ ] retry rung (Verdict "assess the retry rung against NEAR.md's row, ~$0.3"); (b) fr2933-salviati-1525: the
+[ ] clear-pages, known-keys, key-rebuild, image-check and retry rungs (Verdict "assess ... from HYPOTHESES.md and SALV-DIAG, ~$0.5").
+Assess each rung from the folder's own files and NEAR.md, CLAUDE.md rule 5 (finish or name the blocker) and rule 3's third-attempt
+clause: mark it [x] with what was done, [retired] with the instrument named, [n/a] with why, or [ ] with a costed next step. No new
+test, no network. Write a dated Remaining gaps / Escalation section per folder and pass `tools/gaps_check.py`; NEAR.md rows edited
+only to keep them consistent (`tools/near_check.py`). Both targets stay open/partial (rule 5).
