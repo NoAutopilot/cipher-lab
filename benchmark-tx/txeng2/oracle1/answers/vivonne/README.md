@@ -49,3 +49,13 @@ settled.tsv and recuts.tsv are not changed).
   scratch sorters/second-look/joined/, flags.tsv when it lands) and the box-check team's sign-unit decision.
 - Applying: tools/sorter_apply_recuts.py has no merge step yet, so the box-check lane applies merges.tsv: it drops each absorbed
   sid and sets keep's box to the row's x y w h.
+
+## One sign or several? Blind check of rule 1 (11 Oct 2026)
+The check the owner invited in rule 1 ran 11 Oct 2026 (two independent blind image passes, crops of each shape and its line,
+counting signs this hand also writes on its own; no values or labels): see joined/ (README.md, shapes.tsv, pass1.tsv,
+pass2.tsv, flags.tsv, flags_summary.txt). Of the 16 joined or wide shapes (the 11 merged groups plus 5 boxes 1.8x or more the
+median width): 1 one sign, 9 likely several, 6 unclear; pass 1 counts 45 signs in the 16 boxes, pass 2 40, same count on 11.
+The passes split on one join, a crossed upright run into a zigzag without a lift (pass 1 counts 2, pass 2 counts 1), and are
+unsure of a second, the eyelet with a back-swept descender (L17_b011, L23_b006, L27_b022). This is a machine reading of shapes,
+not a decision: whether the box reference counts pen units (the owner's convention, kept in merges.tsv) or sign units is the
+box-check team's call with the owner.
