@@ -21,7 +21,8 @@ NO87-LABELS (the X_CE relabel map, value-blind re-read + verifier ruling, L = C 
 TXE-J changed the lattice's soft priors; nothing has yet replaced a position's candidate set with ONE fixed sign (a hard
 pin), and X20 applied the owner's decisions after the decode, never inside it. A hard pin is a new option on the shared
 tool (`--pins FILE`), with an offline test (CLAUDE.md Usage 8). Not a re-run of a retired instrument: MARKS-DEV2b (the mark
-rule) and the transcribe-and-decode crossword (4 attempts, retired) are not touched.
+rule, retired) and the transcribe-and-decode crossword (4 attempts, retired) are not touched; a hard pin inside the decode is a
+different instrument from either, and no new material is claimed.
 
 ## Fixed inputs (none chosen after a score)
 - Lattice: exactly TX-DECODE's recipe as `benchmark-tx/txeng/conf/run_conf.py` builds it (imported, not copied): blind
