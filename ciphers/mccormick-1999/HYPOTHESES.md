@@ -15,3 +15,11 @@ Append-only. Rows below are written by `tools/family_run.py` (CLAUDE.md rule 3: 
 | 25 Sept 2026 19:18 | homophonic | N=746 K=24 restarts=8 corpus=pg1661_holmes.txt+pg2701_mobydick.txt shuffle_target=2 | 1 | 0.998 (0.997-0.999) | -2569.063 | FAIL language: score=-1.839, null_p99=-2.071, real_p05=-0.864, real_median=-0.813, mode=both, N=746 | yes (gate 0.6) | LANE B3 bMCC3 test3: homophonic false-positive floor, target letters shuffled seed 2, default English corpus |
 | 25 Sept 2026 19:19 | homophonic | N=746 K=24 restarts=8 corpus=pg1661_holmes.txt+pg2701_mobydick.txt shuffle_target=3 | 1 | 0.998 (0.997-0.999) | -2559.700 | FAIL language: score=-1.896, null_p99=-2.071, real_p05=-0.864, real_median=-0.813, mode=both, N=746 | yes (gate 0.6) | LANE B3 bMCC3 test3: homophonic false-positive floor, target letters shuffled seed 3, default English corpus |
 | 25 Sept 2026 19:20 | homophonic | N=746 K=24 restarts=8 corpus=pg1661_holmes.txt+pg2701_mobydick.txt | 1 | 0.998 (0.997-0.999) | -2190.651 | FAIL language: score=-1.48, null_p99=-2.071, real_p05=-0.864, real_median=-0.813, mode=both, N=746 | yes (gate 0.6) | LANE B3 bMCC3 test3: homophonic vs default English corpus (rerun to preserve decode file separately from the vowel-dropped run, which shares the same output path) |
+
+MCC-SWEEP (11 Oct 2026, 20:0x UTC by date -u, account 1, LANE DEFAULT-A1-1840; hand-written note outside the tool
+table): token/nomenclator char-4-gram anneal (`specs/cheap-tests/mccormick-1999/token_anneal.py`), control-only length
+sweep, PREREG-MCC-SWEEP.md. CONTROL type recovery mean 0.004 / 0.002 / 0.001 / 0.001, token recovery 0.003 / 0.036 /
+0.001 / 0.010 at 132 / 500 / 2,000 / 8,000 tokens (3 seeds each; shuffled-order null token max 0.000-0.055); with the
+temperature on the total log-prob scale (addendum 1): type 0.008 / 0.001 / 0.001 / 0.000, token 0.037 / 0.001 / 0.030 /
+0.000. Gate 0.5 (type and token) met at no N; TARGET not run. Untestable by this instrument (as designed) at N <= 8,000;
+not too-short, not refuted. Next: a word-level code-word anneal, control first (NOTES.md MCC-SWEEP).

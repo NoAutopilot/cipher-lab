@@ -598,3 +598,59 @@ Read so far: unmeasured; no reading of either note is accepted, cheap tests 2-5 
 - [x] image-check: FT4b (3 Oct 2026) read note 2 line 10 against the image
 - [ ] retry: the token/nomenclator anneal's control never read at 132 tokens (one attempt); retry as a control length sweep (NEAR-RUNGS above), masc/homophonic not retried (shuffle floor is the limit, not the setting)
 Verdict: keep going: 1 internal gaps; cheapest next: token_anneal.py control length sweep (132-8,000 tokens x 3 seeds, no target run unless the control reads at 132), ~$2
+
+## MCC-SWEEP: token_anneal.py control length sweep (11 Oct 2026, 19:47-20:0x UTC by date -u; disk/CPU only)
+Worker MCC-SWEEP (account 1, LANE DEFAULT-A1-1840). Prior work: `tools/prior_work.py mccormick-1999 --item-spec
+'shelfmark=FBI notes;sender=McCormick' --step-type decode --offline` exit 4 (LEAD own live claim = this job; LOOK leaf;
+UNCHECKED solver-by-unit and Tomokiyo), all four recorded CLEAR in prior-work.tsv (synthetic controls only, no target
+decode, no leaf read; solver repositories grepped 2 Oct, OPEN-mccormick-1999). Check 1 by hand: grep of ROOM.md, NEAR.md,
+LEDGER.md, this NOTES.md for a prior length sweep -- only the NEAR-RUNGS proposal, never run. No host requests.
+- Instrument: `specs/cheap-tests/mccormick-1999/token_anneal.py` (bMCC4) given `--control-only --n-tokens N --seeds
+  1,2,3 --iters-per-type 80 --restarts 2 --fast --null` (5763952a9; `--fast` = incremental scorer of the same objective,
+  `--selftest` OK on 600 random moves; default path unchanged). Control generator unchanged (target's kind sequence tiled
+  to N); null = the control's code-token order shuffled among code slots. PREREG `PREREG-MCC-SWEEP.md` 0ead5c65b, pushed
+  before any score; addendum 1 374f508ac before the diagnostic re-run. Results: `families/sweep/control_n*.json`
+  (prereg run) and `families/sweep/control_total_n*.json` (addendum).
+- Structural ceiling (generator only, PREREG): share of truth code types whose word is in the 350-word candidate pool
+  is 0.543 / 0.431 / 0.413 / 0.391 (mean of 3 seeds) at 132 / 500 / 2,000 / 8,000 tokens, so bMCC4's type-level gate 0.5
+  cannot be met at N >= 500 by construction; token-level ceiling 0.63-0.68 at every N.
+
+| N tokens | type recovery mean (gate 0.5) | token recovery mean (read >= 0.5) | null token max | read? |
+|---|---|---|---|---|
+| 132 (prereg) | 0.004 (0.000-0.012) | 0.003 | 0.000 | no |
+| 500 (prereg) | 0.002 | 0.036 | 0.039 | no |
+| 2,000 (prereg) | 0.001 | 0.001 | 0.055 | no |
+| 8,000 (prereg) | 0.001 | 0.010 | 0.009 | no |
+| 132 (temp total) | 0.008 (0.000-0.013) | 0.037 | 0.000 | no |
+| 500 (temp total) | 0.001 | 0.001 | 0.016 | no |
+| 2,000 (temp total) | 0.001 | 0.030 | 0.056 | no |
+| 8,000 (temp total) | 0.000 | 0.000 | 0.018 | no |
+
+- Diagnosis between the two runs (addendum 1): the Metropolis test compares the change in the MEAN 4-gram score with
+  T = 2.0 -> 0.05; the median move changes the mean by 2.4e-3 at 132 tokens and 4.1e-5 at 8,000, so a typical worsening
+  move is accepted with p = 0.95 to 0.999 at the coldest step: bMCC4's search (and its 0.8% control of 25 Sept) was a
+  random walk. Putting the test on the total log-prob scale (`--temp-scale total`) did not change the outcome: even the
+  shared placeholders of the 60 commonest words (repeated-type recovery 0.000-0.091) are not recovered at 8,000 tokens.
+  The limit is the objective (character 4-grams over the spaceless folded text cannot tell common words apart) and the
+  scheme (most code types are one-occurrence placeholders), not the length.
+- Result (PREREG wording): the control reads at no N up to 8,000 on either criterion, so the token/nomenclator family is
+  **untestable by this instrument (as designed) at N <= 8,000** -- not `too-short` (length does not help), not a
+  negative. No target run (PREREG: control did not read at 132). 32,000 extension not run (addendum). Attempt 2 of this
+  instrument; rule 3's third-attempt clause not reached, but a further knob on the same objective is not the next step:
+  a different instrument is (a word-level objective: whole-word n-grams with code types constrained to the word pool,
+  temperature on the total scale, control first). Status unchanged: open.
+
+## Remaining gaps (MCC-SWEEP, 11 Oct 2026)
+Read so far: unmeasured; no reading of either note is accepted, cheap tests 2-5 rate the proposed ones
+- a reading of the two notes - blocker: no-key-material; cheap tests 2-5 above are the logged families, and the Cipher Mysteries thread (all 163 comments, D2-PRINT4) adds no key, crib or new ciphertext
+- the token/nomenclator family at the target's 132 tokens (char-4-gram anneal untestable at N <= 8,000, MCC-SWEEP above) - blocker: not-attempted; the instrument reads its own control at no length; next: a word-level code-word anneal (whole-word bigram objective, code types drawn from the word pool, total-scale temperature), control sweep 132-8,000 first, ~$3
+
+## Escalation (MCC-SWEEP, 11 Oct 2026)
+- [n/a] siblings: no other note by the same writer is known in public (Leads, Web and blog check)
+- [n/a] clear-pages: no clear text by the writer to align is public
+- [n/a] known-keys: no key of any kind is known for these notes
+- [x] print: Web and blog check (2 Oct) and the full Cipher Mysteries thread (D2-PRINT4); no accepted reading in print
+- [ ] key-rebuild: cheap tests 2-4 logged; char-4-gram token anneal untestable at N <= 8,000 (MCC-SWEEP); untried instruments: a word-level code-word anneal (~$3, control first), then the Gregg/abbreviation code-word model (no corpus on disk, ~USD 6 Opus design, NEAR.md)
+- [x] image-check: FT4b (3 Oct 2026) read note 2 line 10 against the image
+- [x] retry: MCC-SWEEP ran the token anneal's control length sweep (132-8,000 x 3 seeds, prereg and total-scale temperature): reads at no N; masc/homophonic not retried (shuffle floor is the limit, not the setting)
+Verdict: keep going: 1 internal gaps; cheapest next: word-level code-word anneal control sweep (132-8,000 tokens x 3 seeds, no target run unless the control reads at 132), ~$3
