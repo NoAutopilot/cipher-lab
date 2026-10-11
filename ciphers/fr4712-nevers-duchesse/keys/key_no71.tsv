@@ -1,0 +1,84 @@
+# Key no.71, BnF fr.3995 f.133r (Gallica btv1b525085665 canvas f256; Tomokiyo nevers.htm no.71, Nevers collection, French, figures).
+# Copied by F4712-K71 (11 Oct 2026, LANE DEFAULT-A1-1840) from two files READ only, never written:
+#   letters: ciphers/birago-fr3252-1571-72/keys/key_fr3995_no71_f133r.tsv (BIRAGO-NUM-KEYEYE3, 3 Oct 2026; grades as there)
+#   mark/word/person rows: read by eye by F4712-K71 from ciphers/birago-fr3252-1571-72/images/fr3995/read_f133r.jpg (same native
+#   crop, one reader, this job); H = code and value both fully on the crop; M = a code or value cut or uncertain.
+# Design (key itself): code + mark. kind=letter: plain two-figure code. kind=word: the same figures 11-99 with a DOT above.
+# kind=person: the same figures with an OVERLINE (6|7|8 one value, 10|11|12 one value). A figure 1-99 can therefore carry up
+# to three values, told apart only by the mark. Word/person columns are only PARTLY on the crop (the 18-51 and 60-91 word codes,
+# the town codes and the right-hand person codes are cut or off-crop): a code absent from this file is UNREAD, not absent from the key.
+# The alphabet strip ends "x [triangle] | y 97? | z? 90 | [sign: loop with a cross ABOVE]" -- the last column's header is a curl
+# (z or &, not settled); the sign is the same shape as f.10r's line-opening sign (DUCH-KEY1B "loop with the cross above").
+# The letter file's 97 y / 90 z are M there; kept M here; the sign is added as code S, value "z|&", grade M.
+code	kind	value	grade	source
+25	letter	a	H	KEYEYE3
+10	letter	b	H	KEYEYE3
+65	letter	c	H	KEYEYE3
+75	letter	d	H	KEYEYE3
+23	letter	e	H	KEYEYE3
+24	letter	e	H	KEYEYE3
+20	letter	f	H	KEYEYE3
+30	letter	g	H	KEYEYE3
+40	letter	h	H	KEYEYE3
+63	letter	i	H	KEYEYE3
+64	letter	i	H	KEYEYE3
+50	letter	l	H	KEYEYE3
+60	letter	m	H	KEYEYE3
+73	letter	n	H	KEYEYE3
+74	letter	n	H	KEYEYE3
+85	letter	o	H	KEYEYE3
+70	letter	p	H	KEYEYE3
+80	letter	q	H	KEYEYE3
+1	letter	r	H	KEYEYE3
+83	letter	s	H	KEYEYE3
+84	letter	s	H	KEYEYE3
+95	letter	t	H	KEYEYE3
+93	letter	u	H	KEYEYE3
+94	letter	u	H	KEYEYE3
+97	letter	y	M	KEYEYE3
+90	letter	z	M	KEYEYE3
+S	letter	z|&	M	F4712-K71 eye (alphabet strip tail)
+11	word	au	H	F4712-K71 eye
+12	word	bon	H	F4712-K71 eye
+13	word	car	H	F4712-K71 eye
+14	word	ce	H	F4712-K71 eye
+15	word	ces	H	F4712-K71 eye
+16	word	de	H	F4712-K71 eye
+17	word	dit	H	F4712-K71 eye
+52	word	si	H	F4712-K71 eye
+53	word	trop	H	F4712-K71 eye
+54	word	temps	H	F4712-K71 eye
+55	word	ayme	H	F4712-K71 eye
+56	word	amis	H	F4712-K71 eye
+57	word	avec	H	F4712-K71 eye
+58	word	argent	H	F4712-K71 eye
+73	word	cavallerye	H	F4712-K71 eye
+74	word	hommes d'armes	H	F4712-K71 eye
+75	word	chevaulx legers	H	F4712-K71 eye
+76	word	gens de pied	H	F4712-K71 eye
+77	word	compagnye	H	F4712-K71 eye
+78	word	reistres	H	F4712-K71 eye
+79	word	suisses	H	F4712-K71 eye
+80	word	allemans	H	F4712-K71 eye
+92	word	quant	H	F4712-K71 eye
+93	word	qu'il	H	F4712-K71 eye
+94	word	quoy	H	F4712-K71 eye
+95	word	recherche	H	F4712-K71 eye
+96	word	ruyne	H	F4712-K71 eye
+97	word	rien	H	F4712-K71 eye
+98	word	suis	H	F4712-K71 eye
+99	word	vous	H	F4712-K71 eye
+6	person	Roy	H	F4712-K71 eye
+7	person	Roy	H	F4712-K71 eye
+8	person	Roy	H	F4712-K71 eye
+9	person	Royne	H	F4712-K71 eye
+10	person	Royne mere	H	F4712-K71 eye
+11	person	Royne mere	H	F4712-K71 eye
+12	person	Royne mere	H	F4712-K71 eye
+13	person	Royne de Navarre	H	F4712-K71 eye
+41	person	Chevallier d'Aumalle	H	F4712-K71 eye
+42	person	Mr d'Espernon	H	F4712-K71 eye
+43	person	Mr de Montmorency	H	F4712-K71 eye
+44	person	Mr de Retz	H	F4712-K71 eye
+45	person	Mr de Biron	H	F4712-K71 eye
+46	person	Mr de Joyeuse	H	F4712-K71 eye
