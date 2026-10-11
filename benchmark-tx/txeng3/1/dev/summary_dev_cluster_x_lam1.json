@@ -1,0 +1,247 @@
+{
+ "propagation": "cluster",
+ "showable": 338,
+ "tiles_in_clusters": 333,
+ "clusters": 80,
+ "base_wrong": 14,
+ "scored": 338,
+ "base_err": 0.0414,
+ "orderings": {
+  "a_doubt": {
+   "to_2pct": "not reached by k=200",
+   "removed_10": -5,
+   "removed_20": -1,
+   "err_10": 0.0562,
+   "err_20": 0.0444,
+   "broken_20": 11,
+   "steps": 200,
+   "err_at": {
+    "10": 0.0562,
+    "20": 0.0444,
+    "50": 0.0592,
+    "100": 0.1095
+   },
+   "wrong_at": {
+    "10": 19,
+    "20": 15,
+    "50": 20,
+    "100": 37
+   },
+   "to_pct": {
+    "0.03": "not reached by k=200",
+    "0.02": "not reached by k=200"
+   }
+  },
+  "disagree": {
+   "to_2pct": "not reached by k=200",
+   "removed_10": -10,
+   "removed_20": -14,
+   "err_10": 0.071,
+   "err_20": 0.0828,
+   "broken_20": 21,
+   "steps": 200,
+   "err_at": {
+    "10": 0.071,
+    "20": 0.0828,
+    "50": 0.1272,
+    "100": 0.1065
+   },
+   "wrong_at": {
+    "10": 24,
+    "20": 28,
+    "50": 43,
+    "100": 36
+   },
+   "to_pct": {
+    "0.03": "not reached by k=200",
+    "0.02": "not reached by k=200"
+   }
+  },
+  "margin": {
+   "to_2pct": "not reached by k=200",
+   "removed_10": -19,
+   "removed_20": -30,
+   "err_10": 0.0976,
+   "err_20": 0.1302,
+   "broken_20": 32,
+   "steps": 200,
+   "err_at": {
+    "10": 0.0976,
+    "20": 0.1302,
+    "50": 0.1538,
+    "100": 0.1243
+   },
+   "wrong_at": {
+    "10": 33,
+    "20": 44,
+    "50": 52,
+    "100": 42
+   },
+   "to_pct": {
+    "0.03": "not reached by k=200",
+    "0.02": "not reached by k=200"
+   }
+  },
+  "disagree_margin": {
+   "to_2pct": "not reached by k=200",
+   "removed_10": -16,
+   "removed_20": -14,
+   "err_10": 0.0888,
+   "err_20": 0.0828,
+   "broken_20": 21,
+   "steps": 200,
+   "err_at": {
+    "10": 0.0888,
+    "20": 0.0828,
+    "50": 0.1657,
+    "100": 0.1657
+   },
+   "wrong_at": {
+    "10": 30,
+    "20": 28,
+    "50": 56,
+    "100": 56
+   },
+   "to_pct": {
+    "0.03": "not reached by k=200",
+    "0.02": "not reached by k=200"
+   }
+  },
+  "lattice": {
+   "to_2pct": "not reached by k=200",
+   "removed_10": -4,
+   "removed_20": -15,
+   "err_10": 0.0533,
+   "err_20": 0.0858,
+   "broken_20": 22,
+   "steps": 200,
+   "err_at": {
+    "10": 0.0533,
+    "20": 0.0858,
+    "50": 0.1006,
+    "100": 0.0947
+   },
+   "wrong_at": {
+    "10": 18,
+    "20": 29,
+    "50": 34,
+    "100": 32
+   },
+   "to_pct": {
+    "0.03": "not reached by k=200",
+    "0.02": "not reached by k=200"
+   }
+  },
+  "b_size": {
+   "to_2pct": "not reached by k=200",
+   "removed_10": -20,
+   "removed_20": -32,
+   "err_10": 0.1006,
+   "err_20": 0.1361,
+   "broken_20": 34,
+   "steps": 200,
+   "err_at": {
+    "10": 0.1006,
+    "20": 0.1361,
+    "50": 0.1775,
+    "100": 0.1716
+   },
+   "wrong_at": {
+    "10": 34,
+    "20": 46,
+    "50": 60,
+    "100": 58
+   },
+   "to_pct": {
+    "0.03": "not reached by k=200",
+    "0.02": "not reached by k=200"
+   }
+  },
+  "d_oracle": {
+   "to_2pct": 5,
+   "removed_10": 10,
+   "removed_20": 10,
+   "err_10": 0.0118,
+   "err_20": 0.0118,
+   "broken_20": 0,
+   "steps": 7,
+   "err_at": {
+    "10": 0.0118,
+    "20": 0.0118,
+    "50": 0.0118,
+    "100": 0.0118
+   },
+   "wrong_at": {
+    "10": 4,
+    "20": 4,
+    "50": 4,
+    "100": 4
+   },
+   "to_pct": {
+    "0.03": 2,
+    "0.02": 5
+   }
+  },
+  "c_random": {
+   "to_2pct": [
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200",
+    "not reached by k=200"
+   ],
+   "removed_10_mean": -10.9,
+   "removed_20_mean": -19.45,
+   "removed_20_band": [
+    -36,
+    -9
+   ],
+   "err_at_min_mean_max": {
+    "10": [
+     0.0533,
+     0.0737,
+     0.1272
+    ],
+    "20": [
+     0.068,
+     0.099,
+     0.1479
+    ],
+    "50": [
+     0.074,
+     0.1302,
+     0.1893
+    ],
+    "100": [
+     0.0888,
+     0.1317,
+     0.1834
+    ]
+   },
+   "to_pct_median": {
+    "0.03": "not reached by k=200 (median)",
+    "0.02": "not reached by k=200 (median)"
+   },
+   "to_pct_reached": {
+    "0.03": 0,
+    "0.02": 0
+   },
+   "seeds": 20
+  }
+ }
+}
