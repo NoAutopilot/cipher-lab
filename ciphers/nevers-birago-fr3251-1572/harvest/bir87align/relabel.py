@@ -10,9 +10,21 @@ Counts -> relabel_counts.json."""
 import csv, json, shutil
 from collections import Counter
 from pathlib import Path
+import sys
 D = Path(__file__).resolve().parent; T = D.parents[1]; HV = T / 'harvest'
 rd = lambda p: list(csv.DictReader(open(p), delimiter='\t'))
-bt = {r['sid']: r for r in rd(T / 'atlas/no87_box_token.tsv')}
+# --map FILE --dir DIR (BOXMAP-RESCORE, 11 Oct 2026): join tiles to tokens through FILE (sid fol line pos op; e.g. the label-aware
+# atlas/no87_box_token_labelaware.tsv) and write cipher_owner/, cipher_moved/ and relabel_counts.json into DIR; without them the
+# run is the committed one. A map with one row per token of a 1:2 box keeps that box's first row (as the old map listed it).
+A_ = sys.argv[1:]
+MAPF = Path(A_[A_.index('--map') + 1]) if '--map' in A_ else T / 'atlas/no87_box_token.tsv'
+if ('--map' in A_) != ('--dir' in A_):
+    sys.exit('relabel: --map and --dir go together')
+if '--dir' in A_:
+    D = Path(A_[A_.index('--dir') + 1]).resolve(); D.mkdir(parents=True, exist_ok=True)
+bt = {}
+for r in rd(MAPF):
+    bt.setdefault(r['sid'], r)
 st = rd(T / 'sorter/no87/owner-sort-2026-10-04/settled_no87.tsv')
 cnt = {}
 for name, ok in (('cipher_owner', ('kept', 'moved', 'not-letter')), ('cipher_moved', ('moved', 'not-letter'))):

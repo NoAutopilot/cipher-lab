@@ -1,0 +1,10 @@
+gate dev_tune: 343 scored positions; L wrong 12, A wrong 21
+| label | flagged | % of positions | L wrong held | L precision | L recall | A wrong held | A precision | A recall |
+|---|---|---|---|---|---|---|---|---|
+| joined | 7 | 2.0 | 0 | 0.000 | 0.000 | 0 | 0.000 | 0.000 |
+| bad-crop | 59 | 17.2 | 5 | 0.085 | 0.417 | 5 | 0.085 | 0.238 |
+| blot | 0 | 0.0 | 0 | - | 0.000 | 0 | - | 0.000 |
+| good | 277 | 80.8 | 7 | 0.025 | 0.583 | 16 | 0.058 | 0.762 |
+| non-good | 66 | 19.2 | 5 | 0.076 | 0.417 | 5 | 0.076 | 0.238 |
+| no box | 0 | 0.0 | 0 | - | 0.000 | 0 | - | 0.000 |
+registered gate (non-good hold >= 50% of L wrong at <= 15% flagged): recall 0.417, flagged 0.192 -> NOT MET

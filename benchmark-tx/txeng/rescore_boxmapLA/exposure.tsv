@@ -1,0 +1,19 @@
+exp	file	unit	changed	changed_shifted	fixed	fixed_shifted	broken	broken_shifted	both_wrong	both_right	unscored
+TXE-A compare	passG_compare_dev_tune.tsv	dev_tune	48	36	4	1	16	10	2	24	2
+TXE-A M1b H_all	passG_compare_dev_tune_m1b_H_all.tsv	dev_tune	30	26	2	0	12	11	2	13	1
+TXE-A M1b H_top1	passG_compare_dev_tune_m1b_H_top1.tsv	dev_tune	30	26	2	0	12	11	2	13	1
+TXE-A M1b any_top1	passG_compare_dev_tune_m1b_any_top1.tsv	dev_tune	45	36	4	1	14	10	1	24	2
+TXE-S library	passG2_library_dev_tune.tsv	dev_tune	23	19	0	0	7	6	1	15	0
+TXE-S library r1	passG2_library_dev_tune_r1.tsv	dev_tune	25	19	1	0	7	6	2	15	0
+TXE-S library r2	passG2_library_dev_tune_r2.tsv	dev_tune	25	19	0	0	8	6	2	15	0
+TXE-L ordered	passT_ordered_dev.tsv	dev_tune	38	25	2	1	10	3	1	23	2
+TXE-L shuffled	passT_shuffled_dev.tsv	dev_tune	36	26	2	1	7	3	1	24	2
+TXE-K adjud fable	passS_adj_fable_dev_tune.tsv	dev_tune	19	5	0	0	1	1	2	13	3
+TXE-K adjud opus	passS_adj_opus_dev_tune.tsv	dev_tune	7	3	0	0	1	1	1	3	2
+TXE-C pair re-read	passJ_pair_dev_tune.tsv	dev_tune	2	0	1	0	1	0	0	0	0
+TXE-J stab	passR_stab_dev_tune.tsv	dev_tune	16	4	1	1	4	0	0	7	4
+TXE-D prep sr4	passK2_sr4_dev_tune.tsv	dev_tune	48	6	3	1	11	0	3	25	6
+TXE2-CELLS real	passX13_real_dev_tune.tsv	dev_tune	19	2	2	0	14	2	1	2	0
+TXE2-SAME X7	../../txeng2/same/passX7_dev_tune.tsv	dev_tune	12	1	5	0	4	1	1	0	2
+TXE2-SAME X7 swap ctrl	../../txeng2/same/passX7swap_dev_tune.tsv	dev_tune	35	1	3	0	28	1	2	0	2
+TXE2-LATT word LOO	../../txeng2/latt/out/word_loo.tsv	dev_tune	20	4	4	1	5	0	1	6	4

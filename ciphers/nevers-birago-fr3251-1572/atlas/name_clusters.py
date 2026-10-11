@@ -20,8 +20,17 @@ def value_map():
 
 
 def main():
+    # --map FILE --out DIR (BOXMAP-RESCORE, 11 Oct 2026): name from FILE (old columns, with truth: no87_map.py --compat OUT) and
+    # write labels.json / cluster_names.tsv into DIR; without them the run is the committed one (atlas/labels.json).
+    import sys
+    a = sys.argv[1:]
+    mapf = a[a.index('--map') + 1] if '--map' in a else os.path.join(R, 'no87_box_token.tsv')
+    od = a[a.index('--out') + 1] if '--out' in a else R
+    if ('--map' in a) != ('--out' in a):
+        sys.exit('name_clusters: --map and --out go together (never overwrite atlas/labels.json from another map)')
+    os.makedirs(od, exist_ok=True)
     V = value_map()
-    M = list(csv.DictReader(open(os.path.join(R, 'no87_box_token.tsv')), delimiter='\t'))
+    M = list(csv.DictReader(open(mapf), delimiter='\t'))
     cl = {r['id']: r['cluster'] for r in csv.DictReader(open(os.path.join(R, 'clusters.tsv')), delimiter='\t') if r['kind'] == 'sign'}
     size = collections.Counter(cl.values())
     over, votes = {}, collections.defaultdict(collections.Counter)
@@ -44,8 +53,8 @@ def main():
             names[c] = '_'; src = 'unnamed'
         rows.append((c, size[c], names[c], src, ' '.join(f'{k}:{n}' for k, n in (v or {}).items())))
     json.dump({'signs': names, 'marks': {}, 'override': over,
-               'desc': {'_': 'not a cipher sign or not yet named'}}, open(os.path.join(R, 'labels.json'), 'w'), indent=0)
-    with open(os.path.join(R, 'cluster_names.tsv'), 'w') as f:
+               'desc': {'_': 'not a cipher sign or not yet named'}}, open(os.path.join(od, 'labels.json'), 'w'), indent=0)
+    with open(os.path.join(od, 'cluster_names.tsv'), 'w') as f:
         f.write('cluster\tsize\tcode\tsource\tverified_votes\n')
         for r in rows: f.write('\t'.join(map(str, r)) + '\n')
     src = collections.Counter(r[3].split()[0] for r in rows)

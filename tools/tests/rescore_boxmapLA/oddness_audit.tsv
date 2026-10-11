@@ -1,0 +1,12 @@
+old	mean	random	{"kind": "random", "variant": "mean", "tiles": 622, "piles": 35, "planted_per_seed": 31, "eligible": 622, "mean_recall": 0.498, "seeds_above_p95": 20, "seeds_recall_ge_0.6_and_above_p95": 1}
+old	mean	lookalike	{"kind": "lookalike", "variant": "mean", "tiles": 622, "piles": 35, "planted_per_seed": 31, "eligible": 366, "mean_recall": 0.282, "seeds_above_p95": 16, "seeds_recall_ge_0.6_and_above_p95": 0}
+old	medoid	random	{"kind": "random", "variant": "medoid", "tiles": 622, "piles": 35, "planted_per_seed": 31, "eligible": 622, "mean_recall": 0.497, "seeds_above_p95": 20, "seeds_recall_ge_0.6_and_above_p95": 1}
+old	medoid	lookalike	{"kind": "lookalike", "variant": "medoid", "tiles": 622, "piles": 35, "planted_per_seed": 31, "eligible": 366, "mean_recall": 0.26, "seeds_above_p95": 14, "seeds_recall_ge_0.6_and_above_p95": 0}
+old	knn3	random	{"kind": "random", "variant": "knn3", "tiles": 622, "piles": 35, "planted_per_seed": 31, "eligible": 622, "mean_recall": 0.494, "seeds_above_p95": 20, "seeds_recall_ge_0.6_and_above_p95": 2}
+old	knn3	lookalike	{"kind": "lookalike", "variant": "knn3", "tiles": 622, "piles": 35, "planted_per_seed": 31, "eligible": 366, "mean_recall": 0.271, "seeds_above_p95": 14, "seeds_recall_ge_0.6_and_above_p95": 0}
+new	mean	random	{"kind": "random", "variant": "mean", "tiles": 615, "piles": 37, "planted_per_seed": 31, "eligible": 615, "mean_recall": 0.787, "seeds_above_p95": 20, "seeds_recall_ge_0.6_and_above_p95": 20}
+new	mean	lookalike	{"kind": "lookalike", "variant": "mean", "tiles": 615, "piles": 37, "planted_per_seed": 31, "eligible": 367, "mean_recall": 0.505, "seeds_above_p95": 20, "seeds_recall_ge_0.6_and_above_p95": 3}
+new	medoid	random	{"kind": "random", "variant": "medoid", "tiles": 615, "piles": 37, "planted_per_seed": 31, "eligible": 615, "mean_recall": 0.766, "seeds_above_p95": 20, "seeds_recall_ge_0.6_and_above_p95": 20}
+new	medoid	lookalike	{"kind": "lookalike", "variant": "medoid", "tiles": 615, "piles": 37, "planted_per_seed": 31, "eligible": 367, "mean_recall": 0.485, "seeds_above_p95": 20, "seeds_recall_ge_0.6_and_above_p95": 1}
+new	knn3	random	{"kind": "random", "variant": "knn3", "tiles": 615, "piles": 37, "planted_per_seed": 31, "eligible": 615, "mean_recall": 0.8, "seeds_above_p95": 20, "seeds_recall_ge_0.6_and_above_p95": 20}
+new	knn3	lookalike	{"kind": "lookalike", "variant": "knn3", "tiles": 615, "piles": 37, "planted_per_seed": 31, "eligible": 367, "mean_recall": 0.514, "seeds_above_p95": 20, "seeds_recall_ge_0.6_and_above_p95": 4}

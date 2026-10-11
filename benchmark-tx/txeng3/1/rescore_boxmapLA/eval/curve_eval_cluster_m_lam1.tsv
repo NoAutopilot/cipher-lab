@@ -1,0 +1,1416 @@
+# tools/tx_sorter_curve.py: truth=benchmark-tx/birago1572-no87.truth.tsv base=benchmark-tx/outputs/birago1572-no87/passC.tsv lines=['benchmark-tx/txeng/units/labels_eval_heldout.tsv'] propagation=cluster exclude_flagged=False
+ordering	k	err_true	wrong	scored	fixed	broken	err_lo	err_hi
+a_doubt	0	0.0399	15	376	0	0		
+a_doubt	1	0.0239	9	376	6	0		
+a_doubt	2	0.0239	9	376	6	0		
+a_doubt	3	0.0239	9	376	6	0		
+a_doubt	4	0.0239	9	376	6	0		
+a_doubt	5	0.0239	9	376	6	0		
+a_doubt	6	0.0239	9	376	6	0		
+a_doubt	7	0.0239	9	376	6	0		
+a_doubt	8	0.0239	9	376	6	0		
+a_doubt	9	0.0239	9	376	6	0		
+a_doubt	10	0.0239	9	376	6	0		
+a_doubt	11	0.0239	9	376	6	0		
+a_doubt	12	0.0239	9	376	6	0		
+a_doubt	13	0.0239	9	376	6	0		
+a_doubt	14	0.0239	9	376	6	0		
+a_doubt	15	0.0239	9	376	6	0		
+a_doubt	16	0.0239	9	376	6	0		
+a_doubt	17	0.0239	9	376	6	0		
+a_doubt	18	0.0239	9	376	6	0		
+a_doubt	19	0.0239	9	376	6	0		
+a_doubt	20	0.0239	9	376	7	1		
+a_doubt	21	0.0213	8	376	8	1		
+a_doubt	22	0.0213	8	376	8	1		
+a_doubt	23	0.0213	8	376	8	1		
+a_doubt	24	0.0213	8	376	8	1		
+a_doubt	25	0.0239	9	376	9	3		
+a_doubt	26	0.0239	9	376	9	3		
+a_doubt	27	0.0239	9	376	9	3		
+a_doubt	28	0.0319	12	376	9	6		
+a_doubt	29	0.0319	12	376	9	6		
+a_doubt	30	0.0319	12	376	9	6		
+a_doubt	31	0.0346	13	376	9	7		
+a_doubt	32	0.0346	13	376	9	7		
+a_doubt	33	0.0346	13	376	9	7		
+a_doubt	34	0.0346	13	376	9	7		
+a_doubt	35	0.0346	13	376	9	7		
+a_doubt	36	0.0346	13	376	9	7		
+a_doubt	37	0.0346	13	376	9	7		
+a_doubt	38	0.0346	13	376	9	7		
+a_doubt	39	0.0346	13	376	9	7		
+a_doubt	40	0.0346	13	376	9	7		
+a_doubt	41	0.0346	13	376	9	7		
+a_doubt	42	0.0346	13	376	9	7		
+a_doubt	43	0.0346	13	376	9	7		
+a_doubt	44	0.0346	13	376	9	7		
+a_doubt	45	0.0346	13	376	9	7		
+a_doubt	46	0.0346	13	376	9	7		
+a_doubt	47	0.0293	11	376	11	7		
+a_doubt	48	0.0293	11	376	11	7		
+a_doubt	49	0.0293	11	376	11	7		
+a_doubt	50	0.0293	11	376	11	7		
+a_doubt	51	0.0319	12	376	12	9		
+a_doubt	52	0.0319	12	376	12	9		
+a_doubt	53	0.0319	12	376	12	9		
+a_doubt	54	0.0319	12	376	12	9		
+a_doubt	55	0.0319	12	376	12	9		
+a_doubt	56	0.0319	12	376	12	9		
+a_doubt	57	0.0319	12	376	12	9		
+a_doubt	58	0.0319	12	376	12	9		
+a_doubt	59	0.0319	12	376	12	9		
+a_doubt	60	0.0319	12	376	12	9		
+a_doubt	61	0.0319	12	376	12	9		
+a_doubt	62	0.0319	12	376	12	9		
+a_doubt	63	0.0319	12	376	12	9		
+a_doubt	64	0.0319	12	376	12	9		
+a_doubt	65	0.0319	12	376	12	9		
+a_doubt	66	0.0319	12	376	12	9		
+a_doubt	67	0.0319	12	376	12	9		
+a_doubt	68	0.0319	12	376	12	9		
+a_doubt	69	0.0319	12	376	12	9		
+a_doubt	70	0.0319	12	376	12	9		
+a_doubt	71	0.0319	12	376	12	9		
+a_doubt	72	0.0319	12	376	12	9		
+a_doubt	73	0.0319	12	376	12	9		
+a_doubt	74	0.0319	12	376	12	9		
+a_doubt	75	0.0319	12	376	12	9		
+a_doubt	76	0.0319	12	376	12	9		
+a_doubt	77	0.0293	11	376	12	8		
+a_doubt	78	0.0293	11	376	12	8		
+a_doubt	79	0.0293	11	376	12	8		
+a_doubt	80	0.0293	11	376	12	8		
+a_doubt	81	0.0293	11	376	12	8		
+a_doubt	82	0.0293	11	376	12	8		
+a_doubt	83	0.0293	11	376	12	8		
+a_doubt	84	0.0293	11	376	12	8		
+a_doubt	85	0.0293	11	376	12	8		
+a_doubt	86	0.0346	13	376	12	10		
+a_doubt	87	0.0346	13	376	12	10		
+a_doubt	88	0.0346	13	376	12	10		
+a_doubt	89	0.0319	12	376	12	9		
+a_doubt	90	0.0319	12	376	12	9		
+a_doubt	91	0.0319	12	376	12	9		
+a_doubt	92	0.0319	12	376	12	9		
+a_doubt	93	0.0319	12	376	12	9		
+a_doubt	94	0.0319	12	376	12	9		
+a_doubt	95	0.0319	12	376	12	9		
+a_doubt	96	0.0319	12	376	12	9		
+a_doubt	97	0.0319	12	376	12	9		
+a_doubt	98	0.0319	12	376	12	9		
+a_doubt	99	0.0319	12	376	12	9		
+a_doubt	100	0.0319	12	376	12	9		
+a_doubt	101	0.0319	12	376	12	9		
+a_doubt	102	0.0319	12	376	12	9		
+a_doubt	103	0.0319	12	376	12	9		
+a_doubt	104	0.0319	12	376	12	9		
+a_doubt	105	0.0319	12	376	12	9		
+a_doubt	106	0.0319	12	376	12	9		
+a_doubt	107	0.0319	12	376	12	9		
+a_doubt	108	0.0319	12	376	12	9		
+a_doubt	109	0.0319	12	376	12	9		
+a_doubt	110	0.0319	12	376	12	9		
+a_doubt	111	0.0319	12	376	12	9		
+a_doubt	112	0.0293	11	376	12	8		
+a_doubt	113	0.0266	10	376	12	7		
+a_doubt	114	0.0266	10	376	12	7		
+a_doubt	115	0.0266	10	376	12	7		
+a_doubt	116	0.0266	10	376	12	7		
+a_doubt	117	0.0239	9	376	12	6		
+a_doubt	118	0.0239	9	376	12	6		
+a_doubt	119	0.0239	9	376	12	6		
+a_doubt	120	0.0239	9	376	12	6		
+a_doubt	121	0.0239	9	376	12	6		
+a_doubt	122	0.0239	9	376	12	6		
+a_doubt	123	0.0239	9	376	12	6		
+a_doubt	124	0.0239	9	376	12	6		
+a_doubt	125	0.0239	9	376	12	6		
+a_doubt	126	0.0213	8	376	12	5		
+a_doubt	127	0.0186	7	376	12	4		
+a_doubt	128	0.0186	7	376	12	4		
+a_doubt	129	0.0186	7	376	12	4		
+a_doubt	130	0.0186	7	376	12	4		
+a_doubt	131	0.0186	7	376	12	4		
+a_doubt	132	0.0186	7	376	12	4		
+a_doubt	133	0.0186	7	376	12	4		
+a_doubt	134	0.0186	7	376	12	4		
+a_doubt	135	0.0186	7	376	12	4		
+a_doubt	136	0.0186	7	376	12	4		
+a_doubt	137	0.0186	7	376	12	4		
+a_doubt	138	0.0186	7	376	12	4		
+a_doubt	139	0.0186	7	376	12	4		
+a_doubt	140	0.0186	7	376	12	4		
+a_doubt	141	0.0186	7	376	12	4		
+a_doubt	142	0.0160	6	376	13	4		
+a_doubt	143	0.0160	6	376	13	4		
+a_doubt	144	0.0160	6	376	13	4		
+a_doubt	145	0.0133	5	376	14	4		
+a_doubt	146	0.0133	5	376	14	4		
+a_doubt	147	0.0133	5	376	14	4		
+a_doubt	148	0.0239	9	376	14	8		
+a_doubt	149	0.0239	9	376	14	8		
+a_doubt	150	0.0239	9	376	14	8		
+a_doubt	151	0.0239	9	376	14	8		
+a_doubt	152	0.0239	9	376	14	8		
+a_doubt	153	0.0239	9	376	14	8		
+a_doubt	154	0.0239	9	376	14	8		
+a_doubt	155	0.0239	9	376	14	8		
+a_doubt	156	0.0239	9	376	14	8		
+a_doubt	157	0.0239	9	376	14	8		
+a_doubt	158	0.0239	9	376	14	8		
+a_doubt	159	0.0239	9	376	14	8		
+a_doubt	160	0.0239	9	376	14	8		
+a_doubt	161	0.0239	9	376	14	8		
+a_doubt	162	0.0239	9	376	14	8		
+a_doubt	163	0.0239	9	376	14	8		
+a_doubt	164	0.0239	9	376	14	8		
+a_doubt	165	0.0239	9	376	14	8		
+a_doubt	166	0.0239	9	376	14	8		
+a_doubt	167	0.0239	9	376	14	8		
+a_doubt	168	0.0239	9	376	14	8		
+a_doubt	169	0.0239	9	376	14	8		
+a_doubt	170	0.0213	8	376	15	8		
+a_doubt	171	0.0213	8	376	15	8		
+a_doubt	172	0.0213	8	376	15	8		
+a_doubt	173	0.0213	8	376	15	8		
+a_doubt	174	0.0213	8	376	15	8		
+a_doubt	175	0.0213	8	376	15	8		
+a_doubt	176	0.0213	8	376	15	8		
+a_doubt	177	0.0213	8	376	15	8		
+a_doubt	178	0.0213	8	376	15	8		
+a_doubt	179	0.0213	8	376	15	8		
+a_doubt	180	0.0213	8	376	15	8		
+a_doubt	181	0.0213	8	376	15	8		
+a_doubt	182	0.0213	8	376	15	8		
+a_doubt	183	0.0213	8	376	15	8		
+a_doubt	184	0.0213	8	376	15	8		
+a_doubt	185	0.0213	8	376	15	8		
+a_doubt	186	0.0213	8	376	15	8		
+a_doubt	187	0.0213	8	376	15	8		
+a_doubt	188	0.0213	8	376	15	8		
+a_doubt	189	0.0213	8	376	15	8		
+a_doubt	190	0.0213	8	376	15	8		
+a_doubt	191	0.0213	8	376	15	8		
+a_doubt	192	0.0213	8	376	15	8		
+a_doubt	193	0.0213	8	376	15	8		
+a_doubt	194	0.0213	8	376	15	8		
+a_doubt	195	0.0213	8	376	15	8		
+a_doubt	196	0.0213	8	376	15	8		
+a_doubt	197	0.0213	8	376	15	8		
+a_doubt	198	0.0213	8	376	15	8		
+a_doubt	199	0.0213	8	376	15	8		
+a_doubt	200	0.0213	8	376	15	8		
+disagree	0	0.0399	15	376	0	0		
+disagree	1	0.0372	14	376	1	0		
+disagree	2	0.0213	8	376	7	0		
+disagree	3	0.0293	11	376	7	3		
+disagree	4	0.0293	11	376	7	3		
+disagree	5	0.0293	11	376	7	3		
+disagree	6	0.0293	11	376	7	3		
+disagree	7	0.0293	11	376	7	3		
+disagree	8	0.0293	11	376	7	3		
+disagree	9	0.0293	11	376	7	3		
+disagree	10	0.0266	10	376	8	3		
+disagree	11	0.0266	10	376	8	3		
+disagree	12	0.0266	10	376	8	3		
+disagree	13	0.0266	10	376	8	3		
+disagree	14	0.0266	10	376	8	3		
+disagree	15	0.0266	10	376	8	3		
+disagree	16	0.0239	9	376	9	3		
+disagree	17	0.0239	9	376	9	3		
+disagree	18	0.0239	9	376	9	3		
+disagree	19	0.0239	9	376	9	3		
+disagree	20	0.0239	9	376	9	3		
+disagree	21	0.0239	9	376	9	3		
+disagree	22	0.0239	9	376	9	3		
+disagree	23	0.0239	9	376	9	3		
+disagree	24	0.0239	9	376	9	3		
+disagree	25	0.0239	9	376	9	3		
+disagree	26	0.0213	8	376	10	3		
+disagree	27	0.0266	10	376	10	5		
+disagree	28	0.0266	10	376	10	5		
+disagree	29	0.0266	10	376	10	5		
+disagree	30	0.0266	10	376	10	5		
+disagree	31	0.0266	10	376	10	5		
+disagree	32	0.0266	10	376	10	5		
+disagree	33	0.0372	14	376	10	9		
+disagree	34	0.0372	14	376	10	9		
+disagree	35	0.0372	14	376	10	9		
+disagree	36	0.0372	14	376	10	9		
+disagree	37	0.0372	14	376	10	9		
+disagree	38	0.0372	14	376	10	9		
+disagree	39	0.0372	14	376	10	9		
+disagree	40	0.0372	14	376	10	9		
+disagree	41	0.0372	14	376	10	9		
+disagree	42	0.0372	14	376	10	9		
+disagree	43	0.0372	14	376	10	9		
+disagree	44	0.0372	14	376	10	9		
+disagree	45	0.0372	14	376	10	9		
+disagree	46	0.0372	14	376	10	9		
+disagree	47	0.0372	14	376	10	9		
+disagree	48	0.0372	14	376	10	9		
+disagree	49	0.0372	14	376	10	9		
+disagree	50	0.0372	14	376	10	9		
+disagree	51	0.0372	14	376	10	9		
+disagree	52	0.0372	14	376	10	9		
+disagree	53	0.0372	14	376	10	9		
+disagree	54	0.0372	14	376	10	9		
+disagree	55	0.0372	14	376	10	9		
+disagree	56	0.0372	14	376	10	9		
+disagree	57	0.0372	14	376	10	9		
+disagree	58	0.0372	14	376	10	9		
+disagree	59	0.0372	14	376	10	9		
+disagree	60	0.0372	14	376	10	9		
+disagree	61	0.0372	14	376	10	9		
+disagree	62	0.0372	14	376	10	9		
+disagree	63	0.0372	14	376	10	9		
+disagree	64	0.0372	14	376	10	9		
+disagree	65	0.0372	14	376	10	9		
+disagree	66	0.0319	12	376	12	9		
+disagree	67	0.0319	12	376	12	9		
+disagree	68	0.0319	12	376	12	9		
+disagree	69	0.0319	12	376	12	9		
+disagree	70	0.0319	12	376	12	9		
+disagree	71	0.0319	12	376	12	9		
+disagree	72	0.0319	12	376	12	9		
+disagree	73	0.0319	12	376	12	9		
+disagree	74	0.0319	12	376	12	9		
+disagree	75	0.0319	12	376	12	9		
+disagree	76	0.0319	12	376	12	9		
+disagree	77	0.0319	12	376	12	9		
+disagree	78	0.0346	13	376	12	10		
+disagree	79	0.0346	13	376	12	10		
+disagree	80	0.0346	13	376	12	10		
+disagree	81	0.0346	13	376	12	10		
+disagree	82	0.0319	12	376	12	9		
+disagree	83	0.0319	12	376	12	9		
+disagree	84	0.0319	12	376	12	9		
+disagree	85	0.0319	12	376	12	9		
+disagree	86	0.0319	12	376	12	9		
+disagree	87	0.0319	12	376	12	9		
+disagree	88	0.0319	12	376	12	9		
+disagree	89	0.0319	12	376	12	9		
+disagree	90	0.0319	12	376	12	9		
+disagree	91	0.0319	12	376	12	9		
+disagree	92	0.0319	12	376	12	9		
+disagree	93	0.0293	11	376	13	9		
+disagree	94	0.0293	11	376	13	9		
+disagree	95	0.0293	11	376	13	9		
+disagree	96	0.0293	11	376	13	9		
+disagree	97	0.0293	11	376	13	9		
+disagree	98	0.0293	11	376	13	9		
+disagree	99	0.0293	11	376	13	9		
+disagree	100	0.0293	11	376	13	9		
+disagree	101	0.0293	11	376	13	9		
+disagree	102	0.0293	11	376	13	9		
+disagree	103	0.0293	11	376	13	9		
+disagree	104	0.0293	11	376	13	9		
+disagree	105	0.0293	11	376	13	9		
+disagree	106	0.0293	11	376	13	9		
+disagree	107	0.0293	11	376	13	9		
+disagree	108	0.0293	11	376	13	9		
+disagree	109	0.0293	11	376	13	9		
+disagree	110	0.0293	11	376	13	9		
+disagree	111	0.0293	11	376	13	9		
+disagree	112	0.0293	11	376	13	9		
+disagree	113	0.0293	11	376	13	9		
+disagree	114	0.0293	11	376	13	9		
+disagree	115	0.0293	11	376	13	9		
+disagree	116	0.0293	11	376	13	9		
+disagree	117	0.0293	11	376	13	9		
+disagree	118	0.0293	11	376	13	9		
+disagree	119	0.0293	11	376	13	9		
+disagree	120	0.0293	11	376	13	9		
+disagree	121	0.0293	11	376	13	9		
+disagree	122	0.0293	11	376	13	9		
+disagree	123	0.0293	11	376	13	9		
+disagree	124	0.0293	11	376	13	9		
+disagree	125	0.0293	11	376	13	9		
+disagree	126	0.0293	11	376	13	9		
+disagree	127	0.0293	11	376	13	9		
+disagree	128	0.0293	11	376	13	9		
+disagree	129	0.0266	10	376	13	8		
+disagree	130	0.0266	10	376	13	8		
+disagree	131	0.0266	10	376	13	8		
+disagree	132	0.0266	10	376	13	8		
+disagree	133	0.0266	10	376	13	8		
+disagree	134	0.0266	10	376	13	8		
+disagree	135	0.0266	10	376	13	8		
+disagree	136	0.0266	10	376	13	8		
+disagree	137	0.0266	10	376	13	8		
+disagree	138	0.0266	10	376	13	8		
+disagree	139	0.0266	10	376	13	8		
+disagree	140	0.0266	10	376	13	8		
+disagree	141	0.0266	10	376	13	8		
+disagree	142	0.0266	10	376	13	8		
+disagree	143	0.0266	10	376	13	8		
+disagree	144	0.0266	10	376	13	8		
+disagree	145	0.0266	10	376	13	8		
+disagree	146	0.0266	10	376	13	8		
+disagree	147	0.0266	10	376	13	8		
+disagree	148	0.0266	10	376	13	8		
+disagree	149	0.0266	10	376	13	8		
+disagree	150	0.0239	9	376	13	7		
+disagree	151	0.0239	9	376	13	7		
+disagree	152	0.0239	9	376	13	7		
+disagree	153	0.0239	9	376	13	7		
+disagree	154	0.0239	9	376	13	7		
+disagree	155	0.0239	9	376	13	7		
+disagree	156	0.0239	9	376	13	7		
+disagree	157	0.0239	9	376	13	7		
+disagree	158	0.0239	9	376	13	7		
+disagree	159	0.0239	9	376	13	7		
+disagree	160	0.0239	9	376	13	7		
+disagree	161	0.0239	9	376	13	7		
+disagree	162	0.0239	9	376	13	7		
+disagree	163	0.0239	9	376	13	7		
+disagree	164	0.0239	9	376	13	7		
+disagree	165	0.0239	9	376	13	7		
+disagree	166	0.0239	9	376	13	7		
+disagree	167	0.0213	8	376	13	6		
+disagree	168	0.0213	8	376	13	6		
+disagree	169	0.0213	8	376	13	6		
+disagree	170	0.0213	8	376	13	6		
+disagree	171	0.0213	8	376	13	6		
+disagree	172	0.0213	8	376	13	6		
+disagree	173	0.0213	8	376	13	6		
+disagree	174	0.0213	8	376	13	6		
+disagree	175	0.0213	8	376	13	6		
+disagree	176	0.0213	8	376	13	6		
+disagree	177	0.0213	8	376	13	6		
+disagree	178	0.0213	8	376	13	6		
+disagree	179	0.0213	8	376	13	6		
+disagree	180	0.0213	8	376	13	6		
+disagree	181	0.0213	8	376	13	6		
+disagree	182	0.0213	8	376	13	6		
+disagree	183	0.0213	8	376	13	6		
+disagree	184	0.0213	8	376	13	6		
+disagree	185	0.0213	8	376	13	6		
+disagree	186	0.0213	8	376	13	6		
+disagree	187	0.0213	8	376	13	6		
+disagree	188	0.0213	8	376	13	6		
+disagree	189	0.0213	8	376	13	6		
+disagree	190	0.0213	8	376	13	6		
+disagree	191	0.0213	8	376	13	6		
+disagree	192	0.0213	8	376	13	6		
+disagree	193	0.0213	8	376	13	6		
+disagree	194	0.0213	8	376	13	6		
+disagree	195	0.0213	8	376	13	6		
+disagree	196	0.0213	8	376	13	6		
+disagree	197	0.0213	8	376	13	6		
+disagree	198	0.0213	8	376	13	6		
+disagree	199	0.0213	8	376	13	6		
+disagree	200	0.0213	8	376	13	6		
+margin	0	0.0399	15	376	0	0		
+margin	1	0.0399	15	376	0	0		
+margin	2	0.0612	23	376	0	8		
+margin	3	0.0612	23	376	0	8		
+margin	4	0.0612	23	376	0	8		
+margin	5	0.0612	23	376	0	8		
+margin	6	0.0612	23	376	0	8		
+margin	7	0.0612	23	376	0	8		
+margin	8	0.0612	23	376	0	8		
+margin	9	0.0612	23	376	0	8		
+margin	10	0.0612	23	376	0	8		
+margin	11	0.0824	31	376	0	16		
+margin	12	0.0798	30	376	0	15		
+margin	13	0.0638	24	376	6	15		
+margin	14	0.0638	24	376	6	15		
+margin	15	0.0638	24	376	6	15		
+margin	16	0.0638	24	376	6	15		
+margin	17	0.0638	24	376	6	15		
+margin	18	0.0638	24	376	6	15		
+margin	19	0.0638	24	376	6	15		
+margin	20	0.0638	24	376	6	15		
+margin	21	0.0638	24	376	6	15		
+margin	22	0.0638	24	376	6	15		
+margin	23	0.0638	24	376	6	15		
+margin	24	0.0638	24	376	6	15		
+margin	25	0.0638	24	376	6	15		
+margin	26	0.0638	24	376	6	15		
+margin	27	0.0638	24	376	6	15		
+margin	28	0.0638	24	376	6	15		
+margin	29	0.0638	24	376	6	15		
+margin	30	0.0638	24	376	6	15		
+margin	31	0.0638	24	376	6	15		
+margin	32	0.0638	24	376	6	15		
+margin	33	0.0638	24	376	6	15		
+margin	34	0.0638	24	376	6	15		
+margin	35	0.0638	24	376	6	15		
+margin	36	0.0638	24	376	6	15		
+margin	37	0.0665	25	376	7	17		
+margin	38	0.0665	25	376	7	17		
+margin	39	0.0665	25	376	7	17		
+margin	40	0.0665	25	376	7	17		
+margin	41	0.0665	25	376	7	17		
+margin	42	0.0665	25	376	7	17		
+margin	43	0.0665	25	376	7	17		
+margin	44	0.0665	25	376	7	17		
+margin	45	0.0665	25	376	7	17		
+margin	46	0.0665	25	376	7	17		
+margin	47	0.0665	25	376	7	17		
+margin	48	0.0665	25	376	7	17		
+margin	49	0.0665	25	376	7	17		
+margin	50	0.0665	25	376	7	17		
+margin	51	0.0638	24	376	8	17		
+margin	52	0.0638	24	376	8	17		
+margin	53	0.0638	24	376	8	17		
+margin	54	0.0638	24	376	8	17		
+margin	55	0.0718	27	376	8	20		
+margin	56	0.0718	27	376	8	20		
+margin	57	0.0718	27	376	8	20		
+margin	58	0.0718	27	376	8	20		
+margin	59	0.0718	27	376	8	20		
+margin	60	0.0718	27	376	8	20		
+margin	61	0.0718	27	376	8	20		
+margin	62	0.0691	26	376	8	19		
+margin	63	0.0691	26	376	8	19		
+margin	64	0.0691	26	376	8	19		
+margin	65	0.0691	26	376	8	19		
+margin	66	0.0691	26	376	8	19		
+margin	67	0.0691	26	376	8	19		
+margin	68	0.0691	26	376	8	19		
+margin	69	0.0798	30	376	8	23		
+margin	70	0.0798	30	376	9	24		
+margin	71	0.0798	30	376	9	24		
+margin	72	0.0798	30	376	9	24		
+margin	73	0.0798	30	376	9	24		
+margin	74	0.0798	30	376	9	24		
+margin	75	0.0798	30	376	9	24		
+margin	76	0.0798	30	376	9	24		
+margin	77	0.0798	30	376	9	24		
+margin	78	0.0798	30	376	9	24		
+margin	79	0.0798	30	376	9	24		
+margin	80	0.0771	29	376	9	23		
+margin	81	0.0771	29	376	9	23		
+margin	82	0.0771	29	376	9	23		
+margin	83	0.0771	29	376	9	23		
+margin	84	0.0771	29	376	9	23		
+margin	85	0.0745	28	376	9	22		
+margin	86	0.0745	28	376	9	22		
+margin	87	0.0745	28	376	9	22		
+margin	88	0.0745	28	376	9	22		
+margin	89	0.0745	28	376	9	22		
+margin	90	0.0745	28	376	9	22		
+margin	91	0.0718	27	376	9	21		
+margin	92	0.0718	27	376	9	21		
+margin	93	0.0718	27	376	9	21		
+margin	94	0.0691	26	376	9	20		
+margin	95	0.0691	26	376	9	20		
+margin	96	0.0691	26	376	9	20		
+margin	97	0.0691	26	376	9	20		
+margin	98	0.0638	24	376	11	20		
+margin	99	0.0638	24	376	11	20		
+margin	100	0.0638	24	376	11	20		
+margin	101	0.0638	24	376	11	20		
+margin	102	0.0638	24	376	11	20		
+margin	103	0.0638	24	376	11	20		
+margin	104	0.0638	24	376	11	20		
+margin	105	0.0638	24	376	11	20		
+margin	106	0.0638	24	376	11	20		
+margin	107	0.0638	24	376	11	20		
+margin	108	0.0638	24	376	11	20		
+margin	109	0.0638	24	376	11	20		
+margin	110	0.0638	24	376	11	20		
+margin	111	0.0638	24	376	11	20		
+margin	112	0.0638	24	376	11	20		
+margin	113	0.0612	23	376	11	19		
+margin	114	0.0612	23	376	11	19		
+margin	115	0.0612	23	376	11	19		
+margin	116	0.0612	23	376	11	19		
+margin	117	0.0612	23	376	11	19		
+margin	118	0.0612	23	376	11	19		
+margin	119	0.0612	23	376	11	19		
+margin	120	0.0612	23	376	11	19		
+margin	121	0.0612	23	376	11	19		
+margin	122	0.0612	23	376	11	19		
+margin	123	0.0612	23	376	11	19		
+margin	124	0.0612	23	376	11	19		
+margin	125	0.0612	23	376	11	19		
+margin	126	0.0612	23	376	11	19		
+margin	127	0.0612	23	376	11	19		
+margin	128	0.0612	23	376	11	19		
+margin	129	0.0612	23	376	11	19		
+margin	130	0.0585	22	376	11	18		
+margin	131	0.0585	22	376	11	18		
+margin	132	0.0585	22	376	11	18		
+margin	133	0.0585	22	376	11	18		
+margin	134	0.0585	22	376	11	18		
+margin	135	0.0585	22	376	11	18		
+margin	136	0.0585	22	376	11	18		
+margin	137	0.0585	22	376	11	18		
+margin	138	0.0585	22	376	11	18		
+margin	139	0.0585	22	376	11	18		
+margin	140	0.0585	22	376	11	18		
+margin	141	0.0585	22	376	11	18		
+margin	142	0.0585	22	376	11	18		
+margin	143	0.0585	22	376	11	18		
+margin	144	0.0559	21	376	11	17		
+margin	145	0.0559	21	376	11	17		
+margin	146	0.0559	21	376	11	17		
+margin	147	0.0559	21	376	11	17		
+margin	148	0.0559	21	376	11	17		
+margin	149	0.0559	21	376	11	17		
+margin	150	0.0559	21	376	11	17		
+margin	151	0.0559	21	376	11	17		
+margin	152	0.0559	21	376	11	17		
+margin	153	0.0559	21	376	11	17		
+margin	154	0.0559	21	376	11	17		
+margin	155	0.0559	21	376	11	17		
+margin	156	0.0559	21	376	11	17		
+margin	157	0.0559	21	376	11	17		
+margin	158	0.0559	21	376	11	17		
+margin	159	0.0559	21	376	11	17		
+margin	160	0.0559	21	376	11	17		
+margin	161	0.0559	21	376	11	17		
+margin	162	0.0559	21	376	11	17		
+margin	163	0.0559	21	376	11	17		
+margin	164	0.0559	21	376	11	17		
+margin	165	0.0532	20	376	11	16		
+margin	166	0.0532	20	376	11	16		
+margin	167	0.0532	20	376	11	16		
+margin	168	0.0532	20	376	11	16		
+margin	169	0.0532	20	376	11	16		
+margin	170	0.0532	20	376	11	16		
+margin	171	0.0532	20	376	11	16		
+margin	172	0.0532	20	376	11	16		
+margin	173	0.0532	20	376	11	16		
+margin	174	0.0505	19	376	11	15		
+margin	175	0.0505	19	376	11	15		
+margin	176	0.0505	19	376	11	15		
+margin	177	0.0505	19	376	11	15		
+margin	178	0.0505	19	376	11	15		
+margin	179	0.0505	19	376	11	15		
+margin	180	0.0505	19	376	11	15		
+margin	181	0.0505	19	376	11	15		
+margin	182	0.0505	19	376	11	15		
+margin	183	0.0479	18	376	11	14		
+margin	184	0.0452	17	376	12	14		
+margin	185	0.0426	16	376	12	13		
+margin	186	0.0426	16	376	12	13		
+margin	187	0.0426	16	376	12	13		
+margin	188	0.0426	16	376	12	13		
+margin	189	0.0426	16	376	12	13		
+margin	190	0.0426	16	376	12	13		
+margin	191	0.0426	16	376	12	13		
+margin	192	0.0426	16	376	12	13		
+margin	193	0.0426	16	376	12	13		
+margin	194	0.0426	16	376	12	13		
+margin	195	0.0426	16	376	12	13		
+margin	196	0.0426	16	376	12	13		
+margin	197	0.0426	16	376	12	13		
+margin	198	0.0426	16	376	12	13		
+margin	199	0.0426	16	376	12	13		
+margin	200	0.0426	16	376	12	13		
+disagree_margin	0	0.0399	15	376	0	0		
+disagree_margin	1	0.0239	9	376	6	0		
+disagree_margin	2	0.0239	9	376	6	0		
+disagree_margin	3	0.0266	10	376	7	2		
+disagree_margin	4	0.0266	10	376	7	2		
+disagree_margin	5	0.0266	10	376	7	2		
+disagree_margin	6	0.0239	9	376	7	1		
+disagree_margin	7	0.0239	9	376	7	1		
+disagree_margin	8	0.0239	9	376	7	1		
+disagree_margin	9	0.0239	9	376	7	1		
+disagree_margin	10	0.0239	9	376	7	1		
+disagree_margin	11	0.0239	9	376	7	1		
+disagree_margin	12	0.0239	9	376	7	1		
+disagree_margin	13	0.0239	9	376	7	1		
+disagree_margin	14	0.0239	9	376	7	1		
+disagree_margin	15	0.0213	8	376	8	1		
+disagree_margin	16	0.0213	8	376	8	1		
+disagree_margin	17	0.0186	7	376	9	1		
+disagree_margin	18	0.0266	10	376	9	4		
+disagree_margin	19	0.0266	10	376	9	4		
+disagree_margin	20	0.0266	10	376	9	4		
+disagree_margin	21	0.0266	10	376	9	4		
+disagree_margin	22	0.0479	18	376	9	12		
+disagree_margin	23	0.0479	18	376	9	12		
+disagree_margin	24	0.0479	18	376	9	12		
+disagree_margin	25	0.0479	18	376	9	12		
+disagree_margin	26	0.0479	18	376	9	12		
+disagree_margin	27	0.0452	17	376	9	11		
+disagree_margin	28	0.0452	17	376	9	11		
+disagree_margin	29	0.0452	17	376	9	11		
+disagree_margin	30	0.0452	17	376	9	11		
+disagree_margin	31	0.0665	25	376	9	19		
+disagree_margin	32	0.0638	24	376	9	18		
+disagree_margin	33	0.0638	24	376	9	18		
+disagree_margin	34	0.0638	24	376	9	18		
+disagree_margin	35	0.0638	24	376	9	18		
+disagree_margin	36	0.0638	24	376	9	18		
+disagree_margin	37	0.0638	24	376	9	18		
+disagree_margin	38	0.0638	24	376	9	18		
+disagree_margin	39	0.0638	24	376	9	18		
+disagree_margin	40	0.0638	24	376	9	18		
+disagree_margin	41	0.0638	24	376	9	18		
+disagree_margin	42	0.0638	24	376	9	18		
+disagree_margin	43	0.0638	24	376	9	18		
+disagree_margin	44	0.0638	24	376	9	18		
+disagree_margin	45	0.0638	24	376	9	18		
+disagree_margin	46	0.0638	24	376	9	18		
+disagree_margin	47	0.0638	24	376	9	18		
+disagree_margin	48	0.0638	24	376	9	18		
+disagree_margin	49	0.0638	24	376	9	18		
+disagree_margin	50	0.0638	24	376	9	18		
+disagree_margin	51	0.0638	24	376	9	18		
+disagree_margin	52	0.0638	24	376	9	18		
+disagree_margin	53	0.0638	24	376	9	18		
+disagree_margin	54	0.0638	24	376	9	18		
+disagree_margin	55	0.0638	24	376	9	18		
+disagree_margin	56	0.0665	25	376	10	20		
+disagree_margin	57	0.0665	25	376	10	20		
+disagree_margin	58	0.0665	25	376	10	20		
+disagree_margin	59	0.0665	25	376	10	20		
+disagree_margin	60	0.0665	25	376	10	20		
+disagree_margin	61	0.0665	25	376	10	20		
+disagree_margin	62	0.0665	25	376	10	20		
+disagree_margin	63	0.0665	25	376	10	20		
+disagree_margin	64	0.0665	25	376	10	20		
+disagree_margin	65	0.0665	25	376	10	20		
+disagree_margin	66	0.0665	25	376	10	20		
+disagree_margin	67	0.0665	25	376	10	20		
+disagree_margin	68	0.0665	25	376	10	20		
+disagree_margin	69	0.0665	25	376	10	20		
+disagree_margin	70	0.0665	25	376	10	20		
+disagree_margin	71	0.0665	25	376	10	20		
+disagree_margin	72	0.0638	24	376	10	19		
+disagree_margin	73	0.0638	24	376	10	19		
+disagree_margin	74	0.0638	24	376	10	19		
+disagree_margin	75	0.0638	24	376	10	19		
+disagree_margin	76	0.0638	24	376	10	19		
+disagree_margin	77	0.0638	24	376	10	19		
+disagree_margin	78	0.0638	24	376	10	19		
+disagree_margin	79	0.0612	23	376	10	18		
+disagree_margin	80	0.0612	23	376	10	18		
+disagree_margin	81	0.0612	23	376	10	18		
+disagree_margin	82	0.0612	23	376	10	18		
+disagree_margin	83	0.0612	23	376	10	18		
+disagree_margin	84	0.0612	23	376	10	18		
+disagree_margin	85	0.0612	23	376	10	18		
+disagree_margin	86	0.0718	27	376	10	22		
+disagree_margin	87	0.0718	27	376	11	23		
+disagree_margin	88	0.0718	27	376	11	23		
+disagree_margin	89	0.0718	27	376	11	23		
+disagree_margin	90	0.0718	27	376	11	23		
+disagree_margin	91	0.0718	27	376	11	23		
+disagree_margin	92	0.0718	27	376	11	23		
+disagree_margin	93	0.0718	27	376	11	23		
+disagree_margin	94	0.0718	27	376	11	23		
+disagree_margin	95	0.0718	27	376	11	23		
+disagree_margin	96	0.0718	27	376	11	23		
+disagree_margin	97	0.0691	26	376	11	22		
+disagree_margin	98	0.0691	26	376	11	22		
+disagree_margin	99	0.0691	26	376	11	22		
+disagree_margin	100	0.0691	26	376	11	22		
+disagree_margin	101	0.0691	26	376	11	22		
+disagree_margin	102	0.0665	25	376	11	21		
+disagree_margin	103	0.0665	25	376	11	21		
+disagree_margin	104	0.0665	25	376	11	21		
+disagree_margin	105	0.0665	25	376	11	21		
+disagree_margin	106	0.0665	25	376	11	21		
+disagree_margin	107	0.0638	24	376	11	20		
+disagree_margin	108	0.0638	24	376	11	20		
+disagree_margin	109	0.0638	24	376	11	20		
+disagree_margin	110	0.0612	23	376	11	19		
+disagree_margin	111	0.0612	23	376	11	19		
+disagree_margin	112	0.0612	23	376	11	19		
+disagree_margin	113	0.0612	23	376	11	19		
+disagree_margin	114	0.0559	21	376	13	19		
+disagree_margin	115	0.0559	21	376	13	19		
+disagree_margin	116	0.0559	21	376	13	19		
+disagree_margin	117	0.0559	21	376	13	19		
+disagree_margin	118	0.0559	21	376	13	19		
+disagree_margin	119	0.0559	21	376	13	19		
+disagree_margin	120	0.0559	21	376	13	19		
+disagree_margin	121	0.0559	21	376	13	19		
+disagree_margin	122	0.0559	21	376	13	19		
+disagree_margin	123	0.0559	21	376	13	19		
+disagree_margin	124	0.0559	21	376	13	19		
+disagree_margin	125	0.0559	21	376	13	19		
+disagree_margin	126	0.0559	21	376	13	19		
+disagree_margin	127	0.0559	21	376	13	19		
+disagree_margin	128	0.0559	21	376	13	19		
+disagree_margin	129	0.0532	20	376	13	18		
+disagree_margin	130	0.0532	20	376	13	18		
+disagree_margin	131	0.0532	20	376	13	18		
+disagree_margin	132	0.0532	20	376	13	18		
+disagree_margin	133	0.0532	20	376	13	18		
+disagree_margin	134	0.0532	20	376	13	18		
+disagree_margin	135	0.0532	20	376	13	18		
+disagree_margin	136	0.0532	20	376	13	18		
+disagree_margin	137	0.0532	20	376	13	18		
+disagree_margin	138	0.0532	20	376	13	18		
+disagree_margin	139	0.0532	20	376	13	18		
+disagree_margin	140	0.0532	20	376	13	18		
+disagree_margin	141	0.0532	20	376	13	18		
+disagree_margin	142	0.0532	20	376	13	18		
+disagree_margin	143	0.0532	20	376	13	18		
+disagree_margin	144	0.0532	20	376	13	18		
+disagree_margin	145	0.0505	19	376	13	17		
+disagree_margin	146	0.0505	19	376	13	17		
+disagree_margin	147	0.0505	19	376	13	17		
+disagree_margin	148	0.0505	19	376	13	17		
+disagree_margin	149	0.0505	19	376	13	17		
+disagree_margin	150	0.0505	19	376	13	17		
+disagree_margin	151	0.0505	19	376	13	17		
+disagree_margin	152	0.0505	19	376	13	17		
+disagree_margin	153	0.0505	19	376	13	17		
+disagree_margin	154	0.0505	19	376	13	17		
+disagree_margin	155	0.0505	19	376	13	17		
+disagree_margin	156	0.0479	18	376	13	16		
+disagree_margin	157	0.0479	18	376	13	16		
+disagree_margin	158	0.0479	18	376	13	16		
+disagree_margin	159	0.0479	18	376	13	16		
+disagree_margin	160	0.0479	18	376	13	16		
+disagree_margin	161	0.0479	18	376	13	16		
+disagree_margin	162	0.0479	18	376	13	16		
+disagree_margin	163	0.0479	18	376	13	16		
+disagree_margin	164	0.0479	18	376	13	16		
+disagree_margin	165	0.0479	18	376	13	16		
+disagree_margin	166	0.0479	18	376	13	16		
+disagree_margin	167	0.0479	18	376	13	16		
+disagree_margin	168	0.0479	18	376	13	16		
+disagree_margin	169	0.0479	18	376	13	16		
+disagree_margin	170	0.0479	18	376	13	16		
+disagree_margin	171	0.0479	18	376	13	16		
+disagree_margin	172	0.0479	18	376	13	16		
+disagree_margin	173	0.0479	18	376	13	16		
+disagree_margin	174	0.0479	18	376	13	16		
+disagree_margin	175	0.0479	18	376	13	16		
+disagree_margin	176	0.0479	18	376	13	16		
+disagree_margin	177	0.0452	17	376	13	15		
+disagree_margin	178	0.0452	17	376	13	15		
+disagree_margin	179	0.0452	17	376	13	15		
+disagree_margin	180	0.0452	17	376	13	15		
+disagree_margin	181	0.0452	17	376	13	15		
+disagree_margin	182	0.0452	17	376	13	15		
+disagree_margin	183	0.0452	17	376	13	15		
+disagree_margin	184	0.0452	17	376	13	15		
+disagree_margin	185	0.0452	17	376	13	15		
+disagree_margin	186	0.0426	16	376	13	14		
+disagree_margin	187	0.0426	16	376	13	14		
+disagree_margin	188	0.0426	16	376	13	14		
+disagree_margin	189	0.0426	16	376	13	14		
+disagree_margin	190	0.0426	16	376	13	14		
+disagree_margin	191	0.0426	16	376	13	14		
+disagree_margin	192	0.0426	16	376	13	14		
+disagree_margin	193	0.0426	16	376	13	14		
+disagree_margin	194	0.0399	15	376	13	13		
+disagree_margin	195	0.0372	14	376	14	13		
+disagree_margin	196	0.0346	13	376	14	12		
+disagree_margin	197	0.0346	13	376	14	12		
+disagree_margin	198	0.0346	13	376	14	12		
+disagree_margin	199	0.0346	13	376	14	12		
+disagree_margin	200	0.0346	13	376	14	12		
+lattice	0	0.0399	15	376	0	0		
+lattice	1	0.0372	14	376	1	0		
+lattice	2	0.0372	14	376	1	0		
+lattice	3	0.0346	13	376	2	0		
+lattice	4	0.0346	13	376	2	0		
+lattice	5	0.0372	14	376	2	1		
+lattice	6	0.0346	13	376	3	1		
+lattice	7	0.0426	16	376	3	4		
+lattice	8	0.0426	16	376	3	4		
+lattice	9	0.0426	16	376	3	4		
+lattice	10	0.0426	16	376	3	4		
+lattice	11	0.0426	16	376	3	4		
+lattice	12	0.0426	16	376	3	4		
+lattice	13	0.0426	16	376	3	4		
+lattice	14	0.0399	15	376	4	4		
+lattice	15	0.0399	15	376	4	4		
+lattice	16	0.0399	15	376	4	4		
+lattice	17	0.0399	15	376	4	4		
+lattice	18	0.0426	16	376	5	6		
+lattice	19	0.0266	10	376	11	6		
+lattice	20	0.0266	10	376	11	6		
+lattice	21	0.0266	10	376	11	6		
+lattice	22	0.0266	10	376	11	6		
+lattice	23	0.0266	10	376	11	6		
+lattice	24	0.0266	10	376	11	6		
+lattice	25	0.0266	10	376	11	6		
+lattice	26	0.0266	10	376	11	6		
+lattice	27	0.0266	10	376	11	6		
+lattice	28	0.0266	10	376	11	6		
+lattice	29	0.0266	10	376	11	6		
+lattice	30	0.0266	10	376	11	6		
+lattice	31	0.0266	10	376	11	6		
+lattice	32	0.0266	10	376	11	6		
+lattice	33	0.0266	10	376	11	6		
+lattice	34	0.0266	10	376	11	6		
+lattice	35	0.0266	10	376	11	6		
+lattice	36	0.0266	10	376	11	6		
+lattice	37	0.0266	10	376	11	6		
+lattice	38	0.0266	10	376	11	6		
+lattice	39	0.0266	10	376	11	6		
+lattice	40	0.0266	10	376	11	6		
+lattice	41	0.0266	10	376	11	6		
+lattice	42	0.0266	10	376	11	6		
+lattice	43	0.0266	10	376	11	6		
+lattice	44	0.0266	10	376	11	6		
+lattice	45	0.0266	10	376	11	6		
+lattice	46	0.0266	10	376	11	6		
+lattice	47	0.0266	10	376	11	6		
+lattice	48	0.0239	9	376	11	5		
+lattice	49	0.0239	9	376	11	5		
+lattice	50	0.0239	9	376	11	5		
+lattice	51	0.0239	9	376	11	5		
+lattice	52	0.0239	9	376	11	5		
+lattice	53	0.0239	9	376	11	5		
+lattice	54	0.0239	9	376	11	5		
+lattice	55	0.0239	9	376	11	5		
+lattice	56	0.0239	9	376	11	5		
+lattice	57	0.0239	9	376	11	5		
+lattice	58	0.0239	9	376	11	5		
+lattice	59	0.0239	9	376	11	5		
+lattice	60	0.0239	9	376	11	5		
+lattice	61	0.0239	9	376	11	5		
+lattice	62	0.0239	9	376	11	5		
+lattice	63	0.0239	9	376	11	5		
+lattice	64	0.0293	11	376	11	7		
+lattice	65	0.0293	11	376	11	7		
+lattice	66	0.0293	11	376	11	7		
+lattice	67	0.0293	11	376	11	7		
+lattice	68	0.0293	11	376	11	7		
+lattice	69	0.0293	11	376	11	7		
+lattice	70	0.0293	11	376	11	7		
+lattice	71	0.0319	12	376	11	8		
+lattice	72	0.0319	12	376	11	8		
+lattice	73	0.0293	11	376	11	7		
+lattice	74	0.0266	10	376	12	7		
+lattice	75	0.0266	10	376	12	7		
+lattice	76	0.0266	10	376	12	7		
+lattice	77	0.0266	10	376	12	7		
+lattice	78	0.0266	10	376	12	7		
+lattice	79	0.0266	10	376	12	7		
+lattice	80	0.0266	10	376	12	7		
+lattice	81	0.0266	10	376	12	7		
+lattice	82	0.0266	10	376	12	7		
+lattice	83	0.0266	10	376	12	7		
+lattice	84	0.0266	10	376	12	7		
+lattice	85	0.0239	9	376	12	6		
+lattice	86	0.0239	9	376	12	6		
+lattice	87	0.0239	9	376	12	6		
+lattice	88	0.0239	9	376	13	7		
+lattice	89	0.0239	9	376	13	7		
+lattice	90	0.0239	9	376	13	7		
+lattice	91	0.0239	9	376	13	7		
+lattice	92	0.0239	9	376	13	7		
+lattice	93	0.0239	9	376	13	7		
+lattice	94	0.0239	9	376	13	7		
+lattice	95	0.0239	9	376	13	7		
+lattice	96	0.0239	9	376	13	7		
+lattice	97	0.0239	9	376	13	7		
+lattice	98	0.0239	9	376	13	7		
+lattice	99	0.0239	9	376	13	7		
+lattice	100	0.0239	9	376	13	7		
+lattice	101	0.0239	9	376	13	7		
+lattice	102	0.0239	9	376	13	7		
+lattice	103	0.0239	9	376	13	7		
+lattice	104	0.0239	9	376	13	7		
+lattice	105	0.0239	9	376	13	7		
+lattice	106	0.0239	9	376	13	7		
+lattice	107	0.0239	9	376	13	7		
+lattice	108	0.0239	9	376	13	7		
+lattice	109	0.0213	8	376	13	6		
+lattice	110	0.0213	8	376	13	6		
+lattice	111	0.0213	8	376	13	6		
+lattice	112	0.0213	8	376	13	6		
+lattice	113	0.0213	8	376	13	6		
+lattice	114	0.0213	8	376	13	6		
+lattice	115	0.0213	8	376	13	6		
+lattice	116	0.0213	8	376	13	6		
+lattice	117	0.0213	8	376	13	6		
+lattice	118	0.0213	8	376	13	6		
+lattice	119	0.0213	8	376	13	6		
+lattice	120	0.0213	8	376	13	6		
+lattice	121	0.0213	8	376	13	6		
+lattice	122	0.0213	8	376	13	6		
+lattice	123	0.0213	8	376	13	6		
+lattice	124	0.0213	8	376	13	6		
+lattice	125	0.0186	7	376	13	5		
+lattice	126	0.0186	7	376	13	5		
+lattice	127	0.0186	7	376	13	5		
+lattice	128	0.0186	7	376	13	5		
+lattice	129	0.0186	7	376	13	5		
+lattice	130	0.0186	7	376	13	5		
+lattice	131	0.0186	7	376	13	5		
+lattice	132	0.0186	7	376	13	5		
+lattice	133	0.0186	7	376	13	5		
+lattice	134	0.0186	7	376	13	5		
+lattice	135	0.0186	7	376	13	5		
+lattice	136	0.0186	7	376	13	5		
+lattice	137	0.0186	7	376	13	5		
+lattice	138	0.0399	15	376	13	13		
+lattice	139	0.0399	15	376	13	13		
+lattice	140	0.0399	15	376	13	13		
+lattice	141	0.0399	15	376	13	13		
+lattice	142	0.0399	15	376	13	13		
+lattice	143	0.0399	15	376	13	13		
+lattice	144	0.0399	15	376	13	13		
+lattice	145	0.0399	15	376	13	13		
+lattice	146	0.0399	15	376	13	13		
+lattice	147	0.0399	15	376	13	13		
+lattice	148	0.0399	15	376	13	13		
+lattice	149	0.0399	15	376	13	13		
+lattice	150	0.0399	15	376	13	13		
+lattice	151	0.0399	15	376	13	13		
+lattice	152	0.0399	15	376	13	13		
+lattice	153	0.0399	15	376	13	13		
+lattice	154	0.0399	15	376	13	13		
+lattice	155	0.0399	15	376	13	13		
+lattice	156	0.0399	15	376	13	13		
+lattice	157	0.0399	15	376	13	13		
+lattice	158	0.0399	15	376	13	13		
+lattice	159	0.0399	15	376	13	13		
+lattice	160	0.0399	15	376	13	13		
+lattice	161	0.0399	15	376	13	13		
+lattice	162	0.0399	15	376	13	13		
+lattice	163	0.0399	15	376	13	13		
+lattice	164	0.0399	15	376	13	13		
+lattice	165	0.0399	15	376	13	13		
+lattice	166	0.0399	15	376	13	13		
+lattice	167	0.0399	15	376	13	13		
+lattice	168	0.0399	15	376	13	13		
+lattice	169	0.0399	15	376	13	13		
+lattice	170	0.0399	15	376	13	13		
+lattice	171	0.0372	14	376	13	12		
+lattice	172	0.0372	14	376	13	12		
+lattice	173	0.0372	14	376	13	12		
+lattice	174	0.0372	14	376	13	12		
+lattice	175	0.0372	14	376	13	12		
+lattice	176	0.0372	14	376	13	12		
+lattice	177	0.0372	14	376	13	12		
+lattice	178	0.0372	14	376	13	12		
+lattice	179	0.0372	14	376	13	12		
+lattice	180	0.0346	13	376	13	11		
+lattice	181	0.0346	13	376	13	11		
+lattice	182	0.0346	13	376	13	11		
+lattice	183	0.0346	13	376	13	11		
+lattice	184	0.0346	13	376	13	11		
+lattice	185	0.0346	13	376	13	11		
+lattice	186	0.0319	12	376	13	10		
+lattice	187	0.0319	12	376	13	10		
+lattice	188	0.0319	12	376	13	10		
+lattice	189	0.0319	12	376	13	10		
+lattice	190	0.0319	12	376	13	10		
+lattice	191	0.0319	12	376	13	10		
+lattice	192	0.0319	12	376	13	10		
+lattice	193	0.0319	12	376	13	10		
+lattice	194	0.0319	12	376	13	10		
+lattice	195	0.0266	10	376	15	10		
+lattice	196	0.0266	10	376	15	10		
+lattice	197	0.0266	10	376	15	10		
+lattice	198	0.0266	10	376	15	10		
+lattice	199	0.0266	10	376	15	10		
+lattice	200	0.0266	10	376	15	10		
+b_size	0	0.0399	15	376	0	0		
+b_size	1	0.0399	15	376	0	0		
+b_size	2	0.0399	15	376	0	0		
+b_size	3	0.0399	15	376	0	0		
+b_size	4	0.0399	15	376	0	0		
+b_size	5	0.0399	15	376	0	0		
+b_size	6	0.0399	15	376	0	0		
+b_size	7	0.0452	17	376	0	2		
+b_size	8	0.0452	17	376	0	2		
+b_size	9	0.0452	17	376	0	2		
+b_size	10	0.0479	18	376	0	3		
+b_size	11	0.0479	18	376	0	3		
+b_size	12	0.0479	18	376	0	3		
+b_size	13	0.0479	18	376	0	3		
+b_size	14	0.0479	18	376	0	3		
+b_size	15	0.0479	18	376	0	3		
+b_size	16	0.0479	18	376	0	3		
+b_size	17	0.0479	18	376	0	3		
+b_size	18	0.0479	18	376	0	3		
+b_size	19	0.0479	18	376	0	3		
+b_size	20	0.0479	18	376	0	3		
+b_size	21	0.0479	18	376	0	3		
+b_size	22	0.0479	18	376	0	3		
+b_size	23	0.0319	12	376	6	3		
+b_size	24	0.0319	12	376	6	3		
+b_size	25	0.0319	12	376	6	3		
+b_size	26	0.0319	12	376	6	3		
+b_size	27	0.0319	12	376	6	3		
+b_size	28	0.0319	12	376	6	3		
+b_size	29	0.0319	12	376	6	3		
+b_size	30	0.0319	12	376	6	3		
+b_size	31	0.0319	12	376	6	3		
+b_size	32	0.0426	16	376	6	7		
+b_size	33	0.0505	19	376	6	10		
+b_size	34	0.0505	19	376	6	10		
+b_size	35	0.0505	19	376	6	10		
+b_size	36	0.0505	19	376	6	10		
+b_size	37	0.0505	19	376	6	10		
+b_size	38	0.0505	19	376	6	10		
+b_size	39	0.0505	19	376	6	10		
+b_size	40	0.0505	19	376	6	10		
+b_size	41	0.0505	19	376	6	10		
+b_size	42	0.0505	19	376	6	10		
+b_size	43	0.0505	19	376	6	10		
+b_size	44	0.0505	19	376	6	10		
+b_size	45	0.0479	18	376	7	10		
+b_size	46	0.0479	18	376	7	10		
+b_size	47	0.0505	19	376	7	11		
+b_size	48	0.0505	19	376	7	11		
+b_size	49	0.0452	17	376	9	11		
+b_size	50	0.0452	17	376	9	11		
+b_size	51	0.0452	17	376	9	11		
+b_size	52	0.0452	17	376	9	11		
+b_size	53	0.0452	17	376	9	11		
+b_size	54	0.0452	17	376	9	11		
+b_size	55	0.0452	17	376	9	11		
+b_size	56	0.0452	17	376	9	11		
+b_size	57	0.0452	17	376	9	11		
+b_size	58	0.0452	17	376	9	11		
+b_size	59	0.0426	16	376	10	11		
+b_size	60	0.0426	16	376	10	11		
+b_size	61	0.0426	16	376	10	11		
+b_size	62	0.0426	16	376	10	11		
+b_size	63	0.0426	16	376	10	11		
+b_size	64	0.0426	16	376	10	11		
+b_size	65	0.0426	16	376	10	11		
+b_size	66	0.0426	16	376	10	11		
+b_size	67	0.0426	16	376	10	11		
+b_size	68	0.0426	16	376	10	11		
+b_size	69	0.0426	16	376	10	11		
+b_size	70	0.0426	16	376	10	11		
+b_size	71	0.0426	16	376	10	11		
+b_size	72	0.0426	16	376	10	11		
+b_size	73	0.0426	16	376	10	11		
+b_size	74	0.0426	16	376	10	11		
+b_size	75	0.0399	15	376	11	11		
+b_size	76	0.0399	15	376	11	11		
+b_size	77	0.0399	15	376	11	11		
+b_size	78	0.0399	15	376	11	11		
+b_size	79	0.0399	15	376	11	11		
+b_size	80	0.0399	15	376	11	11		
+b_size	81	0.0399	15	376	11	11		
+b_size	82	0.0399	15	376	11	11		
+b_size	83	0.0399	15	376	11	11		
+b_size	84	0.0399	15	376	11	11		
+b_size	85	0.0399	15	376	11	11		
+b_size	86	0.0399	15	376	11	11		
+b_size	87	0.0399	15	376	11	11		
+b_size	88	0.0399	15	376	11	11		
+b_size	89	0.0399	15	376	11	11		
+b_size	90	0.0399	15	376	11	11		
+b_size	91	0.0399	15	376	11	11		
+b_size	92	0.0399	15	376	11	11		
+b_size	93	0.0399	15	376	11	11		
+b_size	94	0.0399	15	376	11	11		
+b_size	95	0.0399	15	376	11	11		
+b_size	96	0.0399	15	376	11	11		
+b_size	97	0.0399	15	376	11	11		
+b_size	98	0.0399	15	376	11	11		
+b_size	99	0.0399	15	376	11	11		
+b_size	100	0.0399	15	376	11	11		
+b_size	101	0.0399	15	376	11	11		
+b_size	102	0.0399	15	376	11	11		
+b_size	103	0.0399	15	376	11	11		
+b_size	104	0.0399	15	376	11	11		
+b_size	105	0.0399	15	376	11	11		
+b_size	106	0.0399	15	376	11	11		
+b_size	107	0.0399	15	376	11	11		
+b_size	108	0.0399	15	376	11	11		
+b_size	109	0.0399	15	376	11	11		
+b_size	110	0.0399	15	376	11	11		
+b_size	111	0.0399	15	376	11	11		
+b_size	112	0.0399	15	376	11	11		
+b_size	113	0.0399	15	376	11	11		
+b_size	114	0.0399	15	376	11	11		
+b_size	115	0.0399	15	376	11	11		
+b_size	116	0.0399	15	376	11	11		
+b_size	117	0.0399	15	376	11	11		
+b_size	118	0.0399	15	376	11	11		
+b_size	119	0.0399	15	376	11	11		
+b_size	120	0.0399	15	376	11	11		
+b_size	121	0.0399	15	376	11	11		
+b_size	122	0.0399	15	376	11	11		
+b_size	123	0.0399	15	376	11	11		
+b_size	124	0.0399	15	376	11	11		
+b_size	125	0.0399	15	376	11	11		
+b_size	126	0.0399	15	376	11	11		
+b_size	127	0.0399	15	376	11	11		
+b_size	128	0.0399	15	376	11	11		
+b_size	129	0.0399	15	376	11	11		
+b_size	130	0.0399	15	376	11	11		
+b_size	131	0.0399	15	376	11	11		
+b_size	132	0.0399	15	376	11	11		
+b_size	133	0.0399	15	376	11	11		
+b_size	134	0.0399	15	376	11	11		
+b_size	135	0.0399	15	376	11	11		
+b_size	136	0.0399	15	376	11	11		
+b_size	137	0.0399	15	376	11	11		
+b_size	138	0.0399	15	376	11	11		
+b_size	139	0.0399	15	376	11	11		
+b_size	140	0.0399	15	376	11	11		
+b_size	141	0.0399	15	376	11	11		
+b_size	142	0.0399	15	376	11	11		
+b_size	143	0.0399	15	376	11	11		
+b_size	144	0.0399	15	376	11	11		
+b_size	145	0.0399	15	376	11	11		
+b_size	146	0.0399	15	376	11	11		
+b_size	147	0.0399	15	376	11	11		
+b_size	148	0.0399	15	376	11	11		
+b_size	149	0.0399	15	376	11	11		
+b_size	150	0.0399	15	376	11	11		
+b_size	151	0.0399	15	376	11	11		
+b_size	152	0.0399	15	376	11	11		
+b_size	153	0.0399	15	376	11	11		
+b_size	154	0.0399	15	376	11	11		
+b_size	155	0.0399	15	376	11	11		
+b_size	156	0.0399	15	376	11	11		
+b_size	157	0.0399	15	376	11	11		
+b_size	158	0.0399	15	376	11	11		
+b_size	159	0.0399	15	376	11	11		
+b_size	160	0.0399	15	376	11	11		
+b_size	161	0.0399	15	376	11	11		
+b_size	162	0.0399	15	376	11	11		
+b_size	163	0.0399	15	376	11	11		
+b_size	164	0.0399	15	376	11	11		
+b_size	165	0.0399	15	376	11	11		
+b_size	166	0.0399	15	376	11	11		
+b_size	167	0.0372	14	376	11	10		
+b_size	168	0.0372	14	376	11	10		
+b_size	169	0.0346	13	376	11	9		
+b_size	170	0.0346	13	376	11	9		
+b_size	171	0.0346	13	376	11	9		
+b_size	172	0.0346	13	376	11	9		
+b_size	173	0.0346	13	376	11	9		
+b_size	174	0.0346	13	376	11	9		
+b_size	175	0.0346	13	376	11	9		
+b_size	176	0.0346	13	376	11	9		
+b_size	177	0.0346	13	376	11	9		
+b_size	178	0.0346	13	376	11	9		
+b_size	179	0.0346	13	376	11	9		
+b_size	180	0.0346	13	376	11	9		
+b_size	181	0.0346	13	376	11	9		
+b_size	182	0.0346	13	376	11	9		
+b_size	183	0.0346	13	376	11	9		
+b_size	184	0.0346	13	376	11	9		
+b_size	185	0.0346	13	376	11	9		
+b_size	186	0.0346	13	376	11	9		
+b_size	187	0.0346	13	376	11	9		
+b_size	188	0.0346	13	376	11	9		
+b_size	189	0.0346	13	376	11	9		
+b_size	190	0.0346	13	376	11	9		
+b_size	191	0.0319	12	376	11	8		
+b_size	192	0.0319	12	376	11	8		
+b_size	193	0.0319	12	376	11	8		
+b_size	194	0.0319	12	376	11	8		
+b_size	195	0.0319	12	376	11	8		
+b_size	196	0.0319	12	376	11	8		
+b_size	197	0.0319	12	376	11	8		
+b_size	198	0.0319	12	376	11	8		
+b_size	199	0.0319	12	376	11	8		
+b_size	200	0.0319	12	376	11	8		
+d_oracle	0	0.0399	15	376	0	0		
+d_oracle	1	0.0239	9	376	6	0		
+d_oracle	2	0.0186	7	376	8	0		
+d_oracle	3	0.0160	6	376	9	0		
+d_oracle	4	0.0133	5	376	10	0		
+d_oracle	5	0.0106	4	376	11	0		
+d_oracle	6	0.0080	3	376	12	0		
+c_random	0	0.0399	15.0	376	0.0	0.0	0.0399	0.0399
+c_random	1	0.0403	15.2	376	0.3	0.5	0.0239	0.0612
+c_random	2	0.0418	15.7	376	0.3	1.1	0.0239	0.0612
+c_random	3	0.0423	15.9	376	0.3	1.2	0.0239	0.0612
+c_random	4	0.0412	15.5	376	0.8	1.4	0.0239	0.0612
+c_random	5	0.0420	15.8	376	1.1	1.9	0.0239	0.0638
+c_random	6	0.0427	16.1	376	1.1	2.2	0.0239	0.0718
+c_random	7	0.0426	16.0	376	1.1	2.1	0.0239	0.0691
+c_random	8	0.0424	15.9	376	1.1	2.1	0.0239	0.0691
+c_random	9	0.0435	16.4	376	1.1	2.5	0.0239	0.0691
+c_random	10	0.0444	16.7	376	1.2	2.9	0.0239	0.0718
+c_random	11	0.0445	16.8	376	1.2	3.0	0.0239	0.0718
+c_random	12	0.0444	16.7	376	1.2	2.9	0.0239	0.0691
+c_random	13	0.0444	16.7	376	1.2	2.9	0.0239	0.0691
+c_random	14	0.0438	16.4	376	1.5	3.0	0.0239	0.0691
+c_random	15	0.0438	16.4	376	1.5	3.0	0.0239	0.0691
+c_random	16	0.0440	16.6	376	1.6	3.1	0.0266	0.0691
+c_random	17	0.0443	16.6	376	1.6	3.2	0.0266	0.0691
+c_random	18	0.0449	16.9	376	1.9	3.9	0.0239	0.0691
+c_random	19	0.0441	16.6	376	2.2	3.9	0.0186	0.0691
+c_random	20	0.0441	16.6	376	2.3	3.9	0.0186	0.0691
+c_random	21	0.0441	16.6	376	2.3	3.9	0.0186	0.0691
+c_random	22	0.0443	16.6	376	2.4	4.0	0.0186	0.0691
+c_random	23	0.0443	16.6	376	2.4	4.0	0.0213	0.0691
+c_random	24	0.0439	16.5	376	2.7	4.2	0.0213	0.0691
+c_random	25	0.0444	16.7	376	2.7	4.4	0.0213	0.0691
+c_random	26	0.0437	16.4	376	3.1	4.5	0.0213	0.0691
+c_random	27	0.0443	16.6	376	3.1	4.8	0.0213	0.0691
+c_random	28	0.0447	16.8	376	3.1	5.0	0.0213	0.0691
+c_random	29	0.0460	17.3	376	3.2	5.5	0.0213	0.0691
+c_random	30	0.0464	17.4	376	3.2	5.7	0.0213	0.0691
+c_random	31	0.0463	17.4	376	3.2	5.7	0.0213	0.0691
+c_random	32	0.0453	17.1	376	3.5	5.6	0.0213	0.0665
+c_random	33	0.0453	17.1	376	3.5	5.6	0.0213	0.0665
+c_random	34	0.0453	17.1	376	3.6	5.7	0.0213	0.0665
+c_random	35	0.0453	17.1	376	3.6	5.7	0.0213	0.0665
+c_random	36	0.0467	17.6	376	3.6	6.2	0.0213	0.0665
+c_random	37	0.0468	17.6	376	3.8	6.3	0.0186	0.0691
+c_random	38	0.0468	17.6	376	3.8	6.3	0.0186	0.0691
+c_random	39	0.0468	17.6	376	3.8	6.3	0.0186	0.0691
+c_random	40	0.0465	17.5	376	3.9	6.3	0.0186	0.0691
+c_random	41	0.0464	17.4	376	3.9	6.3	0.0186	0.0691
+c_random	42	0.0464	17.4	376	3.9	6.3	0.0186	0.0691
+c_random	43	0.0463	17.4	376	3.9	6.3	0.0186	0.0691
+c_random	44	0.0467	17.6	376	4.0	6.5	0.0186	0.0691
+c_random	45	0.0467	17.6	376	4.0	6.5	0.0186	0.0691
+c_random	46	0.0467	17.6	376	4.0	6.5	0.0186	0.0691
+c_random	47	0.0460	17.3	376	4.2	6.5	0.0239	0.0691
+c_random	48	0.0453	17.1	376	4.5	6.6	0.0239	0.0638
+c_random	49	0.0456	17.1	376	4.7	6.8	0.0239	0.0638
+c_random	50	0.0455	17.1	376	4.7	6.8	0.0239	0.0638
+c_random	51	0.0455	17.1	376	4.8	6.8	0.0239	0.0638
+c_random	52	0.0460	17.3	376	4.8	7.0	0.0239	0.0638
+c_random	53	0.0473	17.8	376	5.0	7.8	0.0239	0.0638
+c_random	54	0.0472	17.8	376	5.1	7.8	0.0239	0.0638
+c_random	55	0.0455	17.1	376	5.7	7.8	0.0213	0.0638
+c_random	56	0.0455	17.1	376	5.7	7.8	0.0213	0.0638
+c_random	57	0.0453	17.1	376	5.7	7.8	0.0213	0.0638
+c_random	58	0.0452	17.0	376	5.7	7.7	0.0213	0.0638
+c_random	59	0.0447	16.8	376	6.1	7.9	0.0239	0.0638
+c_random	60	0.0444	16.7	376	6.2	7.9	0.0239	0.0638
+c_random	61	0.0444	16.7	376	6.2	7.9	0.0239	0.0638
+c_random	62	0.0447	16.8	376	6.3	8.1	0.0239	0.0638
+c_random	63	0.0443	16.6	376	6.4	8.1	0.0239	0.0638
+c_random	64	0.0443	16.6	376	6.4	8.1	0.0239	0.0638
+c_random	65	0.0444	16.7	376	6.4	8.1	0.0266	0.0638
+c_random	66	0.0441	16.6	376	6.5	8.1	0.0266	0.0638
+c_random	67	0.0444	16.7	376	6.5	8.2	0.0266	0.0638
+c_random	68	0.0445	16.8	376	6.5	8.2	0.0266	0.0638
+c_random	69	0.0443	16.6	376	6.5	8.2	0.0266	0.0638
+c_random	70	0.0443	16.6	376	6.6	8.2	0.0266	0.0638
+c_random	71	0.0444	16.7	376	6.7	8.3	0.0266	0.0638
+c_random	72	0.0443	16.6	376	6.7	8.3	0.0266	0.0612
+c_random	73	0.0441	16.6	376	6.7	8.2	0.0266	0.0612
+c_random	74	0.0441	16.6	376	6.7	8.2	0.0266	0.0612
+c_random	75	0.0440	16.6	376	6.7	8.2	0.0266	0.0612
+c_random	76	0.0445	16.8	376	6.7	8.4	0.0266	0.0638
+c_random	77	0.0443	16.6	376	6.7	8.3	0.0266	0.0638
+c_random	78	0.0434	16.3	376	7.0	8.3	0.0266	0.0638
+c_random	79	0.0431	16.2	376	7.0	8.2	0.0266	0.0638
+c_random	80	0.0431	16.2	376	7.1	8.3	0.0266	0.0612
+c_random	81	0.0431	16.2	376	7.1	8.3	0.0266	0.0612
+c_random	82	0.0431	16.2	376	7.1	8.3	0.0266	0.0612
+c_random	83	0.0428	16.1	376	7.1	8.2	0.0266	0.0612
+c_random	84	0.0428	16.1	376	7.1	8.2	0.0266	0.0612
+c_random	85	0.0428	16.1	376	7.1	8.2	0.0266	0.0612
+c_random	86	0.0428	16.1	376	7.1	8.2	0.0266	0.0612
+c_random	87	0.0426	16.0	376	7.2	8.2	0.0266	0.0612
+c_random	88	0.0423	15.9	376	7.3	8.2	0.0266	0.0585
+c_random	89	0.0420	15.8	376	7.3	8.2	0.0266	0.0585
+c_random	90	0.0420	15.8	376	7.3	8.2	0.0266	0.0585
+c_random	91	0.0419	15.8	376	7.3	8.1	0.0266	0.0585
+c_random	92	0.0418	15.7	376	7.4	8.1	0.0266	0.0585
+c_random	93	0.0407	15.3	376	7.8	8.1	0.0239	0.0585
+c_random	94	0.0406	15.2	376	7.8	8.1	0.0239	0.0585
+c_random	95	0.0402	15.1	376	8.0	8.1	0.0239	0.0585
+c_random	96	0.0400	15.1	376	8.0	8.1	0.0239	0.0585
+c_random	97	0.0392	14.8	376	8.3	8.1	0.0239	0.0559
+c_random	98	0.0392	14.8	376	8.3	8.1	0.0239	0.0559
+c_random	99	0.0394	14.8	376	8.3	8.1	0.0239	0.0559
+c_random	100	0.0390	14.7	376	8.4	8.1	0.0239	0.0559
+c_random	101	0.0386	14.5	376	8.4	8.0	0.0213	0.0559
+c_random	102	0.0384	14.4	376	8.4	7.9	0.0213	0.0559
+c_random	103	0.0383	14.4	376	8.4	7.8	0.0186	0.0559
+c_random	104	0.0382	14.3	376	8.5	7.8	0.0186	0.0532
+c_random	105	0.0380	14.3	376	8.6	7.8	0.0186	0.0532
+c_random	106	0.0380	14.3	376	8.6	7.9	0.0186	0.0532
+c_random	107	0.0380	14.3	376	8.6	7.9	0.0186	0.0532
+c_random	108	0.0379	14.2	376	8.7	7.9	0.0186	0.0532
+c_random	109	0.0382	14.3	376	8.7	8.0	0.0186	0.0532
+c_random	110	0.0380	14.3	376	8.7	8.0	0.0186	0.0532
+c_random	111	0.0379	14.2	376	8.8	8.0	0.0186	0.0532
+c_random	112	0.0379	14.2	376	8.8	8.1	0.0186	0.0532
+c_random	113	0.0378	14.2	376	8.8	8.0	0.0186	0.0532
+c_random	114	0.0375	14.1	376	8.8	8.0	0.0186	0.0532
+c_random	115	0.0374	14.1	376	8.8	7.9	0.0186	0.0532
+c_random	116	0.0375	14.1	376	8.8	8.0	0.0186	0.0532
+c_random	117	0.0375	14.1	376	8.8	8.0	0.0186	0.0532
+c_random	118	0.0363	13.7	376	9.2	7.8	0.0186	0.0505
+c_random	119	0.0363	13.7	376	9.2	7.8	0.0186	0.0505
+c_random	120	0.0360	13.6	376	9.2	7.8	0.0186	0.0505
+c_random	121	0.0360	13.6	376	9.2	7.8	0.0186	0.0505
+c_random	122	0.0359	13.5	376	9.2	7.8	0.0186	0.0505
+c_random	123	0.0358	13.4	376	9.2	7.7	0.0186	0.0505
+c_random	124	0.0356	13.4	376	9.2	7.7	0.0186	0.0505
+c_random	125	0.0354	13.3	376	9.3	7.6	0.0186	0.0505
+c_random	126	0.0354	13.3	376	9.3	7.6	0.0186	0.0505
+c_random	127	0.0352	13.2	376	9.3	7.5	0.0186	0.0505
+c_random	128	0.0350	13.2	376	9.3	7.5	0.0186	0.0505
+c_random	129	0.0352	13.2	376	9.3	7.5	0.0186	0.0505
+c_random	130	0.0350	13.2	376	9.3	7.5	0.0186	0.0505
+c_random	131	0.0347	13.1	376	9.4	7.5	0.0186	0.0505
+c_random	132	0.0344	12.9	376	9.4	7.4	0.0186	0.0505
+c_random	133	0.0344	12.9	376	9.4	7.4	0.0186	0.0505
+c_random	134	0.0342	12.8	376	9.4	7.3	0.0186	0.0505
+c_random	135	0.0340	12.8	376	9.4	7.2	0.0160	0.0505
+c_random	136	0.0339	12.8	376	9.4	7.2	0.0160	0.0505
+c_random	137	0.0338	12.7	376	9.5	7.2	0.0160	0.0505
+c_random	138	0.0343	12.9	376	9.6	7.5	0.0160	0.0638
+c_random	139	0.0340	12.8	376	9.6	7.4	0.0160	0.0612
+c_random	140	0.0340	12.8	376	9.6	7.4	0.0160	0.0612
+c_random	141	0.0336	12.7	376	9.7	7.3	0.0160	0.0612
+c_random	142	0.0336	12.7	376	9.7	7.3	0.0160	0.0612
+c_random	143	0.0334	12.6	376	9.7	7.2	0.0160	0.0612
+c_random	144	0.0334	12.6	376	9.7	7.2	0.0186	0.0612
+c_random	145	0.0332	12.5	376	9.8	7.2	0.0186	0.0612
+c_random	146	0.0332	12.5	376	9.8	7.2	0.0186	0.0612
+c_random	147	0.0332	12.5	376	9.8	7.2	0.0186	0.0612
+c_random	148	0.0332	12.5	376	9.8	7.2	0.0186	0.0612
+c_random	149	0.0332	12.5	376	9.8	7.2	0.0186	0.0612
+c_random	150	0.0330	12.4	376	9.8	7.2	0.0186	0.0559
+c_random	151	0.0330	12.4	376	9.8	7.2	0.0186	0.0559
+c_random	152	0.0330	12.4	376	9.8	7.2	0.0186	0.0559
+c_random	153	0.0328	12.3	376	9.8	7.2	0.0186	0.0532
+c_random	154	0.0326	12.2	376	9.9	7.2	0.0186	0.0532
+c_random	155	0.0326	12.2	376	9.9	7.2	0.0186	0.0532
+c_random	156	0.0324	12.2	376	9.9	7.2	0.0186	0.0532
+c_random	157	0.0324	12.2	376	9.9	7.2	0.0186	0.0532
+c_random	158	0.0323	12.2	376	9.9	7.1	0.0186	0.0532
+c_random	159	0.0320	12.1	376	9.9	7.0	0.0186	0.0505
+c_random	160	0.0318	11.9	376	10.0	7.0	0.0186	0.0505
+c_random	161	0.0316	11.9	376	10.1	7.0	0.0160	0.0505
+c_random	162	0.0316	11.9	376	10.1	7.0	0.0160	0.0505
+c_random	163	0.0315	11.8	376	10.2	7.0	0.0160	0.0505
+c_random	164	0.0314	11.8	376	10.2	7.0	0.0160	0.0505
+c_random	165	0.0312	11.8	376	10.2	7.0	0.0160	0.0505
+c_random	166	0.0312	11.8	376	10.2	7.0	0.0160	0.0505
+c_random	167	0.0312	11.8	376	10.2	7.0	0.0160	0.0505
+c_random	168	0.0310	11.7	376	10.2	6.9	0.0160	0.0505
+c_random	169	0.0314	11.8	376	10.2	7.0	0.0160	0.0505
+c_random	170	0.0318	11.9	376	10.2	7.2	0.0160	0.0505
+c_random	171	0.0314	11.8	376	10.2	7.0	0.0160	0.0505
+c_random	172	0.0314	11.8	376	10.2	7.0	0.0160	0.0505
+c_random	173	0.0314	11.8	376	10.2	7.0	0.0160	0.0505
+c_random	174	0.0312	11.8	376	10.2	7.0	0.0160	0.0505
+c_random	175	0.0310	11.7	376	10.3	7.0	0.0160	0.0479
+c_random	176	0.0310	11.7	376	10.3	7.0	0.0160	0.0479
+c_random	177	0.0307	11.6	376	10.3	6.8	0.0160	0.0479
+c_random	178	0.0307	11.6	376	10.3	6.8	0.0160	0.0479
+c_random	179	0.0298	11.2	376	10.6	6.8	0.0160	0.0479
+c_random	180	0.0297	11.2	376	10.6	6.8	0.0160	0.0479
+c_random	181	0.0297	11.2	376	10.6	6.8	0.0160	0.0479
+c_random	182	0.0297	11.2	376	10.7	6.8	0.0160	0.0479
+c_random	183	0.0295	11.1	376	10.7	6.8	0.0160	0.0479
+c_random	184	0.0293	11.0	376	10.8	6.8	0.0160	0.0479
+c_random	185	0.0291	10.9	376	10.8	6.8	0.0160	0.0479
+c_random	186	0.0290	10.9	376	10.8	6.7	0.0160	0.0479
+c_random	187	0.0289	10.8	376	10.8	6.7	0.0160	0.0479
+c_random	188	0.0289	10.8	376	10.8	6.7	0.0160	0.0479
+c_random	189	0.0286	10.8	376	10.8	6.5	0.0133	0.0479
+c_random	190	0.0286	10.8	376	10.8	6.5	0.0133	0.0479
+c_random	191	0.0285	10.7	376	10.8	6.5	0.0133	0.0479
+c_random	192	0.0283	10.7	376	10.8	6.5	0.0133	0.0479
+c_random	193	0.0282	10.6	376	10.8	6.5	0.0133	0.0479
+c_random	194	0.0279	10.5	376	10.8	6.3	0.0133	0.0479
+c_random	195	0.0277	10.4	376	10.8	6.2	0.0133	0.0479
+c_random	196	0.0275	10.3	376	10.8	6.2	0.0133	0.0479
+c_random	197	0.0271	10.2	376	10.8	6.0	0.0133	0.0479
+c_random	198	0.0269	10.1	376	10.9	6.0	0.0133	0.0479
+c_random	199	0.0266	10.0	376	10.9	6.0	0.0133	0.0479
+c_random	200	0.0269	10.1	376	10.9	6.0	0.0133	0.0479

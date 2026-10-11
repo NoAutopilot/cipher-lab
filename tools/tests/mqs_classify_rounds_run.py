@@ -19,9 +19,13 @@ sys.path.insert(0, A)
 from name_clusters import value_map  # noqa: E402
 
 
+MAPF = A + '/no87_box_token.tsv'       # BOXMAP-RESCORE (11 Oct 2026): --map FILE (old columns with truth: atlas/no87_map.py
+LABELS = A + '/labels.json'            # --compat OUT) for arm C's half-A selection and M2; --labels FILE for the atlas naming
+
+
 def classify(work, name, holdout, train=None):
     out = os.path.join(work, name + '.tsv')
-    cmd = [sys.executable, ROOT + '/tools/glyph_atlas.py', 'classify', '--out', A, '--labels', A + '/labels.json',
+    cmd = [sys.executable, ROOT + '/tools/glyph_atlas.py', 'classify', '--out', A, '--labels', LABELS,
            '--page', 'all', '--tsv', out, '--topk', '3']
     for h in holdout:
         cmd += ['--holdout', h]
@@ -42,8 +46,10 @@ def bench(tk, prefixes, out):
 
 
 def m1(out, base=None):
+    # --legacy (added 11 Oct 2026, BOXMAP-RESCORE): tx_bench's default scorer changed on 10 Oct (TOOL-SCORER-FIX: fixed
+    # manifest, new output format the regexes below do not match); --legacy is the 9 Oct scorer these results were made with.
     cmd = [sys.executable, ROOT + '/tools/tx_bench.py', out, '--bench', ROOT + '/BENCHMARK-TX.tsv', '--item',
-           'birago1572-no87']
+           'birago1572-no87', '--legacy']
     t = subprocess.run(cmd, check=True, capture_output=True, text=True).stdout
     e = re.search(r'err_true ([\d.]+) \((\d+)/(\d+)\)', t)
     p = None
@@ -54,7 +60,8 @@ def m1(out, base=None):
 
 
 def m2(tk):
-    t = subprocess.run([sys.executable, A + '/score_no87.py', tk], check=True, capture_output=True, text=True).stdout
+    t = subprocess.run([sys.executable, A + '/score_no87.py', tk] + (['--map', MAPF] if MAPF != A + '/no87_box_token.tsv' else []),
+                       check=True, capture_output=True, text=True).stdout
     return float(re.search(r'atlas top-1:\s+err_true ([\d.]+)', t).group(1))
 
 
@@ -68,7 +75,7 @@ def write_train(path, pairs):
 
 def arm_c():
     V = value_map()
-    pairs = [(r['sid'], r['sign']) for r in R(A + '/no87_box_token.tsv')
+    pairs = [(r['sid'], r['sign']) for r in R(MAPF)
              if r['split'] == 'heldout' and r['sid'].startswith(tuple(HALF_A)) and r['op'] == '1:1' and r['truth']
              and V.get(r['sign']) == r['truth']]
     return pairs, HALF_B, HALF_B
@@ -100,7 +107,15 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--seeds', type=int, default=20)
     ap.add_argument('--work', default=tempfile.mkdtemp())
+    ap.add_argument('--map', help='BOXMAP-RESCORE: box map with a truth column (no87_map.py --compat OUT); needs --out')
+    ap.add_argument('--labels', help='BOXMAP-RESCORE: atlas labels.json to classify with; needs --out')
+    ap.add_argument('--out', help='results TSV (default tools/tests/MQS-CLASSIFY-ROUNDS-results.tsv)')
     a = ap.parse_args()
+    global MAPF, LABELS
+    if (a.map or a.labels) and not a.out:
+        ap.error('--map/--labels need --out (never overwrite the committed results)')
+    MAPF = os.path.abspath(a.map) if a.map else MAPF
+    LABELS = os.path.abspath(a.labels) if a.labels else LABELS
     os.makedirs(a.work, exist_ok=True)
     res = []
     for arm, fn in (('C', arm_c), ('T', arm_t)):
@@ -121,7 +136,7 @@ def main():
             es, ks, ns, _, _ = m1(bench(tks, scored, os.path.join(a.work, f'{arm}_null{s}_bench.tsv')))
             res.append((arm, 'null', s, len(pairs), es, f'{ks}/{ns}', e0 - es, '', '', m2(tks)))
         print(arm, 'done', flush=True)
-    out = os.path.join(ROOT, 'tools/tests/MQS-CLASSIFY-ROUNDS-results.tsv')
+    out = os.path.abspath(a.out) if a.out else os.path.join(ROOT, 'tools/tests/MQS-CLASSIFY-ROUNDS-results.tsv')
     with open(out, 'w') as f:
         f.write('# MQS-CLASSIFY-ROUNDS, PREREG tools/tests/PREREG-MQS-CLASSIFY-ROUNDS.md; regenerate: '
                 'python3 tools/tests/mqs_classify_rounds_run.py\n')

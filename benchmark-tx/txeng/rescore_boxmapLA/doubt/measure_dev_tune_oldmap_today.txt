@@ -1,0 +1,62 @@
+
+## dev_tune vs L (benchmark-tx/txeng/units/labels_dev_tune.tsv): 12 wrong of 343 scored
+
+Per signal
+| signal / combination | wrong flagged | recall | flagged | share |
+|---|---|---|---|---|
+| show | 10/12 | 0.833 | 172/343 | 0.501 |
+| disagree | 2/12 | 0.167 | 31/343 | 0.090 |
+| bandcut | 5/12 | 0.417 | 59/343 | 0.172 |
+| thin | 5/12 | 0.417 | 79/343 | 0.230 |
+| contrast | 5/12 | 0.417 | 72/343 | 0.210 |
+| stab | 1/12 | 0.083 | 18/343 | 0.052 |
+| freq | 5/12 | 0.417 | 122/343 | 0.356 |
+| latt | 5/12 | 0.417 | 19/343 | 0.055 |
+| pair | 11/12 | 0.917 | 153/343 | 0.446 |
+| n_signals>=2 | 12/12 | 1.000 | 218/343 | 0.636 |
+| n_signals>=3 | 10/12 | 0.833 | 137/343 | 0.399 |
+| n_signals>=4 | 7/12 | 0.583 | 57/343 | 0.166 |
+
+Best OR-combination (k signals at most, share cap)
+| k | cap | signal / combination | wrong flagged | recall | flagged | share |
+|---|---|---|---|---|---|---|
+| 1 | 0.1 | latt | 5/12 | 0.417 | 19/343 | 0.055 |
+| 1 | 0.15 | latt | 5/12 | 0.417 | 19/343 | 0.055 |
+| 1 | 0.2 | latt | 5/12 | 0.417 | 19/343 | 0.055 |
+| 2 | 0.1 | latt | 5/12 | 0.417 | 19/343 | 0.055 |
+| 2 | 0.15 | disagree+latt | 6/12 | 0.500 | 36/343 | 0.105 |
+| 2 | 0.2 | disagree+latt | 6/12 | 0.500 | 36/343 | 0.105 |
+| 3 | 0.1 | latt | 5/12 | 0.417 | 19/343 | 0.055 |
+| 3 | 0.15 | disagree+latt | 6/12 | 0.500 | 36/343 | 0.105 |
+| 3 | 0.2 | disagree+latt | 6/12 | 0.500 | 36/343 | 0.105 |
+
+## dev_tune vs A (benchmark-tx/txeng/units/passA_dev_tune.tsv): 21 wrong of 343 scored
+
+Per signal
+| signal / combination | wrong flagged | recall | flagged | share |
+|---|---|---|---|---|
+| show | 18/21 | 0.857 | 172/343 | 0.501 |
+| disagree | 10/21 | 0.476 | 31/343 | 0.090 |
+| bandcut | 5/21 | 0.238 | 59/343 | 0.172 |
+| thin | 10/21 | 0.476 | 79/343 | 0.230 |
+| contrast | 8/21 | 0.381 | 72/343 | 0.210 |
+| stab | 1/21 | 0.048 | 18/343 | 0.052 |
+| freq | 6/21 | 0.286 | 122/343 | 0.356 |
+| latt | 12/21 | 0.571 | 19/343 | 0.055 |
+| pair | 11/21 | 0.524 | 153/343 | 0.446 |
+| n_signals>=2 | 21/21 | 1.000 | 218/343 | 0.636 |
+| n_signals>=3 | 18/21 | 0.857 | 137/343 | 0.399 |
+| n_signals>=4 | 12/21 | 0.571 | 57/343 | 0.166 |
+
+Best OR-combination (k signals at most, share cap)
+| k | cap | signal / combination | wrong flagged | recall | flagged | share |
+|---|---|---|---|---|---|---|
+| 1 | 0.1 | latt | 12/21 | 0.571 | 19/343 | 0.055 |
+| 1 | 0.15 | latt | 12/21 | 0.571 | 19/343 | 0.055 |
+| 1 | 0.2 | latt | 12/21 | 0.571 | 19/343 | 0.055 |
+| 2 | 0.1 | latt | 12/21 | 0.571 | 19/343 | 0.055 |
+| 2 | 0.15 | disagree+latt | 14/21 | 0.667 | 36/343 | 0.105 |
+| 2 | 0.2 | disagree+latt | 14/21 | 0.667 | 36/343 | 0.105 |
+| 3 | 0.1 | latt | 12/21 | 0.571 | 19/343 | 0.055 |
+| 3 | 0.15 | disagree+latt | 14/21 | 0.667 | 36/343 | 0.105 |
+| 3 | 0.2 | disagree+latt | 14/21 | 0.667 | 36/343 | 0.105 |

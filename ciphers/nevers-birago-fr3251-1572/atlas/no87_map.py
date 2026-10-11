@@ -125,7 +125,38 @@ def label_aware(check=False):
     return 0
 
 
+def compat(out, src=NEW_MAP):
+    """--compat OUT (BOXMAP-RESCORE, 11 Oct 2026, account 3): the label-aware map in the OLD file's row convention and columns
+    (sid fol line pos idx sign truth op split), for re-running a consumer of no87_box_token.tsv with only the map changed: one row
+    per 1:1 box; a 2:1 pair -> one row, the first box's sid (the old main() above never listed the second box); a 1:2 box -> one
+    row at its first token; unsure / bad-cut boxes keep their own op (never 1:1, so a consumer that keeps op == '1:1' drops them).
+    `truth` is filled exactly as main() fills it (align_real.tsv plain_chunk at the token's idx, 1:1 rows only), so this READS the
+    clerk-sheet alignment: write OUT outside the repository (a scratch path) and never feed it to a truth-blind step."""
+    rows, seen2, seen12 = [], set(), set()
+    al = {}
+    for r in rd(os.path.join(H, 'align87', 'align_real.tsv')):
+        al.setdefault(r['cipher_line'], {})[int(r['idx'])] = r['plain_chunk']
+    for r in rd(src):
+        op = r['op']
+        if op == '2:1':
+            if (r['line'], r['pos']) in seen2: continue
+            seen2.add((r['line'], r['pos']))
+        elif op == '1:2':
+            if r['sid'] in seen12: continue
+            seen12.add(r['sid'])
+        t = al.get(r['fol'], {}).get(int(r['idx']), '') if op == '1:1' and r['idx'] != '' else ''
+        rows.append(dict(r, truth=t))
+    cols = ['sid', 'fol', 'line', 'pos', 'idx', 'sign', 'truth', 'op', 'split']
+    with open(out, 'w') as f:
+        f.write('\t'.join(cols) + '\n')
+        for r in rows: f.write('\t'.join(str(r[c]) for c in cols) + '\n')
+    print('compat ->', out, dict(collections.Counter(r['op'] for r in rows)))
+    return 0
+
+
 if __name__ == '__main__':
+    if '--compat' in sys.argv:
+        sys.exit(compat(sys.argv[sys.argv.index('--compat') + 1]))
     if '--label-aware' in sys.argv:
         sys.exit(label_aware('--check' in sys.argv))
     main()

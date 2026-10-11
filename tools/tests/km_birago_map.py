@@ -33,7 +33,9 @@ def main():
     subprocess.run([sys.executable, os.path.join(ROOT, 'tools', 'glyph_atlas.py'), 'classify', '--out', A, '--labels', os.path.join(A, 'labels.json'),
                     '--page', 'all', '--tsv', tsv, '--topk', '3'] + ho, check=True, stdout=subprocess.DEVNULL)
     code = {r['box']: r['code'] for r in ds.load_tsv(tsv)}
-    bx = ds.Boxes(A, os.path.join(A, 'no87_box_token.tsv'))
+    # --map FILE (BOXMAP-RESCORE, 11 Oct 2026): run KM through FILE (e.g. atlas/no87_box_token_labelaware.tsv); default the old map
+    mp = sys.argv[sys.argv.index('--map') + 1] if '--map' in sys.argv else os.path.join(A, 'no87_box_token.tsv')
+    bx = ds.Boxes(A, os.path.abspath(mp))
     lines = collections.defaultdict(list)       # line label -> [(pos, sign, sid)] 1:1 held-out tokens, in position order
     other = collections.Counter()
     for fol in ('f178v', 'f179r'):

@@ -1,0 +1,75 @@
+{
+ "tiles_settled": 248,
+ "scored_cohort": 207,
+ "left_out": {
+  "no position map (f.178r)": 33,
+  "bad-cut / not-letter / aside": 8,
+  "plain sign with no key row (unmapped)": 0
+ },
+ "owner_new_piles_read_unknown": 27,
+ "all": {
+  "scored_positions": 198,
+  "owner_wrong": 24,
+  "owner_err_true": 0.121,
+  "owner_ci95": [
+   0.083,
+   0.174
+  ],
+  "committed_wrong": 2,
+  "committed_err_true": 0.01,
+  "committed_ci95": [
+   0.003,
+   0.036
+  ],
+  "fixed": 0,
+  "broken": 22,
+  "sign_test_p": 0.0
+ },
+ "moved": {
+  "scored_positions": 19,
+  "owner_wrong": 6,
+  "owner_err_true": 0.316,
+  "owner_ci95": [
+   0.154,
+   0.54
+  ],
+  "committed_wrong": 0,
+  "committed_err_true": 0.0,
+  "committed_ci95": [
+   0.0,
+   0.168
+  ],
+  "fixed": 0,
+  "broken": 6,
+  "sign_test_p": 0.0312
+ },
+ "kept": {
+  "scored_positions": 179,
+  "owner_wrong": 18,
+  "owner_err_true": 0.101,
+  "owner_ci95": [
+   0.065,
+   0.153
+  ],
+  "committed_wrong": 2,
+  "committed_err_true": 0.011,
+  "committed_ci95": [
+   0.003,
+   0.04
+  ],
+  "fixed": 0,
+  "broken": 16,
+  "sign_test_p": 0.0
+ },
+ "diagnostic_plain_piles_only": {
+  "scored_positions": 175,
+  "owner_wrong": 1,
+  "owner_err_true": 0.006,
+  "owner_ci95": [
+   0.001,
+   0.032
+  ],
+  "committed_wrong": 1,
+  "committed_err_true": 0.006
+ }
+}

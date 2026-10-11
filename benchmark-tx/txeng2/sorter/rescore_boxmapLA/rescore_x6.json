@@ -1,0 +1,782 @@
+[
+ {
+  "unit": "dev_tune",
+  "mode": "cluster",
+  "mask": "x",
+  "before": {
+   "base": "7/338",
+   "tiles": 333,
+   "clusters": 80,
+   "a_doubt": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": -8,
+    "removed_20": -6
+   },
+   "b_size": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": -20,
+    "removed_20": -33
+   },
+   "d_oracle": {
+    "to_2pct": 1,
+    "removed_10": 4,
+    "removed_20": 4,
+    "steps": 4
+   },
+   "c_random": {
+    "reach": 0,
+    "r10": -11.5,
+    "r20": -21.5,
+    "band": [
+     -37,
+     -11
+    ]
+   }
+  },
+  "after": {
+   "base": "7/338",
+   "tiles": 327,
+   "clusters": 79,
+   "a_doubt": {
+    "to_2pct": 1,
+    "removed_10": 1,
+    "removed_20": 1
+   },
+   "b_size": {
+    "to_2pct": 14,
+    "removed_10": -1,
+    "removed_20": -2
+   },
+   "d_oracle": {
+    "to_2pct": 1,
+    "removed_10": 5,
+    "removed_20": 5,
+    "steps": 5
+   },
+   "c_random": {
+    "reach": 1,
+    "r10": -1.8,
+    "r20": -3.0,
+    "band": [
+     -8,
+     2
+    ]
+   }
+  }
+ },
+ {
+  "unit": "dev_tune",
+  "mode": "cluster",
+  "mask": "m",
+  "before": {
+   "base": "12/343",
+   "tiles": 333,
+   "clusters": 80,
+   "a_doubt": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": -11,
+    "removed_20": -9
+   },
+   "b_size": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": -20,
+    "removed_20": -33
+   },
+   "d_oracle": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": 5,
+    "removed_20": 5,
+    "steps": 5
+   },
+   "c_random": {
+    "reach": 0,
+    "r10": -15.2,
+    "r20": -24.0,
+    "band": [
+     -41,
+     -18
+    ]
+   }
+  },
+  "after": {
+   "base": "12/343",
+   "tiles": 327,
+   "clusters": 79,
+   "a_doubt": {
+    "to_2pct": 188,
+    "removed_10": -3,
+    "removed_20": -3
+   },
+   "b_size": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": -1,
+    "removed_20": -2
+   },
+   "d_oracle": {
+    "to_2pct": 6,
+    "removed_10": 7,
+    "removed_20": 7,
+    "steps": 7
+   },
+   "c_random": {
+    "reach": 0,
+    "r10": -2.8,
+    "r20": -4.7,
+    "band": [
+     -15,
+     1
+    ]
+   }
+  }
+ },
+ {
+  "unit": "dev_tune",
+  "mode": "pile",
+  "mask": "x",
+  "before": {
+   "base": "7/338",
+   "tiles": 333,
+   "clusters": 80,
+   "a_doubt": {
+    "to_2pct": 1,
+    "removed_10": 0,
+    "removed_20": 2
+   },
+   "b_size": {
+    "to_2pct": 70,
+    "removed_10": 0,
+    "removed_20": 0
+   },
+   "d_oracle": {
+    "to_2pct": 1,
+    "removed_10": 7,
+    "removed_20": 7,
+    "steps": 7
+   },
+   "c_random": {
+    "reach": 10,
+    "r10": 0.2,
+    "r20": 0.4,
+    "band": [
+     0,
+     2
+    ]
+   }
+  },
+  "after": {
+   "base": "7/338",
+   "tiles": 327,
+   "clusters": 79,
+   "a_doubt": {
+    "to_2pct": 1,
+    "removed_10": -1,
+    "removed_20": 1
+   },
+   "b_size": {
+    "to_2pct": 69,
+    "removed_10": 0,
+    "removed_20": 0
+   },
+   "d_oracle": {
+    "to_2pct": 1,
+    "removed_10": 7,
+    "removed_20": 7,
+    "steps": 7
+   },
+   "c_random": {
+    "reach": 10,
+    "r10": 0.2,
+    "r20": 0.4,
+    "band": [
+     0,
+     2
+    ]
+   }
+  }
+ },
+ {
+  "unit": "dev_tune",
+  "mode": "pile",
+  "mask": "m",
+  "before": {
+   "base": "12/343",
+   "tiles": 333,
+   "clusters": 80,
+   "a_doubt": {
+    "to_2pct": 99,
+    "removed_10": 0,
+    "removed_20": 2
+   },
+   "b_size": {
+    "to_2pct": 190,
+    "removed_10": 0,
+    "removed_20": 0
+   },
+   "d_oracle": {
+    "to_2pct": 6,
+    "removed_10": 8,
+    "removed_20": 8,
+    "steps": 8
+   },
+   "c_random": {
+    "reach": 6,
+    "r10": 0.2,
+    "r20": -0.2,
+    "band": [
+     -5,
+     2
+    ]
+   }
+  },
+  "after": {
+   "base": "12/343",
+   "tiles": 327,
+   "clusters": 79,
+   "a_doubt": {
+    "to_2pct": 106,
+    "removed_10": -1,
+    "removed_20": 1
+   },
+   "b_size": {
+    "to_2pct": 188,
+    "removed_10": 0,
+    "removed_20": 0
+   },
+   "d_oracle": {
+    "to_2pct": 6,
+    "removed_10": 8,
+    "removed_20": 8,
+    "steps": 8
+   },
+   "c_random": {
+    "reach": 6,
+    "r10": 0.2,
+    "r20": -0.3,
+    "band": [
+     -5,
+     2
+    ]
+   }
+  }
+ },
+ {
+  "unit": "eval_heldout",
+  "mode": "cluster",
+  "mask": "x",
+  "before": {
+   "base": "10/371",
+   "tiles": 381,
+   "clusters": 89,
+   "a_doubt": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": -31,
+    "removed_20": -49
+   },
+   "b_size": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": -46,
+    "removed_20": -55
+   },
+   "d_oracle": {
+    "to_2pct": 1,
+    "removed_10": 7,
+    "removed_20": 7,
+    "steps": 3
+   },
+   "c_random": {
+    "reach": 1,
+    "r10": -19.1,
+    "r20": -34.8,
+    "band": [
+     -68,
+     -20
+    ]
+   }
+  },
+  "after": {
+   "base": "10/371",
+   "tiles": 373,
+   "clusters": 82,
+   "a_doubt": {
+    "to_2pct": 1,
+    "removed_10": 6,
+    "removed_20": 6
+   },
+   "b_size": {
+    "to_2pct": 23,
+    "removed_10": -3,
+    "removed_20": -3
+   },
+   "d_oracle": {
+    "to_2pct": 1,
+    "removed_10": 9,
+    "removed_20": 9,
+    "steps": 3
+   },
+   "c_random": {
+    "reach": 5,
+    "r10": -1.5,
+    "r20": -3.1,
+    "band": [
+     -8,
+     2
+    ]
+   }
+  }
+ },
+ {
+  "unit": "eval_heldout",
+  "mode": "cluster",
+  "mask": "m",
+  "before": {
+   "base": "15/376",
+   "tiles": 381,
+   "clusters": 89,
+   "a_doubt": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": -31,
+    "removed_20": -49
+   },
+   "b_size": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": -46,
+    "removed_20": -55
+   },
+   "d_oracle": {
+    "to_2pct": 4,
+    "removed_10": 9,
+    "removed_20": 9,
+    "steps": 5
+   },
+   "c_random": {
+    "reach": 0,
+    "r10": -21.6,
+    "r20": -34.2,
+    "band": [
+     -60,
+     -24
+    ]
+   }
+  },
+  "after": {
+   "base": "15/376",
+   "tiles": 373,
+   "clusters": 82,
+   "a_doubt": {
+    "to_2pct": 127,
+    "removed_10": 6,
+    "removed_20": 6
+   },
+   "b_size": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": -3,
+    "removed_20": -3
+   },
+   "d_oracle": {
+    "to_2pct": 2,
+    "removed_10": 12,
+    "removed_20": 12,
+    "steps": 6
+   },
+   "c_random": {
+    "reach": 2,
+    "r10": -1.5,
+    "r20": -1.7,
+    "band": [
+     -11,
+     8
+    ]
+   }
+  }
+ },
+ {
+  "unit": "eval_heldout",
+  "mode": "pile",
+  "mask": "x",
+  "before": {
+   "base": "10/371",
+   "tiles": 381,
+   "clusters": 89,
+   "a_doubt": {
+    "to_2pct": 3,
+    "removed_10": 6,
+    "removed_20": 6
+   },
+   "b_size": {
+    "to_2pct": 196,
+    "removed_10": 0,
+    "removed_20": 0
+   },
+   "d_oracle": {
+    "to_2pct": 1,
+    "removed_10": 9,
+    "removed_20": 9,
+    "steps": 4
+   },
+   "c_random": {
+    "reach": 10,
+    "r10": 1.1,
+    "r20": 1.5,
+    "band": [
+     -1,
+     6
+    ]
+   }
+  },
+  "after": {
+   "base": "10/371",
+   "tiles": 373,
+   "clusters": 82,
+   "a_doubt": {
+    "to_2pct": 1,
+    "removed_10": 6,
+    "removed_20": 6
+   },
+   "b_size": {
+    "to_2pct": 23,
+    "removed_10": 0,
+    "removed_20": 0
+   },
+   "d_oracle": {
+    "to_2pct": 1,
+    "removed_10": 9,
+    "removed_20": 9,
+    "steps": 3
+   },
+   "c_random": {
+    "reach": 10,
+    "r10": 1.8,
+    "r20": 1.7,
+    "band": [
+     -1,
+     6
+    ]
+   }
+  }
+ },
+ {
+  "unit": "eval_heldout",
+  "mode": "pile",
+  "mask": "m",
+  "before": {
+   "base": "15/376",
+   "tiles": 381,
+   "clusters": 89,
+   "a_doubt": {
+    "to_2pct": 47,
+    "removed_10": 6,
+    "removed_20": 6
+   },
+   "b_size": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": 0,
+    "removed_20": 0
+   },
+   "d_oracle": {
+    "to_2pct": 3,
+    "removed_10": 13,
+    "removed_20": 13,
+    "steps": 8
+   },
+   "c_random": {
+    "reach": 9,
+    "r10": 0.8,
+    "r20": 1.5,
+    "band": [
+     0,
+     5
+    ]
+   }
+  },
+  "after": {
+   "base": "15/376",
+   "tiles": 373,
+   "clusters": 82,
+   "a_doubt": {
+    "to_2pct": 47,
+    "removed_10": 6,
+    "removed_20": 6
+   },
+   "b_size": {
+    "to_2pct": 49,
+    "removed_10": 0,
+    "removed_20": 0
+   },
+   "d_oracle": {
+    "to_2pct": 2,
+    "removed_10": 12,
+    "removed_20": 12,
+    "steps": 6
+   },
+   "c_random": {
+    "reach": 9,
+    "r10": 1.4,
+    "r20": 2.7,
+    "band": [
+     0,
+     8
+    ]
+   }
+  }
+ },
+ {
+  "unit": "whole",
+  "mode": "cluster",
+  "mask": "x",
+  "before": {
+   "base": "17/709",
+   "tiles": 714,
+   "clusters": 97,
+   "a_doubt": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": -40,
+    "removed_20": -50
+   },
+   "b_size": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": -42,
+    "removed_20": -67
+   },
+   "d_oracle": {
+    "to_2pct": 1,
+    "removed_10": 9,
+    "removed_20": 9,
+    "steps": 6
+   },
+   "c_random": {
+    "reach": 0,
+    "r10": -35.6,
+    "r20": -60.5,
+    "band": [
+     -100,
+     -37
+    ]
+   }
+  },
+  "after": {
+   "base": "17/709",
+   "tiles": 700,
+   "clusters": 91,
+   "a_doubt": {
+    "to_2pct": 5,
+    "removed_10": 9,
+    "removed_20": 4
+   },
+   "b_size": {
+    "to_2pct": 6,
+    "removed_10": 1,
+    "removed_20": 2
+   },
+   "d_oracle": {
+    "to_2pct": 1,
+    "removed_10": 13,
+    "removed_20": 13,
+    "steps": 8
+   },
+   "c_random": {
+    "reach": 1,
+    "r10": -4.1,
+    "r20": -6.7,
+    "band": [
+     -21,
+     -3
+    ]
+   }
+  }
+ },
+ {
+  "unit": "whole",
+  "mode": "cluster",
+  "mask": "m",
+  "before": {
+   "base": "27/719",
+   "tiles": 714,
+   "clusters": 97,
+   "a_doubt": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": -40,
+    "removed_20": -53
+   },
+   "b_size": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": -42,
+    "removed_20": -67
+   },
+   "d_oracle": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": 12,
+    "removed_20": 12,
+    "steps": 8
+   },
+   "c_random": {
+    "reach": 0,
+    "r10": -38.7,
+    "r20": -58.8,
+    "band": [
+     -106,
+     -28
+    ]
+   }
+  },
+  "after": {
+   "base": "27/719",
+   "tiles": 700,
+   "clusters": 91,
+   "a_doubt": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": 9,
+    "removed_20": 0
+   },
+   "b_size": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": 1,
+    "removed_20": 2
+   },
+   "d_oracle": {
+    "to_2pct": 7,
+    "removed_10": 16,
+    "removed_20": 18,
+    "steps": 12
+   },
+   "c_random": {
+    "reach": 0,
+    "r10": -1.5,
+    "r20": -5.2,
+    "band": [
+     -13,
+     1
+    ]
+   }
+  }
+ },
+ {
+  "unit": "whole",
+  "mode": "pile",
+  "mask": "x",
+  "before": {
+   "base": "17/709",
+   "tiles": 714,
+   "clusters": 97,
+   "a_doubt": {
+    "to_2pct": 5,
+    "removed_10": 8,
+    "removed_20": 2
+   },
+   "b_size": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": 0,
+    "removed_20": 0
+   },
+   "d_oracle": {
+    "to_2pct": 1,
+    "removed_10": 14,
+    "removed_20": 15,
+    "steps": 11
+   },
+   "c_random": {
+    "reach": 8,
+    "r10": 0.1,
+    "r20": 0.4,
+    "band": [
+     0,
+     1
+    ]
+   }
+  },
+  "after": {
+   "base": "17/709",
+   "tiles": 700,
+   "clusters": 91,
+   "a_doubt": {
+    "to_2pct": 5,
+    "removed_10": 8,
+    "removed_20": -1
+   },
+   "b_size": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": 0,
+    "removed_20": 0
+   },
+   "d_oracle": {
+    "to_2pct": 1,
+    "removed_10": 14,
+    "removed_20": 14,
+    "steps": 9
+   },
+   "c_random": {
+    "reach": 7,
+    "r10": 0.1,
+    "r20": 0.3,
+    "band": [
+     0,
+     1
+    ]
+   }
+  }
+ },
+ {
+  "unit": "whole",
+  "mode": "pile",
+  "mask": "m",
+  "before": {
+   "base": "27/719",
+   "tiles": 714,
+   "clusters": 97,
+   "a_doubt": {
+    "to_2pct": 166,
+    "removed_10": 8,
+    "removed_20": 2
+   },
+   "b_size": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": 0,
+    "removed_20": 0
+   },
+   "d_oracle": {
+    "to_2pct": 8,
+    "removed_10": 15,
+    "removed_20": 20,
+    "steps": 15
+   },
+   "c_random": {
+    "reach": 0,
+    "r10": 0.2,
+    "r20": 0.5,
+    "band": [
+     -11,
+     5
+    ]
+   }
+  },
+  "after": {
+   "base": "27/719",
+   "tiles": 700,
+   "clusters": 91,
+   "a_doubt": {
+    "to_2pct": 173,
+    "removed_10": 8,
+    "removed_20": -1
+   },
+   "b_size": {
+    "to_2pct": "not reached by k=200",
+    "removed_10": 0,
+    "removed_20": 0
+   },
+   "d_oracle": {
+    "to_2pct": 7,
+    "removed_10": 16,
+    "removed_20": 18,
+    "steps": 12
+   },
+   "c_random": {
+    "reach": 0,
+    "r10": 0.3,
+    "r20": 0.4,
+    "band": [
+     -12,
+     6
+    ]
+   }
+  }
+ }
+]

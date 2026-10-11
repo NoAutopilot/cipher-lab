@@ -22,7 +22,10 @@ rd = lambda p: list(csv.DictReader(open(p, newline=''), delimiter='\t'))
 def main(as_json=False):
     key = {r['sign'] for r in rd(os.path.join(B, 'harvest', 'key_1572_sheet.tsv'))}
     settled = rd(os.path.join(B, 'sorter', 'no87', 'owner-sort-2026-10-04', 'settled_no87.tsv'))
-    pos = {r['sid']: r for r in rd(os.path.join(B, 'atlas', 'no87_box_token.tsv'))}
+    # --map FILE (BOXMAP-RESCORE, 11 Oct 2026): sid -> position through FILE in the old map's row convention (one row per box:
+    # atlas/no87_map.py --compat OUT); default the committed old map
+    mp = sys.argv[sys.argv.index('--map') + 1] if '--map' in sys.argv else os.path.join(B, 'atlas', 'no87_box_token.tsv')
+    pos = {r['sid']: r for r in rd(mp)}
     truth = [r for r in tb.read_tsv(os.path.join(ROOT, 'benchmark-tx', 'birago1572-no87.truth.tsv'))]
     base_lines = tb.load_output([os.path.join(ROOT, 'benchmark-tx', 'outputs', 'birago1572-no87', 'labels.tsv')])
     own = {k: list(v) for k, v in base_lines.items()}

@@ -6,7 +6,11 @@ import argparse, csv, json, subprocess, sys, tempfile
 from collections import Counter, defaultdict
 from pathlib import Path
 D = Path(__file__).resolve().parent; A = D.parent / 'align87'; TOOL = D.parents[3] / 'tools/interlinear_align.py'
-ap = argparse.ArgumentParser(); ap.add_argument('--seeds', type=int, default=20); a = ap.parse_args()
+ap = argparse.ArgumentParser(); ap.add_argument('--seeds', type=int, default=20)
+ap.add_argument('--dir', help='BOXMAP-RESCORE (11 Oct 2026): read cipher_owner/ and cipher_moved/ from DIR and write every output '
+                'there (relabel.py --map M --dir DIR first); default: this folder, the committed run')
+a = ap.parse_args()
+if a.dir: D = Path(a.dir).resolve()
 OPT = ['--floor', '5000', '--digits', '4', '--keep-fs', '--word-prior', '--prior', str(A / 'prior.tsv')]
 tmp = Path(tempfile.mkdtemp()); rd = lambda p: list(csv.DictReader(open(p), delimiter='\t'))
 

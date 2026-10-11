@@ -1,0 +1,37 @@
+call	label	kind	line	pos	old_box	new_box	wrong_tile	q1	q2	q3_top1	truth	readers_sign	cause_class	invented_cause
+f178r_L02	A	control	f178r_L02	18				whole	clean	T45	T45|T66|T86	T45	v	0
+f178r_L02	B	floor	f178r_L02	19				whole	clean	T86	T57|T92|T95|T98|X_CE	T70	v	1
+f178r_L03	A	floor	f178r_L03	31				whole	clean	T83	T36|T50	T96	v	1
+f178r_L03	B	floor	f178r_L03	34				whole	clean	T60	T36|T50	T90	v	1
+f178r_L03	C	control	f178r_L03	13				whole	clean	T83	T60|T76	T76	v	1
+f178r_L03	D	control	f178r_L03	15				whole	clean	T86	T37|T85	T37	v	1
+f178r_L03	E	floor	f178r_L03	23				whole	clean	T85	T27|T53|T65	T90	iii-flagged	1
+f178r_L03	F	control	f178r_L03	12				whole	clean	T37	T37|T85	T85	v	0
+f178v_L02	A	control	f178v_L02	13	f178v_02_013	f178v_02_013	0	whole	clean	T19	T19|T52|T55	T19	v	0
+f178v_L02	B	floor	f178v_L02	12	f178v_02_012	f178v_02_012	0	whole	clean	T36	T45|T66|T86	T36	v	1
+f178v_L05	A	floor	f178v_L05	1	f178v_05_001	f178v_05_001	0	whole	clean	T76	T45|T66|T86	T76	ii	1
+f178v_L05	B	control	f178v_L05	20	f178v_05_020	f178v_05_020	0	whole	clean	T25	T25|T52|T80|T96	T25	v	0
+f178v_L05	C	control	f178v_L05	5	f178v_05_005	f178v_05_005	0	whole	clean	T58	T13|T51|T58|T95	T58	v	0
+f178v_L05	D	control	f178v_L05	3	f178v_05_003	f178v_05_003	0	whole	clean	T55	T19|T52|T55	T55	v	0
+f178v_L05	E	floor	f178v_L05	9	f178v_05_009	f178v_05_009	0	whole	clean	T64	T57|T92|T95|T98|X_CE	T64	ii	1
+f178v_L05	F	floor	f178v_L05	4	f178v_05_004	f178v_05_004	0	whole	clean	T45	T27|T53|T65	T90	iii-flagged	1
+f178v_L06	A	control	f178v_L06	17	f178v_06_017	f178v_06_017	0	joined	clean	T37	T60|T76	T60	i	1
+f178v_L06	B	floor	f178v_L06	27	f178v_06_027	f178v_06_027	0	whole	clean	T26	T33|T49	T76	ii	1
+f178v_L09	A	control	f178v_L09	5	f178v_09_005	f178v_09_005	0	whole	clean	T83	T83|T97	T83	v	0
+f178v_L09	B	floor	f178v_L09	4	f178v_09_004	f178v_09_004	0	whole	clean	T96	T45|T66|T86	T96	v	1
+f178v_L10	A	floor	f178v_L10	4	f178v_10_004	f178v_10_004	0	whole	damaged	T76	T45|T66|T86	T76	iv	1
+f178v_L10	B	control	f178v_L10	32	f178v_10_031	f178v_10_031	0	cut	faint	T96	T25|T52|T80|T96	T96	i	1
+f178v_L11	A	floor	f178v_L11	5	f178v_11_005	f178v_11_005	0	whole	clean	T76	T45|T66|T86	T76	ii	1
+f178v_L11	B	control	f178v_L11	2	f178v_11_002	f178v_11_002	0	whole	clean	T33	T33|T49	T33	v	0
+f178v_L13	A	floor	f178v_L13	7	f178v_13_007	f178v_13_006	1	whole	clean	T90	T19|T52|T55	T70	iii-flagged	1
+f178v_L13	B	control	f178v_L13	26	f178v_13_026	f178v_13_025	1	joined	clean	T13	T37|T85	T37	i	1
+f178v_L15	A	control	f178v_L15	30	f178v_15_029	f178v_15_029	0	whole	clean	T80	T25|T52|T80|T96	T80	ii	0
+f178v_L15	B	floor	f178v_L15	24	f178v_15_023	f178v_15_023	0	whole	clean	T46	T36|T50	T46	ii	1
+f178v_L21	A	floor	f178v_L21	21	f178v_21_021	f178v_21_022	1	whole	clean	T58	T37|T85	T76	v	1
+f178v_L21	B	control	f178v_L21	27	f178v_21_027		1	joined	clean	T45	T60|T76	T60	i	1
+f178v_L22	A	control	f178v_L22	16	f178v_22_016	f178v_22_016	0	whole	clean	T33	T33|T49	T33	v	0
+f178v_L22	B	floor	f178v_L22	2	f178v_22_002	f178v_22_002	0	whole	faint	T60	T10|T38	T60	iv	1
+f178v_L22	C	control	f178v_L22	10	f178v_22_010	f178v_22_010	0	whole	clean	T45	T45|T66|T86	T45	v	0
+f178v_L22	D	floor	f178v_L22	24	f178v_22_024	f178v_22_024	0	whole	clean	T90	T27|T53|T65	T90	iii-flagged	1
+f179r_L02	A	control	f179r_L02	28	f179r_02_029	f179r_02_028	1	whole	clean	T19	T27|T53|T65	T65	v	1
+f179r_L02	B	floor	f179r_L02	8	f179r_02_009	f179r_02_009	0	whole	clean	T24	T45|T66|T86	T24	v	1

@@ -1,0 +1,52 @@
+== map old; topk committed atlas names (topk/no87_heldout.tsv)
+no.87 held-out: 376 signs scored (of 398 held-out tokens; 1:1 box mapping, clerk letter aligned)
+  line-read reconciliation: err_true 0.056  (wrong+U 0.080)
+  atlas top-1:              err_true 0.322  (wrong+U 0.348)
+  atlas top-3 miss (truth not among the 3 codes' values): 0.261
+  both wrong 0.061; atlas label = line-read label on 0.609
+== map old; topk names re-derived on the label-aware map (no87_heldout_LA.tsv)
+no.87 held-out: 376 signs scored (of 398 held-out tokens; 1:1 box mapping, clerk letter aligned)
+  line-read reconciliation: err_true 0.056  (wrong+U 0.080)
+  atlas top-1:              err_true 0.311  (wrong+U 0.340)
+  atlas top-3 miss (truth not among the 3 codes' values): 0.295
+  both wrong 0.061; atlas label = line-read label on 0.622
+== map label-aware; topk committed atlas names (topk/no87_heldout.tsv)
+no.87 held-out: 370 signs scored (of 395 held-out tokens; 1:1 box mapping, clerk letter aligned)
+  line-read reconciliation: err_true 0.059  (wrong+U 0.084)
+  atlas top-1:              err_true 0.103  (wrong+U 0.124)
+  atlas top-3 miss (truth not among the 3 codes' values): 0.078
+  both wrong 0.057; atlas label = line-read label on 0.816
+== map label-aware; topk names re-derived on the label-aware map (no87_heldout_LA.tsv)
+no.87 held-out: 370 signs scored (of 395 held-out tokens; 1:1 box mapping, clerk letter aligned)
+  line-read reconciliation: err_true 0.059  (wrong+U 0.084)
+  atlas top-1:              err_true 0.089  (wrong+U 0.116)
+  atlas top-3 miss (truth not among the 3 codes' values): 0.086
+  both wrong 0.057; atlas label = line-read label on 0.830
+== map sorter-only; topk committed atlas names (topk/no87_heldout.tsv)
+no.87 held-out: 371 signs scored (of 396 held-out tokens; 1:1 box mapping, clerk letter aligned)
+  line-read reconciliation: err_true 0.062  (wrong+U 0.086)
+  atlas top-1:              err_true 0.108  (wrong+U 0.132)
+  atlas top-3 miss (truth not among the 3 codes' values): 0.086
+  both wrong 0.059; atlas label = line-read label on 0.809
+== map sorter-only; topk names re-derived on the label-aware map (no87_heldout_LA.tsv)
+no.87 held-out: 371 signs scored (of 396 held-out tokens; 1:1 box mapping, clerk letter aligned)
+  line-read reconciliation: err_true 0.062  (wrong+U 0.086)
+  atlas top-1:              err_true 0.094  (wrong+U 0.124)
+  atlas top-3 miss (truth not among the 3 codes' values): 0.094
+  both wrong 0.059; atlas label = line-read label on 0.822
+== map status-only; topk committed atlas names (topk/no87_heldout.tsv)
+no.87 held-out: 375 signs scored (of 398 held-out tokens; 1:1 box mapping, clerk letter aligned)
+  line-read reconciliation: err_true 0.056  (wrong+U 0.080)
+  atlas top-1:              err_true 0.320  (wrong+U 0.347)
+  atlas top-3 miss (truth not among the 3 codes' values): 0.259
+  both wrong 0.061; atlas label = line-read label on 0.611
+== map status-only; topk names re-derived on the label-aware map (no87_heldout_LA.tsv)
+no.87 held-out: 375 signs scored (of 398 held-out tokens; 1:1 box mapping, clerk letter aligned)
+  line-read reconciliation: err_true 0.056  (wrong+U 0.080)
+  atlas top-1:              err_true 0.309  (wrong+U 0.339)
+  atlas top-3 miss (truth not among the 3 codes' values): 0.293
+  both wrong 0.061; atlas label = line-read label on 0.624
+== tx_bench --legacy (map-free: atlas boxes in x order, '_' dropped), committed names
+birago1572-no87 [eval] err_true 0.162 (61/376) 95% 0.128-0.203 | wrong 45 deleted 14 inserted 2 | excluded 26 | lines missing 15
+== tx_bench --legacy, names re-derived on the label-aware map
+birago1572-no87 [eval] err_true 0.162 (61/376) 95% 0.128-0.203 | wrong 43 deleted 16 inserted 2 | excluded 26 | lines missing 15

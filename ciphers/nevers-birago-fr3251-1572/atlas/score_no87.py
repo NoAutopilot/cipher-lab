@@ -9,9 +9,14 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from name_clusters import value_map
 R = os.path.dirname(os.path.abspath(__file__))
 V = value_map()
-tk = sys.argv[1] if len(sys.argv) > 1 else os.path.join(R, 'topk', 'no87.tsv')
+# --map FILE (BOXMAP-RESCORE, 11 Oct 2026): score through FILE (old columns, with truth: no87_map.py --compat OUT) instead of
+# no87_box_token.tsv; without it the output is byte-identical to score_no87.txt.
+argv = list(sys.argv[1:]); MAPF = os.path.join(R, 'no87_box_token.tsv')
+if '--map' in argv:
+    i = argv.index('--map'); MAPF = argv[i + 1]; del argv[i:i + 2]
+tk = argv[0] if argv else os.path.join(R, 'topk', 'no87.tsv')
 K = {r['box']: r for r in csv.DictReader(open(tk), delimiter='\t')}
-M = [r for r in csv.DictReader(open(os.path.join(R, 'no87_box_token.tsv')), delimiter='\t')]
+M = [r for r in csv.DictReader(open(MAPF), delimiter='\t')]
 ho = [r for r in M if r['split'] == 'heldout']
 tot_tok = len(ho)
 S = [r for r in ho if r['op'] == '1:1' and r['truth'] and r['sid'] in K]

@@ -10,9 +10,17 @@ from judge_plaintext import LANG_CORPORA, NgramModel, read_corpus
 R = lambda p: list(csv.DictReader(open(p), delimiter='\t'))
 key = K.read_key('key_1572_sheet.tsv'); lat2 = K.read_topk('tx_decode/no87_topk.tsv')
 truth = {(r['line'], int(r['pos'])): r['value'] for r in R('tx_decode/truth87.tsv')}
-bt = {r['sid']: r for r in R('../atlas/no87_box_token.tsv')}
+# --map FILE [--topk FILE] --out FILE (BOXMAP-RESCORE, 11 Oct 2026): join atlas boxes to positions through FILE (old columns:
+# no87_map.py --compat OUT, or any map with sid/line/pos/split) and write --out; without them the run is the committed one.
+A_ = sys.argv[1:]
+MAPF = A_[A_.index('--map') + 1] if '--map' in A_ else '../atlas/no87_box_token.tsv'
+TOPK = A_[A_.index('--topk') + 1] if '--topk' in A_ else '../atlas/topk/no87_heldout.tsv'
+OUT = A_[A_.index('--out') + 1] if '--out' in A_ else 'tx_decode/atlas_mix.json'
+if ('--map' in A_ or '--topk' in A_) and '--out' not in A_:
+    sys.exit('atlas_mix: --map/--topk need --out (never overwrite atlas_mix.json from another map)')
+bt = {r['sid']: r for r in R(MAPF)}
 atl = {}
-for r in R('../atlas/topk/no87_heldout.tsv'):
+for r in R(TOPK):
     b = bt.get(r['box'])
     if not b: continue
     m = {}
@@ -47,4 +55,4 @@ for name, lat in [('two_pass', lat2), ('atlas', lata), ('mix_0.8_0.2', latm)]:
     out[name] = {'top1': ev(lat, K.top1(lat)), 'lattice_lam4': ev(lat, seq),
                  'rank_z_lattice': (c['lattice']['rank'], round(c['lattice']['z'], 2)), 'rank_z_top1': (c['top1']['rank'], round(c['top1']['z'], 2))}
     print(name, out[name])
-json.dump(out, open('tx_decode/atlas_mix.json', 'w'), indent=1)
+json.dump(out, open(OUT, 'w'), indent=1)

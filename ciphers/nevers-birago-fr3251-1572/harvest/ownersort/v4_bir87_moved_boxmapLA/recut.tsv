@@ -1,0 +1,9 @@
+sid	status	leaf	line	pos	tx_sign	A	B	command
+f117_L01_21	bad-cut	f117	L01	21	T98	T98	T98	tools/iiif_lines.py --ark ark:/12148/btv1b9060232m --canvas 118 --region 4380,1400,3150,1300 --out <scratch> --debug (native recut; line L01 pos 21)
+f117_L03_27	aside	f117	L03	27	T81	T90	T90	tools/iiif_lines.py --ark ark:/12148/btv1b9060232m --canvas 118 --region 4380,1400,3150,1300 --out <scratch> --debug (native recut; line L03 pos 27)
+f117_L05_27	aside	f117	L05	27	T76	T66	T76	tools/iiif_lines.py --ark ark:/12148/btv1b9060232m --canvas 118 --region 4380,1400,3150,1300 --out <scratch> --debug (native recut; line L05 pos 27)
+f117_L06_23	aside	f117	L06	23	T64	T64	T64	tools/iiif_lines.py --ark ark:/12148/btv1b9060232m --canvas 118 --region 4380,1400,3150,1300 --out <scratch> --debug (native recut; line L06 pos 23)
+f144r_L03_08	aside	f144r	L03	8	T42	T42	T42	tools/iiif_lines.py --ark ark:/12148/btv1b9060248g --canvas 146 --region 4350,800,3650,760 --out <scratch> --debug (native recut; line L03 pos 8)
+f144r_L05_13	bad-cut	f144r	L05	13	X_NEW	X_NEW	X_NEW	tools/iiif_lines.py --ark ark:/12148/btv1b9060248g --canvas 146 --region 4350,800,3650,760 --out <scratch> --debug (native recut; line L05 pos 13)
+f168_V01_01	aside	f168	V01	1	T88	T88	T88	tools/iiif_lines.py --ark ark:/12148/btv1b9060248g --canvas 172 --region <V-line band, as sorter/pages> --out <scratch> --debug (native recut; line V01 pos 1)
+f168_V02_07	bad-cut	f168	V02	7	X_NEW	X_NEW	X_NEW	tools/iiif_lines.py --ark ark:/12148/btv1b9060248g --canvas 172 --region <V-line band, as sorter/pages> --out <scratch> --debug (native recut; line V02 pos 7)

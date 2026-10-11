@@ -1,0 +1,17 @@
+{
+ "map": "ciphers/nevers-birago-fr3251-1572/atlas/no87_box_token_labelaware.tsv",
+ "n": 373,
+ "agree": 304,
+ "rate": 0.815,
+ "neighbour": 3,
+ "null_mean": 0.069,
+ "null_p95": 0.097,
+ "null_max": 0.099,
+ "apart": {
+  "1:2": 14,
+  "2:1": 12,
+  "unsure": 2,
+  "bad-cut": 1
+ },
+ "gate": "PASS"
+}

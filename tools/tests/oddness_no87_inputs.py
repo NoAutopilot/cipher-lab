@@ -14,7 +14,9 @@ rd = lambda p: list(csv.DictReader(open(p, newline=''), delimiter='\t'))
 def main(out):
     key = {r['sign']: r['value'].strip().lower() for r in rd(os.path.join(B, 'harvest', 'key_1572_sheet.tsv'))}
     box = {r['sid']: r for r in rd(os.path.join(B, 'atlas', 'signs.tsv'))}
-    clean = [r for r in rd(os.path.join(B, 'atlas', 'no87_box_token.tsv'))
+    # --map FILE (BOXMAP-RESCORE, 11 Oct 2026): a map with the old map's truth column (atlas/no87_map.py --compat OUT); default the old map
+    mp = sys.argv[sys.argv.index('--map') + 1] if '--map' in sys.argv else os.path.join(B, 'atlas', 'no87_box_token.tsv')
+    clean = [r for r in rd(mp)
              if r['op'] == '1:1' and r['sid'] in box and key.get(r['sign']) == r['truth'].strip().lower()]
     os.makedirs(out, exist_ok=True)
     with open(os.path.join(out, 'signs.tsv'), 'w') as f:
@@ -25,4 +27,5 @@ def main(out):
 
 
 if __name__ == '__main__':
-    main(sys.argv[1] if len(sys.argv) > 1 else '.')
+    pos = [x for i, x in enumerate(sys.argv[1:], 1) if x != '--map' and sys.argv[i - 1] != '--map']
+    main(pos[0] if pos else '.')
