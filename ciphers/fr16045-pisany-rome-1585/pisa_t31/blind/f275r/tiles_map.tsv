@@ -1,0 +1,15 @@
+qid	id	crop	answer_or_label	role	r9_top	r9_second
+Q01	f275r_L07_i11	ciphers/fr16045-pisany-rome-1585/pis2/tok/f275r_L07_i11.jpg	T31	test	T36	T31
+Q02	f275r_L04_i7	ciphers/fr16045-pisany-rome-1585/pis2/tok/f275r_L04_i7.jpg	T31	test	T31	T36
+Q03	K-T17	ciphers/fr16045-pisany-rome-1585/pissd/tok/f302v_L02_i16.jpg	T17	control		
+Q04	K-T36a	ciphers/fr16045-pisany-rome-1585/pis2/tok/f275r_L09_i3.jpg	T36	control		
+Q05	f275r_L10_i13	ciphers/fr16045-pisany-rome-1585/pis2/tok/f275r_L10_i13.jpg	T31	test	T36	T31
+Q06	K-T46	ciphers/fr16045-pisany-rome-1585/pissd/tok/f302v_L03_i6.jpg	T46	control		
+Q07	f275r_L13_i11	ciphers/fr16045-pisany-rome-1585/pis2/tok/f275r_L13_i11.jpg	T31	test	T31	T36
+Q08	K-T36b	ciphers/fr16045-pisany-rome-1585/pis2/tok/f275r_L14_i28.jpg	T36	control		
+Q09	f275r_L15_i9	ciphers/fr16045-pisany-rome-1585/pis2/tok/f275r_L15_i9.jpg	T31	test	T31	T36
+Q10	f275r_L03_i31	ciphers/fr16045-pisany-rome-1585/pis2/tok/f275r_L03_i31.jpg	T31	test	T36	T31
+Q11	f275r_L15_i33	ciphers/fr16045-pisany-rome-1585/pis2/tok/f275r_L15_i33.jpg	T31	test	T45	T30
+Q12	K-T16	ciphers/fr16045-pisany-rome-1585/pissd/tok/f302v_L02_i15.jpg	T16	control		
+Q13	f275r_L05_i0	ciphers/fr16045-pisany-rome-1585/pis2/tok/f275r_L05_i0.jpg	T31	test	T31	T36
+Q14	f275r_L08_i0	ciphers/fr16045-pisany-rome-1585/pis2/tok/f275r_L08_i0.jpg	T31	test	T30	T45
