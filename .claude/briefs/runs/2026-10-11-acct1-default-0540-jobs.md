@@ -94,3 +94,31 @@ counts (one Opus, one Sonnet subagent on the line crops), the count rule exactly
 the a1 row into COS-1167B's span table style under "## COS-1167C (11 Oct 2026)": groups, copy words, ratio, in or out of COS-1167B's
 range 0.615-1.053, and the pooled 10-span ratio; no reading claimed. Refresh Remaining gaps / Escalation / Verdict; gaps_check passes.
 Report what was found and where it was not found; do not classify novelty. Units: 2 count calls + 1 settle at ~0.5 each.
+
+## Wave 2 (06:2x UTC 11 Oct)
+Orchestrator note: MAT-F179 (wave 1) stopped correctly at prior-work check 1 -- the same job had run 9 Oct (NOTES.md "## MAT-F179 (9 Oct
+2026, account-4 worker)") and its table png was never committed; the brief was built from a stale Escalation line. Every job below was
+checked against the folder's dated section headers before briefing.
+
+### COS-1165 (Sonnet, cap 2, box 40 min): costabili-modena-1491, R1165 P1 vs Vestigia 2955 and R1167 P3 closing date
+The folder's Verdict cheapest next (NOTES.md l.214, updated by COS-1167C 11 Oct): "one DECODE login fetching R1165 P1 (Vestigia 2955 image
+comparison) and R1167 P3 (closing-date eye check), --fetch two files". Read "## Vestigia image map 2977/2955 (N8-COS, 4 Oct 2026)" first:
+R1165 = Vestigia 2955 (MNL DF 295914) is "a strong match by card, date and page count, not an image-to-image comparison". Intake gate
+pasted first. Hosts: de-crypt.org ONE browser login, R1165 P1 + R1167 P3 only (`tools/decode_browser_login.js`, `--guess-fullsize` per
+the host table), then www.vestigia.hu 2955 image 1 only (1 request, >= 2 s); images to scratch, sha1 in images_manifest.tsv; scrub the
+account name from saved pages. (a) Side-by-side contact sheet at 400-800 px: same photograph / same leaf / different (archive card, leaf
+edges, ink blots); one Sonnet look, stated as M. (b) R1167 P3: read the closing date line only from a line crop (`tools/iiif_lines.py
+--image ... --out <scratch>`), compare with the record's stated date. Write "## COS-1165 (11 Oct 2026)", refresh Remaining gaps /
+Escalation / Verdict, gaps_check passes. No reading claimed. Report what was found and where it was not found; do not classify novelty.
+
+### F4712-40 (Opus, cap 2.5, box 45 min): fr4712-nevers-duchesse, f.13r code 40 gloss (Vill. vs Lill.) third blind read
+NOTES.md "## Remaining gaps (D2-F4712, 8 Oct 2026)" l.408: "f.13r code 40 gloss (Vill. vs Lill.) and code 93 conflict ... next: a third
+reader on recon_1.jpg tiles 40a/40b, ~$1.5". Intake gate pasted first. Disk only: `images/f13r/recon_1.jpg`. Read the earlier reads of
+the code 40 gloss (grep "Vill." in NOTES.md) and the code 93 conflict, but do not pass them to the reader. Cut the two gloss tiles with
+`tools/iiif_lines.py --image images/f13r/recon_1.jpg --region ... --out images/f13r/g40` (pasted; commit the tiles). PREREG-F4712-40.md in
+its own commit before the read: one blind Sonnet subagent call with the two tiles plus two decoy gloss tiles from the same leaf whose
+reading is already settled (H) -- the reader is told only "transcribe each abbreviated word"; gate: both decoys read right, else non-test.
+If the gate passes, the third read decides 2-of-3 for code 40 at M (a gloss read by eye, never H without a person); if it ties or the gate
+fails, log it and, per CLAUDE.md rule 3's third-attempt clause, mark the model-reader instrument [retired] for this gloss and put it on the
+owner's backlog (one ASKS line, backlog, never blocking). Code 93: report the conflict only. decode_key --check after any key edit.
+Refresh Remaining gaps / Escalation / Verdict, gaps_check passes. Units: 1 vision call + 1 reconciliation.
