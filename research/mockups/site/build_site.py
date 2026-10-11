@@ -6,7 +6,10 @@ with useful navigation"), and writing under docs/ (the GitHub Pages folder) is r
 --public (owner, 10 Oct 2026 about 22:5x UTC: "Readings site: live yes"): the output must be under docs/readings/ (any other path,
 inside docs/ or not, is refused; --preview is refused, the single-file preview stays the private artifact), and the private-preview
 banner becomes a one-line public note with a link to the repository; the footer's "Private preview, <date>." reads "Built <date>.".
-Nothing else changes: the held curator paragraphs still need data/context_approved, whatever the flag.
+Holder images are not reproduced in the public build (READINGS-PUBLIC, 11 Oct 2026: their reuse terms are not recorded in the repository):
+no exhibit or catalogue crop is copied into assets/, each page image becomes a link to the holder's page, line crops, thumbnails and
+image-only "Try it" cards are left out, and the credits say the images are linked, not reproduced. Portraits (Wikimedia Commons, public
+domain, licence in their manifest) are still copied. The held curator paragraphs still need data/context_approved, whatever the flag.
 
 It calls the two approved builders rather than copying them: tools/build_catalogue.py (items, index, item pages, how-to-read, credits,
 readings worth attention) and research/mockups/exhibit/build_exhibit2.py (the three displays). This script adds only the site shell:
@@ -89,6 +92,7 @@ ul.browse .one{display:block;color:var(--muted);font-size:.95em}
 .door{border-top:3px double var(--rule);margin-top:36px;padding-top:6px}
 .dsum{border:1px solid var(--rule);padding:10px 14px;margin:16px 0}
 .sitenote{font:13px/1.4 system-ui,sans-serif;color:var(--muted);margin:10px 0}.sitenote a{color:inherit}
+main{overflow-wrap:break-word}ul.links a,figcaption a,.holderlink a,.links li,.det li{overflow-wrap:anywhere}
 @media (max-width:560px){.qf{min-width:0;width:100%}.pager a{max-width:100%}}
 """
 
@@ -241,13 +245,18 @@ def century_of(it):
     return (f"{(y - 1) // 100 + 1}th century", y) if y else ("undated", None)
 
 
-def copy_assets(out):
+HOLDER_IMG_DIRS = ("exhibit-img", "cat-img")  # crops of holders' images: private preview only (reuse terms not recorded)
+
+
+def copy_assets(out, public=False):
     a = os.path.join(out, "assets")
     for src, dst in ((os.path.join(EXHIBIT_DIR, "img"), "exhibit-img"), (CAT_IMG, "cat-img"),
                      (os.path.join(EXHIBIT_DIR, "portraits"), "portraits")):
         d = os.path.join(a, dst)
         if os.path.isdir(d):
             shutil.rmtree(d)
+        if public and dst in HOLDER_IMG_DIRS:
+            continue
         if os.path.isdir(src):
             shutil.copytree(src, d)
         else:
@@ -261,7 +270,7 @@ def emb(path):
 
 
 def display_section(d, img, pdir, evidence_links):
-    body = X.display_html(d, img, pdir)
+    body = X.display_html(d, img, pdir, public=SITE["public"])
     body = body.replace(" their pages are not shown here.", " their pages are linked under “See the evidence” below.")
     ev = ('<div class="evidence"><b>See the evidence.</b> The item pages this display rests on, each with its claim, grades, audits '
           'and links:<ul>' + "".join(f'<li><a href="{h}">{E(t)}</a></li>' for t, h in evidence_links) + "</ul></div>")
@@ -271,12 +280,13 @@ def display_section(d, img, pdir, evidence_links):
 def door_html(img, href_display, href_item, dmap):
     """Front door: the exhibit intro, then each display's headline and its three-layer lines (behind a reveal)."""
     out = [X.intro(img, href_display)]
+    what = "as read, English" if SITE["public"] else "cipher, as read, English"
     for d in X.DISPLAYS:
         fix = [(img(s), t, a, b) for s, t, a, b in d["lines"]]
         ev = " &middot; ".join(f'<a href="{href_item(it)}">see the evidence</a>' for it in dmap.get(d["slug"], [])[:1])
         out.append(f'<div class="dsum" id="door-{d["slug"]}"><div class="kicker">{E(d["kicker"])}</div><h2 style="margin-top:4px">'
                    f'<a href="{href_display(d)}">{E(d["title"])}</a></h2><p class="headline">{E(d["headline"])}</p>'
-                   f'<button data-reveal="door-r-{d["slug"]}" aria-expanded="false">Show the lines: cipher, as read, English</button>'
+                   f'<button data-reveal="door-r-{d["slug"]}" aria-expanded="false">Show the lines: {what}</button>'
                    f'<div id="door-r-{d["slug"]}" class="reveal" style="margin-top:12px">{B.legend()}{X.lines_html(fix, d["lang"])}</div>'
                    f'<p class="small"><a href="{href_display(d)}">Open the display</a>' + (f" &middot; {ev}" if ev else "") + "</p></div>")
     return "".join(out)
@@ -290,7 +300,9 @@ def readings_index(items, ns, results, targets, href, inline=False):
     body = body.replace('<div class="filters">', '<div class="filters">' + box, 1)
     body = body.replace(C.FILTER_JS, TEXT_FILTER_JS)
     body = body.replace("<h1>Cipher letters read from the archives</h1>", '<h1 id="all">All readings</h1>', 1)
-    if not inline:
+    if SITE["public"]:
+        body = re.sub(r'<img class="thumb"[^>]*>', "", body)  # holder crops are not reproduced in the public build
+    elif not inline:
         body = body.replace('src="img/', 'src="assets/cat-img/')
     # language: the catalogue writes it from it["lang"], already filled with the fallback in load()
     return body
@@ -331,13 +343,14 @@ def write_site(out, date, public=False):
     if why:
         sys.exit(why)
     SITE["public"] = public
+    img_ok = not public  # holder crops: private preview only
     items, ns, results, targets = load()
     dmap = display_map(items)
     item_display = {it["file"]: d for d in X.DISPLAYS for it in dmap.get(d["slug"], [])}
     quotes = selection_lines()
     for sub in ("exhibit", "items", "browse", "people"):
         os.makedirs(os.path.join(out, sub), exist_ok=True)
-    copy_assets(out)
+    copy_assets(out, public)
     pages = []
 
     def w(rel, html_):
@@ -347,7 +360,8 @@ def write_site(out, date, public=False):
         pages.append(rel)
 
     # front door
-    door = door_html(lambda p: "assets/exhibit-" + p, lambda d: f"exhibit/{d['slug']}.html", lambda it: "items/" + it["file"], dmap)
+    door = door_html(lambda p: "assets/exhibit-" + p if img_ok else "", lambda d: f"exhibit/{d['slug']}.html",
+                     lambda it: "items/" + it["file"], dmap)
     idx = readings_index(items, ns, results, targets, lambda it: "items/" + it["file"])
     w("index.html", shell("What the cipher said", door + f'<section class="door">{idx}</section>', "", "Exhibit", None, date,
                           "Three cipher displays, then every audited reading" + ("." if public else " (private preview)."),
@@ -356,7 +370,7 @@ def write_site(out, date, public=False):
     # displays
     for d in X.DISPLAYS:
         ev = [(it["title"], "../items/" + it["file"]) for it in dmap.get(d["slug"], [])]
-        body = display_section(d, lambda p: "../assets/exhibit-" + p, "../assets/portraits/", ev)
+        body = display_section(d, lambda p: "../assets/exhibit-" + p if img_ok else "", "../assets/portraits/", ev)
         w(f"exhibit/{d['slug']}.html", shell(d["short"] + " cipher display", body, "../", "Exhibit",
                                              [("Exhibit", "index.html"), (d["short"], "")], date, d["headline"], exhibit=True))
     # items (SITE-ITEMS-1: one data-driven template)
@@ -396,8 +410,9 @@ def write_site(out, date, public=False):
     # reference pages
     nw = "".join(f"<dt>N{k}</dt><dd>{E(v)}</dd>" for k, v in C.NWORDS.items())
     w("how-to-read.html", shell("How to read", C.HOWTO.format(nw=nw), "", "How to read", [("How to read", "")], date))
-    w("credits.html", shell("Credits", C.CREDITS.format(keys=E(C.keys_credit(items))) + PORTRAIT_CREDIT, "", "Credits",
-                            [("Credits", "")], date))
+    images = ", not reproduced on this site." if public else C.IMAGES_PRIVATE
+    w("credits.html", shell("Credits", C.CREDITS.format(keys=E(C.keys_credit(items)), images=images) + PORTRAIT_CREDIT, "",
+                            "Credits", [("Credits", "")], date))
     w("attention.html", shell("Readings worth attention", C.attention_body(items, lambda it: "items/" + it["file"]), "", "",
                               [("Readings worth attention", "")], date))
     # sitemap last, listing every page including itself
@@ -426,7 +441,7 @@ def write_site(out, date, public=False):
 ENGLISH_TSV = os.path.join(HERE, "data", "english_lines.tsv")  # written by SITE-ITEMS-2: item, line id, original, english, grades, date
 CONTEXT_TSV = os.path.join(HERE, "data", "context_paragraphs.tsv")  # SITE-ITEMS-3 curator paragraphs, held for the orchestrator's read
 CONTEXT_FLAG = os.path.join(HERE, "data", "context_approved")  # created by the orchestrator; until then the Context slot stays a placeholder
-PENDING_EN = "English line: pending (SITE-ITEMS-2)"
+PENDING_EN = "English line: pending"
 ECKERT_READINGS = ("reading.md", "reading-no2.md", "reading-no9.md")
 BLOCK = re.compile(r"^\*\*([A-Z0-9][A-Z0-9-]*) \| [^\n]*\*\*\n\n(.+?)\n\n(Code-word tokens:[^\n]*)", re.M | re.S)
 TITLES = {"genl", "gen", "general", "maj", "major", "col", "colonel", "capt", "captain", "lt", "lieut", "brig", "adm", "admiral", "mr",
@@ -675,18 +690,25 @@ def what_it_says(it, sel):
 def reading_section(it, sc, dsp, pfx):
     """Three layers where a crop and an English line exist; otherwise the graded original and an English slot marked pending."""
     out, pend = [], 0
-    if dsp:  # the display's own lines: crop, graded original, English
-        fix = [(pfx + "assets/exhibit-" + s, t, a, b) for s, t, a, b in dsp["lines"]]
-        out.append(B.legend() + X.lines_html(fix, dsp["lang"])
+    if dsp:  # the display's own lines: crop (private preview only), graded original, English
+        fix = [((pfx + "assets/exhibit-" + s) if not SITE["public"] else "", t, a, b) for s, t, a, b in dsp["lines"]]
+        held = (f'<p class="small">The page is at the holder (image not reproduced here): {X.holder_links(dsp)}.</p>'
+                if SITE["public"] else "")
+        out.append(held + B.legend() + X.lines_html(fix, dsp["lang"])
                    + f'<p class="small">The same lines, with the story around them: <a href="{pfx}exhibit/{dsp["slug"]}.html">the display</a>.</p>')
         return "".join(out), 0
     if sc:
         for imgs, toks, cap, eng in sc["crops"]:
             en = (f'<p class="en"><span class="k">English (translation, interpretation)</span>{E(eng)}</p>' if eng else
                   '<p class="en none">Reads as letters with gaps: no English is given for this line.</p>')
-            out.append('<figure class="cipher">' + "".join(f'<img alt="{E(cap)}" src="{pfx}assets/cat-img/{E(x)}">' for x in imgs)
+            if SITE["public"]:  # holder crops are not reproduced: the caption links the holder's page instead
+                pic, credit = "", f'the page at the holder: <a href="{E(sc["image"])}">{E(sc["image"])}</a>'
+            else:
+                pic = "".join(f'<img alt="{E(cap)}" src="{pfx}assets/cat-img/{E(x)}">' for x in imgs)
+                credit = f"our crop &middot; {E(C.LICENCE)}"
+            out.append('<figure class="cipher">' + pic
                        + '<p class="k layer">As read, sign by sign, with grades</p>' + C.token_strip(toks()) + en
-                       + f'<figcaption>{E(cap)} &middot; our crop &middot; {E(C.LICENCE)}</figcaption></figure>')
+                       + f'<figcaption>{E(cap)} &middot; {credit}</figcaption></figure>')
         return "".join(out), 0
     en = english_for(it["file"][:-5])
     entry = eckert_entry(it) if it["folder"] == "eckert-1864" else ""
@@ -809,14 +831,13 @@ def badge_block(it, pfx):
     n, r, fold = it["n"], it["row"], it["folder"]
     st = it["audit_status"] or ""
     two = "yes" if st in ("two audits", "three audits") else ("no, one audit" if st == "one audit" else "not recorded")
-    b = [f'<a class="badge" href="{pfx}how-to-read.html#n-class">N{n} {E(C.NSHORT[n])}</a>' if n is not None else "",
+    b = [f'<a class="badge" href="{pfx}how-to-read.html#n-class">{E(k)} {E(w)}</a>' for k, w in C.class_labels(it)] + [
          f'<a class="badge" href="{pfx}how-to-read.html#depth">{E(it["depth"])}</a>' if it["depth"] else "",
          f'<a class="badge" href="{pfx}how-to-read.html#key">{E(it["key"])}</a>' if it["key"] else "",
          f'<span class="badge">two audits: {two}</span>']
     claim = (f'<blockquote class="claim">{C.md(it["safe"])}</blockquote><p class="small">The verifier\'s safe sentence, quoted from '
              'AUDIT.md.</p>' if it["safe"] else
-             f'<blockquote class="claim">{C.md(it["register"])}</blockquote><p class="small">From the results register; no safe sentence '
-             'in AUDIT.md matched this entry, so read the audit before quoting it.</p>')
+             f'<blockquote class="claim">{C.md(it["register"])}</blockquote><p class="small">{E(C.register_note(it))}</p>')
     ct, keys = C.files_of(fold)
     script = ("decode.py" if it["script"].startswith("decode.py") else "decode.json" if it["script"] else "")
     links = [f'<a href="{C.REPO_BLOB}ciphers/{E(fold)}/AUDIT.md">AUDIT.md</a>',
@@ -892,7 +913,7 @@ def item_page(it, sc, dsp, pfx, people_href):
                        f'<p class="small">Sources: {E(cx[2])}.</p></section>')
         else:
             out.append('<section class="part" id="context"><h2>Context</h2><p class="ctxslot" data-pending="context">Context: to be '
-                       'written from printed sources on file, labelled context (SITE-ITEMS-3).</p></section>')
+                       'written from printed sources on file, labelled as context.</p></section>')
     out.append("</article>")
     return "".join(out), pend, names, sel
 

@@ -146,6 +146,8 @@ DISPLAYS = [
                       ("Folder", TREE + "ciphers/eckert-1864")],
                safe="Read at grade H with the period Cipher No. 1 book; no prior plaintext or decipherment of this telegram "
                     "located after a logged search (the Post's description it cites is in print; the prisoner is not located)."),
+    holder=[("The ledger page at the Huntington Library (mssEC 19, page 236, digital item 9130)",
+             "https://hdl.huntington.org/digital/collection/p16003coll11/id/9130")],
     credit=[("Ledger page and line crops", "The Huntington Library, San Marino, Thomas T. Eckert Papers, mssEC 19, page 236 "
              "(digital item 9130, hdl.huntington.org).", "Reuse terms not recorded in the repository; to be checked with the "
              "Huntington before any publication. Private mock-up only.")],
@@ -158,7 +160,8 @@ DISPLAYS = [
              "secret.",
     says="August tells Orange in confidence that the Emperor has recently, through a formal embassy, asked him to elect his son "
          "Maximilian King of the Romans in the Emperor's own lifetime, and that the other Electors will be asked the same. "
-         "The approach itself is well known to historians; what is not in print is this letter's own report of it.",
+         "The approach itself is well known to historians; what we have not located in print (N4: no prior decipherment "
+         "located) is this letter's own report of it.",
     page=("img/avs57_page.jpg", "August to Orange, Torgau, 18 November 1561: "
           "the cipher enclosure. Koninklijk Huisarchief, A 11/XIV B/41-6, as served by the Huygens Institute (WVO 57)."),
     lines=[
@@ -221,6 +224,8 @@ DISPLAYS = [
                     "Orange's 1562 cipher as secret news that the Emperor had asked August to elect Maximilian King of the "
                     "Romans. No prior decipherment or printed plaintext located; Demandt's regest summarises only the clear "
                     "text; August's minute in Dresden has not been seen."),
+    holder=[("WVO 57 as served by the Huygens Institute (PDF)", "https://resources.huygens.knaw.nl/media/wvo/images/00000-00999/00057.pdf"),
+            ("WVO 53 as served by the Huygens Institute (PDF)", "https://resources.huygens.knaw.nl/media/wvo/images/00000-00999/00053.pdf")],
     credit=[("Page and line crops", "Koninklijk Huisarchief, The Hague (WVO 57), and Sächsisches Hauptstaatsarchiv Dresden, "
              "Loc. 9941/3 f.266 (WVO 53), as served by the Huygens Institute, Briefwisseling van Willem van Oranje.",
              "Reuse terms not recorded in the repository; to be checked before any publication. Private mock-up only.")],
@@ -288,6 +293,8 @@ DISPLAYS = [
                safe="Applying Krauske's 1893 table to the cipher names in Manteuffel's postscript of 13 Oct 1712 gives Oxford, "
                     "Bolingbroke and the Queen of England in a report, passed on by the Hanoverian resident Heusch; no prior "
                     "plaintext of these statements located in the Heinsius correspondence or Droysen."),
+    holder=[("The volume's record at the Sächsisches Staatsarchiv (Loc. 694/08; the postscript is image 0391)",
+             "https://www.archiv.sachsen.de/archiv/bestand.jsp?guid=3a83f921-9a43-485f-874b-34653ed59b68")],
     credit=[("Page and line crops", "Sächsisches Hauptstaatsarchiv Dresden, 10026 Geheimes Kabinett, Loc. 694/08, digitised "
              "image 0391 (archiv.sachsen.de).", "Reuse terms not recorded in the repository; to be checked with the SHStA "
              "before any publication. Private mock-up only.")],
@@ -310,14 +317,17 @@ CSS2 = """
 .comp{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:10px 12px;margin:8px 0;font-size:16px}
 .comp b{font:600 13px system-ui,sans-serif;display:block;color:var(--muted)}
 .caution{font:13px/1.45 system-ui,sans-serif;border-left:3px solid var(--gM);padding:4px 10px;margin:8px 0}
+.holderfig{margin:0}.holderlink{font:14px/1.5 system-ui,sans-serif;border:1px dashed var(--rule);border-radius:6px;padding:10px 12px;
+ margin:0 0 6px;overflow-wrap:anywhere}
 """
 
 
 def lines_html(lines, lang):
+    """One block per line. A falsy src (the public site, where holder images are linked, not reproduced) drops the crop."""
     out = []
     for src, toks, fr, en in lines:
-        out.append(f'<div class="line"><img src="{src}" alt="Cipher line">'
-                   f'<div class="layer">{lang} as read, sign by sign (grade under each)</div>'
+        out.append('<div class="line">' + (f'<img src="{src}" alt="Cipher line">' if src else "")
+                   + f'<div class="layer">{lang} as read, sign by sign (grade under each)</div>'
                    f'<div class="toks">{"".join(B.tok_html(*t) for t in toks)}</div>'
                    f'<div class="layer">English (translation, interpretation)</div>'
                    f'<div class="en"><div class="fr">{E(fr)}</div><div class="tr">{E(en)}</div></div></div>')
@@ -330,15 +340,29 @@ def face_html(name, role, now, file, pdir):
             f'<div class="now">{E(now)}</div></div>')
 
 
-def display_html(d, img, pdir):
+def holder_links(d):
+    return " &middot; ".join(f'<a href="{E(u)}">{E(t)}</a>' for t, u in d.get("holder", []))
+
+
+def display_html(d, img, pdir, public=False):
+    """public=True (the public readings site, 10 Oct 2026): holder images are not reproduced -- img() returns "" -- so the page
+    image becomes a link to the holder, line crops and image-only trial cards are dropped, and the credit names the holder and
+    says the images are linked, not copied (their reuse terms are not recorded in the repository)."""
     p = d["proof"]
     fix = lambda ls: [(img(s), t, a, b) for s, t, a, b in ls]
+    hero_src = img(d["page"][0])
+    hero = (f'<figure><img src="{hero_src}" alt="The cipher page"><figcaption>{E(d["page"][1])}</figcaption></figure>' if hero_src else
+            f'<figure class="holderfig"><p class="holderlink">The page is at the holder (image not reproduced here): '
+            f'{holder_links(d)}</p><figcaption>{E(d["page"][1])}</figcaption></figure>')
+    layers = (f'three layers per line: the line as written; the {d["lang"]} as read, every sign graded (the audited layer); an '
+              'English rendering (ours).' if hero_src else
+              f'two layers per line: the {d["lang"]} as read, every sign graded (the audited layer); an English rendering (ours). '
+              'The line as written is on the holder\'s page, linked beside.')
     out = [f'<section id="{d["slug"]}"><div class="kicker">{E(d["kicker"])}</div><h1>{E(d["title"])}</h1>',
            f'<p class="headline">{E(d["headline"])}</p>',
            f'<div class="says"><div class="tag">What the reading says (the audit\'s depth sentence)</div><p>{E(d["says"])}</p></div>',
-           f'<div class="hero"><figure><img src="{img(d["page"][0])}" alt="The cipher page"><figcaption>{E(d["page"][1])}</figcaption></figure><div>',
-           f'<div class="small" style="margin-bottom:8px">{E(d["intro_note"])} Reveal to see three layers per line: the line as '
-           f'written; the {d["lang"]} as read, every sign graded (the audited layer); an English rendering (ours).</div>',
+           f'<div class="hero">{hero}<div>',
+           f'<div class="small" style="margin-bottom:8px">{E(d["intro_note"])} Reveal to see {layers}</div>',
            f'<button data-reveal="r-{d["slug"]}" aria-expanded="false">Reveal the reading</button>',
            f'<div id="r-{d["slug"]}" class="reveal" style="margin-top:12px">{B.legend()}{lines_html(fix(d["lines"]), d["lang"])}</div></div></div>']
     if d.get("companions"):
@@ -354,18 +378,21 @@ def display_html(d, img, pdir):
                    f'<div id="r2-{d["slug"]}" class="reveal" style="margin-top:12px">{lines_html(fix(s["lines"]), d["lang"])}</div>'
                    f'<p class="small">{E(s["proof"])}</p>')
     out.append('<h2>Faces</h2><div class="faces">' + "".join(face_html(*f, pdir) for f in d["faces"])
-               + '</div><p class="small">Context. Public-domain portraits are being fetched from Wikimedia Commons by a desk '
-                 'runner (portraits/manifest.tsv names each file and its licence); until a file arrives, the face is a labelled '
+               + '</div><p class="small">Context. Public-domain portraits from Wikimedia Commons are being gathered '
+                 '(portraits/manifest.tsv names each file and its licence); until a file arrives, the face is a labelled '
                  'placeholder. No non-free image is used.</p>')
     strip = "".join(f'<li class="{"this" if i == d["this"] else ""}"><time>{E(t)}</time>{E(ev)}</li>' for i, (t, ev) in enumerate(d["moment"]))
     out.append(f'<h2>Context: the moment</h2><div class="ctxbox"><div class="ctx">Context from history, not from the cipher</div>'
                f'<div class="moment" style="margin-top:8px"><ol class="strip">{strip}</ol><div class="map">{B.map_svg(d["places"])}</div></div></div>')
+    trial = [t for t in d["trial"] if not t[0] or img(t[0])]  # a sign known only by its image needs the image
     cards = "".join(
         f'<div class="card" tabindex="0" role="button" aria-pressed="false">'
         + (f'<img src="{img(i)}" alt="A cipher sign">' if i else f'<div class="code">{E(code)}</div>')
         + f'<div class="hint">tap to read it</div><div class="ans">{E(val)}</div><div class="small">grade {g} · {E(src)}</div></div>'
-        for i, code, val, g, src in d["trial"])
-    out.append(f'<h2>Try it</h2><p class="small">Three signs from the key. Guess, then tap.</p><div class="try">{cards}</div>')
+        for i, code, val, g, src in trial)
+    if trial:
+        n = {1: "One sign", 2: "Two signs", 3: "Three signs"}.get(len(trial), f"{len(trial)} signs")
+        out.append(f'<h2>Try it</h2><p class="small">{n} from the key. Guess, then tap.</p><div class="try">{cards}</div>')
     bar = "".join(f'<span class="{g}" style="flex:{n}" title="{g} {n}">{g if n / p["total"] > .04 else ""}</span>' for g, n in p["counts"])
     counts = " · ".join(f"{g} {n}" for g, n in p["counts"])
     out.append('<h2>How we know</h2><div class="badges">'
@@ -375,9 +402,15 @@ def display_html(d, img, pdir):
                f'<div class="small" style="margin-top:12px">Grades of the {p["total"]} {p["unit"]} read: {counts}</div><div class="bar">{bar}</div>'
                f'<p class="small"><b>Whose key.</b> {E(p["key"])}</p><p class="small"><b>The audit\'s sentence.</b> {E(p["safe"])}</p>'
                '<ul class="links">' + "".join(f'<li><a href="{u}">{E(t)}</a></li>' for t, u in p["links"]) + '</ul>')
-    out.append('<div class="credit">' + "".join(f'<b>{E(a)}:</b> {E(b)} {E(c)}<br>' for a, b, c in d["credit"])
-               + 'Portraits: Wikimedia Commons, public domain, credits in portraits/manifest.tsv once fetched. Map drawn for this '
-                 'mock-up. English renderings are ours.</div></section>')
+    if public:
+        credit = "".join(f'<b>Source:</b> {E(b)} The holder\'s images are linked, not reproduced here: {holder_links(d)}.<br>'
+                         for a, b, c in d["credit"])
+        tail = 'Map drawn by us. English renderings are ours.'
+    else:
+        credit = "".join(f'<b>{E(a)}:</b> {E(b)} {E(c)}<br>' for a, b, c in d["credit"])
+        tail = 'Map drawn for this mock-up. English renderings are ours.'
+    out.append('<div class="credit">' + credit + 'Portraits: Wikimedia Commons, public domain, credits in portraits/manifest.tsv '
+               'once fetched. ' + tail + '</div></section>')
     return "".join(out)
 
 
@@ -396,8 +429,10 @@ def nav(prefix, current=None):
 
 
 def intro(img, href):
-    cards = "".join(f'<a href="{href(d)}"><img src="{img(d["page"][0])}" alt=""><div class="kicker" style="margin-top:8px">'
-                    f'{E(d["kicker"])}</div><strong>{E(d["title"])}</strong></a>' for d in DISPLAYS)
+    """The three display cards; a falsy img() (public site) leaves the card without its page image."""
+    cards = "".join(f'<a href="{href(d)}">' + (f'<img src="{img(d["page"][0])}" alt="">' if img(d["page"][0]) else "")
+                    + f'<div class="kicker" style="margin-top:8px">{E(d["kicker"])}</div><strong>{E(d["title"])}</strong></a>'
+                    for d in DISPLAYS)
     return ('<div class="kicker">Three cipher letters, read</div><h1>What the cipher said</h1>'
             '<p class="headline">A telegram about the plot to burn New York; an Elector\'s secret about the next emperor; a '
             'Saxon envoy\'s names for who in London said what. Chosen for what our reading itself says, not for the history '

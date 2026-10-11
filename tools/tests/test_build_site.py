@@ -15,6 +15,13 @@ Builds the whole private preview site into a temp dir from the repository's own 
     folder, so the test never writes the real docs/) carries no "Private preview" banner or footer on any page, carries the public
     note and the repository link on every page, resolves every internal link, and shows no held curator paragraph while
     data/context_approved is absent;
+  - (READINGS-PUBLIC, 11 Oct 2026, the three-lens audit) the public build copies no holder crop (no assets/exhibit-img or
+    assets/cat-img, no <img> pointing there) and no page says "mock-up", "before any publication", "never copied", "ASKS row" or a
+    credential variable name; credits say the holders' images are not reproduced; every quoted safe sentence is free of placeholders
+    ("<print, page>", "[or: ...]", "page as above"), no safe sentence is quoted on two item pages, no N3+ reading page quotes a
+    sentence saying the text is "already in print", "plain text is known" or "text printed in"; no claim or h1 claims more depth than
+    the page's depth badge; a key-to-known-text item carries the "Key N" and "text N" badges; the count card no longer says "read
+    in full" and the lede no longer promises two audits for every entry; the Torgau display no longer says "what is not in print";
   - (SITE-ITEMS-1) every item page carries the four sections in the display's order (What it says, The reading, Who where when,
     How we know) inside an <article data-interest=...>; a "Context" slot appears only where data-interest is 2 or 3; the
     English-pending marker count and the people-index size are reported; every people/ page is reachable from people/index.html;
@@ -155,9 +162,74 @@ def check_public(S, tmp):
     broken, checked, _pending = link_problems(out, pages)
     if broken:
         fail(f"public: {len(broken)} broken internal links, e.g. {broken[:5]}")
+    nq = check_public_claims(S, out, pages)
     print(f"ok: --public refuses docs/, docs/x, docs/readingsX, a path outside docs/ and --preview; accepts docs/readings; "
           f"{len(pages)} public pages carry the note and repository link, no private banner, {checked} internal links 0 broken, "
-          f"{len(held)} held curator paragraphs absent")
+          f"{len(held)} held curator paragraphs absent; no holder crop copied; {nq} quoted safe sentences pass the claim checks")
+
+
+BANNED = re.compile(r"mock-up|before any publication|never copied|what is not in print|\bASKS\b|SITE-ITEMS|"
+                    r"\$?\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)*_(?:KEY|PASS|USER|TOKEN|SECRET)\b")
+PLACEHOLDER = re.compile(r"&lt;[^&]{1,40}&gt;|\[or:|page as above")
+IN_PRINT = re.compile(r"already in print|plain ?text is known|text printed in", re.I)
+CLAIM = re.compile(r'<blockquote class="claim">(.*?)</blockquote><p class="small">(.*?)</p>', re.S)
+
+
+def check_public_claims(S, out, pages):
+    """The three-lens audit's checks on the public build (rights, claims, privacy minors). Returns quoted safe sentences checked."""
+    C = S.C
+    a = os.path.join(out, "assets")
+    for d in S.HOLDER_IMG_DIRS:
+        if os.path.exists(os.path.join(a, d)):
+            fail(f"public: holder crops copied into assets/{d}")
+    depth_of = {w: d for d, w in C.DEPTH_WORDS.items()}
+    quoted, n = {}, 0
+    for p in pages:
+        txt = open(os.path.join(out, p), encoding="utf-8").read()
+        if re.search(r'<img[^>]+src="[^"]*(?:exhibit-img|cat-img)/', txt):
+            fail(f"public {p}: embeds a holder crop")
+        body = re.sub(r"<(style|script)[^>]*>.*?</\1>", "", txt, flags=re.S)
+        m = BANNED.search(re.sub(r"<[^>]+>", " ", body))
+        if m:
+            fail(f"public {p}: says {m.group(0)!r}")
+        if not p.startswith("items/"):
+            continue
+        how = txt[txt.find('id="how"'):]
+        c = CLAIM.search(how)
+        if not c:
+            fail(f"public {p}: no claim in How we know")
+        claim, note = c.group(1), c.group(2)
+        badges = re.findall(r'class="badge"[^>]*>([^<]*)<', how)
+        dep = next((depth_of[b.split(" (")[0]] for b in badges if b.split(" (")[0] in depth_of), None)
+        h1 = html.unescape(re.sub(r"<[^>]+>", "", H1.search(txt).group(1)))
+        for what, t in (("claim", html.unescape(re.sub(r"<[^>]+>", "", claim))), ("h1", h1)):
+            cd = C.claimed_depth(t)
+            if dep is not None and cd is not None and cd > dep:
+                fail(f"public {p}: {what} claims D{cd} words on a D{dep} page: {t[:120]!r}")
+        if any(b.startswith("text N") for b in badges) and not any(b.startswith("Key N") for b in badges):
+            fail(f"public {p}: text class shown without the key class")
+        if "quoted from AUDIT.md" not in note:
+            continue
+        n += 1
+        if PLACEHOLDER.search(claim):
+            fail(f"public {p}: quoted safe sentence carries a placeholder: {claim[:120]!r}")
+        if claim in quoted:
+            fail(f"public {p}: quotes the same safe sentence as {quoted[claim]}")
+        quoted[claim] = p
+        nb = next((int(b[1]) for b in badges if re.match(r"N[0-5] ", b)), None)
+        if nb is not None and nb >= 3 and IN_PRINT.search(claim):
+            fail(f"public {p}: N{nb} page quotes a sentence saying the text is known: {claim[:120]!r}")
+    keys = [it for it in S.load()[0] if it["cls"] == "key"]
+    for it in keys:
+        if "Key N" not in open(os.path.join(out, "items", it["file"]), encoding="utf-8").read():
+            fail(f"public items/{it['file']}: key item lacks its Key N badge")
+    idx = open(os.path.join(out, "index.html"), encoding="utf-8").read()
+    if "read in full" in idx or "the two independent audits" in idx:
+        fail("public index: count card or lede over-claims")
+    cr = open(os.path.join(out, "credits.html"), encoding="utf-8").read()
+    if "not reproduced on this site" not in cr:
+        fail("public credits: holders' images not said to be linked, not reproduced")
+    return n
 
 
 def main():

@@ -1116,7 +1116,10 @@ function cardDrag(h, pid, openPile){
   h.addEventListener('pointerdown', e => { if (e.button > 0) return;
     const dd = d = {x: e.clientX, y: e.clientY, sx: e.clientX, sy: e.clientY, on: false, id: e.pointerId, over: null, ghost: null, raf: 0, mouse: e.pointerType === 'mouse', armed: false};
     holdStart(e, h, e.pointerType === 'touch' ? 500 : 380, dd.mouse ? 8 : 18, () => { if (d !== dd || dd.on) return; heldLift();
-      if (dd.mouse){ d = null; openPile(); return; }   // a mouse hold: the pile opens, as from the rest of the card
+      // a mouse hold: the pile opens, as from the rest of the card. So does a finger's hold whose name a re-render replaced while it was
+      // down (template 2026-10-09.6: step 2 redraws its cards on every render, so on a page busy 0.6 s the lift went to the new name,
+      // which knew of no armed press -- the hold opened nothing): no merge can be dragged from a name that is gone
+      if (dd.mouse || !h.isConnected){ d = null; openPile(); return; }
       dd.armed = true; dd.ax = dd.x; dd.ay = dd.y; h.classList.add('armed'); try { navigator.vibrate && navigator.vibrate(12); } catch (er) {} }); });
   h.addEventListener('pointermove', e => { if (!d) return; d.x = e.clientX; d.y = e.clientY;
     if (!d.on){ if (d.mouse ? Math.hypot(d.x - d.sx, d.y - d.sy) > 8 : d.armed && Math.hypot(d.x - d.ax, d.y - d.ay) > 18){ holdEnd(h); start(); } return; }

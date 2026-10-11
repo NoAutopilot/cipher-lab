@@ -6,7 +6,15 @@
   R  N4, D2, folder debosnys-x                                              -> never listed (restricted)
 Must catch: a job name or session id surviving into a page; a counted row missing; an output path under docs/.
 Must NOT block: shelfmarks and edition references with capitals and hyphens ("OR I/32 pt 3", "KHA A 11/XIV B/41-42",
-"WVO 5797") survive sanitize(). Run: python3 tools/tests/test_build_catalogue.py"""
+"WVO 5797") survive sanitize().
+Safe-sentence matcher (READINGS-PUBLIC, 11 Oct 2026), on a fixture AUDIT.md for a three-item folder:
+  must catch -- a group template ("Safe sentence for each:", "(all)") or a sentence with a placeholder ("<print, page>", "[or: ...]");
+  a sibling's labelled sentence (another E-number in its bullet); a sentence stating N1 for an N3 row; a sentence whose depth words
+  ("partially deciphered") rank above a D1 row; an over-claiming register line (replaced by the depth note); a D4 title phrase on a
+  D2 row; "ASKS row N" and credential variable names in a register sentence.
+  must NOT block -- the row's own labelled sentence (its E-number in the bullet), a table row whose "safe sentence" column carries the
+  item's own sentence, the later of two own sentences when both fit, and a single-item folder's sentence that names no id.
+Run: python3 tools/tests/test_build_catalogue.py"""
 import glob
 import json
 import os
@@ -84,6 +92,68 @@ with tempfile.TemporaryDirectory() as tmp:
     p2 = subprocess.run([sys.executable, "tools/build_catalogue.py", "--out", "docs/catalogue"], cwd=tmp,
                         capture_output=True, text=True, timeout=60)
     check(p2.returncode != 0 and not os.path.exists(os.path.join(tmp, "docs")), "docs/ output not refused")
+
+
+# ---- safe-sentence matcher (READINGS-PUBLIC, 11 Oct 2026): fixture AUDIT.md, three Eckert-like rows in one folder
+AUD = """# AUDIT
+
+| ID | N |
+|---|---|
+| E1 | N1 |
+
+All 2: **N1**, key `period`. Safe sentence for each: "The ledger copy reads, with the period book, to the text printed in <print, page>
+and nowhere else that we searched."
+
+- **E2: N1.** Safe sentence: "Read with the period book against the clear copy (pointer 10490), whose plain text is in the holder's
+  public transcription; our reading is an independent re-decipherment."
+- **E3: N3.** Safe sentence: "Read at grade H with the period book: on 6 Oct 1864 the operator at City Point tells Fort Monroe that
+  the railroad is to be extended two miles; not located in print."
+- **E3: N3.** Safe sentence: "Read at grade H with the period book: on 6 Oct 1864 the operator at City Point tells Fort Monroe that
+  the railroad is to be extended two miles, beyond Warren; not located in print (searched 9 Oct 2026)."
+
+| ID | N | depth | safe sentence |
+|---|---|---|---|
+| E4 | **N3** | D2 | "Read at grade H with the period book: on 2 May 1864 Fox tells Olcott to send the papers at once; not located in print." |
+| E5 | **N3** | D1 | "Read with the period book, partially deciphered (about 70%): on 3 May 1864 Fox tells Olcott the papers are lost; not located." |
+"""
+with tempfile.TemporaryDirectory() as tmp:
+    os.makedirs(os.path.join(tmp, "ciphers", "eck"))
+    open(os.path.join(tmp, "ciphers", "eck", "AUDIT.md"), "w").write(AUD)
+    cwd = os.getcwd()
+    os.chdir(tmp)
+    try:
+        bc._audit_cache.clear()
+        day = {"E3": "6 Oct", "E4": "2 May", "E5": "3 May"}
+        mk = lambda e, n, d, line="x": row(f"Eckert 1864: telegram {e}, {day.get(e, '1 Jan')} 1864", "eck",
+                                            document_id=f"Huntington mssEC 19 p.1, {e}", plaintext_novelty=f"N{n}", depth=d, line=line)
+        s1, _ = bc.best_safe_sentence(mk("E1", 1, "D3"), 1, 5)
+        check(s1 == "", f"group template with a placeholder quoted for E1: {s1!r}")
+        s2, _ = bc.best_safe_sentence(mk("E6", 1, "D3"), 1, 5)
+        check(s2 == "", f"E2's own sentence quoted for its sibling E6: {s2!r}")
+        s3, _ = bc.best_safe_sentence(mk("E3", 3, "D2", "the railroad is to be extended beyond Warren"), 3, 5)
+        check("beyond Warren" in s3, f"E3's own (later) sentence not quoted: {s3!r}")
+        s3b, _ = bc.best_safe_sentence(mk("E2", 3, "D2"), 3, 5)
+        check(s3b == "", f"an N1 sentence quoted for an N3 row: {s3b!r}")
+        s4, _ = bc.best_safe_sentence(mk("E4", 3, "D2", "Fox tells Olcott to send the papers"), 3, 5)
+        check("send the papers" in s4, f"E4's table-row sentence not quoted: {s4!r}")
+        s5, _ = bc.best_safe_sentence(mk("E5", 3, "D1", "Fox tells Olcott the papers are lost"), 3, 5)
+        check(s5 == "", f"a 'partially deciphered' sentence quoted for a D1 row: {s5!r}")
+        single, _ = bc.best_safe_sentence(row("Fox to Olcott, 2 May 1864", "eck", document_id="no id here", plaintext_novelty="N3",
+                                               depth="D2", line="Fox tells Olcott to send the papers at once"), 3, 1)
+        check("send the papers" in single, f"single-item folder lost its sentence: {single!r}")
+    finally:
+        os.chdir(cwd)
+check(bc.over_claims("Continuous French on 32 of 55 lines.", {"depth": "D1"}), "'continuous French' not an over-claim at D1")
+check(not bc.over_claims("Continuous French on 32 of 55 lines.", {"depth": "D2"}), "'continuous French' blocked at D2")
+check(not bc.over_claims("Thurloe's office deciphered this system in 1655.", {"depth": "D2"}), "bare 'deciphered' blocked")
+check(bc.depth_safe_title("no.86: the whole cipher read with the 1572 key", {"depth": "D2"}) == "no.86: cipher read in part with the 1572 key",
+      "D4 title phrase kept on a D2 row")
+check(bc.depth_safe_title("the whole cipher read", {"depth": "D4"}) == "the whole cipher read", "D4 title reworded on a D4 row")
+san = bc.sanitize("DECODE: login rejected (ASKS row 1); Google Books keyed (&key=$GOOGLE_BOOKS_KEY&country=US); S2_KEY sent.")
+check("ASKS" not in san and "_KEY" not in san and "owner-side request" in san, f"request pointer or key name survived: {san}")
+it_key = {"cls": "key", "n": 3, "row": {"plaintext_novelty": "N1"}}
+check([k for k, _ in bc.class_labels(it_key)] == ["Key N3", "text N1"], f"key item labels: {bc.class_labels(it_key)}")
+check("read in full" not in dict((k, e) for k, _, e in bc.CLASSES)["completed-reading"], "count card still says 'read in full'")
 
 print("FAIL" if fails else "ok: test_build_catalogue")
 sys.exit(1 if fails else 0)
