@@ -1,0 +1,54 @@
+line	col	packet	A	B	verdict	class	conf	viewed	note
+f178v_L01	3	P01	T51	T95	T51	A	M	yes	stem with crossbar and bow at top
+f178v_L01	8	P01	T51	T95	T51	A	M	yes	same crossbar stem with bow
+f178v_L01	13	P01	T26	T76	T26	A	L	yes	small circle with tail hooking left
+f178v_L02	1	P01	T33	T86	T86	B	M	yes	two verticals on a bar
+f178v_L02	18	P01	T33	T86	T86	B	M	yes	two stems over baseline
+f178v_L02	25	P01	T33	T86	T86	B	M	yes	two stems with bar
+f178v_L03	2	P01	T33	T86	T86	B	M	yes	two stems and bar
+f178v_L03	3	P01	T60	T86	T60	A	M	yes	hash shape
+f178v_L03	9	P01	T33	T86	T86	B	M	yes	two stems and bar
+f178v_L03	18	P01	T29	T11	T11	B	M	yes	85-like with tick
+f178v_L04	3	P01	T33	T86	T86	B	M	yes	two stems and bar
+f178v_L04	5	P01	T60	T86	T60	A	M	yes	hash shape
+f178v_L04	11	P01	T29	T11	T11	B	M	yes	85-like with tick
+f178v_L04	22	P01	T66	T26	T66	A	L	yes	loop top stem foot right
+f178v_L05	1	P01	T76	T26	T76	A	M	yes	q/9 shape straight tail
+f178v_L05	24	P01	T66	T26	T66	A	L	yes	loop top stem foot right
+f178v_L06	11	P02	T33	T86	T33	A	M	yes	bar with single stem after theta-bar sign
+f178v_L06	21	P02	T33	T86	T86	B	M	yes	two short verticals under one bar
+f178v_L07	1	P02	T65	T90	T90	B	M	yes	cross atop circle with stem
+f178v_L07	4	P02	T18	T98	T98	B	M	yes	thin vertical with oval midway, stem above and below
+f178v_L07	9	P02	T65	T90	T90	B	M	yes	cross atop circle
+f178v_L07	10	P02	T29	T83	T83	B	M	yes	c with diagonal and right hook
+f178v_L07	15	P02	T65	T90	T90	B	M	yes	cross atop circle with tick
+f178v_L07	23	P02	T18	T98	T98	B	M	yes	oval on stem through both ends
+f178v_L08	7	P02	T29	T83	T83	B	M	yes	c crossed by diagonal with hook
+f178v_L08	17	P02	T18	T98	T98	B	M	yes	oval with stem above and below
+f178v_L08	20	P02	T95	T51	T95	A	L	yes	p-like top with low crossbar; ambiguous with dagger
+f178v_L08	23	P02	T18	T98	T98	B	M	yes	oval with stem both sides
+f178v_L08	28	P02	T18	T98	T98	B	M	yes	oval with stem both sides
+f178v_L09	3	P02	T18	T98	T98	B	M	yes	oval with stem both sides
+f178v_L09	5	P02	T29	T83	T83	B	M	yes	c with diagonal and hook
+f178v_L09	24	P02	T65	T90	T90	B	M	yes	cross atop circle
+f178v_L09	27	P03	T65	T90	T90	B	M	yes	cross on top, circle at foot
+f178v_L09	29	P03	T11	-	T11	A	H	yes	85 digits at right edge, visible
+f178v_L10	3	P03	T18	T98	T98	B	M	yes	loop mid-stem, short stem above
+f178v_L10	8	P03	T18	T98	T98	B	M	yes	loop mid-stem, stem above and below
+f178v_L10	12	P03	T18	T98	T98	B	H	yes	thin stem above and below small loop
+f178v_L10	17	P03	T76	-	NONE	NONE	M	yes	8 and 9 form one 89 sign
+f178v_L10	24	P03	T65	T90	T90	B	M	yes	cross above, circle at foot
+f178v_L10	29	P03	T29	T83	T83	B	M	yes	c shape crossed diagonal, hook right
+f178v_L10	31	P03	T36	T98	T36	A	L	yes	loop on top of stem, short stem above
+f178v_L10	33	P03		-	?	other	L	yes	small faint double tick by dark edge
+f178v_L11	4	P03	T95	T51	T95	A	L	yes	stem with bowl and tail, bar at top
+f178v_L11	15	P03	T29	T83	T83	B	M	yes	c crossed by diagonal with hook
+f178v_L11	21	P03	T29	T83	T83	B	M	yes	c crossed by diagonal with hook
+f178v_L11	26	P03	T65	T90	T90	B	M	yes	cross above, circle at foot
+f178v_L11	30	P03	-	T83	T83	B	M	yes	c crossed by diagonal after hash
+f178v_L11	31	P03	T29	T51	T29	A	L	yes	epsilon with small round part near edge
+f178v_L11	32	P04	T95	T27	T27	B	L	yes	last hooked-tail stroke after epsilon-circle at line end, partly at cut edge
+f178v_L12	19	P04	T29	T83	T29	A	M	yes	ae-like stroke joined to epsilon with small loop between T37 and D
+f178v_L12	24	P04	T18	T98	T98	B	H	yes	thin vertical with small loop midway, stem above and below
+f178v_L12	28	P04	T95	T51	T51	B	M	yes	stem with crossbar low and hooked loop top after pi
+f178v_L12	32	P04	-	T27	T27	B	M	yes	loop-top hooked tail after diamond at line end
