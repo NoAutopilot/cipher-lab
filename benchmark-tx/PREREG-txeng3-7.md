@@ -1,4 +1,4 @@
-# PREREG TXE3-7 PROPAGATE (account 3, worker session_01N6wTuin3FG55h6UUkN9Kpo; written 11 Oct 2026 06:0x UTC by date -u, pushed BEFORE any score)
+# PREREG TXE3-7 PROPAGATE (account 3, worker session_01N6wTuin3FG55h6UUkN9Kpo; written 11 Oct 2026 05:5x UTC by date -u, pushed BEFORE any score)
 
 One of ten TXE3 transcription experiments (account-3 parent, 11 Oct 2026). Work folder `benchmark-tx/txeng3/7/`. Disk only:
 no network, no vision calls to a model, no owner page touched, no confirm item scored, no *.truth.tsv edited. Cap USD 15 / 2 h.
