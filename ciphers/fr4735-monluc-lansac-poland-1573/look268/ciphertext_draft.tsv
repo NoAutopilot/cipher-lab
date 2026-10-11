@@ -1,0 +1,183 @@
+line	position	sign	confidence	alt	why
+L01	1	K10	H		agree
+L01	2	K26	H		agree
+L01	3	K37	H		agree
+L01	4	K14	H		agree
+L01	5	K05	H		agree
+L01	6	K36	H		agree
+L01	7	K39	M	B:K19	differ
+L01	8	K29	H		agree
+L01	9	K54	M	A:-	gap
+L01	10	K38	M	B:K19	differ
+L01	11	K26	H		agree
+L01	12	K39	M	B:K19	differ
+L01	13	K36	H		agree
+L01	14	K37	H		agree
+L01	15	K25	H		agree
+L01	16	K05	H		agree
+L01	17	W:mihil	H		agree
+L01	18	W:Cur	H		agree
+L01	19	K15	M	A:-	gap
+L01	20	K19	M	A:-	gap
+L01	21	K15	H		agree
+L01	22	K39	M	B:K19	differ
+L01	23	K09	H		agree
+L01	24	K12	M	B:K01	differ
+L01	25	K34	H		agree
+L01	26	K26	H		agree
+L01	27	K37	H		agree
+L01	28	K34	H		agree
+L01	29	K22	H		agree
+L01	30	K36	H		agree
+L01	31	K07	H		agree
+L01	32	K12	H		agree
+L01	33	K26	H		agree
+L01	34	K12	H		agree
+L01	35	K38	M	B:K19	differ
+L01	36	K10	H		agree
+L01	37	K08	H		agree
+L01	38	K33	H		agree
+L01	39	K66	H		agree
+L02	1	K26	H		agree
+L02	2	K39	M	B:K19	differ
+L02	3	K36	H		agree
+L02	4	K30	H		agree
+L02	5	K41	H		agree
+L02	6	K36	H		agree
+L02	7	K01	M	B:K22	differ
+L02	8	?h_bar	M	B:K18	differ
+L02	9	K05	H		agree
+L02	10	K10	H		agree
+L02	11	K22	H		agree
+L02	12	K36	H		agree
+L02	13	K05	H		agree
+L02	14	K14	H		agree
+L02	15	K19	H		agree
+L02	16	K38	M	B:K19	differ
+L02	17	K22	H		agree
+L02	18	K38	M	B:K19	differ
+L02	19	K09	H		agree
+L02	20	K33	H		agree
+L02	21	K12	H		agree
+L02	22	K32	H		agree
+L02	23	K29	H		agree
+L02	24	K10	H		agree
+L02	25	K22	H		agree
+L02	26	?double_slash	M	B:-	gap
+L02	27	K33	H		agree
+L02	28	K12	M	B:K22	differ
+L02	29	K14	H		agree
+L02	30	?double_slash	M	B:-	gap
+L02	31	K29	H		agree
+L02	32	K26	H		agree
+L02	33	K12	H		agree
+L02	34	?h_bar	M	B:K18	differ
+L02	35	K05	H		agree
+L02	36	K12	H		agree
+L02	37	K19	H		agree
+L03	1	K14	H		agree
+L03	2	K33	H		agree
+L03	3	K34	H		agree
+L03	4	K10	H		agree
+L03	5	K33	H		agree
+L03	6	K12	H		agree
+L03	7	K06	H		agree
+L03	8	K22	H		agree
+L03	9	K09	H		agree
+L03	10	K38	M	B:K19	differ
+L03	11	K34	H		agree
+L03	12	K22	H		agree
+L03	13	K36	H		agree
+L03	14	K10	H		agree
+L03	15	K05	H		agree
+L03	16	K16	H		agree
+L03	17	K10	H		agree
+L03	18	K26	H		agree
+L03	19	K36	M	B:-	gap
+L03	20	K33	M	B:-	gap
+L03	21	K34	M	B:-	gap
+L03	22	K12	M	B:-	gap
+L03	23	K05	M	B:-	gap
+L03	24	K25	M	B:-	gap
+L03	25	K41	M	B:-	gap
+L03	26	K62	M	B:-	gap
+L03	27	K12	M	B:-	gap
+L03	28	K05	M	B:-	gap
+L03	29	K62	M	B:-	gap
+L03	30	K22	M	B:-	gap
+L03	31	K36	M	B:-	gap
+L03	32	?h_bar	M	B:-	gap
+L03	33	K15	M	B:-	gap
+L03	34	K63	M	B:-	gap
+L03	35	K59	M	B:-	gap
+L03	36	K12	M	B:-	gap
+L04	1	K19	H		agree
+L04	2	K34	H		agree
+L04	3	K26	H		agree
+L04	4	K12	H		agree
+L04	5	K14	H		agree
+L04	6	K12	H		agree
+L04	7	K29	H		agree
+L04	8	K12	H		agree
+L04	9	K62	H		agree
+L04	10	K41	H		agree
+L04	11	K09	H		agree
+L04	12	K37	H		agree
+L04	13	K26	H		agree
+L04	14	K38	M	B:K19	differ
+L04	15	K12	H		agree
+L04	16	K33	H		agree
+L04	17	K66	H		agree
+L04	18	K26	H		agree
+L04	19	K12	M	A:-	gap
+L04	20	K22	M	B:K19	differ
+L04	21	K38	M	B:K19	differ
+L04	22	K41	H		agree
+L04	23	K05	H		agree
+L04	24	K12	H		agree
+L04	25	K38	M	B:-	gap
+L04	26	K26	H		agree
+L04	27	K22	M	B:K12	differ
+L04	28	K25	H		agree
+L04	29	K36	H		agree
+L04	30	K05	H		agree
+L04	31	K15	H		agree
+L04	32	K39	M	B:K19	differ
+L04	33	K09	H		agree
+L04	34	K10	H		agree
+L04	35	K26	H		agree
+L04	36	K37	H		agree
+L04	37	K38	M	B:K19	differ
+L05	1	K26	H		agree
+L05	2	K05	H		agree
+L05	3	K13	M	B:K14	differ
+L05	4	K34	H		agree
+L05	5	K09	H		agree
+L05	6	K10	H		agree
+L05	7	K41	H		agree
+L05	8	K38	M	B:K19	differ
+L05	9	K09	H		agree
+L05	10	K36	H		agree
+L05	11	K05	H		agree
+L05	12	K12	H		agree
+L05	13	K38	M	B:K19	differ
+L05	14	K12	H		agree
+L05	15	K05	M	A:-	gap
+L05	16	K05	H		agree
+L05	17	K30	H		agree
+L05	18	K41	H		agree
+L05	19	K40	H		agree
+L05	20	K12	H		agree
+L05	21	K05	H		agree
+L05	22	K20	M	B:K05	differ
+L05	23	?double_slash	M	B:K43	differ
+L05	24	K10	H		agree
+L05	25	K39	M	B:K19	differ
+L05	26	K14	H		agree
+L05	27	K09	H		agree
+L05	28	K33	H		agree
+L05	29	K12	H		agree
+L05	30	K15	M	B:-	gap
+L05	31	K15	H		agree
+L05	32	K29	H		agree
+L05	33	K10	H		agree

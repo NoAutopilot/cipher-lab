@@ -14,3 +14,17 @@ utc	item_id	look_row_id	role	folio	canvas	image	source	status
 2026-10-09 13:53	adhoc-4d3edf	adhoc-4d3edf:2-leaf:064d2a	after-2	87r			folio arithmetic	answered CLEAR (recorded)
 2026-10-09 13:53	adhoc-4d3edf	adhoc-4d3edf:2-leaf:064d2a	after-3	87v			folio arithmetic	answered CLEAR (recorded)
 2026-10-09 13:53	adhoc-4d3edf	adhoc-4d3edf:2-leaf:064d2a	after-4	88r			folio arithmetic	answered CLEAR (recorded)
+2026-10-11 19:19	adhoc-649bb4	adhoc-649bb4:2-leaf:de07f3	cipher-page	138r			folio arithmetic	owed
+2026-10-11 19:19	adhoc-649bb4	adhoc-649bb4:2-leaf:de07f3	facing	137v			folio arithmetic	owed
+2026-10-11 19:19	adhoc-649bb4	adhoc-649bb4:2-leaf:de07f3	before-2	137r			folio arithmetic	owed
+2026-10-11 19:19	adhoc-649bb4	adhoc-649bb4:2-leaf:de07f3	after-1	138v			folio arithmetic	owed
+2026-10-11 19:19	adhoc-649bb4	adhoc-649bb4:2-leaf:de07f3	after-2	139r			folio arithmetic	owed
+2026-10-11 19:19	adhoc-649bb4	adhoc-649bb4:2-leaf:de07f3	after-3	139v			folio arithmetic	owed
+2026-10-11 19:19	adhoc-649bb4	adhoc-649bb4:2-leaf:de07f3	after-4	140r			folio arithmetic	owed
+2026-10-11 19:20	adhoc-649bb4	adhoc-649bb4:2-leaf:de07f3	cipher-page	138r			folio arithmetic	answered CONTEXT (recorded)
+2026-10-11 19:20	adhoc-649bb4	adhoc-649bb4:2-leaf:de07f3	facing	137v			folio arithmetic	answered CONTEXT (recorded)
+2026-10-11 19:20	adhoc-649bb4	adhoc-649bb4:2-leaf:de07f3	before-2	137r			folio arithmetic	answered CONTEXT (recorded)
+2026-10-11 19:20	adhoc-649bb4	adhoc-649bb4:2-leaf:de07f3	after-1	138v			folio arithmetic	answered CONTEXT (recorded)
+2026-10-11 19:20	adhoc-649bb4	adhoc-649bb4:2-leaf:de07f3	after-2	139r			folio arithmetic	answered CONTEXT (recorded)
+2026-10-11 19:20	adhoc-649bb4	adhoc-649bb4:2-leaf:de07f3	after-3	139v			folio arithmetic	answered CONTEXT (recorded)
+2026-10-11 19:20	adhoc-649bb4	adhoc-649bb4:2-leaf:de07f3	after-4	140r			folio arithmetic	answered CONTEXT (recorded)
