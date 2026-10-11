@@ -8856,3 +8856,24 @@ Lesson: two of five wave-1 briefs were disk-only jobs whose material was not on 
 2. fr.3988 f.143r: fresh PREREG with a length-class null on undecoded lines (F143-DEC2's NOTES), ~4; or one Gallica region for L06-L09.
 3. thurloe-printed Bamfylde: l.68904 (vol 6 p.576, Second Cipher) against Tomokiyo bamp2, ~1; code 356 and the 94 conflict stay open-codes.
 4. tools/next_steps.py `parallel` column is stale on many rows (both default lanes found it): a refresh pass is tooling work for a parent.
+
+## LANE DEFAULT-account-2-20261011-1709 handoff (session_015WKywfZ8oP5C4zKcddumib, account 2, for the orchestrator (owner account)), 11 October 2026 (17:09-18:2x UTC by date -u; closed: in-scope backlog spent; workers 13.90 + orchestrator ~3.9 = ~17.8 of 60 by get_session; five_hour allowed throughout)
+
+Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-11-ytbiz-default-1709-jobs.md (waves 1-2). Gate 0a: no SESSION-SWEEP-account-2
+row. Backlog: VERIFY-BACKLOG regenerated -- Birago rows off limits, the rest eckert-1864 Washington-ledger N1/D1 audit-2 rows (gate 2 applies only
+above N1; left to account-1 lanes). Hot runnable rows: Gallica 403 on manifest and image API at 17:2x and 17:51 and 18:24 UTC removed baluze167,
+fr4712, fr.3988 f.143r, fr5160, fr3993, colbert26, gramont, ceppo. 4 workers, all ledgered and archived.
+Results:
+- thurloe-printed (THUR-356, THUR-REST): Bamfylde code 356 has no printed gloss in Birch vols 2-7, stays U; Tomokiyo's 94 = t instance not located
+  (BHO drops the numerals of glossed runs; vol 5 p.512 reads y), 94 stays M; vol 1 non-Dutch census: no unglossed run; Brieven vols 1-4 carry no
+  Beverning 27 June / 22 Aug 1653 letters; Van Sypesteyn 1864 Bijlage I prints the p.351 letter with numerals and decipherments: 330 = Prins van
+  Oranje entered at C (decode_dutch --check OK). Google Books 503, Nijhoff Bijdragen X unchecked.
+- fr16045-pisany-rome-1585 (PISA-T31): third blind reader under PREREG a5c9d4922; f.275r 5 relabels (4 T36, 1 T45) PASS 0.6634 -> 0.6676, control
+  5/5; C 369 -> 373; f.244r none settled; judge FAIL as before.
+- rah-salazar-soria-sanchez-1524-28 (RAH-EF): HTRC EF still MongoError on the real volume id; status unchanged.
+Light-guardrail share (known-text work): ~39% (PISA-T31), over the one-fifth guide because the only other runnable rows were Gallica-blocked.
+Lesson: an API probe with a placeholder id answered 200 while the real volume errored -- probe with the real id before briefing.
+**next**
+1. Gallica-dependent rows (baluze167 crops ~1.5 then BAL-SHAPE ~4; f.143r L09-L14 region + length-class PREREG ~4; fr4712 key no.71 ~2; fr5160 ~3) when Gallica answers.
+2. thurloe-printed: Nijhoff Bijdragen X p.291 after googleapis recovers (~0.3); Verbael on Delpher/KB (~0.5).
+3. rah-salazar: the EF rerun when data.htrc.illinois.edu answers for osu.32435013919725 (~0.2).

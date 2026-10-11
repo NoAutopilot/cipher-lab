@@ -628,4 +628,4 @@ FIX-AUD2-L17	account-1	.claude/briefs/runs/2026-10-10-acct1-lane-ledger17-jobs.m
 PARA-CHECK	account-1	research/mockups/site/data/context_paragraphs.tsv	Opus 5.5	4	45	done 2026-10-10 23:50	2026-10-10 23:42	source-check the 11 SITE-ITEMS-3 curator paragraphs against each item's AUDIT/NOTES/status/SELECTION; PASS/FIX/HOLD per row in context_paragraphs_check.tsv; rule 10, museum terms; do not create context_approved; for orchestrator (owner account)
 DEFAULT-account-2-20261011-0509	account-2	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-11 07:04	2026-10-11 05:09	auto-fill: empty queue; closed 07:0x UTC: backlog spent, ~38 of 60
 DEFAULT-account-1-20261011-0540	account-1	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-11 06:36	2026-10-11 05:40	auto-fill: empty queue
-DEFAULT-account-2-20261011-1709	account-2	.claude/briefs/default-lane.md	Opus 5.5	60	600	claimed session_015WKywfZ8oP5C4zKcddumib 2026-10-11 17:09	2026-10-11 17:09	auto-fill: empty queue
+DEFAULT-account-2-20261011-1709	account-2	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-11 18:25	2026-10-11 17:09	auto-fill: empty queue
