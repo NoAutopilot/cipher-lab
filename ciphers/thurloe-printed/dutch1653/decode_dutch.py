@@ -8,6 +8,8 @@ NAMES: ct_p351, ct_p339, ct_p308, ct_p435 (DUTCH-KEY); ct_p301, ct_p418 (DUTCH-M
 Grades (rule 4): H = a key-stated value (codes 1-66 of the printed table) on a token both transcription passes agree on;
 M = a token whose transcription is doubtful (pass disagreement settled by eye, flag column) or a code above 66 (name/country
 code, outside the printed key, left unread as [code]).
+C = a code above 66 whose value is printed as a decipherment of the very same letter (printed_glosses.tsv; THUR-REST, 11 Oct 2026:
+p.351 code 330 = Prins van Oranje, Van Sypesteyn 1864 Bijlage I), rendered [code=value].
 p.435 (Boreel) is decoded only as the control's input: the key fails its own control there (gate_dutchkey.json "p435"),
 so every p.435 token is graded '-' (not read), never H.
 DUTCH-MORE (PREREG-DUTCHMORE.md): p.418 likewise '-' (its fold does not beat the control max); p.301 capped at M (non-test at N=10).
@@ -21,6 +23,12 @@ CAP_M = {'p301'}  # p.301: fold non-test at N=10 (power 0.62); reading rests on 
 def key():
     return {int(r['code']): r['letter'] for r in csv.DictReader(open(os.path.join(H, 'key_dewitt_1653.tsv')), delimiter='\t')}
 
+def glosses():
+    p = os.path.join(H, 'printed_glosses.tsv')
+    if not os.path.exists(p): return {}
+    rows = [l for l in open(p) if not l.startswith('#')]
+    return {(r['name'], int(r['code'])): (r['value'], r['grade']) for r in csv.DictReader(rows, delimiter='\t')}
+
 def runs(name):
     out = {}
     for r in csv.DictReader(open(os.path.join(H, f'ct_{name}.tsv')), delimiter='\t'):
@@ -29,12 +37,15 @@ def runs(name):
 
 def decode(name, K=None):
     K = K or key()
+    G = glosses()
     rows = []
     for (page, run), toks in runs(name).items():
         for r in toks:
             c = int(r['token'])
             if c in K:
                 val, g = K[c], ('H' if r['flag'] == 'agree' else 'M')
+            elif (name, c) in G:
+                val, g = f'[{c}={G[(name, c)][0]}]', G[(name, c)][1]
             else:
                 val, g = f'[{c}]', 'M'
             if name in CAP_M: g = 'M'
@@ -58,7 +69,7 @@ def main():
     names = [a for a in sys.argv[1:] if not a.startswith('--')] or NAMES
     for n in names:
         rows = decode(n); t = text(rows); p = os.path.join(H, f'reading_{n}.tsv')
-        g = {k: sum(1 for r in rows if r[5] == k) for k in 'HM-'}
+        g = {k: sum(1 for r in rows if r[5] == k) for k in 'HCM-'}
         if '--check' in sys.argv:
             if not os.path.exists(p) or open(p).read() != t:
                 print('STALE', p); stale = True

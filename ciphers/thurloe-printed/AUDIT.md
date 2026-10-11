@@ -1622,3 +1622,14 @@ identical to `bamf/ct_p160.txt`. 27 cipher tokens: 24 letter codes and 3 word/na
 **5. Postmortem.** One over-grade (code 30 C -> M), caused by the decode script's grade rule differing from the PREREG's
 "consistently"; corrected in `bamf/decode_bamf.py` and `reading_bamf_p160.txt`, and NOTES gets a pointer (rule 10 propagation). The
 brief's key source `ours` is corrected to `period` per the folder's precedent. Neither solver claimed novelty or depth above D1.
+
+## Revision after AUDIT (THUR-REST, 11 Oct 2026; rule 10 propagation, solver worker -- no class or depth reassigned)
+- p.351 (De Witt to Beverning, 24 July 1653): code 330, the residue named above, is now read "Prins van Oranje", grade C, from a printed
+  decipherment of this very letter: J.W. van Sypesteyn, *Geschiedkundige bijdragen* (1864), Bijlage I, printed pp.213-214, from the Rijksarchief
+  original (IA geschiedkundige00sypegoog, OCR text). p.351 is now H 81, C 1 of 82; the "residue code 330" in the depth line above is superseded.
+- The same Bijlage prints the cipher numerals of every p.351 run with a decipherment in parentheses; it agrees with the p.72-key reading on every run
+  and supplies a 5 that Birch omits in run 4 ("grave", where Birch gives 22 48 55 15). Van Sypesteyn notes the letter is in Thurloe I p.351 with its
+  cipher undeciphered there. This is the "Van Sypesteyn" prior plaintext named in the classification table above, now seen (OCR, not image-checked):
+  for the verifier, it is also a prior printed decipherment of the cipher groups of this letter (the class is the verifier's to revisit, not this worker's).
+- p.340's code 330 stays M (the other direction of correspondence; rule 4). No SECOND-OPINIONS-QUEUE.tsv row exists for these items.
+  Files: dutch1653/printed_glosses.tsv, decode_dutch.py, reading_p351.tsv, sypesteyn_p351_compare.tsv, codes_over_100.tsv; NOTES.md "## THUR-REST".

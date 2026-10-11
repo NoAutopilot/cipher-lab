@@ -1,0 +1,14 @@
+# THUR-REST, 11 Oct 2026. Van Sypesteyn, Geschiedkundige bijdragen (1864), Bijlage I (De Witt to Beverning, 's Hage 24 Julij 1653, from the Rijksarchief), printed pp.213-214, vs Birch vol 1 p.351 (ct_p351.tsv).
+# Sypesteyn numerals and parenthesised decipherments from the IA OCR text (geschiedkundige00sypegoog_djvu.txt, sha1 a28dcbc0); not image-checked. His note: the letter "komt voor in Thurloe papers I, p. 351; hoewel het geheimschrift niet is ontcijferd geworden".
+run	birch_ct	sypesteyn_ocr	sypesteyn_gloss	agree	note
+1	45 48 28 38 11 18 50 51 15 14 40 54 4 48 26 16 49 19	45 48 28 38 11 18 50 51 15 14 40 54 4 48 26 16 49 19	Princesse-Douariere	yes	
+2	22 48 8 18 20 60 29 33 34 17 35	22 48 8 18 20 60 29 33 34 17 35	Graef Willem	yes	
+3	25 39 43 12 24	25 39 43 12 24 "	Hooght.	yes	trailing OCR mark
+4	22 48 55 15	22 48 5 55 15	Grave	no	Sypesteyn has 5 (= a under the p.72 key) between 48 and 55: g r a u e; Birch omits it (DUTCH-KEY's "grue" vs "grave")
+5	24 43 39 12 25 52	24 43 39 12 25 "	Hooght.	yes (OCR)	52 OCR'd as a quote mark: not checked
+6	330	330	Prins van Oranje	yes	printed decipherment of code 330 (printed_glosses.tsv, grade C)
+7	14 15 50 26 22 37 17 49 19 38	14 15 50 26 22 371 171 49 19 38	designeren	yes (OCR)	"371 , 171" read as 37, 17 (OCR of the commas)
+8	25 40 40 12 24 53	25 40 40 12 24 ^	Hooght.	yes (OCR)	53 OCR'd as ^
+9	25 40 41 12 25 52	25 40 41 12 25 ^*	Hooght.	yes (OCR)	52 OCR'd as ^*
+10	24 40 20 21	24 140 20 21	hoff	yes (OCR)	"140" read as 40 (OCR of a comma)
+11	25 5 15 48 18 24 41 40 11 25 35	25 5 15 48 18 24 41 40 11 25 "	Haere Hoocht.	yes (OCR)	35 OCR'd as a quote mark

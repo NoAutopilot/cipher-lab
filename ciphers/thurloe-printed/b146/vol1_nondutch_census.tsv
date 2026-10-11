@@ -1,0 +1,16 @@
+# THUR-REST, 11 Oct 2026: census line per vol 1 non-Dutch hit with >= 20 numerals (b146/hits.tsv rows; line numbers in collectionofstat01thur_djvu.txt, sha1 ac831b5b = b146/manifest.tsv, re-fetched 11 Oct 2026, HTTP 200).
+# Read from the OCR text only, a few lines at the first cluster; no leaf looked at, nothing transcribed or decoded. gloss_seen = Birch prints spaced-letter/word rows over the numerals (a printed decipherment beside the cipher).
+line_first	line_last	page	heading_as_parsed	numerals	host_text	gloss_seen	note
+30661	30668	331~	A paper of the council of state to the Spanish ambassador [July 2, 1652]	21	French	yes	intercepted French letter (Cromwell, cardinal, Bourdeaux in the gloss); heading parse probably the preceding item
+31823	31950	347	Captain Tromp to the States General	157	French	yes	gloss over the runs (pieces canons, la ville de Bourdeaux, le roy d'Angleterre); heading parse probably wrong: French intercept, not Tromp
+33146	33181	361~	An intercepted letter from Paris to the marquis de Barriere	27	French	yes	glossed letter by letter (a u p res; d e u x)
+37034	37087	412~	My humble service to Mr. Edwards	98	English	yes	3-digit word code with word glosses (the Texell, Zealand, ships); an English intelligence letter
+43962	43966	500	(within Bisdommer to Vande Perre and Beverning, Hague 3 Oct 1653)	114	English	no	small-number alphabet with 7 most frequent: Vande Perre family (Aymeloglu's alphabet); RETRO-2026-09-23 s.4A control; Dutch family, not non-Dutch
+45764	45808	521~	The assembly of the states is appointed to be on Tuesday next	95	English	partial	same small-number alphabet (7 most frequent; "617" + 9 21 7 6 7 6 12 ... under the gloss "the good dispositions do"); Dutch-family lead, not non-Dutch
+49547	49571	567~	Mr. William Hooke to the lord general Cromwell, from New-England	70	English	yes	3-digit code, word/syllable glosses (ships, Eastland, laden); heading parse doubtful
+51713	51713	597~	Mr. Charles Longland to secretary Thurloe, Leghorn 28 Nov 1653	20	English	yes	3-digit code glossed (flor is ship ... going out)
+57159	57182	(appendix)	Duke of York to K. Charles II, Paris 21 May 1655	72	English	yes	royalist cipher, glossed (Roman-catholiks ... to kill Cromwell)
+62148	62232	(appendix)	The protector to the governor of Virginia	322	English	yes	glossed (fighting of the fleet of Spain); 19 clusters
+62596	62738	(appendix)	(gloss line "Yatch to block up that harbour")	562	English	yes	glossed; 20 clusters; likely a Mountagu run (key_montagu*.tsv on file) -- not checked
+63078	63732	(appendix)	(gloss line "Ld. Aubony the Dr. him not to be")	511	English	yes	glossed (Mar. Turin, Ld. Aubony, governor of Arras); 37 clusters
+63759	63767	(appendix)	Lord Aubony C. Retz to Rome the Pope	26	English	yes	glossed (Bysh. Drummore, the King's service, to Italy)

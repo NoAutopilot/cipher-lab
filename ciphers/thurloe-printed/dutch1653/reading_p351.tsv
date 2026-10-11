@@ -43,7 +43,7 @@ page	run	pos	token	value	grade
 351	5	4	12	c	H
 351	5	5	25	h	H
 351	5	6	52	t	H
-351	6	1	330	[330]	M
+351	6	1	330	[330=Prins van Oranje]	C
 351	7	1	14	d	H
 351	7	2	15	e	H
 351	7	3	50	s	H
@@ -87,7 +87,7 @@ page	run	pos	token	value	grade
 # p.351 run 3: hooch
 # p.351 run 4: grue
 # p.351 run 5: hoocht
-# p.351 run 6: [330]
+# p.351 run 6: [330=Prins van Oranje]
 # p.351 run 7: designeren
 # p.351 run 8: hoocht
 # p.351 run 9: hoocht
