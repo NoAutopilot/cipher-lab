@@ -5,8 +5,11 @@
 // Cancel-then-Close change nothing; "It was right" still checks a box as it is; Undo takes the keep back first (the sign waits again),
 // then the cut. For a sign taken out in step 1 (no question): Save cut saves the cut and the sign stays waiting for its pile (a fixed
 // cut does not say where it belongs). It also works when the page has no Split button. iPhone 13 (taps) and a desktop mouse.
-// Must NOT: move or keep anything on Close / Cancel; put a taken-out sign back in a pile because its cut was fixed.
-// Usage: PW_EXE=/opt/pw-browsers/chromium NODE_PATH=$(npm root -g) node test_s2_fix.js FIXTURE_DIR   (tray.html and plain.html there)
+// Also the box-check key (tools/sign_sorter.py --key box): shown under the lede only on a page built with it, its fold kept per browser.
+// Must NOT: move or keep anything on Close / Cancel; put a taken-out sign back in a pile because its cut was fixed; show a key on a page
+// built without --key.
+// Usage: PW_EXE=/opt/pw-browsers/chromium NODE_PATH=$(npm root -g) node test_s2_fix.js FIXTURE_DIR   (tray.html, plain.html, tray_key.html there:
+// make_fixtures.py)
 const { chromium, devices } = require('playwright'); const mock = require('./mock_db'); const path = require('path');
 const DIR = path.resolve(process.argv[2]);
 let fails = 0; const errs = [];
@@ -87,6 +90,18 @@ const ok = (c, m, x) => { console.log((c ? 'ok   ' : 'FAIL ') + m + (x !== undef
       `${name}: a sign taken out in step 1: Save cut saves the cut and it stays waiting for its pile (not put back, not kept)`, JSON.stringify(a));
     await ctx.close();
   }
+  // the box-check key (OPTS.key = 'box', tools/sign_sorter.py --key box): shown under the lede on tray_key.html only, open the first
+  // time, folded again after a reload once the person folds it (per browser, localStorage behind try/catch)
+  { const ctx = await b.newContext(prof('iPhone 13')); await mock.install(ctx); const p = await ctx.newPage(); p.on('pageerror', e => errs.push('key: ' + e.message));
+    await p.goto('file://' + path.join(DIR, 'tray.html')); await p.waitForTimeout(800);
+    ok(!(await p.evaluate(() => !!document.getElementById('boxKey'))), 'iPhone 13: a page built without --key shows no key (the block is removed)');
+    await p.goto('file://' + path.join(DIR, 'tray_key.html')); await p.waitForTimeout(800);
+    const k = await p.evaluate(() => { const d = document.getElementById('boxKey'), l = document.querySelector('.lede'); return d ? { vis: !!d.offsetParent, open: d.open, rows: d.querySelectorAll('tr').length,
+      after: l && l.nextElementSibling === d, h: Math.round(d.getBoundingClientRect().height), w: Math.round(d.scrollWidth), vw: innerWidth } : null; });
+    ok(k && k.vis && k.open && k.rows === 8 && k.after && k.w <= k.vw, 'iPhone 13: --key box shows "What to do: a key" right under the lede, open, eight drawn cases, no sideways scroll', JSON.stringify(k));
+    await p.locator('#boxKey > summary').tap(); await p.waitForTimeout(200); await p.reload(); await p.waitForTimeout(800);
+    ok(await p.evaluate(() => { const d = document.getElementById('boxKey'); return !!d && !d.open && !!d.offsetParent; }), 'iPhone 13: folded, it stays folded after a reload');
+    await ctx.close(); }
   ok(!errs.length, 'no page errors', errs.join(' | '));
   console.log('errors:', errs); console.log(fails ? fails + ' FAILED' : 'ALL PASS');
   await b.close(); process.exit(fails ? 1 : 0);

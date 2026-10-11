@@ -249,7 +249,7 @@ body.traypad #offer{bottom:100px}
 #boxKey .leg{font-size:.78rem;color:var(--muted);margin:6px 0 0}
 @media (max-width:640px){#boxKey tr{display:grid;grid-template-columns:auto 1fr;gap:2px 8px;border-top:1px solid var(--line);padding:6px 0}
 #boxKey td{border:0;padding:0}
-#boxKey td.p{grid-row:span 2}
+#boxKey td.p{grid-row:span 2;width:auto;align-self:start;padding:2px}   /* a grid cell: the 1% table width made it 4 px, and the drawing fell off its paper (dark mode: ink on the dark page) */
 #boxKey td.s{width:auto}
 #boxKey svg{width:auto;height:44px}}
 #viewSeg[hidden],#ctxNbL[hidden]{display:none}

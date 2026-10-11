@@ -16,6 +16,7 @@ run test_pageview test_pageview.js "$OUT/region.html" "$OUT/test_pageview"
 run test_recut_quad test_recut_quad.js "$OUT/plain.html" "$OUT/test_recut_quad" "$OUT/region.html"
 run test_qa test_qa.js "$OUT/plain.html" "$OUT/dump"
 run test_focus_tray test_focus_tray.js "$OUT"   # template 2026-10-09.1: questions start in the tray (tray.html, tray_rank.html, plain.html)
+run test_s2_fix test_s2_fix.js "$OUT"   # template 2026-10-09.6: step 2's Fix the cut (tray.html, plain.html) and the box-check key (tray_key.html)
 # template 2026-10-09.5, owner rule R05 (tap = to the tray, hold = the card, every box; iPhone 13 + iPhone SE + mouse): the no-tray build
 # (plain: '?' tiles), the tray build (tray: waiting '2' tiles, tray questions), both with a "Most useful first" box (tray_rank, cluster)
 # and the earlier picks (refs: the check-mark tiles); round 2 (10 Oct 2026): region, whose r_L01-r_L03 line strips exercise R02 (the
