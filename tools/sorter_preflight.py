@@ -2,10 +2,11 @@
 """Pre-publish gate for a sign-sorter page (SORTER-PREFLIGHT, 6 Oct 2026; CLAUDE.md Usage 8a: a rule broken twice
 becomes a tool). Exits non-zero unless the page is fit to put in front of the owner.
 
-  python3 tools/sorter_preflight.py SORTER.html [--cipher-lines FILE] [--expect-owner-account] [--sheet OUT.png] [--no-gestures]
+  python3 tools/sorter_preflight.py SORTER.html [--cipher-lines FILE] [--expect-owner-account] [--sheet OUT.png] [--no-gestures] [--no-pan]
   python3 tools/sorter_preflight.py --inputs DIR [--cipher-lines FILE]      (text inputs: signs.tsv, labels.tsv,
         focus.tsv, optional pages/ -- before a build, or where the images may not leave a private clone)
   python3 tools/sorter_preflight.py --gestures SORTER.html                  (check 6 alone; exit 0 PASS, 1 FAIL, 2 SKIP)
+  python3 tools/sorter_preflight.py --pan SORTER.html                       (check 7 alone; exit 0 PASS, 1 FAIL, 2 SKIP)
   python3 tools/sorter_preflight.py --cvd [SORTER.html | TEMPLATE]          (check 5 alone)
 
 Why (owner, 6 Oct 2026, "how do we prevent this in the future?"): the Oldenbarnevelt A/C2 sorter (R7-OLDSORT) cut its
@@ -64,12 +65,25 @@ last line names it under "not checked"):
               tiles, 10 Oct 2026), so the CLI runs it by default (`--no-gestures` skips
               it, saying so) and a library call (`run()`, e.g. tools/sign_sorter.py after a build) only when asked
               (`gestures=True`), printing `SKIP gestures (not run by this call ...)` otherwise.
+ 7. pan (owner rule R09, 11 Oct 2026, Bergh: "I wish when I clicked into a symbols page I could slide my finger on the manuscript
+              surrounding my target symbol to see its surroundings"; `--pan PAGE` runs this one alone)  runs
+              tools/sign_sorter/browser_tests/test_pan.js --probe on the page as an iPhone 13: a tile whose card picture has room to move
+              (tiles with a line above and below first, at the opening zoom, then 6 and 8), a finger drag 80 px left and 60 px down on the
+              picture: the view moves by the drag (within 10%), the sign and the answers stay as they were, "Back to the sign" puts the view
+              back, zero page errors. A page whose every line is shown to its top and bottom (single short crops, no neighbour line) has
+              nothing above or below to move to: it is checked sideways only, and the line says so. Needs node, playwright and Chromium like check 6 (SKIP without them, never a silent pass); about
+              half a minute a page, so the CLI runs it by default (`--no-pan` skips it, saying so) and a library call only when asked
+              (`pan=True`). The full behaviour (four directions, both views, pinch, Fix the cut, the brush, the iPhone SE buttons) is
+              test_pan.js on the fixtures, in run_all.sh.
  --expect-owner-account  also fail unless CIPHERLAB_ACCOUNT is 'owner' (ASKS 145: a page published from another
               account is private to it, and the owner gets "deleted or not available").
 
 Must NOT block (each has an offline test in tools/tests/test_sorter_preflight.py; the colour check's are in test_sign_sorter_cvd.py:
 "ordered", "required" and "entered" in a hint, and "green" in a pile name or a data value):
- - a machine with no node, playwright or Chromium: the gesture check prints SKIP and the verdict stands on the other checks;
+ - a machine with no node, playwright or Chromium: the gesture check prints SKIP and the verdict stands on the other checks (the
+   pan check the same);
+ - a page whose cards open with the whole picture in view (a short line, a small region): the pan probe tries zoom 6 and 8 before
+   it says FAIL, and tiles with a line above and below first; a page with nothing above or below any line is checked sideways only;
  - a page without one of the tile kinds the gesture test drives (no rank box, no tray, no check-mark tiles): it says skip for
    that kind and checks the rest;
  - a page whose focus tiles are legitimately all one family or one pile (Ferdinand's 25 t / tt / e questions): the
@@ -86,6 +100,7 @@ import argparse, base64, csv, io, json, os, random, re, shutil, statistics, subp
 HERE = os.path.dirname(os.path.abspath(__file__))
 TEMPLATE = os.path.join(HERE, 'sign_sorter', 'template.html')
 GESTURE_JS = os.path.join(HERE, 'sign_sorter', 'browser_tests', 'test_gestures.js')
+PAN_JS = os.path.join(HERE, 'sign_sorter', 'browser_tests', 'test_pan.js')
 MARKER_RE = re.compile(r'<meta name="sign-sorter-template" content="([^"]+)"')
 PLACEHOLDER = {'', '_', '?', 'unread', 'unsorted', 'unknown', 'none', 'bad-cut', 'not-a-letter', 'nonletter'}
 PROSE = {'sign', 'signs', 'word', 'words', 'blind', 'label', 'labels', 'pile', 'piles', 'here', 'reading', 'this', 'that', 'which'}
@@ -499,10 +514,35 @@ def check_gestures(page, timeout=1800, env=None, runner=None):
                    + ''.join('\n      ' + l for l in bad[:12]) + (f'\n      ... {len(bad) - 12} more' if len(bad) > 12 else ''))
 
 
+def check_pan(page, timeout=600, env=None, runner=None):
+    """(ok|None, line). Check 7 (owner rule R09): tools/sign_sorter/browser_tests/test_pan.js --probe on the page (see the module docstring).
+    None = SKIP (no node/playwright/Chromium). env/runner are for the offline test, as in check_gestures."""
+    if env is None:
+        env, why = node_env()
+        if env is None:
+            return None, f'SKIP pan (no node/playwright: {why}) -- run `python3 tools/sorter_preflight.py --pan PAGE` where they are, before publishing'
+    runner = runner or subprocess.run
+    try:
+        r = runner(['node', PAN_JS, '--probe', os.path.abspath(page)], cwd=os.path.dirname(PAN_JS), env=env, capture_output=True, text=True, timeout=timeout)
+    except subprocess.TimeoutExpired:
+        return False, f'pan: test_pan.js --probe did not finish in {timeout} s'
+    out = (r.stdout or '').splitlines()
+    good = [l for l in out if l.startswith('ok ')]
+    bad = [l for l in out if l.startswith('FAIL')]
+    if r.returncode == 0 and not bad and good:
+        return True, f'pan: owner rule R09 (slide the card\'s picture to look around) holds on an iPhone 13: {len(good)} checks [test_pan.js --probe]'
+    if not bad:
+        tail = ((r.stderr or '') + '\n' + (r.stdout or '')).strip().splitlines()[-3:]
+        return False, f'pan: test_pan.js --probe exited {r.returncode} with no FAIL line -- ' + ' | '.join(tail)
+    return False, (f'pan: {len(bad)} of {len(good) + len(bad)} checks FAIL (owner rule R09: a finger on the card\'s picture moves the view)'
+                   + ''.join('\n      ' + l for l in bad[:8]))
+
+
 def run(page=None, inputs=None, cipher_lines=None, expect_owner=False, sheet=None, seed=20261006, quiet=False, search=(), pages_json=None,
-        gestures=False):
+        gestures=False, pan=False):
     """-> (ok, lines). Used by tools/sign_sorter.py after a build. gestures=True runs check 6 (a minute or more a page; the CLI
-    default); otherwise it prints `SKIP gestures (not run by this call ...)`."""
+    default); otherwise it prints `SKIP gestures (not run by this call ...)`. pan=True runs check 7 (half a minute; the CLI default);
+    otherwise `SKIP pan (not run by this call ...)`."""
     html = None
     if page:
         data, html = load_html(page)
@@ -534,6 +574,12 @@ def run(page=None, inputs=None, cipher_lines=None, expect_owner=False, sheet=Non
         res.append(check_gestures(page))
     else:
         res.append((None, 'SKIP gestures (not run by this call: `python3 tools/sorter_preflight.py PAGE` or `--gestures PAGE` runs it before publishing)'))
+    if html is None:
+        res.append((None, 'SKIP pan (text inputs, no page)'))
+    elif pan:
+        res.append(check_pan(page))
+    else:
+        res.append((None, 'SKIP pan (not run by this call: `python3 tools/sorter_preflight.py PAGE` or `--pan PAGE` runs it before publishing)'))
     if expect_owner:
         acct = os.environ.get('CIPHERLAB_ACCOUNT', '')
         res.append((acct == 'owner', f'account: CIPHERLAB_ACCOUNT={acct or "unset"}' +
@@ -541,7 +587,8 @@ def run(page=None, inputs=None, cipher_lines=None, expect_owner=False, sheet=Non
     ok = all(r[0] is not False for r in res)
     lines = [r[1] if r[0] is None and r[1].startswith('SKIP ') else ('PASS ' if r[0] else 'n/a  ' if r[0] is None else 'FAIL ') + r[1] for r in res]
     partial = [w for w, gone in (('template', html is None), ('ink, strip-height, contact sheet', not imgs),
-                                 ('gestures', any(r[0] is None and r[1].startswith('SKIP gestures') for r in res))) if gone]
+                                 ('gestures', any(r[0] is None and r[1].startswith('SKIP gestures') for r in res)),
+                                 ('pan', any(r[0] is None and r[1].startswith('SKIP pan') for r in res))) if gone]
     lines.append(f'preflight: {"PASS" if ok else "FAIL"}' + (f' (not checked: {"; ".join(partial)})' if partial else ''))
     if not quiet:
         print('\n'.join(lines))
@@ -562,9 +609,15 @@ def main(argv=None):
     ap.add_argument('--pages-json', help='glyph_atlas pages.json: real page colours for the box-colour check (default: the embedded greys)')
     ap.add_argument('--gestures', metavar='PAGE', help='run only the gesture check (check 6, owner rule R05) on PAGE: exit 0 PASS, 1 FAIL, 2 SKIP')
     ap.add_argument('--no-gestures', action='store_true', help='skip the gesture check (check 6) in a full run; it prints SKIP and is listed as not checked')
+    ap.add_argument('--pan', metavar='PAGE', help='run only the look-around check (check 7, owner rule R09) on PAGE: exit 0 PASS, 1 FAIL, 2 SKIP')
+    ap.add_argument('--no-pan', action='store_true', help='skip the look-around check (check 7) in a full run; it prints SKIP and is listed as not checked')
     a = ap.parse_args(argv)
     if a.gestures:
         ok, line = check_gestures(a.gestures)
+        print(line if ok is None else ('PASS ' if ok else 'FAIL ') + line)
+        sys.exit(0 if ok else 2 if ok is None else 1)
+    if a.pan:
+        ok, line = check_pan(a.pan)
         print(line if ok is None else ('PASS ' if ok else 'FAIL ') + line)
         sys.exit(0 if ok else 2 if ok is None else 1)
     if a.cvd:
@@ -577,7 +630,7 @@ def main(argv=None):
         sys.exit(0 if ok is not False else 1)
     if bool(a.page) == bool(a.inputs):
         ap.error('give a page or --inputs DIR')
-    ok, _ = run(a.page, a.inputs, a.cipher_lines, a.expect_owner_account, a.sheet, a.seed, pages_json=a.pages_json, gestures=not a.no_gestures)
+    ok, _ = run(a.page, a.inputs, a.cipher_lines, a.expect_owner_account, a.sheet, a.seed, pages_json=a.pages_json, gestures=not a.no_gestures, pan=not a.no_pan)
     sys.exit(0 if ok else 1)
 
 

@@ -221,8 +221,15 @@ body.traypad #offer{bottom:100px}
 @media (max-width:640px){#offer .tiles{flex-wrap:nowrap;overflow:hidden;flex:1 1 100%}#offer .t{--sz:34px;flex:0 0 auto}}   /* phone: one row of look-alikes, the offer stays short */
 @media (max-width:640px), (max-height:500px){#ctx{padding:6px;place-items:start center}#ctx .box{padding:10px;max-height:calc(100dvh - 12px)}
   .pile{scroll-margin-top:var(--barh,70px)} .bigt{width:88px;height:88px} .bigt img{max-width:80px;max-height:80px} #trayGo{padding:8px 8px}}
+/* Look around the page (owner rule R09, 11 Oct 2026): a finger or a mouse drag on the card's picture moves the view; the script sets
+   touch-action to pan-y on it when the whole picture is in view already (nothing to move: a slide scrolls the card as before) */
+#ctxC{touch-action:none;cursor:grab;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+#ctxC.panning{cursor:grabbing}
+#ctxPanRow{gap:6px 10px}
+#ctxCentre{flex:0 0 auto}
+#ctxPanHint{flex:1 1 12em;min-width:0}
 /* Fix the cut (owner, 4 Oct 2026): the larger view's bracket box becomes editable */
-.cv.editing canvas{touch-action:pan-y pinch-zoom;cursor:crosshair}
+.cv.editing canvas{cursor:crosshair}
 .cv.editing.brush canvas{touch-action:none}
 #fixBox[hidden]{display:none}
 #fixBox{display:grid;gap:8px;border:1px dashed var(--accent);border-radius:6px;padding:8px 10px;background:var(--accent-soft)}
@@ -255,6 +262,7 @@ body.traypad #offer{bottom:100px}
   #ctx .row.top{order:-8;top:-10px}
   #ctxNav{order:-7}
   #ctxCv{order:-6;scroll-margin-top:56px}
+  #ctxPanRow{order:-6}   /* right under the picture (DOM order breaks the tie) */
   #ctxBigW{order:-5;padding:4px}
   #ctxFixRow,#fixBox{order:-4}
   #ctxQ{order:-3}
@@ -304,7 +312,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
   <p class="banner" id="banner" hidden></p>
   <div class="how">
     <div><b>Step 1 · Clean each pile</b>Look along a pile. <b style="display:inline;text-transform:none;letter-spacing:0">Tap</b> any sign that is not like the others: it moves to the "Taken out" tray at the bottom. Tap it there to put it back. When a pile looks right, press "This pile is done".</div>
-    <div><b>Open a sign's card</b>Hold a sign, in a pile, a box or the tray (or press "View larger" on a pile): its card opens, large on its line, the sign in brackets, with Fix the cut, the answer buttons, Next and Previous. A hold never moves a sign.</div>
+    <div><b>Open a sign's card</b>Hold a sign, in a pile, a box or the tray (or press "View larger" on a pile): its card opens, large on its line, the sign in brackets (slide the page there to look around it), with Fix the cut, the answer buttons, Next and Previous. A hold never moves a sign.</div>
     <div><b>Step 2 · Place the taken-out signs</b>Each taken-out sign is shown large with every other pile below it, closest-looking first. Tap the pile it belongs to<span class="mouse-only"> (or drag it onto the pile with the mouse)</span>. "None of these: new sign" starts a new pile; nothing to type.</div>
   </div>
   <div class="bar">
@@ -362,7 +370,8 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
     <p id="ctxQ" hidden></p>
     <div id="ctxBigW"><img id="ctxBig" alt=""></div>
     <div class="row"><span class="hint" id="ctxS"></span></div>
-    <div class="cv" id="ctxCv"><canvas id="ctxC"></canvas></div>
+    <div class="cv" id="ctxCv"><canvas id="ctxC" aria-label="The page around the sign: slide it to look around"></canvas></div>
+    <div class="row" id="ctxPanRow"><button type="button" id="ctxCentre" disabled>Back to the sign</button><span class="hint" id="ctxPanHint"></span></div>
     <div class="row" id="ctxFixRow"><button type="button" id="ctxFix" aria-pressed="false">Fix the cut</button><span class="hint" id="fixState"></span></div>
     <div id="fixBox" hidden role="group" aria-label="Fix the cut">
       <div class="row"><button type="button" id="fixSave">Save cut (Enter)</button><button type="button" id="fixCancel">Cancel</button><button type="button" id="fixReset" hidden>Back to the first cut</button></div>
@@ -372,6 +381,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
         "Erase stray ink": paint over a neighbour's ink inside the box and it is left out of the tile (shown as paper); "Undo stroke" takes back the last stroke.
         A sign with no tile of its own: move the box onto it and press "Add as a missed sign" (this tile's cut stays as it was).
         A box that holds two signs: fit it to one of them and press "Split: keep this part, add the rest"; the rest of the box becomes a sign of its own.
+        To see ink beyond the picture, drag anywhere off the box: the page moves (with "Erase stray ink" on, slide with two fingers).
         Added signs get a pile on the next page build; Undo takes one back.</p></details>
       <div class="nudges">
         <span>Left edge <button type="button" id="fixLm" aria-label="Left edge further left">&#9664;</button><button type="button" id="fixLp" aria-label="Left edge further right">&#9654;</button></span>
@@ -1325,6 +1335,7 @@ function persistLocal(){ try { localStorage.setItem('sorter:all', JSON.stringify
 
 // ---- the larger view: a tile on its line
 let ctxSid = null, ctxPid = null;
+const ctxPan = {x: 0, y: 0};   // the card picture's shift from where it opens (owner rule R09: look around), in the drawn image's pixels
 const pageImgs = {};
 function pageImg(p){ if (!pageImgs[p]){ const im = new Image(); im.src = 'data:image/jpeg;base64,' + DATA.pages[p]; pageImgs[p] = im; } return pageImgs[p]; }
 // draw a tile's line into canvas c; alive() says whether that tile is still the one wanted (a late page image must not
@@ -1378,20 +1389,57 @@ function drawLine(sid, c, z, alive){
     const cssW = Math.max(120, cv.clientWidth || 600);                  // always fill the box; the slider changes the window
     const s = cssW * Math.min(2, window.devicePixelRatio || 1) / (x1 - x0);
     const ha = ia ? Math.round((band(ia)[1] - band(ia)[0]) * s) : 0, hb = ib ? Math.round((band(ib)[1] - band(ib)[0]) * s) : 0, hm = Math.round((y1 - y0) * s);
-    c.width = Math.round((x1 - x0) * s); c.height = ha + hm + hb; c.style.width = cssW + 'px'; c.style.height = Math.round(c.height * cssW / c.width) + 'px'; c.dataset.span = x1 - x0; c.dataset.sid = sid; c.dataset.whole = (x0 === 0 && x1 === im.naturalWidth) ? '1' : ''; c.dataset.view = 'strip';
-    const g = c.getContext('2d'); g.imageSmoothingEnabled = true;
-    const strip = (q, top, hh) => { const qx1 = Math.min(q.naturalWidth, x1), [b0, b1] = band(q); if (qx1 > x0) g.drawImage(q, x0, b0, qx1 - x0, b1 - b0, 0, top, (qx1 - x0) * s, hh); };
-    if (ia){ g.fillStyle = '#f4f1ea'; g.fillRect(0, 0, c.width, ha); strip(ia, 0, ha); }
-    g.drawImage(im, x0, y0, x1 - x0, y1 - y0, 0, ha, c.width, hm);
-    if (ib){ g.fillStyle = '#f4f1ea'; g.fillRect(0, ha + hm, c.width, hb); strip(ib, ha + hm, hb); }
-    if (ia || ib){ g.fillStyle = 'rgba(36,33,28,.55)'; if (ia) g.fillRect(0, ha - 1, c.width, 2); if (ib) g.fillRect(0, ha + hm - 1, c.width, 2); }
-    g.translate(0, ha);
+    // Look around (owner rule R09, Bergh, 11 Oct 2026: "I wish when I clicked into a symbols page I could slide my finger on the
+    // manuscript surrounding my target symbol to see its surroundings"). The card's picture is a window onto a taller, wider sheet: the
+    // whole line (the window keeps its width and slides along it), the line's own crop to its top and bottom on a side with no
+    // neighbour line drawn, and with the lines above and below on, the further lines of the page too (n-2, n-3 ... and n+2 ..., each
+    // its middle band, as the neighbours are), loaded as the window comes near them. ctxPan (below) is the window's shift from where it
+    // opens; the window opens exactly where it always did (the sign centred, the lines above and below in full), so nothing changes
+    // until a finger or a mouse moves it. Segments: {q: image, a, b: its source rows, t: top in canvas px (0 = the window's top as it
+    // opens), hh: height}. Step 2's strip (look false) is drawn as before.
+    const look = c.id === 'ctxC', sw = x1 - x0, X0 = look ? Math.max(0, Math.min(W - sw, x0 + ctxPan.x)) : x0;
+    const oy0 = look && !ia ? 0 : y0, oy1 = look && !ib ? H : y1;
+    const segs = [];
+    if (ia) segs.push({q: ia, a: band(ia)[0], b: band(ia)[1], t: 0, hh: ha});
+    segs.push({q: im, a: oy0, b: oy1, t: ha + (oy0 - y0) * s, hh: oy0 === y0 && oy1 === y1 ? hm : (oy1 - oy0) * s});
+    if (ib) segs.push({q: ib, a: band(ib)[0], b: band(ib)[1], t: ha + hm, hh: hb});
+    const cw = Math.round(sw * s), k = cw / cssW, H0 = ha + hm + hb;
+    // on a phone the window is never taller than about half the screen (a finger outside it still scrolls the card to every button);
+    // at the zoom a card opens at it is shorter than that (Bergh 190-238 px on an iPhone 13), so it opens as before
+    let vh = H0, t0 = 0;
+    if (look && !ed && (PHONE || COARSE)){ const cap = Math.round(Math.max(160, (window.innerHeight || 700) * 0.55) * k);
+      if (H0 > cap){ vh = cap; t0 = Math.max(0, Math.min(H0 - vh, ha + (y + h / 2 - y0) * s - vh / 2)); } }
+    const want = t0 + ctxPan.y * s;
+    if (look && !ed && (ia || ib)){ const m = /^(.*L)(\d+)$/.exec(it.p), n = m ? +m[2] : 0, wd = m ? m[2].length : 0;
+      [[-1, ia], [1, ib]].forEach(([dir, nb]) => { if (!m || !nb) return;
+        for (let j = 2; n + dir * j >= 0; j++){ const nm = m[1] + String(n + dir * j).padStart(wd, '0'); if (!DATA.pages[nm]) return;
+          const end = dir < 0 ? segs[0].t : segs[segs.length - 1].t + segs[segs.length - 1].hh;
+          // a line not decoded yet is started only when the window is within a window-and-a-half of the sheet's end (a phone does not
+          // decode the whole page for one card); one already decoded is always on the sheet
+          if (!pageImgs[nm] && (dir < 0 ? want - end : end - want - vh) >= 1.5 * vh) return;
+          const q = pageImg(nm);
+          if (!(q.complete && q.naturalWidth)){ if (!q._panWait){ q._panWait = 1;
+              q.addEventListener('load', () => { q._panWait = 0; if (!$('ctx').hidden && alive()) drawCtx(); }, {once: true}); }
+            return; }
+          const [a, b] = band(q), hh = Math.round((b - a) * s);
+          if (dir < 0) segs.unshift({q, a, b, t: end - hh, hh}); else segs.push({q, a, b, t: end, hh}); } }); }
+    const tTop = segs[0].t, tBot = segs[segs.length - 1].t + segs[segs.length - 1].hh, vH = Math.round(vh);
+    const wt = look ? Math.max(tTop, Math.min(tBot - vH, want)) : 0;
+    if (look){ ctxPan.x = X0 - x0; ctxPan.y = (wt - t0) / s; }   // what the window could do: a finger past an edge moves nothing further
+    if (c.width !== cw || c.height !== vH){ c.width = cw; c.height = vH; }
+    c.style.width = cssW + 'px'; c.style.height = Math.round(c.height * cssW / c.width) + 'px'; c.dataset.span = sw; c.dataset.sid = sid; c.dataset.whole = (X0 === 0 && sw === W) ? '1' : ''; c.dataset.view = 'strip';
+    const g = c.getContext('2d'); g.setTransform(1, 0, 0, 1, 0, 0); g.setLineDash([]); g.imageSmoothingEnabled = true; g.clearRect(0, 0, c.width, c.height);
+    if (segs.length > 1 || wt){ g.fillStyle = '#f4f1ea'; g.fillRect(0, 0, c.width, c.height); }   // paper behind a neighbour shorter than the line
+    segs.forEach(sg => { const top = sg.t - wt, qx1 = Math.min(sg.q.naturalWidth, X0 + sw); if (top >= c.height || top + sg.hh <= 0 || qx1 <= X0) return;
+      g.drawImage(sg.q, X0, sg.a, qx1 - X0, sg.b - sg.a, 0, top, sg.q === im ? c.width : (qx1 - X0) * s, sg.hh); });
+    if (segs.length > 1){ g.fillStyle = 'rgba(36,33,28,.55)'; segs.slice(1).forEach(sg => { const yy = sg.t - wt; if (yy > -2 && yy < c.height + 2) g.fillRect(0, yy - 1, c.width, 2); }); }
+    g.translate(0, ha - wt);
     // corner brackets (shape, not colour), drawn twice for contrast; stroke sizes in screen pixels
-    const k = c.width / cssW;
-    c._map = {x0, y0, s, k, ha, ps, iw: im.naturalWidth / ps, ih: im.naturalHeight / ps};   // canvas <-> source pixels, for the cut editor
+    c._map = {x0: X0, y0, s, k, ha: ha - wt, ps, iw: im.naturalWidth / ps, ih: im.naturalHeight / ps};   // canvas <-> source pixels, for the cut editor
+    if (look) panDone(c, {vx: X0, vy: wt / s, vw: sw, vh: vH / s, wx0: 0, wx1: W, wy0: tTop / s, wy1: tBot / s, x0, y0: t0 / s});
     const [ex, ey, ew, eh] = (ed ? ed.box : boxOf(sid)).map(v => v * ps);
-    const bx = (ex - x0) * s, by = (ey - y0) * s, bw = ew * s, bh = eh * s, L = Math.min(14 * k, bw / 2, bh / 2) + 4 * k, pad = 4 * k;
-    if (ed){ drawEdit(g, k, (px, py) => [(px * ps - x0) * s, (py * ps - y0) * s], s * ps); return; }   // the box (quad) with its handles and erased ink: what is inside is the tile
+    const bx = (ex - X0) * s, by = (ey - y0) * s, bw = ew * s, bh = eh * s, L = Math.min(14 * k, bw / 2, bh / 2) + 4 * k, pad = 4 * k;
+    if (ed){ drawEdit(g, k, (px, py) => [(px * ps - X0) * s, (py * ps - y0) * s], s * ps); return; }   // the box (quad) with its handles and erased ink: what is inside is the tile
     [['#ffffff', 6 * k], ['#000000', 3 * k]].forEach(([col, lw]) => { g.strokeStyle = col; g.lineWidth = lw; g.beginPath();
       [[bx - pad, by - pad, 1, 1], [bx + bw + pad, by - pad, -1, 1], [bx - pad, by + bh + pad, 1, -1], [bx + bw + pad, by + bh + pad, -1, -1]]
         .forEach(([cx, cy, sx, sy]) => { g.moveTo(cx + sx * L, cy); g.lineTo(cx, cy); g.lineTo(cx, cy + sy * L); });
@@ -1411,6 +1459,30 @@ if (PHONE){ document.body.classList.add('s2pin'); $('s2Acts').after($('s2Head'))
 if (TRAY_ON && Object.keys(trayOrder).length) $('hintQ').textContent = 'Questions wait in step 2 · Place.';
 if (PHONE){ $('ctxZ').value = innerWidth > 640 ? 3 : 5; $('fixHelp').open = false; }
 function drawCtx(){ const sid = ctxSid, f = usePage(sid) ? drawRegion : drawLine; f(sid, $('ctxC'), +$('ctxZ').value, () => sid === ctxSid && !$('ctx').hidden); }
+// ---- Look around the page (owner rule R09, tools/data/sorter_owner_requirements.tsv; Bergh, 11 Oct 2026: "I wish when I clicked into a
+// symbols page I could slide my finger on the manuscript surrounding my target symbol to see its surroundings"; the Vivonne box check,
+// 10 Oct: "I marked a bunch a bad cut if when I clicked into it I couldn't move the manuscript to properly see around it"). In the
+// card, one finger (or a mouse drag) on the picture moves the view across the manuscript like a map: the page and the sign's brackets
+// go with the finger, the window is redrawn once a frame, and it stays where the finger leaves it -- in the "Whole page" view over the
+// whole region image, in the line strips along the whole line and up and down the page's lines. Two fingers pinch the zoom (the Zoom
+// slider follows) and move the view. "Back to the sign" re-centres; so do another sign, Previous / Next, the Zoom slider, the view
+// switch, the lines-above-and-below box and Fix the cut starting or stopping. While a cut is being fixed, a drag that starts on the box,
+// an edge or a corner edits it exactly as before and a drag anywhere else moves the view (so ink beyond the picture can be brought in
+// and the box stretched onto it); with "Erase stray ink" on, one finger paints and two fingers move the view. A tap or a hold on the
+// picture moves nothing and takes nothing out (owner rule R05 is about tiles; the picture is not one). The sideways swipe to the next
+// sign stays on the enlarged sign (and Previous / Next): on the picture a slide moves the view. drawLine / drawRegion clamp ctxPan to
+// what the window can do and call panDone with the window and the sheet in the drawn image's pixels (canvas._pan, read by the tests and
+// tools/sorter_preflight.py's 'pan' check).
+function panTouch(c){ const v = c._pan, ta = (v && v.pannable) || (fix && fix.brush) ? 'none' : 'pan-y';   // nothing to move: a slide scrolls the card
+  if (c.style.touchAction !== ta) c.style.touchAction = ta; }
+function panDone(c, v){ v.pannable = v.vw < v.wx1 - v.wx0 - 0.5 || v.vh < v.wy1 - v.wy0 - 0.5; v.moved = Math.abs(ctxPan.x) > 0.5 || Math.abs(ctxPan.y) > 0.5;
+  c._pan = v; panTouch(c); $('ctxCentre').disabled = !v.moved; }
+function panReset(){ ctxPan.x = 0; ctxPan.y = 0; $('ctxCentre').disabled = true; }
+$('ctxCentre').onclick = () => { panReset(); drawCtx(); };
+function panHint(){ const el = $('ctxPanHint'); if (!el) return;   // plain words, no colour (owner rule R07)
+  el.textContent = fix && fix.brush ? (COARSE ? 'One finger paints out stray ink; slide with two fingers to look around.' : 'Paint out stray ink; turn “Erase stray ink” off to drag the page around.')
+    : fix ? (COARSE ? 'Drag the box, an edge or a corner to fix the cut; slide anywhere else on the page to look around.' : 'Drag the box, an edge or a corner to fix the cut; drag anywhere else on the page to look around.')
+    : COARSE ? 'Slide the page to look around; pinch to zoom; swipe the big sign for the next one.' : 'Drag the page to look around; Previous / Next (or the arrow keys) for the next sign.'; }
 
 // ---- "Whole page" (SORTER-PAGEVIEW; owner, 4 Oct 2026, on Longlee f101v_L32_49: the neighbour lines were trimmed slices with
 // separators that cut ascenders and descenders -- "can we just show the full graphic?"). With DATA.region (tools/sign_sorter.py
@@ -1431,7 +1503,7 @@ function viewUi(){ const on = !!(REG && !regFail && ctxSid && REG.lines[itemBySi
   $('viewSeg').hidden = !on; $('viewPage').classList.toggle('on', pageView); $('viewStrip').classList.toggle('on', !pageView);
   $('viewPage').setAttribute('aria-pressed', pageView); $('viewStrip').setAttribute('aria-pressed', !pageView);
   $('ctxNbL').hidden = (on && pageView) || !(ctxSid && nbPages(itemBySid[ctxSid].p).some(Boolean)); }
-function setView(on){ pageView = on; try { localStorage.setItem('sorterPageView', on ? '1' : '0'); } catch (e) {} if (ctxSid) showCtx(ctxSid, pileOf(ctxSid), true); }
+function setView(on){ pageView = on; panReset(); try { localStorage.setItem('sorterPageView', on ? '1' : '0'); } catch (e) {} if (ctxSid) showCtx(ctxSid, pileOf(ctxSid), true); }
 $('viewPage').onclick = () => setView(true); $('viewStrip').onclick = () => setView(false);
 function drawRegion(sid, c, z, alive){
   const it = itemBySid[sid], im = regionImg(), rs = REG.scale, P = REG.pitch;
@@ -1447,15 +1519,21 @@ function drawRegion(sid, c, z, alive){
     const cxm = ax + aw / 2, cym = regY(it.p, cxm, ay + ah / 2);
     const fit = (c0, hw, n) => { let a = Math.round(c0 - hw), b = Math.round(c0 + hw); if (b - a >= n) return [0, n];
       if (a < 0){ b -= a; a = 0; } if (b > n){ a -= b - n; b = n; } return [a, b]; };
-    const [X0, X1] = fit(cxm, halfW, REG.W), [Y0, Y1] = fit(cym, halfH, REG.H);
+    const [X0d, X1d] = fit(cxm, halfW, REG.W), [Y0d, Y1d] = fit(cym, halfH, REG.H), sw = X1d - X0d, sh = Y1d - Y0d;
+    // look around (owner rule R09): the window keeps its size and moves over the whole region image, to its edges (ctxPan: its shift
+    // from where it opens, in region pixels); it opens where it always did
+    const X0 = Math.max(0, Math.min(REG.W - sw, X0d + ctxPan.x)), Y0 = Math.max(0, Math.min(REG.H - sh, Y0d + ctxPan.y)), X1 = X0 + sw, Y1 = Y0 + sh;
+    ctxPan.x = X0 - X0d; ctxPan.y = Y0 - Y0d;
     const s = cssW * Math.min(2, window.devicePixelRatio || 1) / (X1 - X0);
-    c.width = Math.round((X1 - X0) * s); c.height = Math.round((Y1 - Y0) * s); c.style.width = cssW + 'px'; c.style.height = Math.round(c.height * cssW / c.width) + 'px';
+    const cw = Math.round((X1 - X0) * s), ch = Math.round((Y1 - Y0) * s); if (c.width !== cw || c.height !== ch){ c.width = cw; c.height = ch; }
+    c.style.width = cssW + 'px'; c.style.height = Math.round(c.height * cssW / c.width) + 'px';
     c.dataset.span = X1 - X0; c.dataset.sid = sid; c.dataset.whole = (X0 === 0 && X1 === REG.W) ? '1' : ''; c.dataset.view = 'page';
-    const g = c.getContext('2d'); g.imageSmoothingEnabled = true; g.setLineDash([]);
+    const g = c.getContext('2d'); g.setTransform(1, 0, 0, 1, 0, 0); g.imageSmoothingEnabled = true; g.setLineDash([]);
     g.fillStyle = '#f4f1ea'; g.fillRect(0, 0, c.width, c.height);
     g.drawImage(im, X0 * rs, Y0 * rs, (X1 - X0) * rs, (Y1 - Y0) * rs, 0, 0, c.width, c.height);
     const k = c.width / cssW;
     c._map = {x0: X0, y0: Y0, s, k, ha: 0, ps: 1, iw: REG.W, ih: 2 * REG.half + 1, toSrc: (X, Y) => [X, Y - regY(it.p, X, 0)]};   // pointer -> strip pixels
+    panDone(c, {vx: X0, vy: Y0, vw: sw, vh: sh, wx0: 0, wx1: REG.W, wy0: 0, wy1: REG.H, x0: X0d, y0: Y0d});
     const [ex, ey, ew, eh] = ed ? ed.box : boxOf(sid);
     const pt = (x, y) => [(x - X0) * s, (regY(it.p, x, y) - Y0) * s];
     const tl = pt(ex, ey), tr = pt(ex + ew, ey), bl = pt(ex, ey + eh), br = pt(ex + ew, ey + eh);
@@ -1598,16 +1676,17 @@ function fixInfo(){ const sid = ctxSid; if (!sid) return; addedUi(); const b = f
     : recuts[sid] ? 'This tile’s cut was fixed by hand.' : ''; }
 function brushUi(){ const on = !!(fix && fix.brush), n = fix ? fix.mask.length : 0;
   $('fixBrush').setAttribute('aria-pressed', on); $('ctxCv').classList.toggle('brush', on); $('fixBrushUndo').disabled = !n;
-  $('fixBrushN').textContent = n ? n + (n === 1 ? ' stroke' : ' strokes') + ' of stray ink erased' : on ? 'Paint over the neighbour’s ink inside the box.' : ''; }
+  $('fixBrushN').textContent = n ? n + (n === 1 ? ' stroke' : ' strokes') + ' of stray ink erased' : on ? 'Paint over the neighbour’s ink inside the box.' : '';
+  panTouch($('ctxC')); panHint(); }
 let fpT = 0;
 function fixPreview(){ clearTimeout(fpT); fpT = setTimeout(() => { const f = fix; if (!f) return;   // the enlarged tile shows the cut as it would be saved
   renderRecut(f.sid, {quad: f.quad, mask: f.mask}).then(u => { if (u && fix === f && ctxSid === f.sid) $('ctxBig').src = u; }); }, 80); }
 function fixChanged(){ fix.box = quadBox(fix.quad); fixInfo(); drawCtx(); fixPreview(); }
 function fixStart(){ if (!ctxSid) return; const b = boxOf(ctxSid).slice(), q = quadOf(ctxSid);
   fix = {sid: ctxSid, box: quadBox(q), quad: q, mask: ((recuts[ctxSid] || {}).mask || []).map(st => ({r: st.r, pts: st.pts.map(p => p.slice())})), brush: false, anchor: b};
-  hideOffer(); fixUi(true); drawCtx(); try { $('fixSave').focus({preventScroll: true}); } catch (e) {}   // Enter right after "Fix the cut" saves, not re-presses the toggle
+  hideOffer(); panReset(); fixUi(true); drawCtx(); try { $('fixSave').focus({preventScroll: true}); } catch (e) {}   // Enter right after "Fix the cut" saves, not re-presses the toggle
   if (PHONE) setTimeout(() => $('ctxCv').scrollIntoView({block: 'start', behavior: 'smooth'}), 60); }   // phone: the box in view, Save just below
-function fixStop(){ fix = null; fixUi(false); }
+function fixStop(){ fix = null; panReset(); fixUi(false); }   // the view opens on the sign again (R09)
 const fixLimits = () => { const m = $('ctxC')._map; return [m ? Math.floor(m.iw) : 1e9, m ? Math.floor(m.ih) : 1e9]; };
 function fixSetEdges(l, t, r, b){ const [W, H] = fixLimits(), [l0, t0, r0, b0] = edgesOf(fix.quad);
   l = Math.round(l); t = Math.round(t); r = Math.round(r); b = Math.round(b);
@@ -1675,8 +1754,11 @@ $('fixSplit').onclick = () => {
   $('fixSave').onclick();   // the kept part: saved as the tile's cut, with its own Undo step
   const id = addBox(sid, rest, [], 'split'), e = []; e.added = id; history.push(e); if (history.length > 200) history.shift(); updateUndo();
   $('ctxMsg').textContent = 'Split ' + sid + ': kept the part you fitted, added the rest as ' + id + '. Undo twice takes both back.'; };
-(function(){   // drag an edge, a corner or the whole box, or paint stray ink, on the line canvas (pointer events: mouse, pen and touch; no page scroll while editing)
+(function(){   // the card's picture (pointer events: mouse, pen and touch): Fix the cut -- drag an edge, a corner or the whole box, or paint
+  // stray ink -- and, anywhere else, move the view around the page; two fingers move it and pinch the zoom (owner rule R09, below)
   const c = $('ctxC'); let d = null;
+  const pts = new Map();   // every pointer down on the picture: id -> {x, y}
+  let pn = null, raf = 0;  // a move of the view in progress: {mx, my (last midpoint), ds (finger spread at the start), z0, z, dx, dy (not drawn yet), n, travel}
   const at = e => { const m = c._map, r = c.getBoundingClientRect(); const px = (e.clientX - r.left) * m.k, py = (e.clientY - r.top) * m.k;
     const X = m.x0 + px / m.s, Y = m.y0 + (py - m.ha) / m.s; return m.toSrc ? m.toSrc(X, Y) : [X / m.ps, Y / m.ps]; };   // page view: region -> strip
   const hit = e => { if (!fix || !c._map) return ''; if (fix.brush) return 'brush';
@@ -1694,14 +1776,38 @@ $('fixSplit').onclick = () => {
     if (!h_ && sx > x && sx < x + w && sy > y && sy < y + h) h_ = 'move';
     return h_; };
   const cursor = h => h === 'brush' ? 'cell' : h === 'c0' || h === 'c2' ? 'nwse-resize' : h === 'c1' || h === 'c3' ? 'nesw-resize' : h === 'move' ? 'move'
-    : h === 'l' || h === 'r' ? 'ew-resize' : h === 't' || h === 'b' ? 'ns-resize' : h === 'lt' || h === 'rb' ? 'nwse-resize' : h ? 'nesw-resize' : 'crosshair';
+    : h === 'l' || h === 'r' ? 'ew-resize' : h === 't' || h === 'b' ? 'ns-resize' : h === 'lt' || h === 'rb' ? 'nwse-resize' : h ? 'nesw-resize' : 'grab';   // off the box: the page moves
   const r1 = v => Math.round(v * 10) / 10;
-  c.addEventListener('pointerdown', e => { if (!fix || e.button > 0) return; const h = hit(e); if (!h) return; e.preventDefault();
-    try { c.setPointerCapture(e.pointerId); } catch (er) {} const p = at(e);
-    d = {h, p, e: edgesOf(fix.quad), q: fix.quad.map(v => v.slice())};
+  // the view: the fingers' midpoint moves the page with them (redrawn once a frame), their spread steps the Zoom slider (1.4 x = one step)
+  const mid = () => { const a = [...pts.values()]; return a.length > 1 ? [(a[0].x + a[1].x) / 2, (a[0].y + a[1].y) / 2, Math.hypot(a[0].x - a[1].x, a[0].y - a[1].y)] : [a[0].x, a[0].y, 0]; };
+  const rebase = () => { const [mx, my, ds] = mid(); Object.assign(pn, {mx, my, ds, z0: +$('ctxZ').value, z: undefined, n: pts.size}); };
+  const panStart = () => { pn = {dx: 0, dy: 0, travel: pn ? pn.travel : 0}; rebase(); c.style.cursor = ''; c.classList.add('panning'); };
+  const frame = () => { raf = 0; if (!pn || !c._map || $('ctx').hidden) return; const m = c._map, sc = m.s / m.k; let again = false;
+    if (pn.dx || pn.dy){ ctxPan.x -= pn.dx / sc; ctxPan.y -= pn.dy / sc; pn.dx = pn.dy = 0; again = true; }
+    if (pn.z !== undefined && pn.z !== +$('ctxZ').value){ $('ctxZ').value = pn.z; again = true; }   // the slider follows the pinch (no re-centring)
+    if (again) drawCtx(); };
+  const panMove = () => { if (pts.size !== pn.n){ rebase(); return; }   // a finger more or one less: carry on from here, no jump
+    const [mx, my, ds] = mid(); pn.dx += mx - pn.mx; pn.dy += my - pn.my; pn.travel += Math.abs(mx - pn.mx) + Math.abs(my - pn.my); pn.mx = mx; pn.my = my;
+    if (pts.size > 1 && pn.ds > 24) pn.z = Math.max(1, Math.min(8, Math.round(pn.z0 + Math.log(ds / pn.ds) / Math.log(1.4))));
+    if (!raf) raf = requestAnimationFrame(frame); };
+  c.addEventListener('pointerdown', e => { if (e.button > 0) return;
+    if (e.isPrimary && pts.size){ pts.clear(); d = null; if (pn){ pn = null; c.classList.remove('panning'); } }   // a lift that never came: not a second finger
+    pts.set(e.pointerId, {x: e.clientX, y: e.clientY}); try { c.setPointerCapture(e.pointerId); } catch (er) {}
+    if (pts.size > 1){   // a second finger: the two move and pinch the view. An edit or a stroke the first finger began under 350 ms ago (the
+      // start of a two-finger slide) is taken back; an older one is kept as it is.
+      if (d && fix){ const young = performance.now() - d.t0 < 350;
+        if (d.h === 'brush'){ if (young) fix.mask.pop(); brushUi(); drawCtx(); fixPreview(); } else if (young){ fix.quad = d.q.map(v => v.slice()); fixChanged(); } }
+      d = null; e.preventDefault(); panStart(); return; }
+    const h = fix ? hit(e) : '';
+    if (!h){ e.preventDefault(); panStart(); return; }   // not on the box (or not fixing a cut): the page moves
+    e.preventDefault(); const p = at(e);
+    d = {h, p, e: edgesOf(fix.quad), q: fix.quad.map(v => v.slice()), t0: performance.now()};
     if (h === 'brush'){ fix.mask.push({r: +$('fixBrushR').value, pts: [[r1(p[0]), r1(p[1])]]}); drawCtx(); }   // one stroke = pointerdown .. pointerup
     else if (h[0] === 'c') $('fixCorner').value = h[1]; });   // the corner arrows follow the corner last dragged
-  c.addEventListener('pointermove', e => { if (!fix) return; if (!d){ if (e.pointerType === 'mouse') c.style.cursor = cursor(hit(e)); return; }
+  c.addEventListener('pointermove', e => { const own = pts.has(e.pointerId); if (own) pts.set(e.pointerId, {x: e.clientX, y: e.clientY});
+    if (pn){ if (own){ e.preventDefault(); panMove(); } return; }
+    if (!d){ if (e.pointerType === 'mouse') c.style.cursor = fix ? cursor(hit(e)) : ''; return; }
+    if (!fix) return;
     e.preventDefault(); const [sx, sy] = at(e), dx = sx - d.p[0], dy = sy - d.p[1], [L, T, R, B] = d.e;
     if (d.h === 'brush'){ const st = fix.mask[fix.mask.length - 1], l = st && st.pts[st.pts.length - 1];
       if (l && Math.hypot(sx - l[0], sy - l[1]) >= Math.max(0.5, st.r / 3)){ st.pts.push([r1(sx), r1(sy)]); drawCtx(); } return; }
@@ -1709,13 +1815,18 @@ $('fixSplit').onclick = () => {
     if (d.h === 'move'){ const m = c._map, w = R - L, h = B - T; const nx = Math.max(0, Math.min(Math.floor(m.iw) - w, L + dx)), ny = Math.max(0, Math.min(Math.floor(m.ih) - h, T + dy));
       fixSetEdges(nx, ny, nx + w, ny + h); return; }
     fixSetEdges(d.h.includes('l') ? L + dx : L, d.h.includes('t') ? T + dy : T, d.h.includes('r') ? R + dx : R, d.h.includes('b') ? B + dy : B); });
-  const end = () => { if (d && d.h === 'brush' && fix){ brushUi(); fixPreview(); } d = null; };
-  c.addEventListener('pointerup', end); c.addEventListener('pointercancel', end);
-  // a touch on the box, an edge or a handle edits; anywhere else on the picture scrolls the page as usual (owner, 8 Oct 2026:
-  // on a phone the whole picture swallowed every swipe, so Save could not be reached). Brush mode keeps every touch.
+  const end = e => { if (!pts.delete(e.pointerId)) return;
+    if (pn){ if (pts.size){ rebase(); return; }   // one finger of two lifted: the other carries on moving the view
+      if (raf){ cancelAnimationFrame(raf); frame(); }   // the last frame's worth of movement is drawn, not dropped
+      if (pn.travel > 6) ctxPan.endT = performance.now(); pn = null; c.classList.remove('panning'); return; }
+    if (d && d.h === 'brush' && fix){ brushUi(); fixPreview(); } d = null; };
+  c.addEventListener('pointerup', end); c.addEventListener('pointercancel', end); c.addEventListener('lostpointercapture', end);
+  // touch: a finger on the box, an edge or a handle edits, and while the view moves nothing scrolls under it (iOS also needs the
+  // touch events cancelled, not only touch-action). When the whole picture is in view already (touch-action pan-y), one finger slides
+  // the card as before (owner, 8 Oct 2026: on a phone the whole picture swallowed every swipe, so Save could not be reached).
   const onBox = t => !!(fix && hit({clientX: t.clientX, clientY: t.clientY, pointerType: 'touch'}));
   c.addEventListener('touchstart', e => { if (fix && e.touches.length === 1 && onBox(e.touches[0])) e.preventDefault(); }, {passive: false});
-  c.addEventListener('touchmove', e => { if (fix && d) e.preventDefault(); }, {passive: false});
+  c.addEventListener('touchmove', e => { if (e.cancelable && (d || (pn && (e.touches.length > 1 || (c._pan && c._pan.pannable))))) e.preventDefault(); }, {passive: false});
 })();
 let ctxList = [];
 let ctxListName = 'in this pile';
@@ -1723,6 +1834,7 @@ function showCtx(sid, pid, keepList, list, listName){
   if (!keepList){ ctxList = list ? list.slice() : membersOf(pid).concat(asideOf(pid)); ctxListName = listName || 'in this pile';
     $('ctxMsg').textContent = ''; }
   if (fix && fix.sid !== sid) fixStop();
+  if (sid !== ctxSid || $('ctx').hidden) panReset();   // another sign (Previous / Next, a hold elsewhere): the view opens on it (R09)
   ctxSid = sid; ctxPid = pid; const it = itemBySid[sid];
   $('ctxBig').src = imgSrc(sid); $('ctxBig').alt = 'Tile ' + sid + ', enlarged';
   const i = ctxList.indexOf(sid);
@@ -1773,12 +1885,12 @@ function ctxKeep(){
 $('ctxKeep').onclick = ctxKeep;
 $('ctxOut').onclick = () => ctxMove('OUT');
 $('ctxPrev').onclick = () => ctxStep(-1);
-// phone (owner, 8 Oct 2026: "I can't swipe left and right"): a sideways swipe on the enlarged sign or its line goes to the next / previous tile
-(function(){ let s0 = null;
-  [$('ctxBigW'), $('ctxCv')].forEach(el => {
-    el.addEventListener('touchstart', e => { s0 = fix || e.touches.length !== 1 ? null : {x: e.touches[0].clientX, y: e.touches[0].clientY}; }, {passive: true});
-    el.addEventListener('touchend', e => { if (!s0 || fix) return; const t = e.changedTouches[0], dx = t.clientX - s0.x, dy = t.clientY - s0.y; s0 = null;
-      if (Math.abs(dx) > 50 && Math.abs(dx) > 1.5 * Math.abs(dy)) ctxStep(dx < 0 ? 1 : -1); }, {passive: true}); }); })();
+// phone (owner, 8 Oct 2026: "I can't swipe left and right"): a sideways swipe on the enlarged sign goes to the next / previous tile.
+// Not on the manuscript picture any more (owner rule R09, 11 Oct 2026): a slide there moves the view around the page.
+(function(){ let s0 = null; const el = $('ctxBigW');
+  el.addEventListener('touchstart', e => { s0 = fix || e.touches.length !== 1 ? null : {x: e.touches[0].clientX, y: e.touches[0].clientY}; }, {passive: true});
+  el.addEventListener('touchend', e => { if (!s0 || fix) return; const t = e.changedTouches[0], dx = t.clientX - s0.x, dy = t.clientY - s0.y; s0 = null;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > 1.5 * Math.abs(dy)) ctxStep(dx < 0 ? 1 : -1); }, {passive: true}); })();
 $('undo').onclick = undo;
 $('order').onchange = render;
 $('ctxUndo').onclick = () => { if (fix) fixStop(); const last = undo(); if (!last) return;
@@ -1797,10 +1909,10 @@ document.addEventListener('keydown', e => { if ($('ctx').hidden || e.target.tagN
 const closeCtx = () => { if (fix) fixStop(); $('ctx').hidden = true; const o = $('offer'); o.classList.remove('inbox'); document.querySelector('.wrap').append(o); if (!o.hidden) placeOffer(); };
 $('ctxClose').onclick = closeCtx;
 $('ctxX').onclick = closeCtx;
-$('ctx').onclick = e => { if (e.target.id === 'ctx') closeCtx(); };
+$('ctx').onclick = e => { if (e.target.id === 'ctx' && !(performance.now() - (ctxPan.endT || -1e9) < 500)) closeCtx(); };   // a drag of the page let go off the card does not close it
 document.addEventListener('keydown', e => { if ((e.key === 'Delete' || e.key === 'Backspace') && !$('ctx').hidden && !fix && !/INPUT|SELECT|TEXTAREA/.test(e.target.tagName)){ e.preventDefault(); $('ctxTrash').click(); return; }
   if (e.key === 'Escape'){ if (!$('offer').hidden) hideOffer(); else closeCtx(); } });
-$('ctxZ').oninput = drawCtx; $('ctxNb').onchange = drawCtx;
+$('ctxZ').oninput = () => { panReset(); drawCtx(); }; $('ctxNb').onchange = () => { panReset(); drawCtx(); };   // the slider re-centres on the sign; a pinch on the picture does not (R09)
 [0, 1, 2].forEach(n => $('ink' + n).onclick = () => {
   document.body.classList.remove('ink1', 'ink2'); if (n) document.body.classList.add('ink' + n);
   [0, 1, 2].forEach(k => { const b = $('ink' + k); b.classList.toggle('on', k === n); b.setAttribute('aria-pressed', k === n); });

@@ -10,7 +10,10 @@ tools/sorter_recut.py into deskewed strips r_L01-r_L03, built with --region, for
 Template 2026-10-09.1: plain, refs and cluster are built with --no-focus-to-tray (the in-pile layout the older tests drive);
 OUT_DIR/tray.html is plain on the default (the focus tiles start in the "Taken out" tray), for test_focus_tray.js, with tray_rank.html
 (a "Most useful first" box with tiles of its own), tray_rank_in.html (a rank box that only repeats the focus tiles) and cluster_tray.html
-(--auto-clusters on the default)."""
+(--auto-clusters on the default).
+Owner rule R09 (11 Oct 2026, the card's "look around"): OUT_DIR/lines.html, five overlapping line crops t_L01..t_L05 of one synthetic
+page and no region, so the card's "Line strips" view has lines above and below and further lines (n-2, n+2) to slide up and down to;
+the lines are 2400 px long, so the window slides along them even at zoom 3 on a desk (test_pan.js)."""
 import subprocess, sys
 from pathlib import Path
 from PIL import Image, ImageDraw
@@ -67,3 +70,22 @@ sr.run(np.array(reg), traces, ['r_L01', 'r_L02', 'r_L03'], cols, cents, rd, rd /
 subprocess.run([sys.executable, str(ROOT / 'tools' / 'sign_sorter.py'), '--signs', str(rd / 'signs.tsv'), '--labels', str(rd / 'labels.tsv'),
                 '--pages', str(rd / 'pages'), '--region', str(rd / 'region.json'), '--title', 'Fixture region sorter', '--lede', 'Synthetic region.',
                 '--out', str(out / 'region.html')], check=True)
+
+# lines.html (owner rule R09, 11 Oct 2026): five line crops of one page, 170 px tall at a 100 px pitch (they overlap, as real line crops
+# do), 31 signs each, no region: the card's line-strip view with neighbour lines, and lines n-2 / n+2 beyond them for a slide up or down
+ld = out / 'lines'; (ld / 'pages').mkdir(parents=True, exist_ok=True)
+LW, LP, LH, NL = 2400, 100, 170, 5
+pg = Image.new('L', (LW, 2 * LH + LP * NL), 248); g = ImageDraw.Draw(pg)
+lrow = 'X Y Z X X-DOT Y X Z X Y X Z X Y X Z X Y X Z X Y X X Z Y X Z X Y Z'.split()
+lsigns, llabels = ['sid\tpage\tx\ty\tw\th'], ['sid\tsign\tfamily']
+for n in range(NL):
+    mid = LH + LP * n; top = mid - LH // 2; name = 't_L%02d' % (n + 1)
+    for i, sg in enumerate(lrow):
+        x = 40 + 76 * i; shapes[sg](g, x, mid - 15)
+        lsigns.append('%s_%02d\t%s\t%d\t%d\t21\t31' % (name, i + 1, name, x, LH // 2 - 15)); llabels.append('%s_%02d\t%s\t%s' % (name, i + 1, sg, 'Z' if sg == 'Z' else 'X'))
+    g.text((8 + 470 * n, mid + 30), 'line %d' % (n + 1), fill=60)
+for n in range(NL):
+    mid = LH + LP * n; pg.crop((0, mid - LH // 2, LW, mid - LH // 2 + LH)).save(ld / 'pages' / ('t_L%02d.png' % (n + 1)))
+(ld / 'signs.tsv').write_text('\n'.join(lsigns) + '\n'); (ld / 'labels.tsv').write_text('\n'.join(llabels) + '\n')
+subprocess.run([sys.executable, str(ROOT / 'tools' / 'sign_sorter.py'), '--signs', str(ld / 'signs.tsv'), '--labels', str(ld / 'labels.tsv'),
+                '--pages', str(ld / 'pages'), '--title', 'Fixture lines sorter', '--lede', 'Synthetic lines.', '--out', str(out / 'lines.html')], check=True)

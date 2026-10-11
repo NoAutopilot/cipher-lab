@@ -32,8 +32,8 @@ marker or no row matches.
 
 The fix for a stale row, by the account that owns the page: read the artifact back (Artifact action read), re-render it with
 tools/sorter_rerender.py OLD.html --out NEW.html (DATA, tiles and sids carried over byte for byte, so the owner's saved answers
-still apply after a republish to the same URL, R08), run tools/sorter_preflight.py NEW.html (all six checks, the gesture test
-included), republish to the same URL, then `--record URL PAGE.html` (the row's template_marker and last_republished). A parent
+still apply after a republish to the same URL, R08), run tools/sorter_preflight.py NEW.html (all seven checks, the gesture
+and pan tests included), republish to the same URL, then `--record URL PAGE.html` (the row's template_marker and last_republished). A parent
 runs this at every check-in (.claude/briefs/parent.md, duty 6).
 
 Must catch (offline test tools/tests/test_live_sorters_check.py): a row on an older marker; a row with no marker ('none' or blank:
