@@ -362,7 +362,9 @@ async function run(b, dev, opts) {
         showCtx(sid, pileOf(sid)); await wait(sid); const c = document.getElementById('ctxC'), m = c._map;
         if (!m || c.dataset.sid !== sid) { out.skipped++; continue; }
         const it = itemBySid[sid], [pa, pb] = nbPages(it.p), H = pageImg(it.p).naturalHeight, [, by, , bh] = boxOf(sid).map(v => v * ps);
-        const hb = pb ? Math.round(band(pageImg(pb)) * m.s) : 0, y1 = m.y0 + (c.height - m.ha - hb) / m.s;
+        // the band below and the crop's own last row drawn: from the map when the page gives them (template 2026-10-09.6 widens a shorter
+        // neighbour's slice), else as the fixed 22-78% band left them
+        const hb = m.hb != null ? m.hb : pb ? Math.round(band(pageImg(pb)) * m.s) : 0, y1 = m.y1 != null ? m.y1 : m.y0 + (c.height - m.ha - hb) / m.s;
         const above = (by - m.y0) + m.ha / m.s, below = (y1 - by - bh) + hb / m.s; out.n++;
         if (!pa && !pb) continue; out.nb++;
         if ((pa && above < 0.5 * H) || (pb && below < 0.5 * H)) out.short.push(sid + ' ' + Math.round(above) + '/' + Math.round(below) + ' of ' + H);

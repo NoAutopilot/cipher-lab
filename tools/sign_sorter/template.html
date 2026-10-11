@@ -1,5 +1,5 @@
 <!doctype html>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-09.5"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-09.6"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
 <title>__TITLE__</title>
 <style>
 /* Layout: a sorting bench in two steps (owner, 3 Oct 2026). Step 1: clean each pile -- tap a sign that does not belong
@@ -7,7 +7,9 @@
    large, over cards of every other pile -- tap the pile (a mouse can also drag the sign onto it). Phone first, mouse works too.
    One gesture rule on every page and in every box (owner rule R05, tools/data/sorter_owner_requirements.tsv; template
    2026-10-09.5): a TAP takes the sign out into the tray, a HOLD opens its card and moves nothing; a finger never drags a sign
-   (a swipe scrolls), and the lift after a hold presses nothing in the card. */
+   (a swipe scrolls), and the lift after a hold presses nothing in the card. Template 2026-10-09.6 (sweep of 10 Oct 2026): a press is a tap
+   or a hold by its own event times, so a quick tap on a page busy re-rendering never opens the card; step 2 has "Fix the cut"; an optional
+   box-check key (OPTS.key); a neighbour line crop shorter than the sign's own shows enough of itself in the card (R02). */
 :root{
   --bg:#f3f1ec; --surface:#fbfaf7; --ink:#24211c; --muted:#6b655b; --line:#d9d4c9;
   /* Colour-blind safe (MQS-SORTER, 9 Oct 2026; Okabe-Ito, tools/cvd_check.py PALETTES['sorter_light'|'dark']): no state is told by hue
@@ -1195,12 +1197,14 @@ $('s2Fix').onclick = () => { if (!s2Cur) return; const sid = s2Cur;
   showCtx(sid, pileOf(sid), false, [sid], 'waiting in step 2'); s2FixSid = sid; fixStart();
   $('ctxMsg').textContent = 'Fit the box to the sign, then press Save cut (or Split if it holds two signs). Close changes nothing.'; };
 function s2FixDone(sid){ if (!sid || sid !== s2FixSid) return;
-  const msg = $('ctxMsg').textContent.trim(), q = !!trayOrder[sid] && (preTrayed(sid) || moves[sid] === 'OUT'), home = homeOf[sid];
+  const raw = $('ctxMsg').textContent, split = /^Split /.test(raw), home = homeOf[sid];
+  const msg = raw.replace(' It stays in its pile; Undo takes it back.', '').replace(' Undo twice takes both back.', '').trim(), back = /^The cut is unchanged/.test(raw) ? '' : split ? 'the added box, then the cut' : 'the cut';
+  const q = !!trayOrder[sid] && (preTrayed(sid) || moves[sid] === 'OUT');
   closeCtx(); if (step !== 2 || where(sid) !== 'OUT') return;
   s2Cur = sid;
   if (q){ place(home); if (!answered(sid)) return;   // place() said why not (the saved answers not in yet)
-    $('s2Msg').textContent = msg + ' Box checked: kept in ' + home + ' (Undo takes the keep back first); the next one is up.'; }
-  else { renderS2(); $('s2Msg').textContent = msg + ' It is still waiting here: tap the pile it belongs to.'; } }
+    $('s2Msg').textContent = msg + ' Box checked: kept in ' + home + '; the next one is up. Undo takes the keep back' + (back ? ' first, then ' + back : '') + '.'; }
+  else { renderS2(); $('s2Msg').textContent = msg + (back ? ' Undo takes back ' + back + '.' : '') + ' It is still waiting here: tap the pile it belongs to.'; } }
 // drag the big sign onto a pile card with a mouse or pen; the page scrolls when the pointer nears an edge.
 // Owner rule R05 (template 2026-10-09.5): a HOLD on the big sign opens its card (large on its line, Fix the cut) and moves nothing;
 // a tap moves nothing either (it is in the tray already) and says so. A finger never drags it (round-2 check, 10 Oct 2026: a quick
@@ -1430,8 +1434,17 @@ function drawLine(sid, c, z, alive){
     // with neighbour lines shown (owner rule R02): this crop's own middle band (and the whole box), the neighbour bands above and
     // below abutting it; on a side with no neighbour crop on the page, this crop's own pixels to its edge (round-2 check, 10 Oct
     // 2026: a side with no neighbour showed only a third of the sign's height of paper)
-    let y0, y1;
-    if (ia || ib){ const [b0, b1] = band(im); y0 = ia ? Math.max(0, Math.min(b0, y - 4)) : 0; y1 = ib ? Math.min(H, Math.max(b1, y + h + 4)) : H; }
+    let y0, y1, sa = null, sb = null;
+    if (ia || ib){ const [b0, b1] = band(im); y0 = ia ? Math.max(0, Math.min(b0, y - 4)) : 0; y1 = ib ? Math.min(H, Math.max(b1, y + h + 4)) : H;
+      // Each side shows at least what a neighbour crop of this crop's own height would (its 56% middle band), so a SHORTER neighbour
+      // crop reaches further from this line's side (template 2026-10-09.6; sweep of 10 Oct 2026, owner rule R02: the fixed 22-78% band of
+      // Morvilliers' 212 px L06 over its 285 px L07, Juan Manuel's 102 px f199L25 over the double-height 204 px f199L26, or its 86 px
+      // f194L22 under the 106 px f194L21, was less than half a line on 18 of 232 and 6 of 291 tiles; a page cut into line crops of
+      // uneven height). Above: the neighbour's band grows upward from its 78% edge (which still abuts this crop), up to its top; below,
+      // downward from its 22% edge, down to its bottom; if the neighbour crop has not that much, this crop's own pixels make up the rest.
+      const want = Math.round(0.56 * H);
+      if (ia){ const [a0, a1] = band(ia); sa = [Math.max(0, Math.min(a0, a1 - (want - (y - y0)))), a1]; y0 = Math.max(0, Math.min(y0, y - (want - (sa[1] - sa[0])))); }
+      if (ib){ const [c0, c1] = band(ib); sb = [c0, Math.min(ib.naturalHeight, Math.max(c1, c0 + want - (y1 - y - h)))]; y1 = Math.min(H, Math.max(y1, y + h + want - (sb[1] - sb[0]))); } }
     else { y0 = Math.max(0, y - padY); y1 = Math.min(H, y + h + padY); }
     // phone (8 Oct 2026): a dot or tick at zoom 5 drew a 20-35 px sliver; show at least ~120 css px of the line's height. With no
     // neighbour crop to draw (owner rule R02: the lines above and below), the card shows the whole crop's height when it fits in 40% of
@@ -1442,18 +1455,18 @@ function drawLine(sid, c, z, alive){
     const cv = c.parentElement;
     const cssW = Math.max(120, cv.clientWidth || 600);                  // always fill the box; the slider changes the window
     const s = cssW * Math.min(2, window.devicePixelRatio || 1) / (x1 - x0);
-    const ha = ia ? Math.round((band(ia)[1] - band(ia)[0]) * s) : 0, hb = ib ? Math.round((band(ib)[1] - band(ib)[0]) * s) : 0, hm = Math.round((y1 - y0) * s);
+    const ha = ia ? Math.round((sa[1] - sa[0]) * s) : 0, hb = ib ? Math.round((sb[1] - sb[0]) * s) : 0, hm = Math.round((y1 - y0) * s);
     c.width = Math.round((x1 - x0) * s); c.height = ha + hm + hb; c.style.width = cssW + 'px'; c.style.height = Math.round(c.height * cssW / c.width) + 'px'; c.dataset.span = x1 - x0; c.dataset.sid = sid; c.dataset.whole = (x0 === 0 && x1 === im.naturalWidth) ? '1' : ''; c.dataset.view = 'strip';
     const g = c.getContext('2d'); g.imageSmoothingEnabled = true;
-    const strip = (q, top, hh) => { const qx1 = Math.min(q.naturalWidth, x1), [b0, b1] = band(q); if (qx1 > x0) g.drawImage(q, x0, b0, qx1 - x0, b1 - b0, 0, top, (qx1 - x0) * s, hh); };
-    if (ia){ g.fillStyle = '#f4f1ea'; g.fillRect(0, 0, c.width, ha); strip(ia, 0, ha); }
+    const strip = (q, [b0, b1], top, hh) => { const qx1 = Math.min(q.naturalWidth, x1); if (qx1 > x0) g.drawImage(q, x0, b0, qx1 - x0, b1 - b0, 0, top, (qx1 - x0) * s, hh); };
+    if (ia){ g.fillStyle = '#f4f1ea'; g.fillRect(0, 0, c.width, ha); strip(ia, sa, 0, ha); }
     g.drawImage(im, x0, y0, x1 - x0, y1 - y0, 0, ha, c.width, hm);
-    if (ib){ g.fillStyle = '#f4f1ea'; g.fillRect(0, ha + hm, c.width, hb); strip(ib, ha + hm, hb); }
+    if (ib){ g.fillStyle = '#f4f1ea'; g.fillRect(0, ha + hm, c.width, hb); strip(ib, sb, ha + hm, hb); }
     if (ia || ib){ g.fillStyle = 'rgba(36,33,28,.55)'; if (ia) g.fillRect(0, ha - 1, c.width, 2); if (ib) g.fillRect(0, ha + hm - 1, c.width, 2); }
     g.translate(0, ha);
     // corner brackets (shape, not colour), drawn twice for contrast; stroke sizes in screen pixels
     const k = c.width / cssW;
-    c._map = {x0, y0, s, k, ha, ps, iw: im.naturalWidth / ps, ih: im.naturalHeight / ps};   // canvas <-> source pixels, for the cut editor
+    c._map = {x0, y0, y1, s, k, ha, hb, ps, iw: im.naturalWidth / ps, ih: im.naturalHeight / ps};   // canvas <-> source pixels, for the cut editor (y1, hb: test_gestures.js R02)
     const [ex, ey, ew, eh] = (ed ? ed.box : boxOf(sid)).map(v => v * ps);
     const bx = (ex - x0) * s, by = (ey - y0) * s, bw = ew * s, bh = eh * s, L = Math.min(14 * k, bw / 2, bh / 2) + 4 * k, pad = 4 * k;
     if (ed){ drawEdit(g, k, (px, py) => [(px * ps - x0) * s, (py * ps - y0) * s], s * ps); return; }   // the box (quad) with its handles and erased ink: what is inside is the tile
