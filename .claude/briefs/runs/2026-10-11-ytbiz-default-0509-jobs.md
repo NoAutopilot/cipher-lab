@@ -76,3 +76,12 @@ l.19092's ~24 numerals by the table vs >= 200 value-shuffled tables and vs a dif
 gate = above shuffled p95 and above the other key; (4) read only if the gate passes, grade per token (rule 4), decode script with
 `--check` (rule 7). Below authentication distance is expected (~24 numerals): say so; a non-test is a valid result. Report what was found
 and where it was not found; do not classify novelty. Units: ~3 vision + CPU.
+
+### F143-DEC2 (Opus, cap 5, box 90 min, disk only): fr3985-nevers-revol-1593 folder, fr.3988 f.143r -- the F143-DEC test re-scoped
+F143-DEC (05:2x UTC) stopped at its material check and wrote two design notes in NOTES.md (section F143-DEC, l.~250-275): read them first.
+Orchestrator's choice: option (a) -- use f.143r L05-L08 from keyhunt_f143/img/c304_reg.jpg (legible), not L06-L09; and replace control arm (ii)
+by the reverse foreign-key arm F143-DEC proposed (a key60-tag blind transcription of the Mayenne leaf m61_reg.jpg's lines, decoded with key60,
+judged the same way: a foreign-key text that key60 should NOT read). Arm (i) (>= 200 value-shuffled key60 keys) unchanged. Everything else
+as F143-DEC's brief above (PREREG pushed first, crop step pasted, two blind passes on the target lines, judge with the named corpus and the
+fold-spread caveat). Gate: key60 decode of f.143r above the shuffled p95 AND above the Mayenne reverse-arm decode. If the reverse arm itself
+scores at or above shuffled p95, the judge does not separate key families at this N: log non-test.
