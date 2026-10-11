@@ -8831,3 +8831,28 @@ TX programme table 03:5x UTC 10 Oct: slot 1 orchestrator session_017GN87mbYobH4z
 session_01ERAcUeCn1HuAUASaqBTzcf 22.9 | slot 3 TX-RED inc. 3 session_01X3CDfBTKgm75BMx43r7AWj 15.95, pass 17 filed, next 04:24; open:
 none (F78-F80 adopted/handed) | slots 4-10: SHEETVIVC live (control arm), MARKS2 done (FAIL read-free, stop at two) | eval looks 0;
 S2 look 1 (record 0.150/0.296; -w 0.141/576 beside).
+
+## LANE DEFAULT-account-2-20261011-0509 handoff (session_01Gtsge7DYsP57RsomYTZuyY, account 2), 11 October 2026 (05:09-07:0x UTC by date -u; closed: in-scope backlog spent, lane ~38 of 60)
+
+Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-11-ytbiz-default-0509-jobs.md (waves 1-3). Gate 0a: SESSION-SWEEP-account-2
+stale-claimed since 5 Oct, proceeded. five_hour `allowed` throughout. 10 workers 30.30 + orchestrator ~7.6 by get_session, all ledgered and archived.
+Backlog read: VERIFY-BACKLOG regenerated; its high "counted" rows outside Birago are already-decided D1/N1 items -> PROGRESS.tsv notes now say
+"not counted" (six rows, from status.json), so they drop to priority none. Eckert D1 audit-2 rows went to the account-1 DEFAULT lane (AUD2-FM16e).
+Results:
+- fr16045-pisany-rome-1585 (V-PISA3): AUDIT 5, UNA3-PISA carry-over consistent; item C reconciled C 233/M 140/U 29 (58.0%), D1/N0 unchanged.
+- sachsstaatsarchiv-manteuffel-1712 (AUD2-MANT3): Audit 2 on 0176 (N3 held, low; D1), 0454 (N2 D2; redated 29 Oct 1712), 0136 (N2 D1); SO-MANT-0176 + 6
+  JSTOR rows; lead Hinrichs 1941 (loan only); Bonnesen still unread (L69).
+- thurloe-printed Bamfylde (THUR-BAMF, -BAMF2, V-BAMF): Birch vol 6 p.160 l.19092 (Paris, Apr 1657) read under a 51-code table rebuilt from Birch's
+  vol 4/5 glosses, gate PASS with 2/2 held-out controls; Tomokiyo's First Cipher table agrees on all 23 p.160 codes; 937 = Mazarin (C), 745 = secret (M),
+  94 y/t conflict (M), 356 U. V-BAMF: N3, key source period, D1 (fragments below the authentication distance). THUR-BRV: Brieven vols 1-6 on IA; the
+  1725 Verbael is not on IA by title.
+- fr3985-nevers-revol-1593 / fr.3988 f.143r (F143-DEC, -DEC2): decode-level key60 test NON-TEST -- the no.60 positive control itself fails the
+  value-shuffle null (word values inflate shuffled keys); a length-class null is the next instrument, pre-registered fresh on undecoded lines.
+- baluze167-davaux-1637 (BAL-SHAPE): not run -- the glossed Baluze 170 crops are not on disk (Gallica needed).
+Light-guardrail share (known-text work): ~12% (V-PISA3 on an N0 item, a record correction).
+Lesson: two of five wave-1 briefs were disk-only jobs whose material was not on disk; check the files before briefing (cost 3.2).
+**next**
+1. baluze167: crop 2-3 glossed Baluze 170 leaves when Gallica answers (~1.5), then BAL-SHAPE as briefed (~4).
+2. fr.3988 f.143r: fresh PREREG with a length-class null on undecoded lines (F143-DEC2's NOTES), ~4; or one Gallica region for L06-L09.
+3. thurloe-printed Bamfylde: l.68904 (vol 6 p.576, Second Cipher) against Tomokiyo bamp2, ~1; code 356 and the 94 conflict stay open-codes.
+4. tools/next_steps.py `parallel` column is stale on many rows (both default lanes found it): a refresh pass is tooling work for a parent.
