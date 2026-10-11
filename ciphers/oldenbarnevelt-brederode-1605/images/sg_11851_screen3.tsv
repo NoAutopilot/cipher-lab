@@ -1,0 +1,61 @@
+scan	sheet	tile	content	numeral_code_block
+641	1	H	prose	no
+642	1	B	prose	no
+643	1	D	prose	no
+644	1	E	prose	no
+645	1	G	prose	no
+646	1	A	list	no
+647	2	I	list	no
+648	2	A	list	no
+649	2	C	list	no
+650	2	G	list	no
+651	2	D	prose	no
+652	2	F	prose	no
+653	3	A	prose	no
+654	3	D	prose	no
+655	3	B	prose	no
+656	3	C	prose	no
+657	3	G	prose	no
+658	3	F	prose	no
+659	4	I	table	no
+660	4	D	table	no
+661	4	B	prose	no
+662	4	H	prose	no
+663	4	E	prose	no
+664	4	F	prose	no
+665	5	B	prose	no
+666	5	G	prose	no
+667	5	C	prose	no
+668	5	D	prose	no
+669	5	H	prose+sums	no
+670	5	F	prose+sums	no
+671	6	I	prose+sums	no
+672	6	E	prose+sums	no
+673	6	A	prose	no
+674	6	D	prose	no
+675	6	B	prose+list	no
+676	6	H	list	no
+677	7	F	list+prose	no
+678	7	B	prose	no
+679	7	C	munition list (Roman-numeral quantities)	no
+680	7	A	munition list (Roman-numeral quantities)	no
+681	7	I	munition list (Roman-numeral quantities)	no
+682	7	H	munition list (Roman-numeral quantities)	no
+683	8	D	store list	no
+684	8	B	store list	no
+685	8	G	store list	no
+686	8	I	store list	no
+687	8	C	prose	no
+688	8	E	prose	no
+689	9	B	prose+account	no
+690	9	H	account	no
+691	9	I	account	no
+692	9	E	account	no
+693	9	D	account	no
+694	9	F	account	no
+695	10	I	account+prose	no
+696	10	G	prose	no
+697	10	A	prose	no
+698	10	B	prose	no
+699	10	F	prose	no
+700	10	C	prose	no

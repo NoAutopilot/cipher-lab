@@ -1,0 +1,25 @@
+scan	sheet	tile	content	numeral_code_block
+38	1	C	letter+address slip	no
+39	1	D	prose	no
+41	1	E	blank	no
+42	1	B	letter+address slip	no
+44	1	G	letter end, signed P. Brederode	no
+45	1	H	blank	no
+47	2	I	prose	no
+48	2	G	letter end	no
+50	2	D	letter+address slip	no
+51	2	C	prose	no
+53	2	A	letter end	no
+54	2	H	blank+endorsement	no
+56	3	G	Dutch letter+address slip	no
+57	3	B	German prose	no
+59	3	C	short German letter	no
+60	3	H	German letter	no
+62	3	A	German letter	no
+63	3	E	German prose	no
+65	4	A	letter end	no
+66	4	B	German letter	no
+68	4	E	prose	no
+69	4	F	letter signed P. Brederode	no
+71	4	H	prose	no
+72	4	G	prose	no
