@@ -1,0 +1,8 @@
+Q01	best=L	second=A	confidence=low	vertical stroke descending below line with crossbar and small loop/hook at upper left (4- or crossed-p-like); faint
+Q02	best=H	second=M	confidence=medium	n-shaped sign whose right leg descends and curls left at the bottom (eta / ŋ-like); cell H is circled
+Q03	best=D	second=R	confidence=low	very faint: horizontal bar crossing a vertical stroke, with a small loop low on the left; hard to read
+Q04	best=C	second=V	confidence=medium	y-shaped sign with a long tail curving left below the line
+Q05	best=P	second=H	confidence=high	m-shaped sign with the right leg extended down as a tail; cell P is circled
+Q06	best=O	second=U	confidence=high	X-shaped cross with a small closed loop at the lower right foot
+Q07	best=O	second=S	confidence=medium	long diagonal from upper left crossing a short stroke, with a loop at the lower right (same as Q06, drawn larger)
+Q08	best=Q	second=F	confidence=low	omega or w-like double loop with a trailing stroke, below a "Cu"-like sign; faint and blurred; cell Q is circled

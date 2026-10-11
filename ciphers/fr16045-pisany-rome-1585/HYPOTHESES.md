@@ -169,3 +169,6 @@ No key86 change (running-text gloss, no sign-level value; T40 not covered).
 - UNA-PISA instrument, blind Opus, GK 5/5 (f.244r call) and 5/5 (f.275r call). Settled by two readers (this + R9-PIS2): f.275r T36 x4, T45 x1, T31 x1; f.244r none.
 - Re-score of the 5 other-value relabels on f.275r (key86 unchanged): 0.6634 -> 0.6676, above key-shuffle p99 0.464 / order p99 0.498, control 5/5,
   4 of 5 identical to the copy under the new value vs 0 under m: PASS, committed (pisa_t31/). key86 T31 = m untouched; one token (L03 i31) settles on T31.
+
+## PISA-T475 third blind reader on the 3 UNSETTLED f.275r T45/T47/T57 tokens (11 Oct 2026)
+- Control: UNA-PISA known-answer tiles, GK 5/5. Target: L10 p12 (T57), L11 p19 (T47), L15 p27 (T45): all low again, best cells T57, T42, T19 as PISA-275R; no settle, no relabel, no re-score (pisa_t475/PREREG-PISA-T475.md, result.tsv). f.244r tokens not compared (not located). Status: untested at this resolution, not refuted.

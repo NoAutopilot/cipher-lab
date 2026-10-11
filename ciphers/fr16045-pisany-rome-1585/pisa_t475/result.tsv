@@ -1,0 +1,10 @@
+qid	id	role	answer_or_label	best_cell	second_cell	conf	verdict	p275r_best	p275r_second	p275r_conf	third_reader_rule
+Q01	f275r_L15_p27	test	T45	T19	T45	low	UNSETTLED	T19	T27	low	UNSETTLED
+Q02	K-T17	control	T17	T17	T38	medium	HIT				
+Q03	f275r_L11_p19	test	T47	T42	T51	low	UNSETTLED	T42	T19	low	UNSETTLED
+Q04	K-T46	control	T46	T46	T35	medium	HIT				
+Q05	K-T16	control	T16	T16	T17	high	HIT				
+Q06	K-T36b	control	T36	T36	T31	high	HIT				
+Q07	K-T36a	control	T36	T36	T33	medium	HIT				
+Q08	f275r_L10_p12	test	T57	T57	T32	low	UNSETTLED	T57	T32	low	UNSETTLED
+# f275r: GK 5/5 PASS
