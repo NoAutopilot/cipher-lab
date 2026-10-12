@@ -1,0 +1,45 @@
+{
+ "b1": true,
+ "b2": true,
+ "b2_bound": 0.15,
+ "b3": true,
+ "draws": 20,
+ "inputs_sha256": {
+  "benchmark-tx/txeng4/5/knn/knn_top1.tsv": "e20a06ea83ddd26948a25967d48c16cbf0a2b43f5bb2c39b3a246ee6b8645223",
+  "benchmark-tx/txeng4/5/maps/f152r_passZ_read_dropped.tsv": "9d91287e5302bda99f30f332060d9d515d46607bbd3f77e89ea676c6cfaeddc8",
+  "ciphers/nevers-birago-fr3251-1572/atlas/signs.tsv": "4c234928720ea4baf26a21350adea85152f816642da3ac330818fdf4f850c974"
+ },
+ "lines": {
+  "f152r_L03": {
+   "counts": {
+    "0": 4,
+    "none": 21
+   },
+   "placed": 25,
+   "verdict": "pass"
+  },
+  "f152r_L04": {
+   "counts": {
+    "+1": 1,
+    "0": 3,
+    "none": 11
+   },
+   "placed": 15,
+   "verdict": "pass"
+  }
+ },
+ "map_sha256": "81c195e5864f6b8d081ef18664b904cd7b8096bbd50fb51eea5d549826318622",
+ "n": 40,
+ "overall": {
+  "+1": 1,
+  "0": 7,
+  "none": 32
+ },
+ "p95_0": 0.075,
+ "p95_pm1": 0.15,
+ "seed": 20261012,
+ "share0": 0.175,
+ "sharepm1": 0.025,
+ "utc": "2026-10-12T01:36:10Z",
+ "verdict": "PASS"
+}

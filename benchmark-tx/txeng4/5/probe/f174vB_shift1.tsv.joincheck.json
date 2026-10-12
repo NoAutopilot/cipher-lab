@@ -1,0 +1,129 @@
+{
+ "b1": true,
+ "b2": true,
+ "b2_bound": 0.09848484848484848,
+ "b3": true,
+ "draws": 20,
+ "inputs_sha256": {
+  "benchmark-tx/txeng4/5/knn/knn_top1.tsv": "e20a06ea83ddd26948a25967d48c16cbf0a2b43f5bb2c39b3a246ee6b8645223",
+  "benchmark-tx/txeng4/5/probe/f174vB_shift1_read.tsv": "b721458fc3ddd6e5ef8d5aa3b92f5d52003ee401ef15ccf80598dfeb630bf792"
+ },
+ "lines": {
+  "f174vB_L02": {
+   "counts": {
+    "+-2": 1,
+    "0": 11,
+    "none": 10
+   },
+   "placed": 22,
+   "verdict": "pass"
+  },
+  "f174vB_L03": {
+   "counts": {
+    "+-2": 2,
+    "0": 16,
+    "none": 11
+   },
+   "placed": 29,
+   "verdict": "pass"
+  },
+  "f174vB_L04": {
+   "counts": {
+    "+-2": 2,
+    "0": 15,
+    "none": 6
+   },
+   "placed": 23,
+   "verdict": "pass"
+  },
+  "f174vB_L05": {
+   "counts": {
+    "0": 14,
+    "none": 7
+   },
+   "placed": 21,
+   "verdict": "pass"
+  },
+  "f174vB_L06": {
+   "counts": {
+    "+-2": 1,
+    "0": 13,
+    "none": 12
+   },
+   "placed": 26,
+   "verdict": "pass"
+  },
+  "f174vB_L07": {
+   "counts": {
+    "+-2": 2,
+    "-1": 2,
+    "0": 12,
+    "none": 7
+   },
+   "placed": 23,
+   "verdict": "pass"
+  },
+  "f174vB_L08": {
+   "counts": {
+    "0": 14,
+    "none": 9
+   },
+   "placed": 23,
+   "verdict": "pass"
+  },
+  "f174vB_L09": {
+   "counts": {
+    "+-2": 1,
+    "-1": 1,
+    "0": 14,
+    "none": 10
+   },
+   "placed": 26,
+   "verdict": "pass"
+  },
+  "f174vB_L10": {
+   "counts": {
+    "+-2": 1,
+    "-1": 3,
+    "0": 15,
+    "none": 4
+   },
+   "placed": 23,
+   "verdict": "pass"
+  },
+  "f174vB_L11": {
+   "counts": {
+    "+-2": 1,
+    "-1": 1,
+    "0": 15,
+    "none": 7
+   },
+   "placed": 24,
+   "verdict": "pass"
+  },
+  "f174vB_L12": {
+   "counts": {
+    "-1": 1,
+    "0": 12,
+    "none": 11
+   },
+   "placed": 24,
+   "verdict": "pass"
+  }
+ },
+ "map_sha256": "b9420c9ea5e2e08b02c4797e3f621cb56e1aa0d49fe19ab025d6a5144b16d629",
+ "n": 264,
+ "overall": {
+  "+-2": 11,
+  "-1": 8,
+  "0": 151,
+  "none": 94
+ },
+ "p95_0": 0.04924242424242424,
+ "p95_pm1": 0.09848484848484848,
+ "seed": 20261012,
+ "share0": 0.571969696969697,
+ "sharepm1": 0.030303030303030304,
+ "utc": "2026-10-12T01:39:40Z",
+ "verdict": "PASS"
+}

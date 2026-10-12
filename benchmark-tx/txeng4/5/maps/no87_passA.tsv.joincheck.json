@@ -1,0 +1,293 @@
+{
+ "b1": true,
+ "b2": true,
+ "b2_bound": 0.09646983311938383,
+ "b3": true,
+ "draws": 20,
+ "inputs_sha256": {
+  "benchmark-tx/outputs/birago1572-no87/passA.tsv": "39b55e3e95c085993d054b667db080c3c607a4c7dda5b446f35ba3b566bb966a",
+  "benchmark-tx/txeng4/5/knn/knn_top1.tsv": "7471d279ad65dc6f265f0485c6a25528a7dd146fcb54395afec6dd2caa590e2d"
+ },
+ "lines": {
+  "f178r_L01": {
+   "counts": {
+    "+-2": 1,
+    "-1": 1,
+    "0": 14,
+    "none": 13
+   },
+   "placed": 29,
+   "verdict": "pass"
+  },
+  "f178r_L02": {
+   "counts": {
+    "+1": 1,
+    "0": 16,
+    "none": 14
+   },
+   "placed": 31,
+   "verdict": "pass"
+  },
+  "f178r_L03": {
+   "counts": {
+    "-1": 2,
+    "0": 9,
+    "none": 6
+   },
+   "placed": 17,
+   "verdict": "pass"
+  },
+  "f178v_L01": {
+   "counts": {
+    "+-2": 1,
+    "-1": 1,
+    "0": 15,
+    "none": 9
+   },
+   "placed": 26,
+   "verdict": "pass"
+  },
+  "f178v_L02": {
+   "counts": {
+    "-1": 1,
+    "0": 20,
+    "none": 5
+   },
+   "placed": 26,
+   "verdict": "pass"
+  },
+  "f178v_L03": {
+   "counts": {
+    "-1": 1,
+    "0": 20,
+    "none": 3
+   },
+   "placed": 24,
+   "verdict": "pass"
+  },
+  "f178v_L04": {
+   "counts": {
+    "+-2": 2,
+    "0": 21,
+    "none": 4
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L05": {
+   "counts": {
+    "+-2": 2,
+    "-1": 1,
+    "0": 19,
+    "none": 6
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f178v_L06": {
+   "counts": {
+    "+1": 2,
+    "0": 20,
+    "none": 5
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L07": {
+   "counts": {
+    "+1": 1,
+    "0": 24,
+    "none": 2
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L08": {
+   "counts": {
+    "0": 20,
+    "none": 8
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f178v_L09": {
+   "counts": {
+    "+1": 1,
+    "0": 15,
+    "none": 10
+   },
+   "placed": 26,
+   "verdict": "pass"
+  },
+  "f178v_L10": {
+   "counts": {
+    "0": 21,
+    "none": 8
+   },
+   "placed": 29,
+   "verdict": "pass"
+  },
+  "f178v_L11": {
+   "counts": {
+    "+-2": 1,
+    "0": 21,
+    "none": 5
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L12": {
+   "counts": {
+    "-1": 2,
+    "0": 24,
+    "none": 5
+   },
+   "placed": 31,
+   "verdict": "pass"
+  },
+  "f178v_L13": {
+   "counts": {
+    "+-2": 1,
+    "0": 18,
+    "none": 8
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L14": {
+   "counts": {
+    "+1": 1,
+    "0": 21,
+    "none": 5
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L15": {
+   "counts": {
+    "+-2": 1,
+    "0": 20,
+    "none": 7
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f178v_L16": {
+   "counts": {
+    "-1": 1,
+    "0": 23,
+    "none": 5
+   },
+   "placed": 29,
+   "verdict": "pass"
+  },
+  "f178v_L17": {
+   "counts": {
+    "+-2": 1,
+    "-1": 1,
+    "0": 20,
+    "none": 5
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L18": {
+   "counts": {
+    "0": 21,
+    "none": 6
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L19": {
+   "counts": {
+    "+1": 1,
+    "0": 19,
+    "none": 8
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f178v_L20": {
+   "counts": {
+    "+-2": 1,
+    "0": 20,
+    "none": 5
+   },
+   "placed": 26,
+   "verdict": "pass"
+  },
+  "f178v_L21": {
+   "counts": {
+    "+1": 1,
+    "0": 17,
+    "none": 6
+   },
+   "placed": 24,
+   "verdict": "pass"
+  },
+  "f178v_L22": {
+   "counts": {
+    "+-2": 1,
+    "-1": 1,
+    "0": 19,
+    "none": 7
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f178v_L23": {
+   "counts": {
+    "+-2": 1,
+    "-1": 1,
+    "0": 20,
+    "none": 7
+   },
+   "placed": 29,
+   "verdict": "pass"
+  },
+  "f179r_L01": {
+   "counts": {
+    "+-2": 1,
+    "0": 22,
+    "none": 5
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f179r_L02": {
+   "counts": {
+    "+-2": 1,
+    "0": 20,
+    "none": 6
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f179r_L03": {
+   "counts": {
+    "-1": 1,
+    "0": 16,
+    "none": 4
+   },
+   "placed": 21,
+   "verdict": "pass"
+  }
+ },
+ "map_sha256": "be5aff7132ea74a38abcbeb6eb25763b2c89059c5b68df0f0279a0c48d15fb17",
+ "n": 779,
+ "overall": {
+  "+-2": 15,
+  "+1": 8,
+  "-1": 14,
+  "0": 555,
+  "none": 187
+ },
+ "p95_0": 0.05166880616174584,
+ "p95_pm1": 0.09646983311938383,
+ "seed": 20261012,
+ "share0": 0.7124518613607189,
+ "sharepm1": 0.028241335044929396,
+ "utc": "2026-10-12T01:40:06Z",
+ "verdict": "PASS"
+}

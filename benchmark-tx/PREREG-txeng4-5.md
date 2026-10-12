@@ -109,3 +109,65 @@ only"; U3 -> "dev result per pair, no eval look"; U4 -> the registered verdict o
 No frozen confirm item; no truth or flags edit; no owner evidence in any arm; no retired instrument; no publishing; no second
 eval look; no re-tuning after the eval outputs are committed; no edit to tools/glyph_atlas.py if another TXE4 session committed
 to it within the hour (then benchmark-tx/txeng4/5/glyph_atlas_pairbank.patch, named in ROOM).
+
+## Addendum A0 (01:4x UTC 12 Oct 2026 by date -u; written after the joins and pool counts, BEFORE any training, G1/G2 or score)
+Deviations and fixes declared before the first model is trained:
+1. R7 fired: another TXE4 session committed to tools/glyph_atlas.py at 01:37 UTC (904c82d80), so the tool change is
+   `benchmark-tx/txeng4/5/glyph_atlas_pairbank.patch` (TXE3-10's --pair patch + the four options + the --map gate, with both
+   tests) applied to a scratch copy `benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py`; tools/glyph_atlas.py is untouched.
+2. Passage -> atlas-line pairing (fixed inputs said "by ordinal"): the first build's honest (steered, leave-one-out) join check
+   FAILed B1 on f139v_L03 (atlas f139v lines are strips spanning two passages), on every f174vB_L (the harvest f174vB passages
+   sit one atlas line LOWER: a probe with the +1 offset, `probe/f174vB_shift1`, PASSes with share0 0.572 on all 11 lines) and on
+   f184r_L09 (22 tokens vs 32 boxes). Per R4a the FAIL lines were dropped (f139v_L03, f184r_L09) and the check re-run once; the
+   f174vB lines re-enter at the +1 offset (a geometry fact tested by the same gate, not a label). The kNN was retrained on the
+   kept lines (its LOO top-1 agreement with its own training labels 0.273 -> 0.484, n 675). First-build sidecars kept in
+   maps/first_build/.
+3. box_token_align --check-bound auto-detects "steered" only when --check-labels names the --topk file itself; here the top-1 file
+   is derived from it, so every map's sidecar was rewritten by `tools/join_check.py --steered` (the leave-one-out row). Those are
+   the verdicts below. (A tool note for the parent: --check-bound should treat a check-labels file whose sids and top-1 equal the
+   --topk file's k1 as steered.)
+4. f152r: the fixed inputs' ordinal rule put L01 on atlas line 1; TXE3-7's `map_f152r.py` (the script, not its forbidden map)
+   records that atlas f152r lines 2-5 are L01-L04 and that prose boxes outside the cipher run are cut by x (L01 keeps centre
+   x > 2520, L04 keeps x < 2460). A scratch signs.tsv with those boxes removed and lines renumbered is the --signs for the two
+   f152r maps (geometry only). The ordinal build FAILed (share0 0.135); the corrected one PASSes (0.624 / 0.609).
+5. --pairs conflict rule: a position flipped by exactly one pair model takes that flip; a position two pair models both flip is
+   kept as the base (counted as a conflict, reported). T76 sits in three pairs and T86 in two.
+6. Controls (5 shuffled --force-t 0, and the label-reversed model) run on the two pass-A bases (the gate bases); the L bases get
+   the real model only. G1's 20 shuffled LOGO runs are computed per pair on the first dev fold.
+7. A pair whose pool has fewer than 3 tiles of either member (the tool's own enabling rule) cannot train: its reading is
+   "untestable at this pool size", not FAIL and not a gate pass. From the counts below that is T76/T66 (1 T66), T95/T51 (0 T51),
+   T50/T92 (2 T50), T24/T29 (2 T29) and T64/T38 (2 T38); T18/T98 (9/27), T90/T53 (28/50), T76/T86 (33/46), T76/T45 (33/78) and
+   T60/T86 (68/46) can train.
+8. Gate pool positions with a 1:1 box, read-free: no.87 eval (pass A / L): T76 10/9, T86 11/11, T45 34/34, T66 0/1, T50 1/1,
+   T92 15/15, T24 3/3, T29 2/2, T60 25/25, T95 1/1, T51 0/0, T64 4/3, T38 1/1 (T98 9/9, T90 9/9, T53 16/16 reported, excluded);
+   f152r (pass A / Z): T18 1/0, T98 2/3, T90 4/4, T53 1/1, T76 1/1, T86 4/5, T45 2/2, T60 6/6, T64 2/2, T95 2/2, T50 1/1,
+   T92 1/1. So the gate pool for the trainable pairs holds about 120 no.87 positions (T76/T86, T76/T45, T60/T86) plus about
+   30 f152r positions (all five).
+
+## Addendum A1: pool counts per pair and source (machine-agreed tiles only; read-free)
+Sibling pool: 433 tiles stable across rounds 1 and 2 on PASS lines (30 of 58 passages paired; 881 tokens, 735 agreed).
+no.87 own A/B agreement (LCS on sign equality, pass A positions): 777 of 844 tokens, 717 with a 1:1 box.
+| pair | sibling A/B | no.87 dev A/B | no.87 eval A/B | no.87 f178r A/B | total A/B |
+|---|---|---|---|---|---|
+| T18/T98 | 4/13 | 4/7 | 0/6 | 1/1 | 9/27 |
+| T90/T53 | 8/20 | 10/12 | 8/16 | 2/2 | 28/50 |
+| T76/T86 | 11/11 | 11/20 | 9/11 | 2/4 | 33/46 |
+| T76/T45 | 11/18 | 11/18 | 9/34 | 2/8 | 33/78 |
+| T76/T66 | 11/0 | 11/0 | 9/0 | 2/1 | 33/1 |
+| T50/T92 | 1/1 | 0/2 | 1/15 | 0/3 | 2/21 |
+| T24/T29 | 3/1 | 2/0 | 2/1 | 0/0 | 7/2 |
+| T60/T86 | 24/11 | 17/20 | 25/11 | 2/4 | 68/46 |
+| T95/T51 | 2/0 | 0/0 | 0/0 | 0/0 | 2/0 |
+| T64/T38 | 1/0 | 2/1 | 3/1 | 0/0 | 6/2 |
+(At application the applied line's own tiles leave the pool; f152r tiles are in no pool.)
+
+## Addendum A2: join verdicts (tools/join_check.py --steered; full per-line rows in benchmark-tx/txeng4/5/maps/SHIFT-CHECKS.md)
+| map | verdict | n | share0 | share+-1 | null p95_0 | bound +-1 | FAIL lines |
+|---|---|---|---|---|---|---|---|
+| maps/sib_r2.tsv (= sib_pool_map.tsv) | PASS | 748 | 0.604 | 0.041 | 0.052 | 0.099 | none |
+| maps/no87_passA.tsv | PASS | 779 | 0.712 | 0.028 | 0.052 | 0.096 | none |
+| maps/no87_labels.tsv | PASS | 785 | 0.713 | 0.028 | 0.056 | 0.097 | none |
+| maps/f152r_passA.tsv | PASS | 85 | 0.624 | 0.035 | 0.059 | 0.130 | none |
+| maps/f152r_passZ.tsv | PASS | 87 | 0.609 | 0.034 | 0.057 | 0.139 | none |
+Reference (brief): the old no.87 map 157/24/14 of 208 FAIL; the label-aware map 188/1/2 of 203 PASS. This job's no.87 maps:
+kNN top-1 at 0 / -1 / +1 = 555 / 11 / 11 of 779 (pass A) with 202 'none' (the kNN's own misses, not shifts).

@@ -1,0 +1,45 @@
+sibling lines kept 32 of 58; tokens 937, agreed 786
+no.87 pass A tokens 844, A/B-agreed 777
+map: 1010 rows, ops {'1:1': 840, '2:1': 146, '1:2': 24} -> benchmark-tx/txeng4/5/maps/sib_r1.tsv
+kNN training tiles 704 on pages ['f139v', 'f144r', 'f168r', 'f168v', 'f174r', 'f174v', 'f174vB', 'f184r']
+kNN leave-one-out top-1 agreement with its own training labels 0.273 (n 704)
+map: 1033 rows, ops {'2:1': 192, '1:1': 711, 'unsure': 54, '1:2': 76} -> benchmark-tx/txeng4/5/maps/sib_r2.tsv
+check, new map, all its one-token tiles: n 765: at 0 289, -1 12, +1 15, +-2 26, none 423
+check, new map leave-one-out (own label hidden): n 755: at 0 259, -1 29, +1 20, +-2 29, none 418
+join_check --check-bound: PASS (steered=False) share0=0.378 (null p95 0.047) share+-1=0.035 (bound 0.093) -> benchmark-tx/txeng4/5/maps/sib_r2.tsv.joincheck.json
+sibling round-2 verdict PASS; stable agreed pool tiles 377 of 786 agreed
+map: 988 rows, ops {'1:1': 694, '2:1': 170, 'unsure': 50, '1:2': 74} -> benchmark-tx/txeng4/5/maps/sib_pool_map.tsv
+check, new map, all its one-token tiles: n 744: at 0 286, -1 12, +1 14, +-2 26, none 406
+check, new map leave-one-out (own label hidden): n 735: at 0 258, -1 29, +1 17, +-2 29, none 402
+join_check --check-bound: PASS (steered=False) share0=0.384 (null p95 0.050) share+-1=0.035 (bound 0.090) -> benchmark-tx/txeng4/5/maps/sib_pool_map.tsv.joincheck.json
+pool tiles after the pool-map re-check 377
+map: 887 rows, ops {'1:1': 757, '2:1': 86, 'unsure': 12, '1:2': 32} -> benchmark-tx/txeng4/5/maps/no87_passA.tsv
+check, new map, all its one-token tiles: n 769: at 0 469, -1 15, +1 11, +-2 18, none 256
+check, new map leave-one-out (own label hidden): n 767: at 0 459, -1 22, +1 12, +-2 18, none 256
+join_check --check-bound: PASS (steered=False) share0=0.610 (null p95 0.051) share+-1=0.034 (bound 0.085) -> benchmark-tx/txeng4/5/maps/no87_passA.tsv.joincheck.json
+no87_passA: PASS, failed lines []
+map: 895 rows, ops {'1:1': 767, '2:1': 84, 'unsure': 12, '1:2': 32} -> benchmark-tx/txeng4/5/maps/no87_labels.tsv
+check, new map, all its one-token tiles: n 779: at 0 476, -1 15, +1 12, +-2 19, none 257
+check, new map leave-one-out (own label hidden): n 777: at 0 466, -1 22, +1 13, +-2 19, none 257
+join_check --check-bound: PASS (steered=False) share0=0.611 (null p95 0.054) share+-1=0.035 (bound 0.095) -> benchmark-tx/txeng4/5/maps/no87_labels.tsv.joincheck.json
+no87_labels: PASS, failed lines []
+map: 130 rows, ops {'2:1': 70, '1:1': 45, 'unsure': 7, '1:2': 8} -> benchmark-tx/txeng4/5/maps/f152r_passA.tsv
+check, new map, all its one-token tiles: n 52: at 0 7, -1 0, +1 1, +-2 0, none 44
+check, new map leave-one-out (own label hidden): n 49: at 0 3, -1 0, +1 2, +-2 2, none 42
+join_check --check-bound: FAIL (steered=False) share0=0.135 (null p95 0.059) share+-1=0.019 (bound 0.154) -> benchmark-tx/txeng4/5/maps/f152r_passA.tsv.joincheck.json
+map: 84 rows, ops {'2:1': 38, '1:1': 35, 'unsure': 5, '1:2': 6} -> benchmark-tx/txeng4/5/maps/f152r_passA.tsv
+check, new map, all its one-token tiles: n 40: at 0 7, -1 0, +1 1, +-2 0, none 32
+check, new map leave-one-out (own label hidden): n 39: at 0 3, -1 0, +1 2, +-2 2, none 32
+join_check --check-bound: PASS (steered=False) share0=0.175 (null p95 0.075) share+-1=0.025 (bound 0.150) -> benchmark-tx/txeng4/5/maps/f152r_passA.tsv.joincheck.json
+f152r_passA: PASS, failed lines ['f152r_L02']
+map: 132 rows, ops {'2:1': 72, '1:1': 45, 'unsure': 7, '1:2': 8} -> benchmark-tx/txeng4/5/maps/f152r_passZ.tsv
+check, new map, all its one-token tiles: n 52: at 0 7, -1 0, +1 1, +-2 0, none 44
+check, new map leave-one-out (own label hidden): n 50: at 0 2, -1 0, +1 3, +-2 1, none 44
+join_check --check-bound: FAIL (steered=False) share0=0.135 (null p95 0.059) share+-1=0.019 (bound 0.154) -> benchmark-tx/txeng4/5/maps/f152r_passZ.tsv.joincheck.json
+map: 84 rows, ops {'2:1': 38, '1:1': 34, 'unsure': 6, '1:2': 6} -> benchmark-tx/txeng4/5/maps/f152r_passZ.tsv
+check, new map, all its one-token tiles: n 40: at 0 7, -1 0, +1 1, +-2 0, none 32
+check, new map leave-one-out (own label hidden): n 39: at 0 2, -1 0, +1 3, +-2 1, none 33
+join_check --check-bound: PASS (steered=False) share0=0.175 (null p95 0.075) share+-1=0.025 (bound 0.150) -> benchmark-tx/txeng4/5/maps/f152r_passZ.tsv.joincheck.json
+f152r_passZ: PASS, failed lines ['f152r_L02']
+wrote benchmark-tx/txeng4/5/maps/SHIFT-CHECKS.md
+rc=0

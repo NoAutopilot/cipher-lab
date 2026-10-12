@@ -1,0 +1,63 @@
+{
+ "b1": true,
+ "b2": true,
+ "b2_bound": 0.13,
+ "b3": true,
+ "draws": 20,
+ "inputs_sha256": {
+  "benchmark-tx/outputs/birago1572-f152r/passA.tsv": "9d50678c913f8d35010a496cdd75fbcf6d69bd18d05ec8237890904fcca7d3b0",
+  "benchmark-tx/txeng4/5/knn/knn_top1.tsv": "7471d279ad65dc6f265f0485c6a25528a7dd146fcb54395afec6dd2caa590e2d"
+ },
+ "lines": {
+  "f152r_L01": {
+   "counts": {
+    "0": 3,
+    "none": 4
+   },
+   "placed": 7,
+   "verdict": "pass"
+  },
+  "f152r_L02": {
+   "counts": {
+    "-1": 1,
+    "0": 18,
+    "none": 9
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f152r_L03": {
+   "counts": {
+    "0": 24,
+    "none": 7
+   },
+   "placed": 31,
+   "verdict": "pass"
+  },
+  "f152r_L04": {
+   "counts": {
+    "+1": 1,
+    "-1": 1,
+    "0": 8,
+    "none": 9
+   },
+   "placed": 19,
+   "verdict": "pass"
+  }
+ },
+ "map_sha256": "24f36615f3037bef746d0ec2812d5dd9ed3ee7e62e8a1a215a7db3fde44c1b62",
+ "n": 85,
+ "overall": {
+  "+1": 1,
+  "-1": 2,
+  "0": 53,
+  "none": 29
+ },
+ "p95_0": 0.05941176470588236,
+ "p95_pm1": 0.13,
+ "seed": 20261012,
+ "share0": 0.6235294117647059,
+ "sharepm1": 0.03529411764705882,
+ "utc": "2026-10-12T01:40:11Z",
+ "verdict": "PASS"
+}
