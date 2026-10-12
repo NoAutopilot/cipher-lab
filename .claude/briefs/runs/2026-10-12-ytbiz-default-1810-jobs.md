@@ -73,3 +73,38 @@ PASSes and is not void; else M);
 (4) gate, then the reading per leaf (what the runs say, M/S as earned). Stop before a unit that would cross 80% of the cap (8 calls + 1 at ~0.7 ~
 6.3 plus the Opus floor). Update Remaining gaps / Escalation, `tools/gaps_check.py sachsstaatsarchiv-manteuffel-1712`. A reading goes to a
 verifier as a one-line next step (no AUDIT edits, no status.json edits). Report what was found and where it was not found; do not classify novelty.
+
+## Wave 2 (18:5x UTC 12 Oct)
+Wave 1 results (get_session): THUR-94 4.35 D- (vol 6 p.576 Bamfylde Second Cipher 110 cells, 58 agree with Tomokiyo, 6 conflicts logged; vol 4
+leaves not done, IA djvu 500); PISA-MERGE 2.68 D (L05 p30 deletion PASS committed, f.244r C 295 / M 114 / U 17; L06/L08 FAIL); MANT-POOLU 8.62 D-
+(six leaves pooled, 94 tokens, fr18 gate (b) VOID by the shuffled-target control; M 92 U 2). IA answers again (18:5x UTC). Gallica/googleapis not
+re-probed (no job needs them). Per-unit Opus vision rate on IA leaves is ~1.2 (THUR-94), used below.
+Hosts this wave: archive.org ("IA", THUR-94B only, <= 15 requests, >= 1.5 s, take/release lines). MANT-NAMES and V-PISA-M5 are disk only.
+
+### THUR-94B (Opus, cap 3.5, box 50 min): thurloe-printed, the vol 4 leaves THUR-94 could not reach
+NOTES.md "## THUR-94" and "## Remaining gaps (THUR-94, 12 Oct 2026)". Intake gate as THUR-94 (18:20 UTC, exit 0). THUR-94's units 2 and 4,
+unchanged: (2) vol 4 Bamfylde ll.15913 and 18992, one leaf each (collectionofstat04thur), strip crops with `tools/iiif_lines.py --image <leaf>
+--out <dir>` (pasted), every 94/25/51 with its printed gloss; (4) vol 4 physician l.46866, one leaf, if the cap allows (units at ~1.2 each; stop
+before a unit that would cross 80% of the cap). Same key rule (two printed glosses; conflicts to HYPOTHESES.md with both witnesses), `--check` on
+any script touched, crops committed. On an IA 5xx: one retry after a pause, then stop the host and report. Update Remaining gaps / Escalation,
+`tools/gaps_check.py thurloe-printed`. Report what was found and where it was not found; do not classify novelty.
+
+### MANT-NAMES (Opus, cap 2, box 45 min): sachsstaatsarchiv-manteuffel-1712, cross-leaf name-code consistency gate, disk only
+NOTES.md "## MANT-POOLU" Next line (~4520): a word-level gate for the name-initial design -- 13 alone x5, 103.34.26 'le pr' across 0483/0491,
+Stettin as 57.28.35.59 / 51.28 / 390 across 0088/0247. Intake gate as MANT-POOLU (exit 0). CPU only. Units: (1) PREREG-MANT-NAMES.md pushed in its
+own commit and checked on origin/main BEFORE any score: the statistic (cross-leaf agreement of a name code's decoded value with the clear-text
+names on the same or the neighbouring leaf, or with key.tsv's glossed name codes from the glossed leaves), the null (a control that CAN differ
+from the target on this statistic: e.g. code values permuted within the name-code range, or leaf labels shuffled -- write in the PREREG why the
+null can vary on the statistic, CLAUDE.md rule 3's "control that cannot vary" paragraph), and a power check at the pool's N on a glossed-leaf
+subsample with known answers; if the power check fails, stop and log "non-test at this N"; (2) score; (3) report per code. Grades rise from M only
+on a PASS; key.tsv unchanged unless two independent glossed witnesses support a value (rule 4). Update Remaining gaps / Escalation,
+`tools/gaps_check.py sachsstaatsarchiv-manteuffel-1712`. Report what was found and where it was not found; do not classify novelty.
+
+### V-PISA-M5 (Opus, verifier, cap 1.5, box 35 min): fr16045-pisany-rome-1585, check of the PISA-MERGE L05 p30 deletion
+You are a verifier, not PISA-MERGE's session or any solver on this folder. Pattern: "### V-PISA244" in .claude/briefs/runs/2026-10-12-acct1-
+default-0640-jobs.md and AUDIT.md "AUDIT 6". Read NOTES.md "## PISA-MERGE" and its outputs. Check: (a) PREREG dce1ec486 precedes the score commit
+ec60a958c on origin/main; (b) re-run the re-score and every `--check`, confirm the gate numbers (control 5/5, 0.7140 -> 0.7172, null share 0.005)
+and that the FAILed groups (L06 p27-30, L08 p25-26) and the crossed-p non-test were not committed; (c) eye-check the L05 tile pair on disk (at most
+one vision call) that the deleted p30 sits on the same sign as p29; (d) recount the f.244r C/M/U from the committed outputs. Write AUDIT.md "## AUDIT
+7 (V-PISA-M5 ...)": confirmed / sent back, with numbers; N-class and depth unchanged unless the recount changes depth (then `tools/depth_check.py`).
+No novelty search (class unchanged). Do not decode beyond re-running the committed scripts.
