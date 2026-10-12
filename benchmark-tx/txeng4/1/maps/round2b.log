@@ -1,0 +1,3 @@
+count-tol 0.1: skipped 0 line(s): none
+map: 229 rows, ops {'1:1': 92, '2:1': 52, 'unsure': 17, '1:2': 68} -> benchmark-tx/txeng4/1/maps/map_r2b.tsv
+tokens-out: 74 1:1 tokens -> benchmark-tx/txeng4/1/maps/tokens_r2b.tsv; check-failed lines excluded: none

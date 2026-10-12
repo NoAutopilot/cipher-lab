@@ -1,0 +1,6 @@
+join_check: FAIL n=140 share0=0.200 (null p95 0.087) share+-1=0.150 (bound 0.208) -> benchmark-tx/txeng4/1/maps/map_r2.tsv.joincheck.json
+  f102v_L18: pass placed=26 {'+1': 4, 'none': 14, '0': 6, '+-2': 1, '-1': 1}
+  f102v_L29: pass placed=29 {'none': 13, '+1': 5, '0': 7, '+-2': 2, '-1': 2}
+  f102v_L30: pass placed=23 {'none': 12, '+1': 2, '-1': 2, '+-2': 4, '0': 3}
+  f102v_L34: fail placed=34 {'none': 25, '0': 3, '-1': 3, '+-2': 2, '+1': 1}
+  f102v_L35: pass placed=28 {'none': 18, '0': 9, '+1': 1}

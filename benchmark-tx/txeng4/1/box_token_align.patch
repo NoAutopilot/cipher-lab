@@ -1,0 +1,65 @@
+--- tools/box_token_align.py	2026-10-12 01:16:54.456211052 +0000
++++ /tmp/claude-0/-home-user-cipher-lab/418d81d6-5d23-5452-a42d-0fa425085382/scratchpad/tools/box_token_align.py	2026-10-12 01:32:52.008215151 +0000
+@@ -54,6 +54,13 @@
+ 1:2 one row per token with the same sid; skiptok one row with sid empty. `labels` is the box's weight-1 labels joined
+ by '|'. Skipped boxes are not map rows (every row has a position); --lines-out lists them per line.
+ 
++TXE4-1 options (12 Oct 2026, benchmark-tx/txeng4/1/box_token_align.patch; test test_box_token_align_patch.py beside it):
++  --keep-pos KEEP.tsv   rows line, pos: only at these read positions does a 1:1 box become a token (--tokens-out)
++  --tokens-out TOK.tsv  sid, code, page, line, pos for the kept 1:1 boxes (code = the read sign at that position); a
++                        line that fails the --check-bound shift check contributes no tokens and is listed
++  --count-tol 0.10      skip and list any line whose box count and read token count differ by more than this share
++                        of the token count (the line's rows leave the map before any check or token is written)
++
+ Offline test: tools/tests/test_box_token_align.py (synthetic L06-shaped line; no network, no model, no truth).
+ """
+ import argparse
+@@ -344,12 +351,26 @@
+     ap.add_argument('--check-bound', action='store_true',
+                      help='run tools/join_check.py on the map just written (requires --check-labels); writes the '
+                           '.joincheck.json sidecar and exits 0 PASS, 2 FAIL, 3 UNCHECKABLE')
++    ap.add_argument('--keep-pos', help='line, pos rows: only at these read positions does a 1:1 box become a token')
++    ap.add_argument('--tokens-out', help='sid, code, page, line, pos for the kept 1:1 boxes; a line failing --check-bound '
++                                         'contributes no tokens and is listed')
++    ap.add_argument('--count-tol', type=float, help='skip and list any line whose box count and read token count differ '
++                                                    'by more than this share of the token count')
+     ap.add_argument('--out', required=True); ap.add_argument('--lines-out')
+     a = ap.parse_args(argv)
+     read = rd(a.read)
+     alt = [r for p in a.read_alt for r in rd(p)]
+     rows, per = build_map(rd(a.signs), read, read_labels(a.topk, a.tile_labels), read_status(a.status), a.lines,
+                           a.lam, a.neutral, not a.no_loo, alt)
++    if a.count_tol is not None:
++        dropped = [(line, d['boxes'], d['tokens']) for line, d in sorted(per.items())
++                   if abs(d['boxes'] - d['tokens']) > a.count_tol * max(d['tokens'], 1)]
++        drop = {line for line, _, _ in dropped}
++        rows = [r for r in rows if r['line'] not in drop]
++        for line in drop:
++            per.pop(line)
++        print(f"count-tol {a.count_tol}: skipped {len(dropped)} line(s): "
++              + (', '.join(f'{l} (boxes {nb}, tokens {nt})' for l, nb, nt in dropped) or 'none'))
+     old = read_old(a.old) if a.old else {}
+     for r in rows:
+         r['old_pos'] = old[r['sid']][1] if r['sid'] in old else ''
+@@ -376,6 +397,21 @@
+         print(f"join_check --check-bound: {result['verdict']} (steered={steered}) share0={result['share0']:.3f} "
+               f"(null p95 {result['p95_0']:.3f}) share+-1={result['sharepm1']:.3f} (bound {result['b2_bound']:.3f}) "
+               f"-> {sc}")
++        for line in sorted(result['lines']):
++            d = result['lines'][line]
++            print(f"  {line}: {d['verdict']} placed={d['placed']} {d['counts']}")
++    else:
++        result = None
++    if a.tokens_out:
++        keep = {(r['line'], str(int(r['pos']))) for r in rd(a.keep_pos)} if a.keep_pos else None
++        failed = sorted(l for l, d in (result or {'lines': {}})['lines'].items() if str(d['verdict']).lower().startswith('fail'))
++        sign_at = {(r['line'], str(r['pos'])): r['sign'] for r in read}
++        toks = [dict(sid=r['sid'], code=sign_at.get((r['line'], str(r['pos'])), ''), page=r['page'], line=r['line'], pos=r['pos'])
++                for r in rows if r['op'] == '1:1' and r['sid'] and r['line'] not in failed
++                and (keep is None or (r['line'], str(r['pos'])) in keep)]
++        wr(a.tokens_out, ['sid', 'code', 'page', 'line', 'pos'], toks)
++        print(f"tokens-out: {len(toks)} 1:1 tokens -> {a.tokens_out}; check-failed lines excluded: {failed or 'none'}")
++    if result is not None:
+         sys.exit(join_check.EXIT[result['verdict']])
+     return rows
+ 

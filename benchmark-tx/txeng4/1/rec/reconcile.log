@@ -1,0 +1,5 @@
+/home/user/cipher-lab/tools/reconcile_passes.py /home/user/cipher-lab/benchmark-tx/txeng4/1/passA_long.tsv /home/user/cipher-lab/benchmark-tx/txeng4/1/passB_long.tsv --method nw --out-dir /home/user/cipher-lab/benchmark-tx/txeng4/1/rec
+lines 37  signs A 1819  B 1724  agree 1440/1859 = 77.5%  (nw)
+disagreement columns 419; draft signs 1859
+agreed-H 1435  agreed-uncertain 5  disagree 419
+wrote /home/user/cipher-lab/benchmark-tx/txeng4/1/rec/disagreements.tsv, /home/user/cipher-lab/benchmark-tx/txeng4/1/rec/uncertain.tsv, /home/user/cipher-lab/benchmark-tx/txeng4/1/rec/ciphertext_draft.tsv, /home/user/cipher-lab/benchmark-tx/txeng4/1/rec/agreement.tsv

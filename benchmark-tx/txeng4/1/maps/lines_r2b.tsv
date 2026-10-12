@@ -1,0 +1,5 @@
+line	boxes	tokens	skipped	ops	moved	moved_sids	lost_11	lost_sids
+f102v_L18	42	39		1:1:24 1:2:6 2:1:12 unsure:3	0		0	
+f102v_L29	53	56		1:1:24 1:2:20 2:1:14 unsure:5	0		0	
+f102v_L30	54	57		1:1:17 1:2:24 2:1:18 unsure:7	0		0	
+f102v_L35	48	51	f102v_L35_s1_01_008|f102v_L35_s2_01_025	1:1:27 1:2:18 2:1:8 unsure:2	0		0	

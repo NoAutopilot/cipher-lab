@@ -1,0 +1,71 @@
+{
+ "b1": true,
+ "b2": true,
+ "b2_bound": 0.22641509433962265,
+ "b3": true,
+ "draws": 20,
+ "inputs_sha256": {
+  "benchmark-tx/txeng4/1/maps/check_r2.tsv": "f3af56c7010357e9b71c356e8f1d48cd6b337518b69ff858316b3122f230e134",
+  "benchmark-tx/txeng4/1/passA_long.tsv": "21ce18be61add2aafd1bffb76cb07c9964cc7a3de34102801d15b406aebd6a1c"
+ },
+ "lines": {
+  "f102v_L18": {
+   "counts": {
+    "+-2": 1,
+    "+1": 4,
+    "-1": 1,
+    "0": 6,
+    "none": 14
+   },
+   "placed": 26,
+   "verdict": "pass"
+  },
+  "f102v_L29": {
+   "counts": {
+    "+-2": 2,
+    "+1": 5,
+    "-1": 2,
+    "0": 7,
+    "none": 13
+   },
+   "placed": 29,
+   "verdict": "pass"
+  },
+  "f102v_L30": {
+   "counts": {
+    "+-2": 4,
+    "+1": 2,
+    "-1": 2,
+    "0": 3,
+    "none": 12
+   },
+   "placed": 23,
+   "verdict": "pass"
+  },
+  "f102v_L35": {
+   "counts": {
+    "+1": 1,
+    "0": 9,
+    "none": 18
+   },
+   "placed": 28,
+   "verdict": "pass"
+  }
+ },
+ "map_sha256": "b6da0d9bf37e33ab891a23e51327598ad3bd07108504ecefc138861106500f93",
+ "n": 106,
+ "overall": {
+  "+-2": 7,
+  "+1": 12,
+  "-1": 5,
+  "0": 25,
+  "none": 57
+ },
+ "p95_0": 0.10471698113207549,
+ "p95_pm1": 0.22641509433962265,
+ "seed": 20261012,
+ "share0": 0.2358490566037736,
+ "sharepm1": 0.16037735849056603,
+ "utc": "2026-10-12T01:34:33Z",
+ "verdict": "PASS"
+}

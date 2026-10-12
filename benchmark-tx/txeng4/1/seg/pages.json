@@ -1,0 +1,372 @@
+{
+ "f102v_L01_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L01_s1.jpg",
+  "box": null,
+  "median_h": 66.5
+ },
+ "f102v_L01_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L01_s2.jpg",
+  "box": null,
+  "median_h": 65.0
+ },
+ "f102v_L02_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L02_s1.jpg",
+  "box": null,
+  "median_h": 63.0
+ },
+ "f102v_L02_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L02_s2.jpg",
+  "box": null,
+  "median_h": 48.0
+ },
+ "f102v_L03_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L03_s1.jpg",
+  "box": null,
+  "median_h": 63.5
+ },
+ "f102v_L03_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L03_s2.jpg",
+  "box": null,
+  "median_h": 58.0
+ },
+ "f102v_L04_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L04_s1.jpg",
+  "box": null,
+  "median_h": 67.0
+ },
+ "f102v_L04_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L04_s2.jpg",
+  "box": null,
+  "median_h": 52.0
+ },
+ "f102v_L05_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L05_s1.jpg",
+  "box": null,
+  "median_h": 63.0
+ },
+ "f102v_L05_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L05_s2.jpg",
+  "box": null,
+  "median_h": 55.0
+ },
+ "f102v_L06_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L06_s1.jpg",
+  "box": null,
+  "median_h": 66.0
+ },
+ "f102v_L06_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L06_s2.jpg",
+  "box": null,
+  "median_h": 64.0
+ },
+ "f102v_L07_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L07_s1.jpg",
+  "box": null,
+  "median_h": 58.0
+ },
+ "f102v_L07_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L07_s2.jpg",
+  "box": null,
+  "median_h": 44.5
+ },
+ "f102v_L08_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L08_s1.jpg",
+  "box": null,
+  "median_h": 58.0
+ },
+ "f102v_L08_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L08_s2.jpg",
+  "box": null,
+  "median_h": 58.0
+ },
+ "f102v_L09_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L09_s1.jpg",
+  "box": null,
+  "median_h": 51.0
+ },
+ "f102v_L09_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L09_s2.jpg",
+  "box": null,
+  "median_h": 56.0
+ },
+ "f102v_L10_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L10_s1.jpg",
+  "box": null,
+  "median_h": 55.0
+ },
+ "f102v_L10_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L10_s2.jpg",
+  "box": null,
+  "median_h": 51.0
+ },
+ "f102v_L11_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L11_s1.jpg",
+  "box": null,
+  "median_h": 67.5
+ },
+ "f102v_L11_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L11_s2.jpg",
+  "box": null,
+  "median_h": 55.0
+ },
+ "f102v_L12_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L12_s1.jpg",
+  "box": null,
+  "median_h": 59.0
+ },
+ "f102v_L12_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L12_s2.jpg",
+  "box": null,
+  "median_h": 56.0
+ },
+ "f102v_L13_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L13_s1.jpg",
+  "box": null,
+  "median_h": 57.0
+ },
+ "f102v_L13_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L13_s2.jpg",
+  "box": null,
+  "median_h": 61.0
+ },
+ "f102v_L14_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L14_s1.jpg",
+  "box": null,
+  "median_h": 67.0
+ },
+ "f102v_L14_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L14_s2.jpg",
+  "box": null,
+  "median_h": 65.5
+ },
+ "f102v_L15_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L15_s1.jpg",
+  "box": null,
+  "median_h": 61.0
+ },
+ "f102v_L15_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L15_s2.jpg",
+  "box": null,
+  "median_h": 57.0
+ },
+ "f102v_L16_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L16_s1.jpg",
+  "box": null,
+  "median_h": 66.0
+ },
+ "f102v_L16_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L16_s2.jpg",
+  "box": null,
+  "median_h": 59.0
+ },
+ "f102v_L17_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L17_s1.jpg",
+  "box": null,
+  "median_h": 58.0
+ },
+ "f102v_L17_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L17_s2.jpg",
+  "box": null,
+  "median_h": 66.0
+ },
+ "f102v_L18_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L18_s1.jpg",
+  "box": null,
+  "median_h": 52.0
+ },
+ "f102v_L18_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L18_s2.jpg",
+  "box": null,
+  "median_h": 66.5
+ },
+ "f102v_L19_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L19_s1.jpg",
+  "box": null,
+  "median_h": 55.0
+ },
+ "f102v_L19_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L19_s2.jpg",
+  "box": null,
+  "median_h": 56.0
+ },
+ "f102v_L20_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L20_s1.jpg",
+  "box": null,
+  "median_h": 54.0
+ },
+ "f102v_L20_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L20_s2.jpg",
+  "box": null,
+  "median_h": 63.0
+ },
+ "f102v_L21_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L21_s1.jpg",
+  "box": null,
+  "median_h": 61.0
+ },
+ "f102v_L21_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L21_s2.jpg",
+  "box": null,
+  "median_h": 72.0
+ },
+ "f102v_L22_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L22_s1.jpg",
+  "box": null,
+  "median_h": 57.0
+ },
+ "f102v_L22_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L22_s2.jpg",
+  "box": null,
+  "median_h": 74.5
+ },
+ "f102v_L23_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L23_s1.jpg",
+  "box": null,
+  "median_h": 68.0
+ },
+ "f102v_L23_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L23_s2.jpg",
+  "box": null,
+  "median_h": 37.0
+ },
+ "f102v_L24_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L24_s1.jpg",
+  "box": null,
+  "median_h": 63.0
+ },
+ "f102v_L24_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L24_s2.jpg",
+  "box": null,
+  "median_h": 47.0
+ },
+ "f102v_L25_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L25_s1.jpg",
+  "box": null,
+  "median_h": 61.0
+ },
+ "f102v_L25_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L25_s2.jpg",
+  "box": null,
+  "median_h": 26.0
+ },
+ "f102v_L26_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L26_s1.jpg",
+  "box": null,
+  "median_h": 58.0
+ },
+ "f102v_L26_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L26_s2.jpg",
+  "box": null,
+  "median_h": 43.0
+ },
+ "f102v_L27_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L27_s1.jpg",
+  "box": null,
+  "median_h": 67.0
+ },
+ "f102v_L27_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L27_s2.jpg",
+  "box": null,
+  "median_h": 47.5
+ },
+ "f102v_L28_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L28_s1.jpg",
+  "box": null,
+  "median_h": 61.0
+ },
+ "f102v_L28_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L28_s2.jpg",
+  "box": null,
+  "median_h": 53.5
+ },
+ "f102v_L29_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L29_s1.jpg",
+  "box": null,
+  "median_h": 58.0
+ },
+ "f102v_L29_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L29_s2.jpg",
+  "box": null,
+  "median_h": 30.0
+ },
+ "f102v_L30_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L30_s1.jpg",
+  "box": null,
+  "median_h": 55.0
+ },
+ "f102v_L30_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L30_s2.jpg",
+  "box": null,
+  "median_h": 26.5
+ },
+ "f102v_L31_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L31_s1.jpg",
+  "box": null,
+  "median_h": 31.0
+ },
+ "f102v_L31_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L31_s2.jpg",
+  "box": null,
+  "median_h": 27.0
+ },
+ "f102v_L32_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L32_s1.jpg",
+  "box": null,
+  "median_h": 58.0
+ },
+ "f102v_L32_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L32_s2.jpg",
+  "box": null,
+  "median_h": 23.5
+ },
+ "f102v_L33_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L33_s1.jpg",
+  "box": null,
+  "median_h": 57.5
+ },
+ "f102v_L33_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L33_s2.jpg",
+  "box": null,
+  "median_h": 32.0
+ },
+ "f102v_L34_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L34_s1.jpg",
+  "box": null,
+  "median_h": 63.5
+ },
+ "f102v_L34_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L34_s2.jpg",
+  "box": null,
+  "median_h": 37.0
+ },
+ "f102v_L35_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L35_s1.jpg",
+  "box": null,
+  "median_h": 63.0
+ },
+ "f102v_L35_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L35_s2.jpg",
+  "box": null,
+  "median_h": 28.0
+ },
+ "f102v_L36_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L36_s1.jpg",
+  "box": null,
+  "median_h": 68.0
+ },
+ "f102v_L36_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L36_s2.jpg",
+  "box": null,
+  "median_h": 32.0
+ },
+ "f102v_L37_s1": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L37_s1.jpg",
+  "box": null,
+  "median_h": 65.5
+ },
+ "f102v_L37_s2": {
+  "image": "/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/c106_f102v_L37_s2.jpg",
+  "box": null,
+  "median_h": 51.0
+ }
+}

@@ -1,0 +1,1860 @@
+line	position	sign	confidence	alt	why
+f102v_L01	1	3	M		agree-flagged
+f102v_L01	2	o	H		agree
+f102v_L01	3	o	H		agree
+f102v_L01	4	m	H		agree
+f102v_L01	5	:	H		agree
+f102v_L01	6	:	H		agree
+f102v_L01	7	{curl}	H		agree
+f102v_L01	8	n	H		agree
+f102v_L01	9	x	H		agree
+f102v_L01	10	m	H		agree
+f102v_L01	11	d	H		agree
+f102v_L01	12	V	H		agree
+f102v_L01	13	y	H		agree
+f102v_L01	14	o	M	B:-	gap
+f102v_L01	15	m	H		agree
+f102v_L01	16	#	H		agree
+f102v_L01	17	3	H		agree
+f102v_L01	18	d	H		agree
+f102v_L01	19	g	H		agree
+f102v_L01	20	s	H		agree
+f102v_L01	21	p	H		agree
+f102v_L01	22	4	H		agree
+f102v_L01	23	m	H		agree
+f102v_L01	24	tz	H		agree
+f102v_L01	25	6	H		agree
+f102v_L01	26	@	H		agree
+f102v_L01	27	d	H		agree
+f102v_L01	28	m	H		agree
+f102v_L01	29	d	H		agree
+f102v_L01	30	3	H		agree
+f102v_L01	31	m	H		agree
+f102v_L01	32	f	M	B:-	gap
+f102v_L01	33	f	M	B:#	differ
+f102v_L01	34	p	H		agree
+f102v_L01	35	m	H		agree
+f102v_L01	36	p	H		agree
+f102v_L01	37	h	H		agree
+f102v_L01	38	m	H		agree
+f102v_L01	39	p	H		agree
+f102v_L01	40	#	H		agree
+f102v_L01	41	S	H		agree
+f102v_L01	42	tz	H		agree
+f102v_L01	43	m	H		agree
+f102v_L01	44	V	H		agree
+f102v_L01	45	{omega}	H		agree
+f102v_L01	46	#	H		agree
+f102v_L01	47	2	H		agree
+f102v_L01	48	m	H		agree
+f102v_L02	1	3	H		agree
+f102v_L02	2	tz	H		agree
+f102v_L02	3	x	H		agree
+f102v_L02	4	m	H		agree
+f102v_L02	5	p	H		agree
+f102v_L02	6	R	M	B:r	differ
+f102v_L02	7	R	H		agree
+f102v_L02	8	d	H		agree
+f102v_L02	9	o	H		agree
+f102v_L02	10	o	H		agree
+f102v_L02	11	x	H		agree
+f102v_L02	12	a	H		agree
+f102v_L02	13	tz	H		agree
+f102v_L02	14	m	H		agree
+f102v_L02	15	V	H		agree
+f102v_L02	16	m	H		agree
+f102v_L02	17	y	H		agree
+f102v_L02	18	m	H		agree
+f102v_L02	19	o	H		agree
+f102v_L02	20	o	H		agree
+f102v_L02	21	m	H		agree
+f102v_L02	22	@	H		agree
+f102v_L02	23	S	M	B:s	differ
+f102v_L02	24	z	H		agree
+f102v_L02	25	tz	M	B:-	gap
+f102v_L02	26	P	M	B:-	gap
+f102v_L02	27	3	M	B:-	gap
+f102v_L02	28	S	M	B:-	gap
+f102v_L02	29	tz	H		agree
+f102v_L02	30	P	H		agree
+f102v_L02	31	2	M	B:e	differ
+f102v_L02	32	S	M	B:s	differ
+f102v_L02	33	tz	H		agree
+f102v_L02	34	x	H		agree
+f102v_L02	35	R	H		agree
+f102v_L02	36	S	M	B:s	differ
+f102v_L02	37	p	H		agree
+f102v_L02	38	#	H		agree
+f102v_L02	39	a	H		agree
+f102v_L02	40	:	H		agree
+f102v_L02	41	:	H		agree
+f102v_L02	42	m	H		agree
+f102v_L02	43	L	H		agree
+f102v_L02	44	d	H		agree
+f102v_L02	45	z	H		agree
+f102v_L02	46	o	H		agree
+f102v_L02	47	o	H		agree
+f102v_L02	48	tz	H		agree
+f102v_L02	49	o	H		agree
+f102v_L02	50	o	H		agree
+f102v_L02	51	m	H		agree
+f102v_L02	52	g	H		agree
+f102v_L02	53	S	M	B:s	differ
+f102v_L03	1	tz	H		agree
+f102v_L03	2	6	H		agree
+f102v_L03	3	@	H		agree
+f102v_L03	4	2	M	B:7	differ
+f102v_L03	5	m	H		agree
+f102v_L03	6	p	H		agree
+f102v_L03	7	3	H		agree
+f102v_L03	8	tz	H		agree
+f102v_L03	9	3	M	B:-	gap
+f102v_L03	10	d	H		agree
+f102v_L03	11	d	H		agree
+f102v_L03	12	tz	H		agree
+f102v_L03	13	m	H		agree
+f102v_L03	14	p	H		agree
+f102v_L03	15	#	H		agree
+f102v_L03	16	R	H		agree
+f102v_L03	17	d	H		agree
+f102v_L03	18	o	H		agree
+f102v_L03	19	o	H		agree
+f102v_L03	20	#	H		agree
+f102v_L03	21	S	M	B:s	differ
+f102v_L03	22	o	H		agree
+f102v_L03	23	o	H		agree
+f102v_L03	24	#	H		agree
+f102v_L03	25	S	M	B:s	differ
+f102v_L03	26	p	H		agree
+f102v_L03	27	#	M	B:-	gap
+f102v_L03	28	S	M	B:-	gap
+f102v_L03	29	4	M	B:-	gap
+f102v_L03	30	#	H		agree
+f102v_L03	31	S	M	B:s	differ
+f102v_L03	32	o	H		agree
+f102v_L03	33	o	H		agree
+f102v_L03	34	g	M	B:e	differ
+f102v_L03	35	S	M	B:s	differ
+f102v_L03	36	tz	H		agree
+f102v_L03	37	:	M	B:-	gap
+f102v_L03	38	:	H		agree
+f102v_L03	39	#	H		agree
+f102v_L03	40	3	H		agree
+f102v_L03	41	m	H		agree
+f102v_L03	42	x	H		agree
+f102v_L03	43	S	M	B:s	differ
+f102v_L03	44	V	H		agree
+f102v_L03	45	4	M	B:+	differ
+f102v_L03	46	6	H		agree
+f102v_L03	47	d	H		agree
+f102v_L03	48	tz	H		agree
+f102v_L03	49	x	H		agree
+f102v_L03	50	c	M	A:-	gap
+f102v_L03	51	2	H		agree
+f102v_L03	52	S	M	B:s	differ
+f102v_L03	53	tz	H		agree
+f102v_L03	54	x	H		agree
+f102v_L04	1	y	M	B:V	differ
+f102v_L04	2	y	H		agree
+f102v_L04	3	d	H		agree
+f102v_L04	4	p	H		agree
+f102v_L04	5	o	H		agree
+f102v_L04	6	o	H		agree
+f102v_L04	7	m	H		agree
+f102v_L04	8	d	H		agree
+f102v_L04	9	tz	H		agree
+f102v_L04	10	#	H		agree
+f102v_L04	11	S	M	B:s	differ
+f102v_L04	12	@	H		agree
+f102v_L04	13	m	M	B:-	gap
+f102v_L04	14	x	H		agree
+f102v_L04	15	d	H		agree
+f102v_L04	16	z	H		agree
+f102v_L04	17	tz	H		agree
+f102v_L04	18	q	M	A:-	gap
+f102v_L04	19	@	H		agree
+f102v_L04	20	m	H		agree
+f102v_L04	21	V	H		agree
+f102v_L04	22	d	H		agree
+f102v_L04	23	d	H		agree
+f102v_L04	24	p	H		agree
+f102v_L04	25	R	M	B:n	differ
+f102v_L04	26	tz	H		agree
+f102v_L04	27	m	H		agree
+f102v_L04	28	d	H		agree
+f102v_L04	29	:	H		agree
+f102v_L04	30	:	H		agree
+f102v_L04	31	S	M	B:s	differ
+f102v_L04	32	z	H		agree
+f102v_L04	33	S	H		agree
+f102v_L04	34	V	H		agree
+f102v_L04	35	m	H		agree
+f102v_L04	36	o	H		agree
+f102v_L04	37	o	H		agree
+f102v_L04	38	g	H		agree
+f102v_L04	39	m	H		agree
+f102v_L04	40	2	H		agree
+f102v_L04	41	m	H		agree
+f102v_L04	42	p	H		agree
+f102v_L04	43	#	H		agree
+f102v_L04	44	L	M	B:-	gap
+f102v_L04	45	o	M	B:to	differ
+f102v_L04	46	d	H		agree
+f102v_L04	47	d	H		agree
+f102v_L04	48	p	H		agree
+f102v_L04	49	R	H		agree
+f102v_L04	50	P	M		agree-flagged
+f102v_L04	51	o	H		agree
+f102v_L04	52	y	H		agree
+f102v_L05	1	m	H		agree
+f102v_L05	2	d	M	B:2	differ
+f102v_L05	3	c	M	B::	differ
+f102v_L05	4	l	H		agree
+f102v_L05	5	x	H		agree
+f102v_L05	6	S	M	B:s	differ
+f102v_L05	7	z	H		agree
+f102v_L05	8	k	H		agree
+f102v_L05	9	m	H		agree
+f102v_L05	10	g	H		agree
+f102v_L05	11	c	M	B::	differ
+f102v_L05	12	6	H		agree
+f102v_L05	13	o	H		agree
+f102v_L05	14	o	H		agree
+f102v_L05	15	x	H		agree
+f102v_L05	16	a	M	B:u	differ
+f102v_L05	17	tz	H		agree
+f102v_L05	18	S	M	B:s	differ
+f102v_L05	19	z	M	B:7	differ
+f102v_L05	20	S	M	B:s	differ
+f102v_L05	21	tz	H		agree
+f102v_L05	22	d	H		agree
+f102v_L05	23	k	H		agree
+f102v_L05	24	o	H		agree
+f102v_L05	25	o	H		agree
+f102v_L05	26	c	M	B:-	gap
+f102v_L05	27	S	M	B:-	gap
+f102v_L05	28	g	M	B:-	gap
+f102v_L05	29	3	M	B:-	gap
+f102v_L05	30	d	M	B:-	gap
+f102v_L05	31	p	M	B::	differ
+f102v_L05	32	4	M	B:s	differ
+f102v_L05	33	g	H		agree
+f102v_L05	34	3	H		agree
+f102v_L05	35	d	H		agree
+f102v_L05	36	p	H		agree
+f102v_L05	37	4	M	B:f	differ
+f102v_L05	38	m	H		agree
+f102v_L05	39	V	H		agree
+f102v_L05	40	m	H		agree
+f102v_L05	41	y	H		agree
+f102v_L05	42	S	M	B:s	differ
+f102v_L05	43	6	H		agree
+f102v_L05	44	k	H		agree
+f102v_L05	45	d	H		agree
+f102v_L05	46	p	H		agree
+f102v_L05	47	R	H		agree
+f102v_L05	48	tz	H		agree
+f102v_L05	49	S	M	B:s	differ
+f102v_L05	50	z	H		agree
+f102v_L05	51	c	M	B::	differ
+f102v_L05	52	S	M	B:s	differ
+f102v_L05	53	y	H		agree
+f102v_L05	54	c	M	B::	differ
+f102v_L05	55	6	H		agree
+f102v_L05	56	o	H		agree
+f102v_L05	57	o	H		agree
+f102v_L05	58	x	H		agree
+f102v_L05	59	tz	H		agree
+f102v_L05	60	m	H		agree
+f102v_L05	61	o	H		agree
+f102v_L05	62	o	H		agree
+f102v_L06	1	y	H		agree
+f102v_L06	2	m	H		agree
+f102v_L06	3	d	H		agree
+f102v_L06	4	g	M	B:l	differ
+f102v_L06	5	d	H		agree
+f102v_L06	6	tz	H		agree
+f102v_L06	7	x	H		agree
+f102v_L06	8	m	H		agree
+f102v_L06	9	d	H		agree
+f102v_L06	10	:	H		agree
+f102v_L06	11	:	H		agree
+f102v_L06	12	g	H		agree
+f102v_L06	13	tz	H		agree
+f102v_L06	14	c	M	B::	differ
+f102v_L06	15	#	H		agree
+f102v_L06	16	S	M	B:s	differ
+f102v_L06	17	d	H		agree
+f102v_L06	18	V	M	B:b	differ
+f102v_L06	19	P	H		agree
+f102v_L06	20	S	M	B:s	differ
+f102v_L06	21	tz	H		agree
+f102v_L06	22	x	H		agree
+f102v_L06	23	tz	H		agree
+f102v_L06	24	6	M	B:-	gap
+f102v_L06	25	:	M	B:-	gap
+f102v_L06	26	z	M	B:-	gap
+f102v_L06	27	P	M	B:-	gap
+f102v_L06	28	c	M	B:-	gap
+f102v_L06	29	6	H		agree
+f102v_L06	30	:	H		agree
+f102v_L06	31	z	H		agree
+f102v_L06	32	P	H		agree
+f102v_L06	33	3	H		agree
+f102v_L06	34	tz	H		agree
+f102v_L06	35	o	H		agree
+f102v_L06	36	o	H		agree
+f102v_L06	37	m	H		agree
+f102v_L06	38	y	H		agree
+f102v_L06	39	x	H		agree
+f102v_L06	40	tz	H		agree
+f102v_L06	41	#	H		agree
+f102v_L06	42	m	H		agree
+f102v_L06	43	3	H		agree
+f102v_L06	44	d	H		agree
+f102v_L06	45	4	H		agree
+f102v_L06	46	6	H		agree
+f102v_L06	47	tz	H		agree
+f102v_L06	48	V	H		agree
+f102v_L06	49	tz	H		agree
+f102v_L06	50	d	H		agree
+f102v_L06	51	p	H		agree
+f102v_L06	52	d	H		agree
+f102v_L06	53	{ff}	M	B:{fff}	differ
+f102v_L07	1	m	H		agree
+f102v_L07	2	p	H		agree
+f102v_L07	3	#	H		agree
+f102v_L07	4	f	H		agree
+f102v_L07	5	m	H		agree
+f102v_L07	6	V	M	A:-	gap
+f102v_L07	7	y	M	B:m	differ
+f102v_L07	8	y	H		agree
+f102v_L07	9	m	H		agree
+f102v_L07	10	d	H		agree
+f102v_L07	11	g	M	B:z	differ
+f102v_L07	12	6	H		agree
+f102v_L07	13	S	M	B:s	differ
+f102v_L07	14	4	M	B:7	differ
+f102v_L07	15	S	M	B:s	differ
+f102v_L07	16	p	H		agree
+f102v_L07	17	d	H		agree
+f102v_L07	18	@	H		agree
+f102v_L07	19	m	H		agree
+f102v_L07	20	z	H		agree
+f102v_L07	21	tz	H		agree
+f102v_L07	22	d	H		agree
+f102v_L07	23	d	H		agree
+f102v_L07	24	p	H		agree
+f102v_L07	25	R	H		agree
+f102v_L07	26	tz	H		agree
+f102v_L07	27	:	H		agree
+f102v_L07	28	:	H		agree
+f102v_L07	29	z	H		agree
+f102v_L07	30	S	M	B:-	gap
+f102v_L07	31	:	M	B:-	gap
+f102v_L07	32	:	M	B:-	gap
+f102v_L07	33	x	M	B:-	gap
+f102v_L07	34	S	M	B:s	differ
+f102v_L07	35	4	H		agree
+f102v_L07	36	6	H		agree
+f102v_L07	37	m	H		agree
+f102v_L07	38	y	H		agree
+f102v_L07	39	m	H		agree
+f102v_L07	40	@	H		agree
+f102v_L07	41	S	M	B:s	differ
+f102v_L07	42	:	H		agree
+f102v_L07	43	:	H		agree
+f102v_L07	44	m	H		agree
+f102v_L07	45	x	H		agree
+f102v_L07	46	S	M	B:s	differ
+f102v_L07	47	p	M	B:f	differ
+f102v_L07	48	p	H		agree
+f102v_L07	49	S	M	B:s	differ
+f102v_L07	50	tz	H		agree
+f102v_L07	51	g	H		agree
+f102v_L07	52	m	H		agree
+f102v_L07	53	x	H		agree
+f102v_L07	54	S	M	B:s	differ
+f102v_L07	55	o	H		agree
+f102v_L07	56	o	H		agree
+f102v_L07	57	c	H		agree
+f102v_L07	58	S	M	B:s	differ
+f102v_L07	59	tz	H		agree
+f102v_L07	60	d	H		agree
+f102v_L08	1	2	H		agree
+f102v_L08	2	m	H		agree
+f102v_L08	3	x	H		agree
+f102v_L08	4	2	H		agree
+f102v_L08	5	m	H		agree
+f102v_L08	6	x	H		agree
+f102v_L08	7	m	H		agree
+f102v_L08	8	#	H		agree
+f102v_L08	9	y	M	B:V	differ
+f102v_L08	10	y	H		agree
+f102v_L08	11	m	H		agree
+f102v_L08	12	x	H		agree
+f102v_L08	13	m	H		agree
+f102v_L08	14	d	H		agree
+f102v_L08	15	c	H		agree
+f102v_L08	16	S	M	B:s	differ
+f102v_L08	17	tz	H		agree
+f102v_L08	18	f	H		agree
+f102v_L08	19	V	H		agree
+f102v_L08	20	d	H		agree
+f102v_L08	21	6	H		agree
+f102v_L08	22	@	H		agree
+f102v_L08	23	m	H		agree
+f102v_L08	24	d	M	B:-	gap
+f102v_L08	25	#	M	B:-	gap
+f102v_L08	26	S	M	B:-	gap
+f102v_L08	27	p	M	B:-	gap
+f102v_L08	28	d	H		agree
+f102v_L08	29	#	H		agree
+f102v_L08	30	S	M	B:s	differ
+f102v_L08	31	p	H		agree
+f102v_L08	32	d	H		agree
+f102v_L08	33	:	M	B:-	gap
+f102v_L08	34	3	H		agree
+f102v_L08	35	S	M	B:s	differ
+f102v_L08	36	k	H		agree
+f102v_L08	37	o	H		agree
+f102v_L08	38	o	H		agree
+f102v_L08	39	tz	H		agree
+f102v_L08	40	x	H		agree
+f102v_L08	41	y	H		agree
+f102v_L08	42	y	M	B:o	differ
+f102v_L08	43	m	H		agree
+f102v_L08	44	d	H		agree
+f102v_L08	45	k	H		agree
+f102v_L08	46	tz	H		agree
+f102v_L08	47	:	H		agree
+f102v_L08	48	:	H		agree
+f102v_L08	49	#	H		agree
+f102v_L08	50	@	H		agree
+f102v_L08	51	g	H		agree
+f102v_L08	52	6	H		agree
+f102v_L08	53	S	M	B:s	differ
+f102v_L08	54	z	H		agree
+f102v_L08	55	S	M	B:-	gap
+f102v_L08	56	tz	M	B:s	differ
+f102v_L08	57	p	H		agree
+f102v_L08	58	d	H		agree
+f102v_L09	1	@	M	A:-	gap
+f102v_L09	2	m	H		agree
+f102v_L09	3	S	M	B:s	differ
+f102v_L09	4	o	H		agree
+f102v_L09	5	o	H		agree
+f102v_L09	6	c	H		agree
+f102v_L09	7	6	H		agree
+f102v_L09	8	o	H		agree
+f102v_L09	9	o	H		agree
+f102v_L09	10	d	H		agree
+f102v_L09	11	#	H		agree
+f102v_L09	12	d	H		agree
+f102v_L09	13	x	H		agree
+f102v_L09	14	#	H		agree
+f102v_L09	15	d	H		agree
+f102v_L09	16	o	H		agree
+f102v_L09	17	o	H		agree
+f102v_L09	18	c	H		agree
+f102v_L09	19	L	H		agree
+f102v_L09	20	y	M	B:V	differ
+f102v_L09	21	y	H		agree
+f102v_L09	22	m	H		agree
+f102v_L09	23	2	H		agree
+f102v_L09	24	d	H		agree
+f102v_L09	25	tz	H		agree
+f102v_L09	26	4	M	B:-	gap
+f102v_L09	27	p	H		agree
+f102v_L09	28	4	H		agree
+f102v_L09	29	d	M	B:-	gap
+f102v_L09	30	S	M	B:-	gap
+f102v_L09	31	o	M	B:-	gap
+f102v_L09	32	o	M	B:-	gap
+f102v_L09	33	d	H		agree
+f102v_L09	34	S	M	B:s	differ
+f102v_L09	35	o	H		agree
+f102v_L09	36	o	H		agree
+f102v_L09	37	d	H		agree
+f102v_L09	38	tz	H		agree
+f102v_L09	39	R	H		agree
+f102v_L09	40	d	H		agree
+f102v_L09	41	x	H		agree
+f102v_L09	42	#	H		agree
+f102v_L09	43	c	H		agree
+f102v_L09	44	y	H		agree
+f102v_L09	45	S	M	B:s	differ
+f102v_L09	46	g	M	B:q	differ
+f102v_L09	47	y	H		agree
+f102v_L09	48	y	H		agree
+f102v_L09	49	m	H		agree
+f102v_L09	50	2	H		agree
+f102v_L09	51	x	H		agree
+f102v_L09	52	m	H		agree
+f102v_L09	53	g	M	B:y	differ
+f102v_L09	54	S	M	B:s	differ
+f102v_L09	55	c	H		agree
+f102v_L09	56	g	M	B:s	differ
+f102v_L09	57	tz	H		agree
+f102v_L09	58	x	H		agree
+f102v_L09	59	o	H		agree
+f102v_L09	60	c	H		agree
+f102v_L10	1	L	H		agree
+f102v_L10	2	c	H		agree
+f102v_L10	3	S	M	B:s	differ
+f102v_L10	4	g	M	B:f	differ
+f102v_L10	5	k	H		agree
+f102v_L10	6	d	H		agree
+f102v_L10	7	p	H		agree
+f102v_L10	8	x	H		agree
+f102v_L10	9	d	H		agree
+f102v_L10	10	g	M	B:-	gap
+f102v_L10	11	tz	H		agree
+f102v_L10	12	#	H		agree
+f102v_L10	13	c	H		agree
+f102v_L10	14	o	H		agree
+f102v_L10	15	o	H		agree
+f102v_L10	16	f	M	B:V	differ
+f102v_L10	17	6	H		agree
+f102v_L10	18	tz	H		agree
+f102v_L10	19	m	H		agree
+f102v_L10	20	m	H		agree
+f102v_L10	21	#	H		agree
+f102v_L10	22	y	M	B:V	differ
+f102v_L10	23	y	H		agree
+f102v_L10	24	m	H		agree
+f102v_L10	25	x	H		agree
+f102v_L10	26	S	M	B:-	gap
+f102v_L10	27	o	M	B:-	gap
+f102v_L10	28	o	M	B:-	gap
+f102v_L10	29	6	M	B:-	gap
+f102v_L10	30	#	M	B::	differ
+f102v_L10	31	S	M	B:s	differ
+f102v_L10	32	o	H		agree
+f102v_L10	33	o	H		agree
+f102v_L10	34	6	H		agree
+f102v_L10	35	#	H		agree
+f102v_L10	36	g	H		agree
+f102v_L10	37	m	H		agree
+f102v_L10	38	d	H		agree
+f102v_L10	39	a	H		agree
+f102v_L10	40	m	H		agree
+f102v_L10	41	o	H		agree
+f102v_L10	42	o	H		agree
+f102v_L10	43	J	M	B:j	differ
+f102v_L10	44	m	H		agree
+f102v_L10	45	p	H		agree
+f102v_L10	46	#	H		agree
+f102v_L10	47	c	H		agree
+f102v_L10	48	c	H		agree
+f102v_L10	49	g	M	B:y	differ
+f102v_L10	50	m	H		agree
+f102v_L10	51	2	H		agree
+f102v_L10	52	tz	H		agree
+f102v_L10	53	m	H		agree
+f102v_L10	54	g	H		agree
+f102v_L10	55	m	H		agree
+f102v_L10	56	2	H		agree
+f102v_L10	57	m	H		agree
+f102v_L10	58	p	H		agree
+f102v_L10	59	R	H		agree
+f102v_L11	1	#	H		agree
+f102v_L11	2	d	H		agree
+f102v_L11	3	o	H		agree
+f102v_L11	4	o	H		agree
+f102v_L11	5	R	H		agree
+f102v_L11	6	m	H		agree
+f102v_L11	7	d	H		agree
+f102v_L11	8	:	H		agree
+f102v_L11	9	:	H		agree
+f102v_L11	10	y	H		agree
+f102v_L11	11	d	H		agree
+f102v_L11	12	d	H		agree
+f102v_L11	13	m	H		agree
+f102v_L11	14	d	H		agree
+f102v_L11	15	x	H		agree
+f102v_L11	16	d	H		agree
+f102v_L11	17	tz	H		agree
+f102v_L11	18	m	H		agree
+f102v_L11	19	p	H		agree
+f102v_L11	20	#	H		agree
+f102v_L11	21	S	M	B:s	differ
+f102v_L11	22	4	H		agree
+f102v_L11	23	6	H		agree
+f102v_L11	24	S	M	B:-	gap
+f102v_L11	25	p	M	B:-	gap
+f102v_L11	26	m	M	B:-	gap
+f102v_L11	27	z	M	B:s	differ
+f102v_L11	28	p	H		agree
+f102v_L11	29	m	H		agree
+f102v_L11	30	z	M	B:2	differ
+f102v_L11	31	d	H		agree
+f102v_L11	32	S	M	B:-	gap
+f102v_L11	33	c	H		agree
+f102v_L11	34	s	M	A:-	gap
+f102v_L11	35	g	M	B:f	differ
+f102v_L11	36	y	M	B:V	differ
+f102v_L11	37	y	H		agree
+f102v_L11	38	S	M	B:s	differ
+f102v_L11	39	g	H		agree
+f102v_L11	40	d	H		agree
+f102v_L11	41	g	H		agree
+f102v_L11	42	:	H		agree
+f102v_L11	43	:	H		agree
+f102v_L11	44	m	H		agree
+f102v_L11	45	m	H		agree
+f102v_L11	46	#	H		agree
+f102v_L11	47	c	H		agree
+f102v_L11	48	c	H		agree
+f102v_L11	49	o	H		agree
+f102v_L11	50	o	H		agree
+f102v_L11	51	tz	H		agree
+f102v_L11	52	x	H		agree
+f102v_L11	53	y	M	B:V	differ
+f102v_L11	54	y	H		agree
+f102v_L11	55	d	H		agree
+f102v_L11	56	p	H		agree
+f102v_L12	1	2	H		agree
+f102v_L12	2	m	H		agree
+f102v_L12	3	:	H		agree
+f102v_L12	4	:	H		agree
+f102v_L12	5	#	H		agree
+f102v_L12	6	m	H		agree
+f102v_L12	7	y	H		agree
+f102v_L12	8	y	H		agree
+f102v_L12	9	m	H		agree
+f102v_L12	10	c	H		agree
+f102v_L12	11	S	M	B:s	differ
+f102v_L12	12	g	M	B:f	differ
+f102v_L12	13	z	M	B:3	differ
+f102v_L12	14	d	H		agree
+f102v_L12	15	p	H		agree
+f102v_L12	16	S	M	B:s	differ
+f102v_L12	17	o	H		agree
+f102v_L12	18	o	H		agree
+f102v_L12	19	S	M	B:s	differ
+f102v_L12	20	p	H		agree
+f102v_L12	21	R	H		agree
+f102v_L12	22	c	H		agree
+f102v_L12	23	L	H		agree
+f102v_L12	24	g	M	B:3	differ
+f102v_L12	25	V	H		agree
+f102v_L12	26	m	M	B:-	gap
+f102v_L12	27	o	M	B:-	gap
+f102v_L12	28	o	M	B:-	gap
+f102v_L12	29	g	M	B:-	gap
+f102v_L12	30	m	H		agree
+f102v_L12	31	o	H		agree
+f102v_L12	32	o	H		agree
+f102v_L12	33	g	H		agree
+f102v_L12	34	m	H		agree
+f102v_L12	35	g	H		agree
+f102v_L12	36	R	H		agree
+f102v_L12	37	d	H		agree
+f102v_L12	38	o	H		agree
+f102v_L12	39	o	H		agree
+f102v_L12	40	R	H		agree
+f102v_L12	41	m	H		agree
+f102v_L12	42	d	H		agree
+f102v_L12	43	:	H		agree
+f102v_L12	44	:	H		agree
+f102v_L12	45	y	H		agree
+f102v_L12	46	d	H		agree
+f102v_L12	47	d	H		agree
+f102v_L12	48	m	H		agree
+f102v_L12	49	x	H		agree
+f102v_L12	50	S	M	B:s	differ
+f102v_L12	51	o	H		agree
+f102v_L12	52	o	H		agree
+f102v_L12	53	k	H		agree
+f102v_L12	54	tz	H		agree
+f102v_L12	55	:	H		agree
+f102v_L12	56	:	H		agree
+f102v_L12	57	#	H		agree
+f102v_L13	1	c	H		agree
+f102v_L13	2	S	M	B:s	differ
+f102v_L13	3	tz	H		agree
+f102v_L13	4	x	H		agree
+f102v_L13	5	m	H		agree
+f102v_L13	6	#	H		agree
+f102v_L13	7	g	H		agree
+f102v_L13	8	S	M	B:s	differ
+f102v_L13	9	tz	H		agree
+f102v_L13	10	g	H		agree
+f102v_L13	11	m	H		agree
+f102v_L13	12	g	H		agree
+f102v_L13	13	m	H		agree
+f102v_L13	14	#	H		agree
+f102v_L13	15	d	H		agree
+f102v_L13	16	o	H		agree
+f102v_L13	17	o	H		agree
+f102v_L13	18	g	H		agree
+f102v_L13	19	V	H		agree
+f102v_L13	20	m	H		agree
+f102v_L13	21	g	H		agree
+f102v_L13	22	#	H		agree
+f102v_L13	23	d	H		agree
+f102v_L13	24	o	H		agree
+f102v_L13	25	o	H		agree
+f102v_L13	26	#	H		agree
+f102v_L13	27	V	M	A:-	gap
+f102v_L13	28	y	H		agree
+f102v_L13	29	o	M	B:-	gap
+f102v_L13	30	o	H		agree
+f102v_L13	31	#	M	B:-	gap
+f102v_L13	32	y	M	B:-	gap
+f102v_L13	33	y	M	B:-	gap
+f102v_L13	34	m	H		agree
+f102v_L13	35	2	H		agree
+f102v_L13	36	d	H		agree
+f102v_L13	37	4	H		agree
+f102v_L13	38	z	M	B:3	differ
+f102v_L13	39	m	H		agree
+f102v_L13	40	c	H		agree
+f102v_L13	41	S	M	B:s	differ
+f102v_L13	42	g	H		agree
+f102v_L13	43	:	H		agree
+f102v_L13	44	:	H		agree
+f102v_L13	45	m	H		agree
+f102v_L13	46	2	H		agree
+f102v_L13	47	d	H		agree
+f102v_L13	48	z	H		agree
+f102v_L13	49	m	H		agree
+f102v_L13	50	V	H		agree
+f102v_L13	51	m	H		agree
+f102v_L13	52	V	H		agree
+f102v_L13	53	d	H		agree
+f102v_L13	54	S	M	B:s	differ
+f102v_L13	55	c	H		agree
+f102v_L13	56	g	H		agree
+f102v_L13	57	7	H		agree
+f102v_L14	1	2	H		agree
+f102v_L14	2	tz	H		agree
+f102v_L14	3	m	H		agree
+f102v_L14	4	g	H		agree
+f102v_L14	5	m	H		agree
+f102v_L14	6	3	H		agree
+f102v_L14	7	m	H		agree
+f102v_L14	8	o	H		agree
+f102v_L14	9	o	H		agree
+f102v_L14	10	d	H		agree
+f102v_L14	11	#	M	B:-	gap
+f102v_L14	12	#	H		agree
+f102v_L14	13	tz	H		agree
+f102v_L14	14	d	H		agree
+f102v_L14	15	p	H		agree
+f102v_L14	16	#	M	B:-	gap
+f102v_L14	17	#	M	B:{crossed-ff}	differ
+f102v_L14	18	tz	H		agree
+f102v_L14	19	6	H		agree
+f102v_L14	20	@	H		agree
+f102v_L14	21	g	H		agree
+f102v_L14	22	d	H		agree
+f102v_L14	23	4	M	B:p	differ
+f102v_L14	24	R	M	B:n	differ
+f102v_L14	25	d	H		agree
+f102v_L14	26	m	H		agree
+f102v_L14	27	2	H		agree
+f102v_L14	28	d	M	B:-	gap
+f102v_L14	29	m	M	B:-	gap
+f102v_L14	30	#	M	B:f	differ
+f102v_L14	31	6	H		agree
+f102v_L14	32	S	M	B:s	differ
+f102v_L14	33	p	H		agree
+f102v_L14	34	#	H		agree
+f102v_L14	35	L	M	B:-	gap
+f102v_L14	36	o	M	B:to	differ
+f102v_L14	37	d	H		agree
+f102v_L14	38	p	H		agree
+f102v_L14	39	R	H		agree
+f102v_L14	40	#	H		agree
+f102v_L14	41	g	H		agree
+f102v_L14	42	m	H		agree
+f102v_L14	43	d	H		agree
+f102v_L14	44	f	H		agree
+f102v_L14	45	o	H		agree
+f102v_L14	46	o	H		agree
+f102v_L14	47	d	M	A:-	gap
+f102v_L14	48	V	H		agree
+f102v_L14	49	m	H		agree
+f102v_L14	50	d	H		agree
+f102v_L14	51	V	H		agree
+f102v_L14	52	d	H		agree
+f102v_L14	53	o	H		agree
+f102v_L14	54	o	H		agree
+f102v_L15	1	a	H		agree
+f102v_L15	2	m	H		agree
+f102v_L15	3	j	H		agree
+f102v_L15	4	m	H		agree
+f102v_L15	5	x	H		agree
+f102v_L15	6	3	H		agree
+f102v_L15	7	o	H		agree
+f102v_L15	8	o	H		agree
+f102v_L15	9	d	H		agree
+f102v_L15	10	m	H		agree
+f102v_L15	11	:	H		agree
+f102v_L15	12	:	H		agree
+f102v_L15	13	d	H		agree
+f102v_L15	14	o	H		agree
+f102v_L15	15	o	H		agree
+f102v_L15	16	g	H		agree
+f102v_L15	17	x	H		agree
+f102v_L15	18	2	H		agree
+f102v_L15	19	tz	H		agree
+f102v_L15	20	x	H		agree
+f102v_L15	21	m	H		agree
+f102v_L15	22	V	H		agree
+f102v_L15	23	2	H		agree
+f102v_L15	24	m	M	B:-	gap
+f102v_L15	25	k	M	B:-	gap
+f102v_L15	26	m	M	B:-	gap
+f102v_L15	27	tz	M	B:-	gap
+f102v_L15	28	j	M	B:-	gap
+f102v_L15	29	m	H		agree
+f102v_L15	30	k	H		agree
+f102v_L15	31	m	H		agree
+f102v_L15	32	tz	H		agree
+f102v_L15	33	j	H		agree
+f102v_L15	34	m	H		agree
+f102v_L15	35	f	H		agree
+f102v_L15	36	d	M	B:3	differ
+f102v_L15	37	o	H		agree
+f102v_L15	38	o	H		agree
+f102v_L15	39	g	H		agree
+f102v_L15	40	4	H		agree
+f102v_L15	41	2	H		agree
+f102v_L15	42	S	M	B:s	differ
+f102v_L15	43	z	H		agree
+f102v_L15	44	P	H		agree
+f102v_L15	45	p	H		agree
+f102v_L15	46	#	H		agree
+f102v_L15	47	z	M	B:3	differ
+f102v_L15	48	tz	H		agree
+f102v_L15	49	:	H		agree
+f102v_L15	50	:	H		agree
+f102v_L15	51	#	H		agree
+f102v_L15	52	c	H		agree
+f102v_L15	53	S	M	B:s	differ
+f102v_L15	54	z	H		agree
+f102v_L15	55	P	H		agree
+f102v_L15	56	x	H		agree
+f102v_L15	57	a	H		agree
+f102v_L16	1	3	H		agree
+f102v_L16	2	d	H		agree
+f102v_L16	3	p	H		agree
+f102v_L16	4	z	M	B:3	differ
+f102v_L16	5	tz	H		agree
+f102v_L16	6	m	H		agree
+f102v_L16	7	4	H		agree
+f102v_L16	8	o	H		agree
+f102v_L16	9	o	H		agree
+f102v_L16	10	m	H		agree
+f102v_L16	11	V	H		agree
+f102v_L16	12	S	M	B:s	differ
+f102v_L16	13	o	H		agree
+f102v_L16	14	o	H		agree
+f102v_L16	15	d	H		agree
+f102v_L16	16	tz	H		agree
+f102v_L16	17	#	H		agree
+f102v_L16	18	m	H		agree
+f102v_L16	19	d	H		agree
+f102v_L16	20	:	H		agree
+f102v_L16	21	:	H		agree
+f102v_L16	22	g	H		agree
+f102v_L16	23	tz	M	B:-	gap
+f102v_L16	24	o	M	B:-	gap
+f102v_L16	25	#	M	B:-	gap
+f102v_L16	26	S	M	B:-	gap
+f102v_L16	27	tz	H		agree
+f102v_L16	28	o	H		agree
+f102v_L16	29	#	H		agree
+f102v_L16	30	S	M	B:s	differ
+f102v_L16	31	o	H		agree
+f102v_L16	32	o	H		agree
+f102v_L16	33	6	H		agree
+f102v_L16	34	#	H		agree
+f102v_L16	35	g	H		agree
+f102v_L16	36	m	H		agree
+f102v_L16	37	c	H		agree
+f102v_L16	38	s	M	A:-	gap
+f102v_L16	39	y	H		agree
+f102v_L16	40	:	H		agree
+f102v_L16	41	:	H		agree
+f102v_L16	42	m	H		agree
+f102v_L16	43	d	H		agree
+f102v_L16	44	#	H		agree
+f102v_L16	45	m	H		agree
+f102v_L16	46	3	H		agree
+f102v_L16	47	m	H		agree
+f102v_L16	48	g	H		agree
+f102v_L16	49	V	H		agree
+f102v_L16	50	tz	H		agree
+f102v_L16	51	m	H		agree
+f102v_L16	52	g	H		agree
+f102v_L16	53	7	H		agree
+f102v_L17	1	k	H		agree
+f102v_L17	2	m	H		agree
+f102v_L17	3	o	M	B:c	differ
+f102v_L17	4	m	H		agree
+f102v_L17	5	x	H		agree
+f102v_L17	6	:	H		agree
+f102v_L17	7	:	H		agree
+f102v_L17	8	y	H		agree
+f102v_L17	9	m	H		agree
+f102v_L17	10	m	H		agree
+f102v_L17	11	#	H		agree
+f102v_L17	12	z	H		agree
+f102v_L17	13	L	H		agree
+f102v_L17	14	V	M	A:-	gap
+f102v_L17	15	y	H		agree
+f102v_L17	16	o	H		agree
+f102v_L17	17	m	H		agree
+f102v_L17	18	o	H		agree
+f102v_L17	19	o	H		agree
+f102v_L17	20	g	H		agree
+f102v_L17	21	k	H		agree
+f102v_L17	22	d	H		agree
+f102v_L17	23	o	H		agree
+f102v_L17	24	o	H		agree
+f102v_L17	25	V	H		agree
+f102v_L17	26	d	M	B:-	gap
+f102v_L17	27	tz	M	B:-	gap
+f102v_L17	28	#	M	B:-	gap
+f102v_L17	29	S	M	B:-	gap
+f102v_L17	30	d	H		agree
+f102v_L17	31	tz	H		agree
+f102v_L17	32	#	H		agree
+f102v_L17	33	S	M	B:s	differ
+f102v_L17	34	k	H		agree
+f102v_L17	35	o	H		agree
+f102v_L17	36	o	H		agree
+f102v_L17	37	tz	H		agree
+f102v_L17	38	x	H		agree
+f102v_L17	39	f	M	B:S	differ
+f102v_L17	40	tz	H		agree
+f102v_L17	41	m	H		agree
+f102v_L17	42	V	H		agree
+f102v_L17	43	S	M	B:s	differ
+f102v_L17	44	o	H		agree
+f102v_L17	45	o	H		agree
+f102v_L17	46	V	M	A:-	gap
+f102v_L17	47	y	H		agree
+f102v_L17	48	d	H		agree
+f102v_L17	49	p	H		agree
+f102v_L17	50	4	M	B:f	differ
+f102v_L17	51	:	H		agree
+f102v_L17	52	:	H		agree
+f102v_L17	53	d	H		agree
+f102v_L17	54	c	H		agree
+f102v_L17	55	n	M		agree-flagged
+f102v_L17	56	R	M	B:-	gap
+f102v_L18	1	V	M	A:-	gap
+f102v_L18	2	y	H		agree
+f102v_L18	3	o	M	A:-	gap
+f102v_L18	4	m	H		agree
+f102v_L18	5	g	H		agree
+f102v_L18	6	S	M	B:s	differ
+f102v_L18	7	tz	H		agree
+f102v_L18	8	:	H		agree
+f102v_L18	9	:	H		agree
+f102v_L18	10	#	H		agree
+f102v_L18	11	:	H		agree
+f102v_L18	12	:	H		agree
+f102v_L18	13	m	H		agree
+f102v_L18	14	d	H		agree
+f102v_L18	15	#	H		agree
+f102v_L18	16	d	H		agree
+f102v_L18	17	tz	H		agree
+f102v_L18	18	#	H		agree
+f102v_L18	19	c	H		agree
+f102v_L18	20	S	M	B:s	differ
+f102v_L18	21	V	H		agree
+f102v_L18	22	m	H		agree
+f102v_L18	23	f	M	B:-	gap
+f102v_L18	24	f	M	B:{ff}	differ
+f102v_L18	25	to	H		agree
+f102v_L18	26	x	M	B:R	differ
+f102v_L18	27	tz	H		agree
+f102v_L18	28	m	H		agree
+f102v_L18	29	d	H		agree
+f102v_L18	30	#	H		agree
+f102v_L18	31	d	H		agree
+f102v_L18	32	tz	H		agree
+f102v_L18	33	#	H		agree
+f102v_L18	34	to	H		agree
+f102v_L18	35	S	M	B:s	differ
+f102v_L18	36	a	H		agree
+f102v_L18	37	d	H		agree
+f102v_L18	38	tz	H		agree
+f102v_L18	39	m	H		agree
+f102v_L18	40	p	H		agree
+f102v_L18	41	#	H		agree
+f102v_L19	1	2	M	B:-	gap
+f102v_L19	2	tz	H		agree
+f102v_L19	3	x	H		agree
+f102v_L19	4	y	M	B:V	differ
+f102v_L19	5	y	H		agree
+f102v_L19	6	m	H		agree
+f102v_L19	7	d	H		agree
+f102v_L19	8	m	H		agree
+f102v_L19	9	:	H		agree
+f102v_L19	10	:	H		agree
+f102v_L19	11	d	H		agree
+f102v_L19	12	o	H		agree
+f102v_L19	13	o	H		agree
+f102v_L19	14	g	H		agree
+f102v_L19	15	d	H		agree
+f102v_L19	16	S	M	B:s	differ
+f102v_L19	17	o	H		agree
+f102v_L19	18	o	H		agree
+f102v_L19	19	k	H		agree
+f102v_L19	20	tz	H		agree
+f102v_L19	21	:	H		agree
+f102v_L19	22	:	H		agree
+f102v_L19	23	#	H		agree
+f102v_L19	24	2	M	B:-	gap
+f102v_L19	25	S	M	B:-	gap
+f102v_L19	26	tz	M	B:-	gap
+f102v_L19	27	j	M	B:-	gap
+f102v_L19	28	m	M	B:-	gap
+f102v_L19	29	2	H		agree
+f102v_L19	30	S	M	B:s	differ
+f102v_L19	31	tz	H		agree
+f102v_L19	32	j	H		agree
+f102v_L19	33	m	H		agree
+f102v_L19	34	3	M	B:z	differ
+f102v_L19	35	m	H		agree
+f102v_L19	36	f	H		agree
+f102v_L19	37	d	H		agree
+f102v_L19	38	o	H		agree
+f102v_L19	39	o	H		agree
+f102v_L19	40	g	H		agree
+f102v_L19	41	4	H		agree
+f102v_L19	42	S	M	B:s	differ
+f102v_L19	43	o	H		agree
+f102v_L19	44	o	H		agree
+f102v_L19	45	m	H		agree
+f102v_L19	46	:	H		agree
+f102v_L19	47	:	H		agree
+f102v_L19	48	c	M	B:{curl}	differ
+f102v_L19	49	m	M	B:n	differ
+f102v_L19	50	x	H		agree
+f102v_L19	51	m	H		agree
+f102v_L19	52	d	H		agree
+f102v_L19	53	y	M	B:V	differ
+f102v_L19	54	y	H		agree
+f102v_L19	55	S	M	B:s	differ
+f102v_L19	56	c	H		agree
+f102v_L19	57	m	H		agree
+f102v_L19	58	g	H		agree
+f102v_L20	1	#	H		agree
+f102v_L20	2	m	H		agree
+f102v_L20	3	3	H		agree
+f102v_L20	4	m	H		agree
+f102v_L20	5	c	M	B:{curl}	differ
+f102v_L20	6	m	M	B:n	differ
+f102v_L20	7	x	H		agree
+f102v_L20	8	S	M	B:s	differ
+f102v_L20	9	#	H		agree
+f102v_L20	10	g	H		agree
+f102v_L20	11	m	H		agree
+f102v_L20	12	V	H		agree
+f102v_L20	13	S	M	B:s	differ
+f102v_L20	14	o	H		agree
+f102v_L20	15	o	H		agree
+f102v_L20	16	tz	H		agree
+f102v_L20	17	g	H		agree
+f102v_L20	18	m	H		agree
+f102v_L20	19	x	H		agree
+f102v_L20	20	3	H		agree
+f102v_L20	21	m	H		agree
+f102v_L20	22	d	H		agree
+f102v_L20	23	y	M	B:V	differ
+f102v_L20	24	y	H		agree
+f102v_L20	25	m	M	B:-	gap
+f102v_L20	26	o	M	B:-	gap
+f102v_L20	27	o	M	B:-	gap
+f102v_L20	28	g	M	B:-	gap
+f102v_L20	29	m	H		agree
+f102v_L20	30	o	H		agree
+f102v_L20	31	o	H		agree
+f102v_L20	32	g	H		agree
+f102v_L20	33	x	H		agree
+f102v_L20	34	c	M	B:{curl}	differ
+f102v_L20	35	m	M	B:n	differ
+f102v_L20	36	x	H		agree
+f102v_L20	37	tz	H		agree
+f102v_L20	38	m	H		agree
+f102v_L20	39	x	H		agree
+f102v_L20	40	#	H		agree
+f102v_L20	41	d	H		agree
+f102v_L20	42	tz	H		agree
+f102v_L20	43	m	H		agree
+f102v_L20	44	p	H		agree
+f102v_L20	45	#	H		agree
+f102v_L20	46	3	H		agree
+f102v_L20	47	m	H		agree
+f102v_L20	48	d	M	A:-	gap
+f102v_L20	49	2	M	B:4	differ
+f102v_L20	50	d	H		agree
+f102v_L20	51	o	H		agree
+f102v_L20	52	o	H		agree
+f102v_L20	53	g	H		agree
+f102v_L20	54	m	H		agree
+f102v_L20	55	@	H		agree
+f102v_L21	1	m	H		agree
+f102v_L21	2	V	H		agree
+f102v_L21	3	c	M	B:{curl}	differ
+f102v_L21	4	m	M	B:n	differ
+f102v_L21	5	x	H		agree
+f102v_L21	6	S	M	B:s	differ
+f102v_L21	7	tz	H		agree
+f102v_L21	8	j	H		agree
+f102v_L21	9	m	H		agree
+f102v_L21	10	@	H		agree
+f102v_L21	11	2	M	B:7	differ
+f102v_L21	12	d	M	B:s	differ
+f102v_L21	13	tz	H		agree
+f102v_L21	14	x	H		agree
+f102v_L21	15	a	M	B:c	differ
+f102v_L21	16	y	H		agree
+f102v_L21	17	y	M	B:V	differ
+f102v_L21	18	m	H		agree
+f102v_L21	19	x	H		agree
+f102v_L21	20	4	H		agree
+f102v_L21	21	m	H		agree
+f102v_L21	22	p	H		agree
+f102v_L21	23	d	H		agree
+f102v_L21	24	c	M	B:{curl}	differ
+f102v_L21	25	m	M	B:n	differ
+f102v_L21	26	x	H		agree
+f102v_L21	27	tz	H		agree
+f102v_L21	28	m	M	A:-	gap
+f102v_L21	29	d	H		agree
+f102v_L21	30	#	H		agree
+f102v_L21	31	d	H		agree
+f102v_L21	32	tz	H		agree
+f102v_L21	33	m	H		agree
+f102v_L21	34	p	H		agree
+f102v_L21	35	#	H		agree
+f102v_L21	36	3	H		agree
+f102v_L21	37	m	H		agree
+f102v_L21	38	k	H		agree
+f102v_L21	39	S	M	B:s	differ
+f102v_L21	40	4	H		agree
+f102v_L21	41	d	H		agree
+f102v_L21	42	:	H		agree
+f102v_L21	43	:	H		agree
+f102v_L21	44	m	H		agree
+f102v_L21	45	d	H		agree
+f102v_L21	46	#	H		agree
+f102v_L21	47	d	H		agree
+f102v_L21	48	tz	H		agree
+f102v_L22	1	m	H		agree
+f102v_L22	2	p	H		agree
+f102v_L22	3	#	H		agree
+f102v_L22	4	x	H		agree
+f102v_L22	5	S	M	B:s	differ
+f102v_L22	6	o	H		agree
+f102v_L22	7	o	H		agree
+f102v_L22	8	6	H		agree
+f102v_L22	9	o	H		agree
+f102v_L22	10	o	H		agree
+f102v_L22	11	m	H		agree
+f102v_L22	12	@	H		agree
+f102v_L22	13	m	H		agree
+f102v_L22	14	#	H		agree
+f102v_L22	15	to	H		agree
+f102v_L22	16	x	H		agree
+f102v_L22	17	m	H		agree
+f102v_L22	18	V	H		agree
+f102v_L22	19	y	H		agree
+f102v_L22	20	m	H		agree
+f102v_L22	21	:	H		agree
+f102v_L22	22	:	H		agree
+f102v_L22	23	d	H		agree
+f102v_L22	24	P	M	B:-	gap
+f102v_L22	25	c	M	B:-	gap
+f102v_L22	26	m	M	B:-	gap
+f102v_L22	27	p	M	B:-	gap
+f102v_L22	28	P	H		agree
+f102v_L22	29	c	M	B:{curl}	differ
+f102v_L22	30	m	H		agree
+f102v_L22	31	p	H		agree
+f102v_L22	32	d	H		agree
+f102v_L22	33	m	H		agree
+f102v_L22	34	tz	H		agree
+f102v_L22	35	6	H		agree
+f102v_L22	36	@	H		agree
+f102v_L22	37	m	H		agree
+f102v_L22	38	V	H		agree
+f102v_L22	39	S	M	B:s	differ
+f102v_L22	40	o	H		agree
+f102v_L22	41	o	H		agree
+f102v_L22	42	d	H		agree
+f102v_L22	43	tz	H		agree
+f102v_L22	44	m	H		agree
+f102v_L22	45	p	H		agree
+f102v_L22	46	#	H		agree
+f102v_L22	47	c	H		agree
+f102v_L22	48	y	H		agree
+f102v_L22	49	tz	H		agree
+f102v_L22	50	x	H		agree
+f102v_L22	51	d	H		agree
+f102v_L22	52	tz	H		agree
+f102v_L22	53	p	H		agree
+f102v_L23	1	S	M	B:s	differ
+f102v_L23	2	o	H		agree
+f102v_L23	3	o	H		agree
+f102v_L23	4	6	H		agree
+f102v_L23	5	L	M	B:to	differ
+f102v_L23	6	m	H		agree
+f102v_L23	7	V	H		agree
+f102v_L23	8	p	H		agree
+f102v_L23	9	m	H		agree
+f102v_L23	10	2	H		agree
+f102v_L23	11	tz	H		agree
+f102v_L23	12	@	H		agree
+f102v_L23	13	m	H		agree
+f102v_L23	14	#	H		agree
+f102v_L23	15	to	H		agree
+f102v_L23	16	S	M	B:s	differ
+f102v_L23	17	f	H		agree
+f102v_L23	18	2	M	B:7	differ
+f102v_L23	19	d	H		agree
+f102v_L23	20	tz	H		agree
+f102v_L23	21	m	H		agree
+f102v_L23	22	p	M	B:-	gap
+f102v_L23	23	#	M	B:-	gap
+f102v_L23	24	S	M	B:-	gap
+f102v_L23	25	:	M	B:-	gap
+f102v_L23	26	p	H		agree
+f102v_L23	27	#	H		agree
+f102v_L23	28	S	M	B:s	differ
+f102v_L23	29	:	H		agree
+f102v_L23	30	:	H		agree
+f102v_L23	31	m	H		agree
+f102v_L23	32	d	H		agree
+f102v_L23	33	#	H		agree
+f102v_L23	34	m	H		agree
+f102v_L23	35	y	M	B:-	gap
+f102v_L23	36	y	H		agree
+f102v_L23	37	m	H		agree
+f102v_L23	38	o	H		agree
+f102v_L23	39	o	H		agree
+f102v_L23	40	g	M	A:-	gap
+f102v_L23	41	y	H		agree
+f102v_L23	42	m	H		agree
+f102v_L23	43	o	H		agree
+f102v_L23	44	o	H		agree
+f102v_L23	45	V	H		agree
+f102v_L23	46	m	H		agree
+f102v_L23	47	f	M	B:s	differ
+f102v_L23	48	d	H		agree
+f102v_L23	49	o	H		agree
+f102v_L23	50	o	H		agree
+f102v_L23	51	V	H		agree
+f102v_L23	52	R	H		agree
+f102v_L24	1	{curl}	M	A:-	gap
+f102v_L24	2	n	M	A:-	gap
+f102v_L24	3	x	M	A:-	gap
+f102v_L24	4	s	M	A:-	gap
+f102v_L24	5	p	M	A:-	gap
+f102v_L24	6	#	M	A:-	gap
+f102v_L24	7	tz	M	A:-	gap
+f102v_L24	8	R	M	A:-	gap
+f102v_L24	9	m	M	A:-	gap
+f102v_L24	10	3	M	A:-	gap
+f102v_L24	11	m	M	A:-	gap
+f102v_L24	12	o	M	A:-	gap
+f102v_L24	13	o	M	A:-	gap
+f102v_L24	14	s	M	A:-	gap
+f102v_L24	15	tz	M	A:-	gap
+f102v_L24	16	c	M	B:V	differ
+f102v_L24	17	m	H		agree
+f102v_L24	18	s	M	A:-	gap
+f102v_L24	19	o	M	A:-	gap
+f102v_L24	20	o	M	A:-	gap
+f102v_L24	21	6	M	A:-	gap
+f102v_L24	22	to	M	A:-	gap
+f102v_L24	23	{curl}	M	A:-	gap
+f102v_L24	24	n	M	A:-	gap
+f102v_L24	25	x	H		agree
+f102v_L24	26	tz	H		agree
+f102v_L24	27	m	H		agree
+f102v_L24	28	d	H		agree
+f102v_L24	29	#	H		agree
+f102v_L24	30	d	H		agree
+f102v_L24	31	tz	H		agree
+f102v_L24	32	m	H		agree
+f102v_L24	33	p	H		agree
+f102v_L24	34	#	H		agree
+f102v_L24	35	3	H		agree
+f102v_L24	36	m	H		agree
+f102v_L24	37	2	M	B:4	differ
+f102v_L24	38	d	H		agree
+f102v_L24	39	o	H		agree
+f102v_L24	40	o	H		agree
+f102v_L24	41	g	H		agree
+f102v_L24	42	m	H		agree
+f102v_L24	43	@	H		agree
+f102v_L24	44	S	M	B:s	differ
+f102v_L24	45	o	H		agree
+f102v_L24	46	o	H		agree
+f102v_L24	47	k	H		agree
+f102v_L24	48	tz	H		agree
+f102v_L24	49	o	M	B::	differ
+f102v_L24	50	o	M	B::	differ
+f102v_L24	51	#	H		agree
+f102v_L25	1	2	H		agree
+f102v_L25	2	m	H		agree
+f102v_L25	3	tz	H		agree
+f102v_L25	4	j	H		agree
+f102v_L25	5	m	H		agree
+f102v_L25	6	k	H		agree
+f102v_L25	7	m	H		agree
+f102v_L25	8	f	M	B:S	differ
+f102v_L25	9	d	H		agree
+f102v_L25	10	o	H		agree
+f102v_L25	11	o	H		agree
+f102v_L25	12	g	H		agree
+f102v_L25	13	4	H		agree
+f102v_L25	14	3	H		agree
+f102v_L25	15	m	H		agree
+f102v_L25	16	:	H		agree
+f102v_L25	17	:	H		agree
+f102v_L25	18	m	H		agree
+f102v_L25	19	o	H		agree
+f102v_L25	20	o	H		agree
+f102v_L25	21	6	H		agree
+f102v_L25	22	to	H		agree
+f102v_L25	23	z	M	B:-	gap
+f102v_L25	24	o	M	B:3	differ
+f102v_L25	25	o	H		agree
+f102v_L25	26	j	M	B:-	gap
+f102v_L25	27	m	M	B:-	gap
+f102v_L25	28	o	H		agree
+f102v_L25	29	j	H		agree
+f102v_L25	30	m	H		agree
+f102v_L25	31	#	H		agree
+f102v_L25	32	c	M	B:{curl}	differ
+f102v_L25	33	m	H		agree
+f102v_L25	34	a	H		agree
+f102v_L25	35	S	M	B:s	differ
+f102v_L25	36	o	H		agree
+f102v_L25	37	o	H		agree
+f102v_L25	38	m	H		agree
+f102v_L25	39	:	H		agree
+f102v_L25	40	:	H		agree
+f102v_L25	41	c	M	B:{curl}	differ
+f102v_L25	42	m	M	B:n	differ
+f102v_L25	43	x	H		agree
+f102v_L25	44	m	H		agree
+f102v_L25	45	d	H		agree
+f102v_L25	46	:	H		agree
+f102v_L25	47	:	H		agree
+f102v_L25	48	m	H		agree
+f102v_L25	49	6	H		agree
+f102v_L25	50	S	H		agree
+f102v_L25	51	tz	H		agree
+f102v_L25	52	6	H		agree
+f102v_L25	53	@	H		agree
+f102v_L26	1	d	H		agree
+f102v_L26	2	S	M	B:s	differ
+f102v_L26	3	V	H		agree
+f102v_L26	4	m	H		agree
+f102v_L26	5	o	H		agree
+f102v_L26	6	v	M	B:o	differ
+f102v_L26	7	g	H		agree
+f102v_L26	8	d	H		agree
+f102v_L26	9	tz	H		agree
+f102v_L26	10	m	H		agree
+f102v_L26	11	p	H		agree
+f102v_L26	12	R	H		agree
+f102v_L26	13	z	M	B:3	differ
+f102v_L26	14	m	H		agree
+f102v_L26	15	x	H		agree
+f102v_L26	16	#	H		agree
+f102v_L26	17	g	H		agree
+f102v_L26	18	m	H		agree
+f102v_L26	19	V	M	A:-	gap
+f102v_L26	20	y	H		agree
+f102v_L26	21	y	M	B:o	differ
+f102v_L26	22	m	H		agree
+f102v_L26	23	x	H		agree
+f102v_L26	24	2	H		agree
+f102v_L26	25	S	M	B:-	gap
+f102v_L26	26	tz	M	B:-	gap
+f102v_L26	27	x	M	B:-	gap
+f102v_L26	28	#	M	B:-	gap
+f102v_L26	29	g	M	B:-	gap
+f102v_L26	30	m	M	B:s	differ
+f102v_L26	31	tz	H		agree
+f102v_L26	32	x	H		agree
+f102v_L26	33	#	H		agree
+f102v_L26	34	g	H		agree
+f102v_L26	35	m	H		agree
+f102v_L26	36	x	H		agree
+f102v_L26	37	3	H		agree
+f102v_L26	38	m	H		agree
+f102v_L26	39	y	M	B:V	differ
+f102v_L26	40	y	H		agree
+f102v_L26	41	S	M	B:s	differ
+f102v_L26	42	2	H		agree
+f102v_L26	43	m	H		agree
+f102v_L26	44	g	H		agree
+f102v_L26	45	tz	H		agree
+f102v_L26	46	6	H		agree
+f102v_L26	47	@	H		agree
+f102v_L26	48	:	H		agree
+f102v_L26	49	:	H		agree
+f102v_L26	50	m	H		agree
+f102v_L26	51	g	H		agree
+f102v_L26	52	d	H		agree
+f102v_L26	53	p	H		agree
+f102v_L26	54	#	H		agree
+f102v_L26	55	S	M	B:s	differ
+f102v_L26	56	:	H		agree
+f102v_L26	57	:	H		agree
+f102v_L26	58	g	H		agree
+f102v_L27	1	d	H		agree
+f102v_L27	2	z	H		agree
+f102v_L27	3	g	H		agree
+f102v_L27	4	m	H		agree
+f102v_L27	5	a	H		agree
+f102v_L27	6	z	M	B:3	differ
+f102v_L27	7	S	M	B:s	differ
+f102v_L27	8	j	H		agree
+f102v_L27	9	m	H		agree
+f102v_L27	10	2	H		agree
+f102v_L27	11	S	M	B:s	differ
+f102v_L27	12	tz	H		agree
+f102v_L27	13	4	H		agree
+f102v_L27	14	V	H		agree
+f102v_L27	15	m	H		agree
+f102v_L27	16	tz	H		agree
+f102v_L27	17	6	H		agree
+f102v_L27	18	V	H		agree
+f102v_L27	19	m	H		agree
+f102v_L27	20	d	H		agree
+f102v_L27	21	d	H		agree
+f102v_L27	22	g	H		agree
+f102v_L27	23	#	H		agree
+f102v_L27	24	tz	H		agree
+f102v_L27	25	g	M	B:-	gap
+f102v_L27	26	S	M	B:-	gap
+f102v_L27	27	y	H		agree
+f102v_L27	28	tz	M	B:-	gap
+f102v_L27	29	m	M	B:-	gap
+f102v_L27	30	S	M	B:s	differ
+f102v_L27	31	y	H		agree
+f102v_L27	32	tz	H		agree
+f102v_L27	33	m	H		agree
+f102v_L27	34	V	H		agree
+f102v_L27	35	S	M	B:s	differ
+f102v_L27	36	y	M	B:V	differ
+f102v_L27	37	y	H		agree
+f102v_L27	38	m	H		agree
+f102v_L27	39	o	H		agree
+f102v_L27	40	o	H		agree
+f102v_L27	41	g	H		agree
+f102v_L27	42	c	H		agree
+f102v_L27	43	g	H		agree
+f102v_L27	44	m	H		agree
+f102v_L27	45	tz	H		agree
+f102v_L27	46	a	H		agree
+f102v_L27	47	k	H		agree
+f102v_L27	48	tz	H		agree
+f102v_L27	49	:	H		agree
+f102v_L27	50	:	H		agree
+f102v_L27	51	m	H		agree
+f102v_L27	52	z	M	B:3	differ
+f102v_L27	53	tz	H		agree
+f102v_L27	54	d	H		agree
+f102v_L27	55	S	M	B:s	differ
+f102v_L27	56	p	H		agree
+f102v_L27	57	#	H		agree
+f102v_L28	1	m	M	B:a	differ
+f102v_L28	2	V	H		agree
+f102v_L28	3	y	H		agree
+f102v_L28	4	y	M	B:o	differ
+f102v_L28	5	R	M	B:P	differ
+f102v_L28	6	c	H		agree
+f102v_L28	7	S	M	B:s	differ
+f102v_L28	8	j	H		agree
+f102v_L28	9	S	M	B:s	differ
+f102v_L28	10	#	H		agree
+f102v_L28	11	tz	H		agree
+f102v_L28	12	p	H		agree
+f102v_L28	13	to	H		agree
+f102v_L28	14	2	M	B:R	differ
+f102v_L28	15	tz	H		agree
+f102v_L28	16	m	H		agree
+f102v_L28	17	d	H		agree
+f102v_L28	18	#	H		agree
+f102v_L28	19	y	M	B:V	differ
+f102v_L28	20	y	H		agree
+f102v_L28	21	m	H		agree
+f102v_L28	22	a	H		agree
+f102v_L28	23	6	H		agree
+f102v_L28	24	o	H		agree
+f102v_L28	25	o	H		agree
+f102v_L28	26	d	M	B:-	gap
+f102v_L28	27	z	M	B:-	gap
+f102v_L28	28	S	M	B:-	gap
+f102v_L28	29	y	M	B:-	gap
+f102v_L28	30	y	M	B:-	gap
+f102v_L28	31	d	H		agree
+f102v_L28	32	z	M	B:7	differ
+f102v_L28	33	S	M	B:s	differ
+f102v_L28	34	y	M	B:V	differ
+f102v_L28	35	y	H		agree
+f102v_L28	36	tz	H		agree
+f102v_L28	37	p	H		agree
+f102v_L28	38	R	H		agree
+f102v_L28	39	m	H		agree
+f102v_L28	40	p	H		agree
+f102v_L28	41	#	H		agree
+f102v_L28	42	tz	H		agree
+f102v_L28	43	d	H		agree
+f102v_L28	44	p	H		agree
+f102v_L28	45	V	H		agree
+f102v_L28	46	m	H		agree
+f102v_L28	47	p	H		agree
+f102v_L28	48	S	M	B:s	differ
+f102v_L28	49	c	H		agree
+f102v_L28	50	S	M	B:s	differ
+f102v_L28	51	d	H		agree
+f102v_L28	52	o	H		agree
+f102v_L28	53	o	H		agree
+f102v_L28	54	V	H		agree
+f102v_L28	55	4	H		agree
+f102v_L28	56	d	H		agree
+f102v_L28	57	6	H		agree
+f102v_L28	58	6	H		agree
+f102v_L29	1	L	M	A:-	gap
+f102v_L29	2	A	M	B:c	differ
+f102v_L29	3	d	H		agree
+f102v_L29	4	o	H		agree
+f102v_L29	5	o	H		agree
+f102v_L29	6	R	H		agree
+f102v_L29	7	d	H		agree
+f102v_L29	8	tz	H		agree
+f102v_L29	9	g	H		agree
+f102v_L29	10	g	H		agree
+f102v_L29	11	S	M	B:s	differ
+f102v_L29	12	tz	H		agree
+f102v_L29	13	g	H		agree
+f102v_L29	14	m	H		agree
+f102v_L29	15	y	M	B:V	differ
+f102v_L29	16	y	H		agree
+f102v_L29	17	S	M	B:s	differ
+f102v_L29	18	2	M	B:7	differ
+f102v_L29	19	d	H		agree
+f102v_L29	20	tz	H		agree
+f102v_L29	21	p	H		agree
+f102v_L29	22	h	H		agree
+f102v_L29	23	g	H		agree
+f102v_L29	24	m	M	B:-	gap
+f102v_L29	25	y	M	B:-	gap
+f102v_L29	26	y	M	B:-	gap
+f102v_L29	27	m	H		agree
+f102v_L29	28	o	M	B:-	gap
+f102v_L29	29	o	M	B:-	gap
+f102v_L29	30	m	M	B:V	differ
+f102v_L29	31	y	H		agree
+f102v_L29	32	m	H		agree
+f102v_L29	33	o	H		agree
+f102v_L29	34	o	H		agree
+f102v_L29	35	m	H		agree
+f102v_L29	36	R	H		agree
+f102v_L29	37	z	M	B:3	differ
+f102v_L29	38	o	H		agree
+f102v_L29	39	o	H		agree
+f102v_L29	40	2	M	B:7	differ
+f102v_L29	41	d	H		agree
+f102v_L29	42	p	H		agree
+f102v_L29	43	h	H		agree
+f102v_L29	44	m	H		agree
+f102v_L29	45	m	H		agree
+f102v_L29	46	#	H		agree
+f102v_L29	47	c	M	B:a	differ
+f102v_L29	48	y	M	B:V	differ
+f102v_L29	49	y	H		agree
+f102v_L29	50	m	H		agree
+f102v_L29	51	h	M	B:k	differ
+f102v_L29	52	o	H		agree
+f102v_L29	53	o	H		agree
+f102v_L29	54	:	H		agree
+f102v_L29	55	:	H		agree
+f102v_L29	56	k	H		agree
+f102v_L29	57	m	H		agree
+f102v_L30	1	c	M	B:-	gap
+f102v_L30	2	l	M	B:L	differ
+f102v_L30	3	y	M	B:V	differ
+f102v_L30	4	y	H		agree
+f102v_L30	5	m	H		agree
+f102v_L30	6	V	H		agree
+f102v_L30	7	o	H		agree
+f102v_L30	8	o	H		agree
+f102v_L30	9	S	M	B:s	differ
+f102v_L30	10	:	H		agree
+f102v_L30	11	:	H		agree
+f102v_L30	12	d	H		agree
+f102v_L30	13	p	H		agree
+f102v_L30	14	2	M	B:Z	differ
+f102v_L30	15	S	H		agree
+f102v_L30	16	c	M	B:a	differ
+f102v_L30	17	:	H		agree
+f102v_L30	18	:	H		agree
+f102v_L30	19	m	H		agree
+f102v_L30	20	x	H		agree
+f102v_L30	21	V	H		agree
+f102v_L30	22	o	H		agree
+f102v_L30	23	o	H		agree
+f102v_L30	24	S	H		agree
+f102v_L30	25	tz	H		agree
+f102v_L30	26	m	M	B:-	gap
+f102v_L30	27	:	M	B:-	gap
+f102v_L30	28	:	M	B:-	gap
+f102v_L30	29	#	M	B:-	gap
+f102v_L30	30	@	M	B:-	gap
+f102v_L30	31	m	H		agree
+f102v_L30	32	:	H		agree
+f102v_L30	33	:	H		agree
+f102v_L30	34	#	H		agree
+f102v_L30	35	@	H		agree
+f102v_L30	36	V	H		agree
+f102v_L30	37	m	H		agree
+f102v_L30	38	:	H		agree
+f102v_L30	39	:	H		agree
+f102v_L30	40	m	H		agree
+f102v_L30	41	g	H		agree
+f102v_L30	42	m	H		agree
+f102v_L30	43	S	H		agree
+f102v_L30	44	m	H		agree
+f102v_L30	45	j	M	B:7	differ
+f102v_L30	46	S	H		agree
+f102v_L30	47	V	H		agree
+f102v_L30	48	m	H		agree
+f102v_L30	49	p	H		agree
+f102v_L30	50	#	H		agree
+f102v_L30	51	:	H		agree
+f102v_L30	52	:	H		agree
+f102v_L30	53	d	H		agree
+f102v_L30	54	p	H		agree
+f102v_L30	55	#	H		agree
+f102v_L30	56	g	H		agree
+f102v_L30	57	7	H		agree
+f102v_L31	1	DUP	H		agree
+f102v_L32	1	d	H		agree
+f102v_L32	2	o	H		agree
+f102v_L32	3	o	H		agree
+f102v_L32	4	6	H		agree
+f102v_L32	5	d	H		agree
+f102v_L32	6	p	H		agree
+f102v_L32	7	#	H		agree
+f102v_L32	8	m	H		agree
+f102v_L32	9	S	H		agree
+f102v_L32	10	tz	H		agree
+f102v_L32	11	6	H		agree
+f102v_L32	12	@	H		agree
+f102v_L32	13	c	H		agree
+f102v_L32	14	m	H		agree
+f102v_L32	15	o	H		agree
+f102v_L32	16	o	H		agree
+f102v_L32	17	6	H		agree
+f102v_L32	18	o	H		agree
+f102v_L32	19	o	H		agree
+f102v_L32	20	m	H		agree
+f102v_L32	21	p	H		agree
+f102v_L32	22	#	H		agree
+f102v_L32	23	R	H		agree
+f102v_L32	24	g	M	B:9	differ
+f102v_L32	25	d	H		agree
+f102v_L32	26	o	H		agree
+f102v_L32	27	o	H		agree
+f102v_L32	28	2	H		agree
+f102v_L32	29	d	M	B:-	gap
+f102v_L32	30	o	M	B:-	gap
+f102v_L32	31	o	M	B:-	gap
+f102v_L32	32	2	M	B:R	differ
+f102v_L32	33	m	H		agree
+f102v_L32	34	g	H		agree
+f102v_L32	35	y	M	B:V	differ
+f102v_L32	36	y	H		agree
+f102v_L32	37	S	M	B:s	differ
+f102v_L32	38	:	H		agree
+f102v_L32	39	:	H		agree
+f102v_L32	40	d	H		agree
+f102v_L32	41	p	H		agree
+f102v_L32	42	tz	H		agree
+f102v_L32	43	o	H		agree
+f102v_L32	44	o	H		agree
+f102v_L32	45	p	H		agree
+f102v_L32	46	:	H		agree
+f102v_L32	47	:	H		agree
+f102v_L32	48	#	H		agree
+f102v_L32	49	a	H		agree
+f102v_L32	50	g	H		agree
+f102v_L32	51	m	H		agree
+f102v_L32	52	:	H		agree
+f102v_L32	53	:	H		agree
+f102v_L32	54	S	M	B:L	differ
+f102v_L33	1	DUP	H		agree
+f102v_L34	1	S	H		agree
+f102v_L34	2	d	H		agree
+f102v_L34	3	p	H		agree
+f102v_L34	4	#	H		agree
+f102v_L34	5	y	M	B:V	differ
+f102v_L34	6	y	H		agree
+f102v_L34	7	m	H		agree
+f102v_L34	8	d	H		agree
+f102v_L34	9	S	H		agree
+f102v_L34	10	k	H		agree
+f102v_L34	11	o	H		agree
+f102v_L34	12	o	H		agree
+f102v_L34	13	tz	H		agree
+f102v_L34	14	x	H		agree
+f102v_L34	15	to	H		agree
+f102v_L34	16	d	H		agree
+f102v_L34	17	p	H		agree
+f102v_L34	18	R	H		agree
+f102v_L34	19	z	M	B:3	differ
+f102v_L34	20	S	M	B:s	differ
+f102v_L34	21	j	H		agree
+f102v_L34	22	m	H		agree
+f102v_L34	23	2	H		agree
+f102v_L34	24	S	M	B:s	differ
+f102v_L34	25	tz	H		agree
+f102v_L34	26	4	H		agree
+f102v_L34	27	V	H		agree
+f102v_L34	28	m	H		agree
+f102v_L34	29	S	M		agree-flagged
+f102v_L34	30	S	M	B:s	differ
+f102v_L34	31	o	H		agree
+f102v_L34	32	o	H		agree
+f102v_L34	33	6	H		agree
+f102v_L34	34	to	H		agree
+f102v_L34	35	S	M	B:s	differ
+f102v_L34	36	p	H		agree
+f102v_L34	37	p	H		agree
+f102v_L34	38	S	M	B:s	differ
+f102v_L34	39	tz	H		agree
+f102v_L34	40	g	H		agree
+f102v_L34	41	m	H		agree
+f102v_L34	42	d	H		agree
+f102v_L34	43	3	H		agree
+f102v_L34	44	m	H		agree
+f102v_L34	45	y	M	B:V	differ
+f102v_L34	46	y	H		agree
+f102v_L34	47	m	H		agree
+f102v_L34	48	a	H		agree
+f102v_L34	49	S	M	B:s	differ
+f102v_L34	50	p	H		agree
+f102v_L34	51	R	H		agree
+f102v_L35	1	ff	M	B:{fff}	differ
+f102v_L35	2	6	H		agree
+f102v_L35	3	t	M		agree-flagged
+f102v_L35	4	:	H		agree
+f102v_L35	5	tz	H		agree
+f102v_L35	6	6	H		agree
+f102v_L35	7	@	H		agree
+f102v_L35	8	2	H		agree
+f102v_L35	9	d	H		agree
+f102v_L35	10	p	H		agree
+f102v_L35	11	d	H		agree
+f102v_L35	12	#	H		agree
+f102v_L35	13	g	H		agree
+f102v_L35	14	m	H		agree
+f102v_L35	15	p	H		agree
+f102v_L35	16	#	H		agree
+f102v_L35	17	:	M	A:-	gap
+f102v_L35	18	tz	H		agree
+f102v_L35	19	o	M	B:-	gap
+f102v_L35	20	o	M	B:-	gap
+f102v_L35	21	d	M	B:-	gap
+f102v_L35	22	m	M	B:-	gap
+f102v_L35	23	z	M	B:-	gap
+f102v_L35	24	o	H		agree
+f102v_L35	25	o	H		agree
+f102v_L35	26	d	H		agree
+f102v_L35	27	c	M	B:{curl}	differ
+f102v_L35	28	m	M	B:n	differ
+f102v_L35	29	x	H		agree
+f102v_L35	30	m	H		agree
+f102v_L35	31	d	H		agree
+f102v_L35	32	S	H		agree
+f102v_L35	33	:	H		agree
+f102v_L35	34	:	H		agree
+f102v_L35	35	m	H		agree
+f102v_L35	36	d	H		agree
+f102v_L35	37	#	H		agree
+f102v_L35	38	m	H		agree
+f102v_L35	39	y	M	B:V	differ
+f102v_L35	40	y	H		agree
+f102v_L35	41	m	H		agree
+f102v_L35	42	o	H		agree
+f102v_L35	43	o	H		agree
+f102v_L35	44	g	H		agree
+f102v_L35	45	m	H		agree
+f102v_L35	46	k	H		agree
+f102v_L35	47	tz	H		agree
+f102v_L35	48	m	H		agree
+f102v_L35	49	x	H		agree
+f102v_L35	50	#	H		agree
+f102v_L35	51	g	M	B:9	differ
+f102v_L35	52	7	H		agree
+f102v_L36	1	3	H		agree
+f102v_L36	2	R	H		agree
+f102v_L36	3	V	H		agree
+f102v_L36	4	S	H		agree
+f102v_L36	5	c	H		agree
+f102v_L36	6	6	H		agree
+f102v_L36	7	m	H		agree
+f102v_L36	8	d	H		agree
+f102v_L36	9	3	M	B:z	differ
+f102v_L36	10	tz	H		agree
+f102v_L36	11	d	H		agree
+f102v_L36	12	S	M	B:s	differ
+f102v_L36	13	p	H		agree
+f102v_L36	14	#	H		agree
+f102v_L36	15	to	H		agree
+f102v_L36	16	2	M	B:R	differ
+f102v_L36	17	m	H		agree
+f102v_L36	18	6	H		agree
+f102v_L36	19	to	H		agree
+f102v_L36	20	2	M	B:-	gap
+f102v_L36	21	m	M	B:-	gap
+f102v_L36	22	d	M	B:-	gap
+f102v_L36	23	g	M	B:-	gap
+f102v_L36	24	d	M	B:-	gap
+f102v_L36	25	tz	M	B:R	differ
+f102v_L36	26	m	H		agree
+f102v_L36	27	d	H		agree
+f102v_L36	28	g	M	B:S	differ
+f102v_L36	29	d	H		agree
+f102v_L36	30	tz	H		agree
+f102v_L36	31	x	H		agree
+f102v_L36	32	a	M	B:c	differ
+f102v_L36	33	y	M	B:V	differ
+f102v_L36	34	y	H		agree
+f102v_L36	35	m	H		agree
+f102v_L36	36	4	H		agree
+f102v_L36	37	d	H		agree
+f102v_L36	38	d	H		agree
+f102v_L36	39	g	M	B:9	differ
+f102v_L36	40	#	H		agree
+f102v_L36	41	tz	H		agree
+f102v_L36	42	g	M	B:y	differ
+f102v_L36	43	S	M	B:s	differ
+f102v_L36	44	#	H		agree
+f102v_L36	45	g	M	B:9	differ
+f102v_L36	46	m	H		agree
+f102v_L36	47	d	H		agree
+f102v_L36	48	g	M	B:S	differ
+f102v_L36	49	d	H		agree
+f102v_L36	50	g	M	B:9	differ
+f102v_L36	51	#	H		agree
+f102v_L36	52	{dash}	H		agree
+f102v_L37	1	DUP	H		agree

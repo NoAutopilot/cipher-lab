@@ -1,0 +1,9 @@
+COVERAGE DIAGNOSTIC: partial coverage, missing truth lines are listed and not scored, unknown line ids ignored; not the fixed-manifest score
+vivonne1573-f102r-dev2 [dev] as measured: err_true(0.75-indel align) 0.242 (101/417) | standard SER (unit-cost Levenshtein) 0.242 (101/417): S 88 D 9 I 4 | wrong 88 deleted 9 inserted 4 | excluded 245 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 88/408 = 0.216 | coverage 408/417 = 0.978
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.120 (50/417) | standard SER 0.120 (50/417)
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.060 (13/216) | standard SER (unit-cost Levenshtein) 0.060 (13/216): S 7 D 2 I 4 | wrong 7 deleted 2 inserted 4 | excluded 446 | lines missing 0 (0 signs counted deleted) [201 flagged] | position errors 9/216 = 0.042 | insertions 4 / read 646 = 0.006
+    reader abstentions 0 | accepted-token error 7/214 = 0.033 | coverage 214/216 = 0.991
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.060 (13/216) | standard SER 0.060 (13/216)
+  top confusions (truth value <- read): e<-R x7, s<-d x5, a<-m x4, u<-z x2, g<-<deleted> x2, r<-d x2, e<-d x2, a<-<deleted> x2
+split dev: err_true(0.75-indel align) 0.242 (101/417) | standard SER 0.242 (101/417)

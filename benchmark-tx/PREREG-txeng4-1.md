@@ -156,5 +156,32 @@ parent answers in ROOM before round 2 starts, that answer governs. Passes run fo
 Cross-session: TXE4-8's arm N is the same configuration as D (Sonnet, drawn sheet, free read, same 13 lines); if its passes
 are committed before RESULTS they are quoted beside D, never pooled.
 
-## Addendum (filled before any sheet is built: the 2e2 shift check rows and verdict)
-(pending)
+## Addendum (filled 12 Oct 2026 01:3x UTC by date -u, before any sheet or read; the 2e2 shift check and the purity gate)
+Tiles (read-free, benchmark-tx/txeng4/1/tiles.py; the patched aligner benchmark-tx/txeng4/1/box_token_align.patch):
+- 2a: 74 f.102v crops -> 1,819 pen-unit boxes, 1,661 after the s1/s2 overlap dedupe (pass A reads 1,819 tokens: the hand joins).
+- 2b: reconcile nw: agree 1,440 of 1,859 aligned columns (77.5%); 1,440 agree positions in pass A's numbering (walk check: no line mismatch).
+- 2c round 1 (--lam 0, --keep-pos agree, --count-tol 0.10): 32 of 37 lines skipped by the count tolerance (boxes 10-33% under the
+  token count on every one of them); 5 lines pass (L18, L29, L30, L34, L35); 159 1:1 tokens, 25 codes (maps/round1.log).
+- 2d round 2: kNN from those 159 (classify --only-train-labels, leave-itself-out vote, --knn 5 --topk 3) on all 1,819 boxes;
+  label-aware re-map on the same 5 lines: ops 1:1 120, 2:1 64, 1:2 78, unsure 24; 95 1:1 tokens (maps/round2.log).
+- 2e2 shift check (join_check --steered, seed 20261012; the kNN top-1 of every box as the check label, leave-one-out positions
+  because those labels steered the map), printed rows:
+    join_check: FAIL n=140 share0=0.200 (null p95 0.087) share+-1=0.150 (bound 0.208)
+      f102v_L18: pass placed=26 {+1: 4, none: 14, 0: 6, +-2: 1, -1: 1}
+      f102v_L29: pass placed=29 {none: 13, +1: 5, 0: 7, +-2: 2, -1: 2}
+      f102v_L30: pass placed=23 {none: 12, +1: 2, -1: 2, +-2: 4, 0: 3}
+      f102v_L34: fail placed=34 {none: 25, 0: 3, -1: 3, +-2: 2, +1: 1}
+      f102v_L35: pass placed=28 {none: 18, 0: 9, +1: 1}
+  (the tool's own --check-bound run printed PASS with steered=False because the check file was a copy of the top-1 column,
+  not the --topk file itself; the steered run above is the one of record, R4a.) L34 dropped, re-checked once (maps/map_r2b.tsv):
+    join_check: PASS n=106 share0=0.236 (null p95 0.105) share+-1=0.160 (bound 0.226); L18, L29, L30, L35 all pass B1.
+  Verdict of record: PASS on four lines after the one allowed drop; the leave-one-out share at 0 is 0.236, under a quarter of
+  the placed tiles, against a permuted-label p95 of 0.105.
+- 2e kept tiles (1:1 in both rounds at the same agree position, code among the 40): **24 tiles, 13 codes, 7 codes with >= 2
+  tiles** (g 4, tz 3, d 3, ':' 2, '#' 2, o 2, 7 2, y/a/R/k/p/6 one each); benchmark-tx/txeng4/1/tokens.tsv.
+- 2f purity gate: (i) share of op-1:1 boxes on the four passing lines 92 / 197 = **0.467 < 0.80 FAIL**; (ii) **7 of 40 codes
+  with >= 2 tiles, < 25 FAIL**; (iii) shift check PASS after the drop. **Gate FAILED on (i) and (ii): declared non-test
+  'f.102v tiles not separable, or not verifiably placed, at pen units'. H and Hx do not run; W and D run alone**, in the
+  registered order with H and Hx removed (D, W; D, W), two passes each = 4 passes, inside the 6-pass stop rule.
+- Context (step 1, Opus SHEET-VIV passes rescored on the 13 test lines, scores/context_pass*_sv.txt): unit-cost edits as
+  measured 101 / 104 / 106 of 417 (A / B / Z), flagged-excluded 13 / 16 / 18 of 216. Never a baseline arm.
