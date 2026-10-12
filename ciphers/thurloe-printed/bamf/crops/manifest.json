@@ -3409,6 +3409,59 @@
     "prominence": 20.0
    },
    "date": "12 Oct 2026"
+  },
+  {
+   "crop": "v4p231f_L01.jpg",
+   "source_url": "",
+   "source_file": "v4_n234.jpg",
+   "box": [
+    0,
+    3500,
+    2429,
+    3750
+   ],
+   "lines_in_crop": 4,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     60,
+     120,
+     180,
+     250
+    ]
+   },
+   "date": "12 Oct 2026"
+  },
+  {
+   "crop": "v4p529_L01.jpg",
+   "source_url": "",
+   "source_file": "v4_n532.jpg",
+   "box": [
+    0,
+    1910,
+    2429,
+    2150
+   ],
+   "lines_in_crop": 3,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     70,
+     150,
+     230
+    ]
+   },
+   "date": "12 Oct 2026"
   }
  ]
 }
