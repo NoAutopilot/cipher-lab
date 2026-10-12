@@ -255,3 +255,20 @@ Job: grep the seven HMC *Calendar of the Stuart Papers* volumes for the Vernon g
 ## Next step (D2-GUALT, 8 Oct 2026)
 
 Unchanged in the main: the BL folio-list question in REQUEST.md, then a pilot transcription once images or a copy arrive. Added: (1) if images of 20554-20556 or any Gualterio-network volume arrive, test the two HMC vol. VI keys (Gualterio; King of Sicily) against it first, after pairing them from the vol. VI page images (archive.org `calendarofstuart06grea`, IIIF, ~2 page crops, ~USD 1); (2) the calendar cannot supply a Vernon crib (ends 1718, no Count de Vernon); a crib for 1719-1727 would have to come from the Turin side (Archivio di Stato di Torino, Lettere ministri Francia) -- not searched.
+
+## GUALT-HMC (12 Oct 2026, worker for LANE DEFAULT-A1-0640, account 1)
+
+Job: pair the two keys HMC printed in *Calendar of the Stuart Papers* vol. VI (1916) intro (D2-GUALT next step (1)). Key transcription from a printed edition only; no ciphertext, no reading; status stays `open`.
+
+- Prior work: `tools/prior_work.py bl-gualterio-1700 --step-type key` exit 4; its only LEAD was this worker's own ROOM claim; the plaintext rows (Tomokiyo, solver caches, editions) are UNCHECKED and do not apply to a key copied from print. Check 1: no later NOTES section had paired these keys.
+- Located: Sicily key pp. lxxvi-lxxviii (leaves n81-n83, alphabet on n83); Gualterio key pp. lxxix-lxxxiii (n84-n88, figure key on n88), from `_page_numbers.json` and `_djvu.xml` (the D2-GUALT estimate "pp. ~lxxviii-lxxxiv" was one page late).
+- Pairing: the djvu.xml word boxes grouped into printed rows by y (`keys/hmc6_rows_ocr.tsv`), term column | cant-name column by x. The print braces 2-3 cant names to one term (seen on n81 Le Roy d'Angleterre = Alba, Astali, Aquino; n83 Le Roy de Sicile = Stella, Sansome ou Salvador; Le Regent = Ranucci ou Ricanati); alternatives "X ou Y" are split into rows.
+- Image check: 4 leaves (n81, n83, n86, n88) fetched at 2533x4353, strip crops `tools/iiif_lines.py --image <leaf> --region 150,150,2200,4150 --out ciphers/bl-gualterio-1700/images/hmc6 --prefix hmc6_leaf<n> --lines-per-crop 6 --quality 70` (plus `--region 150,3950,2200,250 --prefix hmc6_leaf83b` for the alphabet's last row); 10 strips viewed by this worker. Confirmed every figure-key digit (incl. C = 70/71, the odd 71 is in the print) and both alphabet rows; read the OCR-garbled n86 rows (Irlandois = Mr. Jenkins, Jacobites = Mr. Janson, Jesuites = Mr. Jolly, Duc de Lauzun = Mr. Launois, Londres = Limbourg, Chevalier Lily = Mr. Lister, Mariage = Mr. Maronis, Duc de Modene = Mr. Maurois, Negotiation = Mr. Nollan, Mr. Nairne = Mr. Neutton, Le Nord = Mr. Panetier).
+- Output: `keys/hmc6_gualterio.tsv` 209 rows (44 letter codes; H 87, M 122) and `keys/hmc6_sicily.tsv` 149 rows (48 letter codes; H 116, M 33); `keys/build_hmc6_keys.py --check` exit 0; `keys/README.md`. M rows are on leaves n82, n84, n85, n87 (OCR only, clean-looking, not image-checked). Print duplicates kept as printed: Gualterio Mr. Constant (College de Douay; Consistoire), Mr. Husdon (Huxelles twice), Mr. Panetier (Le Nord, H; La Paix, M).
+- `tools/key_design.py --help` shows no add path for a printed key (it rebuilds KEY-DESIGN.tsv from key files it finds); KEY-OFFICES.tsv / KEY-DESIGN.tsv not touched.
+- Requests: archive.org 6 (page_numbers.json, djvu.xml, 4 leaf images), >= 1.5 s apart, all 200. No subagents.
+
+## Next step (GUALT-HMC, 12 Oct 2026)
+
+- [ ] Image-check the 122 M rows of the Gualterio key and 33 of the Sicily key (leaves n82, n84, n85, n87); next: one strip pass, ~USD 1, archive.org. Only needed once ciphertext from 20554-20556 or a Gualterio-network volume is on disk (REQUEST.md: waiting on the BL folio list).
+- [ ] Register the two printed keys in KEY-OFFICES.tsv / KEY-DESIGN.tsv once key_design.py takes a printed-key path or names these files; next: a tools change, parent's call.
