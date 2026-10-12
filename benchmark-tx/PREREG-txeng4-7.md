@@ -151,3 +151,21 @@ A null is a result.
 
 ## Register check
 `python3 tools/tx_register.py --check benchmark-tx/PREREG-txeng4-7.md` output pasted in RESULTS.md.
+
+## Addendum (R4a), 12 Oct 2026 01:3x UTC by date -u: the maps as built, pasted before any Delta was computed
+Round 1: 588 training boxes (atlas/secure_tokens.tsv minus its 48 f152r rows); kNN `classify --only-train-labels --holdout
+f152r_ f178r_ f178v_ f179r_ --topk 3` (4209 boxes classified). Round 2: f174v L01-11 aligned with the round-1 kNN
+(--check-labels = its top-1, steered -> leave-one-out): n 244, at 0 190, -1 3, +1 4, +-2 1, none 46; join_check PASS
+share0 0.779 (null p95 0.070), share+-1 0.029 (bound 0.107); lines L02-L11 pass (L01 unchecked, under 5 tiles) -> 94 boxes
+added. f174vB L01-11: n 214, at 0 12, -1 5, +1 8, +-2 19, none 170; UNCHECKABLE (share0 0.056 = null p95 0.056) -> no box
+taken (the whole-page verdict decides, not the per-line passes). Round-2 training set 682 boxes; kNN re-run.
+Target maps (round-2 kNN as --topk and --check-labels, steered -> leave-one-out row):
+- no.87 (f178v L01-23, f179r L01-03): 782 rows, 1:1 699, 2:1 52, 1:2 26, unsure 5. In sample n 703: at 0 575, -1 3, +1 2,
+  +-2 9, none 114. Leave-one-out n 702: at 0 571, -1 5, +1 2, +-2 9, none 115. join_check PASS (steered), share0 0.813
+  (null p95 0.049), share+-1 0.010 (bound 0.091); every one of the 26 lines pass. Reference: the label-aware map's
+  leave-one-out row is 187 / 2 / 2 of 203 (PASS); the old map 157 / 24 / 14 of 208 (FAIL).
+- f152r (atlas lines 2-5 = L01-L04, TXE3-7's x bounds, 103 boxes kept): 102 rows, 1:1 88, 2:1 12, 1:2 2. Leave-one-out
+  n 88: at 0 66, -1 1, +1 1, +-2 1, none 19. join_check PASS (steered), share0 0.750 (null p95 0.080), share+-1 0.023
+  (bound 0.136); all 4 lines pass.
+Sidecars: benchmark-tx/txeng4/7/map/map_no87.tsv.joincheck.json, map_f152r.tsv.joincheck.json (commit e78c5e3a).
+Verdict: both joins PASS; piles are formed from every 1:1 box on those lines.
