@@ -105,3 +105,20 @@ leaf each, strip crops, read every 94 (and 25/51 if present) with its printed gl
 (rule 4: a conflict with Tomokiyo's t is logged in HYPOTHESES.md with both witnesses, never settled by majority). Stop before a unit that would
 cross 80% of the cap. Update Remaining gaps / Escalation, `tools/gaps_check.py thurloe-printed`. Report what was found and where it was not
 found; do not classify novelty.
+
+## Wave 4 (08:1x UTC 12 Oct)
+Wave 2/3 results: PISA-RS244 4.88 D- (T45->T19 x10, T47->T27 x3, T57->T32 x5 PASS and committed, f.244r C 281 -> 295; T57->T35, T57->T42
+FAIL); THUR-IA 3.95 D- (Birch I p.340 omits the Dutch closing and the postscript; vol 4 25 = e, 51 = i by printed gloss, logged). Gallica 403;
+googleapis 200 at 08:08, 503 at 08:08:5x -- still flapping, no googleapis job.
+
+### V-PISA244 (Opus, verifier, cap 3, box 60 min): fr16045-pisany-rome-1585, check of the PISA-RS244 relabels
+You are a verifier, not PISA-244's or PISA-RS244's session or any solver on this folder. Pattern: `.claude/briefs/runs/2026-10-11-ytbiz-
+default-0509-jobs.md` "### V-PISA3" and AUDIT.md "## AUDIT 5 (V-PISA3 ...)". Read NOTES.md "## PISA-244" and "## PISA-RS244", pisa_244/ and
+the PISA-RS244 outputs. Check: (a) both PREREG commits (b708edca3, 1316666f4) precede their score commits on origin/main (git log); (b) re-run
+the re-score and every `--check`, confirm the per-group gate numbers (control 5/5, both p99s, the class-alignment check, the subset null)
+and that the two FAILed groups were not committed; (c) eye-check a sample of the 18 committed relabel tiles (at most one vision call, tiles on
+disk) against the key86 cells they now carry; (d) recount the f.244r and item C/H/S/M counts from the committed reading/decode outputs and
+propagate to status.json and depth fields (rule 4a; `python3 tools/depth_check.py` after), carrying any change into AUDIT.md and any
+SECOND-OPINIONS-QUEUE.tsv row for this folder (rule 10). Write "## AUDIT 6 (V-PISA244, 12 Oct 2026)" in AUDIT.md; no class raised unless
+the reading changed in substance (then say so and why). Update the Verdict line's cheapest next; gaps_check must pass. Do not decode new
+material, do not touch other targets.
