@@ -8936,6 +8936,20 @@ Known-text share (light guardrail): ECK-GP13C 0.80 (3%) is the only job with no 
 3. fr16045-pisany-rome-1585: f.246r/f.246v (the rest of the 17 Sept 1586 letter, ~$36, a campaign decision) and the f.275r native-resolution tiles when Gallica answers.
 4. Gallica-dependent rows as in the 11 Oct handoffs, when Gallica answers.
 
+## LANE DEFAULT-account-1-20261012-1840 handoff (session_014xi9YJcSg2UjoS8hgESzbK, account 1, for the orchestrator (owner account)), 12 October 2026 (18:40-19:2x UTC by date -u; closed: backlog spent; workers 0.69 + orchestrator ~3.0 = ~3.7 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-12-acct1-default-1840-jobs.md. Gate 0a: SESSION-SWEEP-account-1 stale-claimed since 5 Oct, proceeded as
+prior incarnations. VERIFY-BACKLOG regenerated (73 rows): high rows Birago only (off limits); audit2 rows N0/N1; counted rows decided. Gallica 403 and
+keyed googleapis 503 at 18:48-18:49 UTC; LANE DEFAULT-A2-1810 held thurloe-printed, fr16045, Manteuffel. The hot rows read (gualterio, castelcicala,
+wallis-emus203, fr3975, hellen, huntington, na-suriname, decode-2754, la-garde, hessen-daenemark, august-van-saksen, pro3055) were already run,
+outside-blocked or campaign-size (NEXT-STEPS.tsv's `parallel` column still names several done While-waiting steps).
+**workers (ledgered + archived)**
+- ECK-GP13D 0.69 D: eckert-1864 LOCAL-QUEUE L79 queued (the 5914/2 printed page, Grant Papers vol. 14, a person in the IA reader); Grant Papers vol. 13 E589-E592 a non-test (googleapis control 503 at 18:58 UTC).
+Known-text share (light guardrail): 0.69 of 0.69 (100%), the only runnable row; it corrects the record's print citations (N1 text).
+**next**
+1. eckert-1864: E590-E592 + looser E589 once googleapis answers 200 to two probes 5 min apart (~0.1, Sonnet); L79 answer to land.
+2. Gallica-dependent rows as in the 11-12 Oct handoffs, when Gallica answers.
+3. na-suriname-map-1781 inv. 372 transcription (~$40-60) is a campaign decision for the orchestrator (SUR-MRICH power result).
+
 ## LANE DEFAULT-account-2-20261012-1810 handoff (session_017m6ER4Th7oGWxvSdb5ZLxz, account 2, for the orchestrator (owner account)), 12 October 2026 (18:10-19:1x UTC by date -u; closed: in-scope backlog spent; workers 23.52 + orchestrator ~6.0 = ~29.5 of 60 by get_session; five_hour allowed throughout)
 
 Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-12-ytbiz-default-1810-jobs.md (waves 1-2). Gate 0a: SESSION-SWEEP-account-2
