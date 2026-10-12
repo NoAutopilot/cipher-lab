@@ -1,0 +1,34 @@
+dint-f98v-gloss: alignment columns 248, split columns 41, distinct pairs 22
+dint-f113-gloss: alignment columns 186, split columns 24, distinct pairs 7
+dint-f89-gloss: alignment columns 586, split columns 64, distinct pairs 41
+calibration substitution pairs 25 (events 60); f89 substitution split events 49, of which on a calibration pair 14 (0.29)
+pair	calib_splits	f89_splits
+0'~NEW:d-shape	11	0
+II~NEW:tt (two verticals, one crossbar)	10	0
+v~v'	9	0
+0~o	4	0
+#~f	3	0
+<none>~.	3	0
+NEW:A (pointed lambda/caret a)~a	2	0
+sq~sq'	2	0
+NEW:q (round closed loop on stem)~y	2	0
+Z~z	1	1
+3~m	1	0
+3~NEW:brace (tall curl with descender)	1	0
+m~m'	1	0
+NEW:0 with horizontal bar inside (theta)~NEW:theta (0 with bar inside)	1	0
+a~a'	1	0
+#~NEW:tt (two verticals, one crossbar)	1	0
+T~t	1	0
+v'~<none>	1	0
+NEW:brace (tall curl with descender)~v	1	0
+.~<none>	1	0
+1~L	1	10
+0~0'	1	3
+NEW:Gamma with long descender~v	1	0
+NEW:u (open round bowl)~NEW:u shape with hook	1	0
+NEW:v over long baseline~v	1	0
+0'~4	1	0
+NEW:v on a baseline bar~x	1	0
+NEW:heavy N-shape with overbar, possibly corrected~T	1	0
+f89 pairs not seen on the calibration pages: 35 events
