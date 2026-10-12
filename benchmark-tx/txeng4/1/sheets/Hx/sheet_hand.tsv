@@ -1,0 +1,41 @@
+code	n_secure	shown	exemplars	tiles_from
+a	1	print-only		a
+b	0	print-only		b
+d	3	hand	f102v_L29_s1_01_009,f102v_L18_s1_01_004,f102v_L29_s1_01_012,f102v_L29_s1_01_008	g
+e	0	print-only		e
+g	4	hand	f102v_L29_s1_01_003,f102v_L29_s1_01_004	o
+h	0	print-only		h
+j	0	print-only		j
+k	1	print-only		k
+l	0	print-only		l
+m	0	print-only		m
+n	0	print-only		n
+o	2	hand	f102v_L30_s2_01_033,f102v_L35_s2_01_028	7
+p	1	print-only		p
+r	0	print-only		r
+s	0	print-only		s
+t	0	print-only		t
+x	0	print-only		x
+y	1	print-only		y
+z	0	print-only		z
+tz	3	hand	f102v_L18_s1_01_010,f102v_L35_s2_01_026	#
+to	0	print-only		to
+3	0	print-only		3
+#	2	hand	f102v_L18_s1_01_007,f102v_L30_s2_01_028	:
+:	2	hand	f102v_L18_s2_01_017,f102v_L29_s1_01_006,f102v_L29_s2_01_016	d
+P	0	print-only		P
+S	0	print-only		S
+f	0	print-only		f
+A	0	print-only		A
+@	0	print-only		@
+V	0	print-only		V
+R	1	print-only		R
+L	0	print-only		L
+Z	0	print-only		Z
+H	0	print-only		H
+4	0	print-only		4
+6	1	print-only		6
+7	2	hand	f102v_L29_s1_01_011,f102v_L29_s1_01_007,f102v_L18_s1_01_006	tz
+c	0	print-only		c
+2	0	print-only		2
+8	0	print-only		8

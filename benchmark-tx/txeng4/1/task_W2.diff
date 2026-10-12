@@ -1,0 +1,21 @@
+--- reader_task.txt
++++ task_W2.txt
+@@ -1,8 +1,8 @@
+ You are transcribing a 16th-century cipher letter from line images. Use ONLY the files named here; do not open, list or search any other file or directory.
+ 
+-Sign sheet (a text list of the sign inventory; read it first and use ONLY its tokens): /home/user/cipher-lab/benchmark-tx/txeng2/viv102base/sheet_SIGNS_dv1.md
++Sign sheet (a text list of the sign inventory; read it first and use ONLY its tokens): /tmp/claude-0/-home-user-cipher-lab/418d81d6-5d23-5452-a42d-0fa425085382/scratchpad/r/W2/sheet_SIGNS_dv1.md
+ 
+-Line crops, in /home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/ : for each line LINES_HERE, the two files c105_f102r_<line>_s1.jpg then c105_f102r_<line>_s2.jpg (view every one; FILECOUNT files). Do not resize, rescale, enhance or re-crop the images; read them as they are.
++Line crops, in /tmp/claude-0/-home-user-cipher-lab/418d81d6-5d23-5452-a42d-0fa425085382/scratchpad/r/W2/ : for each line L02 L04 L08 L10 L16 L18 L20 L24 L28 L30 L32 L34 L36, the two files c105_f102r_<line>_s1.jpg then c105_f102r_<line>_s2.jpg (view every one; 26 files). Do not resize, rescale, enhance or re-crop the images; read them as they are.
+ 
+ Overlap (measured by pixel match on every line, not estimated): segments of a line overlap by 250 native px (the images you read are at native resolution, so 250 px in each image), about 5 signs (median sign width 46 px, ink-run median over the 74 crops); a sign at the right edge of s1 and the left edge of s2 is ONE sign: the last 250 px of s1 and the first 250 px of s2 show the same ink, read it once.
+ 
+@@ -16,6 +16,6 @@
+ - conf = H (sure), M (likely), L (guess).
+ - You are not deciphering: write what each sign looks like, nothing about meaning.
+ 
+-Write a TSV to OUTPUT_PATH with header: line<TAB>pos<TAB>sign<TAB>alt<TAB>conf
++Write a TSV to /tmp/claude-0/-home-user-cipher-lab/418d81d6-5d23-5452-a42d-0fa425085382/scratchpad/r/W2/read.tsv with header: line<TAB>pos<TAB>sign<TAB>alt<TAB>conf
+ line = f102r_L01 style ids (the line part of the file name, with prefix f102r_, no c105_ and no _s1/_s2); pos = 1,2,3... per line, counting your rows.
+ Reply with only the number of rows per line.

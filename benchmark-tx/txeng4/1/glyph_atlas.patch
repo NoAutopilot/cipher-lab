@@ -1,0 +1,123 @@
+diff --git a/tools/glyph_atlas.py b/tools/glyph_atlas.py
+index c9703195d..bfcb144cc 100644
+--- a/tools/glyph_atlas.py
++++ b/tools/glyph_atlas.py
+@@ -69,6 +69,13 @@ cluster  HOG (9 orientations, 8x8 cells, 2x2 blocks) of the bitmaps plus log rel
+          k-means with a deliberate over-split (fixed seed), as carpi cluster.py; marks clustered separately.
+          --split s52:3 re-splits a mixed cluster (labels 52.0 52.1 52.2). Writes DIR/clusters.tsv and DIR/sheet_signs_NN.png / sheet_marks.png contact sheets (row label "k:count").
+ atlas    --from-truth TOKENS.tsv [--per 6 --spread --exclude-leaf PAGE ... --codes @FILE --canonical SHEET.png --grid 110x110x9]
++         --from-tokens TOKENS.tsv is the same input described honestly: machine-agreed tokens (sid, code), not truth (TXE4-1,
++         12 Oct 2026). --canonical-boxes BOXES.tsv --canonical-dir DIR (token, drawing, x0, y0, x1, y1) cuts each token's
++         drawn cell from its drawing by the box and shows it first in the row, instead of a gridded --canonical sheet.
++         --shuffle-rows SEED renders the same hand tiles under a seeded derangement of the rows with tiles (no hand tile
++         stays in its own row; drawn cells and row labels stay put; the tile table gains a tiles_from column) -- the
++         control that keeps every pixel of the sheet and moves only the tile-to-row pairing. Test: tools/tests/
++         test_glyph_atlas_tokens.py.
+          (TX-SHEET, 4 Oct 2026; research/TRANSCRIPTION-PRACTICE-2026-10-04.md #4, the palaeographer's alphabet): a per-hand
+          exemplar sheet for line-read passes. TOKENS.tsv names securely read boxes (sid, code, optional grade; --grades
+          filters). Per code, --per tiles from those boxes, never from an --exclude-leaf page (the eval item): with --spread
+@@ -756,7 +763,9 @@ def cmd_atlas_truth(a):
+     else:
+         codes = sorted(by)
+     canon = {}
+-    if a.canonical:
++    if getattr(a, 'canonical_boxes', None):
++        canon = load_canonical_boxes(a.canonical_boxes, a.canonical_dir or os.path.dirname(a.canonical_boxes))
++    elif a.canonical:
+         cw, ch, nc = (int(v) for v in a.grid.lower().split('x'))
+         im = cv2.imread(a.canonical, cv2.IMREAD_GRAYSCALE)
+         for n, c in enumerate(sorted(codes)):      # the canonical sheet lays its cells out in sorted code order
+@@ -767,17 +776,25 @@ def cmd_atlas_truth(a):
+     cell, cache = a.cell, {}
+     rows_tsv, strips = [], []
+     font = cv2.FONT_HERSHEY_SIMPLEX
++    picks = {}
++    for c in codes:
++        ids = by.get(c, [])
++        picks[c] = [ids[k] for k in pick_spread(X[ids], a.per, a.spread, a.trim)] if len(ids) >= a.min_secure else []
++    tiles_from = {c: c for c in codes}
++    if getattr(a, 'shuffle_rows', None) is not None:
++        tiles_from.update(derange([c for c in codes if picks[c]], a.shuffle_rows))
+     for c in codes:
+         ids = by.get(c, [])
+         use = len(ids) >= a.min_secure
+-        pick = [ids[k] for k in pick_spread(X[ids], a.per, a.spread, a.trim)] if use else []
++        pick = picks[tiles_from[c]] if use else []
+         strip = np.full((cell, (a.per + 2) * cell + 12), 255, np.uint8)
+         cv2.putText(strip, c, (4, cell // 2), font, 0.8, 0, 2)
+         cv2.putText(strip, 'print' if c in canon else '', (4, cell // 2 + 22), font, 0.4, 90, 1)
+         if c in canon:
+             cc = canon[c]
+             sc = min((cell - 6) / cc.shape[1], (cell - 6) / cc.shape[0])
+-            cc = cv2.resize(cc, (max(1, int(cc.shape[1] * sc)), max(1, int(cc.shape[0] * sc))), interpolation=cv2.INTER_AREA)
++            cc = cv2.resize(cc, (max(1, int(cc.shape[1] * sc)), max(1, int(cc.shape[0] * sc))),
++                            interpolation=cv2.INTER_CUBIC if sc > 1 else cv2.INTER_AREA)
+             y0, x0 = (cell - cc.shape[0]) // 2, cell + (cell - cc.shape[1]) // 2
+             strip[y0:y0 + cc.shape[0], x0:x0 + cc.shape[1]] = cc
+         cv2.line(strip, (2 * cell + 5, 4), (2 * cell + 5, cell - 4), 120, 2)      # print | the hand
+@@ -788,14 +805,15 @@ def cmd_atlas_truth(a):
+             cv2.rectangle(strip, (x0, 0), (x0 + cell - 1, cell - 1), 200, 1)
+         cv2.line(strip, (0, cell - 1), (strip.shape[1], cell - 1), 150, 1)
+         strips.append(strip)
+-        rows_tsv.append([c, str(len(ids)), 'hand' if use else 'print-only', ','.join(signs[i]['sid'] for i in pick)])
++        rows_tsv.append([c, str(len(ids)), 'hand' if use else 'print-only', ','.join(signs[i]['sid'] for i in pick)]
++                        + ([tiles_from[c]] if getattr(a, 'shuffle_rows', None) is not None else []))
+     made = []
+     for s0 in range(0, len(strips), a.rows_per_sheet):
+         p = os.path.join(a.sheet_dir or a.out, f'{a.sheet_prefix}_{s0 // a.rows_per_sheet + 1:02d}.png')
+         cv2.imwrite(p, np.vstack(strips[s0:s0 + a.rows_per_sheet]))
+         made.append(p)
+     with open(os.path.join(a.sheet_dir or a.out, f'{a.sheet_prefix}.tsv'), 'w') as f:
+-        f.write('code\tn_secure\tshown\texemplars\n')
++        f.write('code\tn_secure\tshown\texemplars' + ('\ttiles_from' if getattr(a, 'shuffle_rows', None) is not None else '') + '\n')
+         for r in rows_tsv:
+             f.write('\t'.join(r) + '\n')
+     nh = sum(r[2] == 'hand' for r in rows_tsv)
+@@ -803,6 +821,33 @@ def cmd_atlas_truth(a):
+           f'skipped {dict(skipped)} -> {", ".join(made)}')
+ 
+ 
++def load_canonical_boxes(path, d):
++    """--canonical-boxes: {token: the drawn cell cut from DIR/<drawing> by the row's x0, y0, x1, y1} (TXE4-1)."""
++    out, ims = {}, {}
++    for r in csv.DictReader(open(path), delimiter='\t'):
++        fn = r['drawing']
++        if fn not in ims:
++            ims[fn] = cv2.imread(os.path.join(d, fn), cv2.IMREAD_GRAYSCALE)
++            if ims[fn] is None:
++                sys.exit(f'--canonical-boxes: cannot read {os.path.join(d, fn)}')
++        x0, y0, x1, y1 = (int(r[k]) for k in ('x0', 'y0', 'x1', 'y1'))
++        out[r['token']] = ims[fn][y0:y1, x0:x1]
++    return out
++
++
++def derange(codes, seed):
++    """{code: other code} over the codes given: a seeded derangement (no code maps to itself; needs >= 2 codes)."""
++    import random
++    if len(codes) < 2:
++        return {c: c for c in codes}
++    rnd = random.Random(seed)
++    order = list(codes)
++    while True:
++        rnd.shuffle(order)
++        if all(a != b for a, b in zip(codes, order)):
++            return dict(zip(codes, order))
++
++
+ def cmd_crop(a):
+     os.makedirs(a.dest, exist_ok=True)
+     made = []
+@@ -1249,6 +1294,13 @@ def main(argv=None):
+     t.add_argument('--grades', help='--from-truth: keep only rows whose grade is in this string (e.g. CHS)')
+     t.add_argument('--codes', help='--from-truth: every code to show, comma list or @file (default: the codes in the TSV)')
+     t.add_argument('--min-secure', type=int, default=2, help='--from-truth: fewer secure tiles than this -> the print shape only (2)')
++    t.add_argument('--from-tokens', dest='from_truth', help='TSV with sid, code: machine-agreed tokens, not truth (same layout as '
++                                                            '--from-truth; TXE4-1)')
++    t.add_argument('--canonical-boxes', help='TSV token, drawing, x0, y0, x1, y1: cut each token\'s drawn cell from its drawing '
++                                             'and show it first in the row (instead of --canonical)')
++    t.add_argument('--canonical-dir', help='--canonical-boxes: directory holding the drawings (default: the TSV\'s own)')
++    t.add_argument('--shuffle-rows', type=int, help='SEED: render the same hand tiles under a seeded derangement of the rows '
++                                                   '(no tile in its own row; drawn cells and labels stay put)')
+     t.add_argument('--canonical', help='--from-truth: the canonical sign sheet PNG (cells in sorted --codes order)')
+     t.add_argument('--grid', default='110x110x9', help='--from-truth: canonical cell width x height x columns (110x110x9)')
+     t.add_argument('--cell', type=int, default=96, help='--from-truth: tile size in px (96)')
