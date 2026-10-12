@@ -1,0 +1,19 @@
+--pair T18 T98: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	24	37	20	0.984	0.0	61	0.607	1	0.590 0.525 0.410 0.541 0.459 0.656 0.525 0.410 0.557 0.508 0.525 0.492 0.328 0.508 0.574 0.623 0.607 0.475 0.607 0.508	29
+2	25	35	20	0.983	0.0	60	0.583	1		29
+3	25	36	20	0.984	0.0	61	0.590	1		29
+4	22	37	20	0.983	0.0	59	0.627	1		29
+5	25	37	21	0.984	0.0	62	0.597	1		29
+6	24	37	20	0.984	0.0	61	0.607	1		29
+7	23	37	20	0.983	0.0	60	0.617	1		29
+8	23	36	20	0.983	0.0	59	0.610	1		29
+9	24	37	20	0.984	0.0	61	0.607	1		29
+10	23	36	20	0.983	0.0	59	0.610	1		29
+11	25	37	21	0.984	0.0	62	0.597	1		29
+12	25	36	20	0.984	0.0	61	0.590	1		29
+applied labels_dev_tune.tsv: positions 354, considered 18, changed 1 -> benchmark-tx/txeng4/5/beside/owner_T18_T98_dev_tune.tsv
+UNCHECKED JOIN: concatenation of two join_check-PASSed machine maps (maps/no87_labels.tsv + maps/f152r_passZ.tsv), beside arm only
+--pair T18 T98: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+0	25	37	21	0.984	0.0	62	0.597	1		29
+applied passZ_pipeline.tsv: positions 96, considered 3, changed 1 -> benchmark-tx/txeng4/5/beside/owner_T18_T98_f152r_passZ.tsv
+rc=0

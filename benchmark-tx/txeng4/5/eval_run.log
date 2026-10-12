@@ -1,0 +1,17 @@
+no87_passA real: rc 0; --pairs 2: combined benchmark-tx/txeng4/5/eval/no87_passA_real.tsv: changed 1, conflicts kept as base 0
+no87_passA ctrl1f: rc 0; --pairs 2: combined benchmark-tx/txeng4/5/eval/no87_passA_ctrl1f.tsv: changed 28, conflicts kept as base 0
+no87_passA ctrl3f: rc 0; --pairs 2: combined benchmark-tx/txeng4/5/eval/no87_passA_ctrl3f.tsv: changed 27, conflicts kept as base 0
+no87_passA ctrl2f: rc 0; --pairs 2: combined benchmark-tx/txeng4/5/eval/no87_passA_ctrl2f.tsv: changed 33, conflicts kept as base 0
+no87_passA ctrl5f: rc 0; --pairs 2: combined benchmark-tx/txeng4/5/eval/no87_passA_ctrl5f.tsv: changed 25, conflicts kept as base 0
+no87_passA rev: rc 0; --pairs 2: combined benchmark-tx/txeng4/5/eval/no87_passA_rev.tsv: changed 68, conflicts kept as base 0
+no87_passA ctrl4f: rc 0; --pairs 2: combined benchmark-tx/txeng4/5/eval/no87_passA_ctrl4f.tsv: changed 32, conflicts kept as base 0
+no87_L real: rc 0; --pairs 2: combined benchmark-tx/txeng4/5/eval/no87_L_real.tsv: changed 1, conflicts kept as base 0
+f152r_passA real: rc 0; --pairs 2: combined benchmark-tx/txeng4/5/eval/f152r_passA_real.tsv: changed 0, conflicts kept as base 0
+f152r_passA ctrl1f: rc 0; --pairs 2: combined benchmark-tx/txeng4/5/eval/f152r_passA_ctrl1f.tsv: changed 1, conflicts kept as base 0
+f152r_passA ctrl2f: rc 0; --pairs 2: combined benchmark-tx/txeng4/5/eval/f152r_passA_ctrl2f.tsv: changed 4, conflicts kept as base 0
+f152r_passA ctrl3f: rc 0; --pairs 2: combined benchmark-tx/txeng4/5/eval/f152r_passA_ctrl3f.tsv: changed 5, conflicts kept as base 0
+f152r_passA ctrl4f: rc 0; --pairs 2: combined benchmark-tx/txeng4/5/eval/f152r_passA_ctrl4f.tsv: changed 8, conflicts kept as base 0
+f152r_passA ctrl5f: rc 0; --pairs 2: combined benchmark-tx/txeng4/5/eval/f152r_passA_ctrl5f.tsv: changed 7, conflicts kept as base 0
+f152r_passA rev: rc 0; --pairs 2: combined benchmark-tx/txeng4/5/eval/f152r_passA_rev.tsv: changed 8, conflicts kept as base 0
+f152r_Z real: rc 0; --pairs 2: combined benchmark-tx/txeng4/5/eval/f152r_Z_real.tsv: changed 0, conflicts kept as base 0
+rc=0

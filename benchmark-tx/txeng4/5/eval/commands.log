@@ -1,0 +1,400 @@
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pairs benchmark-tx/txeng4/5/gates/passing.txt --map benchmark-tx/txeng4/5/maps/no87_passA.tsv --apply-unit benchmark-tx/txeng/units/passA_eval_heldout.tsv --exclude-own-line --tsv benchmark-tx/txeng4/5/eval/no87_passA_real.tsv --report benchmark-tx/txeng4/5/eval/no87_passA_real_report.tsv --touched benchmark-tx/txeng4/5/eval/no87_passA_real_touched.tsv
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pairs benchmark-tx/txeng4/5/gates/passing.txt --map benchmark-tx/txeng4/5/maps/no87_passA.tsv --apply-unit benchmark-tx/txeng/units/passA_eval_heldout.tsv --exclude-own-line --tsv benchmark-tx/txeng4/5/eval/no87_passA_ctrl1f.tsv --report benchmark-tx/txeng4/5/eval/no87_passA_ctrl1f_report.tsv --touched benchmark-tx/txeng4/5/eval/no87_passA_ctrl1f_touched.tsv --seed 1 --force-t 0
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pairs benchmark-tx/txeng4/5/gates/passing.txt --map benchmark-tx/txeng4/5/maps/no87_passA.tsv --apply-unit benchmark-tx/txeng/units/passA_eval_heldout.tsv --exclude-own-line --tsv benchmark-tx/txeng4/5/eval/no87_passA_ctrl2f.tsv --report benchmark-tx/txeng4/5/eval/no87_passA_ctrl2f_report.tsv --touched benchmark-tx/txeng4/5/eval/no87_passA_ctrl2f_touched.tsv --seed 2 --force-t 0
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pairs benchmark-tx/txeng4/5/gates/passing.txt --map benchmark-tx/txeng4/5/maps/no87_passA.tsv --apply-unit benchmark-tx/txeng/units/passA_eval_heldout.tsv --exclude-own-line --tsv benchmark-tx/txeng4/5/eval/no87_passA_ctrl3f.tsv --report benchmark-tx/txeng4/5/eval/no87_passA_ctrl3f_report.tsv --touched benchmark-tx/txeng4/5/eval/no87_passA_ctrl3f_touched.tsv --seed 3 --force-t 0
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pairs benchmark-tx/txeng4/5/gates/passing.txt --map benchmark-tx/txeng4/5/maps/no87_passA.tsv --apply-unit benchmark-tx/txeng/units/passA_eval_heldout.tsv --exclude-own-line --tsv benchmark-tx/txeng4/5/eval/no87_passA_ctrl4f.tsv --report benchmark-tx/txeng4/5/eval/no87_passA_ctrl4f_report.tsv --touched benchmark-tx/txeng4/5/eval/no87_passA_ctrl4f_touched.tsv --seed 4 --force-t 0
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pairs benchmark-tx/txeng4/5/gates/passing.txt --map benchmark-tx/txeng4/5/maps/no87_passA.tsv --apply-unit benchmark-tx/txeng/units/passA_eval_heldout.tsv --exclude-own-line --tsv benchmark-tx/txeng4/5/eval/no87_passA_ctrl5f.tsv --report benchmark-tx/txeng4/5/eval/no87_passA_ctrl5f_report.tsv --touched benchmark-tx/txeng4/5/eval/no87_passA_ctrl5f_touched.tsv --seed 5 --force-t 0
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pairs benchmark-tx/txeng4/5/gates/passing.txt --map benchmark-tx/txeng4/5/maps/no87_passA.tsv --apply-unit benchmark-tx/txeng/units/passA_eval_heldout.tsv --exclude-own-line --tsv benchmark-tx/txeng4/5/eval/no87_passA_rev.tsv --report benchmark-tx/txeng4/5/eval/no87_passA_rev_report.tsv --touched benchmark-tx/txeng4/5/eval/no87_passA_rev_touched.tsv --reverse-labels
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pairs benchmark-tx/txeng4/5/gates/passing.txt --map benchmark-tx/txeng4/5/maps/no87_labels.tsv --apply-unit benchmark-tx/txeng/units/labels_eval_heldout.tsv --exclude-own-line --tsv benchmark-tx/txeng4/5/eval/no87_L_real.tsv --report benchmark-tx/txeng4/5/eval/no87_L_real_report.tsv --touched benchmark-tx/txeng4/5/eval/no87_L_real_touched.tsv
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pairs benchmark-tx/txeng4/5/gates/passing.txt --map benchmark-tx/txeng4/5/maps/f152r_passA.tsv --apply-unit benchmark-tx/outputs/birago1572-f152r/passA.tsv --tsv benchmark-tx/txeng4/5/eval/f152r_passA_real.tsv --report benchmark-tx/txeng4/5/eval/f152r_passA_real_report.tsv --touched benchmark-tx/txeng4/5/eval/f152r_passA_real_touched.tsv
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pairs benchmark-tx/txeng4/5/gates/passing.txt --map benchmark-tx/txeng4/5/maps/f152r_passA.tsv --apply-unit benchmark-tx/outputs/birago1572-f152r/passA.tsv --tsv benchmark-tx/txeng4/5/eval/f152r_passA_ctrl1f.tsv --report benchmark-tx/txeng4/5/eval/f152r_passA_ctrl1f_report.tsv --touched benchmark-tx/txeng4/5/eval/f152r_passA_ctrl1f_touched.tsv --seed 1 --force-t 0
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pairs benchmark-tx/txeng4/5/gates/passing.txt --map benchmark-tx/txeng4/5/maps/f152r_passA.tsv --apply-unit benchmark-tx/outputs/birago1572-f152r/passA.tsv --tsv benchmark-tx/txeng4/5/eval/f152r_passA_ctrl2f.tsv --report benchmark-tx/txeng4/5/eval/f152r_passA_ctrl2f_report.tsv --touched benchmark-tx/txeng4/5/eval/f152r_passA_ctrl2f_touched.tsv --seed 2 --force-t 0
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pairs benchmark-tx/txeng4/5/gates/passing.txt --map benchmark-tx/txeng4/5/maps/f152r_passA.tsv --apply-unit benchmark-tx/outputs/birago1572-f152r/passA.tsv --tsv benchmark-tx/txeng4/5/eval/f152r_passA_ctrl3f.tsv --report benchmark-tx/txeng4/5/eval/f152r_passA_ctrl3f_report.tsv --touched benchmark-tx/txeng4/5/eval/f152r_passA_ctrl3f_touched.tsv --seed 3 --force-t 0
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pairs benchmark-tx/txeng4/5/gates/passing.txt --map benchmark-tx/txeng4/5/maps/f152r_passA.tsv --apply-unit benchmark-tx/outputs/birago1572-f152r/passA.tsv --tsv benchmark-tx/txeng4/5/eval/f152r_passA_ctrl4f.tsv --report benchmark-tx/txeng4/5/eval/f152r_passA_ctrl4f_report.tsv --touched benchmark-tx/txeng4/5/eval/f152r_passA_ctrl4f_touched.tsv --seed 4 --force-t 0
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pairs benchmark-tx/txeng4/5/gates/passing.txt --map benchmark-tx/txeng4/5/maps/f152r_passA.tsv --apply-unit benchmark-tx/outputs/birago1572-f152r/passA.tsv --tsv benchmark-tx/txeng4/5/eval/f152r_passA_ctrl5f.tsv --report benchmark-tx/txeng4/5/eval/f152r_passA_ctrl5f_report.tsv --touched benchmark-tx/txeng4/5/eval/f152r_passA_ctrl5f_touched.tsv --seed 5 --force-t 0
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pairs benchmark-tx/txeng4/5/gates/passing.txt --map benchmark-tx/txeng4/5/maps/f152r_passA.tsv --apply-unit benchmark-tx/outputs/birago1572-f152r/passA.tsv --tsv benchmark-tx/txeng4/5/eval/f152r_passA_rev.tsv --report benchmark-tx/txeng4/5/eval/f152r_passA_rev_report.tsv --touched benchmark-tx/txeng4/5/eval/f152r_passA_rev_touched.tsv --reverse-labels
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pairs benchmark-tx/txeng4/5/gates/passing.txt --map benchmark-tx/txeng4/5/maps/f152r_passZ.tsv --apply-unit benchmark-tx/outputs/birago1572-f152r/passZ_pipeline.tsv --tsv benchmark-tx/txeng4/5/eval/f152r_Z_real.tsv --report benchmark-tx/txeng4/5/eval/f152r_Z_real_report.tsv --touched benchmark-tx/txeng4/5/eval/f152r_Z_real_touched.tsv
+## no87_passA real rc 0
+/home/user/cipher-lab/benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py:1489: DeprecationWarning: 'count' is passed as positional argument
+  stem = lambda p, A, B: (p and re.sub(r'(\.tsv)?$', f'_{A}_{B}\\1', p, 1))
+--pair T90 T53: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	26	50	19	0.947	0.4	75	0.658	1		25
+2	28	49	19	0.948	0.5	76	0.636	1		24
+3	27	48	19	0.947	0.6	73	0.640	1		23
+4	27	50	19	0.948	0.6	75	0.649	1		24
+5	28	50	20	0.949	0.5	77	0.641	1		25
+6	28	48	19	0.947	0.3	75	0.632	1		23
+7	28	50	20	0.949	0.5	77	0.641	1		25
+8	27	48	19	0.947	0.2	74	0.640	1		24
+9	28	48	19	0.947	0.5	75	0.632	1		26
+10	28	48	19	0.947	0.3	75	0.632	1		23
+11	27	48	19	0.947	0.1	74	0.640	1		26
+12	28	49	19	0.948	0.1	76	0.636	1		25
+13	26	49	19	0.947	0.3	74	0.653	1		23
+14	28	49	19	0.948	0.4	76	0.636	1		24
+applied passA_eval_heldout.tsv: positions 402, considered 25, changed 0 -> benchmark-tx/txeng4/5/eval/no87_passA_real_T90_T53.tsv
+--pair T76 T45: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	33	77	19	0.945	0.1	109	0.700	1		23
+2	33	74	19	0.963	0.0	107	0.692	1		20
+3	33	76	19	0.945	0.1	108	0.697	1		25
+4	32	73	19	0.943	0.1	104	0.695	1		23
+5	32	74	19	0.934	0.1	104	0.698	1		24
+6	33	78	20	0.946	0.1	110	0.703	1		24
+7	33	77	19	0.945	0.1	108	0.700	1		23
+8	31	75	19	0.943	0.1	105	0.708	1		23
+9	32	77	19	0.927	0.1	105	0.706	1		23
+10	33	75	19	0.944	0.1	106	0.694	1		23
+11	31	77	19	0.935	0.1	106	0.713	1		24
+12	32	73	19	0.943	0.1	103	0.695	1		24
+13	33	76	19	0.945	0.1	106	0.697	1		25
+14	32	76	19	0.944	0.1	106	0.704	1		23
+applied passA_eval_heldout.tsv: positions 402, considered 44, changed 1 -> benchmark-tx/txeng4/5/eval/no87_passA_real_T76_T45.tsv
+--pairs 2: combined benchmark-tx/txeng4/5/eval/no87_passA_real.tsv: changed 1, conflicts kept as base 0
+
+## no87_passA ctrl1f rc 0
+/home/user/cipher-lab/benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py:1489: DeprecationWarning: 'count' is passed as positional argument
+  stem = lambda p, A, B: (p and re.sub(r'(\.tsv)?$', f'_{A}_{B}\\1', p, 1))
+--pair T90 T53: labels permuted seed 1; fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	26	50	19	0.395	0.0	76	0.658	1		26
+2	28	49	19	0.558	0.0	77	0.636	1		26
+3	27	48	19	0.467	0.0	75	0.640	1		26
+4	27	50	19	0.558	0.0	77	0.649	1		25
+5	28	50	20	0.513	0.0	78	0.641	1		18
+6	28	48	19	0.566	0.0	76	0.632	1		30
+7	28	50	20	0.538	0.0	78	0.641	1		17
+8	27	48	19	0.587	0.0	75	0.640	1		27
+9	28	48	19	0.566	0.0	76	0.632	1		26
+10	28	48	19	0.566	0.0	76	0.632	1		26
+11	27	48	19	0.427	0.0	75	0.640	1		28
+12	28	49	19	0.429	0.0	77	0.636	1		22
+13	26	49	19	0.640	0.0	75	0.653	1		27
+14	28	49	19	0.519	0.0	77	0.636	1		22
+applied passA_eval_heldout.tsv: positions 402, considered 25, changed 11 -> benchmark-tx/txeng4/5/eval/no87_passA_ctrl1f_T90_T53.tsv
+--pair T76 T45: labels permuted seed 1; fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	33	77	19	0.555	0.0	110	0.700	1		20
+2	33	74	19	0.561	0.0	107	0.692	1		21
+3	33	76	19	0.505	0.0	109	0.697	1		22
+4	32	73	19	0.486	0.0	105	0.695	1		22
+5	32	74	19	0.613	0.0	106	0.698	1		20
+6	33	78	20	0.550	0.0	111	0.703	1		21
+7	33	77	19	0.536	0.0	110	0.700	1		28
+8	31	75	19	0.632	0.0	106	0.708	1		23
+9	32	77	19	0.578	0.0	109	0.706	1		28
+10	33	75	19	0.528	0.0	108	0.694	1		20
+11	31	77	19	0.630	0.0	108	0.713	1		22
+12	32	73	19	0.514	0.0	105	0.695	1		23
+13	33	76	19	0.560	0.0	109	0.697	1		18
+14	32	76	19	0.537	0.0	108	0.704	1		27
+applied passA_eval_heldout.tsv: positions 402, considered 44, changed 17 -> benchmark-tx/txeng4/5/eval/no87_passA_ctrl1f_T76_T45.tsv
+--pairs 2: combined benchmark-tx/txeng4/5/eval/no87_passA_ctrl1f.tsv: changed 28, conflicts kept as base 0
+
+## no87_passA ctrl3f rc 0
+/home/user/cipher-lab/benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py:1489: DeprecationWarning: 'count' is passed as positional argument
+  stem = lambda p, A, B: (p and re.sub(r'(\.tsv)?$', f'_{A}_{B}\\1', p, 1))
+--pair T90 T53: labels permuted seed 3; fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	26	50	19	0.487	0.0	76	0.658	1		27
+2	28	49	19	0.584	0.0	77	0.636	1		26
+3	27	48	19	0.507	0.0	75	0.640	1		22
+4	27	50	19	0.519	0.0	77	0.649	1		25
+5	28	50	20	0.590	0.0	78	0.641	1		25
+6	28	48	19	0.579	0.0	76	0.632	1		23
+7	28	50	20	0.538	0.0	78	0.641	1		27
+8	27	48	19	0.400	0.0	75	0.640	1		21
+9	28	48	19	0.434	0.0	76	0.632	1		28
+10	28	48	19	0.632	0.0	76	0.632	1		24
+11	27	48	19	0.427	0.0	75	0.640	1		17
+12	28	49	19	0.584	0.0	77	0.636	1		27
+13	26	49	19	0.587	0.0	75	0.653	1		26
+14	28	49	19	0.558	0.0	77	0.636	1		22
+applied passA_eval_heldout.tsv: positions 402, considered 25, changed 10 -> benchmark-tx/txeng4/5/eval/no87_passA_ctrl3f_T90_T53.tsv
+--pair T76 T45: labels permuted seed 3; fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	33	77	19	0.591	0.0	110	0.700	1		26
+2	33	74	19	0.589	0.0	107	0.692	1		20
+3	33	76	19	0.532	0.0	109	0.697	1		24
+4	32	73	19	0.619	0.0	105	0.695	1		24
+5	32	74	19	0.613	0.0	106	0.698	1		22
+6	33	78	20	0.667	0.0	111	0.703	1		25
+7	33	77	19	0.682	0.0	110	0.700	1		22
+8	31	75	19	0.519	0.0	106	0.708	1		23
+9	32	77	19	0.596	0.0	109	0.706	1		23
+10	33	75	19	0.556	0.0	108	0.694	1		19
+11	31	77	19	0.713	0.0	108	0.713	1		20
+12	32	73	19	0.552	0.0	105	0.695	1		27
+13	33	76	19	0.505	0.0	109	0.697	1		21
+14	32	76	19	0.602	0.0	108	0.704	1		23
+applied passA_eval_heldout.tsv: positions 402, considered 44, changed 17 -> benchmark-tx/txeng4/5/eval/no87_passA_ctrl3f_T76_T45.tsv
+--pairs 2: combined benchmark-tx/txeng4/5/eval/no87_passA_ctrl3f.tsv: changed 27, conflicts kept as base 0
+
+## no87_passA ctrl2f rc 0
+/home/user/cipher-lab/benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py:1489: DeprecationWarning: 'count' is passed as positional argument
+  stem = lambda p, A, B: (p and re.sub(r'(\.tsv)?$', f'_{A}_{B}\\1', p, 1))
+--pair T90 T53: labels permuted seed 2; fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	26	50	19	0.539	0.0	76	0.658	1		30
+2	28	49	19	0.545	0.0	77	0.636	1		20
+3	27	48	19	0.560	0.0	75	0.640	1		26
+4	27	50	19	0.610	0.0	77	0.649	1		27
+5	28	50	20	0.500	0.0	78	0.641	1		28
+6	28	48	19	0.500	0.0	76	0.632	1		20
+7	28	50	20	0.526	0.0	78	0.641	1		27
+8	27	48	19	0.587	0.0	75	0.640	1		24
+9	28	48	19	0.553	0.0	76	0.632	1		24
+10	28	48	19	0.553	0.0	76	0.632	1		22
+11	27	48	19	0.440	0.0	75	0.640	1		27
+12	28	49	19	0.532	0.0	77	0.636	1		27
+13	26	49	19	0.440	0.0	75	0.653	1		30
+14	28	49	19	0.416	0.0	77	0.636	1		28
+applied passA_eval_heldout.tsv: positions 402, considered 25, changed 14 -> benchmark-tx/txeng4/5/eval/no87_passA_ctrl2f_T90_T53.tsv
+--pair T76 T45: labels permuted seed 2; fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	33	77	19	0.582	0.0	110	0.700	1		24
+2	33	74	19	0.486	0.0	107	0.692	1		24
+3	33	76	19	0.624	0.0	109	0.697	1		26
+4	32	73	19	0.524	0.0	105	0.695	1		23
+5	32	74	19	0.500	0.0	106	0.698	1		23
+6	33	78	20	0.613	0.0	111	0.703	1		21
+7	33	77	19	0.527	0.0	110	0.700	1		23
+8	31	75	19	0.472	0.0	106	0.708	1		21
+9	32	77	19	0.688	0.0	109	0.706	1		24
+10	33	75	19	0.574	0.0	108	0.694	1		22
+11	31	77	19	0.639	0.0	108	0.713	1		24
+12	32	73	19	0.610	0.0	105	0.695	1		19
+13	33	76	19	0.569	0.0	109	0.697	1		23
+14	32	76	19	0.481	0.0	108	0.704	1		18
+applied passA_eval_heldout.tsv: positions 402, considered 44, changed 19 -> benchmark-tx/txeng4/5/eval/no87_passA_ctrl2f_T76_T45.tsv
+--pairs 2: combined benchmark-tx/txeng4/5/eval/no87_passA_ctrl2f.tsv: changed 33, conflicts kept as base 0
+
+## no87_passA ctrl5f rc 0
+/home/user/cipher-lab/benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py:1489: DeprecationWarning: 'count' is passed as positional argument
+  stem = lambda p, A, B: (p and re.sub(r'(\.tsv)?$', f'_{A}_{B}\\1', p, 1))
+--pair T90 T53: labels permuted seed 5; fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	26	50	19	0.461	0.0	76	0.658	1		27
+2	28	49	19	0.442	0.0	77	0.636	1		29
+3	27	48	19	0.667	0.0	75	0.640	1		29
+4	27	50	19	0.545	0.0	77	0.649	1		19
+5	28	50	20	0.551	0.0	78	0.641	1		29
+6	28	48	19	0.605	0.0	76	0.632	1		27
+7	28	50	20	0.474	0.0	78	0.641	1		26
+8	27	48	19	0.600	0.0	75	0.640	1		26
+9	28	48	19	0.487	0.0	76	0.632	1		22
+10	28	48	19	0.421	0.0	76	0.632	1		30
+11	27	48	19	0.733	0.0	75	0.640	1		26
+12	28	49	19	0.675	0.0	77	0.636	1		24
+13	26	49	19	0.587	0.0	75	0.653	1		25
+14	28	49	19	0.494	0.0	77	0.636	1		26
+applied passA_eval_heldout.tsv: positions 402, considered 25, changed 11 -> benchmark-tx/txeng4/5/eval/no87_passA_ctrl5f_T90_T53.tsv
+--pair T76 T45: labels permuted seed 5; fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	33	77	19	0.500	0.0	110	0.700	1		17
+2	33	74	19	0.636	0.0	107	0.692	1		21
+3	33	76	19	0.505	0.0	109	0.697	1		20
+4	32	73	19	0.514	0.0	105	0.695	1		21
+5	32	74	19	0.509	0.0	106	0.698	1		21
+6	33	78	20	0.414	0.0	111	0.703	1		21
+7	33	77	19	0.655	0.0	110	0.700	1		27
+8	31	75	19	0.453	0.0	106	0.708	1		23
+9	32	77	19	0.550	0.0	109	0.706	1		23
+10	33	75	19	0.519	0.0	108	0.694	1		24
+11	31	77	19	0.546	0.0	108	0.713	1		16
+12	32	73	19	0.495	0.0	105	0.695	1		20
+13	33	76	19	0.569	0.0	109	0.697	1		23
+14	32	76	19	0.481	0.0	108	0.704	1		29
+applied passA_eval_heldout.tsv: positions 402, considered 44, changed 14 -> benchmark-tx/txeng4/5/eval/no87_passA_ctrl5f_T76_T45.tsv
+--pairs 2: combined benchmark-tx/txeng4/5/eval/no87_passA_ctrl5f.tsv: changed 25, conflicts kept as base 0
+
+## no87_passA rev rc 0
+/home/user/cipher-lab/benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py:1489: DeprecationWarning: 'count' is passed as positional argument
+  stem = lambda p, A, B: (p and re.sub(r'(\.tsv)?$', f'_{A}_{B}\\1', p, 1))
+--pair T90 T53: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	50	26	19	0.947	0.4	75	0.658	1		25
+2	49	28	19	0.948	0.5	76	0.636	1		24
+3	48	27	19	0.947	0.6	73	0.640	1		23
+4	50	27	19	0.948	0.6	75	0.649	1		24
+5	50	28	20	0.949	0.5	77	0.641	1		25
+6	48	28	19	0.947	0.3	75	0.632	1		23
+7	50	28	20	0.949	0.5	77	0.641	1		25
+8	48	27	19	0.947	0.2	74	0.640	1		24
+9	48	28	19	0.947	0.5	75	0.632	1		26
+10	48	28	19	0.947	0.3	75	0.632	1		23
+11	48	27	19	0.947	0.1	74	0.640	1		26
+12	49	28	19	0.948	0.1	76	0.636	1		25
+13	49	26	19	0.947	0.3	74	0.653	1		23
+14	49	28	19	0.948	0.4	76	0.636	1		24
+applied passA_eval_heldout.tsv: positions 402, considered 25, changed 25 -> benchmark-tx/txeng4/5/eval/no87_passA_rev_T90_T53.tsv
+--pair T76 T45: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	77	33	19	0.945	0.1	109	0.700	1		23
+2	74	33	19	0.963	0.0	107	0.692	1		20
+3	76	33	19	0.945	0.1	108	0.697	1		25
+4	73	32	19	0.943	0.1	104	0.695	1		23
+5	74	32	19	0.934	0.1	104	0.698	1		24
+6	78	33	20	0.946	0.1	110	0.703	1		24
+7	77	33	19	0.945	0.1	108	0.700	1		23
+8	75	31	19	0.943	0.1	105	0.708	1		23
+9	77	32	19	0.927	0.1	105	0.706	1		23
+10	75	33	19	0.944	0.1	106	0.694	1		23
+11	77	31	19	0.935	0.1	106	0.713	1		24
+12	73	32	19	0.943	0.1	103	0.695	1		24
+13	76	33	19	0.945	0.1	106	0.697	1		25
+14	76	32	19	0.944	0.1	106	0.704	1		23
+applied passA_eval_heldout.tsv: positions 402, considered 44, changed 43 -> benchmark-tx/txeng4/5/eval/no87_passA_rev_T76_T45.tsv
+--pairs 2: combined benchmark-tx/txeng4/5/eval/no87_passA_rev.tsv: changed 68, conflicts kept as base 0
+
+## no87_passA ctrl4f rc 0
+/home/user/cipher-lab/benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py:1489: DeprecationWarning: 'count' is passed as positional argument
+  stem = lambda p, A, B: (p and re.sub(r'(\.tsv)?$', f'_{A}_{B}\\1', p, 1))
+--pair T90 T53: labels permuted seed 4; fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	26	50	19	0.605	0.0	76	0.658	1		30
+2	28	49	19	0.532	0.0	77	0.636	1		29
+3	27	48	19	0.480	0.0	75	0.640	1		23
+4	27	50	19	0.623	0.0	77	0.649	1		24
+5	28	50	20	0.564	0.0	78	0.641	1		22
+6	28	48	19	0.526	0.0	76	0.632	1		24
+7	28	50	20	0.564	0.0	78	0.641	1		17
+8	27	48	19	0.480	0.0	75	0.640	1		21
+9	28	48	19	0.579	0.0	76	0.632	1		21
+10	28	48	19	0.526	0.0	76	0.632	1		22
+11	27	48	19	0.627	0.0	75	0.640	1		26
+12	28	49	19	0.545	0.0	77	0.636	1		25
+13	26	49	19	0.680	0.0	75	0.653	1		15
+14	28	49	19	0.558	0.0	77	0.636	1		25
+applied passA_eval_heldout.tsv: positions 402, considered 25, changed 12 -> benchmark-tx/txeng4/5/eval/no87_passA_ctrl4f_T90_T53.tsv
+--pair T76 T45: labels permuted seed 4; fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	33	77	19	0.473	0.0	110	0.700	1		18
+2	33	74	19	0.589	0.0	107	0.692	1		23
+3	33	76	19	0.587	0.0	109	0.697	1		21
+4	32	73	19	0.533	0.0	105	0.695	1		23
+5	32	74	19	0.557	0.0	106	0.698	1		15
+6	33	78	20	0.559	0.0	111	0.703	1		24
+7	33	77	19	0.509	0.0	110	0.700	1		19
+8	31	75	19	0.538	0.0	106	0.708	1		22
+9	32	77	19	0.486	0.0	109	0.706	1		27
+10	33	75	19	0.481	0.0	108	0.694	1		14
+11	31	77	19	0.630	0.0	108	0.713	1		28
+12	32	73	19	0.581	0.0	105	0.695	1		22
+13	33	76	19	0.569	0.0	109	0.697	1		19
+14	32	76	19	0.556	0.0	108	0.704	1		26
+applied passA_eval_heldout.tsv: positions 402, considered 44, changed 20 -> benchmark-tx/txeng4/5/eval/no87_passA_ctrl4f_T76_T45.tsv
+--pairs 2: combined benchmark-tx/txeng4/5/eval/no87_passA_ctrl4f.tsv: changed 32, conflicts kept as base 0
+
+## no87_L real rc 0
+/home/user/cipher-lab/benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py:1489: DeprecationWarning: 'count' is passed as positional argument
+  stem = lambda p, A, B: (p and re.sub(r'(\.tsv)?$', f'_{A}_{B}\\1', p, 1))
+--pair T90 T53: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	26	50	19	0.947	0.4	75	0.658	1		25
+2	28	49	19	0.948	0.5	76	0.636	1		24
+3	27	48	19	0.947	0.6	73	0.640	1		23
+4	27	50	19	0.948	0.6	75	0.649	1		24
+5	28	50	20	0.949	0.5	77	0.641	1		25
+6	28	48	19	0.947	0.3	75	0.632	1		23
+7	28	50	20	0.949	0.5	77	0.641	1		25
+8	27	48	19	0.947	0.2	74	0.640	1		24
+9	28	48	19	0.947	0.5	75	0.632	1		26
+10	28	48	19	0.947	0.3	75	0.632	1		23
+11	27	48	19	0.947	0.1	74	0.640	1		26
+12	28	49	19	0.948	0.1	76	0.636	1		25
+13	26	49	19	0.947	0.3	74	0.653	1		23
+14	28	49	19	0.948	0.4	76	0.636	1		24
+applied labels_eval_heldout.tsv: positions 402, considered 25, changed 0 -> benchmark-tx/txeng4/5/eval/no87_L_real_T90_T53.tsv
+--pair T76 T45: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	33	77	19	0.945	0.1	109	0.700	1		23
+2	33	74	19	0.963	0.0	107	0.692	1		20
+3	33	76	19	0.945	0.1	108	0.697	1		25
+4	32	73	19	0.943	0.1	104	0.695	1		23
+5	32	74	19	0.934	0.1	104	0.698	1		24
+6	33	78	20	0.946	0.1	110	0.703	1		24
+7	33	77	19	0.945	0.1	108	0.700	1		23
+8	31	75	19	0.943	0.1	105	0.708	1		23
+9	32	77	19	0.927	0.1	105	0.706	1		23
+10	33	75	19	0.944	0.1	106	0.694	1		23
+11	31	77	19	0.935	0.1	106	0.713	1		24
+12	32	73	19	0.943	0.1	103	0.695	1		24
+13	33	76	19	0.945	0.1	106	0.697	1		25
+14	32	76	19	0.944	0.1	106	0.704	1		23
+applied labels_eval_heldout.tsv: positions 402, considered 43, changed 1 -> benchmark-tx/txeng4/5/eval/no87_L_real_T76_T45.tsv
+--pairs 2: combined benchmark-tx/txeng4/5/eval/no87_L_real.tsv: changed 1, conflicts kept as base 0
+
+## f152r_passA real rc 0
+/home/user/cipher-lab/benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py:1489: DeprecationWarning: 'count' is passed as positional argument
+  stem = lambda p, A, B: (p and re.sub(r'(\.tsv)?$', f'_{A}_{B}\\1', p, 1))
+--pair T90 T53: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+0	28	50	9	0.949	0.4	77	0.641	1		25
+applied passA.tsv: positions 95, considered 5, changed 0 -> benchmark-tx/txeng4/5/eval/f152r_passA_real_T90_T53.tsv
+--pair T76 T45: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+0	33	78	8	0.928	0.4	104	0.703	1		24
+applied passA.tsv: positions 95, considered 3, changed 0 -> benchmark-tx/txeng4/5/eval/f152r_passA_real_T76_T45.tsv
+--pairs 2: combined benchmark-tx/txeng4/5/eval/f152r_passA_real.tsv: changed 0, conflicts kept as base 0
+
+## f152r_passA ctrl1f rc 0
+/home/user/cipher-lab/benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py:1489: DeprecationWarning: 'count' is passed as positional argument
+  stem = lambda p, A, B: (p and re.sub(r'(\.tsv)?$', f'_{A}_{B}\\1', p, 1))
+--pair T90 T53: labels permuted seed 1; fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+0	28	50	9	0.641	0.0	78	0.641	1		26
+applied passA.tsv: positions 95, considered 5, changed 0 -> benchmark-tx/txeng4/5/eval/f152r_passA_ctrl1f_T90_T53.tsv
+--pair T76 T45: labels permuted seed 1; fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+0	33	78	8	0.622	0.0	111	0.703	1		23
+applied passA.tsv: positions 95, considered 3, changed 1 -> benchmark-tx/txeng4/5/eval/f152r_passA_ctrl1f_T76_T45.tsv
+--pairs 2: combined benchmark-tx/txeng4/5/eval/f152r_passA_ctrl1f.tsv: changed 1, conflicts kept as base 0
+
+## f152r_passA ctrl2f rc 0
+/home/user/cipher-lab/benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py:1489: DeprecationWarning: 'count' is passed as positional argument
+  stem = lambda p, A, B: (p and re.sub(r'(\.tsv)?$', f'_{A}_{B}\\1', p, 1))
+--pair T90 T53: labels permuted seed 2; fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+0	28	50	9	0.603	0.0	78	0.641	1		24
+applied passA.tsv: positions 95, considered 5, changed 3 -> benchmark-tx/txeng4/5/eval/f152r_passA_ctrl2f_T90_T53.tsv
+--pair T76 T45: labels permuted seed 2; fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+0	33	78	8	0.523	0.0	111	0.703	1		26
+applied passA.tsv: positions 95, considered 3, changed 1 -> benchmark-tx/txeng4/5/eval/f152r_passA_ctrl2f_T76_T45.tsv
+--pairs 2: combined benchmark-tx/txeng4/5/eval/f152r_passA_ctrl2f.tsv: changed 4, conflicts kept as base 0
+
+## f152r_passA ctrl3f rc 0
+/home/user/cipher-lab/benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py:1489: DeprecationWarning: 'count' is passed as positional argument
+  stem = lambda p, A, B: (p and re.sub(r'(\.tsv)?$', f'_{A}_{B}\\1', p, 1))
+--pair T90 T53: labels permuted seed 3; fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+0	28	50	9	0.615	0.0	78	0.641	1		23
+applied passA.tsv: positions 95, considered 5, changed 4 -> benchmark-tx/txeng4/5/eval/f152r_passA_ctrl3f_T90_T53.tsv
+--pair T76 T45: labels permuted seed 3; fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+0	33	78	8	0.559	0.0	111	0.703	1		21
+applied passA.tsv: positions 95, considered 3, changed 1 -> benchmark-tx/txeng4/5/eval/f152r_passA_ctrl3f_T76_T45.tsv
+--pairs 2: combined benchmark-tx/txeng4/5/eval/f152r_passA_ctrl3f.tsv: changed 5, conflicts kept as base 0
+
+## f152r_passA ctrl4f rc 0
+/home/user/cipher-lab/benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py:1489: DeprecationWarning: 'count' is passed as positional argument
+  stem = lambda p, A, B: (p and re.sub(r'(\.tsv)?$', f'_{A}_{B}\\1', p, 1))
+--pair T90 T53: labels permuted seed 4; fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+0	28	50	9	0.526	0.0	78	0.641	1		22
+applied passA.tsv: positions 95, considered 5, changed 5 -> benchmark-tx/txeng4/5/eval/f152r_passA_ctrl4f_T90_T53.tsv
+--pair T76 T45: labels permuted seed 4; fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+0	33	78	8	0.541	0.0	111	0.703	1		13
+applied passA.tsv: positions 95, considered 3, changed 3 -> benchmark-tx/txeng4/5/eval/f152r_passA_ctrl4f_T76_T45.tsv
+--pairs 2: combined benchmark-tx/txeng4/5/eval/f152r_passA_ctrl4f.tsv: changed 8, conflicts kept as base 0
+
+## f152r_passA ctrl5f rc 0
+/home/user/cipher-lab/benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py:1489: DeprecationWarning: 'count' is passed as positional argument
+  stem = lambda p, A, B: (p and re.sub(r'(\.tsv)?$', f'_{A}_{B}\\1', p, 1))
+--pair T90 T53: labels permuted seed 5; fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+0	28	50	9	0.603	0.0	78	0.641	1		24
+applied passA.tsv: positions 95, considered 5, changed 5 -> benchmark-tx/txeng4/5/eval/f152r_passA_ctrl5f_T90_T53.tsv
+--pair T76 T45: labels permuted seed 5; fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+0	33	78	8	0.631	0.0	111	0.703	1		24
+applied passA.tsv: positions 95, considered 3, changed 2 -> benchmark-tx/txeng4/5/eval/f152r_passA_ctrl5f_T76_T45.tsv
+--pairs 2: combined benchmark-tx/txeng4/5/eval/f152r_passA_ctrl5f.tsv: changed 7, conflicts kept as base 0
+
+## f152r_passA rev rc 0
+/home/user/cipher-lab/benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py:1489: DeprecationWarning: 'count' is passed as positional argument
+  stem = lambda p, A, B: (p and re.sub(r'(\.tsv)?$', f'_{A}_{B}\\1', p, 1))
+--pair T90 T53: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+0	50	28	9	0.949	0.4	77	0.641	1		25
+applied passA.tsv: positions 95, considered 5, changed 5 -> benchmark-tx/txeng4/5/eval/f152r_passA_rev_T90_T53.tsv
+--pair T76 T45: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+0	78	33	8	0.928	0.4	104	0.703	1		24
+applied passA.tsv: positions 95, considered 3, changed 3 -> benchmark-tx/txeng4/5/eval/f152r_passA_rev_T76_T45.tsv
+--pairs 2: combined benchmark-tx/txeng4/5/eval/f152r_passA_rev.tsv: changed 8, conflicts kept as base 0
+
+## f152r_Z real rc 0
+/home/user/cipher-lab/benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py:1489: DeprecationWarning: 'count' is passed as positional argument
+  stem = lambda p, A, B: (p and re.sub(r'(\.tsv)?$', f'_{A}_{B}\\1', p, 1))
+--pair T90 T53: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+0	28	50	9	0.949	0.4	77	0.641	1		25
+applied passZ_pipeline.tsv: positions 96, considered 5, changed 0 -> benchmark-tx/txeng4/5/eval/f152r_Z_real_T90_T53.tsv
+--pair T76 T45: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+0	33	78	8	0.928	0.4	104	0.703	1		24
+applied passZ_pipeline.tsv: positions 96, considered 3, changed 0 -> benchmark-tx/txeng4/5/eval/f152r_Z_real_T76_T45.tsv
+--pairs 2: combined benchmark-tx/txeng4/5/eval/f152r_Z_real.tsv: changed 0, conflicts kept as base 0
+
