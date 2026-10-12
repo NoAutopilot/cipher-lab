@@ -1,0 +1,433 @@
+passage	pos	sign_id	alt	conf	note
+f98v_L01	1	T	f	L	after prose, run start uncertain
+f98v_L01	2	II		H	
+f98v_L01	3	0	o	M	
+f98v_L01	4	m		H	
+f98v_L01	5	sq		H	
+f98v_L01	6	#		H	
+f98v_L01	7	1		H	
+f98v_L01	8	z	Z	M	
+f98v_L01	9	0		M	
+f98v_L01	10	t	0'	M	
+f98v_L01	11	3	z	M	
+f98v_L01	12	1		H	
+f98v_L01	13	a	c	M	
+f98v_L01	14	L		M	
+f98v_L01	15	4		H	
+f98v_L01	16	+		H	
+f98v_L01	17	0		H	
+f98v_L02	1	a		M	
+f98v_L02	2	m		H	
+f98v_L02	3	0		M	
+f98v_L02	4	Z	z	M	
+f98v_L02	5	1		H	
+f98v_L02	6	f		H	
+f98v_L02	7	1		H	
+f98v_L02	8	a		H	
+f98v_L02	9	a	c	M	
+f98v_L02	10	x		M	
+f98v_L02	11	4		H	
+f98v_L02	12	sq		M	
+f98v_L02	13	v		M	
+f98v_L02	14	L		H	
+f98v_L02	15	0		H	
+f98v_L02	16	f		H	
+f98v_L02	17	v		H	
+f98v_L02	18	4		M	
+f98v_L02	19	4		M	
+f98v_L02	20	0		H	
+f98v_L02	21	II		H	
+f98v_L02	22	v		M	
+f98v_L02	23	#		H	
+f98v_L02	24	0		H	
+f98v_L02	25	sq		H	
+f98v_L02	26	II		H	
+f98v_L02	27	m		H	
+f98v_L02	28	1		H	
+f98v_L02	29	w		M	
+f98v_L02	30	v		M	
+f98v_L02	31	t	0'	L	
+f98v_L02	32	sq		H	
+f98v_L02	33	0		M	
+f98v_L02	34	y		M	
+f98v_L02	35	4		H	
+f98v_L02	36	a		M	
+f98v_L02	37	m		H	
+f98v_L02	38	1		H	
+f98v_L02	39	4		H	
+f98v_L02	40	t	0'	L	
+f98v_L02	41	+		H	
+f98v_L02	42	1		H	prose
+f98v_L02	43	between		M	
+f98v_L02	44	sq	0	M	
+f98v_L02	45	run		M	
+f98v_L02	46	and		M	
+f98v_L02	47	y		M	
+f98v_L03	1	m		M	
+f98v_L03	2	1		H	
+f98v_L03	3	p		M	
+f98v_L03	4	4		H	
+f98v_L03	5	+		H	
+f98v_L03	6	f		H	
+f98v_L03	7	v		H	
+f98v_L03	8	0		H	
+f98v_L03	9	sq		H	
+f98v_L03	10	3		M	
+f98v_L03	11	L		H	
+f98v_L03	12	Z	z	M	
+f98v_L03	13	v		H	
+f98v_L03	14	NEW:x-over-tail	y	L	
+f98v_L03	15	t	0'	L	
+f98v_L03	16	a		M	
+f98v_L03	17	m		H	
+f98v_L03	18	1		H	
+f98v_L03	19	#	II	M	
+f98v_L03	20	0		H	
+f98v_L03	21	4		H	
+f98v_L03	22	v		H	
+f98v_L03	23	1		H	
+f98v_L03	24	sq		H	
+f98v_L03	25	3		M	
+f98v_L03	26	p		M	
+f98v_L03	27	0		H	
+f98v_L03	28	NEW:x-over-tail	y	L	
+f98v_L03	29	#		M	
+f98v_L03	30	w		M	
+f98v_L03	31	y		H	
+f98v_L03	32	1	L	M	
+f98v_L03	33	v		H	
+f98v_L03	34	t	0'	L	
+f98v_L03	35	4		H	
+f98v_L03	36	m		H	
+f98v_L03	37	sq		H	
+f98v_L03	38	0		M	
+f98v_L03	39	.		L	
+f98v_L03	40	f		H	
+f98v_L03	41	t		M	
+f98v_L03	42	1		H	
+f98v_L03	43	m		H	
+f98v_L03	44	c		H	
+f98v_L03	45	3		H	
+f98v_L03	46	NEW:0-with-bar-through	0'	M	
+f98v_L03	47	a		M	
+f98v_L03	48	y		H	
+f98v_L03	49	p		M	
+f98v_L03	50	w		M	
+f98v_L03	51	o		M	
+f98v_L03	52	m		H	
+f98v_L03	53	1		M	
+f98v_L03	54	.		L	
+f98v_L03	55	Z		M	
+f98v_L03	56	t	0'	L	
+f98v_L04	1	1		H	
+f98v_L04	2	sq		H	
+f98v_L04	3	#		H	
+f98v_L04	4	f	T	L	
+f98v_L04	5	t	0'	L	
+f98v_L04	6	c		H	
+f98v_L04	7	y		H	
+f98v_L04	8	x		M	
+f98v_L04	9	3		M	
+f98v_L04	10	+	t	L	
+f98v_L04	11	1		L	
+f98v_L04	12	a		M	
+f98v_L04	13	m		H	
+f98v_L04	14	4		H	
+f98v_L04	15	v		H	
+f98v_L04	16	sq		H	
+f98v_L04	17	3		M	
+f98v_L04	18	w		M	
+f98v_L04	19	1		H	
+f98v_L04	20	a		M	
+f98v_L04	21	m		H	
+f98v_L04	22	4		H	
+f98v_L04	23	m		H	
+f98v_L04	24	o		M	
+f98v_L04	25	Z		M	
+f98v_L04	26	v		M	
+f98v_L04	27	m		H	
+f98v_L04	28	a	c	M	
+f98v_L04	29	4		M	
+f98v_L04	30	L	1	M	
+f98v_L04	31	sq		H	
+f98v_L04	32	#		H	
+f98v_L04	33	0		H	
+f98v_L04	34	t	0'	L	
+f98v_L04	35	sq		H	
+f98v_L04	36	1		H	
+f98v_L04	37	L		M	
+f98v_L04	38	f		M	
+f98v_L04	39	a		M	
+f98v_L04	40	m		H	
+f98v_L04	41	0		H	
+f98v_L04	42	4		H	
+f98v_L04	43	a		M	
+f98v_L04	44	m		H	
+f98v_L04	45	1		H	
+f98v_L04	46	sq		H	
+f98v_L04	47	t	0'	L	
+f98v_L04	48	v		M	
+f98v_L04	49	w		M	
+f98v_L05	1	m		M	
+f98v_L05	2	p		M	
+f98v_L05	3	II	#	M	
+f98v_L05	4	m		M	
+f98v_L05	5	4		H	
+f98v_L05	6	L	1	M	
+f98v_L05	7	0		H	
+f98v_L05	8	w		M	
+f98v_L05	9	sq		H	
+f98v_L05	10	t	0'	L	
+f98v_L05	11	w		M	
+f98v_L05	12	y		M	
+f98v_L05	13	#	II	M	
+f98v_L05	14	.		L	
+f98v_L05	15	sq		H	
+f98v_L05	16	1		H	
+f98v_L05	17	3		M	
+f98v_L05	18	t	0'	M	
+f98v_L05	19	p		M	
+f98v_L05	20	L		M	
+f98v_L05	21	NEW:x-over-tail	y	L	
+f98v_L05	22	#	II	M	
+f98v_L05	23	3		M	
+f98v_L05	24	#		M	
+f98v_L05	25	NEW:u-cup	c	M	
+f98v_L05	26	1		H	
+f98v_L05	27	c		H	
+f98v_L05	28	NEW:y-long-tail	y	L	
+f98v_L05	29	f		H	
+f98v_L05	30	4		H	
+f98v_L05	31	L	1	M	
+f98v_L05	32	0		H	
+f98v_L05	33	m		H	
+f98v_L05	34	v		H	
+f98v_L05	35	1		H	
+f98v_L05	36	NEW:x-over-tail	y	L	
+f98v_L05	37	v		M	
+f98v_L05	38	f		H	
+f98v_L05	39	3		M	
+f98v_L05	40	#		M	
+f98v_L05	41	1		H	
+f98v_L05	42	Z		M	
+f98v_L05	43	y		M	
+f98v_L05	44	NEW:x-over-tail	y	L	
+f98v_L05	45	sq		H	
+f98v_L05	46	L		M	
+f98v_L05	47	0		H	
+f98v_L05	48	m		H	
+f98v_L05	49	w		M	
+f98v_L05	50	#		M	
+f98v_L05	51	1		H	
+f98v_L06	1	T		M	
+f98v_L06	2	m		H	
+f98v_L06	3	x		M	
+f98v_L06	4	3		M	
+f98v_L06	5	w		M	
+f98v_L06	6	L		M	
+f98v_L06	7	#		M	
+f98v_L06	8	0		H	
+f98v_L06	9	4		H	
+f98v_L06	10	v		H	
+f98v_L06	11	f		H	
+f98v_L06	12	y		H	
+f98v_L06	13	sq		H	
+f98v_L06	14	3		M	
+f98v_L06	15	4		M	
+f98v_L06	16	p		M	
+f98v_L06	17	w		M	
+f98v_L06	18	0		H	
+f98v_L06	19	v		M	
+f98v_L06	20	-:-		M	
+f98v_L06	21	4		H	
+f98v_L06	22	1		H	
+f98v_L06	23	v		M	
+f98v_L06	24	m		H	
+f98v_L06	25	p		M	
+f98v_L06	26	0		H	
+f98v_L06	27	NEW:x-over-tail	p	L	
+f98v_L06	28	1		H	
+f98v_L06	29	c		H	
+f98v_L06	30	v		M	
+f98v_L06	31	+		H	
+f113e_L02	1	T	f	L	
+f113e_L02	2	L		M	
+f113e_L02	3	4		M	
+f113e_L02	4	z		M	
+f113e_L02	5	0		M	
+f113_L03	1	t	NEW:d	L	
+f113_L03	2	w		M	
+f113_L03	3	p		M	
+f113_L03	4	0	t	L	
+f113_L03	5	v		M	
+f113_L03	6	sq		H	
+f113_L03	7	t	0'	L	
+f113_L03	8	.		M	
+f113_L03	9	1		H	
+f113_L03	10	.		M	
+f113_L03	11	z		M	
+f113_L03	12	-:-		H	
+f113_L03	13	4		M	
+f113_L03	14	0		H	
+f113_L03	15	w		M	
+f113_L03	16	+		H	
+f113_L03	17	sq		H	
+f113_L03	18	t	0'	L	
+f113_L03	19	o		M	
+f113_L03	20	c		H	
+f113_L03	21	m		H	
+f113_L03	22	t		M	
+f113_L03	23	v		M	
+f113_L03	24	o		M	
+f113_L03	25	m		H	
+f113_L03	26	c		H	
+f113_L03	27	sq		H	
+f113_L03	28	#		H	
+f113_L03	29	a		M	
+f113_L03	30	w		M	
+f113_L03	31	y		H	
+f113_L03	32	L	1	M	
+f113_L03	33	t	NEW:d	L	
+f113_L03	34	y		H	
+f113_L03	35	m		H	
+f113_L03	36	w		M	
+f113_L03	37	sq		H	
+f113_L03	38	1		M	
+f113_L03	39	t	NEW:d	L	
+f113_L03	40	t		L	
+f113_L03	41	?		L	
+f113_L03	42	sq		M	
+f113_L03	43	0		M	
+f113_L03	44	c		H	
+f113_L03	45	.		M	
+f113_L03	46	1		H	
+f113_L03	47	.		M	
+f113_L03	48	v		H	
+f113_L03	49	o		M	
+f113_L03	50	0		M	
+f113_L03	51	sq		H	
+f113_L03	52	v		M	
+f113_L03	53	L		H	
+f113_L03	54	0		H	
+f113_L03	55	c		H	
+f113_L03	56	4	v	L	
+f113_L03	57	v		H	
+f113_L03	58	L	1	M	
+f113_L03	59	w		M	
+f113_L03	60	0		H	
+f113_L03	61	#		H	
+f113_L03	62	v		H	
+f113_L03	63	3		H	
+f113_L03	64	m		H	
+f113_L05	1	v		M	
+f113_L05	2	f		M	
+f113_L05	3	v		M	
+f113_L05	4	4		M	
+f113_L05	5	x	z	M	
+f113_L05	6	1		M	
+f113_L05	7	.		M	
+f113_L05	8	sq		H	
+f113_L05	9	L		M	
+f113_L05	10	t	0	M	
+f113_L05	11	0		H	
+f113_L05	12	t	0	L	
+f113_L05	13	c		H	
+f113_L05	14	.		M	
+f113_L05	15	1		H	
+f113_L05	16	.		M	
+f113_L05	17	sq		H	
+f113_L05	18	v		M	
+f113_L05	19	f		M	
+f113_L05	20	v		H	
+f113_L05	21	1		H	
+f113_L05	22	.		M	
+f113_L05	23	#		M	
+f113_L05	24	p		M	
+f113_L05	25	0		M	
+f113_L05	26	z		M	
+f113_L05	27	1		H	
+f113_L05	28	.		M	
+f113_L05	29	t		M	
+f113_L05	30	m		H	
+f113_L05	31	L		M	
+f113_L05	32	sq		M	
+f113_L05	33	#		H	
+f113_L05	34	p		M	
+f113_L05	35	4		H	
+f113_L05	36	L	1	M	
+f113_L05	37	-:-		M	
+f113_L05	38	0		H	
+f113_L05	39	w		M	
+f113_L05	40	1		H	
+f113_L05	41	#		H	
+f113_L05	42	0		H	
+f113_L05	43	z		M	
+f113_L05	44	1		H	
+f113_L05	45	.		M	
+f113_L05	46	w		M	
+f113_L05	47	0		H	
+f113_L05	48	f		M	
+f113_L05	49	3		M	
+f113_L05	50	c		H	
+f113_L05	51	1		H	
+f113_L05	52	v		M	
+f113_L05	53	#		H	
+f113_L05	54	0		H	
+f113_L05	55	sq		H	
+f113_L05	56	.		M	
+f113_L05	57	1		H	
+f113_L05	58	.		M	
+f113_L05	59	c		H	
+f113_L05	60	a		M	
+f113_L05	61	L		M	
+f113_L05	62	#		M	
+f113_L05	63	0		H	
+f113_L07	1	#	II	M	
+f113_L07	2	1		H	
+f113_L07	3	sq		H	
+f113_L07	4	v		M	
+f113_L07	5	o		M	
+f113_L07	6	v		M	
+f113_L07	7	w		M	
+f113_L07	8	y		M	
+f113_L07	9	f		H	
+f113_L07	10	3		M	
+f113_L07	11	L		M	
+f113_L07	12	o		M	
+f113_L07	13	c		H	
+f113_L07	14	1		H	
+f113_L07	15	.		M	
+f113_L07	16	#		H	
+f113_L07	17	1		H	
+f113_L07	18	.		M	
+f113_L07	19	sq		H	
+f113_L07	20	#	II	L	
+f113_L07	21	v		M	
+f113_L07	22	w		M	
+f113_L07	23	p		M	
+f113_L07	24	.		M	
+f113_L07	25	1		H	
+f113_L07	26	.		M	
+f113_L07	27	0		M	
+f113_L07	28	4		H	
+f113_L07	29	1		M	
+f113_L07	30	f		M	
+f113_L07	31	4		L	
+f113_L07	32	0		H	
+f113_L07	33	z		M	
+f113_L07	34	L		M	
+f113_L07	35	o		M	
+f113_L07	36	z		M	
+f113_L07	37	t	0'	L	
+f113_L07	38	t		M	
+f113_L07	39	sq		M	
+f113_L07	40	#		M	
+f113_L07	41	NEW:slash-thick		L	
+f113_L07	42	0		M	
+f113_L09	1	#		M	
+f113_L09	2	1		H	
+f113_L09	3	.		M	
+f113_L09	4	#		M	
+f113_L09	5	0		H	
+f113_L09	6	4		H	
+f113_L09	7	v		M	
