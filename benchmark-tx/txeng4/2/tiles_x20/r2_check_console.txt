@@ -1,0 +1,5 @@
+map: 253 rows, ops {'2:1': 18, 'unsure': 32, '1:1': 151, '1:2': 52} -> /home/user/cipher-lab/benchmark-tx/txeng4/2/tiles_x20/r2_map.tsv
+tokens-out: 128 1:1 boxes at 358 agreed positions -> /home/user/cipher-lab/benchmark-tx/txeng4/2/tiles_x20/r2_tokens.tsv
+check, new map, all its one-token tiles: n 183: at 0 76, -1 4, +1 10, +-2 11, none 82
+check, new map leave-one-out (own label hidden): n 178: at 0 53, -1 12, +1 18, +-2 12, none 83
+join_check --check-bound: PASS (steered=False) share0=0.415 (null p95 0.099) share+-1=0.077 (bound 0.160) -> /home/user/cipher-lab/benchmark-tx/txeng4/2/tiles_x20/r2_map.tsv.joincheck.json

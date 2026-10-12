@@ -1,0 +1,4 @@
+(i) boxes at agreed positions in round 2: 219, ops {'2:1': 16, 'unsure': 30, '1:1': 128, '1:2': 45}, share 1:1 = 0.584 (FAIL at 0.80)
+(ii) tiles 1:1 at the same position in both rounds: 38; per label # 3, 1 4, 0 3, a 3, 4 1, f 2, y 5, w 1, m 2, v 4, sq 4, x 1, -:- 1; labels with >= 2 tiles: 9 of 27 (FAIL at 15); non-inventory labels among tiles: {"v'": 3, 'h': 1}
+(iii) shift check sidecar: FAIL (steered None, share0 0.29775280898876405, p95_0 0.0851123595505618, share+-1 0.16853932584269662, bound 0.17415730337078653)
+PURITY GATE: FAIL -> tiles/TILES.tsv 38 rows

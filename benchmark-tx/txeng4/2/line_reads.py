@@ -4,9 +4,9 @@
   tiles/read.tsv      line, pos, sign   -- pass A's tokens (labels mapped through dint128_label_map.tsv) at pass-A positions
   tiles/read_alt.tsv  line, pos, sign   -- pass B's token at each aligned pass-A position where the two differ
   tiles/keep.tsv      line, pos         -- the pass-A positions where A and B carry the same label (agreed positions)
-    python3 line_reads.py"""
-import csv, os
-HERE = os.path.dirname(os.path.abspath(__file__)); T = os.path.join(HERE, 'tiles')
+    python3 line_reads.py [TILE_DIR]"""
+import csv, os, sys
+HERE = os.path.dirname(os.path.abspath(__file__)); T = os.path.join(HERE, sys.argv[1] if len(sys.argv) > 1 else 'tiles')
 draft = list(csv.DictReader(open(os.path.join(T, 'reads', 'ciphertext_draft.tsv')), delimiter='\t'))
 dis = {(r['line'], int(r['col'])): r for r in csv.DictReader(open(os.path.join(T, 'reads', 'disagreements.tsv')), delimiter='\t')}
 wideA = {l.split('\t')[0]: l.rstrip('\n').split('\t')[1].split() for l in open(os.path.join(T, 'reads', 'wideA.tsv'))}

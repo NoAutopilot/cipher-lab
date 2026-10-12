@@ -3,12 +3,13 @@
 s1/s2 overlap at its midpoint (TXE3-6 / OL1-BOXES rule), writing tiles/line_signs.tsv for box_token_align (page f130, line nn,
 s2 x offset +1600). Middle row = the smoothed row-ink profile's peak nearest the crop's vertical centre; a box is kept when its
 vertical centre lies within 0.9 x the pooled median sign height (31 px) of that peak (PREREG-txeng4-2 "Fixed inputs").
-    python3 middle_row.py"""
-import csv, os, numpy as np, cv2
+    python3 middle_row.py [TILE_DIR]"""
+import csv, os, sys, numpy as np, cv2
 from scipy.ndimage import uniform_filter1d
 from scipy.signal import find_peaks
 HERE = os.path.dirname(os.path.abspath(__file__))
-A = os.path.join(HERE, 'tiles', 'atlas')
+TD = os.path.join(HERE, sys.argv[1] if len(sys.argv) > 1 else 'tiles')   # optional tile dir (tiles_x/ for the exploration)
+A = os.path.join(TD, 'atlas')
 MH, BAND, OVER, OFF = 31.0, 0.9, 80, 1600
 rows = list(csv.DictReader(open(os.path.join(A, 'signs.tsv')), delimiter='\t'))
 out, log = [], []
@@ -40,7 +41,7 @@ n = {}
 for r in out:
     n[r['line']] = n.get(r['line'], 0) + 1; r['pos'] = n[r['line']]
 cols = ['sid', 'page', 'line', 'pos', 'x', 'y', 'w', 'h', 'rh', 'rw', 'dy', 'marks', 'src_page']
-with open(os.path.join(HERE, 'tiles', 'line_signs.tsv'), 'w') as f:
+with open(os.path.join(TD, 'line_signs.tsv'), 'w') as f:
     f.write('\t'.join(cols) + '\n')
     for r in out:
         f.write('\t'.join(str(r[c]) for c in cols) + '\n')

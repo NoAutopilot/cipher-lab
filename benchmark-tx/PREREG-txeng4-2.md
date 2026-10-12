@@ -175,7 +175,7 @@ or flag. No tuning after a score. No eval item (birago1572-no87, birago1572-f152
 LOOKS.tsv gets no row from this job. No confirm item, no sorter page, no owner evidence. No f.130 reading product opened. Nothing
 published. No follow-up (the next step is named in RESULTS with its cost, not run).
 
-## Addendum (12 Oct 2026 01:5x UTC by date -u; read-free tile pipeline run; no reader call made, no score of any new output)
+## Addendum (12 Oct 2026 01:3x UTC by date -u, corrected from a mis-typed 01:5x in the same minute; read-free tile pipeline run; no reader call made, no score of any new output)
 - PREREG pushed 908527f4 (01:29 UTC); baseline re-derivation (step 1, committed outputs only, scored by score.py): pass A mapped
   21/85 edits (err_true 0.247, S 13 D 2 I 6; raw 30/85 = 0.353), pass B mapped 16/85 (0.188, S 11 D 0 I 5; raw 26/85 = 0.306):
   the figures on file reproduce. norm.py is byte-identical to the committed outputs on both committed passes.

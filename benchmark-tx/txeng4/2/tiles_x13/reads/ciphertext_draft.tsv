@@ -1,0 +1,430 @@
+line	position	sign	confidence	alt	why
+f130_L02	1	t	H		agree
+f130_L02	2	o	H		agree
+f130_L02	3	c	H		agree
+f130_L02	4	y	H		agree
+f130_L02	5	x	H		agree
+f130_L02	6	m	H		agree
+f130_L02	7	sq	H		agree
+f130_L02	8	1	M	B:L	differ
+f130_L02	9	+	M	B:t	differ
+f130_L02	10	r	H		agree
+f130_L02	11	x	H		agree
+f130_L02	12	o	M	B:-	gap
+f130_L02	13	0	H		agree
+f130_L02	14	t	M	B:o	differ
+f130_L02	15	v	M	B:v'	differ
+f130_L02	16	f	H		agree
+f130_L02	17	t	M	A:-	gap
+f130_L02	18	m	H		agree
+f130_L02	19	1	M	B:-	gap
+f130_L02	20	+	M	B:-	gap
+f130_L02	21	m	M	B:d	differ
+f130_L02	22	y	H		agree
+f130_L02	23	a	H		agree
+f130_L02	24	c	H		agree
+f130_L02	25	m	H		agree
+f130_L02	26	1	H		agree
+f130_L02	27	a	H		agree
+f130_L02	28	a	H		agree
+f130_L02	29	m	H		agree
+f130_L02	30	x	H		agree
+f130_L02	31	2	M	B:z	differ
+f130_L02	32	1	H		agree
+f130_L02	33	4	H		agree
+f130_L02	34	v	H		agree
+f130_L02	35	1	H		agree
+f130_L02	36	#	H		agree
+f130_L02	37	m	H		agree
+f130_L02	38	4	H		agree
+f130_L02	39	0	M	A:-	gap
+f130_L04	1	m	H		agree
+f130_L04	2	y	H		agree
+f130_L04	3	m	H		agree
+f130_L04	4	c	H		agree
+f130_L04	5	f	H		agree
+f130_L04	6	v	H		agree
+f130_L04	7	r	M	B:m	differ
+f130_L04	8	v'	H		agree
+f130_L04	9	v	H		agree
+f130_L04	10	2	M	B:z	differ
+f130_L04	11	y	H		agree
+f130_L04	12	+	M	B:t	differ
+f130_L04	13	x	H		agree
+f130_L04	14	4	H		agree
+f130_L04	15	2	M	B:z	differ
+f130_L04	16	0	H		agree
+f130_L04	17	sq	H		agree
+f130_L04	18	1	H		agree
+f130_L04	19	w	H		agree
+f130_L04	20	f	H		agree
+f130_L04	21	c	M	B:-	gap
+f130_L04	22	+	M	B:t	differ
+f130_L04	23	v'	H		agree
+f130_L04	24	NEW:N-like-loop	M	A:-	gap
+f130_L04	25	NEW:N-like	M	B:y	differ
+f130_L04	26	v	H		agree
+f130_L04	27	4	M	A:-	gap
+f130_L04	28	4	H		agree
+f130_L04	29	4'	M	B:t	differ
+f130_L04	30	1	H		agree
+f130_L04	31	sq	H		agree
+f130_L04	32	0	H		agree
+f130_L04	33	#	H		agree
+f130_L04	34	1	H		agree
+f130_L04	35	#	H		agree
+f130_L05	1	y	H		agree
+f130_L05	2	f	H		agree
+f130_L05	3	sq	H		agree
+f130_L05	4	0	H		agree
+f130_L05	5	w	H		agree
+f130_L05	6	m	H		agree
+f130_L05	7	1	M	B:-	gap
+f130_L05	8	c	H		agree
+f130_L05	9	#	H		agree
+f130_L05	10	0	H		agree
+f130_L05	11	sq	H		agree
+f130_L05	12	v'	H		agree
+f130_L05	13	1	H		agree
+f130_L05	14	h	H		agree
+f130_L05	15	4	H		agree
+f130_L05	16	0	H		agree
+f130_L05	17	z	M	B:m	differ
+f130_L05	18	1	H		agree
+f130_L05	19	0	H		agree
+f130_L05	20	f	H		agree
+f130_L05	21	4	H		agree
+f130_L05	22	y	H		agree
+f130_L05	23	-:-	H		agree
+f130_L05	24	0	H		agree
+f130_L05	25	L	H		agree
+f130_L05	26	sq	H		agree
+f130_L05	27	0'	H		agree
+f130_L05	28	v	H		agree
+f130_L05	29	f	H		agree
+f130_L05	30	#	H		agree
+f130_L05	31	0	H		agree
+f130_L05	32	a	M	A:-	gap
+f130_L05	33	a	H		agree
+f130_L05	34	c	H		agree
+f130_L05	35	m	H		agree
+f130_L05	36	0	H		agree
+f130_L05	37	4	H		agree
+f130_L07	1	f	H		agree
+f130_L07	2	y	M	B:x	differ
+f130_L07	3	sq	H		agree
+f130_L07	4	y	H		agree
+f130_L07	5	f	H		agree
+f130_L07	6	v'	H		agree
+f130_L07	7	0'	M	B:0	differ
+f130_L07	8	4	H		agree
+f130_L07	9	v	H		agree
+f130_L07	10	sq	H		agree
+f130_L07	11	0'	H		agree
+f130_L07	12	1	H		agree
+f130_L07	13	0	M	B:-	gap
+f130_L07	14	0	H		agree
+f130_L07	15	sq	H		agree
+f130_L07	16	y	H		agree
+f130_L07	17	m	H		agree
+f130_L07	18	+	M	B:t	differ
+f130_L07	19	v'	H		agree
+f130_L07	20	w	H		agree
+f130_L07	21	0	H		agree
+f130_L07	22	+	M	B:t	differ
+f130_L07	23	1	H		agree
+f130_L07	24	T	H		agree
+f130_L07	25	v	H		agree
+f130_L07	26	sq	H		agree
+f130_L07	27	4	M	B:y	differ
+f130_L07	28	w	H		agree
+f130_L07	29	m	H		agree
+f130_L07	30	a	H		agree
+f130_L07	31	m	H		agree
+f130_L07	32	z	M	B:-	gap
+f130_L07	33	0	H		agree
+f130_L07	34	#	H		agree
+f130_L07	35	y	H		agree
+f130_L07	36	m	H		agree
+f130_L07	37	w	H		agree
+f130_L07	38	v'	H		agree
+f130_L07	39	4	H		agree
+f130_L07	40	v	H		agree
+f130_L07	41	m	H		agree
+f130_L07	42	1	H		agree
+f130_L07	43	L	M	B:-	gap
+f130_L07	44	4	H		agree
+f130_L07	45	+	M	B:t	differ
+f130_L07	46	0	H		agree
+f130_L07	47	x	H		agree
+f130_L07	48	4	H		agree
+f130_L07	49	f	H		agree
+f130_L07	50	0	H		agree
+f130_L07	51	sq	H		agree
+f130_L07	52	1	H		agree
+f130_L07	53	4	H		agree
+f130_L07	54	0	H		agree
+f130_L07	55	m	H		agree
+f130_L07	56	1	H		agree
+f130_L07	57	c	H		agree
+f130_L07	58	v	H		agree
+f130_L07	59	a	H		agree
+f130_L07	60	f	H		agree
+f130_L07	61	#	H		agree
+f130_L07	62	1	H		agree
+f130_L07	63	f	H		agree
+f130_L07	64	L	H		agree
+f130_L07	65	1	M	B:-	gap
+f130_L07	66	0	H		agree
+f130_L07	67	w	H		agree
+f130_L07	68	#	H		agree
+f130_L07	69	0	H		agree
+f130_L07	70	v'	H		agree
+f130_L07	71	v	H		agree
+f130_L08	1	x	H		agree
+f130_L08	2	4	H		agree
+f130_L08	3	+	M	B:t	differ
+f130_L08	4	1	H		agree
+f130_L08	5	sq	H		agree
+f130_L08	6	#	H		agree
+f130_L08	7	v	H		agree
+f130_L08	8	m	H		agree
+f130_L08	9	+	M	B:t	differ
+f130_L08	10	v'	H		agree
+f130_L08	11	w	H		agree
+f130_L08	12	1	H		agree
+f130_L08	13	#	H		agree
+f130_L08	14	y	H		agree
+f130_L08	15	sq	H		agree
+f130_L08	16	v'	H		agree
+f130_L08	17	1	H		agree
+f130_L08	18	+	M	B:t	differ
+f130_L08	19	0	H		agree
+f130_L08	20	f	H		agree
+f130_L08	21	1	H		agree
+f130_L08	22	m	H		agree
+f130_L08	23	y	H		agree
+f130_L08	24	x	H		agree
+f130_L08	25	4	H		agree
+f130_L08	26	1	H		agree
+f130_L08	27	#	H		agree
+f130_L08	28	0	H		agree
+f130_L08	29	3	H		agree
+f130_L08	30	v	H		agree
+f130_L08	31	f	H		agree
+f130_L08	32	sq	H		agree
+f130_L08	33	0'	M	B:t	differ
+f130_L08	34	1	H		agree
+f130_L08	35	-:-	H		agree
+f130_L08	36	x	H		agree
+f130_L08	37	0	H		agree
+f130_L08	38	f	H		agree
+f130_L08	39	-:-	H		agree
+f130_L08	40	v	H		agree
+f130_L08	41	sq	H		agree
+f130_L08	42	v'	H		agree
+f130_L08	43	L	H		agree
+f130_L08	44	a	H		agree
+f130_L08	45	m	H		agree
+f130_L08	46	L	M	B:t	differ
+f130_L08	47	4	H		agree
+f130_L08	48	f	H		agree
+f130_L08	49	0	H		agree
+f130_L08	50	sq	H		agree
+f130_L08	51	y	H		agree
+f130_L08	52	+	M	B:t	differ
+f130_L08	53	v'	H		agree
+f130_L08	54	0'	M	B:o	differ
+f130_L08	55	4	H		agree
+f130_L08	56	m	H		agree
+f130_L08	57	sq	H		agree
+f130_L08	58	v	H		agree
+f130_L08	59	#	H		agree
+f130_L08	60	w	H		agree
+f130_L08	61	v	H		agree
+f130_L08	62	1	H		agree
+f130_L08	63	f	H		agree
+f130_L08	64	#	H		agree
+f130_L08	65	w	H		agree
+f130_L08	66	0	M	B:o	differ
+f130_L08	67	a	H		agree
+f130_L08	68	a	H		agree
+f130_L08	69	c	M	A:-	gap
+f130_L08	70	0	H		agree
+f130_L08	71	4	H		agree
+f130_L08	72	1	H		agree
+f130_L09	1	#	H		agree
+f130_L09	2	1	H		agree
+f130_L09	3	T	H		agree
+f130_L09	4	y	H		agree
+f130_L09	5	w	H		agree
+f130_L09	6	sq	H		agree
+f130_L09	7	4	H		agree
+f130_L09	8	1	H		agree
+f130_L09	9	sq	H		agree
+f130_L09	10	4	H		agree
+f130_L09	11	y	H		agree
+f130_L09	12	w	H		agree
+f130_L09	13	#	H		agree
+f130_L09	14	1	H		agree
+f130_L09	15	0'	H		agree
+f130_L09	16	sq	H		agree
+f130_L09	17	0	M	B:o	differ
+f130_L09	18	w	H		agree
+f130_L09	19	m	H		agree
+f130_L09	20	L	H		agree
+f130_L09	21	c	H		agree
+f130_L09	22	y	H		agree
+f130_L09	23	f	H		agree
+f130_L09	24	v'	H		agree
+f130_L09	25	h	M	B:m	differ
+f130_L09	26	v	H		agree
+f130_L09	27	f	H		agree
+f130_L09	28	v'	H		agree
+f130_L09	29	D'	M	B:4	differ
+f130_L09	30	4	H		agree
+f130_L09	31	1	H		agree
+f130_L09	32	0	M	B:-	gap
+f130_L09	33	sq	H		agree
+f130_L09	34	#	H		agree
+f130_L09	35	y	H		agree
+f130_L09	36	f	H		agree
+f130_L09	37	v'	M	B:v	differ
+f130_L09	38	0'	H		agree
+f130_L09	39	x	M	B:-	gap
+f130_L09	40	y	H		agree
+f130_L09	41	+	M	B:t	differ
+f130_L09	42	w	H		agree
+f130_L09	43	v	H		agree
+f130_L09	44	4	H		agree
+f130_L09	45	1	H		agree
+f130_L09	46	m	H		agree
+f130_L09	47	c	H		agree
+f130_L09	48	#	H		agree
+f130_L09	49	o	H		agree
+f130_L09	50	m	H		agree
+f130_L09	51	y	H		agree
+f130_L09	52	+	M	B:t	differ
+f130_L09	53	w	H		agree
+f130_L09	54	a	H		agree
+f130_L09	55	m	H		agree
+f130_L09	56	1	H		agree
+f130_L09	57	v	H		agree
+f130_L09	58	+	M	B:t	differ
+f130_L09	59	D'	M	B:4	differ
+f130_L09	60	#	H		agree
+f130_L09	61	1	H		agree
+f130_L09	62	4	H		agree
+f130_L09	63	4	H		agree
+f130_L09	64	0	M	A:-	gap
+f130_L09	65	f	H		agree
+f130_L09	66	#	H		agree
+f130_L09	67	1	H		agree
+f130_L09	68	#	H		agree
+f130_L09	69	0	H		agree
+f130_L10	1	4	H		agree
+f130_L10	2	v	H		agree
+f130_L10	3	m	H		agree
+f130_L10	4	L	H		agree
+f130_L10	5	4	H		agree
+f130_L10	6	+	M	B:t	differ
+f130_L10	7	1	H		agree
+f130_L10	8	.	H		agree
+f130_L10	9	4	H		agree
+f130_L10	10	0	H		agree
+f130_L10	11	w	H		agree
+f130_L10	12	y	H		agree
+f130_L10	13	L	H		agree
+f130_L10	14	0	M	B:o	differ
+f130_L10	15	v	H		agree
+f130_L10	16	m	H		agree
+f130_L10	17	y	H		agree
+f130_L10	18	a	H		agree
+f130_L10	19	c	H		agree
+f130_L10	20	sq	H		agree
+f130_L10	21	z	H		agree
+f130_L10	22	1	H		agree
+f130_L10	23	sq	H		agree
+f130_L10	24	#	H		agree
+f130_L10	25	m	H		agree
+f130_L10	26	0'	H		agree
+f130_L10	27	1	H		agree
+f130_L10	28	w	H		agree
+f130_L10	29	0	M	B:w	differ
+f130_L10	30	0	M	B:o	differ
+f130_L10	31	0'	H		agree
+f130_L10	32	t	M	A:-	gap
+f130_L10	33	L	H		agree
+f130_L10	34	x	M	B:o	differ
+f130_L10	35	0	M	B:p	differ
+f130_L10	36	h	H		agree
+f130_L10	37	v	H		agree
+f130_L10	38	sq	H		agree
+f130_L10	39	0'	H		agree
+f130_L10	40	#	H		agree
+f130_L10	41	1	H		agree
+f130_L10	42	z	H		agree
+f130_L10	43	y	H		agree
+f130_L10	44	v	M	B:v'	differ
+f130_L10	45	a	H		agree
+f130_L10	46	a	H		agree
+f130_L10	47	c	H		agree
+f130_L10	48	1	H		agree
+f130_L10	49	sq	H		agree
+f130_L10	50	v	M	A:-	gap
+f130_L10	51	y	H		agree
+f130_L10	52	4	H		agree
+f130_L10	53	f	H		agree
+f130_L10	54	1	H		agree
+f130_L10	55	.	H		agree
+f130_L10	56	0	H		agree
+f130_L10	57	4	H		agree
+f130_L10	58	v	H		agree
+f130_L10	59	+	M	B:t	differ
+f130_L10	60	sq	H		agree
+f130_L10	61	v'	H		agree
+f130_L10	62	v	H		agree
+f130_L10	63	sq	H		agree
+f130_L10	64	D'	M	B:4	differ
+f130_L10	65	z	H		agree
+f130_L10	66	v	H		agree
+f130_L10	67	L	H		agree
+f130_L10	68	0	H		agree
+f130_L10	69	m	H		agree
+f130_L10	70	1	H		agree
+f130_L10	71	#	H		agree
+f130_L10	72	1	M	A:-	gap
+f130_L10	73	L	H		agree
+f130_L11	1	h	H		agree
+f130_L11	2	y	H		agree
+f130_L11	3	m	H		agree
+f130_L11	4	w	H		agree
+f130_L11	5	a	H		agree
+f130_L11	6	y	H		agree
+f130_L11	7	L	M	B:t	differ
+f130_L11	8	w	H		agree
+f130_L11	9	#	H		agree
+f130_L11	10	1	H		agree
+f130_L11	11	z	H		agree
+f130_L11	12	0	H		agree
+f130_L11	13	f	H		agree
+f130_L11	14	w	H		agree
+f130_L11	15	0	M	B:o	differ
+f130_L11	16	t'	M	B:t	differ
+f130_L11	17	L	H		agree
+f130_L11	18	c	H		agree
+f130_L11	19	0	H		agree
+f130_L11	20	w	H		agree
+f130_L11	21	#	H		agree
+f130_L11	22	v	H		agree
+f130_L11	23	m	H		agree
+f130_L11	24	4	H		agree
+f130_L11	25	v'	M	B:t	differ
+f130_L11	26	v	H		agree
+f130_L11	27	f	H		agree
+f130_L11	28	v'	M	B:t	differ
+f130_L11	29	a	H		agree
+f130_L11	30	m	H		agree
+f130_L11	31	1	H		agree
+f130_L11	32	4	H		agree
+f130_L11	33	x	H		agree
