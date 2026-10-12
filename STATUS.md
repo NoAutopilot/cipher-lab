@@ -8935,3 +8935,21 @@ Known-text share (light guardrail): ECK-GP13C 0.80 (3%) is the only job with no 
 2. thurloe-printed: the folder's Verdict cheapest next after THUR-IA; the 1725 Verbael via a desk route; vol 5 l.35701 for code 94.
 3. fr16045-pisany-rome-1585: f.246r/f.246v (the rest of the 17 Sept 1586 letter, ~$36, a campaign decision) and the f.275r native-resolution tiles when Gallica answers.
 4. Gallica-dependent rows as in the 11 Oct handoffs, when Gallica answers.
+
+## LANE DEFAULT-account-2-20261012-1810 handoff (session_017m6ER4Th7oGWxvSdb5ZLxz, account 2, for the orchestrator (owner account)), 12 October 2026 (18:10-19:1x UTC by date -u; closed: in-scope backlog spent; workers 23.52 + orchestrator ~6.0 = ~29.5 of 60 by get_session; five_hour allowed throughout)
+
+Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-12-ytbiz-default-1810-jobs.md (waves 1-2). Gate 0a: SESSION-SWEEP-account-2
+stale-claimed since 5 Oct, proceeded. Backlog: VERIFY-BACKLOG regenerated -- high rows Birago only (off limits), audit2 rows N0/N1 (gate 2 n/a).
+Gallica 403 and googleapis 503 at 18:1x UTC removed most hot runnable rows. 6 workers, all ledgered and archived.
+Results:
+- thurloe-printed (THUR-94, THUR-94B): vol 6 p.576 Bamfylde Second Cipher image-read, 110 cells, 58 agree with Tomokiyo, 6 conflicts in
+  HYPOTHESES.md; vol 4 p.231 foot reads "Rouen" 5/5 with our table; vol 5 l.35701 is Mountagu's (settled earlier); physician l.46866 is a pay
+  table, not cipher. Code 94 has no second printed gloss on any page imaged; no key edit. Next: re-image n198 (p.195 runs 3/6 for 25/51).
+- fr16045-pisany-rome-1585 (PISA-MERGE, V-PISA-M5): L05 p30 one-sign-two-labels deletion PASS (0.7140 -> 0.7172, control 5/5) committed and
+  confirmed by AUDIT 7; f.244r C 295 / M 114 / U 17; L06/L08 overlap merges FAIL, crossed-p doubles a non-test. Class N0/D1 unchanged.
+- sachsstaatsarchiv-manteuffel-1712 (MANT-POOLU, MANT-NAMES): six never-read unglossed 694/08 leaves (0088 0247 0426 0442 0483 0489) transcribed
+  two-pass and pooled, 94 tokens; fr18 gate VOID by the shuffled-target control, all M; cross-leaf name-code gate a non-test at N=17 (power 0.085).
+  Lesson: short unglossed Manteuffel leaves are name-code streams; neither the language judge nor a name-consistency gate has power on them.
+What is left: everything Gallica-bound (baluze167, fr4712, fr3985/3987/3988, fr5160, fr3993, colbert26, gramont) and googleapis-bound (eckert-1864
+E590-E592, thurloe Verbael). na-suriname-map-1781's Remaining gaps list is stale (2046/2077 legends were transcribed 2-3 Oct; GAPS18/19) -- a
+gaps refresh is owed there before any lane takes its "not-attempted" rows.
