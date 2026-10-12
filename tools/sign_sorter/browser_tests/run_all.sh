@@ -36,5 +36,10 @@ for f in plain tray tray_rank cluster refs region; do run "test_gestures ($f)" t
 # owner rule R11 (11 Oct 2026, Matignon f.110): the sign card walks the family it was opened in, stops at its ends, and a decision shows
 # the next sign of that family; on the tray build (questions drawn in their piles) and the no-tray build
 for f in family family_plain; do run "test_family_nav ($f)" test_family_nav.js "$OUT/$f.html" "$OUT/test_family_nav_$f.png"; done
+# owner rule R12 (11 Oct 2026, Matignon f.110: "I need to lock the page in place, it kinda wiggles when you swipe left or right ... allowing me to
+# swipe left or right through a pile would be great"; template 2026-10-09.8): a sideways swipe never moves the page; anywhere on the card but its
+# picture it steps the card's walk, in step 2 on the pinned sign and above the pile cards it is Skip / Previous; never on a pile card or a pile
+# tile; the tray still scrolls sideways; iPhone 13, iPhone SE and a 320 px phone with CDP touch, on plain.html and tray.html
+run test_swipe test_swipe.js "$OUT" "$OUT"
 [ -n "$EXTRA" ] && run "test_qa ($EXTRA)" test_qa.js "$EXTRA"
 exit $fail

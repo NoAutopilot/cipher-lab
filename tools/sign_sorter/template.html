@@ -1,5 +1,5 @@
 <!doctype html>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-09.7"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-09.8"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
 <title>__TITLE__</title>
 <style>
 /* Layout: a sorting bench in two steps (owner, 3 Oct 2026). Step 1: clean each pile -- tap a sign that does not belong
@@ -18,7 +18,12 @@
    The adversarial checks of 11 Oct 2026 (desktop, phones; browser_tests/test_wheel_edges.js): Ctrl + wheel also with the mouse button held,
    after a lost release and over the enlarged sign, and in the line strips the card scrolls so the ink under the pointer stays put; Alt /
    Ctrl / Cmd + arrows are the browser's; Enter saves a cut after a nudge click; iOS gesture events beside a finger pinch are not counted
-   twice; Fix the cut fits a 320 px phone. */
+   twice; Fix the cut fits a 320 px phone. Template 2026-10-09.8 (owner rule R12, 11 Oct 2026, Matignon f.110: "I need to lock the page in
+   place, it kinda wiggles when you swipe left or right ... allowing me to swipe left or right through a pile would be great"): a sideways
+   swipe never moves the page, the card or its frame (overscroll-behavior-x none; touch-action pan-y pinch-zoom and a cancelled sideways
+   gesture where a swipe steps); a swipe anywhere on the card but its picture steps to the next / previous sign, as do the pinned sign and
+   everything above the pile cards in step 2 (Skip / Previous), never on the pile cards or the pile tiles; a pile's "View larger" is now
+   "Go through". */
 :root{
   --bg:#f3f1ec; --surface:#fbfaf7; --ink:#24211c; --muted:#6b655b; --line:#d9d4c9;
   /* Colour-blind safe (MQS-SORTER, 9 Oct 2026; Okabe-Ito, tools/cvd_check.py PALETTES['sorter_light'|'dark']): no state is told by hue
@@ -320,6 +325,14 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 .t,.card,.bigt{-webkit-tap-highlight-color:transparent}
 @media (pointer:coarse){.pile .tiles,.pile .ph{-webkit-user-select:none;user-select:none}}
 #ctx .box{overscroll-behavior:contain}
+/* Owner rule R12 (11 Oct 2026, Matignon f.110: "I need to lock the page in place, it kinda wiggles when you swipe left or right"): a
+   sideways swipe never moves the page, the card or the frame the page sits in (the phone's own rubber band or back-swipe); up and down,
+   and pull-to-refresh, as before. Where a sideways swipe steps (the card's box; in step 2 the pinned sign and everything above the pile
+   cards) the browser keeps only the vertical scroll and the pinch, and attachSwipe also cancels the gesture once it is plainly sideways
+   (iOS WebKit's touch-action is partial). The tray (#trayTiles) and a strip that scrolls sideways keep their own sideways scroll. */
+html,body{overscroll-behavior-x:none}
+#ctx,#ctx .box,.s2top,#s2Stick>.cv,#s2Acts{touch-action:pan-y;touch-action:pan-y pinch-zoom}   /* pan-y alone where the pair is not understood */
+#ctxBigW{overflow:hidden}   /* the enlarged sign follows the finger a little during a swipe (transform only): it never widens the card */
 @media (max-width:640px){.how{display:none}}   /* phone: the hint above the piles says the same; saves ~380 px of scrolling */
 @media (pointer:coarse){.t .badge.ok{pointer-events:none}.mouse-only{display:none}} .touch-only{display:none} @media (pointer:coarse){.touch-only{display:inline}}
 .pval{font-family:'IBM Plex Mono',monospace;font-weight:600;border:1px solid var(--ink);border-radius:4px;padding:0 5px;margin-right:6px}
@@ -349,7 +362,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
   <p class="banner" id="banner" hidden></p>
   <div class="how">
     <div><b>Step 1 · Clean each pile</b>Look along a pile. <b style="display:inline;text-transform:none;letter-spacing:0">Tap</b> any sign that is not like the others: it moves to the "Taken out" tray at the bottom. Tap it there to put it back. When a pile looks right, press "This pile is done".</div>
-    <div><b>Open a sign's card</b>Hold a sign, in a pile, a box or the tray (or press "View larger" on a pile): its card opens, large on its line, the sign in brackets (slide the page there to look around it), with Fix the cut, the answer buttons, Next and Previous. A hold never moves a sign.</div>
+    <div><b>Open a sign's card</b>Hold a sign, in a pile, a box or the tray (or press "Go through" on a pile): its card opens, large on its line, the sign in brackets (slide the page there to look around it), with Fix the cut, the answer buttons, Next and Previous. A hold never moves a sign.</div>
     <div><b>Step 2 · Place the taken-out signs</b>Each taken-out sign is shown large with every other pile below it, closest-looking first. Tap the pile it belongs to<span class="mouse-only"> (or drag it onto the pile with the mouse)</span>. "None of these: new sign" starts a new pile; nothing to type.</div>
   </div>
   <div class="bar">
@@ -358,7 +371,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
     <span class="save" id="save">Connecting to storage…</span>
   </div>
   <section id="s1">
-    <p class="hint1" id="hint1"><b>Tap</b> a sign: it goes to the “Taken out” tray at the bottom (tap it there to put it back). <b>Hold</b> a sign: its card opens, large on its line, where you fix the cut, keep it (“Right pile: keep it”) or move it; a hold moves nothing. The same in every box on this page. <span id="hintQ"><span class="mouse-only">Click the <b>?</b> badge on a questioned sign to approve it.</span><span class="touch-only">To approve a questioned sign (<b>?</b>), hold it and press “Right pile: keep it”.</span></span><span class="mouse-only"> Mouse: drag a sign onto another pile (or onto the bar at the bottom: doesn’t belong / trash); the <b>✕</b> on a sign (shown on hover) trashes it: a page edge, shadow or stain, not a sign.</span></p>
+    <p class="hint1" id="hint1"><b>Tap</b> a sign: it goes to the “Taken out” tray at the bottom (tap it there to put it back). <b>Hold</b> a sign: its card opens, large on its line, where you fix the cut, keep it (“Right pile: keep it”) or move it; a hold moves nothing. The same in every box on this page. <b>Go through</b> on a pile opens its first sign’s card: <span class="touch-only">swipe left or right (not on the page picture)</span><span class="mouse-only">Previous / Next or the arrow keys</span> for the next / previous sign; “Doesn’t belong: take out” takes a bad fit out and shows the next one. <span id="hintQ"><span class="mouse-only">Click the <b>?</b> badge on a questioned sign to approve it.</span><span class="touch-only">To approve a questioned sign (<b>?</b>), hold it and press “Right pile: keep it”.</span></span><span class="mouse-only"> Mouse: drag a sign onto another pile (or onto the bar at the bottom: doesn’t belong / trash); the <b>✕</b> on a sign (shown on hover) trashes it: a page edge, shadow or stain, not a sign.</span></p>
     <div class="meter"><div class="track"><div class="fill" id="fill"></div></div><span id="prog">0 of 0 piles done</span></div>
     <details class="opts"><summary>Display options</summary><div class="row">
       <label for="size">Tile size <input id="size" type="range" min="40" max="110" value="64"></label>
@@ -376,7 +389,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
   </section>
   <section id="s2" hidden aria-label="Step 2: place each sign">
     <h2 class="ftitle">Place each sign</h2>
-    <p class="hint1" id="hint2">Tap the pile the sign belongs to (anywhere on its card)<span class="mouse-only">, or drag the sign onto it</span>. The closest-looking piles come first; for a question, its own pile is first. <b>View pile</b> on a card, or a hold anywhere on a card, opens that pile larger and places nothing. A tap on a small picture is a tap on its pile; <b>hold a small picture</b> to see that one tile larger; <b>hold the sign</b> at the top to see it larger. <b>Fix the cut</b>, the first button under the sign, opens its card with the box ready to fix: for a question, Save cut or Split there keeps it in its pile and brings up the next. <span class="mouse-only"><b>Drag a small picture</b> onto another pile to move that one tile. </span><b>Drag a pile's name</b> (✥) onto another pile to merge the whole pile (on a phone: hold the name until it is outlined, then drag; let go without dragging and the pile opens).</p>
+    <p class="hint1" id="hint2">Tap the pile the sign belongs to (anywhere on its card)<span class="mouse-only">, or drag the sign onto it</span>. The closest-looking piles come first; for a question, its own pile is first. <b>View pile</b> on a card, or a hold anywhere on a card, opens that pile larger and places nothing. A tap on a small picture is a tap on its pile; <b>hold a small picture</b> to see that one tile larger; <b>hold the sign</b> at the top to see it larger. <span class="touch-only"><b>Swipe</b> left or right on the sign at the top (not on the pile cards) for the next / previous one, as Skip and Previous do. </span><b>Fix the cut</b>, the first button under the sign, opens its card with the box ready to fix: for a question, Save cut or Split there keeps it in its pile and brings up the next. <span class="mouse-only"><b>Drag a small picture</b> onto another pile to move that one tile. </span><b>Drag a pile's name</b> (✥) onto another pile to merge the whole pile (on a phone: hold the name until it is outlined, then drag; let go without dragging and the pile opens).</p>
     <div id="s2Note"><p class="hint" id="s2Msg" aria-live="polite"></p></div>
     <div id="s2Load" class="donebox" hidden><strong>Loading your earlier answers…</strong> <span id="s2LoadT"></span></div>
     <div id="s2Empty" class="donebox" hidden><strong id="s2EmptyH">Nothing waiting to be placed.</strong> <span id="s2EmptyT"></span> <button type="button" id="s2Back">Back to step 1</button></div>
@@ -663,6 +676,47 @@ document.addEventListener('pointercancel', e => { if (pend && e.pointerId === pe
 const GUARD_MS = 150;
 function holdGuard(e){ const p = pend; if (!p || !p.touch || !e.cancelable || !e.touches || e.touches.length !== 1 || performance.now() - p.t0 < GUARD_MS) return;
   const t = e.touches[0]; if (Math.hypot(t.clientX - p.x, t.clientY - p.y) <= p.slop) e.preventDefault(); }
+// ---- A sideways swipe steps (owner rule R12, tools/data/sorter_owner_requirements.tsv; 11 Oct 2026, Matignon f.110: "I need to lock the
+// page in place, it kinda wiggles when you swipe left or right and doesn't actually swipe it left or right. Although allowing me to swipe
+// left or right through a pile would be great. I could quickly knock out bad fits etc."). attachSwipe(el, onStep, opts): one finger
+// swiped sideways anywhere in el steps -- onStep(+1) for a swipe to the LEFT (the next sign), onStep(-1) to the right -- once it went at
+// least SWIPE_MIN px sideways and more than 1.5 times as far sideways as up or down, from where it touched to where it lifted (the rule
+// of the old swipe on the enlarged sign, 8 Oct 2026). The direction is decided once the finger has moved SWIPE_LOCK px: sideways, every
+// further move is cancelled (no page, card or frame moves; the CSS touch-action pan-y pinch-zoom says the same to the browser, and iOS
+// needs the events cancelled too); up or down, nothing is cancelled and the page or the card scrolls exactly as before. While a sideways
+// swipe is in progress opts.follow() (the enlarged sign) follows the finger a little (transform only, damped, at most SWIPE_FOLLOW px) and
+// springs back when the finger lifts. A swipe is never also a tap or a hold: its lift is cancelled and a click that still comes from it is
+// swallowed (a press moves past every hold's slop long before SWIPE_MIN). Two fingers (a pinch) never step; a shorter swipe steps nothing.
+// opts.skip(target): the press belongs to something with its own sideways gesture (the card's picture pans, R09; the "Move this tile
+// to…" list); a text field, a list, a slider and a strip that itself scrolls sideways are skipped always. opts.active(): whether a
+// step (and the follow) may happen now. Mouse and keys are not touched: on a desk the buttons, the arrows and a drag work as before.
+const SWIPE_LOCK = 10, SWIPE_MIN = 50, SWIPE_FOLLOW = 36;
+let swipeT = -1e9;   // when the last sideways swipe lifted: a click from that same lift is swallowed (a new press clears it)
+document.addEventListener('pointerdown', () => { swipeT = -1e9; }, true);
+document.addEventListener('click', e => { if (e.detail && performance.now() - swipeT < 600){ swipeT = -1e9; e.preventDefault(); e.stopPropagation(); } }, true);
+function sideScroller(t, root){ for (let e = t; e && e !== root && e.nodeType === 1; e = e.parentElement)   // a strip that scrolls sideways keeps its scroll
+  if (e.scrollWidth > e.clientWidth + 1 && /auto|scroll/.test(getComputedStyle(e).overflowX)) return true; return false; }
+function attachSwipe(el, onStep, opts){ opts = opts || {}; let g = null;   // the finger: {id, x, y, side: null undecided, true sideways, false up/down}
+  const live = () => !opts.active || opts.active();
+  const follow = px => { const f = opts.follow && opts.follow(); if (!f) return; f.style.transition = px ? 'none' : 'transform .18s ease-out'; f.style.transform = px ? 'translateX(' + px + 'px)' : ''; };
+  const drop = () => { if (g && g.side) follow(0); g = null; };
+  el.addEventListener('touchstart', e => { drop(); if (e.touches.length !== 1) return;   // a second finger: a pinch, never a step
+    const t = e.touches[0], tg = e.target;
+    if ((opts.skip && opts.skip(tg)) || (tg.closest && tg.closest('input, select, textarea, [contenteditable]')) || sideScroller(tg, el)){ g = null; return; }
+    g = {id: t.identifier, x: t.clientX, y: t.clientY, side: null}; }, {passive: true});
+  el.addEventListener('touchmove', e => { if (!g) return; if (e.touches.length !== 1){ drop(); return; }
+    const t = [...e.changedTouches].find(x => x.identifier === g.id); if (!t) return;
+    const dx = t.clientX - g.x, dy = t.clientY - g.y;
+    if (g.side === null && Math.hypot(dx, dy) >= SWIPE_LOCK) g.side = Math.abs(dx) > Math.abs(dy);
+    if (!g.side) return;   // undecided, or up / down: the browser scrolls as before
+    if (e.cancelable) e.preventDefault();
+    if (live()) follow(Math.sign(dx) * Math.min(SWIPE_FOLLOW, Math.abs(dx) * 0.35)); }, {passive: false});
+  el.addEventListener('touchend', e => { const d = g; if (!d) return; const t = [...e.changedTouches].find(x => x.identifier === d.id); if (!t) return; drop();
+    if (!d.side) return;   // a tap (it moved less than SWIPE_LOCK) or a scroll: not a swipe
+    swipeT = performance.now(); if (e.cancelable) e.preventDefault();   // the lift presses nothing
+    const dx = t.clientX - d.x, dy = t.clientY - d.y;
+    if (Math.abs(dx) >= SWIPE_MIN && Math.abs(dx) > 1.5 * Math.abs(dy) && live()) onStep(dx < 0 ? 1 : -1); }, {passive: false});
+  el.addEventListener('touchcancel', drop, {passive: true}); }
 // A tap acts on the sign (or step-2 pile) the finger PRESSED, never on another one a re-render slid under it (adversarial check, 11 Oct
 // 2026: another device's take-out arriving during a tap on a tray tile put ITS sign at the left of the tray, under the finger, and the
 // tap put that sign back, 38 of 38 on Armstrong, Debosnys, Lancosme and Juan Manuel; the same on 2026-10-09.5): the click goes to whatever
@@ -867,8 +921,11 @@ function pileEl(p, piles){
     (wait ? ', ' + wait + ' waiting in step 2' : '') + (p.isNew ? ', new pile' : '');
   const chip = document.createElement('span'); chip.className = 'chip' + (status ? ' ' + status : '');
   chip.textContent = status === 'same' ? 'done' : status === 'mark' ? 'not a letter' : status === 'merge' ? 'same as ' + s.merge_into : 'to do';
-  const big = btn('View larger', false, () => { const m = p.members.concat(aside, waitingOf(p.id)); if (m.length) showFam(m[0], p.id); });   // its family, from this pile (R11)
-  big.className = 'big'; big.title = 'See this pile’s signs larger, on their lines, one at a time';
+  // "Go through" (was "View larger"; owner rule R12, 11 Oct 2026: "allowing me to swipe left or right through a pile would be great. I
+  // could quickly knock out bad fits"): the card on the pile's first sign, walking its family from this pile (R11); a swipe steps
+  const big = btn('Go through', false, () => { const m = p.members.concat(aside, waitingOf(p.id)); if (m.length) showFam(m[0], p.id); });
+  big.className = 'big'; big.setAttribute('aria-label', 'Go through pile ' + p.id + ' one sign at a time');
+  big.title = 'Go through this pile one sign at a time, large on its line (it walks on through its family): swipe left or right, or Previous / Next; “Doesn’t belong: take out” takes a bad fit out and shows the next one';
   ph.append(nm); if (DATA.nonblind && VAL[p.id]){ const vv = document.createElement('span'); vv.className = 'pval'; vv.textContent = VAL[p.id].v; vv.title = 'Key value (non-blind view)'; ph.append(vv); }
   ph.append(ct, chip, big); el.append(ph); el.id = 'pile_' + domKey(p.id); el.dataset.pile = p.id;
   const near = (byBase[p.id] && byBase[p.id].near) || [];
@@ -1246,6 +1303,14 @@ $('s2Aside').onclick = () => place('ASIDE');
 $('s2Home').onclick = () => { if (s2Cur) place(homeOf[s2Cur]); };
 $('s2Prev').onclick = () => { const L = outList(), i = L.indexOf(s2Cur); if (i > 0){ s2Cur = L[i - 1]; $('s2Msg').textContent = ''; renderS2(); } };
 $('s2Next').onclick = () => { const L = outList(), i = L.indexOf(s2Cur); if (i < L.length - 1){ s2Cur = L[i + 1]; $('s2Msg').textContent = ''; renderS2(); } };
+// Owner rule R12 (11 Oct 2026, Matignon f.110: "allowing me to swipe left or right through a pile would be great"): a sideways swipe on
+// the pinned sign or anything above the pile cards (its line strip, the buttons, the question, Previous / Skip) is Skip (to the left) or
+// Previous (to the right) -- the same handlers, never past a button that is off; at either end it says so in words. Never on the pile
+// cards: a swipe there places nothing and moves nothing (it stays the page's own gesture). The pinned sign follows the finger a little.
+attachSwipe($('s2Stick'), d => { const b = $(d > 0 ? 's2Next' : 's2Prev');
+  if (!b.disabled){ b.onclick(); return; }
+  const m = $('s2Msg'); if (!m.children.length) m.textContent = d > 0 ? 'That is the last sign waiting here: nothing after it.' : 'That is the first sign waiting here: nothing before it.'; },
+  {follow: () => $('s2Tile'), active: () => step === 2 && !!s2Cur && !$('s2Work').hidden && $('ctx').hidden});   // a hold that opened the card first: no step under it
 // Step 2's "Fix the cut" (template 2026-10-09.6; owner, 10 Oct 2026, on a box-check page: "im not seeing fix the cut ... on this page";
 // four pages were hand-patched the same day): it opens the card for the sign being placed with the box editor on. "Save cut" or "Split"
 // there (the cut saved, its own Undo step) checks the box: a question waiting in step 2 is kept in its pile, as "It was right" does (one
@@ -1614,7 +1679,8 @@ $('ctxCentre').onclick = () => { panReset(); drawCtx(); };
 function panHint(){ const el = $('ctxPanHint'); if (!el) return;   // plain words, no colour (owner rule R07)
   el.textContent = fix && fix.brush ? (COARSE ? 'One finger paints out stray ink; slide with two fingers to look around.' : 'Paint out stray ink; turn “Erase stray ink” off to drag the page around.')
     : fix ? (COARSE ? 'Drag the box, an edge or a corner to fix the cut; slide anywhere else on the page to look around.' : 'Drag the box, an edge or a corner to fix the cut; drag anywhere else on the page to look around.')
-    : COARSE ? 'Slide the page to look around; pinch to zoom; swipe the big sign for the next one.' : 'Drag the page to look around; Ctrl + mouse wheel zooms; Previous / Next (or the arrow keys) for the next sign.'; }
+    : COARSE ? 'Slide the page to look around; pinch to zoom. Swipe left or right (not on the page picture) for the next / previous sign; “Doesn’t belong: take out” takes a bad fit out and shows the next one.'   // owner rule R12, 11 Oct 2026
+    : 'Drag the page to look around; Ctrl + mouse wheel zooms; Previous / Next (or the arrow keys) for the next sign.'; }
 
 // ---- "Whole page" (SORTER-PAGEVIEW; owner, 4 Oct 2026, on Longlee f101v_L32_49: the neighbour lines were trimmed slices with
 // separators that cut ascenders and descenders -- "can we just show the full graphic?"). With DATA.region (tools/sign_sorter.py
@@ -2027,7 +2093,7 @@ let ctxListName = 'in this pile';
 // Owner rule R11 (tools/data/sorter_owner_requirements.tsv; 11 Oct 2026, Matignon f.110: "When I hit left or right keys while into one of
 // the family, it moves to another symbol, but doesn't seem to be continuining in that family ... when you hit the end of that family unit it
 // stops"). A card opened from a pile in step 1 -- a tile held there (a member, a set-aside tile, a question waiting in step 2 drawn in its
-// pile, the trash x) or "View larger" -- walks THE FAMILY: every tile shown under that family's heading, in the order on screen (its piles
+// pile, the trash x) or "Go through" (was "View larger") -- walks THE FAMILY: every tile shown under that family's heading, in the order on screen (its piles
 // top to bottom; in a pile its tiles, then the set-aside ones, then the waiting ones, as drawn). Before, a pile's card stopped at the end of
 // that one pile and never reached the waiting tiles drawn in it, and a waiting tile's card walked the whole tray (13 families on Matignon).
 // The list is fixed when the card opens, so a move, a keep or a saved cut shows the next sign of the same family and never shifts the order;
@@ -2118,12 +2184,13 @@ function ctxKeep(){
 $('ctxKeep').onclick = ctxKeep;
 $('ctxOut').onclick = () => ctxMove('OUT');
 $('ctxPrev').onclick = () => ctxStep(-1);
-// phone (owner, 8 Oct 2026: "I can't swipe left and right"): a sideways swipe on the enlarged sign goes to the next / previous tile.
-// Not on the manuscript picture any more (owner rule R09, 11 Oct 2026): a slide there moves the view around the page.
-(function(){ let s0 = null; const el = $('ctxBigW');
-  el.addEventListener('touchstart', e => { s0 = fix || e.touches.length !== 1 ? null : {x: e.touches[0].clientX, y: e.touches[0].clientY}; }, {passive: true});
-  el.addEventListener('touchend', e => { if (!s0 || fix) return; const t = e.changedTouches[0], dx = t.clientX - s0.x, dy = t.clientY - s0.y; s0 = null;
-    if (Math.abs(dx) > 50 && Math.abs(dx) > 1.5 * Math.abs(dy)) ctxStep(dx < 0 ? 1 : -1); }, {passive: true}); })();
+// phone (owner, 8 Oct 2026: "I can't swipe left and right"): a sideways swipe goes to the next / previous tile -- since owner rule R12
+// (11 Oct 2026, Matignon f.110: "allowing me to swipe left or right through a pile would be great. I could quickly knock out bad fits")
+// anywhere on the card, not only on the enlarged sign, through ctxStep like the arrows and Previous / Next (it stops at either end and
+// says so, R11). Not on the manuscript picture (owner rule R09: a slide there moves the view around the page), not on the "Move this
+// tile to…" list, and not in the Fix the cut editor while a cut is being fixed (ctxStep itself does not step then either).
+attachSwipe(document.querySelector('#ctx .box'), d => ctxStep(d), {follow: () => $('ctxBig'), active: () => !fix && !$('ctx').hidden,
+  skip: t => !!(t.closest && (t.closest('#ctxCv, #ctxDest') || (fix && t.closest('#fixBox'))))});
 $('undo').onclick = undo;
 $('order').onchange = render;
 $('ctxUndo').onclick = () => { if (fix) fixStop(); const last = undo(); if (!last) return;

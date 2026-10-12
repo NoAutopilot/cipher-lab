@@ -2,7 +2,8 @@
 // my finger on the manuscript surrounding my target symbol to see its surroundings"; Vivonne box check, 10 Oct: "I marked a bunch a bad
 // cut if when I clicked into it I couldn't move the manuscript to properly see around it"): in a sign's card, one finger (or a mouse drag)
 // on the manuscript picture moves the view like a map, two fingers pinch the zoom, "Back to the sign" re-centres, the sideways swipe to the
-// next sign stays on the enlarged sign, and Fix the cut still edits the box (a drag off the box moves the view).
+// next sign stays off the picture (on the enlarged sign; since owner rule R12, template 2026-10-09.8, anywhere else on the card too, test_swipe.js),
+// and Fix the cut still edits the box (a drag off the box moves the view).
 //
 // Devices: iPhone 13 and iPhone SE (Playwright device profiles; touch through CDP Input.dispatchTouchEvent, the path a phone takes, two
 // touch points for a pinch) and a desktop mouse. Fixtures (make_fixtures.py): lines.html (line crops t_L01..t_L05, no region: the
@@ -66,6 +67,11 @@ async function twoDrag(page, a, b, da, db, steps = 10) {   // two fingers from a
   for (let i = 1; i <= steps; i++) { await two(page, 'touchMove', [[a[0] + da[0] * i / steps, a[1] + da[1] * i / steps], [b[0] + db[0] * i / steps, b[1] + db[1] * i / steps]]); await page.waitForTimeout(16); }
   await two(page, 'touchEnd', []); await page.waitForTimeout(200);
 }
+// Fix the cut on a phone scrolls the picture into view smoothly (fixStart, 60 ms after the press): wait until the card has stopped
+// scrolling before reading screen positions -- a drag measured mid-scroll landed on the box's corner, not its right edge, and moved the
+// top too (1 of 3 runs on iPhone SE, 12 Oct 2026, template 2026-10-09.8, whose longer card hint lengthens that scroll)
+async function settle(page) { let last = null, still = 0;
+  for (let i = 0; i < 40 && still < 3; i++) { const t = await page.evaluate(() => document.querySelector('#ctx .box').scrollTop); still = t === last ? still + 1 : 0; last = t; await page.waitForTimeout(50); } }
 async function waitCard(page, sid) {
   await page.waitForFunction(s => { const c = document.getElementById('ctxC'); return !document.getElementById('ctx').hidden && ctxSid === s && c.dataset.sid === s && c._pan; }, sid, { timeout: 5000 }).catch(() => {});
   await page.waitForTimeout(250);
@@ -127,7 +133,7 @@ async function run(b, dev, opts, F, SHOTS) {
   { const sid = 't_L03_16'; const s0 = await S(page); await openByHold(page, sid); const p = await P(page), s1 = await S(page);
     ok(p.open && p.sid === sid && same(s0, s1), `${dev}: a hold on the tile opens its card (owner rule R05) and moves nothing`, { sid: p.sid });
     const hint = await page.evaluate(() => document.getElementById('ctxPanHint').textContent);
-    ok(/look around/.test(hint) && (!touch || /swipe the big sign/.test(hint)) && !/\b(red|green|orange|blue)\b/i.test(hint), `${dev}: the card says in plain words how to look around (no colour)`, hint);
+    ok(/look around/.test(hint) && (!touch || /swipe left or right/i.test(hint)) && !/\b(red|green|orange|blue)\b/i.test(hint), `${dev}: the card says in plain words how to look around and (touch) that a swipe steps (no colour)`, hint);   // owner rule R12 (template 2026-10-09.8): the swipe steps anywhere on the card but the picture
     ok(p.view === 'strip' && p.pannable && p.ta === 'none' && p.centreOff && p.wy0 < -1 && p.wy1 > p.vh + 1, `${dev}, line strips: the picture can move (touch-action none, "Back to the sign" off until it does, line n-2 above and n+2 below on the sheet)`,
       { ta: p.ta, sheet: [p.wy0, p.wy1].map(v => +v.toFixed(1)), window: +p.vh.toFixed(1) });
     await four(page, dev, 'line strips');
@@ -211,7 +217,7 @@ async function run(b, dev, opts, F, SHOTS) {
     await edges(page, dev, 'whole page');
     // 5 (page view). Fix the cut: a drag off the box moves the view, the box keeps its strip pixels; the right edge still drags
     await setZoom(page, touch ? 5 : 3); await page.click('#ctxFix');   // a real press (after a hold the page swallows the lift's click until the next press)
-    await page.waitForTimeout(250);
+    await page.waitForTimeout(250); await settle(page);
     await page.evaluate(() => document.getElementById('ctxC').scrollIntoView({ block: 'center' })); await page.waitForTimeout(150);
     const b0 = await page.evaluate(() => fix.box.slice()), a = await P(page), r = await page.locator('#ctxC').boundingBox(), e = await boxAt(page, 0.5, 0.5);
     const ox = e.x > r.x + r.width / 2 ? r.x + 14 : r.x + r.width - 14;   // a point well off the box
@@ -227,7 +233,7 @@ async function run(b, dev, opts, F, SHOTS) {
   { const sid = 'p1_06'; await openByHold(page, sid); await recentre(page);
     const it = await page.evaluate(s => ({ b: itemBySid[s].b.slice(), p: itemBySid[s].p }), sid);
     await page.click('#ctxFix');   // a real press (after a hold the page swallows the lift's click until the next press)
-    await page.waitForTimeout(250);
+    await page.waitForTimeout(250); await settle(page);
     const hint = await page.evaluate(() => document.getElementById('ctxPanHint').textContent);
     ok(/fix the cut/.test(hint) && /look around/.test(hint), `${dev}: fixing a cut, the hint says the box edits and the rest of the page moves`, hint);
     const k0 = await page.evaluate(() => { const m = document.getElementById('ctxC')._map; return m.k / m.s / m.ps; });   // image px of the strip per screen px
