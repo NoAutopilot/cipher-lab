@@ -1,0 +1,326 @@
+diff --git a/tools/glyph_atlas.py b/tools/glyph_atlas.py
+index c9703195d..8442bd2a2 100644
+--- a/tools/glyph_atlas.py
++++ b/tools/glyph_atlas.py
+@@ -222,6 +222,131 @@ def _wide_cuts(col, w, k, rnd=None, min_gap=0):
+     return cuts[1:]
+ 
+ 
++class RecKNN:
++    """A small frozen kNN over feats() of labelled exemplar bitmaps (TXE4-10 RECOG-CUT, 12 Oct 2026). Posterior per
++    code = Laplace-smoothed vote share of the k nearest exemplars: p(c) = (votes_c + alpha) / (k + alpha x C), C the
++    number of codes. Used by `segment --split-by-recognition` to score candidate pieces of a joined box, and by the
++    TXE4-10 scripts as the one classifier of every arm (benchmark-tx/txeng4/10/). `exclude` is a set of exemplar
++    indices that may not vote (leave-one-out: an exemplar classified with its own row hidden)."""
++
++    def __init__(self, bm, rows, labels, k=5, alpha=0.5, pca_scale=None):
++        # 'unit' scaling of a PCA fitted on few exemplars blows the numerically-zero trailing components up (feats()'s
++        # own note), and a query's projection then lands far from its own exemplar row: below 120 exemplars 'shared'
++        if pca_scale is None:
++            pca_scale = 'unit' if len(bm) >= 120 else 'shared'
++        self.pca_scale = pca_scale
++        self.X, self.proj = feats(bm, rows, pca_scale=pca_scale, project=True)
++        self.y = np.array(list(labels))
++        self.codes = sorted(set(self.y))
++        self.k, self.alpha = k, alpha
++        self.sids = [r.get('sid', str(i)) for i, r in enumerate(rows)]
++
++    @classmethod
++    def from_atlas(cls, atlas_dir, labels_tsv, **kw):
++        """Exemplars = the atlas rows (signs.tsv + bitmaps.npz) whose sid has a label in LABELS.tsv (box|sid, code)."""
++        rows = read(atlas_dir, 'signs.tsv')
++        bm = np.load(os.path.join(atlas_dir, 'bitmaps.npz'))['signs']
++        lab = {}
++        for r in csv.DictReader(open(labels_tsv), delimiter='\t'):
++            c = (r.get('code') or r.get('label') or '').strip()
++            if c and c != '_':
++                lab[r.get('box') or r.get('sid')] = c
++        keep = [i for i, r in enumerate(rows) if r['sid'] in lab]
++        if len(keep) < kw.get('k', 5) + 1:
++            raise SystemExit(f'RecKNN: only {len(keep)} labelled exemplars in {labels_tsv}')
++        return cls(bm[keep], [rows[i] for i in keep], [lab[rows[i]['sid']] for i in keep], **kw)
++
++    def posteriors(self, Q, exclude=None):
++        """Q: feature rows (from self.proj). Returns a list of {code: p} over the k nearest exemplars."""
++        D = np.linalg.norm(Q[:, None, :] - self.X[None, :, :], axis=2)
++        out = []
++        C = len(self.codes)
++        for i in range(len(Q)):
++            d = D[i].copy()
++            if exclude is not None and exclude[i] is not None:
++                d[list(exclude[i])] = np.inf
++            nn = np.argsort(d)[:self.k]
++            votes = collections.Counter(self.y[j] for j in nn if np.isfinite(d[j]))
++            den = sum(votes.values()) + self.alpha * C
++            out.append({c: (votes.get(c, 0) + self.alpha) / den for c in self.codes})
++        return out
++
++    def topk(self, bms, rh, rw, k=3, exclude=None):
++        """[(code, p) x k, best first] per query bitmap."""
++        if not len(bms):
++            return []
++        P = self.posteriors(self.proj(np.asarray(bms), rh, rw), exclude)
++        return [sorted(p.items(), key=lambda t: (-t[1], t[0]))[:k] for p in P]
++
++    def gain(self, bms, rh, rw):
++        """log p(top) - log(1/C) per query: the top code's log-posterior above uniform (>= 0)."""
++        C = len(self.codes)
++        return [np.log(t[0][1]) + np.log(C) for t in self.topk(bms, rh, rw, k=1)]
++
++
++def _rec_candidates(col, w, mh, grid=0.25, min_piece=0.35):
++    """Candidate cut columns of a wide box: local minima of the column-ink profile plus a grid every grid x mh, each at
++    least min_piece x mh from the edges and from each other (nearer candidates are merged to the one with less ink)."""
++    lo, hi = int(round(min_piece * mh)), w - int(round(min_piece * mh))
++    if hi <= lo:
++        return []
++    cand = set()
++    for x in range(max(1, lo), min(w - 1, hi)):
++        if col[x] <= col[x - 1] and col[x] <= col[x + 1] and (col[x] < col[x - 1] or col[x] < col[x + 1]):
++            cand.add(x)
++    step = max(1, int(round(grid * mh)))
++    for x in range(lo, hi + 1, step):
++        cand.add(x)
++    cand = sorted(cand)
++    out = []
++    for x in cand:
++        if out and x - out[-1] < lo:
++            if col[x] < col[out[-1]]:
++                out[-1] = x
++            continue
++        out.append(x)
++    return out
++
++
++def _rec_split(sub, mh, knn, lam, max_pieces=4, grid=0.25, min_piece=0.35, log=None):
++    """TXE4-10: choose the cut set (0..max_pieces-1 cuts over _rec_candidates) that maximises sum_i gain_i - lam x n,
++    gain_i the RecKNN gain of piece i. Returns the list of (u, v) column intervals of the kept pieces (empty-ink
++    intervals dropped). Degenerate optima, named in PREREG-txeng4-10.md: lam 0 -> max_pieces pieces; lam > max gain ->
++    one piece."""
++    import itertools
++    h, w = sub.shape
++    col = sub.sum(axis=0).astype(float)
++    cand = _rec_candidates(col, w, mh, grid, min_piece)
++    cache = {}
++
++    def piece(u, v):
++        rows = np.where(sub[:, u:v].any(axis=1))[0]
++        if not len(rows):
++            return None
++        return sub[rows[0]:rows[-1] + 1, u:v], (rows[-1] - rows[0] + 1) / mh, (v - u) / mh
++
++    def score(u, v):
++        if (u, v) not in cache:
++            pc = piece(u, v)
++            cache[(u, v)] = None if pc is None else knn.gain([bitmap(pc[0])], [pc[1]], [pc[2]])[0]
++        return cache[(u, v)]
++    best, best_cuts = None, []
++    for ncut in range(0, max_pieces):
++        for cuts in itertools.combinations(cand, ncut):
++            ivs = list(zip((0,) + cuts, cuts + (w,)))
++            sc = [score(u, v) for u, v in ivs]
++            sc = [x for x in sc if x is not None]
++            if not sc:
++                continue
++            tot = sum(sc) - lam * len(sc)
++            if best is None or tot > best + 1e-9:
++                best, best_cuts = tot, list(cuts)
++    ivs = [(u, v) for u, v in zip([0] + best_cuts, best_cuts + [w]) if score(u, v) is not None]
++    if log is not None:
++        log.append(dict(w=w, cand=len(cand), cuts=best_cuts, score=best, pieces=len(ivs)))
++    return ivs
++
++
+ def segment_page(name, path, box, a):
+     grey = np.array(Image.open(path).convert('L'))
+     if box:
+@@ -288,6 +413,23 @@ def segment_page(name, path, box, a):
+                     split.append(dict(x=c['x'] + u, y=c['y'] + int(rows[0]), w=v - u, h=int(rows[-1] - rows[0] + 1),
+                                       ids=c['ids'], split_from=c['x']))
+             merged = split
++        rk = getattr(a, '_rec_knn', None)
++        if rk is not None:
++            # --split-by-recognition (TXE4-10): a box wider than --rec-wide x mh is cut where the pieces look most like
++            # known signs (RecKNN gain summed over pieces, minus --rec-lambda per piece; _rec_split)
++            split = []
++            for c in merged:
++                if c['w'] <= a.rec_wide * mh:
++                    split.append(c)
++                    continue
++                sub = np.isin(lab[c['y']:c['y'] + c['h'], c['x']:c['x'] + c['w']], c['ids']).astype(np.uint8)
++                ivs = _rec_split(sub, mh, rk, a.rec_lambda, a.rec_max_pieces, a.rec_grid, a.rec_min_piece, a._rec_log)
++                a._rec_log[-1].update(page=name, x=c['x'], y=c['y'])
++                for u, v in ivs:
++                    rows = np.where(sub[:, u:v].any(axis=1))[0]
++                    split.append(dict(x=c['x'] + u, y=c['y'] + int(rows[0]), w=v - u, h=int(rows[-1] - rows[0] + 1),
++                                      ids=c['ids'], split_from=c['x']))
++            merged = split
+         for k, c in enumerate(merged):
+             sub = np.isin(lab[c['y']:c['y'] + c['h'], c['x']:c['x'] + c['w']], c['ids']).astype(np.uint8)
+             signs.append(dict(sid=f'{name}_{li + 1:02d}_{k + 1:03d}', page=name, line=li + 1, pos=k + 1,
+@@ -470,6 +612,18 @@ def cmd_segment(a):
+     a._split_rng = np.random.default_rng(a.split_random) if getattr(a, 'split_random', None) is not None else None
+     if getattr(a, 'split_wide', 0) and a.cursive:
+         sys.exit('--split-wide applies to the default (non --cursive) mode only; --cursive has --split-w/--piece')
++    a._rec_knn, a._rec_log = None, []
++    if getattr(a, 'split_by_recognition', None):
++        if a.cursive or not a.rec_atlas:
++            sys.exit('--split-by-recognition needs --rec-atlas DIR and the default (non --cursive) mode')
++        a._rec_knn = RecKNN.from_atlas(a.rec_atlas, a.split_by_recognition, k=a.rec_knn)
++        if a.rec_permute_labels is not None:
++            # the rule-3 control: the exemplar labels permuted among the exemplars, features unchanged
++            rng = np.random.default_rng(a.rec_permute_labels)
++            a._rec_knn.y = a._rec_knn.y[rng.permutation(len(a._rec_knn.y))]
++        print(f'--split-by-recognition: RecKNN on {len(a._rec_knn.y)} exemplars, {len(a._rec_knn.codes)} codes, '
++              f'k {a.rec_knn}, lambda {a.rec_lambda}' + (f', labels permuted seed {a.rec_permute_labels}'
++                                                       if a.rec_permute_labels is not None else ''))
+     if a.median_h:
+         if a.cursive:
+             sys.exit('--median-h applies to the default (non --cursive) mode only')
+@@ -505,6 +659,14 @@ def cmd_segment(a):
+                         signs=np.array([r['bm'] for r in allS] or np.zeros((0, BM, BM)), np.uint8),
+                         marks=np.array([r['bm'] for r in allM] or np.zeros((0, BM, BM)), np.uint8))
+     json.dump(scale, open(os.path.join(a.out, 'pages.json'), 'w'), indent=1)
++    if getattr(a, '_rec_knn', None) is not None:
++        with open(os.path.join(a.out, 'rec_split.tsv'), 'w') as f:
++            f.write('page\tx\ty\tw\tcandidates\tcuts\tpieces\tscore\n')
++            for r in a._rec_log:
++                f.write(f"{r['page']}\t{r['x']}\t{r['y']}\t{r['w']}\t{r['cand']}\t{'|'.join(map(str, r['cuts']))}\t"
++                        f"{r['pieces']}\t{r['score']:.4f}\n")
++        print(f"--split-by-recognition: {len(a._rec_log)} wide boxes -> {sum(r['pieces'] for r in a._rec_log)} pieces "
++              f"({sum(r['pieces'] > 1 for r in a._rec_log)} split); rec_split.tsv")
+ 
+ 
+ def read(out, fn):
+@@ -1229,6 +1391,15 @@ def main(argv=None):
+     s.add_argument('--split-wide', type=float, default=0.0, help='default mode: split a merged sign box wider than this x median height into pieces at column-ink minima (0 = off; TXE3-6)')
+     s.add_argument('--split-piece', type=float, default=1.0, help='--split-wide: pieces = max(2, round(width / (this x median height))) (1.0)')
+     s.add_argument('--split-random', type=int, default=None, help='--split-wide: cut at uniformly random columns with this seed instead of ink minima (the rule-3 control)')
++    s.add_argument('--split-by-recognition', metavar='LABELS.tsv', help='default mode (TXE4-10, 12 Oct 2026): cut a merged box wider than --rec-wide x median height where the pieces look most like known signs: the cut set over the column-ink minima plus a --rec-grid grid that maximises the summed RecKNN gain (log-posterior above uniform) minus --rec-lambda per piece, 1 to --rec-max-pieces pieces; LABELS.tsv = box|sid, code over --rec-atlas rows')
++    s.add_argument('--rec-atlas', metavar='DIR', help='--split-by-recognition: the exemplar atlas (signs.tsv + bitmaps.npz) the labels name')
++    s.add_argument('--rec-lambda', type=float, default=1.5, help='--split-by-recognition: cost per piece in gain units (1.5); 0 = always the most pieces, above the max gain = never split')
++    s.add_argument('--rec-wide', type=float, default=1.5, help='--split-by-recognition: only boxes wider than this x median height are considered (1.5, TXE3-6 W)')
++    s.add_argument('--rec-max-pieces', type=int, default=4, help='--split-by-recognition: most pieces per box (4)')
++    s.add_argument('--rec-grid', type=float, default=0.25, help='--split-by-recognition: grid candidate every this x median height (0.25)')
++    s.add_argument('--rec-min-piece', type=float, default=0.35, help='--split-by-recognition: a cut keeps at least this x median height from the edges and other cuts (0.35)')
++    s.add_argument('--rec-knn', type=int, default=5, help='--split-by-recognition: k of the RecKNN (5)')
++    s.add_argument('--rec-permute-labels', type=int, default=None, metavar='SEED', help='--split-by-recognition: the rule-3 control, exemplar labels permuted with this seed before any cut is chosen')
+     s.add_argument('--debug', action='store_true')
+     c = sp.add_parser('cluster')
+     c.add_argument('--out', required=True)
+diff --git a/tools/tests/test_glyph_atlas_recsplit.py b/tools/tests/test_glyph_atlas_recsplit.py
+new file mode 100644
+index 000000000..9bd48c3a7
+--- /dev/null
++++ b/tools/tests/test_glyph_atlas_recsplit.py
+@@ -0,0 +1,110 @@
++#!/usr/bin/env python3
++"""Offline test of tools/glyph_atlas.py segment --split-by-recognition (TXE4-10 RECOG-CUT, 12 Oct 2026).
++Page A: separate boxes and X's (two shapes) -> an exemplar atlas with labels box/X. Page B: the same shapes drawn in
++pairs joined by a bridge stroke (one connected component each). Must-catch: with --rec-lambda 1.0, where a joined pair is
++cut into two pieces the cut lies in the bridge (>= 80%), and the RecKNN reads the separate shapes leave-one-out (>= 0.9). Must-not-
++block: --rec-lambda 99 (above any gain) leaves every joined pair as one box (= pen units); a page with no wide box is
++unchanged; --rec-permute-labels changes at least one cut (the control can vary). No network, no model, no truth file."""
++import csv, os, subprocess, sys, tempfile
++import numpy as np, cv2
++HERE = os.path.dirname(os.path.abspath(__file__))
++TOOL = os.path.join(HERE, '..', 'glyph_atlas.py')
++sys.path.insert(0, os.path.join(HERE, '..'))
++
++
++SHAPES = ['box', 'X', 'O', 'plus']
++
++
++def glyph(img, shape, x, yc, j, t):
++    if shape == 'X':
++        cv2.line(img, (x + j(), yc - 30 + j()), (x + 50 + j(), yc + 30 + j()), 20, t)
++        cv2.line(img, (x + 50 + j(), yc - 30 + j()), (x + j(), yc + 30 + j()), 20, t)
++    elif shape == 'box':
++        cv2.rectangle(img, (x + j(), yc - 30 + j()), (x + 50 + j(), yc + 30 + j()), 20, t)
++    elif shape == 'O':
++        cv2.ellipse(img, (x + 25 + j(), yc + j()), (25, 30), 0, 0, 360, 20, t)
++    else:
++        cv2.line(img, (x + 25 + j(), yc - 30 + j()), (x + 25 + j(), yc + 30 + j()), 20, t)
++        cv2.line(img, (x + j(), yc + j()), (x + 50 + j(), yc + j()), 20, t)
++
++
++def draw(pairs, seed=3, lines=3):
++    """lines x 12 signs cycling SHAPES; pairs=True joins sign 2k to sign 2k+1 by a bridge stroke along the centre row."""
++    rng = np.random.default_rng(seed)
++    img = np.full((250 * lines + 150, 1700), 235, np.uint8)
++    for li in range(lines):
++        yc = 200 + 250 * li
++        for k in range(12):
++            x = 80 + k * 135
++            j = lambda: int(rng.integers(-2, 3))
++            t = int(rng.integers(4, 7))
++            glyph(img, SHAPES[(k + li) % 4], x, yc, j, t)
++            if pairs and k % 2 == 0:
++                cv2.line(img, (x + 25, yc), (x + 135 + 25, yc), 20, 3)   # bridge from this centre into the next: one component
++    return img
++
++
++def expected(lines=3):
++    return [SHAPES[(k + li) % 4] for li in range(lines) for k in range(12)]
++
++
++def seg(d, name, img, extra=()):
++    p = os.path.join(d, name + '.png'); cv2.imwrite(p, img)
++    out = os.path.join(d, name)
++    r = subprocess.run([sys.executable, TOOL, 'segment', '--page', f'{name}={p}', '--out', out, *extra],
++                       capture_output=True, text=True)
++    assert r.returncode == 0, r.stdout + r.stderr
++    return out, list(csv.DictReader(open(os.path.join(out, 'signs.tsv')), delimiter='\t')), r.stdout
++
++
++def main():
++    d = tempfile.mkdtemp()
++    atlas, rows, _ = seg(d, 'A', draw(False, 3))
++    assert len(rows) == 36, len(rows)
++    lab = os.path.join(d, 'labels.tsv')
++    with open(lab, 'w') as f:
++        f.write('box\tcode\n')
++        for r in sorted(rows, key=lambda r: (int(r['line']), int(r['x']))):
++            f.write(f"{r['sid']}\t{SHAPES[(int(r['pos']) - 1 + int(r['line']) - 1) % 4]}\n")
++    # must-not-block 1: no wide box -> unchanged
++    _, rows2, _ = seg(d, 'A2', draw(False, 4), ['--split-by-recognition', lab, '--rec-atlas', atlas, '--rec-lambda', '0.45'])
++    assert len(rows2) == 36, len(rows2)
++    # the joined page: 6 pen units
++    _, pen, _ = seg(d, 'B0', draw(True, 5))
++    assert len(pen) == 18, len(pen)
++    # must-catch: where the recognition split cuts a joined pair into two pieces, the cut lies in the bridge
++    # (between the first glyph's right edge, +50, and the second glyph's left edge, +135) and the two pieces read as
++    # the two joined shapes. (A Laplace vote posterior rates a sliver as confidently as a whole sign, so the piece COUNT
++    # is not asserted: at this lambda some pairs over-split, which the real control (e) is there to catch.)
++    outd, rec, log = seg(d, 'B1', draw(True, 5), ['--split-by-recognition', lab, '--rec-atlas', atlas, '--rec-lambda', '1.0'])
++    assert os.path.exists(os.path.join(outd, 'rec_split.tsv'))
++    import glyph_atlas as GA
++    knn = GA.RecKNN.from_atlas(atlas, lab)
++    bm = np.load(os.path.join(outd, 'bitmaps.npz'))['signs']
++    two = [r for r in csv.DictReader(open(os.path.join(outd, 'rec_split.tsv')), delimiter='\t') if r['pieces'] == '2']
++    assert len(two) >= 6, (len(two), log)
++    inbridge = sum(50 <= int(r['cuts']) <= 135 for r in two)
++    assert inbridge >= 0.8 * len(two), (inbridge, len(two), [r['cuts'] for r in two])
++    # the classifier itself reads the separate shapes (leave-one-out over the exemplars), so a cut in the bridge is a
++    # recognition result and not luck; the pieces' own labels are not asserted: each piece carries a bridge stub that
++    # changes its shape (that is what arm (e), the permuted-label control, is for on real data)
++    rowsA = sorted(rows, key=lambda r: (int(r['line']), int(r['x'])))
++    bmA = np.load(os.path.join(atlas, 'bitmaps.npz'))['signs']
++    ia = {r['sid']: i for i, r in enumerate(rows)}
++    tk = knn.topk(bmA[[ia[r['sid']] for r in rowsA]], [float(r['rh']) for r in rowsA], [float(r['rw']) for r in rowsA],
++                  k=1, exclude=[{knn.sids.index(r['sid'])} for r in rowsA])
++    acc = np.mean([t[0][0] == SHAPES[(int(r['pos']) - 1 + int(r['line']) - 1) % 4] for t, r in zip(tk, rowsA)])
++    assert acc >= 0.9, acc
++    # must-not-block 2: lambda above any gain -> never split
++    _, nos, _ = seg(d, 'B2', draw(True, 5), ['--split-by-recognition', lab, '--rec-atlas', atlas, '--rec-lambda', '99'])
++    assert len(nos) == 18, len(nos)
++    # the control can vary: permuted labels change the chosen cuts on at least one box
++    outp, perm, _ = seg(d, 'B3', draw(True, 5), ['--split-by-recognition', lab, '--rec-atlas', atlas, '--rec-lambda', '0.45',
++                                                   '--rec-permute-labels', '1'])
++    a = {(r['x'], r['w']) for r in rec}; b = {(r['x'], r['w']) for r in perm}
++    assert a != b, 'permuted labels gave the identical cut set'
++    print('ok')
++
++
++if __name__ == '__main__':
++    main()

@@ -1,0 +1,194 @@
+diff --git a/tools/tests/test_tx_bench_seg.py b/tools/tests/test_tx_bench_seg.py
+new file mode 100644
+index 000000000..a07537923
+--- /dev/null
++++ b/tools/tests/test_tx_bench_seg.py
+@@ -0,0 +1,74 @@
++#!/usr/bin/env python3
++"""Offline test of tools/tx_bench.py --perm-null and --seg-boxes (TXE4-10 RECOG-CUT, 12 Oct 2026). A 3-line synthetic
++truth (6 positions a line, two excluded) and a bench row pointing at it. Must-catch: --perm-null on a perfect output
++reports a null mean err_true above the real 0.0 and a positive gain; --seg-boxes on boxes that match the truth
++positions 1:1 reports a 1:1 share of 1.0 and |boxes - positions| 0, and with two boxes merged into one wide box reports
++a 2:1 step and share < 1. Must-not-block: the ordinary scores are unchanged by either option. No truth file of the
++repository is read; everything is written to a temp dir."""
++import json, os, subprocess, sys, tempfile
++HERE = os.path.dirname(os.path.abspath(__file__))
++TOOL = os.path.join(HERE, '..', 'tx_bench.py')
++SIGNS = ['a', 'b', 'c', 'd', 'e', 'f']
++
++
++def main():
++    d = tempfile.mkdtemp()
++    truth = os.path.join(d, 'truth.tsv')
++    with open(truth, 'w') as f:
++        f.write('line\tpos\tref_sign\ttruth\tplain\tstatus\tflag\n')
++        for li in (1, 2, 3):
++            for p, s in enumerate(SIGNS, 1):
++                st = 'excluded:x' if p == 6 else 'scored'
++                f.write(f'p_L{li:02d}\t{p}\t{s}\t{s}\t{s}\t{st}\t\n')
++    bench = os.path.join(d, 'bench.tsv')
++    with open(bench, 'w') as f:
++        f.write('item\tfolder\tleaf\tlines\tcrops\ttruth\ttruth_source\ttruth_grade\tkey_family\thand\tsplit\tn_positions\tn_scored\tn_excluded\toutputs\tnotes\n')
++        f.write('syn\t.\tleaf\tp_L01-L03\t\ttruth.tsv\tsyn\tC\tsyn\tsyn\tdev\t18\t15\t3\t\t\n')
++    out = os.path.join(d, 'out.tsv')
++    with open(out, 'w') as f:
++        f.write('line\tpos\tsign\n')
++        for li in (1, 2, 3):
++            for p, s in enumerate(SIGNS, 1):
++                f.write(f'p_L{li:02d}\t{p}\t{s}\n')
++    boxes = os.path.join(d, 'boxes.tsv')
++    with open(boxes, 'w') as f:
++        f.write('line\tpos\tsid\tx_line\tw\n')
++        for li in (1, 2, 3):
++            for p in range(1, 7):
++                f.write(f'p_L{li:02d}\t{p}\tb{li}_{p}\t{100 * p}\t60\n')
++    merged = os.path.join(d, 'merged.tsv')
++    with open(merged, 'w') as f:
++        f.write('line\tpos\tsid\tx_line\tw\n')
++        for li in (1, 2, 3):
++            f.write(f'p_L{li:02d}\t1\tm{li}_1\t100\t160\n')     # boxes 1+2 as one wide box
++            for p in range(3, 7):
++                f.write(f'p_L{li:02d}\t{p - 1}\tm{li}_{p}\t{100 * p}\t60\n')
++    topk = os.path.join(d, 'topk.tsv')
++    with open(topk, 'w') as f:
++        f.write('box\tk1\tk2\tk3\n')
++        for li in (1, 2, 3):
++            for p, s in enumerate(SIGNS, 1):
++                f.write(f'b{li}_{p}\t{s}\t_\t_\n')
++
++    def run(*extra):
++        r = subprocess.run([sys.executable, TOOL, out, '--bench', bench, '--json', *extra], capture_output=True, text=True)
++        assert r.returncode == 0, r.stdout + r.stderr
++        return json.loads(r.stdout)['items'][0]
++    base = run()
++    assert base['err_true'] == 0.0, base
++    pn = run('--perm-null', '30', '--perm-seed', '3')
++    assert pn['err_true'] == 0.0
++    n = pn['perm_null']['as_measured']
++    assert n['n'] == 30 and n['mean'] > 0.5 and n['gain_over_chance'] == n['mean'], n
++    sb = run('--seg-boxes', boxes, '--seg-topk', topk)['seg_boxes']
++    assert sb['boxes'] == 18 and sb['truth_positions'] == 18 and sb['abs_diff'] == 0, sb
++    assert sb['share_1to1'] == 1.0 and sb['boxes_2to1'] == 0, sb
++    assert sb['shift_check_loo']['verdict'] in ('PASS', 'UNCHECKABLE'), sb['shift_check_loo']
++    sm = run('--seg-boxes', merged)['seg_boxes']
++    assert sm['boxes'] == 15 and sm['abs_diff'] == 3 and sm['tokens_1to2'] >= 3 and sm['share_1to1'] < 1.0, sm
++    assert 'shift_check_loo' not in sm
++    print('ok')
++
++
++if __name__ == '__main__':
++    main()
+diff --git a/tools/tx_bench.py b/tools/tx_bench.py
+index 7bb3eb85d..0d43015f9 100644
+--- a/tools/tx_bench.py
++++ b/tools/tx_bench.py
+@@ -499,6 +499,64 @@ def _fmt_mask(label, d, a, flagged=None):
+     return out
+ 
+ 
++def perm_null(truth, out_lines, a, missing, n, seed):
++    """--perm-null: the output's signs permuted across all its positions, scored n times (0.75-indel err_true)."""
++    import random
++    rnd = random.Random(seed)
++    lines = sorted(out_lines)
++    flat = [s for l in lines for s in out_lines[l]]
++    vals = []
++    for _ in range(n):
++        rnd.shuffle(flat)
++        i, ol = 0, {}
++        for l in lines:
++            ol[l] = flat[i:i + len(out_lines[l])]; i += len(out_lines[l])
++        vals.append(_measure(score_item(truth, ol, missing, G=0.75))[2])
++    vals.sort()
++    lo, hi = vals[int(0.025 * (n - 1))], vals[int(0.975 * (n - 1))]
++    return dict(n=n, seed=seed, mean=round(sum(vals) / n, 4), p2_5=round(lo, 4), p97_5=round(hi, 4))
++
++
++def seg_boxes(truth, boxes_path, topk_path):
++    """--seg-boxes: boxes vs truth positions per line, and a label-aware map of the boxes to the truth sequence."""
++    import tempfile
++    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
++    import box_token_align as BTA, join_check as JC
++    boxes = read_tsv(boxes_path)
++    by_line = defaultdict(list)
++    for r in truth:
++        by_line[r['line']].append(r)
++    lines = sorted(l for l in by_line if any(b['line'] == l for b in boxes))
++    signs, read = [], []
++    for l in lines:
++        page, li = BTA.split_line(l)
++        for b in boxes:
++            if b['line'] == l:
++                signs.append(dict(sid=b['sid'], page=page, line=li, x=b.get('x_line') or b['x'], w=b['w']))
++        for r in sorted(by_line[l], key=lambda r: float(r['pos'])):
++            read.append(dict(line=l, pos=str(int(float(r['pos']))), sign=r['ref_sign']))
++    labels = BTA.read_labels(topk_path) if topk_path else None
++    rows, per = BTA.build_map(signs, read, labels, None, lines, BTA.LAM, BTA.NEUTRAL, True)
++    ops = Counter(r['op'] for r in rows)
++    nbox = sum(per[l]['boxes'] for l in lines)
++    one = sum(1 for r in rows if r['op'] == '1:1')
++    d = dict(lines=len(lines), boxes=nbox, truth_positions=sum(per[l]['tokens'] for l in lines),
++             abs_diff=sum(abs(per[l]['boxes'] - per[l]['tokens']) for l in lines),
++             share_1to1=round(one / nbox, 4) if nbox else None, ops=dict(ops),
++             boxes_2to1=sum(1 for r in rows if r['op'] == '2:1'), tokens_1to2=sum(1 for r in rows if r['op'] == '1:2'),
++             skipped_boxes=sum(len(per[l]['skipped']) for l in lines), skipped_tokens=ops.get('skiptok', 0),
++             unsure=ops.get('unsure', 0))
++    if topk_path:
++        chk = {r.get('box') or r.get('sid'): r.get('k1') for r in read_tsv(topk_path) if (r.get('k1') or '_') != '_'}
++        rs = defaultdict(set)
++        for r in read:
++            rs[(r['line'], int(r['pos']))].add(r['sign'])
++        res = JC.evaluate(BTA.positions(rows, loo=True), chk, rs)
++        d['shift_check_loo'] = {k: res[k] for k in ('verdict', 'share0', 'p95_0', 'sharepm1', 'b2_bound') if k in res}
++        d['shift_check_loo']['counts'] = res.get('overall') or res.get('counts')
++    return d
++
++
+ def main(argv=None):
+     argv = list(sys.argv[1:] if argv is None else argv)
+     if '--legacy' in argv:
+@@ -519,6 +577,17 @@ def main(argv=None):
+     ap.add_argument('--strict', action='store_true', help='also score exact ref_sign match only (visual identity)')
+     ap.add_argument('--ci', action='store_true', help='1,000-resample line-level bootstrap (paired under --paired)')
+     ap.add_argument('--legacy', action='store_true', help='the pre-fix scorer, reproducing figures on file')
++    ap.add_argument('--perm-null', type=int, default=0, metavar='N',
++                    help='TXE4-10 (12 Oct 2026): also score N label permutations of each output over its own positions '
++                         '(geometry fixed, signs shuffled across all its covered lines; VERIFY-6 null A) and print the null '
++                         'mean err_true with its 2.5-97.5 percentiles and the reading gain over chance = null mean - real')
++    ap.add_argument('--perm-seed', type=int, default=1, help='--perm-null seed (1)')
++    ap.add_argument('--seg-boxes', metavar='BOXES.tsv',
++                    help='TXE4-10: score a box set (line, pos, sid, x_line|x, w) against the truth POSITIONS per line: '
++                         '|boxes - truth positions| and the 1:1 / 2:1 / 1:2 / skip / unsure shares of a tools/box_token_align.py '
++                         'map of the boxes to the truth ref_sign sequence (all statuses), steered by --seg-topk with --loo; the '
++                         'map\'s truth-free shift check (check labels = the top-k file\'s k1, leave-one-out row) is printed beside')
++    ap.add_argument('--seg-topk', metavar='TOPK.tsv', help='--seg-boxes: a classify --topk file (box, k1, k2, k3) steering the map')
+     a = ap.parse_args(argv)
+     if not os.path.exists(a.bench):
+         print('tx_bench: no bench file %s' % a.bench, file=sys.stderr); return 2
+@@ -584,6 +653,26 @@ def main(argv=None):
+                 lines = _fmt_mask(label, d, a, d.get('flagged') if key == 'flagged_excluded' else None)
+                 lines[0] = ('%s [%s] ' % (item['item'], item['split']) if first else '  ') + lines[0]
+                 text.extend(lines)
++                if a.perm_null:
++                    pn = perm_null(tr, ol, a, missing, a.perm_null, a.perm_seed)
++                    pn['gain_over_chance'] = round(pn['mean'] - d['err_true'], 4)
++                    rec.setdefault('perm_null', {})[key] = pn
++                    text.append('    label-permutation null (%d draws, seed %d; VERIFY-6 null A): err_true mean %.3f '
++                                '[%.3f, %.3f]; reading gain over chance = null mean - real = %.3f'
++                                % (pn['n'], pn['seed'], pn['mean'], pn['p2_5'], pn['p97_5'], pn['gain_over_chance']))
++                if a.seg_boxes and first:
++                    sb = seg_boxes(truth, a.seg_boxes, a.seg_topk)
++                    rec['seg_boxes'] = sb
++                    sc = sb.get('shift_check_loo')
++                    text.append('    seg-boxes %s: %d lines, boxes %d vs truth positions %d, sum|boxes - positions| %d; map '
++                                '1:1 share %.3f (%d boxes), 2:1 boxes %d, 1:2 tokens %d, skipped boxes %d, skipped tokens %d, '
++                                'unsure %d%s' % (os.path.basename(a.seg_boxes), sb['lines'], sb['boxes'], sb['truth_positions'],
++                                                 sb['abs_diff'], sb['share_1to1'] or 0.0, sb['ops'].get('1:1', 0),
++                                                 sb['boxes_2to1'], sb['tokens_1to2'], sb['skipped_boxes'], sb['skipped_tokens'],
++                                                 sb['unsure'], ('; shift check (leave-one-out): %s share0 %.3f (null p95 %.3f) '
++                                                                'share+-1 %.3f (bound %.3f)' % (sc['verdict'], sc['share0'],
++                                                                                              sc['p95_0'], sc['sharepm1'],
++                                                                                              sc['b2_bound'])) if sc else ''))
+                 first = False
+                 if a.paired:
+                     pr = paired(tr, base_lines, ol, missing)

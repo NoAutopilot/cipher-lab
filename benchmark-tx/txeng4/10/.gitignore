@@ -1,0 +1,6 @@
+# regenerable segment outputs (arms.py): bitmaps and crops; boxes.tsv, signs.tsv, rec_split.tsv and segment.log are kept
+seg/*/bitmaps.npz
+seg/*/crops/
+seg/*/pages.json
+seg/lam_*/
+labels/vote/
