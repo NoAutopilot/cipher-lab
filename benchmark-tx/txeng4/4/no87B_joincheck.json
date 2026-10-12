@@ -1,0 +1,427 @@
+{
+ "verdict": "PASS",
+ "n": 777,
+ "overall": {
+  "0": 625,
+  "none": 131,
+  "-1": 8,
+  "+1": 5,
+  "+-2": 8
+ },
+ "share0": 0.8043758043758044,
+ "sharepm1": 0.01673101673101673,
+ "b1": true,
+ "b2": true,
+ "b3": true,
+ "p95_0": 0.055341055341055344,
+ "p95_pm1": 0.09047619047619047,
+ "b2_bound": 0.09047619047619047,
+ "lines": {
+  "f178r_L01": {
+   "counts": {
+    "0": 10,
+    "none": 16,
+    "-1": 1
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178r_L02": {
+   "counts": {
+    "0": 17,
+    "none": 10,
+    "+1": 3,
+    "-1": 1
+   },
+   "placed": 31,
+   "verdict": "pass"
+  },
+  "f178r_L03": {
+   "counts": {
+    "none": 4,
+    "0": 15
+   },
+   "placed": 19,
+   "verdict": "pass"
+  },
+  "f178v_L01": {
+   "counts": {
+    "none": 6,
+    "0": 19,
+    "+-2": 1
+   },
+   "placed": 26,
+   "verdict": "pass"
+  },
+  "f178v_L02": {
+   "counts": {
+    "0": 22,
+    "none": 3,
+    "+-2": 1
+   },
+   "placed": 26,
+   "verdict": "pass"
+  },
+  "f178v_L03": {
+   "counts": {
+    "0": 23,
+    "-1": 1,
+    "none": 3
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L04": {
+   "counts": {
+    "0": 23,
+    "none": 4
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L05": {
+   "counts": {
+    "0": 22,
+    "none": 7
+   },
+   "placed": 29,
+   "verdict": "pass"
+  },
+  "f178v_L06": {
+   "counts": {
+    "0": 21,
+    "none": 5,
+    "+-2": 2
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f178v_L07": {
+   "counts": {
+    "0": 25,
+    "none": 2
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L08": {
+   "counts": {
+    "0": 20,
+    "none": 8
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f178v_L09": {
+   "counts": {
+    "none": 5,
+    "0": 19,
+    "-1": 1
+   },
+   "placed": 25,
+   "verdict": "pass"
+  },
+  "f178v_L10": {
+   "counts": {
+    "none": 4,
+    "0": 22,
+    "-1": 2,
+    "+1": 1
+   },
+   "placed": 29,
+   "verdict": "pass"
+  },
+  "f178v_L11": {
+   "counts": {
+    "none": 3,
+    "0": 24
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L12": {
+   "counts": {
+    "0": 29,
+    "none": 2
+   },
+   "placed": 31,
+   "verdict": "pass"
+  },
+  "f178v_L13": {
+   "counts": {
+    "0": 23,
+    "none": 4
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L14": {
+   "counts": {
+    "0": 25,
+    "+-2": 1,
+    "none": 1
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L15": {
+   "counts": {
+    "0": 24,
+    "none": 3
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L16": {
+   "counts": {
+    "0": 26,
+    "none": 3
+   },
+   "placed": 29,
+   "verdict": "pass"
+  },
+  "f178v_L17": {
+   "counts": {
+    "0": 25,
+    "none": 2
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L18": {
+   "counts": {
+    "0": 24,
+    "none": 3
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L19": {
+   "counts": {
+    "0": 23,
+    "none": 5
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f178v_L20": {
+   "counts": {
+    "0": 24,
+    "none": 2
+   },
+   "placed": 26,
+   "verdict": "pass"
+  },
+  "f178v_L21": {
+   "counts": {
+    "none": 5,
+    "0": 19
+   },
+   "placed": 24,
+   "verdict": "pass"
+  },
+  "f178v_L22": {
+   "counts": {
+    "0": 22,
+    "+-2": 1,
+    "none": 5
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f178v_L23": {
+   "counts": {
+    "0": 24,
+    "none": 3,
+    "-1": 1,
+    "+-2": 1
+   },
+   "placed": 29,
+   "verdict": "pass"
+  },
+  "f179r_L01": {
+   "counts": {
+    "none": 6,
+    "0": 17,
+    "+-2": 1,
+    "+1": 1
+   },
+   "placed": 25,
+   "verdict": "pass"
+  },
+  "f179r_L02": {
+   "counts": {
+    "0": 23,
+    "none": 3
+   },
+   "placed": 26,
+   "verdict": "pass"
+  },
+  "f179r_L03": {
+   "counts": {
+    "0": 15,
+    "none": 4,
+    "-1": 1
+   },
+   "placed": 20,
+   "verdict": "pass"
+  }
+ },
+ "draws": 20,
+ "seed": 20261012,
+ "in_sample": {
+  "0": 635,
+  "none": 130,
+  "-1": 5,
+  "+1": 2,
+  "+-2": 8
+ },
+ "kept_per_line": {
+  "f178r_L01": {
+   "kept": 17,
+   "tokens": 32,
+   "boxes": 33
+  },
+  "f178r_L02": {
+   "kept": 29,
+   "tokens": 31,
+   "boxes": 31
+  },
+  "f178r_L03": {
+   "kept": 0,
+   "tokens": 27,
+   "boxes": 46
+  },
+  "f178v_L01": {
+   "kept": 26,
+   "tokens": 27,
+   "boxes": 28
+  },
+  "f178v_L02": {
+   "kept": 26,
+   "tokens": 27,
+   "boxes": 28
+  },
+  "f178v_L03": {
+   "kept": 27,
+   "tokens": 27,
+   "boxes": 27
+  },
+  "f178v_L04": {
+   "kept": 27,
+   "tokens": 28,
+   "boxes": 29
+  },
+  "f178v_L05": {
+   "kept": 29,
+   "tokens": 31,
+   "boxes": 33
+  },
+  "f178v_L06": {
+   "kept": 17,
+   "tokens": 32,
+   "boxes": 30
+  },
+  "f178v_L07": {
+   "kept": 25,
+   "tokens": 30,
+   "boxes": 32
+  },
+  "f178v_L08": {
+   "kept": 28,
+   "tokens": 30,
+   "boxes": 32
+  },
+  "f178v_L09": {
+   "kept": 11,
+   "tokens": 30,
+   "boxes": 29
+  },
+  "f178v_L10": {
+   "kept": 28,
+   "tokens": 32,
+   "boxes": 32
+  },
+  "f178v_L11": {
+   "kept": 8,
+   "tokens": 32,
+   "boxes": 31
+  },
+  "f178v_L12": {
+   "kept": 31,
+   "tokens": 32,
+   "boxes": 33
+  },
+  "f178v_L13": {
+   "kept": 2,
+   "tokens": 29,
+   "boxes": 28
+  },
+  "f178v_L14": {
+   "kept": 27,
+   "tokens": 27,
+   "boxes": 27
+  },
+  "f178v_L15": {
+   "kept": 27,
+   "tokens": 31,
+   "boxes": 29
+  },
+  "f178v_L16": {
+   "kept": 29,
+   "tokens": 31,
+   "boxes": 30
+  },
+  "f178v_L17": {
+   "kept": 13,
+   "tokens": 29,
+   "boxes": 28
+  },
+  "f178v_L18": {
+   "kept": 27,
+   "tokens": 27,
+   "boxes": 27
+  },
+  "f178v_L19": {
+   "kept": 28,
+   "tokens": 29,
+   "boxes": 30
+  },
+  "f178v_L20": {
+   "kept": 26,
+   "tokens": 27,
+   "boxes": 28
+  },
+  "f178v_L21": {
+   "kept": 7,
+   "tokens": 27,
+   "boxes": 27
+  },
+  "f178v_L22": {
+   "kept": 28,
+   "tokens": 28,
+   "boxes": 28
+  },
+  "f178v_L23": {
+   "kept": 28,
+   "tokens": 29,
+   "boxes": 29
+  },
+  "f179r_L01": {
+   "kept": 21,
+   "tokens": 31,
+   "boxes": 37
+  },
+  "f179r_L02": {
+   "kept": 12,
+   "tokens": 31,
+   "boxes": 33
+  },
+  "f179r_L03": {
+   "kept": 7,
+   "tokens": 27,
+   "boxes": 31
+  }
+ },
+ "dropped_lines": []
+}

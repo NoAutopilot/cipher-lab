@@ -272,7 +272,9 @@ def calibrate(knots, u):
 
 def truth_sets_for(read_rows, truth_path, lines):
     """{(line, pos of the READ): truth set} for the read's positions aligned to the unflagged scored truth positions of
-    the named lines (tx_bench.align, G 0.75). The only truth read outside tx_bench, for `fit` and `ece`."""
+    the named lines (tx_bench.align, G 0.75; the set is the truth column only, exactly tx_bench.position_errors's test --
+    a first version also admitted ref_sign and under-counted pass A's dev errors 8 for 16, fixed 12 Oct 2026 01:4x UTC
+    before any eval look). The only truth read outside tx_bench, for `fit` and `ece`."""
     import tx_bench as TB
     truth = TB.read_tsv(truth_path)
     by = collections.defaultdict(list)
@@ -289,8 +291,8 @@ def truth_sets_for(read_rows, truth_path, lines):
         if not toks:
             continue
         ref = [r['ref_sign'] for r in trows]
-        ts = [set(filter(None, r['truth'].split('|'))) | {r['ref_sign']} for r in trows]
-        path = TB.align(ref, ts, [s for _, s in toks])
+        ts = [set(filter(None, r['truth'].split('|'))) for r in trows]   # the truth column only, as tx_bench.position_errors
+        path = TB.align(ref, ts, [s for _, s in toks])                   # (ref_sign matches in the ALIGNMENT only)
         j = 0
         for ri, osg in path:
             if ri is None:

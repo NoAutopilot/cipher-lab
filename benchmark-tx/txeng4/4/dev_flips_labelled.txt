@@ -1,0 +1,31 @@
+# dev_tune, pass A, unflagged scored positions with a read token: 337 | pass-A wrong among them: 15 | on kept (classified) boxes: 13
+# reachable wrong positions with truth = k1: 9 | = k2: 1 | in top-3: 10
+# consistent misreads (A reads the same wrong sign where the classifier, trained on A, also votes that sign):  0
+# per reachable wrong position: line pos | A | truth set | k1 s1 u1 | uA
+  f178v_L01 23 | T50 | T57/T92/T95/T98/X_CE | T92 0.5868 0.5891 | uA 0.4109
+  f178v_L02 19 | T83 | T81 | T81 0.6664 0.7109 | uA 0.2891
+  f178v_L03 4 | T50 | T57/T92/T95/T98/X_CE | T92 0.8146 0.8422 | uA 0.1578
+  f178v_L04 4 | T50 | T57/T92/T95/T98/X_CE | T92 1.0000 1.0639 | uA -0.0639
+  f178v_L05 1 | T76 | T45/T66/T86 | T26 0.4092 0.4058 | uA 0.2163
+  f178v_L05 25 | T50 | T57/T92/T95/T98/X_CE | T83 0.3703 0.3367 | uA -0.2500
+  f178v_L06 18 | T98 | T18/T63 | T18 0.4052 0.3994 | uA 0.1818
+  f178v_L08 10 | T50 | T57/T92/T95/T98/X_CE | T92 1.0000 1.0185 | uA -0.0185
+  f178v_L10 1 | T92 | T27/T53/T65 | T53 1.0000 1.0720 | uA -0.0752
+  f178v_L10 4 | T76 | T45/T66/T86 | T36 0.6064 0.6150 | uA -0.0251
+  f178v_L10 5 | T50 | T57/T92/T95/T98/X_CE | T92 0.8209 0.8512 | uA 0.1488
+  f178v_L10 31 | T98 | T36/T50 | T36 1.0000 1.0276 | uA -0.0276
+  f178v_L11 5 | T76 | T45/T66/T86 | T26 0.3135 0.3638 | uA 0.1583
+# the 11 flips at tau 0.8 eps 0.1 (every tau >= 0.7 cell is this same set):
+  f178v_L02 21 T53 -> T65 p1 0.938 pA 0.000 | truth T27/T53/T65 | both-wrong
+  f178v_L02 23 T64 -> T13 p1 0.938 pA 0.000 | truth T56/T64 | BROKEN
+  f178v_L03 4 T50 -> T92 p1 0.982 pA 0.000 | truth T57/T92/T95/T98/X_CE | FIXED
+  f178v_L03 26 T86 -> T85 p1 0.938 pA 0.000 | truth T45/T66/T86 | BROKEN
+  f178v_L04 4 T50 -> T92 p1 1.000 pA 0.000 | truth T57/T92/T95/T98/X_CE | FIXED
+  f178v_L05 11 T86 -> T90 p1 0.982 pA 0.000 | truth T45/T66/T86 | BROKEN
+  f178v_L08 10 T50 -> T92 p1 0.982 pA 0.000 | truth T57/T92/T95/T98/X_CE | FIXED
+  f178v_L10 1 T92 -> T53 p1 1.000 pA 0.000 | truth T27/T53/T65 | FIXED
+  f178v_L10 5 T50 -> T92 p1 0.982 pA 0.000 | truth T57/T92/T95/T98/X_CE | FIXED
+  f178v_L10 31 T98 -> T36 p1 0.982 pA 0.000 | truth T36/T50 | FIXED
+  f178v_L11 1 T26 -> T89 p1 1.000 pA 0.000 | truth - | flagged/excluded
+# {'both-wrong': 1, 'BROKEN': 3, 'FIXED': 6, 'flagged/excluded': 1}
+# dev kept boxes where A's own sign has zero vote share among the k=5 (pA = 0, so eps never binds): 18 of 286
