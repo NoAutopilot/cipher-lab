@@ -1,0 +1,708 @@
+passage	pos	sign_id	alt	conf	note
+f89_L01	1	CLEAR		M	depuis
+f89_L01	2	CLEAR		M	se
+f89_L01	3	sq		M	
+f89_L01	4	0		M	
+f89_L01	5	z		M	
+f89_L01	6	?		L	
+f89_L01	7	4		M	
+f89_L01	8	1		M	
+f89_L01	9	.		M	
+f89_L01	10	a		M	
+f89_L01	11	c		M	
+f89_L01	12	0		M	
+f89_L01	13	4		M	
+f89_L01	14	1		M	
+f89_L01	15	sq		M	
+f89_L01	16	NEW:d		L	
+f89_L01	17	v		M	
+f89_L01	18	w		M	
+f89_L01	19	v'		M	
+f89_L01	20	1		M	
+f89_L01	21	0		M	
+f89_L01	22	NEW:d		L	
+f89_L01	23	4		M	
+f89_L01	24	#		M	
+f89_L01	25	sq		M	
+f89_L01	26	3		M	
+f89_L01	27	0'		M	
+f89_L01	28	+		M	
+f89_L01	29	v		M	
+f89_L01	30	4		M	
+f89_L01	31	1		M	
+f89_L01	32	9		M	
+f89_L01	33	m		M	
+f89_L01	34	0		M	
+f89_L01	35	sq		M	
+f89_L01	36	p		M	
+f89_L01	37	4		M	
+f89_L01	38	y		M	
+f89_L01	39	c		M	
+f89_L01	40	m		M	
+f89_L01	41	1		M	
+f89_L01	42	4		M	
+f89_L01	43	p		M	
+f89_L01	44	0		M	
+f89_L01	45	p		M	
+f89_L01	46	v		M	
+f89_L01	47	3		M	
+f89_L01	48	0		M	
+f89_L01	49	1		M	
+f89_L01	50	L		M	
+f89_L01	51	y		M	
+f89_L01	52	m		M	
+f89_L01	53	w		M	
+f89_L01	54	v		M	
+f89_L01	55	4		M	
+f89_L01	56	m		M	
+f89_L01	57	3		M	
+f89_L01	58	c		M	
+f89_L01	59	0		M	
+f89_L02	1	.		M	
+f89_L02	2	1		M	
+f89_L02	3	.		M	
+f89_L02	4	p		M	
+f89_L02	5	sq		M	
+f89_L02	6	y		M	
+f89_L02	7	c		M	
+f89_L02	8	m		M	
+f89_L02	9	1		M	
+f89_L02	10	.		M	
+f89_L02	11	a		M	
+f89_L02	12	m		M	
+f89_L02	13	3		M	
+f89_L02	14	9		M	
+f89_L02	15	0		M	
+f89_L02	16	.		M	
+f89_L02	17	0		M	
+f89_L02	18	4		M	
+f89_L02	19	CLEAR		M	ne
+f89_L02	20	CLEAR		M	bonne
+f89_L02	21	CLEAR		M	plaist
+f89_L02	22	p		M	
+f89_L02	23	0		M	
+f89_L02	24	y		M	
+f89_L02	25	m		M	
+f89_L02	26	c		M	
+f89_L02	27	a		M	
+f89_L02	28	NEW:amp		L	
+f89_L02	29	1		M	
+f89_L02	30	L		M	
+f89_L02	31	w		M	
+f89_L02	32	NEW:d		L	
+f89_L02	33	c		M	
+f89_L02	34	y		M	
+f89_L02	35	z		M	
+f89_L02	36	m		M	
+f89_L02	37	0		M	
+f89_L02	38	z		M	
+f89_L02	39	1		M	
+f89_L02	40	f		M	
+f89_L02	41	m		M	
+f89_L02	42	p		M	
+f89_L02	43	4		M	
+f89_L02	44	1		M	
+f89_L02	45	L		M	
+f89_L02	46	v		M	
+f89_L02	47	p		M	
+f89_L02	48	c		M	
+f89_L02	49	4		M	
+f89_L02	50	f		M	
+f89_L02	51	m		M	
+f89_L02	52	#		M	
+f89_L02	53	v		M	
+f89_L02	54	p		M	
+f89_L02	55	4		M	
+f89_L02	56	9		M	
+f89_L02	57	1		M	
+f89_L02	58	w		M	
+f89_L03	1	a		M	
+f89_L03	2	m		M	
+f89_L03	3	3		M	
+f89_L03	4	L		M	
+f89_L03	5	4		M	
+f89_L03	6	p		M	
+f89_L03	7	y		M	
+f89_L03	8	0		M	
+f89_L03	9	0'		M	
+f89_L03	10	2		M	
+f89_L03	11	sq		M	
+f89_L03	12	4		M	
+f89_L03	13	3		M	
+f89_L03	14	m		M	
+f89_L03	15	m		M	
+f89_L03	16	p		M	
+f89_L03	17	0		M	
+f89_L03	18	f		M	
+f89_L03	19	p		M	
+f89_L03	20	1		M	
+f89_L03	21	.		M	
+f89_L03	22	3		M	
+f89_L03	23	0		M	
+f89_L03	24	#		M	
+f89_L03	25	1		M	
+f89_L03	26	sq		M	
+f89_L03	27	m		M	
+f89_L03	28	1		M	
+f89_L03	29	.		M	
+f89_L03	30	NEW:d		L	
+f89_L03	31	4		M	
+f89_L03	32	v		M	
+f89_L03	33	#		M	
+f89_L03	34	0		M	
+f89_L03	35	.		M	
+f89_L03	36	4		M	
+f89_L03	37	1		M	
+f89_L03	38	.		M	
+f89_L03	39	sq		M	
+f89_L03	40	L		M	
+f89_L03	41	0		M	
+f89_L03	42	a		M	
+f89_L03	43	w		M	
+f89_L03	44	4		M	
+f89_L03	45	0		M	
+f89_L03	46	#		M	
+f89_L03	47	p		M	
+f89_L03	48	v		M	
+f89_L03	49	v		M	
+f89_L03	50	sq		M	
+f89_L03	51	m		M	
+f89_L03	52	0		M	
+f89_L03	53	4		M	
+f89_L03	54	+		M	
+f89_L03	55	0		M	
+f89_L03	56	v		M	
+f89_L03	57	.		M	
+f89_L03	58	0		M	
+f89_L03	59	.		M	
+f89_L03	60	p		M	
+f89_L03	61	NEW:d		L	
+f89_L03	62	v		M	
+f89_L03	63	c		M	
+f89_L03	64	v		M	
+f89_L03	65	L		M	
+f89_L03	66	m		M	
+f89_L03	67	CLEAR		M	fabmedy
+f89_L04	1	CLEAR		M	faisant
+f89_L04	2	#		M	
+f89_L04	3	y		M	
+f89_L04	4	m		M	
+f89_L04	5	w		M	
+f89_L04	6	+		M	
+f89_L04	7	c		M	
+f89_L04	8	4		M	
+f89_L04	9	0		M	
+f89_L04	10	m		M	
+f89_L04	11	c		M	
+f89_L04	12	m		M	
+f89_L04	13	3		M	
+f89_L04	14	+		M	
+f89_L04	15	#		M	
+f89_L04	16	m		M	
+f89_L04	17	p		M	
+f89_L04	18	m		M	
+f89_L04	19	L		M	
+f89_L04	20	+		M	
+f89_L04	21	v		M	
+f89_L04	22	4		M	
+f89_L04	23	+		M	
+f89_L04	24	y		M	
+f89_L04	25	1		M	
+f89_L04	26	m		M	
+f89_L04	27	t		M	
+f89_L04	28	c		M	
+f89_L04	29	y		M	
+f89_L04	30	m		M	
+f89_L04	31	m		M	
+f89_L04	32	a		M	
+f89_L04	33	0		M	
+f89_L04	34	w		M	
+f89_L04	35	4		M	
+f89_L04	36	1		M	
+f89_L04	37	c		M	
+f89_L04	38	y		M	
+f89_L04	39	p		M	
+f89_L04	40	CLEAR		M	et
+f89_L04	41	CLEAR		M	que
+f89_L04	42	CLEAR		M	a
+f89_L04	43	CLEAR		M	quil
+f89_L04	44	CLEAR		M	avoir
+f89_L04	45	CLEAR		M	faict
+f89_L04	46	CLEAR		M	pour
+f89_L05	1	CLEAR		M	le
+f89_L05	2	CLEAR		M	regard
+f89_L05	3	NEW:d		L	
+f89_L05	4	sq		M	
+f89_L05	5	0'		M	
+f89_L05	6	y		M	
+f89_L05	7	L		M	
+f89_L05	8	0'		M	
+f89_L05	9	sq		M	
+f89_L05	10	0		M	
+f89_L05	11	0		M	
+f89_L05	12	.		M	
+f89_L05	13	1		M	
+f89_L05	14	.		M	
+f89_L05	15	sq		M	
+f89_L05	16	m		M	
+f89_L05	17	y		M	
+f89_L05	18	p		M	
+f89_L05	19	v		M	
+f89_L05	20	a		M	
+f89_L05	21	m		M	
+f89_L05	22	0		M	
+f89_L05	23	sq		M	
+f89_L05	24	1		M	
+f89_L05	25	4		M	
+f89_L05	26	1		M	
+f89_L05	27	.		M	
+f89_L05	28	w		M	
+f89_L05	29	y		M	
+f89_L05	30	L		M	
+f89_L05	31	0		M	
+f89_L05	32	m		M	
+f89_L05	33	sq		M	
+f89_L05	34	z		M	
+f89_L05	35	a		M	
+f89_L05	36	y		M	
+f89_L05	37	+		M	
+f89_L05	38	a		M	
+f89_L05	39	CLEAR		M	quils
+f89_L05	40	CLEAR		M	enfuiu
+f89_L05	41	.		M	
+f89_L05	42	1		M	
+f89_L05	43	.		M	
+f89_L05	44	sq		M	
+f89_L05	45	v		M	
+f89_L05	46	9		M	
+f89_L05	47	t		M	
+f89_L05	48	4		M	
+f89_L05	49	v		M	
+f89_L05	50	sq		M	
+f89_L05	51	0		M	
+f89_L05	52	.		M	
+f89_L05	53	1		M	
+f89_L05	54	.		M	
+f89_L05	55	sq		M	
+f89_L05	56	L		M	
+f89_L05	57	t		M	
+f89_L05	58	p		M	
+f89_L06	1	CLEAR		M	se
+f89_L06	2	CLEAR		M	luy
+f89_L06	3	CLEAR		M	cy
+f89_L06	4	CLEAR		M	eust
+f89_L06	5	CLEAR		M	esté
+f89_L06	6	CLEAR		M	quelque
+f89_L06	7	CLEAR		M	chose
+f89_L06	8	CLEAR		M	le
+f89_L06	9	CLEAR		M	dimenche
+f89_L06	10	CLEAR		M	se
+f89_L06	11	f		M	
+f89_L06	12	T		M	
+f89_L06	13	o		M	
+f89_L06	14	w		M	
+f89_L06	15	0		M	
+f89_L06	16	o		M	
+f89_L06	17	v		M	
+f89_L06	18	sq		M	
+f89_L06	19	0'		M	
+f89_L06	20	v		M	
+f89_L06	21	4		M	
+f89_L06	22	y		M	
+f89_L06	23	w		M	
+f89_L06	24	m		M	
+f89_L06	25	m		M	
+f89_L06	26	t		M	
+f89_L06	27	c		M	
+f89_L06	28	y		M	
+f89_L06	29	#		M	
+f89_L06	30	T		M	
+f89_L06	31	1		M	
+f89_L06	32	3		M	
+f89_L06	33	0		M	
+f89_L06	34	4		M	
+f89_L06	35	4		M	
+f89_L06	36	m		M	
+f89_L06	37	L		M	
+f89_L06	38	4		M	
+f89_L06	39	+		M	
+f89_L06	40	0		M	
+f89_L07	1	w		M	
+f89_L07	2	1		M	
+f89_L07	3	.		M	
+f89_L07	4	m		M	
+f89_L07	5	y		M	
+f89_L07	6	m		M	
+f89_L07	7	f		M	
+f89_L07	8	v		M	
+f89_L07	9	p		M	
+f89_L07	10	m		M	
+f89_L07	11	0		M	
+f89_L07	12	f		M	
+f89_L07	13	4		M	
+f89_L07	14	y		M	
+f89_L07	15	c		M	
+f89_L07	16	w		M	
+f89_L07	17	v		M	
+f89_L07	18	p		M	
+f89_L07	19	p		M	
+f89_L07	20	0		M	
+f89_L07	21	y		M	
+f89_L07	22	m		M	
+f89_L07	23	p		M	
+f89_L07	24	4		M	
+f89_L07	25	1		M	
+f89_L07	26	sq		M	
+f89_L07	27	m		M	
+f89_L07	28	L		M	
+f89_L07	29	4		M	
+f89_L07	30	v		M	
+f89_L07	31	0		M	
+f89_L07	32	f		M	
+f89_L07	33	m		M	
+f89_L07	34	y		M	
+f89_L07	35	1		M	
+f89_L07	36	0		M	
+f89_L07	37	CLEAR		M	bien
+f89_L07	38	CLEAR		M	gentilhomme
+f89_L07	39	v		M	
+f89_L07	40	0		M	
+f89_L07	41	4		M	
+f89_L07	42	z		M	
+f89_L07	43	v		M	
+f89_L07	44	1		M	
+f89_L07	45	0		M	
+f89_L07	46	sq		M	
+f89_L07	47	m		M	
+f89_L07	48	1		M	
+f89_L07	49	.		M	
+f89_L07	50	NEW:d		L	
+f89_L07	51	y		M	
+f89_L08	1	CLEAR		M	post
+f89_L08	2	m		M	
+f89_L08	3	c		M	
+f89_L08	4	v		M	
+f89_L08	5	m		M	
+f89_L08	6	y		M	
+f89_L08	7	L		M	
+f89_L08	8	c		M	
+f89_L08	9	4		M	
+f89_L08	10	0		M	
+f89_L08	11	#		M	
+f89_L08	12	.		M	
+f89_L08	13	y		M	
+f89_L08	14	z		M	
+f89_L08	15	p		M	
+f89_L08	16	v		M	
+f89_L08	17	p		M	
+f89_L08	18	4		M	
+f89_L08	19	3		M	
+f89_L08	20	1		M	
+f89_L08	21	2		M	
+f89_L08	22	v		M	
+f89_L08	23	f		M	
+f89_L08	24	m		M	
+f89_L08	25	sq		M	
+f89_L08	26	m		M	
+f89_L08	27	0'		M	
+f89_L08	28	#		M	
+f89_L08	29	.		M	
+f89_L08	30	1		M	
+f89_L08	31	.		M	
+f89_L08	32	f		M	
+f89_L08	33	m		M	
+f89_L08	34	#		M	
+f89_L08	35	.		M	
+f89_L08	36	1		M	
+f89_L08	37	a		M	
+f89_L08	38	L		M	
+f89_L08	39	w		M	
+f89_L08	40	v		M	
+f89_L08	41	sq		M	
+f89_L08	42	0		M	
+f89_L08	43	0		M	
+f89_L08	44	sq		M	
+f89_L08	45	CLEAR		M	de
+f89_L08	46	CLEAR		M	vellre
+f89_L08	47	CLEAR		M	quelle
+f89_L08	48	CLEAR		M	bonne
+f89_L08	49	CLEAR		M	amy
+f89_L09	1	y		M	
+f89_L09	2	w		M	
+f89_L09	3	3		M	
+f89_L09	4	y		M	
+f89_L09	5	p		M	
+f89_L09	6	f		M	
+f89_L09	7	f		M	
+f89_L09	8	0		M	
+f89_L09	9	1		M	
+f89_L09	10	sq		M	
+f89_L09	11	L		M	
+f89_L09	12	#		M	
+f89_L09	13	+		M	
+f89_L09	14	p		M	
+f89_L09	15	CLEAR		M	bonne
+f89_L09	16	CLEAR		M	seigneur
+f89_L09	17	CLEAR		M	si
+f89_L09	18	CLEAR		M	bonne
+f89_L09	19	CLEAR		M	plaist
+f89_L09	20	CLEAR		M	mon
+f89_L09	21	CLEAR		M	seigneur
+f89_L09	22	f		M	
+f89_L09	23	y		M	
+f89_L09	24	v		M	
+f89_L09	25	a		M	
+f89_L09	26	m		M	
+f89_L09	27	y		M	
+f89_L09	28	L		M	
+f89_L09	29	#		M	
+f89_L09	30	0		M	
+f89_L09	31	4		M	
+f89_L09	32	4		M	
+f89_L09	33	m		M	
+f89_L09	34	1		M	
+f89_L09	35	f		M	
+f89_L09	36	f		M	
+f89_L09	37	4		M	
+f89_L09	38	0		M	
+f89_L09	39	c		M	
+f89_L09	40	1		M	
+f89_L09	41	2		M	
+f89_L09	42	0		M	
+f89_L09	43	t		M	
+f89_L09	44	1		M	
+f89_L10	1	0		M	
+f89_L10	2	sq		M	
+f89_L10	3	m		M	
+f89_L10	4	3		M	
+f89_L10	5	1		M	
+f89_L10	6	0		M	
+f89_L10	7	#		M	
+f89_L10	8	w		M	
+f89_L10	9	1		M	
+f89_L10	10	w		M	
+f89_L10	11	0		M	
+f89_L10	12	CLEAR		M	pumptiuns
+f89_L10	13	v		M	
+f89_L10	14	#		M	
+f89_L10	15	0		M	
+f89_L10	16	m		M	
+f89_L10	17	sq		M	
+f89_L10	18	3		M	
+f89_L10	19	0		M	
+f89_L10	20	#		M	
+f89_L10	21	1		M	
+f89_L10	22	sq		M	
+f89_L10	23	m		M	
+f89_L10	24	0		M	
+f89_L10	25	1		M	
+f89_L10	26	sq		M	
+f89_L10	27	m		M	
+f89_L10	28	0		M	
+f89_L10	29	p		M	
+f89_L10	30	4		M	
+f89_L10	31	+		M	
+f89_L10	32	0		M	
+f89_L10	33	3		M	
+f89_L10	34	1		M	
+f89_L10	35	f		M	
+f89_L10	36	f		M	
+f89_L10	37	0		M	
+f89_L10	38	w		M	
+f89_L10	39	0		M	
+f89_L10	40	#		M	
+f89_L10	41	.		M	
+f89_L10	42	1		M	
+f89_L10	43	.		M	
+f89_L10	44	m		M	
+f89_L10	45	y		M	
+f89_L10	46	L		M	
+f89_L10	47	w		M	
+f89_L10	48	v		M	
+f89_L10	49	m		M	
+f89_L10	50	4		M	
+f89_L10	51	m		M	
+f89_L10	52	c		M	
+f89_L10	53	0		M	
+f89_L10	54	a		M	
+f89_L10	55	m		M	
+f89_L10	56	1		M	
+f89_L11	1	2		M	
+f89_L11	2	y		M	
+f89_L11	3	L		M	
+f89_L11	4	CLEAR		M	on
+f89_L11	5	CLEAR		M	vellix
+f89_L11	6	CLEAR		M	quit
+f89_L11	7	CLEAR		M	bonne
+f89_L11	8	CLEAR		M	plaira
+f89_L11	9	CLEAR		M	ordonnée
+f89_L11	10	NEW:d		L	
+f89_L11	11	y		M	
+f89_L11	12	m		M	
+f89_L11	13	c		M	
+f89_L11	14	#		M	
+f89_L11	15	y		M	
+f89_L11	16	CLEAR		M	pour
+f89_L11	17	CLEAR		M	comander
+f89_L11	18	CLEAR		M	ces
+f89_L11	19	CLEAR		M	cuiraffes
+f89_L11	20	m		M	
+f89_L11	21	c		M	
+f89_L11	22	#		M	
+f89_L11	23	y		M	
+f89_L11	24	z		M	
+f89_L11	25	v		M	
+f89_L11	26	f		M	
+f89_L11	27	3		M	
+f89_L11	28	0		M	
+f89_L11	29	w		M	
+f89_L11	30	4		M	
+f89_L11	31	1		M	
+f89_L11	32	sq		M	
+f89_L11	33	#		M	
+f89_L11	34	m		M	
+f89_L11	35	p		M	
+f89_L11	36	w		M	
+f89_L11	37	v		M	
+f89_L11	38	sq		M	
+f89_L11	39	0		M	
+f89_L11	40	1		M	
+f89_L11	41	.		M	
+f89_L11	42	sq		M	
+f89_L11	43	0		M	
+f89_L11	44	f		M	
+f89_L11	45	#		M	
+f89_L11	46	y		M	
+f89_L11	47	a		M	
+f89_L11	48	m		M	
+f89_L11	49	4		M	
+f89_L11	50	0		M	
+f89_L12	1	0		M	
+f89_L12	2	f		M	
+f89_L12	3	v		M	
+f89_L12	4	1		M	
+f89_L12	5	0		M	
+f89_L12	6	f		M	
+f89_L12	7	v		M	
+f89_L12	8	4		M	
+f89_L12	9	0		M	
+f89_L12	10	m		M	
+f89_L12	11	v		M	
+f89_L12	12	c		M	
+f89_L12	13	1		M	
+f89_L12	14	sq		M	
+f89_L12	15	CLEAR		M	de
+f89_L12	16	CLEAR		M	sa
+f89_L12	17	CLEAR		M	ma
+f89_L12	18	CLEAR		M	dautrain
+f89_L12	19	CLEAR		M	que
+f89_L12	20	CLEAR		M	bonne
+f89_L12	21	CLEAR		M	cy
+f89_L12	22	CLEAR		M	bonne
+f89_L12	23	CLEAR		M	cy
+f89_L12	24	CLEAR		M	scauoir
+f89_L12	25	CLEAR		M	lhistinction
+f89_L12	26	CLEAR		M	particuliere
+f89_L12	27	CLEAR		M	et
+f89_L12	28	CLEAR		M	si
+f89_L12	29	CLEAR		M	bonne
+f89_L12	30	CLEAR		M	plaist
+f89_L12	31	L		M	
+f89_L13	1	4		M	
+f89_L13	2	v		M	
+f89_L13	3	3		M	
+f89_L13	4	p		M	
+f89_L13	5	+		M	
+f89_L13	6	L		M	
+f89_L13	7	0		M	
+f89_L13	8	0		M	
+f89_L13	9	f		M	
+f89_L13	10	#		M	
+f89_L13	11	L		M	
+f89_L13	12	0		M	
+f89_L13	13	sq		M	
+f89_L13	14	m		M	
+f89_L13	15	w		M	
+f89_L13	16	0		M	
+f89_L13	17	a		M	
+f89_L13	18	m		M	
+f89_L13	19	p		M	
+f89_L13	20	sq		M	
+f89_L13	21	0		M	
+f89_L13	22	.		M	
+f89_L13	23	3		M	
+f89_L13	24	v		M	
+f89_L13	25	m		M	
+f89_L13	26	m		M	
+f89_L13	27	v		M	
+f89_L13	28	f		M	
+f89_L13	29	v		M	
+f89_L13	30	a		M	
+f89_L13	31	m		M	
+f89_L13	32	4		M	
+f89_L13	33	p		M	
+f89_L13	34	v		M	
+f89_L13	35	p		M	
+f89_L13	36	t		M	
+f89_L13	37	L		M	
+f89_L13	38	y		M	
+f89_L13	39	m		M	
+f89_L13	40	w		M	
+f89_L13	41	sq		M	
+f89_L13	42	a		M	
+f89_L13	43	m		M	
+f89_L13	44	0		M	
+f89_L13	45	#		M	
+f89_L13	46	.		M	
+f89_L13	47	1		M	
+f89_L13	48	.		M	
+f89_L13	49	4		M	
+f89_L13	50	+		M	
+f89_L13	51	a		M	
+f89_L13	52	L		M	
+f89_L13	53	a		M	
+f89_L13	54	m		M	
+f89_L13	55	1		M	
+f89_L13	56	+		M	
+f89_L14	1	0		M	
+f89_L14	2	f		M	
+f89_L14	3	m		M	
+f89_L14	4	y		M	
+f89_L14	5	L		M	
+f89_L14	6	1		M	
+f89_L14	7	v		M	
+f89_L14	8	0		M	
+f89_L14	9	4		M	
+f89_L14	10	z		M	
+f89_L14	11	v		M	
+f89_L14	12	L		M	
+f89_L14	13	0		M	
+f89_L14	14	sq		M	
+f89_L14	15	m		M	
+f89_L14	16	1		M	
+f89_L14	17	0		M	
+f89_L14	18	sq		M	
+f89_L14	19	m		M	
+f89_L14	20	NEW:d		L	
+f89_L14	21	v		M	
+f89_L14	22	c		M	
+f89_L14	23	v		M	
+f89_L14	24	L		M	
+f89_L14	25	CLEAR		M	que
+f89_L14	26	CLEAR		M	le
+f89_L14	27	CLEAR		M	may
+f89_L14	28	CLEAR		M	scauoir
+f89_L14	29	a		M	
+f89_L14	30	m		M	
+f89_L14	31	0		M	
+f89_L14	32	3		M	
+f89_L14	33	v		M	
+f89_L14	34	1		M	
+f89_L14	35	0		M	
+f89_L14	36	w		M	
+f89_L14	37	CLEAR		M	bien
+f89_L14	38	CLEAR		M	partie
+f89_L14	39	CLEAR		M	de
+f89_L14	40	CLEAR		M	forcer
+f89_L14	41	CLEAR		M	de
+f89_L14	42	CLEAR		M	m
