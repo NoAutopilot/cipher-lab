@@ -1,0 +1,294 @@
+{
+ "b1": false,
+ "b2": true,
+ "b2_bound": 0.09081364829396327,
+ "b3": true,
+ "draws": 20,
+ "inputs_sha256": {
+  "benchmark-tx/txeng4/3/labels/no87_read.tsv": "39b55e3e95c085993d054b667db080c3c607a4c7dda5b446f35ba3b566bb966a",
+  "benchmark-tx/txeng4/3/labels/step2_top1.tsv": "d65866bcaeebf1edc831f1828cf0cb9d78cc68aef2db645e66c8132d2132bd8f"
+ },
+ "lines": {
+  "f178r_L01": {
+   "counts": {
+    "+-2": 3,
+    "0": 9,
+    "none": 15
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178r_L02": {
+   "counts": {
+    "+1": 1,
+    "-1": 2,
+    "0": 9,
+    "none": 16
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f178r_L03": {
+   "counts": {
+    "+-2": 3,
+    "-1": 1,
+    "0": 1,
+    "none": 6
+   },
+   "placed": 11,
+   "verdict": "fail"
+  },
+  "f178v_L01": {
+   "counts": {
+    "-1": 2,
+    "0": 14,
+    "none": 10
+   },
+   "placed": 26,
+   "verdict": "pass"
+  },
+  "f178v_L02": {
+   "counts": {
+    "0": 16,
+    "none": 10
+   },
+   "placed": 26,
+   "verdict": "pass"
+  },
+  "f178v_L03": {
+   "counts": {
+    "+1": 1,
+    "0": 17,
+    "none": 7
+   },
+   "placed": 25,
+   "verdict": "pass"
+  },
+  "f178v_L04": {
+   "counts": {
+    "0": 16,
+    "none": 11
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L05": {
+   "counts": {
+    "-1": 1,
+    "0": 15,
+    "none": 13
+   },
+   "placed": 29,
+   "verdict": "pass"
+  },
+  "f178v_L06": {
+   "counts": {
+    "0": 18,
+    "none": 9
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L07": {
+   "counts": {
+    "+-2": 1,
+    "0": 15,
+    "none": 10
+   },
+   "placed": 26,
+   "verdict": "pass"
+  },
+  "f178v_L08": {
+   "counts": {
+    "+-2": 1,
+    "0": 18,
+    "none": 9
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f178v_L09": {
+   "counts": {
+    "0": 15,
+    "none": 11
+   },
+   "placed": 26,
+   "verdict": "pass"
+  },
+  "f178v_L10": {
+   "counts": {
+    "+-2": 1,
+    "+1": 1,
+    "-1": 1,
+    "0": 10,
+    "none": 16
+   },
+   "placed": 29,
+   "verdict": "pass"
+  },
+  "f178v_L11": {
+   "counts": {
+    "+-2": 2,
+    "-1": 1,
+    "0": 15,
+    "none": 9
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L12": {
+   "counts": {
+    "0": 18,
+    "none": 13
+   },
+   "placed": 31,
+   "verdict": "pass"
+  },
+  "f178v_L13": {
+   "counts": {
+    "+-2": 3,
+    "+1": 1,
+    "0": 11,
+    "none": 12
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L14": {
+   "counts": {
+    "+-2": 2,
+    "0": 16,
+    "none": 9
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L15": {
+   "counts": {
+    "+-2": 1,
+    "0": 20,
+    "none": 7
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f178v_L16": {
+   "counts": {
+    "-1": 1,
+    "0": 21,
+    "none": 7
+   },
+   "placed": 29,
+   "verdict": "pass"
+  },
+  "f178v_L17": {
+   "counts": {
+    "0": 19,
+    "none": 8
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L18": {
+   "counts": {
+    "0": 18,
+    "none": 9
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L19": {
+   "counts": {
+    "+-2": 1,
+    "+1": 1,
+    "-1": 1,
+    "0": 13,
+    "none": 12
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f178v_L20": {
+   "counts": {
+    "0": 15,
+    "none": 10
+   },
+   "placed": 25,
+   "verdict": "pass"
+  },
+  "f178v_L21": {
+   "counts": {
+    "+-2": 1,
+    "+1": 1,
+    "0": 11,
+    "none": 11
+   },
+   "placed": 24,
+   "verdict": "pass"
+  },
+  "f178v_L22": {
+   "counts": {
+    "+-2": 1,
+    "+1": 1,
+    "0": 16,
+    "none": 10
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f178v_L23": {
+   "counts": {
+    "+-2": 1,
+    "+1": 2,
+    "-1": 1,
+    "0": 16,
+    "none": 8
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f179r_L01": {
+   "counts": {
+    "+1": 2,
+    "-1": 2,
+    "0": 15,
+    "none": 5
+   },
+   "placed": 24,
+   "verdict": "pass"
+  },
+  "f179r_L02": {
+   "counts": {
+    "+1": 1,
+    "0": 17,
+    "none": 8
+   },
+   "placed": 26,
+   "verdict": "pass"
+  },
+  "f179r_L03": {
+   "counts": {
+    "0": 15,
+    "none": 6
+   },
+   "placed": 21,
+   "verdict": "pass"
+  }
+ },
+ "map_sha256": "5280ab793a4c2c486ce4af049c4efd12b5769d61cbdd07de9506ea65f7173ace",
+ "n": 762,
+ "overall": {
+  "+-2": 21,
+  "+1": 12,
+  "-1": 13,
+  "0": 429,
+  "none": 287
+ },
+ "p95_0": 0.05124671916010499,
+ "p95_pm1": 0.09081364829396327,
+ "seed": 20261012,
+ "share0": 0.562992125984252,
+ "sharepm1": 0.03280839895013123,
+ "utc": "2026-10-12T01:32:48Z",
+ "verdict": "FAIL"
+}

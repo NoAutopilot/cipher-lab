@@ -1,0 +1,36 @@
+{
+ "b1": true,
+ "b2": true,
+ "b2_bound": 0.17608695652173917,
+ "b3": true,
+ "draws": 20,
+ "inputs_sha256": {
+  "benchmark-tx/txeng4/3/labels/read_f175r.tsv": "3599aad2317cbd16bf785de07488a85e60c726585c9b6e37b4ffc275cdeb09ce",
+  "benchmark-tx/txeng4/3/labels/step2_top1.tsv": "d65866bcaeebf1edc831f1828cf0cb9d78cc68aef2db645e66c8132d2132bd8f"
+ },
+ "lines": {
+  "f175r_L01": {
+   "counts": {
+    "-1": 1,
+    "0": 13,
+    "none": 9
+   },
+   "placed": 23,
+   "verdict": "pass"
+  }
+ },
+ "map_sha256": "99983fa9e3cd78c965402066a3b66d5537ab785b4ad936767be98d0be706ba29",
+ "n": 23,
+ "overall": {
+  "-1": 1,
+  "0": 13,
+  "none": 9
+ },
+ "p95_0": 0.13043478260869565,
+ "p95_pm1": 0.17608695652173917,
+ "seed": 20261012,
+ "share0": 0.5652173913043478,
+ "sharepm1": 0.043478260869565216,
+ "utc": "2026-10-12T01:32:42Z",
+ "verdict": "PASS"
+}

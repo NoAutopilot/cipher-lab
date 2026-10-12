@@ -132,3 +132,48 @@ gate word for word. A null is a result. Non-test if the can-vary count is 0 or i
 ## Expected (written before anything runs)
 A1 and A2 both well above A0 (0.162) -- TXE3-7's A1 read 0.314 with 445 tiles; more tiles and a learned metric may bring
 A2 under 0.25 but reaching 0.162 without a known answer would be a surprise. Most likely verdict: weak or FAIL on (ii).
+
+## Addendum 1 (01:3x UTC 12 Oct, after unit 1, before any fit): join verdicts pasted (R4a)
+
+Correspondence: benchmark-tx/txeng4/3/labels/correspondence.txt. Step-1 tokens 936 on 11 pages; step-2 bootstrap kNN (885->936 voters, labels_empty.json). Round-2 join_check (--steered, check = step-2 top-1), per page:
+
+```
+f139v: verdict ('FAIL', 'PASS'), lines kept 1/5, agreed labels 0
+join_check: FAIL n=87 share0=0.115 (null p95 0.071) share+-1=0.046 (bound 0.151) -> benchmark-tx/txeng4/3/labels/round2_f139v.tsv.joincheck.json
+dropped ['f139v_L01', 'f139v_L02', 'f139v_L04']; recheck: PASS n=20 {'+-2': 1, '+1': 1, '-1': 1, '0': 8, 'none': 9}
+join_check: PASS n=20 share0=0.400 (null p95 0.150) share+-1=0.100 (bound 0.203) -> benchmark-tx/txeng4/3/labels/round2_f139v_recheck.tsv.joincheck.json
+f144r: verdict ('UNCHECKABLE', None), lines kept 0/5, agreed labels 0
+join_check: UNCHECKABLE n=37 share0=0.000 (null p95 0.054) share+-1=0.135 (bound 0.136) -> benchmark-tx/txeng4/3/labels/round2_f144r.tsv.joincheck.json
+f162r: verdict ('UNCHECKABLE', None), lines kept 0/2, agreed labels 0
+join_check: UNCHECKABLE n=6 share0=0.333 (null p95 0.342) share+-1=0.167 (bound 0.333) -> benchmark-tx/txeng4/3/labels/round2_f162r.tsv.joincheck.json
+f174r: verdict ('PASS', None), lines kept 3/4, agreed labels 41
+join_check: PASS n=73 share0=0.589 (null p95 0.097) share+-1=0.027 (bound 0.110) -> benchmark-tx/txeng4/3/labels/round2_f174r.tsv.joincheck.json
+f174v: verdict ('FAIL', 'PASS'), lines kept 6/11, agreed labels 61
+join_check: FAIL n=208 share0=0.207 (null p95 0.044) share+-1=0.077 (bound 0.111) -> benchmark-tx/txeng4/3/labels/round2_f174v.tsv.joincheck.json
+dropped ['f174v_L05', 'f174v_L06', 'f174v_L07']; recheck: PASS n=139 {'+-2': 11, '+1': 7, '-1': 5, '0': 43, 'none': 73}
+join_check: PASS n=139 share0=0.309 (null p95 0.058) share+-1=0.086 (bound 0.123) -> benchmark-tx/txeng4/3/labels/round2_f174v_recheck.tsv.joincheck.json
+f174vB: verdict ('FAIL', 'PASS'), lines kept 10/11, agreed labels 134
+join_check: FAIL n=266 share0=0.568 (null p95 0.057) share+-1=0.056 (bound 0.099) -> benchmark-tx/txeng4/3/labels/round2_f174vB.tsv.joincheck.json
+dropped ['f174vB_L01']; recheck: PASS n=247 {'+-2': 7, '+1': 5, '-1': 8, '0': 151, 'none': 76}
+join_check: PASS n=247 share0=0.611 (null p95 0.057) share+-1=0.053 (bound 0.097) -> benchmark-tx/txeng4/3/labels/round2_f174vB_recheck.tsv.joincheck.json
+f175r: verdict ('PASS', None), lines kept 1/1, agreed labels 13
+join_check: PASS n=23 share0=0.565 (null p95 0.130) share+-1=0.043 (bound 0.176) -> benchmark-tx/txeng4/3/labels/round2_f175r.tsv.joincheck.json
+f175v: verdict ('PASS', None), lines kept 2/3, agreed labels 21
+join_check: PASS n=45 share0=0.756 (null p95 0.089) share+-1=0.044 (bound 0.138) -> benchmark-tx/txeng4/3/labels/round2_f175v.tsv.joincheck.json
+f184r: verdict ('FAIL', 'PASS'), lines kept 5/8, agreed labels 49
+join_check: FAIL n=135 share0=0.178 (null p95 0.059) share+-1=0.059 (bound 0.111) -> benchmark-tx/txeng4/3/labels/round2_f184r.tsv.joincheck.json
+dropped ['f184r_L14', 'f184r_L15']; recheck: PASS n=112 {'+-2': 2, '+1': 3, '-1': 2, '0': 24, 'none': 81}
+join_check: PASS n=112 share0=0.214 (null p95 0.063) share+-1=0.045 (bound 0.118) -> benchmark-tx/txeng4/3/labels/round2_f184r_recheck.tsv.joincheck.json
+f184v: verdict ('PASS', None), lines kept 4/4, agreed labels 48
+join_check: PASS n=90 share0=0.544 (null p95 0.067) share+-1=0.100 (bound 0.112) -> benchmark-tx/txeng4/3/labels/round2_f184v.tsv.joincheck.json
+f185r: verdict ('FAIL', 'PASS'), lines kept 5/8, agreed labels 24
+join_check: FAIL n=116 share0=0.336 (null p95 0.061) share+-1=0.034 (bound 0.131) -> benchmark-tx/txeng4/3/labels/round2_f185r.tsv.joincheck.json
+dropped ['f185r_L07', 'f185r_L09']; recheck: PASS n=93 {'+-2': 3, '+1': 1, '-1': 2, '0': 39, 'none': 48}
+join_check: PASS n=93 share0=0.419 (null p95 0.077) share+-1=0.032 (bound 0.130) -> benchmark-tx/txeng4/3/labels/round2_f185r_recheck.tsv.joincheck.json
+```
+
+AGREED LABELS 391: f174r 41, f174v 61, f174vB 134, f175r 13, f175v 21, f184r 49, f184v 48, f185r 24 (f139v 0 after its dropped lines and the two-round position rule; f144r, f162r UNCHECKABLE -> nothing). Far under the brief's ~1,100: the two-round same-position rule and the per-line gate drop most of the width-only seed round's tokens, as pre-registered. Codes with >= 5 tiles: 31 of 42.
+
+A4 (no.87 passA/passB LCS agreement 743 of 844 passA tokens): no87_round2 FAIL (f178r_L03 B1) -> dropped -> recheck PASS n=751, 0/-1/+1 428/12/12; 662 agreed tiles on 28 lines.
+
+Deviation noted: a first run (folder maps/, uncommitted) read gap tokens the reconciled reading drops and let the count DP merge a partial-cipher first line into the next; fixed before any classifier arm ran (read = merged tokens; a row takes two passages only when its y-spread shows two baselines). A built-in safety check denied the scratch cleanup rm; nothing was re-issued, the folder was renamed instead.

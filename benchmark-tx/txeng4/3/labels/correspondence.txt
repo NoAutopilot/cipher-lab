@@ -1,0 +1,107 @@
+f139v line 01 <- L02: 31 boxes, 31 tokens, 24 agreed
+f139v line 02 <- L03: 37 boxes, 34 tokens, 23 agreed
+f139v line 03 <- L04: 14 boxes, 31 tokens, 22 agreed
+f139v line 04 <- L05: 29 boxes, 33 tokens, 25 agreed
+f139v line 05: 13 boxes, no passage (prose)
+f139v line 06 <- L06: 44 boxes, 32 tokens, 23 agreed
+f139v: assignment cost 36; 161 tokens, 117 agreed
+f144r line 01: 1 boxes, no passage (prose)
+f144r line 02 <- L03: 6 boxes, 11 tokens, 6 agreed
+f144r line 03 <- L04.1: 19 boxes, 12 tokens, 7 agreed
+f144r line 04 <- L04.2: 14 boxes, 12 tokens, 7 agreed
+f144r line 05 <- L05: 28 boxes, 35 tokens, 21 agreed
+f144r line 06 <- L06: 16 boxes, 20 tokens, 12 agreed
+f144r line 07: 32 boxes, no passage (prose)
+f144r line 08: 34 boxes, no passage (prose)
+f144r line 09: 37 boxes, no passage (prose)
+f144r line 10: 36 boxes, no passage (prose)
+f144r line 11: 38 boxes, no passage (prose)
+f144r: assignment cost 15; 90 tokens, 53 agreed
+f162r line 01: 84 boxes, no passage (prose)
+f162r line 02: 74 boxes, no passage (prose)
+f162r line 03 <- L01.1: 38 boxes, 21 tokens, 15 agreed
+f162r line 04 <- L01.2: 18 boxes, 4 tokens, 0 agreed
+f162r line 05: 1 boxes, no passage (prose)
+f162r line 06: 76 boxes, no passage (prose)
+f162r line 07: 38 boxes, no passage (prose)
+f162r: assignment cost 31; 25 tokens, 15 agreed
+f174r line 01: 9 boxes, no passage (prose)
+f174r line 02 <- L01: 24 boxes, 25 tokens, 22 agreed
+f174r line 03: 1 boxes, no passage (prose)
+f174r line 04 <- L02: 29 boxes, 29 tokens, 25 agreed
+f174r line 05 <- L03: 30 boxes, 29 tokens, 24 agreed
+f174r line 06: 44 boxes, no passage (prose)
+f174r line 07 <- L04: 1 boxes, 1 tokens, 0 agreed
+f174r line 08: 2 boxes, no passage (prose)
+f174r line 09: 1 boxes, no passage (prose)
+f174r: assignment cost 2; 84 tokens, 71 agreed
+f174v line 01 <- L01: 22 boxes, 10 tokens, 6 agreed
+f174v line 02 <- L02: 7 boxes, 29 tokens, 23 agreed
+f174v line 03 <- L03: 29 boxes, 28 tokens, 22 agreed
+f174v line 04 <- L04: 28 boxes, 28 tokens, 24 agreed
+f174v line 05 <- L05: 31 boxes, 27 tokens, 21 agreed
+f174v line 06 <- L06: 30 boxes, 27 tokens, 23 agreed
+f174v line 07 <- L07: 29 boxes, 27 tokens, 19 agreed
+f174v line 08: 32 boxes, no passage (prose)
+f174v line 09 <- L08: 28 boxes, 28 tokens, 23 agreed
+f174v line 10 <- L09: 30 boxes, 28 tokens, 23 agreed
+f174v line 11 <- L10: 30 boxes, 27 tokens, 21 agreed
+f174v line 12 <- L11: 31 boxes, 27 tokens, 19 agreed
+f174v: assignment cost 29; 286 tokens, 224 agreed
+f174vB line 01 <- L01: 30 boxes, 26 tokens, 16 agreed
+f174vB line 02: 30 boxes, no passage (prose)
+f174vB line 03 <- L02: 29 boxes, 29 tokens, 21 agreed
+f174vB line 04 <- L03: 28 boxes, 27 tokens, 17 agreed
+f174vB line 05 <- L04: 27 boxes, 27 tokens, 21 agreed
+f174vB line 06 <- L05: 28 boxes, 28 tokens, 21 agreed
+f174vB line 07 <- L06: 29 boxes, 28 tokens, 19 agreed
+f174vB line 08 <- L07: 28 boxes, 28 tokens, 18 agreed
+f174vB line 09 <- L08: 28 boxes, 27 tokens, 19 agreed
+f174vB line 10 <- L09: 27 boxes, 28 tokens, 18 agreed
+f174vB line 11 <- L10: 28 boxes, 28 tokens, 20 agreed
+f174vB line 12 <- L11: 26 boxes, 27 tokens, 17 agreed
+f174vB line 13: 1 boxes, no passage (prose)
+f174vB: assignment cost 9; 303 tokens, 207 agreed
+f175r line 01 <- R01: 24 boxes, 25 tokens, 19 agreed
+f175r line 02: 1 boxes, no passage (prose)
+f175r line 03: 19 boxes, no passage (prose)
+f175r: assignment cost 1; 25 tokens, 19 agreed
+f175v line 01: 3 boxes, no passage (prose)
+f175v line 02 <- V01: 28 boxes, 24 tokens, 17 agreed
+f175v line 03: 3 boxes, no passage (prose)
+f175v line 04 <- V02: 30 boxes, 29 tokens, 24 agreed
+f175v line 05: 1 boxes, no passage (prose)
+f175v line 06: 39 boxes, no passage (prose)
+f175v line 07 <- V03: 4 boxes, 8 tokens, 5 agreed
+f175v: assignment cost 9; 61 tokens, 46 agreed
+f184r line 01 <- L01: 24 boxes, 12 tokens, 9 agreed
+f184r line 02 <- L02: 31 boxes, 39 tokens, 36 agreed
+f184r line 03: 38 boxes, no passage (prose)
+f184r line 04 <- L03: 37 boxes, 37 tokens, 32 agreed
+f184r line 05: 35 boxes, no passage (prose)
+f184r line 06: 32 boxes, no passage (prose)
+f184r line 07: 35 boxes, no passage (prose)
+f184r line 08 <- L04: 20 boxes, 23 tokens, 20 agreed
+f184r line 09 <- L07: 17 boxes, 23 tokens, 17 agreed
+f184r line 10 <- L08: 38 boxes, 42 tokens, 33 agreed
+f184r line 11: 31 boxes, no passage (prose)
+f184r line 12: 1 boxes, no passage (prose)
+f184r line 13: 27 boxes, no passage (prose)
+f184r line 14 <- L09: 27 boxes, 22 tokens, 20 agreed
+f184r line 15 <- L12: 27 boxes, 26 tokens, 23 agreed
+f184r: assignment cost 23; 224 tokens, 190 agreed
+f184v line 01 <- f184v_L01: 27 boxes, 19 tokens, 14 agreed
+f184v line 02 <- f184v_L02: 28 boxes, 28 tokens, 21 agreed
+f184v line 03 <- f184v_L03: 30 boxes, 29 tokens, 23 agreed
+f184v line 04 <- f184v_L04: 26 boxes, 27 tokens, 22 agreed
+f184v: assignment cost 10; 103 tokens, 80 agreed
+f185r line 01 <- f185r_L01: 23 boxes, 30 tokens, 28 agreed
+f185r line 02 <- f185r_L02: 35 boxes, 31 tokens, 24 agreed
+f185r line 03 <- f185r_L03: 20 boxes, 29 tokens, 25 agreed
+f185r line 04 <- f185r_L04: 32 boxes, 30 tokens, 24 agreed
+f185r line 05 <- f185r_L05: 23 boxes, 30 tokens, 26 agreed
+f185r line 06: 10 boxes, no passage (prose)
+f185r line 07 <- f185r_L06: 25 boxes, 32 tokens, 28 agreed
+f185r line 08 <- f185r_L07: 16 boxes, 31 tokens, 24 agreed
+f185r line 09 <- f185r_L08: 16 boxes, 14 tokens, 9 agreed
+f185r: assignment cost 45; 227 tokens, 188 agreed

@@ -1,0 +1,116 @@
+{
+ "b1": false,
+ "b2": true,
+ "b2_bound": 0.11057692307692307,
+ "b3": true,
+ "draws": 20,
+ "inputs_sha256": {
+  "benchmark-tx/txeng4/3/labels/read_f174v.tsv": "9088f4f90977987f4001d173a76a44627542bd6f1ee62922283a560fde5d21d4",
+  "benchmark-tx/txeng4/3/labels/step2_top1.tsv": "d65866bcaeebf1edc831f1828cf0cb9d78cc68aef2db645e66c8132d2132bd8f"
+ },
+ "lines": {
+  "f174v_L03": {
+   "counts": {
+    "+-2": 3,
+    "+1": 2,
+    "-1": 1,
+    "0": 3,
+    "none": 15
+   },
+   "placed": 24,
+   "verdict": "pass"
+  },
+  "f174v_L04": {
+   "counts": {
+    "+-2": 3,
+    "-1": 1,
+    "0": 2,
+    "none": 10
+   },
+   "placed": 16,
+   "verdict": "pass"
+  },
+  "f174v_L05": {
+   "counts": {
+    "+1": 2,
+    "-1": 1,
+    "none": 17
+   },
+   "placed": 20,
+   "verdict": "fail"
+  },
+  "f174v_L06": {
+   "counts": {
+    "+-2": 3,
+    "+1": 1,
+    "none": 20
+   },
+   "placed": 24,
+   "verdict": "fail"
+  },
+  "f174v_L07": {
+   "counts": {
+    "none": 25
+   },
+   "placed": 25,
+   "verdict": "fail"
+  },
+  "f174v_L09": {
+   "counts": {
+    "+-2": 1,
+    "+1": 2,
+    "0": 11,
+    "none": 11
+   },
+   "placed": 25,
+   "verdict": "pass"
+  },
+  "f174v_L10": {
+   "counts": {
+    "+-2": 2,
+    "+1": 2,
+    "-1": 1,
+    "0": 7,
+    "none": 14
+   },
+   "placed": 26,
+   "verdict": "pass"
+  },
+  "f174v_L11": {
+   "counts": {
+    "+-2": 2,
+    "-1": 1,
+    "0": 13,
+    "none": 9
+   },
+   "placed": 25,
+   "verdict": "pass"
+  },
+  "f174v_L12": {
+   "counts": {
+    "+1": 1,
+    "-1": 1,
+    "0": 7,
+    "none": 14
+   },
+   "placed": 23,
+   "verdict": "pass"
+  }
+ },
+ "map_sha256": "55db725f2bdf759279bbcaa073ca57308845147800e8c4b6e61aeea98751f273",
+ "n": 208,
+ "overall": {
+  "+-2": 14,
+  "+1": 10,
+  "-1": 6,
+  "0": 43,
+  "none": 135
+ },
+ "p95_0": 0.04350961538461538,
+ "p95_pm1": 0.11057692307692307,
+ "seed": 20261012,
+ "share0": 0.20673076923076922,
+ "sharepm1": 0.07692307692307693,
+ "utc": "2026-10-12T01:32:41Z",
+ "verdict": "FAIL"
+}

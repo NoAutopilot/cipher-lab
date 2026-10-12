@@ -1,0 +1,40 @@
+{
+ "b1": true,
+ "b2": true,
+ "b2_bound": 0.20250000000000004,
+ "b3": true,
+ "draws": 20,
+ "inputs_sha256": {
+  "benchmark-tx/txeng4/3/labels/read_f139v.tsv": "ccf222795577e24ef455f6c4817e44036b054baec26ca057d2ca5c9751c32eb0",
+  "benchmark-tx/txeng4/3/labels/step2_top1.tsv": "d65866bcaeebf1edc831f1828cf0cb9d78cc68aef2db645e66c8132d2132bd8f"
+ },
+ "lines": {
+  "f139v_L06": {
+   "counts": {
+    "+-2": 1,
+    "+1": 1,
+    "-1": 1,
+    "0": 8,
+    "none": 9
+   },
+   "placed": 20,
+   "verdict": "pass"
+  }
+ },
+ "map_sha256": "484a2819dcbd346a68ee6666aba4f18f1fdf16e765e9f4b7291a08defe019c45",
+ "n": 20,
+ "overall": {
+  "+-2": 1,
+  "+1": 1,
+  "-1": 1,
+  "0": 8,
+  "none": 9
+ },
+ "p95_0": 0.15,
+ "p95_pm1": 0.20250000000000004,
+ "seed": 20261012,
+ "share0": 0.4,
+ "sharepm1": 0.1,
+ "utc": "2026-10-12T01:32:39Z",
+ "verdict": "PASS"
+}

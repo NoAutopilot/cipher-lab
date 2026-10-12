@@ -1,0 +1,128 @@
+f139v: verdict ('FAIL', 'PASS'), lines kept 1/5, agreed labels 0
+join_check: FAIL n=87 share0=0.115 (null p95 0.071) share+-1=0.046 (bound 0.151) -> benchmark-tx/txeng4/3/labels/round2_f139v.tsv.joincheck.json
+  f139v_L01: fail placed=21 {'none': 19, '+-2': 2}
+  f139v_L02: fail placed=21 {'none': 15, '0': 2, '-1': 2, '+-2': 2}
+  f139v_L04: fail placed=25 {'none': 24, '+-2': 1}
+  f139v_L06: pass placed=20 {'0': 8, '-1': 1, 'none': 9, '+-2': 1, '+1': 1}
+dropped ['f139v_L01', 'f139v_L02', 'f139v_L04']; recheck: PASS n=20 {'+-2': 1, '+1': 1, '-1': 1, '0': 8, 'none': 9}
+join_check: PASS n=20 share0=0.400 (null p95 0.150) share+-1=0.100 (bound 0.203) -> benchmark-tx/txeng4/3/labels/round2_f139v_recheck.tsv.joincheck.json
+  f139v_L06: pass placed=20 {'0': 8, '-1': 1, 'none': 9, '+-2': 1, '+1': 1}
+
+f144r: verdict ('UNCHECKABLE', None), lines kept 0/5, agreed labels 0
+join_check: UNCHECKABLE n=37 share0=0.000 (null p95 0.054) share+-1=0.135 (bound 0.136) -> benchmark-tx/txeng4/3/labels/round2_f144r.tsv.joincheck.json
+  f144r_L02: unchecked placed=1 {'none': 1}
+  f144r_L03: fail placed=5 {'none': 4, '+1': 1}
+  f144r_L04: fail placed=7 {'none': 6, '+-2': 1}
+  f144r_L05: fail placed=15 {'none': 11, '+1': 3, '-1': 1}
+  f144r_L06: fail placed=9 {'none': 9}
+
+f162r: verdict ('UNCHECKABLE', None), lines kept 0/2, agreed labels 0
+join_check: UNCHECKABLE n=6 share0=0.333 (null p95 0.342) share+-1=0.167 (bound 0.333) -> benchmark-tx/txeng4/3/labels/round2_f162r.tsv.joincheck.json
+  f162r_L03: pass placed=6 {'none': 2, '+-2': 1, '+1': 1, '0': 2}
+
+f174r: verdict ('PASS', None), lines kept 3/4, agreed labels 41
+join_check: PASS n=73 share0=0.589 (null p95 0.097) share+-1=0.027 (bound 0.110) -> benchmark-tx/txeng4/3/labels/round2_f174r.tsv.joincheck.json
+  f174r_L02: pass placed=20 {'none': 6, '0': 14}
+  f174r_L04: pass placed=23 {'none': 8, '0': 14, '+-2': 1}
+  f174r_L05: pass placed=29 {'0': 15, '-1': 2, 'none': 10, '+-2': 2}
+  f174r_L07: unchecked placed=1 {'none': 1}
+
+f174v: verdict ('FAIL', 'PASS'), lines kept 6/11, agreed labels 61
+join_check: FAIL n=208 share0=0.207 (null p95 0.044) share+-1=0.077 (bound 0.111) -> benchmark-tx/txeng4/3/labels/round2_f174v.tsv.joincheck.json
+  f174v_L03: pass placed=24 {'+-2': 3, 'none': 15, '0': 3, '+1': 2, '-1': 1}
+  f174v_L04: pass placed=16 {'none': 10, '+-2': 3, '-1': 1, '0': 2}
+  f174v_L05: fail placed=20 {'none': 17, '+1': 2, '-1': 1}
+  f174v_L06: fail placed=24 {'none': 20, '+-2': 3, '+1': 1}
+  f174v_L07: fail placed=25 {'none': 25}
+  f174v_L09: pass placed=25 {'none': 11, '0': 11, '+1': 2, '+-2': 1}
+  f174v_L10: pass placed=26 {'none': 14, '+1': 2, '0': 7, '+-2': 2, '-1': 1}
+  f174v_L11: pass placed=25 {'none': 9, '0': 13, '+-2': 2, '-1': 1}
+  f174v_L12: pass placed=23 {'none': 14, '0': 7, '-1': 1, '+1': 1}
+dropped ['f174v_L05', 'f174v_L06', 'f174v_L07']; recheck: PASS n=139 {'+-2': 11, '+1': 7, '-1': 5, '0': 43, 'none': 73}
+join_check: PASS n=139 share0=0.309 (null p95 0.058) share+-1=0.086 (bound 0.123) -> benchmark-tx/txeng4/3/labels/round2_f174v_recheck.tsv.joincheck.json
+  f174v_L03: pass placed=24 {'+-2': 3, 'none': 15, '0': 3, '+1': 2, '-1': 1}
+  f174v_L04: pass placed=16 {'none': 10, '+-2': 3, '-1': 1, '0': 2}
+  f174v_L09: pass placed=25 {'none': 11, '0': 11, '+1': 2, '+-2': 1}
+  f174v_L10: pass placed=26 {'none': 14, '+1': 2, '0': 7, '+-2': 2, '-1': 1}
+  f174v_L11: pass placed=25 {'none': 9, '0': 13, '+-2': 2, '-1': 1}
+  f174v_L12: pass placed=23 {'none': 14, '0': 7, '-1': 1, '+1': 1}
+
+f174vB: verdict ('FAIL', 'PASS'), lines kept 10/11, agreed labels 134
+join_check: FAIL n=266 share0=0.568 (null p95 0.057) share+-1=0.056 (bound 0.099) -> benchmark-tx/txeng4/3/labels/round2_f174vB.tsv.joincheck.json
+  f174vB_L01: fail placed=19 {'+1': 1, '+-2': 3, 'none': 14, '-1': 1}
+  f174vB_L03: pass placed=26 {'0': 16, 'none': 7, '-1': 1, '+1': 2}
+  f174vB_L04: pass placed=26 {'0': 16, '+1': 1, 'none': 8, '-1': 1}
+  f174vB_L05: pass placed=21 {'none': 6, '0': 12, '+1': 1, '+-2': 1, '-1': 1}
+  f174vB_L06: pass placed=28 {'none': 7, '0': 19, '+-2': 1, '-1': 1}
+  f174vB_L07: pass placed=24 {'none': 9, '0': 14, '+-2': 1}
+  f174vB_L08: pass placed=25 {'none': 10, '0': 11, '-1': 1, '+-2': 3}
+  f174vB_L09: pass placed=25 {'0': 14, 'none': 9, '-1': 1, '+-2': 1}
+  f174vB_L10: pass placed=23 {'none': 5, '0': 16, '+1': 1, '-1': 1}
+  f174vB_L11: pass placed=25 {'0': 20, 'none': 5}
+  f174vB_L12: pass placed=24 {'0': 13, 'none': 10, '-1': 1}
+dropped ['f174vB_L01']; recheck: PASS n=247 {'+-2': 7, '+1': 5, '-1': 8, '0': 151, 'none': 76}
+join_check: PASS n=247 share0=0.611 (null p95 0.057) share+-1=0.053 (bound 0.097) -> benchmark-tx/txeng4/3/labels/round2_f174vB_recheck.tsv.joincheck.json
+  f174vB_L03: pass placed=26 {'0': 16, 'none': 7, '-1': 1, '+1': 2}
+  f174vB_L04: pass placed=26 {'0': 16, '+1': 1, 'none': 8, '-1': 1}
+  f174vB_L05: pass placed=21 {'none': 6, '0': 12, '+1': 1, '+-2': 1, '-1': 1}
+  f174vB_L06: pass placed=28 {'none': 7, '0': 19, '+-2': 1, '-1': 1}
+  f174vB_L07: pass placed=24 {'none': 9, '0': 14, '+-2': 1}
+  f174vB_L08: pass placed=25 {'none': 10, '0': 11, '-1': 1, '+-2': 3}
+  f174vB_L09: pass placed=25 {'0': 14, 'none': 9, '-1': 1, '+-2': 1}
+  f174vB_L10: pass placed=23 {'none': 5, '0': 16, '+1': 1, '-1': 1}
+  f174vB_L11: pass placed=25 {'0': 20, 'none': 5}
+  f174vB_L12: pass placed=24 {'0': 13, 'none': 10, '-1': 1}
+
+f175r: verdict ('PASS', None), lines kept 1/1, agreed labels 13
+join_check: PASS n=23 share0=0.565 (null p95 0.130) share+-1=0.043 (bound 0.176) -> benchmark-tx/txeng4/3/labels/round2_f175r.tsv.joincheck.json
+  f175r_L01: pass placed=23 {'none': 9, '0': 13, '-1': 1}
+
+f175v: verdict ('PASS', None), lines kept 2/3, agreed labels 21
+join_check: PASS n=45 share0=0.756 (null p95 0.089) share+-1=0.044 (bound 0.138) -> benchmark-tx/txeng4/3/labels/round2_f175v.tsv.joincheck.json
+  f175v_L02: pass placed=19 {'none': 4, '0': 14, '+-2': 1}
+  f175v_L04: pass placed=26 {'0': 20, 'none': 3, '+-2': 1, '+1': 1, '-1': 1}
+
+f184r: verdict ('FAIL', 'PASS'), lines kept 5/8, agreed labels 49
+join_check: FAIL n=135 share0=0.178 (null p95 0.059) share+-1=0.059 (bound 0.111) -> benchmark-tx/txeng4/3/labels/round2_f184r.tsv.joincheck.json
+  f184r_L01: unchecked placed=2 {'none': 2}
+  f184r_L02: pass placed=20 {'none': 10, '0': 8, '+-2': 1, '-1': 1}
+  f184r_L04: pass placed=35 {'none': 26, '0': 8, '-1': 1}
+  f184r_L08: pass placed=16 {'none': 14, '0': 1, '+-2': 1}
+  f184r_L09: pass placed=11 {'0': 3, 'none': 7, '+1': 1}
+  f184r_L10: pass placed=28 {'none': 22, '0': 4, '+1': 2}
+  f184r_L14: fail placed=13 {'+1': 1, 'none': 12}
+  f184r_L15: fail placed=10 {'none': 5, '-1': 2, '+-2': 3}
+dropped ['f184r_L14', 'f184r_L15']; recheck: PASS n=112 {'+-2': 2, '+1': 3, '-1': 2, '0': 24, 'none': 81}
+join_check: PASS n=112 share0=0.214 (null p95 0.063) share+-1=0.045 (bound 0.118) -> benchmark-tx/txeng4/3/labels/round2_f184r_recheck.tsv.joincheck.json
+  f184r_L01: unchecked placed=2 {'none': 2}
+  f184r_L02: pass placed=20 {'none': 10, '0': 8, '+-2': 1, '-1': 1}
+  f184r_L04: pass placed=35 {'none': 26, '0': 8, '-1': 1}
+  f184r_L08: pass placed=16 {'none': 14, '0': 1, '+-2': 1}
+  f184r_L09: pass placed=11 {'0': 3, 'none': 7, '+1': 1}
+  f184r_L10: pass placed=28 {'none': 22, '0': 4, '+1': 2}
+
+f184v: verdict ('PASS', None), lines kept 4/4, agreed labels 48
+join_check: PASS n=90 share0=0.544 (null p95 0.067) share+-1=0.100 (bound 0.112) -> benchmark-tx/txeng4/3/labels/round2_f184v.tsv.joincheck.json
+  f184v_L01: pass placed=12 {'none': 3, '0': 9}
+  f184v_L02: pass placed=25 {'0': 14, 'none': 5, '+1': 1, '-1': 4, '+-2': 1}
+  f184v_L03: pass placed=28 {'0': 12, 'none': 14, '+1': 1, '-1': 1}
+  f184v_L04: pass placed=25 {'none': 9, '0': 14, '-1': 1, '+1': 1}
+
+f185r: verdict ('FAIL', 'PASS'), lines kept 5/8, agreed labels 24
+join_check: FAIL n=116 share0=0.336 (null p95 0.061) share+-1=0.034 (bound 0.131) -> benchmark-tx/txeng4/3/labels/round2_f185r.tsv.joincheck.json
+  f185r_L01: pass placed=14 {'none': 8, '0': 5, '+1': 1}
+  f185r_L02: pass placed=26 {'none': 12, '0': 14}
+  f185r_L03: pass placed=11 {'0': 5, '+-2': 2, 'none': 2, '-1': 2}
+  f185r_L04: pass placed=28 {'0': 13, 'none': 14, '+-2': 1}
+  f185r_L05: pass placed=12 {'none': 10, '0': 2}
+  f185r_L07: fail placed=15 {'none': 12, '+-2': 2, '+1': 1}
+  f185r_L08: unchecked placed=2 {'none': 2}
+  f185r_L09: fail placed=8 {'none': 7, '+-2': 1}
+dropped ['f185r_L07', 'f185r_L09']; recheck: PASS n=93 {'+-2': 3, '+1': 1, '-1': 2, '0': 39, 'none': 48}
+join_check: PASS n=93 share0=0.419 (null p95 0.077) share+-1=0.032 (bound 0.130) -> benchmark-tx/txeng4/3/labels/round2_f185r_recheck.tsv.joincheck.json
+  f185r_L01: pass placed=14 {'none': 8, '0': 5, '+1': 1}
+  f185r_L02: pass placed=26 {'none': 12, '0': 14}
+  f185r_L03: pass placed=11 {'0': 5, '+-2': 2, 'none': 2, '-1': 2}
+  f185r_L04: pass placed=28 {'0': 13, 'none': 14, '+-2': 1}
+  f185r_L05: pass placed=12 {'none': 10, '0': 2}
+  f185r_L08: unchecked placed=2 {'none': 2}

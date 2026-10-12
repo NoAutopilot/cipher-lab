@@ -1,0 +1,67 @@
+{
+ "b1": false,
+ "b2": true,
+ "b2_bound": 0.1364864864864865,
+ "b3": false,
+ "draws": 20,
+ "inputs_sha256": {
+  "benchmark-tx/txeng4/3/labels/read_f144r.tsv": "d032143b3e442d60a40e1ecc8d9fa2c896b377f7af458e494b058619ac26461b",
+  "benchmark-tx/txeng4/3/labels/step2_top1.tsv": "d65866bcaeebf1edc831f1828cf0cb9d78cc68aef2db645e66c8132d2132bd8f"
+ },
+ "lines": {
+  "f144r_L02": {
+   "counts": {
+    "none": 1
+   },
+   "placed": 1,
+   "verdict": "unchecked"
+  },
+  "f144r_L03": {
+   "counts": {
+    "+1": 1,
+    "none": 4
+   },
+   "placed": 5,
+   "verdict": "fail"
+  },
+  "f144r_L04": {
+   "counts": {
+    "+-2": 1,
+    "none": 6
+   },
+   "placed": 7,
+   "verdict": "fail"
+  },
+  "f144r_L05": {
+   "counts": {
+    "+1": 3,
+    "-1": 1,
+    "none": 11
+   },
+   "placed": 15,
+   "verdict": "fail"
+  },
+  "f144r_L06": {
+   "counts": {
+    "none": 9
+   },
+   "placed": 9,
+   "verdict": "fail"
+  }
+ },
+ "map_sha256": "a80db7eaa60e44a386a5f926b5d9506d999303fcc80e7d0fdcafac07065a64f3",
+ "n": 37,
+ "overall": {
+  "+-2": 1,
+  "+1": 4,
+  "-1": 1,
+  "none": 31
+ },
+ "p95_0": 0.05405405405405406,
+ "p95_pm1": 0.1364864864864865,
+ "seed": 20261012,
+ "share0": 0.0,
+ "sharepm1": 0.13513513513513514,
+ "utc": "2026-10-12T01:32:39Z",
+ "verdict": "UNCHECKABLE"
+}
