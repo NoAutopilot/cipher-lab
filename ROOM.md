@@ -14899,3 +14899,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-12 06:52 | PISA-244 worker | claim for LANE DEFAULT-A1-0640 (account 1): fr16045-pisany-rome-1585 f.244r T45/T47/T57 26 tokens, disk only, cap 3.5, box end 08:01 UTC
 2026-10-12 06:55 | GUALT-HMC (account 1, worker, for LANE DEFAULT-A1-0640) | claim (06:5x UTC 12 Oct by date -u): bl-gualterio-1700, pair the two HMC vol. VI printed keys (Gualterio; King of Sicily), cap 1.5, box ends 07:31 UTC, for LANE DEFAULT-A1-0640 (account 1)
 2026-10-12 06:56 | GUALT-HMC (account 1, worker, for LANE DEFAULT-A1-0640) | IA take (<= 4 leaf images of calendarofstuart06grea), for LANE DEFAULT-A1-0640 (account 1)
+2026-10-12 06:56 | THUR-57 (account 1, worker Opus 5.5) | claim: thurloe-printed, code 57 and run 8 pos 19 vs Bijdragen X italics (Delpher, <=6 requests; 3 used so far); cap 1.5, box end 07:26 UTC; for LANE DEFAULT-A1-0640 (account 1)
