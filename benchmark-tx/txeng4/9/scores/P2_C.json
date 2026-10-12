@@ -1,0 +1,102 @@
+{
+ "items": [
+  {
+   "item": "dint-f89-gloss",
+   "split": "dev",
+   "output": null,
+   "coverage_diagnostic": false,
+   "err_true": 0.1375,
+   "errors": 33,
+   "scored": 240,
+   "wrong": 13,
+   "deleted": 5,
+   "inserted": 15,
+   "excluded": 333,
+   "lines_missing": 0,
+   "missing_deleted": 0,
+   "ser": 0.1375,
+   "ser_errors": 33,
+   "ser_S": 15,
+   "ser_D": 4,
+   "ser_I": 14,
+   "abstained": 0,
+   "accepted": 235,
+   "accepted_wrong": 13,
+   "accepted_error": 0.0553,
+   "coverage": 0.9792,
+   "position_errors": 18,
+   "read": 574,
+   "position_rate": 0.075,
+   "insertion_rate": 0.0261,
+   "strict": {
+    "err_true": 0.1292,
+    "errors": 31,
+    "ser": 0.1292,
+    "ser_errors": 31,
+    "scored": 240
+   },
+   "ci95_ser": [
+    0.0882,
+    0.1963
+   ],
+   "ci_lines": 14,
+   "top_confusions": [
+    "d<-<deleted> x2",
+    "r<-<deleted> x1",
+    "a<-<deleted> x1",
+    "d<-# x1",
+    "n<-o x1",
+    "i<-+ x1",
+    "e<-o x1",
+    "i<-1 x1",
+    "r<-1 x1",
+    "e<-# x1",
+    "i<-0 x1",
+    "m<-2 x1",
+    "e<-<deleted> x1",
+    "s<-0 x1",
+    "i<-4 x1",
+    "l<-x x1",
+    "y<-v x1"
+   ],
+   "flagged_excluded": {
+    "err_true": 0.1449,
+    "errors": 20,
+    "scored": 138,
+    "wrong": 4,
+    "deleted": 1,
+    "inserted": 15,
+    "excluded": 435,
+    "lines_missing": 0,
+    "missing_deleted": 0,
+    "ser": 0.1449,
+    "ser_errors": 20,
+    "ser_S": 5,
+    "ser_D": 1,
+    "ser_I": 14,
+    "abstained": 0,
+    "accepted": 137,
+    "accepted_wrong": 4,
+    "accepted_error": 0.0292,
+    "coverage": 0.9928,
+    "position_errors": 5,
+    "read": 574,
+    "position_rate": 0.0362,
+    "insertion_rate": 0.0261,
+    "strict": {
+     "err_true": 0.1522,
+     "errors": 21,
+     "ser": 0.1522,
+     "ser_errors": 21,
+     "scored": 138
+    },
+    "ci95_ser": [
+     0.0823,
+     0.2308
+    ],
+    "ci_lines": 14,
+    "flagged": 102
+   }
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+pass 1 transfer: 3 feedback pairs (4 events); on f.89 F 0 vs C 0 -> NOT F < C
+  per pair (label only shown; value hidden): o: F 0 C 0, x: F 0 C 0, 3: F 0 C 0
+pass 2 transfer: 4 feedback pairs (8 events); on f.89 F 3 vs C 1 -> NOT F < C
+  per pair (label only shown; value hidden): -: F 0 C 0, 1: F 3 C 1, x: F 0 C 0, a: F 0 C 0
+pass 1 arm F as measured: edits 45 (S 17 D 0 I 28) SER 0.188 ci 0.138-0.238 | err_true 0.188 (45/240) Wilson 0.143-0.242 | strict err_true 0.163 edits 39
+  flagged excluded: edits 35 (S 7 D 0 I 28) SER 0.254 | err_true 0.254 (35/138) Wilson 0.188-0.332 [102 flagged] | strict err_true 0.246 edits 34
+pass 1 arm C as measured: edits 47 (S 15 D 1 I 31) SER 0.196 ci 0.149-0.254 | err_true 0.196 (47/240) Wilson 0.151-0.251 | strict err_true 0.179 edits 43
+  flagged excluded: edits 37 (S 5 D 1 I 31) SER 0.268 | err_true 0.268 (37/138) Wilson 0.201-0.348 [102 flagged] | strict err_true 0.261 edits 36
+pass 2 arm F as measured: edits 45 (S 16 D 0 I 29) SER 0.188 ci 0.122-0.263 | err_true 0.188 (45/240) Wilson 0.143-0.242 | strict err_true 0.179 edits 43
+  flagged excluded: edits 34 (S 5 D 0 I 29) SER 0.246 | err_true 0.246 (34/138) Wilson 0.182-0.324 [102 flagged] | strict err_true 0.254 edits 35
+pass 2 arm C as measured: edits 33 (S 15 D 4 I 14) SER 0.138 ci 0.088-0.196 | err_true 0.138 (33/240) Wilson 0.100-0.187 | strict err_true 0.129 edits 31
+  flagged excluded: edits 20 (S 5 D 1 I 14) SER 0.145 | err_true 0.145 (20/138) Wilson 0.096-0.213 [102 flagged] | strict err_true 0.152 edits 21
+GATE mean edits as measured: C 40.0, F 45.0; mean(C) >= 1.2 x mean(F): False
+GATE gap -5.0 > max within-arm pass spread 14.0: False
+GATE flagged-excluded direction (C 28.5 - F 34.5 > 0): False
+GATE transfer check in both passes (F < C on the named pairs): False
+VERDICT: 'not distinguishable'

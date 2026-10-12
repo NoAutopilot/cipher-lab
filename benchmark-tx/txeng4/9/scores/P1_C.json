@@ -1,0 +1,101 @@
+{
+ "items": [
+  {
+   "item": "dint-f89-gloss",
+   "split": "dev",
+   "output": null,
+   "coverage_diagnostic": false,
+   "err_true": 0.1958,
+   "errors": 47,
+   "scored": 240,
+   "wrong": 15,
+   "deleted": 1,
+   "inserted": 31,
+   "excluded": 333,
+   "lines_missing": 0,
+   "missing_deleted": 0,
+   "ser": 0.1958,
+   "ser_errors": 47,
+   "ser_S": 15,
+   "ser_D": 1,
+   "ser_I": 31,
+   "abstained": 0,
+   "accepted": 239,
+   "accepted_wrong": 15,
+   "accepted_error": 0.0628,
+   "coverage": 0.9958,
+   "position_errors": 16,
+   "read": 598,
+   "position_rate": 0.0667,
+   "insertion_rate": 0.0518,
+   "strict": {
+    "err_true": 0.1792,
+    "errors": 43,
+    "ser": 0.1792,
+    "ser_errors": 43,
+    "scored": 240
+   },
+   "ci95_ser": [
+    0.1492,
+    0.2541
+   ],
+   "ci_lines": 14,
+   "top_confusions": [
+    "r<-3 x1",
+    "y<-<deleted> x1",
+    "a<-1 x1",
+    "d<-# x1",
+    "n<-0 x1",
+    "i<-+ x1",
+    "i<-1 x1",
+    "r<-1 x1",
+    "e<-# x1",
+    "i<-0 x1",
+    "m<-2 x1",
+    "s<-0 x1",
+    "i<-4 x1",
+    "l<-x x1",
+    "y<-v x1",
+    "o<-v x1"
+   ],
+   "flagged_excluded": {
+    "err_true": 0.2681,
+    "errors": 37,
+    "scored": 138,
+    "wrong": 5,
+    "deleted": 1,
+    "inserted": 31,
+    "excluded": 435,
+    "lines_missing": 0,
+    "missing_deleted": 0,
+    "ser": 0.2681,
+    "ser_errors": 37,
+    "ser_S": 5,
+    "ser_D": 1,
+    "ser_I": 31,
+    "abstained": 0,
+    "accepted": 137,
+    "accepted_wrong": 5,
+    "accepted_error": 0.0365,
+    "coverage": 0.9928,
+    "position_errors": 6,
+    "read": 598,
+    "position_rate": 0.0435,
+    "insertion_rate": 0.0518,
+    "strict": {
+     "err_true": 0.2609,
+     "errors": 36,
+     "ser": 0.2609,
+     "ser_errors": 36,
+     "scored": 138
+    },
+    "ci95_ser": [
+     0.1975,
+     0.3636
+    ],
+    "ci_lines": 14,
+    "flagged": 102
+   }
+  }
+ ]
+}

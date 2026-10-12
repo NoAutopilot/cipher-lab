@@ -1,0 +1,11 @@
+$ /usr/bin/python3 tools/tx_bench.py --bench BENCHMARK-TX.tsv --item dint-f89-gloss --exclude-flagged --strict --ci /home/user/cipher-lab/benchmark-tx/txeng4/9/norm/P2_C.tsv
+dint-f89-gloss [dev] as measured: err_true(0.75-indel align) 0.138 (33/240) | standard SER (unit-cost Levenshtein) 0.138 (33/240): S 15 D 4 I 14 | wrong 13 deleted 5 inserted 15 | excluded 333 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 13/235 = 0.055 | coverage 235/240 = 0.979
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.129 (31/240) | standard SER 0.129 (31/240)
+    standard SER line bootstrap 95% (1000 resamples, conditional on this item's 14 lines): 0.088-0.196
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.145 (20/138) | standard SER (unit-cost Levenshtein) 0.145 (20/138): S 5 D 1 I 14 | wrong 4 deleted 1 inserted 15 | excluded 435 | lines missing 0 (0 signs counted deleted) [102 flagged] | position errors 5/138 = 0.036 | insertions 15 / read 574 = 0.026
+    reader abstentions 0 | accepted-token error 4/137 = 0.029 | coverage 137/138 = 0.993
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.152 (21/138) | standard SER 0.152 (21/138)
+    standard SER line bootstrap 95% (1000 resamples, conditional on this item's 14 lines): 0.082-0.231
+  top confusions (truth value <- read): d<-<deleted> x2, r<-<deleted> x1, a<-<deleted> x1, d<-# x1, n<-o x1, i<-+ x1, e<-o x1, i<-1 x1
+split dev: err_true(0.75-indel align) 0.138 (33/240) | standard SER 0.138 (33/240)

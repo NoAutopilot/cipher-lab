@@ -1,0 +1,15 @@
+$ /usr/bin/python3 tools/tx_bench.py --bench BENCHMARK-TX.tsv --item dint-f89-gloss --exclude-flagged --strict --ci /home/user/cipher-lab/benchmark-tx/txeng4/9/norm/P1_F.tsv --paired /home/user/cipher-lab/benchmark-tx/txeng4/9/norm/P1_C.tsv
+dint-f89-gloss [dev] as measured: err_true(0.75-indel align) 0.188 (45/240) | standard SER (unit-cost Levenshtein) 0.188 (45/240): S 17 D 0 I 28 | wrong 15 deleted 1 inserted 29 | excluded 333 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 15/239 = 0.063 | coverage 239/240 = 0.996
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.163 (39/240) | standard SER 0.163 (39/240)
+    standard SER line bootstrap 95% (1000 resamples, conditional on this item's 14 lines): 0.138-0.238
+paired P1_F.tsv vs P1_C.tsv on dint-f89-gloss [as measured]: 14 lines; lines improved 5, worsened 5, tied 4; line sign test p = 1.0000; unit-cost edits base 47 -> output 45 over 240 scored signs | beside, sign-level position McNemar: 240 common scored signs; base wrong 16, output wrong 16; fixed 3, broken 3; exact p = 1.0000
+    paired line bootstrap 95% of the SER difference output - base (1000 resamples, conditional on this item's lines): -0.085..0.067
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.254 (35/138) | standard SER (unit-cost Levenshtein) 0.254 (35/138): S 7 D 0 I 28 | wrong 6 deleted 0 inserted 29 | excluded 435 | lines missing 0 (0 signs counted deleted) [102 flagged] | position errors 6/138 = 0.043 | insertions 29 / read 597 = 0.049
+    reader abstentions 0 | accepted-token error 6/138 = 0.043 | coverage 138/138 = 1.000
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.246 (34/138) | standard SER 0.246 (34/138)
+    standard SER line bootstrap 95% (1000 resamples, conditional on this item's 14 lines): 0.177-0.333
+paired P1_F.tsv vs P1_C.tsv on dint-f89-gloss [flagged excluded (truth-verifier flags only)]: 14 lines; lines improved 6, worsened 5, tied 3; line sign test p = 1.0000; unit-cost edits base 37 -> output 35 over 138 scored signs | beside, sign-level position McNemar: 138 common scored signs; base wrong 6, output wrong 6; fixed 2, broken 2; exact p = 1.0000
+    paired line bootstrap 95% of the SER difference output - base (1000 resamples, conditional on this item's lines): -0.154..0.107
+  top confusions (truth value <- read): i<-1 x3, i<-+ x2, a<-<deleted> x1, d<-# x1, n<-0' x1, r<-1 x1, e<-# x1, i<-0 x1
+split dev: err_true(0.75-indel align) 0.188 (45/240) | standard SER 0.188 (45/240)

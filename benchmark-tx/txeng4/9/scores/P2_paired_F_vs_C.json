@@ -1,0 +1,141 @@
+{
+ "items": [
+  {
+   "item": "dint-f89-gloss",
+   "split": "dev",
+   "output": "P2_F.tsv",
+   "coverage_diagnostic": false,
+   "err_true": 0.1875,
+   "errors": 45,
+   "scored": 240,
+   "wrong": 16,
+   "deleted": 0,
+   "inserted": 29,
+   "excluded": 333,
+   "lines_missing": 0,
+   "missing_deleted": 0,
+   "ser": 0.1875,
+   "ser_errors": 45,
+   "ser_S": 16,
+   "ser_D": 0,
+   "ser_I": 29,
+   "abstained": 1,
+   "accepted": 239,
+   "accepted_wrong": 15,
+   "accepted_error": 0.0628,
+   "coverage": 0.9958,
+   "position_errors": 16,
+   "read": 596,
+   "position_rate": 0.0667,
+   "insertion_rate": 0.0487,
+   "strict": {
+    "err_true": 0.1792,
+    "errors": 43,
+    "ser": 0.1792,
+    "ser_errors": 43,
+    "scored": 240
+   },
+   "ci95_ser": [
+    0.1223,
+    0.2629
+   ],
+   "ci_lines": 14,
+   "top_confusions": [
+    "i<-1 x3",
+    "r<-m x1",
+    "y<-1 x1",
+    "d<-# x1",
+    "n<-0 x1",
+    "e<-o x1",
+    "r<-1 x1",
+    "e<-# x1",
+    "i<-0 x1",
+    "m<-? x1",
+    "s<-0 x1",
+    "i<-4 x1",
+    "l<-x x1",
+    "y<-v x1"
+   ],
+   "paired": {
+    "as_measured": {
+     "n": 240,
+     "fixed": 5,
+     "broken": 3,
+     "p": 0.7266,
+     "base_wrong": 18,
+     "out_wrong": 16,
+     "lines": 14,
+     "lines_improved": 3,
+     "lines_worsened": 8,
+     "lines_tied": 3,
+     "line_p": 0.2266,
+     "edits_base": 33,
+     "edits_out": 45,
+     "N": 240,
+     "ci95_ser_diff": [
+      -0.0047,
+      0.1087
+     ]
+    },
+    "flagged_excluded": {
+     "n": 138,
+     "fixed": 2,
+     "broken": 2,
+     "p": 1.0,
+     "base_wrong": 5,
+     "out_wrong": 5,
+     "lines": 14,
+     "lines_improved": 2,
+     "lines_worsened": 8,
+     "lines_tied": 4,
+     "line_p": 0.1094,
+     "edits_base": 20,
+     "edits_out": 34,
+     "N": 138,
+     "ci95_ser_diff": [
+      0.0242,
+      0.2016
+     ]
+    }
+   },
+   "flagged_excluded": {
+    "err_true": 0.2464,
+    "errors": 34,
+    "scored": 138,
+    "wrong": 5,
+    "deleted": 0,
+    "inserted": 29,
+    "excluded": 435,
+    "lines_missing": 0,
+    "missing_deleted": 0,
+    "ser": 0.2464,
+    "ser_errors": 34,
+    "ser_S": 5,
+    "ser_D": 0,
+    "ser_I": 29,
+    "abstained": 1,
+    "accepted": 137,
+    "accepted_wrong": 4,
+    "accepted_error": 0.0292,
+    "coverage": 0.9928,
+    "position_errors": 5,
+    "read": 596,
+    "position_rate": 0.0362,
+    "insertion_rate": 0.0487,
+    "strict": {
+     "err_true": 0.2536,
+     "errors": 35,
+     "ser": 0.2536,
+     "ser_errors": 35,
+     "scored": 138
+    },
+    "ci95_ser": [
+     0.1471,
+     0.3839
+    ],
+    "ci_lines": 14,
+    "flagged": 102
+   }
+  }
+ ]
+}

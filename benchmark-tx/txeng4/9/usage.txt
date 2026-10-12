@@ -1,0 +1,8 @@
+P1_C1 api_calls 26 {'input_tokens': 52, 'cache_creation_input_tokens': 197891, 'cache_read_input_tokens': 3606469, 'output_tokens': 6081} input_all 3804412
+P1_F api_calls 9 {'input_tokens': 18, 'cache_creation_input_tokens': 99374, 'cache_read_input_tokens': 946171, 'output_tokens': 110} input_all 1045563
+P1_C api_calls 9 {'input_tokens': 18, 'cache_creation_input_tokens': 104559, 'cache_read_input_tokens': 933044, 'output_tokens': 85} input_all 1037621
+P2_C1 api_calls 23 {'input_tokens': 46, 'cache_creation_input_tokens': 148397, 'cache_read_input_tokens': 2698901, 'output_tokens': 167} input_all 2847344
+P2_F api_calls 11 {'input_tokens': 22, 'cache_creation_input_tokens': 96913, 'cache_read_input_tokens': 1183704, 'output_tokens': 754} input_all 1280639
+P2_C api_calls 13 {'input_tokens': 26, 'cache_creation_input_tokens': 96940, 'cache_read_input_tokens': 1404837, 'output_tokens': 186} input_all 1501803
+P2_C est USD 0.79 (Sonnet list prices; output is a lower bound)
+six calls est USD 6.13
