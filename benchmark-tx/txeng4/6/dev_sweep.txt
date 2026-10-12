@@ -1,0 +1,26 @@
+dev reachable split rows 35; decided at t=0 21; of which on scored truth positions 20
+t=0: tiebreak right 18/20 = 0.900; committed adjudicator right at the same rows 13/20 (TXE-K dev 35/36 = 0.972); coin 0.500; rows where A right 12, B right 7, neither 1
+agreement with the committed adjudication at decided rows: same 13, override 8; overrides right 6/8, overrides that break a right base 1
+t      decided  coverage  right  accuracy
+0.00    20      0.60       18    0.900  <- frozen t
+0.05    19      0.57       18    0.947
+0.10    17      0.51       16    0.941
+0.15    16      0.46       15    0.938
+0.20    14      0.40       13    0.929
+0.25    13      0.37       12    0.923
+0.30    12      0.34       11    0.917
+0.35    11      0.31       10    0.909
+0.40     8      0.23        8    1.000
+0.45     8      0.23        8    1.000
+0.50     7      0.20        7    1.000
+0.55     7      0.20        7    1.000
+0.60     7      0.20        7    1.000
+0.65     7      0.20        7    1.000
+0.70     6      0.17        6    1.000
+0.75     5      0.14        5    1.000
+0.80     5      0.14        5    1.000
+0.85     5      0.14        5    1.000
+0.90     4      0.11        4    1.000
+0.95     3      0.09        3    1.000
+1.00     3      0.09        3    1.000
+FROZEN t = 0.00

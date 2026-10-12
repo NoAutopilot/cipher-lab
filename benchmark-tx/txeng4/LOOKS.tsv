@@ -1,2 +1,4 @@
 job	item	unit	output_sha256	utc
 TXE4-3	birago1572-no87	dev_tune (18 grid outputs; sha of SHA256SUMS.prescore.dev)	26265fdb31439f78e0410ce93f833f301ff437095ddc18c8c59cdb73e0923338	2026-10-12T01:41Z
+TXE4-6	birago1572-no87	eval_heldout	368e7916a2e090da04560e62447044a9afedd57fc48a262addbfeae60decccc6	2026-10-12T01:37:51Z
+TXE4-6	birago1572-f152r	f152r	4a32280d4c7237b1637e5ff611219e9cc50d0d39ede91ce046fd84f67c9d1f40	2026-10-12T01:37:51Z

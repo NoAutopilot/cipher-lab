@@ -1,0 +1,67 @@
+line	col	A	B	box	nA	nB	dA	dB	near	margin	pick	base_pos	base_sign	applied	reason
+f178r_L01	4	T83	T24	f178r_01_004	21	1	4.3933	9.7763	T83	1.2253				no	not-in-coin-set
+f178r_L01	6	T95	T98	f178r_01_006	0	12								no	undecidable
+f178r_L01	20	T83	T24	f178r_01_020	21	1	7.9977	9.3326	T83	0.1669				no	not-in-coin-set
+f178r_L01	24	T83	T24		0	0								no	nobox
+f178r_L01	30	T83	T24		0	0								no	nobox
+f178r_L02	25	T83	T24		0	0								no	nobox
+f178r_L02	29	T83	T24	f178r_02_029	21	1	6.2435	9.9402	T83	0.5921				no	not-in-coin-set
+f178r_L03	1	T83	T24		0	0								no	nobox
+f178r_L03	16	T83	T24		0	0								no	nobox
+f178v_L01	3	T51	T95	f178v_01_003	0	0								no	undecidable
+f178v_L01	8	T51	T95	f178v_01_008	0	0								no	undecidable
+f178v_L01	12	T86	T60	f178v_01_012	28	35	5.2078	5.6836	T86	0.0914				no	not-in-coin-set
+f178v_L01	23	T50	T92	f178v_01_024	1	13	10.2314	5.4808	T92	0.8668	T92	23	T50	yes	coin
+f178v_L02	19	T83	T81	f178v_02_019	21	3	7.5773	5.5735	T81	0.3595				no	not-in-coin-set
+f178v_L03	4	T50	T92	f178v_03_004	1	13	10.7535	4.7677	T92	1.2555	T92	4	T50	yes	coin
+f178v_L03	25	T11	X_S	f178v_03_025	0	1								no	undecidable
+f178v_L04	4	T50	T92	f178v_04_004	1	13	11.5893	4.7798	T92	1.4247	T50	4	T50	same	coin
+f178v_L05	7	T42	X_NEW	f178v_05_007	6	8	5.3017	9.2293	T42	0.7408				no	not-in-coin-set
+f178v_L05	9	T13	T64	f178v_05_009	3	4	4.4148	6.0364	T13	0.3673	T64	9	T64	same	coin
+f178v_L05	11	T86	T60	f178v_05_011	27	36	9.3627	9.1664	T60	0.0214	T86	11	T86	same	coin
+f178v_L05	25	T50	T92	f178v_05_025	1	13	11.6769	7.8909	T92	0.4798	T50	25	T50	same	coin
+f178v_L06	9	T29	T88		0	0								no	nobox
+f178v_L06	27	T46	X_NEW		0	0								no	nobox
+f178v_L06	30	T29	T88		0	0								no	nobox
+f178v_L07	4	T18	T98	f178v_07_004	5	12	4.2662	5.3866	T18	0.2626				no	not-in-coin-set
+f178v_L07	23	T18	T98	f178v_07_024	5	12	4.1610	5.1186	T18	0.2301				no	not-in-coin-set
+f178v_L07	29	T50	T92		0	0								no	nobox
+f178v_L08	3	T42	X_NEW	f178v_08_003	6	8	5.4079	8.9671	T42	0.6582				no	not-in-coin-set
+f178v_L08	5	T42	X_NEW	f178v_08_005	6	8	6.6270	9.1949	T42	0.3875				no	not-in-coin-set
+f178v_L08	10	T50	T92	f178v_08_010	1	13	10.7178	4.3228	T92	1.4794	T50	10	T50	same	coin
+f178v_L08	17	T18	T98	f178v_08_017	5	11	5.2079	5.9442	T18	0.1414				no	not-in-coin-set
+f178v_L08	20	T51	T95	f178v_08_020	0	0								no	undecidable
+f178v_L08	28	T18	T98	f178v_08_029	5	11	5.2741	5.7153	T18	0.0837				no	not-in-coin-set
+f178v_L09	2	T29	T88		0	0								no	nobox
+f178v_L09	4	T18	T98	f178v_09_003	5	12	4.2088	5.0115	T18	0.1907				no	not-in-coin-set
+f178v_L09	30	T46	X_NEW		0	0								no	nobox
+f178v_L10	3	T18	T98	f178v_10_003	5	10	4.3597	5.6774	T18	0.3023				no	not-in-coin-set
+f178v_L10	5	T50	T92	f178v_10_005	1	12	10.0083	5.2472	T92	0.9073	T50	5	T50	same	coin
+f178v_L10	8	T18	T98	f178v_10_008	5	10	3.8160	4.4957	T18	0.1781				no	not-in-coin-set
+f178v_L10	16	T46	X_NEW	f178v_10_016	3	8	10.0253	8.7548	X_NEW	0.1451				no	not-in-coin-set
+f178v_L11	4	T95	T66	f178v_11_004	0	0								no	undecidable
+f178v_L11	14	T45	T88		0	0								no	nobox
+f178v_L11	29	T60	T86		0	0								no	nobox
+f178v_L12	28	T95	T66	f178v_12_028	0	0								no	undecidable
+f178v_L13	1	T27	T26		0	0								no	nobox
+f178v_L13	20	T98	T18		0	0								no	nobox
+f178v_L13	27	T64	T52		0	0								no	nobox
+f178v_L15	11	T95	T66	f178v_15_011	0	0								no	undecidable
+f178v_L15	15	T29	T88		0	0								no	nobox
+f178v_L17	29	X_EQ	X_NEW		0	0								no	nobox
+f178v_L18	19	T76	T27	f178v_18_019	16	1	7.1153	5.2292	T27	0.3607				no	not-in-coin-set
+f178v_L19	6	T98	T18	f178v_19_006	12	5	5.2963	5.2952	T18	0.0002	T18	6	T98	yes	coin
+f178v_L19	16	X_NEW	T84	f178v_19_017	8	3	8.2819	8.3034	X_NEW	0.0026	T84	16	T84	same	coin
+f178v_L19	24	T98	T18	f178v_19_025	12	5	5.3123	4.4142	T18	0.2035	T98	24	T98	same	coin
+f178v_L20	15	T26	T76	f178v_20_016	5	14	8.2961	6.5072	T76	0.2749	T76	15	T66	yes	coin
+f178v_L22	24	T90	T45	f178v_22_024	12	43	6.8858	7.9641	T90	0.1566				no	not-in-coin-set
+f179r_L01	13	T24	X_NEW	f179r_01_014	1	8	4.1550	9.4517	T24	1.2748				no	not-in-coin-set
+f179r_L01	15	T83	T24	f179r_01_016	21	1	4.6441	10.0278	T83	1.1593				no	not-in-coin-set
+f179r_L01	17	T83	T24	f179r_01_018	21	1	5.8678	10.1976	T83	0.7379				no	not-in-coin-set
+f179r_L01	20	T83	T24	f179r_01_021	21	1	6.1890	9.6616	T83	0.5611				no	not-in-coin-set
+f179r_L02	4	T83	T24	f179r_02_005	21	1	4.7142	10.6199	T83	1.2528				no	not-in-coin-set
+f179r_L02	8	T24	X_NEW	f179r_02_009	1	8	5.1628	9.6239	T24	0.8641				no	not-in-coin-set
+f179r_L02	22	T83	T24		0	0								no	nobox
+f179r_L03	4	T83	T24	f179r_03_005	21	1	4.0268	10.3809	T83	1.5780				no	not-in-coin-set
+f179r_L03	8	T83	T24		0	0								no	nobox
+f179r_L03	17	T83	T24		0	0								no	nobox

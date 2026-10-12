@@ -1,0 +1,6 @@
+line	col	A	B	box	nA	nB	dA	dB	near	margin	pick	base_pos	base_sign	applied	reason
+f152r_L02	15	T78	T85	f152r_03_015	0	1								no	undecidable
+f152r_L03	8	T18	T98	f152r_04_009	0	2								no	undecidable
+f152r_L03	30	T90	T24	f152r_04_031	2	0								no	undecidable
+f152r_L03	32	T60	T86	f152r_04_033	3	3	8.9051	11.5966	T60	0.3022	T60	32	T86	yes	
+f152r_L04	25	T84	X_NEW		0	0								no	nobox
