@@ -1,0 +1,10 @@
+# tx_bench --pair, 12 Oct 2026 (TXE4-6 unit 3; read-free)
+## no.87 passA vs passB
+birago1572-no87 [as measured] scored 803: both right 716; agreed-wrong 32; both-wrong-different 5; one-reader-wrong 50 (A only 15, B only 35) = reachable share 0.062; A wrong 52, B wrong 72; oracle-adjudication bound 37/803 = 0.046 (Wilson 0.034-0.063); insertions not in the bound
+birago1572-no87 [flagged excluded] scored 792: both right 716; agreed-wrong 23; both-wrong-different 3; one-reader-wrong 50 (A only 15, B only 35) = reachable share 0.063; A wrong 41, B wrong 61; oracle-adjudication bound 26/792 = 0.033 (Wilson 0.022-0.048); insertions not in the bound
+## f152r passA vs passB
+birago1572-f152r [as measured] scored 73: both right 67; agreed-wrong 3; both-wrong-different 0; one-reader-wrong 3 (A only 2, B only 1) = reachable share 0.041; A wrong 5, B wrong 4; oracle-adjudication bound 3/73 = 0.041 (Wilson 0.014-0.114); insertions not in the bound
+birago1572-f152r [flagged excluded] scored 70: both right 67; agreed-wrong 1; both-wrong-different 0; one-reader-wrong 2 (A only 2, B only 0) = reachable share 0.029; A wrong 3, B wrong 1; oracle-adjudication bound 1/70 = 0.014 (Wilson 0.003-0.077); insertions not in the bound
+## gunther L01-L17 passA_gun vs passB_gun (txeng3/3/scored, --coverage-diagnostic)
+gunther8246-p2 [as measured] scored 214: both right 199; agreed-wrong 7; both-wrong-different 1; one-reader-wrong 7 (A only 5, B only 2) = reachable share 0.033; A wrong 13, B wrong 10; oracle-adjudication bound 8/214 = 0.037 (Wilson 0.019-0.072); insertions not in the bound
+gunther8246-p2 [flagged excluded] scored 206: both right 199; agreed-wrong 1; both-wrong-different 0; one-reader-wrong 6 (A only 4, B only 2) = reachable share 0.029; A wrong 5, B wrong 3; oracle-adjudication bound 1/206 = 0.005 (Wilson 0.001-0.027); insertions not in the bound

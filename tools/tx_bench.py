@@ -291,8 +291,8 @@ def pair_report(truth_rows, a_lines, b_lines, missing='delete'):
     (an adjudicator choosing between A and B cannot fix them), as a rate over scored; insertions are not position-level
     and are reported beside from score_item, not in the bound."""
     sa, sb = position_signs(truth_rows, a_lines, missing), position_signs(truth_rows, b_lines, missing)
-    ts = {(r['line'], r['pos']): set(filter(None, r['truth'].split('|'))) | {r['ref_sign']} for r in truth_rows
-          if r['status'] == 'scored'}
+    ts = {(r['line'], r['pos']): set(filter(None, r['truth'].split('|'))) for r in truth_rows   # the truth set only,
+          if r['status'] == 'scored'}                                                          # as position_errors
     keys = sorted(set(sa) & set(sb))
     c = Counter()
     for k in keys:
