@@ -1,0 +1,658 @@
+{
+ "time_utc": "2026-10-12 01:36 UTC",
+ "items": {
+  "no87": {
+   "mapped_positions": 699,
+   "piles": 137,
+   "piles_ge2": 84,
+   "arms": {
+    "keyshuf_1": {
+     "accepted": 4,
+     "positions_changed": 22
+    },
+    "keyshuf_2": {
+     "accepted": 6,
+     "positions_changed": 22
+    },
+    "keyshuf_3": {
+     "accepted": 4,
+     "positions_changed": 29
+    },
+    "keyshuf_4": {
+     "accepted": 6,
+     "positions_changed": 39
+    },
+    "keyshuf_5": {
+     "accepted": 2,
+     "positions_changed": 6
+    },
+    "keyshuf_6": {
+     "accepted": 3,
+     "positions_changed": 50
+    },
+    "keyshuf_7": {
+     "accepted": 5,
+     "positions_changed": 29
+    },
+    "keyshuf_8": {
+     "accepted": 2,
+     "positions_changed": 13
+    },
+    "keyshuf_9": {
+     "accepted": 5,
+     "positions_changed": 17
+    },
+    "keyshuf_10": {
+     "accepted": 5,
+     "positions_changed": 55
+    },
+    "keyshuf_11": {
+     "accepted": 5,
+     "positions_changed": 57
+    },
+    "keyshuf_12": {
+     "accepted": 2,
+     "positions_changed": 5
+    },
+    "keyshuf_13": {
+     "accepted": 2,
+     "positions_changed": 14
+    },
+    "keyshuf_14": {
+     "accepted": 4,
+     "positions_changed": 21
+    },
+    "keyshuf_15": {
+     "accepted": 9,
+     "positions_changed": 74
+    },
+    "keyshuf_16": {
+     "accepted": 8,
+     "positions_changed": 39
+    },
+    "keyshuf_17": {
+     "accepted": 6,
+     "positions_changed": 58
+    },
+    "keyshuf_18": {
+     "accepted": 4,
+     "positions_changed": 34
+    },
+    "keyshuf_19": {
+     "accepted": 5,
+     "positions_changed": 45
+    },
+    "keyshuf_20": {
+     "accepted": 2,
+     "positions_changed": 14
+    },
+    "clshuf_1": {
+     "accepted": 4,
+     "positions_changed": 9
+    },
+    "clshuf_2": {
+     "accepted": 1,
+     "positions_changed": 3
+    },
+    "clshuf_3": {
+     "accepted": 0,
+     "positions_changed": 0
+    },
+    "clshuf_4": {
+     "accepted": 2,
+     "positions_changed": 13
+    },
+    "clshuf_5": {
+     "accepted": 1,
+     "positions_changed": 2
+    },
+    "clshuf_6": {
+     "accepted": 1,
+     "positions_changed": 2
+    },
+    "clshuf_7": {
+     "accepted": 2,
+     "positions_changed": 5
+    },
+    "clshuf_8": {
+     "accepted": 2,
+     "positions_changed": 6
+    },
+    "clshuf_9": {
+     "accepted": 1,
+     "positions_changed": 3
+    },
+    "clshuf_10": {
+     "accepted": 2,
+     "positions_changed": 5
+    },
+    "clshuf_11": {
+     "accepted": 1,
+     "positions_changed": 3
+    },
+    "clshuf_12": {
+     "accepted": 4,
+     "positions_changed": 9
+    },
+    "clshuf_13": {
+     "accepted": 2,
+     "positions_changed": 8
+    },
+    "clshuf_14": {
+     "accepted": 1,
+     "positions_changed": 2
+    },
+    "clshuf_15": {
+     "accepted": 1,
+     "positions_changed": 3
+    },
+    "clshuf_16": {
+     "accepted": 0,
+     "positions_changed": 0
+    },
+    "clshuf_17": {
+     "accepted": 1,
+     "positions_changed": 3
+    },
+    "clshuf_18": {
+     "accepted": 1,
+     "positions_changed": 3
+    },
+    "clshuf_19": {
+     "accepted": 2,
+     "positions_changed": 5
+    },
+    "clshuf_20": {
+     "accepted": 2,
+     "positions_changed": 6
+    }
+   },
+   "real": {
+    "piles": 137,
+    "piles_ge_min": 84,
+    "candidates_scored": 194,
+    "accepted": 3,
+    "positions_changed": 6,
+    "shuffles": 20,
+    "seed": 1,
+    "min_pile": 2,
+    "accepted_list": [
+     {
+      "cluster": "134",
+      "sign": "T90",
+      "to": "T84",
+      "delta": 13.0508,
+      "n": 2
+     },
+     {
+      "cluster": "42",
+      "sign": "T95",
+      "to": "T51",
+      "delta": 3.4338,
+      "n": 2
+     },
+     {
+      "cluster": "53",
+      "sign": "X_NEW",
+      "to": "T92",
+      "delta": 1.5143,
+      "n": 2
+     }
+    ]
+   },
+   "real_changed": [
+    {
+     "line": "f178v_L05",
+     "pos": 4,
+     "base": "T90",
+     "to": "T84"
+    },
+    {
+     "line": "f178v_L22",
+     "pos": 24,
+     "base": "T90",
+     "to": "T84"
+    },
+    {
+     "line": "f178v_L11",
+     "pos": 4,
+     "base": "T95",
+     "to": "T51"
+    },
+    {
+     "line": "f178v_L15",
+     "pos": 11,
+     "base": "T95",
+     "to": "T51"
+    },
+    {
+     "line": "f179r_L01",
+     "pos": 27,
+     "base": "X_NEW",
+     "to": "T92"
+    },
+    {
+     "line": "f179r_L03",
+     "pos": 19,
+     "base": "X_NEW",
+     "to": "T92"
+    }
+   ],
+   "seconds": 19.2
+  },
+  "f152r": {
+   "mapped_positions": 88,
+   "piles": 55,
+   "piles_ge2": 22,
+   "arms": {
+    "keyshuf_1": {
+     "accepted": 1,
+     "positions_changed": 2
+    },
+    "keyshuf_2": {
+     "accepted": 1,
+     "positions_changed": 2
+    },
+    "keyshuf_3": {
+     "accepted": 1,
+     "positions_changed": 2
+    },
+    "keyshuf_4": {
+     "accepted": 1,
+     "positions_changed": 2
+    },
+    "keyshuf_5": {
+     "accepted": 1,
+     "positions_changed": 2
+    },
+    "keyshuf_6": {
+     "accepted": 1,
+     "positions_changed": 2
+    },
+    "keyshuf_7": {
+     "accepted": 2,
+     "positions_changed": 4
+    },
+    "keyshuf_8": {
+     "accepted": 0,
+     "positions_changed": 0
+    },
+    "keyshuf_9": {
+     "accepted": 1,
+     "positions_changed": 2
+    },
+    "keyshuf_10": {
+     "accepted": 4,
+     "positions_changed": 9
+    },
+    "keyshuf_11": {
+     "accepted": 1,
+     "positions_changed": 2
+    },
+    "keyshuf_12": {
+     "accepted": 0,
+     "positions_changed": 0
+    },
+    "keyshuf_13": {
+     "accepted": 1,
+     "positions_changed": 2
+    },
+    "keyshuf_14": {
+     "accepted": 0,
+     "positions_changed": 0
+    },
+    "keyshuf_15": {
+     "accepted": 1,
+     "positions_changed": 2
+    },
+    "keyshuf_16": {
+     "accepted": 1,
+     "positions_changed": 2
+    },
+    "keyshuf_17": {
+     "accepted": 2,
+     "positions_changed": 4
+    },
+    "keyshuf_18": {
+     "accepted": 3,
+     "positions_changed": 8
+    },
+    "keyshuf_19": {
+     "accepted": 1,
+     "positions_changed": 3
+    },
+    "keyshuf_20": {
+     "accepted": 1,
+     "positions_changed": 2
+    },
+    "clshuf_1": {
+     "accepted": 1,
+     "positions_changed": 3
+    },
+    "clshuf_2": {
+     "accepted": 0,
+     "positions_changed": 0
+    },
+    "clshuf_3": {
+     "accepted": 1,
+     "positions_changed": 3
+    },
+    "clshuf_4": {
+     "accepted": 0,
+     "positions_changed": 0
+    },
+    "clshuf_5": {
+     "accepted": 1,
+     "positions_changed": 3
+    },
+    "clshuf_6": {
+     "accepted": 1,
+     "positions_changed": 3
+    },
+    "clshuf_7": {
+     "accepted": 0,
+     "positions_changed": 0
+    },
+    "clshuf_8": {
+     "accepted": 1,
+     "positions_changed": 3
+    },
+    "clshuf_9": {
+     "accepted": 0,
+     "positions_changed": 0
+    },
+    "clshuf_10": {
+     "accepted": 0,
+     "positions_changed": 0
+    },
+    "clshuf_11": {
+     "accepted": 1,
+     "positions_changed": 3
+    },
+    "clshuf_12": {
+     "accepted": 1,
+     "positions_changed": 3
+    },
+    "clshuf_13": {
+     "accepted": 0,
+     "positions_changed": 0
+    },
+    "clshuf_14": {
+     "accepted": 1,
+     "positions_changed": 3
+    },
+    "clshuf_15": {
+     "accepted": 1,
+     "positions_changed": 3
+    },
+    "clshuf_16": {
+     "accepted": 1,
+     "positions_changed": 3
+    },
+    "clshuf_17": {
+     "accepted": 0,
+     "positions_changed": 0
+    },
+    "clshuf_18": {
+     "accepted": 0,
+     "positions_changed": 0
+    },
+    "clshuf_19": {
+     "accepted": 1,
+     "positions_changed": 3
+    },
+    "clshuf_20": {
+     "accepted": 0,
+     "positions_changed": 0
+    }
+   },
+   "real": {
+    "piles": 55,
+    "piles_ge_min": 22,
+    "candidates_scored": 74,
+    "accepted": 0,
+    "positions_changed": 0,
+    "shuffles": 20,
+    "seed": 1,
+    "min_pile": 2,
+    "accepted_list": []
+   },
+   "real_changed": [],
+   "seconds": 2.6
+  }
+ },
+ "positive_control": {
+  "restored": 1,
+  "false_mean": 0,
+  "runs": [
+   {
+    "seed": 1,
+    "cluster": "112",
+    "sign": "T29",
+    "planted": "T83",
+    "n": 3,
+    "accepted_to": null,
+    "restored": false,
+    "false_accepts": 0
+   },
+   {
+    "seed": 2,
+    "cluster": "102",
+    "sign": "T18",
+    "planted": "T98",
+    "n": 11,
+    "accepted_to": null,
+    "restored": false,
+    "false_accepts": 0
+   },
+   {
+    "seed": 3,
+    "cluster": "83",
+    "sign": "T36",
+    "planted": "T27",
+    "n": 5,
+    "accepted_to": null,
+    "restored": false,
+    "false_accepts": 0
+   },
+   {
+    "seed": 4,
+    "cluster": "83",
+    "sign": "T36",
+    "planted": "T27",
+    "n": 5,
+    "accepted_to": null,
+    "restored": false,
+    "false_accepts": 0
+   },
+   {
+    "seed": 5,
+    "cluster": "32",
+    "sign": "T86",
+    "planted": "T60",
+    "n": 3,
+    "accepted_to": "T86",
+    "restored": true,
+    "false_accepts": 0
+   },
+   {
+    "seed": 6,
+    "cluster": "20",
+    "sign": "T98",
+    "planted": "T18",
+    "n": 3,
+    "accepted_to": null,
+    "restored": false,
+    "false_accepts": 0
+   },
+   {
+    "seed": 7,
+    "cluster": "21",
+    "sign": "T50",
+    "planted": "T92",
+    "n": 3,
+    "accepted_to": null,
+    "restored": false,
+    "false_accepts": 0
+   },
+   {
+    "seed": 8,
+    "cluster": "83",
+    "sign": "T36",
+    "planted": "T27",
+    "n": 5,
+    "accepted_to": null,
+    "restored": false,
+    "false_accepts": 0
+   },
+   {
+    "seed": 9,
+    "cluster": "79",
+    "sign": "T60",
+    "planted": "T86",
+    "n": 3,
+    "accepted_to": null,
+    "restored": false,
+    "false_accepts": 0
+   },
+   {
+    "seed": 10,
+    "cluster": "77",
+    "sign": "T83",
+    "planted": "T29",
+    "n": 8,
+    "accepted_to": null,
+    "restored": false,
+    "false_accepts": 0
+   },
+   {
+    "seed": 11,
+    "cluster": "79",
+    "sign": "T60",
+    "planted": "T86",
+    "n": 3,
+    "accepted_to": null,
+    "restored": false,
+    "false_accepts": 0
+   },
+   {
+    "seed": 12,
+    "cluster": "116",
+    "sign": "T65",
+    "planted": "T18",
+    "n": 3,
+    "accepted_to": null,
+    "restored": false,
+    "false_accepts": 0
+   },
+   {
+    "seed": 13,
+    "cluster": "101",
+    "sign": "T45",
+    "planted": "T89",
+    "n": 6,
+    "accepted_to": null,
+    "restored": false,
+    "false_accepts": 0
+   },
+   {
+    "seed": 14,
+    "cluster": "63",
+    "sign": "T19",
+    "planted": "T86",
+    "n": 3,
+    "accepted_to": null,
+    "restored": false,
+    "false_accepts": 0
+   },
+   {
+    "seed": 15,
+    "cluster": "36",
+    "sign": "T33",
+    "planted": "T19",
+    "n": 11,
+    "accepted_to": null,
+    "restored": false,
+    "false_accepts": 0
+   },
+   {
+    "seed": 16,
+    "cluster": "85",
+    "sign": "T52",
+    "planted": "T64",
+    "n": 3,
+    "accepted_to": null,
+    "restored": false,
+    "false_accepts": 0
+   },
+   {
+    "seed": 17,
+    "cluster": "50",
+    "sign": "T76",
+    "planted": "T26",
+    "n": 7,
+    "accepted_to": null,
+    "restored": false,
+    "false_accepts": 0
+   },
+   {
+    "seed": 18,
+    "cluster": "138",
+    "sign": "T33",
+    "planted": "T19",
+    "n": 4,
+    "accepted_to": null,
+    "restored": false,
+    "false_accepts": 0
+   },
+   {
+    "seed": 19,
+    "cluster": "40",
+    "sign": "T89",
+    "planted": "T45",
+    "n": 3,
+    "accepted_to": null,
+    "restored": false,
+    "false_accepts": 0
+   },
+   {
+    "seed": 20,
+    "cluster": "31",
+    "sign": "T90",
+    "planted": "T45",
+    "n": 4,
+    "accepted_to": null,
+    "restored": false,
+    "false_accepts": 0
+   }
+  ],
+  "gate_P": false
+ },
+ "lookalike_control": {
+  "source": "real dev acceptances",
+  "runs": [
+   {
+    "cluster": "134",
+    "sign": "T90",
+    "real_to": "T84",
+    "planted": "T15",
+    "n": 1,
+    "accepted_to": null,
+    "accepted": false
+   },
+   {
+    "cluster": "42",
+    "sign": "T95",
+    "real_to": "T51",
+    "planted": "T78",
+    "n": 1,
+    "accepted_to": null,
+    "accepted": false
+   }
+  ],
+  "n": 2,
+  "accepted": 0,
+  "rate": 0.0,
+  "gate": true
+ }
+}
