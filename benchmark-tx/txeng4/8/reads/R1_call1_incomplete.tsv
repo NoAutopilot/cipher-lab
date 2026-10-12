@@ -1,0 +1,570 @@
+line	box	signs	alt	conf
+f102r_L02	1	p #		M
+f102r_L02	2	P		M
+f102r_L02	3	y		M
+f102r_L02	4	-		M
+f102r_L02	5	m		M
+f102r_L02	6	-		M
+f102r_L02	7	a		M
+f102r_L02	8	tz t p		M
+f102r_L02	9	x s		M
+f102r_L02	10	-		M
+f102r_L02	11	t		M
+f102r_L02	12	-		M
+f102r_L02	13	p o o		M
+f102r_L02	14	j		M
+f102r_L02	15	:		M
+f102r_L02	16	m x o m		M
+f102r_L02	17	g		M
+f102r_L02	18	s		M
+f102r_L02	19	-		M
+f102r_L02	20	p		M
+f102r_L02	21	.		M
+f102r_L02	22	-		M
+f102r_L02	23	.		M
+f102r_L02	24	m p m		M
+f102r_L02	25	g m		M
+f102r_L02	26	-		M
+f102r_L02	27	3		M
+f102r_L02	28	-		M
+f102r_L02	29	m		M
+f102r_L02	30	f		M
+f102r_L02	31	R		M
+f102r_L02	32	-		M
+f102r_L02	33	-		M
+f102r_L02	34	tz		M
+f102r_L02	35	m a		M
+f102r_L02	36	-		M
+f102r_L02	37	m		M
+f102r_L02	38	-		M
+f102r_L02	39	m p d m		M
+f102r_L02	40	-		M
+f102r_L02	41	d		M
+f102r_L02	42	-		M
+f102r_L02	43	tz		M
+f102r_L02	44	x		M
+f102r_L02	45	s		M
+f102r_L02	46	-		M
+f102r_L02	47	o o		M
+f102r_L02	48	-		M
+f102r_L02	49	m : to		M
+f102r_L02	50	-		M
+f102r_L02	51	z		M
+f102r_L02	52	-		M
+f102r_L04	1	m		M
+f102r_L04	2	p		M
+f102r_L04	3	-		M
+f102r_L04	4	-		M
+f102r_L04	5	y m s		M
+f102r_L04	6	-		M
+f102r_L04	7	tz :		M
+f102r_L04	8	-		M
+f102r_L04	9	#		M
+f102r_L04	10	3 m		M
+f102r_L04	11	y		M
+f102r_L04	12	-		M
+f102r_L04	13	s		M
+f102r_L04	14	g m		M
+f102r_L04	15	: d		M
+f102r_L04	16	p d t		M
+f102r_L04	17	j		M
+f102r_L04	18	tz		M
+f102r_L04	19	s		M
+f102r_L04	20	-		M
+f102r_L04	21	#		M
+f102r_L04	22	d		M
+f102r_L04	23	p 3		M
+f102r_L04	24	-		M
+f102r_L04	25	o o		M
+f102r_L04	26	#		M
+f102r_L04	27	-		M
+f102r_L04	28	3 d		M
+f102r_L04	29	-		M
+f102r_L04	30	-		M
+f102r_L04	31	g s		M
+f102r_L04	32	t 4		M
+f102r_L04	33	m		M
+f102r_L04	34	m		M
+f102r_L04	35	-		M
+f102r_L04	36	#		M
+f102r_L04	37	-		M
+f102r_L04	38	-		M
+f102r_L04	39	y y m x		M
+f102r_L04	40	-		M
+f102r_L04	41	d		M
+f102r_L04	42	tz		M
+f102r_L04	43	-		M
+f102r_L04	44	m p		M
+f102r_L04	45	d		M
+f102r_L04	46	-		M
+f102r_L08	1	-		M
+f102r_L08	2	m		M
+f102r_L08	3	m # y o o z s o o g		M
+f102r_L08	4	d tz		M
+f102r_L08	5	-		M
+f102r_L08	6	-		M
+f102r_L08	7	m p		M
+f102r_L08	8	f tz		M
+f102r_L08	9	-		M
+f102r_L08	10	-		M
+f102r_L08	11	m p		M
+f102r_L08	12	-		M
+f102r_L08	13	-		M
+f102r_L08	14	R d x		M
+f102r_L08	15	#		M
+f102r_L08	16	y s		M
+f102r_L08	17	g tz		M
+f102r_L08	18	-		M
+f102r_L08	19	p		M
+f102r_L08	20	-		M
+f102r_L08	21	3		M
+f102r_L08	22	-		M
+f102r_L08	23	m y		M
+f102r_L08	24	-		M
+f102r_L08	25	m o o		M
+f102r_L08	26	-		M
+f102r_L08	27	g		M
+f102r_L08	28	x		M
+f102r_L08	29	m R p m		M
+f102r_L08	30	-		M
+f102r_L08	31	3		M
+f102r_L08	32	tz		M
+f102r_L08	33	a		M
+f102r_L08	34	-		M
+f102r_L08	35	m		M
+f102r_L08	36	#		M
+f102r_L08	37	g		M
+f102r_L08	38	7		M
+f102r_L10	1	-		M
+f102r_L10	2	y		M
+f102r_L10	3	y m x		M
+f102r_L10	4	-		M
+f102r_L10	5	s		M
+f102r_L10	6	h		M
+f102r_L10	7	-		M
+f102r_L10	8	o o t z		M
+f102r_L10	9	x		M
+f102r_L10	10	k		M
+f102r_L10	11	m		M
+f102r_L10	12	y s		M
+f102r_L10	13	X		M
+f102r_L10	14	-		M
+f102r_L10	15	&		M
+f102r_L10	16	-		M
+f102r_L10	17	-		M
+f102r_L10	18	-		M
+f102r_L10	19	g t		M
+f102r_L10	20	p		M
+f102r_L10	21	d m		M
+f102r_L10	22	-		M
+f102r_L10	23	z m		M
+f102r_L10	24	-		M
+f102r_L10	25	6 s		M
+f102r_L10	26	-		M
+f102r_L10	27	g d		M
+f102r_L10	28	-		M
+f102r_L10	29	H :		M
+f102r_L10	30	-		M
+f102r_L10	31	y		M
+f102r_L10	32	-		M
+f102r_L10	33	m		M
+f102r_L10	34	n o y		M
+f102r_L10	35	j		M
+f102r_L10	36	-		M
+f102r_L10	37	R		M
+f102r_L10	38	m #		M
+f102r_L10	39	s g y y m		M
+f102r_L10	40	-		M
+f102r_L16	1	-		M
+f102r_L16	2	-		M
+f102r_L16	3	y		M
+f102r_L16	4	y s		M
+f102r_L16	5	s		M
+f102r_L16	6	-		M
+f102r_L16	7	g m		M
+f102r_L16	8	y y s #		M
+f102r_L16	9	tz d p		M
+f102r_L16	10	Z		M
+f102r_L16	11	s		M
+f102r_L16	12	o o d		M
+f102r_L16	13	-		M
+f102r_L16	14	tz #		M
+f102r_L16	15	#		M
+f102r_L16	16	c m o o		M
+f102r_L16	17	s		M
+f102r_L16	18	-		M
+f102r_L16	19	d		M
+f102r_L16	20	b		M
+f102r_L16	21	3 m		M
+f102r_L16	22	-		M
+f102r_L16	23	m		M
+f102r_L16	24	b		M
+f102r_L16	25	o o d		M
+f102r_L16	26	3 m y		M
+f102r_L16	27	m		M
+f102r_L16	28	-		M
+f102r_L16	29	#		M
+f102r_L16	30	-		M
+f102r_L16	31	m #		M
+f102r_L16	32	:		M
+f102r_L16	33	m		M
+f102r_L16	34	c r tz m		M
+f102r_L16	35	. . d o o 4		M
+f102r_L16	36	4		M
+f102r_L16	37	d		M
+f102r_L16	38	-		M
+f102r_L16	39	t		M
+f102r_L16	40	tz		M
+f102r_L16	41	-		M
+f102r_L16	42	d		M
+f102r_L16	43	-		M
+f102r_L16	44	d		M
+f102r_L16	45	b		M
+f102r_L18	1	-		M
+f102r_L18	2	d		M
+f102r_L18	3	-		M
+f102r_L18	4	tz		M
+f102r_L18	5	# #		M
+f102r_L18	6	g m x		M
+f102r_L18	7	s z		M
+f102r_L18	8	d m		M
+f102r_L18	9	3 m y y s		M
+f102r_L18	10	s		M
+f102r_L18	11	-		M
+f102r_L18	12	f d		M
+f102r_L18	13	-		M
+f102r_L18	14	o o p m		M
+f102r_L18	15	tz		M
+f102r_L18	16	-		M
+f102r_L18	17	-		M
+f102r_L18	18	-		M
+f102r_L18	19	-		M
+f102r_L18	20	-		M
+f102r_L18	21	-		M
+f102r_L18	22	g		M
+f102r_L18	23	-		M
+f102r_L18	24	-		M
+f102r_L18	25	-		M
+f102r_L18	26	tz		M
+f102r_L18	27	d p c		M
+f102r_L18	28	tz		M
+f102r_L18	29	-		M
+f102r_L18	30	-		M
+f102r_L18	31	m		M
+f102r_L18	32	m		M
+f102r_L18	33	-		M
+f102r_L18	34	y		M
+f102r_L18	35	-		M
+f102r_L18	36	o o z		M
+f102r_L18	37	m R		M
+f102r_L18	38	-		M
+f102r_L18	39	s o o d		M
+f102r_L18	40	tz		M
+f102r_L18	41	-		M
+f102r_L18	42	x		M
+f102r_L18	43	-		M
+f102r_L18	44	g s tz		M
+f102r_L18	45	-		M
+f102r_L18	46	.		M
+f102r_L18	47	-		M
+f102r_L18	48	-		M
+f102r_L18	49	-		M
+f102r_L18	50	-		M
+f102r_L20	1	tz		M
+f102r_L20	2	m p		M
+f102r_L20	3	#		M
+f102r_L20	4	-		M
+f102r_L20	5	s		M
+f102r_L20	6	f d p . . y m 2 s		M
+f102r_L20	7	tz		M
+f102r_L20	8	tz p m # Z		M
+f102r_L20	9	s		M
+f102r_L20	10	-		M
+f102r_L20	11	o		M
+f102r_L20	12	o o		M
+f102r_L20	13	d tz		M
+f102r_L20	14	#		M
+f102r_L20	15	m x		M
+f102r_L20	16	#		M
+f102r_L20	17	-		M
+f102r_L20	18	#		M
+f102r_L20	19	g m x		M
+f102r_L20	20	z s		M
+f102r_L20	21	3 s o o d		M
+f102r_L20	22	tz g		M
+f102r_L20	23	-		M
+f102r_L20	24	m		M
+f102r_L20	25	-		M
+f102r_L20	26	R		M
+f102r_L20	27	d		M
+f102r_L20	28	tz		M
+f102r_L20	29	m p		M
+f102r_L20	30	-		M
+f102r_L20	31	m		M
+f102r_L20	32	-		M
+f102r_L20	33	o o		M
+f102r_L20	34	-		M
+f102r_L20	35	-		M
+f102r_L20	36	-		M
+f102r_L20	37	-		M
+f102r_L20	38	-		M
+f102r_L24	1	tz m p		M
+f102r_L24	2	-		M
+f102r_L24	3	tz		M
+f102r_L24	4	tz		M
+f102r_L24	5	-		M
+f102r_L24	6	m		M
+f102r_L24	7	-		M
+f102r_L24	8	-		M
+f102r_L24	9	-		M
+f102r_L24	10	-		M
+f102r_L24	11	-		M
+f102r_L24	12	y		M
+f102r_L24	13	-		M
+f102r_L24	14	y		M
+f102r_L24	15	-		M
+f102r_L24	16	-		M
+f102r_L24	17	-		M
+f102r_L24	18	-		M
+f102r_L24	19	-		M
+f102r_L24	20	-		M
+f102r_L24	21	-		M
+f102r_L24	22	-		M
+f102r_L24	23	-		M
+f102r_L24	24	-		M
+f102r_L24	25	-		M
+f102r_L24	26	-		M
+f102r_L24	27	-		M
+f102r_L24	28	-		M
+f102r_L24	29	-		M
+f102r_L24	30	-		M
+f102r_L24	31	-		M
+f102r_L24	32	-		M
+f102r_L24	33	-		M
+f102r_L24	34	-		M
+f102r_L24	35	-		M
+f102r_L24	36	-		M
+f102r_L24	37	-		M
+f102r_L24	38	-		M
+f102r_L24	39	-		M
+f102r_L24	40	-		M
+f102r_L24	41	-		M
+f102r_L24	42	-		M
+f102r_L24	43	-		M
+f102r_L28	1	-		M
+f102r_L28	2	-		M
+f102r_L28	3	R		M
+f102r_L28	4	y o o z		M
+f102r_L28	5	o		M
+f102r_L28	6	-		M
+f102r_L28	7	d		M
+f102r_L28	8	-		M
+f102r_L28	9	-		M
+f102r_L28	10	o o x d		M
+f102r_L28	11	tz x s o o d tz		M
+f102r_L28	12	-		M
+f102r_L28	13	o o		M
+f102r_L28	14	-		M
+f102r_L28	15	tz		M
+f102r_L28	16	-		M
+f102r_L28	17	tz		M
+f102r_L28	18	-		M
+f102r_L28	19	g		M
+f102r_L28	20	-		M
+f102r_L28	21	-		M
+f102r_L28	22	-		M
+f102r_L28	23	-		M
+f102r_L28	24	-		M
+f102r_L28	25	-		M
+f102r_L28	26	-		M
+f102r_L28	27	-		M
+f102r_L28	28	-		M
+f102r_L28	29	-		M
+f102r_L28	30	-		M
+f102r_L28	31	-		M
+f102r_L28	32	-		M
+f102r_L28	33	-		M
+f102r_L28	34	-		M
+f102r_L28	35	-		M
+f102r_L28	36	-		M
+f102r_L28	37	-		M
+f102r_L28	38	-		M
+f102r_L28	39	-		M
+f102r_L28	40	-		M
+f102r_L28	41	-		M
+f102r_L28	42	-		M
+f102r_L28	43	-		M
+f102r_L28	44	-		M
+f102r_L30	1	-		M
+f102r_L30	2	-		M
+f102r_L30	3	-		M
+f102r_L30	4	-		M
+f102r_L30	5	-		M
+f102r_L30	6	-		M
+f102r_L30	7	-		M
+f102r_L30	8	-		M
+f102r_L30	9	-		M
+f102r_L30	10	-		M
+f102r_L30	11	-		M
+f102r_L30	12	-		M
+f102r_L30	13	-		M
+f102r_L30	14	-		M
+f102r_L30	15	-		M
+f102r_L30	16	-		M
+f102r_L30	17	-		M
+f102r_L30	18	-		M
+f102r_L30	19	-		M
+f102r_L30	20	-		M
+f102r_L30	21	-		M
+f102r_L30	22	-		M
+f102r_L30	23	-		M
+f102r_L30	24	-		M
+f102r_L30	25	-		M
+f102r_L30	26	-		M
+f102r_L30	27	-		M
+f102r_L30	28	-		M
+f102r_L30	29	-		M
+f102r_L30	30	-		M
+f102r_L30	31	-		M
+f102r_L30	32	-		M
+f102r_L30	33	-		M
+f102r_L30	34	-		M
+f102r_L30	35	-		M
+f102r_L30	36	-		M
+f102r_L30	37	-		M
+f102r_L30	38	-		M
+f102r_L30	39	-		M
+f102r_L30	40	-		M
+f102r_L30	41	-		M
+f102r_L30	42	-		M
+f102r_L30	43	-		M
+f102r_L30	44	-		M
+f102r_L30	45	-		M
+f102r_L30	46	-		M
+f102r_L32	1	-		M
+f102r_L32	2	-		M
+f102r_L32	3	-		M
+f102r_L32	4	-		M
+f102r_L32	5	-		M
+f102r_L32	6	-		M
+f102r_L32	7	-		M
+f102r_L32	8	-		M
+f102r_L32	9	-		M
+f102r_L32	10	-		M
+f102r_L32	11	-		M
+f102r_L32	12	-		M
+f102r_L32	13	-		M
+f102r_L32	14	-		M
+f102r_L32	15	-		M
+f102r_L32	16	-		M
+f102r_L32	17	-		M
+f102r_L32	18	-		M
+f102r_L32	19	-		M
+f102r_L32	20	-		M
+f102r_L32	21	-		M
+f102r_L32	22	-		M
+f102r_L32	23	-		M
+f102r_L32	24	-		M
+f102r_L32	25	-		M
+f102r_L32	26	-		M
+f102r_L32	27	-		M
+f102r_L32	28	-		M
+f102r_L32	29	-		M
+f102r_L32	30	-		M
+f102r_L32	31	-		M
+f102r_L32	32	-		M
+f102r_L32	33	-		M
+f102r_L32	34	-		M
+f102r_L32	35	-		M
+f102r_L32	36	-		M
+f102r_L32	37	-		M
+f102r_L32	38	-		M
+f102r_L32	39	-		M
+f102r_L32	40	-		M
+f102r_L32	41	-		M
+f102r_L32	42	-		M
+f102r_L32	43	-		M
+f102r_L32	44	-		M
+f102r_L32	45	-		M
+f102r_L34	1	-		M
+f102r_L34	2	-		M
+f102r_L34	3	-		M
+f102r_L34	4	-		M
+f102r_L34	5	-		M
+f102r_L34	6	-		M
+f102r_L34	7	-		M
+f102r_L34	8	-		M
+f102r_L34	9	-		M
+f102r_L34	10	-		M
+f102r_L34	11	-		M
+f102r_L34	12	-		M
+f102r_L34	13	-		M
+f102r_L34	14	-		M
+f102r_L34	15	-		M
+f102r_L34	16	-		M
+f102r_L34	17	-		M
+f102r_L34	18	-		M
+f102r_L34	19	-		M
+f102r_L34	20	-		M
+f102r_L34	21	-		M
+f102r_L34	22	-		M
+f102r_L34	23	-		M
+f102r_L34	24	-		M
+f102r_L34	25	-		M
+f102r_L34	26	-		M
+f102r_L34	27	-		M
+f102r_L34	28	-		M
+f102r_L34	29	-		M
+f102r_L34	30	-		M
+f102r_L34	31	-		M
+f102r_L34	32	-		M
+f102r_L34	33	-		M
+f102r_L34	34	-		M
+f102r_L34	35	-		M
+f102r_L34	36	-		M
+f102r_L34	37	-		M
+f102r_L36	1	-		M
+f102r_L36	2	-		M
+f102r_L36	3	-		M
+f102r_L36	4	-		M
+f102r_L36	5	-		M
+f102r_L36	6	-		M
+f102r_L36	7	-		M
+f102r_L36	8	-		M
+f102r_L36	9	-		M
+f102r_L36	10	-		M
+f102r_L36	11	-		M
+f102r_L36	12	-		M
+f102r_L36	13	-		M
+f102r_L36	14	-		M
+f102r_L36	15	-		M
+f102r_L36	16	-		M
+f102r_L36	17	-		M
+f102r_L36	18	-		M
+f102r_L36	19	-		M
+f102r_L36	20	-		M
+f102r_L36	21	-		M
+f102r_L36	22	-		M
+f102r_L36	23	-		M
+f102r_L36	24	-		M
+f102r_L36	25	-		M
+f102r_L36	26	-		M
+f102r_L36	27	-		M
+f102r_L36	28	-		M
+f102r_L36	29	-		M
+f102r_L36	30	-		M
+f102r_L36	31	-		M
+f102r_L36	32	-		M
+f102r_L36	33	-		M
+f102r_L36	34	-		M
+f102r_L36	35	-		M
+f102r_L36	36	-		M
+f102r_L36	37	-		M
+f102r_L36	38	-		M
+f102r_L36	39	-		M
+f102r_L36	40	-		M
+f102r_L36	41	-		M
+f102r_L36	42	-		M
+f102r_L36	43	-		M
+f102r_L36	44	-		M
+f102r_L36	45	-		M

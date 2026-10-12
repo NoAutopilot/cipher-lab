@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """TXE4-8 BOX-ANCHOR: build one reader's scratch directory (task.txt, sheet.png, crops) for a pass.
-    python3 build_tasks.py PASS SCRATCH_DIR      PASS one of N1 N2 O1 O2 R1
+    python3 build_tasks.py PASS SCRATCH_DIR [a|b]   PASS one of N1 N2 O1 O2 R1; a = lines L02-L20 (7), b = L24-L36 (6)
 N: the SHEET-VIV task text (benchmark-tx/txeng2/sheetviv/reader_task.txt) with its placeholders filled and the repository
 paths replaced by the scratch copies'. O and R: the same text plus the numbered-box paragraph and the per-box output
 format; R's text is identical to O's. The task text is also written to tasks/<PASS>.txt beside this script (committed).
@@ -31,13 +31,17 @@ Reply with only the number of rows per line.
 """
 
 
-def main(p, scratch):
+HALVES = {'a': LINES[:7], 'b': LINES[7:]}   # declared fallback (PREREG): two calls of 7 and 6 lines
+
+
+def main(p, scratch, half=None):
     arm = p[0]
+    lines = HALVES[half] if half else LINES
     os.makedirs(scratch, exist_ok=True)
     sheet = os.path.join(scratch, 'sign_sheet.png'); shutil.copy(SHEET, sheet)
     crops = os.path.join(scratch, 'crops'); os.makedirs(crops, exist_ok=True)
     files = []
-    for ln in LINES:
+    for ln in lines:
         for seg in ('s1', 's2'):
             f = f'c105_f102r_{ln}_{seg}.jpg'; shutil.copy(os.path.join(IMG, f), os.path.join(crops, f)); files.append(f)
             if arm in 'OR':
@@ -47,7 +51,7 @@ def main(p, scratch):
     txt = txt.replace(os.path.join(ROOT, 'ciphers/fr16104-vivonne-spain-1572/glyphs/sheet_tomokiyo_v1.png'), sheet)
     txt = txt.replace('/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/glyphs/sheet_tomokiyo_v1.png', sheet)
     txt = txt.replace('/home/user/cipher-lab/ciphers/fr16104-vivonne-spain-1572/images/', crops + '/')
-    txt = txt.replace('LINES_HERE', ', '.join(LINES)).replace('FILECOUNT', str(len(files)))
+    txt = txt.replace('LINES_HERE', ', '.join(lines)).replace('FILECOUNT', str(len(files)))
     out_path = os.path.join(scratch, 'read.tsv')
     if arm in 'OR':
         txt = txt.replace('the two files c105_f102r_<line>_s1.jpg then c105_f102r_<line>_s2.jpg (view every one; %d files)' % len(files),
@@ -60,9 +64,9 @@ def main(p, scratch):
     txt = txt.replace('OUTPUT_PATH', out_path)
     assert '/home/user/cipher-lab/ciphers' not in txt and 'benchmark-tx' not in txt, 'repository path left in the task text'
     open(os.path.join(scratch, 'task.txt'), 'w', encoding='utf-8').write(txt)
-    open(os.path.join(HERE, 'tasks', f'{p}.txt'), 'w', encoding='utf-8').write(txt.replace(scratch, '<SCRATCH>'))
+    open(os.path.join(HERE, 'tasks', f'{p}{half or ""}.txt'), 'w', encoding='utf-8').write(txt.replace(scratch, '<SCRATCH>'))
     print(p, scratch, len(files), 'images; task', len(txt), 'chars')
 
 
 if __name__ == '__main__':
-    main(sys.argv[1], sys.argv[2])
+    main(sys.argv[1], sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None)
