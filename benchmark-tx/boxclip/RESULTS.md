@@ -95,3 +95,51 @@ small-box baseline: recall 0.818, false-alarm 0.545, balanced accuracy 0.636.
 
 IoU on the 0 flagged positives: machine nan, grown nan.
 
+## Sensitivity (not the test)
+
+Nothing below changes the verdict above: the registered threshold is 25%. The table only shows how the pooled numbers move if the outside-ink threshold were 15% or 35% (all else frozen), plus one exploratory IoU variant (the grown box united with the machine box). None of the three thresholds meets the recall (>= 0.70), balanced-accuracy-margin (>= +0.10) or IoU-gain (>= +0.15) line.
+
+| outside-ink threshold | recall | false-alarm | balanced acc | small-box BA | IoU gain (grown vs machine) | IoU gain (grown united with machine) | p (pooled shuffle) |
+|---|---|---|---|---|---|---|---|
+| 0.15 | 0.465 | 0.381 | 0.542 | 0.552 | -0.020 | -0.006 | 0.3615 |
+| 0.25 (registered) | 0.419 | 0.381 | 0.519 | 0.552 | -0.017 | -0.006 | 0.4970 |
+| 0.35 | 0.395 | 0.333 | 0.531 | 0.552 | -0.017 | -0.006 | 0.4257 |
+
+## Diagnostics (not the test)
+
+Written after the verdict above was committed (`diagnostics.py`). It explains the FAIL; it changes no threshold and proposes none.
+
+| sorter | positives | owner box leaves the page image (registered diagnostic) | owner growth that lies inside another machine box: median share of (owner box minus machine box) | positives whose growth is more than half inside other machine boxes |
+|---|---|---|---|---|
+| modena | 21 | 0 | 0.00 (n=21 with growth) | 0 |
+| matignon | 22 | 0 | 0.33 (n=22 with growth) | 6 |
+
+| sorter | positives: median outside_frac | negatives: median outside_frac | rank AUC (0.5 = no separation) | boxes with outside_frac > 0 |
+|---|---|---|---|---|
+| modena | 0.530 | 0.638 | 0.405 | 31 of 31 |
+| matignon | 0.000 | 0.000 | 0.500 | 0 of 33 |
+| pooled | 0.000 | 0.000 | 0.484 | 31 of 64 |
+
+| sorter | flagged boxes | median grown area / machine area | median grown width / machine width | median grown height / machine height |
+|---|---|---|---|---|
+| modena | 26 | 2.79 | 2.42 | 1.15 |
+| matignon | 0 | - | - | - |
+
+Exploratory, not registered: the same frozen check with each labelled box alone on its page (the neighbour rule off, so a neighbour's joined ink counts as outside).
+
+| sorter | flagged positives | flagged negatives | recall | false-alarm | balanced acc | rank AUC of outside_frac | median outside_frac, positives / negatives |
+|---|---|---|---|---|---|---|---|
+| modena | 19 of 21 | 9 of 10 | 0.905 | 0.900 | 0.502 | 0.414 | 0.535 / 0.638 |
+| matignon | 11 of 22 | 0 of 11 | 0.500 | 0.000 | 0.750 | 0.795 | 0.260 / 0.000 |
+
+## Step 3 (live flags): not run
+
+The pooled gate FAILED, so the frozen check was not run over the live sorter pages (Matignon f.110, Pisany, Vivonne, Oldenbarnevelt, Baluze). `live_flags.tsv` was not written and no sorter page or labels file was touched.
+
+## Reading (hand-written after the diagnostics; re-running `diagnostics.py` removes this section)
+
+- **Registered result: FAIL on every line.** Recall 0.419 (18 of 43), false-alarm 0.381 (8 of 21), balanced accuracy 0.519 against the small-box baseline's 0.552, permutation p 0.497 (0.531 within sorter), median IoU gain -0.017 (the grown box is slightly worse than the machine box). The trivial small-box rule beats it.
+- **Modena:** the check flags 26 of 31 boxes. Every one of the 31 has connected ink outside it (median outside share 0.53 on re-cut boxes, 0.64 on boxes the owner left; rank AUC 0.405, i.e. no separation and if anything backwards), because the g/q signs sit in running text and their ink joins unboxed neighbouring letters (limitation i, stated before scoring). Grown boxes are 2.4 x wider than the machine boxes they replace.
+- **Matignon:** 0 of 33 flagged, outside share exactly 0 for all 33. Registered rules 5-7 take out every pixel inside a neighbouring tile; the tiles abut along the strip and the owner's additions lie partly under the next tile (median 33% of the area he added, more than half for 6 of 22 re-cut boxes). Taking neighbour-box pixels out of the "outside ink" count was a detail chosen in the pre-registration, not in the brief's wording.
+- **Exploratory, not registered, seen only after the verdict:** with the neighbour rule off, Matignon flags 11 of 22 re-cut boxes and 0 of 11 checked boxes (balanced accuracy 0.750, rank AUC 0.795) while Modena stays saturated (19 of 21 and 9 of 10). That is a lead for a second, re-registered test on labels not used here (these 64 boxes have now been seen), not a result of this one.
+- The verdict stands: FAIL as registered.
