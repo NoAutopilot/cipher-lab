@@ -1,11 +1,11 @@
 """TXE4-9 (copied from benchmark-tx/txeng3/8/access_log.py, own-dir patterns changed): tool-call file-access log of every reader / adjudicator subagent of THIS
 session, from ~/.claude/projects/-home-user-cipher-lab/<session>/subagents/agent-*.jsonl. One row per tool call. A call is ok when every
 path it names lies inside the call's own scratch dir (r/P1_C1, P1_F, P1_C, P2_C1, P2_F, P2_C: task.txt, calib/ crops, target/ crops,
-calib_read.tsv, feedback.tsv, its own read.tsv/out.tsv and enlarged copies it writes there) and no listing/reading shell verb is used; anything else prints OUTSIDE. Usage: python3 access_log.py > access_log.tsv"""
+calib_read.tsv, feedback.tsv, its own read.tsv/out.tsv and any enlarged copies it writes in a subfolder there) and no listing/reading shell verb is used; anything else prints OUTSIDE. Usage: python3 access_log.py > access_log.tsv"""
 import glob, json, os, re, sys
 S = glob.glob(os.path.expanduser('~/.claude/projects/-home-user-cipher-lab/ae519605-840c-5c61-aa64-731ffc406914/subagents/agent-*.jsonl'))
-OWNDIR = re.compile(r'scratchpad/(r)/(P[12]_(?:C1|F|C))/?(calib|target)?/?$')
-OWN = re.compile(r'scratchpad/(r)/(P[12]_(?:C1|F|C))/(?:(?:calib|target)/)?(task\.txt|read\.tsv|out\.tsv|calib_read\.tsv|feedback\.tsv|files\.txt|f98v_L0[1-6]_s[12]\S*\.(?:jpg|png)|f113e?_L0[2-9]\S*\.(?:jpg|png)|f89_L(?:0[1-9]|1[0-4])\S*\.(?:jpg|png)|[\w.-]+\.(?:png|jpg))$')
+OWNDIR = re.compile(r'scratchpad/(r)/(P[12]_(?:C1|F|C))/?(?:[\w.-]+/?)*$')
+OWN = re.compile(r'scratchpad/(r)/(P[12]_(?:C1|F|C))/(?:[\w.-]+/)*(task\.txt|read\.tsv|out\.tsv|calib_read\.tsv|feedback\.tsv|files\.txt|f98v_L0[1-6]_s[12]\S*\.(?:jpg|png)|f113e?_L0[2-9]\S*\.(?:jpg|png)|f89_L(?:0[1-9]|1[0-4])\S*\.(?:jpg|png)|[\w.-]+\.(?:png|jpg))$')
 print('agent\tcall\ttool\ttarget\tok'); bad = 0
 for f in sorted(S, key=os.path.getmtime):
     aid = os.path.basename(f)[6:-6]; label = '?'; rows = []
