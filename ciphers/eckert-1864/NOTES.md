@@ -7174,3 +7174,26 @@ Read so far: as ECK-GP13B; Grant Papers vol. 13 searched for E589 only (not loca
 - [x] retry: googleapis 503 on the control, one retry after a 60 s pause, 503 again, stopped per rule (ECK-GP13C).
 Verdict: keep going: 2 internal gaps; cheapest next: the keyed googleapis pass for Grant Papers vol. 13 from the control, ~$0.1
 
+
+## ECK-GP13D (12 Oct 2026, account 1, for LANE DEFAULT-A1-1840)
+
+Brief: ECK-GP13C Remaining gaps items 1 and 2. Intake gate (18:50 UTC): `eckert-1864: partial (line 3)`, exit 0. Check 1: no later section than ECK-GP13C ran either unit; `grep 5914 LOCAL-QUEUE.tsv` found no row before this job.
+
+**Unit 1 (no host).** `tools/key_livecheck.py` IA line (18:57 UTC): `Internet Archive login (archive.org xauthn) | yes | n/a | not attempted -- presence by default`. Appended LOCAL-QUEUE.tsv row L79 (`books-page-read`, `queued`): a person reads, in the IA reader, the printed page of 5914/2 (Grant to Ord, 10.00 a.m.) in `papersofulyssess0014gran` at the 'Gordon's Commission' note and records volume, page and printed text. A script cannot: lending-only copy, obfuscated page images, be-api gives no page.
+
+**Unit 2 (googleapis).** Probe 1, control E531 (`"six vessels" Oriental intitle:Grant`, keyed, `country=US`, one request): 18:58:51 UTC HTTP 503. Non-test: googleapis 503 at 18:58 UTC; the unit stopped per the job's rule (either probe not 200), no second probe and no target query (E590, E591, E592, looser E589) run. No row record, AUDIT or N-class edited. **Requests:** www.googleapis.com 1 (503); no other host.
+
+## Remaining gaps (ECK-GP13D, 12 Oct 2026)
+Read so far: as ECK-GP13C.
+- Grant Papers vol. 13 (2-20 Feb 1865) for E590 E591 E592, and a looser E589 query (`Monohansett Monroe`) - blocker: not-attempted; googleapis answered 503 to the control itself again on 12 Oct (18:58 UTC, after 06:18-06:57 UTC in ECK-GP13B/C); next: re-run the same sliced list once the control answers 200, ~$0.1
+- The printed page of 5914/2 in Grant Papers vol. 14 (Grant to Ord, 10.00 a.m.) - blocker: waiting-on LOCAL-QUEUE L79; be-api gives no page and the IA copy is lending-only (obfuscated to scripts); next: a person reads the page in the IA reader at the 'Gordon's Commission' note (L79, queued), ~$0.05
+
+## Escalation (ECK-GP13D, 12 Oct 2026)
+- [x] siblings: as ECK-GP13B.
+- [x] clear-pages: as ECK-GP13B.
+- [x] known-keys: as ECK-GP13B.
+- [ ] print: Grant Papers 13 by Google Books: E590-E592 and looser E589 still to run (gap above); 5914/2's page waits on L79.
+- [n/a] key-rebuild: no key row edited in this pass.
+- [x] image-check: as ECK-GP13B.
+- [x] retry: googleapis 503 on the control at 18:58 UTC, stopped per the job's rule (ECK-GP13D).
+Verdict: keep going: 1 internal gap; cheapest next: the keyed googleapis pass for Grant Papers vol. 13 from the control, ~$0.1 (the 5914/2 page waits on L79)
