@@ -1,0 +1,64 @@
+no87_passA	real	T90/T53		0	0	1.0	0	0	1.0	0.048 (18/376) | 0.008 (3/376)	no
+no87_passA	real	T76/T45		0	1	1.0	0	1	1.0	0.051 (19/376) | 0.011 (4/376)	yes
+no87_passA	real	ALL/ALL	69	0	1	1.0	0	1	1.0	0.051 (19/376) | 0.011 (4/376)	no
+no87_passA	ctrl1f	T90/T53		1	10	0.0117	0	10	0.002	0.072 (27/376) | 0.037 (14/376)	no
+no87_passA	ctrl1f	T76/T45		0	15	0.0001	0	15	0.0001	0.090 (34/376) | 0.051 (19/376)	yes
+no87_passA	ctrl1f	ALL/ALL	69	1	25	0.0	0	25	0.0	0.114 (43/376) | 0.080 (30/376)	no
+no87_passA	ctrl2f	T90/T53		1	13	0.0018	0	13	0.0002	0.080 (30/376) | 0.045 (17/376)	no
+no87_passA	ctrl2f	T76/T45		0	16	0.0	0	16	0.0	0.093 (35/376) | 0.053 (20/376)	yes
+no87_passA	ctrl2f	ALL/ALL	69	1	29	0.0	0	29	0.0	0.125 (47/376) | 0.090 (34/376)	no
+no87_passA	ctrl3f	T90/T53		1	9	0.0215	0	9	0.0039	0.069 (26/376) | 0.035 (13/376)	no
+no87_passA	ctrl3f	T76/T45		0	13	0.0002	0	13	0.0002	0.085 (32/376) | 0.048 (18/376)	yes
+no87_passA	ctrl3f	ALL/ALL	69	1	22	0.0	0	22	0.0	0.106 (40/376) | 0.074 (28/376)	no
+no87_passA	ctrl4f	T90/T53		1	11	0.0063	0	11	0.001	0.074 (28/376) | 0.040 (15/376)	no
+no87_passA	ctrl4f	T76/T45		0	16	0.0	0	16	0.0	0.093 (35/376) | 0.056 (21/376)	yes
+no87_passA	ctrl4f	ALL/ALL	69	1	27	0.0	0	27	0.0	0.120 (45/376) | 0.088 (33/376)	no
+no87_passA	ctrl5f	T90/T53		0	11	0.001	0	11	0.001	0.077 (29/376) | 0.037 (14/376)	no
+no87_passA	ctrl5f	T76/T45		0	13	0.0002	0	13	0.0002	0.085 (32/376) | 0.045 (17/376)	yes
+no87_passA	ctrl5f	ALL/ALL	69	0	24	0.0	0	24	0.0	0.114 (43/376) | 0.074 (28/376)	no
+no87_passA	rev	T90/T53		1	24	0.0	0	24	0.0	0.109 (41/376) | 0.074 (28/376)	no
+no87_passA	rev	T76/T45		0	35	0.0	0	35	0.0	0.152 (57/376) | 0.114 (43/376)	yes
+no87_passA	rev	ALL/ALL	69	1	59	0.0	0	59	0.0	0.213 (80/376) | 0.181 (68/376)	no
+no87_L	real	T90/T53		0	0	1.0	0	0	1.0	0.040 (15/376) | 0.000 (0/376)	no
+no87_L	real	T76/T45		0	1	1.0	0	1	1.0	0.043 (16/376) | 0.003 (1/376)	yes
+no87_L	real	ALL/ALL	68	0	1	1.0	0	1	1.0	0.043 (16/376) | 0.003 (1/376)	no
+f152r_passA	real	T90/T53		0	0	1.0	0	0	1.0	0.082 (6/73) | 0.055 (4/73)	yes
+f152r_passA	real	T76/T45		0	0	1.0	0	0	1.0	0.082 (6/73) | 0.055 (4/73)	yes
+f152r_passA	real	ALL/ALL	8	0	0	1.0	0	0	1.0	0.082 (6/73) | 0.055 (4/73)	no
+f152r_passA	ctrl1f	T90/T53		0	0	1.0	0	0	1.0	0.082 (6/73) | 0.055 (4/73)	yes
+f152r_passA	ctrl1f	T76/T45		0	0	1.0	0	0	1.0	0.082 (6/73) | 0.055 (4/73)	yes
+f152r_passA	ctrl1f	ALL/ALL	8	0	0	1.0	0	0	1.0	0.082 (6/73) | 0.055 (4/73)	no
+f152r_passA	ctrl2f	T90/T53		0	2	0.5	0	2	0.5	0.110 (8/73) | 0.082 (6/73)	yes
+f152r_passA	ctrl2f	T76/T45		0	0	1.0	0	0	1.0	0.082 (6/73) | 0.055 (4/73)	yes
+f152r_passA	ctrl2f	ALL/ALL	8	0	2	0.5	0	2	0.5	0.110 (8/73) | 0.082 (6/73)	no
+f152r_passA	ctrl3f	T90/T53		0	2	0.5	0	2	0.5	0.110 (8/73) | 0.082 (6/73)	yes
+f152r_passA	ctrl3f	T76/T45		0	1	1.0	0	1	1.0	0.096 (7/73) | 0.069 (5/73)	yes
+f152r_passA	ctrl3f	ALL/ALL	8	0	3	0.25	0	3	0.25	0.123 (9/73) | 0.096 (7/73)	no
+f152r_passA	ctrl4f	T90/T53		0	3	0.25	0	3	0.25	0.123 (9/73) | 0.096 (7/73)	yes
+f152r_passA	ctrl4f	T76/T45		0	1	1.0	0	1	1.0	0.096 (7/73) | 0.069 (5/73)	yes
+f152r_passA	ctrl4f	ALL/ALL	8	0	4	0.125	0	4	0.125	0.137 (10/73) | 0.110 (8/73)	no
+f152r_passA	ctrl5f	T90/T53		0	3	0.25	0	3	0.25	0.123 (9/73) | 0.096 (7/73)	yes
+f152r_passA	ctrl5f	T76/T45		0	1	1.0	0	1	1.0	0.096 (7/73) | 0.069 (5/73)	yes
+f152r_passA	ctrl5f	ALL/ALL	8	0	4	0.125	0	4	0.125	0.137 (10/73) | 0.110 (8/73)	no
+f152r_passA	rev	T90/T53		0	3	0.25	0	3	0.25	0.123 (9/73) | 0.096 (7/73)	yes
+f152r_passA	rev	T76/T45		0	1	1.0	0	1	1.0	0.096 (7/73) | 0.069 (5/73)	yes
+f152r_passA	rev	ALL/ALL	8	0	4	0.125	0	4	0.125	0.137 (10/73) | 0.110 (8/73)	no
+f152r_Z	real	T90/T53		0	0	1.0	0	0	1.0	0.069 (5/73) | 0.014 (1/73)	yes
+f152r_Z	real	T76/T45		0	0	1.0	0	0	1.0	0.069 (5/73) | 0.014 (1/73)	yes
+f152r_Z	real	ALL/ALL	8	0	0	1.0	0	0	1.0	0.069 (5/73) | 0.014 (1/73)	no
+POOLED passA [as measured]: fixed 0 broken 1 net -1 exact p 1.0000
+POOLED L [as measured]: fixed 0 broken 1 net -1 exact p 1.0000
+CONTROL ctrl1f pooled [meas]: fixed 0 broken 15 net -15
+CONTROL ctrl2f pooled [meas]: fixed 0 broken 18 net -18
+CONTROL ctrl3f pooled [meas]: fixed 0 broken 16 net -16
+CONTROL ctrl4f pooled [meas]: fixed 0 broken 20 net -20
+CONTROL ctrl5f pooled [meas]: fixed 0 broken 17 net -17
+CONTROL rev pooled [meas]: fixed 0 broken 39 net -39
+POOLED passA [flagged excluded]: fixed 0 broken 1 net -1 exact p 1.0000
+POOLED L [flagged excluded]: fixed 0 broken 1 net -1 exact p 1.0000
+CONTROL ctrl1f pooled [flag]: fixed 0 broken 15 net -15
+CONTROL ctrl2f pooled [flag]: fixed 0 broken 18 net -18
+CONTROL ctrl3f pooled [flag]: fixed 0 broken 16 net -16
+CONTROL ctrl4f pooled [flag]: fixed 0 broken 20 net -20
+CONTROL ctrl5f pooled [flag]: fixed 0 broken 17 net -17
+CONTROL rev pooled [flag]: fixed 0 broken 39 net -39
