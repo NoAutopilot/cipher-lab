@@ -1,0 +1,11 @@
+agent-a12b43f8be892191e api_calls 6 {'input_tokens': 12, 'cache_creation_input_tokens': 90610, 'cache_read_input_tokens': 588146, 'output_tokens': 187} input_all 678768
+agent-a336d0bc219b93f5c api_calls 4 {'input_tokens': 8, 'cache_creation_input_tokens': 82772, 'cache_read_input_tokens': 357247, 'output_tokens': 50} input_all 440027
+agent-a4bcd9b5c5895fa2b api_calls 4 {'input_tokens': 8, 'cache_creation_input_tokens': 83198, 'cache_read_input_tokens': 356547, 'output_tokens': 67} input_all 439753
+agent-a51d5099182b145b4 api_calls 4 {'input_tokens': 8, 'cache_creation_input_tokens': 82989, 'cache_read_input_tokens': 357260, 'output_tokens': 64} input_all 440257
+agent-a719cb2ecda8b54ca api_calls 8 {'input_tokens': 16, 'cache_creation_input_tokens': 97213, 'cache_read_input_tokens': 852227, 'output_tokens': 79} input_all 949456
+agent-a83486504799f284a api_calls 5 {'input_tokens': 10, 'cache_creation_input_tokens': 131540, 'cache_read_input_tokens': 443055, 'output_tokens': 725} input_all 574605
+agent-a8f5ac7a4f09b8d28 api_calls 6 {'input_tokens': 12, 'cache_creation_input_tokens': 94602, 'cache_read_input_tokens': 589968, 'output_tokens': 738} input_all 684582
+agent-ac4abe769d8f4327c api_calls 6 {'input_tokens': 12, 'cache_creation_input_tokens': 95455, 'cache_read_input_tokens': 591802, 'output_tokens': 834} input_all 687269
+agent-acb2ea759aef16ef9 api_calls 8 {'input_tokens': 16, 'cache_creation_input_tokens': 145114, 'cache_read_input_tokens': 864392, 'output_tokens': 806} input_all 1009522
+agent-ae8205b074b03bc08 api_calls 6 {'input_tokens': 12, 'cache_creation_input_tokens': 91746, 'cache_read_input_tokens': 589647, 'output_tokens': 1647} input_all 681405
+agent-afa22cba630731713 api_calls 4 {'input_tokens': 8, 'cache_creation_input_tokens': 85543, 'cache_read_input_tokens': 356630, 'output_tokens': 52} input_all 442181

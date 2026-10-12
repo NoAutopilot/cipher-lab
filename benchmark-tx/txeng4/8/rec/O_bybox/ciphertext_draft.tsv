@@ -1,0 +1,570 @@
+line	position	sign	confidence	alt	why
+f102r_L02	1	p	M		agree-flagged
+f102r_L02	2	#	M		agree-flagged
+f102r_L02	3	P	M		agree-flagged
+f102r_L02	4	r y	M	B:y	differ
+f102r_L02	5	m	M		agree-flagged
+f102r_L02	6	a	M		agree-flagged
+f102r_L02	7	g l	M	B:g o	differ
+f102r_L02	8	t p	M		agree-flagged
+f102r_L02	9	x	M		agree-flagged
+f102r_L02	10	s	M		agree-flagged
+f102r_L02	11	p	M		agree-flagged
+f102r_L02	12	d	M		agree-flagged
+f102r_L02	13	p	M		agree-flagged
+f102r_L02	14	o o	M		agree-flagged
+f102r_L02	15	j	M		agree-flagged
+f102r_L02	16	R	M		agree-flagged
+f102r_L02	17	m	M		agree-flagged
+f102r_L02	18	x	M		agree-flagged
+f102r_L02	19	o	M		agree-flagged
+f102r_L02	20	g	M	B:m g	differ
+f102r_L02	21	s	M		agree-flagged
+f102r_L02	22	p	M		agree-flagged
+f102r_L02	23	:	M		agree-flagged
+f102r_L02	24	NONE	L		agree-flagged
+f102r_L02	25	m	M		agree-flagged
+f102r_L02	26	p	M		agree-flagged
+f102r_L02	27	m	M		agree-flagged
+f102r_L02	28	g	M		agree-flagged
+f102r_L02	29	m	M		agree-flagged
+f102r_L02	30	Z	M	B:z	differ
+f102r_L02	31	m	M		agree-flagged
+f102r_L02	32	f	M		agree-flagged
+f102r_L02	33	R	M		agree-flagged
+f102r_L02	34	tz	M		agree-flagged
+f102r_L02	35	NONE	L		agree-flagged
+f102r_L02	36	m	M		agree-flagged
+f102r_L02	37	a	M		agree-flagged
+f102r_L02	38	NONE	M	B:m	differ
+f102r_L02	39	m	M		agree-flagged
+f102r_L02	40	p	M		agree-flagged
+f102r_L02	41	d	M		agree-flagged
+f102r_L02	42	m	M		agree-flagged
+f102r_L02	43	d	M		agree-flagged
+f102r_L02	44	tz	M		agree-flagged
+f102r_L02	45	x	M		agree-flagged
+f102r_L02	46	s	M		agree-flagged
+f102r_L02	47	o o	M		agree-flagged
+f102r_L02	48	m	M		agree-flagged
+f102r_L02	49	:	M		agree-flagged
+f102r_L02	50	NONE	L		agree-flagged
+f102r_L02	51	to	M		agree-flagged
+f102r_L02	52	Z	M		agree-flagged
+f102r_L04	1	m	M		agree-flagged
+f102r_L04	2	p	M	B:NONE	differ
+f102r_L04	3	p	M		agree-flagged
+f102r_L04	4	y	M		agree-flagged
+f102r_L04	5	m	M	B:NONE	differ
+f102r_L04	6	n	M	B:m	differ
+f102r_L04	7	g	M		agree-flagged
+f102r_L04	8	s	M		agree-flagged
+f102r_L04	9	tz	M		agree-flagged
+f102r_L04	10	:	M		agree-flagged
+f102r_L04	11	:	M	B:NONE	differ
+f102r_L04	12	#	M		agree-flagged
+f102r_L04	13	3	M		agree-flagged
+f102r_L04	14	m	M		agree-flagged
+f102r_L04	15	y	M		agree-flagged
+f102r_L04	16	s g	M		agree-flagged
+f102r_L04	17	m	M		agree-flagged
+f102r_L04	18	d	M		agree-flagged
+f102r_L04	19	p	M		agree-flagged
+f102r_L04	20	d	M		agree-flagged
+f102r_L04	21	tz	M		agree-flagged
+f102r_L04	22	tz	M		agree-flagged
+f102r_L04	23	s	M		agree-flagged
+f102r_L04	24	#	M		agree-flagged
+f102r_L04	25	tz	M		agree-flagged
+f102r_L04	26	d	M		agree-flagged
+f102r_L04	27	p	M		agree-flagged
+f102r_L04	28	3	M		agree-flagged
+f102r_L04	29	o o	M		agree-flagged
+f102r_L04	30	p	M		agree-flagged
+f102r_L04	31	3	M		agree-flagged
+f102r_L04	32	g	M	B:d g	differ
+f102r_L04	33	s	M		agree-flagged
+f102r_L04	34	t	M		agree-flagged
+f102r_L04	35	4	M		agree-flagged
+f102r_L04	36	m	M		agree-flagged
+f102r_L04	37	m	M		agree-flagged
+f102r_L04	38	#	M		agree-flagged
+f102r_L04	39	y	M		agree-flagged
+f102r_L04	40	m	M		agree-flagged
+f102r_L04	41	x	M		agree-flagged
+f102r_L04	42	d tz	M		agree-flagged
+f102r_L04	43	NONE	L		agree-flagged
+f102r_L04	44	m	M		agree-flagged
+f102r_L04	45	p	M		agree-flagged
+f102r_L04	46	d	M		agree-flagged
+f102r_L08	1	m	M		agree-flagged
+f102r_L08	2	#	M		agree-flagged
+f102r_L08	3	y	M		agree-flagged
+f102r_L08	4	o o	M		agree-flagged
+f102r_L08	5	3	M	B:z	differ
+f102r_L08	6	s	M		agree-flagged
+f102r_L08	7	o o	M		agree-flagged
+f102r_L08	8	g	M		agree-flagged
+f102r_L08	9	d	M		agree-flagged
+f102r_L08	10	tz	M		agree-flagged
+f102r_L08	11	m p	M		agree-flagged
+f102r_L08	12	S	M		agree-flagged
+f102r_L08	13	tz	M		agree-flagged
+f102r_L08	14	m p	M		agree-flagged
+f102r_L08	15	R	M	B:y	differ
+f102r_L08	16	d	M		agree-flagged
+f102r_L08	17	x	M		agree-flagged
+f102r_L08	18	#	M		agree-flagged
+f102r_L08	19	y	M	B:-	gap
+f102r_L08	20	s	M	B:-	gap
+f102r_L08	21	g	M	B:-	gap
+f102r_L08	22	tz	M	B:-	gap
+f102r_L08	23	p	M	B:-	gap
+f102r_L08	24	3	M	B:-	gap
+f102r_L08	25	m	M	B:-	gap
+f102r_L08	26	y	M	B:-	gap
+f102r_L08	27	m	M	B:-	gap
+f102r_L08	28	o o g x	M	B:-	gap
+f102r_L08	29	m	M	B:-	gap
+f102r_L08	30	L	M	B:-	gap
+f102r_L08	31	p	M	B:-	gap
+f102r_L08	32	m	M	B:-	gap
+f102r_L08	33	z	M	B:-	gap
+f102r_L08	34	tz	M	B:-	gap
+f102r_L08	35	a	M	B:-	gap
+f102r_L08	36	m	M	B:-	gap
+f102r_L08	37	# g	M	B:-	gap
+f102r_L08	38	7	M	B:-	gap
+f102r_L10	1	NONE	L		agree-flagged
+f102r_L10	2	y	M		agree-flagged
+f102r_L10	3	m	M		agree-flagged
+f102r_L10	4	n	M	B:NONE	differ
+f102r_L10	5	x	M		agree-flagged
+f102r_L10	6	s	M		agree-flagged
+f102r_L10	7	h	M		agree-flagged
+f102r_L10	8	o o	M		agree-flagged
+f102r_L10	9	NONE	L		agree-flagged
+f102r_L10	10	tz	M		agree-flagged
+f102r_L10	11	x	M		agree-flagged
+f102r_L10	12	k	M		agree-flagged
+f102r_L10	13	m	M		agree-flagged
+f102r_L10	14	y	M		agree-flagged
+f102r_L10	15	s	M		agree-flagged
+f102r_L10	16	x #	M	B:{double cross}	differ
+f102r_L10	17	{ampersand}	M		agree-flagged
+f102r_L10	18	g	M	B:c g	differ
+f102r_L10	19	tz p	M		agree-flagged
+f102r_L10	20	d	M		agree-flagged
+f102r_L10	21	m	M		agree-flagged
+f102r_L10	22	3	M		agree-flagged
+f102r_L10	23	m	M		agree-flagged
+f102r_L10	24	6 s	M		agree-flagged
+f102r_L10	25	d	M		agree-flagged
+f102r_L10	26	H	M		agree-flagged
+f102r_L10	27	:	M		agree-flagged
+f102r_L10	28	y	M		agree-flagged
+f102r_L10	29	m	M		agree-flagged
+f102r_L10	30	n o	M		agree-flagged
+f102r_L10	31	3	M		agree-flagged
+f102r_L10	32	j	M		agree-flagged
+f102r_L10	33	R	M		agree-flagged
+f102r_L10	34	m	M		agree-flagged
+f102r_L10	35	#	M		agree-flagged
+f102r_L10	36	s g	M		agree-flagged
+f102r_L10	37	NONE	L		agree-flagged
+f102r_L10	38	y	M		agree-flagged
+f102r_L10	39	m	M		agree-flagged
+f102r_L10	40	z	M	B:Z	differ
+f102r_L16	1	y	M		agree-flagged
+f102r_L16	2	s	M		agree-flagged
+f102r_L16	3	g	M		agree-flagged
+f102r_L16	4	m	M		agree-flagged
+f102r_L16	5	y	M		agree-flagged
+f102r_L16	6	s	M		agree-flagged
+f102r_L16	7	#	M		agree-flagged
+f102r_L16	8	tz	M		agree-flagged
+f102r_L16	9	d	M		agree-flagged
+f102r_L16	10	p	M		agree-flagged
+f102r_L16	11	Z	M		agree-flagged
+f102r_L16	12	s	M		agree-flagged
+f102r_L16	13	o o	M		agree-flagged
+f102r_L16	14	d	M		agree-flagged
+f102r_L16	15	tz	M		agree-flagged
+f102r_L16	16	#	M		agree-flagged
+f102r_L16	17	c	M		agree-flagged
+f102r_L16	18	6	M		agree-flagged
+f102r_L16	19	m	M		agree-flagged
+f102r_L16	20	o o	M		agree-flagged
+f102r_L16	21	s	M		agree-flagged
+f102r_L16	22	d	M		agree-flagged
+f102r_L16	23	b	M	B:6	differ
+f102r_L16	24	z	M	B:3	differ
+f102r_L16	25	m	M		agree-flagged
+f102r_L16	26	L	M	B:V	differ
+f102r_L16	27	o o	M		agree-flagged
+f102r_L16	28	d	M		agree-flagged
+f102r_L16	29	z	M	B:3	differ
+f102r_L16	30	m g	M		agree-flagged
+f102r_L16	31	m	M		agree-flagged
+f102r_L16	32	NONE	L		agree-flagged
+f102r_L16	33	#	M		agree-flagged
+f102r_L16	34	m	M		agree-flagged
+f102r_L16	35	c	M		agree-flagged
+f102r_L16	36	tz m	M		agree-flagged
+f102r_L16	37	:	M		agree-flagged
+f102r_L16	38	d	M		agree-flagged
+f102r_L16	39	o o	M		agree-flagged
+f102r_L16	40	4	M	B:t	differ
+f102r_L16	41	L	M	B:V	differ
+f102r_L16	42	d	M		agree-flagged
+f102r_L16	43	tz d	M	B:tz Z	differ
+f102r_L16	44	d	M		agree-flagged
+f102r_L16	45	b	M	B:6	differ
+f102r_L18	1	d	M		agree-flagged
+f102r_L18	2	tz	M		agree-flagged
+f102r_L18	3	#	M		agree-flagged
+f102r_L18	4	# g	M		agree-flagged
+f102r_L18	5	m	M		agree-flagged
+f102r_L18	6	x	M		agree-flagged
+f102r_L18	7	s	M		agree-flagged
+f102r_L18	8	z	M		agree-flagged
+f102r_L18	9	d	M		agree-flagged
+f102r_L18	10	m	M		agree-flagged
+f102r_L18	11	3	M		agree-flagged
+f102r_L18	12	m	M		agree-flagged
+f102r_L18	13	y	M		agree-flagged
+f102r_L18	14	s	M		agree-flagged
+f102r_L18	15	S d	M		agree-flagged
+f102r_L18	16	o o	M		agree-flagged
+f102r_L18	17	p	M		agree-flagged
+f102r_L18	18	m	M		agree-flagged
+f102r_L18	19	tz p	M	B:tz	differ
+f102r_L18	20	p	M		agree-flagged
+f102r_L18	21	g	M		agree-flagged
+f102r_L18	22	d	M		agree-flagged
+f102r_L18	23	g	M		agree-flagged
+f102r_L18	24	NONE	L		agree-flagged
+f102r_L18	25	z	M		agree-flagged
+f102r_L18	26	s	M		agree-flagged
+f102r_L18	27	#	M		agree-flagged
+f102r_L18	28	tz	M		agree-flagged
+f102r_L18	29	d	M		agree-flagged
+f102r_L18	30	p	M		agree-flagged
+f102r_L18	31	NONE	L		agree-flagged
+f102r_L18	32	c	M		agree-flagged
+f102r_L18	33	tz	M		agree-flagged
+f102r_L18	34	m	M		agree-flagged
+f102r_L18	35	NONE	L		agree-flagged
+f102r_L18	36	y	M		agree-flagged
+f102r_L18	37	o o	M		agree-flagged
+f102r_L18	38	z	M		agree-flagged
+f102r_L18	39	m	M		agree-flagged
+f102r_L18	40	L	M	B:V	differ
+f102r_L18	41	s	M		agree-flagged
+f102r_L18	42	o o	M		agree-flagged
+f102r_L18	43	d	M		agree-flagged
+f102r_L18	44	tz	M		agree-flagged
+f102r_L18	45	x	M		agree-flagged
+f102r_L18	46	g	M		agree-flagged
+f102r_L18	47	s	M		agree-flagged
+f102r_L18	48	tz	M		agree-flagged
+f102r_L18	49	NONE	M	B::	differ
+f102r_L18	50	m	M	B:NONE	differ
+f102r_L20	1	tz	M		agree-flagged
+f102r_L20	2	m p	M		agree-flagged
+f102r_L20	3	#	M		agree-flagged
+f102r_L20	4	s	M		agree-flagged
+f102r_L20	5	S	M	B:S d	differ
+f102r_L20	6	p	M		agree-flagged
+f102r_L20	7	:	M		agree-flagged
+f102r_L20	8	y	M		agree-flagged
+f102r_L20	9	m	M		agree-flagged
+f102r_L20	10	z	M		agree-flagged
+f102r_L20	11	s	M		agree-flagged
+f102r_L20	12	tz p	M		agree-flagged
+f102r_L20	13	m #	M		agree-flagged
+f102r_L20	14	Z	M		agree-flagged
+f102r_L20	15	o o	M		agree-flagged
+f102r_L20	16	d	M		agree-flagged
+f102r_L20	17	tz #	M		agree-flagged
+f102r_L20	18	m	M		agree-flagged
+f102r_L20	19	x	M		agree-flagged
+f102r_L20	20	#	M		agree-flagged
+f102r_L20	21	m	M		agree-flagged
+f102r_L20	22	# g	M		agree-flagged
+f102r_L20	23	m	M		agree-flagged
+f102r_L20	24	x	M		agree-flagged
+f102r_L20	25	z	M		agree-flagged
+f102r_L20	26	s	M		agree-flagged
+f102r_L20	27	6 tz	M		agree-flagged
+f102r_L20	28	3	M		agree-flagged
+f102r_L20	29	s	M		agree-flagged
+f102r_L20	30	o o	M		agree-flagged
+f102r_L20	31	d	M		agree-flagged
+f102r_L20	32	tz	M		agree-flagged
+f102r_L20	33	g	M		agree-flagged
+f102r_L20	34	m	M		agree-flagged
+f102r_L20	35	L	M	B:V	differ
+f102r_L20	36	# m p	M		agree-flagged
+f102r_L20	37	h o o	M		agree-flagged
+f102r_L20	38	tz	M		agree-flagged
+f102r_L24	1	NONE	L		agree-flagged
+f102r_L24	2	tz m	M		agree-flagged
+f102r_L24	3	p	M		agree-flagged
+f102r_L24	4	#	M		agree-flagged
+f102r_L24	5	c	M		agree-flagged
+f102r_L24	6	g	M	B:y	differ
+f102r_L24	7	d	M		agree-flagged
+f102r_L24	8	P	M		agree-flagged
+f102r_L24	9	tz	M		agree-flagged
+f102r_L24	10	#	M		agree-flagged
+f102r_L24	11	m g	M		agree-flagged
+f102r_L24	12	k	M		agree-flagged
+f102r_L24	13	m	M	B:NONE	differ
+f102r_L24	14	n	M		agree-flagged
+f102r_L24	15	y	M	B:r	differ
+f102r_L24	16	tz	M		agree-flagged
+f102r_L24	17	x	M		agree-flagged
+f102r_L24	18	y	M	B:y o	differ
+f102r_L24	19	m	M		agree-flagged
+f102r_L24	20	x	M		agree-flagged
+f102r_L24	21	tz	M		agree-flagged
+f102r_L24	22	V	M		agree-flagged
+f102r_L24	23	m	M		agree-flagged
+f102r_L24	24	x	M		agree-flagged
+f102r_L24	25	# z	M	B:# 3	differ
+f102r_L24	26	m	M		agree-flagged
+f102r_L24	27	m	M		agree-flagged
+f102r_L24	28	to	M		agree-flagged
+f102r_L24	29	s	M		agree-flagged
+f102r_L24	30	o o	M		agree-flagged
+f102r_L24	31	d	M		agree-flagged
+f102r_L24	32	tz m	M		agree-flagged
+f102r_L24	33	V	M		agree-flagged
+f102r_L24	34	#	M		agree-flagged
+f102r_L24	35	o m	M		agree-flagged
+f102r_L24	36	o o	M		agree-flagged
+f102r_L24	37	z	M	B:3	differ
+f102r_L24	38	m	M		agree-flagged
+f102r_L24	39	S	M	B:s f	differ
+f102r_L24	40	d	M		agree-flagged
+f102r_L24	41	S	M	B:S g	differ
+f102r_L24	42	NONE	L		agree-flagged
+f102r_L24	43	NONE	L		agree-flagged
+f102r_L28	1	V	M		agree-flagged
+f102r_L28	2	R	M		agree-flagged
+f102r_L28	3	y	M	B:y o	differ
+f102r_L28	4	o o	M		agree-flagged
+f102r_L28	5	z	M	B:3	differ
+f102r_L28	6	c	M	B:NONE	differ
+f102r_L28	7	c	M		agree-flagged
+f102r_L28	8	d	M		agree-flagged
+f102r_L28	9	o o	M		agree-flagged
+f102r_L28	10	z	M	B:Z	differ
+f102r_L28	11	d	M		agree-flagged
+f102r_L28	12	t	M		agree-flagged
+f102r_L28	13	8 x	M	B:z x	differ
+f102r_L28	14	s	M		agree-flagged
+f102r_L28	15	o o V	M		agree-flagged
+f102r_L28	16	tz	M		agree-flagged
+f102r_L28	17	c	M		agree-flagged
+f102r_L28	18	NONE	L		agree-flagged
+f102r_L28	19	m	M		agree-flagged
+f102r_L28	20	o o	M		agree-flagged
+f102r_L28	21	8	M	B:3	differ
+f102r_L28	22	t 8	M	B:t	differ
+f102r_L28	23	g	M		agree-flagged
+f102r_L28	24	m	M		agree-flagged
+f102r_L28	25	m	M	B:c m	differ
+f102r_L28	26	x	M		agree-flagged
+f102r_L28	27	m	M	B:m j	differ
+f102r_L28	28	R	M		agree-flagged
+f102r_L28	29	m	M	B:m j	differ
+f102r_L28	30	R	M		agree-flagged
+f102r_L28	31	NONE	L		agree-flagged
+f102r_L28	32	m	M		agree-flagged
+f102r_L28	33	d	M		agree-flagged
+f102r_L28	34	#	M		agree-flagged
+f102r_L28	35	d	M		agree-flagged
+f102r_L28	36	tz	M		agree-flagged
+f102r_L28	37	#	M		agree-flagged
+f102r_L28	38	c	M		agree-flagged
+f102r_L28	39	f	M		agree-flagged
+f102r_L28	40	V	M		agree-flagged
+f102r_L28	41	m	M		agree-flagged
+f102r_L28	42	y	M		agree-flagged
+f102r_L28	43	s	M		agree-flagged
+f102r_L28	44	c	M	B:NONE	differ
+f102r_L30	1	m	M	B:c m	differ
+f102r_L30	2	x	M		agree-flagged
+f102r_L30	3	m	M	B:m j	differ
+f102r_L30	4	R	M		agree-flagged
+f102r_L30	5	V	M		agree-flagged
+f102r_L30	6	s	M		agree-flagged
+f102r_L30	7	o o	M		agree-flagged
+f102r_L30	8	d	M		agree-flagged
+f102r_L30	9	tz	M		agree-flagged
+f102r_L30	10	#	M		agree-flagged
+f102r_L30	11	c	M		agree-flagged
+f102r_L30	12	d	M		agree-flagged
+f102r_L30	13	tz	M		agree-flagged
+f102r_L30	14	p	M		agree-flagged
+f102r_L30	15	#	M		agree-flagged
+f102r_L30	16	z	M	B:3	differ
+f102r_L30	17	m	M		agree-flagged
+f102r_L30	18	c d g	M	B:c d	differ
+f102r_L30	19	#	M		agree-flagged
+f102r_L30	20	m	M	B:c m	differ
+f102r_L30	21	m r	M	B:x	differ
+f102r_L30	22	tz	M		agree-flagged
+f102r_L30	23	z	M	B:Z	differ
+f102r_L30	24	m	M		agree-flagged
+f102r_L30	25	e	M	B:o	differ
+f102r_L30	26	NONE	L		agree-flagged
+f102r_L30	27	s	M		agree-flagged
+f102r_L30	28	tz	M		agree-flagged
+f102r_L30	29	d	M		agree-flagged
+f102r_L30	30	d	M		agree-flagged
+f102r_L30	31	tz	M		agree-flagged
+f102r_L30	32	#	M		agree-flagged
+f102r_L30	33	:	M	B:NONE	differ
+f102r_L30	34	:	M		agree-flagged
+f102r_L30	35	g	M		agree-flagged
+f102r_L30	36	d	M		agree-flagged
+f102r_L30	37	z	M	B:3	differ
+f102r_L30	38	g	M	B:y	differ
+f102r_L30	39	m	M		agree-flagged
+f102r_L30	40	a	M	B:c	differ
+f102r_L30	41	S tz	M		agree-flagged
+f102r_L30	42	n	M		agree-flagged
+f102r_L30	43	NONE	L		agree-flagged
+f102r_L30	44	NONE	L		agree-flagged
+f102r_L30	45	V	M		agree-flagged
+f102r_L30	46	NONE	L		agree-flagged
+f102r_L32	1	t	M		agree-flagged
+f102r_L32	2	m	M		agree-flagged
+f102r_L32	3	c	M		agree-flagged
+f102r_L32	4	g	M	B:y	differ
+f102r_L32	5	S	M	B:s	differ
+f102r_L32	6	#	M		agree-flagged
+f102r_L32	7	tz	M		agree-flagged
+f102r_L32	8	:	M		agree-flagged
+f102r_L32	9	c	M	B:NONE	differ
+f102r_L32	10	m	M	B:c m	differ
+f102r_L32	11	z	M	B:x	differ
+f102r_L32	12	NONE	L		agree-flagged
+f102r_L32	13	m	M		agree-flagged
+f102r_L32	14	V	M		agree-flagged
+f102r_L32	15	m	M		agree-flagged
+f102r_L32	16	y	M	B:NONE	differ
+f102r_L32	17	y	M		agree-flagged
+f102r_L32	18	s	M		agree-flagged
+f102r_L32	19	z	M	B:3	differ
+f102r_L32	20	P V	M		agree-flagged
+f102r_L32	21	#	M		agree-flagged
+f102r_L32	22	o o	M		agree-flagged
+f102r_L32	23	d	M		agree-flagged
+f102r_L32	24	z	M	B:x	differ
+f102r_L32	25	S	M	B:j	differ
+f102r_L32	26	o o	M		agree-flagged
+f102r_L32	27	z	M	B:3	differ
+f102r_L32	28	s	M		agree-flagged
+f102r_L32	29	o o	M		agree-flagged
+f102r_L32	30	NONE	L		agree-flagged
+f102r_L32	31	m	M	B:m V	differ
+f102r_L32	32	#	M		agree-flagged
+f102r_L32	33	S	M	B:s	differ
+f102r_L32	34	tz	M		agree-flagged
+f102r_L32	35	4	M		agree-flagged
+f102r_L32	36	m	M		agree-flagged
+f102r_L32	37	tz	M		agree-flagged
+f102r_L32	38	P	M		agree-flagged
+f102r_L32	39	c	M		agree-flagged
+f102r_L32	40	d	M	B:d g	differ
+f102r_L32	41	#	M		agree-flagged
+f102r_L32	42	o o V	M		agree-flagged
+f102r_L32	43	m g	M		agree-flagged
+f102r_L32	44	NONE	L		agree-flagged
+f102r_L32	45	NONE	L		agree-flagged
+f102r_L34	1	o o	M		agree-flagged
+f102r_L34	2	S 4	M	B:s p	differ
+f102r_L34	3	#	M		agree-flagged
+f102r_L34	4	:	M		agree-flagged
+f102r_L34	5	m	M		agree-flagged
+f102r_L34	6	s	M		agree-flagged
+f102r_L34	7	m	M	B:c m	differ
+f102r_L34	8	x	M		agree-flagged
+f102r_L34	9	d	M		agree-flagged
+f102r_L34	10	z	M	B:Z	differ
+f102r_L34	11	tz	M		agree-flagged
+f102r_L34	12	m	M	B:NONE	differ
+f102r_L34	13	y	M		agree-flagged
+f102r_L34	14	m	M		agree-flagged
+f102r_L34	15	o o	M		agree-flagged
+f102r_L34	16	d	M		agree-flagged
+f102r_L34	17	a	M		agree-flagged
+f102r_L34	18	S	M		agree-flagged
+f102r_L34	19	d	M		agree-flagged
+f102r_L34	20	tz x o	M		agree-flagged
+f102r_L34	21	S	M	B:s	differ
+f102r_L34	22	#	M		agree-flagged
+f102r_L34	23	R	M		agree-flagged
+f102r_L34	24	tz	M		agree-flagged
+f102r_L34	25	g	M		agree-flagged
+f102r_L34	26	m	M		agree-flagged
+f102r_L34	27	m g	M		agree-flagged
+f102r_L34	28	S S	M	B:P P	differ
+f102r_L34	29	NONE	L		agree-flagged
+f102r_L34	30	NONE	L		agree-flagged
+f102r_L34	31	NONE	L		agree-flagged
+f102r_L34	32	NONE	L		agree-flagged
+f102r_L34	33	NONE	L		agree-flagged
+f102r_L34	34	NONE	L		agree-flagged
+f102r_L34	35	NONE	L		agree-flagged
+f102r_L34	36	NONE	L		agree-flagged
+f102r_L34	37	NONE	L		agree-flagged
+f102r_L36	1	NONE	L		agree-flagged
+f102r_L36	2	q	M	B:y	differ
+f102r_L36	3	y	M	B:r	differ
+f102r_L36	4	m	M		agree-flagged
+f102r_L36	5	P	M		agree-flagged
+f102r_L36	6	to	M		agree-flagged
+f102r_L36	7	z	M	B:x	differ
+f102r_L36	8	tz	M		agree-flagged
+f102r_L36	9	tz	M		agree-flagged
+f102r_L36	10	6 g	M		agree-flagged
+f102r_L36	11	m	M	B:NONE	differ
+f102r_L36	12	m	M		agree-flagged
+f102r_L36	13	o o	M		agree-flagged
+f102r_L36	14	x	M		agree-flagged
+f102r_L36	15	#	M		agree-flagged
+f102r_L36	16	S m	M	B:S	differ
+f102r_L36	17	x	M		agree-flagged
+f102r_L36	18	d	M		agree-flagged
+f102r_L36	19	tz	M		agree-flagged
+f102r_L36	20	p	M		agree-flagged
+f102r_L36	21	4	M		agree-flagged
+f102r_L36	22	c	M	B:NONE	differ
+f102r_L36	23	c	M	B:a	differ
+f102r_L36	24	tz	M		agree-flagged
+f102r_L36	25	m g	M	B:m y	differ
+f102r_L36	26	m	M		agree-flagged
+f102r_L36	27	d	M		agree-flagged
+f102r_L36	28	c	M	B:NONE	differ
+f102r_L36	29	NONE	L		agree-flagged
+f102r_L36	30	d	M		agree-flagged
+f102r_L36	31	p	M		agree-flagged
+f102r_L36	32	h tz	M		agree-flagged
+f102r_L36	33	V	M		agree-flagged
+f102r_L36	34	m	M		agree-flagged
+f102r_L36	35	d	M		agree-flagged
+f102r_L36	36	m	M	B:o m	differ
+f102r_L36	37	y	M	B:y o	differ
+f102r_L36	38	d	M		agree-flagged
+f102r_L36	39	p	M		agree-flagged
+f102r_L36	40	:	M	B:NONE	differ
+f102r_L36	41	m	M		agree-flagged
+f102r_L36	42	a	M		agree-flagged
+f102r_L36	43	d	M		agree-flagged
+f102r_L36	44	b	M		agree-flagged
+f102r_L36	45	tz s	M	B:tz	differ

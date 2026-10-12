@@ -1,0 +1,11 @@
+pass	mask	unit_cost_edits	S	D	I	err_true	errors/scored	wilson95	strict_err_true
+N1	as_measured	111	98	7	6	0.266	111/417	0.226-0.311	0.1295
+N1	flagged_excluded	21	13	2	6	0.097	21/216	0.064-0.144	0.0972
+N2	as_measured	116	98	15	3	0.278	116/417	0.237-0.323	0.1271
+N2	flagged_excluded	22	14	5	3	0.102	22/216	0.068-0.149	0.1019
+O1	as_measured	129	94	24	11	0.314	131/417	0.271-0.360	0.1847
+O1	flagged_excluded	37	13	13	11	0.181	39/216	0.135-0.237	0.1806
+O2	as_measured	127	90	31	6	0.307	128/417	0.265-0.353	0.1942
+O2	flagged_excluded	33	11	16	6	0.157	34/216	0.115-0.212	0.1574
+R1	as_measured	127	97	14	16	0.309	129/417	0.267-0.355	0.1871
+R1	flagged_excluded	37	16	5	16	0.181	39/216	0.135-0.237	0.1806

@@ -1,0 +1,93 @@
+{
+ "items": [
+  {
+   "item": "vivonne1573-f102r-dev2",
+   "split": "dev",
+   "output": null,
+   "coverage_diagnostic": true,
+   "err_true": 0.2782,
+   "errors": 116,
+   "scored": 417,
+   "wrong": 98,
+   "deleted": 15,
+   "inserted": 3,
+   "excluded": 245,
+   "lines_missing": 0,
+   "missing_deleted": 0,
+   "ser": 0.2782,
+   "ser_errors": 116,
+   "ser_S": 98,
+   "ser_D": 15,
+   "ser_I": 3,
+   "abstained": 0,
+   "accepted": 402,
+   "accepted_wrong": 98,
+   "accepted_error": 0.2438,
+   "coverage": 0.964,
+   "position_errors": 113,
+   "read": 634,
+   "position_rate": 0.271,
+   "insertion_rate": 0.0047,
+   "strict": {
+    "err_true": 0.1271,
+    "errors": 53,
+    "ser": 0.1271,
+    "ser_errors": 53,
+    "scored": 417
+   },
+   "ci95_ser": [
+    0.2363,
+    0.3293
+   ],
+   "ci_lines": 13,
+   "top_confusions": [
+    "d<-z x8",
+    "s<-d x5",
+    "a<-m x4",
+    "l<-x x4",
+    "q<-c x4",
+    "a<-x x3",
+    "e<-r x3",
+    "r<-<deleted> x2"
+   ],
+   "flagged_excluded": {
+    "err_true": 0.1019,
+    "errors": 22,
+    "scored": 216,
+    "wrong": 14,
+    "deleted": 5,
+    "inserted": 3,
+    "excluded": 446,
+    "lines_missing": 0,
+    "missing_deleted": 0,
+    "ser": 0.1019,
+    "ser_errors": 22,
+    "ser_S": 14,
+    "ser_D": 5,
+    "ser_I": 3,
+    "abstained": 0,
+    "accepted": 211,
+    "accepted_wrong": 14,
+    "accepted_error": 0.0664,
+    "coverage": 0.9769,
+    "position_errors": 19,
+    "read": 634,
+    "position_rate": 0.088,
+    "insertion_rate": 0.0047,
+    "strict": {
+     "err_true": 0.1019,
+     "errors": 22,
+     "ser": 0.1019,
+     "ser_errors": 22,
+     "scored": 216
+    },
+    "ci95_ser": [
+     0.0707,
+     0.1298
+    ],
+    "ci_lines": 13,
+    "flagged": 201
+   }
+  }
+ ]
+}

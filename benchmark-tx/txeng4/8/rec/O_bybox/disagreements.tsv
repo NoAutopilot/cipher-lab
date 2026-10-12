@@ -1,0 +1,114 @@
+line	col	A	B	flagged	crop
+f102r_L02	4	r y	y	AB	
+f102r_L02	7	g l	g o	AB	
+f102r_L02	20	g	m g	AB	
+f102r_L02	30	Z	z	AB	
+f102r_L02	38	NONE	m	AB	
+f102r_L04	2	p	NONE	AB	
+f102r_L04	5	m	NONE	AB	
+f102r_L04	6	n	m	AB	
+f102r_L04	11	:	NONE	AB	
+f102r_L04	32	g	d g	AB	
+f102r_L08	5	3	z	AB	
+f102r_L08	15	R	y	AB	
+f102r_L08	19	y	-	A	
+f102r_L08	20	s	-	A	
+f102r_L08	21	g	-	A	
+f102r_L08	22	tz	-	A	
+f102r_L08	23	p	-	A	
+f102r_L08	24	3	-	A	
+f102r_L08	25	m	-	A	
+f102r_L08	26	y	-	A	
+f102r_L08	27	m	-	A	
+f102r_L08	28	o o g x	-	A	
+f102r_L08	29	m	-	A	
+f102r_L08	30	L	-	A	
+f102r_L08	31	p	-	A	
+f102r_L08	32	m	-	A	
+f102r_L08	33	z	-	A	
+f102r_L08	34	tz	-	A	
+f102r_L08	35	a	-	A	
+f102r_L08	36	m	-	A	
+f102r_L08	37	# g	-	A	
+f102r_L08	38	7	-	A	
+f102r_L10	4	n	NONE	AB	
+f102r_L10	16	x #	{double cross}	AB	
+f102r_L10	18	g	c g	AB	
+f102r_L10	40	z	Z	AB	
+f102r_L16	23	b	6	AB	
+f102r_L16	24	z	3	AB	
+f102r_L16	26	L	V	AB	
+f102r_L16	29	z	3	AB	
+f102r_L16	40	4	t	AB	
+f102r_L16	41	L	V	AB	
+f102r_L16	43	tz d	tz Z	AB	
+f102r_L16	45	b	6	AB	
+f102r_L18	19	tz p	tz	AB	
+f102r_L18	40	L	V	AB	
+f102r_L18	49	NONE	:	AB	
+f102r_L18	50	m	NONE	AB	
+f102r_L20	5	S	S d	AB	
+f102r_L20	35	L	V	AB	
+f102r_L24	6	g	y	AB	
+f102r_L24	13	m	NONE	A	
+f102r_L24	15	y	r	AB	
+f102r_L24	18	y	y o	AB	
+f102r_L24	25	# z	# 3	AB	
+f102r_L24	37	z	3	AB	
+f102r_L24	39	S	s f	AB	
+f102r_L24	41	S	S g	AB	
+f102r_L28	3	y	y o	AB	
+f102r_L28	5	z	3	AB	
+f102r_L28	6	c	NONE	A	
+f102r_L28	10	z	Z	AB	
+f102r_L28	13	8 x	z x	AB	
+f102r_L28	21	8	3	AB	
+f102r_L28	22	t 8	t	AB	
+f102r_L28	25	m	c m	AB	
+f102r_L28	27	m	m j	AB	
+f102r_L28	29	m	m j	AB	
+f102r_L28	44	c	NONE	A	
+f102r_L30	1	m	c m	AB	
+f102r_L30	3	m	m j	AB	
+f102r_L30	16	z	3	AB	
+f102r_L30	18	c d g	c d	AB	
+f102r_L30	20	m	c m	AB	
+f102r_L30	21	m r	x	AB	
+f102r_L30	23	z	Z	AB	
+f102r_L30	25	e	o	AB	
+f102r_L30	33	:	NONE	A	
+f102r_L30	37	z	3	AB	
+f102r_L30	38	g	y	AB	
+f102r_L30	40	a	c	AB	
+f102r_L32	4	g	y	AB	
+f102r_L32	5	S	s	AB	
+f102r_L32	9	c	NONE	A	
+f102r_L32	10	m	c m	AB	
+f102r_L32	11	z	x	AB	
+f102r_L32	16	y	NONE	A	
+f102r_L32	19	z	3	AB	
+f102r_L32	24	z	x	AB	
+f102r_L32	25	S	j	AB	
+f102r_L32	27	z	3	AB	
+f102r_L32	31	m	m V	AB	
+f102r_L32	33	S	s	AB	
+f102r_L32	40	d	d g	AB	
+f102r_L34	2	S 4	s p	AB	
+f102r_L34	7	m	c m	AB	
+f102r_L34	10	z	Z	AB	
+f102r_L34	12	m	NONE	A	
+f102r_L34	21	S	s	AB	
+f102r_L34	28	S S	P P	AB	
+f102r_L36	2	q	y	AB	
+f102r_L36	3	y	r	AB	
+f102r_L36	7	z	x	AB	
+f102r_L36	11	m	NONE	A	
+f102r_L36	16	S m	S	AB	
+f102r_L36	22	c	NONE	A	
+f102r_L36	23	c	a	AB	
+f102r_L36	25	m g	m y	AB	
+f102r_L36	28	c	NONE	A	
+f102r_L36	36	m	o m	AB	
+f102r_L36	37	y	y o	AB	
+f102r_L36	40	:	NONE	A	
+f102r_L36	45	tz s	tz	AB	

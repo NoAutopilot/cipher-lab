@@ -1,0 +1,12 @@
+# /home/user/cipher-lab/tools/tx_bench.py --bench /home/user/cipher-lab/benchmark-tx/txeng3/6/bench_test.tsv --exclude-flagged --strict --coverage-diagnostic --ci /home/user/cipher-lab/benchmark-tx/txeng4/8/reads/O1.pos.tsv
+COVERAGE DIAGNOSTIC: partial coverage, missing truth lines are listed and not scored, unknown line ids ignored; not the fixed-manifest score
+vivonne1573-f102r-dev2 [dev] as measured: err_true(0.75-indel align) 0.314 (131/417) | standard SER (unit-cost Levenshtein) 0.309 (129/417): S 94 D 24 I 11 | wrong 93 deleted 24 inserted 14 | excluded 245 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 93/393 = 0.237 | coverage 393/417 = 0.942
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.185 (77/417) | standard SER 0.182 (76/417)
+    standard SER line bootstrap 95% (1000 resamples, conditional on this item's 13 lines): 0.242-0.393
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.181 (39/216) | standard SER (unit-cost Levenshtein) 0.171 (37/216): S 13 D 13 I 11 | wrong 12 deleted 13 inserted 14 | excluded 446 | lines missing 0 (0 signs counted deleted) [201 flagged] | position errors 25/216 = 0.116 | insertions 14 / read 618 = 0.023
+    reader abstentions 0 | accepted-token error 12/203 = 0.059 | coverage 203/216 = 0.940
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.181 (39/216) | standard SER 0.171 (37/216)
+    standard SER line bootstrap 95% (1000 resamples, conditional on this item's 13 lines): 0.104-0.260
+  top confusions (truth value <- read): e<-R x6, s<-d x6, l<-<deleted> x5, c<-<deleted> x4, a<-m x4, d<-z x4, l<-x x4, u<-c x3
+split dev: err_true(0.75-indel align) 0.314 (131/417) | standard SER 0.309 (129/417)
