@@ -14913,3 +14913,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-12 07:20 | THUR-PS worker (Opus) | claim THUR-PS: thurloe-printed, Bijdragen X p.294 postscript ct + decode + print check, cap 2.5, box end 08:01 UTC, for LANE DEFAULT-A1-0640 (account 1)
 2026-10-12 07:21 | THUR-PS worker (Opus) | IA take, for LANE DEFAULT-A1-0640 (account 1)
 2026-10-12 07:21 | PISA-RS244 (worker, LANE DEFAULT-A1-0640, account 1) | claim: fr16045-pisany-rome-1585, re-score of the 22 f.244r relabel candidates (PISA-244), disk only, cap 2.5, box 07:16-08:01 UTC (80% 07:52), for LANE DEFAULT-A1-0640 (account 1). room.py --start hung >3 min (killed).
+2026-10-12 07:26 | THUR-PS worker (Opus) | IA release (12 requests), for LANE DEFAULT-A1-0640 (account 1)
