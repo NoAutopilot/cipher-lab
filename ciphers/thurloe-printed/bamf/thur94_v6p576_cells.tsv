@@ -1,0 +1,111 @@
+run	pos	code	printed_gloss	tomokiyo	status
+1	1	388	giv		not-in-tomokiyo
+1	2	20	s	s	agree
+1	3	398	great		not-in-tomokiyo
+1	4	436	hope		not-in-tomokiyo
+1	5	62	t	t	agree
+1	6	69	o	o	agree
+1	7	87	Fran	[-]	conflict(tomokiyo-null)
+1	8	813	ce		not-in-tomokiyo
+1	9	167	that		not-in-tomokiyo
+1	10	674	prince		not-in-tomokiyo
+1	11	46	R	r	agree
+1	12	56	o	o	agree
+1	13	151	b		not-in-tomokiyo
+1	14	45	e	e	agree
+1	15	66	r	r	agree
+1	16	89	t	t	agree
+1	17	792	whom		not-in-tomokiyo
+1	18	426	he		not-in-tomokiyo
+1	19	752	trust		not-in-tomokiyo
+1	20	19	e	e	agree
+1	21	20	s	s	agree
+1	22	576	much		not-in-tomokiyo
+2	1	22	a	a	agree
+2	2	49	n	n	agree
+2	3	12	d	d	agree
+2	4	318	in		not-in-tomokiyo
+2	5	58	gag'		not-in-tomokiyo
+2	6	65	d	d	agree
+2	7	433	him		not-in-tomokiyo
+2	8	475	in		not-in-tomokiyo
+2	9	744	the		not-in-tomokiyo
+2	10	729	service		not-in-tomokiyo
+2	11	627	of		not-in-tomokiyo
+2	12	457	Hungary		not-in-tomokiyo
+3	1	402	Generall		not-in-tomokiyo
+3	2	2	Wi		not-in-tomokiyo
+3	3	38	del		not-in-tomokiyo
+3	4	62	t	t	agree
+3	5	30	a	a	agree
+3	6	79	z	z	agree
+3	7	31	a	a	agree
+3	8	45	c	e	conflict
+3	9	792	who		not-in-tomokiyo
+3	10	21	c	c	agree
+3	11	14	o	o	agree
+3	12	555	man		not-in-tomokiyo
+3	13	12	d	d	agree
+3	14	20	s	s	agree
+3	15	65	for	d	conflict
+3	16	359	elector		not-in-tomokiyo
+3	17	342	Palati		not-in-tomokiyo
+3	18	40	n	i	conflict
+3	19	36	i	s	conflict
+3	20	87	s	[-]	conflict(tomokiyo-null)
+3	21	392	gone		not-in-tomokiyo
+3	22	802	yesterd.		not-in-tomokiyo
+4	1	43	p	p	agree
+4	2	56	o	o	agree
+4	3	67	s	s	agree
+4	4	62	t	t	agree
+4	5	744	the		not-in-tomokiyo
+4	6	371	French		not-in-tomokiyo
+4	7	238	court		not-in-tomokiyo
+4	8	139	at		not-in-tomokiyo
+4	9	41	M	m	agree
+4	10	19	e	e	agree
+4	11	62	t	t	agree
+4	12	20	s	s	agree
+4	13	107	about		not-in-tomokiyo
+4	14	8	m	m	agree
+4	15	54	o	o	agree
+4	16	11	n	n	agree
+4	17	15	y	y	agree
+4	18	359	for		not-in-tomokiyo
+4	19	572	more		not-in-tomokiyo
+4	20	59	l	l	agree
+4	21	23	e	e	agree
+4	22	37	v	v	agree
+4	23	25	y	y	agree
+5	1	68	e	e	agree
+5	2	20	s	s	agree
+5	3	139	at		not-in-tomokiyo
+5	4	29	h	h	agree
+5	5	16	i	i	agree
+5	6	36	s	s	agree
+5	7	700	retuin		not-in-tomokiyo
+5	8	426	he		not-in-tomokiyo
+5	9	391	goe		not-in-tomokiyo
+5	10	67	s	s	agree
+5	11	64	t	t	agree
+5	12	54	o	o	agree
+5	13	348	Brandenburg		not-in-tomokiyo
+5	14	749	the		not-in-tomokiyo
+5	15	528	land		not-in-tomokiyo
+5	16	9	g	g	agree
+5	17	46	r	r	agree
+5	18	22	a	a	agree
+5	19	70	v	v	agree
+5	20	75	e	e	agree
+5	21	626	of		not-in-tomokiyo
+6	1	6	H	h	agree
+6	2	68	e	e	agree
+6	3	67	s	s	agree
+6	4	86	s	s	agree
+6	5	360	from		not-in-tomokiyo
+6	6	813	France		not-in-tomokiyo
+6	7	71	a	a	agree
+6	8	49	n	n	agree
+6	9	12	d	d	agree
+6	10	342	Palatinate		not-in-tomokiyo
