@@ -1,0 +1,668 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	CLEAR		M	depuis
+L01	2	CLEAR		M	le
+L01	3	sq		M	
+L01	4	0		M	
+L01	5	z		M	
+L01	6	?		L	
+L01	7	4		M	
+L01	8	1		M	
+L01	9	.		M	
+L01	10	a		M	
+L01	11	a		M	
+L01	12	0		M	
+L01	13	4		M	
+L01	14	1		M	
+L01	15	sq		M	
+L01	16	f		M	
+L01	17	v		M	
+L01	18	w		M	
+L01	19	v		M	
+L01	20	1		M	
+L01	21	0		M	
+L01	22	4		M	
+L01	23	#		M	
+L01	24	sq		M	
+L01	25	3'		M	
+L01	26	+		M	
+L01	27	v		M	
+L01	28	4		M	
+L01	29	1		M	
+L01	30	L		M	
+L01	31	9		M	
+L01	32	m		M	
+L01	33	0		M	
+L01	34	sq		M	
+L01	35	x		M	
+L01	36	4		M	
+L01	37	y		M	
+L01	38	c		M	
+L01	39	m		M	
+L01	40	z		M	
+L01	41	1		M	
+L01	42	4		M	
+L01	43	p		M	
+L01	44	0		M	
+L01	45	x		M	
+L01	46	v		M	
+L01	47	3		M	
+L01	48	0		M	
+L01	49	1		M	
+L01	50	L		M	
+L01	51	y		M	
+L01	52	m		M	
+L01	53	w		M	
+L01	54	v		M	
+L01	55	4		M	
+L01	56	m		M	
+L01	57	z		M	
+L01	58	0		M	
+L02	1	1		M	
+L02	2	.		M	
+L02	3	4		M	
+L02	4	sq		M	
+L02	5	y		M	
+L02	6	c		M	
+L02	7	m		M	
+L02	8	1		M	
+L02	9	.		M	
+L02	10	a		M	
+L02	11	m		M	
+L02	12	z		M	
+L02	13	0		M	
+L02	14	.		M	
+L02	15	0		M	
+L02	16	4		M	
+L02	17	CLEAR		M	ne
+L02	18	CLEAR		M	bone
+L02	19	CLEAR		M	plaist
+L02	20	p		M	
+L02	21	0		M	
+L02	22	y		M	
+L02	23	m		M	
+L02	24	c		M	
+L02	25	a		M	
+L02	26	&		M	
+L02	27	1		M	
+L02	28	L		M	
+L02	29	w		M	
+L02	30	d		M	
+L02	31	0		M	
+L02	32	c		M	
+L02	33	y		M	
+L02	34	z		M	
+L02	35	m		M	
+L02	36	0		M	
+L02	37	z		M	
+L02	38	1		M	
+L02	39	f		M	
+L02	40	m		M	
+L02	41	p		M	
+L02	42	4		M	
+L02	43	1		M	
+L02	44	L		M	
+L02	45	v		M	
+L02	46	x		M	
+L02	47	c		M	
+L02	48	4		M	
+L02	49	f		M	
+L02	50	m		M	
+L02	51	#		M	
+L02	52	v		M	
+L02	53	x		M	
+L02	54	4		M	
+L02	55	y		M	
+L02	56	1		M	
+L02	57	w		M	
+L03	1	a		M	
+L03	2	m		M	
+L03	3	L		M	
+L03	4	4		M	
+L03	5	y		M	
+L03	6	o		M	
+L03	7	2		M	
+L03	8	sq		M	
+L03	9	4		M	
+L03	10	m		M	
+L03	11	p		M	
+L03	12	0		M	
+L03	13	f		M	
+L03	14	y		M	
+L03	15	1		M	
+L03	16	.		M	
+L03	17	3		M	
+L03	18	0		M	
+L03	19	#		M	
+L03	20	1		M	
+L03	21	sq		M	
+L03	22	z		M	
+L03	23	1		M	
+L03	24	.		M	
+L03	25	d		M	
+L03	26	4		M	
+L03	27	v		M	
+L03	28	#		M	
+L03	29	0		M	
+L03	30	.		M	
+L03	31	4		M	
+L03	32	1		M	
+L03	33	.		M	
+L03	34	sq		M	
+L03	35	L		M	
+L03	36	0		M	
+L03	37	a		M	
+L03	38	w		M	
+L03	39	4		M	
+L03	40	0		M	
+L03	41	#		M	
+L03	42	T		M	
+L03	43	v		M	
+L03	44	sq		M	
+L03	45	m		M	
+L03	46	0		M	
+L03	47	4		M	
+L03	48	+		M	
+L03	49	0		M	
+L03	50	y		M	
+L03	51	.		M	
+L03	52	0		M	
+L03	53	.		M	
+L03	54	x		M	
+L03	55	d		M	
+L03	56	v		M	
+L03	57	c		M	
+L03	58	v		M	
+L03	59	L		M	
+L03	60	m		M	
+L03	61	CLEAR		M	fabmedy
+L04	1	CLEAR		M	faisant
+L04	2	#		M	
+L04	3	y		M	
+L04	4	m		M	
+L04	5	w		M	
+L04	6	L		M	
+L04	7	c		M	
+L04	8	4		M	
+L04	9	0		M	
+L04	10	m		M	
+L04	11	c		M	
+L04	12	m		M	
+L04	13	z		M	
+L04	14	+		M	
+L04	15	#		M	
+L04	16	m		M	
+L04	17	x		M	
+L04	18	m		M	
+L04	19	L		M	
+L04	20	+		M	
+L04	21	v		M	
+L04	22	4		M	
+L04	23	+		M	
+L04	24	y		M	
+L04	25	1		M	
+L04	26	m		M	
+L04	27	v		M	
+L04	28	c		M	
+L04	29	y		M	
+L04	30	m		M	
+L04	31	a		M	
+L04	32	0		M	
+L04	33	w		M	
+L04	34	4		M	
+L04	35	1		M	
+L04	36	c		M	
+L04	37	y		M	
+L04	38	p		M	
+L04	39	CLEAR		M	et
+L04	40	CLEAR		M	que
+L04	41	CLEAR		M	a
+L04	42	CLEAR		M	quil
+L04	43	CLEAR		M	auoit
+L04	44	CLEAR		M	fait
+L04	45	CLEAR		M	pour
+L05	1	CLEAR		M	le
+L05	2	CLEAR		M	regard
+L05	3	x		M	
+L05	4	sq		M	
+L05	5	0		M	
+L05	6	y		M	
+L05	7	L		M	
+L05	8	0		M	
+L05	9	sq		M	
+L05	10	0		M	
+L05	11	0		M	
+L05	12	.		M	
+L05	13	1		M	
+L05	14	.		M	
+L05	15	sq		M	
+L05	16	m		M	
+L05	17	y		M	
+L05	18	p		M	
+L05	19	v		M	
+L05	20	a		M	
+L05	21	m		M	
+L05	22	0		M	
+L05	23	sq		M	
+L05	24	1		M	
+L05	25	4		M	
+L05	26	1		M	
+L05	27	.		M	
+L05	28	w		M	
+L05	29	y		M	
+L05	30	L		M	
+L05	31	o		M	
+L05	32	m		M	
+L05	33	sq		M	
+L05	34	z		M	
+L05	35	a		M	
+L05	36	y		M	
+L05	37	+		M	
+L05	38	a		M	
+L05	39	CLEAR		M	quils
+L05	40	CLEAR		M	enssent
+L05	41	1		M	
+L05	42	.		M	
+L05	43	sq		M	
+L05	44	v		M	
+L05	45	y		M	
+L05	46	4		M	
+L05	47	v		M	
+L05	48	sq		M	
+L05	49	0		M	
+L05	50	.		M	
+L05	51	1		M	
+L05	52	sq		M	
+L05	53	1		M	
+L05	54	+		M	
+L05	55	p		M	
+L06	1	CLEAR		M	le
+L06	2	CLEAR		M	luy
+L06	3	CLEAR		M	en
+L06	4	CLEAR		M	est
+L06	5	CLEAR		M	escrit
+L06	6	CLEAR		M	quelque
+L06	7	CLEAR		M	chose
+L06	8	CLEAR		M	le
+L06	9	CLEAR		M	dimenche
+L06	10	f		M	
+L06	11	T		M	
+L06	12	0		M	
+L06	13	w		M	
+L06	14	0		M	
+L06	15	v		M	
+L06	16	sq		M	
+L06	17	0		M	
+L06	18	v		M	
+L06	19	4		M	
+L06	20	y		M	
+L06	21	w		M	
+L06	22	m		M	
+L06	23	?		L	
+L06	24	c		M	
+L06	25	y		M	
+L06	26	#		M	
+L06	27	T		M	
+L06	28	1		M	
+L06	29	3		M	
+L06	30	0		M	
+L06	31	4		M	
+L06	32	?		L	
+L06	33	m		M	
+L06	34	1		M	
+L06	35	4		M	
+L06	36	+		M	
+L06	37	0		M	
+L07	1	w		M	
+L07	2	.		M	
+L07	3	1		M	
+L07	4	.		M	
+L07	5	m		M	
+L07	6	y		M	
+L07	7	m		M	
+L07	8	f		M	
+L07	9	v		M	
+L07	10	x		M	
+L07	11	m		M	
+L07	12	0		M	
+L07	13	f		M	
+L07	14	4		M	
+L07	15	y		M	
+L07	16	c		M	
+L07	17	w		M	
+L07	18	v		M	
+L07	19	p		M	
+L07	20	x		M	
+L07	21	0		M	
+L07	22	y		M	
+L07	23	m		M	
+L07	24	p		M	
+L07	25	4		M	
+L07	26	1		M	
+L07	27	sq		M	
+L07	28	m		M	
+L07	29	L		M	
+L07	30	4		M	
+L07	31	v		M	
+L07	32	0		M	
+L07	33	f		M	
+L07	34	m		M	
+L07	35	y		M	
+L07	36	L		M	
+L07	37	0		M	
+L07	38	CLEAR		M	bon
+L07	39	CLEAR		M	gentilhomme
+L07	40	v		M	
+L07	41	0		M	
+L07	42	4		M	
+L07	43	z		M	
+L07	44	v		M	
+L07	45	L		M	
+L07	46	0		M	
+L07	47	sq		M	
+L07	48	m		M	
+L07	49	.		M	
+L07	50	d		M	
+L07	51	y		M	
+L08	1	m		M	
+L08	2	c		M	
+L08	3	v		M	
+L08	4	m		M	
+L08	5	y		M	
+L08	6	L		M	
+L08	7	c		M	
+L08	8	4		M	
+L08	9	0		M	
+L08	10	#		M	
+L08	11	.		M	
+L08	12	y		M	
+L08	13	z		M	
+L08	14	x		M	
+L08	15	p		M	
+L08	16	v		M	
+L08	17	4		M	
+L08	18	3		M	
+L08	19	1		M	
+L08	20	2		M	
+L08	21	v		M	
+L08	22	f		M	
+L08	23	m		M	
+L08	24	sq		M	
+L08	25	m		M	
+L08	26	0		M	
+L08	27	#		M	
+L08	28	.		M	
+L08	29	1		M	
+L08	30	.		M	
+L08	31	f		M	
+L08	32	m		M	
+L08	33	#		M	
+L08	34	a		M	
+L08	35	L		M	
+L08	36	w		M	
+L08	37	v		M	
+L08	38	sq		M	
+L08	39	0		M	
+L08	40	0		M	
+L08	41	sq		M	
+L08	42	CLEAR		M	de
+L08	43	CLEAR		M	...
+L08	44	CLEAR		M	bonne
+L08	45	CLEAR		M	amy
+L09	1	y		M	
+L09	2	w		M	
+L09	3	3		M	
+L09	4	y		M	
+L09	5	f		M	
+L09	6	f		M	
+L09	7	0		M	
+L09	8	1		M	
+L09	9	sq		M	
+L09	10	L		M	
+L09	11	#		M	
+L09	12	p		M	
+L09	13	CLEAR		M	bona
+L09	14	CLEAR		M	...
+L09	15	CLEAR		M	si
+L09	16	CLEAR		M	bona
+L09	17	CLEAR		M	plaist
+L09	18	CLEAR		M	Mon
+L09	19	CLEAR		M	seigneur
+L09	20	f		M	
+L09	21	y		M	
+L09	22	v		M	
+L09	23	a		M	
+L09	24	m		M	
+L09	25	y		M	
+L09	26	L		M	
+L09	27	#		M	
+L09	28	0		M	
+L09	29	4		M	
+L09	30	4		M	
+L09	31	m		M	
+L09	32	1		M	
+L09	33	f		M	
+L09	34	v		M	
+L09	35	4		M	
+L09	36	0		M	
+L09	37	c		M	
+L09	38	1		M	
+L09	39	2		M	
+L09	40	0		M	
+L09	41	&		M	
+L09	42	1		M	
+L10	1	0		M	
+L10	2	sq		M	
+L10	3	m		M	
+L10	4	3		M	
+L10	5	1		M	
+L10	6	1		M	
+L10	7	0		M	
+L10	8	#		M	
+L10	9	w		M	
+L10	10	L		M	
+L10	11	w		M	
+L10	12	0		M	
+L10	13	CLEAR		M	promptement
+L10	14	v		M	
+L10	15	#		M	
+L10	16	0		M	
+L10	17	m		M	
+L10	18	sq		M	
+L10	19	3		M	
+L10	20	0		M	
+L10	21	#		M	
+L10	22	1		M	
+L10	23	sq		M	
+L10	24	m		M	
+L10	25	0		M	
+L10	26	m		M	
+L10	27	p		M	
+L10	28	4		M	
+L10	29	+		M	
+L10	30	0		M	
+L10	31	3		M	
+L10	32	1		M	
+L10	33	L		M	
+L10	34	f		M	
+L10	35	0		M	
+L10	36	w		M	
+L10	37	0		M	
+L10	38	#		M	
+L10	39	.		M	
+L10	40	m		M	
+L10	41	y		M	
+L10	42	L		M	
+L10	43	w		M	
+L10	44	v		M	
+L10	45	m		M	
+L10	46	4		M	
+L10	47	m		M	
+L10	48	c		M	
+L10	49	a		M	
+L10	50	m		M	
+L10	51	.		M	
+L11	1	z		M	
+L11	2	y		M	
+L11	3	L		M	
+L11	4	CLEAR		M	on
+L11	5	CLEAR		M	...
+L11	6	CLEAR		M	que
+L11	7	CLEAR		M	bona
+L11	8	CLEAR		M	plaira
+L11	9	CLEAR		M	ordonner
+L11	10	d		M	
+L11	11	y		M	
+L11	12	m		M	
+L11	13	c		M	
+L11	14	#		M	
+L11	15	y		M	
+L11	16	z		M	
+L11	17	v		M	
+L11	18	f		M	
+L11	19	3		M	
+L11	20	0		M	
+L11	21	w		M	
+L11	22	4		M	
+L11	23	1		M	
+L11	24	sq		M	
+L11	25	#		M	
+L11	26	m		M	
+L11	27	x		M	
+L11	28	w		M	
+L11	29	v		M	
+L11	30	sq		M	
+L11	31	0		M	
+L11	32	1		M	
+L11	33	.		M	
+L11	34	sq		M	
+L11	35	0		M	
+L11	36	f		M	
+L11	37	#		M	
+L11	38	y		M	
+L11	39	w		M	
+L11	40	a		M	
+L11	41	m		M	
+L11	42	4		M	
+L11	43	0		M	
+L12	1	0		M	
+L12	2	f		M	
+L12	3	v		M	
+L12	4	1		M	
+L12	5	0		M	
+L12	6	f		M	
+L12	7	v		M	
+L12	8	4		M	
+L12	9	0		M	
+L12	10	m		M	
+L12	11	v		M	
+L12	12	c		M	
+L12	13	1		M	
+L12	14	sq		M	
+L12	15	CLEAR		M	de
+L12	16	CLEAR		M	sa
+L12	17	CLEAR		M	ma
+L12	18	CLEAR		M	dautant
+L12	19	CLEAR		M	que
+L12	20	CLEAR		M	bone
+L12	21	CLEAR		M	...
+L12	22	CLEAR		M	sans
+L12	23	CLEAR		M	...
+L12	24	CLEAR		M	particulier
+L12	25	CLEAR		M	et
+L12	26	CLEAR		M	si
+L12	27	CLEAR		M	bona
+L12	28	CLEAR		M	plaist
+L12	29	L		M	
+L13	1	4		M	
+L13	2	v		M	
+L13	3	3		M	
+L13	4	p		M	
+L13	5	+		M	
+L13	6	L		M	
+L13	7	0		M	
+L13	8	0		M	
+L13	9	f		M	
+L13	10	#		M	
+L13	11	L		M	
+L13	12	0		M	
+L13	13	sq		M	
+L13	14	m		M	
+L13	15	w		M	
+L13	16	0		M	
+L13	17	a		M	
+L13	18	m		M	
+L13	19	p		M	
+L13	20	sq		M	
+L13	21	0		M	
+L13	22	.		M	
+L13	23	3		M	
+L13	24	v		M	
+L13	25	m		M	
+L13	26	m		M	
+L13	27	v		M	
+L13	28	f		M	
+L13	29	v		M	
+L13	30	a		M	
+L13	31	m		M	
+L13	32	4		M	
+L13	33	x		M	
+L13	34	v		M	
+L13	35	?		L	
+L13	36	L		M	
+L13	37	y		M	
+L13	38	m		M	
+L13	39	w		M	
+L13	40	sq		M	
+L13	41	a		M	
+L13	42	m		M	
+L13	43	0		M	
+L13	44	#		M	
+L13	45	.		M	
+L13	46	1		M	
+L13	47	.		M	
+L13	48	4		M	
+L13	49	+		M	
+L13	50	a		M	
+L13	51	L		M	
+L13	52	a		M	
+L13	53	m		M	
+L13	54	m		M	
+L13	55	1		M	
+L13	56	+		M	
+L14	1	0		M	
+L14	2	f		M	
+L14	3	m		M	
+L14	4	y		M	
+L14	5	L		M	
+L14	6	1		M	
+L14	7	v		M	
+L14	8	0		M	
+L14	9	4		M	
+L14	10	z		M	
+L14	11	v		M	
+L14	12	L		M	
+L14	13	0		M	
+L14	14	sq		M	
+L14	15	m		M	
+L14	16	1		M	
+L14	17	0		M	
+L14	18	sq		M	
+L14	19	m		M	
+L14	20	d		M	
+L14	21	v		M	
+L14	22	c		M	
+L14	23	v		M	
+L14	24	L		M	
+L14	25	CLEAR		M	que
+L14	26	CLEAR		M	...
+L14	27	CLEAR		M	sont
+L14	28	a		M	
+L14	29	m		M	
+L14	30	0		M	
+L14	31	3		M	
+L14	32	v		M	
+L14	33	L		M	
+L14	34	0		M	
+L14	35	w		M	
+L14	36	CLEAR		M	...
+L14	37	CLEAR		M	partie
