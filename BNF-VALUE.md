@@ -239,3 +239,15 @@ the strongest new material (a held key or a sibling folder) once reproduced. Re-
 - Workers: none (account 2 still reports seven_day allowed_warning -> BUDGETS scaling rule).
 
 11 Oct UTC spend on this lane: 0 workers. Next best attempt: unchanged. Re-check once a day.
+
+## Wave 19 (12 Oct 2026, 06:3x UTC by date -u): daily re-check
+
+- Gallica: no session had logged a block in the previous 6 h, so I sent one IIIF info.json request: 403. No retry.
+  Rondinelli (fr3613-rondinelli-1590) waits.
+- Bourdeau re-screened at HEAD 4efc93a (was 843165c): five commits (sunintercepts, Voynich, Lasry review, blume),
+  no BnF item touched; fr.4698/4700 still his catalogue 331 candidate -- left to him.
+- Dataset: `holder_dataset.py --check` current (118 folders, 35 readings, 20 N3+, 6 D2+).
+- Desk rows (Sega edition; fr.3622 f.91 sign sorter): no answer in ROOM.md since 11 Oct 06:20.
+- Workers: none (account 3 reports weekly allowed_warning, 11 Oct 07:02 and 12 Oct 00:15 -> BUDGETS scaling rule).
+
+12 Oct UTC spend on this lane: 0 workers. Next best attempt: unchanged. Re-check once a day.
