@@ -6,7 +6,9 @@ copy, tools/stream_align.band_dp, free start). Two outputs:
     witnesses for the key86 T31 data conflict (HYPOTHESES.md).
  2. with --grade: kp86e/grades_f275r.tsv, rule-4 grades for f.275r (C = every decoded letter aligns identically; T31
     tokens are C only if that holds, i.e. never while key86 says m and the copy says o; other decoded tokens M; U).
-    Run only when kp86e arm A is a licensed PASS."""
+    Run only when kp86e arm A is a licensed PASS.
+ 3. with --grade --page f244r (PISA-RS244, 12 Oct 2026): the same rule-4 grades for f.244r -> kp86e/grades_f244r.tsv
+    (default --page f275r, unchanged)."""
 import os, sys
 from collections import Counter
 import numpy as np
@@ -56,15 +58,17 @@ with open(os.path.join(H, 't31_witness.tsv'), 'w') as f:
 for name, *_ in PAGES:
     print(name, Counter(r[3] for r in rows if r[0] == name))
 if '--grade' in sys.argv:
-    toks, where, ctext, dec, owner, pm = align(PAGES[2][1], PAGES[2][2])
+    pg = sys.argv[sys.argv.index('--page') + 1] if '--page' in sys.argv else 'f275r'
+    ix = {'f244r': 0, 'f275r': 2}[pg]
+    toks, where, ctext, dec, owner, pm = align(PAGES[ix][1], PAGES[ix][2])
     ok = {i for i, j in pm.items() if dec[i] == ord(ctext[j]) - 97}
     grade = []
     for i, t in enumerate(toks):
         idx = [n for n, o in enumerate(owner) if o == i]
         g = 'U' if not idx else 'C' if all(n in ok for n in idx) else 'M'
         grade.append('M' if t == 'T31' and g == 'C' else g)   # HYPOTHESES.md: T31 held at M (data conflict)
-    with open(os.path.join(H, 'grades_f275r.tsv'), 'w') as f:
+    with open(os.path.join(H, f'grades_{pg}.tsv'), 'w') as f:
         f.write('line\tpos\tsign\tvalue\tgrade\n')
         for (l, p), t, g in zip(where, toks, grade):
             f.write(f'{l}\t{p}\t{t}\t{key.get(t, "")}\t{g}\n')
-    print('f.275r grades', Counter(grade), 'tokens', len(toks), 'identical letters', len(ok), 'of', len(dec))
+    print(f'f.{pg[1:]} grades', Counter(grade), 'tokens', len(toks), 'identical letters', len(ok), 'of', len(dec))

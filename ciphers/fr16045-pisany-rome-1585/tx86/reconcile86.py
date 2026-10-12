@@ -35,7 +35,7 @@ for r in rows:
             else:
                 s = b; n['r4B'] += 1
     out.setdefault(r['line'], []).append(s)
-with open(os.path.join(H, 'ciphertext_f244r.tsv'), 'w') as f:
+with open(os.path.join(H, 'ciphertext_f244r_preRS244.tsv'), 'w') as f:   # PISA-RS244: pisa_rs244/apply_rs244.py derives ciphertext_f244r.tsv
     for l in sorted(out):
         f.write(l + '\t' + ' '.join(out[l]) + '\n')
 print(n, sum(len(v) for v in out.values()), 'tokens')

@@ -1,0 +1,16 @@
+tx86/ciphertext_f244r.tsv {'tokens': 410, 'dropped': 17, 'decoded_letters': 449, 'score': 0.6771, 'keyshuffle_p99': 0.3517, 'order_p99': 0.4254, 'above_both': True}
+tx86/passA.tsv {'tokens': 366, 'dropped': 52, 'decoded_letters': 412, 'score': 0.6869, 'keyshuffle_p99': 0.3664, 'order_p99': 0.4539, 'above_both': True}
+tx86/passB.tsv {'tokens': 394, 'dropped': 0, 'decoded_letters': 433, 'score': 0.7021, 'keyshuffle_p99': 0.35, 'order_p99': 0.4342, 'above_both': True}
+control 5 /5
+pisa_rs244/tx/ciphertext_f244r_T45_T19.tsv {'tokens': 410, 'dropped': 17, 'decoded_letters': 449, 'score': 0.6904, 'keyshuffle_p99': 0.3521, 'order_p99': 0.4298, 'above_both': True}
+T45->T19 0.6904 {'G1': True, 'G2': True} {'relabelled': 10, 'identical_new': 8, 'identical_old': 3, 'pass': True} PASS True
+pisa_rs244/tx/ciphertext_f244r_T47_T27.tsv {'tokens': 410, 'dropped': 17, 'decoded_letters': 449, 'score': 0.6837, 'keyshuffle_p99': 0.3503, 'order_p99': 0.4276, 'above_both': True}
+T47->T27 0.6837 {'G1': True, 'G2': True} {'relabelled': 3, 'identical_new': 3, 'identical_old': 0, 'pass': True} PASS True
+pisa_rs244/tx/ciphertext_f244r_T57_T32.tsv {'tokens': 410, 'dropped': 17, 'decoded_letters': 444, 'score': 0.6937, 'keyshuffle_p99': 0.3485, 'order_p99': 0.4302, 'above_both': True}
+T57->T32 0.6937 {'G1': True, 'G2': True} {'relabelled': 5, 'identical_new': 5, 'identical_old': 0, 'pass': True} PASS True
+pisa_rs244/tx/ciphertext_f244r_T57_T35.tsv {'tokens': 410, 'dropped': 17, 'decoded_letters': 446, 'score': 0.6816, 'keyshuffle_p99': 0.3518, 'order_p99': 0.4305, 'above_both': True}
+T57->T35 0.6816 {'G1': True, 'G2': True} {'relabelled': 3, 'identical_new': 0, 'identical_old': 0, 'pass': False} PASS False
+pisa_rs244/tx/ciphertext_f244r_T57_T42.tsv {'tokens': 410, 'dropped': 17, 'decoded_letters': 448, 'score': 0.6763, 'keyshuffle_p99': 0.3502, 'order_p99': 0.4263, 'above_both': True}
+T57->T42 0.6763 {'G1': False, 'G2': True} {'relabelled': 1, 'identical_new': 0, 'identical_old': 0, 'pass': False} PASS False
+pisa_rs244/tx/ciphertext_f244r.tsv {'tokens': 410, 'dropped': 17, 'decoded_letters': 444, 'score': 0.714, 'keyshuffle_p99': 0.3499, 'order_p99': 0.4324, 'above_both': True}
+old 0.6771 combined 0.714 committable ['T45->T19', 'T47->T27', 'T57->T32']

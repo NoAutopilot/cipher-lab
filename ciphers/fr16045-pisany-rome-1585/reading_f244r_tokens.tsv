@@ -35,7 +35,7 @@ L01	33	T09		i	H
 L01	34	T18		t	H
 L01	35	T03		c	H
 L01	36	T23		a	H
-L01	37	T45		o	H
+L01	37	T19		u	H
 L01	38	T26		e	H
 L01	39	T23		a	H
 L01	40	T62		que	H
@@ -70,7 +70,7 @@ L02	8	T17		s	H
 L02	9	/		?	U
 L02	10	T23		a	H
 L02	11	?[tcross]		?	U
-L02	12	T45		o	H
+L02	12	T19		u	H
 L02	13	T05		e	H
 L02	14	T35		r	H
 L02	15	T58		le	H
@@ -98,7 +98,7 @@ L02	36	T44		l	H
 L02	37	T26		e	H
 L02	38	T17		s	H
 L02	39	T43		i	H
-L02	40	T57		la	H
+L02	40	T32		n	H
 L02	41	T43		i	H
 L02	42	T26		e	H
 L02	43	?[t]		?	U
@@ -128,7 +128,7 @@ L03	14	T35		r	H
 L03	15	T41		e	H
 L03	16	T18		t	H
 L03	17	T26		e	H
-L03	18	T57		la	H
+L03	18	T32		n	H
 L03	19	T09		i	H
 L03	20	T16		r	H
 L03	21	T62		que	H
@@ -178,8 +178,8 @@ L04	18	T62		que	H
 L04	19	T17		s	H
 L04	20	T43		i	H
 L04	21	T30		l	H
-L04	22	T47		m	H
-L04	23	T45		o	H
+L04	22	T27		f	H
+L04	23	T19		u	H
 L04	24	T17		s	H
 L04	25	T18		t	H
 L04	26	/		?	U
@@ -201,14 +201,14 @@ L04	41	T26		e	H
 L04	42	?[longs]		?	U
 L04	43	T18		t	H
 L04	44	?[tcross]		?	U
-L04	45	T45		o	H
+L04	45	T19		u	H
 L04	46	T43		i	H
 L04	47	T41		e	H
 L04	48	T03		c	H
 L04	49	T18		t	H
 L04	50	T12		n	H
 L04	51	/		?	U
-L05	1	T47		m	H
+L05	1	T27		f	H
 L05	2	T09		i	H
 L05	3	T25		d	H
 L05	4	T41		e	H
@@ -219,7 +219,7 @@ L05	8	T25		d	H
 L05	9	T41		e	H
 L05	10	T17		s	H
 L05	11	T43		i	H
-L05	12	T57		la	H
+L05	12	T32		n	H
 L05	13	T37		t	H
 L05	14	T26		e	H
 L05	15	?[t]		?	U
@@ -244,7 +244,7 @@ L05	33	T18		t	H
 L05	34	T41		e	H
 L05	35	T35		r	H
 L05	36	T26		e	H
-L05	37	T45		o	H
+L05	37	T19		u	H
 L05	38	T16		r	H
 L05	39	T41		e	H
 L05	40	/		?	U
@@ -253,7 +253,7 @@ L05	42	T30		l	H
 L05	43	T10		l	H
 L05	44	T46		u	H
 L05	45	T49		s	H
-L05	46	T47		m	H
+L05	46	T27		f	H
 L05	47	T19		u	H
 L05	48	T46		u	H
 L05	49	T17		s	H
@@ -281,7 +281,7 @@ L06	20	T16		r	H
 L06	21	/		?	U
 L06	22	?[qcross]		?	U
 L06	23	T30		l	H
-L06	24	T45		o	H
+L06	24	T19		u	H
 L06	25	?[tcross]		?	U
 L06	26	T18		t	H
 L06	27	T14		p	H
@@ -314,7 +314,7 @@ L06	53	T58		le	H
 L07	1	T23		a	H
 L07	2	T49		s	H
 L07	3	T26		e	H
-L07	4	T45		o	H
+L07	4	T19		u	H
 L07	5	T35		r	H
 L07	6	T41		e	H
 L07	7	T44		l	H
@@ -336,7 +336,7 @@ L07	22	T18		t	H
 L07	23	?[tcross]		?	U
 L07	24	?[qcross]		?	U
 L07	25	T18		t	H
-L07	26	T45		o	H
+L07	26	T19		u	H
 L07	27	T14		p	H
 L07	28	T35		r	H
 L07	29	T31		m	H
@@ -367,7 +367,7 @@ L07	53	T25		d	H
 L07	54	T26		e	H
 L07	55	/		?	U
 L08	1	T10		l	H
-L08	2	T45		o	H
+L08	2	T19		u	H
 L08	3	T49		s	H
 L08	4	T43		i	H
 L08	5	T10		l	H
@@ -386,7 +386,7 @@ L08	17	T58		le	H
 L08	18	T17		s	H
 L08	19	T46		u	H
 L08	20	T49		s	H
-L08	21	T57		la	H
+L08	21	T32		n	H
 L08	22	T05		e	H
 L08	23	T26		e	H
 L08	24	T37		t	H
@@ -395,13 +395,13 @@ L08	26	T37		t	H
 L08	27	T14		p	H
 L08	28	T46		u	H
 L08	29	T18		t	H
-L08	30	T45		o	H
+L08	30	T19		u	H
 L08	31	T43		i	H
 L08	32	T18		t	H
 L08	33	T23		a	H
 L08	34	T12		n	H
 L08	35	T17		s	H
-L08	36	T57		la	H
+L08	36	T32		n	H
 L08	37	T40		a	H
 L08	38	T44		l	H
 L08	39	T41		e	H

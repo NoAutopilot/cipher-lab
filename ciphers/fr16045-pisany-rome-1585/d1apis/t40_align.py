@@ -10,7 +10,8 @@ H = os.path.dirname(os.path.abspath(__file__)); T = os.path.dirname(H)
 sys.path.insert(0, os.path.join(T, 'kp86')); sys.path.insert(0, os.path.join(T, '../../tools'))
 from kp86 import norm, load_key
 from stream_align import band_dp, A
-PAGES = [('f244r', 'tx86/ciphertext_f244r.tsv', 'kp86/colbert_p49_50.txt'),
+PAGES = [('f244r', 'tx86/' + ('ciphertext_f244r_preRS244.tsv' if os.path.exists(os.path.join(T, 'tx86/ciphertext_f244r_preRS244.tsv')) else 'ciphertext_f244r.tsv'),   # PISA-RS244 pre-edit bytes
+         'kp86/colbert_p49_50.txt'),
          ('f244v_f245r', 'tx86c/ciphertext_f244v_f245r.tsv', 'kp86b/colbert_p51_52.txt'),
          ('f247r', 'tx86g/ciphertext_f247r.tsv', 'kp86g/colbert_f247r.txt'),
          ('f275r', 'tx86e/ciphertext_f275r.tsv', 'kp86d/colbert_p121_123.txt'),

@@ -61,7 +61,7 @@ def test(toks, key, clear, nk, no, rnd):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--err', type=float, required=True)
-    ap.add_argument('--tokens', default='tx86/ciphertext_f244r.tsv')
+    ap.add_argument('--tokens', default='tx86/ciphertext_f244r_preRS244.tsv' if os.path.exists(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'tx86/ciphertext_f244r_preRS244.tsv')) else 'tx86/ciphertext_f244r.tsv')  # PISA-RS244
     ap.add_argument('--extra', nargs='*', default=['tx86/passA.tsv', 'tx86/passB.tsv'])
     a = ap.parse_args()
     key = load_key()

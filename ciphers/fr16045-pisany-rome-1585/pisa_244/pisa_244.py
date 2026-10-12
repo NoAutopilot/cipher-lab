@@ -8,7 +8,7 @@ from collections import Counter
 from PIL import Image
 sys.path.insert(0, 'ciphers/fr16045-pisany-rome-1585/una_pisa')
 import una_pisa as UP, strips
-strips.PAGES['f244r'] = ('f244r', 1360, 'tx86/ciphertext_f244r.tsv')  # R9-PIS2's f.244r stitch (s2 box x 1360)
+strips.PAGES['f244r'] = ('f244r', 1360, 'tx86/ciphertext_f244r_preRS244.tsv' if os.path.exists(f'{UP.D}/tx86/ciphertext_f244r_preRS244.tsv') else 'tx86/ciphertext_f244r.tsv')  # PISA-RS244 pre-edit labels  # R9-PIS2's f.244r stitch (s2 box x 1360)
 D = UP.D; H = f'{D}/pisa_244'; SEED = 20261012 + 244
 
 def located():

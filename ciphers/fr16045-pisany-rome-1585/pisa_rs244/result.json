@@ -1,0 +1,272 @@
+{
+ "err": 0.284,
+ "file": "tx86/ciphertext_f244r.tsv",
+ "copy": "kp86/colbert_p49_50.txt",
+ "old": {
+  "tx86/ciphertext_f244r.tsv": {
+   "tokens": 410,
+   "dropped": 17,
+   "score": 0.6771,
+   "keyshuffle_p99": 0.3517,
+   "order_p99": 0.4254,
+   "above_both": true
+  },
+  "tx86/passA.tsv": {
+   "tokens": 366,
+   "dropped": 52,
+   "score": 0.6869,
+   "keyshuffle_p99": 0.3664,
+   "order_p99": 0.4539,
+   "above_both": true
+  },
+  "tx86/passB.tsv": {
+   "tokens": 394,
+   "dropped": 0,
+   "score": 0.7021,
+   "keyshuffle_p99": 0.35,
+   "order_p99": 0.4342,
+   "above_both": true
+  }
+ },
+ "positive_control": {
+  "seeds": [
+   {
+    "seed": 0,
+    "N": 454,
+    "score": 0.6027,
+    "keyshuffle_p99": 0.3105,
+    "order_p99": 0.3689,
+    "pass": true
+   },
+   {
+    "seed": 1,
+    "N": 454,
+    "score": 0.6219,
+    "keyshuffle_p99": 0.3101,
+    "order_p99": 0.3763,
+    "pass": true
+   },
+   {
+    "seed": 2,
+    "N": 454,
+    "score": 0.6369,
+    "keyshuffle_p99": 0.3101,
+    "order_p99": 0.3869,
+    "pass": true
+   },
+   {
+    "seed": 3,
+    "N": 454,
+    "score": 0.5912,
+    "keyshuffle_p99": 0.3086,
+    "order_p99": 0.3767,
+    "pass": true
+   },
+   {
+    "seed": 4,
+    "N": 454,
+    "score": 0.5572,
+    "keyshuffle_p99": 0.303,
+    "order_p99": 0.3656,
+    "pass": true
+   }
+  ],
+  "passed": 5,
+  "pass": true
+ },
+ "T45->T19": {
+  "picks": [
+   "L01 p37",
+   "L02 p12",
+   "L04 p23",
+   "L04 p45",
+   "L05 p37",
+   "L06 p24",
+   "L07 p26",
+   "L07 p4",
+   "L08 p2",
+   "L08 p30"
+  ],
+  "n_old_label_on_page": 11,
+  "new": {
+   "tokens": 410,
+   "dropped": 17,
+   "score": 0.6904,
+   "keyshuffle_p99": 0.3521,
+   "order_p99": 0.4298,
+   "above_both": true
+  },
+  "all_old_relabel": 0.6904231625835189,
+  "G1": true,
+  "G2": true,
+  "random_subset_null": {
+   "n": 11,
+   "degenerate": true,
+   "mean": 0.6892,
+   "p95": 0.6904,
+   "max": 0.6904,
+   "share_ge_ours": 0.455
+  },
+  "G3": {
+   "relabelled": 10,
+   "identical_new": 8,
+   "identical_old": 3,
+   "pass": true
+  },
+  "PASS": true,
+  "commit": true
+ },
+ "T47->T27": {
+  "picks": [
+   "L04 p22",
+   "L05 p1",
+   "L05 p46"
+  ],
+  "n_old_label_on_page": 5,
+  "new": {
+   "tokens": 410,
+   "dropped": 17,
+   "score": 0.6837,
+   "keyshuffle_p99": 0.3503,
+   "order_p99": 0.4276,
+   "above_both": true
+  },
+  "all_old_relabel": 0.6837416481069042,
+  "G1": true,
+  "G2": true,
+  "random_subset_null": {
+   "n": 10,
+   "degenerate": true,
+   "mean": 0.6811,
+   "p95": 0.6815,
+   "max": 0.6837,
+   "share_ge_ours": 0.1
+  },
+  "G3": {
+   "relabelled": 3,
+   "identical_new": 3,
+   "identical_old": 0,
+   "pass": true
+  },
+  "PASS": true,
+  "commit": true
+ },
+ "T57->T32": {
+  "picks": [
+   "L02 p40",
+   "L03 p18",
+   "L05 p12",
+   "L08 p21",
+   "L08 p36"
+  ],
+  "n_old_label_on_page": 10,
+  "new": {
+   "tokens": 410,
+   "dropped": 17,
+   "score": 0.6937,
+   "keyshuffle_p99": 0.3485,
+   "order_p99": 0.4302,
+   "above_both": true
+  },
+  "all_old_relabel": 0.7015945330296127,
+  "G1": true,
+  "G2": true,
+  "random_subset_null": {
+   "n": 200,
+   "degenerate": false,
+   "mean": 0.6891,
+   "p95": 0.6937,
+   "max": 0.6959,
+   "share_ge_ours": 0.005
+  },
+  "G3": {
+   "relabelled": 5,
+   "identical_new": 5,
+   "identical_old": 0,
+   "pass": true
+  },
+  "PASS": true,
+  "commit": true
+ },
+ "T57->T35": {
+  "picks": [
+   "L05 p21",
+   "L05 p30",
+   "L06 p41"
+  ],
+  "n_old_label_on_page": 10,
+  "new": {
+   "tokens": 410,
+   "dropped": 17,
+   "score": 0.6816,
+   "keyshuffle_p99": 0.3518,
+   "order_p99": 0.4305,
+   "above_both": true
+  },
+  "all_old_relabel": 0.6879271070615034,
+  "G1": true,
+  "G2": true,
+  "random_subset_null": {
+   "n": 120,
+   "degenerate": false,
+   "mean": 0.6803,
+   "p95": 0.6816,
+   "max": 0.6816,
+   "share_ge_ours": 0.467
+  },
+  "G3": {
+   "relabelled": 3,
+   "identical_new": 0,
+   "identical_old": 0,
+   "pass": false
+  },
+  "PASS": false,
+  "commit": false
+ },
+ "T57->T42": {
+  "picks": [
+   "L02 p35"
+  ],
+  "n_old_label_on_page": 10,
+  "new": {
+   "tokens": 410,
+   "dropped": 17,
+   "score": 0.6763,
+   "keyshuffle_p99": 0.3502,
+   "order_p99": 0.4263,
+   "above_both": true
+  },
+  "all_old_relabel": 0.6879271070615034,
+  "G1": false,
+  "G2": true,
+  "random_subset_null": {
+   "n": 10,
+   "degenerate": true,
+   "mean": 0.6781,
+   "p95": 0.6786,
+   "max": 0.6786,
+   "share_ge_ours": 1.0
+  },
+  "G3": {
+   "relabelled": 1,
+   "identical_new": 0,
+   "identical_old": 0,
+   "pass": false
+  },
+  "PASS": false,
+  "commit": false
+ },
+ "committable_groups": [
+  "T45->T19",
+  "T47->T27",
+  "T57->T32"
+ ],
+ "combined": {
+  "tokens": 410,
+  "dropped": 17,
+  "score": 0.714,
+  "keyshuffle_p99": 0.3499,
+  "order_p99": 0.4324,
+  "above_both": true
+ }
+}

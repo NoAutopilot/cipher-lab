@@ -14,6 +14,9 @@ from kp86d import load_tokens, control
 from stream_align import nw_score
 
 
+F244 = 'ciphertext_f244r_preRS244.tsv' if os.path.exists(os.path.join(T, 'tx86/ciphertext_f244r_preRS244.tsv')) else 'ciphertext_f244r.tsv'   # PISA-RS244: results computed on the pre-edit bytes
+
+
 def clear_of(path, drop=''):
     raw = open(os.path.join(T, path)).read()
     return np.array([ord(c) - 97 for c in norm(raw)], dtype=np.int64), norm(raw.replace(drop, '') if drop else raw)
@@ -59,7 +62,7 @@ def merge_cut(body):
 
 def relabel():
     key = load_key(); out = {}
-    pages = [('f244r', 'tx86', ['ciphertext_f244r.tsv', 'passA.tsv', 'passB.tsv'], 'kp86/colbert_p49_50.txt', '', 0.284,
+    pages = [('f244r', 'tx86', [F244, 'passA.tsv', 'passB.tsv'], 'kp86/colbert_p49_50.txt', '', 0.284,
               sub_all('T45')),
              ('f275r', 'tx86e', ['ciphertext_f275r.tsv', 'passA.tsv', 'passB.tsv'], 'kp86d/colbert_p121_123.txt',
               'Mais croyant que Monsieur de Luxembourg', 0.215, sub_all('T36'))]
@@ -128,7 +131,7 @@ def identical(ctf, clf, key, newlab):
     return {"tokens_with_new_label": tot, "identical": hit, "note": "counts all tokens now carrying the new label, incl. ones that already had it"}
 
 
-FIT = [('tx86/ciphertext_f244r.tsv', 'kp86/colbert_p49_50.txt'), ('tx86c/ciphertext_f244v_f245r.tsv', 'kp86b/colbert_p51_52.txt')]
+FIT = [('tx86/' + F244, 'kp86/colbert_p49_50.txt'), ('tx86c/ciphertext_f244v_f245r.tsv', 'kp86b/colbert_p51_52.txt')]
 HELD = [('f275r', 'tx86e/ciphertext_f275r.tsv', 'kp86d/colbert_p121_123.txt', 'Mais croyant que Monsieur de Luxembourg', 0.215),
         ('f301v', 'tx87/ciphertext_f301v_preT32.tsv', 'kp87a/colbert_p338_339.txt', '', 0.192)]
 CELLS = ['T45', 'T47', 'T49', 'T57']
