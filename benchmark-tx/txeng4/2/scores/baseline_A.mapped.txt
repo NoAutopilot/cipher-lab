@@ -1,0 +1,12 @@
+# python3 tools/tx_bench.py benchmark-tx/outputs/dint-f128-print/passA.tsv --bench BENCHMARK-TX.tsv --item dint-f128-print --coverage-diagnostic --strict --ci --exclude-flagged --label-map benchmark-tx/dint128_label_map.tsv
+COVERAGE DIAGNOSTIC: partial coverage, missing truth lines are listed and not scored, unknown line ids ignored; not the fixed-manifest score
+dint-f128-print [dev] as measured: err_true(0.75-indel align) 0.247 (21/85) | standard SER (unit-cost Levenshtein) 0.247 (21/85): S 13 D 2 I 6 | wrong 12 deleted 2 inserted 7 | excluded 98 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 12/83 = 0.145 | coverage 83/85 = 0.977
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.247 (21/85) | standard SER 0.247 (21/85)
+    standard SER line bootstrap 95% (1000 resamples, conditional on this item's 4 lines): 0.161-0.355
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.247 (21/85) | standard SER (unit-cost Levenshtein) 0.247 (21/85): S 13 D 2 I 6 | wrong 12 deleted 2 inserted 7 | excluded 98 | lines missing 0 (0 signs counted deleted) [0 flagged] | position errors 14/85 = 0.165 | insertions 7 / read 186 = 0.038
+    reader abstentions 0 | accepted-token error 12/83 = 0.145 | coverage 83/85 = 0.977
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.247 (21/85) | standard SER 0.247 (21/85)
+    standard SER line bootstrap 95% (1000 resamples, conditional on this item's 4 lines): 0.161-0.355
+  top confusions (truth value <- read): n<-t x3, n<-y x2, i<-x x2, e<-<deleted> x1, n<-4 x1, u<-c x1, n<-<deleted> x1, g<-o x1
+split dev: err_true(0.75-indel align) 0.247 (21/85) | standard SER 0.247 (21/85)

@@ -1,0 +1,6 @@
+join_check: PASS n=178 share0=0.298 (null p95 0.084) share+-1=0.146 (bound 0.182) -> benchmark-tx/txeng4/2/tiles/r2_map.tsv.joincheck.json
+  f130_L04: pass placed=23 {'none': 17, '0': 3, '+1': 2, '+-2': 1}
+  f130_L05: pass placed=27 {'+1': 2, '0': 9, 'none': 11, '-1': 2, '+-2': 3}
+  f130_L07: pass placed=50 {'0': 19, 'none': 20, '-1': 4, '+1': 2, '+-2': 5}
+  f130_L08: pass placed=49 {'+-2': 7, '-1': 4, 'none': 20, '0': 11, '+1': 7}
+  f130_L11: pass placed=29 {'none': 12, '0': 11, '-1': 2, '+-2': 3, '+1': 1}

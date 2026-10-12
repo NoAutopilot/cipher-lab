@@ -174,3 +174,37 @@ No truth file read by eye or by a tested arm; the f.128 truth opened only by tx_
 or flag. No tuning after a score. No eval item (birago1572-no87, birago1572-f152r, gunther8246-p2, bir1591-f23r-gloss) is scored:
 LOOKS.tsv gets no row from this job. No confirm item, no sorter page, no owner evidence. No f.130 reading product opened. Nothing
 published. No follow-up (the next step is named in RESULTS with its cost, not run).
+
+## Addendum (12 Oct 2026 01:5x UTC by date -u; read-free tile pipeline run; no reader call made, no score of any new output)
+- PREREG pushed 908527f4 (01:29 UTC); baseline re-derivation (step 1, committed outputs only, scored by score.py): pass A mapped
+  21/85 edits (err_true 0.247, S 13 D 2 I 6; raw 30/85 = 0.353), pass B mapped 16/85 (0.188, S 11 D 0 I 5; raw 26/85 = 0.306):
+  the figures on file reproduce. norm.py is byte-identical to the committed outputs on both committed passes.
+- Deviation, declared before any join or score: with --median-h pool (31.0 px over the 12 crops) glyph_atlas segment returned 0
+  signs for f130_L02_s1 (its two rows are 84 px apart; the tool's line finder sets a minimum peak distance of 0.7 x 4 x mh = 86 px
+  at 31 px and drops both), so that one crop was segmented alone at its own median (29 px, inside the pool's 28-35 range) and its
+  rows merged into tiles/atlas; the other 11 crops are the pooled run. Read-free, before any number of the gate was seen.
+- Line reads (tiles/reads/, --method nw --keep-dots): 419 pass-A tokens, 50 pass-B alternatives, 358 agreed positions.
+- Round 1 (--lam 0, --count-tol 0.10): lines f130_L02 (32 boxes vs 37 tokens), L09 (60 vs 68) and L10 (61 vs 70) skipped by the
+  count tolerance; 5 lines aligned; 178 1:1 boxes at agreed positions seed the kNN (21 labels).
+- Round 2 (--topk from classify --only-train-labels on the round-1 tokens, --loo): 250 rows, ops 1:1 157, unsure 25, 1:2 56, 2:1 12.
+- Shift check (R4a), pasted from tiles/r2_check_console.txt and tiles/r2_joincheck_steered.txt:
+    tokens-out: 131 1:1 boxes at 358 agreed positions -> benchmark-tx/txeng4/2/tiles/r2_tokens.tsv
+    check, new map, all its one-token tiles: n 182: at 0 76, -1 3, +1 7, +-2 16, none 80
+    check, new map leave-one-out (own label hidden): n 178: at 0 53, -1 12, +1 14, +-2 19, none 80
+    join_check --check-bound: PASS (steered=False) share0=0.418 (null p95 0.100) share+-1=0.055 (bound 0.170) -> benchmark-tx/txeng4/2/tiles/r2_map.tsv.joincheck.json
+    join_check.py --steered (BINDING: the k1 labels steered the map through --topk):
+    join_check: PASS n=178 share0=0.298 (null p95 0.084) share+-1=0.146 (bound 0.182) -> benchmark-tx/txeng4/2/tiles/r2_map.tsv.joincheck.json
+      f130_L04: pass placed=23 {'none': 17, '0': 3, '+1': 2, '+-2': 1}
+      f130_L05: pass placed=27 {'+1': 2, '0': 9, 'none': 11, '-1': 2, '+-2': 3}
+      f130_L07: pass placed=50 {'0': 19, 'none': 20, '-1': 4, '+1': 2, '+-2': 5}
+      f130_L08: pass placed=49 {'+-2': 7, '-1': 4, 'none': 20, '0': 11, '+1': 7}
+      f130_L11: pass placed=29 {'none': 12, '0': 11, '-1': 2, '+-2': 3, '+1': 1}
+  Verdict: PASS on the leave-one-out row (share at 0 0.298 vs null p95 0.084; share at +-1 0.146 under the bound 0.182; B1 holds on
+  all five placed lines). The in-sample row also PASSes (0.418 vs 0.100; 0.055 under 0.170). No line dropped, no re-check needed.
+- Purity gate (tiles/purity_console.txt): (i) share of 1:1 among the 216 boxes at agreed positions in round 2 = 131/216 = 0.606,
+  FAIL at 0.80 (1:2 51, 2:1 10, unsure 24); (ii) tiles 1:1 at the same position in both rounds 34, labels with >= 2 tiles 9 of 27
+  (#, 1, 0, a, f, y, m, v, sq), FAIL at 15; (iii) shift check PASS. Gate FAIL on (i) and (ii).
+- Declared reading applied: NON-TEST, "f.130 tiles not verifiably placed" on part (i) (a box-count mismatch, not a shift: 61 of the
+  216 boxes at agreed positions cover two tokens or share one, i.e. the default connected-component segmentation joins or splits
+  this cursive hand's signs) and "fewer than 15 labels pictured" on part (ii). The fill rule (step 2g) covers only part (ii) and
+  cannot repair part (i), so it is not run. P and S are not built; T is not read; LOOKS.tsv gets no row; no reader cost is spent.

@@ -1,0 +1,109 @@
+--- tools/glyph_atlas.py	2026-10-12 01:18:19.356874508 +0000
++++ /tmp/claude-0/-home-user-cipher-lab/b0be1198-7076-5bfb-bd91-1d6220a6abb7/scratchpad/tools/glyph_atlas.py	2026-10-12 01:31:35.542090052 +0000
+@@ -767,35 +767,80 @@
+     cell, cache = a.cell, {}
+     rows_tsv, strips = [], []
+     font = cv2.FONT_HERSHEY_SIMPLEX
++    row_text = {}
++    if getattr(a, 'row_text', None):
++        row_text = {r['code']: r['text'] for r in csv.DictReader((l for l in open(a.row_text) if not l.startswith('#')),
++                                                                 delimiter='\t')}
++    textw = 560 if row_text else 0                      # --row-text: the words column replaces the print column
++    base = (cell + textw + 12) if row_text else (2 * cell + 12)
++    picks = {}
+     for c in codes:
+         ids = by.get(c, [])
+         use = len(ids) >= a.min_secure
+-        pick = [ids[k] for k in pick_spread(X[ids], a.per, a.spread, a.trim)] if use else []
+-        strip = np.full((cell, (a.per + 2) * cell + 12), 255, np.uint8)
++        picks[c] = [ids[k] for k in pick_spread(X[ids], a.per, a.spread, a.trim)] if use else []
++    shown_from = {c: c for c in codes}
++    if getattr(a, 'shuffle_rows', None) is not None:
++        # --shuffle-rows SEED: a derangement of the tile sets among the rows that have tiles (no row keeps its own);
++        # labels, words and the print cell stay where they are. The control sheet of TXE4-2.
++        import random
++        have = [c for c in codes if picks[c]]
++        rng = random.Random(a.shuffle_rows)
++        perm = list(have)
++        while len(have) > 1 and any(x == y for x, y in zip(have, perm)):
++            rng.shuffle(perm)
++        src = dict(zip(have, perm))
++        picks = {c: picks[src.get(c, c)] for c in codes}
++        shown_from = {c: src.get(c, c) for c in codes}
++    for c in codes:
++        ids = by.get(c, [])
++        use = len(ids) >= a.min_secure
++        pick = picks[c]
++        strip = np.full((cell, base + a.per * cell), 255, np.uint8)
+         cv2.putText(strip, c, (4, cell // 2), font, 0.8, 0, 2)
+-        cv2.putText(strip, 'print' if c in canon else '', (4, cell // 2 + 22), font, 0.4, 90, 1)
+-        if c in canon:
+-            cc = canon[c]
+-            sc = min((cell - 6) / cc.shape[1], (cell - 6) / cc.shape[0])
+-            cc = cv2.resize(cc, (max(1, int(cc.shape[1] * sc)), max(1, int(cc.shape[0] * sc))), interpolation=cv2.INTER_AREA)
+-            y0, x0 = (cell - cc.shape[0]) // 2, cell + (cell - cc.shape[1]) // 2
+-            strip[y0:y0 + cc.shape[0], x0:x0 + cc.shape[1]] = cc
+-        cv2.line(strip, (2 * cell + 5, 4), (2 * cell + 5, cell - 4), 120, 2)      # print | the hand
++        if row_text:
++            from PIL import ImageDraw, ImageFont
++            try:
++                fnt = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', 17)
++            except OSError:
++                fnt = ImageFont.load_default()
++            words = row_text.get(c, '')
++            lines_, cur = [], ''
++            for w_ in words.split():
++                if len(cur) + len(w_) + 1 > 46 and cur:
++                    lines_.append(cur); cur = w_
++                else:
++                    cur = (cur + ' ' + w_).strip()
++            lines_.append(cur)
++            im = Image.fromarray(strip)
++            dr = ImageDraw.Draw(im)
++            for n_, ln_ in enumerate(lines_[:3]):
++                dr.text((cell + 2, cell // 2 - 22 + 22 * n_), ln_, fill=0, font=fnt)
++            strip = np.array(im)
++        else:
++            cv2.putText(strip, 'print' if c in canon else '', (4, cell // 2 + 22), font, 0.4, 90, 1)
++            if c in canon:
++                cc = canon[c]
++                sc = min((cell - 6) / cc.shape[1], (cell - 6) / cc.shape[0])
++                cc = cv2.resize(cc, (max(1, int(cc.shape[1] * sc)), max(1, int(cc.shape[0] * sc))), interpolation=cv2.INTER_AREA)
++                y0, x0 = (cell - cc.shape[0]) // 2, cell + (cell - cc.shape[1]) // 2
++                strip[y0:y0 + cc.shape[0], x0:x0 + cc.shape[1]] = cc
++        cv2.line(strip, (base - 7, 4), (base - 7, cell - 4), 120, 2)      # words/print | the hand
+         for k, i in enumerate(pick):
+             t = _tile(_page_grey(a.out, signs[i]['page'], cache), signs[i], cell)
+-            x0 = (k + 2) * cell + 12
++            x0 = base + k * cell
+             strip[:, x0:x0 + cell] = np.minimum(strip[:, x0:x0 + cell], t)
+             cv2.rectangle(strip, (x0, 0), (x0 + cell - 1, cell - 1), 200, 1)
+         cv2.line(strip, (0, cell - 1), (strip.shape[1], cell - 1), 150, 1)
+         strips.append(strip)
+-        rows_tsv.append([c, str(len(ids)), 'hand' if use else 'print-only', ','.join(signs[i]['sid'] for i in pick)])
++        rows_tsv.append([c, str(len(ids)), 'hand' if use else 'print-only', ','.join(signs[i]['sid'] for i in pick),
++                         shown_from[c]])
+     made = []
+     for s0 in range(0, len(strips), a.rows_per_sheet):
+         p = os.path.join(a.sheet_dir or a.out, f'{a.sheet_prefix}_{s0 // a.rows_per_sheet + 1:02d}.png')
+         cv2.imwrite(p, np.vstack(strips[s0:s0 + a.rows_per_sheet]))
+         made.append(p)
+     with open(os.path.join(a.sheet_dir or a.out, f'{a.sheet_prefix}.tsv'), 'w') as f:
+-        f.write('code\tn_secure\tshown\texemplars\n')
++        f.write('code\tn_secure\tshown\texemplars\tshown_from\n')
+         for r in rows_tsv:
+             f.write('\t'.join(r) + '\n')
+     nh = sum(r[2] == 'hand' for r in rows_tsv)
+@@ -1243,6 +1288,12 @@
+     t.add_argument('--per', type=int, default=10)
+     t.add_argument('--from-truth', help='TSV with sid, code [, grade]: securely read boxes; writes the per-hand exemplar '
+                                         'sheet instead of the cluster atlas (TX-SHEET, see the docstring)')
++    t.add_argument('--from-tokens', dest='from_truth', help='TXE4-2 (12 Oct 2026): alias of --from-truth for a TSV of MACHINE '
++                   'tokens (sid, code from a blind-pass join through box_token_align.py --tokens-out), never a truth file')
++    t.add_argument('--row-text', help='TXE4-2: TSV code, text: the words printed beside each row label (the brief\'s own '
++                   'label description), rendered with a TrueType font so non-ASCII glyph names survive')
++    t.add_argument('--shuffle-rows', type=int, help='TXE4-2: seed of a derangement of the hand tiles across the rows that have '
++                   'tiles (labels and words stay): the shuffled-picture control sheet; the TSV records shown_from')
+     t.add_argument('--spread', action='store_true', help='--from-truth: pick tiles by farthest-point spread, not nearest the mean')
+     t.add_argument('--trim', type=float, default=0.2, help='--from-truth: drop this farthest share of a code\'s tiles before picking (0.2)')
+     t.add_argument('--exclude-leaf', action='append', help='--from-truth: page never used for exemplars (the eval leaves), repeatable')

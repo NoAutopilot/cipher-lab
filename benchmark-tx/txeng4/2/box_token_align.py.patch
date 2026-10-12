@@ -1,0 +1,60 @@
+--- tools/box_token_align.py	2026-10-12 01:18:19.354849513 +0000
++++ /tmp/claude-0/-home-user-cipher-lab/b0be1198-7076-5bfb-bd91-1d6220a6abb7/scratchpad/tools/box_token_align.py	2026-10-12 01:30:57.487506419 +0000
+@@ -213,7 +213,7 @@
+     return S
+ 
+ 
+-def build_map(signs, read, labels=None, status=None, lines=None, lam=LAM, neutral=NEUTRAL, loo=True, read_alt=()):
++def build_map(signs, read, labels=None, status=None, lines=None, lam=LAM, neutral=NEUTRAL, loo=True, read_alt=(), count_tol=None):
+     """signs: atlas signs.tsv rows; read: (line, pos, sign) rows; read_alt: further (line, pos, sign) rows whose sign is
+     also acceptable at that token. Returns (rows, per_line) with rows carrying page/line and per_line
+     {line: dict(boxes, tokens, skipped)}."""
+@@ -239,6 +239,12 @@
+         W = sorted(int(s['w']) for s in pg)[len(pg) // 2]
+         bx = sorted([s for s in pg if int(s['line']) == li], key=lambda s: int(s['x']))
+         boxes = [dict(sid=s['sid'], w=s['w'], labels=labels.get(s['sid']), status=status.get(s['sid'], '')) for s in bx]
++        if count_tol is not None and toks and abs(len(boxes) - len(toks)) > count_tol * len(toks):
++            # --count-tol (TXE4-2, 12 Oct 2026): a line whose box count is off its token count by more than the tolerance is
++            # not aligned at all (listed in per_line as count_skipped), so a mis-segmented line never seeds a tile table
++            per[line] = dict(boxes=len(boxes), tokens=len(toks), skipped=[b['sid'] for b in boxes], count_skipped=True)
++            print(f'count-tol: {line} skipped ({len(boxes)} boxes vs {len(toks)} tokens, tol {count_tol})')
++            continue
+         if not boxes:
+             lr = [dict(sid='', pos=t['pos'], op='skiptok', labels='', status='', loo_pos='') for t in toks]
+             skipped = []
+@@ -344,12 +350,18 @@
+     ap.add_argument('--check-bound', action='store_true',
+                      help='run tools/join_check.py on the map just written (requires --check-labels); writes the '
+                           '.joincheck.json sidecar and exits 0 PASS, 2 FAIL, 3 UNCHECKABLE')
++    ap.add_argument('--keep-pos', help='TXE4-2: line, pos rows (the positions where two blind passes agree); --tokens-out keeps '
++                                       'only 1:1 boxes at these positions')
++    ap.add_argument('--tokens-out', help='TXE4-2: write sid, page, line, pos, label for the 1:1 boxes at the --keep-pos '
++                                         'positions (label = the --read sign there)')
++    ap.add_argument('--count-tol', type=float, help='TXE4-2: skip (and list) a line whose box count differs from its token '
++                                                     'count by more than this share of the tokens (e.g. 0.10)')
+     ap.add_argument('--out', required=True); ap.add_argument('--lines-out')
+     a = ap.parse_args(argv)
+     read = rd(a.read)
+     alt = [r for p in a.read_alt for r in rd(p)]
+     rows, per = build_map(rd(a.signs), read, read_labels(a.topk, a.tile_labels), read_status(a.status), a.lines,
+-                          a.lam, a.neutral, not a.no_loo, alt)
++                          a.lam, a.neutral, not a.no_loo, alt, a.count_tol)
+     old = read_old(a.old) if a.old else {}
+     for r in rows:
+         r['old_pos'] = old[r['sid']][1] if r['sid'] in old else ''
+@@ -357,6 +369,15 @@
+     print(f"map: {len(rows)} rows, ops {dict(Counter(r['op'] for r in rows))} -> {a.out}")
+     if a.lines_out:
+         wr(a.lines_out, LINE_COLS, line_summary(rows, per, old))
++    if a.tokens_out:
++        if not a.keep_pos:
++            ap.error('--tokens-out requires --keep-pos')
++        keep = {(r['line'], str(r['pos'])) for r in rd(a.keep_pos)}
++        sign_at = {(r['line'], str(r['pos'])): r['sign'] for r in read}
++        tok = [dict(sid=r['sid'], page=r['page'], line=r['line'], pos=r['pos'], label=sign_at[(r['line'], str(r['pos']))])
++               for r in rows if r['op'] == '1:1' and r['sid'] and (r['line'], str(r['pos'])) in keep]
++        wr(a.tokens_out, ['sid', 'page', 'line', 'pos', 'label'], tok)
++        print(f"tokens-out: {len(tok)} 1:1 boxes at {len(keep)} agreed positions -> {a.tokens_out}")
+     if a.check_labels:
+         chk = {r['sid']: (r.get('label') or r.get('sign')) for r in rd(a.check_labels)}
+         for name, c in check_report(rows, old, chk, read + alt):
