@@ -1,0 +1,5 @@
+(d) rec at L 1.4: test boxes 663
+(e) rec_perm1: test boxes 614; boxes differing in geometry from (d): 74 of 614 (can-vary count)
+(e) rec_perm2: test boxes 594; boxes differing in geometry from (d): 72 of 594 (can-vary count)
+(e) rec_perm3: test boxes 601; boxes differing in geometry from (d): 66 of 601 (can-vary count)
+per line (d): L02 68, L04 48, L08 44, L10 51, L16 50, L18 53, L20 53, L24 48, L28 52, L30 50, L32 54, L34 47, L36 45

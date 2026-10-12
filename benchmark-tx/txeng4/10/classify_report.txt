@@ -1,0 +1,10 @@
+frozen RecKNN: 158 exemplars, 23 codes, k 5, alpha 0.5, pca_scale unit
+pen: 569 test boxes classified (benchmark-tx/txeng3/6/seg/pen)
+sign: 653 test boxes classified (benchmark-tx/txeng3/6/seg/sign)
+rand1: 653 test boxes classified (benchmark-tx/txeng3/6/seg/rand1)
+rand2: 653 test boxes classified (benchmark-tx/txeng3/6/seg/rand2)
+rand3: 653 test boxes classified (benchmark-tx/txeng3/6/seg/rand3)
+rec: 663 test boxes classified (benchmark-tx/txeng4/10/seg/rec)
+rec_perm1: 614 test boxes classified (benchmark-tx/txeng4/10/seg/rec_perm1)
+rec_perm2: 594 test boxes classified (benchmark-tx/txeng4/10/seg/rec_perm2)
+rec_perm3: 601 test boxes classified (benchmark-tx/txeng4/10/seg/rec_perm3)
