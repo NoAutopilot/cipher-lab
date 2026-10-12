@@ -1,0 +1,31 @@
+{
+ "tiles": 31,
+ "by_status": {
+  "kept": 15,
+  "moved": 16,
+  "merged": 0,
+  "not-letter": 0,
+  "aside": 0,
+  "bad-cut": 0
+ },
+ "signs_before": 2,
+ "signs_after": 6,
+ "confirmed_piles": [],
+ "not_letter_piles": [
+  "NOT-LETTER"
+ ],
+ "merges": {},
+ "new_piles": [
+  "NOT-LETTER",
+  "g-b",
+  "q-b",
+  "q-c",
+  "q-d"
+ ],
+ "confirmed_tiles": [
+  "R1162_p1L05_1_03",
+  "R1162_p1L08_3_03"
+ ],
+ "mode": "blind",
+ "recuts": 21
+}

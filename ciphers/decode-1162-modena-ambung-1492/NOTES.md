@@ -758,3 +758,19 @@ Read so far: 77 of 77 cipher signs on p.1 assigned a value (C 33, S 12, M 24, I 
 - [x] image-check: full-size p.1 and p.2 re-fetched and cut at native resolution, R10-DEC1162 6 Oct 2026; F19 glyph test D1162-F19 9 Oct 2026 (control FAIL)
 - [n/a] retry: nothing failed that a retry would change
 Verdict: keep going: 1 internal gap; cheapest next: a person's or palaeographer's read of clear/focus/focus-sheet.html (22 cards, F19 among them), then apply its answer TSV (~$0.5); the g/q split waits on ASKS 144
+
+## Owner's g/q sort (12 Oct 2026, ASKS 144)
+
+The owner sorted the 31 g/q tiles (R1162 p.1 and R1168 f.12r) on the published page (EgDrpu79anYxQBjcVtUcGq) and said
+"done" at 00:2x UTC 12 Oct by date -u: 16 tiles moved, 15 left in place (2 of them confirmed with "Right pile: keep it"),
+21 boxes re-cut, and the two labels split into six piles (g, g-b, q, q-b, q-c, q-d). He wrote that much of the starting
+labelling was wrong and that he fixed what he could see. The db export is `sorter/owner_db_2026-10-12/`; applied with
+`tools/sign_sorter_apply.py` to `sorter/settled_labels.tsv` (summary `sorter/settled_summary.json`: blind mode, signs 2 -> 6).
+No reading has been changed yet. Next (a worker): split the labels in both ciphertext.tsv files by the new piles, re-key 1168
+(`align/run_align.py`), re-run `score_g.py` and `decode_key.py --check` (sorter/README.md), ~$3.
+
+Owner's observation, same message: some signs carry long strokes rising towards, or joining, other signs. The parent looked at
+the half-size page image embedded in the sorter (R1168 f.12r, around tile R1168_f12r_01_alafuturadieta_02): the strokes there are
+most consistent with (a) the long, left-sweeping tail of the g-type cipher sign itself and (b) the period decipherer's lead-in and
+extension strokes on the interlinear gloss ("ala", "dieta" with a line run out over the cipher signs it covers). That is a look,
+not a test; nothing suggests a cipher device. If it matters, check it on the full-size PNGs (DECODE login, build.sh header).
