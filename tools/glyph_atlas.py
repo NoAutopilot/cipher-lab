@@ -126,7 +126,7 @@ match    --page NAME=IMAGE[@box] ... [--stored PAGE ...] --exclude-page P ... [-
          for a page that is still in the atlas (exit). Measured: tools/tests/PREREG-MQS-GLYPH-MATCH.md, shelf row.
 Test: python3 tools/tests/test_glyph_atlas.py (offline: a synthetic page with two sign shapes, one carrying a mark).
 """
-import argparse, collections, csv, json, os, sys
+import argparse, collections, csv, hashlib, json, os, sys
 
 import numpy as np
 
@@ -546,6 +546,108 @@ def feats(bm, rows, size_w=3.0, pca_scale='unit', project=False):
     return X, proj
 
 
+# ---------------------------------------------------------------- TXE4-3 ATLAS-NCA (12 Oct 2026, account 3)
+# classify --features hog+zone+topo adds the 29 shape features of benchmark-tx/txeng3/10/glyph_atlas_pair.patch (TXE3-10,
+# 11 Oct 2026: a 4x4 ink-zoning grid, hole and skeleton topology, rh/rw/dy) beside the HOG+PCA40 block; --metric lda|nca
+# learns a distance on the VOTER tiles only (scikit-learn LinearDiscriminantAnalysis / NeighborhoodComponentsAnalysis),
+# every held-out page excluded from the fit and from the vote. A sidecar <tsv>.metric.json records what the fit saw.
+# Offline test: tools/tests/test_glyph_atlas_metric.py (the fit never sees a held-out page; a planted two-class toy
+# separates under NCA). Shelf: weak until a target has read it (tools/data/tool_shelf.tsv).
+def _zhang_suen(m):
+    """Thin a boolean mask to a 1-px skeleton (Zhang-Suen 1984); from TXE3-10's glyph_atlas_pair.patch."""
+    im = np.pad(m.astype(np.uint8), 1)
+    while True:
+        changed = False
+        for step in (0, 1):
+            P = [im[1:-1, 1:-1]]
+            sh = [(-1, 0), (-1, 1), (0, 1), (1, 1), (1, 0), (1, -1), (0, -1), (-1, -1)]
+            for dy, dx in sh:
+                P.append(im[1 + dy:im.shape[0] - 1 + dy, 1 + dx:im.shape[1] - 1 + dx])
+            B = sum(P[1:])
+            A = sum(((P[i] == 0) & (P[i + 1 if i < 8 else 1] == 1)).astype(np.uint8) for i in range(1, 9))
+            c1 = P[2] * P[4] * P[6] if step == 0 else P[2] * P[4] * P[8]
+            c2 = P[4] * P[6] * P[8] if step == 0 else P[2] * P[6] * P[8]
+            kill = (P[0] == 1) & (B >= 2) & (B <= 6) & (A == 1) & (c1 == 0) & (c2 == 0)
+            if kill.any():
+                im[1:-1, 1:-1][kill] = 0
+                changed = True
+        if not changed:
+            return im[1:-1, 1:-1].astype(bool)
+
+
+def _components(m):
+    """4-connected components of a boolean mask -> label array (0 = none), count (TXE3-10 patch)."""
+    n, lab = cv2.connectedComponents(m.astype(np.uint8), connectivity=4)
+    return lab, n - 1
+
+
+def zone_topo_feats(bm, geo=(0.0, 0.0, 0.0), n=32):
+    """bm: 48x48 uint8 ink high; geo: (rh, rw, dy) from signs.tsv -> 29 features: 4x4 ink-zoning grid (16), hole count,
+    largest hole's centre y / area / ink share above and below it (5), skeleton endpoints, junctions, endpoints above and
+    below the hole, skeleton length over ink (5), geo (3). Verbatim from TXE3-10's topo_feats, cv2 components."""
+    from PIL import Image
+    ys, xs = np.nonzero(bm > 64)
+    a = bm[ys.min():ys.max() + 1, xs.min():xs.max() + 1] if len(ys) else bm
+    s = np.asarray(Image.fromarray(((a > 64) * 255).astype(np.uint8)).resize((n, n), Image.BILINEAR), np.float32) / 255
+    M = s > 0.5
+    if not M.any():
+        M[n // 2, n // 2] = True
+    grid = s.reshape(4, n // 4, 4, n // 4).mean(axis=(1, 3)).ravel()
+    bg, nb = _components(~M)
+    border = set(np.unique(np.concatenate([bg[0], bg[-1], bg[:, 0], bg[:, -1]]))) - {0}
+    holes = [k for k in range(1, nb + 1) if k not in border]
+    ink = M.sum()
+    if holes:
+        k = max(holes, key=lambda k: (bg == k).sum())
+        hy, hx = np.nonzero(bg == k)
+        n_h, cy, area, top, bot = len(holes), hy.mean() / n, len(hy) / (n * n), hy.min(), hy.max()
+    else:
+        n_h, cy, area, top, bot = 0, 0.5, 0.0, n // 2, n // 2
+    above, below = M[:top].sum() / ink, M[bot + 1:].sum() / ink
+    sk = _zhang_suen(M)
+    pad = np.pad(sk.astype(int), 1)
+    nbrs = sum(pad[1 + dy:n + 1 + dy, 1 + dx:n + 1 + dx] for dy in (-1, 0, 1) for dx in (-1, 0, 1) if dy or dx)
+    ep = sk & (nbrs == 1)
+    jn = sk & (nbrs >= 3)
+    ey = np.nonzero(ep)[0]
+    return np.concatenate([grid, [n_h, cy, area, above, below, ep.sum(), jn.sum(), (ey < top).sum(), (ey > bot).sum(),
+                                  sk.sum() / ink], np.asarray(geo, np.float32)]).astype(np.float32)
+
+
+def zone_topo_matrix(bm, rows, cache=None):
+    """29 features per atlas bitmap; --topo-cache FILE (.npy) is read when its row count matches, else written."""
+    if cache and os.path.exists(cache):
+        T = np.load(cache)
+        if T.shape == (len(bm), 29):
+            return T
+    T = np.array([zone_topo_feats(b, (float(r['rh']), float(r['rw']), float(r.get('dy') or 0.0))) for b, r in zip(bm, rows)])
+    if cache:
+        np.save(cache, T)
+    return T
+
+
+def fit_metric(X, lab, fit_idx, metric, dim, seed=SEED):
+    """Learn a distance on X[fit_idx] with labels lab[fit_idx] (the voters only). Returns (transform(X), info).
+    'lda' -> LinearDiscriminantAnalysis(n_components=min(dim, classes-1)); 'nca' -> NeighborhoodComponentsAnalysis
+    (n_components=min(dim, features)); features are standardised on the fit tiles first. A class with one tile is kept
+    (NCA has no per-class minimum; LDA needs >= 2 classes)."""
+    from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+    from sklearn.neighbors import NeighborhoodComponentsAnalysis
+    sc = StandardScaler().fit(X[fit_idx])
+    Z = sc.transform(X)
+    y = np.array([str(l) for l in lab[fit_idx]])
+    classes = sorted(set(y))
+    if metric == 'lda':
+        d = max(1, min(dim, len(classes) - 1))
+        model = LinearDiscriminantAnalysis(n_components=d, solver='eigen', shrinkage='auto')
+    else:
+        d = max(1, min(dim, Z.shape[1]))
+        model = NeighborhoodComponentsAnalysis(n_components=d, random_state=seed, max_iter=100, init='pca')
+    model.fit(Z[fit_idx], y)
+    return model.transform(Z), dict(metric=metric, dim=d, fit_tiles=int(len(fit_idx)), classes=len(classes),
+                                    features_in=int(Z.shape[1]))
+
+
 def jitter_tiles(ink, r, mh, n, px, scale, rnd):
     """--jitter (TXE-J, 9 Oct 2026; LANE TX-ENGINEER idea M11): n perturbed re-cuts of box r from the page's binarised
     ink -- the window shifted by an integer dx, dy in [-px, px] and scaled about the box centre by s in
@@ -867,6 +969,12 @@ def cmd_classify(a):
         X, proj = feats(bm, rows, pca_scale=a.pca_scale, project=True)
     else:
         X = feats(bm, rows, pca_scale=a.pca_scale)
+    features = getattr(a, 'features', 'hog') or 'hog'
+    metric = getattr(a, 'metric', 'none') or 'none'
+    if (features != 'hog' or metric != 'none') and (jit or boxes_in):
+        sys.exit('--features hog+zone+topo / --metric are not supported with --jitter or --boxes')
+    if features == 'hog+zone+topo':
+        X = np.hstack([X, zone_topo_matrix(bm, rows, getattr(a, 'topo_cache', None))])
     lab = np.array([over.get(r['sid'], L['signs'].get(cl.get(('sign', r['sid'])), '_')) for r in rows], dtype=object)
     mlab = {m: over.get(m, L['marks'].get(cl.get(('mark', m)), '_')) for m in mrows}
     hold = tuple(a.holdout or ())
@@ -897,6 +1005,23 @@ def cmd_classify(a):
         if not ok.any():
             sys.exit('--exclude-page: no boxes of any other page to vote with')
     cand = np.where(ok)[0]
+    minfo = dict(metric='none', features=features, fit_tiles=0)
+    if features != 'hog' or metric != 'none':
+        # the learned distance (and the zone+topo scaling) is fitted on the LABELLED VOTERS only: never a held box, never
+        # a box of a --holdout page, never the --exclude-page page, never a '_' box (TXE4-3, 12 Oct 2026)
+        fit_idx = np.array([i for i in cand if lab[i] not in ('_', '_held')], dtype=int)
+        if metric != 'none':
+            if len(fit_idx) < 2 or len({lab[i] for i in fit_idx}) < 2:
+                sys.exit('--metric: needs at least two labelled classes among the voters')
+            X, minfo = fit_metric(X, lab, fit_idx, metric, getattr(a, 'metric_dim', 32) or 32, getattr(a, 'metric_seed', SEED))
+        else:
+            sc = StandardScaler().fit(X[fit_idx]); X = sc.transform(X)
+            minfo = dict(metric='none', dim=int(X.shape[1]), fit_tiles=int(len(fit_idx)))
+        minfo.update(features=features, fit_pages=sorted({rows[i]['page'] for i in fit_idx}),
+                     fit_boxes_sha256=hashlib.sha256('\n'.join(sorted(rows[i]['sid'] for i in fit_idx)).encode()).hexdigest(),
+                     holdout=list(hold), exclude_page=bool(a.exclude_page), page=a.page)
+        json.dump(minfo, open(a.tsv + '.metric.json', 'w'), indent=1)
+        print(f"--features {features} --metric {metric}: fitted on {minfo['fit_tiles']} voter tiles, dim {minfo.get('dim')}")
     pool = min(len(cand), max(a.knn + 1, a.pool if a.topk > 1 else 0))
     nn = NearestNeighbors(n_neighbors=pool).fit(X[cand])
     if tgt:
@@ -1290,6 +1415,15 @@ def main(argv=None):
     k.add_argument('--jitter-seed', type=int, default=1, help='--jitter: RNG seed (1)')
     k.add_argument('--jitter-rel', type=float, default=0.78, help="--jitter: binarisation rel, as segment's --rel (0.78)")
     k.add_argument('--max-w', type=int, default=1800, help='cut a line strip into parts under this width (px)')
+    k.add_argument('--features', choices=['hog', 'hog+zone+topo'], default='hog',
+                   help='TXE4-3: hog = HOG+PCA40 + size (today); hog+zone+topo adds the 29 zone/topology features of '
+                        'TXE3-10, standardised on the voter tiles')
+    k.add_argument('--metric', choices=['none', 'lda', 'nca'], default='none',
+                   help='TXE4-3: learn a distance on the labelled voter tiles only (held-out pages never in the fit); '
+                        'writes <tsv>.metric.json')
+    k.add_argument('--metric-dim', type=int, default=32, help='--metric: components (capped by features, and by classes-1 for lda)')
+    k.add_argument('--metric-seed', type=int, default=SEED, help='--metric nca: random_state')
+    k.add_argument('--topo-cache', help='--features hog+zone+topo: .npy cache of the 29 features per atlas bitmap')
     m = sp.add_parser('match')
     m.add_argument('--out', required=True, help='the atlas directory (signs.tsv, bitmaps.npz)')
     m.add_argument('--page', action='append', help='NAME=IMAGE[@x0,y0,x1,y1]: a candidate leaf, segmented fresh')
