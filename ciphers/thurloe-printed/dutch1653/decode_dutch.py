@@ -3,7 +3,8 @@
 
   python3 decode_dutch.py [NAME ...]          write reading_<name>.tsv (default: every name in NAMES; NAME = p351, p301, ...)
   python3 decode_dutch.py [NAME ...] --check  exit 1 if any committed reading is stale
-NAMES: ct_p351, ct_p339, ct_p308, ct_p435 (DUTCH-KEY); ct_p301, ct_p418 (DUTCH-MORE, 10 Oct 2026).
+NAMES: ct_p351, ct_p339, ct_p308, ct_p435 (DUTCH-KEY); ct_p301, ct_p418 (DUTCH-MORE, 10 Oct 2026);
+ct_bijX294 (THUR-PS, 12 Oct 2026: the 18 July 1653 postscript, Bijdragen X p.294, printed undeciphered; flag 'agree;conflict-57' -> M).
 
 Grades (rule 4): H = a key-stated value (codes 1-66 of the printed table) on a token both transcription passes agree on;
 M = a token whose transcription is doubtful (pass disagreement settled by eye, flag column) or a code above 66 (name/country
@@ -16,7 +17,7 @@ DUTCH-MORE (PREREG-DUTCHMORE.md): p.418 likewise '-' (its fold does not beat the
 """
 import csv, os, sys
 H = os.path.dirname(os.path.abspath(__file__))
-NAMES = ['p351', 'p339', 'p308', 'p435', 'p301', 'p418']
+NAMES = ['p351', 'p339', 'p308', 'p435', 'p301', 'p418', 'bijX294']
 NOT_READ = {'p435', 'p418'}  # p.418: fold does not beat its control max (dutchmore_score.json), not read
 CAP_M = {'p301'}  # p.301: fold non-test at N=10 (power 0.62); reading rests on the English context only, graded M
 
@@ -31,7 +32,8 @@ def glosses():
 
 def runs(name):
     out = {}
-    for r in csv.DictReader(open(os.path.join(H, f'ct_{name}.tsv')), delimiter='\t'):
+    lines = [l for l in open(os.path.join(H, f'ct_{name}.tsv')) if not l.startswith('#')]
+    for r in csv.DictReader(lines, delimiter='\t'):
         out.setdefault((r['page'], int(r['run'])), []).append(r)
     return out
 
