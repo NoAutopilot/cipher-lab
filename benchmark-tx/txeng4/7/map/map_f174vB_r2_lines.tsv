@@ -1,0 +1,12 @@
+line	boxes	tokens	skipped	ops	moved	moved_sids	lost_11	lost_sids
+f174vB_L01	30	26		1:1:21 2:1:8 unsure:1	0		0	
+f174vB_L02	30	29		1:1:17 1:2:6 2:1:8 unsure:2	0		0	
+f174vB_L03	29	28		1:1:19 1:2:4 2:1:6 unsure:2	0		0	
+f174vB_L04	28	27		1:1:15 1:2:6 2:1:8 unsure:2	0		0	
+f174vB_L05	27	30		1:1:15 1:2:10 2:1:4 unsure:3	0		0	
+f174vB_L06	28	28		1:1:18 1:2:4 2:1:4 unsure:4	0		0	
+f174vB_L07	29	28		1:1:23 1:2:2 2:1:4 unsure:1	0		0	
+f174vB_L08	28	27	f174vB_08_022	1:1:23 1:2:2 2:1:2 unsure:1	0		0	
+f174vB_L09	28	28		1:1:16 1:2:6 2:1:6 unsure:3	0		0	
+f174vB_L10	27	28		1:1:15 1:2:6 2:1:4 unsure:5	0		0	
+f174vB_L11	28	27		1:1:8 1:2:10 2:1:12 unsure:3	0		0	

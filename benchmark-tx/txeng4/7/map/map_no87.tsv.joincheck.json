@@ -1,0 +1,253 @@
+{
+ "b1": true,
+ "b2": true,
+ "b2_bound": 0.09131054131054131,
+ "b3": true,
+ "draws": 20,
+ "inputs_sha256": {
+  "benchmark-tx/txeng4/7/knn/topk_r2.tsv": "4ef4a0ced091a73464042c00b87ce1922121184c7153fd323c6e8e42faa2fb01",
+  "benchmark-tx/txeng4/7/map/read_no87.tsv": "c107a9e41acada4e77c46ee5bc206a7aebed8ac6e145aa54a81f9034823d2a54",
+  "ciphers/nevers-birago-fr3251-1572/atlas/signs.tsv": "4c234928720ea4baf26a21350adea85152f816642da3ac330818fdf4f850c974"
+ },
+ "lines": {
+  "f178v_L01": {
+   "counts": {
+    "+-2": 1,
+    "0": 20,
+    "none": 5
+   },
+   "placed": 26,
+   "verdict": "pass"
+  },
+  "f178v_L02": {
+   "counts": {
+    "0": 23,
+    "none": 3
+   },
+   "placed": 26,
+   "verdict": "pass"
+  },
+  "f178v_L03": {
+   "counts": {
+    "0": 22,
+    "none": 3
+   },
+   "placed": 25,
+   "verdict": "pass"
+  },
+  "f178v_L04": {
+   "counts": {
+    "0": 24,
+    "none": 3
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L05": {
+   "counts": {
+    "0": 23,
+    "none": 6
+   },
+   "placed": 29,
+   "verdict": "pass"
+  },
+  "f178v_L06": {
+   "counts": {
+    "+-2": 1,
+    "0": 23,
+    "none": 3
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L07": {
+   "counts": {
+    "-1": 1,
+    "0": 26
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L08": {
+   "counts": {
+    "0": 21,
+    "none": 7
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f178v_L09": {
+   "counts": {
+    "+-2": 1,
+    "-1": 1,
+    "0": 17,
+    "none": 6
+   },
+   "placed": 25,
+   "verdict": "pass"
+  },
+  "f178v_L10": {
+   "counts": {
+    "+-2": 1,
+    "+1": 1,
+    "0": 22,
+    "none": 5
+   },
+   "placed": 29,
+   "verdict": "pass"
+  },
+  "f178v_L11": {
+   "counts": {
+    "0": 18,
+    "none": 9
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L12": {
+   "counts": {
+    "0": 27,
+    "none": 4
+   },
+   "placed": 31,
+   "verdict": "pass"
+  },
+  "f178v_L13": {
+   "counts": {
+    "0": 24,
+    "none": 3
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L14": {
+   "counts": {
+    "0": 22,
+    "none": 5
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L15": {
+   "counts": {
+    "0": 22,
+    "none": 6
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f178v_L16": {
+   "counts": {
+    "0": 25,
+    "none": 4
+   },
+   "placed": 29,
+   "verdict": "pass"
+  },
+  "f178v_L17": {
+   "counts": {
+    "+-2": 1,
+    "+1": 1,
+    "0": 23,
+    "none": 2
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L18": {
+   "counts": {
+    "0": 26,
+    "none": 1
+   },
+   "placed": 27,
+   "verdict": "pass"
+  },
+  "f178v_L19": {
+   "counts": {
+    "+-2": 1,
+    "0": 20,
+    "none": 7
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f178v_L20": {
+   "counts": {
+    "-1": 1,
+    "0": 21,
+    "none": 4
+   },
+   "placed": 26,
+   "verdict": "pass"
+  },
+  "f178v_L21": {
+   "counts": {
+    "0": 20,
+    "none": 4
+   },
+   "placed": 24,
+   "verdict": "pass"
+  },
+  "f178v_L22": {
+   "counts": {
+    "+-2": 1,
+    "0": 23,
+    "none": 4
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f178v_L23": {
+   "counts": {
+    "+-2": 1,
+    "-1": 1,
+    "0": 22,
+    "none": 5
+   },
+   "placed": 29,
+   "verdict": "pass"
+  },
+  "f179r_L01": {
+   "counts": {
+    "-1": 1,
+    "0": 19,
+    "none": 8
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f179r_L02": {
+   "counts": {
+    "0": 22,
+    "none": 4
+   },
+   "placed": 26,
+   "verdict": "pass"
+  },
+  "f179r_L03": {
+   "counts": {
+    "+-2": 1,
+    "0": 16,
+    "none": 4
+   },
+   "placed": 21,
+   "verdict": "pass"
+  }
+ },
+ "map_sha256": "7c561c750eab0c434dd688ae61e22e4b4ada49cb0ca52bcb6a07e74d8adc52b1",
+ "n": 702,
+ "overall": {
+  "+-2": 9,
+  "+1": 2,
+  "-1": 5,
+  "0": 571,
+  "none": 115
+ },
+ "p95_0": 0.04864672364672364,
+ "p95_pm1": 0.09131054131054131,
+ "seed": 20261012,
+ "share0": 0.8133903133903134,
+ "sharepm1": 0.009971509971509971,
+ "utc": "2026-10-12T01:33:51Z",
+ "verdict": "PASS"
+}

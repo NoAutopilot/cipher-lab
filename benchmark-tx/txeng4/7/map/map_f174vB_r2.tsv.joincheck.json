@@ -1,0 +1,134 @@
+{
+ "b1": false,
+ "b2": true,
+ "b2_bound": 0.12172897196261682,
+ "b3": false,
+ "draws": 20,
+ "inputs_sha256": {
+  "benchmark-tx/txeng4/7/knn/topk_r1.tsv": "a9ee5dcaa1a91b49e27acbb9a0d92dff5ae842d4111d44c01506e729dc09ea4b",
+  "benchmark-tx/txeng4/7/map/read_f174vB.tsv": "5ec4fcdd1ced10c6e9593935e957731d39ed1dbc2a081e48912497195c4b390e",
+  "ciphers/nevers-birago-fr3251-1572/atlas/signs.tsv": "4c234928720ea4baf26a21350adea85152f816642da3ac330818fdf4f850c974"
+ },
+ "lines": {
+  "f174vB_L01": {
+   "counts": {
+    "+-2": 1,
+    "0": 1,
+    "none": 19
+   },
+   "placed": 21,
+   "verdict": "pass"
+  },
+  "f174vB_L02": {
+   "counts": {
+    "+-2": 4,
+    "none": 15
+   },
+   "placed": 19,
+   "verdict": "fail"
+  },
+  "f174vB_L03": {
+   "counts": {
+    "+-2": 1,
+    "+1": 1,
+    "-1": 1,
+    "0": 2,
+    "none": 16
+   },
+   "placed": 21,
+   "verdict": "pass"
+  },
+  "f174vB_L04": {
+   "counts": {
+    "+-2": 2,
+    "+1": 1,
+    "0": 2,
+    "none": 12
+   },
+   "placed": 17,
+   "verdict": "pass"
+  },
+  "f174vB_L05": {
+   "counts": {
+    "+-2": 2,
+    "+1": 1,
+    "none": 13
+   },
+   "placed": 16,
+   "verdict": "fail"
+  },
+  "f174vB_L06": {
+   "counts": {
+    "+-2": 1,
+    "+1": 2,
+    "-1": 1,
+    "none": 18
+   },
+   "placed": 22,
+   "verdict": "fail"
+  },
+  "f174vB_L07": {
+   "counts": {
+    "+-2": 1,
+    "-1": 1,
+    "0": 1,
+    "none": 21
+   },
+   "placed": 24,
+   "verdict": "fail"
+  },
+  "f174vB_L08": {
+   "counts": {
+    "+-2": 1,
+    "+1": 2,
+    "-1": 2,
+    "0": 5,
+    "none": 14
+   },
+   "placed": 24,
+   "verdict": "pass"
+  },
+  "f174vB_L09": {
+   "counts": {
+    "+-2": 1,
+    "+1": 1,
+    "0": 1,
+    "none": 16
+   },
+   "placed": 19,
+   "verdict": "fail"
+  },
+  "f174vB_L10": {
+   "counts": {
+    "+-2": 4,
+    "none": 16
+   },
+   "placed": 20,
+   "verdict": "fail"
+  },
+  "f174vB_L11": {
+   "counts": {
+    "+-2": 1,
+    "none": 10
+   },
+   "placed": 11,
+   "verdict": "fail"
+  }
+ },
+ "map_sha256": "f348a3f4b9ae854901a4d1f9aed14aa56662b49312c2137118b310b74ba90d84",
+ "n": 214,
+ "overall": {
+  "+-2": 19,
+  "+1": 8,
+  "-1": 5,
+  "0": 12,
+  "none": 170
+ },
+ "p95_0": 0.05630841121495327,
+ "p95_pm1": 0.12172897196261682,
+ "seed": 20261012,
+ "share0": 0.056074766355140186,
+ "sharepm1": 0.06074766355140187,
+ "utc": "2026-10-12T01:33:42Z",
+ "verdict": "UNCHECKABLE"
+}

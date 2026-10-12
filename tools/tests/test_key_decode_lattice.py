@@ -201,3 +201,62 @@ def test_pins_hold_position_and_report(tmp_path=None):
     with open(p, "w") as f:
         f.write("line\tpos\tsign\nl\t4\tX\nl\t5\t\n")
     assert K.read_pins(p) == {("l", 4): "X"}
+
+
+def test_pile_relabel_restores_planted_pile(tmp_path=None):
+    """TXE4-7 PILE-LM: a whole pile (one cluster x one read sign) relabelled by the key + LM against value-shuffled keys.
+    Plant: every 'a' sign (E) in one cluster is misread as the look-alike X (q); the tool must accept X -> E for that
+    pile, and must not relabel the untouched 'o' pile (G) whose text is right as read."""
+    import tempfile, os
+    text = "the cat sat on the mat and the dog sat on the log "
+    key = dict(KEY)
+    for ch, sg in (("m", "M"), ("d", "N"), ("g", "P"), ("l", "Q")):   # the toy key lacks these letters of TEXT
+        key[sg] = ch
+    inv = {v: k for k, v in key.items()}
+    lines = {}
+    for i in range(6):
+        seq = [inv[ch] for ch in text.replace(" ", "")]
+        lines[f"p_L{i + 1:02d}"] = [(j + 1, s) for j, s in enumerate(seq)]
+    # map + clusters: every 'E' box is cluster 7 (the planted pile), every 'G' box cluster 9, the rest cluster 1
+    pos_of, clusters = {}, {}
+    for ln, rows in lines.items():
+        for pos, s in rows:
+            sid = f"{ln}_{pos:03d}"; pos_of[sid] = (ln, pos)
+            clusters[sid] = "7" if s == "E" else ("9" if s == "G" else "1")
+    base = {ln: [(p, "X" if s == "E" else s) for p, s in rows] for ln, rows in lines.items()}   # the corruption
+    nb = {"X": {"E": 5.0, "A": 1.0}, "E": {"X": 5.0}, "G": {"D": 3.0}}
+    piles = K.build_piles(base, pos_of, clusters)
+    assert ("7", "X") in piles and len(piles[("7", "X")]) == 6 * text.replace(" ", "").count("a")
+    out, rows, stats, changed = K.pile_relabel(base, piles, key, lm(), nb, {}, shuffles=10, seed=1, min_pile=2)
+    acc = {(a["cluster"], a["sign"]): a["to"] for a in stats["accepted_list"]}
+    assert acc.get(("7", "X")) == "E", stats
+    assert ("9", "G") not in acc, stats
+    assert all(s == o for (_, s), (_, o) in zip(out["p_L01"], lines["p_L01"]))   # the line reads as the plain text again
+    # cluster shuffle (the chance null) keeps pile sizes and read signs
+    sh = K.build_piles(base, pos_of, clusters, cluster_shuffle=3)
+    assert sorted(len(v) for v in sh.values()) == sorted(len(v) for v in piles.values())
+    assert {sg for _, sg in sh} == {sg for _, sg in piles}
+    # CLI round trip with --plant on an unpiled reading (the positive control shape)
+    d = tempfile.mkdtemp()
+    with open(os.path.join(d, "corpus.txt"), "w") as f:
+        f.write(TEXT)
+    with open(os.path.join(d, "read.tsv"), "w") as f:
+        f.write("line\tpos\tsign\n" + "".join(f"{ln}\t{p}\t{s}\n" for ln, rows in lines.items() for p, s in rows))
+    with open(os.path.join(d, "map.tsv"), "w") as f:
+        f.write("sid\tline\tpos\top\n" + "".join(f"{sid}\t{ln}\t{p}\t1:1\n" for sid, (ln, p) in pos_of.items()))
+    with open(os.path.join(d, "clusters.tsv"), "w") as f:
+        f.write("id\tkind\tcluster\n" + "".join(f"{sid}\tsign\t{c}\n" for sid, c in clusters.items()))
+    with open(os.path.join(d, "key.tsv"), "w") as f:
+        f.write("sign\tvalue\n" + "".join(f"{s}\t{v}\n" for s, v in key.items()))
+    with open(os.path.join(d, "conf.tsv"), "w") as f:
+        f.write("label_a\tlabel_b\tn\nX\tE\t5\nX\tA\t1\nG\tD\t3\n")
+    K.main(["pile-relabel", "--read", os.path.join(d, "read.tsv"), "--map", os.path.join(d, "map.tsv"),
+            "--clusters", os.path.join(d, "clusters.tsv"), "--key", os.path.join(d, "key.tsv"), "--corpus",
+            os.path.join(d, "corpus.txt"), "--confusion", os.path.join(d, "conf.tsv"), "--shuffles", "10",
+            "--plant", "7:E:X", "--out-prefix", os.path.join(d, "P")])
+    import json
+    st = json.load(open(os.path.join(d, "P.json")))
+    assert st["plant"]["restored"] is True and st["plant"]["accepted_to"] == "E", st["plant"]
+    assert st["plant"]["false_accepts"] == 0, st
+    rel = [r for r in K.read_tsv(os.path.join(d, "P.relabel.tsv")) if r["changed"] == "1"]
+    assert rel and all(r["grade_cap"] == "S" and r["base"] == "X" and r["sign"] == "E" for r in rel)

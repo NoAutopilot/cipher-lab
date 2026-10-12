@@ -1,0 +1,117 @@
+{
+ "b1": true,
+ "b2": true,
+ "b2_bound": 0.10717213114754098,
+ "b3": true,
+ "draws": 20,
+ "inputs_sha256": {
+  "benchmark-tx/txeng4/7/knn/topk_r1.tsv": "a9ee5dcaa1a91b49e27acbb9a0d92dff5ae842d4111d44c01506e729dc09ea4b",
+  "benchmark-tx/txeng4/7/map/read_f174v.tsv": "b47d83e3465452130c3eee4aefaba07cf4137280dfe6dc4b28f7267986aff963",
+  "ciphers/nevers-birago-fr3251-1572/atlas/signs.tsv": "4c234928720ea4baf26a21350adea85152f816642da3ac330818fdf4f850c974"
+ },
+ "lines": {
+  "f174v_L02": {
+   "counts": {
+    "+1": 1,
+    "-1": 1,
+    "0": 25,
+    "none": 2
+   },
+   "placed": 29,
+   "verdict": "pass"
+  },
+  "f174v_L03": {
+   "counts": {
+    "0": 16,
+    "none": 5
+   },
+   "placed": 21,
+   "verdict": "pass"
+  },
+  "f174v_L04": {
+   "counts": {
+    "+1": 1,
+    "-1": 1,
+    "0": 22,
+    "none": 4
+   },
+   "placed": 28,
+   "verdict": "pass"
+  },
+  "f174v_L05": {
+   "counts": {
+    "-1": 1,
+    "0": 20,
+    "none": 2
+   },
+   "placed": 23,
+   "verdict": "pass"
+  },
+  "f174v_L06": {
+   "counts": {
+    "+-2": 1,
+    "0": 19,
+    "none": 5
+   },
+   "placed": 25,
+   "verdict": "pass"
+  },
+  "f174v_L07": {
+   "counts": {
+    "0": 15,
+    "none": 5
+   },
+   "placed": 20,
+   "verdict": "pass"
+  },
+  "f174v_L08": {
+   "counts": {
+    "0": 20,
+    "none": 5
+   },
+   "placed": 25,
+   "verdict": "pass"
+  },
+  "f174v_L09": {
+   "counts": {
+    "+1": 2,
+    "0": 14,
+    "none": 7
+   },
+   "placed": 23,
+   "verdict": "pass"
+  },
+  "f174v_L10": {
+   "counts": {
+    "0": 22,
+    "none": 3
+   },
+   "placed": 25,
+   "verdict": "pass"
+  },
+  "f174v_L11": {
+   "counts": {
+    "0": 17,
+    "none": 8
+   },
+   "placed": 25,
+   "verdict": "pass"
+  }
+ },
+ "map_sha256": "8d907bde6180f2ff69b61ee483fe15129bf5c4901f17628d5a33eb805e839e1d",
+ "n": 244,
+ "overall": {
+  "+-2": 1,
+  "+1": 4,
+  "-1": 3,
+  "0": 190,
+  "none": 46
+ },
+ "p95_0": 0.06987704918032786,
+ "p95_pm1": 0.10717213114754098,
+ "seed": 20261012,
+ "share0": 0.7786885245901639,
+ "sharepm1": 0.028688524590163935,
+ "utc": "2026-10-12T01:33:41Z",
+ "verdict": "PASS"
+}

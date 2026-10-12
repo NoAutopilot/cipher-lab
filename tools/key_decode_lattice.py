@@ -72,6 +72,28 @@ Subcommands
                the same pins in place. Lesson it answers: labels were only ever applied after the decode (today's L);
                a pin is the same decision applied inside it.
 
+  pile-relabel --read BASE.tsv --map MAP.tsv --clusters clusters.tsv --key key.tsv (--lang L | --corpus F...)
+               [--confusion C.tsv] [--alt-read PASS.tsv ...] [--lines L ...] [--shuffles 20] [--seed 1] [--min-pile 2]
+               [--key-shuffle S] [--cluster-shuffle S] [--plant CLUSTER:SIGN:NEW [--plant-exclude-original]]
+               [--out-prefix P]
+               (TXE4-7 PILE-LM, 12 Oct 2026; benchmark-tx/PREREG-txeng4-7.md). The owner's sorter decision -- was a whole
+               pile of look-alike tiles misread? -- made by the key and the language model. A pile is (atlas cluster of the
+               position's 1:1 box in MAP.tsv, read sign); candidates per pile are the read sign's top-3 confusion
+               neighbours (--confusion, by pair count) plus the other pass's sign at the pile's disagreement rows
+               (--alt-read, aligned by the difflib rule), key signs only. Delta(p, c) = sum over the lines holding p of
+               [the line's LM score with every position of p relabelled to c] - [the line as read], the line score being
+               the decode subcommand's own per-letter log10 P + bonus (unk_cost for a sign not in the key). Null: the
+               same Delta under --shuffles value-shuffled keys (seeds --seed..). Accept the best c when Delta_real > 0,
+               Delta_real > the max shuffled Delta, and |p| >= --min-pile. Positions without a 1:1 box, or on lines not
+               in --lines, are never relabelled. Writes P.relabel.tsv (line pos sign base changed grade_cap: S, never H),
+               P.piles.tsv (one row per pile and candidate) and P.json. Controls (rule 3): --key-shuffle S uses shuffled
+               key S as if it were real (its nulls at seeds 100S+1..); --cluster-shuffle S permutes the cluster ids among
+               the mapped positions of the same read sign (the chance null for the machine grouping); --plant relabels
+               one pile in the base before the run (the positive control; --plant-exclude-original drops the original
+               sign from that pile's candidates, the look-alike control). Degenerate optimum named: a longer key value
+               adds more bonus-corrected letters, which the bonus keeps near zero per letter of real prose, and the
+               shuffled-key null carries the same candidate set.
+
 Usage (Birago no.87 known-answer, from ciphers/nevers-birago-fr3251-1572/harvest):
   python3 tools/key_decode_lattice.py from-passes f178v/passA.tsv f178v/passB.tsv --ref ciphertext_f178v.tsv \\
       --confusion confusion_1572.tsv --out /tmp/f178v_topk.tsv
@@ -684,6 +706,198 @@ def cmd_from_passes(args):
     print(json.dumps(stats))
 
 
+# ---------------------------------------------------------------- pile-relabel (TXE4-7 PILE-LM, 12 Oct 2026)
+def read_reading(p):
+    """{line: [(pos, sign)]} in file order; columns line, pos, sign (also passage / sign_id)."""
+    by = defaultdict(list)
+    for r in read_tsv(p):
+        ln = r.get("line") or r.get("passage")
+        sg = (r.get("sign") or r.get("sign_id") or "").strip()
+        by[ln].append((int(r["pos"]), sg))
+    for ln in by:
+        by[ln].sort()
+    return by
+
+
+def line_score(seq, key, lm):
+    """LM score of one line read as `seq` (signs): sum of the decode subcommand's per-letter log10 P + bonus over the key
+    values; unk_cost for a sign not in the key (state unchanged)."""
+    st, s = "", 0.0
+    for c in seq:
+        if c in key:
+            st, ds = lm.extend(st, key[c])
+            s += ds
+        else:
+            s += lm.unk_cost
+    return s
+
+
+def alt_signs(base, alt_paths):
+    """{(line, pos): set of other-pass signs that differ from the base there}, aligned by the difflib rule."""
+    out = defaultdict(set)
+    for p in alt_paths or ():
+        A = read_reading(p)
+        for ln, rows in base.items():
+            skel = [sg for _, sg in rows]
+            other = [sg for _, sg in A.get(ln, [])]
+            m = align(skel, other)
+            for j, i in m.items():
+                if other[j] and other[j] != skel[i]:
+                    out[(ln, rows[i][0])].add(other[j])
+    return out
+
+
+def build_piles(base, pos_of_sid, cluster_of, lines=None, cluster_shuffle=None):
+    """pos_of_sid: {sid: (line, pos)} for 1:1 boxes; cluster_of: {sid: cluster}. Returns {(cluster, sign): [(line, pos)]}.
+    cluster_shuffle: seed; the cluster ids are permuted among the mapped positions of the same read sign."""
+    sign_at = {(ln, pos): sg for ln, rows in base.items() for pos, sg in rows}
+    mapped = []
+    for sid, (ln, pos) in pos_of_sid.items():
+        if lines is not None and ln not in lines:
+            continue
+        if (ln, pos) not in sign_at or sid not in cluster_of:
+            continue
+        mapped.append((ln, pos, sign_at[(ln, pos)], cluster_of[sid]))
+    mapped.sort()
+    if cluster_shuffle is not None:
+        rnd = random.Random(cluster_shuffle)
+        by_sign = defaultdict(list)
+        for i, (ln, pos, sg, cl) in enumerate(mapped):
+            by_sign[sg].append(i)
+        for idx in by_sign.values():
+            cls = [mapped[i][3] for i in idx]
+            rnd.shuffle(cls)
+            for i, cl in zip(idx, cls):
+                mapped[i] = mapped[i][:3] + (cl,)
+    piles = defaultdict(list)
+    for ln, pos, sg, cl in mapped:
+        piles[(cl, sg)].append((ln, pos))
+    return dict(piles)
+
+
+def pile_candidates(sign, positions, key, nb, alts, exclude=()):
+    near = sorted(nb.get(sign, {}).items(), key=lambda kv: (-kv[1], kv[0]))[:3]
+    cands = [b for b, _ in near]
+    for k in positions:
+        for a in sorted(alts.get(k, ())):
+            if a not in cands:
+                cands.append(a)
+    return [c for c in cands if c in key and c != sign and c not in exclude]
+
+
+def pile_delta(base, pile_pos, c, key, lm, base_scores):
+    """sum over the lines holding the pile of score(line with the pile at c) - score(line as read), under `key`."""
+    by_line = defaultdict(set)
+    for ln, pos in pile_pos:
+        by_line[ln].add(pos)
+    d = 0.0
+    for ln, ps in by_line.items():
+        seq = [c if pos in ps else sg for pos, sg in base[ln]]
+        d += line_score(seq, key, lm) - base_scores[ln]
+    return d
+
+
+def pile_relabel(base, piles, key, lm, nb, alts, shuffles=20, seed=1, min_pile=2, exclude_for=None):
+    """Returns (relabelled {line: [(pos, sign)]}, pile rows, stats). exclude_for: {(cluster, sign): [signs]} dropped from
+    that pile's candidates (the look-alike control)."""
+    rnd_keys = [shuffled(key, random.Random(seed + i)) for i in range(shuffles)]
+    scores = {"real": {ln: line_score([sg for _, sg in rows], key, lm) for ln, rows in base.items()}}
+    for i, k2 in enumerate(rnd_keys):
+        scores[i] = {ln: line_score([sg for _, sg in rows], k2, lm) for ln, rows in base.items()}
+    rows, accepted = [], {}
+    for (cl, sg), pos in sorted(piles.items(), key=lambda kv: (kv[0][1], str(kv[0][0]))):
+        cands = pile_candidates(sg, pos, key, nb, alts, (exclude_for or {}).get((cl, sg), ()))
+        best = None
+        for c in cands:
+            d = pile_delta(base, pos, c, key, lm, scores["real"])
+            nulls = [pile_delta(base, pos, c, k2, lm, scores[i]) for i, k2 in enumerate(rnd_keys)]
+            nmax = max(nulls) if nulls else float("-inf")
+            ok = d > 0 and d > nmax and len(pos) >= min_pile
+            rows.append({"cluster": cl, "sign": sg, "n": len(pos), "cand": c, "delta": round(d, 4),
+                         "null_max": round(nmax, 4), "null_mean": round(statistics.mean(nulls), 4) if nulls else "",
+                         "accept": int(ok), "lines": " ".join(sorted({ln for ln, _ in pos}))})
+            if ok and (best is None or d > best[1]):
+                best = (c, d)
+        if best:
+            accepted[(cl, sg)] = best
+    out = {ln: list(rows_) for ln, rows_ in base.items()}
+    changed = []
+    for (cl, sg), (c, d) in accepted.items():
+        for ln, pos in piles[(cl, sg)]:
+            out[ln] = [(p, c if p == pos else s) for p, s in out[ln]]
+            changed.append((ln, pos, sg, c))
+    for r in rows:
+        r["chosen"] = int(accepted.get((r["cluster"], r["sign"]), (None,))[0] == r["cand"])
+    stats = {"piles": len(piles), "piles_ge_min": sum(len(v) >= min_pile for v in piles.values()),
+             "candidates_scored": len(rows), "accepted": len(accepted), "positions_changed": len(changed),
+             "shuffles": shuffles, "seed": seed, "min_pile": min_pile,
+             "accepted_list": [{"cluster": cl, "sign": sg, "to": c, "delta": round(d, 4), "n": len(piles[(cl, sg)])}
+                               for (cl, sg), (c, d) in accepted.items()]}
+    return out, rows, stats, changed
+
+
+def read_map_1to1(p):
+    return {r["sid"]: (r["line"], int(r["pos"])) for r in read_tsv(p) if r.get("op") == "1:1"}
+
+
+def read_clusters(p):
+    return {r["id"]: r["cluster"] for r in read_tsv(p) if r.get("kind", "sign") == "sign"}
+
+
+def cmd_pile_relabel(args):
+    base = read_reading(args.read)
+    if args.plant:
+        cl, sg, new = args.plant.split(":")
+    key = read_key(args.key)
+    if args.key_shuffle is not None:
+        key = shuffled(key, random.Random(args.key_shuffle))
+        seed = 100 * args.key_shuffle + 1
+    else:
+        seed = args.seed
+    model = load_model(args)
+    lm = LM(model, args.unk_cost)
+    nb = read_confusion(args.confusion)
+    alts = alt_signs(base, args.alt_read)
+    lines = set(args.lines) if args.lines else None
+    piles = build_piles(base, read_map_1to1(args.map), read_clusters(args.clusters), lines, args.cluster_shuffle)
+    plant_info, exclude_for = None, None
+    if args.plant:
+        pos = piles.pop((cl, sg), None)
+        if not pos:
+            sys.exit(f"--plant: no pile ({cl}, {sg}) in the map")
+        for ln, p in pos:
+            base[ln] = [(q, new if q == p else s) for q, s in base[ln]]
+        piles[(cl, new)] = pos
+        alts = alt_signs(base, args.alt_read)
+        if args.plant_exclude_original:
+            exclude_for = {(cl, new): [sg]}
+        plant_info = {"cluster": cl, "from": sg, "to": new, "n": len(pos), "exclude_original": bool(args.plant_exclude_original)}
+    out, rows, stats, changed = pile_relabel(base, piles, key, lm, nb, alts, args.shuffles, seed, args.min_pile, exclude_for)
+    if plant_info:
+        acc = next((a for a in stats["accepted_list"] if a["cluster"] == cl and a["sign"] == new), None)
+        plant_info["accepted_to"] = acc["to"] if acc else None
+        plant_info["restored"] = bool(acc and (acc["to"] == sg or key.get(acc["to"]) == key.get(sg)))
+        plant_info["false_accepts"] = stats["accepted"] - (1 if acc else 0)
+        stats["plant"] = plant_info
+    stats.update(key_shuffle=args.key_shuffle, cluster_shuffle=args.cluster_shuffle, lines=sorted(lines) if lines else "all")
+    if args.out_prefix:
+        chg = {(ln, pos): (sg, c) for ln, pos, sg, c in changed}
+        with open(args.out_prefix + ".relabel.tsv", "w", encoding="utf-8") as f:
+            f.write("line\tpos\tsign\tbase\tchanged\tgrade_cap\n")
+            for ln, rows_ in out.items():
+                for pos, s in rows_:
+                    b = chg.get((ln, pos), (s,))[0]
+                    f.write(f"{ln}\t{pos}\t{s}\t{b}\t{int((ln, pos) in chg)}\t{'S' if (ln, pos) in chg else ''}\n")
+        cols = ["cluster", "sign", "n", "cand", "delta", "null_max", "null_mean", "accept", "chosen", "lines"]
+        with open(args.out_prefix + ".piles.tsv", "w", encoding="utf-8") as f:
+            f.write("\t".join(cols) + "\n")
+            for r in rows:
+                f.write("\t".join(str(r[c]) for c in cols) + "\n")
+        Path(args.out_prefix + ".json").write_text(json.dumps(stats, indent=1) + "\n", encoding="utf-8")
+    print(json.dumps(stats, indent=1))
+    return out, rows, stats
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -724,8 +938,22 @@ def main(argv=None):
     d.add_argument("--power-len", type=int, default=0, help="synthetic window length in signs (default: the lattice's)")
     d.add_argument("--out-prefix")
     d.add_argument("--pins", help="TXE3-9: TSV line, pos, sign of decided positions held fixed through the decode")
+    pr = sub.add_parser("pile-relabel", help="TXE4-7: decide whole piles (cluster x read sign) by key + LM vs shuffled keys")
+    pr.add_argument("--read", required=True, help="base reading TSV line, pos, sign")
+    pr.add_argument("--map", required=True, help="box_token_align MAP.tsv (sid, line, pos, op); only op 1:1 rows are used")
+    pr.add_argument("--clusters", required=True, help="glyph_atlas clusters.tsv (id, kind, cluster)")
+    pr.add_argument("--key", required=True); pr.add_argument("--lang", default="it"); pr.add_argument("--corpus", nargs="*")
+    pr.add_argument("--confusion"); pr.add_argument("--alt-read", action="append", default=[])
+    pr.add_argument("--lines", nargs="+", help="only these lines are mapped (the lines that passed the join check)")
+    pr.add_argument("--shuffles", type=int, default=20); pr.add_argument("--seed", type=int, default=1)
+    pr.add_argument("--min-pile", type=int, default=2); pr.add_argument("--unk-cost", type=float, default=None)
+    pr.add_argument("--key-shuffle", type=int, default=None, help="control: shuffled key S used as if real")
+    pr.add_argument("--cluster-shuffle", type=int, default=None, help="control: permute cluster ids within a read sign")
+    pr.add_argument("--plant", help="control: CLUSTER:SIGN:NEW relabels that pile in the base before the run")
+    pr.add_argument("--plant-exclude-original", action="store_true")
+    pr.add_argument("--out-prefix")
     a = ap.parse_args(argv)
-    {"decode": cmd_decode, "from-passes": cmd_from_passes, "learn-confusion": cmd_learn_confusion}[a.cmd](a)
+    {"pile-relabel": cmd_pile_relabel, "decode": cmd_decode, "from-passes": cmd_from_passes, "learn-confusion": cmd_learn_confusion}[a.cmd](a)
 
 
 if __name__ == "__main__":
