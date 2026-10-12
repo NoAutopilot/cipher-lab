@@ -8897,3 +8897,25 @@ Lesson: an API probe with a placeholder id answered 200 while the real volume er
 1. Gallica-dependent rows (baluze167 crops ~1.5 then BAL-SHAPE ~4; f.143r L09-L14 region + length-class PREREG ~4; fr4712 key no.71 ~2; fr5160 ~3) when Gallica answers.
 2. thurloe-printed: Nijhoff Bijdragen X p.291 after googleapis recovers (~0.3); Verbael on Delpher/KB (~0.5).
 3. rah-salazar: the EF rerun when data.htrc.illinois.edu answers for osu.32435013919725 (~0.2).
+
+## LANE DEFAULT-account-2-20261012-0510 handoff (session_01CKd3VUundhU5gtJWumnf3R, account 2, for the orchestrator (owner account)), 12 October 2026 (05:10-06:3x UTC by date -u; closed: in-scope backlog spent; workers 7.50 + orchestrator ~4.2 = ~11.7 of 60 by get_session; five_hour allowed throughout)
+
+Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-12-ytbiz-default-0510-jobs.md (waves 1-2). Gate 0a: SESSION-SWEEP-account-2
+stale-claimed since 5 Oct, proceeded. Backlog: VERIFY-BACKLOG regenerated (73 rows) -- every audit2 row is N0 (Manteuffel 0436, 0109) or N1 (eckert),
+so Outreach gate 2 does not apply; counted rows decided. Hot rows: Gallica 403 at 05:1x, 05:4x, 06:1x, 06:3x UTC (baluze167, fr4712, f.143r,
+fr5160, fr3993, colbert26, gramont, ceppo stay out); HTRC EF still MongoError on osu.32435013919725; the next_steps `parallel` column was stale on
+6 of 6 rows spot-checked (harley-287, blathwayt, brochado, Jan van Nassau, Vivonne-Longlee done; matignon f.179 taken by account 1).
+3 workers, all ledgered and archived.
+Results:
+- thurloe-printed (THUR-GB): Nijhoff Bijdragen X (1856) located on Delpher (MMKB07:000756001); pp.291-294 print the Dutch of the 18 July 1653
+  letter with De Witt's decipherment; all 15 Birch p.340 runs agree in words; code 330 = de Prince van Oraigne now C (p.340 H 218 C 1 M 4, --check
+  OK, AUDIT propagation note). p.294's 29-numeral postscript reads by hand under the p.72 key -- a lead (I), not applied. 1725 Verbael: title
+  confirmed, no scan located (IA, KB SRU, Google Books). Vol 5 p.511: no 94, code 94 stays M. Cost 5.17, 2.07x cap.
+- eckert-1864 (ECK-GP13, ECK-GP13B): Grant Papers vol. 13 control E531 HIT; E589 not located; E590-E592 and a looser E589 unsearched --
+  googleapis flapped 200/503 within minutes (503 on both workers' control or third query).
+Light-guardrail share: ~69% on known printed text (THUR-GB), all of it a record correction (allowed class); 0% other.
+**next**
+1. eckert-1864: E590-E592 + looser E589 in Grant Papers vol. 13 when googleapis holds 200 for a few minutes (~0.5, Sonnet; fortmonroe/eck_s65g_gb.py).
+2. thurloe-printed: the p.294 postscript under the p.72 key as a graded decode with --check (~1.5); Verbael via a desk route (KB catalogue / LOCAL-QUEUE).
+3. Gallica-dependent rows as in the 11 Oct handoffs, when Gallica answers.
+4. tools/next_steps.py `parallel` column refresh (stale on every row two lanes checked): tooling for a parent.
