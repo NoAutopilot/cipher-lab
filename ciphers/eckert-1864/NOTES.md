@@ -7084,3 +7084,34 @@ Read so far: 11 rows examined (FM-S65B); 6 filed (E589-E594), 2 in print (5896/1
 - [x] image-check: FV-L17b read all six leaves at 2400 px; transcription matches.
 - [x] retry: googleapis 503 once, stopped per rule; be-api's 502 query of 10 Oct re-run and answered.
 Verdict: keep going: 2 internal gaps; cheapest next: the keyed googleapis pass for Grant Papers vol. 13, ~$0.1
+
+## ECK-GP13 (12 Oct 2026, account 2, for LANE DEFAULT-A2-0510)
+
+Brief: ECK-S65G Remaining gaps item 1 (Grant Papers vol. 13, 2-20 Feb 1865, for E589-E592 by Google Books). Intake gate (lane, 05:19 UTC): `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0. Prior-work step (`prior_work.py eckert-1864 --item-spec 'shelfmark=Huntington mssEC 25;folio=pointer 5892|5896|5908|5910;date=1865-02-02..1865-02-20' --step-type lookup --fetch`, 05:26 UTC): exit 0, four generic UNCHECKED rows (Tomokiyo and solver caches by unit, editions without a correspondent), none specific; proceed on the residue. **Check 1 (own work):** no section after ECK-S65G ran the vol. 13 pass (grep of NOTES.md for vol. 13 / GP13 / googleapis after line 7060).
+
+Run: `fortmonroe/eck_s65g_gb.py` unchanged (keyed, `country=US`, `intitle:Grant`, vol. 13 ids mnRjmhe3QLoC / ij8fAQAAMAAJ, >= 2 s), output `fortmonroe/eck_gp13_gb.out`; after the 503, one retry of the remaining three queries after a 60 s pause (the same script, query list sliced from E590 at run time, `fortmonroe/eck_gp13_gb_retry.out`).
+
+| row | query | result |
+|---|---|---|
+| control E531 | `"six vessels" Oriental` | HIT, vol. 13 mnRjmhe3QLoC, cov 3/3, snippet "Oriental' seven hundred & seventy eight (778) men has sailed -- The 'Suwo Nada' nine hundred & thirty (930) men will start in half an hour -- This makes six vessels, 5109 men, all as ordered -- ALS (telegram sent), ibid"; no page given by the API. Control PASS: the route reads vol. 13 today. |
+| E589 | `Monohansett Beckwith Sheldon Monroe` | not located (searched Google Books API, 12 Oct 2026 05:27 UTC): totalItems 0 across the whole index, so no vol. 13 snippet. Conditional on the query: four ANDed terms, three of them from the decode's plain words; a looser query was not run (host stopped below). |
+| E590 | `"retained no copy" staff officer Seward` | unsearched: HTTP 503, and 503 again on the one retry after a 60 s pause; host stopped. |
+| E591 | `Radford torpedoes Lynch Bureau of Ordnance Ironsides` | unsearched (host stopped at E590). |
+| E592 | `Camman gold Cooper naval officer` | unsearched (host stopped at E590). |
+
+No hit changes any row's record: no NOTES.md row, status pointer or AUDIT.md section edited; no N-class touched. **Requests:** www.googleapis.com 4 (3 x 200, 1 x 503 then 1 retry 503); no other host.
+
+## Remaining gaps (ECK-GP13, 12 Oct 2026)
+Read so far: 11 rows examined (FM-S65B); 6 filed (E589-E594), 2 in print (5896/1, 5914/2), 2 plain, 1 too short; Grant Papers vol. 13 now searched for E589 (not located, control PASS), E590-E592 still unsearched there. FM-S65A's gaps above stand as written there.
+- Grant Papers vol. 13 (2-20 Feb 1865) for E590 E591 E592, and a looser E589 query (e.g. `Monohansett Monroe`) - blocker: not-attempted; googleapis answered 503 twice to the E590 query on 12 Oct after the control and E589 answered 200 (`fortmonroe/eck_gp13_gb.out`, `eck_gp13_gb_retry.out`); next: re-run `fortmonroe/eck_s65g_gb.py` from E590 in a later session under a googleapis take, ~$0.1
+- The printed page of 5914/2 in Grant Papers vol. 14 (Grant to Ord, 10.00 a.m.) - blocker: not-attempted; be-api gives no page and the IA copy is lending-only (obfuscated to scripts); next: a LOCAL-QUEUE row for a person to read the page in the IA reader at the 'Gordon's Commission' note, ~$0.05
+
+## Escalation (ECK-GP13, 12 Oct 2026)
+- [x] siblings: 5896/1 and 5897/0 share the clear copy 8561; 5941/1 and the 5940-5941 Stanton row are E594's printed companions (FV-L17b).
+- [x] clear-pages: all-pointer CISOSEARCHALL on every row by FM-S65B, FV-L17b and AUD2-LEDGER17-2; clear copy 8561 only.
+- [x] known-keys: No. 1 per BOOK-FM65; No. 1 / No. 2 / No. 9 and shuffled copies compared on every row (FM-S65B).
+- [ ] print: 211 cached volumes, IA be-api whole collection and Grant Papers 14 done; Grant Papers 13 by Google Books: control and E589 done (ECK-GP13), E590-E592 still to run (gap above).
+- [n/a] key-rebuild: no key row edited in this pass.
+- [x] image-check: FV-L17b read all six leaves at 2400 px; transcription matches.
+- [x] retry: googleapis 503 on E590, one retry after a 60 s pause, 503 again, stopped per rule (ECK-GP13).
+Verdict: keep going: 2 internal gaps; cheapest next: the keyed googleapis pass for Grant Papers vol. 13 from E590, ~$0.1
