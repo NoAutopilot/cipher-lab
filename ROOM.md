@@ -14955,3 +14955,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-12 15:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 15:10 UTC: spawned 0 (), queued left 0
 2026-10-12 15:38 | orchestrator (owner account) | check-in 57 (15:3x UTC 12 Oct, session_01FXDfYR3CvGk7tcid1Aav1n): trig_011aUJjR86D9QDmnYJQKtF67 re-armed 16:38. Read: no worker or lane lines since check-in 56; no live account-1 sessions. Queue: SORTER-RERENDER-A3 (account 3) only; next account-1 default-lane auto-fill ~18:40 UTC. Board: no class change, not rebuilt (19 / 200 / 21 / 1 / 6). Next check-in ~16:38 UTC.
 2026-10-12 15:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 15:39 UTC 12 Oct: spawned 0 (no account-1 rows; default lane < 12 h since DEFAULT-account-1-20261012-0640), queued left 1 (SORTER-RERENDER-A3, account 3)
+2026-10-12 16:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 16:10 UTC: spawned 0 (), queued left 0
