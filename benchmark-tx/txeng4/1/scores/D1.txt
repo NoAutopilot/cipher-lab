@@ -1,0 +1,12 @@
+$ tools/tx_bench.py benchmark-tx/txeng4/1/reads/D1.tsv --bench benchmark-tx/txeng3/6/bench_test.tsv --item vivonne1573-f102r-dev2 --exclude-flagged --strict --coverage-diagnostic --ci
+COVERAGE DIAGNOSTIC: partial coverage, missing truth lines are listed and not scored, unknown line ids ignored; not the fixed-manifest score
+vivonne1573-f102r-dev2 [dev] as measured: err_true(0.75-indel align) 0.269 (112/417) | standard SER (unit-cost Levenshtein) 0.269 (112/417): S 94 D 9 I 9 | wrong 94 deleted 9 inserted 9 | excluded 245 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 94/408 = 0.230 | coverage 408/417 = 0.978
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.122 (51/417) | standard SER 0.122 (51/417)
+    standard SER line bootstrap 95% (1000 resamples, conditional on this item's 13 lines): 0.213-0.338
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.102 (22/216) | standard SER (unit-cost Levenshtein) 0.102 (22/216): S 10 D 3 I 9 | wrong 10 deleted 3 inserted 9 | excluded 446 | lines missing 0 (0 signs counted deleted) [201 flagged] | position errors 13/216 = 0.060 | insertions 9 / read 647 = 0.014
+    reader abstentions 0 | accepted-token error 10/213 = 0.047 | coverage 213/216 = 0.986
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.102 (22/216) | standard SER 0.102 (22/216)
+    standard SER line bootstrap 95% (1000 resamples, conditional on this item's 13 lines): 0.064-0.155
+  top confusions (truth value <- read): s<-d x7, e<-R x6, d<-z x5, a<-m x4, l<-x x4, q<-c x4, u<-c x3, g<-<deleted> x2
+split dev: err_true(0.75-indel align) 0.269 (112/417) | standard SER 0.269 (112/417)

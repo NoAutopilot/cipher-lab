@@ -1,0 +1,16 @@
+$ tools/tx_bench.py benchmark-tx/txeng4/1/reads/W1.tsv --bench benchmark-tx/txeng3/6/bench_test.tsv --item vivonne1573-f102r-dev2 --exclude-flagged --strict --coverage-diagnostic --ci --paired benchmark-tx/txeng4/1/reads/D1.tsv
+COVERAGE DIAGNOSTIC: partial coverage, missing truth lines are listed and not scored, unknown line ids ignored; not the fixed-manifest score
+vivonne1573-f102r-dev2 [dev] as measured: err_true(0.75-indel align) 0.283 (118/417) | standard SER (unit-cost Levenshtein) 0.281 (117/417): S 103 D 10 I 4 | wrong 99 deleted 12 inserted 7 | excluded 245 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 99/405 = 0.244 | coverage 405/417 = 0.971
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.117 (49/417) | standard SER 0.117 (49/417)
+    standard SER line bootstrap 95% (1000 resamples, conditional on this item's 13 lines): 0.231-0.342
+paired W1.tsv vs D1.tsv on vivonne1573-f102r-dev2 [as measured]: 13 lines; lines improved 3, worsened 6, tied 4; line sign test p = 0.5078; unit-cost edits base 112 -> output 117 over 417 scored signs | beside, sign-level position McNemar: 417 common scored signs; base wrong 103, output wrong 111; fixed 9, broken 17; exact p = 0.1686
+    paired line bootstrap 95% of the SER difference output - base (1000 resamples, conditional on this item's lines): -0.020..0.039
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.111 (24/216) | standard SER (unit-cost Levenshtein) 0.106 (23/216): S 16 D 3 I 4 | wrong 13 deleted 4 inserted 7 | excluded 446 | lines missing 0 (0 signs counted deleted) [201 flagged] | position errors 17/216 = 0.079 | insertions 7 / read 632 = 0.011
+    reader abstentions 0 | accepted-token error 13/212 = 0.061 | coverage 212/216 = 0.982
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.111 (24/216) | standard SER 0.106 (23/216)
+    standard SER line bootstrap 95% (1000 resamples, conditional on this item's 13 lines): 0.061-0.156
+paired W1.tsv vs D1.tsv on vivonne1573-f102r-dev2 [flagged excluded (truth-verifier flags only)]: 13 lines; lines improved 5, worsened 5, tied 3; line sign test p = 1.0000; unit-cost edits base 22 -> output 23 over 216 scored signs | beside, sign-level position McNemar: 216 common scored signs; base wrong 13, output wrong 17; fixed 7, broken 11; exact p = 0.4807
+    paired line bootstrap 95% of the SER difference output - base (1000 resamples, conditional on this item's lines): -0.050..0.052
+  top confusions (truth value <- read): d<-z x8, s<-d x7, l<-J x6, e<-R x4, a<-m x4, l<-x x4, r<-<deleted> x2, e<-: x2
+split dev: err_true(0.75-indel align) 0.283 (118/417) | standard SER 0.281 (117/417)
