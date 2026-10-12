@@ -334,3 +334,26 @@ if __name__ == '__main__':
         if n.startswith('test_') and inspect.isfunction(f):
             f()
     print('ok')
+
+
+def test_pair():
+    """--pair (TXE4-6): truth A B D E F at pos 1-5 (pos 2 set B|C), pos 6 excluded; pass A right except pos 3 (Q) and
+    pos 5 (Z); pass B wrong at pos 3 (Q, the same label), pos 4 (W) -> agreed-wrong 1 (pos 3), A only 1 (pos 5),
+    B only 1 (pos 4), oracle bound 1/5."""
+    with tempfile.TemporaryDirectory() as d:
+        _w(d, 't.truth.tsv', '# x\nline\tpos\tref_sign\ttruth\tplain\tstatus\tflag\n'
+           'L1\t1\tA\tA\ta\tscored\t\nL1\t2\tB\tB|C\tb\tscored\t\nL1\t3\tD\tD\td\tscored\t\n'
+           'L1\t4\tE\tE\te\tscored\tkey-gap\nL1\t5\tF\tF\tf\tscored\t\nL1\t6\tX\t\t\texcluded:off-sheet\t\n')
+        bench = _w(d, 'B.tsv', 'item\ttruth\tsplit\nit1\tt.truth.tsv\teval\n')
+        pa = _w(d, 'a.tsv', 'line\tpos\tsign\n' + ''.join('L1\t%d\t%s\n' % (i + 1, s) for i, s in enumerate('ACQEZX')))
+        pb = _w(d, 'b.tsv', 'line\tpos\tsign\n' + ''.join('L1\t%d\t%s\n' % (i + 1, s) for i, s in enumerate('ABQWFX')))
+        rc, out = _run(['--pair', pa, pb, '--bench', bench, '--json', '--exclude-flagged'])
+        r = json.loads(out)['items'][0]
+        m = r['as_measured']
+        assert rc == 0 and m['scored'] == 5 and m['agreed_wrong'] == 1 and m['both_wrong_different'] == 0, m
+        assert m['a_only_wrong'] == 1 and m['b_only_wrong'] == 1 and m['one_reader_wrong'] == 2, m
+        assert m['oracle_wrong'] == 1 and abs(m['oracle_rate'] - 0.2) < 1e-9 and m['a_wrong'] == 2 and m['b_wrong'] == 2, m
+        f = r['flagged_excluded']          # pos 4 (B only wrong) flagged out
+        assert f['scored'] == 4 and f['b_only_wrong'] == 0 and f['a_only_wrong'] == 1 and f['agreed_wrong'] == 1, f
+        rc, out = _run(['--pair', pa, pb, '--bench', bench])
+        assert rc == 0 and 'oracle-adjudication bound 1/5' in out, out

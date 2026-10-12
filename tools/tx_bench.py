@@ -66,6 +66,12 @@ file to the digit (tests: benchmark-tx/txeng2/s2score/tx_bench_S2.txt, txeng2/vi
     line-level bootstrap of standard SER (seed 20261010), and under --paired of the SER difference (output - base),
     conditional on the item's lines -- it says nothing about other hands.
 (8) Per-item reporting as before; a macro mean (unweighted over items) when several items are scored.
+--pair A B (TXE4-6 TIEBREAK, 12 Oct 2026): for two passes, under both masks (with --exclude-flagged), the per-position
+overlap of their errors on the scored positions: both right, agreed-wrong (both wrong with the same label), both-wrong-
+different, one-reader-wrong (A only / B only, the share a tiebreak between A and B can reach), and the oracle-adjudication
+bound (positions where neither reader is right, as a rate with Wilson 95%; insertions are not position-level and stay out
+of it). Takes --bench, --item, --line-prefix, --json, --coverage-diagnostic; no other scoring option. Test:
+tools/tests/test_tx_bench.py::test_pair.
 Exit 0 on a clean score; exit 2 on bad input or a validation failure.
 """
 import argparse, csv, json, math, os, random, sys
@@ -254,6 +260,101 @@ def position_errors(truth_rows, out_lines, missing='skip', abstain=False):
             errs[(ln, rows[ri]['pos'])] = (osg is None or osg not in ts[ri]
                                            or (abstain and is_abstention(osg)))
     return errs
+
+
+def position_signs(truth_rows, out_lines, missing='delete'):
+    """{(line, pos): aligned output sign or None (deleted)} over the scored truth positions (TXE4-6 --pair)."""
+    by_line = defaultdict(list)
+    for r in truth_rows:
+        by_line[r['line']].append(r)
+    out = {}
+    for ln, rows in by_line.items():
+        rows.sort(key=lambda r: float(r['pos']))
+        if ln not in out_lines:
+            if missing == 'delete':
+                for r in rows:
+                    if r['status'] == 'scored':
+                        out[(ln, r['pos'])] = None
+            continue
+        ref = [r['ref_sign'] for r in rows]
+        ts = [set(filter(None, r['truth'].split('|'))) for r in rows]
+        for ri, osg in align(ref, ts, out_lines[ln], abstain=True):
+            if ri is not None and rows[ri]['status'] == 'scored':
+                out[(ln, rows[ri]['pos'])] = osg
+    return out
+
+
+def pair_report(truth_rows, a_lines, b_lines, missing='delete'):
+    """--pair A B (TXE4-6 TIEBREAK, 12 Oct 2026): how two passes' errors overlap on the scored positions. Per position:
+    both right; agreed-wrong (both wrong with the same label, a deletion counting as a label); both-wrong-different;
+    one-reader-wrong (A only, B only). The oracle-adjudication bound = the positions where neither reader is right
+    (an adjudicator choosing between A and B cannot fix them), as a rate over scored; insertions are not position-level
+    and are reported beside from score_item, not in the bound."""
+    sa, sb = position_signs(truth_rows, a_lines, missing), position_signs(truth_rows, b_lines, missing)
+    ts = {(r['line'], r['pos']): set(filter(None, r['truth'].split('|'))) | {r['ref_sign']} for r in truth_rows
+          if r['status'] == 'scored'}
+    keys = sorted(set(sa) & set(sb))
+    c = Counter()
+    for k in keys:
+        ra = sa[k] is not None and sa[k] in ts[k] and not is_abstention(sa[k])
+        rb = sb[k] is not None and sb[k] in ts[k] and not is_abstention(sb[k])
+        if ra and rb:
+            c['both_right'] += 1
+        elif not ra and not rb:
+            c['agreed_wrong' if sa[k] == sb[k] else 'both_wrong_different'] += 1
+        elif ra:
+            c['b_only_wrong'] += 1
+        else:
+            c['a_only_wrong'] += 1
+    n = len(keys)
+    one = c['a_only_wrong'] + c['b_only_wrong']
+    both = c['agreed_wrong'] + c['both_wrong_different']
+    return dict(scored=n, both_right=c['both_right'], agreed_wrong=c['agreed_wrong'],
+                both_wrong_different=c['both_wrong_different'], a_only_wrong=c['a_only_wrong'],
+                b_only_wrong=c['b_only_wrong'], one_reader_wrong=one, reachable_share=round(one / n, 4) if n else 0.0,
+                a_wrong=c['a_only_wrong'] + both, b_wrong=c['b_only_wrong'] + both,
+                oracle_wrong=both, oracle_rate=round(both / n, 4) if n else 0.0,
+                oracle_wilson95=[round(x, 4) for x in wilson(both, n)] if n else [0.0, 0.0])
+
+
+def _main_pair(argv):
+    ap = argparse.ArgumentParser(description='tx_bench --pair A B: error overlap of two passes (TXE4-6)')
+    ap.add_argument('--pair', nargs=2, metavar=('A.tsv', 'B.tsv'), required=True)
+    ap.add_argument('--bench', default='BENCHMARK-TX.tsv'); ap.add_argument('--item', action='append')
+    ap.add_argument('--line-prefix'); ap.add_argument('--json', action='store_true')
+    ap.add_argument('--exclude-flagged', action='store_true'); ap.add_argument('--coverage-diagnostic', action='store_true')
+    a = ap.parse_args(argv)
+    missing = 'skip' if a.coverage_diagnostic else 'delete'
+    base = os.path.dirname(os.path.abspath(a.bench))
+    A, B = load_output([a.pair[0]], a.line_prefix), load_output([a.pair[1]], a.line_prefix)
+    res = []
+    for item in read_tsv(a.bench):
+        if a.item and item['item'] not in a.item:
+            continue
+        truth = read_tsv(os.path.join(base, item['truth']))
+        if not ({r['line'] for r in truth} & (set(A) | set(B))):
+            continue
+        d = dict(item=item['item'], as_measured=pair_report(truth, A, B, missing))
+        if a.exclude_flagged:
+            d['flagged_excluded'] = pair_report(drop_flagged(truth), A, B, missing)
+        res.append(d)
+    if not res:
+        print('tx_bench --pair: the outputs cover no benchmark line', file=sys.stderr); return 2
+    if a.json:
+        print(json.dumps(dict(pair=a.pair, items=res), indent=1)); return 0
+    for d in res:
+        for mask in ('as_measured', 'flagged_excluded'):
+            if mask not in d:
+                continue
+            r = d[mask]
+            print('%s [%s] scored %d: both right %d; agreed-wrong %d; both-wrong-different %d; one-reader-wrong %d '
+                  '(A only %d, B only %d) = reachable share %.3f; A wrong %d, B wrong %d; oracle-adjudication bound '
+                  '%d/%d = %.3f (Wilson %.3f-%.3f); insertions not in the bound'
+                  % (d['item'], mask.replace('_', ' '), r['scored'], r['both_right'], r['agreed_wrong'],
+                     r['both_wrong_different'], r['one_reader_wrong'], r['a_only_wrong'], r['b_only_wrong'],
+                     r['reachable_share'], r['a_wrong'], r['b_wrong'], r['oracle_wrong'], r['scored'], r['oracle_rate'],
+                     r['oracle_wilson95'][0], r['oracle_wilson95'][1]))
+    return 0
 
 
 def sign_test(fixed, broken):
@@ -503,6 +604,8 @@ def main(argv=None):
     argv = list(sys.argv[1:] if argv is None else argv)
     if '--legacy' in argv:
         return _main_legacy([x for x in argv if x != '--legacy'])
+    if '--pair' in argv:
+        return _main_pair(argv)
     ap = argparse.ArgumentParser(description=__doc__.split('\n\n')[0])
     ap.add_argument('outputs', nargs='+')
     ap.add_argument('--bench', default='BENCHMARK-TX.tsv')
