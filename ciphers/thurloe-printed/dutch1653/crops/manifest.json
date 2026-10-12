@@ -1511,6 +1511,69 @@
     "prominence": 162.6
    },
    "date": "10 Oct 2026"
+  },
+  {
+   "crop": "p340end_L01.jpg",
+   "source_url": "",
+   "source_file": "v1_n369.jpg",
+   "box": [
+    15,
+    1880,
+    2445,
+    1982
+   ],
+   "lines_in_crop": 2,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 55,
+    "distance": 38,
+    "prominence": 132.9
+   },
+   "date": "12 Oct 2026"
+  },
+  {
+   "crop": "p340end_L02.jpg",
+   "source_url": "",
+   "source_file": "v1_n369.jpg",
+   "box": [
+    15,
+    1982,
+    2445,
+    2106
+   ],
+   "lines_in_crop": 2,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 55,
+    "distance": 38,
+    "prominence": 132.9
+   },
+   "date": "12 Oct 2026"
+  },
+  {
+   "crop": "p340end_L03.jpg",
+   "source_url": "",
+   "source_file": "v1_n369.jpg",
+   "box": [
+    15,
+    2106,
+    2445,
+    2174
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 55,
+    "distance": 38,
+    "prominence": 132.9
+   },
+   "date": "12 Oct 2026"
   }
  ]
 }

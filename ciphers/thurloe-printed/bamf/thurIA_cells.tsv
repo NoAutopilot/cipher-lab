@@ -1,0 +1,6 @@
+# THUR-IA, 12 Oct 2026 (LANE DEFAULT-A1-0640, account 1). Bamfylde First Cipher codes 94/25/51 on Birch vol 4 pp.306-307 (letter "A letter of col. Bamfylde", Dec. 22, 1655 [N.S.], djvu ll.25708-25841), image-read by eye on IA leaves n309 (sha1 0d716007...) and n310 (sha1 95168798...). Crops: bamf/crops/v4p306_L*.jpg, v4p307_L0*.jpg. No key or table edit (rule 4: one printed gloss each; conflicts logged in HYPOTHESES.md THUR-IA).
+page	run_codes	printed_gloss	code	gloss_at_code	alignment	grade_if_used	note
+306	26.42.24.51 (and 847)	h y m ... card.	51	none	h,y,m over 26,42,24; nothing printed over 51; card. over 847	U	context "hym[51]" would fit e ("hyme") or nothing; sense only, I
+306	73 36.421.37.31.42.23.51.37	w r i t i n g i t	51	i	9 codes, 9 letters, x-positions agree	M (once)	agrees with Tomokiyo 51 = i; against our table 51 = e (p.195 "Digbye", "papest", 2 glosses)
+307	290. 755. 27. 25. 36. 62. 32. 43. 70. 30	defray the e e x p e n c e	25	e	by count 25 = 2nd e; by x-position 25 under the 1st e: e either way	M (once)	agrees with Tomokiyo 25 = x/e (his e); against our table 25 = o (p.195 "secret s o f", 1 gloss)
+306-307	(whole letter)	-	94	-	no 94 printed on either page	-	94 conflict (print y vol 5 p.512 vs Tomokiyo t) unchanged

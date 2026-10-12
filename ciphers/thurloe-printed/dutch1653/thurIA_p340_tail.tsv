@@ -1,0 +1,23 @@
+# THUR-IA, 12 Oct 2026. Birch I p.340 (IA collectionofstat01thur leaf n369, sha1 f4ab28ef...) vs Bijdragen X p.293 italics after run 15. Crops: dutch1653/crops/p340end_L0*.jpg (Birch), dutch1653/crops/bijX/bijX_p293_L0*.jpg (1856 print).
+# Result: Birch prints 15 cipher runs (ct_p339.tsv) and nothing past run 15. His English ends "be made, who for 31.16.37.38.27.50.51.17. should come over hither, as that must happen unavoidably." = Dutch "dije tot kennisse alhijer conden overcomen, gelijck dat onvermijdelijck geschijeden moet." then "18 July [1653. N. S.] Beverning and Nieuport." The Dutch passage "Versoecken derhalve ... te rugge comen" (p.293) and the p.294 postscript are absent from Birch: no numerals, no English.
+bijdragen_italic	page	in_birch	birch_form
+ongelijck	293	no	passage omitted
+de Staten Generael	293	no	passage omitted
+liberteijt	293	no	passage omitted
+deliberatien	293	no	passage omitted
+negotiatie	293	no	passage omitted
+onvruchbaar	293	no	passage omitted
+blame	293	no	passage omitted
+over ons doe comen	293	no	passage omitted
+ontrouwe ministers	293	no	passage omitted
+het Parlement	293	no	passage omitted
+abuseren	293	no	passage omitted
+tijd	293	no	passage omitted
+onse saecken wat te redden	293	no	passage omitted
+diergelijcke saecken in publijcke propositien	293	no	passage omitted
+delibera-tien	293	no	passage omitted
+bij tijdt gewaerschuwt	293	no	passage omitted
+haer Ho. Mo.	293	no	passage omitted
+wij gevoechlijcst ende fatsoenlijxst van hijer	293	no	passage omitted
+te rugge comen	293	no	passage omitted
+postscript (29 numerals)	294	no	not printed by Birch, neither numerals nor English
