@@ -1,0 +1,17 @@
+[as_measured] pool eval_heldout(376)+f152r: pooled fixed 2 broken 2 net 0, exact two-sided p = 1.0000; control (a) permuted labels net per seed [-2, -6, -1, -2, -3, -3, -3, -4, -1, -4, -5, -2, -3, -3, -3, -4, -2, -8, -2, -3] -> p95 -1, mean -3.20; control (b) coin net per seed [-1, -1, -1, -1, 0, 0, -1, -1, -1, -1, 0, 0, 0, 0, -1, 0, 0, -1, -1, -2] -> mean -0.65
+  no87: fixed 2 broken 1; err_true 14/376 = 0.037 (Wilson 0.022-0.062)
+  f152r: fixed 0 broken 1; err_true 6/73 = 0.082 (Wilson 0.038-0.168)
+  gate: fixed > broken p < 0.05: FAIL; net > control (a) p95: PASS
+[as_measured] pool eval17(460, incl. f178r)+f152r: pooled fixed 2 broken 2 net 0, exact two-sided p = 1.0000; control (a) permuted labels net per seed [-2, -6, -1, -2, -3, -3, -3, -4, -1, -4, -7, -2, -3, -3, -3, -5, -2, -9, -2, -3] -> p95 -1, mean -3.40; control (b) coin net per seed [-1, -1, -1, -1, 0, 0, -1, -1, -1, -1, 0, 0, 0, 0, -1, 0, 0, -1, -1, -2] -> mean -0.65
+  no87: fixed 2 broken 1; err_true 21/460 = 0.046 (Wilson 0.030-0.069)
+  f152r: fixed 0 broken 1; err_true 6/73 = 0.082 (Wilson 0.038-0.168)
+  gate: fixed > broken p < 0.05: FAIL; net > control (a) p95: PASS
+[flagged_excluded] pool eval_heldout(376)+f152r: pooled fixed 2 broken 2 net 0, exact two-sided p = 1.0000; control (a) permuted labels net per seed [-2, -6, -1, -2, -3, -3, -3, -4, -1, -4, -5, -2, -3, -3, -3, -4, -2, -8, -2, -3] -> p95 -1, mean -3.20; control (b) coin net per seed [-1, -1, -1, -1, 0, 0, -1, -1, -1, -1, 0, 0, 0, 0, -1, 0, 0, -1, -1, -2] -> mean -0.65
+  no87: fixed 2 broken 1; err_true 9/371 = 0.024 (Wilson 0.013-0.045)
+  f152r: fixed 0 broken 1; err_true 3/70 = 0.043 (Wilson 0.015-0.119)
+  gate: fixed > broken p < 0.05: FAIL; net > control (a) p95: PASS
+[flagged_excluded] pool eval17(460, incl. f178r)+f152r: pooled fixed 2 broken 2 net 0, exact two-sided p = 1.0000; control (a) permuted labels net per seed [-2, -6, -1, -2, -3, -3, -3, -4, -1, -4, -7, -2, -3, -3, -3, -5, -2, -9, -2, -3] -> p95 -1, mean -3.40; control (b) coin net per seed [-1, -1, -1, -1, 0, 0, -1, -1, -1, -1, 0, 0, 0, 0, -1, 0, 0, -1, -1, -2] -> mean -0.65
+  no87: fixed 2 broken 1; err_true 15/454 = 0.033 (Wilson 0.020-0.054)
+  f152r: fixed 0 broken 1; err_true 3/70 = 0.043 (Wilson 0.015-0.119)
+  gate: fixed > broken p < 0.05: FAIL; net > control (a) p95: PASS
+gate line 3 (as-measured err_true not higher on any item): no87 eval_heldout T 14/376 vs base 15/376; f152r T 6/73 vs base 5/73; gunther: non-test (not pooled)

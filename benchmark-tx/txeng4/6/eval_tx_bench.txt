@@ -43,3 +43,15 @@ paired f152r_R.tsv vs passZ_pipeline.tsv on birago1572-f152r [as measured]: 4 li
 paired f152r_R.tsv vs passZ_pipeline.tsv on birago1572-f152r [flagged excluded (truth-verifier flags only)]: 4 lines; lines improved 0, worsened 1, tied 3; line sign test p = 1.0000; unit-cost edits base 1 -> output 2 over 70 scored signs | beside, sign-level position McNemar: 70 common scored signs; base wrong 1, output wrong 2; fixed 0, broken 1; exact p = 1.0000
   top confusions (truth value <- read): e<-T36 x1, d<-T98 x1, e<-T60 x1, a<-T52 x1, l<-T64 x1
 split eval: err_true(0.75-indel align) 0.082 (6/73) | standard SER 0.068 (5/73)
+
+== no87 eval_heldout (376: f178v L13-23 + f179r L01-03): COVERAGE DIAGNOSTIC: partial coverage, missing truth lines are listed and not scored, unknown line ids ignored; not the fixed-manifest score
+birago1572-no87 [eval] as measured: err_true(0.75-indel align) 0.037 (14/376) | standard SER (unit-cost Levenshtein) 0.037 (14/376): S 14 D 0 I 0 | wrong 14 deleted 0 inserted 0 | excluded 26 | lines missing 15 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 14/376 = 0.037 | coverage 376/376 = 1.000
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.008 (3/376) | standard SER 0.008 (3/376)
+paired no87_R_eh.tsv vs no87_base_eh.tsv on birago1572-no87 [as measured]: 14 lines; lines improved 1, worsened 1, tied 12; line sign test p = 1.0000; unit-cost edits base 15 -> output 14 over 376 scored signs | beside, sign-level position McNemar: 376 common scored signs; base wrong 15, output wrong 14; fixed 2, broken 1; exact p = 1.0000
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.024 (9/371) | standard SER (unit-cost Levenshtein) 0.024 (9/371): S 9 D 0 I 0 | wrong 9 deleted 0 inserted 0 | excluded 31 | lines missing 15 (0 signs counted deleted) [5 flagged] | position errors 9/371 = 0.024 | insertions 0 / read 402 = 0.000
+    reader abstentions 0 | accepted-token error 9/371 = 0.024 | coverage 371/371 = 1.000
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.008 (3/371) | standard SER 0.008 (3/371)
+paired no87_R_eh.tsv vs no87_base_eh.tsv on birago1572-no87 [flagged excluded (truth-verifier flags only)]: 14 lines; lines improved 1, worsened 1, tied 12; line sign test p = 1.0000; unit-cost edits base 10 -> output 9 over 371 scored signs | beside, sign-level position McNemar: 371 common scored signs; base wrong 10, output wrong 9; fixed 2, broken 1; exact p = 1.0000
+  top confusions (truth value <- read): d<-T98 x4, l<-T64 x2, c<-T27 x1, o<-T70 x1, c<-T46 x1, e<-T76 x1, a<-T76 x1, z<-T60 x1
+split eval: err_true(0.75-indel align) 0.037 (14/376) | standard SER 0.037 (14/376)
