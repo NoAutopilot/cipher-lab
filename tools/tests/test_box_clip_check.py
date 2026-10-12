@@ -124,6 +124,26 @@ def test_cli():
         assert h.returncode == 0 and '--boxes' in h.stdout
 
 
+def page_extra():
+    """page() plus two blobs added after the 12 Oct verification (BOXCLIP VERIFY): a separate blob in B's crop margin that
+    never touches B's box (it must not count as B's outside ink: the in-box-contact condition), and a small separate square
+    inside a wider box around A (A2) that does not cross its edge (the grown box is built from edge-crossing components only)."""
+    im = Image.fromarray(page().copy())
+    d = ImageDraw.Draw(im)
+    d.rectangle([118, 40, 126, 50], fill=0)    # free blob 8 px right of B's box, inside B's crop margin
+    d.rectangle([52, 30, 57, 35], fill=0)      # 6x6 square right of A's body, inside the wider box A2 below, clear of the body
+    return np.asarray(im)
+
+
+def test_only_touching_components_count():
+    r = {g['sid']: g for g in BC.check_boxes(page_extra(), BOXES)}
+    assert not r['B']['flagged'] and r['B']['outside_frac'] == 0.0, r['B']   # the free blob is not B's ink
+    a2 = BC.check_boxes(page_extra(), [('A2', 26, 26, 36, 28)])[0]   # A's body, first tail rows and the square
+    assert a2['flagged'] and a2['n_comp'] == 2, a2
+    gx, gy, gw, gh = a2['grown']
+    assert gx + gw <= 48, a2['grown']   # the square does not cross the edge, so it does not widen the grown box
+
+
 if __name__ == '__main__':
     for name, fn in sorted(globals().items()):
         if name.startswith('test_') and callable(fn):
