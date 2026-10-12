@@ -17,7 +17,7 @@ code	letter	grade	attested
 20	s	C	6/6
 17	a	C	3/3
 72	u	C	3/4
-35	o	C	2/2
+35	o	C	3/3
 94	y	M	additions_bamf2
 62	p	C	3/3
 22	e	C	5/5

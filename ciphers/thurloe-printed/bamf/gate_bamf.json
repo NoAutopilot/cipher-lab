@@ -3,19 +3,19 @@
   "A_train194-195_test232": {
    "S": -1.2104,
    "coverage": "17/24",
-   "null_max": -1.1833,
-   "null_mean": -1.4057,
-   "null_p95": -1.2862,
-   "p_emp": 0.006,
+   "null_max": -1.1942,
+   "null_mean": -1.4081,
+   "null_p95": -1.2943,
+   "p_emp": 0.004,
    "pass": true,
-   "table_size": 42
+   "table_size": 41
   },
   "B_train232_test194-195": {
    "S": -1.2518,
    "coverage": "12/24",
    "null_max": -1.2136,
-   "null_mean": -1.3997,
-   "null_p95": -1.302,
+   "null_mean": -1.4,
+   "null_p95": -1.3023,
    "p_emp": 0.005,
    "pass": true,
    "table_size": 35
@@ -102,11 +102,6 @@
    "letter": "m",
    "n": 2
   },
-  "25": {
-   "agree": 1,
-   "letter": "o",
-   "n": 1
-  },
   "26": {
    "agree": 3,
    "letter": "h",
@@ -143,9 +138,9 @@
    "n": 1
   },
   "35": {
-   "agree": 2,
+   "agree": 3,
    "letter": "o",
-   "n": 2
+   "n": 3
   },
   "36": {
    "agree": 8,
@@ -296,12 +291,12 @@
  "target": {
   "S": -1.0624,
   "coverage": "23/24",
-  "null_max": -1.1415,
-  "null_mean": -1.4542,
-  "null_p95": -1.2789,
+  "null_max": -1.1084,
+  "null_mean": -1.4556,
+  "null_p95": -1.2745,
   "p_emp": 0.001,
   "pass": true,
-  "table_size": 51
+  "table_size": 50
  },
  "verdict": "PASS"
 }

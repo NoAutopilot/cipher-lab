@@ -3462,6 +3462,113 @@
     ]
    },
    "date": "12 Oct 2026"
+  },
+  {
+   "crop": "v4p195r3_L01.jpg",
+   "source_url": "https://archive.org/download/collectionofstat04thur/page/n198_w2000.jpg",
+   "source_file": "v4_n198.jpg",
+   "box": [
+    0,
+    1255,
+    1300,
+    1382
+   ],
+   "lines_in_crop": 2,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     30,
+     95
+    ]
+   },
+   "date": "12 Oct 2026",
+   "source_sha1": "89a7713b0b9c5d8b34b2a507c9775da17e9f83ef",
+   "by": "THUR-198"
+  },
+  {
+   "crop": "v4p195r6_L01.jpg",
+   "source_url": "https://archive.org/download/collectionofstat04thur/page/n198_w2000.jpg",
+   "source_file": "v4_n198.jpg",
+   "box": [
+    0,
+    1565,
+    1300,
+    1692
+   ],
+   "lines_in_crop": 2,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     30,
+     95
+    ]
+   },
+   "date": "12 Oct 2026",
+   "source_sha1": "89a7713b0b9c5d8b34b2a507c9775da17e9f83ef",
+   "by": "THUR-198"
+  },
+  {
+   "crop": "v6p642top_L01.jpg",
+   "source_url": "https://archive.org/download/bim_eighteenth-century_a-collection-of-the-stat_thurloe-john_1742_6/page/n645_w2000.jpg",
+   "source_file": "v6_n645.jpg",
+   "box": [
+    550,
+    595,
+    1250,
+    655
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     30
+    ]
+   },
+   "date": "12 Oct 2026",
+   "source_sha1": "f1c8585f5dd0e28b9c20a346ef619a284ed0efc6",
+   "by": "THUR-198"
+  },
+  {
+   "crop": "v6p642_L01.jpg",
+   "source_url": "https://archive.org/download/bim_eighteenth-century_a-collection-of-the-stat_thurloe-john_1742_6/page/n645_w2000.jpg",
+   "source_file": "v6_n645.jpg",
+   "box": [
+    150,
+    1973,
+    2032,
+    2062
+   ],
+   "lines_in_crop": 2,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     35,
+     80
+    ]
+   },
+   "date": "12 Oct 2026",
+   "source_sha1": "f1c8585f5dd0e28b9c20a346ef619a284ed0efc6",
+   "by": "THUR-198"
   }
  ]
 }

@@ -21,7 +21,7 @@ code	ours	ours_attested	tomokiyo	status
 22	e	5/5	e	agree
 23	g	3/3	g	agree
 24	m	2/2	m	agree
-25	o	1/1	x/e	disagree
+25			x/e	absent_ours
 26	h	3/3	h	agree
 27	e	2/2	e	agree
 28			g/x	absent_ours
@@ -31,7 +31,7 @@ code	ours	ours_attested	tomokiyo	status
 32	e	3/3	e	agree
 33	f	2/2	f	agree
 34	k	1/1	k	agree
-35	o	2/2	o	agree
+35	o	3/3	o	agree
 36	r	8/8	r	agree
 37	t	5/5	t	agree
 38			k	absent_ours
@@ -81,4 +81,4 @@ code	ours	ours_attested	tomokiyo	status
 94			t	absent_ours
 97			y	absent_ours
 99			-	absent_ours
-# counts: absent_ours 31, agree 49, disagree 2
+# counts: absent_ours 32, agree 49, disagree 1

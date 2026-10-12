@@ -1,0 +1,29 @@
+# THUR-198, 12 Oct 2026: Birch vol 6 pp.641-642 (bim_..._1742_6 leaves n644, n645), "A letter of intelligence from col. Bamfylde", Nov 29 / Dec 9 1657 (djvu l.76732).
+# Image-read by eye on bamf/crops/v6p642_L01.jpg and v6p642top_L01.jpg; p.641 read on the scratch leaf (828, in "The firste 828 says"). NO printed gloss over any cell on either page (text set solid, no interlinear line).
+# OCR corrections from the image: 637 (OCR "67"), 61 87 (OCR "6187"). tomokiyo = bamp2_table.tsv (Second Cipher) value, shown for reference only; no comparison is possible without a printed gloss.
+page	run	pos	code	printed_gloss	tomokiyo2	context
+p641	1	1	828			The firste 828 says will be more properly debated
+p642	2	1	547			with 547, and the count de Slipingbach
+p642	3	1	159			You will have another pacquett, ... 350.
+p642	3	2	749			You will have another pacquett, ... 350.
+p642	3	3	637			You will have another pacquett, ... 350.
+p642	3	4	22		a	You will have another pacquett, ... 350.
+p642	3	5	12		d	You will have another pacquett, ... 350.
+p642	3	6	45		e	You will have another pacquett, ... 350.
+p642	3	7	19		e	You will have another pacquett, ... 350.
+p642	3	8	20		s	You will have another pacquett, ... 350.
+p642	3	9	23		e	You will have another pacquett, ... 350.
+p642	3	10	17			You will have another pacquett, ... 350.
+p642	3	11	350			You will have another pacquett, ... 350.
+p642	4	1	40		i	Mr. 40 ... 5. Pray be pleased to enquire for it
+p642	4	2	125			Mr. 40 ... 5. Pray be pleased to enquire for it
+p642	4	3	68		e	Mr. 40 ... 5. Pray be pleased to enquire for it
+p642	4	4	86		s	Mr. 40 ... 5. Pray be pleased to enquire for it
+p642	4	5	26			Mr. 40 ... 5. Pray be pleased to enquire for it
+p642	4	6	14		o	Mr. 40 ... 5. Pray be pleased to enquire for it
+p642	4	7	36		s	Mr. 40 ... 5. Pray be pleased to enquire for it
+p642	4	8	62		t	Mr. 40 ... 5. Pray be pleased to enquire for it
+p642	4	9	44			Mr. 40 ... 5. Pray be pleased to enquire for it
+p642	4	10	61			Mr. 40 ... 5. Pray be pleased to enquire for it
+p642	4	11	87		[-]	Mr. 40 ... 5. Pray be pleased to enquire for it
+p642	4	12	5			Mr. 40 ... 5. Pray be pleased to enquire for it
