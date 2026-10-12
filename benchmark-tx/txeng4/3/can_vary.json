@@ -1,0 +1,11 @@
+{
+ "eval_boxes": 412,
+ "A2_ne_A1": 76,
+ "A2_ne_null": {
+  "min": 374,
+  "mean": 391.9,
+  "max": 407
+ },
+ "A2_blank": 0,
+ "A1_blank": 0
+}

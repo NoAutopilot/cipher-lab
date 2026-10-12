@@ -1,0 +1,28 @@
+{
+ "metric": "nca",
+ "dim": 32,
+ "fit_tiles": 1028,
+ "classes": 47,
+ "features_in": 71,
+ "features": "hog+zone+topo",
+ "fit_pages": [
+  "f174r",
+  "f174v",
+  "f174vB",
+  "f175r",
+  "f175v",
+  "f178r",
+  "f178v",
+  "f179r",
+  "f184r",
+  "f184v",
+  "f185r"
+ ],
+ "fit_boxes_sha256": "31c279d59903844b6509e688be16667312f6252dd74df363908da42ce7a4490e",
+ "holdout": [
+  "f152r_",
+  "f178v_14_"
+ ],
+ "exclude_page": false,
+ "page": "all"
+}
