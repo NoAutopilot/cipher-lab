@@ -1,0 +1,9 @@
+{
+ "item": "f152r",
+ "verdict": "PASS",
+ "dropped": [],
+ "tiles": 79,
+ "split_rows": 6,
+ "reachable": 5,
+ "reachable_boxed": 4
+}

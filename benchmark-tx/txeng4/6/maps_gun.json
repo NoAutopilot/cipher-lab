@@ -1,0 +1,14 @@
+{
+ "item": "gun",
+ "verdict": "PASS",
+ "dropped": [
+  "g05_L01",
+  "g06_L01",
+  "g10_L01",
+  "g16_L01"
+ ],
+ "tiles": 86,
+ "split_rows": 13,
+ "reachable": 11,
+ "reachable_boxed": 4
+}

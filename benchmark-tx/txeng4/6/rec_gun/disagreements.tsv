@@ -1,0 +1,14 @@
+line	col	A	B	flagged	crop
+L01	1	-	tau	B	
+L02	7	v	r		
+L04	1	ro	b		
+L04	14	]	Ib	B	
+L05	9	g	phi	B	
+L05	14	NEW:f-struck-by-bar	ps	AB	
+L07	6	NEW:f-struck-by-bar	th	AB	
+L08	17	x	L	A	
+L09	11	NEW:44-struck	-	A	
+L10	3	ro	b		
+L13	5	g	q	A	
+L13	12	ro	b		
+L16	4	ro	b		

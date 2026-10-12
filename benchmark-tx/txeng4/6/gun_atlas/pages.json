@@ -1,0 +1,87 @@
+{
+ "g01": {
+  "image": "benchmark-tx/txpool/gunther8246-p2/crops/p2_L01.jpg",
+  "box": null,
+  "median_h": 26.0
+ },
+ "g02": {
+  "image": "benchmark-tx/txpool/gunther8246-p2/crops/p2_L02.jpg",
+  "box": null,
+  "median_h": 26.0
+ },
+ "g03": {
+  "image": "benchmark-tx/txpool/gunther8246-p2/crops/p2_L03.jpg",
+  "box": null,
+  "median_h": 26.0
+ },
+ "g04": {
+  "image": "benchmark-tx/txpool/gunther8246-p2/crops/p2_L04.jpg",
+  "box": null,
+  "median_h": 26.0
+ },
+ "g05": {
+  "image": "benchmark-tx/txpool/gunther8246-p2/crops/p2_L05.jpg",
+  "box": null,
+  "median_h": 26.0
+ },
+ "g06": {
+  "image": "benchmark-tx/txpool/gunther8246-p2/crops/p2_L06.jpg",
+  "box": null,
+  "median_h": 26.0
+ },
+ "g07": {
+  "image": "benchmark-tx/txpool/gunther8246-p2/crops/p2_L07.jpg",
+  "box": null,
+  "median_h": 26.0
+ },
+ "g08": {
+  "image": "benchmark-tx/txpool/gunther8246-p2/crops/p2_L08.jpg",
+  "box": null,
+  "median_h": 26.0
+ },
+ "g09": {
+  "image": "benchmark-tx/txpool/gunther8246-p2/crops/p2_L09.jpg",
+  "box": null,
+  "median_h": 26.0
+ },
+ "g10": {
+  "image": "benchmark-tx/txpool/gunther8246-p2/crops/p2_L10.jpg",
+  "box": null,
+  "median_h": 26.0
+ },
+ "g11": {
+  "image": "benchmark-tx/txpool/gunther8246-p2/crops/p2_L11.jpg",
+  "box": null,
+  "median_h": 26.0
+ },
+ "g12": {
+  "image": "benchmark-tx/txpool/gunther8246-p2/crops/p2_L12.jpg",
+  "box": null,
+  "median_h": 26.0
+ },
+ "g13": {
+  "image": "benchmark-tx/txpool/gunther8246-p2/crops/p2_L13.jpg",
+  "box": null,
+  "median_h": 26.0
+ },
+ "g14": {
+  "image": "benchmark-tx/txpool/gunther8246-p2/crops/p2_L14.jpg",
+  "box": null,
+  "median_h": 26.0
+ },
+ "g15": {
+  "image": "benchmark-tx/txpool/gunther8246-p2/crops/p2_L15.jpg",
+  "box": null,
+  "median_h": 26.0
+ },
+ "g16": {
+  "image": "benchmark-tx/txpool/gunther8246-p2/crops/p2_L16.jpg",
+  "box": null,
+  "median_h": 26.0
+ },
+ "g17": {
+  "image": "benchmark-tx/txpool/gunther8246-p2/crops/p2_L17.jpg",
+  "box": null,
+  "median_h": 26.0
+ }
+}

@@ -1,0 +1,149 @@
+{
+ "b1": true,
+ "b2": true,
+ "b2_bound": 0.23974358974358975,
+ "b3": true,
+ "draws": 20,
+ "inputs_sha256": {
+  "benchmark-tx/txeng4/6/check_gun.tsv": "38ad5ce68746a69c41007f048555a36a2052229aa4f798f51d426897acec0688",
+  "benchmark-tx/txeng4/6/gun_atlas/signs.tsv": "4b6ab5e7e917c847d2f944040ac33bb6fb794491b5b51eada178c0ea63381bec",
+  "benchmark-tx/txeng4/6/read_gun.tsv": "723ac5d2a7008c1d947aa5f525c8eed095f6cc5e24a5d4b8513e6b9e9364ead4"
+ },
+ "lines": {
+  "g01_L01": {
+   "counts": {
+    "+1": 2,
+    "-1": 1,
+    "0": 4,
+    "none": 1
+   },
+   "placed": 8,
+   "verdict": "pass"
+  },
+  "g02_L01": {
+   "counts": {
+    "0": 2,
+    "none": 6
+   },
+   "placed": 8,
+   "verdict": "pass"
+  },
+  "g03_L01": {
+   "counts": {
+    "0": 2,
+    "none": 3
+   },
+   "placed": 5,
+   "verdict": "pass"
+  },
+  "g04_L01": {
+   "counts": {
+    "+-2": 1,
+    "+1": 1,
+    "-1": 1,
+    "0": 4,
+    "none": 2
+   },
+   "placed": 9,
+   "verdict": "pass"
+  },
+  "g07_L01": {
+   "counts": {
+    "0": 5,
+    "none": 4
+   },
+   "placed": 9,
+   "verdict": "pass"
+  },
+  "g08_L01": {
+   "counts": {
+    "+1": 1,
+    "-1": 1,
+    "0": 7,
+    "none": 4
+   },
+   "placed": 13,
+   "verdict": "pass"
+  },
+  "g09_L01": {
+   "counts": {
+    "-1": 1,
+    "0": 5,
+    "none": 6
+   },
+   "placed": 12,
+   "verdict": "pass"
+  },
+  "g11_L01": {
+   "counts": {
+    "0": 4,
+    "none": 2
+   },
+   "placed": 6,
+   "verdict": "pass"
+  },
+  "g12_L01": {
+   "counts": {
+    "-1": 1,
+    "0": 3,
+    "none": 5
+   },
+   "placed": 9,
+   "verdict": "pass"
+  },
+  "g13_L01": {
+   "counts": {
+    "+-2": 2,
+    "+1": 1,
+    "0": 5,
+    "none": 1
+   },
+   "placed": 9,
+   "verdict": "pass"
+  },
+  "g14_L01": {
+   "counts": {
+    "+1": 1,
+    "0": 5,
+    "none": 5
+   },
+   "placed": 11,
+   "verdict": "pass"
+  },
+  "g15_L01": {
+   "counts": {
+    "+-2": 2,
+    "-1": 1,
+    "0": 3,
+    "none": 1
+   },
+   "placed": 7,
+   "verdict": "pass"
+  },
+  "g17_L01": {
+   "counts": {
+    "+-2": 1,
+    "0": 6,
+    "none": 4
+   },
+   "placed": 11,
+   "verdict": "pass"
+  }
+ },
+ "map_sha256": "a68ea1a650cb8c3840a815c4be025d5f894af8aff407d31b61e01d93a23493fd",
+ "n": 117,
+ "overall": {
+  "+-2": 6,
+  "+1": 6,
+  "-1": 6,
+  "0": 55,
+  "none": 44
+ },
+ "p95_0": 0.12905982905982907,
+ "p95_pm1": 0.23974358974358975,
+ "seed": 20261012,
+ "share0": 0.4700854700854701,
+ "sharepm1": 0.10256410256410256,
+ "utc": "2026-10-12T01:30:30Z",
+ "verdict": "PASS"
+}

@@ -1,0 +1,64 @@
+{
+ "b1": true,
+ "b2": true,
+ "b2_bound": 0.13,
+ "b3": true,
+ "draws": 20,
+ "inputs_sha256": {
+  "benchmark-tx/txeng4/6/check_f152r.tsv": "016c23c7fc94cefbf2a56dbb55c34ced7f86fb7de6db4a9cb930720b40763218",
+  "benchmark-tx/txeng4/6/read_f152r.tsv": "3d8561c1588d115e05c32829d017d872c6cbf5fb738e17c20d0cf4a739056ade",
+  "ciphers/nevers-birago-fr3251-1572/atlas/signs.tsv": "4c234928720ea4baf26a21350adea85152f816642da3ac330818fdf4f850c974"
+ },
+ "lines": {
+  "f152r_L01": {
+   "counts": {
+    "0": 4,
+    "none": 3
+   },
+   "placed": 7,
+   "verdict": "pass"
+  },
+  "f152r_L02": {
+   "counts": {
+    "+-2": 2,
+    "0": 18,
+    "none": 10
+   },
+   "placed": 30,
+   "verdict": "pass"
+  },
+  "f152r_L03": {
+   "counts": {
+    "-1": 1,
+    "0": 19,
+    "none": 11
+   },
+   "placed": 31,
+   "verdict": "pass"
+  },
+  "f152r_L04": {
+   "counts": {
+    "-1": 1,
+    "0": 10,
+    "none": 6
+   },
+   "placed": 17,
+   "verdict": "pass"
+  }
+ },
+ "map_sha256": "aad08fb292ed233748c97a20a611f1bb77d1af1ccc3e05ee9fd2959ada13c4fa",
+ "n": 85,
+ "overall": {
+  "+-2": 2,
+  "-1": 2,
+  "0": 51,
+  "none": 30
+ },
+ "p95_0": 0.058823529411764705,
+ "p95_pm1": 0.13,
+ "seed": 20261012,
+ "share0": 0.6,
+ "sharepm1": 0.023529411764705882,
+ "utc": "2026-10-12T01:30:21Z",
+ "verdict": "PASS"
+}

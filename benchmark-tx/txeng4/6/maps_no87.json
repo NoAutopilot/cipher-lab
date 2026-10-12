@@ -1,0 +1,9 @@
+{
+ "item": "no87",
+ "verdict": "PASS",
+ "dropped": [],
+ "tiles": 588,
+ "split_rows": 75,
+ "reachable": 66,
+ "reachable_boxed": 45
+}
