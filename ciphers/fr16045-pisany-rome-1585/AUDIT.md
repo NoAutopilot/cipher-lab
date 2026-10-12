@@ -460,3 +460,49 @@ Propagation: status.json has no f.244r row and results[117]-[119] (items A-C) do
 Corrections: none to PISA-244's or PISA-RS244's facts.
 Verdict: the 18 f.244r relabels are pre-registered transcription-label changes, key86 untouched, consistent with both PREREGs, the blind call and
 my eye on 9 tiles; FAIL groups not committed. Carried over; N0 / D1 on items A-C stand.
+
+## AUDIT 7 (V-PISA-M5, 12 Oct 2026) -- verifier check of PISA-MERGE: the f.244r L05 p30 deletion (not an audited item)
+
+Verifier session V-PISA-M5 (account 2, LANE DEFAULT-A2-1810; brief .claude/briefs/runs/2026-10-12-ytbiz-default-1810-jobs.md "V-PISA-M5"),
+18:47-19:03 UTC by date -u. I am not PISA-MERGE's session nor any solver on this folder. Disk only, 0 network, 0 subagent calls, one look by my
+own eye at a crop of a strip already on disk. Pattern: AUDIT 6. f.244r is not one of the audited items A-C; nothing is classed for it.
+
+Checked:
+- (a) PREREG order: pisa_merge/PREREG-PISA-MERGE.md (with overlap_L06_L08.png) landed alone in dce1ec486 (18:29:07 UTC); the score, result.json,
+  per_token.tsv, the tx86 edit and the regenerated reading landed in ec60a958c (18:40:31). `git merge-base --is-ancestor` confirms dce1ec486 is an
+  ancestor of ec60a958c and both are on origin/main; the PREREG has no commit between them. Gates fixed before any score.
+- (b) Re-score re-run: `python3 pisa_merge/merge.py` from scratch (about 10 min CPU, seeds as committed), reading tx86/ciphertext_f244r_preMERGE.tsv.
+  Every number reproduces and result.json, per_token.tsv and pisa_merge/tx/ are byte-identical (empty git status after the run): base 0.7140
+  (key-shuffle p99 0.3499, order p99 0.4324), positive control 5/5; G-M5 0.7172 (0.3504 / 0.4321), G3 0 of 1 / 0 -> 0, G4 200 same-size deletions
+  mean 0.7141, p95 0.7156, max 0.7221, share >= ours 0.005: PASS; G-OV6 0.7182, G4 share 0.075 (p95 0.7202): FAIL; G-OV8 0.7172, G3a fails
+  (deleted copy identical 1 of 2, kept 0 -> 1): FAIL; G-X 0.7140, no T-token deleted, dropped 17 -> 14: score-identical by construction, a
+  non-test; G-M5alt (keep p30 T57, drop p29 T35) 0.7156, not gated.
+  `--check`, all exit 0 / "up to date": pisa_merge/apply_merge.py, pisa_rs244/apply_rs244.py (the _preMERGE file), pisa_244/pisa_244.py score (from
+  the repository root), pisa_t31/apply_t31.py, una3_pisa/apply_t27.py, una2_pisa/apply_t32.py, and `tools/decode_key.py ... --ciphertext
+  tx86/ciphertext_f244r.tsv --key key86.tsv --check` ("reading up to date", 442 tokens H 409 / U 33; H is decode_key's key-applied flag).
+  tx86/ciphertext_f244r.tsv equals pisa_merge/tx/ciphertext_f244r.tsv (cmp).
+  Not committed: a token diff of tx86/ciphertext_f244r_preMERGE.tsv against the committed file finds exactly one change, L05 p30 T57 removed
+  (L05 p26-p33 before: T30 T23 T01 T35 T57 T26 T17 T18). L06 p27-p30 (T14 T30 T45 T18), L08 p25-p26 (T26 T37) and the three ?[tcross]
+  placeholders (L02, L04, L06) are still in the file. key86.tsv and key.tsv: empty diff over ec60a958c. Reading diff: L05 "r la e s t e" ->
+  "r e s t e", nothing else.
+- (c) Eye check, one look (my own, no subagent): images/f244r_L05_s2.jpg (stitch offset 1360) cropped to strip x 1480-1780, 3x, with ticks at
+  PISA-244's eye positions s p28 (1575), p29/p30 (1635), a p31 (1670). Between the s and the a the baseline carries exactly one sign, an open
+  u/omega-like stroke; a small tick sits above it, leaning into the a (read as part of the a or a mark, not a second baseline sign). So p29 and
+  p30 are two labels on one sign, as PISA-244 recorded: deleting one of them is a transcription fix. My look does not settle which label that
+  sign carries: the kept T35 rests on PISA-244's blind call (p30 tile SETTLED T35) and on G-M5 0.7172 vs G-M5alt 0.7156; G3 is 0 vs 0 (the Colbert
+  copy aligns to neither letter there), so the copy does not decide it. The shape I saw is open like the omega of T57; I did not compare it
+  with the key86 cells (one-look limit). The label choice stays M (it is graded M in the reading), not a key question.
+- (d) Counts: `python3 kp86e/t31_grades.py --grade --page f244r` regenerates kp86e/grades_f244r.tsv with no git diff: **C 295 / M 114 / U 17**
+  (426 sign tokens; identical letters 317 of 442), as PISA-MERGE logged; before the merge C 295 / M 115 / U 17 (AUDIT 6). The deleted token was
+  M, so C is unchanged; f.244r firm share 295 / 426 = 69.2%.
+- Judge (rule 7), re-run: `tools/judge_plaintext.py specs/fr16045-pisany-rome-1585.json --file reading_f244r_M.txt` FAIL -1.361 (null_p99 -1.7,
+  real_p05 -0.938, N=528, cover 0.867), as logged.
+
+Novelty and depth: f.244r has no N-class or depth row of its own; none assigned. The change is one M token on a page whose plaintext is known
+from the Colbert copy, under the unchanged published key; **items A-C keep N0 / D1**; depth unchanged, `tools/depth_check.py` exits 0.
+Propagation: status.json has no f.244r row; SECOND-OPINIONS-QUEUE.tsv has no row for this folder (grep, 12 Oct). Nothing to carry.
+Corrections: none to PISA-MERGE's facts.
+Verdict: **confirmed.** The L05 p30 deletion is the one pre-registered PASS group, committed alone; the PREREG precedes the score; re-score,
+--checks and counts reproduce; the two FAIL groups and the crossed-p non-test are not committed; one sign under two labels by eye. Caveat for
+the next solver: which label the one sign carries (T35 r kept vs T57 la) is supported by the blind call and a 0.0016 score difference, not by
+the copy or by this look.
