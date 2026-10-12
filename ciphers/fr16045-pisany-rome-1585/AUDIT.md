@@ -404,3 +404,59 @@ call. Carried over; item C counts are reconciled and propagated; N0 / D1 stand.
 f.275r (not an audited item): 5 T31 tokens relabelled after a blind third read (GK 5/5) and a pre-registered re-score PASS (PREREG-PISA-T31.md, pisa_t31/):
 L04 i7, L05 i0, L10 i13, L15 i9 T31 -> T36 (m -> s); L15 i33 T31 -> T45 (m -> o). f.275r grades C 369 -> 373, M 182 -> 178. Judge FAIL before and after (-1.229 / -1.221).
 No SECOND-OPINIONS-QUEUE row exists for this folder.
+
+## AUDIT 6 (V-PISA244, 12 Oct 2026) -- verifier check of PISA-244 / PISA-RS244: 18 f.244r transcription relabels (not an audited item)
+
+Verifier session V-PISA244 (account 1, LANE DEFAULT-A1-0640; brief .claude/briefs/runs/2026-10-12-acct1-default-0640-jobs.md "V-PISA244"),
+08:11-08:2x UTC by date -u. I am not PISA-244's or PISA-RS244's session, nor any solver on this folder. Disk only, 0 network, 0 subagent calls
+(one look by my own eye at tiles already on disk). Pattern: AUDIT 3-5. f.244r (17 Sept 1586) is not one of the audited items A-C; it is checked
+for consistency and nothing is classed for it.
+
+Checked:
+- (a) PREREG order (`git log`, origin/main): PREREG-PISA-244.md, locate.tsv, tiles and scorer landed in b708edca3 (07:03:51 UTC), before the
+  blind reply and result.tsv in 201849714 (07:06:08). pisa_rs244/PREREG-PISA-RS244.md landed alone in 1316666f4 (07:23:34), before the scores,
+  the relabel and the regenerated reading in 4a2201758 (07:42:11). Neither PREREG has a later commit, so the gates were fixed before any score.
+- Transcription label, not key: key86.tsv and key.tsv have an empty git diff 1316666f4..HEAD. tx86/ciphertext_f244r_preRS244.tsv is
+  byte-identical (cmp) to tx86/ciphertext_f244r.tsv as it stood at 1316666f4. A token diff of _preRS244 against the committed file finds exactly
+  18 changes, all and only the PREREG's three PASS groups: T45->T19 x10 (L01 p37, L02 p12, L04 p23, L04 p45, L05 p37, L06 p24, L07 p4, L07 p26,
+  L08 p2, L08 p30), T47->T27 x3 (L04 p22, L05 p1, L05 p46), T57->T32 x5 (L02 p40, L03 p18, L05 p12, L08 p21, L08 p36). The two FAIL groups
+  (T57->T35 at L05 p21, L05 p30, L06 p41; T57->T42 at L02 p35) and the UNSETTLED / unlocated tokens are untouched: not committed. The reading's
+  word diff is exactly those 18 letters (o -> u x10, m -> f x3, la -> n x5).
+- (b) Reproducibility (rule 7), exit 0 and "up to date" from: `pisa_rs244/apply_rs244.py --check`, `pisa_244/pisa_244.py score --check` (from the
+  repository root), `pisa_t31/apply_t31.py --check`, `una3_pisa/apply_t27.py --check`, `una2_pisa/apply_t32.py --check`, `tx86e/apply_t32.py
+  --check`, `tx86e/apply_t36.py --check`, and `tools/decode_key.py ... --ciphertext tx86/ciphertext_f244r.tsv --key key86.tsv --check` ("reading up
+  to date", 443 tokens H 410 / U 33; H is decode_key's key-applied flag, not a rule-4 grade). tx86/ciphertext_f244r.tsv equals
+  pisa_rs244/tx/ciphertext_f244r.tsv (cmp). PISA-244's GK: the 5 known-answer tiles in pisa_244/result.tsv are 5/5 HIT (two of them are T36,
+  so 4 distinct cells).
+- Re-score re-run: `python3 pisa_rs244/rs244.py`, from scratch (about 9 min CPU; seeds as committed), reading the _preRS244 bytes. Every number
+  reproduces: old reconciled 0.6771 (key-shuffle p99 0.3517, order p99 0.4254), passes A/B 0.6869 / 0.7021, positive control 5/5 (G2); T45->T19
+  0.6904 (p99s 0.3521 / 0.4298; G3 8/10 new vs 3/10 old) PASS; T47->T27 0.6837 (0.3503 / 0.4276; 3/3 vs 0/3) PASS; T57->T32 0.6937 (0.3485 / 0.4302;
+  5/5 vs 0/5; random 5-of-10 subset null 200 draws, share >= ours 0.005) PASS; T57->T35 0.6816 (G1 met, G3 0/3 vs 0/3) FAIL; T57->T42 0.6763 < old
+  (G1) FAIL; combined 0.7140 (0.3499 / 0.4324). per_token.tsv and tx/ are byte-identical; result.json differs only in its "file" label
+  (tx86/ciphertext_f244r.tsv then, _preRS244 now -- the same bytes), so I restored the committed copy. The T45 and T47 subset nulls are
+  degenerate (11 and 10 draws; T45 share >= ours 0.455), as the PREREG said they would be.
+- Per-token caveat (pisa_rs244/per_token.tsv): of the 10 T45->T19 tokens, 3 (L01 p37, L04 p45, L07 p26) already aligned to a copy "o" under the
+  old label and re-align to a copy "u" under the new one, so the copy there carries both letters close by and is weak evidence either way; 2
+  (L06 p24 gap, L08 p30 copy e) align under neither. G3 still passes 8 vs 3. The T47 and T57->T32 groups are clean (3/3 vs 0/3, 5/5 vs 0/5). As in
+  AUDITS 3-5, the relabel rests on G3 and the blind tile call (all 18 settled at high confidence except L08 p2, medium), not on the score rise.
+- (c) Eye check, one look (my own, no subagent): a montage of the key86 cells una_pisa/cells/k_T45, T19, T47, T27, T57, T32 beside 9 committed tiles
+  (pisa_244/tok/ f244r_L01_p37, L04_p45, L07_p4, L08_p30; L04_p22, L05_p46; L02_p40, L05_p12, L08_p36). 9 of 9 carry the shape of the cell they now
+  carry: the four T19 tiles are a p with a crossed descender (T19), not the looped p of T45; the two T27 tiles are the k-shape of T27; the three
+  T32 tiles are the barred varpi of T32, not the open omega of T57.
+- (d) Counts. kp86e/t31_grades.py --grade --page f244r regenerates kp86e/grades_f244r.tsv with no git diff: **C 295 / M 115 / U 17** (427 sign
+  tokens; identical letters 317 of 444); no T31 token is graded C (the script holds T31 at M, HYPOTHESES.md). The same script pointed (in a
+  scratch copy) at the _preRS244 bytes gives C 281 / M 129 / U 17 (304 of 449), as PISA-RS244 logged. f.244r firm share 69.1%; longest firm run
+  12 tokens / 12 letters, far below the authentication distance. Items A (f.247r), B (f.275v) and C (f.302v) read other files and are unchanged.
+- Judge (rule 7), re-run: `tools/judge_plaintext.py specs/fr16045-pisany-rome-1585.json --file reading_f244r_M.txt` FAIL -1.36 (null_p99 -1.679,
+  real_p05 -0.979, N=530, cover 0.868), as PISA-RS244 logged.
+- Prior work: `tools/prior_work.py fr16045-pisany-rome-1585 --item-spec 'shelfmark=BnF fr.16045;folio=244r;date=1586-09-17' --step-type
+  propagate-revision --offline` exit 4 (15 LEADs: the folder's own done markers, PISA-244's claim, this session's claim); recorded CLEAR; re-run
+  exit 0 (plaintext KNOWN, step CLEAR).
+
+Novelty and depth: f.244r has no N-class or depth row of its own (not an audited item); none is assigned here. The reading change is 18 letters on
+a page whose plaintext is known from the Colbert 16 pt II copy, under the unchanged published key; **items A-C keep N0 / D1**; no class raised.
+Propagation: status.json has no f.244r row and results[117]-[119] (items A-C) do not depend on f.244r, so status.json is unchanged;
+`tools/depth_check.py` exits 0. SECOND-OPINIONS-QUEUE.tsv has no row for this folder (grep, 12 Oct), so nothing changes there.
+Corrections: none to PISA-244's or PISA-RS244's facts.
+Verdict: the 18 f.244r relabels are pre-registered transcription-label changes, key86 untouched, consistent with both PREREGs, the blind call and
+my eye on 9 tiles; FAIL groups not committed. Carried over; N0 / D1 on items A-C stand.
