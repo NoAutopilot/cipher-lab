@@ -472,7 +472,8 @@ Checked:
   per_token.tsv, the tx86 edit and the regenerated reading landed in ec60a958c (18:40:31). `git merge-base --is-ancestor` confirms dce1ec486 is an
   ancestor of ec60a958c and both are on origin/main; the PREREG has no commit between them. Gates fixed before any score.
 - (b) Re-score re-run: `python3 pisa_merge/merge.py` from scratch (about 10 min CPU, seeds as committed), reading tx86/ciphertext_f244r_preMERGE.tsv.
-  Every number reproduces and result.json, per_token.tsv and pisa_merge/tx/ are byte-identical (empty git status after the run): base 0.7140
+  Every number reproduces; per_token.tsv and pisa_merge/tx/ are byte-identical, and result.json differs only in its "file" label
+  (tx86/ciphertext_f244r.tsv then, _preMERGE now -- the same bytes), so I restored the committed copy (as AUDIT 6 did): base 0.7140
   (key-shuffle p99 0.3499, order p99 0.4324), positive control 5/5; G-M5 0.7172 (0.3504 / 0.4321), G3 0 of 1 / 0 -> 0, G4 200 same-size deletions
   mean 0.7141, p95 0.7156, max 0.7221, share >= ours 0.005: PASS; G-OV6 0.7182, G4 share 0.075 (p95 0.7202): FAIL; G-OV8 0.7172, G3a fails
   (deleted copy identical 1 of 2, kept 0 -> 1): FAIL; G-X 0.7140, no T-token deleted, dropped 17 -> 14: score-identical by construction, a
