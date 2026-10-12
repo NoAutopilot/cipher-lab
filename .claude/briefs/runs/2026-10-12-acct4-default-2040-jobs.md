@@ -29,3 +29,19 @@ section), done steps marked [x] with the job that did them, [retired] where rule
 Verdict line. Also correct the "## While waiting" action line if it names a done step. No new reading, no grade change, no status-line change;
 inv. 372 transcription stays a campaign decision for the orchestrator (name it, with its cost band, do not run it). `tools/gaps_check.py
 na-suriname-map-1781` must pass; `python3 tools/next_steps.py` should then show the refreshed next step (paste its row). Report what changed.
+
+## Wave 2 (21:1x UTC 12 Oct by date -u)
+Wave 1: THUR-198 3.01/4 (vol 4 p.195 run 3 pos 4 = 35 not 25, 25 conflict withdrawn; 51 = e image-confirmed, conflict stands; vol 6
+l.76732 = pp.641-642 unglossed); SUR-GAPS 2.47/2 (gaps list rewritten; cheapest next: the 2046 unkeyed-sign call). Wave 2 takes that step.
+
+### SUR-2046 (Opus, cap 3, box 50 min): na-suriname-map-1781, one blind sign call on 4.VEL 2046's unkeyed signs, disk only
+NOTES.md "## Remaining gaps (SUR-GAPS, 12 Oct 2026 ...)" gap "4.VEL 2046" and "## GAPS18-na-suriname-map-1781". Intake gate 20:49 (exit 0). Inputs on
+disk: images/crops_2046_leg, images/2046_legend_native.jpg, ciphertext_2046_legend.tsv, the Nieuw period key sheet tiles (as GAPS12/15/16/21's
+sign calls used them; follow the most recent of those calls' protocol and file shapes). Units: (1) PREREG pushed in its own commit before any look:
+the 31 U tokens by sign ([d-hook] x9, [s-hook], [o-flag], the marked sign after each gun count, [amp], [diamond], [3-breve], ...), the question
+per sign (which Nieuw sheet sign, or none), a known-answer control drawn from already-keyed 2046 signs mixed in blind, and the gate (control >= the
+prior calls' bar; else stop, "non-test", no relabel); (2) one blind Opus/Sonnet subagent call on crop paths only (no full image, no key values,
+no decode), plus your own reconciliation as one more priced unit; (3) a relabel enters exceptions_nieuw_image.tsv only on a control PASS and an
+unambiguous call; `tools/decode_key.py ciphers/na-suriname-map-1781 --check` after; grades rise at most to M unless the prior calls' rule says
+otherwise. No network. Update Remaining gaps / Escalation; `tools/gaps_check.py na-suriname-map-1781`; `tools/file_shrink_guard.py` on files
+touched. Report what was found and where it was not found; do not classify novelty.
