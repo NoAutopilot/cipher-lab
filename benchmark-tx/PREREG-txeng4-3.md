@@ -1,0 +1,134 @@
+# PREREG TXE4-3 ATLAS-NCA (account 3, Fable 5.1 worker session_01MfBjefFUCgpwKvfagrojGC; written 12 Oct 2026 01:2x UTC by date -u, pushed BEFORE any read, map or score)
+
+One of the TXE4 experiments (account-3 parent, brief `.claude/briefs/runs/2026-10-11-acct3-txe4-3.md`, commit 93b7bb32).
+Work folder `benchmark-tx/txeng4/3/`. Read-free: no reader, no vision call, no network. Cap USD 15, box 01:20-03:20 UTC
+(unit-start limit 02:56 UTC). TXE4-0 REPAIR landed (6f84c5af, units 1-4); its optional unit 5 did NOT land, so the
+machine-label steps 1-3 below are run here.
+
+## Hypothesis
+A family atlas of the Birago 1572 signs can be NAMED with no known answer and no owner sort: a kNN whose only voters are
+sibling-leaf tiles labelled by the two blind machine readers' agreement (A/B agree, same id, neither conf L), joined to
+their atlas boxes by the label-aware aligner under TXE4-0's join gate, and whose distance is LEARNED (NCA) on those same
+tiles, reads no.87's held-out lines (a) better than the same tiles under today's unlearned HOG+PCA40 distance (A1) and
+(b) no worse than the known-answer-named atlas (A0, 0.162). The permuted-label null (A3) bounds chance.
+
+## Nearest prior (register rows) and what differs from them
+- PREREG-txeng3-7 (TXE3-7 PROPAGATE, 11 Oct 2026; rescored on the label-aware map a4ccb93d1): a kNN from 445 owner-sorted
+  tiles (A2) read about the same as one from the machine start labels (A1): no.87 0.300 vs 0.314, f152r 0.315 vs 0.342,
+  both far behind the cluster-name atlas A0a 0.115. Those start labels were attached one tile off on five strips, so
+  "label quality was not the limit" is withdrawn. Differs here: the labels are the sibling readers' AGREEMENT on nine
+  leaves (about 1,100 tokens, not 445), joined by box_token_align with a join_check verdict per leaf (never an index or
+  width-only join), and the distance is learned; features are a dev-chosen set, not only HOG+PCA40.
+- X15 (atlas features; register verdict non-test: "not run: superseded by X3's step 1, the chooser not coverage is the
+  limit"). That was a judgement about the lattice. This job asks a different question with a different instrument: can
+  the atlas be named with no known answer at all (a learned-metric kNN on reader-agreed tiles).
+- PREREG-txeng3-10 (dev-FAIL) and X2 (dev-FAIL) / X2b (non-test): pair classifiers on topology (the 29-feature
+  `topo_feats` of benchmark-tx/txeng3/10/glyph_atlas_pair.patch). Rescored: X2 2 fixed / 6 broken p 0.29; X2b 3 / 1;
+  TXE3-10 6 / 0 p 0.031 (verifier pending). Differs here: the topology features are one of two feature sets inside a
+  multi-class kNN with a learned metric, not a one-pair logistic discriminator.
+- M15 / MQS-CLASSIFY-ROUNDS (9 Oct 2026): owner tiles layered on labels.json gained 0.000; labels.json's 309 tune-truth
+  overrides out-voted them. Differs here: labels.json never votes in any gated arm (--only-train-labels).
+No named row is `retired`.
+
+## Fixed inputs (all on disk; nothing fetched)
+- Atlas: ciphers/nevers-birago-fr3251-1572/atlas/{signs.tsv (4,209 boxes), bitmaps.npz, marks.tsv, clusters.tsv}.
+  labels.json is read ONLY by arm A0 (reference) and labels_boxmapLA.json ONLY by A0' (beside, never gated).
+- Sibling reads: harvest/{f139v,f144r,f162r,f174r,f174v,f174vB,f175v,f184r}/passC_agreement.tsv and
+  harvest/f185r/passC_rest90_agreement.tsv (passage order = file order; harvest/ciphertext_<leaf>.tsv confirms it).
+  f152r's passC_agreement.tsv is NOT training (f152r is an eval item, reported beside).
+- no.87 reads for A4 only: benchmark-tx/outputs/birago1572-no87/passA.tsv and passB.tsv (their per-position agreement).
+- A5 only: atlas/secure_tokens.tsv minus its f152r rows.
+- Scorer only (opened by tools/tx_bench.py and atlas/score_no87.py --map <temp compat>, never by an arm): BENCHMARK-TX.tsv,
+  benchmark-tx/birago1572-no87.truth.tsv (+ .flags.tsv), birago1572-f152r.truth.tsv.
+- Never used (R4/R4a): atlas/no87_box_token.tsv, atlas/no87_box_token_labelaware.tsv as an arm input, txeng3/7/
+  f152r_box_token.tsv, any sorter page/status/pile/seed, settled_labels, owner_map, key_pins, passX20*, labels.tsv.
+- Unsupervised feature fit: the HOG+PCA40 scaler/PCA of glyph_atlas.py `feats` is fitted on all 4,209 atlas bitmaps with
+  no label (today's behaviour, shared by A0, A1 and A2 alike). The LEARNED metric (LDA/NCA) is fitted on the voter
+  tiles only; every eval page (f152r_, f178r_, f178v_, f179r_) is excluded from that fit and from the vote, and in A4
+  the evaluated line's own tiles are excluded (leave-one-line-out).
+
+## Machine labels (steps 1-3 of the brief; no owner, no known answer)
+Line correspondence (new here, truth-free, geometric + count-based): the sibling passages are named by letter line
+(L02, L04.1, V01, f184v_L01) and the atlas pages by segmenter row, which merges two cursive lines on some pages (f139v:
+3 atlas rows for 5 passages; f185r: 3 rows for 8) and holds prose rows on others (f144r, f152r, f162r, f184r). For each
+atlas page a monotone DP assigns the ordered passages to the ordered atlas rows: a row may take 0 passages (prose) or
+k >= 1 consecutive passages; cost per assigned row = |boxes - tokens assigned|, per unassigned row 0. A row that takes
+k >= 2 passages is split into k sub-rows by the optimal 1-D clustering of its boxes' y-centres (sorted y, k-1 cut
+points minimising within-group variance), assigned top to bottom. The result is a scratch signs copy with renumbered
+page-local lines (benchmark-tx/txeng4/3/maps/signs_lines.tsv, committed) and per-leaf reads named <page>_L<nn>
+(maps/read_<page>.tsv). This correspondence is a construction, not a verified fact: every line is then gated by
+join_check (step 3), and a line whose correspondence is wrong FAILs or is UNCHECKABLE there and contributes nothing.
+1. Seed round: box_token_align --lam 0 per page (width only); keep 1:1 boxes at rows with status agree, idA == idB,
+   neither conf L (the AGREED token at that box).
+2. classify --only-train-labels --train-labels <step-1 tokens> --holdout f152r_ --holdout f178r_ --holdout f178v_
+   --holdout f179r_ --topk 3 --page all (HOG+PCA40 kNN5, today's features; labels.json never votes). This is a
+   bootstrap step: its top-3 only steers the second map round and its top-1 is the check label.
+3. Re-map each page with --topk <step 2> --loo --check-labels <step-2 top-1> --check-bound. A token is kept only if it
+   is 1:1 at the same position in both rounds AND its line passed. On FAIL: drop the failing lines, list them, re-check
+   once; still FAIL -> the leaf contributes nothing. UNCHECKABLE -> nothing. The printed rows and verdicts are pasted
+   into the PREREG addendum and RESULTS. These are the AGREED LABELS; counts per leaf and per code are reported before
+   any fit. A4's no.87 tiles (passA/passB agreement, all 29 no.87 lines) are joined the same way (steered by the step-2
+   top-3 for the no.87 boxes, check = its top-1, --check-bound) and the result pasted before any fit.
+Classifier exclusion (R4a): classify excludes each box from its own vote, so the step-2 top-1 used as the check label on
+a sibling box never came from that box's own label; the check is run leave-one-out (--loo) because the same top-3 steered
+the map.
+
+## Tool change (tools/glyph_atlas.py classify; shared-tools rule R7)
+- `--features hog|hog+zone+topo`: hog = today's X (PCA40 of HOG + 2 log size terms). hog+zone+topo = X plus the 29
+  features of `topo_feats` from txeng3/10/glyph_atlas_pair.patch (its 4x4 ink-zoning grid, 16; hole/skeleton topology,
+  10; rh, rw, dy, 3), standardised on the voter tiles.
+- `--metric none|lda|nca --metric-dim D`: scikit-learn LinearDiscriminantAnalysis / NeighborhoodComponentsAnalysis
+  fitted on the voter tiles only (the --train-labels tiles that are not held out), then every box is transformed and the
+  kNN runs in that space. Offline tests in tools/tests/test_glyph_atlas.py: the fit never sees a held-out page; a planted
+  two-class toy separates under NCA. If `git log origin/main --since='1 hour ago' -- tools/glyph_atlas.py` shows another
+  TXE4 session's commit, the change is kept as benchmark-tx/txeng4/3/glyph_atlas.patch with its test and applied to a
+  scratch copy (named in ROOM).
+
+## Arms (eval units never in any fit or vote; same AGREED LABELS in A1-A4)
+- A0: labels.json atlas (known-answer-named reference, not a control). A0': labels_boxmapLA.json, beside only.
+- A1: AGREED LABELS, today's HOG+PCA40 kNN5, metric none (the label-volume control: same tiles and labels as A2).
+- A2 (PRIMARY): AGREED LABELS, the dev-chosen features + NCA + k.
+- A3: A2 with the labels permuted across the voter tiles, seeds 1-20 (shuffled-label chance null).
+- A4: A2 plus no.87's own A/B-agreed tiles, leave-one-line-out (the evaluated line's tiles out of fit and vote).
+- A5: NCA (A2's setting) on secure_tokens.tsv minus its 48 f152r rows, beside only; its LCS join is first run through
+  join_check (check labels = step-2 top-1, as a map keyed by the construction's line names); not PASS -> A5 dropped.
+
+## Dev choice (frozen grid)
+Features {hog, hog+zone+topo} x NCA dim {16, 32, 64} x k {3, 5, 9} = 18 settings, scored on dev_tune (f178v L01-L12)
+err_true flagged-excluded; ties on as-measured, then the smaller dim. Each setting's output is a per-line box sequence of
+top-1 codes (atlas page f178v row li = letter line Lli, boxes in x order; no box map needed). Frozen, committed and
+pushed before the eval look. The metric-dim is capped by the feature count and by (classes - 1) for LDA; LDA is not in
+the grid (NCA only, as the brief's grid says) and is reported only if a run fails to converge.
+
+## Endpoint
+tools/tx_bench.py --bench BENCHMARK-TX.tsv --item birago1572-no87 --exclude-flagged --coverage-diagnostic (--strict and
+--paired beside) on eval_heldout (f178v L13-L23, f179r L01-L03) per arm: err_true as measured AND flagged-excluded,
+Wilson 95%, S/D/I. Top-3 miss through atlas/score_no87.py --map <temp no87_map.py --compat copy, never committed>.
+f152r (73 scored) beside, direction only. Reference beside: corrected-join atlas top-1 0.103, top-3 miss 0.078.
+Degenerate optimum named: a box sequence that emits '_' or '_held' for every box scores every token wrong; an arm whose
+top-1 is '_' on a box emits '_' (never the line read), so no arm can borrow the line read's accuracy.
+
+## Gate (eval_heldout, as measured; flagged-excluded beside and must not reverse)
+(i) A2 vs A1 paired: fixed > broken, exact binomial p < 0.05.
+(ii) A2 err_true <= A0's 0.162.
+(iii) every A3 seed >= A2 + 0.20.
+All three: PASS. (i) and (iii) without (ii): "weak: reader labels do not yet reach the known-answer-named atlas".
+Anything else: FAIL. A4 gated the same way, reported beside.
+
+## Control and why it can vary
+A3's permuted labels destroy label-tile correspondence while keeping the tiles, codes and counts; TXE3-7's permuted nulls
+read 0.719-0.791 on no.87 after the rescore, so the null moves far from any real arm. A1 shares A2's tiles and labels
+exactly, so A2 - A1 is the features and the metric alone. Before any truth is read, the number of eval boxes whose top-1
+differs between A2 and A1, and between A2 and each A3 seed, is counted (can_vary.json); 0 on either = NON-TEST, not a
+negative. Ceiling: A0 at 0.162 leaves headroom.
+
+## Units, stop rule and declared reading
+1. Maps with shift checks (25 min). 2. Tool build + tests (35 min). 3. Dev grid (20 min). 4. Eval look and scoring
+(15 min). Running estimate = Fable floor (~9.5) + units; no unit starts past 02:56 UTC or past an estimated USD 12.
+Declared reading: after unit 1 only: "AGREED LABELS built, N tokens on M leaves; no classifier result". After unit 2:
+"tool landed, untested on this target". After unit 3: "dev choice frozen; no eval look, no verdict". After unit 4: the
+gate word for word. A null is a result. Non-test if the can-vary count is 0 or if every leaf's join is UNCHECKABLE.
+
+## Expected (written before anything runs)
+A1 and A2 both well above A0 (0.162) -- TXE3-7's A1 read 0.314 with 445 tiles; more tiles and a learned metric may bring
+A2 under 0.25 but reaching 0.162 without a known answer would be a surprise. Most likely verdict: weak or FAIL on (ii).
