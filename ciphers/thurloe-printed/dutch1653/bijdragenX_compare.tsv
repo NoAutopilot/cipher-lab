@@ -1,0 +1,19 @@
+# Birch I p.340 cipher runs (reading_p339.tsv) vs Nijhoff, Bijdragen X (1856) pp.291-294, the same letter (Beverningh and Nieupoort to De Witt, Westmunster 18 Julij 1653) printed from the original, De Witt's interlinear decipherment set in italics. THUR-GB, 12 Oct 2026.
+# Source: KB Delpher MMKB07:000756001 (TIENDE DEEL, 1856), pdf page = printed page + 12; text = Delpher OCR layer; italics image-checked on p.292 (pdf 304) and p.294 (pdf 306) only. Comparison only: no key cell or ct token changed except the p339 330 gloss row (printed_glosses.tsv).
+run	our_decode	bijdragen_x_text	page	italic_checked	agrees	note
+1	factieu	factien	292	yes	partly	last token 57 decodes u (key p.72) where the print has n
+2	uerdeeltheden	verdeeltheden	292	yes	yes	-
+3	hetinterest	het interest	292	yes	yes	-
+4	[330]	de Prince van Oraigne	292	yes	C	"de" also italic; gloss row added (printed_glosses.tsv p339 330)
+5	[97]yet	nijet	292	yes	partly	97 = n or ni (y may stand for ij or j); left M
+6	suffesbntsyn	suffisant sijn	292	yes	partly	two slips (e/i, b/a) as DUTCH-KEY logged
+7	toteebedieninghenuansyneuooroudersnyetuannuafgehesigneertworde	tot de bedieninghen van sijne voorouders nyet van nu aff gedesigneert worde	292	yes	yes, modulo slips	-
+8	bekennendatwytenuyuerstandaerouerbecommarszyn	bekennen, dat wij ten uijtterste daer over becommert sijn	293	no	partly	pos 19 (58 vs 53, M): the print's "uijtterste" favours 53 = t (pass A's reading); ct not changed (Birch's blotted digit stays M)
+9	hyer	hijer	293	no	yes	-
+10	desperaet	desperaet	293	no	yes	-
+11	handeling	handeling	293	no	yes	-
+12	audientie	audientie	293	no	yes	-
+13	dadpoint	dat poinct	293	no	partly	-
+14	rropositien[70]ndenstaet	publijcke propositien in den Staet	293	no	partly	70 aligns with i (lead, I; not image-checked, not entered)
+15	kennisse	kennisse	293	no	yes	-
+PS	(not in Birch's runs)	50 15 12 49 16 52 17 11 40 48 48 18 50 44 41 37 13 19 38 57 27 18 38 | 15 19 37 26 22 18	294	yes (numerals)	-	printed undeciphered ("de sleutel ... niet voorhanden"); under the p.72 key, applied by hand: secretecorrespondenuien | eenige (57 again off: t expected). Lead graded I; no ct/reading file made

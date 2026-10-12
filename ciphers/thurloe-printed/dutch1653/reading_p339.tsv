@@ -30,7 +30,7 @@ page	run	pos	token	value	grade
 340	3	9	18	e	H
 340	3	10	50	s	H
 340	3	11	53	t	H
-340	4	1	330	[330]	M
+340	4	1	330	[330=de Prince van Oraigne]	C
 340	5	1	97	[97]	M
 340	5	2	63	y	H
 340	5	3	15	e	H
@@ -226,7 +226,7 @@ page	run	pos	token	value	grade
 # p.340 run 1: factieu
 # p.340 run 2: uerdeeltheden
 # p.340 run 3: hetinterest
-# p.340 run 4: [330]
+# p.340 run 4: [330=de Prince van Oraigne]
 # p.340 run 5: [97] yet
 # p.340 run 6: suffesbntsyn
 # p.340 run 7: toteebedieninghenuansyneuooroudersnyetuannuafgehesigneertworde

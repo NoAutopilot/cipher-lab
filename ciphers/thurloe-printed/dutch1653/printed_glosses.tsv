@@ -1,3 +1,4 @@
 name	code	value	grade	source
 # Printed decipherments of a code above 66 in the very letter (rule 4: C = known plaintext). THUR-REST, 11 Oct 2026.
 p351	330	Prins van Oranje	C	J.W. van Sypesteyn, Geschiedkundige bijdragen (1864), Bijlage I, De Witt to Beverning, s Hage 24 Julij 1653, printed pp.213-214 ("aff. 330 (Prins van Oranje)"), from the Rijksarchief original; IA geschiedkundige00sypegoog djvu text sha1 a28dcbc0, fetched 11 Oct 2026
+p339	330	de Prince van Oraigne	C	Nijhoff, Bijdragen voor vaderlandsche geschiedenis en oudheidkunde X (1856), "Geheime brieven" article, Beverningh and Nieupoort to De Witt, Westmunster 18 Julij 1653, printed p.292 from the original with De Witt's interlinear decipherment set in italics ("het interest van de Prince van Oraigne", italic, image-checked); KB Delpher MMKB07:000756001, pdf page 304, fetched 12 Oct 2026 (THUR-GB)
