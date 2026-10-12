@@ -1,0 +1,52 @@
+query	line	best	best_conf	second	second_conf	located	note
+#1	L03	R11	0.75	R38	0.15	sure	o with flick up-right at top (sigma-like)
+#2	L10	R25	0.35	R40	0.3	sure	small s-hook: open bowl, top hooked right, no top bar; follows hash
+#3	L11	R47	0.4	R10	0.35	sure	A/triangle with inner bar and two dots above
+#4	L10	R6	0.6	R1	0.1	sure	ampersand-like loop with diagonal tail
+#5	L11	R13	0.9	R42	0.05	sure	hash/grid of vertical strokes crossed horizontally
+#6	L04	R37	0.5	R20	0.4	sure	6 with tall ascender curving right
+#7	L01	R4	0.6	R26	0.25	sure	omega-w with mark/tilde above (top partly cut by crop)
+#8	L04	R14	0.65	R2	0.25	sure	delta/d with tall ascender ending in flag at top right
+#9	L09	R27	0.9	R24	0.02	sure	psi with descender
+#10	L10	R9	0.8	R35	0.05	sure	h
+#11	L03	R11	0.75	R38	0.15	sure	o with flick at top right (sigma-like)
+#12	L08	R10	0.85	R47	0.05	sure	small triangle
+#13	L08	R3	0.85	R46	0.05	sure	small 7
+#14	L04	R27	0.9	R24	0.02	sure	psi
+#15	L11	R25	0.35	R40	0.3	sure	small s-hook, no top bar
+#16	L08	R17	0.9	R47	0.03	sure	lambda
+#17	L04	R40	0.6	R41	0.25	sure	5 with tick and flat top bar over bowl
+#18	L05	R49	0.8	R46	0.05	sure	p with grave accent above
+#19	L09	R37	0.5	R20	0.4	sure	6 with ascender curving right
+#20	L04	R6	0.7	R2	0.1	sure	leaf/loop crossed by diagonal stroke
+#21	L10	R25	0.35	R40	0.3	sure	small s-hook, no top bar
+#22	L09	R14	0.65	R2	0.25	sure	delta with flagged ascender
+#23	L09	R17	0.9	R47	0.03	sure	lambda
+#24	L01	R9	0.75	R35	0.05	sure	h, small mark at ascender top (crop edge)
+#25	L09	R14	0.65	R2	0.25	sure	delta with flagged ascender
+#26	L11	R14	0.6	R2	0.25	approx	delta with flagged ascender
+#27	L02	R9	0.6	R14	0.1	approx	h with ascender hooked over to right
+#28	L05	R51	0.55	R7	0.25	sure	diagonal backslash stroke with grave/tick above, small foot
+#29	L07	R22	0.45	R24	0.2	sure	1-like vertical stroke with tick at left
+#30	L08	R11	0.75	R38	0.15	sure	o with flick at top right
+#31	L09	R41	0.8	R40	0.1	sure	3 with flat top
+#32	L04	R51	0.55	R7	0.25	sure	diagonal backslash with dot/tick above, small foot
+#33	L02	R11	0.7	R38	0.15	approx	o with flick at top right
+#34	L10	R37	0.5	R20	0.4	sure	6 with ascender curving right
+#35	L10	R3	0.85	R46	0.05	sure	small 7
+#36	L04	R14	0.65	R2	0.25	sure	delta with flagged ascender
+#37	L05	R14	0.65	R2	0.25	sure	delta with flagged ascender
+#38	L11	R41	0.75	R40	0.1	sure	3 with flat top
+#39	L09	R14	0.65	R2	0.25	sure	delta with flagged ascender
+#40	L08	R40	0.75	R41	0.1	sure	5 with top bar
+#41	L10	R25	0.35	R40	0.3	sure	small s-hook, no top bar
+#42	L08	R6	0.75	R1	0.05	sure	ampersand-like loop crossed by diagonal
+#43	L03	R10	0.85	R47	0.05	sure	triangle
+#44	L04	R51	0.7	R29	0.1	sure	diagonal backslash with dot left and dots/grave above
+#45	L04	R7	0.5	R51	0.3	sure	a with grave accent above
+#46	L06	R40	0.6	R41	0.25	sure	5 with tick and flat top bar
+#47	L10	R38	0.45	R11	0.3	sure	plain round o
+#48	L11	R37	0.5	R20	0.4	sure	6 with ascender curving right
+#49	L10	R14	0.65	R2	0.25	sure	delta with flagged ascender
+#50	L04	R6	0.55	R14	0.15	sure	d/delta-like loop crossed by horizontal-diagonal bar
+#51	L10	R13	0.9	R42	0.05	sure	hash

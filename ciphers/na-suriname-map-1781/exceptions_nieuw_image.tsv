@@ -129,3 +129,19 @@ line	pos	value	grade	reason
 2077_L11	23	m	C	GAPS56 2078 Nota parallel (77q-78b, kamer): sign is the key N [u-dots] (H n, GAPS25/45), Wollant uses N for m; GAPS23 ctx clause (ii) 5/5 (passes/nota2078_gaps56/nm_grade.tsv)
 2077_L11	21	k	C	FT4k 2078 Nota parallel (77q-78b, Monteerings kamer): k|i aligned to k, GAPS23 rule clause (i) yes, clause (ii) 6/6 as stated (and 6/6 with the GAPS56 C m counted); failed in gaps45 only on L11:23 n->m, Wollant N-for-m usage (GAPS56) (passes/nota2078_ft4k/decide_l1121.tsv)
 2077_L10	66	e	C	GAPS64 2078 Nota parallel (77q-78b, Artillerie): unkeyed [sigma] U aligned to e, GAPS23 rule clause (i) n/a for U, clause (ii) 6/6 H as stated (also with C counted); APPLY in every gate re-run since gaps25 (transcription conf M, so decode_key caps it at M) (passes/nota2078_gaps64/decide_l1066.tsv)
+2046_No1	44	v	M	SUR-2046 blind sign call (passes/signcmp_sur2046, prereg 6b9676d75): reader [3-breve] = R_U5 0.6, runner-up R41 (e) 0.25 (#17); controls 14/20
+2046_No3	4	v	M	SUR-2046 blind sign call (passes/signcmp_sur2046, prereg 6b9676d75): reader [3-breve] = R_U5 0.6, runner-up R41 (e) 0.25 (#46); controls 14/20
+2046_leg_efgh	2	f	M	SUR-2046 blind sign call (passes/signcmp_sur2046, prereg 6b9676d75): reader [amp] = R_Famp 0.6, runner-up R1 (snaphanen) 0.1 (#4); controls 14/20
+2046_leg_abc	3	f	M	SUR-2046 blind sign call (passes/signcmp_sur2046, prereg 6b9676d75): reader [amp] = R_Famp 0.75, runner-up R1 (snaphanen) 0.05 (#42); controls 14/20
+2046_No1	28	e	M	SUR-2046 blind sign call (passes/signcmp_sur2046, prereg 6b9676d75): reader [d-hook] = R_Edelta 0.65, runner-up R2 (i) 0.25 (#8); controls 14/20
+2046_leg_d	43	e	M	SUR-2046 blind sign call (passes/signcmp_sur2046, prereg 6b9676d75): reader [d-hook] = R_Edelta 0.65, runner-up R2 (i) 0.25 (#22); controls 14/20
+2046_leg_d	24	e	M	SUR-2046 blind sign call (passes/signcmp_sur2046, prereg 6b9676d75): reader [d-hook] = R_Edelta 0.65, runner-up R2 (i) 0.25 (#25); controls 14/20
+2046_No1	49	e	M	SUR-2046 blind sign call (passes/signcmp_sur2046, prereg 6b9676d75): reader [d-hook] = R_Edelta 0.65, runner-up R2 (i) 0.25 (#36); controls 14/20
+2046_No2	12	e	M	SUR-2046 blind sign call (passes/signcmp_sur2046, prereg 6b9676d75): reader [d-hook] = R_Edelta 0.65, runner-up R2 (i) 0.25 (#37); controls 14/20
+2046_leg_d	57	e	M	SUR-2046 blind sign call (passes/signcmp_sur2046, prereg 6b9676d75): reader [d-hook] = R_Edelta 0.65, runner-up R2 (i) 0.25 (#39); controls 14/20
+2046_leg_efgh	30	e	M	SUR-2046 blind sign call (passes/signcmp_sur2046, prereg 6b9676d75): reader [d-hook] = R_Edelta 0.65, runner-up R2 (i) 0.25 (#49); controls 14/20
+2046_No1	21	f	M	SUR-2046 blind sign call (passes/signcmp_sur2046, prereg 6b9676d75): reader [diamond] = R_Famp 0.7, runner-up R2 (i) 0.1 (#20); controls 14/20
+2046_title1	5	n	M	SUR-2046 blind sign call (passes/signcmp_sur2046, prereg 6b9676d75): reader [h-tilde] = R_Nh 0.75, runner-up R35 (p) 0.05 (#24); controls 14/20
+2046_No2	3	a	M	SUR-2046 blind sign call (passes/signcmp_sur2046, prereg 6b9676d75): reader [p-grave] = R_Ap 0.8, runner-up R46 (t) 0.05 (#18); controls 14/20
+2046_title1	8	f	M	SUR-2046 blind sign call (passes/signcmp_sur2046, prereg 6b9676d75): reader [w-dots] = R_Fomega 0.6, runner-up R26 (d) 0.25 (#7); controls 14/20
+2046_No1	33	a	M	SUR-2046 blind sign call (passes/signcmp_sur2046, prereg 6b9676d75): reader [x-dot-grave] = R_Ax 0.7, runner-up R29 (q) 0.1 (#44); controls 14/20

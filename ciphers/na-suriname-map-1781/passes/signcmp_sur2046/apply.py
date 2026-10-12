@@ -40,11 +40,17 @@ if gate:
         print(f'{c}: n={len(rs)} settled(non-NONE)={len(st)} values={sorted(vals)} -> {"RELABEL " + next(iter(vals)) if okc else "no change"}')
         if okc:
             for x in st: out.append(x)
+# Reconciliation (worker's unit, may only withhold): control #30 (reader o, key r) was answered R_B6 (b) 0.75, runner-up
+# R_Ro 0.15 -- the identical answer the three [o-flag] targets got, so the call does not separate [o-flag] from o here.
+WITHHOLD = {'[o-flag]': 'control #30 (reader o, key r) got the identical R_B6 0.75 / R_Ro answer'}
+for c, why in WITHHOLD.items():
+    if any(x[3] == c for x in out): print(f'withheld by reconciliation: {c} ({why})')
+out = [x for x in out if x[3] not in WITHHOLD]
+print('relabels:', len(out))
+ap = {x[0] for x in out}
 with open(D + 'decisions.tsv', 'w') as f:
     f.write('query\tline\tpos\treader_code\trole\tkey_value\tbest\tbest_tile\tbest_value\tbest_conf\tsecond\tsecond_value\tsecond_conf\tlocated\tstate\tapplied\n')
-    ap = {x[0] for x in out}
-    for row in sorted(rows, key=lambda r: (r[4], r[1], int(r[2]))): f.write('\t'.join(map(str, row)) + '\t' + ('yes' if row[0] in ap else 'no') + '\n')
-print('relabels:', len(out))
+    for row in sorted(rows, key=lambda r: (r[4], r[1], int(r[2]))): f.write('\t'.join(map(str, row)) + '\t' + ('yes' if row[0] in ap else ('withheld' if row[3] in WITHHOLD and row[14] == 'settled' else 'no')) + '\n')
 if '--write' in sys.argv and gate and out:
     with open('exceptions_nieuw_image.tsv', 'a') as f:
         for x in out:
