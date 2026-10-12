@@ -90,3 +90,18 @@ floor); (2) add it to decode_dutch.py's inputs, decode with the p.72 key, grade 
 later Bijdragen volumes; Birch I) -- IA <= 15 requests, >= 1.5 s, take/release lines; googleapis only if it answers (one try). Report the
 decoded text and the search log; no novelty word. Update Remaining gaps / Escalation, `tools/gaps_check.py thurloe-printed`. Report what was
 found and where it was not found; do not classify novelty.
+
+## Wave 3 (07:4x UTC 12 Oct)
+Wave 2 so far: THUR-PS 2.72 D- (postscript decoded H 28 M 1 under the p.72 key, print check IA 0 hits). PISA-RS244 still running. Gallica 403,
+googleapis 503 (07:40 UTC).
+
+### THUR-IA (Opus, cap 3, box 50 min): thurloe-printed, Birch I p.340 past run 15 and the vol 4/6 Bamfylde code 94 leaves
+NOTES.md "## Remaining gaps (THUR-PS, 12 Oct 2026)" items "Birch p.340 vs Bijdragen X italics after run 15" and "Code 94 conflict". Intake gate
+as THUR-57 (exit 0). IA images only ("IA" take/release, <= 15 requests, >= 1.5 s). Units at ~0.8 each (Opus rate from THUR-57/THUR-PS):
+(1) Birch I p.340 (leaf n369): strip crops with `tools/iiif_lines.py --image <leaf> --out <dir>` (pasted), one look: cipher groups past run 15
+and whether Birch gives an English of the p.294 postscript; transcribe any groups (two passes only if more than 10 numerals), decode with the
+folder's p.340 script, `--check`, compare to the Bijdragen X italics; (2) the vol 4 and vol 6 Bamfylde glossed leaves the item names: one
+leaf each, strip crops, read every 94 (and 25/51 if present) with its printed gloss; a value enters the key only with two printed glosses
+(rule 4: a conflict with Tomokiyo's t is logged in HYPOTHESES.md with both witnesses, never settled by majority). Stop before a unit that would
+cross 80% of the cap. Update Remaining gaps / Escalation, `tools/gaps_check.py thurloe-printed`. Report what was found and where it was not
+found; do not classify novelty.
