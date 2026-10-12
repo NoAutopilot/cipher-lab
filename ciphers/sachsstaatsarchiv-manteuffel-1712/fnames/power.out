@@ -1,0 +1,3 @@
+# power pool (>=60% H/C/S): f0015_09:5 f0052_09:3 f0103_09:4 f0109_08:4 f0136_09:7 f0176_08:5 f0177_08:1 f0181_08:9 f0233_09:2 f0375_08:9 f0390_08:12 f0453_08:2 f0454_08:6
+# target runs (decode>=3): K=17
+power = 17/200 = 0.085 (subsample real T mean 0.69); gate power >= 0.80 -> NON-TEST at this N

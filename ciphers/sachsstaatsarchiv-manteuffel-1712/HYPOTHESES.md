@@ -361,3 +361,9 @@ Manteuffel) -- that the same table reads it is itself a hypothesis these slots s
   66.8.44.1.2.12.120 = a-h-l-e-f-e-l-d under the 'Alefeld' gloss). No witness for 66 as a name code: the 0151 L gloss renders the spelled group.
 - Standalone 66 = initial 'A.' (f.468 'Arn' x2, GAPS154; 0151 R '66. avoit ose' under 'Alefeld', eye only, M), the folder's single-letter-initial
   practice (9 Ilgen, 44 Lol.); referent fixed by context per letter, not a conflicting key value. Not a rule-4 data conflict. Open: 0151 R crop.
+
+## MANT-NAMES (12 Oct 2026, LANE DEFAULT-A2-1810 account 2): cross-leaf name-code consistency (fnames/PREREG-MANT-NAMES.md b896c059d)
+- Name-initial / name-spelling design across 0088/0247/0426/0442/0483/0489 + 0491: statistic T (cross-leaf decoded-prefix agreement over differing
+  ciphers + prefix match to key.tsv C names) vs letter-permuted key. Control (power on key-validated leaves at K = 17 runs): 17/200 = 0.085 < 0.80;
+  target not scored. Verdict: untested-by-this-tool at this N (non-test), not refuted. 13 alone, 103.34.26(.27), nomenclator singletons: cannot
+  vary under any key. key.tsv unchanged.

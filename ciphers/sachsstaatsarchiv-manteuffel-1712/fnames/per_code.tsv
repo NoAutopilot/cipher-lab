@@ -1,0 +1,4 @@
+kind	run_a	codes_a	decode_a	run_b_or_names	codes_b	decode_b	prefix_len
+non-test	13 alone (0088 x5)		same codes decode identically under every key				
+non-test	103.34.26(.27) on 0483 and 0491 (identical cipher)		same codes decode identically under every key				
+non-test	390 / 252 / 150 / 187 / 217 / 257 singletons		same codes decode identically under every key				
