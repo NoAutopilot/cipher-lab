@@ -194,6 +194,54 @@ def load_pass(path, a):
     return out, has_gloss
 
 
+
+def load_box_pass(path, a):
+    """--by-box (TXE4-8 BOX-ANCHOR, 12 Oct 2026): a per-box pass `line box signs [alt] [conf]` -> OrderedDict
+    line -> list of (signs, level, '', alts, box). `signs` is the whole cell (several space-separated tokens stay one
+    answer; '-' or empty = no sign in the box, kept as NONE so two readers agreeing on an empty box count as agreement)."""
+    rows = [l.rstrip('\n').split('\t') for l in open(path, encoding='utf-8') if l.strip() and not l.startswith('#')]
+    if not rows:
+        return collections.OrderedDict(), False
+    head = rows[0]
+    if head[0] not in LONG_LINE_COLS or 'box' not in head:
+        sys.exit(f"reconcile_passes.py --by-box: {path}: header {head!r} needs a line column {LONG_LINE_COLS} and a 'box' column")
+    bi = head.index('box')
+    si = next((head.index(n) for n in ('signs',) + LONG_SIGN_COLS if n in head), None)
+    if si is None:
+        sys.exit(f"reconcile_passes.py --by-box: {path}: needs a signs/sign column")
+    ki = next((head.index(n) for n in ('conf', 'confidence') if n in head), None)
+    ai = head.index('alt') if 'alt' in head else None
+    out = collections.OrderedDict()
+    for r in rows[1:]:
+        if len(r) <= max(bi, si):
+            continue
+        ln = line_key(r[0], a)
+        cell = ' '.join(r[si].split())
+        signs = 'NONE' if cell in ('', '-') else cell
+        raw_conf = r[ki] if ki is not None and ki < len(r) and r[ki] else None
+        level = norm_conf(raw_conf, path, ln) if raw_conf is not None else 'H'
+        alts = tuple(x.strip() for x in r[ai].split('/') if x.strip()) if ai is not None and ai < len(r) else ()
+        try:
+            box = int(r[bi])
+        except ValueError:
+            box = r[bi]
+        out.setdefault(ln, []).append((signs, level, '', alts, box))
+    return out, False
+
+
+def box_columns(seqs):
+    """--by-box: one column per box id in the union of the passes (numeric order), each pass's entry or None."""
+    ids = []
+    for s in seqs:
+        for e in s:
+            if e[4] not in ids:
+                ids.append(e[4])
+    ids.sort(key=lambda b: (0, b) if isinstance(b, int) else (1, str(b)))
+    cols = []
+    for b in ids:
+        cols.append([next((e for e in s if e[4] == b), None) for s in seqs])
+    return cols
+
 def line_key(ln, a):
     for pat, rep in a.line_sub or []:
         ln = re.sub(pat, rep, ln)
@@ -321,6 +369,8 @@ def main(argv=None):
                          "(line, pos, cand, score) carrying every alternative, for tools/key_decode_lattice.py decode")
     ap.add_argument('--sign-map', dest='sign_map_file',
                      help='TSV pass_reading<TAB>canonical[...]; substitutes each raw pass token before alignment')
+    ap.add_argument('--by-box', action='store_true',
+                    help='align the passes by box id (per-box passes: line, box, signs[, alt, conf]); no sequence alignment')
     ap.add_argument('--vote', action='store_true', help='also write vote.tsv: plurality sign and vote share per column')
     ap.add_argument('--err-truth', help='benchmark truth TSV: write err_corr.tsv (pairwise error correlation of passes)')
     a = ap.parse_args(argv)
@@ -330,7 +380,7 @@ def main(argv=None):
         ap.error('give two or more pass files')
     if len(a.passes) > 26:
         ap.error('at most 26 passes')
-    loaded = [load_pass(p, a) for p in a.passes]
+    loaded = [(load_box_pass if a.by_box else load_pass)(p, a) for p in a.passes]
     P = [d for d, _ in loaded]
     any_gloss = any(hg for _, hg in loaded)
     names = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[:len(P)]
@@ -343,7 +393,7 @@ def main(argv=None):
     tot_gloss_agree = tot_gloss_cols = 0
     for ln in lines:
         seqs = [p.get(ln, []) for p in P]
-        cols = columns(seqs, a.method)
+        cols = box_columns(seqs) if a.by_box else columns(seqs, a.method)
         agree = sum(1 for c in cols if all(x is not None for x in c) and len({x[0] for x in c}) == 1)
         if a.method == 'difflib' and len(P) == 2:
             n = max(len(seqs[0]), len(seqs[1]))        # the measure reconcile_f30.py printed
@@ -412,7 +462,7 @@ def main(argv=None):
         for ln, ns, ag, n in agr_rows:
             print(ln, *ns, ag, n, f'{ag / n:.2f}' if n else '1.00', sep='\t')
     print(f"lines {len(lines)}  signs " + '  '.join(f'{n_} {sum(r[1][i] for r in agr_rows)}' for i, n_ in enumerate(names))
-          + f"  agree {tot_agree}/{tot_cols} = {share:.1%}  ({a.method})")
+          + f"  agree {tot_agree}/{tot_cols} = {share:.1%}  ({'by-box' if a.by_box else a.method})")
     agreed_h = sum(1 for d in draft if d[-1] in ('agree', 'agree-flagged') and d[-3] == 'H')
     print(f"disagreement columns {len(dis)}; draft signs {len(draft)}")
     print(f"agreed-H {agreed_h}  agreed-uncertain {len(uncertain)}  disagree {len(dis)}")

@@ -818,6 +818,192 @@ def update_views_manifest(out, entries):
     return path
 
 
+
+# ---- numbered box overlays (TXE4-8 BOX-ANCHOR, 12 Oct 2026) -------------------------------------------------------
+# --box-overlay BOXES.tsv --overlay-out DIR [--random-geometry SEED]: draw each box of a segmenter box file
+# (columns line, pos, sid, page, x_line, x, y, w, h; x,y,w,h in the crop's own pixels, page = crop stem) with its
+# number on a copy of the committed crop found as <--out>/<--prefix><page>.jpg, so a reader can answer one row per
+# numbered box. Colours are tools/cvd_check.py's sheets_light palette: outlines alternate Okabe-Ito blue and orange,
+# dashed; numbers in black on a yellow tint / white, in a band appended under the crop (the crop's pixels are never
+# painted over). --random-geometry SEED writes the R control set first: per line the same box count, boundaries at
+# seeded uniform random x within the line's ink extent, the line's pen band as the height (PREREG-txeng4-8.md).
+OVERLAY_BLUE, OVERLAY_ORANGE, OVERLAY_INK, OVERLAY_TINT, OVERLAY_BG = '#0072B2', '#B35900', '#000000', '#F0E442', '#ffffff'
+OVERLAY_BAND = 44          # px appended under the crop for the two staggered rows of numbers
+OVERLAY_COLS = ('line', 'pos', 'sid', 'page', 'x_line', 'x', 'y', 'w', 'h')
+
+
+def load_box_rows(path):
+    """Rows of a segmenter box file as dicts with int geometry, in file order."""
+    rows = []
+    with open(path, encoding='utf-8') as fh:
+        head = None
+        for ln in fh:
+            if not ln.strip() or ln.startswith('#'):
+                continue
+            cells = ln.rstrip('\n').split('\t')
+            if head is None:
+                head = cells; continue
+            r = dict(zip(head, cells))
+            for k in ('pos', 'x_line', 'x', 'y', 'w', 'h'):
+                r[k] = int(float(r[k]))
+            rows.append(r)
+    return rows
+
+
+def box_pages(rows, crops_dir, prefix=''):
+    """page -> (crop path, x_line origin of the page = x_line - x), from the rows themselves."""
+    pages = {}
+    for r in rows:
+        if r['page'] not in pages:
+            pages[r['page']] = (os.path.join(crops_dir, f"{prefix}{r['page']}.jpg"), r['x_line'] - r['x'])
+    return pages
+
+
+def random_geometry(rows, crops_dir, seed, prefix='', ink=170):
+    """The R box set: per line the same count as `rows`, boundaries at seeded uniform random x (line coordinates)
+    inside the line's ink extent, height = the line's box band; each box goes to the crop holding its centre."""
+    rng = __import__('random').Random(seed)
+    pages = box_pages(rows, crops_dir, prefix)
+    by_line = {}
+    for r in rows:
+        by_line.setdefault(r['line'], []).append(r)
+    out = []
+    for line, rs in by_line.items():
+        y0 = min(r['y'] for r in rs); y1 = max(r['y'] + r['h'] for r in rs)
+        pg = sorted({r['page'] for r in rs}, key=lambda p: pages[p][1])
+        ink_cols = set()
+        for p in pg:
+            g = np.asarray(Image.open(pages[p][0]).convert('L'))
+            band = g[y0:y1, :]
+            cols = np.where((band < ink).any(axis=0))[0]
+            ink_cols.update(int(c) + pages[p][1] for c in cols)
+        if not ink_cols:
+            continue
+        e0, e1 = min(ink_cols), max(ink_cols) + 1
+        n = len(rs)
+        cuts = sorted(rng.uniform(e0, e1) for _ in range(n - 1))
+        edges = [e0] + [int(round(c)) for c in cuts] + [e1]
+        for i in range(n):
+            a, b = edges[i], max(edges[i + 1], edges[i] + 1)
+            cx = (a + b) / 2
+            page = next((p for p in pg if pages[p][1] <= cx < pages[p][1] + Image.open(pages[p][0]).width), pg[-1])
+            ox = pages[page][1]
+            width = Image.open(pages[page][0]).width
+            xa, xb = max(0, a - ox), min(width, b - ox)
+            out.append(dict(line=line, pos=i + 1, sid=f'{line}_R{i + 1:03d}', page=page, x_line=xa + ox,
+                            x=xa, y=y0, w=max(1, xb - xa), h=y1 - y0))
+    return out
+
+
+def write_box_rows(rows, path):
+    with open(path, 'w', encoding='utf-8') as fh:
+        fh.write('\t'.join(OVERLAY_COLS) + '\n')
+        for r in rows:
+            fh.write('\t'.join(str(r[k]) for k in OVERLAY_COLS) + '\n')
+
+
+def box_iou_share(rows_a, rows_b, thresh=0.5):
+    """Share of rows_a boxes whose x-interval IoU (line coordinates) with EVERY rows_b box of the same line is below
+    thresh: the can-vary count of an R set against the pen set."""
+    bl = {}
+    for r in rows_b:
+        bl.setdefault(r['line'], []).append((r['x_line'], r['x_line'] + r['w']))
+    far = tot = 0
+    for r in rows_a:
+        a0, a1 = r['x_line'], r['x_line'] + r['w']
+        best = 0.0
+        for b0, b1 in bl.get(r['line'], []):
+            inter = max(0, min(a1, b1) - max(a0, b0)); union = max(a1, b1) - min(a0, b0)
+            best = max(best, inter / union if union else 0.0)
+        tot += 1; far += best < thresh
+    return far / tot if tot else 0.0, far, tot
+
+
+def _dashed_rect(d, x0, y0, x1, y1, colour, width=2, dash=6, gap=4):
+    def seg(a, b, horiz, c):
+        p = a
+        while p < b:
+            q = min(b, p + dash)
+            d.line([(p, c), (q, c)] if horiz else [(c, p), (c, q)], fill=colour, width=width)
+            p = q + gap
+    seg(x0, x1, True, y0); seg(x0, x1, True, y1 - 1); seg(y0, y1, False, x0); seg(y0, y1, False, x1 - 1)
+
+
+def _font(size):
+    from PIL import ImageFont
+    for cand in ('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', 'DejaVuSans-Bold.ttf'):
+        try:
+            return ImageFont.truetype(cand, size)
+        except OSError:
+            continue
+    return ImageFont.load_default()
+
+
+def draw_box_overlays(rows, crops_dir, out_dir, prefix='', quality=92):
+    """One overlay per page: the crop unchanged with a OVERLAY_BAND px number band below. Returns manifest rows."""
+    os.makedirs(out_dir, exist_ok=True)
+    pages = box_pages(rows, crops_dir, prefix)
+    font = _font(15)
+    man = []
+    for page, (crop, _) in pages.items():
+        rs = sorted((r for r in rows if r['page'] == page), key=lambda r: r['pos'])
+        im = Image.open(crop).convert('RGB')
+        W, H = im.size
+        canvas = Image.new('RGB', (W, H + OVERLAY_BAND), OVERLAY_BG)
+        canvas.paste(im, (0, 0))
+        d = ImageDraw.Draw(canvas)
+        for r in rs:
+            odd = r['pos'] % 2 == 1
+            colour = OVERLAY_BLUE if odd else OVERLAY_ORANGE
+            x0, y0 = r['x'], r['y']; x1, y1 = min(W, r['x'] + r['w']), min(H, r['y'] + r['h'])
+            _dashed_rect(d, x0, y0, x1, y1, colour)
+            label = str(r['pos'])
+            tw = d.textlength(label, font=font); th = 15
+            cx = (x0 + x1) / 2
+            row_y = H + 2 if odd else H + 2 + OVERLAY_BAND // 2
+            lx0 = int(max(0, min(W - tw - 4, cx - tw / 2 - 2)))
+            d.rectangle([lx0, row_y, lx0 + tw + 4, row_y + th + 3], fill=OVERLAY_TINT if odd else OVERLAY_BG,
+                        outline=colour, width=1)
+            d.text((lx0 + 2, row_y + 1), label, fill=OVERLAY_INK, font=font)
+            d.line([(cx, y1), (cx, row_y)], fill=colour, width=1)     # tick from the box's bottom edge to its number
+        outp = os.path.join(out_dir, f'{prefix}{page}_boxes.jpg')
+        canvas.save(outp, quality=quality)
+        man.append(dict(page=page, crop=crop, overlay=outp, boxes=len(rs), band_px=OVERLAY_BAND))
+    with open(os.path.join(out_dir, 'overlay_manifest.tsv'), 'w', encoding='utf-8') as fh:
+        fh.write('page\tcrop\toverlay\tboxes\tband_px\n')
+        for m in man:
+            fh.write('\t'.join(str(m[k]) for k in ('page', 'crop', 'overlay', 'boxes', 'band_px')) + '\n')
+    return man
+
+
+def overlay_palette_check():
+    """The overlay's colour set through tools/cvd_check.py's gate (marks, background, tint, text): cvd_check.check dict."""
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import cvd_check
+    return cvd_check.check([OVERLAY_BLUE, OVERLAY_ORANGE, OVERLAY_INK], OVERLAY_BG, tints=[OVERLAY_TINT],
+                           text=[OVERLAY_INK], pairs=[(OVERLAY_TINT, OVERLAY_INK)])
+
+
+def run_box_overlay(a):
+    rows = load_box_rows(a.box_overlay)
+    if a.overlay_lines:
+        keep = set(a.overlay_lines.split(','))
+        rows = [r for r in rows if r['line'] in keep]
+    os.makedirs(a.overlay_out, exist_ok=True)
+    prefix = a.prefix or ''
+    if a.random_geometry is not None:
+        rows_r = random_geometry(rows, a.out, a.random_geometry, prefix, a.ink)
+        rp = os.path.join(a.overlay_out, 'boxes_random.tsv')
+        write_box_rows(rows_r, rp)
+        share, far, tot = box_iou_share(rows_r, rows)
+        print(f'random geometry seed {a.random_geometry}: {len(rows_r)} boxes for {len(rows)} input boxes -> {rp}; '
+              f'can-vary: {far}/{tot} = {share:.3f} of R boxes have IoU < 0.5 with every input box of their line')
+        rows = rows_r
+    man = draw_box_overlays(rows, a.out, a.overlay_out, prefix, a.quality)
+    print(f'  wrote {len(man)} overlays ({sum(m["boxes"] for m in man)} numbered boxes) under {a.overlay_out}')
+    return dict(overlays=man, rows=rows)
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('url', nargs='?'); ap.add_argument('--ark'); ap.add_argument('--canvas', type=int)
@@ -888,6 +1074,12 @@ def main(argv=None):
                                       'three tall cipher lines under a prose tail read as pitch 100 and five lines)')
     ap.add_argument('--views', help='N or a comma list of pad,s125,warp,s080,contrast: also write altered views of '
                                     'every crop to OUT/views/<view>/ for multi-view voting (TX-VIEWS)')
+    ap.add_argument('--box-overlay', metavar='BOXES_TSV',
+                    help='draw each box of this segmenter box file, numbered, on a copy of its crop (<--out>/<--prefix><page>.jpg)')
+    ap.add_argument('--overlay-out', help='with --box-overlay: folder for the overlays and overlay_manifest.tsv')
+    ap.add_argument('--random-geometry', type=int, metavar='SEED',
+                    help='with --box-overlay: draw instead a seeded random box set at the same per-line count (boxes_random.tsv)')
+    ap.add_argument('--overlay-lines', help='with --box-overlay: comma list of line ids to keep (default: all)')
     ap.add_argument('--views-of', nargs='+', metavar='CROP',
                     help='with --views: make views of these existing crop files only (no fetch, no line detection)')
     a = ap.parse_args(argv)
@@ -903,6 +1095,10 @@ def main(argv=None):
         mp = update_views_manifest(a.out, ve)
         print(f'  wrote {len(ve)} views ({",".join(views)}) of {len(a.views_of)} crops under {a.out}/views and {mp}')
         return dict(views=ve)
+    if a.box_overlay:
+        if not a.overlay_out:
+            ap.error('--box-overlay needs --overlay-out')
+        return run_box_overlay(a)
     if a.deskew and a.follow_slope:
         ap.error('--deskew and --follow-slope are alternatives (rotate vs shear); give one')
     if a.max_width >= 2500:

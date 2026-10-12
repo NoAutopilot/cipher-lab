@@ -141,3 +141,16 @@ USD 12. A unit started is finished.
 A null is a result. The SECONDARY runs only under the 80% rule above.
 
 ## Addendum (filled before any read; appended, never edited above this line)
+- 01:2x-01:3x UTC 12 Oct 2026 (the header's "01:3x" was written before the clock was re-read; the claim is at 01:18, the
+  PREREG commit at 01:27 by date -u). Tools landed before any read: `tools/iiif_lines.py --box-overlay BOXES.tsv --overlay-out
+  DIR [--random-geometry SEED] [--overlay-lines IDS]` with `tools/tests/test_box_overlay.py`, and `tools/reconcile_passes.py
+  --by-box` with `tools/tests/test_reconcile_by_box.py` (both OK, 0 fails). Overlays: benchmark-tx/txeng4/8/overlays/{O,R}/
+  (26 pages each, 569 boxes each), built from boxes_O.tsv (the 569 test-line pen rows) and boxes_R.tsv (seed 20261013).
+- Can-vary count (computed by the tool before any read): **423 / 569 = 0.743** of R boxes have IoU < 0.5 with every pen box
+  of their line (>= 0.5, so the seed-20261013 set stands; no regeneration).
+- cvd_check on the overlay palette (`--marks '#0072B2,#B35900,#000000' --bg '#ffffff' --tints '#F0E442' --text '#000000'
+  --tint-text '#F0E442:#000000'`): normal worst pair #0072B2 vs #000000 dE2000 39.2 margin +19.2; protan 38.1 +18.1; deutan
+  38.3 +18.3; tritan 41.5 +21.5; **PASS**.
+- Task texts: benchmark-tx/txeng4/8/tasks/{N1,O1,R1}.txt (N2, O2 identical to N1, O1 but for the scratch path), built by
+  build_tasks.py; O and R texts identical. One call per pass (N 26 images, O/R 52 images).
+- Scorer: benchmark-tx/txeng4/8/score.py (checks the read's sha256 against SHA256SUMS.prescore before scoring).
