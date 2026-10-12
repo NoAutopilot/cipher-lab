@@ -1,0 +1,27 @@
+line	pos	label	x_centre_strip	how_located
+L01	37	T45	1760	eye, 2x zoom: count back from the slash at p43 (2060): d p42, 7-shape p41, A p40, J p39, a p38, crossed p p37, 3 p36
+L01	41	T47	1980	eye, 2x zoom: count back from the slash at p43; the sign before d p42
+L02	12	T45	685	eye, 2x zoom: slash p9 (615), 3 p10 (635), then one crossed-p sign (685) that tx86 reads as ?[tcross] p11 + T45 p12
+L02	35	T57	2000	eye, 2x zoom: count from lambda p33 (1870), d-like p34 (1925); the t-shaped sign with a long bar before o p36 (2030)
+L02	40	T57	2295	eye, 2x zoom: the sign after the large lambda p39 (2225), before lambda p41; re-centred on the tile montage
+L03	18	T57	1110	eye, 2x zoom: count from the R9-PIS2 anchor p6 T31 (485): a p17 (1055), then this sign, then 6 p19 (1170)
+L04	22	T47	1263	eye, 2x zoom: count back from the slash at p26 (1460): d p25, eta p24, crossed p p23, k-shape p22, o p21; re-centred on the tile montage
+L04	23	T45	1310	eye, 2x zoom: crossed p between k-shape p22 and eta p24
+L04	45	T45	2450	eye, 2x zoom: long s p42 (2355), d p43 (2415), then one crossed-p sign that tx86 reads as ?[tcross] p44 + T45 p45; lambda p46 (2495)
+L05	1	T47	185	eye, 2x zoom: first sign of the line
+L05	12	T57	768	eye, 2x zoom: eta p10 (620), lambda p11 (705), this sign, lambda p13 (805), a p14 (850); re-centred on the tile montage
+L05	21	T57	1230	eye, 2x zoom: epsilon p20 (1175), this sign, a p22 (1290); re-centred on the tile montage
+L05	30	T57	1635	eye, 2x zoom: s p28 (1575), one sign, a p31 (1670); tx86 has T35 p29 + T57 p30 for this one sign (same shape as p21); re-centred on the tile montage
+L05	37	T45	2010	eye, 2x zoom: a p36 (1955), crossed p, m p38 (2070)
+L05	46	T47	2550	eye, 2x zoom: tau p45 (2475), k-shape, then y eta d
+L06	24	T45	1425	eye, 2x zoom: slash p21 (1275), crossed q p22 (1325), o p23 (1380), crossed p (1425, tx86 T45 p24 + ?[tcross] p25), d p26 (1490)
+L06	29	T45	-	not located: the strip shows one q-o-crossed p-d group after the slash, then h s t; tx86 p27-p30 (T14 T30 T45 T18) repeat p22-p26 inside the s1/s2 overlap (strip x 1360-1600), so p29 has no sign of its own on the strip (it is p24's sign if the repeat is a double read)
+L06	41	T57	2160	eye, 2x zoom: count back from the hatch p44 (2335): d p43 (2275), u p42 (2230), this sign, a p40 (2080)
+L07	4	T45	320	eye, 2x zoom: 3 p1 (165), inverted T p2 (205), a p3 (240), crossed p, u p5 (330); re-centred on the tile montage
+L07	9	T57	565	eye, 2x zoom: theta p7 (395), v p8 (445), this sign, d p10; re-centred on the tile montage
+L07	26	T45	1397	eye, 2x zoom: count back from the R9-PIS2 anchor p29 T31 (1575): u p28 (1515), q p27 (1430), crossed p (1380), d p25 (1310); re-centred on the tile montage
+L07	41	T47	-	not located: after the slash p40 (1895) the p41 T47 and p42 T19 signs are written over each other as one cluster (1940-1990); no single-sign centre
+L08	2	T45	230	eye, 2x zoom: curl-sign p1 (155), crossed p, tau p3 (285)
+L08	21	T57	1432	eye, 2x zoom: y p19 (1300), tau p20 (1365), this sign, v p22 (1500); re-centred on the tile montage
+L08	30	T45	1928	eye, 2x zoom: count back from the sign p36 (2305): eta p35, epsilon p34, 3 p33, d p32, lambda p31 (1965), crossed p (1915); re-centred on the tile montage
+L08	36	T57	2288	eye, 2x zoom: eta p35 (2225), this sign, h p37 (2380); re-centred on the tile montage
