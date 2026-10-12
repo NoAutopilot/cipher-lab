@@ -5,6 +5,9 @@ value c at 6 (impure). Cluster propagation: a decision on pos 2 fixes it (net +1
 (its minority). Pile propagation (cluster x current sign) leaves pos 6 alone when its read differs. No network, no model."""
 import json, os, subprocess, sys, tempfile
 
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
+import join_check as JC
+
 TOOL = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'tx_sorter_curve.py')
 TRUTH = 'line\tpos\tref_sign\ttruth\tplain\tstatus\n' + ''.join(
     'u_L01\t%d\t%s\t%s\t%s\tscored\n' % (p, s, s, v) for p, s, v in
@@ -27,10 +30,16 @@ def run(d, mode, extra=()):
     return json.loads(r.stdout), rows
 
 
+def _pass_sidecar(p):
+    JC.write_sidecar(p, dict(verdict='PASS', n=0, overall={}, share0=1.0, sharepm1=0.0, b1=True, b2=True, b3=True,
+                             p95_0=0.0, p95_pm1=0.0, b2_bound=0.05, lines={}, draws=0, seed=0))
+
+
 def test_toy():
     with tempfile.TemporaryDirectory() as d:
         for n, t in (('t', TRUTH), ('b', BASE), ('m', MAP), ('c', CL), ('s', SIG)):
             open('%s/%s.tsv' % (d, n), 'w').write(t)
+        _pass_sidecar('%s/m.tsv' % d)
         s, rows = run(d, 'cluster')
         assert s['base_wrong'] == 1 and s['scored'] == 6 and s['clusters'] == 2, s
         # doubt order: pos 4 first (3 signals) -> cluster 2 set to B, pos 6 broken; then pos 2 fixes cluster 1
@@ -75,6 +84,7 @@ def test_txe3_orders():
     with tempfile.TemporaryDirectory() as d:
         for n, t in (('t', TRUTH), ('b', BASE), ('m', MAP2), ('c', CL), ('s', SIG2), ('k', TOPK_ATLAS), ('l', LAT), ('key', KEY)):
             open('%s/%s.tsv' % (d, n), 'w').write(t)
+        _pass_sidecar('%s/m.tsv' % d)
         open(d + '/corpus.txt', 'w').write(('aab abba cab bac ' * 200))
         out = d + '/c.tsv'
         r = subprocess.run([sys.executable, TOOL, '--truth', d + '/t.tsv', '--base', d + '/b.tsv', '--lines', d + '/b.tsv',
@@ -102,6 +112,23 @@ def test_txe3_orders():
         assert 'a_doubt' in o and 'd_oracle' in o and 'b_size' not in o
 
 
+def test_map_requires_a_pass_sidecar():
+    """TXE4-0 REPAIR unit 2 (12 Oct 2026): --map with no PASS sidecar is refused; --allow-unchecked-join reproduces
+    the old output and stamps it to stderr."""
+    with tempfile.TemporaryDirectory() as d:
+        for n, t in (('t', TRUTH), ('b', BASE), ('m', MAP), ('c', CL), ('s', SIG)):
+            open('%s/%s.tsv' % (d, n), 'w').write(t)
+        out = os.path.join(d, 'c.tsv')
+        argv = [sys.executable, TOOL, '--truth', d + '/t.tsv', '--base', d + '/b.tsv', '--lines', d + '/b.tsv',
+                '--map', d + '/m.tsv', '--clusters', d + '/c.tsv', '--signals', d + '/s.tsv', '--seeds', '3',
+                '--kmax', '6', '--propagate', 'cluster', '--out', out]
+        r = subprocess.run(argv, capture_output=True, text=True)
+        assert r.returncode == 2 and 'no .joincheck.json sidecar' in r.stderr, r.stderr
+        r2 = subprocess.run(argv + ['--allow-unchecked-join', 'reproducing an old result'], capture_output=True, text=True)
+        assert r2.returncode == 0 and 'UNCHECKED JOIN: reproducing an old result' in r2.stderr, r2.stderr
+
+
 if __name__ == '__main__':
     test_txe3_orders()
+    test_map_requires_a_pass_sidecar()
     print('ok txe3')

@@ -6,12 +6,20 @@ import io, os, sys, tempfile, contextlib
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 import numpy as np
 import tx_pair_clf as T
+import join_check as JC
 
 
 def _w(p, text):
     os.makedirs(os.path.dirname(p), exist_ok=True)
     with open(p, 'w') as f:
         f.write(text)
+
+
+def _pass_sidecar(map_path):
+    """A map's own content is not under test here; stamp a trivial PASS sidecar so join_check.require() (TXE4-0
+    REPAIR unit 2, 12 Oct 2026) accepts this test's synthetic fixture map."""
+    JC.write_sidecar(map_path, dict(verdict='PASS', n=0, overall={}, share0=1.0, sharepm1=0.0, b1=True, b2=True,
+                                     b3=True, p95_0=0.0, p95_pm1=0.0, b2_bound=0.05, lines={}, draws=0, seed=0))
 
 
 def _tile(kind, rng):
@@ -45,6 +53,7 @@ def _setup(d):
     np.savez_compressed(os.path.join(at, 'bitmaps.npz'), signs=np.stack(bms), marks=np.zeros((0, 48, 48), np.uint8))
     _w(os.path.join(at, 'map.tsv'), 'sid\tfol\tline\tpos\tidx\tsign\ttruth\top\tsplit\n' +
        ''.join(f'f178v_01_{k:03d}\tf178v\tf178v_L01\t{k}\t{k}\tX\tSECRET\t1:1\ttune\n' for k in (1, 2, 3)))
+    _pass_sidecar(os.path.join(at, 'map.tsv'))
     _w(os.path.join(d, 'units', 'labels_dev_tune.tsv'), 'line\tpos\tsign\nf178v_L01\t1\tT98\nf178v_L01\t2\tT98\nf178v_L01\t3\tT37\n')
     return at
 
@@ -110,6 +119,7 @@ def test_x2b_dev_tune_loo_lines():
         _w(os.path.join(at, 'signs.tsv'), sig)
         np.savez_compressed(os.path.join(at, 'bitmaps.npz'), signs=np.stack(bms), marks=np.zeros((0, 48, 48), np.uint8))
         _w(os.path.join(at, 'map.tsv'), mp)
+        _pass_sidecar(os.path.join(at, 'map.tsv'))
         _w(os.path.join(d, 'units', 'labels_dev_tune.tsv'), L)
         _w(os.path.join(d, 'units', 'labels_eval_heldout.tsv'), Le)
         _w(os.path.join(d, 'truth.tsv'), tr)
@@ -146,5 +156,25 @@ def test_x2b_dev_tune_loo_lines():
             T.read_truth_lines = orig
 
 
+def test_map_requires_a_pass_sidecar():
+    """TXE4-0 REPAIR unit 2 (12 Oct 2026): --map with no PASS sidecar is refused; --allow-unchecked-join
+    reproduces the old behaviour and stamps it into stdout."""
+    with tempfile.TemporaryDirectory() as d:
+        at = _setup(d)
+        os.remove(os.path.join(at, 'map.tsv') + '.joincheck.json')
+        args = ['--atlas', at, '--unit', 'dev_tune', '--units', os.path.join(d, 'units'), '--map',
+                os.path.join(at, 'map.tsv'), '--out-dir', d, '--touched-dir', d]
+        try:
+            T.main(['apply'] + args)
+            assert False, 'expected SystemExit'
+        except SystemExit as e:
+            assert e.code == 2
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            assert T.main(['apply'] + args + ['--allow-unchecked-join', 'reproducing an old result']) == 0
+        assert 'UNCHECKED JOIN: reproducing an old result' in buf.getvalue()
+
+
 if __name__ == '__main__':
-    test_train_apply_control(); test_truth_refused(); test_x2b_dev_tune_loo_lines(); print('ok')
+    test_train_apply_control(); test_truth_refused(); test_x2b_dev_tune_loo_lines()
+    test_map_requires_a_pass_sidecar(); print('ok')

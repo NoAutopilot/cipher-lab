@@ -259,6 +259,8 @@ def main(argv=None):
     ap.add_argument('--base', required=True, help='the line read L (line, pos, sign)')
     ap.add_argument('--lines', required=True, nargs='+', help='TSV(s) whose `line` column names the unit lines (unit labels files)')
     ap.add_argument('--map', help='box<->position map (sid, line, pos, op); truth column never read')
+    ap.add_argument('--allow-unchecked-join', help='join_check: skip the require() gate on --map, to reproduce an '
+                    'old result (TXE4-0 REPAIR unit 2, 12 Oct 2026)')
     ap.add_argument('--clusters', help='atlas clusters.tsv (id, kind, cluster, dist)')
     ap.add_argument('--signals', nargs='*', default=[], help='tx_doubt signals TSV(s) for ordering a')
     ap.add_argument('--propagate', choices=('cluster', 'pile', 'none'), default='cluster',
@@ -294,6 +296,11 @@ def main(argv=None):
 
     cluster_of, dist, box_of = {}, {}, {}
     if a.map:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import join_check
+        stamp = join_check.require(a.map, a.allow_unchecked_join)
+        if stamp:
+            print(stamp, file=sys.stderr)
         cl = {r['id']: r for r in read_tsv(a.clusters) if r.get('kind', 'sign') == 'sign'} if a.clusters else {}
         with open(a.map, newline='') as f:
             for r in csv.DictReader(f, delimiter='\t'):

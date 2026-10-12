@@ -1,0 +1,223 @@
+{
+ "b1": true,
+ "b2": true,
+ "b2_bound": 0.12339901477832513,
+ "b3": true,
+ "draws": 20,
+ "inputs_sha256": {
+  "ciphers/nevers-birago-fr3251-1572/harvest/ciphertext_f178v.tsv": "6a0702255c287e3a941e689d1e08ce2cebddf66f52080c7edd8c4e20ef209ee5",
+  "ciphers/nevers-birago-fr3251-1572/harvest/ciphertext_f179r.tsv": "2f55f5d6b279df6bac826f2b0b0d48b09ca26d65ce0263328d22f40d40c3bf94",
+  "ciphers/nevers-birago-fr3251-1572/sorter/no87/seed.tsv": "5a739e59eb94359658827e54a2f7635b43aad1b7f3623ad73e5e3c35a41c43b2"
+ },
+ "lines": {
+  "f178v_L01": {
+   "counts": {
+    "0": 6
+   },
+   "placed": 6,
+   "verdict": "pass"
+  },
+  "f178v_L02": {
+   "counts": {
+    "0": 7,
+    "none": 1
+   },
+   "placed": 8,
+   "verdict": "pass"
+  },
+  "f178v_L03": {
+   "counts": {
+    "0": 9
+   },
+   "placed": 9,
+   "verdict": "pass"
+  },
+  "f178v_L04": {
+   "counts": {
+    "0": 5
+   },
+   "placed": 5,
+   "verdict": "pass"
+  },
+  "f178v_L05": {
+   "counts": {
+    "0": 8
+   },
+   "placed": 8,
+   "verdict": "pass"
+  },
+  "f178v_L06": {
+   "counts": {
+    "+1": 1,
+    "0": 4
+   },
+   "placed": 5,
+   "verdict": "pass"
+  },
+  "f178v_L07": {
+   "counts": {
+    "0": 4
+   },
+   "placed": 4,
+   "verdict": "unchecked"
+  },
+  "f178v_L08": {
+   "counts": {
+    "0": 8
+   },
+   "placed": 8,
+   "verdict": "pass"
+  },
+  "f178v_L09": {
+   "counts": {
+    "0": 6
+   },
+   "placed": 6,
+   "verdict": "pass"
+  },
+  "f178v_L10": {
+   "counts": {
+    "+1": 1,
+    "0": 6
+   },
+   "placed": 7,
+   "verdict": "pass"
+  },
+  "f178v_L11": {
+   "counts": {
+    "0": 7,
+    "none": 4
+   },
+   "placed": 11,
+   "verdict": "pass"
+  },
+  "f178v_L12": {
+   "counts": {
+    "0": 12,
+    "none": 1
+   },
+   "placed": 13,
+   "verdict": "pass"
+  },
+  "f178v_L13": {
+   "counts": {
+    "0": 7
+   },
+   "placed": 7,
+   "verdict": "pass"
+  },
+  "f178v_L14": {
+   "counts": {
+    "0": 11,
+    "none": 1
+   },
+   "placed": 12,
+   "verdict": "pass"
+  },
+  "f178v_L15": {
+   "counts": {
+    "0": 10,
+    "none": 2
+   },
+   "placed": 12,
+   "verdict": "pass"
+  },
+  "f178v_L16": {
+   "counts": {
+    "0": 11,
+    "none": 1
+   },
+   "placed": 12,
+   "verdict": "pass"
+  },
+  "f178v_L17": {
+   "counts": {
+    "0": 9
+   },
+   "placed": 9,
+   "verdict": "pass"
+  },
+  "f178v_L18": {
+   "counts": {
+    "0": 5
+   },
+   "placed": 5,
+   "verdict": "pass"
+  },
+  "f178v_L19": {
+   "counts": {
+    "0": 7
+   },
+   "placed": 7,
+   "verdict": "pass"
+  },
+  "f178v_L20": {
+   "counts": {
+    "0": 5,
+    "none": 1
+   },
+   "placed": 6,
+   "verdict": "pass"
+  },
+  "f178v_L21": {
+   "counts": {
+    "0": 7
+   },
+   "placed": 7,
+   "verdict": "pass"
+  },
+  "f178v_L22": {
+   "counts": {
+    "0": 8
+   },
+   "placed": 8,
+   "verdict": "pass"
+  },
+  "f178v_L23": {
+   "counts": {
+    "-1": 1,
+    "0": 5
+   },
+   "placed": 6,
+   "verdict": "pass"
+  },
+  "f179r_L01": {
+   "counts": {
+    "-1": 1,
+    "0": 7
+   },
+   "placed": 8,
+   "verdict": "pass"
+  },
+  "f179r_L02": {
+   "counts": {
+    "0": 8,
+    "none": 1
+   },
+   "placed": 9,
+   "verdict": "pass"
+  },
+  "f179r_L03": {
+   "counts": {
+    "0": 5
+   },
+   "placed": 5,
+   "verdict": "pass"
+  }
+ },
+ "map_sha256": "2b8cfc0b3bba116c679ef7bb4a1793c3d70a6ffdab0614f6cc8410ce15cc6456",
+ "n": 203,
+ "overall": {
+  "+1": 2,
+  "-1": 2,
+  "0": 187,
+  "none": 12
+ },
+ "p95_0": 0.25763546798029563,
+ "p95_pm1": 0.12339901477832513,
+ "seed": 20261012,
+ "share0": 0.9211822660098522,
+ "sharepm1": 0.019704433497536946,
+ "utc": "2026-10-12T00:30:58Z",
+ "verdict": "PASS"
+}

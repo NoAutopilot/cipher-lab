@@ -85,6 +85,25 @@ def test_extend():
     assert cov2['vote'] == 0 and col('vote') and all(int(r['vote']) == 0 for r in out2)   # uncovered line writes 0
 
 
+def test_signals_box_pos_requires_a_pass_sidecar():
+    """TXE4-0 REPAIR unit 2 (12 Oct 2026): `signals` refuses --box-pos (default: the old width-only map) with no
+    PASS sidecar; --allow-unchecked-join reproduces the old behaviour. Uses the repo's own real no.87 inputs
+    (defaults), not a fixture, since that is what the gate actually guards in production."""
+    with tempfile.TemporaryDirectory() as d:
+        try:
+            TD.main(['signals', '--unit', 'dev_tune', '--out', d])
+            assert False, 'expected SystemExit'
+        except SystemExit as e:
+            assert e.code == 2
+        rows = TD.main(['signals', '--unit', 'dev_tune', '--out', d,
+                        '--box-pos', 'benchmark-tx/txeng/compare/box_pos_bta.tsv'])
+        assert len(rows) > 300, len(rows)
+        rows2 = TD.main(['signals', '--unit', 'dev_tune', '--out', d,
+                         '--allow-unchecked-join', 'reproducing an old result'])
+        assert len(rows2) > 300, len(rows2)
+
+
 if __name__ == '__main__':
     test_tables(); test_freq_flags(); test_measure_end_to_end(); test_extend()
+    test_signals_box_pos_requires_a_pass_sidecar()
     print('ok')

@@ -4,7 +4,12 @@
 assigns each held-out 1:1 token (found through decipher_sheet.Boxes.token_box, this tool's own cut path) with the token's own
 sign label; the held-out lines (f.178v L13-L23, f.179r L01-L03) never vote. Null: box ids permuted within each line (20 draws);
 the image moves with the permutation and the label does not. Gate: agreement >= 0.55 and above the null's p95. The 26 2:1 and
-8 1:2 rows are counted apart and never in the gate. It prints codes and counts only (no letter values)."""
+8 1:2 rows are counted apart and never in the gate. It prints codes and counts only (no letter values).
+
+Neighbour bound (TXE4-0 REPAIR unit 1, 12 Oct 2026, tools/tests/RESCORE.md section 1): a KM PASS alone never shows a map is
+right -- the old (shifted) map PASSed this same gate (231/381 = 0.606, neighbour's label 75 of 381). A PASS now also needs the
+neighbour-label count at or under 0.05 of the scored (gated) 1:1 tokens: old map 75/381 = 0.197 FAILS it; label-aware 3/373 =
+0.008 and the sorter-only sensitivity map 4/375 = 0.011 PASS (tools/tests/RESCORE.md section 1)."""
 import collections, os, random, subprocess, sys, tempfile, types
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
@@ -74,10 +79,13 @@ def main():
         nulls.append(hit / n)
     p95 = float(np.percentile(nulls, 95))
     rate = agree / n
-    ok = rate >= GATE and rate > p95
-    print(f'KM: held-out 1:1 tokens {n}; classify top-1 = own sign label {agree} ({rate:.3f}); neighbour label (not own) {neigh}; '
-          f'null (box ids permuted within line, {DRAWS} draws) mean {np.mean(nulls):.3f} p95 {p95:.3f} max {max(nulls):.3f}; '
-          f'apart (not in gate): {dict(other)}; gate >= {GATE} and > p95: ' + ('PASS' if ok else 'FAIL'))
+    neigh_rate = neigh / n if n else 0.0
+    NEIGH_BOUND = 0.05
+    ok = rate >= GATE and rate > p95 and neigh_rate <= NEIGH_BOUND
+    print(f'KM: held-out 1:1 tokens {n}; classify top-1 = own sign label {agree} ({rate:.3f}); neighbour label (not own) {neigh} '
+          f'({neigh_rate:.3f}); null (box ids permuted within line, {DRAWS} draws) mean {np.mean(nulls):.3f} p95 {p95:.3f} max '
+          f'{max(nulls):.3f}; apart (not in gate): {dict(other)}; gate >= {GATE} and > p95 and neighbour <= {NEIGH_BOUND}: ' +
+          ('PASS' if ok else 'FAIL'))
     return 0 if ok else 3
 
 

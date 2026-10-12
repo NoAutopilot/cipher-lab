@@ -28,6 +28,36 @@ def t(ok, msg):
     fails += not ok
     print('PASS' if ok else 'FAIL', msg)
 
+def test_default_box_map_and_join_check_gate():
+    """TXE4-0 REPAIR unit 2 (12 Oct 2026): the Birago box-map default moved from no87_box_token.tsv to the
+    label-aware file, and a chosen map is required to carry a PASS join_check sidecar."""
+    import join_check as jc
+    with tempfile.TemporaryDirectory() as d:
+        atlas_dir = os.path.join(d, 'atlas')
+        os.makedirs(atlas_dir)
+        la = os.path.join(atlas_dir, 'no87_box_token_labelaware.tsv')
+        open(la, 'w', encoding='utf-8').write('sid\tline\tpos\top\nb1\tL01\t1\t1:1\n')
+        t(ds.default_box_map(d, None, atlas_dir) == la, 'default_box_map: picks the label-aware file when present')
+        t(ds.default_box_map(d, '/explicit/path.tsv', atlas_dir) == '/explicit/path.tsv', 'default_box_map: --box-map wins')
+        os.remove(la)
+        t(ds.default_box_map(d, None, atlas_dir) is None, 'default_box_map: None with neither --box-map nor the file')
+        open(la, 'w', encoding='utf-8').write('sid\tline\tpos\top\nb1\tL01\t1\t1:1\n')
+        refused = False
+        try:
+            jc.require(la)
+        except SystemExit as e:
+            refused = e.code == 2
+        t(refused, 'join_check.require: refuses a map with no sidecar')
+        jc.write_sidecar(la, dict(verdict='PASS', n=0, overall={}, share0=1.0, sharepm1=0.0, b1=True, b2=True,
+                                  b3=True, p95_0=0.0, p95_pm1=0.0, b2_bound=0.05, lines={}, draws=0, seed=0))
+        t(jc.require(la) is None, 'join_check.require: accepts a PASS sidecar')
+        t(jc.require(la, 'reproducing an old result') == 'UNCHECKED JOIN: reproducing an old result',
+          'join_check.require: --allow-unchecked-join stamps and skips the check')
+
+
+test_default_box_map_and_join_check_gate()
+
+
 def render(mode, target, out, *extra):
     argv = [mode, target, '--out', os.path.join(TMP, out)] + list(extra)
     rc = ds.main(argv)

@@ -204,6 +204,11 @@ def cmd_signals(a):
             latt[(r['line'], ipos(r['pos']))] = r['sign']
     from judge_plaintext import LANG_CORPORA, read_corpus
     probs = letter_probs([read_corpus(p) for p in LANG_CORPORA[a.lm]])
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import join_check
+    stamp = join_check.require(path(a.box_pos), a.allow_unchecked_join)
+    if stamp:
+        print(stamp, file=sys.stderr)
     rows, info = build_signals(L_unit, L_all, rd(a.box_pos), rd(a.topk), conf, status, tiles, contrast, stab, latt,
                                K.read_key(path(a.key)), probs, PAIRS, a.share, a.stab_floor, a.freq_sd)
     os.makedirs(path(a.out), exist_ok=True)
@@ -432,6 +437,8 @@ def main(argv=None):
     s.add_argument('--latt', action='append', help='plain lattice decode (line, pos, sign); repeatable')
     s.add_argument('--share', type=float, default=0.6); s.add_argument('--stab-floor', type=float, default=0.6)
     s.add_argument('--freq-sd', type=float, default=2.0)
+    s.add_argument('--allow-unchecked-join', help='join_check: skip the require() gate on --box-pos, to '
+                   'reproduce an old result (TXE4-0 REPAIR unit 2, 12 Oct 2026)')
     m = sp.add_parser('measure'); common(m)
     m.add_argument('--truth', default=D['truth'])
     m.add_argument('--read', help='the line read restricted to the unit (default units/labels_<unit>.tsv)')

@@ -1,0 +1,113 @@
+{
+ "b1": true,
+ "b2": true,
+ "b2_bound": 0.1127777777777778,
+ "b3": true,
+ "draws": 20,
+ "inputs_sha256": {},
+ "lines": {
+  "f178v_L01": {
+   "counts": {
+    "0": 6
+   },
+   "placed": 6,
+   "verdict": "pass"
+  },
+  "f178v_L02": {
+   "counts": {
+    "0": 7,
+    "none": 1
+   },
+   "placed": 8,
+   "verdict": "pass"
+  },
+  "f178v_L03": {
+   "counts": {
+    "0": 9
+   },
+   "placed": 9,
+   "verdict": "pass"
+  },
+  "f178v_L04": {
+   "counts": {
+    "0": 5
+   },
+   "placed": 5,
+   "verdict": "pass"
+  },
+  "f178v_L05": {
+   "counts": {
+    "0": 8
+   },
+   "placed": 8,
+   "verdict": "pass"
+  },
+  "f178v_L06": {
+   "counts": {
+    "+1": 1,
+    "0": 4
+   },
+   "placed": 5,
+   "verdict": "pass"
+  },
+  "f178v_L07": {
+   "counts": {
+    "0": 4
+   },
+   "placed": 4,
+   "verdict": "unchecked"
+  },
+  "f178v_L08": {
+   "counts": {
+    "0": 8
+   },
+   "placed": 8,
+   "verdict": "pass"
+  },
+  "f178v_L09": {
+   "counts": {
+    "0": 6
+   },
+   "placed": 6,
+   "verdict": "pass"
+  },
+  "f178v_L10": {
+   "counts": {
+    "+1": 1,
+    "0": 6
+   },
+   "placed": 7,
+   "verdict": "pass"
+  },
+  "f178v_L11": {
+   "counts": {
+    "0": 7,
+    "none": 4
+   },
+   "placed": 11,
+   "verdict": "pass"
+  },
+  "f178v_L12": {
+   "counts": {
+    "0": 12,
+    "none": 1
+   },
+   "placed": 13,
+   "verdict": "pass"
+  }
+ },
+ "map_sha256": "b1ebc1152eb49ab7c49758c757af8d1b2a784c57a5c829a7d2b90390c6de73d0",
+ "n": 90,
+ "overall": {
+  "+1": 2,
+  "0": 82,
+  "none": 6
+ },
+ "p95_0": 0.2794444444444445,
+ "p95_pm1": 0.1127777777777778,
+ "seed": 20261012,
+ "share0": 0.9111111111111111,
+ "sharepm1": 0.022222222222222223,
+ "utc": "2026-10-12T00:37:06Z",
+ "verdict": "PASS"
+}

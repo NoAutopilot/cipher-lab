@@ -119,5 +119,31 @@ def test_library_and_agree():
         assert tc.main(['resolve', '--unit', 'u', '--pass-out', po, '--reads-dir', r2] + common)[1]['sign'] == 'TB'
 
 
+def test_map_label_aware_is_new_and_default_is_unchanged():
+    """TXE4-0 REPAIR unit 2 (12 Oct 2026): `map` with no --label-aware is byte-identical to before; --label-aware
+    switches to box_token_align's DP and row format and, with --check-labels, writes a join_check sidecar."""
+    with tempfile.TemporaryDirectory() as d:
+        at, topk, lr, conf, units = setup(d)
+        out = os.path.join(d, 'out')
+        common = ['--atlas', at, '--line-read', lr, '--units', units, '--out', out]
+        old_rows = tc.main(['map', '--box-pos-out', os.path.join(out, 'box_pos.tsv')] + common)
+        assert [r['op'] for r in old_rows] == ['1:1', '1:1', '1:1']
+        la_out = os.path.join(out, 'box_pos_la.tsv')
+        chk = os.path.join(d, 'chk.tsv')
+        w(chk, ['sid', 'label'], [('tg_01_001', 'TA'), ('tg_01_002', 'TB'), ('tg_01_003', 'TC')])
+        la_rows = tc.main(['map', '--label-aware', '--box-pos-out', la_out, '--topk', topk,
+                           '--check-labels', chk] + common)
+        assert len(la_rows) == 3 and {r['op'] for r in la_rows} == {'1:1'}
+        header = open(la_out).readline().strip().split('\t')
+        assert header == ['sid', 'page', 'line', 'pos', 'op', 'labels', 'status', 'loo_pos', 'old_pos'], header
+        assert os.path.exists(la_out + '.joincheck.json')
+        with open(la_out + '.joincheck.json') as f:
+            sc = json.load(f)
+        assert sc['verdict'] in ('PASS', 'UNCHECKABLE', 'FAIL')     # n=3 is tiny; just check it ran and wrote one
+        # re-running the default path after --label-aware still reproduces the old file byte for byte
+        old_rows2 = tc.main(['map', '--box-pos-out', os.path.join(out, 'box_pos2.tsv')] + common)
+        assert open(os.path.join(out, 'box_pos.tsv')).read() == open(os.path.join(out, 'box_pos2.tsv')).read()
+
+
 if __name__ == '__main__':
-    test_build_resolve(); test_library_and_agree(); print('ok')
+    test_build_resolve(); test_library_and_agree(); test_map_label_aware_is_new_and_default_is_unchanged(); print('ok')

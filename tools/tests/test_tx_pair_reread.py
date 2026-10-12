@@ -85,6 +85,26 @@ def test_select_build_resolve():
             assert got == {('f178v_L01', '1'): want, ('f178v_L01', '2'): 'T60', ('f178v_L01', '3'): 'T37'}, (pick, got)
 
 
+def test_select_label_aware_is_new_and_default_unchanged():
+    """TXE4-0 REPAIR unit 2 (12 Oct 2026): `select` with no --label-aware is unchanged; --label-aware runs
+    box_token_align's DP and, with --check-labels, writes a join_check sidecar beside box_pos.tsv."""
+    with tempfile.TemporaryDirectory() as d:
+        common, out = _setup(d)
+        rc, txt = _run(['select'] + common)
+        assert rc == 0, txt
+        old = open(os.path.join(out, 'dev_tune', 'box_pos.tsv')).read()
+        chk = os.path.join(d, 'chk.tsv')
+        _w(chk, 'sid\tlabel\nf178v_01_001\tT18\nf178v_01_002\tT60\nf178v_01_003\tT37\n')
+        rc, txt = _run(['select'] + common + ['--label-aware', '--check-labels', chk])
+        assert rc == 0, txt
+        rows = list(csv.DictReader(open(os.path.join(out, 'dev_tune', 'box_pos.tsv')), delimiter='\t'))
+        assert [r['sid'] for r in rows] == ['f178v_01_001', 'f178v_01_002', 'f178v_01_003']
+        assert os.path.exists(os.path.join(out, 'dev_tune', 'box_pos.tsv.joincheck.json'))
+        # re-running the default path reproduces the same file
+        rc, txt = _run(['select'] + common)
+        assert rc == 0 and open(os.path.join(out, 'dev_tune', 'box_pos.tsv')).read() == old
+
+
 def test_partner_rule():
     part, unusable = T.pair_partners({'T76', 'T86', 'T45', 'T18', 'T98'}, None)
     assert part['T76'] == 'T86'            # tie at count 0 -> pair-list order (T76/T86 before T76/T45)
@@ -93,4 +113,5 @@ def test_partner_rule():
 
 
 if __name__ == '__main__':
-    test_select_build_resolve(); test_partner_rule(); print('ok')
+    test_select_build_resolve(); test_select_label_aware_is_new_and_default_unchanged(); test_partner_rule()
+    print('ok')

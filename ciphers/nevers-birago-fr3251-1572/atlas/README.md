@@ -58,3 +58,27 @@ on the old file (X20, TX-ATLAS-B72 naming/scoring, BIR87-ALIGN relabel, TXE3-1/2
 tx_pair_clf, tx_sorter_curve, tx_taxonomy) rests on shifted joins wherever it touches those 10 lines. The same width DP
 also built `benchmark-tx/txeng/compare/box_pos.tsv` and `benchmark-tx/txeng/pair/dev_tune/box_pos.tsv` (tx_compare.py
 `map`, tx_pair_reread.py), which share the defect and are not rebuilt here.
+
+## labels_boxmapLA.json (TXE4-0 REPAIR unit 4, 12 Oct 2026)
+
+Atlas cluster names rebuilt on the corrected (label-aware) join above, instead of the old width-only
+`no87_box_token.tsv`: `atlas/name_clusters.py --map <compat copy of no87_box_token_labelaware.tsv> --out <dir>`
+(`benchmark-tx/txeng4/0/build_labels_boxmapLA.py`, which also carries `--check`, rule 7). Reproduces
+`rescore_boxmapLA/named/` and `atlas/RESCORE.md`'s figures exactly: 302 overrides (299 shared with the old
+`labels.json`, 35 of them a different sign, 10 dropped, 3 added); 74 clusters named from clerk votes, 63 from the
+model sheet read, 3 unnamed (14, 84, 89 -- they lost their only clerk vote to the fixed map and stay `_` here, since
+naming them needs a model sheet read this job does not make); 8 cluster codes changed (2, 14, 37, 63, 84, 89, 94,
+132).
+
+What differs from `labels.json`: the per-tile `override` map and the cluster->code `signs` map are both rebuilt on
+`no87_box_token_labelaware.tsv` rather than `no87_box_token.tsv`; everything else about `name_clusters.py`'s
+procedure (tune-only verification, majority vote, clerk-then-model naming order) is unchanged.
+
+No consumer reads this file by default: `labels.json` stays the one every classify call, sorter seed and TXE3-10
+pool reads, unchanged (Z4). `glyph_atlas.py classify` takes it with `--labels atlas/labels_boxmapLA.json` for a
+side-by-side run. Switching a consumer's default to this file is the lane's decision, not made here.
+
+This file keeps TX-ATLAS-B72's dev-truth naming convention (tune-line verification against the clerk sheet decides
+a cluster's name): it is a corrected rebuild of that same procedure, not a machine-only one. Unit 5's machine-only
+inputs for TXE4-3 to TXE4-7 are a separate, independent construction that never reads labels.json, status, or a
+tile-labels file -- see `benchmark-tx/txeng4/0/RESULTS.md`.

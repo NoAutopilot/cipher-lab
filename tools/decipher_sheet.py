@@ -287,6 +287,13 @@ def data_uri(img, height=None, quality=70):
     return 'data:image/jpeg;base64,' + base64.b64encode(b.getvalue()).decode()
 
 
+def default_box_map(target, box_map_arg, atlas):
+    """The Birago no.87 box map default: --box-map if given, else the label-aware file when present (TXE4-0 REPAIR
+    unit 2, 12 Oct 2026 -- was atlas/no87_box_token.tsv, the width-only map one token off on 10 of 26 lines)."""
+    la = os.path.join(target, 'atlas', 'no87_box_token_labelaware.tsv')
+    return box_map_arg or (la if atlas and os.path.exists(la) else None)
+
+
 class Boxes:
     """Per-sign boxes: atlas dir (signs.tsv, pages.json, bitmaps.npz) + a box-to-token map."""
 
@@ -740,8 +747,13 @@ def build(a):
     # boxes
     boxes = None
     atlas = a.atlas or (os.path.join(target, 'atlas') if os.path.exists(os.path.join(target, 'atlas', 'signs.tsv')) else None)
-    bmap = a.box_map or (os.path.join(target, 'atlas', 'no87_box_token.tsv') if atlas and os.path.exists(os.path.join(target, 'atlas', 'no87_box_token.tsv')) else None)
+    bmap = default_box_map(target, a.box_map, atlas)
     if a.tiles in ('auto', 'boxes') and atlas and bmap:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import join_check
+        stamp = join_check.require(bmap, a.allow_unchecked_join)
+        if stamp:
+            print(stamp, file=sys.stderr)
         boxes = Boxes(atlas, bmap)
         for p in (os.path.join(atlas, 'signs.tsv'), bmap):
             note(p)
@@ -816,6 +828,8 @@ def main(argv=None):
     ap.add_argument('--key-family', help='sorter key family of this target (default: KEY_FAMILY_TARGETS, then key paths)')
     ap.add_argument('--families', help='sorter family register (default tools/data/sorter_families.tsv; tests)')
     ap.add_argument('--check', action='store_true'); ap.add_argument('--tile-report')
+    ap.add_argument('--allow-unchecked-join', help='join_check: skip the require() gate on the box map, to '
+                    'reproduce an old result (TXE4-0 REPAIR unit 2, 12 Oct 2026)')
     ap.add_argument('--corrections', choices=['final', 'original'], help="struck / over=OLD>NEW tokens: 'final' (default) "
                     "not read / NEW, 'original' as written / OLD (decode_key.py MQS-STRUCK; callouts MQS-STRUCK-2)")
     a = ap.parse_args(argv)

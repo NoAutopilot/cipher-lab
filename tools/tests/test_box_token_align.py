@@ -17,7 +17,7 @@
    lines, and the committed no87_box_token_labelaware.tsv is current (no87_map.py --label-aware --check), with
    f178v_06_009 skipped and f178v_06_010..015 one token earlier than in the old map.
 """
-import contextlib, io, math, os, random, subprocess, sys, tempfile
+import contextlib, io, json, math, os, random, subprocess, sys, tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
@@ -187,6 +187,35 @@ def test_cli_end_to_end():
         lines = {r['line']: r for r in BA.rd(lo)}
         assert lines['pg_L01']['skipped'] == 'pg_01_009' and int(lines['pg_L01']['moved']) == 7
         assert 'check, new map' in buf.getvalue() and 'check, old map' in buf.getvalue()
+
+
+def test_check_bound_cli_exit_codes():
+    """--check-bound (TXE4-0 unit 1, 12 Oct 2026): writes the join_check sidecar and exits 0/2/3."""
+    with tempfile.TemporaryDirectory() as d:
+        x = 100; signs = []
+        for b, w in enumerate(L06_W):
+            signs.append((f'pg_01_{b + 1:03d}', 'pg', 1, b + 1, x, 0, w)); x += w + 10
+        wtsv(os.path.join(d, 'signs.tsv'), ['sid', 'page', 'line', 'pos', 'x', 'y', 'w'], signs)
+        read = [('pg_L01', j + 1, t) for j, t in enumerate(TOKS)]
+        wtsv(os.path.join(d, 'read.tsv'), ['line', 'pos', 'sign'], read)
+        labs = synth_labels()
+        wtsv(os.path.join(d, 'labels.tsv'), ['sid', 'label'], [(f'pg_01_{b + 1:03d}', list(labs[b])[0]) for b in range(30)])
+        wtsv(os.path.join(d, 'status.tsv'), ['sid', 'status'], [('pg_01_009', 'not-letter')])
+        out = os.path.join(d, 'map.tsv')
+        r = subprocess.run([sys.executable, os.path.join(ROOT, 'tools', 'box_token_align.py'),
+                             '--signs', os.path.join(d, 'signs.tsv'), '--read', os.path.join(d, 'read.tsv'),
+                             '--tile-labels', os.path.join(d, 'labels.tsv'), '--status', os.path.join(d, 'status.tsv'),
+                             '--check-labels', os.path.join(d, 'labels.tsv'), '--check-bound', '--out', out],
+                            capture_output=True, text=True)
+        assert os.path.exists(out + '.joincheck.json'), r.stdout + r.stderr
+        with open(out + '.joincheck.json') as f:
+            sc = json.load(f)
+        assert sc['verdict'] == 'PASS' and r.returncode == 0, (sc, r.stdout, r.stderr)
+        # a map with no --check-labels + --check-bound is a usage error, not a silent no-op
+        r2 = subprocess.run([sys.executable, os.path.join(ROOT, 'tools', 'box_token_align.py'),
+                             '--signs', os.path.join(d, 'signs.tsv'), '--read', os.path.join(d, 'read.tsv'),
+                             '--check-bound', '--out', os.path.join(d, 'map2.tsv')], capture_output=True, text=True)
+        assert r2.returncode != 0 and 'check-bound requires' in (r2.stderr or ''), r2.stderr
 
 
 def test_repository_birago_no87():

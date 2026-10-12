@@ -435,7 +435,9 @@ def main(argv=None):
         else:
             p.add_argument('--unit', required=True)
             p.add_argument('--units', default=D_UNITS)
-            p.add_argument('--map', default=os.path.join(D_ATLAS, 'no87_box_token.tsv'))
+            p.add_argument('--map', default=os.path.join(D_ATLAS, 'no87_box_token_labelaware.tsv'))
+            p.add_argument('--allow-unchecked-join', help='join_check: skip the require() gate on --map, to '
+                           'reproduce an old result; stamped into stdout')
             p.add_argument('--out-dir', default=D_OUT)
             p.add_argument('--touched-dir', default=None, help='default benchmark-tx/txeng2/pair (secure) or pair2 (dev_tune)')
             p.add_argument('--train-domain', choices=('secure', DEV_UNIT), default='secure',
@@ -446,6 +448,12 @@ def main(argv=None):
     a = ap.parse_args(argv)
     if getattr(a, 'touched_dir', 1) is None:
         a.touched_dir = os.path.join(ROOT, 'benchmark-tx', 'txeng2', 'pair2' if a.train_domain == DEV_UNIT else 'pair')
+    if hasattr(a, 'map'):
+        sys.path.insert(0, os.path.join(ROOT, 'tools'))
+        import join_check
+        stamp = join_check.require(a.map, getattr(a, 'allow_unchecked_join', None))
+        if stamp:
+            print(stamp)
     return a.fn(a)
 
 

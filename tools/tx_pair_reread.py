@@ -77,6 +77,25 @@ def dp(bw, n, W):
     return path[::-1]
 
 
+def pair_align(bx, tk, W, label_aware=False, labels=None, status=None, lam=None):
+    """-> [(sid, pos, sign)] for 1:1 boxes only (TXE4-0 REPAIR unit 2, 12 Oct 2026). label_aware False (default,
+    unchanged): the local width-only `dp()` above. True: tools/box_token_align.py's label-aware DP (own-label
+    leave-one-out on; an 'unsure' box is excluded, same as a non-1:1 box, never pinned by its own label alone)."""
+    if not label_aware:
+        out = []
+        for i, j, op in dp([int(s['w']) for s in bx], len(tk), W):
+            if op == '1:1':
+                out.append((bx[i]['sid'], tk[j]['pos'], tk[j]['sign']))
+        return out
+    import box_token_align as BA
+    boxes = [dict(sid=s['sid'], w=s['w'], labels=(labels or {}).get(s['sid']), status=(status or {}).get(s['sid'], ''))
+             for s in bx]
+    sign_by_pos = {t['pos']: t['sign'] for t in tk}
+    toks = [dict(pos=t['pos'], signs={t['sign']}) for t in tk]
+    rows, _ = BA.align_line(boxes, toks, W, lam if lam is not None else BA.LAM, BA.NEUTRAL, True)
+    return [(r['sid'], r['pos'], sign_by_pos[r['pos']]) for r in rows if r['op'] == '1:1']
+
+
 def load_pages(folder, leaves):
     """Page images: harvest/<leaf>/src_*.jpg (the frame signs.tsv boxes are in), else atlas/pages/<leaf>.jpg."""
     import numpy as np
@@ -170,6 +189,12 @@ def cmd_select(a):
     pages = load_pages(a.folder, leaves)
     ex = exemplars(a.folder, fallback=a.cluster_fallback)
     part, unusable = pair_partners(set(ex), a.confusion)
+    label_aware = getattr(a, 'label_aware', False)
+    labels_map, status_map = {}, {}
+    if label_aware:
+        import box_token_align as BA
+        labels_map = BA.read_labels(a.topk, a.tile_labels)
+        status_map = BA.read_status(a.status)
     rows = []
     for leaf in leaves:
         pb = [s for s in signs if s['page'] == leaf]
@@ -183,18 +208,29 @@ def cmd_select(a):
             tk = sorted(L.get(ln, []), key=lambda r: int(r['pos']))
             if not bx or not tk:
                 continue
-            for i, j, op in dp([int(s['w']) for s in bx], len(tk), W):
-                if op != '1:1':
-                    continue
-                s, t = bx[i], tk[j]
-                e = es[s['sid']]
+            for sid, pos, sign in pair_align(bx, tk, W, label_aware, labels_map, status_map,
+                                              getattr(a, 'lam', None)):
+                e = es[sid]
                 thin = e is not None and e < cut
-                sel = thin and t['sign'] in part
-                rows.append(dict(sid=s['sid'], line=ln, pos=t['pos'], L=t['sign'], es='' if e is None else f'{e:.3f}',
+                sel = thin and sign in part
+                rows.append(dict(sid=sid, line=ln, pos=pos, L=sign, es='' if e is None else f'{e:.3f}',
                                  cut=f'{cut:.3f}', thin=int(thin), selected=int(sel),
-                                 partner=part.get(t['sign'], '') if sel else ''))
+                                 partner=part.get(sign, '') if sel else ''))
     out = os.path.join(a.out, a.unit)
     wr(os.path.join(out, 'box_pos.tsv'), ['sid', 'line', 'pos', 'L', 'es', 'cut', 'thin', 'selected', 'partner'], rows)
+    if label_aware and getattr(a, 'check_labels', None):
+        import join_check
+        chk = {r['sid']: (r.get('label') or r.get('sign')) for r in rd(a.check_labels)}
+        steered = a.check_labels in (a.topk,) or a.check_labels in (a.tile_labels or [])
+        pos_of = {r['sid']: (r['line'], str(r['pos'])) for r in rows}
+        rs = defaultdict(set)
+        for ln, recs in L.items():
+            for t in recs:
+                rs[(ln, int(t['pos']))].add(t['sign'])
+        result = join_check.evaluate(pos_of, chk, rs)
+        sc = join_check.write_sidecar(os.path.join(out, 'box_pos.tsv'), result,
+                                       inputs=[p for p in (a.topk, a.check_labels) if p])
+        print(f"join_check: {result['verdict']} share0={result['share0']:.3f} (null p95 {result['p95_0']:.3f}) -> {sc}")
     sel = [r for r in rows if r['selected']]
     wr(os.path.join(out, 'selected.tsv'), ['sid', 'line', 'pos', 'L', 'partner', 'es'], sel)
     per = Counter('/'.join(sorted((r['L'], r['partner']))) for r in sel)
@@ -344,6 +380,16 @@ def main(argv=None):
                        help='also take exemplars from clusters named a code (off: on the dev build, 9 Oct 2026, before any '
                             'read, it gave dot marks for T24 and a mixed 1/3-vote cluster for T64)')
         p.add_argument('--confusion', default=os.path.join(D_FOLDER, 'harvest', 'confusion_1572.tsv'))
+        if name == 'select':
+            p.add_argument('--label-aware', action='store_true',
+                           help='box_token_align.py\'s label-aware DP instead of the width-only one above (TXE4-0 '
+                                'REPAIR unit 2, 12 Oct 2026); prints a join_check sidecar when --check-labels is '
+                                'also given. Default (omitted) is unchanged.')
+            p.add_argument('--topk', help='--label-aware: classify --topk TSV (box labels)')
+            p.add_argument('--tile-labels', action='append', default=[], help='--label-aware: sid,label[,weight] TSV(s)')
+            p.add_argument('--status', action='append', default=[], help='--label-aware: sid,status TSV(s)')
+            p.add_argument('--lam', type=float, help='--label-aware: label weight (default box_token_align.LAM)')
+            p.add_argument('--check-labels', help='--label-aware: sid,label TSV for the join_check sidecar')
         if name == 'build':
             p.add_argument('--rows', type=int, default=16, help='rows per sheet (max 16)')
             p.add_argument('--zoom', type=float, default=1.6,

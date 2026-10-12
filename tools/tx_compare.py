@@ -287,9 +287,40 @@ def cmd_map(a, signs=None, L=None, lines=None):
         signs, L = load(a)
     if lines is None:
         lines = sorted({r['line'] for r in L})
+    if getattr(a, 'label_aware', False):
+        return cmd_map_label_aware(a, signs, L, lines)
     rows = box_map(signs, L, lines)
     wr(a.box_pos_out, ['sid', 'line', 'pos', 'op'], rows)
     print(f'map: {len(rows)} positions, ops {dict(Counter(r["op"] for r in rows))} -> {a.box_pos_out}')
+    return rows
+
+
+def cmd_map_label_aware(a, signs, L, lines):
+    """--label-aware (TXE4-0 REPAIR unit 2, 12 Oct 2026): tools/box_token_align.py's label-aware DP in place of the
+    width-only `dp`/`box_map` above. Writes box_token_align's own row format (sid, page, line, pos, op, labels,
+    status, loo_pos, old_pos) to a.box_pos_out, prints the truth-free shift check and, when --check-labels is
+    given, a join_check sidecar beside the output file."""
+    sys.path.insert(0, os.path.join(ROOT, 'tools'))
+    import box_token_align as BA
+    labels = BA.read_labels(a.topk, a.tile_labels)
+    status = BA.read_status(a.status)
+    lam = a.lam if a.lam is not None else BA.LAM
+    rows, per = BA.build_map(signs, L, labels, status, lines, lam, BA.NEUTRAL, True, ())
+    wr(a.box_pos_out, BA.COLS, rows)
+    print(f'map --label-aware: {len(rows)} rows, ops {dict(Counter(r["op"] for r in rows))} -> {a.box_pos_out}')
+    if a.check_labels:
+        chk = {r['sid']: (r.get('label') or r.get('sign')) for r in rd(path(a.check_labels))}
+        import join_check
+        steered = a.check_labels in (a.topk,) or a.check_labels in (a.tile_labels or [])
+        pos_of = BA.positions(rows, loo=steered)
+        rs = defaultdict(set)
+        for r in L:
+            rs[(r['line'], int(r['pos']))].add(r['sign'])
+        result = join_check.evaluate(pos_of, chk, rs)
+        sc = join_check.write_sidecar(a.box_pos_out, result,
+                                       inputs=[p for p in (a.topk, a.check_labels) if p])
+        print(f"join_check: {result['verdict']} (steered={steered}) share0={result['share0']:.3f} "
+              f"(null p95 {result['p95_0']:.3f}) -> {sc}")
     return rows
 
 
@@ -730,6 +761,15 @@ def main(argv=None):
         p.add_argument('--units', default=D['units']); p.add_argument('--out', default=D['out'])
     m = sp.add_parser('map'); common(m)
     m.add_argument('--box-pos-out', default=os.path.join(D['out'], 'box_pos.tsv'))
+    m.add_argument('--label-aware', action='store_true',
+                    help='box_token_align.py\'s label-aware DP instead of the label-blind width-only one (TXE4-0 '
+                         'REPAIR unit 2, 12 Oct 2026); writes box_token_align\'s own row format, prints the shift '
+                         'check and a join_check sidecar. Default (omitted) is unchanged.')
+    m.add_argument('--topk', help='--label-aware: classify --topk TSV (box labels)')
+    m.add_argument('--tile-labels', action='append', default=[], help='--label-aware: sid,label[,weight] TSV(s)')
+    m.add_argument('--status', action='append', default=[], help='--label-aware: sid,status TSV(s)')
+    m.add_argument('--lam', type=float, help='--label-aware: label weight (default box_token_align.LAM)')
+    m.add_argument('--check-labels', help='--label-aware: sid,label TSV for the truth-free shift check / join_check')
     b = sp.add_parser('build'); common(b)
     b.add_argument('--unit', required=True); b.add_argument('--topk', default=D['topk'])
     b.add_argument('--conf', action='append', help='agreement TSV:page (repeatable; default the no.87 passC files)')

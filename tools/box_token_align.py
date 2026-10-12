@@ -341,6 +341,9 @@ def main(argv=None):
     ap.add_argument('--neutral', type=float, default=NEUTRAL); ap.add_argument('--no-loo', action='store_true')
     ap.add_argument('--old', help='an earlier map (sid, line, pos, op) for old_pos and the per-line moved count')
     ap.add_argument('--check-labels', help='sid, label: truth-free check at the mapped position')
+    ap.add_argument('--check-bound', action='store_true',
+                     help='run tools/join_check.py on the map just written (requires --check-labels); writes the '
+                          '.joincheck.json sidecar and exits 0 PASS, 2 FAIL, 3 UNCHECKABLE')
     ap.add_argument('--out', required=True); ap.add_argument('--lines-out')
     a = ap.parse_args(argv)
     read = rd(a.read)
@@ -358,6 +361,22 @@ def main(argv=None):
         chk = {r['sid']: (r.get('label') or r.get('sign')) for r in rd(a.check_labels)}
         for name, c in check_report(rows, old, chk, read + alt):
             print(f'check, {name}: {fmt_check(c)}')
+    if a.check_bound:
+        if not a.check_labels:
+            ap.error('--check-bound requires --check-labels')
+        import join_check
+        steered = a.check_labels in {a.topk} | set(a.tile_labels or [])
+        pos_of = positions(rows, loo=steered)
+        chk = {r['sid']: (r.get('label') or r.get('sign')) for r in rd(a.check_labels)}
+        rs = defaultdict(set)
+        for r in read + alt:
+            rs[(r['line'], int(r['pos']))].add(r['sign'])
+        result = join_check.evaluate(pos_of, chk, rs)
+        sc = join_check.write_sidecar(a.out, result, inputs=[p for p in (a.signs, a.read, a.check_labels) if p])
+        print(f"join_check --check-bound: {result['verdict']} (steered={steered}) share0={result['share0']:.3f} "
+              f"(null p95 {result['p95_0']:.3f}) share+-1={result['sharepm1']:.3f} (bound {result['b2_bound']:.3f}) "
+              f"-> {sc}")
+        sys.exit(join_check.EXIT[result['verdict']])
     return rows
 
 
