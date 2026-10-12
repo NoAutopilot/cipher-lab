@@ -7144,3 +7144,33 @@ Read so far: 11 rows examined (FM-S65B); 6 filed (E589-E594), 2 in print (5896/1
 - [x] image-check: FV-L17b read all six leaves at 2400 px; transcription matches.
 - [x] retry: googleapis 503 on the control, one retry after a 60 s pause, 503 again, stopped per rule (ECK-GP13B).
 Verdict: keep going: 2 internal gaps; cheapest next: the keyed googleapis pass for Grant Papers vol. 13 from the control, ~$0.1
+
+## ECK-GP13C (12 Oct 2026, account 1, for LANE DEFAULT-A1-0640)
+
+Brief: ECK-GP13B Remaining gaps item 1 (same sliced list: control, E590, E591, E592, looser E589 `Monohansett Monroe`; 5 queries). Intake gate (06:47 UTC): `eckert-1864: partial (line 3)`, exit 0. Check 1: no later section than ECK-GP13B ran these queries. Run: `fortmonroe/eck_s65g_gb.py` with its query list sliced as in ECK-GP13B (E589's original row removed, `E589 looser` appended; the sliced copy was kept in scratch), keyed, `country=US`, >= 2 s. Output of the last attempt: `fortmonroe/eck_gp13c_gb.out`. The 06:53 and 06:54 outputs were lost when a concurrent `room.py --start` reset the working tree; their result (HTTP 503 on the control, 503 again on the retry after a 60 s pause) is recorded from the terminal, and a third single attempt at 06:57 UTC gave 503 again.
+
+| row | query | result |
+|---|---|---|
+| control E531 | `"six vessels" Oriental` | unsearched: HTTP 503 at 06:53 UTC, 503 on the one retry after 60 s (06:54), 503 on a later single attempt (06:57); host stopped before any target query. |
+| E590 | `"retained no copy" staff officer Seward` | unsearched (no control, so no target query was run). |
+| E591 | `Radford torpedoes Lynch Bureau of Ordnance Ironsides` | unsearched (host stopped). |
+| E592 | `Camman gold Cooper naval officer` | unsearched (host stopped). |
+| E589 looser | `Monohansett Monroe` | unsearched (host stopped). |
+
+No row record, status pointer, AUDIT.md section or N-class edited. **Requests:** www.googleapis.com 3 (all 503); no other host.
+
+## Remaining gaps (ECK-GP13C, 12 Oct 2026)
+Read so far: as ECK-GP13B; Grant Papers vol. 13 searched for E589 only (not located, control PASS, ECK-GP13).
+- Grant Papers vol. 13 (2-20 Feb 1865) for E590 E591 E592, and a looser E589 query (`Monohansett Monroe`) - blocker: not-attempted; googleapis answered 503 to the control itself on 12 Oct (06:18, 06:19, 06:53, 06:54, 06:57 UTC) after 200 earlier that morning (`fortmonroe/eck_gp13c_gb.out`); next: re-run the same sliced list in a later session once the control answers 200, ~$0.1
+- The printed page of 5914/2 in Grant Papers vol. 14 (Grant to Ord, 10.00 a.m.) - blocker: not-attempted; be-api gives no page and the IA copy is lending-only (obfuscated to scripts); next: a LOCAL-QUEUE row for a person to read the page in the IA reader at the 'Gordon's Commission' note, ~$0.05
+
+## Escalation (ECK-GP13C, 12 Oct 2026)
+- [x] siblings: as ECK-GP13B.
+- [x] clear-pages: as ECK-GP13B.
+- [x] known-keys: as ECK-GP13B.
+- [ ] print: Grant Papers 13 by Google Books: E590-E592 and looser E589 still to run (gap above).
+- [n/a] key-rebuild: no key row edited in this pass.
+- [x] image-check: as ECK-GP13B.
+- [x] retry: googleapis 503 on the control, one retry after a 60 s pause, 503 again, stopped per rule (ECK-GP13C).
+Verdict: keep going: 2 internal gaps; cheapest next: the keyed googleapis pass for Grant Papers vol. 13 from the control, ~$0.1
+
