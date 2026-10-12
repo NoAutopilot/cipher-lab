@@ -64,3 +64,29 @@ word, grade H for a value read clearly from the print, M if the image is doubtfu
 via `tools/key_design.py` if its --help shows an add path for a printed key. Update Remaining gaps / Escalation, `tools/gaps_check.py
 bl-gualterio-1700` (open targets: only if the folder already carries those sections; otherwise a dated section with a one-line next step).
 Report what was found and where it was not found; do not classify novelty.
+
+## Wave 2 (07:1x UTC 12 Oct)
+Wave 1 results (get_session): ECK-GP13C 0.80 F (googleapis 503 on the control x3); THUR-57 2.38 D- (run 1 code 57 vs print n logged as a rule 4
+conflict, run 8 favours 53, p.294 postscript printed undeciphered); PISA-244 5.18 D- (24/26 located, 22 relabel candidates); GUALT-HMC 3.54 D-
+(keys/hmc6_gualterio.tsv, keys/hmc6_sicily.tsv). Every Opus job ran 1.5-2.4x its cap: wave 2 caps below are sized from those rates. Gallica 403
+(07:12 UTC); googleapis flapping -- no googleapis-only job this wave.
+
+### PISA-RS244 (Opus, cap 2.5, box 45 min): fr16045-pisany-rome-1585, re-score the 22 f.244r relabel candidates
+NOTES.md "## PISA-244" (its result table and next step). Intake gate as PISA-244 (exit 0). Disk and CPU only, no vision call unless a gate needs
+one tile re-look (then at most one call). Units: (1) PREREG-PISA-RS244.md pushed in its own commit (checked on origin/main) BEFORE scoring: the
+UNA2-PISA / PISA-T32 / UNA3-PISA gates unchanged (re-score above both p99s, controls 5/5, the class-alignment check vs the old label, the random
+same-size subset null), one gate per label group (T45->T19, T47->T27, T57->T32, T57->T35; T57->T42 single token reported, not committed);
+(2) score each group with the existing scorer (pis1key / pisrs / una2 scripts -- read their headers; add an option rather than a private copy);
+(3) commit only the groups that PASS (grades M -> C as the earlier commits did, readings regenerated, `--check` exit 0), log FAILs as FAILs.
+Update Remaining gaps / Escalation, `tools/gaps_check.py fr16045-pisany-rome-1585`. A changed count goes to a verifier as a one-line next step
+(no AUDIT edits). Report what was found and where it was not found; do not classify novelty.
+
+### THUR-PS (Opus, cap 2.5, box 45 min): thurloe-printed, the Bijdragen X p.294 postscript ct file and decode
+NOTES.md "## THUR-57" and Remaining gaps item "Bijdragen X p.294 postscript (29 numerals ...)". Intake gate (06:47 UTC): exit 0, as THUR-57.
+Units: (1) two blind passes of the 29 numerals from the committed crop dutch1653/crops/bijX/bijX_p294_L01.jpg (re-cut tighter with
+`tools/iiif_lines.py --image <file> --out <dir>` if needed, command pasted), reconcile -> ct_bijX294.tsv (3 units at ~0.5 with the Opus
+floor); (2) add it to decode_dutch.py's inputs, decode with the p.72 key, grade per rule 4 (H for key values, M doubtful), `--check` exit 0;
+(3) print check on the decoded phrase with `tools/print_check.py` or archive.org be-api full text (Japikse, Brieven van De Witt I notes;
+later Bijdragen volumes; Birch I) -- IA <= 15 requests, >= 1.5 s, take/release lines; googleapis only if it answers (one try). Report the
+decoded text and the search log; no novelty word. Update Remaining gaps / Escalation, `tools/gaps_check.py thurloe-printed`. Report what was
+found and where it was not found; do not classify novelty.
