@@ -1,0 +1,14 @@
+benchmark-tx/txeng4/10/outputs/pen.top1.tsv --bench benchmark-tx/txeng3/6/bench_test.tsv --exclude-flagged --strict --ci --perm-null 200 --perm-seed 1 --seg-boxes benchmark-tx/txeng3/6/seg/pen/boxes.tsv --seg-topk benchmark-tx/txeng4/10/outputs/pen.topk.tsv
+vivonne1573-f102r-dev2 [dev] as measured: err_true(0.75-indel align) 0.664 (277/417) | standard SER (unit-cost Levenshtein) 0.635 (265/417): S 190 D 62 I 13 | wrong 173 deleted 71 inserted 33 | excluded 245 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 173/346 = 0.500 | coverage 346/417 = 0.830
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.600 (250/417) | standard SER 0.588 (245/417)
+    standard SER line bootstrap 95% (1000 resamples, conditional on this item's 13 lines): 0.597-0.684
+    label-permutation null (200 draws, seed 1; VERIFY-6 null A): err_true mean 0.822 [0.791, 0.859]; reading gain over chance = null mean - real = 0.157
+    seg-boxes boxes.tsv: 13 lines, boxes 569 vs truth positions 662, sum|boxes - positions| 93; map 1:1 share 0.606 (345 boxes), 2:1 boxes 62, 1:2 tokens 256, skipped boxes 5, skipped tokens 1, unsure 29; shift check (leave-one-out): PASS share0 0.462 (null p95 0.106) share+-1 0.133 (bound 0.212)
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.630 (136/216) | standard SER (unit-cost Levenshtein) 0.560 (121/216): S 74 D 34 I 13 | wrong 65 deleted 38 inserted 33 | excluded 446 | lines missing 0 (0 signs counted deleted) [201 flagged] | position errors 103/216 = 0.477 | insertions 33 / read 569 = 0.058
+    reader abstentions 0 | accepted-token error 65/178 = 0.365 | coverage 178/216 = 0.824
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.630 (136/216) | standard SER 0.565 (122/216)
+    standard SER line bootstrap 95% (1000 resamples, conditional on this item's 13 lines): 0.498-0.634
+    label-permutation null (200 draws, seed 1; VERIFY-6 null A): err_true mean 0.912 [0.843, 0.982]; reading gain over chance = null mean - real = 0.283
+  top confusions (truth value <- read): t<-<deleted> x17, t<-tz x15, u<-<deleted> x13, u<-m x13, r<-tz x10, n<-tz x9, e<-tz x9, u<-tz x9
+split dev: err_true(0.75-indel align) 0.664 (277/417) | standard SER 0.635 (265/417)

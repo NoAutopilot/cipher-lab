@@ -1,0 +1,140 @@
+{
+ "item": "vivonne1573-f102r-dev2",
+ "split": "dev",
+ "output": null,
+ "coverage_diagnostic": false,
+ "err_true": 0.6643,
+ "errors": 277,
+ "scored": 417,
+ "wrong": 173,
+ "deleted": 71,
+ "inserted": 33,
+ "excluded": 245,
+ "lines_missing": 0,
+ "missing_deleted": 0,
+ "ser": 0.6355,
+ "ser_errors": 265,
+ "ser_S": 190,
+ "ser_D": 62,
+ "ser_I": 13,
+ "abstained": 0,
+ "accepted": 346,
+ "accepted_wrong": 173,
+ "accepted_error": 0.5,
+ "coverage": 0.8297,
+ "position_errors": 244,
+ "read": 569,
+ "position_rate": 0.5851,
+ "insertion_rate": 0.058,
+ "strict": {
+  "err_true": 0.5995,
+  "errors": 250,
+  "ser": 0.5875,
+  "ser_errors": 245,
+  "scored": 417
+ },
+ "ci95_ser": [
+  0.5968,
+  0.6838
+ ],
+ "ci_lines": 13,
+ "top_confusions": [
+  "t<-<deleted> x17",
+  "t<-tz x15",
+  "u<-<deleted> x13",
+  "u<-m x13",
+  "r<-tz x10",
+  "n<-tz x9",
+  "e<-tz x9",
+  "u<-tz x9"
+ ],
+ "perm_null": {
+  "as_measured": {
+   "n": 200,
+   "seed": 1,
+   "mean": 0.8215,
+   "p2_5": 0.7914,
+   "p97_5": 0.8585,
+   "gain_over_chance": 0.1572
+  },
+  "flagged_excluded": {
+   "n": 200,
+   "seed": 1,
+   "mean": 0.9123,
+   "p2_5": 0.8426,
+   "p97_5": 0.9815,
+   "gain_over_chance": 0.2827
+  }
+ },
+ "seg_boxes": {
+  "lines": 13,
+  "boxes": 569,
+  "truth_positions": 662,
+  "abs_diff": 93,
+  "share_1to1": 0.6063,
+  "ops": {
+   "1:1": 345,
+   "1:2": 256,
+   "2:1": 62,
+   "unsure": 29,
+   "skiptok": 1
+  },
+  "boxes_2to1": 62,
+  "tokens_1to2": 256,
+  "skipped_boxes": 5,
+  "skipped_tokens": 1,
+  "unsure": 29,
+  "shift_check_loo": {
+   "verdict": "PASS",
+   "share0": 0.46195652173913043,
+   "p95_0": 0.10597826086956522,
+   "sharepm1": 0.1331521739130435,
+   "b2_bound": 0.21209239130434782,
+   "counts": {
+    "0": 170,
+    "none": 125,
+    "+1": 24,
+    "+-2": 24,
+    "-1": 25
+   }
+  }
+ },
+ "flagged_excluded": {
+  "err_true": 0.6296,
+  "errors": 136,
+  "scored": 216,
+  "wrong": 65,
+  "deleted": 38,
+  "inserted": 33,
+  "excluded": 446,
+  "lines_missing": 0,
+  "missing_deleted": 0,
+  "ser": 0.5602,
+  "ser_errors": 121,
+  "ser_S": 74,
+  "ser_D": 34,
+  "ser_I": 13,
+  "abstained": 0,
+  "accepted": 178,
+  "accepted_wrong": 65,
+  "accepted_error": 0.3652,
+  "coverage": 0.8241,
+  "position_errors": 103,
+  "read": 569,
+  "position_rate": 0.4769,
+  "insertion_rate": 0.058,
+  "strict": {
+   "err_true": 0.6296,
+   "errors": 136,
+   "ser": 0.5648,
+   "ser_errors": 122,
+   "scored": 216
+  },
+  "ci95_ser": [
+   0.4977,
+   0.6341
+  ],
+  "ci_lines": 13,
+  "flagged": 201
+ }
+}
