@@ -1,0 +1,9 @@
+COVERAGE DIAGNOSTIC: partial coverage, missing truth lines are listed and not scored, unknown line ids ignored; not the fixed-manifest score
+birago1572-no87 [eval] as measured: err_true(0.75-indel align) 0.875 (329/376) | standard SER (unit-cost Levenshtein) 0.867 (326/376): S 258 D 29 I 39 | wrong 195 deleted 60 inserted 74 | excluded 26 | lines missing 15 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 195/316 = 0.617 | coverage 316/376 = 0.840
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.960 (361/376) | standard SER 0.947 (356/376)
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.879 (326/371) | standard SER (unit-cost Levenshtein) 0.871 (323/371): S 255 D 29 I 39 | wrong 192 deleted 60 inserted 74 | excluded 31 | lines missing 15 (0 signs counted deleted) [5 flagged] | position errors 252/371 = 0.679 | insertions 74 / read 412 = 0.180
+    reader abstentions 0 | accepted-token error 192/311 = 0.617 | coverage 311/371 = 0.838
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.960 (356/371) | standard SER 0.946 (351/371)
+  top confusions (truth value <- read): r<-<deleted> x7, s<-<deleted> x7, n<-<deleted> x7, e<-<deleted> x7, a<-T19 x6, e<-T19 x5, r<-T58 x4, t<-<deleted> x4
+split eval: err_true(0.75-indel align) 0.875 (329/376) | standard SER 0.867 (326/376)

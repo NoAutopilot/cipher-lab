@@ -1,0 +1,11 @@
+COVERAGE DIAGNOSTIC: partial coverage, missing truth lines are listed and not scored, unknown line ids ignored; not the fixed-manifest score
+birago1572-no87 [eval] as measured: err_true(0.75-indel align) 0.202 (76/376) | standard SER (unit-cost Levenshtein) 0.202 (76/376): S 55 D 5 I 16 | wrong 54 deleted 5 inserted 17 | excluded 26 | lines missing 15 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 54/371 = 0.146 | coverage 371/376 = 0.987
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.223 (84/376) | standard SER 0.223 (84/376)
+paired eval_A0.tsv vs eval_A1.tsv on birago1572-no87 [as measured]: 14 lines; lines improved 11, worsened 2, tied 1; line sign test p = 0.0225; unit-cost edits base 92 -> output 76 over 376 scored signs | beside, sign-level position McNemar: 376 common scored signs; base wrong 75, output wrong 59; fixed 42, broken 26; exact p = 0.0681
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.191 (71/371) | standard SER (unit-cost Levenshtein) 0.191 (71/371): S 50 D 5 I 16 | wrong 49 deleted 5 inserted 17 | excluded 31 | lines missing 15 (0 signs counted deleted) [5 flagged] | position errors 54/371 = 0.146 | insertions 17 / read 412 = 0.041
+    reader abstentions 0 | accepted-token error 49/366 = 0.134 | coverage 366/371 = 0.987
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.218 (81/371) | standard SER 0.218 (81/371)
+paired eval_A0.tsv vs eval_A1.tsv on birago1572-no87 [flagged excluded (truth-verifier flags only)]: 14 lines; lines improved 11, worsened 2, tied 1; line sign test p = 0.0225; unit-cost edits base 87 -> output 71 over 371 scored signs | beside, sign-level position McNemar: 371 common scored signs; base wrong 70, output wrong 54; fixed 42, broken 26; exact p = 0.0681
+  top confusions (truth value <- read): s<-T50 x12, o<-_ x4, o<-T83 x3, s<-_ x3, i<-_ x2, f<-T37 x2, a<-_ x2, e<-T37 x2
+split eval: err_true(0.75-indel align) 0.202 (76/376) | standard SER 0.202 (76/376)

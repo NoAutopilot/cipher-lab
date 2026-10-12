@@ -1,0 +1,11 @@
+COVERAGE DIAGNOSTIC: partial coverage, missing truth lines are listed and not scored, unknown line ids ignored; not the fixed-manifest score
+birago1572-no87 [eval] as measured: err_true(0.75-indel align) 0.207 (78/376) | standard SER (unit-cost Levenshtein) 0.207 (78/376): S 57 D 5 I 16 | wrong 53 deleted 7 inserted 18 | excluded 26 | lines missing 15 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 53/369 = 0.144 | coverage 369/376 = 0.981
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.229 (86/376) | standard SER 0.229 (86/376)
+paired eval_A5.tsv vs eval_A1.tsv on birago1572-no87 [as measured]: 14 lines; lines improved 10, worsened 0, tied 4; line sign test p = 0.0020; unit-cost edits base 92 -> output 78 over 376 scored signs | beside, sign-level position McNemar: 376 common scored signs; base wrong 75, output wrong 60; fixed 33, broken 18; exact p = 0.0489
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.200 (74/371) | standard SER (unit-cost Levenshtein) 0.200 (74/371): S 53 D 5 I 16 | wrong 49 deleted 7 inserted 18 | excluded 31 | lines missing 15 (0 signs counted deleted) [5 flagged] | position errors 56/371 = 0.151 | insertions 18 / read 412 = 0.044
+    reader abstentions 0 | accepted-token error 49/364 = 0.135 | coverage 364/371 = 0.981
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.224 (83/371) | standard SER 0.224 (83/371)
+paired eval_A5.tsv vs eval_A1.tsv on birago1572-no87 [flagged excluded (truth-verifier flags only)]: 14 lines; lines improved 10, worsened 0, tied 4; line sign test p = 0.0020; unit-cost edits base 87 -> output 74 over 371 scored signs | beside, sign-level position McNemar: 371 common scored signs; base wrong 70, output wrong 56; fixed 32, broken 18; exact p = 0.0649
+  top confusions (truth value <- read): s<-T83 x7, s<-T53 x4, r<-T58 x2, m<-T55 x2, m<-T19 x2, m<-T85 x2, s<-T19 x2, t<-<deleted> x2
+split eval: err_true(0.75-indel align) 0.207 (78/376) | standard SER 0.207 (78/376)

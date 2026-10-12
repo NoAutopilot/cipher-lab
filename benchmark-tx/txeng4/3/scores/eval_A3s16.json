@@ -1,0 +1,83 @@
+{
+ "items": [
+  {
+   "item": "birago1572-no87",
+   "split": "eval",
+   "output": null,
+   "coverage_diagnostic": true,
+   "err_true": 0.8457,
+   "errors": 318,
+   "scored": 376,
+   "wrong": 192,
+   "deleted": 56,
+   "inserted": 70,
+   "excluded": 26,
+   "lines_missing": 15,
+   "missing_deleted": 0,
+   "ser": 0.8298,
+   "ser_errors": 312,
+   "ser_S": 278,
+   "ser_D": 11,
+   "ser_I": 23,
+   "abstained": 0,
+   "accepted": 320,
+   "accepted_wrong": 192,
+   "accepted_error": 0.6,
+   "coverage": 0.8511,
+   "position_errors": 248,
+   "read": 412,
+   "position_rate": 0.6596,
+   "insertion_rate": 0.1699,
+   "strict": {
+    "err_true": 0.9681,
+    "errors": 364,
+    "ser": 0.9574,
+    "ser_errors": 360,
+    "scored": 376
+   },
+   "top_confusions": [
+    "t<-<deleted> x7",
+    "n<-<deleted> x7",
+    "i<-T37 x6",
+    "i<-<deleted> x5",
+    "i<-T57 x5",
+    "r<-T55 x4",
+    "n<-T25 x4",
+    "d<-T98 x4"
+   ],
+   "flagged_excluded": {
+    "err_true": 0.8464,
+    "errors": 314,
+    "scored": 371,
+    "wrong": 188,
+    "deleted": 56,
+    "inserted": 70,
+    "excluded": 31,
+    "lines_missing": 15,
+    "missing_deleted": 0,
+    "ser": 0.8275,
+    "ser_errors": 307,
+    "ser_S": 273,
+    "ser_D": 11,
+    "ser_I": 23,
+    "abstained": 0,
+    "accepted": 315,
+    "accepted_wrong": 188,
+    "accepted_error": 0.5968,
+    "coverage": 0.8491,
+    "position_errors": 244,
+    "read": 412,
+    "position_rate": 0.6577,
+    "insertion_rate": 0.1699,
+    "strict": {
+     "err_true": 0.9704,
+     "errors": 360,
+     "ser": 0.9569,
+     "ser_errors": 355,
+     "scored": 371
+    },
+    "flagged": 5
+   }
+  }
+ ]
+}

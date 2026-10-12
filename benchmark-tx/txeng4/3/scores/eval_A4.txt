@@ -1,0 +1,11 @@
+COVERAGE DIAGNOSTIC: partial coverage, missing truth lines are listed and not scored, unknown line ids ignored; not the fixed-manifest score
+birago1572-no87 [eval] as measured: err_true(0.75-indel align) 0.144 (54/376) | standard SER (unit-cost Levenshtein) 0.144 (54/376): S 33 D 5 I 16 | wrong 31 deleted 6 inserted 17 | excluded 26 | lines missing 15 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 31/370 = 0.084 | coverage 370/376 = 0.984
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.152 (57/376) | standard SER 0.152 (57/376)
+paired eval_A4.tsv vs eval_A1.tsv on birago1572-no87 [as measured]: 14 lines; lines improved 13, worsened 1, tied 0; line sign test p = 0.0018; unit-cost edits base 92 -> output 54 over 376 scored signs | beside, sign-level position McNemar: 376 common scored signs; base wrong 75, output wrong 37; fixed 46, broken 8; exact p = 0.0000
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.132 (49/371) | standard SER (unit-cost Levenshtein) 0.132 (49/371): S 28 D 5 I 16 | wrong 26 deleted 6 inserted 17 | excluded 31 | lines missing 15 (0 signs counted deleted) [5 flagged] | position errors 32/371 = 0.086 | insertions 17 / read 412 = 0.041
+    reader abstentions 0 | accepted-token error 26/365 = 0.071 | coverage 365/371 = 0.984
+    strict (exact ref_sign, visual identity): err_true(0.75-indel align) 0.146 (54/371) | standard SER 0.146 (54/371)
+paired eval_A4.tsv vs eval_A1.tsv on birago1572-no87 [flagged excluded (truth-verifier flags only)]: 14 lines; lines improved 13, worsened 1, tied 0; line sign test p = 0.0018; unit-cost edits base 87 -> output 49 over 371 scored signs | beside, sign-level position McNemar: 371 common scored signs; base wrong 70, output wrong 32; fixed 46, broken 8; exact p = 0.0000
+  top confusions (truth value <- read): i<-T53 x2, c<-<deleted> x1, o<-T60 x1, e<-T89 x1, l<-T37 x1, u<-T85 x1, a<-<deleted> x1, n<-T10 x1
+split eval: err_true(0.75-indel align) 0.144 (54/376) | standard SER 0.144 (54/376)

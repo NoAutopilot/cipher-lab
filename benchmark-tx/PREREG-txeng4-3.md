@@ -177,3 +177,9 @@ AGREED LABELS 391: f174r 41, f174v 61, f174vB 134, f175r 13, f175v 21, f184r 49,
 A4 (no.87 passA/passB LCS agreement 743 of 844 passA tokens): no87_round2 FAIL (f178r_L03 B1) -> dropped -> recheck PASS n=751, 0/-1/+1 428/12/12; 662 agreed tiles on 28 lines.
 
 Deviation noted: a first run (folder maps/, uncommitted) read gap tokens the reconciled reading drops and let the count DP merge a partial-cipher first line into the next; fixed before any classifier arm ran (read = merged tokens; a row takes two passages only when its y-spread shows two baselines). A built-in safety check denied the scratch cleanup rm; nothing was re-issued, the folder was renamed instead.
+
+## Addendum 2 (01:5x UTC 12 Oct, after the eval look)
+A5 join (secure_tokens minus f152r, unsteered check = step-2 top-1): PASS n=588, 0/-1/+1 443/5/6, share0 0.753 vs null p95 0.077
+-> A5 scored beside. Frozen setting hog+zone+topo NCA dim 32 k 5 (38bdc6bd1, before the look). Gate verdict: FAIL -- (i) A2 vs A1
+fixed 11 / broken 10, p 1.000; (ii) A2 0.242 > 0.162; (iii) met (min A3 0.846). A4 beside: all three met (0.144; 46/8; p < 0.0001),
+with its label-volume control un-run (see RESULTS.md). Numbers and the three owner sentences in benchmark-tx/txeng4/3/RESULTS.md.
