@@ -1,0 +1,10 @@
+# MANT-POOLU blind pass A (Sonnet subagent, 12 Oct 2026 18:3x UTC by date -u; crops p0247R_L01-03, p0442R_L01-03, p0483R_L01-04 at 2x, file order); verbatim
+crop	group_no	codes	conf	context_before	context_after	writing_above	notes
+p0247R_L01	1	57.28.35.59	high	le projet de	et l'on se flatte que	-	first number could be 51 or 57
+p0247R_L03	1	252	low	en cas que	put garder	-	possibly a code or a word-like scrawl; may be "z52"; not sure it is a code
+p0247R_L03	2	51.28	high	-	N'y a rien a faire a l'egard de	-	at left start of second line; same pair 51/57.28 as in L01 group 1; trailing dot after 28
+p0442R_L01	1	217	med	irois a souhait	a quoi on (struck-out blot) en avois	-	single number followed by comma; possibly 2I7 or 247
+p0442R_L03	1	35.38.51.66.21.120	med	que	m'andervoit du 187	-	2nd number 38 or 30; 5th number 21 or 24; last 120 or 126
+p0442R_L03	2	187	med	m'andervoit du	; que si	-	single number; may be ordinary numeral, include as possible code; 187 or 137
+p0483R_L01	1	6.21.2.28.6.35.8.10	med	Ca a proposer	, et je sai que la chose a ete	-	3rd number 2 (or 12); 6th 35 or 33; 7th 8 or 5; line-2 text start partially cut at the strip top; leading "3." at line start is a paragraph number, ignored
+p0483R_L04	1	103.34.76	med	le monde	-	-	group at line end, may continue on the next line (not visible); last number 76 or 26; first 103 or 105

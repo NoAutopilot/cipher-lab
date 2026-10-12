@@ -1,0 +1,17 @@
+# MANT-POOLU blind pass A (Sonnet subagent, 12 Oct 2026 18:3x UTC by date -u; crops p0088R_L01..L12 at 2x, file order); verbatim
+crop	group_no	codes	conf	context_before	context_after	writing_above	notes
+p0088R_L01	1	17.1.35.21.44.9.7.10.60	med	une relation des Ti	reçu(?) ce matin de son expedition	-	line 1 end; 5th number 44 or 11; 6th 9 or 4; 7th 7 or 2
+p0088R_L01	2	1/2.51.28.2.119.39	med	retournes a 2000.	-	Stetin	line 3 end; first element is a written fraction 1/2 (maybe part of the amount 2000 1/2, not the code); writing above sits over 51.28
+p0088R_L02	1	32.390	med	-	et il m'offre que si je le fais	-	start of line 2; 32 could be 52
+p0088R_L03	1	391.66.42.35.60.1.10.4.120	med	-	Je ne conçois pas ce pro	31. (small, above 391) and a word like "Mayates" above 66.42	6th number 60 or 00; 42 or 12; small 31. may be a correction or separate code
+p0088R_L05	1	13.	high	que	a tant de confi(ance)	-	lone number
+p0088R_L06	1	13.	high	comme quoi	lui a demandé	-	lone number
+p0088R_L06	2	1.47	low	s'il connoissoit	-	Karjimeri (uncertain)	line 1 end; could be 1.44
+p0088R_L06	3	171.	high	et qu'ensuite	lui a montré le passeport de V.	-	could be 17.1
+p0088R_L06	4	13	high	-	lui a temoigné beaucoup de joie	-	line 3 start, partly cut at top edge
+p0088R_L07	1	13.	high	si non forgé par	meme, au moins	-	lone number
+p0088R_L08	1	13.	high	d'autant plus que	voit(?) enfin avoir	-	lone number
+p0088R_L08	2	31.66.31.35	low	-	-	Kirkevaite? (unclear)	cut off at bottom edge, partly legible; may be same as the group continuing in the next strip
+p0088R_L08	3	11.9.35.55.10.5	low	-	-	-	cut off at bottom edge, partly legible
+p0088R_L09	1	1.44.	med	de	comme quoi	-	line 1 start; "comme quoi" underlined; small "Fl."/"Ft." writing near line start is not a code
+# (L04, L10, L11, L12: no number groups.)

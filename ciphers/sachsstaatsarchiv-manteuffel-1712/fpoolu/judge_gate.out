@@ -1,0 +1,32 @@
+power	at 43 letters: 18/18 = 1.00	TEST
+block_1	letters 1-43	real -1.615	permuted mean -2.008 p95 -1.612 p99 -1.456 max -1.292	permuted>=real 51/1000	VOID	pfenligernmmlemmmflstetstehsandunetuevelepr
+# block_1 shuffled-target (ii): mean -1.858 p95(95th of 100) -1.611 max -1.387; shuffled-target > (i) p95: 6/100 -> VOID (judge cannot decide); shuffled-target >= real 7/100
+pool	letters 43	blocks 1	VOID	pfenligernmmlemmmflstetstehsandunetuevelepr
+# whole leaf (reported, no power behind it if L > 62): real -1.615 permuted mean -2.014 p95 -1.665 p99 -1.555 permuted>=real 29/1000
+# whole pool shuffled-target (reported): mean -1.903 95th -1.688; > (i) p95 4/100; >= real 1/100
+# per frame (reported, not gates): frame, letters, real, permuted mean, p95, permuted>=real
+frame_0088	19	real -1.720	permuted mean -1.998	p95 -1.470	185/1000	pfenligernmmlemmmfl
+frame_0247	6	real -1.781	permuted mean -2.019	p95 -1.126	363/1000	stetst
+frame_0426	0	not scored (< 4 letters)	
+frame_0442	6	real -2.633	permuted mean -2.028	p95 -1.158	867/1000	ehsand
+frame_0483	12	real -1.333	permuted mean -2.038	p95 -1.447	18/1000	unetuevelepr
+frame_0489	0	not scored (< 4 letters)	
+# per run (reported, not gates): run, letters, score, decoded letters
+0088R01	9	-1.040	pfenliger
+0088R03	1	nan	n
+0088R05	1	nan	m
+0088R06	1	nan	m
+0088R08	2	nan	le
+0088R09	1	nan	m
+0088R10	1	nan	m
+0088R11	1	nan	m
+0088R14	2	nan	fl
+0247R01	4	-1.271	stet
+0247R02	0	nan	
+0247R03	2	nan	st
+0442R01	0	nan	
+0442R02	6	-2.633	ehsand
+0442R03	0	nan	
+0483R01	8	-1.599	unetueve
+0483R02	4	-0.445	lepr
+0489R02	0	nan	

@@ -1,0 +1,97 @@
+# pool 0088+0247+0426+0442+0483+0489 gate (b): VOID; known answers: fpoolu/known_answer.tsv (reported only)
+# tokens 94: H 0, C 0, S 0, M 92, I 0, U 2
+tokid	code	key_value	conf	block	grade	why
+0088R01.1	17	p	high	block_1	M	block_1: VOID
+0088R01.2	1	f	high	block_1	M	block_1: VOID
+0088R01.3	35	e	med	block_1	M	block_1: VOID
+0088R01.4	21	n	med	block_1	M	block_1: VOID
+0088R01.5	44	l	med	block_1	M	block_1: VOID
+0088R01.6	9	i	low	block_1	M	low-conf transcription
+0088R01.7	7	g	med	block_1	M	block_1: VOID
+0088R01.8	10	e	med	block_1	M	block_1: VOID
+0088R01.9	60	r|re|ro	med	block_1	M	block_1: VOID
+0088R02.1	51	s|sa	high	gloss	M	under writing above (known answer, reported only; not settled)
+0088R02.2	28	t	high	gloss	M	under writing above (known answer, reported only; not settled)
+0088R02.3	2	e	med	gloss	M	under writing above (known answer, reported only; not settled)
+0088R02.4	119	t|tt	high	gloss	M	under writing above (known answer, reported only; not settled)
+0088R02.5	39	i	med	gloss	M	under writing above (known answer, reported only; not settled)
+0088R03.1	32	n	med	block_1	M	block_1: VOID
+0088R03.2	390	Stettin	high	nonletter	M	name/word code (key value shown, identification I)
+0088R04.1	391		high	gloss	U	not in key.tsv
+0088R04.2	66	a	med	gloss	M	under writing above (known answer, reported only; not settled)
+0088R04.3	42	l	med	gloss	M	under writing above (known answer, reported only; not settled)
+0088R04.4	35	e	med	gloss	M	under writing above (known answer, reported only; not settled)
+0088R04.5	60	r|re|ro	med	gloss	M	under writing above (known answer, reported only; not settled)
+0088R04.6	1	f	med	gloss	M	under writing above (known answer, reported only; not settled)
+0088R04.7	10	e	med	gloss	M	under writing above (known answer, reported only; not settled)
+0088R04.8	4	x	med	gloss	M	under writing above (known answer, reported only; not settled)
+0088R04.9	120	d	med	gloss	M	under writing above (known answer, reported only; not settled)
+0088R05.1	13	m	high	block_1	M	block_1: VOID
+0088R06.1	13	m	high	block_1	M	block_1: VOID
+0088R07.1	1	f	med	gloss	M	under writing above (known answer, reported only; not settled)
+0088R07.2	47	h	low	gloss	M	under writing above (known answer, reported only; not settled)
+0088R08.1	171	le	med	block_1	M	block_1: VOID
+0088R09.1	13	m	high	block_1	M	block_1: VOID
+0088R10.1	13	m	high	block_1	M	block_1: VOID
+0088R11.1	13	m	high	block_1	M	block_1: VOID
+0088R12.1	31	m	med	gloss	M	under writing above (known answer, reported only; not settled)
+0088R12.2	68	v	low	gloss	M	under writing above (known answer, reported only; not settled)
+0088R12.3	21	n	med	gloss	M	under writing above (known answer, reported only; not settled)
+0088R12.4	28	t	med	gloss	M	under writing above (known answer, reported only; not settled)
+0088R13.1	11	k	med	gloss	M	under writing above (known answer, reported only; not settled)
+0088R13.2	9	i	low	gloss	M	under writing above (known answer, reported only; not settled)
+0088R13.3	35	e	low	gloss	M	under writing above (known answer, reported only; not settled)
+0088R13.4	51	s|sa	low	gloss	M	under writing above (known answer, reported only; not settled)
+0088R13.5	10	e	med	gloss	M	under writing above (known answer, reported only; not settled)
+0088R13.6	5	v	med	gloss	M	under writing above (known answer, reported only; not settled)
+0088R14.1	1	f	med	block_1	M	block_1: VOID
+0088R14.2	44	l	med	block_1	M	block_1: VOID
+0247R01.1	57	s	med	block_1	M	block_1: VOID
+0247R01.2	28	t	high	block_1	M	block_1: VOID
+0247R01.3	35	e	med	block_1	M	block_1: VOID
+0247R01.4	59	t	low	block_1	M	low-conf transcription
+0247R02.1	252	Le roi de Prusse	med	nonletter	M	name/word code (key value shown, identification I)
+0247R03.1	51	s|sa	high	block_1	M	block_1: VOID
+0247R03.2	28	t	high	block_1	M	block_1: VOID
+0426L01.1	56	w	med	gloss	M	under writing above (known answer, reported only; not settled)
+0426L01.2	34	p	low	gloss	M	under writing above (known answer, reported only; not settled)
+0426L01.3	28	t	med	gloss	M	under writing above (known answer, reported only; not settled)
+0426L01.4	47	h	med	gloss	M	under writing above (known answer, reported only; not settled)
+0426L01.5	64	c	low	gloss	M	under writing above (known answer, reported only; not settled)
+0426L01.6	33	o	low	gloss	M	under writing above (known answer, reported only; not settled)
+0426L01.7	60	r|re|ro	med	gloss	M	under writing above (known answer, reported only; not settled)
+0426L01.8	59	t	low	gloss	M	under writing above (known answer, reported only; not settled)
+0426L01.9	38	h	med	gloss	M	under writing above (known answer, reported only; not settled)
+0442R01.1	217	la reine d'Angleterre	med	nonletter	M	name/word code (key value shown, identification I)
+0442R02.1	35	e	med	block_1	M	block_1: VOID
+0442R02.2	38	h	low	block_1	M	low-conf transcription
+0442R02.3	51	s|sa	med	block_1	M	block_1: VOID
+0442R02.4	66	a	med	block_1	M	block_1: VOID
+0442R02.5	21	n	med	block_1	M	block_1: VOID
+0442R02.6	120	d	med	block_1	M	block_1: VOID
+0442R03.1	187	Roi de Suède	med	nonletter	M	name/word code (key value shown, identification I)
+0483R01.1	6	u	med	block_1	M	block_1: VOID
+0483R01.2	21	n	med	block_1	M	block_1: VOID
+0483R01.3	2	e	med	block_1	M	block_1: VOID
+0483R01.4	28	t	med	block_1	M	block_1: VOID
+0483R01.5	6	u	med	block_1	M	block_1: VOID
+0483R01.6	35	e	med	block_1	M	block_1: VOID
+0483R01.7	5	v	low	block_1	M	low-conf transcription
+0483R01.8	10	e	med	block_1	M	block_1: VOID
+0483R02.1	103	le|la	med	block_1	M	block_1: VOID
+0483R02.2	34	p	med	block_1	M	block_1: VOID
+0483R02.3	26	r	med	block_1	M	block_1: VOID
+0489R01.1	44	l	med	gloss	M	under writing above (known answer, reported only; not settled)
+0489R01.2	66	a	med	gloss	M	under writing above (known answer, reported only; not settled)
+0489R01.3	63		med	gloss	U	not in key.tsv
+0489R01.4	50	a	med	gloss	M	under writing above (known answer, reported only; not settled)
+0489R01.5	39	i	low	gloss	M	under writing above (known answer, reported only; not settled)
+0489R01.6	60	r|re|ro	med	gloss	M	under writing above (known answer, reported only; not settled)
+0489R01.7	35	e	med	gloss	M	under writing above (known answer, reported only; not settled)
+0489R01.8	51	s|sa	med	gloss	M	under writing above (known answer, reported only; not settled)
+0489R01.9	15	c	low	gloss	M	under writing above (known answer, reported only; not settled)
+0489R01.10	26	r	med	gloss	M	under writing above (known answer, reported only; not settled)
+0489R01.11	10	e	med	gloss	M	under writing above (known answer, reported only; not settled)
+0489R01.12	28	t	med	gloss	M	under writing above (known answer, reported only; not settled)
+0489R01.13	35	e	med	gloss	M	under writing above (known answer, reported only; not settled)
+0489R02.1	150	le Roi de Pologne	low	nonletter	M	name/word code (key value shown, identification I)

@@ -1,0 +1,14 @@
+# MANT-POOLU blind pass B (Sonnet subagent, 12 Oct 2026 18:3x UTC by date -u; crops p0483R_L04..L01, p0442R_L03..L01, p0247R_L03..L01 at 2x, reverse order); verbatim
+crop	group_no	codes	conf	context_before	context_after	writing_above	notes
+p0483R_L04	1	103.34.26	med	le monde	-	-	end of line 2 at right edge; digits 34 and 26 slightly doubtful; may continue on next strip
+p0483R_L03	-	-	-	-	-	-	no codes in this strip
+p0483R_L02	-	-	-	-	-	-	no codes in this strip
+p0483R_L01	1	6.21.2.28.6.35.5.10	med	(le) propose[r]	et je sai que la chose a eté	-	second line; 3rd number could be 2 or 7; 5th 6 or 8; 7th 5 or 3; the leading "3." at line start is a paragraph number, ignored; "de porter l.A." earlier on line 1 is not a code
+p0442R_L03	1	35.38.51.66.21.120	med	que	m'andersoit du 187.	-	digits 38 vs 30 doubtful; 5th 21 or 24; last 120 or 126; "187" after may be a separate code (include as doubtful) or a number in the French
+p0442R_L03	2	187	low	m'andersoit du	; que si	-	may be an ordinary numeral rather than a code; dot after it looks like a comma/semicolon
+p0442R_L02	-	-	-	-	-	-	no codes in this strip
+p0442R_L01	1	217	med	souhait	, a gros on	-	second line; digits 2-1-7 slightly cramped; following word is heavily overstruck/inked out ("l'en avois")
+p0247R_L03	1	252	med	en cas que	put garder	-	first line; could be 232
+p0247R_L03	2	51.28	high	-	N'y a rien a faire a l'egard de	-	sits on its own just above the start of line 2, as if standing for a word or heading; may be a marginal/interlinear code; "Ne" follows at line start
+p0247R_L02	-	-	-	-	-	-	no codes in this strip
+p0247R_L01	1	57.28.38.59	med	le projet de	et l'on se flatte que	-	first digit group 57 or 51; 38 or 35; last 59 or 54

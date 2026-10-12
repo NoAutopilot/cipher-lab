@@ -1,0 +1,96 @@
+# MANT-POOLU reconciled code tokens (fpoolu/PREREG-MANT-POOLU.md), Loc. 694/08 frames 0088 0247 0426 0442 0483 0489, frame then reading order. Two blind Sonnet passes (passA_*.tsv, passB_*.tsv, verbatim) + worker reconciliation of DIGITS from native zooms (one unit), before any decode or score. Disclosure: key.tsv seen; writing above never settled (gloss_A.tsv / gloss_B.tsv keep each pass's text).
+line	pos	sign	conf	note
+0088R01	1	17	high	A 17.1 / B 171 -> 17.1 (dot visible at native zoom); 4th '21' (eye 20|21); 6th y-tailed glyph 9|4 low; no writing above in either pass
+0088R01	2	1	high	
+0088R01	3	35	med	
+0088R01	4	21	med	
+0088R01	5	44	med	
+0088R01	6	9	low	
+0088R01	7	7	med	
+0088R01	8	10	med	
+0088R01	9	60	med	
+0088R02	1	51	high	A/B agree; preceded by '2000 1/2' (amount, not counted); writing above (A Stetin, B Stettin?)
+0088R02	2	28	high	
+0088R02	3	2	med	
+0088R02	4	119	high	
+0088R02	5	39	med	
+0088R03	1	32	med	A/B agree (A: 32|52)
+0088R03	2	390	high	
+0088R04	1	391	high	A/B agree; small '31.' above the start (both) and a word above 66-35 (A Mayates, B Mayattes?)
+0088R04	2	66	med	
+0088R04	3	42	med	
+0088R04	4	35	med	
+0088R04	5	60	med	
+0088R04	6	1	med	
+0088R04	7	10	med	
+0088R04	8	4	med	
+0088R04	9	120	med	
+0088R05	1	13	high	'lorsqu'il m'assure que 13 a tant de confi[ance]'
+0088R06	1	13	high	'comme quoi 13 luy a demande'
+0088R07	1	1	med	A/B 1.47 (A: or 1.44); writing above (A Karjimeri, B Karjmeri)
+0088R07	2	47	low	
+0088R08	1	171	med	A/B 171 (both: or 17.1); kept as written
+0088R09	1	13	high	'Pologne? 13 luy a temoigne'
+0088R10	1	13	high	'si non forge par 13 meme'
+0088R11	1	13	high	'd'autant plus que 13 voit'
+0088R12	1	31	med	interlinear insertion 'ou de 31.66|68.21.28 ou de ...'; extra strip A 68 / B 66, 0088 calls A ?/B 66; eye 68|66 low; writing above per A only
+0088R12	2	68	low	
+0088R12	3	21	med	
+0088R12	4	28	med	
+0088R13	1	11	med	interlinear; A 11.9.31.51.10.5 / B 11.9.35.51.10.5 (0088 calls: A 11.9.35.55.10.5, B 11.9.35.51.10.5); writing above (A Kerbarte, B Kezt?)
+0088R13	2	9	low	
+0088R13	3	35	low	
+0088R13	4	51	low	
+0088R13	5	10	med	
+0088R13	6	5	med	
+0088R14	1	1	med	'de 1.44 comme quoi' (A/B)
+0088R14	2	44	med	
+0247R01	1	57	med	A 57.28.35.59 / B 57.28.38.59 -> 35 med (eye); last y-glyph 59|54 low; no writing above
+0247R01	2	28	high	
+0247R01	3	35	med	
+0247R01	4	59	low	
+0247R02	1	252	med	'en cas que 252 put garder' (A low, B med; census 272 -> eye 252)
+0247R03	1	51	high	'51.28.' alone above the line start (A/B 51; eye 51, unlike R01's 57)
+0247R03	2	28	high	
+0426L01	1	56	med	A 56.39 / B 56.34 -> 34 low (y-glyph); 64, 59 y-glyphs low; 33|35 low; writing above (A Withmore, B Withwork?)
+0426L01	2	34	low	
+0426L01	3	28	med	
+0426L01	4	47	med	
+0426L01	5	64	low	
+0426L01	6	33	low	
+0426L01	7	60	med	
+0426L01	8	59	low	
+0426L01	9	38	med	
+0442R01	1	217	med	'irois a souhait 217, a quoi on'
+0442R02	1	35	med	A/B 38 (census 30; eye 3?) low; no writing above
+0442R02	2	38	low	
+0442R02	3	51	med	
+0442R02	4	66	med	
+0442R02	5	21	med	
+0442R02	6	120	med	
+0442R03	1	187	med	'manderoit du 187'
+0483R01	1	6	med	A 8 / B 5 at pos7 -> 5 low; no writing above the run (both)
+0483R01	2	21	med	
+0483R01	3	2	med	
+0483R01	4	28	med	
+0483R01	5	6	med	
+0483R01	6	35	med	
+0483R01	7	5	low	
+0483R01	8	10	med	
+0483R02	1	103	med	A 103.34.76 / B 103.34.26 -> 26 (eye); line end
+0483R02	2	34	med	
+0483R02	3	26	med	
+0489R01	1	44	med	A 15 / B 18 at pos9 -> 15 low (eye); writing above (A/B l'affaire perdue?)
+0489R01	2	66	med	
+0489R01	3	63	med	
+0489R01	4	50	med	
+0489R01	5	39	low	
+0489R01	6	60	med	
+0489R01	7	35	med	
+0489R01	8	51	med	
+0489R01	9	15	low	
+0489R01	10	26	med	
+0489R01	11	10	med	
+0489R01	12	28	med	
+0489R01	13	35	med	
+0489R02	1	150	low	A 15? / B 156; census 150; final glyph blotted, low

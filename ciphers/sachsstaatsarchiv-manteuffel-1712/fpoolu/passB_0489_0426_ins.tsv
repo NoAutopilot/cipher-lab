@@ -1,0 +1,12 @@
+# MANT-POOLU blind pass B (Sonnet subagent, 12 Oct 2026 18:3x UTC by date -u; crops p0088Rins_L01, p0426L_L03..L01, p0489R_L05..L01 at 2x, reverse order); verbatim
+crop	group_no	codes	conf	context_before	context_after	writing_above	notes
+p0088Rins_L01	1	31.66.21.28	med	ou de	ou de	-	"un certificat que s'il pouvoit..." line; digit 66 or 68; a small word above the second group ("Kezt"/"Rezt?") is not above this group
+p0088Rins_L01	2	11.9.35.51.10.5	low	ou de	-	Kezt? (small, over/near the start of group 2, illegible; possibly "Reswet")	digits 9 or y; 35 or 33; 4th 51 or 31; 5th 10 or 16; last 5 or 3
+p0426L_L02	1	56.34.28.47.64.33.60.59.38	med	"voici qui c'est, c'est"	", qui a dit a quelqu'un"	Withwork? (small, above the first digits; "Withwort"/"Withwoit")	2nd 34 or 39; 5th 64 or 69; 6th 33 or 35; 8th 59 or 54; line start is below the text of the line above
+p0489R_L05	1	156	low	"mais"	", qui n'avoit pas vu"	-	Possibly a single code "156" or "15b"; unsure whether it is a code or ordinary numeral; the dot after it is a comma
+p0489R_L04	1	?	low	"a V. E." / "ce que j'en ai mandé"	-	-	No clear code; "V. E." is not a code. Listed only as a doubtful note, no digits to give
+p0489R_L02	1	44.66.63.50.39.60.35.51.18.26.10.28.35	med	"voulois plus"	"Je lui"	l'affaire perdue? (small, over groups 7-9 approx.; reads "l'affaire perdue" or "l'affaire presente")	Group is long; 3rd 63 or 65; 6th 60 or 69; 7th 35 or 33; 9th 18 or 15; 11th 10 or 16; the digits 26.10.28 are run together; line is bottom line of strip
+p0489R_L03	-	-	-	-	-	-	No number groups. Writing above "Retranquing"/"Retrouving?" seen over "mais il soutint que" in L05 line 2 with no code beneath
+p0489R_L01	-	-	-	-	-	-	No number groups
+p0426L_L03	-	-	-	-	-	-	No number groups ("Reine d'a." is a word abbreviation)
+p0426L_L01	-	-	-	-	-	-	No number groups
