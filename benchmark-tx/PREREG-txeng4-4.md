@@ -140,4 +140,57 @@ about 9-10 + units). Units and estimates (brief): map with shift checks 25 min, 
   alone and said so.
 
 ## Addendum (filled before step 3 runs; join rows pasted verbatim)
-(to be appended in the same file, in a later commit, before any classification is scored)
+(appended below, in the commit that lands the maps, before any classification is scored)
+
+## Addendum (01:3x UTC 12 Oct 2026 by date -u, before step 3): join rows and verdicts, pasted from the sidecars
+`tools/tx_selfcheck.py map` (round 1 lam 0 -> LOLO kNN on the round-1 tokens -> round 2 lam 1.5 loo -> join_check on the
+leave-one-out positions, check labels = the steering top-1, 20 permutations, seed 20261012). Kept = 1:1 at the same position in
+both rounds on a line that passed B1. Columns: placed, matches at 0/-1/+1/+-2/none, line verdict, kept of tokens (boxes).
+
+**birago1572-no87 (pass A)**: leave-one-out n 773: {'0': 639, 'none': 117, '+1': 5, '-1': 6, '+-2': 6}; share0 0.827 (null p95 0.049), share+-1 0.014 (bound 0.093); B1 True B2 True B3 True; in-sample {'0': 648, 'none': 117, '+1': 4, '-1': 2, '+-2': 6}; **VERDICT PASS**; dropped lines: none; kept 616 boxes.
+
+```
+f178r_L01: placed 25 11/0/0/0/14 PASS | kept 17 of 31 (33 boxes)
+f178r_L02: placed 31 18/1/2/0/10 PASS | kept 30 of 31 (31 boxes)
+f178r_L03: placed 19 15/0/0/0/4 PASS | kept 0 of 26 (46 boxes)
+f178v_L01: placed 26 21/0/0/1/4 PASS | kept 26 of 27 (28 boxes)
+f178v_L02: placed 26 21/0/0/1/4 PASS | kept 26 of 27 (28 boxes)
+f178v_L03: placed 25 21/0/0/0/4 PASS | kept 25 of 26 (27 boxes)
+f178v_L04: placed 27 24/0/1/0/2 PASS | kept 27 of 28 (29 boxes)
+f178v_L05: placed 29 23/0/0/0/6 PASS | kept 29 of 31 (33 boxes)
+f178v_L06: placed 27 24/0/0/1/2 PASS | kept 21 of 30 (30 boxes)
+f178v_L07: placed 27 27/0/0/0/0 PASS | kept 25 of 30 (32 boxes)
+f178v_L08: placed 28 22/0/0/0/6 PASS | kept 28 of 30 (32 boxes)
+f178v_L09: placed 26 21/1/0/0/4 PASS | kept 12 of 29 (29 boxes)
+f178v_L10: placed 29 21/1/1/0/6 PASS | kept 28 of 32 (32 boxes)
+f178v_L11: placed 27 23/0/0/0/4 PASS | kept 8 of 32 (31 boxes)
+f178v_L12: placed 31 29/0/0/0/2 PASS | kept 31 of 32 (33 boxes)
+f178v_L13: placed 27 24/0/0/0/3 PASS | kept 2 of 29 (28 boxes)
+f178v_L14: placed 27 24/0/0/1/2 PASS | kept 27 of 27 (27 boxes)
+f178v_L15: placed 28 26/0/0/0/2 PASS | kept 28 of 30 (29 boxes)
+f178v_L16: placed 29 26/0/0/0/3 PASS | kept 29 of 31 (30 boxes)
+f178v_L17: placed 27 24/0/0/0/3 PASS | kept 13 of 29 (28 boxes)
+f178v_L18: placed 27 24/0/0/0/3 PASS | kept 27 of 27 (27 boxes)
+f178v_L19: placed 28 24/0/0/0/4 PASS | kept 28 of 29 (30 boxes)
+f178v_L20: placed 26 22/0/0/0/4 PASS | kept 26 of 27 (28 boxes)
+f178v_L21: placed 23 20/0/0/0/3 PASS | kept 6 of 27 (27 boxes)
+f178v_L22: placed 28 22/0/0/1/5 PASS | kept 28 of 28 (28 boxes)
+f178v_L23: placed 29 23/1/0/1/4 PASS | kept 28 of 29 (29 boxes)
+f179r_L01: placed 25 20/1/0/0/4 PASS | kept 22 of 31 (37 boxes)
+f179r_L02: placed 26 24/0/0/0/2 PASS | kept 12 of 31 (33 boxes)
+f179r_L03: placed 20 15/1/1/0/3 PASS | kept 7 of 27 (31 boxes)
+```
+
+**birago1572-f152r (pass A)**: leave-one-out n 84: {'0': 41, 'none': 36, '+-2': 4, '-1': 3}; share0 0.488 (null p95 0.072), share+-1 0.036 (bound 0.180); B1 True B2 True B3 True; in-sample {'0': 42, 'none': 37, '+-2': 4, '-1': 2}; **VERDICT PASS**; dropped lines: none; kept 74 boxes.
+
+```
+f152r_L01: placed 7 5/0/0/0/2 PASS | kept 7 of 7 (7 boxes)
+f152r_L02: placed 28 11/1/0/3/13 PASS | kept 23 of 30 (32 boxes)
+f152r_L03: placed 31 14/1/0/1/15 PASS | kept 31 of 33 (35 boxes)
+f152r_L04: placed 18 11/1/0/0/6 PASS | kept 13 of 25 (29 boxes)
+```
+
+Both items PASS on the leave-one-out row; no line failed B1; no re-check needed; both items are scored. Coverage note (declared
+before any score): the "1:1 in both rounds" rule drops most boxes on the lines the width-only seed shifts (no.87 f178v L09, L11,
+L13, L17, L21, f179r L02, L03; f178r L03 entirely), so the classifier reaches 616 of 845 no.87 tokens and 74 of 95 f152r tokens;
+a pass-A error on an unreached token cannot be fixed and is counted as such in the paired score (it stays wrong in A' as in A).
