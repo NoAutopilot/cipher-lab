@@ -1,0 +1,240 @@
+{
+ "err": 0.284,
+ "file": "tx86/ciphertext_f244r.tsv",
+ "copy": "kp86/colbert_p49_50.txt",
+ "base": {
+  "tokens": 410,
+  "dropped": 17,
+  "score": 0.714,
+  "keyshuffle_p99": 0.3499,
+  "order_p99": 0.4324,
+  "above_both": true
+ },
+ "positive_control": {
+  "seeds": [
+   {
+    "seed": 0,
+    "N": 454,
+    "score": 0.6027,
+    "keyshuffle_p99": 0.3105,
+    "order_p99": 0.3689,
+    "pass": true
+   },
+   {
+    "seed": 1,
+    "N": 454,
+    "score": 0.6219,
+    "keyshuffle_p99": 0.3101,
+    "order_p99": 0.3763,
+    "pass": true
+   },
+   {
+    "seed": 2,
+    "N": 454,
+    "score": 0.6369,
+    "keyshuffle_p99": 0.3101,
+    "order_p99": 0.3869,
+    "pass": true
+   },
+   {
+    "seed": 3,
+    "N": 454,
+    "score": 0.5912,
+    "keyshuffle_p99": 0.3086,
+    "order_p99": 0.3767,
+    "pass": true
+   },
+   {
+    "seed": 4,
+    "N": 454,
+    "score": 0.5572,
+    "keyshuffle_p99": 0.303,
+    "order_p99": 0.3656,
+    "pass": true
+   }
+  ],
+  "passed": 5,
+  "pass": true
+ },
+ "G-M5": {
+  "deleted": [
+   "L05 p30 T57"
+  ],
+  "kept": [
+   "L05 p29"
+  ],
+  "new": {
+   "tokens": 409,
+   "dropped": 17,
+   "score": 0.7172,
+   "keyshuffle_p99": 0.3504,
+   "order_p99": 0.4321,
+   "above_both": true
+  },
+  "G1": true,
+  "G2": true,
+  "G3": {
+   "n_del_T": 1,
+   "deleted_identical_base": 0,
+   "kept_identical_base": 0,
+   "kept_identical_merged": 0,
+   "pass": true
+  },
+  "G4": {
+   "n": 200,
+   "mean": 0.7141,
+   "p95": 0.7156,
+   "max": 0.7221,
+   "share_ge_ours": 0.005,
+   "pass": true
+  },
+  "PASS": true,
+  "commit": true
+ },
+ "G-OV6": {
+  "deleted": [
+   "L06 p27 T14",
+   "L06 p28 T30",
+   "L06 p29 T45",
+   "L06 p30 T18"
+  ],
+  "kept": [
+   "L06 p23",
+   "L06 p24",
+   "L06 p26"
+  ],
+  "new": {
+   "tokens": 406,
+   "dropped": 17,
+   "score": 0.7182,
+   "keyshuffle_p99": 0.3504,
+   "order_p99": 0.4364,
+   "above_both": true
+  },
+  "G1": true,
+  "G2": true,
+  "G3": {
+   "n_del_T": 4,
+   "deleted_identical_base": 1,
+   "kept_identical_base": 0,
+   "kept_identical_merged": 0,
+   "pass": true
+  },
+  "G4": {
+   "n": 200,
+   "mean": 0.7144,
+   "p95": 0.7202,
+   "max": 0.7241,
+   "share_ge_ours": 0.075,
+   "pass": false
+  },
+  "PASS": false,
+  "commit": false
+ },
+ "G-OV8": {
+  "deleted": [
+   "L08 p25 T26",
+   "L08 p26 T37"
+  ],
+  "kept": [
+   "L08 p23",
+   "L08 p24"
+  ],
+  "new": {
+   "tokens": 408,
+   "dropped": 17,
+   "score": 0.7172,
+   "keyshuffle_p99": 0.351,
+   "order_p99": 0.4321,
+   "above_both": true
+  },
+  "G1": true,
+  "G2": true,
+  "G3": {
+   "n_del_T": 2,
+   "deleted_identical_base": 1,
+   "kept_identical_base": 0,
+   "kept_identical_merged": 1,
+   "pass": false
+  },
+  "G4": {
+   "n": 200,
+   "mean": 0.7143,
+   "p95": 0.7172,
+   "max": 0.7215,
+   "share_ge_ours": 0.03,
+   "pass": true
+  },
+  "PASS": false,
+  "commit": false
+ },
+ "G-X": {
+  "deleted": [
+   "L02 p11 ?[tcross]",
+   "L04 p44 ?[tcross]",
+   "L06 p25 ?[tcross]"
+  ],
+  "kept": [
+   "L02 p12",
+   "L04 p45",
+   "L06 p24"
+  ],
+  "new": {
+   "tokens": 410,
+   "dropped": 14,
+   "score": 0.714,
+   "keyshuffle_p99": 0.3499,
+   "order_p99": 0.4324,
+   "above_both": true
+  },
+  "G1": false,
+  "G2": true,
+  "G3": {
+   "n_del_T": 0,
+   "deleted_identical_base": 0,
+   "kept_identical_base": 2,
+   "kept_identical_merged": 2,
+   "pass": false
+  },
+  "PASS": null,
+  "commit": false
+ },
+ "G-M5alt": {
+  "deleted": [
+   "L05 p29 T35"
+  ],
+  "kept": [
+   "L05 p30"
+  ],
+  "new": {
+   "tokens": 409,
+   "dropped": 17,
+   "score": 0.7156,
+   "keyshuffle_p99": 0.3493,
+   "order_p99": 0.4334,
+   "above_both": true
+  },
+  "G1": true,
+  "G2": true,
+  "G3": {
+   "n_del_T": 1,
+   "deleted_identical_base": 0,
+   "kept_identical_base": 0,
+   "kept_identical_merged": 0,
+   "pass": true
+  },
+  "PASS": null,
+  "commit": false
+ },
+ "committable_groups": [
+  "G-M5"
+ ],
+ "combined": {
+  "tokens": 409,
+  "dropped": 17,
+  "score": 0.7172,
+  "keyshuffle_p99": 0.3504,
+  "order_p99": 0.4321,
+  "above_both": true
+ }
+}

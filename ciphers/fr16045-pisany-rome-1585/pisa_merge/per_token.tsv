@@ -1,0 +1,19 @@
+group	line	pos	role	base_label	base_copy	base_identical	merged_label	merged_copy	merged_identical
+G-M5	L05	30	deleted	T57	--	False			
+G-M5	L05	29	kept	T35	c	False	T35	c	False
+G-OV6	L06	27	deleted	T14	p	True			
+G-OV6	L06	28	deleted	T30	r	False			
+G-OV6	L06	29	deleted	T45	e	False			
+G-OV6	L06	30	deleted	T18	-	False			
+G-OV6	L06	23	kept	T30	-	False	T30	p	False
+G-OV6	L06	24	kept	T19	-	False	T19	r	False
+G-OV6	L06	26	kept	T18	-	False	T18	e	False
+G-OV8	L08	25	deleted	T26	u	False			
+G-OV8	L08	26	deleted	T37	t	True			
+G-OV8	L08	23	kept	T26	z	False	T26	u	False
+G-OV8	L08	24	kept	T37	d	False	T37	t	True
+G-X	L02	12	kept	T19	u	True	T19	u	True
+G-X	L04	45	kept	T19	u	True	T19	u	True
+G-X	L06	24	kept	T19	-	False	T19	-	False
+G-M5alt	L05	29	deleted	T35	c	False			
+G-M5alt	L05	30	kept	T57	--	False	T57	c-	False

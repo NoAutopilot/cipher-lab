@@ -14,6 +14,8 @@ for g in res["committable_groups"]:
     lines = R.relabel(lines, cands[(old, new)], old, new); done.append(f'{g} x{len(cands[(old, new)])}')
 txt = ''.join('\n' if x is None else f'{x[0]}\t{x[1]}\n' for x in lines)
 dst = os.path.join(T, 'tx86/ciphertext_f244r.tsv')
+if os.path.exists(os.path.join(T, 'tx86/ciphertext_f244r_preMERGE.tsv')):   # PISA-MERGE: pisa_merge/apply_merge.py derives ciphertext_f244r.tsv from this
+    dst = os.path.join(T, 'tx86/ciphertext_f244r_preMERGE.tsv')
 if '--check' in sys.argv:
-    ok = open(dst).read() == txt; print('tx86/ciphertext_f244r.tsv', 'up to date' if ok else 'STALE'); sys.exit(0 if ok else 1)
-open(dst, 'w').write(txt); print('wrote tx86/ciphertext_f244r.tsv:', ', '.join(done) or 'no group')
+    ok = open(dst).read() == txt; print(os.path.relpath(dst, T), 'up to date' if ok else 'STALE'); sys.exit(0 if ok else 1)
+open(dst, 'w').write(txt); print('wrote', os.path.relpath(dst, T) + ':', ', '.join(done) or 'no group')
