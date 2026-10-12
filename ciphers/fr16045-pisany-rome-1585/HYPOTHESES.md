@@ -172,3 +172,11 @@ No key86 change (running-text gloss, no sign-level value; T40 not covered).
 
 ## PISA-T475 third blind reader on the 3 UNSETTLED f.275r T45/T47/T57 tokens (11 Oct 2026)
 - Control: UNA-PISA known-answer tiles, GK 5/5. Target: L10 p12 (T57), L11 p19 (T47), L15 p27 (T45): all low again, best cells T57, T42, T19 as PISA-275R; no settle, no relabel, no re-score (pisa_t475/PREREG-PISA-T475.md, result.tsv). f.244r tokens not compared (not located). Status: untested at this resolution, not refuted.
+
+## PISA-244 per-token crop compare on f.244r (12 Oct 2026)
+- Control: UNA-PISA known-answer tiles, GK 5/5 (one blind Opus call, 24 located targets + 5 controls; PREREG-PISA-244.md pushed b708edca3 first).
+- Target (pisa_244/result.tsv): T45 10 of 10 located SETTLED on T19 (u, the crossed looped p), 0 on T45; T47 3 of 3 on T27 (f), 0 on T47;
+  T57 5 SETTLED T32 (n), 3 T35 (r), 1 T42 (f), 1 UNSETTLED, 0 on T57. Key-cell rule met on this page for T45->T19, T47->T27, T57->T32, T57->T35
+  (candidates for a separate PREREG; across pages T45 and T57 have settled on their own cells, f.301v/f.275r). Read as transcription label
+  slips in tx86 f.244r (the crossed looped p consistently labelled T45), not a table value. Nothing applied; key86/tx86/readings unchanged.
+  Status: 22 relabel candidates, untested by re-score (next: UNA2-style G1-G3 re-score of f.244r against its known-answer copy).

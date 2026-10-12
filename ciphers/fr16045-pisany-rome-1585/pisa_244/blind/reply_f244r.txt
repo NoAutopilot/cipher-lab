@@ -1,0 +1,29 @@
+Q01	best=L	second=A	confidence=medium	vertical stroke with a small loop at top-right and a long crossbar low down (crossed looped-p sign)
+Q02	best=V	second=Q	confidence=high	open "u" shape
+Q03	best=B	second=J	confidence=high	looped "k" shape
+Q04	best=F	second=R	confidence=high	"ϖ" (omega with a bar on top)
+Q05	best=V	second=Q	confidence=high	"u" shape with a small tick at its upper right
+Q06	best=F	second=Q	confidence=low	omega-like shape with a rising stroke at right, possibly a bar; centre falls between a "v" at left and this sign
+Q07	best=C	second=K	confidence=medium	"y" with a looped descender (faint, stained image)
+Q08	best=F	second=R	confidence=high	"ϖ" (omega with a bar on top)
+Q09	best=D	second=L	confidence=medium	crossed "t"/"ƀ" form with a bowl at the bottom, "o" to the right
+Q10	best=L	second=A	confidence=high	crossed looped-p sign (loop at top, crossbar low on the stem)
+Q11	best=H	second=M	confidence=medium	"n"/"ŋ" with a descender curling left (table cell H is circled)
+Q12	best=P	second=H	confidence=high	"m" with a long right descender (table cell P is circled)
+Q13	best=O	second=U	confidence=low	long diagonal crossing a "7"-like stroke (x form), loop at the right edge; the centre is partly cut
+Q14	best=L	second=A	confidence=high	crossed looped-p sign
+Q15	best=B	second=J	confidence=high	looped "k" shape
+Q16	best=L	second=A	confidence=high	crossed looped-p sign
+Q17	best=F	second=R	confidence=high	"ϖ" with a long top bar
+Q18	best=O	second=U	confidence=high	heavy diagonal crossed by a stroke, with a loop at lower right ("x" with a loop)
+Q19	best=B	second=J	confidence=high	looped "k" shape; crossed sign at the right edge
+Q20	best=V	second=Q	confidence=high	"u" shape
+Q21	best=L	second=A	confidence=high	crossed looped-p sign
+Q22	best=L	second=A	confidence=high	crossed looped-p sign; "k" at the left edge
+Q23	best=L	second=A	confidence=high	crossed looped-p sign; "3" to the left
+Q24	best=L	second=A	confidence=high	crossed looped-p sign
+Q25	best=L	second=A	confidence=high	crossed looped-p sign; "a" to the left
+Q26	best=F	second=R	confidence=high	"ϖ" (omega with a bar)
+Q27	best=F	second=R	confidence=high	"ϖ" with a long bar
+Q28	best=O	second=U	confidence=medium	"x" form, long diagonal crossed, curled tail at lower right
+Q29	best=L	second=A	confidence=high	crossed looped-p sign

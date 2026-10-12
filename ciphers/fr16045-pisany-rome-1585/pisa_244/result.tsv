@@ -1,0 +1,36 @@
+qid	id	role	answer_or_label	best_cell	second_cell	conf	verdict	note
+Q01	f244r_L08_p2	test	T45	T19	T45	medium	SETTLED-T19	label-slip candidate (o -> u)
+Q02	f244r_L05_p30	test	T57	T35	T57	high	SETTLED-T35	label-slip candidate (la -> r)
+Q03	f244r_L05_p46	test	T47	T27	T47	high	SETTLED-T27	label-slip candidate (m -> f)
+Q04	f244r_L03_p18	test	T57	T32	T51	high	SETTLED-T32	label-slip candidate (la -> n)
+Q05	f244r_L05_p21	test	T57	T35	T57	high	SETTLED-T35	label-slip candidate (la -> r)
+Q06	f244r_L07_p9	test	T57	T32	T57	low	UNSETTLED	
+Q07	K-T46	control	T46	T46	T13	medium	HIT	
+Q08	f244r_L08_p21	test	T57	T32	T51	high	SETTLED-T32	label-slip candidate (la -> n)
+Q09	f244r_L02_p35	test	T57	T42	T19	medium	SETTLED-T42	label-slip candidate (la -> f)
+Q10	f244r_L07_p4	test	T45	T19	T45	high	SETTLED-T19	label-slip candidate (o -> u)
+Q11	K-T17	control	T17	T17	T38	medium	HIT	
+Q12	K-T16	control	T16	T16	T17	high	HIT	
+Q13	f244r_L01_p41	test	T47	T36	T31	low	UNSETTLED	
+Q14	f244r_L07_p26	test	T45	T19	T45	high	SETTLED-T19	label-slip candidate (o -> u)
+Q15	f244r_L05_p1	test	T47	T27	T47	high	SETTLED-T27	label-slip candidate (m -> f)
+Q16	f244r_L06_p24	test	T45	T19	T45	high	SETTLED-T19	label-slip candidate (o -> u)
+Q17	f244r_L08_p36	test	T57	T32	T51	high	SETTLED-T32	label-slip candidate (la -> n)
+Q18	K-T36a	control	T36	T36	T31	high	HIT	
+Q19	f244r_L04_p22	test	T47	T27	T47	high	SETTLED-T27	label-slip candidate (m -> f)
+Q20	f244r_L06_p41	test	T57	T35	T57	high	SETTLED-T35	label-slip candidate (la -> r)
+Q21	f244r_L08_p30	test	T45	T19	T45	high	SETTLED-T19	label-slip candidate (o -> u)
+Q22	f244r_L04_p23	test	T45	T19	T45	high	SETTLED-T19	label-slip candidate (o -> u)
+Q23	f244r_L01_p37	test	T45	T19	T45	high	SETTLED-T19	label-slip candidate (o -> u)
+Q24	f244r_L02_p12	test	T45	T19	T45	high	SETTLED-T19	label-slip candidate (o -> u)
+Q25	f244r_L05_p37	test	T45	T19	T45	high	SETTLED-T19	label-slip candidate (o -> u)
+Q26	f244r_L05_p12	test	T57	T32	T51	high	SETTLED-T32	label-slip candidate (la -> n)
+Q27	f244r_L02_p40	test	T57	T32	T51	high	SETTLED-T32	label-slip candidate (la -> n)
+Q28	K-T36b	control	T36	T36	T31	medium	HIT	
+Q29	f244r_L04_p45	test	T45	T19	T45	high	SETTLED-T19	label-slip candidate (o -> u)
+# f244r: GK 5/5 PASS
+# T45 -> T19 (o -> u): 10 settled; 0 settled on T45; key-cell rule MET (candidate for a separate PREREG); relabel candidates 10 (not applied)
+# T47 -> T27 (m -> f): 3 settled; 0 settled on T47; key-cell rule MET (candidate for a separate PREREG); relabel candidates 3 (not applied)
+# T57 -> T32 (la -> n): 5 settled; 0 settled on T57; key-cell rule MET (candidate for a separate PREREG); relabel candidates 5 (not applied)
+# T57 -> T35 (la -> r): 3 settled; 0 settled on T57; key-cell rule MET (candidate for a separate PREREG); relabel candidates 3 (not applied)
+# T57 -> T42 (la -> f): 1 settled; 0 settled on T57; key-cell rule not met; relabel candidates 1 (not applied)
