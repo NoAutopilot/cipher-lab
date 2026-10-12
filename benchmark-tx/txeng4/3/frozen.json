@@ -1,0 +1,8 @@
+{
+ "features": "hog+zone+topo",
+ "dim": 32,
+ "k": 5,
+ "dev_flagged_excluded": 0.2544,
+ "dev_as_measured": 0.2653,
+ "rule": "min flagged-excluded err_true; ties as measured, then smaller dim"
+}
