@@ -1,0 +1,11 @@
+T18/T98: rc 0; applied labels_dev_tune.tsv: positions 354, considered 0, changed 0 -> benchmark-tx/txeng4/5/gates/dev_T18_T98.tsv
+T90/T53: rc 0; applied labels_dev_tune.tsv: positions 354, considered 22, changed 0 -> benchmark-tx/txeng4/5/gates/dev_T90_T53.tsv
+T76/T86: rc 0; applied labels_dev_tune.tsv: positions 354, considered 33, changed 1 -> benchmark-tx/txeng4/5/gates/dev_T76_T86.tsv
+T76/T45: rc 0; applied labels_dev_tune.tsv: positions 354, considered 29, changed 0 -> benchmark-tx/txeng4/5/gates/dev_T76_T45.tsv
+T76/T66: rc 0; applied labels_dev_tune.tsv: positions 354, considered 0, changed 0 -> benchmark-tx/txeng4/5/gates/dev_T76_T66.tsv
+T50/T92: rc 0; applied labels_dev_tune.tsv: positions 354, considered 0, changed 0 -> benchmark-tx/txeng4/5/gates/dev_T50_T92.tsv
+T24/T29: rc 0; applied labels_dev_tune.tsv: positions 354, considered 0, changed 0 -> benchmark-tx/txeng4/5/gates/dev_T24_T29.tsv
+T60/T86: rc 0; applied labels_dev_tune.tsv: positions 354, considered 40, changed 2 -> benchmark-tx/txeng4/5/gates/dev_T60_T86.tsv
+T95/T51: rc 0; applied labels_dev_tune.tsv: positions 354, considered 0, changed 0 -> benchmark-tx/txeng4/5/gates/dev_T95_T51.tsv
+T64/T38: rc 0; applied labels_dev_tune.tsv: positions 354, considered 0, changed 0 -> benchmark-tx/txeng4/5/gates/dev_T64_T38.tsv
+rc=0

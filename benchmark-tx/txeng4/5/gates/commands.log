@@ -1,0 +1,160 @@
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pair T18 T98 --map benchmark-tx/txeng4/5/maps/no87_labels.tsv --apply-unit benchmark-tx/txeng/units/labels_dev_tune.tsv --exclude-own-line --shuffle-lolo 20 --tsv benchmark-tx/txeng4/5/gates/dev_T18_T98.tsv --report benchmark-tx/txeng4/5/gates/report_T18_T98.tsv --touched benchmark-tx/txeng4/5/gates/touched_dev_T18_T98.tsv
+--pair T18 T98: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	8	27	15	0.714		0	0.771	0	0.657 0.600 0.686 0.657 0.686 0.400 0.657 0.657 0.571 0.629 0.657 0.743 0.800 0.543 0.686 0.629 0.657 0.486 0.686 0.714	
+2	9	25	15	0.647		0	0.735	0		
+3	9	26	15	0.657		0	0.743	0		
+4	6	27	15	0.758		0	0.818	0		
+5	9	27	16	0.667		0	0.750	0		
+6	9	26	15	0.657		0	0.743	0		
+7	9	27	16	0.667		0	0.750	0		
+8	9	26	15	0.657		0	0.743	0		
+9	9	27	16	0.667		0	0.750	0		
+10	9	26	15	0.686		0	0.743	0		
+11	9	27	16	0.667		0	0.750	0		
+12	9	26	15	0.657		0	0.743	0		
+applied labels_dev_tune.tsv: positions 354, considered 0, changed 0 -> benchmark-tx/txeng4/5/gates/dev_T18_T98.tsv
+
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pair T90 T53 --map benchmark-tx/txeng4/5/maps/no87_labels.tsv --apply-unit benchmark-tx/txeng/units/labels_dev_tune.tsv --exclude-own-line --shuffle-lolo 20 --tsv benchmark-tx/txeng4/5/gates/dev_T90_T53.tsv --report benchmark-tx/txeng4/5/gates/report_T90_T53.tsv --touched benchmark-tx/txeng4/5/gates/touched_dev_T90_T53.tsv
+--pair T90 T53: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	28	49	18	0.974	0.0	77	0.636	1	0.558 0.494 0.468 0.416 0.610 0.545 0.545 0.623 0.558 0.494 0.481 0.416 0.571 0.403 0.532 0.416 0.390 0.494 0.532 0.506	25
+2	28	47	18	0.960	0.0	75	0.627	1		21
+3	28	47	18	0.973	0.0	75	0.627	1		24
+4	26	49	18	0.973	0.0	75	0.653	1		24
+5	27	50	18	0.974	0.0	77	0.649	1		26
+6	28	49	18	0.974	0.0	77	0.636	1		23
+7	25	49	18	0.959	0.0	74	0.662	1		24
+8	28	50	19	0.974	0.0	78	0.641	1		25
+9	26	50	18	0.974	0.0	76	0.658	1		24
+10	27	49	18	0.974	0.0	76	0.645	1		24
+11	27	49	18	0.974	0.0	76	0.645	1		23
+12	28	50	19	0.974	0.0	78	0.641	1		25
+applied labels_dev_tune.tsv: positions 354, considered 22, changed 0 -> benchmark-tx/txeng4/5/gates/dev_T90_T53.tsv
+
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pair T76 T86 --map benchmark-tx/txeng4/5/maps/no87_labels.tsv --apply-unit benchmark-tx/txeng/units/labels_dev_tune.tsv --exclude-own-line --shuffle-lolo 20 --tsv benchmark-tx/txeng4/5/gates/dev_T76_T86.tsv --report benchmark-tx/txeng4/5/gates/report_T76_T86.tsv --touched benchmark-tx/txeng4/5/gates/touched_dev_T76_T86.tsv
+--pair T76 T86: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	33	46	17	0.949	0.1	78	0.582	1	0.506 0.582 0.506 0.696 0.456 0.557 0.582 0.557 0.532 0.570 0.532 0.405 0.506 0.544 0.494 0.367 0.456 0.506 0.316 0.557	21
+2	33	46	17	0.949	0.1	78	0.582	1		21
+3	32	44	16	0.961	0.0	76	0.579	1		21
+4	32	42	16	0.959	0.0	74	0.568	1		21
+5	30	45	16	0.947	0.1	73	0.600	1		21
+6	31	45	16	0.974	0.0	76	0.592	1		21
+7	32	42	16	0.959	0.0	74	0.568	1		20
+8	33	45	16	0.949	0.2	76	0.577	1		22
+9	33	44	16	0.948	0.1	76	0.571	1		22
+10	31	44	16	0.960	0.0	75	0.587	1		22
+11	32	46	16	0.949	0.1	77	0.590	1		20
+12	33	43	16	0.961	0.0	76	0.566	1		22
+applied labels_dev_tune.tsv: positions 354, considered 33, changed 1 -> benchmark-tx/txeng4/5/gates/dev_T76_T86.tsv
+
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pair T76 T45 --map benchmark-tx/txeng4/5/maps/no87_labels.tsv --apply-unit benchmark-tx/txeng/units/labels_dev_tune.tsv --exclude-own-line --shuffle-lolo 20 --tsv benchmark-tx/txeng4/5/gates/dev_T76_T45.tsv --report benchmark-tx/txeng4/5/gates/report_T76_T45.tsv --touched benchmark-tx/txeng4/5/gates/touched_dev_T76_T45.tsv
+--pair T76 T45: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	33	77	18	0.945	0.1	109	0.700	1	0.591 0.545 0.673 0.518 0.509 0.564 0.573 0.609 0.464 0.491 0.600 0.655 0.582 0.582 0.545 0.582 0.582 0.627 0.391 0.700	24
+2	33	78	19	0.946	0.1	110	0.703	1		24
+3	32	77	18	0.945	0.1	108	0.706	1		23
+4	32	77	18	0.945	0.2	107	0.706	1		24
+5	30	76	18	0.934	0.3	103	0.717	1		25
+6	31	76	18	0.935	0.1	105	0.710	1		24
+7	32	78	18	0.945	0.1	109	0.709	1		23
+8	33	75	18	0.944	0.1	106	0.694	1		24
+9	33	77	18	0.945	0.1	109	0.700	1		25
+10	31	76	18	0.944	0.8	101	0.710	1		24
+11	32	77	18	0.936	0.7	104	0.706	1		24
+12	33	74	18	0.944	0.1	106	0.692	1		24
+applied labels_dev_tune.tsv: positions 354, considered 29, changed 0 -> benchmark-tx/txeng4/5/gates/dev_T76_T45.tsv
+
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pair T76 T66 --map benchmark-tx/txeng4/5/maps/no87_labels.tsv --apply-unit benchmark-tx/txeng/units/labels_dev_tune.tsv --exclude-own-line --shuffle-lolo 20 --tsv benchmark-tx/txeng4/5/gates/dev_T76_T66.tsv --report benchmark-tx/txeng4/5/gates/report_T76_T66.tsv --touched benchmark-tx/txeng4/5/gates/touched_dev_T76_T66.tsv
+--pair T76 T66: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	33	1	14					0		
+2	33	1	14					0		
+3	32	1	13					0		
+4	32	1	13					0		
+5	30	1	13					0		
+6	31	1	13					0		
+7	32	1	13					0		
+8	33	1	14					0		
+9	33	1	14					0		
+10	31	1	13					0		
+11	32	1	13					0		
+12	33	1	14					0		
+applied labels_dev_tune.tsv: positions 354, considered 0, changed 0 -> benchmark-tx/txeng4/5/gates/dev_T76_T66.tsv
+
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pair T50 T92 --map benchmark-tx/txeng4/5/maps/no87_labels.tsv --apply-unit benchmark-tx/txeng/units/labels_dev_tune.tsv --exclude-own-line --shuffle-lolo 20 --tsv benchmark-tx/txeng4/5/gates/dev_T50_T92.tsv --report benchmark-tx/txeng4/5/gates/report_T50_T92.tsv --touched benchmark-tx/txeng4/5/gates/touched_dev_T50_T92.tsv
+--pair T50 T92: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	2	21	7					0		
+2	2	21	7					0		
+3	2	21	7					0		
+4	2	21	7					0		
+5	2	21	7					0		
+6	2	21	7					0		
+7	2	21	7					0		
+8	2	21	7					0		
+9	2	21	7					0		
+10	2	20	6					0		
+11	2	20	6					0		
+12	2	21	7					0		
+applied labels_dev_tune.tsv: positions 354, considered 0, changed 0 -> benchmark-tx/txeng4/5/gates/dev_T50_T92.tsv
+
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pair T24 T29 --map benchmark-tx/txeng4/5/maps/no87_labels.tsv --apply-unit benchmark-tx/txeng/units/labels_dev_tune.tsv --exclude-own-line --shuffle-lolo 20 --tsv benchmark-tx/txeng4/5/gates/dev_T24_T29.tsv --report benchmark-tx/txeng4/5/gates/report_T24_T29.tsv --touched benchmark-tx/txeng4/5/gates/touched_dev_T24_T29.tsv
+--pair T24 T29: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	7	2	6					0		
+2	7	2	6					0		
+3	7	2	6					0		
+4	7	2	6					0		
+5	7	2	6					0		
+6	7	2	6					0		
+7	7	2	6					0		
+8	7	2	6					0		
+9	7	2	6					0		
+10	6	2	5					0		
+11	6	2	5					0		
+12	7	2	6					0		
+applied labels_dev_tune.tsv: positions 354, considered 0, changed 0 -> benchmark-tx/txeng4/5/gates/dev_T24_T29.tsv
+
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pair T60 T86 --map benchmark-tx/txeng4/5/maps/no87_labels.tsv --apply-unit benchmark-tx/txeng/units/labels_dev_tune.tsv --exclude-own-line --shuffle-lolo 20 --tsv benchmark-tx/txeng4/5/gates/dev_T60_T86.tsv --report benchmark-tx/txeng4/5/gates/report_T60_T86.tsv --touched benchmark-tx/txeng4/5/gates/touched_dev_T60_T86.tsv
+--pair T60 T86: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	66	46	20	0.929	0.7	103	0.589	1	0.366 0.482 0.545 0.598 0.393 0.482 0.509 0.536 0.536 0.536 0.562 0.598 0.536 0.455 0.634 0.500 0.545 0.509 0.554 0.473	11
+2	67	46	20	0.929	0.3	109	0.593	1		12
+3	67	44	20	0.937	0.5	103	0.604	1		13
+4	67	42	20	0.936	0.4	105	0.615	1		13
+5	67	45	20	0.920	0.6	107	0.598	1		11
+6	67	45	20	0.929	0.4	107	0.598	1		12
+7	65	42	20	0.916	0.4	101	0.607	1		14
+8	66	45	20	0.928	0.3	108	0.595	1		14
+9	66	44	20	0.936	0.3	106	0.600	1		12
+10	67	44	20	0.928	0.6	106	0.604	1		13
+11	67	46	20	0.938	0.6	108	0.593	1		12
+12	67	43	20	0.955	0.0	110	0.609	1		10
+applied labels_dev_tune.tsv: positions 354, considered 40, changed 2 -> benchmark-tx/txeng4/5/gates/dev_T60_T86.tsv
+
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pair T95 T51 --map benchmark-tx/txeng4/5/maps/no87_labels.tsv --apply-unit benchmark-tx/txeng/units/labels_dev_tune.tsv --exclude-own-line --shuffle-lolo 20 --tsv benchmark-tx/txeng4/5/gates/dev_T95_T51.tsv --report benchmark-tx/txeng4/5/gates/report_T95_T51.tsv --touched benchmark-tx/txeng4/5/gates/touched_dev_T95_T51.tsv
+--pair T95 T51: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	2	0	2					0		
+2	2	0	2					0		
+3	2	0	2					0		
+4	2	0	2					0		
+5	2	0	2					0		
+6	2	0	2					0		
+7	2	0	2					0		
+8	2	0	2					0		
+9	2	0	2					0		
+10	2	0	2					0		
+11	2	0	2					0		
+12	2	0	2					0		
+applied labels_dev_tune.tsv: positions 354, considered 0, changed 0 -> benchmark-tx/txeng4/5/gates/dev_T95_T51.tsv
+
+$ /usr/bin/python3 benchmark-tx/txeng4/5/scratch/tools/glyph_atlas.py classify --out ciphers/nevers-birago-fr3251-1572/atlas --feature-bank --pool-agreed benchmark-tx/txeng4/5/agree/sib_pool_agree.tsv:benchmark-tx/txeng4/5/maps/sib_pool_map.tsv --pool-agreed benchmark-tx/txeng4/5/agree/no87_agree.tsv:benchmark-tx/txeng4/5/maps/no87_passA.tsv --pair T64 T38 --map benchmark-tx/txeng4/5/maps/no87_labels.tsv --apply-unit benchmark-tx/txeng/units/labels_dev_tune.tsv --exclude-own-line --shuffle-lolo 20 --tsv benchmark-tx/txeng4/5/gates/dev_T64_T38.tsv --report benchmark-tx/txeng4/5/gates/report_T64_T38.tsv --touched benchmark-tx/txeng4/5/gates/touched_dev_T64_T38.tsv
+--pair T64 T38: fold	pool_a	pool_b	groups	lolo_acc	t	decided	chance	enabled	shuffled	kept
+1	6	1	5					0		
+2	5	2	5					0		
+3	6	2	6					0		
+4	6	2	6					0		
+5	6	2	6					0		
+6	6	2	6					0		
+7	6	2	6					0		
+8	5	2	5					0		
+9	6	2	6					0		
+10	6	2	6					0		
+11	6	2	6					0		
+12	6	2	6					0		
+applied labels_dev_tune.tsv: positions 354, considered 0, changed 0 -> benchmark-tx/txeng4/5/gates/dev_T64_T38.tsv
+
