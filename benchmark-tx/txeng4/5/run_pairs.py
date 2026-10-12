@@ -108,15 +108,33 @@ def evaluate():
     pairs = [l.split() for l in open(f'{O}/gates/passing.txt') if l.strip()]
     if not pairs:
         print('no passing pair: nothing applied'); return
+    jobs = []
     for name, (unit, mp, item, own) in BASES.items():
         runs = [('real', [])]
         if name.endswith('passA'):
             runs += [(f'ctrl{s}f', ['--seed', str(s), '--force-t', '0']) for s in range(1, 6)] + [('rev', ['--reverse-labels'])]
         for tag, extra in runs:
             stem = f'{O}/eval/{name}_{tag}'
-            r = classify(['--pairs', f'{O}/gates/passing.txt', '--map', mp, '--apply-unit', unit] + (['--exclude-own-line'] if own else [])
-                         + ['--tsv', f'{stem}.tsv', '--report', f'{stem}_report.tsv', '--touched', f'{stem}_touched.tsv'] + extra, log)
-            print(f'{name} {tag}: rc {r.returncode}; ' + (r.stdout.strip().split('\n')[-1] if r.stdout.strip() else ''))
+            cmd = [sys.executable, f'{O}/scratch/tools/glyph_atlas.py', 'classify', '--out', AT, '--feature-bank'] + POOLS + \
+                  ['--pairs', f'{O}/gates/passing.txt', '--map', mp, '--apply-unit', unit] + (['--exclude-own-line'] if own else []) + \
+                  ['--tsv', f'{stem}.tsv', '--report', f'{stem}_report.tsv', '--touched', f'{stem}_touched.tsv'] + extra
+            jobs.append((f'{name} {tag}', cmd))
+    # four at a time (the container has 4 CPUs); every command line goes to the log (rule 7)
+    running = []
+    with open(log, 'a') as lf:
+        for cmd in jobs:
+            lf.write('$ ' + ' '.join(cmd[1]) + '\n')
+    while jobs or running:
+        while jobs and len(running) < 4:
+            tag, cmd = jobs.pop(0)
+            running.append((tag, subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)))
+        for tag, pr in list(running):
+            if pr.poll() is not None:
+                out = pr.stdout.read(); running.remove((tag, pr))
+                with open(log, 'a') as lf:
+                    lf.write(f'## {tag} rc {pr.returncode}\n{out}\n')
+                print(f'{tag}: rc {pr.returncode}; ' + (out.strip().split('\n')[-1] if out.strip() else ''), flush=True)
+        import time; time.sleep(1)
 
 
 def exact_p(f, b):
