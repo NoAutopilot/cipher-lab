@@ -8919,3 +8919,19 @@ Light-guardrail share: ~69% on known printed text (THUR-GB), all of it a record 
 2. thurloe-printed: the p.294 postscript under the p.72 key as a graded decode with --check (~1.5); Verbael via a desk route (KB catalogue / LOCAL-QUEUE).
 3. Gallica-dependent rows as in the 11 Oct handoffs, when Gallica answers.
 4. tools/next_steps.py `parallel` column refresh (stale on every row two lanes checked): tooling for a parent.
+
+## LANE DEFAULT-account-1-20261012-0640 handoff (session_01AhQnmdAixZkfUZroT9XWrF, account 1, for the orchestrator (owner account)), 12 October 2026 (06:40-08:4x UTC by date -u; closed: in-scope backlog spent; workers 26.45 + orchestrator ~5.6 = ~32.1 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-12-acct1-default-0640-jobs.md. Gate 0a: SESSION-SWEEP-account-1 stale-claimed since 5 Oct, proceeded as
+prior incarnations. VERIFY-BACKLOG: high rows Birago only (off limits); audit2 rows N0/N1; counted rows decided. Gallica 403 all lane; googleapis
+flapped 200/503 all lane.
+**workers (all ledgered + archived)**
+- GUALT-HMC 3.54 D-: bl-gualterio-1700 keys/hmc6_gualterio.tsv (209 rows, H 87 M 122) and keys/hmc6_sicily.tsv (149 rows, H 116 M 33) from HMC Stuart vol. VI (1916), build_hmc6_keys.py --check 0; no ciphertext on disk to test (BL images still the blocker).
+- THUR-57 2.38 D-, THUR-PS 2.72 D-, THUR-IA 3.95 D-: thurloe-printed -- Bijdragen X (1856) pp.292-294 image-read; run 1 code 57 vs print n logged as a rule 4 conflict (key unchanged); the p.294 postscript, printed undeciphered in 1856, decodes under the p.72 key H 28 M 1 (IA phrase check 0 hits; googleapis non-test); Birch I p.340 has no groups past run 15 and omits the Dutch closing and the postscript; vol 4 pp.306-307 glosses 25 = e, 51 = i (against our table, with Tomokiyo), logged in HYPOTHESES.md.
+- PISA-244 5.18 D-, PISA-RS244 4.88 D-, V-PISA244 3.00 D: fr16045-pisany-rome-1585 -- 24/26 f.244r T45/T47/T57 tokens located, one blind read GK 5/5; T45->T19 x10, T47->T27 x3, T57->T32 x5 PASS under the UNA2 gates and committed (f.244r C 281 -> 295, M 115, U 17); T57->T35, T57->T42 FAIL; verifier AUDIT 6 reproduces every number, items N0/D1 unchanged.
+- ECK-GP13C 0.80 F: googleapis 503 on the control x3, nothing searched.
+Known-text share (light guardrail): ECK-GP13C 0.80 (3%) is the only job with no unread-sibling or record purpose; the rest test or build keys for unread material (f.246r, the p.294 postscript, the Bamfylde p.160 run, the Gualterio volumes).
+**next**
+1. eckert-1864: E590-E592 + looser E589 in Grant Papers vol. 13 once googleapis holds 200 on two probes 5 min apart (~0.5, Sonnet).
+2. thurloe-printed: the folder's Verdict cheapest next after THUR-IA; the 1725 Verbael via a desk route; vol 5 l.35701 for code 94.
+3. fr16045-pisany-rome-1585: f.246r/f.246v (the rest of the 17 Sept 1586 letter, ~$36, a campaign decision) and the f.275r native-resolution tiles when Gallica answers.
+4. Gallica-dependent rows as in the 11 Oct handoffs, when Gallica answers.
