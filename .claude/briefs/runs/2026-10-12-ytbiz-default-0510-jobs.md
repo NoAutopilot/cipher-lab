@@ -42,3 +42,15 @@ should carry the 27 June / 18 July / 22 Aug 1653 letters (a page read is a later
 `tools/iiif_lines.py --image <leaf file> --out <dir>` pasted before the subagent call, one blind look, ~0.5. No key edits unless a printed gloss of
 the same table supports one (then rule 7: the folder's p.160 decode script with --check). Update Remaining gaps / Escalation,
 `tools/gaps_check.py thurloe-printed`. Report what was found and where it was not found; do not classify novelty.
+
+## Wave 2 (06:1x UTC 12 Oct)
+Wave 1 results: ECK-GP13 done 1.46 (control HIT vol. 13; E589 not located; E590 503 twice, E590-E592 unsearched). THUR-GB done 5.17 (2.07x
+its 2.5 cap; Nijhoff Bijdragen X pp.291-294 found on Delpher, p.340 code 330 now C; Verbael not located). Gallica 403 at 06:1x UTC;
+googleapis 200 at 06:1x UTC.
+
+### ECK-GP13B (Sonnet, cap 1, box 25 min): eckert-1864, the rest of the Grant Papers vol. 13 pass
+NOTES.md "## Remaining gaps (ECK-GP13, 12 Oct 2026)" item 1. Intake gate as ECK-GP13 (exit 0). Re-run `fortmonroe/eck_s65g_gb.py` (the same
+way ECK-GP13's section records: keyed, `country=US`, >= 2 s) for the control, E590, E591, E592 and one looser E589 query (`Monohansett
+Monroe`); 5 queries, one retry after 60 s on a 503 then stop. Add the rows to a dated "## ECK-GP13B" section in ECK-GP13's table format;
+change no row record, AUDIT or N-class (a hit that would change one is written as a one-line next step for a verifier). Update Remaining
+gaps / Escalation, `tools/gaps_check.py eckert-1864`. Report what was found and where it was not found; do not classify novelty.
