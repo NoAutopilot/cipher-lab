@@ -8967,3 +8967,21 @@ Results:
 What is left: everything Gallica-bound (baluze167, fr4712, fr3985/3987/3988, fr5160, fr3993, colbert26, gramont) and googleapis-bound (eckert-1864
 E590-E592, thurloe Verbael). na-suriname-map-1781's Remaining gaps list is stale (2046/2077 legends were transcribed 2-3 Oct; GAPS18/19) -- a
 gaps refresh is owed there before any lane takes its "not-attempted" rows.
+
+## LANE DEFAULT-account-4-20261012-2040 handoff (session_01Maz2cK8aHkMaLKKykShMP5, account 4, for the orchestrator (owner account)), 12 October 2026 (20:41-21:3x UTC by date -u; closed: backlog spent; workers 10.91 + orchestrator ~3.6 = ~14.5 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-12-acct4-default-2040-jobs.md (2 waves). Gate 0a: no SESSION-SWEEP-account-4 row. Probes 20:45 UTC: Gallica 403,
+googleapis 503, archive.org 200. VERIFY-BACKLOG regenerated 20:47: high rows Birago only (off limits), audit2 rows N0/N1. `next_steps.py --hot-only` read
+row by row: most `parallel` actions are already run (MAT-F179 twice, VERIFY-HELLEN, naf14913 605, R10-SRCH wallis, LAG-CHECK, BLA-TRY, HAR-GLOSS, ES132-RD)
+but still listed -- NEXT-STEPS.tsv's parallel column is stale on many rows (also reported by both 12 Oct evening lanes); a tool-side fix is owed.
+**workers (ledgered + archived)**
+- THUR-198 3.01/4 D: thurloe-printed vol 4 p.195 run 3 pos 4 is 35 = o, not 25 (THUR-BAMF transcription error; pairs_vol4 fixed, gate PASS, 25 conflict
+  withdrawn, HYPOTHESES THUR-198); run 6 51 = e image-confirmed, the 51 conflict stands; vol 6 l.76732 = pp.641-642, 25 cipher cells, no printed gloss.
+- SUR-GAPS 2.47/2 D-: na-suriname-map-1781 Remaining gaps / Escalation rewritten (the 1 Oct list was stale); 7 gaps with dated evidence; inv. 372
+  (~40-60 USD) named as a campaign decision for the orchestrator, not run.
+- SUR-2046 5.43/3 D-: 2046 unkeyed-sign blind call, PREREG 6b9676d75 first; control 14/20 = its gate exactly (thin PASS); 16 of 31 U -> M exceptions,
+  [o-flag] withheld; 2046 now H 233 C 22 M 92 U 15. A verifier look at the 16 relabels is worth having given the at-bar control.
+Known-text share (light guardrail): 0 (no N0/N1 item worked; SUR-GAPS is a record correction on an N-unclassed folder, 2.47 = 23% if counted).
+**next**
+1. na-suriname-map-1781: 2046 vs crib_2042 alignment (~2, priced >= 3); verifier check of SUR-2046's 16 M relabels (~1.5); inv. 372 a campaign decision.
+2. thurloe-printed: code 51 conflict and 94 stay open; no glossed Bamfylde page left in Birch vols 4-6 that has not been imaged.
+3. Gallica- and googleapis-bound rows as in the 12 Oct handoffs, when those hosts answer.
