@@ -157,7 +157,7 @@ instrument for the same labels, about USD 5.
 
 ## Deviations and notes
 - Brief's ~1,100 agreed tokens: 391 survived the pre-registered rules (see unit 1).
-- A first run of unit 1 (folder `maps/`, uncommitted) read the agreement files' gap tokens and let a partial-cipher first line
+- A first run of unit 1 (folder `maps/`, gitignored, never committed) read the agreement files' gap tokens and let a partial-cipher first line
   merge with the next; both fixed before any classifier arm ran. A built-in safety check denied the scratch cleanup `rm`
   (variable path); not re-issued, the folder was renamed instead.
 - `tools/tx_register.py` run without `--stdout` rewrote research/TX-REGISTER.tsv in the working tree; not committed here.
