@@ -110,3 +110,31 @@ catalogue or archieven.nl/collectie pages -- test reachability first, CLAUDE.md 
 Willem I / Marnix / La Garde 1576-1578 series for a cipher table, sleutel, chiffre, cijfer, and for the originals of 6179 / 6467 (WVO letter
 numbers). Record holder, inventory number, description, digitised y/n. If the host is unreachable or a challenge page answers, log it once
 and stop (one retry after a pause). Output `## LAG-KHA`, siblings/known-keys rungs and Verdict; gaps_check. No cryptanalysis.
+
+Wave 2 (all ledgered + archived, 21:1x UTC): BAL167-GVER 2.49 N (PREREG-BAL-GPLUS (a) not settled by x position; lead gt = n by
+sequence), SUR-CRIB 1.56 N (no crib letter at k pos 6; held r M), SUR-SHRINK 0.86 D (images 31.1 -> 29.7 MB), LAG-KHA 0.72 N (KHA host
+refused at the egress proxy; la-garde parked).
+
+## Wave 3 (21:1x UTC 13 Oct)
+
+### BAL167-GSEQ (Opus, cap 3.5, box 60 min, disk only): baluze167-davaux-1637, key-anchored sequence settle of the f.124 gt, then tile test
+NOTES.md gap line "170 f.228r-v g+ class ... next: a PREREG'd word-level key-anchored sequence alignment of both blind reads (f.124r
+'consentent' = 90' 71' h 76 gt u4, f.124v 'conclusion' = 90' q 44' 72' K gt), then the PREREG-BAL-GPLUS (b) tile test, ~$2.5". Rule 3: this
+is the second instrument on the gt letter (x position was the first), so it runs. Read `## BAL167-GVER` and PREREG-BAL-GPLUS.md first. Write
+PREREG-BAL-GSEQ.md and push it before any score: the sequence rule (each cipher sign's H value from key.tsv consumed in order against the
+gloss word, the gt letter is what is left), a control that can differ from the target on that statistic (the same rule run with gt replaced
+by each H-valued sign of the same word and by a shuffled key, stating how often a wrong rule still produces a word-consistent leftover), and
+the settle condition (all 3 gt tokens give the same letter, both blind reads, and the control's false-settle rate under a stated bound).
+Use only BAL167-GVER's two blind reads already on disk (no new subagent read). If settled, run PREREG-BAL-GPLUS (b) as written (tile test,
+within-key look-alike negatives, same gate as GHV). Grades M -> S only through the gate; decode --check (rule 7), gap line, Verdict;
+gaps_check. Do not touch AUDIT.md. Report what was found and where it was not found.
+
+### BAL170-SWEEP (Opus, cap 3.5, box 75 min, openapi.bnf.fr <= 300 requests at >= 3 s): baluze167-davaux-1637, Baluze 170 full-volume sweep for unlisted cipher leaves
+NOTES.md gap line "Volumes beyond Tomokiyo's listed folios - not-attempted; his list is specimens, not a census; next: full-volume sweep
+of 167-171 at 300 px". This job does ONE volume, Baluze 170 (ark btv1b90015040, the f.228 volume): every canvas at `300,` via openapi.bnf.fr
+(take/release ROOM lines; if more than 300 canvases, do the first 300 and say where you stopped), saved to a scratchpad directory (NOT
+committed), assembled by script into contact sheets of about 30 thumbnails with canvas numbers burned in, and judged by your own eye on the
+sheets (cipher runs: digit groups, primed numerals, invented signs). For each candidate canvas: one `1000,` look to confirm. Output a
+`## BAL170-SWEEP` table: canvas, folio (tools/gallica_folio.py anchors), cipher yes/likely/no, glossed y/n, already in survey.tsv y/n.
+Unlisted cipher leaves are added to survey.tsv as new rows (existing cells untouched). No transcription. Update the gap line (170 done;
+167-169 and 171 remain, ~3.5 each) and Verdict; gaps_check. Report request counts.
