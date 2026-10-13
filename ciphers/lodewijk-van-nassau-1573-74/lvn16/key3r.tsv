@@ -1,0 +1,32 @@
+tid	line	position	role	candidates
+T01	p1_L07	8	target	17 | 13
+T02	p1_L16	2	target	26 | 20
+T03	p1_L08	2	control	84 | 64
+T04	p1_L13	9	control	90 | 40
+T05	p1_L09	12	target	33/5 | 33/15
+T06	p1_L08	13	control	113 | 118
+T07	p1_L14	9	target	92/2 | 82/2
+T08	p1_L15	22	target	21
+T09	p1_L15	8	control	118 | 116
+T10	p1_L11	16	control	73 | 78
+T11	p1_L12	7	target	118 | 115 | 125 | 116
+T12	p1_L12	22	target	13 | 132
+T13	p1_L10	6	control	112 | 117
+T14	p1_L13	20	target	3 | 31 | 34
+T15	p1_L06	11	control	77 | 71
+T16	p1_L05	9	target	101 | 101/2
+T17	p1_L05	17	target	1 | iii
+T18	p1_L11	21	target	10 | 1
+T19	p1_L05	15	target	23/112 | 22/112
+T20	p1_L16	20	target	144 | 114 | 112
+T21	p1_L06	3	control	31 | 37
+T22	p1_L17	7	control	126 | 120
+T23	p1_L14	19	target	5/2 | 5 | 6
+T24	p1_L05	23	target	23 | 21
+T25	p1_L15	12	target	4 | 2/6 | 9 | 2/16
+T26	p1_L13	11	target	21/16 | 27/16
+T27	p1_L06	7	control	116 | 118
+T28	p1_L16	4	target	35 | 85
+T29	p1_L09	15	target	25/51 | 25/81 | 26/51
+T30	p1_L14	20	target	2
+T31	p1_L16	19	target	89 | 91 | 81
