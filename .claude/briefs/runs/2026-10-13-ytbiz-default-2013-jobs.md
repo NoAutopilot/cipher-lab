@@ -69,3 +69,44 @@ fetch; a crop step if needed, pasted `tools/iiif_lines.py --image` command). One
 of 4+ settled r and 4+ settled 7 tiles plus 2 known-answer controls drawn from the same panel; the controls must be read right for the
 target call to count (state the rule in your section before the call). Apply only if the controls pass and the call is clear; otherwise stays
 r M with the split recorded. --check, grade counts, gap line, Verdict; gaps_check. Do not touch the Remarque K/O/&/[J-rev] tokens or 2046.
+
+Wave 1 (all ledgered + archived, 20:5x UTC): LAG-RETRO 0.88 N (retroboeken SG Deel 1-2, NA 1.01.02, solver repos: 0 hits; KHA unopened),
+BAL167-GPLUS 2.48 D (glossed g+ on Baluze 170 f.124r x2, f.124v x1; stale V-GHV gap closed), COL26-11B 2.92 N (instrument 3/8 vs p95 3,
+non-test again; word pairing retired for 11), SYL-1LC 2.17 N (single-letter control 0/3, non-test), SUR-POS6B 2.69 N (panel 6/8, non-test;
+shape look retired for pos 6; flag images/ 31 MB). Not briefed: fr15575 f.228 L09+ (its gloss read is the machine read rule 3 retired on
+L05-L08; a person's one-faint-line look comes first).
+
+## Wave 2 (20:5x UTC 13 Oct)
+
+### BAL167-GVER (Opus, cap 4.5, box 75 min, openapi.bnf.fr <= 6): baluze167-davaux-1637, g+ verification read from the f.124 exemplars
+NOTES.md gap line "170 f.228r-v g+ class (3 tokens, n, M) ... next: the verification read (BAL167-GHV method: two blind gloss reads of the
+f.124 strips, then tiles with an f.124 g+ exemplar and within-key look-alike negatives, PREREG first), ~$3". Read `## BAL167-GHV`,
+PREREG-BAL-GHV.md and `## BAL167-GPLUS` first. PREREG-BAL-GPLUS.md pushed before any score: (a) which gloss letter(s) the f.124 "gt" carries,
+from two blind Sonnet reads of the two committed strips in images/gplus/ (told only "read the clear words written above the cipher, letter by
+letter, with their x positions"; not the f.228 value, not Tomokiyo's) -- the value is settled only if both reads agree and the alignment is
+unambiguous; (b) if settled, the BAL167-GHV tile test for the three f.228 g+ tokens with an f.124 g+ exemplar and within-key look-alike
+negatives (crossed y, bare g), same gate as GHV. Units: 2 reads + reconciliation + 1 tile call + its control, about 0.7 each. If (a) does not
+settle, stop: g+ stays M, log it. Grades per rule 4 (M -> S only through the gate), decode --check (rule 7), gap line, Verdict; gaps_check.
+Do not touch AUDIT.md (a later verifier does). Report what was found and where it was not found.
+
+### SUR-CRIB (Opus, cap 2.5, box 40 min, disk only): na-suriname-map-1781, 2039 legend k pos 6 against the 2038/2042 plain counterparts
+NOTES.md `## SUR-POS6B` (13 Oct): "next instrument: the crib context (entry k against its 2038/2042 plain counterparts, not compared in
+SUR-LEGK), ~$1". Find legend entry k's counterpart in the 2038 and 2042 plain legends (folder's crib files; read, do not re-transcribe),
+write what letter each implies at k pos 6 and whether the word fits r or 7 (a numeral) -- before looking, state in your section what would
+settle it (both cribs agree and the other reading gives no word). Apply only through the folder's decode/--check scripts, grade at most M
+-> C if a crib gives the letter verbatim (rule 4: C is known plaintext), else stays M. Gap line, Verdict; gaps_check. Do not touch the
+Remarque K/O/&/[J-rev] tokens or 2046.
+
+### SUR-SHRINK (Sonnet, cap 2, box 40 min, disk only, after SUR-CRIB's push if it is live -- fetch and rebase first): na-suriname-map-1781 images/ 31 MB -> under 30 MB
+CLAUDE.md access playbook, last paragraph ("A folder already over the line is shrunk the way AX2-SHRINK did it"): the folder already has
+images_manifest_full.tsv and regen_images.sh. Update the `cited_by` column for any file added since; byte-identical regen test on a sample
+(regen_images.sh) before any deletion; delete only uncited full pages, convert cited full pages to JPEG at the same dimensions if needed.
+Never delete a crop a NOTES/AUDIT line cites or a tile the passes read. Run tools/file_shrink_guard.py on every touched text file and
+`decode_key.py . --check` after; paste both in the done line. Report bytes before/after.
+
+### LAG-KHA (Sonnet, cap 1, box 30 min, <= 15 requests on the KHA host, huygens <= 10): la-garde-1577, KHA inventory look
+NOTES.md `## LAG-RETRO`: "KHA inventory unopened (keep going, ~$1)". Find the Koninklijk Huisarchief's public inventory route (its own
+catalogue or archieven.nl/collectie pages -- test reachability first, CLAUDE.md "archieven.nl ... query-form-unverified"); search the
+Willem I / Marnix / La Garde 1576-1578 series for a cipher table, sleutel, chiffre, cijfer, and for the originals of 6179 / 6467 (WVO letter
+numbers). Record holder, inventory number, description, digitised y/n. If the host is unreachable or a challenge page answers, log it once
+and stop (one retry after a pause). Output `## LAG-KHA`, siblings/known-keys rungs and Verdict; gaps_check. No cryptanalysis.
