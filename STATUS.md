@@ -8936,6 +8936,37 @@ Known-text share (light guardrail): ECK-GP13C 0.80 (3%) is the only job with no 
 3. fr16045-pisany-rome-1585: f.246r/f.246v (the rest of the 17 Sept 1586 letter, ~$36, a campaign decision) and the f.275r native-resolution tiles when Gallica answers.
 4. Gallica-dependent rows as in the 11 Oct handoffs, when Gallica answers.
 
+## LANE DEFAULT-account-4-20261013-2135 handoff (session_01KxHQNzDJqtdu56EwBabxuG, account 4, for the orchestrator (owner account)), 13 October 2026 (21:35-23:2x UTC by date -u; closed: in-scope backlog spent; workers 51.36 + orchestrator ~6.3 = ~57.7 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-13-acct4-default-2135-jobs.md (3 waves). Gate 0a: no SESSION-SWEEP-account-4 row. VERIFY-BACKLOG
+regenerated 21:40: high rows Birago/ceppo (off limits), low rows N0/N1 or eckert (keyed googleapis 503 at 21:4x). `next_steps.py --hot-only`
+runnable rows and the blocked rows' `parallel` actions were checked one by one: nearly all were done by the 9-13 Oct lanes (the column is
+stale, as the 13 Oct A2-0710 handoff said). Excluded: LANE DEFAULT-A2-2013 (live) and LANE BNF-FOCUS holdings. Lane rule from the spawn
+prompt: no image file in git -- every worker kept renders/crops untracked and committed manifests/regen commands (checked per commit).
+**workers (ledgered + archived; all Opus)**
+- clair571-estrades-1645: EST-9431 7.02 D -- DECODE 9431 (Clair 574 p.4-5, Brasset) key transcribed, keys_decode/9431_key.tsv 381 rows
+  H 358 / M 23 (marked 20-99 series, 23-letter homophonic alphabet, nulls, annullers, doublers), build_9431_key.py --check; colbert26 f.24
+  key not a match; key_design.py does not read it (keys_decode/ naming). The target letter (Clair 575 p.1209) stays undigitised (REQUEST.md).
+- fr16106-vivonne-longlee-1579: VIV-WALK 5.16 D -- 198 canvases of the 1580-82 volumes: 18 cipher letters with a Dechifre copy + 2 probable,
+  14 cipher runs with no copy seen (cipher_census.tsv, cipher_letters.tsv); VIV-105 5.68 N -- blind reads of the clerk's copy f.105r/f.105v
+  agree only 0.32/0.37, grade I; machine reads of this clerk hand cannot carry a key test; copy page order open.
+- fr2933-salviati-1525: SALV-57V 5.16 D -- f57v's 172 plain boxes read (6.4% unsettled; dateline 16 Oct 1525; 3-sign cipher insertion);
+  SALV-CRIB 3.02 N -- crib scan non-test (planted-control power 0.00 at err 0.064/0.146), untested-by-this-tool.
+- decode-4450-bnf-fr20506-1525: DEC4450-INIT 5.75 N -- f.2 vs Raince's f.4-6 French initial-letter pairing FAIL (S 12, p 0.81) with
+  positive control power 1.00: a control-backed negative for a word-for-word French pairing; gap parked no-key-material.
+- oldenbarnevelt-brederode-1605: OBRED-11851 4.04 N + OBRED-11852A 2.96 N -- brievenboek 11851 596-733 and 11852 2-104 (to ~6 Apr 1605) all
+  screened with passing controls: no numeral block, no Brederode/Stettin/Heidelberg heading.
+- sforza-duke-1447-f15: SFZ-SORT 4.22 D -- blind sorter packet f.5+f.8 (2,325 tiles, build.sh, preflight PASS), not published (ASKS 165).
+- fr16045-pisany-rome-1585: PIS-246 8.35 N -- f.246r read twice (err 0.561), kp246 non-test (positive control 0/5), T40 tally added.
+Known-text share (light guardrail): PIS-246 8.35 of 51.36 (16%).
+Overruns: SFZ-SORT 1.7x (preflight + installs), PIS-246 1.19x (stopped on message), DEC4450-INIT 1.15x, OBRED-11851 1.15x.
+**next**
+1. fr16106: the 18 VIV-WALK pairs are a pool for the Mousset table, but the clerk hand reads at ~0.35 agreement: a person's read of one copy
+   page (or the owner's sorter on c107) comes before any machine pass. The 14 runs with no copy are the unread targets that pool would serve.
+2. clair571: test 9431 the day the Clair 575 p.1209 image arrives; key_design.py could take a keys_decode/ path (tools change, parent's call).
+3. fr2933: crib placement-likelihood scorer (~5), the one named untried instrument.
+4. oldenbarnevelt-brederode: 6017 stride-1 fill from scan 73 (~3 per 60-90 scans), low prior.
+5. fr16045: f.246r one line per call (~16) only if the T40 question is worth it; eckert-1864 / thurloe when googleapis answers.
+
 ## LANE DEFAULT-account-1-20261013-1840 handoff (session_01TYyr52anK6nZcz4LqA98TL, account 1, for the orchestrator (owner account)), 13 October 2026 (18:40-19:3x UTC by date -u; closed: non-campaign backlog spent; workers 18.56 + orchestrator ~3.9 = ~22.5 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-13-acct1-default-1840-jobs.md (waves 1-2). Gate 0a: SESSION-SWEEP-account-1 stale-claimed since 5 Oct,
 proceeded as prior incarnations. VERIFY-BACKLOG regenerated 18:45: high rows Birago/ceppo (off limits), audit2 rows N0/N1, counted rows
