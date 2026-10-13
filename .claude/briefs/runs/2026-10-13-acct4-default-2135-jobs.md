@@ -125,3 +125,18 @@ reconciliation, measured reader error, kp86g-style known-answer nw_score with ke
 measured error; decode_key.py --check reading; rule-4 grades (C only where the gate licenses). Also tally every T40-cell token on f.246r
 into the existing T40 alignment table (D1A-PIS) -- that is the reason this known-text page is worth reading. Section "## PIS-246";
 Remaining gaps / Verdict; gaps_check. Stop before a fifth vision unit if 80% of the cap would be crossed.
+
+## Wave 3 (22:4x UTC 13 Oct)
+Wave 2 so far: SALV-CRIB 3.02 (non-test: planted-control power 0.00), OBRED-11852A 2.96 (11852 2-49 clean); wave 1 VIV-WALK 5.16 (198
+canvases: 18 cipher letters with a Dechifre copy + 2 probable, 14 runs with none seen), SFZ-SORT 4.22 (packet built, ASKS 165).
+
+### VIV-105 (Opus, cap 5.5, box 90 min, openapi.bnf.fr <= 6): fr16106-vivonne-longlee-1579, clerk's copy f.105r-f.105v read
+NOTES.md Remaining gaps (VIV-T): "Clerk's copy f.105r-106v only half read - next: a second independent read of f.105r plus f.105v-106v at
+native resolution with a paleography-focused pass, ~$3". This job: f.105r (second independent read, blind to tx/plain_c110_f105r.txt) and
+f.105v (two blind reads), plus one reconciliation of all three pages' reads = 4 units at ~1.5; f.106r-v only if under 60% of the cap after
+that (one read each, flagged single-eye M). Canvases c110-c111 (VIV-T section, ark btv1b9009661v); native regions via openapi.bnf.fr,
+line crops with tools/iiif_lines.py --image. Period French, a clerk's hand: give each reader the d'Ars/Mousset spelling conventions
+already in the folder, never the other reader's text. Output tx/plain_c110_f105r_B.txt, tx/plain_c110_f105v_{A,B}.txt, a reconciled
+tx/plain_f105_rec.txt with per-line agreement, and a NOTES.md section "## VIV-105" (reader agreement per page; which of VIV-WALK's 18
+pairs are the next-best candidates for the same pipeline, by legibility of the copy, from cipher_census.tsv only). No key test, no
+decode. Update Remaining gaps / Verdict; gaps_check.
