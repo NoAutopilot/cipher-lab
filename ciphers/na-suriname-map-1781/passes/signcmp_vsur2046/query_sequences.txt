@@ -1,0 +1,11 @@
+L01: q e [x-dot] l 3 #24 w #4 #14 a l [psi] [f-loop] o 6 [lambda] #36 p r
+L02: 5 p h v [d-loop] #29 3 w [hash] #10 [lambda] S 5 o [u-dots] 7 [o-flag] [d-loop] h v a
+L03: [psi] [lambda] [x-dot] [delta] [lambda] v 7 [o-flag] [d-loop] p r [lambda] #27 [o-flag] 3 t [d-loop] l
+L04: <plain:No.1.> <plain:1> [MM] [delta-grave] <plain:24> g [d-loop] t [psi] 3 o <plain:2> [MM] [a-grave] <plain:18> g [d-loop] v [f-loop] [lambda] [hash] #16 3 7 g w a [amp] #6 [thorn] r <plain:2> [MM] #35 <plain:6> g [d-loop] t 6 a o <plain:1> [MM] p #18 g [d-loop] t [psi] #19 o
+L05: <plain:No.2.> <plain:3> [MM] #31 <plain:18> g [d-loop] t 6 a o v #34 [w-tilde] a [thorn] [lambda] <plain:1> [MM] [delta-grave] <plain:6> g [d-loop] t [psi] 7 o
+L06: <plain:No.3.> <plain:2> [MM] #5 #26 g [d-loop] t #7 3 o
+L07: 3 [1-hook] q g m [thorn] [delta] [lambda] 8 7 v #22 o [psi] [f-loop] g h [x-dot] r 5 e o 3 l
+L08: <plain:a.> k [w-tilde] #23 [f-loop] [thorn] m 3 o 6 g #15 [pi] g 7 <plain:b.> [psi] k g v [delta] [x-dot] [lambda] #20 #3 b 4 [delta] o [lambda] [f-loop] 7 o <plain:c,> b g a t t l 3 g 7 [d-loop] [hash] 5 4 l 5 k [pi] o v [f-loop] [lambda] k
+L09: <plain:d.> [d-loop] [delta] #11 [x-dot] b b 3 l #21 [hash] k o v 7 [d-loop] [s-loop] m a 8 l [d-loop] 3 [psi] #1 [lambda] r [f-loop] h g g a g g 3 l v 7 [d-loop] a 5 o 3 #9 w m g v 7 [d-loop] [hash] 6 [psi] h 3 a g #8 o 6
+L10: <plain:e.> [hand-box] #13 [delta] [u-dots] 5 #33 [f-loop] [lambda] m 3 [u-dots] [x-dot] g [delta] [thorn] t l [lambda] 8 3 6 [hash] [s-hook] v a [d-loop] [x-dot] [lambda] r #30 o t 7 l <plain:f.> [thorn] 8 [lambda] 3 o h #28 6 <plain:g.> [psi] g 5 t 6 <plain:h,> g [delta] l v m h g [d-hook] [s-hook] g [x-dot] #25 [lambda] [psi]
+L11: <plain:k.> [thorn] #2 o [s-hook] [d-hook] v 3 g [delta] o v 7 <plain:i.> g 7 [delta-dots] 5 [x-dot] #12 #17 a o v [d-hook] h #32 g [lambda] 8 [hash] [psi] [lambda] 3 l
