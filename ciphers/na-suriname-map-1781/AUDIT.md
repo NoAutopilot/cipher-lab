@@ -765,3 +765,50 @@ first. That means either a sign with a single m-or-n value and at least 10 align
 from T's own sign table with a planted n-only y-family. Show that the gate reads LEANS n there before another unit is spent on (b).
 Over-claim corrected: HYPOTHESES.md SUR-0745 SPLIT row's verdict now carries "power unmeasured (V-SUR0745)". Not changed: key files,
 conflicts.tsv, transcriptions, token grades, N-class. Rule 10: report only. Requests: none. Vision: none. CPU: about 9 min (4 processes).
+
+## V-SUR2046 (verifier of SUR-2046, account 2, LANE DEFAULT-A2-0710, 13 Oct 2026, 07:21-07:3x UTC by date -u)
+
+Claim under audit: SUR-2046 (12 Oct) moved 16 of 4.VEL 2046's 31 U tokens to M by one blind sign call (controls 14/20, gate 14).
+Separate session from the solver; no N-class or depth change (no reading is claimed on 2046: GAPS18's vocabulary control FAIL stands).
+
+**(1) Audit of the call** (passes/signcmp_sur2046: prereg.md, result.tsv, decisions.tsv, apply.py, build_call.py):
+- Comparable crops: yes. All 20 controls and 31 targets are 2046 tokens on the same GAPS18 half-line crops (one hand, one native
+  region, one scale); controls were drawn from H tokens of the same block by seed. No mismatch of hand or scale.
+- Comparable difficulty: no. The 10 control classes are plain base signs (3, 7, [lambda], [psi], 5, [hash], 6, [delta], h, o); every
+  target is a diacritic or hooked variant. The control measures the call on base shapes, not on the axis the relabels turn on
+  (whether an accent, hook or dot distinguishes a sign), so 14/20 does not bound the targets' error rate.
+- Instances not independent: every settled [d-hook] row is the identical R14 0.65 / R2 0.25; all three [s-hook] are 0.35 / 0.30; the
+  three [o-flag] equal control #30 exactly. The class rule (>= 2/3 of instances) counts them as separate evidence; they behave as one
+  judgement per shape.
+- #30 handling: even in effect. The withhold was written after the result (in the reconciliation unit, allowed only to withhold), but
+  checked across all winning tiles (R_Edelta, R_Famp, R_U5, R_Fomega, R_Nh, R_Ap, R_Ax): no control of a different value settled on
+  any of them, so no other relabel met the #30 condition. The calibration it reveals was not carried forward: 1 of 15 settled controls
+  settled on a wrong value (about 7%), i.e. about one of 16 target settles expected wrong on base shapes alone.
+
+**(2) Fresh-control blind re-call** (PREREG-V-SUR2046.md pushed at 284c98ae9 before the call; apply script b74df99c7 before the result;
+passes/signcmp_vsur2046/): the 16 relabelled tokens + 20 H controls not used by SUR-2046, two each of o, 6, [delta], 5, 3, h, p, a,
+[hash], 7 (weighted to the winning tiles' look-alikes), seed 20461013; tiles relabelled (seed 20261013), queries renumbered; one blind
+Opus subagent told to judge each instance separately. Same settle rule and gate.
+- Controls: **14/20, gate PASS at the bar again.** Misses (all unsettled, none settled wrong): [hash] 0.55 approx, h x2 (0.55, 0.50),
+  5 0.55, o x2 (one on R_B6 B-row sigma 0.4 approx -- the same pull as #30 -- one on R_Ro 0.35).
+- Targets (pre-registered verdicts, decisions.tsv):
+
+| reader code | n | SUR-2046 | re-call best | verdict |
+|---|---|---|---|---|
+| [d-hook] | 7 | E-row flagged delta (e) 0.65 | I-row 8 (i) 0.55-0.60, runner-up B-row d 0.15-0.20 (3 settled, 4 not) | 3 CONTRADICTED + 4 not reproduced, value differs: **revert to U** |
+| [3-breve] | 2 | U-row 5 (v) 0.6 | E-row 3 (e) 0.40-0.45 approx | not reproduced, value differs: **revert to U** |
+| [w-dots] | 1 | F omega-bar (f) 0.6 | F omega-bar (f) 0.6 sure | **CONFIRMED, stands at M** |
+| [amp] 2, [diamond] | 3 | F amp (f) 0.55-0.75 | F amp (f) 0.40-0.55 | held at M, unconfirmed |
+| [h-tilde] | 1 | N h (n) 0.75 | N h (n) 0.55 | held at M, unconfirmed |
+| [p-grave] | 1 | A p (a) 0.8 | A p (a) 0.55 | held at M, unconfirmed |
+| [x-dot-grave] | 1 | A x-dots (a) 0.7 | A x-dots (a) 0.55 | held at M, unconfirmed |
+
+No look-alike withhold fired (no fresh control settled on a target's tile under another value).
+
+**(3) Verdict:** of SUR-2046's 16 relabels, 1 stands at M (confirmed by the re-call), 6 are held at M unconfirmed, 9 revert to U (rows
+removed from exceptions_nieuw_image.tsv; the 7 kept carry the re-call's verdict in their reason). The [d-hook] class is the main
+failure: two blind calls on the same tiles gave two different E/I-row values for the same seven signs, so the instrument does not settle
+it; a third call is not the next step (rule 3, third-attempt clause), the pre-registered legend a-k alignment (gap 2046) is.
+Decode: `tools/decode_key.py ciphers/na-suriname-map-1781 --check` "reading up to date"; 2046 tokens 362: **H 233, C 22, M 83, U 24**
+(was M 92, U 15). NOTES.md Remaining gaps / Escalation updated. Not changed: key_period_codes_nieuw.tsv, transcriptions, N-class,
+depth. Requests: none (disk only). Vision: 1 blind subagent call. Rule 10: report only.

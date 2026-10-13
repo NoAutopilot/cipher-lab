@@ -1,0 +1,37 @@
+query	line	best	best_conf	second	second_conf	located	note
+#1	L09	R25	0.6	R47	0.15	sure	delta-like loop with flag curling right at top, after psi
+#2	L11	R18	0.55	R32	0.15	approx	hash-like grid, three verticals crossed by horizontal stroke, after thorn
+#3	L08	R2	0.55	R16	0.1	sure	h with small hook/tick at top of ascender, after 3
+#4	L01	R15	0.65	R10	0.05	sure	7-shape, short top bar and descending stroke, between w and omega
+#5	L06	R4	0.6	R12	0.05	sure	plain p with descender, no accent seen, after MM monogram
+#6	L04	R25	0.6	R47	0.2	sure	delta-like with tall flag hooking right at top, before thorn
+#7	L06	R54	0.65	R24	0.15	sure	6 with closed lower bowl, after t
+#8	L09	R25	0.55	R47	0.15	sure	delta-like loop with flag at top, before final o 6
+#9	L09	R25	0.55	R47	0.15	approx	delta-like with tall curling flag, before w m
+#10	L02	R27	0.6	R19	0.1	sure	5 with dot after it, before lambda
+#11	L09	R22	0.4	R43	0.3	approx	small round o, no mark inside, before x with dots
+#12	L11	R54	0.6	R24	0.15	sure	6 with closed bowl, after x with dots
+#13	L10	R41	0.4	R45	0.25	approx	ampersand-like loop with tail crossed, after hand-box sign
+#14	L01	R9	0.6	R33	0.1	sure	omega/w with dots or tilde above
+#15	L08	R18	0.6	R32	0.05	sure	hash grid of verticals crossed by horizontals, after dotted g
+#16	L04	R41	0.45	R47	0.1	approx	pointed lozenge loop, filled, with diagonal stroke through, hook at upper left
+#17	L11	R19	0.6	R10	0.05	sure	3 with flat top, after 6
+#18	L04	R19	0.4	R23	0.1	approx	3-like shape with small curved tick/breve above, after p
+#19	L04	R25	0.55	R47	0.15	sure	delta-like with flag at top, between psi and o
+#20	L08	R19	0.6	R10	0.05	sure	3 with flat top, after lambda
+#21	L09	R27	0.55	R19	0.1	sure	5 (s-like), after l, before hash
+#22	L07	R52	0.7	R1	0.05	sure	a, round bowl with stem, between v and o
+#23	L08	R41	0.55	R45	0.15	sure	small loop crossed by diagonal stroke with tail, after w-tilde
+#24	L01	R2	0.55	R16	0.1	sure	h with small accent/tick above, after 3
+#25	L10	R4	0.6	R12	0.05	sure	p with descender, no accent seen, after x with dots
+#26	L06	R19	0.45	R23	0.1	approx	3-shape with small hook at top left, before g
+#27	L03	R52	0.7	R1	0.05	sure	a, round bowl with stem, after lambda
+#28	L10	R15	0.6	R10	0.05	sure	7-shape, between h and 6
+#29	L02	R43	0.35	R22	0.3	sure	large plain round O, no dot inside, before 3
+#30	L10	R25	0.55	R47	0.15	sure	delta-like with flag curling right at top, after r
+#31	L05	R4	0.55	NONE	0.1	sure	p with grave accent stroke above, after MM monogram
+#32	L11	R38	0.65	R30	0.05	sure	small triangle delta, after h
+#33	L10	R2	0.5	R16	0.1	sure	h with hook at top of ascender, after 5
+#34	L05	R25	0.6	R47	0.15	sure	delta-like with tall flag at top, after v
+#35	L04	R42	0.55	R40	0.25	sure	diagonal stroke with dot above-left and dot to right, after MM
+#36	L01	R38	0.65	R30	0.05	sure	small triangle delta, before p

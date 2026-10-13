@@ -80,7 +80,7 @@ line	pos	sign	value	grade
 2046_No1	25	w	d	H
 2046_No1	26	a	e	H
 2046_No1	27	[amp]	?	U
-2046_No1	28	[d-hook]	e	M
+2046_No1	28	[d-hook]	?	U
 2046_No1	29	[thorn]	c	M
 2046_No1	30	r	t	H
 2046_No1	32	[MM]	stukgeschut	H
@@ -93,12 +93,12 @@ line	pos	sign	value	grade
 2046_No1	40	o	r	H
 2046_No1	42	[MM]	stukgeschut	H
 2046_No1	43	p	a	H
-2046_No1	44	[3-breve]	v	M
+2046_No1	44	[3-breve]	?	U
 2046_No1	45	g	g|l	M
 2046_No1	46	[d-loop]	b	M
 2046_No1	47	t	y	C
 2046_No1	48	[psi]	s	H
-2046_No1	49	[d-hook]	e	M
+2046_No1	49	[d-hook]	?	U
 2046_No1	50	o	r	H
 2046_No2	2	[MM]	stukgeschut	H
 2046_No2	3	[p-grave]	a	M
@@ -109,7 +109,7 @@ line	pos	sign	value	grade
 2046_No2	9	a	e	H
 2046_No2	10	o	r	H
 2046_No2	11	v	d	H
-2046_No2	12	[d-hook]	e	M
+2046_No2	12	[d-hook]	?	U
 2046_No2	13	[w-tilde]	f	M
 2046_No2	14	a	e	H
 2046_No2	15	[thorn]	c	M
@@ -124,7 +124,7 @@ line	pos	sign	value	grade
 2046_No2	26	o	r	H
 2046_No3	2	[MM]	stukgeschut	H
 2046_No3	3	p	a	H
-2046_No3	4	[3-breve]	v	M
+2046_No3	4	[3-breve]	?	U
 2046_No3	5	g	g|l	M
 2046_No3	6	[d-loop]	b	M
 2046_No3	7	t	y	C
@@ -231,7 +231,7 @@ line	pos	sign	value	grade
 2046_leg_d	21	[d-loop]	b	M
 2046_leg_d	22	3	e	H
 2046_leg_d	23	[psi]	s	H
-2046_leg_d	24	[d-hook]	e	M
+2046_leg_d	24	[d-hook]	?	U
 2046_leg_d	25	[lambda]	t	H
 2046_leg_d	26	r	t	H
 2046_leg_d	27	[f-loop]	i	M
@@ -250,7 +250,7 @@ line	pos	sign	value	grade
 2046_leg_d	40	5	v	M
 2046_leg_d	41	o	r	H
 2046_leg_d	42	3	e	H
-2046_leg_d	43	[d-hook]	e	M
+2046_leg_d	43	[d-hook]	?	U
 2046_leg_d	44	w	d	H
 2046_leg_d	45	m	i	H
 2046_leg_d	46	g	g|l	M
@@ -264,7 +264,7 @@ line	pos	sign	value	grade
 2046_leg_d	54	3	e	H
 2046_leg_d	55	a	e	H
 2046_leg_d	56	g	g|l	M
-2046_leg_d	57	[d-hook]	e	M
+2046_leg_d	57	[d-hook]	?	U
 2046_leg_d	58	o	r	H
 2046_leg_d	59	6	s	H
 2046_leg_efgh	1	[hand-box]	buskruit	H
@@ -296,7 +296,7 @@ line	pos	sign	value	grade
 2046_leg_efgh	27	[x-dot]	a	C
 2046_leg_efgh	28	[lambda]	t	H
 2046_leg_efgh	29	r	t	H
-2046_leg_efgh	30	[d-hook]	e	M
+2046_leg_efgh	30	[d-hook]	?	U
 2046_leg_efgh	31	o	r	H
 2046_leg_efgh	32	t	y	C
 2046_leg_efgh	33	7	e	H

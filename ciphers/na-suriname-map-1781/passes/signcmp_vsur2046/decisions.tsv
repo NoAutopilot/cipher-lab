@@ -1,0 +1,37 @@
+query	line	pos	reader_code	role	value_to_test	best	tile	bval	conf	second	sval	sconf	located	st	verdict	note
+#5	2046_No3	3	p	control	a	R4	R_Ap	a	0.6	R12	d	0.05	sure	True		plain p with descender, no accent seen, after MM monogram
+#7	2046_No3	8	6	control	s	R54	R_S6	s	0.65	R24	k	0.15	sure	True		6 with closed lower bowl, after t
+#27	2046_head1	12	a	control	e	R52	R_Ea	e	0.7	R1	l	0.05	sure	True		a, round bowl with stem, after lambda
+#22	2046_head2	11	a	control	e	R52	R_Ea	e	0.7	R1	l	0.05	sure	True		a, round bowl with stem, between v and o
+#15	2046_leg_abc	11	[hash]	control	o	R18	R_Ohash	o	0.6	R32	buskruit	0.05	sure	True		hash grid of verticals crossed by horizontals, after dotted g
+#20	2046_leg_abc	23	3	control	e	R19	R_E3	e	0.6	R10	g	0.05	sure	True		3 with flat top, after lambda
+#3	2046_leg_abc	24	h	control	n	R2	R_Nh	n	0.55	R16	z	0.1	sure	False		h with small hook/tick at top of ascender, after 3
+#11	2046_leg_d	3	o	control	r	R22	R_B6	b	0.4	R43	r	0.3	approx	False		small round o, no mark inside, before x with dots
+#21	2046_leg_d	9	5	control	v	R27	R_U5	v	0.55	R19	e	0.1	sure	False		5 (s-like), after l, before hash
+#33	2046_leg_efgh	6	h	control	n	R2	R_Nh	n	0.5	R16	z	0.1	sure	False		h with hook at top of ascender, after 5
+#28	2046_leg_efgh	42	7	control	e	R15	R_E7	e	0.6	R10	g	0.05	sure	True		7-shape, between h and 6
+#25	2046_leg_efgh	62	p	control	a	R4	R_Ap	a	0.6	R12	d	0.05	sure	True		p with descender, no accent seen, after x with dots
+#2	2046_leg_ki	2	[hash]	control	o	R18	R_Ohash	o	0.55	R32	buskruit	0.15	approx	False		hash-like grid, three verticals crossed by horizontal stroke, after thorn
+#12	2046_leg_ki	19	6	control	s	R54	R_S6	s	0.6	R24	k	0.15	sure	True		6 with closed bowl, after x with dots
+#17	2046_leg_ki	20	3	control	e	R19	R_E3	e	0.6	R10	g	0.05	sure	True		3 with flat top, after 6
+#32	2046_leg_ki	26	[delta]	control	a	R38	R_Adelta	a	0.65	R30	o	0.05	sure	True		small triangle delta, after h
+#4	2046_title1	7	7	control	e	R15	R_E7	e	0.65	R10	g	0.05	sure	True		7-shape, short top bar and descending stroke, between w and omega
+#36	2046_title1	16	[delta]	control	a	R38	R_Adelta	a	0.65	R30	o	0.05	sure	True		small triangle delta, before p
+#29	2046_title2	5	o	control	r	R43	R_Ro	r	0.35	R22	b	0.3	sure	False		large plain round O, no dot inside, before 3
+#10	2046_title2	9	5	control	v	R27	R_U5	v	0.6	R19	e	0.1	sure	True		5 with dot after it, before lambda
+#16	2046_No1	21	[diamond]	target	f	R41	R_Famp	f	0.45	R47	b	0.1	approx	False	held-M-unconfirmed (not reproduced, best value same)	pointed lozenge loop, filled, with diagonal stroke through, hook at upper left
+#6	2046_No1	28	[d-hook]	target	e	R25	R_I8	i	0.6	R47	b	0.2	sure	True	CONTRADICTED-revert-U	delta-like with tall flag hooking right at top, before thorn
+#35	2046_No1	33	[x-dot-grave]	target	a	R42	R_Ax	a	0.55	R40	q	0.25	sure	False	held-M-unconfirmed (not reproduced, best value same)	diagonal stroke with dot above-left and dot to right, after MM
+#18	2046_No1	44	[3-breve]	target	v	R19	R_E3	e	0.4	R23	c	0.1	approx	False	revert-U (not reproduced, best value differs)	3-like shape with small curved tick/breve above, after p
+#19	2046_No1	49	[d-hook]	target	e	R25	R_I8	i	0.55	R47	b	0.15	sure	False	revert-U (not reproduced, best value differs)	delta-like with flag at top, between psi and o
+#31	2046_No2	3	[p-grave]	target	a	R4	R_Ap	a	0.55	NONE	NONE	0.1	sure	False	held-M-unconfirmed (not reproduced, best value same)	p with grave accent stroke above, after MM monogram
+#34	2046_No2	12	[d-hook]	target	e	R25	R_I8	i	0.6	R47	b	0.15	sure	True	CONTRADICTED-revert-U	delta-like with tall flag at top, after v
+#26	2046_No3	4	[3-breve]	target	v	R19	R_E3	e	0.45	R23	c	0.1	approx	False	revert-U (not reproduced, best value differs)	3-shape with small hook at top left, before g
+#23	2046_leg_abc	3	[amp]	target	f	R41	R_Famp	f	0.55	R45	snaphanen	0.15	sure	False	held-M-unconfirmed (not reproduced, best value same)	small loop crossed by diagonal stroke with tail, after w-tilde
+#1	2046_leg_d	24	[d-hook]	target	e	R25	R_I8	i	0.6	R47	b	0.15	sure	True	CONTRADICTED-revert-U	delta-like loop with flag curling right at top, after psi
+#9	2046_leg_d	43	[d-hook]	target	e	R25	R_I8	i	0.55	R47	b	0.15	approx	False	revert-U (not reproduced, best value differs)	delta-like with tall curling flag, before w m
+#8	2046_leg_d	57	[d-hook]	target	e	R25	R_I8	i	0.55	R47	b	0.15	sure	False	revert-U (not reproduced, best value differs)	delta-like loop with flag at top, before final o 6
+#13	2046_leg_efgh	2	[amp]	target	f	R41	R_Famp	f	0.4	R45	snaphanen	0.25	approx	False	held-M-unconfirmed (not reproduced, best value same)	ampersand-like loop with tail crossed, after hand-box sign
+#30	2046_leg_efgh	30	[d-hook]	target	e	R25	R_I8	i	0.55	R47	b	0.15	sure	False	revert-U (not reproduced, best value differs)	delta-like with flag curling right at top, after r
+#24	2046_title1	5	[h-tilde]	target	n	R2	R_Nh	n	0.55	R16	z	0.1	sure	False	held-M-unconfirmed (not reproduced, best value same)	h with small accent/tick above, after 3
+#14	2046_title1	8	[w-dots]	target	f	R9	R_Fomega	f	0.6	R33	d	0.1	sure	True	CONFIRMED	omega/w with dots or tilde above
