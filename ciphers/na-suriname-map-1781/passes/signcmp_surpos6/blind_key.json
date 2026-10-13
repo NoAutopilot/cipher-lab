@@ -1,0 +1,61 @@
+{
+ "refs": {
+  "X": [
+   "R_E7",
+   "images/inv86_0003_left_native.jpg",
+   [
+    248,
+    945,
+    292,
+    1012
+   ],
+   "7"
+  ],
+  "Y": [
+   "R_Tr",
+   "images/inv86_0003_left_native.jpg",
+   [
+    115,
+    2730,
+    185,
+    2795
+   ],
+   "r"
+  ]
+ },
+ "queries": {
+  "Q1": [
+   "T_k6",
+   "images/2039_legend_native.jpg",
+   [
+    850,
+    752,
+    876,
+    785
+   ],
+   "target"
+  ],
+  "Q2": [
+   "C_m11_7",
+   "images/2039_legend_native.jpg",
+   [
+    1696,
+    752,
+    1713,
+    782
+   ],
+   "7"
+  ],
+  "Q3": [
+   "C_l3_r",
+   "images/2039_legend_native.jpg",
+   [
+    1132,
+    752,
+    1156,
+    785
+   ],
+   "r"
+  ]
+ }
+}
