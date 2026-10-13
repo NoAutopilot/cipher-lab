@@ -2232,7 +2232,7 @@ UNCHECKED, answered by hand below.
 Read so far: 0 of 229 base-code / 239 marks-kept tokens graded H/C/S (unchanged)
 - same-system pooling for N - blocker: no-key-material; every route with a free full text or image in WVO, Groen VI, Gachard t.4-6 and the DECODE disk list gives 0 same-system letters (LAG-SIB); retroboeken phrase search and the solver repositories stay unsearched, small and cheap
 - Aug 1577 alphabet (Groen VI p.129, DCCXLII, LAG-MARNIX) - blocker: no-key-material; it is the key for Don Juan's intercepted letters, not the 6467 system, and no holder or image was found in Groen, Tomokiyo, WVO or the solver repositories; retroboeken phrase search and a KHA/Staten-Generaal finding-aid look stay untried, cheap
-- retroboeken phrase search and KHA/Staten-Generaal finding aids for a 1577 cipher table - blocker: not-attempted; accessor ids and finding aids not looked up in LAG-SIB or LAG-MARNIX; next: retroboeken name search with chiffre/cijfer plus one finding-aid look, ~$1
+- retroboeken phrase search and KHA/Staten-Generaal finding aids for a 1577 cipher table - attempted in LAG-RETRO (13 Oct 2026): Staten-Generaal Deel 1-2 and NA 1.01.02 inventory page, 0 hits; KHA inventory still unopened, see LAG-RETRO gaps
 - six doubt cells (LAG-HIRES) - blocker: needs-physical-access; the six cells stay unseparable on the best public scan (LAG-HIRES), the KHA original is the route
 
 ## Escalation (LAG-SIB, 13 Oct 2026)
@@ -2244,3 +2244,51 @@ Read so far: 0 of 229 base-code / 239 marks-kept tokens graded H/C/S (unchanged)
 - [x] image-check: LAG-HIRES settled 10 of 14 at ~288 ppi; 6 doubt cells need the original (needs-physical-access)
 - [x] retry: syllabary and wordcode retries exhausted or [retired] (LAG-HIRES)
 Verdict: keep going: 1 internal gap; cheapest next: Huygens retroboeken phrase search for the correspondent names with chiffre/cijfer and a KHA/Staten-Generaal finding-aid look, ~$1; the Aug 1577 alphabet is Don Juan's Spanish cipher as shown by Marnix (not 6467's system), holder not located; the six doubt cells wait on the KHA original (needs-physical-access)
+
+## LAG-RETRO (13 Oct 2026, account 2, LANE DEFAULT-A2-2013, Sonnet, no subagents, no transcription, no cryptanalysis)
+Job: the gap "retroboeken phrase search and KHA/Staten-Generaal finding aids for a 1577 cipher table", not run by LAG-SIB or LAG-MARNIX. Prior work:
+`tools/prior_work.py la-garde-1577 --step-type lookup --fetch` exit 4, the only LEAD this worker's own claim line (20:30 UTC); tomokiyo/solver/edition rows
+UNCHECKED-by-tool, answered by hand below. Read first: LAG-SIB, LAG-MARNIX.
+
+**Routes searched, 13 Oct 2026 (route, query, result)**
+1. Edition choice: sources/huygens/NOTES.md lists five retroboeken books; only `statengeneraal` (Besluiten Staten-Generaal, old series 1576-1609) covers 1576-78. Heinsius,
+   De Witt, Willem III-Bentinck and Oldenbarnevelt are other periods and were not searched. Accessor `retroboeken/statengeneraal/searchText/index_html`, field
+   `search_term:ustring:utf-8`, `source_id` `1OR` (Deel 1, 1576-1577) and `2OR` (Deel 2, 1578-1579), from the form read live.
+2. Cipher terms, both volumes: `chiffre`, `chiffres`, `cifre`, `gecijferd`, `alphabet`, `dechiffrement`, `déchiffrement`: 0 hits in every cell. `cijfer`: 0 in 2OR; 2 in 1OR, both
+   the Dutch word for a figure/number (p. XXVI an editor's note about a number written in later; p. 469 "het eerste cijfer duidt het eerste bedrag der quotisatie"), no cipher.
+3. Names: `La Garde` and the quoted `"de la Garde"` return the same count (67 in 1OR, 50 in 2OR): the search is whole-word and does not honour the phrase, so the count is
+   "la" + "garde" (French "garde" = guard) noise; snippets read (first page of 20 each) are garrison/guard text, none about a person's cipher. Not a negative on the person.
+   `Lagarde` / `"de Lagarde"` (one token): 1OR 0; 2OR 1 hit, Deel 2 p. 632, "traictement que mons. De Lagarde reçoit de la Généralité" (a pay item, 1578-79, no cipher, not
+   shown to be this man). `Marnix` 8 (1OR) and 11 (2OR); `Aldegonde` 18 and 45: the snippets shown contain no chiffre/cifre/cijfer/alphabet word (checked by grep on the
+   result pages). Only the first result page (20) was fetched where a count exceeded 20 (2OR Aldegonde 45 = 25 hits unread).
+4. Finding aid, Nationaal Archief 1.01.02 Staten-Generaal (public inventory page and invnr 3159 page, 2 requests, both 200): the page text contains no cijfer/cifre/chiffre/
+   geheimschrift/sleutel entry; the inventory lists the notulen minutes (invnr 1: 1 Oct 1576-18 May 1577; invnr 2: 20 May-21 Nov 1577) without item-level cipher notes. This
+   is an inventory-level look, not a search of the scans; the KHA (Koninklijk Huisarchief) inventory was not opened (no public finding-aid search answered in the 2 requests
+   spent; not a negative).
+5. Solver repositories, shallow clones, grep only, 13 Oct 2026 (dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers): La Garde / Lagarde / Marnix: no 1577 or Orange-circle entry
+   (hits are "la garde" = flyleaf/guard in catalogue prose, P. de Lagarde the philologist, Bellagarde in a PARES line). The strings 6179 and 6467 occur in
+   `unsolved-ciphers/catalogue/decode-catalog.csv` as DECODE record numbers (6467 = ASFi_SIVol7_37, 1654; 6179 = ASFi_SIVol5_22, 1591, both Florence): a number coincidence with
+   our WVO letter numbers, different items; other 6179/6467 hits in cyphersolver are digit strings inside unrelated data files.
+
+**Result:** 0 hits for a 1576-78 cipher table, a La Garde cipher letter or a second letter of this system in the Staten-Generaal printed resolutions Deel 1-2 (full text, OCR, so
+misses possible) or at the inventory-page level; no holder, shelfmark or image to open. Where not found: the OCR may break "chiffre" (not tested with variants beyond those listed);
+the KHA inventory; 25 unread Aldegonde hits and the pages beyond the first 20 of the La Garde noise lists.
+
+Requests: resources.huygens.knaw.nl 30 (1 root 302, 1 form, 24 searches, 4 déchiffrement); www.nationaalarchief.nl 2; github.com 2 clones; archive.org 0; gallica 0. Cost not visible to this session.
+
+## Remaining gaps (LAG-RETRO, 13 Oct 2026)
+Read so far: 0 of 229 base-code / 239 marks-kept tokens graded H/C/S (unchanged)
+- same-system pooling for N - blocker: no-key-material; WVO, Groen VI, Gachard, the DECODE disk list, Staten-Generaal Deel 1-2 and both solver repositories give 0 same-system letters (LAG-SIB, LAG-RETRO)
+- Aug 1577 alphabet (Groen VI p.129) - blocker: no-key-material; Don Juan's Spanish cipher as shown by Marnix, not 6467's system; Staten-Generaal Deel 1-2 and the NA 1.01.02 inventory page name no table (LAG-MARNIX, LAG-RETRO)
+- KHA inventory look for a 1576-78 cipher table of Orange's circle - blocker: not-attempted; no public KHA finding-aid route answered in LAG-RETRO; next: one browser-tool look at the KHA (Koninklijk Huisarchief) inventory for A 11, ~$1
+- six doubt cells (LAG-HIRES) - blocker: needs-physical-access; the KHA original is the route
+
+## Escalation (LAG-RETRO, 13 Oct 2026)
+- [x] siblings: WVO, Groen, Gachard, DECODE disk list, retroboeken Staten-Generaal Deel 1-2 and both solver repositories swept, no same-system letter
+- [n/a] clear-pages: no clear page of this cipher identified; margin words placed in A2-LAG
+- [x] known-keys: Aug 1577 alphabet is Don Juan's Spanish cipher (LAG-MARNIX); retroboeken and NA inventory add no table
+- [x] print: Groen VI, Gachard t.4-6, GSME/LMSAC, Besluiten Staten-Generaal Deel 1-2 read
+- [n/a] key-rebuild: needs a family whose verdict statistic passes on its control decodes first
+- [x] image-check: LAG-HIRES settled 10 of 14 at ~288 ppi; 6 doubt cells need the original (needs-physical-access)
+- [x] retry: syllabary and wordcode retries exhausted or [retired] (LAG-HIRES)
+Verdict: keep going: 1 internal gap; cheapest next: one browser-tool look at the KHA inventory for A 11, ~$1; retroboeken/NA inventory attempted with 0 hits; the six doubt cells wait on the KHA original (needs-physical-access)
