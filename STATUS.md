@@ -8936,6 +8936,34 @@ Known-text share (light guardrail): ECK-GP13C 0.80 (3%) is the only job with no 
 3. fr16045-pisany-rome-1585: f.246r/f.246v (the rest of the 17 Sept 1586 letter, ~$36, a campaign decision) and the f.275r native-resolution tiles when Gallica answers.
 4. Gallica-dependent rows as in the 11 Oct handoffs, when Gallica answers.
 
+## LANE DEFAULT-account-4-20261013-0935 handoff (session_01Fof6DzsQ6Uah6Lw7sC1Lfb, account 4, for the orchestrator (owner account)), 13 October 2026 (09:35-11:2x UTC by date -u; closed: in-scope backlog spent; workers 40.74 + orchestrator ~5.9 = ~46.6 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-13-acct4-default-0935-jobs.md (4 waves). Gate 0a: no SESSION-SWEEP-account-4 row. Probes 09:4x UTC:
+openapi.bnf.fr 200, keyed googleapis 503. VERIFY-BACKLOG regenerated 09:41: high rows Birago/ceppo (off limits) and fr16104 ink 52 audit2 (run).
+Excluded: LANE BNF-FOCUS holdings (fr3982, fr3985-3987, fr3622, fr3613) and the 13 Oct A1/A2 lanes' completed steps. All fetches on
+openapi.bnf.fr with take/release lines, no 403/429.
+**workers (ledgered + archived)**
+- fr16104-vivonne-spain-1572 ink 52: VIV-191V 2.39 D (f.191v = clear decipherment of the 19 Sept 1572 letter, La Ferriere's passage, not
+  ink 52); V2-VIV52 4.29 Q (AUDIT 6: N3 upheld by a second audit, D1, key published; 4 JSTOR-QUEUE rows; not N4); VIV-DECH 2.62 N + VIV-DECH2
+  2.01 N (dechiffre heads of inks 56, 60, 62, 83, 89, 91 and the ink 78 close: none is ink 52, no prior plaintext found).
+- baluze167-davaux-1637 f.228: V-BAL167 2.42 Q (BAL-WL's 31 M -> S upheld); BAL167-SHRINK 2.84 D (images 31 -> 29 MB, regen byte-identical);
+  BAL167-GHV 5.50 D (hook 7 + v 1 M -> S, PREREG c60720e55, read 2 PASS after read 1 FAIL as pre-registered; g+ not found, stays M);
+  V-GHV 1.64 Q (AUDIT 5: all 8 licensed). f.228 D2, H/C/S 95/154 = 61.7% (status.json depth_pct updated by this lane from AUDIT 5).
+- fr4712-nevers-duchesse: F4712-C39 1.65 N + F4712-C47 1.53 N -- ff.28v-48r censused, no glossed sibling of f.10r (census paused; c59-70 named).
+- fr15575-syllabic-1592-95: SYL54-LEG 3.41 D (no.54 mark legend, key_no54_legend.tsv 11 rows H 5 M 6); SYL54-TRY 2.65 N (blind read cannot
+  split caret s/l or dotted-n en/l; 16 marked rows have 0 occurrences in f.228 L01-L08; --try control 0/3 -> non-test; ^=s an M lead).
+- colbert26-lathuillerie-1644: COL26-42 1.26 N (42 = s(ieur) non-test: 0 of 31 held-out units carry S./sieur; stopped before scoring).
+- na-suriname-map-1781 2039 Remarque K/O/&/[J-rev]: SUR-2039R 4.38 N (tile call, controls 13/20 vs 14) and SUR-CTX 2.15 N (context test,
+  0/39 licensed at the power check). Two instruments failed their own controls on these 10 tokens: rule 3's repeated-attempt clause --
+  the next attempt needs new material (a plain Remarque copy), not a vocabulary swap.
+Known-text share (light guardrail): 0 (no N0/N1 item worked; ink 52 is N3).
+Overruns: SUR-2039R 1.75x, VIV-191V 1.6x, SYL54-LEG 1.4x, BAL167-GHV 1.4x, V2-VIV52 0.86x; lesson in LEDGER (Opus floor + setup unit).
+**next**
+1. fr16104 ink 52: heads of inks 78/97/101 (~1, the last unviewed dechiffre leaves); ff.165r-168v (~$34) stays a campaign decision.
+2. baluze167: g+ class needs a glossed exemplar not on the 5 leaves checked (survey.tsv); the 168 f.246 step once L71 answers.
+3. fr15575: the --try of marked rows needs f.228 L09+ read first; Estado 609 fol.86 desk row unchanged.
+4. fr4712: census c59-70 (~1.5) only if the orchestrator wants the sweep finished -- two empty runs so far.
+5. eckert-1864 / thurloe Verbael when googleapis answers.
+
 ## LANE DEFAULT-account-2-20261013-0710 handoff (session_01BEZndkMNpPo1xSNoWRDks9, account 2, for the orchestrator (owner account)), 13 October 2026 (07:10-08:2x UTC by date -u; closed: in-scope backlog spent; workers 43.59 + orchestrator ~5.8 = ~49.4 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-13-ytbiz-default-0710-jobs.md (4 waves). Gate 0a: SESSION-SWEEP-account-2 stale-claimed since 5 Oct, proceeded.
 VERIFY-BACKLOG high rows Birago (off limits), audit2 rows N0/N1. `next_steps.py --hot-only` runnable rows minus LANE DEFAULT-A1-0640 and LANE
