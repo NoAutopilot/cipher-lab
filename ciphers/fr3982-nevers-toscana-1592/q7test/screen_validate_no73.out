@@ -1,0 +1,2 @@
+{"mode": "validate", "key": "key_no73_codes.tsv", "level": 0.0, "texts": 100, "nulls_each": 100, "power": 0.99, "mean_S": -0.8587, "mean_null_a": -1.3819, "mean_null_b": -1.1255, "det_a": 1.0, "det_b": 0.99}
+{"mode": "validate", "key": "key_no73_codes.tsv", "level": 0.1, "texts": 100, "nulls_each": 100, "power": 0.53, "mean_S": -1.0321, "mean_null_a": -1.3163, "mean_null_b": -1.1277, "det_a": 0.84, "det_b": 0.53}
