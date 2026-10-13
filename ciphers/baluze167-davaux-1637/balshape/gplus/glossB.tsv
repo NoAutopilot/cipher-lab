@@ -1,0 +1,70 @@
+strip	row	x_left	x_right	text
+b170_c131	gloss	347	380	c
+b170_c131	gloss	380	412	o
+b170_c131	gloss	412	444	n
+b170_c131	gloss	444	477	s
+b170_c131	gloss	477	510	i
+b170_c131	gloss	510	542	n
+b170_c131	gloss	542	574	t
+b170_c131	gloss	574	607	e
+b170_c131	gloss	607	640	n
+b170_c131	gloss	640	672	t
+b170_c131	gloss	735	756	a
+b170_c131	gloss	808	857	u
+b170_c131	gloss	857	907	n
+b170_c131	gloss	907	956	e
+b170_c131	gloss	1082	1120	[?]
+b170_c131	gloss	1120	1159	r
+b170_c131	gloss	1159	1197	e
+b170_c131	gloss	1197	1235	u
+b170_c131	gloss	1235	1274	e
+b170_c131	gloss	1274	1312	s
+b170_c131	gloss	1360	1415	d
+b170_c131	gloss	1415	1470	e
+b170_c131	gloss	1575	1619	l
+b170_c131	gloss	1619	1662	o
+b170_c131	gloss	1662	1706	n
+b170_c131	gloss	1706	1749	g
+b170_c131	gloss	1749	1793	u
+b170_c131	gloss	1793	1836	e
+b170_c131	gloss	1836	1880	s
+b170_c131	cipher	247	336	90 with acute above
+b170_c131	cipher	383	446	71-like/ii-like sign with acute above
+b170_c131	cipher	504	551	h-like sign with acute above
+b170_c131	cipher	609	693	76
+b170_c131	cipher	740	819	gt (g-like with crossed t stroke)
+b170_c131	cipher	866	940	u with cross-tail (14-like)
+b170_c131	cipher	992	1071	4/y-like sign with long horizontal crossbar
+b170_c131	cipher	1129	1192	2/Z-like curled sign
+b170_c131	cipher	1229	1281	51 with acute above
+b170_c131	cipher	1344	1418	3i (3 with i)
+b170_c131	cipher	1475	1559	16
+b170_c131	cipher	1607	1690	43
+b170_c131	cipher	1748	1832	gt
+b170_c132	gloss	240	272	a
+b170_c132	gloss	300	345	l
+b170_c132	gloss	345	390	a
+b170_c132	gloss	465	502	c
+b170_c132	gloss	502	538	o
+b170_c132	gloss	538	574	n
+b170_c132	gloss	574	611	c
+b170_c132	gloss	611	648	l
+b170_c132	gloss	648	684	u
+b170_c132	gloss	684	720	s
+b170_c132	gloss	720	757	i
+b170_c132	gloss	757	794	o
+b170_c132	gloss	794	830	n
+b170_c132	gloss	975	1012	d
+b170_c132	gloss	1012	1050	e
+b170_c132	gloss	1125	1178	l
+b170_c132	gloss	1178	1230	a
+b170_c132	cipher	160	260	4-like sign with underline bar and tail
+b170_c132	cipher	270	355	40 with acute above
+b170_c132	cipher	410	500	90 with acute above
+b170_c132	cipher	545	590	q-like, long descender
+b170_c132	cipher	635	700	44 with acute above
+b170_c132	cipher	740	880	42 with acute above
+b170_c132	cipher	915	975	K
+b170_c132	cipher	1010	1085	gt
+b170_c132	cipher	1150	1225	19 with acute above
+b170_c132	cipher	1275	1330	51

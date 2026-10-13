@@ -1,0 +1,39 @@
+strip	row	x_left	x_right	text
+c131	gloss	328	420	c[?]o[?]n
+c131	gloss	420	560	s[?]i[?]s
+c131	gloss	560	741	t[?]e[?]n[?]t (word read as 'consentent'/'consistent'; letters not separable)
+c131	gloss	765	825	a (a-like, d-shaped)
+c131	gloss	850	1000	une
+c131	gloss	1045	1100	t/T (large initial, flourished)
+c131	gloss	1100	1320	r e u e s (read 'treues')
+c131	gloss	1373	1500	de
+c131	gloss	1590	1882	longues (l o n g u e s)
+c131	cipher	242	336	90 with acute above
+c131	cipher	378	452	71-like, 7 + 1 with acute
+c131	cipher	504	557	h-like (4/h with open top)
+c131	cipher	604	693	76 with accent above
+c131	cipher	735	830	gt (g-like with crossed t stroke)
+c131	cipher	861	935	u/4-like sign with crossing stroke
+c131	cipher	998	1082	t-like cross over y/4 shape (cross sign)
+c131	cipher	1139	1202	Z-like sign with curl (ʓ)
+c131	cipher	1228	1276	51
+c131	cipher	1349	1418	3i (3 with i/accent)
+c131	cipher	1470	1554	16
+c131	cipher	1612	1701	43
+c131	cipher	1733	1848	gt
+c132	gloss	236	290	a
+c132	gloss	320	422	la
+c132	gloss	458	890	conclusion (c o n c l u s i o n; letters not separable)
+c132	gloss	956	1040	de
+c132	gloss	1100	1352	la
+c132	cipher	160	235	4-like sign with underline stroke
+c132	cipher	270	355	40 with accent
+c132	cipher	415	495	90 with accent
+c132	cipher	535	580	q-like (long descender)
+c132	cipher	635	700	44 with accent
+c132	cipher	730	800	72 with accent
+c132	cipher	915	975	K
+c132	cipher	1015	1110	gt (crossed)
+c132	cipher	1160	1230	19 with accent
+c132	cipher	1275	1330	51
+c132	cipher	1390	1440	edge: partial sign, cut

@@ -18,3 +18,8 @@ PREREG-BAL-GHV.md. New exemplar E-s2 = the gloss-fixed hook-form s of f.258r ('e
 | g+ | n | not tiled | not tiled | untested: no g+ form found on 5 glossed Baluze 170 leaves (f.233r, 239r, 258r, 301r, 320v-321r); stays M |
 | gam | u | -- | -- | untested (no u exemplar), unchanged |
 The BAL-WL "no" on hook/v is read as allograph (wrong exemplar), not value: both rows above are superseded for hook and v.
+
+## BAL167-GVER (13 Oct 2026, LANE DEFAULT-A2-2013, account 2): g+ gloss letter from the f.124 exemplars (PREREG-BAL-GPLUS.md)
+| class | value | step | result | status |
+|---|---|---|---|---|
+| g+ ("gt") | n (Tomokiyo block, SIG-B228) | (a) two blind gloss reads of the f.124r/v strips, x-position settle rule | NOT SETTLED: reads disagree on 2 of 3 tokens (t+a vs a; e+l vs de); word-level agreement only | stays M; no tile read; lead (untested): key-anchored sequence gives gt = n in 'consentent' and 'conclusion' |

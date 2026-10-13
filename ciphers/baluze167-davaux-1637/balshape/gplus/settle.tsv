@@ -1,0 +1,4 @@
+token	gt_x_A	gt_x_B	window_pm20	letters_over_A	letters_over_B	H_neighbours_used	agree
+c131_gt1 (after 76)	735-830	740-819	715-850	t (end of 'consistent', 328-741, letters spread evenly) + a (765-825)	a (735-756)	none (76, crossed u4 not H-graded by both reads' sign labels)	no
+c131_gt2 (line-final)	1733-1848	1748-1832	1713-1868	g u e s (inside 'longues' 1590-1882, evenly spread)	g u e s (inside 'longues' 1575-1880, evenly spread; read B: letter x not measured)	43 (lo) left	string agrees but letters are an even split, not a placement
+c132_gt (after K)	1015-1110	1010-1085	990-1130	e of 'de' (956-1040) + l of 'la' (1100-1352)	d e ('de' 975-1050)	19' right (key du; gloss over it 'de'/'la')	no
