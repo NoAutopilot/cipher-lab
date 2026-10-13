@@ -525,3 +525,40 @@ Read so far: 6 of 37 f.10r tokens at C under S1 (16%), f13_carry.tsv; 31 tokens 
 - [x] image-check: f.10r read from crops (DUCH-KEY1B), f.13r two blind passes agree on all 34 codes (DUCH-F13); code 40 gloss third model read a NON-TEST (F4712-40), model reader retired for that gloss, owner's eye ASKS 162
 - [x] retry: hand question retried by a blind digit test (R11A-F4712, NON-TEST) and settled by the person's look (ASKS 113)
 Verdict: keep going: 2 internal gaps; cheapest next: leaf census of f.13v onward for a glossed sibling, ~$2 (Gallica 403 at 18:5x UTC 11 Oct; or the no.71 all-code check with native crops, ~$2)
+
+## F4712-CENSUS (worker for LANE DEFAULT-A1-0640, owner account, 13 Oct 2026, 06:52-07:2x UTC by date -u): leaf census f.13v-f.24r -- no cipher, no glossed sibling
+Brief `.claude/briefs/runs/2026-10-13-acct1-default-0640-jobs.md` "### F4712-CENSUS". Prior work: `tools/prior_work.py fr4712-nevers-duchesse
+--item-spec 'shelfmark=BnF fr.4712;folio=13v-24;...' --step-type lookup --fetch` exit 4 on five own-work LEADs (DUCH-LEAVES/DUCH-F13 covered
+ff.9-13r only; own claim), all recorded CLEAR in prior-work.tsv; solver caches CLEAR; aymeloglu cache and editions UNCHECKED-NET (generic).
+Tomokiyo (nevers.htm, BnF fr.4712) lists only f.7, ff.9-12, f.13 and f.35 (a letter to Pasquier, 1592, read by G. Lasry in 2022) in this
+volume -- nothing between f.13 and f.35.
+Host: openapi.bnf.fr IIIF v3 (ark btv1b9058289m), 14 requests, all HTTP 200: canvases f23-f34 at width 600, then f25 and f26 at width 1600.
+Images in `images/census/`, entries under `census_f13v_on` in images/manifest.json. No transcription, no subagent call.
+- Map: canvas = two-page opening, foliation visible top right: f23 = f.13v | f.14r ... f32 = f.22v | f.23r, **f33 duplicates f32**,
+  f34 = f.23v | f.24r. So the twelve canvases cover f.13v-f.24r.
+- Per leaf in `leaves_f13v_on.tsv`. **No figure runs, no dotted codes, no interlinear code glosses on any leaf f.13v-f.24r** at 600 px; the
+  densest small-hand letter (f.16r-17r) was re-checked at 1600 px: clear French prose, one caret insertion ("Montigny", a correction).
+  Contents: a formal letter in clear (f.14r-v); a memorandum (f.15r-v); a letter in clear (f.16r-17r, postscript, dated "... Juing", M);
+  a letter (f.18r); blank or faint f.18v-19r; an address on f.19v ("Monsieur mon frere ... Duc de Nevers", M, one look); a dense letter
+  (f.20r-21v); "Articles du sieur de ..." (f.22r); f.22v two lines; blanks f.23r, f.23v (docket strip); a memorandum f.24r.
+- Hand like f.10r/f.13r: not settled at 600 px for most leaves ("unsure" in the TSV); f.14r and f.22r are clearly other formal hands.
+- Result: the sibling route of the Escalation is closed for f.13v-f.24r: no glossed sibling in the f.10r figure system there. New tokens 0.
+- Not done (outside the brief): canvas 35+ (f.24v onward; f.35 is Tomokiyo's Pasquier letter, a different correspondent); a native look at
+  the f.17v sideways endorsement and the f.23v docket strip (may name recipients; not cipher).
+
+## Remaining gaps (F4712-CENSUS, 13 Oct 2026)
+Read so far: 6 of 37 f.10r tokens at C under S1 (16%), f13_carry.tsv; 31 tokens unread
+- f.10r tokens outside f.13r's H-glossed codes (31 of 37) - blocker: no-key-material; key no.1 is a non-test at 37 tokens (DUCH-KEY1B), key no.4 cannot cover f.10r (DUCH-KEY4), key no.71 is a control-backed negative as an unmarked letter text (F4712-K71); ff.13v-24r carry no cipher (F4712-CENSUS); next: leaf census of canvas 35+ (f.24v to the volume's end, ~108 canvases, 600 px, two contact sheets per 12 canvases), ~$2 per 12 canvases via openapi.bnf.fr
+- key no.71 as an all-code text (dots/overlines too faint at 1800 px) - blocker: not-attempted; needs the no.71 word columns 18-51/60-91 read and one native-resolution look at f.10r's figures for marks; next: native crops of fr.3995 f.133r word columns and f.10r canvas 18 via openapi.bnf.fr, ~$2
+- same-writer basis of the six C carries - blocker: not-attempted; one person's eye vs our 8-form reading, the machine digit test was a NON-TEST; next: a digit-rich f.13r/f.10r comparison or a palaeographer's look, ~$2
+- f.13r code 40 gloss (Vill. vs Lill.) and code 93 conflict - blocker: waiting-on ASKS 162 (the owner's eye on images/f13r/g40 t2/t4 and recon_1/recon_2 tiles 93a/93b); model-reader instrument retired for this gloss (F4712-40 NON-TEST, g40_read.tsv); neither code occurs on f.10r under S1
+
+## Escalation (F4712-CENSUS, 13 Oct 2026)
+- [ ] siblings: ff.13v-24r censused, no cipher (F4712-CENSUS); canvas 35+ (f.24v onward) unviewed; planned: same census, 12 canvases per job
+- [x] clear-pages: ff.9, 11, 12 checked, no cipher (DUCH-LEAVES); f.13r's glossed codes used as the crib (DUCH-F13); ff.13v-24r clear (F4712-CENSUS)
+- [x] known-keys: key no.1 applied (non-test, DUCH-KEY1B), key no.4 tried (design mismatch, DUCH-KEY4), key no.71 applied with matched controls (control-backed negative as a letter text, F4712-K71; all-code reading kept as a gap)
+- [x] print: Gomberville's Mémoires (1665) full-text searched (NV-INTAKE, 3 Oct 2026), no cipher passage printed
+- [n/a] key-rebuild: 37 tokens is far below any cryptanalytic length for a code of this size
+- [x] image-check: f.10r read from crops (DUCH-KEY1B), f.13r two blind passes agree on all 34 codes (DUCH-F13); code 40 gloss third model read a NON-TEST (F4712-40), model reader retired for that gloss, owner's eye ASKS 162
+- [x] retry: hand question retried by a blind digit test (R11A-F4712, NON-TEST) and settled by the person's look (ASKS 113)
+Verdict: keep going: 2 internal gaps and the sibling census; cheapest next: census of canvas 35-46 (f.24v onward) at 600 px via openapi.bnf.fr, ~$2, or the no.71 all-code check with native crops, ~$2
