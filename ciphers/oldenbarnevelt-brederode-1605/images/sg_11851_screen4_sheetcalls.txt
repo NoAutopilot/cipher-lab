@@ -1,0 +1,52 @@
+# OBRED-11851B calls, inv. 11851 sheets (seed 11852), written before key1.json opened. call: CTRL-CIPHER / CTRL-PLAIN / CTRL-PS / scan; numeral block y/n; heading notes
+1 A scan n register p.699, Missive Gedeputeerden Landtschap Drenthe dat 22 decem [1604]; Staten van Zeelandt
+1 B CTRL-CIPHER y French letter + figure-group table
+1 C scan n register p.696, Missive ... dat 22 decem 1604
+1 D CTRL-PLAIN n loose-paper bundle with 1605 slip
+1 E scan n register p.700
+1 F CTRL-PS y German letter, figure-group postscript under signature
+1 G scan n register p.701, Missive Staten van Zeelandt / ... dat 24 decem 1604
+1 H scan n register p.698
+1 I scan n register p.697, Missive Staten van Zeelandt dat 23 decem 1604
+2 A scan n register p.706, Missive Gouverneur van Bergh(?) dat 20 decem 1604 ex 30 decem
+2 B scan n register p.705
+2 C CTRL-PLAIN n bundle with 1605 slip
+2 D scan n register p.704
+2 E scan n register p.703, Missive Commissarissen te Sluys dat 26 decem 1604 ex 29 decem
+2 F CTRL-CIPHER y
+2 G CTRL-PS y
+2 H scan n register p.702, French entry signed ... Sluys(?) 24 novembre 1604; Staten Generaal 29 decem 1604
+2 I scan n register p.707, Magistraet der Stadt Nymegen(?) dat 30 decem
+3 A scan n register p.713, Missive Ontfanger van Zeelandt(?) dat 26 Octob 1604 ex 30 decem
+3 B CTRL-PS y
+3 C CTRL-CIPHER y
+3 D scan n register p.710, Missive ... dat 30 decem 1604; Simon Bossaert(?) 
+3 E CTRL-PLAIN n
+3 F scan n register p.709
+3 G scan n register p.708, Missive Simon Bossaert(?) dat 16 decem 1604 ex 30
+3 H scan n register p.712, Missive Raad van State dat 23 Octob 1604 ex 30 decem
+3 I scan n register p.711, Bylage marginal; dated 24 Augusti 1604
+4 A scan n register p.718 with paper strip; Bylage goods list (cloth packs, Amsterdam, money column)
+4 B scan n register p.716, goods list July 1604, money column
+4 C scan n register p.714, Bylage goods list Julius 1604, money column
+4 D scan n register p.718 (strip moved: duplicate shot of A's opening), goods list
+4 E scan n register p.715, goods list, money column
+4 F CTRL-PS y
+4 G CTRL-CIPHER y
+4 H scan n register p.717, goods list July-Augustus 1604, money column
+4 I CTRL-PLAIN n
+5 A scan n register p.721, goods list September 1604, money column
+5 B scan n register p.720, goods list Sept 1604, money column
+5 C CTRL-PLAIN n
+5 D CTRL-PS y
+5 E scan n register p.723, French-language entry (East India Company matter?) dated 20 Aout 1604
+5 F scan n register p.719, goods list Aug-Sept 1604
+5 G CTRL-CIPHER y
+5 H scan n register p.722, end of goods list (Summa ... September), exhibitum 30 decem 1604; Compagnie entry
+5 I scan n register last written page (French), dated ... decembre 1604; facing page blank
+6 A scan n blank endleaves
+6 B scan n back cover
+6 C CTRL-PLAIN n
+6 D scan n blank endleaves / pastedown
+6 E CTRL-PS y
+6 F CTRL-CIPHER y

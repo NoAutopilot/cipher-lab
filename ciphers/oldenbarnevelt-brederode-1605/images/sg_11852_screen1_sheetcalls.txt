@@ -1,0 +1,86 @@
+# OBRED-11851B calls, inv. 11852 sheets (seed 1605), written before key2.json opened
+1 A CTRL-PS y
+1 B scan n register p.49
+1 C CTRL-CIPHER y
+1 D scan n register p.45, regiment/company list (Fransoysen, Engelschen, garrison places), 24 feb 1605; name columns, no figures
+1 E CTRL-PLAIN n
+1 F scan n register p.50, Frederick van Coeverden(?) 25 January 1605; Staten Generael 26 februari 1605
+1 G scan n register p.48, Missive ... Nymegen(?) dat 21 feb 1605 ex 22 feb; Missive Bronckhorst(?) dat 19 feb ex 23 feb
+1 H scan n register p.46, company list, 25 februarius 1605 ('s Gravenhage)
+1 I scan n register p.47, Oostind. Compagnie; Missive van ... dat 29 Jan 1605 ex 28 feb 1605
+2 A scan n register p.51, Staten Generael den 26 feb 1605
+2 B CTRL-PLAIN n
+2 C scan n register (p.52-53 area) octrooi text
+2 D scan n register p.53, 26 februarius 1605
+2 E scan n register p.55, Staten Generael 26 feb 1605
+2 F scan n register p.52?, octrooi with marginal note
+2 G CTRL-CIPHER y
+2 H scan n register p.54, Staten Generael 26 feb 1605 (England/George Gilpin?)
+2 I CTRL-PS y
+3 A scan n register p.59, Bomberg(?) dat 23 february ex 2 Maert 1605; company list with counts
+3 B scan n register p.60, signed C. Bomberg(?) 1605; Overgebracht 6 Maart 1605; money sums in margin
+3 C scan n register p.56, octrooi text
+3 D scan n register p.57, Raad van Brabant dat 2 ex 26 feb 1605; Ridderschap ... Nymegen dat 17 feb ex 2 Maert 1605
+3 E scan n register p.58, Ridderschap ... Zutphen(?); Admiraliteyt Zeelandt(?) dat 1 febr ex 2 Maert 1605
+3 F CTRL-PS y
+3 G scan n register p.61, money sums (account), Lieutenant ... 
+3 H CTRL-PLAIN n
+3 I CTRL-CIPHER y
+4 A scan n register p.64, Missive Commissaris Bomberg(?) dat 3 ex 5 Maert 1605, signed Geeraert Coren(?)
+4 B scan n register p.62, Coren dat 1 ex 5 Maert 1605
+4 C scan n register p.63?, money account; Staten Generael 6 Maert 1605; name list with sums
+4 D scan n register p.65, name list with sums (Summa 23961); Coren dat 3 Maert 1605
+4 E CTRL-CIPHER y
+4 F CTRL-PLAIN n
+4 G scan n register p.66, Johan Hleman(?) Vlissingen 1 Maert 1605; Bylage list of captains with counts
+4 H scan n register p.65b?, Bomberg(?) Middelburg 5 Maert 1605; Commissaris Hleman dat 3 ex 8 Maert 1605
+4 I CTRL-PS y
+5 A scan n register p.68, signed Gerrit Coren(?) 5 Maert 1605; French entry signed Rodolphe Wiswooll(?); Magistraet ... Nymegen dat 4 Maert 1605
+5 B scan n register p.70
+5 C scan n register p.71
+5 D CTRL-PS y
+5 E CTRL-PLAIN n
+5 F scan n register p.72
+5 G scan n register p.73, Nymegen 10 Maerte 1605
+5 H scan n register p.69, Staten Generael 1605; Overgebracht ... Maert 1605
+5 I CTRL-CIPHER y
+6 A CTRL-PLAIN n
+6 B CTRL-PS y
+6 C scan n register p.76, Leeuwarden 19(?) Maert 1605; Bylage
+6 D CTRL-CIPHER y
+6 E scan n register p.77
+6 F scan n register p.75, Drossaert ... Doesburgh(?) dat 7 ex 22(?) Maert 1605
+6 G scan n register p.79?, Graef W.L. van Nassau dat ... Maert 1605; Staten Generael 1605
+6 H scan n register p.78, Leeuwarden ... Maert 1605, Willem Lodewijk Graf zu Nassau; extract Staten Generael 25 Maert 1605
+6 I scan n register p.74, Magistraet van Nymegen dat 3 Maert 1605 (= probe scan 80)
+7 A scan n register p.81, Graef W.L. van Nassau dat 12 ex 2x Maert 1605; Gecommitteerden ... Zutphen dat ... ex 28 Maert 1605
+7 B scan n register p.85, Gerrit Coren dat 2x Maert 1605
+7 C CTRL-PLAIN n
+7 D CTRL-PS y
+7 E scan n register p.82, Staten Generael 2x Maert 1605
+7 F scan n register p.80, French letters: signed Rodolphe Wiswoot(?) 1605; 'Messieurs' from Cleves(?) re Englishman Thomas Wright, dat 4 ex 24 Maert 1605 -- German-region sender, not Brederode
+7 G scan n register p.84, W.L. Graf zu Nassau; Ridderschap Overijssel dat 14 feb; Magistraet van Oldenzaal(?) dat 20 Maert 1605
+7 H scan n register p.83, Staten Generael 31 Maert 1605; Graef W.L. van Nassau dat 1 ex ... 1605
+7 I CTRL-CIPHER y
+8 A CTRL-PLAIN n
+8 B scan n register p.90, list (wagons, tents), Leeuwarden 3 April 1605
+8 C scan n register p.88, Exhibitum 2 April 1605
+8 D CTRL-PS y
+8 E scan n register p.89, Ammunitie list (quantities)
+8 F scan n register p.86, Raad van State dat 31 Maert 1605; Drossaert(?) Dueck(?) dat 5 Jan 1605
+8 G scan n register p.87, Bylagen, Derick Pyl(?) 1605
+8 H scan n register p.91, Leeuwarden 29 maert 1605; Bylage
+8 I CTRL-CIPHER y
+9 A CTRL-PLAIN n
+9 B scan n register p.92, Bylage
+9 C scan n register p.94, tariff list with sums
+9 D scan n register p.93, tariff list (Het Gemael...) with sums
+9 E CTRL-CIPHER y
+9 F scan n register p.95, tariff list with sums
+9 G scan n register p.97, Amsterdam 2(?) April 1605; Magistraet Emden dat ... ex ... April 1605
+9 H CTRL-PS y
+9 I scan n register p.96, Missive van den Heer Coy(?) dat 2 ex 4 April 1605
+10 A CTRL-CIPHER y
+10 B CTRL-PS y
+10 C CTRL-PLAIN n
+10 D scan n register p.98, Missive ... dat 6 ex 24(?) April 1605, French 'Messeigneurs'; Amsterdam ... 1605

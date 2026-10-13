@@ -1195,3 +1195,84 @@ Read so far: unmeasured; nothing decoded -- no. 92 (121 groups) and the scan-187
 - [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv two blind passes agreeing 59/59 (OBRED-187)
 - [x] retry: Den Tex (abridged edition) read twice (25 Sept; OBRED-SG 10 Oct 2026): no cipher, key or Stettin note; brievenboek 11851 596-700 completed with controls (OBRED-11851, OBRED-641)
 Verdict: keep going: 1 internal gap; cheapest next: the 6017 stride-1 fill from scan 73 (342 scans left, ~$3 per ~60-90 scans with controls) or 11851 701-733 plus 11852 Jan-Mar 1605 (~90 requests, ~$3); the Nov-Dec 1604 exhibitum window of 11851 showed no register copy of the Stettin letter (OBRED-641)
+
+## OBRED-11851B (13 Oct 2026, 21:49-22:0x UTC by date -u, account 4, Opus; for LANE DEFAULT-A4-2135)
+
+Brief: the States-side trace step OBRED-641 named: NA 1.01.02 inv. 11851 (brievenboek 1604) scans 701-733 (end of 1604), and a
+Brederode-heading look at inv. 11852 (1605) for January-March 1605. Route, sizes and controls are OBRED-641's. Nothing decoded; no gate
+computed. (Called OBRED-11851B here so it is not confused with the 11 Oct OBRED-11851 section above.)
+
+- Prior-work step: `prior_work.py oldenbarnevelt-brederode-1605 --item-spec 'NL-HaNA 1.01.02 inv. 11851 scans 701-733; inv. 11852
+  Jan-Mar 1605' --step-type read --fetch` exit 4: 1 LEAD (this job's own claim), 1 LOOK (target-level crop, not a register scan), 2
+  UNCHECKED (solver caches by unit, Tomokiyo), 2 UNCHECKED-NET (aaymeloglu cache, editions). The four non-net rows were recorded CLEAR in
+  `prior-work.tsv` (the only earlier unit-keyed work on 11851 is OBRED-SG, OBRED-11851 and OBRED-641, scans 596-700; 11852 was never
+  viewed). Checks 2-4 do not apply beyond the folder's Premise check, because this is a register screen and reads nothing. Check 5 does
+  not apply.
+- Route: 11851 by METS `69557eee-...` (1 request) and `screen_tools/na_fetch.py`, scans 701-733 at `/full/700,/0/default.jpg`. 11852
+  had no METS id on record. One item-page request
+  (`www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/11852`) gave the embedded scan list: 522 scans, each with its IIIF base.
+  The bases used are in `screen_tools/na_11852_iiif_map.json`, and `screen_tools/na_fetch_map.py` fetches from that map. Requests were
+  2.1 s apart, with a descriptive User-Agent.
+- Locating Jan-Mar 1605 in 11852: five probe scans (1, 40, 80, 120, 160) were read by eye. Scan 1 is the cover. Scan 40 is printed p.35,
+  with entries dated about 26 Feb 1605. Scan 80 is p.74, Nijmegen 3 March 1605. Scan 120 is p.114, late April 1605. Scan 160 is p.155,
+  May 1605. **The register's run starts in late February, so January to mid-February 1605 sits in scans 2-39.** Within the request cap I
+  took scans 50-104, the arrival window of the 21 Feb 1605 Heidelberg letter (no. 92). These run from about 24 Feb to about 6 April 1605
+  by exhibitum. **Scans 2-49 (Jan to about 23 Feb 1605) were not screened.** Scan 40 was seen only as a probe tile, with no control.
+- Contact sheets: `screen_tools/contact_sheets.py`, 3x3 sheets of six scans plus the three disk controls of OBRED-S1..S3 per sheet
+  (CTRL-CIPHER = inv. 2016 scan 31, CTRL-PLAIN = inv. 6016 order 261, CTRL-PS = scan 187 at 1200 px). Seeds were 11852 (11851 sheets) and
+  1605 (11852 sheets), with tile letters only. Every call was written to `images/sg_11851_screen4_sheetcalls.txt` and
+  `images/sg_11852_screen1_sheetcalls.txt` before the keys (`images/*_sheetkey.json`) were opened. There was one reader, this worker's own
+  eye, and no subagent. The sheets stay outside git. `screen_tools/regen_11851b.sh` re-derives the scans and sheets, and key1 was
+  re-derived byte-identical from the same seed.
+- **Controls: 18 of 18 (6 sheets of 11851) and 30 of 30 (10 sheets of 11852) were placed correctly, checked mechanically against the
+  keys. No sheet is a non-test.**
+- **Result, inv. 11851 scans 701-733** (`images/sg_11851_screen4.tsv`, 33 rows): **no numeral-code block, key table or interlinear
+  decipherment.** Printed pp. about 696-723:
+  - pp. 696-713 are fair copies of letters with exhibitum dates 22-30 Dec 1604, from the Gedeputeerden of Drenthe, the Staten van
+    Zeelandt, the Commissarissen at Sluys, the Magistraet of Nijmegen and the Raad van State. Some of these letters are **dated October
+    1604 but entered with exhibitum 30 Dec 1604** (pp. 712-713: "dat 23 Octob 1604 ... ex 30 decem"), so the clerk did enter some letters
+    weeks after their date.
+  - pp. 714-722 are a goods list of July-September 1604 (cloth packs, Amsterdam), with money columns.
+  - p. 723 is a French entry.
+  - The volume then ends in blank endleaves and the back cover.
+  - **No Brederode, Stettin or German-sent heading was seen.** Headings were read at 700 px, so a name inside a long entry could escape.
+- **Result, inv. 11852 scans 50-104** (`images/sg_11852_screen1.tsv`, 55 rows): **no numeral-code block, key table or interlinear
+  decipherment.** Printed pp. about 45-98, exhibitum about 24 Feb to about 6 April 1605. The register mixes incoming missives (Raad van
+  Brabant, Ridderschap of Nijmegen and of Zutphen, the Admiralty of Zeeland, Commissarissen Bomberg and Coren at Middelburg and
+  Vlissingen, Willem Lodewijk of Nassau at Leeuwarden, Raad van State, the Magistraet of Emden) with States General acts and octrooien of
+  26 Feb, 6 March and 25-31 March 1605. Figures seen are:
+  - company and regiment lists with counts (pp. 45-46, 59, 66)
+  - money accounts (pp. 60-65)
+  - an ammunition list (p. 89)
+  - tariff lists (pp. 93-95)
+
+  None of these is a code-group run. Two French or foreign-sent entries were looked at closely at sheet size: p. 80, a letter about an
+  Englishman Thomas Wright, apparently from Cleves, and p. 98, "Messeigneurs", 6 April 1605. **Neither carries a Brederode, Heidelberg or
+  Stettin heading.** **No Brederode, Heidelberg or Palatine heading was seen in scans 50-104.** The page numbers in the TSV are read at
+  700 px and some are approximate (marked "?").
+- Where the Stettin and Heidelberg letters were not found: inv. 11851 scans 596-733 (all of late Oct to the end of the 1604 register)
+  and inv. 11852 scans 50-104 (about 24 Feb to 6 April 1605), at heading level. A plausible reading, graded M and not established: the
+  brievenboek registers ordinaris letters from the provinces, officers and colleges, while an agent's letters to Oldenbarnevelt or to the
+  griffier went into the liassen (Hoogduytschlandt inv. 6034/6035, not digitised) and were not copied here. This explains the absence
+  but is not tested.
+- Requests: `service.archief.nl` / `www.nationaalarchief.nl` **94** (1 item page, 1 METS, 33 scans of 11851, 59 scans of 11852), all
+  HTTP 200, no 403/429/challenge. The brief's cap was 95. NA take and release lines are in ROOM.md.
+- Limits: 700 px sheets, one reader. A block of a dozen groups or fewer inside prose could escape. The controls are a French cipher letter
+  and the target's own postscript. 11852 scans 2-49 and 105-522 were not screened.
+
+## Remaining gaps (OBRED-11851B, 13 Oct 2026)
+Read so far: unmeasured; nothing decoded -- no. 92 (121 groups) and the scan-187 postscript (59 groups) are both unread; they share 26 values, above chance (OBRED-187)
+- no. 92 and the 187 postscript, pooled (180 tokens, 130 distinct values) - blocker: too-short; OBRED-DP: name band 588-751 stands alone (G2 PASS), shared order beyond one pair absent (G1 FAIL), so a crib test is unfalsifiable at this N; more text in the same table is the step
+- the later liassen NA 1.01.02 inv. 6017-6024 (1614-1637, 4,826 scans, all digitised) - blocker: not-attempted; only a stride-3 look of 6017 plus the stride-1 fill of scans 2-36 (OBRED-11851) and 38-72 (OBRED-641, controls 12/12, no numeral block); next: the other 342 unlooked scans of 6017 at stride 1 from scan 73 (~350 requests over several NA sessions, ~$3), only if a later cipher use by the agent in 1614-1617 is worth testing
+- the 1605 Swiss-mission dossier NA 1.01.02 inv. 12569.38 - blocker: needs-physical-access; not digitised (OBRED-S2); owner-side step: a copy enquiry to the National Archives, not queued
+- States-side trace of the 17 Oct 1604 and 21 Feb 1605 letters - blocker: needs-physical-access for the originals (Liassen Hoogduytschlandt inv. 6034/6035, Loopende 4909/4910 not digitised); digitised remainder: brievenboek inv. 11851 scans 596-733 all looked at with controls (OBRED-SG, OBRED-11851, OBRED-641, OBRED-11851B 18/18) and inv. 11852 scans 50-104 (about 24 Feb - 6 Apr 1605, OBRED-11851B, controls 30/30): no numeral block, no Brederode, Stettin or Heidelberg heading; the register appears to copy ordinaris letters, not an agent's letters (M); next: 11852 scans 2-49 (Jan - about 23 Feb 1605; ~50 NA requests, ~$2.5), a low-yield step since neither letter's arrival window showed a register copy
+
+## Escalation (OBRED-11851B, 13 Oct 2026)
+- [x] siblings: scan 187 is a second code text sharing 26 values with no. 92 (OBRED-187); all of inv. 6016 looked at (OBRED-0259, OBRED-S1, OBRED-S2, YX-OBR): no third numeral block; 6017 stride 3 (OBRED-S3) plus scans 2-36 and 38-72 at stride 1 (OBRED-11851, OBRED-641): none
+- [x] clear-pages: the clear letter of 142r-143r read by eye (OBRED-187: Stettin, 17 Oct 1604, to the griffier of the States General); it carries no gloss of the code
+- [x] known-keys: the 10 Aug 1598 Van Aerssen slip excluded for no. 92 by design (R10-OBRED98); Buzanval syllabary inv. 2028 excluded (R9-OBRED4); DECODE 1600s and Palatine/Hessian keys screened (OLD-DKEY, R8-OBRED2, R9-OBRED3)
+- [x] print: no. 92 settled by "Search log", "Web and blog check", "Premise check"; the 17 Oct 1604 letter is not in Veenendaal II (OBRED-187); Resolutiën S.G. XIII has no decipherment or key note near the Brederode entries (OBRED-DP)
+- [ ] key-rebuild: design_prior and structure done (OBRED-DP); a crib/run-length test waits on a third text in the same table, none found in 6016, 6017 (part), 11851 596-733 or 11852 50-104; next: a third text from the 6017 fill or 11852 scans 2-49, then the crib consistency test with a synthetic matched control, ~$3
+- [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv two blind passes agreeing 59/59 (OBRED-187)
+- [x] retry: Den Tex (abridged edition) read twice (25 Sept; OBRED-SG 10 Oct 2026): no cipher, key or Stettin note; brievenboek 11851 596-733 completed with controls (OBRED-11851, OBRED-641, OBRED-11851B) and 11852 50-104 screened (OBRED-11851B)
+Verdict: keep going: 1 internal gap; cheapest next: the 6017 stride-1 fill from scan 73 (342 scans left, ~$3 per ~60-90 scans with controls); 11852 scans 2-49 (~$2.5) is lower yield, since the 1604 register to its end and the Feb-Apr 1605 arrival window of no. 92 showed no register copy of either letter (OBRED-11851B)

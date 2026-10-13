@@ -1,0 +1,56 @@
+inv	scan	sheet	tile	numeral_block	note
+11852	50	1	D	n	register p.45, regiment/company list (Fransoysen, Engelschen, garrison places), 24 feb 1605; name columns, no figures
+11852	51	1	H	n	register p.46, company list, 25 februarius 1605 ('s Gravenhage)
+11852	52	1	I	n	register p.47, Oostind. Compagnie; Missive van ... dat 29 Jan 1605 ex 28 feb 1605
+11852	53	1	G	n	register p.48, Missive ... Nymegen(?) dat 21 feb 1605 ex 22 feb; Missive Bronckhorst(?) dat 19 feb ex 23 feb
+11852	54	1	B	n	register p.49
+11852	55	1	F	n	register p.50, Frederick van Coeverden(?) 25 January 1605; Staten Generael 26 februari 1605
+11852	56	2	A	n	register p.51, Staten Generael den 26 feb 1605
+11852	57	2	C	n	register (p.52-53 area) octrooi text
+11852	58	2	F	n	register p.52?, octrooi with marginal note
+11852	59	2	D	n	register p.53, 26 februarius 1605
+11852	60	2	H	n	register p.54, Staten Generael 26 feb 1605 (England/George Gilpin?)
+11852	61	2	E	n	register p.55, Staten Generael 26 feb 1605
+11852	62	3	C	n	register p.56, octrooi text
+11852	63	3	D	n	register p.57, Raad van Brabant dat 2 ex 26 feb 1605; Ridderschap ... Nymegen dat 17 feb ex 2 Maert 1605
+11852	64	3	E	n	register p.58, Ridderschap ... Zutphen(?); Admiraliteyt Zeelandt(?) dat 1 febr ex 2 Maert 1605
+11852	65	3	A	n	register p.59, Bomberg(?) dat 23 february ex 2 Maert 1605; company list with counts
+11852	66	3	B	n	register p.60, signed C. Bomberg(?) 1605; Overgebracht 6 Maart 1605; money sums in margin
+11852	67	3	G	n	register p.61, money sums (account), Lieutenant ... 
+11852	68	4	C	n	register p.63?, money account; Staten Generael 6 Maert 1605; name list with sums
+11852	69	4	D	n	register p.65, name list with sums (Summa 23961); Coren dat 3 Maert 1605
+11852	70	4	A	n	register p.64, Missive Commissaris Bomberg(?) dat 3 ex 5 Maert 1605, signed Geeraert Coren(?)
+11852	71	4	H	n	register p.65b?, Bomberg(?) Middelburg 5 Maert 1605; Commissaris Hleman dat 3 ex 8 Maert 1605
+11852	72	4	G	n	register p.66, Johan Hleman(?) Vlissingen 1 Maert 1605; Bylage list of captains with counts
+11852	73	4	B	n	register p.62, Coren dat 1 ex 5 Maert 1605
+11852	74	5	A	n	register p.68, signed Gerrit Coren(?) 5 Maert 1605; French entry signed Rodolphe Wiswooll(?); Magistraet ... Nymegen dat 4 Maert 1605
+11852	75	5	H	n	register p.69, Staten Generael 1605; Overgebracht ... Maert 1605
+11852	76	5	B	n	register p.70
+11852	77	5	C	n	register p.71
+11852	78	5	F	n	register p.72
+11852	79	5	G	n	register p.73, Nymegen 10 Maerte 1605
+11852	80	6	I	n	register p.74, Magistraet van Nymegen dat 3 Maert 1605 (= probe scan 80)
+11852	81	6	F	n	register p.75, Drossaert ... Doesburgh(?) dat 7 ex 22(?) Maert 1605
+11852	82	6	C	n	register p.76, Leeuwarden 19(?) Maert 1605; Bylage
+11852	83	6	E	n	register p.77
+11852	84	6	H	n	register p.78, Leeuwarden ... Maert 1605, Willem Lodewijk Graf zu Nassau; extract Staten Generael 25 Maert 1605
+11852	85	6	G	n	register p.79?, Graef W.L. van Nassau dat ... Maert 1605; Staten Generael 1605
+11852	86	7	F	n	register p.80, French letters: signed Rodolphe Wiswoot(?) 1605; 'Messieurs' from Cleves(?) re Englishman Thomas Wright, dat 4 ex 24 Maert 1605 -- German-region sender, not Brederode
+11852	87	7	A	n	register p.81, Graef W.L. van Nassau dat 12 ex 2x Maert 1605; Gecommitteerden ... Zutphen dat ... ex 28 Maert 1605
+11852	88	7	E	n	register p.82, Staten Generael 2x Maert 1605
+11852	89	7	H	n	register p.83, Staten Generael 31 Maert 1605; Graef W.L. van Nassau dat 1 ex ... 1605
+11852	90	7	G	n	register p.84, W.L. Graf zu Nassau; Ridderschap Overijssel dat 14 feb; Magistraet van Oldenzaal(?) dat 20 Maert 1605
+11852	91	7	B	n	register p.85, Gerrit Coren dat 2x Maert 1605
+11852	92	8	F	n	register p.86, Raad van State dat 31 Maert 1605; Drossaert(?) Dueck(?) dat 5 Jan 1605
+11852	93	8	G	n	register p.87, Bylagen, Derick Pyl(?) 1605
+11852	94	8	C	n	register p.88, Exhibitum 2 April 1605
+11852	95	8	E	n	register p.89, Ammunitie list (quantities)
+11852	96	8	B	n	register p.90, list (wagons, tents), Leeuwarden 3 April 1605
+11852	97	8	H	n	register p.91, Leeuwarden 29 maert 1605; Bylage
+11852	98	9	B	n	register p.92, Bylage
+11852	99	9	D	n	register p.93, tariff list (Het Gemael...) with sums
+11852	100	9	C	n	register p.94, tariff list with sums
+11852	101	9	F	n	register p.95, tariff list with sums
+11852	102	9	I	n	register p.96, Missive van den Heer Coy(?) dat 2 ex 4 April 1605
+11852	103	9	G	n	register p.97, Amsterdam 2(?) April 1605; Magistraet Emden dat ... ex ... April 1605
+11852	104	10	D	n	register p.98, Missive ... dat 6 ex 24(?) April 1605, French 'Messeigneurs'; Amsterdam ... 1605

@@ -1,137 +1,791 @@
 {
-  "source": "resources.huygens.knaw.nl retroboeken viewer (retroapp service_oldenbarnevelt), Bescheiden betreffende het beleid van Johan van Oldenbarnevelt, deel 2 (1602-1613), GS 108, ed. A.J. Veenendaal",
-  "landing_page": "https://resources.huygens.knaw.nl/retroboeken/oldenbarnevelt/",
-  "fetched_utc": "2026-09-25",
-  "note": "Letter no. 92 (P. van Brederode to Oldenbarnevelt, 21 Feb 1605, printed in cipher) runs pp.110-111 (page_index 124-125, source=2). pp.108-109 and p.112 fetched as surrounding context (end of no.91, start of no.93 -- neither carries cipher). voorwerk_XIII.jpg is the editor's preface page where he states this is the only ciphered item in the volume and he could not find the key.",
-  "pages": [
-    {
-      "printed_page": "108",
-      "page_index": "122",
-      "file": "p108.jpg",
-      "html_url": "https://resources.huygens.knaw.nl/retroapp/service_oldenbarnevelt/2/html/oldenbarneveld_2_gs108_0108.html",
-      "content": "end of no. 91 (De raadsheren in het Hof van Holland aan Oldenbarnevelt, 21 dec 1604); no cipher"
-    },
-    {
-      "printed_page": "109",
-      "page_index": "123",
-      "file": "p109.jpg",
-      "html_url": "https://resources.huygens.knaw.nl/retroapp/service_oldenbarnevelt/2/html/oldenbarneveld_2_gs108_0109.html",
-      "content": "continuation of no. 91; no cipher"
-    },
-    {
-      "printed_page": "110",
-      "page_index": "124",
-      "file": "p110.jpg",
-      "html_url": "https://resources.huygens.knaw.nl/retroapp/service_oldenbarnevelt/2/html/oldenbarneveld_2_gs108_0110.html",
-      "content": "end of no. 91's citation; no. 92 [P. van Brederode aan Oldenbarnevelt], 21 feb 1605, begins -- cipher present"
-    },
-    {
-      "printed_page": "111",
-      "page_index": "125",
-      "file": "p111.jpg",
-      "html_url": "https://resources.huygens.knaw.nl/retroapp/service_oldenbarnevelt/2/html/oldenbarneveld_2_gs108_0111.html",
-      "content": "no. 92 continues and ends, citation 'A.R.A., Holland 2613, e. Duplicata.'; no. 93 (Louise Juliana) begins -- cipher present"
-    },
-    {
-      "printed_page": "112",
-      "page_index": "126",
-      "file": "p112.jpg",
-      "html_url": "https://resources.huygens.knaw.nl/retroapp/service_oldenbarnevelt/2/html/oldenbarneveld_2_gs108_0112.html",
-      "content": "end of no. 93 (French, Louise Juliana); no. 94 begins; no cipher"
-    },
-    {
-      "printed_page": "voorwerk XIII",
-      "page_index": "voorwerk_XIII",
-      "file": "voorwerk_XIII.jpg",
-      "html_url": "https://resources.huygens.knaw.nl/retroapp/service_oldenbarnevelt/2/html/oldenbarneveld_2_gs108_voorwerk_XIII.html",
-      "content": "editor's preface: 'Cijferschrift kwam in dit deel maar in een stuk voor, nr. 92; ik zou het hebben opgelost, als ik gekund had. Maar de sleutel erop heb ik niet kunnen vinden, en de brief bood te weinig vergelijkingsmateriaal om daaruit de oplossing te halen.'"
-    },
-    {
-      "printed_page": null,
-      "page_index": "1",
-      "file": "na_101_02_6016_p0001.jpg",
-      "source": "service.archief.nl (NL-HaNA 1.01.02, inv. 6016, 'Liassen Agent Brederode' -- ingekomen brieven en stukken van Pieter van Brederode, agent van de Staten-Generaal in Duitsland en Zwitserland, 1602-1613)",
-      "content": "folder-cover leaf, handwritten '1602 en 1603' -- confirms the bundle is divided into loose year-folders, image order roughly chronological but NOT a per-letter index"
-    },
-    {
-      "printed_page": null,
-      "page_index": "100",
-      "file": "na_101_02_6016_p0100.jpg",
-      "source": "NL-HaNA 1.01.02 inv. 6016",
-      "content": "bound register leaf (archival page number '73'/'28' visible), faint bleed-through, an index-tab margin ('Bouillon' visible) -- a different bound sub-document within the same digitised file, not loose correspondence; not dated by this pass"
-    },
-    {
-      "printed_page": null,
-      "page_index": "180",
-      "file": "na_101_02_6016_p0180.jpg",
-      "source": "NL-HaNA 1.01.02 inv. 6016",
-      "content": "bound negotiation journal/register leaf, archival page number '136', continuous Dutch prose on dealings with 'syne Churf. Excellentie' (an Elector) and 'Marquis Hans Sigismundt', dated internally 'den 3en Octob.' -- no year given on this leaf; no cipher visible"
-    },
-    {
-      "printed_page": null,
-      "page_index": "260",
-      "file": "na_101_02_6016_p0260.jpg",
-      "source": "NL-HaNA 1.01.02 inv. 6016",
-      "content": "folder-cover leaf, handwritten '1605-1606' -- the year-folder covering our target's date; not yet read past the first 2 leaves"
-    },
-    {
-      "printed_page": null,
-      "page_index": "261",
-      "file": "na_101_02_6016_p0261.jpg",
-      "source": "NL-HaNA 1.01.02 inv. 6016",
-      "content": "first leaf after the 1605-1606 divider: Brederode reporting his 'reyse nae Heydelbergh' (journey to Heidelberg) and dealings with 'Marquis Joachim Ernest van Brandenburg' -- directly on-topic for our target letter's mission, no cipher visible on this leaf"
-    },
-    {
-      "printed_page": null,
-      "page_index": "262",
-      "file": "na_101_02_6016_p0262.jpg",
-      "source": "NL-HaNA 1.01.02 inv. 6016",
-      "content": "same leaf as page_index 261, unfolded/re-scanned with a small loose overlay slip removed from view -- no new content"
-    }
-  ],
-  "na_101_02_6016_note": "TX-KEYS, 25 Sept 2026: NL-HaNA 1.01.02 inv. 6016 (public domain, METS at https://service.archief.nl/gaf/api/mets/v1/4153f78f-3369-4801-93bc-c3eb9b39012c, 624 pages) is UNINDEXED beyond year-folder dividers; only 6 of 624 pages sampled this pass (image order 1, 100, 180, 260, 261, 262). The 1605-1606 folder starts at image order 260/261 and has not been read further. A future capture worker should read image order ~261 through the next year divider (not yet located) for (a) any copy of the 21 Feb 1605 letter itself, (b) any nearby cipher passage with a gloss or key. Order-to-URL mapping method: fetch the METS XML, extract each structMap <div ORDER=\"N\" LABEL=\"...\"><fptr FILEID=\"IDxxxxxxxxDEF\"/> -- the file is at https://service.archief.nl/api/file/v1/default/<uuid> (strip the 'ID' prefix and 'DEF' suffix from FILEID to get <uuid>).",
-  "na_301_14_note_R9_NAKEY": "R9-NAKEY, 6 Oct 2026 05:59 UTC: first scans only, fetched from service.archief.nl (public domain, NA 3.01.14). na_301_14_1490_p0001.jpg = NL-HaNA_3.01.14_1490_0001.jpg, METS https://service.archief.nl/gaf/api/mets/v1/a39ba4d8-4706-43fc-8e9b-3b56d1fe5f57 (7 scans), file https://service.archief.nl/api/file/v1/default/b3b77d14-1bc1-4ec4-8be6-e252554660ea, 2510x3740; na_301_14_2028_p0001.jpg = NL-HaNA_3.01.14_2028_0001.jpg, METS https://service.archief.nl/gaf/api/mets/v1/676010c8-0563-4b90-ba2a-801de20fea7b (3 scans), file https://service.archief.nl/api/file/v1/default/ee0188f6-c3ba-450f-b9b0-80f1169b98d4, 2600x3880. Order-to-URL: structMap div ORDER=N, fptr FILEID 'ID<uuid>DEF' -> /api/file/v1/default/<uuid>.",
-  "na_301_14_2016_R10_OBRED98": {
-    "fetched_utc": "2026-10-06",
-    "mets": "https://service.archief.nl/gaf/api/mets/v1/70426ba3-d59c-474d-bd4b-f9906cbe37de",
-    "handle_note": "NA 3.01.14 inv. 2016, 81 scans; full scan list in ../na_301_14_2016_scans.tsv",
-    "files": [
-      {
-        "file": "na_301_14_2016_p0007.jpg",
-        "scan": "7",
-        "url": "https://service.archief.nl/iip/iipsrv?IIIF=70/42/6b/a3/d5/9c/47/4d/bd/4b/f9/90/6c/be/37/de/11011f8e-c850-48ad-be3b-17806394def2.jp2/full/1400,/0/default.jpg",
-        "content": "phrase-code gloss sheet 'bij no 2', 7-6-1598: letters a-x each = a French phrase or name"
-      },
-      {
-        "file": "na_301_14_2016_p0016.jpg",
-        "scan": "16",
-        "url": "https://service.archief.nl/iip/iipsrv?IIIF=70/42/6b/a3/d5/9c/47/4d/bd/4b/f9/90/6c/be/37/de/3cc54f79-9b7e-40c1-b8b1-aca57517d892.jp2/full/1400,/0/default.jpg",
-        "content": "opening: gloss sheets (end of one, then 'No 4'), letters a-x = phrases/names"
-      },
-      {
-        "file": "na_301_14_2016_p0030.jpg",
-        "scan": "30",
-        "url": "https://service.archief.nl/iip/iipsrv?IIIF=70/42/6b/a3/d5/9c/47/4d/bd/4b/f9/90/6c/be/37/de/110a1d07-1dca-4e39-aa53-ea076be4f54e.jp2/full/1400,/0/default.jpg",
-        "content": "Van Aerssen to Oldenbarnevelt, 10 Aug 1598, p.1 (French, in clear); pencil '10-8-1598'"
-      },
-      {
-        "file": "na_301_14_2016_p0031.jpg",
-        "scan": "31",
-        "url": "https://service.archief.nl/iip/iipsrv?IIIF=70/42/6b/a3/d5/9c/47/4d/bd/4b/f9/90/6c/be/37/de/f82be706-d7bd-4d64-b46a-2814e5716d74.jp2/full/1400,/0/default.jpg",
-        "content": "same letter, inner opening, loose slip 'bij no 6' 10-8-1598 laid over the right page; left page has cipher with interlinear decipherment"
-      },
-      {
-        "file": "na_301_14_2016_p0032.jpg",
-        "scan": "32",
-        "url": "https://service.archief.nl/iip/iipsrv?IIIF=70/42/6b/a3/d5/9c/47/4d/bd/4b/f9/90/6c/be/37/de/5f920142-afc0-44b3-aa09-5cac47a13cfe.jp2/full/1400,/0/default.jpg",
-        "content": "same opening re-shot with the slip laid over the left page; right page cipher with interlinear decipherment"
-      },
-      {
-        "file": "na_301_14_2016_p0031_slip.jpg",
-        "scan": "31",
-        "url": "https://service.archief.nl/iip/iipsrv?IIIF=70/42/6b/a3/d5/9c/47/4d/bd/4b/f9/90/6c/be/37/de/f82be706-d7bd-4d64-b46a-2814e5716d74.jp2/pct:51,20,47,68/1400,/0/default.jpg",
-        "content": "crop of the 'bij no 6' slip (the catalogue's 'sleutel')"
-      }
-    ]
+ "source": "resources.huygens.knaw.nl retroboeken viewer (retroapp service_oldenbarnevelt), Bescheiden betreffende het beleid van Johan van Oldenbarnevelt, deel 2 (1602-1613), GS 108, ed. A.J. Veenendaal",
+ "landing_page": "https://resources.huygens.knaw.nl/retroboeken/oldenbarnevelt/",
+ "fetched_utc": "2026-09-25",
+ "note": "Letter no. 92 (P. van Brederode to Oldenbarnevelt, 21 Feb 1605, printed in cipher) runs pp.110-111 (page_index 124-125, source=2). pp.108-109 and p.112 fetched as surrounding context (end of no.91, start of no.93 -- neither carries cipher). voorwerk_XIII.jpg is the editor's preface page where he states this is the only ciphered item in the volume and he could not find the key.",
+ "pages": [
+  {
+   "printed_page": "108",
+   "page_index": "122",
+   "file": "p108.jpg",
+   "html_url": "https://resources.huygens.knaw.nl/retroapp/service_oldenbarnevelt/2/html/oldenbarneveld_2_gs108_0108.html",
+   "content": "end of no. 91 (De raadsheren in het Hof van Holland aan Oldenbarnevelt, 21 dec 1604); no cipher"
+  },
+  {
+   "printed_page": "109",
+   "page_index": "123",
+   "file": "p109.jpg",
+   "html_url": "https://resources.huygens.knaw.nl/retroapp/service_oldenbarnevelt/2/html/oldenbarneveld_2_gs108_0109.html",
+   "content": "continuation of no. 91; no cipher"
+  },
+  {
+   "printed_page": "110",
+   "page_index": "124",
+   "file": "p110.jpg",
+   "html_url": "https://resources.huygens.knaw.nl/retroapp/service_oldenbarnevelt/2/html/oldenbarneveld_2_gs108_0110.html",
+   "content": "end of no. 91's citation; no. 92 [P. van Brederode aan Oldenbarnevelt], 21 feb 1605, begins -- cipher present"
+  },
+  {
+   "printed_page": "111",
+   "page_index": "125",
+   "file": "p111.jpg",
+   "html_url": "https://resources.huygens.knaw.nl/retroapp/service_oldenbarnevelt/2/html/oldenbarneveld_2_gs108_0111.html",
+   "content": "no. 92 continues and ends, citation 'A.R.A., Holland 2613, e. Duplicata.'; no. 93 (Louise Juliana) begins -- cipher present"
+  },
+  {
+   "printed_page": "112",
+   "page_index": "126",
+   "file": "p112.jpg",
+   "html_url": "https://resources.huygens.knaw.nl/retroapp/service_oldenbarnevelt/2/html/oldenbarneveld_2_gs108_0112.html",
+   "content": "end of no. 93 (French, Louise Juliana); no. 94 begins; no cipher"
+  },
+  {
+   "printed_page": "voorwerk XIII",
+   "page_index": "voorwerk_XIII",
+   "file": "voorwerk_XIII.jpg",
+   "html_url": "https://resources.huygens.knaw.nl/retroapp/service_oldenbarnevelt/2/html/oldenbarneveld_2_gs108_voorwerk_XIII.html",
+   "content": "editor's preface: 'Cijferschrift kwam in dit deel maar in een stuk voor, nr. 92; ik zou het hebben opgelost, als ik gekund had. Maar de sleutel erop heb ik niet kunnen vinden, en de brief bood te weinig vergelijkingsmateriaal om daaruit de oplossing te halen.'"
+  },
+  {
+   "printed_page": null,
+   "page_index": "1",
+   "file": "na_101_02_6016_p0001.jpg",
+   "source": "service.archief.nl (NL-HaNA 1.01.02, inv. 6016, 'Liassen Agent Brederode' -- ingekomen brieven en stukken van Pieter van Brederode, agent van de Staten-Generaal in Duitsland en Zwitserland, 1602-1613)",
+   "content": "folder-cover leaf, handwritten '1602 en 1603' -- confirms the bundle is divided into loose year-folders, image order roughly chronological but NOT a per-letter index"
+  },
+  {
+   "printed_page": null,
+   "page_index": "100",
+   "file": "na_101_02_6016_p0100.jpg",
+   "source": "NL-HaNA 1.01.02 inv. 6016",
+   "content": "bound register leaf (archival page number '73'/'28' visible), faint bleed-through, an index-tab margin ('Bouillon' visible) -- a different bound sub-document within the same digitised file, not loose correspondence; not dated by this pass"
+  },
+  {
+   "printed_page": null,
+   "page_index": "180",
+   "file": "na_101_02_6016_p0180.jpg",
+   "source": "NL-HaNA 1.01.02 inv. 6016",
+   "content": "bound negotiation journal/register leaf, archival page number '136', continuous Dutch prose on dealings with 'syne Churf. Excellentie' (an Elector) and 'Marquis Hans Sigismundt', dated internally 'den 3en Octob.' -- no year given on this leaf; no cipher visible"
+  },
+  {
+   "printed_page": null,
+   "page_index": "260",
+   "file": "na_101_02_6016_p0260.jpg",
+   "source": "NL-HaNA 1.01.02 inv. 6016",
+   "content": "folder-cover leaf, handwritten '1605-1606' -- the year-folder covering our target's date; not yet read past the first 2 leaves"
+  },
+  {
+   "printed_page": null,
+   "page_index": "261",
+   "file": "na_101_02_6016_p0261.jpg",
+   "source": "NL-HaNA 1.01.02 inv. 6016",
+   "content": "first leaf after the 1605-1606 divider: Brederode reporting his 'reyse nae Heydelbergh' (journey to Heidelberg) and dealings with 'Marquis Joachim Ernest van Brandenburg' -- directly on-topic for our target letter's mission, no cipher visible on this leaf"
+  },
+  {
+   "printed_page": null,
+   "page_index": "262",
+   "file": "na_101_02_6016_p0262.jpg",
+   "source": "NL-HaNA 1.01.02 inv. 6016",
+   "content": "same leaf as page_index 261, unfolded/re-scanned with a small loose overlay slip removed from view -- no new content"
   }
+ ],
+ "na_101_02_6016_note": "TX-KEYS, 25 Sept 2026: NL-HaNA 1.01.02 inv. 6016 (public domain, METS at https://service.archief.nl/gaf/api/mets/v1/4153f78f-3369-4801-93bc-c3eb9b39012c, 624 pages) is UNINDEXED beyond year-folder dividers; only 6 of 624 pages sampled this pass (image order 1, 100, 180, 260, 261, 262). The 1605-1606 folder starts at image order 260/261 and has not been read further. A future capture worker should read image order ~261 through the next year divider (not yet located) for (a) any copy of the 21 Feb 1605 letter itself, (b) any nearby cipher passage with a gloss or key. Order-to-URL mapping method: fetch the METS XML, extract each structMap <div ORDER=\"N\" LABEL=\"...\"><fptr FILEID=\"IDxxxxxxxxDEF\"/> -- the file is at https://service.archief.nl/api/file/v1/default/<uuid> (strip the 'ID' prefix and 'DEF' suffix from FILEID to get <uuid>).",
+ "na_301_14_note_R9_NAKEY": "R9-NAKEY, 6 Oct 2026 05:59 UTC: first scans only, fetched from service.archief.nl (public domain, NA 3.01.14). na_301_14_1490_p0001.jpg = NL-HaNA_3.01.14_1490_0001.jpg, METS https://service.archief.nl/gaf/api/mets/v1/a39ba4d8-4706-43fc-8e9b-3b56d1fe5f57 (7 scans), file https://service.archief.nl/api/file/v1/default/b3b77d14-1bc1-4ec4-8be6-e252554660ea, 2510x3740; na_301_14_2028_p0001.jpg = NL-HaNA_3.01.14_2028_0001.jpg, METS https://service.archief.nl/gaf/api/mets/v1/676010c8-0563-4b90-ba2a-801de20fea7b (3 scans), file https://service.archief.nl/api/file/v1/default/ee0188f6-c3ba-450f-b9b0-80f1169b98d4, 2600x3880. Order-to-URL: structMap div ORDER=N, fptr FILEID 'ID<uuid>DEF' -> /api/file/v1/default/<uuid>.",
+ "na_301_14_2016_R10_OBRED98": {
+  "fetched_utc": "2026-10-06",
+  "mets": "https://service.archief.nl/gaf/api/mets/v1/70426ba3-d59c-474d-bd4b-f9906cbe37de",
+  "handle_note": "NA 3.01.14 inv. 2016, 81 scans; full scan list in ../na_301_14_2016_scans.tsv",
+  "files": [
+   {
+    "file": "na_301_14_2016_p0007.jpg",
+    "scan": "7",
+    "url": "https://service.archief.nl/iip/iipsrv?IIIF=70/42/6b/a3/d5/9c/47/4d/bd/4b/f9/90/6c/be/37/de/11011f8e-c850-48ad-be3b-17806394def2.jp2/full/1400,/0/default.jpg",
+    "content": "phrase-code gloss sheet 'bij no 2', 7-6-1598: letters a-x each = a French phrase or name"
+   },
+   {
+    "file": "na_301_14_2016_p0016.jpg",
+    "scan": "16",
+    "url": "https://service.archief.nl/iip/iipsrv?IIIF=70/42/6b/a3/d5/9c/47/4d/bd/4b/f9/90/6c/be/37/de/3cc54f79-9b7e-40c1-b8b1-aca57517d892.jp2/full/1400,/0/default.jpg",
+    "content": "opening: gloss sheets (end of one, then 'No 4'), letters a-x = phrases/names"
+   },
+   {
+    "file": "na_301_14_2016_p0030.jpg",
+    "scan": "30",
+    "url": "https://service.archief.nl/iip/iipsrv?IIIF=70/42/6b/a3/d5/9c/47/4d/bd/4b/f9/90/6c/be/37/de/110a1d07-1dca-4e39-aa53-ea076be4f54e.jp2/full/1400,/0/default.jpg",
+    "content": "Van Aerssen to Oldenbarnevelt, 10 Aug 1598, p.1 (French, in clear); pencil '10-8-1598'"
+   },
+   {
+    "file": "na_301_14_2016_p0031.jpg",
+    "scan": "31",
+    "url": "https://service.archief.nl/iip/iipsrv?IIIF=70/42/6b/a3/d5/9c/47/4d/bd/4b/f9/90/6c/be/37/de/f82be706-d7bd-4d64-b46a-2814e5716d74.jp2/full/1400,/0/default.jpg",
+    "content": "same letter, inner opening, loose slip 'bij no 6' 10-8-1598 laid over the right page; left page has cipher with interlinear decipherment"
+   },
+   {
+    "file": "na_301_14_2016_p0032.jpg",
+    "scan": "32",
+    "url": "https://service.archief.nl/iip/iipsrv?IIIF=70/42/6b/a3/d5/9c/47/4d/bd/4b/f9/90/6c/be/37/de/5f920142-afc0-44b3-aa09-5cac47a13cfe.jp2/full/1400,/0/default.jpg",
+    "content": "same opening re-shot with the slip laid over the left page; right page cipher with interlinear decipherment"
+   },
+   {
+    "file": "na_301_14_2016_p0031_slip.jpg",
+    "scan": "31",
+    "url": "https://service.archief.nl/iip/iipsrv?IIIF=70/42/6b/a3/d5/9c/47/4d/bd/4b/f9/90/6c/be/37/de/f82be706-d7bd-4d64-b46a-2814e5716d74.jp2/pct:51,20,47,68/1400,/0/default.jpg",
+    "content": "crop of the 'bij no 6' slip (the catalogue's 'sleutel')"
+   }
+  ]
+ },
+ "obred_11851b": {
+  "job": "OBRED-11851B, 13 Oct 2026 21:52-21:57 UTC, account 4",
+  "tracked": "no image file committed (lane rule); regenerate with screen_tools/regen_11851b.sh",
+  "routes": {
+   "11851": "METS 69557eee-2aae-4284-98ff-db14579daf50 via screen_tools/na_fetch.py, IIIF /full/700,/0/default.jpg",
+   "11852": "item page https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/11852 (embedded scan list; IIIF base per scan in screen_tools/na_11852_iiif_map.json) via screen_tools/na_fetch_map.py, /full/700,/0/default.jpg"
+  },
+  "files": [
+   {
+    "inv": "11851",
+    "scan": 701,
+    "width": 700,
+    "bytes": 55710,
+    "sha1": "8cd1946e1d920922c2b5572eb7a82c127bed5379"
+   },
+   {
+    "inv": "11851",
+    "scan": 702,
+    "width": 700,
+    "bytes": 56819,
+    "sha1": "1f0f908805662f5ba6623799df1b45f33acbc3f7"
+   },
+   {
+    "inv": "11851",
+    "scan": 703,
+    "width": 700,
+    "bytes": 56501,
+    "sha1": "d8d5b2cb5cb4170133c35c6f28b583b18869b9ef"
+   },
+   {
+    "inv": "11851",
+    "scan": 704,
+    "width": 700,
+    "bytes": 57570,
+    "sha1": "92e78262dee6b1aa3bf29a377ad98abf61759aa9"
+   },
+   {
+    "inv": "11851",
+    "scan": 705,
+    "width": 700,
+    "bytes": 57562,
+    "sha1": "97e7dc7cab61ee21734d14b290289b66e06efadf"
+   },
+   {
+    "inv": "11851",
+    "scan": 706,
+    "width": 700,
+    "bytes": 57027,
+    "sha1": "70069f71827df535ff680e9583ea45de9459e891"
+   },
+   {
+    "inv": "11851",
+    "scan": 707,
+    "width": 700,
+    "bytes": 55034,
+    "sha1": "9faa81fbd29f1d00fbf023b8513c7f5cf59a4dc9"
+   },
+   {
+    "inv": "11851",
+    "scan": 708,
+    "width": 700,
+    "bytes": 55765,
+    "sha1": "e3fd3c5577f0f7a5bc311a8223a3359a189e5a2a"
+   },
+   {
+    "inv": "11851",
+    "scan": 709,
+    "width": 700,
+    "bytes": 57241,
+    "sha1": "b335158123228ed2b7ad3adac4f0f189c26a1237"
+   },
+   {
+    "inv": "11851",
+    "scan": 710,
+    "width": 700,
+    "bytes": 54931,
+    "sha1": "e8524ca72576f9c2a786628325fdea2a05c8ed60"
+   },
+   {
+    "inv": "11851",
+    "scan": 711,
+    "width": 700,
+    "bytes": 57360,
+    "sha1": "86dce066f2026e35e4b2dc20073edb11da97c2ca"
+   },
+   {
+    "inv": "11851",
+    "scan": 712,
+    "width": 700,
+    "bytes": 58045,
+    "sha1": "740065f45d495696144fbbef6cb6d7d5e603d3ef"
+   },
+   {
+    "inv": "11851",
+    "scan": 713,
+    "width": 700,
+    "bytes": 57060,
+    "sha1": "a56b6ebcb7da71652fd5327f7f874d66804d0d34"
+   },
+   {
+    "inv": "11851",
+    "scan": 714,
+    "width": 700,
+    "bytes": 56167,
+    "sha1": "3e6c730bd792aa868b4c73bdb4fd886a9ee15aa6"
+   },
+   {
+    "inv": "11851",
+    "scan": 715,
+    "width": 700,
+    "bytes": 56839,
+    "sha1": "0f826b77c88b5dccfc7a7fa65067b70ec4e51197"
+   },
+   {
+    "inv": "11851",
+    "scan": 716,
+    "width": 700,
+    "bytes": 54861,
+    "sha1": "832f1a7aee52f5f267aeb00217f79dbe6b0c1486"
+   },
+   {
+    "inv": "11851",
+    "scan": 717,
+    "width": 700,
+    "bytes": 57516,
+    "sha1": "8553d8a9358d8a840cd79ed829d173d7feeb573f"
+   },
+   {
+    "inv": "11851",
+    "scan": 718,
+    "width": 700,
+    "bytes": 59130,
+    "sha1": "e3003004dcb8171b01073a363b8f096dbb8407f1"
+   },
+   {
+    "inv": "11851",
+    "scan": 719,
+    "width": 700,
+    "bytes": 52042,
+    "sha1": "e9d042d459f5826e9dd06feba134bf91fc589835"
+   },
+   {
+    "inv": "11851",
+    "scan": 720,
+    "width": 700,
+    "bytes": 52025,
+    "sha1": "3eddd6f87c31117320397629916a2a91f3bb11aa"
+   },
+   {
+    "inv": "11851",
+    "scan": 721,
+    "width": 700,
+    "bytes": 51623,
+    "sha1": "5d950becabe2e7d0ce178ffc60f1feed1ffe235d"
+   },
+   {
+    "inv": "11851",
+    "scan": 722,
+    "width": 700,
+    "bytes": 52580,
+    "sha1": "eb4cabae31a78a2bd1cede3e2f90acdff6b24101"
+   },
+   {
+    "inv": "11851",
+    "scan": 723,
+    "width": 700,
+    "bytes": 49633,
+    "sha1": "95da72955d514f82d2f3f83277ab2e0aab8917e3"
+   },
+   {
+    "inv": "11851",
+    "scan": 724,
+    "width": 700,
+    "bytes": 50060,
+    "sha1": "d65bbc9717f57a7b3dae85caaf7595acb70f0395"
+   },
+   {
+    "inv": "11851",
+    "scan": 725,
+    "width": 700,
+    "bytes": 48944,
+    "sha1": "4ef06216e076264a8bafcba0cd832441cfb70676"
+   },
+   {
+    "inv": "11851",
+    "scan": 726,
+    "width": 700,
+    "bytes": 47664,
+    "sha1": "632036993854fec9b24a51507198c8e3f48702a5"
+   },
+   {
+    "inv": "11851",
+    "scan": 727,
+    "width": 700,
+    "bytes": 48237,
+    "sha1": "96abb09534df78e6a65946960110471a62466ad4"
+   },
+   {
+    "inv": "11851",
+    "scan": 728,
+    "width": 700,
+    "bytes": 51916,
+    "sha1": "b29e3be052f8e6c6f61963dd849b6ca2b8cc84ba"
+   },
+   {
+    "inv": "11851",
+    "scan": 729,
+    "width": 700,
+    "bytes": 57014,
+    "sha1": "091d74cbe673f19adb53a8e736239ac3d032525c"
+   },
+   {
+    "inv": "11851",
+    "scan": 730,
+    "width": 700,
+    "bytes": 38755,
+    "sha1": "e7be9309cad9bb8d7d37f19955715fb16dbbe92a"
+   },
+   {
+    "inv": "11851",
+    "scan": 731,
+    "width": 700,
+    "bytes": 31036,
+    "sha1": "73b7d59deb27c6afa9340a699c0ae6ba48a70a38"
+   },
+   {
+    "inv": "11851",
+    "scan": 732,
+    "width": 700,
+    "bytes": 30926,
+    "sha1": "b9e7f0d6f8b0ee07abff04812cf5efb66de27763"
+   },
+   {
+    "inv": "11851",
+    "scan": 733,
+    "width": 700,
+    "bytes": 59974,
+    "sha1": "eefa0daed10780dc043d6f50b2da1393ff72b5bd"
+   },
+   {
+    "inv": "11852",
+    "scan": 1,
+    "width": 700,
+    "bytes": 59456,
+    "sha1": "c682debac96a9a21784243973868662cc7252e5b"
+   },
+   {
+    "inv": "11852",
+    "scan": 40,
+    "width": 700,
+    "bytes": 61854,
+    "sha1": "0bb8da94ca6967641f046438b38788f14493ca8e"
+   },
+   {
+    "inv": "11852",
+    "scan": 50,
+    "width": 700,
+    "bytes": 45335,
+    "sha1": "85db8cf8b00907e3b4c36157c155a8bcb9d9c3ad"
+   },
+   {
+    "inv": "11852",
+    "scan": 51,
+    "width": 700,
+    "bytes": 48204,
+    "sha1": "70c745e20d8479df31f7f52a33917167b58a01e1"
+   },
+   {
+    "inv": "11852",
+    "scan": 52,
+    "width": 700,
+    "bytes": 62362,
+    "sha1": "28e977d128c2a1fbcc1b9f474f23137c6c99f2ef"
+   },
+   {
+    "inv": "11852",
+    "scan": 53,
+    "width": 700,
+    "bytes": 57613,
+    "sha1": "e45419297167a9a2cc2412c13661f7c6c2c5340a"
+   },
+   {
+    "inv": "11852",
+    "scan": 54,
+    "width": 700,
+    "bytes": 61796,
+    "sha1": "b39eb9e9174e78d158584e1aaab2cbee84724715"
+   },
+   {
+    "inv": "11852",
+    "scan": 55,
+    "width": 700,
+    "bytes": 62910,
+    "sha1": "7c94d7fbdd54664eb2e22c71c9dc37698ed4f1a3"
+   },
+   {
+    "inv": "11852",
+    "scan": 56,
+    "width": 700,
+    "bytes": 62498,
+    "sha1": "e86b3d949711b2716e350373166d34e12ee204e7"
+   },
+   {
+    "inv": "11852",
+    "scan": 57,
+    "width": 700,
+    "bytes": 60373,
+    "sha1": "af383179f3b1a2dea81555eece6454cd43e61000"
+   },
+   {
+    "inv": "11852",
+    "scan": 58,
+    "width": 700,
+    "bytes": 60120,
+    "sha1": "e0befd8eed6f357b23b18305d281865e4e8b61af"
+   },
+   {
+    "inv": "11852",
+    "scan": 59,
+    "width": 700,
+    "bytes": 61960,
+    "sha1": "fa81c4bdca18eb57c010bf05161cacd409f1a836"
+   },
+   {
+    "inv": "11852",
+    "scan": 60,
+    "width": 700,
+    "bytes": 65256,
+    "sha1": "dc5530ee3896877b6c8c7712225e1e9d04243ea7"
+   },
+   {
+    "inv": "11852",
+    "scan": 61,
+    "width": 700,
+    "bytes": 59968,
+    "sha1": "07b21f339e13239d0d0785689b99e6fe25e27f95"
+   },
+   {
+    "inv": "11852",
+    "scan": 62,
+    "width": 700,
+    "bytes": 63221,
+    "sha1": "edcf012cea6ee48da4b1bc8ab34a2313203fb8a9"
+   },
+   {
+    "inv": "11852",
+    "scan": 63,
+    "width": 700,
+    "bytes": 60140,
+    "sha1": "63ce16517c1569980cbec5a8cbc477f7a2410a13"
+   },
+   {
+    "inv": "11852",
+    "scan": 64,
+    "width": 700,
+    "bytes": 61890,
+    "sha1": "7fffa734806cba080c57e137cf8447ef42af916e"
+   },
+   {
+    "inv": "11852",
+    "scan": 65,
+    "width": 700,
+    "bytes": 57547,
+    "sha1": "756d34acc0f5c359957ec88a8f07648a4a78427f"
+   },
+   {
+    "inv": "11852",
+    "scan": 66,
+    "width": 700,
+    "bytes": 58444,
+    "sha1": "ec1c83f26d11a424d41234d4ca06a17ba3ae15e3"
+   },
+   {
+    "inv": "11852",
+    "scan": 67,
+    "width": 700,
+    "bytes": 55684,
+    "sha1": "d03a422da0f04f5ee85007f59eb80c139a5b6de3"
+   },
+   {
+    "inv": "11852",
+    "scan": 68,
+    "width": 700,
+    "bytes": 55059,
+    "sha1": "c592f9ff49c96b12dba4f65c13e99f229cd2e2cf"
+   },
+   {
+    "inv": "11852",
+    "scan": 69,
+    "width": 700,
+    "bytes": 52783,
+    "sha1": "9eb5f6e06f4bad61eab3d175648dc8329a94d86d"
+   },
+   {
+    "inv": "11852",
+    "scan": 70,
+    "width": 700,
+    "bytes": 58905,
+    "sha1": "99610a9a49379ef8890484e9d498bc35f67e3457"
+   },
+   {
+    "inv": "11852",
+    "scan": 71,
+    "width": 700,
+    "bytes": 59227,
+    "sha1": "04c79c91b0f930bf68ca7550ceb060d18740c670"
+   },
+   {
+    "inv": "11852",
+    "scan": 72,
+    "width": 700,
+    "bytes": 54800,
+    "sha1": "9d6ffc72418d09b834023dab13af4e98d66a88b2"
+   },
+   {
+    "inv": "11852",
+    "scan": 73,
+    "width": 700,
+    "bytes": 59683,
+    "sha1": "056a46c86523e2b119e416e59627e99616e3efd1"
+   },
+   {
+    "inv": "11852",
+    "scan": 74,
+    "width": 700,
+    "bytes": 60781,
+    "sha1": "a0f7ec77c9e919f009e712b4188b30a775b37b04"
+   },
+   {
+    "inv": "11852",
+    "scan": 75,
+    "width": 700,
+    "bytes": 59150,
+    "sha1": "f9832a25bb8e48b28a697e8b726836eb0bf96682"
+   },
+   {
+    "inv": "11852",
+    "scan": 76,
+    "width": 700,
+    "bytes": 65155,
+    "sha1": "8076c09c50521eefd910c61b655792d7160344f4"
+   },
+   {
+    "inv": "11852",
+    "scan": 77,
+    "width": 700,
+    "bytes": 64797,
+    "sha1": "adaaf197bb1eb7686f8b02d8ab81f67ca10084f3"
+   },
+   {
+    "inv": "11852",
+    "scan": 78,
+    "width": 700,
+    "bytes": 58960,
+    "sha1": "d942bf553b936bfd042eddb64a86a2d529d8a793"
+   },
+   {
+    "inv": "11852",
+    "scan": 79,
+    "width": 700,
+    "bytes": 62327,
+    "sha1": "6396834062e27cfb19fd87e6731a83808bc5b14f"
+   },
+   {
+    "inv": "11852",
+    "scan": 80,
+    "width": 700,
+    "bytes": 61015,
+    "sha1": "540ca90473a3c45d27625dd6f85202c5efdb86bf"
+   },
+   {
+    "inv": "11852",
+    "scan": 81,
+    "width": 700,
+    "bytes": 59083,
+    "sha1": "fc9628bd3285c51631d11608c79080208141e7f3"
+   },
+   {
+    "inv": "11852",
+    "scan": 82,
+    "width": 700,
+    "bytes": 61378,
+    "sha1": "254114b4eca7c45eeb57d5c5a5084de71fec75d4"
+   },
+   {
+    "inv": "11852",
+    "scan": 83,
+    "width": 700,
+    "bytes": 60188,
+    "sha1": "07e28b0a01dc1af1f554584e1f5ed82de82819f7"
+   },
+   {
+    "inv": "11852",
+    "scan": 84,
+    "width": 700,
+    "bytes": 59246,
+    "sha1": "571eb83eeac0dac3371df6d2c16386f4bd9fcc6e"
+   },
+   {
+    "inv": "11852",
+    "scan": 85,
+    "width": 700,
+    "bytes": 61771,
+    "sha1": "b7b8c58c1bd6b570a5b7c0c4c8d891f744adcd91"
+   },
+   {
+    "inv": "11852",
+    "scan": 86,
+    "width": 700,
+    "bytes": 56243,
+    "sha1": "3f9762bc2f8a92bf3bafb46232ad74e0752ecc6f"
+   },
+   {
+    "inv": "11852",
+    "scan": 87,
+    "width": 700,
+    "bytes": 60735,
+    "sha1": "6f7d91b63dd2086f0f4aded34f92bddba79aa428"
+   },
+   {
+    "inv": "11852",
+    "scan": 88,
+    "width": 700,
+    "bytes": 59223,
+    "sha1": "0d0ba31ab0eb6d6b4e409984f3419bb454f4e6dd"
+   },
+   {
+    "inv": "11852",
+    "scan": 89,
+    "width": 700,
+    "bytes": 58826,
+    "sha1": "488628a42757e2f0cc1195ea73232694d05e78e2"
+   },
+   {
+    "inv": "11852",
+    "scan": 90,
+    "width": 700,
+    "bytes": 60240,
+    "sha1": "f52a45af7711c4ae381eefe1da25176b49adff7a"
+   },
+   {
+    "inv": "11852",
+    "scan": 91,
+    "width": 700,
+    "bytes": 61883,
+    "sha1": "36ff866a83e5d19aa095a9679db3c4cae15cbdb5"
+   },
+   {
+    "inv": "11852",
+    "scan": 92,
+    "width": 700,
+    "bytes": 61774,
+    "sha1": "5e5c5ddb509485c38fdc0b47f4a40cee719c6539"
+   },
+   {
+    "inv": "11852",
+    "scan": 93,
+    "width": 700,
+    "bytes": 61378,
+    "sha1": "7c2f83844d6b6bdd2d0fc4a4bb3b2f1bdd162bea"
+   },
+   {
+    "inv": "11852",
+    "scan": 94,
+    "width": 700,
+    "bytes": 52389,
+    "sha1": "8859db991f944eb8f4e8e9c870f4d6ed5d2a9456"
+   },
+   {
+    "inv": "11852",
+    "scan": 95,
+    "width": 700,
+    "bytes": 49892,
+    "sha1": "3dd81c6e5f59261e1b589dc2fd0bbd2d3a035aca"
+   },
+   {
+    "inv": "11852",
+    "scan": 96,
+    "width": 700,
+    "bytes": 56311,
+    "sha1": "33a9cc17291e0d0fccafaec9db8dde2fd5bcb38c"
+   },
+   {
+    "inv": "11852",
+    "scan": 97,
+    "width": 700,
+    "bytes": 59191,
+    "sha1": "fc998a19658f9de7c441198be3f6dcf24b346d17"
+   },
+   {
+    "inv": "11852",
+    "scan": 98,
+    "width": 700,
+    "bytes": 60385,
+    "sha1": "69b5dfe8cc08e31ce16a312b923c936be5aad664"
+   },
+   {
+    "inv": "11852",
+    "scan": 99,
+    "width": 700,
+    "bytes": 55601,
+    "sha1": "38dfe8b5ce1c51257bae395ce2e31f0fdeb7db9c"
+   },
+   {
+    "inv": "11852",
+    "scan": 100,
+    "width": 700,
+    "bytes": 54546,
+    "sha1": "48ef7e3b6f65a20d1fc7c529e5bebbac2c083137"
+   },
+   {
+    "inv": "11852",
+    "scan": 101,
+    "width": 700,
+    "bytes": 53969,
+    "sha1": "a4dde2a05f64789096297019ab71c750b027e69b"
+   },
+   {
+    "inv": "11852",
+    "scan": 102,
+    "width": 700,
+    "bytes": 53972,
+    "sha1": "8087968b81d41a8bd561024e5327431b84651182"
+   },
+   {
+    "inv": "11852",
+    "scan": 103,
+    "width": 700,
+    "bytes": 56412,
+    "sha1": "e5e021a11e0dbb5f5d1ac1483180050a260fe8fc"
+   },
+   {
+    "inv": "11852",
+    "scan": 104,
+    "width": 700,
+    "bytes": 55943,
+    "sha1": "91b4315039924fd82611c4f938cbefa5bad2bb14"
+   },
+   {
+    "inv": "11852",
+    "scan": 120,
+    "width": 700,
+    "bytes": 58380,
+    "sha1": "61791758f2c0efaaceb956bc00cf0d1190af55be"
+   },
+   {
+    "inv": "11852",
+    "scan": 160,
+    "width": 700,
+    "bytes": 55714,
+    "sha1": "f2bddc80f4a0d4a6dfc67dd88097a6b87f1cfaa2"
+   }
+  ]
+ }
 }
