@@ -22,3 +22,12 @@ shuffled-gloss (S) controls, N >= 5, power floor P_min(L) < 0.0083.
 Verifier D2V-COL26 (8 Oct 2026, AUDIT.md addendum): the table above re-runs byte-identical (script fixed to run at HEAD); registration,
 OUT status, controls and threshold hold. Propagation to f.23: 2 of the 17 f.23 tokens of 30 sit in own-gloss words with no s and are
 lowered to M (exceptions_f23.tsv); f.23 C 127 -> 125.
+
+## COL26-C29 (13 Oct 2026): canvas 29 (folio 26, 30 Mar 1646) known-answer and held-out tests (PREREG-COL26-C29.md, 4628221f)
+
+| hypothesis | statistic | target (pass A / pass B) | control | verdict |
+|---|---|---|---|---|
+| key_f24 C codes (16, 25, 31, 51, 83, 92) hold on canvas 29 | positional known answer, WIN 0.25 | A 2/5, B 4/6 | R rotation p95 3 / 5 (P 0.62 / 0.32); L length-matched p95 3 / 3 (P 0.26 / 0.015) | FAIL (B passes L only) |
+| 42 = si (held-out) | same, per code | A 0/3, B 0/3 | R max 0 (no gloss contains si: non-discriminating) | FAIL by rule; licenses nothing either way |
+| 11 = le (held-out) | same | A 2/2 (P_min 0.069), B 3/3 (P 0.014); pooled with f.24 A 10/14, B 11/15 | R p95 2 / 2; pooled p95 8 / 9 | SPLIT on canvas 29, pooled PASS; not licensed |
+| 6 = je (held-out) | same | A 0/3, B 0/4 | R max 0 (non-discriminating) | FAIL by rule; D07 scored side already FAILed |

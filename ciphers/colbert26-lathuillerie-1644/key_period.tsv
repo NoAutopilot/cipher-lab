@@ -1,6 +1,6 @@
 code	value	grade	count	canvases	note
 &		M	2	20	no gloss observed near this occurrence
-6	je? (c20U01)	M	3	20,21	A4-RFCOL 6 Oct 2026: c20U01 gloss 'Je parle des Suedois' opens over 6; the 'par les armes' gloss formerly listed here belongs to 25 zz 11 (c20U10); other occurrences unglossed or unsettled
+6	je? (c20U01)	M	3	20,21	A4-RFCOL 6 Oct 2026: c20U01 gloss 'Je parle des Suedois' opens over 6; the 'par les armes' gloss formerly listed here belongs to 25 zz 11 (c20U10); other occurrences unglossed or unsettled | COL26-C29 13 Oct 2026 (PREREG-COL26-C29): canvas 29 held-out FAIL both passes (0/3, 0/4; no canvas 29 gloss contains je, so the rotation control is non-discriminating there); value unchanged
 I		M	1	20	no gloss observed near this occurrence
 d		M	5	20	no gloss observed near this occurrence
 e		M	1	20	no gloss observed near this occurrence
@@ -12,7 +12,7 @@ v		M	7	20	no gloss observed near this occurrence
 y		M	6	20	no gloss observed near this occurrence
 z		M	3	20	no gloss observed near this occurrence
 10		M	1	20	no gloss observed near this occurrence
-11	le/les	M	7	20,21	A4-RFCOL 6 Oct 2026: under 'le'/'les' at most canvas 20-21 occurrences (31 11 = que le; 25 zz 11 = par les); not a C code of key_f24, observed after the read, so M
+11	le/les	M	7	20,21	A4-RFCOL 6 Oct 2026: under 'le'/'les' at most canvas 20-21 occurrences (31 11 = que le; 25 zz 11 = par les); not a C code of key_f24, observed after the read, so M | COL26-C29 13 Oct 2026 (PREREG-COL26-C29): canvas 29 held-out SPLIT (A 2/2 UNDERPOWERED P 0.069; B 3/3 PASS P 0.014), pooled with f.24 PASS both passes (10/14, 11/15); not licensed (needs canvas 29 PASS on both passes); value unchanged
 13		M	1	20	no gloss observed near this occurrence
 14		M	1	20	no gloss observed near this occurrence
 16		M	1	20	no gloss observed near this occurrence
@@ -26,7 +26,7 @@ z		M	3	20	no gloss observed near this occurrence
 37		M	1	20	no gloss observed near this occurrence
 38		M	1	20	no gloss observed near this occurrence
 41		M	2	20	no gloss observed near this occurrence
-42	si	M	4	20	A4-RFCOL 6 Oct 2026: under 'si'/'sil' at 4 occurrences on canvas 20 (c20U02, U05a, U05b, U09); observed after the read, not predicted, so M pending a held-out leaf
+42	si	M	4	20	A4-RFCOL 6 Oct 2026: under 'si'/'sil' at 4 occurrences on canvas 20 (c20U02, U05a, U05b, U09); observed after the read, not predicted, so M pending a held-out leaf | COL26-C29 13 Oct 2026 (PREREG-COL26-C29): canvas 29 held-out FAIL both passes (0/3; no canvas 29 gloss contains si, control max 0, non-discriminating); post hoc, not gated: all three canvas 29 occurrences sit under the S. of "Le S. Knut", "led. S. Knut", "aud. S." (11 42 / 47 42), a lead for 42 = s(ieur); value unchanged
 43		M	2	20	no gloss observed near this occurrence
 44		M	1	20	no gloss observed near this occurrence
 45		M	1	20	no gloss observed near this occurrence

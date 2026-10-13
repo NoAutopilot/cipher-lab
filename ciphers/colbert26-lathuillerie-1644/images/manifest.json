@@ -13,5 +13,13 @@
     "canvas20_glosszone.jpg": "region crop, canvas 20, first cipher paragraph with interlinear glosses clearly legible",
     "canvas20_fullcipher.jpg": "region crop, canvas 20, the whole cipher passage (lower half of the leaf) at higher resolution"
   },
-  "next_steps_not_done_here": "(1) high-resolution crops + close eye-check of the Jan-Feb 1648 cipher leaves (canvas 39-40, 47-51, 54-56, 62-63) specifically for an interlinear gloss like canvas 20-21's; (2) resolve the canvas-26 'Mon Nepveu' correspondent identity; (3) full transcription of the cipher AND its gloss on canvas 20-21 and any other glossed leaf; (4) building a key.tsv from the gloss(es); (5) check whether the same nomenclator is reused across the whole 1645-1648 span or changes. All out of this job's scope (leaf map + check-solved only, no key work, per brief)."
+  "next_steps_not_done_here": "(1) high-resolution crops + close eye-check of the Jan-Feb 1648 cipher leaves (canvas 39-40, 47-51, 54-56, 62-63) specifically for an interlinear gloss like canvas 20-21's; (2) resolve the canvas-26 'Mon Nepveu' correspondent identity; (3) full transcription of the cipher AND its gloss on canvas 20-21 and any other glossed leaf; (4) building a key.tsv from the gloss(es); (5) check whether the same nomenclator is reused across the whole 1645-1648 span or changes. All out of this job's scope (leaf map + check-solved only, no key work, per brief).",
+  "c29_openapi": {
+    "fetched": "2026-10-13 06:59 UTC by COL26-C29",
+    "info": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b10035069t/f29/info.json (7411x6365)",
+    "region_url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b10035069t/f29/4446,1082,2890,2610/max/0/default.jpg",
+    "region_size": "2890x2610, 689794 bytes, not committed (folder over 30 MB); re-fetch from the URL",
+    "strips": "images/c29/c29_S01-S12.jpg: horizontal bands of the region at the y ranges in NOTES.md COL26-C29, scaled to 2400 px wide, grey, q60 (what the four blind passes saw, at q85)",
+    "arb": "images/c29/arb_*.jpg: native-resolution crops the reconciler settled the 14 disagreements from"
+  }
 }

@@ -1,0 +1,27 @@
+units: 18 runs; glossed in pass A 14, pass B 14; reference gloss 708 letters
+TEST 1 key_f24 C codes: 16=m, 25=m, 31=que, 51=l, 83=de, 92=comte
+pass	N	H	ctrl	mean	p95	max	P	P_min	verdict
+A	5	2	R	1.78	3	4	0.6212	0.0000	FAIL
+A	5	2	L	0.99	3	5	0.2574	0.0003	FAIL
+  pass A per code: 25=m 0/1, 83=de 2/4
+  pass A verdict: FAIL
+B	6	4	R	3.02	5	6	0.3226	0.0067	FAIL
+B	6	4	L	1.23	3	6	0.0152	0.0001	PASS
+  pass B per code: 16=m 1/1, 25=m 0/1, 83=de 3/4
+  pass B verdict: FAIL
+TEST 1 VERDICT: FAIL
+TEST 2 held-out leads
+code	value	pass	side	N	H	mean	p95	max	P	P_min	power	verdict
+42	si	A	canvas29	3	0	0.00	0	0	1.0000	0.0000	0.000	FAIL
+42	si	A	pooled	5	1	1.00	2	2	0.7511	0.0000	-	FAIL
+42	si	B	canvas29	3	0	0.00	0	0	1.0000	0.0000	0.002	FAIL
+42	si	B	pooled	5	1	1.01	2	2	0.7585	0.0000	-	FAIL
+11	le	A	canvas29	2	2	0.53	2	2	0.0693	0.0693	0.000	UNDERPOWERED
+11	le	A	pooled	14	10	6.12	8	11	0.0063	0.0000	-	PASS
+11	le	B	canvas29	3	3	0.75	2	3	0.0140	0.0140	0.002	PASS
+11	le	B	pooled	15	11	6.35	9	11	0.0013	0.0000	-	PASS
+6	je	A	canvas29	3	0	0.00	0	0	1.0000	0.0000	0.000	FAIL
+6	je	A	pooled	12	0	0.00	0	0	1.0000	0.0000	-	FAIL
+6	je	B	canvas29	4	0	0.00	0	0	1.0000	0.0000	0.000	FAIL
+6	je	B	pooled	13	0	0.00	0	0	1.0000	0.0000	-	FAIL
+TEST 2 VERDICT: 42=si: canvas29 FAIL, pooled FAIL, D07 scored PASS -> not licensed; 11=le: canvas29 SPLIT, pooled PASS, D07 scored PASS -> not licensed; 6=je: canvas29 FAIL, pooled FAIL, D07 scored FAIL -> not licensed
