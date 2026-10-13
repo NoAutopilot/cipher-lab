@@ -1,0 +1,536 @@
+line	position	sign	confidence	alt	why
+f200r_L01_s1	1	?{large	M	B:-	gap
+f200r_L01_s1	2	flourish	M	B:?{big	differ
+f200r_L01_s1	3	initial	M	B:C	differ
+f200r_L01_s1	4	C/E}	M	B:curl}	differ
+f200r_L01_s1	5	21	H		agree
+f200r_L01_s1	6	psi|venus	M	B:g+	differ
+f200r_L01_s1	7	hz	H		agree
+f200r_L01_s1	8	9	H		agree
+f200r_L01_s1	9	delta	H		agree
+f200r_L01_s1	10	m	M	B:mm	differ
+f200r_L01_s1	11	4	H		agree
+f200r_L01_s1	12	14	H		agree
+f200r_L01_s1	13	y	H		agree
+f200r_L01_s1	14	theta	H		agree
+f200r_L01_s1	15	ct	H		agree
+f200r_L01_s1	16	sigma	M	B:5	differ
+f200r_L01_s1	17	j|R	M	B:?{v-loop}	differ
+f200r_L01_s1	18	H	M	B:xs	differ
+f200r_L01_s1	19	4	H		agree
+f200r_L01_s1	20	mm	M	A:-	gap
+f200r_L01_s1	21	m	M	B:8s	differ
+f200r_L01_s1	22	hz	H		agree
+f200r_L01_s1	23	dt	H		agree
+f200r_L01_s1	24	bt	M	A:-	gap
+f200r_L01_s1	25	13	H		agree
+f200r_L01_s1	26	mt	M	B:3	differ
+f200r_L01_s1	27	xbar|z	M	B:psi	differ
+f200r_L01_s1	28	u	H		agree
+f200r_L02_s1	1	x|xc	M	B:xs	differ
+f200r_L02_s1	2	14	H		agree
+f200r_L02_s1	3	j|R	M	B:?{v-loop}	differ
+f200r_L02_s1	4	u	H		agree
+f200r_L02_s1	5	=11	H		agree
+f200r_L02_s1	6	22	H		agree
+f200r_L02_s1	7	a	H		agree
+f200r_L02_s1	8	10	H		agree
+f200r_L02_s1	9	8	H		agree
+f200r_L02_s1	10	delta	H		agree
+f200r_L02_s1	11	19	H		agree
+f200r_L02_s1	12	6	M	B:6|b	differ
+f200r_L02_s1	13	rho	H		agree
+f200r_L02_s1	14	a	H		agree
+f200r_L02_s1	15	18	H		agree
+f200r_L02_s1	16	6	M	B:6|b	differ
+f200r_L02_s1	17	14	H		agree
+f200r_L02_s1	18	3	M	B:-	gap
+f200r_L02_s1	19	?{o	M	B:-	gap
+f200r_L02_s1	20	with	M	B:-	gap
+f200r_L02_s1	21	bar	M	B:-	gap
+f200r_L02_s1	22	over}	M	B:=30	differ
+f200r_L02_s1	23	13	H		agree
+f200r_L02_s1	24	3	M	B:-	gap
+f200r_L02_s1	25	?{blotted	M	B:-	gap
+f200r_L02_s1	26	overstrike	M	B:-	gap
+f200r_L02_s1	27	like	M	B:-	gap
+f200r_L02_s1	28	mm}	M	B:?{blot}	differ
+f200r_L02_s1	29	theta	H		agree
+f200r_L03_s1	1	=32	H		agree
+f200r_L03_s1	2	xc	M	B:xs	differ
+f200r_L03_s1	3	u	H		agree
+f200r_L03_s1	4	delta	H		agree
+f200r_L03_s1	5	m	H		agree
+f200r_L03_s1	6	eps	H		agree
+f200r_L03_s1	7	u	H		agree
+f200r_L03_s1	8	bt	H		agree
+f200r_L03_s1	9	dt	M	B:ct	differ
+f200r_L03_s1	10	venus	H		agree
+f200r_L03_s1	11	12	H		agree
+f200r_L03_s1	12	q2	M	B:2	differ
+f200r_L03_s1	13	t	H		agree
+f200r_L03_s1	14	14	H		agree
+f200r_L03_s1	15	9	H		agree
+f200r_L03_s1	16	=34	H		agree
+f200r_L03_s1	17	theta	H		agree
+f200r_L03_s1	18	?{slashed	M	A:-	gap
+f200r_L03_s1	19	sigma	M	B:s}	differ
+f200r_L03_s1	20	=11	H		agree
+f200r_L03_s1	21	delta	M	A:-	gap
+f200r_L03_s1	22	delta	H		agree
+f200r_L03_s1	23	a	H		agree
+f200r_L03_s1	24	7	H		agree
+f200r_L03_s1	25	u	H		agree
+f200r_L04_s1	1	mt	M	B:3	differ
+f200r_L04_s1	2	22	H		agree
+f200r_L04_s1	3	rho	H		agree
+f200r_L04_s1	4	6	M	B:6|b	differ
+f200r_L04_s1	5	8	H		agree
+f200r_L04_s1	6	14	H		agree
+f200r_L04_s1	7	xbar|z	M	B:z	differ
+f200r_L04_s1	8	m	H		agree
+f200r_L04_s1	9	u	H		agree
+f200r_L04_s1	10	=9	H		agree
+f200r_L04_s1	11	j|R	M	B:?{v-loop}	differ
+f200r_L04_s1	12	bt	H		agree
+f200r_L04_s1	13	a	M	A:-	gap
+f200r_L04_s1	14	q2	M	B:z	differ
+f200r_L04_s1	15	10	H		agree
+f200r_L04_s1	16	t	H		agree
+f200r_L04_s1	17	hbar	H		agree
+f200r_L04_s1	18	y	H		agree
+f200r_L04_s1	19	delta	H		agree
+f200r_L04_s1	20	20	H		agree
+f200r_L04_s1	21	?{ff	M	A:-	gap
+f200r_L04_s1	22	H	M	B:loop}	differ
+f200r_L04_s1	23	14	H		agree
+f200r_L04_s1	24	=y	H		agree
+f200r_L04_s1	25	?{small	M	B:-	gap
+f200r_L04_s1	26	hook	M	B:-	gap
+f200r_L04_s1	27	like	M	B:-	gap
+f200r_L04_s1	28	sigma}	M	B:-	gap
+f200r_L04_s1	29	3	M	B:=3	differ
+f200r_L05_s1	1	q2	M	B:2	differ
+f200r_L05_s1	2	4	H		agree
+f200r_L05_s1	3	sigma	M	B:5	differ
+f200r_L05_s1	4	18	H		agree
+f200r_L05_s1	5	y	H		agree
+f200r_L05_s1	6	psi|venus	M	B:g+	differ
+f200r_L05_s1	7	c	H		agree
+f200r_L05_s1	8	ct	H		agree
+f200r_L05_s1	9	mt	M	B:3	differ
+f200r_L05_s1	10	xbar	M	B:xs	differ
+f200r_L05_s1	11	theta	H		agree
+f200r_L05_s1	12	4	H		agree
+f200r_L05_s1	13	11	H		agree
+f200r_L05_s1	14	n	M	B:u	differ
+f200r_L05_s1	15	u	H		agree
+f200r_L05_s1	16	mt	M	B:3	differ
+f200r_L05_s1	17	6	M	B:6|b	differ
+f200r_L05_s1	18	f	H		agree
+f200r_L05_s1	19	theta	H		agree
+f200r_L05_s1	20	14	H		agree
+f200r_L05_s1	21	o7	H		agree
+f200r_L05_s1	22	23	H		agree
+f200r_L05_s1	23	6	M	B:6|b	differ
+f200r_L05_s1	24	delta	H		agree
+f200r_L05_s1	25	venus	H		agree
+f200r_L05_s1	26	u	H		agree
+f200r_L06_s1	1	8	H		agree
+f200r_L06_s1	2	H	M	B:8s	differ
+f200r_L06_s1	3	delta	H		agree
+f200r_L06_s1	4	7	H		agree
+f200r_L06_s1	5	10	H		agree
+f200r_L06_s1	6	m	H		agree
+f200r_L06_s1	7	delta	H		agree
+f200r_L06_s1	8	rho	H		agree
+f200r_L06_s1	9	ct	H		agree
+f200r_L06_s1	10	theta	H		agree
+f200r_L06_s1	11	sigma	M	B:5	differ
+f200r_L06_s1	12	H	M	B:xs	differ
+f200r_L06_s1	13	z	H		agree
+f200r_L06_s1	14	t	H		agree
+f200r_L06_s1	15	f	H		agree
+f200r_L06_s1	16	bt	H		agree
+f200r_L06_s1	17	mm	M	B:m	differ
+f200r_L06_s1	18	H	M	B:8s	differ
+f200r_L06_s1	19	9	H		agree
+f200r_L06_s1	20	hz	H		agree
+f200r_L06_s1	21	mt	M	B:3	differ
+f200r_L06_s1	22	j|R	M	B:?{v-loop}	differ
+f200r_L06_s1	23	hbar	H		agree
+f200r_L06_s1	24	hz	M	B:-	gap
+f200r_L06_s1	25	rho	H		agree
+f200r_L06_s1	26	u	H		agree
+f200r_L06_s1	27	xbar|z	M	B:psi	differ
+f200r_L07_s1	1	13	H		agree
+f200r_L07_s1	2	m	H		agree
+f200r_L07_s1	3	=l	M	B:l	differ
+f200r_L07_s1	4	=m	H		agree
+f200r_L07_s1	5	22	H		agree
+f200r_L07_s1	6	a	H		agree
+f200r_L07_s1	7	7	H		agree
+f200r_L07_s1	8	u	H		agree
+f200r_L07_s1	9	9	H		agree
+f200r_L07_s1	10	6	H		agree
+f200r_L07_s1	11	H	M	B:xs	differ
+f200r_L07_s1	12	delta	H		agree
+f200r_L07_s1	13	z|y	M	B:y	differ
+f200r_L07_s1	14	14	H		agree
+f200r_L07_s1	15	xbar	M	B:xs	differ
+f200r_L07_s1	16	bt	H		agree
+f200r_L07_s1	17	a	H		agree
+f200r_L07_s1	18	14	H		agree
+f200r_L07_s1	19	=11	H		agree
+f200r_L07_s1	20	=y	H		agree
+f200r_L07_s1	21	3	M	B:=3	differ
+f200r_L08_s1	1	19	H		agree
+f200r_L08_s1	2	ct	H		agree
+f200r_L08_s1	3	rho	H		agree
+f200r_L08_s1	4	8	H		agree
+f200r_L08_s1	5	9	H		agree
+f200r_L08_s1	6	u	H		agree
+f200r_L08_s1	7	mt	M	B:z	differ
+f200r_L08_s1	8	theta	H		agree
+f200r_L08_s1	9	7	H		agree
+f200r_L08_s1	10	11	H		agree
+f200r_L08_s1	11	a	H		agree
+f200r_L08_s1	12	z	M	A:-	gap
+f200r_L08_s1	13	ct	H		agree
+f200r_L08_s1	14	y|z	M	B:y	differ
+f200r_L08_s1	15	xc	H		agree
+f200r_L08_s1	16	mt	M	B:z	differ
+f200r_L08_s1	17	venus	M	B:g+	differ
+f200r_L08_s1	18	rho	H		agree
+f200r_L08_s1	19	delta	H		agree
+f200r_L08_s1	20	9	H		agree
+f200r_L08_s1	21	u	H		agree
+f200r_L08_s1	22	c	H		agree
+f200r_L08_s1	23	17	H		agree
+f200r_L08_s1	24	b	H		agree
+f200r_L08_s1	25	10	H		agree
+f200r_L08_s1	26	f	H		agree
+f200r_L08_s1	27	a	M	A:-	gap
+f200r_L08_s1	28	a|o7	M	B:?{loop}	differ
+f200r_L08_s1	29	sigma	M	B:5	differ
+f200r_L08_s1	30	theta	H		agree
+f200r_L08_s1	31	f	H		agree
+f200r_L08_s1	32	P	M	B:rho	differ
+f200r_L09_s1	1	6	H		agree
+f200r_L09_s1	2	14	H		agree
+f200r_L09_s1	3	6	H		agree
+f200r_L09_s1	4	?{large	M	A:-	gap
+f200r_L09_s1	5	loop	M	A:-	gap
+f200r_L09_s1	6	H	M	B:ff}	differ
+f200r_L09_s1	7	u	H		agree
+f200r_L09_s1	8	=11	H		agree
+f200r_L09_s1	9	a	H		agree
+f200r_L09_s1	10	bt	H		agree
+f200r_L09_s1	11	6	H		agree
+f200r_L09_s1	12	m	H		agree
+f200r_L09_s1	13	q2	M	B:2	differ
+f200r_L09_s1	14	j|R	M	B:?{v-loop}	differ
+f200r_L09_s1	15	n	M	B:u	differ
+f200r_L09_s1	16	mt	M	B:3|z	differ
+f200r_L09_s1	17	theta	H		agree
+f200r_L09_s1	18	a	H		agree
+f200r_L09_s1	19	8	H		agree
+f200r_L09_s1	20	eps	H		agree
+f200r_L09_s1	21	rho	H		agree
+f200r_L09_s1	22	hz	H		agree
+f200r_L09_s1	23	7	H		agree
+f200r_L09_s1	24	14	H		agree
+f200r_L09_s1	25	xbar	M	B:psi	differ
+f200r_L09_s1	26	hbar	H		agree
+f200r_L09_s1	27	u	H		agree
+f200r_L10_s1	1	8	H		agree
+f200r_L10_s1	2	H	M	B:8s	differ
+f200r_L10_s1	3	z	H		agree
+f200r_L10_s1	4	9	H		agree
+f200r_L10_s1	5	6	M	B:6|b	differ
+f200r_L10_s1	6	sigma	M	B:5	differ
+f200r_L10_s1	7	q2	M	B:2	differ
+f200r_L10_s1	8	u	H		agree
+f200r_L10_s1	9	delta	H		agree
+f200r_L10_s1	10	12	H		agree
+f200r_L10_s1	11	H	M	B:xs	differ
+f200r_L10_s1	12	20	H		agree
+f200r_L10_s1	13	l	M	B:lb	differ
+f200r_L10_s1	14	4	H		agree
+f200r_L10_s1	15	21	H		agree
+f200r_L10_s1	16	?{i}	M	A:-	gap
+f200r_L10_s1	17	rho	H		agree
+f200r_L10_s1	18	=11	H		agree
+f200r_L10_s1	19	f	H		agree
+f200r_L10_s1	20	21	H		agree
+f200r_L10_s1	21	?{i}	M	A:-	gap
+f200r_L10_s1	22	theta	H		agree
+f200r_L10_s1	23	mt	M	B:3|z	differ
+f200r_L10_s1	24	6	M	B:6|b	differ
+f200r_L10_s1	25	ct	H		agree
+f200r_L10_s1	26	a	H		agree
+f200r_L10_s1	27	hz	H		agree
+f200r_L11_s1	1	=11	H		agree
+f200r_L11_s1	2	10	H		agree
+f200r_L11_s1	3	xbar	M	B:xs	differ
+f200r_L11_s1	4	14	H		agree
+f200r_L11_s1	5	sigma	M	B:5	differ
+f200r_L11_s1	6	l	H		agree
+f200r_L11_s1	7	18	H		agree
+f200r_L11_s1	8	delta	H		agree
+f200r_L11_s1	9	4	H		agree
+f200r_L11_s1	10	dt	M	B:ct	differ
+f200r_L11_s1	11	y	H		agree
+f200r_L11_s1	12	u	H		agree
+f200r_L11_s1	13	bt	H		agree
+f200r_L11_s1	14	7	H		agree
+f200r_L11_s1	15	t	H		agree
+f200r_L11_s1	16	theta	H		agree
+f200r_L11_s1	17	9	H		agree
+f200r_L11_s1	18	22	H		agree
+f200r_L11_s1	19	a	H		agree
+f200r_L11_s1	20	?{v-loop}	M	A:-	gap
+f200r_L11_s1	21	j|R	M	B:8s	differ
+f200r_L11_s1	22	H	M	B:8s	differ
+f200r_L11_s1	23	o7	H		agree
+f200r_L11_s1	24	m	H		agree
+f200r_L11_s1	25	ct	H		agree
+f200r_L12_s1	1	q2	M	B:2	differ
+f200r_L12_s1	2	4	H		agree
+f200r_L12_s1	3	4	H		agree
+f200r_L12_s1	4	22	H		agree
+f200r_L12_s1	5	u	H		agree
+f200r_L12_s1	6	eps	H		agree
+f200r_L12_s1	7	a	H		agree
+f200r_L12_s1	8	rho	H		agree
+f200r_L12_s1	9	m	H		agree
+f200r_L12_s1	10	tt	H		agree
+f200r_L12_s1	11	u	H		agree
+f200r_L12_s1	12	=12	H		agree
+f200r_L12_s1	13	19	H		agree
+f200r_L12_s1	14	21	H		agree
+f200r_L12_s1	15	q2	M	B:2	differ
+f200r_L12_s1	16	ct	H		agree
+f200r_L12_s1	17	mm	H		agree
+f200r_L12_s1	18	H	M	B:-	gap
+f200r_L12_s1	19	?{cut	M	B:-	gap
+f200r_L12_s1	20	at	M	B:-	gap
+f200r_L12_s1	21	crop	M	B:xs	differ
+f200r_L12_s1	22	edge}	M	B:18	differ
+f200r_L12_s1	23	18	H		agree
+f200r_L12_s1	24	z	M	B:y	differ
+f200r_L12_s1	25	hz	H		agree
+f200r_L13_s1	1	13	H		agree
+f200r_L13_s1	2	10	H		agree
+f200r_L13_s1	3	c	H		agree
+f200r_L13_s1	4	23	H		agree
+f200r_L13_s1	5	ct	H		agree
+f200r_L13_s1	6	dt	H		agree
+f200r_L13_s1	7	14	H		agree
+f200r_L13_s1	8	a	H		agree
+f200r_L13_s1	9	12	H		agree
+f200r_L13_s1	10	theta	H		agree
+f200r_L13_s1	11	delta	H		agree
+f200r_L13_s1	12	z|y	M	B:y	differ
+f200r_L13_s1	13	12	H		agree
+f200r_L13_s1	14	9	H		agree
+f200r_L13_s1	15	delta	H		agree
+f200r_L13_s1	16	rho	H		agree
+f200r_L13_s1	17	13	H		agree
+f200r_L13_s1	18	=11	H		agree
+f200r_L13_s1	19	6	M	B:6|b	differ
+f200r_L13_s1	20	u	H		agree
+f200r_L13_s1	21	?{cut	M	B:-	gap
+f200r_L13_s1	22	at	M	B:-	gap
+f200r_L13_s1	23	crop	M	B:?{partial	differ
+f200r_L13_s1	24	edge}	M	B:loop}	differ
+f200r_L13_s1	25	H	M	B:f|8t	differ
+f200r_L13_s1	26	venus	H		agree
+f200r_L13_s1	27	7	H		agree
+f200r_L13_s1	28	xc	M	B:xs	differ
+f200r_L13_s1	29	delta	H		agree
+f200r_L13_s1	30	sigma	M	B:5	differ
+f200r_L13_s1	31	9	H		agree
+f200r_L13_s1	32	7	H		agree
+f200r_L14_s1	1	t	H		agree
+f200r_L14_s1	2	bt	H		agree
+f200r_L14_s1	3	19	H		agree
+f200r_L14_s1	4	10	H		agree
+f200r_L14_s1	5	4	H		agree
+f200r_L14_s1	6	psi|venus	M	B:g+	differ
+f200r_L14_s1	7	6	M	B:6|b	differ
+f200r_L14_s1	8	19	H		agree
+f200r_L14_s1	9	theta	H		agree
+f200r_L14_s1	10	14	H		agree
+f200r_L14_s1	11	[sur	H		agree
+f200r_L14_s1	12	ce]	H		agree
+f200r_L14_s1	13	8	H		agree
+f200r_L14_s1	14	hbar	H		agree
+f200r_L14_s1	15	venus	H		agree
+f200r_L14_s1	16	rho	H		agree
+f200r_L14_s1	17	u	H		agree
+f200r_L14_s1	18	12	H		agree
+f200r_L14_s1	19	6	H		agree
+f200r_L14_s1	20	21	H		agree
+f200r_L14_s1	21	14	H		agree
+f200r_L14_s1	22	mt	M	B:z	differ
+f200r_L14_s1	23	6	M	B:6|b	differ
+f200r_L15_s1	1	=11	H		agree
+f200r_L15_s1	2	10	H		agree
+f200r_L15_s1	3	dt	M	B:delta|dt	differ
+f200r_L15_s1	4	hz	H		agree
+f200r_L15_s1	5	rho	H		agree
+f200r_L15_s1	6	xc	M	B:-	gap
+f200r_L15_s1	7	?{i-like	M	B:-	gap
+f200r_L15_s1	8	stroke}	M	B:x	differ
+f200r_L15_s1	9	sigma	M	B:15	differ
+f200r_L15_s1	10	mt	M	B:3|mm	differ
+f200r_L15_s1	11	j|R	M	B:?{v-loop}	differ
+f200r_L15_s1	12	u	H		agree
+f200r_L15_s1	13	[pour	H		agree
+f200r_L15_s1	14	empescher]	H		agree
+f200r_L15_s1	15	=11	H		agree
+f200r_L15_s1	16	delta	H		agree
+f200r_L15_s1	17	a	H		agree
+f200r_L15_s1	18	21	H		agree
+f200r_L15_s1	19	theta	H		agree
+f200r_L16_s1	1	13	H		agree
+f200r_L16_s1	2	theta	H		agree
+f200r_L16_s1	3	7	H		agree
+f200r_L16_s1	4	12	H		agree
+f200r_L16_s1	5	eps	H		agree
+f200r_L16_s1	6	m	H		agree
+f200r_L16_s1	7	sigma	M	B:5	differ
+f200r_L16_s1	8	xbar	M	B:z	differ
+f200r_L16_s1	9	bt	H		agree
+f200r_L16_s1	10	=12	H		agree
+f200r_L16_s1	11	hz	H		agree
+f200r_L16_s1	12	hz	H		agree
+f200r_L16_s1	13	9	H		agree
+f200r_L16_s1	14	u	H		agree
+f200r_L16_s1	15	20	H		agree
+f200r_L16_s1	16	c	H		agree
+f200r_L16_s1	17	psi|venus	M	B:g+	differ
+f200r_L16_s1	18	u	H		agree
+f200r_L16_s1	19	14	H		agree
+f200r_L16_s1	20	?{cut	M	B:-	gap
+f200r_L16_s1	21	at	M	B:-	gap
+f200r_L16_s1	22	crop	M	B:-	gap
+f200r_L16_s1	23	edge}	M	B:21	differ
+f200r_L16_s1	24	21	H		agree
+f200r_L16_s1	25	xc	M	B:xs	differ
+f200r_L16_s1	26	u	H		agree
+f200r_L16_s1	27	hz	H		agree
+f200r_L16_s1	28	6	M	B:6|b	differ
+f200r_L16_s1	29	theta	H		agree
+f200r_L17_s1	1	mt	M	B:z	differ
+f200r_L17_s1	2	H	M	B:xs	differ
+f200r_L17_s1	3	6	M	B:6|b	differ
+f200r_L17_s1	4	19	H		agree
+f200r_L17_s1	5	rho	H		agree
+f200r_L17_s1	6	j|R	M	B:?{k-like}	differ
+f200r_L17_s1	7	venus	H		agree
+f200r_L17_s1	8	6	M	B:6|b	differ
+f200r_L17_s1	9	10	H		agree
+f200r_L17_s1	10	hz	H		agree
+f200r_L17_s1	11	rho	H		agree
+f200r_L17_s1	12	22	H		agree
+f200r_L17_s1	13	delta	H		agree
+f200r_L17_s1	14	=12	H		agree
+f200r_L17_s1	15	m	M	B:mm	differ
+f200r_L17_s1	16	H	M	B:8s	differ
+f200r_L17_s1	17	7	H		agree
+f200r_L17_s1	18	8	H		agree
+f200r_L17_s1	19	bt	H		agree
+f200r_L17_s1	20	f	H		agree
+f200r_L17_s1	21	a	H		agree
+f200r_L17_s1	22	?{cut	M	B:-	gap
+f200r_L17_s1	23	at	M	B:-	gap
+f200r_L17_s1	24	crop	M	B:-	gap
+f200r_L17_s1	25	edge}	M	B:18	differ
+f200r_L17_s1	26	18	H		agree
+f200r_L17_s1	27	?{slashed	M	A:-	gap
+f200r_L17_s1	28	P|sigma	M	B:s}	differ
+f200r_L17_s1	29	=9	H		agree
+f200r_L18_s1	1	?{loop	M	A:-	gap
+f200r_L18_s1	2	v-like}	M	A:-	gap
+f200r_L18_s1	3	j|R	M	B:z	differ
+f200r_L18_s1	4	xbar	M	B:x	differ
+f200r_L18_s1	5	venus	H		agree
+f200r_L18_s1	6	o7	H		agree
+f200r_L18_s1	7	18	H		agree
+f200r_L18_s1	8	2	M	A:-	gap
+f200r_L18_s1	9	21	M	B:?{i}	differ
+f200r_L18_s1	10	u	H		agree
+f200r_L18_s1	11	6	M	B:6|b	differ
+f200r_L18_s1	12	hz	H		agree
+f200r_L18_s1	13	14	H		agree
+f200r_L18_s1	14	eps	M	A:-	gap
+f200r_L18_s1	15	[en]	M	B:n	differ
+f200r_L18_s1	16	a	H		agree
+f200r_L18_s1	17	z	M	A:-	gap
+f200r_L18_s1	18	ct	H		agree
+f200r_L18_s1	19	c	H		agree
+f200r_L18_s1	20	14	H		agree
+f200r_L18_s1	21	f	H		agree
+f200r_L18_s1	22	8	H		agree
+f200r_L18_s1	23	delta	H		agree
+f200r_L18_s1	24	a	H		agree
+f200r_L18_s1	25	delta	H		agree
+f200r_L18_s1	26	u	H		agree
+f200r_L18_s1	27	t	H		agree
+f200r_L18_s1	28	theta	H		agree
+f200r_L18_s1	29	7	H		agree
+f200r_L19_s1	1	l	M	B:lb	differ
+f200r_L19_s1	2	18	H		agree
+f200r_L19_s1	3	a	H		agree
+f200r_L19_s1	4	mt	M	B:mm	differ
+f200r_L19_s1	5	7	H		agree
+f200r_L19_s1	6	6	M	B:6|b	differ
+f200r_L19_s1	7	f	H		agree
+f200r_L19_s1	8	bt	H		agree
+f200r_L19_s1	9	7	H		agree
+f200r_L19_s1	10	xc	M	B:xs	differ
+f200r_L19_s1	11	hbar	H		agree
+f200r_L19_s1	12	l	H		agree
+f200r_L19_s1	13	=m	H		agree
+f200r_L19_s1	14	eps	M	A:-	gap
+f200r_L19_s1	15	n	M	A:-	gap
+f200r_L19_s1	16	[en	M	B:?{v-like}	differ
+f200r_L19_s1	17	un]	M	B:u	differ
+f200r_L19_s1	18	bt	H		agree
+f200r_L19_s1	19	mm	M	A:-	gap
+f200r_L19_s1	20	mt	M	B:z	differ
+f200r_L19_s1	21	hz	H		agree
+f200r_L19_s1	22	g+	M	A:-	gap
+f200r_L19_s1	23	psi|venus	M	B:?{slashed	differ
+f200r_L19_s1	24	P|sigma	M	B:s}	differ
+f200r_L19_s1	25	y	H		agree
+f200r_L19_s1	26	venus	H		agree
+f200r_L19_s1	27	u	H		agree
+f200r_L19_s1	28	z	M	B:y	differ
+f200r_L20_s1	1	xbar|z	M	B:z	differ
+f200r_L20_s1	2	14	H		agree
+f200r_L20_s1	3	18	H		agree
+f200r_L20_s1	4	inf	H		agree
+f200r_L20_s1	5	hz	H		agree
+f200r_L20_s1	6	14	H		agree
+f200r_L20_s1	7	=11	M	B:-	gap
+f200r_L20_s1	8	?{o	M	B:-	gap
+f200r_L20_s1	9	with	M	B:=?{n-like	differ
+f200r_L20_s1	10	bar	M	B:bar}	differ
+f200r_L20_s1	11	over}	M	B:=o	differ
+f200r_L20_s1	12	y	H		agree
+f200r_L20_s1	13	psi|venus	M	B:g+	differ
+f200r_L20_s1	14	mm	H		agree
+f200r_L20_s1	15	m	M	A:-	gap
+f200r_L20_s1	16	H	M	B:xs	differ
+f200r_L20_s1	17	rho	H		agree
+f200r_L20_s1	18	a	H		agree
+f200r_L20_s1	19	6	M	B:6|b	differ
+f200r_L20_s1	20	y	H		agree
+f200r_L20_s1	21	bt	H		agree
+f200r_L20_s1	22	7	H		agree
+f200r_L20_s1	23	delta	H		agree
+f200r_L20_s1	24	rho	M	B:eps	differ
+f200r_L20_s1	25	21	H		agree

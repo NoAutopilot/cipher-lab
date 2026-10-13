@@ -1,0 +1,189 @@
+line	col	A	B	settled	why
+L01	1	?{large	-	?{large	A default
+L01	2	flourish	?{big	flourish	A default
+L01	3	initial	C	initial	A default
+L01	4	C/E}	curl}	C/E}	A default
+L01	6	psi|venus	g+	psi|venus	A default
+L01	10	m	mm	m	A default
+L01	16	sigma	5	5	class rule '5 over sigma' (eyed L01, L05)
+L01	17	j|R	?{v-loop}	j|R	A default
+L01	18	H	xs	H	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L01	20	-	mm	-	A default
+L01	21	m	8s	m	A default
+L01	24	-	bt	-	A default
+L01	26	mt	3	mt	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L01	27	xbar|z	psi	xbar|z	A default
+L02	1	x|xc	xs	x|xc	A default
+L02	3	j|R	?{v-loop}	j|R	A default
+L02	12	6	6|b	6	A default
+L02	16	6	6|b	6	A default
+L02	18	3	-	3	A default
+L02	19	?{o	-	?{o	A default
+L02	20	with	-	with	A default
+L02	21	bar	-	bar	A default
+L02	22	over}	=30	over}	A default
+L02	24	3	-	3	A default
+L02	25	?{blotted	-	?{blotted	A default
+L02	26	overstrike	-	overstrike	A default
+L02	27	like	-	like	A default
+L02	28	mm}	?{blot}	mm}	A default
+L03	2	xc	xs	xc	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L03	9	dt	ct	dt	A default
+L03	12	q2	2	q2	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L03	18	-	?{slashed	-	A default
+L03	19	sigma	s}	sigma	A default
+L03	21	-	delta	-	A default
+L04	1	mt	3	mt	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L04	4	6	6|b	6	A default
+L04	7	xbar|z	z	xbar|z	A default
+L04	11	j|R	?{v-loop}	j|R	A default
+L04	13	-	a	-	A default
+L04	14	q2	z	q2	A default
+L04	21	-	?{ff	-	A default
+L04	22	H	loop}	H	A default
+L04	25	?{small	-	?{small	A default
+L04	26	hook	-	hook	A default
+L04	27	like	-	like	A default
+L04	28	sigma}	-	sigma}	A default
+L04	29	3	=3	3	A default
+L05	1	q2	2	q2	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L05	3	sigma	5	5	class rule '5 over sigma' (eyed L01, L05)
+L05	6	psi|venus	g+	psi|venus	A default
+L05	9	mt	3	mt	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L05	10	xbar	xs	xbar	A default
+L05	14	n	u	n	A default
+L05	16	mt	3	mt	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L05	17	6	6|b	6	A default
+L05	23	6	6|b	6	A default
+L06	2	H	8s	H	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L06	11	sigma	5	5	class rule '5 over sigma' (eyed L01, L05)
+L06	12	H	xs	H	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L06	17	mm	m	mm	A default
+L06	18	H	8s	H	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L06	21	mt	3	mt	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L06	22	j|R	?{v-loop}	j|R	A default
+L06	24	hz	-	hz	A default
+L06	27	xbar|z	psi	xbar|z	A default
+L07	3	=l	l	=l	A default
+L07	11	H	xs	H	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L07	13	z|y	y	z|y	A default
+L07	15	xbar	xs	xbar	A default
+L07	21	3	=3	3	A default
+L08	7	mt	z	mt	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L08	12	-	z	-	A default
+L08	14	y|z	y	y|z	A default
+L08	16	mt	z	mt	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L08	17	venus	g+	venus	A default
+L08	27	-	a	-	A default
+L08	28	a|o7	?{loop}	a|o7	A default
+L08	29	sigma	5	5	class rule '5 over sigma' (eyed L01, L05)
+L08	32	P	rho	P	A default
+L09	4	-	?{large	-	A default
+L09	5	-	loop	-	A default
+L09	6	H	ff}	H	A default
+L09	13	q2	2	q2	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L09	14	j|R	?{v-loop}	j|R	A default
+L09	15	n	u	n	A default
+L09	16	mt	3|z	mt	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L09	25	xbar	psi	xbar	A default
+L10	2	H	8s	H	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L10	5	6	6|b	6	A default
+L10	6	sigma	5	5	class rule '5 over sigma' (eyed L01, L05)
+L10	7	q2	2	q2	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L10	11	H	xs	H	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L10	13	l	lb	l	A default
+L10	16	-	?{i}	-	A default
+L10	21	-	?{i}	-	A default
+L10	23	mt	3|z	mt	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L10	24	6	6|b	6	A default
+L11	3	xbar	xs	xbar	A default
+L11	5	sigma	5	5	class rule '5 over sigma' (eyed L01, L05)
+L11	10	dt	ct	dt	A default
+L11	20	-	?{v-loop}	-	A default
+L11	21	j|R	8s	j|R	A default
+L11	22	H	8s	H	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L12	1	q2	2	q2	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L12	15	q2	2	q2	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L12	18	H	-	H	A default
+L12	19	?{cut	-	?{cut	A default
+L12	20	at	-	at	A default
+L12	21	crop	xs	crop	A default
+L12	22	edge}	18	edge}	A default
+L12	24	z	y	z	A default
+L13	12	z|y	y	z|y	A default
+L13	19	6	6|b	6	A default
+L13	21	?{cut	-	?{cut	A default
+L13	22	at	-	at	A default
+L13	23	crop	?{partial	crop	A default
+L13	24	edge}	loop}	edge}	A default
+L13	25	H	f|8t	H	A default
+L13	28	xc	xs	xc	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L13	30	sigma	5	5	class rule '5 over sigma' (eyed L01, L05)
+L14	6	psi|venus	g+	psi|venus	A default
+L14	7	6	6|b	6	A default
+L14	22	mt	z	mt	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L14	23	6	6|b	6	A default
+L15	3	dt	delta|dt	dt	A default
+L15	6	xc	-	xc	A default
+L15	7	?{i-like	-	?{i-like	A default
+L15	8	stroke}	x	stroke}	A default
+L15	9	sigma	15	sigma	A default
+L15	10	mt	3|mm	mt	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L15	11	j|R	?{v-loop}	j|R	A default
+L16	7	sigma	5	5	class rule '5 over sigma' (eyed L01, L05)
+L16	8	xbar	z	xbar	A default
+L16	17	psi|venus	g+	psi|venus	A default
+L16	20	?{cut	-	?{cut	A default
+L16	21	at	-	at	A default
+L16	22	crop	-	crop	A default
+L16	23	edge}	21	edge}	A default
+L16	25	xc	xs	xc	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L16	28	6	6|b	6	A default
+L17	1	mt	z	mt	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L17	2	H	xs	H	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L17	3	6	6|b	6	A default
+L17	6	j|R	?{k-like}	j|R	A default
+L17	8	6	6|b	6	A default
+L17	15	m	mm	m	A default
+L17	16	H	8s	H	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L17	22	?{cut	-	?{cut	A default
+L17	23	at	-	at	A default
+L17	24	crop	-	crop	A default
+L17	25	edge}	18	edge}	A default
+L17	27	-	?{slashed	-	A default
+L17	28	P|sigma	s}	P|sigma	A default
+L18	1	-	?{loop	-	A default
+L18	2	-	v-like}	-	A default
+L18	3	j|R	z	j|R	A default
+L18	4	xbar	x	xbar	A default
+L18	8	-	2	-	A default
+L18	9	21	?{i}	21	A default
+L18	11	6	6|b	6	A default
+L18	14	-	eps	-	A default
+L18	15	[en]	n	[en]	A default
+L18	17	-	z	-	A default
+L19	1	l	lb	l	A default
+L19	4	mt	mm	mt	A default
+L19	6	6	6|b	6	A default
+L19	10	xc	xs	xc	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L19	14	-	eps	-	A default
+L19	15	-	n	-	A default
+L19	16	[en	?{v-like}	[en	A default
+L19	17	un]	u	un]	A default
+L19	19	-	mm	-	A default
+L19	20	mt	z	mt	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L19	22	-	g+	-	A default
+L19	23	psi|venus	?{slashed	psi|venus	A default
+L19	24	P|sigma	s}	P|sigma	A default
+L19	28	z	y	z	A default
+L20	1	xbar|z	z	xbar|z	A default
+L20	7	=11	-	=11	A default
+L20	8	?{o	-	?{o	A default
+L20	9	with	=?{n-like	with	A default
+L20	10	bar	bar}	bar	A default
+L20	11	over}	=o	over}	A default
+L20	13	psi|venus	g+	psi|venus	A default
+L20	15	-	m	-	A default
+L20	16	H	xs	H	class rule, A shape (eyed L01, L05; BAL103-189 rule)
+L20	19	6	6|b	6	A default
+L20	24	rho	eps	rho	A default
