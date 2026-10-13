@@ -286,17 +286,16 @@ line	pos	sign	conf	note
 2039_leg_i	11	r	H	
 2039_leg_i	12	h	H	
 2039_leg_k	0	[psi]	H	
-2039_leg_k	1	y	H	
-2039_leg_k	2	j	H	
-2039_leg_k	3	a	H	
-2039_leg_k	4	w	H	
-2039_leg_k	5	d	M	B: [d-loop]
-2039_leg_k	6	o	H	
-2039_leg_k	7	r	H	
-2039_leg_k	8	t	H	
-2039_leg_k	9	3	H	
-2039_leg_k	10	l	H	
-2039_leg_k	11	[lambda-label?]	M	A: -
+2039_leg_k	1	[u-dots]	H	SUR-LEGK 13 Oct 2026: two blind passes (passes/legk_surlegk) agree pos1+pos2 (was y, j) are ONE dotted ij ligature (two dots, one descender) = this file's [u-dots]; pos renumbered from here
+2039_leg_k	2	a	H	
+2039_leg_k	3	w	H	
+2039_leg_k	4	[delta-small]	H	SUR-LEGK 13 Oct 2026: two blind passes agree small bowl, ascender curls back over it with a flag (was d M, B: [d-loop])
+2039_leg_k	5	o	H	
+2039_leg_k	6	r	M	SUR-LEGK 13 Oct 2026: both blind shape passes read digit 7 (M; pass B alt r); GAPS5 passes and R15-SURV read r; held r, conf lowered, not in this job's brief to settle
+2039_leg_k	7	t	H	
+2039_leg_k	8	3	H	
+2039_leg_k	9	l	H	
+2039_leg_k	10	[lambda-label?]	M	A: -
 2039_leg_l	0	d	M	B: [d-loop]
 2039_leg_l	1	[delta]	H	
 2039_leg_l	2	b	H	

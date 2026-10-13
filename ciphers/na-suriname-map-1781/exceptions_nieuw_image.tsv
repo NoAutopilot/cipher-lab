@@ -136,3 +136,4 @@ line	pos	value	grade	reason
 2046_No2	3	a	M	SUR-2046 blind sign call (passes/signcmp_sur2046, prereg 6b9676d75): reader [p-grave] = R_Ap 0.8, runner-up R46 (t) 0.05 (#18); controls 14/20; V-SUR2046 re-call (fresh controls 14/20): not reproduced (best value same, unsettled), held at M unconfirmed
 2046_title1	8	f	M	SUR-2046 blind sign call (passes/signcmp_sur2046, prereg 6b9676d75): reader [w-dots] = R_Fomega 0.6, runner-up R26 (d) 0.25 (#7); controls 14/20; V-SUR2046 re-call (fresh controls 14/20): CONFIRMED
 2046_No1	33	a	M	SUR-2046 blind sign call (passes/signcmp_sur2046, prereg 6b9676d75): reader [x-dot-grave] = R_Ax 0.7, runner-up R29 (q) 0.1 (#44); controls 14/20; V-SUR2046 re-call (fresh controls 14/20): not reproduced (best value same, unsettled), held at M unconfirmed
+2039_leg_k	4	e	M	SUR-LEGK 13 Oct 2026: two blind shape passes agree [delta-small]; sheet E row small-delta form by shape name (R15-SURV, 6 Oct, own look, not blind); no blind sheet-tile call
