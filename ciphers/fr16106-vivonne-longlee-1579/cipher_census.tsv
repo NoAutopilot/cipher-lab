@@ -1,0 +1,199 @@
+volume	canvas	folio_written	class	date_addressee	pair_partner	note
+16107	3	-	blank	-	-	endpaper with pasted labels
+16107	8	5	cipher	-	-	two dense cipher pages
+16107	13	10-11	clear	-	-	clear letter, two pages
+16107	18	16	mixed	13 Jan 1580 (right, Dechifre heading)	c18 left / c8-c17 run	"left page end of a cipher letter; right page ""13 Janvier 1580 / Dechifre de la precedente"""
+16107	23	19	clear	-	-	clear, inserted narrower leaf
+16107	28	24	mixed	31 Jan 1580 (right)	-	left cipher; right short heading block, read at fill-in
+16107	33	29	clear	-	-	clear both pages
+16107	38	34	mixed	31 Jan 1580 Madrid, St Goard to the Queen (right)	-	left scattered cipher (end); right new letter to the Queen, body to check
+16107	43	39	clear	-	-	short clear letter
+16107	48	44	cipher	7 Feb 1580 Madrid, St Goard to the King (right)	-	left address leaf; right letter opens in cipher (VIV-M c50 dense cipher = same letter)
+16107	53	49	clear	"7 Feb 1580 Madrid, St Goard to the King, ""Duplicata"""	c48	clear duplicate copy heading; body by eye clear
+16107	58	54	cipher	-	-	two dense cipher pages
+16107	60	55	mixed	7 Feb (right, date only)	c48-c58 (7 Feb 1580 cipher), probable	fill-in; left end of cipher; right clerk-hand clear text dated 7 febvrier, no Dechifre word legible at 600 px
+16107	62	57	blank	-	-	fill-in; clear lines and address leaf
+16107	63	58	blank	-	-	address leaf
+16107	68	63	clear	10 Feb 1580 Lisbon, Pierre Ber... to St Goard	-	incoming clear letter
+16107	73	68-69	cipher	-	-	two dense cipher pages
+16107	78	73-74	clear	-	-	clear
+16107	83	78	mixed	-	-	left cipher lines then clear closing; right blank with seal
+16107	85	80	clear	20 Feb 1580 Madrid, St Goard to the Queen (right)	-	fill-in; clear letter
+16107	87	82	blank	20 Febvrier 1580 docket	-	fill-in; address leaf
+16107	89	84	clear	-	-	clear, signed
+16107	93	88	clear	-	-	clear
+16107	98	93	cipher	-	-	two dense cipher pages
+16107	100	95	cipher	-	-	fill-in; left cipher; right cipher lines then clear closing and signature (end of the c98 letter)
+16107	101	96	blank	Dechifre de la precedente heading (right)	-	fill-in; heading over an otherwise blank page and address; no copy written
+16107	103	98-100	clear	-	-	clear
+16107	107	102	cipher	2 Mar 1580 to the King (VIV-T)	c110-c112 (VIV-T)	refetched by a selection-script slip (already on disk from VIV-T); two dense cipher pages
+16107	113	108	blank	2 mars docket (right)	-	address/endorsement leaf of the 2 Mar letter
+16107	118	113	cipher	9 Mar 1580 Madrid, St Goard to the King (right)	-	left address leaf; right letter opens in cipher
+16107	123	118	cipher	-	-	two dense cipher pages (9 Mar run)
+16107	128	123	clear	-	-	clear draft and letter
+16107	133	128	blank	-	-	blank
+16107	138	133	cipher	-	-	two dense cipher pages
+16107	143	138	blank	-	-	blank with inserted slip
+16107	148	143	cipher	-	-	two dense cipher pages
+16107	153	148	cipher	-	-	two dense cipher pages
+16107	155	150	clear	-	-	fill-in; clear, no heading legible
+16107	156	151	clear	-	-	fill-in; clear
+16107	158	153	clear	-	-	clear both pages
+16107	163	158	mixed	-	-	left clear with dark cipher patches; right address leaf with seal
+16107	168	163	clear	20 Mar 1580 (right, clerk hand)	-	left clear signed letter; right clerk-hand clear text dated 20 mars, heading to check (dechiffre?)
+16107	173	168	cipher	23 Mar 1580 Madrid, St Goard to the King (right)	-	right letter opens in cipher
+16107	178	173-175	clear	-	-	clear
+16107	184	178	clear	-	-	inserted clear sheet
+16107	188	183	cipher	-	-	two dense cipher pages (23 Mar run)
+16107	193	188	dechiffre	Dechifre de la precedente (right)	c173-c19x (23 Mar 1580 run)	left end of cipher; right clerk copy headed Dechifre de la precedente
+16107	198	194	clear	St Goard to the Queen (right)	-	clear letter
+16107	203	198	clear	9 Apr 1580, the King to St Goard (right)	-	incoming clear letter; left address leaf
+16107	208	-	blank	-	-	blank
+16107	213	210	clear	St Goard to the King (right)	-	clear letter
+16107	218	213	blank	20 avril docket	-	address leaf
+16107	223	218	clear	20 Apr 1580 Madrid, St Goard to Villeroy (right)	-	clear letter (VIV-M c221 Dechifre 20 Apr 1580 two canvases before)
+16107	228	223	clear	-	-	clear, inserted sheet
+16107	233	227	mixed	18 May 1580 Madrid, St Goard to the King (right)	c253	letter opens clear then turns to cipher
+16107	238	233	clear	18 May 1580 Madrid, St Goard to the King (right)	-	clear letter, same date (second dispatch or duplicate)
+16107	243	237	cipher	-	-	two dense cipher pages (18 May run)
+16107	248	242	cipher	-	-	two dense cipher pages (18 May run)
+16107	253	247	dechiffre	"18 May 1580, ""Dechifre de la precedente"" (right)"	c233-c252	left end of cipher; right clerk copy
+16107	258	252	clear	-	-	clear (copy continued)
+16107	263	257	clear	18 May 1580 Madrid, St Goard to the Queen (right)	-	clear letter
+16107	268	262	mixed	-	-	left clear lines then cipher; right cipher with clear closing and signature
+16107	273	-	clear	-	-	inserted clear sheet
+16107	279	273	cipher	-	-	left cipher; right two cipher lines then clear closing and signature
+16107	280	274	dechiffre	"1 Jun 1580, St Goard to the Queen, ""Dechifre de la precedente"" (right)"	c268-c279 (cipher letter to the Queen)	fill-in; right clerk copy
+16107	281	275	clear	-	-	fill-in; copy continued
+16107	283	277	clear	-	-	short clear page; address leaf
+16107	288	282	cipher	-	-	two dense cipher pages
+16107	290	284	dechiffre	"13 Jun 1580 Madrid, St Goard to the Queen, ""Dechifre de la precedente"" (right)"	c288 (cipher)	fill-in; right clerk copy
+16107	293	287	blank	-	-	address leaf
+16107	298	293	other	-	-	Spanish clear list
+16107	303	298	other	20 Jun 1580 Badajoz (right)	-	Spanish clear news/avisos
+16107	308	302-303	other	Badajoz (right)	-	Spanish clear
+16107	313	307	other	-	-	Spanish clear
+16107	318	313	other	-	-	Spanish clear, inserted sheets
+16107	323	319	other	-	-	Spanish clear
+16107	328	322	mixed	"9 Jul 1580: ""Dechifre de la precedente"" and ""Madrid, St Goard to the King"" (right)"	-	left clear; right letter of 9 Jul in cipher under a Dechifre heading slip; to check at fill-in
+16107	330	324	dechiffre	"9 Jul 1580, ""Dechifre de la precedente"" (right)"	c328 (9 Jul 1580 cipher)	fill-in; right clerk copy
+16107	331	325	clear	9 Jul 1580 Madrid, St Goard to the Queen (right)	-	fill-in; clear letter
+16107	333	327	mixed	9 Jul 1580 Madrid, St Goard to the King (right)	-	right two cipher lines, then clear letter
+16107	338	330	clear	23 Jul 1580, the Queen to St Goard; the King to St Goard (right)	-	incoming clear letters
+16107	343	337	mixed	27 Jul 1580, the King to St Goard (right)	-	incoming letter, clear with cipher lines at foot (by eye)
+16107	348	342	cipher	-	-	two cipher pages
+16107	350	344	clear	Sep 1580(?) (right)	-	fill-in; clear
+16107	353	346-349	clear	-	-	clear signed letter
+16107	358	-	clear	-	-	clear
+16107	363	358	clear	18 Sep 1580, the Queen to St Goard (right)	-	incoming clear
+16107	368	362	mixed	1580 Madrid (right, short heading)	-	left clear; right heading may read Dechifre, to check
+16107	374	367	clear	-	-	clear draft (struck lines)
+16107	378	371	other	1580 (right)	-	"Spanish clear ""Sumario"""
+16108	3	-	blank	-	-	endpaper with pasted labels
+16108	8	5	clear	12 Feb 1581 (right)	-	clear letter
+16108	13	10	other	-	-	Spanish clear
+16108	18	15	clear	-	-	clear both pages
+16108	23	20	clear	-	-	clear, signed
+16108	28	25	clear	-	-	clear
+16108	33	30	clear	-	-	short clear, signed
+16108	38	-	clear	-	-	inserted clear sheets
+16108	43	40	clear	11 Apr 1581 Madrid, St Goard to the Queen (right)	-	clear letter
+16108	48	46	mixed	1? avril (right)	c53	left cipher; right clear with cipher lines and signature
+16108	53	49	dechiffre	"14 Apr 1581, ""Dechifre de la precedente"" (right)"	c4x-c52 (cipher run ending c48 left)	right clerk copy
+16108	59	49-50	clear	-	-	clear (copy continued or new letter)
+16108	63	54	clear	24 Apr and 27 Apr 1581, the King to St Goard (right)	-	incoming clear
+16108	68	58	cipher	-	-	two dense cipher pages
+16108	73	61	cipher	26 Apr 1581 Madrid, St Goard to the Queen (right)	-	right letter opens in cipher
+16108	76	64	clear	-	-	fill-in; left clear signed; right address
+16108	78	66-67	blank	-	-	address leaf
+16108	83	71-72	dechiffre	"13 May 1581: Madrid St Goard to the Queen (cover) + ""Dechifre de la precedente"" (right)"	-	right clerk copy dated 13 May; the cipher it renders not seen at this stride
+16108	88	76-78	other	-	-	Spanish clear
+16108	90	78	mixed	-	c93	fill-in; left clear; right cipher
+16108	93	81	dechiffre	"29 May 1581, ""Dechifre de la precedente"" (right)"	-	right clerk copy; cipher not seen at this stride
+16108	98	88	other	1 Jun 1581 Santarem (right)	-	Spanish avisos
+16108	103	91	cipher	-	-	two dense cipher pages (letter-form alphabet)
+16108	106	94-95	clear	-	-	fill-in; clear signed
+16108	108	96	blank	23 Juin docket	-	address leaf
+16108	113	101	cipher	-	-	two dense cipher pages
+16108	115	103	clear	-	-	fill-in; left clear signed; right blank
+16108	118	106	clear	-	-	clear
+16108	123	111	cipher	1581 (left)	-	left opens with clear lines then cipher; right cipher
+16108	125	113	blank	-	-	fill-in; address leaf
+16108	128	116	blank	-	-	address leaf
+16108	133	121	clear	28 Aug(?) 1581 Madrid, St Goard to the King (right)	-	clear letter
+16108	138	126	clear	-	-	clear, signed
+16108	143	132	clear	-	-	clear, signed
+16108	148	137-139	clear	2 Oct 1581 Lisbon, St Goard to the King (right)	-	left clear signed; right cover
+16108	153	142	clear	2 Oct 1581 Lisbon, St Goard to the Queen (right)	-	clear letter
+16108	158	147	clear	-	-	clear
+16108	163	152	mixed	-	-	left clear; right digit-and-mark cipher (first digit-system page seen in this walk)
+16108	169	158/160	cipher	"8 Nov 1581, ""Dechifre de la precedente"" slip (right)"	-	"both pages digit-and-mark cipher; the Dechifre heading is a narrow slip pasted over the top of a cipher page (VIV-M's c168 ""Dechifrement 8 Nov 1581, cipher lines at ends"" is the facing opening of this)"
+16108	173	162	cipher	-	-	two dense digit-and-mark cipher pages
+16108	178	166-167	mixed	-	-	clear with digit cipher groups in the lines
+16108	183	171	clear	27 Nov 1581, the King to St Goard (right)	-	incoming clear (draft hand)
+16108	188	176	mixed	-	-	left clear; right digit cipher
+16108	193	181	mixed	-	-	left clear; right digit cipher
+16108	198	186	clear	-	-	clear both pages
+16108	203	191	blank	-	-	address leaf
+16108	208	196	blank	-	-	blank
+16108	213	~200	clear	-	-	clear slip on address leaf
+16108	218	207	mixed	1582 Lisbon, St Goard to the King (right)	-	right digit-cipher lines at head, then a letter that is clear with cipher passages
+16108	223	211	mixed	-	-	left digit cipher; right inserted clear sheet
+16108	228	218	clear	16 Jan 1582 Lisbon, St Goard to the King (cover); St Goard to the Queen (right)	-	clear letter
+16108	233	222	clear	29 Jan 1582 Lisbon, St Goard to the King (cover); St Goard to Villeroy (right)	-	clear letter
+16108	238	225-227	cipher	-	c243	two faint digit-and-mark cipher pages
+16108	243	230-232	dechiffre	"29 Jan 1582, ""Dechifre de la precedente"" (right)"	c238 (29 Jan 1582 to the King, cipher)	right clerk copy in clear
+16108	248	235-236	clear	29 Apr(?) 1582 (right)	-	clear letter, two pages
+16108	253	240	clear	-	-	clear
+16108	258	244	cipher	-	-	two digit-and-mark cipher pages, signed
+16108	260	246	dechiffre	"Apr 1582, ""Dechifre de la precedente"" (right)"	c258 (cipher)	fill-in; right clerk copy
+16108	263	249	clear	20 Apr 1582 Madrid, St Goard to the Queen (right)	-	clear letter
+16108	268	254	clear	-	-	clear, signed
+16108	273	259	clear	14 May 1582 Madrid, St Goard to the King (right)	-	clear letter
+16108	279	263	clear	14 May 1582 Madrid, St Goard to Villeroy (right)	-	clear letter
+16108	283	269	cipher	-	-	two digit cipher pages
+16108	285	271	dechiffre	"Jun 1582, ""Dechifre de la precedente"" (right)"	c283 (cipher)	fill-in; right clerk copy
+16108	288	274	clear	"20 Jun 1582 St Michel, ""Copie de lettre particuliere"" (right)"	-	clear copy
+16108	293	279-280	clear	-	-	clear
+16108	298	284	cipher	"25 Jun 1582, ""Dechifre de la precedente"" slip (right)"	-	left cipher with a clear middle passage; right pure-digit cipher under a pasted Dechifre heading slip
+16108	303	289	clear	-	-	clear memoir
+16108	308	294	clear	-	-	clear, dense hand
+16108	310	296	cipher	-	c313 (2 Jul 1582 copy)	fill-in; two dense cipher pages
+16108	313	299	dechiffre	"2 Jul 1582, ""Dechifre de la precedente"" (right)"	-	left end of a clear signed page; right clerk copy; the cipher it renders not seen at this stride
+16108	318	304	clear	-	-	clear, dense hand
+16108	323	309	clear	-	-	clear, signed
+16108	328	314-316	blank	-	-	address leaf
+16108	333	318	cipher	"9 Jul 1582, ""Dechifre de la precedente"" slip (right)"	c338	left digit cipher, signed; right digit-cipher lines under a pasted Dechifre slip
+16108	338	323	dechiffre	"9 Jul 1582, ""Dechifre de la precedente"" (right)"	c333 (9 Jul 1582 cipher)	right clerk copy in clear
+16108	343	328-330	clear	-	-	clear
+16108	348	335	cipher	-	-	two digit cipher pages, signed
+16108	353	338	mixed	-	-	left clear; right digit cipher
+16108	358	343	clear	"16 Jul 1582 Lisbon, St Goard to the Queen, ""Duplicat"" (right)"	-	clear duplicate
+16108	363	347-349	cipher	-	-	left digit cipher, signed; right blank
+16108	368	354	clear	-	-	clear
+16108	373	359	clear	20 Aug 1582 Madrid, St Goard to the King (right)	-	clear letter
+16108	378	364	clear	-	-	clear
+16108	383	370	other	-	-	Spanish clear
+16108	389	~375	mixed	-	-	left digit cipher lines then clear; right clear
+16108	393	379-380	clear	Longlee to the King (right heading)	-	clear (Longlee)
+16108	398	384	clear	Sep 1582 (right)	-	clear letter to the Queen
+16108	403	389-390	cipher	-	-	two digit-and-mark cipher pages
+16108	405	391	dechiffre	"Sep 1582, ""Dechifre de la precedente"" (right)"	c403 (cipher)	fill-in; right clerk copy
+16108	408	394	clear	-	-	short clear
+16108	413	-	clear	-	-	inserted clear letters
+16108	418	-	clear	-	-	inserted clear letters
+16108	423	409	clear	-	-	clear, signed
+16108	428	413-414	cipher	-	-	two digit-and-mark cipher pages
+16108	430	416	cipher	-	-	fill-in; two cipher pages (run c428-c430; c434 heading over a blank page)
+16108	434	419-420	blank	"Oct 1582 endorsement; ""Dechifre de la precedente"" written along the edge"	-	leaf shot sideways; heading over a blank page (like f.104r in VIV-T), not a copy
+16108	438	423	clear	-	-	clear
+16108	443	~428	clear	7 Oct 1582 Madrid, St Goard to the Queen (right)	-	clear letter
+16108	448	-	clear	-	-	clear, inserted
+16108	453	438	cipher	-	-	left cipher, signed; right blank
+16108	458	441-443	clear	-	-	clear; left address leaf
+16108	463	448	clear	-	-	clear
+16108	468	454	cipher	-	-	left digit cipher; right short cipher, signed (VIV-M c454 Dechifre 23 Oct 1582 is the opening before)
+16108	470	456	dechiffre	"Nov 1582, ""Dechifre de la precedente"" (right)"	c468 (cipher)	fill-in; right clerk copy
+16108	473	458-460	cipher	6 Dec 1582 Madrid, St Goard to the King (right)	-	right letter opens in cipher
+16108	478	~464	cipher	-	-	fill-in; two dense cipher pages (6 Dec 1582 run from c473)
+16108	483	468	clear	Dec 1582 Madrid, St Goard to the Queen (right)	-	fill-in; clear letter

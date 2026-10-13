@@ -77,19 +77,19 @@ Read so far: 57 canvases sampled (VIV-M); one pair located (2 Mar 1580, c107-c10
 - Sign inventory of the letter-form system unsettled (two machine readers split 58%) - blocker: not-attempted; beyond this brief (one pair, one first test); next: owner sign sorter on c107 crops (tools/sign_sorter.py build from images/c107_L*.jpg, about 1,300 tiles), ~$1 to build + owner time
 - Clerk's copy f.105r-106v only half read - blocker: not-attempted; beyond this brief (one pair, one first test); next: a second independent read of f.105r plus f.105v-106v at native resolution with a paleography-focused pass, ~$3
 - Test 1 at power: re-run test1.py on settled labels over the whole letter (c107-c109 left, five pages, against the four-page copy) - blocker: not-attempted; beyond this brief (one pair, one first test); next: after the two gaps above, ~$4
-- Which Vivonne cipher letters 1580-82 lack a clerk's decipherment - blocker: not-attempted; beyond this brief (one pair, one first test); next: walk the dense-cipher runs and the "Dechifre" pages (about 150-200 canvases at 600 px, ~USD 4)
+- Which Vivonne cipher letters 1580-82 lack a clerk's decipherment - blocker: not-attempted; VIV-WALK (13 Oct 2026) walked fr.16107/16108 at stride 5 plus 27 fill-ins (198 canvases, cipher_census.tsv, cipher_letters.tsv): 18 pairs and 2 probable pairs, 14 cipher letters with no copy seen, 2 Dechifre headings over blank pages (no copy written), 2 Dechifre slips pasted over cipher with no copy seen; a copy can still sit in the unwalked canvases between strides, so "not seen" is not "lacks"; next: walk the 2-4 canvases after each of the 14 not-seen runs plus the 2 slip runs at 600 px (about 50 openapi requests), ~$2
 - Mousset table applied through a by-eye crosswalk on an unsettled inventory (D4-VIVMOUS PASS 0.454 vs null p99 0.400; D4-VIVV text-specific margin thin, 0.454 vs wrong-text p99 0.448; D2-VIVX applied D4-VIVV's four crosswalk fixes and nothing moved: 0.4537 unchanged, wrong-text p99 0.4475 unchanged; second attempt of this instrument, a third crosswalk-only pass is closed by rule 3) - blocker: not-attempted; needs settled labels from the owner sign sorter (gap 1) first; next: after the sorter, re-label the piles directly against key/mousset1912.tsv glyphs (a different instrument: new labels, not a crosswalk edit) and re-run vivmous.py + vivv_contam.py, ~$1.5
-- Mousset printed page column and the 46 undated rows of the TSV - blocker: not-attempted; beyond this brief (one pair, one first test); next: second script pass on letter headings, ~USD 0.5
+- Mousset printed page column and the 46 undated rows of the TSV - blocker: not-attempted; VIV-WALK 13 Oct 2026: the djvu text was not kept on disk by VIV-M and IA was not a host of that brief; Mousset prints fr.16108 only from ff.380-382 (3 Sept 1582), so it does not bound the 1580-82 walk; next: one IA fetch of the djvu, keep it on disk, then a second script pass on letter headings, ~$0.5
 - github.com/larrycbeck/cyphersolver and Cipherbrain/Cryptiana comment threads not opened - blocker: not-attempted; beyond this brief (one pair, one first test); next: one README fetch, ~USD 0.1
 ## Escalation (VIV-T, 4 Oct 2026)
-- [ ] siblings: fr16104 folder (1572-74 cipher, Tomokiyo's Vivonne1 table) is a sibling with a different key; not merged and not written
+- [x] siblings: VIV-WALK (13 Oct 2026) census: 18 cipher letters in fr.16107/16108 with the clerk's "Dechifre de la precedente" copy beside them (2 more probable; cipher_letters.tsv) are same-pool siblings for key rebuilding beside the 2 Mar 1580 pair; fr16104 (1572-74, Tomokiyo Vivonne1 table) is a different key, not merged or written
 - [x] clear-pages: one pair located (2 Mar 1580: cipher c107-c109 left, copy c110 right-c112 left); test 1 ran on f.101v vs f.105r: NON-TEST at err_2reader 0.576
 - [x] known-keys: Mousset pp.lviii-lix table on disk (key/mousset1912.tsv, published) and applied to f.101v through a shape crosswalk (D4-VIVMOUS, 6 Oct 2026): PASS (0.454 vs null p99 0.400) with a 5/5 matched control; verifier D4-VIVV: text-specific PASS only by a thin margin (0.454 vs unrelated-French p99 0.448), D0; a key check, not a reading; see the D4-VIVMOUS section; D2-VIVX (8 Oct 2026) applied D4-VIVV's four crosswalk fixes: target score unchanged (0.4537), text-specific margin unchanged (0.006 over wrong-text p99), second attempt of the crosswalk instrument logged in HYPOTHESES.md; no further crosswalk-only tuning
 - [x] print: Mousset 1912, Gachard II, d'Ars 1884 read; no print of the 2 Mar 1580 letter's text found (d'Ars paraphrase only)
 - [ ] key-rebuild: test 1 fitted a grade-C key, unusable at this transcription error; rebuild after the sorter
-- [x] image-check: 57 canvases sampled; c107-c112 viewed; c107 cut to native line crops
+- [x] image-check: 57 canvases sampled (VIV-M); c107-c112 viewed; c107 cut to native line crops; VIV-WALK 198 more canvases at 600 px (fr.16107/16108, stride 5 + fill-ins), classed in cipher_census.tsv
 - [ ] retry: test 1 re-run on settled labels and the whole letter (gap 3)
-Verdict: keep going: 7 internal gaps (D2-VIVX, 8 Oct 2026: the crosswalk route is exhausted without the sorter); cheapest next: owner sign sorter on the c107 crops (the inventory is the blocker), then re-label against the Mousset glyphs and re-run vivmous.py, a full read of the copy, and test 1 re-run at power on the whole letter, ~$8 plus owner time
+Verdict: keep going: 7 internal gaps (VIV-WALK, 13 Oct 2026: census of 1580-82 pairs done at stride 5, 18+2 pairs found); cheapest next: owner sign sorter on the c107 crops (the inventory is the blocker), then a test-1 re-run at power on a longer pair chosen from cipher_letters.tsv (the letter-form pairs of 1580, e.g. 18 May 1580 c233-c253), plus the not-seen fill-in walk ~$2, ~$10 plus owner time
 
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
@@ -202,3 +202,46 @@ attempt of the crosswalk instrument on this transcription (D4-VIVMOUS, D2-VIVX) 
 A further crosswalk-only edit is not run; the next attempt needs new labels from the owner's sign sorter (gap 1) or new material.
 Grades: no clause reads; D0 stands (rule 4a). No reading changed after AUDIT.md (none exists for a reading here). Requests: none (disk
 only). `vivmous.py --check`: see the done line.
+
+## VIV-WALK: 1580-82 cipher / dechiffre census (13 Oct 2026, 21:48-22:1x UTC by date -u)
+Brief: LANE DEFAULT-A4-2135 (account 4), job VIV-WALK. No transcription; no reading; nothing graded.
+Prior work: `tools/prior_work.py` run per volume (item-spec fr.16107 / fr.16108, step lookup): exit 4, the only owed row was this
+job's own live claim (recorded CLEAR in prior-work.tsv); solver caches CLEAR; aaymeloglu repository and Catherine de Medicis
+letters UNCHECKED (not a census input). Own work read first: VIV-M's 57-canvas sample (viv_sample.tsv) and VIV-T's c107-c112 were
+not re-fetched (one slip: c107 refetched by the selection script, 1 request).
+Mousset pass from disk: not run -- the djvu text VIV-M parsed was not kept on disk, and IA was not a host of this brief. It would
+not have narrowed the walk: mousset_letters.tsv names fr.16108 only at ff.380-382 (3 Sept 1582); the 1580-82 range is all of
+fr.16107 and fr.16108.
+Route: openapi.bnf.fr IIIF Image v3, `full/600,/0/default.jpg`, one request at a time, 3.2 s apart, descriptive User-Agent:
+198 requests, all HTTP 200, no challenge (`walk/walk_fetch.py`, log with url/date/bytes/sha1 in `walk/fetch_log.jsonl` and
+`images/manifest.json` "viv_walk"). Images stay untracked in images/walk/ (.gitignore); `walk/sheets.py` rebuilds the contact
+sheets (20 canvases per sheet plus a top-strip sheet for headings). Selection: every 5th canvas from c3 in each volume
+(`walk/canvas_list.tsv`, 173), then 27 fill-ins chosen after the sheets to find the copy after each cipher run (`walk/fill_list.tsv`).
+Outputs: `cipher_census.tsv` (198 rows: canvas, folio as written, class, date/addressee, pair partner, note) and
+`cipher_letters.tsv` (one row per cipher run seen, with its decipherment status).
+| volume | canvases classed | cipher | mixed | dechiffre | clear | other/blank |
+|---|---|---|---|---|---|---|
+| fr.16107 | 90 | 19 | 12 | 5 | 36 | 18 |
+| fr.16108 | 108 | 22 | 10 | 10 | 53 | 13 |
+| cipher letters (runs) seen | pair | probable pair | heading only | slip only | not seen | copy, cipher not seen |
+|---|---|---|---|---|---|---|
+| fr.16107 (1580) | 7 | 2 | 1 | 0 | 4 | 1 |
+| fr.16108 (1581-82) | 11 | 0 | 1 | 2 | 10 | 0 |
+Observations (by eye at 600 px, grade I):
+- The clerk's copy follows the cipher, headed "<date> / Dechifre de la precedente", on the next page or next opening (as VIV-M and
+  VIV-T found). Pairs are listed in cipher_letters.tsv with both canvases.
+- Two **headings without a copy**: fr.16107 c101 (after the c98-c100 cipher) and fr.16108 c434 (after c428-c433, Oct 1582) carry
+  "Dechifre de la precedente" over an otherwise blank, endorsed page -- the same shape as VIV-T's f.104r. These are the
+  strongest candidates for cipher letters left without a copy in the volume.
+- **Dechifre slips pasted over cipher pages**: fr.16107 c328, fr.16108 c169 (8 Nov 1581), c298 (25 Jun 1582), c333 (9 Jul 1582).
+  A heading is not a copy: c333's real copy is at c338; c328's at c330; for c169 and c298 no copy was seen. VIV-M's c168
+  "Dechifrement 8 Nov 1581" is the facing opening of c169 and is this slip.
+- Alphabets: the letter-form mark alphabet runs through fr.16107 and fr.16108 to about c123 (mid-1581); the digit-and-mark
+  alphabet appears from fr.16108 c163 (Nov 1581) and runs through 1582; c298 (25 Jun 1582) is pure digit groups and may be a third
+  system; c453 and c473-c478 (Oct-Dec 1582) look letter-form again. Not matched to Tomokiyo's or Mousset's tables.
+- Incoming letters carry cipher too: fr.16107 c343 (the King to St Goard, 27 Jul 1580) has cipher lines at the foot.
+- Gachard's counts (26 double-numbered letters in fr.16107, 28 in fr.16108) against 9 and 11 pairs found here: a stride-5 walk
+  sees about one copy in two or three, consistent with VIV-M's estimate; the counts are not contradicted.
+What this does not establish: that the 14 "not seen" runs lack a copy -- the 4 canvases between stride points were not looked at
+for most runs; letters, dates and addressees are read off 600-px headings and may be off by a day (c118 9 Mar vs c126 8 Mar).
+Requests: openapi.bnf.fr 198 (all 200). No other host.

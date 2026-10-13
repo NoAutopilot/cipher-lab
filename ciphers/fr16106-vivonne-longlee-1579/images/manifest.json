@@ -1344,5 +1344,1594 @@
    },
    "date": "04 Oct 2026"
   }
- ]
+ ],
+ "viv_walk": {
+  "note": "VIV-WALK 13 Oct 2026: 600-px overviews from openapi.bnf.fr, kept untracked under images/walk/ (no image in git); re-derive with python3 walk/walk_fetch.py walk/canvas_list.tsv and walk/fill_list.tsv, then walk/sheets.py",
+  "entries": [
+   {
+    "file": "images/walk/fr16107_c003.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f3/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 14546,
+    "sha1": "3f629a3438476c97031b1d100dc0b15f449549d8",
+    "date": "2026-10-13 21:50:28 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c008.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f8/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 66279,
+    "sha1": "03be891262c0e359cc805c283bd51d41f90c14ed",
+    "date": "2026-10-13 21:50:37 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c013.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f13/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 38879,
+    "sha1": "0c91cbabe4c88e23f7eee012dde9f558c6acf823",
+    "date": "2026-10-13 21:50:42 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c018.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f18/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 35438,
+    "sha1": "933836f6d43d920f1c7ee73fa25ff719fb38d949",
+    "date": "2026-10-13 21:50:46 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c023.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f23/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 56571,
+    "sha1": "1b598500d1371fd9d0756697a02bc640aeaf4e63",
+    "date": "2026-10-13 21:50:50 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c028.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f28/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 48516,
+    "sha1": "dcb622365a4082b5dafb17e9696b85665f75e6ca",
+    "date": "2026-10-13 21:50:54 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c033.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f33/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 56172,
+    "sha1": "c808c390865ec61d3349d92e602ebc7b8b10378d",
+    "date": "2026-10-13 21:50:59 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c038.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f38/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 46665,
+    "sha1": "19995a753d05f7fc1ab733bbbda08bfc2beaf092",
+    "date": "2026-10-13 21:51:03 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c043.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f43/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 34677,
+    "sha1": "fe9a94fee81e249aee332921d38beafcae7b2d7e",
+    "date": "2026-10-13 21:51:07 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c048.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f48/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 39035,
+    "sha1": "e8ae0da991a4fb2518ab43e8f821ecea6da15458",
+    "date": "2026-10-13 21:51:13 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c053.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f53/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 34802,
+    "sha1": "c9e9fcb59f6f1552ecd2e21193d1fef7e88d7e36",
+    "date": "2026-10-13 21:51:17 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c058.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f58/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 59285,
+    "sha1": "0509c60ec8ef5af0291f2833d58a412669dfca15",
+    "date": "2026-10-13 21:51:21 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c063.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f63/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 23072,
+    "sha1": "2b90965265a9d661d380141c12982c23b7204a46",
+    "date": "2026-10-13 21:51:26 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c068.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f68/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 37590,
+    "sha1": "88b17482ae29c5e19a298b51fbd2634f2dfb9413",
+    "date": "2026-10-13 21:51:30 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c073.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f73/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 55442,
+    "sha1": "d952d7f48cd9499949b0848d2f1c1db167aef7b4",
+    "date": "2026-10-13 21:51:35 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c078.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f78/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 41462,
+    "sha1": "213c4cf0ecdf03f6aeed92b85772116e97a28dfc",
+    "date": "2026-10-13 21:51:39 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c083.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f83/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 27918,
+    "sha1": "92cf85e3ee965d4f9616039edcd7f5cd991cfd31",
+    "date": "2026-10-13 21:51:44 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c089.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f89/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 52835,
+    "sha1": "4cbd44bb1ba6415a6b2890f3af3d701ab58c7de3",
+    "date": "2026-10-13 21:51:48 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c093.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f93/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 48014,
+    "sha1": "eb7f144ddefc7b1de3dc6471c0c6d31ae6e6b747",
+    "date": "2026-10-13 21:51:52 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c098.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f98/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 56508,
+    "sha1": "148c2d8390a25f6a151257ce4a9bf027d109e2b8",
+    "date": "2026-10-13 21:51:56 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c103.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f103/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 40042,
+    "sha1": "0204ddf643314d863b34bedbe91cac5b4b5dfc4c",
+    "date": "2026-10-13 21:52:00 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c107.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f107/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 58362,
+    "sha1": "b9f4e4254dbdb3fd79f9681a98e65484401d045e",
+    "date": "2026-10-13 21:52:04 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c113.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f113/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 26625,
+    "sha1": "7621774ebfd8d93ce8dbb63c6d1b20a0497a3595",
+    "date": "2026-10-13 21:52:10 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c118.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f118/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 33854,
+    "sha1": "a1ec65fe1a214858c4c1aa8a2b6104ca6ff788b5",
+    "date": "2026-10-13 21:52:15 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c123.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f123/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 50531,
+    "sha1": "85b4ebe1ff1d3afce87785a29fc132137cfef45e",
+    "date": "2026-10-13 21:52:19 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c128.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f128/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 42465,
+    "sha1": "359a8310324cd74404adafc2fd6e1e0ee49933d5",
+    "date": "2026-10-13 21:52:24 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c133.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f133/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 18918,
+    "sha1": "3130ca3ffa89056f5548120c000036b7ec547663",
+    "date": "2026-10-13 21:52:29 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c138.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f138/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 56307,
+    "sha1": "12b0a50256efb641c51f57d88f0274f43843531e",
+    "date": "2026-10-13 21:52:33 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c143.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f143/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 20511,
+    "sha1": "eb0f8274f20e1506c0620677fadce9d804c2b8fe",
+    "date": "2026-10-13 21:52:37 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c148.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f148/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 58591,
+    "sha1": "244a2e9ed743a3a281a4a6fa6bd0abbeadc01a41",
+    "date": "2026-10-13 21:52:41 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c153.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f153/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 59533,
+    "sha1": "58cd6b34157804446f95c64e3952a5e0cbb897b7",
+    "date": "2026-10-13 21:52:45 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c158.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f158/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 46257,
+    "sha1": "944acf65656fa45a69c1dca5caec145518949d21",
+    "date": "2026-10-13 21:52:50 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c163.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f163/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 25643,
+    "sha1": "861f58de04111cecb6df6b97834036be8990ba4e",
+    "date": "2026-10-13 21:52:54 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c168.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f168/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 39871,
+    "sha1": "1480cc8ef8e5efc43b7c83ab892d52cfcb2e9185",
+    "date": "2026-10-13 21:52:58 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c173.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f173/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 49657,
+    "sha1": "674590fa9bb694bf69a9d0637bc066399c5b9ead",
+    "date": "2026-10-13 21:53:02 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c178.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f178/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 40933,
+    "sha1": "718c26c4e8eab5704a120eeec76265d6817605c5",
+    "date": "2026-10-13 21:53:07 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c184.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f184/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 43382,
+    "sha1": "419554dd8b32dadd5bba14b24f11fd848300beac",
+    "date": "2026-10-13 21:53:11 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c188.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f188/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 60511,
+    "sha1": "8d623ac7cb7c8fea9626b16b31a5c7f685083183",
+    "date": "2026-10-13 21:53:16 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c193.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f193/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 38572,
+    "sha1": "bdda9ddcf3434d7aa1311c01d73b7c0cee919d3b",
+    "date": "2026-10-13 21:53:21 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c198.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f198/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 36739,
+    "sha1": "f636570f7cdc76d1b0410496b89536bfc1c69b31",
+    "date": "2026-10-13 21:53:26 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c203.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f203/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 36269,
+    "sha1": "2642c88e368c5c65f7c9eadf9d259e8e7b384a78",
+    "date": "2026-10-13 21:53:30 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c208.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f208/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 13724,
+    "sha1": "cdfd4e289bd43f6b93315bd27f12250f618766cc",
+    "date": "2026-10-13 21:53:34 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c213.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f213/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 37947,
+    "sha1": "5a7567be6e9cd785daedba008eaa6df604a77670",
+    "date": "2026-10-13 21:53:38 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c218.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f218/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 19031,
+    "sha1": "5f864e51656fae226856e23f113335e35c61bf57",
+    "date": "2026-10-13 21:53:42 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c223.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f223/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 33858,
+    "sha1": "3d31f89ee810c9b898ed19e4f25caf63308b0029",
+    "date": "2026-10-13 21:53:46 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c228.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f228/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 29529,
+    "sha1": "0761c9a39df0fb5e97cf06eda99766f2388ab7c4",
+    "date": "2026-10-13 21:53:51 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c233.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f233/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 38884,
+    "sha1": "1f7464d1d5e6a9780f6ee55aa28f97df295dc89d",
+    "date": "2026-10-13 21:53:55 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c238.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f238/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 38921,
+    "sha1": "74f27747d2c6ab9c519d86fab209e51cb48601ac",
+    "date": "2026-10-13 21:53:59 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c243.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f243/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 57342,
+    "sha1": "16834ed4f8ce4d84ef2b84e86298306c2d6957d6",
+    "date": "2026-10-13 21:54:03 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c248.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f248/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 58755,
+    "sha1": "24ae46ab1700e29a0c2b34f1a3b7e1d310f158e6",
+    "date": "2026-10-13 21:54:09 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c253.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f253/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 50453,
+    "sha1": "d697693bb6e07fcb6051fd17829535a2c0ab93fe",
+    "date": "2026-10-13 21:54:13 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c258.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f258/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 43878,
+    "sha1": "84d6897bddb13a72939d94e220b1b5c8c1c736a3",
+    "date": "2026-10-13 21:54:17 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c263.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f263/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 29187,
+    "sha1": "a93a91716c89279f5ef1805dff644716de4cc11a",
+    "date": "2026-10-13 21:54:22 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c268.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f268/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 46762,
+    "sha1": "d24cb042beb3f9b9dbf5dfb17da49690f7670930",
+    "date": "2026-10-13 21:54:26 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c273.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f273/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 39921,
+    "sha1": "1e1b898823267f9cfe21fb30bfb021ae138732ab",
+    "date": "2026-10-13 21:54:30 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c279.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f279/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 45202,
+    "sha1": "b3bc7738f700757d3dca4abc3d32b6834d277ca1",
+    "date": "2026-10-13 21:54:35 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c283.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f283/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 25256,
+    "sha1": "9ed7c5c07216e21418f6f07845e6d8391ec15838",
+    "date": "2026-10-13 21:54:39 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c288.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f288/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 54605,
+    "sha1": "3c57079843464fc39a11d9a1956884bd5d58a5a6",
+    "date": "2026-10-13 21:54:43 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c293.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f293/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 19720,
+    "sha1": "f743a52b708e0ddc553b1e5fe79f00f9524f68fc",
+    "date": "2026-10-13 21:54:47 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c298.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f298/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 39156,
+    "sha1": "85e26cfbcf43b92db6975a219ef9cc564b3d3675",
+    "date": "2026-10-13 21:54:51 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c303.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f303/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 53879,
+    "sha1": "500b326338f13adcbb33f862946f12d6c6173c48",
+    "date": "2026-10-13 21:54:56 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c308.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f308/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 42100,
+    "sha1": "543bce4c03ff29d09500da06eb6587adbbf632e1",
+    "date": "2026-10-13 21:55:00 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c313.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f313/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 49158,
+    "sha1": "610098b7d36849082c49de70459a781f688ecf1d",
+    "date": "2026-10-13 21:55:05 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c318.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f318/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 50148,
+    "sha1": "84537c0bf01bdd38f19c4473c2dc94815c72a171",
+    "date": "2026-10-13 21:55:09 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c323.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f323/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 40825,
+    "sha1": "2f3855367a5084153fc3edeae617ef5f905d4138",
+    "date": "2026-10-13 21:55:13 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c328.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f328/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 44680,
+    "sha1": "04e501691e769bf2a7346e757e06b6ab2e11fd69",
+    "date": "2026-10-13 21:55:18 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c333.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f333/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 32586,
+    "sha1": "bad5c459ca6f4332611106178e06e1fd4579b3cc",
+    "date": "2026-10-13 21:55:23 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c338.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f338/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 36906,
+    "sha1": "705412e545c47890e0c364e4fa52128f7d7b5479",
+    "date": "2026-10-13 21:55:27 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c343.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f343/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 31799,
+    "sha1": "f5dd9f4499247ab1e2fc3b81cf24a5b2a7ca128c",
+    "date": "2026-10-13 21:55:31 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c348.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f348/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 49452,
+    "sha1": "adc78d819246ae3d2faf80fcea977d4cc179be02",
+    "date": "2026-10-13 21:55:35 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c353.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f353/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 50506,
+    "sha1": "3e4e4593dbeddf1c506e0181adf8c35e89781192",
+    "date": "2026-10-13 21:55:39 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c358.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f358/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 51857,
+    "sha1": "5c4cea2d46607f0886bc85818ad1d971eda542b5",
+    "date": "2026-10-13 21:55:44 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c363.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f363/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 22695,
+    "sha1": "d44ecab699827e7b5abda6237df0d15aed318d0b",
+    "date": "2026-10-13 21:55:48 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c368.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f368/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 36617,
+    "sha1": "fd9c3005d2f089b94ccb08a6e11f1ae998a0d2ed",
+    "date": "2026-10-13 21:55:53 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c374.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f374/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 58833,
+    "sha1": "0141b9b9b2ef10bd3f4dbf3201f1729523fd5574",
+    "date": "2026-10-13 21:55:57 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c378.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f378/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 32088,
+    "sha1": "9df93d5e68527a29bbbefccb46bb9d3068c3a5ab",
+    "date": "2026-10-13 21:56:02 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c003.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f3/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 17038,
+    "sha1": "2839cbbb550fb63e939930ac77430865045d29a8",
+    "date": "2026-10-13 21:56:06 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c008.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f8/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 39450,
+    "sha1": "207078f2b9b7a59637d6ef6d9e110ce982480903",
+    "date": "2026-10-13 21:56:10 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c013.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f13/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 35600,
+    "sha1": "0e71fc6984ec024540aed241603a2e10ebf8444a",
+    "date": "2026-10-13 21:56:14 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c018.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f18/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 60064,
+    "sha1": "e78cc29cca385318f8ff92a3bb2b21d5873a7f07",
+    "date": "2026-10-13 21:56:18 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c023.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f23/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 43582,
+    "sha1": "9f396ffedc35cbe318e5528282d54bb1bb1e87f3",
+    "date": "2026-10-13 21:56:23 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c028.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f28/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 34750,
+    "sha1": "eefd41498636793c313b44ab7fda31385bfb2ee1",
+    "date": "2026-10-13 21:56:27 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c033.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f33/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 23148,
+    "sha1": "4af76366c06eb92cc918a7f360eefa9e0cbc70df",
+    "date": "2026-10-13 21:56:31 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c038.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f38/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 47287,
+    "sha1": "f3ccab64e1995e4dbd682ac565567b1ff760ba9d",
+    "date": "2026-10-13 21:56:35 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c043.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f43/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 35633,
+    "sha1": "ba188ef78ae46344199afccf5166e658ae19afe1",
+    "date": "2026-10-13 21:56:40 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c048.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f48/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 53571,
+    "sha1": "8c3042cf80f3867b6bc6d11508565e443671b240",
+    "date": "2026-10-13 21:56:44 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c053.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f53/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 38126,
+    "sha1": "304bb2eb9a4f989eaddda40d0778579a207d5afb",
+    "date": "2026-10-13 21:56:49 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c059.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f59/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 42123,
+    "sha1": "2eb26d4c67dd67d537f2c28aa38658b22565885c",
+    "date": "2026-10-13 21:56:53 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c063.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f63/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 42347,
+    "sha1": "8d9cc443d3f61d1f375259977be6b334074ad55b",
+    "date": "2026-10-13 21:56:57 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c068.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f68/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 59113,
+    "sha1": "c99fef14483e1e2f24f0fab5a49056c09af3f2b1",
+    "date": "2026-10-13 21:57:02 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c073.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f73/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 45738,
+    "sha1": "86ce8783e2793afb4c6d95785511c452e0336300",
+    "date": "2026-10-13 21:57:07 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c078.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f78/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 21310,
+    "sha1": "92f90b4ed276cfc5608acff41f311143f44d5e83",
+    "date": "2026-10-13 21:57:11 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c083.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f83/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 36435,
+    "sha1": "cf610d86c0cffed85835031348a6faed78d51d5c",
+    "date": "2026-10-13 21:57:15 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c088.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f88/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 40559,
+    "sha1": "87407d1358bebe7cf9c99ceed32a407ec42015b9",
+    "date": "2026-10-13 21:57:19 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c093.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f93/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 35502,
+    "sha1": "932eff82648e3e259935ba829951b85a50996ab7",
+    "date": "2026-10-13 21:57:24 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c098.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f98/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 42404,
+    "sha1": "2a813fa387438bdb55ae86d5815e97bcf4facf3a",
+    "date": "2026-10-13 21:57:28 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c103.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f103/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 59065,
+    "sha1": "213ce9fdfa21451e393303f0c3a3c704ae7981a1",
+    "date": "2026-10-13 21:57:32 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c108.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f108/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 20267,
+    "sha1": "050ce8861a05f937d5c4b57b0059c623448e1ea6",
+    "date": "2026-10-13 21:57:36 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c113.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f113/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 57337,
+    "sha1": "def2c6c9c2fd60b84a6e88fb97770e8663e71662",
+    "date": "2026-10-13 21:57:41 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c118.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f118/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 40666,
+    "sha1": "38834e1e5752121799eb06614616cff8121dd2a9",
+    "date": "2026-10-13 21:57:45 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c123.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f123/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 60230,
+    "sha1": "f3d18d203976c5ca35485ddcb52b37b47691b0cc",
+    "date": "2026-10-13 21:58:51 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c128.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f128/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 24618,
+    "sha1": "aef1bdc4fd22a454318738cce04f08246eb73cb2",
+    "date": "2026-10-13 21:58:55 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c133.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f133/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 38105,
+    "sha1": "94ecadb9ba407ff26d86b5daf71efcf25666e38a",
+    "date": "2026-10-13 21:58:59 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c138.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f138/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 52580,
+    "sha1": "6b7c77a8d634d2d16fe36fe7064a4987b8eefde3",
+    "date": "2026-10-13 21:59:04 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c143.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f143/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 56280,
+    "sha1": "b3ce51b2fa90a2232ef36c6ffdd33229bafb4acb",
+    "date": "2026-10-13 21:59:08 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c148.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f148/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 39903,
+    "sha1": "bf98bed4e644a8abdbe9be3832cd32360b5b1c01",
+    "date": "2026-10-13 21:59:12 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c153.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f153/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 57634,
+    "sha1": "1f9bd48fedc5d35586493de43b15826bb1a2217f",
+    "date": "2026-10-13 21:59:16 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c158.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f158/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 56285,
+    "sha1": "21b8b393a98bfda60064517fbf739ff2c0a78e0e",
+    "date": "2026-10-13 21:59:21 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c163.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f163/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 56785,
+    "sha1": "5f0dd8c9e5e85c6580d780d2d0708862ee5472d9",
+    "date": "2026-10-13 21:59:25 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c169.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f169/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 50883,
+    "sha1": "f275cdceadca9a2754dbca94046e1cfca99479a7",
+    "date": "2026-10-13 21:59:29 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c173.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f173/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 50865,
+    "sha1": "edf113dd251c215205f9d4f079df45da26c36bf3",
+    "date": "2026-10-13 21:59:34 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c178.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f178/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 40473,
+    "sha1": "295d583aa40e063c375ae6a71c37adf897abd2ca",
+    "date": "2026-10-13 21:59:38 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c183.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f183/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 38395,
+    "sha1": "49c498c0dfb2494e7087df2ee706f515ca66bef8",
+    "date": "2026-10-13 21:59:42 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c188.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f188/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 47990,
+    "sha1": "eb0ac6f75be85439cb3fe2baf547d986f811503f",
+    "date": "2026-10-13 21:59:46 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c193.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f193/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 43662,
+    "sha1": "8236e0c90293a97fdd4a135de65d033d3b97aea9",
+    "date": "2026-10-13 22:00:51 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c198.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f198/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 35407,
+    "sha1": "43168a8915489f5be559b4edfa247b7dfe54e0d1",
+    "date": "2026-10-13 22:00:56 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c203.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f203/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 16426,
+    "sha1": "8451ef2a29debe7685f7b2bdb71174ee31e29bac",
+    "date": "2026-10-13 22:01:00 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c208.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f208/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 14824,
+    "sha1": "43a53bad208cdd47b1c9c26f1e3ee6f0183fe50b",
+    "date": "2026-10-13 22:01:04 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c213.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f213/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 29615,
+    "sha1": "c2d060156c3e682dbd73c81124d106dc22509eec",
+    "date": "2026-10-13 22:01:08 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c218.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f218/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 26150,
+    "sha1": "378406851dffd8372d19e2af568846bb33abe2c3",
+    "date": "2026-10-13 22:01:13 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c223.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f223/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 34703,
+    "sha1": "7abe4138c0c9ad15bdd62dc207e6c0229693ae70",
+    "date": "2026-10-13 22:01:17 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c228.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f228/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 28542,
+    "sha1": "5c23fe062991c534061a164ff57719b5cc122373",
+    "date": "2026-10-13 22:01:22 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c233.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f233/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 31458,
+    "sha1": "c60c8408cba718832d900a5760ee05fe223878ef",
+    "date": "2026-10-13 22:01:26 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c238.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f238/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 43891,
+    "sha1": "699df31c0d35d624e3f83cd8b3c7afe4e048f1f7",
+    "date": "2026-10-13 22:01:30 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c243.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f243/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 32125,
+    "sha1": "38da40af5cadbec9111d99a173bb3566afaf273c",
+    "date": "2026-10-13 22:01:34 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c248.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f248/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 46109,
+    "sha1": "7ea717096846138c68a61702edde43f161374cd6",
+    "date": "2026-10-13 22:01:39 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c253.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f253/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 53162,
+    "sha1": "93216287523880a73b67b1f52121cb6168ad77e5",
+    "date": "2026-10-13 22:01:43 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c258.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f258/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 53683,
+    "sha1": "d1c7ca72e10ffc974afc76ed710c061e14085dfc",
+    "date": "2026-10-13 22:01:47 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c263.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f263/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 35697,
+    "sha1": "9cb06b08ab64d85b51f0eabc2b326d1a80f14afe",
+    "date": "2026-10-13 22:01:51 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c268.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f268/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 51194,
+    "sha1": "4942c24177a4847f9bdcdc0b26e63758700f971a",
+    "date": "2026-10-13 22:01:56 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c273.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f273/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 34894,
+    "sha1": "5da66cba4cbdd1793bce598eb327624671422edc",
+    "date": "2026-10-13 22:02:00 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c279.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f279/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 41466,
+    "sha1": "338ea365c553c873715e2d5afe39f630b694ca28",
+    "date": "2026-10-13 22:02:05 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c283.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f283/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 56631,
+    "sha1": "9af7f3d5d6406bbe38f3944b545d9ff69cebd689",
+    "date": "2026-10-13 22:02:09 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c288.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f288/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 21249,
+    "sha1": "c8fe1c5163f4527b2c8770f0319469d09c27efe8",
+    "date": "2026-10-13 22:02:13 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c293.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f293/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 50679,
+    "sha1": "c290ab4567a27a2858041556cd8fc167704b724a",
+    "date": "2026-10-13 22:02:17 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c298.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f298/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 52697,
+    "sha1": "1264543292ce6e00a94e9169d0b42aa642ca2e4c",
+    "date": "2026-10-13 22:02:22 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c303.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f303/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 35087,
+    "sha1": "8fcf8fb21efc39a2b5a2fd65c54f9bc9fbf52dc5",
+    "date": "2026-10-13 22:02:26 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c308.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f308/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 65787,
+    "sha1": "b34bece3e684f203fa11e370c8a521a1024c18bf",
+    "date": "2026-10-13 22:02:30 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c313.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f313/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 54310,
+    "sha1": "a3b878472386bf15eba24048113dcda901292ef2",
+    "date": "2026-10-13 22:02:35 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c318.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f318/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 63662,
+    "sha1": "50f1e76bc079024a2292afaf293235bf025721d3",
+    "date": "2026-10-13 22:02:39 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c323.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f323/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 35008,
+    "sha1": "d445166d527a200a1c4a2ac7bec4e553adb0bcd5",
+    "date": "2026-10-13 22:02:43 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c328.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f328/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 28682,
+    "sha1": "2e463c3a7cef64aaea3d7ca09c0bc264ff702cd1",
+    "date": "2026-10-13 22:02:48 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c333.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f333/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 46181,
+    "sha1": "7c0c4551a00c65cc3606a0fc3962f5259c2fd21a",
+    "date": "2026-10-13 22:02:52 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c338.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f338/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 37354,
+    "sha1": "a70a6a16ce052193cb8c058138b4865532abafbc",
+    "date": "2026-10-13 22:02:56 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c343.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f343/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 43947,
+    "sha1": "7b67e7dc9166253e106cb1bbf3c274d4bbbf4750",
+    "date": "2026-10-13 22:03:00 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c348.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f348/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 50049,
+    "sha1": "d2a46412ff6d955a895407999a4184324ff208b2",
+    "date": "2026-10-13 22:03:05 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c353.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f353/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 60741,
+    "sha1": "9e93bac01ac828e6ae2f46a50b259034796a5b77",
+    "date": "2026-10-13 22:03:09 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c358.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f358/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 30000,
+    "sha1": "0d35a2f24dcb32e7b8a61a394c2b5f8eda421bd2",
+    "date": "2026-10-13 22:03:13 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c363.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f363/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 34721,
+    "sha1": "13b143cd458b7dfb2ee5a724a07a7c141d9b1cd1",
+    "date": "2026-10-13 22:03:17 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c368.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f368/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 32189,
+    "sha1": "4840f7505efbc987ef609644557107f650cc5263",
+    "date": "2026-10-13 22:03:22 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c373.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f373/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 39701,
+    "sha1": "30f8ab52faa95670d06951db1f9fa0b40abc092b",
+    "date": "2026-10-13 22:03:26 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c378.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f378/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 40950,
+    "sha1": "26d82a3785ea45647684a1171ade2d7199b1f662",
+    "date": "2026-10-13 22:03:31 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c383.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f383/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 38803,
+    "sha1": "e69c224ec6bba2b27b954103ccd95d21634fb68c",
+    "date": "2026-10-13 22:03:35 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c389.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f389/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 50431,
+    "sha1": "ec1b77e3312574fedbe350739668e679f8c239f5",
+    "date": "2026-10-13 22:03:40 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c393.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f393/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 26431,
+    "sha1": "70b9326581e52d072fd53898ce87e1ae26099d41",
+    "date": "2026-10-13 22:03:44 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c398.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f398/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 29550,
+    "sha1": "4d1ba878e856f01363db0ad01026d8289d542195",
+    "date": "2026-10-13 22:03:48 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c403.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f403/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 60326,
+    "sha1": "9abf9c2215e5275d6fdf8ee1f64df66b58afeb2b",
+    "date": "2026-10-13 22:03:52 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c408.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f408/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 21168,
+    "sha1": "a244b4e39c90043eab4f85e367e6efa64cbd7966",
+    "date": "2026-10-13 22:03:56 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c413.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f413/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 33831,
+    "sha1": "de4a6b99ae7645f18efe1d72814913b6597555f1",
+    "date": "2026-10-13 22:04:01 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c418.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f418/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 47074,
+    "sha1": "dd08ddde12c90fd8823bac76f2d200d4ccb4739d",
+    "date": "2026-10-13 22:04:05 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c423.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f423/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 25399,
+    "sha1": "cbe78f2fb6d0bcd238fcc4251e6fa0088c8f285a",
+    "date": "2026-10-13 22:04:11 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c428.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f428/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 62711,
+    "sha1": "49236ef4a4cb8f24838d2bc443a1843fe320673d",
+    "date": "2026-10-13 22:04:15 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c434.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f434/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 31152,
+    "sha1": "9f9f9f1cd159781fbe7f94f6a31df2639ecc48f1",
+    "date": "2026-10-13 22:04:19 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c438.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f438/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 42182,
+    "sha1": "aaa6f15f5259c064437d6f67fe8c4a210b49c939",
+    "date": "2026-10-13 22:04:23 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c443.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f443/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 41915,
+    "sha1": "7481e98d845a8b47aceb0d3de2a708c4dcc208ab",
+    "date": "2026-10-13 22:04:28 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c448.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f448/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 32427,
+    "sha1": "703c737484b5377a2d025b62334622c6c9729b92",
+    "date": "2026-10-13 22:04:32 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c453.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f453/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 34001,
+    "sha1": "846f9e3777c653aa5ddb540140c9282b28dad460",
+    "date": "2026-10-13 22:04:37 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c458.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f458/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 30396,
+    "sha1": "187db72896037e01ba73e1d91d8a57c9484f05cb",
+    "date": "2026-10-13 22:04:41 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c463.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f463/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 36986,
+    "sha1": "d0cbc3830258096fb532c250993280c8c264dbb2",
+    "date": "2026-10-13 22:04:45 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c468.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f468/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 44804,
+    "sha1": "247d881c5955d9496db6b5d0a2b49437617e14b8",
+    "date": "2026-10-13 22:04:49 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c473.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f473/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 43691,
+    "sha1": "f8c827aea66c368e1aa4cb13e759066112b9438c",
+    "date": "2026-10-13 22:04:53 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c060.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f60/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 59458,
+    "sha1": "952d68defe3af0a046a54beb5284b4ead0e754f5",
+    "date": "2026-10-13 22:05:48 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c062.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f62/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 25982,
+    "sha1": "d3d749f64c2e5545eb124e8436558f834cfe9b57",
+    "date": "2026-10-13 22:05:53 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c085.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f85/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 42921,
+    "sha1": "4b3309d8bbecf379354f99fc7141f162ee7bf068",
+    "date": "2026-10-13 22:05:57 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c087.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f87/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 16099,
+    "sha1": "3256439efac5d4c14f5083cd27377bdc3e0c52d6",
+    "date": "2026-10-13 22:06:03 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c100.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f100/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 42400,
+    "sha1": "a6b93770ae4b1b56a944b96775324306162a277a",
+    "date": "2026-10-13 22:06:07 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c101.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f101/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 19350,
+    "sha1": "760fe63e0d94c11ac13965dbf2e88bd5bca30280",
+    "date": "2026-10-13 22:06:12 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c155.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f155/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 43118,
+    "sha1": "6a5d6cba278762e1f1702d46a6d0ed0d36cbbdf0",
+    "date": "2026-10-13 22:06:16 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c156.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f156/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 43655,
+    "sha1": "247f4d4269a60b8f6623fd893f0ba8fc65ddfcbc",
+    "date": "2026-10-13 22:06:20 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c280.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f280/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 34814,
+    "sha1": "e207359c49392881eed60d9dc23aab38554ffa83",
+    "date": "2026-10-13 22:06:24 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c281.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f281/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 39378,
+    "sha1": "844d6d89fb26a0488a6122a0329823ad95c054a4",
+    "date": "2026-10-13 22:06:28 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c290.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f290/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 35741,
+    "sha1": "2dae5e184ed14ca3dbfa0bf12d5d531751e4b202",
+    "date": "2026-10-13 22:06:32 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c330.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f330/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 37300,
+    "sha1": "5e3d13eb0303abd7c92ef51c08c631dae7ec8c19",
+    "date": "2026-10-13 22:06:36 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c331.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f331/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 40391,
+    "sha1": "9bafd0b73fc968ca2fec3aa25e01bf442803b310",
+    "date": "2026-10-13 22:06:41 UTC"
+   },
+   {
+    "file": "images/walk/fr16107_c350.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f350/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 41508,
+    "sha1": "c2975209bb7907a16f2abfc103f1be0090c81170",
+    "date": "2026-10-13 22:06:45 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c076.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f76/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 32788,
+    "sha1": "cc630c8547d50aa0737b73ffd23bac1ca35019c7",
+    "date": "2026-10-13 22:06:49 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c090.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f90/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 61202,
+    "sha1": "2136df7e496462ebbad0fed1ba48f3dd71dc0bc8",
+    "date": "2026-10-13 22:06:54 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c106.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f106/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 49750,
+    "sha1": "cd47071e393545fbc8c22cec570b1ece5a0964e0",
+    "date": "2026-10-13 22:06:58 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c115.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f115/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 37143,
+    "sha1": "09c5d882d0c613e926df2268da01e0a3f27240a3",
+    "date": "2026-10-13 22:07:04 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c125.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f125/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 20261,
+    "sha1": "4605ec0de4f308a86290e627bf2bc3a107772980",
+    "date": "2026-10-13 22:07:08 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c260.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f260/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 41904,
+    "sha1": "19f6aaf8a2efb9cc03d485fa153ebc47dbcbb3bd",
+    "date": "2026-10-13 22:07:13 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c285.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f285/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 34655,
+    "sha1": "ee8808b3b3de76a0bfea9e7204a3ca25fbed2ccc",
+    "date": "2026-10-13 22:07:17 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c310.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f310/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 62340,
+    "sha1": "5bb7efe79346471e0b4edda670ebbbe02c9c88d4",
+    "date": "2026-10-13 22:07:22 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c405.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f405/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 33302,
+    "sha1": "28abc440722d5284605526ab38bdbf8fed6cea4a",
+    "date": "2026-10-13 22:07:26 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c430.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f430/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 57906,
+    "sha1": "0ca1f050cbe59b2bc764bf810b71ed4ade512d98",
+    "date": "2026-10-13 22:07:30 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c470.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f470/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 33533,
+    "sha1": "49968ebf0c5e0cf18070b71b1f78077ba13a19b3",
+    "date": "2026-10-13 22:07:34 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c478.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f478/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 61441,
+    "sha1": "0a3a1061faa83672c5fd075cda2f47a6fddbe7ff",
+    "date": "2026-10-13 22:07:39 UTC"
+   },
+   {
+    "file": "images/walk/fr16108_c483.jpg",
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009660f/f483/full/600,/0/default.jpg",
+    "http": 200,
+    "bytes": 51379,
+    "sha1": "55805eaca9f3a9acfa46cf7dfa406a9405b0f8eb",
+    "date": "2026-10-13 22:07:43 UTC"
+   }
+  ]
+ }
 }
