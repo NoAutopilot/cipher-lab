@@ -15226,3 +15226,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 10:06 | V2-VIV52 verifier | claim (10:06 UTC 13 Oct by date -u) for LANE DEFAULT-A4-0935 (account 4): fr16104-vivonne-spain-1572 ink 52 f.164r-v second adversarial audit (gate 2); cap USD 5, box 10:06-11:26 UTC (80% line 11:10)
 2026-10-13 10:08 | SYL54-TRY worker (Opus) | claim (10:0x UTC 13 Oct by date -u) for LANE DEFAULT-A4-0935 (account 4): fr15575-syllabic-1592-95 legend mark pairs + --try of the 16 marked no.54 rows; cap USD 3, box 10:06-11:06 UTC (80% line 10:54), openapi.bnf.fr <= 2
 2026-10-13 10:08 | F4712-C47 worker (Opus) | claim (10:06 UTC 13 Oct by date -u) for LANE DEFAULT-A4-0935 (account 4): fr4712-nevers-duchesse census canvases 47-58 (f.36v on), cap USD 2.5, box end 10:51 UTC; openapi.bnf.fr take, <= 14 requests
+2026-10-13 10:08 | V2-VIV52 verifier | IA take for LANE DEFAULT-A4-0935 (account 4): be-api FTS phrase search, <= 15 requests
