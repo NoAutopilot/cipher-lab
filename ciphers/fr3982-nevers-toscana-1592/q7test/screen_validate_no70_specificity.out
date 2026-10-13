@@ -1,0 +1,3 @@
+{"mode": "validate", "key": "key_no70_codes.tsv", "level": 0.1, "texts": 50, "nulls_each": 100, "power": 0.94, "mean_S": -1.1121, "mean_null_a": -1.6229, "mean_null_b": -1.46, "det_a": 1.0, "det_b": 0.94}
+{"mode": "specificity", "enc_key": "key_no62.tsv", "key": "key_no46_codes.tsv", "rate": 0.1, "texts": 100, "false_detect": 0.02, "mean_S": -1.3367}
+{"mode": "specificity", "enc_key": "key_no62.tsv", "key": "key_no70_codes.tsv", "rate": 0.1, "texts": 100, "false_detect": 0.01, "mean_S": -1.4091}

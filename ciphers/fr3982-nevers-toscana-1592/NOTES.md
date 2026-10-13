@@ -1,6 +1,6 @@
 open
 Edition read: Canestrini and Desjardins, Négociations diplomatiques de la France avec la Toscane, vol. V (Paris, Imprimerie nationale, 1875), archive.org gri_33125017126877 `_djvu.txt` (34,419 lines, full text grepped and the 1592 section headings read, 13 Oct 2026).
-- **Status:** open; check-solved by BNF-Q7-ID (Sonnet worker, LANE BNF-FOCUS account 2), 13 Oct 2026. Transcription of f.25 and key no.62 by BNF-Q7-KEY; no.62 excluded structurally by BNF-Q7-TEST (13 Oct 2026); no decode.
+- **Status:** open; check-solved by BNF-Q7-ID (Sonnet worker, LANE BNF-FOCUS account 2), 13 Oct 2026. Transcription of f.25 and key no.62 by BNF-Q7-KEY; no.62 excluded structurally by BNF-Q7-TEST; no.46 and no.70 alphabet no fit under the decode-level screen BNF-Q7-SCREEN (13 Oct 2026); no decode.
 - **Pile:** not anonymous (sender, recipient, date on the leaf).
 
 # Nevers to the Grand Duke of Tuscany, "dal Campo sotto Provins", 26 Aug 1592 -- BnF Français 3982 f.25
@@ -113,17 +113,72 @@ p = 0.44. With a dense two-digit table every digit string parses, real or shuffl
 discriminate: NON-TEST for no.46 (and for any dense two-digit key), not a negative. Key-family screening of dense
 tables needs a decode-level, order-sensitive statistic with a matched control (brief BNF-Q7-SCREEN).
 
-## Remaining gaps (lane, 13 Oct 2026)
-Read so far: unmeasured, no key reads the letter yet
-- Key identification for f.25 - blocker: not-attempted; no.62 retired, no.70 alphabet indicative misfit, no.46 structural non-test (dense table); next: BNF-Q7-SCREEN, a decode-level order-sensitive test validated on a no.62 control, run on no.46 and no.70; then candidate tables no.44, 45, 47, 56, 35, 63 of fr.3995 (two-digit figures, 1590-94, several Italian) transcribed and screened, ~$6 then ~$3 per key
-- Key no.70 nomenclator - blocker: not-attempted; only the alphabet of f.131r is transcribed, the word columns below it are not; next: transcribe them only if the screen above ranks no.70 first, ~$2
+## BNF-Q7-SCREEN (13 Oct 2026, account 2)
+Brief: .claude/briefs/runs/2026-10-13-ytbiz-bnf-q7-screen.md. PREREG-Q7-SCREEN.md pushed (cf14e366; addendum A a9f0669f:
+beam 6.0, skip at any digit) before any validation or target score. Disk only. Script `q7test/screen.py` (+ `vit.c`,
+`--help`; any key TSV `code<TAB>meaning` runs unchanged); outputs `q7test/screen_validate_no62.out`,
+`screen_validate_no46.out`, `screen_validate_no70_specificity.out`, `screen_target.out`.
 
-## Escalation (lane, 13 Oct 2026)
+**Instrument.** Viterbi over digit positions x 4-gram context, every matching code a transition (polyphones expanded),
+NULL -2.0, one-digit skip -3.0 (log10). Statistic S = LM log10-likelihood per letter on the best path (order-sensitive).
+Nulls: (a) key meanings shuffled within class (letters/words, nulls kept), (b) digit order shuffled. Italian LM =
+it16dip minus letterediprincip03char (held out; all synthetic windows come from it).
+
+**Validation** (200 held-out Italian windows, 260 digits, 3% nulls, errors 2/3 substitution + 1/6 deletion + 1/6
+insertion; detected iff S beats all 100 + 100 nulls, p <= 1/101 each):
+
+| key | 0% | 5% | 10% (gate 0.80) | 15% |
+|---|---|---|---|---|
+| no.62 (sparse) | 1.00 | 1.00 | **0.93** | 0.81 |
+| no.46 (dense two-digit) | 1.00 | 0.98 | **0.85** | 0.57 |
+| no.70 alphabet (50 texts, 10% only) | -- | -- | **0.94** | -- |
+
+Gate passed for both pre-registered keys; the dense-table case the structural check could not see is covered at 10%.
+At 15% no.46 drops to 0.57: the band brackets the passes' 9.5% disagreement, but a true error near 15% would leave a
+dense-table miss weaker. Specificity (100 texts enciphered in no.62 at 10%, screened with the wrong key): false
+detection 0.02 (no.46), 0.01 (no.70). The (b) digit-shuffle null is the binding one in every row (det_b < det_a).
+The no.70 control enciphers with the alphabet only, so it does not model untranscribed nomenclator codes.
+
+**Targets** (f.25, `?` removed, N = 260; 1000 + 1000 nulls, seed 25):
+
+| key | LM | S | null (a) mean / p99 | null (b) mean / p99 | p_a | p_b | skips / nulls on path | verdict |
+|---|---|---|---|---|---|---|---|---|
+| no.46 | it (counts) | -1.328 | -1.360 / -1.089 | -1.406 / -1.224 | 0.43 | 0.16 | 66 / 0 | no fit |
+| no.70 alphabet | it | -1.259 | -1.508 / -1.141 | -1.332 / -1.104 | 0.078 | 0.26 | 76 / 39 | no fit (nomenclator gap) |
+| no.46 | fr (indication, no French validation) | -1.202 | -1.151 / -0.953 | -1.152 / -1.042 | 0.71 | 0.82 | 46 / 1 | no fit |
+
+Best decodes are drafts only, grade M at most, and read as no text (no.46 it: "ut[sur][seul]_i_[seul]tgu_ii[vostre]..."; no.70:
+"__._u.n__.a._cbb.a_ne..."; full paths in screen_target.out). 66-76 skipped digits of 260 is itself the misfit's
+signature: true encipherments at 10% error need far fewer. No token is graded above M; nothing to verify.
+
+**Verdict.** f.25 does not fit key no.46 (Italian or French) or the no.70 alphabet at this transcription, against a
+screen whose matched controls detect a true encipherment at 10% digit error with power 0.85-0.94 and wrong-key false
+detection 0.01-0.02. Conditional on the 9.5% pass disagreement (power falls at 15%) and on the keys as transcribed;
+for no.70 a fit carried mostly by nomenclator codes could be missed (its p_a 0.078 is the nearest to the gate: not a
+fit, noted).
+
+### ITERATE
+| date | hypothesis | instrument | matched control | result | verdict | what it taught |
+|---|---|---|---|---|---|---|
+| 13 Oct 2026 | f.25 is in Nevers key no.46 (fr.3995 f.87, Bourdeau key46.txt A/N/P) | q7test/screen.py, Viterbi 4-gram S vs key-shuffle + digit-shuffle nulls (it16dip) | 200 it16dip windows in no.46, power 1.00/0.98/0.85/0.57 at 0/5/10/15%; wrong-key false detect 0.02 | S -1.328, p_a 0.43, p_b 0.16 (fr: p_a 0.71, p_b 0.82) | no fit (control-backed at 10%) | a decode-level order-sensitive statistic works where the structural parse share is blind (dense tables) |
+| 13 Oct 2026 | f.25 is in Nevers key no.70 (fr.3995 f.131r, alphabet + nulls) | same | 50 windows in no.70 alphabet at 10%: power 0.94; false detect 0.01 | S -1.259, p_a 0.078, p_b 0.26 | no fit for the alphabet (nomenclator untranscribed) | 76 skips + 39 nulls on the path: the alphabet alone does not carry f.25 |
+
+**Next best attempt:** transcribe the next fr.3995 candidate tables (no.44, 45, 47, 56, 35, 63: two-digit, 1590-94,
+several Italian) and run each through `q7test/screen.py target --key <file>` after a 50-text 10% power check
+(`validate --texts 50 --levels 0.10`); ~$2-3 per key, the screen itself costs minutes of CPU. A key whose alphabet has
+figures in the 30s and 0-led pairs and few 8/9 (BNF-Q7-TEST digit profile) first.
+
+## Remaining gaps (BNF-Q7-SCREEN, 13 Oct 2026)
+Read so far: unmeasured, no key reads the letter yet
+- Key identification for f.25 - blocker: not-attempted; no.62 retired (BNF-Q7-TEST), no.46 and no.70 alphabet no fit under the validated decode-level screen (BNF-Q7-SCREEN, power 0.85-0.94 at 10%); next: transcribe fr.3995 candidate tables no.44, 45, 47, 56, 35, 63 and screen each with q7test/screen.py, ~$3 per key
+- Key no.70 nomenclator - blocker: not-attempted; only the alphabet of f.131r is transcribed, and the alphabet screen (p_a 0.078) cannot see a fit carried by word codes; next: transcribe the word columns and re-screen, ~$2
+
+## Escalation (BNF-Q7-SCREEN, 13 Oct 2026)
 - [ ] siblings: other Nevers-Tuscany letters of 1592-93 in fr.3982-3987 (Tomokiyo: Aug and Nov 1593) not yet located; planned: notice items of fr.3985/fr.3987 by bnf_findingaid.py
 - [n/a] clear-pages: the minute has no clear copy on the leaf (BNF-Q7-ID leaf look)
-- [ ] known-keys: no.62 [retired by BNF-Q7-TEST, control-backed structural misfit, power 0.99-1.00, p 0.30]; no.70 alphabet misfit (indicative, no control); planned: the fr.3995 table screen above
+- [ ] known-keys: no.62 [retired by BNF-Q7-TEST, structural misfit, power 0.99-1.00]; no.46 and no.70 alphabet no fit (BNF-Q7-SCREEN, screen power 0.85/0.94 at 10%, p_a 0.43/0.078, p_b 0.16/0.26); planned: fr.3995 tables no.44, 45, 47, 56, 35, 63 through q7test/screen.py
 - [x] print: Canestrini-Desjardins vol. V OCR searched, Gomberville seconde partie 1591-1594 read (BNF-Q7-ID)
 - [ ] key-rebuild: not attempted; a 260-digit string is short for cryptanalysis without a table
 - [x] image-check: leaf read at native resolution, two blind digit passes agree 0.905 (BNF-Q7-KEY)
 - [ ] retry: none yet
-Verdict: keep going: 2 internal gaps; cheapest next: BNF-Q7-SCREEN decode-level test on keys on disk, ~$6
+Verdict: keep going: 2 internal gaps; cheapest next: transcribe and screen fr.3995 table no.44 (or the best digit-profile match), ~$3
