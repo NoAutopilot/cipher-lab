@@ -58,3 +58,35 @@ already listed them, unlabelled as to which pass gave which), plus 10 H control 
 the known value, pre-registered in PREREG-LVN16-3R.md pushed before the call). Settle only tokens where the read agrees with one of the two
 earlier passes and the control passed; regrade per rule 4 (M -> H only where key_full gives the value and the image is now sure), re-run
 the reading scripts with `--check`, recount the "Read so far" line. Units: 1 crop job, 1 vision call, 1 reconciliation.
+
+## Wave 2 (07:3x UTC 13 Oct) -- openapi.bnf.fr jobs
+Hosts: **openapi.bnf.fr only** (IIIF Image API v3; gallica.bnf.fr/iiif is 403 -- do not use it). URL form
+`https://openapi.bnf.fr/iiif/image/v3/ark:/12148/<ark>/f<canvas>/<region>/<size>/0/default.jpg` (region `full`, `x,y,w,h` or
+`pct:x,y,w,h`; size `max`, `1600,`, `pct:50`); `info.json` once per canvas for the native size; `tools/iiif_lines.py` and
+`tools/gallica_folio.py` now take `--iiif-host openapi` (IIIF-HOST, 17483295). Descriptive User-Agent; one request at a time, >= 3 s
+apart; <= the per-job count below; post `openapi.bnf.fr take` / `openapi.bnf.fr release` ROOM lines around each batch, and if any worker of
+any lane holds it (a take with no release in the last 30 min), work from disk and wait. On 403/429/5xx or a challenge: one retry after
+60 s, then stop the host, log it, finish from disk or stop. Save every fetched region under the folder's `images/` with a manifest entry.
+
+### BAL103-189 (Opus, cap 6, box 100 min, openapi.bnf.fr <= 10): baluze103-letellier-marca-1644, f.189r vs its period decipherment
+NOTES.md "## While waiting (9 Oct 2026, WAIT-PASS-5)" item 1 and the f.171r calibration it extends (R7C-BAL103K and later sections): f.189r
+(Baluze 103, ark btv1b9001389d; canvas from the folio offset recorded in NOTES.md, or `gallica_folio.py --iiif-host openapi --folio 189`)
+carries a period decipherment and more known-value 9s than f.171r's six. Steps: fetch the cipher + decipherment region at native size, cut
+line crops, two blind passes of the cipher signs (one Sonnet subagent call per pass, half page each if long) using the f.50 sign names,
+one reconciliation; read the period decipherment once (transcription, not a gloss to be scored); PREREG-BAL103-189.md pushed BEFORE
+alignment: the per-sign test of Tomokiyo's table against the decipherment (statistic and shuffled-alignment control as R7C-BAL103K ran
+it on f.171r), and the count k_i / k_r / k_s of 9s aligned to each letter, with the decision rule for the 9 shape split stated in advance.
+Report the table cells confirmed / contradicted. No key.tsv edit except cells the pre-registered gate licenses; f.50's sorter-bound gaps
+stay as they are (the owner's pass). Units: 1 fetch+crop, 2-4 pass calls, 1 reconciliation, 1 alignment/scoring at ~1.5 each; if after
+the reconciliation the cap cannot cover the alignment, push the transcription and stop with the test as the next step.
+
+### SYL-NOM (Opus, cap 6.5, box 110 min, openapi.bnf.fr <= 10): fr15575-syllabic-1592-95, the no.54 key nomenclator
+NOTES.md "## Remaining gaps (D4-15576, 6 Oct 2026)" item "key nomenclator and no.31" and Escalation "[ ] known-keys": BnF fr.3995 (ark
+btv1b525085665) no.54 = canvas f188 (f.96v-97r); NV05B transcribed only the syllabary and header signs (key_no54.tsv). Fetch canvas f188
+region y 1600-6055 at native size (check info.json first), cut 4-6 band crops with iiif_lines.py (paste the command and output, check the
+debug overlay), two blind passes of the nomenclator (code -> word/name entries) and one reconciliation (`tools/reconcile_passes.py`).
+Write `key_no54_nomenclator.tsv` (code, entry, conf, pass A, pass B, settled-by) beside key_no54.tsv -- a period key sheet, so entries are
+H where both passes and the image agree, M otherwise. Then the cheap check the gap names: do fr.15576 f.2's 3-digit codes fall inside the
+nomenclator's code range and format (count, list; no reading claimed, no decode of f.2 unless the existing decode config already reads
+key files by name -- then `--check` only). Do NOT start no.31 (canvas f126) in this job; name it as the next step with its price.
+Units: 1 fetch+crop, 2-4 pass calls, 1 reconciliation at ~1.5 each.
