@@ -1,4 +1,4 @@
-# PREREG-Q7-SCREEN (BNF-Q7-SCREEN, Opus worker for LANE BNF-FOCUS, account 2), written 13 Oct 2026 ~11:20 UTC by date -u
+# PREREG-Q7-SCREEN (BNF-Q7-SCREEN, Opus worker for LANE BNF-FOCUS, account 2), written 13 Oct 2026 11:0x UTC (pushed cf14e366; time corrected by date -u at 11:10, an earlier "~11:20" was an estimate)
 
 Committed before any score on a synthetic text or on f.25. Script: `q7test/screen.py` (+ `q7test/vit.c`, compiled at
 run time). Brief: .claude/briefs/runs/2026-10-13-ytbiz-bnf-q7-screen.md.
@@ -55,7 +55,7 @@ key no.46 (series A/N/P, Bourdeau's key46.txt) or no.70 (alphabet + nulls only)?
 - No.70 control caveat declared now: validation is on no.62 and no.46; no.70 (dense-ish two-digit, 64 codes) gets its
   own 50-text 10% power check before its target number is read, same rules.
 
-## Addendum A (11:4x UTC 13 Oct 2026 by date -u, before any validation or target score)
+## Addendum A (11:10 UTC 13 Oct 2026 by date -u, corrected from an estimated "11:4x"; before any validation or target score)
 - Speed: exact Viterbi ran ~0.06-0.3 s per decode (too slow for ~320k validation decodes in the box). A score-threshold
   beam is added: at each digit position, states more than 6.0 log10 below that position's best are dropped
   (`Q7_BEAM`, default 6.0). Tooling check on 12 decodes of 6 synthetic texts (3 per key no.62/no.46, 10% error, real
