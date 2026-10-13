@@ -3681,3 +3681,59 @@ Read so far: unmeasured as a reading; no cipher run is read, the folder's famili
 - [x] image-check: passes A/B/C, SALV-SPLIT, SALV2-J1A/B and SALV-F56V; f.56r pass C optional (~$3, strips on disk), not decisive for any open family
 - [x] retry: DSN irregular at 96 restarts on the SALV-F56V split (SALV-DSN, 11 Oct): control 0.844 at err 0.064, 0.733 at 0.10, 0.541 at 0.146; target judge FAIL -- control-backed up to 10%, non-test at 14.6%
 Verdict: keep going: 1 internal gap; cheapest next: crib scan from f57v's plain passage against f56r-f57r, shuffled-crib control first, ~$3
+
+## SALV-CRIB: isomorph crib scan from f57v's plain passage (13 Oct 2026, 22:09-22:1x UTC by date -u; LANE DEFAULT-A4-2135, account 4)
+Worker SALV-CRIB (Opus), brief `.claude/briefs/runs/2026-10-13-acct4-default-2135-jobs.md` "### SALV-CRIB". Disk only,
+0 host requests, no subagents, no images. Pre-registered in `PREREG-SALV-CRIB.md` (commit 9e473a41b, pushed in its own
+commit and confirmed on origin/main before any score). Script `crib_scan.py` (`--check` exit 0; deterministic seeds);
+outputs `crib_scan_results.tsv`, `crib_scan_control.tsv`; both tables in HYPOTHESES.md "SALV-CRIB".
+Prior work: `tools/prior_work.py fr2933-salviati-1525 --item-spec 'BnF fr.2933 f54r-f57v crib scan' --step-type decode
+--offline` exit 4 (LOOK 2-leaf, UNCHECKED 3-solver and 3-tomokiyo, UNCHECKED-NET 3-solver clone and 4-editions); the three
+owed rows recorded CLEAR in `prior-work.tsv` from SALV-PLAIN1-3/SALV-57V (every leaf read box by box, no gloss) and the
+GF-A2-13 Premise check (b) / Web and blog check (3 Oct). Check 1 (own work): no crib scan in HYPOTHESES.md or NOTES.md
+before this job (SALV-KP built a context word list, no scan script).
+**Method.** Cipher = the eight leaves' rows as build_spec.py reads them (2,939 tokens, 253 types, 45 base codes incl. the
+8 hapax ids); a run is broken only by a plain box, not a line end (253 runs, so windows can cross a line break as the
+plain text's own words do). Two views: F full sign, B base code only. Statistic H = exact isomorph windows for the crib's
+letter-equality pattern. Nulls: 1,000 permutations of the crib, 1,000 same-length it16 words. Gate p <= 0.005 vs both.
+Rule 3 check: the share of permutations whose pattern differs from the crib's is 0.945-1.000 for the five gated cribs,
+so the shuffled control can differ; it is 0.000 for the variant "bisognera" (no repeated letter), whose shuffle control is
+identical by construction -- a non-test, ungated, reported only.
+**Target.** No crib passes in either view: pagare F H=26 (p 0.800 / 0.693), B H=40 (0.864 / 0.749); contentato,
+diligentia, beueraggio and suggellata H=0 in both views. Ungated variants: prometto B 3 and salviati B 3 (p >= 0.23),
+octobre F 39 / B 55 (p >= 0.11), none near the gate.
+**Planted control (the reading of the miss).** 20 seeds per crib x view x error, design matched to the view, measured-error
+mix: power 0.00 at 0.064 and at 0.146 for every crib and view; the planted window itself survives as an isomorph in 0-25%
+(F) and 5-60% (B) of seeds. A diagnostic at err 0.0 (not pre-registered, same functions) also gives power 0.00 (survival
+10-15% F, 40-65% B): the isomorph count is blind to one occurrence under either homophonic design, independent of the
+transcription error -- homophony splits repeated letters in F, and in B one surviving window does not lift H above
+nulls that already carry dozens (pagare) or that a lone match cannot beat at p <= 0.005 (the ten-letter cribs).
+**Reading, as pre-registered:** every target miss is a **non-test**, logged untested-by-this-tool (the isomorph crib
+count) for all five cribs in both views; not a negative for the words, and no placement is a lead. No key edit, no
+reading claimed; grades unchanged (no H, C, S, M or I token). Syllabic and vowel-indicator designs were outside the scan.
+**The 3-sign insertion (descriptive, I-grade at most).** Base `#` occurs 65 times in the cipher runs (46 bare, 8 dot, 4
+`#`, 3 o, 4 others). Adjacent `#` `#` occurs in only two places: f57v 16.23-25 (`#^ #^ #^`, the insertion after "Pagare
+li", before "d' piu") and f57r 18.1-2 (`#^ #^`, opening the line's run). A tripled sign cannot be three letters of an Italian
+word, so in that slot ("li ___ d[ucati?] piu", a sum) `#` behaves like a numeral or abbreviation sign, not a letter; this is
+an inference from one slot, not a test. The f57r 18.1 pair is the one other place a reader could try the same value.
+**Next instrument (named, not run):** a placement-likelihood scorer -- for each placement consistent with a crib (B view:
+214-260 per ten-letter crib, 1,134 for pagare; F view: 636-684 and 1,527), lock the implied sign values, decode those
+signs' other occurrences and score them with the it16 n-gram model against shuffled-crib placements, planted control
+first. Price not established (the cm/DSN anneals take minutes per restart; a lock-only scorer would be seconds per
+placement): ~$5 to build and control.
+Regenerate: `python3 crib_scan.py` (writes both TSVs, about 11 s CPU); `python3 crib_scan.py --check`.
+
+## Remaining gaps (SALV-CRIB, 13 Oct 2026)
+Read so far: unmeasured as a reading; no cipher run is read, the folder's families are logged as non-tests or control-backed negatives (HYPOTHESES.md); all 1,222 spec-plain boxes on the 8 leaves are transcribed (1,220 graded rows, 14.6% M)
+- the Phillipps MS 7293 letter book (BL RP 271/2/4, despatches 17 July 1525-15 May 1527), a possible clear register copy - blocker: needs-physical-access; the original was sold in 1968, holder not recorded, BL image service down since 2023 (Premise check (d))
+- a crib test from f57v's plain passage by placement likelihood (the isomorph count was a non-test, SALV-CRIB: planted-control power 0.00 at err 0.0, 0.064 and 0.146) - blocker: not-attempted; the instrument is not built yet, the isomorph count could not see a planted crib; next: placement-likelihood scorer (lock each crib-consistent placement's sign values, score the locked signs' other occurrences with the it16 model vs shuffled-crib placements, planted control first), ~$5
+
+## Escalation (SALV-CRIB, 13 Oct 2026)
+- [x] siblings: Premise check (d), 3 Oct 2026: fr.3087 item 90 (3 Oct 1525, two cipher lines per Molini) and siblings.tsv; no decipherment
+- [x] clear-pages: f57v's 172 plain boxes read (SALV-57V, 13 Oct: 138 A, 23 R, 11 M; 35 [C]); all 8 leaves done; the Phillipps 7293 register copy is needs-physical-access
+- [x] known-keys: LANE R5 B (24 Sept, eight sources) and keytrial.tsv found no fitting key; KEY-OFFICES/KEY-DESIGN re-grepped 11 Oct, nothing added
+- [x] print: CSP Spain III/1 for Oct 1525 read (D2-PRINT4); Desjardins/Canestrini and Molini read earlier; context only
+- [ ] key-rebuild: code+mark anneal closed after three attempts; wordcode context option untested-by-this-tool; every R8 syllabary variant control-backed at 6.4%; isomorph crib count untested-by-this-tool (SALV-CRIB, control power 0.00); untried instrument: crib placement-likelihood scorer, ~$5
+- [x] image-check: passes A/B/C, SALV-SPLIT, SALV2-J1A/B and SALV-F56V; f.56r pass C optional (~$3, strips on disk), not decisive for any open family
+- [x] retry: DSN irregular at 96 restarts on the SALV-F56V split (SALV-DSN, 11 Oct): control 0.844 at err 0.064, 0.733 at 0.10, 0.541 at 0.146; target judge FAIL -- control-backed up to 10%, non-test at 14.6%
+Verdict: keep going: 1 internal gap; cheapest next: crib placement-likelihood scorer with a planted control first, ~$5

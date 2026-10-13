@@ -240,3 +240,27 @@ brief).
 | 11 Oct 2026 20:06 | syllabary | N=2939 K=253 restarts=96 corpus=alcuneletteredip00ferr.txt+delleletterefam02seghgoog.txt+lettereinedited00tassgoog.txt+lettereinedited01cibrgoog.txt+lettereineditedi01carouoft.txt+letterescrittea01vanzgoog.txt err=0.064,assign=irregular | 1 | 0.844 (0.825-0.866) | -10395.023 | FAIL language: score=-1.299, null_p99=-1.861, real_p05=-0.91, real_median=-0.826, mode=both, N=3888 | yes (gate 0.6) | LANE DEFAULT-A1-1840 SALV-DSN: DSN irregular 96 restarts, SALV-F56V split, measured err, target seed 1 |
 | 11 Oct 2026 20:26 | syllabary | N=2939 K=253 restarts=96 corpus=alcuneletteredip00ferr.txt+delleletterefam02seghgoog.txt+lettereinedited00tassgoog.txt+lettereinedited01cibrgoog.txt+lettereineditedi01carouoft.txt+letterescrittea01vanzgoog.txt err=0.10,assign=irregular | 1-3 | 0.733 (0.610-0.819) | not run (control-only) | - | yes | LANE DEFAULT-A1-1840 SALV-DSN: bracket control err=0.10, DSN irregular 96 restarts, SALV-F56V split |
 | 11 Oct 2026 20:40 | syllabary | N=2939 K=253 restarts=96 corpus=alcuneletteredip00ferr.txt+delleletterefam02seghgoog.txt+lettereinedited00tassgoog.txt+lettereinedited01cibrgoog.txt+lettereineditedi01carouoft.txt+letterescrittea01vanzgoog.txt err=0.146,assign=irregular | 1-3 | 0.541 (0.417-0.620) | not run (control-only) | - | no | LANE DEFAULT-A1-1840 SALV-DSN: bracket control err=0.146, DSN irregular 96 restarts, SALV-F56V split |
+
+## SALV-CRIB: isomorph crib scan from f57v's plain passage (13 Oct 2026, 22:15 UTC by date -u; LANE DEFAULT-A4-2135, account 4)
+Pre-registered in `PREREG-SALV-CRIB.md` (commit 9e473a41b, on origin/main before any score); `crib_scan.py` (`--check`
+exit 0). Target and matched planted control side by side; gate p <= 0.005 vs both nulls (1,000 shuffled cribs, 1,000
+same-length it16 words) and H >= 1. Planted control: 20 seeds, design matched to the view, measured-error mix (CM_ERR).
+
+| crib | view | target H | target p shuffle / words | target gate | control power at err 0.064 / 0.146 | planted window survives 0.064 / 0.146 | reading |
+|---|---|---|---|---|---|---|---|
+| pagare | F | 26 | 0.800 / 0.693 | no | 0.00 / 0.00 | 0.20 / 0.20 | non-test |
+| pagare | B | 40 | 0.864 / 0.749 | no | 0.00 / 0.00 | 0.45 / 0.60 | non-test |
+| contentato | F | 0 | 1 / 1 | no | 0.00 / 0.00 | 0.00 / 0.00 | non-test |
+| contentato | B | 0 | 1 / 1 | no | 0.00 / 0.00 | 0.15 / 0.10 | non-test |
+| diligentia | F | 0 | 1 / 1 | no | 0.00 / 0.00 | 0.00 / 0.00 | non-test |
+| diligentia | B | 0 | 1 / 1 | no | 0.00 / 0.00 | 0.15 / 0.05 | non-test |
+| beueraggio | F | 0 | 1 / 1 | no | 0.00 / 0.00 | 0.25 / 0.10 | non-test |
+| beueraggio | B | 0 | 1 / 1 | no | 0.00 / 0.00 | 0.30 / 0.10 | non-test |
+| suggellata | F | 0 | 1 / 1 | no | 0.00 / 0.00 | 0.10 / 0.05 | non-test |
+| suggellata | B | 0 | 1 / 1 | no | 0.00 / 0.00 | 0.25 / 0.15 | non-test |
+
+Diagnostic, not pre-registered (same script functions, err 0.0, 20 seeds): power 0.00 for every crib and view; the planted
+window survives 10-15% (F) and 40-65% (B). The isomorph-count statistic cannot detect one planted occurrence under either
+homophonic design even with no transcription error: homophony splits repeated letters (F), and where the window survives
+(B) one extra match does not lift H above the nulls. Logged **untested-by-this-tool** (the isomorph crib count) for all
+five cribs in both views -- not a negative for the words. Syllabic/vowel-indicator designs not covered (PREREG).
