@@ -1,0 +1,16 @@
+id	choice	what_you_see	confidence
+c32-01	X	9 with a horizontal bar through or under its tail, the same form as the _9 in line 05. No separate overline.	medium
+c32-02	Y	Final sign of the line is crossed strokes with a looped ∂ attached on the right (db).	high
+c32-03	X	The digits 1 and 6 sit under a long overline, so _16. The 1 is a short stroke and the 6 is a normal 6.	high
+c32-04	X	Crossed strokes with a looped ∂ attached (db), standing between _20 and the following bar-over 11.	high
+c32-05	X	The crossed strokes carry a ∂ loop on the right, so db.	high
+c32-06	Y	Two-part sign: a 6, then a closed-loop 8-like form (6 and 8 joined). Reads 68 rather than 66.	medium
+c32-07	X	Crossed strokes with an attached ∂ loop (db).	high
+c32-08	Y	Final sign is crossed strokes with an attached ∂ loop (db).	high
+c32-09	Y	Crossed strokes with an attached ∂ loop (db), between 97 and 93.	high
+c32-10	Y	Crossed strokes with an attached ∂ loop (db), between 93 and _26.	high
+c32-11	Y	Crossed strokes with an attached ∂ loop (db), right after the standalone d.	high
+c32-12	X	A b/6-shaped digit with a long overline, so _6.	high
+c32-13	X	Final sign is a 7 with an overline, so _7. It is a single stroke, not a 1 followed by a 7.	medium
+c32-14	Y	A looped d with a bar above it, so _d (overline over the d).	high
+c32-15	X	The sign after the d is a 1 joined to a 3 (13). There is no £ shape; it is the same form as the 13 after the second d.	medium

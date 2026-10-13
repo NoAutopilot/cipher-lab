@@ -23,6 +23,10 @@ TOOL = os.path.join(HERE, '..', '..', 'tools', 'reconcile_passes.py')
 JOBS = {'ciphertext_c11.tsv': ('passA_f11.tsv', 'passB_f11.tsv'),
         'ciphertext_c32.tsv': ('passA_c32.tsv', 'passB_c32.tsv')}
 DESC = '?'   # a pass-B shape description in place of a sign label
+# F5160-ARB (13 Oct 2026): image arbitration of the split positions from native crops (openapi.bnf.fr, images/arb/),
+# one blind Sonnet read per canvas (arb_blind_*.tsv, unblinding in arb_blind_key.json) settled by the worker. It adds
+# the columns arb / arb_conf / arb_note and never overwrites token or alt (both earlier readings are kept).
+ARB = 'arbitration_c11c32.tsv'
 
 
 def load(fn):
@@ -80,8 +84,18 @@ def settle(r):
     return s, 'M', other, 'passes differ; image not re-read'
 
 
+def load_arb():
+    arb = {}
+    p = os.path.join(HERE, ARB)
+    if os.path.exists(p):
+        for r in csv.DictReader(open(p, encoding='utf-8'), delimiter='\t'):
+            arb[(r['file'], r['line'], r['pos'])] = [r['arb'], r['arb_conf'], r['arb_note']]
+    return arb
+
+
 def render():
     out = {}
+    arb = load_arb()
     for fn, (pa, pb) in JOBS.items():
         a, ca, _ = load(pa)
         b, cb, _ = load(pb)
@@ -93,7 +107,7 @@ def render():
                                                                  delimiter='\t'))[1:] if r]
         lines = list(dict.fromkeys(raw))
         buf = io.StringIO(); w = csv.writer(buf, delimiter='\t', lineterminator='\n')
-        w.writerow(['line', 'pos', 'token', 'conf', 'alt', 'note'])
+        w.writerow(['line', 'pos', 'token', 'conf', 'alt', 'note', 'arb', 'arb_conf', 'arb_note'])
         for ln in lines:
             pa_c, pb_c = ca.get(ln, []), cb.get(ln, [])
             items = []
@@ -109,7 +123,7 @@ def render():
             body = [list(t) for t in body if t]
             seq = [i[1] for i in items if i[0] == 'pre'] + body + [i[1] for i in items if i[0] == 'post']
             for k, t in enumerate(seq, 1):
-                w.writerow([ln, k] + t)
+                w.writerow([ln, k] + t + arb.get((fn, ln, str(k)), ['', '', '']))
         out[fn] = buf.getvalue()
     return out
 

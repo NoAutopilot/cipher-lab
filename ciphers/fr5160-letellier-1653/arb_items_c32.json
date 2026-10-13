@@ -1,0 +1,152 @@
+[
+ {
+  "id": "c32-01",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L01_s1.jpg",
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L01_s2.jpg"
+  ],
+  "line_context": "m _11 27 _11 db 3 _11 , 91 _40 [?] db",
+  "reading_X": "_9",
+  "reading_Y": "9"
+ },
+ {
+  "id": "c32-02",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L01_s1.jpg",
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L01_s2.jpg"
+  ],
+  "line_context": "m _11 27 _11 db 3 _11 , 91 _40 _9 [?]",
+  "reading_X": "tt",
+  "reading_Y": "db"
+ },
+ {
+  "id": "c32-03",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L02_s1.jpg",
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L02_s2.jpg"
+  ],
+  "line_context": "60 4 50 20 [?] d",
+  "reading_X": "_16",
+  "reading_Y": "_6"
+ },
+ {
+  "id": "c32-04",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L04_s1.jpg",
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L04_s2.jpg"
+  ],
+  "line_context": "11 9 6 61 _20 [?] _11",
+  "reading_X": "db",
+  "reading_Y": "tt"
+ },
+ {
+  "id": "c32-05",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L05_s1.jpg",
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L05_s2.jpg"
+  ],
+  "line_context": "X [?] 11 _22 61 68 db mm _9 db",
+  "reading_X": "db",
+  "reading_Y": "tt"
+ },
+ {
+  "id": "c32-06",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L05_s1.jpg",
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L05_s2.jpg"
+  ],
+  "line_context": "X db 11 _22 61 [?] db mm _9 db",
+  "reading_X": "66",
+  "reading_Y": "68"
+ },
+ {
+  "id": "c32-07",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L05_s1.jpg",
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L05_s2.jpg"
+  ],
+  "line_context": "X db 11 _22 61 68 [?] mm _9 db",
+  "reading_X": "db",
+  "reading_Y": "tt"
+ },
+ {
+  "id": "c32-08",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L05_s1.jpg",
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L05_s2.jpg"
+  ],
+  "line_context": "X db 11 _22 61 68 db mm _9 [?]",
+  "reading_X": "tt",
+  "reading_Y": "db"
+ },
+ {
+  "id": "c32-09",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L07_s1.jpg",
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L07_s2.jpg"
+  ],
+  "line_context": "_9 _16 m _51 97 [?] 93 db _26 —",
+  "reading_X": "tt",
+  "reading_Y": "db"
+ },
+ {
+  "id": "c32-10",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L07_s1.jpg",
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L07_s2.jpg"
+  ],
+  "line_context": "_9 _16 m _51 97 db 93 [?] _26 —",
+  "reading_X": "tt",
+  "reading_Y": "db"
+ },
+ {
+  "id": "c32-11",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L08_s1.jpg",
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L08_s2.jpg"
+  ],
+  "line_context": "72 d [?] 20 , 6",
+  "reading_X": "tt",
+  "reading_Y": "db"
+ },
+ {
+  "id": "c32-12",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L08_s1.jpg",
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L08_s2.jpg"
+  ],
+  "line_context": "72 d db 20 , [?]",
+  "reading_X": "_6",
+  "reading_Y": "6"
+ },
+ {
+  "id": "c32-13",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L11_s1.jpg",
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L11_s2.jpg"
+  ],
+  "line_context": "4 60 , 23 _11 3 2 _2 _20 _52 [?]",
+  "reading_X": "_7",
+  "reading_Y": "_17"
+ },
+ {
+  "id": "c32-14",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L13_s1.jpg",
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L13_s2.jpg"
+  ],
+  "line_context": "_19 (4) [?] 13 d _11 d _49 35 11 —",
+  "reading_X": "d",
+  "reading_Y": "_d"
+ },
+ {
+  "id": "c32-15",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L13_s1.jpg",
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c32_L13_s2.jpg"
+  ],
+  "line_context": "_19 (4) d [?] d _11 d _49 35 11 —",
+  "reading_X": "13",
+  "reading_Y": "£"
+ }
+]

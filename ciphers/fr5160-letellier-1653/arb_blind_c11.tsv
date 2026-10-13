@@ -1,0 +1,23 @@
+id	choice	what_you_see	confidence
+c11-01	Y	Large sweeping x-like flourish with a loop at the start of the sign group, read as £	medium
+c11-02	Y	Rounded sign right after the flourish with a small loop at the top, close to the looped d reference	low
+c11-03	Y	11 with a bar over it	high
+c11-04	X	Two crossed strokes (tt) with a bar over them, _tt	high
+c11-05	Y	16 with no clear bar of its own; the bar belongs to the tt before it	low
+c11-06	Y	Small raised tt fused with a looped hook, one compound sign: db	medium
+c11-07	Y	Sign with a loop at the top, resembling the d reference	low
+c11-08	X	Long open hook with a trailing tail, the loop is weak: Ɔ	low
+c11-09	X	10, a 1 and a 0 under one bar	high
+c11-10	Y	Raised tt fused with a looped d: db	high
+c11-11	Y	4 with two dots above: ¨4	high
+c11-12	Y	3 with a diaeresis above, then 4: ¨34	high
+c11-13	X	Hook with a small loop at the top, close to the d at c11-15	low
+c11-14	Y	Raised tt joined to a looped d: db	high
+c11-15	Y	Clear looped ∂ shape, the same as the d reference	high
+c11-16	OTHER	Raised tt fused to a looped d after the I, so db and not a plain d or Ɔ	medium
+c11-17	X	Nothing but a faint bar-over-0 start; no sign before the 0	medium
+c11-18	X	Open hook ending in a stroke, no clear loop: Ɔ	low
+c11-19	Y	Raised tt fused with a looped d: db	high
+c11-20	X	Looped d with a long entry stroke on the left	medium
+c11-21	Y	Clear looped ∂, the same as the d reference	high
+c11-22	Y	Raised tt fused with a looped d: db	high

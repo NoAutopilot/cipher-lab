@@ -1,0 +1,58 @@
+{
+ "job": "F5160-ARB, 13 Oct 2026 (06:54-06:56 UTC by date -u)",
+ "host": "openapi.bnf.fr IIIF Image API v3 (gallica.bnf.fr/iiif 403 since 9 Oct)",
+ "native_size_f11": "3810x5346 (info.json)",
+ "regions": [
+  {
+   "canvas": 11,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060495t/f11/1150,2600,2350,1650/max/0/default.jpg",
+   "size": "2350x1650",
+   "bytes": 483890,
+   "note": "first request connection reset, one retry after 60 s, 200"
+  },
+  {
+   "canvas": 12,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060495t/f12/1000,850,2350,1450/max/0/default.jpg",
+   "size": "2350x1450",
+   "bytes": 463756
+  },
+  {
+   "canvas": 32,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060495t/f32/380,900,3250,3260/max/0/default.jpg",
+   "size": "3250x3260",
+   "bytes": 1431755
+  }
+ ],
+ "crops": "python3 tools/iiif_lines.py --image images/arb/src_f<N>.jpg --out images/arb --prefix c<N> --debug (defaults); c11 9 bands, c12 7, c32 14 x 2 segments; debug overlays checked",
+ "line_map": "f11_L1..L6 = c11_L03..L08; f12_L1..L6 = c12_L01..L06; c32 L01..L14 = c32_L01..L14 (_s1 left, _s2 right)",
+ "committed": "only the crops of lines carrying an arbitrated position, re-saved grayscale JPEG q60 at native dimensions, and the debug overlays shrunk to 1200 px; the three region sources and the other crops are not committed (folder already 31.5 MB tracked before this job, 30 MB line) -- re-fetch the URLs above and re-run the crop command to regenerate them",
+ "files": [
+  "c11_L03.jpg",
+  "c11_L04.jpg",
+  "c11_L05.jpg",
+  "c11_L07.jpg",
+  "c11_lines_debug.jpg",
+  "c12_L01.jpg",
+  "c12_L03.jpg",
+  "c12_L04.jpg",
+  "c12_L05.jpg",
+  "c12_lines_debug.jpg",
+  "c32_L01_s1.jpg",
+  "c32_L01_s2.jpg",
+  "c32_L02_s1.jpg",
+  "c32_L02_s2.jpg",
+  "c32_L04_s1.jpg",
+  "c32_L04_s2.jpg",
+  "c32_L05_s1.jpg",
+  "c32_L05_s2.jpg",
+  "c32_L07_s1.jpg",
+  "c32_L07_s2.jpg",
+  "c32_L08_s1.jpg",
+  "c32_L08_s2.jpg",
+  "c32_L11_s1.jpg",
+  "c32_L11_s2.jpg",
+  "c32_L13_s1.jpg",
+  "c32_L13_s2.jpg",
+  "c32_lines_debug.jpg"
+ ]
+}

@@ -1,0 +1,200 @@
+[
+ {
+  "id": "c11-01",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c11_L03.jpg"
+  ],
+  "line_context": "[?] Ɔ 23 _11 _tt 16",
+  "reading_X": "(no sign here)",
+  "reading_Y": "£"
+ },
+ {
+  "id": "c11-02",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c11_L03.jpg"
+  ],
+  "line_context": "£ [?] 23 _11 _tt 16",
+  "reading_X": "Ɔ (open cursive hook, distinct sign)",
+  "reading_Y": "d (the same looped-d sign as elsewhere in the cipher)"
+ },
+ {
+  "id": "c11-03",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c11_L03.jpg"
+  ],
+  "line_context": "£ Ɔ 23 [?] _tt 16",
+  "reading_X": "11",
+  "reading_Y": "_11"
+ },
+ {
+  "id": "c11-04",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c11_L03.jpg"
+  ],
+  "line_context": "£ Ɔ 23 _11 [?] 16",
+  "reading_X": "_tt",
+  "reading_Y": "11"
+ },
+ {
+  "id": "c11-05",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c11_L03.jpg"
+  ],
+  "line_context": "£ Ɔ 23 _11 _tt [?]",
+  "reading_X": "_16",
+  "reading_Y": "16"
+ },
+ {
+  "id": "c11-06",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c11_L04.jpg"
+  ],
+  "line_context": "_6 9 [?] Ɔ Z Ɔ 34 _21 31 _7 _0 _13",
+  "reading_X": "a different sign (describe it)",
+  "reading_Y": "db (tt joined to a looped d, one compound sign)"
+ },
+ {
+  "id": "c11-07",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c11_L04.jpg"
+  ],
+  "line_context": "_6 9 db [?] Z Ɔ 34 _21 31 _7 _0 _13",
+  "reading_X": "Ɔ (open cursive hook, distinct sign)",
+  "reading_Y": "d (the same looped-d sign as elsewhere in the cipher)"
+ },
+ {
+  "id": "c11-08",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c11_L04.jpg"
+  ],
+  "line_context": "_6 9 db Ɔ Z [?] 34 _21 31 _7 _0 _13",
+  "reading_X": "Ɔ (open cursive hook, distinct sign)",
+  "reading_Y": "d (the same looped-d sign as elsewhere in the cipher)"
+ },
+ {
+  "id": "c11-09",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c11_L05.jpg"
+  ],
+  "line_context": "X tt mm [?] X _18 db 70 q 61 m ¨4",
+  "reading_X": "_10",
+  "reading_Y": "_0"
+ },
+ {
+  "id": "c11-10",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c11_L05.jpg"
+  ],
+  "line_context": "X tt mm _0 X _18 [?] 70 q 61 m ¨4",
+  "reading_X": "a different sign (describe it)",
+  "reading_Y": "db (tt joined to a looped d, one compound sign)"
+ },
+ {
+  "id": "c11-11",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c11_L05.jpg"
+  ],
+  "line_context": "X tt mm _0 X _18 db 70 q 61 m [?]",
+  "reading_X": "4",
+  "reading_Y": "¨4"
+ },
+ {
+  "id": "c11-12",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c11_L07.jpg"
+  ],
+  "line_context": "36 [?] Ɔ db _46 23 _11 67 Ɔ I Ɔ",
+  "reading_X": "34",
+  "reading_Y": "¨34"
+ },
+ {
+  "id": "c11-13",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c11_L07.jpg"
+  ],
+  "line_context": "36 ¨34 [?] db _46 23 _11 67 Ɔ I Ɔ",
+  "reading_X": "d (the same looped-d sign as elsewhere in the cipher)",
+  "reading_Y": "Ɔ (open cursive hook, distinct sign)"
+ },
+ {
+  "id": "c11-14",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c11_L07.jpg"
+  ],
+  "line_context": "36 ¨34 Ɔ [?] _46 23 _11 67 Ɔ I Ɔ",
+  "reading_X": "a different sign (describe it)",
+  "reading_Y": "db (tt joined to a looped d, one compound sign)"
+ },
+ {
+  "id": "c11-15",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c11_L07.jpg"
+  ],
+  "line_context": "36 ¨34 Ɔ db _46 23 _11 67 [?] I Ɔ",
+  "reading_X": "Ɔ (open cursive hook, distinct sign)",
+  "reading_Y": "d (the same looped-d sign as elsewhere in the cipher)"
+ },
+ {
+  "id": "c11-16",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c11_L07.jpg"
+  ],
+  "line_context": "36 ¨34 Ɔ db _46 23 _11 67 Ɔ I [?]",
+  "reading_X": "d (the same looped-d sign as elsewhere in the cipher)",
+  "reading_Y": "Ɔ (open cursive hook, distinct sign)"
+ },
+ {
+  "id": "c11-17",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c12_L01.jpg"
+  ],
+  "line_context": "[?] _0 I 31 _6",
+  "reading_X": "(no sign here)",
+  "reading_Y": "Ɔ"
+ },
+ {
+  "id": "c11-18",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c12_L03.jpg"
+  ],
+  "line_context": "11 21 tt 71 tt mm _0 tt [?] db _18 21 _21",
+  "reading_X": "Ɔ (open cursive hook, distinct sign)",
+  "reading_Y": "d (the same looped-d sign as elsewhere in the cipher)"
+ },
+ {
+  "id": "c11-19",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c12_L03.jpg"
+  ],
+  "line_context": "11 21 tt 71 tt mm _0 tt Ɔ [?] _18 21 _21",
+  "reading_X": "a different sign (describe it)",
+  "reading_Y": "db (tt joined to a looped d, one compound sign)"
+ },
+ {
+  "id": "c11-20",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c12_L04.jpg"
+  ],
+  "line_context": "[?] tt _20 q 62 Ɔ _7 m tt _4 X tt _16",
+  "reading_X": "d (the same looped-d sign as elsewhere in the cipher)",
+  "reading_Y": "Ɔ (open cursive hook, distinct sign)"
+ },
+ {
+  "id": "c11-21",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c12_L04.jpg"
+  ],
+  "line_context": "Ɔ tt _20 q 62 [?] _7 m tt _4 X tt _16",
+  "reading_X": "Ɔ (open cursive hook, distinct sign)",
+  "reading_Y": "d (the same looped-d sign as elsewhere in the cipher)"
+ },
+ {
+  "id": "c11-22",
+  "crop": [
+   "/home/user/cipher-lab/ciphers/fr5160-letellier-1653/images/arb/c12_L05.jpg"
+  ],
+  "line_context": "[?] mm _11 31 _28 X 21 36 60 21 ¨4",
+  "reading_X": "a different sign (describe it)",
+  "reading_Y": "db (tt joined to a looped d, one compound sign)"
+ }
+]
