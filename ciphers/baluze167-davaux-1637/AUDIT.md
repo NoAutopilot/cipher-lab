@@ -623,3 +623,37 @@ No over-claim found in BAL-WL's NOTES section: it said depth was not changed and
 Lesson for the next control of this shape: draw some P- wrong labels from within-key look-alike pairs (4u/u4, h/g+, hook/v/ff for s) so the
 negative tests the confusions that matter, not only random letters.
 Requests: none (disk only). Subagents: none.
+
+## AUDIT 5 f.228 (V-GHV), 13 Oct 2026, 10:52-11:0x UTC by date -u
+
+Verifier V-GHV, account 4, for LANE DEFAULT-A4-0935 (brief `.claude/briefs/runs/2026-10-13-acct4-default-0935-jobs.md` "V-GHV").
+I am not the solver (BAL167-GHV was session_01GfKaq9M3AqQrXZARpx32DY). Scope: the BAL167-GHV regrade (NOTES "## BAL167-GHV", PREREG-BAL-GHV.md
+c60720e55, result commit ccdff89ef): 8 f.228 letter tokens M -> S (hook 7, v 1). The N-class is not in question and no novelty search
+was run. Disk only, no network, no subagent.
+
+### 1. Checks
+| # | Check | Result |
+|---|---|---|
+| 1 | PREREG pushed before either read, and it provides for a second read | **PASS.** c60720e55 (10:38:39 UTC) adds only PREREG-BAL-GHV.md; ccdff89ef (10:42:07) adds glossA/B, labels, both reads, tiles and scores. `git diff c60720e55 origin/main -- PREREG-BAL-GHV.md` is empty. The PREREG's labels section lists the f.239r labels as "Expected (not yet read)", and the read gave 'pressa[?]' where it expected 'presser', which fits a PREREG written before the gloss reads. Its gates section says, in its own words: "If either fails on read 1: ONE second read (fresh subagent, seed 20261014) only within the 80% line; gates on read 2 alone." Read 2 was that read (seed 20261014), done well inside the 80% line (11:25). The second read was provided for, so it does not void the regrade. |
+| 2 | The within-key look-alike negative can differ from the target on the statistic (rule 3, AX-5799) | **PASS, with a limit on power.** The statistic is the yes-rate on "same sign as E-s2". P- tiles are signs from the same key and hand whose gloss fixes a value other than s. The tile is the thing the yes/no depends on, so P- can come out at any rate, and so can T. Eye check of r20261014/sheet.png: the two z-swashes (N1, N2; u/y) are real near look-alikes, each a single curved stroke with a tail. The r-shape (N3, g) and the h (N4, n) are visually distinct from the hook, so they test very little. In effect the negative has 2 near look-alike tiles and 2 easy ones. All 8 P- answers were "no" (7 high), and the reader's best exemplar was E-b/E-n/E-g, never E-s2. This addresses V-BAL167's lesson for the u/y swash only. |
+| 3 | What read 1's FAIL means for read 2's PASS | **Read 2 used the same instrument as read 1:** the same 9 tiles, the same E-s2 exemplar sheet and the same question. Only the tile order and the subagent changed. G1 failed on read 1 because of one tile: P+ L2 (the f.239r looped hook-form, 'presser'/'Salaire') read no/low on read 1 and yes/low on read 2. Every other tile gave the same yes/no on both reads, and both T tiles were yes/high on both. So read 2's PASS is that one low-confidence tile flipping. Taking the better of two reads raises the chance of passing, and gating on read 2 alone hides this. Pooling both reads, which is stricter than the PREREG: P+ 5/6 = 0.833 (G1 >= 0.75 still passes), P- 0/8 = 0.000, T 4/4 yes/high. The regrade stands on the pooled figures too, but the reader cannot settle the looped variant. |
+| 4 | The 8 regrades are exactly what the gate licenses | **PASS, none reverted.** PREREG adoption: a CONFIRMED class moves all its f.228 tokens M -> S. score2.out confirms T:DECOY:hook=s and T:v. In the reconciled passes I count 7 `s:hook` tokens on f.228v (none with `?`) and 1 `s:v` token (f.228r a_L02 pos 7). The PREREG's "v 2" counted a comment line (`# ... col9 s:v (A v\|hook, B v)`) too, so the file holds fewer rows than the PREREG named, never more. Of the exceptions file's 39 rows, 31 are BAL-WL's, unchanged, and 8 are BAL167-GHV's. g+ (no form found on 5 glossed leaves) and gam stay M. reading_tokens_b170f228.tsv vs c60720e55: 8 rows changed, M -> S only, and no value changed. |
+| 5 | Rule 7 and depth | **PASS.** `score_ghv.py` reproduces score1.out and score2.out byte-identically. `regrade_ghv.py` -> `8 tokens M -> S {'v': 1, 'hook': 7}`. `tiles_ghv.py 20261013` / `20261014` regenerate every tile and key byte-identically (clean `git status`). `python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check` -> `ciphertext_b170f228.txt: tokens 154: H 56, I 27, M 31, S 39, U 1` / `reading up to date`. Values are unchanged, so the fr17 judge input is unchanged too. |
+
+### 2. Depth (rule 4a), f.228r-v
+- H/C/S: 95 of 154 = **61.7%** (H 56, S 39). Unread: M 31, I 27, U 1.
+- Cipher clause: the longest H/C/S stretch is now 13 letters ("malsatisfaits", from reading_tokens_b170f228.tsv). That is far under the authentication distance (AUDIT 2: no stretch near 1.5 x unicity with ~98 letter liberties), so the clause is **not met**. Code clause: **met** (`10:` "les" in two contexts, unchanged).
+- D3 needs at least 80% of tokens H/C/S, so f.228 is not D3. **D2 held.** `python3 tools/depth_check.py` -> exit 0 (`unique solves (N3+ and D2+): 214 -- D4 5, D3 151, D2 58`).
+- The AUDIT 4 true sentence stands. No word in it depends on the 8 regraded tokens' values, and those values did not change.
+- status.json is not edited, because depth did not change (the brief: depth fields only if depth changes). Parent item: status.json's `depth_pct` 56.5 now understates the share; 61.7 is the current figure. That only makes the outward "about N%" lower than it should be, never higher.
+
+### 3. Postmortem
+BAL167-GHV's NOTES section does not over-claim. It reports read 1's FAIL, says the gate was taken on read 2 under the PREREG, gives the
+v 2 -> 1 count, and names the small arms and the one-tile-per-class limit. Three corrections and points for future work:
+(a) The NOTES label basis for L2 combines two different supports. Both gloss reads put 'Salaire' over the hook (@9). The H codes on either
+side (mm=p, 66'=re | hook | 71'=se, y=r) give 'presser'. Either one gives s, so the label stands, but the H-code alignment does not
+support the gloss word 'Salaire'. (b) When a PREREG allows a second read on failure, the score file should also give the pooled
+figure across both reads, so a reader can see whether the pass depends on taking the better read. Here it does not (pooled G1 0.833).
+(c) Half the P- arm (r-shape, h) is not a near look-alike of the hook. Next time, the negative should take every
+glossed z-swash/gam-type curl that can be found and drop the visually distinct shapes.
+Requests: none (disk only). Subagents: none.
