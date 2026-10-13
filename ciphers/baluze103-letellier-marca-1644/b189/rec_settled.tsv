@@ -1,0 +1,79 @@
+line	col	A	B	settled	why
+L01	1	[La_despesche_que]	[la_despesche_que]	[La_despesche_que]	A default
+L01	2	mt	q2	mt	class rule (eyed L01,L04,L05,L06,L15)
+L01	13	3	-	3	A default
+L01	14	?{small_raised_o}	=30	?{small_raised_o}	A default
+L02	9	mt	q2	mt	class rule (eyed L01,L04,L05,L06,L15)
+L02	16	?{slash}	-	?{slash}	A default
+L02	17	?{f_with_cross}	xs	?{f_with_cross}	A default
+L03	3	7s	y	7s	A default
+L03	6	u	-	u	A default
+L03	7	7s	q2	7s	A default
+L03	11	[un]	m	[un]	A default
+L04	4	?{beta-like_slashed_f}	P	?{beta-like_slashed_f}	A default
+L04	7	xc	lb	xc	class rule (eyed L01,L04,L05,L06,L15)
+L04	13	9	-	9	A default
+L04	16	mt	q2	mt	class rule (eyed L01,L04,L05,L06,L15)
+L04	20	b	bt	b	A default
+L04	23	?{5-like}	5	?{5-like}	A default
+L04	24	?{f_with_cross}	xs	?{f_with_cross}	A default
+L04	28	mt	q2	mt	class rule (eyed L01,L04,L05,L06,L15)
+L05	3	mm	-	mm	A default
+L05	4	u	m	u	A default
+L05	10	xs	H	H	class rule (eyed L01,L04,L05,L06,L15)
+L05	11	dt	delta	dt	A default
+L05	18	?{ff_loop}	gz	gz	class rule (eyed L01,L04,L05,L06,L15)
+L06	7	sigma	5	5	class rule (eyed L01,L04,L05,L06,L15)
+L06	9	rho	-	rho	A default
+L06	10	u	-	u	A default
+L06	11	[pour]	xc	[pour]	A default
+L06	17	z	q2	z	A default
+L07	12	7s	q2	7s	A default
+L07	15	?{ff_loop}	gz	gz	class rule (eyed L01,L04,L05,L06,L15)
+L08	8	xs	H	H	class rule (eyed L01,L04,L05,L06,L15)
+L08	14	sigma	5	5	class rule (eyed L01,L04,L05,L06,L15)
+L08	15	?{o}	?{small_round_o}	?{o}	A default
+L08	18	?{h-like_flourish}	hbar	?{h-like_flourish}	A default
+L09	13	mt	cap	mt	class rule (eyed L01,L04,L05,L06,L15)
+L09	15	?{o}	?{round_o}	?{o}	A default
+L10	3	mm	m	mm	A default
+L10	8	m	-	m	A default
+L10	9	u	mm	u	A default
+L10	14	sigma	5	5	class rule (eyed L01,L04,L05,L06,L15)
+L11	3	sigma	5	5	class rule (eyed L01,L04,L05,L06,L15)
+L11	17	?{o}	?{small_round_o}	?{o}	A default
+L12	7	mt	q2	mt	class rule (eyed L01,L04,L05,L06,L15)
+L12	10	u	n	u	A default
+L12	17	?{hz-like_loop}	hz	?{hz-like_loop}	A default
+L13	2	rho	-	rho	A default
+L13	3	m	P	m	A default
+L13	4	u	mm	u	A default
+L13	6	sigma	5	5	class rule (eyed L01,L04,L05,L06,L15)
+L13	7	mt	q2	mt	class rule (eyed L01,L04,L05,L06,L15)
+L15	1	m	-	m	A default
+L15	2	u	mm	u	A default
+L15	6	z	y	z	A default
+L15	9	9	-	9	A default
+L15	14	9	-	9	A default
+L15	21	mt	cap	mt	class rule (eyed L01,L04,L05,L06,L15)
+L15	24	19	9	19	A default
+L15	27	x	-	x	A default
+L15	28	m	mm	m	A default
+L16	4	eps	-	eps	A default
+L16	6	dt	-	dt	A default
+L16	17	xs	H	H	class rule (eyed L01,L04,L05,L06,L15)
+L17	8	5	-	5	A default
+L17	9	sigma	u	5	class rule (eyed L01,L04,L05,L06,L15)
+L17	10	mt	q2	mt	class rule (eyed L01,L04,L05,L06,L15)
+L17	19	?{cross-like}	P	?{cross-like}	A default
+L18	4	bt	-	bt	A default
+L18	6	xs	H	H	class rule (eyed L01,L04,L05,L06,L15)
+L18	10	?{ff_loop}	gz	gz	class rule (eyed L01,L04,L05,L06,L15)
+L18	20	xc	xs	xc	class rule (eyed L01,L04,L05,L06,L15)
+L19	4	mt	cap	mt	class rule (eyed L01,L04,L05,L06,L15)
+L19	17	xc	xs	xc	class rule (eyed L01,L04,L05,L06,L15)
+L20	7	?{ff_loop}	gz	gz	class rule (eyed L01,L04,L05,L06,L15)
+L20	15	mt	cap	mt	class rule (eyed L01,L04,L05,L06,L15)
+L21	2	xc	x	xc	class rule (eyed L01,L04,L05,L06,L15)
+L21	7	m	-	m	A default
+L21	8	u	mm	u	A default
