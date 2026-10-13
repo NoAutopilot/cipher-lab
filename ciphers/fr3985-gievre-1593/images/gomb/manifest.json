@@ -1,0 +1,87 @@
+{
+ "v650.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f650/full/W,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 633376
+ },
+ "v720.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f720/full/W,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 610984
+ },
+ "v732.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f732/full/W,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 391790
+ },
+ "v740.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f740/full/W,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 602576
+ },
+ "v744.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f744/full/W,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 407157
+ },
+ "v747.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f747/full/W,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 688466
+ },
+ "v748.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f748/full/W,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 197489
+ },
+ "v749.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f749/full/W,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 213214
+ },
+ "v750.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f750/full/W,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 199723
+ },
+ "v751.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f751/full/W,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 215741
+ },
+ "v752.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f752/full/W,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 636388
+ },
+ "v753.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f753/full/W,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 354226
+ },
+ "v754.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f754/full/W,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 323698
+ },
+ "v755.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f755/full/W,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 345023
+ },
+ "v756.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f756/full/W,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 333911
+ },
+ "v760.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f760/full/W,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 592860
+ },
+ "v800.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f800/full/W,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 706657
+ }
+}

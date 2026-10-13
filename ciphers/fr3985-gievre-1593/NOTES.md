@@ -1,6 +1,6 @@
 blocked
 
-Edition step not completed: Gomberville, Memoires de M. de Nevers, seconde partie (1665) could not be searched or read (Gallica ContentSearch is on gallica.bnf.fr, barred by the brief; Google Books page search blocked/503). No decipherment or plaintext found in any other source checked.
+Edition step partly done (13 Oct 2026, BNF-Q2-ED): Gomberville seconde partie read as images at printed pp.589, 659, 671-693, 697, 737 via openapi.bnf.fr; no Gievre letter on those pages, but the 1593 span is not read in full (see section below). No decipherment or plaintext found in any other source checked.
 
 # fr.3985 f.89 (Nevers to "Mr de Gievre", Nevers, 21 Aug 1593) -- BNF-Q2-ID, 13 Oct 2026
 
@@ -43,3 +43,8 @@ openapi.bnf.fr 3 (f177, f178, f179; all 200); github.com 2 clones; googleapis.co
 
 ## While waiting
 Run Gallica ContentSearch (or a full-text read) of Gomberville, Memoires de M. de Nevers, seconde partie (bpt6k64451005) for "Gievre", "Giévre", "Gieure" and the date "21. d'aoust" from the owner's browser or via LOCAL-QUEUE.tsv, then set open or found-solved.
+
+## BNF-Q2-ED (13 Oct 2026, account 2)
+Edition: Gomberville, Memoires de M. de Nevers, seconde partie (1665), bpt6k64451005, via openapi.bnf.fr IIIF (969 views; no table of contents among the last views, labels `NP`; pagination restarts, views carry printed-page offsets of about 61 at p.600-700). Read as images (not a full-text search): printed pp.589, 659, 671, 679, 683, 686-693, 697, 737 (views in gomb_views.tsv). Results: the 1593 matter around pp.671-697 is a long royal instruction to M. de la Fin (cites letters of 2 Sept), a Vaudois letter of Sept 1593 (p.692), an Arrest of 30 Mar 1594 and a letter of the Cardinal de Plaisance; pp.737 is Vervins-era (1597-98). No Nevers letter to Gievre and no name Gievre seen on any page read. Not read: pp.660-670, 672-678, 680-682, 684-685, 694-696, and the rest of the volume. The volume is arranged by document, not strictly by date (1591 Turenne instruction at p.659, 1594 arrest at p.691), so this sample cannot exclude the letter.
+Verdict: **not found in the pages read; edition step still incomplete** (a sampled read of about 17 views, not a sweep). Status stays blocked; next: a full-text read of the 1593 span (pp.660-700) or Gallica ContentSearch from the owner's browser/LOCAL-QUEUE.
+Requests: openapi.bnf.fr 18 (1 manifest + 17 images), gallica.bnf.fr 0.
