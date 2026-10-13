@@ -2292,3 +2292,34 @@ Read so far: 0 of 229 base-code / 239 marks-kept tokens graded H/C/S (unchanged)
 - [x] image-check: LAG-HIRES settled 10 of 14 at ~288 ppi; 6 doubt cells need the original (needs-physical-access)
 - [x] retry: syllabary and wordcode retries exhausted or [retired] (LAG-HIRES)
 Verdict: keep going: 1 internal gap; cheapest next: one browser-tool look at the KHA inventory for A 11, ~$1; retroboeken/NA inventory attempted with 0 hits; the six doubt cells wait on the KHA original (needs-physical-access)
+
+## LAG-KHA (13 Oct 2026, account 2, LANE DEFAULT-A2-2013, Sonnet, no subagents, no cryptanalysis)
+Job: the KHA (Koninklijk Huisarchief) inventory look left open by LAG-RETRO. Prior work: `tools/prior_work.py la-garde-1577 --step-type lookup --fetch` exit 4, the only LEAD this worker's own claim line (20:55 UTC); tomokiyo/solver/edition rows UNCHECKED, covered by LAG-SIB, LAG-MARNIX and LAG-RETRO above.
+
+**Routes tried, 13 Oct 2026 (route, result)**
+1. `https://www.koninklijkhuisarchief.nl/` (curl, descriptive UA): `CONNECT tunnel failed, response 502` (egress proxy refusal, no HTTP answer from the site). Retry after 20 s on the bare host `koninklijkhuisarchief.nl`: same failure (000). Host stopped after the one retry. A browser-tool look would meet the same proxy refusal, so was not run.
+2. Wayback CDX for `koninklijkhuisarchief.nl` (domain match, status 200, limit 15): empty `[]`, no captures to read.
+3. `https://www.archieven.nl/nl/zoeken?...&mizk_alle=Marnix+cijfer` (200, 41 KB): the search shell renders, result rows load client-side (consistent with the CLAUDE.md host row "query-form-unverified"); no result list in the saved HTML, so no hit and no negative. Whether archieven.nl carries the KHA at all was not established.
+4. huygens: 0 requests this job (LAG-RETRO already covered retroboeken).
+
+**Result:** no KHA inventory page was read; nothing found and nothing excluded for a 1576-78 cipher table, sleutel, or the originals of WVO 6179 / 6467. Where not found: the KHA inventories (A 11 and the Willem I / Marnix series), any holder inventory number, any digitisation flag.
+
+Requests: koninklijkhuisarchief.nl 2 (both refused by the proxy); web.archive.org 1; www.archieven.nl 2; nationaalarchief.nl 1 (reachability only); www.huygens.knaw.nl 1 (reachability only); resources.huygens.knaw.nl 0. Cost not visible to this session.
+
+## Remaining gaps (LAG-KHA, 13 Oct 2026)
+Read so far: 0 of 229 base-code / 239 marks-kept tokens graded H/C/S (unchanged)
+- same-system pooling for N - blocker: no-key-material; WVO, Groen VI, Gachard, the DECODE disk list, Staten-Generaal Deel 1-2 and both solver repositories give 0 same-system letters (LAG-SIB, LAG-RETRO)
+- Aug 1577 alphabet (Groen VI p.129) - blocker: no-key-material; Don Juan's Spanish cipher as shown by Marnix, not 6467's system (LAG-MARNIX, LAG-RETRO)
+- KHA inventory look for a 1576-78 cipher table of Orange's circle - blocker: no-key-material; the KHA site is refused by the cloud egress proxy (CONNECT 502, 13 Oct 2026) and archieven.nl results are client-side; a desk route (owner's browser or a KHA reference enquiry) is the only one left
+- six doubt cells (LAG-HIRES) - blocker: needs-physical-access; the KHA original is the route
+
+## Escalation (LAG-KHA, 13 Oct 2026)
+- [x] siblings: WVO, Groen, Gachard, DECODE disk list, retroboeken Staten-Generaal Deel 1-2 and both solver repositories swept, no same-system letter
+- [n/a] clear-pages: no clear page of this cipher identified; margin words placed in A2-LAG
+- [x] known-keys: Aug 1577 alphabet is Don Juan's Spanish cipher (LAG-MARNIX); retroboeken, NA inventory and the unreachable KHA add no table
+- [x] print: Groen VI, Gachard t.4-6, GSME/LMSAC, Besluiten Staten-Generaal Deel 1-2 read
+- [n/a] key-rebuild: needs a family whose verdict statistic passes on its control decodes first
+- [x] image-check: LAG-HIRES settled 10 of 14 at ~288 ppi; 6 doubt cells need the original (needs-physical-access)
+- [x] retry: syllabary and wordcode retries exhausted or [retired] (LAG-HIRES)
+Verdict: parked: every open gap has an outside blocker (no-key-material; KHA host refused by the cloud proxy, needs a desk route; six cells needs-physical-access)
+
