@@ -15103,3 +15103,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 07:13 | VIV52-O worker | claim: fr16104-vivonne-spain-1572 ink 52 (VIV52 steps 1 leaf premise + 2 pages transcription + decode), cap USD 10, box 07:14-09:44 UTC (80% line 09:14), openapi.bnf.fr <= 20 -- for LANE DEFAULT-A1-0640 (owner account)
 2026-10-13 07:13 | F4712-CENSUS (worker, LANE DEFAULT-A1-0640 owner account) | openapi.bnf.fr take for LANE DEFAULT-A1-0640 (owner account): f25, f26 at 1600 px, 2 requests (total 14)
 2026-10-13 07:14 | F4712-CENSUS (worker, LANE DEFAULT-A1-0640 owner account) | openapi.bnf.fr release for LANE DEFAULT-A1-0640 (owner account): 2 requests, job total 14
+2026-10-13 07:14 | F4712-CENSUS (worker, LANE DEFAULT-A1-0640 owner account) | halfway for LANE DEFAULT-A1-0640 (owner account), 07:1x UTC 13 Oct: f23-f34 fetched (f.13v-f.24r; f33 duplicates f32), overview shows clear letters only so far; checking f.16r-17r at 1600 px
