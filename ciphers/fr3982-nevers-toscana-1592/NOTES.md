@@ -188,9 +188,26 @@ syllable representation is found in no.73 of the Nevers collection" (fr.3995 fol
 represented by figures. Some names are represented by letters."). f.25 reads naturally as pairs in 10-40 with few 8/9s:
 that profile fits a syllabic two-figure table. Brief BNF-Q7-T73.
 
+## Lane correction after BNF-Q7-ERR (13 Oct 2026, 14:0x UTC by date -u) -- read before any result above
+BNF-Q7-ERR measured the reconciled f.25 text against a blind third pass: adjudicated error 30/260 = 0.115 (Wilson 95% upper
+0.160); conservative disagreement e_hi 0.194. About 12 errors are one looped sign that pass C reads as 8; line L06 does not
+match the leaf; about 29 cipher digits at the end of the clear line above the block (L00) were never transcribed. Under
+CLAUDE.md rule 3 a control must bracket the target's measured error (here up to ~0.16), so the screen verdicts above are
+re-graded:
+- no.62: holds as control-backed misfit -- structural control power 0.99 at 15% (BNF-Q7-TEST), screen 0.81 at 15%. Still
+  conditional on the transcription (rule 2); re-run on the next measured version.
+- no.46: NON-TEST (screen power 0.57 at 15%), not a misfit.
+- no.70 alphabet: NON-TEST (validated only to 10%; nomenclator untranscribed).
+- no.45: NON-TEST. The digit-8 control rested on "f.25 has no 8", which BNF-Q7-ERR shows is likely a transcription
+  artefact (a looped sign read as 8 by the blind pass); the screen was validated only to 10%.
+- no.73: NON-TEST by the pre-registered licence (e_hi 0.194 > 0.07; PREREG-Q7-T73-ADDENDUM.md).
+The binding constraint is now the transcription, not the key list. Per CLAUDE.md Usage 6 (passes split > a tenth, an
+unsettled sign) the next pass is a person's: the owner settles the looped sign (8 or not) and the L00/L06 questions; then
+two blind machine passes against those labels, re-measured. ciphertext_v2.tsv (BNF-Q7-ERR) is unmeasured and not used.
+
 ## Remaining gaps (BNF-Q7-SCREEN, 13 Oct 2026)
 Read so far: unmeasured, no key reads the letter yet
-- Key identification for f.25 - blocker: not-attempted; screened and not fitting: no.62 (retired, BNF-Q7-TEST), no.46 and no.70 alphabet (BNF-Q7-SCREEN), no.45 (lane, screen + digit-8 control); no.47 is a symbol alphabet; next: fr.3995 no.73 (fol.136, letters and syllables in figures, the Florentine form) transcribed and screened (BNF-Q7-T73), ~$4
+- Key identification for f.25 - blocker: waiting-on ASKS row 'fr.3982 f.25 looped sign and lines L00/L06' (the owner's sign check); the transcription's measured error (0.115, upper 0.160, BNF-Q7-ERR) is above the band most key controls cover, so no.46, no.70, no.45 and no.73 are non-tests and only no.62 is excluded
 - Key no.70 nomenclator - blocker: not-attempted; only the alphabet of f.131r is transcribed, and the alphabet screen (p_a 0.078) cannot see a fit carried by word codes; next: transcribe the word columns and re-screen, ~$2
 
 ## Escalation (BNF-Q7-SCREEN, 13 Oct 2026)
@@ -201,7 +218,7 @@ Read so far: unmeasured, no key reads the letter yet
 - [ ] key-rebuild: not attempted; a 260-digit string is short for cryptanalysis without a table
 - [x] image-check: leaf read at native resolution, two blind digit passes agree 0.905 (BNF-Q7-KEY)
 - [ ] retry: none yet
-Verdict: keep going: 2 internal gaps; cheapest next: BNF-Q7-T73 (fr.3995 no.73 table + screen), ~$4
+Verdict: keep going: 1 internal gaps; cheapest next: transcribe the published Tuscan reconstructions (Tomokiyo guicciardini1.png, guicciardini2.png) as keys while the sign check waits, ~$3
 
 ## BNF-Q7-TAB (13 Oct 2026, account 2)
 Transcription only; no decode, no screen run, no novelty class. Brief: .claude/briefs/runs/2026-10-13-ytbiz-bnf-q7-tab.md. Images and URLs: images/fr3995/manifest.json. Credit: numbering and identification Tomokiyo (nevers.htm).

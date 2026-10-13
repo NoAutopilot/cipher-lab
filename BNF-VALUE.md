@@ -307,3 +307,17 @@ the strongest new material (a held key or a sibling folder) once reproduced. Re-
   inside two-figure codes; f.25 is rich in 1s. BNF-Q7-TAB transcribes no.45 and no.47 (Italian, 1592); the screen then
   needs an intercalary-null mode before it runs on no.45.
 - Spend 13 Oct, this lane: 10.24 (to wave 24) + 3.15 + 1.56 + 3.59 = 18.54 of 40.
+
+## Waves 28-30 (13 Oct 2026, 12:3x-14:1x UTC by date -u): Q7 correction
+
+- no.45 transcribed (BNF-Q7-TAB, 1.77, one blind pass: graded C) and screened by the lane; no.47 is a symbol alphabet;
+  no.73 transcribed properly (BNF-Q7-T73, 2.32, two blind passes; H 0.90); its screen power 1.00 to 7% error, 0.53 at 10%.
+  The lane pre-registered an error-band licence for no.73 (bd79853a6) before measuring f.25.
+- **Correction.** BNF-Q7-ERR (2.87) measured the reconciled f.25 text: error 0.115 (upper 0.160), not the ~5% that two
+  passes agreeing 0.905 suggested; a looped sign was read as other digits (so "f.25 has no 8" was an artefact) and ~29
+  digits were never transcribed. Under rule 3 the earlier verdicts are re-graded: **no.62 stays excluded** (its controls hold
+  at 15%); **no.46, no.70, no.45 and no.73 are non-tests**, not misfits. The bullet "f.25 fits neither no.46 nor no.70" in
+  Waves 25-27 above is superseded by this one.
+- Blocked on the owner's one-look sign check (ASKS 163, backlog, never blocking). Meanwhile the next keys (Tomokiyo's
+  published Tuscan reconstructions) can be put on disk.
+- Spend 13 Oct, this lane: 18.54 + 1.77 + 2.32 + 2.87 = 25.50 of 40.
