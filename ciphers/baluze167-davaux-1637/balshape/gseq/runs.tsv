@@ -1,0 +1,10 @@
+# BAL167-GSEQ runs (PREREG-BAL-GSEQ.md): one row per gt token per blind read, transcribed from balshape/gplus/glossA.tsv / glossB.tsv
+# (sign labels and gloss words exactly as each read gives them; an unmarked numeral N is taken as N' -- rule M1 of the PREREG).
+# signs: the read's cipher signs left to right on that strip, from the anchor search start; '|' ends the strip (line end).
+read	token	words	signs	line_final
+A	c131_gt1	consentent/consistent	90' 71' h 76' gt u4 y+ Z 51' 3i 16' 43' gt |	0
+B	c131_gt1	consintent	90' 71' h 76' gt u4 y+ Z 51' 3i 16' 43' gt |	0
+A	c131_gt2	longues	90' 71' h 76' gt u4 y+ Z 51' 3i 16' 43' gt |	1
+B	c131_gt2	longues	90' 71' h 76' gt u4 y+ Z 51' 3i 16' 43' gt |	1
+A	c132_gt	conclusion	4u 40' 90' q 44' 72' K gt 19' 51' ? |	0
+B	c132_gt	conclusion	4u 40' 90' q 44' 42' K gt 19' 51' |	0
