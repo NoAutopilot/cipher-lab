@@ -22,3 +22,14 @@ f32	right	23r	blank	no	no	n/a	none	600
 f33	both	22v|23r	duplicate image of f32	n/a	n/a	n/a	n/a	600	duplicate canvas, like f20=f19 (DUCH-LEAVES)
 f34	left	23v	blank, pasted docket strip (several lines, not read)	no	no	unsure	none	600	
 f34	right	24r	memorandum "... " with paragraph marks	no	no	unsure	none seen	600	
+f35	left	24v	blank	no	no	n/a	none	600	F4712-71
+f35	right	25r	memorandum/letter in clear, heading two lines, paragraphed	no	no	unsure	none seen	600	F4712-71
+f36	left	25v	continuation, dense clear	no	no	unsure	none seen	600	F4712-71
+f36	right	26r	continuation in clear (upper half), rest blank	no	no	unsure	none seen	600	F4712-71
+f37	left	26v	blank (show-through and fold marks)	no	no	n/a	none	600	F4712-71
+f37	right	27r	dense letter in clear, small hand	no	no	unsure	none seen	600	F4712-71
+f38	left	27v	one paragraph in clear at head, rest blank	no	no	unsure	none seen	600	F4712-71
+f38	right	28r	letter in clear	no	no	unsure	none seen	600	F4712-71
+f39-f45	both	28v-35r	not viewed (overview lost to a filename bug in this job's fetch loop; request budget spent)	n/a	n/a	n/a	n/a	-	F4712-71
+f46	left	35v	cipher letter (letters/signs, dense, ~14 lines) + clear lines, signature, address "A Monsieur / Monsieur Pasquier ... des finances" (M)	yes	not seen at 600 px	unsure	letter/sign cipher, not figure runs at 600 px	600	Tomokiyo's f.35 (Pasquier 1592, read by G. Lasry 2022, nevers.htm); not the f.10r figure system at this size
+f46	right	36r	letter in clear, another hand	no	no	no	none seen	600	F4712-71

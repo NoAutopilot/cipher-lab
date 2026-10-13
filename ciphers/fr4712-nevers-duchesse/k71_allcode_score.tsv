@@ -1,0 +1,12 @@
+stat	value
+N_tokens	37
+filtered_stream_tokens	307428
+train_tokens	215199
+W_target	-5.7242
+W_rank_of_201	86
+W_z	0.25
+P_ranks	1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+P_rank_le10_of_20	20
+F_ranks	91 189 109 85 99 96 42 162 201 152 72 75 199 158 115 78 157 28 12 5
+F_rank_le10_of_20	1
+gate	NO SIGNAL
