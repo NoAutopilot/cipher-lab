@@ -566,3 +566,95 @@ Recounted here: identical to VER1-VIV's figures.
 note: class without a reading, not counted: Saint-Gouard to Charles IX, 7 Sept 1572 (BnF fr.16104 f.173r-v): Frenc (D1)
 unique solves (N3+ and D2+): 22 -- D4 4, D3 5, D2 13; not counted D0/D1: 13; legacy ungraded: 0
 ```
+
+## AUDIT 5 -- ink piece 52 f.164r-v, its audit 1 (V-VIV52, owner-account verifier for LANE DEFAULT-A1-0640, 13 Oct 2026, 07:36-08:0x UTC by date -u)
+
+Item: ink piece 52, BnF fr.16104 ff.164r-168v (btv1b9009609w, canvases 178-183; address leaf f.169v, c184). Jean de Vivonne, sr de
+Saint-Gouard, to **Catherine de Médicis** (heading "du S^r de S^t gouard a la Reyne", plain opening "Madame.", docket "5 Septembre 1572",
+plain close "de Madril ce v^me jour de Sept^bre 1572"). Read so far: **f.164r-v only** (2 of 10 pages); ff.165r-168v untranscribed.
+Claim under audit (brief): NOTES.md "## VIV52-O" (commit 0aa67626): f.164r-v decoded with key.tsv, H 2217 / M 404 / U 106 of 2727,
+PREREG-VIV52O b2 and wrong-key gates PASS, fr16 judge FAIL. This verifier is not the solver and decoded nothing new.
+
+### 1. Extract
+- Plaintext as read: 2,727 tokens (2,621 letters), H 2,217 (81.3%), M 404, U 106; no C, no S. H = both readers agree (or a label rule settled it)
+  AND the code is grade C in key.tsv: key-source grading, not legibility, not a period decipherment.
+- Fragments (solver's word division, interpretation, not a gate): "bien considere", "intention" x2, "avoir traicte avecq ses", "intelligence de ce",
+  "relation de ce", "travailloit a continuer", "apporter ... alteration", "diligence de", "... landre" (read as Flandre), "du dangier",
+  "charge de France", "religion", "dauarange" (read as d'Orange). Between them letter salad.
+- Solver's search log: Gachard II, d'Ars 1884, La Ferrière Catherine IV and X, Gachard I (VIV52, 8 Oct 2026, regex over OCR on disk);
+  prior_work.py (VIV52-O, exit 4, owed rows recorded); leaves c178-c183 at 1200 px, no "dechiffré" leaf, no interlinear gloss (VIV52-O).
+  Not searched by the solver: any network print search on the decoded text (G3 unchecked).
+
+### 2. Rule-7 re-derivation and gate checks (run by this verifier before grading)
+- `python3 tx/viv52_decode.py --check` -> "reading_piece52.tsv + rec files up to date" (exit 0).
+- `python3 tx/viv52_test.py` re-run in full (1 min 12 s, seed '20261013VIV52O', 200 draws, 200 wrong keys): tx/viv52_result.json regenerated
+  **byte-identical** (cmp against the committed copy). Numbers: C1 f.103r b2 -1.704 vs p99 -1.898 PASS; C2 ink 54 b2 -1.658 vs p99 -1.824 PASS;
+  target b2 **-1.514 vs p99 -1.775 PASS**; wrong-key specificity real margin **0.262 vs wrong-key p99 0.026** (max 0.066; 16/200 wrong keys
+  pass bare b2) **PASS**; key_tomokiyo.tsv b2 -1.507 vs p99 -1.782.
+- PREREG order: PREREG-VIV52O.md committed 09fc0b67 (07:18:50 UTC) before the frozen passes (815a4fb1, 07:20:43) and the result
+  (0aa67626, 07:25:39) -- the order git shows; the PREREG says it was pushed before the passes returned.
+- fr16 judge re-run: `FAIL language: score=-1.622, null_p99=-1.905, real_p05=-0.863 ... N=2621` (identical to NOTES); the judge also FAILs the
+  known-good f.103r control on this hand (N5-VIV54, N6-VIV53), so it is not a gate here (rule 3, a judge that fails its own control).
+- Rule 3 weighed: b2's letter-order shuffle can differ from the target on an order statistic (a real test); the wrong-key arm changes the letters
+  (can differ). b2 alone is not key-specific (8% of wrong keys pass it at 2.6k letters); the specificity margin carries the key verdict (about
+  10x the wrong-key p99). The controls (1,831 / 1,795 letters) are shorter than the target (2,621), the conservative direction. One label rule
+  (pass B's "II" -> P, 11 splits) was added before the first decode but committed only with it (solver discloses this); it merges one sign's two
+  spellings and cannot be tuned to the score. No gloss, so no position-anchored check exists.
+  Verdict on the key: Tomokiyo's key (with VIV-ANCHOR's V -> n) reads this page pair in the gate's sense; the transcription leaves most lines salad.
+
+### 3. Independent search (13 Oct 2026, 07:40-07:47 UTC)
+Reused, not re-fetched: solver repos/blogs before 3 Oct (CS-5), Groen IV (AUDIT 3), RQH 35 (1884) read in full (L51), Kervyn I-VI (N6-KERV),
+Douais, Gachard *Correspondance de Philippe II* II.
+| family | what was searched (this audit) | result |
+|---|---|---|
+| (a) canonical series | Gachard II (on disk, whole OCR): the 1572 entries run XLIX (Queen and Anjou to Saint-Gouard, 29 Aug), **L "Au roi, Madrid, 5 septembre 1572 (En partie chiffrée, sans le déchiffrement)"** with the plain audience passage printed (= ff.157r-159v, not this letter), then "Au roi, 12 septembre", LV-LVI 19 Sept; the volume's own chronological table lists for September 1572 only 12 Sept (King), 19 Sept (King, Queen mother, Anjou): **no 5 Sept letter to the Queen** | not printed, not analysed |
+| (b) sender | d'Ars 1884 (on disk): no "5 septembre 1572" citation; fr.16104 citations are 14 Apr, 12 June, 9 Sept, 19 Sept (Anjou), 18 Oct, 7 Dec; the "peau de l'ours" proverb hit is Pisany at Rome, 1587 | not found |
+| (b') recipient | La Ferrière, Catherine IV (on disk): CXCII/CXCIII dated 5 Sept 1572 are Catherine's own letters (table), none to Saint-Gouard; **lead:** introduction p. cxx quotes a Saint-Gouard letter to Catherine (an unnamed person proposes making Anjou king of England; Saint-Gouard answers with "la peau de l'ours" and the Infante) "avant même qu'il eût reçu la lettre de Catherine" [of 29 Aug], citing **"fonds français n° 16104, f° 191 v°"** -- not ff.164-168; f.191v falls after ink 55 (f.175r) and its decipherment, plausibly the 19 Sept letter to the Queen (Gachard LVII-LVIII "avec le déchiffrement"). None of "angl", "infant", "ours", "anjou" occurs in the f.164r-v decode; ff.165r-168v (whose plain close names "l'Infante") are unread, so this is **not excluded for ink 52** -- see step 5 | lead, not a print of f.164r-v |
+| (c) documentary / secondary | Forneron, *Histoire de Philippe II* II (IA histoiredephili05forngoog, 06forngoog, djvu text, 2 requests): fr.16104 citations are f°22 (22 May), 55-56, "f° 58, Saint-Gouard à la reine mère" (with the 12 Sept arrival of Catherine's 28 Aug letter: piece 58 = 19 Sept), 71, 78, 83, 7: none is ink 52; IA FTS "Saint-Gouard" "5 septembre 1572" (13 hits: Gossart, Kervyn III notes for 12/19 Sept, Catherine IV, Travaux de l'Académie de Reims (an inquisitor who died 5 Sept 1572), RQH 35), "Saint-Gouard à la reine" (9 hits: Gachard table, Forneron, Le traité de Cateau (18 June 1573)), "Saint-Gouard to the queen" 0, "5th September, 1572" 0, Braudel's *Mediterranean* cites 21 May 1572 | not found |
+| (d) holding archive | leaves c178-c184 (VIV52-O, 13 Oct, via openapi.bnf.fr; not re-fetched, no BnF this job): no dechiffré leaf, no gloss | not found |
+| (e) full text | tools/print_check.py on phrases_52.txt (6 decoded phrases) -> print-check-52.tsv: Gachard II, Catherine IV, Kervyn III hits are the generic phrases in unrelated letters ("relation de ce qui fut negocie l'an 1525", "apporter alteration a la bonne et sincere amitie" in a Catherine letter); ia-global only generic matches; Google Books **HTTP 503 on every call** (print_check 6, then 3 + 3 on two later rounds, stopped); HathiTrust full text unreachable from the cloud | not found (Google Books unreachable) |
+| (f) solver repos / blogs | dbourdeau/cyphersolver (shallow clone, HEAD 12 Oct 2026): no target folder for fr.16104/Saint-Gouard; hits only in word lists and SRU sweep files; aaymeloglu/unsolved-ciphers (HEAD 8 Oct 2026): 0 hits for 16104/Gouard/Vivonne | not found |
+| (g) scholarship | OpenAlex "Saint-Gouard ambassade Espagne 1572" (12: the BnF manuscript records), "Vivonne Saint-Gouard 1572 Catherine" (4: Ribera's *Diplomatie et espionnage* (2007/2009 record), Catherine rhetoric 2022, network 2011, Flanders 2018 -- none about this letter); HAL "Saint-Gouard" 0; Semantic Scholar 429 after 2 calls (print_check); CrossRef generic; Persée not reached; JSTOR: none queued (AUDIT 3 queued both families for the series) | not found |
+Unreachable / not done: **Flament (1996)** (needs-physical-access, L52); **Ribera (2007)** in full (snippets only, L50); Google Books (503 all day
+for this session); HathiTrust full text; Persée; AGS Estado K / Arch. nat. K 1529-1530 (possible Spanish intercepts, Forneron cites K 1529
+for a 15 Apr 1572 letter to the Queen); fr.16104 f.191v (La Ferrière's citation) not viewed.
+Requests: be-api.us.archive.org 6 (print_check) + 7 (FTS); archive.org 2 (Forneron); www.googleapis.com 12 (all 503); api.openalex.org 6 + 2;
+api.semanticscholar.org 2 (429); api.crossref.org 6; api.archives-ouvertes.fr 1; github.com 2 clones.
+
+### 4. Classification
+**ink 52 f.164r-v (fr.16104, cipher of Saint-Gouard to Catherine de Médicis, Madrid, 5 Sept 1572): N3** (plaintext and mapping). No prior
+plaintext, summary or decipherment of this letter located: Gachard has no entry for it (his September 1572 table lists only 12 and 19 Sept), d'Ars,
+Forneron and La Ferrière cite other folios, and the leaves carry no decipherment (VIV52-O). Not N4: Flament (1996), a 158-page study of exactly
+this embassy, and Ribera (2007) in full were not read; Google Books was unreachable; and La Ferrière's f.191v quotation (Anjou/England/Infante,
+written before Catherine's 29 Aug letter arrived) is not tied to ff.164-168 by its folio but not yet excluded for ink 52's unread pages.
+Evidence quality: moderate (OCR greps and FTS; Gachard's own chronological table). Confidence: medium.
+Key: **published** (S. Tomokiyo, credited; key.tsv source column "published key (Tomokiyo, henryiii_Vivonne1.png)", plus VIV-ANCHOR's V -> n,
+grade C from ink-40 clerk anchors). Text: unknown.
+- Safe sentence: "Using Satoshi Tomokiyo's published 1572-74 key, we read fragments of the first two cipher pages (f.164r-v) of Saint-Gouard's
+  letter to Catherine de Médicis of 5 September 1572 (BnF fr.16104 ff.164r-168v); Gachard's 1875 analysis of the volume has no entry for this
+  letter. No printed plaintext or separate decipherment of it was located in the editions searched."
+- Unsafe sentences: "first decipherment" / "previously unread" / "new text" (rule 10; Flament and Ribera unread); "the letter is deciphered"
+  (2 of 10 pages, D1); "Saint-Gouard tells the Queen that ..." followed by any decoded clause (no clause clears the authentication distance);
+  "the letter mentions Orange / Flanders" as fact ("dauarange", "...landre" need repairs).
+
+### 4a. Depth (rule 4a)
+- Tokens: H 2,217 of 2,727 (81.3%); unread: names/codes -- not identified (U 106: single o 23, {curl} 19, r 16, 2 12, II 7, e 7 -- labels outside
+  key.tsv, no nomenclator); other -- M 404; ff.165r-168v (8 pages, ~230 lines) not transcribed.
+- **D1, "fragments read".** Longest all-H run 24 decoded letters (f.164r L18 "uadireuleqeleuiauoioaure", not French; f.164v L19-20 "...dudangier
+  ournuo..." the same length), against an authentication distance of about 42 letters; the best fragments ("avoir traicte avecq ses" 20 letters,
+  "travailloit a continuer" with repairs) are below it. No code value is tested in two contexts (letter key). The verifier cannot write one true,
+  specific sentence about what the cipher says. Expected depth D1 (PREREG, VIV52-O): met, not exceeded.
+  depth_check: key held out on ink 40 vs clerk decipherment 41 (N5-VIVK) + b2 order gate and 200-wrong-key specificity (PREREG-VIV52O, re-run
+  byte-identical here); no gloss, no content check; longest H run re-measured on the current reading_piece52.tsv.
+- Outward words: "fragments read". Not counted as a unique solve (N3 but D1). Partial item: 2 of 10 pages.
+
+### 5. Postmortem
+- No over-claim found in NOTES.md "## VIV52-O": it states D1, "No reading is claimed beyond D1 fragments", "Novelty" not classified, and the
+  "Flandre" / "d'Orange?" readings are marked as interpretation with the decoded string in brackets. The brief's claim sentence is accurate.
+- Correction to the solver's search premise (not an over-claim): VIV52's print step searched by date only; La Ferrière's introduction quotes a
+  Saint-Gouard letter to the Queen of early September 1572 by folio (f.191v), which a date grep cannot find. Next step that settles it cheaply:
+  view fr.16104 f.191v (about c207, 1 overview + 1 docket region on openapi.bnf.fr, ~$0.5) to name the letter it belongs to; if it is ink 52's
+  continuation or a decipherment of it, ink 52 drops to N0/N1 (and the decipherment is a known plaintext for the f/m/p key questions).
+- Next steps that would move this item: N4 needs Flament (1996) and Ribera (2007) (owner-side, already in gaps) and a Google Books pass when the host
+  answers; D2 needs ff.165r-168v transcribed (~24 units, ~$34, in gaps) and the key questions settled.
+- Second opinion: row SO-VIV52 queued (second-opinions/PROMPT-chatgpt-viv52.md).
