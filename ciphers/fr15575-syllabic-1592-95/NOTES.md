@@ -1146,25 +1146,55 @@ written (one shape, two values each). One open alternative the image leaves: if 
 Suggestion (not done, brief met): a single-letter-class control for --try on this text (a pseudo-sign at H-read single-letter positions,
 or the L01-L04 gloss at the 8 `^` positions there as known plaintext) would decide whether T1 is a reading.
 
-## Remaining gaps (SYL54-TRY, 13 Oct 2026; supersedes the SYL54-LEG list, the legend-pairs line replaced, other lines kept)
+## SYL-1LC: single-letter-class --try control for the no.54 legend marks (account-2 worker for LANE DEFAULT-A2-2013, 13 Oct 2026 20:30-20:35 UTC by date -u)
 
-Read so far: f.228 L01-L08 of ~47 lines (289 tokens: H 158, M 26, U 105); L01-L04 gate PASS (0.674 vs p99 0.233); L05-L08 gate FAIL three times; fr.15576 f.2 body C01-C21 transcribed (334 cipher tokens, 6 unsettled), alignment gate FAIL (all M); key no.54 nomenclator transcribed (165 rows, H 113, M 52; SYL-NOM); key no.31 transcribed (122 rows, H 102, M 20; SYL-31); no.54 mark legend transcribed (11 rows, H 5, M 6; SYL54-LEG); legend pairs not separated by a blind image read and not settled by --try (control 0/3, non-test; ^=s accepted as a lead, M; SYL54-TRY); f.2's 3-digit codes are outside the no.54 nomenclator and at chance against no.31's five 3-digit codes (p 0.287); f.233 unread.
+Job: the SYL54-TRY gap line "no.54 legend mark values in f.228 ... next: a single-letter-class --try control". No key file, decode.json
+or reading was edited.
+
+**Prior work.** `python3 tools/prior_work.py fr15575-syllabic-1592-95 --item-spec 'shelfmark=BnF fr.15575;folio=228;kind=legend-mark-try-control' --step-type key --fetch`
+-> exit 4, four LEAD rows owed, recorded CLEAR in prior-work.tsv (1-own:526749 and :a63d59 gloss image-checks, :774b34 leaf location,
+:9c14b2 this job's own claim). Check 1 (own work): no single-letter --try control in the folder (grep "single-letter": only
+PREREG-SYL54-TRY.md's note that its control was not single-letter). Checks 2-4 as SYL54-TRY (key-sheet marks; Tomokiyo quotes no legend;
+no edition applies). Check 5 n/a (no reading produced).
+
+**PREREG-SYL-1LC.md** pushed 20:33 UTC as 1db46d281 (with `syl1lc_try.sh`) before any score. Environment E (scratch): f.228 L01-L08
+ciphertext unchanged, key = the 95 syllabary rows + the 15 H no.54 header letter signs except `n`. Control first: three H single-letter
+signs masked one at a time (dropped from E's key), `--try` true value and one wrong letter, es1600, window 8, 100 nulls.
+
+| masked sign | n | true | stat (bits) | null p95 pos / val | verdict | wrong | stat | verdict |
+|---|---|---|---|---|---|---|---|---|
+| `:` | 13 | r | +29.5 over NULL | -5.5 / -92.5 | reject (breaks 5 of 13 occurrences by >3 bits) | l | -117.5 | reject |
+| `y` | 6 | r | -7.9 | -3.2 / 7.9 | reject | s | -23.7 | reject |
+| `9` | 4 | y | -24.0 | -6.3 / -11.7 | reject | e | -61.7 | reject |
+
+True values accepted **0/3** (gate: 2/3 with the n-matched `:` among them) -> **control FAILS; every target is a non-test at this N and
+T1-T5 were not scored** (PREREG). Wrong values not accepted 3/3. Log: crossword_control_SYL-1LC.tsv (scratch paths shortened).
+What it shows: at the n-matched sign the true letter beats every rival over the whole text and clears both nulls, but in this text about a
+third of the neighbours are unkeyed and filled with the model's likeliest letter, so the NULL runner-up wins at 5 of 13 single occurrences
+and the tool's no-breakage rule rejects. Two control classes (syllable, SYL54-TRY; single letter, here) have now failed on f.228 L01-L08:
+`--try` cannot license or refuse a mark value on this text at this N. SYL54-TRY's ^=s accept stays a lead (M); neither pair is settled.
+
+**Requests:** none (disk only). Subagent calls 0. Cost not visible to this session.
+
+## Remaining gaps (SYL-1LC, 13 Oct 2026; supersedes the SYL54-TRY list, the legend-mark line updated, other lines kept)
+
+Read so far: f.228 L01-L08 of ~47 lines (289 tokens: H 158, M 26, U 105); L01-L04 gate PASS (0.674 vs p99 0.233); L05-L08 gate FAIL three times; fr.15576 f.2 body C01-C21 transcribed (334 cipher tokens, 6 unsettled), alignment gate FAIL (all M); key no.54 nomenclator transcribed (165 rows, H 113, M 52; SYL-NOM); key no.31 transcribed (122 rows, H 102, M 20; SYL-31); no.54 mark legend transcribed (11 rows, H 5, M 6; SYL54-LEG); legend pairs not separated by a blind image read and not settled by --try (control 0/3, non-test; ^=s accepted as a lead, M; SYL54-TRY); single-letter --try control also 0/3 (SYL-1LC, targets not scored); f.2's 3-digit codes are outside the no.54 nomenclator and at chance against no.31's five 3-digit codes (p 0.287); f.233 unread.
 - Simancas original of the 5 Jan 1595 dispatch (AGS Estado leg. 609 fol. 86, Lefèvre IV no.811) - blocker: not-attempted; new material, a clear text of fr.15576 f.2 would allow `interlinear_align.py stream` against the whole cipher without the faint gloss; PARES dead from the cloud; next: LOCAL-QUEUE desk row for the PARES image of Estado 609 fol.86 or Manuscrits divers t.28 fol.183 (row text staged in the D4-SYL54 section), ~owner minutes
 - fr.15576 f.2 gloss (G01-G21) - blocker: not-attempted; two machine passes agree on about half the words, the alignment gate FAILed on that read (D4-15576); next: one-faint-line gloss crops (f2_fr15576/body f2i_L01..L41, contrast views) read by a person (sign sorter / desk row), then re-run the pre-registered alignment unchanged, ~$2 plus owner time
 - fr.15576 f.2 cipher - blocker: not-attempted; 6 unsettled groups (sorter focus: C05 g17, C09 g14, C10 g8, C11 g17, C14 g9, C18 g10); the 5-line letter-sign block at the top (and its gloss) unread; f.2's 3-digit system is not the no.54 nomenclator (SYL-NOM) and meets no.31's five 3-digit codes at chance (2 tokens, p 0.287, SYL-31), so its 3-digit block is unidentified; next: the 6 groups in the owner's sorter; top block 2 passes + reconcile against the no.31 letter signs (key_no31.tsv), ~$4.5
 - f.228 L05-L08 gloss - blocker: not-attempted; machine gloss read of the b2 band crops retired (rule 3, NV05C); next: one-faint-line crops (re-cut b2 bands, as done for f.2) read by a person in the sign sorter, or new material, ~$2
-- no.54 legend mark values in f.228 (caret s|l, dotted n en|l) - blocker: not-attempted; image read (blind, one call) does not separate either pair, --try's syllable-class control failed 0/3 so its ^=s accept is a lead only (SYL54-TRY); next: a single-letter-class --try control on f.228 (pseudo-sign at H single-letter positions) or the L01-L04 gloss read at the 8 `^` positions as known plaintext, under a fresh PREREG, ~$1.5
+- no.54 legend mark values in f.228 (caret s|l, dotted n en|l) - blocker: not-attempted; image read (blind, one call) does not separate either pair; --try controls failed for both value classes on f.228 L01-L08 (syllable 0/3, SYL54-TRY; single letter 0/3, SYL-1LC: `:`=r cleared both nulls but broke 5/13 occurrences), so --try on this text is untested-by-this-tool at this N and ^=s stays a lead (M); next: the L01-L04 period gloss read at the `^` and `n` positions as known plaintext (a different instrument; the L01-L04 gloss passed its gate, N8-NV05) under a fresh PREREG, ~$1.5; --try again only once f.228 L09+ raise n
 - no.54 marked nomenclator rows (9 circumflex, 7 plus-after) in decoding - blocker: too-short; none of the 13 codes occurs in f.228 L01-L08 (n 0, SYL54-TRY); next: re-test once f.228 L09+ or f.233 are read
 - key no.54 nomenclator M rows (52, recurring glyphs z/J/S-5/8 and the Mismo/Marques/Muestra codes) - blocker: not-attempted; letter identity needs decoded context, the image alone does not settle it; next: the M rows checked against decoded occurrences in f.228 once its L09+ lines are read (decode_key.py --try), ~$0 extra
 - fr.15575 f.228 L09-L47 and f.233 - blocker: not-attempted; unread, band crops mix two gloss lines (NV05C); next: 4-line batches with gloss-only crops (one faint line per crop, the f.2 cut), ~$7.5 each
 
-## Escalation (SYL54-TRY, 13 Oct 2026)
+## Escalation (SYL-1LC, 13 Oct 2026)
 
 - [x] siblings: es.336 (Lasry), fr.3641, fr.3982-3983 letters in the same cipher listed by Tomokiyo; none is these leaves
 - [ ] clear-pages: AGS Estado leg. 609 fol. 86 (Lefèvre IV no.811); planned: desk row for its image
-- [ ] known-keys: no.54 syllabary control-checked (fr.3641 PASS; f.228 L01-L04 PASS; L05-L08 FAIL x3); no.54 nomenclator (SYL-NOM), no.31 (SYL-31) and the mark legend (SYL54-LEG) transcribed; legend pairs tried by image and --try (SYL54-TRY, control 0/3, non-test); next: a single-letter-class --try control or the L01-L04 gloss at the `^` positions (~$1.5)
+- [ ] known-keys: no.54 syllabary control-checked (fr.3641 PASS; f.228 L01-L04 PASS; L05-L08 FAIL x3); no.54 nomenclator (SYL-NOM), no.31 (SYL-31) and the mark legend (SYL54-LEG) transcribed; legend pairs tried by image and --try (SYL54-TRY syllable control 0/3; SYL-1LC single-letter control 0/3; both non-tests); next: the L01-L04 gloss at the `^`/`n` positions as known plaintext (~$1.5)
 - [x] print: Lefèvre IV p.278 no.811 read in full (L47, DESK-LAND); van Durme 1964 snippet only
 - [ ] key-rebuild: f.2's period gloss alignment run once (D4-15576, gate FAIL on a machine gloss read); next: a person's gloss read, same prereg
 - [retired] image-check: machine gloss read of the f.228 b2 band crops (N8B two passes, NV05C 12 view calls), rule 3, third attempt
 - [x] retry: L01-L04 gloss retried under an addendum and PASSed (N8-NV05)
-Verdict: keep going: 7 internal gaps; cheapest next: the Estado 609 fol.86 desk row (owner minutes, row staged in D4-SYL54); then a person's read of the f.2 gloss crops and the unchanged prereg re-run (~$2); then the single-letter --try control for the legend marks (~$1.5)
+Verdict: keep going: 7 internal gaps; cheapest next: the Estado 609 fol.86 desk row (owner minutes, row staged in D4-SYL54); then a person's read of the f.2 gloss crops and the unchanged prereg re-run (~$2); then the L01-L04 gloss at the legend-mark positions as known plaintext (~$1.5)

@@ -1,0 +1,7 @@
+time	target	hypothesis	occurrences	statistic	null_pos_p95	null_val_p95	verdict	flag
+2026-10-13 20:33	scratch:ctl_3a	:=r	13	29.5	-5.5	-92.5	reject	non-blind
+2026-10-13 20:33	scratch:ctl_3a	:=l	13	-117.5	-14.9	-57.1	reject	non-blind
+2026-10-13 20:33	scratch:ctl_79	y=r	6	-7.9	-3.2	7.9	reject	non-blind
+2026-10-13 20:34	scratch:ctl_79	y=s	6	-23.7	7.1	7.9	reject	non-blind
+2026-10-13 20:34	scratch:ctl_39	9=y	4	-24.0	-6.3	-11.7	reject	non-blind
+2026-10-13 20:34	scratch:ctl_39	9=e	4	-61.7	0.9	-13.0	reject	non-blind
