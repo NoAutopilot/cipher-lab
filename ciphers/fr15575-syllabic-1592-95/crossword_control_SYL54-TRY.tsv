@@ -1,0 +1,7 @@
+time	target	hypothesis	occurrences	statistic	null_pos_p95	null_val_p95	verdict	flag
+2026-10-13 10:11	/tmp/claude-0/-home-user-cipher-lab/6877e994-b3ff-51e6-b3f2-486abe5714cf/scratchpad/ctl/f228	23=de	9	-93.6	15.9	-92.4	reject	non-blind
+2026-10-13 10:11	/tmp/claude-0/-home-user-cipher-lab/6877e994-b3ff-51e6-b3f2-486abe5714cf/scratchpad/ctl/f228	24=da	9	-43.5	-35.3	-59.0	reject	non-blind
+2026-10-13 10:11	/tmp/claude-0/-home-user-cipher-lab/6877e994-b3ff-51e6-b3f2-486abe5714cf/scratchpad/ctl/f228	73=que	9	-52.5	37.8	-70.0	reject	non-blind
+2026-10-13 10:11	/tmp/claude-0/-home-user-cipher-lab/6877e994-b3ff-51e6-b3f2-486abe5714cf/scratchpad/ctl/f228	23=da	9	-120.4	-35.3	-92.4	reject	non-blind
+2026-10-13 10:11	/tmp/claude-0/-home-user-cipher-lab/6877e994-b3ff-51e6-b3f2-486abe5714cf/scratchpad/ctl/f228	24=de	9	-26.7	15.9	-59.0	reject	non-blind
+2026-10-13 10:11	/tmp/claude-0/-home-user-cipher-lab/6877e994-b3ff-51e6-b3f2-486abe5714cf/scratchpad/ctl/f228	73=lo	9	-112.5	2.8	-70.0	reject	non-blind

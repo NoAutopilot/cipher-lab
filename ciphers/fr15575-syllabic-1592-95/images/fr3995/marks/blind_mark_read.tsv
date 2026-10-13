@@ -1,0 +1,13 @@
+# SYL54-TRY 13 Oct 2026: one blind Sonnet call on mk_A..mk_K (shuffled labels; label_key.json maps them to legend lines; the subagent saw no legend reading). Summary rows; full text in NOTES.md SYL54-TRY.
+crop	legend_line	mark_class	letters	letter_choice	confidence
+A	L03	loop (long-s/f-like)	gamma-like	-	medium
+B	L07a	two dots	-	-	high
+C	L06	zigzag (w/n lying)	tall stem, foot bar	l (no descender, no head hook seen; top cropped)	medium
+D	L10	n-dot	tall stem, foot bar, head hook	l or long-s, ambiguous	medium
+E	L08	n-dot	en	-	high
+F	L04	e-loop with left tick	u or a	-	medium
+G	L09	caret with left tick	tall stem, foot bar, head hook	l or long-s, more l-like	medium
+H	L05	o with blot	S-shaped	S	medium
+J	L07b	cross	e	-	high
+K	L02	caret with left tick	S	S	high
+# Pairs: carets G(L09)/K(L02) probably the same mark (medium), no consistent difference; n-dots D(L10)/E(L08) the same mark (medium). Letters: C/D/G one tall form, H/K one S form, the two forms differ.

@@ -1,0 +1,7 @@
+time	target	hypothesis	occurrences	statistic	null_pos_p95	null_val_p95	verdict	flag
+2026-10-13 10:11	ciphers/fr15575-syllabic-1592-95/f228	^=s	13	65.1	8.4	-93.1	accept	non-blind
+2026-10-13 10:11	ciphers/fr15575-syllabic-1592-95/f228	^=l	13	-225.9	-21.7	-65.1	reject	non-blind
+2026-10-13 10:12	ciphers/fr15575-syllabic-1592-95/f228	n=en	15	-83.0	-13.3	-108.0	reject	non-blind
+2026-10-13 10:12	ciphers/fr15575-syllabic-1592-95/f228	n=l	15	-133.7	-25.8	-46.1	reject	non-blind
+2026-10-13 10:12	ciphers/fr15575-syllabic-1592-95/f228	n=e	15	-50.1	-12.0	-46.1	reject	non-blind
+2026-10-13 10:12	ciphers/fr15575-syllabic-1592-95/f228	+=e	1	-2.6	0.9	-0.7	undecided	non-blind
