@@ -1,0 +1,31 @@
+query	line	crop	pos	reader_code	role	key_value
+#1	2039_rem_L4	L05	4	o	control	r
+#2	2039_rem_L4	L05	35	K	target	
+#3	2039_rem_head	L01	0	O	target	
+#4	2039_rem_L4	L05	36	[lambda]	control	t
+#5	2039_rem_L3	L04	60	&	target	
+#6	2039_rem_L4	L05	61	8	control	i
+#7	2039_rem_L4	L05	60	o	control	r
+#8	2039_rem_L4	L05	31	[lambda]	control	t
+#9	2039_rem_L3	L04	3	[delta]	control	a
+#10	2039_rem_L3	L04	7	K	target	
+#11	2039_rem_L3	L04	39	[psi]	control	s
+#12	2039_rem_L1	L02	58	3	control	e
+#13	2039_rem_L4	L05	26	[J-rev]	target	
+#14	2039_rem_L2	L03	11	[J-rev]	target	
+#15	2039_rem_L1	L02	19	[hash]	control	o
+#16	2039_rem_L3	L04	48	O	target	
+#17	2039_rem_L3	L04	1	3	control	e
+#18	2039_rem_L3	L04	8	7	control	e
+#19	2039_rem_L3	L04	47	r	control	t
+#20	2039_rem_L4	L05	5	K	target	
+#21	2039_rem_L1	L02	41	8	control	i
+#22	2039_rem_L5	L06	4	r	control	t
+#23	2039_rem_L1	L02	23	7	control	e
+#24	2039_rem_L3	L04	59	l	control	n
+#25	2039_rem_L4	L05	17	[hash]	control	o
+#26	2039_rem_L2	L03	31	l	control	n
+#27	2039_rem_L2	L03	1	[delta]	control	a
+#28	2039_rem_L4	L05	9	[psi]	control	s
+#29	2039_rem_L4	L05	42	&	target	
+#30	2039_rem_L5	L06	2	K	target	
