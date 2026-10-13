@@ -57,3 +57,42 @@ each candidate: holder, shelfmark/letter number, date, sender -> recipient, whet
 whether it is the same system (same sign stock/numbers as 6179/6467) when an image is viewable (overview only; no transcription). Write a
 `## LAG-SIB` section with a candidates table and the routes searched/unreachable, update the siblings rung and Verdict; gaps_check. No
 cryptanalysis. Report request counts per host.
+
+Wave 1 (all ledgered + archived, 19:0x UTC): VIV-HEADS 2.61 D (inks 78, 97 not ink 52; 101 not reached), F4712-C59 2.38 N (c59-70 empty;
+71-142 remain, not pursued: three empty runs), SUR-LEGK 2.92 D (legend k pos 1-2/5 settled M; pos 6 split 7|r), LAG-SIB 1.80 N (0 siblings;
+Marnix Aug 1577 alphabet lead, Groen VI p.129). Lesson: Opus floor puts $2 jobs at 1.2-1.3x; size small Opus jobs at 2.5.
+
+## Wave 2 (19:1x UTC 13 Oct)
+
+### VIV-101 (Opus, cap 2, box 30 min, openapi.bnf.fr <= 4): fr16104-vivonne-spain-1572, head of ink 101
+VIV-HEADS (NOTES.md "## VIV-HEADS", commit 6e1330003) left ink 101's dechiffre head unviewed: ink 100 cipher still on f.299r c321, ink 101
+at c322-c324. Same method and table as VIV-HEADS: the head region of ink 101's dechiffre leaf at `1600,`, compared with ink 52 f.164r's
+decoded opening and the same three named phrases VIV-HEADS used. One table line. If it matches ink 52: stop, NOTES.md + ROOM flag, no
+AUDIT.md edit. Otherwise close the "misplaced-decipherment residual" gap line (all post-19 Sept dechiffre heads viewed) and gaps_check.
+
+### SUR-POS6 (Opus, cap 2, box 40 min, disk only): na-suriname-map-1781, 2039 legend k position 6 (7 vs r)
+SUR-LEGK (NOTES.md "## SUR-LEGK", commit e20173ec5): both blind passes read legend k pos 6 as 7, the committed value is r (held M). Using
+SUR-LEGK's crops (no new crop unless needed, then pasted iiif_lines.py command): one blind Sonnet call comparing pos 6 against the sheet's
+7 and r tiles plus two known-answer controls (a settled 7 and a settled r elsewhere on 2039, unlabelled, order shuffled) -- the controls
+must be read right for the target call to count. Apply only if the controls pass and the call is clear; otherwise stays M with the split
+recorded. --check, grade counts, gap line and Verdict; gaps_check. Do not touch the Remarque K/O/&/[J-rev] tokens or 2046.
+
+### COL26-WP (Opus, cap 5, box 80 min, disk first, openapi.bnf.fr <= 6): colbert26-lathuillerie-1644, word-level pairing c20-21 for 42, 11, 6
+NOTES.md Verdict "cheapest next: the word-level pairing on canvas 20-21 for 42, 11, 6, ~$6 (D07-COL26K)". Rule 3 third-attempt check FIRST
+(CLAUDE.md rule 3, last paragraphs): c20-21 has had A4-COLALN (interlinear_align, per-unit gate FAIL) and D07-COL26K (positional known-answer:
+42 underpowered, 11 FAIL); COL26-42 (13 Oct) found 42 = s(ieur) a non-test on held-out units. Write in your section whether a word-level
+pairing is a genuinely different instrument from both (what statistic, what unit) and whether new material enters; if it is the same
+instrument with a changed knob, log "untested-by-this-tool" and stop. If different: PREREG-COL26-WP.md pushed first (statistic, a control
+that can differ from the target on that statistic, a power check on known-answer codes 83 de / 31 que with the held-out code masked, gate);
+run the power check BEFORE scoring 42/11/6 and stop at a non-test. No key.tsv edit unless the gate passes, and then via decode_key.py --try
+(M unless --try's own control passed). Update gap line, Verdict; gaps_check. Report what was found and where it was not found.
+
+### LAG-MARNIX (Sonnet, cap 1.5, box 45 min, huygens <= 20, archive.org <= 15): la-garde-1577, locate Marnix's Aug 1577 cipher alphabet
+LAG-SIB (NOTES.md "## LAG-SIB") found Groen van Prinsterer, Archives ser.1 vol. VI p.129 (letter DCCXLII) naming Marnix's cipher alphabet of
+August 1577. Read that page and its footnotes in the archive.org full text: who sent the alphabet to whom, whether Groen saw it and where
+(KHA/A?? shelfmark), whether any period cipher table of Marnix/La Garde/William of Orange 1576-78 is catalogued (Huygens WVO detail pages for
+the letters around it; the KHA inventory if a public finding aid answers). Also LAG-SIB's two untried routes: a Huygens retroboeken phrase
+search for the correspondent names with "chiffre"/"cijfer", and a grep of the two solver repositories for La Garde/Marnix (clone only to
+grep). Output: a `## LAG-MARNIX` section (holder, shelfmark, digitised y/n, image URL if any, whether it can be the 6179/6467 system and why),
+siblings/known-keys rungs and Verdict updated; gaps_check. No cryptanalysis; if an image of the alphabet is online, fetch it once and stop
+(name the key-test as the next step).
