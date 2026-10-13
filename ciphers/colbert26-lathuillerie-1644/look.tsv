@@ -1,0 +1,16 @@
+# tools/prior_work.py leaf looks, append-only: the newest row per (item, role, folio, canvas, image) is current
+utc	item_id	look_row_id	role	folio	canvas	image	source	status
+2026-10-13 06:55	adhoc-fb1d1c	adhoc-fb1d1c:2-leaf:8ef686	cipher-page	26r			folio arithmetic	owed
+2026-10-13 06:55	adhoc-fb1d1c	adhoc-fb1d1c:2-leaf:8ef686	facing	25v			folio arithmetic	owed
+2026-10-13 06:55	adhoc-fb1d1c	adhoc-fb1d1c:2-leaf:8ef686	before-2	25r			folio arithmetic	owed
+2026-10-13 06:55	adhoc-fb1d1c	adhoc-fb1d1c:2-leaf:8ef686	after-1	26v			folio arithmetic	owed
+2026-10-13 06:55	adhoc-fb1d1c	adhoc-fb1d1c:2-leaf:8ef686	after-2	27r			folio arithmetic	owed
+2026-10-13 06:55	adhoc-fb1d1c	adhoc-fb1d1c:2-leaf:8ef686	after-3	27v			folio arithmetic	owed
+2026-10-13 06:55	adhoc-fb1d1c	adhoc-fb1d1c:2-leaf:8ef686	after-4	28r			folio arithmetic	owed
+2026-10-13 06:57	adhoc-fb1d1c	adhoc-fb1d1c:2-leaf:8ef686	cipher-page	26r			folio arithmetic	answered CLEAR (recorded)
+2026-10-13 06:57	adhoc-fb1d1c	adhoc-fb1d1c:2-leaf:8ef686	facing	25v			folio arithmetic	answered CLEAR (recorded)
+2026-10-13 06:57	adhoc-fb1d1c	adhoc-fb1d1c:2-leaf:8ef686	before-2	25r			folio arithmetic	answered CLEAR (recorded)
+2026-10-13 06:57	adhoc-fb1d1c	adhoc-fb1d1c:2-leaf:8ef686	after-1	26v			folio arithmetic	answered CLEAR (recorded)
+2026-10-13 06:57	adhoc-fb1d1c	adhoc-fb1d1c:2-leaf:8ef686	after-2	27r			folio arithmetic	answered CLEAR (recorded)
+2026-10-13 06:57	adhoc-fb1d1c	adhoc-fb1d1c:2-leaf:8ef686	after-3	27v			folio arithmetic	answered CLEAR (recorded)
+2026-10-13 06:57	adhoc-fb1d1c	adhoc-fb1d1c:2-leaf:8ef686	after-4	28r			folio arithmetic	answered CLEAR (recorded)
