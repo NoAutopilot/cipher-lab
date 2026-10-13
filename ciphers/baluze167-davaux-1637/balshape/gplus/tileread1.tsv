@@ -1,0 +1,9 @@
+tile	same	confidence	note
+X01	no	high	y-form with long looped tail, plus i
+X02	no	high	y with horizontal bar, no t
+X03	yes	high	g with crossed t, matches reference
+X04	yes	high	g and crossed t, slightly smaller
+X05	yes	high	g and crossed t, close match
+X06	yes	high	g and crossed t, slightly more slanted
+X07	yes	high	bold g and crossed t
+X08	no	high	small r-like sign with comma

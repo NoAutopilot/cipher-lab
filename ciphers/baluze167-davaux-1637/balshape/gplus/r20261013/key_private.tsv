@@ -1,0 +1,9 @@
+id	role	where	x	y	true_or_current	proposed
+X01	P-:y+	f229r_L04_exemplar	1444	None	r	g+
+X02	P-:y+	f228v_b_L02_decoy	1713	264	r	g+
+X03	T:g+	v_b_L01	2410	120	n?	g+
+X04	P+:gt	f124r_line_final	1785	170	n	g+
+X05	T:g+	v_b_L05	1426	752	n?	g+
+X06	P+:gt	f124v_after_K	1050	170	n	g+
+X07	T:g+	v_b_L03	385	424	n?	g+
+X08	P-:rshape	f239r_N3	2085	1570	g	g+

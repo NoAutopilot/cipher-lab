@@ -1602,3 +1602,61 @@ H 56, S 39, M 31, I 27, U 1 of 154 after BAL167-GHV, regrade audited by V-GHV (A
 - [ ] image-check: glossed Baluze 170 crops f.233r/f.239r/f.258r on disk (BAL-CROP); f.301r, f.320v-321r (BAL167-GHV); f.64r, f.124r-v (BAL167-GPLUS, glossed g+ found on f.124); g+ verification read run (BAL167-GVER: gloss x rule NOT SETTLED); untried: a key-anchored sequence alignment of the same two reads
 - [x] retry: f.228 re-cut, re-passed, decoded and re-decoded (D1-BAL170, D1-BAL170B, B167-228, SIG-B228, SIG-B228B), grade correction applied (SIG-V228), shape control run (BAL-CROP, BAL-WL, BAL167-GHV)
 Verdict: keep going: 2 internal gaps; cheapest next: a PREREG'd key-anchored sequence settle of the f.124 gt + the tile test (~$2.5); then the volume sweep (~$3); the 168 f.246 step once L71 answers
+
+
+## BAL167-GSEQ (13 Oct 2026, account 2, for LANE DEFAULT-A2-2013), 21:16-21:3x UTC by date -u
+Brief: `.claude/briefs/runs/2026-10-13-ytbiz-default-2013-jobs.md` "BAL167-GSEQ" (key-anchored sequence settle of the f.124 gt, then the
+PREREG-BAL-GPLUS (b) tile test). Rule 3: second instrument on the gt letter (the x rule of PREREG-BAL-GPLUS (a) was the first).
+Prior work (pasted; run after the PREREG push, not before it -- this worker's order slip, recorded): `python3 tools/prior_work.py
+baluze167-davaux-1637 --item-spec 'shelfmark=BnF Baluze 170;folio=228r;date=1640-08-25;sender=Chavigny;recipient=Avaux' --step-type key --offline`
+-> `holds: specific 18 (LEAD 18); generic 2 (UNCHECKED-NET 2)`, exit 4; the 18 LEADs are this folder's own sections (BAL167-GVER named this
+step as next; none ran it). Not `--record`ed (its write to prior-work.tsv reverted). By hand: (1) own work -- not run before; (2) leaf -- the
+f.124 strips and BAL167-GVER's blind reads on disk; (3) solver caches CLEAR (BAL-WL); (4) editions unchanged (UNA3-BAL).
+**PREREG.** PREREG-BAL-GSEQ.md, with balshape/gseq/runs.tsv and settle_gseq.py, pushed alone (4ef9e9bb6) before the script was run.
+**Settle (balshape/gseq/settle.out).** Data: only BAL167-GVER's two blind reads (glossA/B.tsv), each read's own sign labels and gloss word;
+H acute values from key.tsv consumed in order from the anchor, letter-shape signs one letter each (their BAL-WL values not used), gt one
+letter, tolerance 1 mismatched letter per word.
+| token | read A | read B |
+|---|---|---|
+| f.124r gt after 76' ('consentent'/'consistent' A, 'consintent' B) | n | n |
+| f.124r line-final gt ('longues', 43' lo + gt, word continues off strip) | n | n |
+| f.124v gt after K ('conclusion'; A 72', B 42') | n | n |
+**SETTLED: gt = n** (6/6 token-reads). Controls: C1 known answer (each H sign inside the word blanked) 10/10 within tolerance (7/10 exact;
+the three tolerance cases are B's 'si' vs 71' se, A-alt 'consistent' vs 71' se, B's 42' li vs 'si'); C2 shuffled key (1000 permutations
+of the 84 acute H values) false-settle 0/1000, single word-consistent leftover 20/6000 token-reads (0.0033). Limit (stated in the PREREG):
+lengths are fixed by the key and the one-letter rule for letter signs, which this rule does not test.
+**Tile test, PREREG-BAL-GPLUS (b) as written.** `python3 balshape/gplus/tiles_gplus.py 20261013` (centres on the f.124 strips located by
+this worker on gridded copies, location only); one blind Sonnet reader (sheet + E-g+ exemplar, told nothing about arms):
+balshape/gplus/tileread1.tsv, score1.out.
+| Arm | tiles | yes-rate | gate |
+|---|---|---|---|
+| P+ (f.124r line-final gt, f.124v gt) | 2 | 1.000 (both yes/high) | G1 >= 0.75 PASS |
+| P- (crossed y = r f.229 L04 and f.228 decoy; r-shape = g f.239r) | 3 | 0.000 (all no/high) | G2 <= 0.25 and <= P+ - 0.50 PASS |
+| T (f.228v g+ b_L01, b_L03, b_L05) | 3 | 3/3 yes/high | all confirmed |
+No second read (gates passed on read 1). Adoption per PREREG (settled value n = the f.228 value): 3 rows appended to
+balshape/ghv/exceptions_b170f228.tsv (v b_L01 pos 14, b_L03 pos 1, b_L05 pos 9; positions checked against d1bal170b/rec_f228v
+ciphertext_draft.tsv s:g+ rows), g+ M -> S. `python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check` ->
+`ciphertext_b170f228.txt: tokens 154: H 56, I 27, M 28, S 42, U 1` / `reading up to date`. Values unchanged (diff = grade column only), so
+the fr17 judge was not re-run. H/S on f.228 now 98/154 (63.6%); depth not changed here (a verifier's call, rule 4a); AUDIT.md not touched.
+Limits: arms are small (P+ 2, P- 3; one tile moves a rate by 0.33-0.5); a single tile read; the exemplar and both P+ tiles are from one
+letter (f.124), the T tiles from f.228. Network: none. Subagents: 1 Sonnet (tile read).
+
+## Remaining gaps (BAL167-GSEQ, 13 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 170 f.229r-v: N3, D2 (AUD1-B167). 170 f.228r-v: N3, D2 at about 56% (V-BAL167);
+H 56, S 42, M 28, I 27, U 1 of 154 after BAL167-GSEQ (g+ 3 M -> S, values unchanged). 168 f.246-247v: transcribed by two blind passes
+(err_2reader 0.280), letter signs unlabelled.
+- 168 f.246-247v bare passage - blocker: waiting-on LOCAL-QUEUE L71 (owner's browser: does the Papiers de Richelieu item print the cipher passage in clear); next if it does: align the printed text to the two-pass transcription with tools/interlinear_align.py (known plaintext for the f.247 hand), ~$3; if not: the f.247-hand glossed-text search (survey.tsv's d'Avaux-side leaves), ~$3
+- 170 f.228r-v BAL167-GSEQ g+ regrade re-audit - blocker: not-attempted; the regrade is a solver result (rule 4a); next: a verifier re-checks PREREG-BAL-GSEQ, settle.out, score1.out and the 3 exception rows and sets depth from the new grades, ~$3
+- 170 f.228-229 novelty (N3 -> N4) - blocker: waiting-on LOCAL-QUEUE L71 and SO-BAL170-F228 (SECOND-OPINIONS-QUEUE.tsv); the edition's notes are snippet-only from the cloud and a second opinion is owed before N4
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census (N9-BAL found unlisted f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (13 Oct 2026, BAL167-GSEQ)
+- [x] siblings: davaux-1633 and DECODE records 2756-2762 checked (Siblings section above)
+- [x] clear-pages: leaf survey done; 170 f.230r is the clear close of the f.228 letter (D1-BAL170)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.229 letter values carried to f.228
+- [ ] print: Avenel, Négociations secrètes, Guébriant, Bougeant, Mercure, Siri, IA, Google Books (UNA3-BAL), OpenAlex, CrossRef done; untried: the Papiers de Richelieu 1636-1642 volume by page (L71)
+- [x] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); shape control with a same-key wrong-label negative PASSED (BAL-WL, 31 M -> S); hook/v PASSED on read 2 (BAL167-GHV, 8 M -> S; audited V-GHV, AUDIT 5); g+ gloss letter settled by key-anchored sequence and tile test PASSED (BAL167-GSEQ, 3 M -> S)
+- [x] image-check: glossed Baluze 170 crops f.233r/f.239r/f.258r on disk (BAL-CROP); f.301r, f.320v-321r (BAL167-GHV); f.64r, f.124r-v (BAL167-GPLUS); f.124 gt letter settled and g+ tiles confirmed (BAL167-GSEQ)
+- [x] retry: f.228 re-cut, re-passed, decoded and re-decoded (D1-BAL170, D1-BAL170B, B167-228, SIG-B228, SIG-B228B), grade correction applied (SIG-V228), shape control run (BAL-CROP, BAL-WL, BAL167-GHV, BAL167-GSEQ)
+Verdict: keep going: 2 internal gaps; cheapest next: a verifier re-audit of the BAL167-GSEQ g+ regrade (~$3); the volume sweep (~$3, Baluze 170 under way as BAL170-SWEEP); the 168 f.246 step once L71 answers

@@ -23,3 +23,9 @@ The BAL-WL "no" on hook/v is read as allograph (wrong exemplar), not value: both
 | class | value | step | result | status |
 |---|---|---|---|---|
 | g+ ("gt") | n (Tomokiyo block, SIG-B228) | (a) two blind gloss reads of the f.124r/v strips, x-position settle rule | NOT SETTLED: reads disagree on 2 of 3 tokens (t+a vs a; e+l vs de); word-level agreement only | stays M; no tile read; lead (untested): key-anchored sequence gives gt = n in 'consentent' and 'conclusion' |
+
+## BAL167-GSEQ (13 Oct 2026, LANE DEFAULT-A2-2013, account 2): f.124 gt gloss letter by key-anchored sequence (PREREG-BAL-GSEQ.md), then PREREG-BAL-GPLUS (b)
+| class | value | step | control | target | status |
+|---|---|---|---|---|---|
+| g+ ("gt") | n | sequence settle on BAL167-GVER's two blind reads (3 tokens x 2 reads) | KA 10/10; shuffled key false-settle 0/1000 | 6/6 token-reads n: SETTLED | settled |
+| g+ ("gt") | n | tile test, E-g+ f.124r exemplar | P+ 1.000 (2/2), P- 0.000 (0/3, crossed y = r x2, r-shape = g) | T 3/3 yes/high | 3 f.228 tokens M -> S |

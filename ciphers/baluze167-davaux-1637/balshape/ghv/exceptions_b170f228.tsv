@@ -38,3 +38,6 @@ b170f228v	b_L03	8	s	S	BAL167-GHV: class hook CONFIRMED (PREREG-BAL-GHV, read 2 G
 b170f228v	b_L04	8	s	S	BAL167-GHV: class hook CONFIRMED (PREREG-BAL-GHV, read 2 G1 1.000 G2 0.000, score2.out)
 b170f228v	b_L05	2	s	S	BAL167-GHV: class hook CONFIRMED (PREREG-BAL-GHV, read 2 G1 1.000 G2 0.000, score2.out)
 b170f228v	b_L07	3	s	S	BAL167-GHV: class hook CONFIRMED (PREREG-BAL-GHV, read 2 G1 1.000 G2 0.000, score2.out)
+b170f228v	b_L01	14	n	S	BAL167-GSEQ: class g+ CONFIRMED (PREREG-BAL-GSEQ settled gt = n 6/6, KA 10/10, shuffled-key 0/1000; PREREG-BAL-GPLUS (b) G1 1.000 G2 0.000, T 3/3, balshape/gplus/score1.out)
+b170f228v	b_L03	1	n	S	BAL167-GSEQ: class g+ CONFIRMED (PREREG-BAL-GSEQ settled gt = n 6/6, KA 10/10, shuffled-key 0/1000; PREREG-BAL-GPLUS (b) G1 1.000 G2 0.000, T 3/3, balshape/gplus/score1.out)
+b170f228v	b_L05	9	n	S	BAL167-GSEQ: class g+ CONFIRMED (PREREG-BAL-GSEQ settled gt = n 6/6, KA 10/10, shuffled-key 0/1000; PREREG-BAL-GPLUS (b) G1 1.000 G2 0.000, T 3/3, balshape/gplus/score1.out)

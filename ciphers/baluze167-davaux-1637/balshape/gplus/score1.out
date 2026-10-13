@@ -1,0 +1,5 @@
+P+ [('X04', 'f124r_line_final', 'yes', 'high'), ('X06', 'f124v_after_K', 'yes', 'high')]
+P- [('X01', 'f229r_L04_exemplar', 'no', 'high'), ('X02', 'f228v_b_L02_decoy', 'no', 'high'), ('X08', 'f239r_N3', 'no', 'high')]
+T [('X03', 'v_b_L01', 'yes', 'high'), ('X05', 'v_b_L05', 'yes', 'high'), ('X07', 'v_b_L03', 'yes', 'high')]
+P+ yes-rate 1.000 G1 (>=0.75) PASS; P- yes-rate 0.000 G2 (<=0.25 and <=P+-0.50) PASS
+T confirmed 3/3

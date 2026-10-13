@@ -65,7 +65,7 @@ b_L01	10	14'		cu	H
 b_L01	11	40'		la	H
 b_L01	12	L:l?	?	l	S
 b_L01	13	L:a?	?	a	S
-b_L01	14	L:n?	?	n	M
+b_L01	14	L:n?	?	n	S
 b_L02	0	L:g?	?	g	M
 b_L02	1	65'		ra	H
 b_L02	2	81'		ve	H
@@ -87,7 +87,7 @@ b_L02	17	13		sued|co	M
 b_L02	18	L:m?	?	m	M
 b_L02	19	48'		mo	H
 b_L03	0	16		de	I
-b_L03	1	L:n?	?	n	M
+b_L03	1	L:n?	?	n	S
 b_L03	2	L:t?	?	t	M
 b_L03	3	86'?	?	avec	M
 b_L03	4	10:		les	H
@@ -129,7 +129,7 @@ b_L05	5	14'		cu	H
 b_L05	6	40'		la	H
 b_L05	7	L:l?	?	l	S
 b_L05	8	L:a?	?	a	S
-b_L05	9	L:n?	?	n	M
+b_L05	9	L:n?	?	n	S
 b_L05	10	L:g?	?	g	M
 b_L05	11	65'		ra	H
 b_L05	12	81'		ve	H

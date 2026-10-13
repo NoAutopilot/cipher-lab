@@ -1,0 +1,20 @@
+TARGET (gt as 1-letter unknown):
+  read A c131_gt1: ['n']
+  read B c131_gt1: ['n']
+  read A c131_gt2: ['n']
+  read B c131_gt2: ['n']
+  read A c132_gt: ['n']
+  read B c132_gt: ['n']
+  SETTLED=True value=n
+  KA read A c131_gt1 word consentent: blank 71' (H se) -> se
+  KA read A c131_gt1 word consentent: blank 76' (H te) -> te
+  KA read A c131_gt1 word consistent: blank 71' (H se) -> si
+  KA read A c131_gt1 word consistent: blank 76' (H te) -> te
+  KA read B c131_gt1 word consintent: blank 71' (H se) -> si
+  KA read B c131_gt1 word consintent: blank 76' (H te) -> te
+  KA read A c132_gt word conclusion: blank 44' (H lu) -> lu
+  KA read A c132_gt word conclusion: blank 72' (H si) -> si
+  KA read B c132_gt word conclusion: blank 44' (H lu) -> lu
+  KA read B c132_gt word conclusion: blank 42' (H li) -> si
+KNOWN-ANSWER recovery: 10/10 = 1.000
+SHUFFLED-KEY (1000 permutations of 84 acute H values, seed 20261013): false-settle 0/1000 = 0.0000; token-reads with a single word-consistent leftover 20/6000 = 0.0033
