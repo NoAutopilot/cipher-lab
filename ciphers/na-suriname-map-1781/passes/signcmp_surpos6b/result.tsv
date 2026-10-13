@@ -1,0 +1,12 @@
+item	tile	truth	reader_group	reader_conf	closest	scored
+panel	A	r (l3)	1	H(split)	-	1 = 7-majority group: wrong
+panel	B	r (n2)	2	H(split)	-	right
+panel	C	7 (e6)	1	H(split)	-	right
+panel	D	7 (o2)	1	H(split)	-	right
+panel	E	7 (n6)	2	H(split)	-	2 = r-majority group: wrong
+panel	F	r (f16)	2	H(split)	-	right
+panel	G	7 (m11)	1	H(split)	-	right
+panel	H	r (p25)	2	H(split)	-	right
+query	Q1	7 (control r9)	1	M	E	right
+query	Q2	r (control p30)	1	H	C	WRONG
+query	Q3	target k6	1	H	D	uncounted (gate FAIL)
