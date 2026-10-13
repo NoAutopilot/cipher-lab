@@ -11168,5 +11168,15 @@
    "note": "f.298v plain lines then cipher | f.299r cipher: ink 100 (23 Dec 1572) cipher; ink 101 head lies after f.299 (c322-c324), not viewed",
    "fetched": "2026-10-13 VIV-HEADS"
   }
+ ],
+ "viv101": [
+  {
+   "canvas": 322,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f322/full/1600,/0/default.jpg",
+   "file": "images/pdech/ov_c322_1600.jpg",
+   "size": "1600 px wide, 319430 bytes",
+   "note": "f.299v ink 100 cipher ends, plain postscript 'Sire, depuis ma lettre escripte le Seigneur Cayas ...', close 'de Madrid ... decembre 1572', signed De Vivonne | f.300r HEAD of ink 101: docket '24 decemb. 1572', 'dechiffre de la precedente', ink 101 beside stamped 300",
+   "fetched": "2026-10-13 VIV-101"
+  }
  ]
 }
