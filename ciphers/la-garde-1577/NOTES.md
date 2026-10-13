@@ -2148,3 +2148,63 @@ Read so far: 0 of 229 base-code / 239 marks-kept tokens graded H/C/S (no reading
 - [x] image-check: WC-LAGARDE settled 9 cells; LAG-MARKS settled 41 of 57 at 150 dpi; LAG-HIRES settled 10 of the remaining 14 on 6179 at ~288 ppi (WVO PDF); 6 left need the original
 - [x] retry: syllabary re-scored on the revised spec (negative holds, <= 0.107); wordcode err-only retries [retired], instrument tools/families/wordcode.py via family_run.py; measured error 0.084-0.107 does not fall below wordcode's 0.071 crossover, so no re-test is named
 Verdict: keep going: 0 internal gaps; cheapest next: the open siblings step (a same-system pooling sweep for more ciphertext); the six doubt cells wait on the KHA original (needs-physical-access)
+
+## LAG-SIB (13 Oct 2026, account 1, LANE DEFAULT-A1-1840, Sonnet, no subagents, no transcription, no cryptanalysis)
+Job: a same-system sibling sweep for pooling, on routes NOT in ZX2-LAG / ZX2-LAG2 / OX-LAG / LAG-MARKS (those searched: the WVO `cijfer`/`chiffre`
+opmerkingen harvest of 24 Sept and its 1576-1579 live re-run, La Garde / de la Garde / Lagarde / Schoonhoven correspondent and place queries, Groen VI pp.
+249-251, GSME/LMSAC, Gachard t.5 p.423 calendar). Prior-work (tools/prior_work.py, lookup, exit 4 on its own claim line only, recorded CLEAR; the
+tomokiyo/solver/edition rows stay UNCHECKED-by-tool and are answered by hand below).
+
+**Routes searched, 13 Oct 2026 (route, query, result)**
+1. WVO correspondent Marnix, 1577 (`af_naam_vol=Marnix`, jaar 1577): 5 letters, 6467 (the pooled one), 6557 (to Marnix, 28 Aug 1577), 6468 (6 Nov),
+   9581 (to Marnix, 9 Nov), 10255 (9 Nov). Detail pages read: opmerkingen "geen"/edition-only on 6468, 9581, 10255, 6557; none states a cipher.
+2. WVO opmerkingen `geheim` (substring; the 24 Sept harvest used only cijfer/chiffre/onopgelost/oplossing), 1575-1579: 8 records. 1810 and 5034 are
+   cipher records the harvest did not carry (both 1575, below); 6237 is the known Junius 1576 leaf; 262, 289, 258, 12477, 7803 are Geheimes Staatsarchiv /
+   Geheime Raad name hits, no cipher. 1576-1579 adds no cipher record beyond the 15 already on file.
+3. WVO opmerkingen `geheimschrift` 1574-75 and 1580-82: 1810, 5034 only; `cifre` 1575-79: 0 hits; `cijfer` 1577-78: 5564, 6467, 6179 (all on file);
+   `cijfer` 1574-75: the Lodewijk/Jan van Nassau letters (other targets) plus 6131; `cijfer` 1580-82: 378 (Staten van Utrecht, Aug 1580) and 10260 (below).
+4. Groen van Prinsterer, Archives ser. 1 (IA djvu `archivesoucorre01housgoog` = tome VI, 1839; also 02, 03, 04unk, 04, 05, 07, 08 housgoog grepped for
+   chiffr/cifr/La Garde): tome VI has four cipher mentions. **Lettre DCCXLII, p.128-129 (Aug 1577, Grobbendonck to the commis des finances)**: "Je vous
+   envoye l'alphabet du cifre que Mons.r de S.t Aldegonde exhibe aux Estatz, je le pourroy confronter avecq celuy de son Alt." plus the Estates'
+   decipherment of D. Juan's intercepted letters (note on p.128: Burman, Bor 888b). This is a lead to Marnix's own cipher alphabet (the 6467 system's sender)
+   existing outside our folder in Aug 1577; the alphabet is not printed there. Not in ZX2-LAG2's WVO sweep (no WVO record found for DCCXLII by
+   Grobbendonk/Grobbendonc/Croy 1577 queries; not confirmed absent). p.250 footnote ("lacunes occasionnées par des passages chiffrés") is the known DCCLXXXIX.
+   Tome VI has no other "La Garde" letter than the target; IA text for tome V (`archivesoucorre05housgoog`, 1835) has no cipher mention of the period.
+5. Gachard, Correspondance de Guillaume le Taciturne (IA djvu t.4, t.5, t.6; t.5 first fetch 500, one retry after 60 s worked): t.5 La Garde hits are
+   the known 28 Nov 1577 calendar line (VI 248) and two Bergues items (Orange to the Estates of Brabant, a La Garde letter on the Bergues fortifications,
+   no cipher stated); "chiffr" in t.5 is only the word "chiffre" = number; t.4 none; t.6 (1584) "en cifra" and "en partie chiffré" are Spanish/other-date letters.
+   be-api fts `chiffre` on t.5: 1 snippet (p.556, a number). Page locators from be-api are not real (CLAUDE.md), so no page cited from it.
+6. DECODE: the 24 Sept login-free listing on disk (sources/decode/records-*-2026-09-24.tsv, 1187 + 1361 rows) read for 1575-1579 outside Paris, Kew, Vatican,
+   London: no Orange-circle, La Garde, Marnix or Schoonhoven record. No live re-crawl (the disk list is the log; listing newer than 24 Sept not read).
+7. Not reached: Huygens retroboeken editions (not searched this pass: a name-by-name phrase search there needs the accessor ids, left for a next pass);
+   Groen ser. 1 vol. V/VI page images; Gerlo-De Smet, Marnixi Epistulae II (lending/print, not on a free route); the two solver repositories (prior_work
+   check 3 UNCHECKED-NET, not cloned this pass).
+
+**Candidates (appended to siblings.tsv)**
+| WVO / ref | date | sender -> recipient | holder | cipher stated | image online | same system as 6179/6467? |
+|---|---|---|---|---|---|---|
+| 1810 | 8 Jan 1575 | Orange -> Lumbres (Middelburg) | KHAG A 11/XIV I/11 f.1v-2r nr.5, secretary copy | yes, "enige woorden in geheimschrift" | WVO PDF, 2pp, 60 ppi overview | **no**: a short run of undotted numbers on the second page ("...5t 60 73 32 121 ti 55 124 76 65...") with values to about 124 and letters between, a different stock from 1-24 dot-separated; not decoded |
+| 5034 | 21 May 1575 | Orange -> Jan van Nassau (Dordrecht) | KHAG A 11/III 8 | yes, duplicate letter with the cipher passages resolved | WVO PDF, not opened | no (Jan van Nassau house cipher family, 5227/5228/5564); a resolved duplicate is a possible clear-under-code witness for that family, not for La Garde |
+| 10260 | 17 Dec 1580 | Marnix -> Orange (Courtrai) | Utrechts Archief Staten van Utrecht 704-1 pp.343-350 (copy), 8pp | WVO says "not stated" | WVO PDF, 8pp opened at 40 ppi | no cipher visible at overview: clear French prose on every page; the same sender as 6467 but 3 years later |
+| 378 | Aug 1580 | Staten van Utrecht | not opened | cijfer in opmerkingen | not opened | not assessed (outside 1577, other sender) |
+| Groen VI DCCXLII | Aug 1577 | Grobbendonck -> commis des finances | printed, p.128-129 | refers to Marnix's cipher alphabet | no WVO record found | key lead, not a ciphertext sibling |
+Pooling result: 0 same-system siblings; pooled N unchanged at 229 base-code / 239 marks-kept tokens.
+
+Requests (all one at a time, >= 2 s apart, descriptive User-Agent): resources.huygens.knaw.nl 25 (12 search or listing queries, 13 letter pages or PDFs); archive.org 15
+(1 advancedsearch, 12 djvu text downloads incl. the one retry, 1 be-api fts, plus 1 repeated fetch counted above); no other host; gallica 0.
+
+## Remaining gaps (LAG-SIB, 13 Oct 2026)
+Read so far: 0 of 229 base-code / 239 marks-kept tokens graded H/C/S (unchanged)
+- same-system pooling for N - blocker: no-key-material; every route with a free full text or image in WVO, Groen VI, Gachard t.4-6 and the DECODE disk list gives 0 same-system letters (LAG-SIB); retroboeken phrase search and the solver repositories stay unsearched, small and cheap
+- Marnix's cipher alphabet of Aug 1577 (Groen VI p.129, DCCXLII) - blocker: not-attempted; Groen names the alphabet but does not print it, nobody here has looked for it; next: search the Staten-Generaal and Marnix holdings catalogues for a cipher alphabet of 1577, ~$1.5
+- six doubt cells (LAG-HIRES) - blocker: needs-physical-access; the six cells stay unseparable on the best public scan (LAG-HIRES), the KHA original is the route
+
+## Escalation (LAG-SIB, 13 Oct 2026)
+- [x] siblings: WVO (geheim/geheimschrift/cifre/cijfer, Marnix 1577), Groen VI and ser. 1 text, Gachard t.4-6 and the DECODE disk list swept in LAG-SIB, no same-system letter; retroboeken phrase search and the two solver repositories not yet run
+- [n/a] clear-pages: no clear page of this cipher identified; margin words placed in A2-LAG
+- [ ] known-keys: Marnix's cipher alphabet shown to the Estates in Aug 1577 (Groen VI p.129) is a period key lead for the 6467 sender; locating it is untried
+- [x] print: Groen VI pp.249-251 omits the cipher; Groen VI p.129 names an alphabet; Gachard t.5 calendar and t.4-6 read; GSME/LMSAC read in OX-LAG
+- [n/a] key-rebuild: needs a family whose verdict statistic passes on its control decodes first
+- [x] image-check: LAG-HIRES settled 10 of 14 at ~288 ppi; 6 doubt cells need the original (needs-physical-access)
+- [x] retry: syllabary and wordcode retries exhausted or [retired] (LAG-HIRES)
+Verdict: keep going: 1 internal gap; cheapest next: search for Marnix's cipher alphabet of Aug 1577 (Groen VI p.129), a period-key lead, ~$1.5; siblings sweep done on WVO, Groen, Gachard and DECODE routes (0 same-system); the six doubt cells wait on the KHA original (needs-physical-access)
