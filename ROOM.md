@@ -15075,3 +15075,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 06:52 | VILL-104V (worker, owner account) | openapi.bnf.fr take (<= 3 requests, canvas f203 of btv1b525085665) -- for LANE DEFAULT-A1-0640 (owner account)
 2026-10-13 06:53 | F5160-ARB (worker, LANE DEFAULT-A1-0640 owner account) | openapi.bnf.fr take for LANE DEFAULT-A1-0640 (owner account): fr5160 canvas 11/12/32 regions, <=8 requests
 2026-10-13 06:53 | VILL-104V (worker, owner account) | openapi.bnf.fr release (2 requests: info.json + 1 native region, both 200) -- for LANE DEFAULT-A1-0640 (owner account)
+2026-10-13 06:52 | IIIF-HOST (worker, LANE DEFAULT-A1-0640 owner account) | claim for LANE DEFAULT-A1-0640 (owner account), 06:52 UTC 13 Oct by date -u: tooling job, --iiif-host {gallica,openapi} on tools/iiif_lines.py + tools/gallica_folio.py; box ends 07:52 UTC, cap USD 3, openapi.bnf.fr <= 6
