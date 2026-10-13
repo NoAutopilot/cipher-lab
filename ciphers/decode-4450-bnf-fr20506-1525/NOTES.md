@@ -661,6 +661,7 @@ ASV Vercelli, Fondo Arborio di Gattinara, asking whether the chancellor's papers
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
 - Action that depends on nobody: the optional f.2/f.4 initial-letter test this folder names as its cheaper desk-side option (~$3); the Vercelli (Fondo Arborio di Gattinara) inquiry stays owner-side outreach.
+- 13 Oct 2026 (DEC4450-INIT): that test ran and FAILed with a passing control (section below); no desk-side action remains. The Vercelli inquiry stays owner-side.
 
 ## D2-DEC2 -- the 15 unopened Decrypted DECODE siblings in fr.20506 (account 2 worker for LANE DEFAULT-account-2-20261008-0710, 8 Oct 2026, 07:40-07:5x UTC by date -u)
 
@@ -687,17 +688,69 @@ at each sibling's cipher page (the fetched P1 faces carried none).
 Grades: no token read. Requests: de-crypt.org 27 for the whole job (login 2, RecordsView 15, images 10 including the two siena images),
 1.7 s apart, no challenge.
 
-## Remaining gaps (D2-DEC2, 8 Oct 2026; replaces the loose-ends block)
-Read so far: 0% (no token read; no key)
-- the Ranzo/Garbino code table for f.136 (749 tokens) - blocker: no-key-material; the 18 fr.20506 siblings are other systems (D2-DEC2), Bourdeau's addition sheet (fr.3022 f.50) is a fragment; the ASV Vercelli, Fondo Arborio di Gattinara inquiry is owner-side outreach
-- the f.2/f.4 initial-letter test (indirect route to the code) - blocker: not-attempted; named by the 4 Oct key-material search, never briefed; next: transcribe fr.2988 f.4r-6r and test f.2's base letters against the French initials with a shuffled-pairing control, ~$3
+## DEC4450-INIT -- the f.2/f.4 initial-letter test (account 4 worker for LANE DEFAULT-A4-2135, 13 Oct 2026, 22:10-22:5x UTC by date -u)
 
-## Escalation (D2-DEC2, 8 Oct 2026)
+Brief `.claude/briefs/runs/2026-10-13-acct4-default-2135-jobs.md` job DEC4450-INIT. Status unchanged: `open`.
+**Result: FAIL with a passing control. Raince's clear French on fr.2988 f.4r-6r does not track the base letters of Ranzo's
+f.2r-v as a word-for-word plain text under a literal initial-letter code** (S = 12, p = 0.81 against 2,000 shuffled
+pairings; positive-control power 1.00 at the measured 6.4% reading error and 10% word insertion/deletion).
+
+Prior work (before the first priced step): `tools/prior_work.py decode-4450-bnf-fr20506-1525 --item-spec 'shelfmark=BnF
+fr.2988;folio=4r;date=1526-12-15;sender=Raince;language=fr;kind=clear' --step-type transcribe` -> exit 2 (plaintext KNOWN,
+no consumer; step LEAD = FT4's own suggestion, not a run). Hand checks: (1) own work: no transcription of f.4-6 in the repo
+(grep "f.4r", "Raince" over ciphers/; FT4 only looked at the views); (2) the leaf: f.4-6 is itself the clear text, no gloss on
+f.2; (3) holder/solvers: Tomokiyo `misplaced.htm` (f.1 is a separate, simpler cipher letter he deciphered; f.2 and f.9 are
+Ranzo's; "F.4-6 ... a letter of Nicolas Raince, dated Rome, 25 December 1526" -- the page itself reads "xv^me", 15 Dec);
+`francis.htm` puts Raince's own May-Dec 1526 cipher letters in fr.2984 under a different, reconstructed cipher; Bourdeau's
+vasto1527 notes never mention f.4 (FT4); (4) editions: none of f.4-6 located on disk (unchecked beyond that). Check 5 does
+not apply (nothing decoded).
+
+Step 0 (5 overviews at 600 px, views 9-13): f.2r-v = **824 groups** (Bourdeau `ranzo_c006/007`, header lines excluded).
+f.4r-6r = about 106 text lines (24 / 24 / ~23 / 24 / 11; `tools/iiif_lines.py` on each overview plus eye count) x about 12
+words a line (12 lines each of f.4r and f.5r counted at 2x zoom: 12.4 and 11.7) = **about 1,270 words** (1,110-1,430).
+Ratio 0.65 (0.58-0.74): inside the brief's 0.6-1.6 band at the point estimate, so the test ran. The letter ends "comme je
+croy monsr ... le conte. De Romme le xv^me iour de decembre 1526", with no signature on the page.
+
+Test (PREREG `PREREG-DEC4450-INIT.md`, pushed f30aed250 before transcription; addendum af6c3613b before scoring):
+- Segments: `open` = f.4r lines 1-4 (56 words; registered as 5 lines, but the line cutter's first band was the blank space
+  above line 1 and line 5 lay outside the fetched region -- logged in the addendum before scoring); `close` = f.6r body
+  lines 3-7 (53 words), with the dateline dropped. Two blind Sonnet passes on 10 line crops (`f2f4/passA.tsv`,
+  `passB.tsv`): 7 of 109 initials differ = **6.4%** (`measured_error.json`). Reconciled from pass A with 5 initials settled
+  on the crops (`initials.tsv`). Both readers misread the dateline "De Romme le xv" as "Et sommer le ..".
+- Statistic: Smith-Waterman alignment of the initials against the first and last 150 f.2 group letters (u/v, i/j folded).
+  Null: the f.2 letter order permuted (this null can differ from the target, since S depends on order).
+- `python3 ciphers/decode-4450-bnf-fr20506-1525/f2f4/score_f2f4.py` (`--check` exit 0 against `f2f4/result.json`):
+
+| quantity | value |
+|---|---|
+| S target (open + close) | 12 |
+| p (2,000 shuffles) | 0.806 |
+| positive control power (100 replicates, p < 0.01) | 1.00 |
+| diagnostic: best alignment of each segment anywhere in f.2 | 7 and 7 (null level) |
+| verdict | **FAIL** (control passed) |
+
+Scope: this excludes f.4-6 being a **word-for-word French** plain text of f.2 under an initial-letter code whose letter is
+the French word's initial. It does not test a translation (an Italian code text with a French double), a paraphrase, or a
+code whose letter is not the plain word's initial. Together with the language and voice argument (FT4) and Tomokiyo's
+placement of Raince's own Dec 1526 cipher letters in fr.2984, the f.2/f.4 pairing is set aside.
+Grades: no cipher token read (0 H/C/S). Images: none committed; `images/manifest.json` (7 entries dated 13 October 2026,
+sha1) and `f2f4/regen_f2f4.sh` re-derive every image and crop. Requests: openapi.bnf.fr 10 (9 x 200, one HTTP 500 on a pixel
+region retried once after 60 s -> 200), >= 3.2 s apart. Vision: 2 Sonnet calls (passes A and B) + my own reconciliation
+on the crops.
+Suggestion only (not run): the "Double de lettres escriptes en chiffre par Nicolas Raince" on f.4-6 (Rome, 15 Dec 1526)
+may be the clear copy of a Raince cipher letter of the same date in fr.2984 (Tomokiyo's reconstructed key). That is a
+check on fr.2984, not on this target.
+
+## Remaining gaps (DEC4450-INIT, 13 Oct 2026; replaces the D2-DEC2 block)
+Read so far: 0% (no token read; no key)
+- the Ranzo/Garbino code table for f.136 (749 tokens) - blocker: no-key-material; the 18 fr.20506 siblings are other systems (D2-DEC2), Bourdeau's addition sheet (fr.3022 f.50) is a fragment, and the fr.2988 f.4-6 clear French is not f.2's plain text (DEC4450-INIT FAIL, control power 1.00); the ASV Vercelli, Fondo Arborio di Gattinara inquiry is owner-side outreach
+
+## Escalation (DEC4450-INIT, 13 Oct 2026)
 - [x] siblings: all 18 Decrypted DECODE siblings in fr.20506 are French-side or Marian graphic-sign ciphers, none shares Ranzo's letter+number code (D2-DEC2; GF4-BATCH3 for 3)
-- [x] clear-pages: f.135 and f.138v blank, no slip or clear copy (ZX2-GAL2, GF4-BATCH3 (c)); fr.2988 f.4 is Raince's clear French, not Ranzo's (section above)
+- [x] clear-pages: f.135 and f.138v blank, no slip or clear copy (ZX2-GAL2, GF4-BATCH3 (c)); fr.2988 f.4 is Raince's clear French, not Ranzo's (FT4)
 - [x] known-keys: Bourdeau's addition sheet from fr.3022 f.50 (`additione.json`) is the only period key material located; a fragment, not a table
 - [x] print: CSP Spain III, Desjardins vol. 2, Molini vol. 2, Google Books queries -- no decipherment or paraphrase (sections above)
-- [ ] key-rebuild: the f.2/f.4 initial-letter test with a shuffled-pairing control, never run; ~$3
+- [x] key-rebuild: f.2/f.4 initial-letter test run (DEC4450-INIT, 13 Oct 2026): FAIL, S 12, p 0.81, positive control power 1.00 at 6.4% error; no other clear text paired with a Ranzo letter is known
 - [x] image-check: Gallica native images of f.136r-v and fr.2988 f.9 on disk (D2); D2 transcription done from them
 - [n/a] retry: no earlier step failed for an access reason
-Verdict: keep going: 1 internal gaps; cheapest next: f.2/f.4 initial-letter test with a shuffled-pairing control, ~$3
+Verdict: parked: every gap has an outside blocker

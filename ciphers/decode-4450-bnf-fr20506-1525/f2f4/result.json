@@ -1,0 +1,15 @@
+{
+ "S": 12,
+ "close_len": 53,
+ "ctrl_err": 0.0642,
+ "ctrl_power": 1.0,
+ "diag_best_close_all": 7,
+ "diag_best_open_all": 7,
+ "f2_groups": 824,
+ "indel": 0.1,
+ "n_null": 2000,
+ "open_len": 56,
+ "p": 0.8061,
+ "verdict": "FAIL",
+ "win": 150
+}
