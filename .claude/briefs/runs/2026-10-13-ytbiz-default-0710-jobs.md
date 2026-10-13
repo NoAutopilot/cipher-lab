@@ -121,3 +121,17 @@ f.200 first (canvas from the folio offset BAL103-189 used), one native region, 2
 before alignment (the per-sign table test and the 9 counts pooled with f.171r + f.189r, decision rule stated in advance, including what N
 makes the split test a real test). f.230 only if f.200 leaves room under 80% of cap and box and the pooled N is still below that bar.
 No key edit unless the pre-registered gate licenses it. Units: per leaf 1 fetch+crop, 2 pass calls, 1 reconciliation+alignment.
+
+## Wave 4 (07:5x UTC 13 Oct)
+
+### SYL-31 (Opus, cap 6, box 100 min, openapi.bnf.fr <= 10): fr15575-syllabic-1592-95, key no.31 (fr.3995 f.62r, canvas f126) and the f.2 range check
+SYL-NOM (13 Oct) found f.2's 3-digit block outside the no.54 nomenclator but sharing 704/708 with the no.31 z row (NOTES.md Remaining gaps
+"key no.31 and the no.54 mark legend", Verdict). Same method as SYL-NOM (read its section and reuse build_nomenclator.py and its regen
+script): canvas f126 info.json, one native region of the no.31 grid + letter signs + legend, band crops with iiif_lines.py (paste command
+and output; check the overlay), two blind passes, one reconciliation, `key_no31.tsv` (code, value, conf, pass A, pass B, settled-by; H where
+both passes and the image agree, M otherwise) with a `--check` builder. Then the count-level check: how many of f.2's 319 3-digit tokens
+(142 distinct) fall on a no.31 code, against a matched null (the same count of codes drawn at random from the 100-999 range in no.31's own
+layout -- state it in PREREG-SYL-31.md pushed before counting). No decode or reading in this job; if the overlap clears the null, name the
+pre-registered decode test as the next step with its price. Folder is at 29.7 MB: commit no crops (regen script + manifest only), keep the
+folder under 30 MB, run file_shrink_guard. The no.54 mark legend (~1.5) only if room remains under 80% of cap and box.
+Units: 1 fetch+crop, 2 pass calls, 1 reconciliation, 1 count/null at ~1.5 each.
