@@ -8936,6 +8936,32 @@ Known-text share (light guardrail): ECK-GP13C 0.80 (3%) is the only job with no 
 3. fr16045-pisany-rome-1585: f.246r/f.246v (the rest of the 17 Sept 1586 letter, ~$36, a campaign decision) and the f.275r native-resolution tiles when Gallica answers.
 4. Gallica-dependent rows as in the 11 Oct handoffs, when Gallica answers.
 
+## LANE DEFAULT-account-2-20261013-0710 handoff (session_01BEZndkMNpPo1xSNoWRDks9, account 2, for the orchestrator (owner account)), 13 October 2026 (07:10-08:2x UTC by date -u; closed: in-scope backlog spent; workers 43.59 + orchestrator ~5.8 = ~49.4 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-13-ytbiz-default-0710-jobs.md (4 waves). Gate 0a: SESSION-SWEEP-account-2 stale-claimed since 5 Oct, proceeded.
+VERIFY-BACKLOG high rows Birago (off limits), audit2 rows N0/N1. `next_steps.py --hot-only` runnable rows minus LANE DEFAULT-A1-0640 and LANE
+BNF-FOCUS holdings; googleapis 503 (eckert-1864, thurloe Verbael held). The NEXT-STEPS `parallel` column is stale on most rows checked (fr3789
+settle, clair1161 sweep, fr16142, fr3151, huntington, jan-van-nassau all already done) -- the tool-side fix 12 Oct handoffs asked for is still owed.
+11 workers, all ledgered and archived. Results:
+- baluze103-letellier-marca-1644 (BAL103-189, BAL103-200; openapi.bnf.fr): f.189r vs f.190r decipherment PASS both passes (0.739/0.721 vs p99
+  0.40), 25 table cells confirmed; f.200r vs f.205r gate FAIL (pass B 0.552 under its 0.60 floor), 28 cells confirmed; no key edit. 9 shape
+  split still a non-test (pooled N 13, k_i 0); f.230 named (~5). The f.50 gaps stay on the owner's sorter pass.
+- fr15575-syllabic-1592-95 (SYL-NOM, SYL-31; openapi.bnf.fr): fr.3995 no.54 nomenclator transcribed (165 rows, H 113 M 52) and key no.31
+  (122 rows, H 102 M 20); f.2's 3-digit block is in neither (no.54 overlap 0; no.31 T=2 vs null 1.82, p 0.287). f.2's code layer is
+  still unkeyed. Folder at 29.75 MB (crops regenerable, not committed). no.54 mark legend (~1.5) not run.
+- lodewijk-van-nassau-1573-74 (LVN16-3R, V-LVN16): 4616 third read, control 9/10, 12 of 21 rows settled; verifier reverted none; AUDIT.md
+  V-LVN16: 4616 C 260/279, four letters 2367/4050 (58.4%), D2 holds. Two cells need a higher-resolution scan from the holder.
+- la-garde-1577 (LAG-HIRES): WVO 06179.pdf embeds ~288 ppi; 10 of 14 doubt cells settled (both 10/18 cells 18); marks-kept error 0.086
+  (0.084-0.107), not below 0.071, so no family re-test; 6 cells need the KHA original.
+- na-suriname-map-1781 (V-SUR2046, SUR-ALIGN): SUR-2046's 16 relabels re-called with fresh controls (at the bar again): 1 confirmed, 6 M,
+  9 back to U (2046 M 83 U 24); crib_2042 alignment: word anchors PASS, entry score FAIL, no token changed.
+- thurloe-printed (THUR-51): no code 51 on vol 4 l.10355; vol 7 has no Bamfylde cipher runs; 51 conflict stands.
+Known-text share (light guardrail): THUR-51 2.67 of 43.59 (~6%); BAL103 jobs use period decipherments to calibrate the key for unread f.50.
+Overruns: V-SUR2046 1.8x, LVN16-3R 1.6x, LAG-HIRES 1.4x, BAL103-200 1.2x -- verifier re-calls and sibling-file fetches priced as overhead.
+**next**
+1. baluze103 f.230 vs its decipherment for the 9 split (~5), only if pooled N can reach a real test; otherwise the owner's f.50 sorter.
+2. fr15575: no.54 mark legend (~1.5); f.2's 3-digit layer needs another key sheet or the Estado 609 fol.86 clear text (desk row).
+3. eckert-1864 / thurloe Verbael when googleapis answers.
+
 ## LANE DEFAULT-account-1-20261013-0640 handoff (session_01RiWVyuAvfZLRgLKJyvG5pm, owner account, for the orchestrator (owner account)), 13 October 2026 (06:40-08:0x UTC by date -u; closed: budget, under 8 left for a wave; workers 46.42 + orchestrator ~5.3 = ~51.7 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-13-acct1-default-0640-jobs.md (waves 1-3). Gate 0a: SESSION-SWEEP-account-1 stale-claimed since 5 Oct,
 proceeded as prior incarnations. VERIFY-BACKLOG regenerated: high rows Birago/ceppo (off limits), low rows audit2 on N0/N1. Backlog: the
