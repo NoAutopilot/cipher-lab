@@ -1,0 +1,11 @@
+L01: images/scratch/f246rL_L01_s1.jpg images/scratch/f246rL_L01_s2.jpg
+L02: images/scratch/f246rL_L02_s1.jpg images/scratch/f246rL_L02_s2.jpg
+L03: images/scratch/f246rL_L03_s1.jpg images/scratch/f246rL_L03_s2.jpg
+L04: images/scratch/f246rL_L04_s1.jpg images/scratch/f246rL_L04_s2.jpg
+L05: images/scratch/f246rL_L05_s1.jpg images/scratch/f246rL_L05_s2.jpg
+L06: images/scratch/f246rL_L06_s1.jpg images/scratch/f246rL_L06_s2.jpg
+L07: images/scratch/f246rL_L07_s1.jpg images/scratch/f246rL_L07_s2.jpg
+L08: images/scratch/f246rL_L08_s1.jpg images/scratch/f246rL_L08_s2.jpg
+L09: images/scratch/f246rL_L09_s1.jpg images/scratch/f246rL_L09_s2.jpg
+L10: images/scratch/f246rL_L10_s1.jpg images/scratch/f246rL_L10_s2.jpg
+L11: images/scratch/f246rL_L11_s1.jpg images/scratch/f246rL_L11_s2.jpg
