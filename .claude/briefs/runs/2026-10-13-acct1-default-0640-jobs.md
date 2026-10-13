@@ -104,3 +104,33 @@ alternative), `--check`, the b2 / wrong-key controls the ink 53/54/63 sections u
 expected depth before reading (VIV52's own note: likely D1 like inks 53/54/63) and report against it. Step 4 (a first verifier) is the
 lane's, not yours. Name the remaining pages as the next step with a priced unit count in Remaining gaps / Escalation.
 VIV52-O session_011RWKRaPUQM13LPqtCR2jjk (spawned 07:11 UTC).
+
+## Wave 3 (07:4x UTC 13 Oct)
+Excluded this wave: baluze103-letellier-marca-1644 and fr15575-syllabic-1592-95 (LANE DEFAULT-A2-0710 holds them); fr3985-* (BNF-FOCUS).
+
+### V-VIV52 (Opus, first verifier, cap 4, box 75 min, open indexes / IA full text / Google Books <= 40 per host, no BnF): fr16104 ink 52 f.164r-v
+You are a verifier, separate from VIV52-O (session_011RWKRaPUQM13LPqtCR2jjk) and from every solver on this folder. Claim under audit: NOTES.md
+"## VIV52-O" (commit 0aa67626): ink 52 (Vivonne to the Queen, Madrid, 5 Sept 1572, BnF fr.16104 ff.164r-168v), f.164r-v decoded with key.tsv,
+H 2217 / M 404 / U 106 of 2727, PREREG-VIV52O b2 and wrong-key gates PASS, fr16 judge FAIL. Follow CLAUDE.md "Verifier brief (template)"
+steps 1-5 for this one item: re-run the decode `--check` and the PREREG gate scripts (exact numbers), then the novelty search (families
+(a)-(g); the print premise already on file -- Gachard II, d'Ars 1884, La Ferrière -- is the solver's log, re-check it independently, plus
+Ribera 2007 / Flament 1996 reachability), a phrase search on the decoded text with `tools/print_check.py`, N-class with key source
+(`period` or `published` per the key.tsv source line -- read it), depth per rule 4a with the depth_check fields, AUDIT.md section, status.json
+row, SO row only at N3+. Inks 53/54/63 audits in AUDIT.md are the pattern. JSTOR rows to JSTOR-QUEUE.tsv in both families if you queue any.
+
+### BAL-WL (Opus, cap 3.5, box 70 min, disk only): baluze167-davaux-1637, same-key wrong-label negative for BAL-SHAPE
+BAL-CROP's NOTES.md section and its Verdict: G1 positive 0.870 PASS, G2 other-key negative 0.625 FAIL (Saint-Chamond look-alikes) -> non-test.
+Its named next step: a same-key wrong-label negative on the existing balshape/ tiles (no network). Pre-register in PREREG-BAL-WL.md pushed
+before any read: the negative arm uses gloss-fixed tiles from f.233r/f.258r presented with deranged labels (or the design BAL-CROP's NOTES
+names), and state before reading why its number can differ from the target's on the same statistic (rule 3, AX-5799 lesson). One blind
+Sonnet tile pass (reuse BAL-CROP's f.228 tile reads if the PREREG allows it and says so; otherwise re-read). Regrade only what both gates
+license; decode `--check`; gaps_check. This is the second control design on this test, not a third attempt at the same instrument -- if it
+fails too, log the shape test untested-by-this-tool for f.228 and say so.
+
+### F4712-71 (Opus, cap 4.5, box 90 min, openapi.bnf.fr <= 18): fr4712-nevers-duchesse, census canvas 35+ then the no.71 all-code check
+Two units in order. (1) Census canvas 35-46 at size `600,` as F4712-CENSUS did (leaves_f13v_on.tsv, append), ~2. If a glossed sibling in the
+f.10r figure system appears, stop after (1) and price it. (2) NOTES.md Remaining gaps item 2: key no.71 as an all-code text -- native crops
+of fr.3995 f.133r's word columns 18-51 and 60-91 (read the key's own canvas/region from the F4712-K71 section) and one native look at f.10r
+canvas 18's figures for dots/overlines; one blind Sonnet read of the word columns (two if the reads disagree on more than a tenth), then
+apply under a PREREG (F4712-K71's controls are the pattern; the control must be able to fail differently). Grade per rule 4. Stop before a
+unit that would cross 80% of cap or box.
