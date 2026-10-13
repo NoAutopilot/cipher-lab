@@ -128,3 +128,25 @@ of a shared tool). PREREG-SUR-CTX.md pushed before scoring: per class (K x4, O x
 vocabulary/corpus used, the statistic, both controls, the gate, and a power check at this N (10 tokens) -- if the controls cannot reject at
 this N, write non-test and stop before scoring (COL26-42 did exactly this today). Relabels only where the gate licenses, as exceptions, M
 unless the control clears with margin. decode `--check`; gaps_check.
+
+## Wave 3 (10:3x UTC 13 Oct)
+Wave 2 (all ledgered): V2-VIV52 N3 upheld, misplaced-decipherment residual named; BAL167-SHRINK 31 -> 29 MB; F4712-C47 empty census
+(fr4712 census paused: two empty runs, canvases 59-70 left as a named step, not run here); SYL54-TRY and SUR-CTX non-tests at their own
+controls (na-suriname 2039 Remarque: two instruments failed their controls today -- not re-briefed without new material).
+
+### VIV-DECH (Opus, cap 2.5, box 45 min, openapi.bnf.fr <= 10): fr16104 ink 52 misplaced-decipherment residual
+NOTES.md Remaining gaps line "ink 52 misplaced-decipherment residual (V2-VIV52, AUDIT 6)": view the head region (first 6-8 lines, at
+`1600,` or a native region) of each post-19 Sept "dechiffre" leaf in fr.16104 -- inks 56, 60, 62 and the Oct-Dec 1572 pairs, canvases from
+the folder's ink/leaf table -- and compare each opening with ink 52 f.164r's decoded opening and its distinctive decoded phrases (name the
+three phrases you use). One line per leaf: canvas, folio, ink, head as written (date/addressee), matches ink 52 yes/no and why. A
+decipherment of the 5 Sept letter anywhere would be prior plaintext: if found, stop, write it plainly in NOTES.md and ROOM.md (flag line),
+and do not touch AUDIT.md (a verifier's file). Update the gap line and gaps_check. Report what was found and where it was not found.
+
+### BAL167-GHV (Opus, cap 4, box 70 min, openapi.bnf.fr <= 12): baluze167-davaux-1637 g+/hook/v image check
+NOTES.md Remaining gaps "170 f.228r-v g+/hook/v classes (HYPOTHESES.md) - not-attempted; next: an image check of the g+, hook and v forms
+against glossed Baluze 170 leaves that carry those shapes (survey.tsv glossed leaves ff.63-322, crops via openapi.bnf.fr), ~$3", and the
+Verdict's V-BAL167 lesson: the negative arm carries within-key look-alike wrong labels. Method as BAL-WL (PREREG pushed before any read;
+gloss-fixed exemplar tiles from 2-3 glossed leaves as positive control; within-key look-alike wrong-label negative whose score can differ
+from the target's; one blind Sonnet tile pass, a second only if the first is under gate; regrade only what the gate licenses; decode
+`--check`). Units: survey.tsv pick + <= 3 region fetches + crops (~1), 1-2 vision calls + 1 reconciliation at ~0.8 each. Folder is at
+29.1 MB: add only cited tiles, add them to images_manifest_full.tsv and regen_images.sh (BAL167-SHRINK), `du -sh` before pushing.
