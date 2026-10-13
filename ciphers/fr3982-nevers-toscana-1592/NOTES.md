@@ -97,3 +97,33 @@ has seven 9s and no 8 at all; a missing cell cannot lower those counts. So the f
 (Tomokiyo: used by Charles Gonzague Cleves to Nevers, fr.3982 f.51, Sept 1592) once its table is transcribed; a key
 that has figures 0/30/33 in its letter section and uses 8 and 9 rarely is what f.25's profile asks for. Optional: an
 image re-check of fr.3995 f.115r for an alphabet cell at 30/33 or a second letter row (cheap, ~$1).
+
+## Key no.70 alphabet, same structural check (lane, 13 Oct 2026 11:0x UTC by date -u)
+The lane re-ran `q7test/structural.py` unchanged except for the key: Nevers key no.70's alphabet and nulls only
+(`ciphers/fr3993-gonzague-nevers-1595/keys/key_no70.tsv`, fr.3995 f.131r, 64 two-digit codes; nomenclator not
+transcribed), copied as `q7test/key_no70_codes.tsv` (code, value). Result, 1000 digit-order shuffles, seed 62:
+?removed N = 260, parse share 0.715 vs shuffle mean 0.740, p95 0.777, p = 0.870; ?wildcard 0.763 vs 0.753, p95 0.793,
+p = 0.395. No fit. NOT control-backed: no matched no.70 control was run (BNF-Q7-TEST's control used no.62), and the
+untranscribed nomenclator caps the share; an indication only.
+
+## Key no.46, same structural check: a non-test (lane, 13 Oct 2026 11:1x UTC by date -u)
+Key no.46 (fr.3995 f.87, Chelles Oct 1592; D. Bourdeau's transcription, cyphersolver targets/nevers1593/key46.txt,
+text CC BY 4.0; series A, N, P = 101 two-digit codes) parses f.25 completely: 1.000 vs shuffle mean 0.997, p95 1.000,
+p = 0.44. With a dense two-digit table every digit string parses, real or shuffled, so the structural check cannot
+discriminate: NON-TEST for no.46 (and for any dense two-digit key), not a negative. Key-family screening of dense
+tables needs a decode-level, order-sensitive statistic with a matched control (brief BNF-Q7-SCREEN).
+
+## Remaining gaps (lane, 13 Oct 2026)
+Read so far: unmeasured, no key reads the letter yet
+- Key identification for f.25 - blocker: not-attempted; no.62 retired, no.70 alphabet indicative misfit, no.46 structural non-test (dense table); next: BNF-Q7-SCREEN, a decode-level order-sensitive test validated on a no.62 control, run on no.46 and no.70; then candidate tables no.44, 45, 47, 56, 35, 63 of fr.3995 (two-digit figures, 1590-94, several Italian) transcribed and screened, ~$6 then ~$3 per key
+- Key no.70 nomenclator - blocker: not-attempted; only the alphabet of f.131r is transcribed, the word columns below it are not; next: transcribe them only if the screen above ranks no.70 first, ~$2
+
+## Escalation (lane, 13 Oct 2026)
+- [ ] siblings: other Nevers-Tuscany letters of 1592-93 in fr.3982-3987 (Tomokiyo: Aug and Nov 1593) not yet located; planned: notice items of fr.3985/fr.3987 by bnf_findingaid.py
+- [n/a] clear-pages: the minute has no clear copy on the leaf (BNF-Q7-ID leaf look)
+- [ ] known-keys: no.62 [retired by BNF-Q7-TEST, control-backed structural misfit, power 0.99-1.00, p 0.30]; no.70 alphabet misfit (indicative, no control); planned: the fr.3995 table screen above
+- [x] print: Canestrini-Desjardins vol. V OCR searched, Gomberville seconde partie 1591-1594 read (BNF-Q7-ID)
+- [ ] key-rebuild: not attempted; a 260-digit string is short for cryptanalysis without a table
+- [x] image-check: leaf read at native resolution, two blind digit passes agree 0.905 (BNF-Q7-KEY)
+- [ ] retry: none yet
+Verdict: keep going: 2 internal gaps; cheapest next: BNF-Q7-SCREEN decode-level test on keys on disk, ~$6
