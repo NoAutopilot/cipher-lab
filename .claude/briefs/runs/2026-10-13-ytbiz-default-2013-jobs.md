@@ -156,3 +156,29 @@ wrote it (arms, gate, exemplar), with V-GHV's postmortem point (c) on near look-
 exactly what the gate licenses; (5) rule 7 re-derivation (scripts regenerate the scores and tiles byte-identically) and decode `--check`;
 depth per rule 4a with `tools/depth_check.py`. Write AUDIT.md "## AUDIT 6"; revert any regrade not licensed; update status.json depth fields
 (depth_pct is stale since V-GHV: set it from the current H/C/S share) only through the established fields. No novelty search, no network.
+
+Wave 3-4 (ledgered + archived, 21:5x UTC): V-GSEQ 2.24 Q (AUDIT 6: 3 regrades kept; score1.out lacks a committed scorer), BAL170-SWEEP
+4.94 D (1.4x cap; unlisted cipher letters f.89r, f.107r-v, likely f.104r; 7 looks + c301-340 owed). Lesson: price a contact-sheet sweep per
+sheet (10 sheets at ~0.35) plus the fetch loop, not per volume.
+
+## Wave 5 (21:5x UTC 13 Oct)
+
+### BAL170-FIN (Opus, cap 2.5, box 45 min, openapi.bnf.fr <= 50): baluze167-davaux-1637, finish the Baluze 170 sweep
+`## BAL170-SWEEP` owes: the 7 confirmation looks at `1000,` (f.89r c96, f.104r c111, f.107r-v c114-115, continuations c252 and c271, and
+any other "likely" row in its table) and canvases 301-340 at `300,` (same contact-sheet method). For each confirmed leaf: cipher yes/no,
+glossed y/n, the letter's date/correspondents if the clear text names them (one line), survey.tsv cell updated (existing cells untouched
+except this sweep's own new rows). Also two record fixes: the NOTES gap line for the GSEQ regrade re-audit is met (AUDIT 6, 1bb2bf978) --
+mark it done; and the volumes gap line now reads 170 done, 167-169 and 171 remain. No transcription. Verdict; gaps_check.
+
+### GSEQ-SCORER (Opus, cap 1.5, box 30 min, disk only): baluze167-davaux-1637, rule-7 scorer for BAL167-GSEQ's score1.out
+AUDIT 6 (V-GSEQ): "score1.out has no committed scorer (rule-7 gap, figures verified by hand)". Write the script that regenerates
+score1.out from the committed inputs (the GVER blind reads, key.tsv, PREREG-BAL-GSEQ's rule including TOL), with `--check` exiting non-zero
+when the committed score1.out is stale. Run it; it must reproduce score1.out byte-identically (if it cannot, say exactly where it differs
+and do not edit score1.out or any grade). One line in NOTES `## BAL167-GSEQ` naming the script; no AUDIT.md edit. Do not touch survey.tsv.
+
+### BAL169-SWEEP (Opus, cap 6, box 75 min, openapi.bnf.fr <= 300 at >= 3 s): baluze167-davaux-1637, Baluze 169 sweep for unlisted cipher leaves
+BAL170-SWEEP found 3-4 unlisted cipher letters in Baluze 170, so the next volume is worth the sweep. Same method as `## BAL170-SWEEP`
+(canvases at `300,` to the scratchpad, contact sheets of ~30, own eye), for Baluze 169 (ark from survey.tsv / the folder's notes; if not
+recorded, find it with tools/gallica_folio.py on openapi). First 280 canvases at most, leaving 20 requests for `1000,` looks at candidates.
+Units: ~10 sheets at ~0.35 + the fetch loop. Stop before a unit that would cross 80% of the cap. New rows in survey.tsv (existing cells
+untouched); `## BAL169-SWEEP` table; volumes gap line (fetch and rebase first: BAL170-FIN edits it too); gaps_check. No transcription.
