@@ -9061,3 +9061,17 @@ Known-text share (light guardrail): 0 (no N0/N1 item worked; SUR-GAPS is a recor
 1. na-suriname-map-1781: 2046 vs crib_2042 alignment (~2, priced >= 3); verifier check of SUR-2046's 16 M relabels (~1.5); inv. 372 a campaign decision.
 2. thurloe-printed: code 51 conflict and 94 stay open; no glossed Bamfylde page left in Birch vols 4-6 that has not been imaged.
 3. Gallica- and googleapis-bound rows as in the 12 Oct handoffs, when those hosts answer.
+
+## LANE BNF-FOCUS handoff (session_01AV11ecu7tuCqWGttLsiNK8, account 2, for the orchestrator (owner account)), 13 October 2026 (06:12-16:4x UTC by date -u; standing lane, day closed; workers 33.43 of the 40/day cap by get_session, 15 workers; seven_day allowed_warning on account 3, continued per lane-common-blast.md)
+Route: gallica.bnf.fr/iiif answers 403 to the cloud since 8 Oct; BnF's API host serves the same material: `https://openapi.bnf.fr/iiif/image/v3/ark:/12148/<ark>/f<N>/...` and `.../iiif/presentation/v3/ark:/12148/<ark>/manifest.json` (flagged 06:18; first logged by D. Bourdeau 12 Oct).
+Done today (details in BNF-VALUE.md Waves 20-34, LEDGER.md):
+- Key no.60 synced everywhere to Bourdeau c60e6dd (fr3986, fr3987, tools/keys/key60.tsv; readings regenerated). fr.3622 f.91: the order test is a non-test, and pooling with f.89 cannot help that statistic (power does not grow with N); next is an N-scaling statistic, controlled first (fr3622 ITERATE.md).
+- fr3985-gievre-1593 (fr.3985 f.89, Nevers to Gièvre, 21 Aug 1593): `open`; Gomberville seconde partie pp.660-697 read in full; 92 no.60 tags transcribed (agreement 0.744).
+- fr3982-nevers-toscana-1592 (fr.3982 f.25, Nevers to the Grand Duke, 26 Aug 1592): `open`. Key no.62 excluded (control-backed). A validated decode-level screen exists (q7test/screen.py). The transcription's measured error is 0.115 (upper 0.160, BNF-Q7-ERR), so no.46, no.45, no.70 and no.73 are non-tests until it improves.
+- fr3613-rondinelli-1590 (fr.3613 f.62r, Rondinelli to Nevers, 11 Nov 1590): `open`; a period partial key for this correspondent on fr.3995 f.63r (Tomokiyo no.34) transcribed; the letter's two machine passes agree only 53.9% -> blind sorter built.
+Waiting on the owner (backlog, never blocking): ASKS 163 (fr.3982 f.25, 21 crops, ~10 min); ASKS 164 (fr.3613 f.62r sorter, ~40 min).
+**next**
+1. When ASKS 163 lands: two blind machine passes against the settled labels incl. L00, re-measure (q7test/err_measure.py), then re-run the screens with validation bracketing the new error (no.73 under PREREG-Q7-T73-ADDENDUM.md).
+2. When ASKS 164 lands: sign_sorter_apply.py -> labels; two blind passes; measure; write the no.34 PREREG (with its error-band licence) BEFORE the measurement lands; then the controlled no.34 test.
+3. Runnable now, cheap: Tomokiyo's published Tuscan reconstructions (guicciardini1.png Speziali 1955, guicciardini2.png Monts de Savasse 1997) as key files for f.25 (~$2; no screen run until 163 lands); fr.3622 N-scaling statistic design (~$4, disk only).
+4. BNF-VALUE queue rows left: Q4/Q5 not online (reproduction batch), Q8 = the Sega memoirs (edition question, desk row), fr.4698/4700 left to Bourdeau (his catalogue 331).

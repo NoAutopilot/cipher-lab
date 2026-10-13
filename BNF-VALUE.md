@@ -333,3 +333,6 @@ the strongest new material (a held key or a sibling folder) once reproduced. Re-
   of the agreed tokens (M). Per Usage 6 the next pass is the owner's sign sorter (BNF-RONDI-SORT builds a blind page and one
   ASKS row); a no.34 test comes only after a measured transcription, with its rule pre-registered first.
 - Spend 13 Oct, this lane: 25.50 + 1.01 + 1.59 + 4.33 = 32.43 of 40.
+- Wave 34 (16:1x UTC): BNF-RONDI-SORT (1.00) built the blind sorter for f.62r (720 tiles, 312 focus), ASKS 164. Lane day closed:
+  13 Oct spend 33.43 of 40 (15 workers). Waiting on the owner: ASKS 163 (fr.3982 f.25, 21 crops, ~10 min) and ASKS 164
+  (fr.3613 f.62r sorter, ~40 min); both backlog, never blocking.
