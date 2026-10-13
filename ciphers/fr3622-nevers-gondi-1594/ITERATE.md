@@ -98,3 +98,15 @@ Next best attempt: a separate verifier (lane briefs it) re-derives the reading f
 - Rule 3 third-attempt clause: the machine family "two blind passes + no.60 + bag-of-words score" is retired for f.91
   (untestable by this instrument at this N); reopened only by an order-sensitive instrument or new material.
 Status: open (rule 5 gaps: owner sign sorter; order-sensitive test). Lane moves to the next queue row.
+
+## New material (lane, 13 Oct 2026 06:2x UTC by date -u)
+D. Bourdeau, cyphersolver c60e6dd (12 Oct 2026, from issue #32 by R. Węglarek, checked by him on the fr.3995 key images):
+10 of 12 corrections to key no.60 adopted and a tag split (4+ = i, 4+b = bien, ++ = i on the sheet / ⱶⱶ = u for the
+copyist's form, 2+ = u|i, n+ = p, ſ+ = l; b, c, i, m, o, u homophones revised). Our key.tsv
+(`ciphers/fr3986-nevers-revol-1593/key.tsv`) was mapped from his key60.txt @a0d5a07, before these changes, and f.91's
+transcription uses tags whose value changed (4+, ++, 2+). He also reads fr.3985 f.88r in part under the corrected key
+with an ORDER-sensitive control (longest lexicon word in a contiguous run vs 5000 token shuffles, P = 0.0002; his
+`f88/shuffle_control.py`, MIT) -- the instrument shape this file's retrospective named as the untried step.
+Next best attempt: BNF-K60 -- sync key.tsv to c60e6dd (credited, graded), then a pre-registered order-sensitive
+local-anchor test on f.91 L02-L05 with a positive control at f.91's N and its measured reader error.
+| 13 Oct 2026 | f.91's cipher is Nevers no.60 (corrected key) | BNF-K60: key sync + order-sensitive local-anchor test (brief .claude/briefs/runs/2026-10-13-ytbiz-bnf-k60.md) | positive control at N=135 with injected sign error bracketing the 35% reader disagreement; 5000 token-position shuffles | pending | pending | pending |
