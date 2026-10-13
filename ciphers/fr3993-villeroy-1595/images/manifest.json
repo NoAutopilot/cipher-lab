@@ -419,5 +419,122 @@
    "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b525085665/f159/1650,250,2300,3310/full/0/native.jpg",
    "note": "VILL-NOMEN; Nulles box cut from band 4 (rotated), 2x enlarged"
   }
+ ],
+ "openapi_bnf": [
+  {
+   "file": "fr3995/f104v_native_400_100_4654_1100.jpg",
+   "source_url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b525085665/f203/400,100,4654,1100/max/0/default.jpg",
+   "size": [
+    4654,
+    1100
+   ],
+   "bytes": 620087,
+   "date": "13 Oct 2026",
+   "job": "VILL-104V"
+  },
+  {
+   "file": "fr3995/f104v_cell_col09.jpg",
+   "derived_from": "fr3995/f104v_native_400_100_4654_1100.jpg",
+   "box_in_region": [
+    1617,
+    110,
+    1815,
+    620
+   ],
+   "method": "local PIL column crop after tools/iiif_lines.py --image ... --debug",
+   "date": "13 Oct 2026",
+   "job": "VILL-104V"
+  },
+  {
+   "file": "fr3995/f104v_cell_col10.jpg",
+   "derived_from": "fr3995/f104v_native_400_100_4654_1100.jpg",
+   "box_in_region": [
+    1797,
+    110,
+    1995,
+    620
+   ],
+   "method": "local PIL column crop after tools/iiif_lines.py --image ... --debug",
+   "date": "13 Oct 2026",
+   "job": "VILL-104V"
+  },
+  {
+   "file": "fr3995/f104v_cell_col11.jpg",
+   "derived_from": "fr3995/f104v_native_400_100_4654_1100.jpg",
+   "box_in_region": [
+    1972,
+    110,
+    2169,
+    620
+   ],
+   "method": "local PIL column crop after tools/iiif_lines.py --image ... --debug",
+   "date": "13 Oct 2026",
+   "job": "VILL-104V"
+  },
+  {
+   "file": "fr3995/f104v_cell_col13.jpg",
+   "derived_from": "fr3995/f104v_native_400_100_4654_1100.jpg",
+   "box_in_region": [
+    2286,
+    110,
+    2484,
+    620
+   ],
+   "method": "local PIL column crop after tools/iiif_lines.py --image ... --debug",
+   "date": "13 Oct 2026",
+   "job": "VILL-104V"
+  },
+  {
+   "file": "fr3995/f104v_cell_col14.jpg",
+   "derived_from": "fr3995/f104v_native_400_100_4654_1100.jpg",
+   "box_in_region": [
+    2431,
+    110,
+    2629,
+    620
+   ],
+   "method": "local PIL column crop after tools/iiif_lines.py --image ... --debug",
+   "date": "13 Oct 2026",
+   "job": "VILL-104V"
+  },
+  {
+   "file": "fr3995/f104v_cell_col15.jpg",
+   "derived_from": "fr3995/f104v_native_400_100_4654_1100.jpg",
+   "box_in_region": [
+    2620,
+    110,
+    2818,
+    620
+   ],
+   "method": "local PIL column crop after tools/iiif_lines.py --image ... --debug",
+   "date": "13 Oct 2026",
+   "job": "VILL-104V"
+  },
+  {
+   "file": "fr3995/f104v_cell_col16.jpg",
+   "derived_from": "fr3995/f104v_native_400_100_4654_1100.jpg",
+   "box_in_region": [
+    2766,
+    110,
+    2964,
+    620
+   ],
+   "method": "local PIL column crop after tools/iiif_lines.py --image ... --debug",
+   "date": "13 Oct 2026",
+   "job": "VILL-104V"
+  },
+  {
+   "file": "fr3995/f104v_nulles_box.jpg",
+   "derived_from": "fr3995/f104v_native_400_100_4654_1100.jpg",
+   "box_in_region": [
+    3141,
+    596,
+    3868,
+    843
+   ],
+   "method": "local PIL crop",
+   "date": "13 Oct 2026",
+   "job": "VILL-104V"
+  }
  ]
 }

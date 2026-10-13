@@ -1,0 +1,9 @@
+# tools/prior_work.py leaf looks, append-only: the newest row per (item, role, folio, canvas, image) is current
+utc	item_id	look_row_id	role	folio	canvas	image	source	status
+2026-10-13 06:52	adhoc-21e64c	adhoc-21e64c:2-leaf:b6afa2	cipher-page	104v		ciphers/fr3993-villeroy-1595/images/fr3995/f104v_strip_L01_s1.jpg	manifest	owed
+2026-10-13 06:52	adhoc-21e64c	adhoc-21e64c:2-leaf:b6afa2	facing	105r			folio arithmetic	owed
+2026-10-13 06:52	adhoc-21e64c	adhoc-21e64c:2-leaf:b6afa2	before-1	104r			folio arithmetic	owed
+2026-10-13 06:52	adhoc-21e64c	adhoc-21e64c:2-leaf:b6afa2	before-2	103v			folio arithmetic	owed
+2026-10-13 06:52	adhoc-21e64c	adhoc-21e64c:2-leaf:b6afa2	after-2	105v			folio arithmetic	owed
+2026-10-13 06:52	adhoc-21e64c	adhoc-21e64c:2-leaf:b6afa2	after-3	106r			folio arithmetic	owed
+2026-10-13 06:52	adhoc-21e64c	adhoc-21e64c:2-leaf:b6afa2	after-4	106v			folio arithmetic	owed

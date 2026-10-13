@@ -1131,3 +1131,52 @@ e/f homophones. So either the table breaks its own order for l, p, q, or the str
 misplaced. Where it found nothing: no column/matrix arrangement (column adjacency 0.0, p = 1.0), no paired first digits (0/8).
 Next step (not run, outside this brief): one native-crop re-read of codes 09, 10, 13, 14, 21, 29 on f.104v (canvas f203,
 region of VILL-STRIPS), ~USD 1.5, one vision unit. This is about the f.104v table only; it reads no plaintext of the target.
+
+## VILL-104V: native re-read of the f.104v table codes (owner account, LANE DEFAULT-A1-0640, 13 Oct 2026)
+
+Worker VILL-104V, 06:52-07:0x UTC 13 Oct 2026 by date -u. Brief `.claude/briefs/runs/2026-10-13-acct1-default-0640-jobs.md`
+section VILL-104V (TT-MATRIX's "Next step (not run...)" above). Intake: the lane ran `intake_gate_check.py` at 06:5x UTC (exit 0,
+"edition/page or full-text-search citation found within 6 lines"). Prior work: `prior_work.py fr3993-villeroy-1595 --item-spec
+'shelfmark=BnF fr.3995;folio=104v' --step-type transcribe --offline` exit 4: one LOOK row (2-leaf, gloss/clear-copy check on the
+leaf), two UNCHECKED-NET (aaymeloglu cache not on disk; no prior_editions row), CONTEXT (Tomokiyo nevers.htm no.58 fol.104). The
+LOOK row is answered by this job's native crops: f.104v is itself the key table (alphabet strip, Nulles, nomenclator); the strip
+region carries no gloss or clear copy of a cipher text (recorded with `--record`). Check 1 (own work): no earlier native re-read of
+these cells; VILL-STRIPS crops (3 Oct) were the only read.
+
+Route: openapi.bnf.fr IIIF Image v3 (gallica.bnf.fr/iiif 403 this week), 2 requests (info.json f203 5054x3635; region
+400,100,4654,1100 at `max`), both 200, about 3 s apart. Saved `images/fr3995/f104v_native_400_100_4654_1100.jpg` (manifest
+`openapi_bnf`). Crop step (pasted):
+
+    python3 tools/iiif_lines.py --image ciphers/fr3993-villeroy-1595/images/fr3995/f104v_native_400_100_4654_1100.jpg --out <scratch>/lines --debug
+    ... region 4654x1100, 7 lines, 7 bands x 3 segments; pitch 112 distance 78 prominence 271.9
+      centres (region y): 86 223 324 418 749 943 1044
+
+Debug overlay checked (lines on the header, code rows 1-2, symbol row). Cell crops then cut locally per column (i, l, m, o, p, q, r =
+columns 9, 10, 11, 13, 14, 15, 16) plus the Nulles box: `images/fr3995/f104v_cell_col*.jpg`, `f104v_nulles_box.jpg`. One blind
+Sonnet read was given only these crops and column positions, not the predicted values. Result table: `vill104v_reread.tsv`.
+
+**What the crops show.** l = 9 (one digit, long tail; nothing hidden or erased in the cell; row 2 empty), p = 13, q = 14 (a dot
+before the 1 and a dash after the 4 read as flourishes). The blind read agrees with the VILL-STRIPS readings on all three, and on
+i 19/20, m 22/23, o 27, r 30/31. Codes 1, 10, 21, 26 and 29 appear nowhere in the strip or in the Nulles box. The Nulles box is
+32 35 37 40 41 43 45, with nothing more to the leaf edge (checked by eye on a wider native crop; the subagent's crop clipped 45).
+One blind/strip difference: o row 2 read "20 or 201" blind; it is the looped 8 used for d 8, h 18 and u 38 on the same strip, so 28
+stays (M).
+
+**Which explanation the crops support:** the table breaks its own order. The strip readings 09, 13, 14 are not misplaced; they
+are written in the l, p and q cells as single codes. TT-MATRIX's one-part prediction (21 = l, 29 = p or q) is not on the page:
+21 and 29 are unassigned holes, like 1, 10 and 26. The table is one-part for most letters with l, p, q set apart at 9, 13, 14.
+The tool's "blockwise one-part" label stands as a description; this is a reading of the key table, not of the target, and no
+plaintext reading is claimed.
+
+**File changes.** `keys/key_f104r_letters.tsv`: header notes the native re-read; the seven Nulles go from grade I to M (now read
+at native size). Letter rows unchanged (all M). `strips_score.py` regenerated (rule 7, `--check` exit 0 after): f.104v reader-error
+0.152 -> 0.000 (the I-graded nulls were the reader-error term), power 18/20 -> 20/20, rank 41/201 -> 45/201, z 0.83 -> 0.77:
+still FAIL, so the verdict of VILL-STRIPS stands. The f159 row (non-test) moved power 8 -> 6 on the same regeneration (shared
+random state); still "stop (power below 16/20)". Grade counts in the cipher: unchanged (H 0, C 0, S 0, M 0, I 0; no reading).
+
+Where it found nothing: no erased, overwritten or second code in the l, p, q cells; no 10/21/26/29 in the region read. Not
+checked: the nomenclator part of f.104v below the strip (codes from about 50 upward) for a stray low code. Requests:
+openapi.bnf.fr 2. Subagent calls: 1 (blind read). Rule 10: no novelty claim.
+
+Verdict after VILL-104V: `open` (unchanged). Next steps are unchanged from the RUN4-WAITBF "While waiting" line (the owner's
+sign-sorter settlement, ASKS 124; the f.131 / Godefroy 145 reproductions, ASKS 111 and 123).

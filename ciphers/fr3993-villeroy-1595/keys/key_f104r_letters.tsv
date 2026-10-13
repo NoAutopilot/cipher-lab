@@ -1,7 +1,10 @@
 # fr.3995 no.58 f.104v (canvas f203; the recto f.104r carries only heading + show-through), "...tangi 1593 23 Juillet",
 # letter strip read by VILL-STRIPS 3 Oct 2026 from native crops (iiif_lines, region 500,180,4000,700). code<TAB>letter<TAB>grade
 # Symbols named: DELTAX = Delta with a cross above; XX = double-barred x; DIAM = open diamond; SQ = square; OPLUS = circle with cross above.
-# Nulles box (right of z, not cropped): read only at 700 px thumbnail as 32 35 37 40 41 43 45 -- grade I.
+# Nulles box (right of z): 32 35 37 40 41 43 45, nothing further to the leaf edge -- read at 700 px (VILL-STRIPS, I), re-read at native
+# size VILL-104V 13 Oct 2026 (openapi.bnf.fr region 400,100,4654,1100 of f203; blind Sonnet read + worker eye), now grade M.
+# VILL-104V 13 Oct 2026: l=9, p=13, q=14 confirmed at native size by a blind cell read (single codes, no hidden or erased digit);
+# codes 1, 10, 21, 26, 29 appear nowhere in the strip or the Nulles box. See NOTES.md 'VILL-104V' and ../vill104v_reread.tsv.
 6	a	M
 5	a	M
 DELTAX	a	M
@@ -41,10 +44,10 @@ OPLUS	u	M
 42	x	M
 44	y	M
 46	z	M
-32	NULL	I
-35	NULL	I
-37	NULL	I
-40	NULL	I
-41	NULL	I
-43	NULL	I
-45	NULL	I
+32	NULL	M
+35	NULL	M
+37	NULL	M
+40	NULL	M
+41	NULL	M
+43	NULL	M
+45	NULL	M

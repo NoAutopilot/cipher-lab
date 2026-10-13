@@ -1,0 +1,12 @@
+# VILL-104V, 13 Oct 2026: native-size re-read of the f.104v (fr.3995 no.58, canvas f203) strip cells around the TT-MATRIX order breaks.
+# strip = VILL-STRIPS 3 Oct reading; blind = one Sonnet read given only column crops + column position (no predicted values);
+# predicted = TT-MATRIX one-part prediction; agree = blind matches strip.
+code	strip_reading	blind_read	predicted_one_part	agree	note
+09	l	9 under header l (col 10), one digit, no hidden digit	d/e homophone	yes	table puts l at 9, out of alphabetical order
+10	absent	absent (no cell or Nulles group carries 10)	d/e homophone	yes	hole in the table
+13	p	13 under header p (col 14), two digits	e/f homophone	yes	table puts p at 13, out of order
+14	q	14 under header q (col 15), two digits; dot before 1 and dash after 4 read as flourish	e/f homophone	yes	table puts q at 14, out of order
+21	absent	absent (col 10, l, carries only 9; row 2 empty)	l	yes	prediction not on the page
+29	absent	absent (cols 14/15, p/q, carry only 13/14; row 2 empty)	p or q	yes	prediction not on the page
+28	o (row 2)	"20 or 201" (looped final stroke)	o	partial	same looped 8 as d 8, h 18, u 38 on this strip; kept 28 M
+NULLES	32 35 37 40 41 43 45 (I, 700 px)	32 35 37 40 41 43 45? (last clipped in the subagent crop)	-	yes	worker eye on a wider native crop: 45, nothing further to the leaf edge; grade I -> M
