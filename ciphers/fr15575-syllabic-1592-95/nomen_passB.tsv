@@ -1,0 +1,166 @@
+crop	row	entry	code	marks	conf
+nomc4_L01	1	quando	nes	dot1-above	medium
+nomc4_L01	2	que	zo	plus-above	medium
+nomc4_L01	3	qual	lus		high
+nomc4_L01	4	quien	nus		high
+nomc4_L01	5	Remedio	sas		medium
+nomc4_L01	6	Rey	tas		medium
+nomc4_L01	7	razon	pos	dot1-above	medium
+nomc4_L01	8	Reyno	tis		high
+nomc4_L01	9	razon	pos	dot1-above	medium
+nomc4_L01	10	religion	rus		low
+nomc4_L01	11	reputation	pem		medium
+nomc4_L01	12	Roma	vos		medium
+nomc4_L02	1	Seignor	zus		medium
+nomc4_L02	2	S.mag.	zo ou zo	T-below,dot3-above	low
+nomc4_L02	3	satisfecho	yas		medium
+nomc4_L02	4	sustenta	46e	dot3-above	medium
+nomc4_L02	5	seruicio	34	T-below	medium
+nomc4_L02	6	siempre	34 ou 34	dot3-above,T-below	medium
+nomc4_L02	7	seruicio	31	dot3-above	medium
+nomc4_L02	8	sospechas	40	dot3-above	medium
+nomc4_L02	9	sennores	zus	plus-above,dot3-above	low
+nomc4_L02	10	S.S.d	49	dot3-above	medium
+nomc4_L02	11	so	pa		high
+nomc4_L03	1	tierra	??	dot3-above,T-below	low
+nomc4_L03	2	tanta	87e		medium
+nomc4_L03	3	tratar	67e	dot2-above	medium
+nomc4_L03	4	tiempo	fi ou 61	T-below	medium
+nomc4_L03	5	tambien	55 ou 555	T-below	medium
+nomc4_L03	6	trauajo	65	T-below	medium
+nomc4_L03	7	tanto	57	T-below	medium
+nomc4_L03	8	trauajo	pul		medium
+nomc4_L03	9	V.M.d	88	dot3-above	low
+nomc4_L03	10	ue	0+		medium
+nomc4_L03	11	V.M.d	87e	dot3-above	medium
+nomc4_L03	12	voluntad	c66 et tun	T-below	low
+nomc4_L04	1	V.M.d	qp		low
+nomc4_L04	2	vn	a		high
+nomc4_L04	3	vua	87e		medium
+nomc3_L01	1	Lugar	zim		high
+nomc3_L01	2	legato	vom		medium
+nomc3_L01	3	Lettera	ra		high
+nomc3_L01	4	Mismo	ger	dot1-above	medium
+nomc3_L01	5	Marques	der		medium
+nomc3_L01	6	Muestra	der		medium
+nomc3_L01	7	Muy	zur		medium
+nomc3_L01	8	mente	far		high
+nomc3_L01	9	mucho	bur		medium
+nomc3_L01	10	magestad	zum		medium
+nomc3_L01	11	mas	dox		medium
+nomc3_L01	12	manda	caz		medium
+nomc3_L02	1	ment	s6	bar-above	low
+nomc3_L02	2	manera	cer		high
+nomc3_L02	3	ministro	sir		medium
+nomc3_L02	4	negotios	non	circumflex-above	medium
+nomc3_L02	5	necessitados	nir+	circumflex-above	medium
+nomc3_L02	6	ninguna	nuz		medium
+nomc3_L02	7	mas	4	plus2-above	medium
+nomc3_L02	8	nulla	31	plus2-above	medium
+nomc3_L02	9	nnemo	pers		medium
+nomc3_L02	10	nuestra	pius	dot1-above	low
+nomc3_L02	11	otra	dnz		low
+nomc3_L03	1	otro	vur	circumflex-above	medium
+nomc3_L03	2	opinion	vur		medium
+nomc3_L03	3	ordi	8os		medium
+nomc3_L03	4	Puerto	lis		medium
+nomc3_L03	5	Pera	cis		medium
+nomc3_L03	6	parte	zer		high
+nomc3_L03	7	podra	24	other:flourish below,dot1-above	medium
+nomc3_L03	8	personas	cos	dot1-above	medium
+nomc3_L03	9	platas	dis		medium
+nomc3_L03	10	particular	zir		medium
+nomc3_L03	11	paris	zar		medium
+nomc3_L03	12	porque	fos		medium
+nomc3_L04	1	passar	xiv		medium
+nomc3_L04	2	per cierto	vor		high
+nomc3_L04	3	papa	xw		low
+nomc3_L04	4	principe	hus		medium
+nomc3_L04	5	para	xur		medium
+nomc3_L04	6	proposito	js		low
+nomc2_L01	1	en	f		medium
+nomc2_L01	2	exercito	xel		medium
+nomc2_L01	3	estados	vul		medium
+nomc2_L01	4	ellection	rol		medium
+nomc2_L01	5	fin	dam	dot1-above	high
+nomc2_L01	6	francia	gam		high
+nomc2_L01	7	forma	fem		medium
+nomc2_L01	8	fuerca	gim		high
+nomc2_L01	9	franceses	fum+	circumflex-above	medium
+nomc2_L01	10	fauor	4		low
+nomc2_L02	1	gente	gum		high
+nomc2_L02	2	generale	hom+	dot1-above	medium
+nomc2_L02	3	grande	jam		medium
+nomc2_L02	4	gayeras	hem	other:7-like mark above	medium
+nomc2_L02	5	Size	70s		medium
+nomc2_L02	6	Sizo	707		medium
+nomc2_L02	7	Sizo	nom		medium
+nomc2_L02	8	Sumbres	num	circumflex-above	medium
+nomc2_L02	9	Sarto	mim		medium
+nomc2_L02	10	heresia	nams		low
+nomc2_L02	11	hermanos	nem	circumflex-above	medium
+nomc2_L03	1	Instancia	sum		high
+nomc2_L03	2	Intencio	tim		medium
+nomc2_L03	3	Intento	tom		medium
+nomc2_L03	4	Inconuemiente	rem		medium
+nomc2_L03	5	Infanta	roms		medium
+nomc2_L03	6	despues	Jol		medium
+nomc1_L01	1	Aun	dr		low
+nomc1_L01	2	aunque	30		medium
+nomc1_L01	3	alli	dis		medium
+nomc1_L01	4	alla	di		medium
+nomc1_L01	5	aquella	gre		medium
+nomc1_L01	6	agora	bu	dot2-above,plus-above	low
+nomc1_L01	7	assi	50		medium
+nomc1_L01	8	armas	he		medium
+nomc1_L01	9	antes	fo		medium
+nomc1_L01	10	autoridad	Ja		medium
+nomc1_L01	11	aqui	ge		medium
+nomc1_L01	12	alguna	dec		medium
+nomc1_L02	1	adelante	ce		high
+nomc1_L02	2	aquellos	gi	circumflex-above	medium
+nomc1_L02	3	aui?	fes	struck	low
+nomc1_L02	4	auisa	fes		medium
+nomc1_L02	5	bien	87+		medium
+nomc1_L02	6	buena	moe		medium
+nomc1_L02	7	beneficio	h	struck	low
+nomc1_L02	8	Copia	del		high
+nomc1_L02	9	Consessa	yts		low
+nomc1_L02	10	Carta	pa		medium
+nomc1_L02	11	Caso	pe		medium
+nomc1_L03	1	Camino	mu		high
+nomc1_L03	2	Cerco	zur		medium
+nomc1_L03	3	cio	17+	dot1-above	low
+nomc1_L03	4	Che	nis		high
+nomc1_L03	5	Come	8e		low
+nomc1_L03	6	cuenta	gals		medium
+nomc1_L03	7	causa	gui		medium
+nomc1_L03	8	catolicos	gua		medium
+nomc1_L03	9	carlos	gue	circumflex-above	medium
+nomc1_L03	10	Comclita	ram		low
+nomc1_L03	11	Cast.	no		medium
+nomc1_L04	1	dicho	hor ou		low
+nomc1_L04	2	de Bearn	sol		medium
+nomc1_L04	3	de	94	dot3-above,plus-above	medium
+nomc1_L04	4	despaeso	zel		low
+nomc1_L04	5	dicho	sor		medium
+nomc1_L04	6	dugue	pol	other:circle	low
+nomc1_L04	7	danno	gul		medium
+nomc1_L04	8	duquesa	pate		medium
+nomc1_L04	9	dios	dmul		low
+nomc1_L04	10	discursos	mut		low
+nomc1_L04	11	de	95	dot3-above	medium
+nomc1_L05	1	dinero	mel		high
+nomc1_L05	2	dicha	hoz		medium
+nomc1_L05	3	don	nol		high
+nomc1_L05	4	duda	pul		medium
+nomc1_L05	5	diablo	pul ou 22	other:second code 22 with flourish	low
+nomr_L01	1	Iglesia	gm		medium
+nomr_L01	2	?ia	70be		medium
+nomr_L01	3	seguir	zis		medium
+nomr_L01	4	D. de Sessa	95	T-below	medium
+nomn_nulles	1	NULLES	s	other:H-like mark above	low
+nomn_nulles	2	NULLES	8	other:H-like mark above	low
+nomn_nulles	3	NULLES	9	other:H-like mark above	low
+nomn_nulles	4	NULLES	0	other:H-like mark above	low
+nomn_nulles	5	NULLES	2s	other:H-like mark above	low

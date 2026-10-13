@@ -1,0 +1,166 @@
+line	position	sign	confidence	alt	why
+nomc1_L01	1	aun=dr	H		agree
+nomc1_L01	2	aunque=zo	M	B:aunque=30	differ
+nomc1_L01	3	alli=dir	M	B:alli=dis	differ
+nomc1_L01	4	alla=di	H		agree
+nomc1_L01	5	aquella=gre	H		agree
+nomc1_L01	6	agora=bu[dot2-above]	M	B:agora=bu[dot2-above,plus-above]	differ
+nomc1_L01	7	assi=so	M	B:assi=50	differ
+nomc1_L01	8	armas=he	H		agree
+nomc1_L01	9	antes=fo	H		agree
+nomc1_L01	10	autoridad=da	M	B:autoridad=ja	differ
+nomc1_L01	11	aqui=ge	H		agree
+nomc1_L01	12	alguna=dee	M	B:alguna=dec	differ
+nomc1_L02	1	adelante=ce	H		agree
+nomc1_L02	2	aquellos=gi[circumflex-above]	H		agree
+nomc1_L02	3	ahi=fo[struck]	M	B:aui?=fes[struck]	differ
+nomc1_L02	4	auisa=fes	H		agree
+nomc1_L02	5	bien=87[plus2-above]	M	B:bien=87+	differ
+nomc1_L02	6	buena=moe	H		agree
+nomc1_L02	7	beneficio=?h[struck]	M	B:beneficio=h[struck]	differ
+nomc1_L02	8	copia=del	H		agree
+nomc1_L02	9	consessa=yts	H		agree
+nomc1_L02	10	carta=pa[dot1-above]	M	B:carta=pa	differ
+nomc1_L02	11	caso=pe[dot1-above]	M	B:caso=pe	differ
+nomc1_L03	1	camino=mu	H		agree
+nomc1_L03	2	cerco=zur	H		agree
+nomc1_L03	3	cio=17[plus2-above]	M	B:cio=17+[dot1-above]	differ
+nomc1_L03	4	che=nis	H		agree
+nomc1_L03	5	come=se	M	B:come=8e	differ
+nomc1_L03	6	cuenta=galg[dot1-above]	M	B:cuenta=gals	differ
+nomc1_L03	7	causa=gui_fal[dot1-above]	M	B:causa=gui	differ
+nomc1_L03	8	catolicos=gua	H		agree
+nomc1_L03	9	canalos=gue[circumflex-above]	M	B:carlos=gue[circumflex-above]	differ
+nomc1_L03	10	comodita=ram	M	B:comclita=ram	differ
+nomc1_L03	11	cast.=no	H		agree
+nomc1_L04	1	dicho=hor_ou	H		agree
+nomc1_L04	2	de_bearn=sol	H		agree
+nomc1_L04	3	de=94[dot3-above,plus-above]	H		agree
+nomc1_L04	4	despaus_o=zel	M	B:despaeso=zel	differ
+nomc1_L04	5	dicho=sor	H		agree
+nomc1_L04	6	dugue=pol	M	B:dugue=pol[other:circle]	differ
+nomc1_L04	7	danno=gul	H		agree
+nomc1_L04	8	duquesa=pate	H		agree
+nomc1_L04	9	dios=dmul	H		agree
+nomc1_L04	10	discursos=mut	H		agree
+nomc1_L04	11	de=95[dot3-above]	H		agree
+nomc1_L05	1	dinero=mel	H		agree
+nomc1_L05	2	dicha=hoz	H		agree
+nomc1_L05	3	don=nol	H		agree
+nomc1_L05	4	duda=pul	H		agree
+nomc1_L05	5	diablo=pul_22	M	B:diablo=pul_ou_22[other:secondcode22withflourish]	differ
+nomc2_L01	1	en=f	H		agree
+nomc2_L01	2	exercito=xel	H		agree
+nomc2_L01	3	estados=vul	H		agree
+nomc2_L01	4	ellection=rol	H		agree
+nomc2_L01	5	fin=dam	M	B:fin=dam[dot1-above]	differ
+nomc2_L01	6	francia=gam	H		agree
+nomc2_L01	7	forma=fem	H		agree
+nomc2_L01	8	fuerza=gim	M	B:fuerca=gim	differ
+nomc2_L01	9	franceses=fum[plus-above,circumflex-above]	M	B:franceses=fum+[circumflex-above]	differ
+nomc2_L01	10	fauor=4	H		agree
+nomc2_L02	1	gente=gum	H		agree
+nomc2_L02	2	generale=hom[plus-above]	M	B:generale=hom+[dot1-above]	differ
+nomc2_L02	3	grande=zam	M	B:grande=jam	differ
+nomc2_L02	4	gayeras=hem[other:flourish-above]	M	B:gayeras=hem[other:7-likemarkabove]	differ
+nomc2_L02	5	size=705	M	B:size=70s	differ
+nomc2_L02	6	sizo=707	H		agree
+nomc2_L02	7	sito=nom	M	B:sizo=nom	differ
+nomc2_L02	8	sumbres=num[circumflex-above]	H		agree
+nomc2_L02	9	sarto=mim	H		agree
+nomc2_L02	10	heresia=nam6	M	B:heresia=nams	differ
+nomc2_L02	11	hermanos=nem[circumflex-above]	H		agree
+nomc2_L03	1	instancia=sum	H		agree
+nomc2_L03	2	intencio=tim	H		agree
+nomc2_L03	3	intento=tom	H		agree
+nomc2_L03	4	inconuemiente=rem	H		agree
+nomc2_L03	5	infanta=roms	H		agree
+nomc2_L03	6	despues=sol	M	B:despues=jol	differ
+nomc3_L01	1	lugar=zim	H		agree
+nomc3_L01	2	legato=vom	H		agree
+nomc3_L01	3	lettera=ra	H		agree
+nomc3_L01	4	mismo=der[dot1-above]	M	B:mismo=ger[dot1-above]	differ
+nomc3_L01	5	marques=der	H		agree
+nomc3_L01	6	muestra=der	H		agree
+nomc3_L01	7	muy=zur	H		agree
+nomc3_L01	8	mente=far	H		agree
+nomc3_L01	9	mucho=sur	M	B:mucho=bur	differ
+nomc3_L01	10	magestad=zum	H		agree
+nomc3_L01	11	mas=dox	H		agree
+nomc3_L01	12	manda=caz	H		agree
+nomc3_L02	1	ment=s6[bar-above]	H		agree
+nomc3_L02	2	manera=cer	H		agree
+nomc3_L02	3	ministro=sir	H		agree
+nomc3_L02	4	negotios=non[circumflex-above]	H		agree
+nomc3_L02	5	necessitados=nir[circumflex-above,plus-above]	M	B:necessitados=nir+[circumflex-above]	differ
+nomc3_L02	6	ninguna=nuz	H		agree
+nomc3_L02	7	mas=4[plus2-above]	H		agree
+nomc3_L02	8	nulla=31[plus2-above]	H		agree
+nomc3_L02	9	nuemo=pers	M	B:nnemo=pers	differ
+nomc3_L02	10	nuestra=pirs[dot1-above]	M	B:nuestra=pius[dot1-above]	differ
+nomc3_L02	11	otra=dnz	H		agree
+nomc3_L03	1	otro=vur[circumflex-above]	H		agree
+nomc3_L03	2	opinion=vur	H		agree
+nomc3_L03	3	ordi=8os	H		agree
+nomc3_L03	4	puerto=lis	H		agree
+nomc3_L03	5	pera=cis	H		agree
+nomc3_L03	6	parte=zer	H		agree
+nomc3_L03	7	podra=24[dot1-above,other:tick-above-right]	M	B:podra=24[other:flourishbelow,dot1-above]	differ
+nomc3_L03	8	personas=cos[other:tick-above]	M	B:personas=cos[dot1-above]	differ
+nomc3_L03	9	platicas=dis	M	B:platas=dis	differ
+nomc3_L03	10	particular=zir	H		agree
+nomc3_L03	11	paris=zar	H		agree
+nomc3_L03	12	porque=sos	M	B:porque=fos	differ
+nomc3_L04	1	passar=xiv	H		agree
+nomc3_L04	2	per_cierto=vor	H		agree
+nomc3_L04	3	papa=xw	H		agree
+nomc3_L04	4	principe=hus	H		agree
+nomc3_L04	5	para=xur	H		agree
+nomc3_L04	6	proposito=zis	M	B:proposito=js	differ
+nomc4_L01	1	quando=nes[dot1-above]	H		agree
+nomc4_L01	2	que=zo[plus-above]	H		agree
+nomc4_L01	3	qual=lus	H		agree
+nomc4_L01	4	quien=nus	H		agree
+nomc4_L01	5	remedio=sas	H		agree
+nomc4_L01	6	rey=tas	H		agree
+nomc4_L01	7	razon=pos	M	B:razon=pos[dot1-above]	differ
+nomc4_L01	8	reyno=tis	H		agree
+nomc4_L01	9	razon=pos	M	B:razon=pos[dot1-above]	differ
+nomc4_L01	10	religion=us	M	B:religion=rus	differ
+nomc4_L01	11	reputation=pem	H		agree
+nomc4_L01	12	roma=vos	H		agree
+nomc4_L02	1	seignor=zus	H		agree
+nomc4_L02	2	s.mag.=zo_ou_30[t-below,dot3-above]	M	B:s.mag.=zo_ou_zo[t-below,dot3-above]	differ
+nomc4_L02	3	satisfecho=yas	H		agree
+nomc4_L02	4	sustenta=46e[dot3-above]	H		agree
+nomc4_L02	5	seruicio=34[t-below]	H		agree
+nomc4_L02	6	siempre=34_ou_34[dot3-above,t-below]	H		agree
+nomc4_L02	7	seruicio=31[dot3-above]	H		agree
+nomc4_L02	8	sospechas=40[dot3-above]	H		agree
+nomc4_L02	9	sennores=zus[plus-above,circumflex-above,dot3-above]	M	B:sennores=zus[plus-above,dot3-above]	differ
+nomc4_L02	10	s.s.d=49[dot3-above]	H		agree
+nomc4_L02	11	so=pa	H		agree
+nomc4_L03	1	tierra=02[dot3-above,t-below]	M	B:tierra=??[dot3-above,t-below]	differ
+nomc4_L03	2	tanta=87e	H		agree
+nomc4_L03	3	tratar=67e[dot2-above]	H		agree
+nomc4_L03	4	tiempo=fi_ou_61[t-below]	H		agree
+nomc4_L03	5	tambien=55_ou_555[t-below]	H		agree
+nomc4_L03	6	tranalo=69[t-below]	M	B:trauajo=65[t-below]	differ
+nomc4_L03	7	tanto=57[t-below]	H		agree
+nomc4_L03	8	trabajo=pul	M	B:trauajo=pul	differ
+nomc4_L03	9	vmd=8es[dot3-above]	M	B:v.m.d=88[dot3-above]	differ
+nomc4_L03	10	ue=0[plus-above]	M	B:ue=0+	differ
+nomc4_L03	11	vmd=87e[dot3-above]	M	B:v.m.d=87e[dot3-above]	differ
+nomc4_L03	12	voluntad=cf6_et_tun[t-below]	M	B:voluntad=c66_et_tun[t-below]	differ
+nomc4_L04	1	vmd=qf	M	B:v.m.d=qp	differ
+nomc4_L04	2	vn=a	H		agree
+nomc4_L04	3	via=87e	M	B:vua=87e	differ
+nomn_nulles	1	nulles=s[other:h-above]	M	B:nulles=s[other:h-likemarkabove]	differ
+nomn_nulles	2	nulles=8[other:h-above]	M	B:nulles=8[other:h-likemarkabove]	differ
+nomn_nulles	3	nulles=9[other:h-above]	M	B:nulles=9[other:h-likemarkabove]	differ
+nomn_nulles	4	nulles=0[other:h-above]	M	B:nulles=0[other:h-likemarkabove]	differ
+nomn_nulles	5	nulles=2s[other:h-above]	M	B:nulles=2s[other:h-likemarkabove]	differ
+nomr_L01	1	yglesia=gm	M	B:iglesia=gm	differ
+nomr_L01	2	zia=70be	M	B:?ia=70be	differ
+nomr_L01	3	seguir=zis	H		agree
+nomr_L01	4	d._de_sessa=95[t-below]	H		agree

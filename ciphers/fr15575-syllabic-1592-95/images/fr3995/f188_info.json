@@ -1,0 +1,1 @@
+{"@context":"http://iiif.io/api/image/3/context.json","id":"https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b525085665/f188","width":7564,"height":6055,"maxWidth":7564,"maxHeight":6055,"maxArea":45800020,"preferredFormats":["webp","jpg"],"type":"ImageService3","protocol":"http://iiif.io/api/image","profile":"level2"}

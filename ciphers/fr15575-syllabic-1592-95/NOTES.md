@@ -832,3 +832,108 @@ Read so far: f.228 L01-L08 of ~47 lines (289 tokens: H 158, M 26, U 105); L01-L0
 - [retired] image-check: machine gloss read of the f.228 b2 band crops (N8B two passes, NV05C 12 view calls), rule 3 third attempt
 - [x] retry: L01-L04 gloss retried under an addendum and PASSed (N8-NV05)
 Verdict: keep going: 6 internal gaps; cheapest next: the Estado 609 fol.86 desk row (owner minutes, row staged in D4-SYL54); then a person's read of the f.2 gloss crops and the unchanged prereg re-run (~$2); then the no.54 nomenclator (~$6)
+
+## SYL-NOM: key no.54 nomenclator (account-2 worker for LANE DEFAULT-A2-0710, 13 Oct 2026 07:20-07:4x UTC by date -u)
+
+Job: the "key nomenclator" gap (D4-15576 list) and Escalation "[ ] known-keys": transcribe the nomenclator of BnF fr.3995 no.54
+(f.96v-97r, canvas f188) with two blind passes and a reconciliation, then count whether fr.15576 f.2's codes fit its range and format.
+no.31 (canvas f126) not started, per brief.
+
+**Prior work** (`.claude/briefs/prior-work-step.md`):
+- `python3 tools/prior_work.py fr15575-syllabic-1592-95 --item-spec 'shelfmark=BnF fr.3995;folio=96v-97r;canvas=f188' --step-type transcribe --fetch`
+  -> exit 2 (KNOWN, no consumer: the item is itself the period key sheet; plaintext KNOWN from AUDIT.md:6). The step is a key
+  transcription, so re-run as `--step-type key` (KNOWN is the step's input) -> exit 4, one LEAD owed: adhoc-c4dd63:1-own:1a4888
+  (NOTES.md:472, our own gap line). Recorded `CLEAR` (prior-work.tsv): the gap names the step as not-attempted; no
+  key_no54_nomenclator.tsv on origin/main; no ROOM claim or done line for it before this job (grep, 13 Oct 07:27 UTC).
+- Check 1 (own work): grep of NOTES.md, AUDIT.md, ROOM.md for "nomenclator"/"no.54": NV05B (3 Oct) transcribed only the syllabary
+  and header signs (key_no54.tsv); no nomenclator file. Clear.
+- Check 2 (leaf): the sheet is the key itself; its facing page (f.97r, right half of canvas f188) carries the Y/Z/S overflow entries,
+  a "Nulles" line and a French legend of marks; read in this job (entries) or listed (legend). Clear.
+- Check 3 (Tomokiyo/solver repos): sources/cryptiana/web/nevers.htm l.496 (no.54: "Two- or three-letter combinations represent
+  words and names"; Tomokiyo calls the sheet a partial reconstruction) and web/spanish3.htm l.816-823 ("Syllabic Numerical Cipher
+  (1592)": his own reconstruction quotes about a dozen nomenclator values from this sheet -- e.g. vul estados, vos Roma, xor para -- and
+  numbers with "++" or three dots above; he notes errors on the sheet: "f" for "en", the "podra" symbol = "dra"). So a partial
+  nomenclator list is in print on Tomokiyo's page: KNOWN-PART; no full transcription of the nomenclator found in sources/cryptiana,
+  the cyphersolver catalogue cache (duplicate-effort line only), or DECODE lists; aaymeloglu/unsolved-ciphers not cloned (unchecked).
+- Check 4 (edition): not applicable to a key sheet (no letter text); unchecked for any printed edition of fr.3995 no.54.
+
+**Fetch and crops** (openapi.bnf.fr, IIIF v3; info.json: canvas f188 is 7564 x 6055, so y 1600-6055 runs to the foot of the
+spread). The nomenclator fills the left page (f.96v) in four columns; the right page (f.97r) carries three overflow entries
+(Y, Z, S), a "Nulles" line and a French legend of marks. Three native regions, then column crops cut from disk:
+
+    $ python3 tools/iiif_lines.py --ark btv1b525085665 --canvas 188 --iiif-host openapi --region 250,1600,3650,4455 --out .../images/fr3995 --prefix nomL --dry-run
+      region 3650x4455, 45 lines ... (cached src_image_v3_ark_12148_btv1b525085665_f188_250_1600_3650_4455.jpg)
+    $ ... --region 3550,2450,1450,1500 --prefix nomR --dry-run      (right-page Y/Z/S block)
+    $ ... --region 5500,1800,1750,450 --prefix nomN --dry-run       (Nulles line)
+    $ sh images/fr3995/nomen/regen_crops.sh                          (the column cuts: nomc1 80,0,780 -> 5 crops; nomc2 790,0,930 -> 3;
+                                                                       nomc3 1690,0,930 -> 4; nomc4 2610,0,1040 -> 4; nomr 1 crop; nomn 1)
+Debug overlays checked: band edges fall between entries in all four columns; the first cuts of columns 1 and 4 (740 and 960 px
+wide) clipped "hor ou" and "et tim / ou so" at the right edge and were re-cut wider. Crops (4.9 MB) are not committed (folder size
+line, 30 MB); `regen_crops.sh` rebuilds them from the committed native regions, byte-identical (tested on nomc4 L01, L03).
+
+**Reads.** Two blind Sonnet passes over the same 18 crops (pass B in reversed column order), one row per entry
+(`nomen_passA.tsv`, `nomen_passB.tsv`; wide forms `*_wide.tsv`). Both found 165 rows (160 entries + 5 nulls), the same count in
+every crop. `tools/reconcile_passes.py nomen_passA_wide.tsv nomen_passB_wide.tsv --out-dir recon_nomen` (token = entry=code[marks]):
+agree 104/165 = 63.0%, 61 disagreement columns. Per field, rows paired by crop and row: entry 149/165 (90.3%), code 132/165 (80.0%),
+marks 140/165 (84.8%). Above the tenth line on codes, but a third machine pass was not run: the reconciler settled every split from
+the image (one unit), and what stays doubtful is letter identity in a few recurring glyphs, graded M.
+
+**Reconciliation** (`build_nomenclator.py`, settlements listed in it with a note each; `--check` exit 0) -> `key_no54_nomenclator.tsv`
+(pos, entry, code, marks, conf, passA, passB, settled_by, note): **165 rows, H 113, M 52**. H = both passes and the image agree
+(spelling of the entry, mark wording or a "+" written in the code normalised); M = settled by the reconciler. Shared misreads the
+reconciler caught: "dicho -- hor ou lal" (both passes stopped at "ou"; "lal" stands at the head of column 2); "Mismo / Marques /
+Muestra" share two written codes, "gi" written small over "der" and one more "der", so which entry has which is M. Recurring
+doubtful glyphs: a 3-shaped z (zo, zur, zel), a looped J/d (Ja, Jam, Jol, Jis), S vs 5 (so, sur), the looped 8 (87e, 88).
+Code formats on the sheet (171 code alternatives, '?' codes excluded from counts): letter groups 131, 1-digit 7, 2-digit 21, 3-digit 3
+(555 tambien, 705 Size, 707 Sizo), mixed digit+letter 8 (46e, 87e, 67e, 706e ...), with marks: three dots above, a T below,
+a cross after, a circumflex. The 5 nulls carry an H-like mark above (s/5, 8, 9, 0, 25/2s). The French legend of marks (8 lines,
+right of f.97r) was not transcribed. Entry grades are not plaintext readings of any letter.
+
+**Range check against fr.15576 f.2** (`python3 nomen_range_check.py`; counts only, no decode -- f2_fr15576/decode.json reads
+key_decode.tsv, not a no.54 key file by name, so no `--check` run applies):
+
+    fr.15576 f.2 body: 358 tokens; formats {'3-digit': 319, 'letters': 21, '4-digit': 3, '2-digit': 12, '1-digit': 1, 'symbol': 2}
+      3-digit distinct values 142, range 100-974
+      non-numeric tokens: {'sh': 1, 'k': 1, 'y': 15, 'q': 1, 'p': 1, 'V': 1, 'uu': 1, '+': 2}
+    no.54 nomenclator: 165 entries, 168 codes; formats {'letters': 130, '2-digit': 21, '1-digit': 6, '3-digit': 3, 'mixed': 8}
+    3-digit nomenclator codes also on f.2: 0 []
+    f.2 3-digit values outside every no.54 code (syllabary + nomenclator): 142 of 142
+    f.2 values 700-709: {'701': 1, '702': 11, '704': 1, '708': 1} ; sheet codes with 70x digits: [('705', 'Size'), ('707', 'Sizo'), ('706e', 'zia')]
+    f.2 letter tokens that equal a nomenclator letter code: []
+
+- f.2's body is 319 of 358 tokens 3-digit numbers (142 distinct, 100-974); the no.54 nomenclator is mostly letter groups (131 of
+  171 codes) and 1-2 digit numbers with marks, with three plain 3-digit codes. None of f.2's 142 distinct 3-digit values is a
+  no.54 code (syllabary 10-99 or nomenclator), and none of f.2's 21 letter tokens (y x15, p, q, k, sh, uu, V) is a nomenclator
+  letter code. On chance alone, three sheet codes in a 100-974 range would meet about 0.5 of f.2's 142 values, so the zero overlap is
+  weak by itself; the format difference (f.2 numeric 3-digit throughout, the nomenclator letter groups) is what counts. Result:
+  fr.15576 f.2's 3-digit system is **not the no.54 nomenclator** as written on this sheet, count-level, not a decode.
+- Side observation (M, no reading): the sheet's three 70x codes stand under "Size" 705, "Sizo" 707 and "zia" 706e; with z read as
+  the 3-shaped z these are the z-syllables ze, zo, zi(a), the same numbers as no.31's z row (za 704, ze 705, zi 706, zo 707, zu 708,
+  D4-SYL54). f.2 uses 704 (x1), 708 (x1), 701 (x1) and 702 (x11) -- the za/zu numbers of that row and two numbers outside it. Whether
+  f.2's 3-digit system extends the 70x z-row block is open; 702 x11 does not fit a z-syllable frequency.
+
+**Not done / next.** no.31 (canvas f126) not started (brief): grid + letter signs + mark legend, 2 passes + reconcile, ~$4.5. The
+French mark legend of no.54 (f.97r right, 8 lines), ~$1.5 (one crop, 2 passes). Requests: openapi.bnf.fr 5 (info.json, 1600 px
+overview, 3 native regions; all 200). Subagents: 2 Sonnet passes. Cost not visible to this session.
+
+## Remaining gaps (SYL-NOM, 13 Oct 2026; supersedes the D4-15576 list, other lines kept)
+
+Read so far: f.228 L01-L08 of ~47 lines (289 tokens: H 158, M 26, U 105); L01-L04 gate PASS (0.674 vs p99 0.233); L05-L08 gate FAIL three times; fr.15576 f.2 body C01-C21 transcribed (334 cipher tokens, 6 unsettled), alignment gate FAIL (all M); key no.54 nomenclator transcribed (165 rows, H 113, M 52; SYL-NOM) and f.2's 3-digit codes are outside it (count level); f.233 unread.
+- Simancas original of the 5 Jan 1595 dispatch (AGS Estado leg. 609 fol. 86, Lefèvre IV no.811) - blocker: not-attempted; new material, a clear text of fr.15576 f.2 would allow `interlinear_align.py stream` against the whole cipher without the faint gloss; PARES dead from the cloud; next: LOCAL-QUEUE desk row for the PARES image of Estado 609 fol.86 or Manuscrits divers t.28 fol.183 (row text staged in the D4-SYL54 section), ~owner minutes
+- fr.15576 f.2 gloss (G01-G21) - blocker: not-attempted; two machine passes agree on about half the words, the alignment gate FAILed on that read (D4-15576); next: one-faint-line gloss crops (f2_fr15576/body f2i_L01..L41, contrast views) read by a person (sign sorter / desk row), then re-run the pre-registered alignment unchanged, ~$2 plus owner time
+- fr.15576 f.2 cipher - blocker: not-attempted; 6 unsettled groups (sorter focus: C05 g17, C09 g14, C10 g8, C11 g17, C14 g9, C18 g10); the 5-line letter-sign block at the top (and its gloss) unread; f.2's 3-digit system is not the no.54 nomenclator (SYL-NOM) but shares 704/708 with the no.31 z row; next: the 6 groups in the owner's sorter; top block 2 passes + reconcile against the no.31 letter signs, ~$4.5
+- f.228 L05-L08 gloss - blocker: not-attempted; machine gloss read of the b2 band crops retired (rule 3, NV05C); next: one-faint-line crops (re-cut b2 bands, as done for f.2) read by a person in the sign sorter, or new material, ~$2
+- key no.31 and the no.54 mark legend (no.31 = fr.3995 f.62r canvas f126; no.54 legend = f.97r right, 8 French lines) - blocker: not-attempted; next: no.31 grid + letter signs + legend, iiif_lines.py crops, 2 blind passes + reconcile, ~$4.5; no.54 legend one crop 2 passes ~$1.5
+- key no.54 nomenclator M rows (52, recurring glyphs z/J/S-5/8 and the Mismo/Marques/Muestra codes) - blocker: not-attempted; letter identity needs decoded context, the image alone does not settle it; next: the M rows checked against decoded occurrences in f.228 once its L09+ lines are read (decode_key.py --try), ~$0 extra
+- fr.15575 f.228 L09-L47 and f.233 - blocker: not-attempted; unread, band crops mix two gloss lines (NV05C); next: 4-line batches with gloss-only crops (one faint line per crop, the f.2 cut), ~$7.5 each
+
+## Escalation (SYL-NOM, 13 Oct 2026)
+
+- [x] siblings: es.336 (Lasry), fr.3641, fr.3982-3983 letters in the same cipher listed by Tomokiyo; none is these leaves
+- [ ] clear-pages: AGS Estado leg. 609 fol. 86 (Lefèvre IV no.811); planned: desk row for its image
+- [ ] known-keys: no.54 syllabary control-checked (fr.3641 PASS; f.228 L01-L04 PASS; L05-L08 FAIL x3); no.54 nomenclator transcribed (SYL-NOM, 165 rows H 113 M 52), f.2's 3-digit codes outside it; no.31 still to transcribe (~$4.5)
+- [x] print: Lefèvre IV p.278 no.811 read in full (L47, DESK-LAND); van Durme 1964 snippet only
+- [ ] key-rebuild: f.2's period gloss alignment run once (D4-15576, gate FAIL on a machine gloss read); next: a person's gloss read, same prereg
+- [retired] image-check: machine gloss read of the f.228 b2 band crops (N8B two passes, NV05C 12 view calls), rule 3 third attempt
+- [x] retry: L01-L04 gloss retried under an addendum and PASSed (N8-NV05)
+Verdict: keep going: 7 internal gaps; cheapest next: the Estado 609 fol.86 desk row (owner minutes, row staged in D4-SYL54); then a person's read of the f.2 gloss crops and the unchanged prereg re-run (~$2); then no.31 (~$4.5), which the f.2 70x overlap makes the more likely key for f.2's 3-digit block

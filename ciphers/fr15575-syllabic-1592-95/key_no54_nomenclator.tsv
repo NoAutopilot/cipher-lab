@@ -1,0 +1,168 @@
+# BnF fr.3995 no.54 nomenclator, f.96v-97r (Gallica/openapi ark btv1b525085665 canvas f188; native region 250,1600,3650,4455 + 3550,2450,1450,1500 + 5500,1800,1750,450). SYL-NOM, 13 Oct 2026.
+# Period key sheet (Tomokiyo: a partial reconstruction). Entry -> code as written. Grades: H both blind passes + reconciler agree; M settled by the reconciler or letter identity unsure. The French legend of marks (right of f.97r) is not transcribed.
+pos	entry	code	marks	conf	passA	passB	settled_by	note
+nomc1_L01:1	Aun	dr		H	Aun=dr[]	Aun=dr[]	A=B+image	
+nomc1_L01:2	aunque	zo		M	aunque=zo[]	aunque=30[]	reconciler	first letter the 3-shaped z of this hand (as in zur, zim); B read 30
+nomc1_L01:3	alli	dis		M	alli=dir[]	alli=dis[]	reconciler	final s with a long tail; A dir
+nomc1_L01:4	alla	di		H	alla=di[]	alla=di[]	A=B+image	
+nomc1_L01:5	aquella	gre		H	aquella=gre[]	aquella=gre[]	A=B+image	
+nomc1_L01:6	agora	bu	plus2-above	M	agora=bu[dot2-above]	agora=bu[dot2-above,plus-above]	reconciler	two crosses above (A read two dots)
+nomc1_L01:7	assi	so		M	assi=so[]	assi=50[]	reconciler	first sign S or 5 (B 50); same S as in sor, size
+nomc1_L01:8	armas	he		H	armas=he[]	armas=he[]	A=B+image	
+nomc1_L01:9	antes	fo		H	antes=fo[]	antes=fo[]	A=B+image	
+nomc1_L01:10	autoridad	Ja		M	autoridad=da[]	autoridad=Ja[]	reconciler	first letter the looped J/d of jam, jol (A da)
+nomc1_L01:11	aqui	ge		H	aqui=ge[]	aqui=ge[]	A=B+image	
+nomc1_L01:12	alguna	dee		M	alguna=dee[]	alguna=dec[]	reconciler	second e with a flourish (B dec)
+nomc1_L02:1	adelante	ce		H	adelante=ce[]	adelante=ce[]	A=B+image	
+nomc1_L02:2	aquellos	gi	circumflex-above	H	aquellos=gi[circumflex-above]	aquellos=gi[circumflex-above]	A=B+image	
+nomc1_L02:3	[struck]	fes	struck	M	ahi=fo[struck]	aui?=fes[struck]	reconciler	entry and code struck through; entry unread (A ahi/fo, B aui?/fes); the next row auisa=fes is the replacement
+nomc1_L02:4	auisa	fes		H	auisa=fes[]	auisa=fes[]	A=B+image	
+nomc1_L02:5	bien	87	plus-after	M	bien=87[plus2-above]	bien=87+[]	reconciler	87 followed by a cross
+nomc1_L02:6	buena	moe		H	buena=moe[]	buena=moe[]	A=B+image	
+nomc1_L02:7	beneficio	?h	blot-before	M	beneficio=?h[struck]	beneficio=h[struck]	reconciler	a blotted sign before h
+nomc1_L02:8	Copia	del		H	Copia=del[]	Copia=del[]	A=B+image	
+nomc1_L02:9	Consessa	yts		H	Consessa=yts[]	Consessa=yts[]	A=B+image	
+nomc1_L02:10	Carta	pa		M	Carta=pa[dot1-above]	Carta=pa[]	reconciler	marks unsure (A dot above)
+nomc1_L02:11	Caso	pe	tick-above	M	Caso=pe[dot1-above]	Caso=pe[]	reconciler	small tick above p
+nomc1_L03:1	Camino	mu		H	Camino=mu[]	Camino=mu[]	A=B+image	
+nomc1_L03:2	Cerco	zur		H	Cerco=zur[]	Cerco=zur[]	A=B+image	
+nomc1_L03:3	cio	17	plus-after,dot1-above	M	cio=17[plus2-above]	cio=17+[dot1-above]	reconciler	dot above 1, cross after 7
+nomc1_L03:4	Che	nis		H	Che=nis[]	Che=nis[]	A=B+image	
+nomc1_L03:5	come	se		M	come=se[]	Come=8e[]	reconciler	first sign s or 8 (B 8e)
+nomc1_L03:6	cuenta	gals		M	cuenta=galg[dot1-above]	cuenta=gals[]	reconciler	final s with a flourish (A galg)
+nomc1_L03:7	causa	gui		M	causa=gui fal[dot1-above]	causa=gui[]	reconciler	small "fal" written at the column edge after gui, possibly a second code; not taken as code
+nomc1_L03:8	catolicos	gua		H	catolicos=gua[]	catolicos=gua[]	A=B+image	
+nomc1_L03:9	carlos	gue	circumflex-above	M	canalos=gue[circumflex-above]	carlos=gue[circumflex-above]	reconciler	entry carlos (A canalos)
+nomc1_L03:10	Comodita	ram		M	Comodita=ram[]	Comclita=ram[]	reconciler	faded entry
+nomc1_L03:11	Cast.	no		H	Cast.=no[]	Cast.=no[]	A=B+image	
+nomc1_L04:1	dicho	hor ou lal		M	dicho=hor ou[]	dicho=hor ou[]	reconciler	"ou" underlined, the alternative "lal" stands at the head of column 2 (both passes missed it)
+nomc1_L04:2	de Bearn	sol		H	de Bearn=sol[]	de Bearn=sol[]	A=B+image	
+nomc1_L04:3	de	94	dot3-above,plus-above	H	de=94[dot3-above,plus-above]	de=94[dot3-above,plus-above]	A=B+image	
+nomc1_L04:4	despacho	zel		M	despaus o=zel[]	despaeso=zel[]	reconciler	entry despacho (passes despaus o / despaeso); z the 3-shaped z
+nomc1_L04:5	dicho	sor		H	dicho=sor[]	dicho=sor[]	A=B+image	
+nomc1_L04:6	duque	pol		M	dugue=pol[]	dugue=pol[other:circle]	reconciler	o inked heavily; no mark
+nomc1_L04:7	danno	gul		H	danno=gul[]	danno=gul[]	A=B+image	
+nomc1_L04:8	duquesa	pate		H	duquesa=pate[]	duquesa=pate[]	A=B+image	
+nomc1_L04:9	dios	dmul		H	dios=dmul[]	dios=dmul[]	A=B+image	
+nomc1_L04:10	discursos	mut		H	discursos=mut[]	discursos=mut[]	A=B+image	
+nomc1_L04:11	de	95	dot3-above	H	de=95[dot3-above]	de=95[dot3-above]	A=B+image	
+nomc1_L05:1	dinero	mel		H	dinero=mel[]	dinero=mel[]	A=B+image	
+nomc1_L05:2	dicha	hoz		H	dicha=hoz[]	dicha=hoz[]	A=B+image	
+nomc1_L05:3	don	nol		H	don=nol[]	don=nol[]	A=B+image	
+nomc1_L05:4	duda	pul		H	duda=pul[]	duda=pul[]	A=B+image	
+nomc1_L05:5	diablo	22	flourish-after	M	diablo=pul 22[]	diablo=pul ou 22[other:second code 22 with flourish]	reconciler	A carried pul from duda above; 22 with a z-like tail
+nomc2_L01:1	en	f		H	en=f[]	en=f[]	A=B+image	
+nomc2_L01:2	exercito	xel		H	exercito=xel[]	exercito=xel[]	A=B+image	
+nomc2_L01:3	estados	vul		H	estados=vul[]	estados=vul[]	A=B+image	
+nomc2_L01:4	ellection	rol		H	ellection=rol[]	ellection=rol[]	A=B+image	
+nomc2_L01:5	fin	dam		M	fin=dam[]	fin=dam[dot1-above]	reconciler	the dot is before the entry, not over the code
+nomc2_L01:6	francia	gam		H	francia=gam[]	francia=gam[]	A=B+image	
+nomc2_L01:7	forma	fem		H	forma=fem[]	forma=fem[]	A=B+image	
+nomc2_L01:8	fuerca	gim		H	fuerza=gim[]	fuerca=gim[]	reconciler	entry spelling only (fuerza/fuerca)
+nomc2_L01:9	franceses	fum	plus-after,circumflex-above	H	franceses=fum[plus-above,circumflex-above]	franceses=fum+[circumflex-above]	reconciler	mark notation only
+nomc2_L01:10	fauor	4		H	fauor=4[]	fauor=4[]	A=B+image	
+nomc2_L02:1	gente	gum		H	gente=gum[]	gente=gum[]	A=B+image	
+nomc2_L02:2	generale	hom	plus-after	H	generale=hom[plus-above]	generale=hom+[dot1-above]	reconciler	mark notation only; the dot is on the rule
+nomc2_L02:3	grande	Jam		M	grande=zam[]	grande=jam[]	reconciler	looped J/z letter (A zam, B jam)
+nomc2_L02:4	gayeras	hem	other:7-like mark above right	M	gayeras=hem[other:flourish-above]	gayeras=hem[other:7-like mark above]	reconciler	
+nomc2_L02:5	Size	705		M	Size=705[]	Size=70s[]	reconciler	third digit 5 or s (B 70s)
+nomc2_L02:6	Sizo	707		H	Sizo=707[]	Sizo=707[]	A=B+image	
+nomc2_L02:7	Sizo	nom	other:z barred	M	Sito=nom[]	Sizo=nom[]	reconciler	second "Sizo" with a barred z (A Sito)
+nomc2_L02:8	Sumbres	num	circumflex-above	H	Sumbres=num[circumflex-above]	Sumbres=num[circumflex-above]	A=B+image	
+nomc2_L02:9	Sarto	mim		H	Sarto=mim[]	Sarto=mim[]	A=B+image	
+nomc2_L02:10	heresia	nams		M	heresia=nam6[]	heresia=nams[]	reconciler	last sign s or 6 (A nam6)
+nomc2_L02:11	hermanos	nem	circumflex-above	H	hermanos=nem[circumflex-above]	hermanos=nem[circumflex-above]	A=B+image	
+nomc2_L03:1	Instancia	sum		H	Instancia=sum[]	Instancia=sum[]	A=B+image	
+nomc2_L03:2	Intencio	tim		H	Intencio=tim[]	Intencio=tim[]	A=B+image	
+nomc2_L03:3	Intento	tom		H	Intento=tom[]	Intento=tom[]	A=B+image	
+nomc2_L03:4	Inconuemiente	rem		H	Inconuemiente=rem[]	Inconuemiente=rem[]	A=B+image	
+nomc2_L03:5	Infanta	roms		H	Infanta=roms[]	Infanta=roms[]	A=B+image	
+nomc2_L03:6	despues	Jol		M	despues=sol[]	despues=Jol[]	reconciler	looped J letter as in Jam (A sol)
+nomc3_L01:1	Lugar	zim		H	Lugar=zim[]	Lugar=zim[]	A=B+image	
+nomc3_L01:2	legato	vom		H	legato=vom[]	legato=vom[]	A=B+image	
+nomc3_L01:3	Lettera	ra		H	Lettera=ra[]	Lettera=ra[]	A=B+image	
+nomc3_L01:4	Mismo	gi	dot1-above	M	Mismo=der[dot1-above]	Mismo=ger[dot1-above]	reconciler	"gi" written small above "der" at the end of the Mismo line; Mismo/Marques/Muestra share these two codes and one more der, so which entry has gi is unsure (A der, B ger)
+nomc3_L01:5	Marques	der		M	Marques=der[]	Marques=der[]	reconciler	Marques written small between Mismo and Muestra; its code not separately visible
+nomc3_L01:6	Muestra	der		H	Muestra=der[]	Muestra=der[]	A=B+image	
+nomc3_L01:7	Muy	zur		H	Muy=zur[]	Muy=zur[]	A=B+image	
+nomc3_L01:8	mente	far		H	mente=far[]	mente=far[]	A=B+image	
+nomc3_L01:9	mucho	sur		M	mucho=sur[]	mucho=bur[]	reconciler	first sign s, 5 or b (B bur)
+nomc3_L01:10	magestad	zum		H	magestad=zum[]	magestad=zum[]	A=B+image	
+nomc3_L01:11	mas	dox		H	mas=dox[]	mas=dox[]	A=B+image	
+nomc3_L01:12	manda	caz		H	manda=caz[]	manda=caz[]	A=B+image	
+nomc3_L02:1	ment	s6	bar-above	H	ment=s6[bar-above]	ment=s6[bar-above]	A=B+image	
+nomc3_L02:2	manera	cer		H	manera=cer[]	manera=cer[]	A=B+image	
+nomc3_L02:3	ministro	sir		H	ministro=sir[]	ministro=sir[]	A=B+image	
+nomc3_L02:4	negotios	non	circumflex-above	H	negotios=non[circumflex-above]	negotios=non[circumflex-above]	A=B+image	
+nomc3_L02:5	necessitados	nir	plus-after,circumflex-above	H	necessitados=nir[circumflex-above,plus-above]	necessitados=nir+[circumflex-above]	reconciler	mark notation only
+nomc3_L02:6	ninguna	nuz		H	ninguna=nuz[]	ninguna=nuz[]	A=B+image	
+nomc3_L02:7	mas	4	plus2-above	H	mas=4[plus2-above]	mas=4[plus2-above]	A=B+image	
+nomc3_L02:8	nulla	31	plus2-above	H	nulla=31[plus2-above]	nulla=31[plus2-above]	A=B+image	
+nomc3_L02:9	nuemo	pers		H	nuemo=pers[]	nnemo=pers[]	reconciler	entry spelling only
+nomc3_L02:10	nuestra	pirs	tick-above-left	M	nuestra=pirs[dot1-above]	nuestra=pius[dot1-above]	reconciler	r written like v (B pius)
+nomc3_L02:11	otra	dnz		H	otra=dnz[]	otra=dnz[]	A=B+image	
+nomc3_L03:1	otro	vur	circumflex-above	H	otro=vur[circumflex-above]	otro=vur[circumflex-above]	A=B+image	
+nomc3_L03:2	opinion	vur		H	opinion=vur[]	opinion=vur[]	A=B+image	
+nomc3_L03:3	ordi	8os		H	ordi=8os[]	ordi=8os[]	A=B+image	
+nomc3_L03:4	Puerto	lis		H	Puerto=lis[]	Puerto=lis[]	A=B+image	
+nomc3_L03:5	Pera	cis		H	Pera=cis[]	Pera=cis[]	A=B+image	
+nomc3_L03:6	parte	zer		H	parte=zer[]	parte=zer[]	A=B+image	
+nomc3_L03:7	podra	24	other:f-like sign above,comma-after	M	podra=24[dot1-above,other:tick-above-right]	podra=24[other:flourish below,dot1-above]	reconciler	
+nomc3_L03:8	personas	cos	tick-above	M	personas=cos[other:tick-above]	personas=cos[dot1-above]	reconciler	acute tick over s
+nomc3_L03:9	platicas	dis		H	platicas=dis[]	platas=dis[]	reconciler	entry spelling only
+nomc3_L03:10	particular	zir		H	particular=zir[]	particular=zir[]	A=B+image	
+nomc3_L03:11	paris	zar		H	paris=zar[]	paris=zar[]	A=B+image	
+nomc3_L03:12	porque	fos		M	porque=sos[]	porque=fos[]	reconciler	f or long s (A sos); same letter as far, fem
+nomc3_L04:1	passar	xiv		H	passar=xiv[]	passar=xiv[]	A=B+image	
+nomc3_L04:2	per cierto	vor		H	per cierto=vor[]	per cierto=vor[]	A=B+image	
+nomc3_L04:3	papa	xw		H	papa=xw[]	papa=xw[]	A=B+image	
+nomc3_L04:4	principe	hus		H	principe=hus[]	principe=hus[]	A=B+image	
+nomc3_L04:5	para	xur		H	para=xur[]	para=xur[]	A=B+image	
+nomc3_L04:6	proposito	Jis		M	proposito=zis[]	proposito=js[]	reconciler	looped J letter (A zis, B js)
+nomc4_L01:1	quando	nes	dot1-above	H	quando=nes[dot1-above]	quando=nes[dot1-above]	A=B+image	
+nomc4_L01:2	que	zo	plus-above	H	que=zo[plus-above]	que=zo[plus-above]	A=B+image	
+nomc4_L01:3	qual	lus		H	qual=lus[]	qual=lus[]	A=B+image	
+nomc4_L01:4	quien	nus		H	quien=nus[]	quien=nus[]	A=B+image	
+nomc4_L01:5	Remedio	sas		H	Remedio=sas[]	Remedio=sas[]	A=B+image	
+nomc4_L01:6	Rey	tas		H	Rey=tas[]	Rey=tas[]	A=B+image	
+nomc4_L01:7	razon	pos	dot1-above	M	razon=pos[]	razon=pos[dot1-above]	reconciler	dot above o on the first razon
+nomc4_L01:8	Reyno	tis		H	Reyno=tis[]	Reyno=tis[]	A=B+image	
+nomc4_L01:9	razon	pos		M	razon=pos[]	razon=pos[dot1-above]	reconciler	second razon; no dot seen
+nomc4_L01:10	religion	rus		M	religion=us[]	religion=rus[]	reconciler	first letter a descending stroke (A us)
+nomc4_L01:11	reputation	pem		H	reputation=pem[]	reputation=pem[]	A=B+image	
+nomc4_L01:12	Roma	vos		H	Roma=vos[]	Roma=vos[]	A=B+image	
+nomc4_L02:1	Seignor	zus		H	Seignor=zus[]	Seignor=zus[]	A=B+image	
+nomc4_L02:2	S.mag.	so ou so	T-below(first),dot3-above(second)	M	S.mag.=zo ou 30[T-below,dot3-above]	S.mag.=zo ou zo[T-below,dot3-above]	reconciler	first sign S, 5 or z in both codes (A zo ou 30, B zo ou zo); o raised on the first
+nomc4_L02:3	satisfecho	yas		H	satisfecho=yas[]	satisfecho=yas[]	A=B+image	
+nomc4_L02:4	sustenta	46e	dot3-above	H	sustenta=46e[dot3-above]	sustenta=46e[dot3-above]	A=B+image	
+nomc4_L02:5	seruicio	34	T-below	H	seruicio=34[T-below]	seruicio=34[T-below]	A=B+image	
+nomc4_L02:6	siempre	34 ou 34	dot3-above,T-below	H	siempre=34 ou 34[dot3-above,T-below]	siempre=34 ou 34[dot3-above,T-below]	A=B+image	
+nomc4_L02:7	seruicio	31	dot3-above	H	seruicio=31[dot3-above]	seruicio=31[dot3-above]	A=B+image	
+nomc4_L02:8	sospechas	40	dot3-above	H	sospechas=40[dot3-above]	sospechas=40[dot3-above]	A=B+image	
+nomc4_L02:9	sennores	zus	plus-after,circumflex-above-right	M	Sennores=zus[plus-above,circumflex-above,dot3-above]	sennores=zus[plus-above,dot3-above]	reconciler	the three dots below belong to 49 (S.S.d)
+nomc4_L02:10	S.S.d	49	dot3-above	H	S.S.d=49[dot3-above]	S.S.d=49[dot3-above]	A=B+image	
+nomc4_L02:11	so	pa		H	so=pa[]	so=pa[]	A=B+image	
+nomc4_L03:1	tierra	63	dot3-before,T-below	M	tierra=02[dot3-above,T-below]	tierra=??[dot3-above,T-below]	reconciler	B ??; A 02
+nomc4_L03:2	tanta	87e		H	tanta=87e[]	tanta=87e[]	A=B+image	
+nomc4_L03:3	tratar	67e	dot2-above	H	tratar=67e[dot2-above]	tratar=67e[dot2-above]	A=B+image	
+nomc4_L03:4	tiempo	fi ou 61	T-below	H	tiempo=fi ou 61[T-below]	tiempo=fi ou 61[T-below]	A=B+image	
+nomc4_L03:5	tambien	55 ou 555	T-below	H	tambien=55 ou 555[T-below]	tambien=55 ou 555[T-below]	A=B+image	
+nomc4_L03:6	trauajo	65	T-below	M	tranalo=69[T-below]	trauajo=65[T-below]	reconciler	second digit 5 (A 69); entry trauajo/tranalo
+nomc4_L03:7	tanto	57	T-below	H	tanto=57[T-below]	tanto=57[T-below]	A=B+image	
+nomc4_L03:8	trauajo	pul	flourish-after	M	trabajo=pul[]	trauajo=pul[]	reconciler	second trauajo entry
+nomc4_L03:9	V.M.d	88	dot3-above	M	VMd=8es[dot3-above]	V.M.d=88[dot3-above]	reconciler	8s written as the looped 8 of 87e (A 8es)
+nomc4_L03:10	ue	0	plus-after	M	ue=0[plus-above]	ue=0+[]	reconciler	first sign 0 or a
+nomc4_L03:11	V.M.d	87e	dot3-above	H	VMd=87e[dot3-above]	V.M.d=87e[dot3-above]	reconciler	entry spelling only
+nomc4_L03:12	voluntad	?6 et tim	T-below	M	voluntad=cf6 et tun[T-below]	voluntad=c66 et tun[T-below]	reconciler	first sign a looped symbol (A cf, B c6); second code tim (B tun)
+nomc4_L04:1	V.M.d	??		M	VMd=qf[]	V.M.d=qp[]	reconciler	a two-part looped symbol (A qf, B qp)
+nomc4_L04:2	vn	a		H	vn=a[]	vn=a[]	A=B+image	
+nomc4_L04:3	vua	87e		M	via=87e[]	vua=87e[]	reconciler	entry vua or via
+nomn_nulles:1	NULLE	s	other:H-like mark above	M	NULLES=S[other:H-above]	NULLES=s[other:H-like mark above]	reconciler	S or 5
+nomn_nulles:2	NULLE	8	other:H-like mark above	H	NULLES=8[other:H-above]	NULLES=8[other:H-like mark above]	A=B+image	
+nomn_nulles:3	NULLE	9	other:H-like mark above	H	NULLES=9[other:H-above]	NULLES=9[other:H-like mark above]	A=B+image	
+nomn_nulles:4	NULLE	0	other:H-like mark above	H	NULLES=0[other:H-above]	NULLES=0[other:H-like mark above]	A=B+image	
+nomn_nulles:5	NULLE	25	other:H-like mark above	M	NULLES=2s[other:H-above]	NULLES=2s[other:H-like mark above]	reconciler	25 or 2s
+nomr_L01:1	Yglesia	gm		H	Yglesia=gm[]	Iglesia=gm[]	reconciler	entry spelling only
+nomr_L01:2	zia	706e		M	zia=70be[]	?ia=70be[]	reconciler	z the 3-shaped z (B ?); third sign read 6 (both passes b): the 6 of this hand has a tall ascender, cf. 46e, s6
+nomr_L01:3	seguir	zis		H	seguir=zis[]	seguir=zis[]	A=B+image	
+nomr_L01:4	D. de Sessa	95	T-below	H	D. de Sessa=95[T-below]	D. de Sessa=95[T-below]	A=B+image	
