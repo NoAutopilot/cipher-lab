@@ -134,3 +134,4 @@ of fr.3995 f.133r's word columns 18-51 and 60-91 (read the key's own canvas/regi
 canvas 18's figures for dots/overlines; one blind Sonnet read of the word columns (two if the reads disagree on more than a tenth), then
 apply under a PREREG (F4712-K71's controls are the pattern; the control must be able to fail differently). Grade per rule 4. Stop before a
 unit that would cross 80% of cap or box.
+Wave 3 sessions (07:34 UTC): V-VIV52 session_018HCD7Apw5uQ2Ve3hcy6hiH; BAL-WL session_01J6pPTJQ6M3Mnr51AYFtRaY; F4712-71 session_01TY8eHTbUVnsPRdy4rs5cXB.
