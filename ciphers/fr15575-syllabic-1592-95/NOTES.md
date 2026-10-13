@@ -1023,3 +1023,86 @@ Read so far: f.228 L01-L08 of ~47 lines (289 tokens: H 158, M 26, U 105); L01-L0
 - [retired] image-check: machine gloss read of the f.228 b2 band crops (N8B two passes, NV05C 12 view calls), rule 3 third attempt
 - [x] retry: L01-L04 gloss retried under an addendum and PASSed (N8-NV05)
 Verdict: keep going: 7 internal gaps; cheapest next: the Estado 609 fol.86 desk row (owner minutes, row staged in D4-SYL54); then a person's read of the f.2 gloss crops and the unchanged prereg re-run (~$2), which is now the only named route to f.2's 3-digit block (neither period key on fr.3995 covers it); then the no.54 mark legend (~$1.5)
+
+## SYL54-LEG: key no.54 mark legend (account-4 worker for LANE DEFAULT-A4-0935, 13 Oct 2026 09:45-10:0x UTC by date -u)
+
+Job: the gap "no.54 mark legend (f.97r right, 8 French lines)" (SYL-31 list). Output `key_no54_legend.tsv` (11 rows: H 5, M 6).
+No key file was edited.
+
+**Prior work.** `python3 tools/prior_work.py fr15575-syllabic-1592-95 --item-spec 'shelfmark=BnF fr.3995;folio=97r;canvas=f188;kind=key-legend' --step-type key --fetch`
+-> exit 4, two LEAD rows owed, both recorded CLEAR in prior-work.tsv: adhoc-7d3734:1-own:1a4888 (NOTES.md:472 is the nomenclator/no.31
+gap, since done by SYL-NOM and SYL-31, both of which name the legend as not transcribed) and adhoc-7d3734:1-own:79c132 (the live claim
+is this job). Check 1 (own work): no key_no54_legend.tsv on origin/main (git grep 09:50 UTC); clear. Check 2 (leaf): the legend is part of
+the key sheet itself. Check 3 (Tomokiyo): sources/cryptiana/web/spanish3.htm l.816-823 describes no.54's nomenclator and notes
+numbers with "++" or three dots above, but quotes no legend text (SYL-NOM's reading of that page; not re-read here). Check 4 (edition):
+not applicable to a key sheet.
+
+**Fetch and crops.** openapi.bnf.fr 1 request (200): f188 native region 5750,2250,1700,1150 (info.json already on disk, 7564x6055),
+saved as images/fr3995/src_image_v3_ark_12148_btv1b525085665_f188_5750_2250_1700_1150.jpg (re-saved at JPEG q80 to fit the folder).
+
+    $ python3 tools/iiif_lines.py --image images/fr3995/src_image_v3_..._f188_5750_2250_1700_1150.jpg --out images/fr3995/legend --prefix leg --debug
+      region 1700x1150, 8 lines ... centres 197 278 375 483 592 676 783 1079   (overlay: lumped the last three entries; crops discarded)
+    $ ... --centres 106,240,367,478,579,675,800,908,988,1080 --debug
+      region 1700x1150, 10 lines, 10 bands x 1 segments; wrote 10 crops (images/fr3995/legend/leg_L01-L10, manifest.json)
+
+Overlay checked: one entry per band (two-line entries in L02 and L07); L07's second line clips a descender at its foot.
+Overlay not committed (folder size). Folder: 28.75 MiB after this job (f188_overview1600.jpg reference copy downscaled to 1200 px).
+
+**Passes and reconciliation.** Two blind Sonnet passes (one call each, the 10 crops only, no key or sheet context) + reconciliation by
+the worker on the native region. The passes agree on every entry's letter (10/10 marked entries) and on every phrase up to spelling
+("vne"/"une", "caratures"/"caratuires") and one word ("apres ou au milieu": the region has no "au"). Both read the letter of lines 6 and
+10 as capital I; the reconciler reads l, since line 10 says "fait une l" (feminine letter name) and the glyph is the looped l of the
+sheet's header; graded M. err_2reader is not computed (11 short rows; agreement of two runs of one model, not accuracy).
+
+**What the legend says** (heading "...ltres", read "lettres", M). Marks put on a cipher character ("caratures") add a letter:
+| mark (as read) | adds | where |
+|---|---|---|
+| caret ^ | s | after, or in the middle of the characters it sits on (H) |
+| reversed-p curl | r | between the two characters (H) |
+| e-like hook with a bar | a | at the end of the characters (H) |
+| small o | s | between two characters (M) |
+| n-like squiggle | l | between the characters (M, letter read I by both passes) |
+| two dots | - | "the letters are doubled" (H) |
+| cross + | e | at the end of the characters (H) |
+| n with a dot | en | (no phrase, M) |
+| caret ^ (second entry) | l | (no phrase, M; same shape as the s-caret as read) |
+| n with a dot (second entry) | l | "fait une l" (M; same shape as the en-mark as read) |
+Two pairs of entries carry what read as the same mark with different letters (caret: s and l; dotted n: en and l). The 1700 px region
+does not separate them; a larger native crop of the left-hand marks (x 5750-6100) would.
+
+**Does it change key_no54?** No row was edited. Rows a later `decode_key.py --try` job should test (the legend says these marks are
+letter modifiers, not parts of the code):
+- key_no54_nomenclator.tsv, the 9 rows with `circumflex-above` (aquellos gi, carlos gue, franceses fum, Sumbres num, hermanos nem,
+  negotios non, necessitados nir, otro vur, sennores zus): 8 of the 9 entries end in -s, against 23 of 165 nomenclator entries overall
+  (binomial at 0.139: about 1e-6). This is a post-hoc count, not a pre-registered test: it fits the legend's "^ = s after", i.e. the
+  plural -s written as a mark on the singular's code (hermano = nem, hermanos = nem^). otro vur^ is the exception.
+- the 7 rows with `plus-after` (bien 87, cio 17, franceses fum, generale hom, necessitados nir, sennores zus, ue 0): the legend's
+  "+ at the end = e"; 4 of 7 entries end in -e/-es (franceses, generale, sennores, ue), 3 do not (bien, cio, necessitados).
+- key_no54.tsv header rows `.` under n (M, "may be a stray") and `hook` under z (M): not resolved by the legend; the dotted-n en-mark
+  is a mark on a character, not a header sign, so it does not settle the stray dot.
+- No marks in the legend for the nomenclator's three dots above, T below or plus2-above; those stay unexplained.
+For the decode of f.228/f.2: a code with a mark now has a written rule (code value + the added letter); decode.json has no mark field yet.
+
+**Requests:** openapi.bnf.fr 1. Subagent calls 2 (Sonnet), reconciliation 1. Cost not visible to this session.
+
+## Remaining gaps (SYL54-LEG, 13 Oct 2026; supersedes the SYL-31 list, the legend line closed, other lines kept)
+
+Read so far: f.228 L01-L08 of ~47 lines (289 tokens: H 158, M 26, U 105); L01-L04 gate PASS (0.674 vs p99 0.233); L05-L08 gate FAIL three times; fr.15576 f.2 body C01-C21 transcribed (334 cipher tokens, 6 unsettled), alignment gate FAIL (all M); key no.54 nomenclator transcribed (165 rows, H 113, M 52; SYL-NOM); key no.31 transcribed (122 rows, H 102, M 20; SYL-31); no.54 mark legend transcribed (11 rows, H 5, M 6; SYL54-LEG); f.2's 3-digit codes are outside the no.54 nomenclator and at chance against no.31's five 3-digit codes (p 0.287); f.233 unread.
+- Simancas original of the 5 Jan 1595 dispatch (AGS Estado leg. 609 fol. 86, Lefèvre IV no.811) - blocker: not-attempted; new material, a clear text of fr.15576 f.2 would allow `interlinear_align.py stream` against the whole cipher without the faint gloss; PARES dead from the cloud; next: LOCAL-QUEUE desk row for the PARES image of Estado 609 fol.86 or Manuscrits divers t.28 fol.183 (row text staged in the D4-SYL54 section), ~owner minutes
+- fr.15576 f.2 gloss (G01-G21) - blocker: not-attempted; two machine passes agree on about half the words, the alignment gate FAILed on that read (D4-15576); next: one-faint-line gloss crops (f2_fr15576/body f2i_L01..L41, contrast views) read by a person (sign sorter / desk row), then re-run the pre-registered alignment unchanged, ~$2 plus owner time
+- fr.15576 f.2 cipher - blocker: not-attempted; 6 unsettled groups (sorter focus: C05 g17, C09 g14, C10 g8, C11 g17, C14 g9, C18 g10); the 5-line letter-sign block at the top (and its gloss) unread; f.2's 3-digit system is not the no.54 nomenclator (SYL-NOM) and meets no.31's five 3-digit codes at chance (2 tokens, p 0.287, SYL-31), so its 3-digit block is unidentified; next: the 6 groups in the owner's sorter; top block 2 passes + reconcile against the no.31 letter signs (key_no31.tsv), ~$4.5
+- f.228 L05-L08 gloss - blocker: not-attempted; machine gloss read of the b2 band crops retired (rule 3, NV05C); next: one-faint-line crops (re-cut b2 bands, as done for f.2) read by a person in the sign sorter, or new material, ~$2
+- no.54 legend mark pairs and the mark rule in decoding - blocker: not-attempted; caret read for both s and l, dotted n for both en and l (SYL54-LEG); next: one native crop of the left-hand marks (canvas f188 x 5750-6100, y 2400-3400) eye-checked, then `decode_key.py --try` of the 9 circumflex and 7 plus-after nomenclator rows as code + modifier at their f.228 occurrences, ~$1.5
+- key no.54 nomenclator M rows (52, recurring glyphs z/J/S-5/8 and the Mismo/Marques/Muestra codes) - blocker: not-attempted; letter identity needs decoded context, the image alone does not settle it; next: the M rows checked against decoded occurrences in f.228 once its L09+ lines are read (decode_key.py --try), ~$0 extra
+- fr.15575 f.228 L09-L47 and f.233 - blocker: not-attempted; unread, band crops mix two gloss lines (NV05C); next: 4-line batches with gloss-only crops (one faint line per crop, the f.2 cut), ~$7.5 each
+
+## Escalation (SYL54-LEG, 13 Oct 2026)
+
+- [x] siblings: es.336 (Lasry), fr.3641, fr.3982-3983 letters in the same cipher listed by Tomokiyo; none is these leaves
+- [ ] clear-pages: AGS Estado leg. 609 fol. 86 (Lefèvre IV no.811); planned: desk row for its image
+- [ ] known-keys: no.54 syllabary control-checked (fr.3641 PASS; f.228 L01-L04 PASS; L05-L08 FAIL x3); no.54 nomenclator (SYL-NOM), no.31 (SYL-31) and the no.54 mark legend (SYL54-LEG, 11 rows H 5 M 6) transcribed; f.2's 3-digit block matches neither key; next: the legend's mark pairs eye-checked and the 16 marked nomenclator rows tested with --try (~$1.5)
+- [x] print: Lefèvre IV p.278 no.811 read in full (L47, DESK-LAND); van Durme 1964 snippet only
+- [ ] key-rebuild: f.2's period gloss alignment run once (D4-15576, gate FAIL on a machine gloss read); next: a person's gloss read, same prereg
+- [retired] image-check: machine gloss read of the f.228 b2 band crops (N8B two passes, NV05C 12 view calls), rule 3 third attempt
+- [x] retry: L01-L04 gloss retried under an addendum and PASSed (N8-NV05)
+Verdict: keep going: 7 internal gaps; cheapest next: the Estado 609 fol.86 desk row (owner minutes, row staged in D4-SYL54); then a person's read of the f.2 gloss crops and the unchanged prereg re-run (~$2); then the legend mark pairs and the --try test of the marked nomenclator rows (~$1.5)

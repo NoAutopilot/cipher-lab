@@ -1,0 +1,14 @@
+# BnF fr.3995 no.54, f.97r right margin (openapi ark btv1b525085665 canvas f188, native region 5750,2250,1700,1150), the French legend of marks. SYL54-LEG, 13 Oct 2026.
+# Two blind Sonnet passes on crops images/fr3995/legend/leg_L01-L10 + reconciliation by the worker on the native region. Grades: H = both passes and the image agree on mark letter and text; M = mark shape or a word unsure, or reconciler-settled. Text as written (old spelling, "caratures" = caracteres). Meaning column is a gloss of the written text, not a decode.
+line	crop	mark	letter	text	meaning	grade	note
+1	leg_L01	-	-	lettres [heading]	heading of the block	M	passes: "[?]ltres"/"tiltres", cut by the band edge; region shows a heading word ending -ltres/-ttres
+2	leg_L02	caret (small inverted V, ^-like)	s	signifie une S apres ou milieu des / caratures sur lequel il est mis	^ placed on a cipher character = an s after it (or in the middle of the characters)	H	both passes "apres ou au milieu"; region shows "apres ou milieu" (no "au"), M on that word only
+3	leg_L03	curl (reversed p / 9-shape with a flat top)	r	signifie un r entre les 2 caratures	r between the two characters	H	"2" is the numeral; "entre" written "ente" in the line
+4	leg_L04	hooked e-like stroke with a cross bar	a	signifie un a en fin des caratures	a at the end of the characters	H	"fin" written with minims ("fm")
+5	leg_L05	small o (dot or tick at its upper left)	S	signifie S entre 2 caratures	s between two characters	M	ink faint; a short tick before S in the text; last word written "catataires"-like by both passes; mark o vs v
+6	leg_L06	n-like squiggle (tilde with a hook)	l	signifie l entre les caratures	l between the characters	M	both passes read the letter as capital I; it is the same looped l as in line 10 "fait une l" and the header, so l (French 'une l', feminine letter name, as in line 10)
+7a	leg_L07	two dots above a bar (trema-like)	-	signifie quant les l[e]tres sont doubles	two dots = the letters are doubled	H	"lres" with abbreviation stroke = lettres; no letter after the dash
+7b	leg_L07	small cross +	e	en fin des caratures signifie e	+ at the end of the characters = e	H	second written line of the band
+8	leg_L08	n with a dot (or tick) above	en	-	n-dot = en	M	no phrase; mark shape resembles line 10's
+9	leg_L09	caret (small inverted V)	l	-	^ = l	M	no phrase; both passes read its mark like line 2's caret (= s): two values for one shape as read, the image does not separate them at this size
+10	leg_L10	n with a dot above (a further n below it at the band foot)	l	fait une l	n-dot = makes an l	M	mark like line 8's (= en); the lower "n" may be part of the mark or a separate line; letter read L by both passes
