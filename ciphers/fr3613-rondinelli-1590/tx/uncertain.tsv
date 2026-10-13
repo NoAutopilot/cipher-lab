@@ -1,0 +1,8 @@
+line	col	A	B	flagged	crop	both_conf
+f62_L02	3	"e"	"e"	A	../images/f62/f62_L02_s1.jpg,../images/f62/f62_L02_s2.jpg	A:M/B:H
+f62_L07	2	8^8	8^8	A	../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg	A:M/B:H
+f62_L13	7	2	2	B	../images/f62/f62_L13_s1.jpg,../images/f62/f62_L13_s2.jpg	A:H/B:M
+f62_L13	13	g^c	g^c	AB	../images/f62/f62_L13_s1.jpg,../images/f62/f62_L13_s2.jpg	A:M/B:M
+f62_L15	41	[theta]	[theta]	A	../images/f62/f62_L15_s1.jpg,../images/f62/f62_L15_s2.jpg	A:M/B:H
+f62_L16	29	[theta]	[theta]	A	../images/f62/f62_L16_s1.jpg,../images/f62/f62_L16_s2.jpg	A:M/B:H
+f62_L17	31	[p-loop]	[p-loop]	A	../images/f62/f62_L17_s1.jpg,../images/f62/f62_L17_s2.jpg	A:M/B:H

@@ -110,3 +110,31 @@ Total 70 rows, H 35 (0.50). Rules, annotations and the "di parigi" example sign 
 Rows l, m, y, z, t, u and s of no.34 are M; f.62 itself is not yet compared by image; no.32's marks are untranscribed in kind.
 ## Escalation
 Next: look at fr.3613 f.62 (Gallica ark for fr.3613, openapi route) and compare the sign set to no.34's 22 rows by eye, then one blind pass on no.34 rows l-z at native size to move the M rows; ~USD 2. Verdict: keep going.
+
+## BNF-RONDI-TX (13 Oct 2026, account 2)
+Window 15:23-15:3x UTC by date -u. Transcription only, no decode, no key applied. Image: fr.3613 canvas 69 (f.61v/62r spread, 7696x6499), `openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90582263/f69/full/max/0/default.jpg`, 1 request to openapi.bnf.fr, 0 to gallica; native deleted after cropping (URL in this line is the manifest). Pencil "62" is on the right-hand page, so f.62r is canvas 69.
+Crops: `images/f62/` (tools/iiif_lines.py --image ... --region 3980,1000,3500,4750 --follow-slope 400 --centres ..., debug overlay f62_lines_debug.jpg): 19 bands, L01-L17 cipher (17 lines), L18-L19 the clear Italian lines, two overlapping segments each (38 crops).
+**Crop error caught before it counted.** The automatic band detection (no --centres) returned 18 bands, missed the first cipher line and gave two adjacent bands the same line (a blind pass noticed L02 = L03). That whole first pass A (three calls) was discarded, never reconciled and is not in tx/; the crops were recut with eight-by-eye centres taken from a mid-page row profile and the overlay checked (L01 = "Suipta..." line, L17 = last cipher line). Cost of the discarded pass is in the session total below.
+Passes: tx/passA.tsv, tx/passB.tsv (two blind Sonnet passes, three calls each, crops + keys/sign_guide.md only; neither saw a key block or a guessed plaintext). Neither pass was told what a line should contain.
+**Agreement (not accuracy), cipher lines L01-L17 only:** 376 of 698 aligned columns equal = 53.9% (nw alignment, tools/reconcile_passes.py; all 19 rows incl. the clear lines: 397/721 = 55.1%). Per-line share in tx/agreement.tsv. Tokens: pass A 703 (19 rows), pass B 707; draft 698 cipher tokens in 17 lines, about 41 per line. Most disagreement is mark-above placement (which sign carries the small figure) and letter-like forms (the same stroke read as g/y/h/theta); on figures alone the passes agree much more, not measured separately.
+**Reconciliation not run.** The planned reconciliation call was not made: the session had already reached USD 3.95 of the 4 cap when pass B landed (80% line is 3.2; pass B was launched at 2.97, and the discarded pass A is what put it there). tx/ciphertext.tsv is therefore only tools/reconcile_passes.py's draft (pass A where the passes split, B's reading in the `alt` column): 369 tokens agree (marked H in the draft's confidence column, meaning the two passes agree, not that the reading is verified) and 329 differ. It is not a reconciled transcription and must not be used as a ciphertext for a key test.
+**Signs not in the guide:** none added to sign_guide.md (the passes used [theta], [x], [cross], [f], [G-loop], [4-cross], plus Latin-letter look-alikes; a look-alike table for this hand has not been drawn).
+**Eye comparison with no.34 (M, by base sign over the 369 agreed tokens, marks stripped; no pixel-level check of no.34):** 28 distinct base signs, 18 occur in block_no34's sign column (figures 2 3 5 6 7 8 9, letter forms c f h l m n t u y, cross, theta-like), 10 do not (s, 1, i, g, 4, d, [f], [x], a, r); 312 of 369 tokens (84.6%) are covered. s, g, i, d are frequent among the uncovered ones (13, 9, 9, 3 tokens), 1 and 4 are figures no.34 does not list. The block's own rows l-z are M-graded and the passes' Latin look-alike names are unreliable, so this is a screen for what to look at, not support for the key.
+**Clear lines at the foot (text, both passes agree apart from the last word's tail):** L18 "Jo sarei partito un pezzo fa se hauessi trouato il modo"; L19 "di pagare per il meno una parte di q?llo che deuo" (pass B "de? uo?"); the third clear line seen in the brief is not on this crop. These match the leaf-look transcription ("Io sarei partito un pezzo fa se havesti trovato il modo di pagare...") and may be a crib; unused.
+**Requests this job:** openapi.bnf.fr 1 (200, 6.5 MB), gallica.bnf.fr 0.
+**Cost:** session total USD 3.95 of the 4 cap at the last read (15:29 UTC), 7 subagent calls (3 discarded). Over 80%, under the cap.
+
+## Remaining gaps (BNF-RONDI-TX, 13 Oct 2026)
+Read so far: 0 of 698 tokens read (transcription only, no key applied); the transcription itself is a draft with 369 of 698 columns agreeing between two passes (agreement, not accuracy).
+- 329 split columns of f.62r L01-L17 - blocker: not-attempted; reconciliation against the crops was not run for lack of cap; next: reconcile tx/disagreements.tsv in one call, ~$0.6
+- error of the transcription unmeasured - blocker: not-attempted; no third blind pass yet; next: blind third pass over images/f62, ~$1.2
+- key test of keys/block_no34.tsv on f.62r - blocker: not-attempted; waits on a reconciled transcription; next: decode_key.py --try, ~$1.5
+## Escalation (BNF-RONDI-TX, 13 Oct 2026)
+- [n/a] siblings: f.61v and f.62v are clear letters, no sibling cipher leaf in this folder
+- [n/a] clear-pages: the two clear foot lines are transcribed above and carry no usable cipher cross-check
+- [x] known-keys: fr.3995 no.32-34 transcribed (BNF-RONDI-KEY); eye screen against no.34 done here, 84.6% of agreed tokens covered
+- [n/a] print: Gomberville seconde partie searched without a hit in BNF-RONDI2 and BNF-GOMB
+- [ ] key-rebuild: test keys/block_no34.tsv rows l-z with decode_key.py --try after reconciliation
+- [x] image-check: native f.62r image cut into crops with the overlay checked (the first auto-cut was wrong and recut)
+- [ ] retry: reconcile the 329 split columns, then one blind third pass to measure error; if splits stay above a tenth the next pass is a person's in the sign sorter
+Verdict: keep going: 3 internal gaps; cheapest next: reconcile tx/disagreements.tsv against the crops, ~$0.6

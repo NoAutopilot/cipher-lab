@@ -1,0 +1,325 @@
+line	col	A	B	flagged	crop
+f62_L01	1	"G"	[G-loop]^3	A	../images/f62/f62_L01_s1.jpg,../images/f62/f62_L01_s2.jpg
+f62_L01	4	[p-loop]	"p"		../images/f62/f62_L01_s1.jpg,../images/f62/f62_L01_s2.jpg
+f62_L01	8	"d"	"d"^2	B	../images/f62/f62_L01_s1.jpg,../images/f62/f62_L01_s2.jpg
+f62_L01	10	"f"	"f"^5	B	../images/f62/f62_L01_s1.jpg,../images/f62/f62_L01_s2.jpg
+f62_L01	12	"g"	9^8	B	../images/f62/f62_L01_s1.jpg,../images/f62/f62_L01_s2.jpg
+f62_L01	13	2	2^3	B	../images/f62/f62_L01_s1.jpg,../images/f62/f62_L01_s2.jpg
+f62_L01	16	+	[cross]		../images/f62/f62_L01_s1.jpg,../images/f62/f62_L01_s2.jpg
+f62_L01	19	"l"	"l"^c	B	../images/f62/f62_L01_s1.jpg,../images/f62/f62_L01_s2.jpg
+f62_L01	20	2	2^9	B	../images/f62/f62_L01_s1.jpg,../images/f62/f62_L01_s2.jpg
+f62_L01	23	"l"	"l"^8		../images/f62/f62_L01_s1.jpg,../images/f62/f62_L01_s2.jpg
+f62_L01	25	"h"	"h"^n	B	../images/f62/f62_L01_s1.jpg,../images/f62/f62_L01_s2.jpg
+f62_L01	28	"h"	"h"^n		../images/f62/f62_L01_s1.jpg,../images/f62/f62_L01_s2.jpg
+f62_L01	30	3	-		../images/f62/f62_L01_s1.jpg,../images/f62/f62_L01_s2.jpg
+f62_L01	31	5	35		../images/f62/f62_L01_s1.jpg,../images/f62/f62_L01_s2.jpg
+f62_L02	1	"y"	"y"^3	B	../images/f62/f62_L02_s1.jpg,../images/f62/f62_L02_s2.jpg
+f62_L02	2	"i"^	"i"^e	AB	../images/f62/f62_L02_s1.jpg,../images/f62/f62_L02_s2.jpg
+f62_L02	4	"l"^3	"l"		../images/f62/f62_L02_s1.jpg,../images/f62/f62_L02_s2.jpg
+f62_L02	6	5	35		../images/f62/f62_L02_s1.jpg,../images/f62/f62_L02_s2.jpg
+f62_L02	7	+	[cross]		../images/f62/f62_L02_s1.jpg,../images/f62/f62_L02_s2.jpg
+f62_L02	9	"g"	-		../images/f62/f62_L02_s1.jpg,../images/f62/f62_L02_s2.jpg
+f62_L02	10	2^	9^3	AB	../images/f62/f62_L02_s1.jpg,../images/f62/f62_L02_s2.jpg
+f62_L02	13	+	[cross]		../images/f62/f62_L02_s1.jpg,../images/f62/f62_L02_s2.jpg
+f62_L02	14	"d"	"d"^8		../images/f62/f62_L02_s1.jpg,../images/f62/f62_L02_s2.jpg
+f62_L02	16	"g"	9^8		../images/f62/f62_L02_s1.jpg,../images/f62/f62_L02_s2.jpg
+f62_L02	17	6	6^6		../images/f62/f62_L02_s1.jpg,../images/f62/f62_L02_s2.jpg
+f62_L02	18	"g"	9^8.3	B	../images/f62/f62_L02_s1.jpg,../images/f62/f62_L02_s2.jpg
+f62_L02	19	8^	8	A	../images/f62/f62_L02_s1.jpg,../images/f62/f62_L02_s2.jpg
+f62_L02	22	4	[4-cross]		../images/f62/f62_L02_s1.jpg,../images/f62/f62_L02_s2.jpg
+f62_L02	27	"g"	"y"^c		../images/f62/f62_L02_s1.jpg,../images/f62/f62_L02_s2.jpg
+f62_L02	31	"h"	"h"^1		../images/f62/f62_L02_s1.jpg,../images/f62/f62_L02_s2.jpg
+f62_L02	35	"v"	"y"		../images/f62/f62_L02_s1.jpg,../images/f62/f62_L02_s2.jpg
+f62_L03	1	[theta]	[theta]^8		../images/f62/f62_L03_s1.jpg,../images/f62/f62_L03_s2.jpg
+f62_L03	9	"d"	"d"^c	B	../images/f62/f62_L03_s1.jpg,../images/f62/f62_L03_s2.jpg
+f62_L03	11	[theta]^	[theta]	A	../images/f62/f62_L03_s1.jpg,../images/f62/f62_L03_s2.jpg
+f62_L03	16	3	-		../images/f62/f62_L03_s1.jpg,../images/f62/f62_L03_s2.jpg
+f62_L03	17	5	35		../images/f62/f62_L03_s1.jpg,../images/f62/f62_L03_s2.jpg
+f62_L03	19	"s"	-		../images/f62/f62_L03_s1.jpg,../images/f62/f62_L03_s2.jpg
+f62_L03	22	"g"	9		../images/f62/f62_L03_s1.jpg,../images/f62/f62_L03_s2.jpg
+f62_L03	25	[theta]	[theta]^3		../images/f62/f62_L03_s1.jpg,../images/f62/f62_L03_s2.jpg
+f62_L03	29	[theta]	[theta]^c	B	../images/f62/f62_L03_s1.jpg,../images/f62/f62_L03_s2.jpg
+f62_L03	40	"y"	"y"^n	B	../images/f62/f62_L03_s1.jpg,../images/f62/f62_L03_s2.jpg
+f62_L03	45	"g"	"q"		../images/f62/f62_L03_s1.jpg,../images/f62/f62_L03_s2.jpg
+f62_L04	1	"u"	"u"^8		../images/f62/f62_L04_s1.jpg,../images/f62/f62_L04_s2.jpg
+f62_L04	3	"g"	9^n		../images/f62/f62_L04_s1.jpg,../images/f62/f62_L04_s2.jpg
+f62_L04	4	2	2^8		../images/f62/f62_L04_s1.jpg,../images/f62/f62_L04_s2.jpg
+f62_L04	7	"h"	"h"^8		../images/f62/f62_L04_s1.jpg,../images/f62/f62_L04_s2.jpg
+f62_L04	10	6	6^1		../images/f62/f62_L04_s1.jpg,../images/f62/f62_L04_s2.jpg
+f62_L04	12	[theta]	[theta]^n		../images/f62/f62_L04_s1.jpg,../images/f62/f62_L04_s2.jpg
+f62_L04	14	5	"s"^7		../images/f62/f62_L04_s1.jpg,../images/f62/f62_L04_s2.jpg
+f62_L04	16	"d"	"d"^i		../images/f62/f62_L04_s1.jpg,../images/f62/f62_L04_s2.jpg
+f62_L04	18	-	"s"		../images/f62/f62_L04_s1.jpg,../images/f62/f62_L04_s2.jpg
+f62_L04	26	1	"i"		../images/f62/f62_L04_s1.jpg,../images/f62/f62_L04_s2.jpg
+f62_L04	32	"y"	"y"^8	B	../images/f62/f62_L04_s1.jpg,../images/f62/f62_L04_s2.jpg
+f62_L04	41	-	[cross]		../images/f62/f62_L04_s1.jpg,../images/f62/f62_L04_s2.jpg
+f62_L05	1	2_5	2_8^s	AB	../images/f62/f62_L05_s1.jpg,../images/f62/f62_L05_s2.jpg
+f62_L05	2	"l"	"l"^9	A	../images/f62/f62_L05_s1.jpg,../images/f62/f62_L05_s2.jpg
+f62_L05	3	1	"l"^c	B	../images/f62/f62_L05_s1.jpg,../images/f62/f62_L05_s2.jpg
+f62_L05	4	"u"	"i"	A	../images/f62/f62_L05_s1.jpg,../images/f62/f62_L05_s2.jpg
+f62_L05	8	"g"	"q"^c		../images/f62/f62_L05_s1.jpg,../images/f62/f62_L05_s2.jpg
+f62_L05	15	7	7^8		../images/f62/f62_L05_s1.jpg,../images/f62/f62_L05_s2.jpg
+f62_L05	18	"g"	"g"^c		../images/f62/f62_L05_s1.jpg,../images/f62/f62_L05_s2.jpg
+f62_L05	20	5	"s"^3		../images/f62/f62_L05_s1.jpg,../images/f62/f62_L05_s2.jpg
+f62_L05	26	5	"s"^3		../images/f62/f62_L05_s1.jpg,../images/f62/f62_L05_s2.jpg
+f62_L05	30	5	5^8		../images/f62/f62_L05_s1.jpg,../images/f62/f62_L05_s2.jpg
+f62_L05	32	6	6^c		../images/f62/f62_L05_s1.jpg,../images/f62/f62_L05_s2.jpg
+f62_L05	35	"u"	"u"^n		../images/f62/f62_L05_s1.jpg,../images/f62/f62_L05_s2.jpg
+f62_L06	1	5	-		../images/f62/f62_L06_s1.jpg,../images/f62/f62_L06_s2.jpg
+f62_L06	2	6	"s"^3		../images/f62/f62_L06_s1.jpg,../images/f62/f62_L06_s2.jpg
+f62_L06	3	"h"	"b"		../images/f62/f62_L06_s1.jpg,../images/f62/f62_L06_s2.jpg
+f62_L06	4	"n"	"u"^c		../images/f62/f62_L06_s1.jpg,../images/f62/f62_L06_s2.jpg
+f62_L06	6	5	"s"		../images/f62/f62_L06_s1.jpg,../images/f62/f62_L06_s2.jpg
+f62_L06	7	5	"s"		../images/f62/f62_L06_s1.jpg,../images/f62/f62_L06_s2.jpg
+f62_L06	9	"i"	"i"^8		../images/f62/f62_L06_s1.jpg,../images/f62/f62_L06_s2.jpg
+f62_L06	11	"v"	"i"		../images/f62/f62_L06_s1.jpg,../images/f62/f62_L06_s2.jpg
+f62_L06	15	"n"	"u"^n		../images/f62/f62_L06_s1.jpg,../images/f62/f62_L06_s2.jpg
+f62_L06	16	5	"s"		../images/f62/f62_L06_s1.jpg,../images/f62/f62_L06_s2.jpg
+f62_L06	18	-	"b"^3		../images/f62/f62_L06_s1.jpg,../images/f62/f62_L06_s2.jpg
+f62_L06	21	"y"	"y"^n		../images/f62/f62_L06_s1.jpg,../images/f62/f62_L06_s2.jpg
+f62_L06	22	5	"s"		../images/f62/f62_L06_s1.jpg,../images/f62/f62_L06_s2.jpg
+f62_L06	24	5	"s"		../images/f62/f62_L06_s1.jpg,../images/f62/f62_L06_s2.jpg
+f62_L06	27	[theta]	[theta]^3		../images/f62/f62_L06_s1.jpg,../images/f62/f62_L06_s2.jpg
+f62_L06	36	6	"b"		../images/f62/f62_L06_s1.jpg,../images/f62/f62_L06_s2.jpg
+f62_L06	39	+	[cross]		../images/f62/f62_L06_s1.jpg,../images/f62/f62_L06_s2.jpg
+f62_L06	40	"f"	"l"^c		../images/f62/f62_L06_s1.jpg,../images/f62/f62_L06_s2.jpg
+f62_L06	41	5	"s"^6		../images/f62/f62_L06_s1.jpg,../images/f62/f62_L06_s2.jpg
+f62_L07	4	[theta]	θ^n		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	5	"c"	c		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	8	8^n	8		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	9	"u"	"n"^h		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	10	"y"^h	"y"		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	11	[theta]	θ		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	14	"b"	b		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	17	7^c	7		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	18	3	3^c		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	21	1_n	1^n		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	22	"u"	"n"^n		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	24	[theta]^c	θ^7		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	27	[theta]	θ^h		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	29	"g"	-		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	30	"c"	-		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	31	"h"^4	-		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	32	5	g		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	33	8	c		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	34	"h"	h		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	37	"h"	h		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	40	8^c	8^8		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	41	"g"	g		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	43	"i"	i		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L07	46	2^c8	2		../images/f62/f62_L07_s1.jpg,../images/f62/f62_L07_s2.jpg
+f62_L08	3	5^c	5		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	4	"f"	f		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	6	"h"	h		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	9	"d"	l		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	10	[theta]	θ		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	11	"n"	n		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	12	"h"	h		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	14	-	θ		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	15	[theta]^8	8^8		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	16	9	g		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	17	"g"	g		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	19	1	1^c		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	20	[theta]	θ		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	25	"d"	"i"^c		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	26	"l"	l^3		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	27	2^3	2		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	28	[theta]	θ		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	29	3^8	3		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	30	"m"	m		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	31	[theta]^8	θ^8		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	32	9	g^3		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	34	[theta]	θ		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	36	"l"^8	l^2		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	37	"y"	y		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	38	"h"	h		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	39	5^2	5		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	40	"f"^3	f		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	41	"h"	h		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	42	"g"	g		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L08	43	"d"^3	d^E		../images/f62/f62_L08_s1.jpg,../images/f62/f62_L08_s2.jpg
+f62_L09	1	[x]	x		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	2	[theta]	θ^9		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	3	5^9	5		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	4	"c"	c^i		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	9	3	3^i		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	11	[theta]	θ^3		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	12	9^3	g		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	14	"t"	t^i		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	15	3^i	3		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	16	"u"	u^n		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	17	"y"	y		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	19	"h"^n	h^8		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	22	"g"^8	g^6		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	23	"o"	o		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	24	"y"^n	y^n		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	25	[x]	x		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	26	"m"	m^8		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	27	"y"	y		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	28	7	7^i		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	29	"c"	c		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	30	"h"	h		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	31	8^8	8		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	34	"y"	y		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	36	"h"	h		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	37	"f"	f		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	39	"m"	m		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L09	40	"y"	y		../images/f62/f62_L09_s1.jpg,../images/f62/f62_L09_s2.jpg
+f62_L10	1	9^8	g^8		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	3	9	-		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	4	[theta]	g^c		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	5	"y"	θ^c		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	6	1	y^8		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	7	"i"	l		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	8	1	i		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	9	"k"	k		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	11	"h"	h		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	12	"c"	c		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	14	-	h		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	15	"h"	f^7		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	16	"f"	z^c		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	18	9	-		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	19	"z"	g		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	20	"c"	z		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	21	"l"	c		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	22	[cross]	l^7		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	23	[x]	x		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	24	[theta]	θ		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	26	-	h^n		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	27	-	g		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	28	-	h^z		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	29	-	s^8		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	30	-	s^c		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	31	-	e		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	32	-	l		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	33	-	h		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	34	"h"	3		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	35	9	u		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	36	"h"	y		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	37	5	g^8		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	38	5	i		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	39	"c"	s		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L10	40	"t"	s		../images/f62/f62_L10_s1.jpg,../images/f62/f62_L10_s2.jpg
+f62_L11	1	"A"	A		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	2	"n"	n		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	3	"l"	l		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	4	"h"	h		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	6	"h"	h		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	7	"c"	c		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	9	9	g^3		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	10	"h"^3	h^2		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	11	9	g^8		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	12	"y"	y		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	14	-	h^3		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	15	-	i^c		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	16	"h"	c^8		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	17	"i"	1		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	18	"u"	u		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	19	"y"	y		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	20	[l-loop]	l		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	22	[x]	x		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	24	5	5^i		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	25	"u"^i	u		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	26	"y"	y^n		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	27	9	g		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	28	2	2^8		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	29	"d"	d^n		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	30	"m"	m		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	31	"d"	d		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	32	"g"	g		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	33	"c"	c		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	34	[theta]	θ		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	35	"m"	m		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L11	37	"y"	y		../images/f62/f62_L11_s1.jpg,../images/f62/f62_L11_s2.jpg
+f62_L12	1	"i"	i		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L12	2	"h"	h		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L12	4	"l"^8	l^8		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L12	5	"y"	y		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L12	6	"h"	h^2		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L12	7	5^2	5		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L12	8	[theta]	t^i		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L12	10	"h"^i	h^3		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L12	11	9	g^8		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L12	13	[theta]	θ^8		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L12	14	6^8	6^6		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L12	16	"u"	n		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L12	18	2	2^8		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L12	20	"m"^c	m^c		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L12	21	"y"	y		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L12	24	1	i^8		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L12	25	[theta]^8	θ		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L12	26	"y"	y		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L12	28	"m"	m		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L12	30	"b"	6		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L12	32	"b"	l		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L12	33	[theta]	θ^8		../images/f62/f62_L12_s1.jpg,../images/f62/f62_L12_s2.jpg
+f62_L13	1	[f]^7	[f]	A	../images/f62/f62_L13_s1.jpg,../images/f62/f62_L13_s2.jpg
+f62_L13	3	m^6	m	A	../images/f62/f62_L13_s1.jpg,../images/f62/f62_L13_s2.jpg
+f62_L13	5	h^[l-stroke]	h	A	../images/f62/f62_L13_s1.jpg,../images/f62/f62_L13_s2.jpg
+f62_L13	6	5^8	5		../images/f62/f62_L13_s1.jpg,../images/f62/f62_L13_s2.jpg
+f62_L13	8	l	1		../images/f62/f62_L13_s1.jpg,../images/f62/f62_L13_s2.jpg
+f62_L13	9	h^e	h^8	AB	../images/f62/f62_L13_s1.jpg,../images/f62/f62_L13_s2.jpg
+f62_L13	15	5^8	-		../images/f62/f62_L13_s1.jpg,../images/f62/f62_L13_s2.jpg
+f62_L13	16	1^[dot]	5		../images/f62/f62_L13_s1.jpg,../images/f62/f62_L13_s2.jpg
+f62_L13	17	8	1^3	AB	../images/f62/f62_L13_s1.jpg,../images/f62/f62_L13_s2.jpg
+f62_L13	18	[theta]^7	[theta]		../images/f62/f62_L13_s1.jpg,../images/f62/f62_L13_s2.jpg
+f62_L13	19	m^6	m		../images/f62/f62_L13_s1.jpg,../images/f62/f62_L13_s2.jpg
+f62_L13	20	6^5	6^8	B	../images/f62/f62_L13_s1.jpg,../images/f62/f62_L13_s2.jpg
+f62_L13	22	8^8	8		../images/f62/f62_L13_s1.jpg,../images/f62/f62_L13_s2.jpg
+f62_L13	27	-	2		../images/f62/f62_L13_s1.jpg,../images/f62/f62_L13_s2.jpg
+f62_L13	28	2^8	l		../images/f62/f62_L13_s1.jpg,../images/f62/f62_L13_s2.jpg
+f62_L13	29	l^[dash]	4		../images/f62/f62_L13_s1.jpg,../images/f62/f62_L13_s2.jpg
+f62_L13	30	8^h	8^2	A	../images/f62/f62_L13_s1.jpg,../images/f62/f62_L13_s2.jpg
+f62_L13	35	h^[dots]	h	A	../images/f62/f62_L13_s1.jpg,../images/f62/f62_L13_s2.jpg
+f62_L14	2	d^[c]	d^6	AB	../images/f62/f62_L14_s1.jpg,../images/f62/f62_L14_s2.jpg
+f62_L14	3	8^9	[theta]^8	A	../images/f62/f62_L14_s1.jpg,../images/f62/f62_L14_s2.jpg
+f62_L14	4	9^8	9		../images/f62/f62_L14_s1.jpg,../images/f62/f62_L14_s2.jpg
+f62_L14	6	5	5^2	B	../images/f62/f62_L14_s1.jpg,../images/f62/f62_L14_s2.jpg
+f62_L14	7	8^8	[theta]		../images/f62/f62_L14_s1.jpg,../images/f62/f62_L14_s2.jpg
+f62_L14	8	9	g		../images/f62/f62_L14_s1.jpg,../images/f62/f62_L14_s2.jpg
+f62_L14	9	h^2	h^8	A	../images/f62/f62_L14_s1.jpg,../images/f62/f62_L14_s2.jpg
+f62_L14	10	8^8	e^8		../images/f62/f62_L14_s1.jpg,../images/f62/f62_L14_s2.jpg
+f62_L14	13	5^8	5		../images/f62/f62_L14_s1.jpg,../images/f62/f62_L14_s2.jpg
+f62_L14	26	9^9	-		../images/f62/f62_L14_s1.jpg,../images/f62/f62_L14_s2.jpg
+f62_L14	27	3	g^9		../images/f62/f62_L14_s1.jpg,../images/f62/f62_L14_s2.jpg
+f62_L14	29	-	6		../images/f62/f62_L14_s1.jpg,../images/f62/f62_L14_s2.jpg
+f62_L14	30	6^7	5		../images/f62/f62_L14_s1.jpg,../images/f62/f62_L14_s2.jpg
+f62_L15	2	2^6	2		../images/f62/f62_L15_s1.jpg,../images/f62/f62_L15_s2.jpg
+f62_L15	4	h^2	h		../images/f62/f62_L15_s1.jpg,../images/f62/f62_L15_s2.jpg
+f62_L15	5	2	2^2		../images/f62/f62_L15_s1.jpg,../images/f62/f62_L15_s2.jpg
+f62_L15	6	6^6	6		../images/f62/f62_L15_s1.jpg,../images/f62/f62_L15_s2.jpg
+f62_L15	7	[theta]^8	[theta]^6		../images/f62/f62_L15_s1.jpg,../images/f62/f62_L15_s2.jpg
+f62_L15	8	3	1^8		../images/f62/f62_L15_s1.jpg,../images/f62/f62_L15_s2.jpg
+f62_L15	10	3^c	3		../images/f62/f62_L15_s1.jpg,../images/f62/f62_L15_s2.jpg
+f62_L15	17	b	l		../images/f62/f62_L15_s1.jpg,../images/f62/f62_L15_s2.jpg
+f62_L15	18	y^2	y		../images/f62/f62_L15_s1.jpg,../images/f62/f62_L15_s2.jpg
+f62_L15	29	5^[tick]	5^1		../images/f62/f62_L15_s1.jpg,../images/f62/f62_L15_s2.jpg
+f62_L15	30	6^8	6		../images/f62/f62_L15_s1.jpg,../images/f62/f62_L15_s2.jpg
+f62_L15	36	h^c	h		../images/f62/f62_L15_s1.jpg,../images/f62/f62_L15_s2.jpg
+f62_L15	38	[theta]^3	[theta]^8		../images/f62/f62_L15_s1.jpg,../images/f62/f62_L15_s2.jpg
+f62_L15	39	8^8	8		../images/f62/f62_L15_s1.jpg,../images/f62/f62_L15_s2.jpg
+f62_L16	1	g^8	g		../images/f62/f62_L16_s1.jpg,../images/f62/f62_L16_s2.jpg
+f62_L16	5	y^3	y		../images/f62/f62_L16_s1.jpg,../images/f62/f62_L16_s2.jpg
+f62_L16	6	5	5^3		../images/f62/f62_L16_s1.jpg,../images/f62/f62_L16_s2.jpg
+f62_L16	8	u^2	u		../images/f62/f62_L16_s1.jpg,../images/f62/f62_L16_s2.jpg
+f62_L16	10	5	s		../images/f62/f62_L16_s1.jpg,../images/f62/f62_L16_s2.jpg
+f62_L16	11	y^8	y		../images/f62/f62_L16_s1.jpg,../images/f62/f62_L16_s2.jpg
+f62_L16	14	5^2	5		../images/f62/f62_L16_s1.jpg,../images/f62/f62_L16_s2.jpg
+f62_L16	15	h^2	h		../images/f62/f62_L16_s1.jpg,../images/f62/f62_L16_s2.jpg
+f62_L16	16	5	s		../images/f62/f62_L16_s1.jpg,../images/f62/f62_L16_s2.jpg
+f62_L16	21	d^c	d		../images/f62/f62_L16_s1.jpg,../images/f62/f62_L16_s2.jpg
+f62_L16	22	l^7	l		../images/f62/f62_L16_s1.jpg,../images/f62/f62_L16_s2.jpg
+f62_L16	26	6^c	6		../images/f62/f62_L16_s1.jpg,../images/f62/f62_L16_s2.jpg
+f62_L16	28	u	-		../images/f62/f62_L16_s1.jpg,../images/f62/f62_L16_s2.jpg
+f62_L16	30	4	-		../images/f62/f62_L16_s1.jpg,../images/f62/f62_L16_s2.jpg
+f62_L16	31	l^3	l		../images/f62/f62_L16_s1.jpg,../images/f62/f62_L16_s2.jpg
+f62_L16	36	l^3	l		../images/f62/f62_L16_s1.jpg,../images/f62/f62_L16_s2.jpg
+f62_L16	38	1	i		../images/f62/f62_L16_s1.jpg,../images/f62/f62_L16_s2.jpg
+f62_L17	6	[theta]^	[theta]	A	../images/f62/f62_L17_s1.jpg,../images/f62/f62_L17_s2.jpg
+f62_L17	9	[t]	[cross]		../images/f62/f62_L17_s1.jpg,../images/f62/f62_L17_s2.jpg
+f62_L17	10	d^	d	A	../images/f62/f62_L17_s1.jpg,../images/f62/f62_L17_s2.jpg
+f62_L17	18	5^2	5		../images/f62/f62_L17_s1.jpg,../images/f62/f62_L17_s2.jpg
+f62_L17	23	[theta]^8	[theta]		../images/f62/f62_L17_s1.jpg,../images/f62/f62_L17_s2.jpg
+f62_L17	25	y^1	y		../images/f62/f62_L17_s1.jpg,../images/f62/f62_L17_s2.jpg
+f62_L19	11	-	de	B	../images/f62/f62_L19_s1.jpg,../images/f62/f62_L19_s2.jpg
+f62_L19	12	deuo	uo	B	../images/f62/f62_L19_s1.jpg,../images/f62/f62_L19_s2.jpg
