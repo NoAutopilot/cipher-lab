@@ -2164,3 +2164,19 @@ Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R
 - [ ] image-check: split-tile look-alike done (10 relabels, gate FAIL, D2-C1161LA); planted agreed-token audit with the Sonnet window reader NON-TEST (catch 0.65 < 0.80, D2-C1161AUD); next: the owner's sign sorter on la/focus.tsv + aud/focus.tsv, or the audit with re-cut slope-followed windows and a stronger reader
 - [x] retry: rule-7 re-derivation of the JOINT9 reading SAME (VER-C1161J); regraded reading --check exit 0
 Verdict: keep going: 3 internal gaps; cheapest next: owner's sign sorter on la/focus.tsv + aud/focus.tsv, then a held-out-leaf judge test, ~$2
+
+## BnF answer on the reproduction request (quote DEV-2610-010032; pasted to the account-3 parent 13 Oct 2026 05:1x UTC by date -u)
+
+The BnF's Digital Images and Services customer service answered the 27 Sept batch request (ASKS 78 item 6, "Avis de Flandre,
+chiffrés", which asked where the cipher sits because the finding aid's "fol. 106 et suiv." held no cipher). Their answer: the
+encrypted documents are **folios 162 recto to 164 verso** of Clairambault 1161, digitised on Gallica at
+https://gallica.bnf.fr/ark:/12148/btv1b90010063/f186.item, between the "Memorandum of the same to the King, with documents,
+1704-1708" and the "original letter from François II de Noailles, Bishop of Dax, to the Marquis of Villars, 20 December 1570"
+in the Archives et manuscrits database. They ask the requester to confirm that this is the document, and whether a new colour
+PDF reproduction at 150 dpi is wanted.
+
+That is the same run of leaves this folder already reads (Gallica canvases c185R-c188L, IIIF f186-f189; BNF-VALUE.tsv), so the
+BnF independently confirms the location our canvas sweep found, and the catalogue's "fol. 106" is superseded by ff.162r-164v
+(record it so in sources.tsv when this folder is next worked). The parent's recommendation to the owner: confirm the document
+and decline the new 150-dpi PDF, since the Gallica images are at least as sharp and the reading already uses them. Desk card
+`bnf-quote-010032`. Nothing else on this target was changed (owner: everything else paused).
