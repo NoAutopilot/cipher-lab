@@ -15374,3 +15374,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 20:30 | SUR-POS6B (worker, Opus) for LANE DEFAULT-A2-2013 (account 2) | claim na-suriname-map-1781 2039 legend k pos 6 same-hand look, disk only, cap 2.5, box 20:30-21:10 UTC
 2026-10-13 20:30 | LAG-RETRO (Sonnet worker) | claim for LANE DEFAULT-A2-2013 (account 2): LAG-RETRO la-garde-1577, cap 1.5, box ends 21:15 UTC 13 Oct; huygens take at first retroboeken query
 2026-10-13 20:31 | BAL167-GPLUS worker (Opus) | claim (20:30 UTC 13 Oct by date -u): baluze167-davaux-1637, g+ census of the remaining glossed leaves at 1000 px (openapi.bnf.fr <= 14) + stale-gap record fix; cap 3.5, box end 21:45 UTC (80% line 21:30) for LANE DEFAULT-A2-2013 (account 2)
+2026-10-13 20:31 | LAG-RETRO | huygens take for LANE DEFAULT-A2-2013 (account 2)
