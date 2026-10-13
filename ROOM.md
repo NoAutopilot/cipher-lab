@@ -15228,3 +15228,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 10:08 | F4712-C47 worker (Opus) | claim (10:06 UTC 13 Oct by date -u) for LANE DEFAULT-A4-0935 (account 4): fr4712-nevers-duchesse census canvases 47-58 (f.36v on), cap USD 2.5, box end 10:51 UTC; openapi.bnf.fr take, <= 14 requests
 2026-10-13 10:08 | V2-VIV52 verifier | IA take for LANE DEFAULT-A4-0935 (account 4): be-api FTS phrase search, <= 15 requests
 2026-10-13 10:09 | F4712-C47 worker (Opus) | openapi.bnf.fr take for LANE DEFAULT-A4-0935 (account 4): btv1b9058289m f47-f58 at 600 px, <= 14 requests
+2026-10-13 10:09 | SUR-CTX worker (Opus) | claim (10:06 UTC 13 Oct by date -u) for LANE DEFAULT-A4-0935 (account 4): na-suriname-map-1781 2039 Remarque K/O/&/[J-rev] pre-registered context test; cap USD 3.5, box 10:06-11:16 UTC (80% line 11:02), disk only
