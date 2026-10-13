@@ -1,0 +1,120 @@
+{
+ "seed": "20261013VIV52O",
+ "draws": 200,
+ "C1_f103r": {
+  "letters": 1831,
+  "s": -1.7038,
+  "cover": 0.706,
+  "b1": {
+   "null_median": -2.1304,
+   "null_p99": -1.7359,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "b2": {
+   "null_median": -1.9493,
+   "null_p99": -1.8979,
+   "pass": true,
+   "headroom_ok": true
+  }
+ },
+ "C2_ink54": {
+  "letters": 1795,
+  "s": -1.6578,
+  "cover": 0.794,
+  "b1": {
+   "null_median": -2.1272,
+   "null_p99": -1.7318,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "b2": {
+   "null_median": -1.8769,
+   "null_p99": -1.8236,
+   "pass": true,
+   "headroom_ok": true
+  }
+ },
+ "target": {
+  "letters": 2621,
+  "s": -1.5137,
+  "cover": 0.808,
+  "b1": {
+   "null_median": -2.1157,
+   "null_p99": -1.7387,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "b2": {
+   "null_median": -1.8122,
+   "null_p99": -1.7753,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "c": {
+   "wrong_keys": 200,
+   "b2_passes": 16,
+   "margin_median": -0.0468,
+   "margin_p99": 0.0257,
+   "margin_max": 0.0664,
+   "real_margin": 0.2616,
+   "pass": true
+  }
+ },
+ "per_page": {
+  "f164r": {
+   "letters": 1322,
+   "s": -1.5486,
+   "cover": 0.806,
+   "b1": {
+    "null_median": -2.1172,
+    "null_p99": -1.7691,
+    "pass": true,
+    "headroom_ok": true
+   },
+   "b2": {
+    "null_median": -1.8309,
+    "null_p99": -1.7692,
+    "pass": true,
+    "headroom_ok": true
+   }
+  },
+  "f164v": {
+   "letters": 1299,
+   "s": -1.4781,
+   "cover": 0.809,
+   "b1": {
+    "null_median": -2.1178,
+    "null_p99": -1.7714,
+    "pass": true,
+    "headroom_ok": true
+   },
+   "b2": {
+    "null_median": -1.8002,
+    "null_p99": -1.7456,
+    "pass": true,
+    "headroom_ok": true
+   }
+  }
+ },
+ "target_key_tomokiyo": {
+  "letters": 2591,
+  "s": -1.5073,
+  "cover": 0.809,
+  "b1": {
+   "null_median": -2.1399,
+   "null_p99": -1.7472,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "b2": {
+   "null_median": -1.8203,
+   "null_p99": -1.7822,
+   "pass": true,
+   "headroom_ok": true
+  }
+ },
+ "verdict_b1": "PASS",
+ "verdict_b2": "PASS",
+ "verdict_wrong_keys": "PASS"
+}
