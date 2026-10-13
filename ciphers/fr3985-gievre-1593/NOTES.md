@@ -1,10 +1,10 @@
-blocked
+open
 
-Edition step partly done (13 Oct 2026, BNF-Q2-ED): Gomberville seconde partie read as images at printed pp.589, 659, 671-693, 697, 737 via openapi.bnf.fr; no Gievre letter on those pages, but the 1593 span is not read in full (see section below). No decipherment or plaintext found in any other source checked.
+Gomberville, Memoires de M. de Nevers, seconde partie (1665, Gallica bpt6k64451005), pp.660-697 read as images in full (views 721-760, openapi.bnf.fr IIIF; BNF-Q2-ED, BNF-Q2-ED2, lane 13 Oct 2026): the letter is not printed; no Nevers letter of 15-31 Aug 1593 on those pages. Tomokiyo (league.htm), Bourdeau, Aymeloglu, DECODE: no decipherment (BNF-Q2-ID, 13 Oct 2026).
 
 # fr.3985 f.89 (Nevers to "Mr de Gievre", Nevers, 21 Aug 1593) -- BNF-Q2-ID, 13 Oct 2026
 
-Status: blocked (check-solved edition step unread). Worker BNF-Q2-ID for LANE BNF-FOCUS (account 2), 13 Oct 2026 (date -u 07:1x).
+Status at BNF-Q2-ID (superseded 13 Oct 08:5x by the lane close below: open): (edition step then pending). Worker BNF-Q2-ID for LANE BNF-FOCUS (account 2), 13 Oct 2026 (date -u 07:1x).
 Source of the target: Tomokiyo, sources/cryptiana/web/league.htm, fr.3985 no.53 (fol.89): "Duke of Nevers to Mr de Gievre,
 Nevers, 21 August 1593. Some portions in cipher (undeciphered)."
 
@@ -56,3 +56,10 @@ Verdict: **not found in the 24 views read.** Not all of views 721-760 are read: 
 Requests: openapi.bnf.fr 24 (all HTTP 200, no retry), gallica.bnf.fr 0.
 
 Intake gate output: `python3 tools/intake_gate_check.py fr3985-gievre-1593` -> "fr3985-gievre-1593: blocked (line 1) -- already terminal, nothing to gate", exit 0.
+
+
+## Lane close of the edition step (LANE BNF-FOCUS, 13 Oct 2026 08:5x UTC by date -u)
+BNF-Q2-ED2 left views 757-759 (pp.694-696) unread; the lane read them (3 requests to openapi.bnf.fr, 3 s apart, all 200):
+p.694 end of Nevers to La Chastre and the start of La Chastre's reply; p.695 that reply ends "Escrit a Orleans ce 27. Ianuier
+1594", then the Lyon reduction of 7-9 Feb 1594; p.696 the Lyon narrative. No Gievre letter. With views 721-760 now all read, the
+volume's 1593 span (chronological: p.659 = 1591, p.692 = Sept 1593, p.695 = Jan 1594) is covered: status open (line 1).

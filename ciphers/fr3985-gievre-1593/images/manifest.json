@@ -1,1 +1,10 @@
-{"source":"https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90606498/f<N>/full/1600,/0/default.jpg","fetched":"2026-10-13","files":{"f177.jpg":"canvas 177, end of the Nevers-Revol letter of 21 aoust 1593 (long no.60-kind cipher) -- neighbour","f178.jpg":"canvas 178, pencil folio 89 top right, clear letter text","f179.jpg":"canvas 179, ends the clear text with dateline 'Nevers 21 aoust 1593', then a short symbol-cipher paragraph, docket at right"}}
+{
+ "source": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90606498/f<N>/full/1600,/0/default.jpg",
+ "fetched": "2026-10-13",
+ "files": {
+  "f177.jpg": "canvas 177, end of the Nevers-Revol letter of 21 aoust 1593 (long no.60-kind cipher) -- neighbour",
+  "f178.jpg": "canvas 178, pencil folio 89 top right, clear letter text",
+  "f179.jpg": "canvas 179, ends the clear text with dateline 'Nevers 21 aoust 1593', then a short symbol-cipher paragraph, docket at right",
+  "f179_native.jpg": "canvas 179 native 4727x6576 (3999351 bytes), https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90606498/f179/full/max/0/default.jpg; f.89 continuation with the 4-line cipher paragraph, for crops (lane, 13 Oct 2026)"
+ }
+}

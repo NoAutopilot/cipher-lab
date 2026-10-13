@@ -203,5 +203,20 @@
   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f747/full/1600,/0/default.jpg",
   "fetched": "2026-10-13",
   "bytes": 688466
+ },
+ "f757.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f757/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 702955
+ },
+ "f758.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f758/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 588931
+ },
+ "f759.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f759/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 713473
  }
 }
