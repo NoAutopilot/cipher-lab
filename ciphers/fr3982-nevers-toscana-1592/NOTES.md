@@ -1,6 +1,6 @@
 open
 Edition read: Canestrini and Desjardins, Négociations diplomatiques de la France avec la Toscane, vol. V (Paris, Imprimerie nationale, 1875), archive.org gri_33125017126877 `_djvu.txt` (34,419 lines, full text grepped and the 1592 section headings read, 13 Oct 2026).
-- **Status:** open; check-solved by BNF-Q7-ID (Sonnet worker, LANE BNF-FOCUS account 2), 13 Oct 2026. No transcription, no decode.
+- **Status:** open; check-solved by BNF-Q7-ID (Sonnet worker, LANE BNF-FOCUS account 2), 13 Oct 2026. Transcription of f.25 and key no.62 by BNF-Q7-KEY; no.62 excluded structurally by BNF-Q7-TEST (13 Oct 2026); no decode.
 - **Pile:** not anonymous (sender, recipient, date on the leaf).
 
 # Nevers to the Grand Duke of Tuscany, "dal Campo sotto Provins", 26 Aug 1592 -- BnF Français 3982 f.25
@@ -51,3 +51,49 @@ Transcription only; no decode, no reading, no segmentation. Brief: .claude/brief
 **Requests per host:** openapi.bnf.fr 10 (f230-233 overviews 4, f219-222 overviews 4, f221 native, fr.3982 f57 native); gallica.bnf.fr 0. Cost not visible to this worker.
 
 **Next (not done here):** key-constrained segmentation of the f.25 string against no.62 and no.70 with a control, on Opus; a person's or second image pass for the f.25 dots.
+
+## BNF-Q7-TEST (13 Oct 2026, account 2): key no.62 vs f.25, structural fit -- FAILS, stopped at step 1
+Brief: .claude/briefs/runs/2026-10-13-ytbiz-bnf-q7-test.md. Disk only. Scripts and outputs in `q7test/` (seed 62,
+deterministic: `structural.py`, `structural_control.py`, `digit_profile.py`, each with its `.out`). No decode was run,
+no PREREG written (the brief stops before step 2 when step 1 fails), no token graded.
+
+**1a. Letter coverage of the transcribed alphabet row.** 15 cells: a 1, b|c 34, d 32, e 9, f|g 35, i 4, l 36, m 8, n 37,
+o 5, p 38, qu 6, r 31, t 7, et 39. **No figure for h, s, u/v, z** (x, j, k, y not needed): s, u, z and h are about a
+tenth of Italian letters, so the row as transcribed cannot encipher Italian. Unused figure slots in the key's own
+pattern: single 0, 2, 3 and two-digit 30, 33.
+
+**1b. Parse share** (DP over the key's 112 codes -- 7 one-digit, 8 two-digit, 97 three-digit; uncovered digits skipped).
+
+| string | N | parse share | 1000 digit-order shuffles: mean / p95 / p99 | p |
+|---|---|---|---|---|
+| f.25, `?` removed | 260 | 0.873 | 0.863 / 0.888 / 0.900 | 0.30 |
+| f.25, `?` as wildcard | 270 | 0.881 | 0.877 / 0.900 / 0.907 | 0.44 |
+
+**Matched control** (it16dip held-out file letterediprincip03char, 100 windows enciphered with key_no62.tsv itself:
+word codes where the window has the word, alphabet row otherwise, h/s/u/z dropped since the key gives them no figure,
+nulls 3% of tokens, cut to 260 digits; digit substitution errors injected; power = share beating its own 200-shuffle p95):
+0% 1.00 (mean share 0.999), 5% 1.00 (0.989), 10% 1.00 (0.979), 15% 0.99 (0.973) -- the band brackets the passes' 9.5%
+disagreement. Negative control (f.25's digits in random order) 0.02 (0.860). The shuffle control can differ from the
+target on this statistic (parse share depends on digit order), so it is not an orthogonal control.
+
+**Verdict: key no.62 does not fit f.25 at this transcription (structural).** f.25 parses at its own shuffle level
+(0.873 vs 0.863) where a true no.62 encipherment at up to 15% error parses at 0.97-1.00.
+
+**Diagnostic (not pre-registered, not a gate; `digit_profile.out`).** f.25 digit counts against 100 synthetic no.62
+texts (mean [range]): 0 17 vs 1.2 [0-4]; 1 61 vs 34.1 [22-52]; 2 45 vs 22.9 [10-35]; 8 0 vs 9.3 [3-15]; 9 7 vs 24.6
+[14-34]; 4 12 vs 29.5 [18-53]; 7 10 vs 26.0 [12-39]. The 33 unparsed digits are 0 (12), 3 (18), 2 (3), almost all
+inside "30" and "33". **Could it be the table transcription rather than the letter?** In part: the leftover "30"/"33"
+pairs sit exactly in the key's empty slots, so an untranscribed s/u/z/h cell at 30 or 33 would absorb most of them.
+Not the rest: e = 9 (H) and m = 8 (M) would put 9 among the commonest digits and some 8s in any Italian text, and f.25
+has seven 9s and no 8 at all; a missing cell cannot lower those counts. So the fit failure is more likely the letter
+(another table, or no.62's figures reassigned for this correspondent) than the transcription of no.62, grade M.
+
+### ITERATE
+| date | hypothesis | instrument | matched control | result | verdict | what it taught |
+|---|---|---|---|---|---|---|
+| 13 Oct 2026 | f.25 is in Nevers key no.62 (fr.3995 f.115r) | DP parse share over the key's code set vs 1000 digit shuffles (q7test/structural.py) | 100 it16dip windows enciphered in no.62, 0/5/10/15% digit error: power 1.00/1.00/1.00/0.99; random-order negative 0.02 | 0.873 vs shuffle p95 0.888 (p 0.30); `?` wildcard 0.881 vs 0.900 (p 0.44) | no.62 as transcribed excluded structurally for f.25 (control-backed); not a decode test | the digit profile (0 frequent, "30"/"33" pairs, no 8, few 9) is a cheap filter any candidate key must pass before a scored test |
+
+**Next best attempt:** run the same structural check (q7test/structural.py, codes from the key file) on Nevers no.70
+(Tomokiyo: used by Charles Gonzague Cleves to Nevers, fr.3982 f.51, Sept 1592) once its table is transcribed; a key
+that has figures 0/30/33 in its letter section and uses 8 and 9 rarely is what f.25's profile asks for. Optional: an
+image re-check of fr.3995 f.115r for an alphabet cell at 30/33 or a second letter row (cheap, ~$1).

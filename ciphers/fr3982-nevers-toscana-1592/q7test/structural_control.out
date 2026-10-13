@@ -1,0 +1,6 @@
+error 0.00: power(>own shuffle p95)=1.00 mean parse share=0.999
+error 0.05: power(>own shuffle p95)=1.00 mean parse share=0.989
+error 0.10: power(>own shuffle p95)=1.00 mean parse share=0.979
+error 0.15: power(>own shuffle p95)=0.99 mean parse share=0.973
+negative (f.25 digit freqs, random order): rate>p95=0.02 mean parse share=0.860
+word codes used: 89
