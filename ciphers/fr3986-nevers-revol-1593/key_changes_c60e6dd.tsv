@@ -1,0 +1,29 @@
+# Key no.60 sync to D. Bourdeau cyphersolver c60e6dd (12 Oct 2026; issue #32, R. Weglarek, checked by D. Bourdeau on fr.3995 images;
+# text CC BY 4.0). BNF-K60, 13 Oct 2026. status: changed / added / unchanged (checked) / unmapped (his shape has no tag in sign_guide.md; not guessed).
+tag	old_value	new_value	grade	status	his_line
+++	u	u|i|d	M	changed	decode60.py '++':'i' (sheet), 'ⱶⱶ':'u' (copyist), '♀':'u' (f.111, formerly "++ u"), '‡':'d' (one stem two bars = our sign_guide ++ shape)
+2+	p|i	u|i	M	changed	"6 u: fourth homophone is 2+ (bowed 2 with cross)"; "2+ = u, J (sheet u fourth; f.111 'u, J')"; n+ = p
+4+	bien	i|bien	M	changed	"4+ = i (open 4, sheet i, first) | 4+b = bien (closed 4 with cross, f.111)"
+n+	-	p	H	added	"n+ = p (the p-sign, f.111 col.1)"
+ls+	-	l	H	added	"ſ+ = l (sheet l, first)"
+o-	tu	tu	H	unchanged (checked)	decode60.py docstring "Old ASCII tag o- still decodes tu"; b's o– (tail right) has no tag of ours
+V+	g	g	H	unchanged (checked)	"14 ∩+ = g (formerly V+)"; a reader may tag ∩+ as n+ (now p): collision noted, not resolved
+4	x|i	x|i	M	unchanged (checked)	"4 = x (closed 4, sheet x)"; our i from crib f.151 kept
+//	c	c	H	unchanged (checked)	"o: fifth is \ (not //, which is c)"
+oo	b	b	H	unchanged (checked)	sheet b "∞(oo)"
+X+	se	se	H	unchanged (checked)	"X with two strokes = se, three = si (tags X+/X++ kept)"
+oto	y	y	H	unchanged (checked)	"o+o = y (tag oto kept)"
+o–	-	(b)	-	unmapped	"1 b's first homophone is o– (ring, tail right)"
+–o–	-	(tu)	-	unmapped	"tu is –o–"; our o- kept as tu
+–o	-	(fo)	-	unmapped	"fo is –o"
+o–o	-	(c)	-	unmapped	"o–o = c"
+c~	-	(c)	-	unmapped	"c's fourth homophone is a flag on a stem (tag c~)"
+·x	-	(d)	-	unmapped	"·x belongs only to d"
+‡o	-	(u)	-	unmapped	"‡o (the same with a loop) = u"
+♀	-	(u)	-	unmapped	"♀ (loop on stem, one bar) = u on f.111"; folded into our ++ as u
+ⱶⱶ	-	(u)	-	unmapped	"the copyist's ++ is tagged ⱶⱶ (= u)"; folded into our ++ as u
+ɱ	-	(m)	-	unmapped	"m: fourth homophone is ɱ (m with loop below), not ccc"
+Δ|	-	(o)	-	unmapped	"o: fourth sign is Δ| (triangle on a stem, formerly ᛉ)"; our tri = o (Δ) unchanged
+\	-	(o)	-	unmapped	"fifth is \ (not //)"; ıı = o
+∩	-	(b)	-	unmapped	sheet b "∩(n~)"
+8++	-	(Mr de Longueville)	-	unmapped	"11 Mr de Longueville is one sign (8 with a cross above)"; under our sign_guide this shape would be tagged 8+ (tous): not resolved
