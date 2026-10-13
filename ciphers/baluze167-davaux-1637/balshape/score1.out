@@ -1,0 +1,48 @@
+P n=23 accuracy 0.870 (gate 0.75) -> G1 PASS; P non-NONE 0.870
+N n=8 non-NONE 0.625 (gate <= 0.50 and <= 0.620) -> G2 FAIL
+  X02 P:J9       gloss=g read=E-g high
+  X03 P:G0       gloss=p read=E-p high
+  X05 P:D4       gloss=n read=E-n low
+  X06 P:H8       gloss=c read=E-c high
+  X08 P:D16      gloss=c read=E-c high
+  X09 P:D14      gloss=t read=E-t high
+  X12 P:H18      gloss=c read=E-c high
+  X13 P:G10      gloss=a read=E-a high
+  X15 P:I4       gloss=r read=E-r high
+  X19 P:H14      gloss=n read=E-n high
+  X22 P:I13      gloss=c read=NONE high
+  X31 P:H9       gloss=s read=E-s low
+  X34 P:B18      gloss=t read=E-t high
+  X38 P:I11      gloss=r read=NONE high
+  X40 P:E4       gloss=l read=E-l low
+  X45 P:E12      gloss=p read=E-p low
+  X48 P:F0       gloss=a read=E-a high
+  X50 P:J8       gloss=n read=E-n high
+  X54 P:B16      gloss=s read=E-s high
+  X56 P:H15      gloss=s read=NONE high
+  X57 P:E7       gloss=n read=E-n high
+  X59 P:B14      gloss=n read=E-n high
+  X60 P:F9       gloss=a read=E-a high
+  X07 N:gt       gloss=- read=NONE low
+  X11 N:3-form   gloss=- read=NONE low
+  X29 N:3-form   gloss=- read=NONE low
+  X36 N:9-bar    gloss=- read=E-c low
+  X39 N:y        gloss=- read=E-r high
+  X41 N:gamma    gloss=- read=E-b low
+  X49 N:q        gloss=- read=E-c high
+  X51 N:m4       gloss=- read=E-t high
+T n=29 agreement 0.690; permutation null mean 0.115 p95 0.207 (reported, not gating)
+class	value	tiles	agree	other_high	verdict
+T:ANCHOR:4u=a	a	1	1	-	gates-failed	X14:E-a/high
+T:ANCHOR:u4=t	t	1	1	-	gates-failed	X35:E-t/high
+T:DECOY:gam=u	u	2	0	-	gates-failed	X17:E-g/low X26:E-g/low
+T:DECOY:h=n	n	1	1	-	gates-failed	X04:E-n/high
+T:DECOY:hook=s	s	1	0	-	gates-failed	X18:NONE/high
+T:DECOY:y+=r	r	2	2	-	gates-failed	X25:E-r/low X52:E-r/high
+T:ff	s	2	0	-	gates-failed	X16:NONE/high X46:NONE/high
+T:g+	n	3	0	-	gates-failed	X01:NONE/low X23:NONE/low X58:NONE/high
+T:ll	l	4	4	-	gates-failed	X28:E-l/low X33:E-l/high X37:E-l/high X53:E-l/high
+T:ll|u4	l	1	1	-	gates-failed	X21:E-l/high
+T:q	c	6	6	-	gates-failed	X10:E-c/high X27:E-c/high X32:E-c/high X43:E-c/high X44:E-c/high X47:E-c/high
+T:target:u4|4u	a	4	4	-	gates-failed	X20:E-a/high X24:E-a/high X30:E-a/high X55:E-a/low
+T:v	s	1	0	-	gates-failed	X42:NONE/high

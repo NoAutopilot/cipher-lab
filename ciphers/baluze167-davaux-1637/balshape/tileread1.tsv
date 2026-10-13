@@ -1,0 +1,61 @@
+id	match	conf	note
+X01	NONE	low	gt form
+X02	E-g	high	small curl r
+X03	E-p	high	mmm
+X04	E-n	high	h
+X05	E-n	low	h with hook
+X06	E-c	high	q
+X07	NONE	low	gt form
+X08	E-c	high	q
+X09	E-t	high	u plus
+X10	E-c	high	q
+X11	NONE	low	loop-top 3 form
+X12	E-c	high	q
+X13	E-a	high	y crossbar stem
+X14	E-a	high	y crossbar stem
+X15	E-r	high	x with bar
+X16	NONE	high	double f barred
+X17	E-g	low	z-curl
+X18	NONE	high	bare curl
+X19	E-n	high	h
+X20	E-a	high	y crossbar
+X21	E-l	high	n
+X22	NONE	high	bare curl
+X23	NONE	low	gt form
+X24	E-a	high	y crossbar stem
+X25	E-r	low	y with bar
+X26	E-g	low	z-curl
+X27	E-c	high	q
+X28	E-l	low	n
+X29	NONE	low	loop-top 3 form
+X30	E-a	high	y crossbar stem
+X31	E-s	low	f with bar
+X32	E-c	high	q
+X33	E-l	high	n
+X34	E-t	high	u plus
+X35	E-t	high	u plus
+X36	E-c	low	q barred
+X37	E-l	high	n
+X38	NONE	high	43 form
+X39	E-r	high	x with bar
+X40	E-l	low	n
+X41	E-b	low	curl y
+X42	NONE	high	bare curl
+X43	E-c	high	q
+X44	E-c	high	q
+X45	E-p	low	mm
+X46	NONE	high	double f barred
+X47	E-c	high	q
+X48	E-a	high	y crossbar stem
+X49	E-c	high	q
+X50	E-n	high	h
+X51	E-t	high	u plus
+X52	E-r	high	x with bar
+X53	E-l	high	n
+X54	E-s	high	f
+X55	E-a	low	u crossbar
+X56	NONE	high	double f barred
+X57	E-n	high	h
+X58	NONE	high	gt form
+X59	E-n	high	h
+X60	E-a	high	y crossbar stem

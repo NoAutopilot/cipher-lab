@@ -1301,3 +1301,58 @@ blind passes (err_2reader 0.280), letter signs unlabelled; printed as a "Kopie" 
 - [ ] image-check: native crops exist for all five bare passages; f.229 passed twice and spot-checked; f.228 mark re-reads closed (SIG-B228B gate FAIL); untried: native crops of the glossed Baluze 170 leaves (none on disk, BAL-SHAPE)
 - [x] retry: f.228 re-cut, re-passed, decoded and re-decoded (D1-BAL170, D1-BAL170B, B167-228, SIG-B228, SIG-B228B), grade correction applied (SIG-V228)
 Verdict: keep going: 2 internal gaps; cheapest next: a Gallica crop job for 2-3 glossed Baluze 170 leaves (~$1.5), then the shape-level control as briefed in BAL-SHAPE (~$4); the 168 f.246 step once L71 answers
+
+## BAL-CROP (13 Oct 2026, owner account, for LANE DEFAULT-A1-0640), 06:52-07:2x UTC by date -u
+Brief: `.claude/briefs/runs/2026-10-13-acct1-default-0640-jobs.md` "BAL-CROP" (glossed Baluze 170 crops, then BAL-SHAPE as briefed 11 Oct).
+Prior work (pasted): `python3 tools/prior_work.py baluze167-davaux-1637 --item-spec 'shelfmark=BnF Baluze 170;folio=233r;date=1640-08-25;sender=Chavigny;recipient=Avaux' --step-type key --offline`
+-> `holds: specific 1 (LEAD 1); generic 2 (UNCHECKED-NET 2)`, exit 4; the one LEAD is this job's own claim; the two UNCHECKED-NET rows
+(aaymeloglu cache, editions) are covered by the edition passes logged above (UNA3-BAL) and do not bear on a shape control. Not `--record`ed.
+Checks by hand: (1) own work -- BAL-SHAPE (11 Oct) stopped at its disk check, no shape control run before (AUDIT.md l.91 names it missing);
+(2) leaf -- survey.tsv rows 170 f.233/239/258 "present"; (3) solver caches -- prior_work CLEAR on cyphersolver; (4) editions -- unchanged.
+**Step 1 (crops).** openapi.bnf.fr (IIIF Image API v3), 8 requests, all HTTP 200 (take/release lines in ROOM.md): overviews of Baluze 170
+c244/c251/c270 at 1000 px; native pct regions of the cipher blocks; Baluze 169 c420 (f.208r, Saint-Chamond's key) overview + native region
+(negative control material). images/b170gloss/manifest.json. Eye check against the f.228 crops (b170f228v_b_lines_debug.jpg): **f.258r
+(c270) and f.233r (c244) are the f.228 hand** (same italic secretary hand, acute-marked numerals, same q / h / u+ / y+ / mm forms);
+**f.239r (c251) is a looser hand with mostly unmarked numerals**, fetched and cut but not used. Line crops (pasted commands):
+`python3 tools/iiif_lines.py --image images/b170gloss/c270_f258r_cipher_native.jpg --out images/b170gloss/lines_c270_f258r --debug`
+-> `region 3081x2003, 11 lines, 11 bands x 2 segments; pitch 162 ... wrote 22 crops`; same for c251_f239r (9 lines, 18 crops) and
+c244_f233r (4 lines, 8 crops). Debug overlays checked (bands follow the cipher lines; interlinear gloss falls between bands); the line
+crops were then deleted to keep images/ under 30 MB (overlays and manifests kept; the commands regenerate them).
+**Step 2 (BAL-SHAPE).** PREREG-BAL-SHAPE.md pushed in its own commit (8577c4ee) before any read. Gloss labels: two blind Sonnet gloss reads
+(balshape/glossA.tsv, glossB.tsv) of 22 strips; a sign got a label only where both reads give the same gloss word and the key's H numerals
+leave one letter for it (balshape/gloss_labels.tsv: 36 labelled, 7 dropped with reasons -- 'suiet' without the c, 'Landgrave' d/g not
+forced, 'Luneboyrg' y-for-u, 'desire' for d'estre, and the p sign, which the gloss gives as i three times and s twice). 12 exemplars
+(first labelled per letter: a b c e g l n p r s t w), 23 positive tiles P, 29 f.228 tiles T (SIG-B228/B228B coordinates unchanged), 8
+negative tiles N (169 f.208r). Tiles: balshape/tiles.py (seed 20261013; read 2 seed 20261014), sheets in balshape/tiles_r1/ and tiles/.
+| Read | G1: P accuracy (gate >= 0.75) | P non-NONE | G2: N non-NONE (gate <= 0.50 and <= P-0.25) | T agreement | perm. null p95 |
+|---|---|---|---|---|---|
+| 1 (balshape/score1.out) | 0.870 (20/23) PASS | 0.870 | 0.625 (5/8) **FAIL** | 0.690 | 0.207 |
+| 2 (balshape/score2.out) | 0.870 (20/23) PASS | 0.870 | 0.625 (5/8) **FAIL** | 0.586 | 0.172 |
+**Verdict: G2 fails on both reads -- per PREREG item 6, logged as a non-test of the f.228 values; no grade or value changed** (decode
+`--check`: "reading up to date"; f.228 H 56, I 27, M 70, U 1 of 154, unchanged). What the negative shows: the reader matched
+Saint-Chamond's q to E-c and his y to E-r (both reads, mostly high confidence), and his m4 to E-t -- look-alike forms from a different
+key. A shape-only reader cannot tell a look-alike sign of another key from the same sign of this key, so G2 as pre-registered was a test
+the instrument cannot pass on look-alikes; it does not say the f.228 values are wrong.
+Descriptive, NOT a licensed result (gates failed): both reads put all 6 f.228 q tiles on the gloss-fixed c exemplar, all 4 u4|4u tiles on
+the a exemplar, both y+ tiles on r, the h decoy on n, the u4 anchor on t; ll read l 4/4 then 1/4 (three low-confidence E-e);
+g+, ff, v, hook and gam have no gloss-fixed exemplar of their own shape here and were read NONE (or E-g/E-b, low) -- no conflict either way.
+P misses were the same three both reads (H15 ff, I11 y+, I13 q read NONE). Network: openapi.bnf.fr 8. Subagents: 4 Sonnet (2 gloss, 2 tile).
+
+## Remaining gaps (BAL-CROP, 13 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 170 f.229r-v: N3, D2 (AUD1-B167). 170 f.228r-v: N3, D2 about 36% (three audits;
+H 56, M 70, I 27, U 1 of 154). 168 f.246-247v: transcribed by two blind passes (err_2reader 0.280), letter signs unlabelled.
+- 168 f.246-247v bare passage - blocker: waiting-on LOCAL-QUEUE L71 (owner's browser: does the Papiers de Richelieu item print the cipher passage in clear); next if it does: align the printed text to the two-pass transcription with tools/interlinear_align.py (known plaintext for the f.247 hand), ~$3; if not: the f.247-hand glossed-text search (survey.tsv's d'Avaux-side leaves), ~$3
+- 170 f.228r-v reading depth - blocker: not-attempted; the shape control ran (BAL-CROP) and its negative gate failed on look-alikes, a non-test; next: a control whose negative is same-key, same-hand signs with a known WRONG value (e.g. gloss-fixed f.258 tiles relabelled by a letter swap), so the reader is not asked to tell keys apart by look, ~$3 using the tiles on disk (balshape/), no network
+- 170 f.228-229 novelty (N3 -> N4) - blocker: waiting-on LOCAL-QUEUE L71 and SO-BAL170-F228 (SECOND-OPINIONS-QUEUE.tsv); the edition's notes are snippet-only from the cloud and a second opinion is owed before N4
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census (N9-BAL found unlisted f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (13 Oct 2026, BAL-CROP)
+- [x] siblings: davaux-1633 and DECODE records 2756-2762 checked (Siblings section above)
+- [x] clear-pages: leaf survey done; 170 f.230r is the clear close of the f.228 letter (D1-BAL170)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.229 letter values carried to f.228
+- [ ] print: Avenel, Négociations secrètes, Guébriant, Bougeant, Mercure, Siri, IA, Google Books (UNA3-BAL), OpenAlex, CrossRef done; untried: the Papiers de Richelieu 1636-1642 volume by page (L71)
+- [ ] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); shape control vs glossed 170 leaves ran (BAL-CROP, G1 PASS 0.870, G2 FAIL 0.625 twice: non-test); untried: a same-key wrong-label negative on the tiles on disk, a printed clear text of 168 f.246 (L71)
+- [x] image-check: native crops of the glossed Baluze 170 leaves f.233r, f.239r, f.258r fetched and cut (BAL-CROP); f.229 passed twice; f.228 mark re-reads closed (SIG-B228B gate FAIL)
+- [x] retry: f.228 re-cut, re-passed, decoded and re-decoded (D1-BAL170, D1-BAL170B, B167-228, SIG-B228, SIG-B228B), grade correction applied (SIG-V228), shape control run twice (BAL-CROP)
+Verdict: keep going: 2 internal gaps; cheapest next: the same-key wrong-label negative on balshape/ tiles (~$3, no network); the 168 f.246 step once L71 answers

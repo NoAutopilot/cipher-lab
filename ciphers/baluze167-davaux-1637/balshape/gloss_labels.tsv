@@ -1,0 +1,44 @@
+id	label	gloss_word_A_B	note
+A10	n	donnent	
+B1	t	suiet/sujet	
+B4	c	croire	
+B6		croire	p=i; p excluded: gloss gives i here and s in 'plus', E15/G4
+B10	l	quils	
+B11	s	quils	
+B14	n	nont	
+B16	s	pas	
+B18	t	trop	
+B20	p	trop	
+D4	n	pensee	
+D7	e	pensee	
+D14	t	dattacher	
+D16	c	dattacher	
+D18	r	dattacher	
+E4	l	Landgrave	
+E6	a	Landgrave	
+E7	n	Landgrave	
+E8		Landgrave	both reads write the d: r = d or g, not forced
+E12	p	plus	
+E15		plus	p excluded
+F0	a	a	
+F9	a	a	
+G0	p	plus	
+G4		plus	p excluded
+G10	a	a	
+H8	c	ducs	
+H9	s	ducs	
+H12	b	Brunswick/Brunswich	
+H14	n	Brunswick/Brunswich	
+H15	s	Brunswick/Brunswich	
+H16	w	Brunswick/Brunswich	
+H17		Brunswich	p excluded
+H18	c	Brunswick/Brunswich	
+I3		Luneboyrg	both reads write y where the sense is u: not forced
+I4	r	Luneboyrg	
+I5	g	Luneboyrg	
+I11	r	lors	
+I13	c	chargee	
+J8	n	besoing	
+J9	g	besoing	
+J11		desire/de[?]ire	the sense is d'estre; reads disagree with it: dropped
+B0		suiet/sujet	neither read writes the c of 'suiect': dropped

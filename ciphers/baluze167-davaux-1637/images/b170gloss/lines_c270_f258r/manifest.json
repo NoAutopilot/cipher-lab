@@ -1,0 +1,466 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "c270_f258r_cipher_native_L01_s1.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    0,
+    21,
+    2400,
+    175
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  },
+  {
+   "crop": "c270_f258r_cipher_native_L01_s2.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    681,
+    21,
+    3081,
+    175
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  },
+  {
+   "crop": "c270_f258r_cipher_native_L02_s1.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    0,
+    175,
+    2400,
+    329
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  },
+  {
+   "crop": "c270_f258r_cipher_native_L02_s2.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    681,
+    175,
+    3081,
+    329
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  },
+  {
+   "crop": "c270_f258r_cipher_native_L03_s1.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    0,
+    329,
+    2400,
+    493
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  },
+  {
+   "crop": "c270_f258r_cipher_native_L03_s2.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    681,
+    329,
+    3081,
+    493
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  },
+  {
+   "crop": "c270_f258r_cipher_native_L04_s1.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    0,
+    493,
+    2400,
+    709
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  },
+  {
+   "crop": "c270_f258r_cipher_native_L04_s2.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    681,
+    493,
+    3081,
+    709
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  },
+  {
+   "crop": "c270_f258r_cipher_native_L05_s1.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    0,
+    709,
+    2400,
+    899
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  },
+  {
+   "crop": "c270_f258r_cipher_native_L05_s2.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    681,
+    709,
+    3081,
+    899
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  },
+  {
+   "crop": "c270_f258r_cipher_native_L06_s1.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    0,
+    899,
+    2400,
+    1041
+   ],
+   "lines_in_crop": 1,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  },
+  {
+   "crop": "c270_f258r_cipher_native_L06_s2.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    681,
+    899,
+    3081,
+    1041
+   ],
+   "lines_in_crop": 1,
+   "band": 6,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  },
+  {
+   "crop": "c270_f258r_cipher_native_L07_s1.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    0,
+    1041,
+    2400,
+    1205
+   ],
+   "lines_in_crop": 1,
+   "band": 7,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  },
+  {
+   "crop": "c270_f258r_cipher_native_L07_s2.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    681,
+    1041,
+    3081,
+    1205
+   ],
+   "lines_in_crop": 1,
+   "band": 7,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  },
+  {
+   "crop": "c270_f258r_cipher_native_L08_s1.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    0,
+    1205,
+    2400,
+    1364
+   ],
+   "lines_in_crop": 1,
+   "band": 8,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  },
+  {
+   "crop": "c270_f258r_cipher_native_L08_s2.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    681,
+    1205,
+    3081,
+    1364
+   ],
+   "lines_in_crop": 1,
+   "band": 8,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  },
+  {
+   "crop": "c270_f258r_cipher_native_L09_s1.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    0,
+    1364,
+    2400,
+    1517
+   ],
+   "lines_in_crop": 1,
+   "band": 9,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  },
+  {
+   "crop": "c270_f258r_cipher_native_L09_s2.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    681,
+    1364,
+    3081,
+    1517
+   ],
+   "lines_in_crop": 1,
+   "band": 9,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  },
+  {
+   "crop": "c270_f258r_cipher_native_L10_s1.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    0,
+    1517,
+    2400,
+    1677
+   ],
+   "lines_in_crop": 1,
+   "band": 10,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  },
+  {
+   "crop": "c270_f258r_cipher_native_L10_s2.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    681,
+    1517,
+    3081,
+    1677
+   ],
+   "lines_in_crop": 1,
+   "band": 10,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  },
+  {
+   "crop": "c270_f258r_cipher_native_L11_s1.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    0,
+    1677,
+    2400,
+    1841
+   ],
+   "lines_in_crop": 1,
+   "band": 11,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  },
+  {
+   "crop": "c270_f258r_cipher_native_L11_s2.jpg",
+   "source_url": "",
+   "source_file": "c270_f258r_cipher_native.jpg",
+   "box": [
+    681,
+    1677,
+    3081,
+    1841
+   ],
+   "lines_in_crop": 1,
+   "band": 11,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 162,
+    "distance": 113,
+    "prominence": 113.4
+   },
+   "date": "13 Oct 2026"
+  }
+ ]
+}
