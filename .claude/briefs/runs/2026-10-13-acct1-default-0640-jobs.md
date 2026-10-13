@@ -86,3 +86,20 @@ table file and NOTES.md; no plaintext reading is claimed. Units: 1 fetch+crop, 1
 ### Wave 1 sessions (spawned 06:50 UTC 13 Oct)
 IIIF-HOST session_011zoUqBVd7D6Ar3iq7iqRPx; BAL-CROP session_01GWQKBEi7psBYo7AxKbYwiH; F5160-ARB session_017nrzkALWWRESx3qyZCSAfE;
 COL26-C29 session_0197hPskd8nwNzbsTkwzrmM2; F4712-CENSUS session_01Me4cfjmc5b43H4U5yHsq4Z; VILL-104V session_01Rw11qCck47TQtDhRKy9n4y.
+
+## Wave 2 (07:2x UTC 13 Oct)
+Intake gate 07:2x UTC: `tools/intake_gate_check.py fr16104-vivonne-spain-1572` (pasted in the ROOM spawn line). Since IIIF-HOST (commit
+17483295) the shared tools take `--iiif-host openapi`: use `tools/iiif_lines.py --iiif-host openapi --ark ... --canvas N --region ...`
+directly (no hand-built URLs); `tools/gallica_folio.py --iiif-host openapi` reads the Presentation v3 manifest.
+
+### VIV52-O (Opus, cap 10, box 150 min, openapi.bnf.fr <= 20): fr16104-vivonne-spain-1572, ink 52 (Vivonne to the Queen, 5 Sept 1572)
+The VIV52 job (`.claude/briefs/runs/2026-10-08-acct3-sibs-ledger3.md` "## VIV52", steps 2-4) never ran: gallica.bnf.fr blocked it (NOTES.md
+"## VIV52", "## VIV52-R"). Step 1 (print premise) is done and negative; finish its leaf premise first: view c179, c181, c183 at size `1200,`
+(~3 requests) for a "dechiffré" or clear copy; if one exists, stop and report. Then step 2 scoped to this cap: ff.164r-168r are canvases
+178-182 (~9 pages, ~270 lines). Unit rate (N6-VIV63's ledger): ~1.4 per Sonnet pass call, reconciliation one more unit per page. Plan:
+3 pages (c178 recto/verso as the manifest gives them; one page or half page per subagent call) x (2 blind passes + 1 reconciliation)
+= 9 units ~ 12.6 at that rate is over cap, so do **2 pages** (6 units ~ 8.4) plus the leaf views; stop before a unit that would cross
+80% of cap or box. Then step 3 on what was transcribed: decode through the viv54 pipeline with key.tsv (and key_tomokiyo.tsv as the
+alternative), `--check`, the b2 / wrong-key controls the ink 53/54/63 sections used, fr16 judge pasted. Grade per rule 4. State the
+expected depth before reading (VIV52's own note: likely D1 like inks 53/54/63) and report against it. Step 4 (a first verifier) is the
+lane's, not yours. Name the remaining pages as the next step with a priced unit count in Remaining gaps / Escalation.
