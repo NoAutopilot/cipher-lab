@@ -85,3 +85,43 @@ build.sh: a build script that regenerates the packet; the HTML and tiles are NOT
 the artifact: write one ROOM flag line for the orchestrator (owner account) naming the build command, tile count and focus count (the
 publish goes with the other pending sorter builds), and one ASKS.md row only if no existing ASKS row covers owner sorts of this kind (grep
 first; reuse it otherwise). Update Remaining gaps (image-check rung: packet built, waiting on the owner's sort) and Verdict; gaps_check.
+
+## Wave 2 (22:1x UTC 13 Oct)
+Wave 1 so far: SALV-57V 5.16 (f57v read, 6.4% unsettled, crib candidates named), OBRED-11851 4.04 (11851 701-733 + 11852 50-104 clean,
+11852 2-49 unscreened), EST-9431 7.02 (Brasset key 381 rows H 358 / M 23). Same common rules as wave 1.
+
+### SALV-CRIB (Opus, cap 4, box 80 min, disk only): fr2933-salviati-1525, crib scan from the f57v plain passage
+NOTES.md Remaining gaps (SALV-57V, 13 Oct): "a crib test from f57v's plain passage (the 3-sign insertion after 'Pagare li', and
+pagare/contentato/diligentia/beueraggio/suggellata against f56r-f57r cipher lines) - next: pre-registered crib scan with tools/decode_key.py
+--try or SALV-KP's scan script on the current split, shuffled-crib control first, ~$3". Write PREREG-SALV-CRIB.md (statistic, null:
+shuffled-crib AND a same-length random-Italian-word crib set, gate, what counts as a hit) and push it in its own commit BEFORE any score.
+Check (rule 3) that the controls can differ from the target on the statistic you compute. Planted-crib positive control at the target's
+own transcription error (6.4-14.6% per SALV-DSN: run both ends) before reading a miss as a negative. Output in HYPOTHESES.md (both
+numbers side by side) and a NOTES.md section "## SALV-CRIB". No key edit unless a placement passes its gate at every pre-registered
+check; any accepted value is M. Update Remaining gaps/Escalation and Verdict; gaps_check.
+
+### OBRED-11852A (Opus, cap 3, box 60 min, NA <= 55): oldenbarnevelt-brederode-1605, 11852 scans 2-49 (Jan-mid Feb 1605)
+OBRED-11851B (13 Oct) screened 11851 to the end and 11852 scans 50-104, controls 18/18 and 30/30; "11852 scans 2-49 not screened (cap)".
+Same route, sizes, controls and contact-sheet method as OBRED-11851B (read its section first; do not re-fetch what it holds). Append to
+its per-scan table, a short section "## OBRED-11852A", update Remaining gaps / Escalation and Verdict; gaps_check.
+
+### DEC4450-INIT (Opus, cap 5, box 90 min, openapi.bnf.fr <= 15): decode-4450-bnf-fr20506-1525, the f.2/f.4 initial-letter test
+NOTES.md Remaining gaps (D2-DEC2): "the f.2/f.4 initial-letter test - not-attempted; next: transcribe fr.2988 f.4r-6r and test f.2's base
+letters against the French initials with a shuffled-pairing control, ~$3"; read the section around NOTES.md line 615-640 (the language
+argument predicts a negative: f.4 is Raince's clear French, Ranzo's code encodes Italian). Step 0 (disk + 2-4 requests, before any
+transcription): count f.2r-v groups (Bourdeau's ranzo_c006/007, 834 groups, in ../fr2988-ranzo-1520s/bourdeau or the solver repo snapshot)
+against an estimate of f.4r-6r's word count from 600 px overviews (Gallica ark btv1b9059908w views 9-13, via openapi). If the ratio is far
+from 1 group per word (outside 0.6-1.6), stop there: write the counts and "step 0 rules out a 1-group-per-word pairing" as a control-free
+structural result (say it is not a matched-control negative), update the gap and stop. Otherwise PREREG (shuffled-pairing null, a
+positive control: f.2-length synthetic initial-letter code over the same French text at the transcription error you measure), push it,
+then transcribe initials only (two blind passes on line crops, ~1.5 per call, one page per call) and score. Update Remaining gaps /
+Escalation (key-rebuild rung) and Verdict; gaps_check.
+
+### PIS-246 (Opus, cap 7, box 120 min, openapi.bnf.fr <= 8; known-text share): fr16045-pisany-rome-1585, f.246r cipher vs Colbert
+NOTES.md Remaining gaps: "17 Sept 1586 second letter f.246r (~26 lines) and f.246v (~24 lines) vs Colbert p.52 l.15 - p.55 l.3 ... next:
+(1) 1000 px views ... (2) one native region per block ... (3) iiif_lines" -- do f.246r ONLY (canvas 504; use openapi.bnf.fr, not the
+gallica URLs written there). Method exactly as kp86g (PIS1-247 on f.247r): two blind passes on line crops (one half-page per call) +
+reconciliation, measured reader error, kp86g-style known-answer nw_score with key-shuffle and order nulls and the positive control at the
+measured error; decode_key.py --check reading; rule-4 grades (C only where the gate licenses). Also tally every T40-cell token on f.246r
+into the existing T40 alignment table (D1A-PIS) -- that is the reason this known-text page is worth reading. Section "## PIS-246";
+Remaining gaps / Verdict; gaps_check. Stop before a fifth vision unit if 80% of the cap would be crossed.
