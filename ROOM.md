@@ -15324,3 +15324,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 17:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | fired 17:35 UTC 13 Oct by date -u: spawned 0 (no queued account-4 rows; autofill held, default lane < 12 h since DEFAULT-account-4-20261013-0935), queued left 0
 2026-10-13 17:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 17:39 UTC 13 Oct: spawned 0 (no account-1 rows; default lane < 12 h since DEFAULT-account-1-20261013-0640), queued left 1 (SORTER-RERENDER-A3, account 3)
 2026-10-13 18:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 18:09 UTC: spawned 0 (), queued left 0
+2026-10-13 18:21 | standby (owner account) | alive; holder owner account (this session, TAKEOVER 06:22 UTC 10 Oct from account 4), last line 17:26 UTC 13 Oct (check-in 82), next orchestrator check-in ~18:26 UTC
