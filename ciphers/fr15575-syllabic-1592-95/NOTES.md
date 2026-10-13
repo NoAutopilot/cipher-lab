@@ -937,3 +937,89 @@ Read so far: f.228 L01-L08 of ~47 lines (289 tokens: H 158, M 26, U 105); L01-L0
 - [retired] image-check: machine gloss read of the f.228 b2 band crops (N8B two passes, NV05C 12 view calls), rule 3 third attempt
 - [x] retry: L01-L04 gloss retried under an addendum and PASSed (N8-NV05)
 Verdict: keep going: 7 internal gaps; cheapest next: the Estado 609 fol.86 desk row (owner minutes, row staged in D4-SYL54); then a person's read of the f.2 gloss crops and the unchanged prereg re-run (~$2); then no.31 (~$4.5), which the f.2 70x overlap makes the more likely key for f.2's 3-digit block
+
+## SYL-31: key no.31 and the f.2 overlap count (account-2 worker for LANE DEFAULT-A2-0710, 13 Oct 2026 07:58-08:2x UTC by date -u)
+
+Job: the "key no.31" gap (SYL-NOM list) -- transcribe BnF fr.3995 f.62r (Nevers no.31, canvas f126) with two blind passes and a
+reconciliation, then count f.2's 3-digit tokens on no.31's codes against a pre-registered matched null. No decode, no reading.
+
+**Prior work.** `python3 tools/prior_work.py fr15575-syllabic-1592-95 --item-spec 'shelfmark=BnF fr.3995;folio=62r;canvas=f126'
+--step-type key --fetch` -> exit 4, two LEADs owed, both recorded CLEAR in prior-work.tsv: 1-own:1a4888 (our own gap line names
+no.31 not-attempted; no key_no31.tsv on origin/main bf705de71; D4-SYL54 eye-checked only the y/z rows) and 1-own:30fbf7 (the live
+claim is this job). Check 3: sources/cryptiana/web/nevers.htm l.300 "no.31 (fol.62r) (1590) Partial reconstruction of the Spanish
+cipher of no.54" -- no values printed there; aaymeloglu/unsolved-ciphers not cloned (unchecked). Check 4: not applicable (a key
+sheet, no letter text).
+
+**Fetch and crops** (openapi.bnf.fr IIIF v3, 3 requests, all 200: info.json 4043 x 6157, a 1600 px overview, one native region):
+
+    $ python3 tools/iiif_lines.py --ark btv1b525085665 --canvas 126 --iiif-host openapi --region 1250,1700,2750,4457 --out .../images/fr3995/no31 --prefix n31 --dry-run
+      region 2750x4457, 25 lines, 25 bands x 2 segments; pitch 153 (fetched)
+    $ sh ciphers/fr15575-syllabic-1592-95/images/fr3995/no31/regen_crops.sh
+      grid   region 1800x3220, 20 lines, 4 bands (heading + 19 consonant rows)  -> n31grid_L01-L04
+      legend region 940x1480, 14 lines, 2 bands                               -> n31leg_L01-L02
+      letters region 1200x1200, 9 lines, 2 bands                              -> n31let_L01-L02
+Debug overlays checked: grid and letter band edges fall in whitespace; the legend cut runs through line 8 and clips the marks of
+lines 7-10 at the left edge (marks read on the overview, M). Neither the native region (1.5 MB) nor the crops are committed
+(folder at 29.7 MB); `regen_crops.sh` refetches the region once if absent and re-cuts the crops with no network.
+
+**Reads.** Two blind Sonnet passes over the same 8 crops (pass B in reverse order), raw TSVs in `no31_passes/`. Grid: 95 cells,
+both passes agree on 88 (92.6%); the 7 splits are the blotted b of ba (code 10 both), zu-row 39 (A "39?"), and the whole z row,
+which A read 704-708 and B 104-108. Settled from the image: the first digit has the top bar and slanted descender of the 7 in 97
+(x row) and the last digit of 707, while every 1 on the sheet (10-14) is an upright stroke -> **704-708** (M, a reconciler
+settlement). Letter block and legend: both passes found the same lines; they differ on which strokes are the plain letter and
+which the sign, settled by eye.
+
+**Result: `key_no31.tsv`** (`python3 build_no31.py --check` exit 0): **122 rows, H 102, M 20**; 95 syllable codes (H 88, M 7),
+11 letter-sign rows plus one row listing the plain letters with no sign (b f g h i n o p q r x), 15 legend lines.
+- Syllabary: 2-digit codes 10-99 in 18 rows, the ʒ row 35-39 ascending, and the z row 704-708 (the sheet's only 3-digit codes).
+  Against key_no54.tsv (labels normalised: j = i, v = u, ʒ = y): 85 of 95 cells carry the same code; the ʒ/y row runs the other way
+  (no.31 ʒa 35 ... ʒu 39; no.54 ya 39 ... yu 35, M there), and the z row has codes only on no.31 (no.54 grade I, no code visible).
+- Letter signs: a = ʒ 4; c = 8; d = o; e = n f q; l = h; m = v y 2; s = [triangle] d; t = 8 r; u = a 6; y (written ʒ) = ∂ p q;
+  z = d.
+- Mark legend (15 lines, French, as written): ʒ-curl "apres une syllabe a", + "apres e", δ "apres i", dot "dessus l apres", dot
+  "apres n apres", caret "dessus s apres", T-hook "dessus r entredeux", v "dessus l entredeux", colon "apres r apres", two dots
+  "dessus double", + "dessus m apres", o "dessus h entredeux", dash "dessous marque de nulle", double cross "dessus marque de
+  nulle", dash "dessus marque de nombre". The grades rate the transcription only; none is a reading of any letter.
+
+**Overlap count** (PREREG-SYL-31.md pushed 9928dcc53 at 08:14 UTC, before the key was reconciled and before any count; the
+file's own header says "08:2x", a slip -- the push time is the git log's):
+
+    $ python3 ciphers/fr15575-syllabic-1592-95/no31_overlap.py
+    f.2: 358 tokens, 319 3-digit tokens, 142 distinct
+    no.31 3-digit codes: k=5 [704, 705, 706, 707, 708]; runs [5]
+    observed T=2 tokens [(704, 1), (708, 1)], D=2 distinct
+    null layout (primary): mean 1.82, p95 8, max 28, p(T>=2) = 0.2868
+    null free (secondary): mean 1.81, p95 8, max 30, p(T>=2) = 0.3273
+    GATE (p <= 0.05, layout null): does not clear (p = 0.2868)
+
+f.2's 3-digit tokens meet no.31's codes no more often than a random run of five numbers does (2 tokens vs a null mean of 1.82):
+**f.2's 3-digit overlap with no.31's codes is at chance (count level).** No.31 has only five 3-digit codes, so the count could
+not have shown much either way; this is no evidence for or against a no.31-family key with a 3-digit nomenclator that is not on
+this sheet. f.2's 3-digit block remains unidentified: neither the no.54 nomenclator (SYL-NOM) nor no.31's code set covers it.
+The 2-digit side was not counted (not pre-registered); f.2 has 12 2-digit tokens.
+
+**Not done / next.** The no.54 mark legend (f.97r right, 8 lines, ~$1.5) was not started: this session cannot see its own cost
+and the estimate put it past 80% of the cap. No decode test is named (the gate did not clear). Requests: openapi.bnf.fr 3 (all
+200). Subagents: 2 Sonnet passes. Cost not visible to this session.
+
+## Remaining gaps (SYL-31, 13 Oct 2026; supersedes the SYL-NOM list, other lines kept)
+
+Read so far: f.228 L01-L08 of ~47 lines (289 tokens: H 158, M 26, U 105); L01-L04 gate PASS (0.674 vs p99 0.233); L05-L08 gate FAIL three times; fr.15576 f.2 body C01-C21 transcribed (334 cipher tokens, 6 unsettled), alignment gate FAIL (all M); key no.54 nomenclator transcribed (165 rows, H 113, M 52; SYL-NOM); key no.31 transcribed (122 rows, H 102, M 20; SYL-31); f.2's 3-digit codes are outside the no.54 nomenclator and at chance against no.31's five 3-digit codes (p 0.287); f.233 unread.
+- Simancas original of the 5 Jan 1595 dispatch (AGS Estado leg. 609 fol. 86, Lefèvre IV no.811) - blocker: not-attempted; new material, a clear text of fr.15576 f.2 would allow `interlinear_align.py stream` against the whole cipher without the faint gloss; PARES dead from the cloud; next: LOCAL-QUEUE desk row for the PARES image of Estado 609 fol.86 or Manuscrits divers t.28 fol.183 (row text staged in the D4-SYL54 section), ~owner minutes
+- fr.15576 f.2 gloss (G01-G21) - blocker: not-attempted; two machine passes agree on about half the words, the alignment gate FAILed on that read (D4-15576); next: one-faint-line gloss crops (f2_fr15576/body f2i_L01..L41, contrast views) read by a person (sign sorter / desk row), then re-run the pre-registered alignment unchanged, ~$2 plus owner time
+- fr.15576 f.2 cipher - blocker: not-attempted; 6 unsettled groups (sorter focus: C05 g17, C09 g14, C10 g8, C11 g17, C14 g9, C18 g10); the 5-line letter-sign block at the top (and its gloss) unread; f.2's 3-digit system is not the no.54 nomenclator (SYL-NOM) and meets no.31's five 3-digit codes at chance (2 tokens, p 0.287, SYL-31), so its 3-digit block is unidentified; next: the 6 groups in the owner's sorter; top block 2 passes + reconcile against the no.31 letter signs (key_no31.tsv), ~$4.5
+- f.228 L05-L08 gloss - blocker: not-attempted; machine gloss read of the b2 band crops retired (rule 3, NV05C); next: one-faint-line crops (re-cut b2 bands, as done for f.2) read by a person in the sign sorter, or new material, ~$2
+- no.54 mark legend (f.97r right, 8 French lines) - blocker: not-attempted; no.31 is transcribed (SYL-31) but no.54's own legend is not; next: one crop of canvas f188 f.97r right, 2 blind passes + reconcile, ~$1.5
+- key no.54 nomenclator M rows (52, recurring glyphs z/J/S-5/8 and the Mismo/Marques/Muestra codes) - blocker: not-attempted; letter identity needs decoded context, the image alone does not settle it; next: the M rows checked against decoded occurrences in f.228 once its L09+ lines are read (decode_key.py --try), ~$0 extra
+- fr.15575 f.228 L09-L47 and f.233 - blocker: not-attempted; unread, band crops mix two gloss lines (NV05C); next: 4-line batches with gloss-only crops (one faint line per crop, the f.2 cut), ~$7.5 each
+
+## Escalation (SYL-31, 13 Oct 2026)
+
+- [x] siblings: es.336 (Lasry), fr.3641, fr.3982-3983 letters in the same cipher listed by Tomokiyo; none is these leaves
+- [ ] clear-pages: AGS Estado leg. 609 fol. 86 (Lefèvre IV no.811); planned: desk row for its image
+- [ ] known-keys: no.54 syllabary control-checked (fr.3641 PASS; f.228 L01-L04 PASS; L05-L08 FAIL x3); no.54 nomenclator (SYL-NOM) and no.31 (SYL-31, 122 rows H 102 M 20) transcribed; f.2's 3-digit block matches neither (outside no.54's codes; at chance on no.31's five, p 0.287); no.54 mark legend still to transcribe (~$1.5)
+- [x] print: Lefèvre IV p.278 no.811 read in full (L47, DESK-LAND); van Durme 1964 snippet only
+- [ ] key-rebuild: f.2's period gloss alignment run once (D4-15576, gate FAIL on a machine gloss read); next: a person's gloss read, same prereg
+- [retired] image-check: machine gloss read of the f.228 b2 band crops (N8B two passes, NV05C 12 view calls), rule 3 third attempt
+- [x] retry: L01-L04 gloss retried under an addendum and PASSed (N8-NV05)
+Verdict: keep going: 7 internal gaps; cheapest next: the Estado 609 fol.86 desk row (owner minutes, row staged in D4-SYL54); then a person's read of the f.2 gloss crops and the unchanged prereg re-run (~$2), which is now the only named route to f.2's 3-digit block (neither period key on fr.3995 covers it); then the no.54 mark legend (~$1.5)

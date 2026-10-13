@@ -1,0 +1,124 @@
+# BnF fr.3995 f.62r (Nevers no.31, '1590 Ch. d'Hespagne'), Gallica btv1b525085665 canvas f126; SYL-31, 13 Oct 2026. Period key sheet: H/M grade the transcription.
+code	value	kind	conf	passA	passB	settled_by	note
+10	ba	syllable	M	ba?=10	ba=10	reconciler eye	"b blotted/overwritten (A ""ba?""), code 10 both passes"
+11	be	syllable	H	be=11	be=11	both passes	
+12	bi	syllable	H	bi=12	bi=12	both passes	
+13	bo	syllable	H	bo=13	bo=13	both passes	
+14	bu	syllable	H	bu=14	bu=14	both passes	
+19	ca	syllable	H	ca=19	ca=19	both passes	
+18	ce	syllable	H	ce=18	ce=18	both passes	
+17	ci	syllable	H	ci=17	ci=17	both passes	
+16	co	syllable	H	co=16	co=16	both passes	
+15	cu	syllable	H	cu=15	cu=15	both passes	
+24	da	syllable	H	da=24	da=24	both passes	
+23	de	syllable	H	de=23	de=23	both passes	
+22	di	syllable	H	di=22	di=22	both passes	
+21	do	syllable	H	do=21	do=21	both passes	
+20	du	syllable	H	du=20	du=20	both passes	
+25	fa	syllable	H	fa=25	fa=25	both passes	
+26	fe	syllable	H	fe=26	fe=26	both passes	
+27	fi	syllable	H	fi=27	fi=27	both passes	
+28	fo	syllable	H	fo=28	fo=28	both passes	
+29	fu	syllable	H	fu=29	fu=29	both passes	
+34	ga	syllable	H	ga=34	ga=34	both passes	
+33	ge	syllable	H	ge=33	ge=33	both passes	
+32	gi	syllable	H	gi=32	gi=32	both passes	
+31	go	syllable	H	go=31	go=31	both passes	
+30	gu	syllable	H	gu=30	gu=30	both passes	
+40	ha	syllable	H	ha=40	ha=40	both passes	
+41	he	syllable	H	he=41	he=41	both passes	
+42	hi	syllable	H	hi=42	hi=42	both passes	
+43	ho	syllable	H	ho=43	ho=43	both passes	
+44	hu	syllable	H	hu=44	hu=44	both passes	
+50	ja	syllable	H	ja=50	ja=50	both passes	
+51	je	syllable	H	je=51	je=51	both passes	
+52	ji	syllable	H	ji=52	ji=52	both passes	
+53	jo	syllable	H	jo=53	jo=53	both passes	
+54	ju	syllable	H	ju=54	ju=54	both passes	
+45	la	syllable	H	la=45	la=45	both passes	
+46	le	syllable	H	le=46	le=46	both passes	
+47	li	syllable	H	li=47	li=47	both passes	
+48	lo	syllable	H	lo=48	lo=48	both passes	
+49	lu	syllable	H	lu=49	lu=49	both passes	
+55	ma	syllable	H	ma=55	ma=55	both passes	
+56	me	syllable	H	me=56	me=56	both passes	
+57	mi	syllable	H	mi=57	mi=57	both passes	
+58	mo	syllable	H	mo=58	mo=58	both passes	
+59	mu	syllable	H	mu=59	mu=59	both passes	
+64	na	syllable	H	na=64	na=64	both passes	
+63	ne	syllable	H	ne=63	ne=63	both passes	
+62	ni	syllable	H	ni=62	ni=62	both passes	
+61	no	syllable	H	no=61	no=61	both passes	
+60	nu	syllable	H	nu=60	nu=60	both passes	
+65	pa	syllable	H	pa=65	pa=65	both passes	
+66	pe	syllable	H	pe=66	pe=66	both passes	
+67	pi	syllable	H	pi=67	pi=67	both passes	
+68	po	syllable	H	po=68	po=68	both passes	
+69	pu	syllable	H	pu=69	pu=69	both passes	
+74	qua	syllable	H	qua=74	qua=74	both passes	
+73	que	syllable	H	que=73	que=73	both passes	
+72	qui	syllable	H	qui=72	qui=72	both passes	
+71	quo	syllable	H	quo=71	quo=71	both passes	
+70	quu	syllable	H	quu=70	quu=70	both passes	
+75	ra	syllable	H	ra=75	ra=75	both passes	
+76	re	syllable	H	re=76	re=76	both passes	
+77	ri	syllable	H	ri=77	ri=77	both passes	
+78	ro	syllable	H	ro=78	ro=78	both passes	
+79	ru	syllable	H	ru=79	ru=79	both passes	
+90	sa	syllable	H	sa=90	sa=90	both passes	
+91	se	syllable	H	se=91	se=91	both passes	
+92	si	syllable	H	si=92	si=92	both passes	
+93	so	syllable	H	so=93	so=93	both passes	
+94	su	syllable	H	su=94	su=94	both passes	
+80	ta	syllable	H	ta=80	ta=80	both passes	
+81	te	syllable	H	te=81	te=81	both passes	
+82	ti	syllable	H	ti=82	ti=82	both passes	
+83	to	syllable	H	to=83	to=83	both passes	
+84	tu	syllable	H	tu=84	tu=84	both passes	
+89	va	syllable	H	va=89	va=89	both passes	
+88	ve	syllable	H	ve=88	ve=88	both passes	
+87	vi	syllable	H	vi=87	vi=87	both passes	
+86	vo	syllable	H	vo=86	vo=86	both passes	
+85	vu	syllable	H	vu=85	vu=85	both passes	
+95	xa	syllable	H	xa=95	xa=95	both passes	
+96	xe	syllable	H	xe=96	xe=96	both passes	
+97	xi	syllable	H	xi=97	xi=97	both passes	
+98	xo	syllable	H	xo=98	xo=98	both passes	
+99	xu	syllable	H	xu=99	xu=99	both passes	
+35	ʒa	syllable	H	za=35	za=35	both passes	row letter written ʒ (no.54 y row), passes wrote z
+36	ʒe	syllable	H	ze=36	ze=36	both passes	row letter written ʒ (no.54 y row), passes wrote z
+37	ʒi	syllable	H	zi=37	zi=37	both passes	row letter written ʒ (no.54 y row), passes wrote z
+38	ʒo	syllable	H	zo=38	zo=38	both passes	row letter written ʒ (no.54 y row), passes wrote z
+39	ʒu	syllable	M	zu=39?	zu=39	reconciler eye	"last digit partly blotted (A ""39?""); 9 by shape"
+704	za	syllable	M	za=704	za=104	reconciler eye	first digit split A 7 / B 1; eye: top bar and slanted descender as the 7 of 97 (x row) and the last 7 of 707; the sheet's 1s (10-14) are upright strokes -> 7
+705	ze	syllable	M	ze=705	ze=105	reconciler eye	first digit split A 7 / B 1; eye: top bar and slanted descender as the 7 of 97 (x row) and the last 7 of 707; the sheet's 1s (10-14) are upright strokes -> 7
+706	zi	syllable	M	zi=706	zi=106	reconciler eye	first digit split A 7 / B 1; eye: top bar and slanted descender as the 7 of 97 (x row) and the last 7 of 707; the sheet's 1s (10-14) are upright strokes -> 7
+707	zo	syllable	M	zo=707	zo=107	reconciler eye	first digit split A 7 / B 1; eye: top bar and slanted descender as the 7 of 97 (x row) and the last 7 of 707; the sheet's 1s (10-14) are upright strokes -> 7
+708	zu	syllable	M	zu=708	zu=108	reconciler eye	first digit split A 7 / B 1; eye: top bar and slanted descender as the 7 of 97 (x row) and the last 7 of 707; the sheet's 1s (10-14) are upright strokes -> 7
+ʒ 4	a	letter	H	see no31_passes	see no31_passes	both passes	a z-angled sign and 4; dots between are separators
+8	c	letter	M	see no31_passes	see no31_passes	reconciler eye	both passes took the hooked plain c for a sign; sign is 8
+o	d	letter	H	see no31_passes	see no31_passes	both passes	a filled o
+n f q	e	letter	H	see no31_passes	see no31_passes	both passes	
+h	l	letter	M	see no31_passes	see no31_passes	reconciler eye	"plain l (A ""k-like"", B ""l-like""); sign h"
+v y 2	m	letter	H	see no31_passes	see no31_passes	both passes	B also listed the plain m
+[triangle] d	s	letter	H	see no31_passes	see no31_passes	both passes	B also listed the plain s
+8 r	t	letter	M	see no31_passes	see no31_passes	reconciler eye	plain t written as a cross (as in the grid ta row); both passes took it for a sign
+a 6	u	letter	H	see no31_passes	see no31_passes	both passes	A also listed the plain u
+∂ p q	y	letter	M	see no31_passes	see no31_passes	reconciler eye	third column: plain written ʒ (= the y of no.54, as in the grid row); signs a looped d, p, q
+d	z	letter	M	see no31_passes	see no31_passes	reconciler eye	third column: plain written Z (as in the grid z row); sign d
+-	b f g h i n o p q r x	letter-nosign	M	see no31_passes	see no31_passes	reconciler eye	plain letters with no sign written beside them (i missed by both passes)
+[c-curl]	apres une syllabe a	legend01	H	see no31_passes	see no31_passes	both passes	
++	apres e	legend02	H	see no31_passes	see no31_passes	both passes	
+[delta/8-loop]	apres i	legend03	M	see no31_passes	see no31_passes	reconciler eye (marks at the band cut read on the overview)	
+[dot]	dessus l apres	legend04	H	see no31_passes	see no31_passes	both passes	
+[dot]	apres n apres	legend05	H	see no31_passes	see no31_passes	both passes	
+[caret]	dessus s apres	legend06	H	see no31_passes	see no31_passes	both passes	
+[T-hook]	dessus r entredeux	legend07	H	see no31_passes	see no31_passes	both passes	
+[v]	dessus l entredeux	legend08	M	see no31_passes	see no31_passes	reconciler eye (marks at the band cut read on the overview)	
+[colon]	apres r apres	legend09	M	see no31_passes	see no31_passes	reconciler eye (marks at the band cut read on the overview)	
+[two dots]	dessus double	legend10	M	see no31_passes	see no31_passes	reconciler eye (marks at the band cut read on the overview)	
++	dessus m apres	legend11	H	see no31_passes	see no31_passes	both passes	
+[o]	dessus h entredeux	legend12	M	see no31_passes	see no31_passes	reconciler eye (marks at the band cut read on the overview)	
+[dash]	dessous marque de nulle	legend13	H	see no31_passes	see no31_passes	both passes	
+[double cross]	dessus marque de nulle	legend14	M	see no31_passes	see no31_passes	reconciler eye (marks at the band cut read on the overview)	
+[dash]	dessus marque de nombre	legend15	M	see no31_passes	see no31_passes	reconciler eye (marks at the band cut read on the overview)	

@@ -1,0 +1,136 @@
+section	crop	row	col	plain	code	conf	note
+heading	grid_L01	0			1590 Ch- d'Espagne	sure	
+grid	grid_L01	1	1	ba	10	sure	
+grid	grid_L01	1	2	be	11	sure	
+grid	grid_L01	1	3	bi	12	sure	
+grid	grid_L01	1	4	bo	13	sure	
+grid	grid_L01	1	5	bu	14	sure	
+grid	grid_L01	2	1	ca	19	sure	
+grid	grid_L01	2	2	ce	18	sure	
+grid	grid_L01	2	3	ci	17	sure	
+grid	grid_L01	2	4	co	16	sure	
+grid	grid_L01	2	5	cu	15	sure	
+grid	grid_L01	3	1	da	24	sure	
+grid	grid_L01	3	2	de	23	sure	
+grid	grid_L01	3	3	di	22	sure	
+grid	grid_L01	3	4	do	21	sure	
+grid	grid_L01	3	5	du	20	sure	
+grid	grid_L01	4	1	fa	25	sure	
+grid	grid_L01	4	2	fe	26	sure	
+grid	grid_L01	4	3	fi	27	sure	
+grid	grid_L01	4	4	fo	28	sure	
+grid	grid_L01	4	5	fu	29	sure	
+grid	grid_L02	5	1	ga	34	sure	
+grid	grid_L02	5	2	ge	33	sure	
+grid	grid_L02	5	3	gi	32	sure	
+grid	grid_L02	5	4	go	31	sure	
+grid	grid_L02	5	5	gu	30	sure	
+grid	grid_L02	6	1	ha	40	sure	
+grid	grid_L02	6	2	he	41	sure	
+grid	grid_L02	6	3	hi	42	sure	
+grid	grid_L02	6	4	ho	43	sure	
+grid	grid_L02	6	5	hu	44	sure	
+grid	grid_L02	7	1	ja	50	sure	
+grid	grid_L02	7	2	je	51	sure	
+grid	grid_L02	7	3	ji	52	sure	
+grid	grid_L02	7	4	jo	53	sure	
+grid	grid_L02	7	5	ju	54	sure	
+grid	grid_L02	8	1	la	45	sure	
+grid	grid_L02	8	2	le	46	sure	
+grid	grid_L02	8	3	li	47	sure	
+grid	grid_L02	8	4	lo	48	sure	
+grid	grid_L02	8	5	lu	49	sure	
+grid	grid_L02	9	1	ma	55	sure	
+grid	grid_L02	9	2	me	56	sure	
+grid	grid_L02	9	3	mi	57	sure	
+grid	grid_L02	9	4	mo	58	sure	
+grid	grid_L02	9	5	mu	59	sure	
+grid	grid_L03	10	1	na	64	sure	
+grid	grid_L03	10	2	ne	63	sure	
+grid	grid_L03	10	3	ni	62	sure	
+grid	grid_L03	10	4	no	61	sure	
+grid	grid_L03	10	5	nu	60	sure	
+grid	grid_L03	11	1	pa	65	sure	
+grid	grid_L03	11	2	pe	66	sure	
+grid	grid_L03	11	3	pi	67	sure	
+grid	grid_L03	11	4	po	68	sure	
+grid	grid_L03	11	5	pu	69	sure	
+grid	grid_L03	12	1	qua	74	sure	
+grid	grid_L03	12	2	que	73	sure	
+grid	grid_L03	12	3	qui	72	sure	
+grid	grid_L03	12	4	quo	71	sure	
+grid	grid_L03	12	5	quu	70	sure	
+grid	grid_L03	13	1	ra	75	sure	
+grid	grid_L03	13	2	re	76	sure	
+grid	grid_L03	13	3	ri	77	sure	
+grid	grid_L03	13	4	ro	78	sure	
+grid	grid_L03	13	5	ru	79	sure	
+grid	grid_L03	14	1	sa	90	sure	
+grid	grid_L03	14	2	se	91	sure	
+grid	grid_L03	14	3	si	92	sure	
+grid	grid_L03	14	4	so	93	sure	
+grid	grid_L03	14	5	su	94	sure	
+grid	grid_L04	15	1	ta	80	sure	
+grid	grid_L04	15	2	te	81	sure	
+grid	grid_L04	15	3	ti	82	sure	
+grid	grid_L04	15	4	to	83	sure	
+grid	grid_L04	15	5	tu	84	sure	
+grid	grid_L04	16	1	va	89	sure	
+grid	grid_L04	16	2	ve	88	sure	
+grid	grid_L04	16	3	vi	87	sure	
+grid	grid_L04	16	4	vo	86	sure	
+grid	grid_L04	16	5	vu	85	sure	
+grid	grid_L04	17	1	xa	95	sure	
+grid	grid_L04	17	2	xe	96	sure	
+grid	grid_L04	17	3	xi	97	sure	
+grid	grid_L04	17	4	xo	98	sure	
+grid	grid_L04	17	5	xu	99	sure	
+grid	grid_L04	18	1	za	35	sure	
+grid	grid_L04	18	2	ze	36	sure	
+grid	grid_L04	18	3	zi	37	sure	
+grid	grid_L04	18	4	zo	38	sure	
+grid	grid_L04	18	5	zu	39	sure	
+grid	grid_L04	19	1	Za	104	sure	
+grid	grid_L04	19	2	Ze	105	sure	
+grid	grid_L04	19	3	Zi	106	sure	
+grid	grid_L04	19	4	Zo	107	sure	
+grid	grid_L04	19	5	Zu	108	sure	
+letters	let_L01	1	1	a	[z-like] 4	unsure	
+letters	let_L01	1	2	m	[m] [v-dot] y 2	unsure	
+letters	let_L01	1	3		x	unsure	
+letters	let_L01	2	1	b		unsure	
+letters	let_L01	2	2	n	[n]	unsure	
+letters	let_L01	2	3		[zeta] [d-curl] [p] [q]	unsure	
+letters	let_L01	3	1	c	[c-curl] 8	unsure	
+letters	let_L01	3	2	o	[o]	unsure	
+letters	let_L01	3	3		[zeta-curl]	unsure	
+letters	let_L01	4	1	d	[o-filled]	unsure	
+letters	let_L01	4	2		[z-angle]	unsure	
+letters	let_L01	4	3		[z-angle] d	unsure	
+letters	let_L01	5	1	e	n f q	unsure	
+letters	let_L01	5	2	p	[p]	unsure	
+letters	let_L02	1	1	f	[f-cross]	unsure	
+letters	let_L02	1	2	q	[q]	unsure	
+letters	let_L02	2	1	g	[g]	unsure	
+letters	let_L02	2	2	r	[r]	unsure	
+letters	let_L02	3	1	h	[h]	unsure	
+letters	let_L02	3	2	s	s [triangle] [d-curl]	unsure	
+letters	let_L02	4	1	l	[l]	unsure	
+letters	let_L02	4	2	t	[cross] 8 r	unsure	
+letters	let_L02	5	1		[l-like] h	unsure	
+letters	let_L02	5	2	u	u a 6	unsure	
+legend	leg	1		[c-curl]	apres une syllabe a	unsure	
+legend	leg	2		[cross]	apres e	unsure	
+legend	leg	3		[delta]	apres [i-stroke]	unsure	
+legend	leg	4		[dot]	dessus [l] apres	unsure	
+legend	leg	5		[dot]	apres n apres	unsure	
+legend	leg	6		[caret]	dessus [long-s] apres	unsure	
+legend	leg	7		[T-mark]	dessus r entredeux	unsure	
+legend	leg	8		[?]	dessus [l]...	unsure	
+legend	leg	9		[?]	apres r apres	unsure	
+legend	leg	10		[dot]	dessus double	unsure	
+legend	leg	11		[cross]	dessus m apres	unsure	
+legend	leg	12		[stroke]	dessus h entredeux	unsure	
+legend	leg	13		[dash]	dessous marque de nulle	unsure	
+legend	leg	14		[cross]	dessus marque de nulle	unsure	
+legend	leg	15		[?]	dessus marque de nombre	unsure	
