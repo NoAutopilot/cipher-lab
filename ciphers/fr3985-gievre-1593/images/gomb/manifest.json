@@ -83,5 +83,125 @@
   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f800/full/W,/0/default.jpg",
   "fetched": "2026-10-13",
   "bytes": 706657
+ },
+ "f721.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f721/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 672000
+ },
+ "f722.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f722/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 630294
+ },
+ "f723.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f723/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 719070
+ },
+ "f724.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f724/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 609769
+ },
+ "f725.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f725/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 717774
+ },
+ "f726.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f726/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 554371
+ },
+ "f727.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f727/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 706715
+ },
+ "f728.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f728/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 612473
+ },
+ "f729.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f729/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 709832
+ },
+ "f730.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f730/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 505099
+ },
+ "f731.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f731/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 688172
+ },
+ "f733.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f733/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 699950
+ },
+ "f734.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f734/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 618986
+ },
+ "f735.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f735/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 710423
+ },
+ "f736.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f736/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 608282
+ },
+ "f737.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f737/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 726549
+ },
+ "f738.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f738/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 600370
+ },
+ "f739.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f739/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 692897
+ },
+ "f741.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f741/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 693831
+ },
+ "f742.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f742/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 515881
+ },
+ "f743.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f743/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 710079
+ },
+ "f745.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f745/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 719377
+ },
+ "f746.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f746/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 600314
+ },
+ "f747.jpg": {
+  "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f747/full/1600,/0/default.jpg",
+  "fetched": "2026-10-13",
+  "bytes": 688466
  }
 }
