@@ -42,3 +42,10 @@ utc	item_id	look_row_id	role	folio	canvas	image	source	status
 2026-10-09 10:14	adhoc-6cf97a	adhoc-6cf97a:2-leaf:ff42b2	after-2	303v			folio arithmetic	owed
 2026-10-09 10:14	adhoc-6cf97a	adhoc-6cf97a:2-leaf:ff42b2	after-3	304r			folio arithmetic	owed
 2026-10-09 10:14	adhoc-6cf97a	adhoc-6cf97a:2-leaf:ff42b2	after-4	304v			folio arithmetic	owed
+2026-10-13 22:12	adhoc-026e45	adhoc-026e45:2-leaf:f0bda6	cipher-page	246r			folio arithmetic	owed
+2026-10-13 22:12	adhoc-026e45	adhoc-026e45:2-leaf:f0bda6	facing	245v			folio arithmetic	owed
+2026-10-13 22:12	adhoc-026e45	adhoc-026e45:2-leaf:f0bda6	before-2	245r		f245r_L01_s1.jpg	manifest	owed
+2026-10-13 22:12	adhoc-026e45	adhoc-026e45:2-leaf:f0bda6	after-1	246v			folio arithmetic	owed
+2026-10-13 22:12	adhoc-026e45	adhoc-026e45:2-leaf:f0bda6	after-2	247r		f247rL_L02_s1.jpg	manifest	owed
+2026-10-13 22:12	adhoc-026e45	adhoc-026e45:2-leaf:f0bda6	after-3	247v			folio arithmetic	owed
+2026-10-13 22:12	adhoc-026e45	adhoc-026e45:2-leaf:f0bda6	after-4	248r			folio arithmetic	owed
