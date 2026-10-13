@@ -1,0 +1,39 @@
+P+ n=12 yes 0.917 (gate >= 0.75) -> G1 PASS
+P- n=11 yes 0.000 (gate <= 0.25 and <= 0.417) -> G2 PASS
+T n=27 yes 0.815 (reported)
+  X04 P+:E7     true=n proposed=n -> yes/high best=E-n
+  X14 P+:D14    true=t proposed=t -> yes/high best=E-t
+  X16 P+:G10    true=a proposed=a -> yes/high best=E-a
+  X21 P+:B16    true=s proposed=s -> yes/high best=E-s
+  X24 P+:D16    true=c proposed=c -> yes/high best=E-c
+  X31 P+:H18    true=c proposed=c -> yes/high best=E-c
+  X36 P+:B18    true=t proposed=t -> yes/high best=E-t
+  X37 P+:B14    true=n proposed=n -> yes/high best=E-n
+  X40 P+:E12    true=p proposed=p -> yes/high best=E-p
+  X41 P+:J9     true=g proposed=g -> yes/high best=E-g
+  X44 P+:H15    true=s proposed=s -> yes/low best=E-s
+  X48 P+:I13    true=c proposed=c -> no/low best=NONE
+  X06 P-:H14    true=n proposed=t -> no/high best=E-n
+  X12 P-:F0     true=a proposed=r -> no/high best=E-a
+  X18 P-:E4     true=l proposed=r -> no/high best=E-l
+  X23 P-:I11    true=r proposed=c -> no/low best=E-t
+  X27 P-:H8     true=c proposed=a -> no/high best=E-c
+  X35 P-:I4     true=r proposed=t -> no/high best=E-r
+  X38 P-:J8     true=n proposed=c -> no/high best=E-n
+  X39 P-:H9     true=s proposed=c -> no/high best=E-s
+  X42 P-:D4     true=n proposed=c -> no/high best=E-n
+  X49 P-:G0     true=p proposed=c -> no/high best=E-p
+  X50 P-:F9     true=a proposed=t -> no/high best=E-a
+class	value	tiles	yes	high_no	verdict	tiles
+T:ANCHOR:4u=a	a	1	1	0	CONFIRMED	X46:yes/high/E-a
+T:ANCHOR:u4=t	t	1	1	0	CONFIRMED	X45:yes/high/E-t
+T:DECOY:h=n	n	1	1	0	CONFIRMED	X17:yes/high/E-n
+T:DECOY:hook=s	s	1	0	0	majority-no	X03:no/low/NONE
+T:DECOY:y+=r	r	2	2	0	CONFIRMED	X01:yes/low/E-r X10:yes/high/E-r
+T:ff	s	2	2	0	CONFIRMED	X02:yes/low/E-s X34:yes/low/E-s
+T:g+	n	3	0	0	majority-no	X05:no/low/E-t X07:no/low/E-t X11:no/low/E-t
+T:ll	l	4	4	0	CONFIRMED	X08:yes/high/E-l X13:yes/high/E-l X15:yes/high/E-l X26:yes/high/E-l
+T:ll|u4	l	1	1	0	CONFIRMED	X28:yes/high/E-l
+T:q	c	6	6	0	CONFIRMED	X09:yes/high/E-c X19:yes/high/E-c X22:yes/high/E-c X25:yes/high/E-c X30:yes/high/E-c X32:yes/high/E-c
+T:target:u4|4u	a	4	4	0	CONFIRMED	X29:yes/high/E-a X33:yes/high/E-a X43:yes/high/E-a X47:yes/high/E-a
+T:v	s	1	0	0	majority-no	X20:no/low/NONE

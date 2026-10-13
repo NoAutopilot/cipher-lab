@@ -1,0 +1,51 @@
+id	verdict	conf	best	note
+X01	yes	low	E-r	y-form, long bar, curled tail
+X02	yes	low	E-s	double f, bar through
+X03	no	low	NONE	open loop, dot end, no stem
+X04	yes	high	E-n	h, hooked stem
+X05	no	low	E-t	g-loop with cross
+X06	no	high	E-n	h, slanted stem
+X07	no	low	E-t	g-loop with cross
+X08	yes	high	E-l	n with pointed entry
+X09	yes	high	E-c	q, long descender
+X10	yes	high	E-r	curved y, bar through
+X11	no	low	E-t	g-loop with cross
+X12	no	high	E-a	y with cross, stem down
+X13	yes	high	E-l	n form
+X14	yes	high	E-t	u with cross
+X15	yes	high	E-l	n form
+X16	yes	high	E-a	y over cross
+X17	yes	high	E-n	h, plain stem
+X18	no	high	E-l	small n form
+X19	yes	high	E-c	q, long descender
+X20	no	low	NONE	curl loop, no f stem
+X21	yes	high	E-s	f with curl, bar
+X22	yes	high	E-c	q form
+X23	no	low	E-t	4/3 shape with strokes
+X24	yes	high	E-c	q form
+X25	yes	high	E-c	q form
+X26	yes	high	E-l	n form
+X27	no	high	E-c	q, not y-cross
+X28	yes	high	E-l	n form
+X29	yes	high	E-a	y over cross
+X30	yes	high	E-c	q form
+X31	yes	high	E-c	q form
+X32	yes	high	E-c	q form
+X33	yes	high	E-a	y over cross
+X34	yes	low	E-s	double f, bar through
+X35	no	high	E-r	curved y with bar
+X36	yes	high	E-t	u with cross
+X37	yes	high	E-n	h form
+X38	no	high	E-n	h form
+X39	no	high	E-s	f with bar
+X40	yes	high	E-p	mm minims
+X41	yes	high	E-g	r-form small
+X42	no	high	E-n	h form
+X43	yes	high	E-a	y over cross
+X44	yes	low	E-s	double f, bar through
+X45	yes	high	E-t	u with cross
+X46	yes	high	E-a	y over cross
+X47	yes	high	E-a	y over cross
+X48	no	low	NONE	curl loop
+X49	no	high	E-p	mm minims
+X50	no	high	E-a	y over cross

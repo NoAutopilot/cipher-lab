@@ -1356,3 +1356,56 @@ H 56, M 70, I 27, U 1 of 154). 168 f.246-247v: transcribed by two blind passes (
 - [x] image-check: native crops of the glossed Baluze 170 leaves f.233r, f.239r, f.258r fetched and cut (BAL-CROP); f.229 passed twice; f.228 mark re-reads closed (SIG-B228B gate FAIL)
 - [x] retry: f.228 re-cut, re-passed, decoded and re-decoded (D1-BAL170, D1-BAL170B, B167-228, SIG-B228, SIG-B228B), grade correction applied (SIG-V228), shape control run twice (BAL-CROP)
 Verdict: keep going: 2 internal gaps; cheapest next: the same-key wrong-label negative on balshape/ tiles (~$3, no network); the 168 f.246 step once L71 answers
+
+## BAL-WL (13 Oct 2026, owner account, for LANE DEFAULT-A1-0640), 07:39-07:4x UTC by date -u
+Brief: `.claude/briefs/runs/2026-10-13-acct1-default-0640-jobs.md` "BAL-WL" (same-key wrong-label negative for BAL-SHAPE; disk only).
+Prior work (pasted): `python3 tools/prior_work.py baluze167-davaux-1637 --item-spec 'shelfmark=BnF Baluze 170;folio=228r;date=1640-08-25;sender=Chavigny;recipient=Avaux' --step-type key --offline`
+-> `holds: specific 15 (LEAD 15); generic 2 (UNCHECKED-NET 2)`, exit 4; the 15 LEADs are this folder's own sections (BAL-SHAPE, BAL-CROP,
+audits, claims); none records a same-key wrong-label control. Not `--record`ed. Checks by hand: (1) own work -- BAL-CROP named this step as
+its next, not run; (2) leaf -- unchanged; (3) solver caches -- CLEAR (cyphersolver); (4) editions -- unchanged (UNA3-BAL).
+**Design** (PREREG-BAL-WL.md, pushed alone in 418e47a36 before the read): a label-VERIFICATION read instead of BAL-CROP's exemplar choice.
+Each tile captioned with one proposed exemplar ("E-c?"), yes/no. T = 27 f.228 tiles with their current value (2 gam=u dropped, no u
+exemplar); P+ = 12 gloss-fixed f.258r/f.233r tiles with the TRUE gloss label; P- = the other 11 with a WRONG label (seeded draw from
+{a c l n r s t}). Same key, same hand, no other-key tiles, so BAL-CROP's look-alike failure cannot recur; the proposed label is the input
+the yes/no depends on, so P-'s number can differ from T's (rule 3). BAL-CROP's reads not reused (different question; already seen).
+Tiles: `python3 balshape/wl/tiles_wl.py` -> `balshape/wl/r20261013: T 27, P+ 12, P- 11, pool aclnrst, exemplars abceglnprstw`.
+One blind Sonnet read (balshape/wl/read1.tsv; scorer balshape/wl/score_wl.py; balshape/wl/score1.out):
+| Arm | n | yes-rate | gate |
+|---|---|---|---|
+| P+ (true label) | 12 | 0.917 (11/12; miss I13 q, low) | G1 >= 0.75 **PASS** |
+| P- (wrong label) | 11 | 0.000 (0/11; 10 high-confidence no, best = the true letter 10/11) | G2 <= 0.25 and <= 0.417 **PASS** |
+| T (current value) | 27 | 0.815 (22/27) | reported |
+Per class (T): CONFIRMED q=c 6/6, ll=l 4/4, ll|u4=l 1/1, u4|4u=a 4/4 (the SIG-B228B per-token tiles), anchors 4u=a 1/1 and u4=t 1/1,
+y+=r 2/2, ff=s 2/2 (both yes at LOW confidence), h=n 1/1 (one tile stands for the class of 7). Majority-no (logged in HYPOTHESES.md, stay M):
+g+=n 0/3 (low; best E-t), hook=s 0/1 (low, NONE), v=s 0/1 (low, NONE) -- none of these three forms has a gloss-fixed exemplar of its own
+shape, so the "no" may be allograph rather than value. gam=u untested (no u exemplar).
+**Adoption** (PREREG item, mechanically): `python3 balshape/wl/regrade.py` -> `31 tokens M -> S` (q 6, ll 4, ll|u4 1, ff 2, y+ 5, h 7,
+u4/4u per-token tiles 6; class-wide for fixed-value shapes, per token for the u4/4u family whose value is set per token), written to
+balshape/wl/exceptions_b170f228.tsv and read by decode_key.py through decode.json (`exception_grade_overrides_conf`: the rows record the
+controlled image check). Values unchanged (asserted per token; the reading_tokens diff is the grade column only). `python3
+tools/decode_key.py ciphers/baluze167-davaux-1637 --check` -> `ciphertext_b170f228.txt: tokens 154: H 56, I 27, M 39, S 31, U 1` /
+`reading up to date`. Values never changed, so the fr17 judge was not re-run (PREREG).
+Limits: P- wrong labels were random letters from the pool, mostly visually distinct from the true sign -- an easier negative than a
+near look-alike within the key; h=n and the anchors rest on one tile each; ff=s on two low-confidence yeses. A verifier should weigh
+these before any depth change. Depth not changed here (a verifier's call, rule 4a). Network: none. Subagents: 1 Sonnet (tile read).
+
+## Remaining gaps (BAL-WL, 13 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 170 f.229r-v: N3, D2 (AUD1-B167). 170 f.228r-v: N3, D2 about 36% at the last
+audit; now H 56, S 31, M 39, I 27, U 1 of 154 after BAL-WL (31 letter signs M -> S, values unchanged; re-audit owed). 168 f.246-247v:
+transcribed by two blind passes (err_2reader 0.280), letter signs unlabelled.
+- 168 f.246-247v bare passage - blocker: waiting-on LOCAL-QUEUE L71 (owner's browser: does the Papiers de Richelieu item print the cipher passage in clear); next if it does: align the printed text to the two-pass transcription with tools/interlinear_align.py (known plaintext for the f.247 hand), ~$3; if not: the f.247-hand glossed-text search (survey.tsv's d'Avaux-side leaves), ~$3
+- 170 f.228r-v depth re-audit - blocker: not-attempted; the regrade is a solver result and a verifier must re-check it (rule 4a); next: a verifier session re-checks the BAL-WL regrade (PREREG-BAL-WL, score1.out, exceptions file) and sets depth from the new grades, ~$3
+- 170 f.228r-v g+/hook/v classes (HYPOTHESES.md) - blocker: not-attempted; no gloss-fixed exemplar of these forms is on disk; next: an image check of the g+, hook and v forms against glossed Baluze 170 leaves that carry those shapes (survey.tsv glossed leaves ff.63-322, crops via openapi.bnf.fr), ~$3
+- 170 f.228-229 novelty (N3 -> N4) - blocker: waiting-on LOCAL-QUEUE L71 and SO-BAL170-F228 (SECOND-OPINIONS-QUEUE.tsv); the edition's notes are snippet-only from the cloud and a second opinion is owed before N4
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census (N9-BAL found unlisted f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (13 Oct 2026, BAL-WL)
+- [x] siblings: davaux-1633 and DECODE records 2756-2762 checked (Siblings section above)
+- [x] clear-pages: leaf survey done; 170 f.230r is the clear close of the f.228 letter (D1-BAL170)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.229 letter values carried to f.228
+- [ ] print: Avenel, Négociations secrètes, Guébriant, Bougeant, Mercure, Siri, IA, Google Books (UNA3-BAL), OpenAlex, CrossRef done; untried: the Papiers de Richelieu 1636-1642 volume by page (L71)
+- [x] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); shape control with a same-key wrong-label negative PASSED (BAL-WL: G1 0.917, G2 0.000; 31 tokens M -> S)
+- [ ] image-check: glossed Baluze 170 crops f.233r/f.239r/f.258r on disk (BAL-CROP); untried: glossed leaves carrying the g+, hook and v forms (HYPOTHESES.md)
+- [x] retry: f.228 re-cut, re-passed, decoded and re-decoded (D1-BAL170, D1-BAL170B, B167-228, SIG-B228, SIG-B228B), grade correction applied (SIG-V228), shape control run (BAL-CROP, BAL-WL)
+Verdict: keep going: 3 internal gaps; cheapest next: a verifier re-audit of the BAL-WL regrade and depth (~$3); then the g+/hook/v image check (~$3); the 168 f.246 step once L71 answers
