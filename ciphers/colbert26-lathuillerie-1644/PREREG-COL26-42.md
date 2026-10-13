@@ -24,5 +24,5 @@ cannot differ from the target licenses nothing). Check (regex above over every g
 units carry an H1 token -> **NON-TEST, stop; do not score.** The contrast D then reduces to the H0 test, which is circular on canvas
 20-21 and HELD-OUT-UNDERPOWERED on f.24 (N 2, D07-COL26K) -- not rerun here.
 
-**Power check result (13 Oct 2026, 09:5x UTC by date -u):** canvas 20-21 20 units / 222 tokens, f.24 11 units / 168 tokens: **0 units
+**Power check result (13 Oct 2026, 09:47 UTC by date -u):** canvas 20-21 20 units / 222 tokens, f.24 11 units / 168 tokens: **0 units
 carry an H1 token.** Verdict: **NON-TEST**; no score computed; key_period.tsv and every key file unchanged.

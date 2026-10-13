@@ -31,3 +31,9 @@ lowered to M (exceptions_f23.tsv); f.23 C 127 -> 125.
 | 42 = si (held-out) | same, per code | A 0/3, B 0/3 | R max 0 (no gloss contains si: non-discriminating) | FAIL by rule; licenses nothing either way |
 | 11 = le (held-out) | same | A 2/2 (P_min 0.069), B 3/3 (P 0.014); pooled with f.24 A 10/14, B 11/15 | R p95 2 / 2; pooled p95 8 / 9 | SPLIT on canvas 29, pooled PASS; not licensed |
 | 6 = je (held-out) | same | A 0/3, B 0/4 | R max 0 (non-discriminating) | FAIL by rule; D07 scored side already FAILed |
+
+## COL26-42 (13 Oct 2026, PREREG-COL26-42.md)
+
+| hypothesis | statistic | target | control | verdict |
+|---|---|---|---|---|
+| 42 = s(ieur) (held-out canvas 20-21 + f.24, N 6) | positional known answer, WIN 0.25, s(ieur) tokens vs si | not computed | rotation / value-shuffle: 0 by construction (0/31 held-out units carry an s(ieur) token) | NON-TEST at the registered power check; licenses nothing either way |
