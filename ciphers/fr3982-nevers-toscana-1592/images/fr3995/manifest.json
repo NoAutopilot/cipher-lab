@@ -1,0 +1,18 @@
+{
+ "ark": "btv1b525085665 (BnF Francais 3995)",
+ "fetched": "13 Oct 2026",
+ "host": "openapi.bnf.fr",
+ "files": {
+  "ov_f165.jpg": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b525085665/f165/full/900,/0/default.jpg (84r, no table)",
+  "ov_f166.jpg": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b525085665/f166/full/900,/0/default.jpg (84v-85r spread: key no.45)",
+  "ov_f167.jpg": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b525085665/f167/full/900,/0/default.jpg (endorsement Camp Provin 1592 30 Aust)",
+  "ov_f168.jpg": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b525085665/f168/full/900,/0/default.jpg (86r)",
+  "ov_f171.jpg": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b525085665/f171/full/1100,/0/default.jpg (88r, blank)",
+  "ov_f172.jpg": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b525085665/f172/full/1100,/0/default.jpg (88v/89, show-through)",
+  "ov_f173.jpg": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b525085665/f173/full/1000,/0/default.jpg (89r: key no.47)",
+  "ov_f174.jpg": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b525085665/f174/full/1000,/0/default.jpg (89v show-through)",
+  "native f166 (7484x6021, deleted after cropping)": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b525085665/f166/full/max/0/default.jpg",
+  "native f173 (4088x6134, deleted)": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b525085665/f173/full/max/0/default.jpg"
+ },
+ "crops": "crops/*_rot.jpg = native f166 regions rotated 90 deg CCW (alpha 6600,350,7484,4000; nulles 6600,3900,7484,5500; advert/Dames 2150,4950,3800,5900); q7tab_crops/ = alphabet blocks, no47 name columns, no47 alphabet L/R, foot"
+}
