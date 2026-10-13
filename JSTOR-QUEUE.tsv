@@ -604,3 +604,7 @@ ciphers/eckert-1864	"don't fail to be at the wharf when the Manhattan"	2026-10-1
 ciphers/thurloe-printed	"Bampfield" AND "Thurloe" AND "1657" AND ("Savoy" OR "Mazarin") AND (cipher OR intelligence)	2026-10-11	queued	
 ciphers/thurloe-printed	"the pope has sollicited him by some of the clergye"	2026-10-11	queued	
 ciphers/thurloe-printed	"Bampfield" AND "pensioner" AND "Savoy"	2026-10-11	queued	
+ciphers/fr16104-vivonne-spain-1572	"Saint-Gouard" AND ("Catherine de Médicis" OR "reine mère") AND "septembre 1572" AND (chiffre OR déchiffrement OR chiffrée)	2026-10-13	queued	
+ciphers/fr16104-vivonne-spain-1572	"Vivonne" AND "Catherine" AND "5 septembre 1572"	2026-10-13	queued	
+ciphers/fr16104-vivonne-spain-1572	"avoir traicte avecq ses"	2026-10-13	queued	
+ciphers/fr16104-vivonne-spain-1572	"travailloit a continuer"	2026-10-13	queued	
