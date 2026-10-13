@@ -1797,3 +1797,58 @@ unresolved_spans as the unread fourth letter, N3. Row depth stays D2 on 4610/461
 the DEPTH-REGRADE basis, which includes 4612's tokens in its denominator and so understates, not overstates, the
 three letters. Board: recovered-passage documents 20 -> 19 (tools/build_dashboard.py); unique solves per
 tools/depth_check.py unchanged (it counts rows, 90). No decoding done.
+
+## V-LVN16: LVN16-3R carried into this file (13 Oct 2026)
+
+Verifier V-LVN16 (account 2, for LANE DEFAULT-A2-0710), 13 Oct 2026, 07:40-07:5x UTC by `date -u`. Separate from the LVN16-3R
+solver session; read NOTES.md "LVN16-3R", lvn16/PREREG-LVN16-3R.md (92e86face, on origin/main before the read) and its ROOM flag
+(07:31 UTC). Nothing decoded beyond `--check`; ciphertext, key and reading not edited.
+
+**Re-derivation.** `python3 lvn16/apply.py --check`: exit 0 (control A3 193/210, B3 194/210, gate PASS; 3r-settled 8, 3r-split 4).
+`python3 tools/decode_key.py . --config decode_4616_full.json --check`: "tokens 279: C 260, I 2, M 9, U 8", reading up to date;
+`python3 tools/decode_key.py . --check` (decode.json, key.tsv reading): up to date, 4616 "C 259, I 2, M 8, U 10". `lvn16/score.py`
+exit 0. Counts recomputed from the three full token files: 4610 C+H 1202/1545, 4611 905/1393, 4616 260/279; **2367 of 3217
+(73.6%); four letters 2367 of 4050 (58.4%)** (4612 counted at 833 numerals, as before). Match NOTES.md "LVN16-3R" exactly.
+
+| state | 4616 C | H | M | I | U | 4610/4611/4616 C/H | four letters |
+|---|---|---|---|---|---|---|---|
+| committed after R13-LVNFIX (R13-LVNV2) | 246 | 0 | 17 | 1 | 12 | 2355/3214 (73.3%) | 2355/4047 (58.2%) |
+| committed after LVN16-3R (this audit) | 260 | 0 | 9 | 2 | 8 | 2367/3217 (73.6%) | 2367/4050 (58.4%) |
+
+**Image reads (this verifier's own eye, no subagents).** WVO 04616.pdf fetched once (resources.huygens.knaw.nl, HTTP 200,
+take/release in ROOM.md), p1 `pdftoppm -png -r 300` (sha1 4f47b490f28e2cfeebaf5352c34f64af87636148, matches R12-LVN16), line crops
+re-cut with the logged command, pasted: `python3 tools/iiif_lines.py --image 04616-1.png --out crops --prefix 04616_p1 --region
+380,320,2080,880 --distance 45 --prominence 20 --top-margin 12 --bottom-margin 12 --debug` (13 lines; crop L03 = p1_L07, L09 = p1_L13,
+L12 = p1_L16). Tight 4x token crops cut by hand from those line crops, placed on the token by eye on the full line first (the two
+LVN16-3R off-token crops are not reused); committed as `lvn16/vlvn16/*.jpg` (112 KB, greyscale).
+- **p1_L16/19 (81 M; A3=B3 and the 3r read 91).** The first digit carries its mass in a large lower bowl under a small upper loop,
+  the same form as the 8 of 81 at p1_L13/18 and of 83 at p1_L07/7; the 9 of this hand (9 and 92 on the line above, p1_L15) has the
+  bowl on top and a long tail down-left, which this sign lacks. My read 81, the third eye read for 81 against three blind reads for
+  91. Concur: value 81, grade M (a conflict between eye and blind reads stays M); no change.
+- **p1_L07/8 (13 M; A3=B3 17, 3r crop off-token).** Second digit: flat top bar running into a rounded lower bowl, the same 3 as in 37
+  beside it; the 7 of that 37 is a top bar with a straight stem. Read 13, as R13-LVNFIX and R13-LVNV2. Concur: 13, M; no change.
+- **p1_L16/4 (85 M; A3=B3 35, 3r crop off-token).** Faint ink; the first digit has a closed upper loop that leans 8, but at 4x 8 vs 3
+  is still not settled from this image. Concur: sign 85 kept, M; no change.
+- **p1_L13/11 (27/16, kept whole; A3=B3 21/16, 3r 27/6).** The second digit has a short top bar and a straight descender, unlike the
+  curved 1 of 21 at p1_L13/5 and p1_L13/19 on the same line (`lvn16/vlvn16/p1_L13_ref21.jpg`): 27 over 21, against both 300-dpi
+  passes. After the dot, one long stroke then a 6 with its ascender: whether that stroke is a separator slash, a 1, or both written
+  as one is not decidable from the image (compare 32/16 at p1_L07/4-5, where slash and 1 are separate strokes). So the image
+  supports "27" and leaves "/16" vs "/6" open. Concur with LVN16-3R's decision: kept whole (U), no split.
+- **Settles spot-checked (outside the four rows, one look each):** p1_L09/15 25/51 (25, slash, 5 with the 1 of 51: supported);
+  p1_L12/7 116 (supported); p1_L16/2 20 (3r read = R12-LVNV2's eye; A3=B3 26): at 5x the short stroke above the bowl is not joined to
+  it and lies at the end of the descender of the 9 of 92 on the line above, so the bowl reads 0; 20 is supported, R12-LVNV2's note of
+  a possible writer correction stands. No settle reverted.
+
+**Over-claim check.** None found. Every LVN16-3R settle read a value the image supports; the two off-token crops changed nothing (the
+rule left both rows M); the PREREG's handling of p1_L05/9 (stricter than pre-registered, decided before applying) is the safer side.
+No sentence in this file, status.json's safe sentence or PROMPT-chatgpt.md quotes a changed 4616 token.
+
+**Depth (rule 4a).** `python3 tools/depth_check.py` exit 0. Row stays **D2** on 4610/4611/4616: the depth_sentence is 4610's and
+unchanged; four-letter share 58.4% is below D3's 80% (4616 alone 260/279 = 93.2%, but D3 is a row grade and 4610/4611 are not
+there). depth_pct 62.6 is left on the DEPTH-REGRADE basis (see R13-LVNV); status.json not edited. Outward wording "partially
+deciphered (about 58%)" holds.
+
+**N-class.** Unchanged: 4616 N4 (no prior decipherment located); 4610/4611 N4, 4612 N3. Key source: ours (key_full, from the
+period decipherment sheets). SO-LODEWIJK-1573-74's notes column gets one clause pointing here; SO-LODEWIJK-5797 unaffected.
+Requests: resources.huygens.knaw.nl 1. Subagents: none. Next for 4616 (one line): p1_L13/11's "/16" vs "/6" and p1_L16/4 8 vs 3
+are image-limited at 300 dpi; a higher-resolution image (holder scan) is the only named instrument left.
