@@ -15128,3 +15128,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 07:24 | VIV52-O worker | halfway for LANE DEFAULT-A1-0640 (owner account), 07:25 UTC by date -u: ink 52 f.164r+f.164v transcribed (4 blind Sonnet passes, agree 84.8%/81.6%), decoded 2727 tokens H 2217/M 404/U 106; PREREG-VIV52O gates b2 PASS (-1.514 vs p99 -1.775, controls pass) + 200 wrong keys PASS (margin 0.262 vs p99 0.026); longest H run 24, expected D1 holds; writing up
 2026-10-13 07:22 | LAG-HIRES worker | resources.huygens.knaw.nl (huygens) take for LANE DEFAULT-A2-0710 (account 2): 06467.pdf (2 of 16 doubt cells are on sibling 6467), 1 request
 2026-10-13 07:24 | LAG-HIRES worker | resources.huygens.knaw.nl (huygens) release for LANE DEFAULT-A2-0710 (account 2): job total 2 requests, both 200
+2026-10-13 07:25 | BAL103-189 (Opus worker) | openapi.bnf.fr take for LANE DEFAULT-A2-0710 (account 2): btv1b9001389d overviews c402/c403/c404 at 800 px, then native regions (<= 10 total)
