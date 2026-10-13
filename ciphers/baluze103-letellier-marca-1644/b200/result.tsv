@@ -1,0 +1,4 @@
+transcription	N_tokens	cipher_letters	clear_letters	A	perm_mean	perm_p95	perm_p99	wrong_span_A	gate_part
+passA	480	486	24	0.675	0.263	0.292	0.298	0.537	PASS
+passB	494	469	18	0.552	0.256	0.288	0.298	0.422	FAIL
+rec	480	478	24	0.686	0.263	0.291	0.298	0.546	PASS

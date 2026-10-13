@@ -875,7 +875,8 @@ Verdict: parked: both gaps wait on the owner's pass over the republished f.50 so
 
 Waits on the owner's pass over the republished f.50 sign sorter (ROOM flag R10-BAL103F, 6 Oct 2026): confusable pairs and the 42 ambiguous 9s.
 - [done BAL103-189, 13 Oct 2026: gate PASS, strict 9s 3 all s, pooled k_i = 0] Blind-pass and align f.189r with its period decipherment (Gallica btv1b9001389d; DECODE R2744): more known-value 9s than f.171r's six to test the 9 shape split. M, iiif_lines + reconcile_passes
-- Same for f.200 or f.230 (DECODE R2745, R2746) if f.189r still has k_i = 0 (no 9 read as i). M, same tools
+- [done BAL103-200, 13 Oct 2026: f.200r gate FAIL (pass B 0.552 < 0.60), strict 9s 4 all s, pooled strict N 13, k_i = 0] Same for f.200 or f.230 (DECODE R2745, R2746) if f.189r still has k_i = 0 (no 9 read as i). M, same tools
+- f.230 (DECODE R2746, ff.230-233) is the one deciphered sibling left; next only if an i-valued 9 is still wanted (three leaves, ~33 loose 9 alignments, none i). M, same tools, ~$5
 
 ## f.189r vs its f.190r period decipherment (BAL103-189, 13 Oct 2026)
 
@@ -926,12 +927,12 @@ Worker BAL103-189 (account 2, LANE DEFAULT-A2-0710), 07:20-07:3x UTC 13 Oct 2026
 Where not found: no plaintext of f.50 used or consulted; f.189v and f.190r past line 18 not read. Requests: openapi.bnf.fr 7 (2
 overviews at 800 px, 2 info.json, 2 native regions), all 200, >= 3 s apart. Subagent calls: 2 (Sonnet).
 
-## Remaining gaps (BAL103-189, 13 Oct 2026)
+### Gaps as of BAL103-189, 13 Oct 2026 (superseded by BAL103-200 below)
 Read so far: unmeasured as a reading on f.50 -- 451/630 draft tokens H (conditional), judge fr17 FAIL -1.445 vs real_p05 -0.852 after the 9 rule; the table itself reads two deciphered siblings (f.171r 0.767, f.189r 0.739/0.721 per blind pass)
 - f.50 confusable sign pairs (m/mm/mt, tt/venus, venus/q, x/xc/xs/xbar, mm/tt, 9/venus; R/u, b/bt) - blocker: waiting-on the owner's answer on the f.50 sign sorter sorter/out/baluze103_f50_sorter.html, to be republished by the account-3 orchestrator (ROOM flag R10-BAL103F, 6 Oct 2026); two machine third readers settled one-directionally (R8-BAL103, R8-BAL103B), so per CLAUDE.md Usage 6 the pass is a person's; f.189r's undecided rows (x/xc swapped, 6/sigma, hz/gz) sit on the same pairs
 - ambiguous 9 (i|r|s; 42 tokens on the R9 fr17 lean, grade M) - blocker: waiting-on the owner's answer on the f.50 sign sorter (its 32 focus 9 tiles split by shape, ROOM flag R10-BAL103F); the i vs r|s shape split stays a NON-TEST on the pooled sibling control (BAL103-189: f.171r + f.189r strict N = 9, k_i = 0)
 
-## Escalation (BAL103-189, 13 Oct 2026)
+### Escalation as of BAL103-189, 13 Oct 2026 (superseded by BAL103-200 below)
 - [x] siblings: f.171r (R7C-BAL103K 0.767; R10-BAL103D 9 control) and f.189r (BAL103-189, 13 Oct 2026: A 0.739 / 0.721 vs p99 0.403 / 0.393 on two blind passes, 25 cells confirmed, none contradicted, strict 9s 3 all s)
 - [n/a] clear-pages: neighbours f.49v, f.51, f.52 viewed 3 Oct 2026 carry only a docket and filing slips, no decipherment
 - [x] known-keys: Tomokiyo's table reads f.50 above a permutation null in both blind passes (R8-BAL103, 6 Oct 2026: -1.566/-1.602 vs p99 -1.99/-1.96); judge fr17 FAIL -1.445 after the 9 rule (R9-BAL103)
@@ -940,3 +941,80 @@ Read so far: unmeasured as a reading on f.50 -- 451/630 draft tokens H (conditio
 - [x] image-check: machine re-read retired for the confusable pairs (R8-BAL103, R8-BAL103B); the owner's sign sorter rebuilt with the 9 tiles in focus and preflight-PASSed (R10-BAL103F, 6 Oct 2026), waiting on republication and the owner's pass
 - [x] retry: fr17 test of 9 = s on f.50 against position and value nulls (R10-BAL103E, 6 Oct 2026): gate FAIL, D -0.042, no change
 Verdict: parked: both gaps wait on the owner's pass over the republished f.50 sorter (account-3 orchestrator republishes; ROOM flag R10-BAL103F); f.200/f.230 (DECODE R2745/R2746) for an i-valued 9 is optional while waiting, ~$4
+
+## f.200r vs its f.205r period decipherment (BAL103-200, 13 Oct 2026)
+
+Worker BAL103-200 (account 2, LANE DEFAULT-A2-0710), 07:40-07:5x UTC 13 Oct 2026 by `date -u`. Key source under test: published
+(Tomokiyo 1644 table, with R7C's c = p). Report what was found and where it was not found; novelty not classified (rule 10).
+
+- **Prior work** (`tools/prior_work.py ... --item-spec 'shelfmark=BnF Baluze 103;folio=200r;decode=2745' --step-type transcribe
+  --known-answer gate:tomokiyo-table-f200r --fetch`): exit 4 on one LEAD (this job's own ROOM claim), recorded CLEAR; plaintext KNOWN =
+  the period decipherment used here as the known answer; DECODE R2745 'Decrypted' (ff.200-206, 8 pages) not fetched (the leaf's own
+  decipherment was read from the BnF image instead).
+- **Material.** openapi.bnf.fr (folio = (canvas - 24)/2, as f.189r = c402): c424 = f.200r, cipher with clear words, headed "Du
+  cinquiesme Octobre 1644 a Fontainebleau", 20 lines; the cipher runs on over c426 (f.201r), c428 (f.202r), c430 (f.203r); c432
+  (f.204r) blank; c434 = f.205r, the decipherment headed "...ttre de Monsieur Le Tellier du cinquiesme Oct.bre 1644 a Fontainebleau".
+  Crops `b200/images/f200r_L01-20_s1/s2.jpg` by `tools/iiif_lines.py --image b200/images/src_c424_1100_1950_3200_4300.jpg --prefix
+  f200r --follow-slope 400 --debug` (overlay `f200r_lines_debug.jpg` checked: 20 bands on 20 lines); decipherment strips
+  `b200/images/f205r_dec_part1-5.jpg` cut from native region c434 1500,1150,3100,4800.
+- **PREREG** `b200/PREREG-BAL103-200.md` pushed 5d5a69adb before either pass or the decipherment was read (overview disclosure there).
+- **Blind passes** (Sonnet, one call each over all 40 crops, tx/PASS_INSTRUCTIONS.md + key sheet only): `b200/f200r_passA.tsv` (12 `?`),
+  `b200/f200r_passB.tsv` (35 `?`; read and written in reverse line order). Joined per line (`b200/join_lines.py`), then
+  `tools/reconcile_passes.py --keep-plain`: 347/535 = **64.9% agree** (f.189r: 81.0%). **Reconciliation** `b200/f200r_rec.tsv`
+  (`b200/make_rec.py`, committed 8fe83297e before the decipherment was read): 188 columns, 8 settled by the class rule '5 over sigma'
+  (long-s shape, eyed on crops L01 and L05), 34 kept as pass A under BAL103-189's class rules (H over xs/8s, mt over 3/z, q2 over 2,
+  xc over xs), 146 pass A by default (B-only signs dropped). M grade throughout; the disagreement rate is above Usage 6's tenth.
+- **Decipherment** read once, after the reconciliation: `b200/f205r_decipherment.txt` (whole f.205r page, struck words omitted; the end
+  of f.200r's text was not located by reading, so the DP's free end gap carries it, as registered).
+- **Scoring fix, disclosed:** `b200/score200.py` = `b189/score189.py` with file names changed and one more change: rows are sorted
+  into page order (line, segment) before decoding, because pass B was written in its reverse reading order and score189.py reads rows in
+  file order (b189's pass B was stored in page order). Unsorted, pass B scored 0.305 (a scoring artefact, not a reading).
+- **Result** (`b200/score200.py`, `--check` exits 0; `b200/result.tsv`, `b200/sign_table.tsv`, `b200/nines.tsv`):
+
+| transcription | cipher letters | A | perm mean | perm p95 | perm p99 | wrong span | gate |
+|---|---|---|---|---|---|---|---|
+| pass A | 486 | **0.675** | 0.263 | 0.292 | 0.298 | 0.537 | PASS |
+| pass B | 469 | **0.552** | 0.256 | 0.288 | 0.298 | 0.422 | FAIL (< 0.60) |
+| reconciliation | 478 | 0.686 | 0.263 | 0.291 | 0.298 | 0.546 | (PASS) |
+
+  **Registered gate FAIL**: pass B is above its permutation p99 but under the 0.60 floor, so no key change of any kind. Both passes and
+  the reconciliation read far above the permutation null (2.1x-2.6x its mean); the shortfall tracks pass B's 35 unreadable signs and the
+  64.9% pass agreement, not the table. The wrong-span null is weak here (0.42-0.55): the whole page was used as P, and its cyclic
+  half-shift still contains the true span.
+- **Per-sign table test** (reconciliation, n >= 2; descriptive, the gate failed). **Confirmed (28):** u e (27), 14 e (20), a n (19),
+  theta e (17), rho i (16), 7 s (14), bt e (12), ct a (10), 10 a, 21 n, 8 s (9 each), 18 i, f r (8), 12 c, 13 d, 19 l, 22 o, t d
+  (6), **c p (5/5; R7C's change confirmed on a third letter)**, dt r (5), eps o (4), 20 m, mm p, o7 m (3), 11 b, 23 p, n y (2); and 9 in
+  {i,r,s}. **Contradicted (2, reconciliation only, neither in both passes):** venus (key b) -> i 6/8 (pass A contradicted, pass B
+  undecided; venus is one of the f.50 sorter-bound pairs, never edited by this job); 3 (key h|x) -> e 3/3 (both passes undecided).
+  **Undecided** (20), the same look-alike families as f.189r: 6 (t 13, l 6), hz (t 9 of 15; key l), H (o 7 of 15), mt (i 5, s 9),
+  delta (o 11 of 20), xbar (c 3, r 4), xc (c 3 of 6; key f), j (c 6 of 9; key b), y (n 5), z, q2, psi, l, P, sigma. Word codes aligned
+  where the DP placed them: =11 que, =12 qui, =9 pour, =32 Barcelone, **=34 "ambassadeur"** (not in this folder's notes before).
+  **Licensed key.tsv edits: none** (gate FAIL); key.tsv, key_decode.tsv, exceptions.tsv untouched; `tools/decode_key.py . --check`:
+  reading up to date, tokens 630: H 451, M 165, U 14. fr17 judge not re-run (nothing changed).
+- **The 9s** (reconciliation, 11 standalone 9 tokens): strict-known **4, all s** ("des ambassadeurs", "s'estonne", "Joseph", "son
+  camp"); loose in {i,r,s}: **s 5, r 4, i 0** (r in "particulier", "croid", "discours", "trempe"). Pooled strict-known with f.171r
+  (6, all s) and f.189r (3, all s): **N = 13, k_i = 0, k_r = 0** -> **registered decision: NON-TEST**, shape read not run
+  (r10/power9.tsv needs k_i >= 2 with N >= 7). Descriptive: over three deciphered siblings about 33 loose 9 alignments read r or s
+  and none i; an i-valued 9 may not occur in these letters at all, and if the hand separates two 9 shapes it is r vs s. The power
+  bar for a later r-vs-s registration is the same row (k_r >= 2 strict, N >= 7); strict r is 0 on all three leaves (every r-aligned
+  9 sits next to a mismatch).
+- **f.230 not run:** the brief's unit pricing puts one leaf at about the whole cap; named as the next step (~$5) if an i-valued 9 is
+  still wanted.
+Where not found: no plaintext of f.50 used or consulted; f.201r-203r (rest of the cipher) and f.205v-206 (rest of the decipherment)
+not read; DECODE R2745's documents not fetched. Requests: openapi.bnf.fr 8 (6 overviews at 800 px c424/c426/c428/c430/c432/c434, 2 native
+regions c424 and c434; no info.json, the region sizes came back as requested), all 200, >= 3 s apart. Subagent calls: 2 (Sonnet).
+
+## Remaining gaps (BAL103-200, 13 Oct 2026)
+Read so far: unmeasured as a reading on f.50 -- 451/630 draft tokens H (conditional), judge fr17 FAIL -1.445 vs real_p05 -0.852 after the 9 rule; the table itself reads three deciphered siblings (f.171r 0.767, f.189r 0.739/0.721, f.200r 0.675/0.552 per blind pass, f.200r pass B under the 0.60 floor)
+- f.50 confusable sign pairs (m/mm/mt, tt/venus, venus/q, x/xc/xs/xbar, mm/tt, 9/venus; R/u, b/bt) - blocker: waiting-on the owner's answer on the f.50 sign sorter sorter/out/baluze103_f50_sorter.html, to be republished by the account-3 orchestrator (ROOM flag R10-BAL103F, 6 Oct 2026); two machine third readers settled one-directionally (R8-BAL103, R8-BAL103B), so per CLAUDE.md Usage 6 the pass is a person's; f.189r's and f.200r's undecided rows (x/xc, 6/sigma, hz, venus aligning i on f.200r) sit on the same pairs
+- ambiguous 9 (i|r|s; 42 tokens on the R9 fr17 lean, grade M) - blocker: waiting-on the owner's answer on the f.50 sign sorter (its 32 focus 9 tiles split by shape, ROOM flag R10-BAL103F); the i vs r|s shape split stays a NON-TEST on the pooled sibling control (BAL103-200: f.171r + f.189r + f.200r strict N = 13, k_i = 0; no loose i either)
+
+## Escalation (BAL103-200, 13 Oct 2026)
+- [x] siblings: f.171r (R7C-BAL103K 0.767; R10-BAL103D 9 control), f.189r (BAL103-189: 0.739 / 0.721, gate PASS) and f.200r (BAL103-200, 13 Oct 2026: 0.675 / 0.552 vs p99 0.298, gate FAIL on pass B's 0.60 floor; 28 cells confirmed, venus and 3 contradicted in the reconciliation only, strict 9s 4 all s); f.230 (DECODE R2746) is optional, ~$5
+- [n/a] clear-pages: neighbours f.49v, f.51, f.52 viewed 3 Oct 2026 carry only a docket and filing slips, no decipherment
+- [x] known-keys: Tomokiyo's table reads f.50 above a permutation null in both blind passes (R8-BAL103, 6 Oct 2026: -1.566/-1.602 vs p99 -1.99/-1.96); judge fr17 FAIL -1.445 after the 9 rule (R9-BAL103)
+- [x] print: web, three blogs, both solver repositories, DECODE (record, documents and all four TranscriptionsLists) and Chéruel t.1 checked (24 Sept, 3 Oct, 5 Oct 2026): no plaintext of f.50 found
+- [n/a] key-rebuild: three deciphered siblings read through the table with no cell contradicted in both blind passes (R7C-BAL103K, BAL103-189, BAL103-200); no rebuild is licensed
+- [x] image-check: machine re-read retired for the confusable pairs (R8-BAL103, R8-BAL103B); the owner's sign sorter rebuilt with the 9 tiles in focus and preflight-PASSed (R10-BAL103F, 6 Oct 2026), waiting on republication and the owner's pass
+- [x] retry: fr17 test of 9 = s on f.50 against position and value nulls (R10-BAL103E, 6 Oct 2026): gate FAIL, D -0.042, no change
+Verdict: parked: both gaps wait on the owner's pass over the republished f.50 sorter (account-3 orchestrator republishes; ROOM flag R10-BAL103F); f.230 (DECODE R2746) for an i-valued 9 is optional while waiting, ~$5, unlikely to move it (no i-aligned 9 on three siblings)

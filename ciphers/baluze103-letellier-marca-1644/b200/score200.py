@@ -20,8 +20,11 @@ first = {c: v.split('|')[0] for c, v in key.items()}
 def tokens(path):
     """(line, token) in page order; s2 rows start at their |> marker (overlap dropped)."""
     out_all = []
-    for ln in open(path):
-        if ln.startswith('#') or not ln.strip() or '\t' not in ln: continue
+    rows = [ln for ln in open(path) if not (ln.startswith('#') or not ln.strip() or '\t' not in ln)]
+    # BAL103-200: pass B was written in its reading order (L20 first); sort rows into page order (line, segment) as the
+    # docstring requires -- the only change from score189.py besides file names (NOTES.md BAL103-200 section).
+    rows.sort(key=lambda ln: (int(ln.split('\t', 1)[0].split('_')[-2][1:]), ln.split('\t', 1)[0].split('_')[-1]))
+    for ln in rows:
         cid, tt = ln.rstrip('\n').split('\t', 1); parts = cid.split('_'); line = int(parts[-2][1:]); seg = parts[-1]
         out, buf = [], None
         for t in tt.split(' '):
@@ -49,7 +52,7 @@ def expand(toks, km):
             if not v or v.startswith('?') or v.upper() == 'U': continue
         for ch in norm(v): E.append((ti, s, ch, clear))
     return E
-P = norm(''.join(l for l in open(os.path.join(H, 'f200_decipherment.txt')) if not l.startswith('#')))
+P = norm(''.join(l for l in open(os.path.join(H, 'f205r_decipherment.txt')) if not l.startswith('#')))
 def align(D, P):
     n, m = len(D), len(P)
     sc = [[0] * (m + 1) for _ in range(n + 1)]; bt = [[0] * (m + 1) for _ in range(n + 1)]

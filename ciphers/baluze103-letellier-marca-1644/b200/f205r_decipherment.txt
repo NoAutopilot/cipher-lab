@@ -1,0 +1,38 @@
+# BAL103-200: f.205r period decipherment of f.200r-203r (Lettre de Monsieur Le Tellier du cinquiesme Oct.bre 1644 a Fontainebleau),
+# read once by this worker from b200/images/f205r_dec_part1-5.jpg AFTER the f.200r reconciliation was committed (8fe83297e).
+# Struck words omitted (y before beaucoup; et after principat; a before ordre; y es before besoin; province dans; lol; a struck
+# group before province; Catalans; la after par; ef before interestz; de leur f at the foot). Spelling as written; abbreviations
+# as written (Mar.al, Monsr). Whole page used: the end of f.200r's text was not located by reading (PREREG: free end gap).
+On a trouue beaucoup a redire
+de ce que on a sollicite le principat
+la ville de Barcelone denuoyer icy des Ambassadeurs et que on se
+soit seruy pour cela du nom de Monsieur le Maral de La Motte
+qui na pas deub y estre emploie
+sans auoir eu ordre particulier
+du Roi on sestonne de ce que Monsr le Maral de La Motte
+laisse ses blancs a Joseph Marguerit
+et de ce que celuy cy sen soit seruy
+sans luy en communiquer nestant
+que a deux iournees de son camp a
+quoy on iuge quil ny a point
+dapparence on croid que le discours
+de la vallee sur ce subiect nest
+que artiffice pour empescher que on ne
+descouure quil trempe en cette
+sollicitation qui passeroit pour
+criminelle en la personne des
+ministres du Roi en un estat bien
+reigle La Reine na point besoin
+destre excittee par des ambassades
+a secourir la Catalogne sa Maieste
+cognoit asses combien il importe au seruice du Roi
+et a la reputation de la France
+de conseruer cette prouince dans
+lobeissance de sa Maieste mais
+elle a encore sinclination a
+procurer tout aduantage aux Catalans
+par consideration des interestz
+particuliers et il est bien plus seant
+que les peuples reconnoissent
+debuoir a la bonte de la Reine les assistances
+que on leur donnera que
