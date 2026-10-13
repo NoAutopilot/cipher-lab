@@ -150,3 +150,20 @@ gloss-fixed exemplar tiles from 2-3 glossed leaves as positive control; within-k
 from the target's; one blind Sonnet tile pass, a second only if the first is under gate; regrade only what the gate licenses; decode
 `--check`). Units: survey.tsv pick + <= 3 region fetches + crops (~1), 1-2 vision calls + 1 reconciliation at ~0.8 each. Folder is at
 29.1 MB: add only cited tiles, add them to images_manifest_full.tsv and regen_images.sh (BAL167-SHRINK), `du -sh` before pushing.
+
+## Wave 4 (10:5x UTC 13 Oct; last wave)
+Wave 3 (ledgered): VIV-DECH Sept dechiffre heads (inks 56/60/62) are not ink 52, Oct-Dec pairs bracketed (c288, c296) not viewed;
+BAL167-GHV hook 7 + v 1 M -> S after read 1 FAIL / read 2 PASS (PREREG c60720e55), g+ stays M, re-audit owed.
+
+### V-GHV (Opus, verifier, cap 3, box 50 min, disk only): baluze167-davaux-1637, re-audit of BAL167-GHV's 8 regrades
+As V-BAL167 (wave 1) for BAL167-GHV (NOTES.md "## BAL167-GHV", PREREG c60720e55, commit ccdff89ef). Check: (1) PREREG pushed before
+either read (git log order) and it allowed a second read when the first was under gate, in those words -- a second read not provided for
+in the PREREG voids the regrade; (2) the within-key look-alike negative can differ from the target on the statistic; (3) what read 1's
+FAIL means for read 2's PASS (is the pass a retry of the same instrument that the first read failed? say so plainly); (4) the 8 regrades
+are exactly what the gate licenses; (5) decode `--check`; depth per rule 4a with `tools/depth_check.py`. Write AUDIT.md section "AUDIT 5"
+(next number); revert any regrade not licensed; status.json depth fields only if depth changes.
+
+### VIV-DECH2 (Opus, cap 2.5, box 40 min, openapi.bnf.fr <= 8): fr16104 Oct-Dec dechiffre heads
+NOTES.md gap line as updated by VIV-DECH (commits 1441e930a, 69b7d6521): the Oct-Dec 1572 dechiffre/cipher pairs between c219 and c296,
+bracketed but unviewed. Same method and table as VIV-DECH: head region of each dechiffre leaf, compared with ink 52's decoded opening and
+three named phrases. Stop at the first leaf that matches (flag line, NOTES.md, no AUDIT.md edit). Update the gap line; gaps_check.
