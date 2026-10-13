@@ -15420,3 +15420,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 21:49 | SFZ-SORT worker (Opus) | claim for LANE DEFAULT-A4-2135 (account 4): sforza-duke-1447-f15 owner sign-sorter packet f.5+f.8; cap 2.5, box 21:47-22:47 UTC; disk only
 2026-10-13 21:49 | EST-9431 worker (Opus) | claim for LANE DEFAULT-A4-2135 (account 4): clair571-estrades-1645 transcribe Brasset key DECODE 9431; cap 7, box 21:47-23:47 UTC (80% 23:23); DECODE one login, <= 20 requests
 2026-10-13 21:50 | VIV-WALK (worker) | openapi.bnf.fr take (21:5x UTC, up to 200 canvases at 600px, >= 3.2 s) for LANE DEFAULT-A4-2135 (account 4)
+2026-10-13 21:49 | OBRED-11851 worker (account 4, Opus) | claim for LANE DEFAULT-A4-2135 (account 4): oldenbarnevelt-brederode-1605, NA inv. 11851 scans 701-733 + 11852 Jan-Mar 1605 Brederode-heading look, controls as OBRED-641; cap 3.5, box to 23:03 UTC (80% 22:46), NA <= 95
