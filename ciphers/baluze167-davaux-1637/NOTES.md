@@ -1415,6 +1415,20 @@ Re-audit of BAL-WL: AUDIT.md '## AUDIT 4 f.228 (V-BAL167)'. PREREG pushed before
 axis; all 31 M -> S regrades licensed by the PREREG, none reverted; decode --check, score and regrade reproduce byte-identically. Depth D2 held,
 H/C/S 87/154 = 56.5% (status.json depth_pct 36.0 -> 56.5). Limits: P- labels mostly not look-alikes; 9 of 31 S by class membership.
 
+## BAL167-SHRINK (13 Oct 2026, account 4, for LANE DEFAULT-A4-0935), 10:06-10:1x UTC by date -u
+Disk job, images/ 31,065,383 -> 29,138,857 bytes (`du -sh` 31M -> 29M). `images_manifest_full.tsv` lists every file under images/
+(bytes, sha1, size, `cited_by` from a grep of every tracked text file in the repository for the file stem, regen route, action).
+Deleted: the 20 `images/crops/*_lines_debug.jpg` overlays no file cites (1,926,526 bytes); the five cited overlays (b170f228v_b,
+b170f229r, b170f229v and the b170gloss ones BAL-CROP kept by design) stay. Nothing cited by AUDIT.md, a PREREG or balshape/ was touched;
+no full pages are committed, so none were converted. `regen_images.sh DIR [--offline] [--check] [--overlays]` (`regen_images.py`)
+re-derives every recorded crop from openapi.bnf.fr by its manifest box: `--offline --check` 141/141 crops byte-identical from the
+committed src regions (the 27 b170f229r/v crops have no committed src and need two fetches); one openapi.bnf.fr request
+(btv1b9001503k f510 2800,4330,880,200, HTTP 200) came back sha1-identical to the committed src and the crop cut from it
+(b168f247end_L01.jpg) sha1-identical; `--overlays` rebuilt 25 overlays from the src files (not byte-tested). After the deletion:
+`decode_key.py --check` reading up to date; balshape/score.py (tileread1 with tiles_r1 key, tileread2) and wl/score_wl.py output
+byte-identical to score1.out/score2.out/wl/score1.out. The folder as a whole is 47 MB: about 15 MB of images sit outside images/
+(balshape tiles, d1bal*, sorter170 and similar working folders), outside this brief; suggestion: the same manifest/regen pattern there.
+
 ## Remaining gaps (V-BAL167, 13 Oct 2026)
 Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
 142) are read in full with the published key (reading.txt). 170 f.229r-v: N3, D2 (AUD1-B167). 170 f.228r-v: N3, D2 about 36% at the last
