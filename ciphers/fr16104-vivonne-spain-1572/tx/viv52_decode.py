@@ -16,7 +16,11 @@ sys.path.insert(0, HERE)
 import viv54_decode as vd  # noqa: E402
 import viv63_decode as v63  # noqa: E402
 
-PAGES = ('f164r', 'f164v')  # VIV52-O, 13 Oct 2026; ff.165r-168v not transcribed (NOTES "VIV52-O")
+PAGES = ('f164r', 'f164v')
+# Notation rule only, set before the first decode (NOTES "VIV52-O"): pass B on f.164r wrote the pi sign as 'II' (its own report: "pi/P/II"),
+# SIGNS.md's token for it is P; 11 'II'/'P' splits are one sign in two spellings, not a reading judgement. The 26 z/2 splits stay
+# unsettled at pass A (f.164r L02 s2 eyed: a flat z-like sign with a short tail, the same open pair as ink 63).
+v63.RULES[frozenset(('II', 'P'))] = 'P'  # VIV52-O, 13 Oct 2026; ff.165r-168v not transcribed (NOTES "VIV52-O")
 
 
 def key(name='key.tsv'):
