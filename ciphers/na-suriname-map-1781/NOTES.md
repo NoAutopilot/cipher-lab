@@ -4299,3 +4299,6 @@ changed). `decode_key.py . --check` exit 0; grades unchanged (2039 legend Nieuw 
 Where not found: no crib letter for the slot in crib_2038 or crib_2042; 0730's gloss "Smeedery" (inv. 373) was not re-read here.
 Suggestion (not run): a pre-registered spelling test of the r-vs-7 slots before -y- (k6, l3) against a letter-shuffle control, ~$1.
 Cost not visible to this session (0 subagent calls).
+
+## SUR-SHRINK: images/ size, 13 Oct 2026 (LANE DEFAULT-A2-2013, account 2)
+images/ file bytes 31,149,607 -> 29,710,552 (du -sb 31,024,364 -> 29,710,552). Deleted four uncited `*_lines_debug.jpg` overlays (crops_2038 leg2038, crops_2042 leg2042, crops_2078_nota nota78, crops_inv86_key key86; 1,439,055 bytes): no NOTES/AUDIT/key/decode line cites them and the pass briefs say not to open them. Each regenerates byte-identical (sha1 equal, crops equal for key86) with `./regen_images.sh <crops_dir> OUTDIR` (recipes for crops_2078_nota and crops_inv86_key added to regen_images.sh; crops_2038, crops_2042 already had them). images_manifest_full.tsv rows set to kind `regen-lines-deleted`. No crop, tile, native or overview was touched. `decode_key.py . --check`: reading up to date. Other debug overlays (leg77, nota78R, leg46, remN, rem2039, legk, v86L/R, sur372) remain: no recorded full command, so not regenerable byte-identical.

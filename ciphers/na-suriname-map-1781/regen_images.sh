@@ -48,6 +48,8 @@ recipes() { cat <<'R'
 2039_cartouche_word2_native.jpg	pil	2039_cartouche.jpg	822,135,920,222
 crops_2038	lines	2038_legend_native.jpg
 crops_2042	lines	2042_legend_native.jpg
+crops_2078_nota	lines	2078_nota_native.jpg
+crops_inv86_key	lines	inv86_0002_key_native.jpg
 R
 }
 
@@ -87,6 +89,10 @@ PY
                              --prefix leg2038 --region 60,40,1950,3240 --distance 40 --prominence 20 --lines-per-crop 5 --debug ;;
                crops_2042) python3 ../../tools/iiif_lines.py --image images/2042_legend_native.jpg --out "$out/crops_2042" \
                              --prefix leg2042 --region 110,110,1155,760 --prominence 20 --distance 40 --lines-per-crop 20 --top-margin 60 --debug ;;
+               crops_2078_nota) python3 ../../tools/iiif_lines.py --image images/2078_nota_native.jpg --out "$out/crops_2078_nota" \
+                             --prefix nota78 --columns 40:560 --lines-per-crop 2 --max-width 1300 --quality 88 --debug ;;
+               crops_inv86_key) python3 ../../tools/iiif_lines.py --image images/inv86_0002_key_native.jpg --out "$out/crops_inv86_key" \
+                             --prefix key86 --columns 100:900 --distance 95 --prominence 10 --smooth 9 --lines-per-crop 5 --debug ;;
              esac ;;
   esac
   echo "regenerated $out/$name ($kind)"
