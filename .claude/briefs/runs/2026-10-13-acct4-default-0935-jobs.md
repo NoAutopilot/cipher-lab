@@ -90,7 +90,7 @@ You are a session other than the solver (VIVPAN/VIV52-O) and the first verifier 
 N3 class; (b) VIV-191V (NOTES.md "## VIV-191V", 13 Oct) found f.191v is a clerk decipherment of a different letter (19 Sept 1572) -- verify
 that reading of the leaf from its image on disk, since a clear copy of ink 52 anywhere in fr.16104 would make the item N1; check the
 volume's other "dechiffre" leaves named in NOTES.md for a copy of the 5 Sept letter; (c) La Ferriere, Lettres de Catherine de Medicis IV
-(and its intro, pp. cxx ff.) and the Saint-Gouard/Vivonne material in print (Groen? no -- the French and Spanish editions the folder's
+(and its intro, pp. cxx ff.) and the Saint-Gouard/Vivonne material in print (the French and Spanish editions the folder's
 check-solved names; CODOIN / Simancas K. calendars if listed) by phrase search of the decoded fragments on IA full text (be-api) and the
 keyed Google Books API (it answered 503 at 09:4x UTC: probe once, log unreachable if still 503); (d) open indexes (OpenAlex, Semantic
 Scholar, CORE with keys per CLAUDE.md), Persee/HAL; (e) JSTOR-QUEUE.tsv rows in both families (i) and (ii) (CLAUDE.md verifier brief 2g)
