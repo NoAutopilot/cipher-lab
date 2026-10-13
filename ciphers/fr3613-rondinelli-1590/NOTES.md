@@ -1,9 +1,9 @@
-blocked
-Gomberville 1665 seconde partie (Gallica bpt6k64451005) read as page images by this worker: printed pp.213-224, 338-344 and 394-403 (views 262-273, 387-393, 443-452), letter absent, no Rondinelli, no cifra, no Italian letter there; status stays blocked because the individual blog-site searches and the fr.3995 recipient-side tables are still unread (see BNF-RONDI2).
+open
+Gomberville 1665 seconde partie (Gallica bpt6k64451005) read as page images by this worker (BNF-RONDI2, openapi.bnf.fr): printed pp.213-224, 338-344 and 394-403, letter absent; whole-volume ContentSearch Rondinelli 0 (BNF-GOMB); blogs searched individually 13 Oct 2026 (BNF-RONDI3), 0 relevant hits; premise (d) now reached: the key table for this sender is in fr.3995 fol.63r (see BNF-RONDI3).
 
 # Hercole Rondinelli to the duc de Nevers, Paris, 11 Nov 1590 -- BnF Français 3613 no.33, fol. 62
 
-Job BNF-Q13-CS for LANE BNF-FOCUS (account 2), 8 Oct 2026. Status `blocked` (edition unread), not a negative.
+Job BNF-Q13-CS for LANE BNF-FOCUS (account 2), 8 Oct 2026. Status was `blocked` on 8 Oct (edition then not opened; superseded by BNF-RONDI2/3), not a negative.
 BnF notice (cc50063m.html): "Lettre, avec chiffre, du Sr HERCOLE RONDINELLI au duc de Nevers. Di Parigi, il di XImo di 9bre 1590. En italien." No decipherment flag.
 
 ## Leaf look (Gallica btv1b90582263, canvas 69 = f.61v/62r, 900 px)
@@ -51,5 +51,41 @@ Requests this job: openapi.bnf.fr 28; no other host.
 ### Gate
 ```
 fr3613-rondinelli-1590: blocked (line 1) -- already terminal, nothing to gate
+exit 0
+```
+
+
+## Web and blog check (BNF-RONDI3, 13 Oct 2026, 14:1x UTC by date -u)
+Each blog searched on its own, once per term, 2 s apart, descriptive User-Agent. Counts are result lists, not echoes of the query box.
+| Blog | Query URL | Rondinelli | Rondinello | Hercole | 3613 | fr.3613 |
+|---|---|---|---|---|---|---|
+| Cipher Mysteries | ciphermysteries.com/?s=TERM | 0 ("Nothing Found") | 0 | 1 result list, off-target (Oresme posts; fuzzy match) | 1 result list, off-target (Visitation/banderoles posts) | 0 |
+| Cipherbrain | scienceblogs.de/klausis-krypto-kolumne/?s=TERM | 0 | 0 | 0 | 5 results, Charles I / Top 50 posts, no Rondinelli or Nevers in the titles (number match only; not opened in full) | 0 |
+| Cryptiana blog | cryptiana.blogspot.com/search?q=TERM | 0 | 0 | 0 | 0 | 0 |
+Local snapshot sources/cryptiana/blog/ (23 files, incl. the two Nevers posts): grep Rondinel and 3613, 0 hits. Comment thread file 2026_02_reconstruction-of-cipher-used-by.comments.json: 0 hits. Blog search covers posts, not necessarily every comment; Cipherbrain and Cryptiana search is limited to what their engines index. Result: no blog reports a decipherment or plaintext of this letter. Requests: ciphermysteries.com 9, scienceblogs.de 6, cryptiana.blogspot.com 5 (plus an initial fc2 front-page fetch), openapi.bnf.fr 5.
+
+## BNF-RONDI3 (13 Oct 2026, account 2)
+Window 14:07-14:2x UTC by date -u. No transcription, no decode.
+
+### Recipient-side tables, fr.3995 (Tomokiyo's catalogue, sources/cryptiana/web/nevers.htm, read by script)
+Tables of 1589-1591 that are symbol/letter-and-figure ciphers or Italian: no.19, 20 (Italian, figure code, 1588-89), no.22, 24, 26, 27, 29 (symbols, letters and figures, 1589-90), no.28, 30, 35 (Italian, figures, 1590), no.36 (Henry IV, symbols, Jan 1591), no.37 (Italian, May 1590), no.31-34 (fol.62r-63r, 1590, annotations "Rafaello", "luigi", "fiorenza", "di parigi"). Tomokiyo's no.34 note: "vowel indicators placed over a substitution letter, with an example 'di parigi'"; an HTML comment in his source reads "Rondinella?".
+Canvas map (view f = canvas): fol.56 = f114, fol.62r = f126, fol.62v = f127, fol.63r = f128 (earlier: fol.84v-85r = f166). Images in images/tables/, request.log there.
+| Table | Folio / canvas | Shape match with f.62 (eye, M) |
+|---|---|---|
+| no.28 (Feb 1590, figures with overbar) | fol.56 / f114 (show-through of fol.56 verso, mirrored) | no: figure code, no letter-with-superscript forms |
+| no.31 "Ch. d'Espagne" 1590 | fol.62r / f126 | partial at most: a syllabary of figures, with a list of marks placed above/after letters; not the f.62 letter forms |
+| no.32 "Al S. Raffaello ... in Fiorenza, di Parigi" | fol.62v / f127 | partial: letters a-m, n-z each with 1-3 figures, some figures carrying a small superscript digit, plus a few symbols and "et/che/con/di" words |
+| **no.33/34, fol.63r / f128**: lower block headed "Rondinelli al S. D. [?] Fiorenza di parigi" | f128 | **yes (key-type match)**: a letter-to-sign list (a 8, b 7, c 6, d 5, e 3, f m ...) with the French rule "les voyelles s'escrivent dessus les consonantes comme" and an example of figures written above consonants, which is the layout f.62 shows (digits 3, 8, 6, 2 above letter-like forms). Read by eye at 1400 px; M. |
+This is a key lead, not a check-solved source (brief step 3). It means the sender's own table is in fr.3995, catalogued by Tomokiyo as a partial reconstruction (no.34) with no decipherment of the f.62 letter reported on that page. Not tested against the ciphertext here.
+
+### Verdict
+Blogs: 0 relevant hits. Edition step stands (BNF-GOMB, BNF-RONDI2). Status `open`. Where it was not found: any blog post, any comment in the local thread file, Gomberville seconde partie pp.213-224, 338-344, 394-403.
+
+### While waiting
+Premise (d) is no longer open. Next step with a key in hand: read fr.3995 fol.63r (canvas f128) at native size, transcribe the Rondinelli table (about 24 rows), then run tools/prior_work.py on the item and a first test against f.62; ~USD 3. Separate check-solved item: Tomokiyo's no.34 reconstruction should be read in full for what it says it recovered.
+
+### Gate
+```
+fr3613-rondinelli-1590: open (line 1) -- edition/page or full-text-search citation found within 6 lines
 exit 0
 ```
