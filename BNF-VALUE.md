@@ -321,3 +321,15 @@ the strongest new material (a held key or a sibling folder) once reproduced. Re-
 - Blocked on the owner's one-look sign check (ASKS 163, backlog, never blocking). Meanwhile the next keys (Tomokiyo's
   published Tuscan reconstructions) can be put on disk.
 - Spend 13 Oct, this lane: 18.54 + 1.77 + 2.32 + 2.87 = 25.50 of 40.
+
+## Waves 31-33 (13 Oct 2026, 14:0x-16:1x UTC by date -u): Rondinelli
+
+- **fr3613-rondinelli-1590 is `open`** (BNF-RONDI3, 1.01): the three blogs searched one by one, no decipherment reported;
+  Gomberville seconde partie read (BNF-GOMB, BNF-RONDI2).
+- **A period partial key for this correspondent**: fr.3995 f.63r, block headed "Rondinelli al S. D. ... di parigi" with the rule
+  that vowels are written over the consonants (Tomokiyo no.34, "partial reconstruction"; no decipherment of f.62 reported).
+  BNF-RONDI-KEY (1.59) transcribed it and its neighbours no.32/33 by two blind passes (70 rows, H 0.50; no.34 22 rows, H 13).
+- **f.62 transcription unsettled** (BNF-RONDI-TX, 4.33): two blind passes agree 53.9% on 698 tokens; by eye no.34 covers ~85%
+  of the agreed tokens (M). Per Usage 6 the next pass is the owner's sign sorter (BNF-RONDI-SORT builds a blind page and one
+  ASKS row); a no.34 test comes only after a measured transcription, with its rule pre-registered first.
+- Spend 13 Oct, this lane: 25.50 + 1.01 + 1.59 + 4.33 = 32.43 of 40.
