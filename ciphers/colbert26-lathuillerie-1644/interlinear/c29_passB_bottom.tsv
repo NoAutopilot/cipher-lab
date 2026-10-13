@@ -1,0 +1,17 @@
+row_id	kind	content	gloss_spans	note
+g1	gloss	dem[?] l.c. P.O.[?]	83 33 et de ||	small hand above line 1; the reading is doubtful
+g2	gloss	la confiance	10 45 89 ||	small hand above the end of line 1
+m1	main	{Pour moy je suis si asseuré de la franchise} 83 33 {et de} 10 45 89 {—}		a bar sits over 33; dots over 10 and over the gloss below
+g3	gloss	Hauser[?]	35 d 466 || 45 89	between lines 1 and 2, right side; first letter H or B
+g4	gloss	Il ma promis de	u 15 64 17 f 83 ||	between lines 1 and 2, mid-line
+m2	main	y L 78 ï {laquelle} h u 15 64 17 f 83 {voulloir toujours} ll 35 d 466		dots over ï; h is underlined; the L-like sign is a £ shape; the 35 is doubtful (could be 25 or 33)
+g5	gloss	auec moy	ï 18 u || y L 78	between lines 2 and 3, left
+m3	main	ï 18 u {que je ne doute point puis quil ne men a rien fait scauoir} 3'		dots over ï; the line ends in a 3-like mark with a tick
+g6	gloss	que	3' || 466	small hand at the right end above line 3
+g7	gloss	led. s.r Knut	11 47 42 u 8y h ||	between lines 3 and 4, left
+g8	gloss	luy aura	24 14 55 z ||	between lines 3 and 4, middle
+m4	main	11 47 42 u 8y h u 24 14 55 z d 33 {caché tout ce qui s'est passé} —		dots over 47; dots over 55 or 14 (around x 925); the z is a 3-like squiggle; the h is barred
+g9	gloss	entre Penaranda et luy	t L ll 36 27 20 35 L 82 ||	between lines 4 and 5
+m5	main	t L ll 36 27 20 35 L 82 t E 55 {Il est delicat de parler de cette} —		dots over E and over 55; the last 55 might read 33
+g10	gloss	affaire aud. s.r Innev	3 5 52 7 d 47 42 u d ||	between lines 5 and 6; the last word is doubtful
+m6	main	3 5 52 7 d 47 42 u d 6 88 {Mais entre vos mains je suis ass[?]}		dots over 52 and over 47; the 3 may be z-like; the clear text is cut off at the edge of S12

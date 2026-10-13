@@ -1,0 +1,12 @@
+row_id	kind	content	gloss_spans	note
+1	main	{Extrait d'une lettre de} 43 l w 17 21 l 78 y 34		dots over 78 and 34; small tick after w; long dash after 34
+2	main	z z 35 p 41 uf {du 30e Mars 1646}		first z-like sign (curly) stands alone at left, second z underlined/barred; "uf" is u with a cross-stroke
+3	gloss	Le S. Knut a confere	11 42 w d 6 h t 24 ll y || z z 35 p 41 uf	gloss sits between lines 2 and 4; end span approximate
+4	main	11 42 w d 6 h t 24 ll y 45 88 36 {plus d'une fois} 41 27 20 35 l		w has a tick; 6 has mark above; h barred with dot at lower left; dots/diaeresis above approx 88 and 36 and over 41; 45 and 35 written with a hooked 5
+5	gloss	auer[?] Pinarande	41 27 20 35 l ||	reads 'auer' or 'auec'; sits above right end of line 4
+6	main	82 44 6 {divers points qui regardent les} h h 46 36 f ll ff 83 33		diaeresis dots over 82 and over 83; first h underlined; 6 after 44 raised; ambiguity whether '44 6' or '446'
+7	gloss	Interestz de m. le P. Dorange	h h 46 36 f ll ff 83 33 || 41 27 20 35 l	span only approximate horizontally; reads Interests/Interestz
+8	main	{comme celuy de} 10 88 25 d 46 83 12 l 75 d 6 x y {et autres desquels}		dot over comme-first word; 'x y' could be a single sign x[?]y; 6 with mark above
+9	gloss	La principaute de Limbourg	10 88 25 d 46 83 12 l 75 ||	sits over line 8 cipher; above-side overlap not clear
+10	gloss	le nomme Noirmont ducort [struck word 'dis' after ducort]	11 23 uf 16 23 h 6 18 d || 10 88 25 d 46	small dot after strike; struck word reads 'des/dis'
+11	main	11 23 uf 16 23 h 6 18 d l ll y 53 x ll {desja traitte auparauant}		uf has cross-stroke; h underlined; 6 has mark above; 53 written with hooked 5; 'd l' could be d 2 l

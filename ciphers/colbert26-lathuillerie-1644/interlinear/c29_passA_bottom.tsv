@@ -1,0 +1,18 @@
+row_id	kind	content	gloss_spans	note
+1	gloss	Lem. LcP.D.	83 33 {et de} ||	small hand above line 3; reading of first word uncertain (Lem[?]); sits over 83 33 et de
+2	gloss	la confiance	10 45 89 ||	small hand above main line 3, right end; "la con-" then "fiance[?]"
+3	main	{Pour moy je suis si asseure de la franchise} 83 33 {et de} 10 45 89		33 has a bar over it; dots over 10 and over 45; line ends in a dash
+4	gloss	auec[?]	4i 18 ||	short fragment at far left between lines 3 and 6; reading of "auec" doubtful
+5	gloss	Il ma promis de	h u 15 64 17 || {de la franchise}	small hand between lines 3 and 6
+6	gloss	Bauter[?]	33[?] d || 45 89	small hand, right end between lines 3 and 6; reading of first letter doubtful
+7	main	y L 78 4i {laquelle} h u 15 64 17 f 83 {voulloir toujours} ll 33[?] d 466		first sign y with bar/loop (could be 7 with bar); dots over 4i and over the 6 of 64; h is barred; 15 could be 13; 33[?] could be 35; the 4i sign may also read 11
+8	gloss	auec moy	4i 18 u || y L 78 4i	small hand at left between lines 6 and 9
+9	gloss	que	{scauoir} 3' || d 466	small hand at far right between lines 6 and 9
+10	main	ii 18 u {que je ne doute point puis quil ne men a rien sait scauoir} 3'		dots over the initial ii; "men" could be "nen"; ends with 3 with a tick and a dash
+11	gloss	led: S. Knut	11 47 42 u8y h || ii 18 u {que je}	small hand between lines 9 and 11; "led:" could be "ledit"
+12	gloss	luy aura	14 t 55 || {ne men a}	small hand, same interline as the previous gloss, further right
+13	main	11 47 42 u8y h w 24 14 t 55 z d 33 {caché tout ce qui s'est passé}		dots over 47; u8y is one connected group (u 8 y); h barred; w has a tick; 14 followed by a cross-like t; 55 may be 33; z has a tail; ends with a dash
+14	gloss	entre Penaranda et Ley	t L ll 36 27 20 33 L 82 || 11 47 42 u8y h w 24	small hand between lines 11 and 13; "Ley" may have a flourish after it
+15	main	t L ll 36 27 20 33 L 82 t E 55 {Il est delicat de parler de cette}		dots over 82 and over the final 55; 33 after 20 could be 35; ll is a double-loop sign; ends with a dash
+16	gloss	affaire aud. S. Lnner	3 5 52 y d 47 42 u || t L ll 36 27 20 33 L	small hand between lines 13 and 15; "Lnner" doubtful (Lunner?); dots between the S. and Lnner
+17	main	3 5 52 y d 47 42 u d 6 88 {Mais entre vos mains je suis asseure[?]}		dots over 52 and 47; y has a crossbar; the "d" before 6 is a d with a loop; breve-like mark over 88; line is cut off at the right edge

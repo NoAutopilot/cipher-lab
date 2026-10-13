@@ -1,0 +1,143 @@
+line	pos	sign	conf	draft_sign	draft_alt	arbitration
+M01	1	43	H	43		
+M01	2	l	H	l		
+M01	3	w	H	w		
+M01	4	17	H	17		
+M01	5	21	H	21		
+M01	6	l	H	l		
+M01	7	78	H	78		
+M01	8	y	H	y		
+M01	9	34	H	34		
+M02	1	z	H	z		
+M02	2	z	H	z		
+M02	3	35	H	35		
+M02	4	p	H	p		
+M02	5	41	H	41		
+M02	6	m+	M	ut	B:uf	A ut / B uf; one sign, w-like with a cross stroke, written m+ as in c20c21 (3 occurrences there)
+M03	1	11	H	11		
+M03	2	42	H	42		
+M03	3	w	H	w		
+M03	4	d	H	d		
+M03	5	6	H	6		
+M03	6	h	H	h		
+M03	7	t	H	t		
+M03	8	24	H	24		
+M03	9	ll	H	ll		
+M03	10	y	H	y		
+M03	11	45	H	45		
+M03	12	88	H	88		
+M03	13	36	H	36		
+M03	14	|	H	|		
+M03	15	41	H	41[?]	B:41	A 41[?] / B 41; dotted 41
+M03	16	27	H	27		
+M03	17	20	H	20		
+M03	18	35	H	35		
+M03	19	l	H	l		
+M04	1	82	H	82		
+M04	2	44	H	44		
+M04	3	6	H	6		
+M04	4	|	H	|		
+M04	5	h	H	h		
+M04	6	h	H	h		
+M04	7	46	H	46		
+M04	8	36	H	36		
+M04	9	f	H	f		
+M04	10	ll	H	ll		
+M04	11	ff	H	ff		
+M04	12	83	H	83		
+M04	13	33	H	33		
+M05	1	10	H	10		
+M05	2	88	H	88		
+M05	3	25	H	25		
+M05	4	d	H	d		
+M05	5	46	H	46		
+M05	6	83	H	83		
+M05	7	12	H	12		
+M05	8	l	H	l		
+M05	9	75	M	73	B:75	A 73 / B 75; second digit is the tailed glyph both passes read as 5 in 45 and 55; 3/5 ambiguity in this hand
+M05	10	d	H	d		
+M05	11	6	H	6		
+M05	-	-	-	x	A:-	dropped: B x before y; one crossed sign on the image, kept as y (next position)
+M05	12	y	H	y		
+M06	1	11	H	11		
+M06	2	23	H	23		
+M06	3	m+	M	ut	B:uf	A ut / B uf; same sign as M02
+M06	4	16	H	16		
+M06	5	23	H	23		
+M06	6	h	H	h		
+M06	7	6	H	6		
+M06	8	18	H	18		
+M06	9	d	H	d		
+M06	10	l	H	l		
+M06	11	ll	H	ll		
+M06	12	y	H	y		
+M06	13	53	H	53		
+M06	14	x	H	x		
+M06	15	ll	H	ll		
+M07	1	83	H	83		
+M07	2	33	H	33		
+M07	3	|	H	|		
+M07	4	10	H	10		
+M07	5	45	H	45		
+M07	6	89	H	89		
+M08	1	y	H	y		
+M08	2	L	H	L		
+M08	3	78	H	78		
+M08	4	41	H	4i	B:ï	A 4i / B i-diaeresis; same dotted 41 as M03
+M08	5	|	H	|		
+M08	6	h	H	h		
+M08	7	u	H	u		
+M08	8	15	H	15		
+M08	9	64	H	64		
+M08	10	17	H	17		
+M08	11	f	H	f		
+M08	12	83	H	83		
+M08	13	|	H	|		
+M08	14	ll	H	ll		
+M08	15	35	M	33[?]	B:35	A 33[?] / B 35; flat 3 then tailed glyph (read 5 in 45/55); 3/5 ambiguity
+M08	16	d	H	d		
+M08	17	466	H	466		
+M09	1	41	H	ii	B:ï	A ii / B i-diaeresis; dotted 41 as M03, M08
+M09	2	18	H	18		
+M09	3	u	H	u		
+M09	4	|	H	|		
+M09	5	3'	H	3'		
+M10	1	11	H	11		
+M10	2	47	H	47		
+M10	3	42	H	42		
+M10	-	-	-	u	A:-	dropped: B u; A joined u8y; image: w, small d, y -- see next
+M10	4	w	M	u8y	B:8y	A u8y / B u 8y; image shows w (tick), a small d, y, as M03 w d 6
+M10	5	d	M	u8y	B:8y	A u8y / B u 8y; image shows w (tick), a small d, y, as M03 w d 6
+M10	6	y	M	u8y	B:8y	A u8y / B u 8y; image shows w (tick), a small d, y, as M03 w d 6
+M10	7	h	H	h		
+M10	8	w	H	w	B:u	A w / B u; w with tick on image
+M10	9	24	H	24		
+M10	10	14	H	14		
+M10	-	-	-	t	B:-	dropped: A t after 14; on the image the cross stroke belongs to the 4 of 14, no separate sign
+M10	11	55	H	55		
+M10	12	z	H	z		
+M10	13	d	H	d		
+M10	14	33	H	33		
+M11	1	t	H	t		
+M11	2	L	H	L		
+M11	3	ll	H	ll		
+M11	4	36	H	36		
+M11	5	27	H	27		
+M11	6	20	H	20		
+M11	7	35	M	33	B:35	A 33 / B 35; flat 3 then tailed glyph; 3/5 ambiguity
+M11	8	L	H	L		
+M11	9	82	H	82		
+M11	10	t	H	t		
+M11	11	E	H	E		
+M11	12	55	H	55		
+M12	1	3	H	3		
+M12	2	5	H	5		
+M12	3	52	H	52		
+M12	4	y	H	y	B:7	A y / B 7; barred y sign as elsewhere on the leaf
+M12	5	d	H	d		
+M12	6	47	H	47		
+M12	7	42	H	42		
+M12	8	u	H	u		
+M12	9	d	H	d		
+M12	10	6	H	6		
+M12	11	88	H	88		
