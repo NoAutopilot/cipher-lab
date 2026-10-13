@@ -15204,3 +15204,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 09:45 | V-BAL167 verifier | claim for LANE DEFAULT-A4-0935 (account 4): baluze167-davaux-1637 re-audit of BAL-WL regrade + f.228 depth, disk only
 2026-10-13 09:45 | COL26-42 worker | claim (09:4x UTC 13 Oct by date -u) for LANE DEFAULT-A4-0935 (account 4): colbert26-lathuillerie-1644 pre-registered per-code test 42=s(ieur), disk only, cap 2.5, box to 10:35 UTC
 2026-10-13 09:45 | VIV-191V worker | claim: fr16104-vivonne-spain-1572 view f.191v + docket (La Ferriere lead), cap USD 1.5, box 09:45-10:20 UTC 13 Oct (80% line 10:13), openapi.bnf.fr <= 5, for LANE DEFAULT-A4-0935 (account 4)
+2026-10-13 09:46 | VIV-191V worker | openapi.bnf.fr take for LANE DEFAULT-A4-0935 (account 4): btv1b9009609w c206-c208 overviews at 1600 px, <= 5 requests
