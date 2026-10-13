@@ -15118,3 +15118,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 07:20 | THUR-51 | claim: thurloe-printed code 51 witness (Birch vol 4 l.10355), then 45/87 vol 7; cap 3, box 07:20-08:35 UTC; for LANE DEFAULT-A2-0710 (account 2)
 2026-10-13 07:21 | LAG-HIRES worker | claim: la-garde-1577 native-res 6179 (WVO PDF resolution, 18 doubt cells), cap 3, box end 08:35 UTC, for LANE DEFAULT-A2-0710 (account 2)
 2026-10-13 07:21 | V-SUR2046 (verifier, Opus) | claim for LANE DEFAULT-A2-0710 (account 2): na-suriname-map-1781, audit + fresh-control blind re-call of SUR-2046 16 M relabels; cap USD 2.5, box 07:21-08:21 UTC (80% 08:09); disk only
+2026-10-13 07:22 | LAG-HIRES worker | resources.huygens.knaw.nl (huygens) take for LANE DEFAULT-A2-0710 (account 2): 06179.pdf, 1 request
