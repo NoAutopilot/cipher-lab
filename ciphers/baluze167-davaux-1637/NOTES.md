@@ -1448,3 +1448,55 @@ transcribed by two blind passes (err_2reader 0.280), letter signs unlabelled.
 - [ ] image-check: glossed Baluze 170 crops f.233r/f.239r/f.258r on disk (BAL-CROP); untried: glossed leaves carrying the g+, hook and v forms (HYPOTHESES.md)
 - [x] retry: f.228 re-cut, re-passed, decoded and re-decoded (D1-BAL170, D1-BAL170B, B167-228, SIG-B228, SIG-B228B), grade correction applied (SIG-V228), shape control run (BAL-CROP, BAL-WL)
 Verdict: keep going: 2 internal gaps; cheapest next: the g+/hook/v image check (~$3), with some within-key look-alike wrong labels in its negative arm (V-BAL167 lesson); the 168 f.246 step once L71 answers
+
+## BAL167-GHV (13 Oct 2026, account 4, for LANE DEFAULT-A4-0935), 10:29-10:4x UTC by date -u
+Brief: `.claude/briefs/runs/2026-10-13-acct4-default-0935-jobs.md` "BAL167-GHV" (g+/hook/v image check, method as BAL-WL).
+Prior work (pasted): `python3 tools/prior_work.py baluze167-davaux-1637 --item-spec 'shelfmark=BnF Baluze 170;folio=228r;date=1640-08-25;sender=Chavigny;recipient=Avaux' --step-type key --offline`
+-> `holds: specific 18 (LEAD 18); generic 2 (UNCHECKED-NET 2)`, exit 4; the 18 LEADs are this folder's own sections (BAL-WL named this
+step as next; none ran it). Not `--record`ed (the run's own write to prior-work.tsv was reverted). Checks by hand: (1) own work -- not run
+before; (2) leaf -- survey.tsv glossed leaves; (3) solver caches -- CLEAR (BAL-WL); (4) editions -- unchanged (UNA3-BAL).
+**Search for the forms.** On disk (BAL-CROP natives): f.258r carries hook-form signs glossed s ('plus estroittement', 'lors') and a
+z-swash glossed u/y ('Luneboyrg'); f.239r carries hook-forms in 'n'est pas', 'presser', 'plus' and z-swash/r-shape look-alikes
+('longueur', 'grande'). openapi.bnf.fr, 3 requests, all 200 (take/release in ROOM.md), full openings at 3000 px, NOT committed (re-fetch:
+`https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90015040/f{334,314,71}/full/3000,/0/default.jpg`): c334 f.320v-321r (hook-form
+s again, 'plus' x2), c314 f.301r, c71 f.64r (a clear draft, no cipher). **No g+ form was seen on any of the five glossed leaves**
+(f.233r, 239r, 258r, 301r, 320v-321r): g+ untested, stays M.
+**Labels.** PREREG-BAL-GHV.md pushed alone (c60720e55) before any read. f.239r gloss: two fresh blind Sonnet reads (balshape/ghv/glossA.tsv,
+glossB.tsv) of strips cut locally (PIL, `balshape/ghv/strips/f239r_g{1,2,3}.jpg`, boxes x 1500/1300-3242, y +-200/90 about lines 355, 1183,
+1570 of c251_f239r_cipher_native.jpg). Labels per balshape/ghv/labels.tsv: E-s2 exemplar f.258r 'estroittement'; P+ 3 (f.258r 'lors',
+f.239r 'presser'/'Salaire', f.239r 'plus'); P- 4 within-key look-alikes (two z-swashes = u, r-shape = g, h = n); f.239r 'n'est pas' hook
+DROPPED (read B did not give the word). Tiles: `python3 balshape/ghv/tiles_ghv.py [seed]`, every tile proposed "E-s2?".
+| Read | P+ yes (G1 >= 0.75) | P- yes (G2 <= 0.25, <= P+ - 0.5) | T yes |
+|---|---|---|---|
+| 1 (seed 20261013, read1.tsv, score1.out) | 0.667 (2/3; f.239r 'presser' no/low, best E-s2) **FAIL** | 0.000 (0/4, all high) PASS | 2/2 high |
+| 2 (seed 20261014, read2.tsv, score2.out) | 1.000 (3/3) PASS | 0.000 (0/4) PASS | 2/2 high |
+Per PREREG the gates are taken on read 2 alone: **hook and v CONFIRMED** (both yes/high on both reads). Adoption
+`python3 balshape/ghv/regrade_ghv.py` -> `8 tokens M -> S {'v': 1, 'hook': 7}` (the PREREG said v 2; the reconciled passes carry one v
+token, the second 's:v' is in a comment line). balshape/ghv/exceptions_b170f228.tsv = BAL-WL rows + these 8; decode.json points to it.
+`python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check` -> `ciphertext_b170f228.txt: tokens 154: H 56, I 27, M 31, S 39, U 1` /
+`reading up to date`. Values unchanged (diff = grade column only), so the fr17 judge was not re-run.
+Limits: arms are small (P+ 3, P- 4; one tile moves a rate by 0.25-0.33); read 1 failed G1 by one low-confidence tile; one tile stands for
+each class (hook 7 tokens, v 1); the exemplar and two P+ tiles are from f.258r/f.239r, the second of which is the looser hand. H/C/S on f.228
+is now 95/154 (61.7%); depth not changed here (a verifier's call, rule 4a). Network: openapi.bnf.fr 3. Subagents: 4 Sonnet (2 gloss, 2 tile).
+
+## Remaining gaps (BAL167-GHV, 13 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 170 f.229r-v: N3, D2 (AUD1-B167). 170 f.228r-v: N3, D2 at about 56% (V-BAL167);
+now H 56, S 39, M 31, I 27, U 1 of 154 after BAL167-GHV (hook 7 + v 1 M -> S, values unchanged; re-audit owed). 168 f.246-247v:
+transcribed by two blind passes (err_2reader 0.280), letter signs unlabelled.
+- 168 f.246-247v bare passage - blocker: waiting-on LOCAL-QUEUE L71 (owner's browser: does the Papiers de Richelieu item print the cipher passage in clear); next if it does: align the printed text to the two-pass transcription with tools/interlinear_align.py (known plaintext for the f.247 hand), ~$3; if not: the f.247-hand glossed-text search (survey.tsv's d'Avaux-side leaves), ~$3
+- 170 f.228r-v BAL167-GHV regrade re-audit - blocker: not-attempted; the regrade is a solver result (rule 4a); next: a verifier re-checks PREREG-BAL-GHV, score1/score2.out and the exceptions file and sets depth from the new grades, ~$3
+- 170 f.228r-v g+ class (3 tokens, n, M) - blocker: not-attempted; no g+ form found on 5 glossed Baluze 170 leaves (BAL167-GHV); next: a 1000 px census of the remaining glossed leaves (survey.tsv ff.63, 124, 130, 138, 145, 273, 322 and 167-169 glossed letters) for a glossed g+, then the same verification read, ~$2.5
+- 170 f.228-229 novelty (N3 -> N4) - blocker: waiting-on LOCAL-QUEUE L71 and SO-BAL170-F228 (SECOND-OPINIONS-QUEUE.tsv); the edition's notes are snippet-only from the cloud and a second opinion is owed before N4
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census (N9-BAL found unlisted f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (13 Oct 2026, BAL167-GHV)
+- [x] siblings: davaux-1633 and DECODE records 2756-2762 checked (Siblings section above)
+- [x] clear-pages: leaf survey done; 170 f.230r is the clear close of the f.228 letter (D1-BAL170)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.229 letter values carried to f.228
+- [ ] print: Avenel, Négociations secrètes, Guébriant, Bougeant, Mercure, Siri, IA, Google Books (UNA3-BAL), OpenAlex, CrossRef done; untried: the Papiers de Richelieu 1636-1642 volume by page (L71)
+- [x] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); shape control with a same-key wrong-label negative PASSED (BAL-WL, 31 M -> S); hook/v with a within-key look-alike negative PASSED on read 2 (BAL167-GHV, 8 M -> S)
+- [ ] image-check: glossed Baluze 170 crops f.233r/f.239r/f.258r on disk (BAL-CROP); f.301r, f.320v-321r viewed at 3000 px (BAL167-GHV); untried: the other glossed leaves for a g+ form
+- [x] retry: f.228 re-cut, re-passed, decoded and re-decoded (D1-BAL170, D1-BAL170B, B167-228, SIG-B228, SIG-B228B), grade correction applied (SIG-V228), shape control run (BAL-CROP, BAL-WL, BAL167-GHV)
+Verdict: keep going: 3 internal gaps; cheapest next: a verifier re-audit of the BAL167-GHV regrade (~$3); the g+ census of the remaining glossed leaves (~$2.5); the 168 f.246 step once L71 answers
+

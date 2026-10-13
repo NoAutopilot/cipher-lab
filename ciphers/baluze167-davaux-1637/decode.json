@@ -59,7 +59,7 @@
     "# BAL-WL (13 Oct 2026): 31 letter-sign tokens of shape classes confirmed by a same-key wrong-label control move M -> S (balshape/wl/).",
     "# Grades: {grades_sorted}"
    ],
-   "exceptions": "balshape/wl/exceptions_b170f228.tsv",
+   "exceptions": "balshape/ghv/exceptions_b170f228.tsv",
    "exception_grade_overrides_conf": true
   }
  ]

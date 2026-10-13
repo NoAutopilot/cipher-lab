@@ -1,0 +1,10 @@
+id	role	where	x	y	true_or_current	proposed
+X01	T:v	r_a_L02	1700	303	s	s
+X02	P-:N2	N2	2887	1570	u	s
+X03	P+:L3	L3	1990	1570	s	s
+X04	P-:N3	N3	2085	1570	g	s
+X05	P+:L2	L2	2735	1183	s	s
+X06	T:DECOY:hook=s	v_b_L02	1035	264	s	s
+X07	P-:N1	N1	1085	1760	u	s
+X08	P+:L1	L1	2600	1760	s	s
+X09	P-:N4	N4	2494	249	n	s

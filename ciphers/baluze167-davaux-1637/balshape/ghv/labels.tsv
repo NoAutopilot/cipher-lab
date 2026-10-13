@@ -1,0 +1,10 @@
+id	arm	src	x	y	label	basis
+EX	exemplar	images/b170gloss/c270_f258r_cipher_native.jpg	2200	1123	s	f258r_S05_h2 glossA/B 'plus estroitement': w=e, HOOK, u+=t, 68'=ro -> s
+L1	P+	images/b170gloss/c270_f258r_cipher_native.jpg	2600	1760	s	f258r_S09 glossA/B 'lors': 43'=lo, y-bar=r -> HOOK s
+L2	P+	images/b170gloss/c251_f239r_cipher_native.jpg	2735	1183	s	f239r_g2 both reads 'pressa[?]' then 'Salaire'@9 on the hook: mm=p 66'=re HOOK 71'=se; first letter of Salaire also s
+L3	P+	images/b170gloss/c251_f239r_cipher_native.jpg	1990	1570	s	f239r_g3 both reads 'plus' (@3/@4): mm=p 44'=lu HOOK -> s
+N1	P-	images/b170gloss/c270_f258r_cipher_native.jpg	1085	1760	u	f258r_S09 glossA/B 'Luneboyrg': 44' 51' 6 = lu ne bo, z-swash = u/y (not s)
+N2	P-	images/b170gloss/c251_f239r_cipher_native.jpg	2887	1570	u	f239r_g3 both reads 'longueur/langueur' (@7/@8): 43'=lo h=n r=g z-swash -> u
+N3	P-	images/b170gloss/c251_f239r_cipher_native.jpg	2085	1570	g	f239r_g3 both reads 'grande' (@4/@5): r-shape 65'=ra h=n 16'=de -> g
+N4	P-	images/b170gloss/c270_f258r_cipher_native.jpg	2494	249	n	gloss_labels.tsv A10 'donnent' (BAL-CROP) -> n
+DROP	dropped	images/b170gloss/c251_f239r_cipher_native.jpg	2700	355	s?	f239r_g1: read A 'nest pas', read B 'nel [?] [?]' -> not both reads; dropped per PREREG

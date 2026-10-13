@@ -1,0 +1,5 @@
+P+	n=3	yes-rate=0.667	X05:P+:L1=yes/high/E-s2 X07:P+:L3=yes/low/E-s2 X08:P+:L2=no/low/E-s2
+P-	n=4	yes-rate=0.000	X01:P-:N2=no/high/E-b X04:P-:N4=no/high/E-n X06:P-:N1=no/high/E-b X09:P-:N3=no/high/E-g
+T	n=2	yes-rate=1.000	X02:T:DECOY:hook=s=yes/high/E-s2 X03:T:v=yes/high/E-s2
+G1 P+ >= 0.75: FAIL
+G2 P- <= 0.25 and <= P+ - 0.50: PASS
