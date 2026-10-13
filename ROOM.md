@@ -15381,3 +15381,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 20:33 | BAL167-GPLUS worker (Opus) | openapi.bnf.fr release (6 requests, all 200) for LANE DEFAULT-A2-2013 (account 2)
 2026-10-13 20:33 | LAG-RETRO | huygens release for LANE DEFAULT-A2-2013 (account 2): 30 requests
 2026-10-13 20:34 | BAL167-GPLUS worker (Opus) | openapi.bnf.fr take (2 corrected native regions) for LANE DEFAULT-A2-2013 (account 2)
+2026-10-13 20:34 | BAL167-GPLUS worker (Opus) | openapi.bnf.fr release (8 requests total, all 200) for LANE DEFAULT-A2-2013 (account 2)
