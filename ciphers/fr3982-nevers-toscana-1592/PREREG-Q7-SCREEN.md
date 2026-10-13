@@ -54,3 +54,12 @@ key no.46 (series A/N/P, Bourdeau's key46.txt) or no.70 (alphabet + nulls only)?
   band and on the key as transcribed.
 - No.70 control caveat declared now: validation is on no.62 and no.46; no.70 (dense-ish two-digit, 64 codes) gets its
   own 50-text 10% power check before its target number is read, same rules.
+
+## Addendum A (11:4x UTC 13 Oct 2026 by date -u, before any validation or target score)
+- Speed: exact Viterbi ran ~0.06-0.3 s per decode (too slow for ~320k validation decodes in the box). A score-threshold
+  beam is added: at each digit position, states more than 6.0 log10 below that position's best are dropped
+  (`Q7_BEAM`, default 6.0). Tooling check on 12 decodes of 6 synthetic texts (3 per key no.62/no.46, 10% error, real
+  and shuffled key): beam 6.0 gave the same S as beam 100 on all 12 (beam 4.0 differed on 2). These 12 are a tooling
+  check, not validation; the validation texts use seed 46 and were not decoded before this addendum.
+- "One digit may be skipped" is implemented as a skip transition available at every position (-3.0), not only at
+  digits no code covers (a covered digit can be a transcription error).
