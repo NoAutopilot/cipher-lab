@@ -10923,7 +10923,7 @@
   {
    "file": "fr16105_c107_f104_head.jpg",
    "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9009663p/f107/pct:52,2,46,32/1600,/0/default.jpg",
-   "what": "fr.16105 f.104r head: docket '8 Juin 1573', heading 'dechiffr\u00e9 de la precedente', old ink no. 41, stamped 104 (N4-VIV2, 4 Oct 2026)"
+   "what": "fr.16105 f.104r head: docket '8 Juin 1573', heading 'dechiffré de la precedente', old ink no. 41, stamped 104 (N4-VIV2, 4 Oct 2026)"
   },
   {
    "file": "fr16105_c112_f108v_end_norm.jpg",
@@ -11051,6 +11051,64 @@
    "file": null,
    "note": "f.273v | f.274r clear letter to the Queen, docket 17 Dec 1572",
    "fetched": "2026-10-13 VIV-DECH"
+  }
+ ],
+ "vivdech2": [
+  {
+   "canvas": 265,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f265/full/1600,/0/default.jpg",
+   "file": "images/pdech/ov_c265_1600.jpg",
+   "note": "f.243v end of the ink 78 dechiffre, closed 'Du vij^e No^bre 1572' | f.244r docket 'Novembre', blank face",
+   "fetched": "2026-10-13 VIV-DECH2"
+  },
+  {
+   "canvas": 275,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f275/full/1600,/0/default.jpg",
+   "file": "images/pdech/ov_c275_1600.jpg",
+   "note": "f.253v ink 82 cipher, lower half clear | f.254r ink 83 dechiffre, '15 novemb', 'dechiffre de la precedente', whole text, closed Madrid [xv] Nov 1572, signed, to the King",
+   "fetched": "2026-10-13 VIV-DECH2"
+  },
+  {
+   "canvas": 289,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f289/full/1600,/0/default.jpg",
+   "file": "images/pdech/ov_c289_1600.jpg",
+   "note": "f.267v ink 88 address leaf (22 novemb 1572) | f.268r ink 89 dechiffre head, '22 Nov 1572', 'dechiffre de la precedente', to the King",
+   "fetched": "2026-10-13 VIV-DECH2"
+  },
+  {
+   "canvas": 292,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f292/full/1600,/0/default.jpg",
+   "file": "images/pdech/ov_c292_1600.jpg",
+   "note": "f.270v ink 90 address leaf | f.271r ink 91 dechiffre, '22 novemb 1572', 'dechiffre de la precedente', whole text, closed 'de Madril ce xxij^e no^bre 1572' (22 Nov, to the Queen)",
+   "fetched": "2026-10-13 VIV-DECH2"
+  },
+  {
+   "canvas": 300,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f300/full/1600,/0/default.jpg",
+   "file": null,
+   "note": "f.277v short clear letter, docket '1[2/3] Decembre 1572' (not a dechiffre) | f.278r address leaf",
+   "fetched": "2026-10-13 VIV-DECH2"
+  },
+  {
+   "canvas": 303,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f303/full/1600,/0/default.jpg",
+   "file": null,
+   "note": "f.280v address leaf | f.281r ink 96 cipher head '17 Decembre 1572', 'du S^r de S^t goard au Roy'",
+   "fetched": "2026-10-13 VIV-DECH2"
+  },
+  {
+   "canvas": 305,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f305/full/1600,/0/default.jpg",
+   "file": null,
+   "note": "f.282v | f.283r ink 96 cipher continued",
+   "fetched": "2026-10-13 VIV-DECH2"
+  },
+  {
+   "canvas": 315,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f315/full/1600,/0/default.jpg",
+   "file": "images/pdech/ov_c315_1600.jpg",
+   "note": "f.292v | f.293r dechiffre body in the clerk's hand (Portugal, navigation, an English gentleman Thomas Stuc[ley], Ireland); head and date not on this opening: ink 97 or 101",
+   "fetched": "2026-10-13 VIV-DECH2"
   }
  ]
 }
