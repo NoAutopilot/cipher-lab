@@ -1,0 +1,127 @@
+{
+ "panel": {
+  "A": [
+   "r_l3",
+   "images/2039_legend_native.jpg",
+   [
+    1132,
+    752,
+    1156,
+    785
+   ],
+   "r"
+  ],
+  "B": [
+   "r_n2",
+   "images/2039_legend_native.jpg",
+   [
+    1884,
+    750,
+    1902,
+    782
+   ],
+   "r"
+  ],
+  "C": [
+   "7_e6",
+   "images/2039_legend_native.jpg",
+   [
+    270,
+    655,
+    288,
+    688
+   ],
+   "7"
+  ],
+  "D": [
+   "7_o2",
+   "images/2039_legend_right_native.jpg",
+   [
+    148,
+    745,
+    166,
+    780
+   ],
+   "7"
+  ],
+  "E": [
+   "7_n6",
+   "images/2039_legend_native.jpg",
+   [
+    1959,
+    750,
+    1976,
+    782
+   ],
+   "7"
+  ],
+  "F": [
+   "r_f16",
+   "images/2039_legend_native.jpg",
+   [
+    1650,
+    650,
+    1676,
+    688
+   ],
+   "r"
+  ],
+  "G": [
+   "7_m11",
+   "images/2039_legend_native.jpg",
+   [
+    1696,
+    752,
+    1713,
+    782
+   ],
+   "7"
+  ],
+  "H": [
+   "r_p25",
+   "images/2039_legend_native.jpg",
+   [
+    256,
+    852,
+    278,
+    892
+   ],
+   "r"
+  ]
+ },
+ "queries": {
+  "Q1": [
+   "C_r9_7",
+   "images/2039_legend_native.jpg",
+   [
+    1626,
+    848,
+    1644,
+    882
+   ],
+   "7"
+  ],
+  "Q2": [
+   "C_p30_r",
+   "images/2039_legend_native.jpg",
+   [
+    386,
+    852,
+    404,
+    892
+   ],
+   "r"
+  ],
+  "Q3": [
+   "T_k6",
+   "images/2039_legend_native.jpg",
+   [
+    850,
+    752,
+    876,
+    785
+   ],
+   "target"
+  ]
+ }
+}
