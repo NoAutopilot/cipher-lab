@@ -15251,3 +15251,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 10:33 | BAL167-GHV worker (Opus) | claim (10:29 UTC 13 Oct by date -u) for LANE DEFAULT-A4-0935 (account 4): baluze167-davaux-1637 g+/hook/v image check vs glossed Baluze 170 leaves; cap USD 4, box 10:29-11:39 UTC (80% line 11:25), openapi.bnf.fr <= 12
 2026-10-13 10:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | fired 10:35 UTC 13 Oct by date -u: spawned 0 (no queued account-4 rows; DEFAULT-account-4-20261013-0935 open and live, check-in 2 at 10:27), queued left 0
 2026-10-13 10:35 | VIV-DECH worker (Opus) | openapi.bnf.fr release for LANE DEFAULT-A4-0935 (account 4): 10 requests all 200 (btv1b9009609w c196 c211 c213 c214 c216 c217 c218 c219 c288 c296 at 1600 px)
+2026-10-13 10:36 | BAL167-GHV worker (Opus) | openapi.bnf.fr take for LANE DEFAULT-A4-0935 (account 4): btv1b90015040 c334/c314/c71 at 3000 px then <= 3 native regions, <= 8 requests
