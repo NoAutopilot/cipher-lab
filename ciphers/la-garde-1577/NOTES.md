@@ -2193,18 +2193,54 @@ Pooling result: 0 same-system siblings; pooled N unchanged at 229 base-code / 23
 Requests (all one at a time, >= 2 s apart, descriptive User-Agent): resources.huygens.knaw.nl 25 (12 search or listing queries, 13 letter pages or PDFs); archive.org 15
 (1 advancedsearch, 12 djvu text downloads incl. the one retry, 1 be-api fts, plus 1 repeated fetch counted above); no other host; gallica 0.
 
+## LAG-MARNIX (13 Oct 2026, account 1, LANE DEFAULT-A1-1840, Sonnet, no subagents, no transcription, no cryptanalysis)
+Job: locate the "Marnix cipher alphabet of August 1577" that LAG-SIB took from Groen van Prinsterer, Archives ser. 1 vol. VI p.129.
+Prior work: `tools/prior_work.py la-garde-1577 --step-type lookup --fetch` exit 4, the only LEAD being this worker's own claim line; tomokiyo/solver/edition rows
+UNCHECKED, answered by hand below.
+
+**Routes searched (route, query, result)**
+1. Groen VI, IA djvu `archivesoucorre01housgoog` (on-disk gz copy, sources/ia-fulltext/print-check/; a fresh archive.org download answered 302 with no body, not retried):
+   p.128-129 read. Lettre DCCXLII is Gaspar Schetz (Grobbendonck) at Namur, 3 Aug 1577, to the "Commis des finances" (Ingelbert), heading "Lettres interceptees de D. Juan".
+   The text: he forwards Don Juan's answer "pour ce qu'il touche le dechiffrement des lettres interceptes, qu'il soustient n'avoir este faict vrayement"; then (p.129)
+   "J'envoye l'alphabet du cifre que Mons.r de S.t Aldegonde exhibe aux Estatz, je le pourroy confronter avecq celuy de son Alt., que luy demanderay". Footnote (p.128):
+   Burman Anal. I p.44 (Don Juan's own side says the decipherer did not everywhere reach the sense) and Bor 888b (the Estates had the letters deciphered).
+2. Reading: the alphabet is the cipher *of the intercepted letters*, i.e. the key Marnix showed the Estates for Don Juan's/Escobedo's despatches, to be compared with
+   Don Juan's own ("celuy de son Alt."). It is not shown to be Marnix's own cipher. LAG-SIB's wording ("Marnix's cipher alphabet") should be read that way.
+   Not printed on p.129; the letter is a covering note to an enclosure not reproduced by Groen.
+3. Tomokiyo, cryptiana.web.fc2.com/code/spanish3.htm (1 request, read from the saved copy): Marnix deciphered Guaras's letters (Mar 1577) and Don Juan/Escobedo's letters
+   (Apr 1577, intercepted in Gascony by La Noue, passed to Orange; CSP Foreign xi nos. 1375-1379, 1400; xii preface, no. 38); Don Juan protested to the Estates on
+   24 Aug 1577 (CSP Foreign xii no. 146). Davison to the Secretaries, 5 Apr 1578, sends "the cipher of Guaras's letters ... delivered to Sainte-Aldegonde" (xii no. 768). Consistent
+   with item 2: the August 1577 alphabet is a Spanish-cipher key. No holder, shelfmark or image of any such table is given there.
+4. WVO (3 requests, all 200): correspondent Schetz from 1577 (8 letters; the list is "from 1577 on", 339-346 etc. are May 1577 Estates items); opmerkingen `alfabet` and
+   `gedechiffreerd`: 0 hits. No WVO record for DCCXLII (Schetz to the commis, 3 Aug 1577), as LAG-SIB found.
+5. Solver repositories (shallow clones to /tmp, grep only): dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers for La Garde, Lagarde, Aldegonde, Marnix: no La Garde or
+   Marnix 1577 target or note in either (cyphersolver hits are a Napoleon-era Lagarde, a Vieta/Tomokiyo link and catalogue noise; unsolved-ciphers hits are catalogue lines
+   not naming this letter). Searched 13 Oct 2026; Cipherbrain, Cryptiana comment threads and DECODE not re-run this job (DECODE disk list done in LAG-SIB).
+6. Not reached: Huygens retroboeken phrase search (accessor ids per book, not looked up; left); KHA inventory (Nationaal Archief 2.21.007.? finding aid) and Staten-Generaal
+   catalogue for a 1577 cipher table (no public finding aid opened this pass); Gachard/Groen page images.
+
+**Result**
+- Holder / shelfmark: not found. Groen prints no shelfmark for the alphabet (the letter's own source line is not shown in the OCR); no catalogued period cipher table of
+  Marnix, La Garde or Orange for 1576-78 located in the sources above. Digitised: unknown. Image URL: none.
+- Can it be the 6179/6467 system? Nothing supports it. 6467 and 6179 are a numeral cipher 1-24 sent by Marnix/La Garde to Orange in Nov 1577; the August alphabet is
+  tied, in Groen's own text, to deciphering Don Juan's intercepted letters and to a comparison with Don Juan's cipher, i.e. Spanish royal cipher material. It is an
+  unlikely key source for 6467; if it surfaced it would be graded as a lead (M) until a key test said otherwise.
+- Net: the "known-keys" rung changes from "Marnix's alphabet is a period key lead" to "a period Spanish-cipher alphabet exists, probably not this system". No image to fetch;
+  no key-test to name.
+
 ## Remaining gaps (LAG-SIB, 13 Oct 2026)
 Read so far: 0 of 229 base-code / 239 marks-kept tokens graded H/C/S (unchanged)
 - same-system pooling for N - blocker: no-key-material; every route with a free full text or image in WVO, Groen VI, Gachard t.4-6 and the DECODE disk list gives 0 same-system letters (LAG-SIB); retroboeken phrase search and the solver repositories stay unsearched, small and cheap
-- Marnix's cipher alphabet of Aug 1577 (Groen VI p.129, DCCXLII) - blocker: not-attempted; Groen names the alphabet but does not print it, nobody here has looked for it; next: search the Staten-Generaal and Marnix holdings catalogues for a cipher alphabet of 1577, ~$1.5
+- Aug 1577 alphabet (Groen VI p.129, DCCXLII, LAG-MARNIX) - blocker: no-key-material; it is the key for Don Juan's intercepted letters, not the 6467 system, and no holder or image was found in Groen, Tomokiyo, WVO or the solver repositories; retroboeken phrase search and a KHA/Staten-Generaal finding-aid look stay untried, cheap
+- retroboeken phrase search and KHA/Staten-Generaal finding aids for a 1577 cipher table - blocker: not-attempted; accessor ids and finding aids not looked up in LAG-SIB or LAG-MARNIX; next: retroboeken name search with chiffre/cijfer plus one finding-aid look, ~$1
 - six doubt cells (LAG-HIRES) - blocker: needs-physical-access; the six cells stay unseparable on the best public scan (LAG-HIRES), the KHA original is the route
 
 ## Escalation (LAG-SIB, 13 Oct 2026)
 - [x] siblings: WVO (geheim/geheimschrift/cifre/cijfer, Marnix 1577), Groen VI and ser. 1 text, Gachard t.4-6 and the DECODE disk list swept in LAG-SIB, no same-system letter; retroboeken phrase search and the two solver repositories not yet run
 - [n/a] clear-pages: no clear page of this cipher identified; margin words placed in A2-LAG
-- [ ] known-keys: Marnix's cipher alphabet shown to the Estates in Aug 1577 (Groen VI p.129) is a period key lead for the 6467 sender; locating it is untried
+- [x] known-keys: the Aug 1577 alphabet (Groen VI p.129) is the Spanish cipher of Don Juan's intercepted letters as shown by Marnix, not 6467's system (LAG-MARNIX); holder not located
 - [x] print: Groen VI pp.249-251 omits the cipher; Groen VI p.129 names an alphabet; Gachard t.5 calendar and t.4-6 read; GSME/LMSAC read in OX-LAG
 - [n/a] key-rebuild: needs a family whose verdict statistic passes on its control decodes first
 - [x] image-check: LAG-HIRES settled 10 of 14 at ~288 ppi; 6 doubt cells need the original (needs-physical-access)
 - [x] retry: syllabary and wordcode retries exhausted or [retired] (LAG-HIRES)
-Verdict: keep going: 1 internal gap; cheapest next: search for Marnix's cipher alphabet of Aug 1577 (Groen VI p.129), a period-key lead, ~$1.5; siblings sweep done on WVO, Groen, Gachard and DECODE routes (0 same-system); the six doubt cells wait on the KHA original (needs-physical-access)
+Verdict: keep going: 1 internal gap; cheapest next: Huygens retroboeken phrase search for the correspondent names with chiffre/cijfer and a KHA/Staten-Generaal finding-aid look, ~$1; the Aug 1577 alphabet is Don Juan's Spanish cipher as shown by Marnix (not 6467's system), holder not located; the six doubt cells wait on the KHA original (needs-physical-access)
