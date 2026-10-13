@@ -1661,7 +1661,7 @@ H 56, S 42, M 28, I 27, U 1 of 154 after BAL167-GSEQ (g+ 3 M -> S, values unchan
 - [x] retry: f.228 re-cut, re-passed, decoded and re-decoded (D1-BAL170, D1-BAL170B, B167-228, SIG-B228, SIG-B228B), grade correction applied (SIG-V228), shape control run (BAL-CROP, BAL-WL, BAL167-GHV, BAL167-GSEQ)
 Verdict: keep going: 2 internal gaps; cheapest next: a verifier re-audit of the BAL167-GSEQ g+ regrade (~$3); the volume sweep (~$3, Baluze 170 under way as BAL170-SWEEP); the 168 f.246 step once L71 answers
 
-## BAL170-SWEEP (13 Oct 2026, account 2, for LANE DEFAULT-A2-2013), 21:16-21:5x UTC by date -u
+## BAL170-SWEEP (13 Oct 2026, account 2, for LANE DEFAULT-A2-2013), 21:16-21:46 UTC by date -u
 
 Brief: `.claude/briefs/runs/2026-10-13-ytbiz-default-2013-jobs.md` job BAL170-SWEEP. One volume, Baluze 170 (ark btv1b90015040, 340 canvases
 in the cached manifest, 0 folio labels). Canvases 1-300 fetched at `300,` from openapi.bnf.fr (IIIF v3, one at a time, >= 3.1 s, 300 requests,
