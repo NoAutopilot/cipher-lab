@@ -1,0 +1,78 @@
+crop	row	plaintext	code	mark	conf	note
+p2c2_L01	1	Landgrave	71	dot	h	
+p2c2_L01	2	Liège	72	dot	h	
+p2c2_L01	3	Liegeois	73	dot	h	
+p2c2_L01	4	Lon	74	dot	h	
+p2c2_L01	5	M			h	heading
+p2c2_L01	6	Madame	75	dot	h	
+p2c2_L01	7	mais	76	dot	h	
+p2c2_L01	8	Marsin	77	dot	h	
+p2c2_L01	9	Marechal	78	dot	h	
+p2c2_L01	10	Mariage	79	none	m	
+p2c2_L01	11	ministres	80	none	m	
+p2c2_L01	12	Monsieur	81	dot	m	
+p2c2_L01	13	Munster	82	dot	m	
+p2c2_L02	1	ma	83	dot	m	
+p2c2_L02	2	me	84	dot	m	
+p2c2_L02	3	mi	85	dot	m	
+p2c2_L02	4	mo	86	dot	m	
+p2c2_L02	5	mu	87	dot	m	
+p2c2_L02	6	N			h	heading
+p2c2_L02	7	na	88	dot	h	
+p2c2_L02	8	ne	89	dot	h	
+p2c2_L02	9	ni	90	dot	h	
+p2c2_L02	10	no	91	dot	h	
+p2c2_L02	11	nu	92	dot	h	
+p2c2_L02	12	navigation	93	dot	h	
+p2c2_L02	13	navire	94	dot	h	
+p2c2_L02	14	necessite	95	dot	h	
+p2c2_L02	15	negociation	96	dot	h	
+p2c2_L02	16	nous	97	dot	h	
+p2c2_L02	17	nostre	98	dot	h	
+p2c2_L03	1	O			h	heading
+p2c2_L03	2	obeissance	19	caret	m	digit looks like 99 or 19; sequence suggests 19
+p2c2_L03	3	occasion	20	caret	h	
+p2c2_L03	4	occurrence	21	caret	h	
+p2c2_L03	5	office	22	caret	h	
+p2c2_L03	6	oldembourg	23	caret	h	
+p2c2_L03	7	ordre	24	caret	h	
+p2c2_L03	8	ou	25	caret	h	
+p2c2_L03	9	ouverture	26	caret	h	
+p2c3_L01	1	ont	27	caret	h	
+p2c3_L01	2	oxenstiern	28	none	h	
+p2c3_L01	3	P			h	heading
+p2c3_L01	4	pa	29	caret	h	
+p2c3_L01	5	pe	30	caret	h	
+p2c3_L01	6	pi	31	caret	h	
+p2c3_L01	7	po	32	caret	h	
+p2c3_L01	8	pu	33	caret	h	
+p2c3_L01	9	Palatin	34	caret	h	
+p2c3_L01	10	paris	35	caret	h	
+p2c3_L01	11	paix	36	caret	h	
+p2c3_L01	12	perte	37	caret	h	
+p2c3_L01	13	place	38	caret	h	
+p2c3_L02	1	pologne	39	caret	h	
+p2c3_L02	2	polonois	40	caret	h	
+p2c3_L02	3	portugal	41	caret	h	
+p2c3_L02	4	portugais	42	caret	h	
+p2c3_L02	5	protestans	43	caret	h	
+p2c3_L02	6	Q			m	heading
+p2c3_L02	7	qua	44	caret	h	
+p2c3_L02	8	que	45	caret	h	
+p2c3_L02	9	qui	46	caret	h	
+p2c3_L02	10	quo	47	caret	m	
+p2c3_L02	11	qun	48	caret	h	
+p2c3_L02	12	qualité	49	caret	h	
+p2c3_L02	13	quartier	50	caret	h	
+p2c3_L03	1	quand	51	none	m	
+p2c3_L03	2	R			h	heading
+p2c3_L03	3	ra	52	caret	h	
+p2c3_L03	4	re	53	caret	h	
+p2c3_L03	5	ri	54	caret	h	
+p2c3_L03	6	ro	55	caret	h	
+p2c3_L03	7	ru	56	caret	h	
+p2c3_L03	8	raison	57	caret	h	
+p2c3_L03	9	religion	58	caret	h	
+p2c3_L03	10	Rome	59	caret	h	
+p2c3_L03	11	Roy	60	caret	h	
+p2c3_L03	12	Royaume	61	caret	h	

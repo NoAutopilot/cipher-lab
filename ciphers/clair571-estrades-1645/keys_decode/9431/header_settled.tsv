@@ -1,0 +1,53 @@
+# Cipher alphabet header of 9431 P1-P2, settled by EST-9431 from hdrA.tsv + hdrB.tsv (blind passes on p?hdr2 strip crops) and an eye check of P1 A-F and P2 N-Z. Signs described as written; homophones top to bottom.
+letter	sign	grade	note
+A	n	H	
+A	q crossed on the descender	H	
+A	o	H	
+B	d with curled top (delta-like)	H	
+B	b crossed	H	
+C	long s / f	H	
+C	a	H	
+D	S	H	
+D	x4 struck through	M	A "x with stroke", B "x4 struck through"
+E	n4 (n with 4-shaped tail)	H	
+E	t	H	
+E	c (small, below)	M	A "c reversed", B "c"
+F	q	H	
+F	n with crossed descender (eta-like)	H	
+G	g	H	both passes; not eye-checked
+G	v	H	both passes; not eye-checked
+H	m	H	both passes; not eye-checked
+H	b crossed	H	both passes; not eye-checked
+I	d	H	both passes; not eye-checked
+I	p crossed on the stem	H	both passes; not eye-checked
+I	e	H	both passes; not eye-checked
+K	& (ampersand-like)	H	both passes; not eye-checked
+K	ae ligature	H	both passes; not eye-checked
+L	ct ligature	H	both passes; not eye-checked
+L	beta / sharp s	H	both passes; not eye-checked
+M	Z (script, tailed)	H	both passes; not eye-checked
+M	w	H	both passes; not eye-checked
+N	m4 (m with 4-shaped tail)	H	
+N	pi-like (T with two legs)	H	
+O	a4 (a with 4-shaped tail)	H	
+O	m4 crossed	H	
+O	x	M	B places an x under N (page edge); crop p2hdr2_h1 shows it under O
+P	w (m with flourish)	H	
+P	long curved hook (long s without cross)	H	
+Q	Z with loop	H	
+Q	a with flourish	H	
+R	u	H	
+R	h crossed on the descender (4-like)	H	
+S	h with loop (eta-like)	H	
+S	T	H	
+T	i	H	
+T	script L (pound-sign-like)	H	
+V	theta	H	
+V	b (script)	H	
+V	i with diaeresis	H	
+X	q with double cross	H	
+X	K	H	
+Y	9 (g-like)	H	
+Y	curl with bar (delta-like, reversed 6)	H	
+Z	ff struck through	H	
+Z	script 3 / reversed F	M	A "script F", B "script 3 with hook"

@@ -1,0 +1,165 @@
+crop	row	plaintext	code	mark	conf	note
+p2hdr_L01	1	(only tops of flourished capitals visible, not legible per letter)	5		m	crop shows cut-off header; rightmost sign looks like '5.'
+p2c1_L01	1	flandres	34	dot	m	
+p2c1_L01	2	flamands	35	dot	h	
+p2c1_L01	3	france	36	dot	h	
+p2c1_L01	4	francois	37	dot	h	
+p2c1_L01	5	frise	38	dot	h	
+p2c1_L01	6	G			h	heading
+p2c1_L01	7	ga	39	dot	h	
+p2c1_L01	8	ge	40	dot	h	
+p2c1_L01	9	gi	41	dot	h	
+p2c1_L01	10	go	42	dot	h	
+p2c1_L01	11	gu	43	dot	h	
+p2c1_L01	12	general	44	dot	h	
+p2c1_L01	13	gouvernem^t	45	dot	h	
+p2c1_L02	1	gouverneur	46	dot	h	
+p2c1_L02	2	grand	47	dot	h	
+p2c1_L02	3	H			h	heading
+p2c1_L02	4	hanscatiques	48	dot	h	
+p2c1_L02	5	hambourg	49	dot	h	
+p2c1_L02	6	hesse	50	dot	h	
+p2c1_L02	7	hessiens	51	dot	h	
+p2c1_L02	8	hollande	52	dot	h	
+p2c1_L02	9	hollandois	53	dot	h	
+p2c1_L02	10	hostilité	54	dot	h	
+p2c1_L02	11	I			h	heading
+p2c1_L02	12	ja	55	dot	h	
+p2c1_L02	13	je	56	dot	h	
+p2c1_L03	1	ji	57	dot	m	partly cut at top
+p2c1_L03	2	jo	58	dot	h	
+p2c1_L03	3	ju	59	dot	h	
+p2c1_L03	4	jamais	60	dot	h	
+p2c1_L03	5	imperialle	61	dot	h	
+p2c1_L03	6	intelligence	62	dot	h	
+p2c1_L03	7	infanterie	63	dot	h	
+p2c1_L03	8	Italie	64	dot	h	
+p2c1_L03	9	italiens	65	dot	h	
+p2c1_L03	10	L			h	heading
+p2c1_L03	11	la	66	dot	h	
+p2c1_L03	12	le	67	dot	h	
+p2c1_L03	13	li	68	dot	h	
+p2c1_L03	14	lo	69	dot	h	
+p2c1_L04	1	lu	70	dot	m	mostly cut off
+p2c2_L01	1	Landgrave	71	dot	h	
+p2c2_L01	2	Liege	72	dot	h	
+p2c2_L01	3	Liegeois	73	dot	h	
+p2c2_L01	4	Lon	74	dot	h	
+p2c2_L01	5	M			h	heading
+p2c2_L01	6	Madame	75	dot	h	
+p2c2_L01	7	mais	76	dot	h	
+p2c2_L01	8	marsin	77	dot	h	
+p2c2_L01	9	marechal	78	dot	h	
+p2c2_L01	10	mariage	79	dot	h	
+p2c2_L01	11	ministres	80	dot	h	
+p2c2_L01	12	monsieur	81	dot	h	
+p2c2_L01	13	munster	82	dot	h	
+p2c2_L02	1	ma	83	dot	h	
+p2c2_L02	2	me	84	dot	h	
+p2c2_L02	3	mi	85	dot	h	
+p2c2_L02	4	mo	86	dot	h	
+p2c2_L02	5	mu	87	dot	h	
+p2c2_L02	6	N			h	heading
+p2c2_L02	7	na	88	dot	h	
+p2c2_L02	8	ne	89	dot	h	
+p2c2_L02	9	ni	90	dot	h	
+p2c2_L02	10	no	91	dot	h	
+p2c2_L02	11	nu	92	dot	h	
+p2c2_L02	12	navigation	93	dot	m	left edge cut
+p2c2_L02	13	neutre	94	dot	m	left edge cut
+p2c2_L02	14	necessite	95	dot	m	left edge cut
+p2c2_L02	15	negociation	96	dot	m	left edge cut; word begins "..cociation"
+p2c2_L03	1	nous	97	dot	m	left edge cut
+p2c2_L03	2	nostre	98	dot	m	left edge cut
+p2c2_L03	3	O			h	heading
+p2c2_L03	4	obeissance	99	dot	m	left edge cut
+p2c2_L03	5	occasion	20	over	m	caret above; 2-digit as written; left cut
+p2c2_L03	6	occurrence	21	over	m	caret above
+p2c2_L03	7	offre	22	over	m	caret above
+p2c2_L03	8	oldembourg	23	over	m	caret above
+p2c2_L03	9	ordre	24	over	m	caret above
+p2c2_L03	10	ou	25	over	m	caret above; word mostly cut
+p2c2_L03	11	ouverture	26	over	m	caret above
+p2c3_L01	1	(fragment)	27	over	m	caret above; word cut
+p2c3_L01	2	(fragment) ...nsfiern	28	over	m	caret above; word cut
+p2c3_L01	3	P			h	heading
+p2c3_L01	4	(fragment) ...e	29	over	m	caret above; word cut
+p2c3_L01	5	(fragment)	30	over	m	caret above; word cut
+p2c3_L01	6	(fragment)	31	over	m	caret above; word cut
+p2c3_L01	7	(fragment)	32	over	m	caret above; word cut
+p2c3_L01	8	(fragment)	33	over	m	caret above; word cut
+p2c3_L01	9	(fragment) ...latin	34	over	m	caret above; word cut
+p2c3_L01	10	(fragment) ...ns	35	over	m	caret above; word cut
+p2c3_L01	11	(fragment) ...ix	36	over	m	caret above; word cut
+p2c3_L01	12	(fragment) ...rte	37	over	m	caret above; word cut
+p2c3_L02	1	(fragment) ...ce	38	over	m	caret above; word cut
+p2c3_L02	2	(fragment) ...gne	39	over	m	caret above; word cut
+p2c3_L02	3	(fragment) ...nois	40	over	m	caret above; word cut
+p2c3_L02	4	(fragment) ...ugal	41	over	m	caret above; word cut
+p2c3_L02	5	(fragment) ...ugais	42	over	m	caret above; word cut
+p2c3_L02	6	(fragment) ...estans	43	over	m	caret above; word cut
+p2c3_L02	7	(fragment)	44	over	m	caret above; word cut
+p2c3_L02	8	(fragment)	45	over	m	caret above; word cut
+p2c3_L02	9	(fragment)	46	over	m	caret above; word cut
+p2c3_L02	10	(fragment)	47	over	m	caret above; word cut
+p2c3_L02	11	(fragment)	48	over	m	caret above; word cut
+p2c3_L02	12	(fragment)	49	over	m	caret above; word cut
+p2c3_L03	1	(fragment) ...ér	50	over	m	caret above; word cut
+p2c3_L03	2	(fragment) ...d	51	over	m	caret above; word cut
+p2c3_L03	3	(fragment)	52	over	m	caret above; word cut
+p2c3_L03	4	(fragment)	53	over	m	caret above; word cut
+p2c3_L03	5	(fragment)	54	over	m	caret above; word cut
+p2c3_L03	6	(fragment)	55	over	m	caret above; word cut
+p2c3_L03	7	(fragment)	56	over	m	caret above; word cut
+p2c3_L03	8	(fragment) ...on	57	over	m	caret above; word cut
+p2c3_L03	9	(fragment) ...ion	58	over	m	caret above; word cut
+p2c3_L03	10	(fragment) ...e	59	over	m	caret above; word cut
+p2c3_L03	11	(fragment)	60	over	m	caret above; word cut
+p2c3_L03	12	(fragment) ...aume	61	over	m	caret above; word cut
+p2c4_L01	1	S			h	heading
+p2c4_L01	2	Sa	62	over	h	
+p2c4_L01	3	Se	63	over	h	
+p2c4_L01	4	Si	64	over	h	
+p2c4_L01	5	So	65	over	h	
+p2c4_L01	6	Su	66	over	h	
+p2c4_L01	7	Savoye	67	over	h	
+p2c4_L01	8	Saxe	68	over	h	
+p2c4_L01	9	Secours	69	over	h	
+p2c4_L01	10	Suede	70	over	h	
+p2c4_L01	11	Suedois	71	over	h	
+p2c4_L01	12	Suisse	72	over	h	
+p2c4_L01	13	T			m	heading, cut at bottom
+p2c4_L02	1	ta	73	over	h	
+p2c4_L02	2	te	74	over	h	
+p2c4_L02	3	ti	75	over	h	
+p2c4_L02	4	to	76	over	h	
+p2c4_L02	5	tu	77	over	h	
+p2c4_L02	6	temps	78	over	h	
+p2c4_L02	7	traitté	79	over	h	
+p2c4_L02	8	treve	80	over	h	
+p2c4_L02	9	transilvain	81	over	h	
+p2c4_L02	10	Turc	82	over	h	
+p2c4_L02	11	V			h	heading
+p2c4_L02	12	va	83	over	h	
+p2c4_L02	13	ve	84	over	h	
+p2c4_L03	1	vi	85	over	h	
+p2c4_L03	2	vo	86	over	h	
+p2c4_L03	3	vu	87	over	h	
+p2c4_L03	4	vaisseau	88	over	h	
+p2c4_L03	5	venize	89	over	h	
+p2c4_L03	6	villes	90	over	h	
+p2c4_L03	7	vous	91	over	h	
+p2c4_L03	8	vostre	92	over	h	
+p2notes_L01	1	Ces caracteres			h	
+p2notes_L01	2	doublent leur precedent			h	
+p2notes_L01	3	A.B.C.D.E.			h	
+p2notes_L01	4	Ceux cy les annullent			h	
+p2notes_L01	5	10.11.12.13....			h	
+p2notes_L02	1	Nulles			m	top cut off
+p2notes_L02	2	14.15.16.17.			h	
+p2notes_L02	3	Ce qui est entre			h	
+p2notes_L02	4	deux de ceux cy ne			h	
+p2notes_L02	5	signifie rien			h	
+p2notes_L03	1	M.P.Q.R.			m	3rd letter could be L or Q
+p2notes_L03	2	Chiffre			h	
+p2notes_L03	3	envoyé par M. Brasset			m	

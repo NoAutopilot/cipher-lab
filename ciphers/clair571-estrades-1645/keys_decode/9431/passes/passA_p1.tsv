@@ -1,0 +1,202 @@
+crop	row	plaintext	code	mark	conf	note
+p1hdr_L01	1	A			m	header crop shows only upper part of letters; signs below not visible
+p1hdr_L01	2	B			m	header crop shows only upper part of letters; signs below not visible
+p1hdr_L01	3	C			m	header crop shows only upper part of letters; signs below not visible
+p1hdr_L01	4	D			m	header crop shows only upper part of letters; signs below not visible
+p1hdr_L01	5	E			m	header crop shows only upper part of letters; signs below not visible
+p1hdr_L01	6	F			m	header crop shows only upper part of letters; signs below not visible
+p1hdr_L01	7	G			m	header crop shows only upper part of letters; signs below not visible
+p1hdr_L01	8	H			m	header crop shows only upper part of letters; signs below not visible
+p1hdr_L01	9	I			m	header crop shows only upper part of letters; signs below not visible
+p1hdr_L01	10	K			m	header crop shows only upper part of letters; signs below not visible
+p1hdr_L01	11	L			m	header crop shows only upper part of letters; signs below not visible
+p1hdr_L01	12	M			m	header crop shows only upper part of letters; signs below not visible
+p1hdr_L01	13	N			m	header crop shows only upper part of letters; signs below not visible
+p1hdr_L01	14	O			m	header crop shows only upper part of letters; signs below not visible
+p1c1_L01	1	Le Pape ou sa Saint^e	20	none	h	
+p1c1_L01	2	Le Roy ou sa Ma^té	21	none	h	
+p1c1_L01	3	La Reyne	22	none	h	
+p1c1_L01	4	Mr le duc d'Orleans	23	none	h	
+p1c1_L01	5	Mr le Prince	24	none	h	
+p1c1_L01	6	Mr le Card Mazarin	25	none	h	
+p1c1_L01	7	Mr le C. de brienne	26	none	h	
+p1c1_L01	8	&		none	m	sign/ampersand-like separator
+p1c1_L01	9	L'Empe ou sa M^té Imp^le	27	none	h	
+p1c1_L01	10	L'Empire	28	none	h	
+p1c1_L01	11	Le Priets de L'Empire	29	none	h	
+p1c1_L01	12	Les Eslecteurs	30	none	h	
+p1c1_L01	13	Mayence	31	none	h	
+p1c1_L02	1	Collogne	32	none	h	
+p1c1_L02	2	Treues	33	none	h	
+p1c1_L02	3	Saxe	34	none	h	
+p1c1_L02	4	Brandebourg	35	none	h	
+p1c1_L02	5	Bavieres	36	none	h	
+p1c1_L02	6	Duez de lunebourg	37	none	h	
+p1c1_L02	7	Landgrave de hesse	38	none	h	
+p1c1_L02	8	Lantgrave d'Armestat	39	none	h	
+p1c1_L02	9	Due de Neubourg	40	none	h	
+p1c1_L02	10	&		none	m	separator sign
+p1c1_L02	11	Le Roy d'Anglet^re	41	none	h	
+p1c1_L02	12	La Reyne d'Angl^e	42	none	h	
+p1c1_L02	13	La Reyene de Breme	43	none	h	
+p1c1_L02	14	Le prince Palatin	44	none	h	
+p1c1_L03	1	La maison Palatine	45	none	h	
+p1c1_L03	2	&		none	m	separator sign
+p1c1_L03	3	Le Roy d'Espayne	46	none	h	
+p1c1_L03	4	Don fran de Melos	47	none	h	
+p1c1_L03	5	Don Jian d'Austriche	48	none	h	
+p1c1_L03	6		49	none	h	number alone, no word
+p1c1_L03	7		50	none	h	number alone
+p1c1_L03	8		51	none	h	number alone
+p1c1_L03	9		52	none	h	number alone
+p1c1_L03	10		53	none	h	number alone
+p1c2_L01	1	La Reyne de Suedi	54	none	h	
+p1c2_L01	2	La Courone de Suedi	55	none	h	
+p1c2_L01	3	Le Chan. Oxenstiern	56	none	m	er above Chan
+p1c2_L01	4	Le Mar. horn	57	none	h	al above Mar
+p1c2_L01	5	Mar. Torstinson	58	none	h	al above
+p1c2_L01	6	Major Konisgmarck	59	none	h	
+p1c2_L01	7	&		none	m	separator sign
+p1c2_L01	8	Le Roy di Pologne	60	none	h	
+p1c2_L01	9	La Rep. de Pologne	61	none	h	
+p1c2_L01	10	&		none	m	separator sign
+p1c2_L01	11	Le Roy de Dannemarc	62	none	h	
+p1c2_L01	12	Les Estatz Dannemarc	63	none	h	
+p1c2_L01	13	&		none	m	separator sign, partly cut
+p1c2_L02	1	Mrs les Estatz	64	none	h	rs superscript
+p1c2_L02	2	Mr Prince d'Orenge	65	none	h	
+p1c2_L02	3	Mr la prin d'Orange	66	none	h	
+p1c2_L02	4	Mr le P d'Angletrre	67	none	m	
+p1c2_L02	5	Mr le prince Guill	68	none	h	
+p1c2_L02	6	Les Provinces de		none	h	no number; continues next line
+p1c2_L02	7	Guieldres	69	none	h	
+p1c2_L02	8	hollande	70	none	h	
+p1c2_L02	9	Zelande	71	none	h	
+p1c2_L02	10	Vtrecht	72	none	h	
+p1c2_L02	11	frise	73	none	h	
+p1c2_L02	12	Ouerissel	74	none	h	
+p1c2_L02	13	Groningue	75	none	h	
+p1c2_L02	14	&		none	m	separator sign, partly cut
+p1c2_L03	1	Venize	76	none	h	
+p1c2_L03	2	Sauoye	77	none	h	
+p1c2_L03	3	Florence	78	none	h	
+p1c2_L03	4	Mantoue	79	none	h	
+p1c2_L03	5	Parme	80	none	h	
+p1c2_L03	6	Modene	81	none	h	
+p1c2_L03	7		82	none	h	number alone
+p1c2_L03	8		83	none	h	number alone
+p1c2_L03	9		84	none	h	number alone
+p1c3_L01	1	Assemblee d'Munster	87	none	h	
+p1c3_L01	2	Les Mediateurs	88	none	h	
+p1c3_L01	3	Le Card Legat	89	none	h	al above Card
+p1c3_L01	4	Le Card Rozette	90	none	h	al above
+p1c3_L01	5	Le Nonce Chigy	91	none	h	eur above Nonce
+p1c3_L01	6	Lamb. Contarini	92	none	m	re/eur above
+p1c3_L01	7	Plenipo. de france	93	none	h	re above
+p1c3_L01	8	Mr le Con Dauaux	94	none	m	
+p1c3_L01	9	Mr le C Seruien	95	none	h	re/eur above
+p1c3_L01	10	Plenip de l'Emp.	96	none	h	re/eur above
+p1c3_L01	11	Plenipo d'Espagne	97	none	h	re above
+p1c3_L01	12	Estatz de l'Empire	98	none	h	
+p1c3_L01	13	Residents Romain	99	none	m	
+p1c3_L02	1	Resident de Suede	20	over	h	
+p1c3_L02	2	&		none	m	separator sign
+p1c3_L02	3	Assemblee d'Osnabrug	21	over	h	
+p1c3_L02	4	Plni de Suede	22	over	h	re above Pl
+p1c3_L02	5	Baron Oxenstiern	23	over	h	
+p1c3_L02	6	Amb. Saluius	24	over	h	eur above Amb
+p1c3_L02	7	Amb. Bannemarc	25	over	h	
+p1c3_L02	8	Baron de Rorte	26	over	m	
+p1c3_L02	9	Comte Dauersberg	27	over	m	
+p1c3_L02	10	&		none	m	separator sign
+p1c3_L02	11	Mr les Amb. de france	28	over	h	
+p1c3_L02	12	Mr de s' Chaumond	29	over	m	
+p1c3_L02	13	Mr de fontinay	30	over	h	
+p1c3_L03	1	M de la Thuillerie	31	over	h	
+p1c3_L03	2	Mr Dishameaux	32	over	m	
+p1c3_L03	3	Resid Beauregard	33	over	h	
+p1c3_L03	4	Resid de Moultes	34	over	m	
+p1c3_L03	5	Secr Brasiet	35	over	m	re above Secr
+p1c3_L03	6		36	over	h	number alone
+p1c3_L03	7		37	over	h	number alone
+p1c3_L03	8		38	over	h	number alone
+p1c3_L03	9		39	over	h	number alone
+p1c3_L03	10		40	over	h	number alone
+p1c4_L01	1	abouchement	41	over	h	
+p1c4_L01	2	accomodement	42	over	h	
+p1c4_L01	3	Accord	43	over	h	
+p1c4_L01	4	Action	44	over	h	
+p1c4_L01	5	aduis	45	over	h	
+p1c4_L01	6	affaire	46	over	h	
+p1c4_L01	7	Allemagne	47	over	m	blotted
+p1c4_L01	8	Allemans	48	over	m	
+p1c4_L01	9	Albiance	49	over	m	
+p1c4_L01	10	Ambassad	50	over	h	
+p1c4_L01	11	Amis	51	over	h	
+p1c4_L01	12	Anglois	52	over	h	
+p1c4_L01	13	Angletterre	53	over	m	
+p1c4_L02	1	Armes	54	over	h	
+p1c4_L02	2	Armee	55	over	h	
+p1c4_L02	3	Argent	56	over	h	
+p1c4_L02	4	Assemblee	57	over	h	
+p1c4_L02	5	Au	58	over	h	
+p1c4_L02	6	Auec	59	over	h	
+p1c4_L02	7	&		none	m	separator sign
+p1c4_L02	8	ba	60	over	h	
+p1c4_L02	9	be	61	over	h	
+p1c4_L02	10	bi	62	over	h	
+p1c4_L02	11	bo	63	over	m	word looks overwritten
+p1c4_L02	12	bu	64	over	m	
+p1c4_L02	13	Bavieres	65	over	m	edge cut
+p1c4_L02	14	beau	66	over	m	
+p1c4_L02	15	bon	67	over	m	
+p1c4_L03	1	Brandebourg	6	over	m	number cut at edge
+p1c4_L03	2	Bruxilles	6	over	m	number cut at edge
+p1c4_L03	3	C		none	m	heading, partly under stamp
+p1c4_L03	4	Ca	70	over	m	
+p1c4_L03	5	Ce	71	over	m	
+p1c4_L03	6	Ci	72	over	m	
+p1c4_L03	7	Co	73	over	m	
+p1c4_L03	8	Cu	74	over	m	
+p1c5_L01	1	Campagne	75	over	h	
+p1c5_L01	2	Cardinal	76	over	h	
+p1c5_L01	3	Car	77	over	h	
+p1c5_L01	4	Cathalonogne	78	over	h	Cathalongne?
+p1c5_L01	5	Catholique	79	over	h	
+p1c5_L01	6	Cause	80	over	h	
+p1c5_L01	7	Collogne	81	over	h	
+p1c5_L01	8	Commerce	82	over	h	
+p1c5_L01	9	Chrestiente	83	over	h	
+p1c5_L01	10	Condition	84	over	h	
+p1c5_L01	11	D		none	m	heading
+p1c5_L01	12	Da	85	over	h	
+p1c5_L01	13	De	86	over	h	
+p1c5_L02	1	Di	87	over	h	
+p1c5_L02	2	Do	88	over	h	
+p1c5_L02	3	Du	89	over	h	
+p1c5_L02	4	Dannemark	90	over	h	
+p1c5_L02	5	Dannois	91	over	h	
+p1c5_L02	6	Despens	92	over	m	
+p1c5_L02	7	Depesche	93	over	h	
+p1c5_L02	8	Dusseldorp	94	over	h	
+p1c5_L02	9	C		none	m	heading
+p1c5_L02	10	Electeur	95	over	h	
+p1c5_L02	11	Electoral	96	over	h	
+p1c5_L02	12	Embden	97	over	h	
+p1c5_L02	13	Empire	98	over	h	
+p1c5_L02	14	Espagne	99	over	h	
+p1c5_L03	1	Espagnols	20	over	h	
+p1c5_L03	2	Escosse	21	over	h	
+p1c5_L03	3	Esglois	22	over	m	
+p1c5_L03	4	Esperance	23	over	h	
+p1c5_L03	5	Estat	24	over	h	
+p1c5_L03	6	Et	25	over	h	
+p1c5_L03	7	Entre	26	over	h	
+p1c5_L03	8	F		none	m	heading
+p1c5_L03	9	fa	27	over	h	
+p1c5_L03	10	fe	28	over	h	
+p1c5_L03	11	fi	29	over	h	
+p1c5_L03	12	fo	30	over	h	
+p1c5_L03	13	fu	31	over	h	
+p1c5_L04	1	faire	32	over	h	
+p1c5_L04	2	force	33	over	h	

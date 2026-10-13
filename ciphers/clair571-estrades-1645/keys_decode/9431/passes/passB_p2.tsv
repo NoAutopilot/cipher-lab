@@ -1,0 +1,163 @@
+crop	row	plaintext	code	mark	conf	note
+p2notes_L01	1	Ces caracteres			h	
+p2notes_L01	2	doublent leur precedent			h	
+p2notes_L01	3	A. B. C. D. E.			h	
+p2notes_L01	4	Ceux cy les annullent			h	
+p2notes_L01	5	10. 11. 12. 13. . . . --			m	numbers as list
+p2notes_L02	1	Nulles			m	partly cut at top
+p2notes_L02	2	14. 15. 16. 17.			h	
+p2notes_L02	3	Ce qui est entre			h	
+p2notes_L02	4	deux de ceux cy ne			h	
+p2notes_L02	5	signifie rien			h	
+p2notes_L03	1	M. P. L. R.			h	
+p2notes_L03	2	Chifre			h	
+p2notes_L03	3	enuoyé par M. Brasset			m	last line partly cut at bottom; surname uncertain
+p2c4_L01	1	S		none	h	heading
+p2c4_L01	2	Sa	62	over	h	
+p2c4_L01	3	Se	63	over	h	
+p2c4_L01	4	Si	64	over	h	
+p2c4_L01	5	So	65	over	h	
+p2c4_L01	6	Su	66	over	m	
+p2c4_L01	7	Sauoye	67	over	h	
+p2c4_L01	8	Sate	68	over	m	
+p2c4_L01	9	Secours	69	over	h	
+p2c4_L01	10	Suicide	70	over	m	
+p2c4_L01	11	Suedois	71	over	m	
+p2c4_L01	12	Suisse	72	over	h	
+p2c4_L02	1	ta	73	over	h	
+p2c4_L02	2	te	74	over	h	
+p2c4_L02	3	ti	75	over	h	
+p2c4_L02	4	to	76	over	h	
+p2c4_L02	5	tu	77	over	h	
+p2c4_L02	6	temps	78	over	h	
+p2c4_L02	7	traitté	79	over	h	
+p2c4_L02	8	treue	80	over	m	
+p2c4_L02	9	transiluain	81	over	m	word uncertain
+p2c4_L02	10	Turc	82	over	m	
+p2c4_L02	11	V		none	h	heading
+p2c4_L02	12	va	83	over	h	
+p2c4_L02	13	ve	84	over	h	
+p2c4_L03	1	vi	85	over	h	
+p2c4_L03	2	vo	86	over	h	
+p2c4_L03	3	vu	87	over	h	
+p2c4_L03	4	vaisseau	88	over	h	
+p2c4_L03	5	venize	89	over	m	Venize/Venise
+p2c4_L03	6	villes	90	over	h	
+p2c4_L03	7	vous	91	over	h	
+p2c4_L03	8	vostre	92	over	h	
+p2c3_L01	1	(cut) t	27	none	m	word cut at crop edge; number only
+p2c3_L01	2	(cut) ...stiern	28	none	m	word cut; ends -stiern
+p2c3_L01	3	P		none	h	heading
+p2c3_L01	4	(cut) e	29	over	m	word cut
+p2c3_L01	5	(cut)	30	over	m	word cut
+p2c3_L01	6	(cut)	31	over	m	word cut
+p2c3_L01	7	(cut)	32	over	m	word cut
+p2c3_L01	8	(cut)	33	none	m	word cut; mark unclear
+p2c3_L01	9	(cut) ...latin	34	over	m	word cut
+p2c3_L01	10	(cut) ...ns	35	over	m	word cut
+p2c3_L01	11	(cut) ...ix	36	over	m	word cut
+p2c3_L01	12	(cut) ...te	37	over	m	word cut
+p2c3_L02	1	(cut) ...e	38	over	m	word cut
+p2c3_L02	2	(cut) ...gne	39	over	m	word cut
+p2c3_L02	3	(cut) ...ois	40	over	m	word cut
+p2c3_L02	4	(cut) ...gal	41	over	m	word cut
+p2c3_L02	5	(cut) ...gais	42	over	m	word cut
+p2c3_L02	6	(cut) ...stans	43	over	m	word cut
+p2c3_L02	7	(cut)	44	over	m	word cut
+p2c3_L02	8	(cut)	45	over	m	word cut
+p2c3_L02	9	(cut)	46	over	m	word cut
+p2c3_L02	10	(cut)	47	over	m	word cut; dot-like flourish above
+p2c3_L02	11	(cut)	48	over	m	word cut
+p2c3_L02	12	(cut) ...te	49	over	m	word cut
+p2c3_L03	1	(cut) ...ier	50	over	m	word cut
+p2c3_L03	2	(cut) ...d	51	over	m	word cut
+p2c3_L03	3	(cut)	52	over	m	word cut
+p2c3_L03	4	(cut)	53	over	m	word cut
+p2c3_L03	5	(cut)	54	over	m	word cut
+p2c3_L03	6	(cut)	55	over	m	word cut
+p2c3_L03	7	(cut)	56	over	m	word cut
+p2c3_L03	8	(cut) ...on	57	over	m	word cut
+p2c3_L03	9	(cut) ...ion	58	over	m	word cut
+p2c3_L03	10	(cut) ...e	59	over	m	word cut
+p2c3_L03	11	(cut)	60	over	m	word cut
+p2c3_L03	12	(cut) ...aume	61	over	m	word cut
+p2c2_L01	1	Landgraue	71	dot	m	
+p2c2_L01	2	Liege	72	dot	h	
+p2c2_L01	3	Liegeois	73	dot	h	
+p2c2_L01	4	Lon	74	dot	m	
+p2c2_L01	5	M		dot	h	heading
+p2c2_L01	6	Madame	75	dot	h	
+p2c2_L01	7	mais	76	dot	h	
+p2c2_L01	8	Marsin	77	dot	m	
+p2c2_L01	9	marechal	78	dot	h	
+p2c2_L01	10	Mariage	79	dot	h	
+p2c2_L01	11	ministres	80	dot	h	
+p2c2_L01	12	monsieur	81	dot	h	
+p2c2_L01	13	Munster	82	dot	h	
+p2c2_L02	1	ma	83	dot	h	
+p2c2_L02	2	me	84	dot	m	digit struck over/heavy
+p2c2_L02	3	mi	85	dot	h	
+p2c2_L02	4	mo	86	dot	m	
+p2c2_L02	5	mu	87	dot	h	
+p2c2_L02	6	N		dot	h	heading
+p2c2_L02	7	na	88	dot	h	
+p2c2_L02	8	ne	89	dot	h	
+p2c2_L02	9	ni	90	dot	h	
+p2c2_L02	10	no	91	dot	h	
+p2c2_L02	11	nu	92	dot	h	
+p2c2_L02	12	nauigation	93	dot	h	
+p2c2_L02	13	naurre	94	dot	m	word uncertain; possibly 'nauire'
+p2c2_L02	14	necessite	95	dot	h	
+p2c2_L02	15	neassociation	96	dot	m	initial letters cut at left edge
+p2c2_L03	1	(cut) ...nous	97	none	m	word start cut
+p2c2_L03	2	(cut) ...nostre	98	none	m	word start cut
+p2c2_L03	3	O		none	h	heading
+p2c2_L03	4	(cut) ...beissance	99	none	m	word start cut; likely obeissance
+p2c2_L03	5	(cut) ...ccasion	20	none	m	word start cut; this number carries a caret above
+p2c2_L03	6	(cut) ...ecurrence	21	none	m	caret above
+p2c2_L03	7	(cut) ...ffre	22	none	m	caret above
+p2c2_L03	8	(cut) ...ldembourg	23	none	m	caret above
+p2c2_L03	9	(cut) ...rdre	24	none	m	caret above
+p2c2_L03	10	(cut) ...u	25	none	m	caret above
+p2c2_L03	11	(cut) ...uertiue	26	none	m	caret above
+p2c1_L01	1	Flandres	93	dot	h	
+p2c1_L01	2	Flamands	95	dot	m	
+p2c1_L01	3	France	96	dot	h	
+p2c1_L01	4	François	97	dot	h	
+p2c1_L01	5	Frise	98	dot	h	
+p2c1_L01	6	G		none	h	heading
+p2c1_L01	7	ga	99	dot	h	
+p2c1_L01	8	ge	40	dot	h	
+p2c1_L01	9	gi	41	dot	h	
+p2c1_L01	10	go	42	dot	h	
+p2c1_L01	11	gu	43	dot	h	
+p2c1_L01	12	general	44	dot	h	
+p2c1_L01	13	gouuernem^t	45	dot	m	superscript t
+p2c1_L02	1	gouuerneur	46	dot	h	
+p2c1_L02	2	grand	47	dot	h	
+p2c1_L02	3	H		none	h	heading
+p2c1_L02	4	hanscatiques	48	dot	m	
+p2c1_L02	5	hambourg	49	dot	h	
+p2c1_L02	6	hesse	50	dot	h	
+p2c1_L02	7	hessiens	51	dot	h	
+p2c1_L02	8	hollande	52	dot	h	
+p2c1_L02	9	hollandois	53	dot	h	
+p2c1_L02	10	hostilité	54	dot	h	
+p2c1_L02	11	I		none	h	heading
+p2c1_L02	12	Ia	55	dot	h	
+p2c1_L02	13	Je	56	dot	m	
+p2c1_L03	1	jo	58	dot	m	top row partly cut
+p2c1_L03	2	ju	59	dot	h	
+p2c1_L03	3	jamais	60	dot	h	
+p2c1_L03	4	imperialle	61	dot	h	
+p2c1_L03	5	intelligence	62	dot	h	
+p2c1_L03	6	infanterie	63	dot	h	
+p2c1_L03	7	Italie	64	dot	h	
+p2c1_L03	8	Italiens	65	dot	h	
+p2c1_L03	9	L		none	h	heading
+p2c1_L03	10	la	66	dot	h	
+p2c1_L03	11	le	67	dot	h	
+p2c1_L03	12	li	68	dot	h	
+p2c1_L03	13	lo	69	dot	h	
+p2c1_L04	1	lu	70	dot	m	sliver crop, single row
+p2hdr_L01	1	(header strip)			m	only flourished capital letters visible, cut at top; individual letters/signs not legible in this strip; far right shows a sign like '5.'

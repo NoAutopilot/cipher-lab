@@ -398,3 +398,71 @@ Found: the grid carries holder, shelfmark code, date range and page counts only;
 status N/A, and no language fields for these three. Page counts match the IMG-DECODE2 image counts above (5/2/5). Not found: any
 descriptive text (the "Additional Information" lines are RecordsView-only, already recorded by IMG-DECODE2), any transcription flag.
 Nothing here tests whether any key fits the Clair 575 p.1209 letter; no image or key was touched.
+
+## EST-9431 (account 4, LANE DEFAULT-A4-2135, 13 Oct 2026, 21:47-22:0x UTC): the Brasset key, DECODE 9431, transcribed
+
+Prior work: `tools/prior_work.py clair571-estrades-1645 --item-spec 'shelfmark=BnF Clairambault 574;folio=p4-5;sender=Henri Brasset;decode=9431'
+--step-type key` exit 0 (Tomokiyo cache CLEAR, cached solver files CLEAR, DECODE status N/A = no evidence either way; aaymeloglu repo and
+editions UNCHECKED-NET). Own work: IMG-DECODE2 (3 Oct) fetched and typed the images only; D4-EST94 (6 Oct) the listing only; nothing transcribed.
+KEYHUNT-2026-10-07.tsv names "Brasset, Memoire chiffre Oct 1648" (Clair 417) and a Brasset-Mazarin cipher of 1649 read by Lasry (Clair 421):
+different shelfmarks and later years, not this sheet.
+
+Route: one browser login (`tools/decode_browser_login.js 9431 <scratch> --fetch <P1 url>,<P2 url> --max-files 2`), 6 de-crypt.org requests
+(login page, login, landing, RecordsView 9431, 2 full-size PNGs), 1.5 s apart, no refusal. sha1 of both PNGs equals keys_decode/manifest.json
+(234fdce5..., 16c5a0a4...). Images and crops stay in the session scratchpad, not committed (not public domain). Crops: `tools/iiif_lines.py
+--image IMG_R9431_I44607_P{1,2}.png --region <column box> --lines-per-crop 13 --overlap 0` per column (P1 c1 94,354,330,1983; c2 377,354,354,1983;
+c3 708,354,425,1983; c4 1015,354,283,1983; c5 1263,354,295,1983; P2 c1 70,354,330,1983; c2 330,354,380,1983; c3 590,354,300,1983; c4
+826,354,260,1983; notes 1074,354,507,1227 with --lines-per-crop 6); header strips by PIL crop x 60-860 and 820-1653, y 60-400 on each page.
+Passes: two blind Sonnet passes per page (P1, P2), a re-cut pair for P2 c2-c3 (the first cut clipped the words), and two header passes;
+reconciliation by this worker against the crops (`keys_decode/9431/settle.tsv`, every settled row says how). Rebuild and staleness check:
+`python3 keys_decode/9431/build_9431_key.py [--check]` (passes in `keys_decode/9431/passes/`).
+
+**Design.** A French nomenclator with a homophonic alphabet, both pages in one hand, headed on p.5 "Chiffre envoyé par M. Brasset":
+- Alphabet: 23 letters (no J, U, W), 51 signs, 2-3 homophones each. The signs are letters, ligatures and symbols, not numbers (A = n, q crossed,
+  o; E = n4, t, c; T = i, script L; Z = ff struck, script 3 ...).
+- Code: four series of two-digit numbers 20-99, told apart by a mark on the number, seen on the crop at each switch: plain (names and titles:
+  Pope 20, King 21, Queen 22, Mazarin 25, Brienne 26, Emperor 27 ... Contarini 92, Plenipotentiaries of France 93, d'Avaux 94, Servien 95),
+  bar over (more names, then a-c words and syllables: Resident de Suede 20, M de la Thuillerie 31, Secr. Brasset 35, abouchement 41 ...
+  Espagne 99), dots (Espagnols 20 ... f, g, h, i, l, m, n syllables and words ... obeissance 99), caret (occasion 20 ... vostre 92; 93-99
+  unused). Syllables run consonant + a e i o u in order (ba 60= be 61= ...). 15 numbers are written with no word (spare slots).
+- Specials (notes column, p.5): 10, 11, 12, 13 annul the preceding sign; 14, 15, 16, 17 are nulls; capitals A B C D E double the preceding
+  sign; what stands between two of M P Q R means nothing (Q read as L by one pass).
+- Rows: 381 in `keys_decode/9431_key.tsv` (code, series, plaintext as written, kind, grade, page, source). Grades (rule 4): **H 358, M 23**.
+  By kind: nomenclator 225 (H 209, M 16), syllable 73 (H 72, M 1), letter signs 51 (H 47, M 4), blank slots 15 (H 14, M 1), nulls 4 H,
+  specials 13 (H 12, M 1). The M rows are spellings the passes split on (Eslecteurs, Gueldres, Cathalongne, Despens, Escossois ...) and four
+  sign descriptions; none is a disputed number. Three letters' signs (G-M) were not eye-checked by this worker; both passes agree on them.
+
+Two cheap facts from the sheet itself: (1) M de la Thuillerie (31=bar), Dishameaux, Beauregard, Moulles and Secr. Brasset carry codes, so the
+key was made for The Hague end of the Münster negotiation, not for a Münster plenipotentiary alone; (2) whether it opens Clair 575 p.1209 is
+still untested -- that leaf is not digitised (REQUEST.md).
+
+**Other targets using a Brasset / Hague 1640s key (disk only, nothing decoded).** KEY-OFFICES.tsv and KEY-DESIGN.tsv: no row names Brasset or
+The Hague in the 1640s. The nearest is `ciphers/colbert26-lathuillerie-1644` (La Thuillerie, ambassador at The Hague 1646-48): its f.24 (1646)
+and f.17-18 (1645) use a mixed letter/symbol + two-digit design of the same shape (NOTES there, "f.24 is a mixed letter/symbol/number
+system"), and f.24 carries a "Brasset line". Its key_f24.tsv C-graded values do not match 9431 in any series: 31 que (9431: Mayence / Thuillerie
+/ fu / pi; que is 45=caret), 92 comte (no series), 83 de (9431 de is 86=bar), 25 m and 16 m (16 is a null here). That leaf's numbers were
+transcribed without series marks, so the comparison is against all four series; on this evidence f.24 is not this key. `tools/design_prior.py
+--unkeyed --no-write` (13 Oct, 186 unkeyed ciphertexts) gives no lead from any clair* or colbert26 file. Also named, not compared: KEYHUNT's
+Clair 417 (1648) and Clair 421 (1649, Lasry) Brasset ciphers, clair1067 key_1646 (Brienne to Poland).
+
+KEY-OFFICES / KEY-DESIGN: not added. `tools/key_design.py` discovers only files named key*.tsv/key*.txt under ciphers/ (key_crossmatch.py
+`find_key_files`), and this brief fixed the name 9431_key.tsv; its four marked series (20 vs 20=bar) also need a loader option before the
+tool can read it. One-line suggestion: add a `9431_key.tsv`-style marked-series reader to key_crossmatch.py, or copy to key_9431_brasset.tsv.
+
+Requests: de-crypt.org 6 (one login). Report what was found and where it was not found; novelty is not classified here.
+
+## Remaining gaps (EST-9431, 13 Oct 2026)
+Read so far: 0% of the target letter (no image of Clair 575 p.1209); the candidate key 9431 is transcribed, 358 of 381 rows H.
+- Test the 9431 key on the letter at Clair 575 p.1209 - blocker: waiting-on ASKS row 49 (BnF reproduction, REQUEST.md); the leaf is not digitised (NX-UNBLOCK, Gallica SRU 0 records)
+- Diff 9431 against the Clair 417 (1648) and Clair 421 (1649) Brasset keys - blocker: not-attempted; KEYHUNT-2026-10-07.tsv names both; next: read the published Clair 421 table (Tomokiyo/Lasry) and diff by code and series, ~$1.5
+- Register 9431 in KEY-OFFICES/KEY-DESIGN - blocker: not-attempted; key_design.py reads only key*.tsv and no marked series; next: loader option or a key*.tsv copy, ~$1
+
+## Escalation (EST-9431, 13 Oct 2026)
+- [n/a] siblings: no sibling cipher leaf of this letter is digitised or on disk
+- [n/a] clear-pages: no clear copy of the letter is known; editions read (GF4-BATCH11) do not print it
+- [x] known-keys: 9431 transcribed (H 358, M 23); colbert26 f.24 key compared and does not match; Clair 417/421 named, diff not yet run
+- [x] print: Le Clerc II-III, APW II B 2 and d'Estrades 1743 read (GF4-BATCH11, LANE CX); none prints the letter
+- [n/a] key-rebuild: no ciphertext of the target is on disk to rebuild a key from
+- [ ] image-check: request the Clair 575 p.1209 leaf (REQUEST.md, ASKS 49), then apply 9431
+- [n/a] retry: nothing has been tried on the letter itself, there is no failed step to retry
+Verdict: keep going: 2 internal gaps; cheapest next: register 9431 via a key_design.py loader option, ~$1

@@ -1,0 +1,25 @@
+# EST-9431 reconciliation (this worker, against the strip crops, 13 Oct 2026). page	col	series	code	plaintext	grade	how
+1	c3	bar	20	Resident de Suede	H	both passes; bar seen on crop p1c3_L02
+1	c3	bar	25	Amb. Dannemarc	H	A read B, B read D; crop p1c3_L02 shows D
+1	c3	bar	26	Baron de Rorté	M	A Rorte, B Rortie; crop shows Rort + accented e
+1	c3	bar	27	Comte Dauersberg	H	text agrees; bar seen on crop p1c3_L02 (B said none)
+1	c4	bar	48	Allemans	M	A Allemans, B Allemars; crop reads Allemans (n/r ambiguous)
+1	c4	bar	49	Alliance	H	A Albiance, B Alliance; crop shows ll
+1	c5	dot	22	Escossois	M	A Esglois, B Escossois; follows Escosse 21; crop ambiguous
+1	c5	bar	92	Despens	M	A Despens, B Desperes; crop ambiguous
+1	c5	dot	30	fo	H	A only (B misplaced it under 91); crop p1c5_L03 shows fo 30 dotted
+1	c5	dot	31	fu	H	A only (B misplaced it); crop p1c5_L03 shows fu 31 dotted
+2	c1	dot	34	flandres	H	A 34, B 93; crop p2c1_L01 shows 34, sequence after force 33
+2	c1	dot	35	flamands	H	A 35, B 95; crop shows 35
+2	c1	dot	36	france	H	A 36, B 96; crop shows 36
+2	c1	dot	37	francois	H	A 37, B 97; crop shows 37
+2	c1	dot	38	frise	H	A 38, B 98; crop shows 38
+2	c1	dot	39	ga	H	A 39, B 99; crop shows 39
+2	c2	dot	99	obeissance	H	recut passes read 19; first-cut A and crop p2c2_L03 (recut) show 99 with two dots
+2	c4	caret	68	Saxe	H	A Saxe, B Sate; crop p2c4_L01 shows x
+2	c4	caret	70	Suede	H	A Suede, B Suicide; crop shows Suede
+1	c5	bar	91	Dannois	H	both passes read Dannois (B also hung fo/fu here, settled at 30/31 dot)
+1	c4	bar	68	Brandebourg	H	passes cut the digits at the crop edge (6.); worker crop of P1 x980-1340 y1840-2050 shows 68 with bar
+1	c4	bar	69	Bruxelles	M	same crop shows 69 with bar; spelling Bruxelles/Bruxilles unsettled
+1	c2	plain	85		H	number written with no word; worker crop P1 x380-760 y1950-2339
+1	c2	plain	86		M	number at the foot of the image, partly cut by the scan edge

@@ -1,0 +1,27 @@
+crop	row	plaintext	code	mark	conf	note
+p1hdr2_h1	1	A	n-like (u with tail) | q with bar through descender | o		m	
+p1hdr2_h1	2	B	Greek delta-like (curl d) | b with bar (crossed b)		m	
+p1hdr2_h1	3	C	long s / f | a		m	
+p1hdr2_h1	4	D	S-like | x with stroke through		m	
+p1hdr2_h1	5	E	ny (n with tail) | t | c (small, reversed)		m	
+p1hdr2_h1	6	F	q | eta-like (h/n with cross)		m	
+p1hdr2_h2	1	G	g | v		m	
+p1hdr2_h2	2	H	m | b with bar		m	
+p1hdr2_h2	3	I	d | p with cross on stem | e		m	
+p1hdr2_h2	4	K	& (ampersand-like) | ae ligature (oe)		m	
+p1hdr2_h2	5	L	ct-like | beta (German esszett)		m	
+p1hdr2_h2	6	M	Z (script, tailed) | w		m	
+p1hdr2_h2	7	N	m4 (m with 4 tail) | pi-like (T with bar)		m	
+p1hdr2_h2	8	O	ax (a with x tail) | mf (m with f) | x		m	edge, page-2 alphabet seen across the fold
+p2hdr2_h1	1	N	m4 | pi-like (T with bar)		m	edge, page-1 spillover
+p2hdr2_h1	2	O	ax (a with x tail) | mf | x		m	
+p2hdr2_h1	3	P	m with flourish (w-like) | large hook (like long J curve)		m	
+p2hdr2_h1	4	Q	script Z | a with flourish		m	
+p2hdr2_h1	5	R	u | h with cross on descender (4-like)		m	
+p2hdr2_h1	6	S	eta-like (h with loop) | T		m	
+p2hdr2_h1	7	T	i | script L (pound-sign like)		m	
+p2hdr2_h2	1	V	theta | b with bar | I with diaeresis (i-umlaut)		m	letter read as V (capital with flourish); may be U/V
+p2hdr2_h2	2	X	q with double cross | K (capital)		m	
+p2hdr2_h2	3	Y	g | delta-like (curl with bar)		m	
+p2hdr2_h2	4	Z	ff struck through | script F / ꟻ		m	
+p2hdr2_h2	4				m	stray sign '5.' at top right of page, not a letter column

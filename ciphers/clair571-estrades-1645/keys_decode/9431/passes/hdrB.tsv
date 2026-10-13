@@ -1,0 +1,25 @@
+crop	row	plaintext	code	mark	conf	note
+p2hdr2_h2	1	X	q with cross | K		m	
+p2hdr2_h2	2	Y	g-like 9 | script d with flourish (like reversed 6 / curl)		m	
+p2hdr2_h2	3	Z	ff struck through | script 3 / reversed 3 with hook		m	
+p2hdr2_h1	1	N	m4 (m with 4 tail) | pi-like sign | x		m	edge, page-1 spillover
+p2hdr2_h1	2	O	a4 | m4 | x		m	
+p2hdr2_h1	3	P	m with flourish | large hook/ʃ curve		m	
+p2hdr2_h1	4	Q	Z with loop | script a with flourish		m	
+p2hdr2_h1	5	R	u | h-like with cross		m	
+p2hdr2_h1	6	S	script h/ƍ | T		m	
+p2hdr2_h1	7	T	i | script L/£		m	
+p2hdr2_h1	8	V	theta | script b | i with diaeresis (long)		m	
+p1hdr2_h2	1	G	g | v		h	
+p1hdr2_h2	2	H	m | b with bar		m	
+p1hdr2_h2	3	I	d | p with cross | e		m	
+p1hdr2_h2	4	K	& | ae ligature		m	
+p1hdr2_h2	5	L	ct | beta		m	
+p1hdr2_h2	6	M	Z | w		m	
+p1hdr2_h2	7	N	m4 | pi-like		m	
+p1hdr2_h1	1	A	n | q with cross | 0		m	
+p1hdr2_h1	2	B	script d | b struck through		m	
+p1hdr2_h1	3	C	f | a		m	
+p1hdr2_h1	4	D	S | x4 struck through		m	
+p1hdr2_h1	5	E	n4-like | t | c		m	
+p1hdr2_h1	6	F	q | eta-like with cross		m	

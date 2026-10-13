@@ -1,0 +1,193 @@
+crop	row	plaintext	code	mark	conf	note
+p1c5_L01	1	Campagne	75	over	h	
+p1c5_L01	2	Cardinal	76	over	h	
+p1c5_L01	3	Car	77	over	h	
+p1c5_L01	4	Cathalongne	78	over	h	
+p1c5_L01	5	Catholique	79	over	h	
+p1c5_L01	6	Cause	80	over	h	
+p1c5_L01	7	Collogne	81	over	h	
+p1c5_L01	8	Commerce	82	over	h	
+p1c5_L01	9	Chrestienté	83	over	h	
+p1c5_L01	10	Condition	84	over	h	
+p1c5_L01	11	D			h	heading
+p1c5_L01	12	Da	85	over	h	
+p1c5_L01	13	De	86	over	h	
+p1c5_L02	1	Di	87	over	m	
+p1c5_L02	2	Do	88	over	h	
+p1c5_L02	3	Du	89	over	h	
+p1c5_L02	4	Dannemark	90	over	h	
+p1c5_L02	5	Dannois	91	over	h	
+p1c5_L02	6	Desperes	92	over	m	
+p1c5_L02	7	Depesche	93	over	h	
+p1c5_L02	8	Dusseldorp	94	over	h	
+p1c5_L02	9	C			h	heading
+p1c5_L02	10	Electeur	95	over	h	
+p1c5_L02	11	Electoral	96	over	h	
+p1c5_L02	12	Emb:den	97	over	m	Embden?
+p1c5_L02	13	Empire	98	over	h	
+p1c5_L02	14	Espagne	99	over	m	
+p1c5_L03	1	Espagnols	20	over	m	top of crop; likely 100 with leading digit cut off
+p1c5_L03	2	Escosse	21	over	m	likely 101, leading digit cut off
+p1c5_L03	3	Escossois	22	over	m	likely 102, leading digit cut off
+p1c5_L03	4	Esperance	23	over	m	likely 103, leading digit cut off
+p1c5_L03	5	Estat	24	over	m	likely 104, leading digit cut off; stroke after word
+p1c5_L03	6	Et	25	over	m	likely 105
+p1c5_L03	7	Entre	26	over	m	likely 106
+p1c5_L03	8	F			h	heading
+p1c5_L03	9	fa	27	over	m	likely 107
+p1c5_L03	10	fe	28	over	m	likely 108
+p1c5_L03	11	fi	29	over	m	likely 109
+p1c5_L03	12	fo	91	over	m	likely 110; digits unclear
+p1c5_L03	13	fu	91	over	m	likely 111; digits unclear
+p1c5_L04	1	faire	32	over	m	likely 112, cut off
+p1c5_L04	2	force	33	over	m	likely 113, cut off
+p1c4_L01	1	abouchement	41	over	h	
+p1c4_L01	2	accomodement	42	over	h	
+p1c4_L01	3	Accord	43	over	h	
+p1c4_L01	4	Action	44	over	h	
+p1c4_L01	5	aduis	45	over	h	
+p1c4_L01	6	affaire	46	over	h	
+p1c4_L01	7	Allemagne	47	over	m	digit 7 blotted
+p1c4_L01	8	Allemars	48	over	m	third digit cut at edge
+p1c4_L01	9	Alliance	49	over	m	third digit cut at edge
+p1c4_L01	10	Ambassad	50	over	h	
+p1c4_L01	11	Amis	51	over	h	
+p1c4_L01	12	Anglois	52	over	h	
+p1c4_L01	13	Angletterre	53	over	m	cut at edge
+p1c4_L02	1	Armes	54	over	h	
+p1c4_L02	2	Armee	55	over	h	
+p1c4_L02	3	Argynt	56	over	h	
+p1c4_L02	4	Assemblee	57	over	h	
+p1c4_L02	5	Au	58	over	h	
+p1c4_L02	6	Auec	59	over	h	
+p1c4_L02	7	&-like flourish			h	section sign, no number
+p1c4_L02	8	ba	60	over	h	
+p1c4_L02	9	be	61	over	h	
+p1c4_L02	10	bi	62	over	h	
+p1c4_L02	11	bo	63	over	h	word overwritten/corrected
+p1c4_L02	12	bu	64	over	h	
+p1c4_L02	13	Baüieres	65	over	m	code cut at edge; word as Baviers
+p1c4_L02	14	beau	66	over	m	
+p1c4_L02	15	bon	67	over	m	
+p1c4_L03	1	Brandebourg	6	over	m	code cut at edge, likely 68
+p1c4_L03	2	Bruxilles	6	over	m	code cut at edge, likely 69
+p1c4_L03	3	C			h	heading
+p1c4_L03	4	Ca	70	over	m	cut at edge
+p1c4_L03	5	Ce	71	over	m	cut at edge
+p1c4_L03	6	Ci	72	over	m	cut at edge
+p1c4_L03	7	Co	73	over	m	cut at edge
+p1c4_L03	8	Cu	74	over	m	cut at edge
+p1c3_L01	1	Assemblee d Munster	87	none	h	
+p1c3_L01	2	Les Mediateurs	88	none	h	
+p1c3_L01	3	Le Card. Legat (al above)	89	none	h	
+p1c3_L01	4	Le Card. Rozette (al above)	90	none	h	
+p1c3_L01	5	Le Nonce Chigy (eur above)	91	none	h	
+p1c3_L01	6	Lamb. Contarini (re above)	92	none	h	abbrev for Lambassadeur
+p1c3_L01	7	Plenipo. de france (re above)	93	none	h	
+p1c3_L01	8	M le Con Dauaux	94	none	h	
+p1c3_L01	9	M le Cre Seruiin (re/eur above)	95	none	m	Mr le Comte Servien?
+p1c3_L01	10	Plenip. de l Emp. (re/eur above)	96	none	m	
+p1c3_L01	11	Plenipo d Espagne (re above)	97	none	h	
+p1c3_L01	12	Estatz de l Empire	98	none	h	
+p1c3_L01	13	Resident s Romain (z above)	99	none	m	
+p1c3_L02	1	Resident de Suede	20	over	m	likely 120, leading digit cut off or short
+p1c3_L02	2	&-like flourish			h	section sign, no number
+p1c3_L02	3	Assemblee d Osnabrug	21	over	h	
+p1c3_L02	4	Plni de Suede (re above)	22	over	h	
+p1c3_L02	5	Baron Oxenstiern	23	over	h	
+p1c3_L02	6	Amb. Saluius (eur above)	24	over	h	
+p1c3_L02	7	Amb. Dannemarc	25	over	h	
+p1c3_L02	8	Baron de Rortie	26	over	m	
+p1c3_L02	9	Comte Dauersberg	27	none	m	
+p1c3_L02	10	&-like flourish			h	section sign, no number
+p1c3_L02	11	M les Amb. de france	28	over	h	
+p1c3_L02	12	M de s Chaumond (r above)	29	over	h	
+p1c3_L02	13	M de fontinay	30	over	h	
+p1c3_L03	1	M de la Thuillerie	31	over	h	
+p1c3_L03	2	M Dishameaux	32	over	m	
+p1c3_L03	3	Resid Beauregard	33	over	h	
+p1c3_L03	4	Resid de Moultes	34	over	m	
+p1c3_L03	5	Secr Brasiet (re above)	35	over	m	
+p1c2_L01	1	La Reyne de Suedi	54	none	h	
+p1c2_L01	2	La Couronne de Suedi	55	none	h	
+p1c2_L01	3	Le Chan. Oxenstiern (er above)	56	none	h	
+p1c2_L01	4	Le Mar. Horn (al above)	57	none	h	
+p1c2_L01	5	Le Mar. Torstinson (al above)	58	none	h	
+p1c2_L01	6	Major Konisgmarck	59	none	h	
+p1c2_L01	7	&-like flourish			h	section sign, no number
+p1c2_L01	8	Le Roy di Pologne	60	none	h	
+p1c2_L01	9	La Rep de Pologne	61	none	h	
+p1c2_L01	10	&-like flourish			h	section sign, no number
+p1c2_L01	11	Le Roy de Dannemarc	62	none	h	
+p1c2_L01	12	Les Estatz Dannemarc	63	none	h	
+p1c2_L01	13	&-like flourish (cut at bottom)			m	section sign
+p1c2_L02	1	Mrs les Estatz	64	none	h	
+p1c2_L02	2	M. Prince d Orange	65	none	h	
+p1c2_L02	3	M la prin d Orange	66	none	h	
+p1c2_L02	4	M le P d Angletrre	67	none	m	
+p1c2_L02	5	M le prince Guill	68	none	m	
+p1c2_L02	6	Les Prouinces de			h	heading line, no number
+p1c2_L02	7	Gueldres	69	none	h	
+p1c2_L02	8	hollande	70	none	h	
+p1c2_L02	9	Zelande	71	none	h	
+p1c2_L02	10	Vtrecht	72	none	h	
+p1c2_L02	11	frise	73	none	h	
+p1c2_L02	12	Ouerissel	74	none	h	
+p1c2_L02	13	Groningue	75	none	h	
+p1c2_L02	14	&-like flourish (cut at bottom)			m	section sign
+p1c2_L03	1	Venize	76	none	h	
+p1c2_L03	2	Sauoye	77	none	h	
+p1c2_L03	3	florence	78	none	h	
+p1c2_L03	4	Mantoue	79	none	h	
+p1c2_L03	5	Parme	80	none	h	
+p1c2_L03	6	Modene	81	none	h	
+p1c2_L03	7		82	none	h	number alone, no word
+p1c2_L03	8		83	none	h	number alone, no word
+p1c2_L03	9		84	none	h	number alone, no word
+p1c1_L01	1	Le Pape ou sa Sain (te above)	20	none	h	
+p1c1_L01	2	Le Roy ou sa Ma (te above)	21	none	h	
+p1c1_L01	3	La Reyne	22	none	h	
+p1c1_L01	4	M le duc d Orleans	23	none	h	
+p1c1_L01	5	M le Prince	24	none	h	
+p1c1_L01	6	M le Card Mazarin	25	none	h	
+p1c1_L01	7	M le C de brienne	26	none	h	
+p1c1_L01	8	&-like flourish			h	section sign, no number
+p1c1_L01	9	L Empe ou sa M Imp (re/te above)	27	none	m	
+p1c1_L01	10	L Empire	28	none	h	
+p1c1_L01	11	Le Priets de l Empire	29	none	m	Princes?
+p1c1_L01	12	Les Eslecturs	30	none	m	Electeurs
+p1c1_L01	13	Mayence	31	none	h	
+p1c1_L02	1	Collogne	32	none	h	
+p1c1_L02	2	Treues	33	none	h	
+p1c1_L02	3	Saxe	34	none	h	
+p1c1_L02	4	Brandebourg	35	none	h	
+p1c1_L02	5	Bauieres	36	none	h	
+p1c1_L02	6	Duez de lunebourg	37	none	h	
+p1c1_L02	7	Landgraue de hesse	38	none	h	
+p1c1_L02	8	Lantgraue d Armestat	39	none	h	
+p1c1_L02	9	Due de Neubourg	40	none	h	
+p1c1_L02	10	&-like flourish			h	section sign, no number
+p1c1_L02	11	Le Roy d Angletrre	41	none	h	
+p1c1_L02	12	La Reyne d Angle	42	none	h	
+p1c1_L02	13	La Reyene de Breme	43	none	m	
+p1c1_L02	14	Le prince Palatin	44	none	h	
+p1c1_L03	1	La maison Palatine	45	none	h	
+p1c1_L03	2	&-like flourish			h	section sign, no number
+p1c1_L03	3	Le Roy d Espayne	46	none	h	
+p1c1_L03	4	Don fran de Melos	47	none	h	
+p1c1_L03	5	Don Jian d Austriche	48	none	h	
+p1c1_L03	6		49	none	h	number alone, no word
+p1c1_L03	7		50	none	h	number alone
+p1c1_L03	8		51	none	h	number alone
+p1c1_L03	9		52	none	h	number alone
+p1c1_L03	10		53	none	h	number alone
+p1hdr_L01	1	A			m	signs below letters not visible: crop shows only the plain letter row, cut off at bottom
+p1hdr_L01	2	B			m	signs below letters not visible: crop shows only the plain letter row, cut off at bottom
+p1hdr_L01	3	C			m	signs below letters not visible: crop shows only the plain letter row, cut off at bottom
+p1hdr_L01	4	D			m	signs below letters not visible: crop shows only the plain letter row, cut off at bottom
+p1hdr_L01	5	E			m	signs below letters not visible: crop shows only the plain letter row, cut off at bottom
+p1hdr_L01	6	F			m	signs below letters not visible: crop shows only the plain letter row, cut off at bottom
+p1hdr_L01	7	G			m	signs below letters not visible: crop shows only the plain letter row, cut off at bottom
+p1hdr_L01	8	H			m	signs below letters not visible: crop shows only the plain letter row, cut off at bottom
+p1hdr_L01	9	I			m	signs below letters not visible: crop shows only the plain letter row, cut off at bottom
+p1hdr_L01	10	K			m	signs below letters not visible: crop shows only the plain letter row, cut off at bottom
