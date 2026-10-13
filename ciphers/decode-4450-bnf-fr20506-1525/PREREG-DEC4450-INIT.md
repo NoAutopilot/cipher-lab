@@ -39,3 +39,12 @@ Prior: expected negative (FT4, 3 Oct 2026: Raince's French-side voice; Ranzo's c
   code; it does not test a translation (Italian code, French double), a paraphrase, or a code whose letter is not the
   plain word's initial. Reported as a matched-control negative for that hypothesis only.
 - Seed 4450. Diagnostic only (not gating): best SW of each segment against all of f.2.
+
+## Addendum (22:5x UTC 13 Oct 2026 by date -u, before scoring)
+- Deviation: `open` is the first **4** text lines of f.4r (56 words), not 5. The line cutter's first band on the f.4r
+  region was the blank space above line 1 (both blind readers reported it empty), and line 5 fell below the fetched
+  region. No refetch, to stay inside the cap. `close` is as registered: f.6r body lines 3-7 (53 words), with the
+  dateline "De Romme le xv" (4 words, misread by both passes as "Et sommer le ..") dropped from L07.
+- Measured error: 7 of 109 aligned initials differ between pass A and pass B = 0.0642 (the control uses this).
+- Reconciliation: pass A, with 5 initials settled from the crops (close L03 "des"; close L04 "Ses" and "s[..]";
+  close L05 "vous"; close L07 "comme"). The gate and statistic are unchanged.

@@ -1,0 +1,7 @@
+{
+ "initial_error": 0.0642,
+ "raw_disagreement": 0.0642,
+ "positions": 109,
+ "differing": 7,
+ "note": "pass A vs pass B initials per line, after dropping the dateline 'De Romme le xv' (4 words) from close L07; floor 0.05"
+}
