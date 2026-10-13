@@ -1648,7 +1648,7 @@ Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (su
 H 56, S 42, M 28, I 27, U 1 of 154 after BAL167-GSEQ (g+ 3 M -> S, values unchanged). 168 f.246-247v: transcribed by two blind passes
 (err_2reader 0.280), letter signs unlabelled.
 - 168 f.246-247v bare passage - blocker: waiting-on LOCAL-QUEUE L71 (owner's browser: does the Papiers de Richelieu item print the cipher passage in clear); next if it does: align the printed text to the two-pass transcription with tools/interlinear_align.py (known plaintext for the f.247 hand), ~$3; if not: the f.247-hand glossed-text search (survey.tsv's d'Avaux-side leaves), ~$3
-- 170 f.228r-v BAL167-GSEQ g+ regrade re-audit - blocker: not-attempted; the regrade is a solver result (rule 4a); next: a verifier re-checks PREREG-BAL-GSEQ, settle.out, score1.out and the 3 exception rows and sets depth from the new grades, ~$3
+- 170 f.228r-v BAL167-GSEQ g+ regrade re-audit - blocker: not-attempted; the regrade is a solver result (rule 4a); next: a verifier re-checks PREREG-BAL-GSEQ, settle.out, score1.out and the 3 exception rows and sets depth from the new grades, ~$3 [met 13 Oct 2026: V-GSEQ re-audit, AUDIT 6, commit 1bb2bf978; scorer committed by GSEQ-SCORER; noted by BAL170-FIN]
 - 170 f.228-229 novelty (N3 -> N4) - blocker: waiting-on LOCAL-QUEUE L71 and SO-BAL170-F228 (SECOND-OPINIONS-QUEUE.tsv); the edition's notes are snippet-only from the cloud and a second opinion is owed before N4
 - Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census (N9-BAL found unlisted f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
 
