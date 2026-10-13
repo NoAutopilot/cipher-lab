@@ -9263,17 +9263,18 @@
       "audit_refs": [
         "AUDIT.md '## AUDIT 1 f.228 (SIG-V228)'",
         "AUDIT.md '## AUDIT 2 f.228 (AUD2-SIG-228)'",
-        "AUDIT.md '## AUDIT 3 f.228 (UNA3-BAL)'"
+        "AUDIT.md '## AUDIT 3 f.228 (UNA3-BAL)'",
+        "AUDIT.md '## AUDIT 4 f.228 (V-BAL167)'"
       ],
       "audit_status": "three audits",
       "depth": "D2",
-      "depth_pct": 36.0,
+      "depth_pct": 56.5,
       "depth_unread": {
         "names_codes": "2",
         "other": "1"
       },
-      "depth_by": "SIG-V228 verifier (account 1)",
-      "depth_date": "8 Oct 2026",
+      "depth_by": "V-BAL167 verifier (account 4)",
+      "depth_date": "13 Oct 2026",
       "decode_status": "Partially decrypted",
       "date": "8 Oct 2026",
       "kind": "reading",
@@ -9295,10 +9296,10 @@
       "completeness": "154 cipher tokens: H 56, M 70, I 27, U 1 (verifier-corrected from the solver's H 71 / I 12)",
       "unresolved_spans": "f.228r a_L02 '73' unmarked (name unread; Tomokiyo '*'), b_L02 wave sign; f.228v b_L02 '13' (verb before 'avec les ennemis')",
       "reading_version": "SIG-B228B 8 Oct 2026 (reading_b170f228.txt), grades corrected by SIG-V228",
-      "fields_source": "baluze167-davaux-1637/AUDIT.md '## AUDIT 1 f.228 (SIG-V228)' sections 5-6, '## AUDIT 2 f.228 (AUD2-SIG-228)', '## AUDIT 3 f.228 (UNA3-BAL)'",
+      "fields_source": "baluze167-davaux-1637/AUDIT.md '## AUDIT 1 f.228 (SIG-V228)' sections 5-6, '## AUDIT 2 f.228 (AUD2-SIG-228)', '## AUDIT 3 f.228 (UNA3-BAL)', '## AUDIT 4 f.228 (V-BAL167)'",
       "depth_sentence": "In cipher Chavigny reports a fear that the Landgravine and the dukes of Lüneburg would [verb unread] with the enemy, so that he and [73=] would each be forced to withdraw to his own side; of the Landgravine he can hardly believe it, given the treaty she has recently made with the King, but he does not say the same of the dukes of Lüneburg.",
-      "depth_check": "cipher clause not met (longest H stretch ~11 letters); code clause met: 10: les ('avec les ennemis', 'les ducs de Lunebourg'); fr17 FAIL by 0.038 on the corrected grades (AUD2-SIG-228), above all 40 shuffled nulls; no rule-7 fresh re-derivation yet",
-      "depth_note": "letter signs matched to f.229 exemplars by blind reads with decoy gates at their minimum; 15 Sonnet mark regrades demoted to I by the verifier; held at D2",
+      "depth_check": "H/C/S 87 of 154 (H 56, S 31 after BAL-WL's same-key wrong-label control, re-audited V-BAL167); cipher clause not met (longest H/C/S stretch ~12 letters); code clause met: 10: les ('avec les ennemis', 'les ducs de Lunebourg'); fr17 FAIL by 0.038 (values unchanged since AUD2-SIG-228); rule-7 --check up to date",
+      "depth_note": "31 letter signs S from a blind label-verification read (P+ 0.917, P- 0.000; P- labels mostly not look-alikes); 9 of the 31 S by class membership from the transcription; held at D2",
       "key_note": "Tomokiyo's table (published, credited) plus our letter-sign shape values from f.229 exemplars",
       "superseded_by": ""
     },

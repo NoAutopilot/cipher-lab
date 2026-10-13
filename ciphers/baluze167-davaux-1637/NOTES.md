@@ -1409,3 +1409,28 @@ transcribed by two blind passes (err_2reader 0.280), letter signs unlabelled.
 - [ ] image-check: glossed Baluze 170 crops f.233r/f.239r/f.258r on disk (BAL-CROP); untried: glossed leaves carrying the g+, hook and v forms (HYPOTHESES.md)
 - [x] retry: f.228 re-cut, re-passed, decoded and re-decoded (D1-BAL170, D1-BAL170B, B167-228, SIG-B228, SIG-B228B), grade correction applied (SIG-V228), shape control run (BAL-CROP, BAL-WL)
 Verdict: keep going: 3 internal gaps; cheapest next: a verifier re-audit of the BAL-WL regrade and depth (~$3); then the g+/hook/v image check (~$3); the 168 f.246 step once L71 answers
+
+## V-BAL167 verifier pointer (13 Oct 2026, account 4, for LANE DEFAULT-A4-0935), 09:45-10:0x UTC by date -u
+Re-audit of BAL-WL: AUDIT.md '## AUDIT 4 f.228 (V-BAL167)'. PREREG pushed before the read (418e47a3 before d45c9168); P+/P- vary on the scored
+axis; all 31 M -> S regrades licensed by the PREREG, none reverted; decode --check, score and regrade reproduce byte-identically. Depth D2 held,
+H/C/S 87/154 = 56.5% (status.json depth_pct 36.0 -> 56.5). Limits: P- labels mostly not look-alikes; 9 of 31 S by class membership.
+
+## Remaining gaps (V-BAL167, 13 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 170 f.229r-v: N3, D2 (AUD1-B167). 170 f.228r-v: N3, D2 about 36% at the last
+audit; now H 56, S 31, M 39, I 27, U 1 of 154 after BAL-WL (31 letter signs M -> S, values unchanged); re-audited V-BAL167: all 31 licensed, D2 held at about 56%. 168 f.246-247v:
+transcribed by two blind passes (err_2reader 0.280), letter signs unlabelled.
+- 168 f.246-247v bare passage - blocker: waiting-on LOCAL-QUEUE L71 (owner's browser: does the Papiers de Richelieu item print the cipher passage in clear); next if it does: align the printed text to the two-pass transcription with tools/interlinear_align.py (known plaintext for the f.247 hand), ~$3; if not: the f.247-hand glossed-text search (survey.tsv's d'Avaux-side leaves), ~$3
+- 170 f.228r-v g+/hook/v classes (HYPOTHESES.md) - blocker: not-attempted; no gloss-fixed exemplar of these forms is on disk; next: an image check of the g+, hook and v forms against glossed Baluze 170 leaves that carry those shapes (survey.tsv glossed leaves ff.63-322, crops via openapi.bnf.fr), ~$3
+- 170 f.228-229 novelty (N3 -> N4) - blocker: waiting-on LOCAL-QUEUE L71 and SO-BAL170-F228 (SECOND-OPINIONS-QUEUE.tsv); the edition's notes are snippet-only from the cloud and a second opinion is owed before N4
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census (N9-BAL found unlisted f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (13 Oct 2026, V-BAL167)
+- [x] siblings: davaux-1633 and DECODE records 2756-2762 checked (Siblings section above)
+- [x] clear-pages: leaf survey done; 170 f.230r is the clear close of the f.228 letter (D1-BAL170)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.229 letter values carried to f.228
+- [ ] print: Avenel, Négociations secrètes, Guébriant, Bougeant, Mercure, Siri, IA, Google Books (UNA3-BAL), OpenAlex, CrossRef done; untried: the Papiers de Richelieu 1636-1642 volume by page (L71)
+- [x] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); shape control with a same-key wrong-label negative PASSED (BAL-WL: G1 0.917, G2 0.000; 31 tokens M -> S)
+- [ ] image-check: glossed Baluze 170 crops f.233r/f.239r/f.258r on disk (BAL-CROP); untried: glossed leaves carrying the g+, hook and v forms (HYPOTHESES.md)
+- [x] retry: f.228 re-cut, re-passed, decoded and re-decoded (D1-BAL170, D1-BAL170B, B167-228, SIG-B228, SIG-B228B), grade correction applied (SIG-V228), shape control run (BAL-CROP, BAL-WL)
+Verdict: keep going: 2 internal gaps; cheapest next: the g+/hook/v image check (~$3), with some within-key look-alike wrong labels in its negative arm (V-BAL167 lesson); the 168 f.246 step once L71 answers

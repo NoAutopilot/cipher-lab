@@ -576,3 +576,50 @@ No change from AUD2-SIG-228: 56/154 = 36% H/C/S on the committed (corrected) dec
   yet applied and Google Books unsearched; corrected to the committed state (fr17 FAIL by 0.038 after the correction; regrades applied 9 Oct
   00:24; Google Books searched; Papiers de Richelieu snippet-only).
 - Requests: www.googleapis.com 46 (all 200). No other host.
+
+## AUDIT 4 f.228 (V-BAL167), 13 Oct 2026, 09:45-10:0x UTC by date -u
+
+Verifier V-BAL167, account 4, for LANE DEFAULT-A4-0935 (brief `.claude/briefs/runs/2026-10-13-acct4-default-0935-jobs.md` "V-BAL167").
+Not the solver (BAL-CROP and BAL-WL were owner-account sessions). Scope: template steps 1, 3a and 4 on the BAL-WL regrade (31 f.228 letter
+tokens M -> S); the N-class is not in question and no novelty search was run. Disk only; no network; no subagent (item 3 settled from files).
+
+### 1. Claim under audit
+NOTES "## BAL-WL": a same-key wrong-label control passed (G1 P+ 0.917, G2 P- 0.000, one blind read) and 31 f.228 letter-sign tokens move
+M -> S, values unchanged; f.228 now H 56, S 31, M 39, I 27, U 1 of 154.
+
+### 2. Checks
+| # | Check | Result |
+|---|---|---|
+| 1 | PREREG pushed before the read | **PASS.** `418e47a3` (07:41:35 UTC) adds only PREREG-BAL-WL.md + tiles_wl.py; `d45c9168` (07:44:36) adds read1.tsv, tiles, key, score, regrade. `git diff 418e47a3 d45c9168` on PREREG-BAL-WL.md is empty (unchanged after the read). Note: this clone is shallow at 41067c83; the order was read after `git fetch --shallow-since`. |
+| 2 | Controls can differ from the target on the scored statistic (rule 3, AX-5799) | **PASS.** The statistic is the yes-rate on a proposed label; P+ and P- are the same kind of tile (same key, hand, leaves, geometry) and differ only in the proposed label, which is the input the yes/no depends on. They did differ (0.917 vs 0.000), and T (0.815) could sit anywhere. P tiles exclude the 12 exemplar instances (tiles_wl.py / tiles.py split: first labelled occurrence per letter = exemplar), so P+ is not identity matching. Reader not anchoring: P- best exemplar = true letter 10/11. |
+| 3 | The 31 regrades are exactly those the gate licenses | **PASS, none reverted.** PREREG "Adoption": tokens of a CONFIRMED class move M -> S. score1.out CONFIRMED: q 6/6, ll 4/4, ll\|u4 1/1, u4\|4u 4/4, anchors 4u=a 1/1 and u4=t 1/1, y+ 2/2, ff 2/2, h 1/1. Exceptions file: q 6, ll 4, ll\|u4 1 (the tiled r_a_L02 token, a_L02 pos 4), ff 2, y+ 5, h 7, u4/4u 6 per token (the six tiled positions only) = 31. Majority-no classes (g+, hook, v) and gam (untested) not regraded. Tokens transcribed with an uncertain shape (`ll?`, `ll\|u4?`) are regraded only where their own tile was read; the second `ll\|u4?.` token and `q:` / `?(q-like)` are not in the file (fewer, not more). |
+| 4 | Rule 7 re-derivation | **PASS.** `python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check` -> `ciphertext_b170f228.txt: tokens 154: H 56, I 27, M 39, S 31, U 1` / `reading up to date`. `score_wl.py read1.tsv r20261013/key_private.tsv` is byte-identical to score1.out; `regrade.py` rewrote exceptions_b170f228.tsv byte-identically (clean `git status`). reading_tokens_b170f228.tsv vs its parent: 31 rows changed, all M -> S, zero non-grade changes. Values unchanged, so the fr17 input (values) is unchanged and its FAIL by 0.038 stands (AUDIT 2 f.228). |
+
+**Limits a reader should weigh (none voids the gate, so no revert):**
+- P- wrong labels were random letters from {a c l n r s t}, mostly visually distinct from the true sign. Only one within-key look-alike pair
+  was tested (X50, true a / proposed t, the 4u/u4 mirror pair; rejected high). The control shows the reader rejects clearly wrong labels; its
+  power against a near look-alike wrong value inside the key is mostly untested.
+- Nine of the 31 S tokens carry S by class membership from the two-pass transcription, not their own tile: h 6 of 7 (one tile, the class
+  verdict rests on it) and y+ 3 of 5. The PREREG licenses class-wide adoption; these nine depend on the transcription's shape labels too.
+- ff=s rests on two low-confidence yeses; the gloss also fixes ff=s on f.258r (P+ X44, H15 "Brunswick", yes/low).
+- One read only (the PREREG allowed a second read only on a gate failure).
+
+### 3a. Depth (rule 4a), f.228r-v
+- H/C/S: 87 of 154 cipher tokens = **56.5%** (H 56, S 31); unread: M 39, I 27, U 1 (name/code: `73=` Bavier read H, `sued|co` M; other M/I
+  mostly letter signs and unmarked numerals).
+- Cipher clause: longest H/C/S stretch about 12 letters ("n te que cu la l a", "le Roy les du c"), under the authentication distance: **not met**.
+- Code clause: **met** by `10:` "les" ("avec les ennemis", "les ducs de Lunebourg"), unchanged.
+- D3 not reached (needs >= 80% H/C/S). **D2 held**, outward words "partially deciphered (about 56%)".
+- `python3 tools/depth_check.py` -> exit 0 (`unique solves (N3+ and D2+): 214 -- D4 5, D3 151, D2 58`); f.228 counted at N3/D2.
+- True sentence (this verifier, from reading_b170f228.txt): in cipher, Chavigny writes that someone has shown a fear that the Landgravine and
+  the dukes of Lüneburg would [verb partly unread] with the enemy, so that he and Bavier (73=, Banér by context) would each have to withdraw to
+  his own side; Chavigny can hardly believe it of the Landgravine, given the treaty she recently made with the King, but does not say the same
+  of the dukes of Lüneburg.
+- status.json f.228 row: `depth` stays D2; `depth_pct` 36.0 -> 56.5 and `depth_check` / `depth_note` / `depth_by` / `depth_date` updated to
+  this audit (the percentage is a depth field and the old figure would misstate the outward "about N%").
+
+### 4. Postmortem
+No over-claim found in BAL-WL's NOTES section: it said depth was not changed and a verifier was owed, and listed the same limits as above.
+Lesson for the next control of this shape: draw some P- wrong labels from within-key look-alike pairs (4u/u4, h/g+, hook/v/ff for s) so the
+negative tests the confusions that matter, not only random letters.
+Requests: none (disk only). Subagents: none.
