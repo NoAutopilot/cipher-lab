@@ -8936,6 +8936,31 @@ Known-text share (light guardrail): ECK-GP13C 0.80 (3%) is the only job with no 
 3. fr16045-pisany-rome-1585: f.246r/f.246v (the rest of the 17 Sept 1586 letter, ~$36, a campaign decision) and the f.275r native-resolution tiles when Gallica answers.
 4. Gallica-dependent rows as in the 11 Oct handoffs, when Gallica answers.
 
+## LANE DEFAULT-account-1-20261013-1840 handoff (session_01TYyr52anK6nZcz4LqA98TL, account 1, for the orchestrator (owner account)), 13 October 2026 (18:40-19:3x UTC by date -u; closed: non-campaign backlog spent; workers 18.56 + orchestrator ~3.9 = ~22.5 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-13-acct1-default-1840-jobs.md (waves 1-2). Gate 0a: SESSION-SWEEP-account-1 stale-claimed since 5 Oct,
+proceeded as prior incarnations. VERIFY-BACKLOG regenerated 18:45: high rows Birago/ceppo (off limits), audit2 rows N0/N1, counted rows
+priority none. Backlog: `next_steps.py --hot-only` minus the 13 Oct A1-0640/A2-0710/A4-0935 lanes' done steps and LANE BNF-FOCUS holdings.
+Keyed googleapis 503 at 18:4x (eckert-1864, thurloe Verbael parked). openapi.bnf.fr 9 requests, all 200, take/release posted.
+**workers (ledgered + archived)**
+- fr16104-vivonne-spain-1572 ink 52: VIV-HEADS 2.61 D + VIV-101 1.67 N -- dechiffre heads of inks 78 (7 Nov), 97 (17 Dec) and 101 (24 Dec 1572,
+  f.300r) viewed, none is ink 52; the misplaced-decipherment residual is closed (every post-19 Sept dechiffre head now viewed).
+- fr4712-nevers-duchesse: F4712-C59 2.38 N -- canvases 59-70 (ff.48v-59r) no cipher, no glossed sibling; third empty run, 71-142 not pursued.
+- na-suriname-map-1781 2039 legend k: SUR-LEGK 2.92 D (pos 1-2 and 5 settled at M by two agreeing blind passes; legend H 289 C 11 M 171 U 10;
+  k reads snedertyen) + SUR-POS6 2.23 N (pos 6 7|r: r control unsure, gate FAIL, non-test; stays r M).
+- colbert26-lathuillerie-1644: COL26-WP 3.96 N -- word-level pairing judged a different instrument, PREREG 82122f874; 42 and 6 non-tests at
+  the stage-0 power check, 11 instrument check 3/9 vs Control W p95 4 non-test; key unchanged.
+- la-garde-1577: LAG-SIB 1.80 N (0 same-system siblings on unsearched routes; WVO 1810/5034 different stock) + LAG-MARNIX 0.99 N (Groen VI
+  p.129's Aug 1577 alphabet is Don Juan's intercepted cipher, not the 6467 system; no holder or image found).
+Known-text share (light guardrail): 0 (no N0/N1 item worked; ink 52 is N3).
+Overruns: VIV-HEADS 1.3x, F4712-C59 1.2x, SUR-LEGK 1.17x, SUR-POS6 1.1x (Opus floor; size small Opus jobs at 2.5).
+**next**
+1. fr16104 ink 52 ff.165r-168v (~$34, 24 units): the prior-plaintext residual is now closed, so this is the remaining route from D1 upward --
+   a campaign, the orchestrator's decision.
+2. colbert26: a second blind pass for 11 on c20-21 (~3, COL26-WP's named next), low prior.
+3. na-suriname 2039 pos 6: a same-hand look against settled 2039 r/7 tiles (~1.5), one token.
+4. la-garde: retroboeken phrase search and the KHA finding aid (untried by LAG-SIB/LAG-MARNIX), ~1, Sonnet.
+5. eckert-1864 / thurloe Verbael when googleapis answers.
+
 ## LANE DEFAULT-account-4-20261013-0935 handoff (session_01Fof6DzsQ6Uah6Lw7sC1Lfb, account 4, for the orchestrator (owner account)), 13 October 2026 (09:35-11:2x UTC by date -u; closed: in-scope backlog spent; workers 40.74 + orchestrator ~5.9 = ~46.6 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-13-acct4-default-0935-jobs.md (4 waves). Gate 0a: no SESSION-SWEEP-account-4 row. Probes 09:4x UTC:
 openapi.bnf.fr 200, keyed googleapis 503. VERIFY-BACKLOG regenerated 09:41: high rows Birago/ceppo (off limits) and fr16104 ink 52 audit2 (run).
