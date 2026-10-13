@@ -1,0 +1,30 @@
+pool m=44 (codes N>=2 on c20-21, not C): & 10 11 16 21 25 26 32 35 36 40 41 42 43 46 47 49 5 56 58 6 72 75 78 80 93 L c' cn d f g gt h h' ll m m+ q th v w' y zz
+alpha = 0.05/44 = 0.00114; comparison 0.05/3 = 0.01667 (not gating)
+STAGE 0 (idealised pairing bound)
+code	value	N	H_ideal	P_min	verdict
+83	de	6	6	0.00008	positive-control	(p_i 0.25 0.14 0.11 0.12 0.40 0.40)
+31	que	4	4	0.00198	positive-control	(p_i 0.50 0.11 0.25 0.14)
+42	si	4	4	0.00794	NON-TEST	(p_i 0.14 1.00 0.17 0.33)
+11	le	8	6	0.00003	live	(p_i 0.00 0.00 0.11 0.25 0.25 0.14 0.20 0.14)
+6	ie	4	1	0.25000	NON-TEST	(p_i 0.25 0.00 0.00 0.00)
+STAGE 0 VERDICT: live codes ['11']
+INSTRUMENT 83 de + 31 que: N 9 H 3 ctrl mean 1.83 p95 4 max 7 P 0.2613 -> NON-TEST
+DIAGNOSTIC (post hoc, not gated): word paired over each 83/31/11 occurrence
+11 c20U01 3 [('des', '3', '3', 'M')]
+83 c20U01 4 [('Suedois', '4', '5', 'M')]
+83 c20U02 7 [('bonne', '7', '8', 'H')]
+11 c20U04 10 unpaired
+31 c20U06 0 [('que', '0', '0', 'H')]
+83 c20U07 0 [('de', '0', '0', 'H')]
+31 c20U07 6 [('le', '6', '6', 'L')]
+11 c20U07 7 [('traitte', '7', '8', 'M')]
+31 c20U08 0 [('que', '0', '0', 'H')]
+11 c20U08 3 [('les', '2', '3', 'M')]
+11 c20U08 8 unpaired
+11 c20U10 2 [('armes', '2', '3', 'M')]
+31 c20U10 8 [('accommodement', '8', '12', 'M')]
+83 c21U04 8 [('reserrer', '8', '9', 'M')]
+11 c21U05 2 [('deffendre', '2', '4', 'M')]
+83 c21U05 4 [('deffendre', '2', '4', 'M')]
+83 c21U05 10 unpaired
+11 c21U06 0 [('le', '0', '0', 'H')]

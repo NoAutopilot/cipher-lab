@@ -37,3 +37,14 @@ lowered to M (exceptions_f23.tsv); f.23 C 127 -> 125.
 | hypothesis | statistic | target | control | verdict |
 |---|---|---|---|---|
 | 42 = s(ieur) (held-out canvas 20-21 + f.24, N 6) | positional known answer, WIN 0.25, s(ieur) tokens vs si | not computed | rotation / value-shuffle: 0 by construction (0/31 held-out units carry an s(ieur) token) | NON-TEST at the registered power check; licenses nothing either way |
+
+## COL26-WP, 13 Oct 2026: canvas 20-21 leads 42 = si, 11 = le, 6 = je at word grain
+
+PREREG-COL26-WP.md (pushed 82122f874 before any pairing or score); interlinear/c20c21_word_wp.py; output interlinear/c20c21_word_wp_out.txt.
+alpha 0.05/44 (selection-corrected). Control W = gloss words permuted over word spans within each unit.
+
+| code | value | control (known answer 83 de + 31 que) | target | verdict |
+|---|---|---|---|---|
+| 42 | si | stage 0: 31 que at N 4 best-case P_min 0.0020 | best-case P_min 0.0079 (N 4) | NON-TEST (underpowered at N 4) |
+| 6 | je | as above | best case 1/4, P_min 0.25 | NON-TEST |
+| 11 | le | instrument 3/9 vs p95 4, P 0.261 (FAIL) | not scored | NON-TEST (instrument) |
