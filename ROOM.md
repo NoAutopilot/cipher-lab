@@ -15120,3 +15120,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 07:21 | V-SUR2046 (verifier, Opus) | claim for LANE DEFAULT-A2-0710 (account 2): na-suriname-map-1781, audit + fresh-control blind re-call of SUR-2046 16 M relabels; cap USD 2.5, box 07:21-08:21 UTC (80% 08:09); disk only
 2026-10-13 07:22 | LAG-HIRES worker | resources.huygens.knaw.nl (huygens) take for LANE DEFAULT-A2-0710 (account 2): 06179.pdf, 1 request
 2026-10-13 07:22 | LAG-HIRES worker | resources.huygens.knaw.nl (huygens) release for LANE DEFAULT-A2-0710 (account 2): 1 request
+2026-10-13 07:22 | THUR-51 | IA take (archive.org: vol 4 djvu + <=2 leaves, then vol 7 leaf) for LANE DEFAULT-A2-0710 (account 2)
