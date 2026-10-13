@@ -76,3 +76,55 @@ pattern (SUR-2046, PREREG 6b9676d75): PREREG-SUR-2039R.md pushed first with a co
 whose answer the subagent does not see, and a gate the control must meet before any target call is accepted; one blind subagent call on
 crops already on disk (or regenerated from the folder's regen script; NA host only if neither exists, <= 4 requests, `NA take/release`);
 relabels enter as exceptions at the grade the gate licenses (M unless the control clears its bar with margin). decode `--check`; gaps_check.
+
+## Wave 2 (10:0x UTC 13 Oct)
+Wave 1 results (all ledgered): VIV-191V f.191v = clear decipherment of the 19 Sept 1572 letter, not ink 52; V-BAL167 upheld all 31 regrades,
+f.228 D2, depth_pct 56.5; F4712-C39 no glossed sibling ff.28v-35r; SYL54-LEG legend 11 rows; COL26-42 non-test (0 held-out S.); SUR-2039R
+non-test (controls 13/20 vs 14). Pricing lesson from wave 1 (3 of 6 over 1.4x): the Opus session floor is ~1.5 and a tile-sheet or
+folder-shrink step is its own unit -- caps below are sized with that.
+
+### V2-VIV52 (Opus, verifier, cap 5, box 80 min): fr16104-vivonne-spain-1572 ink 52 f.164r-v, second adversarial audit (Outreach gate 2)
+VERIFY-BACKLOG.tsv row "Saint-Gouard to Catherine de Medicis, 5 Sept 1572 (BnF fr.16104 f.164r-v): French fragment" (priority high, audit2).
+You are a session other than the solver (VIVPAN/VIV52-O) and the first verifier (V-VIV52, AUDIT 5); do not protect either. CLAUDE.md
+"Verifier brief (template)" in full, steps 1-5, with these specifics: (a) the claim under audit is AUDIT.md section 5's safe sentence and its
+N3 class; (b) VIV-191V (NOTES.md "## VIV-191V", 13 Oct) found f.191v is a clerk decipherment of a different letter (19 Sept 1572) -- verify
+that reading of the leaf from its image on disk, since a clear copy of ink 52 anywhere in fr.16104 would make the item N1; check the
+volume's other "dechiffre" leaves named in NOTES.md for a copy of the 5 Sept letter; (c) La Ferriere, Lettres de Catherine de Medicis IV
+(and its intro, pp. cxx ff.) and the Saint-Gouard/Vivonne material in print (Groen? no -- the French and Spanish editions the folder's
+check-solved names; CODOIN / Simancas K. calendars if listed) by phrase search of the decoded fragments on IA full text (be-api) and the
+keyed Google Books API (it answered 503 at 09:4x UTC: probe once, log unreachable if still 503); (d) open indexes (OpenAlex, Semantic
+Scholar, CORE with keys per CLAUDE.md), Persee/HAL; (e) JSTOR-QUEUE.tsv rows in both families (i) and (ii) (CLAUDE.md verifier brief 2g)
+appended for the owner's runner -- a queued row never blocks the class. Write AUDIT.md section 6 (N-class, key source, depth per 3a,
+safe and unsafe sentence, every family searched/unreachable with counts), propagate to status.json via the documented fields and to any
+SECOND-OPINIONS-QUEUE.tsv row already filed (SO-VIV52). IA (be-api, archive.org) take/release ROOM lines. Report the class and the
+one-line postmortem.
+
+### BAL167-SHRINK (Opus, cap 2.5, box 45 min, disk only): baluze167-davaux-1637 images/ from 31 MB to under 30 MB
+CLAUDE.md Access playbook, last paragraph (the AX2-SHRINK pattern): `images_manifest_full.tsv` with a `cited_by` column (which NOTES/AUDIT/
+HYPOTHESES line or script uses each file -- grep, do not guess), a `regen_images.sh` that re-derives every full page and recorded crop from
+openapi.bnf.fr (use `--iiif-host openapi` URLs), a byte-identical regen test on ONE sample crop (<= 2 openapi.bnf.fr requests, take/release
+lines), then delete uncited full pages / convert cited ones to JPEG at the same dimensions. Never delete a file cited by AUDIT.md or a PREREG,
+or a balshape/ tile (V-BAL167 just audited them). `du -sh` before/after; decode `--check` and any balshape scorer still run after. Paste
+`tools/file_shrink_guard.py` output in the done line.
+
+### F4712-C47 (Opus, cap 2.5, box 45 min, openapi.bnf.fr <= 14): fr4712-nevers-duchesse, census canvases 47-58
+Same method and table as F4712-C39 (NOTES.md "## F4712-C39", 13 Oct): one overview per canvas at `600,` (1600 for any cipher leaf, to look
+for an interlinear gloss), name each file by canvas before the next fetch. Stop at the first glossed cipher leaf in the f.10r/f.13r system
+(name it, two native regions at most). Update the siblings line and Verdict; gaps_check.
+
+### SYL54-TRY (Opus, cap 3, box 60 min, openapi.bnf.fr <= 2): fr15575-syllabic-1592-95, legend mark pairs + --try of the 16 marked rows
+NOTES.md Remaining gaps "no.54 legend mark pairs and the mark rule in decoding ... next: one native crop of the left-hand marks (canvas f188
+x 5750-6100, y 2400-3400) eye-checked, then `decode_key.py --try` of the 9 circumflex and 7 plus-after nomenclator rows as code + modifier at
+their f.228 occurrences, ~$1.5". Step 1: the crop (1 request; reuse SYL54-LEG's region file if it covers it) and one blind subagent call
+settling the caret (s|l) and dotted-n (en|l) pairs -- the subagent does not see SYL54-LEG's two readings. Step 2: PREREG-SYL54-TRY.md
+pushed first (statistic, the --try control, the gate), then `decode_key.py <t> --try` for each of the 16 rows at every occurrence; record
+in HYPOTHESES.md; no key.tsv edit unless --try's own control passed for that value class (CLAUDE.md MQS-CROSSWORD line), and then M.
+The 8/9 circumflex "-s" pattern is post hoc: it may motivate the PREREG, it cannot be its evidence. gaps_check.
+
+### SUR-CTX (Opus, cap 3.5, box 70 min, disk only): na-suriname-map-1781, 2039 Remarque K/O/&/[J-rev] pre-registered context test
+NOTES.md l.4168 and the Verdict: "pre-registered context test (value- and letter-shuffle controls, as SUR-ALIGN) is the instrument for
+these classes, not a second tile call". Read SUR-ALIGN's PREREG and script (13 Oct) and reuse its machinery (tools/ first; no private copy
+of a shared tool). PREREG-SUR-CTX.md pushed before scoring: per class (K x4, O x2, & x2, [J-rev] x2), the candidate values, the Dutch
+vocabulary/corpus used, the statistic, both controls, the gate, and a power check at this N (10 tokens) -- if the controls cannot reject at
+this N, write non-test and stop before scoring (COL26-42 did exactly this today). Relabels only where the gate licenses, as exceptions, M
+unless the control clears with margin. decode `--check`; gaps_check.
