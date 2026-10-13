@@ -1,0 +1,25 @@
+A tx246/ciphertext_f246r.tsv {'tokens': 856, 'dropped': 3, 'decoded_letters': 1074, 'score': 0.5428, 'keyshuffle_p99': 0.45, 'keyshuffle_mean': 0.4023, 'order_p99': 0.4739, 'order_mean': 0.4336, 'above_both': True}
+A tx246/passA.tsv {'tokens': 818, 'dropped': 6, 'decoded_letters': 943, 'score': 0.6235, 'keyshuffle_p99': 0.4508, 'keyshuffle_mean': 0.4022, 'order_p99': 0.4804, 'order_mean': 0.4397, 'above_both': True}
+A tx246/passB.tsv {'tokens': 661, 'dropped': 1, 'decoded_letters': 852, 'score': 0.5927, 'keyshuffle_p99': 0.4609, 'keyshuffle_mean': 0.4091, 'order_p99': 0.473, 'order_mean': 0.4351, 'above_both': True}
+A control 0 /5 [{'seed': 0, 'N': 1074, 'score': 0.3866, 'keyshuffle_p99': 0.4213, 'order_p99': 0.4446, 'pass': False}, {'seed': 1, 'N': 1074, 'score': 0.4182, 'keyshuffle_p99': 0.4223, 'order_p99': 0.4397, 'pass': False}, {'seed': 2, 'N': 1074, 'score': 0.398, 'keyshuffle_p99': 0.4248, 'order_p99': 0.4421, 'pass': False}, {'seed': 3, 'N': 1074, 'score': 0.4193, 'keyshuffle_p99': 0.4215, 'order_p99': 0.4376, 'pass': False}, {'seed': 4, 'N': 1074, 'score': 0.4007, 'keyshuffle_p99': 0.4207, 'order_p99': 0.4477, 'pass': False}]
+A VERDICT NON-TEST (positive control fails)
+Traceback (most recent call last):
+  File "/home/user/cipher-lab/ciphers/fr16045-pisany-rome-1585/kp246/kp246.py", line 32, in <module>
+    kp86d.main()
+    ~~~~~~~~~~^^
+  File "/home/user/cipher-lab/ciphers/fr16045-pisany-rome-1585/kp86d/kp86d.py", line 66, in main
+    s, ks, os_ = test(toks, key, clear, 1000, 1000, rnd)
+                 ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/cipher-lab/ciphers/fr16045-pisany-rome-1585/kp86/kp86.py", line 54, in test
+    v = vals[:]; rnd.shuffle(v); ks.append(nw_score(dec(toks, dict(zip(labs, v))), clear))
+                                           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/cipher-lab/ciphers/fr16045-pisany-rome-1585/../../tools/stream_align.py", line 168, in nw_score
+    path, _, _ = band_dp(d2, let, E, ref, band, gap, gap, free_start=True)
+                 ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/cipher-lab/ciphers/fr16045-pisany-rome-1585/../../tools/stream_align.py", line 72, in band_dp
+    if ok2.any():
+       ~~~~~~~^^
+  File "/usr/local/lib/python3.13/dist-packages/numpy/_core/_methods.py", line 55, in _any
+    def _any(a, axis=None, dtype=None, out=None, keepdims=False, *, where=True):
+    
+KeyboardInterrupt

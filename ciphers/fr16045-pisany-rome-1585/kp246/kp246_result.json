@@ -1,0 +1,87 @@
+{
+ "err": 0.561,
+ "clear_letters_note": "copy kp246/colbert_f246r.txt",
+ "arm_A": {
+  "tx246/ciphertext_f246r.tsv": {
+   "tokens": 856,
+   "dropped": 3,
+   "decoded_letters": 1074,
+   "score": 0.5428,
+   "keyshuffle_p99": 0.45,
+   "keyshuffle_mean": 0.4023,
+   "order_p99": 0.4739,
+   "order_mean": 0.4336,
+   "above_both": true
+  },
+  "tx246/passA.tsv": {
+   "tokens": 818,
+   "dropped": 6,
+   "decoded_letters": 943,
+   "score": 0.6235,
+   "keyshuffle_p99": 0.4508,
+   "keyshuffle_mean": 0.4022,
+   "order_p99": 0.4804,
+   "order_mean": 0.4397,
+   "above_both": true
+  },
+  "tx246/passB.tsv": {
+   "tokens": 661,
+   "dropped": 1,
+   "decoded_letters": 852,
+   "score": 0.5927,
+   "keyshuffle_p99": 0.4609,
+   "keyshuffle_mean": 0.4091,
+   "order_p99": 0.473,
+   "order_mean": 0.4351,
+   "above_both": true
+  },
+  "positive_control": {
+   "passed": 0,
+   "seeds": [
+    {
+     "seed": 0,
+     "N": 1074,
+     "score": 0.3866,
+     "keyshuffle_p99": 0.4213,
+     "order_p99": 0.4446,
+     "pass": false
+    },
+    {
+     "seed": 1,
+     "N": 1074,
+     "score": 0.4182,
+     "keyshuffle_p99": 0.4223,
+     "order_p99": 0.4397,
+     "pass": false
+    },
+    {
+     "seed": 2,
+     "N": 1074,
+     "score": 0.398,
+     "keyshuffle_p99": 0.4248,
+     "order_p99": 0.4421,
+     "pass": false
+    },
+    {
+     "seed": 3,
+     "N": 1074,
+     "score": 0.4193,
+     "keyshuffle_p99": 0.4215,
+     "order_p99": 0.4376,
+     "pass": false
+    },
+    {
+     "seed": 4,
+     "N": 1074,
+     "score": 0.4007,
+     "keyshuffle_p99": 0.4207,
+     "order_p99": 0.4477,
+     "pass": false
+    }
+   ],
+   "pass": false
+  },
+  "verdict": "NON-TEST (positive control fails)"
+ },
+ "arm_B": "not completed: stopped at the cap (lane orchestrator 23:02 UTC); non-gating, beside A only"
+}
