@@ -2020,6 +2020,43 @@ intro p. cxx, quotes a Saint-Gouard letter to the Queen (Anjou as king of Englan
 arrived) citing fr.16104 f.191v -- not ff.164-168, but not excluded for ink 52's unread pages. print_check on 6 decoded phrases (print-check-52.tsv):
 generic hits only; Google Books 503 throughout. SO-VIV52 queued. No over-claim found in VIV52-O.
 
+## VIV-191V (13 Oct 2026, 09:45-09:5x UTC by date -u, account-4 worker for LANE DEFAULT-A4-0935): f.191v and its docket, the La Ferriere lead
+Brief: .claude/briefs/runs/2026-10-13-acct4-default-0935-jobs.md "### VIV-191V". Host openapi.bnf.fr (IIIF Image API v3), 4 requests, all HTTP 200,
+>= 3 s apart, take/release lines in ROOM.md; gallica.bnf.fr not used. Prior work (`tools/prior_work.py fr16104-vivonne-spain-1572 --item-spec
+'shelfmark=BnF fr.16104;folio=191v;date=1572-09-19;sender=Vivonne;recipient=Catherine de Medicis' --step-type lookup --offline`, exit 4): the owed
+LEAD 1-own rows are this folder's own image-check (c170-c191 viewed; c205-c208 never viewed) and V-VIV52's lead itself, which this job answers;
+4-editions Catherine I-IV/IX-X UNCHECKED by the tool (Catherine IV p. cxx is the lead's own source, V-VIV52).
+
+**Canvas.** `tools/gallica_folio.py btv1b9009609w --folio 191 --anchor 190=175r --anchor 187=173r --anchor 178=164r` (cached manifest, every label
+'NP'): estimate c206-c208, centre c207. Checked by eye on the stamped folio numbers: c205 = f.188v / f.189r (stamped "189"), c206 = f.189v / f.190r
+("190"), c207 = f.190v / f.191r ("191"), **c208 = f.191v (left) / f.192r ("192")**. One canvas per opening here, as at c178-c183.
+Images (1600 px wide): images/p191/ov_c207_1600.jpg and ov_c208_1600.jpg committed; ov_c205/ov_c206 not committed (tracked images already ~35.5 MB, over the 30 MB line before this job) -- re-fetch from the URLs in images/manifest.json "viv191v"; local upscaled crop of
+f.191v lines 15-20 from the overview (no request): images/p191/crop_c208_f191v_infante_ours.jpg. No subagent or vision call beyond this worker's eye.
+
+**(a) Cipher or clear.** f.191v is **clear script, a clerk's decipherment**, not cipher: f.191r (c207 right) is headed "dechiffré de la precedente",
+with docket "19 Sept. 1572" and old ink number "58" beside the stamped "191"; f.191v and f.192r continue the same clear hand. The cipher letter it
+deciphers ("la precedente") runs in cipher on ff.188v-189v (c205, c206 left; its first page, on c204 or earlier, not viewed) and ends on f.190r
+(c206 right): two cipher lines, then plain text ("Madame, les Infantes ... la Royne de Montaigne [?] ... Jenvoye a V. Mag.te des lectres que luy
+escript le Roy Catholique ..."), the closing "de Madril ce xix^e jour de Sep^bre 1572" and the signature "De Vivonne". f.190v (c207 left) is the
+address leaf, endorsed "19 Septemb. 1572" (the address itself, written across the fold, not read at this size).
+**(b) Date, sender, addressee as written.** 19 Sept 1572 (docket on f.191r; close on f.190r "xix ... Sep^bre 1572"); sender De Vivonne (signature
+f.190r); addressee "Madame" (opening of f.191r, "Madame, je remercie ..."; f.190r "V. Mag.te"), i.e. the Queen. Read from the image only.
+**(c) Same letter as ink 52 f.164r-v?** **No.** Different date (19 Sept vs 5 Sept), different leaves (ink 52 runs ff.164r-168v, closed "de Madril
+ce v^me jour de Sept^bre 1572", VIV52-O), and the text does not match. Three ink-52 decoded phrases looked for on f.191v (and f.191r/f.192r at
+overview): "avoir traicte avecq ses" (f.164r L17) -- not found; "Flandre" (f.164v L11, L18) -- not found; "d'Orange?" [dauarange] (f.164v L28) --
+not found. Converse: f.191v's own key words ("Angleterre", "Infante", "Ysabel", "ours", "Diego", "Austriche") occur 0 times in piece52_decode.txt
+(grep, spaces stripped). The overview is legible only word-by-word in places, so this is a "not seen at 1600 px" result, not a full collation.
+**(d) Is it the passage La Ferriere quotes?** **Yes.** f.191v lines 15-20 (underlined in the manuscript) read, by eye from the crop, spelling
+approximate: "... [Monsieur ... Roy] d'Angleterre et le marier avecques Madame l'Infante Dona Ysabel. Je dictz que je trouverois cela tres bon et a
+propos si c'estoit chose que l'on peult esperer, mais qu'en France nous avions ung proverbe qui dict que nous achetons la peau de l'ours premier
+qu'il soit mort, et que pour asseurer a la maison d'Austriche tous ses estatz il ne seroit pas mal a propos ..." -- the Anjou/England/Infante
+proposal and the "peau de l'ours" answer that Catherine IV p. cxx cites to "fonds français n° 16104, f° 191 v°".
+**Consequence for ink 52:** the lead does not touch ink 52. La Ferriere's quotation is from the period decipherment (ink 58, ff.191r-192r+) of
+the 19 Sept 1572 letter to the Queen, not from ff.164r-168v; ink 52 gains no known plaintext from it and its premise stays as V-VIV52 left it.
+Side finding for the per-piece table: the 19 Sept 1572 letter to the Queen (cipher ending f.190r) has its clerk decipherment on ff.191r-192r+
+(ink 58) -- a cipher/decipherment pair on the leaf, usable as a known-plaintext check like inks 40/41 and 50/51; piece_table.tsv not edited
+(its ink numbers for the cipher piece, probably 57, not seen). Requests: openapi.bnf.fr 4. Cost: not visible to this session.
+
 ## Remaining gaps (VIV52-O refresh, 13 Oct 2026; supersedes the VIV52 list, all its other lines kept)
 Read so far: ink 40 checked against its decipherment 41 with Tomokiyo's key (N5-VIVK PASS); ink 54 read with key.tsv, gloss check PASS (N5-VIV54), window look-alike pass + re-decode, b2 + wrong-key PASS (N7-VIV54L); ink 53 Ink 52 f.164r-v read (VIV52-O, 13 Oct 2026): H 2,217 / M 404 / U 106 of 2,727, b2 + 200-wrong-key PASS.
 ff.170r-171v read, b2 + wrong-key PASS (N6-VIV53B), window look-alike pass + ': :' join + re-decode, b2 + wrong-key PASS again (N7-VIV53L); ink 63 ff.190r-194r read in full (f.194r L5-10 added by N7-VIV63G): b2 PASS on every part (N6-VIV63, N6-VIV63B,
@@ -2043,7 +2080,7 @@ Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53, 54 (and 38, w
 - fr.16105 f.104r, first page of the decipherment - blocker: illegible; native crop shows word shapes only (N4-VIV3)
 - Spanish-side copies (AGS Estado K) and Gachard vol. I - blocker: needs-physical-access; AGS is not digitised in a route this worker could open
 - ink 52 print search on the decoded fragments (G3) - blocker: not-attempted; done by V-VIV52 (13 Oct 2026, print-check-52.tsv: generic hits only) except Google Books (HTTP 503 all session); next: rerun `tools/print_check.py ciphers/fr16104-vivonne-spain-1572 --phrases ciphers/fr16104-vivonne-spain-1572/phrases_52.txt --only gbooks` when the host answers, ~$0.3
-- ink 52 La Ferriere f.191v lead (V-VIV52, AUDIT 5) - blocker: not-attempted; Catherine IV intro p. cxx quotes a Saint-Gouard letter to the Queen (Anjou/England/Infante, early Sept 1572) citing fr.16104 f.191v; next: view f.191v (about c207) and its docket on openapi.bnf.fr (2-3 requests), name the letter; if it is ink 52's text or a decipherment of it, ink 52 drops to N0/N1 and gains a known plaintext, ~$0.5
+- ink 52 La Ferriere f.191v lead (V-VIV52, AUDIT 5) - blocker: not-attempted; answered by VIV-191V (13 Oct 2026): f.191v (c208 left) is the clerk decipherment ("dechiffré de la precedente", ink 58, docket 19 Sept 1572) of the 19 Sept 1572 letter to the Queen whose cipher ends f.190r, and carries the Infante / "peau de l'ours" passage La Ferriere quotes; not ink 52 (no ink-52 phrase seen, other date, other leaves), so ink 52 gains no plaintext; next: only a side step, align the 19 Sept cipher (ff.188v-190r, first page on c204 or earlier) with ff.191r-192r as a known-plaintext pair, crops + two blind passes as tx/vivk_test.py, ~$15
 ## Escalation (13 Oct 2026, VIV52-O; from the VIV52 list)
 - [x] siblings: ink 38 located; ink 40 vs 41 aligned (N5-VIVK); decipherment 51 found (N5-VIV5S); per-piece table (N5-VIVTAB); ink 54 read (N5-VIV54); ink 53 ff.170r-171v read (N6-VIV53, N6-VIV53B); ink 63 ff.190r-194r read in full (N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G); ink 52 f.164r-v read (VIV52-O)
 - [x] clear-pages: decipherments 41, 44, 51, 68, 71, 76 are on the leaves; inks 54 and 53 interlinear words used as gloss checks (N5-VIV54 PASS, N6-VIV53 FAIL at the floor); f.171v has none (N6-VIV53B); ink 63 has none (order gate b2 instead)
@@ -2052,7 +2089,7 @@ Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53, 54 (and 38, w
 - [retired] key-rebuild: tools/stream_align.py from a flat start did not converge on this material (Arm A, 2 of 30 codes); a published key exists
 - [x] image-check: fr.16104 c170-191 and fr.16105 c95-112, c192-248 viewed; native regions of f.173r-v, ff.170r-171v, ff.190r-194r (N5-VIV54, N6-VIV53, N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G); ink 52 c178-c183 viewed at 1200 px and f.164r-v native regions via openapi.bnf.fr (VIV52-O, 13 Oct 2026): no dechiffre, no gloss
 - [ ] retry: ink 53 f/m/p key cells for the U labels (AUDIT 4; whole-label test negative, D1-F16104K; hand-placed per-position shape judge NON-TEST, control 4-5/12 vs 8/12, D07-VIV53; clerk word anchors on ink 40, VIV-ANCHOR 8 Oct 2026: control 5/7 PASS, V -> n assigned, f/m/p/qu under 3 positions, f on label p a conflict; next instrument: ink 50/51 known plaintext or sign sorter); ink 63 key questions on the key image (context table done, N7-VIV63G); ink 63 label questions (lookalike pass, overlap dedup); ink 53 residual unsettled tiles and kept gaps (window look-alike pass N7-VIV53L; gap re-read R7A-VIV53, 137/270 settled); ink 54 sorter/window audit (lookalike pass done, N7-VIV54L) and the col-u-row-3 relabel (key cell found, N7-VIV54Q; window judge NON-TEST, N7-VIV54R; hand-placed judge NON-TEST 0/18, DEF1-VIV54; next instrument: sign sorter / clerk alignment, hand-placed per-position crops)
-Verdict: keep going: 16 internal gaps; ink 52 f.164r-v read at D1 (VIV52-O, 13 Oct 2026, b2 + wrong-key PASS; audit 1 N3 D1, V-VIV52); cheapest new: the f.191v view, ~$0.5; cheapest next: the owner sorts tx/sorter_fp/sorter_viv_fp.html (D4-VIV), ~$0 agent cost; then ink 52 ff.165r-168v via openapi.bnf.fr, ~$34 (24 units), and the ink 50/51 known plaintext for f, m, p, ~$15
+Verdict: keep going: 16 internal gaps; ink 52 f.164r-v read at D1 (VIV52-O, 13 Oct 2026, b2 + wrong-key PASS; audit 1 N3 D1, V-VIV52); f.191v viewed (VIV-191V, 13 Oct 2026: decipherment of the 19 Sept letter, not ink 52); cheapest next: the owner sorts tx/sorter_fp/sorter_viv_fp.html (D4-VIV), ~$0 agent cost; then ink 52 ff.165r-168v via openapi.bnf.fr, ~$34 (24 units), and the ink 50/51 known plaintext for f, m, p, ~$15
 ## Siblings (8 Oct 2026)
 
 SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing decoded). Siblings of this folder's N3+ document(s) by volume, sender, recipient, key, design and series; 6 listed, 6 unread or not in the repository. Full rows with evidence: `SIBLINGS-2026-10-08.tsv`. p = the compiler's conservative estimate that the step yields a new counted document (N3+, D2+, two audits); not a novelty claim (rule 10). Required by `tools/gaps_check.py` for every N3+ target.

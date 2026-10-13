@@ -10939,5 +10939,46 @@
    "by": "N5-VIV5S",
    "date": "04 Oct 2026"
   }
+ ],
+ "viv191v": [
+  {
+   "file": "p191/ov_c205_1600.jpg",
+   "source_url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f205/full/1600,/0/default.jpg",
+   "what": "f.188v / f.189r, cipher (19 Sept 1572 letter)",
+   "by": "VIV-191V",
+   "date": "13 Oct 2026",
+   "committed": false,
+   "note": "not committed (folder already over 30 MB); re-fetch from source_url"
+  },
+  {
+   "file": "p191/ov_c206_1600.jpg",
+   "source_url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f206/full/1600,/0/default.jpg",
+   "what": "f.189v cipher / f.190r cipher end, plain close, signed De Vivonne, Madrid 19 Sept 1572",
+   "by": "VIV-191V",
+   "date": "13 Oct 2026",
+   "committed": false,
+   "note": "not committed (folder already over 30 MB); re-fetch from source_url"
+  },
+  {
+   "file": "p191/ov_c207_1600.jpg",
+   "source_url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f207/full/1600,/0/default.jpg",
+   "what": "f.190v address leaf, docket 19 Sept 1572 / f.191r 'dechiffre de la precedente', ink 58",
+   "by": "VIV-191V",
+   "date": "13 Oct 2026"
+  },
+  {
+   "file": "p191/ov_c208_1600.jpg",
+   "source_url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f208/full/1600,/0/default.jpg",
+   "what": "f.191v decipherment, Infante / peau de l'ours passage / f.192r",
+   "by": "VIV-191V",
+   "date": "13 Oct 2026"
+  },
+  {
+   "file": "p191/crop_c208_f191v_infante_ours.jpg",
+   "source_file": "p191/ov_c208_1600.jpg",
+   "what": "f.191v lines 15-20, local PIL crop (150,570,800,800) upscaled 3x, no request",
+   "by": "VIV-191V",
+   "date": "13 Oct 2026"
+  }
  ]
 }
