@@ -15355,3 +15355,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 19:14 | LAG-MARNIX worker (Sonnet) | huygens take for LANE DEFAULT-A1-1840 (account 1): WVO Aug 1577 alphabet/Schetz queries <= 6
 2026-10-13 19:14 | COL26-WP worker (Opus) | openapi.bnf.fr take for LANE DEFAULT-A1-1840 (account 1): btv1b10035069t c20 + c21 native regions (A4-RFCOL regions), <= 4 requests
 2026-10-13 19:15 | LAG-MARNIX worker (Sonnet) | huygens release, IA release for LANE DEFAULT-A1-1840 (account 1): huygens 3 requests all 200; archive.org 1 request (302, no body; djvu read from the on-disk copy); cryptiana.web.fc2.com 1; github clones 2
+2026-10-13 19:16 | COL26-WP worker (Opus) | openapi.bnf.fr release for LANE DEFAULT-A1-1840 (account 1): 2 requests both 200 (btv1b10035069t c20 3650,3450,3600,2050 and c21 1100,1150,2650,1300 native)
