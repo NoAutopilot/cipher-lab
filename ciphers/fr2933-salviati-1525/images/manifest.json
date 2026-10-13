@@ -932,6 +932,7 @@
   ],
   "notes": [
     "f54r_lines_debug.jpg (uncited debug overlay from tools/iiif_lines.py --debug) deleted 26 Sept 2026 (bSALS); not individually tracked in iiif_lines, see images_manifest_full.tsv",
-    "SALV-PLAIN1 (26 Sept 2026) regenerated src_ark_12148_btv1b90600674_f55_4085_0_4086_5513.jpg, f54v/f55r/f55v_ref1600.jpg (regen_images.sh page) and f54v/f55r/f55v_ref2400.jpg (same IIIF region at 2400px, for crop_plain_leaf.py) to build plain_crops/; not committed (folder would pass 30 MB), regen via regen_images.sh + the 2400px URL swap recorded in NOTES.md \"SALV-PLAIN1\" section."
+    "SALV-PLAIN1 (26 Sept 2026) regenerated src_ark_12148_btv1b90600674_f55_4085_0_4086_5513.jpg, f54v/f55r/f55v_ref1600.jpg (regen_images.sh page) and f54v/f55r/f55v_ref2400.jpg (same IIIF region at 2400px, for crop_plain_leaf.py) to build plain_crops/; not committed (folder would pass 30 MB), regen via regen_images.sh + the 2400px URL swap recorded in NOTES.md \"SALV-PLAIN1\" section.",
+    "SALV-57V (13 Oct 2026) fetched f57v_ref2400.jpg from openapi.bnf.fr (https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90600674/f59/pct:0,0,50,100/2400,/0/default.jpg; 2400x3250, 1,088,166 bytes, sha1 865993376fd536fdddcbb59e95b818bd30974b94; canvas info.json 8151x5518) and re-cut plain_crops/f57v/ (20 line PNGs); neither committed (.gitignore); regen_f57v.sh re-derives both."
   ]
 }
