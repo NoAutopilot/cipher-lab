@@ -1,0 +1,73 @@
+# OBRED-11852A calls, inv. 11852 scans 2-49 sheets (seed 1602), written before key3 (images/sg_11852_screen2_sheetkey.json) opened
+1 A CTRL-CIPHER y French letter with dotted figure groups and interlinear figures
+1 B scan n opening: endleaf with later note + title "Register ... Fol. 1-312", stamp
+1 C CTRL-PLAIN n bundle of letters with a slip "1605" laid over (same image recurs on sheet 2: the plain control); prose, no figure run
+1 D scan n blank opening
+1 E scan n blank opening, stamp ghost
+1 F scan n register pp. ~1-2 fair copy, Dutch prose; margin "Exhibitum 6 Jan 1605", "Reparatie van de fortificatie"
+1 G scan n blank opening, stamp
+1 H CTRL-PS y German letter, numeral block under the signature
+1 I scan n p.1 heading "Brieven ingekomen uit diversche plaetsen in den Jaere 1605", Raad van State, exhibitum ~6 Jan 1605
+2 A scan n register p.3, two-column fair copy with margin notes; Dutch prose
+2 B scan n register p.6, "12 Januarij 1605" entry; money sums in the margin (f 14450, 6120); no code run
+2 C CTRL-CIPHER y
+2 D CTRL-PLAIN n
+2 E scan n register p.5, Dutch entry then French "Les Estats Generaux des Provinces Unies" (to the Elector of Cologne / Liege?, M); no figures
+2 F scan n register p.7, money sums (3600, 14400, 15000, 1000); no code run
+2 G scan n register p.4, columns with margin notes; Dutch prose
+2 H CTRL-PS y
+2 I scan n register p.8, money sums (2000, 1500, 5800); no code run
+3 A CTRL-PS y
+3 B scan n register p.13, Magistraet der Stad Leeuwarden(?) ex ~10 Jan 1605, Gedeputeerden Groningen Ommelanden signatures; Dutch prose
+3 C scan n register p.9, Bisschop(?) / "Hooch ende Mogende" entries dat. 15-20 Dec 1604, ex ~9-15 Jan 1605; prose
+3 D CTRL-CIPHER y
+3 E scan n register p.12, Stad Groningen en Ommelanden dat. Dec 1604, Raad van State ex ~10 Jan 1605; prose
+3 F scan n register p.10, Dutch prose
+3 G scan n register p.11, Dutch prose; one margin heading
+3 H CTRL-PLAIN n
+3 I scan n register p.14, Gedeputeerden / Oostfriesland(?) entries ex ~14-18 Jan 1605; prose
+4 A scan n register p.15, "Bylage" list of ships/skippers November 1604 with small figure columns (lasts/amounts against names); no code run
+4 B CTRL-CIPHER y
+4 C scan n register p.20, ship list end then letters dat. 22 Dec 1604 ex 24 Jan 1605 (French "Monsieur"), Graef Willem Lodewijk of Nassau at Leeuwarden ex ~13 Jan 1605; prose
+4 D scan n register p.18, ship/skipper list with amount columns; no code run
+4 E CTRL-PLAIN n
+4 F CTRL-PS y
+4 G scan n register p.16, ship/skipper list with amount columns; no code run
+4 H scan n register p.17, ship/skipper list, "December anno 1604"; amount columns; no code run
+4 I scan n register p.19, ship/skipper list dated by day; amount columns; no code run
+5 A scan n register p.22, Willem Lodewijk letter end, ex 25 Jan 1605; company/regiment table by province (Gelderland, Hollant, Zeelant, Overijssel, Stad Groningen) with three count columns and totals; muster counts, no code run
+5 B scan n register p.26, extract (Bomman?) "Copie Extract", Dutch prose
+5 C scan n register p.24, Dutch prose, dat. Dec 1604; signatures
+5 D CTRL-PS y
+5 E scan n register p.23, entries ex 26-28 Jan 1605 (Coren / Bomman, Middelburg?); prose
+5 F scan n register p.25, "Extract" Bomman; prose
+5 G scan n register p.21, French "Messeigneurs" letter ex 25 Jan 1605, then Graef van Nassau ex 25 Jan; prose, no figures
+5 H CTRL-CIPHER y
+5 I CTRL-PLAIN n
+6 A scan n register p.27, entries "den 31 Januarij 1605", Magistraet van ... ex 2 Feb 1605; prose
+6 B scan n register p.31, States General act "den 4 feb 1605", Graef van Oostfriesland letter dat. 29 Dec 1604 ex 7 Feb 1605; prose
+6 C scan n register p.30, Coren/Bomman Sluys 25 Jan, Magistraet ... ex 2 Feb, States General act 3 Feb 1605; prose
+6 D scan n register p.28, Maurice of Nassau signature, ex 29 Jan 1605 "Lyste van de Compagnien" with officer pay amounts; no code run
+6 E scan n register p.29, Coren/Bomman dat. 30 Jan ex 2 Feb 1605; prose
+6 F CTRL-CIPHER y
+6 G CTRL-PLAIN n
+6 H scan n register p.32, Dutch prose
+6 I CTRL-PS y
+7 A scan n register p.35, French entry with a Dutch margin heading "van den ... van ..." (sender name not read at 700 px, M) dat. ~13 Dec 1604? ex ~16 Feb 1605; then Dutch entry ex 16? Feb 1605; prose, no figures
+7 B scan n register p.37, Willem Lodewijk of Nassau Leeuwarden 24 Jan, entry 20 Feb 1605; prose
+7 C CTRL-PLAIN n
+7 D scan n register p.34, Dutch prose, "Memorie" ex ~19 Feb 1605; prose
+7 E scan n register p.36, Graef van Nassau letter dat. ~12 Feb ex 16 Feb 1605; prose
+7 F CTRL-PS y
+7 G CTRL-CIPHER y
+7 H scan n register p.38, States General act 24 Feb 1605, Dutch prose
+7 I scan n register p.33, Coren/Bomman entries ex ~8 Feb 1605; prose
+8 A scan n register p.41, garrison list: captains' names under places (Holland, Dordt, Geertruidenberg ...); names only, no figures
+8 B scan n register p.44, garrison list by province (Overijssel, Zeelandt, Middelburg); names only
+8 C scan n register p.39, Dordt/Voogt/Hilman letter ex ~23 Feb 1605; prose
+8 D scan n register p.43, garrison list (Nijmegen, Zutphen ...); names only
+8 E CTRL-CIPHER y
+8 F scan n register p.40, letter end Leeuwarden Feb 1605 (Dorth, Voogt, Hilman); "Overgebracht den 24 feb 1605 Besetting Bergen op Zoom" company list; names only
+8 G CTRL-PLAIN n
+8 H scan n register p.42, garrison list (Gelderland, Arnhem ...); names, a few counts ("26 man", "10 man"); no code run
+8 I CTRL-PS y
