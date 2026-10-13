@@ -89,3 +89,24 @@ Premise (d) is no longer open. Next step with a key in hand: read fr.3995 fol.63
 fr3613-rondinelli-1590: open (line 1) -- edition/page or full-text-search citation found within 6 lines
 exit 0
 ```
+
+## BNF-RONDI-KEY (13 Oct 2026, account 2)
+Window 14:42-14:5x UTC by date -u. Transcription only, no decode. Images: native f127 and f128 of fr.3995 (ark btv1b525085665) from openapi.bnf.fr, 2 requests (images/tables/request.log); natives deleted after cropping, crops in images/tables/crops/ (tools/iiif_lines.py --image ... --debug, three regions). Two blind Sonnet passes over the crops (keys/sign_guide.md) plus a reconciliation by the worker on the debug overlays. Route: openapi.bnf.fr; gallica not used.
+
+| Block | Folio / canvas | Heading as read (M) | Rows | H | M | H share |
+|---|---|---|---|---|---|---|
+| no.34 (keys/block_no34.tsv) | 63r / f128, lower | Rondinelli al S. D. [?] Fiorenza di parigi | 22 | 13 | 9 | 0.59 |
+| no.33 (keys/block_no33.tsv) | 63r / f128, upper | Al S.r Luigi donan[?] in <struck> Fiorenza | 22 | 18 | 4 | 0.82 |
+| no.32 (keys/block_no32.tsv) | 62v / f127 | Al S.r Raffaello rupse? in fiorenza di parigi | 26 | 4 | 22 | 0.15 |
+Total 70 rows, H 35 (0.50). Rules, annotations and the "di parigi" example sign by sign: keys/blocks_rules.md.
+
+**Missing plain letters.** no.34: j, k, w (and v) absent; list ends at z; rows l and m were missed by both passes and read by the reconciler (M). no.33: k, v, w absent; y has a curl-letter and no figure. no.32: k, v, w absent; y and x have no figure; u row has a smudged letter.
+**Heading that names Rondinelli:** block no.34 only. no.33 names Luigi, no.32 Raffaello.
+**Shape types.** no.34: one plain sign per letter (figures 8 7 6 5 3 2, Latin forms m l h t c u y n and curls), vowels carried over consonants (French rule). no.33: pure figures, 2-3 per letter, dots between. no.32: figures with small marks above, a few Latin-letter signs, word list.
+**Eye comparison with f.62 (M).** No image of fr.3613 f.62 is on disk in this folder (images/ holds gomb/ and tables/ only), so this comparison rests on NOTES.md line 10's description of f.62 (dense letter-like forms with diacritics and strokes, vowel figures above) and was not made against the leaf: no.34's letter-like signs (m, l, h, t, c, u, y, curls) plus the over-written figures match that description, no.33's all-figure shape does not, no.32's figures-with-marks partly. A decode worker must look at f.62 itself before any test.
+**Recommendation (M).** A decode should use block no.34 (it names Rondinelli, carries the over-written-vowel rule that f.62's layout suggests, and its own example reads "di parigi" consistently with its list), with the rows graded M (l, m, s, t, u, y, z) treated as unknowns to be tested by `decode_key.py --try`, not pinned. no.33 and no.32 are other correspondents' keys (Luigi, Raffaello) and are held as comparison material only. Grades are per row, not per token: no key has been applied to any ciphertext, so no reading is claimed (rule 4: no H/C on a reading).
+
+## Remaining gaps
+Rows l, m, y, z, t, u and s of no.34 are M; f.62 itself is not yet compared by image; no.32's marks are untranscribed in kind.
+## Escalation
+Next: look at fr.3613 f.62 (Gallica ark for fr.3613, openapi route) and compare the sign set to no.34's 22 rows by eye, then one blind pass on no.34 rows l-z at native size to move the M rows; ~USD 2. Verdict: keep going.

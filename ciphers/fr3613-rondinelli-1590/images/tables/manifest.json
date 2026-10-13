@@ -1,0 +1,5 @@
+{"natives_deleted_after_cropping": true,
+ "sources": [
+  {"canvas": "f127", "folio": "fr.3995 fol.62v", "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b525085665/f127/full/max/0/default.jpg", "size": "4100x6146", "fetched": "13 Oct 2026"},
+  {"canvas": "f128", "folio": "fr.3995 fol.63r", "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b525085665/f128/full/max/0/default.jpg", "size": "4077x6157", "fetched": "13 Oct 2026"}],
+ "crop_regions_native": {"no32": "100,1700,2200,1500 (f127)", "no33": "1300,150,1400,1500 (f128)", "no34": "1300,1650,2200,1450 (f128)"}}
