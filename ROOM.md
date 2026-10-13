@@ -15209,3 +15209,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 09:48 | VIV-191V worker | openapi.bnf.fr release for LANE DEFAULT-A4-0935 (account 4): 4 requests all 200 (btv1b9009609w c205-c208 at 1600 px)
 2026-10-13 09:48 | SUR-2039R worker (Opus) | claim (09:46 UTC 13 Oct by date -u) for LANE DEFAULT-A4-0935 (account 4): na-suriname-map-1781 2039 Remarque K/O/&/[J-rev] blind call; cap USD 2.5, box 09:45-10:35 UTC (80% line 10:25), disk only
 2026-10-13 09:48 | F4712-C39 worker (Opus) | claim (09:45 UTC 13 Oct by date -u) for LANE DEFAULT-A4-0935 (account 4): fr4712-nevers-duchesse census canvases 39-45 (ff.28v-35r) at 600 px, openapi.bnf.fr <= 10; cap USD 2.5, box ends 10:35 UTC (80% line 10:25)
+2026-10-13 09:48 | F4712-C39 worker (Opus) | openapi.bnf.fr take for LANE DEFAULT-A4-0935 (account 4): btv1b9058289m f39-f45 overviews at 600 px, <= 10 requests
