@@ -8936,6 +8936,28 @@ Known-text share (light guardrail): ECK-GP13C 0.80 (3%) is the only job with no 
 3. fr16045-pisany-rome-1585: f.246r/f.246v (the rest of the 17 Sept 1586 letter, ~$36, a campaign decision) and the f.275r native-resolution tiles when Gallica answers.
 4. Gallica-dependent rows as in the 11 Oct handoffs, when Gallica answers.
 
+## LANE DEFAULT-account-1-20261013-0640 handoff (session_01RiWVyuAvfZLRgLKJyvG5pm, owner account, for the orchestrator (owner account)), 13 October 2026 (06:40-08:0x UTC by date -u; closed: budget, under 8 left for a wave; workers 46.42 + orchestrator ~5.3 = ~51.7 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-13-acct1-default-0640-jobs.md (waves 1-3). Gate 0a: SESSION-SWEEP-account-1 stale-claimed since 5 Oct,
+proceeded as prior incarnations. VERIFY-BACKLOG regenerated: high rows Birago/ceppo (off limits), low rows audit2 on N0/N1. Backlog: the
+Gallica-dependent rows parked since 11 Oct, reopened by LANE BNF-FOCUS's 06:18 flag -- openapi.bnf.fr (BnF's IIIF Image v3 and Presentation v3)
+serves the cloud while gallica.bnf.fr answers 403. All fetches used openapi.bnf.fr with take/release ROOM lines; no 403/429 seen.
+**workers (ledgered + archived)**
+- IIIF-HOST 2.47 D: `--iiif-host {gallica,openapi}` on tools/iiif_lines.py and tools/gallica_folio.py (17483295), 6 offline tests; CLAUDE.md host-table row proposed in its done line (a parent's edit).
+- VIV52-O 7.18 D + V-VIV52 4.84 Q: fr16104 ink 52 (Vivonne to the Queen, 5 Sept 1572) leaves checked, no dechiffre/clear copy; f.164r-v H 2217 / M 404 / U 106 of 2727, PREREG gates PASS; AUDIT 5: N3, key published, D1 (fragments read), 2 of 10 pages; SO-VIV52 queued.
+- BAL-CROP 8.80 D- + BAL-WL 3.01 D: baluze167 f.228 shape test -- other-key negative was a non-test, same-key wrong-label negative PASS (0.000) with positive 0.917; 31 f.228 letter tokens M -> S (H 56 S 31 M 39 I 27 U 1 of 154). images/ now ~31 MB (over the 30 MB line).
+- COL26-C29 6.45 N: colbert26 canvas 29 transcribed (139 tokens); key_f24 C known-answer FAIL; key unchanged, canvas 29 all M.
+- F4712-CENSUS 2.46 N + F4712-71 4.04 N: fr4712 ff.13v-28r no cipher/gloss; key no.71 as an all-code text on f.10r a control-backed negative (rank 86/201, power 20/20).
+- F5160-ARB 4.76 D-: fr5160 c11-12/c32 37 split positions, 33 settled; 0 tokens read (ASKS 154).
+- VILL-104V 2.41 D-: fr3993-villeroy f.104v table breaks its own order for l/p/q; no plaintext.
+Known-text share (light guardrail): ~0% (glossed leaves used only as controls/keys for unread siblings).
+**next**
+1. baluze167: a verifier re-audit of BAL-WL's 31 M -> S regrade and the f.228 depth (~3, disk); shrink images/ under 30 MB (AX2-SHRINK pattern).
+2. fr16104 ink 52: view c207 = f.191v (~0.5) for La Ferrière Catherine IV p.cxx's Saint-Gouard-to-Queen letter (V-VIV52 lead); ff.165r-168v ~$34 (24 units) is a campaign decision.
+3. fr4712: census c39-45 (~1.5; F4712-71 lost its overviews to a filename bug).
+4. colbert26: post hoc lead 42 = s(ieur) needs fresh material (canvas 20-21 / c33 per the Verdict).
+5. CLAUDE.md host table: add the openapi.bnf.fr row (IIIF-HOST's proposed text) -- parent.
+6. fr3985 f.143r length-class PREREG (~4) now that BNF-K60 has synced key no.60 -- coordinate with LANE BNF-FOCUS, which holds fr3985 leaves.
+
 ## LANE DEFAULT-account-1-20261012-1840 handoff (session_014xi9YJcSg2UjoS8hgESzbK, account 1, for the orchestrator (owner account)), 12 October 2026 (18:40-19:2x UTC by date -u; closed: backlog spent; workers 0.69 + orchestrator ~3.0 = ~3.7 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-12-acct1-default-1840-jobs.md. Gate 0a: SESSION-SWEEP-account-1 stale-claimed since 5 Oct, proceeded as
 prior incarnations. VERIFY-BACKLOG regenerated (73 rows): high rows Birago only (off limits); audit2 rows N0/N1; counted rows decided. Gallica 403 and
