@@ -30,6 +30,19 @@ f37	left	26v	blank (show-through and fold marks)	no	no	n/a	none	600	F4712-71
 f37	right	27r	dense letter in clear, small hand	no	no	unsure	none seen	600	F4712-71
 f38	left	27v	one paragraph in clear at head, rest blank	no	no	unsure	none seen	600	F4712-71
 f38	right	28r	letter in clear	no	no	unsure	none seen	600	F4712-71
-f39-f45	both	28v-35r	not viewed (overview lost to a filename bug in this job's fetch loop; request budget spent)	n/a	n/a	n/a	n/a	-	F4712-71
+f39	left	28v	letter in clear, small hand, ~20 lines + a separate paragraph near the foot; endorsement/docket written sideways lower right (M)	no	no	unsure	none seen	600	F4712-C39
+f39	right	29r	letter in clear (continuation), paragraphs, foliation 29	no	no	unsure	none seen	600	F4712-C39
+f40	left	29v	blank (show-through, specks)	no	no	n/a	none	600	F4712-C39
+f40	right	30r	formal document in clear, heading "Henry par la grace de dieu Roy de France et de Pologne" (M), full page	no	no	no	none seen	600	F4712-C39
+f41	left	30v	same document in clear (continuation), full page	no	no	no	none seen	600	F4712-C39
+f41	right	31r	same document ends, ~12 lines	no	no	no	none seen	600	F4712-C39
+f42	left	31v	blank except a short endorsement written sideways at mid-page (M)	no	no	n/a	none	600	F4712-C39
+f42	right	32r	letter in clear, opens "Monsieur ..." (M), full page	no	no	unsure	none seen	600	F4712-C39
+f43	left	32v	letter in clear (continuation), dense, full page	no	no	unsure	none seen	600	F4712-C39
+f43	right	33r	memorandum in clear, paragraphs with marginal "c" marks at left	no	no	unsure	none seen	600	F4712-C39
+f44	left	33v	memorandum in clear (continuation), marginal "c" marks, upper part struck through with a vertical line	no	no	unsure	none seen	600	F4712-C39
+f44	right	34r	memorandum/articles in clear, paragraphs	no	no	unsure	none seen	600	F4712-C39
+f45	left	34v	blank (faint show-through)	no	no	n/a	none	600	F4712-C39
+f45	right	35r	letter mixing clear and cipher: clear prose on the upper half, then ~13 lines of mixed digits and signs (#, dotted signs, ≡, ʒ-like signs) with clear words between ("Monsieur", "sans aucun ...", "plust a sa divine Ma[jes]te"); recto of Tomokiyo's f.35 Pasquier letter	yes	no (1600 px region, lower half)	unsure	mixed digit+sign cipher in running text, not the f.10r two-digit figure system	600+1600	F4712-C39; region c45_f35r_cipher_pct52-45-43-35_1600.jpg; f.35v (c46) carries the address to Pasquier
 f46	left	35v	cipher letter (letters/signs, dense, ~14 lines) + clear lines, signature, address "A Monsieur / Monsieur Pasquier ... des finances" (M)	yes	not seen at 600 px	unsure	letter/sign cipher, not figure runs at 600 px	600	Tomokiyo's f.35 (Pasquier 1592, read by G. Lasry 2022, nevers.htm); not the f.10r figure system at this size
 f46	right	36r	letter in clear, another hand	no	no	no	none seen	600	F4712-71

@@ -364,6 +364,86 @@
    "file": "census/contact_c35-38_600.jpg",
    "note": "local contact sheet of c35-c38",
    "job": "F4712-71"
+  },
+  {
+   "file": "census/c39_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f39/full/600,/0/default.jpg",
+   "date": "13 Oct 2026",
+   "size": [
+    600,
+    433
+   ],
+   "job": "F4712-C39"
+  },
+  {
+   "file": "census/c40_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f40/full/600,/0/default.jpg",
+   "date": "13 Oct 2026",
+   "size": [
+    600,
+    415
+   ],
+   "job": "F4712-C39"
+  },
+  {
+   "file": "census/c41_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f41/full/600,/0/default.jpg",
+   "date": "13 Oct 2026",
+   "size": [
+    600,
+    415
+   ],
+   "job": "F4712-C39"
+  },
+  {
+   "file": "census/c42_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f42/full/600,/0/default.jpg",
+   "date": "13 Oct 2026",
+   "size": [
+    600,
+    434
+   ],
+   "job": "F4712-C39"
+  },
+  {
+   "file": "census/c43_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f43/full/600,/0/default.jpg",
+   "date": "13 Oct 2026",
+   "size": [
+    600,
+    415
+   ],
+   "job": "F4712-C39"
+  },
+  {
+   "file": "census/c44_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f44/full/600,/0/default.jpg",
+   "date": "13 Oct 2026",
+   "size": [
+    600,
+    415
+   ],
+   "job": "F4712-C39"
+  },
+  {
+   "file": "census/c45_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f45/full/600,/0/default.jpg",
+   "date": "13 Oct 2026",
+   "size": [
+    600,
+    415
+   ],
+   "job": "F4712-C39"
+  },
+  {
+   "file": "census/c45_f35r_cipher_pct52-45-43-35_1600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f45/pct:52,45,43,35/1600,/0/default.jpg",
+   "date": "13 Oct 2026",
+   "size": [
+    1600,
+    901
+   ],
+   "job": "F4712-C39"
   }
  ],
  "k71_f133r_wordcols": {
