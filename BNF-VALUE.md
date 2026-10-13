@@ -292,3 +292,18 @@ the strongest new material (a held key or a sibling folder) once reproduced. Re-
   nevers.htm). Next: BNF-Q7-KEY transcribes the no.62 table and the f.25 digits (no decode); then a controlled key test on
   Opus. If no.62 reads it, the key is `period` (rebuilt from the key sheet of the time).
 - Spend 13 Oct so far, this lane: workers 1.12 + 2.84 + 0.87 + 0.96 + 0.65 + 1.00 + 1.59 + 1.21 = 10.24 (cap 40/day).
+
+## Waves 25-27 (13 Oct 2026, 10:1x-11:5x UTC by date -u): Q7 key hunt
+
+- **Key no.62 transcribed** (BNF-Q7-KEY, 3.15): fr.3995 f.114-115v, 114 rows (99 H). f.25 transcribed: 260 digits, two
+  passes agree 0.905.
+- **no.62 retired for f.25** (BNF-Q7-TEST, 1.56): structural misfit, p 0.30, with matched-control power 0.99-1.00 at 0-15%
+  digit error. The lane then showed the same structural check is a non-test for dense two-digit tables (no.46 parses any
+  string) and an indication only for no.70 (no control).
+- **A validated decode-level screen** (BNF-Q7-SCREEN, 3.59): `ciphers/fr3982-nevers-toscana-1592/q7test/screen.py`,
+  power 0.85-0.94 at 10% digit error on sparse and dense tables, false detection 1-2%. Under it f.25 fits neither no.46
+  (p 0.43 / 0.16) nor no.70's alphabet (p 0.078 / 0.26).
+- **Next: no.45** (fr.3995 f.84, "Camp Provin", August 1592 -- the month of f.25), whose instructions put nulls "1" and "0"
+  inside two-figure codes; f.25 is rich in 1s. BNF-Q7-TAB transcribes no.45 and no.47 (Italian, 1592); the screen then
+  needs an intercalary-null mode before it runs on no.45.
+- Spend 13 Oct, this lane: 10.24 (to wave 24) + 3.15 + 1.56 + 3.59 = 18.54 of 40.
