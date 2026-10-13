@@ -1,0 +1,9 @@
+line	col	A	B	flagged	crop	both_conf
+L01	7	T32	T32	B		A:H/B:M
+L01	15	T19	T19	B		A:H/B:M
+L02	4	T19	T19	B		A:H/B:M
+L02	27	T19	T19	B		A:H/B:M
+L07	6	T19	T19	B		A:H/B:M
+L09	12	T19	T19	B		A:H/B:M
+L09	15	T19	T19	B		A:H/B:M
+L11	24	T19	T19	B		A:H/B:M

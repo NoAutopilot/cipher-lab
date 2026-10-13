@@ -1,0 +1,58 @@
+{
+ "f246r": {
+  "N": 26,
+  "letters": {
+   "GAP": 8,
+   "a": 3,
+   "c": 1,
+   "d": 1,
+   "e": 1,
+   "f": 1,
+   "p": 1,
+   "r": 1,
+   "s": 7,
+   "u": 2
+  },
+  "tokens_on_page": 859
+ },
+ "note": "descriptive; D1A-PIS power control 0/50 (pure cell ~0.43), so no gate; key86.tsv unchanged",
+ "pooled_8pages": {
+  "N": 94,
+  "count": 23,
+  "letters": {
+   "GAP": 26,
+   "a": 11,
+   "c": 1,
+   "d": 2,
+   "e": 1,
+   "f": 2,
+   "h": 1,
+   "n": 1,
+   "o": 2,
+   "p": 4,
+   "r": 11,
+   "s": 23,
+   "u": 8,
+   "y": 1
+  },
+  "share": 0.245,
+  "top": "s"
+ },
+ "seven_pages_committed": {
+  "N": 68,
+  "letters": {
+   "GAP": 18,
+   "a": 8,
+   "d": 1,
+   "f": 1,
+   "h": 1,
+   "n": 1,
+   "o": 2,
+   "p": 3,
+   "r": 10,
+   "s": 16,
+   "u": 6,
+   "y": 1
+  }
+ }
+}
