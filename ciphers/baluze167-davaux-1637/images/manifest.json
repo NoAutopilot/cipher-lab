@@ -8,6 +8,22 @@
    "sha1": "c5f2c086da847ac7b1338364451d1638e542e063",
    "credit": "Satoshi Tomokiyo, Cryptiana, louisxiii.htm section \"D'Avaux's Cipher (1637-1641) (DE=16')\": his reconstructed key table, reproduced for reference with credit; not our work",
    "note": "863x673 PNG: letters a-z with homophone signs; 1-98 syllables/words plain; 2-73 with double-dot mark (words); 1-99 with overbar (names); 1-63 names column. Fetched by RUN1-BAL, one request."
+  },
+  {
+   "file": "gplus/b170_c131_pct_73_52_5_27_5.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90015040/f131/pct:73,52.5,27,5/max/0/default.jpg",
+   "fetched": "2026-10-13 20:34 UTC",
+   "bytes": 114405,
+   "sha1": "ab4615ca1423254c76485a1c18e313679d8eb08a",
+   "note": "BAL167-GPLUS: Baluze 170 f.124r cipher line \"90 41 h 76 gt u4 4 y 51 31 16 43 gt\" with interlinear gloss \"consentent a une treue de longues\" (two g+ = gt forms)"
+  },
+  {
+   "file": "gplus/b170_c132_pct_15_32_5_20_5.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90015040/f132/pct:15,32.5,20,5/max/0/default.jpg",
+   "fetched": "2026-10-13 20:34 UTC",
+   "bytes": 76137,
+   "sha1": "635761a41aeed1800bef16eef35df0354e4948ab",
+   "note": "BAL167-GPLUS: Baluze 170 f.124v cipher line \"4 40 90 9 44 72 K gt 19 51\" with gloss \"a la conclusion de la\" (one g+ = gt form)"
   }
  ],
  "survey_images": "Gallica IIIF reduced views (450 px; 800 px for Baluze 170 openings) used for survey.tsv are not committed; re-fetch from https://gallica.bnf.fr/iiif/ark:/12148/<ark>/f<canvas>/full/450,/0/native.jpg using the canvas column of survey.tsv",

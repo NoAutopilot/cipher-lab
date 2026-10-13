@@ -1500,3 +1500,56 @@ transcribed by two blind passes (err_2reader 0.280), letter signs unlabelled.
 - [x] retry: f.228 re-cut, re-passed, decoded and re-decoded (D1-BAL170, D1-BAL170B, B167-228, SIG-B228, SIG-B228B), grade correction applied (SIG-V228), shape control run (BAL-CROP, BAL-WL, BAL167-GHV)
 Verdict: keep going: 3 internal gaps; cheapest next: a verifier re-audit of the BAL167-GHV regrade (~$3); the g+ census of the remaining glossed leaves (~$2.5); the 168 f.246 step once L71 answers
 
+
+## BAL167-GPLUS (13 Oct 2026, account 2, for LANE DEFAULT-A2-2013), 20:30-20:4x UTC by date -u
+Brief: `.claude/briefs/runs/2026-10-13-ytbiz-default-2013-jobs.md` "BAL167-GPLUS" (g+ census of the remaining glossed leaves at 1000 px; stop at
+the first clean glossed g+; no transcription).
+Prior work (pasted): `python3 tools/prior_work.py baluze167-davaux-1637 --item-spec 'shelfmark=BnF Baluze 170;folio=228r;date=1640-08-25;sender=Chavigny;recipient=Avaux' --step-type crop --offline`
+-> `holds: specific 17 (DONE 1, LEAD 16); generic 2 (UNCHECKED-NET 2)`, `exit 3: the step is DONE`. The DONE row is the f.228 cropping
+(BAL-CROP/BAL167-GHV), not this census: by hand, (1) own work: BAL167-GHV looked at 5 glossed leaves (f.233r, 239r, 258r, 301r, 320v-321r)
+and none of the ones below; (2) leaf: survey.tsv glossed Baluze 170 rows; (3) solver caches: CLEAR (BAL-WL); (4) editions: unchanged (UNA3-BAL).
+Not `--record`ed (prior-work.tsv left as it was).
+**Form looked for.** g+ on f.228v (sig_tiles.py tiles v_b_L01/L03/L05, region f240 850,3560,3200,1340 on disk) is a g with a crossed-t stroke
+after it, written like "gt". A crossed y (y+) and the bare g are different signs.
+**Census.** openapi.bnf.fr, 8 requests, all 200 (take/release lines in ROOM.md): 4 openings at 2000 px wide (about 1000 px a page; not
+committed, re-fetch `https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90015040/f{70,131,132,137}/full/2000,/0/default.jpg`), and 4 native
+regions, of which 2 were mis-aimed by one line (deleted, not cited) and 2 are committed (images/gplus/, manifest.json entries).
+| Leaf (survey row) | Canvas | Viewed | Glossed cipher seen | g+ ("gt") with gloss over it |
+|---|---|---|---|---|
+| f.63 (row 170/63) | 70 (f.63v-64r) | 2000 px opening | yes, f.64r: 6 short runs, all glossed | none seen |
+| f.124r (row 170/124) | 131 | 2000 px + native region | yes, about 8 lines, glossed | **yes, 2 tokens**, one line |
+| f.124v-125r | 132 | 2000 px + native region | yes, f.124v 6 lines and f.125r 2 lines, glossed | **yes, 1 token** on f.124v, line 5 after "72 K" |
+| f.130 (row 170/130) | 137 | fetched, not viewed | -- | not viewed (the census stopped at the f.124 hit, per brief) |
+| ff.138, 145, 273, 322 and the 167-169 glossed letters | -- | not fetched | -- | not looked at (census stopped) |
+**Hit (clean).** Baluze 170 f.124r, canvas 131, the 9th text line of the letter (first cipher line of the "consentent" passage), crop
+`images/gplus/b170_c131_pct_73_52_5_27_5.jpg` (region pct:73,52.5,27,5 at max): cipher, as seen at native size, "90' 41' h 76 gt u4 4 y 51 31'
+16' 43 gt", gloss above "consentent a une treue de longues". The line-final "gt" sits under the end of "longues" (the gloss's last letters
+"es"/"s" above it, by position only); the first "gt" (after 76) sits under the end of "consentent" ("nt"/"t," above it, by position only).
+Second instance: f.124v, canvas 132, cipher line "4 40' 90' 9 44' 72' K gt 19' 51'" under "a la conclusion de la"
+(`images/gplus/b170_c132_pct_15_32_5_20_5.jpg`); the "gt" sits under about "(conclusi)on" / "de". Which gloss letters belong to which sign is
+NOT settled here: the gloss is written as words over runs, the positions above are by eye, and the f.228 value (n, Tomokiyo channel, M) is
+neither confirmed nor contradicted by this job. g+ stays M on f.228.
+Where not found: no g+ seen on f.64r (c70). Not looked at: f.130 (c137 fetched, not viewed), ff.138, 145, 273, 322, and Baluze 167-169.
+Record fix: the gap "170 f.228r-v BAL167-GHV regrade re-audit - not-attempted" was stale -- V-GHV audited the regrade on 13 Oct 2026
+(AUDIT.md "## AUDIT 5 f.228 (V-GHV)"); dropped from the list below as done.
+Network: openapi.bnf.fr 8. Subagents: none (this worker's own eye at the census views).
+
+## Remaining gaps (BAL167-GPLUS, 13 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 170 f.229r-v: N3, D2 (AUD1-B167). 170 f.228r-v: N3, D2 at about 56% (V-BAL167);
+H 56, S 39, M 31, I 27, U 1 of 154 after BAL167-GHV, regrade audited by V-GHV (AUDIT 5). 168 f.246-247v: transcribed by two blind passes
+(err_2reader 0.280), letter signs unlabelled.
+- 168 f.246-247v bare passage - blocker: waiting-on LOCAL-QUEUE L71 (owner's browser: does the Papiers de Richelieu item print the cipher passage in clear); next if it does: align the printed text to the two-pass transcription with tools/interlinear_align.py (known plaintext for the f.247 hand), ~$3; if not: the f.247-hand glossed-text search (survey.tsv's d'Avaux-side leaves), ~$3
+- 170 f.228r-v g+ class (3 tokens, n, M) - blocker: not-attempted; glossed g+ ("gt") found on 170 f.124r (2 tokens) and f.124v (1 token), crops in images/gplus (BAL167-GPLUS); next: the verification read (BAL167-GHV method: two blind gloss reads of the f.124 strips, then tiles with an f.124 g+ exemplar and within-key look-alike negatives, PREREG first), ~$3
+- 170 f.228-229 novelty (N3 -> N4) - blocker: waiting-on LOCAL-QUEUE L71 and SO-BAL170-F228 (SECOND-OPINIONS-QUEUE.tsv); the edition's notes are snippet-only from the cloud and a second opinion is owed before N4
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census (N9-BAL found unlisted f.110r); next: full-volume sweep of 167-171 at 300 px for cipher runs on unlisted leaves, ~$3
+
+## Escalation (13 Oct 2026, BAL167-GPLUS)
+- [x] siblings: davaux-1633 and DECODE records 2756-2762 checked (Siblings section above)
+- [x] clear-pages: leaf survey done; 170 f.230r is the clear close of the f.228 letter (D1-BAL170)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.229 letter values carried to f.228
+- [ ] print: Avenel, Négociations secrètes, Guébriant, Bougeant, Mercure, Siri, IA, Google Books (UNA3-BAL), OpenAlex, CrossRef done; untried: the Papiers de Richelieu 1636-1642 volume by page (L71)
+- [x] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); shape control with a same-key wrong-label negative PASSED (BAL-WL, 31 M -> S); hook/v with a within-key look-alike negative PASSED on read 2 (BAL167-GHV, 8 M -> S; audited V-GHV, AUDIT 5)
+- [ ] image-check: glossed Baluze 170 crops f.233r/f.239r/f.258r on disk (BAL-CROP); f.301r, f.320v-321r (BAL167-GHV); f.64r, f.124r-v (BAL167-GPLUS, glossed g+ found on f.124); untried: the g+ verification read on the f.124 crops
+- [x] retry: f.228 re-cut, re-passed, decoded and re-decoded (D1-BAL170, D1-BAL170B, B167-228, SIG-B228, SIG-B228B), grade correction applied (SIG-V228), shape control run (BAL-CROP, BAL-WL, BAL167-GHV)
+Verdict: keep going: 2 internal gaps; cheapest next: the g+ verification read on the f.124r/f.124v crops (~$3); then the volume sweep (~$3); the 168 f.246 step once L71 answers
