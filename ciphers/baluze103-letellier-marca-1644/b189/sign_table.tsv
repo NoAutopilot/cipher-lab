@@ -1,0 +1,56 @@
+sign	key_value	n_rec	aligned_rec	class_rec	perm_share_ge_rec	n_A	aligned_A	class_A	n_B	aligned_B	class_B
+u	e	45	eeeeeeeeee-eeeeeeeeeeelueyeepeepeeeeeeeeeeeep	confirmed	0.005	44	eeeeeeeeee-eeeeeeeeeel-eyeepeepeeeeeeeeeeeep	confirmed	39	eeeeeeeeeeeeeeeeeeeeueeeeeeeeeueeeeeeee	confirmed
+=11	que	27	qu-queque--cquequequequeque	undecided		27	qu-queque--cquequequequeque	undecided	27	qu-queque--cquequequequeque	undecided
+=26	vous	24	uousuousuousuous---suous	undecided		24	uousuousuousuous---suous	undecided	24	uousuousuousuous---suous	undecided
+6	t	19	t-plttlltulltldttlt	undecided	0.085	19	t-llttlltulltldttlt	undecided	19	t-plttlatulltldttlt	undecided
+=32	Barcelone	18	barcelonebarcelone	undecided		18	barcelonebarcelone	undecided	18	barcelonebarcelone	undecided
+theta	e	18	eeeeeeeeeeeeeleeee	confirmed	0.010	18	eeeeeeeeeeeeeleeee	confirmed	18	eeeeeeeeeeeeeeeeee	confirmed
+9	i|r|s	17	rsrlsssrss-t--ssr	confirmed		14	rsrsssrss-tssr	confirmed	18	rsrusssrss-s--iasr	confirmed
+=9	pour	16	pourpourpourpour	undecided		16	pourpourpourpour	undecided	16	pourpourpourpour	undecided
+=n+o	Roine?	15	reynereynereyne	undecided		0			0		
+a	n	15	-nnnulnn-n-nnnn	confirmed	0.010	15	-nnnulnn-n-nnnn	confirmed	15	-nnnulnnen-nnnn	confirmed
+hz	l	12	-tadtlttzttt	undecided	0.670	12	-tsutlttzttt	undecided	13	ttadltltttttt	undecided
+z	r	12	rrrsrrronrrr	confirmed	0.000	12	rrrsrrrrnrrr	confirmed	10	rrrrrroirr	confirmed
+delta	o	11	oooonooooon	confirmed	0.000	11	oooonooooon	confirmed	12	oonoonooonon	confirmed
+mt	i	11	iissiusisii	undecided	0.035	11	iissiusisii	undecided	0		
+bt	e	10	eeeeeeeeee	confirmed	0.005	10	eeeeeeeeee	confirmed	10	emeeeeeuee	confirmed
+10	a	9	aaaaaaaaa	confirmed	0.000	9	aaaaaaaaa	confirmed	9	aaaauaaaa	confirmed
+xc	f	9	amc-ccccc	undecided	1.000	9	amo-ccccc	undecided	6	acc-cc	undecided
+7	s	8	ssssssss	confirmed	0.010	8	ssssssss	confirmed	8	ssssssss	confirmed
+rho	i	8	iiiiisii	confirmed	0.000	7	iiiisii	confirmed	7	iiiiiii	confirmed
+14	e	7	eteeeee	confirmed	0.020	7	eteeeee	confirmed	7	eeeeeee	confirmed
+8	s	7	essssss	confirmed	0.065	7	sssssss	confirmed	7	pssssss	confirmed
+ct	a	7	aaaaaaa	confirmed	0.010	7	aaaaaaa	confirmed	7	aaaaaaa	confirmed
+f	r	7	rrrrrrr	confirmed	0.000	7	rrrrrrr	confirmed	7	rrrrrrr	confirmed
+t	d	7	ddddddd	confirmed	0.000	7	ddddddd	confirmed	7	ddddddd	confirmed
+y	g	7	gbgbnnn	undecided	0.375	7	gugbnnn	undecided	9	gnbgbnnnn	undecided
+19	l	5	lllll	confirmed	0.010	5	lllll	confirmed	4	llll	confirmed
+dt	r	5	rnrnr	undecided	0.155	5	rnrnr	undecided	3	rrr	confirmed
+H	o	4	oood	confirmed	0.110	0			4	oooy	confirmed
+c	p	4	pppp	confirmed	0.000	4	pppp	confirmed	4	pppp	confirmed
+eps	o	4	op-o	undecided	0.210	3	ooo	confirmed	4	opoo	confirmed
+gz	t	4	suey	undecided	1.000	0			4	suey	undecided
+x	c	4	flef	undecided	1.000	3	fef	undecided	5	flefc	undecided
+12	c	3	ccc	confirmed	0.040	3	ccc	confirmed	3	ccc	confirmed
+13	d	3	ddd	confirmed	0.025	3	ddd	confirmed	3	ddd	confirmed
+20	m	3	mmm	confirmed	0.035	3	mmm	confirmed	3	mmm	confirmed
+22	o	3	ooo	confirmed	0.020	3	ooo	confirmed	3	ooo	confirmed
+7s	n	3	nss	undecided	0.390	3	nss	undecided	0		
+=12	qui	3	qui	undecided		3	qui	undecided	3	qui	undecided
+P	s	3	rzl	undecided	1.000	3	-ze	undecided	6	trzszl	undecided
+b	m	3	mmu	confirmed	0.120	3	mmu	confirmed	2	mu	undecided
+xs	d	3	ddd	confirmed	0.090	7	douddod	undecided	7	-daddcc	undecided
+18	i	2	ii	confirmed	0.020	2	ii	confirmed	2	ii	confirmed
+23	p	2	pp	confirmed	0.075	2	pp	confirmed	2	pp	confirmed
+mm	p	2	pu	undecided	0.350	2	pu	undecided	5	ppplp	confirmed
+venus	b	2	ib	undecided	0.420	2	ib	undecided	2	ib	undecided
+xbar	c	2	cc	confirmed	0.050	2	cc	confirmed	2	cc	confirmed
+17	h	1	h	too-few	0.145	1	h	too-few	1	h	too-few
+21	n	1	n	too-few	0.135	1	n	too-few	1	n	too-few
+3	h|x	1	t	too-few		1	t	too-few	0		
+o7	m	1	m	too-few	0.210	1	m	too-few	1	m	too-few
+q2	l	1	l	too-few	0.225	1	l	too-few	11	iislsssusls	undecided
+sigma	l	1	f	too-few	1.000	7	-luuuuf	undecided	1	f	too-few
+cap	h	0				0			4	idii	contradicted:i
+lb	a	0				0			1	m	too-few
+n	y	0				0			1	y	too-few

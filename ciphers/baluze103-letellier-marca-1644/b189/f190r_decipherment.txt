@@ -1,0 +1,23 @@
+# BAL103-189: f.190r period decipherment (Baluze 103, openapi canvas 404), read once by eye from b189/images/f190r_dec_part1-2.jpg,
+# 13 Oct 2026, AFTER both blind passes and the reconciliation were committed (69a1bcbd3). Struck words omitted ("Et" after principat,
+# "lle" before acompagne, "Monsieur le Tellier" replaced by interlinear "pour", "le Chancelier de Catalogne" replaced by interlinear
+# "qui", a struck word before "deux"); interlinear insertions taken in. Uncertain: "pourrez" (a letter struck inside), "desuoyes"
+# read "des voyes", "tache" read "tasche", "seruiez". Lines through "depuis" (= end of f.189r L21) then the rest as alignment slack.
+La despesche que je vous adresse pour le principat et
+le memoire que acompagne ont este commendes par la Reyne
+pour destromper les peuples des mauuaises
+impressions que on a tasche de leur donner sur le subiect du passag
+e des recreues et du renfort destine pour le secours de Lerida
+Sa majeste desire que vous rendiez lun et lautre le plus public
+que vous pourrez que vous seruiez pour cela des voyes
+que vous estimerez les plus conuenables
+Je vous ay cy deuant faict scauoir les plaintes que les
+conseillers de la ville de Barcelone ont faict a la Reyne
+de ce que on ouure tous les paquetz qui sont enuoyes
+de la ville de Barcelone en France
+comme aussy qui uiennent de France
+dans Catalogne ceux du pays ont reitere
+encores cette plainte a la Reyne depuis
+deux iours je vous prie de me
+faire scauoir ce qui en est affin que ien
+puisse rendre comte a la Reyne
