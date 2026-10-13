@@ -1,0 +1,95 @@
+unit	word	first	last	conf	note
+c20U01	Je	0	0	H	Je sits directly over 6
+c20U01	parle	1	2	M	parle over 25; zz just past its end
+c20U01	des	3	3	H	des over 11
+c20U01	Suedois	4	5	M	over 83 and v; 44 slightly right of word end
+c20U02	si	0	0	H	si at line start over 42
+c20U02	enyvrez	1	3	M	spans e, gt, m; m under final z
+c20U02	de	4	5	M	d under de; 36 sits under the flourish tail
+c20U02	leur	6	6	M	over th
+c20U02	bonne	7	8	H	over 83, 56
+c20U02	fortune	9	10	H	over 43, 21
+c20U02	quilz	11	12	M	over 9o and y
+c20U03	pour	0	0	M	pour over 63
+c20U03	les	1	1	L	les sits between 63 and 68, nearer 63 end
+c20U03	Dannois	2	2	H	Dannois left of line over 32
+c20U04	pas	0	0	H	over 25
+c20U04	plus	1	1	M	over v
+c20U04	traitables	2	4	M	long word over m°, 14, h'
+c20U05a	si	0	0	H	si over 42 at line start
+c20U05b	leur	0	0	M	over 56
+c20U05b	place	1	2	M	over 99; d just beyond end of word
+c20U05b	ilz	3	3	M	over c'
+c20U05b	sont	4	4	M	over th
+c20U05b	si	5	5	M	over 43
+c20U05b	abatuz	6	7	M	over gt, ll; 42 just right of word end
+c20U06	que	0	0	H	over 31
+c20U06	son	1	2	M	over 6 and h
+c20U07	de	0	0	H	over 83
+c20U07	cette	1	1	M	over 46
+c20U07	part	2	3	L	25 sits in gap before the word; y under its end
+c20U07	la	4	4	M	over cn
+c20U07	que	5	5	M	over 10
+c20U07	le	6	6	M	over 31
+c20U07	traitte	7	8	M	over 11, 70
+c20U07	se	9	9	M	over 41
+c20U07	rompra	10	11	M	over 38, m+
+c20U08	que	0	0	H	over 31
+c20U08	lon	1	1	M	over 13
+c20U08	les	2	3	M	over h, 11
+c20U08	accule	6	7	M	over q, 81; v and y fall in gap and a curl flourish
+c20U09	sil	0	0	H	over 42
+c20U09	fault	1	2	M	over y-sign and 87
+c20U09	perir	3	3	M	over &
+c20U10	par	0	0	M	first par over 25
+c20U10	les	1	1	M	over zz
+c20U10	armes	2	3	M	over 11, h
+c20U10	que	4	4	M	over g
+c20U10	par	5	5	M	second par over zz
+c20U10	un	6	7	L	short word between 16 and v
+c20U10	accommodement	8	12	M	long word over 31, 25, y, d, gt; 78 right of its end
+c20U11	sera	0	1	M	35 near the word end
+c20U11	pas	2	2	M	over 25
+c20U11	honteux	3	4	M	over v, 100; h beyond its end
+c21U01	au	0	0	M	over the y with the double stroke
+c21U01	moins	1	2	M	over d and 18
+c21U01	ce	3	3	L	small word just right of the d, left of h'
+c21U01	petit	4	5	M	over h' and v
+c21U01	soulagement	6	9	M	starts over 78, runs over 26, 47 and cn across the s1/s2 overlap
+c21U01	quilz	10	11	M	over 43 and d
+c21U01	en	12	12	M	over the dotted 10
+c21U01	coustera	13	14	M	over 93 and 58
+c21U01	a	15	15	M	short word over 32
+c21U01	leur	16	17	M	over the underlined 7 and w'
+c21U02a	ennemy	1	1	L	starts at the h' flourish; mostly sits over the following 46 (not in unit)
+c21U02b	nen	0	0	M	over 21
+c21U02b	viendra	1	2	M	over gt and 52
+c21U02b	pas	3	3	M	over w, ends before L
+c21U03	a	0	0	M	over 5
+c21U03	bout	1	1	M	over 75
+c21U03	si	3	3	L	sits between d and ll, nearer ll
+c21U04	sortir	1	2	M	over 47 and zz; the 6 only has a flourish below it
+c21U04	aultrement	3	5	H	over y, d and cn
+c21U04	de	6	6	M	over 36
+c21U04	se	7	7	L	between 36 and 58, small word
+c21U04	reserrer	8	9	M	over 83 and 41; its start touches 58
+c21U04	dans	10	10	M	ends in the overlap, over the first 36
+c21U04	leurs	11	12	M	over 41 and zz
+c21U04	isles	13	14	M	over the second 36 and y
+c21U05	et	0	0	H	over w'
+c21U05	les	1	1	M	over ll
+c21U05	deffendre	2	3	M	over 11 and h'; its tail reaches the left edge of 83
+c21U05	de	5	5	M	over m
+c21U05	boucher	6	6	M	over 88; its end is near h
+c21U06	le	0	0	H	over 11
+c21U06	passage	1	2	M	over 25 and h'
+c21U06	du	3	3	M	over 40
+c21U06	Sund	4	5	M	big Z-shaped word over 93 and 86
+c21U06	et	7	7	H	small word directly over K
+c21U06	laisser	11	12	M	over ll and 10
+c21U06	sans	13	14	L	over the right tail of h' and f
+c21U07	combatre	0	2	M	over 80, m+ and 72
+c21U07	consommer	3	5	M	over ll, 36 and 80
+c21U07	leurs	6	6	M	over h'
+c21U07	d.	7	7	M	over 43
+c21U07	ennemis	8	9	M	over m+ and 16

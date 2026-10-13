@@ -1,0 +1,11 @@
+pool m=44 (codes N>=2 on c20-21, not C): & 10 11 16 21 25 26 32 35 36 40 41 42 43 46 47 49 5 56 58 6 72 75 78 80 93 L c' cn d f g gt h h' ll m m+ q th v w' y zz
+alpha = 0.05/44 = 0.00114; comparison 0.05/3 = 0.01667 (not gating)
+STAGE 0 (idealised pairing bound)
+code	value	N	H_ideal	P_min	verdict
+83	de	6	6	0.00008	positive-control	(p_i 0.25 0.14 0.11 0.12 0.40 0.40)
+31	que	4	4	0.00198	positive-control	(p_i 0.50 0.11 0.25 0.14)
+42	si	4	4	0.00794	NON-TEST	(p_i 0.14 1.00 0.17 0.33)
+11	le	8	6	0.00003	live	(p_i 0.00 0.00 0.11 0.25 0.25 0.14 0.20 0.14)
+6	ie	4	1	0.25000	NON-TEST	(p_i 0.25 0.00 0.00 0.00)
+STAGE 0 VERDICT: live codes ['11']
+INSTRUMENT 83 de + 31 que: N 8 H 3 ctrl mean 1.65 p95 4 max 6 P 0.2093 -> NON-TEST

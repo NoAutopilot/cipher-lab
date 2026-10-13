@@ -48,3 +48,12 @@ alpha 0.05/44 (selection-corrected). Control W = gloss words permuted over word 
 | 42 | si | stage 0: 31 que at N 4 best-case P_min 0.0020 | best-case P_min 0.0079 (N 4) | NON-TEST (underpowered at N 4) |
 | 6 | je | as above | best case 1/4, P_min 0.25 | NON-TEST |
 | 11 | le | instrument 3/9 vs p95 4, P 0.261 (FAIL) | not scored | NON-TEST (instrument) |
+
+## COL26-11B, 13 Oct 2026: canvas 20-21 11 = le, second blind word-pairing pass
+
+PREREG-COL26-11B.md (pushed 28c1312e0 before pass 2); instrument interlinear/c20c21_word_wp.py unchanged; wrapper
+interlinear/c20c21_word_wp_pool.py; outputs interlinear/c20c21_word_wp_pool_out.txt, interlinear/c20c21_word_wp_p2_out.txt.
+
+| hypothesis | control | target | verdict |
+|---|---|---|---|
+| 11 = le (word-level pairing, pooled two passes) | instrument 83 de + 31 que: H 3/8 vs Control W mean 1.60, p95 3, P 0.191 | not scored | NON-TEST; untested-by-this-tool (second attempt, readers agree 0.862 exact) |
