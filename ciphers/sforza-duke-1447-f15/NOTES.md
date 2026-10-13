@@ -82,7 +82,7 @@ Built: `sh ciphers/sforza-duke-1447-f15/sorter/build.sh OUTDIR` (sorter/README.m
 lines (f.5 L01-L15, f.8 L01-L16), 40 starting shape piles (machine clusters on the images alone, `shape-NN`, default blind mode: no key,
 value or reader label on the page), 40 focus tiles. Tool preflight (inside sign_sorter.py): PASS -- template, answerable 40/40, right line
 0 off-list, shape 13 of 2,325 (0.6%) ink outside 3-60% after a 2 px box margin (191 without it), contact sheet, colour (cvd_check) PASS.
-Full `tools/sorter_preflight.py PAGE` (gestures, pan) result in the done line. Not committed: the page, its JSON, tiles, pages/, debug/,
+Full preflight, run separately: `--gestures` PASS (228 checks, 11 skipped, iPhone 13, iPhone SE, mouse; 7 min), `--pan` PASS (4 checks). Contact sheet eyed: single signs in most tiles, a few over-split parts (a superscript, half a sign) for the re-cut tool. Not committed: the page, its JSON, tiles, pages/, debug/,
 region.jpg (sorter/.gitignore); no image file enters git. Tiles are 1.32x reader A's 1,761 tokens (over-split on purpose; some cursive joins
 such as the p-a-r and g-# runs stay joined: the page's re-cut tool and BAD-CUT handle both). Key family not registered in
 tools/data/sorter_families.tsv: sign_sorter.py consults it only for --show-values, not for a blind build.
