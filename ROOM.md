@@ -15178,3 +15178,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 08:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 08:10 UTC: spawned 0 (), queued left 0
 2026-10-13 08:11 | SYL-31 worker (Opus) | claim (07:58 UTC 13 Oct by date -u) for LANE DEFAULT-A2-0710 (account 2): fr15575-syllabic-1592-95 key no.31 (fr.3995 f.62r, canvas f126) 2 blind passes + reconcile, then f.2 3-digit overlap vs prereg null; cap USD 6, box 07:58-09:38 UTC (80% line 09:18), openapi.bnf.fr <= 10
 2026-10-13 08:11 | SYL-31 worker (Opus) | openapi.bnf.fr take for LANE DEFAULT-A2-0710 (account 2): btv1b525085665 f126 info.json, 1 overview, <= 2 native regions
+2026-10-13 08:13 | SYL-31 worker (Opus) | openapi.bnf.fr release for LANE DEFAULT-A2-0710 (account 2): 3 requests all 200 (f126 info.json 4043x6157, 1600 px overview, native region 1250,1700,2750,4457)
