@@ -3609,7 +3609,7 @@ Read so far: unmeasured; no reading of the cipher exists, the folder's families 
 - [x] retry: DSN irregular at 96 restarts on the SALV-F56V split (SALV-DSN, 11 Oct): control 0.844 at err 0.064, 0.733 at 0.10, 0.541 at 0.146; target judge FAIL -- control-backed up to 10%, non-test at 14.6%
 Verdict: keep going: 1 internal gap; cheapest next: f57v's plain boxes once Gallica answers (regen_images.sh, two blind passes in halves + reconciliation, ~$7)
 
-## SALV-57V: plain-Italian boxes, f.57v (13 Oct 2026, 21:46-22:0x UTC by date -u; LANE DEFAULT-A4-2135, account 4)
+## SALV-57V: plain-Italian boxes, f.57v (13 Oct 2026, 21:46-21:55 UTC by date -u; LANE DEFAULT-A4-2135, account 4)
 Worker SALV-57V (Opus), brief `.claude/briefs/runs/2026-10-13-acct4-default-2135-jobs.md` "### SALV-57V". SALV-PLAIN3's
 protocol, unchanged except that each pass ran in two halves (lines 1-16, 101 boxes; lines 17-20, 71 boxes): two blind
 Sonnet passes per half (four calls; pass B read its lines in reverse order), then one Sonnet reconciliation call that got
