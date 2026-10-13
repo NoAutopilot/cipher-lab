@@ -833,7 +833,7 @@ Read so far: f.228 L01-L08 of ~47 lines (289 tokens: H 158, M 26, U 105); L01-L0
 - [x] retry: L01-L04 gloss retried under an addendum and PASSed (N8-NV05)
 Verdict: keep going: 6 internal gaps; cheapest next: the Estado 609 fol.86 desk row (owner minutes, row staged in D4-SYL54); then a person's read of the f.2 gloss crops and the unchanged prereg re-run (~$2); then the no.54 nomenclator (~$6)
 
-## SYL-NOM: key no.54 nomenclator (account-2 worker for LANE DEFAULT-A2-0710, 13 Oct 2026 07:20-07:4x UTC by date -u)
+## SYL-NOM: key no.54 nomenclator (account-2 worker for LANE DEFAULT-A2-0710, 13 Oct 2026 07:20-07:38 UTC by date -u)
 
 Job: the "key nomenclator" gap (D4-15576 list) and Escalation "[ ] known-keys": transcribe the nomenclator of BnF fr.3995 no.54
 (f.96v-97r, canvas f188) with two blind passes and a reconciliation, then count whether fr.15576 f.2's codes fit its range and format.
