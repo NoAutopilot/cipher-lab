@@ -52,5 +52,23 @@
    ],
    "survey": "36 canvases at 450 px + c234, c499 at 1200 px; list in n9bal/glossed_candidates.tsv header; re-fetch from .../f<canvas>/full/450,/0/native.jpg"
   }
+ ],
+ "bal169sweep_fetches": [
+  {
+   "by": "BAL169-SWEEP",
+   "date": "2026-10-13 22:16-22:39 UTC",
+   "files": [
+    {
+     "canvas": 48,
+     "folio": "22r",
+     "path": "images/b169sweep/c048_f22r_1000.jpg",
+     "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f48/full/1000,/0/default.jpg",
+     "size": "1000x1439",
+     "bytes": 211341,
+     "sha1": "41b73a33ae0a60553b9c118add4028da78bb1056"
+    }
+   ],
+   "not_committed_note": "Baluze 169 canvases 1-280 at 300, and 1000, looks at c52, c79, c109, c177, c224, c231 kept in scratch only; re-fetch from https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f<canvas>/full/300,/0/default.jpg"
+  }
  ]
 }
