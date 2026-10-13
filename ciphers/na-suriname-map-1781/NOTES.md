@@ -4090,7 +4090,7 @@ Closed and kept from the 1 Oct list: key-source search (R9-SURKEY, 6 Oct: no fur
 - [x] key-rebuild: the planned glyph-token interlinear_align step (1 Oct) is superseded by the period keys (GAPS13/14); value work since then ran as pre-registered DP alignment on the inv. 373 glosses (R14-SURDP/SURDP2, 6 Oct) and alias passes (R15-SURALIAS, R15-SURV2); the open class questions are under retry and the inv. 373/372 gaps.
 - [ ] image-check: done: van-vs-PAN (2 Oct), 2061 native crops (GAPS8), GAPS12/15/16/21 sign calls, GAPS37 same-hand g|l (41 settled), GAPS55 dots, R11-SURY/R11-SURTV, SUR-IJ. [retired] for their tokens: context-tile blind look for 2077 L08:51/L10:30 g|l and [sigma] (R8-SUR3), g|l blind call against sheet tiles (GAPS29), single-word re-read of з/Signatuure (RD03C, RD03D; moved to gap 2007A). done 12 Oct: 2046 unkeyed-sign call (SUR-2046, 16/31 U -> M); 13 Oct verifier re-call (V-SUR2046): 9 back to U, 1 confirmed, 6 held M unconfirmed; not re-run for [d-hook] and [3-breve]: two blind calls against the same sheet tiles gave two different values; the next instrument is the gap-2046 alignment, not a third call. 13 Oct: 2039 Remarque K/O/&/[J-rev] sheet-tile call (SUR-2039R, PREREG 691b7d363): controls 13/20, below gate, non-test; not re-run as a sheet-tile call (this hand's o, r, 7, 8 controls missed or went unsettled, so the instrument is the limit at this crop scale); next instrument is the context test under gap 2039. 13 Oct: that context test (SUR-CTX, nl18 vocabulary) failed its own known-answer power check (0/39 licensed), non-test; not re-run with a general-corpus vocabulary; next instrument a period Remarque crib (gap 2007A). Done 13 Oct (SUR-LEGK): 2039 legend k pos 1-2/5 two-pass blind re-read, both passes agree (one [ij] sign; [delta-small]). Planned, untried: legend k pos 6 7-vs-r look (~$1).
 - [ ] retry: nl18 judge non-test at the legends' M+U rate (NL18-CORPUS); rate-matched gate PASS on 2077 (GAPS22), half-M sensitivity FAIL; [y-fam] m|n SPLIT pooled at 88 lines NO SPLIT SHOWN, partial split underpowered (SUR-POOLPC, SUR-KB, SUR-PARTIAL, SUR-0745R); SUR-MRICH: line choice from on-disk glosses cannot reach power, volume can. Planned: key-blind statistic at 88 lines (~$2 CPU); the inv. 372 transcription campaign (~$40-60) is the orchestrator's decision.
-Verdict: keep going: 7 internal gaps; cheapest next: [SUR-LEGK, 13 Oct: legend k pos 1-2/5 re-read done, both blind passes agree; pos 6 now split 7|r] the legend k pos 6 7-vs-r look, ~$1, the 2039 Remarque K/O/&/[J-rev] context test against a 2007B plain-Remarque crib, ~$3 (SUR-2039R and SUR-CTX, 13 Oct: the sheet-tile call and the nl18 context test were both non-tests -- controls 13/20; power check 0/39), or the 2046 [d-hook] = e wider-vocabulary anchor test, ~$2 (SUR-ALIGN, 13 Oct: the crib_2042 alignment PASSed at word level but moved no token)
+Verdict: keep going: 7 internal gaps; cheapest next: [SUR-LEGK, 13 Oct: legend k pos 1-2/5 re-read done, both blind passes agree; pos 6 now split 7|r] [SUR-POS6, 13 Oct: the pos 6 sheet-tile look ran as pre-registered, NON-TEST -- the 7 control matched (M) but the r control came back unsure (L), so the target's 7 match (M) does not count; pos 6 stays r M; next for it: a same-hand look, target vs ~6 settled 2039-legend r and ~6 settled 7 tiles, no sheet tiles, ~$1.5] the legend k pos 6 same-hand look, ~$1.5, the 2039 Remarque K/O/&/[J-rev] context test against a 2007B plain-Remarque crib, ~$3 (SUR-2039R and SUR-CTX, 13 Oct: the sheet-tile call and the nl18 context test were both non-tests -- controls 13/20; power check 0/39), or the 2046 [d-hook] = e wider-vocabulary anchor test, ~$2 (SUR-ALIGN, 13 Oct: the crib_2042 alignment PASSed at word level but moved no token)
 
 ## V-SUR2046 (13 Oct 2026, account 2, Opus verifier for LANE DEFAULT-A2-0710; 07:21-07:3x UTC by date -u)
 Verifier of SUR-2046; full record in AUDIT.md "## V-SUR2046". Prior work: `tools/prior_work.py na-suriname-map-1781 --item-spec
@@ -4218,3 +4218,26 @@ a key file. Lead, not a reading: if pos 6 is 7 (= e) the string is s-n-e-d-e-r-e
 still needs pos 6 settled and its own pre-registered test. Where not found: no blind sheet-tile call was run (the values above are by
 shape name); the k entry was not compared with 2038/2042 cribs in this job. Cost not visible to this session (2 Sonnet calls).
 
+
+## SUR-POS6 (13 Oct 2026, account 1, Opus worker for LANE DEFAULT-A1-1840; 19:09-19:1x UTC by date -u)
+
+Job: 4.VEL 2039 legend k pos 6 (held r M; both SUR-LEGK blind shape passes read digit 7). Disk only, 0 network requests.
+Prior work: check 1 (own work) -- SUR-LEGK (this file, above) is the only earlier look at this token as a single sign; R14-SUR2039
+and R15-SURV read r inside the word; no sheet-tile call on this token before. Checks 2-4 (leaf/neighbours, caches, editions):
+as recorded for SUR-LEGK, unchanged in this hour; `tools/prior_work.py` not re-run (same ad-hoc sign-level unit SUR-LEGK
+recorded as exit 4 with generic rows). Crop step: no new iiif_lines.py crop; tiles cut by script from the on-disk native images
+(`passes/signcmp_surpos6/build_call.py`: sheet boxes R_E7 and R_Tr from passes/signcmp_sur2039r/blind_key.json; legend boxes
+k pos 6 850,752,876,785, l pos 3 (r, H) 1132,752,1156,785, m pos 11 (7, H) 1696,752,1713,782 in images/2039_legend_native.jpg,
+all on the SUR-LEGK line). PREREG-SUR-POS6.md pushed first (deae6ed9a). One blind Sonnet call (`brief.md`), labels shuffled
+(seed 20261013; refs X = sheet 7, Y = sheet r; Q1 = target, Q2 = 7 control, Q3 = r control), `result.tsv`:
+| query | truth | call |
+|---|---|---|
+| Q1 target k pos 6 | ? | X (sheet 7), M |
+| Q2 control m pos 11 | 7 | X (sheet 7), M -- right |
+| Q3 control l pos 3 | r | unsure, L ("top bar rises with a flick ... partly Y-like; 7 shape favours X") -- not right |
+Gate (PREREG): both controls right at H/M -> FAIL (r control unsure). NON-TEST: no token changed, pos 6 stays r M (split: SUR-LEGK
+passes 7, 7; GAPS5 passes and R15-SURV r; this call 7 at M, uncounted). The likely reason, descriptive only: in this map hand the
+settled r (l pos 3) has the same flat-bar-plus-diagonal outline as the 7, while the sheet's r is an arched form -- the period
+sheet's r tile is the wrong reference for this hand's r. `decode_key.py . --check` exit 0; grades unchanged (2039 legend Nieuw
+H 289 C 11 M 171 U 10). Nothing entered a key file. Where not found: no same-hand comparison (target vs several settled 2039 r
+and 7 tiles) was run; that is the named next step (~$1.5). Cost not visible to this session (1 Sonnet call).
