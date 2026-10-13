@@ -182,3 +182,15 @@ BAL170-SWEEP found 3-4 unlisted cipher letters in Baluze 170, so the next volume
 recorded, find it with tools/gallica_folio.py on openapi). First 280 canvases at most, leaving 20 requests for `1000,` looks at candidates.
 Units: ~10 sheets at ~0.35 + the fetch loop. Stop before a unit that would cross 80% of the cap. New rows in survey.tsv (existing cells
 untouched); `## BAL169-SWEEP` table; volumes gap line (fetch and rebase first: BAL170-FIN edits it too); gaps_check. No transcription.
+
+Wave 5 (ledgered + archived, 22:4x UTC): BAL170-FIN 2.94 D (Baluze 170 c1-340 done; f.89r, f.107r-v cipher + glossed; f.104r not cipher),
+GSEQ-SCORER 1.14 D (score_gplus.py reproduces score1.out), BAL169-SWEEP 4.45 D (169 f.21-24 incl. f.22r BARE, f.36-38 glossed; c281-535 left).
+
+## Wave 6 (22:4x UTC 13 Oct; last of the lane)
+
+### BAL169-FIN (Opus, cap 4.5, box 70 min, openapi.bnf.fr <= 270 at >= 3 s): baluze167-davaux-1637, Baluze 169 canvases 281-535
+Same method as `## BAL169-SWEEP` (300 px to the scratchpad, contact sheets of ~30, own eye, controls = listed cipher canvases in range seen,
+not blind), canvases 281-535, leaving <= 15 requests for `1000,` looks at candidates. Units: ~9 sheets at ~0.35 + fetch loop; stop before a
+unit that would cross 80% of the cap. New survey.tsv rows only (existing cells untouched); `## BAL169-FIN` table; volumes gap line (169 done;
+167, 168, 171 remain, ~5 each at this method); name the f.22r bare passage in the gap list if BAL169-SWEEP did not (next step: a period key
+application with key.tsv, ~$2-3); Verdict; gaps_check. No transcription.
