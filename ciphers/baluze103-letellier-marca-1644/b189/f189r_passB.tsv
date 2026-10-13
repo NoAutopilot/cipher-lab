@@ -1,0 +1,43 @@
+f189r_L01_s1	[la despesche que] q2 14 =26 10 t 9 u 9 7 theta
+f189r_L01_s2	[que] q2 14 =26 10 t 9 u 9 7 theta |>=9 =30
+f189r_L02_s1	bt 6 19 u 20 u o7 22 q2 z u =11 a 6 theta xs
+f189r_L02_s2	20 u o7 22 q2 z u =11 a 6 theta xs |>xc 12 delta b c ct y a
+f189r_L03_s1	u eps y hz 14 q2 hz u [commander] m 10 f
+f189r_L03_s2	14 q2 hz u [commander] m 10 f |>=n =o =9
+f189r_L04_s1	xs theta 7 P 9 delta lb c u z 6 u 9 8 =8 q2 t theta 9 bt 10
+f189r_L04_s2	lb c u z 6 u 9 8 =8 q2 t theta 9 bt 10 |>m 5 xs rho 7 u q2
+f189r_L05_s1	18 20 m dt u 9 8 venus H delta 9 =11 delta a ct hz gz
+f189r_L05_s2	u 9 8 venus H delta 9 =11 delta a ct hz gz |>xbar 17 theta [de]
+f189r_L06_s1	6 u m z [donner sur le] 8 5 y rho u xc 6 t
+f189r_L06_s2	[mer sur le] 8 5 y rho u xc 6 t |>m c 10 q2 ct y
+f189r_L07_s1	u 13 14 8 f u 12 z u hbar bt q2 theta hz gz m
+f189r_L07_s2	f u 12 z u hbar bt q2 theta hz gz m |>9 theta a x delta z 6
+f189r_L08_s1	[destiné] =9 6 u 9 u xc H m f 7 t theta 5 ?{small round o} [fa]
+f189r_L08_s2	u 9 u xc H m f 7 t theta 5 ?{small round o} |>[fama] hbar
+f189r_L09_s1	13 bt 9 rho dt theta =11 =26 z 14 delta xs cap u ?{round o} a
+f189r_L09_s2	=11 =26 z 14 delta xs cap u ?{round o} a |>m 21 u hz
+f189r_L10_s1	6 10 m 6 f u [le] mm 6 hbar 7 23 5 venus 19 18 xc
+f189r_L10_s2	[le] mm 6 hbar 7 23 5 venus 19 18 xc |>=11 =11 =26
+f189r_L11_s1	m eps 5 4 z u P [reigue] =26 =26 9 u f m
+f189r_L11_s2	u P [reigue] =26 =26 9 u f m |>rho bt ?{small round o} =9
+f189r_L12_s1	12 theta a 10 13 bt q2 m delta n u 8 =11 =26 bt 9 hz
+f189r_L12_s2	3 bt q2 m delta n u 8 =11 =26 bt 9 hz |>rho 20 u f theta P
+f189r_L13_s1	[le] P mm 19 5 q2 xc delta b hbar u a y 6 theta 7
+f189r_L13_s2	5 q2 xc delta b hbar u a y 6 theta 7
+f189r_L14_s1	[Je vous ay cy devant faict scavoir] 6 u
+f189r_L14_s2	[y devant faict scavoir] 6 u |>7
+f189r_L15_s1	mm hz ct rho y 6 u 9 8 =11 6 u 9 7 xc delta a 9 u
+f189r_L15_s2	6 u 9 8 =11 6 u 9 7 xc delta a 9 u |>cap a q2 9 bt z x mm
+f189r_L16_s1	x xs =32 eps delta hz [faict] 10 =n =o t u xbar theta =11
+f189r_L16_s2	delta hz [faict] 10 =n =o t u xbar theta =11 |>H a
+f189r_L17_s1	22 m hbar f 14 hz 22 5 u q2 19 14 9 23 ct a
+f189r_L17_s2	14 hz 22 5 u q2 19 14 9 23 ct a |>=11 hz P [que]
+f189r_L18_s1	[sont] u delta 4 H u theta P gz 6 u =32 bt y x z
+f189r_L18_s2	H u theta P gz 6 u =32 bt y x z |>ct a xs theta
+f189r_L19_s1	[comme aussy] =12 m cap u a y theta a hz t u
+f189r_L19_s2	=12 m cap u a y theta a hz t u |>sigma 9 10 delta xs u
+f189r_L20_s1	[dans] 39 [Ceux] t m c gz 2 8 eps y 6 z
+f189r_L20_s2	[Ceux] t m c gz 2 8 eps y 6 z |>theta cap hz u dt bt
+f189r_L21_s1	[encores] x theta hz 6 u mm 6 ct rho a 6 14 10
+f189r_L21_s2	hz 6 u mm 6 ct rho a 6 14 10 |>=n =o [depuis]
+# notes: low confidence overall: 6 vs b (all written 6); u vs n vs cap; q2 for the 'cap+z' ligature (many lines); xs/xc/x for the x-variants; z vs xs for the 'Z-with-x' form; H for the cursive double-h; the small round 'o' (L08, L09, L11) left as ?; =n vs =11 for the barred u-shape (L16, L21, L03); L13 s2 has no new sign beyond s1 (no |> mark); s2 left edges with partial words/signs omitted
