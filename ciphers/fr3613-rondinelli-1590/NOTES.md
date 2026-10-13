@@ -126,7 +126,7 @@ Passes: tx/passA.tsv, tx/passB.tsv (two blind Sonnet passes, three calls each, c
 
 ## Remaining gaps (BNF-RONDI-TX, 13 Oct 2026)
 Read so far: 0 of 698 tokens read (transcription only, no key applied); the transcription itself is a draft with 369 of 698 columns agreeing between two passes (agreement, not accuracy).
-- 329 split columns of f.62r L01-L17 - blocker: not-attempted; reconciliation against the crops was not run for lack of cap; next: reconcile tx/disagreements.tsv in one call, ~$0.6
+- 329 split columns of f.62r L01-L17 - blocker: waiting-on ASKS 164 (the sign inventory is settled by a person in the sorter, CLAUDE.md Usage 6; blind sorter built 13 Oct 2026, BNF-RONDI-SORT)
 - error of the transcription unmeasured - blocker: not-attempted; no third blind pass yet; next: blind third pass over images/f62, ~$1.2
 - key test of keys/block_no34.tsv on f.62r - blocker: not-attempted; waits on a reconciled transcription; next: decode_key.py --try, ~$1.5
 ## Escalation (BNF-RONDI-TX, 13 Oct 2026)
@@ -137,4 +137,10 @@ Read so far: 0 of 698 tokens read (transcription only, no key applied); the tran
 - [ ] key-rebuild: test keys/block_no34.tsv rows l-z with decode_key.py --try after reconciliation
 - [x] image-check: native f.62r image cut into crops with the overlay checked (the first auto-cut was wrong and recut)
 - [ ] retry: reconcile the 329 split columns, then one blind third pass to measure error; if splits stay above a tenth the next pass is a person's in the sign sorter
-Verdict: keep going: 3 internal gaps; cheapest next: reconcile tx/disagreements.tsv against the crops, ~$0.6
+Verdict: keep going: 2 internal gaps; cheapest next: blind third pass over images/f62 to measure error, ~$1.2 (the split columns wait on ASKS 164)
+
+## BNF-RONDI-SORT (13 Oct 2026, account 2)
+Window 16:10-16:2x UTC by date -u. Disk only, no network, no reading, no decode. Built `sorter/` (cut.py, build.sh, README.md, cipher_lines.tsv, signs/labels/focus/clusters tsv, pages/, region.json): blind sign sorter for f.62r L01-L17 from images/f62 (segments s1/s2 joined per line). Not published.
+Tiles 720 (ink groups, over-split a little on purpose; the draft has 698 tokens), 10 starting piles (shape clusters, no values, no machine labels), focus 312 tiles aligned by position to the 324 columns where tx/passA.tsv and tx/passB.tsv differ. Right-edge scan bar trimmed (xmax 3360).
+Preflight (default blind mode, `tools/sorter_preflight.py`): template PASS; answerable PASS (312 focus tiles, 10 piles of 10); right line PASS (720 tiles, 17 of 17 lines, 4 shape flags = 0.6% under the 5% limit); contact sheet PASS (24 tiles, eye before publishing); colour PASS (cvd_check); gestures and pan SKIP (run at publish). preflight: PASS.
+Next: ASKS 164 (owner sorts the focus tiles; `tools/sign_sorter_apply.py`), then machine passes against the settled labels.
