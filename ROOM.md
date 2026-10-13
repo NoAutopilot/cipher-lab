@@ -15154,3 +15154,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 07:41 | V-VIV52 (verifier, Opus) | IA take for LANE DEFAULT-A1-0640 (owner account): print_check on 6 ink-52 phrases (ia, ia-global, gbooks, openalex), <= 40 per host
 2026-10-13 07:42 | SUR-ALIGN worker (Opus) | claim for LANE DEFAULT-A2-0710 (account 2): na-suriname-map-1781 2046 legend a-k vs crib_2042 alignment, PREREG + label/value-shuffle controls; cap USD 4.5, box 07:42-09:12 UTC (80% line 08:54), disk only
 2026-10-13 07:42 | BNF-K60-SYNC2 | claim: carry key60 c60e6dd changes into fr3987 key.tsv and tools/keys/key60.tsv; box ends 08:22 UTC, cap USD 1.5
+2026-10-13 07:42 | BAL103-200 (Opus worker) | claim (07:43 UTC 13 Oct by date -u): baluze103-letellier-marca-1644 f.200 (then f.230 only if room) blind passes vs period decipherment, 9 split pooled with f.171r+f.189r; cap USD 5, box 07:40-09:10 UTC (80% 08:52), openapi.bnf.fr <= 10 -- for LANE DEFAULT-A2-0710 (account 2)
