@@ -1,0 +1,93 @@
+[
+ {
+  "crop": "f25_L00.jpg",
+  "source_file": "images/q7key/c57_native.jpg",
+  "box": [
+   2500,
+   1740,
+   4000,
+   1880
+  ],
+  "scale": 1.0,
+  "method": "PIL crop of native, full line, scaled to 2400 px wide (BNF-Q7-ERR)",
+  "date": "13 Oct 2026"
+ },
+ {
+  "crop": "f25_L01.jpg",
+  "source_file": "images/q7key/c57_native.jpg",
+  "box": [
+   700,
+   1848,
+   4000,
+   2011
+  ],
+  "scale": 0.727,
+  "method": "PIL crop of native, full line, scaled to 2400 px wide (BNF-Q7-ERR)",
+  "date": "13 Oct 2026"
+ },
+ {
+  "crop": "f25_L02.jpg",
+  "source_file": "images/q7key/c57_native.jpg",
+  "box": [
+   700,
+   1981,
+   4000,
+   2145
+  ],
+  "scale": 0.727,
+  "method": "PIL crop of native, full line, scaled to 2400 px wide (BNF-Q7-ERR)",
+  "date": "13 Oct 2026"
+ },
+ {
+  "crop": "f25_L03.jpg",
+  "source_file": "images/q7key/c57_native.jpg",
+  "box": [
+   700,
+   2115,
+   4000,
+   2291
+  ],
+  "scale": 0.727,
+  "method": "PIL crop of native, full line, scaled to 2400 px wide (BNF-Q7-ERR)",
+  "date": "13 Oct 2026"
+ },
+ {
+  "crop": "f25_L04.jpg",
+  "source_file": "images/q7key/c57_native.jpg",
+  "box": [
+   700,
+   2261,
+   4000,
+   2438
+  ],
+  "scale": 0.727,
+  "method": "PIL crop of native, full line, scaled to 2400 px wide (BNF-Q7-ERR)",
+  "date": "13 Oct 2026"
+ },
+ {
+  "crop": "f25_L05.jpg",
+  "source_file": "images/q7key/c57_native.jpg",
+  "box": [
+   700,
+   2408,
+   4000,
+   2586
+  ],
+  "scale": 0.727,
+  "method": "PIL crop of native, full line, scaled to 2400 px wide (BNF-Q7-ERR)",
+  "date": "13 Oct 2026"
+ },
+ {
+  "crop": "f25_L06.jpg",
+  "source_file": "images/q7key/c57_native.jpg",
+  "box": [
+   700,
+   2556,
+   4000,
+   2715
+  ],
+  "scale": 0.727,
+  "method": "PIL crop of native, full line, scaled to 2400 px wide (BNF-Q7-ERR)",
+  "date": "13 Oct 2026"
+ }
+]

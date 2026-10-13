@@ -232,3 +232,49 @@ Worker BNF-Q7-T73 (Sonnet), for LANE BNF-FOCUS. Brief .claude/briefs/runs/2026-1
 ```
 - **Verdict: non-test, target not run.** Validation power at 10% digit error is 0.53 (gate 0.8; 0.99 clean), false detect 0.0. The matched control cannot read this key at the f.25 error band, so a target number would license nothing either way (rule 3). Not a fit and not a negative for f.25 against no.73; the row stays `partial`. Next step if wanted: a lower-error read of f.25 (the screen's own power at 0% is 0.99, so a cleaner transcription of the 260 digits is what would move it), or a pair-level variant using the key's value ranges. Not run in this job.
 - Credit: numbering and identification Tomokiyo (nevers.htm, guicciardini.htm). Rule 10: no novelty class.
+
+## BNF-Q7-ERR (13 Oct 2026, account 2)
+Measurement only; no decode, no key, no screen run. Brief: .claude/briefs/runs/2026-10-13-ytbiz-bnf-q7-err.md; rule:
+PREREG-Q7-T73-ADDENDUM.md (bd79853a6). Files in `q7test/`: `err_crops/` (full-line crops of images/q7key/c57_native.jpg,
+scaled to 2400 px, one crop per line so no half-join; `adj_*` native crops used for adjudication), `passC_blind.tsv`,
+`err_measure.py` (--help), `err_ops.tsv`, `err_adj.tsv`, `err_measure.out`, `make_v2.py`, `v2_changes.tsv`.
+
+**Blind pass C:** one Opus subagent given only the crop paths and "read every digit exactly as written, one line per
+crop, ? after an uncertain digit" (never ciphertext.tsv, passA/B, a key or notes). Scored against ciphertext.tsv by
+Levenshtein alignment per line, `?` dropped.
+
+| line | N rec | N blind | match | S | I | D | d |
+|---|---|---|---|---|---|---|---|
+| L01 | 51 | 54 | 47 | 4 | 3 | 0 | 0.137 |
+| L02 | 49 | 50 | 47 | 2 | 1 | 0 | 0.061 |
+| L03 | 46 | 49 | 39 | 5 | 5 | 2 | 0.261 |
+| L04 | 46 | 48 | 45 | 1 | 2 | 0 | 0.065 |
+| L05 | 49 | 48 | 43 | 5 | 0 | 1 | 0.122 |
+| L06 | 19 | 16 | 13 | 2 | 1 | 4 | 0.368 |
+| all | 260 | 265 | 234 | 19 | 12 | 7 | **0.146** |
+
+**Addendum figure (conservative, every disagreement against the reconciled text): d = 38/260 = 0.146, e_hi (Wilson 95%
+upper) = 0.194.** The licence needs e_hi <= L = 0.07: **it does not hold. The no.73 target run stays a NON-TEST**
+(addendum rule 2); the next step is a better transcription, not a looser gate.
+
+**Adjudication (mine, against the native crops):** of 38 disagreements, reconciled right 8, pass C right 22, neither
+supported / cannot tell 8. Adjudicated error of the reconciled text 30/260 = **0.115, Wilson 95% upper 0.160** -- also
+above 0.07; the licence is decided on e_hi as the addendum says, and the adjudicated figure would not license it either.
+Adjudication is one reader's call (M), not a second blind pass.
+
+**What the errors are.** (1) A looped sign (written like "ß") occurs about 12 times; pass C reads it 8, ciphertext.tsv
+has no 8 at all and renders it as 6, 3, "01" or drops it. About 12 of the 30 adjudicated errors are this one sign. I read
+it as the period form of 8 (M); it is an alphabet question for the sign sorter (TRANSCRIPTION.md: settle the alphabet
+before reading), and BNF-Q7-TEST's "no 8" digit profile rests on it. (2) Line 6 in ciphertext.tsv (19 digits) does not
+match the leaf: it repeats "153115" and lacks "738"; read from a 2x native zoom it is about 16 digits,
+`303?7383032193115` (one heavy blot unread). (3) **Coverage: ciphertext.tsv omits a line.** The clear line above the
+block ends "... gran progresso" followed by about 29 cipher digits (pass C: `40155?8?8?22081516377312271?0?9?730`);
+BNF-Q7-ID's leaf look counted 7 cipher lines, BNF-Q7-KEY cut 6. These digits are not in d (nothing to align them to).
+
+**`ciphertext_v2.tsv`** (ciphertext.tsv untouched): every pass-C-right change applied, unread ops kept with `?`, L06 my
+own read, L00 added from pass C unadjudicated; 38 changes listed in `q7test/v2_changes.tsv`. 265 digits in L01-L06,
+histogram 0:15 1:59 2:43 3:74 4:12 5:18 6:13 7:11 8:12 9:8. v2 is NOT a measured transcription: its own error is
+unmeasured until an independent pass is scored against it; no screen may use it on this job's figures.
+
+**Next (not done here):** settle the looped sign (and the 4/+ and heavy-blot signs) in the sign sorter; then two
+blind passes against v2 at full-line crops, L00 included, and re-measure e_hi under the same addendum rule.

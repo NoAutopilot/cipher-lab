@@ -1,0 +1,10 @@
+line	N_rec	N_blind	M	S	I	D	d
+f25_L01	51	54	47	4	3	0	0.137
+f25_L02	49	50	47	2	1	0	0.061
+f25_L03	46	49	39	5	5	2	0.261
+f25_L04	46	48	45	1	2	0	0.065
+f25_L05	49	48	43	5	0	1	0.122
+f25_L06	19	16	13	2	1	4	0.368
+f25_L00	-	29	not in reconciled (not scored)
+TOTAL	N=260	M=234	S=19	I=12	D=7	d=0.1462	e_hi=0.1942
+ADJ	errors_of_reconciled=30/260	e_adj=0.1154	Wilson_hi=0.1599	unadjudicated=0

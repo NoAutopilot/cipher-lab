@@ -1,0 +1,9 @@
+# BNF-Q7-ERR blind pass C, 13 Oct 2026: one Opus subagent, given only the crop paths in err_crops/ (full lines from images/q7key/c57_native.jpg, scaled to 2400 px; L00 = cipher tail of the clear line above the block, native) and the instruction "read every digit exactly as written, one line per crop, ? after an uncertain digit". Verbatim, except one space removed in L01.
+line	digits
+f25_L00	40155?8?8?22081516377312271?0?9?730
+f25_L01	1512399?31183231134015377?363?8?16351634213833281331221623
+f25_L02	13303227?3152132193830131?5?3212415363930252731341615
+f25_L03	36?15273218?337112240393?025113818?36?13393817353028?15?
+f25_L04	311715311?022332417301529324039181?613213722401523
+f25_L05	151137303213403628?233417152132243831222?623131132
+f25_L06	30?13303032?193115

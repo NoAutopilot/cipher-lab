@@ -1,0 +1,9 @@
+# BnF fr.3982 f.25, v2 (BNF-Q7-ERR, 13 Oct 2026): ciphertext.tsv corrected by adjudicating every disagreement with blind pass C against the native crops (q7test/err_adj.tsv, make_v2.py). The looped sign is read 8 (M; an alphabet question for the sign sorter). L06 is the adjudicator's own read. f25_L00 = digits after "gran progresso" on the clear line above the block, missing from ciphertext.tsv, pass C only, unadjudicated. ? after an uncertain digit; grade M throughout.
+line	digits
+f25_L00	40155?8?8?22081516377312271?0?9?730
+f25_L01	15123931183231134015377363816351634213833281331221623
+f25_L02	13303227315213219383013153212415363930252731341615
+f25_L03	36452732162337112240393025113816361339381735302815
+f25_L04	31171531?102233241330152932403918?1613213722401523
+f25_L05	151137303213403628233412153132243831222623131132
+f25_L06	303?7383032193115
