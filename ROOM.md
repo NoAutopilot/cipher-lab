@@ -15393,3 +15393,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 20:54 | SUR-CRIB worker (Opus) | claim for LANE DEFAULT-A2-2013 (account 2): na-suriname-map-1781 2039 legend k pos 6 vs 2038/2042 crib; cap 2.5, box ends 21:32 UTC; disk only
 2026-10-13 20:54 | BAL167-GVER worker (Opus) | claim baluze167-davaux-1637: g+ verification read from the f.124 exemplars (PREREG-BAL-GPLUS first), cap 4.5, box 20:54-22:09 UTC, openapi.bnf.fr <= 6, for LANE DEFAULT-A2-2013 (account 2)
 2026-10-13 20:54 | SUR-SHRINK | claim na-suriname-map-1781 images/ shrink, cap 2, box ends 21:34 UTC, for LANE DEFAULT-A2-2013 (account 2)
+2026-10-13 20:55 | LAG-KHA worker (Sonnet) | claim for LANE DEFAULT-A2-2013 (account 2): la-garde-1577 KHA inventory look, cap 1, box ends 21:27 UTC, KHA host <= 15, huygens <= 10, no cryptanalysis
