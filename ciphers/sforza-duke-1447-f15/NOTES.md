@@ -73,20 +73,36 @@ Details, numbers and files are in `../sforza-italien1584-1447/duke/NOTES.md`. In
 - S3 (f.15 crop, two passes, decode, controls) was therefore not run, per the brief's stop rule. f.15 has no transcription,
   no decode and no reading; `tools/judge_plaintext.py` was not run (nothing to judge).
 
-## Remaining gaps (SFZ-D, 7 Oct 2026)
-Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0.441 mean held-out, 2 units)
-- f.15 decode - blocker: not-attempted; needs a Duke key that passes G1 first; SFZ-DUKE (8 Oct 2026) fixed one label convention (../sforza-italien1584-1447/duke/duke_labels.md), ran a second blind Sonnet reader on f.5+f.8 (unusable: skipped about half the signs, err_2reader about 0.3 on full lines; the instrument is retired for this hand) and the dateline-anchored learner on reader A (G1 0.422, FAIL); next: owner sign-sorter packet for f.5+f.8 (tools/sign_sorter.py, dateline run as the check), ~$2, then the owner's sort, then g1_duke.py / g1_duke_anchored.py unchanged
+## SFZ-SORT (13 Oct 2026, account 4, LANE DEFAULT-A4-2135): owner sign-sorter packet for f.5 + f.8, built, not published
+Prior work: `tools/prior_work.py sforza-duke-1447-f15 --item-spec 'shelfmark=BnF italien 1584;folio=5,8;date=1447-01-10;sender=Duke of Milan'
+--step-type transcribe --offline` exit 2 (plaintext KNOWN from Tomokiyo/leaf hits that name other volumes or this folder's own f.5/f.7, f.8/f.10
+gloss pairs; step LEAD = this job's own claim only). Check 1 by hand: ROOM.md and ciphers/*/sorter* carry no earlier Sforza sorter; ASKS.md
+no Sforza row. Output prior-work.tsv.
+Built: `sh ciphers/sforza-duke-1447-f15/sorter/build.sh OUTDIR` (sorter/README.md; no network, disk only). 2,325 tiles from 31 straightened
+lines (f.5 L01-L15, f.8 L01-L16), 40 starting shape piles (machine clusters on the images alone, `shape-NN`, default blind mode: no key,
+value or reader label on the page), 40 focus tiles. Tool preflight (inside sign_sorter.py): PASS -- template, answerable 40/40, right line
+0 off-list, shape 13 of 2,325 (0.6%) ink outside 3-60% after a 2 px box margin (191 without it), contact sheet, colour (cvd_check) PASS.
+Full `tools/sorter_preflight.py PAGE` (gestures, pan) result in the done line. Not committed: the page, its JSON, tiles, pages/, debug/,
+region.jpg (sorter/.gitignore); no image file enters git. Tiles are 1.32x reader A's 1,761 tokens (over-split on purpose; some cursive joins
+such as the p-a-r and g-# runs stay joined: the page's re-cut tool and BAD-CUT handle both). Key family not registered in
+tools/data/sorter_families.tsv: sign_sorter.py consults it only for --show-values, not for a blind build.
+Check after the owner's sort (not on the page): the dateline run (f.8 L15-16, f.5 L14-15), read twice identically by SFZ-DUKE, must come
+out sign-for-sign the same under the owner's piles; then sign_sorter_apply.py -> settled labels -> g1_duke.py / g1_duke_anchored.py unchanged.
+
+## Remaining gaps (SFZ-SORT, 13 Oct 2026)
+Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0.441 mean held-out, 2 units; anchored 0.422)
+- f.15 decode - blocker: waiting-on ASKS row 165 (the owner's blind sort of f.5+f.8, packet built by SFZ-SORT 13 Oct 2026, sorter/README.md); a Duke key that passes G1 is needed first, and the second machine reader is retired for this hand (SFZ-DUKE, 8 Oct 2026); next after the sort: dateline check, sign_sorter_apply.py, then g1_duke.py / g1_duke_anchored.py unchanged, ~$2
 - f.17 blanks vs f.15 - blocker: not-attempted; whether f.15's cipher fills f.17's two blanks is unexamined; next: only after a readable key, ~$1
 
-## Escalation (SFZ-D, 7 Oct 2026)
+## Escalation (SFZ-SORT, 13 Oct 2026)
 - [x] siblings: the Duke's glossed pairs f.5/f.7 and f.8/f.10 used; f.23-24/f.26, f.30-31/f.29, f.36-37/f.35 not yet
 - [x] clear-pages: f.17 (same-day clear letter) noted as context; no copy of f.15 exists in the volume per Mazzatinti
 - [ ] known-keys: Cerioni 1970 / ASMi Visconti cipher registers not checked
 - [ ] print: no print of f.15 located (check-solved above); verifier pass belongs to a later reading
 - [x] key-rebuild: attempted, G1 FAIL
-- [ ] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); alphabet settling by the owner's sign sorter, packet not built yet
+- [x] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); owner sign-sorter packet for f.5+f.8 built (SFZ-SORT, 13 Oct), waiting on the owner's sort (ASKS 165)
 - [ ] retry: G1 after the sort (anchored learner on reader A FAIL 0.422, 8 Oct), then S3 on f.15
-Verdict: keep going: 2 internal gaps; cheapest next: build the sign-sorter packet for f.5+f.8, ~$2
+Verdict: keep going: 1 internal gap; cheapest next: known-keys check of Cerioni 1970 / the ASMi Visconti cipher registers for the Duke's 1447 key, ~$1
 
 ## Requests (SFZ-D, 7 Oct 2026)
 
