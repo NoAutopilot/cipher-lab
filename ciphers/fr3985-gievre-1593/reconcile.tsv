@@ -1,0 +1,19 @@
+line	position	final	basis
+L01	3	del?	image
+L01	5	o o?	unresolved
+L01	8	c b dbl?	image (dbl glyph is two stacked crosses; c/b ligature-like)
+L01	15	o?	image (single ink blot)
+L01	18	p?	image
+L01	20	6	image
+L01	22	b? l?	unresolved
+L02	start	oo? (underlined, before pi)	image
+L02	after 4	y ++ (y present)	image
+L02	after ++	inT?|tri? pl box? 2+? r?	unresolved
+L02	after G r	x? present	unresolved
+L02	21	oo	image
+L02	27	Z?	unresolved
+L02	trailing	tri tri	image
+L03	19	3?	unresolved
+L03	28	pl?	image
+L03	30	+?	unresolved
+L03	trailing	ls c? t?	image (small c/t-like marks before ma; may be clear)

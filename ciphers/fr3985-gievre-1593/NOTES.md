@@ -63,3 +63,9 @@ BNF-Q2-ED2 left views 757-759 (pp.694-696) unread; the lane read them (3 request
 p.694 end of Nevers to La Chastre and the start of La Chastre's reply; p.695 that reply ends "Escrit a Orleans ce 27. Ianuier
 1594", then the Lyon reduction of 7-9 Feb 1594; p.696 the Lyon narrative. No Gievre letter. With views 721-760 now all read, the
 volume's 1593 span (chronological: p.659 = 1591, p.692 = Sept 1593, p.695 = Jan 1594) is covered: status open (line 1).
+
+## BNF-Q2-TX (13 Oct 2026, account 2)
+Transcription only (no decode, no key work, no test). Crops: `iiif_lines.py --image images/f179_native.jpg --region 900,1560,3600,720 --debug` -> images/f89/ (4 lines x 2 segments, debug overlay checked; L01-L03 cipher with clear runs, L04 clear, "voir le Roy bientost ..."). Two blind Sonnet passes (passA.tsv, passB.tsv) from crops + sign_guide.md only; one reconciliation call on the disagreements (reconcile.tsv, image basis, crops are low-res so most settles keep `?`). `tools/reconcile_passes.py` mis-parsed the whole-line format (1/2 agreement, artefact), so agreement was computed by difflib alignment of cipher tokens (`?` stripped): **67/90 = 0.744** (L01 14/24, L02 23/33, L03 30/35). Above the 0.65 line.
+Result: ciphertext.tsv, **N = 92 cipher signs** (L01 24, L02 33, L03 35, L04 0), 25 marked `?` (about 27%); graded M (rule 4), no key applied. The passes split on: o/oo/0, n vs o, c/b/dbl, pl vs p, the run after the L02 first `++` (tri/inT, pl, box, 2+/4+, r), x after `G r`, Z vs z, L03 pos 19 (3 vs o), L03 pos 28 (c vs pl), trailing c/t before "ma assurer de" (may be clear) -- for the owner's sorter, never blocking. `box` is not in the sign guide.
+Tags not found by name in tools/keys/key60.tsv (name-level only; its spellings may differ from the guide's tags, not checked against glyphs): Z a alpha box dbl del h ls pl tri z.
+Requests: none (disk only).
