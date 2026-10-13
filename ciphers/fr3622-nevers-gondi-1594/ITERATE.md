@@ -116,3 +116,13 @@ Next best attempt (BNF-K60, 13 Oct 2026): more no.60 ciphertext from the same of
 fr.3989 Nevers-to-Revol letters of March 1594 (no.76, 12 Mar) if in no.60; pooled with f.91 under one key, re-run the same PREREG
 instrument at the pooled N (control first). The owner's sign sorter on f.91's 5 unkeyed tags (h, I, z, a, 6+) is still open but cannot
 by itself lift power from 0.39. Order-sensitive instrument at this N: logged untestable at N=135 (first attempt with it), not refuted.
+
+## Power check before pooling (lane, 13 Oct 2026 09:3x UTC by date -u)
+fr.3985 f.89 (Nevers to Gièvre, 21 Aug 1593, key no.60 by shape M) was transcribed by BNF-Q2-TX: N = 92 tags, pass
+agreement 0.744 (`ciphers/fr3985-gievre-1593/`). Pooled with f.91 that is N ~ 227. Before briefing a pooled run the lane
+re-ran BNF-K60's control unchanged except N_CTRL = 227 (temporary copy, deleted; 100 texts x 1000 shuffles):
+power(p <= 0.01) = 0.360 at 0% error, 0.010 at 25%, 0.020 at 35% -- against 0.390 / 0.055 / 0.015 at N = 135.
+| 13 Oct 2026 | pooling f.89 with f.91 gives K60's statistic power | K60 control at N = 227 (lane, CPU only) | same control, N 135 vs 227, 0/25/35% error | power does not rise with N (0.39 -> 0.36 clean) | the longest-lexicon-word statistic saturates near 9 letters whatever N is: pooling cannot rescue it | a statistic that grows with N is needed (e.g. count of lexicon words >= 5 letters in order vs order shuffles, or a 4-gram log-likelihood under order shuffles), registered and controlled at N 135 and 227 before any target run |
+Next best attempt: design and control an N-scaling order-sensitive statistic (Opus, disk only, ~$4) on synthetic text at
+N = 135 and 227 with 0/25/35% error; run the pooled f.91 + f.89 target only if the control reaches power >= 0.8 at the
+error band the two transcriptions carry (f.91 35%, f.89 ~26%).

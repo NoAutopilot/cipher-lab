@@ -272,3 +272,23 @@ the strongest new material (a held key or a sibling folder) once reproduced. Re-
   in key no.60; if f.89 is no.60 it adds to the pool f.91 needs. Pre-screened: Bourdeau no hit (HEAD c60e6dd), no folder of
   ours, Tomokiyo "undeciphered".
 - Orchestrator: the owner account (TAKEOVER 06:22 UTC 10 Oct), not account 4; lines from now on are addressed to it.
+
+## Waves 21-24 (13 Oct 2026, 07:0x-09:4x UTC by date -u)
+
+- **Q2, fr.3985 f.89 (Nevers to M. de Gièvre, 21 Aug 1593): now `open`.** BNF-Q2-ID (0.87): leaf located through
+  openapi.bnf.fr, key no.60 by shape (M), cipher paragraph of 4 lines; no decipherment in Tomokiyo, Bourdeau, Aymeloglu
+  or DECODE. Gomberville seconde partie read for the edition step in three passes -- BNF-Q2-ED (0.96, 17 views sampled),
+  BNF-Q2-ED2 (1.00, 24 views), and the lane itself for views 757-759, which the ED2 brief had omitted -- so pp.660-697
+  (1591 to Feb 1594, chronological) are read in full: the letter is not printed. BNF-Q2-TX (1.59): 92 sign tags, two blind
+  passes agree 0.744. Folder `ciphers/fr3985-gievre-1593`.
+- **fr.3622 f.91 pooling not briefed.** The lane re-ran BNF-K60's control at N = 227 (f.91 + f.89): power 0.36 clean vs
+  0.39 at N = 135. That statistic (longest lexicon word in order) does not grow with N, so more material cannot rescue it;
+  the next attempt is an N-scaling statistic, controlled first (fr3622 ITERATE.md).
+- **Key no.60 everywhere in sync.** BNF-K60-SYNC2 (0.65): fr3987 key.tsv and tools/keys/key60.tsv carried to Bourdeau
+  c60e6dd; fr3987, fr3986 and fr3990 readings regenerated, `--check` current.
+- **Q7, fr.3982 f.25 (Nevers to the Grand Duke of Tuscany, 26 Aug 1592): `open`.** BNF-Q7-ID (1.21): about 250 digits
+  written continuously, 7 lines; no hit in Tomokiyo, Bourdeau, Aymeloglu, DECODE or Canestrini-Desjardins vol. V.
+  Candidate key: Nevers no.62, the Tuscan key in fr.3995 f.114-115 whose own note codes "Nivers" and "Gran duca" (Tomokiyo,
+  nevers.htm). Next: BNF-Q7-KEY transcribes the no.62 table and the f.25 digits (no decode); then a controlled key test on
+  Opus. If no.62 reads it, the key is `period` (rebuilt from the key sheet of the time).
+- Spend 13 Oct so far, this lane: workers 1.12 + 2.84 + 0.87 + 0.96 + 0.65 + 1.00 + 1.59 + 1.21 = 10.24 (cap 40/day).
