@@ -1,0 +1,26 @@
+# THUR-51 (13 Oct 2026): Birch vol 4 pp.124-125 (djvu l.10355 ff., Bamfylde -> Thurloe, Paris, Nov. 10, 1655 [N.S.], signed "J. Beauple"); IA collectionofstat04thur leaves n131 (p.124), n132 (p.125), page-to-leaf +7 here (+3 at pp.195/306). Printed gloss assigned by x-position, read by eye in the worker session on committed crops (no blind subagent pass: no run carries 51). table = bamf/gate_bamf.json; tomokiyo = bamf/tomokiyo/bamp1_table.tsv. For the record only; no key edit.
+page	run	pos	code	printed_gloss	table	tomokiyo	crop
+p124	1	1	841	kinge [of]	-	-	v4p124r1_L01.jpg
+p124	1	2	48	o	o	o	v4p124r1_L01.jpg
+p124	1	3	21	f	f	f	v4p124r1_L01.jpg
+p124	1	4	20	S	s	s	v4p124r1_L01.jpg
+p124	1	5	73	w	w	w	v4p124r1_L01.jpg
+p124	1	6	30	e	e	e	v4p124r1_L01.jpg
+p124	1	7	6	d	d	d	v4p124r1_L01.jpg
+p124	1	8	22	e	e	e	v4p124r1_L01.jpg
+p124	1	9	847	cardinal	-	-	v4p124r1_L01.jpg
+p125	1	1	9	t	-	c	v4p125r1_L01.jpg
+p125	1	2	8	o	o	o	v4p125r1_L01.jpg
+p125	1	3	73	w	w	w	v4p125r1_L01.jpg
+p125	1	4	47	(none)	-	l	v4p125r1_L01.jpg
+p125	1	5	39	(none)	-	y	v4p125r1_L01.jpg
+p125	1	6	90	(none)	-	-	v4p125r1_L01.jpg
+p125	1	7	55	(none)	-	-	v4p125r1_L01.jpg
+p125	1b	1	317	gaine	-	-	v4p125r1_L01.jpg
+p125	2	1	498	(none)	-	-	v4p125r2_L01.jpg
+p125	2	2	48	o	o	o	v4p125r2_L01.jpg
+p125	2	3	21	f	f	f	v4p125r2_L01.jpg
+p125	2	4	5	(none)	-	l	v4p125r2_L01.jpg
+p125	2	5	711	warr	-	-	v4p125r2_L01.jpg
+p125	2	6	20	e	s	s	v4p125r2_L01.jpg
+p125	2	7	847	card.	-	-	v4p125r2_L01.jpg
