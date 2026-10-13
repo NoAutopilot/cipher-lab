@@ -90,3 +90,34 @@ H where both passes and the image agree, M otherwise. Then the cheap check the g
 nomenclator's code range and format (count, list; no reading claimed, no decode of f.2 unless the existing decode config already reads
 key files by name -- then `--check` only). Do NOT start no.31 (canvas f126) in this job; name it as the next step with its price.
 Units: 1 fetch+crop, 2-4 pass calls, 1 reconciliation at ~1.5 each.
+
+## Wave 3 (07:4x UTC 13 Oct) -- follow-ups of waves 1-2
+Pricing lesson from waves 1-2 (V-SUR2046 4.60 on 2.5, LVN16-3R 4.71 on 3): a verifier re-call with its own fresh control set, or a
+re-render the brief assumed was on disk, is a full extra unit; caps below include it.
+
+### V-LVN16 (Opus verifier, cap 3.5, box 60 min, disk + <= 1 huygens request): lodewijk-van-nassau-1573-74, carry LVN16-3R into AUDIT.md
+You are a verifier, separate from the LVN16-3R solver session; do not protect its conclusions. Read the LVN16-3R section of NOTES.md, its
+PREREG (92e86face) and its ROOM flag (07:31 UTC 13 Oct). (1) Eye-check the four rows it named -- p1_L16/19 (81 eye vs 91, third blind read
+91), p1_L07/8, p1_L16/4 (its crops were off-token), p1_L13/11 (27/16 vs 21/16 vs read 27/6) -- on tight crops you cut yourself from the
+300-dpi render (`regen_images.sh` or the 04616.pdf route LVN16-3R used; one huygens request at most, take/release); revert any settle the
+image does not support. (2) Carry the revision into AUDIT.md ("## V-LVN16" section: what changed, the new counts, depth per rule 4a re-checked
+against tools/depth_check.py, no N-class change unless a sentence over-claims), and into any SECOND-OPINIONS-QUEUE.tsv row for this target.
+Re-run the reading scripts with `--check`. Units: 1 crop job, 1 eye pass, 1 write-up.
+
+### SUR-ALIGN (Opus, cap 4.5, box 90 min, disk only): na-suriname-map-1781, 2046 legend a-k vs crib_2042
+NOTES.md Verdict "cheapest next" and Escalation clear-pages "Not yet used: crib_2042 against 2046 legend a-k" (l.4087), plus the V-SUR2046
+note (l.4100 ff.): the alignment is the named instrument for [d-hook] and [3-breve], now back at U. Read GAPS5/6 (crib_2042 vs 2039, the
+method and its controls) and GAPS18 (the 2046 legend transcription). PREREG-SUR-ALIGN.md pushed BEFORE any score: statistic, a label-shuffle
+control (crib entries permuted across legend letters) and a value-shuffle control (key values permuted within the Nieuw alphabet), both able
+to differ from the target on the statistic (rule 3, check it in the PREREG), gate, and the decision rule for any U/M token the alignment
+would assign. Use tools/interlinear_align.py if its model fits (do not write a private DP). Grade per rule 4: a PASS licenses at most C for
+legend words whose crib entry is a period gloss, M otherwise; FAIL changes nothing. decode `--check`; update Remaining gaps / Escalation.
+Units: 1 setup + PREREG, 1 alignment run with both controls, 1 write-up.
+
+### BAL103-200 (Opus, cap 5, box 90 min, openapi.bnf.fr <= 10): baluze103-letellier-marca-1644, f.200 and/or f.230 vs period decipherments
+NOTES.md Verdict (l.942): "f.200/f.230 (DECODE R2745/R2746) for an i-valued 9 is optional while waiting, ~$4"; BAL103-189 (13 Oct) left the
+9 shape split a NON-TEST at pooled N 9 with k_i 0. Same design as BAL103-189 (read its section and PREREG-BAL103-189.md; reuse its scripts):
+f.200 first (canvas from the folio offset BAL103-189 used), one native region, 2 blind passes + reconciliation, PREREG-BAL103-200.md pushed
+before alignment (the per-sign table test and the 9 counts pooled with f.171r + f.189r, decision rule stated in advance, including what N
+makes the split test a real test). f.230 only if f.200 leaves room under 80% of cap and box and the pooled N is still below that bar.
+No key edit unless the pre-registered gate licenses it. Units: per leaf 1 fetch+crop, 2 pass calls, 1 reconciliation+alignment.
