@@ -131,23 +131,23 @@ f57r L16: e [lam^] o [bh^ sq^ot wd^ bh^ H^o|1 o.^ bh^ psi^ eps^ w^ o.^ Z^ e^ g^d
 f57r L17: [g^ psi^ m^~] e|o [o.^ phi^] ?|e [S7^ o.^ rz^] ?|o [nt^ g^~ S4^]
 f57r L18: [#^ #^ f^ S7^ S4^1 dl^ Z^ S7^# phi^ L^ g^ Z^ psi^ lam^5 rz^ nt^ +^ot S7^] h [bh^dot S7^ bh^ w^]
 f57r L19: [o.^ S7^ eps^7 m^~ phi^ e^# g^ e^# g^ ]^o S7^ psi^# f^ w^ y^ K^ a^7 eps^7 lam^ y^7 m^~ g^5 nt^ S7^ tee^ y^7 S7^ eps^7 eps^5 S7^]
-f57v L1: []^o|dot o.^dot] <untranscribed> [S4^ dl^ +^ Lx^ w^1|5 y^ y^ g^~ a^ S^ a^1 o.^ m^7 nt^ y^ S^]
-f57v L2: [y^ y^ Z^ g^~ sq^ nt^ psi^ lam^~ w^ rz^ #^o] <untranscribed> [phi^ g^ psi^ m^~] <untranscribed> [lam^ o.^ot S4^ dl^ Lx^] <untranscribed>
-f57v L3: [S4^ dl^ Lx^ e^ lam^] <untranscribed> [bh^ S^ Z^ wd^] <untranscribed> [H^ e^dot g^] <untranscribed> [w^ y^ y^ e^] <untranscribed> [e^# wd^ bh^ y^ w^]
+f57v L1: []^o|dot o.^dot] Et Prometto aura .s. [S4^ dl^ +^ Lx^ w^1|5 y^ y^ g^~ a^ S^ a^1 o.^ m^7 nt^ y^ S^]
+f57v L2: [y^ y^ Z^ g^~ sq^ nt^ psi^ lam^~ w^ rz^ #^o] [C] [phi^ g^ psi^ m^~] [C] [lam^ o.^ot S4^ dl^ Lx^]
+f57v L3: [S4^ dl^ Lx^ e^ lam^] [C] [bh^ S^ Z^ wd^] [C] [H^ e^dot g^] [C] [w^ y^ y^ e^] [C] [C] [e^# wd^ bh^ y^ w^]
 f57v L4: [eps^7 Z^ psi^ eps^5 Z^ e^dot|+ lam^ w^1 rz^ e^dot|# L^ psi^ eps^ w^ [^ lam^ y^5 Z^# S7^ lam^7 ]^o Z^]
-f57v L5: [S7^ #^ lam^dot|1 e^# wd^ rz^ dl^# e^# Z^ S7^1 lam^ H^ m^o|1 w^ ]^o S7^ #^dot e^# wd^ y^ Z^ e^dot] <untranscribed>
-f57v L6: <untranscribed> [a^1 lam^ bh^ S7^ #^ e^dot g^5 w^ tee^ o.^ H^] <untranscribed> [g^dot w^ S7^ y^ H^1|o m^~] <untranscribed> [y^ S^ L^ g^~ H^]
-f57v L7: [w^ tee^ o.^ y^ tee^ f^ w^ Lx^ dl^ o.^ S4^ dl^ Lx^ dl^ y^ +^] <untranscribed> [dl^ v^] <untranscribed> [L^ lam^ nt^] <untranscribed>
-f57v L8: <untranscribed> [Z^ lam^] <untranscribed> [S^ Z^ S^] <untranscribed> [tee^] <untranscribed>
-f57v L9: <untranscribed>
-f57v L10: <untranscribed>
-f57v L11: [S4^ dl^ Lx^] <untranscribed> [eps^1 S7^ eps^~ wd^ [^1 ]^ g^ g^~ m^5 o.^dot H^1 g^o rz^ psi^ eps^ w^ o.^] <untranscribed> [g^]
-f57v L12: [phi^ lam^] <untranscribed> [o.^] <untranscribed> [lam^] <untranscribed> [bh^ o.^ S7^ lam^ S7^~ e^ g^~ e^dot|3] <untranscribed> [lam^ g^~ H^1|o tee^] <untranscribed> [psi^dot] <untranscribed>
-f57v L13: [y^] <untranscribed> [f^ w^ y^ m^ #^ y^ g^~ m^~ w^ lam^ nt^~ y^ g^ eps^ g^ S^ y^ rz^ nt^ rz^] <untranscribed>
-f57v L14: [o.^ S7^ p^ g^ o.^ S7^ lam^ y^~ S^ ]^o g^] <untranscribed> [nt^ g^1 e^dot|+ a^1 e^# lam^1 e^dot ]^o g^ S7^ phi^ ]^o] <untranscribed> [w^ y^ lam^ eps^1] <untranscribed>
-f57v L15: [wd^ bh^ y^ nt^ bh^ w^ e^ #^ lam^ w^ tee^] <untranscribed> [lam^ m^~ g^ g^ a^1 S7^ e^# g^1 m^~ w^ a^1 g^ S4^~ dl^]
-f57v L16: <untranscribed> [#^ #^ #^] <untranscribed>
-f57v L17: <untranscribed>
-f57v L18: <untranscribed> [S4^ dl^ Lx^] <untranscribed> [a^] <untranscribed> [S7^ #^ a^1 S7^ e^# g^ m^~ w^ lam^~ nt^] <untranscribed>
-f57v L19: <untranscribed> [rz^ tee^ e^#] <untranscribed> [tee^ o.^ eps^ lam^ e^dot|+ sq^] <untranscribed> [psi^ lam^ S4^ Lx^] <untranscribed>
-f57v L20: <untranscribed>
+f57v L5: [S7^ #^ lam^dot|1 e^# wd^ rz^ dl^# e^# Z^ S7^1 lam^ H^ m^o|1 w^ ]^o S7^ #^dot e^# wd^ y^ Z^ e^dot] [C]
+f57v L6: [C] [a^1 lam^ bh^ S7^ #^ e^dot g^5 w^ tee^ o.^ H^] [C] [g^dot w^ S7^ y^ H^1|o m^~] [C] [C] [y^ S^ L^ g^~ H^]
+f57v L7: [w^ tee^ o.^ y^ tee^ f^ w^ Lx^ dl^ o.^ S4^ dl^ Lx^ dl^ y^ +^] bn [dl^ v^] vary|vate [L^ lam^ nt^] Din
+f57v L8: xvj octobr [Z^ lam^] 1525 [S^ Z^ S^] Carlos [tee^] Salviati
+f57v L9: Jo. Carlos Salviati
+f57v L10: 
+f57v L11: [S4^ dl^ Lx^] [C] [eps^1 S7^ eps^~ wd^ [^1 ]^ g^ g^~ m^5 o.^dot H^1 g^o rz^ psi^ eps^ w^ o.^] [C] [g^]
+f57v L12: [phi^ lam^] [C] [C] [o.^] [C] [lam^] [C] [bh^ o.^ S7^ lam^ S7^~ e^ g^~ e^dot|3] [C] [lam^ g^~ H^1|o tee^] [C] [psi^dot] [C]
+f57v L13: [y^] [C] [C] [f^ w^ y^ m^ #^ y^ g^~ m^~ w^ lam^ nt^~ y^ g^ eps^ g^ S^ y^ rz^ nt^ rz^] [C] [C]
+f57v L14: [o.^ S7^ p^ g^ o.^ S7^ lam^ y^~ S^ ]^o g^] [C] [C] [nt^ g^1 e^dot|+ a^1 e^# lam^1 e^dot ]^o g^ S7^ phi^ ]^o] [C] [w^ y^ lam^ eps^1] [C]
+f57v L15: [wd^ bh^ y^ nt^ bh^ w^ e^ #^ lam^ w^ tee^] [C] [lam^ m^~ g^ g^ a^1 S7^ e^# g^1 m^~ w^ a^1 g^ S4^~ dl^]
+f57v L16: Et no bisognera ch|cs v. s. li facci Pagare li [#^ #^ #^] d' piu
+f57v L17: l'habbiamo Contentato qui : Ma facce~do|faccedo gra <none>|diligeti dilige~|+ +|in in|+ +|<none> v. s. g
+f57v L18: din e l beueraggio :|<none> [S4^ dl^ Lx^] [C] [a^] [C] [S7^ #^ a^1 S7^ e^# g^ m^~ w^ lam^~ nt^] [C]
+f57v L19: [rz^ tee^ e^#] [C] [tee^ o.^ eps^ lam^ e^dot|+ sq^] [C] [psi^ lam^ S4^ Lx^]
+f57v L20: L apnte è stata Suggellata Dua volta|volte

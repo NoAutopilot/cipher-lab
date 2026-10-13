@@ -3608,3 +3608,76 @@ Read so far: unmeasured; no reading of the cipher exists, the folder's families 
 - [x] image-check: passes A/B/C, SALV-SPLIT, SALV2-J1A/B and SALV-F56V; f.56r pass C optional (~$3, strips on disk), not decisive for any open family
 - [x] retry: DSN irregular at 96 restarts on the SALV-F56V split (SALV-DSN, 11 Oct): control 0.844 at err 0.064, 0.733 at 0.10, 0.541 at 0.146; target judge FAIL -- control-backed up to 10%, non-test at 14.6%
 Verdict: keep going: 1 internal gap; cheapest next: f57v's plain boxes once Gallica answers (regen_images.sh, two blind passes in halves + reconciliation, ~$7)
+
+## SALV-57V: plain-Italian boxes, f.57v (13 Oct 2026, 21:46-22:0x UTC by date -u; LANE DEFAULT-A4-2135, account 4)
+Worker SALV-57V (Opus), brief `.claude/briefs/runs/2026-10-13-acct4-default-2135-jobs.md` "### SALV-57V". SALV-PLAIN3's
+protocol, unchanged except that each pass ran in two halves (lines 1-16, 101 boxes; lines 17-20, 71 boxes): two blind
+Sonnet passes per half (four calls; pass B read its lines in reverse order), then one Sonnet reconciliation call that got
+only the 34 disagreeing rows and the crops of their 9 lines. The worker did not read the boxes itself; it opened two crops
+(L09, L17) only to check the underlines sat under the ink before the passes started.
+Prior work: `tools/prior_work.py fr2933-salviati-1525 --item-spec 'BnF fr.2933 f.57v' --step-type transcribe --offline`
+exit 4 (LOOK 2-leaf; UNCHECKED 3-solver, 3-tomokiyo; UNCHECKED-NET 3-solver clone, 4-editions). The three owed rows were
+recorded CLEAR in `prior-work.tsv` from Premise check (b) and the Web and blog check (GF-A2-13, 3 Oct 2026); the leaf look
+is this job. Check 1 (own work): no `plain_*f57v*` file existed before this job.
+**Render (openapi.bnf.fr, 2 requests, both 200):** canvas f59 `info.json` (8151x5518), then
+`https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90600674/f59/pct:0,0,50,100/2400,/0/default.jpg` -> `images/f57v_ref2400.jpg`
+(2400x3250, the same region and width as SALV-PLAIN3's Gallica fetch, so the `(x+80,y+80)*1.5` transform holds; sha1
+865993376fd5...). `python3 crop_plain_leaf.py f57v` -> "20 line crops, 172 plain boxes marked"; `plain_crops/f57v/manifest.tsv`
+came out byte-identical to the committed one. The render and crops are untracked (.gitignore); `regen_f57v.sh` re-derives
+both, and `images/manifest.json` notes record the URL, size and sha1. No image was committed.
+**Files:** `plain_passA_f57v.tsv`, `plain_passB_f57v.tsv`, `recon_plain_f57v/` (disagreements, agreement, settled),
+`plain_f57v.tsv` (folder format), `f57v_plain.tsv` (line, box, per-pass word and confidence, reconciled text, grade),
+`plain_boxes.tsv` (+172 f57v rows; other leaves' rows byte-identical), `ciphertext_with_plain.txt` rebuilt. New
+`merge_plain_leaf.py f57v [--check]` regenerates the three tables from the passes and the settlement (rule 7);
+`merge_plain_leaf.py f57v --check`, `build_ciphertext_with_plain.py --check` (153 lines) and `build_spec.py --check`
+(2939 tokens, 253 types; the spec and `ciphertext_*.tsv` untouched) all exit 0.
+
+**Control table, f57v added** (rule 3's version for a transcription; rows above from SALV-PLAIN3):
+
+| leaf | plain boxes | A | R | M | M share | raw A/B disagreement | settlement |
+|---|---|---|---|---|---|---|---|
+| f57r (PLAIN3) | 42 | 9 | 24 | 9 | 21.4% | 78.6% | image, subagent |
+| f57v (SALV-57V) | 172 | 138 | 23 | 11 | 6.4% | 19.8% (34/172) | image, subagent |
+| **all 8 leaves** | **1220 of 1222** | **696** | **346** | **178** | **14.6%** | -- | -- |
+
+The agreement figure is generous: 35 of the 138 agreements are both passes calling the box `[C]`, and 15 are both calling
+it `<none>` (3 more settle as `<none>`) (the archive stamp on lines 9-10, flourishes). **[C] flag:** 35 of the 172 spec-plain boxes reconcile as
+`[C]` (cipher signs, not plain text), all on lines 2-3, 5-6 and 11-15 and 18-19, where the "plain" boxes are isolated
+single boxes inside sign runs; 2 more were `[C]` in one pass only. As before, nobody has edited `ciphertext_*.tsv` or the
+spec on the strength of a `[C]` flag.
+The 11 M rows: 17.22-17.29 (the box-to-letter split of "gra[n] diligentia in", where the underlines are crowded; the
+words are agreed, only which box carries which letter is not), 7.21 vary|vate, 16.12 ch|cs, 17.15 the macron on faccēdo,
+18.13 a colon or nothing, 20.17 volta|volte.
+
+**What the boxes say** (reconciled text, `ciphertext_with_plain.txt` f57v; uncertain letters kept as passes read them):
+line 1 "Et Prometto aura .s." then cipher; line 7 a few short plain words amid cipher ("bn ... vary|vate ... Din", low
+confidence); lines 8-9 the dateline and signature, "xvj octobr ... 1525 ... Carlos Salviati / Jo. Carlos Salviati" (16
+October 1525, the letter's own date); lines 16-18 a plain passage, "Et no[n] bisognera ch[e] v. s. li facci Pagare li
+[three `#` signs] d' piu l'habbiamo Contentato qui: Ma faccedo gra[n] diligentia in v. s. g... din e l beueraggio", with a
+three-sign cipher insertion after "Pagare li"; line 20 the closing note "L apnte è stata Suggellata Dua volta|volte" (the
+present letter has been sealed twice). This matches what leafnotes/f57v.md's pass B saw on lines 1, 16-18 and 20 on
+25 Sept 2026 (`leafnotes/f57v.md`), now settled per box.
+**Crib candidates for a later test (not run here, per the brief):** (1) the three `#`-signs at 16.23-25 inside plain text
+after "Pagare li" and before "d' piu", a short value (a number or a sum) with a known grammatical slot; (2) words of this
+plain passage that a cipher line on f56r-f57r could repeat: "pagare", "contentato", "diligentia", "beueraggio",
+"suggellata"; (3) the dateline and signature forms ("xvj", "octobr", "Salviati") if a cipher line names the date or the
+sender. Observation only: the sign run `S4^ dl^ Lx^` opens lines 3, 11 and 18 of this leaf right after or before plain
+text, and closes line 2 (also `S4^ dl^ +^ Lx^` on line 1); a crib test would check it against any recurring short phrase.
+No reading of any cipher run is claimed.
+Hosts: openapi.bnf.fr 2 requests (take/release in ROOM.md). Subagents: 5 Sonnet calls (4 passes + 1 reconciliation),
+each about 45-60 s wall.
+
+## Remaining gaps (SALV-57V, 13 Oct 2026)
+Read so far: unmeasured as a reading; no cipher run is read, the folder's families are logged as non-tests or control-backed negatives (HYPOTHESES.md); all 1,222 spec-plain boxes on the 8 leaves are now transcribed (1,220 graded rows, 14.6% M)
+- the Phillipps MS 7293 letter book (BL RP 271/2/4, despatches 17 July 1525-15 May 1527), a possible clear register copy - blocker: needs-physical-access; the original was sold in 1968, holder not recorded, BL image service down since 2023 (Premise check (d))
+- a crib test from f57v's plain passage (SALV-57V crib candidates: the 3-sign insertion after "Pagare li", and pagare/contentato/diligentia/beueraggio/suggellata against f56r-f57r cipher lines) - blocker: not-attempted; the plain passage was read only on 13 Oct (SALV-57V above); next: pre-registered crib scan with tools/decode_key.py --try or SALV-KP's scan script on the current split, shuffled-crib control first, ~$3
+
+## Escalation (SALV-57V, 13 Oct 2026)
+- [x] siblings: Premise check (d), 3 Oct 2026: fr.3087 item 90 (3 Oct 1525, two cipher lines per Molini) and siblings.tsv; no decipherment
+- [x] clear-pages: f57v's 172 plain boxes read (SALV-57V, 13 Oct: 138 A, 23 R, 11 M; 35 [C]); all 8 leaves done; the Phillipps 7293 register copy is needs-physical-access
+- [x] known-keys: LANE R5 B (24 Sept, eight sources) and keytrial.tsv found no fitting key; KEY-OFFICES/KEY-DESIGN re-grepped 11 Oct, nothing added
+- [x] print: CSP Spain III/1 for Oct 1525 read (D2-PRINT4); Desjardins/Canestrini and Molini read earlier; context only
+- [ ] key-rebuild: code+mark anneal control/codemark_curve.py closed after three attempts (SALV2-J2, SALV-CM48, SALV-HAPAX); wordcode context option untested-by-this-tool (SALV-CTX2); every R8 syllabary variant control-backed at 6.4% (DSN irregular by SALV-DSN); untried instrument: a known-plaintext crib scan from f57v's plain passage (new material, SALV-57V)
+- [x] image-check: passes A/B/C, SALV-SPLIT, SALV2-J1A/B and SALV-F56V; f.56r pass C optional (~$3, strips on disk), not decisive for any open family
+- [x] retry: DSN irregular at 96 restarts on the SALV-F56V split (SALV-DSN, 11 Oct): control 0.844 at err 0.064, 0.733 at 0.10, 0.541 at 0.146; target judge FAIL -- control-backed up to 10%, non-test at 14.6%
+Verdict: keep going: 1 internal gap; cheapest next: crib scan from f57v's plain passage against f56r-f57r, shuffled-crib control first, ~$3
