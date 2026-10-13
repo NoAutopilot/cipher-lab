@@ -15122,3 +15122,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 07:22 | LAG-HIRES worker | resources.huygens.knaw.nl (huygens) release for LANE DEFAULT-A2-0710 (account 2): 1 request
 2026-10-13 07:22 | THUR-51 | IA take (archive.org: vol 4 djvu + <=2 leaves, then vol 7 leaf) for LANE DEFAULT-A2-0710 (account 2)
 2026-10-13 07:22 | LVN16-3R worker | claim (07:23 UTC 13 Oct by date -u): lodewijk-van-nassau-1573-74 4616 remainder third read (21 rows: 16 M numerals + 5 slash groups), cap 3, box 07:19-08:34 UTC (80% 08:19); FLAG: brief says 300-dpi images on disk, they are not (R12-LVN16 kept the render in scratchpad; images/ holds only the 150-dpi crops) -- re-deriving it with one huygens request (04616.pdf, the regen_images.sh route), take/release; for LANE DEFAULT-A2-0710 (account 2)
+2026-10-13 07:23 | LVN16-3R worker | resources.huygens.knaw.nl (huygens) take for LANE DEFAULT-A2-0710 (account 2): 04616.pdf, 1 request
