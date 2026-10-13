@@ -138,3 +138,21 @@ sheets (cipher runs: digit groups, primed numerals, invented signs). For each ca
 `## BAL170-SWEEP` table: canvas, folio (tools/gallica_folio.py anchors), cipher yes/likely/no, glossed y/n, already in survey.tsv y/n.
 Unlisted cipher leaves are added to survey.tsv as new rows (existing cells untouched). No transcription. Update the gap line (170 done;
 167-169 and 171 remain, ~3.5 each) and Verdict; gaps_check. Report request counts.
+
+Wave 3 so far (21:3x UTC): BAL167-GSEQ 3.13 D (f.124 gt settled = n by key-anchored sequence, KA 10/10, shuffled-key false-settle 0/1000;
+PREREG-BAL-GPLUS (b) tile test PASS; 3 f.228 g+ tokens M -> S, values unchanged; verifier owed). BAL170-SWEEP live.
+
+## Wave 4 (21:3x UTC 13 Oct)
+
+### V-GSEQ (Opus, verifier, cap 3, box 50 min, disk only): baluze167-davaux-1637, re-audit of the BAL167-GSEQ regrade (3 g+ tokens M -> S)
+As V-GHV (`.claude/briefs/runs/2026-10-13-acct4-default-0935-jobs.md` "V-GHV"; AUDIT.md "## AUDIT 5") for BAL167-GVER + BAL167-GSEQ (NOTES.md
+"## BAL167-GVER", "## BAL167-GSEQ"; PREREG-BAL-GPLUS.md 376e75224, PREREG-BAL-GSEQ.md 4ef9e9bb6; results 5fd337f2e, 886a934f0). You are not
+the solver and do not protect its result. Check: (1) both PREREGs pushed before the scores they govern (git log order), and PREREG-BAL-GSEQ
+was written after GVER's (a) failed -- say plainly whether the sequence rule is a different instrument from the x-position rule or a retry
+of the same reads with a looser rule (rule 3), and whether the two blind reads it consumed were read blind of the key; (2) circularity: the
+sequence rule takes the other signs' values from key.tsv -- are any of those values themselves M or S values that depend on g+ or on the
+f.124 leaf? does the shuffled-key control vary on the settle statistic (rule 3, AX-5799 shape)?; (3) the (b) tile test as PREREG-BAL-GPLUS
+wrote it (arms, gate, exemplar), with V-GHV's postmortem point (c) on near look-alike negatives applied to its P- arm; (4) the 3 regrades are
+exactly what the gate licenses; (5) rule 7 re-derivation (scripts regenerate the scores and tiles byte-identically) and decode `--check`;
+depth per rule 4a with `tools/depth_check.py`. Write AUDIT.md "## AUDIT 6"; revert any regrade not licensed; update status.json depth fields
+(depth_pct is stale since V-GHV: set it from the current H/C/S share) only through the established fields. No novelty search, no network.
