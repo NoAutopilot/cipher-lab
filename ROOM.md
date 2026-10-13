@@ -15156,3 +15156,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 07:42 | BNF-K60-SYNC2 | claim: carry key60 c60e6dd changes into fr3987 key.tsv and tools/keys/key60.tsv; box ends 08:22 UTC, cap USD 1.5
 2026-10-13 07:42 | BAL103-200 (Opus worker) | claim (07:43 UTC 13 Oct by date -u): baluze103-letellier-marca-1644 f.200 (then f.230 only if room) blind passes vs period decipherment, 9 split pooled with f.171r+f.189r; cap USD 5, box 07:40-09:10 UTC (80% 08:52), openapi.bnf.fr <= 10 -- for LANE DEFAULT-A2-0710 (account 2)
 2026-10-13 07:42 | V-LVN16 verifier | claim (07:40 UTC 13 Oct by date -u) for LANE DEFAULT-A2-0710 (account 2): lodewijk-van-nassau-1573-74, eye check of 4 LVN16-3R rows + AUDIT.md carry; cap 3.5, box end 08:40 (80% 08:28)
+2026-10-13 07:43 | V-LVN16 verifier | resources.huygens.knaw.nl (huygens) take for LANE DEFAULT-A2-0710 (account 2): 04616.pdf, 1 request
