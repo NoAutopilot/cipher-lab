@@ -1,0 +1,12 @@
+N 1000 seed 20261013; crib words 15
+S  vs value-shuffle: real 4 | null mean 0 sd 0 p95 0 p99 0 max 0 | >= real 0/1000 (0.000) | distinct null values 1
+S  vs crib-letter-shuffle: real 4 | null mean 0.009 sd 0.09444 p95 0 p99 0 max 1 | >= real 0/1000 (0.000) | distinct null values 2
+S  vs label-shuffle (identical by construction): real 4 | null mean 4 sd 0 p95 4 p99 4 max 4 | >= real 1000/1000 (1.000) | distinct null values 1
+S1 vs value-shuffle: real 0.1813 | null mean 0.1632 sd 0.01964 p95 0.1977 p99 0.2123 max 0.2513 | >= real 177/1000 (0.177) | distinct null values 930
+S1 vs label-shuffle: real 0.1813 | null mean 0.2051 sd 0.02503 p95 0.2507 p99 0.2674 max 0.3054 | >= real 823/1000 (0.823) | distinct null values 988
+S gate (<= 0.01 of both value- and crib-letter-shuffle at or above real): PASS
+S1 gate (<= 0.05 of both value- and label-shuffle at or above real): FAIL
+ANCHOR battery 2046_leg_efgh:26  26:[d-loop]=b/M->b 30:[d-hook]=?/U->e
+ANCHOR batteryen 2046_leg_efgh:26  26:[d-loop]=b/M->b 30:[d-hook]=?/U->e
+ANCHOR officiers 2046_leg_abc:1  2:[w-tilde]=f/M->f 3:[amp]=f/M->f 4:[f-loop]=i/M->i 5:[thorn]=c/M->c
+ANCHOR plaats 2046_leg_efgh:59  59:[s-hook]=?/U->p 60:g=g|l/M->l
