@@ -2933,5 +2933,50 @@
     "date": "2026-10-13 22:07:43 UTC"
    }
   ]
+ },
+ "viv105": {
+  "note": "VIV-105, 13 Oct 2026: native page regions from openapi.bnf.fr IIIF v3 (ark btv1b9009661v); images untracked in images/v105/ (.gitignore); regenerate with v105/fetch.py then the commands in NOTES.md ## VIV-105. One earlier request (c110 pct region) returned HTTP 500 and is not logged here.",
+  "fetches": [
+   {
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f111/info.json",
+    "date": "2026-10-13 22:43:45 UTC",
+    "status": 200,
+    "bytes": 321,
+    "sha1": "3ece9e8bee399bf1899e19d4f41d378a8ae55a20",
+    "file": "v105/c111_info.json"
+   },
+   {
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f110/5250,650,3150,5550/max/0/default.jpg",
+    "date": "2026-10-13 22:45:06 UTC",
+    "status": 200,
+    "bytes": 2171187,
+    "sha1": "76eb90c8bbbd315c2b39bdfc408c510e3776531e",
+    "file": "images/v105/c110_f105r.jpg"
+   },
+   {
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f111/250,250,3850,5800/max/0/default.jpg",
+    "date": "2026-10-13 22:45:22 UTC",
+    "status": 200,
+    "bytes": 2771393,
+    "sha1": "80f77628fdf101a423f7ec1877454595b1138ca4",
+    "file": "images/v105/c111_f105v.jpg"
+   },
+   {
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f111/4050,250,3850,5800/max/0/default.jpg",
+    "date": "2026-10-13 22:45:29 UTC",
+    "status": 200,
+    "bytes": 2521481,
+    "sha1": "bd0087fbe6616c766d228c7aba4d8177733059b3",
+    "file": "images/v105/c111_f106r.jpg"
+   },
+   {
+    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009661v/f112/250,250,3850,5800/max/0/default.jpg",
+    "date": "2026-10-13 22:45:37 UTC",
+    "status": 200,
+    "bytes": 2631955,
+    "sha1": "d8837d9b372c93aff91e6287c3857871f0f5d701",
+    "file": "images/v105/c112_f106v.jpg"
+   }
+  ]
  }
 }

@@ -1,0 +1,75 @@
+# Clerk's copy of the 2 Mar 1580 letter (fr.16107 f.105r-f.105v), reconciled by VIV-105, 13 Oct 2026. Grade I throughout.
+# Conventions: tx/CONVENTIONS_f105.md. {?} illegible word, [word?] doubtful. Columns: line, agree (matched/words, share), text.
+# agree = word-level agreement of the two independent reads on that line (v105/agree.py --expand); low agreement = unsettled line.
+## f.105r (c110 right): base VIV-T (4 Oct), second read B (VIV-105); page agreement 0.321
+r01	4/9	0.44	Quant a l'affaire qui touche le marquisat de Salluces
+r02	4/12	0.33	de la [deux?] [que?] Monsieur et [Savoye?] a [demeure?] [de?] bien contente
+r03	5/12	0.42	apres pour [cause?] et la negotiation qui a este passee en ceste
+r04	4/11	0.36	matiere avec la Royne et aussi [bien?] que les contraires se
+r05	6/10	0.60	[avoient?] [voulu?] donner audiance a son ambassadeur luy ayant faict
+r06	6/9	0.67	retenir au mesme ambassadeur et [lempereur?] et {?} de
+r07	4/11	0.36	le Portugal est [mort?] {?} a ce que {?} lequel {?}
+r08	0/8	0.00	tres importune de considerer que l'avoir eu [receu?]
+r09	0/13	0.00	Savoye qui a point nomme [dez?] ceste [tres?] [affectionne?] de quoy [le dit?]
+r10	4/12	0.33	avec le [quel?] j'avois [receu?] vos despesches {?} et a este la
+r11	4/10	0.40	[ce qui?] m'estoyt mort depuis peu {?} attendu l'importance que
+r12	5/10	0.50	c'estoyt pour {?} {?} feust bien au bien {?} de
+r13	2/10	0.20	ce qui se [mesnage?] et a ceste fin mais {?}
+r14	7/12	0.58	{?} faict toutte sorte de dilligence de tirer tout ce que {?}
+r15	7/12	0.58	de la depesche et ce courrier qui est {?} ambassadeur a dict
+r16	3/10	0.30	croyant plus pour quil [nen?] feust rapporte {?} pour couvrir
+r17	6/11	0.55	mieulx ce qui estoyt et plus [secret?] {?} assez que {?}
+r18	8/13	0.62	{?} avoit faict de tres grandes offres pour le bien de ses affaires
+r19	5/9	0.56	de {?} luy ayant envoye le mareschal de Bellegarde
+r20	1/9	0.11	avec {?} laquelle {?} luy faisoyt {?} le marquisat
+r21	0/9	0.00	de Salluces {?} [plus?] {?} il estoyt faict {?}
+r22	0/9	0.00	{?} [mais?] [a cet?] effect {?} que les ambassadeurs
+r23	2/8	0.25	traictent {?} de ce courrier apres avoir donne
+r24	3/9	0.33	{?} bien particulierement tant de ce qui s'estoyt passe
+r25	3/9	0.33	a Grenoble que a Montlouel et [Guillestre?] toutte ceste
+r26	4/8	0.50	negotiation que le Roy Catholique se declarast {?}
+r27	1/9	0.11	{?} qu'il avoit traicte avec le [sieur?] Bellegarde {?}
+r28	3/8	0.38	{?} {?} est assez {?} et que {?}
+r29	2/9	0.22	plus {?} de la dissimulation que {?} vouldroit {?}
+r30	5/11	0.45	que le temps {?} partis que {?} pourroit {?} et {?}
+r31	2/7	0.29	{?} {?} pourroit retirer {?} premier {?}
+r32	1/4	0.25	{?} {?} trouve {?}
+r33	4/10	0.40	{?} aux {?} que les {?} vint a faillir {?}
+r34	2/10	0.20	attendu la grande flegme avec laquelle il avoit tousjours {?}
+r--	-	-	subscription at foot (both readers): Madame je supplie le Createur ... de Madrid ce [deux]me de Mars 1580 / ... De Vivonne
+## f.105v (c111 left): reads A and B (VIV-105), settled by the reconciler; page agreement A-B 0.366
+vS01.1	8/12	0.67	traicte auec luy ou il y auoit este besoing. [deste?] de tresgrand
+vS01.2	6/11	0.55	artifices p.r [entretenir?] et {?} {?} p.r [asseurer?] [sauoir?] bien
+vS01.3	4/10	0.40	aussi negotiacions tant en [bray?] comme a [leur?] [soubleue?] {?}
+vS01.4	5/10	0.50	de [cassoueroin?] comme il fault lire [Card.?] & {?} [aste?] [qualite?]
+vS02.1	7/11	0.64	[vattessuire?] en ma. Il semble q. a propos de luy {?}
+vS02.2	4/10	0.40	{?} en {?} {?} a entendu. de par [peur?] aussi Je
+vS02.3	5/9	0.56	puis bien donner {?} {?} {?} {?} a mesme
+vS02.4	4/11	0.36	[contre?] {?} roy catho. Il a aussi {?} depesche ung {?}
+vS03.1	2/11	0.18	{?} lettre {?} qui en {?} {?} le [fauborg?] {?} de {?}
+vS03.2	6/11	0.55	{?} este la. Il {?} traicte {?} et boz p.r {?}
+vS03.3	3/10	0.30	{?} {?} et [auec?] au grand {?} armees est le bastiment
+vS03.4	4/9	0.44	{?} mons.r de Sauoye {?} doit auoir lettres {?} {?}
+vS04.1	2/9	0.22	{?} les [Ingenieurs?] qui le pourroient auenir & {?}
+vS04.2	6/9	0.67	la suppliant tres humblement me pardonner ou Je {?}
+vS04.3	3/11	0.27	{?} trop auoir {?} {?} mettre {?} prouidam {?} de
+vS04.4	4/11	0.36	par zele {?} Je a {?} {?} [Erbout?] est tousiours {?}
+vS05.1	4/8	0.50	[gouuernement?] recompense de grands [seruices?] {?} dit auoir
+vS05.2	5/12	0.42	faicts et moyens p.r {?} {?} dit {?} {?} le prince
+vS05.3	3/11	0.27	Roy {?} qui est de {?} promet a {?} {?} entendu [nouuelles?]
+vS05.4	2/11	0.18	de son {?} {?} gouste auec peine de Marseille {?}
+vS06.1	2/11	0.18	abbaie {?} auec {?} {?} a [aschever?] de cinq {?} fut
+vS06.2	6/8	0.75	tous les grands entrepreneurs et tous [empeschez?] {?}
+vS06.3	4/11	0.36	[pelotons?] par a boz rabatt. Mais {?} {?} {?} {?}
+vS06.4	2/10	0.20	{?} longue {?} {?} [Saloue?] {?} {?} {?} bonne
+vS06.5	0/11	0.00	qua fiz des pauures {?} a manter et {?} tout {?}
+vS06.6	0/9	0.00	mont. Mais les {?} Card.x {?} {?} habiller {?}
+vS07.1	2/8	0.25	{?} professeurs et marinier {?} {?} le {?}
+vS07.2	4/10	0.40	{?} Cannes {?} est tousiours auec le {?} {?} des
+vS07.3	2/10	0.20	{?} qui le [fauoriserent?] {?} traictoyt fort bien. Il est {?}
+vS07.4	6/9	0.67	boz marinier Ingenieur de {?} cosmographe. Il est bien
+vS08.1	6/11	0.55	Il p.r apporte au Roy Catho. deux {?} & boz {?}
+vS08.2	5/11	0.45	luy auoit faict {?} et Flandres {?} du Roy {?} {?}
+vS08.3	0/10	0.00	Naples {?} {?} {?} {?} et {?} {?} boz
+vS08.4	1/9	0.11	marinier et {?} {?} {?} {?} {?} et {?}
+vS09.1	4/12	0.33	Il a fait bien [bastiment?] a [ballinier?] {?} {?} au {?}

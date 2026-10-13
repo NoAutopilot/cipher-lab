@@ -1,0 +1,36 @@
+S01.1	traicte auec luy on il y auoyt este besoing. Iceste de tresbrand
+S01.2	artifices p.r le tenir et {?} {?} p.r assez sauoir bien
+S01.3	aussi negotiasses tant en bray comme a lige soubleue boyre
+S01.4	de cassoueroin comme il faut lire {?} & {?} {?}
+S02.1	vattessuire en ma. Il semble q. a propos de le q.
+S02.2	{?} en {?} {?} entendu, de pas peur aussi Je
+S02.3	puis bien donner {?} {?} {?} {?} a mesme
+S02.4	coudra? hors roy catho. Il a aussi {?} depesche ung {?}
+S03.1	{?} {?} {?} qui {?} {?} le fauborg & {?} {?}
+S03.2	{?} vostre la. Il {?} traicte {?} & boz p.te {?}
+S03.3	{?} {?} auec {?} grand {?} armees et le bastiment
+S03.4	{?} mons.r de Sauoye {?} doit auoir {?} {?}
+S04.1	{?} {?} Ingenieurs qui le pourroit auenir & prouidue
+S04.2	la suppliant tres humblement {?} pardonne ou Je {?}
+S04.3	de auoir trop {?} {?} {?} mettre {?} prouidam {?} de
+S04.4	par zele & Je a ste {?} Erbout est tousiours dey
+S05.1	pouruoiant {?} de grand {?} & dit auoir
+S05.2	faits et moyen p.r fiez auec & dit & prend le prince
+S05.3	Roy {?} qui {?} {?} promet a {?} & {?} {?}
+S05.4	{?} {?} & gouste {?} {?} {?} par {?} {?} {?}
+S06.1	abilité {?} auec {?} {?} {?} a aschever de {?} {?}
+S06.2	tous les grands entrepreneurs et tous {?} &
+S06.3	pellobes par a boz rabbett. Mais {?} {?} {?} {?} {?}
+S06.4	{?} longué {?} {?} Saloue {?} {?} {?} {?} bonne
+S06.5	gua fiz {?} pauures {?} a manter & {?} tout {?}
+S06.6	mont. Mais {?} {?} Card.l {?} {?} habiller {?}
+S07.1	{?} professeurs et marinier {?} {?} {?} Rutrogher
+S07.2	{?} Canuer {?} {?} tousiours auec le fen {?} des
+S07.3	Jonay {?} {?} fauouable? Estaictoyt fort bien {?} {?} {?}
+S07.4	boz marinier Ingenieur de Come cosmographe Il est bien
+S08.1	Il pose apporte au roy Catho. deux retables & boz jours
+S08.2	Luy auoit faict fiez & flandres {?} du roy {?} de
+S08.3	naples {?} {?} {?} patros bretigs & {?} te boz
+S08.4	marinier et rentlem {?} {?} fiz namenz & galhors
+S09.1	Il fait bien bayssan {?} a ballinor {?} {?} de {?} Ephinn
+# note: Hand is fast and heavily abbreviated; only roughly 35-40% of words are secure, many lines largely guessed or gapped. Strip-edge overlaps were dropped as instructed, so S09 holds only one full line.

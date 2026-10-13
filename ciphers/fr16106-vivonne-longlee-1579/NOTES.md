@@ -75,7 +75,7 @@ Gallica requests: canvases 107-112 at 900 px (6), regions of c109/c110 (2), c110
 ## Remaining gaps (VIV-T, 4 Oct 2026)
 Read so far: 57 canvases sampled (VIV-M); one pair located (2 Mar 1580, c107-c109 / c110-c112); one cipher page (f.101v) transcribed twice, unreconciled (err_2reader 0.576); half of one copy page (f.105r) read.
 - Sign inventory of the letter-form system unsettled (two machine readers split 58%) - blocker: not-attempted; beyond this brief (one pair, one first test); next: owner sign sorter on c107 crops (tools/sign_sorter.py build from images/c107_L*.jpg, about 1,300 tiles), ~$1 to build + owner time
-- Clerk's copy f.105r-106v only half read - blocker: not-attempted; beyond this brief (one pair, one first test); next: a second independent read of f.105r plus f.105v-106v at native resolution with a paleography-focused pass, ~$3
+- Clerk's copy f.105r-106v read but unsettled - blocker: not-attempted; VIV-105 (13 Oct 2026): f.105r and f.105v read twice (word agreement 0.321 / 0.366 after abbreviation expansion), reconciled in tx/plain_f105_rec.txt (20 of 69 lines >= 0.50), f.106r-v read once (single eye, ~8% / ~35% secure); machine readers plateau at this hand, so the next instrument is different, not a third machine pass (Usage 6); next: a person's read of the 69 low-agreement lines, or a paleography-specialised pass with the line-level strips and a period word list, plus an eye check of the copy's page order (f.105r carries the subscription), ~$2
 - Test 1 at power: re-run test1.py on settled labels over the whole letter (c107-c109 left, five pages, against the four-page copy) - blocker: not-attempted; beyond this brief (one pair, one first test); next: after the two gaps above, ~$4
 - Which Vivonne cipher letters 1580-82 lack a clerk's decipherment - blocker: not-attempted; VIV-WALK (13 Oct 2026) walked fr.16107/16108 at stride 5 plus 27 fill-ins (198 canvases, cipher_census.tsv, cipher_letters.tsv): 18 pairs and 2 probable pairs, 14 cipher letters with no copy seen, 2 Dechifre headings over blank pages (no copy written), 2 Dechifre slips pasted over cipher with no copy seen; a copy can still sit in the unwalked canvases between strides, so "not seen" is not "lacks"; next: walk the 2-4 canvases after each of the 14 not-seen runs plus the 2 slip runs at 600 px (about 50 openapi requests), ~$2
 - Mousset table applied through a by-eye crosswalk on an unsettled inventory (D4-VIVMOUS PASS 0.454 vs null p99 0.400; D4-VIVV text-specific margin thin, 0.454 vs wrong-text p99 0.448; D2-VIVX applied D4-VIVV's four crosswalk fixes and nothing moved: 0.4537 unchanged, wrong-text p99 0.4475 unchanged; second attempt of this instrument, a third crosswalk-only pass is closed by rule 3) - blocker: not-attempted; needs settled labels from the owner sign sorter (gap 1) first; next: after the sorter, re-label the piles directly against key/mousset1912.tsv glyphs (a different instrument: new labels, not a crosswalk edit) and re-run vivmous.py + vivv_contam.py, ~$1.5
@@ -88,8 +88,8 @@ Read so far: 57 canvases sampled (VIV-M); one pair located (2 Mar 1580, c107-c10
 - [x] print: Mousset 1912, Gachard II, d'Ars 1884 read; no print of the 2 Mar 1580 letter's text found (d'Ars paraphrase only)
 - [ ] key-rebuild: test 1 fitted a grade-C key, unusable at this transcription error; rebuild after the sorter
 - [x] image-check: 57 canvases sampled (VIV-M); c107-c112 viewed; c107 cut to native line crops; VIV-WALK 198 more canvases at 600 px (fr.16107/16108, stride 5 + fill-ins), classed in cipher_census.tsv
-- [ ] retry: test 1 re-run on settled labels and the whole letter (gap 3)
-Verdict: keep going: 7 internal gaps (VIV-WALK, 13 Oct 2026: census of 1580-82 pairs done at stride 5, 18+2 pairs found); cheapest next: owner sign sorter on the c107 crops (the inventory is the blocker), then a test-1 re-run at power on a longer pair chosen from cipher_letters.tsv (the letter-form pairs of 1580, e.g. 18 May 1580 c233-c253), plus the not-seen fill-in walk ~$2, ~$10 plus owner time
+- [ ] retry: test 1 re-run on settled labels and the whole letter (gap 3); VIV-105 (13 Oct 2026) read the rest of the copy, so the clear side now exists for f.105r-106v at grade I, unsettled
+Verdict: keep going: 7 internal gaps (VIV-105, 13 Oct 2026: copy f.105r-106v read, agreement 0.32-0.37; page order of the copy open) (VIV-WALK, 13 Oct 2026: census of 1580-82 pairs done at stride 5, 18+2 pairs found); cheapest next: owner sign sorter on the c107 crops (the inventory is the blocker), then a test-1 re-run at power on a longer pair chosen from cipher_letters.tsv (the letter-form pairs of 1580, e.g. 18 May 1580 c233-c253), plus the not-seen fill-in walk ~$2, ~$10 plus owner time
 
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
@@ -245,3 +245,52 @@ Observations (by eye at 600 px, grade I):
 What this does not establish: that the 14 "not seen" runs lack a copy -- the 4 canvases between stride points were not looked at
 for most runs; letters, dates and addressees are read off 600-px headings and may be off by a day (c118 9 Mar vs c126 8 Mar).
 Requests: openapi.bnf.fr 198 (all 200). No other host.
+
+## VIV-105: clerk's copy f.105r-f.105v read twice, f.106r-v once (13 Oct 2026, 22:37-22:5x UTC by date -u)
+Brief: LANE DEFAULT-A4-2135 (account 4), job VIV-105. Transcription only: no key test, no decode, nothing graded above I.
+Prior work: `python3 tools/prior_work.py fr16106-vivonne-longlee-1579 --item-spec 'fr.16107 f.105r-106v clerk copy 2 Mar 1580'
+--step-type transcribe --offline` -> exit 4 (owed: LEAD 1-own = VIV-WALK's claim; LOOK 2-leaf; UNCHECKED 3-solver, 3-tomokiyo);
+all four recorded CLEAR in prior-work.tsv (VIV-WALK did no transcription; the leaf is itself the clear copy; check-solved CS-1
+covered the solver repos and blogs for this pool; Tomokiyo's Vivonne1 table is fr.16106 1572-74, a different key).
+Route: openapi.bnf.fr IIIF Image v3 (`v105/fetch.py`, log `v105/fetch_log.jsonl`, `images/manifest.json` "viv105"): 6 requests,
+info.json c111 (200); c110 `pct:` region HTTP 500, retried once after 60 s as a pixel region (200); c111 left, c111 right, c112 left
+(200). Images stay untracked in `images/v105/` (.gitignore). No other host.
+Crops (pasted): `python3 tools/iiif_lines.py --image images/v105/c110_f105r.jpg --region 150,0,2950,5450 --out images/v105/f105r
+--prefix f105r --max-width 1800 --overlap 200 --debug` -> 38 bands; `... c111_f105v.jpg --region 550,400,3200,4250 --out
+images/v105/f105v --prefix f105v ...` -> 33 bands; `... c111_f106r.jpg --region 450,350,2850,4300 ... --prefix f106r` -> 32;
+`... c112_f106v.jpg --region 750,350,2950,2000 ... --prefix f106v` -> 12. The debug overlay showed the tool's bands under-count
+this tight, slanting hand (33 bands for about 35 lines on f.105v), so `python3 v105/strips.py f105r f105v f106r f106v` groups
+4 bands per strip at full text width, scaled to 2400 px (`v105/strips.tsv`, 30 strips), and readers number lines within a strip.
+Readers: Sonnet subagents, one page per call, strip paths and `tx/CONVENTIONS_f105.md` only (no d'Ars/Mousset conventions file
+existed in the folder; that sheet states the conventions given), blind to VIV-T's text and to each other; B reads in reverse strip order.
+| page | read 1 | read 2 | lines | word agreement (raw / `--expand`) | {?} words | reader's own secure share |
+|---|---|---|---|---|---|---|
+| f.105r | VIV-T 4 Oct (tx/plain_c110_f105r.txt) | B (tx/plain_c110_f105r_B.txt) | 34 / 38 | 0.255 / 0.321 | 54 / 63 | ~50% / ~20% |
+| f.105v | A (tx/plain_c110_f105v_A.txt) | B (tx/plain_c110_f105v_B.txt) | 33 / 35 | 0.355 / 0.366 | 147 / 112 | ~20% / ~35% |
+| f.106r | A (tx/plain_c111_f106r_A.txt) | none | 37 | single eye | 234 of ~440 words | ~8% |
+| f.106v | A (tx/plain_c112_f106v_A.txt) | none | 12 | single eye | - | ~35% |
+`--expand` (v105/agree.py) expands the common abbreviations (p.r, q., Mons.r, Ma.te, &, ...) before matching, the PX-BRODEC
+lesson: VIV-T expanded abbreviations while reader B kept them, so about a fifth of the raw f.105r gap is notation, not misreading.
+Reconciliation (one unit, this worker, by eye on every f.105v strip and f.105r S01): `tx/plain_f105_rec.txt`, built by
+`python3 v105/build_rec.py` (`--check` exits 1 if stale; check OK at commit). f.105r: VIV-T's read is kept as the base -- on
+strip S01 it is visibly right where B is not ("Quant a l'affaire qui touche le marquisat de Salluces" vs B "Luan alaffre ...
+mariage de Valluars") -- with B's agreement per line beside it. f.105v: a settled text from A and B (`v105/rec_f105v.tsv`),
+agreeing 0.448 with A and 0.488 with B. Lines at >= 0.50 agreement: 20 of 69 (f.105r+f.105v). Grade I throughout.
+Observations (grade I, by eye):
+- f.105r ends its body and then carries the subscription "Madame je supplie le Createur ... de Madrid ce [deux]me de Mars
+  1580 ... De Vivonne", yet f.105v, f.106r and f.106v carry further body text with no new heading and no subscription; f.106v
+  ends after 12 lines with a flourish. So either the copy's pages are not in reading order, or f.105v-106v is not the same text
+  as f.105r. Not settled here; it decides which copy pages the test-1 re-run should align against the five cipher pages.
+- f.105r's subject (VIV-T's read, B partly agreeing): the marquisat de Saluces, Savoy, Bellegarde, Grenoble and Montluel.
+  f.105v: a mariner and engineer ("bon marinier Ingenieur ... cosmographe", both readers and the reconciler) brought to the
+  Catholic King, Flanders, Naples, Marseille, "le bastiment". f.106r-v (single eye): Portugal, the Indies, the frontiers of
+  Portugal, "retirer en France". These are topics read off uncertain words, not a reading.
+What this does not establish: any word above grade I; that the per-line agreement measures accuracy (it is agreement between
+two machine readers, both of which called their own reads rough); the copy's page order.
+Next-best pairs for the same pipeline (from cipher_census.tsv only): the census has no legibility field, so the copies cannot be
+ranked by legibility from it; it can only rank by what makes the pipeline cheaper. Letter-form alphabet (same system as 2 Mar
+1580), both canvases named: 18 May 1580 (cipher c233-c252, copy c253) -- longest run, already the escalation pick;
+23 Mar 1580 (c173-c19x, copy c193); 1 Jun 1580 to the Queen (c268-c279, copy c280); 9 Jul 1580 (c328, copy c330, a slip at c328);
+14 Apr 1581 (c4x-c52, copy fr.16108 c53). A 600-px legibility look at those five copies (5 openapi requests) should precede
+choosing one.
+Requests: openapi.bnf.fr 6 (5 x 200, 1 x 500 retried). Cost not visible to this session.

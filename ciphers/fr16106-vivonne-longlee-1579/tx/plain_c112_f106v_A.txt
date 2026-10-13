@@ -1,0 +1,14 @@
+# fr.16107 c112 (f106v), single blind read by a Sonnet subagent for VIV-105, 13 Oct 2026, from images/v105/strips/f106v_S*.jpg; SINGLE-EYE: every word grade M at best, unreconciled.
+S01.1	{?} [loz?] a aduertir [Mons.r?] a toutte diligence [Infinis?]
+S01.2	prouision pour tout sur les frontieres de portugal
+S01.3	a ael fz {?} et ne aussi {?} il mentrasse en la portu{?}
+S01.4	. {?} que ne feust {?} et faulte de toutte
+S02.1	{?} vide qu [pusssom?] oumoiz {?} {?} a mey
+S02.2	le roy assurement {?} ay ordre ay {?} {?} {?}
+S02.3	de S.r {?} authorité du present {?} {?} ont aduis
+S02.4	ou souhray que p vouldent retirer en france v
+S03.1	{?} {?} {?} {?} de {?} prendre a ordener
+S03.2	{?} {?} toutte {?} diligence {?} pourroit pour la vie
+S03.3	{?} main de {?} faict pour doubter {?} {?} le {?}
+S03.4	tous Infiniz bour {?} {?}
+# note: About 35% of words are secure; the fast hand is very hard to read and many words are guesses. Below the last line there is a short oblique slash-like flourish, not text.
