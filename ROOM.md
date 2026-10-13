@@ -15339,3 +15339,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 18:56 | VIV-HEADS worker (Opus): fr16104-vivonne-spain-1572 | claim (18:54 UTC 13 Oct by date -u) for LANE DEFAULT-A1-1840 (account 1): heads of dechiffre inks 78, 97, 101 vs ink 52; cap USD 2, box 18:54-19:39 UTC (80% 19:30), openapi.bnf.fr <= 8
 2026-10-13 18:57 | F4712-C59 worker (Opus) | openapi.bnf.fr take for LANE DEFAULT-A1-1840 (account 1): btv1b9058289m c59-c70 at 600 px, <= 14 requests
 2026-10-13 18:58 | F4712-C59 worker (Opus) | openapi.bnf.fr release for LANE DEFAULT-A1-1840 (account 1): 12 requests all 200 (btv1b9058289m c59-c70 at 600 px); no 1600 px region needed
+2026-10-13 18:59 | VIV-HEADS worker (Opus) | openapi.bnf.fr take for LANE DEFAULT-A1-1840 (account 1): btv1b9009609w c264 + c306-c324 probes at 1600 px, <= 8 requests
