@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Map folios to canvases in a Gallica (or any IIIF v2) manuscript, from the manifest's own labels, and say where
+"""Map folios to canvases in a Gallica (or any IIIF v2 or v3) manuscript, from the manifest's own labels, and say where
 the map is inconsistent instead of assuming one offset.
 
   python3 tools/gallica_folio.py ARK [--folio 35 [--side r|v]] [--anchor CANVAS=FOLIO[r|v] ...] [--list]
-                                 [--manifest FILE] [--cache DIR] [--json]
+                                 [--manifest FILE] [--cache DIR] [--json] [--iiif-host gallica|openapi]
   ARK: 'btv1b52521512h', 'ark:/12148/btv1b52521512h', or a gallica.bnf.fr URL containing the ark.
 
 Lesson answered (LEDGER.md and NOTES of fr16092-maisse-1582, fr5160-letellier-1653, fr20140-danzay-1557, 23-24
@@ -24,14 +24,29 @@ What it does:
      not share one offset.
   4. --folio N: the canvas(es) labelled N (recto and verso), with the native image URL and the canvas size; if no
      canvas carries the label, an estimate from the nearest labelled leaves or anchors, marked ESTIMATE (check by eye).
+  5. --iiif-host openapi (13 Oct 2026, IIIF-HOST): gallica.bnf.fr/iiif answers 403 to the cloud, but BnF's API host
+     openapi.bnf.fr serves the same images over IIIF Image API v3. With this option the native URLs printed are
+     https://openapi.bnf.fr/iiif/image/v3/ark:/12148/ARK/fN/full/max/0/default.jpg, built from the ark and the canvas
+     number (canvas fN is the same image on both hosts). The manifest is read from the cache
+     (sources/gallica-manifests/ARK.json, v2 or v3) when present; otherwise it is fetched once from openapi.bnf.fr's
+     IIIF Presentation v3 path (presentation/v3/ark:/12148/ARK/manifest.json; probe of 13 Oct 2026 on btv1b90015040:
+     HTTP 200, 340 canvases, labels and sizes identical to Gallica's v2 manifest; the presentation/v2 path answers
+     404) and cached under the same name. With OPENAPI_MANIFESTS emptied the tool stops with exit 2 instead of
+     fetching and names the cache file it looked for. The default (gallica) changes nothing.
 Exit 0; 2 when the manifest cannot be fetched.
 
-Test: python3 tools/tests/test_gallica_folio.py (offline, on the cached fr.20140 manifest in the repo).
+Test: python3 tools/tests/test_gallica_folio.py (offline, on the cached fr.20140 manifest in the repo); --iiif-host:
+python3 tools/tests/test_iiif_host.py (offline, openapi v3 manifest and info.json fixtures).
 """
 import argparse, json, os, re, sys, time, urllib.error, urllib.request
 
 UA = 'cipher-lab research script (contact via repository)'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+IMAGE_BASE = {'gallica': 'https://gallica.bnf.fr/iiif/ark:/12148/{ark}/f{n}',
+              'openapi': 'https://openapi.bnf.fr/iiif/image/v3/ark:/12148/{ark}/f{n}'}
+GALLICA_MANIFEST = 'https://gallica.bnf.fr/iiif/ark:/12148/{ark}/manifest.json'
+# presentation-manifest URLs openapi.bnf.fr answers 200 for (IIIF-HOST probe, 13 Oct 2026: v3 200, v2 404)
+OPENAPI_MANIFESTS = ['https://openapi.bnf.fr/iiif/presentation/v3/ark:/12148/{ark}/manifest.json']
 LABEL = re.compile(r'^\s*(?:f(?:ol)?\.?\s*)?(\d+)(?:\s*-\s*(\d+))?\s*(bis|ter)?\s*([rv])?\s*\.?\s*$', re.I)
 
 
@@ -40,14 +55,24 @@ def ark_id(s):
     return m.group(1) if m else s
 
 
-def fetch_manifest(ark, cache, path=None):
+def native_url(ark, n, host='gallica'):
+    """Whole-canvas native image URL for canvas fN: IIIF v2 full/full/0/native on Gallica, v3 full/max/0/default on openapi."""
+    base = IMAGE_BASE[host].format(ark=ark, n=n)
+    return base + ('/full/max/0/default.jpg' if host == 'openapi' else '/full/full/0/native.jpg')
+
+
+def fetch_manifest(ark, cache, path=None, host='gallica'):
     if path:
         return json.load(open(path, encoding='utf-8')), 'file'
     cp = os.path.join(cache, ark + '.json')
     if os.path.exists(cp):
         return json.load(open(cp, encoding='utf-8')), 'cached'
-    url = f'https://gallica.bnf.fr/iiif/ark:/12148/{ark}/manifest.json'
-    req = urllib.request.Request(url, headers={'User-Agent': UA, 'Accept': 'application/json'})
+    if host == 'openapi' and not OPENAPI_MANIFESTS:
+        print(f'{ark}: no cached manifest at {cp}, and no openapi.bnf.fr manifest path is configured; nothing fetched. '
+              'Give --manifest FILE.', file=sys.stderr)
+        sys.exit(2)
+    url = (OPENAPI_MANIFESTS[0] if host == 'openapi' else GALLICA_MANIFEST).format(ark=ark)
+    req = urllib.request.Request(url, headers={'User-Agent': UA, 'Accept': 'application/json, application/ld+json'})
     try:
         body = urllib.request.urlopen(req, timeout=120).read().decode('utf-8', 'replace')
     except urllib.error.HTTPError as e:
@@ -56,10 +81,10 @@ def fetch_manifest(ark, cache, path=None):
         sys.exit(f'{url}: {e.reason}; unreachable from here.')
     if 'altcha' in body.lower() or body.lstrip()[:1] != '{':
         sys.exit(f'{url}: challenge or non-JSON page (altcha?); stop, do not retry. Log it in NOTES.md and ROOM.md.')
-    time.sleep(1.5)
+    time.sleep(3 if host == 'openapi' else 1.5)
     os.makedirs(cache, exist_ok=True)
     open(cp, 'w', encoding='utf-8').write(body)
-    return json.loads(body), 'fetched'
+    return json.loads(body), 'fetched from ' + url.split('/')[2]
 
 
 def canvases(man):
@@ -137,10 +162,16 @@ def main(argv=None):
     ap.add_argument('--manifest', help='read this manifest file instead of fetching')
     ap.add_argument('--cache', default=os.path.join(ROOT, 'sources', 'gallica-manifests'))
     ap.add_argument('--json', action='store_true', help='print the --folio answer as JSON')
+    ap.add_argument('--iiif-host', choices=sorted(IMAGE_BASE), default='gallica',
+                    help='host for the manifest fetch and the native image URLs printed (default gallica, IIIF v2); '
+                         'openapi = openapi.bnf.fr (Presentation v3 manifest, Image v3 URLs .../full/max/0/default.jpg); '
+                         'a cached manifest is read first either way')
     a = ap.parse_args(argv)
     ark = ark_id(a.ark)
-    man, how = fetch_manifest(ark, a.cache, a.manifest)
+    man, how = fetch_manifest(ark, a.cache, a.manifest, a.iiif_host)
     cs = canvases(man)
+    if a.iiif_host != 'gallica':
+        cs = [(n, lab, w, h, native_url(ark, n, a.iiif_host)) for n, lab, w, h, _ in cs]
     labelled = [c for c in cs if parse(c[1])]
     print(f'{ark}: {len(cs)} canvases ({how}); {len(labelled)} with a folio label, {len(cs) - len(labelled)} without')
     if a.list:

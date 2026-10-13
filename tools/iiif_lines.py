@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Fetch a manuscript region once at native resolution and cut it into line crops a transcriber can read.
 
-  python3 tools/iiif_lines.py (URL | --ark ARK --canvas N | --image FILE) --out ciphers/<target>/images
+  python3 tools/iiif_lines.py (URL | --ark ARK --canvas N [--iiif-host gallica|openapi] | --image FILE) --out ciphers/<target>/images
           [--region x,y,w,h] [--columns x0:x1] [--prefix f69] [--distance PX] [--prominence N] [--ink 170]
           [--smooth 1] [--lines-per-crop 1] [--max-width 2400] [--overlap 150] [--top-margin PX] [--debug] [--dry-run]
   URL: an IIIF image URL (any form: service base, info.json, or a full .../region/size/rotation/quality.jpg).
@@ -12,7 +12,8 @@ by hand, and three workers wrote three crop scripts (dupuy452-carpi-1520/images/
 dupuy468-anhalt/images/crop.py). This is the dupuy452 method once, with its parameters exposed.
 
 Steps:
-  1. Fetch {base}/{x,y,w,h}/full/0/native.jpg (Gallica; 'default' elsewhere) once into OUT/src_<id>_<region>.jpg; a
+  1. Fetch {base}/{x,y,w,h}/full/0/native.jpg (Gallica; 'default' elsewhere; IIIF v3 on openapi.bnf.fr:
+     {base}/{x,y,w,h}/max/0/default.jpg, chosen with --iiif-host openapi or an openapi URL) once into OUT/src_<id>_<region>.jpg; a
      later run reads the file. One request, descriptive User-Agent; HTTP 403/429 or an altcha/challenge page stops the
      run with a message (log it in NOTES.md and ROOM.md), no retry loop.
   2. Row ink-density profile over --columns (pixels darker than --ink, summed per row, optionally smoothed).
@@ -118,6 +119,38 @@ UA = 'cipher-lab research script (contact via repository)'
 LIMIT = 30 * 1024 * 1024
 
 
+IIIF_HOSTS = {
+    # Gallica's own IIIF Image API v2 (403 to the cloud since 11 Oct 2026) and BnF's API host, which serves the same
+    # images over IIIF Image API v3 (LANE BNF-FOCUS flag, 13 Oct 2026; route first logged by D. Bourdeau, cyphersolver
+    # targets/nevers1593/NOTES.md, 12 Oct 2026). v3 spells the whole-image size 'max' (v2 'full') and the quality 'default'.
+    'gallica': 'https://gallica.bnf.fr/iiif/ark:/12148/{ark}/f{canvas}',
+    'openapi': 'https://openapi.bnf.fr/iiif/image/v3/ark:/12148/{ark}/f{canvas}',
+}
+
+
+def image_base(ark, canvas, host='gallica'):
+    """IIIF image service base for canvas N of a BnF ark on the chosen host."""
+    return IIIF_HOSTS[host].format(ark=ark, canvas=canvas)
+
+
+def is_v3(base):
+    return 'openapi.bnf.fr' in base or '/image/v3/' in base
+
+
+def region_url(base, region=None):
+    """Full image request for a region at native size: v2 .../full/0/native|default.jpg, v3 .../max/0/default.jpg."""
+    if is_v3(base):
+        size, quality = 'max', 'default'
+    else:
+        size, quality = 'full', ('native' if 'gallica.bnf.fr' in base else 'default')
+    return f"{base}/{region or 'full'}/{size}/0/{quality}.jpg"
+
+
+def info_size(info):
+    """(width, height) from an IIIF info.json, v2 ('@id', 'width', 'height') or v3 ('id', 'type', 'width', 'height')."""
+    return int(info['width']), int(info['height'])
+
+
 def iiif_base(url):
     """Strip an IIIF image URL down to its service base."""
     url = re.sub(r'/info\.json$', '', url)
@@ -126,8 +159,7 @@ def iiif_base(url):
 
 
 def fetch_region(base, region, out):
-    quality = 'native' if 'gallica.bnf.fr' in base else 'default'
-    url = f"{base}/{region or 'full'}/full/0/{quality}.jpg"
+    url = region_url(base, region)
     ident = re.sub(r'[^A-Za-z0-9]+', '_', base.split('/iiif/')[-1]).strip('_')[-60:]
     path = os.path.join(out, f"src_{ident}_{(region or 'full').replace(',', '_')}.jpg")
     if os.path.exists(path):
@@ -1008,6 +1040,9 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('url', nargs='?'); ap.add_argument('--ark'); ap.add_argument('--canvas', type=int)
     ap.add_argument('--image', help='a local image instead of fetching (the region is then cut from it)')
+    ap.add_argument('--iiif-host', choices=sorted(IIIF_HOSTS), default='gallica',
+                    help='with --ark: gallica (IIIF v2, default) or openapi (openapi.bnf.fr, IIIF Image v3: size max, '
+                         'quality default; serves the cloud while gallica.bnf.fr/iiif answers 403)')
     ap.add_argument('--out', required=True, help='images folder of the target')
     ap.add_argument('--region', help='x,y,w,h in native pixels (default: full)')
     ap.add_argument('--columns', help='x0:x1 within the region for the ink profile and the crops (default: all)')
@@ -1113,7 +1148,7 @@ def main(argv=None):
         if a.region:
             im = im.crop((rx, ry, rx + rw, ry + rh))
     else:
-        base = f'https://gallica.bnf.fr/iiif/ark:/12148/{a.ark}/f{a.canvas}' if a.ark else iiif_base(a.url or '')
+        base = image_base(a.ark, a.canvas, a.iiif_host) if a.ark else iiif_base(a.url or '')
         if not base:
             ap.error('give an IIIF URL, --ark with --canvas, or --image')
         src, url, how = fetch_region(base, a.region, a.out)
