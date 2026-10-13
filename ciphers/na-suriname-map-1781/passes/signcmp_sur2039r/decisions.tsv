@@ -1,0 +1,31 @@
+query	line	pos	reader_code	role	key_value	best	tile	bval	conf	second	sval	sconf	located	st	verdict	note
+#15	2039_rem_L1	19	[hash]	control	o	R46	R_Ohash	o	0.7	R16	stukgeschut	0.15	sure	True		three short verticals (m-like) struck by one horizontal line, hatch sign
+#23	2039_rem_L1	23	7	control	e	R29	R_E7	e	0.8	R10	t	0.1	sure	True		7-shaped r: short top bar with descending stroke, after lambda
+#21	2039_rem_L1	41	8	control	i	R38	R_I8	i	0.3	R3	snaphanen	0.1	sure	False		closed 8 (two stacked loops) after lambda, before a
+#12	2039_rem_L1	58	3	control	e	R51	R_E3	e	0.8	R2	g	0.05	sure	True		flat-topped 3 (z-like) after q
+#27	2039_rem_L2	1	[delta]	control	a	R21	R_Adelta	a	0.85	R24	paarden	0.05	sure	True		heavy filled triangle delta after z-heavy
+#26	2039_rem_L2	31	l	control	n	R35	R_Nl	n	0.8	R11	m	0.05	sure	True		final tall l with curl, followed by period
+#17	2039_rem_L3	1	3	control	e	R51	R_E3	e	0.75	R2	g	0.05	sure	True		flat-topped 3 after y
+#9	2039_rem_L3	3	[delta]	control	a	R21	R_Adelta	a	0.85	R24	paarden	0.05	sure	True		open triangle (delta) after dotted x
+#18	2039_rem_L3	8	7	control	e	R10	R_Tr	t	0.4	R29	e	0.25	sure	False		small r with flat 7-like arm, after kappa
+#11	2039_rem_L3	39	[psi]	control	s	R13	R_Sps	s	0.85	R5	d	0.05	sure	True		psi/trident with long descender, after 8
+#19	2039_rem_L3	47	r	control	t	R10	R_Tr	t	0.4	R29	e	0.2	approx	False		r preceded by a raised dot/apostrophe; dot may belong to the t
+#24	2039_rem_L3	59	l	control	n	R35	R_Nl	n	0.8	R11	m	0.05	sure	True		tall l with foot curl, after hatch
+#1	2039_rem_L4	4	o	control	r	R50	R_Ro	r	0.3	R31	kogels	0.1	approx	False		small round o after y, crossed by a vertical ruled line; no dot inside
+#28	2039_rem_L4	9	[psi]	control	s	R13	R_Sps	s	0.85	R5	d	0.05	sure	True		psi/trident with descender, after 3
+#25	2039_rem_L4	17	[hash]	control	o	R46	R_Ohash	o	0.65	R16	stukgeschut	0.15	sure	True		m-like verticals struck by long horizontal stroke (stroke also crosses preceding t)
+#8	2039_rem_L4	31	[lambda]	control	t	R19	R_Tlambda	t	0.85	R45	o	0.05	sure	True		lambda after g, heavy right leg
+#4	2039_rem_L4	36	[lambda]	control	t	R19	R_Tlambda	t	0.85	R45	o	0.05	sure	True		heavy lambda, long right leg, after kappa
+#7	2039_rem_L4	60	o	control	r	R50	R_Ro	r	0.3	R31	kogels	0.05	approx	False		small plain round o after q, no dot
+#6	2039_rem_L4	61	8	control	i	R38	R_I8	i	0.25	R3	snaphanen	0.1	approx	False		small closed 8 / s-like double loop between o and h
+#22	2039_rem_L5	4	r	control	t	R10	R_Tr	t	0.35	R29	e	0.15	sure	False		r with raised tick at top-right, last sign before final period
+#14	2039_rem_L2	11	[J-rev]	target		R15	R_X1	x	0.3	R20	i	0.2	sure	False	non-test (controls below gate)	J-like: short vertical stroke hooked left at foot, small right tick at top, after g 3
+#10	2039_rem_L3	7	K	target		NONE	NONE	NONE	0.5	R4	n	0.15	sure	False	non-test (controls below gate)	kappa-like k: stem with two arms, after o
+#16	2039_rem_L3	48	O	target		R31	R_bull	kogels	0.4	R50	r	0.35	sure	False	non-test (controls below gate)	round O with short stroke/tick at top inside, larger than o
+#5	2039_rem_L3	60	&	target		R23	R_Famp	f	0.4	R3	snaphanen	0.25	sure	False	non-test (controls below gate)	small loop on top, heavy diagonal stroke down-right, short arm right, tail down-left (ampersand-like)
+#20	2039_rem_L4	5	K	target		NONE	NONE	NONE	0.5	R4	n	0.15	sure	False	non-test (controls below gate)	kappa-like k after o, before pi
+#13	2039_rem_L4	26	[J-rev]	target		R15	R_X1	x	0.3	R20	i	0.2	approx	False	non-test (controls below gate)	short J-like stroke: vertical with bottom hook left, small top hook, after psi
+#2	2039_rem_L4	35	K	target		NONE	NONE	NONE	0.5	R4	n	0.15	sure	False	non-test (controls below gate)	small kappa-like k after r: upright stem with two short diagonal arms
+#29	2039_rem_L4	42	&	target		R3	R_trefoil	snaphanen	0.35	R23	f	0.2	approx	False	non-test (controls below gate)	small ampersand & after lambda and comma; comma treated as punctuation
+#30	2039_rem_L5	2	K	target		NONE	NONE	NONE	0.5	R4	n	0.15	sure	False	non-test (controls below gate)	kappa-like k after 5
+#3	2039_rem_head	0	O	target		R50	R_Ro	r	0.5	R31	kogels	0.2	sure	False	non-test (controls below gate)	large plain O, first sign of heading, no inner dot or colon visible

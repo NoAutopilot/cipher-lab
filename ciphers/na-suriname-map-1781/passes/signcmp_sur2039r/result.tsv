@@ -1,0 +1,31 @@
+query	line	best	best_conf	second	second_conf	located	note
+#1	L05	R50	0.3	R31	0.1	approx	small round o after y, crossed by a vertical ruled line; no dot inside
+#2	L05	NONE	0.5	R4	0.15	sure	small kappa-like k after r: upright stem with two short diagonal arms
+#3	L01	R50	0.5	R31	0.2	sure	large plain O, first sign of heading, no inner dot or colon visible
+#4	L05	R19	0.85	R45	0.05	sure	heavy lambda, long right leg, after kappa
+#5	L04	R23	0.4	R3	0.25	sure	small loop on top, heavy diagonal stroke down-right, short arm right, tail down-left (ampersand-like)
+#6	L05	R38	0.25	R3	0.1	approx	small closed 8 / s-like double loop between o and h
+#7	L05	R50	0.3	R31	0.05	approx	small plain round o after q, no dot
+#8	L05	R19	0.85	R45	0.05	sure	lambda after g, heavy right leg
+#9	L04	R21	0.85	R24	0.05	sure	open triangle (delta) after dotted x
+#10	L04	NONE	0.5	R4	0.15	sure	kappa-like k: stem with two arms, after o
+#11	L04	R13	0.85	R5	0.05	sure	psi/trident with long descender, after 8
+#12	L02	R51	0.8	R2	0.05	sure	flat-topped 3 (z-like) after q
+#13	L05	R15	0.3	R20	0.2	approx	short J-like stroke: vertical with bottom hook left, small top hook, after psi
+#14	L03	R15	0.3	R20	0.2	sure	J-like: short vertical stroke hooked left at foot, small right tick at top, after g 3
+#15	L02	R46	0.7	R16	0.15	sure	three short verticals (m-like) struck by one horizontal line, hatch sign
+#16	L04	R31	0.4	R50	0.35	sure	round O with short stroke/tick at top inside, larger than o
+#17	L04	R51	0.75	R2	0.05	sure	flat-topped 3 after y
+#18	L04	R10	0.4	R29	0.25	sure	small r with flat 7-like arm, after kappa
+#19	L04	R10	0.4	R29	0.2	approx	r preceded by a raised dot/apostrophe; dot may belong to the t
+#20	L05	NONE	0.5	R4	0.15	sure	kappa-like k after o, before pi
+#21	L02	R38	0.3	R3	0.1	sure	closed 8 (two stacked loops) after lambda, before a
+#22	L06	R10	0.35	R29	0.15	sure	r with raised tick at top-right, last sign before final period
+#23	L02	R29	0.8	R10	0.1	sure	7-shaped r: short top bar with descending stroke, after lambda
+#24	L04	R35	0.8	R11	0.05	sure	tall l with foot curl, after hatch
+#25	L05	R46	0.65	R16	0.15	sure	m-like verticals struck by long horizontal stroke (stroke also crosses preceding t)
+#26	L03	R35	0.8	R11	0.05	sure	final tall l with curl, followed by period
+#27	L03	R21	0.85	R24	0.05	sure	heavy filled triangle delta after z-heavy
+#28	L05	R13	0.85	R5	0.05	sure	psi/trident with descender, after 3
+#29	L05	R3	0.35	R23	0.2	approx	small ampersand & after lambda and comma; comma treated as punctuation
+#30	L06	NONE	0.5	R4	0.15	sure	kappa-like k after 5
