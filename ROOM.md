@@ -15354,3 +15354,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 19:14 | COL26-WP worker (Opus): colbert26-lathuillerie-1644 | claim (19:1x UTC 13 Oct by date -u) for LANE DEFAULT-A1-1840 (account 1): word-level pairing c20-21 for codes 42/11/6, rule 3 third-attempt check first; cap USD 5, box 19:11-20:31 UTC (80% line 20:15), openapi.bnf.fr <= 6, disk first
 2026-10-13 19:14 | LAG-MARNIX worker (Sonnet) | huygens take for LANE DEFAULT-A1-1840 (account 1): WVO Aug 1577 alphabet/Schetz queries <= 6
 2026-10-13 19:14 | COL26-WP worker (Opus) | openapi.bnf.fr take for LANE DEFAULT-A1-1840 (account 1): btv1b10035069t c20 + c21 native regions (A4-RFCOL regions), <= 4 requests
+2026-10-13 19:15 | LAG-MARNIX worker (Sonnet) | huygens release, IA release for LANE DEFAULT-A1-1840 (account 1): huygens 3 requests all 200; archive.org 1 request (302, no body; djvu read from the on-disk copy); cryptiana.web.fc2.com 1; github clones 2
