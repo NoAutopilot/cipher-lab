@@ -11110,5 +11110,63 @@
    "note": "f.292v | f.293r dechiffre body in the clerk's hand (Portugal, navigation, an English gentleman Thomas Stuc[ley], Ireland); head and date not on this opening: ink 97 or 101",
    "fetched": "2026-10-13 VIV-DECH2"
   }
+ ],
+ "vivheads": [
+  {
+   "canvas": 262,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f262/full/1600,/0/default.jpg",
+   "file": "images/pdech/ov_c262_1600.jpg",
+   "note": "f.240v address leaf endorsed '... St Gouard au Roy ... Novembre 1572' | f.241r HEAD of ink 78: docket '7 Novembre 1572', 'dechiffré de la precedente', ink 78 beside stamped 241",
+   "fetched": "2026-10-13 VIV-HEADS"
+  },
+  {
+   "canvas": 263,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f263/full/1600,/0/default.jpg",
+   "file": null,
+   "note": "f.241v | f.242r ink 78 dechiffre continued (Flandres, duc d'Alve, prince d'Orange)",
+   "fetched": "2026-10-13 VIV-HEADS"
+  },
+  {
+   "canvas": 264,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f264/full/1600,/0/default.jpg",
+   "file": null,
+   "note": "f.242v | f.243r ink 78 dechiffre continued (marquis d'Aimont, Flandres)",
+   "fetched": "2026-10-13 VIV-HEADS"
+  },
+  {
+   "canvas": 308,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f308/full/1600,/0/default.jpg",
+   "file": null,
+   "note": "f.285v | f.286r ink 96 cipher, f.286r signed De Vivonne",
+   "fetched": "2026-10-13 VIV-HEADS"
+  },
+  {
+   "canvas": 309,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f309/full/1600,/0/default.jpg",
+   "file": null,
+   "note": "f.286v | f.287r ink 96 cipher ends f.287r, plain close 'de Madrid ce xvij^e jour de decembre 1572', signed",
+   "fetched": "2026-10-13 VIV-HEADS"
+  },
+  {
+   "canvas": 310,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f310/full/1600,/0/default.jpg",
+   "file": "images/pdech/ov_c310_1600.jpg",
+   "note": "f.287v address leaf endorsed '... 18 decemb.' | f.288r HEAD of ink 97: docket '17 Decembre 1572', 'dechiffré de la precedente', ink 97 beside stamped 288",
+   "fetched": "2026-10-13 VIV-HEADS"
+  },
+  {
+   "canvas": 311,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f311/full/1600,/0/default.jpg",
+   "file": null,
+   "note": "f.288v | f.289r ink 97 dechiffre continued (la Rochelle, galleys, duc d'Alve)",
+   "fetched": "2026-10-13 VIV-HEADS"
+  },
+  {
+   "canvas": 321,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f321/full/1600,/0/default.jpg",
+   "file": null,
+   "note": "f.298v plain lines then cipher | f.299r cipher: ink 100 (23 Dec 1572) cipher; ink 101 head lies after f.299 (c322-c324), not viewed",
+   "fetched": "2026-10-13 VIV-HEADS"
+  }
  ]
 }
