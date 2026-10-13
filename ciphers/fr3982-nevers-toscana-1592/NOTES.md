@@ -168,9 +168,29 @@ several Italian) and run each through `q7test/screen.py target --key <file>` aft
 (`validate --texts 50 --levels 0.10`); ~$2-3 per key, the screen itself costs minutes of CPU. A key whose alphabet has
 figures in the 30s and 0-led pairs and few 8/9 (BNF-Q7-TEST digit profile) first.
 
+## Key no.45 (lane, 13 Oct 2026 12:4x-13:0x UTC by date -u)
+Key: `q7test/key_no45.tsv` (BNF-Q7-TAB, fr.3995 f.84v-85r, "Camp Provin", Aug 1592; alphabet + nulls, 58 rows, from ONE
+blind pass + the worker's own read -- treat its H grades as M until a second pass). Its rule: 1 and 0 are nulls anywhere,
+including inside a pair; 89, 35, 28 are two-figure nulls; the alphabet itself uses no 0 or 1.
+1. Digit-8 count (lane, CPU): 2000 held-out it16dip windows enciphered with no.45 at f.25's size (91 letter codes, uniform
+   homophones): digit 8 appears min 9, p01 12, median 21 times; 0 of 2000 have none. f.25 has none. (Caveat: every letter
+   has a non-8 homophone, so a clerk avoiding 8 could do this; hence step 2.)
+2. Screen (lane, q7test/screen.py unchanged, run on f.25 with every 0 and 1 removed -- exactly no.45's single-digit nulls,
+   182 digits left): validation with matched no.45 controls power 1.00 at 0% and 0.98 at 10% digit error; specificity
+   (no.46 text scored under no.45) false detect 0.00; target S -1.541, p_a 0.599, p_b 0.594, fit false. Output:
+   `q7test/s45_screen.out`. Verdict: f.25 is not in no.45 at this transcription (control-backed; alphabet grade caveat).
+
+## Next candidate: Florentine syllabic figures (lane)
+Tomokiyo (guicciardini.htm): the Grand Duke's secretariat used "a continuous stream of figures, which represent letters and
+syllables in units of two figures except for three-figure code elements" (Giacomo Guicciardini to Sillery, 1593,
+reconstructed by Speziali 1955; a polyphonic one of ca.1590 in Monts de Savasse 1997), and "a similar numerical cipher with
+syllable representation is found in no.73 of the Nevers collection" (fr.3995 fol.136: "Letters and syllables are
+represented by figures. Some names are represented by letters."). f.25 reads naturally as pairs in 10-40 with few 8/9s:
+that profile fits a syllabic two-figure table. Brief BNF-Q7-T73.
+
 ## Remaining gaps (BNF-Q7-SCREEN, 13 Oct 2026)
 Read so far: unmeasured, no key reads the letter yet
-- Key identification for f.25 - blocker: not-attempted; no.62 retired (BNF-Q7-TEST), no.46 and no.70 alphabet no fit under the validated decode-level screen (BNF-Q7-SCREEN, power 0.85-0.94 at 10%); next: transcribe fr.3995 candidate tables no.44, 45, 47, 56, 35, 63 and screen each with q7test/screen.py, ~$3 per key
+- Key identification for f.25 - blocker: not-attempted; screened and not fitting: no.62 (retired, BNF-Q7-TEST), no.46 and no.70 alphabet (BNF-Q7-SCREEN), no.45 (lane, screen + digit-8 control); no.47 is a symbol alphabet; next: fr.3995 no.73 (fol.136, letters and syllables in figures, the Florentine form) transcribed and screened (BNF-Q7-T73), ~$4
 - Key no.70 nomenclator - blocker: not-attempted; only the alphabet of f.131r is transcribed, and the alphabet screen (p_a 0.078) cannot see a fit carried by word codes; next: transcribe the word columns and re-screen, ~$2
 
 ## Escalation (BNF-Q7-SCREEN, 13 Oct 2026)
@@ -181,7 +201,7 @@ Read so far: unmeasured, no key reads the letter yet
 - [ ] key-rebuild: not attempted; a 260-digit string is short for cryptanalysis without a table
 - [x] image-check: leaf read at native resolution, two blind digit passes agree 0.905 (BNF-Q7-KEY)
 - [ ] retry: none yet
-Verdict: keep going: 2 internal gaps; cheapest next: transcribe and screen fr.3995 table no.44 (or the best digit-profile match), ~$3
+Verdict: keep going: 2 internal gaps; cheapest next: BNF-Q7-T73 (fr.3995 no.73 table + screen), ~$4
 
 ## BNF-Q7-TAB (13 Oct 2026, account 2)
 Transcription only; no decode, no screen run, no novelty class. Brief: .claude/briefs/runs/2026-10-13-ytbiz-bnf-q7-tab.md. Images and URLs: images/fr3995/manifest.json. Credit: numbering and identification Tomokiyo (nevers.htm).
