@@ -251,3 +251,24 @@ the strongest new material (a held key or a sibling folder) once reproduced. Re-
 - Workers: none (account 3 reports weekly allowed_warning, 11 Oct 07:02 and 12 Oct 00:15 -> BUDGETS scaling rule).
 
 12 Oct UTC spend on this lane: 0 workers. Next best attempt: unchanged. Re-check once a day.
+
+## Wave 20 (13 Oct 2026, 06:12-07:1x UTC by date -u)
+
+- **Route.** gallica.bnf.fr/iiif still 403, but BnF's API host serves the same material to the cloud:
+  `https://openapi.bnf.fr/iiif/image/v3/ark:/12148/<ark>/f<N>/...` (images) and
+  `https://openapi.bnf.fr/iiif/presentation/v3/ark:/12148/<ark>/manifest.json` (manifest), both 200 on 13 Oct. Route first
+  logged by D. Bourdeau (cyphersolver targets/nevers1593/NOTES.md, 12 Oct). Flagged in ROOM.md for every lane.
+- **Correction.** This lane held workers 9-12 Oct on seven_day `allowed_warning`. `.claude/briefs/lane-common-blast.md`
+  (owner, 8 Oct) says keep going on `allowed_warning` and stop only on `rejected`; the lane now follows it.
+- **BNF-RONDI2** (Sonnet, 1.12): Gomberville 1665 seconde partie, 28 views read (printed pp.213-224, 338-344, 394-403):
+  the Rondinelli letter of 11 Nov 1590 is not there. fr3613-rondinelli-1590 stays `blocked` (blogs one by one and the
+  fr.3995 tables still unread).
+- **BNF-K60** (Opus, 2.84): our key no.60 table (fr3986 key.tsv) synced to Bourdeau c60e6dd (issue #32, R. Weglarek):
+  3 values changed, 2 added, 14 shapes unmapped; fr3987 key.tsv and tools/keys/key60.tsv not yet synced. Order-sensitive
+  test on fr.3622 f.91, PREREG before score: control power at p <= 0.01 was 0.390 clean and 0.015 at the 35% reader-error
+  band, so the target (S = 7, p = 0.180) is a **non-test**, not a negative. Next for f.91: more no.60 ciphertext of the
+  same month (pooling).
+- **Q2 started** (BNF-Q2-ID): fr.3985 f.89, Nevers to Gièvre, 21 Aug 1593 -- same day and volume as the f.88 Revol letter
+  in key no.60; if f.89 is no.60 it adds to the pool f.91 needs. Pre-screened: Bourdeau no hit (HEAD c60e6dd), no folder of
+  ours, Tomokiyo "undeciphered".
+- Orchestrator: the owner account (TAKEOVER 06:22 UTC 10 Oct), not account 4; lines from now on are addressed to it.
