@@ -2057,6 +2057,40 @@ Side finding for the per-piece table: the 19 Sept 1572 letter to the Queen (ciph
 (ink 58) -- a cipher/decipherment pair on the leaf, usable as a known-plaintext check like inks 40/41 and 50/51; piece_table.tsv not edited
 (its ink numbers for the cipher piece, probably 57, not seen). Requests: openapi.bnf.fr 4. Cost: not visible to this session.
 
+## VIV-DECH (13 Oct 2026, 10:29-10:4x UTC by date -u, account-4 worker for LANE DEFAULT-A4-0935): ink 52 misplaced-decipherment residual, dechiffre heads
+Brief: .claude/briefs/runs/2026-10-13-acct4-default-0935-jobs.md "### VIV-DECH". Host openapi.bnf.fr (IIIF Image API v3), 10 requests (the job's limit),
+all HTTP 200, >= 3 s apart, take/release lines in ROOM.md; gallica.bnf.fr not used. Prior work (`tools/prior_work.py fr16104-vivonne-spain-1572
+--item-spec 'shelfmark=BnF fr.16104;folio=164r-168v;date=1572-09-05;sender=Vivonne;recipient=Catherine de Medicis' --step-type lookup --offline`,
+exit 4): the owed rows are LEAD 1-own live claims (VIV52-O, V-VIV52, V2-VIV52 and this job's own), all on ink 52 itself; 4-editions Catherine
+I-IV/IX-X UNCHECKED by the tool (VIV52 grepped IV and X by hand). Not --recorded (the job answers the V2-VIV52 lead, it does not change its item).
+No canvas numbers for these leaves were on disk (piece_table.tsv has none past c190; Gachard gives no folios), so canvases were placed by the
+folio offset (canvas minus 15-17 here) and checked on the stamped folio and old ink numbers. All views 1600 px, read by this worker's eye; no
+subagent or vision call. Committed: images/pdech/ov_c196_1600.jpg, ov_c213_1600.jpg, ov_c219_1600.jpg (the three dechiffre heads); the other
+seven are listed with their URLs in images/manifest.json "vivdech" (folder already over the 30 MB line before this job, 38 MB images/).
+
+**Ink 52's opening and phrases used for the comparison** (VIV52-O): f.164r heading "du S^r de S^t gouard a la Reyne", docket 5 Septembre 1572,
+plain "Madame." then cipher; closing f.168v "de Madril ce v^me jour de Sept^bre 1572". Decoded phrases: (1) "derniere de la" (f.164r first lines,
+in "...avoir ... derniere de la ..."), (2) "bien considere" (f.164r L04), (3) "avoir traicte avecq ses" (f.164r L17). A misplaced decipherment
+of ink 52 would open "Madame", carry a 5 Sept docket or close, and show these phrases near its head.
+
+| canvas | folio | ink | head as written (date / addressee / first words, spelling approximate) | ink 52? |
+|---|---|---|---|---|
+| c196 | f.181r | 56 | docket "19 Septembre 1572", heading "dechiffré de la precedente"; no salutation line: "[D']aller devers le Roy cath. ... que l'entreprise faicte par luy ... le marquis d'Aimon[t] ... ceste nouvelle ... la Royne [de] Montaigne ... Don Diego ... Vos[tre] Mat." -- to the King (f.180v left: ink 55's address leaf, endorsed "... Septembre 1572", "19 septemb. 1572") | **no**: 19 Sept, King, opens without "Madame"; content after the 7 Sept news; none of the three phrases in the 30 visible lines |
+| c213 | f.197r | 60 | docket "19 Septemb. 1572", heading "dechiffré de la precedente", ink "60" beside stamped "197"; "Elle ne doubte point que ... soudaine resolution et mutation aux affaires de France n'aye apporte de dela une grande joye ... affaires de Flandres ... dissimulation ... le marquis d'Aimon[t] ... V[ost]re Altesse"; whole decipherment on this page, closed "De xix^e septembre 1572" -- to the duc d'Anjou (its cipher, ink 59, opens f.195r "du S^r de S^t gouard au Duc d'Anjou", "Monseigneur, je loue et remercie Dieu ...", c211) | **no**: 19 Sept, Anjou ("Vostre Altesse"), St Bartholomew aftermath ("mutation aux affaires de France"); 18 lines, far short of ink 52's ~290 cipher lines; none of the three phrases |
+| c219 | f.202r | 62 | docket "2[3/5] Sept. 1572" (Gachard: 23 Sept), heading "dechiffré de la precedente", ink "62" beside stamped "202"; "Sire, Ce matin a fort bonne heure m'a envoie dire le Roy catholique une nouvelle qui luy est venue ceste nuict des affaires de Flandres, qui est que le duc d'Alve avoit par deux fois batu ses ennemis ... [prince d']Orange ..." -- to the King (its cipher, ink 61, f.198r "du S^r de S^t Gouard au Roy", c214; ends f.200r, signed De Vivonne, c216 = c217) | **no**: "Sire", 23/25 Sept, the King; news of Alba's victories; none of the three phrases |
+
+**Oct-Dec 1572 pairs: not reached.** Two probes placed them: c288 = f.266v | f.267r, cipher ending in plain "... le Roy Catholique ... la Royne et
+Madame la Princesse de Portugal ... nouveau president ...", closed "de Madril ce xxij? de Novembre 1572", signed, "Sire" -- the 22 Nov letter to the King
+(ink 88; Gachard LXXXVIII-LXXXIX); c296 = f.274r, a clear letter (no cipher, no "dechiffré" heading) "du S^r de S^t gouard a la Reyne", docket
+"17 Decemb. 1572", old ink 9[3 or 5] (not settled at this size), "Madame, j'ay faict tant ... en la pratique dont je escrivis dernierement a
+V. Maj^te ... affaires de Flandres ... l'aisnee des Infantes ... prince d'Orange ... la princesse de Portugal" -- not ink 52 (17 Dec; content on
+the Infantes and the Emperor). So the dechiffre leaves of 89 and 91 (the 22 Nov letter to the Queen) lie at about c289-c295, those of 78 and
+83 between c220 and c287, and 97 and 101 after c296; none viewed. f.201r (c218) is a near-blank slip between ink 61's end and its address leaf.
+**Answer on this evidence:** no decipherment of the 5 Sept 1572 letter to the Queen (ink 52) is filed among the post-19 Sept September
+decipherments (inks 56, 60, 62): each is headed "dechiffré de la precedente" and dated and addressed as its own cipher letter. The Oct-Dec
+pairs remain unviewed (gap line updated). No prior plaintext for ink 52 found; nothing to flag. Requests: openapi.bnf.fr 10. Cost: not
+visible to this session.
+
 ## Remaining gaps (VIV52-O refresh, 13 Oct 2026; supersedes the VIV52 list, all its other lines kept)
 Read so far: ink 40 checked against its decipherment 41 with Tomokiyo's key (N5-VIVK PASS); ink 54 read with key.tsv, gloss check PASS (N5-VIV54), window look-alike pass + re-decode, b2 + wrong-key PASS (N7-VIV54L); ink 53 Ink 52 f.164r-v read (VIV52-O, 13 Oct 2026): H 2,217 / M 404 / U 106 of 2,727, b2 + 200-wrong-key PASS.
 ff.170r-171v read, b2 + wrong-key PASS (N6-VIV53B), window look-alike pass + ': :' join + re-decode, b2 + wrong-key PASS again (N7-VIV53L); ink 63 ff.190r-194r read in full (f.194r L5-10 added by N7-VIV63G): b2 PASS on every part (N6-VIV63, N6-VIV63B,
@@ -2081,7 +2115,7 @@ Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53, 54 (and 38, w
 - Spanish-side copies (AGS Estado K) and Gachard vol. I - blocker: needs-physical-access; AGS is not digitised in a route this worker could open
 - ink 52 print search on the decoded fragments (G3) - blocker: not-attempted; done by V-VIV52 (13 Oct 2026, print-check-52.tsv: generic hits only) except Google Books (HTTP 503 all session); next: rerun `tools/print_check.py ciphers/fr16104-vivonne-spain-1572 --phrases ciphers/fr16104-vivonne-spain-1572/phrases_52.txt --only gbooks` when the host answers, ~$0.3
 - ink 52 La Ferriere f.191v lead (V-VIV52, AUDIT 5) - blocker: not-attempted; answered by VIV-191V (13 Oct 2026): f.191v (c208 left) is the clerk decipherment ("dechiffré de la precedente", ink 58, docket 19 Sept 1572) of the 19 Sept 1572 letter to the Queen whose cipher ends f.190r, and carries the Infante / "peau de l'ours" passage La Ferriere quotes; not ink 52 (no ink-52 phrase seen, other date, other leaves), so ink 52 gains no plaintext; next: only a side step, align the 19 Sept cipher (ff.188v-190r, first page on c204 or earlier) with ff.191r-192r as a known-plaintext pair, crops + two blind passes as tx/vivk_test.py, ~$15
-- ink 52 misplaced-decipherment residual (V2-VIV52, AUDIT 6, 13 Oct 2026) - blocker: not-attempted; Tomokiyo/Mousset document decipherments filed against the wrong cipher letter in this series (fr.16105 ff.41, 45); inks 51 and 58 checked and are not ink 52, the heads of the post-19 Sept dechiffre leaves (inks 56, 60, 62 and the Oct-Dec 1572 pairs) not viewed; next: one head region each on openapi.bnf.fr compared with the f.164r opening, ~$1
+- ink 52 misplaced-decipherment residual (V2-VIV52, AUDIT 6, 13 Oct 2026) - blocker: not-attempted; inks 51 and 58 checked (V2-VIV52); VIV-DECH (13 Oct 2026) viewed the heads of the dechiffre leaves of inks 56 (f.181r, c196), 60 (f.197r, c213) and 62 (f.202r, c219): each is "dechiffré de la precedente" of its own Sept letter (19, 19, 23/25 Sept; King, Anjou, King), none opens "Madame", none matches ink 52; the Oct-Dec 1572 pairs (78?, 83, 89, 91, 97, 101) not reached within the 10-request limit -- c288 = f.267r (ink 88 cipher end, 22 Nov, King) and c296 = f.274r (a clear letter to the Queen, 17 Dec) bracket inks 89-91 at about c289-c295; next: one 1600 px head view each of the Oct-Dec dechiffre leaves (c289-c295 for 89/91, c220-c287 for 78/83, c297-c324 for 97/101; ~7 requests) on openapi.bnf.fr, ~$1
 ## Escalation (13 Oct 2026, VIV52-O; from the VIV52 list)
 - [x] siblings: ink 38 located; ink 40 vs 41 aligned (N5-VIVK); decipherment 51 found (N5-VIV5S); per-piece table (N5-VIVTAB); ink 54 read (N5-VIV54); ink 53 ff.170r-171v read (N6-VIV53, N6-VIV53B); ink 63 ff.190r-194r read in full (N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G); ink 52 f.164r-v read (VIV52-O)
 - [x] clear-pages: decipherments 41, 44, 51, 68, 71, 76 are on the leaves; inks 54 and 53 interlinear words used as gloss checks (N5-VIV54 PASS, N6-VIV53 FAIL at the floor); f.171v has none (N6-VIV53B); ink 63 has none (order gate b2 instead)

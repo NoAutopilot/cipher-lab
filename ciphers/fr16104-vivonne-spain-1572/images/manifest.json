@@ -10923,7 +10923,7 @@
   {
    "file": "fr16105_c107_f104_head.jpg",
    "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9009663p/f107/pct:52,2,46,32/1600,/0/default.jpg",
-   "what": "fr.16105 f.104r head: docket '8 Juin 1573', heading 'dechiffré de la precedente', old ink no. 41, stamped 104 (N4-VIV2, 4 Oct 2026)"
+   "what": "fr.16105 f.104r head: docket '8 Juin 1573', heading 'dechiffr\u00e9 de la precedente', old ink no. 41, stamped 104 (N4-VIV2, 4 Oct 2026)"
   },
   {
    "file": "fr16105_c112_f108v_end_norm.jpg",
@@ -10979,6 +10979,78 @@
    "what": "f.191v lines 15-20, local PIL crop (150,570,800,800) upscaled 3x, no request",
    "by": "VIV-191V",
    "date": "13 Oct 2026"
+  }
+ ],
+ "vivdech": [
+  {
+   "canvas": 196,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f196/full/1600,/0/default.jpg",
+   "file": "images/pdech/ov_c196_1600.jpg",
+   "note": "f.180v address leaf ink 55 | f.181r ink 56 dechiffre head (19 Sept 1572)",
+   "fetched": "2026-10-13 VIV-DECH"
+  },
+  {
+   "canvas": 211,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f211/full/1600,/0/default.jpg",
+   "file": null,
+   "note": "f.194v | f.195r ink 59 head, to Anjou 19 Sept 1572 (clear opening); top strip of f.197 visible",
+   "fetched": "2026-10-13 VIV-DECH"
+  },
+  {
+   "canvas": 213,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f213/full/1600,/0/default.jpg",
+   "file": "images/pdech/ov_c213_1600.jpg",
+   "note": "f.196v ink 59 address leaf | f.197r ink 60 dechiffre (19 Sept 1572, to Anjou), whole text",
+   "fetched": "2026-10-13 VIV-DECH"
+  },
+  {
+   "canvas": 214,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f214/full/1600,/0/default.jpg",
+   "file": null,
+   "note": "f.197v | f.198r ink 61 cipher head, to the King, Sept 1572",
+   "fetched": "2026-10-13 VIV-DECH"
+  },
+  {
+   "canvas": 216,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f216/full/1600,/0/default.jpg",
+   "file": null,
+   "note": "f.199v | f.200r ink 61 cipher end, closing Sept 1572",
+   "fetched": "2026-10-13 VIV-DECH"
+  },
+  {
+   "canvas": 217,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f217/full/1600,/0/default.jpg",
+   "file": null,
+   "note": "second capture of c216",
+   "fetched": "2026-10-13 VIV-DECH"
+  },
+  {
+   "canvas": 218,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f218/full/1600,/0/default.jpg",
+   "file": null,
+   "note": "f.200v | f.201r near-blank slip",
+   "fetched": "2026-10-13 VIV-DECH"
+  },
+  {
+   "canvas": 219,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f219/full/1600,/0/default.jpg",
+   "file": "images/pdech/ov_c219_1600.jpg",
+   "note": "f.201v ink 61 address leaf | f.202r ink 62 dechiffre head (Sept 1572)",
+   "fetched": "2026-10-13 VIV-DECH"
+  },
+  {
+   "canvas": 288,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f288/full/1600,/0/default.jpg",
+   "file": null,
+   "note": "f.266v | f.267r cipher end, closing Novembre 1572, to the King",
+   "fetched": "2026-10-13 VIV-DECH"
+  },
+  {
+   "canvas": 296,
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f296/full/1600,/0/default.jpg",
+   "file": null,
+   "note": "f.273v | f.274r clear letter to the Queen, docket 17 Dec 1572",
+   "fetched": "2026-10-13 VIV-DECH"
   }
  ]
 }
