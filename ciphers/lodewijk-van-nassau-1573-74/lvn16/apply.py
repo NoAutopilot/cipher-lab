@@ -17,6 +17,9 @@ cor = {(r['line'], r['pre_pos']): r for r in rd(os.path.join(H, 'corrections_lvn
 # R13-LVNFIX (6 Oct 2026): R12-LVNV's p1_L16/18 overturn and R13-LVNV's two doubtful rows, applied after the settles
 # (an image read overrides an A3 == B3 settle where the readers share the 9/8, 7/3 confusions).
 post = {(r['line'], r['pre_pos']): r for r in rd(os.path.join(H, 'corrections_lvnv.tsv'))}
+# LVN16-3R (13 Oct 2026): per-token zoomed third read (lvn16/PREREG-LVN16-3R.md, control 9/10 >= 8), applied last;
+# a new value with '/' is split into its codes (renumbered), every other row keeps one position.
+post3 = {(r['line'], r['pre_pos']): r for r in rd(os.path.join(H, 'settle_3r.tsv'))}
 ctl = {'A3': [0, 0], 'B3': [0, 0]}
 for r in al.values():
     if r['role'] == 'control':
@@ -64,6 +67,18 @@ for r in pre:
         alt = f'was {sign} {conf}' + (f'; {alt}' if alt else '')
         sign, conf, why = c['new'], c['confidence'], c['note'] + f' (pre pos {r["position"]})'
         log.append([r['line'], r['position'], c['old'], conf, '', '', 'lvnv-override'])
+    c = post3.get((r['line'], r['position']))
+    if c:
+        assert sign == c['old'], (r['line'], r['position'], sign, c['old'])
+        alt = f'was {sign} {conf}' + (f'; {alt}' if alt else '')
+        log.append([r['line'], r['position'], c['old'], conf, '', '', '3r-split' if '/' in c['new'] else '3r-settled'])
+        if '/' in c['new']:
+            parts = c['new'].split('/')
+            for j, p in enumerate(parts):
+                pos += 1
+                out.append([r['line'], str(pos), p, c['confidence'], alt, f'split lvn16-3r from pre pos {r["position"]} ({c["new"]}), part {j + 1}/{len(parts)}; image300 3r: ' + c['note']])
+            continue
+        sign, conf, why = c['new'], c['confidence'], 'image300 3r: ' + c['note'] + f' (pre pos {r["position"]})'
     pos += 1
     out.append([r['line'], str(pos), sign, conf, alt, why])
 def tsv(rows, head):

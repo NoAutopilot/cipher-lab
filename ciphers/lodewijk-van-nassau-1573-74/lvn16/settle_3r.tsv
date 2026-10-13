@@ -1,0 +1,13 @@
+line	pre_pos	old	new	confidence	note
+p1_L05	15	22/112	23/112	H	T19 read 23/112 = R12-LVN16 A3; split, parts key_full codes 23 r, 112 l
+p1_L05	17	1	=iii	M	T17 read iii = R12-LVN16 A3/B3 (iii~); not a key code, so sign changed to the clear-word form, grade M
+p1_L09	11	33/5	33/5	H	T05 read 33/5 = R12-LVN16 A3; split, parts key_full codes 33 t, 5 n
+p1_L09	14	25/81	25/51	H	T29 read 25/51 = R12-LVN16 A3; split, parts key_full codes 25 r, 51 y (key grade I)
+p1_L12	5	118	116	H	T11 read 116 = R12-LVN16 B3; key_full 116 m
+p1_L13	20	34	31	H	T14 read 31 = R12-LVN16 A3/B3 (31?); key_full 31 t; token cut by the binding
+p1_L14	8	92/2	92/2	H	T07 read 92/2 = R12-LVN16 A3; split, parts key_full codes 92 g, 2 n
+p1_L14	17	5	5	H	T23 read 5 = R12-LVN16 B3; key_full 5 n
+p1_L14	18	2	2	H	T30 read 2 = R12-LVN16 B3 (2?); key_full 2 n
+p1_L15	21	21	21	H	T08 read 21 = R12-LVN16 A3/B3; key_full 21 r; token cut by the binding
+p1_L16	2	20	20	H	T02 read 20 = current sign (verifier eye R12-LVNV2; A3=B3 26); possible writer correction noted by R12-LVNV2 stands
+p1_L16	19	114	114	H	T20 read 114 = R12-LVN16 B3; key_full 114 l
